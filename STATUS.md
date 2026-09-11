@@ -31,7 +31,7 @@ gate que no figuraba en ella.
 | `check_pulse_bpm.py` | Que el tempo que muestra la unidad sea el que suena en la pista de pulso, **medido del audio** |
 | `check_voice_coverage.py` | Que toda locución que la app puede reproducir tenga grabación en el paquete |
 | `flutter build apk --release` | Que el APK de release compile |
-| Permisos del APK | Que el **artefacto compilado** no declare ni un permiso (leído con `aapt2`, no del manifiesto fuente) |
+| Permisos del APK | Que el **artefacto compilado** no declare ningún permiso salvo el de AndroidX (leído con `aapt2`, no del manifiesto fuente) |
 
 ---
 
