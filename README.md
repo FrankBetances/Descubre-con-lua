@@ -55,6 +55,55 @@ en el script, no en un documento que se pueda quedar atrás:
 | `flutter build apk --release` | Que el APK compile |
 | Permisos del APK | Que el **binario** no declare más permiso que el que inyecta AndroidX |
 
+## Publicar
+
+El mismo workflow que corre los gates compila el binario firmado, con la forma
+del `android.yml` de Valeria+ adaptada a Flutter. No hay un segundo workflow que
+recompile lo mismo con otra configuración.
+
+| Artefacto | Cuándo se produce | Retención |
+| --- | --- | --- |
+| `android-apk` (`.apk`) | En `main` y en «Run workflow» | 5 días |
+| `android-aab` (`.aab`) | En `main` y en «Run workflow», **solo con secrets de firma** | 3 días |
+| `android-mapping` (`mapping.txt`) | Cuando exista (hoy `minifyEnabled false`) | 30 días |
+
+Las ramas `claude/**` **compilan igual** —los gates y Gradle corren— pero no
+suben el fichero: la regla de trabajo es que nada llega a Frank hasta estar en
+`main` con run verde. Para bajarse el APK de una rama: Actions → «Gates» → «Run
+workflow» eligiendo esa rama.
+
+Al final de cada run se retiran los artefactos viejos y se dejan 2 copias de
+cada nombre (10 del mapa de R8), para que el almacenamiento tenga un suelo fijo
+en vez de crecer con el ritmo de commits.
+
+### Claves de firma
+
+Se configuran en *Settings → Secrets and variables → Actions*. Son los mismos
+nombres que en Valeria+, pero **los secrets son por repositorio**: hay que darlos
+de alta también aquí.
+
+| Secret | Contenido |
+| --- | --- |
+| `ANDROID_RELEASE_KEYSTORE_BASE64` | `base64 -w0 release.keystore` |
+| `ANDROID_RELEASE_STORE_PASSWORD` | Contraseña del keystore |
+| `ANDROID_RELEASE_KEY_ALIAS` | Alias de la clave |
+| `ANDROID_RELEASE_KEY_PASSWORD` | Contraseña de la clave |
+
+Sin esos secrets el APK se firma con la **clave de depuración**: se instala a
+mano, y Google Play lo rechaza. El AAB no se genera en ese caso, porque un AAB
+sin firmar no se puede subir a ningún sitio y solo sería un fichero que engaña.
+El paso «Comprobar con qué clave va firmado» lee el certificado **del APK** con
+`apksigner` y lo publica en el resumen del run, igual que el gate de permisos lee
+el binario en vez de la configuración.
+
+`versionCode` sale del número de run del workflow, porque Play exige que cada
+subida lleve uno mayor que el anterior; `pubspec.yaml` lo deja fijo en 1.
+
+> Perder el keystore sin tener activado *Play App Signing* deja la app sin
+> posibilidad de actualizarse nunca más. Con *Play App Signing* activado, lo
+> peor que pasa es pedir una clave de subida nueva.
+
+
 ## El pulso se ve, no se oye
 
 El metrónomo de la canción a pulso es **visual**, como en Valeria+. No es una

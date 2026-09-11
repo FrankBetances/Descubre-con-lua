@@ -80,10 +80,20 @@ lo acepta de forma explícita y rechaza cualquier otro.
 | **La app nunca se ha ejecutado** | Que el APK compile y que la asamblea funcione en el aula son cosas distintas |
 | **Desbordes de disposición** | Sin aparato no hay forma de ver un `RenderFlex overflowed`. En release no se ve nada: el texto simplemente se corta. Falta comprobar en gallego, castellano y con escala de texto grande |
 | **Las 12 grabaciones de voz** | `huggingface.co` también está bloqueado aquí. El gate de cobertura falla, correctamente |
+| **La firma de release, del lado de Gradle** | El paso del workflow que escribe `key.properties` sí está probado aquí (el keystore vuelve byte a byte idéntico y `keytool` lo valida). Lo que **no** se ha ejecutado nunca, ni aquí ni en CI, es la rama `if (keystorePropertiesFile.exists())` de `android/app/build.gradle`: hasta hoy no había secrets, así que siempre cayó a la clave de depuración |
+| **El AAB** | Nunca se ha ejecutado `flutter build appbundle` en este proyecto, ni en local ni en CI |
+| **Los gates de Dart, en este contenedor** | No hay SDK de Flutter instalado aquí (`dart: command not found`). Los seis gates de contenido sí corrieron y pasaron; `dart format`, `flutter analyze` y `flutter test` quedan para CI |
 
 ### Estado de CI
 
 **8 de 9 gates en verde.** El único rojo es la cobertura de voz, abajo.
+
+`.github/workflows/ci.yml` compila además el binario firmado (APK y AAB), con la
+forma del `android.yml` de Valeria+ adaptada a Flutter. **Mientras no existan los
+cuatro secrets `ANDROID_RELEASE_*`, el APK sale firmado con la clave de
+depuración y el AAB no se genera: hoy no hay nada publicable en Google Play.**
+El workflow lo dice en el resumen de cada run, leyendo el certificado del APK con
+`apksigner`; no queda como suposición. Ver «Publicar» en el README.
 
 ### Bloqueante conocido: la app sólo reproduce la mitad
 
@@ -133,6 +143,15 @@ ahí y jamás en el aparato: el APK lleva grabaciones, no inferencia.
 4. **La pista de pulso de 2,3 MB.** Con el metrónomo visual ya no hace falta
    como metrónomo sonoro. Sigue en el paquete y sigue verificada en 72,3 BPM;
    retirarla ahorraría 2,3 MB del APK.
+5. **El keystore de subida.** El workflow ya sabe firmar, pero no hay clave.
+   Hay que decidir si esta app usa un keystore **propio** o el mismo de
+   Valeria+ (técnicamente se puede: son `applicationId` distintos), y si se
+   activa *Play App Signing* — que es lo que evita que perder el fichero deje
+   la app sin posibilidad de actualizarse nunca más.
+6. **Minificación.** `minifyEnabled false` y `shrinkResources false`. Valeria+
+   va con R8 y por eso guarda `mapping.txt`; aquí el paso que lo sube está
+   puesto pero no sube nada. Activarlo cambia el binario, así que no se ha
+   tocado: es una decisión, no un olvido.
 
 ---
 

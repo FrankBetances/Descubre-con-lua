@@ -18,6 +18,13 @@ FAST=0
 FAILED=()
 PASSED=()
 
+# Google Play refuses an upload whose versionCode is not greater than the last
+# one, so CI derives it from the workflow run number and passes it in here. A
+# contributor running the gates locally leaves it unset and gets the value in
+# pubspec.yaml, which is what you want on a machine that never uploads.
+BUILD_ARGS=()
+[[ -n "${BUILD_NUMBER:-}" ]] && BUILD_ARGS+=("--build-number=${BUILD_NUMBER}")
+
 run_gate() {
   local name="$1"; shift
   printf '\n\033[1m── %s\033[0m\n' "$name"
@@ -45,7 +52,7 @@ run_gate "manual PDF and Word match their source" python3 tools/check_manual_bui
 
 # --------------------------------------------------------------- binary gates
 if [[ $FAST -eq 0 ]]; then
-  run_gate "release APK builds" flutter build apk --release
+  run_gate "release APK builds" flutter build apk --release "${BUILD_ARGS[@]}"
 
   # The one gate that reads the artefact rather than the source. A manifest
   # that removes INTERNET proves nothing on its own: a merged dependency can
