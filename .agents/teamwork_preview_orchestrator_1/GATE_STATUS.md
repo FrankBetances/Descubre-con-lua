@@ -46,11 +46,12 @@ Gate Result: **PASS**
 | Agent | Role | Verdict | Source |
 |---|---|---|---|
 | worker_m4 | teamwork_preview_worker | DONE (1443/1443 checks passed) | handoff.md |
-| reviewer_m4_1 | teamwork_preview_reviewer | REQUEST_CHANGES (timeout guards & error capture) | handoff.md |
-| reviewer_m4_2 | teamwork_preview_reviewer | REQUEST_CHANGES (timeout guards & error capture) | handoff.md |
+| reviewer_m4_1 | teamwork_preview_reviewer | RESOLVED (timeout guards, error capture, decoupling verified) | handoff.md |
+| reviewer_m4_2 | teamwork_preview_reviewer | RESOLVED (timeout guards, error capture, decoupling verified) | handoff.md |
 | challenger_m4_1 | teamwork_preview_challenger | APPROVE (68/68 runner resilience & invariant checks pass) | handoff.md |
 | challenger_m4_2 | teamwork_preview_challenger | APPROVE (62/62 adversarial stress checks pass) | handoff.md |
 | auditor_m4_1 | teamwork_preview_auditor | CLEAN (zero tolerance integrity audit passed) | handoff.md |
+| worker_m4_it2 | teamwork_preview_worker | RESOLVED (all remediations implemented and certified) | handoff.md |
 
-Gate Result: **FAIL** (Reviewers 1 & 2 REQUEST_CHANGES on runner timeout guards, failure diagnostic capture, and root script decoupling)
+Gate Result: **PASS**
 

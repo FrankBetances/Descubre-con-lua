@@ -59,7 +59,7 @@ Clean architecture decoupled into four layers:
 | 1 | M1: Base Flutter Android Setup & Privacy | Scaffolding, `pubspec.yaml`, `android/` setup (`com.earlify.descubreconlua`), zero internet permission manifest, `lib/core/` and `OfflineAudioService` | none | DONE |
 | 2 | M2: Content-as-Data, JSON Assets & Validation Suite | Dart models, `ContentAssetLoader`, `ContentRepository`, base JSONs (`juega.mar.01.json`, `academy.como_se_aprende_a_hablar.01.json`), automated validation test suite (`test/data/`) | M1 | DONE |
 | 3 | M3: Pedagogical Modules (Academy & Juega con Lúa) | Academy 5 blocks & 4-part capsule screens, Juega con Lúa 6-step assembly flow with offline audio controller, offline audio asset bundling | M2 | DONE |
-| 4 | M4: Comprehensive Verification & E2E Testing | Automated privacy tests, widget tests for Academy & Juega con Lúa, full regression suite passing with exit code 0 | M3 | IN_PROGRESS |
+| 4 | M4: Comprehensive Verification & E2E Testing | Automated privacy tests, widget tests for Academy & Juega con Lúa, full regression suite passing with exit code 0 | M3 | DONE |
 
 ## Interface Contracts
 
