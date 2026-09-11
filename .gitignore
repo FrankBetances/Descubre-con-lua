@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node / Dependencies
+node_modules/
+dist/
+build/
+.env
+.env.local
+*.log
