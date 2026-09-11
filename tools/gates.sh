@@ -47,7 +47,7 @@ if [[ $FAST -eq 0 ]]; then
   # The one gate that reads the artefact rather than the source. A manifest
   # that removes INTERNET proves nothing on its own: a merged dependency can
   # put it back, and only the built APK settles it.
-  run_gate "release APK declares no permissions" bash -c '
+  run_gate "release APK declares no permission but AndroidX's" bash -c '
     set -euo pipefail
     apk=build/app/outputs/flutter-apk/app-release.apk
     [[ -f "$apk" ]] || { echo "No APK at $apk"; exit 1; }

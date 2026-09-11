@@ -31,7 +31,7 @@ gate que no figuraba en ella.
 | `check_pulse_bpm.py` | Que el tempo que muestra la unidad sea el que suena en la pista de pulso, **medido del audio** |
 | `check_voice_coverage.py` | Que toda locución que la app puede reproducir tenga grabación en el paquete |
 | `flutter build apk --release` | Que el APK de release compile |
-| Permisos del APK | Que el **artefacto compilado** no declare ningún permiso salvo el de AndroidX (leído con `aapt2`, no del manifiesto fuente) |
+| Permisos del APK | Que el **artefacto compilado** no declare ningún permiso salvo el que inyecta AndroidX (leído con `aapt2`, no del manifiesto fuente) |
 
 ---
 
@@ -79,7 +79,11 @@ lo acepta de forma explícita y rechaza cualquier otro.
 | **Desbordes de disposición** | Sin aparato no hay forma de ver un `RenderFlex overflowed`. En release no se ve nada: el texto simplemente se corta. Falta comprobar en gallego, castellano y con escala de texto grande |
 | **Las 12 grabaciones de voz** | `huggingface.co` también está bloqueado aquí. El gate de cobertura falla, correctamente |
 
-### Bloqueante conocido: la app no reproduce nada
+### Estado de CI
+
+**8 de 9 gates en verde.** El único rojo es la cobertura de voz, abajo.
+
+### Bloqueante conocido: la app sólo reproduce la mitad
 
 `tools/check_voice_coverage.py` falla con **6 de 12** locuciones sin grabación:
 las seis gallegas. Las seis castellanas ya están sintetizadas y commiteadas. No
