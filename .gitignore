@@ -21,3 +21,7 @@ android/local.properties
 android/key.properties
 *.jks
 *.keystore
+
+# Caché de bytecode de Python: depende de la máquina y cambia en cada ejecución
+__pycache__/
+*.pyc
