@@ -78,12 +78,12 @@ Orchestrate the full implementation, porting, verification, and testing of «Des
 | challenger_m4_1 | teamwork_preview_challenger | M4 Invariant Challenger | completed | 1700f6cc-acf3-438b-8983-c4fb383e61e9 |
 | challenger_m4_2 | teamwork_preview_challenger | M4 Adversarial Challenger | completed | 4b9787c0-b7fa-4f29-a0b8-ef27e04d8807 |
 | auditor_m4_1 | teamwork_preview_auditor | M4 Master Forensic Auditor | completed | dca60f9b-95b5-444d-8fee-0af3e4227c0e |
-| worker_m4_it2 | teamwork_preview_worker | M4 Remediation Implementation | in-progress | 9d5a9548-b85e-4da4-9b08-8e66f976f029 |
+| worker_m4_it2 | teamwork_preview_worker | M4 Remediation Implementation | completed | 9d5a9548-b85e-4da4-9b08-8e66f976f029 |
 
 ## Succession Status
 - Succession required: no
 - Spawn count: 30 / 128
-- Pending subagents: 9d5a9548-b85e-4da4-9b08-8e66f976f029
+- Pending subagents: none
 - Predecessor: none
 - Successor: not applicable
 
