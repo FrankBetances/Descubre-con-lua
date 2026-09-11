@@ -33,6 +33,7 @@ from __future__ import annotations
 import argparse
 import audioop
 import json
+import re
 import subprocess
 import sys
 import urllib.request
@@ -56,6 +57,15 @@ VOICES_DIR = ROOT / "tools" / ".voices"  # downloaded models (gitignored)
 
 PEAK_DBFS = -3.0
 AAC_BITRATE = "40k"
+
+# A lossy encoder does not preserve the peak it was handed: the Spanish
+# recitation was mastered to -3 dBFS and came out of the encoder at -0.0, with
+# no headroom left. The target alone is therefore not enough — the ENCODED file
+# is measured and attenuated until it fits under this ceiling.
+CEILING_DBFS = -1.0
+MAX_ENCODE_ATTEMPTS = 4
+
+_PEAK_RE = re.compile(r"max_volume:\s*(-?\d+(?:\.\d+)?)\s*dB")
 
 
 def die(msg: str) -> None:
@@ -142,13 +152,50 @@ def normalize_peak(wav_in: Path, wav_out: Path) -> float:
     return params.nframes / params.framerate
 
 
-def encode_m4a(wav: Path, m4a: Path, atempo: float | None = None) -> None:
-    filters = ["-af", f"atempo={atempo:.4f}"] if atempo and abs(atempo - 1.0) > 1e-3 else []
-    subprocess.run(
-        ["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), *filters,
-         "-c:a", "aac", "-b:a", AAC_BITRATE, "-movflags", "+faststart", str(m4a)],
-        check=True,
+def measure_peak_dbfs(path: Path) -> float | None:
+    """Peak of the ENCODED file, as a player will decode it."""
+    result = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-i", str(path), "-af", "volumedetect",
+         "-f", "null", "/dev/null"],
+        capture_output=True,
+        text=True,
     )
+    match = _PEAK_RE.search(result.stderr)
+    return float(match.group(1)) if match else None
+
+
+def encode_m4a(wav: Path, m4a: Path, atempo: float | None = None) -> None:
+    """Encodes, then checks what came out and attenuates until it fits.
+
+    Trusting the pre-encode target is what let a recording ship at -0.0 dBFS.
+    """
+    trim_db = 0.0
+    for attempt in range(MAX_ENCODE_ATTEMPTS):
+        filters = []
+        if atempo and abs(atempo - 1.0) > 1e-3:
+            filters.append(f"atempo={atempo:.4f}")
+        if trim_db:
+            filters.append(f"volume={trim_db:.2f}dB")
+
+        subprocess.run(
+            ["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav),
+             *(["-af", ",".join(filters)] if filters else []),
+             "-c:a", "aac", "-b:a", AAC_BITRATE, "-movflags", "+faststart",
+             str(m4a)],
+            check=True,
+        )
+
+        peak = measure_peak_dbfs(m4a)
+        if peak is None or peak <= CEILING_DBFS:
+            return
+
+        # Take off what it overshot, plus a little, and try again.
+        trim_db -= (peak - PEAK_DBFS) + 0.5
+        print(f"    encoded peak {peak:+.1f} dBFS, retrying at {trim_db:+.2f} dB "
+              f"(attempt {attempt + 2}/{MAX_ENCODE_ATTEMPTS})")
+
+    die(f"{m4a.name}: still above {CEILING_DBFS} dBFS after "
+        f"{MAX_ENCODE_ATTEMPTS} attempts")
 
 
 # ------------------------------------------------------------------- engines

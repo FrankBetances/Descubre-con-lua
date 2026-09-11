@@ -122,8 +122,11 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
       SnackBar(
         content: Text(
           isGl
-              ? 'Asemblea completada con éxito. Proposta gardada.'
-              : 'Asamblea completada con éxito. Propuesta guardada.',
+              // "Proposta gardada" was not true: this app stores nothing at
+              // all, by design. Telling a teacher her session was saved is the
+              // same defect as a report that certifies what it never ran.
+              ? 'Asemblea completada. A app non garda nada da sesión.'
+              : 'Asamblea completada. La app no guarda nada de la sesión.',
         ),
         backgroundColor: AppTheme.calmSage,
       ),

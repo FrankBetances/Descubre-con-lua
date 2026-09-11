@@ -31,6 +31,7 @@ gate que no figuraba en ella.
 | `check_pulse_bpm.py` | Que el tempo que muestra la unidad sea el que suena en la pista de pulso, **medido del audio** |
 | `check_pulse_markers.py` | Que las marcas `*` describan un pulso constante, igual en gallego y castellano |
 | `check_voice_coverage.py` | Que toda locución que la app puede reproducir tenga grabación en el paquete |
+| `check_voice_levels.py` | Que ninguna grabación pique por encima de −1 dBFS, **medido del fichero publicado** |
 | `flutter build apk --release` | Que el APK de release compile |
 | Permisos del APK | Que el **artefacto compilado** no declare ningún permiso salvo el que inyecta AndroidX (leído con `aapt2`, no del manifiesto fuente) |
 
@@ -61,7 +62,7 @@ Y en CI (GitHub Actions, runner limpio):
 | **El APK release compila** | `✓ Built build/app/outputs/flutter-apk/app-release.apk (50.9MB)` |
 | **El binario no lleva permisos de red** | `aapt2 dump permissions` sobre el APK: un único permiso, `com.earlify.descubreconlua.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`. **Sin INTERNET, sin estado de red, sin nada más** |
 | La tubería de voz llega a Celtia | Resolvió el repo de `proxectonos` por la API de Hugging Face y encontró `celtia.pth`; sólo falló por el *gating* |
-| 6 de 12 grabaciones sintetizadas | Las castellanas, con Sharvard. Medidas con ffmpeg: mono 22 kHz, pico a −3,0 dBFS |
+| 5 de 12 grabaciones sintetizadas | Castellanas, con Sharvard. Medidas con ffmpeg: mono 22 kHz, picos entre −3,2 y −2,4 dBFS |
 
 **Sobre el único permiso del binario.** Lo inyecta AndroidX Core en toda app que
 lo use, y Flutter exige AndroidX. Lleva el nombre de paquete de esta app, se
