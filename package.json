@@ -1,0 +1,11 @@
+{
+  "name": "descubre-con-lua-docs",
+  "private": true,
+  "description": "Sólo herramientas de documentación. La app es Flutter y no usa npm: esto existe únicamente para que docs/build-pdf.js pueda imprimir el manual con Chromium.",
+  "scripts": {
+    "build:manual-pdf": "node docs/build-pdf.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

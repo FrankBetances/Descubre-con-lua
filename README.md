@@ -15,7 +15,7 @@ la persona adulta que acompaña.
 
 | | |
 | --- | --- |
-| [**MANUAL.md**](MANUAL.md) | Cómo se usa, caso de uso a caso de uso: docente, familias y mantenimiento |
+| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | Cómo se usa, caso a caso: docente, familias y mantenimiento. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
 | [**CLAUDE.md**](CLAUDE.md) | Reglas de trabajo del proyecto |
@@ -51,6 +51,7 @@ en el script, no en un documento que se pueda quedar atrás:
 | `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |
 | `check_voice_coverage.py` | Que toda locución reproducible tenga grabación en el paquete |
 | `check_voice_levels.py` | Que ninguna grabación del paquete pique cerca de saturación, **medido del fichero** |
+| `check_manual_build.py` | Que el PDF y el Word del manual salgan del HTML actual y no de uno anterior |
 | `flutter build apk --release` | Que el APK compile |
 | Permisos del APK | Que el **binario** no declare más permiso que el que inyecta AndroidX |
 
@@ -94,6 +95,23 @@ sobre el manifiesto fuente.
 
 Política publicada: [`docs/privacy.html`](docs/privacy.html).
 Contacto: frank.alberto.betances.reinoso@gmail.com
+
+## El manual
+
+`docs/manual-casos-de-uso.html` es la **fuente única**. De ahí salen el PDF y el
+Word; no se editan a mano:
+
+```bash
+npm install playwright                          # sólo para el PDF
+CHROMIUM_PATH=<chrome> node docs/build-pdf.js   # → docs/*.pdf
+pip install python-docx lxml                    # sólo para el Word
+python3 docs/build-docx.py                      # → docs/*.docx
+python3 tools/check_manual_build.py             # ¿alguno se quedó atrás?
+```
+
+Misma estructura que Valeria+, y por su misma razón: allí el texto llegó a estar
+duplicado dentro del constructor y el Word se quedó describiendo una versión
+anterior sin que nada avisara.
 
 ## Estructura
 

@@ -41,6 +41,7 @@ run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py
 run_gate "every locution has a recording" python3 tools/check_voice_coverage.py
 run_gate "no recording peaks near full scale" python3 tools/check_voice_levels.py
+run_gate "manual PDF and Word match their source" python3 tools/check_manual_build.py
 
 # --------------------------------------------------------------- binary gates
 if [[ $FAST -eq 0 ]]; then

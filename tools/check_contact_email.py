@@ -25,6 +25,9 @@ SKIP_DIRS = {
     ".dart_tool",
     # Antigravity's own agent workspace: configuration this project does not own.
     ".agents",
+    # Third-party code, not project content: docs/build-pdf.js needs playwright,
+    # and its own documentation carries example addresses.
+    "node_modules",
 }
 
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
