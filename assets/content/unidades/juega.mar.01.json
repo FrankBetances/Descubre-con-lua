@@ -1,0 +1,326 @@
+{
+  "id": "juega.mar.01",
+  "tramoEtario": "0-3",
+  "orden": 1,
+  "titulo": {
+    "gl": "Explorando o Mar de Vigo: A nosa Ría",
+    "es": "Explorando el Mar de Vigo: Nuestra Ría"
+  },
+  "subtitulo": {
+    "gl": "Unidade de descubrimento sensorial e lingua na contorna mariña viguesa",
+    "es": "Unidad de descubrimiento sensorial y lenguaje en el entorno marino vigués"
+  },
+  "descripcion": {
+    "gl": "Proposta de aula para achegar ás crianzas aos sons, animais e texturas da ría de Vigo mediante cancións a pulso, narración interactiva e xogos sensoriais con auga.",
+    "es": "Propuesta de aula para acercar a los niños y niñas a los sonidos, animales y texturas de la ría de Vigo mediante canciones a pulso, narración interactiva y juegos sensoriales con agua."
+  },
+  "portadaAsset": "assets/images/unidades/juega_mar_01_cover.png",
+  "cancionPulso": {
+    "titulo": {
+      "gl": "As ondas da nosa ría",
+      "es": "Las olas de nuestra ría"
+    },
+    "letraConPulsos": {
+      "gl": "* On-das * que veñen, * on-das * que van,\n* no mar * de Vi-go * os pei-xes * es-tán.\n* Chof, * chof, * bate * a au-ga,\n* chas, * chas, * sobre * a a-rea.",
+      "es": "* O-las * que vienen, * o-las * que van,\n* en el * mar de * Vi-go * los pe-ces * es-tán.\n* Chof, * chof, * cae * el a-gua,\n* chas, * chas, * en la a-re-na."
+    },
+    "bpm": 80,
+    "audioAsset": {
+      "gl": "assets/audio/canciones/juega_mar_01_gl.mp3",
+      "es": "assets/audio/canciones/juega_mar_01_es.mp3"
+    },
+    "consignaDocente": {
+      "gl": "Marcar o pulso amodo palmeando nas pernas ou movendo os brazos en compás suave coma se fósemos ondas.",
+      "es": "Marcar el pulso despacio palmeando en las piernas o balanceando los brazos al ritmo como olas suaves."
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa pasea pola praia de Samil",
+      "es": "Lúa pasea por la playa de Samil"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "A gata Lúa colle o seu barquiño de madeira e mira a ría de Vigo. A auga brilla baixo o sol e o aire cheira a mar fresco.",
+          "es": "La gata Lúa coge su barquito de madera y mira la ría de Vigo. El agua brilla bajo el sol y el aire huele a mar fresco."
+        },
+        "imagenAsset": "assets/images/cuento/juega_mar_01_p1.png",
+        "preguntaComprension": {
+          "gl": "Que ten Lúa na man? Mirade como brilla a auga!",
+          "es": "¿Qué tiene Lúa en la mano? ¡Mirad cómo brilla el agua!"
+        }
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Polo ceo cruza unha gaivota branca que fai: Aaaah, aaah! Na beira da auga hai cunchas grandes e lisas que gardan o son das ondas.",
+          "es": "Por el cielo cruza una gaviota blanca que hace: ¡Aaaah, aaah! En la orilla del agua hay conchas grandes y suaves que guardan el sonido de las olas."
+        },
+        "imagenAsset": "assets/images/cuento/juega_mar_01_p2.png",
+        "preguntaComprension": {
+          "gl": "Onde está a gaivota? Que son fai cando voa alto?",
+          "es": "¿Dónde está la gaviota? ¿Qué sonido hace cuando vuela alto?"
+        }
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "Lúa atopa unha cuncha fermosa na area de Samil. Achégaa á orella e sorrí con agarimo. O mar de Vigo está cheo de vida!",
+          "es": "Lúa encuentra una concha hermosa en la arena de Samil. La acerca a la oreja y sonríe con alegría. ¡El mar de Vigo está lleno de vida!"
+        },
+        "imagenAsset": "assets/images/cuento/juega_mar_01_p3.png",
+        "preguntaComprension": {
+          "gl": "A quen saúda Lúa antes de marchar para a casa?",
+          "es": "¿A quién saluda Lúa antes de volver a casa?"
+        }
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "barco",
+      "palabra": {
+        "gl": "Barco",
+        "es": "Barco"
+      },
+      "definicionBreve": {
+        "gl": "Embarcación que navega polas augas da nosa ría.",
+        "es": "Embarcación que navega por las aguas de nuestra ría."
+      },
+      "imagenAsset": "assets/images/vocabulario/barco.png",
+      "audioAsset": {
+        "gl": "assets/audio/vocabulario/barco_gl.mp3",
+        "es": "assets/audio/vocabulario/barco_es.mp3"
+      }
+    },
+    {
+      "id": "gaivota",
+      "palabra": {
+        "gl": "Gaivota",
+        "es": "Gaviota"
+      },
+      "definicionBreve": {
+        "gl": "Ave mariña de cor branca que voa preto da costa de Vigo.",
+        "es": "Ave marina blanca que vuela cerca de la costa de Vigo."
+      },
+      "imagenAsset": "assets/images/vocabulario/gaivota.png",
+      "audioAsset": {
+        "gl": "assets/audio/vocabulario/gaivota_gl.mp3",
+        "es": "assets/audio/vocabulario/gaivota_es.mp3"
+      }
+    },
+    {
+      "id": "cuncha",
+      "palabra": {
+        "gl": "Cuncha",
+        "es": "Concha"
+      },
+      "definicionBreve": {
+        "gl": "Peza dura e redondeada que deixan os moluscos no areal.",
+        "es": "Pieza dura y redondeada que dejan los moluscos en el arenal."
+      },
+      "imagenAsset": "assets/images/vocabulario/cuncha.png",
+      "audioAsset": {
+        "gl": "assets/audio/vocabulario/cuncha_gl.mp3",
+        "es": "assets/audio/vocabulario/cuncha_es.mp3"
+      }
+    },
+    {
+      "id": "mexillon",
+      "palabra": {
+        "gl": "Mexillón",
+        "es": "Mejillón"
+      },
+      "definicionBreve": {
+        "gl": "Molusco escuro que medra nas bateas da ría de Vigo.",
+        "es": "Molusco oscuro que crece en las bateas de la ría de Vigo."
+      },
+      "imagenAsset": "assets/images/vocabulario/mexillon.png",
+      "audioAsset": {
+        "gl": "assets/audio/vocabulario/mexillon_gl.mp3",
+        "es": "assets/audio/vocabulario/mexillon_es.mp3"
+      }
+    },
+    {
+      "id": "peixe",
+      "palabra": {
+        "gl": "Peixe",
+        "es": "Pez"
+      },
+      "definicionBreve": {
+        "gl": "Animal que nada na auga e move a súa cola con rapidez.",
+        "es": "Animal que nada en el agua y mueve su cola con rapidez."
+      },
+      "imagenAsset": "assets/images/vocabulario/peixe.png",
+      "audioAsset": {
+        "gl": "assets/audio/vocabulario/peixe_gl.mp3",
+        "es": "assets/audio/vocabulario/peixe_es.mp3"
+      }
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Onde está o barco grande que navega no mar?",
+        "es": "¿Dónde está el barco grande que navega en el mar?"
+      },
+      "respuestaSugerida": {
+        "gl": "Sinalar co dedo a imaxe do barco ou coller o xoguete.",
+        "es": "Señalar con el dedo la imagen del barco o coger el juguete."
+      },
+      "consejoDocente": {
+        "gl": "Dar tempo para que a nena ou o neno explore a lámina antes de pedir o sinalamento.",
+        "es": "Dar tiempo a que la niña o el niño explore la lámina antes de pedir el señalamiento."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Que animal voa polo ceo e fai son de gaivota?",
+        "es": "¿Qué animal vuela por el cielo y hace sonido de gaviota?"
+      },
+      "respuestaSugerida": {
+        "gl": "Pronunciar 'gaivota' ou imitar o seu son e voo.",
+        "es": "Pronunciar 'gaviota' o imitar su sonido y vuelo."
+      },
+      "consejoDocente": {
+        "gl": "Celebrar calquera aproximación vocal ou xesto de abrir as mans coma ás.",
+        "es": "Celebrar cualquier aproximación vocal o gesto de abrir los brazos como alas."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Que pasa cando metemos a cuncha dentro da auga morna?",
+        "es": "¿Qué pasa cuando metemos la concha dentro del agua tibia?"
+      },
+      "respuestaSugerida": {
+        "gl": "Móllase, brilla, faise máis escura ou cae ata o fondo.",
+        "es": "Se moja, brilla, se vuelve oscura o cae hasta el fondo."
+      },
+      "consejoDocente": {
+        "gl": "Aproveitar para vincular a palabra coa sensación térmica e táctil.",
+        "es": "Aprovechar para vincular la palabra con la sensación térmica y táctil."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "Auga morna, cunchas suaves e esponxas de mar",
+      "es": "Agua tibia, conchas suaves y esponjas de mar"
+    },
+    "materiales": [
+      {
+        "gl": "Unha batea ou bandexa ampla de plástico transparente con cantos redondeados.",
+        "es": "Una batea o bandeja amplia de plástico transparente con esquinas redondeadas."
+      },
+      {
+        "gl": "Auga morna a temperatura corporal (36-37 °C).",
+        "es": "Agua tibia a temperatura corporal (36-37 °C)."
+      },
+      {
+        "gl": "Cunchas grandes de vieira ou ameixón limpas e sen fíos (tamaño mínimo 6 cm).",
+        "es": "Conchas grandes de vieira o almejón limpias y sin bordes afilados (tamaño mínimo 6 cm)."
+      },
+      {
+        "gl": "Esponxas vexetais suaves e anacos de tea azul para simular ondas.",
+        "es": "Esponjas vegetales suaves y trozos de tela azul para simular olas."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Acomodar ás crianzas en círculo seguro arredor da bandexa de auga.",
+        "es": "Acomodar a los niños y niñas en círculo seguro alrededor de la bandeja de agua."
+      },
+      {
+        "gl": "Ofrecer primeiro unha cuncha seca para acariciar a súa superficie estriada.",
+        "es": "Ofrecer primero una concha seca para acariciar su superficie con relieve."
+      },
+      {
+        "gl": "Somerxer a cuncha na auga morna xuntos e observar como cambia a súa cor.",
+        "es": "Sumergir la concha en el agua tibia juntos y observar cómo cambia su color."
+      },
+      {
+        "gl": "Apertar a esponxa mollada producindo pingas de auga e son de choiva suave.",
+        "es": "Apretar la esponja mojada produciendo gotas de agua y sonido de lluvia suave."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: Esta actividade require presenza e supervisión docente constante. Asegúrese de que todas as cunchas superen os 5 cm de diámetro e non presenten bordos cortantes nin estelas para evitar calquera risco de atragoamento.",
+      "es": "Aviso de seguridad obligatorio: Esta actividad requiere presencia y supervisión docente constante. Asegúrese de que todas las conchas superen los 5 cm de diámetro y carezcan de bordes cortantes o astillas para evitar cualquier riesgo de atragantamiento."
+    },
+    "objetivoSensorial": {
+      "gl": "Estimular o tacto, a propiocepción e a diferenza entre seco e mollado.",
+      "es": "Estimular el tacto, la propiocepción y la diferencia entre seco y mojado."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Discriminación de tamaño: Grande e pequeno na ría",
+      "es": "Discriminación de tamaño: Grande y pequeño en la ría"
+    },
+    "descripcion": {
+      "gl": "Introdución visual e manipulativa ás nocións de magnitude mediante barcos e cunchas.",
+      "es": "Introducción visual y manipulativa a las nociones de magnitud mediante barcos y conchas."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Colocar un barco grande e un barquiño pequeno diante da crianza.",
+        "es": "Colocar un barco grande y un barquito pequeño delante del niño o la niña."
+      },
+      {
+        "gl": "Preguntar: 'Cal é o barco grande coma o de Vigo?' e acompañar co xesto dos brazos abertos.",
+        "es": "Preguntar: '¿Cuál es el barco grande como el de Vigo?' y acompañar con el gesto de brazos abiertos."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Grande / Pequeno, Moito / Pouco, Dentro / Fóra",
+      "es": "Grande / Pequeño, Mucho / Poco, Dentro / Fuera"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe na aula navegamos polo mar de Vigo coa gata Lúa! Aprendemos a cantar as ondas e descubrimos cunchas e barcos.",
+      "es": "¡Hoy en el aula navegamos por el mar de Vigo con la gata Lúa! Aprendimos a cantar las olas y descubrimos conchas y barcos."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "Na hora do baño na casa, xogar con vasos de plástico a encher e baleirar auga cantando a canción das ondas.",
+        "es": "En la hora del baño en casa, jugar con vasos de plástico a llenar y vaciar agua cantando la canción de las olas."
+      },
+      {
+        "gl": "Nun paseo pola praia ou polo porto de Bouzas ou Samil, sinalar as gaivotas que descansan nas rochas.",
+        "es": "En un paseo por la playa o por el puerto de Bouzas o Samil, señalar las gaviotas que descansan en las rocas."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "Non esixir repetición forzada: nomear os obxectos con entusiasmo e esperar cinco segundos con mirada agarimosa.",
+      "es": "No exigir repetición forzada: nombrar los objetos con entusiasmo y esperar cinco segundos con mirada afectuosa."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_2_descubrimento_contorna",
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA2.1",
+      "CA2.2",
+      "CA3.1",
+      "CA3.2"
+    ]
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-11",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}
