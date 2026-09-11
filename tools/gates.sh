@@ -56,13 +56,27 @@ if [[ $FAST -eq 0 ]]; then
     aapt2=$(ls -1 "$sdk"/build-tools/*/aapt2 2>/dev/null | sort -V | tail -1 || true)
     [[ -n "$aapt2" ]] || { echo "aapt2 not found under $sdk/build-tools"; exit 1; }
 
+    # AndroidX Core injects one permission into every app that uses it, and
+    # Flutter requires AndroidX. It is namespaced to this application id, is
+    # declared at protectionLevel "signature", and only lets the app register
+    # its own non-exported broadcast receivers: it grants access to nothing
+    # outside the app and appears in no Play data-safety category. Everything
+    # else is a failure — INTERNET included.
+    allowed="uses-permission: name=com.earlify.descubreconlua.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+
     perms=$("$aapt2" dump permissions "$apk" | grep "^uses-permission" || true)
-    if [[ -n "$perms" ]]; then
-      echo "The release APK declares permissions:"
-      echo "$perms"
+    # aapt2 quotes the value; compare without the quotes.
+    unexpected=$(printf %s "$perms" | tr -d "\047" | grep -vxF "$allowed" || true)
+
+    if [[ -n "$unexpected" ]]; then
+      echo "The release APK declares permissions that were not approved:"
+      echo "$unexpected"
       exit 1
     fi
-    echo "OK: the release APK declares zero permissions"
+
+    echo "OK: the release APK declares no permission beyond the AndroidX"
+    echo "    signature-level one. No INTERNET, no network state, nothing."
+    printf %s "$perms" | sed "s/^/    /"
   '
 fi
 

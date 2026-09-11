@@ -52,20 +52,37 @@ Con Flutter 3.47.3 instalado y ejecutado en este contenedor:
 | Paridad de identificadores de voz | `test/core/voice_id_test.dart`: Dart, Python y el corpus real de Valeria dan el mismo hash |
 | Icono de Lúa | Renderizado y **mirado** en todas las densidades |
 
+Y en CI (GitHub Actions, runner limpio):
+
+| Área | Evidencia |
+| --- | --- |
+| La suite pasa en limpio | `flutter test` → 107 tests, en el runner |
+| **El APK release compila** | `✓ Built build/app/outputs/flutter-apk/app-release.apk (50.9MB)` |
+| **El binario no lleva permisos de red** | `aapt2 dump permissions` sobre el APK: un único permiso, `com.earlify.descubreconlua.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`. **Sin INTERNET, sin estado de red, sin nada más** |
+| La tubería de voz llega a Celtia | Resolvió el repo de `proxectonos` por la API de Hugging Face y encontró `celtia.pth`; sólo falló por el *gating* |
+| 6 de 12 grabaciones sintetizadas | Las castellanas, con Sharvard. Medidas con ffmpeg: mono 22 kHz, pico a −3,0 dBFS |
+
+**Sobre el único permiso del binario.** Lo inyecta AndroidX Core en toda app que
+lo use, y Flutter exige AndroidX. Lleva el nombre de paquete de esta app, se
+declara con `protectionLevel="signature"` y sólo permite registrar receptores de
+difusión propios no exportados. No da acceso a nada fuera de la app y no entra
+en ninguna categoría del formulario de *Seguridad de los datos* de Play. El gate
+lo acepta de forma explícita y rechaza cualquier otro.
+
 ### NO verificado
 
 | Área | Por qué |
 | --- | --- |
-| **El APK nunca se ha compilado** | La política de red de este entorno devuelve 403 para `dl.google.com`, así que el Android Gradle Plugin no se puede resolver. Primera compilación real: en CI |
-| **El código Kotlin nunca se ha compilado** | Misma razón |
-| **Los permisos del APK** | No hay APK que auditar todavía |
-| **Ninguna pantalla se ha visto en un aparato** | No hay emulador ni dispositivo. Cero capturas en `docs/capturas/` |
+| **Nada de esto se ha compilado en este contenedor** | La política de red devuelve 403 para `dl.google.com`, así que el Android Gradle Plugin no se resuelve aquí. Todo lo de Android está verificado **en CI**, no en local |
+| **Ninguna pantalla se ha visto en un aparato** | No hay emulador ni dispositivo. Cero capturas en `docs/capturas/`. El APK de CI se puede instalar: está como artefacto del workflow |
+| **La app nunca se ha ejecutado** | Que el APK compile y que la asamblea funcione en el aula son cosas distintas |
 | **Desbordes de disposición** | Sin aparato no hay forma de ver un `RenderFlex overflowed`. En release no se ve nada: el texto simplemente se corta. Falta comprobar en gallego, castellano y con escala de texto grande |
 | **Las 12 grabaciones de voz** | `huggingface.co` también está bloqueado aquí. El gate de cobertura falla, correctamente |
 
 ### Bloqueante conocido: la app no reproduce nada
 
-`tools/check_voice_coverage.py` falla con 12 de 12 locuciones sin grabación. No
+`tools/check_voice_coverage.py` falla con **6 de 12** locuciones sin grabación:
+las seis gallegas. Las seis castellanas ya están sintetizadas y commiteadas. No
 es un fallo del gate: es el estado del producto.
 
 Para resolverlo:
