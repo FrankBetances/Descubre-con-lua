@@ -31,7 +31,9 @@ class PasoPonteCasaWidget extends StatelessWidget {
       children: [
         // Title
         Text(
-          isGl ? 'Ponte á casa: Comunicación con familias' : 'Puente a casa: Comunicación con familias',
+          isGl
+              ? 'Ponte á casa: Comunicación con familias'
+              : 'Puente a casa: Comunicación con familias',
           style: theme.textTheme.headlineSmall?.copyWith(
             fontWeight: FontWeight.bold,
             color: AppTheme.primaryVigoBlue,
@@ -157,7 +159,9 @@ class PasoPonteCasaWidget extends StatelessWidget {
 
         // Home Suggested Activities
         Text(
-          isGl ? 'Actividades suxeridas para casa:' : 'Actividades sugeridas para casa:',
+          isGl
+              ? 'Actividades suxeridas para casa:'
+              : 'Actividades sugeridas para casa:',
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
             color: AppTheme.primaryVigoBlue,
@@ -208,7 +212,8 @@ class PasoPonteCasaWidget extends StatelessWidget {
               icon: const Icon(Icons.check_circle_outline),
               label: Text(
                 isGl ? 'Completar Asemblea' : 'Completar Asamblea',
-                style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                    fontSize: 16.0, fontWeight: FontWeight.bold),
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppTheme.primaryVigoBlue,

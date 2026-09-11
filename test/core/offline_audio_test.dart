@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import '../../lib/core/audio/mock_offline_audio_service.dart';
+import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
 
 void main() {
   group('MockOfflineAudioService tests', () {
@@ -19,15 +19,18 @@ void main() {
       expect(service.callLog, isEmpty);
     });
 
-    test('playAsset updates state, call log, and emits true on stream', () async {
+    test('playAsset updates state, call log, and emits true on stream',
+        () async {
       final emittedStates = <bool>[];
       final subscription = service.isPlayingStream.listen(emittedStates.add);
 
       await service.playAsset('assets/audio/mar_pulso_72bpm.wav');
 
       expect(service.isPlaying, isTrue);
-      expect(service.currentAssetPath, equals('assets/audio/mar_pulso_72bpm.wav'));
-      expect(service.callLog, contains('playAsset:assets/audio/mar_pulso_72bpm.wav'));
+      expect(
+          service.currentAssetPath, equals('assets/audio/mar_pulso_72bpm.wav'));
+      expect(service.callLog,
+          contains('playAsset:assets/audio/mar_pulso_72bpm.wav'));
 
       await Future.delayed(const Duration(milliseconds: 10));
       expect(emittedStates, contains(true));

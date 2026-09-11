@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import '../../lib/core/localization/app_language.dart';
-import '../../lib/core/localization/localized_string.dart';
+import 'package:descubre_con_lua/core/localization/app_language.dart';
+import 'package:descubre_con_lua/core/localization/localized_string.dart';
 
 void main() {
   group('AppLanguage tests', () {

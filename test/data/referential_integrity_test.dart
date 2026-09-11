@@ -7,25 +7,34 @@ void main() {
   final validator = ContentValidator();
 
   group('Referential Integrity and Structural Completeness Tests', () {
-    test('validates complete structure and referential integrity of juega.mar.01.json', () {
+    test(
+        'validates complete structure and referential integrity of juega.mar.01.json',
+        () {
       final file = File('assets/content/unidades/juega.mar.01.json');
       expect(file.existsSync(), isTrue);
 
-      final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
-      final result = validator.validateUnidadJson(jsonMap, sourcePath: 'juega.mar.01.json');
+      final jsonMap =
+          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+      final result = validator.validateUnidadJson(jsonMap,
+          sourcePath: 'juega.mar.01.json');
 
       expect(
         result.isValid,
         isTrue,
-        reason: 'Unit validation failed with errors:\n${result.errors.join("\n")}',
+        reason:
+            'Unit validation failed with errors:\n${result.errors.join("\n")}',
       );
     });
 
-    test('validates complete structure and 4 canonical parts of academy.como_se_aprende_a_hablar.01.json', () {
-      final file = File('assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json');
+    test(
+        'validates complete structure and 4 canonical parts of academy.como_se_aprende_a_hablar.01.json',
+        () {
+      final file = File(
+          'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json');
       expect(file.existsSync(), isTrue);
 
-      final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+      final jsonMap =
+          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
       final result = validator.validateCapsulaJson(
         jsonMap,
         sourcePath: 'academy.como_se_aprende_a_hablar.01.json',
@@ -34,7 +43,8 @@ void main() {
       expect(
         result.isValid,
         isTrue,
-        reason: 'Capsule validation failed with errors:\n${result.errors.join("\n")}',
+        reason:
+            'Capsule validation failed with errors:\n${result.errors.join("\n")}',
       );
     });
 
@@ -43,14 +53,22 @@ void main() {
         'id': 'juega.insecure.01',
         'tramoEtario': '0-3',
         'cancionPulso': {
-          'audioAsset': {'gl': 'assets/audio/test.mp3', 'es': 'assets/audio/test.mp3'},
+          'audioAsset': {
+            'gl': 'assets/audio/test.mp3',
+            'es': 'assets/audio/test.mp3'
+          },
         },
         'cuento': {
-          'paginas': [{'orden': 1}]
+          'paginas': [
+            {'orden': 1}
+          ]
         },
         'vocabulario': [
           {
-            'audioAsset': {'gl': 'assets/audio/v.mp3', 'es': 'assets/audio/v.mp3'},
+            'audioAsset': {
+              'gl': 'assets/audio/v.mp3',
+              'es': 'assets/audio/v.mp3'
+            },
           }
         ],
         'preguntas': [
@@ -78,19 +96,29 @@ void main() {
       expect(result.errors.any((e) => e.contains('avisoSeguridad')), isTrue);
     });
 
-    test('rejects unit missing any of the 3 graduated scaffolding question levels', () {
+    test(
+        'rejects unit missing any of the 3 graduated scaffolding question levels',
+        () {
       final unitMissingLevel3 = {
         'id': 'juega.incomplete_questions.01',
         'tramoEtario': '0-3',
         'cancionPulso': {
-          'audioAsset': {'gl': 'assets/audio/test.mp3', 'es': 'assets/audio/test.mp3'},
+          'audioAsset': {
+            'gl': 'assets/audio/test.mp3',
+            'es': 'assets/audio/test.mp3'
+          },
         },
         'cuento': {
-          'paginas': [{'orden': 1}]
+          'paginas': [
+            {'orden': 1}
+          ]
         },
         'vocabulario': [
           {
-            'audioAsset': {'gl': 'assets/audio/v.mp3', 'es': 'assets/audio/v.mp3'},
+            'audioAsset': {
+              'gl': 'assets/audio/v.mp3',
+              'es': 'assets/audio/v.mp3'
+            },
           }
         ],
         'preguntas': [
@@ -114,7 +142,10 @@ void main() {
 
       final result = validator.validateUnidadJson(unitMissingLevel3);
       expect(result.isValid, isFalse);
-      expect(result.errors.any((e) => e.contains('missing graduated scaffolding level 3')), isTrue);
+      expect(
+          result.errors
+              .any((e) => e.contains('missing graduated scaffolding level 3')),
+          isTrue);
     });
 
     test('rejects audio assets with non-offline or remote paths', () {
@@ -127,10 +158,27 @@ void main() {
             'es': 'assets/audio/test.mp3',
           },
         },
-        'cuento': {'paginas': [{'orden': 1}]},
-        'vocabulario': [{'audioAsset': {'gl': 'assets/audio/v.mp3', 'es': 'assets/audio/v.mp3'}}],
-        'preguntas': [{'nivel': 1}, {'nivel': 2}, {'nivel': 3}],
-        'exploracion': {'avisoSeguridad': {'gl': 'A', 'es': 'A'}},
+        'cuento': {
+          'paginas': [
+            {'orden': 1}
+          ]
+        },
+        'vocabulario': [
+          {
+            'audioAsset': {
+              'gl': 'assets/audio/v.mp3',
+              'es': 'assets/audio/v.mp3'
+            }
+          }
+        ],
+        'preguntas': [
+          {'nivel': 1},
+          {'nivel': 2},
+          {'nivel': 3}
+        ],
+        'exploracion': {
+          'avisoSeguridad': {'gl': 'A', 'es': 'A'}
+        },
         'matematicas': {},
         'puenteCasa': {},
         'curriculo': {
@@ -155,7 +203,14 @@ void main() {
         'porQueImporta': {'gl': 'Importa', 'es': 'Importa'},
         'queHacerEnCasa': {'gl': 'Hacer', 'es': 'Hacer'},
         // ejemploCotidiano is missing
-        'afirmaciones': [{'id': 'a1', 'esVerdadera': true, 'enunciado': {'gl': 'E', 'es': 'E'}, 'explicacion': {'gl': 'X', 'es': 'X'}}],
+        'afirmaciones': [
+          {
+            'id': 'a1',
+            'esVerdadera': true,
+            'enunciado': {'gl': 'E', 'es': 'E'},
+            'explicacion': {'gl': 'X', 'es': 'X'}
+          }
+        ],
         'curriculo': {
           'normativa': 'Decreto 150/2022',
           'etapa': 'educacion_infantil',

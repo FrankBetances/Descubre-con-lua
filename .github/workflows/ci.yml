@@ -1,0 +1,84 @@
+name: Gates
+
+# Runs tools/gates.sh — the same file a contributor runs locally, so the list
+# of gates cannot drift from what is actually enforced. This project had no
+# verification workflow at all: the only automation was the Pages deploy, and
+# the "1443/1443 CERTIFIED" report came from a script that parsed the Dart
+# files without ever executing them.
+
+on:
+  push:
+    branches:
+      - main
+      - claude/**
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: gates-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install the content gates' dependencies
+        run: pip install numpy Pillow
+
+      - name: flutter pub get
+        run: flutter pub get
+
+      - name: Run the gates
+        run: ./tools/gates.sh
+
+      # Kept even when the gates fail: the permission dump is the evidence for
+      # the privacy claim in the policy and in the Play Console form, and it is
+      # worth having on a red run too.
+      - name: Publish the release APK and its permissions
+        if: always()
+        run: |
+          apk=build/app/outputs/flutter-apk/app-release.apk
+          if [ -f "$apk" ]; then
+            aapt2=$(ls -1 "$ANDROID_SDK_ROOT"/build-tools/*/aapt2 | sort -V | tail -1)
+            echo '## Release APK permissions' >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            "$aapt2" dump permissions "$apk" >> "$GITHUB_STEP_SUMMARY" 2>&1 || true
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'No release APK was produced.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload the release APK
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: warn
+          retention-days: 14

@@ -41,7 +41,7 @@ class AppTheme {
       colorScheme: colorScheme,
       scaffoldBackgroundColor: backgroundSand,
       fontFamily: 'Roboto',
-      
+
       // High-legibility typography for adults (body >= 16sp)
       textTheme: const TextTheme(
         headlineLarge: TextStyle(
@@ -121,7 +121,7 @@ class AppTheme {
         ),
       ),
 
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: cardSurface,
         elevation: 1.0,
         shape: RoundedRectangleBorder(

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Descubre con Lúa · Manual de Casos de Uso</title>
+<!--
+  FUENTE ÚNICA del manual. De este fichero salen los tres formatos:
+    · HTML  — este mismo
+    · PDF   — docs/build-pdf.js
+    · Word  — docs/build-docx.py
+
+  Misma estructura que Valeria+, y por la misma razón que está escrita en su
+  build-docx.py: allí el texto llegó a estar duplicado dentro del constructor,
+  el HTML avanzó a la v12 y el Word se quedó describiendo la v10.3 sin que nada
+  avisara. Aquí no se edita el Word ni el PDF: se edita esto y se reconstruyen.
+
+  Regla de contenido, la del resto del proyecto: sólo se describe lo que la app
+  hace hoy. Lo que no existe está en «Límites de esta versión».
+-->
+<style>
+  :root {
+    --primary: #1B4965;   /* azul marítimo de Vigo, el primario de la app */
+    --secondary: #62B6CB;
+    --sand: #F4F1DE;
+    --ink: #2B2D42;
+    --ink2: #4A4E69;
+    --muted: #6B7280;
+    --ok-ink: #2A9D8F;
+    --warn-ink: #8A6D3B;
+    --line: #E0DDCF;
+  }
+  @page { size: A4; margin: 18mm 16mm 16mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink); line-height: 1.55; font-size: 10.5pt; margin: 0;
+  }
+  h2 { color: var(--primary); font-size: 17pt; margin: 22px 0 8px; line-height: 1.2; }
+  h3 { color: var(--ink); font-size: 13pt; margin: 16px 0 6px; }
+  h4 { color: var(--ink2); font-size: 11.5pt; margin: 12px 0 4px; }
+  p { margin: 0 0 7px; }
+  p.small, .small { font-size: 9pt; }
+  .muted { color: var(--muted); }
+  code { font-family: Consolas, "Courier New", monospace; font-size: 0.92em;
+         background: #EEF4F7; padding: 1px 4px; border-radius: 3px; }
+
+  section { page-break-inside: auto; }
+  section.page-break { page-break-before: always; }
+
+  .chapter-kicker { color: var(--primary); font-weight: 700; font-size: 8.5pt;
+                    letter-spacing: .08em; text-transform: uppercase; margin: 0 0 2px; }
+
+  /* ---------------------------------------------------------------- portada */
+  .cover { page-break-after: always; padding-top: 34mm; }
+  .cover .brand { display: inline-block; background: #E8F4F8; color: var(--primary);
+                  font-weight: 700; font-size: 9pt; letter-spacing: .06em;
+                  text-transform: uppercase; padding: 6px 12px; border-radius: 6px; }
+  .cover .title { color: var(--primary); font-size: 30pt; font-weight: 800;
+                  line-height: 1.1; margin: 14px 0 6px; }
+  .cover .subtitle { color: var(--ink2); font-size: 13pt; margin: 0 0 26px; }
+  .cover .meta { color: var(--muted); font-size: 9.5pt; }
+  .cover .rule { height: 4px; width: 120px; background: var(--secondary);
+                 border-radius: 2px; margin: 22px 0; }
+
+  /* ---------------------------------------------------------------- índice */
+  .toc { list-style: none; padding: 0; margin: 0 0 10px; }
+  .toc li { margin: 0 0 3px; padding-left: 14px; }
+  .toc li.section-label { padding-left: 0; margin-top: 12px; color: var(--primary);
+                          font-weight: 700; font-size: 9pt; letter-spacing: .06em;
+                          text-transform: uppercase; }
+  .toc .num { display: inline-block; min-width: 52px; font-weight: 700; color: var(--primary); }
+
+  /* ------------------------------------------------------------ casos de uso */
+  /* La tarjeta PUEDE partirse entre páginas: con `page-break-inside: avoid`
+     cada caso de uso se llevaba una hoja entera y dejaba media en blanco.
+     Lo que no se parte es la cabecera de su cuerpo. */
+  .uc { border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+        margin: 0 0 14px; }
+  .uc-head { background: var(--primary); color: #fff; padding: 9px 14px;
+             page-break-after: avoid; break-after: avoid; }
+  .uc-head.violet { background: #3D5A80; }
+  .uc-head .id { font-size: 9pt; font-weight: 700; opacity: .85; letter-spacing: .05em; }
+  .uc-head .title { font-size: 13pt; font-weight: 700; line-height: 1.25; }
+  .uc-body { padding: 12px 14px 4px; }
+
+  .uc-grid { display: grid; grid-template-columns: 4.2cm 1fr; gap: 1px;
+             background: var(--line); border: 1px solid var(--line);
+             border-radius: 6px; overflow: hidden; margin: 0 0 10px; }
+  .uc-grid .k { background: #F7FAFB; color: var(--muted); font-weight: 700;
+                font-size: 9pt; padding: 5px 9px; }
+  .uc-grid .v { background: #fff; font-size: 9pt; padding: 5px 9px; }
+
+  /* ------------------------------------------------------------------ avisos */
+  .callout { border-radius: 8px; padding: 10px 13px; margin: 0 0 12px;
+             background: #EEF6F9; page-break-inside: avoid; }
+  .callout.warn { background: #FFFBEB; }
+  .callout.ok   { background: #EAFAF2; }
+  .callout.violet { background: #EEF2F7; }
+  .callout .lbl { font-weight: 700; font-size: 9pt; color: var(--primary);
+                  margin: 0 0 3px; }
+  .callout.warn .lbl { color: var(--warn-ink); }
+  .callout.ok .lbl { color: var(--ok-ink); }
+  .callout.violet .lbl { color: #3D5A80; }
+  .callout p { margin: 0 0 4px; font-size: 10pt; }
+
+  /* ------------------------------------------------------------------ tablas */
+  table { border-collapse: collapse; width: 100%; margin: 0 0 12px; font-size: 9.5pt;
+          page-break-inside: avoid; }
+  th, td { border: 1px solid var(--line); padding: 5px 8px; text-align: left;
+           vertical-align: top; }
+  th { background: #E8F4F8; color: var(--primary); font-weight: 700; }
+  tbody tr:nth-child(odd) td { background: #F9FBFC; }
+
+  ul, ol { margin: 0 0 10px; padding-left: 20px; }
+  li { margin: 0 0 3px; }
+
+  .flowmap { margin: 0 0 12px; }
+  .flowmap .node { display: inline-block; background: #E8F4F8; color: var(--primary);
+                   font-weight: 700; font-size: 9.5pt; padding: 4px 10px;
+                   border-radius: 5px; margin: 0 4px 4px 0; }
+
+  .footer-note { color: var(--muted); font-size: 8.5pt; font-style: italic; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════ PORTADA ═══ -->
+<section class="cover">
+  <div class="brand">Escolas Infantís Municipais de Vigo</div>
+  <div class="title">Descubre con Lúa<br>Manual de Casos de Uso</div>
+  <div class="subtitle">Edición Vigo · Primeiro ciclo de educación infantil (0-3)</div>
+  <div class="rule"></div>
+  <p class="meta">
+    Aplicación Android sen conexión · <code>com.earlify.descubreconlua</code><br>
+    Contido en galego e castelán<br>
+    Contacto: frank.alberto.betances.reinoso@gmail.com
+  </p>
+  <p class="meta">
+    Este manual describe <strong>únicamente lo que la app hace hoy</strong>. Lo que
+    todavía no existe está recogido en el capítulo «Límites de esta versión».
+  </p>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ ÍNDICE ════ -->
+<section>
+  <h2>Índice</h2>
+  <ul class="toc">
+    <li class="section-label">La aplicación</li>
+    <li><span class="num">1</span><span class="txt">Qué es, y qué no es</span></li>
+    <li><span class="num">2</span><span class="txt">Antes de empezar</span></li>
+    <li><span class="num">3</span><span class="txt">Mapa de la aplicación</span></li>
+    <li class="section-label">Casos de uso · Docente</li>
+    <li><span class="num">CU-1</span><span class="txt">Elegir la unidad de la asamblea</span></li>
+    <li><span class="num">CU-2</span><span class="txt">Conducir la asamblea guiada</span></li>
+    <li><span class="num">CU-3</span><span class="txt">Marcar el pulso</span></li>
+    <li><span class="num">CU-4</span><span class="txt">Reproducir el recitado de la letra</span></li>
+    <li><span class="num">CU-5</span><span class="txt">Cambiar de lengua a media asamblea</span></li>
+    <li><span class="num">CU-6</span><span class="txt">Cuando una grabación no está</span></li>
+    <li class="section-label">Casos de uso · Familias</li>
+    <li><span class="num">CU-7</span><span class="txt">Leer una cápsula</span></li>
+    <li><span class="num">CU-8</span><span class="txt">Responder la reflexión</span></li>
+    <li><span class="num">CU-9</span><span class="txt">Usar la app sin la criatura delante</span></li>
+    <li class="section-label">Casos de uso · Mantenimiento</li>
+    <li><span class="num">CU-10</span><span class="txt">Añadir una unidad o una cápsula</span></li>
+    <li><span class="num">CU-11</span><span class="txt">Cambiar un texto que tiene audio</span></li>
+    <li><span class="num">CU-12</span><span class="txt">Regenerar las voces</span></li>
+    <li><span class="num">CU-13</span><span class="txt">Comprobar antes de entregar</span></li>
+    <li><span class="num">CU-14</span><span class="txt">Auditar la privacidad del binario</span></li>
+    <li class="section-label">Cierre</li>
+    <li><span class="num">4</span><span class="txt">Límites de esta versión</span></li>
+    <li><span class="num">5</span><span class="txt">Si algo va mal</span></li>
+  </ul>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ LA APLICACIÓN ════ -->
+<section class="page-break">
+  <p class="chapter-kicker">La aplicación</p>
+  <h2>1 · Qué es, y qué no es</h2>
+
+  <p><strong>Es</strong> material pedagógico para el primer ciclo de educación
+  infantil (0-3 años), en gallego y castellano, que funciona entero sin conexión.</p>
+
+  <div class="callout warn">
+    <p class="lbl">No es un producto sanitario</p>
+    <p>No evalúa, no diagnostica y no trata nada. No emite informes ni
+    puntuaciones sobre ninguna criatura.</p>
+  </div>
+
+  <p><strong>La criatura no usa la pantalla.</strong> Las dos partes de la app
+  están escritas para la persona adulta que acompaña: la docente en la asamblea y
+  la familia en casa. No hay juegos, ni recompensas, ni animaciones pensadas para
+  captar la atención infantil.</p>
+
+  <h2>2 · Antes de empezar</h2>
+  <table>
+    <tbody>
+      <tr><th>Instalación</th><td>APK de Android. No está publicada en Google Play todavía</td></tr>
+      <tr><th>Conexión</th><td>Ninguna. La app no puede conectarse: el paquete no lleva permiso de internet</td></tr>
+      <tr><th>Cuentas</th><td>No hay. No se pide correo, ni nombre, ni nada</td></tr>
+      <tr><th>Datos</th><td>Cero. No se recoge, no se envía y no se guarda nada sobre quien la usa</td></tr>
+      <tr><th>Idiomas</th><td>Gallego y castellano, conmutables en cualquier pantalla con el selector <strong>GL / ES</strong> de la barra superior</td></tr>
+    </tbody>
+  </table>
+  <p>Al desinstalar no queda nada que borrar en ningún servidor, porque nunca hubo ninguno.</p>
+
+  <h2>3 · Mapa de la aplicación</h2>
+  <div class="flowmap">
+    <span class="node">Pantalla inicial</span>
+    <span class="node">Juega con Lúa · Aula</span>
+    <span class="node">Lista de unidades</span>
+    <span class="node">Modo Asamblea (6 fases)</span>
+  </div>
+  <div class="flowmap">
+    <span class="node">Pantalla inicial</span>
+    <span class="node">Academy · Familias</span>
+    <span class="node">5 bloques</span>
+    <span class="node">Cápsula (4 partes + reflexión)</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ CU · DOCENTE ═════════ -->
+<section class="page-break">
+  <p class="chapter-kicker">Casos de uso</p>
+  <h2>Docente · Juega con Lúa</h2>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-1</div>
+      <div class="title">Elegir la unidad de la asamblea</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente</div>
+        <div class="k">Cuándo</div><div class="v">Antes de sentar al grupo, con un minuto de margen</div>
+        <div class="k">Resultado</div><div class="v">La unidad abierta, lista para la fase 1</div>
+      </div>
+      <ol>
+        <li>Abre la app y pulsa <strong>Entrar en Modo Aula</strong>.</li>
+        <li>Verás <strong>Juega con Lúa · Aula</strong> con las unidades disponibles.</li>
+        <li>Filtra con las pestañas: <strong>Todas as idades</strong>, <strong>0-2 anos</strong>, <strong>2-3 anos</strong>.</li>
+        <li>Cada tarjeta muestra el título, el tramo y una descripción breve.</li>
+        <li>Pulsa la unidad para abrirla.</li>
+      </ol>
+      <p class="small muted">Si el filtro no tiene unidades verás «Non se atoparon
+      unidades para este tramo de idade». Es un aviso honesto, no un error.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-2</div>
+      <div class="title">Conducir la asamblea guiada</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente</div>
+        <div class="k">Cuándo</div><div class="v">Durante la asamblea, con el aparato en la mano o apoyado</div>
+        <div class="k">Resultado</div><div class="v">Las seis fases recorridas, de la canción al puente a casa</div>
+      </div>
+      <p>La pantalla se llama <strong>Modo Asemblea · Aula</strong> e indica
+      <strong>Fase N de 6</strong>. Se avanza con <strong>Seguinte</strong>, se
+      retrocede con <strong>Anterior</strong> y la última fase ofrece
+      <strong>Finalizar</strong>.</p>
+      <table>
+        <thead><tr><th>Fase</th><th>Qué te da</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1. Canción a pulso</strong></td><td>Metrónomo visual, letra con marcas de pulso, consigna docente y la grabación del recitado</td></tr>
+          <tr><td><strong>2. Cuento guiado</strong></td><td>El cuento página a página, con la pregunta de comprensión de cada una</td></tr>
+          <tr><td><strong>3. Preguntas graduadas</strong></td><td>Tres niveles: señalar, nombrar y onomatopeyas, causa-efecto</td></tr>
+          <tr><td><strong>4. Exploración sensorial</strong></td><td>Objetivo, materiales, pasos y aviso de seguridad</td></tr>
+          <tr><td><strong>5. Matemáticas tempranas</strong></td><td>Enfoque, vocabulario matemático y acciones manipulativas</td></tr>
+          <tr><td><strong>6. Puente a casa</strong></td><td>Mensaje para el tablón y recomendación para la conversación en el hogar</td></tr>
+        </tbody>
+      </table>
+      <div class="callout ok">
+        <p class="lbl">Nada que recordar, nada que guardar</p>
+        <p>Al avanzar de la fase 1 a la 2 el recitado se pausa solo; al pulsar
+        Finalizar se detiene del todo. Después verás «Asemblea completada. A app
+        non garda nada da sesión»: es literal, no hay registro de qué grupo hizo
+        qué, ni aquí ni en ningún servidor.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-3</div>
+      <div class="title">Marcar el pulso</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente</div>
+        <div class="k">Cuándo</div><div class="v">En la fase 1, mientras cantáis o recitáis</div>
+        <div class="k">Resultado</div><div class="v">Un pulso constante que el grupo puede seguir con la vista</div>
+      </div>
+      <ol>
+        <li>Pulsa <strong>Marcar o pulso</strong>.</li>
+        <li>Los círculos se encienden uno a uno, al tempo de la unidad.</li>
+        <li>Para parar, <strong>Deter o pulso</strong>.</li>
+      </ol>
+      <div class="callout">
+        <p class="lbl">El metrónomo no suena, y es a propósito</p>
+        <p>Parte de las criaturas llevan audiófono o implante, y un metrónomo
+        sonoro compite justo con la voz que tienen que seguir. Por eso el pulso se
+        dibuja y el canal auditivo queda entero para la letra.</p>
+      </div>
+      <p><strong>Cómo leer los círculos:</strong></p>
+      <ul>
+        <li><strong>Círculo grande y relleno</strong> — tiempo fuerte, el primero del compás.</li>
+        <li><strong>Círculos en aro</strong> — tiempos débiles.</li>
+        <li><strong>Anillo exterior</strong> — el tiempo en curso. Sirve para anticipar el siguiente, que es la mitad del ejercicio.</li>
+      </ul>
+      <p class="small muted">Los tiempos del compás son los asteriscos de la letra.
+      En <code>* On-das * que veñen, * on-das * que van,</code> hay cuatro marcas:
+      cuatro tiempos. Lo que lees y lo que marcas son la misma cosa, por construcción.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-4</div>
+      <div class="title">Reproducir el recitado de la letra</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente</div>
+        <div class="k">Cuándo</div><div class="v">Para dar el modelo de pronunciación, o si prefiere no recitar ella</div>
+        <div class="k">Resultado</div><div class="v">La letra recitada en la lengua activa</div>
+      </div>
+      <ol>
+        <li>En la fase 1, pulsa el botón de reproducción de la tarjeta del recitado.</li>
+        <li>Dispones de reproducir, pausar, detener y reiniciar.</li>
+        <li>El estado se lee arriba: «Reproducindo o recitado da letra».</li>
+      </ol>
+      <p class="small muted">La grabación viaja dentro de la app. No se descarga nada.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-5</div>
+      <div class="title">Cambiar de lengua a media asamblea</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente o la familia</div>
+        <div class="k">Cuándo</div><div class="v">En cualquier momento, en cualquier pantalla</div>
+        <div class="k">Resultado</div><div class="v">Texto y grabación en la otra lengua, sin perder el sitio</div>
+      </div>
+      <p>Pulsa <strong>GL</strong> o <strong>ES</strong> en la barra superior.
+      Cambia el texto y también la grabación que se reproduce. No pierdes la fase
+      en la que estás.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head violet">
+      <div class="id">CU-6</div>
+      <div class="title">Cuando una grabación no está</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente</div>
+        <div class="k">Cuándo</div><div class="v">Si esa locución no viaja en la versión instalada</div>
+        <div class="k">Resultado</div><div class="v">La asamblea continúa sin la grabación</div>
+      </div>
+      <div class="callout warn">
+        <p class="lbl">Lo que verás</p>
+        <p>«Esta gravación non está incluída nesta versión. Podes marcar o pulso
+        coa túa voz.»</p>
+      </div>
+      <p>No es un fallo tuyo ni del aparato. El metrónomo visual, la letra y la
+      consigna funcionan igual.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ CU · FAMILIAS ════════ -->
+<section class="page-break">
+  <p class="chapter-kicker">Casos de uso</p>
+  <h2>Familias · Academy</h2>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-7</div>
+      <div class="title">Leer una cápsula</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">Padres y madres</div>
+        <div class="k">Cuándo</div><div class="v">Tres minutos, cuando la criatura ya duerme</div>
+        <div class="k">Resultado</div><div class="v">Una idea y algo concreto que hacer mañana</div>
+      </div>
+      <ol>
+        <li>Abre la app y pulsa <strong>Entrar en Academy</strong>.</li>
+        <li>Verás los cinco bloques de desarrollo:
+          <ol>
+            <li>Como se aprende a falar</li>
+            <li>O baño de linguaxe nas rutinas</li>
+            <li>Quendas de conversa e atención conxunta</li>
+            <li>Xogo corporal e espazos sen pantallas</li>
+            <li>Crianza bilingüe e contorna cultural</li>
+          </ol>
+        </li>
+        <li>Entra en un bloque y elige una cápsula.</li>
+      </ol>
+      <p>La cápsula siempre tiene las mismas cuatro partes, en este orden:</p>
+      <table>
+        <tbody>
+          <tr><th>1. Idea clave</th><td>La idea, en dos frases</td></tr>
+          <tr><th>2. Por qué importa</th><td>Qué hay detrás</td></tr>
+          <tr><th>3. Qué hacer en casa</th><td>Algo concreto para hoy</td></tr>
+          <tr><th>4. Ejemplo cotidiano</th><td>La misma idea dentro de una escena real</td></tr>
+        </tbody>
+      </table>
+      <p class="small muted">Si un bloque aún no tiene cápsulas, lo dice: «Novas
+      cápsulas deste bloque en preparación pedagóxica».</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-8</div>
+      <div class="title">Responder la reflexión</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">Padres y madres</div>
+        <div class="k">Cuándo</div><div class="v">Al final de cada cápsula</div>
+        <div class="k">Resultado</div><div class="v">Una explicación, nunca una nota</div>
+      </div>
+      <p>En <strong>Reflexión para a familia</strong> hay afirmaciones para
+      responder <strong>Verdadeiro</strong> o <strong>Falso</strong>.</p>
+      <ul>
+        <li>La respuesta aparece al instante, con una explicación.</li>
+        <li><strong>No puntúa y no corrige.</strong> Si te equivocas, te explica por qué, sin más.</li>
+        <li>No se guarda nada ni se envía a ningún sitio.</li>
+        <li>Si cambias de lengua, tu respuesta se mantiene y la explicación cambia de idioma.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-9</div>
+      <div class="title">Usar la app sin la criatura delante</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">Padres y madres</div>
+        <div class="k">Cuándo</div><div class="v">Siempre: es la forma prevista</div>
+        <div class="k">Resultado</div><div class="v">Una lectura de adulto, sin pantalla infantil</div>
+      </div>
+      <p>Academy no tiene nada que un niño quiera tocar: ni sonidos llamativos,
+      ni animaciones, ni premios. Es un texto para una persona adulta, con
+      tipografía grande y cómoda.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ CU · MANTENIMIENTO ═══════ -->
+<section class="page-break">
+  <p class="chapter-kicker">Casos de uso</p>
+  <h2>Mantenimiento · Equipo del proyecto</h2>
+
+  <div class="uc">
+    <div class="uc-head violet">
+      <div class="id">CU-10</div>
+      <div class="title">Añadir una unidad o una cápsula</div>
+    </div>
+    <div class="uc-body">
+      <ol>
+        <li>Crea el JSON en <code>assets/content/unidades/</code> o
+        <code>assets/content/capsulas/</code>, con las dos lenguas completas.</li>
+        <li><code>python3 tools/export_voice_corpus.py</code> extrae las locuciones
+        nuevas y sincroniza las rutas de audio.</li>
+        <li>Lanza el workflow <strong>Generate Voice Assets</strong> para sintetizarlas.</li>
+        <li><code>tools/gates.sh</code>.</li>
+      </ol>
+      <p class="small muted">No hay que tocar Dart: el catálogo se descubre del propio paquete.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head violet">
+      <div class="id">CU-11</div>
+      <div class="title">Cambiar un texto que tiene audio</div>
+    </div>
+    <div class="uc-body">
+      <div class="callout ok">
+        <p class="lbl">Esto es lo que más fácil se rompe, y está resuelto por construcción</p>
+        <p>El identificador de cada grabación es el hash de su propio texto.</p>
+      </div>
+      <p>Si cambias una frase:</p>
+      <ol>
+        <li>Cambia el identificador.</li>
+        <li>La grabación vieja queda huérfana y la nueva no existe.</li>
+        <li><code>tools/check_voice_coverage.py</code> falla y dice exactamente cuál falta.</li>
+      </ol>
+      <p>No se puede publicar una pantalla que enseñe un texto y reproduzca otro.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head violet">
+      <div class="id">CU-12</div>
+      <div class="title">Regenerar las voces</div>
+    </div>
+    <div class="uc-body">
+      <table>
+        <thead><tr><th>Lengua</th><th>Voz</th><th>Requisito</th></tr></thead>
+        <tbody>
+          <tr><td>Gallego</td><td><strong>Celtia</strong>, do Proxecto Nós</td><td>Secret <code>HF_TOKEN</code> (el modelo es <em>gated</em> en Hugging Face)</td></tr>
+          <tr><td>Castellano</td><td><strong>Sharvard</strong> (rhasspy/piper-voices)</td><td>Ninguno</td></tr>
+        </tbody>
+      </table>
+      <p>Lanza el workflow <strong>Generate Voice Assets</strong>. Sintetiza sólo
+      lo que falta, masteriza con objetivo de −3 dBFS, comprueba el pico del
+      fichero <em>ya codificado</em> y atenúa si hace falta, y commitea los
+      <code>.m4a</code>.</p>
+      <div class="callout warn">
+        <p class="lbl">El objetivo previo no basta</p>
+        <p>Un códec con pérdida no conserva el pico que se le entrega. Un recitado
+        masterizado a −3 dBFS salió del codificador a −0,0, sin margen ninguno.
+        <code>tools/check_voice_levels.py</code> mide los ficheros que se publican.</p>
+      </div>
+      <p class="small muted">Los modelos corren en CI y jamás en el aparato: la app
+      lleva grabaciones, no inferencia. Por eso el APK no necesita ni un permiso de red.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head violet">
+      <div class="id">CU-13</div>
+      <div class="title">Comprobar antes de entregar</div>
+    </div>
+    <div class="uc-body">
+      <p><code>tools/gates.sh --fast</code> pasa formato, análisis, tests y los
+      gates de contenido. <code>tools/gates.sh</code> añade la compilación del APK
+      y la auditoría de sus permisos.</p>
+      <p>CI ejecuta ese mismo script, así que la lista de gates no puede quedarse
+      atrás respecto a lo que de verdad se exige. El estado real de cada uno está
+      en <code>STATUS.md</code>.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head violet">
+      <div class="id">CU-14</div>
+      <div class="title">Auditar la privacidad del binario</div>
+    </div>
+    <div class="uc-body">
+      <ol>
+        <li><code>flutter build apk --release</code></li>
+        <li><code>aapt2 dump permissions build/app/outputs/flutter-apk/app-release.apk</code></li>
+      </ol>
+      <p>Debe aparecer <strong>un único permiso</strong>, el que AndroidX inyecta
+      (<code>…DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, de nivel
+      <em>signature</em> y con el nombre de paquete de la propia app). Cualquier
+      otro, y en especial <code>android.permission.INTERNET</code>, es un fallo
+      bloqueante.</p>
+      <div class="callout">
+        <p class="lbl">Por qué se lee del binario y no del manifiesto</p>
+        <p>Esa salida es la prueba que sostiene la política de privacidad y el
+        formulario de <em>Seguridad de los datos</em> de Google Play. Un manifiesto
+        fuente que quita INTERNET no demuestra nada por sí solo: una dependencia
+        fusionada puede devolverlo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ CIERRE ════ -->
+<section class="page-break">
+  <p class="chapter-kicker">Cierre</p>
+  <h2>4 · Límites de esta versión</h2>
+  <p>Para que nadie se lleve una sorpresa en un aula:</p>
+  <table>
+    <thead><tr><th>Límite</th><th>Detalle</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Contenido</strong></td><td>Una unidad y una cápsula. Cuatro de los cinco bloques de Academy están vacíos, y lo dicen</td></tr>
+      <tr><td><strong>Ilustraciones</strong></td><td>El cuento no lleva láminas. La pantalla lo indica y sugiere señalar en el aula</td></tr>
+      <tr><td><strong>Grabaciones</strong></td><td>Faltan varias. Cuando falta una, la app lo dice (CU-6)</td></tr>
+      <tr><td><strong>Filtro por edad</strong></td><td>La única unidad es <code>0-3</code>, así que aparece en las tres pestañas</td></tr>
+      <tr><td><strong>Sin aparato</strong></td><td>Ninguna pantalla se ha visto todavía en un móvil o tablet real</td></tr>
+      <tr><td><strong>Google Play</strong></td><td>No está publicada</td></tr>
+    </tbody>
+  </table>
+
+  <h2>5 · Si algo va mal</h2>
+  <table>
+    <thead><tr><th>Qué ves</th><th>Qué pasa</th></tr></thead>
+    <tbody>
+      <tr><td>«Non se atoparon unidades…»</td><td>El filtro no tiene unidades de ese tramo. Prueba «Todas as idades»</td></tr>
+      <tr><td>«Esta gravación non está incluída…»</td><td>Esa locución no viaja en esta versión. La asamblea sigue sin ella</td></tr>
+      <tr><td>«Lámina ilustrada pendente»</td><td>El cuento aún no tiene imágenes. Lee el texto y señalad en el aula</td></tr>
+      <tr><td>«Novas cápsulas deste bloque…»</td><td>Ese bloque de Academy todavía no tiene contenido</td></tr>
+      <tr><td>Listas vacías sin mensaje</td><td>Eso sí sería un defecto: escríbelo al correo de contacto</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Contacto</h3>
+  <p>Dr. Frank Alberto Betances Reinoso<br>
+  frank.alberto.betances.reinoso@gmail.com</p>
+
+  <p class="footer-note">Fuente única de este manual:
+  <code>docs/manual-casos-de-uso.html</code>. El PDF y el Word se generan con
+  <code>docs/build-pdf.js</code> y <code>docs/build-docx.py</code>; no se editan a mano.</p>
+</section>
+
+</body>
+</html>

@@ -10,3 +10,14 @@ build/
 .env
 .env.local
 *.log
+
+# Voice models downloaded by tools/generate_voice_assets.py (never committed)
+tools/.voices/
+
+# Machine-specific SDK paths
+android/local.properties
+
+# Signing material never enters the repository
+android/key.properties
+*.jks
+*.keystore

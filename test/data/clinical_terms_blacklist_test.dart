@@ -7,37 +7,50 @@ void main() {
   final validator = ContentValidator();
 
   group('Clinical Terms Blacklist Linter Tests', () {
-    test('confirms zero clinical terms in assets/content/unidades/juega.mar.01.json', () {
+    test(
+        'confirms zero clinical terms in assets/content/unidades/juega.mar.01.json',
+        () {
       final file = File('assets/content/unidades/juega.mar.01.json');
       expect(file.existsSync(), isTrue);
 
-      final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+      final jsonMap =
+          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
       final List<String> errors = [];
-      validator.checkClinicalTerms(jsonMap, path: 'juega.mar.01', errors: errors);
+      validator.checkClinicalTerms(jsonMap,
+          path: 'juega.mar.01', errors: errors);
 
       expect(
         errors,
         isEmpty,
-        reason: 'juega.mar.01.json contained prohibited clinical terms:\n${errors.join("\n")}',
+        reason:
+            'juega.mar.01.json contained prohibited clinical terms:\n${errors.join("\n")}',
       );
     });
 
-    test('confirms zero clinical terms in assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json', () {
-      final file = File('assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json');
+    test(
+        'confirms zero clinical terms in assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json',
+        () {
+      final file = File(
+          'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json');
       expect(file.existsSync(), isTrue);
 
-      final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+      final jsonMap =
+          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
       final List<String> errors = [];
-      validator.checkClinicalTerms(jsonMap, path: 'academy.hablar.01', errors: errors);
+      validator.checkClinicalTerms(jsonMap,
+          path: 'academy.hablar.01', errors: errors);
 
       expect(
         errors,
         isEmpty,
-        reason: 'academy.como_se_aprende_a_hablar.01.json contained prohibited clinical terms:\n${errors.join("\n")}',
+        reason:
+            'academy.como_se_aprende_a_hablar.01.json contained prohibited clinical terms:\n${errors.join("\n")}',
       );
     });
 
-    test('detects prohibited medical/diagnostic terms across morphological variants', () {
+    test(
+        'detects prohibited medical/diagnostic terms across morphological variants',
+        () {
       final prohibitedSamples = [
         'O paciente debe realizar este exercicio.',
         'Actividade para detectar síntomas precoces.',
@@ -70,14 +83,17 @@ void main() {
       ];
 
       for (final sample in prohibitedSamples) {
-        final node = {'texto': {'gl': sample, 'es': sample}};
+        final node = {
+          'texto': {'gl': sample, 'es': sample}
+        };
         final List<String> errors = [];
         validator.checkClinicalTerms(node, path: 'test_node', errors: errors);
 
         expect(
           errors,
           isNotEmpty,
-          reason: 'Linter failed to catch prohibited clinical term in: "$sample"',
+          reason:
+              'Linter failed to catch prohibited clinical term in: "$sample"',
         );
       }
     });
@@ -96,40 +112,57 @@ void main() {
       ];
 
       for (final sample in approvedPedagogicalSamples) {
-        final node = {'texto': {'gl': sample, 'es': sample}};
+        final node = {
+          'texto': {'gl': sample, 'es': sample}
+        };
         final List<String> errors = [];
-        validator.checkClinicalTerms(node, path: 'approved_node', errors: errors);
+        validator.checkClinicalTerms(node,
+            path: 'approved_node', errors: errors);
 
         expect(
           errors,
           isEmpty,
-          reason: 'Linter falsely flagged approved pedagogical term in: "$sample"',
+          reason:
+              'Linter falsely flagged approved pedagogical term in: "$sample"',
         );
       }
     });
 
-    test('safely exempts tratamento de auga and tratamiento de agua in maritime context', () {
+    test(
+        'safely exempts tratamento de auga and tratamiento de agua in maritime context',
+        () {
       final samples = [
         'O tratamento de auga na ría de Vigo para a depuración de moluscos',
         'El tratamiento de agua en la ría de Vigo para la depuración',
       ];
       for (final sample in samples) {
-        final node = {'texto': {'gl': sample, 'es': sample}};
+        final node = {
+          'texto': {'gl': sample, 'es': sample}
+        };
         final List<String> errors = [];
         validator.checkClinicalTerms(node, path: 'water_node', errors: errors);
         expect(
           errors,
           isEmpty,
-          reason: 'Linter falsely flagged maritime water treatment term in: "$sample"',
+          reason:
+              'Linter falsely flagged maritime water treatment term in: "$sample"',
         );
       }
     });
 
     test('rejects English placeholder keyword in any case variant', () {
-      for (final token in ['placeholder', 'PLACEHOLDER', 'Placeholder', 'PlAcEhOlDeR']) {
-        final node = {'texto': {'gl': token, 'es': 'Texto válido en castellano'}};
+      for (final token in [
+        'placeholder',
+        'PLACEHOLDER',
+        'Placeholder',
+        'PlAcEhOlDeR'
+      ]) {
+        final node = {
+          'texto': {'gl': token, 'es': 'Texto válido en castellano'}
+        };
         final List<String> errors = [];
-        validator.checkBilingualParity(node, path: 'placeholder_test', errors: errors);
+        validator.checkBilingualParity(node,
+            path: 'placeholder_test', errors: errors);
         expect(
           errors,
           isNotEmpty,

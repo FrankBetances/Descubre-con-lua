@@ -97,7 +97,7 @@ class PasoPreguntasWidget extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16.0),
               side: BorderSide(
-                color: levelColor.withOpacity(0.35),
+                color: levelColor.withValues(alpha: 0.35),
                 width: 1.5,
               ),
             ),
@@ -115,7 +115,7 @@ class PasoPreguntasWidget extends StatelessWidget {
                           vertical: 4.0,
                         ),
                         decoration: BoxDecoration(
-                          color: levelColor.withOpacity(0.15),
+                          color: levelColor.withValues(alpha: 0.15),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Text(
@@ -173,11 +173,13 @@ class PasoPreguntasWidget extends StatelessWidget {
                                   text: isGl
                                       ? 'Resposta esperada: '
                                       : 'Respuesta esperada: ',
-                                  style: const TextStyle(fontWeight: FontWeight.bold),
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 TextSpan(
                                   text: p.respuestaSugerida.resolve(language),
-                                  style: const TextStyle(fontStyle: FontStyle.italic),
+                                  style: const TextStyle(
+                                      fontStyle: FontStyle.italic),
                                 ),
                               ],
                             ),

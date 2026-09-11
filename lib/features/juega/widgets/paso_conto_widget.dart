@@ -35,7 +35,9 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
     if (pages.isEmpty) {
       return Center(
         child: Text(
-          isGl ? 'Non hai páxinas dispoñibles no conto.' : 'No hay páginas disponibles en el cuento.',
+          isGl
+              ? 'Non hai páxinas dispoñibles no conto.'
+              : 'No hay páginas disponibles en el cuento.',
           style: theme.textTheme.bodyMedium,
         ),
       );
@@ -60,9 +62,10 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
               decoration: BoxDecoration(
-                color: AppTheme.secondarySeaGlass.withOpacity(0.2),
+                color: AppTheme.secondarySeaGlass.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: Text(
@@ -111,14 +114,18 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                           color: AppTheme.primaryVigoBlue,
                         ),
                         const SizedBox(height: 8),
+                        // The asset path itself used to be printed here, so a
+                        // teacher running the assembly read
+                        // "assets/images/cuento/..." off the projector. The
+                        // illustrations are not in the package yet; until they
+                        // are, this says so in words a teacher can act on.
                         Text(
                           isGl
-                              ? 'Lámina visual ilustrada · ${currentPage.imagenAsset}'
-                              : 'Lámina visual ilustrada · ${currentPage.imagenAsset}',
+                              ? 'Lámina ilustrada pendente. Le o texto e sinala o que vedes na aula.'
+                              : 'Lámina ilustrada pendiente. Lee el texto y señala lo que veis en el aula.',
                           style: const TextStyle(
                             fontSize: 12.0,
                             color: Color(0xFF64748B),
-                            fontFamily: 'monospace',
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -130,7 +137,9 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
 
                 // Narrative text to read aloud
                 Text(
-                  isGl ? 'Lectura para a asamblea:' : 'Lectura para la asamblea:',
+                  isGl
+                      ? 'Lectura para a asamblea:'
+                      : 'Lectura para la asamblea:',
                   style: theme.textTheme.bodySmall?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: const Color(0xFF64748B),

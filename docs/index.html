@@ -1,348 +1,216 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="gl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad · Descubre con Lúa</title>
-  <meta name="description" content="Política de privacidad oficial para la aplicación Descubre con Lúa (com.earlify.descubreconlua) en Google Play.">
-  <style>
-    :root {
-      --primary: #1B4965;
-      --secondary: #62B6CB;
-      --accent: #5FA8D3;
-      --bg: #F4F1DE;
-      --card-bg: #FFFFFF;
-      --text: #2B2D42;
-      --text-muted: #4A4E69;
-      --border: #E0DDCF;
-      --badge-bg: #E8F4F8;
-      --badge-text: #1B4965;
-      --success: #2A9D8F;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      padding: 24px 16px;
-    }
-
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 40px 32px;
-      box-shadow: 0 4px 20px rgba(27, 73, 101, 0.08);
-      border: 1px solid var(--border);
-    }
-
-    header {
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 24px;
-      margin-bottom: 32px;
-    }
-
-    .brand-tag {
-      display: inline-block;
-      background: var(--badge-bg);
-      color: var(--badge-text);
-      font-weight: 700;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 6px 12px;
-      border-radius: 6px;
-      margin-bottom: 12px;
-    }
-
-    h1 {
-      color: var(--primary);
-      font-size: 2.1rem;
-      line-height: 1.25;
-      margin-bottom: 8px;
-    }
-
-    .meta-info {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
-    .lang-switcher {
-      display: flex;
-      gap: 8px;
-      margin-top: 16px;
-    }
-
-    .lang-btn {
-      background: #EAE6D6;
-      border: 1px solid var(--border);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      cursor: pointer;
-      color: var(--text);
-      transition: all 0.2s ease;
-    }
-
-    .lang-btn.active, .lang-btn:hover {
-      background: var(--primary);
-      color: #FFFFFF;
-      border-color: var(--primary);
-    }
-
-    .highlight-card {
-      background: #EEF8F6;
-      border-left: 5px solid var(--success);
-      padding: 16px 20px;
-      border-radius: 8px;
-      margin: 24px 0;
-    }
-
-    .highlight-card h3 {
-      color: var(--success);
-      font-size: 1.15rem;
-      margin-bottom: 6px;
-    }
-
-    h2 {
-      color: var(--primary);
-      font-size: 1.35rem;
-      margin-top: 32px;
-      margin-bottom: 12px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    p {
-      margin-bottom: 14px;
-      font-size: 1.02rem;
-    }
-
-    ul {
-      margin-left: 24px;
-      margin-bottom: 18px;
-    }
-
-    li {
-      margin-bottom: 6px;
-    }
-
-    strong {
-      color: var(--primary);
-    }
-
-    .spec-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      font-size: 0.95rem;
-    }
-
-    .spec-table th, .spec-table td {
-      border: 1px solid var(--border);
-      padding: 10px 14px;
-      text-align: left;
-    }
-
-    .spec-table th {
-      background: #F8F7F0;
-      color: var(--primary);
-    }
-
-    footer {
-      margin-top: 48px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      text-align: center;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 24px 18px;
-      }
-      h1 {
-        font-size: 1.7rem;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Descubre con Lúa · Edición Vigo</title>
+<meta name="description" content="Recurso educativo sen conexión para as escolas infantís municipais de Vigo e as súas familias (0-3 anos).">
+<style>
+  :root {
+    --primary: #1B4965;
+    --secondary: #62B6CB;
+    --bg: #F4F1DE;
+    --card-bg: #FFFFFF;
+    --text: #2B2D42;
+    --text-muted: #4A4E69;
+    --border: #E0DDCF;
+    --badge-bg: #E8F4F8;
+    --success: #2A9D8F;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    padding: 24px 16px;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 40px 32px;
+    box-shadow: 0 4px 20px rgba(27, 73, 101, 0.08);
+    border: 1px solid var(--border);
+  }
+  header { border-bottom: 2px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
+  .brand-tag {
+    display: inline-block; background: var(--badge-bg); color: var(--primary);
+    font-weight: 700; font-size: 0.85rem; text-transform: uppercase;
+    letter-spacing: 0.05em; padding: 6px 12px; border-radius: 6px; margin-bottom: 12px;
+  }
+  h1 { color: var(--primary); font-size: 2.1rem; line-height: 1.25; margin-bottom: 8px; }
+  .meta-info { color: var(--text-muted); font-size: 0.95rem; }
+  .lang-switcher { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+  .lang-btn {
+    background: #EAE6D6; border: 1px solid var(--border); padding: 6px 14px;
+    border-radius: 20px; font-size: 0.9rem; font-weight: 600; cursor: pointer;
+    color: var(--text); transition: all 0.2s ease;
+  }
+  .lang-btn.active, .lang-btn:hover { background: var(--primary); color: #fff; }
+  h2 { color: var(--primary); font-size: 1.3rem; margin: 32px 0 12px; }
+  p { margin-bottom: 14px; }
+  .modules { display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0; }
+  .module {
+    flex: 1 1 260px; border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px; background: #FCFBF6;
+  }
+  .module h3 { color: var(--primary); font-size: 1.05rem; margin-bottom: 8px; }
+  .module p { font-size: 0.95rem; color: var(--text-muted); margin: 0; }
+  ul { margin: 0 0 16px 22px; }
+  li { margin-bottom: 8px; }
+  .callout {
+    border-left: 4px solid var(--success); background: #F0F8F7;
+    padding: 16px 18px; border-radius: 8px; margin: 20px 0;
+  }
+  .callout strong { color: var(--primary); }
+  a { color: var(--primary); }
+  footer {
+    margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border);
+    font-size: 0.9rem; color: var(--text-muted);
+  }
+  code { background: var(--badge-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+  @media (max-width: 520px) {
+    .container { padding: 28px 20px; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
 </head>
 <body>
-
 <div class="container">
   <header style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
     <img src="app_icon.png" alt="Icono oficial de Lúa (Descubre con Lúa)" style="width: 96px; height: 96px; border-radius: 20px; box-shadow: 0 4px 14px rgba(27, 73, 101, 0.18); flex-shrink: 0;" />
     <div style="flex: 1; min-width: 260px;">
-      <div class="brand-tag">Earlify Health · Documento de Privacidad Oficial</div>
-      <h1 id="title">Política de Privacidad</h1>
-      <div class="meta-info">
-        <strong>Aplicación:</strong> Descubre con Lúa (<code id="pkg">com.earlify.descubreconlua</code>)<br>
-        <strong>Responsable:</strong> Earlify Health S.L. · Dr. Frank Alberto Betances Reinoso<br>
-        <strong>Fecha de vigencia:</strong> 11 de septiembre de 2026
-      </div>
-
+      <span class="brand-tag">Escolas Infantís Municipais de Vigo</span>
+      <h1>Descubre con Lúa · Edición Vigo</h1>
+      <p class="meta-info">
+        Aplicación Android educativa sen conexión (<code>com.earlify.descubreconlua</code>)<br>
+        Primeiro ciclo de educación infantil · 0-3 anos
+      </p>
       <div class="lang-switcher">
-        <button class="lang-btn active" onclick="setLanguage('es')">Castellano</button>
-        <button class="lang-btn" onclick="setLanguage('gl')">Galego</button>
-        <button class="lang-btn" onclick="setLanguage('en')">English</button>
+        <button class="lang-btn active" onclick="setLanguage('gl')">Galego</button>
+        <button class="lang-btn" onclick="setLanguage('es')">Castellano</button>
       </div>
     </div>
   </header>
 
-  <!-- CONTENIDO EN ESPAÑOL -->
-  <div id="content-es" class="lang-section">
-    <div class="highlight-card">
-      <h3>Resumen Fundamental: Cero Recopilación de Datos</h3>
-      <p>La aplicación <strong>Descubre con Lúa</strong> es una herramienta educativa <strong>100% offline</strong>. No solicita, no recopila, no transmite ni almacena ningún tipo de información personal, identificador de dispositivo ni dato de uso. Funciona de manera autónoma en el dispositivo sin conexión a Internet.</p>
+  <!-- ======================= GALEGO ======================= -->
+  <div id="content-gl" class="lang-section">
+    <div class="callout">
+      <strong>Finalidade exclusivamente educativa.</strong> Non é un produto sanitario,
+      non avalía, non diagnostica nin trata ningunha condición. É material pedagóxico
+      para docentes e familias.
     </div>
 
-    <h2>1. Responsable del Tratamiento</h2>
-    <p>La entidad responsable de la aplicación es:</p>
+    <h2>Que é</h2>
+    <p>
+      Un recurso para a asemblea da aula e para a casa, con todo o contido en galego e
+      castelán. Funciona enteiramente sen conexión: non hai contas, non hai rexistro e
+      non hai ningún dato que saia do aparello.
+    </p>
+
+    <h2>Dous módulos</h2>
+    <div class="modules">
+      <div class="module">
+        <h3>Juega con Lúa · Aula</h3>
+        <p>
+          Para a docente. Unidades temáticas da contorna de Vigo cunha asemblea guiada
+          paso a paso: canción a pulso, conto, preguntas graduadas, exploración sensorial
+          con aviso de seguridade, matemáticas temperás e ponte á casa.
+        </p>
+      </div>
+      <div class="module">
+        <h3>Academy · Familias</h3>
+        <p>
+          Para pais e nais. Cápsulas de lectura breve organizadas en cinco bloques de
+          desenvolvemento, cada unha con idea clave, por que importa, que facer na casa
+          e un exemplo cotián.
+        </p>
+      </div>
+    </div>
+
+    <h2>Como está pensada</h2>
     <ul>
-      <li><strong>Desarrollador / Entidad:</strong> Earlify Health S.L.</li>
-      <li><strong>Representante:</strong> Dr. Frank Alberto Betances Reinoso</li>
-      <li><strong>Contacto oficial:</strong> <a href="mailto:drbetances@hotmail.com">drbetances@hotmail.com</a></li>
-      <li><strong>Ubicación:</strong> Vigo, Galicia, España</li>
+      <li><strong>A crianza non usa a pantalla.</strong> A app é para a persoa adulta que acompaña.</li>
+      <li><strong>Sen recollida de datos.</strong> Cero datos persoais, cero analítica, cero publicidade.</li>
+      <li><strong>Sen permiso de internet.</strong> O paquete de instalación non inclúe <code>android.permission.INTERNET</code>.</li>
+      <li><strong>Sen pantallas chamativas.</strong> Deseño sobrio, sen gamificación nin animacións deseñadas para captar a atención infantil.</li>
+      <li><strong>Bilingüe de verdade.</strong> Todo o contido existe en galego e en castelán, non como tradución automática.</li>
     </ul>
 
-    <h2>2. Datos que Recopila la Aplicación</h2>
-    <p><strong>Ninguno (0 datos).</strong></p>
-    <p>La aplicación está diseñada bajo el principio de <em>Privacidad desde el Diseño y por Defecto</em> (Privacy by Design). Específicamente:</p>
-    <ul>
-      <li><strong>Sin datos personales:</strong> No solicita nombre, correo electrónico, dirección, teléfono ni identificadores de usuario.</li>
-      <li><strong>Sin identificadores de dispositivo:</strong> No lee el IMEI, Android ID, dirección MAC ni identificador de publicidad de Google (GAID).</li>
-      <li><strong>Sin datos biométricos ni de audio:</strong> Las actividades rítmicas reproducen archivos de sonido pregrabados incluidos en la app; no se accede al micrófono ni se graba la voz.</li>
-      <li><strong>Sin datos de ubicación:</strong> No utiliza GPS, ubicación por red ni balizas.</li>
-      <li><strong>Sin analítica ni telemetría:</strong> No incluye herramientas como Google Analytics, Firebase, Crashlytics, Mixpanel ni similares.</li>
-      <li><strong>Sin publicidad:</strong> La app no incluye anuncios comerciales ni librerías publicitarias (AdMob, Unity Ads, etc.).</li>
-    </ul>
+    <h2>Privacidade</h2>
+    <p>
+      A política completa está en <a href="privacy.html">privacy.html</a>, en galego,
+      castelán e inglés.
+    </p>
 
-    <h2>3. Permisos Técnicos en el Dispositivo (Android)</h2>
-    <p>La aplicación no requiere ni solicita ningún permiso especial o peligroso en el sistema operativo Android. En particular:</p>
-    <table class="spec-table">
-      <thead>
-        <tr>
-          <th>Permiso</th>
-          <th>Estado en Descubre con Lúa</th>
-          <th>Propósito</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><code>android.permission.INTERNET</code></td>
-          <td><strong>Ausente / Excluido</strong></td>
-          <td>La app no puede conectarse a internet.</td>
-        </tr>
-        <tr>
-          <td><code>android.permission.RECORD_AUDIO</code></td>
-          <td><strong>No solicitado</strong></td>
-          <td>No se usa el micrófono.</td>
-        </tr>
-        <tr>
-          <td><code>android.permission.ACCESS_FINE_LOCATION</code></td>
-          <td><strong>No solicitado</strong></td>
-          <td>No se accede a la localización.</td>
-        </tr>
-        <tr>
-          <td><code>android.permission.READ_EXTERNAL_STORAGE</code></td>
-          <td><strong>No solicitado</strong></td>
-          <td>Todos los recursos viajan integrados en la app.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>4. Privacidad de Menores (COPPA y RGPD)</h2>
-    <p>Aunque <strong>Descubre con Lúa</strong> es una herramienta educativa orientada a docentes de educación infantil (0-3 años) y familias (*Academy*):</p>
-    <ul>
-      <li>Cumple de forma estricta con la ley estadounidense de protección de la privacidad infantil en línea (<strong>COPPA</strong>) y el Reglamento General de Protección de Datos de la Unión Europea (<strong>RGPD</strong>).</li>
-      <li>Al no recopilar ningún dato personal de ningún usuario (ni adultos ni niños), es intrínsecamente segura para el entorno escolar y familiar.</li>
-      <li>No contiene compras integradas (in-app purchases), muros de pago ni enlaces a sitios web externos dentro de la experiencia de usuario.</li>
-    </ul>
-
-    <h2>5. Conservación y Eliminación de Datos</h2>
-    <p>Dado que no se recopila, transmite ni almacena información en servidores remotos, no existe ningún registro que conservar ni eliminar en la nube. La desinstalación de la aplicación en el dispositivo elimina cualquier configuración de preferencia local (como el idioma seleccionado).</p>
-
-    <h2>6. Enlaces a Terceros</h2>
-    <p>La aplicación no incluye enlaces web, banners publicitarios ni redirecciones a plataformas externas de terceros.</p>
-
-    <h2>7. Cambios en esta Política</h2>
-    <p>Si en el futuro se publicaran actualizaciones de la aplicación que modifiquen aspectos de esta política, los cambios se reflejarán de manera transparente en esta misma dirección web con actualización de la fecha de vigencia.</p>
-
-    <h2>8. Contacto y Derechos de los Usuarios</h2>
-    <p>Para cualquier consulta, aclaración o ejercicio de derechos relacionados con esta política de privacidad, puedes dirigirte a:</p>
-    <p><strong>Dr. Frank Alberto Betances Reinoso · Earlify Health S.L.</strong><br>
-    Correo electrónico: <a href="mailto:drbetances@hotmail.com">drbetances@hotmail.com</a><br>
-    Vigo, Galicia, España.</p>
+    <h2>Contacto</h2>
+    <p>
+      Dr. Frank Alberto Betances Reinoso<br>
+      <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a>
+    </p>
   </div>
 
-  <!-- CONTENIDO EN GALEGO -->
-  <div id="content-gl" class="lang-section" style="display: none;">
-    <div class="highlight-card">
-      <h3>Resumo Fundamental: Cero Recollida de Datos</h3>
-      <p>A aplicación <strong>Descubre con Lúa</strong> é unha ferramenta educativa <strong>100% fóra de liña (offline)</strong>. Non solicita, non recolle, non transmite nin almacena ningún tipo de información persoal, identificador de dispositivo nin dato de uso. Funciona de maneira autónoma no dispositivo sen conexión a Internet.</p>
+  <!-- ======================= CASTELLANO ======================= -->
+  <div id="content-es" class="lang-section" style="display: none;">
+    <div class="callout">
+      <strong>Finalidad exclusivamente educativa.</strong> No es un producto sanitario,
+      no evalúa, no diagnostica ni trata ninguna condición. Es material pedagógico para
+      docentes y familias.
     </div>
 
-    <h2>1. Responsable do Tratamento</h2>
-    <p>A entidade responsable da aplicación é:</p>
+    <h2>Qué es</h2>
+    <p>
+      Un recurso para la asamblea del aula y para casa, con todo el contenido en gallego
+      y castellano. Funciona enteramente sin conexión: no hay cuentas, no hay registro y
+      no hay ningún dato que salga del dispositivo.
+    </p>
+
+    <h2>Dos módulos</h2>
+    <div class="modules">
+      <div class="module">
+        <h3>Juega con Lúa · Aula</h3>
+        <p>
+          Para la docente. Unidades temáticas del entorno de Vigo con una asamblea guiada
+          paso a paso: canción a pulso, cuento, preguntas graduadas, exploración sensorial
+          con aviso de seguridad, matemáticas tempranas y puente a casa.
+        </p>
+      </div>
+      <div class="module">
+        <h3>Academy · Familias</h3>
+        <p>
+          Para padres y madres. Cápsulas de lectura breve organizadas en cinco bloques de
+          desarrollo, cada una con idea clave, por qué importa, qué hacer en casa y un
+          ejemplo cotidiano.
+        </p>
+      </div>
+    </div>
+
+    <h2>Cómo está pensada</h2>
     <ul>
-      <li><strong>Desenvolvedor / Entidade:</strong> Earlify Health S.L.</li>
-      <li><strong>Representante:</strong> Dr. Frank Alberto Betances Reinoso</li>
-      <li><strong>Contacto oficial:</strong> <a href="mailto:drbetances@hotmail.com">drbetances@hotmail.com</a></li>
-      <li><strong>Localización:</strong> Vigo, Galicia, España</li>
+      <li><strong>El niño no usa la pantalla.</strong> La app es para la persona adulta que acompaña.</li>
+      <li><strong>Sin recogida de datos.</strong> Cero datos personales, cero analítica, cero publicidad.</li>
+      <li><strong>Sin permiso de internet.</strong> El paquete de instalación no incluye <code>android.permission.INTERNET</code>.</li>
+      <li><strong>Sin pantallas llamativas.</strong> Diseño sobrio, sin gamificación ni animaciones diseñadas para captar la atención infantil.</li>
+      <li><strong>Bilingüe de verdad.</strong> Todo el contenido existe en gallego y en castellano, no como traducción automática.</li>
     </ul>
 
-    <h2>2. Datos que Recolle a Aplicación</h2>
-    <p><strong>Ningún (0 datos).</strong> A aplicación está deseñada baixo o principio de <em>Privacidade dende o Deseño</em>. Non solicita nomes, correos, localización, nin utiliza analítica, telemetría nin publicidade.</p>
+    <h2>Privacidad</h2>
+    <p>
+      La política completa está en <a href="privacy.html">privacy.html</a>, en gallego,
+      castellano e inglés.
+    </p>
 
-    <h2>3. Permisos Técnicos en Android</h2>
-    <p>A aplicación non inclúe nin require o permiso <code>android.permission.INTERNET</code> no seu manifesto de distribución, polo que lle é imposible transmitir información a través da rede.</p>
-
-    <h2>4. Privacidade da Infancia</h2>
-    <p>Cumpre estritamente co RGPD europeo e a normativa de protección de menores. Ao non recoller dato ningún, garante a máxima seguridade para as aulas de educación infantil (0-3 anos) e as familias.</p>
-
-    <h2>5. Contacto</h2>
-    <p>Para calquera dúbida: <a href="mailto:drbetances@hotmail.com">drbetances@hotmail.com</a>.</p>
-  </div>
-
-  <!-- CONTENIDO EN INGLÉS -->
-  <div id="content-en" class="lang-section" style="display: none;">
-    <div class="highlight-card">
-      <h3>Core Commitment: Zero Data Collection</h3>
-      <p>The <strong>Descubre con Lúa</strong> application is a <strong>100% offline</strong> educational tool. It does not collect, store, transmit, or process any personal data, device identifiers, or analytics. It functions completely self-contained without internet connectivity.</p>
-    </div>
-
-    <h2>1. Data Controller</h2>
-    <p>Earlify Health S.L. · Dr. Frank Alberto Betances Reinoso (<a href="mailto:drbetances@hotmail.com">drbetances@hotmail.com</a>) · Vigo, Galicia, Spain.</p>
-
-    <h2>2. Data Collected</h2>
-    <p><strong>Zero (0).</strong> No personal details, no location, no device identifiers (GAID, IMEI), no cookies, no tracking, and no external advertising.</p>
-
-    <h2>3. Device Permissions</h2>
-    <p>The release APK explicitly excludes <code>android.permission.INTERNET</code>. The application cannot communicate with any remote servers.</p>
-
-    <h2>4. Children's Privacy Compliance</h2>
-    <p>Complies with Google Play Families Policy, COPPA, and GDPR. Safe for early childhood educators and parents.</p>
-
-    <h2>5. Contact</h2>
-    <p>Email: <a href="mailto:drbetances@hotmail.com">drbetances@hotmail.com</a></p>
+    <h2>Contacto</h2>
+    <p>
+      Dr. Frank Alberto Betances Reinoso<br>
+      <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a>
+    </p>
   </div>
 
   <footer>
-    <p>&copy; 2026 Earlify Health S.L. · Todos os dereitos reservados / Todos los derechos reservados.<br>
-    Descubre con Lúa · <code>com.earlify.descubreconlua</code></p>
+    Descubre con Lúa · <code>com.earlify.descubreconlua</code> · Vigo, Galicia
   </footer>
 </div>
 
@@ -350,13 +218,10 @@
   function setLanguage(lang) {
     document.querySelectorAll('.lang-section').forEach(el => el.style.display = 'none');
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-    
-    const target = document.getElementById('content-' + lang);
-    if (target) target.style.display = 'block';
-    
-    event.target.classList.add('active');
+    document.getElementById('content-' + lang).style.display = 'block';
+    document.documentElement.lang = lang;
+    event.currentTarget.classList.add('active');
   }
 </script>
-
 </body>
 </html>

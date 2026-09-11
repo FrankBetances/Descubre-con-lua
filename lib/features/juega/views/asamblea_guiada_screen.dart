@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../core/audio/mock_offline_audio_service.dart';
+import '../../../core/audio/local_audio_player.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
@@ -74,7 +74,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
     if (widget.audioService != null) {
       _audioService = widget.audioService!;
     } else {
-      _audioService = MockOfflineAudioService();
+      _audioService = LocalAudioPlayer();
       _createdInternalAudioService = true;
     }
   }
@@ -122,8 +122,11 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
       SnackBar(
         content: Text(
           isGl
-              ? 'Asemblea completada con éxito. Proposta gardada.'
-              : 'Asamblea completada con éxito. Propuesta guardada.',
+              // "Proposta gardada" was not true: this app stores nothing at
+              // all, by design. Telling a teacher her session was saved is the
+              // same defect as a report that certifies what it never ran.
+              ? 'Asemblea completada. A app non garda nada da sesión.'
+              : 'Asamblea completada. La app no guarda nada de la sesión.',
         ),
         backgroundColor: AppTheme.calmSage,
       ),
@@ -199,7 +202,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
           children: [
             // Stepper progress indicator header
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
               color: AppTheme.cardSurface,
               child: Column(
                 children: [
@@ -230,7 +234,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                   LinearProgressIndicator(
                     value: (_currentPaso + 1) / 6.0,
                     backgroundColor: const Color(0xFFE2DDD0),
-                    valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.primaryVigoBlue),
+                    valueColor: const AlwaysStoppedAnimation<Color>(
+                        AppTheme.primaryVigoBlue),
                     minHeight: 6.0,
                     borderRadius: BorderRadius.circular(3.0),
                   ),
@@ -252,10 +257,12 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
 
             // Bottom Navigation Toolbar
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 14.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 14.0),
               decoration: const BoxDecoration(
                 color: AppTheme.cardSurface,
-                border: Border(top: BorderSide(color: Color(0xFFE2DDD0), width: 1.0)),
+                border: Border(
+                    top: BorderSide(color: Color(0xFFE2DDD0), width: 1.0)),
               ),
               child: Row(
                 children: [
@@ -264,7 +271,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                     icon: const Icon(Icons.arrow_back),
                     label: Text(isGl ? 'Anterior' : 'Anterior'),
                     style: OutlinedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0, vertical: 12.0),
                     ),
                   ),
                   const Spacer(),
@@ -276,7 +284,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppTheme.primaryVigoBlue,
                         foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20.0, vertical: 12.0),
                       ),
                     )
                   else
@@ -287,7 +296,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppTheme.primaryVigoBlue,
                         foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20.0, vertical: 12.0),
                       ),
                     ),
                 ],

@@ -1,17 +1,22 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import '../../../core/audio/local_audio_player.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
+import 'rhythm_bar_widget.dart';
 
-/// Phase 1: Canción a pulso with offline audio player and rhythm markers.
+/// Phase 1: canción a pulso.
 ///
-/// Provides teachers with:
-/// - Song lyrics with rhythm markers (*) for clapping or patting knees.
-/// - Offline audio playback controls (play / pause / stop).
-/// - Prominent BPM indicator for steady tempo regulation in 0-3 classrooms.
-/// - Teacher facilitation directive (consigna docente).
+/// The teacher gets:
+/// - a VISUAL metronome at the unit's tempo, beats read from the `*` markers
+///   in the lyrics. It is drawn rather than clicked, as in Valeria: an audible
+///   metronome competes with the voice the children are following, and many of
+///   them wear a hearing aid or an implant
+/// - the lyrics with those same markers, for clapping or patting knees
+/// - the recited lyrics as a bundled recording, on demand
+/// - the teacher facilitation directive (consigna docente)
 class PasoCancionWidget extends StatefulWidget {
   final CancionPulso cancion;
   final AppLanguage language;
@@ -30,7 +35,16 @@ class PasoCancionWidget extends StatefulWidget {
 
 class _PasoCancionWidgetState extends State<PasoCancionWidget> {
   bool _isPlaying = false;
+  String? _audioError;
   StreamSubscription<bool>? _audioSubscription;
+
+  /// Visual metronome state. One tick per beat, as in Valeria: the pulse is
+  /// drawn rather than sounded, so the auditory channel stays free for the
+  /// voice — half the children this work is aimed at wear a hearing aid or an
+  /// implant, and a clicking metronome competes with the words.
+  Timer? _pulseTimer;
+  int _beat = 0;
+  bool _pulseRunning = false;
 
   @override
   void initState() {
@@ -47,17 +61,57 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
 
   @override
   void dispose() {
+    _pulseTimer?.cancel();
     _audioSubscription?.cancel();
     super.dispose();
   }
 
+  int get _beatsPerLine => widget.cancion.beatsPerLine(widget.language);
+
+  void _togglePulse() {
+    if (_pulseRunning) {
+      _stopPulse();
+      return;
+    }
+    setState(() {
+      _pulseRunning = true;
+      _beat = 0;
+    });
+    _pulseTimer?.cancel();
+    _pulseTimer = Timer.periodic(widget.cancion.beatDuration, (_) {
+      if (!mounted) return;
+      setState(() => _beat = (_beat + 1) % _beatsPerLine);
+    });
+  }
+
+  void _stopPulse() {
+    _pulseTimer?.cancel();
+    _pulseTimer = null;
+    if (!mounted) return;
+    setState(() {
+      _pulseRunning = false;
+      _beat = 0;
+    });
+  }
+
   Future<void> _handlePlay() async {
-    // Prefer unit asset; fall back to procedural reference pulse mar_pulso_72bpm.wav if needed
     final assetPath = widget.cancion.resolveAudio(widget.language);
-    final effectivePath = assetPath.isNotEmpty
-        ? assetPath
-        : 'assets/audio/mar_pulso_72bpm.wav';
-    await widget.audioService.playAsset(effectivePath);
+    final effectivePath =
+        assetPath.isNotEmpty ? assetPath : 'assets/audio/mar_pulso_72bpm.wav';
+    try {
+      await widget.audioService.playAsset(effectivePath);
+      if (mounted) setState(() => _audioError = null);
+    } on AudioAssetException {
+      // A recording missing from the package used to be invisible: the button
+      // flipped to "playing" and the room heard silence. The teacher is told
+      // instead, and can run the assembly with her own voice.
+      if (!mounted) return;
+      setState(() {
+        _audioError = widget.language == AppLanguage.gl
+            ? 'Esta gravación non está incluída nesta versión. Podes marcar o pulso coa túa voz.'
+            : 'Esta grabación no está incluida en esta versión. Puedes marcar el pulso con tu voz.';
+      });
+    }
   }
 
   Future<void> _handlePause() async {
@@ -91,7 +145,8 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
               decoration: BoxDecoration(
                 color: AppTheme.primaryVigoBlue,
                 borderRadius: BorderRadius.circular(20.0),
@@ -113,6 +168,49 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
               ),
             ),
           ],
+        ),
+        const SizedBox(height: 16.0),
+
+        // Visual metronome. The pulse is shown, not clicked: an audible
+        // metronome would compete with the very voice the children follow.
+        Card(
+          color: AppTheme.cardSurface,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16.0),
+            side: const BorderSide(color: Color(0xFFD0D7DE), width: 1.5),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                RhythmBarWidget(
+                  beats: _beatsPerLine,
+                  accentEvery: cancion.accentEvery(widget.language),
+                  current: _pulseRunning ? _beat : null,
+                  tempoLabel: isGl
+                      ? '${cancion.bpm} pulsacións por minuto · $_beatsPerLine tempos por verso'
+                      : '${cancion.bpm} pulsaciones por minuto · $_beatsPerLine tiempos por verso',
+                  semanticsLabel: isGl
+                      ? 'Metrónomo visual a ${cancion.bpm} pulsacións por minuto, $_beatsPerLine tempos por verso'
+                      : 'Metrónomo visual a ${cancion.bpm} pulsaciones por minuto, $_beatsPerLine tiempos por verso',
+                ),
+                const SizedBox(height: 14.0),
+                OutlinedButton.icon(
+                  onPressed: _togglePulse,
+                  icon: Icon(
+                    _pulseRunning
+                        ? Icons.stop_rounded
+                        : Icons.play_arrow_rounded,
+                  ),
+                  label: Text(
+                    _pulseRunning
+                        ? (isGl ? 'Deter o pulso' : 'Detener el pulso')
+                        : (isGl ? 'Marcar o pulso' : 'Marcar el pulso'),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
         const SizedBox(height: 16.0),
 
@@ -141,8 +239,12 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                     const SizedBox(width: 8),
                     Text(
                       _isPlaying
-                          ? (isGl ? 'Reproducindo pulso rítmico offline' : 'Reproduciendo pulso rítmico offline')
-                          : (isGl ? 'Reprodutor de son local pausado' : 'Reproductor de sonido local pausado'),
+                          ? (isGl
+                              ? 'Reproducindo o recitado da letra'
+                              : 'Reproduciendo el recitado de la letra')
+                          : (isGl
+                              ? 'Recitado da letra detido'
+                              : 'Recitado de la letra detenido'),
                       style: theme.textTheme.bodySmall?.copyWith(
                         fontWeight: FontWeight.w600,
                         color: AppTheme.textSlate,
@@ -150,6 +252,26 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                     ),
                   ],
                 ),
+                if (_audioError != null) ...[
+                  const SizedBox(height: 12.0),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Icon(Icons.info_outline,
+                          size: 20, color: Color(0xFF8A6D3B)),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          _audioError!,
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: const Color(0xFF8A6D3B),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
                 const SizedBox(height: 16.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -163,14 +285,18 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                     const SizedBox(width: 20),
                     IconButton.filled(
                       onPressed: _isPlaying ? _handlePause : _handlePlay,
-                      icon: Icon(_isPlaying ? Icons.pause_rounded : Icons.play_arrow_rounded),
+                      icon: Icon(_isPlaying
+                          ? Icons.pause_rounded
+                          : Icons.play_arrow_rounded),
                       iconSize: 36,
                       style: IconButton.styleFrom(
                         backgroundColor: AppTheme.primaryVigoBlue,
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.all(16.0),
                       ),
-                      tooltip: _isPlaying ? (isGl ? 'Pausar' : 'Pausar') : (isGl ? 'Reproducir' : 'Reproducir'),
+                      tooltip: _isPlaying
+                          ? (isGl ? 'Pausar' : 'Pausar')
+                          : (isGl ? 'Reproducir' : 'Reproducir'),
                     ),
                     const SizedBox(width: 20),
                     IconButton.filledTonal(
@@ -208,14 +334,17 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Icon(Icons.record_voice_over_outlined, color: AppTheme.primaryVigoBlue, size: 24),
+              const Icon(Icons.record_voice_over_outlined,
+                  color: AppTheme.primaryVigoBlue, size: 24),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      isGl ? 'Consigna para a docente:' : 'Consigna para la docente:',
+                      isGl
+                          ? 'Consigna para a docente:'
+                          : 'Consigna para la docente:',
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: AppTheme.primaryVigoBlue,
@@ -241,7 +370,9 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
 
         // Lyrics with Pulse Markers
         Text(
-          isGl ? 'Letra con pulsos rítmicos (*):' : 'Letra con pulsos rítmicos (*):',
+          isGl
+              ? 'Letra con pulsos rítmicos (*):'
+              : 'Letra con pulsos rítmicos (*):',
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
             color: AppTheme.primaryVigoBlue,

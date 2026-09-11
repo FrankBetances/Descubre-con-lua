@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'core/audio/mock_offline_audio_service.dart';
+import 'core/audio/local_audio_player.dart';
 import 'core/audio/offline_audio_service.dart';
 import 'core/localization/app_language.dart';
 import 'core/localization/localized_string.dart';
@@ -54,7 +54,9 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
     if (widget.audioService != null) {
       _audioService = widget.audioService!;
     } else {
-      _audioService = MockOfflineAudioService();
+      // Production playback. This used to be MockOfflineAudioService, so the
+      // play button changed state and the classroom heard nothing.
+      _audioService = LocalAudioPlayer();
       _createdInternalAudioService = true;
     }
 
@@ -330,7 +332,8 @@ class HomeScreen extends StatelessWidget {
             Row(
               children: [
                 CircleAvatar(
-                  backgroundColor: AppTheme.secondarySeaGlass.withOpacity(0.25),
+                  backgroundColor:
+                      AppTheme.secondarySeaGlass.withValues(alpha: 0.25),
                   radius: 24,
                   child: Icon(icon, color: AppTheme.primaryVigoBlue, size: 28),
                 ),

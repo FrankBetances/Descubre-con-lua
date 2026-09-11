@@ -1,0 +1,110 @@
+{
+ "generatedAt": "2026-09-11T16:54:08Z",
+ "entries": 12,
+ "byStyle": {
+  "slow": 10,
+  "tutor": 2
+ },
+ "byLang": {
+  "es": 6,
+  "gl": 6
+ },
+ "corpus": [
+  {
+   "id": "es_slow_349f29ef_8",
+   "lang": "es",
+   "style": "slow",
+   "text": "Mejillón",
+   "speech": "Mejillón",
+   "source": "juega.mar.01/vocabulario/mexillon"
+  },
+  {
+   "id": "es_slow_35479b23_6",
+   "lang": "es",
+   "style": "slow",
+   "text": "Concha",
+   "speech": "Concha",
+   "source": "juega.mar.01/vocabulario/cuncha"
+  },
+  {
+   "id": "es_slow_7efb941c_5",
+   "lang": "es",
+   "style": "slow",
+   "text": "Barco",
+   "speech": "Barco",
+   "source": "juega.mar.01/vocabulario/barco"
+  },
+  {
+   "id": "es_slow_8ccc609e_7",
+   "lang": "es",
+   "style": "slow",
+   "text": "Gaviota",
+   "speech": "Gaviota",
+   "source": "juega.mar.01/vocabulario/gaivota"
+  },
+  {
+   "id": "es_slow_c85081ac_3",
+   "lang": "es",
+   "style": "slow",
+   "text": "Pez",
+   "speech": "Pez",
+   "source": "juega.mar.01/vocabulario/peixe"
+  },
+  {
+   "id": "es_tutor_3a7014eb_155",
+   "lang": "es",
+   "style": "tutor",
+   "text": "* O-las * que vienen, * o-las * que van, * en el mar * de Vi-go * los pe-ces * es-tán. * Chof, * chof, * cae * el a-gua, * chas, * chas, * en la * a-re-na.",
+   "speech": "Olas que vienen, olas que van, en el mar de Vigo los peces están. Chof, chof, cae el agua, chas, chas, en la arena.",
+   "source": "juega.mar.01/cancionPulso"
+  },
+  {
+   "id": "gl_slow_29231976_5",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Peixe",
+   "speech": "Peixe",
+   "source": "juega.mar.01/vocabulario/peixe"
+  },
+  {
+   "id": "gl_slow_492e39a1_6",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Cuncha",
+   "speech": "Cuncha",
+   "source": "juega.mar.01/vocabulario/cuncha"
+  },
+  {
+   "id": "gl_slow_7efb941c_5",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Barco",
+   "speech": "Barco",
+   "source": "juega.mar.01/vocabulario/barco"
+  },
+  {
+   "id": "gl_slow_c2d08ad4_7",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Gaivota",
+   "speech": "Gaivota",
+   "source": "juega.mar.01/vocabulario/gaivota"
+  },
+  {
+   "id": "gl_slow_cf99b481_8",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Mexillón",
+   "speech": "Mexillón",
+   "source": "juega.mar.01/vocabulario/mexillon"
+  },
+  {
+   "id": "gl_tutor_07aaac78_153",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "* On-das * que veñen, * on-das * que van, * no mar * de Vi-go * os pei-xes * es-tán. * Chof, * chof, * bate * a au-ga, * chas, * chas, * sobre * a a-rea.",
+   "speech": "Ondas que veñen, ondas que van, no mar de Vigo os peixes están. Chof, chof, bate a auga, chas, chas, sobre a area.",
+   "source": "juega.mar.01/cancionPulso"
+  }
+ ]
+}

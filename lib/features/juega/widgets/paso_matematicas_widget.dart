@@ -32,7 +32,9 @@ class PasoMatematicasWidget extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                isGl ? 'Matemáticas temperás (0-3)' : 'Matemáticas tempranas (0-3)',
+                isGl
+                    ? 'Matemáticas temperás (0-3)'
+                    : 'Matemáticas tempranas (0-3)',
                 style: theme.textTheme.headlineSmall?.copyWith(
                   fontWeight: FontWeight.bold,
                   color: AppTheme.primaryVigoBlue,
@@ -41,9 +43,10 @@ class PasoMatematicasWidget extends StatelessWidget {
               ),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
               decoration: BoxDecoration(
-                color: AppTheme.calmSage.withOpacity(0.2),
+                color: AppTheme.calmSage.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.circular(12.0),
                 border: Border.all(color: AppTheme.calmSage, width: 1.5),
               ),
@@ -81,7 +84,9 @@ class PasoMatematicasWidget extends StatelessWidget {
                     ),
                     const SizedBox(width: 10),
                     Text(
-                      isGl ? 'Enfoque da actividade:' : 'Enfoque de la actividad:',
+                      isGl
+                          ? 'Enfoque da actividade:'
+                          : 'Enfoque de la actividad:',
                       style: theme.textTheme.titleSmall?.copyWith(
                         fontWeight: FontWeight.bold,
                         color: AppTheme.primaryVigoBlue,
@@ -154,7 +159,9 @@ class PasoMatematicasWidget extends StatelessWidget {
 
         // Suggested Actions List
         Text(
-          isGl ? 'Accións manipulativas suxeridas:' : 'Acciones manipulativas sugeridas:',
+          isGl
+              ? 'Accións manipulativas suxeridas:'
+              : 'Acciones manipulativas sugeridas:',
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
             color: AppTheme.primaryVigoBlue,

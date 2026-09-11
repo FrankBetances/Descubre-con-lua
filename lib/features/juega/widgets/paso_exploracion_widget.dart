@@ -50,7 +50,7 @@ class PasoExploracionWidget extends StatelessWidget {
             ),
             boxShadow: [
               BoxShadow(
-                color: AppTheme.accentTerracotta.withOpacity(0.12),
+                color: AppTheme.accentTerracotta.withValues(alpha: 0.12),
                 blurRadius: 8,
                 offset: const Offset(0, 2),
               ),
@@ -94,11 +94,13 @@ class PasoExploracionWidget extends StatelessWidget {
               ),
               const SizedBox(height: 8.0),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(6.0),
-                  border: Border.all(color: AppTheme.accentTerracotta.withOpacity(0.4)),
+                  border: Border.all(
+                      color: AppTheme.accentTerracotta.withValues(alpha: 0.4)),
                 ),
                 child: Text(
                   isGl
@@ -237,7 +239,8 @@ class PasoExploracionWidget extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 14,
-                    backgroundColor: AppTheme.primaryVigoBlue.withOpacity(0.12),
+                    backgroundColor:
+                        AppTheme.primaryVigoBlue.withValues(alpha: 0.12),
                     child: Text(
                       '${idx + 1}',
                       style: const TextStyle(

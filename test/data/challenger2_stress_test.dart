@@ -2,7 +2,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/data/models/curricular_model.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart';
-import 'package:descubre_con_lua/data/models/capsula_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/data/validators/content_validator.dart';
 
@@ -15,13 +14,18 @@ void main() {
         'tramoEtario': '0-3',
       });
       expect(resUnidad.isValid, isFalse);
-      expect(resUnidad.errors.any((e) => e.contains('Missing or empty root "id"')), isTrue);
+      expect(
+          resUnidad.errors.any((e) => e.contains('Missing or empty root "id"')),
+          isTrue);
 
       final resCapsula = validator.validateCapsulaJson({
         'bloqueId': 'desarrollo_comunicativo',
       });
       expect(resCapsula.isValid, isFalse);
-      expect(resCapsula.errors.any((e) => e.contains('Missing or empty root "id"')), isTrue);
+      expect(
+          resCapsula.errors
+              .any((e) => e.contains('Missing or empty root "id"')),
+          isTrue);
     });
 
     test('rejects invalid tramoEtario in Unidad', () {
@@ -30,7 +34,8 @@ void main() {
         'tramoEtario': 'primaria',
       });
       expect(res.isValid, isFalse);
-      expect(res.errors.any((e) => e.contains('Invalid "tramoEtario"')), isTrue);
+      expect(
+          res.errors.any((e) => e.contains('Invalid "tramoEtario"')), isTrue);
     });
 
     test('rejects invalid bloqueId in Capsula', () {
@@ -115,7 +120,8 @@ void main() {
           audioAsset: LocalizedString(gl: 'a.mp3', es: 'a.mp3'),
           consignaDocente: LocalizedString(gl: 'gl', es: 'es'),
         ),
-        cuento: Cuento(titulo: LocalizedString(gl: 'gl', es: 'es'), paginas: []),
+        cuento:
+            Cuento(titulo: LocalizedString(gl: 'gl', es: 'es'), paginas: []),
         vocabulario: [],
         preguntas: [],
         exploracion: ExploracionSensorial(
@@ -166,8 +172,14 @@ void main() {
       // Missing level 3
       validator.checkReferentialIntegrityUnidad({
         'cancionPulso': {'audioAsset': 'assets/audio/test.mp3'},
-        'cuento': {'paginas': [{'p': 1}]},
-        'vocabulario': [{'audioAsset': 'assets/audio/test.mp3'}],
+        'cuento': {
+          'paginas': [
+            {'p': 1}
+          ]
+        },
+        'vocabulario': [
+          {'audioAsset': 'assets/audio/test.mp3'}
+        ],
         'preguntas': [
           {'nivel': 1},
           {'nivel': 2},
@@ -179,7 +191,10 @@ void main() {
         'puenteCasa': {},
       }, errors: errors, warnings: warnings);
 
-      expect(errors.any((e) => e.contains('missing graduated scaffolding level 3')), isTrue);
+      expect(
+          errors
+              .any((e) => e.contains('missing graduated scaffolding level 3')),
+          isTrue);
     });
 
     test('validator rejects missing or blank classroom safety notice', () {
@@ -188,9 +203,19 @@ void main() {
 
       validator.checkReferentialIntegrityUnidad({
         'cancionPulso': {'audioAsset': 'assets/audio/test.mp3'},
-        'cuento': {'paginas': [{'p': 1}]},
-        'vocabulario': [{'audioAsset': 'assets/audio/test.mp3'}],
-        'preguntas': [{'nivel': 1}, {'nivel': 2}, {'nivel': 3}],
+        'cuento': {
+          'paginas': [
+            {'p': 1}
+          ]
+        },
+        'vocabulario': [
+          {'audioAsset': 'assets/audio/test.mp3'}
+        ],
+        'preguntas': [
+          {'nivel': 1},
+          {'nivel': 2},
+          {'nivel': 3}
+        ],
         'exploracion': {
           'avisoSeguridad': {'gl': '   ', 'es': 'Aviso'},
         },
@@ -198,7 +223,8 @@ void main() {
         'puenteCasa': {},
       }, errors: errors, warnings: warnings);
 
-      expect(errors.any((e) => e.contains('avisoSeguridad must be populated')), isTrue);
+      expect(errors.any((e) => e.contains('avisoSeguridad must be populated')),
+          isTrue);
     });
   });
 
@@ -213,7 +239,10 @@ void main() {
         'criteriosEvaluacion': ['CA1.1'],
       }, errors: errors);
 
-      expect(errors.any((e) => e.contains('curriculo.normativa must be "Decreto 150/2022"')), isTrue);
+      expect(
+          errors.any((e) =>
+              e.contains('curriculo.normativa must be "Decreto 150/2022"')),
+          isTrue);
     });
 
     test('rejects primary or secondary educational stages', () {
@@ -226,7 +255,10 @@ void main() {
         'criteriosEvaluacion': ['CA1.1'],
       }, errors: errors);
 
-      expect(errors.any((e) => e.contains('curriculo.etapa must be "educacion_infantil"')), isTrue);
+      expect(
+          errors.any((e) =>
+              e.contains('curriculo.etapa must be "educacion_infantil"')),
+          isTrue);
     });
 
     test('rejects unrecognized area and criteria codes', () {

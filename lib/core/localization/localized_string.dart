@@ -26,9 +26,9 @@ class LocalizedString {
 
   /// Serializes to JSON map.
   Map<String, String> toJson() => {
-    'gl': gl,
-    'es': es,
-  };
+        'gl': gl,
+        'es': es,
+      };
 
   /// Returns true if both language variants are non-empty and non-blank.
   bool get hasParity => gl.trim().isNotEmpty && es.trim().isNotEmpty;
