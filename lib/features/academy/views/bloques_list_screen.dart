@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../core/localization/app_language.dart';
-import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../data/models/capsula_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../widgets/selector_idioma_widget.dart';
 import 'capsula_detail_screen.dart';
@@ -108,7 +106,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                 color: AppTheme.cardSurface,
                 borderRadius: BorderRadius.circular(16.0),
                 border: Border.all(
-                  color: AppTheme.primaryVigoBlue.withOpacity(0.2),
+                  color: AppTheme.primaryVigoBlue.withValues(alpha: 0.2),
                   width: 1.5,
                 ),
               ),
@@ -167,8 +165,10 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
 
             // List of the 5 canonical blocks
             ...bloques.map((bloque) {
-              final capsulas = widget.repository.getCapsulasByBloqueId(bloque.id);
-              final blockColor = _colorFromHex(bloque.colorHex, AppTheme.primaryVigoBlue);
+              final capsulas =
+                  widget.repository.getCapsulasByBloqueId(bloque.id);
+              final blockColor =
+                  _colorFromHex(bloque.colorHex, AppTheme.primaryVigoBlue);
               final icon = _iconForBloque(bloque.icono);
 
               return Card(
@@ -178,7 +178,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16.0),
                   side: BorderSide(
-                    color: blockColor.withOpacity(0.35),
+                    color: blockColor.withValues(alpha: 0.35),
                     width: 1.5,
                   ),
                 ),
@@ -192,7 +192,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                         children: [
                           CircleAvatar(
                             radius: 22,
-                            backgroundColor: blockColor.withOpacity(0.15),
+                            backgroundColor: blockColor.withValues(alpha: 0.15),
                             child: Icon(icon, color: blockColor, size: 24),
                           ),
                           const SizedBox(width: 14),
@@ -206,7 +206,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                                     vertical: 2.0,
                                   ),
                                   decoration: BoxDecoration(
-                                    color: blockColor.withOpacity(0.12),
+                                    color: blockColor.withValues(alpha: 0.12),
                                     borderRadius: BorderRadius.circular(6.0),
                                   ),
                                   child: Text(
@@ -251,7 +251,9 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                         const Divider(height: 1),
                         const SizedBox(height: 12),
                         Text(
-                          isGl ? 'Cápsulas dispoñibles:' : 'Cápsulas disponibles:',
+                          isGl
+                              ? 'Cápsulas dispoñibles:'
+                              : 'Cápsulas disponibles:',
                           style: theme.textTheme.bodySmall?.copyWith(
                             fontWeight: FontWeight.bold,
                             color: AppTheme.primaryVigoBlue,
@@ -269,7 +271,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10.0),
                                 side: BorderSide(
-                                  color: blockColor.withOpacity(0.2),
+                                  color: blockColor.withValues(alpha: 0.2),
                                 ),
                               ),
                               tileColor: const Color(0xFFFAF9F4),

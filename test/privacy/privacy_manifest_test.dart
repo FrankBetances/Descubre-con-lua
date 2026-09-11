@@ -14,14 +14,18 @@ void main() {
           ? Directory.current.parent.path
           : currentDir;
 
-      manifestFile = File('$projectRoot/android/app/src/main/AndroidManifest.xml');
+      manifestFile =
+          File('$projectRoot/android/app/src/main/AndroidManifest.xml');
       pubspecFile = File('$projectRoot/pubspec.yaml');
       libDirectory = Directory('$projectRoot/lib');
     });
 
-    test('AndroidManifest.xml strictly excludes INTERNET and network permissions', () {
+    test(
+        'AndroidManifest.xml strictly excludes INTERNET and network permissions',
+        () {
       expect(manifestFile.existsSync(), isTrue,
-          reason: 'AndroidManifest.xml must exist at android/app/src/main/AndroidManifest.xml');
+          reason:
+              'AndroidManifest.xml must exist at android/app/src/main/AndroidManifest.xml');
 
       final content = manifestFile.readAsStringSync();
 
@@ -34,7 +38,8 @@ void main() {
           reason: 'Application label must be "Descubre con Lúa"');
 
       // Check tools namespace is defined for remove directives
-      expect(content, contains('xmlns:tools="http://schemas.android.com/tools"'),
+      expect(
+          content, contains('xmlns:tools="http://schemas.android.com/tools"'),
           reason: 'xmlns:tools must be declared for removal rules');
 
       // Verify INTERNET permission is strictly removed
@@ -44,7 +49,8 @@ void main() {
           .toList();
 
       expect(internetLines, isNotEmpty,
-          reason: 'Must contain explicit removal rule for android.permission.INTERNET');
+          reason:
+              'Must contain explicit removal rule for android.permission.INTERNET');
       for (final line in internetLines) {
         expect(line, contains('tools:node="remove"'),
             reason: 'Any reference to INTERNET must have tools:node="remove"');
@@ -53,14 +59,17 @@ void main() {
       // Verify ACCESS_NETWORK_STATE is strictly removed
       final networkStateLines = content
           .split('\n')
-          .where((line) => line.contains('android.permission.ACCESS_NETWORK_STATE'))
+          .where((line) =>
+              line.contains('android.permission.ACCESS_NETWORK_STATE'))
           .toList();
 
       expect(networkStateLines, isNotEmpty,
-          reason: 'Must contain explicit removal rule for android.permission.ACCESS_NETWORK_STATE');
+          reason:
+              'Must contain explicit removal rule for android.permission.ACCESS_NETWORK_STATE');
       for (final line in networkStateLines) {
         expect(line, contains('tools:node="remove"'),
-            reason: 'Any reference to ACCESS_NETWORK_STATE must have tools:node="remove"');
+            reason:
+                'Any reference to ACCESS_NETWORK_STATE must have tools:node="remove"');
       }
 
       // Ensure NO unauthorized positive permission grants exist
@@ -73,7 +82,8 @@ void main() {
           .toList();
 
       expect(positivePermissions, isEmpty,
-          reason: 'Release manifest must have ZERO active positive permissions');
+          reason:
+              'Release manifest must have ZERO active positive permissions');
     });
 
     test('pubspec.yaml contains ZERO network or analytics dependencies', () {
@@ -105,7 +115,8 @@ void main() {
 
       for (final package in prohibitedPackages) {
         expect(content, isNot(contains(package)),
-            reason: 'Prohibited network dependency "$package" detected in pubspec.yaml');
+            reason:
+                'Prohibited network dependency "$package" detected in pubspec.yaml');
       }
 
       // Verify flutter SDK is the only runtime dependency
@@ -121,7 +132,8 @@ void main() {
           reason: 'pubspec.yaml must declare assets/audio/');
     });
 
-    test('Source code in lib/ contains ZERO network socket or HTTP clients', () {
+    test('Source code in lib/ contains ZERO network socket or HTTP clients',
+        () {
       expect(libDirectory.existsSync(), isTrue,
           reason: 'lib/ directory must exist');
 

@@ -35,7 +35,9 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
     if (pages.isEmpty) {
       return Center(
         child: Text(
-          isGl ? 'Non hai páxinas dispoñibles no conto.' : 'No hay páginas disponibles en el cuento.',
+          isGl
+              ? 'Non hai páxinas dispoñibles no conto.'
+              : 'No hay páginas disponibles en el cuento.',
           style: theme.textTheme.bodyMedium,
         ),
       );
@@ -60,9 +62,10 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
               decoration: BoxDecoration(
-                color: AppTheme.secondarySeaGlass.withOpacity(0.2),
+                color: AppTheme.secondarySeaGlass.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: Text(
@@ -130,7 +133,9 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
 
                 // Narrative text to read aloud
                 Text(
-                  isGl ? 'Lectura para a asamblea:' : 'Lectura para la asamblea:',
+                  isGl
+                      ? 'Lectura para a asamblea:'
+                      : 'Lectura para la asamblea:',
                   style: theme.textTheme.bodySmall?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: const Color(0xFF64748B),

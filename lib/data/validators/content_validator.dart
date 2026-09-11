@@ -21,7 +21,8 @@ class ValidationResult {
     );
   }
 
-  factory ValidationResult.failure(List<String> errors, {List<String>? warnings}) {
+  factory ValidationResult.failure(List<String> errors,
+      {List<String>? warnings}) {
     return ValidationResult(
       isValid: false,
       errors: List.unmodifiable(errors),
@@ -62,7 +63,12 @@ class ContentValidator {
   );
 
   /// Valid audio asset extensions for offline playback.
-  static const Set<String> validAudioExtensions = {'.mp3', '.wav', '.ogg', '.m4a'};
+  static const Set<String> validAudioExtensions = {
+    '.mp3',
+    '.wav',
+    '.ogg',
+    '.m4a'
+  };
 
   /// Defensive type-safe Map extraction helper to prevent runtime TypeError crashes.
   static Map<String, dynamic>? _asMap(dynamic v) {
@@ -72,20 +78,25 @@ class ContentValidator {
   }
 
   /// Validates a complete [Unidad] JSON document.
-  ValidationResult validateUnidadJson(Map<String, dynamic> json, {String sourcePath = ''}) {
+  ValidationResult validateUnidadJson(Map<String, dynamic> json,
+      {String sourcePath = ''}) {
     final List<String> errors = [];
     final List<String> warnings = [];
 
     final prefix = sourcePath.isNotEmpty ? '[$sourcePath] ' : '';
 
     // 1. Root structure
-    if (!json.containsKey('id') || json['id'] is! String || (json['id'] as String).trim().isEmpty) {
-      errors.add('${prefix}Missing or empty root "id": must be a non-empty string');
+    if (!json.containsKey('id') ||
+        json['id'] is! String ||
+        (json['id'] as String).trim().isEmpty) {
+      errors.add(
+          '${prefix}Missing or empty root "id": must be a non-empty string');
     }
 
     final tramo = json['tramoEtario'] ?? json['tramo_etario'];
     if (tramo != '0-2' && tramo != '2-3' && tramo != '0-3') {
-      errors.add('${prefix}Invalid "tramoEtario": must be "0-2", "2-3", or "0-3" (got: "$tramo")');
+      errors.add(
+          '${prefix}Invalid "tramoEtario": must be "0-2", "2-3", or "0-3" (got: "$tramo")');
     }
 
     // 2. Bilingual parity check across entire tree
@@ -103,7 +114,8 @@ class ContentValidator {
     }
 
     // 5. Referential integrity and required sections
-    checkReferentialIntegrityUnidad(json, errors: errors, warnings: warnings, prefix: prefix);
+    checkReferentialIntegrityUnidad(json,
+        errors: errors, warnings: warnings, prefix: prefix);
 
     return errors.isEmpty
         ? ValidationResult.success(warnings: warnings)
@@ -111,24 +123,30 @@ class ContentValidator {
   }
 
   /// Validates a complete [Capsula] JSON document.
-  ValidationResult validateCapsulaJson(Map<String, dynamic> json, {String sourcePath = ''}) {
+  ValidationResult validateCapsulaJson(Map<String, dynamic> json,
+      {String sourcePath = ''}) {
     final List<String> errors = [];
     final List<String> warnings = [];
 
     final prefix = sourcePath.isNotEmpty ? '[$sourcePath] ' : '';
 
     // 1. Root structure
-    if (!json.containsKey('id') || json['id'] is! String || (json['id'] as String).trim().isEmpty) {
-      errors.add('${prefix}Missing or empty root "id": must be a non-empty string');
+    if (!json.containsKey('id') ||
+        json['id'] is! String ||
+        (json['id'] as String).trim().isEmpty) {
+      errors.add(
+          '${prefix}Missing or empty root "id": must be a non-empty string');
     }
 
-    final bloqueId = json['bloqueId']?.toString().trim() ?? json['bloque_id']?.toString().trim();
+    final bloqueId = json['bloqueId']?.toString().trim() ??
+        json['bloque_id']?.toString().trim();
     if (bloqueId == null || bloqueId.isEmpty) {
       errors.add('${prefix}Missing required "bloqueId"');
     } else {
       final validBlock = Bloque.byId(bloqueId);
       if (validBlock == null) {
-        errors.add('${prefix}Invalid "bloqueId": "$bloqueId" is not among the 5 canonical blocks');
+        errors.add(
+            '${prefix}Invalid "bloqueId": "$bloqueId" is not among the 5 canonical blocks');
       }
     }
 
@@ -147,7 +165,8 @@ class ContentValidator {
     }
 
     // 5. Referential integrity and 4 canonical parts
-    checkReferentialIntegrityCapsula(json, errors: errors, warnings: warnings, prefix: prefix);
+    checkReferentialIntegrityCapsula(json,
+        errors: errors, warnings: warnings, prefix: prefix);
 
     return errors.isEmpty
         ? ValidationResult.success(warnings: warnings)
@@ -173,27 +192,33 @@ class ContentValidator {
         if (glVal is! String || glVal.trim().isEmpty) {
           errors.add('$prefix$path: "gl" is missing, not a string, or blank');
         } else if (placeholderPattern.hasMatch(glVal)) {
-          errors.add('$prefix$path: "gl" contains forbidden placeholder: "${glVal.trim()}"');
+          errors.add(
+              '$prefix$path: "gl" contains forbidden placeholder: "${glVal.trim()}"');
         }
 
         if (esVal is! String || esVal.trim().isEmpty) {
           errors.add('$prefix$path: "es" is missing, not a string, or blank');
         } else if (placeholderPattern.hasMatch(esVal)) {
-          errors.add('$prefix$path: "es" contains forbidden placeholder: "${esVal.trim()}"');
+          errors.add(
+              '$prefix$path: "es" contains forbidden placeholder: "${esVal.trim()}"');
         }
       } else if (hasGl && !hasEs) {
-        errors.add('$prefix$path: Asymmetric bilingual node: contains "gl" but missing "es"');
+        errors.add(
+            '$prefix$path: Asymmetric bilingual node: contains "gl" but missing "es"');
       } else if (!hasGl && hasEs) {
-        errors.add('$prefix$path: Asymmetric bilingual node: contains "es" but missing "gl"');
+        errors.add(
+            '$prefix$path: Asymmetric bilingual node: contains "es" but missing "gl"');
       }
 
       // Recurse children
       node.forEach((key, value) {
-        checkBilingualParity(value, path: '$path.$key', errors: errors, prefix: prefix);
+        checkBilingualParity(value,
+            path: '$path.$key', errors: errors, prefix: prefix);
       });
     } else if (node is List) {
       for (var i = 0; i < node.length; i++) {
-        checkBilingualParity(node[i], path: '$path[$i]', errors: errors, prefix: prefix);
+        checkBilingualParity(node[i],
+            path: '$path[$i]', errors: errors, prefix: prefix);
       }
     }
   }
@@ -215,11 +240,13 @@ class ContentValidator {
       }
     } else if (node is Map) {
       node.forEach((key, value) {
-        checkClinicalTerms(value, path: '$path.$key', errors: errors, prefix: prefix);
+        checkClinicalTerms(value,
+            path: '$path.$key', errors: errors, prefix: prefix);
       });
     } else if (node is List) {
       for (var i = 0; i < node.length; i++) {
-        checkClinicalTerms(node[i], path: '$path[$i]', errors: errors, prefix: prefix);
+        checkClinicalTerms(node[i],
+            path: '$path[$i]', errors: errors, prefix: prefix);
       }
     }
   }
@@ -265,9 +292,11 @@ class ContentValidator {
       }
     }
 
-    final criterios = curriculo['criteriosEvaluacion'] ?? curriculo['criterios_evaluacion'];
+    final criterios =
+        curriculo['criteriosEvaluacion'] ?? curriculo['criterios_evaluacion'];
     if (criterios is! List || criterios.isEmpty) {
-      errors.add('${prefix}curriculo.criteriosEvaluacion must be a non-empty list');
+      errors.add(
+          '${prefix}curriculo.criteriosEvaluacion must be a non-empty list');
     } else {
       for (final crit in criterios) {
         final critStr = crit.toString().trim();
@@ -295,16 +324,19 @@ class ContentValidator {
       if (cancion.containsKey('bpm')) {
         final bpmVal = cancion['bpm'];
         if (bpmVal is! num) {
-          errors.add('${prefix}cancionPulso.bpm must be an integer between 40 and 160 BPM (got: $bpmVal)');
+          errors.add(
+              '${prefix}cancionPulso.bpm must be an integer between 40 and 160 BPM (got: $bpmVal)');
         } else {
           final bpm = bpmVal.toInt();
           if (bpm < 40 || bpm > 160) {
-            errors.add('${prefix}cancionPulso.bpm must be an integer between 40 and 160 BPM (got: $bpm)');
+            errors.add(
+                '${prefix}cancionPulso.bpm must be an integer between 40 and 160 BPM (got: $bpm)');
           }
         }
       }
       final audioAsset = cancion['audioAsset'] ?? cancion['audio_asset'];
-      _validateAudioAsset(audioAsset, path: 'cancionPulso.audioAsset', errors: errors, prefix: prefix);
+      _validateAudioAsset(audioAsset,
+          path: 'cancionPulso.audioAsset', errors: errors, prefix: prefix);
     }
 
     // 2. Cuento
@@ -327,7 +359,10 @@ class ContentValidator {
         final item = vocab[i];
         if (item is Map<String, dynamic>) {
           final a = item['audioAsset'] ?? item['audio_asset'];
-          _validateAudioAsset(a, path: 'vocabulario[$i].audioAsset', errors: errors, prefix: prefix);
+          _validateAudioAsset(a,
+              path: 'vocabulario[$i].audioAsset',
+              errors: errors,
+              prefix: prefix);
         }
       }
     }
@@ -346,36 +381,43 @@ class ContentValidator {
       }
       for (final reqLevel in [1, 2, 3]) {
         if (!levelsFound.contains(reqLevel)) {
-          errors.add('${prefix}preguntas is missing graduated scaffolding level $reqLevel');
+          errors.add(
+              '${prefix}preguntas is missing graduated scaffolding level $reqLevel');
         }
       }
     }
 
     // 5. Exploracion & mandatory safety notice
-    final exploracion = _asMap(json['exploracion'] ?? json['exploracionSensorial']);
+    final exploracion =
+        _asMap(json['exploracion'] ?? json['exploracionSensorial']);
     if (exploracion == null) {
       errors.add('${prefix}Missing required section: "exploracion"');
     } else {
-      final aviso = _asMap(exploracion['avisoSeguridad'] ?? exploracion['aviso_seguridad']);
+      final aviso = _asMap(
+          exploracion['avisoSeguridad'] ?? exploracion['aviso_seguridad']);
       if (aviso == null) {
-        errors.add('${prefix}exploracion missing MANDATORY "avisoSeguridad" object');
+        errors.add(
+            '${prefix}exploracion missing MANDATORY "avisoSeguridad" object');
       } else {
         final gl = aviso['gl']?.toString() ?? '';
         final es = aviso['es']?.toString() ?? '';
         if (gl.trim().isEmpty || es.trim().isEmpty) {
-          errors.add('${prefix}exploracion.avisoSeguridad must be populated in both gl and es');
+          errors.add(
+              '${prefix}exploracion.avisoSeguridad must be populated in both gl and es');
         }
       }
     }
 
     // 6. Matematicas tempranas
-    final matematicas = _asMap(json['matematicas'] ?? json['matematicasTempras']);
+    final matematicas =
+        _asMap(json['matematicas'] ?? json['matematicasTempras']);
     if (matematicas == null) {
       errors.add('${prefix}Missing required section: "matematicas"');
     }
 
     // 7. Puente a casa
-    final puenteCasa = _asMap(json['puenteCasa'] ?? json['ponteCasa'] ?? json['puente_casa']);
+    final puenteCasa =
+        _asMap(json['puenteCasa'] ?? json['ponteCasa'] ?? json['puente_casa']);
     if (puenteCasa == null) {
       errors.add('${prefix}Missing required section: "puenteCasa"');
     }
@@ -391,10 +433,17 @@ class ContentValidator {
     final contido = _asMap(json['contido']) ?? {};
 
     // 4 canonical sections must be present either at root or inside contido
-    final sections = ['ideaClave', 'porQueImporta', 'queHacerEnCasa', 'ejemploCotidiano'];
+    final sections = [
+      'ideaClave',
+      'porQueImporta',
+      'queHacerEnCasa',
+      'ejemploCotidiano'
+    ];
     for (final sec in sections) {
       final secData = _asMap(json[sec] ?? contido[sec]);
-      if (secData == null || !secData.containsKey('gl') || !secData.containsKey('es')) {
+      if (secData == null ||
+          !secData.containsKey('gl') ||
+          !secData.containsKey('es')) {
         errors.add('${prefix}Capsule missing canonical section: "$sec"');
       }
     }
@@ -402,7 +451,8 @@ class ContentValidator {
     // Afirmaciones
     final afirmaciones = json['afirmaciones'];
     if (afirmaciones is! List || afirmaciones.isEmpty) {
-      errors.add('${prefix}Capsule must contain at least one reflective "afirmaciones" item');
+      errors.add(
+          '${prefix}Capsule must contain at least one reflective "afirmaciones" item');
     }
   }
 
@@ -421,11 +471,17 @@ class ContentValidator {
     } else if (audio is Map) {
       final gl = audio['gl']?.toString() ?? '';
       final es = audio['es']?.toString() ?? '';
-      if (gl.isEmpty) errors.add('$prefix$path.gl: Missing audio path');
-      else _checkAudioPath(gl, path: '$path.gl', errors: errors, prefix: prefix);
+      if (gl.isEmpty) {
+        errors.add('$prefix$path.gl: Missing audio path');
+      } else {
+        _checkAudioPath(gl, path: '$path.gl', errors: errors, prefix: prefix);
+      }
 
-      if (es.isEmpty) errors.add('$prefix$path.es: Missing audio path');
-      else _checkAudioPath(es, path: '$path.es', errors: errors, prefix: prefix);
+      if (es.isEmpty) {
+        errors.add('$prefix$path.es: Missing audio path');
+      } else {
+        _checkAudioPath(es, path: '$path.es', errors: errors, prefix: prefix);
+      }
     }
   }
 

@@ -39,8 +39,10 @@ class CurricularReference {
 
   // Official Area Identifiers under Decreto 150/2022
   static const String area1CrecementoHarmonia = 'area_1_crecemento_harmonia';
-  static const String area2DescubrimentoContorna = 'area_2_descubrimento_contorna';
-  static const String area3ComunicacionRepresentacion = 'area_3_comunicacion_representacion';
+  static const String area2DescubrimentoContorna =
+      'area_2_descubrimento_contorna';
+  static const String area3ComunicacionRepresentacion =
+      'area_3_comunicacion_representacion';
 
   /// All valid curricular area codes for 0-3 years in Galicia.
   static const Set<String> validAreas = {
@@ -68,7 +70,8 @@ class CurricularReference {
   /// Factory constructor to parse JSON data.
   factory CurricularReference.fromJson(Map<String, dynamic> json) {
     if (!json.containsKey('normativa')) {
-      throw const FormatException('CurricularReference missing required key: normativa');
+      throw const FormatException(
+          'CurricularReference missing required key: normativa');
     }
 
     final rawAreas = json['areas'];
@@ -79,7 +82,8 @@ class CurricularReference {
       parsedAreas = const [];
     }
 
-    final rawCriterios = json['criteriosEvaluacion'] ?? json['criterios_evaluacion'];
+    final rawCriterios =
+        json['criteriosEvaluacion'] ?? json['criterios_evaluacion'];
     final List<String> parsedCriterios;
     if (rawCriterios is List) {
       parsedCriterios = rawCriterios.map((e) => e.toString().trim()).toList();
@@ -98,12 +102,12 @@ class CurricularReference {
 
   /// Serializes to JSON map.
   Map<String, dynamic> toJson() => {
-    'normativa': normativa,
-    'etapa': etapa,
-    'ciclo': ciclo,
-    'areas': areas,
-    'criteriosEvaluacion': criteriosEvaluacion,
-  };
+        'normativa': normativa,
+        'etapa': etapa,
+        'ciclo': ciclo,
+        'areas': areas,
+        'criteriosEvaluacion': criteriosEvaluacion,
+      };
 
   /// Validates that this reference conforms strictly to Decreto 150/2022.
   bool get isValidDecreto150 {
@@ -125,7 +129,8 @@ class CurricularReference {
   bool hasArea(String areaCode) => areas.contains(areaCode);
 
   /// Checks if a specific evaluation criterion is referenced.
-  bool hasCriterio(String criterioCode) => criteriosEvaluacion.contains(criterioCode);
+  bool hasCriterio(String criterioCode) =>
+      criteriosEvaluacion.contains(criterioCode);
 
   /// Creates a copy with optionally updated fields.
   CurricularReference copyWith({
@@ -140,7 +145,9 @@ class CurricularReference {
       etapa: etapa ?? this.etapa,
       ciclo: ciclo ?? this.ciclo,
       areas: areas != null ? List.unmodifiable(areas) : this.areas,
-      criteriosEvaluacion: criteriosEvaluacion != null ? List.unmodifiable(criteriosEvaluacion) : this.criteriosEvaluacion,
+      criteriosEvaluacion: criteriosEvaluacion != null
+          ? List.unmodifiable(criteriosEvaluacion)
+          : this.criteriosEvaluacion,
     );
   }
 

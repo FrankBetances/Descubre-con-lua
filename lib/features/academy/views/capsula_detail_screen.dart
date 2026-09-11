@@ -79,9 +79,10 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
             Row(
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0, vertical: 4.0),
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryVigoBlue.withOpacity(0.12),
+                    color: AppTheme.primaryVigoBlue.withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Row(
@@ -108,7 +109,9 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                 ),
                 const Spacer(),
                 Text(
-                  isGl ? 'Orientación familiar 0-3 anos' : 'Orientación familiar 0-3 años',
+                  isGl
+                      ? 'Orientación familiar 0-3 anos'
+                      : 'Orientación familiar 0-3 años',
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: const Color(0xFF6B7280),
                     fontWeight: FontWeight.w600,
@@ -221,7 +224,9 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
               const SizedBox(width: 10),
               Expanded(
                 child: Text(
-                  isGl ? 'Reflexión para a familia' : 'Reflexión para la familia',
+                  isGl
+                      ? 'Reflexión para a familia'
+                      : 'Reflexión para la familia',
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: AppTheme.primaryVigoBlue,
@@ -283,7 +288,8 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                           },
                           style: OutlinedButton.styleFrom(
                             backgroundColor: userChoice == true
-                                ? AppTheme.primaryVigoBlue.withOpacity(0.12)
+                                ? AppTheme.primaryVigoBlue
+                                    .withValues(alpha: 0.12)
                                 : Colors.transparent,
                             side: BorderSide(
                               color: userChoice == true
@@ -320,7 +326,8 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                           },
                           style: OutlinedButton.styleFrom(
                             backgroundColor: userChoice == false
-                                ? AppTheme.primaryVigoBlue.withOpacity(0.12)
+                                ? AppTheme.primaryVigoBlue
+                                    .withValues(alpha: 0.12)
                                 : Colors.transparent,
                             side: BorderSide(
                               color: userChoice == false
@@ -355,8 +362,8 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                       padding: const EdgeInsets.all(12.0),
                       decoration: BoxDecoration(
                         color: userChoice == afirmacion.esVerdadera
-                            ? AppTheme.calmSage.withOpacity(0.15)
-                            : AppTheme.accentTerracotta.withOpacity(0.12),
+                            ? AppTheme.calmSage.withValues(alpha: 0.15)
+                            : AppTheme.accentTerracotta.withValues(alpha: 0.12),
                         borderRadius: BorderRadius.circular(8.0),
                         border: Border.all(
                           color: userChoice == afirmacion.esVerdadera
@@ -401,7 +408,8 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
     );
   }
 
-  Widget _buildCurricularCard(BuildContext context, Capsula capsula, bool isGl) {
+  Widget _buildCurricularCard(
+      BuildContext context, Capsula capsula, bool isGl) {
     final theme = Theme.of(context);
     final curriculo = capsula.curriculo;
 
@@ -417,10 +425,13 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
         children: [
           Row(
             children: [
-              const Icon(Icons.bookmark_border, color: AppTheme.primaryVigoBlue, size: 20),
+              const Icon(Icons.bookmark_border,
+                  color: AppTheme.primaryVigoBlue, size: 20),
               const SizedBox(width: 8),
               Text(
-                isGl ? 'Marco curricular e referencia' : 'Marco curricular y referencia',
+                isGl
+                    ? 'Marco curricular e referencia'
+                    : 'Marco curricular y referencia',
                 style: theme.textTheme.titleSmall?.copyWith(
                   fontWeight: FontWeight.bold,
                   color: AppTheme.primaryVigoBlue,
@@ -445,9 +456,11 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                 return Chip(
                   label: Text(
                     area,
-                    style: const TextStyle(fontSize: 11.5, color: AppTheme.primaryVigoBlue),
+                    style: const TextStyle(
+                        fontSize: 11.5, color: AppTheme.primaryVigoBlue),
                   ),
-                  backgroundColor: AppTheme.primaryVigoBlue.withOpacity(0.08),
+                  backgroundColor:
+                      AppTheme.primaryVigoBlue.withValues(alpha: 0.08),
                   padding: EdgeInsets.zero,
                   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   side: BorderSide.none,

@@ -199,7 +199,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
           children: [
             // Stepper progress indicator header
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
               color: AppTheme.cardSurface,
               child: Column(
                 children: [
@@ -230,7 +231,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                   LinearProgressIndicator(
                     value: (_currentPaso + 1) / 6.0,
                     backgroundColor: const Color(0xFFE2DDD0),
-                    valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.primaryVigoBlue),
+                    valueColor: const AlwaysStoppedAnimation<Color>(
+                        AppTheme.primaryVigoBlue),
                     minHeight: 6.0,
                     borderRadius: BorderRadius.circular(3.0),
                   ),
@@ -252,10 +254,12 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
 
             // Bottom Navigation Toolbar
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 14.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 14.0),
               decoration: const BoxDecoration(
                 color: AppTheme.cardSurface,
-                border: Border(top: BorderSide(color: Color(0xFFE2DDD0), width: 1.0)),
+                border: Border(
+                    top: BorderSide(color: Color(0xFFE2DDD0), width: 1.0)),
               ),
               child: Row(
                 children: [
@@ -264,7 +268,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                     icon: const Icon(Icons.arrow_back),
                     label: Text(isGl ? 'Anterior' : 'Anterior'),
                     style: OutlinedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0, vertical: 12.0),
                     ),
                   ),
                   const Spacer(),
@@ -276,7 +281,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppTheme.primaryVigoBlue,
                         foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20.0, vertical: 12.0),
                       ),
                     )
                   else
@@ -287,7 +293,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppTheme.primaryVigoBlue,
                         foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20.0, vertical: 12.0),
                       ),
                     ),
                 ],

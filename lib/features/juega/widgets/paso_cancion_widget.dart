@@ -54,9 +54,8 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
   Future<void> _handlePlay() async {
     // Prefer unit asset; fall back to procedural reference pulse mar_pulso_72bpm.wav if needed
     final assetPath = widget.cancion.resolveAudio(widget.language);
-    final effectivePath = assetPath.isNotEmpty
-        ? assetPath
-        : 'assets/audio/mar_pulso_72bpm.wav';
+    final effectivePath =
+        assetPath.isNotEmpty ? assetPath : 'assets/audio/mar_pulso_72bpm.wav';
     await widget.audioService.playAsset(effectivePath);
   }
 
@@ -91,7 +90,8 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
               decoration: BoxDecoration(
                 color: AppTheme.primaryVigoBlue,
                 borderRadius: BorderRadius.circular(20.0),
@@ -141,8 +141,12 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                     const SizedBox(width: 8),
                     Text(
                       _isPlaying
-                          ? (isGl ? 'Reproducindo pulso rítmico offline' : 'Reproduciendo pulso rítmico offline')
-                          : (isGl ? 'Reprodutor de son local pausado' : 'Reproductor de sonido local pausado'),
+                          ? (isGl
+                              ? 'Reproducindo pulso rítmico offline'
+                              : 'Reproduciendo pulso rítmico offline')
+                          : (isGl
+                              ? 'Reprodutor de son local pausado'
+                              : 'Reproductor de sonido local pausado'),
                       style: theme.textTheme.bodySmall?.copyWith(
                         fontWeight: FontWeight.w600,
                         color: AppTheme.textSlate,
@@ -163,14 +167,18 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                     const SizedBox(width: 20),
                     IconButton.filled(
                       onPressed: _isPlaying ? _handlePause : _handlePlay,
-                      icon: Icon(_isPlaying ? Icons.pause_rounded : Icons.play_arrow_rounded),
+                      icon: Icon(_isPlaying
+                          ? Icons.pause_rounded
+                          : Icons.play_arrow_rounded),
                       iconSize: 36,
                       style: IconButton.styleFrom(
                         backgroundColor: AppTheme.primaryVigoBlue,
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.all(16.0),
                       ),
-                      tooltip: _isPlaying ? (isGl ? 'Pausar' : 'Pausar') : (isGl ? 'Reproducir' : 'Reproducir'),
+                      tooltip: _isPlaying
+                          ? (isGl ? 'Pausar' : 'Pausar')
+                          : (isGl ? 'Reproducir' : 'Reproducir'),
                     ),
                     const SizedBox(width: 20),
                     IconButton.filledTonal(
@@ -208,14 +216,17 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Icon(Icons.record_voice_over_outlined, color: AppTheme.primaryVigoBlue, size: 24),
+              const Icon(Icons.record_voice_over_outlined,
+                  color: AppTheme.primaryVigoBlue, size: 24),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      isGl ? 'Consigna para a docente:' : 'Consigna para la docente:',
+                      isGl
+                          ? 'Consigna para a docente:'
+                          : 'Consigna para la docente:',
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: AppTheme.primaryVigoBlue,
@@ -241,7 +252,9 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
 
         // Lyrics with Pulse Markers
         Text(
-          isGl ? 'Letra con pulsos rítmicos (*):' : 'Letra con pulsos rítmicos (*):',
+          isGl
+              ? 'Letra con pulsos rítmicos (*):'
+              : 'Letra con pulsos rítmicos (*):',
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
             color: AppTheme.primaryVigoBlue,

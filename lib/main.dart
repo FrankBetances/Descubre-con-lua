@@ -330,7 +330,8 @@ class HomeScreen extends StatelessWidget {
             Row(
               children: [
                 CircleAvatar(
-                  backgroundColor: AppTheme.secondarySeaGlass.withOpacity(0.25),
+                  backgroundColor:
+                      AppTheme.secondarySeaGlass.withValues(alpha: 0.25),
                   radius: 24,
                   child: Icon(icon, color: AppTheme.primaryVigoBlue, size: 28),
                 ),

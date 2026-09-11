@@ -25,5 +25,6 @@ enum AppLanguage {
   }
 
   /// Toggles between Galego and Castellano.
-  AppLanguage toggle() => this == AppLanguage.gl ? AppLanguage.es : AppLanguage.gl;
+  AppLanguage toggle() =>
+      this == AppLanguage.gl ? AppLanguage.es : AppLanguage.gl;
 }

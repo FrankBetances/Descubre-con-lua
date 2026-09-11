@@ -29,7 +29,8 @@ class ContentRepository {
     List<String>? unidadPaths,
     List<String>? capsulaPaths,
   }) async {
-    final effectiveUnidadPaths = unidadPaths ?? [ContentAssetLoader.baseUnidadMar01];
+    final effectiveUnidadPaths =
+        unidadPaths ?? [ContentAssetLoader.baseUnidadMar01];
     final effectiveCapsulaPaths =
         capsulaPaths ?? [ContentAssetLoader.baseCapsulaHablar01];
 

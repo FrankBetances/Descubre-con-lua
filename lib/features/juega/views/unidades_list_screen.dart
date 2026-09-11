@@ -85,13 +85,16 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
           children: [
             // Age band filter bar
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
               color: AppTheme.cardSurface,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    isGl ? 'Filtrar por tramo etario:' : 'Filtrar por tramo de edad:',
+                    isGl
+                        ? 'Filtrar por tramo etario:'
+                        : 'Filtrar por tramo de edad:',
                     style: theme.textTheme.bodySmall?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: const Color(0xFF64748B),
@@ -179,7 +182,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
           side: BorderSide(
-            color: isSelected ? AppTheme.primaryVigoBlue : const Color(0xFFCBD5E1),
+            color:
+                isSelected ? AppTheme.primaryVigoBlue : const Color(0xFFCBD5E1),
           ),
         ),
         onSelected: (_) {
@@ -211,9 +215,10 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
             Row(
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0, vertical: 4.0),
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryVigoBlue.withOpacity(0.12),
+                    color: AppTheme.primaryVigoBlue.withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Text(
@@ -229,9 +234,10 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                 ),
                 const SizedBox(width: 8),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0, vertical: 4.0),
                   decoration: BoxDecoration(
-                    color: AppTheme.calmSage.withOpacity(0.18),
+                    color: AppTheme.calmSage.withValues(alpha: 0.18),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Text(
@@ -283,7 +289,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
 
             // Assembly Phase Summary Pill
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
               decoration: BoxDecoration(
                 color: const Color(0xFFF8FAFC),
                 borderRadius: BorderRadius.circular(10.0),
@@ -291,7 +298,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.format_list_numbered, size: 18, color: AppTheme.primaryVigoBlue),
+                  const Icon(Icons.format_list_numbered,
+                      size: 18, color: AppTheme.primaryVigoBlue),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(

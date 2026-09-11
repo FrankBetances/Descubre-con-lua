@@ -71,12 +71,12 @@ class SeccionCapsulaWidget extends StatelessWidget {
         color: AppTheme.cardSurface,
         borderRadius: BorderRadius.circular(16.0),
         border: Border.all(
-          color: accent.withOpacity(0.25),
+          color: accent.withValues(alpha: 0.25),
           width: 1.5,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.04),
+            color: Colors.black.withValues(alpha: 0.04),
             blurRadius: 8.0,
             offset: const Offset(0, 2),
           ),
@@ -87,16 +87,17 @@ class SeccionCapsulaWidget extends StatelessWidget {
         children: [
           // Section header band
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
             decoration: BoxDecoration(
-              color: accent.withOpacity(0.08),
+              color: accent.withValues(alpha: 0.08),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(14.5),
                 topRight: Radius.circular(14.5),
               ),
               border: Border(
                 bottom: BorderSide(
-                  color: accent.withOpacity(0.15),
+                  color: accent.withValues(alpha: 0.15),
                   width: 1.0,
                 ),
               ),
@@ -105,7 +106,7 @@ class SeccionCapsulaWidget extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 16,
-                  backgroundColor: accent.withOpacity(0.18),
+                  backgroundColor: accent.withValues(alpha: 0.18),
                   child: Icon(icon, color: accent, size: 20),
                 ),
                 const SizedBox(width: 12),

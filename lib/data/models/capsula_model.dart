@@ -21,18 +21,22 @@ class Afirmacion {
   factory Afirmacion.fromJson(Map<String, dynamic> json) {
     return Afirmacion(
       id: json['id']?.toString().trim() ?? '',
-      enunciado: LocalizedString.fromJson(json['enunciado'] as Map<String, dynamic>? ?? {}),
-      esVerdadera: json['esVerdadera'] as bool? ?? json['es_verdadera'] as bool? ?? false,
-      explicacion: LocalizedString.fromJson(json['explicacion'] as Map<String, dynamic>? ?? {}),
+      enunciado: LocalizedString.fromJson(
+          json['enunciado'] as Map<String, dynamic>? ?? {}),
+      esVerdadera: json['esVerdadera'] as bool? ??
+          json['es_verdadera'] as bool? ??
+          false,
+      explicacion: LocalizedString.fromJson(
+          json['explicacion'] as Map<String, dynamic>? ?? {}),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'enunciado': enunciado.toJson(),
-    'esVerdadera': esVerdadera,
-    'explicacion': explicacion.toJson(),
-  };
+        'id': id,
+        'enunciado': enunciado.toJson(),
+        'esVerdadera': esVerdadera,
+        'explicacion': explicacion.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -76,26 +80,33 @@ class ContidoCapsula {
   factory ContidoCapsula.fromJson(Map<String, dynamic> json) {
     return ContidoCapsula(
       ideaClave: LocalizedString.fromJson(
-        (json['ideaClave'] ?? json['idea_clave']) as Map<String, dynamic>? ?? {},
+        (json['ideaClave'] ?? json['idea_clave']) as Map<String, dynamic>? ??
+            {},
       ),
       porQueImporta: LocalizedString.fromJson(
-        (json['porQueImporta'] ?? json['por_que_importa']) as Map<String, dynamic>? ?? {},
+        (json['porQueImporta'] ?? json['por_que_importa'])
+                as Map<String, dynamic>? ??
+            {},
       ),
       queHacerEnCasa: LocalizedString.fromJson(
-        (json['queHacerEnCasa'] ?? json['que_hacer_en_casa']) as Map<String, dynamic>? ?? {},
+        (json['queHacerEnCasa'] ?? json['que_hacer_en_casa'])
+                as Map<String, dynamic>? ??
+            {},
       ),
       ejemploCotidiano: LocalizedString.fromJson(
-        (json['ejemploCotidiano'] ?? json['ejemplo_cotidiano']) as Map<String, dynamic>? ?? {},
+        (json['ejemploCotidiano'] ?? json['ejemplo_cotidiano'])
+                as Map<String, dynamic>? ??
+            {},
       ),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'ideaClave': ideaClave.toJson(),
-    'porQueImporta': porQueImporta.toJson(),
-    'queHacerEnCasa': queHacerEnCasa.toJson(),
-    'ejemploCotidiano': ejemploCotidiano.toJson(),
-  };
+        'ideaClave': ideaClave.toJson(),
+        'porQueImporta': porQueImporta.toJson(),
+        'queHacerEnCasa': queHacerEnCasa.toJson(),
+        'ejemploCotidiano': ejemploCotidiano.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -138,7 +149,8 @@ class Bloque {
   static const String desarrolloComunicativoId = 'desarrollo_comunicativo';
   static const String rutinasYBanoDeLenguajeId = 'rutinas_y_bano_de_lenguaje';
   static const String turnosYAtencionConjuntaId = 'turnos_y_atencion_conjunta';
-  static const String juegoMovimientoSinPantallasId = 'juego_movimiento_sin_pantallas';
+  static const String juegoMovimientoSinPantallasId =
+      'juego_movimiento_sin_pantallas';
   static const String bilinguismoYCulturaId = 'bilinguismo_y_cultura';
 
   /// The 5 official developmental blocks of Academy.
@@ -307,39 +319,52 @@ class Capsula {
     }
 
     // Support either top-level sections or a nested 'contido' map
-    final Map<String, dynamic> contidoMap = json['contido'] as Map<String, dynamic>? ?? {};
+    final Map<String, dynamic> contidoMap =
+        json['contido'] as Map<String, dynamic>? ?? {};
 
     final ideaClaveData = (json['ideaClave'] ??
-        json['idea_clave'] ??
-        contidoMap['ideaClave'] ??
-        contidoMap['idea_clave']) as Map<String, dynamic>? ?? {};
+            json['idea_clave'] ??
+            contidoMap['ideaClave'] ??
+            contidoMap['idea_clave']) as Map<String, dynamic>? ??
+        {};
 
     final porQueImportaData = (json['porQueImporta'] ??
-        json['por_que_importa'] ??
-        contidoMap['porQueImporta'] ??
-        contidoMap['por_que_importa']) as Map<String, dynamic>? ?? {};
+            json['por_que_importa'] ??
+            contidoMap['porQueImporta'] ??
+            contidoMap['por_que_importa']) as Map<String, dynamic>? ??
+        {};
 
     final queHacerEnCasaData = (json['queHacerEnCasa'] ??
-        json['que_hacer_en_casa'] ??
-        contidoMap['queHacerEnCasa'] ??
-        contidoMap['que_hacer_en_casa']) as Map<String, dynamic>? ?? {};
+            json['que_hacer_en_casa'] ??
+            contidoMap['queHacerEnCasa'] ??
+            contidoMap['que_hacer_en_casa']) as Map<String, dynamic>? ??
+        {};
 
     final ejemploCotidianoData = (json['ejemploCotidiano'] ??
-        json['ejemplo_cotidiano'] ??
-        contidoMap['ejemploCotidiano'] ??
-        contidoMap['ejemplo_cotidiano']) as Map<String, dynamic>? ?? {};
+            json['ejemplo_cotidiano'] ??
+            contidoMap['ejemploCotidiano'] ??
+            contidoMap['ejemplo_cotidiano']) as Map<String, dynamic>? ??
+        {};
 
-    final curriculoData = (json['curriculo'] ?? json['curricular']) as Map<String, dynamic>? ?? {};
+    final curriculoData =
+        (json['curriculo'] ?? json['curricular']) as Map<String, dynamic>? ??
+            {};
     final revisionData = json['revision'] as Map<String, dynamic>? ?? {};
 
     return Capsula(
       id: json['id']?.toString().trim() ?? '',
       bloqueId: json['bloqueId']?.toString().trim() ??
-          json['bloque_id']?.toString().trim() ?? '',
+          json['bloque_id']?.toString().trim() ??
+          '',
       orden: (json['orden'] as num?)?.toInt() ?? 1,
-      titulo: LocalizedString.fromJson(json['titulo'] as Map<String, dynamic>? ?? {}),
-      subtitulo: LocalizedString.fromJson(json['subtitulo'] as Map<String, dynamic>? ?? {}),
-      tiempoLecturaMinutos: (json['tiempoLecturaMinutos'] ?? json['tiempo_lectura_minutos'] as num?)?.toInt() ?? 3,
+      titulo: LocalizedString.fromJson(
+          json['titulo'] as Map<String, dynamic>? ?? {}),
+      subtitulo: LocalizedString.fromJson(
+          json['subtitulo'] as Map<String, dynamic>? ?? {}),
+      tiempoLecturaMinutos: (json['tiempoLecturaMinutos'] ??
+                  json['tiempo_lectura_minutos'] as num?)
+              ?.toInt() ??
+          3,
       icono: json['icono']?.toString().trim() ?? 'ear_sparkles',
       ideaClave: LocalizedString.fromJson(ideaClaveData),
       porQueImporta: LocalizedString.fromJson(porQueImportaData),
@@ -352,21 +377,21 @@ class Capsula {
   }
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'bloqueId': bloqueId,
-    'orden': orden,
-    'titulo': titulo.toJson(),
-    'subtitulo': subtitulo.toJson(),
-    'tiempoLecturaMinutos': tiempoLecturaMinutos,
-    'icono': icono,
-    'ideaClave': ideaClave.toJson(),
-    'porQueImporta': porQueImporta.toJson(),
-    'queHacerEnCasa': queHacerEnCasa.toJson(),
-    'ejemploCotidiano': ejemploCotidiano.toJson(),
-    'afirmaciones': afirmaciones.map((a) => a.toJson()).toList(),
-    'curriculo': curriculo.toJson(),
-    'revision': revision.toJson(),
-  };
+        'id': id,
+        'bloqueId': bloqueId,
+        'orden': orden,
+        'titulo': titulo.toJson(),
+        'subtitulo': subtitulo.toJson(),
+        'tiempoLecturaMinutos': tiempoLecturaMinutos,
+        'icono': icono,
+        'ideaClave': ideaClave.toJson(),
+        'porQueImporta': porQueImporta.toJson(),
+        'queHacerEnCasa': queHacerEnCasa.toJson(),
+        'ejemploCotidiano': ejemploCotidiano.toJson(),
+        'afirmaciones': afirmaciones.map((a) => a.toJson()).toList(),
+        'curriculo': curriculo.toJson(),
+        'revision': revision.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -407,5 +432,6 @@ class Capsula {
       ]);
 
   @override
-  String toString() => 'Capsula(id: "$id", bloque: "$bloqueId", titulo: $titulo)';
+  String toString() =>
+      'Capsula(id: "$id", bloque: "$bloqueId", titulo: $titulo)';
 }

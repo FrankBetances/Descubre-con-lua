@@ -11,29 +11,39 @@ void main() {
       final file = File('assets/content/unidades/juega.mar.01.json');
       expect(file.existsSync(), isTrue, reason: 'juega.mar.01.json must exist');
 
-      final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+      final jsonMap =
+          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
       final List<String> errors = [];
-      validator.checkBilingualParity(jsonMap, path: 'juega.mar.01', errors: errors);
+      validator.checkBilingualParity(jsonMap,
+          path: 'juega.mar.01', errors: errors);
 
       expect(
         errors,
         isEmpty,
-        reason: 'juega.mar.01.json failed bilingual parity check:\n${errors.join("\n")}',
+        reason:
+            'juega.mar.01.json failed bilingual parity check:\n${errors.join("\n")}',
       );
     });
 
-    test('verifies 100% 1:1 bilingual parity on academy.como_se_aprende_a_hablar.01.json', () {
-      final file = File('assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json');
-      expect(file.existsSync(), isTrue, reason: 'academy.como_se_aprende_a_hablar.01.json must exist');
+    test(
+        'verifies 100% 1:1 bilingual parity on academy.como_se_aprende_a_hablar.01.json',
+        () {
+      final file = File(
+          'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json');
+      expect(file.existsSync(), isTrue,
+          reason: 'academy.como_se_aprende_a_hablar.01.json must exist');
 
-      final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
+      final jsonMap =
+          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
       final List<String> errors = [];
-      validator.checkBilingualParity(jsonMap, path: 'academy.hablar.01', errors: errors);
+      validator.checkBilingualParity(jsonMap,
+          path: 'academy.hablar.01', errors: errors);
 
       expect(
         errors,
         isEmpty,
-        reason: 'academy.como_se_aprende_a_hablar.01.json failed parity check:\n${errors.join("\n")}',
+        reason:
+            'academy.como_se_aprende_a_hablar.01.json failed parity check:\n${errors.join("\n")}',
       );
     });
 
@@ -69,7 +79,10 @@ void main() {
 
     test('rejects placeholder values (TODO / TBD / Pendiente)', () {
       final placeholderNode = {
-        'descripcion': {'gl': 'TODO: traducir logo', 'es': 'Texto en castellano'},
+        'descripcion': {
+          'gl': 'TODO: traducir logo',
+          'es': 'Texto en castellano'
+        },
       };
       final List<String> errors = [];
       validator.checkBilingualParity(placeholderNode, errors: errors);
@@ -84,8 +97,8 @@ void main() {
       // Official RAG maritime vocabulary checks
       expect(content, contains('cuncha'));
       expect(content, contains('gaivota'));
-      expect(content, contains('mexillón') | content, contains('Mexillón'));
-      expect(content, contains('peixe') | content, contains('Peixe'));
+      expect(content, anyOf(contains('mexillón'), contains('Mexillón')));
+      expect(content, anyOf(contains('peixe'), contains('Peixe')));
       expect(content, contains('praia de Samil'));
       expect(content, contains('agarimo'));
     });

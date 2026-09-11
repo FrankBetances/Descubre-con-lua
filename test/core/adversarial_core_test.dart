@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import '../../lib/core/audio/mock_offline_audio_service.dart';
-import '../../lib/core/localization/app_language.dart';
-import '../../lib/core/localization/localized_string.dart';
-import '../../lib/core/theme/app_theme.dart';
+import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
+import 'package:descubre_con_lua/core/localization/app_language.dart';
+import 'package:descubre_con_lua/core/localization/localized_string.dart';
+import 'package:descubre_con_lua/core/theme/app_theme.dart';
 
 void main() {
   group('Adversarial Stress Tests - LocalizedString', () {
@@ -43,7 +43,8 @@ void main() {
       // JSON string round-trip with utf-8 encoding/decoding
       final jsonMap = galicianCorpus.toJson();
       final serializedJson = jsonEncode(jsonMap);
-      final deserializedMap = jsonDecode(serializedJson) as Map<String, dynamic>;
+      final deserializedMap =
+          jsonDecode(serializedJson) as Map<String, dynamic>;
       final reconstructed = LocalizedString.fromJson(deserializedMap);
 
       expect(reconstructed, equals(galicianCorpus));
@@ -163,7 +164,8 @@ void main() {
       for (int i = 0; i < 100; i++) {
         await audioService.playAsset('assets/audio/test_$i.wav');
         expect(audioService.isPlaying, isTrue);
-        expect(audioService.currentAssetPath, equals('assets/audio/test_$i.wav'));
+        expect(
+            audioService.currentAssetPath, equals('assets/audio/test_$i.wav'));
 
         await audioService.pause();
         expect(audioService.isPlaying, isFalse);
@@ -173,12 +175,14 @@ void main() {
       }
 
       expect(audioService.callLog.length, equals(300));
-      expect(audioService.callLog.first, equals('playAsset:assets/audio/test_0.wav'));
+      expect(audioService.callLog.first,
+          equals('playAsset:assets/audio/test_0.wav'));
       expect(audioService.callLog.last, equals('stop'));
     });
 
     test('callLog is immutable against external tampering', () {
-      expect(() => (audioService.callLog as dynamic).add('illegal'), throwsA(isA<UnsupportedError>()));
+      expect(() => (audioService.callLog as dynamic).add('illegal'),
+          throwsA(isA<UnsupportedError>()));
     });
 
     test('Empty or blank asset paths are rejected', () async {
@@ -226,12 +230,14 @@ void main() {
 
   group('Adversarial Stress Tests - AppTheme', () {
     double relativeLuminance(Color color) {
-      double transform(double c) =>
-          c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) * ((c + 0.055) / 1.055); // approximated power 2.4
+      double transform(double c) => c <= 0.04045
+          ? c / 12.92
+          : ((c + 0.055) / 1.055) *
+              ((c + 0.055) / 1.055); // approximated power 2.4
 
-      final r = transform(color.red / 255.0);
-      final g = transform(color.green / 255.0);
-      final b = transform(color.blue / 255.0);
+      final r = transform(color.r);
+      final g = transform(color.g);
+      final b = transform(color.b);
       return 0.2126 * r + 0.7152 * g + 0.0722 * b;
     }
 
@@ -243,28 +249,36 @@ void main() {
       return (lighter + 0.05) / (darker + 0.05);
     }
 
-    test('Color contrast ratios meet WCAG AA standards (>= 4.5:1 for normal text, >= 3.0:1 for large)', () {
+    test(
+        'Color contrast ratios meet WCAG AA standards (>= 4.5:1 for normal text, >= 3.0:1 for large)',
+        () {
       final theme = AppTheme.lightTheme;
       final colorScheme = theme.colorScheme;
 
       // onPrimary (white) on primary (Vigo Blue #1B4965)
-      final primaryContrast = contrastRatio(colorScheme.onPrimary, colorScheme.primary);
+      final primaryContrast =
+          contrastRatio(colorScheme.onPrimary, colorScheme.primary);
       expect(primaryContrast, greaterThanOrEqualTo(4.5));
 
       // onSurface (textSlate #1C2541) on surface (backgroundSand #F4F1DE)
-      final surfaceContrast = contrastRatio(colorScheme.onSurface, colorScheme.surface);
+      final surfaceContrast =
+          contrastRatio(colorScheme.onSurface, colorScheme.surface);
       expect(surfaceContrast, greaterThanOrEqualTo(4.5));
 
       // onSurface (textSlate) on cardSurface (#FFFFFF)
-      final cardContrast = contrastRatio(AppTheme.textSlate, AppTheme.cardSurface);
+      final cardContrast =
+          contrastRatio(AppTheme.textSlate, AppTheme.cardSurface);
       expect(cardContrast, greaterThanOrEqualTo(4.5));
 
       // onSecondary (textSlate) on secondary (Sea Glass #62B6CB)
-      final secondaryContrast = contrastRatio(colorScheme.onSecondary, colorScheme.secondary);
+      final secondaryContrast =
+          contrastRatio(colorScheme.onSecondary, colorScheme.secondary);
       expect(secondaryContrast, greaterThanOrEqualTo(3.0));
     });
 
-    test('Adult typography hierarchy strictly satisfies minimum 16sp body constraint', () {
+    test(
+        'Adult typography hierarchy strictly satisfies minimum 16sp body constraint',
+        () {
       final textTheme = AppTheme.lightTheme.textTheme;
 
       expect(textTheme.bodyLarge?.fontSize, greaterThanOrEqualTo(16.0));
