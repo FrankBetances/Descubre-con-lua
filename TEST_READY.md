@@ -21,6 +21,8 @@ python3 test/run_all_e2e_tests.py
 - **Required Exit Code**: `0`
 - **Observed Exit Code**: `0`
 - **Execution Policy**: Strict fail-fast and zero-defect tolerance. If any single assertion, invariant, or test file across any suite fails, the runner exits with code `1`. When all suites pass with 100% compliance, the runner exits with code `0`.
+- **Subprocess Harness Resilience**: Every child test execution in `run_dart_test_suite` and `run_python_suite` is guarded by an explicit subprocess timeout (`DEFAULT_TIMEOUT_SEC = 60`, configurable per suite) with `TimeoutExpired` exception trapping, clean process kill, partial stdout/stderr capture, and diagnostic preservation. Native Flutter test failures capture both `stderr` and `stdout` traces to prevent error masking.
+- **Root Verification Script Decoupling**: Root test scripts (`verify_m1.py`, `verify_m2.py`, `verify_m3.py`) are 100% self-contained and execute independently without any dependency on `.agents/`.
 
 ---
 
