@@ -5,6 +5,7 @@ void main() {
   group('Privacy & Binary Security Certification', () {
     late File manifestFile;
     late File pubspecFile;
+    late File appGradleFile;
     late Directory libDirectory;
 
     setUpAll(() {
@@ -17,6 +18,7 @@ void main() {
       manifestFile =
           File('$projectRoot/android/app/src/main/AndroidManifest.xml');
       pubspecFile = File('$projectRoot/pubspec.yaml');
+      appGradleFile = File('$projectRoot/android/app/build.gradle');
       libDirectory = Directory('$projectRoot/lib');
     });
 
@@ -29,9 +31,17 @@ void main() {
 
       final content = manifestFile.readAsStringSync();
 
-      // Check package ID
-      expect(content, contains('package="com.earlify.descubreconlua"'),
-          reason: 'Package ID must be com.earlify.descubreconlua');
+      // The application id lives in Gradle, not in the manifest: AGP 8 fails
+      // the release build when the manifest carries a `package` attribute.
+      expect(content, isNot(contains('package="')),
+          reason: 'AGP 8 rejects the manifest `package` attribute; '
+              'the namespace belongs in android/app/build.gradle');
+
+      final gradle = appGradleFile.readAsStringSync();
+      expect(gradle, contains('namespace "com.earlify.descubreconlua"'),
+          reason: 'Gradle namespace must be com.earlify.descubreconlua');
+      expect(gradle, contains('applicationId "com.earlify.descubreconlua"'),
+          reason: 'Application id must be com.earlify.descubreconlua');
 
       // Check application label
       expect(content, contains('android:label="Descubre con Lúa"'),
