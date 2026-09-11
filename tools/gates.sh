@@ -38,6 +38,7 @@ run_gate "flutter test" flutter test
 run_gate "contact address" python3 tools/check_contact_email.py
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
+run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py
 run_gate "every locution has a recording" python3 tools/check_voice_coverage.py
 
 # --------------------------------------------------------------- binary gates

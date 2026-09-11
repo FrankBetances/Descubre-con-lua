@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-11T15:31:23Z",
+ "generatedAt": "2026-09-11T16:54:08Z",
  "entries": 12,
  "byStyle": {
   "slow": 10,
@@ -51,10 +51,10 @@
    "source": "juega.mar.01/vocabulario/peixe"
   },
   {
-   "id": "es_tutor_be479803_155",
+   "id": "es_tutor_3a7014eb_155",
    "lang": "es",
    "style": "tutor",
-   "text": "* O-las * que vienen, * o-las * que van, * en el * mar de * Vi-go * los pe-ces * es-tán. * Chof, * chof, * cae * el a-gua, * chas, * chas, * en la a-re-na.",
+   "text": "* O-las * que vienen, * o-las * que van, * en el mar * de Vi-go * los pe-ces * es-tán. * Chof, * chof, * cae * el a-gua, * chas, * chas, * en la * a-re-na.",
    "speech": "Olas que vienen, olas que van, en el mar de Vigo los peces están. Chof, chof, cae el agua, chas, chas, en la arena.",
    "source": "juega.mar.01/cancionPulso"
   },

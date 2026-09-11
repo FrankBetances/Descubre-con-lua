@@ -126,6 +126,35 @@ class CancionPulso {
   /// Resolves audio path according to active language.
   String resolveAudio(AppLanguage lang) => audioAsset.resolve(lang);
 
+  /// The song's lines, as written, one per verse.
+  List<String> versos(AppLanguage lang) => letraConPulsos
+      .resolve(lang)
+      .split('\n')
+      .map((line) => line.trim())
+      .where((line) => line.isNotEmpty)
+      .toList();
+
+  /// Beats in a bar, read from the `*` markers in the lyrics.
+  ///
+  /// The markers are the beats, so the pulse is not configured separately and
+  /// cannot disagree with the words the teacher is reading.
+  /// tools/check_pulse_markers.py enforces that every line carries the same
+  /// number of them, in both languages.
+  int beatsPerLine(AppLanguage lang) {
+    for (final verso in versos(lang)) {
+      final beats = '*'.allMatches(verso).length;
+      if (beats > 0) return beats;
+    }
+    return 4;
+  }
+
+  /// Beats between strong beats: the downbeat of every bar.
+  int accentEvery(AppLanguage lang) => beatsPerLine(lang);
+
+  /// How long one beat lasts at this tempo.
+  Duration get beatDuration =>
+      Duration(microseconds: (60000000 / (bpm <= 0 ? 72 : bpm)).round());
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||

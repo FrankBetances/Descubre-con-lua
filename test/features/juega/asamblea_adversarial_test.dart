@@ -265,7 +265,10 @@ void main() {
       );
 
       // Start audio in Phase 1
-      final playBtn = find.byIcon(Icons.play_arrow_rounded);
+      // The song step now carries two play controls: the audio one (an
+      // IconButton in the recording card) and the visual metronome's
+      // (an OutlinedButton). This targets the audio one.
+      final playBtn = find.widgetWithIcon(IconButton, Icons.play_arrow_rounded);
       await tester.tap(playBtn);
       await tester.pump();
       expect(mockAudioService.isPlaying, isTrue);
@@ -322,7 +325,8 @@ void main() {
       await tester.pumpAndSettle();
 
       // Start audio
-      await tester.tap(find.byIcon(Icons.play_arrow_rounded));
+      await tester
+          .tap(find.widgetWithIcon(IconButton, Icons.play_arrow_rounded));
       await tester.pump();
       expect(mockAudioService.isPlaying, isTrue);
 

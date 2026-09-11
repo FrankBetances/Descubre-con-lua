@@ -29,6 +29,7 @@ gate que no figuraba en ella.
 | `check_contact_email.py` | Que no aparezca ningún correo distinto del fijo del proyecto |
 | `export_voice_corpus.py --check` | Que el corpus de voz y las rutas del contenido estén sincronizados con los textos |
 | `check_pulse_bpm.py` | Que el tempo que muestra la unidad sea el que suena en la pista de pulso, **medido del audio** |
+| `check_pulse_markers.py` | Que las marcas `*` describan un pulso constante, igual en gallego y castellano |
 | `check_voice_coverage.py` | Que toda locución que la app puede reproducir tenga grabación en el paquete |
 | `flutter build apk --release` | Que el APK de release compile |
 | Permisos del APK | Que el **artefacto compilado** no declare ningún permiso salvo el que inyecta AndroidX (leído con `aapt2`, no del manifiesto fuente) |
@@ -85,9 +86,12 @@ lo acepta de forma explícita y rechaza cualquier otro.
 
 ### Bloqueante conocido: la app sólo reproduce la mitad
 
-`tools/check_voice_coverage.py` falla con **6 de 12** locuciones sin grabación:
-las seis gallegas. Las seis castellanas ya están sintetizadas y commiteadas. No
-es un fallo del gate: es el estado del producto.
+`tools/check_voice_coverage.py` falla con **7 de 12** locuciones sin grabación:
+las seis gallegas, más el recitado castellano. Ese último volvió a faltar a
+propósito: al recolocar dos marcas de pulso cambió el texto, con él el
+identificador, y el sistema declaró huérfana la grabación vieja. Es la
+sincronía texto-audio funcionando. No es un fallo del gate: es el estado del
+producto.
 
 Para resolverlo:
 
@@ -102,26 +106,32 @@ ahí y jamás en el aparato: el APK lleva grabaciones, no inferencia.
 
 ---
 
-## Decisiones pendientes de Frank
+## Decisiones resueltas por Frank
 
-1. **La canción a pulso es un recitado, no un canto.** Una voz neuronal habla;
-   no canta. La grabación del paso 1 es la letra recitada a pulso constante, y
-   la pista instrumental de 72 BPM sigue disponible como metrónomo. Reversible.
-2. **Responsable del tratamiento.** La política nombra a «Earlify Health S.L.»
-   y afirma cumplimiento estricto de COPPA y RGPD. No se ha tocado: si esa
-   sociedad está constituida y asume esa responsabilidad no es algo que se
-   pueda afirmar desde aquí.
-3. **Tramo etario.** La única unidad está marcada `"0-3"`, que casa con las dos
+1. **El metrónomo es visual, como en Valeria.** No suena. La razón está en el
+   propio fichero de Valeria: parte de las crianzas llevan audiófono o
+   implante, y un metrónomo sonoro compite justo con la voz que tienen que
+   seguir. Los tiempos salen de las marcas `*` de la letra, no de una
+   configuración aparte. Un test comprueba que iniciar el pulso **no reproduce
+   ningún audio**.
+2. **Earlify Health S.L. es correcto** como responsable del tratamiento. La
+   política queda como está.
+3. **Las importaciones rotas se han retirado** del CLAUDE.md, que además ahora
+   está versionado en el repositorio. `.agents/` no se ha tocado.
+
+## Decisiones que siguen pendientes
+
+1. **Tramo etario.** La única unidad está marcada `"0-3"`, que casa con las dos
    pestañas del filtro, así que el filtro 0-2 / 2-3 nunca se ejercita con el
    contenido que existe.
-4. **Ilustraciones.** El cuento referencia cuatro imágenes que no están en el
+2. **Ilustraciones.** El cuento referencia cuatro imágenes que no están en el
    repositorio. La pantalla ahora lo dice en palabras útiles para la docente,
    en vez de imprimir la ruta del fichero.
-5. **`.agents/rules/01-producto.md`, `02-flutter-android.md` y
-   `03-contenido.md` no existen.** El CLAUDE.md los importa. `.agents/` es
-   configuración de Antigravity y no se ha tocado.
-6. **Cobertura de contenido.** Academy declara 5 bloques y tiene 1 cápsula;
+3. **Cobertura de contenido.** Academy declara 5 bloques y tiene 1 cápsula;
    Juega con Lúa declara filtro por tramo y tiene 1 unidad.
+4. **La pista de pulso de 2,3 MB.** Con el metrónomo visual ya no hace falta
+   como metrónomo sonoro. Sigue en el paquete y sigue verificada en 72,3 BPM;
+   retirarla ahorraría 2,3 MB del APK.
 
 ---
 

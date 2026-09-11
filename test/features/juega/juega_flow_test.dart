@@ -215,7 +215,11 @@ void main() {
       expect(mockAudioService.isPlaying, isFalse);
 
       // Play audio
-      final playButton = find.byIcon(Icons.play_arrow_rounded);
+      // The song step now carries two play controls: the audio one (an
+      // IconButton in the recording card) and the visual metronome's
+      // (an OutlinedButton). This targets the audio one.
+      final playButton =
+          find.widgetWithIcon(IconButton, Icons.play_arrow_rounded);
       expect(playButton, findsOneWidget);
       await tester.tap(playButton);
       await tester.pump();

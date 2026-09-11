@@ -5,14 +5,18 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
+import 'rhythm_bar_widget.dart';
 
-/// Phase 1: Canción a pulso with offline audio player and rhythm markers.
+/// Phase 1: canción a pulso.
 ///
-/// Provides teachers with:
-/// - Song lyrics with rhythm markers (*) for clapping or patting knees.
-/// - Offline audio playback controls (play / pause / stop).
-/// - Prominent BPM indicator for steady tempo regulation in 0-3 classrooms.
-/// - Teacher facilitation directive (consigna docente).
+/// The teacher gets:
+/// - a VISUAL metronome at the unit's tempo, beats read from the `*` markers
+///   in the lyrics. It is drawn rather than clicked, as in Valeria: an audible
+///   metronome competes with the voice the children are following, and many of
+///   them wear a hearing aid or an implant
+/// - the lyrics with those same markers, for clapping or patting knees
+/// - the recited lyrics as a bundled recording, on demand
+/// - the teacher facilitation directive (consigna docente)
 class PasoCancionWidget extends StatefulWidget {
   final CancionPulso cancion;
   final AppLanguage language;
@@ -34,6 +38,14 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
   String? _audioError;
   StreamSubscription<bool>? _audioSubscription;
 
+  /// Visual metronome state. One tick per beat, as in Valeria: the pulse is
+  /// drawn rather than sounded, so the auditory channel stays free for the
+  /// voice — half the children this work is aimed at wear a hearing aid or an
+  /// implant, and a clicking metronome competes with the words.
+  Timer? _pulseTimer;
+  int _beat = 0;
+  bool _pulseRunning = false;
+
   @override
   void initState() {
     super.initState();
@@ -49,8 +61,37 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
 
   @override
   void dispose() {
+    _pulseTimer?.cancel();
     _audioSubscription?.cancel();
     super.dispose();
+  }
+
+  int get _beatsPerLine => widget.cancion.beatsPerLine(widget.language);
+
+  void _togglePulse() {
+    if (_pulseRunning) {
+      _stopPulse();
+      return;
+    }
+    setState(() {
+      _pulseRunning = true;
+      _beat = 0;
+    });
+    _pulseTimer?.cancel();
+    _pulseTimer = Timer.periodic(widget.cancion.beatDuration, (_) {
+      if (!mounted) return;
+      setState(() => _beat = (_beat + 1) % _beatsPerLine);
+    });
+  }
+
+  void _stopPulse() {
+    _pulseTimer?.cancel();
+    _pulseTimer = null;
+    if (!mounted) return;
+    setState(() {
+      _pulseRunning = false;
+      _beat = 0;
+    });
   }
 
   Future<void> _handlePlay() async {
@@ -130,6 +171,49 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
         ),
         const SizedBox(height: 16.0),
 
+        // Visual metronome. The pulse is shown, not clicked: an audible
+        // metronome would compete with the very voice the children follow.
+        Card(
+          color: AppTheme.cardSurface,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16.0),
+            side: const BorderSide(color: Color(0xFFD0D7DE), width: 1.5),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                RhythmBarWidget(
+                  beats: _beatsPerLine,
+                  accentEvery: cancion.accentEvery(widget.language),
+                  current: _pulseRunning ? _beat : null,
+                  tempoLabel: isGl
+                      ? '${cancion.bpm} pulsacións por minuto · $_beatsPerLine tempos por verso'
+                      : '${cancion.bpm} pulsaciones por minuto · $_beatsPerLine tiempos por verso',
+                  semanticsLabel: isGl
+                      ? 'Metrónomo visual a ${cancion.bpm} pulsacións por minuto, $_beatsPerLine tempos por verso'
+                      : 'Metrónomo visual a ${cancion.bpm} pulsaciones por minuto, $_beatsPerLine tiempos por verso',
+                ),
+                const SizedBox(height: 14.0),
+                OutlinedButton.icon(
+                  onPressed: _togglePulse,
+                  icon: Icon(
+                    _pulseRunning
+                        ? Icons.stop_rounded
+                        : Icons.play_arrow_rounded,
+                  ),
+                  label: Text(
+                    _pulseRunning
+                        ? (isGl ? 'Deter o pulso' : 'Detener el pulso')
+                        : (isGl ? 'Marcar o pulso' : 'Marcar el pulso'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: 16.0),
+
         // Offline Audio Controller Card
         Card(
           color: AppTheme.cardSurface,
@@ -156,11 +240,11 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                     Text(
                       _isPlaying
                           ? (isGl
-                              ? 'Reproducindo pulso rítmico offline'
-                              : 'Reproduciendo pulso rítmico offline')
+                              ? 'Reproducindo o recitado da letra'
+                              : 'Reproduciendo el recitado de la letra')
                           : (isGl
-                              ? 'Reprodutor de son local pausado'
-                              : 'Reproductor de sonido local pausado'),
+                              ? 'Recitado da letra detido'
+                              : 'Recitado de la letra detenido'),
                       style: theme.textTheme.bodySmall?.copyWith(
                         fontWeight: FontWeight.w600,
                         color: AppTheme.textSlate,
