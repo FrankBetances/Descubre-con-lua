@@ -2,9 +2,9 @@
  "lang": "es",
  "voice": "Sharvard (femenina) · rhasspy/piper-voices",
  "peakDbfs": -3.0,
- "entries": 5,
- "totalBytes": 24482,
- "totalSeconds": 3.68,
+ "entries": 6,
+ "totalBytes": 59573,
+ "totalSeconds": 10.27,
  "files": [
   {
    "id": "es_slow_349f29ef_8",
@@ -35,6 +35,12 @@
    "file": "es_slow_c85081ac_3.m4a",
    "seconds": 0.45,
    "bytes": 3412
+  },
+  {
+   "id": "es_tutor_3a7014eb_155",
+   "file": "es_tutor_3a7014eb_155.m4a",
+   "seconds": 6.59,
+   "bytes": 35091
   }
  ]
 }
