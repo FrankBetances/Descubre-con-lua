@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-11T15:14:40Z",
+ "generatedAt": "2026-09-11T15:31:23Z",
  "entries": 12,
  "byStyle": {
   "slow": 10,
@@ -15,6 +15,7 @@
    "lang": "es",
    "style": "slow",
    "text": "Mejillón",
+   "speech": "Mejillón",
    "source": "juega.mar.01/vocabulario/mexillon"
   },
   {
@@ -22,6 +23,7 @@
    "lang": "es",
    "style": "slow",
    "text": "Concha",
+   "speech": "Concha",
    "source": "juega.mar.01/vocabulario/cuncha"
   },
   {
@@ -29,6 +31,7 @@
    "lang": "es",
    "style": "slow",
    "text": "Barco",
+   "speech": "Barco",
    "source": "juega.mar.01/vocabulario/barco"
   },
   {
@@ -36,6 +39,7 @@
    "lang": "es",
    "style": "slow",
    "text": "Gaviota",
+   "speech": "Gaviota",
    "source": "juega.mar.01/vocabulario/gaivota"
   },
   {
@@ -43,6 +47,7 @@
    "lang": "es",
    "style": "slow",
    "text": "Pez",
+   "speech": "Pez",
    "source": "juega.mar.01/vocabulario/peixe"
   },
   {
@@ -50,6 +55,7 @@
    "lang": "es",
    "style": "tutor",
    "text": "* O-las * que vienen, * o-las * que van, * en el * mar de * Vi-go * los pe-ces * es-tán. * Chof, * chof, * cae * el a-gua, * chas, * chas, * en la a-re-na.",
+   "speech": "Olas que vienen, olas que van, en el mar de Vigo los peces están. Chof, chof, cae el agua, chas, chas, en la arena.",
    "source": "juega.mar.01/cancionPulso"
   },
   {
@@ -57,6 +63,7 @@
    "lang": "gl",
    "style": "slow",
    "text": "Peixe",
+   "speech": "Peixe",
    "source": "juega.mar.01/vocabulario/peixe"
   },
   {
@@ -64,6 +71,7 @@
    "lang": "gl",
    "style": "slow",
    "text": "Cuncha",
+   "speech": "Cuncha",
    "source": "juega.mar.01/vocabulario/cuncha"
   },
   {
@@ -71,6 +79,7 @@
    "lang": "gl",
    "style": "slow",
    "text": "Barco",
+   "speech": "Barco",
    "source": "juega.mar.01/vocabulario/barco"
   },
   {
@@ -78,6 +87,7 @@
    "lang": "gl",
    "style": "slow",
    "text": "Gaivota",
+   "speech": "Gaivota",
    "source": "juega.mar.01/vocabulario/gaivota"
   },
   {
@@ -85,6 +95,7 @@
    "lang": "gl",
    "style": "slow",
    "text": "Mexillón",
+   "speech": "Mexillón",
    "source": "juega.mar.01/vocabulario/mexillon"
   },
   {
@@ -92,6 +103,7 @@
    "lang": "gl",
    "style": "tutor",
    "text": "* On-das * que veñen, * on-das * que van, * no mar * de Vi-go * os pei-xes * es-tán. * Chof, * chof, * bate * a au-ga, * chas, * chas, * sobre * a a-rea.",
+   "speech": "Ondas que veñen, ondas que van, no mar de Vigo os peixes están. Chof, chof, bate a auga, chas, chas, sobre a area.",
    "source": "juega.mar.01/cancionPulso"
   }
  ]

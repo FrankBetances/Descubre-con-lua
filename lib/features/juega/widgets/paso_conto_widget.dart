@@ -114,14 +114,18 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                           color: AppTheme.primaryVigoBlue,
                         ),
                         const SizedBox(height: 8),
+                        // The asset path itself used to be printed here, so a
+                        // teacher running the assembly read
+                        // "assets/images/cuento/..." off the projector. The
+                        // illustrations are not in the package yet; until they
+                        // are, this says so in words a teacher can act on.
                         Text(
                           isGl
-                              ? 'Lámina visual ilustrada · ${currentPage.imagenAsset}'
-                              : 'Lámina visual ilustrada · ${currentPage.imagenAsset}',
+                              ? 'Lámina ilustrada pendente. Le o texto e sinala o que vedes na aula.'
+                              : 'Lámina ilustrada pendiente. Lee el texto y señala lo que veis en el aula.',
                           style: const TextStyle(
                             fontSize: 12.0,
                             color: Color(0xFF64748B),
-                            fontFamily: 'monospace',
                           ),
                           textAlign: TextAlign.center,
                         ),
