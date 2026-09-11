@@ -90,16 +90,21 @@ jobs:
       # HF_TOKEN: the proxectonos models are gated on Hugging Face. Accept the
       # model's conditions with an account, create a read token and add it as
       # the HF_TOKEN secret, or the download returns 401.
+      # continue-on-error, then commit, then check: a failure here (a missing
+      # HF_TOKEN, say) used to abort the job before the commit step, throwing
+      # away the Spanish recordings that had already been synthesised. The job
+      # still fails — on the coverage gate at the end, which is the honest
+      # reason — but the work that succeeded is kept.
       - name: Synthesise gl (Celtia · Proxecto Nós)
+        id: gl
         if: steps.missing.outputs.gl != '0' && (github.event.inputs.lang != 'es')
+        continue-on-error: true
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: python3 tools/generate_voice_assets.py --lang gl
 
-      - name: Verify every locution now has a recording
-        run: python3 tools/check_voice_coverage.py
-
-      - name: Commit the recordings
+      - name: Commit whatever was synthesised
+        if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
@@ -110,3 +115,7 @@ jobs:
             git commit -m 'chore(voice): synthesise offline voice assets (Celtia gl / Sharvard es)'
             git push origin HEAD:${{ github.ref_name }}
           fi
+
+      - name: Verify every locution now has a recording
+        if: always()
+        run: python3 tools/check_voice_coverage.py
