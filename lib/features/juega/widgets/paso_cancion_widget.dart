@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import '../../../core/audio/local_audio_player.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
@@ -30,6 +31,7 @@ class PasoCancionWidget extends StatefulWidget {
 
 class _PasoCancionWidgetState extends State<PasoCancionWidget> {
   bool _isPlaying = false;
+  String? _audioError;
   StreamSubscription<bool>? _audioSubscription;
 
   @override
@@ -52,11 +54,23 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
   }
 
   Future<void> _handlePlay() async {
-    // Prefer unit asset; fall back to procedural reference pulse mar_pulso_72bpm.wav if needed
     final assetPath = widget.cancion.resolveAudio(widget.language);
     final effectivePath =
         assetPath.isNotEmpty ? assetPath : 'assets/audio/mar_pulso_72bpm.wav';
-    await widget.audioService.playAsset(effectivePath);
+    try {
+      await widget.audioService.playAsset(effectivePath);
+      if (mounted) setState(() => _audioError = null);
+    } on AudioAssetException {
+      // A recording missing from the package used to be invisible: the button
+      // flipped to "playing" and the room heard silence. The teacher is told
+      // instead, and can run the assembly with her own voice.
+      if (!mounted) return;
+      setState(() {
+        _audioError = widget.language == AppLanguage.gl
+            ? 'Esta gravación non está incluída nesta versión. Podes marcar o pulso coa túa voz.'
+            : 'Esta grabación no está incluida en esta versión. Puedes marcar el pulso con tu voz.';
+      });
+    }
   }
 
   Future<void> _handlePause() async {
@@ -154,6 +168,26 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                     ),
                   ],
                 ),
+                if (_audioError != null) ...[
+                  const SizedBox(height: 12.0),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Icon(Icons.info_outline,
+                          size: 20, color: Color(0xFF8A6D3B)),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          _audioError!,
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: const Color(0xFF8A6D3B),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
                 const SizedBox(height: 16.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

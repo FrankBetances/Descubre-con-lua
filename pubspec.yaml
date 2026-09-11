@@ -22,3 +22,7 @@ flutter:
     - assets/content/unidades/
     - assets/content/capsulas/
     - assets/audio/
+    # Neural voice recordings (Celtia gl / Sharvard es), synthesised at build
+    # time by tools/generate_voice_assets.py and committed. The models never
+    # run on the device.
+    - assets/voice/

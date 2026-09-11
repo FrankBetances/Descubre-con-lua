@@ -498,9 +498,13 @@ class ContentValidator {
         '$prefix$path: Invalid audio file extension in "$pathStr". Must be one of $validAudioExtensions',
       );
     }
-    if (!pathStr.startsWith('assets/audio/')) {
+    // Bundled paths only. This is what keeps a remote URL from ever reaching
+    // the player: assets/voice/ holds the synthesised neural recordings and
+    // assets/audio/ the instrumental tracks.
+    const bundledPrefixes = ['assets/voice/', 'assets/audio/'];
+    if (!bundledPrefixes.any(pathStr.startsWith)) {
       errors.add(
-        '$prefix$path: Audio asset path must begin with "assets/audio/" (got: "$pathStr")',
+        '$prefix$path: Audio asset path must begin with one of $bundledPrefixes (got: "$pathStr")',
       );
     }
   }

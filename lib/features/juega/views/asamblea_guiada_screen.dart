@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../core/audio/mock_offline_audio_service.dart';
+import '../../../core/audio/local_audio_player.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
@@ -74,7 +74,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
     if (widget.audioService != null) {
       _audioService = widget.audioService!;
     } else {
-      _audioService = MockOfflineAudioService();
+      _audioService = LocalAudioPlayer();
       _createdInternalAudioService = true;
     }
   }

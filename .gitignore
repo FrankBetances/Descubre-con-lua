@@ -10,3 +10,6 @@ build/
 .env
 .env.local
 *.log
+
+# Voice models downloaded by tools/generate_voice_assets.py (never committed)
+tools/.voices/

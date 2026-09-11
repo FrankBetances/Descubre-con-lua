@@ -26,8 +26,8 @@
     },
     "bpm": 80,
     "audioAsset": {
-      "gl": "assets/audio/canciones/juega_mar_01_gl.mp3",
-      "es": "assets/audio/canciones/juega_mar_01_es.mp3"
+      "gl": "assets/voice/gl_tutor_07aaac78_153.m4a",
+      "es": "assets/voice/es_tutor_be479803_155.m4a"
     },
     "consignaDocente": {
       "gl": "Marcar o pulso amodo palmeando nas pernas ou movendo os brazos en compás suave coma se fósemos ondas.",
@@ -91,8 +91,8 @@
       },
       "imagenAsset": "assets/images/vocabulario/barco.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/barco_gl.mp3",
-        "es": "assets/audio/vocabulario/barco_es.mp3"
+        "gl": "assets/voice/gl_slow_7efb941c_5.m4a",
+        "es": "assets/voice/es_slow_7efb941c_5.m4a"
       }
     },
     {
@@ -107,8 +107,8 @@
       },
       "imagenAsset": "assets/images/vocabulario/gaivota.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/gaivota_gl.mp3",
-        "es": "assets/audio/vocabulario/gaivota_es.mp3"
+        "gl": "assets/voice/gl_slow_c2d08ad4_7.m4a",
+        "es": "assets/voice/es_slow_8ccc609e_7.m4a"
       }
     },
     {
@@ -123,8 +123,8 @@
       },
       "imagenAsset": "assets/images/vocabulario/cuncha.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/cuncha_gl.mp3",
-        "es": "assets/audio/vocabulario/cuncha_es.mp3"
+        "gl": "assets/voice/gl_slow_492e39a1_6.m4a",
+        "es": "assets/voice/es_slow_35479b23_6.m4a"
       }
     },
     {
@@ -139,8 +139,8 @@
       },
       "imagenAsset": "assets/images/vocabulario/mexillon.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/mexillon_gl.mp3",
-        "es": "assets/audio/vocabulario/mexillon_es.mp3"
+        "gl": "assets/voice/gl_slow_cf99b481_8.m4a",
+        "es": "assets/voice/es_slow_349f29ef_8.m4a"
       }
     },
     {
@@ -155,8 +155,8 @@
       },
       "imagenAsset": "assets/images/vocabulario/peixe.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/peixe_gl.mp3",
-        "es": "assets/audio/vocabulario/peixe_es.mp3"
+        "gl": "assets/voice/gl_slow_29231976_5.m4a",
+        "es": "assets/voice/es_slow_c85081ac_3.m4a"
       }
     }
   ],
