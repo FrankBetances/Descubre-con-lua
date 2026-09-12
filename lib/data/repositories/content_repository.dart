@@ -124,7 +124,7 @@ class ContentRepository {
 
   // --- CAPSULAS & BLOQUES (Academy · Familias) ---
 
-  /// Returns all available Academy capsules sorted by order.
+  /// Todas las cápsulas cargadas, de Academy y del aula.
   List<Capsula> getAllCapsulas() {
     final list = _capsulasById.values.toList();
     list.sort((a, b) => a.orden.compareTo(b.orden));
@@ -150,8 +150,12 @@ class ContentRepository {
 
     final target = mappedId ?? cleanId;
 
+    // Solo las de familia: si una cápsula del aula acabase aquí, Academy la
+    // pintaría igual de bien y una familia leería formación docente.
     final list = _capsulasById.values
-        .where((c) => c.bloqueId.toLowerCase() == target)
+        .where((c) =>
+            c.destinatario == DestinatarioCapsula.familia &&
+            c.bloqueId.toLowerCase() == target)
         .toList();
     list.sort((a, b) => a.orden.compareTo(b.orden));
     return List.unmodifiable(list);
@@ -159,6 +163,28 @@ class ContentRepository {
 
   /// Returns the 5 official developmental blocks of Academy.
   List<Bloque> getAllBloques() => Bloque.todos;
+
+  // --- CAPSULAS DEL AULA (Juega con Lúa · docentes) ---
+
+  /// Los 6 bloques de las cápsulas del aula, uno por paso de la asamblea.
+  List<Bloque> getAllBloquesAula() => Bloque.aula;
+
+  /// Las cápsulas del aula de un bloque, ya filtradas por destinatario.
+  ///
+  /// El filtro por destinatario no sobra aunque los identificadores de bloque
+  /// no se solapen: una cápsula mal etiquetada saldría igual de bien pintada
+  /// en la lista equivocada, y nadie lo vería. El validador lo caza al cargar
+  /// el contenido; esto lo caza en la consulta.
+  List<Capsula> getCapsulasAulaByBloqueId(String bloqueId) {
+    final target = bloqueId.trim().toLowerCase();
+    final list = _capsulasById.values
+        .where((c) =>
+            c.destinatario == DestinatarioCapsula.docente &&
+            c.bloqueId.toLowerCase() == target)
+        .toList();
+    list.sort((a, b) => a.orden.compareTo(b.orden));
+    return List.unmodifiable(list);
+  }
 
   /// Resolves a developmental block by its ID or ordinal number.
   Bloque? getBloqueById(String id) {

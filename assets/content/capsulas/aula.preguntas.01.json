@@ -1,0 +1,76 @@
+{
+  "id": "aula.preguntas.01",
+  "bloqueId": "aula_preguntas",
+  "destinatario": "docente",
+  "orden": 1,
+  "titulo": {
+    "gl": "Preguntar sen examinar",
+    "es": "Preguntar sin examinar"
+  },
+  "subtitulo": {
+    "gl": "Os tres niveis, e os cinco segundos que van despois",
+    "es": "Los tres niveles, y los cinco segundos que van después"
+  },
+  "tiempoLecturaMinutos": 3,
+  "icono": "people_arrows",
+  "ideaClave": {
+    "gl": "Unha pregunta na asemblea non serve para saber se a crianza sabe. Serve para abrirlle unha quenda. Por iso a resposta esperada nas preguntas de nivel un é sinalar co dedo: iso xa é responder, e conta igual que unha palabra.",
+    "es": "Una pregunta en la asamblea no sirve para saber si la criatura sabe. Sirve para abrirle un turno. Por eso la respuesta esperada en las preguntas de nivel uno es señalar con el dedo: eso ya es responder, y cuenta igual que una palabra."
+  },
+  "porQueImporta": {
+    "gl": "Cando unha pregunta se vive como exame, a crianza deixa de iniciar: espera a ver se acerta, ou cala. E quen menos fala é a quen máis lle custa arrancar, así que o exame castiga xusto a quen máis o necesita. Tratar o xesto e o son como resposta válida mantén a porta aberta para todas.",
+    "es": "Cuando una pregunta se vive como examen, la criatura deja de iniciar: espera a ver si acierta, o calla. Y quien menos habla es a quien más le cuesta arrancar, así que el examen castiga justo a quien más lo necesita. Tratar el gesto y el sonido como respuesta válida mantiene la puerta abierta para todas."
+  },
+  "queHacerEnCasa": {
+    "gl": "Pregunta e cala cinco segundos contando na túa cabeza. Se ninguén responde, non repitas a pregunta: dálle a resposta ti nomeando e sinalando, e pasa á seguinte. Nunca pidas que repitan a palabra ben dita.",
+    "es": "Pregunta y calla cinco segundos contando en tu cabeza. Si nadie responde, no repitas la pregunta: dale la respuesta tú nombrando y señalando, y pasa a la siguiente. Nunca pidas que repitan la palabra bien dicha."
+  },
+  "ejemploCotidiano": {
+    "gl": "«Onde está o barco grande?» (un, dous, tres, catro, cinco). Un neno estende o brazo cara á lámina sen dicir nada. Ti: «Aí! O barco grande.» Iso é unha quenda completa. Se ningún se move, sinalas ti: «Aquí está o barco grande», e segues.",
+    "es": "«¿Dónde está el barco grande?» (uno, dos, tres, cuatro, cinco). Un niño estira el brazo hacia la lámina sin decir nada. Tú: «¡Ahí! El barco grande.» Eso es un turno completo. Si ninguno se mueve, señalas tú: «Aquí está el barco grande», y sigues."
+  },
+  "afirmaciones": [
+    {
+      "id": "afirmacion_01",
+      "enunciado": {
+        "gl": "Se ninguén responde á pregunta, convén repetila máis alto e máis amodo.",
+        "es": "Si nadie responde a la pregunta, conviene repetirla más alto y más despacio."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Repetir converte a pregunta en insistencia e a roda en aula de exame. Dar a resposta ti, nomeando e sinalando, deixa a palabra dita e a porta aberta para a seguinte pregunta.",
+        "es": "Repetir convierte la pregunta en insistencia y la rueda en aula de examen. Dar la respuesta tú, nombrando y señalando, deja la palabra dicha y la puerta abierta para la siguiente pregunta."
+      }
+    },
+    {
+      "id": "afirmacion_02",
+      "enunciado": {
+        "gl": "Sinalar co dedo é unha resposta completa nas preguntas de nivel un.",
+        "es": "Señalar con el dedo es una respuesta completa en las preguntas de nivel uno."
+      },
+      "esVerdadera": true,
+      "explicacion": {
+        "gl": "É a resposta esperada nese nivel, non un apaño. A crianza demostrou que entendeu a pregunta e localizou o obxecto; a palabra chega despois, e chega antes se non se lle esixe agora.",
+        "es": "Es la respuesta esperada en ese nivel, no un apaño. La criatura demostró que entendió la pregunta y localizó el objeto; la palabra llega después, y llega antes si no se le exige ahora."
+      }
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA3.1"
+    ]
+  },
+  "revision": {
+    "autor": "Dr. Frank Betances",
+    "revisorPedagogico": "Equipo Pedagóxico Vigo",
+    "fechaRevision": "2026-09-12",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
@@ -13,10 +15,14 @@ class PasoPreguntasWidget extends StatelessWidget {
   final List<PreguntaNivel> preguntas;
   final AppLanguage language;
 
+  /// Sin él no hay botón de escuchar en las preguntas.
+  final OfflineAudioService? audioService;
+
   const PasoPreguntasWidget({
     super.key,
     required this.preguntas,
     required this.language,
+    this.audioService,
   });
 
   String _levelTitle(int nivel, bool isGl) {
@@ -134,14 +140,28 @@ class PasoPreguntasWidget extends StatelessWidget {
                   const SizedBox(height: 14.0),
 
                   // Question
-                  Text(
-                    p.enunciado.resolve(language),
-                    style: theme.textTheme.titleMedium?.copyWith(
-                      fontSize: 17.5,
-                      fontWeight: FontWeight.bold,
-                      color: AppTheme.textSlate,
-                      height: 1.35,
-                    ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Text(
+                          p.enunciado.resolve(language),
+                          style: theme.textTheme.titleMedium?.copyWith(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.bold,
+                            color: AppTheme.textSlate,
+                            height: 1.35,
+                          ),
+                        ),
+                      ),
+                      BotonEscuchar(
+                        audioService: audioService,
+                        texto: p.enunciado.resolve(language),
+                        language: language,
+                        compacto: true,
+                        descripcion: isGl ? 'a pregunta' : 'la pregunta',
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 14.0),
 
@@ -184,6 +204,15 @@ class PasoPreguntasWidget extends StatelessWidget {
                               ],
                             ),
                           ),
+                        ),
+                        BotonEscuchar(
+                          audioService: audioService,
+                          texto: p.respuestaSugerida.resolve(language),
+                          language: language,
+                          compacto: true,
+                          descripcion: isGl
+                              ? 'a resposta esperada'
+                              : 'la respuesta esperada',
                         ),
                       ],
                     ),
@@ -230,6 +259,15 @@ class PasoPreguntasWidget extends StatelessWidget {
                               ],
                             ),
                           ),
+                        ),
+                        BotonEscuchar(
+                          audioService: audioService,
+                          texto: p.consejoDocente.resolve(language),
+                          language: language,
+                          compacto: true,
+                          descripcion: isGl
+                              ? 'o consello docente'
+                              : 'el consejo docente',
                         ),
                       ],
                     ),

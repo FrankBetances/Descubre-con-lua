@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
@@ -12,12 +14,16 @@ import '../../../data/models/unidad_model.dart';
 class PasoPonteCasaWidget extends StatelessWidget {
   final PonteCasa ponteCasa;
   final AppLanguage language;
+
+  /// Sin él no hay botón de escuchar en el puente con la casa.
+  final OfflineAudioService? audioService;
   final VoidCallback? onFinalizar;
 
   const PasoPonteCasaWidget({
     super.key,
     required this.ponteCasa,
     required this.language,
+    this.audioService,
     this.onFinalizar,
   });
 
@@ -94,13 +100,27 @@ class PasoPonteCasaWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12.0),
                     border: Border.all(color: const Color(0xFFDFD7BE)),
                   ),
-                  child: Text(
-                    ponteCasa.mensajeFamilias.resolve(language),
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      fontSize: 16.0,
-                      height: 1.55,
-                      color: AppTheme.textSlate,
-                    ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        ponteCasa.mensajeFamilias.resolve(language),
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          fontSize: 16.0,
+                          height: 1.55,
+                          color: AppTheme.textSlate,
+                        ),
+                      ),
+                      BotonEscuchar(
+                        audioService: audioService,
+                        texto: ponteCasa.mensajeFamilias.resolve(language),
+                        language: language,
+                        compacto: true,
+                        descripcion: isGl
+                            ? 'a mensaxe para as familias'
+                            : 'el mensaje para las familias',
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -147,6 +167,18 @@ class PasoPonteCasaWidget extends StatelessWidget {
                         fontSize: 16.0,
                         height: 1.5,
                         color: AppTheme.textSlate,
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: BotonEscuchar(
+                        audioService: audioService,
+                        texto: ponteCasa.recomendacionConversacion
+                            .resolve(language),
+                        language: language,
+                        compacto: true,
+                        descripcion:
+                            isGl ? 'a recomendación' : 'la recomendación',
                       ),
                     ),
                   ],
@@ -196,6 +228,13 @@ class PasoPonteCasaWidget extends StatelessWidget {
                         color: AppTheme.textSlate,
                       ),
                     ),
+                  ),
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: act.resolve(language),
+                    language: language,
+                    compacto: true,
+                    descripcion: isGl ? 'a actividade' : 'la actividad',
                   ),
                 ],
               ),

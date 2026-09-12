@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import '../../../core/audio/local_audio_player.dart';
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
@@ -358,6 +359,18 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                         fontSize: 16.0,
                         height: 1.45,
                         color: AppTheme.textSlate,
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: BotonEscuchar(
+                        audioService: widget.audioService,
+                        texto: cancion.consignaDocente.resolve(widget.language),
+                        language: widget.language,
+                        compacto: true,
+                        descripcion: widget.language == AppLanguage.gl
+                            ? 'a consigna docente'
+                            : 'la consigna docente',
                       ),
                     ),
                   ],

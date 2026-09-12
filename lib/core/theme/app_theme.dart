@@ -33,13 +33,18 @@ class AppTheme {
   static const Color star = Color(0xFFFACC15);
   static const Color dark = Color(0xFF0B1220);
 
-  /// Turquesa profundo para barras y cabeceras CON texto blanco.
+  /// Turquesa para barras y cabeceras CON texto blanco.
   ///
-  /// Existe por una medición, no por gusto: el blanco sobre el turquesa de
-  /// marca da 2,18:1, que no llega ni al umbral de texto grande (3,0), y menos
-  /// al de AA (4,5). Valeria+ lo lleva así; aquí no, porque esto se mira en un
-  /// aula con luz y en un móvil al sol. Sobre este tono el blanco da 9,4:1.
-  static const Color primaryInk = Color(0xFF0B4F4C);
+  /// Existe por una medición: el blanco sobre el turquesa de marca da 2,18:1,
+  /// que no llega ni al umbral de texto grande (3,0). Valeria+ lo lleva así;
+  /// aquí no, porque esto se mira en un aula con ventanales y en un móvil al
+  /// sol.
+  ///
+  /// Empezó en #0B4F4C (9,39:1) y Frank dijo que salía demasiado oscuro. Este
+  /// es el tono MÁS CLARO que todavía pasa AA con texto pequeño: 5,16:1. Subir
+  /// más ya no pasa —#158C85 se queda en 4,10— así que aquí no hay margen sin
+  /// perder legibilidad.
+  static const Color primaryInk = Color(0xFF127A75);
 
   // Nombres de la paleta anterior («Maritime Vigo»). Se conservan porque los
   // usan 147 sitios del código y romperlos no aportaba nada; apuntan ya a los

@@ -1,0 +1,76 @@
+{
+  "id": "aula.pulso.01",
+  "bloqueId": "aula_pulso",
+  "destinatario": "docente",
+  "orden": 1,
+  "titulo": {
+    "gl": "O pulso debúxase, non soa",
+    "es": "El pulso se dibuja, no suena"
+  },
+  "subtitulo": {
+    "gl": "Por que o metrónomo é visual e como marcalo co corpo",
+    "es": "Por qué el metrónomo es visual y cómo marcarlo con el cuerpo"
+  },
+  "tiempoLecturaMinutos": 3,
+  "icono": "ear_sparkles",
+  "ideaClave": {
+    "gl": "Na asemblea o pulso vese: unha barra que avanza, as túas mans nas pernas, o teu corpo. Non se escoita ningún clic. A canle auditiva queda enteira para unha soa cousa, que é a túa voz dicindo a letra.",
+    "es": "En la asamblea el pulso se ve: una barra que avanza, tus manos en las piernas, tu cuerpo. No se oye ningún clic. El canal auditivo queda entero para una sola cosa, que es tu voz diciendo la letra."
+  },
+  "porQueImporta": {
+    "gl": "Parte das crianzas da aula leva audiófono ou implante. Un metrónomo sonoro compite xusto coa voz que teñen que seguir, e nun aparato que xa comprime o son a competencia gáñaa o clic, que é curto e forte. Coa marca visual ninguén perde a letra, e as crianzas que oen ben tampouco perden nada: seguen o pulso coa vista e coas túas mans, que é como se aprende un ritmo a esta idade.",
+    "es": "Parte de las criaturas del aula lleva audífono o implante. Un metrónomo sonoro compite justo con la voz que tienen que seguir, y en un aparato que ya comprime el sonido la competencia la gana el clic, que es corto y fuerte. Con la marca visual nadie pierde la letra, y las criaturas que oyen bien tampoco pierden nada: siguen el pulso con la vista y con tus manos, que es como se aprende un ritmo a esta edad."
+  },
+  "queHacerEnCasa": {
+    "gl": "Marca o pulso coas palmas nas pernas ou balanceando os brazos, amplo e lento, e mira á roda mentres o fas. A túa voz vai por riba, non por debaixo. Se alguén se perde, non pares a canción: esaxera o xesto e segue, que o pulso recupérase mirando.",
+    "es": "Marca el pulso con las palmas en las piernas o balanceando los brazos, amplio y lento, y mira a la rueda mientras lo haces. Tu voz va por encima, no por debajo. Si alguien se pierde, no pares la canción: exagera el gesto y sigue, que el pulso se recupera mirando."
+  },
+  "ejemploCotidiano": {
+    "gl": "Abres o paso da canción. A barra da pantalla avanza e ti dás dúas palmadas nas pernas por compás, mirando á roda. Unha nena mira as túas mans e empeza a balancearse fóra de tempo. Non a corrixes: agrandas o xesto, achégaste un pouco e segues cantando. Ao terceiro compás xa vai contigo.",
+    "es": "Abres el paso de la canción. La barra de la pantalla avanza y tú das dos palmadas en las piernas por compás, mirando a la rueda. Una niña mira tus manos y empieza a balancearse fuera de tiempo. No la corriges: agrandas el gesto, te acercas un poco y sigues cantando. Al tercer compás ya va contigo."
+  },
+  "afirmaciones": [
+    {
+      "id": "afirmacion_01",
+      "enunciado": {
+        "gl": "Un metrónomo sonoro axudaría ás crianzas con audiófono a seguir mellor o pulso.",
+        "es": "Un metrónomo sonoro ayudaría a las criaturas con audífono a seguir mejor el pulso."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Xusto ao revés: o clic compite coa voz na mesma canle, e nun audiófono ou nun implante o son curto e forte tápaa. Por iso aquí o pulso é visual e a canle auditiva queda libre para a letra.",
+        "es": "Justo al revés: el clic compite con la voz en el mismo canal, y en un audífono o en un implante el sonido corto y fuerte la tapa. Por eso aquí el pulso es visual y el canal auditivo queda libre para la letra."
+      }
+    },
+    {
+      "id": "afirmacion_02",
+      "enunciado": {
+        "gl": "Se unha crianza perde o compás, convén parar a canción e volver empezar.",
+        "es": "Si una criatura pierde el compás, conviene parar la canción y volver a empezar."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Parar rompe o pulso para toda a roda por unha soa persoa. Agrandar o xesto e seguir deixa que se volva enganchar mirando, que é o que fai calquera a esta idade.",
+        "es": "Parar rompe el pulso para toda la rueda por una sola persona. Agrandar el gesto y seguir deja que se vuelva a enganchar mirando, que es lo que hace cualquiera a esta edad."
+      }
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA3.1"
+    ]
+  },
+  "revision": {
+    "autor": "Dr. Frank Betances",
+    "revisorPedagogico": "Equipo Pedagóxico Vigo",
+    "fechaRevision": "2026-09-12",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
@@ -29,12 +31,17 @@ class CapsulaDetailScreen extends StatefulWidget {
   /// Opcional: sin repositorio la cápsula se lee igual y no cuenta nada.
   final PremiosRepository? premios;
 
+  /// Opcional: sin él la cápsula se lee, pero no se escucha. Una familia lee
+  /// esto en casa muchas veces con las manos ocupadas.
+  final OfflineAudioService? audioService;
+
   const CapsulaDetailScreen({
     super.key,
     required this.capsula,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.premios,
+    this.audioService,
   });
 
   @override
@@ -67,8 +74,12 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
   );
 
   /// Las cuatro secciones canónicas, con su antetítulo y su icono.
+  bool get _esDeAula =>
+      widget.capsula.destinatario == DestinatarioCapsula.docente;
+
   List<_Seccion> get _secciones {
     final c = widget.capsula;
+    final esDeAula = _esDeAula;
     return [
       _Seccion(
         icono: Icons.lightbulb_outline,
@@ -88,22 +99,39 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
         ),
         cuerpo: c.porQueImporta,
       ),
+      // La tercera sección es el mismo campo del JSON en los dos casos, pero
+      // NO el mismo encabezado: a una maestra en su aula no se le dice «qué
+      // hacer en casa». Es lo único que cambia entre una cápsula de Academy y
+      // una del aula; el resto de la estructura es idéntico, y por eso no hay
+      // dos modelos ni dos pantallas.
       _Seccion(
-        icono: Icons.home_outlined,
-        kicker: const LocalizedString(gl: 'NA CASA', es: 'EN CASA'),
-        titulo: const LocalizedString(
-          gl: 'Que facer na casa',
-          es: 'Qué hacer en casa',
-        ),
+        icono: esDeAula ? Icons.groups_outlined : Icons.home_outlined,
+        kicker: esDeAula
+            ? const LocalizedString(gl: 'NA ASEMBLEA', es: 'EN LA ASAMBLEA')
+            : const LocalizedString(gl: 'NA CASA', es: 'EN CASA'),
+        titulo: esDeAula
+            ? const LocalizedString(
+                gl: 'Que facer na asemblea',
+                es: 'Qué hacer en la asamblea',
+              )
+            : const LocalizedString(
+                gl: 'Que facer na casa',
+                es: 'Qué hacer en casa',
+              ),
         cuerpo: c.queHacerEnCasa,
       ),
       _Seccion(
         icono: Icons.wb_sunny_outlined,
         kicker: const LocalizedString(gl: 'UN EXEMPLO', es: 'UN EJEMPLO'),
-        titulo: const LocalizedString(
-          gl: 'Un momento calquera',
-          es: 'Un momento cualquiera',
-        ),
+        titulo: esDeAula
+            ? const LocalizedString(
+                gl: 'Unha asemblea calquera',
+                es: 'Una asamblea cualquiera',
+              )
+            : const LocalizedString(
+                gl: 'Un momento calquera',
+                es: 'Un momento cualquiera',
+              ),
         cuerpo: c.ejemploCotidiano,
       ),
     ];
@@ -137,8 +165,16 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
     if (!afirmaciones.every((a) => _userAnswers[a.id] != null)) return;
 
     _yaContada = true;
+    // La cápsula cuenta para QUIEN la lee. Una cápsula del aula la lee la
+    // maestra, así que suma a su recorrido y a su racha, no al de la familia.
+    //
+    // Reutiliza el contador `capsulas` que ya existe para los dos perfiles: no
+    // se guarda ninguna clave nueva, así que esto NO cambia lo que la app
+    // almacena ni obliga a tocar la política de privacidad. Lo que sí queda sin
+    // premiar es una insignia propia de cápsula docente: las tres de cápsula
+    // del catálogo son de familia, y no me invento insignias.
     final nuevas = await widget.premios?.registrar(
-          Perfil.familia,
+          _esDeAula ? Perfil.docente : Perfil.familia,
           EventoPremio.capsula,
         ) ??
         const <Insignia>[];
@@ -226,6 +262,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                     seccion: secciones[i],
                     lang: lang,
                     cabecera: cabecera,
+                    audioService: widget.audioService,
                   );
                 }
                 final afirmacion = capsula.afirmaciones[i - secciones.length];
@@ -233,6 +270,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                   cabecera: cabecera,
                   afirmacion: afirmacion,
                   lang: lang,
+                  audioService: widget.audioService,
                   numero: i - secciones.length + 1,
                   total: capsula.afirmaciones.length,
                   respuesta: _userAnswers[afirmacion.id],
@@ -318,11 +356,13 @@ class _PaginaSeccion extends StatelessWidget {
   final _Seccion seccion;
   final AppLanguage lang;
   final Widget cabecera;
+  final OfflineAudioService? audioService;
 
   const _PaginaSeccion({
     required this.seccion,
     required this.lang,
     required this.cabecera,
+    this.audioService,
   });
 
   @override
@@ -370,6 +410,13 @@ class _PaginaSeccion extends StatelessWidget {
                     style:
                         text.bodyLarge?.copyWith(color: AppTheme.textSecondary),
                   ),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: seccion.cuerpo.resolve(lang),
+                    language: lang,
+                    descripcion: seccion.titulo.resolve(lang),
+                  ),
                 ],
               ),
             ),
@@ -385,6 +432,7 @@ class _PaginaReflexion extends StatelessWidget {
   final Widget cabecera;
   final Afirmacion afirmacion;
   final AppLanguage lang;
+  final OfflineAudioService? audioService;
   final int numero;
   final int total;
   final bool? respuesta;
@@ -396,6 +444,7 @@ class _PaginaReflexion extends StatelessWidget {
     required this.cabecera,
     required this.afirmacion,
     required this.lang,
+    this.audioService,
     required this.numero,
     required this.total,
     required this.respuesta,
@@ -426,9 +475,25 @@ class _PaginaReflexion extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: AppTheme.spaceSm),
-                Text(
-                  afirmacion.enunciado.resolve(lang),
-                  style: text.titleMedium,
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        afirmacion.enunciado.resolve(lang),
+                        style: text.titleMedium,
+                      ),
+                    ),
+                    BotonEscuchar(
+                      audioService: audioService,
+                      texto: afirmacion.enunciado.resolve(lang),
+                      language: lang,
+                      compacto: true,
+                      descripcion: lang == AppLanguage.gl
+                          ? 'a afirmación'
+                          : 'la afirmación',
+                    ),
+                  ],
                 ),
                 const SizedBox(height: AppTheme.spaceXl),
                 _Opcion(
@@ -471,9 +536,23 @@ class _PaginaReflexion extends StatelessWidget {
                         ),
                         const SizedBox(width: AppTheme.spaceMd),
                         Expanded(
-                          child: Text(
-                            afirmacion.explicacion.resolve(lang),
-                            style: text.bodyMedium,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                afirmacion.explicacion.resolve(lang),
+                                style: text.bodyMedium,
+                              ),
+                              BotonEscuchar(
+                                audioService: audioService,
+                                texto: afirmacion.explicacion.resolve(lang),
+                                language: lang,
+                                compacto: true,
+                                descripcion: lang == AppLanguage.gl
+                                    ? 'a explicación'
+                                    : 'la explicación',
+                              ),
+                            ],
                           ),
                         ),
                       ],

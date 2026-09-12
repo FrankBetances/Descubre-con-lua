@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
+import '../../premios/widgets/lua_game_strip.dart';
 import '../widgets/academy_header.dart';
 import '../widgets/selector_idioma_widget.dart';
 import 'capsula_detail_screen.dart';
@@ -26,12 +29,16 @@ class BloquesListScreen extends StatefulWidget {
   /// Opcional: sin él, leer una cápsula no cuenta para los premios.
   final PremiosRepository? premios;
 
+  /// Opcional: sin él las cápsulas se leen, pero no se escuchan.
+  final OfflineAudioService? audioService;
+
   const BloquesListScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.premios,
+    this.audioService,
   });
 
   @override
@@ -143,6 +150,16 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // La tira de juego de la familia, justo debajo de la cabecera:
+                // la gata, el nivel por cápsulas leídas y la racha.
+                if (widget.premios != null) ...[
+                  LuaGameStrip(
+                    repository: widget.premios!,
+                    perfil: Perfil.familia,
+                    language: lang,
+                  ),
+                  const SizedBox(height: AppTheme.spaceXl),
+                ],
                 Text(
                   _disponibles.resolve(lang),
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
@@ -181,6 +198,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                                     initialLanguage: _language,
                                     onLanguageChanged: _onToggleLanguage,
                                     premios: widget.premios,
+                                    audioService: widget.audioService,
                                   ),
                                 ),
                               ),

@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-09-11T16:54:08Z",
- "entries": 12,
+ "generatedAt": "2026-09-12T14:49:25Z",
+ "entries": 246,
  "byStyle": {
   "slow": 10,
-  "tutor": 2
+  "tutor": 236
  },
  "byLang": {
-  "es": 6,
-  "gl": 6
+  "es": 123,
+  "gl": 123
  },
  "corpus": [
   {
@@ -51,12 +51,948 @@
    "source": "juega.mar.01/vocabulario/peixe"
   },
   {
+   "id": "es_tutor_012d72a1_175",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No: un sonido o un gesto SON su turno, y tratarlos como respuesta válida es lo que mantiene la conversación viva. Insistir lo convierte en un examen y el niño deja de iniciar.",
+   "speech": "No: un sonido o un gesto SON su turno, y tratarlos como respuesta válida es lo que mantiene la conversación viva. Insistir lo convierte en un examen y el niño deja de iniciar.",
+   "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_03ae32f8_409",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Parte de las criaturas del aula lleva audífono o implante. Un metrónomo sonoro compite justo con la voz que tienen que seguir, y en un aparato que ya comprime el sonido la competencia la gana el clic, que es corto y fuerte. Con la marca visual nadie pierde la letra, y las criaturas que oyen bien tampoco pierden nada: siguen el pulso con la vista y con tus manos, que es como se aprende un ritmo a esta edad.",
+   "speech": "Parte de las criaturas del aula lleva audífono o implante. Un metrónomo sonoro compite justo con la voz que tienen que seguir, y en un aparato que ya comprime el sonido la competencia la gana el clic, que es corto y fuerte. Con la marca visual nadie pierde la letra, y las criaturas que oyen bien tampoco pierden nada: siguen el pulso con la vista y con tus manos, que es como se aprende un ritmo a esta edad.",
+   "source": "aula.pulso.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_0a955c04_79",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Para trabajar «grande» basta con enseñar el objeto grande y repetir la palabra.",
+   "speech": "Para trabajar «grande» basta con enseñar el objeto grande y repetir la palabra.",
+   "source": "aula.matematicas.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_0b2296ad_56",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué animal vuela por el cielo y hace sonido de gaviota?",
+   "speech": "¿Qué animal vuela por el cielo y hace sonido de gaviota?",
+   "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_0b9f6936_232",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon siempre los dos objetos juntos y nombra la pareja entera en la misma frase: «este grande, este pequeño». Deja que los cojan y los cambien de mano. No pidas que digan cuál es cuál: eso vuelve examen lo que todavía es exploración.",
+   "speech": "Pon siempre los dos objetos juntos y nombra la pareja entera en la misma frase: «este grande, este pequeño». Deja que los cojan y los cambien de mano. No pidas que digan cuál es cuál: eso vuelve examen lo que todavía es exploración.",
+   "source": "aula.matematicas.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_10d195bf_184",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Es la respuesta esperada en ese nivel, no un apaño. La criatura demostró que entendió la pregunta y localizó el objeto; la palabra llega después, y llega antes si no se le exige ahora.",
+   "speech": "Es la respuesta esperada en ese nivel, no un apaño. La criatura demostró que entendió la pregunta y localizó el objeto; la palabra llega después, y llega antes si no se le exige ahora.",
+   "source": "aula.preguntas.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_12952f83_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Un vídeo educativo con vocabulario enseña menos que un adulto que responde a lo que hace el niño.",
+   "speech": "Un vídeo educativo con vocabulario enseña menos que un adulto que responde a lo que hace el niño.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_13874814_240",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En una asamblea de cero a tres, el cuento no se lee para llegar al final. Se lee para que haya un momento en el que tu voz, tu dedo y la mirada de la criatura estén en la misma cosa. Si eso pasa dos veces en toda la página, la página valió.",
+   "speech": "En una asamblea de cero a tres, el cuento no se lee para llegar al final. Se lee para que haya un momento en el que tu voz, tu dedo y la mirada de la criatura estén en la misma cosa. Si eso pasa dos veces en toda la página, la página valió.",
+   "source": "aula.conto.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_13d7e270_234",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Preguntar le pide a la criatura la palabra que todavía no tiene e interrumpe lo que está haciendo. Nombrar tú mientras ella toca le da la palabra en el instante exacto; pedírsela viene después, y la mayoría de las veces ni hace falta.",
+   "speech": "Preguntar le pide a la criatura la palabra que todavía no tiene e interrumpe lo que está haciendo. Nombrar tú mientras ella toca le da la palabra en el instante exacto; pedírsela viene después, y la mayoría de las veces ni hace falta.",
+   "source": "aula.exploracion.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_160dc921_300",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La pareja de palabras opuestas —grande y pequeño, mucho y poco, dentro y fuera— solo significa algo cuando las dos se ven a la vez. Con un objeto solo, «grande» no tiene con qué compararse y queda como un adjetivo cualquiera. Dos objetos en la misma mano es lo que convierte la palabra en una noción.",
+   "speech": "La pareja de palabras opuestas —grande y pequeño, mucho y poco, dentro y fuera— solo significa algo cuando las dos se ven a la vez. Con un objeto solo, «grande» no tiene con qué compararse y queda como un adjetivo cualquiera. Dos objetos en la misma mano es lo que convierte la palabra en una noción.",
+   "source": "aula.matematicas.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_170b878a_88",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Introducción visual y manipulativa a las nociones de magnitud mediante barcos y conchas.",
+   "speech": "Introducción visual y manipulativa a las nociones de magnitud mediante barcos y conchas.",
+   "source": "juega.mar.01/matematicas/descripcion"
+  },
+  {
+   "id": "es_tutor_22de552c_133",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lúa encuentra una concha hermosa en la arena de Samil. La acerca a la oreja y sonríe con alegría. ¡El mar de Vigo está lleno de vida!",
+   "speech": "Lúa encuentra una concha hermosa en la arena de Samil. La acerca a la oreja y sonríe con alegría. ¡El mar de Vigo está lleno de vida!",
+   "source": "juega.mar.01/cuento/2/texto"
+  },
+  {
+   "id": "es_tutor_22f31177_215",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Antes de los 3 años el lenguaje se construye moviéndose: cogiendo, tirando, subiendo a brazos, chocando las manos. La pantalla da imagen y sonido, pero no da lo que hace falta, que es un cuerpo respondiendo al suyo.",
+   "speech": "Antes de los 3 años el lenguaje se construye moviéndose: cogiendo, tirando, subiendo a brazos, chocando las manos. La pantalla da imagen y sonido, pero no da lo que hace falta, que es un cuerpo respondiendo al suyo.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_260a2053_174",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No: en estas edades la atención va pegada al movimiento. Las palabras que mejor se aprenden son las que llegan mientras el cuerpo está haciendo exactamente eso que se nombra.",
+   "speech": "No: en estas edades la atención va pegada al movimiento. Las palabras que mejor se aprenden son las que llegan mientras el cuerpo está haciendo exactamente eso que se nombra.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_262d7db5_466",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La diferencia no está en que la pantalla sea mala: está en que no devuelve. Un vídeo dice «casa» igual si el niño mira que si se marcha. Una persona hace una pausa, repite, señala, celebra. Esa respuesta contingente —llega porque él hizo algo— es la que no se puede sustituir. Las recomendaciones pediátricas internacionales coinciden en desaconsejar el uso de pantallas antes de los 2 años y limitarlo después; consulta con tu pediatra lo que corresponda a tu caso.",
+   "speech": "La diferencia no está en que la pantalla sea mala: está en que no devuelve. Un vídeo dice «casa» igual si el niño mira que si se marcha. Una persona hace una pausa, repite, señala, celebra. Esa respuesta contingente —llega porque él hizo algo— es la que no se puede sustituir. Las recomendaciones pediátricas internacionales coinciden en desaconsejar el uso de pantallas antes de los 2 años y limitarlo después; consulta con tu pediatra lo que corresponda a tu caso.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_271c05f9_298",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Abres el paso de la canción. La barra de la pantalla avanza y tú das dos palmadas en las piernas por compás, mirando a la rueda. Una niña mira tus manos y empieza a balancearse fuera de tiempo. No la corriges: agrandas el gesto, te acercas un poco y sigues cantando. Al tercer compás ya va contigo.",
+   "speech": "Abres el paso de la canción. La barra de la pantalla avanza y tú das dos palmadas en las piernas por compás, mirando a la rueda. Una niña mira tus manos y empieza a balancearse fuera de tiempo. No la corriges: agrandas el gesto, te acercas un poco y sigues cantando. Al tercer compás ya va contigo.",
+   "source": "aula.pulso.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_272f586e_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pronunciar 'gaviota' o imitar su sonido y vuelo.",
+   "speech": "Pronunciar 'gaviota' o imitar su sonido y vuelo.",
+   "source": "juega.mar.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_28e2a1bc_83",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Conviene decirle a la familia qué hacer esta noche, y no solo lo que no debe hacer.",
+   "speech": "Conviene decirle a la familia qué hacer esta noche, y no solo lo que no debe hacer.",
+   "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_2ac25e0b_70",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Aprovechar para vincular la palabra con la sensación térmica y táctil.",
+   "speech": "Aprovechar para vincular la palabra con la sensación térmica y táctil.",
+   "source": "juega.mar.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "es_tutor_2c7bc292_196",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Nombra en voz alta lo que tu bebé está mirando en este instante. Después de hacerle una pregunta o decir una palabra, guarda un silencio atento de 5 segundos para concederle su turno de respuesta.",
+   "speech": "Nombra en voz alta lo que tu bebé está mirando en este instante. Después de hacerle una pregunta o decir una palabra, guarda un silencio atento de 5 segundos para concederle su turno de respuesta.",
+   "source": "academy.como_se_aprende_a_hablar.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_2ccf5655_170",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Así es: el vídeo emite igual atienda o no. El adulto ajusta, espera y responde a lo que acaba de hacer, y esa respuesta es la que construye lenguaje en los primeros años.",
+   "speech": "Así es: el vídeo emite igual atienda o no. El adulto ajusta, espera y responde a lo que acaba de hacer, y esa respuesta es la que construye lenguaje en los primeros años.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_300ecb3a_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esperar en silencio durante unos segundos después de hablar ayuda a que el niño tome la iniciativa comunicativa.",
+   "speech": "Esperar en silencio durante unos segundos después de hablar ayuda a que el niño tome la iniciativa comunicativa.",
+   "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_3071e25c_188",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sin algo pequeño al lado, «grande» no se puede notar: es solo un sonido que acompaña a un objeto. La noción aparece en la comparación, así que los dos tienen que estar a la vista a la vez.",
+   "speech": "Sin algo pequeño al lado, «grande» no se puede notar: es solo un sonido que acompaña a un objeto. La noción aparece en la comparación, así que los dos tienen que estar a la vista a la vez.",
+   "source": "aula.matematicas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_31a10fc2_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El aviso de seguridad de la actividad con agua se puede dar por sabido si ya se hizo otras veces.",
+   "speech": "El aviso de seguridad de la actividad con agua se puede dar por sabido si ya se hizo otras veces.",
+   "source": "aula.exploracion.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_337a3936_88",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Para que un bebé se concentre en lo que le dices, lo mejor es que esté quieto y sentado.",
+   "speech": "Para que un bebé se concentre en lo que le dices, lo mejor es que esté quieto y sentado.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_337d369f_269",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La niña dice: «Quiero el leite, mamá, dame más». La tentación es corregir la mezcla. En vez de eso, respóndele entero en tu lengua, dándole el modelo sin señalar el error: «¿Quieres más leche? Aquí tienes la leche.» No le dices que estuvo mal; le das la frase completa.",
+   "speech": "La niña dice: «Quiero el leite, mamá, dame más». La tentación es corregir la mezcla. En vez de eso, respóndele entero en tu lengua, dándole el modelo sin señalar el error: «¿Quieres más leche? Aquí tienes la leche.» No le dices que estuvo mal; le das la frase completa.",
+   "source": "academy.bilinguismo_y_cultura.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_33982a42_55",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Se moja, brilla, se vuelve oscura o cae hasta el fondo.",
+   "speech": "Se moja, brilla, se vuelve oscura o cae hasta el fondo.",
+   "source": "juega.mar.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_343f551a_85",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señalar con el dedo mientras se nombra ayuda más que repetir la palabra varias veces.",
+   "speech": "Señalar con el dedo mientras se nombra ayuda más que repetir la palabra varias veces.",
+   "source": "aula.conto.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_34a3ac76_76",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si nadie responde a la pregunta, conviene repetirla más alto y más despacio.",
+   "speech": "Si nadie responde a la pregunta, conviene repetirla más alto y más despacio.",
+   "source": "aula.preguntas.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_36285f58_201",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No dirijas: sigue. Mira lo que él está mirando, nómbralo, y calla cinco segundos contando en tu cabeza. Devuelve lo que haga —un sonido, un gesto, una mirada— como si fuese una respuesta, porque lo es.",
+   "speech": "No dirijas: sigue. Mira lo que él está mirando, nómbralo, y calla cinco segundos contando en tu cabeza. Devuelve lo que haga —un sonido, un gesto, una mirada— como si fuese una respuesta, porque lo es.",
+   "source": "academy.turnos_atencion_conjunta.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_3741f5cb_76",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Celebrar cualquier aproximación vocal o gesto de abrir los brazos como alas.",
+   "speech": "Celebrar cualquier aproximación vocal o gesto de abrir los brazos como alas.",
+   "source": "juega.mar.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "es_tutor_38630092_214",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el momento de poner los zapatos por la mañana: «¡Mira, aquí está tu zapato azul! ¿Dónde va? ¡En el pie! Primero un pie... (pausa de 5 segundos con sonrisa)... ¡y ahora el otro pie! ¡Qué cosquillas en los dedos!»",
+   "speech": "En el momento de poner los zapatos por la mañana: «¡Mira, aquí está tu zapato azul! ¿Dónde va? ¡En el pie! Primero un pie... (pausa de 5 segundos con sonrisa)... ¡y ahora el otro pie! ¡Qué cosquillas en los dedos!»",
+   "source": "academy.como_se_aprende_a_hablar.01/ejemploCotidiano"
+  },
+  {
    "id": "es_tutor_3a7014eb_155",
    "lang": "es",
    "style": "tutor",
    "text": "* O-las * que vienen, * o-las * que van, * en el mar * de Vi-go * los pe-ces * es-tán. * Chof, * chof, * cae * el a-gua, * chas, * chas, * en la * a-re-na.",
    "speech": "Olas que vienen, olas que van, en el mar de Vigo los peces están. Chof, chof, cae el agua, chas, chas, en la arena.",
    "source": "juega.mar.01/cancionPulso"
+  },
+  {
+   "id": "es_tutor_3e853ee1_54",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué tiene Lúa en la mano? ¡Mirad cómo brilla el agua!",
+   "speech": "¿Qué tiene Lúa en la mano? ¡Mirad cómo brilla el agua!",
+   "source": "juega.mar.01/cuento/0/pregunta"
+  },
+  {
+   "id": "es_tutor_3f65e0f8_313",
+   "lang": "es",
+   "style": "tutor",
+   "text": "«Templado», «suave», «mojado» no se explican: solo se entienden tocando. Si la palabra coincide con la sensación, la criatura las asocia sin esfuerzo; si llega antes o después, queda como un sonido suelto. Esta es la parte de la asamblea donde esa coincidencia es más fácil de conseguir, porque la sensación dura.",
+   "speech": "«Templado», «suave», «mojado» no se explican: solo se entienden tocando. Si la palabra coincide con la sensación, la criatura las asocia sin esfuerzo; si llega antes o después, queda como un sonido suelto. Esta es la parte de la asamblea donde esa coincidencia es más fácil de conseguir, porque la sensación dura.",
+   "source": "aula.exploracion.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_4318c355_249",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Habla cada uno en la lengua en la que te sientas cómodo y seas tú mismo. Si mezcla palabras de las dos en una misma frase, no lo corrijas: es normal y se pasa. Y busca que en cada lengua haya alguien que le hable mucho, no solo que la oiga de fondo.",
+   "speech": "Habla cada uno en la lengua en la que te sientas cómodo y seas tú mismo. Si mezcla palabras de las dos en una misma frase, no lo corrijas: es normal y se pasa. Y busca que en cada lengua haya alguien que le hable mucho, no solo que la oiga de fondo.",
+   "source": "academy.bilinguismo_y_cultura.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_46b7bb68_91",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si un niño tarda en hablar, lo primero que conviene hacer es dejar una sola lengua en casa.",
+   "speech": "Si un niño tarda en hablar, lo primero que conviene hacer es dejar una sola lengua en casa.",
+   "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_491f70cc_94",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Para estimular el lenguaje hay que reservar un rato específico del día, aparte de las rutinas.",
+   "speech": "Para estimular el lenguaje hay que reservar un rato específico del día, aparte de las rutinas.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_4b45cfd0_227",
+   "lang": "es",
+   "style": "tutor",
+   "text": "«Hoy Xiana metió las manos en el agua y dijo ¡ba! por el barco. Esta noche, en la bañera, dile barco cuando lo coja y espera un poco a ver qué hace.» Treinta segundos, una sola idea, y algo que se puede hacer sin preparar nada.",
+   "speech": "«Hoy Xiana metió las manos en el agua y dijo ¡ba! por el barco. Esta noche, en la bañera, dile barco cuando lo coja y espera un poco a ver qué hace.» Treinta segundos, una sola idea, y algo que se puede hacer sin preparar nada.",
+   "source": "aula.ponte_casa.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_4ec405b8_212",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El habla comienza mucho antes de la primera palabra. El cerebro infantil construye el lenguaje a partir de las conversaciones cálidas, miradas compartidas y palabras afectuosas que escucha a diario en su familia.",
+   "speech": "El habla comienza mucho antes de la primera palabra. El cerebro infantil construye el lenguaje a partir de las conversaciones cálidas, miradas compartidas y palabras afectuosas que escucha a diario en su familia.",
+   "source": "academy.como_se_aprende_a_hablar.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_52f023a9_90",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuanta más información se le dé a la familia en la puerta, mejor aprovecha el día en casa.",
+   "speech": "Cuanta más información se le dé a la familia en la puerta, mejor aprovecha el día en casa.",
+   "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_55700561_284",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La palabra que se aprende es la que llega mientras la criatura ya está mirando eso. No la que se dice primero ni la que se repite más: la que coincide. El dedo es lo que hace coincidir; sin él, tu voz va por un lado y la atención de la rueda por otro, y la página pasa sin dejar nada.",
+   "speech": "La palabra que se aprende es la que llega mientras la criatura ya está mirando eso. No la que se dice primero ni la que se repite más: la que coincide. El dedo es lo que hace coincidir; sin él, tu voz va por un lado y la atención de la rueda por otro, y la página pasa sin dejar nada.",
+   "source": "aula.conto.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_578f38fc_99",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Durante la exploración conviene ir preguntando «¿cómo está el agua?» para que nombren la sensación.",
+   "speech": "Durante la exploración conviene ir preguntando «¿cómo está el agua?» para que nombren la sensación.",
+   "source": "aula.exploracion.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_5ac031d9_196",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En la asamblea el pulso se ve: una barra que avanza, tus manos en las piernas, tu cuerpo. No se oye ningún clic. El canal auditivo queda entero para una sola cosa, que es tu voz diciendo la letra.",
+   "speech": "En la asamblea el pulso se ve: una barra que avanza, tus manos en las piernas, tu cuerpo. No se oye ningún clic. El canal auditivo queda entero para una sola cosa, que es tu voz diciendo la letra.",
+   "source": "aula.pulso.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_5b791d9a_148",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Correcto: es propio de quien crece con dos lenguas y se va separando solo. El buen modelo es responder entero en tu lengua, sin corregir ni señalar.",
+   "speech": "Correcto: es propio de quien crece con dos lenguas y se va separando solo. El buen modelo es responder entero en tu lengua, sin corregir ni señalar.",
+   "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_5be32906_118",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Exacto: la pausa atenta es la invitación más respetuosa para que el niño intente comunicarse con sus propios recursos.",
+   "speech": "Exacto: la pausa atenta es la invitación más respetuosa para que el niño intente comunicarse con sus propios recursos.",
+   "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_5f0a5d1e_208",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Justo al revés: el clic compite con la voz en el mismo canal, y en un audífono o en un implante el sonido corto y fuerte la tapa. Por eso aquí el pulso es visual y el canal auditivo queda libre para la letra.",
+   "speech": "Justo al revés: el clic compite con la voz en el mismo canal, y en un audífono o en un implante el sonido corto y fuerte la tapa. Por eso aquí el pulso es visual y el canal auditivo queda libre para la letra.",
+   "source": "aula.pulso.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_602e9ff6_202",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Llegar al final no es el objetivo. Acelerar quita justo lo que hace que la página sirva, que son las pausas. Mejor quedarse en la página que ya les interesa, o cerrar el cuento y seguir con la asamblea.",
+   "speech": "Llegar al final no es el objetivo. Acelerar quita justo lo que hace que la página sirva, que son las pausas. Mejor quedarse en la página que ya les interesa, o cerrar el cuento y seguir con la asamblea.",
+   "source": "aula.conto.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_619aa2bd_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En la hora del baño en casa, jugar con vasos de plástico a llenar y vaciar agua cantando la canción de las olas.",
+   "speech": "En la hora del baño en casa, jugar con vasos de plástico a llenar y vaciar agua cantando la canción de las olas.",
+   "source": "juega.mar.01/puenteCasa/act/0"
+  },
+  {
+   "id": "es_tutor_63a4ddb5_378",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En Vigo muchas familias hablan gallego con los abuelos y castellano en la calle, y aparece la duda de si conviene «simplificar» y dejar una sola lengua. Renunciar al gallego de casa no acelera nada y cuesta algo que no se recupera: la lengua en la que esa familia cuenta sus cosas. Lo que sí importa es la cantidad y la calidad de lo que escucha en cada lengua, no cuántas sean.",
+   "speech": "En Vigo muchas familias hablan gallego con los abuelos y castellano en la calle, y aparece la duda de si conviene «simplificar» y dejar una sola lengua. Renunciar al gallego de casa no acelera nada y cuesta algo que no se recupera: la lengua en la que esa familia cuenta sus cosas. Lo que sí importa es la cantidad y la calidad de lo que escucha en cada lengua, no cuántas sean.",
+   "source": "academy.bilinguismo_y_cultura.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_63c0ab1c_192",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En la exploración sensorial la palabra tiene que llegar mientras la mano todavía está dentro del agua. Un minuto después ya es otra cosa: es contar lo que pasó, no nombrar lo que está pasando.",
+   "speech": "En la exploración sensorial la palabra tiene que llegar mientras la mano todavía está dentro del agua. Un minuto después ya es otra cosa: es contar lo que pasó, no nombrar lo que está pasando.",
+   "source": "aula.exploracion.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_64af17ae_99",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Que la criatura coja el objeto grande con las dos manos ya indica que notó la diferencia de tamaño.",
+   "speech": "Que la criatura coja el objeto grande con las dos manos ya indica que notó la diferencia de tamaño.",
+   "source": "aula.matematicas.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_6645b58a_79",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si una criatura pierde el compás, conviene parar la canción y volver a empezar.",
+   "speech": "Si una criatura pierde el compás, conviene parar la canción y volver a empezar.",
+   "source": "aula.pulso.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_6aab32df_216",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las rutinas se repiten todos los días con las mismas palabras y en el mismo orden. Esa repetición previsible es lo que le permite al bebé anticipar lo que viene después, y anticipar es el primer paso para comprender.",
+   "speech": "Las rutinas se repiten todos los días con las mismas palabras y en el mismo orden. Esa repetición previsible es lo que le permite al bebé anticipar lo que viene después, y anticipar es el primer paso para comprender.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_6c6bd566_183",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La supervisión con agua no depende de cuántas veces se hizo antes: depende de quién está hoy en la rueda y de cómo está el agua hoy. El aviso está en la pantalla para leerlo cada vez.",
+   "speech": "La supervisión con agua no depende de cuántas veces se hizo antes: depende de quién está hoy en la rueda y de cómo está el agua hoy. El aviso está en la pantalla para leerlo cada vez.",
+   "source": "aula.exploracion.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_6d03aaca_147",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Por el cielo cruza una gaviota blanca que hace: ¡Aaaah, aaah! En la orilla del agua hay conchas grandes y suaves que guardan el sonido de las olas.",
+   "speech": "Por el cielo cruza una gaviota blanca que hace: ¡Aaaah, aaah! En la orilla del agua hay conchas grandes y suaves que guardan el sonido de las olas.",
+   "source": "juega.mar.01/cuento/1/texto"
+  },
+  {
+   "id": "es_tutor_6d787058_118",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La gata Lúa coge su barquito de madera y mira la ría de Vigo. El agua brilla bajo el sol y el aire huele a mar fresco.",
+   "speech": "La gata Lúa coge su barquito de madera y mira la ría de Vigo. El agua brilla bajo el sol y el aire huele a mar fresco.",
+   "source": "juega.mar.01/cuento/0/texto"
+  },
+  {
+   "id": "es_tutor_6ee40ccc_184",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una conversación no empieza cuando el niño dice la primera palabra: empieza cuando él y tú estáis mirando lo mismo y cada uno espera su turno. Eso ya es hablar, aunque nadie diga nada.",
+   "speech": "Una conversación no empieza cuando el niño dice la primera palabra: empieza cuando él y tú estáis mirando lo mismo y cada uno espera su turno. Eso ya es hablar, aunque nadie diga nada.",
+   "source": "academy.turnos_atencion_conjunta.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_6f5431a9_234",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una pregunta en la asamblea no sirve para saber si la criatura sabe. Sirve para abrirle un turno. Por eso la respuesta esperada en las preguntas de nivel uno es señalar con el dedo: eso ya es responder, y cuenta igual que una palabra.",
+   "speech": "Una pregunta en la asamblea no sirve para saber si la criatura sabe. Sirve para abrirle un turno. Por eso la respuesta esperada en las preguntas de nivel uno es señalar con el dedo: eso ya es responder, y cuenta igual que una palabra.",
+   "source": "aula.preguntas.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_7627cae9_59",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Dónde está la gaviota? ¿Qué sonido hace cuando vuela alto?",
+   "speech": "¿Dónde está la gaviota? ¿Qué sonido hace cuando vuela alto?",
+   "source": "juega.mar.01/cuento/1/pregunta"
+  },
+  {
+   "id": "es_tutor_7643db9d_208",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La familia recoge con prisa, con un abrigo en una mano y una mochila en la otra. Lo que le llega no es el resumen de la asamblea: es una frase. Elige cuál, y dísela completa antes de que salgan por la puerta.",
+   "speech": "La familia recoge con prisa, con un abrigo en una mano y una mochila en la otra. Lo que le llega no es el resumen de la asamblea: es una frase. Elige cuál, y dísela completa antes de que salgan por la puerta.",
+   "source": "aula.ponte_casa.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_776810d0_120",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repetir las mismas palabras todos los días en la misma rutina ayuda más que variar el vocabulario para que no se aburra.",
+   "speech": "Repetir las mismas palabras todos los días en la misma rutina ayuda más que variar el vocabulario para que no se aburra.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_786334e3_244",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El cerebro del bebé necesita escuchar miles de repeticiones significativas en un clima afectivo seguro. Cuando respondemos a sus balbuceos y gestos como si fuesen palabras reales, fortalecemos los circuitos neuronales de la comunicación social.",
+   "speech": "El cerebro del bebé necesita escuchar miles de repeticiones significativas en un clima afectivo seguro. Cuando respondemos a sus balbuceos y gestos como si fuesen palabras reales, fortalecemos los circuitos neuronales de la comunicación social.",
+   "source": "academy.como_se_aprende_a_hablar.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_79443417_73",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Estimular el tacto, la propiocepción y la diferencia entre seco y mojado.",
+   "speech": "Estimular el tacto, la propiocepción y la diferencia entre seco y mojado.",
+   "source": "juega.mar.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "es_tutor_7a8af85f_76",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señalar con el dedo es una respuesta completa en las preguntas de nivel uno.",
+   "speech": "Señalar con el dedo es una respuesta completa en las preguntas de nivel uno.",
+   "source": "aula.preguntas.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_7b298f9a_122",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Hoy en el aula navegamos por el mar de Vigo con la gata Lúa! Aprendimos a cantar las olas y descubrimos conchas y barcos.",
+   "speech": "¡Hoy en el aula navegamos por el mar de Vigo con la gata Lúa! Aprendimos a cantar las olas y descubrimos conchas y barcos.",
+   "source": "juega.mar.01/puenteCasa/mensajeFamilias"
+  },
+  {
+   "id": "es_tutor_816a5b0c_92",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si la rueda se distrae a media página, lo mejor es acelerar para llegar al final del cuento.",
+   "speech": "Si la rueda se distrae a media página, lo mejor es acelerar para llegar al final del cuento.",
+   "source": "aula.conto.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_817d6670_285",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando el adulto sigue con la mirada lo que le interesa al niño y nombra eso —no lo que el adulto quería enseñar—, la palabra llega en el instante exacto en que el niño está prestando atención. Esa coincidencia entre lo que mira y lo que escucha es lo que hace que la palabra se quede.",
+   "speech": "Cuando el adulto sigue con la mirada lo que le interesa al niño y nombra eso —no lo que el adulto quería enseñar—, la palabra llega en el instante exacto en que el niño está prestando atención. Esa coincidencia entre lo que mira y lo que escucha es lo que hace que la palabra se quede.",
+   "source": "academy.turnos_atencion_conjunta.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_81f0fa70_211",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pregunta y calla cinco segundos contando en tu cabeza. Si nadie responde, no repitas la pregunta: dale la respuesta tú nombrando y señalando, y pasa a la siguiente. Nunca pidas que repitan la palabra bien dicha.",
+   "speech": "Pregunta y calla cinco segundos contando en tu cabeza. Si nadie responde, no repitas la pregunta: dale la respuesta tú nombrando y señalando, y pasa a la siguiente. Nunca pidas que repitan la palabra bien dicha.",
+   "source": "aula.preguntas.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_82f3d3d4_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿A quién saluda Lúa antes de volver a casa?",
+   "speech": "¿A quién saluda Lúa antes de volver a casa?",
+   "source": "juega.mar.01/cuento/2/pregunta"
+  },
+  {
+   "id": "es_tutor_850bee5d_73",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ofrecer primero una concha seca para acariciar su superficie con relieve.",
+   "speech": "Ofrecer primero una concha seca para acariciar su superficie con relieve.",
+   "source": "juega.mar.01/exploracion/paso/1"
+  },
+  {
+   "id": "es_tutor_880efefc_263",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Marca el pulso con las palmas en las piernas o balanceando los brazos, amplio y lento, y mira a la rueda mientras lo haces. Tu voz va por encima, no por debajo. Si alguien se pierde, no pares la canción: exagera el gesto y sigue, que el pulso se recupera mirando.",
+   "speech": "Marca el pulso con las palmas en las piernas o balanceando los brazos, amplio y lento, y mira a la rueda mientras lo haces. Tu voz va por encima, no por debajo. Si alguien se pierde, no pares la canción: exagera el gesto y sigue, que el pulso se recupera mirando.",
+   "source": "aula.pulso.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_8d86aa62_258",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el baño, cada noche la misma secuencia: «Agua calentita... (mete el pie) ...¡calentita! Ahora las manos. Una mano... y la otra mano. ¡Y ahora, la barriga! Fuera el agua, dentro la toalla.» A la tercera noche estirará el pie antes de que digas «calentita».",
+   "speech": "En el baño, cada noche la misma secuencia: «Agua calentita... (mete el pie) ...¡calentita! Ahora las manos. Una mano... y la otra mano. ¡Y ahora, la barriga! Fuera el agua, dentro la toalla.» A la tercera noche estirará el pie antes de que digas «calentita».",
+   "source": "academy.rutinas_bano_de_lenguaje.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_8dc2da14_253",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Aviso de seguridad obligatorio: Esta actividad requiere presencia y supervisión docente constante. Asegúrese de que todas las conchas superen los 5 cm de diámetro y carezcan de bordes cortantes o astillas para evitar cualquier riesgo de atragantamiento.",
+   "speech": "Aviso de seguridad obligatorio: Esta actividad requiere presencia y supervisión docente constante. Asegúrese de que todas las conchas superen los 5 cm de diámetro y carezcan de bordes cortantes o astillas para evitar cualquier riesgo de atragantamiento.",
+   "source": "juega.mar.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "es_tutor_8dd8e0ba_272",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No. El bilingüismo no causa retraso, así que retirar una lengua no resuelve nada y puede cortar la comunicación con los abuelos. Si hay preocupación por el habla, el paso es hablarlo con el pediatra, que valorará el caso; esta app es educativa y no sustituye esa consulta.",
+   "speech": "No. El bilingüismo no causa retraso, así que retirar una lengua no resuelve nada y puede cortar la comunicación con los abuelos. Si hay preocupación por el habla, el paso es hablarlo con el pediatra, que valorará el caso; esta app es educativa y no sustituye esa consulta.",
+   "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_91bb7269_104",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Es mejor nombrar lo que el niño ya está mirando que dirigir su atención hacia lo que queremos enseñarle.",
+   "speech": "Es mejor nombrar lo que el niño ya está mirando que dirigir su atención hacia lo que queremos enseñarle.",
+   "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_944da608_213",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Un niño que crece en dos lenguas no aprende menos: reparte lo que sabe entre las dos. Sumando las dos, tiene tanto vocabulario como cualquier otro. Contar solo una de ellas es lo que hace parecer que va retrasado.",
+   "speech": "Un niño que crece en dos lenguas no aprende menos: reparte lo que sabe entre las dos. Sumando las dos, tiene tanto vocabulario como cualquier otro. Contar solo una de ellas es lo que hace parecer que va retrasado.",
+   "source": "academy.bilinguismo_y_cultura.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_949149f5_171",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Parar rompe el pulso para toda la rueda por una sola persona. Agrandar el gesto y seguir deja que se vuelva a enganchar mirando, que es lo que hace cualquiera a esta edad.",
+   "speech": "Parar rompe el pulso para toda la rueda por una sola persona. Agrandar el gesto y seguir deja que se vuelva a enganchar mirando, que es lo que hace cualquiera a esta edad.",
+   "source": "aula.pulso.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_9f5e0be3_165",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ajustar las manos al tamaño es una respuesta al tamaño, y llega mucho antes que la palabra. Verla es más fiable que preguntar, porque no depende de que sepa decirlo.",
+   "speech": "Ajustar las manos al tamaño es una respuesta al tamaño, y llega mucho antes que la palabra. Verla es más fiable que preguntar, porque no depende de que sepa decirlo.",
+   "source": "aula.matematicas.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_9f83b7d0_324",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una familia no tiene media hora libre para «hacer ejercicios de lenguaje», pero sí tiene un cambio de pañal, una cena y un camino hasta la escuela. En esas tres cosas hay más minutos de conversación que los que daría cualquier actividad añadida, y además llegan cargados de sentido: el niño está viviendo lo que oye nombrar.",
+   "speech": "Una familia no tiene media hora libre para «hacer ejercicios de lenguaje», pero sí tiene un cambio de pañal, una cena y un camino hasta la escuela. En esas tres cosas hay más minutos de conversación que los que daría cualquier actividad añadida, y además llegan cargados de sentido: el niño está viviendo lo que oye nombrar.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_a366816e_248",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lee una frase, señala con el dedo lo que acabas de nombrar, y calla. Cuenta cinco en tu cabeza mirando a la rueda. Lo que aparezca en ese silencio —un sonido, un dedo que apunta, una mirada a ti— es su turno: devuélvelo nombrándolo antes de seguir.",
+   "speech": "Lee una frase, señala con el dedo lo que acabas de nombrar, y calla. Cuenta cinco en tu cabeza mirando a la rueda. Lo que aparezca en ese silencio —un sonido, un dedo que apunta, una mirada a ti— es su turno: devuélvelo nombrándolo antes de seguir.",
+   "source": "aula.conto.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_a79c4ce9_108",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En un paseo por la playa o por el puerto de Bouzas o Samil, señalar las gaviotas que descansan en las rocas.",
+   "speech": "En un paseo por la playa o por el puerto de Bouzas o Samil, señalar las gaviotas que descansan en las rocas.",
+   "source": "juega.mar.01/puenteCasa/act/1"
+  },
+  {
+   "id": "es_tutor_b5683e70_252",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar, esconderse. Y pon palabras al movimiento mientras sucede, no después. Si la pantalla entra en algún momento, que sea acompañada y hablada, nunca como forma de que esté quieto.",
+   "speech": "Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar, esconderse. Y pon palabras al movimiento mientras sucede, no después. Si la pantalla entra en algún momento, que sea acompañada y hablada, nunca como forma de que esté quieto.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_b68b36fd_309",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Está mirando el perro por la ventana. En vez de «mira el coche», dices: «¡El perro! ¿Ves el perro?» (uno, dos, tres, cuatro, cinco). Él hace «¡eh!» y señala. Tú: «¡Sí! El perro. ¿Qué hace el perro?» (uno, dos, tres, cuatro, cinco). Acabáis de tener una conversación de cuatro turnos sin una sola palabra suya.",
+   "speech": "Está mirando el perro por la ventana. En vez de «mira el coche», dices: «¡El perro! ¿Ves el perro?» (uno, dos, tres, cuatro, cinco). Él hace «¡eh!» y señala. Tú: «¡Sí! El perro. ¿Qué hace el perro?» (uno, dos, tres, cuatro, cinco). Acabáis de tener una conversación de cuatro turnos sin una sola palabra suya.",
+   "source": "academy.turnos_atencion_conjunta.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_b7051a78_73",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Colocar un barco grande y un barquito pequeño delante del niño o la niña.",
+   "speech": "Colocar un barco grande y un barquito pequeño delante del niño o la niña.",
+   "source": "juega.mar.01/matematicas/accion/0"
+  },
+  {
+   "id": "es_tutor_b7f69cb3_84",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dar tiempo a que la niña o el niño explore la lámina antes de pedir el señalamiento.",
+   "speech": "Dar tiempo a que la niña o el niño explore la lámina antes de pedir el señalamiento.",
+   "source": "juega.mar.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "es_tutor_b96a8f79_297",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Antes de nada, lee el aviso de seguridad de la pantalla y comprueba el agua. Después ponte a su altura y ve nombrando lo que hacen mientras lo hacen, en frases cortas y sin preguntar nada: «agua templada», «la concha es suave», «la mano mojada». Las preguntas vienen en el paso siguiente, no aquí.",
+   "speech": "Antes de nada, lee el aviso de seguridad de la pantalla y comprueba el agua. Después ponte a su altura y ve nombrando lo que hacen mientras lo hacen, en frases cortas y sin preguntar nada: «agua templada», «la concha es suave», «la mano mojada». Las preguntas vienen en el paso siguiente, no aquí.",
+   "source": "aula.exploracion.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_bbdc010e_246",
+   "lang": "es",
+   "style": "tutor",
+   "text": "«¿Dónde está el barco grande?» (uno, dos, tres, cuatro, cinco). Un niño estira el brazo hacia la lámina sin decir nada. Tú: «¡Ahí! El barco grande.» Eso es un turno completo. Si ninguno se mueve, señalas tú: «Aquí está el barco grande», y sigues.",
+   "speech": "«¿Dónde está el barco grande?» (uno, dos, tres, cuatro, cinco). Un niño estira el brazo hacia la lámina sin decir nada. Tú: «¡Ahí! El barco grande.» Eso es un turno completo. Si ninguno se mueve, señalas tú: «Aquí está el barco grande», y sigues.",
+   "source": "aula.preguntas.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_bd562b1e_193",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Elige UNA rutina y dile siempre las mismas palabras, en el mismo orden, durante una semana. No cambies la fórmula aunque te parezca aburrida: el aburrimiento es tuyo, la previsibilidad es suya.",
+   "speech": "Elige UNA rutina y dile siempre las mismas palabras, en el mismo orden, durante una semana. No cambies la fórmula aunque te parezca aburrida: el aburrimiento es tuyo, la previsibilidad es suya.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_bd884245_160",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una instrucción en positivo se puede seguir tal cual esa misma noche. Una advertencia deja a la familia sabiendo lo que no, pero sin nada que poner en su lugar.",
+   "speech": "Una instrucción en positivo se puede seguir tal cual esa misma noche. Una advertencia deja a la familia sabiendo lo que no, pero sin nada que poner en su lugar.",
+   "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_be08825a_229",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Antes de contar, hay que notar la diferencia. Un barco grande y un barquito pequeño en la mano, uno al lado del otro: esa es la primera matemática de cero a tres. Contar «uno, dos, tres» sin esa comparación es recitar, no contar.",
+   "speech": "Antes de contar, hay que notar la diferencia. Un barco grande y un barquito pequeño en la mano, uno al lado del otro: esa es la primera matemática de cero a tres. Contar «uno, dos, tres» sin esa comparación es recitar, no contar.",
+   "source": "aula.matematicas.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_c1405f91_268",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una niña mete la mano en la bandeja y la retira de golpe. No le preguntas nada. Dices: «¡Agua! Agua templada.» Vuelve a meterla, más despacio. «Sí, templada.» A la tercera vez mete las dos manos y te mira. Esa mirada es su turno, y ya asoció la palabra a la sensación.",
+   "speech": "Una niña mete la mano en la bandeja y la retira de golpe. No le preguntas nada. Dices: «¡Agua! Agua templada.» Vuelve a meterla, más despacio. «Sí, templada.» A la tercera vez mete las dos manos y te mira. Esa mirada es su turno, y ya asoció la palabra a la sensación.",
+   "source": "aula.exploracion.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_c222391d_77",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Apretar la esponja mojada produciendo gotas de agua y sonido de lluvia suave.",
+   "speech": "Apretar la esponja mojada produciendo gotas de agua y sonido de lluvia suave.",
+   "source": "juega.mar.01/exploracion/paso/3"
+  },
+  {
+   "id": "es_tutor_c2cad933_158",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Así es: antes de los 3 años, la repetición estable es lo que permite anticipar. Cuando ya anticipa la fórmula entera, entonces es buen momento para ampliarla.",
+   "speech": "Así es: antes de los 3 años, la repetición estable es lo que permite anticipar. Cuando ya anticipa la fórmula entera, entonces es buen momento para ampliarla.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_c3541dbe_213",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No hace falta. Las rutinas dan más minutos de conversación y, lo que más importa, dan contexto: el niño está tocando lo que escucha nombrar. Un rato aparte suele ser lo primero que se cae en una semana complicada.",
+   "speech": "No hace falta. Las rutinas dan más minutos de conversación y, lo que más importa, dan contexto: el niño está tocando lo que escucha nombrar. Un rato aparte suele ser lo primero que se cae en una semana complicada.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_c6cb17d8_111",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No exigir repetición forzada: nombrar los objetos con entusiasmo y esperar cinco segundos con mirada afectuosa.",
+   "speech": "No exigir repetición forzada: nombrar los objetos con entusiasmo y esperar cinco segundos con mirada afectuosa.",
+   "source": "juega.mar.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "es_tutor_c7c7581f_259",
+   "lang": "es",
+   "style": "tutor",
+   "text": "«Lúa coge su barquito de madera.» Señalas el barco y callas. Un niño dice «¡ba!» y señala también. Tú: «Sí, el barco. El barco de Lúa.» Y solo entonces sigues con la frase siguiente. Acabas de meter la palabra justo en el instante en que él la estaba mirando.",
+   "speech": "«Lúa coge su barquito de madera.» Señalas el barco y callas. Un niño dice «¡ba!» y señala también. Tú: «Sí, el barco. El barco de Lúa.» Y solo entonces sigues con la frase siguiente. Acabas de meter la palabra justo en el instante en que él la estaba mirando.",
+   "source": "aula.conto.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_d10a80b0_99",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Preguntar: '¿Cuál es el barco grande como el de Vigo?' y acompañar con el gesto de brazos abiertos.",
+   "speech": "Preguntar: '¿Cuál es el barco grande como el de Vigo?' y acompañar con el gesto de brazos abiertos.",
+   "source": "juega.mar.01/matematicas/accion/1"
+  },
+  {
+   "id": "es_tutor_d4d1e330_304",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando una pregunta se vive como examen, la criatura deja de iniciar: espera a ver si acierta, o calla. Y quien menos habla es a quien más le cuesta arrancar, así que el examen castiga justo a quien más lo necesita. Tratar el gesto y el sonido como respuesta válida mantiene la puerta abierta para todas.",
+   "speech": "Cuando una pregunta se vive como examen, la criatura deja de iniciar: espera a ver si acierta, o calla. Y quien menos habla es a quien más le cuesta arrancar, así que el examen castiga justo a quien más lo necesita. Tratar el gesto y el sonido como respuesta válida mantiene la puerta abierta para todas.",
+   "source": "aula.preguntas.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_d5e0c864_113",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si el niño responde con un sonido o un gesto en vez de con una palabra, conviene insistir hasta que lo diga bien.",
+   "speech": "Si el niño responde con un sonido o un gesto en vez de con una palabra, conviene insistir hasta que lo diga bien.",
+   "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_d8c044d4_188",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repetir convierte la pregunta en insistencia y la rueda en aula de examen. Dar la respuesta tú, nombrando y señalando, deja la palabra dicha y la puerta abierta para la siguiente pregunta.",
+   "speech": "Repetir convierte la pregunta en insistencia y la rueda en aula de examen. Dar la respuesta tú, nombrando y señalando, deja la palabra dicha y la puerta abierta para la siguiente pregunta.",
+   "source": "aula.preguntas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_dbdf12af_209",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repetir sube el número de veces que se oye la palabra, pero no garantiza que la criatura esté mirando eso. El dedo sí: hace coincidir lo que escucha con lo que ve, y esa coincidencia es lo que fija la palabra.",
+   "speech": "Repetir sube el número de veces que se oye la palabra, pero no garantiza que la criatura esté mirando eso. El dedo sí: hace coincidir lo que escucha con lo que ve, y esa coincidencia es lo que fija la palabra.",
+   "source": "aula.conto.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_e088c730_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Dónde está el barco grande que navega en el mar?",
+   "speech": "¿Dónde está el barco grande que navega en el mar?",
+   "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_e47ad0d7_101",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Marcar el pulso despacio palmeando en las piernas o balanceando los brazos al ritmo como olas suaves.",
+   "speech": "Marcar el pulso despacio palmeando en las piernas o balanceando los brazos al ritmo como olas suaves.",
+   "source": "juega.mar.01/cancionPulso/consigna"
+  },
+  {
+   "id": "es_tutor_e76430c0_59",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señalar con el dedo la imagen del barco o coger el juguete.",
+   "speech": "Señalar con el dedo la imagen del barco o coger el juguete.",
+   "source": "juega.mar.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_e97956b1_183",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En la puerta hay treinta segundos y las manos ocupadas. Tres ideas se convierten en ninguna; una sola, concreta y de hoy, es la que llega a la bañera. El resto puede esperar a mañana.",
+   "speech": "En la puerta hay treinta segundos y las manos ocupadas. Tres ideas se convierten en ninguna; una sola, concreta y de hoy, es la que llega a la bañera. El resto puede esperar a mañana.",
+   "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_ea5e04c4_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué pasa cuando metemos la concha dentro del agua tibia?",
+   "speech": "¿Qué pasa cuando metemos la concha dentro del agua tibia?",
+   "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_eb0896f1_82",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Un metrónomo sonoro ayudaría a las criaturas con audífono a seguir mejor el pulso.",
+   "speech": "Un metrónomo sonoro ayudaría a las criaturas con audífono a seguir mejor el pulso.",
+   "source": "aula.pulso.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_ec7960a2_79",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Acomodar a los niños y niñas en círculo seguro alrededor de la bandeja de agua.",
+   "speech": "Acomodar a los niños y niñas en círculo seguro alrededor de la bandeja de agua.",
+   "source": "juega.mar.01/exploracion/paso/0"
+  },
+  {
+   "id": "es_tutor_ee8a5cfa_168",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Correcto: la palabra que llega mientras él ya está atendiendo es la que aprende. Redirigir la atención gasta el momento en conseguir que mire, y la palabra llega tarde.",
+   "speech": "Correcto: la palabra que llega mientras él ya está atendiendo es la que aprende. Redirigir la atención gasta el momento en conseguir que mire, y la palabra llega tarde.",
+   "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_f1b24c60_328",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lo que la criatura hace en el aula ocupa pocas horas; el resto del día está en casa. Una actividad que no sale del aula vale solo lo que dura. Y el mensaje funciona mejor cuando nombra algo concreto que pasó hoy —una palabra, un juego, una reacción— que cuando da un consejo general: el consejo general se olvida en la escalera.",
+   "speech": "Lo que la criatura hace en el aula ocupa pocas horas; el resto del día está en casa. Una actividad que no sale del aula vale solo lo que dura. Y el mensaje funciona mejor cuando nombra algo concreto que pasó hoy —una palabra, un juego, una reacción— que cuando da un consejo general: el consejo general se olvida en la escalera.",
+   "source": "aula.ponte_casa.01/porQueImporta"
+  },
+  {
+   "id": "es_tutor_f28ecc81_275",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sostienes los dos barcos delante de la rueda. «Mirad: este grande... y este pequeño.» Le das el pequeño a un niño y el grande a otro, y los cambiáis. Al poco uno coge el grande con las dos manos y el pequeño con una sola. Nadie dijo una palabra y la diferencia ya está hecha.",
+   "speech": "Sostienes los dos barcos delante de la rueda. «Mirad: este grande... y este pequeño.» Le das el pequeño a un niño y el grande a otro, y los cambiáis. Al poco uno coge el grande con las dos manos y el pequeño con una sola. Nadie dijo una palabra y la diferencia ya está hecha.",
+   "source": "aula.matematicas.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_f3477329_103",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Que un niño mezcle palabras de las dos lenguas en una misma frase es esperable y no indica un problema.",
+   "speech": "Que un niño mezcle palabras de las dos lenguas en una misma frase es esperable y no indica un problema.",
+   "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_f3737e4b_172",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No es conveniente: en los primeros 3 años, el mejor modelo es repetir nosotros la palabra de forma natural y afectuosa dentro de la conversación, sin correcciones forzadas.",
+   "speech": "No es conveniente: en los primeros 3 años, el mejor modelo es repetir nosotros la palabra de forma natural y afectuosa dentro de la conversación, sin correcciones forzadas.",
+   "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_fb322427_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Es necesario exigir que el bebé repita las palabras correctamente cada vez que las pronuncia mal.",
+   "speech": "Es necesario exigir que el bebé repita las palabras correctamente cada vez que las pronuncia mal.",
+   "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_fb926ee1_271",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esperando en la cola del supermercado, en vez de darle el móvil: «¡Arriba! (lo levantas en volandas) ...y abajo. Arriba... y abajo. ¿Otra vez?» Tres minutos, cero pantalla, y el niño acaba de escuchar «arriba» y «abajo» diez veces mientras su cuerpo sentía las dos cosas.",
+   "speech": "Esperando en la cola del supermercado, en vez de darle el móvil: «¡Arriba! (lo levantas en volandas) ...y abajo. Arriba... y abajo. ¿Otra vez?» Tres minutos, cero pantalla, y el niño acaba de escuchar «arriba» y «abajo» diez veces mientras su cuerpo sentía las dos cosas.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_fb9ff263_234",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lee en la pantalla el mensaje del día antes de que empiece la recogida y quédate con una sola idea. Dísela nombrando a la criatura y diciendo qué hacer esta noche, no qué evitar. Si tienes dos cosas que contar, guarda una para mañana.",
+   "speech": "Lee en la pantalla el mensaje del día antes de que empiece la recogida y quédate con una sola idea. Dísela nombrando a la criatura y diciendo qué hacer esta noche, no qué evitar. Si tienes dos cosas que contar, guarda una para mañana.",
+   "source": "aula.ponte_casa.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_fd2657f7_75",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sumergir la concha en el agua tibia juntos y observar cómo cambia su color.",
+   "speech": "Sumergir la concha en el agua tibia juntos y observar cómo cambia su color.",
+   "source": "juega.mar.01/exploracion/paso/2"
   },
   {
    "id": "gl_slow_29231976_5",
@@ -99,12 +1035,948 @@
    "source": "juega.mar.01/vocabulario/mexillon"
   },
   {
+   "id": "gl_tutor_02318cbd_180",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "É a resposta esperada nese nivel, non un apaño. A crianza demostrou que entendeu a pregunta e localizou o obxecto; a palabra chega despois, e chega antes se non se lle esixe agora.",
+   "speech": "É a resposta esperada nese nivel, non un apaño. A crianza demostrou que entendeu a pregunta e localizou o obxecto; a palabra chega despois, e chega antes se non se lle esixe agora.",
+   "source": "aula.preguntas.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_0690a29f_160",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Así é: o vídeo emite igual atenda ou non. O adulto axusta, agarda e responde ao que acaba de facer, e esa resposta é a que constrúe linguaxe nos primeiros anos.",
+   "speech": "Así é: o vídeo emite igual atenda ou non. O adulto axusta, agarda e responde ao que acaba de facer, e esa resposta é a que constrúe linguaxe nos primeiros anos.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
    "id": "gl_tutor_07aaac78_153",
    "lang": "gl",
    "style": "tutor",
    "text": "* On-das * que veñen, * on-das * que van, * no mar * de Vi-go * os pei-xes * es-tán. * Chof, * chof, * bate * a au-ga, * chas, * chas, * sobre * a a-rea.",
    "speech": "Ondas que veñen, ondas que van, no mar de Vigo os peixes están. Chof, chof, bate a auga, chas, chas, sobre a area.",
    "source": "juega.mar.01/cancionPulso"
+  },
+  {
+   "id": "gl_tutor_08de8146_101",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que un neno mesture palabras das dúas linguas nunha mesma frase é esperable e non indica un problema.",
+   "speech": "Que un neno mesture palabras das dúas linguas nunha mesma frase é esperable e non indica un problema.",
+   "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_0a6c57c8_199",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Na asemblea o pulso vese: unha barra que avanza, as túas mans nas pernas, o teu corpo. Non se escoita ningún clic. A canle auditiva queda enteira para unha soa cousa, que é a túa voz dicindo a letra.",
+   "speech": "Na asemblea o pulso vese: unha barra que avanza, as túas mans nas pernas, o teu corpo. Non se escoita ningún clic. A canle auditiva queda enteira para unha soa cousa, que é a túa voz dicindo a letra.",
+   "source": "aula.pulso.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_0a85158e_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Onde está a gaivota? Que son fai cando voa alto?",
+   "speech": "Onde está a gaivota? Que son fai cando voa alto?",
+   "source": "juega.mar.01/cuento/1/pregunta"
+  },
+  {
+   "id": "gl_tutor_0b825d19_220",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon sempre os dous obxectos xuntos e nomea a parella enteira na mesma frase: «este grande, este pequeno». Deixa que os collan e os cambien de man. Non pidas que digan cal é cal: iso volve exame o que aínda é exploración.",
+   "speech": "Pon sempre os dous obxectos xuntos e nomea a parella enteira na mesma frase: «este grande, este pequeno». Deixa que os collan e os cambien de man. Non pidas que digan cal é cal: iso volve exame o que aínda é exploración.",
+   "source": "aula.matematicas.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_0bb21a01_72",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Somerxer a cuncha na auga morna xuntos e observar como cambia a súa cor.",
+   "speech": "Somerxer a cuncha na auga morna xuntos e observar como cambia a súa cor.",
+   "source": "juega.mar.01/exploracion/paso/2"
+  },
+  {
+   "id": "gl_tutor_0d8df354_88",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Para estimular a linguaxe cómpre reservar un rato específico do día, aparte das rutinas.",
+   "speech": "Para estimular a linguaxe cómpre reservar un rato específico do día, aparte das rutinas.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_116e4a8f_260",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sostés os dous barcos diante da roda. «Mirade: este grande... e este pequeno.» Dáslle o pequeno a un neno e o grande a outro, e cambiádelos. Ao pouco un colle o grande coas dúas mans e o pequeno cunha soa. Ninguén dixo unha palabra e a diferenza xa está feita.",
+   "speech": "Sostés os dous barcos diante da roda. «Mirade: este grande... e este pequeno.» Dáslle o pequeno a un neno e o grande a outro, e cambiádelos. Ao pouco un colle o grande coas dúas mans e o pequeno cunha soa. Ninguén dixo unha palabra e a diferenza xa está feita.",
+   "source": "aula.matematicas.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_11fcee1f_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se o neno responde cun son ou un xesto en vez de cunha palabra, convén insistir ata que o diga ben.",
+   "speech": "Se o neno responde cun son ou un xesto en vez de cunha palabra, convén insistir ata que o diga ben.",
+   "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_120a84c7_160",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Correcto: a palabra que chega mentres el xa está a atender é a que aprende. Redirixir a atención gasta o momento en conseguir que mire, e a palabra chega tarde.",
+   "speech": "Correcto: a palabra que chega mentres el xa está a atender é a que aprende. Redirixir a atención gasta o momento en conseguir que mire, e a palabra chega tarde.",
+   "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_168a89d1_101",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Marcar o pulso amodo palmeando nas pernas ou movendo os brazos en compás suave coma se fósemos ondas.",
+   "speech": "Marcar o pulso amodo palmeando nas pernas ou movendo os brazos en compás suave coma se fósemos ondas.",
+   "source": "juega.mar.01/cancionPulso/consigna"
+  },
+  {
+   "id": "gl_tutor_175075ff_379",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Parte das crianzas da aula leva audiófono ou implante. Un metrónomo sonoro compite xusto coa voz que teñen que seguir, e nun aparato que xa comprime o son a competencia gáñaa o clic, que é curto e forte. Coa marca visual ninguén perde a letra, e as crianzas que oen ben tampouco perden nada: seguen o pulso coa vista e coas túas mans, que é como se aprende un ritmo a esta idade.",
+   "speech": "Parte das crianzas da aula leva audiófono ou implante. Un metrónomo sonoro compite xusto coa voz que teñen que seguir, e nun aparato que xa comprime o son a competencia gáñaa o clic, que é curto e forte. Coa marca visual ninguén perde a letra, e as crianzas que oen ben tampouco perden nada: seguen o pulso coa vista e coas túas mans, que é como se aprende un ritmo a esta idade.",
+   "source": "aula.pulso.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_17f9f8ad_174",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repetir converte a pregunta en insistencia e a roda en aula de exame. Dar a resposta ti, nomeando e sinalando, deixa a palabra dita e a porta aberta para a seguinte pregunta.",
+   "speech": "Repetir converte a pregunta en insistencia e a roda en aula de exame. Dar a resposta ti, nomeando e sinalando, deixa a palabra dita e a porta aberta para a seguinte pregunta.",
+   "source": "aula.preguntas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_188a65f3_236",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "«Onde está o barco grande?» (un, dous, tres, catro, cinco). Un neno estende o brazo cara á lámina sen dicir nada. Ti: «Aí! O barco grande.» Iso é unha quenda completa. Se ningún se move, sinalas ti: «Aquí está o barco grande», e segues.",
+   "speech": "«Onde está o barco grande?» (un, dous, tres, catro, cinco). Un neno estende o brazo cara á lámina sen dicir nada. Ti: «Aí! O barco grande.» Iso é unha quenda completa. Se ningún se move, sinalas ti: «Aquí está o barco grande», e segues.",
+   "source": "aula.preguntas.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_1990abac_191",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No intre de poñer os zapatos pola mañá: «Mira, aquí está o teu zapato azul! Onde vai? No pé! Primeiro un pé... (pausa de 5 segundos con sorriso)... e agora o outro pé! Que cóxegas nos dedos!»",
+   "speech": "No intre de poñer os zapatos pola mañá: «Mira, aquí está o teu zapato azul! Onde vai? No pé! Primeiro un pé... (pausa de 5 segundos con sorriso)... e agora o outro pé! Que cóxegas nos dedos!»",
+   "source": "academy.como_se_aprende_a_hablar.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_1c3d9aee_172",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A supervisión con auga non depende de cantas veces se fixo antes: depende de quen está hoxe na roda e de como está a auga hoxe. O aviso está na pantalla para lelo cada vez.",
+   "speech": "A supervisión con auga non depende de cantas veces se fixo antes: depende de quen está hoxe na roda e de como está a auga hoxe. O aviso está na pantalla para lelo cada vez.",
+   "source": "aula.exploracion.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_1cfa3f26_120",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Exacto: a pausa atenta é a invitación máis respectuosa para que a crianza intente comunicarse cos seus propios recursos.",
+   "speech": "Exacto: a pausa atenta é a invitación máis respectuosa para que a crianza intente comunicarse cos seus propios recursos.",
+   "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_1f9df5a3_247",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar, agocharse. E pon palabras ao movemento mentres sucede, non despois. Se a pantalla entra nalgún momento, que sexa acompañada e falada, nunca como forma de que estea quieto.",
+   "speech": "Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar, agocharse. E pon palabras ao movemento mentres sucede, non despois. Se a pantalla entra nalgún momento, que sexa acompañada e falada, nunca como forma de que estea quieto.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_225c3a62_206",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non fai falta. As rutinas dan máis minutos de conversa e, o que máis importa, dan contexto: o neno está a tocar o que escoita nomear. Un rato aparte adoita ser o primeiro que se cae nunha semana complicada.",
+   "speech": "Non fai falta. As rutinas dan máis minutos de conversa e, o que máis importa, dan contexto: o neno está a tocar o que escoita nomear. Un rato aparte adoita ser o primeiro que se cae nunha semana complicada.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_24101aa9_194",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A fala comeza moito antes da primeira palabra. O cerebro infantil constrúe a linguaxe a partir das conversas cálidas, miradas compartidas e palabras agarimosas que escoita acotío na súa familia.",
+   "speech": "A fala comeza moito antes da primeira palabra. O cerebro infantil constrúe a linguaxe a partir das conversas cálidas, miradas compartidas e palabras agarimosas que escoita acotío na súa familia.",
+   "source": "academy.como_se_aprende_a_hablar.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_2c0fd223_274",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Antes de nada, le o aviso de seguridade da pantalla e comproba a auga. Despois ponte á súa altura e vai nomeando o que fan mentres o fan, en frases curtas e sen preguntar nada: «auga morna», «a cuncha é suave», «a man mollada». As preguntas veñen no paso seguinte, non aquí.",
+   "speech": "Antes de nada, le o aviso de seguridade da pantalla e comproba a auga. Despois ponte á súa altura e vai nomeando o que fan mentres o fan, en frases curtas e sen preguntar nada: «auga morna», «a cuncha é suave», «a man mollada». As preguntas veñen no paso seguinte, non aquí.",
+   "source": "aula.exploracion.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_2d808757_193",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chegar ao final non é o obxectivo. Acelerar quita xusto o que fai que a páxina sirva, que son as pausas. Mellor quedarse na páxina que xa lles interesa, ou pechar o conto e seguir coa asemblea.",
+   "speech": "Chegar ao final non é o obxectivo. Acelerar quita xusto o que fai que a páxina sirva, que son as pausas. Mellor quedarse na páxina que xa lles interesa, ou pechar o conto e seguir coa asemblea.",
+   "source": "aula.conto.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_2e23d356_172",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sen algo pequeno ao lado, «grande» non se pode notar: é só un son que acompaña a un obxecto. A noción aparece na comparación, así que os dous teñen que estar á vista á vez.",
+   "speech": "Sen algo pequeno ao lado, «grande» non se pode notar: é só un son que acompaña a un obxecto. A noción aparece na comparación, así que os dous teñen que estar á vista á vez.",
+   "source": "aula.matematicas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_2e575c8e_231",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O cerebro do bebé precisa escoitar miles de repeticións significativas nun clima afectivo seguro. Cando respondemos aos seus balbuceos e xestos coma se fosen palabras reais, fortalecemos os circuítos neurais da comunicación social.",
+   "speech": "O cerebro do bebé precisa escoitar miles de repeticións significativas nun clima afectivo seguro. Cando respondemos aos seus balbuceos e xestos coma se fosen palabras reais, fortalecemos os circuítos neurais da comunicación social.",
+   "source": "academy.como_se_aprende_a_hablar.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_335da46c_64",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Colocar un barco grande e un barquiño pequeno diante da crianza.",
+   "speech": "Colocar un barco grande e un barquiño pequeno diante da crianza.",
+   "source": "juega.mar.01/matematicas/accion/0"
+  },
+  {
+   "id": "gl_tutor_34fe85c2_87",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se a roda se distrae a media páxina, o mellor é acelerar para chegar ao final do conto.",
+   "speech": "Se a roda se distrae a media páxina, o mellor é acelerar para chegar ao final do conto.",
+   "source": "aula.conto.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_372a3798_194",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Antes dos 3 anos a linguaxe constrúese movéndose: collendo, tirando, subindo ao colo, chocando as mans. A pantalla dá imaxe e son, pero non dá o que fai falta, que é un corpo respondendo ao seu.",
+   "speech": "Antes dos 3 anos a linguaxe constrúese movéndose: collendo, tirando, subindo ao colo, chocando as mans. A pantalla dá imaxe e son, pero non dá o que fai falta, que é un corpo respondendo ao seu.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_3b588b92_53",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que pasa cando metemos a cuncha dentro da auga morna?",
+   "speech": "Que pasa cando metemos a cuncha dentro da auga morna?",
+   "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_3e5ed832_191",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non dirixas: segue. Mira o que el está a mirar, nómao, e cala cinco segundos contando na túa cabeza. Devolve o que faga —un son, un xesto, unha ollada— coma se fose unha resposta, porque o é.",
+   "speech": "Non dirixas: segue. Mira o que el está a mirar, nómao, e cala cinco segundos contando na túa cabeza. Devolve o que faga —un son, un xesto, unha ollada— coma se fose unha resposta, porque o é.",
+   "source": "academy.turnos_atencion_conjunta.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_3f1b08dd_70",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Estimular o tacto, a propiocepción e a diferenza entre seco e mollado.",
+   "speech": "Estimular o tacto, a propiocepción e a diferenza entre seco e mollado.",
+   "source": "juega.mar.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "gl_tutor_4257f503_120",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A gata Lúa colle o seu barquiño de madeira e mira a ría de Vigo. A auga brilla baixo o sol e o aire cheira a mar fresco.",
+   "speech": "A gata Lúa colle o seu barquiño de madeira e mira a ría de Vigo. A auga brilla baixo o sol e o aire cheira a mar fresco.",
+   "source": "juega.mar.01/cuento/0/texto"
+  },
+  {
+   "id": "gl_tutor_44103d4c_168",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Na porta hai trinta segundos e as mans ocupadas. Tres ideas convértense en ningunha; unha soa, concreta e de hoxe, é a que chega á bañeira. O resto pode esperar a mañá.",
+   "speech": "Na porta hai trinta segundos e as mans ocupadas. Tres ideas convértense en ningunha; unha soa, concreta e de hoxe, é a que chega á bañeira. O resto pode esperar a mañá.",
+   "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_444b91a0_75",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ofrecer primeiro unha cuncha seca para acariciar a súa superficie estriada.",
+   "speech": "Ofrecer primeiro unha cuncha seca para acariciar a súa superficie estriada.",
+   "source": "juega.mar.01/exploracion/paso/1"
+  },
+  {
+   "id": "gl_tutor_4bdda95a_284",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando unha pregunta se vive como exame, a crianza deixa de iniciar: espera a ver se acerta, ou cala. E quen menos fala é a quen máis lle custa arrancar, así que o exame castiga xusto a quen máis o necesita. Tratar o xesto e o son como resposta válida mantén a porta aberta para todas.",
+   "speech": "Cando unha pregunta se vive como exame, a crianza deixa de iniciar: espera a ver se acerta, ou cala. E quen menos fala é a quen máis lle custa arrancar, así que o exame castiga xusto a quen máis o necesita. Tratar o xesto e o son como resposta válida mantén a porta aberta para todas.",
+   "source": "aula.preguntas.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_5015d7d7_205",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Un neno que medra en dúas linguas non aprende menos: reparte o que sabe entre as dúas. Sumando as dúas, ten tanto vocabulario coma calquera outro. Contar só unha delas é o que fai parecer que vai atrasado.",
+   "speech": "Un neno que medra en dúas linguas non aprende menos: reparte o que sabe entre as dúas. Sumando as dúas, ten tanto vocabulario coma calquera outro. Contar só unha delas é o que fai parecer que vai atrasado.",
+   "source": "academy.bilinguismo_y_cultura.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_5084d3d7_72",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se unha crianza perde o compás, convén parar a canción e volver empezar.",
+   "speech": "Se unha crianza perde o compás, convén parar a canción e volver empezar.",
+   "source": "aula.pulso.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_517fadbd_143",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Así é: antes dos 3 anos, a repetición estable é o que permite anticipar. Cando xa anticipa a fórmula enteira, entón é bo momento para ampliala.",
+   "speech": "Así é: antes dos 3 anos, a repetición estable é o que permite anticipar. Cando xa anticipa a fórmula enteira, entón é bo momento para ampliala.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_53591df9_452",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A diferenza non está en que a pantalla sexa mala: está en que non devolve. Un vídeo di «casa» tanto se o neno mira como se marcha. Unha persoa fai unha pausa, repite, sinala, celebra. Esa resposta continxente —chega porque el fixo algo— é a que non se pode substituír. As recomendacións pediátricas internacionais coinciden en desaconsellar o uso de pantallas antes dos 2 anos e limitalo despois; consulta co teu pediatra o que corresponda ao teu caso.",
+   "speech": "A diferenza non está en que a pantalla sexa mala: está en que non devolve. Un vídeo di «casa» tanto se o neno mira como se marcha. Unha persoa fai unha pausa, repite, sinala, celebra. Esa resposta continxente —chega porque el fixo algo— é a que non se pode substituír. As recomendacións pediátricas internacionais coinciden en desaconsellar o uso de pantallas antes dos 2 anos e limitalo despois; consulta co teu pediatra o que corresponda ao teu caso.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_54cd33d6_221",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Antes de contar, hai que notar a diferenza. Un barco grande e un barquiño pequeno na man, un ao lado do outro: iso é a primeira matemática de cero a tres. Contar «un, dous, tres» sen esa comparación é recitar, non contar.",
+   "speech": "Antes de contar, hai que notar a diferenza. Un barco grande e un barquiño pequeno na man, un ao lado do outro: iso é a primeira matemática de cero a tres. Contar «un, dous, tres» sen esa comparación é recitar, non contar.",
+   "source": "aula.matematicas.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_556cc8be_144",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Correcto: é propio de quen medra con dúas linguas e vaise separando só. O bo modelo é responder enteiro na túa lingua, sen corrixir nin sinalar.",
+   "speech": "Correcto: é propio de quen medra con dúas linguas e vaise separando só. O bo modelo é responder enteiro na túa lingua, sen corrixir nin sinalar.",
+   "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_567dee5c_114",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Hoxe na aula navegamos polo mar de Vigo coa gata Lúa! Aprendemos a cantar as ondas e descubrimos cunchas e barcos.",
+   "speech": "Hoxe na aula navegamos polo mar de Vigo coa gata Lúa! Aprendemos a cantar as ondas e descubrimos cunchas e barcos.",
+   "source": "juega.mar.01/puenteCasa/mensajeFamilias"
+  },
+  {
+   "id": "gl_tutor_56f280bd_46",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A quen saúda Lúa antes de marchar para a casa?",
+   "speech": "A quen saúda Lúa antes de marchar para a casa?",
+   "source": "juega.mar.01/cuento/2/pregunta"
+  },
+  {
+   "id": "gl_tutor_57972ddc_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Un vídeo educativo con vocabulario ensina menos que un adulto que responde ao que fai o neno.",
+   "speech": "Un vídeo educativo con vocabulario ensina menos que un adulto que responde ao que fai o neno.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_594c9389_215",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Le na pantalla a mensaxe do día antes de que empece a recollida e quédate cunha soa idea. Dilla nomeando á crianza e dicindo que facer esta noite, non que evitar. Se tes dúas cousas que contar, garda unha para mañá.",
+   "speech": "Le na pantalla a mensaxe do día antes de que empece a recollida e quédate cunha soa idea. Dilla nomeando á crianza e dicindo que facer esta noite, non que evitar. Se tes dúas cousas que contar, garda unha para mañá.",
+   "source": "aula.ponte_casa.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_5d242dc6_194",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repetir sobe o número de veces que se oe a palabra, pero non garante que a crianza estea a mirar iso. O dedo si: fai coincidir o que escoita co que ve, e esa coincidencia é o que fixa a palabra.",
+   "speech": "Repetir sobe o número de veces que se oe a palabra, pero non garante que a crianza estea a mirar iso. O dedo si: fai coincidir o que escoita co que ve, e esa coincidencia é o que fixa a palabra.",
+   "source": "aula.conto.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_61e6ed30_161",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Axustar as mans ao tamaño é unha resposta ao tamaño, e chega moito antes que a palabra. Vela é máis fiable que preguntar, porque non depende de que saiba dicilo.",
+   "speech": "Axustar as mans ao tamaño é unha resposta ao tamaño, e chega moito antes que a palabra. Vela é máis fiable que preguntar, porque non depende de que saiba dicilo.",
+   "source": "aula.matematicas.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_6334102e_92",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Durante a exploración convén ir preguntando «como está a auga?» para que nomeen a sensación.",
+   "speech": "Durante a exploración convén ir preguntando «como está a auga?» para que nomeen a sensación.",
+   "source": "aula.exploracion.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_64f9153f_66",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Aproveitar para vincular a palabra coa sensación térmica e táctil.",
+   "speech": "Aproveitar para vincular a palabra coa sensación térmica e táctil.",
+   "source": "juega.mar.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_6ca6a6dd_313",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O que a crianza fai na aula ocupa poucas horas; o resto do día está na casa. Unha actividade que non sae da aula vale só o que dura. E a mensaxe funciona mellor cando nomea algo concreto que pasou hoxe —unha palabra, un xogo, unha reacción— que cando dá un consello xeral: o consello xeral esquécese na escaleira.",
+   "speech": "O que a crianza fai na aula ocupa poucas horas; o resto do día está na casa. Unha actividade que non sae da aula vale só o que dura. E a mensaxe funciona mellor cando nomea algo concreto que pasou hoxe —unha palabra, un xogo, unha reacción— que cando dá un consello xeral: o consello xeral esquécese na escaleira.",
+   "source": "aula.ponte_casa.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_6d03d2d9_246",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha nena mete a man na bandexa e retírala de golpe. Non lle preguntas nada. Dis: «Auga! Auga morna.» Volve metela, máis amodo. «Si, morna.» Á terceira vez mete as dúas mans e mírate. Esa ollada é a súa quenda, e xa asociou a palabra á sensación.",
+   "speech": "Unha nena mete a man na bandexa e retírala de golpe. Non lle preguntas nada. Dis: «Auga! Auga morna.» Volve metela, máis amodo. «Si, morna.» Á terceira vez mete as dúas mans e mírate. Esa ollada é a súa quenda, e xa asociou a palabra á sensación.",
+   "source": "aula.exploracion.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_6f8664e9_79",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Un metrónomo sonoro axudaría ás crianzas con audiófono a seguir mellor o pulso.",
+   "speech": "Un metrónomo sonoro axudaría ás crianzas con audiófono a seguir mellor o pulso.",
+   "source": "aula.pulso.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_6fc5e868_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Onde está o barco grande que navega no mar?",
+   "speech": "Onde está o barco grande que navega no mar?",
+   "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_7014d41a_71",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se ninguén responde á pregunta, convén repetila máis alto e máis amodo.",
+   "speech": "Se ninguén responde á pregunta, convén repetila máis alto e máis amodo.",
+   "source": "aula.preguntas.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_7072cfc8_46",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que ten Lúa na man? Mirade como brilla a auga!",
+   "speech": "Que ten Lúa na man? Mirade como brilla a auga!",
+   "source": "juega.mar.01/cuento/0/pregunta"
+  },
+  {
+   "id": "gl_tutor_70aa69c5_108",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esperar en silencio durante uns segundos despois de falar axuda a que o neno tome a iniciativa comunicativa.",
+   "speech": "Esperar en silencio durante uns segundos despois de falar axuda a que o neno tome a iniciativa comunicativa.",
+   "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_713915f5_160",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Parar rompe o pulso para toda a roda por unha soa persoa. Agrandar o xesto e seguir deixa que se volva enganchar mirando, que é o que fai calquera a esta idade.",
+   "speech": "Parar rompe o pulso para toda a roda por unha soa persoa. Agrandar o xesto e seguir deixa que se volva enganchar mirando, que é o que fai calquera a esta idade.",
+   "source": "aula.pulso.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_73af262f_90",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Preguntar: 'Cal é o barco grande coma o de Vigo?' e acompañar co xesto dos brazos abertos.",
+   "speech": "Preguntar: 'Cal é o barco grande coma o de Vigo?' e acompañar co xesto dos brazos abertos.",
+   "source": "juega.mar.01/matematicas/accion/1"
+  },
+  {
+   "id": "gl_tutor_7a6c19bf_217",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "«Hoxe Xiana meteu as mans na auga e dixo ¡ba! polo barco. Esta noite, na bañeira, dille barco cando o colla e agarda un pouco a ver que fai.» Trinta segundos, unha soa idea, e algo que se pode facer sen preparar nada.",
+   "speech": "«Hoxe Xiana meteu as mans na auga e dixo ¡ba! polo barco. Esta noite, na bañeira, dille barco cando o colla e agarda un pouco a ver que fai.» Trinta segundos, unha soa idea, e algo que se pode facer sen preparar nada.",
+   "source": "aula.ponte_casa.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_7cea2352_199",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Nomea en voz alta o que o teu bebé está a mirar neste intre. Despois de facerlle unha pregunta ou dicir unha palabra, garda un silencio atento de 5 segundos para concederlle a súa quenda de resposta.",
+   "speech": "Nomea en voz alta o que o teu bebé está a mirar neste intre. Despois de facerlle unha pregunta ou dicir unha palabra, garda un silencio atento de 5 segundos para concederlle a súa quenda de resposta.",
+   "source": "academy.como_se_aprende_a_hablar.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_7d5a2f43_45",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que animal voa polo ceo e fai son de gaivota?",
+   "speech": "Que animal voa polo ceo e fai son de gaivota?",
+   "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_832925df_155",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non é conveniente: nos primeiros 3 anos, o mellor modelo é repetir nós a palabra de xeito natural e agarimoso dentro da conversa, sen correccións forzadas.",
+   "speech": "Non é conveniente: nos primeiros 3 anos, o mellor modelo é repetir nós a palabra de xeito natural e agarimoso dentro da conversa, sen correccións forzadas.",
+   "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_86da1eab_85",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canta máis información se lle dea á familia na porta, mellor aproveita o día na casa.",
+   "speech": "Canta máis información se lle dea á familia na porta, mellor aproveita o día na casa.",
+   "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_88dbf4f1_236",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No baño, cada noite a mesma secuencia: «Auga quentiña... (mete o pé) ...quentiña! Agora as mans. Unha man... e a outra man. E agora, a barriga! Fóra a auga, dentro a toalla.» Á terceira noite estirará o pé antes de que digas «quentiña».",
+   "speech": "No baño, cada noite a mesma secuencia: «Auga quentiña... (mete o pé) ...quentiña! Agora as mans. Unha man... e a outra man. E agora, a barriga! Fóra a auga, dentro a toalla.» Á terceira noite estirará o pé antes de que digas «quentiña».",
+   "source": "academy.rutinas_bano_de_lenguaje.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_8912f7a7_71",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Celebrar calquera aproximación vocal ou xesto de abrir as mans coma ás.",
+   "speech": "Celebrar calquera aproximación vocal ou xesto de abrir as mans coma ás.",
+   "source": "juega.mar.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_89b3358a_88",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se un neno tarda en falar, o primeiro que convén facer é deixar unha soa lingua na casa.",
+   "speech": "Se un neno tarda en falar, o primeiro que convén facer é deixar unha soa lingua na casa.",
+   "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_8bddffd0_82",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dar tempo para que a nena ou o neno explore a lámina antes de pedir o sinalamento.",
+   "speech": "Dar tempo para que a nena ou o neno explore a lámina antes de pedir o sinalamento.",
+   "source": "juega.mar.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_8bf6da93_116",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repetir as mesmas palabras todos os días na mesma rutina axuda máis que variar o vocabulario para que non se aburra.",
+   "speech": "Repetir as mesmas palabras todos os días na mesma rutina axuda máis que variar o vocabulario para que non se aburra.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_8cb03fe3_74",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Apertar a esponxa mollada producindo pingas de auga e son de choiva suave.",
+   "speech": "Apertar a esponxa mollada producindo pingas de auga e son de choiva suave.",
+   "source": "juega.mar.01/exploracion/paso/3"
+  },
+  {
+   "id": "gl_tutor_8dfcc8ec_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "É mellor nomear o que o neno xa está a mirar que dirixir a súa atención cara ao que queremos ensinarlle.",
+   "speech": "É mellor nomear o que o neno xa está a mirar que dirixir a súa atención cara ao que queremos ensinarlle.",
+   "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_8e3b9291_256",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A nena di: «Quero o leite, mamá, dáme máis». A tentación é corrixir a mestura. En vez diso, respóndelle enteiro na túa lingua, dándolle o modelo sen sinalar o erro: «Queres máis leite? Aquí tes o leite.» Non lle dis que estivo mal; dáslle a frase completa.",
+   "speech": "A nena di: «Quero o leite, mamá, dáme máis». A tentación é corrixir a mestura. En vez diso, respóndelle enteiro na túa lingua, dándolle o modelo sen sinalar o erro: «Queres máis leite? Aquí tes o leite.» Non lle dis que estivo mal; dáslle a frase completa.",
+   "source": "academy.bilinguismo_y_cultura.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_8f1e6401_100",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Nun paseo pola praia ou polo porto de Bouzas ou Samil, sinalar as gaivotas que descansan nas rochas.",
+   "speech": "Nun paseo pola praia ou polo porto de Bouzas ou Samil, sinalar as gaivotas que descansan nas rochas.",
+   "source": "juega.mar.01/puenteCasa/act/1"
+  },
+  {
+   "id": "gl_tutor_92e29473_273",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A palabra que se aprende é a que chega mentres a crianza xa está a mirar iso. Non a que se di primeiro nin a que se repite máis: a que coincide. O dedo é o que fai coincidir; sen el, a túa voz vai por un lado e a atención da roda por outro, e a páxina pasa sen deixar nada.",
+   "speech": "A palabra que se aprende é a que chega mentres a crianza xa está a mirar iso. Non a que se di primeiro nin a que se repite máis: a que coincide. O dedo é o que fai coincidir; sen el, a túa voz vai por un lado e a atención da roda por outro, e a páxina pasa sen deixar nada.",
+   "source": "aula.conto.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_96f3ad6a_207",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Preguntar pídelle á crianza a palabra que aínda non ten e interrompe o que está a facer. Nomear ti mentres ela toca dálle a palabra no intre exacto; pedirlla vén despois, e a maioría das veces nin fai falta.",
+   "speech": "Preguntar pídelle á crianza a palabra que aínda non ten e interrompe o que está a facer. Nomear ti mentres ela toca dálle a palabra no intre exacto; pedirlla vén despois, e a maioría das veces nin fai falta.",
+   "source": "aula.exploracion.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_982055cf_308",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha familia non ten media hora libre para «facer exercicios de linguaxe», pero si ten un cambio de cueiro, unha cea e un camiño ata a escola. Nesas tres cousas hai máis minutos de conversa cós que daría calquera actividade engadida, e ademais chegan cargadas de sentido: o neno está a vivir o que oe nomear.",
+   "speech": "Unha familia non ten media hora libre para «facer exercicios de linguaxe», pero si ten un cambio de cueiro, unha cea e un camiño ata a escola. Nesas tres cousas hai máis minutos de conversa cós que daría calquera actividade engadida, e ademais chegan cargadas de sentido: o neno está a vivir o que oe nomear.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_9a6a19d6_252",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non. O bilingüismo non causa atraso, así que retirar unha lingua non resolve nada e pode cortar a comunicación cos avós. Se hai preocupación pola fala, o paso é falalo co pediatra, que valorará o caso; esta app é educativa e non substitúe esa consulta.",
+   "speech": "Non. O bilingüismo non causa atraso, así que retirar unha lingua non resolve nada e pode cortar a comunicación cos avós. Se hai preocupación pola fala, o paso é falalo co pediatra, que valorará o caso; esta app é educativa e non substitúe esa consulta.",
+   "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_9e649c83_200",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As rutinas repítense todos os días coas mesmas palabras e na mesma orde. Esa repetición previsible é o que lle permite ao bebé adiviñar o que vén despois, e adiviñar é o primeiro paso para comprender.",
+   "speech": "As rutinas repítense todos os días coas mesmas palabras e na mesma orde. Esa repetición previsible é o que lle permite ao bebé adiviñar o que vén despois, e adiviñar é o primeiro paso para comprender.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_a11e727b_111",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non esixir repetición forzada: nomear os obxectos con entusiasmo e esperar cinco segundos con mirada agarimosa.",
+   "speech": "Non esixir repetición forzada: nomear os obxectos con entusiasmo e esperar cinco segundos con mirada agarimosa.",
+   "source": "juega.mar.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "gl_tutor_a1a51724_188",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xusto ao revés: o clic compite coa voz na mesma canle, e nun audiófono ou nun implante o son curto e forte tápaa. Por iso aquí o pulso é visual e a canle auditiva queda libre para a letra.",
+   "speech": "Xusto ao revés: o clic compite coa voz na mesma canle, e nun audiófono ou nun implante o son curto e forte tápaa. Por iso aquí o pulso é visual e a canle auditiva queda libre para a letra.",
+   "source": "aula.pulso.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_a85c28d7_66",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Acomodar ás crianzas en círculo seguro arredor da bandexa de auga.",
+   "speech": "Acomodar ás crianzas en círculo seguro arredor da bandexa de auga.",
+   "source": "juega.mar.01/exploracion/paso/0"
+  },
+  {
+   "id": "gl_tutor_aa067008_276",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Está a mirar o can pola fiestra. En vez de «mira o coche», dis: «O can! Ves o can?» (un, dous, tres, catro, cinco). El fai «¡eh!» e sinala. Ti: «Si! O can. Que fai o can?» (un, dous, tres, catro, cinco). Acabades de ter unha conversa de catro quendas sen unha soa palabra del.",
+   "speech": "Está a mirar o can pola fiestra. En vez de «mira o coche», dis: «O can! Ves o can?» (un, dous, tres, catro, cinco). El fai «¡eh!» e sinala. Ti: «Si! O can. Que fai o can?» (un, dous, tres, catro, cinco). Acabades de ter unha conversa de catro quendas sen unha soa palabra del.",
+   "source": "academy.turnos_atencion_conjunta.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_ab1b6db4_84",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Introdución visual e manipulativa ás nocións de magnitude mediante barcos e cunchas.",
+   "speech": "Introdución visual e manipulativa ás nocións de magnitude mediante barcos e cunchas.",
+   "source": "juega.mar.01/matematicas/descripcion"
+  },
+  {
+   "id": "gl_tutor_ab5eb081_358",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "En Vigo moitas familias falan galego cos avós e castelán na rúa, e aparece a dúbida de se convén «simplificar» e deixar unha soa lingua. Renunciar ao galego da casa non acelera nada e custa algo que non se recupera: a lingua na que esa familia conta as súas cousas. O que si importa é a cantidade e a calidade do que escoita en cada lingua, non cantas sexan.",
+   "speech": "En Vigo moitas familias falan galego cos avós e castelán na rúa, e aparece a dúbida de se convén «simplificar» e deixar unha soa lingua. Renunciar ao galego da casa non acelera nada e custa algo que non se recupera: a lingua na que esa familia conta as súas cousas. O que si importa é a cantidade e a calidade do que escoita en cada lingua, non cantas sexan.",
+   "source": "academy.bilinguismo_y_cultura.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_ac2acf54_118",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lúa atopa unha cuncha fermosa na area de Samil. Achégaa á orella e sorrí con agarimo. O mar de Vigo está cheo de vida!",
+   "speech": "Lúa atopa unha cuncha fermosa na area de Samil. Achégaa á orella e sorrí con agarimo. O mar de Vigo está cheo de vida!",
+   "source": "juega.mar.01/cuento/2/texto"
+  },
+  {
+   "id": "gl_tutor_ad06987b_53",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinalar co dedo a imaxe do barco ou coller o xoguete.",
+   "speech": "Sinalar co dedo a imaxe do barco ou coller o xoguete.",
+   "source": "juega.mar.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_b31c8fed_286",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Abres o paso da canción. A barra da pantalla avanza e ti dás dúas palmadas nas pernas por compás, mirando á roda. Unha nena mira as túas mans e empeza a balancearse fóra de tempo. Non a corrixes: agrandas o xesto, achégaste un pouco e segues cantando. Ao terceiro compás xa vai contigo.",
+   "speech": "Abres o paso da canción. A barra da pantalla avanza e ti dás dúas palmadas nas pernas por compás, mirando á roda. Unha nena mira as túas mans e empeza a balancearse fóra de tempo. Non a corrixes: agrandas o xesto, achégaste un pouco e segues cantando. Ao terceiro compás xa vai contigo.",
+   "source": "aula.pulso.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_b5324184_290",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "«Morno», «suave», «mollado» non se explican: só se entenden tocando. Se a palabra coincide coa sensación, a crianza asóciaas sen esforzo; se chega antes ou despois, queda como un son solto. Esta é a parte da asemblea onde esa coincidencia é máis fácil de conseguir, porque a sensación dura.",
+   "speech": "«Morno», «suave», «mollado» non se explican: só se entenden tocando. Se a palabra coincide coa sensación, a crianza asóciaas sen esforzo; se chega antes ou despois, queda como un son solto. Esta é a parte da asemblea onde esa coincidencia é máis fácil de conseguir, porque a sensación dura.",
+   "source": "aula.exploracion.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_b57e6d9f_280",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A parella de palabras opostas —grande e pequeno, moito e pouco, dentro e fóra— só significa algo cando as dúas se ven á vez. Cun obxecto só, «grande» non ten con que compararse e queda como un adxectivo calquera. Dous obxectos na mesma man é o que converte a palabra nunha noción.",
+   "speech": "A parella de palabras opostas —grande e pequeno, moito e pouco, dentro e fóra— só significa algo cando as dúas se ven á vez. Cun obxecto só, «grande» non ten con que compararse e queda como un adxectivo calquera. Dous obxectos na mesma man é o que converte a palabra nunha noción.",
+   "source": "aula.matematicas.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_b8f2d5a4_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Na hora do baño na casa, xogar con vasos de plástico a encher e baleirar auga cantando a canción das ondas.",
+   "speech": "Na hora do baño na casa, xogar con vasos de plástico a encher e baleirar auga cantando a canción das ondas.",
+   "source": "juega.mar.01/puenteCasa/act/0"
+  },
+  {
+   "id": "gl_tutor_bdf619b2_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "É necesario esixir que o bebé repita as palabras correctamente cada vez que as pronuncia mal.",
+   "speech": "É necesario esixir que o bebé repita as palabras correctamente cada vez que as pronuncia mal.",
+   "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_be66f4f4_47",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pronunciar 'gaivota' ou imitar o seu son e voo.",
+   "speech": "Pronunciar 'gaivota' ou imitar o seu son e voo.",
+   "source": "juega.mar.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_beb84189_204",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pregunta e cala cinco segundos contando na túa cabeza. Se ninguén responde, non repitas a pregunta: dálle a resposta ti nomeando e sinalando, e pasa á seguinte. Nunca pidas que repitan a palabra ben dita.",
+   "speech": "Pregunta e cala cinco segundos contando na túa cabeza. Se ninguén responde, non repitas a pregunta: dálle a resposta ti nomeando e sinalando, e pasa á seguinte. Nunca pidas que repitan a palabra ben dita.",
+   "source": "aula.preguntas.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_c1509fbb_94",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que a crianza colla o obxecto grande coas dúas mans xa indica que notou a diferenza de tamaño.",
+   "speech": "Que a crianza colla o obxecto grande coas dúas mans xa indica que notou a diferenza de tamaño.",
+   "source": "aula.matematicas.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_c1b82563_223",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha pregunta na asemblea non serve para saber se a crianza sabe. Serve para abrirlle unha quenda. Por iso a resposta esperada nas preguntas de nivel un é sinalar co dedo: iso xa é responder, e conta igual que unha palabra.",
+   "speech": "Unha pregunta na asemblea non serve para saber se a crianza sabe. Serve para abrirlle unha quenda. Por iso a resposta esperada nas preguntas de nivel un é sinalar co dedo: iso xa é responder, e conta igual que unha palabra.",
+   "source": "aula.preguntas.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_c87e4f9e_245",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Marca o pulso coas palmas nas pernas ou balanceando os brazos, amplo e lento, e mira á roda mentres o fas. A túa voz vai por riba, non por debaixo. Se alguén se perde, non pares a canción: esaxera o xesto e segue, que o pulso recupérase mirando.",
+   "speech": "Marca o pulso coas palmas nas pernas ou balanceando os brazos, amplo e lento, e mira á roda mentres o fas. A túa voz vai por riba, non por debaixo. Se alguén se perde, non pares a canción: esaxera o xesto e segue, que o pulso recupérase mirando.",
+   "source": "aula.pulso.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_cafac056_80",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Para traballar «grande» abonda con ensinar o obxecto grande e repetir a palabra.",
+   "speech": "Para traballar «grande» abonda con ensinar o obxecto grande e repetir a palabra.",
+   "source": "aula.matematicas.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_cea72641_249",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Aviso de seguridade obrigatorio: Esta actividade require presenza e supervisión docente constante. Asegúrese de que todas as cunchas superen os 5 cm de diámetro e non presenten bordos cortantes nin estelas para evitar calquera risco de atragoamento.",
+   "speech": "Aviso de seguridade obrigatorio: Esta actividade require presenza e supervisión docente constante. Asegúrese de que todas as cunchas superen os 5 cm de diámetro e non presenten bordos cortantes nin estelas para evitar calquera risco de atragoamento.",
+   "source": "juega.mar.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "gl_tutor_cf68d2e8_230",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Le unha frase, sinala co dedo o que acabas de nomear, e cala. Conta cinco na túa cabeza mirando á roda. O que apareza nese silencio —un son, un dedo que apunta, unha ollada a ti— é a súa quenda: devólvea nomeándoa antes de seguir.",
+   "speech": "Le unha frase, sinala co dedo o que acabas de nomear, e cala. Conta cinco na túa cabeza mirando á roda. O que apareza nese silencio —un son, un dedo que apunta, unha ollada a ti— é a súa quenda: devólvea nomeándoa antes de seguir.",
+   "source": "aula.conto.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_cfec7947_84",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Para que un bebé se concentre no que lle dis, o mellor é que estea quieto e sentado.",
+   "speech": "Para que un bebé se concentre no que lle dis, o mellor é que estea quieto e sentado.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_d00883b6_181",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha conversa non empeza cando o neno di a primeira palabra: empeza cando el e ti estades a mirar o mesmo e cada un agarda a súa quenda. Iso xa é falar, aínda que ninguén diga nada.",
+   "speech": "Unha conversa non empeza cando o neno di a primeira palabra: empeza cando el e ti estades a mirar o mesmo e cada un agarda a súa quenda. Iso xa é falar, aínda que ninguén diga nada.",
+   "source": "academy.turnos_atencion_conjunta.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_d06711ee_264",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando o adulto segue coa mirada o que lle interesa ao neno e nomea iso —non o que o adulto quería ensinar—, a palabra chega no intre exacto en que o neno está a prestar atención. Esa coincidencia entre o que mira e o que escoita é o que fai que a palabra se pegue.",
+   "speech": "Cando o adulto segue coa mirada o que lle interesa ao neno e nomea iso —non o que o adulto quería ensinar—, a palabra chega no intre exacto en que o neno está a prestar atención. Esa coincidencia entre o que mira e o que escoita é o que fai que a palabra se pegue.",
+   "source": "academy.turnos_atencion_conjunta.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_d15a1855_129",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Polo ceo cruza unha gaivota branca que fai: Aaaah, aaah! Na beira da auga hai cunchas grandes e lisas que gardan o son das ondas.",
+   "speech": "Polo ceo cruza unha gaivota branca que fai: Aaaah, aaah! Na beira da auga hai cunchas grandes e lisas que gardan o son das ondas.",
+   "source": "juega.mar.01/cuento/1/texto"
+  },
+  {
+   "id": "gl_tutor_d6f93250_189",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escolle UNHA rutina e dille sempre as mesmas palabras, na mesma orde, durante unha semana. Non cambies a fórmula aínda que che pareza aburrida: o aburrimento é teu, a previsibilidade é del.",
+   "speech": "Escolle UNHA rutina e dille sempre as mesmas palabras, na mesma orde, durante unha semana. Non cambies a fórmula aínda que che pareza aburrida: o aburrimento é teu, a previsibilidade é del.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_d83e643c_231",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fala cada un na lingua na que te sintas cómodo e sexas ti mesmo. Se mestura palabras das dúas nunha mesma frase, non o corrixas: é normal e pasa. E busca que en cada lingua haxa alguén que lle fale moito, non só que a oia de fondo.",
+   "speech": "Fala cada un na lingua na que te sintas cómodo e sexas ti mesmo. Se mestura palabras das dúas nunha mesma frase, non o corrixas: é normal e pasa. E busca que en cada lingua haxa alguén que lle fale moito, non só que a oia de fondo.",
+   "source": "academy.bilinguismo_y_cultura.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_dcca94d5_156",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha instrución en positivo pódese seguir tal cal esa mesma noite. Unha advertencia deixa á familia sabendo o que non, pero sen nada que poñer no seu lugar.",
+   "speech": "Unha instrución en positivo pódese seguir tal cal esa mesma noite. Unha advertencia deixa á familia sabendo o que non, pero sen nada que poñer no seu lugar.",
+   "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_dd113050_191",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A familia recolle con présa, cun abrigo nunha man e unha mochila na outra. O que lle chega non é o resumo da asemblea: é unha frase. Elixe cal, e dilla completa antes de que saian pola porta.",
+   "speech": "A familia recolle con présa, cun abrigo nunha man e unha mochila na outra. O que lle chega non é o resumo da asemblea: é unha frase. Elixe cal, e dilla completa antes de que saian pola porta.",
+   "source": "aula.ponte_casa.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_de86ea06_78",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Convén dicirlle á familia que facer esta noite, e non só o que non debe facer.",
+   "speech": "Convén dicirlle á familia que facer esta noite, e non só o que non debe facer.",
+   "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_e0ef9742_166",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non: nestas idades a atención vai pegada ao movemento. As palabras que se aprenden mellor son as que chegan mentres o corpo está a facer exactamente iso que se nomea.",
+   "speech": "Non: nestas idades a atención vai pegada ao movemento. As palabras que se aprenden mellor son as que chegan mentres o corpo está a facer exactamente iso que se nomea.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_e281648b_264",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agardando na cola do supermercado, en vez de darlle o móbil: «Arriba! (lévalo en volandas) ...e abaixo. Arriba... e abaixo. Outra vez?» Tres minutos, cero pantalla, e o neno acaba de escoitar «arriba» e «abaixo» dez veces mentres o seu corpo sentía as dúas cousas.",
+   "speech": "Agardando na cola do supermercado, en vez de darlle o móbil: «Arriba! (lévalo en volandas) ...e abaixo. Arriba... e abaixo. Outra vez?» Tres minutos, cero pantalla, e o neno acaba de escoitar «arriba» e «abaixo» dez veces mentres o seu corpo sentía as dúas cousas.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_e874ee2a_79",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinalar co dedo mentres se nomea axuda máis que repetir a palabra varias veces.",
+   "speech": "Sinalar co dedo mentres se nomea axuda máis que repetir a palabra varias veces.",
+   "source": "aula.conto.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_e8c535ca_179",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Na exploración sensorial a palabra ten que chegar mentres a man aínda está dentro da auga. Un minuto despois xa é outra cousa: é contar o que pasou, non nomear o que está a pasar.",
+   "speech": "Na exploración sensorial a palabra ten que chegar mentres a man aínda está dentro da auga. Un minuto despois xa é outra cousa: é contar o que pasou, non nomear o que está a pasar.",
+   "source": "aula.exploracion.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_ea1241d1_67",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinalar co dedo é unha resposta completa nas preguntas de nivel un.",
+   "speech": "Sinalar co dedo é unha resposta completa nas preguntas de nivel un.",
+   "source": "aula.preguntas.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_f22403c0_94",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O aviso de seguridade da actividade con auga pódese dar por sabido se xa se fixo outras veces.",
+   "speech": "O aviso de seguridade da actividade con auga pódese dar por sabido se xa se fixo outras veces.",
+   "source": "aula.exploracion.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_f2c078cf_238",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "«Lúa colle o seu barquiño de madeira.» Sinalas o barco e calas. Un neno di «¡ba!» e sinala tamén. Ti: «Si, o barco. O barco de Lúa.» E só entón segues coa frase seguinte. Acabas de meter a palabra xusto no intre en que el estaba a mirala.",
+   "speech": "«Lúa colle o seu barquiño de madeira.» Sinalas o barco e calas. Un neno di «¡ba!» e sinala tamén. Ti: «Si, o barco. O barco de Lúa.» E só entón segues coa frase seguinte. Acabas de meter a palabra xusto no intre en que el estaba a mirala.",
+   "source": "aula.conto.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_f2d4757e_231",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Nunha asemblea de cero a tres, o conto non se le para chegar ao final. Lese para que haxa un momento no que a túa voz, o teu dedo e a mirada da crianza estean na mesma cousa. Se iso pasa dúas veces en toda a páxina, a páxina valeu.",
+   "speech": "Nunha asemblea de cero a tres, o conto non se le para chegar ao final. Lese para que haxa un momento no que a túa voz, o teu dedo e a mirada da crianza estean na mesma cousa. Se iso pasa dúas veces en toda a páxina, a páxina valeu.",
+   "source": "aula.conto.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_f5c0193b_161",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non: un son ou un xesto SON a súa quenda, e tratalos como resposta válida é o que mantén a conversa viva. Insistir convérteo nun exame e o neno deixa de iniciar.",
+   "speech": "Non: un son ou un xesto SON a súa quenda, e tratalos como resposta válida é o que mantén a conversa viva. Insistir convérteo nun exame e o neno deixa de iniciar.",
+   "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "gl_tutor_fc4e120b_54",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Móllase, brilla, faise máis escura ou cae ata o fondo.",
+   "speech": "Móllase, brilla, faise máis escura ou cae ata o fondo.",
+   "source": "juega.mar.01/preguntas/?/respuestaSugerida"
   }
  ]
 }

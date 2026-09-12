@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/brand/lua_pixel.dart';
+import '../../core/brand/pixel_award.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
@@ -256,9 +257,23 @@ class _Cabecera extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'Nivel ${nivel.nivel} · ${nivel.titulo.resolve(lang)}',
-                  style: text.titleMedium?.copyWith(color: Colors.white),
+                Row(
+                  children: [
+                    // El pescado del nivel: el metal sube con él, así que el
+                    // nivel se ve sin leer el número.
+                    PixelAward(
+                      glyph: nivel.glifo,
+                      tier: nivel.rango,
+                      size: 26,
+                    ),
+                    const SizedBox(width: AppTheme.spaceSm),
+                    Expanded(
+                      child: Text(
+                        'Nivel ${nivel.nivel} · ${nivel.titulo.resolve(lang)}',
+                        style: text.titleMedium?.copyWith(color: Colors.white),
+                      ),
+                    ),
+                  ],
                 ),
                 const SizedBox(height: AppTheme.spaceSm),
                 ClipRRect(
@@ -372,20 +387,16 @@ class _TarjetaInsignia extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Iconografía propia, no emoji del sistema: un emoji cambia de
-            // fabricante a fabricante y nunca forma un set coherente.
-            Container(
-              width: 44,
-              height: 44,
-              decoration: BoxDecoration(
-                color: ganada ? AppTheme.primary : AppTheme.border,
-                borderRadius: BorderRadius.circular(AppTheme.radiusField),
-              ),
-              child: Icon(
-                ganada ? Icons.check_rounded : Icons.lock_outline_rounded,
-                color: ganada ? AppTheme.dark : AppTheme.textMuted,
-                size: 24,
-              ),
+            // El dibujo de la insignia, no un tic genérico. Antes las nueve
+            // se veían iguales: un check si estaba ganada y un candado si no,
+            // así que la colección no era una colección de nada. Ahora el
+            // glifo dice QUÉ se hizo y el metal CUÁNTO, y sin ganar se ve la
+            // silueta en gris: la forma se reconoce antes de tenerla.
+            PixelAward(
+              glyph: insignia.glifo,
+              tier: insignia.rango,
+              size: 52,
+              locked: !ganada,
             ),
             const SizedBox(width: AppTheme.spaceLg),
             Expanded(

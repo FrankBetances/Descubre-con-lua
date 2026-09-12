@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
@@ -13,10 +15,15 @@ class PasoContoWidget extends StatefulWidget {
   final Cuento cuento;
   final AppLanguage language;
 
+  /// Sin él no hay botón de escuchar. La lectura de la asamblea es justo donde
+  /// más falta hace oír la pronunciación modelo en galego.
+  final OfflineAudioService? audioService;
+
   const PasoContoWidget({
     super.key,
     required this.cuento,
     required this.language,
+    this.audioService,
   });
 
   @override
@@ -155,6 +162,18 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
+                const SizedBox(height: 12.0),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: BotonEscuchar(
+                    audioService: widget.audioService,
+                    texto: currentPage.texto.resolve(widget.language),
+                    language: widget.language,
+                    descripcion: isGl
+                        ? 'a lectura da asemblea'
+                        : 'la lectura de la asamblea',
+                  ),
+                ),
               ],
             ),
           ),
@@ -200,6 +219,20 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                         fontWeight: FontWeight.w600,
                         color: AppTheme.textSlate,
                         height: 1.4,
+                      ),
+                    ),
+                    const SizedBox(height: 8.0),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: BotonEscuchar(
+                        audioService: widget.audioService,
+                        texto: currentPage.preguntaComprension
+                            .resolve(widget.language),
+                        language: widget.language,
+                        compacto: true,
+                        descripcion: isGl
+                            ? 'a pregunta de comprensión'
+                            : 'la pregunta de comprensión',
                       ),
                     ),
                   ],

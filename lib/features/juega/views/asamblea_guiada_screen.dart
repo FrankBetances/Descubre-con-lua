@@ -173,26 +173,31 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
         return PasoContoWidget(
           cuento: unidad.cuento,
           language: _language,
+          audioService: _audioService,
         );
       case 2:
         return PasoPreguntasWidget(
           preguntas: unidad.preguntas,
           language: _language,
+          audioService: _audioService,
         );
       case 3:
         return PasoExploracionWidget(
           exploracion: unidad.exploracion,
           language: _language,
+          audioService: _audioService,
         );
       case 4:
         return PasoMatematicasWidget(
           matematicas: unidad.matematicas,
           language: _language,
+          audioService: _audioService,
         );
       case 5:
         return PasoPonteCasaWidget(
           ponteCasa: unidad.puenteCasa,
           language: _language,
+          audioService: _audioService,
           onFinalizar: _finalizarAsamblea,
         );
       default:

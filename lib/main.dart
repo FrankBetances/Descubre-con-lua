@@ -126,11 +126,13 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
         '/academy': (context) => BloquesListScreen(
               repository: _repository,
               premios: _premios,
+              audioService: _audioService,
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
             ),
         '/juega': (context) => UnidadesListScreen(
               repository: _repository,
+              premios: _premios,
               audioService: _audioService,
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
@@ -144,6 +146,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               builder: (context) => CapsulaDetailScreen(
                 capsula: capsula,
                 premios: _premios,
+                audioService: _audioService,
                 initialLanguage: _currentLanguage,
                 onLanguageChanged: _setLanguage,
               ),
@@ -286,6 +289,7 @@ class HomeScreen extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => UnidadesListScreen(
                       repository: repository,
+                      premios: premios,
                       audioService: audioService,
                       initialLanguage: currentLanguage,
                       onLanguageChanged: onLanguageChanged,
@@ -307,6 +311,7 @@ class HomeScreen extends StatelessWidget {
                     builder: (context) => BloquesListScreen(
                       repository: repository,
                       premios: premios,
+                      audioService: audioService,
                       initialLanguage: currentLanguage,
                       onLanguageChanged: onLanguageChanged,
                     ),

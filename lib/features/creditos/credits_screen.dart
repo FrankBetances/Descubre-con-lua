@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/brand/logo_institucional.dart';
 import '../../core/brand/lua_pixel.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
@@ -15,9 +16,13 @@ import '../../core/theme/app_theme.dart';
 /// iniciativa propia, porque poner un nombre institucional es atribuirse un
 /// respaldo que esa institución no ha dado.
 ///
-/// Van como TEXTO, sin logotipo. Un logotipo institucional tiene normas de uso
-/// propias (proporciones, versiones, fondos permitidos) y usarlo mal es peor
-/// que no usarlo.
+/// Cada uno va con su NOMBRE EN TEXTO, y con logotipo solo si el fichero
+/// original está en `assets/brand/logos/`. Un logotipo institucional tiene
+/// normas de uso propias (proporciones, versiones, fondos permitidos) y usarlo
+/// mal es peor que no usarlo, así que no se redibuja ninguno a ojo: los huecos
+/// de StartTIC, la Zona Franca y el Concello están puestos y vacíos, y
+/// aparecen solos el día que se commiteen los ficheros. Ver el README de esa
+/// carpeta.
 ///
 /// Lo que sí está aquí es obligado: las voces neuronales y la tipografía llevan
 /// licencia, y citarlas no es cortesía.
@@ -55,9 +60,17 @@ class CreditsScreen extends StatelessWidget {
     es: 'Ayuntamiento de Vigo',
   );
 
+  /// Nombre oficial confirmado por Frank el 12/9/2026. No se abrevia: la
+  /// incubadora es un programa del Consorcio, y acreditar a una institución
+  /// con el nombre mal escrito es peor que no acreditarla.
+  static const _startic = LocalizedString(
+    gl: 'Incubadora de Alta Tecnoloxía startTIC',
+    es: 'Incubadora de Alta Tecnología startTIC',
+  );
+
   static const _starticDesc = LocalizedString(
-    gl: 'Zona Franca de Vigo',
-    es: 'Zona Franca de Vigo',
+    gl: 'Consorcio da Zona Franca de Vigo',
+    es: 'Consorcio de la Zona Franca de Vigo',
   );
 
   static const _cityHallDesc = LocalizedString(
@@ -141,6 +154,12 @@ class CreditsScreen extends StatelessWidget {
                   _GlassCard(
                     child: Column(
                       children: [
+                        // El escudo es de Frank, no de un tercero: se usa.
+                        const LogoInstitucional(
+                          fichero: 'dr-betances-crest.png',
+                          alto: 72,
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
                         Text(
                           'Dr. Frank Alberto Betances Reinoso',
                           textAlign: TextAlign.center,
@@ -178,11 +197,30 @@ class CreditsScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        // El logotipo va encima del nombre y solo si el
+                        // fichero está. El nombre no desaparece nunca: una
+                        // fila de logotipos sin nombres no acredita a nadie, y
+                        // quien no puede ver el logotipo tiene que leerlo.
+                        // StartTIC es el programa del Consorcio, no una
+                        // entidad aparte: los dos logotipos van sobre la misma
+                        // entrada. Se envuelve en Wrap y no en Row para que a
+                        // escala de texto grande caigan uno debajo del otro en
+                        // vez de desbordar.
+                        const Wrap(
+                          spacing: AppTheme.spaceLg,
+                          runSpacing: AppTheme.spaceSm,
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          children: [
+                            LogoInstitucional(fichero: 'startic.png'),
+                            LogoInstitucional(fichero: 'zona-franca-vigo.png'),
+                          ],
+                        ),
                         _Entry(
-                          name: 'Programa StartTIC',
+                          name: _startic.resolve(currentLanguage),
                           detail: _starticDesc.resolve(currentLanguage),
                         ),
                         const SizedBox(height: AppTheme.spaceMd),
+                        const LogoInstitucional(fichero: 'concello-vigo.png'),
                         _Entry(
                           name: _cityHall.resolve(currentLanguage),
                           detail: _cityHallDesc.resolve(currentLanguage),
