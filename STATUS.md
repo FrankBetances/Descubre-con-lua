@@ -54,6 +54,7 @@ trae SDK de Flutter; esos tres gates viven hoy en CI):
 | Tempo declarado vs pista real | `tools/check_pulse_bpm.py` → 72,3 BPM medidos, coinciden |
 | Paridad de identificadores de voz | `test/core/voice_id_test.dart`: Dart, Python y el corpus real de Valeria dan el mismo hash |
 | Icono de Lúa | Renderizado y **mirado** en todas las densidades |
+| **La app arranca y se navega en un aparato real** | Frank instaló el APK del run 16 en un **Pixel 6**: abre sin problemas y las secciones funcionan. Es la primera vez que esta app corre en un Android |
 
 Y en CI (GitHub Actions, runner limpio):
 
@@ -79,8 +80,7 @@ lo acepta de forma explícita y rechaza cualquier otro.
 | Área | Por qué |
 | --- | --- |
 | **Nada de esto se ha compilado en este contenedor** | La política de red devuelve 403 para `dl.google.com`, así que el Android Gradle Plugin no se resuelve aquí. Todo lo de Android está verificado **en CI**, no en local |
-| **Ninguna pantalla se ha visto en un aparato** | No hay emulador ni dispositivo. Cero capturas en `docs/capturas/`. El APK de CI se puede instalar: está como artefacto del workflow |
-| **La app nunca se ha ejecutado** | Que el APK compile y que la asamblea funcione en el aula son cosas distintas |
+| **La app no se ha usado en una asamblea real** | Frank la abrió en un Pixel 6 y recorrió las secciones. Que arranque y que funcione con doce crianzas en el aula son cosas distintas |
 | **Desbordes de disposición** | Sin aparato no hay forma de ver un `RenderFlex overflowed`. En release no se ve nada: el texto simplemente se corta. Falta comprobar en gallego, castellano y con escala de texto grande |
 | **Los gates de Dart, en este contenedor** | No hay SDK de Flutter instalado aquí (`dart: command not found`). Los siete gates de contenido sí corrieron y pasaron; `dart format`, `flutter analyze` y `flutter test` quedan para CI |
 | **Nadie ha escuchado las grabaciones** | Los gates miden picos, duración y cobertura. Que el galego de Celtia suene natural para una docente de Vigo, y que «Mexillón» se entienda a la primera en una asamblea, no lo dice ningún gate |
@@ -159,8 +159,9 @@ inferencia. Eso es lo que mantiene el binario sin permisos de red.
 2. **Ilustraciones.** El cuento referencia cuatro imágenes que no están en el
    repositorio. La pantalla ahora lo dice en palabras útiles para la docente,
    en vez de imprimir la ruta del fichero.
-3. **Cobertura de contenido.** Academy declara 5 bloques y tiene 1 cápsula;
-   Juega con Lúa declara filtro por tramo y tiene 1 unidad.
+3. **Cobertura de contenido.** Academy ya tiene **una cápsula por bloque** (5 de
+   5): ningún bloque queda con el aviso «en preparación pedagógica». Juega con
+   Lúa sigue con 1 unidad.
 4. **La pista de pulso de 2,3 MB.** Con el metrónomo visual ya no hace falta
    como metrónomo sonoro. Sigue en el paquete y sigue verificada en 72,3 BPM;
    retirarla ahorraría 2,3 MB del APK.
@@ -173,6 +174,15 @@ inferencia. Eso es lo que mantiene el binario sin permisos de red.
    va con R8 y por eso guarda `mapping.txt`; aquí el paso que lo sube está
    puesto pero no sube nada. Activarlo cambia el binario, así que no se ha
    tocado: es una decisión, no un olvido.
+7. **`placeholderPattern` caza la palabra «todo».** En
+   `content_validator.dart:60` el patrón `\b(TODO|TBD|…)\b` va con
+   `caseSensitive: false`, así que rechaza cualquier texto que contenga «todo»
+   —una de las palabras más comunes en castellano y galego—. Salió al escribir
+   las cápsulas nuevas: «y, sobre todo, dan contexto» habría tumbado la
+   validación. Se sorteó reescribiendo la frase, pero la trampa sigue puesta
+   para la próxima cápsula. El arreglo es de una línea: `caseSensitive: true`,
+   porque un marcador de tarea pendiente se escribe en mayúsculas. **No se ha
+   tocado**: es código, no contenido, y no estaba en el encargo.
 
 ---
 

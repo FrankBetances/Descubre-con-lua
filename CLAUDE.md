@@ -159,4 +159,20 @@ Lo comprueba un gate: `tools/check_contact_email.py`.
 
 Si la app se publica en Google Play, la política de privacidad y el formulario de *Seguridad de los datos* deben decir lo mismo que el APK: sin datos, sin permisos, sin SDKs de terceros.
 
-Cualquier cambio en lo que la app recoge (un permiso, un paquete, un campo guardado) obliga a actualizar **en el mismo cambio** la política y el formulario de Play Console. Las URLs legales de esta app **no están definidas todavía**: no las inventes ni reutilices las de Valeria+, que describen otra app.
+Cualquier cambio en lo que la app recoge (un permiso, un paquete, un campo guardado) obliga a actualizar **en el mismo cambio** la política y el formulario de Play Console.
+
+Las URLs legales de esta app son estas, y no otras. Salen del sitio de GitHub Pages que publica `docs/`:
+
+```
+https://frankbetances.github.io/Descubre-con-lua/privacy.html   ← política de privacidad
+https://frankbetances.github.io/Descubre-con-lua/
+```
+
+Son las que se declaran en Play Console. No reutilices las de Valeria+, que describen otra app.
+
+Lo comprueban dos gates, y hacen falta los dos:
+
+- `tools/check_legal_urls.py --offline`, dentro de `tools/gates.sh`: que los ficheros existan en `docs/`, sean lo que dicen ser y lleven el correo de contacto.
+- `.github/workflows/legal-urls.yml`, **a diario y por calendario**: que las URLs respondan 200 de verdad.
+
+El segundo no es redundante. En Valeria+, el 19/8/2026 Google rechazó la ficha con «HTTP server is returning 404» con el fichero intacto y el último despliegue de Pages en verde: no se rompió el contenido, se apagó el sitio. Ese fallo es mudo —no hay run rojo ni push que lo delate— y solo aparece semanas después por boca de Google, con la publicación parada. Un despliegue correcto no demuestra que el sitio esté vivo; solo lo demuestra pedir la URL.

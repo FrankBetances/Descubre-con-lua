@@ -1,0 +1,77 @@
+{
+  "id": "academy.juego_movimiento_sin_pantallas.01",
+  "bloqueId": "juego_movimiento_sin_pantallas",
+  "orden": 1,
+  "titulo": {
+    "gl": "O corpo aprende primeiro: xogo, colo e ningunha pantalla",
+    "es": "El cuerpo aprende primero: juego, brazos y ninguna pantalla"
+  },
+  "subtitulo": {
+    "gl": "Por que antes dos 3 anos a pantalla non suma, e o que si suma",
+    "es": "Por qué antes de los 3 años la pantalla no suma, y lo que sí suma"
+  },
+  "tiempoLecturaMinutos": 4,
+  "icono": "child_play",
+  "ideaClave": {
+    "gl": "Antes dos 3 anos a linguaxe constrúese movéndose: collendo, tirando, subindo ao colo, chocando as mans. A pantalla dá imaxe e son, pero non dá o que fai falta, que é un corpo respondendo ao seu.",
+    "es": "Antes de los 3 años el lenguaje se construye moviéndose: cogiendo, tirando, subiendo a brazos, chocando las manos. La pantalla da imagen y sonido, pero no da lo que hace falta, que es un cuerpo respondiendo al suyo."
+  },
+  "porQueImporta": {
+    "gl": "A diferenza non está en que a pantalla sexa mala: está en que non devolve. Un vídeo di «casa» tanto se o neno mira como se marcha. Unha persoa fai unha pausa, repite, sinala, celebra. Esa resposta continxente —chega porque el fixo algo— é a que non se pode substituír. As recomendacións pediátricas internacionais coinciden en desaconsellar o uso de pantallas antes dos 2 anos e limitalo despois; consulta co teu pediatra o que corresponda ao teu caso.",
+    "es": "La diferencia no está en que la pantalla sea mala: está en que no devuelve. Un vídeo dice «casa» igual si el niño mira que si se marcha. Una persona hace una pausa, repite, señala, celebra. Esa respuesta contingente —llega porque él hizo algo— es la que no se puede sustituir. Las recomendaciones pediátricas internacionales coinciden en desaconsejar el uso de pantallas antes de los 2 años y limitarlo después; consulta con tu pediatra lo que corresponda a tu caso."
+  },
+  "queHacerEnCasa": {
+    "gl": "Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar, agocharse. E pon palabras ao movemento mentres sucede, non despois. Se a pantalla entra nalgún momento, que sexa acompañada e falada, nunca como forma de que estea quieto.",
+    "es": "Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar, esconderse. Y pon palabras al movimiento mientras sucede, no después. Si la pantalla entra en algún momento, que sea acompañada y hablada, nunca como forma de que esté quieto."
+  },
+  "ejemploCotidiano": {
+    "gl": "Agardando na cola do supermercado, en vez de darlle o móbil: «Arriba! (lévalo en volandas) ...e abaixo. Arriba... e abaixo. Outra vez?» Tres minutos, cero pantalla, e o neno acaba de escoitar «arriba» e «abaixo» dez veces mentres o seu corpo sentía as dúas cousas.",
+    "es": "Esperando en la cola del supermercado, en vez de darle el móvil: «¡Arriba! (lo levantas en volandas) ...y abajo. Arriba... y abajo. ¿Otra vez?» Tres minutos, cero pantalla, y el niño acaba de escuchar «arriba» y «abajo» diez veces mientras su cuerpo sentía las dos cosas."
+  },
+  "afirmaciones": [
+    {
+      "id": "afirmacion_01",
+      "enunciado": {
+        "gl": "Un vídeo educativo con vocabulario ensina menos que un adulto que responde ao que fai o neno.",
+        "es": "Un vídeo educativo con vocabulario enseña menos que un adulto que responde a lo que hace el niño."
+      },
+      "esVerdadera": true,
+      "explicacion": {
+        "gl": "Así é: o vídeo emite igual atenda ou non. O adulto axusta, agarda e responde ao que acaba de facer, e esa resposta é a que constrúe linguaxe nos primeiros anos.",
+        "es": "Así es: el vídeo emite igual atienda o no. El adulto ajusta, espera y responde a lo que acaba de hacer, y esa respuesta es la que construye lenguaje en los primeros años."
+      }
+    },
+    {
+      "id": "afirmacion_02",
+      "enunciado": {
+        "gl": "Para que un bebé se concentre no que lle dis, o mellor é que estea quieto e sentado.",
+        "es": "Para que un bebé se concentre en lo que le dices, lo mejor es que esté quieto y sentado."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Non: nestas idades a atención vai pegada ao movemento. As palabras que se aprenden mellor son as que chegan mentres o corpo está a facer exactamente iso que se nomea.",
+        "es": "No: en estas edades la atención va pegada al movimiento. Las palabras que mejor se aprenden son las que llegan mientras el cuerpo está haciendo exactamente eso que se nombra."
+      }
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Desenvolvemento Infantil e Familia",
+    "fechaRevision": "2026-09-12",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

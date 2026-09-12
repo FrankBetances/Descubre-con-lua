@@ -1,0 +1,41 @@
+name: Vigilar las URLs legales
+
+# Por calendario, no por push, y esa es toda la gracia.
+#
+# En Valeria+, el 19/8/2026 Google rechazó la ficha con «URL provided ... does
+# not link to a valid privacy policy page, HTTP server is returning 404» con el
+# fichero intacto en el repositorio y el último despliegue de Pages en verde. No
+# se rompió el contenido: se apagó el sitio, al preparar el repositorio para
+# pasar a privado. Volver a ponerlo público no lo reactiva.
+#
+# Ese fallo es MUDO: no hay run rojo, no hay push, no hay nada que mirar. Aparece
+# semanas después, por boca de Google, con la publicación parada. Entre dos
+# despliegues es justo cuando el sitio se muere sin que nadie se entere, así que
+# la comprobación tiene que ir por calendario.
+
+on:
+  schedule:
+    # A diario. OJO: `schedule` solo dispara con el fichero ya en la rama por defecto.
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: legal-urls
+  cancel-in-progress: false
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Sin dependencias: el gate usa solo la biblioteca estándar.
+      - name: Pedir las URLs legales declaradas en Play Console
+        run: python3 tools/check_legal_urls.py

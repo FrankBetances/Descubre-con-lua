@@ -49,6 +49,10 @@ run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse
 run_gate "every locution has a recording" python3 tools/check_voice_coverage.py
 run_gate "no recording peaks near full scale" python3 tools/check_voice_levels.py
 run_gate "manual PDF and Word match their source" python3 tools/check_manual_build.py
+# --offline: la mitad de red vive en su propio workflow, por calendario. Entre
+# despliegue y despliegue es cuando un sitio de Pages se apaga sin avisar, y
+# eso no lo caza un gate que solo corre cuando alguien empuja.
+run_gate "legal pages are what Play Console declares" python3 tools/check_legal_urls.py --offline
 
 # --------------------------------------------------------------- binary gates
 if [[ $FAST -eq 0 ]]; then

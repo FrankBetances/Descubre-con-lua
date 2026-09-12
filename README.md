@@ -150,7 +150,21 @@ audio va por un `MethodChannel` contra el `MediaPlayer` de Android.
 La comprobación que cuenta se hace sobre el **APK compilado** con `aapt2`, no
 sobre el manifiesto fuente.
 
-Política publicada: [`docs/privacy.html`](docs/privacy.html).
+**URLs legales** (las que se declaran en Play Console; salen del sitio de Pages
+que publica `docs/`):
+
+| | |
+| --- | --- |
+| Política de privacidad | `https://frankbetances.github.io/Descubre-con-lua/privacy.html` |
+| Página del proyecto | `https://frankbetances.github.io/Descubre-con-lua/` |
+
+Las vigilan dos gates: `check_legal_urls.py --offline` dentro de `tools/gates.sh`
+comprueba los ficheros, y `.github/workflows/legal-urls.yml` pide las URLs **a
+diario**. El segundo existe porque un sitio de Pages se puede apagar sin que se
+ponga rojo nada: en Valeria+, Google rechazó la ficha por un 404 teniendo el
+último despliegue en verde. Un despliegue correcto no demuestra que el sitio
+esté vivo.
+
 Contacto: frank.alberto.betances.reinoso@gmail.com
 
 ## El manual

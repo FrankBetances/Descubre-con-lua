@@ -1,0 +1,77 @@
+{
+  "id": "academy.turnos_atencion_conjunta.01",
+  "bloqueId": "turnos_y_atencion_conjunta",
+  "orden": 1,
+  "titulo": {
+    "gl": "Mirar o mesmo: a conversa antes das palabras",
+    "es": "Mirar lo mismo: la conversación antes de las palabras"
+  },
+  "subtitulo": {
+    "gl": "Servir e devolver, e a regra dos cinco segundos de espera",
+    "es": "Servir y devolver, y la regla de los cinco segundos de espera"
+  },
+  "tiempoLecturaMinutos": 3,
+  "icono": "people_arrows",
+  "ideaClave": {
+    "gl": "Unha conversa non empeza cando o neno di a primeira palabra: empeza cando el e ti estades a mirar o mesmo e cada un agarda a súa quenda. Iso xa é falar, aínda que ninguén diga nada.",
+    "es": "Una conversación no empieza cuando el niño dice la primera palabra: empieza cuando él y tú estáis mirando lo mismo y cada uno espera su turno. Eso ya es hablar, aunque nadie diga nada."
+  },
+  "porQueImporta": {
+    "gl": "Cando o adulto segue coa mirada o que lle interesa ao neno e nomea iso —non o que o adulto quería ensinar—, a palabra chega no intre exacto en que o neno está a prestar atención. Esa coincidencia entre o que mira e o que escoita é o que fai que a palabra se pegue.",
+    "es": "Cuando el adulto sigue con la mirada lo que le interesa al niño y nombra eso —no lo que el adulto quería enseñar—, la palabra llega en el instante exacto en que el niño está prestando atención. Esa coincidencia entre lo que mira y lo que escucha es lo que hace que la palabra se quede."
+  },
+  "queHacerEnCasa": {
+    "gl": "Non dirixas: segue. Mira o que el está a mirar, nómao, e cala cinco segundos contando na túa cabeza. Devolve o que faga —un son, un xesto, unha ollada— coma se fose unha resposta, porque o é.",
+    "es": "No dirijas: sigue. Mira lo que él está mirando, nómbralo, y calla cinco segundos contando en tu cabeza. Devuelve lo que haga —un sonido, un gesto, una mirada— como si fuese una respuesta, porque lo es."
+  },
+  "ejemploCotidiano": {
+    "gl": "Está a mirar o can pola fiestra. En vez de «mira o coche», dis: «O can! Ves o can?» (un, dous, tres, catro, cinco). El fai «¡eh!» e sinala. Ti: «Si! O can. Que fai o can?» (un, dous, tres, catro, cinco). Acabades de ter unha conversa de catro quendas sen unha soa palabra del.",
+    "es": "Está mirando el perro por la ventana. En vez de «mira el coche», dices: «¡El perro! ¿Ves el perro?» (uno, dos, tres, cuatro, cinco). Él hace «¡eh!» y señala. Tú: «¡Sí! El perro. ¿Qué hace el perro?» (uno, dos, tres, cuatro, cinco). Acabáis de tener una conversación de cuatro turnos sin una sola palabra suya."
+  },
+  "afirmaciones": [
+    {
+      "id": "afirmacion_01",
+      "enunciado": {
+        "gl": "É mellor nomear o que o neno xa está a mirar que dirixir a súa atención cara ao que queremos ensinarlle.",
+        "es": "Es mejor nombrar lo que el niño ya está mirando que dirigir su atención hacia lo que queremos enseñarle."
+      },
+      "esVerdadera": true,
+      "explicacion": {
+        "gl": "Correcto: a palabra que chega mentres el xa está a atender é a que aprende. Redirixir a atención gasta o momento en conseguir que mire, e a palabra chega tarde.",
+        "es": "Correcto: la palabra que llega mientras él ya está atendiendo es la que aprende. Redirigir la atención gasta el momento en conseguir que mire, y la palabra llega tarde."
+      }
+    },
+    {
+      "id": "afirmacion_02",
+      "enunciado": {
+        "gl": "Se o neno responde cun son ou un xesto en vez de cunha palabra, convén insistir ata que o diga ben.",
+        "es": "Si el niño responde con un sonido o un gesto en vez de con una palabra, conviene insistir hasta que lo diga bien."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Non: un son ou un xesto SON a súa quenda, e tratalos como resposta válida é o que mantén a conversa viva. Insistir convérteo nun exame e o neno deixa de iniciar.",
+        "es": "No: un sonido o un gesto SON su turno, y tratarlos como respuesta válida es lo que mantiene la conversación viva. Insistir lo convierte en un examen y el niño deja de iniciar."
+      }
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Desenvolvemento Infantil e Familia",
+    "fechaRevision": "2026-09-12",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}
