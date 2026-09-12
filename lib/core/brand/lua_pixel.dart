@@ -57,9 +57,17 @@ class _LuaPixelState extends State<LuaPixel> {
       setState(() => _grid = cached);
       return;
     }
-    final grid = await _LuaGrid.load(widget.pose);
-    _cache[widget.pose] = grid;
-    if (mounted) setState(() => _grid = grid);
+    // Si la rejilla no está, la pantalla se queda sin gata pero NO se cae. La
+    // mascota es decorativa; tumbar la bienvenida entera por un fichero que
+    // falta sería peor que no dibujarla. Que el fichero esté es cosa de un
+    // test, no del tiempo de ejecución.
+    try {
+      final grid = await _LuaGrid.load(widget.pose);
+      _cache[widget.pose] = grid;
+      if (mounted) setState(() => _grid = grid);
+    } catch (_) {
+      if (mounted) setState(() => _grid = null);
+    }
   }
 
   @override

@@ -22,6 +22,11 @@ flutter:
     - assets/content/unidades/
     - assets/content/capsulas/
     - assets/audio/
+    # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
+    # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una
+    # pantalla quiso pintarlas, la app se quedó sin ellas. Son la MISMA fuente
+    # del icono y del splash: por eso se pintan desde aquí y no desde un PNG.
+    - assets/brand/
     # Neural voice recordings (Celtia gl / Sharvard es), synthesised at build
     # time by tools/generate_voice_assets.py and committed. The models never
     # run on the device.
