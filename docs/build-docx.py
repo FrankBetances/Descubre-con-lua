@@ -19,7 +19,7 @@ import re
 import lxml.html
 from docx import Document
 from docx.enum.table import WD_TABLE_ALIGNMENT
-from docx.enum.text import WD_BREAK
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
@@ -302,6 +302,44 @@ class Builder:
         self.doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
 
     # -------------------------------------------------------------- recorrido
+    def shots(self, el):
+        """Las capturas, en la misma pareja gallego/castellano que el HTML.
+
+        Word no tiene flex: cada par va en una tabla de dos columnas sin
+        bordes, que es lo que más se le parece. Sin esto las imágenes se
+        perdían EN SILENCIO —el constructor no miraba los `img`— y el Word
+        habría pasado el gate del manual describiendo un documento con
+        capturas sin llevar ninguna.
+        """
+        for pair in el.xpath('.//div[contains(@class, "pair")]'):
+            figuras = pair.xpath('./figure')
+            if not figuras:
+                continue
+            table = self.doc.add_table(rows=1, cols=len(figuras))
+            table.alignment = WD_TABLE_ALIGNMENT.CENTER
+            no_borders(table)
+            for i, fig in enumerate(figuras):
+                cell = table.cell(0, i)
+                cell.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+                src = (fig.xpath('./img/@src') or [None])[0]
+                ruta = os.path.join(DOCS, src) if src else None
+                if ruta and os.path.exists(ruta):
+                    cell.paragraphs[0].add_run().add_picture(ruta, width=Cm(6.4))
+                else:
+                    # Nunca en silencio: si falta el PNG hay que verlo.
+                    raise SystemExit(
+                        'build-docx: falta la captura %s. El Word no puede '
+                        'salir sin ella.' % (src or '(sin src)'))
+                pie = fig.xpath('./figcaption')
+                if pie:
+                    par = cell.add_paragraph()
+                    par.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    par.paragraph_format.space_after = Pt(8)
+                    run = par.add_run(clean(pie[0].text_content()).strip())
+                    run.font.size = Pt(8.5)
+                    run.font.color.rgb = MUTED
+            self.doc.add_paragraph().paragraph_format.space_after = Pt(4)
+
     def walk(self, root):
         for el in root:
             if not isinstance(el.tag, str):
@@ -322,6 +360,8 @@ class Builder:
                 self.doc.add_heading(clean(el.text_content()).strip(), level=3)
             elif 'toc' in cls:
                 self.toc(el)
+            elif 'shots' in cls:
+                self.shots(el)
             elif 'flowmap' in cls:
                 self.flowmap(el)
             elif 'callout' in cls:

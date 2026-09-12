@@ -42,21 +42,37 @@ class _LuaPixelState extends State<LuaPixel> {
   @override
   void initState() {
     super.initState();
-    _load();
+    // La caché se lee SÍNCRONA, para que una rejilla ya leída entre en el
+    // PRIMER build. Antes esto vivía dentro de `_load`, con un `setState` que
+    // caía en pleno build del padre: `initState` corre ahí, y en el camino de
+    // caché acertada no hay ningún `await` antes. Eso es incorrecto sin más,
+    // aunque en la práctica Flutter lo tolerase.
+    //
+    // HONESTIDAD: NO he demostrado que esto causara ningún fallo en un
+    // aparato. Lo que sí hace falta es para que el arnés de las imágenes del
+    // manual funcione: allí se calienta la caché antes de pintar cada
+    // pantalla, y sin esta lectura síncrona la gata no llegaría al primer
+    // build. `PixelAward` ya asignaba directo.
+    _grid = _cache[widget.pose];
+    if (_grid == null) _load();
   }
 
   @override
   void didUpdateWidget(LuaPixel oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.pose != widget.pose) _load();
-  }
-
-  Future<void> _load() async {
+    if (oldWidget.pose == widget.pose) return;
     final cached = _cache[widget.pose];
     if (cached != null) {
+      // Aquí sí hace falta setState: ya no estamos en el build inicial.
       setState(() => _grid = cached);
-      return;
+    } else {
+      _grid = null;
+      _load();
     }
+  }
+
+  /// Solo el camino de caché fallada: leer la rejilla del paquete.
+  Future<void> _load() async {
     // Si la rejilla no está, la pantalla se queda sin gata pero NO se cae. La
     // mascota es decorativa; tumbar la bienvenida entera por un fichero que
     // falta sería peor que no dibujarla. Que el fichero esté es cosa de un
@@ -65,7 +81,14 @@ class _LuaPixelState extends State<LuaPixel> {
       final grid = await _LuaGrid.load(widget.pose);
       _cache[widget.pose] = grid;
       if (mounted) setState(() => _grid = grid);
-    } catch (_) {
+    } catch (error) {
+      // Se DICE en el registro. Antes se tragaba en silencio, así que una
+      // rejilla que no cargase dejaba el hueco vacío sin que nada lo contara,
+      // y eso costó una tanda entera de imágenes del manual investigando a
+      // ciegas. El fallo sigue sin tumbar la pantalla, que es lo que importa,
+      // pero ya no es mudo.
+      debugPrint('LuaPixel: no se pudo leer la rejilla ${widget.pose.name} '
+          '($error)');
       if (mounted) setState(() => _grid = null);
     }
   }

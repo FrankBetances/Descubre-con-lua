@@ -39,7 +39,13 @@ run_gate() {
 # ---------------------------------------------------------------- Dart gates
 run_gate "dart format" dart format --output=none --set-exit-if-changed .
 run_gate "flutter analyze" flutter analyze
-run_gate "flutter test" flutter test
+# --exclude-tags capturas: `test/capturas_test.dart` NO comprueba nada, produce
+# las imágenes del manual. Compararlas aquí metería una golden en la ruta
+# crítica, y una golden depende de la máquina que la pinta: en cuanto CI use
+# otra versión del motor o de las fuentes, el gate se pone rojo sin que la app
+# haya cambiado. Se corre a mano:
+#   flutter test --tags capturas --update-goldens test/capturas_test.dart
+run_gate "flutter test" flutter test --exclude-tags capturas
 
 # ------------------------------------------------------------- content gates
 run_gate "contact address" python3 tools/check_contact_email.py

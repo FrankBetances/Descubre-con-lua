@@ -120,6 +120,18 @@
                    border-radius: 5px; margin: 0 4px 4px 0; }
 
   .footer-note { color: var(--muted); font-size: 8.5pt; font-style: italic; }
+
+  /* ------------------------------------------------------------- capturas */
+  .shots { margin: 10px 0 4px; }
+  .shots .pair { display: flex; gap: 10mm; align-items: flex-start;
+                 page-break-inside: avoid; margin-bottom: 10px; }
+  .shots figure { margin: 0; flex: 1; }
+  .shots img { width: 100%; border: 1px solid var(--line); border-radius: 6px;
+               display: block; }
+  .shots figcaption { font-size: 8.5pt; color: var(--muted); margin-top: 4px; }
+  .shot-note { font-size: 8.5pt; color: var(--warn-ink); background: #FBF6E9;
+               border-left: 3px solid #D9C89A; padding: 7px 10px;
+               border-radius: 0 4px 4px 0; margin: 4px 0 14px; }
 </style>
 </head>
 <body>
@@ -148,7 +160,7 @@
     <li class="section-label">La aplicación</li>
     <li><span class="num">1</span><span class="txt">Qué es, y qué no es</span></li>
     <li><span class="num">2</span><span class="txt">Antes de empezar</span></li>
-    <li><span class="num">3</span><span class="txt">Mapa de la aplicación</span></li>
+    <li><span class="num">3</span><span class="txt">Mapa de la aplicación, y las pantallas</span></li>
     <li class="section-label">Casos de uso · Docente</li>
     <li><span class="num">CU-1</span><span class="txt">Elegir la unidad de la asamblea</span></li>
     <li><span class="num">CU-2</span><span class="txt">Conducir la asamblea guiada</span></li>
@@ -156,16 +168,19 @@
     <li><span class="num">CU-4</span><span class="txt">Reproducir el recitado de la letra</span></li>
     <li><span class="num">CU-5</span><span class="txt">Cambiar de lengua a media asamblea</span></li>
     <li><span class="num">CU-6</span><span class="txt">Cuando una grabación no está</span></li>
+    <li><span class="num">CU-7</span><span class="txt">Escuchar cómo se dice</span></li>
+    <li><span class="num">CU-8</span><span class="txt">Leer la formación de un paso</span></li>
+    <li><span class="num">CU-9</span><span class="txt">Ver los premios de Lúa</span></li>
     <li class="section-label">Casos de uso · Familias</li>
-    <li><span class="num">CU-7</span><span class="txt">Leer una cápsula</span></li>
-    <li><span class="num">CU-8</span><span class="txt">Responder la reflexión</span></li>
-    <li><span class="num">CU-9</span><span class="txt">Usar la app sin la criatura delante</span></li>
+    <li><span class="num">CU-10</span><span class="txt">Leer una cápsula</span></li>
+    <li><span class="num">CU-11</span><span class="txt">Responder la reflexión</span></li>
+    <li><span class="num">CU-12</span><span class="txt">Usar la app sin la criatura delante</span></li>
     <li class="section-label">Casos de uso · Mantenimiento</li>
-    <li><span class="num">CU-10</span><span class="txt">Añadir una unidad o una cápsula</span></li>
-    <li><span class="num">CU-11</span><span class="txt">Cambiar un texto que tiene audio</span></li>
-    <li><span class="num">CU-12</span><span class="txt">Regenerar las voces</span></li>
-    <li><span class="num">CU-13</span><span class="txt">Comprobar antes de entregar</span></li>
-    <li><span class="num">CU-14</span><span class="txt">Auditar la privacidad del binario</span></li>
+    <li><span class="num">CU-13</span><span class="txt">Añadir una unidad o una cápsula</span></li>
+    <li><span class="num">CU-14</span><span class="txt">Cambiar un texto que tiene audio</span></li>
+    <li><span class="num">CU-15</span><span class="txt">Regenerar las voces</span></li>
+    <li><span class="num">CU-16</span><span class="txt">Comprobar antes de entregar</span></li>
+    <li><span class="num">CU-17</span><span class="txt">Auditar la privacidad del binario</span></li>
     <li class="section-label">Cierre</li>
     <li><span class="num">4</span><span class="txt">Límites de esta versión</span></li>
     <li><span class="num">5</span><span class="txt">Si algo va mal</span></li>
@@ -197,24 +212,101 @@
       <tr><th>Instalación</th><td>APK de Android. No está publicada en Google Play todavía</td></tr>
       <tr><th>Conexión</th><td>Ninguna. La app no puede conectarse: el paquete no lleva permiso de internet</td></tr>
       <tr><th>Cuentas</th><td>No hay. No se pide correo, ni nombre, ni nada</td></tr>
-      <tr><th>Datos</th><td>Cero. No se recoge, no se envía y no se guarda nada sobre quien la usa</td></tr>
+      <tr><th>Datos</th><td>Nada de ninguna criatura, nunca. Lo único que se guarda, en el
+      almacenamiento privado del aparato, son los contadores de los premios de Lúa <em>de la persona
+      adulta</em>: asambleas dirigidas, cápsulas leídas, racha actual y mejor racha, la fecha del
+      último día <em>sin hora</em> y las insignias ganadas. No identifica a nadie y no puede salir del
+      aparato, porque no hay permiso de red</td></tr>
       <tr><th>Idiomas</th><td>Gallego y castellano, conmutables en cualquier pantalla con el selector <strong>GL / ES</strong> de la barra superior</td></tr>
     </tbody>
   </table>
-  <p>Al desinstalar no queda nada que borrar en ningún servidor, porque nunca hubo ninguno.</p>
+  <p>Al desinstalar no queda nada que borrar en ningún servidor, porque nunca hubo ninguno, y los
+  contadores se van con la app.</p>
 
   <h2>3 · Mapa de la aplicación</h2>
   <div class="flowmap">
+    <span class="node">Bienvenida</span>
     <span class="node">Pantalla inicial</span>
     <span class="node">Juega con Lúa · Aula</span>
     <span class="node">Lista de unidades</span>
     <span class="node">Modo Asamblea (6 fases)</span>
   </div>
   <div class="flowmap">
+    <span class="node">Juega con Lúa · Aula</span>
+    <span class="node">Formación · Aula</span>
+    <span class="node">6 pasos de la asamblea</span>
+    <span class="node">Cápsula docente</span>
+  </div>
+  <div class="flowmap">
     <span class="node">Pantalla inicial</span>
     <span class="node">Academy · Familias</span>
     <span class="node">5 bloques</span>
     <span class="node">Cápsula (4 partes + reflexión)</span>
+  </div>
+  <div class="flowmap">
+    <span class="node">Cualquier lista</span>
+    <span class="node">Tira de Lúa</span>
+    <span class="node">Los premios de Lúa</span>
+  </div>
+  <div class="flowmap">
+    <span class="node">Bienvenida</span>
+    <span class="node">Créditos</span>
+  </div>
+
+  <h3>Las pantallas</h3>
+  <p>En cada par, gallego a la izquierda y castellano a la derecha. Las dos lenguas no ocupan
+  lo mismo, y por eso se miran las dos.</p>
+
+  <p class="shot-note"><strong>Estas imágenes no son fotos de un móvil.</strong> Son el árbol de
+  widgets real pintado por el motor de Flutter, con la tipografía y el contenido de la app. No
+  llevan muesca, ni barra de gestos, ni la densidad de un aparato concreto, y el audio no suena.
+  Se regeneran con <code>flutter test --tags capturas --update-goldens
+  test/capturas_test.dart</code>; sustituirlas por capturas de verdad es reemplazar los PNG de
+  <code>docs/capturas/</code>, sin tocar este manual.</p>
+
+  <div class="shots">
+    <div class="pair">
+      <figure><img src="capturas/bienvenida-gl.png" alt="Pantalla de bienvenida en gallego">
+        <figcaption>Bienvenida · GL</figcaption></figure>
+      <figure><img src="capturas/bienvenida-es.png" alt="Pantalla de bienvenida en castellano">
+        <figcaption>Bienvenida · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/aula-unidades-gl.png" alt="Lista de unidades del aula en gallego">
+        <figcaption>Juega con Lúa · Aula · GL</figcaption></figure>
+      <figure><img src="capturas/aula-unidades-es.png" alt="Lista de unidades del aula en castellano">
+        <figcaption>Juega con Lúa · Aula · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/aula-formacion-gl.png" alt="Formación docente en gallego">
+        <figcaption>Formación · Aula · GL</figcaption></figure>
+      <figure><img src="capturas/aula-formacion-es.png" alt="Formación docente en castellano">
+        <figcaption>Formación · Aula · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/academy-bloques-gl.png" alt="Bloques de Academy en gallego">
+        <figcaption>Academy · Familias · GL</figcaption></figure>
+      <figure><img src="capturas/academy-bloques-es.png" alt="Bloques de Academy en castellano">
+        <figcaption>Academy · Familias · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/academy-lector-gl.png" alt="Lector de cápsula en gallego">
+        <figcaption>Lector de cápsula · GL</figcaption></figure>
+      <figure><img src="capturas/academy-lector-es.png" alt="Lector de cápsula en castellano">
+        <figcaption>Lector de cápsula · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/premios-gl.png" alt="Los premios de Lúa en gallego">
+        <figcaption>Los premios de Lúa · GL</figcaption></figure>
+      <figure><img src="capturas/premios-es.png" alt="Los premios de Lúa en castellano">
+        <figcaption>Los premios de Lúa · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/creditos-gl.png" alt="Créditos en gallego">
+        <figcaption>Créditos · GL</figcaption></figure>
+      <figure><img src="capturas/creditos-es.png" alt="Créditos en castellano">
+        <figcaption>Créditos · ES</figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -373,6 +465,87 @@
       consigna funcionan igual.</p>
     </div>
   </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-7</div>
+      <div class="title">Escuchar cómo se dice</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente, y también la familia en Academy</div>
+        <div class="k">Cuándo</div><div class="v">Antes de decirlo en voz alta, o mientras se prepara</div>
+        <div class="k">Resultado</div><div class="v">Oír la pronunciación modelo de ese texto exacto</div>
+      </div>
+      <p>Casi todas las tarjetas con texto seguido llevan un botón de altavoz:
+      la lectura del cuento y su pregunta, las preguntas con su respuesta
+      esperada y su consejo, el aviso de seguridad y los pasos de la
+      exploración, las matemáticas, el mensaje para las familias, y en Academy
+      las cuatro partes de la cápsula y cada afirmación.</p>
+      <p>Suena la lengua que esté seleccionada. En gallego habla <strong>Celtia</strong>,
+      del Proxecto Nós; en castellano, <strong>Sharvard</strong>. Las grabaciones
+      viajan dentro de la app: los modelos de voz no se ejecutan en el aparato y
+      no hace falta conexión.</p>
+      <div class="callout">
+        <p class="lbl">Por qué esto importa en gallego</p>
+        <p>Quien no creció hablando gallego puede oír cómo suena la frase antes
+        de decirla delante del grupo. Es el uso para el que existe una voz
+        neuronal gallega en esta app.</p>
+      </div>
+      <p class="small muted">Si una tarjeta no tiene botón, ese texto no tiene
+      grabación. El botón no se pinta apagado a propósito: un altavoz que no
+      suena promete algo que no cumple.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-8</div>
+      <div class="title">Leer la formación de un paso</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente</div>
+        <div class="k">Cuándo</div><div class="v">Antes o después de la asamblea, nunca delante del grupo</div>
+        <div class="k">Resultado</div><div class="v">Una lectura de tres minutos sobre el paso que toca</div>
+      </div>
+      <p>En la lista de unidades, arriba, el botón
+      <strong>«Formación: los seis pasos de la asamblea»</strong>. Hay una
+      cápsula por cada paso, en su orden: el pulso, el cuento, las preguntas, la
+      exploración, las matemáticas y el puente con la casa. Se leen igual que
+      las de Academy —cuatro partes y una reflexión—, con la diferencia de que
+      la tercera dice «Qué hacer en la asamblea» y no «Qué hacer en casa».</p>
+      <p>Leerla entera suma al recorrido de premios <em>de la docente</em>, no al
+      de las familias.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-9</div>
+      <div class="title">Ver los premios de Lúa</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La persona adulta que usa la app</div>
+        <div class="k">Cuándo</div><div class="v">En cualquier momento, desde la tira que hay arriba de cada lista</div>
+        <div class="k">Resultado</div><div class="v">Nivel, XP, racha e insignias del perfil elegido</div>
+      </div>
+      <div class="callout warn">
+        <p class="lbl">Premian al adulto, nunca a la criatura</p>
+        <p>Aquí no se mide el progreso de ningún niño ni de ninguna niña: la
+        criatura no toca la pantalla, así que puntuar su «avance» sería
+        inventarse un dato que nadie ha medido. Lo que se cuenta es el uso de la
+        app por parte del adulto.</p>
+      </div>
+      <p>Hay dos recorridos separados, con su propia racha y sus propias
+      insignias: <strong>Maestra</strong>, que avanza con asambleas dirigidas y
+      cápsulas de formación, y <strong>Familia</strong>, que avanza con cápsulas
+      de Academy leídas. El conmutador de arriba pasa de uno a otro.</p>
+      <p>La racha cuenta <em>días</em>, no sesiones: dos asambleas la misma
+      mañana son un día. Un día en blanco la rompe, y la mejor racha se recuerda.</p>
+    </div>
+  </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════ CU · FAMILIAS ════════ -->
@@ -382,7 +555,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-7</div>
+      <div class="id">CU-10</div>
       <div class="title">Leer una cápsula</div>
     </div>
     <div class="uc-body">
@@ -420,7 +593,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-8</div>
+      <div class="id">CU-11</div>
       <div class="title">Responder la reflexión</div>
     </div>
     <div class="uc-body">
@@ -442,7 +615,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-9</div>
+      <div class="id">CU-12</div>
       <div class="title">Usar la app sin la criatura delante</div>
     </div>
     <div class="uc-body">
@@ -465,7 +638,7 @@
 
   <div class="uc">
     <div class="uc-head violet">
-      <div class="id">CU-10</div>
+      <div class="id">CU-13</div>
       <div class="title">Añadir una unidad o una cápsula</div>
     </div>
     <div class="uc-body">
@@ -483,7 +656,7 @@
 
   <div class="uc">
     <div class="uc-head violet">
-      <div class="id">CU-11</div>
+      <div class="id">CU-14</div>
       <div class="title">Cambiar un texto que tiene audio</div>
     </div>
     <div class="uc-body">
@@ -503,7 +676,7 @@
 
   <div class="uc">
     <div class="uc-head violet">
-      <div class="id">CU-12</div>
+      <div class="id">CU-15</div>
       <div class="title">Regenerar las voces</div>
     </div>
     <div class="uc-body">
@@ -531,7 +704,7 @@
 
   <div class="uc">
     <div class="uc-head violet">
-      <div class="id">CU-13</div>
+      <div class="id">CU-16</div>
       <div class="title">Comprobar antes de entregar</div>
     </div>
     <div class="uc-body">
@@ -546,7 +719,7 @@
 
   <div class="uc">
     <div class="uc-head violet">
-      <div class="id">CU-14</div>
+      <div class="id">CU-17</div>
       <div class="title">Auditar la privacidad del binario</div>
     </div>
     <div class="uc-body">
@@ -578,9 +751,11 @@
   <table>
     <thead><tr><th>Límite</th><th>Detalle</th></tr></thead>
     <tbody>
-      <tr><td><strong>Contenido</strong></td><td>Una unidad y una cápsula. Cuatro de los cinco bloques de Academy están vacíos, y lo dicen</td></tr>
+      <tr><td><strong>Contenido</strong></td><td>Una unidad de aula. Academy tiene una cápsula en cada uno de sus cinco bloques, y la formación docente una en cada uno de sus seis pasos</td></tr>
       <tr><td><strong>Ilustraciones</strong></td><td>El cuento no lleva láminas. La pantalla lo indica y sugiere señalar en el aula</td></tr>
-      <tr><td><strong>Grabaciones</strong></td><td>Faltan varias. Cuando falta una, la app lo dice (CU-6)</td></tr>
+      <tr><td><strong>Grabaciones</strong></td><td>Completas: las 246 locuciones que el contenido declara viajan dentro del paquete. Si alguna faltase, el botón de escuchar no se pinta</td></tr>
+      <tr><td><strong>Vocabulario</strong></td><td>El contenido declara cinco palabras por unidad, con definición y grabación, pero todavía no hay ninguna pantalla que las muestre</td></tr>
+      <tr><td><strong>Logotipos</strong></td><td>En los créditos falta el logotipo de la Incubadora startTIC, del Consorcio de la Zona Franca y del Concello. Los nombres sí constan</td></tr>
       <tr><td><strong>Filtro por edad</strong></td><td>La única unidad es <code>0-3</code>, así que aparece en las tres pestañas</td></tr>
       <tr><td><strong>Sin aparato</strong></td><td>Ninguna pantalla se ha visto todavía en un móvil o tablet real</td></tr>
       <tr><td><strong>Google Play</strong></td><td>No está publicada</td></tr>
@@ -594,7 +769,8 @@
       <tr><td>«Non se atoparon unidades…»</td><td>El filtro no tiene unidades de ese tramo. Prueba «Todas as idades»</td></tr>
       <tr><td>«Esta gravación non está incluída…»</td><td>Esa locución no viaja en esta versión. La asamblea sigue sin ella</td></tr>
       <tr><td>«Lámina ilustrada pendente»</td><td>El cuento aún no tiene imágenes. Lee el texto y señalad en el aula</td></tr>
-      <tr><td>«Novas cápsulas deste bloque…»</td><td>Ese bloque de Academy todavía no tiene contenido</td></tr>
+      <tr><td>«Novas cápsulas deste bloque…»</td><td>Ese bloque todavía no tiene contenido</td></tr>
+      <tr><td>Una tarjeta sin botón de escuchar</td><td>Ese texto no tiene grabación. El botón no se pinta a propósito: un altavoz que no suena engaña</td></tr>
       <tr><td>Listas vacías sin mensaje</td><td>Eso sí sería un defecto: escríbelo al correo de contacto</td></tr>
     </tbody>
   </table>

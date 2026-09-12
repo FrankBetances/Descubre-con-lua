@@ -4,8 +4,11 @@ Aplicación Android educativa, **sin conexión**, para las escuelas infantiles
 municipales de Vigo y sus familias. Primer ciclo de educación infantil (0-3
 años). Todo el contenido existe en gallego y castellano.
 
-- **Juega con Lúa · Aula** — la usa la docente en la asamblea.
+- **Juega con Lúa · Aula** — la usa la docente en la asamblea. Incluye
+  **Formación · Aula**: una cápsula de tres minutos por cada paso de la asamblea.
 - **Academy · Familias** — la usan las familias en casa.
+- **Los premios de Lúa** — nivel, XP, racha e insignias. Premian **a la persona
+  adulta** que usa la app, nunca a la criatura.
 
 **Finalidad exclusivamente educativa.** No es un producto sanitario: no evalúa,
 no diagnostica y no trata nada. La criatura no usa la pantalla; la app es para
@@ -15,7 +18,7 @@ la persona adulta que acompaña.
 
 | | |
 | --- | --- |
-| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | Cómo se usa, caso a caso: docente, familias y mantenimiento. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | 17 casos de uso —docente, familias y mantenimiento— y las 14 imágenes de pantalla. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
 | [**CLAUDE.md**](CLAUDE.md) | Reglas de trabajo del proyecto |
@@ -25,14 +28,30 @@ comprobado y nombra el comando que lo comprobó.
 
 ## Estado
 
-Resumen honesto: **`main` pasa sus 12 gates** (run 16), el binario **no lleva ni
-un permiso de red**, las **12 locuciones tienen grabación** y de cada run de
+Resumen honesto: **`main` pasa sus 11 gates** (run 46), el binario **no lleva ni
+un permiso de red**, las **246 locuciones tienen grabación** y de cada run de
 `main` sale un **AAB firmado con la clave de release**, listo para Play Console.
+
+| | |
+| --- | --- |
+| Último run verde de `main` | 46 · APK 36,49 MB · AAB 60,47 MB · `versionCode` 46 |
+| Tests | 177 |
+| Contenido | 1 unidad de aula · 5 cápsulas de Academy · 6 cápsulas de formación docente |
+| Voz | 246 locuciones (123 gl + 123 es), 13 MB dentro del paquete |
 
 Lo que no está comprobado, y no lo arregla ningún run verde: **ninguna pantalla
 se ha visto en un aparato** y **nadie ha escuchado las voces gallegas**. Los
 gates miden picos, duraciones y cobertura; no dicen si el galego suena natural
 ni si una cadena se corta en una pantalla pequeña.
+
+Defectos abiertos que hay que mirar antes de publicar:
+
+- en castellano, el chip **«Todas las edades»** del filtro de tramo etario sale
+  **cortado**. Se ve en `docs/capturas/aula-unidades-es.png`; en gallego cabe;
+- el contenido declara **cinco palabras de vocabulario** por unidad, con
+  definición y grabación, y **ninguna pantalla las muestra**;
+- faltan los logotipos de la Incubadora startTIC, del Consorcio de la Zona
+  Franca y del Concello: los huecos están puestos en los créditos y vacíos.
 
 ## Comprobar
 
@@ -127,6 +146,12 @@ lee.
 El audio se genera con voces neuronales en tiempo de compilación y viaja
 grabado dentro del paquete. Los modelos **nunca** corren en el aparato.
 
+Casi todas las tarjetas con texto seguido llevan botón de altavoz: la lectura
+del cuento, las preguntas, la exploración, las matemáticas, el puente con la
+casa, y en Academy las cuatro partes de cada cápsula y sus afirmaciones. Si un
+texto no tiene grabación, el botón **no se pinta** —ni apagado ni con aviso—:
+un altavoz que no suena promete algo que no cumple.
+
 - gallego → **Celtia**, do Proxecto Nós (*gated* en Hugging Face: requiere el
   secret `HF_TOKEN`)
 - castellano → **Sharvard** (rhasspy/piper-voices)
@@ -146,6 +171,14 @@ lo detecta. La app no puede enseñar un texto y reproducir otro.
 Cero datos personales, cero analítica, cero SDK de terceros, y ningún permiso
 de red. `pubspec.yaml` no tiene una sola dependencia externa: la reproducción de
 audio va por un `MethodChannel` contra el `MediaPlayer` de Android.
+
+**Lo único que la app guarda**, en el almacenamiento privado del aparato: los
+contadores de los premios **de la persona adulta** —asambleas dirigidas,
+cápsulas leídas, racha actual y mejor racha, la fecha del último día *sin hora*
+e identificadores de insignias—. No identifica a nadie, no contiene nada de
+ninguna criatura y no puede salir del aparato. Lo guarda un gate:
+`test/features/premios_test.dart` falla si aparece una clave nueva en ese
+fichero.
 
 La comprobación que cuenta se hace sobre el **APK compilado** con `aapt2`, no
 sobre el manifiesto fuente.
@@ -184,14 +217,29 @@ Misma estructura que Valeria+, y por su misma razón: allí el texto llegó a es
 duplicado dentro del constructor y el Word se quedó describiendo una versión
 anterior sin que nada avisara.
 
+Las 14 imágenes de pantalla viven en `docs/capturas/` y se regeneran con:
+
+```bash
+flutter test --tags capturas --update-goldens test/capturas_test.dart
+```
+
+**No son fotos de un móvil.** Son el árbol de widgets real pintado por el motor
+de Flutter, con la tipografía y el contenido de la app, pero sin muesca, sin
+barra de gestos, sin la densidad de un aparato concreto y sin audio. Ver
+[`docs/capturas/README.md`](docs/capturas/README.md). Sustituirlas por capturas
+de verdad es reemplazar los PNG; el manual no se toca.
+
 ## Estructura
 
 ```
 lib/core/       tema, idiomas, audio (servicio, reproductor nativo, ids de voz)
 lib/data/       modelos, cargador, repositorio, validador de contenido
-lib/features/   juega/ (aula, asamblea de 6 fases, metrónomo) · academy/ (familias)
+lib/features/   juega/ (aula, asamblea de 6 fases, metrónomo, formación docente)
+                academy/ (familias) · premios/ · bienvenida/ · creditos/
 assets/content/ unidades y cápsulas en JSON, bilingües
 assets/voice/   grabaciones neuronales (generadas en CI)
 assets/brand/   rejilla de píxeles de Lúa: de aquí salen icono y splash
+                awards/ (los 10 glifos de insignia) · logos/ (marcas)
+docs/capturas/  las 14 imágenes de pantalla del manual
 tools/          gates y tubería de voz
 ```
