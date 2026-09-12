@@ -41,12 +41,13 @@ gate que no figuraba en ella.
 
 ### Verificado en esta sesión
 
-Con Flutter 3.47.3 instalado y ejecutado en este contenedor:
+Con Flutter 3.47.3, ejecutado en el contenedor de trabajo (el actual ya no
+trae SDK de Flutter; esos tres gates viven hoy en CI):
 
 | Área | Evidencia |
 | --- | --- |
 | La app y la suite compilan | `flutter analyze` → *No issues found* |
-| La suite pasa | `flutter test` → *All tests passed!* (107 tests) |
+| La suite pasa | `flutter test` → *All tests passed!* |
 | Formato | `dart format --set-exit-if-changed` → limpio |
 | Correo de contacto | `tools/check_contact_email.py` → OK |
 | Corpus de voz sincronizado | `tools/export_voice_corpus.py --check` → OK |
@@ -58,11 +59,13 @@ Y en CI (GitHub Actions, runner limpio):
 
 | Área | Evidencia |
 | --- | --- |
-| La suite pasa en limpio | `flutter test` → 107 tests, en el runner |
+| La suite pasa en limpio | `flutter test` en el runner, dentro del gate verde del run 16 de `main` |
 | **El APK release compila** | `✓ Built build/app/outputs/flutter-apk/app-release.apk (50.9MB)` |
 | **El binario no lleva permisos de red** | `aapt2 dump permissions` sobre el APK: un único permiso, `com.earlify.descubreconlua.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`. **Sin INTERNET, sin estado de red, sin nada más** |
-| La tubería de voz llega a Celtia | Resolvió el repo de `proxectonos` por la API de Hugging Face y encontró `celtia.pth`; sólo falló por el *gating* |
-| 5 de 12 grabaciones sintetizadas | Castellanas, con Sharvard. Medidas con ffmpeg: mono 22 kHz, picos entre −3,2 y −2,4 dBFS |
+| **Las 12 grabaciones existen** | Gallego con Celtia (Proxecto Nós), castellano con Sharvard. `check_voice_coverage.py` → 12/12 |
+| **Ninguna graba­ción pica** | `check_voice_levels.py` sobre los 12 ficheros publicados: entre −3,2 y −2,4 dBFS, ninguna por encima de −1 |
+| **El APK va firmado con la clave de release** | `apksigner verify --print-certs` sobre el APK del run: `CN=Descubre con Lua, O=Earlify Health S.L.`. Con los secrets puestos, una firma de depuración habría tumbado el paso |
+| **El AAB se compila** | `flutter build appbundle --release` en el run 16 de `main`: artefacto `android-aab`, 45,93 MB, `versionCode 16` |
 
 **Sobre el único permiso del binario.** Lo inyecta AndroidX Core en toda app que
 lo use, y Flutter exige AndroidX. Lleva el nombre de paquete de esta app, se
@@ -79,41 +82,59 @@ lo acepta de forma explícita y rechaza cualquier otro.
 | **Ninguna pantalla se ha visto en un aparato** | No hay emulador ni dispositivo. Cero capturas en `docs/capturas/`. El APK de CI se puede instalar: está como artefacto del workflow |
 | **La app nunca se ha ejecutado** | Que el APK compile y que la asamblea funcione en el aula son cosas distintas |
 | **Desbordes de disposición** | Sin aparato no hay forma de ver un `RenderFlex overflowed`. En release no se ve nada: el texto simplemente se corta. Falta comprobar en gallego, castellano y con escala de texto grande |
-| **Las 12 grabaciones de voz** | `huggingface.co` también está bloqueado aquí. El gate de cobertura falla, correctamente |
-| **La firma de release, del lado de Gradle** | El paso del workflow que escribe `key.properties` sí está probado aquí (el keystore vuelve byte a byte idéntico y `keytool` lo valida). Lo que **no** se ha ejecutado nunca, ni aquí ni en CI, es la rama `if (keystorePropertiesFile.exists())` de `android/app/build.gradle`: hasta hoy no había secrets, así que siempre cayó a la clave de depuración |
-| **El AAB** | Nunca se ha ejecutado `flutter build appbundle` en este proyecto, ni en local ni en CI |
-| **Los gates de Dart, en este contenedor** | No hay SDK de Flutter instalado aquí (`dart: command not found`). Los seis gates de contenido sí corrieron y pasaron; `dart format`, `flutter analyze` y `flutter test` quedan para CI |
+| **Los gates de Dart, en este contenedor** | No hay SDK de Flutter instalado aquí (`dart: command not found`). Los siete gates de contenido sí corrieron y pasaron; `dart format`, `flutter analyze` y `flutter test` quedan para CI |
+| **Nadie ha escuchado las grabaciones** | Los gates miden picos, duración y cobertura. Que el galego de Celtia suene natural para una docente de Vigo, y que «Mexillón» se entienda a la primera en una asamblea, no lo dice ningún gate |
 
 ### Estado de CI
 
-**8 de 9 gates en verde.** El único rojo es la cobertura de voz, abajo.
+**`main` en verde entero: run 16, los 12 gates.** Es la primera vez que este
+proyecto pasa sus propias comprobaciones completas. Antes de ese run, `main`
+nunca había tenido uno limpio.
 
-`.github/workflows/ci.yml` compila además el binario firmado (APK y AAB), con la
-forma del `android.yml` de Valeria+ adaptada a Flutter. **Mientras no existan los
-cuatro secrets `ANDROID_RELEASE_*`, el APK sale firmado con la clave de
-depuración y el AAB no se genera: hoy no hay nada publicable en Google Play.**
-El workflow lo dice en el resumen de cada run, leyendo el certificado del APK con
-`apksigner`; no queda como suposición. Ver «Publicar» en el README.
+`.github/workflows/ci.yml` corre los gates **y** compila el binario firmado, con
+la forma del `android.yml` de Valeria+ adaptada a Flutter. Del run 16 salen:
 
-### Bloqueante conocido: la app sólo reproduce la mitad
+| Artefacto | Tamaño | Retención |
+| --- | --- | --- |
+| `android-aab` · `versionCode 16` | 45,93 MB | 3 días |
+| `android-apk` | 23,21 MB | 5 días |
 
-`tools/check_voice_coverage.py` falla con **7 de 12** locuciones sin grabación:
-las seis gallegas, más el recitado castellano. Ese último volvió a faltar a
-propósito: al recolocar dos marcas de pulso cambió el texto, con él el
-identificador, y el sistema declaró huérfana la grabación vieja. Es la
-sincronía texto-audio funcionando. No es un fallo del gate: es el estado del
-producto.
+El AAB pesa el doble que el APK porque lleva todas las arquitecturas, densidades
+e idiomas; Play entrega a cada móvil sólo su porción.
 
-Para resolverlo:
+`android-mapping` no se genera: `minifyEnabled false`, así que Gradle no escribe
+`mapping.txt`. El paso está puesto y no falla por ello.
 
-1. Aceptar las condiciones del modelo Celtia de `proxectonos` en Hugging Face
-   con una cuenta y crear un token de lectura.
-2. Añadirlo como secret `HF_TOKEN` del repositorio.
-3. Lanzar el workflow **Generate Voice Assets**.
+**Un gate en rojo bloquea el AAB**, porque los pasos posteriores a uno fallido se
+saltan. Es lo correcto —un AAB es lo que se sube a Play— pero conviene saberlo:
+cuando el AAB no aparece, el motivo está más arriba en el run, no en el paso del
+AAB. El APK sí se sube en runs rojos, a propósito: sirve para instalar y mirar.
 
-El workflow sintetiza gallego con **Celtia · Proxecto Nós** y castellano con
-**Sharvard**, masteriza a −3 dBFS, y commitea los `.m4a`. Los modelos corren
-ahí y jamás en el aparato: el APK lleva grabaciones, no inferencia.
+### Resuelto: la app ya reproduce las 12 locuciones
+
+`check_voice_coverage.py` llegó a fallar con 7 de 12 sin grabación. Se resolvió
+aceptando las condiciones del modelo Celtia de `proxectonos` en Hugging Face,
+añadiendo el token como secret `HF_TOKEN` y lanzando **Generate Voice Assets**
+(run 5), que sintetizó las seis gallegas y las commiteó.
+
+Medidas aquí sobre los ficheros descargados:
+
+| Locución | Duración | Pico |
+| --- | ---: | ---: |
+| Peixe | 0,81 s | −3,2 dBFS |
+| Cuncha | 1,02 s | −3,0 dBFS |
+| Barco | 0,53 s | −2,7 dBFS |
+| Gaivota | 1,15 s | −3,0 dBFS |
+| Mexillón | 1,08 s | −3,0 dBFS |
+| O recitado a pulso | 8,01 s | −2,9 dBFS |
+
+El recitado se sintetizó **sin** las marcas de pulso ni la partición silábica: el
+fichero dice «Ondas que veñen», la pantalla muestra `* On-das * que veñen`. El
+identificador `07aaac78` es el hash del texto **mostrado**, así que mover una
+marca deja la grabación huérfana y el gate lo dice.
+
+Los modelos corren en CI y jamás en el aparato: el APK lleva grabaciones, no
+inferencia. Eso es lo que mantiene el binario sin permisos de red.
 
 ---
 

@@ -25,11 +25,14 @@ comprobado y nombra el comando que lo comprobó.
 
 ## Estado
 
-Resumen honesto: la suite pasa (**114 tests**), el análisis está limpio, **el
-APK de release compila** y **su binario no lleva ni un permiso de red**. Lo que
-todavía falla es la cobertura de voz: faltan grabaciones y el gate lo dice.
+Resumen honesto: **`main` pasa sus 12 gates** (run 16), el binario **no lleva ni
+un permiso de red**, las **12 locuciones tienen grabación** y de cada run de
+`main` sale un **AAB firmado con la clave de release**, listo para Play Console.
 
-Ninguna pantalla se ha visto todavía en un aparato real.
+Lo que no está comprobado, y no lo arregla ningún run verde: **ninguna pantalla
+se ha visto en un aparato** y **nadie ha escuchado las voces gallegas**. Los
+gates miden picos, duraciones y cobertura; no dicen si el galego suena natural
+ni si una cadena se corta en una pantalla pequeña.
 
 ## Comprobar
 
@@ -89,9 +92,14 @@ de alta también aquí.
 | `ANDROID_RELEASE_KEY_ALIAS` | Alias de la clave |
 | `ANDROID_RELEASE_KEY_PASSWORD` | Contraseña de la clave |
 
-Sin esos secrets el APK se firma con la **clave de depuración**: se instala a
-mano, y Google Play lo rechaza. El AAB no se genera en ese caso, porque un AAB
-sin firmar no se puede subir a ningún sitio y solo sería un fichero que engaña.
+**Los cuatro secrets están configurados en este repositorio** y verificados en el
+run 16 de `main`. Si faltasen, el APK se firmaría con la **clave de depuración**
+—se instala a mano, y Google Play lo rechaza— y el AAB no se generaría, porque un
+AAB sin firmar no se puede subir a ningún sitio y solo sería un fichero que
+engaña.
+
+Un gate en rojo también bloquea el AAB: los pasos posteriores a uno fallido se
+saltan. Cuando el AAB no aparezca, el motivo está más arriba en el run.
 El paso «Comprobar con qué clave va firmado» lee el certificado **del APK** con
 `apksigner` y lo publica en el resumen del run, igual que el gate de permisos lee
 el binario en vez de la configuración.
