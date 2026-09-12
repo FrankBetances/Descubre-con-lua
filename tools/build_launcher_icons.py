@@ -28,7 +28,10 @@ BRAND = ROOT / "assets" / "brand"
 RES = ROOT / "android" / "app" / "src" / "main" / "res"
 
 # The sober maritime blue the app already uses for its primary colour.
-BACKGROUND = "#1B4965"
+# Turquesa de marca, el mismo `primary` del tema (lib/core/theme/app_theme.dart).
+# Era el azul Vigo #1B4965: sobre él la gata quedaba apagada, y ese fondo ya no
+# existe en ninguna pantalla de la app.
+BACKGROUND = "#00C4BE"
 
 # Android launcher densities, in pixels.
 LAUNCHER_SIZES = {
