@@ -12,6 +12,8 @@ import 'features/academy/views/capsula_detail_screen.dart';
 import 'features/academy/widgets/selector_idioma_widget.dart';
 import 'features/bienvenida/welcome_screen.dart';
 import 'features/creditos/credits_screen.dart';
+import 'features/premios/premios_repository.dart';
+import 'features/premios/premios_screen.dart';
 import 'features/juega/views/asamblea_guiada_screen.dart';
 import 'features/juega/views/unidades_list_screen.dart';
 
@@ -28,12 +30,14 @@ void main() async {
 /// sovereign bilingual content (`gl`/`es`), and sober educational Material 3 design.
 class DescubreConLuaApp extends StatefulWidget {
   final ContentRepository? contentRepository;
+  final PremiosRepository? premiosRepository;
   final OfflineAudioService? audioService;
   final AppLanguage initialLanguage;
 
   const DescubreConLuaApp({
     super.key,
     this.contentRepository,
+    this.premiosRepository,
     this.audioService,
     this.initialLanguage = AppLanguage.gl,
   });
@@ -45,6 +49,7 @@ class DescubreConLuaApp extends StatefulWidget {
 class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
   late AppLanguage _currentLanguage;
   late final ContentRepository _repository;
+  late final PremiosRepository _premios;
   late final OfflineAudioService _audioService;
   bool _createdInternalAudioService = false;
 
@@ -53,6 +58,8 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
     super.initState();
     _currentLanguage = widget.initialLanguage;
     _repository = widget.contentRepository ?? ContentRepository();
+    _premios = widget.premiosRepository ?? PremiosRepository();
+    _premios.cargar();
     if (widget.audioService != null) {
       _audioService = widget.audioService!;
     } else {
@@ -110,6 +117,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
             ),
         '/home': (context) => HomeScreen(
               repository: _repository,
+              premios: _premios,
               audioService: _audioService,
               currentLanguage: _currentLanguage,
               onToggleLanguage: _toggleLanguage,
@@ -134,6 +142,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
             return MaterialPageRoute(
               builder: (context) => CapsulaDetailScreen(
                 capsula: capsula,
+                premios: _premios,
                 initialLanguage: _currentLanguage,
                 onLanguageChanged: _setLanguage,
               ),
@@ -145,6 +154,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
             return MaterialPageRoute(
               builder: (context) => AsambleaGuiadaScreen(
                 unidad: unidad,
+                premios: _premios,
                 audioService: _audioService,
                 initialLanguage: _currentLanguage,
                 onLanguageChanged: _setLanguage,
@@ -163,6 +173,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
 /// - Academy (Familias)
 class HomeScreen extends StatelessWidget {
   final ContentRepository repository;
+  final PremiosRepository? premios;
   final OfflineAudioService audioService;
   final AppLanguage currentLanguage;
   final VoidCallback onToggleLanguage;
@@ -175,6 +186,7 @@ class HomeScreen extends StatelessWidget {
     required this.currentLanguage,
     required this.onToggleLanguage,
     this.onLanguageChanged,
+    this.premios,
   });
 
   static const _appBarTitle = LocalizedString(
@@ -208,8 +220,17 @@ class HomeScreen extends StatelessWidget {
   );
 
   static const _privacyNotice = LocalizedString(
-    gl: '🔒 100% Sen conexión nin recollida de datos. Deseñado baixo o Decreto 150/2022.',
-    es: '🔒 100% Sin conexión ni recogida de datos. Diseñado bajo el Decreto 150/2022.',
+    gl: 'Sen conexión e sen datos persoais. O único que se garda neste '
+        'aparello é a túa propia conta de uso. Deseñado baixo o Decreto '
+        '150/2022.',
+    es: 'Sin conexión y sin datos personales. Lo único que se guarda en este '
+        'aparato es tu propia cuenta de uso. Diseñado bajo el Decreto '
+        '150/2022.',
+  );
+
+  static const _premiosSubtitle = LocalizedString(
+    gl: 'Nivel, racha e insignias da persoa adulta que usa a app.',
+    es: 'Nivel, racha e insignias de la persona adulta que usa la app.',
   );
 
   @override
@@ -292,6 +313,29 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             const SizedBox(height: 24.0),
+            if (premios != null)
+              OutlinedButton.icon(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => PremiosScreen(
+                      repository: premios!,
+                      currentLanguage: currentLanguage,
+                    ),
+                  ),
+                ),
+                icon: const Icon(Icons.military_tech_outlined),
+                label: Text(PremiosScreen.titulo.resolve(currentLanguage)),
+              ),
+            if (premios != null) ...[
+              const SizedBox(height: 8.0),
+              Text(
+                _premiosSubtitle.resolve(currentLanguage),
+                textAlign: TextAlign.center,
+                style: theme.textTheme.bodySmall
+                    ?.copyWith(color: AppTheme.textMuted),
+              ),
+              const SizedBox(height: 24.0),
+            ],
             Card(
               color: const Color(0xFFEBE7D5),
               elevation: 0,

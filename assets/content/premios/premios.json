@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "nota": "Los premios los gana el ADULTO que usa la app: la maestra por asambleas dirigidas, la familia por cápsulas leídas. Aquí no se registra nada de ninguna criatura, porque el niño no usa la pantalla.",
+  "xp": {
+    "porAsamblea": 20,
+    "porCapsula": 15
+  },
+  "niveles": [
+    { "nivel": 1, "xpMinimo": 0,   "titulo": { "gl": "Gata curiosa",   "es": "Gata curiosa" } },
+    { "nivel": 2, "xpMinimo": 60,  "titulo": { "gl": "Gata atenta",    "es": "Gata atenta" } },
+    { "nivel": 3, "xpMinimo": 150, "titulo": { "gl": "Gata paciente",  "es": "Gata paciente" } },
+    { "nivel": 4, "xpMinimo": 300, "titulo": { "gl": "Gata constante", "es": "Gata constante" } },
+    { "nivel": 5, "xpMinimo": 500, "titulo": { "gl": "Gata mestra",    "es": "Gata maestra" } },
+    { "nivel": 6, "xpMinimo": 800, "titulo": { "gl": "Gata sabia",     "es": "Gata sabia" } }
+  ],
+  "insignias": [
+    {
+      "id": "primeira_asemblea",
+      "perfil": "docente",
+      "criterio": { "tipo": "asambleas", "valor": 1 },
+      "titulo": { "gl": "Primeira asemblea", "es": "Primera asamblea" },
+      "descripcion": {
+        "gl": "Dirixiches a túa primeira asemblea con Lúa.",
+        "es": "Dirigiste tu primera asamblea con Lúa."
+      }
+    },
+    {
+      "id": "dez_asembleas",
+      "perfil": "docente",
+      "criterio": { "tipo": "asambleas", "valor": 10 },
+      "titulo": { "gl": "Roda de dez", "es": "Rueda de diez" },
+      "descripcion": {
+        "gl": "Dez asembleas dirixidas. A rutina xa está posta.",
+        "es": "Diez asambleas dirigidas. La rutina ya está puesta."
+      }
+    },
+    {
+      "id": "trinta_asembleas",
+      "perfil": "docente",
+      "criterio": { "tipo": "asambleas", "valor": 30 },
+      "titulo": { "gl": "Un trimestre enteiro", "es": "Un trimestre entero" },
+      "descripcion": {
+        "gl": "Trinta asembleas. Iso son meses de lingua compartida.",
+        "es": "Treinta asambleas. Eso son meses de lengua compartida."
+      }
+    },
+    {
+      "id": "primeira_capsula",
+      "perfil": "familia",
+      "criterio": { "tipo": "capsulas", "valor": 1 },
+      "titulo": { "gl": "Primeira cápsula", "es": "Primera cápsula" },
+      "descripcion": {
+        "gl": "Leaches a túa primeira cápsula de Academy.",
+        "es": "Leíste tu primera cápsula de Academy."
+      }
+    },
+    {
+      "id": "cinco_capsulas",
+      "perfil": "familia",
+      "criterio": { "tipo": "capsulas", "valor": 5 },
+      "titulo": { "gl": "Os cinco bloques", "es": "Los cinco bloques" },
+      "descripcion": {
+        "gl": "Cinco cápsulas lidas: un paso por cada bloque.",
+        "es": "Cinco cápsulas leídas: un paso por cada bloque."
+      }
+    },
+    {
+      "id": "quince_capsulas",
+      "perfil": "familia",
+      "criterio": { "tipo": "capsulas", "valor": 15 },
+      "titulo": { "gl": "Lectura fonda", "es": "Lectura honda" },
+      "descripcion": {
+        "gl": "Quince cápsulas. Xa non buscas trucos, buscas criterio.",
+        "es": "Quince cápsulas. Ya no buscas trucos, buscas criterio."
+      }
+    },
+    {
+      "id": "racha_tres",
+      "perfil": "ambos",
+      "criterio": { "tipo": "racha", "valor": 3 },
+      "titulo": { "gl": "Tres días seguidos", "es": "Tres días seguidos" },
+      "descripcion": {
+        "gl": "Tres días seguidos. O difícil non é empezar, é volver.",
+        "es": "Tres días seguidos. Lo difícil no es empezar, es volver."
+      }
+    },
+    {
+      "id": "racha_sete",
+      "perfil": "ambos",
+      "criterio": { "tipo": "racha", "valor": 7 },
+      "titulo": { "gl": "Unha semana", "es": "Una semana" },
+      "descripcion": {
+        "gl": "Sete días seguidos con Lúa.",
+        "es": "Siete días seguidos con Lúa."
+      }
+    },
+    {
+      "id": "racha_vinte_un",
+      "perfil": "ambos",
+      "criterio": { "tipo": "racha", "valor": 21 },
+      "titulo": { "gl": "Xa é costume", "es": "Ya es costumbre" },
+      "descripcion": {
+        "gl": "Vinte e un días seguidos. Isto xa non se decide cada mañá.",
+        "es": "Veintiún días seguidos. Esto ya no se decide cada mañana."
+      }
+    }
+  ]
+}

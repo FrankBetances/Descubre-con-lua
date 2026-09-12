@@ -50,6 +50,12 @@ class MainActivity : FlutterActivity() {
                     releasePlayer()
                     result.success(null)
                 }
+                // Carpeta privada de la app, para que Dart pueda guardar el
+                // progreso de premios sin añadir una dependencia como
+                // path_provider. Esta carpeta la borra Android al desinstalar y
+                // ninguna otra app puede leerla. No sale de aquí ni un byte:
+                // sigue sin haber permiso de red.
+                "filesDir" -> result.success(filesDir.absolutePath)
                 else -> result.notImplemented()
             }
         }

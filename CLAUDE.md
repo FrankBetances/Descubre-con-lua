@@ -14,7 +14,7 @@ Todo el contenido está en gallego y castellano. La primera versión la generó 
 Este archivo importaba `.agents/rules/01-producto.md`, `02-flutter-android.md` y `03-contenido.md`. **Esos tres ficheros no existen en el repositorio**, así que las importaciones se han retirado: un import roto no es una regla, es una regla que nadie lee. Estas son las reglas, sin depender de ningún import:
 
 - el niño no usa la pantalla;
-- cero datos personales;
+- cero datos personales (los premios guardan contadores del adulto, nunca nada de una crianza: ver abajo);
 - sin permiso INTERNET en release;
 - nada con finalidad sanitaria;
 - contenido en JSON, nunca escrito en los widgets.
@@ -127,7 +127,8 @@ Nada de emoji del sistema como iconografía: cambian entre fabricantes y nunca f
 
 - Es el mismo personaje que en Valeria+. Allí el sprite vive como rejilla de caracteres en `src/ValeriaCatPixel.tsx` del repositorio Valeria, y de esa rejilla salen icono, icono adaptativo y splash.
 - Aquí se **porta la rejilla**, no se redibuja a ojo. Vive en `assets/brand/lua_head.txt`, y de ahí salen icono, icono adaptativo y splash mediante `tools/build_launcher_icons.py`. Icono y splash deben salir de la misma fuente.
-- **No se hereda nada del sistema de premios de Valeria+:** ni insignias, ni desfile, ni espejo con el periférico Lúa. En esta edición no existen, porque el niño no usa la pantalla. Lúa aparece para la docente y la familia, no para captar la atención infantil.
+- **El sistema de premios existe, pero premia al ADULTO.** Frank lo pidió así. Lo que NO se hereda de Valeria+ es el sujeto: allí los gana quien juega, que es la criatura; aquí el niño no toca la pantalla, así que premiar su «progreso» sería inventarse un dato que nadie ha medido. Hay dos recorridos separados: la docente por asambleas dirigidas, la familia por cápsulas leídas. Sigue sin heredarse el desfile ni el espejo con el periférico Lúa. Lúa aparece para la docente y la familia, nunca para captar la atención infantil.
+- Los premios viven en `lib/features/premios/` y su contenido —niveles e insignias— en `assets/content/premios/premios.json`, nunca escrito en los widgets.
 
 ### 6. Rediseñar, no parchear
 
@@ -160,6 +161,8 @@ Lo comprueba un gate: `tools/check_contact_email.py`.
 Si la app se publica en Google Play, la política de privacidad y el formulario de *Seguridad de los datos* deben decir lo mismo que el APK: sin datos, sin permisos, sin SDKs de terceros.
 
 Cualquier cambio en lo que la app recoge (un permiso, un paquete, un campo guardado) obliga a actualizar **en el mismo cambio** la política y el formulario de Play Console.
+
+**Lo que la app guarda hoy**, y nada más: la cuenta de uso de la persona adulta para los premios de Lúa —asambleas dirigidas, cápsulas leídas, racha actual y mejor racha, fecha del último día **sin hora**, e identificadores de insignias ganadas—. Va en el almacenamiento privado de la app (`getFilesDir()`), no identifica a nadie, no contiene nada de ninguna crianza y no puede salir del aparato porque no hay permiso de red. Lo guarda un gate: `test/features/premios_test.dart` falla si aparece una clave nueva en ese fichero.
 
 Las URLs legales de esta app son estas, y no otras. Salen del sitio de GitHub Pages que publica `docs/`:
 

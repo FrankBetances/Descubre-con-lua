@@ -11,6 +11,8 @@ import '../widgets/paso_exploracion_widget.dart';
 import '../widgets/paso_matematicas_widget.dart';
 import '../widgets/paso_ponte_casa_widget.dart';
 import '../widgets/paso_preguntas_widget.dart';
+import '../../premios/premios_model.dart';
+import '../../premios/premios_repository.dart';
 
 /// Screen orchestrating the 6 canonical assembly phases for early childhood teachers.
 ///
@@ -30,12 +32,18 @@ class AsambleaGuiadaScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
 
+  /// Opcional a propósito: los tests que ya existían montan esta pantalla sin
+  /// premios y tienen que seguir valiendo. Sin repositorio, la asamblea
+  /// funciona igual y no cuenta nada.
+  final PremiosRepository? premios;
+
   const AsambleaGuiadaScreen({
     super.key,
     required this.unidad,
     this.audioService,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
+    this.premios,
   });
 
   @override
@@ -115,19 +123,36 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
     }
   }
 
-  void _finalizarAsamblea() {
+  Future<void> _finalizarAsamblea() async {
     final isGl = _language == AppLanguage.gl;
     _audioService.stop();
+
+    // Los premios de Lúa cuentan esta asamblea. Es lo ÚNICO que se guarda: un
+    // contador y la fecha, sin nada de ninguna crianza ni de la sesión.
+    final nuevas = await widget.premios?.registrar(
+          Perfil.docente,
+          EventoPremio.asamblea,
+        ) ??
+        const <Insignia>[];
+
+    if (!mounted) return;
+
+    // El mensaje anterior decía «la app no guarda nada de la sesión». Dejó de
+    // ser cierto en el momento en que empezó a contarse la asamblea, así que
+    // cambia aquí, en el mismo cambio que lo volvió falso. Un texto que miente
+    // a la maestra es el mismo defecto que un informe que certifica lo que no
+    // ejecutó.
+    final mensaje = nuevas.isNotEmpty
+        ? (isGl
+            ? 'Asemblea completada. Gañaches: ${nuevas.first.titulo.gl}'
+            : 'Asamblea completada. Ganaste: ${nuevas.first.titulo.es}')
+        : (isGl
+            ? 'Asemblea completada. Só se garda a conta, nada da sesión.'
+            : 'Asamblea completada. Solo se guarda la cuenta, nada de la sesión.');
+
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(
-          isGl
-              // "Proposta gardada" was not true: this app stores nothing at
-              // all, by design. Telling a teacher her session was saved is the
-              // same defect as a report that certifies what it never ran.
-              ? 'Asemblea completada. A app non garda nada da sesión.'
-              : 'Asamblea completada. La app no guarda nada de la sesión.',
-        ),
+        content: Text(mensaje),
         backgroundColor: AppTheme.calmSage,
       ),
     );
