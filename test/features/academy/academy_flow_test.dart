@@ -128,7 +128,9 @@ void main() {
       // The five blocks do not fit in one viewport: a family scrolls to reach
       // the last ones, so the test scrolls too instead of asserting on height.
       for (var i = 1; i <= 5; i++) {
-        await expectAfterScrolling(tester, find.text('Bloque $i'));
+        // Versalitas: el antetítulo de la tarjeta de Academy va en mayúsculas,
+        // como en Valeria+. Si alguien quita el toUpperCase, esto lo dice.
+        await expectAfterScrolling(tester, find.text('BLOQUE $i'));
       }
 
       // Verify block 1 title in Galician
@@ -136,7 +138,7 @@ void main() {
     });
 
     testWidgets(
-        'CapsulaDetailScreen displays 4 canonical sections and reflection',
+        'el lector recorre las 4 secciones y la reflexión, una por pantalla',
         (tester) async {
       await tester.pumpWidget(
         MaterialApp(
@@ -146,31 +148,50 @@ void main() {
           ),
         ),
       );
+      await tester.pumpAndSettle();
 
-      // Verify 4 canonical sections
-      await expectAfterScrolling(tester, find.text('1. Idea clave'));
-      await expectAfterScrolling(tester, find.text('2. Por que importa'));
-      await expectAfterScrolling(tester, find.text('3. Que facer na casa'));
-      await expectAfterScrolling(tester, find.text('4. Exemplo cotián'));
+      // El lector va PAGINADO, como el de Valeria+: una idea por pantalla. Así
+      // que no se busca todo a la vez, se recorre, que es lo que hace una
+      // familia. Si alguien vuelve al scroll único, este test lo dice.
+      Future<void> siguiente() async {
+        await tester.tap(find.text('Seguinte'));
+        await tester.pumpAndSettle();
+      }
 
-      // Verify content presence
-      await expectAfterScrolling(
-          tester, find.text('A fala comeza co balbuceo e a mirada.'));
-      await expectAfterScrolling(
-          tester, find.text('Garda 5 segundos de espera atenta.'));
+      expect(find.text('A idea clave'), findsOneWidget);
+      expect(
+          find.text('A fala comeza co balbuceo e a mirada.'), findsOneWidget);
+      // Las otras secciones NO están todavía: eso es la paginación funcionando.
+      expect(find.text('Por que importa'), findsNothing);
 
-      // Verify formative reflection
-      await expectAfterScrolling(tester, find.text('Reflexión para a familia'));
-      await expectAfterScrolling(tester, find.text('Verdadeiro'),
-          matcher: findsWidgets);
-      await expectAfterScrolling(tester, find.text('Falso'),
-          matcher: findsWidgets);
+      await siguiente();
+      expect(find.text('Por que importa'), findsOneWidget);
 
-      // Tap true
-      await tapAfterScrolling(tester, find.text('Verdadeiro'));
+      await siguiente();
+      expect(find.text('Que facer na casa'), findsOneWidget);
+      expect(find.text('Garda 5 segundos de espera atenta.'), findsOneWidget);
 
-      await expectAfterScrolling(
-          tester, find.text('Exacto: concede tempo de resposta.'));
+      await siguiente();
+      expect(find.text('Un momento calquera'), findsOneWidget);
+
+      // Primera afirmación: aquí no se puede avanzar sin responder.
+      await siguiente();
+      expect(find.text('Verdadeiro'), findsOneWidget);
+      expect(find.text('Falso'), findsOneWidget);
+      expect(
+        tester.widget<ElevatedButton>(find.byType(ElevatedButton)).onPressed,
+        isNull,
+        reason: 'Sin responder no se avanza: si no, la cápsula se terminaría '
+            'sin haberla leído.',
+      );
+
+      await tester.tap(find.text('Verdadeiro'));
+      await tester.pumpAndSettle();
+      expect(find.text('Exacto: concede tempo de resposta.'), findsOneWidget);
+      expect(
+        tester.widget<ElevatedButton>(find.byType(ElevatedButton)).onPressed,
+        isNotNull,
+      );
     });
   });
 }

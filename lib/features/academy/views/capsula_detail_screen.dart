@@ -1,22 +1,26 @@
 import 'package:flutter/material.dart';
+
 import '../../../core/localization/app_language.dart';
+import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/capsula_model.dart';
-import '../widgets/seccion_capsula_widget.dart';
-import '../widgets/selector_idioma_widget.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
+import '../widgets/academy_header.dart';
+import '../widgets/selector_idioma_widget.dart';
 
-/// Screen displaying a single Academy micro-learning capsule for families.
+/// El lector de una cápsula, portado del de Valeria+
+/// (`docs/screenshots/29-academy-lector.png` y `30-academy-quiz.png`).
 ///
-/// Implements the 4 canonical sections:
-/// 1. Idea clave
-/// 2. Por qué importa / Por que importa
-/// 3. Qué hacer en casa / Que facer na casa
-/// 4. Ejemplo cotidiano / Exemplo cotián
+/// El cambio de fondo respecto a lo que había: **va paginado**. Antes era un
+/// scroll larguísimo con las cuatro secciones y la reflexión abajo del todo.
+/// Valeria+ presenta una idea por pantalla, con puntos de progreso arriba y un
+/// botón grande abajo, y eso no es estética: una familia lee esto en cinco
+/// minutos robados, y una pantalla con una sola idea se puede terminar.
 ///
-/// Plus formative reflection questions (`Afirmacion`), dynamic language toggle (`GL`/`ES`),
-/// and large adult-first typography (body >= 16sp).
+/// La cápsula cuenta como LEÍDA cuando se responde a todas las afirmaciones,
+/// no al abrirla. Abrir y salir no es leer, y un contador que premie eso mide
+/// otra cosa distinta de la que dice medir.
 class CapsulaDetailScreen extends StatefulWidget {
   final Capsula capsula;
   final AppLanguage initialLanguage;
@@ -40,21 +44,97 @@ class CapsulaDetailScreen extends StatefulWidget {
 class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
   late AppLanguage _language;
   final Map<String, bool?> _userAnswers = {};
+  final PageController _pages = PageController();
+  int _pagina = 0;
 
   /// Para no contar la misma cápsula dos veces si alguien cambia una respuesta.
   bool _yaContada = false;
 
-  /// Una cápsula cuenta como LEÍDA cuando se ha respondido a todas sus
-  /// afirmaciones, no al abrirla. Abrir y salir no es leer, y un contador que
-  /// premie eso mide otra cosa distinta de la que dice medir.
+  static const _siguiente = LocalizedString(gl: 'Seguinte', es: 'Siguiente');
+  static const _terminar = LocalizedString(gl: 'Rematar', es: 'Terminar');
+  static const _atras = LocalizedString(gl: 'Atrás', es: 'Atrás');
+
+  static const _reflexion = LocalizedString(
+    gl: 'PARA PENSAR',
+    es: 'PARA PENSAR',
+  );
+  static const _verdadero = LocalizedString(gl: 'Verdadeiro', es: 'Verdadero');
+  static const _falso = LocalizedString(gl: 'Falso', es: 'Falso');
+
+  static const _pendiente = LocalizedString(
+    gl: 'Escolle unha resposta para continuar.',
+    es: 'Elige una respuesta para continuar.',
+  );
+
+  /// Las cuatro secciones canónicas, con su antetítulo y su icono.
+  List<_Seccion> get _secciones {
+    final c = widget.capsula;
+    return [
+      _Seccion(
+        icono: Icons.lightbulb_outline,
+        kicker: const LocalizedString(gl: 'A IDEA', es: 'LA IDEA'),
+        titulo: const LocalizedString(
+          gl: 'A idea clave',
+          es: 'La idea clave',
+        ),
+        cuerpo: c.ideaClave,
+      ),
+      _Seccion(
+        icono: Icons.psychology_outlined,
+        kicker: const LocalizedString(gl: 'POR QUE', es: 'POR QUÉ'),
+        titulo: const LocalizedString(
+          gl: 'Por que importa',
+          es: 'Por qué importa',
+        ),
+        cuerpo: c.porQueImporta,
+      ),
+      _Seccion(
+        icono: Icons.home_outlined,
+        kicker: const LocalizedString(gl: 'NA CASA', es: 'EN CASA'),
+        titulo: const LocalizedString(
+          gl: 'Que facer na casa',
+          es: 'Qué hacer en casa',
+        ),
+        cuerpo: c.queHacerEnCasa,
+      ),
+      _Seccion(
+        icono: Icons.wb_sunny_outlined,
+        kicker: const LocalizedString(gl: 'UN EXEMPLO', es: 'UN EJEMPLO'),
+        titulo: const LocalizedString(
+          gl: 'Un momento calquera',
+          es: 'Un momento cualquiera',
+        ),
+        cuerpo: c.ejemploCotidiano,
+      ),
+    ];
+  }
+
+  int get _totalPaginas =>
+      _secciones.length + widget.capsula.afirmaciones.length;
+
+  @override
+  void initState() {
+    super.initState();
+    _language = widget.initialLanguage;
+  }
+
+  @override
+  void dispose() {
+    _pages.dispose();
+    super.dispose();
+  }
+
+  void _onToggleLanguage(AppLanguage newLang) {
+    setState(() => _language = newLang);
+    widget.onLanguageChanged?.call(newLang);
+  }
+
+  /// Cuenta la cápsula cuando ya se respondió a todas sus afirmaciones.
   Future<void> _contarSiEstaLeida() async {
     if (_yaContada) return;
     final afirmaciones = widget.capsula.afirmaciones;
     if (afirmaciones.isEmpty) return;
-    final todas = afirmaciones.every(
-      (a) => _userAnswers[a.id] != null,
-    );
-    if (!todas) return;
+    if (!afirmaciones.every((a) => _userAnswers[a.id] != null)) return;
 
     _yaContada = true;
     final nuevas = await widget.premios?.registrar(
@@ -64,11 +144,10 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
         const <Insignia>[];
 
     if (!mounted || nuevas.isEmpty) return;
-    final isGl = _language == AppLanguage.gl;
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(
-          isGl
+          _language == AppLanguage.gl
               ? 'Gañaches: ${nuevas.first.titulo.gl}'
               : 'Ganaste: ${nuevas.first.titulo.es}',
         ),
@@ -76,34 +155,38 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
     );
   }
 
-  @override
-  void initState() {
-    super.initState();
-    _language = widget.initialLanguage;
+  void _avanzar() {
+    if (_pagina >= _totalPaginas - 1) {
+      Navigator.of(context).pop();
+      return;
+    }
+    _pages.nextPage(
+      duration: const Duration(milliseconds: 240),
+      curve: Curves.easeOut,
+    );
   }
 
-  void _onToggleLanguage(AppLanguage newLang) {
-    setState(() {
-      _language = newLang;
-    });
-    widget.onLanguageChanged?.call(newLang);
+  /// En una página de reflexión no se avanza sin responder: si se pudiera,
+  /// la cápsula se terminaría sin haberla leído y el contador mediría otra cosa.
+  bool get _puedeAvanzar {
+    final indice = _pagina - _secciones.length;
+    if (indice < 0) return true;
+    final afirmacion = widget.capsula.afirmaciones[indice];
+    return _userAnswers[afirmacion.id] != null;
   }
 
   @override
   Widget build(BuildContext context) {
+    final lang = _language;
     final capsula = widget.capsula;
-    final theme = Theme.of(context);
-    final isGl = _language == AppLanguage.gl;
+    final secciones = _secciones;
+    final esUltima = _pagina >= _totalPaginas - 1;
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          isGl ? 'Cápsula de crianza' : 'Cápsula de crianza',
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 12.0),
+            padding: const EdgeInsets.only(right: AppTheme.spaceMd),
             child: SelectorIdiomaWidget(
               currentLanguage: _language,
               onLanguageChanged: _onToggleLanguage,
@@ -112,406 +195,339 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
           ),
         ],
       ),
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(20.0),
-          children: [
-            // Reading time & block badge
-            Row(
-              children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 10.0, vertical: 4.0),
-                  decoration: BoxDecoration(
-                    color: AppTheme.primaryVigoBlue.withValues(alpha: 0.12),
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const Icon(
-                        Icons.schedule_outlined,
-                        size: 16,
-                        color: AppTheme.primaryVigoBlue,
-                      ),
-                      const SizedBox(width: 6),
-                      Text(
-                        isGl
-                            ? '${capsula.tiempoLecturaMinutos} min de lectura'
-                            : '${capsula.tiempoLecturaMinutos} min de lectura',
-                        style: const TextStyle(
-                          color: AppTheme.primaryVigoBlue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 13.0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const Spacer(),
-                Text(
-                  isGl
-                      ? 'Orientación familiar 0-3 anos'
-                      : 'Orientación familiar 0-3 años',
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: const Color(0xFF6B7280),
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 12.0),
-
-            // Capsule title
-            Text(
-              capsula.titulo.resolve(_language),
-              style: theme.textTheme.headlineSmall?.copyWith(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: AppTheme.primaryVigoBlue,
-                height: 1.3,
-              ),
-            ),
-            const SizedBox(height: 8.0),
-
-            // Capsule subtitle
-            Text(
-              capsula.subtitulo.resolve(_language),
-              style: theme.textTheme.bodyLarge?.copyWith(
-                fontSize: 17.0,
-                color: const Color(0xFF4A5568),
-                fontStyle: FontStyle.italic,
-                height: 1.45,
-              ),
-            ),
-            const SizedBox(height: 24.0),
-
-            // 1. Idea clave
-            SeccionCapsulaWidget(
-              tipo: TipoSeccionCapsula.ideaClave,
-              titulo: isGl ? '1. Idea clave' : '1. Idea clave',
-              contenido: capsula.ideaClave.resolve(_language),
-              accentColor: AppTheme.primaryVigoBlue,
-            ),
-
-            // 2. Por qué importa
-            SeccionCapsulaWidget(
-              tipo: TipoSeccionCapsula.porQueImporta,
-              titulo: isGl ? '2. Por que importa' : '2. Por qué importa',
-              contenido: capsula.porQueImporta.resolve(_language),
-              accentColor: const Color(0xFF2C5E7A),
-            ),
-
-            // 3. Qué hacer en casa
-            SeccionCapsulaWidget(
-              tipo: TipoSeccionCapsula.queHacerEnCasa,
-              titulo: isGl ? '3. Que facer na casa' : '3. Qué hacer en casa',
-              contenido: capsula.queHacerEnCasa.resolve(_language),
-              accentColor: AppTheme.calmSage,
-            ),
-
-            // 4. Ejemplo cotidiano
-            SeccionCapsulaWidget(
-              tipo: TipoSeccionCapsula.ejemploCotidiano,
-              titulo: isGl ? '4. Exemplo cotián' : '4. Ejemplo cotidiano',
-              contenido: capsula.ejemploCotidiano.resolve(_language),
-              accentColor: AppTheme.accentTerracotta,
-            ),
-
-            const SizedBox(height: 12.0),
-
-            // Formative reflection section
-            if (capsula.afirmaciones.isNotEmpty) ...[
-              _buildReflectionSection(context, capsula.afirmaciones, isGl),
-              const SizedBox(height: 24.0),
-            ],
-
-            // Curricular & Normative framework card (Decreto 150/2022)
-            _buildCurricularCard(context, capsula, isGl),
-            const SizedBox(height: 32.0),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildReflectionSection(
-    BuildContext context,
-    List<Afirmacion> afirmaciones,
-    bool isGl,
-  ) {
-    final theme = Theme.of(context);
-
-    return Container(
-      padding: const EdgeInsets.all(20.0),
-      decoration: BoxDecoration(
-        color: const Color(0xFFFAF7EE),
-        borderRadius: BorderRadius.circular(16.0),
-        border: Border.all(
-          color: const Color(0xFFDFD7BE),
-          width: 1.5,
-        ),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Column(
         children: [
-          Row(
-            children: [
-              const Icon(
-                Icons.help_outline_rounded,
-                color: AppTheme.primaryVigoBlue,
-                size: 24,
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(
-                  isGl
-                      ? 'Reflexión para a familia'
-                      : 'Reflexión para la familia',
-                  style: theme.textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: AppTheme.primaryVigoBlue,
-                    fontSize: 18.0,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 8),
-          Text(
-            isGl
-                ? 'Unha pequena pausa para pensar sobre o día a día na crianza.'
-                : 'Una pequeña pausa para pensar sobre el día a día en la crianza.',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: const Color(0xFF4A5568),
-              fontSize: 14.5,
+          Expanded(
+            child: PageView.builder(
+              controller: _pages,
+              // Solo se navega con los botones: un deslizamiento accidental
+              // saltaría una reflexión sin responder.
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: _totalPaginas,
+              onPageChanged: (i) => setState(() => _pagina = i),
+              itemBuilder: (context, i) {
+                final enReflexionAqui = i >= secciones.length;
+                // La cabecera va DENTRO del scroll de cada página, no fija
+                // arriba. Con la cabecera fija más el pie de botones, a escala
+                // de texto 1,8 no queda altura para el contenido y la pantalla
+                // desborda: lo cazó el test de escala, no un aparato. A escala
+                // normal se ve igual que la de Valeria+; a escala grande, se
+                // desplaza en vez de cortarse.
+                final cabecera = AcademyHeader(
+                  kicker: enReflexionAqui
+                      ? _reflexion.resolve(lang)
+                      : secciones[i].kicker.resolve(lang),
+                  titulo: capsula.titulo.resolve(lang),
+                  pasos: _totalPaginas,
+                  pasoActual: i,
+                );
+                if (i < secciones.length) {
+                  return _PaginaSeccion(
+                    seccion: secciones[i],
+                    lang: lang,
+                    cabecera: cabecera,
+                  );
+                }
+                final afirmacion = capsula.afirmaciones[i - secciones.length];
+                return _PaginaReflexion(
+                  cabecera: cabecera,
+                  afirmacion: afirmacion,
+                  lang: lang,
+                  numero: i - secciones.length + 1,
+                  total: capsula.afirmaciones.length,
+                  respuesta: _userAnswers[afirmacion.id],
+                  verdadero: _verdadero.resolve(lang),
+                  falso: _falso.resolve(lang),
+                  onResponder: (valor) {
+                    setState(() => _userAnswers[afirmacion.id] = valor);
+                    _contarSiEstaLeida();
+                  },
+                );
+              },
             ),
           ),
-          const SizedBox(height: 16.0),
-          ...afirmaciones.asMap().entries.map((entry) {
-            final idx = entry.key;
-            final afirmacion = entry.value;
-            final userChoice = _userAnswers[afirmacion.id];
-            final hasAnswered = userChoice != null;
-
-            return Container(
-              margin: const EdgeInsets.only(bottom: 16.0),
-              padding: const EdgeInsets.all(16.0),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(12.0),
-                border: Border.all(
-                  color: const Color(0xFFE2DDD0),
-                  width: 1.0,
-                ),
-              ),
+          SafeArea(
+            top: false,
+            child: Padding(
+              padding: const EdgeInsets.all(AppTheme.spaceLg),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(
-                    '${idx + 1}. ${afirmacion.enunciado.resolve(_language)}',
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      fontSize: 16.5,
-                      fontWeight: FontWeight.w600,
-                      color: AppTheme.textSlate,
-                      height: 1.45,
+                  if (!_puedeAvanzar)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: AppTheme.spaceSm),
+                      child: Text(
+                        _pendiente.resolve(lang),
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodySmall
+                            ?.copyWith(color: AppTheme.textMuted),
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 14.0),
                   Row(
                     children: [
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () {
-                            setState(() {
-                              _userAnswers[afirmacion.id] = true;
-                            });
-                            _contarSiEstaLeida();
-                          },
-                          style: OutlinedButton.styleFrom(
-                            backgroundColor: userChoice == true
-                                ? AppTheme.primaryVigoBlue
-                                    .withValues(alpha: 0.12)
-                                : Colors.transparent,
-                            side: BorderSide(
-                              color: userChoice == true
-                                  ? AppTheme.primaryVigoBlue
-                                  : const Color(0xFFB0B7BD),
-                              width: userChoice == true ? 2.0 : 1.0,
-                            ),
-                            padding: const EdgeInsets.symmetric(vertical: 12.0),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
+                      if (_pagina > 0) ...[
+                        OutlinedButton(
+                          onPressed: () => _pages.previousPage(
+                            duration: const Duration(milliseconds: 240),
+                            curve: Curves.easeOut,
                           ),
-                          child: Text(
-                            isGl ? 'Verdadeiro' : 'Verdadero',
-                            style: TextStyle(
-                              color: userChoice == true
-                                  ? AppTheme.primaryVigoBlue
-                                  : AppTheme.textSlate,
-                              fontWeight: userChoice == true
-                                  ? FontWeight.bold
-                                  : FontWeight.w500,
-                              fontSize: 16.0,
-                            ),
-                          ),
+                          child: Text(_atras.resolve(lang)),
                         ),
-                      ),
-                      const SizedBox(width: 12.0),
+                        const SizedBox(width: AppTheme.spaceMd),
+                      ],
                       Expanded(
-                        child: OutlinedButton(
-                          onPressed: () {
-                            setState(() {
-                              _userAnswers[afirmacion.id] = false;
-                            });
-                            _contarSiEstaLeida();
-                          },
-                          style: OutlinedButton.styleFrom(
-                            backgroundColor: userChoice == false
-                                ? AppTheme.primaryVigoBlue
-                                    .withValues(alpha: 0.12)
-                                : Colors.transparent,
-                            side: BorderSide(
-                              color: userChoice == false
-                                  ? AppTheme.primaryVigoBlue
-                                  : const Color(0xFFB0B7BD),
-                              width: userChoice == false ? 2.0 : 1.0,
-                            ),
-                            padding: const EdgeInsets.symmetric(vertical: 12.0),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                          ),
+                        child: ElevatedButton(
+                          onPressed: _puedeAvanzar ? _avanzar : null,
                           child: Text(
-                            isGl ? 'Falso' : 'Falso',
-                            style: TextStyle(
-                              color: userChoice == false
-                                  ? AppTheme.primaryVigoBlue
-                                  : AppTheme.textSlate,
-                              fontWeight: userChoice == false
-                                  ? FontWeight.bold
-                                  : FontWeight.w500,
-                              fontSize: 16.0,
-                            ),
+                            esUltima
+                                ? _terminar.resolve(lang)
+                                : _siguiente.resolve(lang),
                           ),
                         ),
                       ),
                     ],
                   ),
-                  if (hasAnswered) ...[
-                    const SizedBox(height: 14.0),
-                    Container(
-                      padding: const EdgeInsets.all(12.0),
-                      decoration: BoxDecoration(
-                        color: userChoice == afirmacion.esVerdadera
-                            ? AppTheme.calmSage.withValues(alpha: 0.15)
-                            : AppTheme.accentTerracotta.withValues(alpha: 0.12),
-                        borderRadius: BorderRadius.circular(8.0),
-                        border: Border.all(
-                          color: userChoice == afirmacion.esVerdadera
-                              ? AppTheme.calmSage
-                              : AppTheme.accentTerracotta,
-                          width: 1.0,
-                        ),
-                      ),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Icon(
-                            userChoice == afirmacion.esVerdadera
-                                ? Icons.check_circle_outline
-                                : Icons.info_outline,
-                            color: userChoice == afirmacion.esVerdadera
-                                ? const Color(0xFF2E6E50)
-                                : AppTheme.accentTerracotta,
-                            size: 20,
-                          ),
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: Text(
-                              afirmacion.explicacion.resolve(_language),
-                              style: theme.textTheme.bodyMedium?.copyWith(
-                                fontSize: 16.0,
-                                height: 1.5,
-                                color: AppTheme.textSlate,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
                 ],
               ),
-            );
-          }),
+            ),
+          ),
         ],
       ),
     );
   }
+}
 
-  Widget _buildCurricularCard(
-      BuildContext context, Capsula capsula, bool isGl) {
-    final theme = Theme.of(context);
-    final curriculo = capsula.curriculo;
+class _Seccion {
+  final IconData icono;
+  final LocalizedString kicker;
+  final LocalizedString titulo;
+  final LocalizedString cuerpo;
 
-    return Container(
-      padding: const EdgeInsets.all(16.0),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12.0),
-        border: Border.all(color: const Color(0xFFE0E3E7)),
-      ),
+  const _Seccion({
+    required this.icono,
+    required this.kicker,
+    required this.titulo,
+    required this.cuerpo,
+  });
+}
+
+/// Una idea por pantalla, con su cabecera dentro del scroll.
+class _PaginaSeccion extends StatelessWidget {
+  final _Seccion seccion;
+  final AppLanguage lang;
+  final Widget cabecera;
+
+  const _PaginaSeccion({
+    required this.seccion,
+    required this.lang,
+    required this.cabecera,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final text = Theme.of(context).textTheme;
+    return SingleChildScrollView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              const Icon(Icons.bookmark_border,
-                  color: AppTheme.primaryVigoBlue, size: 20),
-              const SizedBox(width: 8),
-              Text(
-                isGl
-                    ? 'Marco curricular e referencia'
-                    : 'Marco curricular y referencia',
-                style: theme.textTheme.titleSmall?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: AppTheme.primaryVigoBlue,
-                ),
+          cabecera,
+          Padding(
+            padding: const EdgeInsets.all(AppTheme.spaceLg),
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(AppTheme.spaceXl),
+              decoration: BoxDecoration(
+                color: AppTheme.card,
+                borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                border: Border.all(color: AppTheme.border),
               ),
-            ],
-          ),
-          const SizedBox(height: 8),
-          Text(
-            '${curriculo.normativa} · ${curriculo.etapa} · ${curriculo.ciclo}',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: const Color(0xFF4A5568),
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-          if (curriculo.areas.isNotEmpty) ...[
-            const SizedBox(height: 6),
-            Wrap(
-              spacing: 6.0,
-              runSpacing: 4.0,
-              children: curriculo.areas.map((area) {
-                return Chip(
-                  label: Text(
-                    area,
-                    style: const TextStyle(
-                        fontSize: 11.5, color: AppTheme.primaryVigoBlue),
+              child: Column(
+                children: [
+                  Container(
+                    width: 56,
+                    height: 56,
+                    decoration: const BoxDecoration(
+                      color: AppTheme.primaryLight,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      seccion.icono,
+                      color: AppTheme.primaryInk,
+                      size: 28,
+                    ),
                   ),
-                  backgroundColor:
-                      AppTheme.primaryVigoBlue.withValues(alpha: 0.08),
-                  padding: EdgeInsets.zero,
-                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                  side: BorderSide.none,
-                );
-              }).toList(),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  Text(
+                    seccion.titulo.resolve(lang),
+                    textAlign: TextAlign.center,
+                    style: text.titleLarge,
+                  ),
+                  const SizedBox(height: AppTheme.spaceMd),
+                  Text(
+                    seccion.cuerpo.resolve(lang),
+                    textAlign: TextAlign.center,
+                    style:
+                        text.bodyLarge?.copyWith(color: AppTheme.textSecondary),
+                  ),
+                ],
+              ),
             ),
-          ],
+          ),
         ],
+      ),
+    );
+  }
+}
+
+/// Una afirmación por pantalla, con sus dos opciones y su explicación.
+class _PaginaReflexion extends StatelessWidget {
+  final Widget cabecera;
+  final Afirmacion afirmacion;
+  final AppLanguage lang;
+  final int numero;
+  final int total;
+  final bool? respuesta;
+  final String verdadero;
+  final String falso;
+  final ValueChanged<bool> onResponder;
+
+  const _PaginaReflexion({
+    required this.cabecera,
+    required this.afirmacion,
+    required this.lang,
+    required this.numero,
+    required this.total,
+    required this.respuesta,
+    required this.verdadero,
+    required this.falso,
+    required this.onResponder,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final text = Theme.of(context).textTheme;
+    final acertada = respuesta == afirmacion.esVerdadera;
+
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          cabecera,
+          Padding(
+            padding: const EdgeInsets.all(AppTheme.spaceLg),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  '$numero / $total',
+                  style: text.bodySmall?.copyWith(
+                    color: AppTheme.textMuted,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                const SizedBox(height: AppTheme.spaceSm),
+                Text(
+                  afirmacion.enunciado.resolve(lang),
+                  style: text.titleMedium,
+                ),
+                const SizedBox(height: AppTheme.spaceXl),
+                _Opcion(
+                  etiqueta: verdadero,
+                  elegida: respuesta == true,
+                  onTap: () => onResponder(true),
+                ),
+                const SizedBox(height: AppTheme.spaceMd),
+                _Opcion(
+                  etiqueta: falso,
+                  elegida: respuesta == false,
+                  onTap: () => onResponder(false),
+                ),
+                if (respuesta != null) ...[
+                  const SizedBox(height: AppTheme.spaceXl),
+                  // Formativo y NO punitivo. Quien lee esto es una madre o un
+                  // padre aprendiendo, no alguien a quien se examina: una
+                  // respuesta que no coincide se aclara, no se marca en rojo.
+                  Container(
+                    padding: const EdgeInsets.all(AppTheme.spaceLg),
+                    decoration: BoxDecoration(
+                      color:
+                          acertada ? AppTheme.successBg : AppTheme.primaryTint,
+                      borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                      border: Border.all(
+                        color:
+                            acertada ? AppTheme.success : AppTheme.borderActive,
+                      ),
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(
+                          acertada
+                              ? Icons.check_circle_outline
+                              : Icons.info_outline,
+                          color:
+                              acertada ? AppTheme.success : AppTheme.primaryInk,
+                          size: 22,
+                        ),
+                        const SizedBox(width: AppTheme.spaceMd),
+                        Expanded(
+                          child: Text(
+                            afirmacion.explicacion.resolve(lang),
+                            style: text.bodyMedium,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Tarjeta blanca de opción, como en `30-academy-quiz.png`.
+class _Opcion extends StatelessWidget {
+  final String etiqueta;
+  final bool elegida;
+  final VoidCallback onTap;
+
+  const _Opcion({
+    required this.etiqueta,
+    required this.elegida,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: elegida ? AppTheme.primaryLight : AppTheme.card,
+      borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+        child: Container(
+          constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+          alignment: Alignment.centerLeft,
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppTheme.spaceXl,
+            vertical: AppTheme.spaceLg,
+          ),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+            border: Border.all(
+              color: elegida ? AppTheme.primary : AppTheme.border,
+              width: elegida ? 2 : 1,
+            ),
+          ),
+          child: Text(
+            etiqueta,
+            style: Theme.of(context).textTheme.titleSmall,
+          ),
+        ),
       ),
     );
   }

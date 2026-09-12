@@ -12,6 +12,21 @@ import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/bloques_list_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.dart';
 
+/// Lleva el lector paginado hasta la primera afirmación.
+///
+/// El lector dejó de ser un scroll único: ahora es una idea por pantalla, como
+/// el de Valeria+. Para llegar a la reflexión hay que recorrer las cuatro
+/// secciones, que es lo que hace una familia.
+Future<void> irAPrimeraAfirmacion(WidgetTester tester) async {
+  await tester.pumpAndSettle();
+  for (var i = 0; i < 4; i++) {
+    final boton = find.text('Seguinte');
+    if (boton.evaluate().isEmpty) break;
+    await tester.tap(boton);
+    await tester.pumpAndSettle();
+  }
+}
+
 void main() {
   late ContentRepository repository;
   late Capsula testCapsula;
@@ -169,11 +184,12 @@ void main() {
           find.text('Exacto: a pausa atenta é a invitación máis respectuosa.'),
           findsNothing);
 
-      // Select 'Verdadeiro' for affirmation 1
-      final verdaderoButtons = find.text('Verdadeiro');
-      await expectAfterScrolling(tester, verdaderoButtons,
-          matcher: findsNWidgets(2));
-      await tapAfterScrolling(tester, verdaderoButtons);
+      await irAPrimeraAfirmacion(tester);
+
+      // Una afirmación por pantalla: una opción «Verdadeiro», no dos.
+      expect(find.text('Verdadeiro'), findsOneWidget);
+      await tester.tap(find.text('Verdadeiro'));
+      await tester.pumpAndSettle();
 
       // Feedback should now be visible in Galician
       await expectAfterScrolling(tester,
@@ -208,38 +224,46 @@ void main() {
         ),
       );
 
-      final verdaderoButtons = find.text('Verdadeiro');
-      final falsoButtons = find.text('Falso');
-      await expectAfterScrolling(tester, verdaderoButtons,
-          matcher: findsNWidgets(2));
+      await irAPrimeraAfirmacion(tester);
 
-      // Tap True for question 1
-      await tapAfterScrolling(tester, verdaderoButtons);
-      await expectAfterScrolling(tester,
-          find.text('Exacto: a pausa atenta é a invitación máis respectuosa.'));
+      // Afirmación 1, que es verdadera: se responde «Verdadeiro».
+      await tester.tap(find.text('Verdadeiro'));
+      await tester.pumpAndSettle();
+      expect(
+        find.text('Exacto: a pausa atenta é a invitación máis respectuosa.'),
+        findsOneWidget,
+      );
+      expect(find.byIcon(Icons.check_circle_outline), findsOneWidget);
 
-      // Idempotent re-tap: tap True again, state must remain True
-      await tapAfterScrolling(tester, verdaderoButtons);
-      await expectAfterScrolling(tester,
-          find.text('Exacto: a pausa atenta é a invitación máis respectuosa.'));
+      // Volver a tocar lo mismo no cambia nada.
+      await tester.tap(find.text('Verdadeiro'));
+      await tester.pumpAndSettle();
+      expect(
+        find.text('Exacto: a pausa atenta é a invitación máis respectuosa.'),
+        findsOneWidget,
+      );
 
-      // Switch to False for question 1 (disagreeing with the true statement)
-      await tapAfterScrolling(tester, falsoButtons);
+      // Cambiar a «Falso» sigue mostrando la explicación, con el tono de
+      // información y no con el de error: esto es formativo, no un examen.
+      await tester.tap(find.text('Falso'));
+      await tester.pumpAndSettle();
+      expect(
+        find.text('Exacto: a pausa atenta é a invitación máis respectuosa.'),
+        findsOneWidget,
+      );
+      expect(find.byIcon(Icons.info_outline), findsOneWidget);
 
-      // Feedback still shown (formative non-punitive), icon indicates clarification
-      await expectAfterScrolling(tester,
-          find.text('Exacto: a pausa atenta é a invitación máis respectuosa.'));
-      expect(find.byIcon(Icons.info_outline), findsWidgets);
-
-      // Tap False for question 2 (which is indeed false: "esVerdadera: false")
-      await tapAfterScrolling(tester, falsoButtons.at(1));
-
-      // Feedback for question 2 shown with positive check
-      await expectAfterScrolling(
-          tester,
-          find.text(
-              'Non é conveniente: nos primeiros 3 anos o modelo natural é mellor.'));
-      expect(find.byIcon(Icons.check_circle_outline), findsWidgets);
+      // Afirmación 2, que es falsa: se responde «Falso» y sale el acierto.
+      await tester.tap(find.text('Seguinte'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Falso'));
+      await tester.pumpAndSettle();
+      expect(
+        find.text(
+            'Non é conveniente: nos primeiros 3 anos o modelo natural é mellor.'),
+        findsOneWidget,
+      );
+      expect(find.byIcon(Icons.check_circle_outline), findsOneWidget);
     });
   });
 

@@ -125,6 +125,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
             ),
         '/academy': (context) => BloquesListScreen(
               repository: _repository,
+              premios: _premios,
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
             ),
@@ -305,6 +306,7 @@ class HomeScreen extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => BloquesListScreen(
                       repository: repository,
+                      premios: premios,
                       initialLanguage: currentLanguage,
                       onLanguageChanged: onLanguageChanged,
                     ),
