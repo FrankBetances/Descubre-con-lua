@@ -5,6 +5,9 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
+import '../../premios/premios_model.dart';
+import '../../premios/premios_repository.dart';
+import '../../premios/widgets/lua_game_strip.dart';
 import 'asamblea_guiada_screen.dart';
 
 /// Screen listing pedagogical units for early childhood educators («Juega con Lúa · Aula»).
@@ -21,12 +24,16 @@ class UnidadesListScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
 
+  /// Opcional: sin él no se pinta la tira de juego ni cuentan las asambleas.
+  final PremiosRepository? premios;
+
   const UnidadesListScreen({
     super.key,
     required this.repository,
     this.audioService,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
+    this.premios,
   });
 
   @override
@@ -83,6 +90,23 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       body: SafeArea(
         child: Column(
           children: [
+            // La tira de juego, arriba del todo: Lúa, el nivel de la maestra y
+            // su racha. Es lo primero que ve al entrar en el aula.
+            if (widget.premios != null)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppTheme.spaceLg,
+                  AppTheme.spaceMd,
+                  AppTheme.spaceLg,
+                  0,
+                ),
+                child: LuaGameStrip(
+                  repository: widget.premios!,
+                  perfil: Perfil.docente,
+                  language: _language,
+                ),
+              ),
+
             // Age band filter bar
             Container(
               padding:

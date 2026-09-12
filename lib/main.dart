@@ -131,6 +131,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
             ),
         '/juega': (context) => UnidadesListScreen(
               repository: _repository,
+              premios: _premios,
               audioService: _audioService,
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
@@ -286,6 +287,7 @@ class HomeScreen extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => UnidadesListScreen(
                       repository: repository,
+                      premios: premios,
                       audioService: audioService,
                       initialLanguage: currentLanguage,
                       onLanguageChanged: onLanguageChanged,

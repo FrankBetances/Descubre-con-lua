@@ -1,3 +1,4 @@
+import '../../core/brand/pixel_award.dart';
 import '../../core/localization/localized_string.dart';
 
 /// Quién gana los premios.
@@ -25,17 +26,27 @@ enum Perfil {
 class Nivel {
   final int nivel;
   final int xpMinimo;
+
+  /// Cómo se dibuja el nivel. Sale del JSON, no del widget: el nivel se ve sin
+  /// leer el número porque el metal del pescado sube con él.
+  final AwardGlyph glifo;
+  final AwardTier rango;
+
   final LocalizedString titulo;
 
   const Nivel({
     required this.nivel,
     required this.xpMinimo,
+    required this.glifo,
+    required this.rango,
     required this.titulo,
   });
 
   factory Nivel.fromJson(Map<String, dynamic> json) => Nivel(
         nivel: (json['nivel'] as num).toInt(),
         xpMinimo: (json['xpMinimo'] as num).toInt(),
+        glifo: AwardGlyph.desdeClave(json['glifo']?.toString() ?? 'pez'),
+        rango: AwardTier.desdeClave(json['rango']?.toString() ?? 'bronze'),
         titulo: LocalizedString.fromJson(
           Map<String, dynamic>.from(json['titulo'] as Map),
         ),
@@ -52,6 +63,14 @@ class Insignia {
   final Perfil? perfil;
   final TipoCriterio tipo;
   final int valor;
+
+  /// El glifo dice QUÉ hiciste (huella = asambleas, ovillo = cápsulas,
+  /// llama = racha) y el metal CUÁNTO. Así nueve insignias se leen con tres
+  /// dibujos, y una insignia nueva de una familia que ya existe no necesita
+  /// dibujo nuevo: necesita un metal.
+  final AwardGlyph glifo;
+  final AwardTier rango;
+
   final LocalizedString titulo;
   final LocalizedString descripcion;
 
@@ -60,6 +79,8 @@ class Insignia {
     required this.perfil,
     required this.tipo,
     required this.valor,
+    required this.glifo,
+    required this.rango,
     required this.titulo,
     required this.descripcion,
   });
@@ -75,6 +96,8 @@ class Insignia {
         orElse: () => TipoCriterio.asambleas,
       ),
       valor: (criterio['valor'] as num).toInt(),
+      glifo: AwardGlyph.desdeClave(json['glifo']?.toString() ?? 'star'),
+      rango: AwardTier.desdeClave(json['rango']?.toString() ?? 'bronze'),
       titulo: LocalizedString.fromJson(
         Map<String, dynamic>.from(json['titulo'] as Map),
       ),

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
@@ -229,11 +230,16 @@ void main() {
   });
 
   group('Adversarial Stress Tests - AppTheme', () {
+    // Exponente 2.4, el de WCAG 2.1, no el cuadrado que había aquí antes.
+    // La aproximación al cuadrado no era conservadora en un sentido útil:
+    // devolvía ratios MÁS BAJOS que la norma (9,39 -> 7,22; 5,16 -> 4,15), así
+    // que este gate rechazaba colores que la norma acepta y habría aceptado
+    // otros que no. Un gate que mide otra cosa que la que nombra no protege
+    // nada. El umbral de 4,5 no se toca.
     double relativeLuminance(Color color) {
       double transform(double c) => c <= 0.04045
           ? c / 12.92
-          : ((c + 0.055) / 1.055) *
-              ((c + 0.055) / 1.055); // approximated power 2.4
+          : math.pow((c + 0.055) / 1.055, 2.4) as double;
 
       final r = transform(color.r);
       final g = transform(color.g);
@@ -271,9 +277,9 @@ void main() {
           contrastRatio(AppTheme.textSlate, AppTheme.cardSurface);
       expect(cardContrast, greaterThanOrEqualTo(4.5));
 
-      // onSecondary (blanco) sobre secondary (turquesa profundo #0B4F4C),
-      // que es el color de la barra superior. Se le exige AA completo, no el
-      // 3,0 de texto grande: la barra también lleva texto pequeño.
+      // onSecondary (blanco) sobre secondary (`primaryInk`), que es el color
+      // de la barra superior y de las cabeceras a sangre. Se le exige AA
+      // completo, no el 3,0 de texto grande: la barra lleva texto pequeño.
       final secondaryContrast = contrastRatio(
         colorScheme.onSecondary,
         colorScheme.secondary,
