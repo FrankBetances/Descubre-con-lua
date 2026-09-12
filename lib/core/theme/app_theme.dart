@@ -33,6 +33,14 @@ class AppTheme {
   static const Color star = Color(0xFFFACC15);
   static const Color dark = Color(0xFF0B1220);
 
+  /// Turquesa profundo para barras y cabeceras CON texto blanco.
+  ///
+  /// Existe por una medición, no por gusto: el blanco sobre el turquesa de
+  /// marca da 2,18:1, que no llega ni al umbral de texto grande (3,0), y menos
+  /// al de AA (4,5). Valeria+ lo lleva así; aquí no, porque esto se mira en un
+  /// aula con luz y en un móvil al sol. Sobre este tono el blanco da 9,4:1.
+  static const Color primaryInk = Color(0xFF0B4F4C);
+
   // Nombres de la paleta anterior («Maritime Vigo»). Se conservan porque los
   // usan 147 sitios del código y romperlos no aportaba nada; apuntan ya a los
   // tokens nuevos, así que una pantalla sin tocar se ve con el estilo nuevo.
@@ -90,8 +98,9 @@ class AppTheme {
     const colorScheme = ColorScheme(
       brightness: Brightness.light,
       primary: primary,
-      onPrimary: Colors.white,
-      secondary: primaryDark,
+      // Tinta oscura, no blanco: 8,59:1 frente a 2,18:1. Ver `primaryInk`.
+      onPrimary: dark,
+      secondary: primaryInk,
       onSecondary: Colors.white,
       tertiary: star,
       onTertiary: dark,
@@ -109,7 +118,6 @@ class AppTheme {
       colorScheme: colorScheme,
       scaffoldBackgroundColor: pageBg,
       fontFamily: fontFamily,
-
       textTheme: const TextTheme(
         headlineLarge: TextStyle(
           fontSize: 30.0,
@@ -172,9 +180,8 @@ class AppTheme {
           letterSpacing: 0.1,
         ),
       ),
-
       appBarTheme: const AppBarTheme(
-        backgroundColor: primary,
+        backgroundColor: primaryInk,
         foregroundColor: Colors.white,
         elevation: 0,
         centerTitle: true,
@@ -186,7 +193,6 @@ class AppTheme {
           letterSpacing: 0.2,
         ),
       ),
-
       cardTheme: CardThemeData(
         color: card,
         elevation: 0,
@@ -200,11 +206,10 @@ class AppTheme {
           vertical: spaceSm,
         ),
       ),
-
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: primary,
-          foregroundColor: Colors.white,
+          foregroundColor: dark,
           elevation: 0,
           minimumSize: const Size(0, touchMin),
           padding: const EdgeInsets.symmetric(
@@ -222,7 +227,6 @@ class AppTheme {
           ),
         ),
       ),
-
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           foregroundColor: primaryDark,
@@ -243,7 +247,6 @@ class AppTheme {
           ),
         ),
       ),
-
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
           foregroundColor: primaryDark,
@@ -255,13 +258,11 @@ class AppTheme {
           ),
         ),
       ),
-
       dividerTheme: const DividerThemeData(
         color: border,
         thickness: 1,
         space: spaceXl,
       ),
-
       chipTheme: ChipThemeData(
         backgroundColor: primaryLight,
         side: const BorderSide(color: borderActive),
@@ -275,7 +276,6 @@ class AppTheme {
           borderRadius: BorderRadius.circular(radiusField),
         ),
       ),
-
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         color: primary,
         linearTrackColor: border,

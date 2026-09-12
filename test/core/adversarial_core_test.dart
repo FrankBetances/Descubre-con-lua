@@ -255,25 +255,30 @@ void main() {
       final theme = AppTheme.lightTheme;
       final colorScheme = theme.colorScheme;
 
-      // onPrimary (white) on primary (Vigo Blue #1B4965)
+      // onPrimary (tinta oscura) sobre primary (turquesa #00C4BE).
+      // Aquí es donde se cazó que el blanco daba 2,18:1.
       final primaryContrast =
           contrastRatio(colorScheme.onPrimary, colorScheme.primary);
       expect(primaryContrast, greaterThanOrEqualTo(4.5));
 
-      // onSurface (textSlate #1C2541) on surface (backgroundSand #F4F1DE)
+      // onSurface (#1F2937) sobre surface (#F6FAFA)
       final surfaceContrast =
           contrastRatio(colorScheme.onSurface, colorScheme.surface);
       expect(surfaceContrast, greaterThanOrEqualTo(4.5));
 
-      // onSurface (textSlate) on cardSurface (#FFFFFF)
+      // onSurface sobre la tarjeta blanca
       final cardContrast =
           contrastRatio(AppTheme.textSlate, AppTheme.cardSurface);
       expect(cardContrast, greaterThanOrEqualTo(4.5));
 
-      // onSecondary (textSlate) on secondary (Sea Glass #62B6CB)
-      final secondaryContrast =
-          contrastRatio(colorScheme.onSecondary, colorScheme.secondary);
-      expect(secondaryContrast, greaterThanOrEqualTo(3.0));
+      // onSecondary (blanco) sobre secondary (turquesa profundo #0B4F4C),
+      // que es el color de la barra superior. Se le exige AA completo, no el
+      // 3,0 de texto grande: la barra también lleva texto pequeño.
+      final secondaryContrast = contrastRatio(
+        colorScheme.onSecondary,
+        colorScheme.secondary,
+      );
+      expect(secondaryContrast, greaterThanOrEqualTo(4.5));
     });
 
     test(
