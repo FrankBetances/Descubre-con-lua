@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
@@ -13,10 +15,14 @@ class PasoMatematicasWidget extends StatelessWidget {
   final MatematicasTempras matematicas;
   final AppLanguage language;
 
+  /// Sin él no hay botón de escuchar en las matemáticas tempranas.
+  final OfflineAudioService? audioService;
+
   const PasoMatematicasWidget({
     super.key,
     required this.matematicas,
     required this.language,
+    this.audioService,
   });
 
   @override
@@ -101,6 +107,16 @@ class PasoMatematicasWidget extends StatelessWidget {
                     fontSize: 16.0,
                     height: 1.55,
                     color: AppTheme.textSlate,
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: BotonEscuchar(
+                    audioService: audioService,
+                    texto: matematicas.descripcion.resolve(language),
+                    language: language,
+                    compacto: true,
+                    descripcion: isGl ? 'a descrición' : 'la descripción',
                   ),
                 ),
               ],
@@ -196,6 +212,14 @@ class PasoMatematicasWidget extends StatelessWidget {
                         color: AppTheme.textSlate,
                       ),
                     ),
+                  ),
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: act.resolve(language),
+                    language: language,
+                    compacto: true,
+                    descripcion:
+                        isGl ? 'a acción suxerida' : 'la acción sugerida',
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
@@ -28,12 +29,16 @@ class BloquesListScreen extends StatefulWidget {
   /// Opcional: sin él, leer una cápsula no cuenta para los premios.
   final PremiosRepository? premios;
 
+  /// Opcional: sin él las cápsulas se leen, pero no se escuchan.
+  final OfflineAudioService? audioService;
+
   const BloquesListScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.premios,
+    this.audioService,
   });
 
   @override
@@ -193,6 +198,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                                     initialLanguage: _language,
                                     onLanguageChanged: _onToggleLanguage,
                                     premios: widget.premios,
+                                    audioService: widget.audioService,
                                   ),
                                 ),
                               ),

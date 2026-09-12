@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
@@ -13,10 +15,14 @@ class PasoExploracionWidget extends StatelessWidget {
   final ExploracionSensorial exploracion;
   final AppLanguage language;
 
+  /// Sin él no hay botón de escuchar en la exploración sensorial.
+  final OfflineAudioService? audioService;
+
   const PasoExploracionWidget({
     super.key,
     required this.exploracion,
     required this.language,
+    this.audioService,
   });
 
   @override
@@ -83,14 +89,30 @@ class PasoExploracionWidget extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10.0),
-              Text(
-                exploracion.avisoSeguridad.resolve(language),
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.w600,
-                  height: 1.5,
-                  color: const Color(0xFF7A271A),
-                ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Text(
+                      exploracion.avisoSeguridad.resolve(language),
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.w600,
+                        height: 1.5,
+                        color: const Color(0xFF7A271A),
+                      ),
+                    ),
+                  ),
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: exploracion.avisoSeguridad.resolve(language),
+                    language: language,
+                    compacto: true,
+                    descripcion: isGl
+                        ? 'o aviso de seguridade'
+                        : 'el aviso de seguridad',
+                  ),
+                ],
               ),
               const SizedBox(height: 8.0),
               Container(
@@ -154,6 +176,18 @@ class PasoExploracionWidget extends StatelessWidget {
                         fontSize: 16.0,
                         height: 1.45,
                         color: AppTheme.textSlate,
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: BotonEscuchar(
+                        audioService: audioService,
+                        texto: exploracion.objetivoSensorial.resolve(language),
+                        language: language,
+                        compacto: true,
+                        descripcion: isGl
+                            ? 'o obxectivo sensorial'
+                            : 'el objetivo sensorial',
                       ),
                     ),
                   ],
@@ -260,6 +294,13 @@ class PasoExploracionWidget extends StatelessWidget {
                         color: AppTheme.textSlate,
                       ),
                     ),
+                  ),
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: paso.resolve(language),
+                    language: language,
+                    compacto: true,
+                    descripcion: isGl ? 'o paso' : 'el paso',
                   ),
                 ],
               ),

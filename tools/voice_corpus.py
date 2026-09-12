@@ -115,10 +115,22 @@ def _add(text: dict[str, str], style: str, source: str, seen: dict[str, Locution
 def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     """Every locution the app can play, read from the content JSON.
 
-    Only what the content actually declares audio for is included: the pulse
-    chant and the vocabulary words. Nothing is invented here — if a screen
-    starts playing something new, it gets added here first and the coverage gate
-    reports the missing recording until it is synthesised.
+    Nothing is invented here: if a screen starts playing something new, it gets
+    added to this function first and the coverage gate reports the missing
+    recording until it is synthesised.
+
+    The corpus used to cover only the pulse chant and the vocabulary words —
+    twelve recordings — so almost every card in the app had no speaker button.
+    It now covers every piece of PROSE the adult reads on a card, in both
+    languages, which is what a neural Galician voice is actually for: a teacher
+    who did not grow up speaking Galician can hear the model pronunciation
+    before saying it to the class.
+
+    What is deliberately left out: titles, subtitles, headings and lists of
+    materials. They are labels, not sentences, and a synthesised voice reading
+    "Grande / Pequeno, Moito / Pouco" out of context is noise. Vocabulary words
+    are the exception, and they get the slow pace because they exist to be
+    imitated.
     """
     seen: dict[str, Locution] = {}
 
@@ -134,14 +146,91 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
             # pulse work is done with 0-3 anyway. The instrumental pulse track
             # stays available separately as the metronome.
             _add(_localized(letra), "tutor", f"{unit_id}/cancionPulso", seen)
+        if cancion.get("consignaDocente"):
+            _add(
+                _localized(cancion["consignaDocente"]),
+                "tutor",
+                f"{unit_id}/cancionPulso/consigna",
+                seen,
+            )
+
+        cuento = data.get("cuento") or {}
+        for i, pagina in enumerate(cuento.get("paginas") or []):
+            if not isinstance(pagina, dict):
+                continue
+            if pagina.get("texto"):
+                _add(_localized(pagina["texto"]), "tutor",
+                     f"{unit_id}/cuento/{i}/texto", seen)
+            if pagina.get("preguntaComprension"):
+                _add(_localized(pagina["preguntaComprension"]), "tutor",
+                     f"{unit_id}/cuento/{i}/pregunta", seen)
+
+        for pregunta in data.get("preguntas") or []:
+            if not isinstance(pregunta, dict):
+                continue
+            pid = pregunta.get("id", "?")
+            for campo in ("enunciado", "respuestaSugerida", "consejoDocente"):
+                if pregunta.get(campo):
+                    _add(_localized(pregunta[campo]), "tutor",
+                         f"{unit_id}/preguntas/{pid}/{campo}", seen)
 
         for item in data.get("vocabulario") or []:
             if not isinstance(item, dict):
                 continue
-            palabra = item.get("palabra")
-            if palabra:
-                item_id = item.get("id", "?")
-                _add(_localized(palabra), "slow", f"{unit_id}/vocabulario/{item_id}", seen)
+            item_id = item.get("id", "?")
+            # La palabra va despacio: existe para que la imiten.
+            if item.get("palabra"):
+                _add(_localized(item["palabra"]), "slow",
+                     f"{unit_id}/vocabulario/{item_id}", seen)
+            # `definicionBreve` NO entra en el corpus: hoy no hay ninguna
+            # pantalla que pinte el vocabulario, así que esas grabaciones
+            # viajarían en el APK sin que nada pudiera reproducirlas. Entra el
+            # día que exista la tarjeta, no antes.
+
+        exploracion = data.get("exploracion") or {}
+        for campo in ("objetivoSensorial", "avisoSeguridad"):
+            if exploracion.get(campo):
+                _add(_localized(exploracion[campo]), "tutor",
+                     f"{unit_id}/exploracion/{campo}", seen)
+        for i, paso in enumerate(exploracion.get("pasos") or []):
+            _add(_localized(paso), "tutor", f"{unit_id}/exploracion/paso/{i}",
+                 seen)
+
+        matematicas = data.get("matematicas") or {}
+        if matematicas.get("descripcion"):
+            _add(_localized(matematicas["descripcion"]), "tutor",
+                 f"{unit_id}/matematicas/descripcion", seen)
+        for i, accion in enumerate(matematicas.get("accionesSugeridas") or []):
+            _add(_localized(accion), "tutor",
+                 f"{unit_id}/matematicas/accion/{i}", seen)
+
+        puente = data.get("puenteCasa") or {}
+        for campo in ("mensajeFamilias", "recomendacionConversacion"):
+            if puente.get(campo):
+                _add(_localized(puente[campo]), "tutor",
+                     f"{unit_id}/puenteCasa/{campo}", seen)
+        for i, act in enumerate(puente.get("actividadesSugeridas") or []):
+            _add(_localized(act), "tutor", f"{unit_id}/puenteCasa/act/{i}", seen)
+
+    # Academy. Las cápsulas las lee una familia en casa, muchas veces con las
+    # manos ocupadas; que se puedan escuchar no es un adorno.
+    for path in sorted((content_dir / "capsulas").glob("*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        cap_id = data.get("id", path.stem)
+
+        for campo in ("ideaClave", "porQueImporta", "queHacerEnCasa",
+                      "ejemploCotidiano"):
+            if data.get(campo):
+                _add(_localized(data[campo]), "tutor", f"{cap_id}/{campo}", seen)
+
+        for afirmacion in data.get("afirmaciones") or []:
+            if not isinstance(afirmacion, dict):
+                continue
+            aid = afirmacion.get("id", "?")
+            for campo in ("enunciado", "explicacion"):
+                if afirmacion.get(campo):
+                    _add(_localized(afirmacion[campo]), "tutor",
+                         f"{cap_id}/afirmaciones/{aid}/{campo}", seen)
 
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 

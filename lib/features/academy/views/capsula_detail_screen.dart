@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
@@ -29,12 +31,17 @@ class CapsulaDetailScreen extends StatefulWidget {
   /// Opcional: sin repositorio la cápsula se lee igual y no cuenta nada.
   final PremiosRepository? premios;
 
+  /// Opcional: sin él la cápsula se lee, pero no se escucha. Una familia lee
+  /// esto en casa muchas veces con las manos ocupadas.
+  final OfflineAudioService? audioService;
+
   const CapsulaDetailScreen({
     super.key,
     required this.capsula,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.premios,
+    this.audioService,
   });
 
   @override
@@ -226,6 +233,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                     seccion: secciones[i],
                     lang: lang,
                     cabecera: cabecera,
+                    audioService: widget.audioService,
                   );
                 }
                 final afirmacion = capsula.afirmaciones[i - secciones.length];
@@ -233,6 +241,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                   cabecera: cabecera,
                   afirmacion: afirmacion,
                   lang: lang,
+                  audioService: widget.audioService,
                   numero: i - secciones.length + 1,
                   total: capsula.afirmaciones.length,
                   respuesta: _userAnswers[afirmacion.id],
@@ -318,11 +327,13 @@ class _PaginaSeccion extends StatelessWidget {
   final _Seccion seccion;
   final AppLanguage lang;
   final Widget cabecera;
+  final OfflineAudioService? audioService;
 
   const _PaginaSeccion({
     required this.seccion,
     required this.lang,
     required this.cabecera,
+    this.audioService,
   });
 
   @override
@@ -370,6 +381,13 @@ class _PaginaSeccion extends StatelessWidget {
                     style:
                         text.bodyLarge?.copyWith(color: AppTheme.textSecondary),
                   ),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: seccion.cuerpo.resolve(lang),
+                    language: lang,
+                    descripcion: seccion.titulo.resolve(lang),
+                  ),
                 ],
               ),
             ),
@@ -385,6 +403,7 @@ class _PaginaReflexion extends StatelessWidget {
   final Widget cabecera;
   final Afirmacion afirmacion;
   final AppLanguage lang;
+  final OfflineAudioService? audioService;
   final int numero;
   final int total;
   final bool? respuesta;
@@ -396,6 +415,7 @@ class _PaginaReflexion extends StatelessWidget {
     required this.cabecera,
     required this.afirmacion,
     required this.lang,
+    this.audioService,
     required this.numero,
     required this.total,
     required this.respuesta,
@@ -426,9 +446,25 @@ class _PaginaReflexion extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: AppTheme.spaceSm),
-                Text(
-                  afirmacion.enunciado.resolve(lang),
-                  style: text.titleMedium,
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        afirmacion.enunciado.resolve(lang),
+                        style: text.titleMedium,
+                      ),
+                    ),
+                    BotonEscuchar(
+                      audioService: audioService,
+                      texto: afirmacion.enunciado.resolve(lang),
+                      language: lang,
+                      compacto: true,
+                      descripcion: lang == AppLanguage.gl
+                          ? 'a afirmación'
+                          : 'la afirmación',
+                    ),
+                  ],
                 ),
                 const SizedBox(height: AppTheme.spaceXl),
                 _Opcion(
@@ -471,9 +507,23 @@ class _PaginaReflexion extends StatelessWidget {
                         ),
                         const SizedBox(width: AppTheme.spaceMd),
                         Expanded(
-                          child: Text(
-                            afirmacion.explicacion.resolve(lang),
-                            style: text.bodyMedium,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                afirmacion.explicacion.resolve(lang),
+                                style: text.bodyMedium,
+                              ),
+                              BotonEscuchar(
+                                audioService: audioService,
+                                texto: afirmacion.explicacion.resolve(lang),
+                                language: lang,
+                                compacto: true,
+                                descripcion: lang == AppLanguage.gl
+                                    ? 'a explicación'
+                                    : 'la explicación',
+                              ),
+                            ],
                           ),
                         ),
                       ],
