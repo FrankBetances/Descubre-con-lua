@@ -133,23 +133,51 @@ void main() {
       );
     });
 
-    testWidgets('no acredita ninguna colaboración inventada', (tester) async {
-      // De esta edición no consta ninguna entidad colaboradora en el
-      // repositorio. Poner un nombre institucional aquí es atribuirse un
-      // respaldo que nadie ha dado, así que si alguien añade uno, que sea
-      // rompiendo este test a conciencia y no de pasada.
-      final body = await textOf(tester, AppLanguage.gl);
-      for (final claimed in [
-        'Concello',
-        'Xunta',
-        'Acopros',
-        'Quisqueya',
-        'Universidade',
-        'Hospital',
-      ]) {
-        expect(body.contains(claimed), isFalse,
-            reason: '«$claimed» aparece en los créditos sin constar en el '
-                'repositorio que colabore.');
+    testWidgets('acredita a los dos colaboradores que constan', (tester) async {
+      for (final lang in AppLanguage.values) {
+        final body = await textOf(tester, lang);
+        expect(body, contains('StartTIC'));
+        expect(body, contains('Zona Franca de Vigo'));
+        expect(
+          body,
+          contains(lang == AppLanguage.gl
+              ? 'Concello de Vigo'
+              : 'Ayuntamiento de Vigo'),
+        );
+      }
+    });
+
+    testWidgets('y no acredita a nadie más', (tester) async {
+      // Lista BLANCA, no negra. Una lista negra solo caza los nombres que a
+      // alguien se le ocurrió prohibir; esto caza cualquier institución nueva
+      // que aparezca, que es el riesgo real: atribuirse un respaldo que esa
+      // institución no ha dado. Si hay que sumar a alguien, se suma AQUÍ
+      // primero, a conciencia.
+      const permitidas = {
+        'StartTIC',
+        'Zona Franca de Vigo',
+        'Concello de Vigo',
+        'Ayuntamiento de Vigo',
+        'Earlify Health S.L.',
+        'Proxecto Nós',
+      };
+      // Patrón de nombre institucional: dos mayúsculas iniciales seguidas, o
+      // una palabra clave de organismo.
+      final sospechoso = RegExp(
+        r'\b(Concello|Ayuntamiento|Consorcio|Xunta|Universidade|Universidad|'
+        r'Hospital|Fundación|Fundacion|Deputación|Diputación|Instituto|'
+        r'Ministerio|Conselleria|Consellería)\b[^.·\n]{0,40}',
+      );
+      for (final lang in AppLanguage.values) {
+        final body = await textOf(tester, lang);
+        for (final m in sospechoso.allMatches(body)) {
+          final hallado = m.group(0)!.trim();
+          final permitido = permitidas
+              .any((p) => hallado.startsWith(p) || p.contains(hallado));
+          expect(permitido, isTrue,
+              reason: '«$hallado» aparece en los créditos y no está en la '
+                  'lista de entidades que constan como colaboradoras.');
+        }
       }
     });
   });

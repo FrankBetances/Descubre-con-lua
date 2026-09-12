@@ -10,11 +10,14 @@ import '../../core/theme/app_theme.dart';
 /// antetítulo en versalitas, la tarjeta de autoría y debajo los bloques de
 /// atribución.
 ///
-/// Regla de esta pantalla: **aquí solo se acredita lo que se puede comprobar.**
-/// Valeria+ acredita a Acopros y a Quisqueya Habla porque colaboran de verdad.
-/// De esta edición no consta ninguna colaboración en el repositorio, así que no
-/// se inventa ninguna: poner un logotipo institucional que nadie ha autorizado
-/// es atribuirse un respaldo que no existe.
+/// Regla de esta pantalla: **aquí solo se acredita lo que consta.** Los dos
+/// colaboradores de abajo los nombró Frank; no se añade ninguno más por
+/// iniciativa propia, porque poner un nombre institucional es atribuirse un
+/// respaldo que esa institución no ha dado.
+///
+/// Van como TEXTO, sin logotipo. Un logotipo institucional tiene normas de uso
+/// propias (proporciones, versiones, fondos permitidos) y usarlo mal es peor
+/// que no usarlo.
 ///
 /// Lo que sí está aquí es obligado: las voces neuronales y la tipografía llevan
 /// licencia, y citarlas no es cortesía.
@@ -40,6 +43,26 @@ class CreditsScreen extends StatelessWidget {
         'Finalidade exclusivamente educativa.',
     es: 'Para las escuelas infantiles municipales de Vigo y sus familias. '
         'Finalidad exclusivamente educativa.',
+  );
+
+  static const _withKicker = LocalizedString(
+    gl: 'EN COLABORACIÓN CON',
+    es: 'EN COLABORACIÓN CON',
+  );
+
+  static const _cityHall = LocalizedString(
+    gl: 'Concello de Vigo',
+    es: 'Ayuntamiento de Vigo',
+  );
+
+  static const _starticDesc = LocalizedString(
+    gl: 'Zona Franca de Vigo',
+    es: 'Zona Franca de Vigo',
+  );
+
+  static const _cityHallDesc = LocalizedString(
+    gl: 'Escolas infantís municipais',
+    es: 'Escuelas infantiles municipales',
   );
 
   static const _voicesKicker = LocalizedString(
@@ -144,6 +167,25 @@ class CreditsScreen extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: text.bodySmall
                               ?.copyWith(color: AppTheme.primaryInk),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: AppTheme.spaceXl),
+                  _Kicker(_withKicker.resolve(currentLanguage)),
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _GlassCard(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _Entry(
+                          name: 'Programa StartTIC',
+                          detail: _starticDesc.resolve(currentLanguage),
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
+                        _Entry(
+                          name: _cityHall.resolve(currentLanguage),
+                          detail: _cityHallDesc.resolve(currentLanguage),
                         ),
                       ],
                     ),
