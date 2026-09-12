@@ -4,6 +4,8 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/capsula_model.dart';
 import '../widgets/seccion_capsula_widget.dart';
 import '../widgets/selector_idioma_widget.dart';
+import '../../premios/premios_model.dart';
+import '../../premios/premios_repository.dart';
 
 /// Screen displaying a single Academy micro-learning capsule for families.
 ///
@@ -20,11 +22,15 @@ class CapsulaDetailScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
 
+  /// Opcional: sin repositorio la cápsula se lee igual y no cuenta nada.
+  final PremiosRepository? premios;
+
   const CapsulaDetailScreen({
     super.key,
     required this.capsula,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
+    this.premios,
   });
 
   @override
@@ -34,6 +40,41 @@ class CapsulaDetailScreen extends StatefulWidget {
 class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
   late AppLanguage _language;
   final Map<String, bool?> _userAnswers = {};
+
+  /// Para no contar la misma cápsula dos veces si alguien cambia una respuesta.
+  bool _yaContada = false;
+
+  /// Una cápsula cuenta como LEÍDA cuando se ha respondido a todas sus
+  /// afirmaciones, no al abrirla. Abrir y salir no es leer, y un contador que
+  /// premie eso mide otra cosa distinta de la que dice medir.
+  Future<void> _contarSiEstaLeida() async {
+    if (_yaContada) return;
+    final afirmaciones = widget.capsula.afirmaciones;
+    if (afirmaciones.isEmpty) return;
+    final todas = afirmaciones.every(
+      (a) => _userAnswers[a.id] != null,
+    );
+    if (!todas) return;
+
+    _yaContada = true;
+    final nuevas = await widget.premios?.registrar(
+          Perfil.familia,
+          EventoPremio.capsula,
+        ) ??
+        const <Insignia>[];
+
+    if (!mounted || nuevas.isEmpty) return;
+    final isGl = _language == AppLanguage.gl;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          isGl
+              ? 'Gañaches: ${nuevas.first.titulo.gl}'
+              : 'Ganaste: ${nuevas.first.titulo.es}',
+        ),
+      ),
+    );
+  }
 
   @override
   void initState() {
@@ -285,6 +326,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                             setState(() {
                               _userAnswers[afirmacion.id] = true;
                             });
+                            _contarSiEstaLeida();
                           },
                           style: OutlinedButton.styleFrom(
                             backgroundColor: userChoice == true
@@ -323,6 +365,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                             setState(() {
                               _userAnswers[afirmacion.id] = false;
                             });
+                            _contarSiEstaLeida();
                           },
                           style: OutlinedButton.styleFrom(
                             backgroundColor: userChoice == false
