@@ -10,6 +10,8 @@ import 'data/repositories/content_repository.dart';
 import 'features/academy/views/bloques_list_screen.dart';
 import 'features/academy/views/capsula_detail_screen.dart';
 import 'features/academy/widgets/selector_idioma_widget.dart';
+import 'features/bienvenida/welcome_screen.dart';
+import 'features/creditos/credits_screen.dart';
 import 'features/juega/views/asamblea_guiada_screen.dart';
 import 'features/juega/views/unidades_list_screen.dart';
 
@@ -93,7 +95,20 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
       theme: AppTheme.lightTheme,
       initialRoute: '/',
       routes: {
-        '/': (context) => HomeScreen(
+        // La bienvenida es la primera pantalla, como en Valeria+. No guarda que
+        // ya la viste: esa marca sería un campo persistido más que declarar en
+        // Play Console, y la app no guarda nada. Cuesta un toque por arranque.
+        '/': (context) => WelcomeScreen(
+              currentLanguage: _currentLanguage,
+              onToggleLanguage: _toggleLanguage,
+              onStart: () =>
+                  Navigator.of(context).pushReplacementNamed('/home'),
+              onShowCredits: () => Navigator.of(context).pushNamed('/creditos'),
+            ),
+        '/creditos': (context) => CreditsScreen(
+              currentLanguage: _currentLanguage,
+            ),
+        '/home': (context) => HomeScreen(
               repository: _repository,
               audioService: _audioService,
               currentLanguage: _currentLanguage,
