@@ -13,10 +13,11 @@ no el logotipo.
 
 | Fichero | Entidad | Estado |
 | --- | --- | --- |
-| `dr-betances-crest.png` | Escudo del Dr. Betances | **presente**, portado del repositorio de Valeria+ |
-| `startic.png` | Programa StartTIC | **falta** |
-| `zona-franca-vigo.png` | Consorcio da Zona Franca de Vigo | **falta** |
-| `concello-vigo.png` | Concello de Vigo | **falta** |
+| `dr-betances-crest.png` | Escudo del Dr. Betances (líneas transparentes) | **presente**, portado de Valeria+ |
+| `dr-betances-crest.jpg` | Escudo del Dr. Betances (color institucional teal) | **presente**, aportado por Frank |
+| `startic.png` | Programa startTIC | **presente**, aportado por Frank |
+| `zona-franca-vigo.jpg` / `zona-franca-vigo.png` | Consorcio da Zona Franca de Vigo | **presente**, aportado por Frank |
+| `concello-vigo.png` | Concello de Vigo | **presente**, aportado por Frank |
 
 Para añadir uno: dejarlo aquí con ese nombre exacto y declararlo en el hueco
 que ya existe en `lib/features/creditos/credits_screen.dart`. No hace falta
