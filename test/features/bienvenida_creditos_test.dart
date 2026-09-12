@@ -12,6 +12,23 @@ import 'package:descubre_con_lua/features/creditos/credits_screen.dart';
 Widget _wrap(Widget child) =>
     MaterialApp(theme: AppTheme.lightTheme, home: child);
 
+/// Vacía TODAS las excepciones pendientes, no solo la primera.
+///
+/// `takeException()` saca una sola. Un desborde de disposición lanza una por
+/// fotograma, así que con una sola llamada el test falla y las demás se filtran
+/// al test SIGUIENTE, que revienta sin tener ninguna culpa. Pasó exactamente
+/// eso: un desborde en la bienvenida tumbó también el primer test de créditos,
+/// y el informe de CI señalaba dos fallos donde había un solo defecto.
+List<Object> _drainExceptions(WidgetTester tester) {
+  final errores = <Object>[];
+  while (true) {
+    final e = tester.takeException();
+    if (e == null) break;
+    errores.add(e);
+  }
+  return errores;
+}
+
 void main() {
   group('Pantalla de bienvenida', () {
     testWidgets('dice qué es cada módulo, en las dos lenguas', (tester) async {
@@ -90,7 +107,8 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
-      expect(tester.takeException(), isNull);
+      expect(_drainExceptions(tester), isEmpty,
+          reason: 'La bienvenida desborda con la escala de texto grande.');
     });
   });
 
@@ -145,6 +163,25 @@ void main() {
               : 'Ayuntamiento de Vigo'),
         );
       }
+    });
+
+    testWidgets('cabe con la escala de texto grande del sistema',
+        (tester) async {
+      tester.view.physicalSize = const Size(360, 640);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.lightTheme,
+        home: const MediaQuery(
+          data: MediaQueryData(textScaler: TextScaler.linear(1.8)),
+          child: CreditsScreen(currentLanguage: AppLanguage.gl),
+        ),
+      ));
+      await tester.pumpAndSettle();
+
+      expect(_drainExceptions(tester), isEmpty,
+          reason: 'Los créditos desbordan con la escala de texto grande.');
     });
 
     testWidgets('y no acredita a nadie más', (tester) async {

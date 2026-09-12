@@ -74,27 +74,39 @@ class WelcomeScreen extends StatelessWidget {
             child: ExcludeSemantics(child: _Blob(size: 260)),
           ),
           SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: AppTheme.spaceXl,
-                vertical: AppTheme.spaceLg,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: _LanguagePill(
-                      language: currentLanguage,
-                      onTap: onToggleLanguage,
-                    ),
+            // Receta a prueba de desbordes: un scroll que envuelve TODO —
+            // botones incluidos— con una altura mínima igual a la pantalla.
+            // A escala normal la columna ocupa esa altura y `spaceBetween`
+            // reparte como si estuviera anclada; a escala de texto grande
+            // crece y se desplaza, en vez de cortarse.
+            //
+            // Antes esto era Column + Expanded con el bloque de botones fuera
+            // del scroll, y a escala 1,8 desbordaba. Lo cazó el test, no un
+            // aparato: en release el desborde no se ve, el texto se corta.
+            // NINGÚN hijo puede ser Expanded ni Flexible aquí, o la altura
+            // vuelve a quedar acotada y el desborde regresa.
+            child: LayoutBuilder(
+              builder: (context, constraints) => SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppTheme.spaceXl,
+                  vertical: AppTheme.spaceLg,
+                ),
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(
+                    minHeight: constraints.maxHeight - AppTheme.spaceXl * 2,
                   ),
-                  // Scroll a propósito: con la escala de texto grande del
-                  // sistema este bloque no cabe, y sin esto se corta en release
-                  // sin decir nada.
-                  Expanded(
-                    child: SingleChildScrollView(
-                      child: Column(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: _LanguagePill(
+                          language: currentLanguage,
+                          onTap: onToggleLanguage,
+                        ),
+                      ),
+                      Column(
                         children: [
                           const SizedBox(height: AppTheme.spaceXl),
                           Container(
@@ -147,46 +159,51 @@ class WelcomeScreen extends StatelessWidget {
                           const SizedBox(height: AppTheme.spaceXl),
                         ],
                       ),
-                    ),
-                  ),
-                  ElevatedButton(
-                    onPressed: onStart,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      foregroundColor: AppTheme.primaryInk,
-                    ),
-                    child: Text(_start.resolve(currentLanguage)),
-                  ),
-                  const SizedBox(height: AppTheme.spaceSm),
-                  TextButton(
-                    onPressed: onShowCredits,
-                    style: TextButton.styleFrom(
-                      foregroundColor: AppTheme.primaryInk,
-                    ),
-                    child: Text(_credits.resolve(currentLanguage)),
-                  ),
-                  const SizedBox(height: AppTheme.spaceXs),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Icon(
-                        Icons.lock_outline,
-                        size: 16,
-                        color: AppTheme.primaryInk,
-                      ),
-                      const SizedBox(width: AppTheme.spaceXs),
-                      Flexible(
-                        child: Text(
-                          _privacy.resolve(currentLanguage),
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodySmall
-                              ?.copyWith(color: AppTheme.primaryInk),
-                        ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          ElevatedButton(
+                            onPressed: onStart,
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              foregroundColor: AppTheme.primaryInk,
+                            ),
+                            child: Text(_start.resolve(currentLanguage)),
+                          ),
+                          const SizedBox(height: AppTheme.spaceSm),
+                          TextButton(
+                            onPressed: onShowCredits,
+                            style: TextButton.styleFrom(
+                              foregroundColor: AppTheme.primaryInk,
+                            ),
+                            child: Text(_credits.resolve(currentLanguage)),
+                          ),
+                          const SizedBox(height: AppTheme.spaceXs),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(
+                                Icons.lock_outline,
+                                size: 16,
+                                color: AppTheme.primaryInk,
+                              ),
+                              const SizedBox(width: AppTheme.spaceXs),
+                              Flexible(
+                                child: Text(
+                                  _privacy.resolve(currentLanguage),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodySmall
+                                      ?.copyWith(color: AppTheme.primaryInk),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ],
                   ),
-                ],
+                ),
               ),
             ),
           ),
