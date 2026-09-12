@@ -60,9 +60,17 @@ class CreditsScreen extends StatelessWidget {
     es: 'Ayuntamiento de Vigo',
   );
 
+  /// Nombre oficial confirmado por Frank el 12/9/2026. No se abrevia: la
+  /// incubadora es un programa del Consorcio, y acreditar a una institución
+  /// con el nombre mal escrito es peor que no acreditarla.
+  static const _startic = LocalizedString(
+    gl: 'Incubadora de Alta Tecnoloxía startTIC',
+    es: 'Incubadora de Alta Tecnología startTIC',
+  );
+
   static const _starticDesc = LocalizedString(
-    gl: 'Zona Franca de Vigo',
-    es: 'Zona Franca de Vigo',
+    gl: 'Consorcio da Zona Franca de Vigo',
+    es: 'Consorcio de la Zona Franca de Vigo',
   );
 
   static const _cityHallDesc = LocalizedString(
@@ -208,7 +216,7 @@ class CreditsScreen extends StatelessWidget {
                           ],
                         ),
                         _Entry(
-                          name: 'Programa StartTIC',
+                          name: _startic.resolve(currentLanguage),
                           detail: _starticDesc.resolve(currentLanguage),
                         ),
                         const SizedBox(height: AppTheme.spaceMd),

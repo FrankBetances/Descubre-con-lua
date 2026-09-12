@@ -145,8 +145,24 @@ class ContentValidator {
     } else {
       final validBlock = Bloque.byId(bloqueId);
       if (validBlock == null) {
-        errors.add(
-            '${prefix}Invalid "bloqueId": "$bloqueId" is not among the 5 canonical blocks');
+        errors.add('${prefix}Invalid "bloqueId": "$bloqueId" is not among the '
+            '5 Academy blocks nor the 6 classroom blocks');
+      } else {
+        // El destinatario y el bloque tienen que decir lo mismo. Si no, una
+        // cápsula del aula acabaría en la lista de Academy —o al revés— y el
+        // defecto no se vería hasta abrir la pantalla equivocada: la lista se
+        // pinta igual de bien con la cápsula que no toca.
+        final destinatario =
+            DestinatarioCapsula.desdeClave(json['destinatario']?.toString());
+        final esDeAula = Bloque.aula.any((b) => b.id == validBlock.id);
+        if (destinatario == DestinatarioCapsula.docente && !esDeAula) {
+          errors.add('${prefix}Capsule declares destinatario "docente" but '
+              '"$bloqueId" is an Academy block');
+        }
+        if (destinatario == DestinatarioCapsula.familia && esDeAula) {
+          errors.add('${prefix}Capsule is for "familia" but "$bloqueId" is a '
+              'classroom block; declare "destinatario": "docente"');
+        }
       }
     }
 

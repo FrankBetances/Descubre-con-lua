@@ -154,8 +154,10 @@ void main() {
     testWidgets('acredita a los dos colaboradores que constan', (tester) async {
       for (final lang in AppLanguage.values) {
         final body = await textOf(tester, lang);
-        expect(body, contains('StartTIC'));
+        expect(body, contains('startTIC'));
         expect(body, contains('Zona Franca de Vigo'));
+        // El nombre oficial, no una abreviatura.
+        expect(body, contains('Incubadora de Alta Tecnolo'));
         expect(
           body,
           contains(lang == AppLanguage.gl
@@ -191,7 +193,13 @@ void main() {
       // institución no ha dado. Si hay que sumar a alguien, se suma AQUÍ
       // primero, a conciencia.
       const permitidas = {
-        'StartTIC',
+        'startTIC',
+        // Nombres oficiales confirmados por Frank el 12/9/2026. La incubadora
+        // es un programa del Consorcio, no una entidad aparte.
+        'Incubadora de Alta Tecnoloxía startTIC',
+        'Incubadora de Alta Tecnología startTIC',
+        'Consorcio da Zona Franca de Vigo',
+        'Consorcio de la Zona Franca de Vigo',
         'Zona Franca de Vigo',
         'Concello de Vigo',
         'Ayuntamiento de Vigo',

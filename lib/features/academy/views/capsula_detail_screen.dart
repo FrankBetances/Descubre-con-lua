@@ -74,8 +74,12 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
   );
 
   /// Las cuatro secciones canónicas, con su antetítulo y su icono.
+  bool get _esDeAula =>
+      widget.capsula.destinatario == DestinatarioCapsula.docente;
+
   List<_Seccion> get _secciones {
     final c = widget.capsula;
+    final esDeAula = _esDeAula;
     return [
       _Seccion(
         icono: Icons.lightbulb_outline,
@@ -95,22 +99,39 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
         ),
         cuerpo: c.porQueImporta,
       ),
+      // La tercera sección es el mismo campo del JSON en los dos casos, pero
+      // NO el mismo encabezado: a una maestra en su aula no se le dice «qué
+      // hacer en casa». Es lo único que cambia entre una cápsula de Academy y
+      // una del aula; el resto de la estructura es idéntico, y por eso no hay
+      // dos modelos ni dos pantallas.
       _Seccion(
-        icono: Icons.home_outlined,
-        kicker: const LocalizedString(gl: 'NA CASA', es: 'EN CASA'),
-        titulo: const LocalizedString(
-          gl: 'Que facer na casa',
-          es: 'Qué hacer en casa',
-        ),
+        icono: esDeAula ? Icons.groups_outlined : Icons.home_outlined,
+        kicker: esDeAula
+            ? const LocalizedString(gl: 'NA ASEMBLEA', es: 'EN LA ASAMBLEA')
+            : const LocalizedString(gl: 'NA CASA', es: 'EN CASA'),
+        titulo: esDeAula
+            ? const LocalizedString(
+                gl: 'Que facer na asemblea',
+                es: 'Qué hacer en la asamblea',
+              )
+            : const LocalizedString(
+                gl: 'Que facer na casa',
+                es: 'Qué hacer en casa',
+              ),
         cuerpo: c.queHacerEnCasa,
       ),
       _Seccion(
         icono: Icons.wb_sunny_outlined,
         kicker: const LocalizedString(gl: 'UN EXEMPLO', es: 'UN EJEMPLO'),
-        titulo: const LocalizedString(
-          gl: 'Un momento calquera',
-          es: 'Un momento cualquiera',
-        ),
+        titulo: esDeAula
+            ? const LocalizedString(
+                gl: 'Unha asemblea calquera',
+                es: 'Una asamblea cualquiera',
+              )
+            : const LocalizedString(
+                gl: 'Un momento calquera',
+                es: 'Un momento cualquiera',
+              ),
         cuerpo: c.ejemploCotidiano,
       ),
     ];
@@ -144,8 +165,16 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
     if (!afirmaciones.every((a) => _userAnswers[a.id] != null)) return;
 
     _yaContada = true;
+    // La cápsula cuenta para QUIEN la lee. Una cápsula del aula la lee la
+    // maestra, así que suma a su recorrido y a su racha, no al de la familia.
+    //
+    // Reutiliza el contador `capsulas` que ya existe para los dos perfiles: no
+    // se guarda ninguna clave nueva, así que esto NO cambia lo que la app
+    // almacena ni obliga a tocar la política de privacidad. Lo que sí queda sin
+    // premiar es una insignia propia de cápsula docente: las tres de cápsula
+    // del catálogo son de familia, y no me invento insignias.
     final nuevas = await widget.premios?.registrar(
-          Perfil.familia,
+          _esDeAula ? Perfil.docente : Perfil.familia,
           EventoPremio.capsula,
         ) ??
         const <Insignia>[];

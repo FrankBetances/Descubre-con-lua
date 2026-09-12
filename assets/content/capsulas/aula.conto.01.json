@@ -1,0 +1,76 @@
+{
+  "id": "aula.conto.01",
+  "bloqueId": "aula_conto",
+  "destinatario": "docente",
+  "orden": 1,
+  "titulo": {
+    "gl": "Ler un conto a quen aínda non fala",
+    "es": "Leer un cuento a quien todavía no habla"
+  },
+  "subtitulo": {
+    "gl": "A voz, o dedo e o silencio que vai despois",
+    "es": "La voz, el dedo y el silencio que va después"
+  },
+  "tiempoLecturaMinutos": 3,
+  "icono": "chat_bubble_heart",
+  "ideaClave": {
+    "gl": "Nunha asemblea de cero a tres, o conto non se le para chegar ao final. Lese para que haxa un momento no que a túa voz, o teu dedo e a mirada da crianza estean na mesma cousa. Se iso pasa dúas veces en toda a páxina, a páxina valeu.",
+    "es": "En una asamblea de cero a tres, el cuento no se lee para llegar al final. Se lee para que haya un momento en el que tu voz, tu dedo y la mirada de la criatura estén en la misma cosa. Si eso pasa dos veces en toda la página, la página valió."
+  },
+  "porQueImporta": {
+    "gl": "A palabra que se aprende é a que chega mentres a crianza xa está a mirar iso. Non a que se di primeiro nin a que se repite máis: a que coincide. O dedo é o que fai coincidir; sen el, a túa voz vai por un lado e a atención da roda por outro, e a páxina pasa sen deixar nada.",
+    "es": "La palabra que se aprende es la que llega mientras la criatura ya está mirando eso. No la que se dice primero ni la que se repite más: la que coincide. El dedo es lo que hace coincidir; sin él, tu voz va por un lado y la atención de la rueda por otro, y la página pasa sin dejar nada."
+  },
+  "queHacerEnCasa": {
+    "gl": "Le unha frase, sinala co dedo o que acabas de nomear, e cala. Conta cinco na túa cabeza mirando á roda. O que apareza nese silencio —un son, un dedo que apunta, unha ollada a ti— é a súa quenda: devólvea nomeándoa antes de seguir.",
+    "es": "Lee una frase, señala con el dedo lo que acabas de nombrar, y calla. Cuenta cinco en tu cabeza mirando a la rueda. Lo que aparezca en ese silencio —un sonido, un dedo que apunta, una mirada a ti— es su turno: devuélvelo nombrándolo antes de seguir."
+  },
+  "ejemploCotidiano": {
+    "gl": "«Lúa colle o seu barquiño de madeira.» Sinalas o barco e calas. Un neno di «¡ba!» e sinala tamén. Ti: «Si, o barco. O barco de Lúa.» E só entón segues coa frase seguinte. Acabas de meter a palabra xusto no intre en que el estaba a mirala.",
+    "es": "«Lúa coge su barquito de madera.» Señalas el barco y callas. Un niño dice «¡ba!» y señala también. Tú: «Sí, el barco. El barco de Lúa.» Y solo entonces sigues con la frase siguiente. Acabas de meter la palabra justo en el instante en que él la estaba mirando."
+  },
+  "afirmaciones": [
+    {
+      "id": "afirmacion_01",
+      "enunciado": {
+        "gl": "Se a roda se distrae a media páxina, o mellor é acelerar para chegar ao final do conto.",
+        "es": "Si la rueda se distrae a media página, lo mejor es acelerar para llegar al final del cuento."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Chegar ao final non é o obxectivo. Acelerar quita xusto o que fai que a páxina sirva, que son as pausas. Mellor quedarse na páxina que xa lles interesa, ou pechar o conto e seguir coa asemblea.",
+        "es": "Llegar al final no es el objetivo. Acelerar quita justo lo que hace que la página sirva, que son las pausas. Mejor quedarse en la página que ya les interesa, o cerrar el cuento y seguir con la asamblea."
+      }
+    },
+    {
+      "id": "afirmacion_02",
+      "enunciado": {
+        "gl": "Sinalar co dedo mentres se nomea axuda máis que repetir a palabra varias veces.",
+        "es": "Señalar con el dedo mientras se nombra ayuda más que repetir la palabra varias veces."
+      },
+      "esVerdadera": true,
+      "explicacion": {
+        "gl": "Repetir sobe o número de veces que se oe a palabra, pero non garante que a crianza estea a mirar iso. O dedo si: fai coincidir o que escoita co que ve, e esa coincidencia é o que fixa a palabra.",
+        "es": "Repetir sube el número de veces que se oye la palabra, pero no garantiza que la criatura esté mirando eso. El dedo sí: hace coincidir lo que escucha con lo que ve, y esa coincidencia es lo que fija la palabra."
+      }
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA3.1"
+    ]
+  },
+  "revision": {
+    "autor": "Dr. Frank Betances",
+    "revisorPedagogico": "Equipo Pedagóxico Vigo",
+    "fechaRevision": "2026-09-12",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

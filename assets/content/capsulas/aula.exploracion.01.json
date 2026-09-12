@@ -1,0 +1,78 @@
+{
+  "id": "aula.exploracion.01",
+  "bloqueId": "aula_exploracion",
+  "destinatario": "docente",
+  "orden": 1,
+  "titulo": {
+    "gl": "Poñer palabras ao que están a tocar",
+    "es": "Poner palabras a lo que están tocando"
+  },
+  "subtitulo": {
+    "gl": "Seguridade primeiro, e nomear a sensación mentres pasa",
+    "es": "Seguridad primero, y nombrar la sensación mientras pasa"
+  },
+  "tiempoLecturaMinutos": 3,
+  "icono": "child_play",
+  "ideaClave": {
+    "gl": "Na exploración sensorial a palabra ten que chegar mentres a man aínda está dentro da auga. Un minuto despois xa é outra cousa: é contar o que pasou, non nomear o que está a pasar.",
+    "es": "En la exploración sensorial la palabra tiene que llegar mientras la mano todavía está dentro del agua. Un minuto después ya es otra cosa: es contar lo que pasó, no nombrar lo que está pasando."
+  },
+  "porQueImporta": {
+    "gl": "«Morno», «suave», «mollado» non se explican: só se entenden tocando. Se a palabra coincide coa sensación, a crianza asóciaas sen esforzo; se chega antes ou despois, queda como un son solto. Esta é a parte da asemblea onde esa coincidencia é máis fácil de conseguir, porque a sensación dura.",
+    "es": "«Templado», «suave», «mojado» no se explican: solo se entienden tocando. Si la palabra coincide con la sensación, la criatura las asocia sin esfuerzo; si llega antes o después, queda como un sonido suelto. Esta es la parte de la asamblea donde esa coincidencia es más fácil de conseguir, porque la sensación dura."
+  },
+  "queHacerEnCasa": {
+    "gl": "Antes de nada, le o aviso de seguridade da pantalla e comproba a auga. Despois ponte á súa altura e vai nomeando o que fan mentres o fan, en frases curtas e sen preguntar nada: «auga morna», «a cuncha é suave», «a man mollada». As preguntas veñen no paso seguinte, non aquí.",
+    "es": "Antes de nada, lee el aviso de seguridad de la pantalla y comprueba el agua. Después ponte a su altura y ve nombrando lo que hacen mientras lo hacen, en frases cortas y sin preguntar nada: «agua templada», «la concha es suave», «la mano mojada». Las preguntas vienen en el paso siguiente, no aquí."
+  },
+  "ejemploCotidiano": {
+    "gl": "Unha nena mete a man na bandexa e retírala de golpe. Non lle preguntas nada. Dis: «Auga! Auga morna.» Volve metela, máis amodo. «Si, morna.» Á terceira vez mete as dúas mans e mírate. Esa ollada é a súa quenda, e xa asociou a palabra á sensación.",
+    "es": "Una niña mete la mano en la bandeja y la retira de golpe. No le preguntas nada. Dices: «¡Agua! Agua templada.» Vuelve a meterla, más despacio. «Sí, templada.» A la tercera vez mete las dos manos y te mira. Esa mirada es su turno, y ya asoció la palabra a la sensación."
+  },
+  "afirmaciones": [
+    {
+      "id": "afirmacion_01",
+      "enunciado": {
+        "gl": "Durante a exploración convén ir preguntando «como está a auga?» para que nomeen a sensación.",
+        "es": "Durante la exploración conviene ir preguntando «¿cómo está el agua?» para que nombren la sensación."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Preguntar pídelle á crianza a palabra que aínda non ten e interrompe o que está a facer. Nomear ti mentres ela toca dálle a palabra no intre exacto; pedirlla vén despois, e a maioría das veces nin fai falta.",
+        "es": "Preguntar le pide a la criatura la palabra que todavía no tiene e interrumpe lo que está haciendo. Nombrar tú mientras ella toca le da la palabra en el instante exacto; pedírsela viene después, y la mayoría de las veces ni hace falta."
+      }
+    },
+    {
+      "id": "afirmacion_02",
+      "enunciado": {
+        "gl": "O aviso de seguridade da actividade con auga pódese dar por sabido se xa se fixo outras veces.",
+        "es": "El aviso de seguridad de la actividad con agua se puede dar por sabido si ya se hizo otras veces."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "A supervisión con auga non depende de cantas veces se fixo antes: depende de quen está hoxe na roda e de como está a auga hoxe. O aviso está na pantalla para lelo cada vez.",
+        "es": "La supervisión con agua no depende de cuántas veces se hizo antes: depende de quién está hoy en la rueda y de cómo está el agua hoy. El aviso está en la pantalla para leerlo cada vez."
+      }
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "revision": {
+    "autor": "Dr. Frank Betances",
+    "revisorPedagogico": "Equipo Pedagóxico Vigo",
+    "fechaRevision": "2026-09-12",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

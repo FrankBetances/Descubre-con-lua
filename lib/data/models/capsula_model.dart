@@ -3,6 +3,30 @@ import '../../core/localization/localized_string.dart';
 import 'curricular_model.dart';
 import 'unidad_model.dart' show Revision;
 
+/// Quién lee la cápsula.
+///
+/// Las cápsulas de Academy las lee una familia en casa; las del aula las lee
+/// la maestra antes o después de la asamblea. Es el mismo objeto y la misma
+/// estructura de cuatro secciones —la diferencia no da para dos modelos—, pero
+/// no la misma lista ni los mismos títulos de sección: a una maestra no se le
+/// dice «qué hacer en casa».
+enum DestinatarioCapsula {
+  /// Academy. Es el valor por defecto: las cinco cápsulas que ya existían no
+  /// declaran el campo y son todas de familia.
+  familia,
+
+  /// Juega con Lúa. Formación breve atada a los seis pasos de la asamblea.
+  docente;
+
+  String get clave => name;
+
+  static DestinatarioCapsula desdeClave(String? valor) =>
+      DestinatarioCapsula.values.firstWhere(
+        (d) => d.clave == valor?.trim(),
+        orElse: () => DestinatarioCapsula.familia,
+      );
+}
+
 /// Formative reflective statement (true/false) with immediate supportive feedback.
 @immutable
 class Afirmacion {
@@ -227,10 +251,124 @@ class Bloque {
     ),
   ];
 
-  /// Resolves a block by its canonical ID.
+  static const String aulaPulsoId = 'aula_pulso';
+  static const String aulaContoId = 'aula_conto';
+  static const String aulaPreguntasId = 'aula_preguntas';
+  static const String aulaExploracionId = 'aula_exploracion';
+  static const String aulaMatematicasId = 'aula_matematicas';
+  static const String aulaPonteCasaId = 'aula_ponte_casa';
+
+  /// Los 6 bloques de las cápsulas del aula.
+  ///
+  /// No son temas elegidos a gusto: son EXACTAMENTE los seis pasos de la
+  /// asamblea, en su orden. Así la formación de la maestra no vive aparte de
+  /// lo que hace: la cápsula del pulso está al lado del paso del pulso, y si
+  /// mañana se añade o se quita un paso, salta a la vista que aquí falta o
+  /// sobra un bloque.
+  static const List<Bloque> aula = [
+    Bloque(
+      id: aulaPulsoId,
+      orden: 1,
+      titulo: LocalizedString(
+        gl: 'O pulso que se ve',
+        es: 'El pulso que se ve',
+      ),
+      descripcion: LocalizedString(
+        gl: 'Por que o metrónomo se debuxa e non se escoita, e como marcar o '
+            'pulso co corpo.',
+        es: 'Por qué el metrónomo se dibuja y no se oye, y cómo marcar el '
+            'pulso con el cuerpo.',
+      ),
+      icono: 'ear_sparkles',
+      colorHex: '#1B4965',
+    ),
+    Bloque(
+      id: aulaContoId,
+      orden: 2,
+      titulo: LocalizedString(
+        gl: 'Ler para quen aínda non fala',
+        es: 'Leer para quien todavía no habla',
+      ),
+      descripcion: LocalizedString(
+        gl: 'A voz, o dedo e as pausas: como se le un conto nunha asemblea de '
+            'cero a tres.',
+        es: 'La voz, el dedo y las pausas: cómo se lee un cuento en una '
+            'asamblea de cero a tres.',
+      ),
+      icono: 'chat_bubble_heart',
+      colorHex: '#62B6CB',
+    ),
+    Bloque(
+      id: aulaPreguntasId,
+      orden: 3,
+      titulo: LocalizedString(
+        gl: 'Preguntar sen examinar',
+        es: 'Preguntar sin examinar',
+      ),
+      descripcion: LocalizedString(
+        gl: 'Os tres niveis de pregunta e o silencio que vai despois.',
+        es: 'Los tres niveles de pregunta y el silencio que va después.',
+      ),
+      icono: 'people_arrows',
+      colorHex: '#5FA8D3',
+    ),
+    Bloque(
+      id: aulaExploracionId,
+      orden: 4,
+      titulo: LocalizedString(
+        gl: 'Poñer palabras ao que tocan',
+        es: 'Poner palabras a lo que tocan',
+      ),
+      descripcion: LocalizedString(
+        gl: 'A exploración sensorial: seguridade primeiro, e nomear a '
+            'sensación mentres pasa.',
+        es: 'La exploración sensorial: seguridad primero, y nombrar la '
+            'sensación mientras pasa.',
+      ),
+      icono: 'child_play',
+      colorHex: '#E07A5F',
+    ),
+    Bloque(
+      id: aulaMatematicasId,
+      orden: 5,
+      titulo: LocalizedString(
+        gl: 'Grande e pequeno antes dos números',
+        es: 'Grande y pequeño antes de los números',
+      ),
+      descripcion: LocalizedString(
+        gl: 'As primeiras nocións de cantidade e tamaño chegan coas mans, non '
+            'coa conta.',
+        es: 'Las primeras nociones de cantidad y tamaño llegan con las manos, '
+            'no con la cuenta.',
+      ),
+      icono: 'home_globe',
+      colorHex: '#3D5A80',
+    ),
+    Bloque(
+      id: aulaPonteCasaId,
+      orden: 6,
+      titulo: LocalizedString(
+        gl: 'Pasar a mensaxe á casa',
+        es: 'Pasar el mensaje a casa',
+      ),
+      descripcion: LocalizedString(
+        gl: 'Como se conta na porta o que se fixo na aula para que siga na '
+            'casa.',
+        es: 'Cómo se cuenta en la puerta lo que se hizo en el aula para que '
+            'siga en casa.',
+      ),
+      icono: 'chat_bubble_heart',
+      colorHex: '#127A75',
+    ),
+  ];
+
+  /// Todos los bloques, los de Academy y los del aula.
+  static List<Bloque> get todosIncluidoAula => [...todos, ...aula];
+
+  /// Resolves a block by its canonical ID, Academy or aula.
   static Bloque? byId(String id) {
     final cleanId = id.trim().toLowerCase();
-    for (final b in todos) {
+    for (final b in todosIncluidoAula) {
       if (b.id.toLowerCase() == cleanId) return b;
     }
     return null;
@@ -264,6 +402,10 @@ class Bloque {
 class Capsula {
   final String id;
   final String bloqueId;
+
+  /// Quién la lee. Sin el campo, familia: las cinco de Academy son anteriores.
+  final DestinatarioCapsula destinatario;
+
   final int orden;
   final LocalizedString titulo;
   final LocalizedString subtitulo;
@@ -280,6 +422,7 @@ class Capsula {
   const Capsula({
     required this.id,
     required this.bloqueId,
+    this.destinatario = DestinatarioCapsula.familia,
     required this.orden,
     required this.titulo,
     required this.subtitulo,
@@ -356,6 +499,8 @@ class Capsula {
       bloqueId: json['bloqueId']?.toString().trim() ??
           json['bloque_id']?.toString().trim() ??
           '',
+      destinatario:
+          DestinatarioCapsula.desdeClave(json['destinatario']?.toString()),
       orden: (json['orden'] as num?)?.toInt() ?? 1,
       titulo: LocalizedString.fromJson(
           json['titulo'] as Map<String, dynamic>? ?? {}),
@@ -379,6 +524,7 @@ class Capsula {
   Map<String, dynamic> toJson() => {
         'id': id,
         'bloqueId': bloqueId,
+        'destinatario': destinatario.clave,
         'orden': orden,
         'titulo': titulo.toJson(),
         'subtitulo': subtitulo.toJson(),

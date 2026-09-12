@@ -9,6 +9,7 @@ import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../../premios/widgets/lua_game_strip.dart';
 import 'asamblea_guiada_screen.dart';
+import 'capsulas_aula_screen.dart';
 
 /// Screen listing pedagogical units for early childhood educators («Juega con Lúa · Aula»).
 ///
@@ -106,6 +107,40 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                   language: _language,
                 ),
               ),
+
+            // La puerta a la formación docente. Va arriba y no escondida en un
+            // menú: una maestra que abre el aula con dos minutos de margen
+            // tiene que poder leer el paso que le toca sin buscarlo.
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceMd,
+                AppTheme.spaceLg,
+                0,
+              ),
+              child: OutlinedButton.icon(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => CapsulasAulaScreen(
+                      repository: widget.repository,
+                      initialLanguage: _language,
+                      onLanguageChanged: _onToggleLanguage,
+                      premios: widget.premios,
+                      audioService: widget.audioService,
+                    ),
+                  ),
+                ),
+                icon: const Icon(Icons.menu_book_outlined),
+                label: Text(
+                  isGl
+                      ? 'Formación: os seis pasos da asemblea'
+                      : 'Formación: los seis pasos de la asamblea',
+                ),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size.fromHeight(AppTheme.touchMin),
+                ),
+              ),
+            ),
 
             // Age band filter bar
             Container(

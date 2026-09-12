@@ -1,0 +1,76 @@
+{
+  "id": "aula.ponte_casa.01",
+  "bloqueId": "aula_ponte_casa",
+  "destinatario": "docente",
+  "orden": 1,
+  "titulo": {
+    "gl": "Pasar a mensaxe á casa en trinta segundos",
+    "es": "Pasar el mensaje a casa en treinta segundos"
+  },
+  "subtitulo": {
+    "gl": "O que se di na porta é o que segue na casa",
+    "es": "Lo que se dice en la puerta es lo que sigue en casa"
+  },
+  "tiempoLecturaMinutos": 3,
+  "icono": "chat_bubble_heart",
+  "ideaClave": {
+    "gl": "A familia recolle con présa, cun abrigo nunha man e unha mochila na outra. O que lle chega non é o resumo da asemblea: é unha frase. Elixe cal, e dilla completa antes de que saian pola porta.",
+    "es": "La familia recoge con prisa, con un abrigo en una mano y una mochila en la otra. Lo que le llega no es el resumen de la asamblea: es una frase. Elige cuál, y dísela completa antes de que salgan por la puerta."
+  },
+  "porQueImporta": {
+    "gl": "O que a crianza fai na aula ocupa poucas horas; o resto do día está na casa. Unha actividade que non sae da aula vale só o que dura. E a mensaxe funciona mellor cando nomea algo concreto que pasou hoxe —unha palabra, un xogo, unha reacción— que cando dá un consello xeral: o consello xeral esquécese na escaleira.",
+    "es": "Lo que la criatura hace en el aula ocupa pocas horas; el resto del día está en casa. Una actividad que no sale del aula vale solo lo que dura. Y el mensaje funciona mejor cuando nombra algo concreto que pasó hoy —una palabra, un juego, una reacción— que cuando da un consejo general: el consejo general se olvida en la escalera."
+  },
+  "queHacerEnCasa": {
+    "gl": "Le na pantalla a mensaxe do día antes de que empece a recollida e quédate cunha soa idea. Dilla nomeando á crianza e dicindo que facer esta noite, non que evitar. Se tes dúas cousas que contar, garda unha para mañá.",
+    "es": "Lee en la pantalla el mensaje del día antes de que empiece la recogida y quédate con una sola idea. Dísela nombrando a la criatura y diciendo qué hacer esta noche, no qué evitar. Si tienes dos cosas que contar, guarda una para mañana."
+  },
+  "ejemploCotidiano": {
+    "gl": "«Hoxe Xiana meteu as mans na auga e dixo ¡ba! polo barco. Esta noite, na bañeira, dille barco cando o colla e agarda un pouco a ver que fai.» Trinta segundos, unha soa idea, e algo que se pode facer sen preparar nada.",
+    "es": "«Hoy Xiana metió las manos en el agua y dijo ¡ba! por el barco. Esta noche, en la bañera, dile barco cuando lo coja y espera un poco a ver qué hace.» Treinta segundos, una sola idea, y algo que se puede hacer sin preparar nada."
+  },
+  "afirmaciones": [
+    {
+      "id": "afirmacion_01",
+      "enunciado": {
+        "gl": "Canta máis información se lle dea á familia na porta, mellor aproveita o día na casa.",
+        "es": "Cuanta más información se le dé a la familia en la puerta, mejor aprovecha el día en casa."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Na porta hai trinta segundos e as mans ocupadas. Tres ideas convértense en ningunha; unha soa, concreta e de hoxe, é a que chega á bañeira. O resto pode esperar a mañá.",
+        "es": "En la puerta hay treinta segundos y las manos ocupadas. Tres ideas se convierten en ninguna; una sola, concreta y de hoy, es la que llega a la bañera. El resto puede esperar a mañana."
+      }
+    },
+    {
+      "id": "afirmacion_02",
+      "enunciado": {
+        "gl": "Convén dicirlle á familia que facer esta noite, e non só o que non debe facer.",
+        "es": "Conviene decirle a la familia qué hacer esta noche, y no solo lo que no debe hacer."
+      },
+      "esVerdadera": true,
+      "explicacion": {
+        "gl": "Unha instrución en positivo pódese seguir tal cal esa mesma noite. Unha advertencia deixa á familia sabendo o que non, pero sen nada que poñer no seu lugar.",
+        "es": "Una instrucción en positivo se puede seguir tal cual esa misma noche. Una advertencia deja a la familia sabiendo lo que no, pero sin nada que poner en su lugar."
+      }
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA3.1"
+    ]
+  },
+  "revision": {
+    "autor": "Dr. Frank Betances",
+    "revisorPedagogico": "Equipo Pedagóxico Vigo",
+    "fechaRevision": "2026-09-12",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}
