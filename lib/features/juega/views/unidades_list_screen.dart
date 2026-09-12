@@ -160,18 +160,28 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  Row(
+                  // Wrap y no Row: con tres `Expanded` cada chip se llevaba un
+                  // tercio exacto del ancho, y «Todas las edades» no cabe en un
+                  // tercio. Se veía «Todas las edade», cortado, SOLO en
+                  // castellano —en galego «Todas as idades» sí cabía—, y ningún
+                  // test lo cazó porque un chip recorta en vez de desbordar: no
+                  // hay franjas amarillas ni excepción, el texto se corta y ya.
+                  //
+                  // Con Wrap cada chip ocupa lo que mide su texto y baja de
+                  // línea cuando no caben. Deja de depender del ancho de la
+                  // pantalla, de la lengua y de la escala de texto del sistema.
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
                     children: [
                       _buildFilterChip(
                         label: isGl ? 'Todas as idades' : 'Todas las edades',
                         filterKey: 'todas',
                       ),
-                      const SizedBox(width: 8),
                       _buildFilterChip(
                         label: isGl ? '0-2 anos' : '0-2 años',
                         filterKey: '0-2',
                       ),
-                      const SizedBox(width: 8),
                       _buildFilterChip(
                         label: isGl ? '2-3 anos' : '2-3 años',
                         filterKey: '2-3',
@@ -221,36 +231,34 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
   }) {
     final isSelected = _selectedAgeFilter == filterKey;
 
-    return Expanded(
-      child: FilterChip(
-        label: Center(
-          child: Text(
-            label,
-            style: TextStyle(
-              fontSize: 13.0,
-              fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-              color: isSelected ? Colors.white : AppTheme.textSlate,
-            ),
-          ),
+    // Sin Expanded ni Center: el chip se mide por su texto, que es lo que
+    // impide que lo recorte.
+    return FilterChip(
+      label: Text(
+        label,
+        style: TextStyle(
+          fontSize: 13.0,
+          fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+          color: isSelected ? Colors.white : AppTheme.textSlate,
         ),
-        selected: isSelected,
-        selectedColor: AppTheme.primaryVigoBlue,
-        backgroundColor: const Color(0xFFF1F5F9),
-        showCheckmark: false,
-        padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 8.0),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10.0),
-          side: BorderSide(
-            color:
-                isSelected ? AppTheme.primaryVigoBlue : const Color(0xFFCBD5E1),
-          ),
-        ),
-        onSelected: (_) {
-          setState(() {
-            _selectedAgeFilter = filterKey;
-          });
-        },
       ),
+      selected: isSelected,
+      selectedColor: AppTheme.primaryVigoBlue,
+      backgroundColor: const Color(0xFFF1F5F9),
+      showCheckmark: false,
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 8.0),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+        side: BorderSide(
+          color:
+              isSelected ? AppTheme.primaryVigoBlue : const Color(0xFFCBD5E1),
+        ),
+      ),
+      onSelected: (_) {
+        setState(() {
+          _selectedAgeFilter = filterKey;
+        });
+      },
     );
   }
 
@@ -270,8 +278,16 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Top badges row (Age & Curriculum)
-            Row(
+            // Las dos etiquetas de arriba: tramo etario y normativa.
+            //
+            // Wrap y no Row, por lo mismo que los chips del filtro: en un
+            // móvil de 360 dp esta fila DESBORDABA 143 px, en las dos lenguas.
+            // No se había visto porque el aparato en el que se prueba tiene
+            // 412 dp, y porque en release un desborde no pinta franjas: las
+            // etiquetas se cortan y ya. Lo destapó el test del filtro.
+            Wrap(
+              spacing: 8,
+              runSpacing: 6,
               children: [
                 Container(
                   padding: const EdgeInsets.symmetric(
@@ -291,7 +307,6 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                     ),
                   ),
                 ),
-                const SizedBox(width: 8),
                 Container(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 10.0, vertical: 4.0),

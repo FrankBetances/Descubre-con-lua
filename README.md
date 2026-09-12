@@ -46,8 +46,6 @@ ni si una cadena se corta en una pantalla pequeña.
 
 Defectos abiertos que hay que mirar antes de publicar:
 
-- en castellano, el chip **«Todas las edades»** del filtro de tramo etario sale
-  **cortado**. Se ve en `docs/capturas/aula-unidades-es.png`; en gallego cabe;
 - el contenido declara **cinco palabras de vocabulario** por unidad, con
   definición y grabación, y **ninguna pantalla las muestra**;
 - faltan los logotipos de la Incubadora startTIC, del Consorcio de la Zona

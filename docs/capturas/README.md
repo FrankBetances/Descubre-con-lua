@@ -36,9 +36,12 @@ adb exec-out screencap -p > docs/capturas/aula-unidades-gl.png
 ```
 
 Cada pantalla va en gallego **y** en castellano. Las dos lenguas no ocupan lo
-mismo, y ahí es donde aparecen los cortes de texto: el chip «Todas las edades»
-del filtro de tramo etario sale cortado en castellano y entero en gallego, y eso
-se ve en estas imágenes y no en ningún test.
+mismo, y ahí es donde aparecen los cortes de texto. Estas imágenes ya han pagado
+su coste: en la primera tanda se vio que el chip «Todas las edades» salía
+cortado en castellano y entero en gallego. Ningún test lo había cazado, porque
+un chip recorta en vez de desbordar: no hay franjas amarillas ni excepción. Está
+arreglado, y ahora lo vigila `test/features/juega/filtro_edad_test.dart`, que
+compara el ancho pintado con el que el texto mide de verdad.
 
 ## Los ficheros
 
