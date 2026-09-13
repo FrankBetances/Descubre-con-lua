@@ -24,6 +24,8 @@ VOICE_DIR = ROOT / "assets" / "voice"
 CORPUS_JSON = ROOT / "voice-corpus.json"
 
 LANGS = ("gl", "es")
+ALL_LANGS = ("gl", "es", "en")
+VOICE_LANGS = ALL_LANGS
 
 # Reading pace passed to the synthesiser. There is no `child` style because a
 # child never uses this app, and no `clinical` style because nothing here has a
@@ -90,14 +92,14 @@ def voice_id(style: str, text: str, lang: str) -> str:
     return f"{lang}_{style}_{fnv1a32(normalized)}_{utf16_length(normalized)}"
 
 
-def _localized(node: object) -> dict[str, str]:
+def _localized(node: object, langs: tuple[str, ...] = LANGS) -> dict[str, str]:
     if isinstance(node, dict):
-        return {lang: str(node.get(lang, "")) for lang in LANGS}
-    return {lang: "" for lang in LANGS}
+        return {lang: str(node.get(lang, "")) for lang in langs}
+    return {lang: "" for lang in langs}
 
 
-def _add(text: dict[str, str], style: str, source: str, seen: dict[str, Locution]) -> None:
-    for lang in LANGS:
+def _add(text: dict[str, str], style: str, source: str, seen: dict[str, Locution], langs: tuple[str, ...] = LANGS) -> None:
+    for lang in langs:
         value = normalize(text.get(lang, ""))
         if not value:
             continue
@@ -112,7 +114,7 @@ def _add(text: dict[str, str], style: str, source: str, seen: dict[str, Locution
         seen.setdefault(entry.id, entry)
 
 
-def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
+def collect_locutions(content_dir: Path = CONTENT_DIR, langs: tuple[str, ...] = LANGS) -> list[Locution]:
     """Every locution the app can play, read from the content JSON.
 
     Nothing is invented here: if a screen starts playing something new, it gets
@@ -133,6 +135,14 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     imitated.
     """
     seen: dict[str, Locution] = {}
+    _orig_localized = globals()["_localized"]
+    _orig_add = globals()["_add"]
+
+    def _localized(node: object) -> dict[str, str]:
+        return _orig_localized(node, langs=langs)
+
+    def _add(text: dict[str, str], style: str, source: str, _s: dict[str, Locution] = seen) -> None:
+        _orig_add(text, style, source, seen, langs=langs)
 
     for path in sorted((content_dir / "unidades").glob("*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))

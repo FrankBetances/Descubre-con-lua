@@ -132,10 +132,11 @@ void main() {
     testWidgets('acredita las voces y la tipografía, que llevan licencia',
         (tester) async {
       final body = await textOf(tester, AppLanguage.es);
-      // Citar estas tres no es cortesía: las dos voces y la fuente tienen
+      // Citar estas no es cortesía: las voces y la fuente tienen
       // licencia, y la app las redistribuye dentro del paquete.
       expect(body, contains('Celtia'));
       expect(body, contains('Sharvard'));
+      expect(body, contains('LJSpeech'));
       expect(body, contains('Nunito'));
       expect(body, contains('SIL Open Font License'));
     });

@@ -46,3 +46,12 @@ String voiceAssetId(VoiceStyle style, String text, AppLanguage lang) {
 /// Bundled path of the recording for [text].
 String voiceAssetPath(VoiceStyle style, String text, AppLanguage lang) =>
     'assets/voice/${voiceAssetId(style, text, lang)}.m4a';
+
+/// Identifier of the English recording for [text] (synthesised with LJSpeech · piper).
+String englishVoiceAssetId(VoiceStyle style, String text) =>
+    voiceAssetId(style, text, AppLanguage.en);
+
+/// Bundled path of the English recording for [text].
+String englishVoiceAssetPath(VoiceStyle style, String text) =>
+    voiceAssetPath(style, text, AppLanguage.en);
+

@@ -100,6 +100,13 @@ class CreditsScreen extends StatelessWidget {
   static const _sharvardDesc = LocalizedString(
     gl: 'Voz en castelán. rhasspy/piper-voices.',
     es: 'Voz en castellano. rhasspy/piper-voices.',
+    en: 'Spanish voice. rhasspy/piper-voices.',
+  );
+
+  static const _ljSpeechDesc = LocalizedString(
+    gl: 'Voz en inglés (en-US). rhasspy/piper-voices.',
+    es: 'Voz en inglés (en-US). rhasspy/piper-voices.',
+    en: 'English voice (en-US). rhasspy/piper-voices.',
   );
 
   static const _typeKicker = LocalizedString(
@@ -243,6 +250,11 @@ class CreditsScreen extends StatelessWidget {
                         _Entry(
                           name: 'Sharvard',
                           detail: _sharvardDesc.resolve(currentLanguage),
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
+                        _Entry(
+                          name: 'LJSpeech',
+                          detail: _ljSpeechDesc.resolve(currentLanguage),
                         ),
                         const SizedBox(height: AppTheme.spaceMd),
                         Text(
