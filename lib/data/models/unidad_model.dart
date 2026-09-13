@@ -632,6 +632,59 @@ class PonteCasa {
 
 /// Strongly typed pedagogical unit model for «Juega con Lúa · Aula».
 @immutable
+
+/// El inglés que la persona adulta DICE durante la asamblea, fase por fase.
+///
+/// No es una lengua de la app: es contenido que se escucha. Vive junto a la
+/// fase en la que se usa —no en una pantalla aparte— porque una docente con
+/// doce criaturas en la alfombra no va a ir a buscarlo a otro sitio.
+///
+/// Las claves de [porFase] son las seis fases de la asamblea, en su orden:
+/// `pulso`, `conto`, `preguntas`, `exploracion`, `matematicas`, `ponteCasa`.
+class InglesUnidad {
+  /// La frase entera del mes, la que se lleva a casa.
+  final String frase;
+
+  final Map<String, List<String>> porFase;
+
+  const InglesUnidad({this.frase = '', this.porFase = const {}});
+
+  static const List<String> fases = [
+    'pulso',
+    'conto',
+    'preguntas',
+    'exploracion',
+    'matematicas',
+    'ponteCasa',
+  ];
+
+  /// Lo que se dice en la fase [indice] (0..5). Vacío si esa fase no lleva.
+  List<String> deFase(int indice) {
+    if (indice < 0 || indice >= fases.length) return const [];
+    return porFase[fases[indice]] ?? const [];
+  }
+
+  bool get estaVacio => porFase.values.every((v) => v.isEmpty);
+
+  factory InglesUnidad.fromJson(Map<String, dynamic> json) {
+    final raw = json['porFase'];
+    final mapa = <String, List<String>>{};
+    if (raw is Map) {
+      for (final entry in raw.entries) {
+        final valor = entry.value;
+        if (valor is List) {
+          mapa[entry.key.toString()] =
+              List<String>.unmodifiable(valor.map((e) => e.toString()));
+        }
+      }
+    }
+    return InglesUnidad(
+      frase: json['frase']?.toString() ?? '',
+      porFase: Map.unmodifiable(mapa),
+    );
+  }
+}
+
 class Unidad {
   final String id;
   final String tramoEtario; // '0-2' | '2-3' | '0-3'
@@ -650,6 +703,10 @@ class Unidad {
   final CurricularReference curriculo;
   final Revision revision;
 
+  /// El inglés de esta unidad, repartido por fases. Vacío si la unidad no lo
+  /// lleva: entonces la asamblea no pinta la barra y no promete nada.
+  final InglesUnidad ingles;
+
   const Unidad({
     required this.id,
     required this.tramoEtario,
@@ -667,6 +724,7 @@ class Unidad {
     required this.puenteCasa,
     required this.curriculo,
     required this.revision,
+    this.ingles = const InglesUnidad(),
   });
 
   // Canonical compatibility getters
@@ -746,6 +804,10 @@ class Unidad {
       puenteCasa: PonteCasa.fromJson(puenteCasaData),
       curriculo: CurricularReference.fromJson(curriculoData),
       revision: Revision.fromJson(revisionData),
+      ingles: json['ingles'] is Map
+          ? InglesUnidad.fromJson(
+              Map<String, dynamic>.from(json['ingles'] as Map))
+          : const InglesUnidad(),
     );
   }
 

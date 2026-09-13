@@ -17,6 +17,8 @@ import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
+import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
+import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/bloques_list_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.dart';
 import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
@@ -320,16 +322,60 @@ void main() {
       );
     });
 
+    testWidgets('asamblea · o inglés na fase · $l', (tester) async {
+      await capturar(
+        tester,
+        'asamblea-ingles-$l',
+        AsambleaGuiadaScreen(
+          unidad: contenido.getAllUnidades().first,
+          initialLanguage: lang,
+          audioService: MockOfflineAudioService(),
+        ),
+        tamano: const Size(412, 1400),
+      );
+    });
+
+    testWidgets('a nota para as casas · $l', (tester) async {
+      await capturar(
+        tester,
+        'nota-casas-$l',
+        NotaParaCasasScreen(
+          unidad: contenido.getAllUnidades().first,
+          language: lang,
+          audioService: MockOfflineAudioService(),
+        ),
+        tamano: const Size(412, 1200),
+      );
+    });
+
+    testWidgets('calendario · lado familia · $l', (tester) async {
+      final calendario = await calendarioConProgreso(tester);
+      final cal = await contenidoCalendario(tester);
+      await capturar(
+        tester,
+        'calendario-familia-$l',
+        CalendarioScreen(
+          store: calendario,
+          contenido: cal,
+          repository: contenido,
+          initialLanguage: lang,
+          esDocenteInicial: false,
+        ),
+        tamano: const Size(412, 1800),
+      );
+    });
+
     testWidgets('calendario escola-fogar · $l', (tester) async {
       final premios = await premiosConProgreso(tester);
       final calendario = await calendarioConProgreso(tester);
-      final contenido = await contenidoCalendario(tester);
+      final contenidoCal = await contenidoCalendario(tester);
       await capturar(
         tester,
         'calendario-$l',
         CalendarioScreen(
           store: calendario,
-          contenido: contenido,
+          contenido: contenidoCal,
+          repository: contenido,
           premios: premios,
           initialLanguage: lang,
           esDocenteInicial: true,

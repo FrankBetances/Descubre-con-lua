@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "nota": "Los premios los gana el ADULTO que usa la app: la maestra por asambleas dirigidas, la familia por cápsulas leídas. Aquí no se registra nada de ninguna criatura, porque el niño no usa la pantalla. Las `medallas` son lo mismo para el Calendario Escola·Fogar, y sus criterios solo pueden salir de lo que ese calendario mide de verdad: días con asamblea en el aula, días con rutina en casa y días con las dos cosas. Nada de «toda la clase»: la app conoce un aparato, no un aula.",
+  "nota": "Los premios los gana el ADULTO que usa la app: la maestra por asambleas dirigidas, la familia por cápsulas leídas. Aquí no se registra nada de ninguna criatura, porque el niño no usa la pantalla. Las `medallas` son lo mismo para el Calendario Escola·Fogar. Cada criterio cuenta UN SOLO LADO: días con asamblea en el aula, o días con rutina en casa. No hay criterio de «los dos el mismo día» porque la app no tiene red y un aparato no sabe lo que pasó en el otro; premiar eso era premiar que alguien marcase dos casillas. El puente entre la escuela y la casa es la nota que la docente entrega, no un dato que viaje.",
   "xp": {
     "porAsamblea": 20,
     "porCapsula": 15
@@ -287,6 +287,24 @@
       }
     },
     {
+      "id": "primeira_asemblea_calendario",
+      "perfil": "docente",
+      "criterio": {
+        "tipo": "aula",
+        "valor": 1
+      },
+      "glifo": "sunrise",
+      "rango": "bronze",
+      "titulo": {
+        "gl": "A primeira do curso",
+        "es": "La primera del curso"
+      },
+      "descripcion": {
+        "gl": "Primeira asemblea rexistrada no calendario do curso.",
+        "es": "Primera asamblea registrada en el calendario del curso."
+      }
+    },
+    {
       "id": "dez_dias_aula",
       "perfil": "docente",
       "criterio": {
@@ -305,57 +323,21 @@
       }
     },
     {
-      "id": "primeira_dobre",
-      "perfil": "ambos",
+      "id": "trinta_dias_aula",
+      "perfil": "docente",
       "criterio": {
-        "tipo": "dobre",
-        "valor": 1
+        "tipo": "aula",
+        "valor": 30
       },
-      "glifo": "heart",
-      "rango": "bronze",
-      "titulo": {
-        "gl": "Aula e casa o mesmo día",
-        "es": "Aula y casa el mismo día"
-      },
-      "descripcion": {
-        "gl": "Por primeira vez, o mesmo día houbo asemblea na aula e xogo na casa.",
-        "es": "Por primera vez, el mismo día hubo asamblea en el aula y juego en casa."
-      }
-    },
-    {
-      "id": "cinco_dobres",
-      "perfil": "ambos",
-      "criterio": {
-        "tipo": "dobre",
-        "valor": 5
-      },
-      "glifo": "heart",
-      "rango": "silver",
-      "titulo": {
-        "gl": "Cinco días enlazados",
-        "es": "Cinco días enlazados"
-      },
-      "descripcion": {
-        "gl": "Cinco días nos que a escola e a casa foron no mesmo sentido.",
-        "es": "Cinco días en los que la escuela y la casa fueron en el mismo sentido."
-      }
-    },
-    {
-      "id": "vinte_dobres",
-      "perfil": "ambos",
-      "criterio": {
-        "tipo": "dobre",
-        "valor": 20
-      },
-      "glifo": "heart",
+      "glifo": "sunrise",
       "rango": "gold",
       "titulo": {
-        "gl": "Vinte días enlazados",
-        "es": "Veinte días enlazados"
+        "gl": "Un trimestre no calendario",
+        "es": "Un trimestre en el calendario"
       },
       "descripcion": {
-        "gl": "Vinte días con aula e casa o mesmo día. Iso é un curso enteiro traballando xunto.",
-        "es": "Veinte días con aula y casa el mismo día. Eso es un curso entero trabajando junto."
+        "gl": "Trinta días con asemblea. Iso xa é a rutina da aula, non un intento.",
+        "es": "Treinta días con asamblea. Eso ya es la rutina del aula, no un intento."
       }
     }
   ]

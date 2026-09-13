@@ -126,6 +126,16 @@ def _add(text: dict[str, str], style: str, source: str, seen: dict[str, Locution
         _one(text.get(lang, ""), lang, style, source, seen)
 
 
+def estilo_ingles(text: str) -> str:
+    """Una palabra suelta se imita, una frase se lee.
+
+    La MISMA regla está en `estiloIngles` de lib/core/audio/voice_id.dart. Si
+    las dos dejaran de coincidir, la app pediría una grabación con otro
+    identificador y el botón desaparecería sin que nadie supiera por qué.
+    """
+    return "tutor" if " " in normalize(text) else "slow"
+
+
 def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     """Every locution the app can play, read from the content JSON.
 
@@ -151,6 +161,17 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     for path in sorted((content_dir / "unidades").glob("*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
         unit_id = data.get("id", path.stem)
+
+        # El inglés de la unidad, fase por fase: es lo que la barra de la
+        # asamblea pinta con altavoz, así que tiene que estar grabado.
+        ingles = data.get("ingles") or {}
+        for fase, textos in (ingles.get("porFase") or {}).items():
+            for texto in textos or []:
+                _one(str(texto), "en", estilo_ingles(str(texto)),
+                     f"{unit_id}/ingles/{fase}", seen)
+        if ingles.get("frase"):
+            _one(str(ingles["frase"]), "en", estilo_ingles(str(ingles["frase"])),
+                 f"{unit_id}/ingles/frase", seen)
 
         cancion = data.get("cancionPulso") or data.get("cancion") or {}
         letra = cancion.get("letraConPulsos") or cancion.get("letra_con_pulsos")

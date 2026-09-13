@@ -322,5 +322,37 @@
     "fechaRevision": "2026-09-11",
     "version": "1.0.0",
     "aprobadoParaAula": true
+  },
+  "ingles": {
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo.",
+    "frase": "Blue sea, waves go up and down!",
+    "porFase": {
+      "pulso": [
+        "Waves",
+        "Gentle waves",
+        "Big waves!"
+      ],
+      "conto": [
+        "Sea",
+        "Fish",
+        "Blue"
+      ],
+      "preguntas": [
+        "Fish",
+        "Blue"
+      ],
+      "exploracion": [
+        "Swim",
+        "Swim like a fish"
+      ],
+      "matematicas": [
+        "Gentle waves",
+        "Big waves!"
+      ],
+      "ponteCasa": [
+        "Blue sea, waves go up and down!",
+        "Goodbye"
+      ]
+    }
   }
 }

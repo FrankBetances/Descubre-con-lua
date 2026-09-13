@@ -9,6 +9,8 @@ import '../widgets/paso_cancion_widget.dart';
 import '../widgets/paso_conto_widget.dart';
 import '../widgets/paso_exploracion_widget.dart';
 import '../widgets/paso_matematicas_widget.dart';
+import 'nota_para_casas_screen.dart';
+import '../widgets/barra_ingles_widget.dart';
 import '../widgets/paso_ponte_casa_widget.dart';
 import '../widgets/paso_preguntas_widget.dart';
 import '../../premios/premios_model.dart';
@@ -140,7 +142,9 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
         ) ??
         const <Insignia>[];
 
-    // Se rexistra a asemblea no calendario escola-fogar para activar a dobre estimulación
+    // La asamblea queda registrada en el calendario del aula. Solo el lado del
+    // aula: lo que pase en cada casa lo marca cada casa, porque esta app no
+    // tiene forma de saberlo y fingir que sí era el defecto de fondo.
     await widget.calendario?.registrarAula();
 
     if (!mounted) return;
@@ -164,10 +168,30 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
         backgroundColor: AppTheme.calmSage,
       ),
     );
+
+    // Y aquí es donde la asamblea llega a las casas: con una nota que se copia,
+    // no con una casilla en el móvil de una familia que no estuvo en el aula.
+    // Si la unidad no trae puente con la casa, no se enseña nada.
+    if (widget.unidad.puenteCasa.mensajeFamilias
+        .resolve(_language)
+        .trim()
+        .isNotEmpty) {
+      await Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => NotaParaCasasScreen(
+            unidad: widget.unidad,
+            language: _language,
+            audioService: _audioService,
+          ),
+        ),
+      );
+      if (!mounted) return;
+    }
+
     Navigator.of(context).pop();
   }
 
-  Widget _buildCurrentPasoWidget() {
+  Widget _buildContenidoDelPaso() {
     final unidad = widget.unidad;
 
     switch (_currentPaso) {
@@ -329,10 +353,22 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
               child: ListView(
                 padding: const EdgeInsets.all(20.0),
                 children: [
-                  _buildCurrentPasoWidget(),
+                  _buildContenidoDelPaso(),
                   const SizedBox(height: 32.0),
                 ],
               ),
+            ),
+
+            // El inglés de la fase, ANCLADO encima de la navegación.
+            //
+            // Estuvo dentro del scroll y era inútil: quedaba al final de una
+            // fase larga, debajo del pliegue, y para oír «Gentle waves» había
+            // que bajar hasta el fondo con doce criaturas delante. Aquí no se
+            // mueve: mismo sitio en las seis fases, al alcance del pulgar.
+            BarraInglesFase(
+              textos: widget.unidad.ingles.deFase(_currentPaso),
+              language: _language,
+              audioService: _audioService,
             ),
 
             // Bottom Navigation Toolbar
