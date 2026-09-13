@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "id": "asamblea.ritual.01",
+  "nota": "El ritual de la asamblea: qué hace la docente en cada fase y cuánto dura. Es el MISMO los diez meses —lo que cambia cada mes es el material, no el gesto—, por eso vive aquí y no repetido en cada unidad. La consigna se lee de un vistazo y se levanta la cabeza: por eso es una línea y está en imperativo. Los minutos son una sugerencia de ritmo, no un cronómetro que haya que cumplir; suman ocho, que es el techo de una asamblea de 0-3.",
+  "fases": [
+    {
+      "clave": "pulso",
+      "minutos": 1,
+      "consigna": {
+        "gl": "Círculo na alfombra. Marca o pulso nas pernas e canta moi amodo.",
+        "es": "Círculo en la alfombra. Marca el pulso en las piernas y canta muy despacio."
+      }
+    },
+    {
+      "clave": "conto",
+      "minutos": 2,
+      "consigna": {
+        "gl": "Le a páxina en alto, fai a pregunta e agarda cinco segundos.",
+        "es": "Lee la página en alto, haz la pregunta y espera cinco segundos."
+      }
+    },
+    {
+      "clave": "preguntas",
+      "minutos": 1,
+      "consigna": {
+        "gl": "Unha pregunta de cada vez. O xesto vale igual ca a palabra.",
+        "es": "Una pregunta cada vez. El gesto vale igual que la palabra."
+      }
+    },
+    {
+      "clave": "exploracion",
+      "minutos": 2,
+      "consigna": {
+        "gl": "Le o aviso antes de sacar o material. Ofrece; non poñas nada na man de ninguén.",
+        "es": "Lee el aviso antes de sacar el material. Ofrece; no pongas nada en la mano de nadie."
+      }
+    },
+    {
+      "clave": "matematicas",
+      "minutos": 1,
+      "consigna": {
+        "gl": "Dous obxectos, non cinco. Nomea mentres o fas e deixa que toquen.",
+        "es": "Dos objetos, no cinco. Nombra mientras lo haces y deja que toquen."
+      }
+    },
+    {
+      "clave": "ponteCasa",
+      "minutos": 1,
+      "consigna": {
+        "gl": "Queda coa nota para as casas: dilla na porta ou escríbea na entrada.",
+        "es": "Quédate con la nota para las casas: dila en la puerta o escríbela en la entrada."
+      }
+    }
+  ]
+}

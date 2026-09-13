@@ -130,7 +130,21 @@ jobs:
             echo 'Nothing to commit: every recording was already present.'
           else
             git commit -m 'chore(voice): synthesise offline voice assets (Celtia gl / Sharvard es / LJSpeech en)'
-            git push origin HEAD:${{ github.ref_name }}
+            # Sintetizar el gallego con Celtia son quince o veinte minutos. Si
+            # alguien empuja a la rama mientras tanto, este push se rechaza con
+            # «fetch first» y las grabaciones se van con el runner: pasó el
+            # 13/9/2026 y se perdieron 659 locuciones ya sintetizadas.
+            # El commit solo AÑADE ficheros de audio, así que rebasar encima de
+            # lo que haya llegado no puede chocar con nada.
+            for intento in 1 2 3; do
+              git pull --rebase origin "${{ github.ref_name }}"
+              if git push origin HEAD:"${{ github.ref_name }}"; then
+                echo "Empujado al intento $intento."
+                break
+              fi
+              echo "::warning::Push rechazado en el intento $intento; se reintenta."
+              sleep $((intento * 5))
+            done
           fi
 
       - name: Verify every locution now has a recording

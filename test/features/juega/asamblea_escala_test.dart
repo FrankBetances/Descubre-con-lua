@@ -90,6 +90,25 @@ void main() {
               reason: '${unidad.id} desborda na fase 1 '
                   '(${lang.code}, escala $escala)');
 
+          // La ficha completa trae el doble de texto: consejos, materiales,
+          // objetivos. Si solo se comprueba el modo asamblea, la mitad de la
+          // pantalla se queda sin mirar.
+          final abrirFicha = find.byKey(const Key('boton_ficha_completa'));
+          if (abrirFicha.evaluate().isNotEmpty) {
+            await tester.ensureVisible(abrirFicha);
+            await tester.pumpAndSettle();
+            await tester.tap(abrirFicha, warnIfMissed: false);
+            await tester.pumpAndSettle();
+            expect(erroresDe(tester), isEmpty,
+                reason: '${unidad.id} desborda na ficha completa da fase 1 '
+                    '(${lang.code}, escala $escala)');
+          }
+
+          // El interruptor queda ABIERTO desde la fase 1, así que las cinco
+          // siguientes se comprueban con la ficha completa, que es el caso con
+          // más texto. El modo asamblea enseña un subconjunto: si cabe el
+          // superconjunto, cabe él.
+          //
           // Las seis fases, una a una: la que desborda puede ser cualquiera.
           for (var fase = 1; fase < 6; fase++) {
             final seguinte = find.byKey(const Key('boton_seguinte_fase'));

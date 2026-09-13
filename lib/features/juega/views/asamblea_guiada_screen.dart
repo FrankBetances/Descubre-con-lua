@@ -11,6 +11,8 @@ import '../widgets/paso_exploracion_widget.dart';
 import '../widgets/paso_matematicas_widget.dart';
 import 'nota_para_casas_screen.dart';
 import '../widgets/barra_ingles_widget.dart';
+import '../widgets/consigna_fase_widget.dart';
+import '../../../data/repositories/ritual_repository.dart';
 import '../widgets/vocabulario_widget.dart';
 import '../widgets/paso_ponte_casa_widget.dart';
 import '../widgets/paso_preguntas_widget.dart';
@@ -65,6 +67,17 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
   /// cada página tiene lo suyo que decir, y una lista para todo el cuento deja
   /// a la docente sin saber cuándo toca cada palabra.
   int _paginaConto = 0;
+
+  /// El ritual: la consigna y los minutos de cada fase. Si no se puede leer, la
+  /// asamblea funciona igual y sin consigna: es una ayuda, no un requisito, y
+  /// dejar la pantalla en blanco por ella sería peor que no tenerla.
+  RitualAsamblea _ritual = RitualAsamblea.ningun;
+
+  /// Modo asamblea: arranca ENCENDIDO. Con doce criaturas en la alfombra se
+  /// mira el móvil dos segundos, y lo que sobra estorba. La ficha completa
+  /// —consejos, materiales, objetivos— es para preparar la sesión antes, y
+  /// está a un toque.
+  bool _modoAsamblea = true;
   late AppLanguage _language;
   late OfflineAudioService _audioService;
   bool _createdInternalAudioService = false;
@@ -91,6 +104,10 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
   void initState() {
     super.initState();
     _currentPaso = 0;
+    RitualAsamblea.cargar().then((r) {
+      if (!mounted) return;
+      setState(() => _ritual = r);
+    }).catchError((Object _) {/* sin consigna, pero con asamblea */});
     _language = widget.initialLanguage;
     if (widget.audioService != null) {
       _audioService = widget.audioService!;
@@ -197,6 +214,13 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
     Navigator.of(context).pop();
   }
 
+  /// La duración de la asamblea, sumada del ritual. Antes aquí había un
+  /// «5-8 min máx.» escrito a mano que no lo sostenía nada.
+  String get _duracionTotal {
+    final total = _ritual.minutosTotales;
+    return total > 0 ? ' · ~$total min' : '';
+  }
+
   /// Si la persona que mira lleva el texto del sistema muy grande.
   ///
   /// A partir de aquí la pantalla recoge el adorno para que quepa el
@@ -231,6 +255,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
           cancion: unidad.cancionPulso,
           language: _language,
           audioService: _audioService,
+          soloEsencial: _modoAsamblea,
         );
       case 1:
         return Column(
@@ -255,18 +280,21 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
           preguntas: unidad.preguntas,
           language: _language,
           audioService: _audioService,
+          soloEsencial: _modoAsamblea,
         );
       case 3:
         return PasoExploracionWidget(
           exploracion: unidad.exploracion,
           language: _language,
           audioService: _audioService,
+          soloEsencial: _modoAsamblea,
         );
       case 4:
         return PasoMatematicasWidget(
           matematicas: unidad.matematicas,
           language: _language,
           audioService: _audioService,
+          soloEsencial: _modoAsamblea,
         );
       case 5:
         return PasoPonteCasaWidget(
@@ -274,6 +302,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
           language: _language,
           audioService: _audioService,
           onFinalizar: _finalizarAsamblea,
+          soloEsencial: _modoAsamblea,
         );
       default:
         return const SizedBox.shrink();
@@ -366,6 +395,15 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                 ],
               ),
             ),
+            // La consigna de la fase: qué se hace AHORA, en una línea grande,
+            // con los minutos sugeridos y un reloj que empieza parado.
+            if (_ritual.enPosicion(_currentPaso) != null)
+              ConsignaFaseWidget(
+                key: ValueKey('consigna_$_currentPaso'),
+                fase: _ritual.enPosicion(_currentPaso)!,
+                language: _language,
+              ),
+
             // Banner de Asistente Docente: Cero Pantallas e tempo recomendado
             if (!_textoMoiGrande(context))
               Container(
@@ -380,8 +418,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                     Expanded(
                       child: Text(
                         isGl
-                            ? 'Asistente docente · Móbil fóra da vista · 5-8 min máx.'
-                            : 'Asistente docente · Móvil fuera de la vista · 5-8 min máx.',
+                            ? 'Asistente docente · Móbil fóra da vista$_duracionTotal'
+                            : 'Asistente docente · Móvil fuera de la vista$_duracionTotal',
                         style: const TextStyle(
                           fontSize: 12.0,
                           fontWeight: FontWeight.bold,
@@ -389,23 +427,10 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                         ),
                       ),
                     ),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 6, vertical: 2),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(color: AppTheme.border),
-                      ),
-                      child: const Text(
-                        '~1-2 min',
-                        style: TextStyle(
-                          fontSize: 11.0,
-                          fontWeight: FontWeight.bold,
-                          color: AppTheme.textSecondary,
-                        ),
-                      ),
-                    ),
+                    // Aquí había un «~1-2 min» escrito a mano que discutía con
+                    // los minutos reales de la fase, ahora en la consigna de
+                    // arriba. Dos cifras distintas para lo mismo es peor que
+                    // ninguna.
                   ],
                 ),
               ),
@@ -417,6 +442,34 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                 padding: const EdgeInsets.all(20.0),
                 children: [
                   _buildContenidoDelPaso(),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  // Ni un ExpansionTile ni un acordeón por bloque: un solo
+                  // interruptor para toda la fase. Con el grupo delante no se
+                  // decide bloque a bloque qué se despliega, se decide una vez.
+                  Center(
+                    child: TextButton.icon(
+                      key: const Key('boton_ficha_completa'),
+                      onPressed: () =>
+                          setState(() => _modoAsamblea = !_modoAsamblea),
+                      icon: Icon(_modoAsamblea
+                          ? Icons.unfold_more_rounded
+                          : Icons.unfold_less_rounded),
+                      label: Text(
+                        _modoAsamblea
+                            ? (isGl
+                                ? 'Ver a ficha completa'
+                                : 'Ver la ficha completa')
+                            : (isGl
+                                ? 'Volver ao modo asemblea'
+                                : 'Volver al modo asamblea'),
+                        maxLines: 2,
+                        textAlign: TextAlign.center,
+                      ),
+                      style: TextButton.styleFrom(
+                        minimumSize: const Size(0, AppTheme.touchMin),
+                      ),
+                    ),
+                  ),
                   const SizedBox(height: 32.0),
                 ],
               ),

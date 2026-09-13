@@ -18,11 +18,17 @@ class PasoMatematicasWidget extends StatelessWidget {
   /// Sin él no hay botón de escuchar en las matemáticas tempranas.
   final OfflineAudioService? audioService;
 
+  /// Modo asamblea: el concepto y las acciones que se hacen. La descripción y
+  /// el vocabulario matemático son para preparar la sesión, no para leerlos
+  /// con el grupo sentado.
+  final bool soloEsencial;
+
   const PasoMatematicasWidget({
     super.key,
     required this.matematicas,
     required this.language,
     this.audioService,
+    this.soloEsencial = false,
   });
 
   @override
@@ -98,77 +104,80 @@ class PasoMatematicasWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 10.0),
-                Text(
-                  matematicas.descripcion.resolve(language),
-                  style: theme.textTheme.bodyMedium?.copyWith(
-                    fontSize: 16.0,
-                    height: 1.55,
-                    color: AppTheme.textSlate,
+                if (!soloEsencial) const SizedBox(height: 10.0),
+                if (!soloEsencial)
+                  Text(
+                    matematicas.descripcion.resolve(language),
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      fontSize: 16.0,
+                      height: 1.55,
+                      color: AppTheme.textSlate,
+                    ),
                   ),
+                if (!soloEsencial)
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: BotonEscuchar(
+                      audioService: audioService,
+                      texto: matematicas.descripcion.resolve(language),
+                      language: language,
+                      compacto: true,
+                      descripcion: isGl ? 'a descrición' : 'la descripción',
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ),
+        if (!soloEsencial) const SizedBox(height: 20.0),
+
+        // Mathematical vocabulary box
+        if (!soloEsencial)
+          Container(
+            padding: const EdgeInsets.all(16.0),
+            decoration: BoxDecoration(
+              color: const Color(0xFFF0FDF4),
+              borderRadius: BorderRadius.circular(14.0),
+              border: Border.all(color: const Color(0xFF86EFAC), width: 1.5),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(
+                  Icons.translate_outlined,
+                  color: Color(0xFF15803D),
+                  size: 22,
                 ),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: BotonEscuchar(
-                    audioService: audioService,
-                    texto: matematicas.descripcion.resolve(language),
-                    language: language,
-                    compacto: true,
-                    descripcion: isGl ? 'a descrición' : 'la descripción',
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        isGl
+                            ? 'Vocabulario matemático clave:'
+                            : 'Vocabulario matemático clave:',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF15803D),
+                          fontSize: 16.0,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        matematicas.vocabularioMatematico.resolve(language),
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w600,
+                          color: AppTheme.textSlate,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
             ),
           ),
-        ),
-        const SizedBox(height: 20.0),
-
-        // Mathematical vocabulary box
-        Container(
-          padding: const EdgeInsets.all(16.0),
-          decoration: BoxDecoration(
-            color: const Color(0xFFF0FDF4),
-            borderRadius: BorderRadius.circular(14.0),
-            border: Border.all(color: const Color(0xFF86EFAC), width: 1.5),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Icon(
-                Icons.translate_outlined,
-                color: Color(0xFF15803D),
-                size: 22,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      isGl
-                          ? 'Vocabulario matemático clave:'
-                          : 'Vocabulario matemático clave:',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF15803D),
-                        fontSize: 16.0,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      matematicas.vocabularioMatematico.resolve(language),
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.w600,
-                        color: AppTheme.textSlate,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
         const SizedBox(height: 20.0),
 
         // Suggested Actions List

@@ -6,6 +6,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/widgets/aviso_contenido_ilegible.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
+import 'package:descubre_con_lua/data/repositories/ritual_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
 
@@ -45,6 +46,22 @@ void main() {
       expect(meses, hasLength(10));
       expect(meses.first.orden, 1);
       expect(meses.last.orden, 10);
+    });
+
+    test('fases.json se lee del bundle y trae las seis fases', () async {
+      // Mismo riesgo que el calendario: `assets/content/asamblea/` es un
+      // directorio nuevo, y si se olvida en pubspec la consigna desaparece sin
+      // que nadie se entere. Aquí se entera este test.
+      final raw = await rootBundle.loadString(RitualAsamblea.asset);
+      final ritual = RitualAsamblea.desdeJson(raw);
+      expect(ritual.fases, hasLength(6));
+      expect(ritual.minutosTotales, greaterThan(0));
+      for (final fase in ritual.fases) {
+        expect(fase.consigna.gl, isNotEmpty,
+            reason: '${fase.clave} sen consigna en galego');
+        expect(fase.consigna.es, isNotEmpty,
+            reason: '${fase.clave} sin consigna en castellano');
+      }
     });
 
     test('atencion.json se lee del bundle', () async {
