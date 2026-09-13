@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
+import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/brand/lua_pixel.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/calendario_model.dart';
+import '../../../data/models/capsula_model.dart';
+import '../../../data/models/unidad_model.dart';
+import '../../../data/repositories/content_repository.dart';
+import '../../academy/views/capsula_detail_screen.dart';
+import '../../academy/views/guia_atencion_screen.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
+import '../../juega/views/asamblea_guiada_screen.dart';
+import '../../premios/premios_repository.dart';
+import '../widgets/boton_lanzar_sesion.dart';
+import '../widgets/temporizador_sutil_widget.dart';
+
+/// Contrato de callback para o lanzamento a un toque da sesión
+typedef IniciarSesionCallback = void Function(MesCurricular mes, bool esDocente);
 
 /// Pantalla del Calendario Sincronizado Escuela-Hogar (10 meses, Septiembre a Junio).
 ///
@@ -17,6 +30,10 @@ class CalendarioScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
   final bool esDocenteInicial;
+  final IniciarSesionCallback? onIniciarSesion;
+  final ContentRepository? repository;
+  final OfflineAudioService? audioService;
+  final PremiosRepository? premios;
 
   const CalendarioScreen({
     super.key,
@@ -24,6 +41,10 @@ class CalendarioScreen extends StatefulWidget {
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.esDocenteInicial = false,
+    this.onIniciarSesion,
+    this.repository,
+    this.audioService,
+    this.premios,
   });
 
   @override
@@ -93,6 +114,41 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     es: 'MICRO-RUTINA EN EL HOGAR (3-5 MIN SIN PANTALLAS)',
   );
 
+  static const _iniciarAula = LocalizedString(
+    gl: 'Iniciar asemblea guiada',
+    es: 'Iniciar asamblea guiada',
+  );
+
+  static const _iniciarHogar = LocalizedString(
+    gl: 'Iniciar micro-rutina no fogar',
+    es: 'Iniciar micro-rutina en el hogar',
+  );
+
+  static const _instruccionsBrevesTitulo = LocalizedString(
+    gl: 'Instrucións breves para a asemblea:',
+    es: 'Instrucciones breves para la asamblea:',
+  );
+
+  static const _instruccionsBrevesCuerpo = LocalizedString(
+    gl: 'Círculo na alfombra · Móbil só para a docente · Pulso a 72 BPM e xogo sensoriomotriz.',
+    es: 'Círculo en la alfombra · Móvil solo para la docente · Pulso a 72 BPM y juego sensoriomotriz.',
+  );
+
+  static const _porQueImportaTitulo = LocalizedString(
+    gl: 'Por que importa no desenvolvemento:',
+    es: 'Por qué importa en el desarrollo:',
+  );
+
+  static const _guiaAtencionBoton = LocalizedString(
+    gl: 'Ver Guía de Atención e 3 Regras de Ouro',
+    es: 'Ver Guía de Atención y 3 Reglas de Oro',
+  );
+
+  static const _guiaAtencionSubtitulo = LocalizedString(
+    gl: 'Atención por idades (0-3 anos) e as 3 regras de ouro sen pantallas.',
+    es: 'Atención por edades (0-3 años) y las 3 reglas de oro sin pantallas.',
+  );
+
   @override
   void initState() {
     super.initState();
@@ -111,6 +167,75 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       _language = newLang;
     });
     widget.onLanguageChanged?.call(newLang);
+  }
+
+  void _lanzarSesion(MesCurricular mes, bool esDocente) {
+    if (widget.onIniciarSesion != null) {
+      widget.onIniciarSesion!(mes, esDocente);
+      return;
+    }
+
+    if (esDocente) {
+      final unidades = widget.repository?.getAllUnidades() ?? [];
+      Unidad? unidad;
+      for (final u in unidades) {
+        if (u.orden == mes.orden) {
+          unidad = u;
+          break;
+        }
+      }
+      unidad ??= (unidades.isNotEmpty ? unidades.first : null);
+
+      if (unidad != null) {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => AsambleaGuiadaScreen(
+              unidad: unidad!,
+              calendario: widget.store,
+              audioService: widget.audioService,
+              premios: widget.premios,
+              initialLanguage: _language,
+              onLanguageChanged: _onToggleLanguage,
+            ),
+          ),
+        );
+      } else {
+        Navigator.of(context).pushNamed('/juega');
+      }
+    } else {
+      final capsulas = widget.repository?.getAllCapsulas() ?? [];
+      Capsula? capsula;
+      for (final c in capsulas) {
+        if (c.orden == mes.orden) {
+          capsula = c;
+          break;
+        }
+      }
+      capsula ??= (capsulas.isNotEmpty ? capsulas.first : null);
+
+      if (capsula != null) {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => CapsulaDetailScreen(
+              capsula: capsula!,
+              premios: widget.premios,
+              audioService: widget.audioService,
+              initialLanguage: _language,
+              onLanguageChanged: _onToggleLanguage,
+            ),
+          ),
+        );
+      } else {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => GuiaAtencionScreen(
+              initialLanguage: _language,
+              onLanguageChanged: _onToggleLanguage,
+            ),
+          ),
+        );
+      }
+    }
   }
 
   @override
@@ -155,7 +280,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 const SizedBox(height: AppTheme.spaceLg),
                 _buildMonthDetailCard(mes, theme),
                 const SizedBox(height: AppTheme.spaceLg),
-                _buildActionButtons(estadoHoy, theme),
+                _buildActionButtons(mes, estadoHoy, theme),
                 const SizedBox(height: AppTheme.spaceXl),
               ],
             ),
@@ -312,6 +437,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         children: [
           Expanded(
             child: InkWell(
+              key: const Key('tab_rol_docente'),
               onTap: () => setState(() => _esDocente = true),
               borderRadius: const BorderRadius.horizontal(
                 left: Radius.circular(AppTheme.radiusField),
@@ -347,6 +473,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           ),
           Expanded(
             child: InkWell(
+              key: const Key('tab_rol_familia'),
               onTap: () => setState(() => _esDocente = false),
               borderRadius: const BorderRadius.horizontal(
                 right: Radius.circular(AppTheme.radiusField),
@@ -494,6 +621,51 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
 
             // Actividad según rol seleccionado
             if (_esDocente) ...[
+              TemporizadorSutilWidget(
+                minutosMin: 5,
+                minutosMax: 8,
+                esDocente: true,
+                language: _language,
+              ),
+              const SizedBox(height: 12),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                decoration: BoxDecoration(
+                  color: AppTheme.primaryTint,
+                  borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                  border: Border.all(color: AppTheme.primary.withValues(alpha: 0.25)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        const Icon(Icons.school_outlined, size: 18, color: AppTheme.primaryDark),
+                        const SizedBox(width: 6),
+                        Expanded(
+                          child: Text(
+                            _instruccionsBrevesTitulo.resolve(_language),
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: AppTheme.primaryDark,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      _instruccionsBrevesCuerpo.resolve(_language),
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: AppTheme.textSecondary,
+                        height: 1.3,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 12),
               _buildRoleSection(
                 kicker: _aulaKicker.resolve(_language),
                 content: mes.actividadAula.resolve(_language),
@@ -505,6 +677,51 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 theme: theme,
               ),
             ] else ...[
+              TemporizadorSutilWidget(
+                minutosMin: 3,
+                minutosMax: mes.minutosAtencionSugeridos,
+                esDocente: false,
+                language: _language,
+              ),
+              const SizedBox(height: 12),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFFFFDF5),
+                  borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                  border: Border.all(color: const Color(0xFFD97706).withValues(alpha: 0.25)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        const Icon(Icons.lightbulb_outline_rounded, size: 18, color: Color(0xFFD97706)),
+                        const SizedBox(width: 6),
+                        Expanded(
+                          child: Text(
+                            _porQueImportaTitulo.resolve(_language),
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFD97706),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      mes.objetivoPedagogico.resolve(_language),
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: AppTheme.textSecondary,
+                        height: 1.3,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 12),
               _buildRoleSection(
                 kicker: _hogarKicker.resolve(_language),
                 content: mes.actividadHogar.resolve(_language),
@@ -513,6 +730,62 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 icon: Icons.volunteer_activism_rounded,
                 color: const Color(0xFFD97706),
                 theme: theme,
+              ),
+              const SizedBox(height: 12),
+              InkWell(
+                key: const Key('boton_guia_atencion'),
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => GuiaAtencionScreen(
+                      initialLanguage: _language,
+                      onLanguageChanged: _onToggleLanguage,
+                    ),
+                  ),
+                ),
+                borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                child: Container(
+                  padding: const EdgeInsets.all(AppTheme.spaceMd),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                    border: Border.all(color: AppTheme.border),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.psychology_outlined,
+                        color: AppTheme.primaryInk,
+                        size: 26,
+                      ),
+                      const SizedBox(width: AppTheme.spaceMd),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              _guiaAtencionBoton.resolve(_language),
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 13,
+                                color: AppTheme.textPrimary,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              _guiaAtencionSubtitulo.resolve(_language),
+                              style: const TextStyle(
+                                color: AppTheme.textSecondary,
+                                fontSize: 11,
+                                height: 1.3,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const Icon(Icons.chevron_right_rounded, color: AppTheme.textMuted),
+                    ],
+                  ),
+                ),
               ),
             ],
           ],
@@ -595,7 +868,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     );
   }
 
-  Widget _buildActionButtons(EstadoEstimulacion estado, ThemeData theme) {
+  Widget _buildActionButtons(MesCurricular mes, EstadoEstimulacion estado, ThemeData theme) {
     final hoy = DateTime.now();
     final isAulaHecha = estado == EstadoEstimulacion.soloAula ||
         estado == EstadoEstimulacion.dobleEstimulacion;
@@ -603,76 +876,116 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         estado == EstadoEstimulacion.dobleEstimulacion;
 
     if (_esDocente) {
-      return SizedBox(
-        height: 52,
-        child: ElevatedButton.icon(
-          onPressed: () async {
-            await widget.store.registrarAula(hoy);
-            if (mounted) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(_aulaHecha.resolve(_language)),
-                  backgroundColor: AppTheme.success,
-                ),
-              );
-            }
-          },
-          icon: Icon(
-            isAulaHecha ? Icons.check_circle_rounded : Icons.check_circle_outline_rounded,
-          ),
-          label: Text(
-            isAulaHecha
-                ? _aulaHecha.resolve(_language)
-                : _marcarAula.resolve(_language),
-            style: const TextStyle(fontWeight: FontWeight.bold),
-          ),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: isAulaHecha ? AppTheme.calmSage : AppTheme.primary,
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          BotonLanzarSesion(
+            key: const Key('boton_iniciar_sesion_aula'),
+            label: _iniciarAula.resolve(_language),
+            icon: Icons.play_circle_filled_rounded,
+            backgroundColor: AppTheme.primary,
             foregroundColor: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+            onPressed: () => _lanzarSesion(mes, true),
+          ),
+          const SizedBox(height: AppTheme.spaceSm),
+          SizedBox(
+            height: 48,
+            child: OutlinedButton.icon(
+              key: const Key('boton_rexistrar_aula'),
+              onPressed: () async {
+                await widget.store.registrarAula(hoy);
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(_aulaHecha.resolve(_language)),
+                      backgroundColor: AppTheme.success,
+                    ),
+                  );
+                }
+              },
+              icon: Icon(
+                isAulaHecha ? Icons.check_circle_rounded : Icons.check_circle_outline_rounded,
+                color: isAulaHecha ? AppTheme.success : AppTheme.primaryDark,
+              ),
+              label: Text(
+                isAulaHecha
+                    ? _aulaHecha.resolve(_language)
+                    : _marcarAula.resolve(_language),
+                style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  color: isAulaHecha ? AppTheme.success : AppTheme.primaryDark,
+                ),
+              ),
+              style: OutlinedButton.styleFrom(
+                side: BorderSide(
+                  color: isAulaHecha ? AppTheme.success : AppTheme.border,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+                ),
+              ),
             ),
           ),
-        ),
+        ],
       );
     } else {
-      return SizedBox(
-        height: 52,
-        child: ElevatedButton.icon(
-          onPressed: () async {
-            await widget.store.toggleHogar(hoy);
-            if (mounted) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(
-                    isHogarHecho
-                        ? (_language == AppLanguage.gl
-                            ? 'Rexistro cancelado'
-                            : 'Registro deshecho')
-                        : _hogarHecho.resolve(_language),
-                  ),
-                  backgroundColor: isHogarHecho ? AppTheme.textSecondary : AppTheme.success,
-                ),
-              );
-            }
-          },
-          icon: Icon(
-            isHogarHecho ? Icons.check_circle_rounded : Icons.volunteer_activism_rounded,
-          ),
-          label: Text(
-            isHogarHecho
-                ? _hogarHecho.resolve(_language)
-                : _marcarHogar.resolve(_language),
-            style: const TextStyle(fontWeight: FontWeight.bold),
-          ),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: isHogarHecho ? AppTheme.success : const Color(0xFFD97706),
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          BotonLanzarSesion(
+            key: const Key('boton_iniciar_sesion_fogar'),
+            label: _iniciarHogar.resolve(_language),
+            icon: Icons.volunteer_activism_rounded,
+            backgroundColor: const Color(0xFFD97706),
             foregroundColor: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+            onPressed: () => _lanzarSesion(mes, false),
+          ),
+          const SizedBox(height: AppTheme.spaceSm),
+          SizedBox(
+            height: 48,
+            child: OutlinedButton.icon(
+              key: const Key('boton_rexistrar_fogar'),
+              onPressed: () async {
+                await widget.store.toggleHogar(hoy);
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        isHogarHecho
+                            ? (_language == AppLanguage.gl
+                                ? 'Rexistro cancelado'
+                                : 'Registro deshecho')
+                            : _hogarHecho.resolve(_language),
+                      ),
+                      backgroundColor: isHogarHecho ? AppTheme.textSecondary : AppTheme.success,
+                    ),
+                  );
+                }
+              },
+              icon: Icon(
+                isHogarHecho ? Icons.check_circle_rounded : Icons.volunteer_activism_rounded,
+                color: isHogarHecho ? AppTheme.success : const Color(0xFFD97706),
+              ),
+              label: Text(
+                isHogarHecho
+                    ? _hogarHecho.resolve(_language)
+                    : _marcarHogar.resolve(_language),
+                style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  color: isHogarHecho ? AppTheme.success : const Color(0xFFD97706),
+                ),
+              ),
+              style: OutlinedButton.styleFrom(
+                side: BorderSide(
+                  color: isHogarHecho ? AppTheme.success : AppTheme.border,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+                ),
+              ),
             ),
           ),
-        ),
+        ],
       );
     }
   }

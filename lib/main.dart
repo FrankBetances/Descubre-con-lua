@@ -152,6 +152,9 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               store: _calendario,
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
+              repository: _repository,
+              audioService: _audioService,
+              premios: _premios,
             ),
         '/guia-atencion': (context) => GuiaAtencionScreen(
               initialLanguage: _currentLanguage,
@@ -370,6 +373,9 @@ class HomeScreen extends StatelessWidget {
                       store: calendario ?? CalendarioStore(),
                       initialLanguage: currentLanguage,
                       onLanguageChanged: onLanguageChanged,
+                      repository: repository,
+                      audioService: audioService,
+                      premios: premios,
                     ),
                   ),
                 );
