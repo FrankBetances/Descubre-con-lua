@@ -24,6 +24,11 @@ infantil de Vigo no tiene por qué pronunciar «Crunch leaves» de oído.
 no diagnostica y no trata nada. La criatura no usa la pantalla; la app es para
 la persona adulta que acompaña.
 
+**Licencia: gratis para las familias, con licencia para las instituciones.**
+Para una familia o una persona a título individual, gratis y para siempre. Para
+una escuela, un ayuntamiento, un gabinete o una empresa, hace falta una licencia
+por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
+
 ## Documentación
 
 | | |
@@ -32,36 +37,38 @@ la persona adulta que acompaña.
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
 | [**CLAUDE.md**](CLAUDE.md) | Reglas de trabajo del proyecto |
+| [**LICENSE.md**](LICENSE.md) | Quién puede usar esto y con qué condiciones |
 
 Si sólo vas a leer uno: **STATUS.md**, que separa lo comprobado de lo no
 comprobado y nombra el comando que lo comprobó.
 
 ## Estado
 
-Resumen honesto: **`main` pasa sus 11 gates** (run 46), el binario **no lleva ni
-un permiso de red**, las **246 locuciones tienen grabación** y de cada run de
+Resumen honesto: **`main` pasa sus 13 gates** (run 52), el binario **no lleva ni
+un permiso de red**, las **351 locuciones tienen grabación** y de cada run de
 `main` sale un **AAB firmado con la clave de release**, listo para Play Console.
 
 | | |
 | --- | --- |
-| Último run verde de `main` | 46 · APK 36,49 MB · AAB 60,47 MB · `versionCode` 46 |
-| Tests | 177 |
-| Contenido | 1 unidad de aula · 5 cápsulas de Academy · 6 cápsulas de formación docente |
-| Voz | 246 locuciones (123 gl + 123 es), 13 MB dentro del paquete |
+| Último run verde de `main` | 52 · APK 39,38 MB · AAB 65,10 MB · `versionCode` 52 |
+| Tests | 218 |
+| Contenido | 1 unidad de aula · 5 cápsulas de Academy · 6 cápsulas de formación docente · 10 meses de calendario |
+| Voz | 351 locuciones (123 gl + 123 es + 105 en) dentro del paquete |
 
-La tabla de arriba es la del último run verde de `main`. En la rama
-`claude/english-learning-integration-56daa7` hay además el Calendario
-Escola·Fogar, la guía de inglés en casa y las medallas: **209 tests en verde,
-`flutter analyze` limpio y `dart format` sin cambios**, y el corpus sube a
-**351 locuciones (123 gl + 123 es + 105 en)**. Las 105 grabaciones inglesas las
-sintetiza el workflow `voice-assets`, no están en el árbol hasta que ese run
-termina; mientras tanto `check_voice_coverage.py` está en rojo, y las pastillas
-de inglés no se pintan en vez de enseñar un altavoz mudo.
+Lo que no está comprobado, y no lo arregla ningún run verde:
 
-Lo que no está comprobado, y no lo arregla ningún run verde: **ninguna pantalla
-se ha visto en un aparato** y **nadie ha escuchado las voces gallegas**. Los
-gates miden picos, duraciones y cobertura; no dicen si el galego suena natural
-ni si una cadena se corta en una pantalla pequeña.
+- **Ninguna pantalla se ha visto en un aparato.** Lo que sí está comprobado es
+  que caben: `filtro_edad_test.dart` y `calendario_escala_test.dart` abren las
+  pantallas en gallego y castellano, a escala de texto 1,0 y 1,8, y fallan si
+  algo desborda. Eso caza los desbordes; no caza la muesca, la barra de gestos,
+  la densidad real ni el audio sonando.
+- **Nadie ha escuchado las voces.** Ni el galego de Celtia ni el inglés de
+  LJSpeech. Ningún gate dice si una frase sale imitable para una docente.
+- **`check_voice_levels` no está midiendo nada.** El job de Gates no instala
+  `ffmpeg`, así que el gate escribe `SKIP: ffmpeg is not installed` y el script
+  lo cuenta como PASS. Es un salto leyéndose como una comprobación: **hoy nadie
+  ha medido el pico de las 351 grabaciones**, ni en local ni en CI. Se arregla
+  instalando `ffmpeg` en el job y haciendo que el salto falle en CI.
 
 Defectos abiertos que hay que mirar antes de publicar:
 
@@ -71,10 +78,9 @@ Defectos abiertos que hay que mirar antes de publicar:
   están puestos, pero **falta la autorización escrita de uso de las tres
   marcas**: en una ficha de Play sugieren respaldo institucional
   (`assets/brand/logos/README.md`);
-- **ninguna de las pantallas nuevas se ha visto en un aparato.** Lo que sí está
-  comprobado es que caben: `test/features/calendario/calendario_escala_test.dart`
-  las abre en gallego y castellano, a escala de texto 1.0 y 1.8, y falla si algo
-  desborda.
+- **el manual no documenta todavía el Calendario Escola·Fogar**: sigue con sus
+  17 casos de uso y sus 14 imágenes. Las cuatro imágenes nuevas ya están en
+  `docs/capturas/`.
 
 ## Comprobar
 
@@ -178,6 +184,13 @@ un altavoz que no suena promete algo que no cumple.
 - gallego → **Celtia**, do Proxecto Nós (*gated* en Hugging Face: requiere el
   secret `HF_TOKEN`)
 - castellano → **Sharvard** (rhasspy/piper-voices)
+- inglés → **LJSpeech** (rhasspy/piper-voices)
+
+**El inglés es un caso aparte.** No hay pantallas en inglés: lo que se graba es
+el léxico, las órdenes TPR y la frase de cada mes del calendario, que salen de
+`assets/content/calendario/meses.json`. La persona adulta pulsa la pastilla y
+oye cómo se dice antes de decírselo a la criatura. Una pastilla sin grabación se
+pinta igual, con la palabra legible y sin altavoz.
 
 ```bash
 python3 tools/export_voice_corpus.py       # corpus desde assets/content
@@ -252,17 +265,45 @@ barra de gestos, sin la densidad de un aparato concreto y sin audio. Ver
 [`docs/capturas/README.md`](docs/capturas/README.md). Sustituirlas por capturas
 de verdad es reemplazar los PNG; el manual no se toca.
 
+## Licencia
+
+**Gratis para las familias. Con licencia para las instituciones.**
+
+| Quién | Qué puede hacer |
+| --- | --- |
+| Una familia, una persona a título individual | Usar la app, leer y compilar el código, modificarlo para su casa. **Gratis, para siempre, sin pedir permiso** |
+| Una escuela, un ayuntamiento, un hospital, una asociación, una universidad | **Licencia previa por escrito**, aunque el uso sea gratuito y la entidad no tenga ánimo de lucro |
+| Cualquiera que cobre por usarla o por servicios prestados con ella | **Licencia previa por escrito** |
+
+Nadie —ni siquiera en uso personal— puede redistribuirla, publicarla en una
+tienda, quitarle los créditos ni presentarla como propia.
+
+Las condiciones de una licencia institucional se acuerdan caso por caso y
+**pueden ser gratuitas** (convenios con administraciones, pilotos). Se piden en
+frank.alberto.betances.reinoso@gmail.com.
+
+Los componentes de terceros conservan su licencia: la tipografía Nunito (SIL
+OFL 1.1, en `assets/fonts/OFL.txt`), Flutter y sus paquetes, y los modelos de
+voz Celtia, Sharvard y LJSpeech, que **solo corren en compilación y nunca en el
+aparato**. Los logotipos institucionales son marcas de sus titulares y no se
+licencian aquí.
+
+El texto que manda es [LICENSE.md](LICENSE.md).
+
 ## Estructura
 
 ```
 lib/core/       tema, idiomas, audio (servicio, reproductor nativo, ids de voz)
 lib/data/       modelos, cargador, repositorio, validador de contenido
 lib/features/   juega/ (aula, asamblea de 6 fases, metrónomo, formación docente)
-                academy/ (familias) · premios/ · bienvenida/ · creditos/
-assets/content/ unidades y cápsulas en JSON, bilingües
+                academy/ (familias) · calendario/ (escola·fogar, 10 meses)
+                premios/ (insignias y medallas) · bienvenida/ · creditos/
+assets/content/ unidades, cápsulas y calendario en JSON, bilingües
+                calendario/ (10 meses + guía de inglés en casa)
 assets/voice/   grabaciones neuronales (generadas en CI)
 assets/brand/   rejilla de píxeles de Lúa: de aquí salen icono y splash
                 awards/ (los 10 glifos de insignia) · logos/ (marcas)
-docs/capturas/  las 14 imágenes de pantalla del manual
+docs/capturas/  las imágenes de pantalla (14 del manual + calendario y guía)
 tools/          gates y tubería de voz
+LICENSE.md      condiciones de uso: familias gratis, instituciones con licencia
 ```
