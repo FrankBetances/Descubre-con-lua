@@ -54,4 +54,3 @@ String englishVoiceAssetId(VoiceStyle style, String text) =>
 /// Bundled path of the English recording for [text].
 String englishVoiceAssetPath(VoiceStyle style, String text) =>
     voiceAssetPath(style, text, AppLanguage.en);
-

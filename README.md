@@ -7,8 +7,18 @@ años). Todo el contenido existe en gallego y castellano.
 - **Juega con Lúa · Aula** — la usa la docente en la asamblea. Incluye
   **Formación · Aula**: una cápsula de tres minutos por cada paso de la asamblea.
 - **Academy · Familias** — la usan las familias en casa.
-- **Los premios de Lúa** — nivel, XP, racha e insignias. Premian **a la persona
-  adulta** que usa la app, nunca a la criatura.
+- **Calendario Escola · Fogar** — los diez meses del curso, de septiembre a
+  junio. La docente registra la asamblea, la familia registra el juego de tres
+  minutos en casa, y el día que coinciden las dos cosas queda enlazado.
+- **Los premios de Lúa** — nivel, XP, racha, insignias y las medallas del
+  calendario. Premian **a la persona adulta** que usa la app, nunca a la
+  criatura.
+
+**El inglés no es una lengua de esta app: es contenido que se escucha.** Ninguna
+pantalla se lee en inglés. Lo que hay son las palabras, las órdenes de cuerpo
+(TPR) y la frase de cada mes, cada una con su grabación: la persona adulta pulsa
+y oye cómo se dice antes de decírselo a la criatura. Una maestra de una escuela
+infantil de Vigo no tiene por qué pronunciar «Crunch leaves» de oído.
 
 **Finalidad exclusivamente educativa.** No es un producto sanitario: no evalúa,
 no diagnostica y no trata nada. La criatura no usa la pantalla; la app es para
@@ -39,6 +49,15 @@ un permiso de red**, las **246 locuciones tienen grabación** y de cada run de
 | Contenido | 1 unidad de aula · 5 cápsulas de Academy · 6 cápsulas de formación docente |
 | Voz | 246 locuciones (123 gl + 123 es), 13 MB dentro del paquete |
 
+La tabla de arriba es la del último run verde de `main`. En la rama
+`claude/english-learning-integration-56daa7` hay además el Calendario
+Escola·Fogar, la guía de inglés en casa y las medallas: **209 tests en verde,
+`flutter analyze` limpio y `dart format` sin cambios**, y el corpus sube a
+**351 locuciones (123 gl + 123 es + 105 en)**. Las 105 grabaciones inglesas las
+sintetiza el workflow `voice-assets`, no están en el árbol hasta que ese run
+termina; mientras tanto `check_voice_coverage.py` está en rojo, y las pastillas
+de inglés no se pintan en vez de enseñar un altavoz mudo.
+
 Lo que no está comprobado, y no lo arregla ningún run verde: **ninguna pantalla
 se ha visto en un aparato** y **nadie ha escuchado las voces gallegas**. Los
 gates miden picos, duraciones y cobertura; no dicen si el galego suena natural
@@ -48,8 +67,14 @@ Defectos abiertos que hay que mirar antes de publicar:
 
 - el contenido declara **cinco palabras de vocabulario** por unidad, con
   definición y grabación, y **ninguna pantalla las muestra**;
-- faltan los logotipos de la Incubadora startTIC, del Consorcio de la Zona
-  Franca y del Concello: los huecos están puestos en los créditos y vacíos.
+- los logotipos de startTIC, del Consorcio da Zona Franca y del Concello ya
+  están puestos, pero **falta la autorización escrita de uso de las tres
+  marcas**: en una ficha de Play sugieren respaldo institucional
+  (`assets/brand/logos/README.md`);
+- **ninguna de las pantallas nuevas se ha visto en un aparato.** Lo que sí está
+  comprobado es que caben: `test/features/calendario/calendario_escala_test.dart`
+  las abre en gallego y castellano, a escala de texto 1.0 y 1.8, y falla si algo
+  desborda.
 
 ## Comprobar
 

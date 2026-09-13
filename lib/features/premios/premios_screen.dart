@@ -5,6 +5,8 @@ import '../../core/brand/pixel_award.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
+import '../../data/models/calendario_model.dart';
+import 'medallas_widget.dart';
 import 'premios_model.dart';
 import 'premios_repository.dart';
 
@@ -22,11 +24,16 @@ class PremiosScreen extends StatefulWidget {
   final AppLanguage currentLanguage;
   final Perfil perfilInicial;
 
+  /// Las tres cuentas del Calendario Escola·Fogar. Sin ellas no se pintan las
+  /// medallas: no se enseña una colección cuyo avance no se puede saber.
+  final ContadoresCalendario? contadores;
+
   const PremiosScreen({
     super.key,
     required this.repository,
     required this.currentLanguage,
     this.perfilInicial = Perfil.docente,
+    this.contadores,
   });
 
   static const titulo = LocalizedString(
@@ -40,6 +47,11 @@ class PremiosScreen extends StatefulWidget {
 
 class _PremiosScreenState extends State<PremiosScreen> {
   late Perfil _perfil = widget.perfilInicial;
+
+  static const _medallas = LocalizedString(
+    gl: 'Medallas do calendario',
+    es: 'Medallas del calendario',
+  );
 
   static const _docente = LocalizedString(gl: 'Mestra', es: 'Maestra');
   static const _familia = LocalizedString(gl: 'Familia', es: 'Familia');
@@ -173,6 +185,16 @@ class _PremiosScreenState extends State<PremiosScreen> {
                   ),
                 ),
               ),
+              if (widget.contadores != null &&
+                  catalogo.medallasDe(_perfil).isNotEmpty) ...[
+                const SizedBox(height: AppTheme.spaceXl),
+                MedallasCalendario(
+                  medallas: catalogo.medallasDe(_perfil),
+                  contadores: widget.contadores!,
+                  lang: lang,
+                  titulo: _medallas.resolve(lang),
+                ),
+              ],
               const SizedBox(height: AppTheme.spaceMd),
               Text(
                 _nota.resolve(lang),

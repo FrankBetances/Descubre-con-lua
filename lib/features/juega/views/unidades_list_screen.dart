@@ -111,6 +111,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                   repository: widget.premios!,
                   perfil: Perfil.docente,
                   language: _language,
+                  contadores: widget.calendario?.contadores,
                 ),
               ),
 

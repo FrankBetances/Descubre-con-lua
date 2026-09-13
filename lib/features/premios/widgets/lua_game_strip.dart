@@ -5,6 +5,7 @@ import '../../../core/brand/pixel_award.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../data/models/calendario_model.dart';
 import '../premios_model.dart';
 import '../premios_repository.dart';
 import '../premios_screen.dart';
@@ -29,12 +30,17 @@ class LuaGameStrip extends StatelessWidget {
   /// pantalla que ya va llena, como la asamblea.
   final bool compacta;
 
+  /// Las cuentas del calendario, para que la pantalla de premios que se abre
+  /// desde aquí pueda pintar también las medallas.
+  final ContadoresCalendario? contadores;
+
   const LuaGameStrip({
     super.key,
     required this.repository,
     required this.perfil,
     required this.language,
     this.compacta = false,
+    this.contadores,
   });
 
   static const _faltan = LocalizedString(
@@ -84,6 +90,7 @@ class LuaGameStrip extends StatelessWidget {
                     repository: repository,
                     currentLanguage: language,
                     perfilInicial: perfil,
+                    contadores: contadores,
                   ),
                 ),
               ),

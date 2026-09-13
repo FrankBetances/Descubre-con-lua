@@ -12,7 +12,11 @@ import 'package:descubre_con_lua/core/brand/lua_pixel.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
+import 'package:descubre_con_lua/core/storage/calendario_store.dart';
+import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
+import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
+import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/bloques_list_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.dart';
 import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
@@ -124,6 +128,36 @@ void main() {
     return repo;
   }
 
+  /// El contenido del calendario, leído del disco dentro de `runAsync`: bajo
+  /// el reloj falso del test una lectura de fichero de verdad no termina.
+  Future<CalendarioContenido> contenidoCalendario(WidgetTester tester) async {
+    late CalendarioContenido contenido;
+    await tester.runAsync(() async {
+      contenido = await CalendarioContenido.cargar(
+        stringLoader: (path) => File(path).readAsString(),
+      );
+    });
+    return contenido;
+  }
+
+  /// Un calendario con días ya enlazados: sin esto la imagen enseñaría el
+  /// curso entero a cero y no se vería ni un estado ni una medalla.
+  Future<CalendarioStore> calendarioConProgreso(WidgetTester tester) async {
+    final store = CalendarioStore(overrideDirectory: tmp.path);
+    await tester.runAsync(() async {
+      await store.cargar();
+      var dia = DateTime(2026, 3, 1);
+      for (var i = 0; i < 6; i++) {
+        await store.registrarAula(dia);
+        if (i % 2 == 0) await store.registrarHogar(dia);
+        dia = dia.add(const Duration(days: 1));
+      }
+      await store.registrarAula(DateTime.now());
+      await store.registrarHogar(DateTime.now());
+    });
+    return store;
+  }
+
   /// Deja las dos rejillas de Lúa en la caché ANTES de pintar la pantalla.
   ///
   /// Sin esto, la pose `head` no llegaba a cargarse en esta tanda y salía el
@@ -193,7 +227,7 @@ void main() {
     );
   }
 
-  for (final lang in AppLanguage.values) {
+  for (final lang in AppLanguage.deInterfaz) {
     final l = lang.code;
 
     testWidgets('bienvenida · $l', (tester) async {
@@ -273,11 +307,44 @@ void main() {
 
     testWidgets('premios · $l', (tester) async {
       final premios = await premiosConProgreso(tester);
+      final calendario = await calendarioConProgreso(tester);
       await capturar(
         tester,
         'premios-$l',
-        PremiosScreen(repository: premios, currentLanguage: lang),
-        tamano: const Size(412, 1700),
+        PremiosScreen(
+          repository: premios,
+          currentLanguage: lang,
+          contadores: calendario.contadores,
+        ),
+        tamano: const Size(412, 2200),
+      );
+    });
+
+    testWidgets('calendario escola-fogar · $l', (tester) async {
+      final premios = await premiosConProgreso(tester);
+      final calendario = await calendarioConProgreso(tester);
+      final contenido = await contenidoCalendario(tester);
+      await capturar(
+        tester,
+        'calendario-$l',
+        CalendarioScreen(
+          store: calendario,
+          contenido: contenido,
+          premios: premios,
+          initialLanguage: lang,
+          esDocenteInicial: true,
+        ),
+        tamano: const Size(412, 2000),
+      );
+    });
+
+    testWidgets('guía de inglés en casa · $l', (tester) async {
+      final contenido = await contenidoCalendario(tester);
+      await capturar(
+        tester,
+        'guia-ingles-$l',
+        GuiaAtencionScreen(contenido: contenido, initialLanguage: lang),
+        tamano: const Size(412, 1500),
       );
     });
   }

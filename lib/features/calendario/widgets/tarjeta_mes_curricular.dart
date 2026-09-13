@@ -2,15 +2,14 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/calendario_model.dart';
 
 // ─── Paleta atlántica cálida ────────────────────────────────────────────────
-const _aguamarina = Color(0xFF00838F);
-const _coral = Color(0xFFFF7043);
 const _ambar = Color(0xFFFFB300);
 const _menta = Color(0xFFE0F2F1);
-const _mentaOscuro = Color(0xFFB2DFDB);
 
 /// Colores de acento por mes curricular (orden 1–10).
 const _acentos = [
@@ -42,6 +41,9 @@ class TarjetaMesCurricular extends StatefulWidget {
   /// Si [onTap] es nulo, la tarjeta se muestra en modo solo lectura.
   final VoidCallback? onTap;
 
+  /// La lengua del selector de la app, no la del sistema.
+  final AppLanguage lang;
+
   const TarjetaMesCurricular({
     super.key,
     required this.mes,
@@ -49,6 +51,7 @@ class TarjetaMesCurricular extends StatefulWidget {
     required this.esDocente,
     this.isSelected = false,
     this.onTap,
+    this.lang = AppLanguage.gl,
   });
 
   @override
@@ -83,13 +86,8 @@ class _TarjetaMesCurricularState extends State<TarjetaMesCurricular>
 
   @override
   Widget build(BuildContext context) {
-    final lang = Localizations.localeOf(context).languageCode;
-    final nombreMes = lang == 'es'
-        ? widget.mes.nombreMes.es
-        : widget.mes.nombreMes.gl;
-    final centroInteres = lang == 'es'
-        ? widget.mes.centroInteres.es
-        : widget.mes.centroInteres.gl;
+    final nombreMes = widget.mes.nombreMes.resolve(widget.lang);
+    final centroInteres = widget.mes.centroInteres.resolve(widget.lang);
 
     return ScaleTransition(
       scale: _scaleAnim,
@@ -130,31 +128,28 @@ class _TarjetaMesCurricularState extends State<TarjetaMesCurricular>
                 estado: widget.estado,
               ),
               // ── Centro de interés ─────────────────────────────────────────
-              Padding(
-                padding: const EdgeInsets.fromLTRB(14, 10, 14, 0),
-                child: Text(
-                  centroInteres,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                    color: AppTheme.textSecondary,
-                    height: 1.3,
+              // Flexible: la tarjeta vive en un carrusel de altura fija y el
+              // gallego ocupa más que el castellano. Lo que sobra se recorta
+              // con puntos suspensivos, que se ve; un desbordamiento en
+              // release no se ve.
+              Flexible(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(14, 10, 14, 0),
+                  child: Text(
+                    centroInteres,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      color: AppTheme.textSecondary,
+                      height: 1.3,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
                 ),
               ),
-              // ── Léxico inglés ─────────────────────────────────────────────
-              _LexicoChips(
-                palabras: widget.mes.lexicoIngles,
-                acento: _acento,
-              ),
-              // ── Momentos de sesión ────────────────────────────────────────
-              _MomentosSesion(
-                esDocente: widget.esDocente,
-                acento: _acento,
-                minutos: widget.mes.minutosAtencionSugeridos,
-              ),
+              // ── Cuánto dura ───────────────────────────────────────────────
+              _PieDuracion(minutos: widget.mes.minutosSugeridos),
               const SizedBox(height: 10),
             ],
           ),
@@ -272,7 +267,8 @@ class _FondoCabeceraP extends CustomPainter {
       colors: [acento, Color.lerp(acento, Colors.black, 0.25)!],
     );
     final paint = Paint()
-      ..shader = grad.createShader(Rect.fromLTWH(0, 0, size.width, size.height));
+      ..shader =
+          grad.createShader(Rect.fromLTWH(0, 0, size.width, size.height));
     canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height), paint);
 
     // Ondas decorativas translúcidas
@@ -282,12 +278,16 @@ class _FondoCabeceraP extends CustomPainter {
     final path = Path()
       ..moveTo(0, size.height * 0.6)
       ..quadraticBezierTo(
-        size.width * 0.25, size.height * 0.45,
-        size.width * 0.5, size.height * 0.65,
+        size.width * 0.25,
+        size.height * 0.45,
+        size.width * 0.5,
+        size.height * 0.65,
       )
       ..quadraticBezierTo(
-        size.width * 0.75, size.height * 0.85,
-        size.width, size.height * 0.7,
+        size.width * 0.75,
+        size.height * 0.85,
+        size.width,
+        size.height * 0.7,
       )
       ..lineTo(size.width, size.height)
       ..lineTo(0, size.height)
@@ -308,16 +308,36 @@ class _IlustracionMesP extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     switch (orden) {
-      case 1: _dibujarBienvenida(canvas, size); break;
-      case 2: _dibujarCuerpo(canvas, size); break;
-      case 3: _dibujarHoja(canvas, size); break;
-      case 4: _dibujarCampanilla(canvas, size); break;
-      case 5: _dibujarAbrigo(canvas, size); break;
-      case 6: _dibujarRana(canvas, size); break;
-      case 7: _dibujarManzana(canvas, size); break;
-      case 8: _dibujarFlor(canvas, size); break;
-      case 9: _dibujarGota(canvas, size); break;
-      case 10: _dibujarOla(canvas, size); break;
+      case 1:
+        _dibujarBienvenida(canvas, size);
+        break;
+      case 2:
+        _dibujarCuerpo(canvas, size);
+        break;
+      case 3:
+        _dibujarHoja(canvas, size);
+        break;
+      case 4:
+        _dibujarCampanilla(canvas, size);
+        break;
+      case 5:
+        _dibujarAbrigo(canvas, size);
+        break;
+      case 6:
+        _dibujarRana(canvas, size);
+        break;
+      case 7:
+        _dibujarManzana(canvas, size);
+        break;
+      case 8:
+        _dibujarFlor(canvas, size);
+        break;
+      case 9:
+        _dibujarGota(canvas, size);
+        break;
+      case 10:
+        _dibujarOla(canvas, size);
+        break;
     }
   }
 
@@ -752,127 +772,34 @@ class _EstadoBadge extends StatelessWidget {
 
 // ─── Chips de léxico inglés ───────────────────────────────────────────────────
 
-class _LexicoChips extends StatelessWidget {
-  final List<String> palabras;
-  final Color acento;
-  const _LexicoChips({required this.palabras, required this.acento});
-
-  @override
-  Widget build(BuildContext context) {
-    // Mostramos máximo 4 palabras para no saturar
-    final visible = palabras.take(4).toList();
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
-      child: Wrap(
-        spacing: 6,
-        runSpacing: 4,
-        children: visible
-            .map(
-              (w) => Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                decoration: BoxDecoration(
-                  color: acento.withAlpha(18),
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: acento.withAlpha(60), width: 1),
-                ),
-                child: Text(
-                  w,
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                    color: acento,
-                    letterSpacing: 0.2,
-                  ),
-                ),
-              ),
-            )
-            .toList(),
-      ),
-    );
-  }
-}
-
-// ─── Momentos de sesión con iconografía vectorial ─────────────────────────────
-
-/// Los 4 momentos canónicos de cada sesión Descubre con Lúa.
-enum MomentoSesion {
-  apertura,
-  fingerplay,
-  nucleoTpr,
-  cierreAfectivo,
-}
-
-extension MomentoSesionX on MomentoSesion {
-  String label(bool esDocente) => switch (this) {
-        MomentoSesion.apertura =>
-          esDocente ? 'Apertura asemblea' : 'Saúdo inicial',
-        MomentoSesion.fingerplay =>
-          esDocente ? 'Fingerplay / Concentración' : 'Xogo de dedos',
-        MomentoSesion.nucleoTpr =>
-          esDocente ? 'Núcleo TPR (inglés)' : 'Movemento en inglés',
-        MomentoSesion.cierreAfectivo =>
-          esDocente ? 'Peche afectivo' : 'Abrazo e peche',
-      };
-
-  IconData get icon => switch (this) {
-        MomentoSesion.apertura => Icons.wb_sunny_rounded,
-        MomentoSesion.fingerplay => Icons.back_hand_rounded,
-        MomentoSesion.nucleoTpr => Icons.directions_run_rounded,
-        MomentoSesion.cierreAfectivo => Icons.favorite_rounded,
-      };
-
-  Color get color => switch (this) {
-        MomentoSesion.apertura => _ambar,
-        MomentoSesion.fingerplay => _aguamarina,
-        MomentoSesion.nucleoTpr => _coral,
-        MomentoSesion.cierreAfectivo => const Color(0xFFF48FB1),
-      };
-}
-
-class _MomentosSesion extends StatelessWidget {
-  final bool esDocente;
-  final Color acento;
+/// El pie de la tarjeta del carrusel: cuánto dura la sesión de ese mes.
+class _PieDuracion extends StatelessWidget {
   final int minutos;
 
-  const _MomentosSesion({
-    required this.esDocente,
-    required this.acento,
-    required this.minutos,
-  });
+  const _PieDuracion({required this.minutos});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 10, 12, 0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      padding: const EdgeInsets.fromLTRB(14, 8, 14, 0),
+      child: Row(
         children: [
-          Row(
-            children: [
-              Icon(Icons.timer_rounded, size: 13, color: AppTheme.textMuted),
-              const SizedBox(width: 4),
-              Text(
-                '$minutos min · 4 momentos',
-                style: const TextStyle(
-                  fontSize: 11,
-                  color: AppTheme.textMuted,
-                  fontWeight: FontWeight.w600,
-                ),
+          const Icon(Icons.timer_rounded, size: 14, color: AppTheme.textMuted),
+          const SizedBox(width: 5),
+          // Flexible y con puntos suspensivos: en gallego la línea es más
+          // larga, y con el texto grande del sistema más todavía. Lo que se
+          // recorta se ve; un desbordamiento en release no se ve.
+          Flexible(
+            child: Text(
+              '$minutos min',
+              style: const TextStyle(
+                fontSize: 12,
+                color: AppTheme.textMuted,
+                fontWeight: FontWeight.w700,
               ),
-            ],
-          ),
-          const SizedBox(height: 6),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: MomentoSesion.values
-                .map(
-                  (m) => Tooltip(
-                    message: m.label(esDocente),
-                    child: _MomentoIcon(momento: m, esDocente: esDocente),
-                  ),
-                )
-                .toList(),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
           ),
         ],
       ),
@@ -880,72 +807,40 @@ class _MomentosSesion extends StatelessWidget {
   }
 }
 
-class _MomentoIcon extends StatelessWidget {
-  final MomentoSesion momento;
-  final bool esDocente;
-  const _MomentoIcon({required this.momento, required this.esDocente});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Container(
-          width: 38,
-          height: 38,
-          decoration: BoxDecoration(
-            color: momento.color.withAlpha(22),
-            shape: BoxShape.circle,
-            border: Border.all(color: momento.color.withAlpha(70), width: 1.5),
-          ),
-          child: Icon(momento.icon, size: 18, color: momento.color),
-        ),
-        const SizedBox(height: 3),
-        SizedBox(
-          width: 58,
-          child: Text(
-            momento.label(esDocente),
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 9,
-              fontWeight: FontWeight.w600,
-              color: AppTheme.textMuted,
-              height: 1.2,
-            ),
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-          ),
-        ),
-      ],
-    );
-  }
-}
-
 // ─── Widget de detalle de sesión (expandido al tocar la tarjeta) ──────────────
 
-/// Panel expandido con la actividad de aula o de hogar, comandos TPR completos
-/// y acceso a la pronunciación (botones de audio placeholder).
+/// Panel expandido con la actividad de aula o de hogar del mes elegido.
+///
+/// El inglés NO se repite aquí: vive en la ficha del mes, más abajo en la misma
+/// pantalla, con su rótulo y su pronunciación. Estaba en los dos sitios, y la
+/// misma lista de palabras salía dos veces en una sola pantalla.
 class DetalleSesionPanel extends StatelessWidget {
   final MesCurricular mes;
   final bool esDocente;
   final Color acento;
+
+  /// La lengua de la pantalla, la que eligió la persona adulta. Antes salía de
+  /// `Localizations.localeOf`, que no es el selector de la app: el panel podía
+  /// quedarse en una lengua mientras el resto cambiaba a la otra.
+  final AppLanguage lang;
+
+  final OfflineAudioService? audioService;
 
   const DetalleSesionPanel({
     super.key,
     required this.mes,
     required this.esDocente,
     required this.acento,
+    this.lang = AppLanguage.gl,
+    this.audioService,
   });
 
   @override
   Widget build(BuildContext context) {
-    final lang = Localizations.localeOf(context).languageCode;
     final actividad = esDocente
-        ? (lang == 'es' ? mes.actividadAula.es : mes.actividadAula.gl)
-        : (lang == 'es' ? mes.actividadHogar.es : mes.actividadHogar.gl);
-    final rutina = lang == 'es'
-        ? mes.rutinaRecomendadaHogar.es
-        : mes.rutinaRecomendadaHogar.gl;
+        ? mes.actividadAula.resolve(lang)
+        : mes.actividadHogar.resolve(lang);
+    final rutina = mes.rutinaRecomendadaHogar.resolve(lang);
 
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
@@ -1002,78 +897,6 @@ class DetalleSesionPanel extends StatelessWidget {
               ],
             ),
           ],
-          const SizedBox(height: 10),
-          // Comandos TPR
-          Wrap(
-            spacing: 6,
-            runSpacing: 4,
-            children: mes.comandosTpr
-                .map(
-                  (cmd) => Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
-                    decoration: BoxDecoration(
-                      color: _coral.withAlpha(15),
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                          color: _coral.withAlpha(50), width: 1),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Icon(Icons.directions_run_rounded,
-                            size: 11, color: _coral),
-                        const SizedBox(width: 4),
-                        Text(
-                          cmd,
-                          style: const TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w700,
-                            color: _coral,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                )
-                .toList(),
-          ),
-          const SizedBox(height: 10),
-          // Léxico inglés con chip de pronunciación
-          Wrap(
-            spacing: 6,
-            runSpacing: 4,
-            children: mes.lexicoIngles
-                .map(
-                  (word) => Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
-                    decoration: BoxDecoration(
-                      color: acento.withAlpha(12),
-                      borderRadius: BorderRadius.circular(20),
-                      border:
-                          Border.all(color: acento.withAlpha(50), width: 1),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(Icons.volume_up_rounded,
-                            size: 11, color: acento),
-                        const SizedBox(width: 4),
-                        Text(
-                          word,
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
-                            color: acento,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                )
-                .toList(),
-          ),
         ],
       ),
     );

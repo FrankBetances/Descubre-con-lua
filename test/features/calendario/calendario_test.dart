@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -6,24 +7,43 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/calendario_model.dart';
+import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
+import 'package:descubre_con_lua/features/premios/premios_model.dart';
+
+import '../../helpers/scroll_helpers.dart';
 
 Widget _wrap(Widget child) =>
     MaterialApp(theme: AppTheme.lightTheme, home: child);
 
+/// El contenido real del repositorio, leído del disco.
+///
+/// Se lee el MISMO fichero que viaja en el paquete, no una copia de prueba: si
+/// alguien rompe `meses.json`, estos tests se enteran. Es lo que hacen ya los
+/// tests de unidades y cápsulas.
+Future<CalendarioContenido> _contenidoDeDisco() => CalendarioContenido.cargar(
+      stringLoader: (path) => File(path).readAsString(),
+    );
+
 void main() {
+  late CalendarioContenido contenido;
+
+  setUpAll(() async {
+    contenido = await _contenidoDeDisco();
+  });
   group('CalendarioModel & 10 Meses Curriculares de Galicia', () {
-    test('contén exactamente 10 meses de setembro a xuño', () {
-      expect(MesCurricular.meses.length, 10);
-      expect(MesCurricular.meses.first.orden, 1);
-      expect(MesCurricular.meses.first.mesCalendario, 9); // Setembro
-      expect(MesCurricular.meses.last.orden, 10);
-      expect(MesCurricular.meses.last.mesCalendario, 6); // Xuño
+    test('contén exactamente 10 meses de setembro a xunho', () {
+      expect(contenido.meses.length, 10);
+      expect(contenido.meses.first.orden, 1);
+      expect(contenido.meses.first.mesCalendario, 9); // Setembro
+      expect(contenido.meses.last.orden, 10);
+      expect(contenido.meses.last.mesCalendario, 6); // Xuño
     });
 
-    test('todos os meses teñen paridade lingüística e contidos TPR completos', () {
-      for (final mes in MesCurricular.meses) {
+    test('todos os meses teñen paridade lingüística e contidos TPR completos',
+        () {
+      for (final mes in contenido.meses) {
         expect(mes.nombreMes.hasParity, isTrue);
         expect(mes.centroInteres.hasParity, isTrue);
         expect(mes.objetivoPedagogico.hasParity, isTrue);
@@ -31,57 +51,62 @@ void main() {
         expect(mes.actividadHogar.hasParity, isTrue);
         expect(mes.rutinaRecomendadaHogar.hasParity, isTrue);
 
-        expect(mes.lexicoIngles, isNotEmpty);
-        expect(mes.comandosTpr, isNotEmpty);
-        expect(mes.minutosAtencionSugeridos, inInclusiveRange(2, 8));
+        expect(mes.ingles.lexico, isNotEmpty);
+        expect(mes.ingles.tpr, isNotEmpty);
+        expect(mes.ingles.frase, isNotEmpty);
+        expect(mes.minutosSugeridos, inInclusiveRange(2, 8));
+        // El icono es un token de contenido, nunca un IconData.
+        expect(mes.icono, isNotEmpty);
       }
     });
 
     test('mesActualParaFecha resolve correctamente o mes escolar regular', () {
       final setembro = DateTime(2026, 9, 15);
-      expect(MesCurricular.mesActualParaFecha(setembro).mesCalendario, 9);
+      expect(contenido.mesParaFecha(setembro).mesCalendario, 9);
 
       final febreiro = DateTime(2027, 2, 20);
-      expect(MesCurricular.mesActualParaFecha(febreiro).mesCalendario, 2);
+      expect(contenido.mesParaFecha(febreiro).mesCalendario, 2);
 
-      final xuño = DateTime(2027, 6, 10);
-      expect(MesCurricular.mesActualParaFecha(xuño).mesCalendario, 6);
+      final xunho = DateTime(2027, 6, 10);
+      expect(contenido.mesParaFecha(xunho).mesCalendario, 6);
     });
 
     // Edge case: Vacation months (Xullo e Agosto)
-    test('mesActualParaFecha xestiona meses de vacacións (xullo e agosto) con fallback a setembro', () {
+    test(
+        'mesActualParaFecha xestiona meses de vacacións (xullo e agosto) con fallback a setembro',
+        () {
       final xullo = DateTime(2026, 7, 20);
       final agosto = DateTime(2026, 8, 15);
       final agostoFin = DateTime(2026, 8, 31);
 
-      expect(MesCurricular.mesActualParaFecha(xullo).mesCalendario, 9);
-      expect(MesCurricular.mesActualParaFecha(xullo).orden, 1);
+      expect(contenido.mesParaFecha(xullo).mesCalendario, 9);
+      expect(contenido.mesParaFecha(xullo).orden, 1);
 
-      expect(MesCurricular.mesActualParaFecha(agosto).mesCalendario, 9);
-      expect(MesCurricular.mesActualParaFecha(agostoFin).mesCalendario, 9);
+      expect(contenido.mesParaFecha(agosto).mesCalendario, 9);
+      expect(contenido.mesParaFecha(agostoFin).mesCalendario, 9);
     });
 
     // Edge case: Boundary dates and Leap Year
     test('mesActualParaFecha resolve datas límite de curso e ano bisesto', () {
       final inicioCurso = DateTime(2026, 9, 1);
-      expect(MesCurricular.mesActualParaFecha(inicioCurso).mesCalendario, 9);
+      expect(contenido.mesParaFecha(inicioCurso).mesCalendario, 9);
 
       final finCurso = DateTime(2027, 6, 30);
-      expect(MesCurricular.mesActualParaFecha(finCurso).mesCalendario, 6);
+      expect(contenido.mesParaFecha(finCurso).mesCalendario, 6);
 
       final finAno = DateTime(2026, 12, 31);
-      expect(MesCurricular.mesActualParaFecha(finAno).mesCalendario, 12);
+      expect(contenido.mesParaFecha(finAno).mesCalendario, 12);
 
       final anoNovo = DateTime(2027, 1, 1);
-      expect(MesCurricular.mesActualParaFecha(anoNovo).mesCalendario, 1);
+      expect(contenido.mesParaFecha(anoNovo).mesCalendario, 1);
 
       final anoBisesto = DateTime(2028, 2, 29);
-      expect(MesCurricular.mesActualParaFecha(anoBisesto).mesCalendario, 2);
+      expect(contenido.mesParaFecha(anoBisesto).mesCalendario, 2);
     });
 
     test('orde curricular e estritamente secuencial de 1 a 10', () {
-      for (int i = 0; i < MesCurricular.meses.length; i++) {
-        expect(MesCurricular.meses[i].orden, i + 1);
+      for (int i = 0; i < contenido.meses.length; i++) {
+        expect(contenido.meses[i].orden, i + 1);
       }
     });
   });
@@ -102,7 +127,9 @@ void main() {
       }
     });
 
-    test('grafo completo de transición de estados e dobre estimulación reactiva', () async {
+    test(
+        'grafo completo de transición de estados e dobre estimulación reactiva',
+        () async {
       final hoxe = DateTime(2026, 10, 15);
       expect(store.estadoParaFecha(hoxe), EstadoEstimulacion.sinRegistro);
       expect(store.totalDobleEstimulacion, 0);
@@ -134,7 +161,8 @@ void main() {
       expect(store.totalSesionesHogar, 1);
     });
 
-    test('transición inversa: rexistro primeiro en fogar e despois aula', () async {
+    test('transición inversa: rexistro primeiro en fogar e despois aula',
+        () async {
       final data = DateTime(2026, 11, 20);
       expect(store.estadoParaFecha(data), EstadoEstimulacion.sinRegistro);
 
@@ -149,7 +177,9 @@ void main() {
       expect(store.totalDobleEstimulacion, 1);
     });
 
-    test('idempotencia: chamadas repetidas a registrarAula non duplican contadores', () async {
+    test(
+        'idempotencia: chamadas repetidas a registrarAula non duplican contadores',
+        () async {
       final data = DateTime(2026, 12, 5);
       expect(await store.registrarAula(data), isTrue); // Nova alta
       expect(await store.registrarAula(data), isFalse); // Xa existía
@@ -158,7 +188,8 @@ void main() {
       expect(store.totalSesionesAula, 1);
     });
 
-    test('persistencia soberana roundtrip con múltiples datas independentes', () async {
+    test('persistencia soberana roundtrip con múltiples datas independentes',
+        () async {
       final d1 = DateTime(2026, 9, 15);
       final d2 = DateTime(2026, 9, 16);
       final d3 = DateTime(2026, 9, 17);
@@ -180,10 +211,12 @@ void main() {
       final storePersistido = CalendarioStore(overrideDirectory: tempDir.path);
       await storePersistido.cargar();
 
-      expect(storePersistido.estadoParaFecha(d1), EstadoEstimulacion.dobleEstimulacion);
+      expect(storePersistido.estadoParaFecha(d1),
+          EstadoEstimulacion.dobleEstimulacion);
       expect(storePersistido.estadoParaFecha(d2), EstadoEstimulacion.soloAula);
       expect(storePersistido.estadoParaFecha(d3), EstadoEstimulacion.soloHogar);
-      expect(storePersistido.estadoParaFecha(d4), EstadoEstimulacion.sinRegistro);
+      expect(
+          storePersistido.estadoParaFecha(d4), EstadoEstimulacion.sinRegistro);
 
       expect(storePersistido.totalDobleEstimulacion, 1);
       expect(storePersistido.totalSesionesAula, 2);
@@ -223,13 +256,15 @@ void main() {
       }
     });
 
-    testWidgets('renderiza correctamente a cabeceira e o conmutador dual', (tester) async {
+    testWidgets('renderiza correctamente a cabeceira e o conmutador dual',
+        (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
+        contenido: contenido,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: true,
       )));
@@ -240,7 +275,9 @@ void main() {
       expect(find.text('Fogar (Familias)'), findsOneWidget);
     });
 
-    testWidgets('lanzador de sesión a 1-toque en modo Aula invoca callback con mes activo e esDocente=true', (tester) async {
+    testWidgets(
+        'lanzador de sesión a 1-toque en modo Aula invoca callback con mes activo e esDocente=true',
+        (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
@@ -250,6 +287,7 @@ void main() {
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
+        contenido: contenido,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: true,
         onIniciarSesion: (mes, esDocente) {
@@ -269,10 +307,13 @@ void main() {
 
       expect(sesionRecibida, isNotNull);
       expect(esDocenteRecibido, isTrue);
-      expect(sesionRecibida!.mesCalendario, MesCurricular.mesActualParaFecha(DateTime.now()).mesCalendario);
+      expect(sesionRecibida!.mesCalendario,
+          contenido.mesParaFecha(DateTime.now()).mesCalendario);
     });
 
-    testWidgets('lanzador de sesión a 1-toque en modo Fogar invoca callback con mes activo e esDocente=false', (tester) async {
+    testWidgets(
+        'lanzador de sesión a 1-toque en modo Fogar invoca callback con mes activo e esDocente=false',
+        (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
@@ -282,6 +323,7 @@ void main() {
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
+        contenido: contenido,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: false,
         onIniciarSesion: (mes, esDocente) {
@@ -303,13 +345,16 @@ void main() {
       expect(esDocenteRecibido, isFalse);
     });
 
-    testWidgets('conmutador dual de roles e temporizador sutil actualizan a interface de inmediato', (tester) async {
+    testWidgets(
+        'conmutador dual de roles e temporizador sutil actualizan a interface de inmediato',
+        (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
+        contenido: contenido,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: true,
       )));
@@ -317,8 +362,10 @@ void main() {
 
       // En modo Aula: vese o temporizador sutil da asemblea e as instrucións breves
       expect(find.textContaining('ACTIVIDADE NA AULA'), findsOneWidget);
-      expect(find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
-      expect(find.textContaining('Instrucións breves para a asemblea:'), findsOneWidget);
+      expect(
+          find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
+      expect(find.textContaining('Instrucións breves para a asemblea:'),
+          findsOneWidget);
       expect(find.textContaining('MICRO-RUTINA NO FOGAR'), findsNothing);
 
       // Conmutar a Fogar (Familias)
@@ -330,9 +377,13 @@ void main() {
       // En modo Fogar: vese a micro-rutina, o temporizador sutil de fogar e a ligazón á guía
       expect(find.textContaining('MICRO-RUTINA NO FOGAR'), findsOneWidget);
       expect(find.textContaining('ACTIVIDADE NA AULA'), findsNothing);
-      expect(find.textContaining('Temporizador sutil: 3-'), findsOneWidget);
+      final mesDeHoxe = contenido.mesParaFecha(DateTime.now());
+      final esperado = mesDeHoxe.minutosSugeridos == 3
+          ? 'Temporizador sutil: 3 min'
+          : 'Temporizador sutil: 3-${mesDeHoxe.minutosSugeridos} min';
+      expect(find.textContaining(esperado), findsOneWidget);
       expect(find.byKey(const Key('boton_guia_atencion')), findsOneWidget);
-      expect(find.text('Ver Guía de Atención e 3 Regras de Ouro'), findsOneWidget);
+      expect(find.text('Ver a guía de inglés na casa'), findsOneWidget);
 
       // Conmutar de volta a Aula (Docentes)
       final tabAula = find.byKey(const Key('tab_rol_docente'));
@@ -341,23 +392,30 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.textContaining('ACTIVIDADE NA AULA'), findsOneWidget);
-      expect(find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
+      expect(
+          find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
     });
 
-    testWidgets('celebración reactiva de Dobre Estimulación actualiza banner en tempo real sen recarga', (tester) async {
+    testWidgets(
+        'celebración reactiva de Dobre Estimulación actualiza banner en tempo real sen recarga',
+        (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
+        contenido: contenido,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: true,
       )));
       await tester.pumpAndSettle();
 
       // Estado inicial: 0 días acumulados e sen estrela
-      expect(find.textContaining('Días de Dobre Estimulación acumulados: 0'), findsOneWidget);
+      await expectAfterScrolling(
+        tester,
+        find.textContaining('Días de Dobre Estimulación acumulados: 0'),
+      );
       expect(find.byIcon(Icons.star_rounded), findsNothing);
 
       // 1. Rexistrar aula
@@ -369,7 +427,14 @@ void main() {
       await tester.pumpAndSettle();
 
       // O banner actualiza a só aula
-      expect(find.textContaining('Asemblea feita na aula. Falta o xogo de 3 min na casa!'), findsOneWidget);
+      // El banner puede quedar fuera de la ventana tras desplazarse hasta el
+      // botón: se busca desplazando, como el resto de los tests del proyecto.
+      // «Falta o xogo» y no «Asemblea feita»: lo segundo sale también en el
+      // aviso emergente que acaba de aparecer, y encontraría dos.
+      await expectAfterScrolling(
+        tester,
+        find.textContaining('Falta o xogo de 3 min na casa'),
+      );
       expect(find.byIcon(Icons.star_rounded), findsNothing);
 
       // 2. Cambiar a modo Fogar e rexistrar rutina
@@ -387,42 +452,60 @@ void main() {
       await tester.pumpAndSettle();
 
       // O banner reactivamente celebra a Dobre Estimulación con estrela!
-      expect(find.textContaining('Parabéns! Hoxe acadastes a Dobre Estimulación'), findsOneWidget);
-      expect(find.byIcon(Icons.star_rounded), findsOneWidget);
+      await expectAfterScrolling(
+        tester,
+        find.textContaining('Parabéns! Hoxe acadastes a Dobre Estimulación'),
+      );
+      // Dos estrellas: la del cartel y la de la tarjeta del mes, que ahora
+      // enseña el estado del mes entero y no el del día 15.
+      expect(find.byIcon(Icons.star_rounded), findsWidgets);
       expect(store.totalDobleEstimulacion, 1);
     });
 
-    testWidgets('cambio de chip de mes actualiza o detalle curricular e a sesión recomendada', (tester) async {
+    testWidgets(
+        'cambio de chip de mes actualiza o detalle curricular e a sesión recomendada',
+        (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
+        contenido: contenido,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: true,
       )));
       await tester.pumpAndSettle();
 
-      // Cambiar de mes: premer chip de Outubro
-      final chipOutubro = find.text('Outubro');
-      if (chipOutubro.evaluate().isNotEmpty) {
-        await tester.ensureVisible(chipOutubro);
-        await tester.pumpAndSettle();
-        await tester.tap(chipOutubro);
-        await tester.pumpAndSettle();
+      // Outubro sale dos veces: en su tarjeta del carrusel y en la pastilla
+      // del selector. Se pulsa la primera —la tarjeta— que es lo que hace
+      // cualquiera al ver el carrusel; antes el finder cogía las dos y el
+      // test moría con «Bad state: Too many elements».
+      final tarxetaOutubro = find.text('Outubro').first;
+      expect(tarxetaOutubro, findsOneWidget);
+      await tester.ensureVisible(tarxetaOutubro);
+      await tester.pumpAndSettle();
+      await tester.tap(tarxetaOutubro);
+      await tester.pumpAndSettle();
 
-        expect(find.textContaining('O meu pequeno corpo en movemento'), findsOneWidget);
-      }
+      // El centro de interés de octubre aparece en la ficha del mes.
+      await expectAfterScrolling(
+        tester,
+        find.textContaining('O meu pequeno corpo en movemento'),
+        matcher: findsWidgets,
+      );
     });
 
-    testWidgets('alternancia de idioma (gl/es) actualiza todos os textos sen fallos', (tester) async {
+    testWidgets(
+        'alternancia de idioma (gl/es) actualiza todos os textos sen fallos',
+        (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
+        contenido: contenido,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: true,
       )));
@@ -440,35 +523,181 @@ void main() {
         expect(find.text('Calendario Escuela · Hogar'), findsOneWidget);
         expect(find.text('Hogar (Familias)'), findsOneWidget);
         expect(find.text('Iniciar asamblea guiada'), findsOneWidget);
-        expect(find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
+        expect(
+            find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
       }
     });
   });
 
   group('GuiaAtencionScreen UI Widget Tests', () {
-    testWidgets('mostra os tramos de idade e as tres regras de ouro', (tester) async {
-      await tester.pumpWidget(_wrap(const GuiaAtencionScreen(
+    testWidgets('mostra os tramos de idade e as tres regras da casa',
+        (tester) async {
+      await tester.pumpWidget(_wrap(GuiaAtencionScreen(
         initialLanguage: AppLanguage.gl,
+        contenido: contenido,
       )));
       await tester.pumpAndSettle();
 
-      expect(find.text('Guía de Atención e Inglés na Casa'), findsOneWidget);
-      expect(find.text('0 a 6 meses'), findsOneWidget);
+      expect(find.text('Guía de inglés na casa'), findsOneWidget);
+      // Cada tramo sale dos veces cuando está elegido —en su pastilla y en la
+      // cabecera de la ficha—, así que se comprueba que está, no cuántas.
+      expect(find.text('0 a 6 meses'), findsWidgets);
       expect(find.text('6 a 12 meses'), findsOneWidget);
       expect(find.text('12 a 18 meses'), findsOneWidget);
       expect(find.text('18 a 24 meses'), findsOneWidget);
       expect(find.text('24 a 36 meses'), findsOneWidget);
 
-      // Regras de ouro
-      expect(find.text('1. O cerebro non se confunde'), findsOneWidget);
-      expect(find.text('2. Respecta o "Período de Silencio"'), findsOneWidget);
-      expect(find.text('3. A app é para ti, non para a crianza'), findsOneWidget);
+      // Las tres reglas de la casa, ya sin titularse como neurociencia.
+      expect(find.text('1. Unha lingua, unha rutina'), findsOneWidget);
+      expect(
+          find.text('2. Entender vén moito antes que falar'), findsOneWidget);
+      expect(
+          find.text('3. A app é para ti, non para a crianza'), findsOneWidget);
 
       // Cambiar de tramo a 24-36 meses
       await tester.tap(find.text('24 a 36 meses'));
       await tester.pumpAndSettle();
 
-      expect(find.text('Atención sostida: ata 8 minutos'), findsOneWidget);
+      // Sugerencia de juego, no un umbral del desarrollo.
+      expect(find.text('Xogo suxerido: arredor de 8 min'), findsOneWidget);
+    });
+  });
+
+  group('Privacidad: lo que el calendario guarda, y nada más', () {
+    late Directory tempDir;
+    late CalendarioStore store;
+
+    setUp(() async {
+      tempDir = await Directory.systemTemp.createTemp('cal_priv_');
+      store = CalendarioStore(overrideDirectory: tempDir.path);
+      await store.cargar();
+    });
+
+    tearDown(() async {
+      if (await tempDir.exists()) await tempDir.delete(recursive: true);
+    });
+
+    test('el fichero solo tiene fechas sin hora y dos casillas', () async {
+      await store.registrarAula(DateTime(2026, 10, 15, 9, 30));
+      await store.registrarHogar(DateTime(2026, 10, 15, 20, 45));
+
+      final crudo =
+          File('${tempDir.path}/calendario_progreso.json').readAsStringSync();
+
+      // Si aparece una clave nueva, este test para el cambio: añadir un campo
+      // obliga a actualizar docs/privacy.html y el formulario de Seguridad de
+      // los datos de Play Console EN EL MISMO CAMBIO. Lo declarado y lo
+      // compilado no pueden decir cosas distintas.
+      const permitidas = {'registros', 'aula', 'hogar'};
+      final fecha = RegExp(r'^\d{4}-\d{2}-\d{2}$');
+      final claves = RegExp(r'"([^"]+)"\s*:')
+          .allMatches(crudo)
+          .map((m) => m.group(1)!)
+          .where((k) => !fecha.hasMatch(k))
+          .toSet();
+
+      expect(claves.difference(permitidas), isEmpty,
+          reason: 'Apareció una clave nueva en calendario_progreso.json.');
+
+      // La hora diría a qué hora trabaja una persona concreta, y para enlazar
+      // aula y casa basta con el día.
+      expect(crudo, isNot(contains('09:30')));
+      expect(crudo, isNot(contains('T20:45')));
+      expect(crudo, contains('2026-10-15'));
+    });
+
+    test('el estado de un mes es lo mejor que se logró en él', () async {
+      // La tarjeta del carrusel enseña el estado del MES. Antes preguntaba por
+      // el día 15 y un mes con media docena de días trabajados salía como «sen
+      // rexistro» si el 15 estaba en blanco.
+      expect(store.estadoParaMes(2026, 10), EstadoEstimulacion.sinRegistro);
+
+      await store.registrarAula(DateTime(2026, 10, 3));
+      expect(store.estadoParaMes(2026, 10), EstadoEstimulacion.soloAula);
+
+      await store.registrarHogar(DateTime(2026, 10, 20));
+      expect(store.estadoParaMes(2026, 10), EstadoEstimulacion.soloAula,
+          reason: 'Aula un día y casa otro no es doble estimulación.');
+
+      await store.registrarHogar(DateTime(2026, 10, 3));
+      expect(
+          store.estadoParaMes(2026, 10), EstadoEstimulacion.dobleEstimulacion);
+
+      // Un mes vecino no se contagia.
+      expect(store.estadoParaMes(2026, 11), EstadoEstimulacion.sinRegistro);
+      expect(store.estadoParaMes(2025, 10), EstadoEstimulacion.sinRegistro);
+    });
+
+    test('dos registros el mismo día son un día, no dos', () async {
+      await store.registrarAula(DateTime(2026, 10, 15, 9, 0));
+      await store.registrarAula(DateTime(2026, 10, 15, 12, 0));
+      expect(store.totalSesionesAula, 1);
+    });
+  });
+
+  group('Medallas del calendario', () {
+    late CatalogoPremios catalogo;
+
+    setUpAll(() async {
+      final crudo =
+          await File('assets/content/premios/premios.json').readAsString();
+      catalogo =
+          CatalogoPremios.fromJson(json.decode(crudo) as Map<String, dynamic>);
+    });
+
+    test('el catálogo sale del JSON, no de un enum escrito a mano', () {
+      expect(catalogo.medallas, isNotEmpty);
+      for (final m in catalogo.medallas) {
+        expect(m.titulo.hasParity, isTrue);
+        expect(m.descripcion.hasParity, isTrue);
+        expect(m.valor, greaterThan(0));
+      }
+    });
+
+    test('cada medalla se gana con lo que el calendario mide de verdad', () {
+      // Tres cuentas, y solo tres. Si alguna medalla dependiera de algo que la
+      // app no mide —«toda la clase», por ejemplo— no habría forma de
+      // calcularla aquí, y este test no compilaría.
+      const nada = ContadoresCalendario();
+      const mucho = ContadoresCalendario(
+        diasAula: 99,
+        diasFogar: 99,
+        diasDobres: 99,
+      );
+
+      for (final m in catalogo.medallas) {
+        expect(m.ganadaCon(nada), isFalse,
+            reason: '${m.id} se gana sin haber hecho nada.');
+        expect(m.ganadaCon(mucho), isTrue,
+            reason: '${m.id} no se gana ni con el curso entero hecho.');
+      }
+    });
+
+    test('el avance se lee de la cuenta que corresponde', () {
+      const c = ContadoresCalendario(
+        diasAula: 3,
+        diasFogar: 7,
+        diasDobres: 2,
+      );
+      for (final m in catalogo.medallas) {
+        final esperado = switch (m.criterio) {
+          CriterioCalendario.aula => 3,
+          CriterioCalendario.fogar => 7,
+          CriterioCalendario.dobre => 2,
+        };
+        expect(m.avanceCon(c), esperado);
+      }
+    });
+
+    test('cada perfil ve sus medallas, y las de ambos las ven los dos', () {
+      final docente = catalogo.medallasDe(Perfil.docente);
+      final familia = catalogo.medallasDe(Perfil.familia);
+      expect(docente, isNotEmpty);
+      expect(familia, isNotEmpty);
+      for (final m in catalogo.medallas.where((m) => m.perfil == null)) {
+        expect(docente, contains(m));
+        expect(familia, contains(m));
+      }
     });
   });
 }

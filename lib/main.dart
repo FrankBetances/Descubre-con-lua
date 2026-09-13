@@ -159,6 +159,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
         '/guia-atencion': (context) => GuiaAtencionScreen(
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
+              audioService: _audioService,
             ),
       },
       onGenerateRoute: (settings) {
@@ -389,6 +390,7 @@ class HomeScreen extends StatelessWidget {
                     builder: (context) => PremiosScreen(
                       repository: premios!,
                       currentLanguage: currentLanguage,
+                      contadores: calendario?.contadores,
                     ),
                   ),
                 ),

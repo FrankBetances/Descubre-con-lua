@@ -1,41 +1,36 @@
 import 'package:flutter/material.dart';
-import '../../../core/brand/lua_pixel.dart';
+
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/iconos_contenido.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../data/models/calendario_model.dart';
+import '../../../data/repositories/calendario_repository.dart';
 import '../widgets/selector_idioma_widget.dart';
 
-/// Tramo de edad con su capacidad de atención y micro-rutina recomendada.
-class TramoAtencion {
-  final LocalizedString rangoEdad;
-  final int minutosMaximos;
-  final LocalizedString momentoDomestico;
-  final LocalizedString queFacer;
-  final LocalizedString queEvitar;
-  final LocalizedString exemploFraseIngles;
-  final IconData icono;
-
-  const TramoAtencion({
-    required this.rangoEdad,
-    required this.minutosMaximos,
-    required this.momentoDomestico,
-    required this.queFacer,
-    required this.queEvitar,
-    required this.exemploFraseIngles,
-    required this.icono,
-  });
-}
-
-/// Pantalla formativa para familias en Academy:
-/// Cómo se aprende un segundo idioma en casa sin saturar, respetando la capacidad de atención por edad.
+/// La guía de la familia: cómo meter el inglés en la casa sin saturar.
+///
+/// Todo lo que se lee aquí sale de `assets/content/calendario/atencion.json`.
+/// Los minutos son un TIEMPO DE JUEGO SUGERIDO, dicho en lenguaje de crianza:
+/// no son un umbral del desarrollo ni el resultado de medir a nadie, y esta app
+/// no evalúa a ninguna criatura. Por eso tampoco se titulan las reglas como
+/// hallazgos de neurociencia: son criterio pedagógico, y se presentan como tal.
 class GuiaAtencionScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
+  final OfflineAudioService? audioService;
+
+  /// El contenido ya cargado. Si no se pasa, se lee del paquete.
+  final CalendarioContenido? contenido;
 
   const GuiaAtencionScreen({
     super.key,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
+    this.audioService,
+    this.contenido,
   });
 
   @override
@@ -45,179 +40,88 @@ class GuiaAtencionScreen extends StatefulWidget {
 class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
   late AppLanguage _language;
   int _tramoSeleccionado = 0;
+  GuiaAtencion? _guia;
 
   static const _titulo = LocalizedString(
-    gl: 'Guía de Atención e Inglés na Casa',
-    es: 'Guía de Atención e Inglés en Casa',
+    gl: 'Guía de inglés na casa',
+    es: 'Guía de inglés en casa',
   );
 
   static const _subtitulo = LocalizedString(
-    gl: 'Aprender un segundo idioma sen saturar: micro-rutinas, respecto aos tempos e cero pantallas para a crianza.',
-    es: 'Aprender un segundo idioma sin saturar: micro-rutinas, respeto a los tiempos y cero pantallas para los peques.',
+    gl: 'Aprender unha lingua nova sen saturar: rutinas curtas, respecto aos '
+        'tempos e cero pantallas para a crianza.',
+    es: 'Aprender una lengua nueva sin saturar: rutinas cortas, respeto a los '
+        'tiempos y cero pantallas para la criatura.',
   );
 
-  static const _principiosKicker = LocalizedString(
-    gl: 'TRES REGRAS DE OURO NEUROBIOLÓXICAS',
-    es: 'TRES REGLAS DE ORO NEUROBIOLÓGICAS',
+  static const _reglasKicker = LocalizedString(
+    gl: 'TRES REGRAS PARA A CASA',
+    es: 'TRES REGLAS PARA CASA',
   );
 
-  static const _regla1Titulo = LocalizedString(
-    gl: '1. O cerebro non se confunde',
-    es: '1. El cerebro no se confunde',
-  );
-  static const _regla1Texto = LocalizedString(
-    gl: 'O cerebro infantil pode etiquetar a realidade en galego, castelán e inglés sen interferencias se cada lingua se asocia a emocións e rutinas claras.',
-    es: 'El cerebro infantil puede etiquetar la realidad en gallego, castellano e inglés sin interferencias si cada lengua se asocia a emociones y rutinas claras.',
+  static const _edadKicker = LocalizedString(
+    gl: 'CANTO DURA O XOGO, SEGUNDO A IDADE',
+    es: 'CUÁNTO DURA EL JUEGO, SEGÚN LA EDAD',
   );
 
-  static const _regla2Titulo = LocalizedString(
-    gl: '2. Respecta o "Período de Silencio"',
-    es: '2. Respeta el "Período de Silencio"',
-  );
-  static const _regla2Texto = LocalizedString(
-    gl: 'O bebé entende co corpo moitos meses antes de falar en inglés. Non o obrigues nin o examines dicindo "¿Cómo se dice?". O corpo é o seu primeiro tradutor.',
-    es: 'El bebé entiende con el cuerpo muchos meses antes de hablar en inglés. No lo obligues ni lo examines diciendo "¿Cómo se dice?". El cuerpo es su primer traductor.',
+  static const _tiempoSugerido = LocalizedString(
+    gl: 'Xogo suxerido: arredor de',
+    es: 'Juego sugerido: alrededor de',
   );
 
-  static const _regla3Titulo = LocalizedString(
-    gl: '3. A app é para ti, non para a crianza',
-    es: '3. La app es para ti, no para el peque',
-  );
-  static const _regla3Texto = LocalizedString(
-    gl: 'Escoita o audio ou le o xogo previamente. Cando interactúes con el ou ela, garda o móbil no peto: a linguaxe apréndese cos ollos, a voz e o tacto.',
-    es: 'Escucha el audio o lee el juego previamente. Cuando interactúes con él o ella, guarda el móvil en el bolsillo: el lenguaje se aprende con la mirada, la voz y el tacto.',
+  static const _minutos = LocalizedString(gl: 'min', es: 'min');
+
+  static const _momento = LocalizedString(
+    gl: 'Momento da casa:',
+    es: 'Momento en casa:',
   );
 
-  static const _selectorEdadKicker = LocalizedString(
-    gl: 'CAPACIDADE DE ATENCIÓN SEGUNDO A IDADE',
-    es: 'CAPACIDAD DE ATENCIÓN SEGÚN LA EDAD',
+  static const _queFacer = LocalizedString(
+    gl: 'Que facer (co corpo):',
+    es: 'Qué hacer (con el cuerpo):',
   );
 
-  static const List<TramoAtencion> _tramos = [
-    TramoAtencion(
-      rangoEdad: LocalizedString(gl: '0 a 6 meses', es: '0 a 6 meses'),
-      minutosMaximos: 2,
-      momentoDomestico: LocalizedString(
-        gl: 'Masaxe suave tras o baño ou cambio de cueiro.',
-        es: 'Masaje suave tras el baño o cambio de pañal.',
-      ),
-      queFacer: LocalizedString(
-        gl: 'Contacto visual directo, entoación cantadeira ("motherese") e agarimos corporais.',
-        es: 'Contacto visual directo, entonación cantarina ("motherese") y caricias corporales.',
-      ),
-      queEvitar: LocalizedString(
-        gl: 'Luces estridentes, pantallas ou sons fortes.',
-        es: 'Luces estridentes, pantallas o sonidos fuertes.',
-      ),
-      exemploFraseIngles: LocalizedString(
-        gl: '"Gentle touch... Soft tummy, warm and sweet!"',
-        es: '"Gentle touch... Soft tummy, warm and sweet!"',
-      ),
-      icono: Icons.child_care_rounded,
-    ),
-    TramoAtencion(
-      rangoEdad: LocalizedString(gl: '6 a 12 meses', es: '6 a 12 meses'),
-      minutosMaximos: 3,
-      momentoDomestico: LocalizedString(
-        gl: 'Xogo de ocultación na alfombra (Peek-a-boo).',
-        es: 'Juego de ocultación en la alfombra (Peek-a-boo).',
-      ),
-      queFacer: LocalizedString(
-        gl: 'Ocultar a cara tras un pano suave e reaparecer con sorpresa sonriente.',
-        es: 'Ocultar el rostro tras un pañuelo suave y reaparecer con sorpresa sonriente.',
-      ),
-      queEvitar: LocalizedString(
-        gl: 'Xogos de máis de 3 minutos que causen irritabilidade.',
-        es: 'Juegos de más de 3 minutos que causen irritabilidad.',
-      ),
-      exemploFraseIngles: LocalizedString(
-        gl: '"Peek-a-boo! I see you! Happy baby, smile!"',
-        es: '"Peek-a-boo! I see you! Happy baby, smile!"',
-      ),
-      icono: Icons.visibility_rounded,
-    ),
-    TramoAtencion(
-      rangoEdad: LocalizedString(gl: '12 a 18 meses', es: '12 a 18 meses'),
-      minutosMaximos: 5,
-      momentoDomestico: LocalizedString(
-        gl: 'Ao calzar os zapatos ou mudar a roupa pola mañá.',
-        es: 'Al calzar los zapatos o cambiar la ropa por la mañana.',
-      ),
-      queFacer: LocalizedString(
-        gl: 'Mover as extremidades acompañando a palabra: subir mans en "Up" e pés en "Push!".',
-        es: 'Mover las extremidades acompañando la palabra: subir manos en "Up" y pies en "Push!".',
-      ),
-      queEvitar: LocalizedString(
-        gl: 'Interrogar ao neno para que repita a palabra.',
-        es: 'Interrogar al niño para que repita la palabra.',
-      ),
-      exemploFraseIngles: LocalizedString(
-        gl: '"One foot, two feet. Push, push! Hands up! All done!"',
-        es: '"One foot, two feet. Push, push! Hands up! All done!"',
-      ),
-      icono: Icons.directions_walk_rounded,
-    ),
-    TramoAtencion(
-      rangoEdad: LocalizedString(gl: '18 a 24 meses', es: '18 a 24 meses'),
-      minutosMaximos: 6,
-      momentoDomestico: LocalizedString(
-        gl: 'No lavabo ao lavar as mans ou tomar o baño.',
-        es: 'En el lavabo al lavarse las manos o tomar el baño.',
-      ),
-      queFacer: LocalizedString(
-        gl: 'Contraste sensorial: sentir a auga tépeda ("Warm") e fría ("Cold, brrr!").',
-        es: 'Contraste sensorial: sentir el agua templada ("Warm") y fría ("Cold, brrr!").',
-      ),
-      queEvitar: LocalizedString(
-        gl: 'Corrixir se mestura galego e inglés (facer reformulación natural).',
-        es: 'Corregir si mezcla gallego e inglés (hacer reformulación natural).',
-      ),
-      exemploFraseIngles: LocalizedString(
-        gl: '"Warm water! Rub soap, splash, splash! Clean hands!"',
-        es: '"Warm water! Rub soap, splash, splash! Clean hands!"',
-      ),
-      icono: Icons.water_drop_rounded,
-    ),
-    TramoAtencion(
-      rangoEdad: LocalizedString(gl: '24 a 36 meses', es: '24 a 36 meses'),
-      minutosMaximos: 8,
-      momentoDomestico: LocalizedString(
-        gl: 'Xogo de desprazamento na alfombra do salón.',
-        es: 'Juego de desplazamiento en la alfombra del salón.',
-      ),
-      queFacer: LocalizedString(
-        gl: 'Imitar animais (saltar como ras, voar como paxaros) e parar en seco en "FREEZE!".',
-        es: 'Imitar animales (saltar como ranas, volar como pájaros) y parar en seco en "FREEZE!".',
-      ),
-      queEvitar: LocalizedString(
-        gl: 'Sesións sedentarias de fichas ou traballo escolarizado.',
-        es: 'Sesiones sedentarias de fichas o trabajo escolarizado.',
-      ),
-      exemploFraseIngles: LocalizedString(
-        gl: '"Jump like a frog! Ribbit! Fly like a bird... FREEZE!"',
-        es: '"Jump like a frog! Ribbit! Fly like a bird... FREEZE!"',
-      ),
-      icono: Icons.sports_gymnastics_rounded,
-    ),
-  ];
+  static const _queEvitar = LocalizedString(
+    gl: 'Que evitar:',
+    es: 'Qué evitar:',
+  );
+
+  static const _comoSeDi = LocalizedString(
+    gl: 'Como se di. Pulsa e escóitao antes de dicirllo:',
+    es: 'Cómo se dice. Pulsa y escúchalo antes de decírselo:',
+  );
+
+  static const _aviso = LocalizedString(
+    gl: 'Os minutos son unha suxestión de xogo, non unha medida do '
+        'desenvolvemento de ninguén. Esta app non avalía a ningunha crianza.',
+    es: 'Los minutos son una sugerencia de juego, no una medida del desarrollo '
+        'de nadie. Esta app no evalúa a ninguna criatura.',
+  );
 
   @override
   void initState() {
     super.initState();
     _language = widget.initialLanguage;
+    final yaCargado = widget.contenido;
+    if (yaCargado != null) {
+      _guia = yaCargado.guia;
+    } else {
+      CalendarioContenido.cargar().then((c) {
+        if (!mounted) return;
+        setState(() => _guia = c.guia);
+      });
+    }
   }
 
   void _onToggleLanguage(AppLanguage newLang) {
-    setState(() {
-      _language = newLang;
-    });
+    setState(() => _language = newLang);
     widget.onLanguageChanged?.call(newLang);
   }
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final tramo = _tramos[_tramoSeleccionado];
+    final guia = _guia;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -232,110 +136,163 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
             child: SelectorIdiomaWidget(
               currentLanguage: _language,
               onLanguageChanged: _onToggleLanguage,
+              // GL/ES, como el resto de la app: con el nombre entero
+              // («Galego», «Castellano») la barra desbordaba 119 px a escala
+              // de texto grande.
+              compact: true,
             ),
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(AppTheme.spaceLg),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              _subtitulo.resolve(_language),
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: AppTheme.textSecondary,
-                height: 1.4,
-              ),
-            ),
-            const SizedBox(height: AppTheme.spaceLg),
-
-            // Selector horizontal de tramos de edad
-            Text(
-              _selectorEdadKicker.resolve(_language),
-              style: theme.textTheme.labelSmall?.copyWith(
-                color: AppTheme.primaryDark,
-                fontWeight: FontWeight.w800,
-                letterSpacing: 1.0,
-              ),
-            ),
-            const SizedBox(height: AppTheme.spaceSm),
-            SizedBox(
-              height: 44,
-              child: ListView.separated(
-                scrollDirection: Axis.horizontal,
-                itemCount: _tramos.length,
-                separatorBuilder: (_, __) => const SizedBox(width: 8),
-                itemBuilder: (context, index) {
-                  final item = _tramos[index];
-                  final isSelected = index == _tramoSeleccionado;
-
-                  return ChoiceChip(
-                    label: Text(item.rangoEdad.resolve(_language)),
-                    selected: isSelected,
-                    onSelected: (val) {
-                      if (val) setState(() => _tramoSeleccionado = index);
-                    },
-                    selectedColor: AppTheme.primary,
-                    backgroundColor: Colors.white,
-                    labelStyle: TextStyle(
-                      color: isSelected ? Colors.white : AppTheme.textPrimary,
-                      fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+      body: guia == null
+          ? const Center(child: CircularProgressIndicator())
+          : SingleChildScrollView(
+              padding: const EdgeInsets.all(AppTheme.spaceLg),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    _subtitulo.resolve(_language),
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: AppTheme.textSecondary,
+                      height: 1.4,
                     ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      side: BorderSide(
-                        color: isSelected ? AppTheme.primary : AppTheme.border,
-                      ),
+                  ),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  _Kicker(_edadKicker.resolve(_language)),
+                  const SizedBox(height: AppTheme.spaceSm),
+                  _SelectorTramos(
+                    tramos: guia.tramos,
+                    lang: _language,
+                    seleccionado: _tramoSeleccionado,
+                    onSeleccionar: (i) =>
+                        setState(() => _tramoSeleccionado = i),
+                  ),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  _TarjetaTramo(
+                    tramo: guia.tramos[
+                        _tramoSeleccionado.clamp(0, guia.tramos.length - 1)],
+                    lang: _language,
+                    audioService: widget.audioService,
+                    tiempoSugerido: _tiempoSugerido.resolve(_language),
+                    minutos: _minutos.resolve(_language),
+                    momento: _momento.resolve(_language),
+                    queFacer: _queFacer.resolve(_language),
+                    queEvitar: _queEvitar.resolve(_language),
+                    comoSeDi: _comoSeDi.resolve(_language),
+                  ),
+                  const SizedBox(height: AppTheme.spaceSm),
+                  Text(
+                    _aviso.resolve(_language),
+                    style: theme.textTheme.bodySmall
+                        ?.copyWith(color: AppTheme.textMuted),
+                  ),
+                  const SizedBox(height: AppTheme.spaceXl),
+                  _Kicker(_reglasKicker.resolve(_language)),
+                  const SizedBox(height: AppTheme.spaceSm),
+                  ...guia.reglas.map(
+                    (r) => Padding(
+                      padding: const EdgeInsets.only(bottom: AppTheme.spaceSm),
+                      child: _TarjetaRegla(regla: r, lang: _language),
                     ),
-                  );
-                },
+                  ),
+                  const SizedBox(height: AppTheme.spaceXl),
+                ],
               ),
             ),
-            const SizedBox(height: AppTheme.spaceLg),
-
-            // Tarjeta del tramo seleccionado
-            _buildTramoDetailCard(tramo, theme),
-            const SizedBox(height: AppTheme.spaceXl),
-
-            // Tres reglas de oro
-            Text(
-              _principiosKicker.resolve(_language),
-              style: theme.textTheme.labelSmall?.copyWith(
-                color: AppTheme.primaryDark,
-                fontWeight: FontWeight.w800,
-                letterSpacing: 1.0,
-              ),
-            ),
-            const SizedBox(height: AppTheme.spaceSm),
-            _buildPrincipioCard(
-              title: _regla1Titulo.resolve(_language),
-              text: _regla1Texto.resolve(_language),
-              icon: Icons.psychology_rounded,
-              theme: theme,
-            ),
-            const SizedBox(height: AppTheme.spaceSm),
-            _buildPrincipioCard(
-              title: _regla2Titulo.resolve(_language),
-              text: _regla2Texto.resolve(_language),
-              icon: Icons.volume_off_rounded,
-              theme: theme,
-            ),
-            const SizedBox(height: AppTheme.spaceSm),
-            _buildPrincipioCard(
-              title: _regla3Titulo.resolve(_language),
-              text: _regla3Texto.resolve(_language),
-              icon: Icons.phonelink_erase_rounded,
-              theme: theme,
-            ),
-            const SizedBox(height: AppTheme.spaceXl),
-          ],
-        ),
-      ),
     );
   }
+}
 
-  Widget _buildTramoDetailCard(TramoAtencion tramo, ThemeData theme) {
+class _Kicker extends StatelessWidget {
+  final String texto;
+
+  const _Kicker(this.texto);
+
+  @override
+  Widget build(BuildContext context) => Text(
+        texto,
+        style: Theme.of(context).textTheme.labelSmall?.copyWith(
+              color: AppTheme.primaryDark,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 1.0,
+            ),
+      );
+}
+
+class _SelectorTramos extends StatelessWidget {
+  final List<TramoAtencion> tramos;
+  final AppLanguage lang;
+  final int seleccionado;
+  final ValueChanged<int> onSeleccionar;
+
+  const _SelectorTramos({
+    required this.tramos,
+    required this.lang,
+    required this.seleccionado,
+    required this.onSeleccionar,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    // Wrap y no una fila con altura fija: a escala de texto grande las etiquetas
+    // caen a la línea siguiente en vez de cortarse.
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: [
+        for (var i = 0; i < tramos.length; i++)
+          ChoiceChip(
+            label: Text(tramos[i].rangoEdad.resolve(lang)),
+            selected: i == seleccionado,
+            onSelected: (val) {
+              if (val) onSeleccionar(i);
+            },
+            selectedColor: AppTheme.primary,
+            backgroundColor: Colors.white,
+            labelStyle: TextStyle(
+              color: i == seleccionado ? Colors.white : AppTheme.textPrimary,
+              fontWeight:
+                  i == seleccionado ? FontWeight.bold : FontWeight.normal,
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+              side: BorderSide(
+                color: i == seleccionado ? AppTheme.primary : AppTheme.border,
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+class _TarjetaTramo extends StatelessWidget {
+  final TramoAtencion tramo;
+  final AppLanguage lang;
+  final OfflineAudioService? audioService;
+  final String tiempoSugerido;
+  final String minutos;
+  final String momento;
+  final String queFacer;
+  final String queEvitar;
+  final String comoSeDi;
+
+  const _TarjetaTramo({
+    required this.tramo,
+    required this.lang,
+    required this.audioService,
+    required this.tiempoSugerido,
+    required this.minutos,
+    required this.momento,
+    required this.queFacer,
+    required this.queEvitar,
+    required this.comoSeDi,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Card(
       color: Colors.white,
       shape: RoundedRectangleBorder(
@@ -349,11 +306,13 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CircleAvatar(
                   backgroundColor: AppTheme.primaryLight,
                   radius: 22,
-                  child: Icon(tramo.icono, color: AppTheme.primaryDark, size: 24),
+                  child: Icon(iconoDeContenido(tramo.icono),
+                      color: AppTheme.primaryDark, size: 24),
                 ),
                 const SizedBox(width: AppTheme.spaceMd),
                 Expanded(
@@ -361,16 +320,16 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        tramo.rangoEdad.resolve(_language),
+                        tramo.rangoEdad.resolve(lang),
                         style: theme.textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                           color: AppTheme.textPrimary,
                         ),
                       ),
+                      // «Alrededor de 3 min», no «3 min máximo»: un tope suena
+                      // a norma, y esto es una sugerencia de juego.
                       Text(
-                        _language == AppLanguage.gl
-                            ? 'Atención sostida: ata ${tramo.minutosMaximos} minutos'
-                            : 'Atención sostenida: hasta ${tramo.minutosMaximos} minutos',
+                        '$tiempoSugerido ${tramo.minutosSugeridos} $minutos',
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: AppTheme.primaryDark,
                           fontWeight: FontWeight.bold,
@@ -379,91 +338,72 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
                     ],
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFFFF9E6),
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: AppTheme.star),
-                  ),
-                  child: Text(
-                    '${tramo.minutosMaximos} min máx',
-                    style: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFFB45309),
-                    ),
-                  ),
-                ),
               ],
             ),
             const Divider(height: 28),
-
-            _buildDetailRow(
-              label: _language == AppLanguage.gl ? 'Momento da casa:' : 'Momento en casa:',
-              content: tramo.momentoDomestico.resolve(_language),
-              icon: Icons.alarm_on_rounded,
-              theme: theme,
+            _Fila(
+              label: momento,
+              contenido: tramo.momentoDomestico.resolve(lang),
+              icono: Icons.alarm_on_rounded,
             ),
             const SizedBox(height: 12),
-            _buildDetailRow(
-              label: _language == AppLanguage.gl ? 'Que facer (TPR):' : 'Qué hacer (TPR):',
-              content: tramo.queFacer.resolve(_language),
-              icon: Icons.check_circle_outline_rounded,
-              iconColor: AppTheme.success,
-              theme: theme,
+            _Fila(
+              label: queFacer,
+              contenido: tramo.queFacer.resolve(lang),
+              icono: Icons.check_circle_outline_rounded,
+              colorIcono: AppTheme.success,
             ),
             const SizedBox(height: 12),
-            _buildDetailRow(
-              label: _language == AppLanguage.gl ? 'Que evitar:' : 'Qué evitar:',
-              content: tramo.queEvitar.resolve(_language),
-              icon: Icons.highlight_off_rounded,
-              iconColor: AppTheme.error,
-              theme: theme,
+            _Fila(
+              label: queEvitar,
+              contenido: tramo.queEvitar.resolve(lang),
+              icono: Icons.highlight_off_rounded,
+              colorIcono: AppTheme.error,
             ),
-            const SizedBox(height: 16),
-
-            // Frase de ejemplo
-            Container(
-              padding: const EdgeInsets.all(AppTheme.spaceMd),
-              decoration: BoxDecoration(
-                color: AppTheme.primaryLight,
-                borderRadius: BorderRadius.circular(AppTheme.radiusField),
+            if (tramo.fraseIngles.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              Text(
+                comoSeDi,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: AppTheme.textSecondary,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-              child: Row(
-                children: [
-                  const Icon(Icons.record_voice_over_rounded, color: AppTheme.primaryDark),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(
-                      tramo.exemploFraseIngles.resolve(_language),
-                      style: const TextStyle(
-                        color: AppTheme.primaryDark,
-                        fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
-                  ),
-                ],
+              const SizedBox(height: 8),
+              BotonEscuchar(
+                audioService: audioService,
+                texto: tramo.fraseIngles,
+                language: AppLanguage.en,
+                comoChip: true,
               ),
-            ),
+            ],
           ],
         ),
       ),
     );
   }
+}
 
-  Widget _buildDetailRow({
-    required String label,
-    required String content,
-    required IconData icon,
-    Color iconColor = AppTheme.primaryDark,
-    required ThemeData theme,
-  }) {
+class _Fila extends StatelessWidget {
+  final String label;
+  final String contenido;
+  final IconData icono;
+  final Color colorIcono;
+
+  const _Fila({
+    required this.label,
+    required this.contenido,
+    required this.icono,
+    this.colorIcono = AppTheme.primaryDark,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Icon(icon, size: 18, color: iconColor),
+        Icon(icono, size: 18, color: colorIcono),
         const SizedBox(width: 8),
         Expanded(
           child: RichText(
@@ -477,7 +417,7 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
                   text: '$label ',
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
-                TextSpan(text: content),
+                TextSpan(text: contenido),
               ],
             ),
           ),
@@ -485,13 +425,17 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
       ],
     );
   }
+}
 
-  Widget _buildPrincipioCard({
-    required String title,
-    required String text,
-    required IconData icon,
-    required ThemeData theme,
-  }) {
+class _TarjetaRegla extends StatelessWidget {
+  final ReglaCasa regla;
+  final AppLanguage lang;
+
+  const _TarjetaRegla({required this.regla, required this.lang});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Card(
       color: Colors.white,
       shape: RoundedRectangleBorder(
@@ -507,7 +451,8 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
             CircleAvatar(
               backgroundColor: AppTheme.pageBg,
               radius: 18,
-              child: Icon(icon, size: 20, color: AppTheme.primaryDark),
+              child: Icon(iconoDeContenido(regla.icono),
+                  size: 20, color: AppTheme.primaryDark),
             ),
             const SizedBox(width: AppTheme.spaceMd),
             Expanded(
@@ -515,7 +460,7 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    title,
+                    regla.titulo.resolve(lang),
                     style: theme.textTheme.titleSmall?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: AppTheme.textPrimary,
@@ -523,7 +468,7 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    text,
+                    regla.texto.resolve(lang),
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: AppTheme.textSecondary,
                       height: 1.35,

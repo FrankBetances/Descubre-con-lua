@@ -164,21 +164,22 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                     repository: widget.premios!,
                     perfil: Perfil.familia,
                     language: lang,
+                    contadores: widget.calendario?.contadores,
                   ),
                   const SizedBox(height: AppTheme.spaceXl),
                 ],
                 // Acceso destacado a la Guía de Atención y al Calendario
                 AcademyCard(
-                  icono: Icons.psychology_outlined,
+                  icono: Icons.record_voice_over_outlined,
                   kicker: lang == AppLanguage.gl
-                      ? 'NEURODESENVOLVEMENTO E LINGUAS'
-                      : 'NEURODESARROLLO Y LENGUAS',
+                      ? 'O INGLÉS NA CASA'
+                      : 'EL INGLÉS EN CASA',
                   titulo: lang == AppLanguage.gl
-                      ? 'Como aprende o cerebro inglés na casa'
-                      : 'Cómo aprende el cerebro inglés en casa',
+                      ? 'Guía de inglés na casa'
+                      : 'Guía de inglés en casa',
                   descripcion: lang == AppLanguage.gl
-                      ? 'Capacidade de atención por idades (0-3 anos), período de silencio e micro-rutinas sen pantallas.'
-                      : 'Capacidad de atención por edades (0-3 años), período de silencio y micro-rutinas sin pantallas.',
+                      ? 'Canto dura o xogo segundo a idade, tres regras para a casa e a pronuncia de cada frase.'
+                      : 'Cuánto dura el juego según la edad, tres reglas para casa y la pronunciación de cada frase.',
                   meta: lang == AppLanguage.gl
                       ? 'Guía interactiva'
                       : 'Guía interactiva',
@@ -187,6 +188,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                       builder: (context) => GuiaAtencionScreen(
                         initialLanguage: _language,
                         onLanguageChanged: _onToggleLanguage,
+                        audioService: widget.audioService,
                       ),
                     ),
                   ),
@@ -201,8 +203,8 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                       ? 'Calendario Escola · Fogar'
                       : 'Calendario Escuela · Hogar',
                   descripcion: lang == AppLanguage.gl
-                      ? '10 meses de conexión coa aula: revisa a asemblea matinal e rexistra o xogo de 3 min na casa.'
-                      : '10 meses de conexión con el aula: revisa la asamblea matinal y registra el juego de 3 min en casa.',
+                      ? '10 meses de conexión coa escola: mira o que traballaron pola mañá e rexistra o xogo de 3 min na casa.'
+                      : '10 meses de conexión con la escuela: mira lo que trabajaron por la mañana y registra el juego de 3 min en casa.',
                   meta: lang == AppLanguage.gl
                       ? 'Dobre estimulación'
                       : 'Doble estimulación',

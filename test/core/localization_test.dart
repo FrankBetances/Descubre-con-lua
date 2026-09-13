@@ -13,16 +13,26 @@ void main() {
       expect(AppLanguage.es.displayName, equals('Castellano'));
       expect(AppLanguage.es.flagLabel, equals('ES'));
 
+      // `en` existe solo para etiquetar las grabaciones en inglés.
       expect(AppLanguage.en.code, equals('en'));
       expect(AppLanguage.en.displayName, equals('English'));
       expect(AppLanguage.en.flagLabel, equals('EN'));
     });
 
+    test('solo el galego y el castellano son lenguas de interfaz', () {
+      expect(AppLanguage.deInterfaz, equals([AppLanguage.gl, AppLanguage.es]));
+      expect(AppLanguage.gl.esDeInterfaz, isTrue);
+      expect(AppLanguage.es.esDeInterfaz, isTrue);
+      expect(AppLanguage.en.esDeInterfaz, isFalse,
+          reason: 'Ninguna pantalla se lee en inglés: el inglés se escucha.');
+    });
+
     test('fromCode resolves properly with fallback to gl', () {
       expect(AppLanguage.fromCode('es'), equals(AppLanguage.es));
       expect(AppLanguage.fromCode('es-ES'), equals(AppLanguage.es));
-      expect(AppLanguage.fromCode('en'), equals(AppLanguage.en));
-      expect(AppLanguage.fromCode('en-US'), equals(AppLanguage.en));
+      // Un aparato en inglés abre la app en galego: no hay interfaz inglesa.
+      expect(AppLanguage.fromCode('en'), equals(AppLanguage.gl));
+      expect(AppLanguage.fromCode('en-US'), equals(AppLanguage.gl));
       expect(AppLanguage.fromCode('gl'), equals(AppLanguage.gl));
       expect(AppLanguage.fromCode('gl-ES'), equals(AppLanguage.gl));
       expect(AppLanguage.fromCode(null), equals(AppLanguage.gl));
@@ -45,17 +55,11 @@ void main() {
     test('resolve returns correct variant for each language', () {
       expect(text.resolve(AppLanguage.gl), equals('O mar de Vigo'));
       expect(text.resolve(AppLanguage.es), equals('El mar de Vigo'));
-      // Fallback a castellano cuando no hay variante específica en inglés
+      // `en` NO es lengua de interfaz: no hay textos de pantalla en inglés,
+      // así que resolver con ella devuelve el castellano en vez de romper.
+      // El inglés de la app es contenido que se ESCUCHA, no interfaz que se
+      // lee, y por eso LocalizedString sigue teniendo dos campos y no tres.
       expect(text.resolve(AppLanguage.en), equals('El mar de Vigo'));
-
-      const trilingual = LocalizedString(
-        gl: 'Benvida',
-        es: 'Bienvenida',
-        en: 'Welcome',
-      );
-      expect(trilingual.resolve(AppLanguage.gl), equals('Benvida'));
-      expect(trilingual.resolve(AppLanguage.es), equals('Bienvenida'));
-      expect(trilingual.resolve(AppLanguage.en), equals('Welcome'));
     });
 
     test('hasParity returns true when both variants are non-blank', () {

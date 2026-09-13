@@ -69,7 +69,7 @@ void main() {
         ],
       );
 
-  for (final lang in AppLanguage.values) {
+  for (final lang in AppLanguage.deInterfaz) {
     testWidgets('el lector cabe con la escala de texto grande en ${lang.code}',
         (tester) async {
       tester.view.physicalSize = const Size(360, 640);

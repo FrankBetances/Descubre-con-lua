@@ -121,7 +121,7 @@ void main() {
     expect(nota, findsOneWidget);
   });
 
-  for (final lang in AppLanguage.values) {
+  for (final lang in AppLanguage.deInterfaz) {
     testWidgets('cabe con la escala de texto grande en ${lang.code}',
         (tester) async {
       tester.view.physicalSize = const Size(360, 640);

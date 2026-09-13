@@ -35,7 +35,7 @@ void main() {
     return painter.width;
   }
 
-  for (final lang in AppLanguage.values) {
+  for (final lang in AppLanguage.deInterfaz) {
     for (final escala in [1.0, 1.3]) {
       testWidgets(
           'ninguna etiqueta del filtro se recorta en ${lang.code} '

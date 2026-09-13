@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "id": "calendario.atencion.01",
+  "nota": "Guía de la familia para el inglés en casa. Contenido, no código. Los minutos son un TIEMPO DE JUEGO SUGERIDO, escrito en lenguaje de crianza: no son un valor normativo de desarrollo ni una medida de nada, y la app no evalúa a ninguna criatura. Las frases de `fraseIngles` tienen grabación en assets/voice/, igual que el léxico de meses.json.",
+  "reglas": [
+    {
+      "id": "linguas",
+      "icono": "voz",
+      "titulo": {
+        "gl": "1. Unha lingua, unha rutina",
+        "es": "1. Una lengua, una rutina"
+      },
+      "texto": {
+        "gl": "Non hai que escoller entre galego, castelán e inglés. O máis doado na casa é asociar cada lingua a momentos e persoas estables: o inglés entra nun momento concreto do día, sempre o mesmo, e o resto do día segue igual que sempre.",
+        "es": "No hay que elegir entre gallego, castellano e inglés. Lo más fácil en casa es asociar cada lengua a momentos y personas estables: el inglés entra en un momento concreto del día, siempre el mismo, y el resto del día sigue igual que siempre."
+      }
+    },
+    {
+      "id": "silencio",
+      "icono": "silencio",
+      "titulo": {
+        "gl": "2. Entender vén moito antes que falar",
+        "es": "2. Entender viene mucho antes que hablar"
+      },
+      "texto": {
+        "gl": "Responder co corpo —levantar as mans, parar, sinalar— xa é entender. Non fai falta que repita nin que conteste. Evita examinalo con «¿Cómo se dice?»: o xogo remata no momento en que se converte nunha proba.",
+        "es": "Responder con el cuerpo —levantar las manos, pararse, señalar— ya es entender. No hace falta que repita ni que conteste. Evita examinarlo con «¿Cómo se dice?»: el juego se acaba en el momento en que se convierte en una prueba."
+      }
+    },
+    {
+      "id": "sen_pantallas",
+      "icono": "sen_pantallas",
+      "titulo": {
+        "gl": "3. A app é para ti, non para a crianza",
+        "es": "3. La app es para ti, no para la criatura"
+      },
+      "texto": {
+        "gl": "Escoita aquí a pronuncia antes de xogar. Cando xogues con ela, garda o móbil no peto: a lingua apréndese na mirada, na voz e no contacto, non nunha pantalla.",
+        "es": "Escucha aquí la pronunciación antes de jugar. Cuando juegues con ella, guarda el móvil en el bolsillo: la lengua se aprende en la mirada, la voz y el contacto, no en una pantalla."
+      }
+    }
+  ],
+  "tramos": [
+    {
+      "id": "0_6",
+      "icono": "bebe",
+      "rangoEdad": { "gl": "0 a 6 meses", "es": "0 a 6 meses" },
+      "minutosSugeridos": 2,
+      "momentoDomestico": {
+        "gl": "Masaxe suave tras o baño ou no cambio de cueiro.",
+        "es": "Masaje suave tras el baño o en el cambio de pañal."
+      },
+      "queFacer": {
+        "gl": "Contacto visual directo, entoación cantareira e caricias acompañando cada palabra.",
+        "es": "Contacto visual directo, entonación cantarina y caricias acompañando cada palabra."
+      },
+      "queEvitar": {
+        "gl": "Luces estridentes, pantallas ou sons fortes.",
+        "es": "Luces estridentes, pantallas o sonidos fuertes."
+      },
+      "fraseIngles": "Gentle touch. Soft tummy, warm and sweet!"
+    },
+    {
+      "id": "6_12",
+      "icono": "mirada",
+      "rangoEdad": { "gl": "6 a 12 meses", "es": "6 a 12 meses" },
+      "minutosSugeridos": 3,
+      "momentoDomestico": {
+        "gl": "Xogo de agocho na alfombra (peek-a-boo).",
+        "es": "Juego de escondite en la alfombra (peek-a-boo)."
+      },
+      "queFacer": {
+        "gl": "Agochar a cara tras un pano suave e reaparecer sorrindo.",
+        "es": "Esconder la cara tras un pañuelo suave y reaparecer sonriendo."
+      },
+      "queEvitar": {
+        "gl": "Alongar o xogo cando xa aparta a mirada ou se poñe rabuxenta.",
+        "es": "Alargar el juego cuando ya aparta la mirada o se pone irritable."
+      },
+      "fraseIngles": "Peek-a-boo! I see you! Happy baby, smile!"
+    },
+    {
+      "id": "12_18",
+      "icono": "camina",
+      "rangoEdad": { "gl": "12 a 18 meses", "es": "12 a 18 meses" },
+      "minutosSugeridos": 5,
+      "momentoDomestico": {
+        "gl": "Ao calzar os zapatos ou mudar a roupa pola mañá.",
+        "es": "Al calzar los zapatos o cambiar la ropa por la mañana."
+      },
+      "queFacer": {
+        "gl": "Mover as extremidades acompañando a palabra: subir mans en \"Up\" e pés en \"Push!\".",
+        "es": "Mover las extremidades acompañando la palabra: subir manos en \"Up\" y pies en \"Push!\"."
+      },
+      "queEvitar": {
+        "gl": "Interrogala para que repita a palabra.",
+        "es": "Interrogarla para que repita la palabra."
+      },
+      "fraseIngles": "One foot, two feet. Push, push! Hands up! All done!"
+    },
+    {
+      "id": "18_24",
+      "icono": "auga",
+      "rangoEdad": { "gl": "18 a 24 meses", "es": "18 a 24 meses" },
+      "minutosSugeridos": 6,
+      "momentoDomestico": {
+        "gl": "No lavabo, ao lavar as mans ou no baño.",
+        "es": "En el lavabo, al lavarse las manos o en el baño."
+      },
+      "queFacer": {
+        "gl": "Contraste sensorial: sentir a auga tépeda (\"Warm\") e fría (\"Cold, brrr!\").",
+        "es": "Contraste sensorial: sentir el agua templada (\"Warm\") y fría (\"Cold, brrr!\")."
+      },
+      "queEvitar": {
+        "gl": "Corrixila se mestura as linguas. Basta con devolverlle a frase ben dita, sen sinalar o erro.",
+        "es": "Corregirla si mezcla las lenguas. Basta con devolverle la frase bien dicha, sin señalar el error."
+      },
+      "fraseIngles": "Warm and cold. Brrr! Wash, wash, clean hands!"
+    },
+    {
+      "id": "24_36",
+      "icono": "movemento",
+      "rangoEdad": { "gl": "24 a 36 meses", "es": "24 a 36 meses" },
+      "minutosSugeridos": 8,
+      "momentoDomestico": {
+        "gl": "Xogo de desprazamento na alfombra do salón.",
+        "es": "Juego de desplazamiento en la alfombra del salón."
+      },
+      "queFacer": {
+        "gl": "Imitar animais (saltar como ras, voar como paxaros) e parar en seco en \"Freeze!\".",
+        "es": "Imitar animales (saltar como ranas, volar como pájaros) y parar en seco en \"Freeze!\"."
+      },
+      "queEvitar": {
+        "gl": "Sesións sentadas de fichas ou traballo escolarizado.",
+        "es": "Sesiones sentadas de fichas o trabajo escolarizado."
+      },
+      "fraseIngles": "Jump like a frog! Fly like a bird. Freeze!"
+    }
+  ]
+}

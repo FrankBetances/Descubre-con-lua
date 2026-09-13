@@ -38,6 +38,15 @@ class BotonEscuchar extends StatefulWidget {
   /// Con etiqueta («Escoitar») o solo el altavoz redondo.
   final bool compacto;
 
+  /// Se pinta como una pastilla con el PROPIO texto dentro y un altavoz
+  /// delante. Es lo que usan las palabras y las órdenes en inglés: la persona
+  /// adulta ve lo que va a decir y lo oye en el mismo gesto. Manda sobre
+  /// [compacto].
+  final bool comoChip;
+
+  /// Color de la pastilla cuando [comoChip]. Por defecto, el de la app.
+  final Color? colorChip;
+
   /// Qué se está escuchando. Va al lector de pantalla, no a la vista.
   final String? descripcion;
 
@@ -48,6 +57,8 @@ class BotonEscuchar extends StatefulWidget {
     required this.language,
     this.style = VoiceStyle.tutor,
     this.compacto = false,
+    this.comoChip = false,
+    this.colorChip,
     this.descripcion,
   });
 
@@ -139,15 +150,87 @@ class _BotonEscucharState extends State<BotonEscuchar> {
     }
   }
 
+  /// La pastilla sin altavoz: el texto en inglés se lee igual, pero no se
+  /// puede pulsar. Es lo que se ve mientras una grabación todavía no existe.
+  ///
+  /// Una palabra del léxico es CONTENIDO; el altavoz es el añadido. Esconder la
+  /// palabra entera por no tener todavía su grabación dejaba el apartado
+  /// «Léxico e comandos TPR en inglés» con el rótulo puesto y nada debajo.
+  Widget _chipMudo(BuildContext context) {
+    final color = widget.colorChip ?? AppTheme.primaryInk;
+    return Container(
+      constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      decoration: BoxDecoration(
+        color: color.withAlpha(12),
+        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+        border: Border.all(color: color.withAlpha(50)),
+      ),
+      child: Text(
+        widget.texto,
+        style: TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.w700,
+          color: color.withAlpha(170),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     if (widget.audioService == null || _disponible != true) {
-      return const SizedBox.shrink();
+      // En modo pastilla se queda el texto, sin altavoz. En los demás modos el
+      // botón desaparece entero: un altavoz suelto que no suena no aporta nada.
+      return widget.comoChip ? _chipMudo(context) : const SizedBox.shrink();
     }
 
     final etiqueta = (_sonando ? BotonEscuchar._parar : BotonEscuchar._escuchar)
         .resolve(widget.language);
     final icono = _sonando ? Icons.stop_rounded : Icons.volume_up_rounded;
+
+    if (widget.comoChip) {
+      final color = widget.colorChip ?? AppTheme.primaryInk;
+      return Semantics(
+        button: true,
+        label: '$etiqueta: ${widget.descripcion ?? widget.texto}',
+        child: Material(
+          color: _sonando ? color : color.withAlpha(20),
+          borderRadius: BorderRadius.circular(AppTheme.radiusField),
+          child: InkWell(
+            onTap: _pulsar,
+            borderRadius: BorderRadius.circular(AppTheme.radiusField),
+            child: Container(
+              constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                border: Border.all(color: color.withAlpha(90)),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(icono, size: 18, color: _sonando ? Colors.white : color),
+                  const SizedBox(width: 6),
+                  // El texto en inglés NO se recorta: si no cabe entero, se
+                  // parte en dos líneas. Una orden a medias no se puede decir.
+                  Flexible(
+                    child: Text(
+                      widget.texto,
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: _sonando ? Colors.white : color,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+    }
 
     if (widget.compacto) {
       return Semantics(

@@ -1,19 +1,16 @@
 import 'app_language.dart';
 
-/// Strongly typed immutable representation of multilingual text (`gl` / `es`, with optional `en`).
+/// Strongly typed immutable representation of bilingual text (`gl` / `es`).
 ///
 /// Ensures 1:1 linguistic parity between Galician and Spanish throughout
-/// all pedagogical units and Academy capsules, while allowing English variants
-/// for the L3 TPR curriculum and shared components.
+/// all pedagogical units and Academy capsules.
 class LocalizedString {
   final String gl;
   final String es;
-  final String? en;
 
   const LocalizedString({
     required this.gl,
     required this.es,
-    this.en,
   });
 
   /// Factory constructor to parse JSON maps into [LocalizedString].
@@ -21,23 +18,16 @@ class LocalizedString {
     return LocalizedString(
       gl: json['gl'] as String? ?? '',
       es: json['es'] as String? ?? '',
-      en: json['en'] as String?,
     );
   }
 
   /// Resolves the string based on the active [AppLanguage].
-  String resolve(AppLanguage lang) {
-    if (lang == AppLanguage.en && en != null && en!.isNotEmpty) {
-      return en!;
-    }
-    return lang == AppLanguage.gl ? gl : es;
-  }
+  String resolve(AppLanguage lang) => lang == AppLanguage.gl ? gl : es;
 
   /// Serializes to JSON map.
   Map<String, String> toJson() => {
         'gl': gl,
         'es': es,
-        if (en != null) 'en': en!,
       };
 
   /// Returns true if both language variants are non-empty and non-blank.
@@ -47,12 +37,10 @@ class LocalizedString {
   LocalizedString copyWith({
     String? gl,
     String? es,
-    String? en,
   }) {
     return LocalizedString(
       gl: gl ?? this.gl,
       es: es ?? this.es,
-      en: en ?? this.en,
     );
   }
 
@@ -62,13 +50,11 @@ class LocalizedString {
       other is LocalizedString &&
           runtimeType == other.runtimeType &&
           gl == other.gl &&
-          es == other.es &&
-          en == other.en;
+          es == other.es;
 
   @override
-  int get hashCode => Object.hash(gl, es, en);
+  int get hashCode => Object.hash(gl, es);
 
   @override
-  String toString() =>
-      'LocalizedString(gl: "$gl", es: "$es"${en != null ? ', en: "$en"' : ''})';
+  String toString() => 'LocalizedString(gl: "$gl", es: "$es")';
 }

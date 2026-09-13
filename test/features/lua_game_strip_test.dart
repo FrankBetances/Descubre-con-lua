@@ -74,7 +74,7 @@ void main() {
       );
 
   group('La tira cabe', () {
-    for (final lang in AppLanguage.values) {
+    for (final lang in AppLanguage.deInterfaz) {
       for (final escala in [1.0, 1.8]) {
         testWidgets('en ${lang.code} a escala $escala, con el peor texto',
             (tester) async {
