@@ -49,6 +49,10 @@ run_gate "flutter test" flutter test --exclude-tags capturas
 
 # ------------------------------------------------------------- content gates
 run_gate "contact address" python3 tools/check_contact_email.py
+# Nace del Calendario, que llegó al aparato como un disco girando para siempre
+# porque `assets/content/calendario/` no estaba en pubspec.yaml. Un asset que
+# falta no rompe la compilación: rompe una pantalla, en silencio.
+run_gate "every asset asked for exists and is packaged" python3 tools/check_bundled_assets.py
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py

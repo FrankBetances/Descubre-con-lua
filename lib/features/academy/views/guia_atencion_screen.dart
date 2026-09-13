@@ -6,6 +6,7 @@ import '../../../core/brand/iconos_contenido.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../widgets/selector_idioma_widget.dart';
@@ -41,6 +42,9 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
   late AppLanguage _language;
   int _tramoSeleccionado = 0;
   GuiaAtencion? _guia;
+
+  /// Lo que impidió leer la guía, si pasó.
+  String? _fallo;
 
   static const _titulo = LocalizedString(
     gl: 'Guía de inglés na casa',
@@ -109,6 +113,11 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
       CalendarioContenido.cargar().then((c) {
         if (!mounted) return;
         setState(() => _guia = c.guia);
+        // Mismo fallo que el Calendario: sin catchError, el disco giraba para
+        // siempre en vez de decir que el fichero no estaba en el paquete.
+      }).catchError((Object e) {
+        if (!mounted) return;
+        setState(() => _fallo = '${CalendarioContenido.atencionAsset} · $e');
       });
     }
   }
@@ -122,6 +131,7 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final guia = _guia;
+    final fallo = _fallo;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -144,62 +154,65 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
           ),
         ],
       ),
-      body: guia == null
-          ? const Center(child: CircularProgressIndicator())
-          : SingleChildScrollView(
-              padding: const EdgeInsets.all(AppTheme.spaceLg),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Text(
-                    _subtitulo.resolve(_language),
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      color: AppTheme.textSecondary,
-                      height: 1.4,
-                    ),
+      body: fallo != null
+          ? AvisoContenidoIlegible(asset: fallo, language: _language)
+          : guia == null
+              ? const Center(child: CircularProgressIndicator())
+              : SingleChildScrollView(
+                  padding: const EdgeInsets.all(AppTheme.spaceLg),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        _subtitulo.resolve(_language),
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: AppTheme.textSecondary,
+                          height: 1.4,
+                        ),
+                      ),
+                      const SizedBox(height: AppTheme.spaceLg),
+                      _Kicker(_edadKicker.resolve(_language)),
+                      const SizedBox(height: AppTheme.spaceSm),
+                      _SelectorTramos(
+                        tramos: guia.tramos,
+                        lang: _language,
+                        seleccionado: _tramoSeleccionado,
+                        onSeleccionar: (i) =>
+                            setState(() => _tramoSeleccionado = i),
+                      ),
+                      const SizedBox(height: AppTheme.spaceLg),
+                      _TarjetaTramo(
+                        tramo: guia.tramos[_tramoSeleccionado.clamp(
+                            0, guia.tramos.length - 1)],
+                        lang: _language,
+                        audioService: widget.audioService,
+                        tiempoSugerido: _tiempoSugerido.resolve(_language),
+                        minutos: _minutos.resolve(_language),
+                        momento: _momento.resolve(_language),
+                        queFacer: _queFacer.resolve(_language),
+                        queEvitar: _queEvitar.resolve(_language),
+                        comoSeDi: _comoSeDi.resolve(_language),
+                      ),
+                      const SizedBox(height: AppTheme.spaceSm),
+                      Text(
+                        _aviso.resolve(_language),
+                        style: theme.textTheme.bodySmall
+                            ?.copyWith(color: AppTheme.textMuted),
+                      ),
+                      const SizedBox(height: AppTheme.spaceXl),
+                      _Kicker(_reglasKicker.resolve(_language)),
+                      const SizedBox(height: AppTheme.spaceSm),
+                      ...guia.reglas.map(
+                        (r) => Padding(
+                          padding:
+                              const EdgeInsets.only(bottom: AppTheme.spaceSm),
+                          child: _TarjetaRegla(regla: r, lang: _language),
+                        ),
+                      ),
+                      const SizedBox(height: AppTheme.spaceXl),
+                    ],
                   ),
-                  const SizedBox(height: AppTheme.spaceLg),
-                  _Kicker(_edadKicker.resolve(_language)),
-                  const SizedBox(height: AppTheme.spaceSm),
-                  _SelectorTramos(
-                    tramos: guia.tramos,
-                    lang: _language,
-                    seleccionado: _tramoSeleccionado,
-                    onSeleccionar: (i) =>
-                        setState(() => _tramoSeleccionado = i),
-                  ),
-                  const SizedBox(height: AppTheme.spaceLg),
-                  _TarjetaTramo(
-                    tramo: guia.tramos[
-                        _tramoSeleccionado.clamp(0, guia.tramos.length - 1)],
-                    lang: _language,
-                    audioService: widget.audioService,
-                    tiempoSugerido: _tiempoSugerido.resolve(_language),
-                    minutos: _minutos.resolve(_language),
-                    momento: _momento.resolve(_language),
-                    queFacer: _queFacer.resolve(_language),
-                    queEvitar: _queEvitar.resolve(_language),
-                    comoSeDi: _comoSeDi.resolve(_language),
-                  ),
-                  const SizedBox(height: AppTheme.spaceSm),
-                  Text(
-                    _aviso.resolve(_language),
-                    style: theme.textTheme.bodySmall
-                        ?.copyWith(color: AppTheme.textMuted),
-                  ),
-                  const SizedBox(height: AppTheme.spaceXl),
-                  _Kicker(_reglasKicker.resolve(_language)),
-                  const SizedBox(height: AppTheme.spaceSm),
-                  ...guia.reglas.map(
-                    (r) => Padding(
-                      padding: const EdgeInsets.only(bottom: AppTheme.spaceSm),
-                      child: _TarjetaRegla(regla: r, lang: _language),
-                    ),
-                  ),
-                  const SizedBox(height: AppTheme.spaceXl),
-                ],
-              ),
-            ),
+                ),
     );
   }
 }
