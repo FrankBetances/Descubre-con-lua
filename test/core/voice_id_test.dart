@@ -72,5 +72,19 @@ void main() {
       expect(path, endsWith('.m4a'));
       expect(path, isNot(contains('://')));
     });
+
+    test('English voice identifiers and paths support LJSpeech offline assets',
+        () {
+      const word = 'Hello';
+      final slowId = englishVoiceAssetId(VoiceStyle.slow, word);
+      final tutorId = englishVoiceAssetId(VoiceStyle.tutor, word);
+      final path = englishVoiceAssetPath(VoiceStyle.slow, word);
+
+      expect(slowId, startsWith('en_slow_'));
+      expect(tutorId, startsWith('en_tutor_'));
+      expect(path, equals('assets/voice/$slowId.m4a'));
+      expect(
+          voiceAssetId(VoiceStyle.slow, word, AppLanguage.en), equals(slowId));
+    });
   });
 }

@@ -1,15 +1,856 @@
 {
- "generatedAt": "2026-09-12T14:49:25Z",
- "entries": 246,
+ "generatedAt": "2026-09-13T11:10:24Z",
+ "entries": 351,
  "byStyle": {
-  "slow": 10,
-  "tutor": 236
+  "slow": 70,
+  "tutor": 281
  },
  "byLang": {
+  "en": 105,
   "es": 123,
   "gl": 123
  },
  "corpus": [
+  {
+   "id": "en_slow_00cb28d2_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bird",
+   "speech": "Bird",
+   "source": "calendario/mes/6/ingles/lexico"
+  },
+  {
+   "id": "en_slow_02b8b9cf_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Brown",
+   "speech": "Brown",
+   "source": "calendario/mes/3/ingles/lexico"
+  },
+  {
+   "id": "en_slow_04a11b58_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Warm",
+   "speech": "Warm",
+   "source": "calendario/mes/4/ingles/lexico"
+  },
+  {
+   "id": "en_slow_09d001f3_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Rain",
+   "speech": "Rain",
+   "source": "calendario/mes/8/ingles/lexico"
+  },
+  {
+   "id": "en_slow_0e1ef32d_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Jump",
+   "speech": "Jump",
+   "source": "calendario/mes/6/ingles/lexico"
+  },
+  {
+   "id": "en_slow_1433f56a_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Nose",
+   "speech": "Nose",
+   "source": "calendario/mes/2/ingles/lexico"
+  },
+  {
+   "id": "en_slow_17f2fa26_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Flower",
+   "speech": "Flower",
+   "source": "calendario/mes/8/ingles/lexico"
+  },
+  {
+   "id": "en_slow_1bb18a2c_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Sea",
+   "speech": "Sea",
+   "source": "calendario/mes/10/ingles/lexico"
+  },
+  {
+   "id": "en_slow_1e743f07_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Frog",
+   "speech": "Frog",
+   "source": "calendario/mes/6/ingles/lexico"
+  },
+  {
+   "id": "en_slow_227bfa82_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fly",
+   "speech": "Fly",
+   "source": "calendario/mes/6/ingles/lexico"
+  },
+  {
+   "id": "en_slow_239f0d8e_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wash",
+   "speech": "Wash",
+   "source": "calendario/mes/9/ingles/lexico"
+  },
+  {
+   "id": "en_slow_29463f08_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Falling",
+   "speech": "Falling",
+   "source": "calendario/mes/3/ingles/lexico"
+  },
+  {
+   "id": "en_slow_2fa62ca8_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Sleep",
+   "speech": "Sleep",
+   "source": "calendario/mes/4/ingles/lexico"
+  },
+  {
+   "id": "en_slow_2fd9d583_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fish",
+   "speech": "Fish",
+   "source": "calendario/mes/10/ingles/lexico"
+  },
+  {
+   "id": "en_slow_35ece1e8_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Crunch",
+   "speech": "Crunch",
+   "source": "calendario/mes/3/ingles/lexico"
+  },
+  {
+   "id": "en_slow_39ca7823_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Put on",
+   "speech": "Put on",
+   "source": "calendario/mes/5/ingles/lexico"
+  },
+  {
+   "id": "en_slow_3caefdfa_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Grow",
+   "speech": "Grow",
+   "source": "calendario/mes/8/ingles/lexico"
+  },
+  {
+   "id": "en_slow_42d8d701_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Sun",
+   "speech": "Sun",
+   "source": "calendario/mes/8/ingles/lexico"
+  },
+  {
+   "id": "en_slow_42f35940_2",
+   "lang": "en",
+   "style": "slow",
+   "text": "Up",
+   "speech": "Up",
+   "source": "calendario/mes/1/ingles/lexico"
+  },
+  {
+   "id": "en_slow_433a7162_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bye-bye",
+   "speech": "Byebye",
+   "source": "calendario/mes/1/ingles/lexico"
+  },
+  {
+   "id": "en_slow_538b10e9_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Open",
+   "speech": "Open",
+   "source": "calendario/mes/8/ingles/lexico"
+  },
+  {
+   "id": "en_slow_5549af62_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hat",
+   "speech": "Hat",
+   "source": "calendario/mes/5/ingles/lexico"
+  },
+  {
+   "id": "en_slow_5c65da32_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Coat",
+   "speech": "Coat",
+   "source": "calendario/mes/5/ingles/lexico"
+  },
+  {
+   "id": "en_slow_5e080abf_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Take off",
+   "speech": "Take off",
+   "source": "calendario/mes/5/ingles/lexico"
+  },
+  {
+   "id": "en_slow_63472495_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Shake",
+   "speech": "Shake",
+   "source": "calendario/mes/7/ingles/lexico"
+  },
+  {
+   "id": "en_slow_68fef3a7_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Cat",
+   "speech": "Cat",
+   "source": "calendario/mes/6/ingles/lexico"
+  },
+  {
+   "id": "en_slow_6a72bc2f_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Cold",
+   "speech": "Cold",
+   "source": "calendario/mes/4/ingles/lexico"
+  },
+  {
+   "id": "en_slow_6e82d356_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Soap",
+   "speech": "Soap",
+   "source": "calendario/mes/9/ingles/lexico"
+  },
+  {
+   "id": "en_slow_727b390b_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Orange",
+   "speech": "Orange",
+   "source": "calendario/mes/3/ingles/lexico"
+  },
+  {
+   "id": "en_slow_77800af0_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Goodbye",
+   "speech": "Goodbye",
+   "source": "calendario/mes/10/ingles/lexico"
+  },
+  {
+   "id": "en_slow_7787478b_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Ring",
+   "speech": "Ring",
+   "source": "calendario/mes/4/ingles/lexico"
+  },
+  {
+   "id": "en_slow_812746a9_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Circle",
+   "speech": "Circle",
+   "source": "calendario/mes/7/ingles/lexico"
+  },
+  {
+   "id": "en_slow_8157d386_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Rub",
+   "speech": "Rub",
+   "source": "calendario/mes/9/ingles/lexico"
+  },
+  {
+   "id": "en_slow_89ce70c2_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Freeze",
+   "speech": "Freeze",
+   "source": "calendario/mes/2/ingles/lexico"
+  },
+  {
+   "id": "en_slow_94413d27_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wind",
+   "speech": "Wind",
+   "source": "calendario/mes/3/ingles/lexico"
+  },
+  {
+   "id": "en_slow_972b893e_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Roll",
+   "speech": "Roll",
+   "source": "calendario/mes/7/ingles/lexico"
+  },
+  {
+   "id": "en_slow_a37f187c_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Red",
+   "speech": "Red",
+   "source": "calendario/mes/7/ingles/lexico"
+  },
+  {
+   "id": "en_slow_a4995035_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Down",
+   "speech": "Down",
+   "source": "calendario/mes/1/ingles/lexico"
+  },
+  {
+   "id": "en_slow_a6751975_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Leaf",
+   "speech": "Leaf",
+   "source": "calendario/mes/3/ingles/lexico"
+  },
+  {
+   "id": "en_slow_aacd536b_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Eyes",
+   "speech": "Eyes",
+   "source": "calendario/mes/2/ingles/lexico"
+  },
+  {
+   "id": "en_slow_b2972ae3_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Head",
+   "speech": "Head",
+   "source": "calendario/mes/2/ingles/lexico"
+  },
+  {
+   "id": "en_slow_b6879880_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Toes",
+   "speech": "Toes",
+   "source": "calendario/mes/2/ingles/lexico"
+  },
+  {
+   "id": "en_slow_b863f885_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Waves",
+   "speech": "Waves",
+   "source": "calendario/mes/10/ingles/lexico"
+  },
+  {
+   "id": "en_slow_b8d16159_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Big",
+   "speech": "Big",
+   "source": "calendario/mes/5/ingles/lexico"
+  },
+  {
+   "id": "en_slow_ba953c4a_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tap-tap",
+   "speech": "Taptap",
+   "source": "calendario/mes/8/ingles/lexico"
+  },
+  {
+   "id": "en_slow_c35149a3_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Clap",
+   "speech": "Clap",
+   "source": "calendario/mes/1/ingles/lexico"
+  },
+  {
+   "id": "en_slow_c4b9a762_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wake up",
+   "speech": "Wake up",
+   "source": "calendario/mes/4/ingles/lexico"
+  },
+  {
+   "id": "en_slow_d1f4faf2_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Boots",
+   "speech": "Boots",
+   "source": "calendario/mes/5/ingles/lexico"
+  },
+  {
+   "id": "en_slow_d63556b0_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Water",
+   "speech": "Water",
+   "source": "calendario/mes/9/ingles/lexico"
+  },
+  {
+   "id": "en_slow_d93fd32b_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tummy",
+   "speech": "Tummy",
+   "source": "calendario/mes/2/ingles/lexico"
+  },
+  {
+   "id": "en_slow_d9cdec69_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Yellow",
+   "speech": "Yellow",
+   "source": "calendario/mes/7/ingles/lexico"
+  },
+  {
+   "id": "en_slow_da999fd8_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Gentle",
+   "speech": "Gentle",
+   "source": "calendario/mes/1/ingles/lexico"
+  },
+  {
+   "id": "en_slow_e94dad58_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bell",
+   "speech": "Bell",
+   "source": "calendario/mes/4/ingles/lexico"
+  },
+  {
+   "id": "en_slow_e9dd1fed_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blue",
+   "speech": "Blue",
+   "source": "calendario/mes/10/ingles/lexico"
+  },
+  {
+   "id": "en_slow_efe8e986_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Splash",
+   "speech": "Splash",
+   "source": "calendario/mes/9/ingles/lexico"
+  },
+  {
+   "id": "en_slow_f131e373_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bear",
+   "speech": "Bear",
+   "source": "calendario/mes/6/ingles/lexico"
+  },
+  {
+   "id": "en_slow_f206602d_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Swim",
+   "speech": "Swim",
+   "source": "calendario/mes/10/ingles/lexico"
+  },
+  {
+   "id": "en_slow_f55c314b_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hello",
+   "speech": "Hello",
+   "source": "calendario/mes/1/ingles/lexico"
+  },
+  {
+   "id": "en_slow_f8a56cde_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Clean",
+   "speech": "Clean",
+   "source": "calendario/mes/9/ingles/lexico"
+  },
+  {
+   "id": "en_slow_fdba13cf_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Sweet",
+   "speech": "Sweet",
+   "source": "calendario/mes/7/ingles/lexico"
+  },
+  {
+   "id": "en_tutor_0b5d526f_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Walk softly",
+   "speech": "Walk softly",
+   "source": "calendario/mes/3/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_1567e3b7_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rub your hands",
+   "speech": "Rub your hands",
+   "source": "calendario/mes/9/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_190aa18c_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stomp your boots",
+   "speech": "Stomp your boots",
+   "source": "calendario/mes/5/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_1c757abb_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Peek-a-boo! I see you! Happy baby, smile!",
+   "speech": "Peekaboo! I see you! Happy baby, smile!",
+   "source": "calendario/tramo/6_12/fraseIngles"
+  },
+  {
+   "id": "en_tutor_1ec6ba91_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blue sea, waves go up and down!",
+   "speech": "Blue sea, waves go up and down!",
+   "source": "calendario/mes/10/ingles/frase"
+  },
+  {
+   "id": "en_tutor_2c4a5317_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch your head",
+   "speech": "Touch your head",
+   "source": "calendario/mes/2/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_2fd20253_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crunch, crunch, crunch!",
+   "speech": "Crunch, crunch, crunch!",
+   "source": "calendario/mes/3/ingles/frase"
+  },
+  {
+   "id": "en_tutor_30ac49c2_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Splash the water",
+   "speech": "Splash the water",
+   "source": "calendario/mes/9/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_39329cf4_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gentle touch. Soft tummy, warm and sweet!",
+   "speech": "Gentle touch. Soft tummy, warm and sweet!",
+   "source": "calendario/tramo/0_6/fraseIngles"
+  },
+  {
+   "id": "en_tutor_3c6f028c_54",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put on your hat! Now boots: stomp, stomp on the floor!",
+   "speech": "Put on your hat! Now boots: stomp, stomp on the floor!",
+   "source": "calendario/mes/5/ingles/frase"
+  },
+  {
+   "id": "en_tutor_3d11bfe3_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sleepy cat, meow! Jump, frog!",
+   "speech": "Sleepy cat, meow! Jump, frog!",
+   "source": "calendario/mes/6/ingles/frase"
+  },
+  {
+   "id": "en_tutor_3dac707f_42",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Warm, soft blanket. Sleep, sleep, wake up!",
+   "speech": "Warm, soft blanket. Sleep, sleep, wake up!",
+   "source": "calendario/mes/4/ingles/frase"
+  },
+  {
+   "id": "en_tutor_40978900_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rain, rain, tap, tap, little drops!",
+   "speech": "Rain, rain, tap, tap, little drops!",
+   "source": "calendario/mes/8/ingles/frase"
+  },
+  {
+   "id": "en_tutor_40fbe822_51",
+   "lang": "en",
+   "style": "tutor",
+   "text": "One foot, two feet. Push, push! Hands up! All done!",
+   "speech": "One foot, two feet. Push, push! Hands up! All done!",
+   "source": "calendario/tramo/12_18/fraseIngles"
+  },
+  {
+   "id": "en_tutor_477b99ce_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Big waves!",
+   "speech": "Big waves!",
+   "source": "calendario/mes/10/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_5a268719_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Find something red",
+   "speech": "Find something red",
+   "source": "calendario/mes/7/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_5d8833fb_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Soft tummy, tickle toes!",
+   "speech": "Soft tummy, tickle toes!",
+   "source": "calendario/mes/2/ingles/frase"
+  },
+  {
+   "id": "en_tutor_68eb3e0f_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Shake hands",
+   "speech": "Shake hands",
+   "source": "calendario/mes/2/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_6faa8925_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Clap hands",
+   "speech": "Clap hands",
+   "source": "calendario/mes/1/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_78573aba_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Be a little seed",
+   "speech": "Be a little seed",
+   "source": "calendario/mes/8/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_859f0293_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Swim like a fish",
+   "speech": "Swim like a fish",
+   "source": "calendario/mes/10/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_88397a8c_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fall down",
+   "speech": "Fall down",
+   "source": "calendario/mes/3/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_892969dc_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stand up",
+   "speech": "Stand up",
+   "source": "calendario/mes/1/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_8d836a41_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Red apple, sweet and yummy!",
+   "speech": "Red apple, sweet and yummy!",
+   "source": "calendario/mes/7/ingles/frase"
+  },
+  {
+   "id": "en_tutor_8e8a4e26_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wash your face",
+   "speech": "Wash your face",
+   "source": "calendario/mes/9/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_93dd927d_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ring bells",
+   "speech": "Ring bells",
+   "source": "calendario/mes/4/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_93ea6f97_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Jump like a frog",
+   "speech": "Jump like a frog",
+   "source": "calendario/mes/6/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_9f0f3823_7",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Grow up",
+   "speech": "Grow up",
+   "source": "calendario/mes/8/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_a93ded17_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open your flower",
+   "speech": "Open your flower",
+   "source": "calendario/mes/8/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_ac214da4_42",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Jump like a frog! Fly like a bird. Freeze!",
+   "speech": "Jump like a frog! Fly like a bird. Freeze!",
+   "source": "calendario/tramo/24_36/fraseIngles"
+  },
+  {
+   "id": "en_tutor_adc4d82e_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gentle waves",
+   "speech": "Gentle waves",
+   "source": "calendario/mes/10/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_aef062fb_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "One shoe, two shoes, up! Push, push!",
+   "speech": "One shoe, two shoes, up! Push, push!",
+   "source": "calendario/mes/1/ingles/frase"
+  },
+  {
+   "id": "en_tutor_b4e60ca8_54",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Warm water! Rub the soap, splash, splash! Clean hands!",
+   "speech": "Warm water! Rub the soap, splash, splash! Clean hands!",
+   "source": "calendario/mes/9/ingles/frase"
+  },
+  {
+   "id": "en_tutor_c607626c_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crunch leaves",
+   "speech": "Crunch leaves",
+   "source": "calendario/mes/3/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_cf3fccc3_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Roll the circle",
+   "speech": "Roll the circle",
+   "source": "calendario/mes/7/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_d199b22c_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stomp like a bear",
+   "speech": "Stomp like a bear",
+   "source": "calendario/mes/6/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_d21d5fe9_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fly like a bird",
+   "speech": "Fly like a bird",
+   "source": "calendario/mes/6/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_d2fbb559_7",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Freeze!",
+   "speech": "Freeze!",
+   "source": "calendario/mes/2/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_d45f57d6_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Shake the bottle",
+   "speech": "Shake the bottle",
+   "source": "calendario/mes/7/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_de955058_45",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Warm and cold. Brrr! Wash, wash, clean hands!",
+   "speech": "Warm and cold. Brrr! Wash, wash, clean hands!",
+   "source": "calendario/tramo/18_24/fraseIngles"
+  },
+  {
+   "id": "en_tutor_df202f13_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put on your hat",
+   "speech": "Put on your hat",
+   "source": "calendario/mes/5/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_e5cf4542_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Zip your coat",
+   "speech": "Zip your coat",
+   "source": "calendario/mes/5/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_e9c31f54_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sleep tight",
+   "speech": "Sleep tight",
+   "source": "calendario/mes/4/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_f32efa7d_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sit down",
+   "speech": "Sit down",
+   "source": "calendario/mes/1/ingles/tpr"
+  },
+  {
+   "id": "en_tutor_f3424e79_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wake up!",
+   "speech": "Wake up!",
+   "source": "calendario/mes/4/ingles/tpr"
+  },
   {
    "id": "es_slow_349f29ef_8",
    "lang": "es",

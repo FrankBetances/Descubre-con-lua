@@ -9,6 +9,49 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Rama `claude/english-learning-integration-56daa7` · el inglés, el calendario y las medallas
+
+Esto NO está en `main`. Se dice en rama, con el número de comprobación al lado.
+
+### Comprobado en este contenedor, con Flutter 3.47.4
+
+Esta vez sí hay SDK: se descargó el `stable` y se corrieron los gates de Dart
+que antes quedaban para CI.
+
+| Área | Evidencia |
+| --- | --- |
+| Análisis estático | `flutter analyze` → *No issues found* |
+| Suite completa | `flutter test --exclude-tags capturas` → **218 tests, 0 fallos** |
+| Formato | `dart format --output=none --set-exit-if-changed .` → limpio |
+| Gates de contenido | correo, marcas de pulso, corpus sincronizado (351 locuciones) y URLs legales offline → OK |
+| **Desbordes de disposición** | `test/features/calendario/calendario_escala_test.dart`: calendario y guía, en gallego y castellano, a escala de texto 1,0 y 1,8. Encontró y ahora vigila **cinco desbordes reales** |
+| Imágenes de las pantallas nuevas | `docs/capturas/calendario-{gl,es}.png` y `guia-ingles-{gl,es}.png`, generadas con el motor real y **miradas** |
+
+### Lo que la rama `mejora` traía roto, y ya no
+
+| Qué | Cómo se veía |
+| --- | --- |
+| El test del calendario **no compilaba** | `xuño` como nombre de variable: Dart no admite `ñ` en un identificador. Las 474 líneas de test de esa rama **nunca se ejecutaron** |
+| El cartel del calendario **no se actualizaba nunca** | El estado del día se leía fuera del `AnimatedBuilder`: se registraba la asamblea, se guardaba bien, y la pantalla seguía diciendo que no había nada hasta salir y volver a entrar |
+| La tarjeta del mes desbordaba | 47 px por abajo y 41 por la derecha. En depuración salen las franjas; **en release el texto se corta y ya** |
+| El conmutador de rol y la barra desbordaban | 5 px el conmutador, 119 px la barra a escala de texto grande |
+| El altavoz de las palabras inglesas era un dibujo | Un icono de altavoz pintado que no reproducía nada |
+| La tarjeta del mes decía «sen rexistro» con el mes trabajado | Preguntaba por el día 15 de cada mes |
+| `AppLanguage.fromCode('en')` abría la app en inglés | No hay ni una pantalla en inglés. Un móvil en inglés abre ahora en galego |
+
+### NO comprobado en esta rama
+
+| Área | Por qué |
+| --- | --- |
+| **Ninguna de las pantallas nuevas se ha visto en un aparato** | Aquí no hay emulador ni móvil. Lo que hay son imágenes del motor de Flutter con la tipografía real (`docs/capturas/`) y el test de escala: eso caza los desbordes, pero no la muesca, ni la barra de gestos, ni la densidad real |
+| **Las 105 grabaciones en inglés no existen todavía** | Las sintetiza el workflow `voice-assets` al empujar. Hasta que ese run termine, `check_voice_coverage.py` está **en rojo** y las pastillas de inglés se ven sin altavoz: la palabra se lee, pero no suena |
+| **Nadie ha escuchado el inglés de LJSpeech** | Ningún gate dice si una frase de tres palabras suena bien para imitarla |
+| **El APK de release no se ha compilado aquí** | Sigue sin resolverse el Android Gradle Plugin en este contenedor. El permiso del binario y el tamaño salen de CI |
+| **El manual no documenta el calendario** | Los 17 casos de uso y las 14 imágenes del manual son los de antes. Las cuatro imágenes nuevas están en `docs/capturas/` pero el manual no las usa |
+| **El permiso de uso de los logotipos** | Concello de Vigo, Zona Franca y startTIC son marcas de terceros y en una ficha de Play sugieren respaldo institucional. Hace falta autorización escrita |
+
+---
+
 ## Cómo se comprueba
 
 ```bash

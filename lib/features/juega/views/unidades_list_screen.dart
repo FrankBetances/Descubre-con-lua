@@ -10,6 +10,8 @@ import '../../premios/premios_repository.dart';
 import '../../premios/widgets/lua_game_strip.dart';
 import 'asamblea_guiada_screen.dart';
 import 'capsulas_aula_screen.dart';
+import '../../../core/storage/calendario_store.dart';
+import '../../calendario/views/calendario_screen.dart';
 
 /// Screen listing pedagogical units for early childhood educators («Juega con Lúa · Aula»).
 ///
@@ -28,6 +30,9 @@ class UnidadesListScreen extends StatefulWidget {
   /// Opcional: sin él no se pinta la tira de juego ni cuentan las asambleas.
   final PremiosRepository? premios;
 
+  /// Opcional: para sincronizar asambleas realizadas con o calendario escola-fogar.
+  final CalendarioStore? calendario;
+
   const UnidadesListScreen({
     super.key,
     required this.repository,
@@ -35,6 +40,7 @@ class UnidadesListScreen extends StatefulWidget {
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.premios,
+    this.calendario,
   });
 
   @override
@@ -105,6 +111,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                   repository: widget.premios!,
                   perfil: Perfil.docente,
                   language: _language,
+                  contadores: widget.calendario?.contadores,
                 ),
               ),
 
@@ -115,6 +122,41 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               padding: const EdgeInsets.fromLTRB(
                 AppTheme.spaceLg,
                 AppTheme.spaceMd,
+                AppTheme.spaceLg,
+                0,
+              ),
+              child: ElevatedButton.icon(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => CalendarioScreen(
+                      store: widget.calendario ?? CalendarioStore(),
+                      initialLanguage: _language,
+                      onLanguageChanged: _onToggleLanguage,
+                      esDocenteInicial: true,
+                      repository: widget.repository,
+                      audioService: widget.audioService,
+                      premios: widget.premios,
+                    ),
+                  ),
+                ),
+                icon: const Icon(Icons.calendar_month_rounded),
+                label: Text(
+                  isGl
+                      ? 'Calendario Escola · Fogar (Dobre Estimulación)'
+                      : 'Calendario Escuela · Hogar (Doble Estimulación)',
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppTheme.primaryVigoBlue,
+                  foregroundColor: Colors.white,
+                  minimumSize: const Size.fromHeight(AppTheme.touchMin),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceSm,
                 AppTheme.spaceLg,
                 0,
               ),
@@ -404,6 +446,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                         audioService: widget.audioService,
                         initialLanguage: _language,
                         onLanguageChanged: _onToggleLanguage,
+                        premios: widget.premios,
+                        calendario: widget.calendario,
                       ),
                     ),
                   );

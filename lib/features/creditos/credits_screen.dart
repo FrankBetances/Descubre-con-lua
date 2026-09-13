@@ -102,6 +102,11 @@ class CreditsScreen extends StatelessWidget {
     es: 'Voz en castellano. rhasspy/piper-voices.',
   );
 
+  static const _ljSpeechDesc = LocalizedString(
+    gl: 'Voz en inglés (en-US), a da capa de inglés. rhasspy/piper-voices.',
+    es: 'Voz en inglés (en-US), la de la capa de inglés. rhasspy/piper-voices.',
+  );
+
   static const _typeKicker = LocalizedString(
     gl: 'A TIPOGRAFÍA',
     es: 'LA TIPOGRAFÍA',
@@ -174,6 +179,12 @@ class CreditsScreen extends StatelessWidget {
                               ?.copyWith(color: AppTheme.primaryInk),
                         ),
                         const Divider(height: AppTheme.spaceXl),
+                        const LogoInstitucional(
+                          fichero: 'earlify-health.jpg',
+                          alto: 56,
+                          sobrePlaca: true,
+                        ),
+                        const SizedBox(height: AppTheme.spaceSm),
                         Text(
                           'Earlify Health S.L.',
                           textAlign: TextAlign.center,
@@ -212,7 +223,10 @@ class CreditsScreen extends StatelessWidget {
                           crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
                             LogoInstitucional(fichero: 'startic.png'),
-                            LogoInstitucional(fichero: 'zona-franca-vigo.png'),
+                            LogoInstitucional(
+                              fichero: 'zona-franca-vigo.png',
+                              sobrePlaca: true,
+                            ),
                           ],
                         ),
                         _Entry(
@@ -243,6 +257,11 @@ class CreditsScreen extends StatelessWidget {
                         _Entry(
                           name: 'Sharvard',
                           detail: _sharvardDesc.resolve(currentLanguage),
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
+                        _Entry(
+                          name: 'LJSpeech',
+                          detail: _ljSpeechDesc.resolve(currentLanguage),
                         ),
                         const SizedBox(height: AppTheme.spaceMd),
                         Text(

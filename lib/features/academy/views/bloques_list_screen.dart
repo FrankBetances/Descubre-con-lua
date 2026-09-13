@@ -11,6 +11,9 @@ import '../../premios/widgets/lua_game_strip.dart';
 import '../widgets/academy_header.dart';
 import '../widgets/selector_idioma_widget.dart';
 import 'capsula_detail_screen.dart';
+import 'guia_atencion_screen.dart';
+import '../../../core/storage/calendario_store.dart';
+import '../../calendario/views/calendario_screen.dart';
 
 /// Los 5 bloques de desarrollo de «Academy · Familias».
 ///
@@ -32,6 +35,9 @@ class BloquesListScreen extends StatefulWidget {
   /// Opcional: sin él las cápsulas se leen, pero no se escuchan.
   final OfflineAudioService? audioService;
 
+  /// Opcional: para acceder ao calendario sincronizado escola-fogar.
+  final CalendarioStore? calendario;
+
   const BloquesListScreen({
     super.key,
     required this.repository,
@@ -39,6 +45,7 @@ class BloquesListScreen extends StatefulWidget {
     this.onLanguageChanged,
     this.premios,
     this.audioService,
+    this.calendario,
   });
 
   @override
@@ -157,9 +164,65 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                     repository: widget.premios!,
                     perfil: Perfil.familia,
                     language: lang,
+                    contadores: widget.calendario?.contadores,
                   ),
                   const SizedBox(height: AppTheme.spaceXl),
                 ],
+                // Acceso destacado a la Guía de Atención y al Calendario
+                AcademyCard(
+                  icono: Icons.record_voice_over_outlined,
+                  kicker: lang == AppLanguage.gl
+                      ? 'O INGLÉS NA CASA'
+                      : 'EL INGLÉS EN CASA',
+                  titulo: lang == AppLanguage.gl
+                      ? 'Guía de inglés na casa'
+                      : 'Guía de inglés en casa',
+                  descripcion: lang == AppLanguage.gl
+                      ? 'Canto dura o xogo segundo a idade, tres regras para a casa e a pronuncia de cada frase.'
+                      : 'Cuánto dura el juego según la edad, tres reglas para casa y la pronunciación de cada frase.',
+                  meta: lang == AppLanguage.gl
+                      ? 'Guía interactiva'
+                      : 'Guía interactiva',
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => GuiaAtencionScreen(
+                        initialLanguage: _language,
+                        onLanguageChanged: _onToggleLanguage,
+                        audioService: widget.audioService,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppTheme.spaceMd),
+                AcademyCard(
+                  icono: Icons.calendar_month_rounded,
+                  kicker: lang == AppLanguage.gl
+                      ? 'SINCRONIZACIÓN ESCOLA-FOGAR'
+                      : 'SINCRONIZACIÓN ESCUELA-HOGAR',
+                  titulo: lang == AppLanguage.gl
+                      ? 'Calendario Escola · Fogar'
+                      : 'Calendario Escuela · Hogar',
+                  descripcion: lang == AppLanguage.gl
+                      ? '10 meses de conexión coa escola: mira o que traballaron pola mañá e rexistra o xogo de 3 min na casa.'
+                      : '10 meses de conexión con la escuela: mira lo que trabajaron por la mañana y registra el juego de 3 min en casa.',
+                  meta: lang == AppLanguage.gl
+                      ? 'Dobre estimulación'
+                      : 'Doble estimulación',
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => CalendarioScreen(
+                        store: widget.calendario ?? CalendarioStore(),
+                        initialLanguage: _language,
+                        onLanguageChanged: _onToggleLanguage,
+                        esDocenteInicial: false,
+                        repository: widget.repository,
+                        audioService: widget.audioService,
+                        premios: widget.premios,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppTheme.spaceXl),
                 Text(
                   _disponibles.resolve(lang),
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(

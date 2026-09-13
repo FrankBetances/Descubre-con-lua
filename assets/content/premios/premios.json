@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "nota": "Los premios los gana el ADULTO que usa la app: la maestra por asambleas dirigidas, la familia por cápsulas leídas. Aquí no se registra nada de ninguna criatura, porque el niño no usa la pantalla.",
+  "nota": "Los premios los gana el ADULTO que usa la app: la maestra por asambleas dirigidas, la familia por cápsulas leídas. Aquí no se registra nada de ninguna criatura, porque el niño no usa la pantalla. Las `medallas` son lo mismo para el Calendario Escola·Fogar, y sus criterios solo pueden salir de lo que ese calendario mide de verdad: días con asamblea en el aula, días con rutina en casa y días con las dos cosas. Nada de «toda la clase»: la app conoce un aparato, no un aula.",
   "xp": {
     "porAsamblea": 20,
     "porCapsula": 15
@@ -228,6 +228,134 @@
       "descripcion": {
         "gl": "Vinte e un días seguidos. Isto xa non se decide cada mañá.",
         "es": "Veintiún días seguidos. Esto ya no se decide cada mañana."
+      }
+    }
+  ],
+  "medallas": [
+    {
+      "id": "primeira_rutina_fogar",
+      "perfil": "familia",
+      "criterio": {
+        "tipo": "fogar",
+        "valor": 1
+      },
+      "glifo": "home",
+      "rango": "bronze",
+      "titulo": {
+        "gl": "Primeira rutina na casa",
+        "es": "Primera rutina en casa"
+      },
+      "descripcion": {
+        "gl": "Rexistraches o primeiro xogo de tres minutos na casa.",
+        "es": "Registraste el primer juego de tres minutos en casa."
+      }
+    },
+    {
+      "id": "cinco_dias_fogar",
+      "perfil": "familia",
+      "criterio": {
+        "tipo": "fogar",
+        "valor": 5
+      },
+      "glifo": "home",
+      "rango": "silver",
+      "titulo": {
+        "gl": "Cinco días na casa",
+        "es": "Cinco días en casa"
+      },
+      "descripcion": {
+        "gl": "Cinco días con rutina na casa. Xa non é unha proba, é un hábito.",
+        "es": "Cinco días con rutina en casa. Ya no es una prueba, es un hábito."
+      }
+    },
+    {
+      "id": "dez_dias_fogar",
+      "perfil": "familia",
+      "criterio": {
+        "tipo": "fogar",
+        "valor": 10
+      },
+      "glifo": "home",
+      "rango": "gold",
+      "titulo": {
+        "gl": "Dez días na casa",
+        "es": "Diez días en casa"
+      },
+      "descripcion": {
+        "gl": "Dez días de rutina curta na casa, sen pantalla ningunha para a crianza.",
+        "es": "Diez días de rutina corta en casa, sin ninguna pantalla para la criatura."
+      }
+    },
+    {
+      "id": "dez_dias_aula",
+      "perfil": "docente",
+      "criterio": {
+        "tipo": "aula",
+        "valor": 10
+      },
+      "glifo": "sunrise",
+      "rango": "silver",
+      "titulo": {
+        "gl": "Dez asembleas no calendario",
+        "es": "Diez asambleas en el calendario"
+      },
+      "descripcion": {
+        "gl": "Dez días distintos con asemblea rexistrada no calendario do curso.",
+        "es": "Diez días distintos con asamblea registrada en el calendario del curso."
+      }
+    },
+    {
+      "id": "primeira_dobre",
+      "perfil": "ambos",
+      "criterio": {
+        "tipo": "dobre",
+        "valor": 1
+      },
+      "glifo": "heart",
+      "rango": "bronze",
+      "titulo": {
+        "gl": "Aula e casa o mesmo día",
+        "es": "Aula y casa el mismo día"
+      },
+      "descripcion": {
+        "gl": "Por primeira vez, o mesmo día houbo asemblea na aula e xogo na casa.",
+        "es": "Por primera vez, el mismo día hubo asamblea en el aula y juego en casa."
+      }
+    },
+    {
+      "id": "cinco_dobres",
+      "perfil": "ambos",
+      "criterio": {
+        "tipo": "dobre",
+        "valor": 5
+      },
+      "glifo": "heart",
+      "rango": "silver",
+      "titulo": {
+        "gl": "Cinco días enlazados",
+        "es": "Cinco días enlazados"
+      },
+      "descripcion": {
+        "gl": "Cinco días nos que a escola e a casa foron no mesmo sentido.",
+        "es": "Cinco días en los que la escuela y la casa fueron en el mismo sentido."
+      }
+    },
+    {
+      "id": "vinte_dobres",
+      "perfil": "ambos",
+      "criterio": {
+        "tipo": "dobre",
+        "valor": 20
+      },
+      "glifo": "heart",
+      "rango": "gold",
+      "titulo": {
+        "gl": "Vinte días enlazados",
+        "es": "Veinte días enlazados"
+      },
+      "descripcion": {
+        "gl": "Vinte días con aula e casa o mesmo día. Iso é un curso enteiro traballando xunto.",
+        "es": "Veinte días con aula y casa el mismo día. Eso es un curso entero trabajando junto."
       }
     }
   ]

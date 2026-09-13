@@ -3,6 +3,7 @@
 
   python3 tools/generate_voice_assets.py --lang gl
   python3 tools/generate_voice_assets.py --lang es
+  python3 tools/generate_voice_assets.py --lang en
 
 Voices, same decision as Valeria+:
   · gl -> «Celtia» do Proxecto Nós (VITS de grafemas, motor coqui-tts). The
@@ -12,6 +13,8 @@ Voices, same decision as Valeria+:
     token and expose it as HF_TOKEN, or the download returns 401.
   · es -> «Sharvard» (rhasspy/piper-voices), the open female VITS that pairs
     with Celtia in Spanish.
+  · en -> «LJSpeech» (rhasspy/piper-voices), the open female VITS used in Valeria+
+    for English (en_US-ljspeech-medium).
 
 Mastering: peak at -3 dBFS, mono, AAC at 40 kbit/s. Style is baked into the
 VITS length_scale rather than applied afterwards with atempo, so the pauses are
@@ -25,7 +28,7 @@ Incremental: only locutions without a recording are synthesised, so re-running
 this does not rewrite what already exists and does not churn the repository.
 
 This is a port of scripts/generate-voice-assets.py in the Valeria repository,
-reduced to the two languages this project ships. Build-time tooling only: no
+supporting gl, es and en. Build-time tooling only: no
 Valeria screen, module or app code is reused here.
 """
 from __future__ import annotations
@@ -97,6 +100,12 @@ VOICES = {
         "name": "es_ES-sharvard-medium",
         "label": "Sharvard (femenina) · rhasspy/piper-voices",
         "urls": piper_urls("es_ES-sharvard-medium"),
+    },
+    "en": {
+        "engine": "piper",
+        "name": "en_US-ljspeech-medium",
+        "label": "LJSpeech (en-US) · rhasspy/piper-voices",
+        "urls": piper_urls("en_US-ljspeech-medium"),
     },
 }
 
@@ -200,6 +209,22 @@ def encode_m4a(wav: Path, m4a: Path, atempo: float | None = None) -> None:
 
 # ------------------------------------------------------------------- engines
 def make_piper_synth(voice: dict):
+    if sys.platform == "darwin" and "ESPEAK_DATA_PATH" not in os.environ:
+        try:
+            import piper
+            pkg_dir = Path(piper.__file__).parent
+            edir = pkg_dir / "espeak-ng-data"
+            if edir.exists():
+                data_dir = ROOT / "tools" / ".voices" / ".espeak_data"
+                data_dir.mkdir(parents=True, exist_ok=True)
+                for item in edir.glob("*"):
+                    target = data_dir / item.name
+                    if not target.exists():
+                        target.symlink_to(item)
+                os.environ["ESPEAK_DATA_PATH"] = str(data_dir.resolve())
+        except Exception:
+            pass
+
     from piper import PiperVoice, SynthesisConfig  # pip install piper-tts
 
     VOICES_DIR.mkdir(parents=True, exist_ok=True)

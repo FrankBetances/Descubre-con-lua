@@ -98,7 +98,7 @@ void main() {
   });
 
   group('La pantalla del aula', () {
-    for (final lang in AppLanguage.values) {
+    for (final lang in AppLanguage.deInterfaz) {
       for (final escala in [1.0, 1.8]) {
         testWidgets('cabe en ${lang.code} a escala $escala', (tester) async {
           tester.view.physicalSize = const Size(360, 640);

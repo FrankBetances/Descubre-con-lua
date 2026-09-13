@@ -23,7 +23,15 @@ CONTENT_DIR = ROOT / "assets" / "content"
 VOICE_DIR = ROOT / "assets" / "voice"
 CORPUS_JSON = ROOT / "voice-corpus.json"
 
+# Las dos lenguas en las que se LEE la app. Toda la prosa bilingüe va en estas.
 LANGS = ("gl", "es")
+
+# El inglés no es lengua de interfaz: no hay ni una pantalla en inglés. Entra en
+# el corpus como CONTENIDO que se escucha —el léxico, las órdenes TPR y las
+# frases de assets/content/calendario/— para que la persona adulta pueda oír la
+# pronunciación antes de decirla. Por eso se recoge aparte y no con _localized.
+VOICE_LANGS = ("gl", "es", "en")
+ALL_LANGS = VOICE_LANGS
 
 # Reading pace passed to the synthesiser. There is no `child` style because a
 # child never uses this app, and no `clinical` style because nothing here has a
@@ -96,20 +104,26 @@ def _localized(node: object) -> dict[str, str]:
     return {lang: "" for lang in LANGS}
 
 
+def _one(text: str, lang: str, style: str, source: str,
+         seen: dict[str, Locution]) -> None:
+    """Una locución suelta en una lengua concreta. La usa el inglés."""
+    value = normalize(text)
+    if not value:
+        return
+    entry = Locution(
+        id=voice_id(style, value, lang),
+        lang=lang,
+        style=style,
+        text=value,
+        speech=speech_text(value),
+        source=source,
+    )
+    seen.setdefault(entry.id, entry)
+
+
 def _add(text: dict[str, str], style: str, source: str, seen: dict[str, Locution]) -> None:
     for lang in LANGS:
-        value = normalize(text.get(lang, ""))
-        if not value:
-            continue
-        entry = Locution(
-            id=voice_id(style, value, lang),
-            lang=lang,
-            style=style,
-            text=value,
-            speech=speech_text(value),
-            source=source,
-        )
-        seen.setdefault(entry.id, entry)
+        _one(text.get(lang, ""), lang, style, source, seen)
 
 
 def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
@@ -231,6 +245,39 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                 if afirmacion.get(campo):
                     _add(_localized(afirmacion[campo]), "tutor",
                          f"{cap_id}/afirmaciones/{aid}/{campo}", seen)
+
+    # ── El inglés del Calendario Escola·Fogar ──────────────────────────────
+    # Es la razón de ser de la voz inglesa: una maestra de una escuela infantil
+    # de Vigo no tiene por qué pronunciar «Crunch leaves», y aquí lo oye antes
+    # de llevarlo a la asamblea. Solo entra lo que una pantalla puede
+    # reproducir: el léxico, las órdenes y la frase del mes se pintan como
+    # pastillas con altavoz, y la frase de cada tramo, en la guía de la
+    # familia. Nada que no se pueda pulsar viaja en el APK.
+    meses_json = content_dir / "calendario" / "meses.json"
+    if meses_json.exists():
+        data = json.loads(meses_json.read_text(encoding="utf-8"))
+        for mes in data.get("meses") or []:
+            orden = mes.get("orden", "?")
+            ingles = mes.get("ingles") or {}
+            for palabra in ingles.get("lexico") or []:
+                # Despacio: las palabras sueltas existen para imitarse.
+                _one(str(palabra), "en", "slow",
+                     f"calendario/mes/{orden}/ingles/lexico", seen)
+            for comando in ingles.get("tpr") or []:
+                _one(str(comando), "en", "tutor",
+                     f"calendario/mes/{orden}/ingles/tpr", seen)
+            if ingles.get("frase"):
+                _one(str(ingles["frase"]), "en", "tutor",
+                     f"calendario/mes/{orden}/ingles/frase", seen)
+
+    atencion_json = content_dir / "calendario" / "atencion.json"
+    if atencion_json.exists():
+        data = json.loads(atencion_json.read_text(encoding="utf-8"))
+        for tramo in data.get("tramos") or []:
+            if tramo.get("fraseIngles"):
+                _one(str(tramo["fraseIngles"]), "en", "tutor",
+                     f"calendario/tramo/{tramo.get('id', '?')}/fraseIngles",
+                     seen)
 
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 

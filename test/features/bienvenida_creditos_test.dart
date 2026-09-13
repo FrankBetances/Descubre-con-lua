@@ -32,7 +32,7 @@ List<Object> _drainExceptions(WidgetTester tester) {
 void main() {
   group('Pantalla de bienvenida', () {
     testWidgets('dice qué es cada módulo, en las dos lenguas', (tester) async {
-      for (final lang in AppLanguage.values) {
+      for (final lang in AppLanguage.deInterfaz) {
         await tester.pumpWidget(_wrap(WelcomeScreen(
           currentLanguage: lang,
           onToggleLanguage: () {},
@@ -132,10 +132,11 @@ void main() {
     testWidgets('acredita las voces y la tipografía, que llevan licencia',
         (tester) async {
       final body = await textOf(tester, AppLanguage.es);
-      // Citar estas tres no es cortesía: las dos voces y la fuente tienen
+      // Citar estas no es cortesía: las voces y la fuente tienen
       // licencia, y la app las redistribuye dentro del paquete.
       expect(body, contains('Celtia'));
       expect(body, contains('Sharvard'));
+      expect(body, contains('LJSpeech'));
       expect(body, contains('Nunito'));
       expect(body, contains('SIL Open Font License'));
     });
@@ -152,7 +153,7 @@ void main() {
     });
 
     testWidgets('acredita a los dos colaboradores que constan', (tester) async {
-      for (final lang in AppLanguage.values) {
+      for (final lang in AppLanguage.deInterfaz) {
         final body = await textOf(tester, lang);
         expect(body, contains('startTIC'));
         expect(body, contains('Zona Franca de Vigo'));
@@ -213,7 +214,7 @@ void main() {
         r'Hospital|Fundación|Fundacion|Deputación|Diputación|Instituto|'
         r'Ministerio|Conselleria|Consellería)\b[^.·\n]{0,40}',
       );
-      for (final lang in AppLanguage.values) {
+      for (final lang in AppLanguage.deInterfaz) {
         final body = await textOf(tester, lang);
         for (final m in sospechoso.allMatches(body)) {
           final hallado = m.group(0)!.trim();
