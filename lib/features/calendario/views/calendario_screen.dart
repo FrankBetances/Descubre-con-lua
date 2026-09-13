@@ -15,6 +15,7 @@ import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../juega/views/asamblea_guiada_screen.dart';
 import '../../premios/premios_repository.dart';
 import '../widgets/boton_lanzar_sesion.dart';
+import '../widgets/tarjeta_mes_curricular.dart';
 import '../widgets/temporizador_sutil_widget.dart';
 
 /// Contrato de callback para o lanzamento a un toque da sesión
@@ -274,6 +275,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 const SizedBox(height: AppTheme.spaceMd),
                 _buildDobleEstimulacionCard(estadoHoy, theme),
                 const SizedBox(height: AppTheme.spaceLg),
+                _buildTarjetasVisuales(theme),
+                const SizedBox(height: AppTheme.spaceMd),
                 _buildMonthSelector(theme),
                 const SizedBox(height: AppTheme.spaceLg),
                 _buildRoleSwitcher(theme),
@@ -299,6 +302,103 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           style: theme.textTheme.bodyMedium?.copyWith(
             color: AppTheme.textSecondary,
             height: 1.4,
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// Carrusel horizontal de tarjetas visuales curriculares (10 meses).
+  ///
+  /// Muestra la [TarjetaMesCurricular] con ilustración vectorial del mes
+  /// seleccionado expandida y las demás en miniatura. Bajo la tarjeta activa
+  /// aparece el [DetalleSesionPanel] con la actividad contextualizada.
+  Widget _buildTarjetasVisuales(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Kicker de sección
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10),
+          child: Row(
+            children: [
+              Container(
+                width: 4,
+                height: 18,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF00838F),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Text(
+                _language == AppLanguage.gl
+                    ? 'TARXETAS CURRICULARES · 10 MESES'
+                    : 'TARJETAS CURRICULARES · 10 MESES',
+                style: const TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w800,
+                  color: Color(0xFF00838F),
+                  letterSpacing: 1.2,
+                ),
+              ),
+            ],
+          ),
+        ),
+        // Carrusel horizontal de tarjetas
+        SizedBox(
+          height: 280,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(vertical: 4),
+            itemCount: MesCurricular.meses.length,
+            separatorBuilder: (_, __) => const SizedBox(width: 12),
+            itemBuilder: (context, index) {
+              final mesItem = MesCurricular.meses[index];
+              final isSelected = index == _mesSeleccionadoIndex;
+              final estado = widget.store.estadoParaFecha(
+                DateTime(DateTime.now().year, mesItem.mesCalendario, 15),
+              );
+
+              return SizedBox(
+                width: isSelected ? 220 : 160,
+                child: TarjetaMesCurricular(
+                  mes: mesItem,
+                  estado: estado,
+                  esDocente: _esDocente,
+                  isSelected: isSelected,
+                  onTap: () {
+                    setState(() => _mesSeleccionadoIndex = index);
+                  },
+                ),
+              );
+            },
+          ),
+        ),
+        // Panel de detalle contextualizado bajo la tarjeta activa
+        const SizedBox(height: 8),
+        AnimatedSwitcher(
+          duration: const Duration(milliseconds: 220),
+          transitionBuilder: (child, anim) => FadeTransition(
+            opacity: anim,
+            child: SlideTransition(
+              position: Tween<Offset>(
+                begin: const Offset(0, 0.06),
+                end: Offset.zero,
+              ).animate(anim),
+              child: child,
+            ),
+          ),
+          child: DetalleSesionPanel(
+            key: ValueKey('panel_$_mesSeleccionadoIndex'),
+            mes: MesCurricular.meses[_mesSeleccionadoIndex],
+            esDocente: _esDocente,
+            acento: const [
+              Color(0xFF00BFA5), Color(0xFFFF7043), Color(0xFFFF8F00),
+              Color(0xFF1E88E5), Color(0xFF5C6BC0), Color(0xFFEF5350),
+              Color(0xFF43A047), Color(0xFFF48FB1), Color(0xFF29B6F6),
+              Color(0xFF00838F),
+            ][_mesSeleccionadoIndex],
           ),
         ),
       ],
