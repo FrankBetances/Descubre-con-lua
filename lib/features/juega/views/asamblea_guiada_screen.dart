@@ -13,6 +13,7 @@ import '../widgets/paso_ponte_casa_widget.dart';
 import '../widgets/paso_preguntas_widget.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
+import '../../../core/storage/calendario_store.dart';
 
 /// Screen orchestrating the 6 canonical assembly phases for early childhood teachers.
 ///
@@ -37,6 +38,9 @@ class AsambleaGuiadaScreen extends StatefulWidget {
   /// funciona igual y no cuenta nada.
   final PremiosRepository? premios;
 
+  /// Rexistro do calendario escolar-fogar para a dobre estimulación.
+  final CalendarioStore? calendario;
+
   const AsambleaGuiadaScreen({
     super.key,
     required this.unidad,
@@ -44,6 +48,7 @@ class AsambleaGuiadaScreen extends StatefulWidget {
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.premios,
+    this.calendario,
   });
 
   @override
@@ -134,6 +139,9 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
           EventoPremio.asamblea,
         ) ??
         const <Insignia>[];
+
+    // Se rexistra a asemblea no calendario escola-fogar para activar a dobre estimulación
+    await widget.calendario?.registrarAula();
 
     if (!mounted) return;
 
@@ -272,6 +280,48 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                 ],
               ),
             ),
+            // Banner de Asistente Docente: Cero Pantallas e tempo recomendado
+            Container(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+              color: AppTheme.primaryLight,
+              child: Row(
+                children: [
+                  const Icon(Icons.phonelink_erase_rounded,
+                      size: 18, color: AppTheme.primaryDark),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      isGl
+                          ? 'Asistente docente · Móbil fóra da vista · 5-8 min máx.'
+                          : 'Asistente docente · Móvil fuera de la vista · 5-8 min máx.',
+                      style: const TextStyle(
+                        fontSize: 12.0,
+                        fontWeight: FontWeight.bold,
+                        color: AppTheme.primaryDark,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: AppTheme.border),
+                    ),
+                    child: const Text(
+                      '~1-2 min',
+                      style: TextStyle(
+                        fontSize: 11.0,
+                        fontWeight: FontWeight.bold,
+                        color: AppTheme.textSecondary,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
             const Divider(height: 1),
 
             // Main Phase Content View
@@ -301,6 +351,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                     icon: const Icon(Icons.arrow_back),
                     label: Text(isGl ? 'Anterior' : 'Anterior'),
                     style: OutlinedButton.styleFrom(
+                      minimumSize: const Size(0, 48),
                       padding: const EdgeInsets.symmetric(
                           horizontal: 16.0, vertical: 12.0),
                     ),
@@ -312,6 +363,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                       icon: const Icon(Icons.arrow_forward),
                       label: Text(isGl ? 'Seguinte' : 'Siguiente'),
                       style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(0, 48),
                         backgroundColor: AppTheme.primaryVigoBlue,
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(
@@ -324,6 +376,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                       icon: const Icon(Icons.check),
                       label: Text(isGl ? 'Finalizar' : 'Finalizar'),
                       style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(0, 48),
                         backgroundColor: AppTheme.primaryVigoBlue,
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.symmetric(

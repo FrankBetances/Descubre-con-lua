@@ -11,6 +11,9 @@ import '../../premios/widgets/lua_game_strip.dart';
 import '../widgets/academy_header.dart';
 import '../widgets/selector_idioma_widget.dart';
 import 'capsula_detail_screen.dart';
+import 'guia_atencion_screen.dart';
+import '../../../core/storage/calendario_store.dart';
+import '../../calendario/views/calendario_screen.dart';
 
 /// Los 5 bloques de desarrollo de «Academy · Familias».
 ///
@@ -32,6 +35,9 @@ class BloquesListScreen extends StatefulWidget {
   /// Opcional: sin él las cápsulas se leen, pero no se escuchan.
   final OfflineAudioService? audioService;
 
+  /// Opcional: para acceder ao calendario sincronizado escola-fogar.
+  final CalendarioStore? calendario;
+
   const BloquesListScreen({
     super.key,
     required this.repository,
@@ -39,6 +45,7 @@ class BloquesListScreen extends StatefulWidget {
     this.onLanguageChanged,
     this.premios,
     this.audioService,
+    this.calendario,
   });
 
   @override
@@ -160,6 +167,57 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                   ),
                   const SizedBox(height: AppTheme.spaceXl),
                 ],
+                // Acceso destacado a la Guía de Atención y al Calendario
+                AcademyCard(
+                  icono: Icons.psychology_outlined,
+                  kicker: lang == AppLanguage.gl
+                      ? 'NEURODESENVOLVEMENTO E LINGUAS'
+                      : 'NEURODESARROLLO Y LENGUAS',
+                  titulo: lang == AppLanguage.gl
+                      ? 'Como aprende o cerebro inglés na casa'
+                      : 'Cómo aprende el cerebro inglés en casa',
+                  descripcion: lang == AppLanguage.gl
+                      ? 'Capacidade de atención por idades (0-3 anos), período de silencio e micro-rutinas sen pantallas.'
+                      : 'Capacidad de atención por edades (0-3 años), período de silencio y micro-rutinas sin pantallas.',
+                  meta: lang == AppLanguage.gl
+                      ? 'Guía interactiva'
+                      : 'Guía interactiva',
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => GuiaAtencionScreen(
+                        initialLanguage: _language,
+                        onLanguageChanged: _onToggleLanguage,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppTheme.spaceMd),
+                AcademyCard(
+                  icono: Icons.calendar_month_rounded,
+                  kicker: lang == AppLanguage.gl
+                      ? 'SINCRONIZACIÓN ESCOLA-FOGAR'
+                      : 'SINCRONIZACIÓN ESCUELA-HOGAR',
+                  titulo: lang == AppLanguage.gl
+                      ? 'Calendario Escola · Fogar'
+                      : 'Calendario Escuela · Hogar',
+                  descripcion: lang == AppLanguage.gl
+                      ? '10 meses de conexión coa aula: revisa a asemblea matinal e rexistra o xogo de 3 min na casa.'
+                      : '10 meses de conexión con el aula: revisa la asamblea matinal y registra el juego de 3 min en casa.',
+                  meta: lang == AppLanguage.gl
+                      ? 'Dobre estimulación'
+                      : 'Doble estimulación',
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => CalendarioScreen(
+                        store: widget.calendario ?? CalendarioStore(),
+                        initialLanguage: _language,
+                        onLanguageChanged: _onToggleLanguage,
+                        esDocenteInicial: false,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppTheme.spaceXl),
                 Text(
                   _disponibles.resolve(lang),
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(

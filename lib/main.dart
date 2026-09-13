@@ -7,10 +7,13 @@ import 'core/theme/app_theme.dart';
 import 'data/models/capsula_model.dart';
 import 'data/models/unidad_model.dart';
 import 'data/repositories/content_repository.dart';
+import 'core/storage/calendario_store.dart';
 import 'features/academy/views/bloques_list_screen.dart';
 import 'features/academy/views/capsula_detail_screen.dart';
+import 'features/academy/views/guia_atencion_screen.dart';
 import 'features/academy/widgets/selector_idioma_widget.dart';
 import 'features/bienvenida/welcome_screen.dart';
+import 'features/calendario/views/calendario_screen.dart';
 import 'features/creditos/credits_screen.dart';
 import 'features/premios/premios_repository.dart';
 import 'features/premios/premios_screen.dart';
@@ -31,6 +34,7 @@ void main() async {
 class DescubreConLuaApp extends StatefulWidget {
   final ContentRepository? contentRepository;
   final PremiosRepository? premiosRepository;
+  final CalendarioStore? calendarioStore;
   final OfflineAudioService? audioService;
   final AppLanguage initialLanguage;
 
@@ -38,6 +42,7 @@ class DescubreConLuaApp extends StatefulWidget {
     super.key,
     this.contentRepository,
     this.premiosRepository,
+    this.calendarioStore,
     this.audioService,
     this.initialLanguage = AppLanguage.gl,
   });
@@ -50,6 +55,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
   late AppLanguage _currentLanguage;
   late final ContentRepository _repository;
   late final PremiosRepository _premios;
+  late final CalendarioStore _calendario;
   late final OfflineAudioService _audioService;
   bool _createdInternalAudioService = false;
 
@@ -60,6 +66,8 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
     _repository = widget.contentRepository ?? ContentRepository();
     _premios = widget.premiosRepository ?? PremiosRepository();
     _premios.cargar();
+    _calendario = widget.calendarioStore ?? CalendarioStore();
+    _calendario.cargar();
     if (widget.audioService != null) {
       _audioService = widget.audioService!;
     } else {
@@ -118,6 +126,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
         '/home': (context) => HomeScreen(
               repository: _repository,
               premios: _premios,
+              calendario: _calendario,
               audioService: _audioService,
               currentLanguage: _currentLanguage,
               onToggleLanguage: _toggleLanguage,
@@ -126,6 +135,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
         '/academy': (context) => BloquesListScreen(
               repository: _repository,
               premios: _premios,
+              calendario: _calendario,
               audioService: _audioService,
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
@@ -133,7 +143,17 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
         '/juega': (context) => UnidadesListScreen(
               repository: _repository,
               premios: _premios,
+              calendario: _calendario,
               audioService: _audioService,
+              initialLanguage: _currentLanguage,
+              onLanguageChanged: _setLanguage,
+            ),
+        '/calendario': (context) => CalendarioScreen(
+              store: _calendario,
+              initialLanguage: _currentLanguage,
+              onLanguageChanged: _setLanguage,
+            ),
+        '/guia-atencion': (context) => GuiaAtencionScreen(
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
             ),
@@ -159,6 +179,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               builder: (context) => AsambleaGuiadaScreen(
                 unidad: unidad,
                 premios: _premios,
+                calendario: _calendario,
                 audioService: _audioService,
                 initialLanguage: _currentLanguage,
                 onLanguageChanged: _setLanguage,
@@ -178,6 +199,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
 class HomeScreen extends StatelessWidget {
   final ContentRepository repository;
   final PremiosRepository? premios;
+  final CalendarioStore? calendario;
   final OfflineAudioService audioService;
   final AppLanguage currentLanguage;
   final VoidCallback onToggleLanguage;
@@ -191,6 +213,7 @@ class HomeScreen extends StatelessWidget {
     required this.onToggleLanguage,
     this.onLanguageChanged,
     this.premios,
+    this.calendario,
   });
 
   static const _appBarTitle = LocalizedString(
@@ -211,6 +234,16 @@ class HomeScreen extends StatelessWidget {
   static const _juegaSubtitle = LocalizedString(
     gl: 'Para docentes: unidades temáticas de Vigo, asamblea guiada con canción a pulso offline, exploración sensorial e matemáticas temperás.',
     es: 'Para docentes: unidades temáticas de Vigo, asamblea guiada con canción a pulso offline, exploración sensorial y matemáticas tempranas.',
+  );
+
+  static const _calendarioTitle = LocalizedString(
+    gl: 'Calendario Escola · Fogar',
+    es: 'Calendario Escuela · Hogar',
+  );
+
+  static const _calendarioSubtitle = LocalizedString(
+    gl: 'Sincronización curricular de 10 meses (Setembro a Xuño): asambleas na aula e micro-rutinas de 3 min na casa para dobre estimulación sen pantallas.',
+    es: 'Sincronización curricular de 10 meses (Septiembre a Junio): asambleas en el aula y micro-rutinas de 3 min en casa para doble estimulación sin pantallas.',
   );
 
   static const _academyTitle = LocalizedString(
@@ -290,6 +323,7 @@ class HomeScreen extends StatelessWidget {
                     builder: (context) => UnidadesListScreen(
                       repository: repository,
                       premios: premios,
+                      calendario: calendario,
                       audioService: audioService,
                       initialLanguage: currentLanguage,
                       onLanguageChanged: onLanguageChanged,
@@ -311,7 +345,29 @@ class HomeScreen extends StatelessWidget {
                     builder: (context) => BloquesListScreen(
                       repository: repository,
                       premios: premios,
+                      calendario: calendario,
                       audioService: audioService,
+                      initialLanguage: currentLanguage,
+                      onLanguageChanged: onLanguageChanged,
+                    ),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 16.0),
+            _buildModuleCard(
+              context: context,
+              title: _calendarioTitle.resolve(currentLanguage),
+              description: _calendarioSubtitle.resolve(currentLanguage),
+              icon: Icons.calendar_month_outlined,
+              buttonText: isGl
+                  ? 'Ver Calendario Escola · Fogar'
+                  : 'Ver Calendario Escuela · Hogar',
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => CalendarioScreen(
+                      store: calendario ?? CalendarioStore(),
                       initialLanguage: currentLanguage,
                       onLanguageChanged: onLanguageChanged,
                     ),
