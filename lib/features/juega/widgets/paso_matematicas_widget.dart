@@ -33,39 +33,35 @@ class PasoMatematicasWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Title & Concept
-        Row(
-          children: [
-            Expanded(
-              child: Text(
-                isGl
-                    ? 'Matemáticas temperás (0-3)'
-                    : 'Matemáticas tempranas (0-3)',
-                style: theme.textTheme.headlineSmall?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: AppTheme.primaryVigoBlue,
-                  fontSize: 22.0,
-                ),
-              ),
+        // El concepto DEBAJO del título y a todo el ancho, no apretado a su
+        // derecha. Ahí dentro cabía «Grande/Pequeno» y nada más: en cuanto el
+        // concepto del mes fue «Pesado e lixeiro: o oso e o paxaro»,
+        // desbordaba 192 px. Un concepto es una frase, no una etiqueta.
+        Text(
+          isGl ? 'Matemáticas temperás (0-3)' : 'Matemáticas tempranas (0-3)',
+          style: theme.textTheme.headlineSmall?.copyWith(
+            fontWeight: FontWeight.bold,
+            color: AppTheme.primaryVigoBlue,
+            fontSize: 22.0,
+          ),
+        ),
+        const SizedBox(height: 10.0),
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+          decoration: BoxDecoration(
+            color: AppTheme.calmSage.withValues(alpha: 0.2),
+            borderRadius: BorderRadius.circular(12.0),
+            border: Border.all(color: AppTheme.calmSage, width: 1.5),
+          ),
+          child: Text(
+            matematicas.concepto.resolve(language),
+            style: const TextStyle(
+              color: Color(0xFF235A42),
+              fontWeight: FontWeight.bold,
+              fontSize: 14.0,
             ),
-            Container(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
-              decoration: BoxDecoration(
-                color: AppTheme.calmSage.withValues(alpha: 0.2),
-                borderRadius: BorderRadius.circular(12.0),
-                border: Border.all(color: AppTheme.calmSage, width: 1.5),
-              ),
-              child: Text(
-                matematicas.concepto.resolve(language),
-                style: const TextStyle(
-                  color: Color(0xFF235A42),
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14.0,
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
         const SizedBox(height: 16.0),
 
@@ -89,13 +85,15 @@ class PasoMatematicasWidget extends StatelessWidget {
                       size: 24,
                     ),
                     const SizedBox(width: 10),
-                    Text(
-                      isGl
-                          ? 'Enfoque da actividade:'
-                          : 'Enfoque de la actividad:',
-                      style: theme.textTheme.titleSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                        color: AppTheme.primaryVigoBlue,
+                    Expanded(
+                      child: Text(
+                        isGl
+                            ? 'Enfoque da actividade:'
+                            : 'Enfoque de la actividad:',
+                        style: theme.textTheme.titleSmall?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: AppTheme.primaryVigoBlue,
+                        ),
                       ),
                     ),
                   ],

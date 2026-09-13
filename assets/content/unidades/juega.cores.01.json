@@ -1,0 +1,369 @@
+{
+  "id": "juega.cores.01",
+  "tramoEtario": "0-3",
+  "orden": 7,
+  "titulo": {
+    "gl": "Cores, aros e froita da merenda",
+    "es": "Colores, aros y fruta de la merienda"
+  },
+  "subtitulo": {
+    "gl": "Unidade de discriminación visual e gusto",
+    "es": "Unidad de discriminación visual y gusto"
+  },
+  "descripcion": {
+    "gl": "Unidade de marzo arredor da cor e da forma redonda, coa merenda como excusa: a mazá vermella, o aro amarelo e a laranxa que rola. A cor non se ensina de memoria, búscase e tócase.",
+    "es": "Unidad de marzo en torno al color y a la forma redonda, con la merienda como excusa: la manzana roja, el aro amarillo y la naranja que rueda. El color no se enseña de memoria, se busca y se toca."
+  },
+  "cancionPulso": {
+    "titulo": {
+      "gl": "Busca a cor",
+      "es": "Busca el color"
+    },
+    "letraConPulsos": {
+      "gl": "* Ver-me-llo, * ver-me-llo, * on-de * es-tás?\n* A-ma-re-lo, * a-ma-re-lo, * ven * a-quí.\n* Rola * o aro, * rola * re-don-do,\n* to-ca, * to-ca, * e * gar-da.",
+      "es": "* Ro-jo, * ro-jo, * ¿dón-de * es-tás?\n* A-ma-ri-llo, * a-ma-ri-llo, * ven * a-quí.\n* Rue-da * el a-ro, * rue-da * re-don-do,\n* to-ca, * to-ca, * y * guar-da."
+    },
+    "bpm": 72,
+    "consignaDocente": {
+      "gl": "Ter na man o obxecto da cor que se canta. A palabra soa sen obxecto diante non ensina a cor a esta idade.",
+      "es": "Tener en la mano el objeto del color que se canta. La palabra sola sin objeto delante no enseña el color a esta edad."
+    },
+    "audioAsset": {
+      "gl": "assets/voice/gl_tutor_04eef6c9_156.m4a",
+      "es": "assets/voice/es_tutor_ca8e09d2_157.m4a"
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa merenda na praza",
+      "es": "Lúa merienda en la plaza"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "A gata Lúa senta na praza da Princesa cun anaco de mazá vermella na man. Está doce e fai crac ao mordela.",
+          "es": "La gata Lúa se sienta en la plaza de la Princesa con un trozo de manzana roja en la mano. Está dulce y hace crac al morderla."
+        },
+        "preguntaComprension": {
+          "gl": "De que cor é a mazá? Está doce ou está agria?",
+          "es": "¿De qué color es la manzana? ¿Está dulce o está agria?"
+        },
+        "ingles": [
+          "Red",
+          "Sweet",
+          "Red apple, sweet and yummy!"
+        ]
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Ao lado hai unha laranxa redonda. Lúa dálle un toque e a laranxa rola, rola e rola ata parar.",
+          "es": "Al lado hay una naranja redonda. Lúa le da un toque y la naranja rueda, rueda y rueda hasta pararse."
+        },
+        "preguntaComprension": {
+          "gl": "Que fai a laranxa cando Lúa a toca? Por que rola?",
+          "es": "¿Qué hace la naranja cuando Lúa la toca? ¿Por qué rueda?"
+        },
+        "ingles": [
+          "Roll",
+          "Roll the circle",
+          "Circle"
+        ]
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "Lúa busca todo o que sexa amarelo: un aro, unha flor e o sol que quenta a praza.",
+          "es": "Lúa busca todo lo que sea amarillo: un aro, una flor y el sol que calienta la plaza."
+        },
+        "preguntaComprension": {
+          "gl": "Que cousas amarelas atopou Lúa? Vedes algo amarelo na aula?",
+          "es": "¿Qué cosas amarillas encontró Lúa? ¿Veis algo amarillo en el aula?"
+        },
+        "ingles": [
+          "Yellow",
+          "Find something red"
+        ]
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "mazan",
+      "palabra": {
+        "gl": "Mazá",
+        "es": "Manzana"
+      },
+      "definicionBreve": {
+        "gl": "Froita redonda e doce que se come na merenda.",
+        "es": "Fruta redonda y dulce que se come en la merienda."
+      },
+      "ingles": "Apple",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_c8465376_4.m4a",
+        "es": "assets/voice/es_slow_4ff29137_7.m4a"
+      }
+    },
+    {
+      "id": "laranxa",
+      "palabra": {
+        "gl": "Laranxa",
+        "es": "Naranja"
+      },
+      "definicionBreve": {
+        "gl": "Froita redonda que rola e ten a cor do seu nome.",
+        "es": "Fruta redonda que rueda y tiene el color de su nombre."
+      },
+      "ingles": "Orange",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_3bbeb7e0_7.m4a",
+        "es": "assets/voice/es_slow_0da5a780_7.m4a"
+      }
+    },
+    {
+      "id": "aro",
+      "palabra": {
+        "gl": "Aro",
+        "es": "Aro"
+      },
+      "definicionBreve": {
+        "gl": "Círculo de plástico que rola polo chan da aula.",
+        "es": "Círculo de plástico que rueda por el suelo del aula."
+      },
+      "ingles": "Hoop",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_98fb4f2f_3.m4a",
+        "es": "assets/voice/es_slow_98fb4f2f_3.m4a"
+      }
+    },
+    {
+      "id": "vermello",
+      "palabra": {
+        "gl": "Vermello",
+        "es": "Rojo"
+      },
+      "definicionBreve": {
+        "gl": "A cor da mazá e dos tomates.",
+        "es": "El color de la manzana y de los tomates."
+      },
+      "ingles": "Red",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_d7b7185d_8.m4a",
+        "es": "assets/voice/es_slow_963197d9_4.m4a"
+      }
+    },
+    {
+      "id": "amarelo",
+      "palabra": {
+        "gl": "Amarelo",
+        "es": "Amarillo"
+      },
+      "definicionBreve": {
+        "gl": "A cor do sol e dos plátanos.",
+        "es": "El color del sol y de los plátanos."
+      },
+      "ingles": "Yellow",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_d831d4de_7.m4a",
+        "es": "assets/voice/es_slow_647afeb0_8.m4a"
+      }
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Onde está o aro amarelo?",
+        "es": "¿Dónde está el aro amarillo?"
+      },
+      "respuestaSugerida": {
+        "gl": "Tocalo co pé ou coa man, ou mirar cara a el.",
+        "es": "Tocarlo con el pie o con la mano, o mirar hacia él."
+      },
+      "consejoDocente": {
+        "gl": "Dous aros no chan, non seis: coa metade das opcións, o dobre de acertos.",
+        "es": "Dos aros en el suelo, no seis: con la mitad de opciones, el doble de aciertos."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Que froita é redonda e rola?",
+        "es": "¿Qué fruta es redonda y rueda?"
+      },
+      "respuestaSugerida": {
+        "gl": "Sinalar a laranxa, facela rolar ou dicir o nome.",
+        "es": "Señalar la naranja, hacerla rodar o decir el nombre."
+      },
+      "consejoDocente": {
+        "gl": "Deixar que a fagan rolar antes de preguntar. O movemento é a explicación.",
+        "es": "Dejar que la hagan rodar antes de preguntar. El movimiento es la explicación."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Por que a laranxa rola e a caixa non?",
+        "es": "¿Por qué la naranja rueda y la caja no?"
+      },
+      "respuestaSugerida": {
+        "gl": "Porque unha é redonda e a outra ten esquinas.",
+        "es": "Porque una es redonda y la otra tiene esquinas."
+      },
+      "consejoDocente": {
+        "gl": "Poñer as dúas nunha rampla suave e deixar que o vexan pasar.",
+        "es": "Poner las dos en una rampa suave y dejar que lo vean pasar."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "O que rola e o que non",
+      "es": "Lo que rueda y lo que no"
+    },
+    "materiales": [
+      {
+        "gl": "Aros de plástico de cores lisas, de máis de 25 cm de diámetro.",
+        "es": "Aros de plástico de colores lisos, de más de 25 cm de diámetro."
+      },
+      {
+        "gl": "Unha laranxa enteira sen pelar e unha caixa de cartón pequena.",
+        "es": "Una naranja entera sin pelar y una caja de cartón pequeña."
+      },
+      {
+        "gl": "Unha táboa lisa apoiada nun libro groso, a modo de rampla suave.",
+        "es": "Una tabla lisa apoyada en un libro grueso, a modo de rampa suave."
+      },
+      {
+        "gl": "Anacos de mazá cortados en bastón fino, servidos aparte no prato.",
+        "es": "Trozos de manzana cortados en bastón fino, servidos aparte en el plato."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Soltar a laranxa pola rampla e seguila coa mirada ata que para.",
+        "es": "Soltar la naranja por la rampa y seguirla con la mirada hasta que para."
+      },
+      {
+        "gl": "Soltar a caixa pola mesma rampla e ver que non rola igual.",
+        "es": "Soltar la caja por la misma rampa y ver que no rueda igual."
+      },
+      {
+        "gl": "Repartir os aros e facelos rolar polo chan con axuda.",
+        "es": "Repartir los aros y hacerlos rodar por el suelo con ayuda."
+      },
+      {
+        "gl": "Rematar sentadas, lavadas as mans, probando o bastón de mazá.",
+        "es": "Terminar sentadas, lavadas las manos, probando el bastón de manzana."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. A laranxa é material de OBSERVACIÓN e non se come nin se despeza na sesión. A mazá córtase SEMPRE en bastón fino no sentido longo, nunca en rodajas nin en dados, porque a rodaja é unha das formas de maior risco de atragoamento; sérvese sentadas e con supervisión directa, e só a quen xa tome sólidos. Consúltense as alerxias do grupo antes de ofrecer nada.",
+      "es": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. La naranja es material de OBSERVACIÓN y no se come ni se despieza en la sesión. La manzana se corta SIEMPRE en bastón fino en sentido longitudinal, nunca en rodajas ni en dados, porque la rodaja es una de las formas de mayor riesgo de atragantamiento; se sirve sentadas y con supervisión directa, y solo a quien ya tome sólidos. Consúltense las alergias del grupo antes de ofrecer nada."
+    },
+    "objetivoSensorial": {
+      "gl": "Asociar forma e movemento, e discriminar cores primarias con obxectos reais.",
+      "es": "Asociar forma y movimiento, y discriminar colores primarios con objetos reales."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Redondo: a forma que rola",
+      "es": "Redondo: la forma que rueda"
+    },
+    "descripcion": {
+      "gl": "A primeira forma xeométrica non se aprende debuxada senón empurrada: o que é redondo rola e o que ten esquinas para.",
+      "es": "La primera forma geométrica no se aprende dibujada sino empujada: lo que es redondo rueda y lo que tiene esquinas se para."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Repasar co dedo o bordo do aro dando a volta enteira.",
+        "es": "Repasar con el dedo el borde del aro dando la vuelta entera."
+      },
+      {
+        "gl": "Buscar outras cousas redondas na aula: o reloxo, un prato, unha pelota.",
+        "es": "Buscar otras cosas redondas en el aula: el reloj, un plato, una pelota."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Redondo / Con esquinas, Rola / Para, Igual / Distinto",
+      "es": "Redondo / Con esquinas, Rueda / Para, Igual / Distinto"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe buscamos cores coa gata Lúa: o vermello da mazá e o amarelo do sol. E descubrimos que o redondo rola e a caixa non.",
+      "es": "Hoy buscamos colores con la gata Lúa: el rojo de la manzana y el amarillo del sol. Y descubrimos que lo redondo rueda y la caja no."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "Na merenda, ensinar o anaco de mazá antes de darllo e dicir 'Red apple, sweet and yummy!'.",
+        "es": "En la merienda, enseñar el trozo de manzana antes de dárselo y decir 'Red apple, sweet and yummy!'."
+      },
+      {
+        "gl": "Na compra, pedir que busque algo vermello nas caixas da froita antes de collelo.",
+        "es": "En la compra, pedir que busque algo rojo en las cajas de la fruta antes de cogerlo."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "Nomear a cor xunto ao obxecto —'mazá vermella'— e non a cor soa. A esta idade a cor viaxa pegada á cousa.",
+      "es": "Nombrar el color junto al objeto —'manzana roja'— y no el color solo. A esta edad el color viaja pegado a la cosa."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_2_descubrimento_contorna",
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA2.1",
+      "CA2.2",
+      "CA3.1"
+    ]
+  },
+  "ingles": {
+    "frase": "Red apple, sweet and yummy!",
+    "porFase": {
+      "pulso": [
+        "Red",
+        "Yellow",
+        "Find something red"
+      ],
+      "conto": [
+        "Red",
+        "Sweet",
+        "Yellow",
+        "Circle"
+      ],
+      "preguntas": [
+        "Yellow",
+        "Circle"
+      ],
+      "exploracion": [
+        "Roll",
+        "Roll the circle",
+        "Shake the bottle"
+      ],
+      "matematicas": [
+        "Circle",
+        "Roll"
+      ],
+      "ponteCasa": [
+        "Red apple, sweet and yummy!",
+        "Sweet"
+      ]
+    },
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-13",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

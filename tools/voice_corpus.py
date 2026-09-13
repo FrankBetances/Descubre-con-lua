@@ -199,6 +199,12 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
             if pagina.get("preguntaComprension"):
                 _add(_localized(pagina["preguntaComprension"]), "tutor",
                      f"{unit_id}/cuento/{i}/pregunta", seen)
+            # El inglés de ESA página: lo que la persona adulta dice mientras la
+            # lee. Va aquí y no en porFase porque la docente tiene delante la
+            # página, no la fase.
+            for texto in pagina.get("ingles") or []:
+                _one(str(texto), "en", estilo_ingles(str(texto)),
+                     f"{unit_id}/cuento/{i}/ingles", seen)
 
         for pregunta in data.get("preguntas") or []:
             if not isinstance(pregunta, dict):
@@ -217,6 +223,11 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
             if item.get("palabra"):
                 _add(_localized(item["palabra"]), "slow",
                      f"{unit_id}/vocabulario/{item_id}", seen)
+            # La palabra inglesa, al lado de la galega y la castellana: la
+            # tarjeta las enseña juntas y las tres se pueden oír.
+            if item.get("ingles"):
+                _one(str(item["ingles"]), "en", estilo_ingles(str(item["ingles"])),
+                     f"{unit_id}/vocabulario/{item_id}/ingles", seen)
             # `definicionBreve` NO entra en el corpus: hoy no hay ninguna
             # pantalla que pinte el vocabulario, así que esas grabaciones
             # viajarían en el APK sin que nada pudiera reproducirlas. Entra el

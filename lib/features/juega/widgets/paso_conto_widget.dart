@@ -19,11 +19,16 @@ class PasoContoWidget extends StatefulWidget {
   /// más falta hace oír la pronunciación modelo en galego.
   final OfflineAudioService? audioService;
 
+  /// Avisa de qué página se está leyendo, para que la barra de inglés anclada
+  /// enseñe lo que se dice EN ESA PÁGINA y no un resumen de todo el cuento.
+  final ValueChanged<int>? onPaginaCambiada;
+
   const PasoContoWidget({
     super.key,
     required this.cuento,
     required this.language,
     this.audioService,
+    this.onPaginaCambiada,
   });
 
   @override
@@ -32,6 +37,11 @@ class PasoContoWidget extends StatefulWidget {
 
 class _PasoContoWidgetState extends State<PasoContoWidget> {
   int _currentPageIndex = 0;
+
+  void _irAPagina(int indice) {
+    setState(() => _currentPageIndex = indice);
+    widget.onPaginaCambiada?.call(indice);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -68,21 +78,26 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                 ),
               ),
             ),
-            Container(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
-              decoration: BoxDecoration(
-                color: AppTheme.secondarySeaGlass.withValues(alpha: 0.2),
-                borderRadius: BorderRadius.circular(8.0),
-              ),
-              child: Text(
-                isGl
-                    ? 'Páxina ${_currentPageIndex + 1} de ${pages.length}'
-                    : 'Página ${_currentPageIndex + 1} de ${pages.length}',
-                style: const TextStyle(
-                  color: AppTheme.primaryVigoBlue,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 13.0,
+            const SizedBox(width: 8),
+            Flexible(
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+                decoration: BoxDecoration(
+                  color: AppTheme.secondarySeaGlass.withValues(alpha: 0.2),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                child: Text(
+                  isGl
+                      ? 'Páxina ${_currentPageIndex + 1} de ${pages.length}'
+                      : 'Página ${_currentPageIndex + 1} de ${pages.length}',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: AppTheme.primaryVigoBlue,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 13.0,
+                  ),
                 ),
               ),
             ),
@@ -104,8 +119,10 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
               children: [
                 // Visual illustration container (sober pedagogical frame)
                 Container(
-                  height: 140,
+                  constraints: const BoxConstraints(minHeight: 140),
                   width: double.infinity,
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 12.0, vertical: 16.0),
                   decoration: BoxDecoration(
                     color: const Color(0xFFE8F1F5),
                     borderRadius: BorderRadius.circular(12.0),
@@ -247,27 +264,46 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            OutlinedButton.icon(
-              onPressed: _currentPageIndex > 0
-                  ? () {
-                      setState(() {
-                        _currentPageIndex--;
-                      });
-                    }
-                  : null,
-              icon: const Icon(Icons.arrow_back),
-              label: Text(isGl ? 'Páxina anterior' : 'Página anterior'),
+            // Expanded y etiqueta corta: «Páxina anterior» y «Seguinte páxina»
+            // juntos desbordaban 308 px en 360 dp, ya a escala normal. La
+            // flecha dice la dirección; la palabra larga sobraba.
+            Expanded(
+              child: OutlinedButton.icon(
+                onPressed: _currentPageIndex > 0
+                    ? () => _irAPagina(_currentPageIndex - 1)
+                    : null,
+                icon: const Icon(Icons.arrow_back),
+                // Dos líneas, no puntos suspensivos: «Páxina anterior» es lo
+                // que distingue este botón del de cambiar de FASE, que también
+                // dice «Anterior». Cortarlo dejaba dos botones iguales.
+                label: Text(
+                  isGl ? 'Páxina\nanterior' : 'Página\nanterior',
+                  maxLines: 2,
+                  textAlign: TextAlign.center,
+                ),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(0, 48),
+                  padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                ),
+              ),
             ),
-            OutlinedButton.icon(
-              onPressed: _currentPageIndex < pages.length - 1
-                  ? () {
-                      setState(() {
-                        _currentPageIndex++;
-                      });
-                    }
-                  : null,
-              icon: const Icon(Icons.arrow_forward),
-              label: Text(isGl ? 'Seguinte páxina' : 'Siguiente página'),
+            const SizedBox(width: 12),
+            Expanded(
+              child: OutlinedButton.icon(
+                onPressed: _currentPageIndex < pages.length - 1
+                    ? () => _irAPagina(_currentPageIndex + 1)
+                    : null,
+                icon: const Icon(Icons.arrow_forward),
+                label: Text(
+                  isGl ? 'Páxina\nseguinte' : 'Página\nsiguiente',
+                  maxLines: 2,
+                  textAlign: TextAlign.center,
+                ),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(0, 48),
+                  padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                ),
+              ),
             ),
           ],
         ),

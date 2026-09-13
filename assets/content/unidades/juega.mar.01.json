@@ -1,7 +1,7 @@
 {
   "id": "juega.mar.01",
   "tramoEtario": "0-3",
-  "orden": 1,
+  "orden": 10,
   "titulo": {
     "gl": "Explorando o Mar de Vigo: A nosa Ría",
     "es": "Explorando el Mar de Vigo: Nuestra Ría"
@@ -48,7 +48,11 @@
         "preguntaComprension": {
           "gl": "Que ten Lúa na man? Mirade como brilla a auga!",
           "es": "¿Qué tiene Lúa en la mano? ¡Mirad cómo brilla el agua!"
-        }
+        },
+        "ingles": [
+          "Sea",
+          "Blue"
+        ]
       },
       {
         "orden": 2,
@@ -59,7 +63,11 @@
         "preguntaComprension": {
           "gl": "Onde está a gaivota? Que son fai cando voa alto?",
           "es": "¿Dónde está la gaviota? ¿Qué sonido hace cuando vuela alto?"
-        }
+        },
+        "ingles": [
+          "Fish",
+          "Swim"
+        ]
       },
       {
         "orden": 3,
@@ -70,7 +78,11 @@
         "preguntaComprension": {
           "gl": "A quen saúda Lúa antes de marchar para a casa?",
           "es": "¿A quién saluda Lúa antes de volver a casa?"
-        }
+        },
+        "ingles": [
+          "Shell",
+          "Goodbye"
+        ]
       }
     ]
   },
@@ -88,7 +100,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_7efb941c_5.m4a",
         "es": "assets/voice/es_slow_7efb941c_5.m4a"
-      }
+      },
+      "ingles": "Boat"
     },
     {
       "id": "gaivota",
@@ -103,7 +116,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_c2d08ad4_7.m4a",
         "es": "assets/voice/es_slow_8ccc609e_7.m4a"
-      }
+      },
+      "ingles": "Seagull"
     },
     {
       "id": "cuncha",
@@ -118,7 +132,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_492e39a1_6.m4a",
         "es": "assets/voice/es_slow_35479b23_6.m4a"
-      }
+      },
+      "ingles": "Shell"
     },
     {
       "id": "mexillon",
@@ -133,7 +148,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_cf99b481_8.m4a",
         "es": "assets/voice/es_slow_349f29ef_8.m4a"
-      }
+      },
+      "ingles": "Mussel"
     },
     {
       "id": "peixe",
@@ -148,7 +164,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_29231976_5.m4a",
         "es": "assets/voice/es_slow_c85081ac_3.m4a"
-      }
+      },
+      "ingles": "Fish"
     }
   ],
   "preguntas": [
@@ -326,7 +343,8 @@
       "conto": [
         "Sea",
         "Fish",
-        "Blue"
+        "Blue",
+        "Shell"
       ],
       "preguntas": [
         "Fish",

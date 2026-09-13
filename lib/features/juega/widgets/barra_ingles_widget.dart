@@ -76,24 +76,31 @@ class BarraInglesFase extends StatelessWidget {
             children: [
               const Icon(Icons.volume_up_rounded, size: 16, color: acento),
               const SizedBox(width: 6),
-              Text(
-                _kicker.resolve(language),
-                style: theme.textTheme.labelSmall?.copyWith(
-                  color: acento,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 1.0,
+              Flexible(
+                child: Text(
+                  _kicker.resolve(language),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: acento,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 1.0,
+                  ),
                 ),
               ),
               const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  _ayuda.resolve(language),
-                  style: theme.textTheme.bodySmall
-                      ?.copyWith(color: AppTheme.textMuted),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
+              // La ayuda es lo primero que sobra cuando no cabe: con el texto
+              // grande del sistema desaparece y el rótulo se queda entero.
+              if (MediaQuery.textScalerOf(context).scale(12) < 18)
+                Flexible(
+                  child: Text(
+                    _ayuda.resolve(language),
+                    style: theme.textTheme.bodySmall
+                        ?.copyWith(color: AppTheme.textMuted),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
                 ),
-              ),
             ],
           ),
           const SizedBox(height: 6),

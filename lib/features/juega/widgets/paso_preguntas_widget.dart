@@ -113,25 +113,31 @@ class PasoPreguntasWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Level Header
+                  // Flexible: «Nivel 3: Causa-efecto e experiencia cotiá» no
+                  // cabe en una pastilla de una línea en 360 dp. Desbordaba
+                  // 300 px y en release solo se veía el texto cortado.
                   Row(
                     children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 10.0,
-                          vertical: 4.0,
-                        ),
-                        decoration: BoxDecoration(
-                          color: levelColor.withValues(alpha: 0.15),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        child: Text(
-                          levelTitle,
-                          style: TextStyle(
-                            color: levelColor == AppTheme.secondarySeaGlass
-                                ? const Color(0xFF1B6A7F)
-                                : levelColor,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13.5,
+                      Flexible(
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 10.0,
+                            vertical: 4.0,
+                          ),
+                          decoration: BoxDecoration(
+                            color: levelColor.withValues(alpha: 0.15),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          child: Text(
+                            levelTitle,
+                            maxLines: 2,
+                            style: TextStyle(
+                              color: levelColor == AppTheme.secondarySeaGlass
+                                  ? const Color(0xFF1B6A7F)
+                                  : levelColor,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 13.5,
+                            ),
                           ),
                         ),
                       ),

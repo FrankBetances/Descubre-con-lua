@@ -46,6 +46,14 @@ INTERPOLATED = re.compile(r"[$]")
 
 ASSET_LITERAL = re.compile(r"""['"](assets/[^'"\s]+)['"]""")
 
+# Las grabaciones son de check_voice_coverage.py, que sabe algo que este gate no
+# sabe: se sintetizan en CI a partir del texto y se comprometen después, así que
+# entre el commit que cambia una frase y el que trae su .m4a hay un hueco
+# legítimo. Aquí se exige que el DIRECTORIO viaje —que es lo que se rompió en el
+# calendario—; que cada fichero exista lo dice el otro gate, y con mejor
+# diagnóstico: nombra la locución que falta, no solo la ruta.
+VOICE_PREFIX = "assets/voice/"
+
 
 def pubspec_asset_entries(pubspec: Path) -> list[str]:
     """The `assets:` entries under `flutter:`, verbatim.
@@ -143,6 +151,7 @@ def main() -> int:
     missing_file: list[tuple[str, set[str]]] = []
     not_packaged: list[tuple[str, set[str]]] = []
     dynamic: list[tuple[str, set[str]]] = []
+    aplazadas: list[str] = []
 
     for path, origins in sorted(asked.items()):
         if INTERPOLATED.search(path):
@@ -157,6 +166,11 @@ def main() -> int:
                 missing_file.append((path, origins))
             elif path not in entries:
                 not_packaged.append((path, origins))
+            continue
+        if path.startswith(VOICE_PREFIX):
+            aplazadas.append(path)
+            if VOICE_PREFIX not in entries:
+                not_packaged.append((VOICE_PREFIX, origins))
             continue
         if not (ROOT / path).is_file():
             missing_file.append((path, origins))
@@ -190,8 +204,11 @@ def main() -> int:
         print("that never finishes loading. That is why this is a gate.")
         return 1
 
-    checked = len(asked) - len(dynamic)
+    checked = len(asked) - len(dynamic) - len(aplazadas)
     print(f"OK: {checked} asset paths exist and are packaged.")
+    if aplazadas:
+        print(f"    {len(aplazadas)} recordings under {VOICE_PREFIX} are")
+        print("    check_voice_coverage.py's, which names the missing locution.")
     if dynamic:
         print(f"    {len(dynamic)} are built at runtime; their directory is packaged:")
         for path, _ in dynamic:

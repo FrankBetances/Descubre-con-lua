@@ -1,0 +1,367 @@
+{
+  "id": "juega.choiva.01",
+  "tramoEtario": "0-3",
+  "orden": 5,
+  "titulo": {
+    "gl": "Botas de auga e charcos de Vigo",
+    "es": "Botas de agua y charcos de Vigo"
+  },
+  "subtitulo": {
+    "gl": "Unidade de autonomía: vestirse para saír á choiva",
+    "es": "Unidad de autonomía: vestirse para salir a la lluvia"
+  },
+  "descripcion": {
+    "gl": "Unidade de xaneiro sobre a roupa de abrigo e a saída á rúa nun mes de choiva. Traballa a secuencia de vestirse —gorro, abrigo, botas— como rutina con principio e final, e o pracer de pisar un charco.",
+    "es": "Unidad de enero sobre la ropa de abrigo y la salida a la calle en un mes de lluvia. Trabaja la secuencia de vestirse —gorro, abrigo, botas— como rutina con principio y final, y el placer de pisar un charco."
+  },
+  "cancionPulso": {
+    "titulo": {
+      "gl": "Poño o gorro, poño as botas",
+      "es": "Me pongo el gorro, me pongo las botas"
+    },
+    "letraConPulsos": {
+      "gl": "* Po-ño * o go-rro, * po-ño * o a-bri-go,\n* zzzip * arri-ba, * xa * es-tou lis-to.\n* Bo-tas * pos-tas, * sai-mos * á rúa,\n* chof * no char-co, * chof * ou-tra vez.",
+      "es": "* Me pon-go * el go-rro, * me pon-go * el a-bri-go,\n* zzzip * arri-ba, * ya * es-toy lis-to.\n* Bo-tas * pues-tas, * sa-li-mos * a la ca-lle,\n* chof * en el char-co, * chof * o-tra vez."
+    },
+    "bpm": 72,
+    "consignaDocente": {
+      "gl": "Facer a mímica enteira aínda que non haxa roupa diante: o xesto de subir a cremalleira é o que se queda.",
+      "es": "Hacer la mímica entera aunque no haya ropa delante: el gesto de subir la cremallera es el que se queda."
+    },
+    "audioAsset": {
+      "gl": "assets/voice/gl_tutor_18661d93_163.m4a",
+      "es": "assets/voice/es_tutor_d37e28ac_184.m4a"
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa sae a pisar charcos",
+      "es": "Lúa sale a pisar charcos"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "Chove en Vigo, como case sempre en xaneiro. A gata Lúa mira pola fiestra e decide saír igual.",
+          "es": "Llueve en Vigo, como casi siempre en enero. La gata Lúa mira por la ventana y decide salir igual."
+        },
+        "preguntaComprension": {
+          "gl": "Que tempo fai? Sae Lúa aínda que chova?",
+          "es": "¿Qué tiempo hace? ¿Sale Lúa aunque llueva?"
+        },
+        "ingles": [
+          "Coat",
+          "Big"
+        ]
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Primeiro o gorro, despois o abrigo e a cremalleira ata arriba: zzzip! Ao final, as botas, unha e outra.",
+          "es": "Primero el gorro, después el abrigo y la cremallera hasta arriba: ¡zzzip! Al final, las botas, una y otra."
+        },
+        "preguntaComprension": {
+          "gl": "Que se pon Lúa primeiro? E ao final?",
+          "es": "¿Qué se pone Lúa primero? ¿Y al final?"
+        },
+        "ingles": [
+          "Hat",
+          "Coat",
+          "Boots",
+          "Put on your hat"
+        ]
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "Na rúa hai un charco grande. Lúa pisa con forza e a auga sáltalle ata os bigotes. Que risa!",
+          "es": "En la calle hay un charco grande. Lúa pisa con fuerza y el agua le salta hasta los bigotes. ¡Qué risa!"
+        },
+        "preguntaComprension": {
+          "gl": "Que fai Lúa no charco? Pisamos nós forte no chan?",
+          "es": "¿Qué hace Lúa en el charco? ¿Pisamos nosotros fuerte en el suelo?"
+        },
+        "ingles": [
+          "Stomp your boots",
+          "Put on your hat! Now boots: stomp, stomp on the floor!"
+        ]
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "gorro",
+      "palabra": {
+        "gl": "Gorro",
+        "es": "Gorro"
+      },
+      "definicionBreve": {
+        "gl": "Peza que se pon na cabeza para que non colla frío.",
+        "es": "Prenda que se pone en la cabeza para que no coja frío."
+      },
+      "ingles": "Hat",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_50f4dcec_5.m4a",
+        "es": "assets/voice/es_slow_50f4dcec_5.m4a"
+      }
+    },
+    {
+      "id": "abrigo",
+      "palabra": {
+        "gl": "Abrigo",
+        "es": "Abrigo"
+      },
+      "definicionBreve": {
+        "gl": "Roupa grosa con cremalleira que se pon por riba de todo.",
+        "es": "Ropa gruesa con cremallera que se pone por encima de todo."
+      },
+      "ingles": "Coat",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_5ecb9269_6.m4a",
+        "es": "assets/voice/es_slow_5ecb9269_6.m4a"
+      }
+    },
+    {
+      "id": "botas",
+      "palabra": {
+        "gl": "Botas",
+        "es": "Botas"
+      },
+      "definicionBreve": {
+        "gl": "Calzado alto de goma para pisar a auga sen mollarse.",
+        "es": "Calzado alto de goma para pisar el agua sin mojarse."
+      },
+      "ingles": "Boots",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_e815caba_5.m4a",
+        "es": "assets/voice/es_slow_e815caba_5.m4a"
+      }
+    },
+    {
+      "id": "charco",
+      "palabra": {
+        "gl": "Charco",
+        "es": "Charco"
+      },
+      "definicionBreve": {
+        "gl": "Auga da choiva que queda parada no chan da rúa.",
+        "es": "Agua de lluvia que queda parada en el suelo de la calle."
+      },
+      "ingles": "Puddle",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_039a058f_6.m4a",
+        "es": "assets/voice/es_slow_039a058f_6.m4a"
+      }
+    },
+    {
+      "id": "paraugas",
+      "palabra": {
+        "gl": "Paraugas",
+        "es": "Paraguas"
+      },
+      "definicionBreve": {
+        "gl": "O que se abre por riba da cabeza cando chove.",
+        "es": "Lo que se abre por encima de la cabeza cuando llueve."
+      },
+      "ingles": "Umbrella",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_cbc7e973_8.m4a",
+        "es": "assets/voice/es_slow_8af33d8f_8.m4a"
+      }
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Onde están as túas botas?",
+        "es": "¿Dónde están tus botas?"
+      },
+      "respuestaSugerida": {
+        "gl": "Sinalar os pés, o percheiro ou traelas.",
+        "es": "Señalar los pies, el perchero o traerlas."
+      },
+      "consejoDocente": {
+        "gl": "Ir a buscalas xa é a resposta completa: a acción conta máis ca a palabra.",
+        "es": "Ir a buscarlas ya es la respuesta completa: la acción cuenta más que la palabra."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Que nos poñemos na cabeza cando chove?",
+        "es": "¿Qué nos ponemos en la cabeza cuando llueve?"
+      },
+      "respuestaSugerida": {
+        "gl": "Dicir 'gorro', levar a man á cabeza ou coller a capucha.",
+        "es": "Decir 'gorro', llevarse la mano a la cabeza o coger la capucha."
+      },
+      "consejoDocente": {
+        "gl": "Aceptar a capucha como resposta: a categoría importa máis ca a palabra exacta.",
+        "es": "Aceptar la capucha como respuesta: la categoría importa más que la palabra exacta."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Por que non nos mollamos os pés se levamos botas?",
+        "es": "¿Por qué no se nos mojan los pies si llevamos botas?"
+      },
+      "respuestaSugerida": {
+        "gl": "Porque a goma non deixa pasar a auga.",
+        "es": "Porque la goma no deja pasar el agua."
+      },
+      "consejoDocente": {
+        "gl": "Verter un chorro de auga sobre unha bota e sobre un calcetín: vese, e así non hai que explicalo.",
+        "es": "Verter un chorro de agua sobre una bota y sobre un calcetín: se ve, y así no hay que explicarlo."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "A auga que resbala e a que empapa",
+      "es": "El agua que resbala y la que empapa"
+    },
+    "materiales": [
+      {
+        "gl": "Unha bota de goma de adulto e un calcetín groso de la.",
+        "es": "Una bota de goma de adulto y un calcetín grueso de lana."
+      },
+      {
+        "gl": "Un pulverizador de auga limpa a temperatura ambiente.",
+        "es": "Un pulverizador de agua limpia a temperatura ambiente."
+      },
+      {
+        "gl": "Unha bandexa con bordo alto para recoller o que caia.",
+        "es": "Una bandeja con borde alto para recoger lo que caiga."
+      },
+      {
+        "gl": "Un paraugas pequeno aberto e apoiado no chan, sen manipular.",
+        "es": "Un paraguas pequeño abierto y apoyado en el suelo, sin manipular."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Tocar a bota seca e o calcetín seco, un en cada man.",
+        "es": "Tocar la bota seca y el calcetín seco, uno en cada mano."
+      },
+      {
+        "gl": "Pulverizar auga sobre a bota e ver as pingas escorregar.",
+        "es": "Pulverizar agua sobre la bota y ver las gotas resbalar."
+      },
+      {
+        "gl": "Pulverizar sobre o calcetín e comprobar que queda mollado.",
+        "es": "Pulverizar sobre el calcetín y comprobar que se queda mojado."
+      },
+      {
+        "gl": "Escoitar as pingas caer sobre a tea do paraugas aberto.",
+        "es": "Escuchar las gotas caer sobre la tela del paraguas abierto."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. O paraugas permanece ABERTO e apoiado no chan durante toda a sesión, e ábreo e péchao só a persoa adulta: as variñas e o peche son un risco de atrapamento de dedos e de golpe nos ollos. Séquese o chan de contado para evitar esvaróns.",
+      "es": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. El paraguas permanece ABIERTO y apoyado en el suelo durante toda la sesión, y lo abre y lo cierra solo la persona adulta: las varillas y el cierre son un riesgo de atrapamiento de dedos y de golpe en los ojos. Séquese el suelo de inmediato para evitar resbalones."
+    },
+    "objetivoSensorial": {
+      "gl": "Distinguir materiais que repelen a auga dos que a absorben, coas mans.",
+      "es": "Distinguir materiales que repelen el agua de los que la absorben, con las manos."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Primeiro e despois: a orde de vestirse",
+      "es": "Primero y después: el orden de vestirse"
+    },
+    "descripcion": {
+      "gl": "A secuencia temporal aparece nunha rutina que xa fan todos os días: hai cousas que van antes e cousas que van despois.",
+      "es": "La secuencia temporal aparece en una rutina que ya hacen todos los días: hay cosas que van antes y cosas que van después."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Poñer en fila no chan gorro, abrigo e botas na orde de uso.",
+        "es": "Poner en fila en el suelo gorro, abrigo y botas en el orden de uso."
+      },
+      {
+        "gl": "Equivocarse a propósito poñendo o gorro no pé e deixar que corrixan.",
+        "es": "Equivocarse a propósito poniendo el gorro en el pie y dejar que corrijan."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Primeiro / Despois, Enriba / Debaixo, Un / Outro",
+      "es": "Primero / Después, Encima / Debajo, Uno / Otro"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe saímos á choiva coa gata Lúa: aprendemos a orde de vestirse —gorro, abrigo, botas— e descubrimos que a auga resbala pola goma e empapa a la.",
+      "es": "Hoy salimos a la lluvia con la gata Lúa: aprendimos el orden de vestirse —gorro, abrigo, botas— y descubrimos que el agua resbala por la goma y empapa la lana."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "Antes de saír á rúa, nomear cada peza mentres se pon dicindo 'Put on your hat! Now boots: stomp, stomp on the floor!'.",
+        "es": "Antes de salir a la calle, nombrar cada prenda mientras se pone diciendo 'Put on your hat! Now boots: stomp, stomp on the floor!'."
+      },
+      {
+        "gl": "Deixar pisar un charco pequeno de camiño a casa. Mollarse un pouco tamén é aprender.",
+        "es": "Dejar pisar un charco pequeño de camino a casa. Mojarse un poco también es aprender."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "Dar tempo a que o intente antes de axudar. Vestirse mal e só ensina máis ca vestirse ben e rápido de mans doutra persoa.",
+      "es": "Dar tiempo a que lo intente antes de ayudar. Vestirse mal y solo enseña más que vestirse bien y rápido de manos de otra persona."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_2_descubrimento_contorna"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA2.1",
+      "CA3.1"
+    ]
+  },
+  "ingles": {
+    "frase": "Put on your hat! Now boots: stomp, stomp on the floor!",
+    "porFase": {
+      "pulso": [
+        "Put on",
+        "Zip your coat",
+        "Coat"
+      ],
+      "conto": [
+        "Hat",
+        "Coat",
+        "Boots"
+      ],
+      "preguntas": [
+        "Boots",
+        "Hat"
+      ],
+      "exploracion": [
+        "Boots",
+        "Big"
+      ],
+      "matematicas": [
+        "Put on",
+        "Take off"
+      ],
+      "ponteCasa": [
+        "Put on your hat! Now boots: stomp, stomp on the floor!",
+        "Stomp your boots"
+      ]
+    },
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-13",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

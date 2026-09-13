@@ -11,6 +11,7 @@ import '../widgets/paso_exploracion_widget.dart';
 import '../widgets/paso_matematicas_widget.dart';
 import 'nota_para_casas_screen.dart';
 import '../widgets/barra_ingles_widget.dart';
+import '../widgets/vocabulario_widget.dart';
 import '../widgets/paso_ponte_casa_widget.dart';
 import '../widgets/paso_preguntas_widget.dart';
 import '../../premios/premios_model.dart';
@@ -59,6 +60,11 @@ class AsambleaGuiadaScreen extends StatefulWidget {
 
 class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
   late int _currentPaso;
+
+  /// La página del cuento que se está leyendo. La barra de inglés la necesita:
+  /// cada página tiene lo suyo que decir, y una lista para todo el cuento deja
+  /// a la docente sin saber cuándo toca cada palabra.
+  int _paginaConto = 0;
   late AppLanguage _language;
   late OfflineAudioService _audioService;
   bool _createdInternalAudioService = false;
@@ -191,6 +197,31 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
     Navigator.of(context).pop();
   }
 
+  /// Si la persona que mira lleva el texto del sistema muy grande.
+  ///
+  /// A partir de aquí la pantalla recoge el adorno para que quepa el
+  /// contenido. El umbral está en el tamaño RESULTANTE, no en el factor: es lo
+  /// que decide si una línea cabe.
+  static bool _textoMoiGrande(BuildContext context) =>
+      MediaQuery.textScalerOf(context).scale(14) > 19;
+
+  /// Lo que se dice en inglés justo ahora.
+  ///
+  /// En el cuento manda la página que se tiene delante; en las demás fases, el
+  /// inglés de la fase. Si una página no lo trae escrito, se cae al de la fase
+  /// en vez de dejar la barra vacía.
+  List<String> _inglesDeAhora() {
+    const faseConto = 1;
+    if (_currentPaso == faseConto) {
+      final paginas = widget.unidad.cuento.paginas;
+      if (_paginaConto >= 0 && _paginaConto < paginas.length) {
+        final dePagina = paginas[_paginaConto].ingles;
+        if (dePagina.isNotEmpty) return dePagina;
+      }
+    }
+    return widget.unidad.ingles.deFase(_currentPaso);
+  }
+
   Widget _buildContenidoDelPaso() {
     final unidad = widget.unidad;
 
@@ -202,10 +233,22 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
           audioService: _audioService,
         );
       case 1:
-        return PasoContoWidget(
-          cuento: unidad.cuento,
-          language: _language,
-          audioService: _audioService,
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            PasoContoWidget(
+              cuento: unidad.cuento,
+              language: _language,
+              audioService: _audioService,
+              onPaginaCambiada: (i) => setState(() => _paginaConto = i),
+            ),
+            const SizedBox(height: AppTheme.spaceLg),
+            VocabularioDaUnidade(
+              items: unidad.vocabulario,
+              language: _language,
+              audioService: _audioService,
+            ),
+          ],
         );
       case 2:
         return PasoPreguntasWidget(
@@ -262,6 +305,12 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
       body: SafeArea(
         child: Column(
           children: [
+            // Con el texto grande del sistema, la pantalla se queda sin sitio:
+            // cabecera, aviso, barra de inglés y navegación sumaban más que el
+            // alto disponible y el conjunto desbordaba por abajo. Lo que sobra
+            // en ese caso es el adorno, no el contenido: el rótulo de la fase
+            // y el aviso de «móbil fóra da vista» se recogen, y la barra de
+            // progreso —que dice lo mismo— se queda.
             // Stepper progress indicator header
             Container(
               padding:
@@ -269,30 +318,43 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
               color: AppTheme.cardSurface,
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        isGl
-                            ? 'Fase ${_currentPaso + 1} de 6'
-                            : 'Fase ${_currentPaso + 1} de 6',
-                        style: const TextStyle(
-                          color: AppTheme.primaryVigoBlue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14.0,
+                  // Flexible en los dos, y no un Row a pelo: «Fase 4 de 6» y
+                  // «4. Exploración sensorial» no caben juntos en 360 dp, y
+                  // menos con el texto grande del sistema. Desbordaba desde
+                  // siempre; en release eso no se ve, el texto se corta.
+                  if (!_textoMoiGrande(context))
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Flexible(
+                          child: Text(
+                            'Fase ${_currentPaso + 1} de 6',
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                              color: AppTheme.primaryVigoBlue,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14.0,
+                            ),
+                          ),
                         ),
-                      ),
-                      Text(
-                        titulosPasos[_currentPaso],
-                        style: const TextStyle(
-                          color: AppTheme.textSlate,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 14.0,
+                        const SizedBox(width: 8),
+                        Flexible(
+                          child: Text(
+                            titulosPasos[_currentPaso],
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            textAlign: TextAlign.end,
+                            style: const TextStyle(
+                              color: AppTheme.textSlate,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14.0,
+                            ),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
+                      ],
+                    ),
+                  if (!_textoMoiGrande(context)) const SizedBox(height: 8),
                   LinearProgressIndicator(
                     value: (_currentPaso + 1) / 6.0,
                     backgroundColor: const Color(0xFFE2DDD0),
@@ -305,48 +367,49 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
               ),
             ),
             // Banner de Asistente Docente: Cero Pantallas e tempo recomendado
-            Container(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-              color: AppTheme.primaryLight,
-              child: Row(
-                children: [
-                  const Icon(Icons.phonelink_erase_rounded,
-                      size: 18, color: AppTheme.primaryDark),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      isGl
-                          ? 'Asistente docente · Móbil fóra da vista · 5-8 min máx.'
-                          : 'Asistente docente · Móvil fuera de la vista · 5-8 min máx.',
-                      style: const TextStyle(
-                        fontSize: 12.0,
-                        fontWeight: FontWeight.bold,
-                        color: AppTheme.primaryDark,
+            if (!_textoMoiGrande(context))
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                color: AppTheme.primaryLight,
+                child: Row(
+                  children: [
+                    const Icon(Icons.phonelink_erase_rounded,
+                        size: 18, color: AppTheme.primaryDark),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        isGl
+                            ? 'Asistente docente · Móbil fóra da vista · 5-8 min máx.'
+                            : 'Asistente docente · Móvil fuera de la vista · 5-8 min máx.',
+                        style: const TextStyle(
+                          fontSize: 12.0,
+                          fontWeight: FontWeight.bold,
+                          color: AppTheme.primaryDark,
+                        ),
                       ),
                     ),
-                  ),
-                  Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: AppTheme.border),
-                    ),
-                    child: const Text(
-                      '~1-2 min',
-                      style: TextStyle(
-                        fontSize: 11.0,
-                        fontWeight: FontWeight.bold,
-                        color: AppTheme.textSecondary,
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: AppTheme.border),
+                      ),
+                      child: const Text(
+                        '~1-2 min',
+                        style: TextStyle(
+                          fontSize: 11.0,
+                          fontWeight: FontWeight.bold,
+                          color: AppTheme.textSecondary,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            const Divider(height: 1),
+            if (!_textoMoiGrande(context)) const Divider(height: 1),
 
             // Main Phase Content View
             Expanded(
@@ -366,7 +429,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
             // que bajar hasta el fondo con doce criaturas delante. Aquí no se
             // mueve: mismo sitio en las seis fases, al alcance del pulgar.
             BarraInglesFase(
-              textos: widget.unidad.ingles.deFase(_currentPaso),
+              textos: _inglesDeAhora(),
               language: _language,
               audioService: _audioService,
             ),
@@ -380,45 +443,66 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                 border: Border(
                     top: BorderSide(color: Color(0xFFE2DDD0), width: 1.0)),
               ),
+              // Expanded en los dos botones y un hueco fijo en medio, en vez
+              // de `Spacer` con botones a su tamaño natural: con el texto
+              // grande del sistema esa fila desbordaba 289 px por la derecha,
+              // y en release eso no se ve: el botón de «Seguinte» se queda a
+              // medias fuera de la pantalla.
               child: Row(
                 children: [
-                  OutlinedButton.icon(
-                    onPressed: _currentPaso > 0 ? _previousPaso : null,
-                    icon: const Icon(Icons.arrow_back),
-                    label: Text(isGl ? 'Anterior' : 'Anterior'),
-                    style: OutlinedButton.styleFrom(
-                      minimumSize: const Size(0, 48),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16.0, vertical: 12.0),
+                  Expanded(
+                    child: OutlinedButton.icon(
+                      onPressed: _currentPaso > 0 ? _previousPaso : null,
+                      icon: const Icon(Icons.arrow_back),
+                      label: Text(
+                        isGl ? 'Anterior' : 'Anterior',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      style: OutlinedButton.styleFrom(
+                        minimumSize: const Size(0, 48),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16.0, vertical: 12.0),
+                      ),
                     ),
                   ),
-                  const Spacer(),
-                  if (_currentPaso < 5)
-                    ElevatedButton.icon(
-                      onPressed: _nextPaso,
-                      icon: const Icon(Icons.arrow_forward),
-                      label: Text(isGl ? 'Seguinte' : 'Siguiente'),
-                      style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(0, 48),
-                        backgroundColor: AppTheme.primaryVigoBlue,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 20.0, vertical: 12.0),
-                      ),
-                    )
-                  else
-                    ElevatedButton.icon(
-                      onPressed: _finalizarAsamblea,
-                      icon: const Icon(Icons.check),
-                      label: Text(isGl ? 'Finalizar' : 'Finalizar'),
-                      style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(0, 48),
-                        backgroundColor: AppTheme.primaryVigoBlue,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 20.0, vertical: 12.0),
-                      ),
-                    ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: _currentPaso < 5
+                        ? ElevatedButton.icon(
+                            key: const Key('boton_seguinte_fase'),
+                            onPressed: _nextPaso,
+                            icon: const Icon(Icons.arrow_forward),
+                            label: Text(
+                              isGl ? 'Seguinte' : 'Siguiente',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              minimumSize: const Size(0, 48),
+                              backgroundColor: AppTheme.primaryVigoBlue,
+                              foregroundColor: Colors.white,
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 12.0, vertical: 12.0),
+                            ),
+                          )
+                        : ElevatedButton.icon(
+                            onPressed: _finalizarAsamblea,
+                            icon: const Icon(Icons.check),
+                            label: Text(
+                              isGl ? 'Finalizar' : 'Finalizar',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              minimumSize: const Size(0, 48),
+                              backgroundColor: AppTheme.primaryVigoBlue,
+                              foregroundColor: Colors.white,
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 12.0, vertical: 12.0),
+                            ),
+                          ),
+                  ),
                 ],
               ),
             ),

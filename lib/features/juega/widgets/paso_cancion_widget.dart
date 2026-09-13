@@ -238,17 +238,22 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                       ),
                     ),
                     const SizedBox(width: 8),
-                    Text(
-                      _isPlaying
-                          ? (isGl
-                              ? 'Reproducindo o recitado da letra'
-                              : 'Reproduciendo el recitado de la letra')
-                          : (isGl
-                              ? 'Recitado da letra detido'
-                              : 'Recitado de la letra detenido'),
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        fontWeight: FontWeight.w600,
-                        color: AppTheme.textSlate,
+                    // Flexible: «Reproduciendo el recitado de la letra» no cabe
+                    // en una línea de 256 dp ni a escala normal.
+                    Flexible(
+                      child: Text(
+                        _isPlaying
+                            ? (isGl
+                                ? 'Reproducindo o recitado da letra'
+                                : 'Reproduciendo el recitado de la letra')
+                            : (isGl
+                                ? 'Recitado da letra detido'
+                                : 'Recitado de la letra detenido'),
+                        maxLines: 2,
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          fontWeight: FontWeight.w600,
+                          color: AppTheme.textSlate,
+                        ),
                       ),
                     ),
                   ],

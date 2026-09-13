@@ -41,8 +41,19 @@ void main() {
         stringLoader: (path) => File(path).readAsString(),
       ),
     );
+    // TODAS las unidades del disco, no una elegida a mano: el test hardcodeaba
+    // `juega.mar.01.json` y por eso siguió en verde mientras el calendario
+    // abría siempre la misma asamblea. Si alguien añade un mes sin unidad, o
+    // le cambia el id a una, esto se entera.
+    final unidades = Directory('assets/content/unidades')
+        .listSync()
+        .whereType<File>()
+        .map((f) => f.path)
+        .where((p) => p.endsWith('.json'))
+        .toList()
+      ..sort();
     await repositorio.initialize(
-      unidadPaths: ['assets/content/unidades/juega.mar.01.json'],
+      unidadPaths: unidades,
       capsulaPaths: const [],
     );
   });
@@ -289,11 +300,21 @@ void main() {
       expect(find.text('Fogar (Familias)'), findsOneWidget);
     });
 
-    testWidgets('un mes sen unidade escrita non abre nada, e dío',
+    testWidgets('os dez meses teñen unidade e o de hoxe ábrese',
         (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
+
+      // Isto é o que Frank pedía: que o calendario sirva en setembro, non só
+      // en xuño. Durante meses houbo UNHA unidade para dez meses.
+      for (final mes in contenido.meses) {
+        expect(mes.unidadId, isNotNull,
+            reason: '${mes.nombreMes.gl} quedou sen unidade');
+        expect(repositorio.getUnidadById(mes.unidadId!), isNotNull,
+            reason:
+                '${mes.nombreMes.gl} apunta a ${mes.unidadId}, que non existe');
+      }
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
@@ -304,20 +325,61 @@ void main() {
       )));
       await tester.pumpAndSettle();
 
-      // La pantalla abre polo mes de hoxe. Só Xuño ten unidade escrita, así
-      // que calquera outro mes ten que dicir «en preparación» en vez de abrir
-      // a asemblea do Mar de Vigo, que é o que facía antes: os dez meses
-      // lanzaban sempre a mesma unidade.
-      final hoxe = contenido.mesParaFecha(DateTime.now());
-      if (hoxe.unidadId == null) {
-        expect(
-            find.byKey(const Key('boton_iniciar_sesion_aula')), findsNothing);
-        expect(
-            find.byKey(const Key('aviso_mes_en_preparacion')), findsOneWidget);
-      } else {
-        expect(
-            find.byKey(const Key('boton_iniciar_sesion_aula')), findsOneWidget);
-      }
+      expect(
+          find.byKey(const Key('boton_iniciar_sesion_aula')), findsOneWidget);
+      expect(find.byKey(const Key('aviso_mes_en_preparacion')), findsNothing);
+    });
+
+    testWidgets('cada mes leva á SÚA unidade, non todos á mesma',
+        (tester) async {
+      // O defecto orixinal: `unidades.first` como rede de seguridade facía que
+      // os dez meses abrisen a asemblea do Mar de Vigo. Dez ids distintos é a
+      // proba de que iso xa non pode pasar.
+      final ids = contenido.meses.map((m) => m.unidadId).toSet();
+      expect(ids.length, contenido.meses.length,
+          reason: 'hai meses compartindo unidade: $ids');
+    });
+
+    testWidgets('un mes sen unidade escrita non abre nada, e dío',
+        (tester) async {
+      tester.view.physicalSize = const Size(600, 1600);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.resetPhysicalSize);
+
+      // Hoxe todos os meses teñen unidade, así que este caso hai que fabricalo:
+      // a rama segue viva e ten que seguir dicindo «en preparación» en vez de
+      // caer noutra unidade calquera, que é o que facía antes.
+      final senUnidade = CalendarioContenido(
+        meses: contenido.meses
+            .map((m) => MesCurricular(
+                  orden: m.orden,
+                  mesCalendario: m.mesCalendario,
+                  icono: m.icono,
+                  nombreMes: m.nombreMes,
+                  centroInteres: m.centroInteres,
+                  objetivoPedagogico: m.objetivoPedagogico,
+                  actividadAula: m.actividadAula,
+                  actividadHogar: m.actividadHogar,
+                  rutinaRecomendadaHogar: m.rutinaRecomendadaHogar,
+                  minutosSugeridos: m.minutosSugeridos,
+                  ingles: m.ingles,
+                  unidadId: null,
+                ))
+            .toList(),
+        guia: contenido.guia,
+      );
+
+      await tester.pumpWidget(_wrap(CalendarioScreen(
+        store: store,
+        contenido: senUnidade,
+        repository: repositorio,
+        initialLanguage: AppLanguage.gl,
+        esDocenteInicial: true,
+      )));
+      await tester.pumpAndSettle();
+
+      expect(find.byKey(const Key('boton_iniciar_sesion_aula')), findsNothing);
+      expect(find.byKey(const Key('aviso_mes_en_preparacion')), findsOneWidget);
     });
 
     testWidgets('o mes que si ten unidade lanza esa unidade, non outra',
@@ -342,8 +404,9 @@ void main() {
       )));
       await tester.pumpAndSettle();
 
-      final mesConUnidade =
-          contenido.meses.firstWhere((m) => m.unidadId != null);
+      // O mes que a pantalla abre soa, que é o de hoxe: se lanzase outro, o
+      // que a docente ten diante e o que se abre non coincidirían.
+      final mesConUnidade = contenido.mesParaFecha(DateTime.now());
 
       // Xuño é o décimo: a fila de meses é horizontal e ese chip nin sequera
       // está construído ata que se empuxa cara alá.
