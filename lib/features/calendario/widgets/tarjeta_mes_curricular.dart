@@ -724,17 +724,17 @@ class _EstadoBadge extends StatelessWidget {
     final (icon, label, color) = switch (estado) {
       EstadoEstimulacion.dobleEstimulacion => (
           Icons.star_rounded,
-          'Dobre ⭐',
+          'Aula e casa',
           _ambar,
         ),
       EstadoEstimulacion.soloAula => (
           Icons.school_rounded,
-          'Aula ✓',
+          'Aula',
           _menta,
         ),
       EstadoEstimulacion.soloHogar => (
           Icons.home_rounded,
-          'Fogar ✓',
+          'Casa',
           _menta,
         ),
       EstadoEstimulacion.sinRegistro => (

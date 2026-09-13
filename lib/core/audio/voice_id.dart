@@ -47,6 +47,17 @@ String voiceAssetId(VoiceStyle style, String text, AppLanguage lang) {
 String voiceAssetPath(VoiceStyle style, String text, AppLanguage lang) =>
     'assets/voice/${voiceAssetId(style, text, lang)}.m4a';
 
+/// El estilo que le toca a una cadena en inglés.
+///
+/// Una palabra suelta se graba DESPACIO, porque existe para que la imiten; en
+/// cuanto hay un espacio es una orden o una frase, y esa se lee a ritmo normal.
+/// La misma regla está en `tools/voice_corpus.py`: si las dos dejaran de
+/// coincidir, la app pediría una grabación con otro identificador y el botón
+/// desaparecería sin que nadie supiera por qué.
+VoiceStyle estiloIngles(String texto) => normalizeVoiceText(texto).contains(' ')
+    ? VoiceStyle.tutor
+    : VoiceStyle.slow;
+
 /// Identifier of the English recording for [text] (synthesised with LJSpeech · piper).
 String englishVoiceAssetId(VoiceStyle style, String text) =>
     voiceAssetId(style, text, AppLanguage.en);

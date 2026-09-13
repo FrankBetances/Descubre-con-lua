@@ -6,10 +6,9 @@ import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/calendario_model.dart';
-import '../../../data/models/capsula_model.dart';
 import '../../../data/models/unidad_model.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../academy/views/capsula_detail_screen.dart';
+import '../../juega/widgets/barra_ingles_widget.dart';
 import '../../academy/views/guia_atencion_screen.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../juega/views/asamblea_guiada_screen.dart';
@@ -30,7 +29,9 @@ typedef IniciarSesionCallback = void Function(
 ///
 /// Permite a docentes y familias sincronizar la estimulación auditiva y motora
 /// del inglés (L3) en torno a centros de interés de Galicia (Decreto 150/2022),
-/// celebrando la **Doble Estimulación** sin estrés ni penalizaciones.
+/// Cada lado —aula y casa— registra SOLO lo suyo: la app no tiene red y un
+/// aparato no sabe lo que pasó en el otro. El puente es la nota que la docente
+/// entrega en mano al terminar la asamblea.
 class CalendarioScreen extends StatefulWidget {
   final CalendarioStore store;
   final AppLanguage initialLanguage;
@@ -76,8 +77,11 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   );
 
   static const _subtitulo = LocalizedString(
-    gl: '10 meses de conexión entre a asemblea e a casa para o dobre de estimulación sen pantallas.',
-    es: '10 meses de conexión entre la asamblea y la casa para el doble de estimulación sin pantallas.',
+    gl: 'Os dez meses do curso. A docente dirixe a asemblea e entrega a nota; '
+        'a familia fai o xogo de tres minutos na casa. Cada lado marca o seu.',
+    es: 'Los diez meses del curso. La docente dirige la asamblea y entrega la '
+        'nota; la familia hace el juego de tres minutos en casa. Cada lado '
+        'marca lo suyo.',
   );
 
   static const _rolDocente =
@@ -85,9 +89,14 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   static const _rolFamilia =
       LocalizedString(gl: 'Fogar (Familias)', es: 'Hogar (Familias)');
 
-  static const _dobleEstimulacionTitulo = LocalizedString(
-    gl: 'Dobre Estimulación Lograda',
-    es: 'Doble Estimulación Lograda',
+  static const _tituloHoxeAula = LocalizedString(
+    gl: 'Hoxe, na aula',
+    es: 'Hoy, en el aula',
+  );
+
+  static const _tituloHoxeFogar = LocalizedString(
+    gl: 'Hoxe, na casa',
+    es: 'Hoy, en casa',
   );
 
   static const _marcarAula = LocalizedString(
@@ -110,9 +119,9 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     es: '¡Asamblea hecha en el aula hoy!',
   );
 
-  static const _lexicoKicker = LocalizedString(
-    gl: 'LÉXICO E COMANDOS TPR EN INGLÉS',
-    es: 'LÉXICO Y COMANDOS TPR EN INGLÉS',
+  static const _fraseKicker = LocalizedString(
+    gl: 'A FRASE EN INGLÉS DESTE MES',
+    es: 'LA FRASE EN INGLÉS DE ESTE MES',
   );
 
   static const _aulaKicker = LocalizedString(
@@ -130,11 +139,6 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     es: 'Iniciar asamblea guiada',
   );
 
-  static const _iniciarHogar = LocalizedString(
-    gl: 'Iniciar micro-rutina no fogar',
-    es: 'Iniciar micro-rutina en el hogar',
-  );
-
   static const _instruccionsBrevesTitulo = LocalizedString(
     gl: 'Instrucións breves para a asemblea:',
     es: 'Instrucciones breves para la asamblea:',
@@ -148,6 +152,13 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   static const _porQueImportaTitulo = LocalizedString(
     gl: 'Por que importa no desenvolvemento:',
     es: 'Por qué importa en el desarrollo:',
+  );
+
+  static const _enPreparacion = LocalizedString(
+    gl: 'A unidade de aula deste mes aínda non está escrita. Cando estea, o '
+        'botón de iniciar a asemblea aparece aquí só.',
+    es: 'La unidad de aula de este mes todavía no está escrita. Cuando lo '
+        'esté, el botón de iniciar la asamblea aparece aquí solo.',
   );
 
   static const _guiaAtencionBoton = LocalizedString(
@@ -196,75 +207,39 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     widget.onLanguageChanged?.call(newLang);
   }
 
+  /// La unidad de aula de ese mes, o `null` si todavía no está escrita.
+  ///
+  /// Antes esto caía en `unidades.first` cuando no encontraba el mes, y como
+  /// solo existe UNA unidad, los diez meses abrían la misma asamblea del Mar
+  /// de Vigo. Un calendario de diez meses sobre contenido de uno. Ahora, si no
+  /// hay unidad, no hay botón: el mes se ve «en preparación» y no miente.
+  Unidad? _unidadDe(MesCurricular mes) {
+    final id = mes.unidadId;
+    if (id == null) return null;
+    return widget.repository?.getUnidadById(id);
+  }
+
   void _lanzarSesion(MesCurricular mes, bool esDocente) {
     if (widget.onIniciarSesion != null) {
       widget.onIniciarSesion!(mes, esDocente);
       return;
     }
 
-    if (esDocente) {
-      final unidades = widget.repository?.getAllUnidades() ?? [];
-      Unidad? unidad;
-      for (final u in unidades) {
-        if (u.orden == mes.orden) {
-          unidad = u;
-          break;
-        }
-      }
-      unidad ??= (unidades.isNotEmpty ? unidades.first : null);
+    final unidad = _unidadDe(mes);
+    if (unidad == null) return;
 
-      if (unidad != null) {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => AsambleaGuiadaScreen(
-              unidad: unidad!,
-              calendario: widget.store,
-              audioService: widget.audioService,
-              premios: widget.premios,
-              initialLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-            ),
-          ),
-        );
-      } else {
-        Navigator.of(context).pushNamed('/juega');
-      }
-    } else {
-      final capsulas = widget.repository?.getAllCapsulas() ?? [];
-      Capsula? capsula;
-      for (final c in capsulas) {
-        if (c.orden == mes.orden) {
-          capsula = c;
-          break;
-        }
-      }
-      capsula ??= (capsulas.isNotEmpty ? capsulas.first : null);
-
-      if (capsula != null) {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => CapsulaDetailScreen(
-              capsula: capsula!,
-              premios: widget.premios,
-              audioService: widget.audioService,
-              initialLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-            ),
-          ),
-        );
-      } else {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => GuiaAtencionScreen(
-              initialLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-              audioService: widget.audioService,
-              contenido: _contenido,
-            ),
-          ),
-        );
-      }
-    }
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => AsambleaGuiadaScreen(
+          unidad: unidad,
+          calendario: widget.store,
+          audioService: widget.audioService,
+          premios: widget.premios,
+          initialLanguage: _language,
+          onLanguageChanged: _onToggleLanguage,
+        ),
+      ),
+    );
   }
 
   @override
@@ -309,8 +284,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           // Estaba fuera, y como AnimatedBuilder solo vuelve a llamar a este
           // closure, el cuerpo se repintaba con el estado viejo: se registraba
           // la asamblea, se guardaba bien en disco, y el cartel seguía
-          // diciendo «aínda non hai nada». La Dobre Estimulación no se
-          // celebraba nunca hasta salir de la pantalla y volver a entrar.
+          // diciendo «aínda non hai nada» hasta salir y volver a entrar.
           final estadoHoy = widget.store.estadoParaFecha(DateTime.now());
           return SingleChildScrollView(
             padding: const EdgeInsets.all(AppTheme.spaceLg),
@@ -469,41 +443,53 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     );
   }
 
+  /// El estado de HOY, del lado que esta persona lleva.
+  ///
+  /// Antes celebraba «Dobre Estimulación (Aula + Fogar)». La app no tiene red:
+  /// el móvil de una familia no sabe si hubo asamblea, y el de la docente no
+  /// sabe lo que pasó en ninguna casa. Las dos casillas solo podían coincidir
+  /// si una misma persona marcaba las dos, así que aquello celebraba un
+  /// autoinforme. Ahora cada lado ve lo suyo, que es lo único que se mide, y
+  /// el puente con el otro lado es la nota que la docente entrega en mano.
   Widget _buildDobleEstimulacionCard(
       EstadoEstimulacion estado, ThemeData theme) {
-    final esDoble = estado == EstadoEstimulacion.dobleEstimulacion;
-    final esAula = estado == EstadoEstimulacion.soloAula;
-    final esHogar = estado == EstadoEstimulacion.soloHogar;
+    final hecho = _esDocente
+        ? (estado == EstadoEstimulacion.soloAula ||
+            estado == EstadoEstimulacion.dobleEstimulacion)
+        : (estado == EstadoEstimulacion.soloHogar ||
+            estado == EstadoEstimulacion.dobleEstimulacion);
 
-    Color cardBg;
-    Color borderColor;
-    String statusText;
+    final cuenta = _esDocente
+        ? widget.store.totalSesionesAula
+        : widget.store.totalSesionesHogar;
 
-    if (esDoble) {
-      cardBg = const Color(0xFFE8F8F5);
-      borderColor = AppTheme.primary;
-      statusText = _language == AppLanguage.gl
-          ? 'Parabéns! Hoxe acadastes a Dobre Estimulación (Aula + Fogar).'
-          : '¡Enhorabuena! Hoy lograsteis la Doble Estimulación (Aula + Hogar).';
-    } else if (esAula) {
-      cardBg = const Color(0xFFFFF9E6);
-      borderColor = AppTheme.star;
-      statusText = _language == AppLanguage.gl
-          ? 'Asemblea feita na aula. Falta o xogo de 3 min na casa!'
-          : 'Asamblea hecha en el aula. ¡Falta el juego de 3 min en casa!';
-    } else if (esHogar) {
+    final Color cardBg;
+    final Color borderColor;
+    final String statusText;
+
+    if (hecho) {
       cardBg = const Color(0xFFF0FDF4);
       borderColor = AppTheme.success;
-      statusText = _language == AppLanguage.gl
-          ? 'Rutina da casa rexistrada. Excelente acompañamento!'
-          : 'Rutina de casa registrada. ¡Excelente acompañamiento!';
+      statusText = _esDocente
+          ? (_language == AppLanguage.gl
+              ? 'Asemblea feita hoxe. Lembra darlles a nota ás familias.'
+              : 'Asamblea hecha hoy. Acuérdate de darles la nota a las familias.')
+          : (_language == AppLanguage.gl
+              ? 'Xogo feito hoxe na casa. Iso é o que conta.'
+              : 'Juego hecho hoy en casa. Eso es lo que cuenta.');
     } else {
       cardBg = Colors.white;
       borderColor = AppTheme.border;
-      statusText = _language == AppLanguage.gl
-          ? 'Días de Dobre Estimulación acumulados: ${widget.store.totalDobleEstimulacion}'
-          : 'Días de Doble Estimulación acumulados: ${widget.store.totalDobleEstimulacion}';
+      statusText = _esDocente
+          ? (_language == AppLanguage.gl
+              ? 'Asembleas rexistradas: $cuenta'
+              : 'Asambleas registradas: $cuenta')
+          : (_language == AppLanguage.gl
+              ? 'Días de xogo na casa: $cuenta'
+              : 'Días de juego en casa: $cuenta');
     }
+
+    final esDoble = hecho;
 
     return Container(
       padding: const EdgeInsets.all(AppTheme.spaceLg),
@@ -525,7 +511,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   children: [
                     Flexible(
                       child: Text(
-                        _dobleEstimulacionTitulo.resolve(_language),
+                        (_esDocente ? _tituloHoxeAula : _tituloHoxeFogar)
+                            .resolve(_language),
                         style: theme.textTheme.titleSmall?.copyWith(
                           fontWeight: FontWeight.bold,
                           color: AppTheme.textPrimary,
@@ -559,6 +546,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     return SizedBox(
       height: 44,
       child: ListView.separated(
+        key: const Key('selector_meses'),
         scrollDirection: Axis.horizontal,
         itemCount: _meses.length,
         separatorBuilder: (_, __) => const SizedBox(width: 8),
@@ -762,51 +750,30 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             ),
             const Divider(height: 32),
 
-            // Léxico en inglés y Comandos TPR
+            // La frase del mes, y solo la frase.
+            //
+            // El léxico y las órdenes TPR vivían aquí como una pared de diez
+            // pastillas. Eso no lo usa nadie: la docente las necesita DENTRO
+            // de la asamblea, en la fase en la que se dicen, y ahí están
+            // ahora. La familia necesita una sola frase, la de su rutina.
             Text(
-              _lexicoKicker.resolve(_language),
+              _fraseKicker.resolve(_language),
               style: theme.textTheme.labelSmall?.copyWith(
-                color: AppTheme.primaryDark,
+                color: BarraInglesFase.acento,
                 fontWeight: FontWeight.w800,
                 letterSpacing: 1.0,
               ),
             ),
             const SizedBox(height: 8),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                // Cada pastilla SUENA. El altavoz no es decoración: se pulsa y
-                // se oye la pronunciación antes de llevarla a la asamblea. La
-                // que no tenga grabación todavía no se pinta.
-                for (final palabra in mes.ingles.lexico)
-                  BotonEscuchar(
-                    audioService: widget.audioService,
-                    texto: palabra,
-                    language: AppLanguage.en,
-                    style: VoiceStyle.slow,
-                    comoChip: true,
-                  ),
-                for (final comando in mes.ingles.tpr)
-                  BotonEscuchar(
-                    audioService: widget.audioService,
-                    texto: comando,
-                    language: AppLanguage.en,
-                    comoChip: true,
-                    colorChip: const Color(0xFFE65100),
-                  ),
-              ],
-            ),
-            if (mes.ingles.frase.isNotEmpty) ...[
-              const SizedBox(height: 10),
+            if (mes.ingles.frase.isNotEmpty)
               BotonEscuchar(
                 audioService: widget.audioService,
                 texto: mes.ingles.frase,
                 language: AppLanguage.en,
+                style: estiloIngles(mes.ingles.frase),
                 comoChip: true,
-                colorChip: AppTheme.primaryInk,
+                colorChip: BarraInglesFase.acento,
               ),
-            ],
             const SizedBox(height: 20),
 
             // Actividad según rol seleccionado
@@ -1087,14 +1054,17 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          BotonLanzarSesion(
-            key: const Key('boton_iniciar_sesion_aula'),
-            label: _iniciarAula.resolve(_language),
-            icon: Icons.play_circle_filled_rounded,
-            backgroundColor: AppTheme.primary,
-            foregroundColor: Colors.white,
-            onPressed: () => _lanzarSesion(mes, true),
-          ),
+          if (_unidadDe(mes) != null)
+            BotonLanzarSesion(
+              key: const Key('boton_iniciar_sesion_aula'),
+              label: _iniciarAula.resolve(_language),
+              icon: Icons.play_circle_filled_rounded,
+              backgroundColor: AppTheme.primary,
+              foregroundColor: Colors.white,
+              onPressed: () => _lanzarSesion(mes, true),
+            )
+          else
+            _AvisoEnPreparacion(texto: _enPreparacion.resolve(_language)),
           const SizedBox(height: AppTheme.spaceSm),
           SizedBox(
             height: 48,
@@ -1142,15 +1112,10 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          BotonLanzarSesion(
-            key: const Key('boton_iniciar_sesion_fogar'),
-            label: _iniciarHogar.resolve(_language),
-            icon: Icons.volunteer_activism_rounded,
-            backgroundColor: const Color(0xFFD97706),
-            foregroundColor: Colors.white,
-            onPressed: () => _lanzarSesion(mes, false),
-          ),
-          const SizedBox(height: AppTheme.spaceSm),
+          // La familia no lanza nada: la rutina del mes ya está arriba, en la
+          // ficha, con su frase y su altavoz. Aquí solo queda marcar que se
+          // hizo. Antes había un botón que abría una cápsula elegida por
+          // descarte —siempre la misma— sin relación con el mes.
           SizedBox(
             height: 48,
             child: OutlinedButton.icon(
@@ -1204,5 +1169,45 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         ],
       );
     }
+  }
+}
+
+/// «Este mes todavía no tiene unidad de aula.»
+///
+/// Se pinta en lugar del botón de iniciar. Es la diferencia entre un calendario
+/// que enseña diez meses y uno que promete diez y abre siempre el mismo.
+class _AvisoEnPreparacion extends StatelessWidget {
+  final String texto;
+
+  const _AvisoEnPreparacion({required this.texto});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      key: const Key('aviso_mes_en_preparacion'),
+      padding: const EdgeInsets.all(AppTheme.spaceMd),
+      decoration: BoxDecoration(
+        color: AppTheme.card,
+        borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Icon(Icons.schedule_rounded,
+              size: 18, color: AppTheme.textMuted),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              texto,
+              style: Theme.of(context)
+                  .textTheme
+                  .bodySmall
+                  ?.copyWith(color: AppTheme.textMuted, height: 1.35),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

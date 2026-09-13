@@ -1,13 +1,16 @@
 {
   "version": 1,
   "id": "calendario.meses.01",
-  "nota": "Los diez meses del curso (septiembre a junio) del Calendario Escola·Fogar. Contenido, no código: la pantalla lo lee de aquí. El bloque `ingles` es la capa L3 y es LA FUENTE de las grabaciones en inglés: cada palabra de `lexico`, cada orden de `tpr` y la `frase` tienen una grabación en assets/voice/, generada por tools/generate_voice_assets.py. Si cambias una cadena inglesa aquí, su grabación deja de existir y el gate check_voice_coverage.py lo dice. El inglés NO es lengua de interfaz: la app se lee en gallego o castellano y el inglés solo se escucha, para que la persona adulta lo pronuncie antes de decirselo a la criatura.",
+  "nota": "Los diez meses del curso (septiembre a junio) del Calendario Escola·Fogar. Contenido, no código: la pantalla lo lee de aquí. El bloque `ingles` es la capa L3 y es LA FUENTE de las grabaciones en inglés: cada palabra de `lexico`, cada orden de `tpr` y la `frase` tienen una grabación en assets/voice/, generada por tools/generate_voice_assets.py. Si cambias una cadena inglesa aquí, su grabación deja de existir y el gate check_voice_coverage.py lo dice. El inglés NO es lengua de interfaz: la app se lee en gallego o castellano y el inglés solo se escucha, para que la persona adulta lo pronuncie antes de decirselo a la criatura. El campo `unidad` dice QUÉ unidad de aula se dirige ese mes, por su id. Antes se emparejaba por `orden`, y el `orden` de una unidad es su sitio en el catálogo, no el mes del curso: la unidad del mar acababa cayendo en septiembre. Un mes sin `unidad` se ve «en preparación» y no abre nada.",
   "meses": [
     {
       "orden": 1,
       "mesCalendario": 9,
       "icono": "saudo",
-      "nombreMes": { "gl": "Setembro", "es": "Septiembre" },
+      "nombreMes": {
+        "gl": "Setembro",
+        "es": "Septiembre"
+      },
       "centroInteres": {
         "gl": "Benvida, caricias suaves e novos amigos",
         "es": "Bienvenida, caricias suaves y nuevos amigos"
@@ -29,9 +32,21 @@
         "es": "Cambio de ropa o calzado de la mañana"
       },
       "minutosSugeridos": 3,
+      "unidad": null,
       "ingles": {
-        "lexico": ["Hello", "Bye-bye", "Up", "Down", "Clap", "Gentle"],
-        "tpr": ["Stand up", "Sit down", "Clap hands"],
+        "lexico": [
+          "Hello",
+          "Bye-bye",
+          "Up",
+          "Down",
+          "Clap",
+          "Gentle"
+        ],
+        "tpr": [
+          "Stand up",
+          "Sit down",
+          "Clap hands"
+        ],
         "frase": "One shoe, two shoes, up! Push, push!"
       }
     },
@@ -39,7 +54,10 @@
       "orden": 2,
       "mesCalendario": 10,
       "icono": "corpo",
-      "nombreMes": { "gl": "Outubro", "es": "Octubre" },
+      "nombreMes": {
+        "gl": "Outubro",
+        "es": "Octubre"
+      },
       "centroInteres": {
         "gl": "O meu pequeno corpo en movemento",
         "es": "Mi pequeño cuerpo en movimiento"
@@ -61,9 +79,21 @@
         "es": "Hora del baño o masaje antes de dormir"
       },
       "minutosSugeridos": 4,
+      "unidad": null,
       "ingles": {
-        "lexico": ["Head", "Tummy", "Toes", "Eyes", "Nose", "Freeze"],
-        "tpr": ["Touch your head", "Shake hands", "Freeze!"],
+        "lexico": [
+          "Head",
+          "Tummy",
+          "Toes",
+          "Eyes",
+          "Nose",
+          "Freeze"
+        ],
+        "tpr": [
+          "Touch your head",
+          "Shake hands",
+          "Freeze!"
+        ],
         "frase": "Soft tummy, tickle toes!"
       }
     },
@@ -71,7 +101,10 @@
       "orden": 3,
       "mesCalendario": 11,
       "icono": "follas",
-      "nombreMes": { "gl": "Novembro", "es": "Noviembre" },
+      "nombreMes": {
+        "gl": "Novembro",
+        "es": "Noviembre"
+      },
       "centroInteres": {
         "gl": "As follas de outono e o Magosto",
         "es": "Las hojas de otoño y el Magosto"
@@ -93,9 +126,21 @@
         "es": "Paseo por el parque o de camino a la escuela"
       },
       "minutosSugeridos": 4,
+      "unidad": null,
       "ingles": {
-        "lexico": ["Leaf", "Falling", "Wind", "Crunch", "Brown", "Orange"],
-        "tpr": ["Fall down", "Walk softly", "Crunch leaves"],
+        "lexico": [
+          "Leaf",
+          "Falling",
+          "Wind",
+          "Crunch",
+          "Brown",
+          "Orange"
+        ],
+        "tpr": [
+          "Fall down",
+          "Walk softly",
+          "Crunch leaves"
+        ],
         "frase": "Crunch, crunch, crunch!"
       }
     },
@@ -103,7 +148,10 @@
       "orden": 4,
       "mesCalendario": 12,
       "icono": "inverno",
-      "nombreMes": { "gl": "Decembro", "es": "Diciembre" },
+      "nombreMes": {
+        "gl": "Decembro",
+        "es": "Diciembre"
+      },
       "centroInteres": {
         "gl": "Abrazos cálidos, campaíñas e o aire de inverno",
         "es": "Abrazos cálidos, campanitas y el aire de invierno"
@@ -125,9 +173,21 @@
         "es": "Al acostarse en la cama con la mantita"
       },
       "minutosSugeridos": 3,
+      "unidad": null,
       "ingles": {
-        "lexico": ["Cold", "Warm", "Bell", "Ring", "Sleep", "Wake up"],
-        "tpr": ["Ring bells", "Sleep tight", "Wake up!"],
+        "lexico": [
+          "Cold",
+          "Warm",
+          "Bell",
+          "Ring",
+          "Sleep",
+          "Wake up"
+        ],
+        "tpr": [
+          "Ring bells",
+          "Sleep tight",
+          "Wake up!"
+        ],
         "frase": "Warm, soft blanket. Sleep, sleep, wake up!"
       }
     },
@@ -135,7 +195,10 @@
       "orden": 5,
       "mesCalendario": 1,
       "icono": "choiva",
-      "nombreMes": { "gl": "Xaneiro", "es": "Enero" },
+      "nombreMes": {
+        "gl": "Xaneiro",
+        "es": "Enero"
+      },
       "centroInteres": {
         "gl": "A roupa de abrigo, botas de chuvia e luvas",
         "es": "La ropa de abrigo, botas de lluvia y manoplas"
@@ -157,9 +220,21 @@
         "es": "Preparación para salir de casa"
       },
       "minutosSugeridos": 4,
+      "unidad": null,
       "ingles": {
-        "lexico": ["Coat", "Boots", "Hat", "Put on", "Take off", "Big"],
-        "tpr": ["Put on your hat", "Zip your coat", "Stomp your boots"],
+        "lexico": [
+          "Coat",
+          "Boots",
+          "Hat",
+          "Put on",
+          "Take off",
+          "Big"
+        ],
+        "tpr": [
+          "Put on your hat",
+          "Zip your coat",
+          "Stomp your boots"
+        ],
         "frase": "Put on your hat! Now boots: stomp, stomp on the floor!"
       }
     },
@@ -167,7 +242,10 @@
       "orden": 6,
       "mesCalendario": 2,
       "icono": "animais",
-      "nombreMes": { "gl": "Febreiro", "es": "Febrero" },
+      "nombreMes": {
+        "gl": "Febreiro",
+        "es": "Febrero"
+      },
       "centroInteres": {
         "gl": "O reino animal e as festas do Entroido",
         "es": "El reino animal y las fiestas del Entroido"
@@ -189,9 +267,21 @@
         "es": "Juego libre sobre la alfombra del salón"
       },
       "minutosSugeridos": 5,
+      "unidad": null,
       "ingles": {
-        "lexico": ["Frog", "Bird", "Bear", "Cat", "Jump", "Fly"],
-        "tpr": ["Jump like a frog", "Fly like a bird", "Stomp like a bear"],
+        "lexico": [
+          "Frog",
+          "Bird",
+          "Bear",
+          "Cat",
+          "Jump",
+          "Fly"
+        ],
+        "tpr": [
+          "Jump like a frog",
+          "Fly like a bird",
+          "Stomp like a bear"
+        ],
         "frase": "Sleepy cat, meow! Jump, frog!"
       }
     },
@@ -199,7 +289,10 @@
       "orden": 7,
       "mesCalendario": 3,
       "icono": "cores",
-      "nombreMes": { "gl": "Marzo", "es": "Marzo" },
+      "nombreMes": {
+        "gl": "Marzo",
+        "es": "Marzo"
+      },
       "centroInteres": {
         "gl": "Cores, formas e alimentos sans",
         "es": "Colores, formas y alimentos sanos"
@@ -221,9 +314,21 @@
         "es": "Hora de la merienda o preparación de la comida"
       },
       "minutosSugeridos": 4,
+      "unidad": null,
       "ingles": {
-        "lexico": ["Red", "Yellow", "Circle", "Sweet", "Roll", "Shake"],
-        "tpr": ["Find something red", "Roll the circle", "Shake the bottle"],
+        "lexico": [
+          "Red",
+          "Yellow",
+          "Circle",
+          "Sweet",
+          "Roll",
+          "Shake"
+        ],
+        "tpr": [
+          "Find something red",
+          "Roll the circle",
+          "Shake the bottle"
+        ],
         "frase": "Red apple, sweet and yummy!"
       }
     },
@@ -231,7 +336,10 @@
       "orden": 8,
       "mesCalendario": 4,
       "icono": "primavera",
-      "nombreMes": { "gl": "Abril", "es": "Abril" },
+      "nombreMes": {
+        "gl": "Abril",
+        "es": "Abril"
+      },
       "centroInteres": {
         "gl": "O espertar da primavera, flores e o orballo",
         "es": "El despertar de la primavera, flores y el orballo"
@@ -253,9 +361,21 @@
         "es": "Junto a la ventana o en el lavado de manos"
       },
       "minutosSugeridos": 4,
+      "unidad": null,
       "ingles": {
-        "lexico": ["Rain", "Sun", "Flower", "Grow", "Tap-tap", "Open"],
-        "tpr": ["Be a little seed", "Grow up", "Open your flower"],
+        "lexico": [
+          "Rain",
+          "Sun",
+          "Flower",
+          "Grow",
+          "Tap-tap",
+          "Open"
+        ],
+        "tpr": [
+          "Be a little seed",
+          "Grow up",
+          "Open your flower"
+        ],
         "frase": "Rain, rain, tap, tap, little drops!"
       }
     },
@@ -263,7 +383,10 @@
       "orden": 9,
       "mesCalendario": 5,
       "icono": "auga",
-      "nombreMes": { "gl": "Maio", "es": "Mayo" },
+      "nombreMes": {
+        "gl": "Maio",
+        "es": "Mayo"
+      },
       "centroInteres": {
         "gl": "Xogos de auga, chapuzóns e hixiene",
         "es": "Juegos de agua, chapuzones e higiene"
@@ -285,9 +408,21 @@
         "es": "Lavado de manos antes de comer o en el baño"
       },
       "minutosSugeridos": 4,
+      "unidad": null,
       "ingles": {
-        "lexico": ["Wash", "Water", "Soap", "Clean", "Splash", "Rub"],
-        "tpr": ["Wash your face", "Rub your hands", "Splash the water"],
+        "lexico": [
+          "Wash",
+          "Water",
+          "Soap",
+          "Clean",
+          "Splash",
+          "Rub"
+        ],
+        "tpr": [
+          "Wash your face",
+          "Rub your hands",
+          "Splash the water"
+        ],
         "frase": "Warm water! Rub the soap, splash, splash! Clean hands!"
       }
     },
@@ -295,7 +430,10 @@
       "orden": 10,
       "mesCalendario": 6,
       "icono": "mar",
-      "nombreMes": { "gl": "Xuño", "es": "Junio" },
+      "nombreMes": {
+        "gl": "Xuño",
+        "es": "Junio"
+      },
       "centroInteres": {
         "gl": "Días de sol, o mar e as Rías de Vigo",
         "es": "Días de sol, el mar y las Rías de Vigo"
@@ -317,9 +455,21 @@
         "es": "Juego de sábana o manta en la cama"
       },
       "minutosSugeridos": 5,
+      "unidad": "juega.mar.01",
       "ingles": {
-        "lexico": ["Sea", "Waves", "Swim", "Fish", "Blue", "Goodbye"],
-        "tpr": ["Gentle waves", "Big waves!", "Swim like a fish"],
+        "lexico": [
+          "Sea",
+          "Waves",
+          "Swim",
+          "Fish",
+          "Blue",
+          "Goodbye"
+        ],
+        "tpr": [
+          "Gentle waves",
+          "Big waves!",
+          "Swim like a fish"
+        ],
         "frase": "Blue sea, waves go up and down!"
       }
     }

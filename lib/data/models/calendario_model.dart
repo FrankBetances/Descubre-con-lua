@@ -66,6 +66,12 @@ class MesCurricular {
   final int orden;
   final int mesCalendario;
 
+  /// Id de la unidad de aula que se dirige este mes, o `null` si todavía no
+  /// está escrita. **No se deduce del `orden`**: el `orden` de una unidad es su
+  /// sitio en el catálogo, no el mes del curso, y emparejarlos hacía que la
+  /// unidad del mar se abriera en septiembre.
+  final String? unidadId;
+
   /// Token del icono, no un `IconData`: el contenido no conoce Flutter.
   /// Lo traduce `lib/core/brand/iconos_contenido.dart`.
   final String icono;
@@ -87,6 +93,7 @@ class MesCurricular {
     required this.orden,
     required this.mesCalendario,
     required this.icono,
+    this.unidadId,
     required this.nombreMes,
     required this.centroInteres,
     required this.objetivoPedagogico,
@@ -106,6 +113,9 @@ class MesCurricular {
       orden: (json['orden'] as num).toInt(),
       mesCalendario: (json['mesCalendario'] as num).toInt(),
       icono: json['icono']?.toString() ?? 'mar',
+      unidadId: (json['unidad'] as String?)?.trim().isEmpty ?? true
+          ? null
+          : (json['unidad'] as String).trim(),
       nombreMes: texto('nombreMes'),
       centroInteres: texto('centroInteres'),
       objetivoPedagogico: texto('objetivoPedagogico'),

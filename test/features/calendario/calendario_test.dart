@@ -7,7 +7,9 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/calendario_model.dart';
+import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
+import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_model.dart';
@@ -28,9 +30,21 @@ Future<CalendarioContenido> _contenidoDeDisco() => CalendarioContenido.cargar(
 
 void main() {
   late CalendarioContenido contenido;
+  late ContentRepository repositorio;
 
   setUpAll(() async {
     contenido = await _contenidoDeDisco();
+    // El contenido REAL del repositorio, leído del disco: si alguien borra la
+    // unidad o le cambia el id, estos tests se enteran.
+    repositorio = ContentRepository(
+      loader: ContentAssetLoader(
+        stringLoader: (path) => File(path).readAsString(),
+      ),
+    );
+    await repositorio.initialize(
+      unidadPaths: ['assets/content/unidades/juega.mar.01.json'],
+      capsulaPaths: const [],
+    );
   });
   group('CalendarioModel & 10 Meses Curriculares de Galicia', () {
     test('contén exactamente 10 meses de setembro a xunho', () {
@@ -275,8 +289,38 @@ void main() {
       expect(find.text('Fogar (Familias)'), findsOneWidget);
     });
 
-    testWidgets(
-        'lanzador de sesión a 1-toque en modo Aula invoca callback con mes activo e esDocente=true',
+    testWidgets('un mes sen unidade escrita non abre nada, e dío',
+        (tester) async {
+      tester.view.physicalSize = const Size(600, 1600);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.resetPhysicalSize);
+
+      await tester.pumpWidget(_wrap(CalendarioScreen(
+        store: store,
+        contenido: contenido,
+        repository: repositorio,
+        initialLanguage: AppLanguage.gl,
+        esDocenteInicial: true,
+      )));
+      await tester.pumpAndSettle();
+
+      // La pantalla abre polo mes de hoxe. Só Xuño ten unidade escrita, así
+      // que calquera outro mes ten que dicir «en preparación» en vez de abrir
+      // a asemblea do Mar de Vigo, que é o que facía antes: os dez meses
+      // lanzaban sempre a mesma unidade.
+      final hoxe = contenido.mesParaFecha(DateTime.now());
+      if (hoxe.unidadId == null) {
+        expect(
+            find.byKey(const Key('boton_iniciar_sesion_aula')), findsNothing);
+        expect(
+            find.byKey(const Key('aviso_mes_en_preparacion')), findsOneWidget);
+      } else {
+        expect(
+            find.byKey(const Key('boton_iniciar_sesion_aula')), findsOneWidget);
+      }
+    });
+
+    testWidgets('o mes que si ten unidade lanza esa unidade, non outra',
         (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
@@ -288,6 +332,7 @@ void main() {
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
         contenido: contenido,
+        repository: repositorio,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: true,
         onIniciarSesion: (mes, esDocente) {
@@ -297,52 +342,71 @@ void main() {
       )));
       await tester.pumpAndSettle();
 
+      final mesConUnidade =
+          contenido.meses.firstWhere((m) => m.unidadId != null);
+
+      // Xuño é o décimo: a fila de meses é horizontal e ese chip nin sequera
+      // está construído ata que se empuxa cara alá.
+      await tester.dragUntilVisible(
+        find.descendant(
+          of: find.byKey(const Key('selector_meses')),
+          matching: find.text(mesConUnidade.nombreMes.gl),
+        ),
+        find.byKey(const Key('selector_meses')),
+        const Offset(-220, 0),
+      );
+      await tester.pumpAndSettle();
+
+      await tester.tap(find.descendant(
+        of: find.byKey(const Key('selector_meses')),
+        matching: find.text(mesConUnidade.nombreMes.gl),
+      ));
+      await tester.pumpAndSettle();
+
       final botonLanzar = find.byKey(const Key('boton_iniciar_sesion_aula'));
       expect(botonLanzar, findsOneWidget);
       await tester.ensureVisible(botonLanzar);
       await tester.pumpAndSettle();
-
       await tester.tap(botonLanzar);
       await tester.pumpAndSettle();
 
-      expect(sesionRecibida, isNotNull);
       expect(esDocenteRecibido, isTrue);
-      expect(sesionRecibida!.mesCalendario,
-          contenido.mesParaFecha(DateTime.now()).mesCalendario);
+      expect(sesionRecibida?.unidadId, mesConUnidade.unidadId);
     });
 
     testWidgets(
-        'lanzador de sesión a 1-toque en modo Fogar invoca callback con mes activo e esDocente=false',
+        'o lado da familia ensina a rutina do mes, non un botón que abre outra cousa',
         (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
 
-      MesCurricular? sesionRecibida;
-      bool? esDocenteRecibido;
-
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
         contenido: contenido,
+        repository: repositorio,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: false,
-        onIniciarSesion: (mes, esDocente) {
-          sesionRecibida = mes;
-          esDocenteRecibido = esDocente;
-        },
       )));
       await tester.pumpAndSettle();
 
-      final botonLanzar = find.byKey(const Key('boton_iniciar_sesion_fogar'));
-      expect(botonLanzar, findsOneWidget);
-      await tester.ensureVisible(botonLanzar);
-      await tester.pumpAndSettle();
+      // Antes había aquí un botón que abría unha cápsula elixida por descarte
+      // —sempre a mesma, sen relación co mes—. Agora o que hai é a rutina
+      // dese mes, que si existe para os dez.
+      expect(find.byKey(const Key('boton_iniciar_sesion_fogar')), findsNothing);
 
-      await tester.tap(botonLanzar);
-      await tester.pumpAndSettle();
-
-      expect(sesionRecibida, isNotNull);
-      expect(esDocenteRecibido, isFalse);
+      // O que ten diante é a rutina DESE mes, coa súa frase en inglés.
+      final hoxe = contenido.mesParaFecha(DateTime.now());
+      await expectAfterScrolling(
+        tester,
+        find.textContaining(hoxe.actividadHogar.gl),
+        matcher: findsWidgets,
+      );
+      await expectAfterScrolling(
+        tester,
+        find.text(hoxe.ingles.frase),
+        matcher: findsWidgets,
+      );
     });
 
     testWidgets(
@@ -397,7 +461,7 @@ void main() {
     });
 
     testWidgets(
-        'celebración reactiva de Dobre Estimulación actualiza banner en tempo real sen recarga',
+        'o cartel de hoxe reacciona ao rexistrar, e só fala do lado propio',
         (tester) async {
       tester.view.physicalSize = const Size(600, 1600);
       tester.view.devicePixelRatio = 1.0;
@@ -406,19 +470,20 @@ void main() {
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
         contenido: contenido,
+        repository: repositorio,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: true,
       )));
       await tester.pumpAndSettle();
 
-      // Estado inicial: 0 días acumulados e sen estrela
+      // Nada rexistrado: a conta propia, e NUNCA unha promesa sobre o outro
+      // lado. A app non ten rede: este aparato non sabe o que pasou na casa.
       await expectAfterScrolling(
         tester,
-        find.textContaining('Días de Dobre Estimulación acumulados: 0'),
+        find.textContaining('Asembleas rexistradas: 0'),
       );
-      expect(find.byIcon(Icons.star_rounded), findsNothing);
+      expect(find.textContaining('Dobre Estimulación'), findsNothing);
 
-      // 1. Rexistrar aula
       final botonAula = find.byKey(const Key('boton_rexistrar_aula'));
       expect(botonAula, findsOneWidget);
       await tester.ensureVisible(botonAula);
@@ -426,40 +491,19 @@ void main() {
       await tester.tap(botonAula);
       await tester.pumpAndSettle();
 
-      // O banner actualiza a só aula
-      // El banner puede quedar fuera de la ventana tras desplazarse hasta el
-      // botón: se busca desplazando, como el resto de los tests del proyecto.
-      // «Falta o xogo» y no «Asemblea feita»: lo segundo sale también en el
-      // aviso emergente que acaba de aparecer, y encontraría dos.
+      // Primeiro o feito: quedou rexistrado.
+      expect(store.totalSesionesAula, 1);
+
+      // E o cartel cambia sen saír da pantalla, dicindo o que esta docente ten
+      // que facer agora: darlle a nota ás familias.
       await expectAfterScrolling(
         tester,
-        find.textContaining('Falta o xogo de 3 min na casa'),
+        find.textContaining('Lembra darlles a nota'),
       );
-      expect(find.byIcon(Icons.star_rounded), findsNothing);
 
-      // 2. Cambiar a modo Fogar e rexistrar rutina
-      final tabFogar = find.byKey(const Key('tab_rol_familia'));
-      await tester.ensureVisible(tabFogar);
-      await tester.pumpAndSettle();
-      await tester.tap(tabFogar);
-      await tester.pumpAndSettle();
-
-      final botonFogar = find.byKey(const Key('boton_rexistrar_fogar'));
-      expect(botonFogar, findsOneWidget);
-      await tester.ensureVisible(botonFogar);
-      await tester.pumpAndSettle();
-      await tester.tap(botonFogar);
-      await tester.pumpAndSettle();
-
-      // O banner reactivamente celebra a Dobre Estimulación con estrela!
-      await expectAfterScrolling(
-        tester,
-        find.textContaining('Parabéns! Hoxe acadastes a Dobre Estimulación'),
-      );
-      // Dos estrellas: la del cartel y la de la tarjeta del mes, que ahora
-      // enseña el estado del mes entero y no el del día 15.
-      expect(find.byIcon(Icons.star_rounded), findsWidgets);
-      expect(store.totalDobleEstimulacion, 1);
+      // E o lado da familia segue a cero neste aparato: rexistrar no aula non
+      // marca ningunha casa.
+      expect(store.totalSesionesHogar, 0);
     });
 
     testWidgets(
@@ -512,7 +556,6 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('Calendario Escola · Fogar'), findsOneWidget);
-      expect(find.text('Iniciar asemblea guiada'), findsOneWidget);
 
       // Cambiar idioma a castelán
       final botonEs = find.text('ES');
@@ -522,7 +565,6 @@ void main() {
 
         expect(find.text('Calendario Escuela · Hogar'), findsOneWidget);
         expect(find.text('Hogar (Familias)'), findsOneWidget);
-        expect(find.text('Iniciar asamblea guiada'), findsOneWidget);
         expect(
             find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
       }

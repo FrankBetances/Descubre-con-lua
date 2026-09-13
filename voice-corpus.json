@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-13T11:10:24Z",
+ "generatedAt": "2026-09-13T13:28:48Z",
  "entries": 351,
  "byStyle": {
   "slow": 70,
@@ -73,7 +73,7 @@
    "style": "slow",
    "text": "Sea",
    "speech": "Sea",
-   "source": "calendario/mes/10/ingles/lexico"
+   "source": "juega.mar.01/ingles/conto"
   },
   {
    "id": "en_slow_1e743f07_4",
@@ -121,7 +121,7 @@
    "style": "slow",
    "text": "Fish",
    "speech": "Fish",
-   "source": "calendario/mes/10/ingles/lexico"
+   "source": "juega.mar.01/ingles/conto"
   },
   {
    "id": "en_slow_35ece1e8_6",
@@ -249,7 +249,7 @@
    "style": "slow",
    "text": "Goodbye",
    "speech": "Goodbye",
-   "source": "calendario/mes/10/ingles/lexico"
+   "source": "juega.mar.01/ingles/ponteCasa"
   },
   {
    "id": "en_slow_7787478b_4",
@@ -353,7 +353,7 @@
    "style": "slow",
    "text": "Waves",
    "speech": "Waves",
-   "source": "calendario/mes/10/ingles/lexico"
+   "source": "juega.mar.01/ingles/pulso"
   },
   {
    "id": "en_slow_b8d16159_3",
@@ -441,7 +441,7 @@
    "style": "slow",
    "text": "Blue",
    "speech": "Blue",
-   "source": "calendario/mes/10/ingles/lexico"
+   "source": "juega.mar.01/ingles/conto"
   },
   {
    "id": "en_slow_efe8e986_6",
@@ -465,7 +465,7 @@
    "style": "slow",
    "text": "Swim",
    "speech": "Swim",
-   "source": "calendario/mes/10/ingles/lexico"
+   "source": "juega.mar.01/ingles/exploracion"
   },
   {
    "id": "en_slow_f55c314b_5",
@@ -529,7 +529,7 @@
    "style": "tutor",
    "text": "Blue sea, waves go up and down!",
    "speech": "Blue sea, waves go up and down!",
-   "source": "calendario/mes/10/ingles/frase"
+   "source": "juega.mar.01/ingles/ponteCasa"
   },
   {
    "id": "en_tutor_2c4a5317_15",
@@ -609,7 +609,7 @@
    "style": "tutor",
    "text": "Big waves!",
    "speech": "Big waves!",
-   "source": "calendario/mes/10/ingles/tpr"
+   "source": "juega.mar.01/ingles/pulso"
   },
   {
    "id": "en_tutor_5a268719_18",
@@ -657,7 +657,7 @@
    "style": "tutor",
    "text": "Swim like a fish",
    "speech": "Swim like a fish",
-   "source": "calendario/mes/10/ingles/tpr"
+   "source": "juega.mar.01/ingles/exploracion"
   },
   {
    "id": "en_tutor_88397a8c_9",
@@ -737,7 +737,7 @@
    "style": "tutor",
    "text": "Gentle waves",
    "speech": "Gentle waves",
-   "source": "calendario/mes/10/ingles/tpr"
+   "source": "juega.mar.01/ingles/pulso"
   },
   {
    "id": "en_tutor_aef062fb_36",
