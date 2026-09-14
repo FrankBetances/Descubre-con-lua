@@ -180,6 +180,27 @@ Los tiempos del compás salen de las marcas `*` de la letra, no de una
 configuración aparte, así que el pulso no puede discrepar de lo que la docente
 lee.
 
+## Dónde aparece Lúa
+
+La gata es la marca, no un reclamo para la criatura: **aparece para la docente
+y para la familia, nunca para captar la atención infantil**. Se pinta siempre
+desde la misma rejilla de caracteres que rinde el icono del lanzador y el
+splash (`assets/brand/lua_*.txt`), así que no puede separarse del icono.
+
+Dentro de una actividad sale en tres sitios, y en ninguno más:
+
+| Dónde | Qué hace |
+| --- | --- |
+| El cuento de la asamblea | Es la protagonista: las 30 láminas de escena la dibujan y el texto de las diez unidades la nombra |
+| El cierre de cada cápsula de Academy | Una frase —`luaDice` en el JSON— que convierte la idea de la cápsula en **un** gesto para hoy. Va la última, detrás de la reflexión: la cápsula se cuenta como leída al responderla, así que el premio cae primero y la gata cierra |
+| La nota para las casas | Encabeza la nota que cruza del aula al hogar, que es la única pantalla que habla de ella por su nombre |
+
+Fuera de una actividad sale en la bienvenida, en los premios, en el calendario
+y en los créditos.
+
+Las cápsulas de formación del aula **todavía no traen cierre**: `luaDice` es
+opcional y, sin él, el lector no pinta la página.
+
 ## Voz
 
 El audio se genera con voces neuronales en tiempo de compilación y viaja
@@ -187,9 +208,9 @@ grabado dentro del paquete. Los modelos **nunca** corren en el aparato.
 
 Casi todas las tarjetas con texto seguido llevan botón de altavoz: la lectura
 del cuento, las preguntas, la exploración, las matemáticas, el puente con la
-casa, y en Academy las cuatro partes de cada cápsula y sus afirmaciones. Si un
-texto no tiene grabación, el botón **no se pinta** —ni apagado ni con aviso—:
-un altavoz que no suena promete algo que no cumple.
+casa, y en Academy las cuatro partes de cada cápsula, sus afirmaciones y el
+cierre de Lúa. Si un texto no tiene grabación, el botón **no se pinta** —ni
+apagado ni con aviso—: un altavoz que no suena promete algo que no cumple.
 
 - gallego → **Celtia**, do Proxecto Nós (*gated* en Hugging Face: requiere el
   secret `HF_TOKEN`)

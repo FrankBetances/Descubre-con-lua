@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/lua_pixel.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
@@ -84,6 +85,16 @@ class NotaParaCasasScreen extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.all(AppTheme.spaceLg),
           children: [
+            // Lúa encabeza la nota porque la nota HABLA de ella: el mensaje
+            // para las familias de cada unidad la nombra («hoxe navegamos coa
+            // gata Lúa»), y hasta ahora la familia oía el nombre en la puerta
+            // sin haberle visto la cara nunca. Es el único sitio donde la
+            // gata cruza del aula a la casa, que es de lo que va esta pantalla.
+            //
+            // Cuadrado de lado fijo y centrado, sin nada al lado: no puede
+            // desbordar a lo ancho por mucho que crezca la escala de texto.
+            const Center(child: LuaPixel(pose: LuaPose.sit, size: 88)),
+            const SizedBox(height: AppTheme.spaceMd),
             Text(
               _comoUsala.resolve(language),
               style: theme.textTheme.bodySmall?.copyWith(

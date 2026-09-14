@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-09-13T17:18:53Z",
- "entries": 1010,
+ "generatedAt": "2026-09-14T14:06:52Z",
+ "entries": 1020,
  "byStyle": {
   "slow": 186,
-  "tutor": 824
+  "tutor": 834
  },
  "byLang": {
   "en": 134,
-  "es": 438,
-  "gl": 438
+  "es": 443,
+  "gl": 443
  },
  "corpus": [
   {
@@ -1620,6 +1620,14 @@
    "source": "juega.auga.01/exploracion/paso/1"
   },
   {
+   "id": "es_tutor_0ebe6808_151",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soy Lúa. Hoy no dirijas: mira lo que está mirando, ponle nombre y espera. Si contesta con un sonido o un gesto, devuélveselo como si fuese una palabra.",
+   "speech": "Soy Lúa. Hoy no dirijas: mira lo que está mirando, ponle nombre y espera. Si contesta con un sonido o un gesto, devuélveselo como si fuese una palabra.",
+   "source": "academy.turnos_atencion_conjunta.01/luaDice"
+  },
+  {
    "id": "es_tutor_10d195bf_184",
    "lang": "es",
    "style": "tutor",
@@ -1674,6 +1682,14 @@
    "text": "Preguntar le pide a la criatura la palabra que todavía no tiene e interrumpe lo que está haciendo. Nombrar tú mientras ella toca le da la palabra en el instante exacto; pedírsela viene después, y la mayoría de las veces ni hace falta.",
    "speech": "Preguntar le pide a la criatura la palabra que todavía no tiene e interrumpe lo que está haciendo. Nombrar tú mientras ella toca le da la palabra en el instante exacto; pedírsela viene después, y la mayoría de las veces ni hace falta.",
    "source": "aula.exploracion.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_1420c835_138",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soy Lúa. Hoy quédate con un solo gesto: nombra lo que esté mirando y después calla mientras cuentas hasta cinco. Ese silencio es su turno.",
+   "speech": "Soy Lúa. Hoy quédate con un solo gesto: nombra lo que esté mirando y después calla mientras cuentas hasta cinco. Ese silencio es su turno.",
+   "source": "academy.como_se_aprende_a_hablar.01/luaDice"
   },
   {
    "id": "es_tutor_14b0dfb5_52",
@@ -3036,6 +3052,14 @@
    "source": "juega.benvida.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_7bfc6036_132",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soy Lúa. Habla en la lengua que te sale sola y no le corrijas las mezclas. Juntar las dos en una frase no es un error: es tener dos.",
+   "speech": "Soy Lúa. Habla en la lengua que te sale sola y no le corrijas las mezclas. Juntar las dos en una frase no es un error: es tener dos.",
+   "source": "academy.bilinguismo_y_cultura.01/luaDice"
+  },
+  {
    "id": "es_tutor_7d75289f_112",
    "lang": "es",
    "style": "tutor",
@@ -3178,6 +3202,14 @@
    "text": "Dar tiempo a que lo intente antes de ayudar. Vestirse mal y solo enseña más que vestirse bien y rápido de manos de otra persona.",
    "speech": "Dar tiempo a que lo intente antes de ayudar. Vestirse mal y solo enseña más que vestirse bien y rápido de manos de otra persona.",
    "source": "juega.choiva.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "es_tutor_8abc03c4_167",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soy Lúa. Elige una sola rutina —el baño, la cena, el abrigo— y esta semana dila siempre con las mismas palabras. Lo aburrido para ti es justo lo que ya puede adivinar.",
+   "speech": "Soy Lúa. Elige una sola rutina —el baño, la cena, el abrigo— y esta semana dila siempre con las mismas palabras. Lo aburrido para ti es justo lo que ya puede adivinar.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/luaDice"
   },
   {
    "id": "es_tutor_8b1a0093_55",
@@ -3650,6 +3682,14 @@
    "text": "En la alfombra hay una amiga nueva. Lúa le acerca la mano muy despacio y espera. La amiga le toca los dedos y las dos ríen.",
    "speech": "En la alfombra hay una amiga nueva. Lúa le acerca la mano muy despacio y espera. La amiga le toca los dedos y las dos ríen.",
    "source": "juega.benvida.01/cuento/1/texto"
+  },
+  {
+   "id": "es_tutor_ad0a86cf_146",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soy Lúa. Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
+   "speech": "Soy Lúa. Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/luaDice"
   },
   {
    "id": "es_tutor_aea59d1b_56",
@@ -5556,6 +5596,14 @@
    "source": "aula.exploracion.01/queHacerEnCasa"
   },
   {
+   "id": "gl_tutor_2cc3bc4e_131",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Son Lúa. Hoxe quédate cun só xesto: nomea o que estea a mirar e despois cala mentres contas ata cinco. Ese silencio é a súa quenda.",
+   "speech": "Son Lúa. Hoxe quédate cun só xesto: nomea o que estea a mirar e despois cala mentres contas ata cinco. Ese silencio é a súa quenda.",
+   "source": "academy.como_se_aprende_a_hablar.01/luaDice"
+  },
+  {
    "id": "gl_tutor_2cd027e7_39",
    "lang": "gl",
    "style": "tutor",
@@ -5586,6 +5634,14 @@
    "text": "Sen algo pequeno ao lado, «grande» non se pode notar: é só un son que acompaña a un obxecto. A noción aparece na comparación, así que os dous teñen que estar á vista á vez.",
    "speech": "Sen algo pequeno ao lado, «grande» non se pode notar: é só un son que acompaña a un obxecto. A noción aparece na comparación, así que os dous teñen que estar á vista á vez.",
    "source": "aula.matematicas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_2e2d47fe_125",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Son Lúa. Fala na lingua que che sae soa e non lle corrixas as mesturas. Xuntar as dúas nunha frase non é un erro: é ter dúas.",
+   "speech": "Son Lúa. Fala na lingua que che sae soa e non lle corrixas as mesturas. Xuntar as dúas nunha frase non é un erro: é ter dúas.",
+   "source": "academy.bilinguismo_y_cultura.01/luaDice"
   },
   {
    "id": "gl_tutor_2e575c8e_231",
@@ -6524,6 +6580,14 @@
    "source": "juega.primavera.01/preguntas/?/enunciado"
   },
   {
+   "id": "gl_tutor_7669de71_141",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Son Lúa. Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar. E fala do que estades a facer mentres pasa, non despois.",
+   "speech": "Son Lúa. Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar. E fala do que estades a facer mentres pasa, non despois.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/luaDice"
+  },
+  {
    "id": "gl_tutor_771e7836_59",
    "lang": "gl",
    "style": "tutor",
@@ -6554,6 +6618,14 @@
    "text": "Axitar o bote das castañas e parar, axitar e parar.",
    "speech": "Axitar o bote das castañas e parar, axitar e parar.",
    "source": "juega.follas.01/exploracion/paso/2"
+  },
+  {
+   "id": "gl_tutor_796b9165_158",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Son Lúa. Escolle unha rutina soa —o baño, a cea, o abrigo— e esta semana dilla sempre coas mesmas palabras. O aburrido para ti é xusto o que xa pode adiviñar.",
+   "speech": "Son Lúa. Escolle unha rutina soa —o baño, a cea, o abrigo— e esta semana dilla sempre coas mesmas palabras. O aburrido para ti é xusto o que xa pode adiviñar.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/luaDice"
   },
   {
    "id": "gl_tutor_7a6c19bf_217",
@@ -8082,6 +8154,14 @@
    "text": "Sinalar a laranxa, facela rolar ou dicir o nome.",
    "speech": "Sinalar a laranxa, facela rolar ou dicir o nome.",
    "source": "juega.cores.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_ff807611_145",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Son Lúa. Hoxe non dirixas: mira o que está a mirar, ponlle nome e agarda. Se contesta cun son ou cun xesto, devólvello coma se fose unha palabra.",
+   "speech": "Son Lúa. Hoxe non dirixas: mira o que está a mirar, ponlle nome e agarda. Se contesta cun son ou cun xesto, devólvello coma se fose unha palabra.",
+   "source": "academy.turnos_atencion_conjunta.01/luaDice"
   },
   {
    "id": "gl_tutor_fff3efe5_88",

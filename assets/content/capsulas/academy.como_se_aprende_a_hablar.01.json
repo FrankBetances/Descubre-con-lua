@@ -28,6 +28,10 @@
     "gl": "No intre de poñer os zapatos pola mañá: «Mira, aquí está o teu zapato azul! Onde vai? No pé! Primeiro un pé... (pausa de 5 segundos con sorriso)... e agora o outro pé! Que cóxegas nos dedos!»",
     "es": "En el momento de poner los zapatos por la mañana: «¡Mira, aquí está tu zapato azul! ¿Dónde va? ¡En el pie! Primero un pie... (pausa de 5 segundos con sonrisa)... ¡y ahora el otro pie! ¡Qué cosquillas en los dedos!»"
   },
+  "luaDice": {
+    "gl": "Son Lúa. Hoxe quédate cun só xesto: nomea o que estea a mirar e despois cala mentres contas ata cinco. Ese silencio é a súa quenda.",
+    "es": "Soy Lúa. Hoy quédate con un solo gesto: nombra lo que esté mirando y después calla mientras cuentas hasta cinco. Ese silencio es su turno."
+  },
   "afirmaciones": [
     {
       "id": "afirmacion_01",

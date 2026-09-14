@@ -264,8 +264,11 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
         data = json.loads(path.read_text(encoding="utf-8"))
         cap_id = data.get("id", path.stem)
 
+        # `luaDice` es el cierre de la gata. Entra en el corpus como las
+        # otras cuatro: es prosa que la familia lee, y si se pudiera leer
+        # pero no escuchar sería la única tarjeta del lector sin altavoz.
         for campo in ("ideaClave", "porQueImporta", "queHacerEnCasa",
-                      "ejemploCotidiano"):
+                      "ejemploCotidiano", "luaDice"):
             if data.get(campo):
                 _add(_localized(data[campo]), "tutor", f"{cap_id}/{campo}", seen)
 

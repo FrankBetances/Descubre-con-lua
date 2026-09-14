@@ -28,6 +28,10 @@
     "gl": "Agardando na cola do supermercado, en vez de darlle o móbil: «Arriba! (lévalo en volandas) ...e abaixo. Arriba... e abaixo. Outra vez?» Tres minutos, cero pantalla, e o neno acaba de escoitar «arriba» e «abaixo» dez veces mentres o seu corpo sentía as dúas cousas.",
     "es": "Esperando en la cola del supermercado, en vez de darle el móvil: «¡Arriba! (lo levantas en volandas) ...y abajo. Arriba... y abajo. ¿Otra vez?» Tres minutos, cero pantalla, y el niño acaba de escuchar «arriba» y «abajo» diez veces mientras su cuerpo sentía las dos cosas."
   },
+  "luaDice": {
+    "gl": "Son Lúa. Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar. E fala do que estades a facer mentres pasa, non despois.",
+    "es": "Soy Lúa. Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después."
+  },
   "afirmaciones": [
     {
       "id": "afirmacion_01",

@@ -415,6 +415,20 @@ class Capsula {
   final LocalizedString porQueImporta;
   final LocalizedString queHacerEnCasa;
   final LocalizedString ejemploCotidiano;
+
+  /// El cierre de Lúa: una frase de la gata que convierte la idea de la
+  /// cápsula en UN gesto para hoy.
+  ///
+  /// Es opcional a propósito. No es una quinta sección canónica —las cuatro
+  /// siguen siendo cuatro, y `contido` sigue devolviendo esas cuatro—: es el
+  /// cierre, y una cápsula sin él se lee entera igual. Las del aula todavía no
+  /// lo traen.
+  ///
+  /// Nulo cuando el JSON no lo trae O cuando le falta una de las dos lenguas:
+  /// media frase en gallego y nada en castellano dejaría media pantalla en
+  /// blanco, y eso se ve peor que no pintar el cierre.
+  final LocalizedString? luaDice;
+
   final List<Afirmacion> afirmaciones;
   final CurricularReference curriculo;
   final Revision revision;
@@ -432,6 +446,7 @@ class Capsula {
     required this.porQueImporta,
     required this.queHacerEnCasa,
     required this.ejemploCotidiano,
+    this.luaDice,
     required this.afirmaciones,
     required this.curriculo,
     required this.revision,
@@ -489,6 +504,15 @@ class Capsula {
             contidoMap['ejemplo_cotidiano']) as Map<String, dynamic>? ??
         {};
 
+    // El cierre de Lúa. Se acepta en la raíz o dentro de `contido`, como las
+    // cuatro secciones, y se descarta si le falta una lengua.
+    final luaDiceData = (json['luaDice'] ??
+        json['lua_dice'] ??
+        contidoMap['luaDice'] ??
+        contidoMap['lua_dice']) as Map<String, dynamic>?;
+    final luaDiceParsed =
+        luaDiceData == null ? null : LocalizedString.fromJson(luaDiceData);
+
     final curriculoData =
         (json['curriculo'] ?? json['curricular']) as Map<String, dynamic>? ??
             {};
@@ -515,6 +539,7 @@ class Capsula {
       porQueImporta: LocalizedString.fromJson(porQueImportaData),
       queHacerEnCasa: LocalizedString.fromJson(queHacerEnCasaData),
       ejemploCotidiano: LocalizedString.fromJson(ejemploCotidianoData),
+      luaDice: (luaDiceParsed?.hasParity ?? false) ? luaDiceParsed : null,
       afirmaciones: List.unmodifiable(afirmations),
       curriculo: CurricularReference.fromJson(curriculoData),
       revision: Revision.fromJson(revisionData),
@@ -534,6 +559,7 @@ class Capsula {
         'porQueImporta': porQueImporta.toJson(),
         'queHacerEnCasa': queHacerEnCasa.toJson(),
         'ejemploCotidiano': ejemploCotidiano.toJson(),
+        if (luaDice != null) 'luaDice': luaDice!.toJson(),
         'afirmaciones': afirmaciones.map((a) => a.toJson()).toList(),
         'curriculo': curriculo.toJson(),
         'revision': revision.toJson(),
@@ -555,6 +581,7 @@ class Capsula {
           porQueImporta == other.porQueImporta &&
           queHacerEnCasa == other.queHacerEnCasa &&
           ejemploCotidiano == other.ejemploCotidiano &&
+          luaDice == other.luaDice &&
           listEquals(afirmaciones, other.afirmaciones) &&
           curriculo == other.curriculo &&
           revision == other.revision;
@@ -572,6 +599,7 @@ class Capsula {
         porQueImporta,
         queHacerEnCasa,
         ejemploCotidiano,
+        luaDice,
         Object.hashAll(afirmaciones),
         curriculo,
         revision,
