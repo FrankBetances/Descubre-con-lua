@@ -139,139 +139,146 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
           ),
         ],
       ),
-      body: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          AcademyHeader(
-            kicker: _kicker.resolve(lang),
-            titulo: _titulo.resolve(lang),
-            subtitulo: _subtitulo.resolve(lang),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(
-              AppTheme.spaceLg,
-              AppTheme.spaceXl,
-              AppTheme.spaceLg,
-              AppTheme.spaceXxl,
+      // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
+      // ya no reserva la barra de gestos y el final de esta pantalla
+      // quedaba por debajo. `top: false` porque el inset de arriba ya lo
+      // consume el AppBar; volver a pedirlo aquí no suma nada.
+      body: SafeArea(
+        top: false,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            AcademyHeader(
+              kicker: _kicker.resolve(lang),
+              titulo: _titulo.resolve(lang),
+              subtitulo: _subtitulo.resolve(lang),
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // La tira de juego de la familia, justo debajo de la cabecera:
-                // la gata, el nivel por cápsulas leídas y la racha.
-                if (widget.premios != null) ...[
-                  LuaGameStrip(
-                    repository: widget.premios!,
-                    perfil: Perfil.familia,
-                    language: lang,
-                    contadores: widget.calendario?.contadores,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceXl,
+                AppTheme.spaceLg,
+                AppTheme.spaceXxl,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // La tira de juego de la familia, justo debajo de la cabecera:
+                  // la gata, el nivel por cápsulas leídas y la racha.
+                  if (widget.premios != null) ...[
+                    LuaGameStrip(
+                      repository: widget.premios!,
+                      perfil: Perfil.familia,
+                      language: lang,
+                      contadores: widget.calendario?.contadores,
+                    ),
+                    const SizedBox(height: AppTheme.spaceXl),
+                  ],
+                  // Acceso destacado a la Guía de Atención y al Calendario
+                  AcademyCard(
+                    icono: Icons.record_voice_over_outlined,
+                    kicker: lang == AppLanguage.gl
+                        ? 'O INGLÉS NA CASA'
+                        : 'EL INGLÉS EN CASA',
+                    titulo: lang == AppLanguage.gl
+                        ? 'Guía de inglés na casa'
+                        : 'Guía de inglés en casa',
+                    descripcion: lang == AppLanguage.gl
+                        ? 'Canto dura o xogo segundo a idade, tres regras para a casa e a pronuncia de cada frase.'
+                        : 'Cuánto dura el juego según la edad, tres reglas para casa y la pronunciación de cada frase.',
+                    meta: lang == AppLanguage.gl
+                        ? 'Guía interactiva'
+                        : 'Guía interactiva',
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => GuiaAtencionScreen(
+                          initialLanguage: _language,
+                          onLanguageChanged: _onToggleLanguage,
+                          audioService: widget.audioService,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: AppTheme.spaceMd),
+                  AcademyCard(
+                    icono: Icons.calendar_month_rounded,
+                    kicker: lang == AppLanguage.gl
+                        ? 'SINCRONIZACIÓN ESCOLA-FOGAR'
+                        : 'SINCRONIZACIÓN ESCUELA-HOGAR',
+                    titulo: lang == AppLanguage.gl
+                        ? 'Calendario Escola · Fogar'
+                        : 'Calendario Escuela · Hogar',
+                    descripcion: lang == AppLanguage.gl
+                        ? '10 meses de conexión coa escola: mira o que traballaron pola mañá e rexistra o xogo de 3 min na casa.'
+                        : '10 meses de conexión con la escuela: mira lo que trabajaron por la mañana y registra el juego de 3 min en casa.',
+                    meta: lang == AppLanguage.gl
+                        ? 'Dobre estimulación'
+                        : 'Doble estimulación',
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => CalendarioScreen(
+                          store: widget.calendario ?? CalendarioStore(),
+                          initialLanguage: _language,
+                          onLanguageChanged: _onToggleLanguage,
+                          esDocenteInicial: false,
+                          repository: widget.repository,
+                          audioService: widget.audioService,
+                          premios: widget.premios,
+                        ),
+                      ),
+                    ),
                   ),
                   const SizedBox(height: AppTheme.spaceXl),
-                ],
-                // Acceso destacado a la Guía de Atención y al Calendario
-                AcademyCard(
-                  icono: Icons.record_voice_over_outlined,
-                  kicker: lang == AppLanguage.gl
-                      ? 'O INGLÉS NA CASA'
-                      : 'EL INGLÉS EN CASA',
-                  titulo: lang == AppLanguage.gl
-                      ? 'Guía de inglés na casa'
-                      : 'Guía de inglés en casa',
-                  descripcion: lang == AppLanguage.gl
-                      ? 'Canto dura o xogo segundo a idade, tres regras para a casa e a pronuncia de cada frase.'
-                      : 'Cuánto dura el juego según la edad, tres reglas para casa y la pronunciación de cada frase.',
-                  meta: lang == AppLanguage.gl
-                      ? 'Guía interactiva'
-                      : 'Guía interactiva',
-                  onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => GuiaAtencionScreen(
-                        initialLanguage: _language,
-                        onLanguageChanged: _onToggleLanguage,
-                        audioService: widget.audioService,
-                      ),
-                    ),
+                  Text(
+                    _disponibles.resolve(lang),
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: AppTheme.textSecondary,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 1.4,
+                        ),
                   ),
-                ),
-                const SizedBox(height: AppTheme.spaceMd),
-                AcademyCard(
-                  icono: Icons.calendar_month_rounded,
-                  kicker: lang == AppLanguage.gl
-                      ? 'SINCRONIZACIÓN ESCOLA-FOGAR'
-                      : 'SINCRONIZACIÓN ESCUELA-HOGAR',
-                  titulo: lang == AppLanguage.gl
-                      ? 'Calendario Escola · Fogar'
-                      : 'Calendario Escuela · Hogar',
-                  descripcion: lang == AppLanguage.gl
-                      ? '10 meses de conexión coa escola: mira o que traballaron pola mañá e rexistra o xogo de 3 min na casa.'
-                      : '10 meses de conexión con la escuela: mira lo que trabajaron por la mañana y registra el juego de 3 min en casa.',
-                  meta: lang == AppLanguage.gl
-                      ? 'Dobre estimulación'
-                      : 'Doble estimulación',
-                  onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => CalendarioScreen(
-                        store: widget.calendario ?? CalendarioStore(),
-                        initialLanguage: _language,
-                        onLanguageChanged: _onToggleLanguage,
-                        esDocenteInicial: false,
-                        repository: widget.repository,
-                        audioService: widget.audioService,
-                        premios: widget.premios,
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: AppTheme.spaceXl),
-                Text(
-                  _disponibles.resolve(lang),
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        color: AppTheme.textSecondary,
-                        fontWeight: FontWeight.w800,
-                        letterSpacing: 1.4,
-                      ),
-                ),
-                const SizedBox(height: AppTheme.spaceMd),
-                ...bloques.map((bloque) {
-                  final capsulas =
-                      widget.repository.getCapsulasByBloqueId(bloque.id);
-                  final primera = capsulas.isNotEmpty ? capsulas.first : null;
-                  final minutos = primera?.tiempoLecturaMinutos;
+                  const SizedBox(height: AppTheme.spaceMd),
+                  ...bloques.map((bloque) {
+                    final capsulas =
+                        widget.repository.getCapsulasByBloqueId(bloque.id);
+                    final primera = capsulas.isNotEmpty ? capsulas.first : null;
+                    final minutos = primera?.tiempoLecturaMinutos;
 
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
-                    child: AcademyCard(
-                      icono: _iconForBloque(bloque.icono),
-                      kicker: 'Bloque ${bloque.orden}',
-                      titulo: bloque.titulo.resolve(lang),
-                      descripcion: bloque.descripcion.resolve(lang),
-                      meta: capsulas.isEmpty
-                          ? _sinCapsulas.resolve(lang)
-                          : [
-                              '${capsulas.length} '
-                                  '${capsulas.length == 1 ? _unaCapsula.resolve(lang) : _variasCapsulas.resolve(lang)}',
-                              if (minutos != null) '$minutos min'
-                            ].join(' · '),
-                      onTap: primera == null
-                          ? null
-                          : () => Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => CapsulaDetailScreen(
-                                    capsula: primera,
-                                    initialLanguage: _language,
-                                    onLanguageChanged: _onToggleLanguage,
-                                    premios: widget.premios,
-                                    audioService: widget.audioService,
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
+                      child: AcademyCard(
+                        icono: _iconForBloque(bloque.icono),
+                        kicker: 'Bloque ${bloque.orden}',
+                        titulo: bloque.titulo.resolve(lang),
+                        descripcion: bloque.descripcion.resolve(lang),
+                        meta: capsulas.isEmpty
+                            ? _sinCapsulas.resolve(lang)
+                            : [
+                                '${capsulas.length} '
+                                    '${capsulas.length == 1 ? _unaCapsula.resolve(lang) : _variasCapsulas.resolve(lang)}',
+                                if (minutos != null) '$minutos min'
+                              ].join(' · '),
+                        onTap: primera == null
+                            ? null
+                            : () => Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => CapsulaDetailScreen(
+                                      capsula: primera,
+                                      initialLanguage: _language,
+                                      onLanguageChanged: _onToggleLanguage,
+                                      premios: widget.premios,
+                                      audioService: widget.audioService,
+                                    ),
                                   ),
                                 ),
-                              ),
-                    ),
-                  );
-                }),
-              ],
+                      ),
+                    );
+                  }),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

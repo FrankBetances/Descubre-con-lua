@@ -297,38 +297,45 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           ),
         ],
       ),
-      body: AnimatedBuilder(
-        animation: widget.store,
-        builder: (context, _) {
-          // El estado del día se lee AQUÍ DENTRO, no en el `build` de fuera.
-          // Estaba fuera, y como AnimatedBuilder solo vuelve a llamar a este
-          // closure, el cuerpo se repintaba con el estado viejo: se registraba
-          // la asamblea, se guardaba bien en disco, y el cartel seguía
-          // diciendo «aínda non hai nada» hasta salir y volver a entrar.
-          final estadoHoy = widget.store.estadoParaFecha(DateTime.now());
-          return SingleChildScrollView(
-            padding: const EdgeInsets.all(AppTheme.spaceLg),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                _buildHeader(theme),
-                const SizedBox(height: AppTheme.spaceMd),
-                _buildDobleEstimulacionCard(estadoHoy, theme),
-                const SizedBox(height: AppTheme.spaceLg),
-                _buildTarjetasVisuales(theme),
-                const SizedBox(height: AppTheme.spaceMd),
-                _buildMonthSelector(theme),
-                const SizedBox(height: AppTheme.spaceLg),
-                _buildRoleSwitcher(theme),
-                const SizedBox(height: AppTheme.spaceLg),
-                _buildMonthDetailCard(mes, theme),
-                const SizedBox(height: AppTheme.spaceLg),
-                _buildActionButtons(mes, estadoHoy, theme),
-                const SizedBox(height: AppTheme.spaceXl),
-              ],
-            ),
-          );
-        },
+      // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
+      // ya no reserva la barra de gestos y el final de esta pantalla
+      // quedaba por debajo. `top: false` porque el inset de arriba ya lo
+      // consume el AppBar; volver a pedirlo aquí no suma nada.
+      body: SafeArea(
+        top: false,
+        child: AnimatedBuilder(
+          animation: widget.store,
+          builder: (context, _) {
+            // El estado del día se lee AQUÍ DENTRO, no en el `build` de fuera.
+            // Estaba fuera, y como AnimatedBuilder solo vuelve a llamar a este
+            // closure, el cuerpo se repintaba con el estado viejo: se registraba
+            // la asamblea, se guardaba bien en disco, y el cartel seguía
+            // diciendo «aínda non hai nada» hasta salir y volver a entrar.
+            final estadoHoy = widget.store.estadoParaFecha(DateTime.now());
+            return SingleChildScrollView(
+              padding: const EdgeInsets.all(AppTheme.spaceLg),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  _buildHeader(theme),
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _buildDobleEstimulacionCard(estadoHoy, theme),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  _buildTarjetasVisuales(theme),
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _buildMonthSelector(theme),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  _buildRoleSwitcher(theme),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  _buildMonthDetailCard(mes, theme),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  _buildActionButtons(mes, estadoHoy, theme),
+                  const SizedBox(height: AppTheme.spaceXl),
+                ],
+              ),
+            );
+          },
+        ),
       ),
     );
   }

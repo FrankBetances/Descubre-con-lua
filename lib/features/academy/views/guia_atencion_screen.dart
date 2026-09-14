@@ -154,65 +154,72 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
           ),
         ],
       ),
-      body: fallo != null
-          ? AvisoContenidoIlegible(asset: fallo, language: _language)
-          : guia == null
-              ? const Center(child: CircularProgressIndicator())
-              : SingleChildScrollView(
-                  padding: const EdgeInsets.all(AppTheme.spaceLg),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Text(
-                        _subtitulo.resolve(_language),
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          color: AppTheme.textSecondary,
-                          height: 1.4,
+      // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
+      // ya no reserva la barra de gestos y el final de esta pantalla
+      // quedaba por debajo. `top: false` porque el inset de arriba ya lo
+      // consume el AppBar; volver a pedirlo aquí no suma nada.
+      body: SafeArea(
+        top: false,
+        child: fallo != null
+            ? AvisoContenidoIlegible(asset: fallo, language: _language)
+            : guia == null
+                ? const Center(child: CircularProgressIndicator())
+                : SingleChildScrollView(
+                    padding: const EdgeInsets.all(AppTheme.spaceLg),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Text(
+                          _subtitulo.resolve(_language),
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: AppTheme.textSecondary,
+                            height: 1.4,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: AppTheme.spaceLg),
-                      _Kicker(_edadKicker.resolve(_language)),
-                      const SizedBox(height: AppTheme.spaceSm),
-                      _SelectorTramos(
-                        tramos: guia.tramos,
-                        lang: _language,
-                        seleccionado: _tramoSeleccionado,
-                        onSeleccionar: (i) =>
-                            setState(() => _tramoSeleccionado = i),
-                      ),
-                      const SizedBox(height: AppTheme.spaceLg),
-                      _TarjetaTramo(
-                        tramo: guia.tramos[_tramoSeleccionado.clamp(
-                            0, guia.tramos.length - 1)],
-                        lang: _language,
-                        audioService: widget.audioService,
-                        tiempoSugerido: _tiempoSugerido.resolve(_language),
-                        minutos: _minutos.resolve(_language),
-                        momento: _momento.resolve(_language),
-                        queFacer: _queFacer.resolve(_language),
-                        queEvitar: _queEvitar.resolve(_language),
-                        comoSeDi: _comoSeDi.resolve(_language),
-                      ),
-                      const SizedBox(height: AppTheme.spaceSm),
-                      Text(
-                        _aviso.resolve(_language),
-                        style: theme.textTheme.bodySmall
-                            ?.copyWith(color: AppTheme.textMuted),
-                      ),
-                      const SizedBox(height: AppTheme.spaceXl),
-                      _Kicker(_reglasKicker.resolve(_language)),
-                      const SizedBox(height: AppTheme.spaceSm),
-                      ...guia.reglas.map(
-                        (r) => Padding(
-                          padding:
-                              const EdgeInsets.only(bottom: AppTheme.spaceSm),
-                          child: _TarjetaRegla(regla: r, lang: _language),
+                        const SizedBox(height: AppTheme.spaceLg),
+                        _Kicker(_edadKicker.resolve(_language)),
+                        const SizedBox(height: AppTheme.spaceSm),
+                        _SelectorTramos(
+                          tramos: guia.tramos,
+                          lang: _language,
+                          seleccionado: _tramoSeleccionado,
+                          onSeleccionar: (i) =>
+                              setState(() => _tramoSeleccionado = i),
                         ),
-                      ),
-                      const SizedBox(height: AppTheme.spaceXl),
-                    ],
+                        const SizedBox(height: AppTheme.spaceLg),
+                        _TarjetaTramo(
+                          tramo: guia.tramos[_tramoSeleccionado.clamp(
+                              0, guia.tramos.length - 1)],
+                          lang: _language,
+                          audioService: widget.audioService,
+                          tiempoSugerido: _tiempoSugerido.resolve(_language),
+                          minutos: _minutos.resolve(_language),
+                          momento: _momento.resolve(_language),
+                          queFacer: _queFacer.resolve(_language),
+                          queEvitar: _queEvitar.resolve(_language),
+                          comoSeDi: _comoSeDi.resolve(_language),
+                        ),
+                        const SizedBox(height: AppTheme.spaceSm),
+                        Text(
+                          _aviso.resolve(_language),
+                          style: theme.textTheme.bodySmall
+                              ?.copyWith(color: AppTheme.textMuted),
+                        ),
+                        const SizedBox(height: AppTheme.spaceXl),
+                        _Kicker(_reglasKicker.resolve(_language)),
+                        const SizedBox(height: AppTheme.spaceSm),
+                        ...guia.reglas.map(
+                          (r) => Padding(
+                            padding:
+                                const EdgeInsets.only(bottom: AppTheme.spaceSm),
+                            child: _TarjetaRegla(regla: r, lang: _language),
+                          ),
+                        ),
+                        const SizedBox(height: AppTheme.spaceXl),
+                      ],
+                    ),
                   ),
-                ),
+      ),
     );
   }
 }
