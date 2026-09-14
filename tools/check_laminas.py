@@ -18,7 +18,8 @@ Lo que se comprueba:
   3. Los colores son hexadecimales de 6 u 8 dígitos.
   4. Ninguna forma es INVISIBLE: o tiene relleno, o tiene contorno con grosor.
      Una forma sin ninguno de los dos ocupa sitio en el fichero y no pinta nada.
-  5. Nada se sale del lienzo por más de un margen de cortesía.
+  5. Nada se sale del lienzo por más de un margen de cortesía, con las X
+     contra `vb` y las Y contra `vh`: las del cuento son apaisadas.
 """
 
 from __future__ import annotations
@@ -53,6 +54,42 @@ def pares_con_duplicados(pares):
     return d
 
 
+
+def _corto(v: float) -> str:
+    return str(int(v)) if float(v) == int(v) else str(round(float(v), 2))
+
+
+def _coordenadas(forma: dict, tipo: str) -> tuple[list[float], list[float]]:
+    """Las X y las Y que ocupa una forma, con sus extremos.
+
+    Importa el EXTREMO, no el centro: una elipse centrada dentro del lienzo
+    puede salirse por el radio, y así se veía cortada en pantalla sin que nada
+    lo dijera.
+    """
+    xs: list[float] = []
+    ys: list[float] = []
+    if tipo == "elipse":
+        cx, cy = float(forma["cx"]), float(forma["cy"])
+        rx, ry = abs(float(forma["rx"])), abs(float(forma["ry"]))
+        xs += [cx - rx, cx + rx]
+        ys += [cy - ry, cy + ry]
+    elif tipo == "rrect":
+        x, y = float(forma["x"]), float(forma["y"])
+        xs += [x, x + abs(float(forma["w"]))]
+        ys += [y, y + abs(float(forma["h"]))]
+    elif tipo == "poli":
+        for par in forma.get("p") or []:
+            xs.append(float(par[0]))
+            ys.append(float(par[1]))
+    elif tipo == "ruta":
+        # Todas las órdenes que acepta el painter (M, L, Q, C) toman pares; `Z`
+        # no toma ninguno. Así que los números van alternando X e Y.
+        numeros = [float(n) for n in NUMERO.findall(str(forma["d"]))]
+        xs += numeros[0::2]
+        ys += numeros[1::2]
+    return xs, ys
+
+
 def main() -> int:
     fallos: list[str] = []
     revisadas = 0
@@ -70,10 +107,16 @@ def main() -> int:
             continue
 
         revisadas += 1
-        lienzo = datos.get("vb")
-        if not isinstance(lienzo, (int, float)) or lienzo <= 0:
-            fallos.append(f"{nombre}: falta `vb` (el lado del lienzo)")
-            lienzo = 100
+        ancho = datos.get("vb")
+        if not isinstance(ancho, (int, float)) or ancho <= 0:
+            fallos.append(f"{nombre}: falta `vb` (el ancho del lienzo)")
+            ancho = 100
+        # `vh` solo lo declaran las láminas apaisadas —las del cuento—; las del
+        # vocabulario son cuadradas y se lo callan.
+        alto = datos.get("vh", ancho)
+        if not isinstance(alto, (int, float)) or alto <= 0:
+            fallos.append(f"{nombre}: `vh` no es un alto válido: {alto!r}")
+            alto = ancho
 
         formas = datos.get("formas")
         if not isinstance(formas, list) or not formas:
@@ -126,21 +169,19 @@ def main() -> int:
                     f"`sw`; `w` es solo el ancho de un `rrect`."
                 )
 
-            # Que el dibujo esté dentro del lienzo. Un margen de 6 unidades
-            # perdona el grosor del contorno, que se pinta centrado.
-            coords: list[float] = []
-            for clave in ("cx", "cy", "x", "y"):
-                if isinstance(forma.get(clave), (int, float)):
-                    coords.append(float(forma[clave]))
-            if tipo == "ruta":
-                coords += [float(n) for n in NUMERO.findall(str(forma["d"]))]
-            if tipo == "poli":
-                for par in forma.get("p") or []:
-                    coords += [float(v) for v in par]
-            fuera = [c for c in coords if c < -6 or c > lienzo + 6]
+            # Que el dibujo esté dentro del lienzo. Las X contra el ancho y
+            # las Y contra el alto, que en las láminas del cuento NO son lo
+            # mismo: son apaisadas. Antes se comparaba todo contra el lado del
+            # cuadrado, y en un lienzo de 160×100 eso dejaba pasar cualquier
+            # cosa dibujada hasta 60 unidades por debajo del borde inferior.
+            # Un margen de 6 perdona el grosor del contorno, que va centrado.
+            xs, ys = _coordenadas(forma, tipo)
+            fuera = [f"x={_corto(v)}" for v in xs if v < -6 or v > ancho + 6]
+            fuera += [f"y={_corto(v)}" for v in ys if v < -6 or v > alto + 6]
             if fuera:
                 fallos.append(
-                    f"{donde} [{tipo}]: se sale del lienzo en {sorted(set(fuera))[:4]}"
+                    f"{donde} [{tipo}]: se sale del lienzo de {ancho}×{alto} "
+                    f"en {sorted(set(fuera))[:4]}"
                 )
 
     if fallos:

@@ -52,7 +52,8 @@
         "ingles": [
           "Coat",
           "Big"
-        ]
+        ],
+        "lamina": "conto_choiva_1"
       },
       {
         "orden": 2,
@@ -69,7 +70,8 @@
           "Coat",
           "Boots",
           "Put on your hat"
-        ]
+        ],
+        "lamina": "conto_choiva_2"
       },
       {
         "orden": 3,
@@ -84,7 +86,8 @@
         "ingles": [
           "Stomp your boots",
           "Put on your hat! Now boots: stomp, stomp on the floor!"
-        ]
+        ],
+        "lamina": "conto_choiva_3"
       }
     ]
   },

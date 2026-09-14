@@ -52,7 +52,8 @@
         "ingles": [
           "Hello",
           "Backpack"
-        ]
+        ],
+        "lamina": "conto_benvida_1"
       },
       {
         "orden": 2,
@@ -68,7 +69,8 @@
           "Hand",
           "Gentle",
           "Friend"
-        ]
+        ],
+        "lamina": "conto_benvida_2"
       },
       {
         "orden": 3,
@@ -83,7 +85,8 @@
         "ingles": [
           "Hug",
           "Bye-bye"
-        ]
+        ],
+        "lamina": "conto_benvida_3"
       }
     ]
   },

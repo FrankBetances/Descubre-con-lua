@@ -53,7 +53,8 @@
           "Rain",
           "Tap-tap",
           "Rain, rain, tap, tap, little drops!"
-        ]
+        ],
+        "lamina": "conto_primavera_1"
       },
       {
         "orden": 2,
@@ -68,7 +69,8 @@
         "ingles": [
           "Grow",
           "Be a little seed"
-        ]
+        ],
+        "lamina": "conto_primavera_2"
       },
       {
         "orden": 3,
@@ -84,7 +86,8 @@
           "Sun",
           "Flower",
           "Open your flower"
-        ]
+        ],
+        "lamina": "conto_primavera_3"
       }
     ]
   },

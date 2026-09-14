@@ -53,7 +53,8 @@
           "Leaf",
           "Brown",
           "Orange"
-        ]
+        ],
+        "lamina": "conto_follas_1"
       },
       {
         "orden": 2,
@@ -69,7 +70,8 @@
           "Wind",
           "Falling",
           "Fall down"
-        ]
+        ],
+        "lamina": "conto_follas_2"
       },
       {
         "orden": 3,
@@ -84,7 +86,8 @@
         "ingles": [
           "Crunch",
           "Crunch, crunch, crunch!"
-        ]
+        ],
+        "lamina": "conto_follas_3"
       }
     ]
   },
