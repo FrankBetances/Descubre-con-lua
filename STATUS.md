@@ -60,9 +60,9 @@ tools/gates.sh --fast   # sin la compilación del APK (rápido, para iterar)
 ```
 
 CI ejecuta **ese mismo fichero** (`.github/workflows/ci.yml`). La lista de
-gates no vive escrita en ningún documento: vive en el script. En Valeria la
-lista del CLAUDE.md se quedó atrás respecto al workflow y una build murió en un
-gate que no figuraba en ella.
+gates no vive escrita en ningún documento: vive en el script. Una lista escrita
+a mano en un documento se queda atrás respecto al workflow, y entonces una build
+muere en un gate que no figuraba en ella.
 
 | Gate | Qué comprueba |
 | --- | --- |
@@ -95,7 +95,7 @@ trae SDK de Flutter; esos tres gates viven hoy en CI):
 | Correo de contacto | `tools/check_contact_email.py` → OK |
 | Corpus de voz sincronizado | `tools/export_voice_corpus.py --check` → OK |
 | Tempo declarado vs pista real | `tools/check_pulse_bpm.py` → 72,3 BPM medidos, coinciden |
-| Paridad de identificadores de voz | `test/core/voice_id_test.dart`: Dart, Python y el corpus real de Valeria dan el mismo hash |
+| Paridad de identificadores de voz | `test/core/voice_id_test.dart`: la implementación en Dart y la de Python dan el mismo hash sobre el mismo texto |
 | Icono de Lúa | Renderizado y **mirado** en todas las densidades |
 | **La app arranca y se navega en un aparato real** | Frank instaló el APK del run 16 en un **Pixel 6**: abre sin problemas y las secciones funcionan. Es la primera vez que esta app corre en un Android |
 
@@ -134,8 +134,8 @@ lo acepta de forma explícita y rechaza cualquier otro.
 proyecto pasa sus propias comprobaciones completas. Antes de ese run, `main`
 nunca había tenido uno limpio.
 
-`.github/workflows/ci.yml` corre los gates **y** compila el binario firmado, con
-la forma del `android.yml` de Valeria+ adaptada a Flutter. Del run 16 salen:
+`.github/workflows/ci.yml` corre los gates **y** compila el binario firmado.
+Del run 16 salen:
 
 | Artefacto | Tamaño | Retención |
 | --- | --- | --- |
@@ -183,9 +183,8 @@ inferencia. Eso es lo que mantiene el binario sin permisos de red.
 
 ## Decisiones resueltas por Frank
 
-1. **El metrónomo es visual, como en Valeria.** No suena. La razón está en el
-   propio fichero de Valeria: parte de las crianzas llevan audiófono o
-   implante, y un metrónomo sonoro compite justo con la voz que tienen que
+1. **El metrónomo es visual.** No suena: parte de las crianzas llevan audiófono
+   o implante, y un metrónomo sonoro compite justo con la voz que tienen que
    seguir. Los tiempos salen de las marcas `*` de la letra, no de una
    configuración aparte. Un test comprueba que iniciar el pulso **no reproduce
    ningún audio**.
@@ -208,15 +207,12 @@ inferencia. Eso es lo que mantiene el binario sin permisos de red.
 4. **La pista de pulso de 2,3 MB.** Con el metrónomo visual ya no hace falta
    como metrónomo sonoro. Sigue en el paquete y sigue verificada en 72,3 BPM;
    retirarla ahorraría 2,3 MB del APK.
-5. **El keystore de subida.** El workflow ya sabe firmar, pero no hay clave.
-   Hay que decidir si esta app usa un keystore **propio** o el mismo de
-   Valeria+ (técnicamente se puede: son `applicationId` distintos), y si se
-   activa *Play App Signing* — que es lo que evita que perder el fichero deje
-   la app sin posibilidad de actualizarse nunca más.
-6. **Minificación.** `minifyEnabled false` y `shrinkResources false`. Valeria+
-   va con R8 y por eso guarda `mapping.txt`; aquí el paso que lo sube está
-   puesto pero no sube nada. Activarlo cambia el binario, así que no se ha
-   tocado: es una decisión, no un olvido.
+5. **El keystore de subida.** Las decisiones de firma —qué clave usa esta app y
+   qué se activa en la consola de la tienda— **no se documentan aquí**: este
+   repositorio es público y eso es información de operación.
+6. **Minificación.** `minifyEnabled false` y `shrinkResources false`. El paso
+   que sube `mapping.txt` está puesto pero hoy no sube nada. Activar R8 cambia
+   el binario, así que no se ha tocado: es una decisión, no un olvido.
 7. **`placeholderPattern` caza la palabra «todo».** En
    `content_validator.dart:60` el patrón `\b(TODO|TBD|…)\b` va con
    `caseSensitive: false`, así que rechaza cualquier texto que contenga «todo»

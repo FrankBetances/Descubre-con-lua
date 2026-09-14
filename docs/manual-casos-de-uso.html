@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+
+
 <html lang="es">
 <head>
 <meta charset="utf-8">
@@ -9,10 +12,9 @@
     · PDF   — docs/build-pdf.js
     · Word  — docs/build-docx.py
 
-  Misma estructura que Valeria+, y por la misma razón que está escrita en su
-  build-docx.py: allí el texto llegó a estar duplicado dentro del constructor,
-  el HTML avanzó a la v12 y el Word se quedó describiendo la v10.3 sin que nada
-  avisara. Aquí no se edita el Word ni el PDF: se edita esto y se reconstruyen.
+  El texto vive en un solo sitio a propósito: cuando el constructor lleva su
+  propia copia, la fuente avanza y el documento generado se queda describiendo
+  una versión anterior sin que nada avise. Aquí no se edita el Word ni el PDF: se edita esto y se reconstruyen.
 
   Regla de contenido, la del resto del proyecto: sólo se describe lo que la app
   hace hoy. Lo que no existe está en «Límites de esta versión».
@@ -161,6 +163,7 @@
     <li><span class="num">1</span><span class="txt">Qué es, y qué no es</span></li>
     <li><span class="num">2</span><span class="txt">Antes de empezar</span></li>
     <li><span class="num">3</span><span class="txt">Mapa de la aplicación, y las pantallas</span></li>
+    <li><span class="num">4</span><span class="txt">Cómo funciona una asamblea</span></li>
     <li class="section-label">Casos de uso · Docente</li>
     <li><span class="num">CU-1</span><span class="txt">Ver qué toca este mes</span></li>
     <li><span class="num">CU-2</span><span class="txt">Elegir la unidad de la asamblea</span></li>
@@ -178,15 +181,9 @@
     <li><span class="num">CU-13</span><span class="txt">Responder la reflexión</span></li>
     <li><span class="num">CU-14</span><span class="txt">Usar la app sin la criatura delante</span></li>
     <li><span class="num">CU-15</span><span class="txt">Preparar el inglés en casa</span></li>
-    <li class="section-label">Casos de uso · Mantenimiento</li>
-    <li><span class="num">CU-16</span><span class="txt">Añadir una unidad o una cápsula</span></li>
-    <li><span class="num">CU-17</span><span class="txt">Cambiar un texto que tiene audio</span></li>
-    <li><span class="num">CU-18</span><span class="txt">Regenerar las voces</span></li>
-    <li><span class="num">CU-19</span><span class="txt">Comprobar antes de entregar</span></li>
-    <li><span class="num">CU-20</span><span class="txt">Auditar la privacidad del binario</span></li>
     <li class="section-label">Cierre</li>
-    <li><span class="num">4</span><span class="txt">Límites de esta versión</span></li>
-    <li><span class="num">5</span><span class="txt">Si algo va mal</span></li>
+    <li><span class="num">5</span><span class="txt">Límites de esta versión</span></li>
+    <li><span class="num">6</span><span class="txt">Si algo va mal</span></li>
   </ul>
 </section>
 
@@ -338,6 +335,93 @@
       <figure><img src="capturas/creditos-es.png" alt="Créditos en castellano">
         <figcaption>Créditos · ES</figcaption></figure>
     </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ CÓMO FUNCIONA ════ -->
+<section class="page-break">
+  <p class="chapter-kicker">La aplicación</p>
+  <h2>4 · Cómo funciona una asamblea</h2>
+
+  <p>Esta es la parte que conviene leer una vez antes de usar la app con un
+  grupo. No explica botones —eso está en los casos de uso— sino <strong>qué pasa
+  en esos ocho minutos y por qué van en ese orden</strong>.</p>
+
+  <p>La app <strong>no conduce la asamblea: la conduces tú</strong>. Cada fase se
+  abre con una sola frase en letra grande, que es lo que tienes que hacer, y con
+  los minutos que se le suponen. El móvil se queda fuera de la vista de las
+  criaturas; la pantalla es tu guion, no su juguete.</p>
+
+  <table>
+    <thead><tr><th>Fase</th><th>Min.</th><th>Lo que haces</th><th>Para qué</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>1 · Canción a pulso</strong></td><td>1</td>
+        <td>«Círculo en la alfombra. Marca el pulso en las piernas y canta muy despacio.»</td>
+        <td>Reúne al grupo y asienta el ritmo. El pulso regular es lo que sostiene después la palabra: primero el cuerpo, luego la boca</td>
+      </tr>
+      <tr>
+        <td><strong>2 · Cuento guiado</strong></td><td>2</td>
+        <td>«Lee la página en alto, haz la pregunta y espera cinco segundos.»</td>
+        <td>Lengua en contexto, con una lámina que da de qué hablar. Los cinco segundos son la fase: a esta edad la respuesta tarda</td>
+      </tr>
+      <tr>
+        <td><strong>3 · Preguntas graduadas</strong></td><td>1</td>
+        <td>«Una pregunta cada vez. El gesto vale igual que la palabra.»</td>
+        <td>Tres niveles —señalar, nombrar, causa-efecto— para que en el mismo círculo participe quien aún no habla y quien ya cuenta cosas</td>
+      </tr>
+      <tr>
+        <td><strong>4 · Exploración sensorial</strong></td><td>2</td>
+        <td>«Lee el aviso antes de sacar el material. Ofrece; no pongas nada en la mano de nadie.»</td>
+        <td>La experiencia directa con el objeto del que se ha hablado. <strong>Ofrecer y no imponer</strong> es la regla: quien no quiere tocar, mira</td>
+      </tr>
+      <tr>
+        <td><strong>5 · Matemáticas tempranas</strong></td><td>1</td>
+        <td>«Dos objetos, no cinco. Nombra mientras lo haces y deja que toquen.»</td>
+        <td>Cantidad, tamaño y forma dichas en voz alta mientras se manipulan. No se cuenta de memoria: se compara</td>
+      </tr>
+      <tr>
+        <td><strong>6 · Puente a casa</strong></td><td>1</td>
+        <td>«Quédate con la nota para las casas: dila en la puerta o escríbela en la entrada.»</td>
+        <td>Que lo del aula llegue a casa <em>esa misma tarde</em>. Sin esto, la asamblea se queda en el aula</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout ok">
+    <p class="lbl">Ocho minutos, y el reloj empieza parado</p>
+    <p>La cabecera suma los minutos de las seis fases. El reloj de cada fase no
+    arranca solo: lo arrancas tú cuando el grupo está listo, y cambia de color
+    si te pasas. No suena nada y no pasa nada por pasarse: es una referencia,
+    no una alarma.</p>
+  </div>
+
+  <h3>Tres hilos que cruzan las seis fases</h3>
+
+  <p><strong>El pulso se ve, no se oye.</strong> El metrónomo es visual a
+  propósito. Parte de las criaturas llevan audiófono o implante coclear, y un
+  metrónomo sonoro compite justo con la voz que tienen que seguir. El pulso se
+  dibuja y el canal auditivo queda entero para la letra.</p>
+
+  <p><strong>El inglés es contenido, no un idioma de la app.</strong> Ninguna
+  pantalla se lee en inglés. Lo que hay son dos o tres palabras y una orden de
+  cuerpo por fase, con su grabación: <em>pulsas, oyes cómo se dice, y luego lo
+  dices tú</em>. No hace falta saber inglés para usarlo; hace falta oírlo antes.
+  Las grabaciones van despacio a propósito.</p>
+
+  <p><strong>El calendario es lo que une aula y casa.</strong> Cada mes tiene un
+  centro de interés, y de él salen la unidad que usas en la asamblea y la
+  cápsula que la familia lee en casa. Cuando en la misma semana la docente
+  registra la asamblea y la familia registra su juego de tres minutos, el mes
+  queda enlazado. Esa coincidencia es el objetivo: que la criatura oiga lo mismo
+  en los dos sitios.</p>
+
+  <div class="callout warn">
+    <p class="lbl">Lo que la app no hace, y no es un olvido</p>
+    <p>No evalúa a nadie, no puntúa, no guarda quién hizo qué y no emite
+    informes. Los premios de Lúa cuentan lo que hace <strong>la persona
+    adulta</strong> —asambleas dirigidas, cápsulas leídas— y nunca el progreso
+    de una criatura, porque ese dato no se ha medido y no se inventa.</p>
   </div>
 </section>
 
@@ -732,122 +816,11 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════ CU · MANTENIMIENTO ═══════ -->
-<section class="page-break">
-  <p class="chapter-kicker">Casos de uso</p>
-  <h2>Mantenimiento · Equipo del proyecto</h2>
 
-  <div class="uc">
-    <div class="uc-head violet">
-      <div class="id">CU-16</div>
-      <div class="title">Añadir una unidad o una cápsula</div>
-    </div>
-    <div class="uc-body">
-      <ol>
-        <li>Crea el JSON en <code>assets/content/unidades/</code> o
-        <code>assets/content/capsulas/</code>, con las dos lenguas completas.</li>
-        <li><code>python3 tools/export_voice_corpus.py</code> extrae las locuciones
-        nuevas y sincroniza las rutas de audio.</li>
-        <li>Lanza el workflow <strong>Generate Voice Assets</strong> para sintetizarlas.</li>
-        <li><code>tools/gates.sh</code>.</li>
-      </ol>
-      <p class="small muted">No hay que tocar Dart: el catálogo se descubre del propio paquete.</p>
-    </div>
-  </div>
 
-  <div class="uc">
-    <div class="uc-head violet">
-      <div class="id">CU-17</div>
-      <div class="title">Cambiar un texto que tiene audio</div>
-    </div>
-    <div class="uc-body">
-      <div class="callout ok">
-        <p class="lbl">Esto es lo que más fácil se rompe, y está resuelto por construcción</p>
-        <p>El identificador de cada grabación es el hash de su propio texto.</p>
-      </div>
-      <p>Si cambias una frase:</p>
-      <ol>
-        <li>Cambia el identificador.</li>
-        <li>La grabación vieja queda huérfana y la nueva no existe.</li>
-        <li><code>tools/check_voice_coverage.py</code> falla y dice exactamente cuál falta.</li>
-      </ol>
-      <p>No se puede publicar una pantalla que enseñe un texto y reproduzca otro.</p>
-    </div>
-  </div>
-
-  <div class="uc">
-    <div class="uc-head violet">
-      <div class="id">CU-18</div>
-      <div class="title">Regenerar las voces</div>
-    </div>
-    <div class="uc-body">
-      <table>
-        <thead><tr><th>Lengua</th><th>Voz</th><th>Requisito</th></tr></thead>
-        <tbody>
-          <tr><td>Gallego</td><td><strong>Celtia</strong>, do Proxecto Nós</td><td>Secret <code>HF_TOKEN</code> (el modelo es <em>gated</em> en Hugging Face)</td></tr>
-          <tr><td>Castellano</td><td><strong>Sharvard</strong> (rhasspy/piper-voices)</td><td>Ninguno</td></tr>
-        </tbody>
-      </table>
-      <p>Lanza el workflow <strong>Generate Voice Assets</strong>. Sintetiza sólo
-      lo que falta, masteriza con objetivo de −3 dBFS, comprueba el pico del
-      fichero <em>ya codificado</em> y atenúa si hace falta, y commitea los
-      <code>.m4a</code>.</p>
-      <div class="callout warn">
-        <p class="lbl">El objetivo previo no basta</p>
-        <p>Un códec con pérdida no conserva el pico que se le entrega. Un recitado
-        masterizado a −3 dBFS salió del codificador a −0,0, sin margen ninguno.
-        <code>tools/check_voice_levels.py</code> mide los ficheros que se publican.</p>
-      </div>
-      <p class="small muted">Los modelos corren en CI y jamás en el aparato: la app
-      lleva grabaciones, no inferencia. Por eso el APK no necesita ni un permiso de red.</p>
-    </div>
-  </div>
-
-  <div class="uc">
-    <div class="uc-head violet">
-      <div class="id">CU-19</div>
-      <div class="title">Comprobar antes de entregar</div>
-    </div>
-    <div class="uc-body">
-      <p><code>tools/gates.sh --fast</code> pasa formato, análisis, tests y los
-      gates de contenido. <code>tools/gates.sh</code> añade la compilación del APK
-      y la auditoría de sus permisos.</p>
-      <p>CI ejecuta ese mismo script, así que la lista de gates no puede quedarse
-      atrás respecto a lo que de verdad se exige. El estado real de cada uno está
-      en <code>STATUS.md</code>.</p>
-    </div>
-  </div>
-
-  <div class="uc">
-    <div class="uc-head violet">
-      <div class="id">CU-20</div>
-      <div class="title">Auditar la privacidad del binario</div>
-    </div>
-    <div class="uc-body">
-      <ol>
-        <li><code>flutter build apk --release</code></li>
-        <li><code>aapt2 dump permissions build/app/outputs/flutter-apk/app-release.apk</code></li>
-      </ol>
-      <p>Debe aparecer <strong>un único permiso</strong>, el que AndroidX inyecta
-      (<code>…DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, de nivel
-      <em>signature</em> y con el nombre de paquete de la propia app). Cualquier
-      otro, y en especial <code>android.permission.INTERNET</code>, es un fallo
-      bloqueante.</p>
-      <div class="callout">
-        <p class="lbl">Por qué se lee del binario y no del manifiesto</p>
-        <p>Esa salida es la prueba que sostiene la política de privacidad y el
-        formulario de <em>Seguridad de los datos</em> de Google Play. Un manifiesto
-        fuente que quita INTERNET no demuestra nada por sí solo: una dependencia
-        fusionada puede devolverlo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════ CIERRE ════ -->
 <section class="page-break">
   <p class="chapter-kicker">Cierre</p>
-  <h2>4 · Límites de esta versión</h2>
+  <h2>5 · Límites de esta versión</h2>
   <p>Para que nadie se lleve una sorpresa en un aula:</p>
   <table>
     <thead><tr><th>Límite</th><th>Detalle</th></tr></thead>
@@ -863,7 +836,7 @@
     </tbody>
   </table>
 
-  <h2>5 · Si algo va mal</h2>
+  <h2>6 · Si algo va mal</h2>
   <table>
     <thead><tr><th>Qué ves</th><th>Qué pasa</th></tr></thead>
     <tbody>

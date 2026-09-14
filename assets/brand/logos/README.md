@@ -15,9 +15,27 @@ no el logotipo.
 | --- | --- | --- |
 | `dr-betances-crest.png` | Escudo del Dr. Betances | Créditos, cabecera de autoría |
 | `earlify-health.jpg` | Earlify Health S.L. | Créditos, bajo el escudo |
-| `startic.png` | Programa startTIC | Créditos, «con el apoyo de» |
-| `zona-franca-vigo.png` | Consorcio da Zona Franca de Vigo | Créditos, «con el apoyo de» |
-| `concello-vigo.png` | Concello de Vigo | Créditos, «con el apoyo de» |
+
+## Los tres que se retiraron, y por qué
+
+El hueco de cada uno **sigue en el código**: en cuanto vuelva el fichero con su
+nombre exacto, el logotipo reaparece sin tocar una línea. Mientras tanto el
+nombre de la entidad se sigue leyendo en texto, que es lo que acredita.
+
+| Fichero retirado | Entidad | Motivo |
+| --- | --- | --- |
+| `concello-vigo.png` | Concello de Vigo | **Retirado por orden de Frank.** |
+| `startic.png` | Programa startTIC | El fichero estaba **cortado**: el símbolo de la izquierda se salía del borde de la imagen. |
+| `zona-franca-vigo.png` | Consorcio da Zona Franca de Vigo | **No era el logotipo oficial**: era un recorte de pantalla, con fondo gris degradado y trozos de gráficos ajenos en el borde izquierdo. |
+
+Un logotipo ajeno mal puesto —cortado, recortado de una web, con el fondo de
+otra página pegado— es peor que no ponerlo: acredita mal a quien intentas
+acreditar. Y no se arregla retocándolo, porque retocar la marca de un tercero
+es exactamente lo que no se puede hacer.
+
+**Para que vuelvan**: el fichero oficial de cada entidad, PNG con fondo
+transparente y al menos 128 px de alto, con su nombre exacto de la tabla. Si la
+entidad solo da SVG, se convierte a PNG a 3×.
 
 **Un fichero que no se pinta no se queda aquí.** `pubspec.yaml` empaqueta la
 carpeta entera, así que un logotipo sin hueco en los créditos viaja en el APK
@@ -41,15 +59,22 @@ PNG con fondo transparente, alto mínimo 128 px. Si hay SVG oficial, mejor
 convertirlo a PNG a 3× (la app no lleva librería de SVG y meterla por tres
 imágenes no compensa).
 
+## El escudo del Dr. Betances va sobre placa oscura
+
+Está dibujado para fondo OSCURO: tiene un cuervo blanco y un círculo blanco.
+Sobre la tarjeta clara de los créditos esas dos piezas desaparecían y quedaba
+medio escudo —el cuervo negro suelto, sin círculo—. Ahora se apoya en una placa
+`AppTheme.dark`, que es la forma de colocarlo sin retocar el dibujo.
+
 ## Pendiente de Frank, antes de publicar
 
-Dos cosas, y ninguna la puede resolver el código:
+Ninguna la puede resolver el código:
 
-1. **Los nombres oficiales exactos.** Los créditos dicen hoy «Programa StartTIC»
+1. **Los ficheros oficiales** de startTIC y del Consorcio da Zona Franca, si se
+   quieren acreditar con logotipo y no solo con el nombre.
+2. **Los nombres oficiales exactos.** Los créditos dicen hoy «Programa StartTIC»
    y «Zona Franca de Vigo». No están confirmados, y acreditar a una institución
    con el nombre mal escrito es peor que no acreditarla.
-2. **El permiso de uso.** Los logotipos del Concello de Vigo, del Consorcio da
-   Zona Franca y de startTIC son marcas de terceros, y en una ficha de Google
-   Play sugieren respaldo institucional. Hace falta autorización escrita de las
-   tres. Sin ella, lo correcto es dejar el nombre en texto y quitar el fichero:
-   el widget se cierra solo y la pantalla sigue estando bien.
+3. **El permiso de uso**, para cualquier marca de tercero que vuelva a ponerse:
+   en una ficha de Google Play un logotipo institucional sugiere respaldo, y eso
+   hace falta por escrito.

@@ -33,7 +33,7 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 
 | | |
 | --- | --- |
-| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | 17 casos de uso —docente, familias y mantenimiento— y las 14 imágenes de pantalla. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | Para la docente y la familia: cómo funciona una asamblea de ocho minutos, y 15 casos de uso con sus imágenes de pantalla. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
 | [**CLAUDE.md**](CLAUDE.md) | Reglas de trabajo del proyecto |
@@ -88,9 +88,9 @@ Defectos abiertos que hay que mirar antes de publicar:
 - **las 80 láminas no son de una persona ilustradora profesional**, y se nota.
   Son un puente honesto mientras no haya un set encargado, que es lo que este
   producto merece para las escuelas de Vigo;
-- **las licencias de las voces** —Celtia para el gallego, Sharvard para el
-  castellano, LJSpeech para el inglés— **no se han verificado** de cara a cobrar
-  una licencia institucional. Lo mismo la revisión legal de `LICENSE.md`.
+- la revisión de las condiciones de los componentes de terceros y la revisión
+  legal de `LICENSE.md` están **pendientes**, y se llevan fuera de este
+  documento.
 
 ## Comprobar
 
@@ -118,20 +118,18 @@ en el script, no en un documento que se pueda quedar atrás:
 
 ## Publicar
 
-El mismo workflow que corre los gates compila el binario firmado, con la forma
-del `android.yml` de Valeria+ adaptada a Flutter. No hay un segundo workflow que
-recompile lo mismo con otra configuración.
+El mismo workflow que corre los gates compila el binario firmado. No hay un
+segundo workflow que recompile lo mismo con otra configuración.
 
 | Artefacto | Cuándo se produce | Retención |
 | --- | --- | --- |
 | `android-apk` (`.apk`) | En `main` y en «Run workflow» | 5 días |
+| `android-apk-<run>` (`.apk`) | En cualquier rama | 2 días |
 | `android-aab` (`.aab`) | En `main` y en «Run workflow», **solo con secrets de firma** | 3 días |
 | `android-mapping` (`mapping.txt`) | Cuando exista (hoy `minifyEnabled false`) | 30 días |
 
-Las ramas `claude/**` **compilan igual** —los gates y Gradle corren— pero no
-suben el fichero: la regla de trabajo es que nada llega a Frank hasta estar en
-`main` con run verde. Para bajarse el APK de una rama: Actions → «Gates» → «Run
-workflow» eligiendo esa rama.
+Las ramas también compilan y suben su propio APK, con nombre y retención
+propios para no pisar el de `main`.
 
 Al final de cada run se retiran los artefactos viejos y se dejan 2 copias de
 cada nombre (10 del mapa de R8), para que el almacenamiento tenga un suelo fijo
@@ -139,22 +137,14 @@ en vez de crecer con el ritmo de commits.
 
 ### Claves de firma
 
-Se configuran en *Settings → Secrets and variables → Actions*. Son los mismos
-nombres que en Valeria+, pero **los secrets son por repositorio**: hay que darlos
-de alta también aquí.
+Los nombres de los secrets de firma están en `.github/workflows/ci.yml`, que es
+donde se usan. **Su estado —si están dados de alta, con qué clave y desde
+cuándo— no se documenta aquí**: este repositorio es público y eso es
+información de operación.
 
-| Secret | Contenido |
-| --- | --- |
-| `ANDROID_RELEASE_KEYSTORE_BASE64` | `base64 -w0 release.keystore` |
-| `ANDROID_RELEASE_STORE_PASSWORD` | Contraseña del keystore |
-| `ANDROID_RELEASE_KEY_ALIAS` | Alias de la clave |
-| `ANDROID_RELEASE_KEY_PASSWORD` | Contraseña de la clave |
-
-**Los cuatro secrets están configurados en este repositorio** y verificados en el
-run 16 de `main`. Si faltasen, el APK se firmaría con la **clave de depuración**
-—se instala a mano, y Google Play lo rechaza— y el AAB no se generaría, porque un
-AAB sin firmar no se puede subir a ningún sitio y solo sería un fichero que
-engaña.
+Si faltasen, el APK se firmaría con la **clave de depuración** —se instala a
+mano, y Google Play lo rechaza— y el AAB no se generaría, porque un AAB sin
+firmar no se puede subir a ningún sitio y solo sería un fichero que engaña.
 
 Un gate en rojo también bloquea el AAB: los pasos posteriores a uno fallido se
 saltan. Cuando el AAB no aparezca, el motivo está más arriba en el run.
@@ -165,16 +155,12 @@ el binario en vez de la configuración.
 `versionCode` sale del número de run del workflow, porque Play exige que cada
 subida lleve uno mayor que el anterior; `pubspec.yaml` lo deja fijo en 1.
 
-> Perder el keystore sin tener activado *Play App Signing* deja la app sin
-> posibilidad de actualizarse nunca más. Con *Play App Signing* activado, lo
-> peor que pasa es pedir una clave de subida nueva.
-
 
 ## El pulso se ve, no se oye
 
-El metrónomo de la canción a pulso es **visual**, como en Valeria+. No es una
-decisión estética: parte de las criaturas llevan audiófono o implante, y un
-metrónomo sonoro compite justo con la voz que tienen que seguir.
+El metrónomo de la canción a pulso es **visual**. No es una decisión estética:
+parte de las criaturas llevan audiófono o implante, y un metrónomo sonoro
+compite justo con la voz que tienen que seguir.
 
 Los tiempos del compás salen de las marcas `*` de la letra, no de una
 configuración aparte, así que el pulso no puede discrepar de lo que la docente
@@ -240,9 +226,9 @@ que publica `docs/`):
 Las vigilan dos gates: `check_legal_urls.py --offline` dentro de `tools/gates.sh`
 comprueba los ficheros, y `.github/workflows/legal-urls.yml` pide las URLs **a
 diario**. El segundo existe porque un sitio de Pages se puede apagar sin que se
-ponga rojo nada: en Valeria+, Google rechazó la ficha por un 404 teniendo el
-último despliegue en verde. Un despliegue correcto no demuestra que el sitio
-esté vivo.
+ponga rojo nada, y entonces la ficha de la tienda apunta a un 404 con el último
+despliegue en verde. Un despliegue correcto no demuestra que el sitio esté
+vivo; solo lo demuestra pedir la URL.
 
 Contacto: frank.alberto.betances.reinoso@gmail.com
 
@@ -259,9 +245,9 @@ python3 docs/build-docx.py                      # → docs/*.docx
 python3 tools/check_manual_build.py             # ¿alguno se quedó atrás?
 ```
 
-Misma estructura que Valeria+, y por su misma razón: allí el texto llegó a estar
-duplicado dentro del constructor y el Word se quedó describiendo una versión
-anterior sin que nada avisara.
+El texto vive en un solo sitio a propósito: cuando el constructor lleva su
+propia copia, la fuente avanza y el documento generado se queda describiendo una
+versión anterior sin que nada avise.
 
 Las 14 imágenes de pantalla viven en `docs/capturas/` y se regeneran con:
 
