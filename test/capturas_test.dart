@@ -17,6 +17,7 @@ import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
+import 'package:descubre_con_lua/data/repositories/ritual_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
@@ -240,6 +241,30 @@ void main() {
     }
   }
 
+  /// El ritual de la asamblea —la consigna de cada fase y sus minutos— también
+  /// se lee del paquete, y también hay que calentarlo.
+  ///
+  /// Sin esto, las capturas de la asamblea en CASTELLANO salían SIN la caja de
+  /// la consigna y sin los minutos totales, que es justo lo que define el modo
+  /// asamblea. En gallego sí aparecían. No era el idioma: el ritual se cachea
+  /// en un `static`, y el futuro que quedaba guardado lo había creado el test
+  /// anterior, en SU zona de reloj falso. Un `.then` sobre ese futuro se
+  /// encola en una zona que ya está muerta y no se ejecuta nunca.
+  ///
+  /// Por eso se OLVIDA primero y se vuelve a cargar dentro de `runAsync`, que
+  /// es tiempo de verdad, y se comprueba que llegaron las seis fases. Sin la
+  /// comprobación esto sería otra espera que se salta en silencio.
+  Future<void> calentarRitual(WidgetTester tester) async {
+    RitualAsamblea.olvidar();
+    RitualAsamblea? cargado;
+    await tester.runAsync(() async {
+      cargado = await RitualAsamblea.cargar();
+    });
+    expect(cargado?.fases.length, 6,
+        reason: 'O ritual da asemblea non chegou a cargarse: as capturas '
+            'sairían sen a consigna de cada fase.');
+  }
+
   Future<void> capturar(
     WidgetTester tester,
     String nombre,
@@ -248,6 +273,9 @@ void main() {
   }) async {
     await calentarMascota(tester);
     await calentarLaminas(tester);
+    // También aquí: `asamblea-ingles-{gl,es}` pasa por este ayudante, y sin el
+    // ritual retrataba la asamblea sin su consigna.
+    await calentarRitual(tester);
 
     tester.view.physicalSize = tamano * 2;
     tester.view.devicePixelRatio = 2.0;
@@ -391,6 +419,7 @@ void main() {
       final unidad = await unidadDeHoxe(tester);
       await calentarMascota(tester);
       await calentarLaminas(tester);
+      await calentarRitual(tester);
       tester.view.physicalSize = const Size(412, 1800) * 2;
       tester.view.devicePixelRatio = 2.0;
       addTearDown(tester.view.reset);
@@ -413,6 +442,42 @@ void main() {
 
       await expectLater(find.byType(MaterialApp),
           matchesGoldenFile('../docs/capturas/asamblea-conto-$l.png'));
+    });
+
+    testWidgets('asamblea · o protocolo de seguridade · $l', (tester) async {
+      // La fase 4, que es donde vive el AVISO DE SEGURIDAD. Ninguna captura
+      // llegaba hasta aquí, así que el aviso que la docente lee antes de sacar
+      // material —castañas, cascabeles, caretas— no estaba retratado en ningún
+      // sitio. Es justo la pantalla donde un fallo visual tiene consecuencias
+      // fuera de la pantalla.
+      final unidad = await unidadDeHoxe(tester);
+      await calentarMascota(tester);
+      await calentarLaminas(tester);
+      await calentarRitual(tester);
+      tester.view.physicalSize = const Size(412, 1500) * 2;
+      tester.view.devicePixelRatio = 2.0;
+      addTearDown(tester.view.reset);
+
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.lightTheme,
+        debugShowCheckedModeBanner: false,
+        home: AsambleaGuiadaScreen(
+          unidad: unidad,
+          initialLanguage: lang,
+          audioService: MockOfflineAudioService(),
+        ),
+      ));
+      await tester.pumpAndSettle();
+      for (var i = 0; i < 3; i++) {
+        await tester.tap(find.byKey(const Key('boton_seguinte_fase')));
+        await tester.pumpAndSettle();
+      }
+      await tester.runAsync(
+          () => Future<void>.delayed(const Duration(milliseconds: 120)));
+      await tester.pumpAndSettle();
+
+      await expectLater(find.byType(MaterialApp),
+          matchesGoldenFile('../docs/capturas/asamblea-seguridade-$l.png'));
     });
 
     testWidgets('a nota para as casas · $l', (tester) async {

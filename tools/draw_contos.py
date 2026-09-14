@@ -300,10 +300,14 @@ def lua(pose="sentada", ollos="abertos", boca="sorriso", cola="curva",
         # Después de los brazos, y más anchas que ellos: puestas antes, el brazo
         # se pintaba encima y de la página del vuelo no quedaba ni un ala.
         for lado in (-1, 1):
-            f += [ruta(f"M{18 * lado} -6 C{58 * lado} -26 {66 * lado} 18 "
-                       f"{22 * lado} 20 Z", f="#a5f3fc", s=LOUSA, sw=3),
-                  ruta(f"M{24 * lado} 2 C{42 * lado} -4 {50 * lado} 2 "
-                       f"{52 * lado} 8", s=LOUSA, sw=2.5)]
+            f += [ruta(f"M{16 * lado} -10 C{62 * lado} -40 {88 * lado} 6 "
+                       f"{26 * lado} 26 Z", f="#a5f3fc", s=LOUSA, sw=3.5),
+                  # Las plumas: tres trazos, que es lo que separa un ala de una
+                  # mancha azul con forma de gota.
+                  ruta(f"M{26 * lado} 8 C{46 * lado} -4 {62 * lado} -6 "
+                       f"{70 * lado} 0", s=LOUSA, sw=2.5),
+                  ruta(f"M{24 * lado} 16 C{44 * lado} 6 {60 * lado} 6 "
+                       f"{70 * lado} 10", s=LOUSA, sw=2.5)]
     if disfraz == "ra":
         # Las patas verdes se pintan ENCIMA de las de la gata: es un disfraz.
         for lado in (-1, 1):
@@ -748,10 +752,11 @@ def animais_1():
 def animais_2():
     f = interior(64)
     f += alfombra(80, 90, rx=62, ry=11)
-    f += objeto("paxaro", 132, 28, alto=38)
-    f += lua_en(66, 86, alto=64, pose="de_pe", brazo_e=96, brazo_d=-96,
-                ollos="contentos", cola="alta", disfraz="alas")
-    f += frecha_movemento("M24 26 C56 14 100 18 124 32", color="#68707e", sw=3)
+    f += objeto("paxaro", 28, 26, alto=36)
+    f += lua_en(80, 84, alto=60, pose="de_pe", brazo_e=96, brazo_d=-96,
+                longo_brazo=26, ollos="contentos", cola="alta", mans=False,
+                disfraz="alas")
+    f += frecha_movemento("M44 20 C74 8 112 12 140 26", color="#68707e", sw=3)
     return f, ("Lúa abre os brazos coma ás e voa de puntillas arredor da "
                "alfombra.")
 
@@ -806,13 +811,14 @@ def corpo_3():
         # Una peana: una estatua se queda quieta ENCIMA de algo.
         rrect(44, 86, 72, 12, 3, f="#c5ccd6", s=LOUSA, sw=3),
     ]
-    f += lua_en(80, 86, alto=70, pose="de_pe", brazo_e=4, brazo_d=-4,
-                longo_brazo=28, ollos="abertos", boca="sorriso", cola="alta")
-    # Las líneas de quietud, que en un dibujo fijo son lo contrario del
-    # movimiento: cortas, rectas y simétricas.
-    for x in (30, 130):
-        f += frecha_movemento(f"M{x} 30 L{x} 40 M{x - 8} 46 L{x - 2} 50 "
-                              f"M{x + 8} 46 L{x + 2} 50", color=AMARELO, sw=3)
+    f += lua_en(80, 86, alto=70, pose="de_pe", brazo_e=88, brazo_d=-88,
+                longo_brazo=28, ollos="abertos", boca="aberta", cola="alta")
+    # El movimiento que SE PARA: el arco viene y choca contra una barra. Dos
+    # rayas quietas no decían nada; un tope sí, porque se ve de dónde venía.
+    f += frecha_movemento("M10 34 C20 24 30 24 38 32", color=LARANXA, sw=3)
+    f += frecha_movemento("M150 34 C140 24 130 24 122 32", color=LARANXA, sw=3)
+    f += [ruta("M42 22 L42 44", s=VERMELLO, sw=5),
+          ruta("M118 22 L118 44", s=VERMELLO, sw=5)]
     return f, ("Alguén di a palabra máxica e Lúa queda quieta coma unha "
                "estatua.")
 

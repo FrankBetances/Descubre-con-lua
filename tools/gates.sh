@@ -57,6 +57,10 @@ run_gate "every asset asked for exists and is packaged" python3 tools/check_bund
 # para el ancho del rectángulo Y para el grosor del contorno: clave repetida,
 # JSON se queda con la última y el fichero se lee perfectamente bien.
 run_gate "every lamina shape actually paints" python3 tools/check_laminas.py
+# Nace del aviso de seguridad del aula, que llevaba un ⚠️ del teclado JUSTO al
+# lado de un icono del set propio diciendo lo mismo: dos avisos y dos dibujos,
+# distintos en cada fabricante. Regla 5 del CLAUDE.md.
+run_gate "no system emoji used as iconography" python3 tools/check_no_emoji.py
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py

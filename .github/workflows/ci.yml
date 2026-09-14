@@ -135,6 +135,13 @@ jobs:
       - name: Install the content gates' dependencies
         run: pip install numpy Pillow
 
+      # ffmpeg es lo que MIDE las grabaciones en check_voice_levels.py. Sin él
+      # ese gate se saltaba y devolvía 0: salía PASS en el resumen sin haber
+      # abierto un solo fichero. Un gate que informa de verde sin comprobar nada
+      # es peor que no tenerlo, porque ocupa su sitio.
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: flutter pub get
         run: flutter pub get
 
@@ -265,20 +272,29 @@ jobs:
           if-no-files-found: ignore
           retention-days: 30
 
-      # En las ramas `claude/**` el APK no se instala en ningún sitio: la regla
-      # de trabajo es que nada llega a Frank hasta estar en main con run verde,
-      # así que ese fichero nacía muerto. La rama SIGUE COMPILANDO —los gates y
-      # Gradle corren igual, que es para lo que sirven—; lo único que se pierde
-      # es el fichero. Para bajarse el APK de una rama: pestaña Actions →
-      # "Gates" → "Run workflow" eligiendo esa rama. Ese dispatch sí sube.
+      # El APK sube SIEMPRE, también desde una rama. Antes solo subía en main, y
+      # la regla que lo justificaba —«nada llega a Frank hasta estar en main con
+      # run verde»— acababa forzando lo contrario de lo que quiere: para mirar
+      # algo en el móvil había que fusionar a main primero, o sea meter en main
+      # lo que nadie ha visto en un aparato para poder verlo en un aparato.
+      #
+      # Esa regla es sobre lo que YO puedo decir —no se dice «entregado» desde
+      # una rama—, no sobre lo que Frank puede probar. El artefacto de rama es
+      # para probar; el de main es el que cuenta.
+      #
+      # `retention-days` corto en rama: son builds de trabajo y no hacen falta
+      # dos días después. El de main mantiene sus cinco.
       - name: Subir el APK de release
-        if: always() && (env.TARGET_BRANCH == 'main' || github.event_name == 'workflow_dispatch')
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: android-apk
+          # Nombre distinto por rama: si la rama y main compartieran nombre, la
+          # limpieza de «2 copias por nombre» borraría el de main al subir el de
+          # una rama, que es justo el que hay que poder recuperar.
+          name: ${{ env.TARGET_BRANCH == 'main' && 'android-apk' || format('android-apk-{0}', github.run_number) }}
           path: build/app/outputs/flutter-apk/app-release.apk
           if-no-files-found: warn
-          retention-days: 5
+          retention-days: ${{ env.TARGET_BRANCH == 'main' && 5 || 2 }}
 
       # Cuando Gradle muere dentro de un worker, el log no dice si fue la memoria
       # o el disco. Estas dos líneas lo dicen, y solo cuestan algo en los runs
