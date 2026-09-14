@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/lamina_pixel.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
@@ -106,43 +107,57 @@ class _FilaPalabra extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return Column(
+    return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Wrap y no Row: en galego «Mexillón» con «Mussel» al lado no cabe en
-        // 360 dp con el texto grande del sistema, y una fila fija lo cortaría
-        // en silencio en release.
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: [
-            BotonEscuchar(
-              audioService: audioService,
-              texto: item.palabra.resolve(language),
-              language: language,
-              // Despacio: la palabra existe para que la imiten.
-              style: VoiceStyle.slow,
-              comoChip: true,
-              colorChip: AppTheme.primaryVigoBlue,
-            ),
-            if (item.ingles.isNotEmpty)
-              BotonEscuchar(
-                audioService: audioService,
-                texto: item.ingles,
-                language: AppLanguage.en,
-                style: estiloIngles(item.ingles),
-                comoChip: true,
-                colorChip: BarraInglesFase.acento,
+        // La lámina a la izquierda, la palabra a la derecha: para una criatura
+        // de 0-3 lo que se señala es el dibujo, y la palabra es de la persona
+        // adulta. Si la rejilla no está dibujada, no ocupa nada.
+        if (item.lamina.isNotEmpty) ...[
+          LaminaPixel(clave: item.lamina, size: 64),
+          const SizedBox(width: 12),
+        ],
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Wrap y no Row: en galego «Mexillón» con «Mussel» al lado no cabe en
+              // 360 dp con el texto grande del sistema, y una fila fija lo cortaría
+              // en silencio en release.
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: item.palabra.resolve(language),
+                    language: language,
+                    // Despacio: la palabra existe para que la imiten.
+                    style: VoiceStyle.slow,
+                    comoChip: true,
+                    colorChip: AppTheme.primaryVigoBlue,
+                  ),
+                  if (item.ingles.isNotEmpty)
+                    BotonEscuchar(
+                      audioService: audioService,
+                      texto: item.ingles,
+                      language: AppLanguage.en,
+                      style: estiloIngles(item.ingles),
+                      comoChip: true,
+                      colorChip: BarraInglesFase.acento,
+                    ),
+                ],
               ),
-          ],
-        ),
-        const SizedBox(height: 4),
-        Text(
-          item.definicionBreve.resolve(language),
-          style: theme.textTheme.bodySmall?.copyWith(
-            color: AppTheme.textSecondary,
-            height: 1.35,
+              const SizedBox(height: 4),
+              Text(
+                item.definicionBreve.resolve(language),
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: AppTheme.textSecondary,
+                  height: 1.35,
+                ),
+              ),
+            ],
           ),
         ),
       ],

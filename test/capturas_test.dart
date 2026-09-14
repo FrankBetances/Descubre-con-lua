@@ -8,6 +8,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
+import 'package:descubre_con_lua/core/brand/lamina_pixel.dart';
 import 'package:descubre_con_lua/core/brand/lua_pixel.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
@@ -202,6 +203,36 @@ void main() {
     return contenido.getUnidadById(id!)!;
   }
 
+  /// Las láminas del vocabulario se leen del paquete, que es E/S real, y bajo
+  /// el reloj falso del test esa espera no avanza: en la primera tanda las
+  /// palabras salieron sin dibujo. Igual que la gata, hay que calentarlas
+  /// antes, y comprobar que de verdad llegaron.
+  Future<void> calentarLaminas(WidgetTester tester) async {
+    final claves = <String>{
+      for (final unidad in contenido.getAllUnidades())
+        for (final item in unidad.vocabulario)
+          if (item.lamina.isNotEmpty) item.lamina,
+    };
+    for (final clave in claves) {
+      await tester.pumpWidget(
+        MaterialApp(home: Center(child: LaminaPixel(clave: clave, size: 64))),
+      );
+      await tester.pumpAndSettle();
+      await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 60)),
+      );
+      await tester.pumpAndSettle();
+      expect(
+        find.descendant(
+          of: find.byType(LaminaPixel),
+          matching: find.byType(CustomPaint),
+        ),
+        findsOneWidget,
+        reason: 'A lámina $clave non chegou a cargarse.',
+      );
+    }
+  }
+
   Future<void> capturar(
     WidgetTester tester,
     String nombre,
@@ -209,6 +240,7 @@ void main() {
     Size tamano = const Size(412, 915),
   }) async {
     await calentarMascota(tester);
+    await calentarLaminas(tester);
 
     tester.view.physicalSize = tamano * 2;
     tester.view.devicePixelRatio = 2.0;
@@ -351,6 +383,7 @@ void main() {
       // volver a retratar: por eso esta no usa el ayudante tal cual.
       final unidad = await unidadDeHoxe(tester);
       await calentarMascota(tester);
+      await calentarLaminas(tester);
       tester.view.physicalSize = const Size(412, 1800) * 2;
       tester.view.devicePixelRatio = 2.0;
       addTearDown(tester.view.reset);

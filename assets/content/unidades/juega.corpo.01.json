@@ -103,7 +103,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_7a546549_6.m4a",
         "es": "assets/voice/es_slow_7a546549_6.m4a"
-      }
+      },
+      "lamina": "cabeza"
     },
     {
       "id": "barriga",
@@ -119,7 +120,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_cb05a217_7.m4a",
         "es": "assets/voice/es_slow_cb05a217_7.m4a"
-      }
+      },
+      "lamina": "barriga"
     },
     {
       "id": "pes",
@@ -135,7 +137,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_b80a3b33_3.m4a",
         "es": "assets/voice/es_slow_73ab11d2_4.m4a"
-      }
+      },
+      "lamina": "pes"
     },
     {
       "id": "ollos",
@@ -151,7 +154,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_fee40140_5.m4a",
         "es": "assets/voice/es_slow_d470212e_4.m4a"
-      }
+      },
+      "lamina": "ollos"
     },
     {
       "id": "nariz",
@@ -167,7 +171,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_00222185_5.m4a",
         "es": "assets/voice/es_slow_00222185_5.m4a"
-      }
+      },
+      "lamina": "nariz"
     }
   ],
   "preguntas": [

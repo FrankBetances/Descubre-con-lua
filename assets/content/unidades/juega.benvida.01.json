@@ -102,7 +102,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_4ea8000f_3.m4a",
         "es": "assets/voice/es_slow_32789720_4.m4a"
-      }
+      },
+      "lamina": "man"
     },
     {
       "id": "zapato",
@@ -118,7 +119,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_b47d0812_6.m4a",
         "es": "assets/voice/es_slow_b47d0812_6.m4a"
-      }
+      },
+      "lamina": "zapato"
     },
     {
       "id": "mochila",
@@ -134,7 +136,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_58442fee_7.m4a",
         "es": "assets/voice/es_slow_58442fee_7.m4a"
-      }
+      },
+      "lamina": "mochila"
     },
     {
       "id": "amiga",
@@ -150,7 +153,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_ebfa8ffe_5.m4a",
         "es": "assets/voice/es_slow_ebfa8ffe_5.m4a"
-      }
+      },
+      "lamina": "amiga"
     },
     {
       "id": "aperta",
@@ -166,7 +170,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_ed5a5afc_6.m4a",
         "es": "assets/voice/es_slow_a7e97be4_6.m4a"
-      }
+      },
+      "lamina": "aperta"
     }
   ],
   "preguntas": [

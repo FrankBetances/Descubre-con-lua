@@ -120,6 +120,15 @@ def literals_in_content() -> dict[str, set[str]]:
 
     def walk(node, origin: str) -> None:
         if isinstance(node, dict):
+            # `"lamina": "barco"` no es una ruta, es una CLAVE que el widget
+            # convierte en una. Sin resolverla aquí, una errata deja la palabra
+            # sin dibujo y nadie se entera: el widget calla y sigue. Es la
+            # misma familia de fallo que dejó el calendario girando.
+            lamina = node.get("lamina")
+            if isinstance(lamina, str) and lamina.strip():
+                found.setdefault(
+                    f"assets/brand/laminas/{lamina.strip()}.txt", set()
+                ).add(origin)
             for value in node.values():
                 walk(value, origin)
         elif isinstance(node, list):
