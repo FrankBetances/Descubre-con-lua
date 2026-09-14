@@ -44,16 +44,17 @@ comprobado y nombra el comando que lo comprobó.
 
 ## Estado
 
-Resumen honesto: **`main` pasa sus 13 gates** (run 52), el binario **no lleva ni
-un permiso de red**, las **351 locuciones tienen grabación** y de cada run de
+Resumen honesto: **`main` pasa sus 15 gates**, el binario **no lleva ni un
+permiso de red**, las **1010 locuciones tienen grabación** y de cada run de
 `main` sale un **AAB firmado con la clave de release**, listo para Play Console.
 
 | | |
 | --- | --- |
-| Último run verde de `main` | 52 · APK 39,38 MB · AAB 65,10 MB · `versionCode` 52 |
-| Tests | 218 |
-| Contenido | 1 unidad de aula · 5 cápsulas de Academy · 6 cápsulas de formación docente · 10 meses de calendario |
-| Voz | 351 locuciones (123 gl + 123 es + 105 en) dentro del paquete |
+| Último run verde de `main` | 74 · APK 55,5 MB · AAB 81,3 MB · `versionCode` 74 |
+| Tests | 265 |
+| Contenido | 10 unidades de aula, una por mes del curso · 11 cápsulas entre Academy y formación docente · 10 meses de calendario |
+| Voz | 1010 locuciones (438 gl + 438 es + 134 en) dentro del paquete |
+| Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 
 Lo que no está comprobado, y no lo arregla ningún run verde:
 
@@ -64,23 +65,32 @@ Lo que no está comprobado, y no lo arregla ningún run verde:
   la densidad real ni el audio sonando.
 - **Nadie ha escuchado las voces.** Ni el galego de Celtia ni el inglés de
   LJSpeech. Ningún gate dice si una frase sale imitable para una docente.
-- **`check_voice_levels` no está midiendo nada.** El job de Gates no instala
-  `ffmpeg`, así que el gate escribe `SKIP: ffmpeg is not installed` y el script
-  lo cuenta como PASS. Es un salto leyéndose como una comprobación: **hoy nadie
-  ha medido el pico de las 351 grabaciones**, ni en local ni en CI. Se arregla
-  instalando `ffmpeg` en el job y haciendo que el salto falle en CI.
+- **Los picos de audio SÍ se miden ya**, y esto está aquí porque durante meses
+  no fue verdad: el gate escribía `SKIP: ffmpeg is not installed` y el script lo
+  contaba como PASS, o sea un salto leyéndose como una comprobación. Ahora el
+  job instala `ffmpeg` y el gate FALLA si hay grabaciones y no hay con qué
+  medirlas. Las 1010 están medidas y ninguna supera el techo de −1,0 dBFS.
+  **Aviso: cuatro se quedan exactamente en −1,0**, así que el gate no tiene
+  margen y la próxima síntesis puede ponerlo rojo. Se arregla remasterizando
+  esas cuatro, no subiendo el techo.
+
+Lo que sí se ha cerrado desde la versión anterior de este README: el
+vocabulario ya tiene pantalla donde verse (la fase 2 de la asamblea, con su
+lámina y las tres lenguas), el cuento ya lleva sus 30 escenas, y el manual ya
+documenta el Calendario Escola·Fogar y la Guía de inglés, con 20 casos de uso.
 
 Defectos abiertos que hay que mirar antes de publicar:
 
-- el contenido declara **cinco palabras de vocabulario** por unidad, con
-  definición y grabación, y **ninguna pantalla las muestra**;
 - los logotipos de startTIC, del Consorcio da Zona Franca y del Concello ya
-  están puestos, pero **falta la autorización escrita de uso de las tres
-  marcas**: en una ficha de Play sugieren respaldo institucional
-  (`assets/brand/logos/README.md`);
-- **el manual no documenta todavía el Calendario Escola·Fogar**: sigue con sus
-  17 casos de uso y sus 14 imágenes. Las cuatro imágenes nuevas ya están en
-  `docs/capturas/`.
+  están puestos y se pintan en los créditos, pero **falta la autorización
+  escrita de uso de las tres marcas**: en una ficha de Play sugieren respaldo
+  institucional (`assets/brand/logos/README.md`);
+- **las 80 láminas no son de una persona ilustradora profesional**, y se nota.
+  Son un puente honesto mientras no haya un set encargado, que es lo que este
+  producto merece para las escuelas de Vigo;
+- **las licencias de las voces** —Celtia para el gallego, Sharvard para el
+  castellano, LJSpeech para el inglés— **no se han verificado** de cara a cobrar
+  una licencia institucional. Lo mismo la revisión legal de `LICENSE.md`.
 
 ## Comprobar
 
