@@ -270,6 +270,11 @@ void main() {
     String nombre,
     Widget pantalla, {
     Size tamano = const Size(412, 915),
+
+    /// Lo que hay que hacer sobre la pantalla ya montada antes de retratarla:
+    /// pulsar hasta una página concreta, responder una reflexión. Sin esto,
+    /// una pantalla paginada solo se puede retratar por su primera página.
+    Future<void> Function(WidgetTester tester)? antesDeRetratar,
   }) async {
     await calentarMascota(tester);
     await calentarLaminas(tester);
@@ -299,6 +304,11 @@ void main() {
           const Duration(milliseconds: 120),
         ));
     await tester.pumpAndSettle();
+
+    if (antesDeRetratar != null) {
+      await antesDeRetratar(tester);
+      await tester.pumpAndSettle();
+    }
 
     await expectLater(
       find.byType(MaterialApp),
@@ -382,6 +392,44 @@ void main() {
             initialLanguage: lang,
             audioService: MockOfflineAudioService(),
           ));
+    });
+
+    testWidgets('academy · o peche de Lúa · $l', (tester) async {
+      // La página de la gata es la ÚLTIMA del lector, así que para retratarla
+      // hay que recorrer la cápsula entera: cuatro secciones y la reflexión,
+      // que no deja pasar sin respuesta.
+      final capsula =
+          contenido.getCapsulasByBloqueId('desarrollo_comunicativo').first;
+      expect(capsula.luaDice, isNotNull,
+          reason: 'Esta cápsula ya no trae el cierre de Lúa: la captura '
+              'retrataría otra pantalla sin avisar.');
+      await capturar(
+        tester,
+        'academy-lua-peche-$l',
+        CapsulaDetailScreen(
+          capsula: capsula,
+          initialLanguage: lang,
+          audioService: MockOfflineAudioService(),
+        ),
+        antesDeRetratar: (t) async {
+          final siguiente = lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente';
+          final verdadero = lang == AppLanguage.gl ? 'Verdadeiro' : 'Verdadero';
+          for (var i = 0; i < 12; i++) {
+            if (find.text(siguiente).evaluate().isEmpty) break;
+            final boton = t.widget<ElevatedButton>(find.byType(ElevatedButton));
+            if (boton.onPressed == null) {
+              if (find.text(verdadero).evaluate().isEmpty) break;
+              await t.tap(find.text(verdadero));
+              await t.pumpAndSettle();
+              continue;
+            }
+            await t.tap(find.text(siguiente));
+            await t.pumpAndSettle();
+          }
+          expect(find.text(capsula.luaDice!.resolve(lang)), findsOneWidget,
+              reason: 'La captura no llegó a la página del cierre de Lúa.');
+        },
+      );
     });
 
     testWidgets('premios · $l', (tester) async {

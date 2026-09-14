@@ -28,6 +28,10 @@
     "gl": "Está a mirar o can pola fiestra. En vez de «mira o coche», dis: «O can! Ves o can?» (un, dous, tres, catro, cinco). El fai «¡eh!» e sinala. Ti: «Si! O can. Que fai o can?» (un, dous, tres, catro, cinco). Acabades de ter unha conversa de catro quendas sen unha soa palabra del.",
     "es": "Está mirando el perro por la ventana. En vez de «mira el coche», dices: «¡El perro! ¿Ves el perro?» (uno, dos, tres, cuatro, cinco). Él hace «¡eh!» y señala. Tú: «¡Sí! El perro. ¿Qué hace el perro?» (uno, dos, tres, cuatro, cinco). Acabáis de tener una conversación de cuatro turnos sin una sola palabra suya."
   },
+  "luaDice": {
+    "gl": "Son Lúa. Hoxe non dirixas: mira o que está a mirar, ponlle nome e agarda. Se contesta cun son ou cun xesto, devólvello coma se fose unha palabra.",
+    "es": "Soy Lúa. Hoy no dirijas: mira lo que está mirando, ponle nombre y espera. Si contesta con un sonido o un gesto, devuélveselo como si fuese una palabra."
+  },
   "afirmaciones": [
     {
       "id": "afirmacion_01",

@@ -28,6 +28,10 @@
     "gl": "No baño, cada noite a mesma secuencia: «Auga quentiña... (mete o pé) ...quentiña! Agora as mans. Unha man... e a outra man. E agora, a barriga! Fóra a auga, dentro a toalla.» Á terceira noite estirará o pé antes de que digas «quentiña».",
     "es": "En el baño, cada noche la misma secuencia: «Agua calentita... (mete el pie) ...¡calentita! Ahora las manos. Una mano... y la otra mano. ¡Y ahora, la barriga! Fuera el agua, dentro la toalla.» A la tercera noche estirará el pie antes de que digas «calentita»."
   },
+  "luaDice": {
+    "gl": "Son Lúa. Escolle unha rutina soa —o baño, a cea, o abrigo— e esta semana dilla sempre coas mesmas palabras. O aburrido para ti é xusto o que xa pode adiviñar.",
+    "es": "Soy Lúa. Elige una sola rutina —el baño, la cena, el abrigo— y esta semana dila siempre con las mismas palabras. Lo aburrido para ti es justo lo que ya puede adivinar."
+  },
   "afirmaciones": [
     {
       "id": "afirmacion_01",
