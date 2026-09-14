@@ -209,9 +209,16 @@ void main() {
   /// antes, y comprobar que de verdad llegaron.
   Future<void> calentarLaminas(WidgetTester tester) async {
     final claves = <String>{
-      for (final unidad in contenido.getAllUnidades())
+      for (final unidad in contenido.getAllUnidades()) ...[
         for (final item in unidad.vocabulario)
           if (item.lamina.isNotEmpty) item.lamina,
+        // También las escenas del cuento. Sin calentarlas, la captura de la
+        // fase 2 retrata el aviso de «lámina pendente» y no la ilustración:
+        // la lectura del paquete es E/S real y el reloj falso del test no la
+        // hace avanzar.
+        for (final pagina in unidad.cuento.paginas)
+          if (pagina.lamina.isNotEmpty) pagina.lamina,
+      ],
     };
     for (final clave in claves) {
       await tester.pumpWidget(

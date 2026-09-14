@@ -53,7 +53,8 @@
           "Red",
           "Sweet",
           "Red apple, sweet and yummy!"
-        ]
+        ],
+        "lamina": "conto_cores_1"
       },
       {
         "orden": 2,
@@ -69,7 +70,8 @@
           "Roll",
           "Roll the circle",
           "Circle"
-        ]
+        ],
+        "lamina": "conto_cores_2"
       },
       {
         "orden": 3,
@@ -84,7 +86,8 @@
         "ingles": [
           "Yellow",
           "Find something red"
-        ]
+        ],
+        "lamina": "conto_cores_3"
       }
     ]
   },

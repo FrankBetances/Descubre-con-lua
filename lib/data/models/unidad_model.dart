@@ -191,12 +191,22 @@ class CuentoPagina {
   /// la página que se tiene delante.
   final List<String> ingles;
 
+  /// La clave de la lámina que ilustra ESTA página, sin ruta ni extensión:
+  /// `conto_mar_1`. Vacía significa que la escena todavía no está dibujada, y
+  /// entonces la tarjeta enseña el aviso en vez de un hueco en blanco.
+  ///
+  /// No es `imagenAsset`. Ese campo guarda una ruta a un PNG que nunca existió
+  /// —lo dejó escrito la primera generación— y por eso la tarjeta llegó a
+  /// imprimir «assets/images/cuento/...» en el proyector de la asamblea.
+  final String lamina;
+
   const CuentoPagina({
     required this.orden,
     required this.texto,
     required this.imagenAsset,
     required this.preguntaComprension,
     this.ingles = const [],
+    this.lamina = '',
   });
 
   factory CuentoPagina.fromJson(Map<String, dynamic> json) {
@@ -217,6 +227,7 @@ class CuentoPagina {
             .map((e) => e.toString().trim())
             .where((e) => e.isNotEmpty),
       ),
+      lamina: json['lamina']?.toString().trim() ?? '',
     );
   }
 
@@ -226,6 +237,7 @@ class CuentoPagina {
         'imagenAsset': imagenAsset,
         'preguntaComprension': preguntaComprension.toJson(),
         'ingles': ingles,
+        'lamina': lamina,
       };
 
   @override
@@ -236,11 +248,12 @@ class CuentoPagina {
           orden == other.orden &&
           texto == other.texto &&
           imagenAsset == other.imagenAsset &&
-          preguntaComprension == other.preguntaComprension;
+          preguntaComprension == other.preguntaComprension &&
+          lamina == other.lamina;
 
   @override
   int get hashCode =>
-      Object.hash(orden, texto, imagenAsset, preguntaComprension);
+      Object.hash(orden, texto, imagenAsset, preguntaComprension, lamina);
 }
 
 /// Story section for step 2.

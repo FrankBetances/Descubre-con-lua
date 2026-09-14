@@ -38,16 +38,31 @@ import 'package:flutter/services.dart' show rootBundle;
 /// }
 /// ```
 ///
-/// `vb` es el lado del lienzo de diseño; todo se escala desde ahí. `f` relleno,
+/// `vb` es el ANCHO del lienzo de diseño y `vh` su alto —si falta, es
+/// cuadrado—; todo se escala desde ahí. `f` relleno,
 /// `s` color del contorno, `sw` su grosor en unidades del lienzo. En `rrect`,
 /// `w` y `h` son el ancho y el alto: por eso el grosor NO puede llamarse `w`.
 /// Se pinta en orden: la primera forma es la de más atrás.
 @immutable
 class LaminaVectorial {
+  /// El ancho del lienzo de diseño.
   final double lienzo;
+
+  /// El alto. Las láminas del vocabulario son cuadradas y no lo declaran; las
+  /// del cuento son APAISADAS, porque una escena no cabe en un cuadrado sin
+  /// encogerse hasta no distinguirse.
+  final double lienzoAlto;
+
   final List<FormaLamina> formas;
 
-  const LaminaVectorial({required this.lienzo, required this.formas});
+  const LaminaVectorial({
+    required this.lienzo,
+    required this.formas,
+    double? lienzoAlto,
+  }) : lienzoAlto = lienzoAlto ?? lienzo;
+
+  /// Ancho partido por alto. Lo usa la escena para reservar su sitio.
+  double get proporcion => lienzo / lienzoAlto;
 
   static String assetDe(String clave) => 'assets/brand/laminas/$clave.json';
 
@@ -55,6 +70,7 @@ class LaminaVectorial {
     final mapa = json.decode(raw) as Map<String, dynamic>;
     return LaminaVectorial(
       lienzo: (mapa['vb'] as num?)?.toDouble() ?? 100,
+      lienzoAlto: (mapa['vh'] as num?)?.toDouble(),
       formas: [
         for (final f in (mapa['formas'] as List? ?? const []))
           FormaLamina.desde(Map<String, dynamic>.from(f as Map)),
@@ -241,5 +257,75 @@ class LaminasVectoriales {
       _cache[clave] = null;
       return null;
     }
+  }
+}
+
+/// Una lámina APAISADA, del ancho que se le dé y con el alto que pide su
+/// lienzo. La usan las páginas del cuento: allí la ilustración ocupa todo el
+/// ancho de la tarjeta y no tendría sentido recortarla a un cuadrado.
+///
+/// Mientras la escena no está dibujada NO se reserva sitio: la tarjeta enseña
+/// entonces el aviso de «lámina pendiente», que es lo que había antes, en vez
+/// de un hueco en blanco que parece un fallo.
+class LaminaEscena extends StatefulWidget {
+  final String clave;
+  final double ancho;
+
+  /// Qué pintar mientras no exista la escena. Si es nulo, no se pinta nada.
+  final Widget? mentres;
+
+  const LaminaEscena({
+    super.key,
+    required this.clave,
+    required this.ancho,
+    this.mentres,
+  });
+
+  @override
+  State<LaminaEscena> createState() => _LaminaEscenaState();
+}
+
+class _LaminaEscenaState extends State<LaminaEscena> {
+  LaminaVectorial? _lamina;
+  bool _buscada = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _cargar();
+  }
+
+  @override
+  void didUpdateWidget(covariant LaminaEscena oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.clave != widget.clave) _cargar();
+  }
+
+  Future<void> _cargar() async {
+    final l = await LaminasVectoriales.cargar(widget.clave);
+    if (!mounted) return;
+    setState(() {
+      _lamina = l;
+      _buscada = true;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final lamina = _lamina;
+    if (lamina == null) {
+      return _buscada
+          ? (widget.mentres ?? const SizedBox.shrink())
+          : const SizedBox.shrink();
+    }
+    return SizedBox(
+      width: widget.ancho,
+      height: widget.ancho / lamina.proporcion,
+      child: CustomPaint(
+        painter: LaminaVectorPainter(lamina),
+        isComplex: true,
+        willChange: false,
+      ),
+    );
   }
 }

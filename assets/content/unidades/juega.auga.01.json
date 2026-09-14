@@ -52,7 +52,8 @@
         "ingles": [
           "Wash",
           "Clean"
-        ]
+        ],
+        "lamina": "conto_auga_1"
       },
       {
         "orden": 2,
@@ -68,7 +69,8 @@
           "Soap",
           "Rub",
           "Rub your hands"
-        ]
+        ],
+        "lamina": "conto_auga_2"
       },
       {
         "orden": 3,
@@ -83,7 +85,8 @@
         "ingles": [
           "Splash",
           "Warm water! Rub the soap, splash, splash! Clean hands!"
-        ]
+        ],
+        "lamina": "conto_auga_3"
       }
     ]
   },

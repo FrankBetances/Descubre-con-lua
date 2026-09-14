@@ -53,7 +53,8 @@
           "Head",
           "Eyes",
           "Nose"
-        ]
+        ],
+        "lamina": "conto_corpo_1"
       },
       {
         "orden": 2,
@@ -69,7 +70,8 @@
           "Tummy",
           "Toes",
           "Soft tummy, tickle toes!"
-        ]
+        ],
+        "lamina": "conto_corpo_2"
       },
       {
         "orden": 3,
@@ -84,7 +86,8 @@
         "ingles": [
           "Freeze",
           "Freeze!"
-        ]
+        ],
+        "lamina": "conto_corpo_3"
       }
     ]
   },

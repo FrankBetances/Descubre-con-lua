@@ -52,7 +52,8 @@
         "ingles": [
           "Cold",
           "Nose"
-        ]
+        ],
+        "lamina": "conto_inverno_1"
       },
       {
         "orden": 2,
@@ -68,7 +69,8 @@
           "Bell",
           "Ring",
           "Ring bells"
-        ]
+        ],
+        "lamina": "conto_inverno_2"
       },
       {
         "orden": 3,
@@ -84,7 +86,8 @@
           "Warm",
           "Sleep",
           "Wake up"
-        ]
+        ],
+        "lamina": "conto_inverno_3"
       }
     ]
   },

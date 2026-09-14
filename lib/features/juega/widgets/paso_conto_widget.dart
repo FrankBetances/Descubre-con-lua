@@ -3,6 +3,7 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/brand/lamina_vector.dart';
 import '../../../data/models/unidad_model.dart';
 
 /// Phase 2: Cuento guiado with story pages and comprehension prompts for assembly.
@@ -117,46 +118,11 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Visual illustration container (sober pedagogical frame)
-                Container(
-                  constraints: const BoxConstraints(minHeight: 140),
-                  width: double.infinity,
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 12.0, vertical: 16.0),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFE8F1F5),
-                    borderRadius: BorderRadius.circular(12.0),
-                    border: Border.all(color: const Color(0xFFCBD5E1)),
-                  ),
-                  child: Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.auto_stories_rounded,
-                          size: 42,
-                          color: AppTheme.primaryVigoBlue,
-                        ),
-                        const SizedBox(height: 8),
-                        // The asset path itself used to be printed here, so a
-                        // teacher running the assembly read
-                        // "assets/images/cuento/..." off the projector. The
-                        // illustrations are not in the package yet; until they
-                        // are, this says so in words a teacher can act on.
-                        Text(
-                          isGl
-                              ? 'Lámina ilustrada pendente. Le o texto e sinala o que vedes na aula.'
-                              : 'Lámina ilustrada pendiente. Lee el texto y señala lo que veis en el aula.',
-                          style: const TextStyle(
-                            fontSize: 12.0,
-                            color: Color(0xFF64748B),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                // La escena de esta página. Ocupa todo el ancho de la
+                // tarjeta porque es lo que la docente enseña al círculo desde
+                // dos metros: si se recorta a un cuadrado pequeño, la clase no
+                // distingue la gata del oso.
+                _Ilustracion(clave: currentPage.lamina, isGl: isGl),
                 const SizedBox(height: 20.0),
 
                 // Narrative text to read aloud
@@ -308,6 +274,73 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
           ],
         ),
       ],
+    );
+  }
+}
+
+/// El marco de la ilustración, con su plan B.
+///
+/// El plan B no es decoración: si la lámina de una página no está dibujada o no
+/// viaja en el APK, lo que la docente tiene delante no puede ser un hueco en
+/// blanco —que se lee como una app rota— sino una frase que le diga qué hacer
+/// mientras tanto. Es la misma decisión que el aviso del calendario.
+class _Ilustracion extends StatelessWidget {
+  final String clave;
+  final bool isGl;
+
+  const _Ilustracion({required this.clave, required this.isGl});
+
+  @override
+  Widget build(BuildContext context) {
+    final aviso = Padding(
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Icon(
+            Icons.auto_stories_rounded,
+            size: 42,
+            color: AppTheme.primaryVigoBlue,
+          ),
+          const SizedBox(height: 8),
+          // The asset path itself used to be printed here, so a teacher running
+          // the assembly read "assets/images/cuento/..." off the projector.
+          Text(
+            isGl
+                ? 'Lámina ilustrada pendente. Le o texto e sinala o que vedes na aula.'
+                : 'Lámina ilustrada pendiente. Lee el texto y señala lo que veis en el aula.',
+            style: const TextStyle(fontSize: 12.0, color: Color(0xFF64748B)),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+
+    return Container(
+      constraints: const BoxConstraints(minHeight: 140),
+      width: double.infinity,
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        color: const Color(0xFFE8F1F5),
+        borderRadius: BorderRadius.circular(12.0),
+        border: Border.all(color: const Color(0xFFCBD5E1)),
+      ),
+      child: clave.isEmpty
+          ? Center(child: aviso)
+          : LayoutBuilder(
+              builder: (context, limites) => Center(
+                child: LaminaEscena(
+                  clave: clave,
+                  // `maxWidth` puede llegar infinito si un día esto cae dentro
+                  // de algo que no acota; entonces se pinta con el ancho de la
+                  // pantalla y no con `Infinity`, que revienta el layout.
+                  ancho: limites.maxWidth.isFinite
+                      ? limites.maxWidth
+                      : MediaQuery.sizeOf(context).width,
+                  mentres: aviso,
+                ),
+              ),
+            ),
     );
   }
 }

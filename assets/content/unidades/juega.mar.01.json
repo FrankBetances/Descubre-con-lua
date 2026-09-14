@@ -52,7 +52,8 @@
         "ingles": [
           "Sea",
           "Blue"
-        ]
+        ],
+        "lamina": "conto_mar_1"
       },
       {
         "orden": 2,
@@ -67,7 +68,8 @@
         "ingles": [
           "Fish",
           "Swim"
-        ]
+        ],
+        "lamina": "conto_mar_2"
       },
       {
         "orden": 3,
@@ -82,7 +84,8 @@
         "ingles": [
           "Shell",
           "Goodbye"
-        ]
+        ],
+        "lamina": "conto_mar_3"
       }
     ]
   },
