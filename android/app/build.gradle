@@ -54,7 +54,12 @@ android {
     defaultConfig {
         applicationId "com.earlify.descubreconlua"
         minSdk 24
-        targetSdk 34
+        // Play Console rechazó el versionCode 80 por apuntar a la API 34:
+        // exige 36 como mínimo. Va atado al `compileSdk 36` de arriba.
+        // Subirlo no es solo un número: con targetSdk 36 el borde a borde es
+        // obligatorio en Android 15+ y la ventana deja de reservar la barra
+        // de gestos, así que una pantalla sin SafeArea dibuja por debajo.
+        targetSdk 36
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
