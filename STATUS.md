@@ -24,14 +24,21 @@ Esto NO está en `main`. Dos piezas: el cierre de Lúa en las cápsulas de Acade
 | Desbordes de disposición | `academy_escala_test.dart`, gl y es a escala 1,8. El recorrido **ya contesta la reflexión**: antes moría en esa página y ninguna posterior se miraba nunca |
 | Voz | Las 10 locuciones nuevas de `luaDice` las sintetizó el workflow `voice-assets` y están en la rama; `check_voice_coverage.py` en verde con 1 020 |
 | Imágenes | `docs/capturas/academy-lua-peche-{gl,es}.png` y `nota-casas-{gl,es}.png`, generadas con el motor real y **miradas** |
+| **CI, sobre la cabeza de la rama** | [Run #87](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/34858575993) sobre `39fa44a`: **verde entero**. Ahí sí entra lo que `--fast` salta en local: la compilación del **APK de release** y la auditoría de permisos del binario |
 
 ### NO comprobado en esta rama
 
 | Área | Por qué |
 | --- | --- |
-| **El APK de release** | Aquí no hay Android SDK, así que `--fast` salta la compilación y con ella la auditoría de permisos del binario. El cambio no añade dependencias ni toca el manifiesto, pero **eso es un argumento, no una medición** |
-| **Ninguna pantalla se ha visto en un aparato** | No hay emulador ni móvil. Las imágenes son del motor de Flutter: cazan desbordes, no la muesca, ni la barra de gestos, ni la densidad real |
-| **CI no tiene un run verde de esta rama** | El run #85 corrió **antes** de que se sintetizase la voz y murió en el gate de cobertura. El commit de la síntesis lo hace el `GITHUB_TOKEN`, que por política de GitHub no dispara workflows, y el `workflow_run` que lo relanzaría **solo actúa desde `main`** — lo dice `ci.yml`. En ese run el APK de release tampoco llegó a generarse: «No files were found with the provided path: app-release.apk» |
+| **El APK de release, EN LOCAL** | Aquí no hay Android SDK, así que `--fast` salta la compilación. Lo cubre CI, no este contenedor |
+| **Ninguna pantalla se ha visto en un aparato** | No hay emulador ni móvil. Las imágenes son del motor de Flutter: cazan desbordes, no la muesca, ni la barra de gestos, ni la densidad real. **Esta es la que sigue abierta de verdad** |
+| **Nadie ha escuchado las 10 locuciones nuevas** | Están sintetizadas y el gate de niveles dice que no saturan. Ningún gate dice si Celtia pronuncia bien «quédate cun só xesto» |
+
+**Corregido el mismo día.** Esta tabla decía que CI no tenía ningún run verde de
+la rama y que el APK no llegaba a generarse. Era cierto del run #85, que corrió
+antes de la síntesis de voz, y dejó de serlo en cuanto un push propio —no el del
+`GITHUB_TOKEN`— volvió a disparar los gates: el #87 está verde con el APK dentro.
+Un pendiente que no se cierra el día que se cierra se lee después como abierto.
 
 ---
 
