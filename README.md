@@ -24,6 +24,20 @@ infantil de Vigo no tiene por qué pronunciar «Crunch leaves» de oído.
 no diagnostica y no trata nada. La criatura no usa la pantalla; la app es para
 la persona adulta que acompaña.
 
+<p align="center">
+  <img src="assets/brand/logos/dr-betances-crest.png" alt="Escudo del Dr. Frank Alberto Betances Reinoso" height="72" style="background:#0B1220;border-radius:10px;padding:6px">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/brand/logos/startic.png" alt="Incubadora de Alta Tecnoloxía startTIC" height="42">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/brand/logos/zona-franca-vigo.png" alt="Consorcio da Zona Franca de Vigo" height="52">
+</p>
+
+<p align="center">
+  <sub><strong>Dr. Frank Alberto Betances Reinoso</strong> · Incubadora de Alta
+  Tecnoloxía <strong>startTIC</strong> · <strong>Consorcio da Zona Franca de
+  Vigo</strong></sub>
+</p>
+
 **Licencia: gratis para las familias, con licencia para las instituciones.**
 Para una familia o una persona a título individual, gratis y para siempre. Para
 una escuela, un ayuntamiento, un gabinete o una empresa, hace falta una licencia

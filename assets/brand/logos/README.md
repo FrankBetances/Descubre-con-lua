@@ -13,10 +13,38 @@ no el logotipo.
 
 | Fichero | Entidad | Dónde se pinta |
 | --- | --- | --- |
-| `dr-betances-crest.png` | Escudo del Dr. Betances | Créditos, cabecera de autoría |
+| `dr-betances-crest.png` | Escudo del Dr. Betances | Créditos (sobre placa oscura) · portada del manual · cabecera del README |
 | `earlify-health.jpg` | Earlify Health S.L. | Créditos, bajo el escudo |
+| `startic.png` | Incubadora de Alta Tecnoloxía startTIC | Créditos, «con el apoyo de» · portada del manual · cabecera del README |
+| `zona-franca-vigo.png` | Consorcio da Zona Franca de Vigo | Créditos, «con el apoyo de» · portada del manual · cabecera del README |
 
-## Los tres que se retiraron, y por qué
+## Dónde se ven, además de en la app
+
+Los tres —el escudo del Dr. Betances, startTIC y el Consorcio da Zona Franca—
+van también en la **portada del manual** (`docs/manual-casos-de-uso.html`, y por
+tanto en su PDF y su Word) y en la **cabecera del README**. El del Concello no:
+Frank pidió retirarlo.
+
+## Lo que sigue mal en dos de los ficheros
+
+Está medido, no es una impresión:
+
+| Fichero | Defecto | Cómo se midió |
+| --- | --- | --- |
+| `startic.png` | **Está recortado.** El dibujo toca los bordes izquierdo, derecho e inferior de la imagen: no hay margen, es un recorte de algo mayor | El canal alfa tiene contenido en `x=0`, `x=509` e `y=101`, que son los propios bordes |
+| `zona-franca-vigo.png` | **Venía de una captura de pantalla**, con un fondo gris degradado y unos arcos de otra web pegados a la izquierda | 55 colores distintos en la fila superior y 77 en la columna izquierda; una exportación limpia tendría uno |
+
+Lo que se ha hecho con el de la Zona Franca: **recortarlo** a la caja
+`(190, 10, 590, 176)` para tirar los arcos ajenos y el sobrante. **No se ha
+tocado un solo píxel del dibujo**: recortar lo que no es de la marca no es lo
+mismo que retocar la marca. El de startTIC no tiene arreglo por recorte —lo que
+falta, falta— y se queda como está.
+
+**Para dejarlos bien hace falta el fichero oficial de cada entidad**: PNG con
+fondo transparente, al menos 128 px de alto, con el nombre exacto de la tabla de
+arriba. Si solo hay SVG, se convierte a PNG a 3×.
+
+## El que se retiró, y por qué
 
 El hueco de cada uno **sigue en el código**: en cuanto vuelva el fichero con su
 nombre exacto, el logotipo reaparece sin tocar una línea. Mientras tanto el
@@ -25,8 +53,6 @@ nombre de la entidad se sigue leyendo en texto, que es lo que acredita.
 | Fichero retirado | Entidad | Motivo |
 | --- | --- | --- |
 | `concello-vigo.png` | Concello de Vigo | **Retirado por orden de Frank.** |
-| `startic.png` | Programa startTIC | El fichero estaba **cortado**: el símbolo de la izquierda se salía del borde de la imagen. |
-| `zona-franca-vigo.png` | Consorcio da Zona Franca de Vigo | **No era el logotipo oficial**: era un recorte de pantalla, con fondo gris degradado y trozos de gráficos ajenos en el borde izquierdo. |
 
 Un logotipo ajeno mal puesto —cortado, recortado de una web, con el fondo de
 otra página pegado— es peor que no ponerlo: acredita mal a quien intentas
