@@ -9,6 +9,32 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Rama `claude/youthful-dijkstra-9tf5gy` · Lúa entra en las actividades
+
+Esto NO está en `main`. Dos piezas: el cierre de Lúa en las cápsulas de Academy
+(`luaDice`) y la gata al frente de la nota para las casas.
+
+### Comprobado en este contenedor, con Flutter 3.47.4
+
+| Área | Evidencia |
+| --- | --- |
+| Gates locales | `tools/gates.sh --fast` → **14 de 14 en verde** |
+| Suite completa | `flutter test --exclude-tags capturas` → **245 tests, 0 fallos** (218 antes) |
+| Análisis y formato | `flutter analyze` → *No issues found* · `dart format` limpio |
+| Desbordes de disposición | `academy_escala_test.dart`, gl y es a escala 1,8. El recorrido **ya contesta la reflexión**: antes moría en esa página y ninguna posterior se miraba nunca |
+| Voz | Las 10 locuciones nuevas de `luaDice` las sintetizó el workflow `voice-assets` y están en la rama; `check_voice_coverage.py` en verde con 1 020 |
+| Imágenes | `docs/capturas/academy-lua-peche-{gl,es}.png` y `nota-casas-{gl,es}.png`, generadas con el motor real y **miradas** |
+
+### NO comprobado en esta rama
+
+| Área | Por qué |
+| --- | --- |
+| **El APK de release** | Aquí no hay Android SDK, así que `--fast` salta la compilación y con ella la auditoría de permisos del binario. El cambio no añade dependencias ni toca el manifiesto, pero **eso es un argumento, no una medición** |
+| **Ninguna pantalla se ha visto en un aparato** | No hay emulador ni móvil. Las imágenes son del motor de Flutter: cazan desbordes, no la muesca, ni la barra de gestos, ni la densidad real |
+| **CI no tiene un run verde de esta rama** | El run #85 corrió **antes** de que se sintetizase la voz y murió en el gate de cobertura. El commit de la síntesis lo hace el `GITHUB_TOKEN`, que por política de GitHub no dispara workflows, y el `workflow_run` que lo relanzaría **solo actúa desde `main`** — lo dice `ci.yml`. En ese run el APK de release tampoco llegó a generarse: «No files were found with the provided path: app-release.apk» |
+
+---
+
 ## Rama `claude/english-learning-integration-56daa7` · el inglés, el calendario y las medallas
 
 Esto NO está en `main`. Se dice en rama, con el número de comprobación al lado.
