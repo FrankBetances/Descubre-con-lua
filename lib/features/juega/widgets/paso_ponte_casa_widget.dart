@@ -19,12 +19,17 @@ class PasoPonteCasaWidget extends StatelessWidget {
   final OfflineAudioService? audioService;
   final VoidCallback? onFinalizar;
 
+  /// Modo asamblea: el mensaje para las familias y las actividades. La
+  /// recomendación de conversación es formación docente, y se lee otro día.
+  final bool soloEsencial;
+
   const PasoPonteCasaWidget({
     super.key,
     required this.ponteCasa,
     required this.language,
     this.audioService,
     this.onFinalizar,
+    this.soloEsencial = false,
   });
 
   @override
@@ -127,66 +132,67 @@ class PasoPonteCasaWidget extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 20.0),
+        if (!soloEsencial) const SizedBox(height: 20.0),
 
         // Conversation Recommendation Box
-        Container(
-          padding: const EdgeInsets.all(16.0),
-          decoration: BoxDecoration(
-            color: const Color(0xFFEFF6FF),
-            borderRadius: BorderRadius.circular(14.0),
-            border: Border.all(color: const Color(0xFFBFDBFE), width: 1.5),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Icon(
-                Icons.chat_outlined,
-                color: Color(0xFF1D4ED8),
-                size: 22,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      isGl
-                          ? 'Recomendación para a conversa no fogar:'
-                          : 'Recomendación para la conversación en el hogar:',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF1D4ED8),
-                        fontSize: 16.0,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      ponteCasa.recomendacionConversacion.resolve(language),
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        fontSize: 16.0,
-                        height: 1.5,
-                        color: AppTheme.textSlate,
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: BotonEscuchar(
-                        audioService: audioService,
-                        texto: ponteCasa.recomendacionConversacion
-                            .resolve(language),
-                        language: language,
-                        compacto: true,
-                        descripcion:
-                            isGl ? 'a recomendación' : 'la recomendación',
-                      ),
-                    ),
-                  ],
+        if (!soloEsencial)
+          Container(
+            padding: const EdgeInsets.all(16.0),
+            decoration: BoxDecoration(
+              color: const Color(0xFFEFF6FF),
+              borderRadius: BorderRadius.circular(14.0),
+              border: Border.all(color: const Color(0xFFBFDBFE), width: 1.5),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(
+                  Icons.chat_outlined,
+                  color: Color(0xFF1D4ED8),
+                  size: 22,
                 ),
-              ),
-            ],
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        isGl
+                            ? 'Recomendación para a conversa no fogar:'
+                            : 'Recomendación para la conversación en el hogar:',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF1D4ED8),
+                          fontSize: 16.0,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        ponteCasa.recomendacionConversacion.resolve(language),
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          fontSize: 16.0,
+                          height: 1.5,
+                          color: AppTheme.textSlate,
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: BotonEscuchar(
+                          audioService: audioService,
+                          texto: ponteCasa.recomendacionConversacion
+                              .resolve(language),
+                          language: language,
+                          compacto: true,
+                          descripcion:
+                              isGl ? 'a recomendación' : 'la recomendación',
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
         const SizedBox(height: 20.0),
 
         // Home Suggested Activities

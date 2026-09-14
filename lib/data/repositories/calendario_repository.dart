@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart' show visibleForTesting;
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../loaders/content_asset_loader.dart';
@@ -36,6 +37,20 @@ class CalendarioContenido {
 
   /// Solo para los tests: olvida lo cargado.
   static void olvidar() => _enCurso = null;
+
+  /// Solo para los tests: deja el contenido en estado de AVERÍA.
+  ///
+  /// Es la única forma de comprobar sobre la pantalla de verdad —no sobre una
+  /// copia de mentira— que un fallo de lectura se ENSEÑA en vez de dejar el
+  /// disco girando. El fallo que hubo no se podía reproducir de otra manera:
+  /// nacía del paquete, no del JSON.
+  @visibleForTesting
+  static void sembrarFallo(Object error) {
+    // `ignore()` solo silencia el aviso de «error asíncrono sin escuchar»:
+    // quien haga `.then` sobre este future sigue recibiendo el error, que es
+    // justo lo que el test quiere comprobar.
+    _enCurso = Future<CalendarioContenido>.error(error)..ignore();
+  }
 
   static Future<CalendarioContenido> _leer(
       AssetBundleStringLoader cargador) async {

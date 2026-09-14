@@ -184,11 +184,19 @@ class CuentoPagina {
   final String imagenAsset;
   final LocalizedString preguntaComprension;
 
+  /// Lo que la persona adulta DICE en inglés mientras lee esta página.
+  ///
+  /// El inglés estaba solo en `ingles.porFase`, que da tres palabras para todo
+  /// el cuento: la docente no sabía en qué página decir cuál. Aquí va pegado a
+  /// la página que se tiene delante.
+  final List<String> ingles;
+
   const CuentoPagina({
     required this.orden,
     required this.texto,
     required this.imagenAsset,
     required this.preguntaComprension,
+    this.ingles = const [],
   });
 
   factory CuentoPagina.fromJson(Map<String, dynamic> json) {
@@ -204,6 +212,11 @@ class CuentoPagina {
                 as Map<String, dynamic>? ??
             {},
       ),
+      ingles: List.unmodifiable(
+        (json['ingles'] as List? ?? const [])
+            .map((e) => e.toString().trim())
+            .where((e) => e.isNotEmpty),
+      ),
     );
   }
 
@@ -212,6 +225,7 @@ class CuentoPagina {
         'texto': texto.toJson(),
         'imagenAsset': imagenAsset,
         'preguntaComprension': preguntaComprension.toJson(),
+        'ingles': ingles,
       };
 
   @override
@@ -285,12 +299,17 @@ class VocabularioItem {
   final String imagenAsset;
   final LocalizedString audioAsset;
 
+  /// La misma palabra en inglés. Vacía mientras no esté escrita: la tarjeta
+  /// enseña entonces solo galego y castelán, sin prometer un audio que no hay.
+  final String ingles;
+
   const VocabularioItem({
     required this.id,
     required this.palabra,
     required this.definicionBreve,
     required this.imagenAsset,
     required this.audioAsset,
+    this.ingles = '',
   });
 
   factory VocabularioItem.fromJson(Map<String, dynamic> json) {
@@ -317,6 +336,7 @@ class VocabularioItem {
           json['imagen_asset']?.toString().trim() ??
           '',
       audioAsset: resolvedAudio,
+      ingles: json['ingles']?.toString().trim() ?? '',
     );
   }
 
@@ -326,6 +346,7 @@ class VocabularioItem {
         'definicionBreve': definicionBreve.toJson(),
         'imagenAsset': imagenAsset,
         'audioAsset': audioAsset.toJson(),
+        'ingles': ingles,
       };
 
   @override

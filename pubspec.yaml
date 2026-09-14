@@ -22,6 +22,13 @@ flutter:
     - assets/content/unidades/
     - assets/content/capsulas/
     - assets/content/premios/
+    # Los diez meses del curso y la guía de atención. Faltaba esta línea, y
+    # como Flutter NO entra en los subdirectorios de una entrada, `meses.json`
+    # no viajaba en el APK: el Calendario y la Guía se quedaban girando para
+    # siempre. Lo vigila tools/check_bundled_assets.py.
+    - assets/content/calendario/
+    # El ritual de la asamblea: la consigna y los minutos de cada fase.
+    - assets/content/asamblea/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

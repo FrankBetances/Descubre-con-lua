@@ -14,6 +14,7 @@ import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
+import 'package:descubre_con_lua/data/models/unidad_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
@@ -192,6 +193,15 @@ void main() {
     }
   }
 
+  /// La unidad del mes en curso: la que una docente abriría hoy. Antes se
+  /// retrataba `getAllUnidades().first`, que con diez unidades es la primera
+  /// por orden alfabético y no tiene nada que ver con el mes.
+  Future<Unidad> unidadDeHoxe(WidgetTester tester) async {
+    final cal = await contenidoCalendario(tester);
+    final id = cal.mesParaFecha(DateTime.now()).unidadId;
+    return contenido.getUnidadById(id!)!;
+  }
+
   Future<void> capturar(
     WidgetTester tester,
     String nombre,
@@ -327,7 +337,7 @@ void main() {
         tester,
         'asamblea-ingles-$l',
         AsambleaGuiadaScreen(
-          unidad: contenido.getAllUnidades().first,
+          unidad: await unidadDeHoxe(tester),
           initialLanguage: lang,
           audioService: MockOfflineAudioService(),
         ),
@@ -335,12 +345,42 @@ void main() {
       );
     });
 
+    testWidgets('asamblea · o conto e as palabras · $l', (tester) async {
+      // La fase 2, que es donde estrena la tarjeta del vocabulario con las
+      // tres lenguas. `capturar` monta la fase 1, así que hay que avanzar y
+      // volver a retratar: por eso esta no usa el ayudante tal cual.
+      final unidad = await unidadDeHoxe(tester);
+      await calentarMascota(tester);
+      tester.view.physicalSize = const Size(412, 1800) * 2;
+      tester.view.devicePixelRatio = 2.0;
+      addTearDown(tester.view.reset);
+
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.lightTheme,
+        debugShowCheckedModeBanner: false,
+        home: AsambleaGuiadaScreen(
+          unidad: unidad,
+          initialLanguage: lang,
+          audioService: MockOfflineAudioService(),
+        ),
+      ));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('boton_seguinte_fase')));
+      await tester.pumpAndSettle();
+      await tester.runAsync(
+          () => Future<void>.delayed(const Duration(milliseconds: 120)));
+      await tester.pumpAndSettle();
+
+      await expectLater(find.byType(MaterialApp),
+          matchesGoldenFile('../docs/capturas/asamblea-conto-$l.png'));
+    });
+
     testWidgets('a nota para as casas · $l', (tester) async {
       await capturar(
         tester,
         'nota-casas-$l',
         NotaParaCasasScreen(
-          unidad: contenido.getAllUnidades().first,
+          unidad: await unidadDeHoxe(tester),
           language: lang,
           audioService: MockOfflineAudioService(),
         ),

@@ -1,0 +1,369 @@
+{
+  "id": "juega.follas.01",
+  "tramoEtario": "0-3",
+  "orden": 3,
+  "titulo": {
+    "gl": "As follas do outono e o Magosto",
+    "es": "Las hojas del otoño y el Magosto"
+  },
+  "subtitulo": {
+    "gl": "Unidade de natureza atlántica, caída suave e son forte",
+    "es": "Unidad de naturaleza atlántica, caída suave y sonido fuerte"
+  },
+  "descripcion": {
+    "gl": "Unidade do outono galego: follas de carballo e castiñeiro, o vento que as move e o son seco ao pisalas. Traballa o contraste entre o suave da caída e o forte do 'Crunch!'.",
+    "es": "Unidad del otoño gallego: hojas de roble y castaño, el viento que las mueve y el sonido seco al pisarlas. Trabaja el contraste entre lo suave de la caída y lo fuerte del 'Crunch!'."
+  },
+  "cancionPulso": {
+    "titulo": {
+      "gl": "Follas que caen",
+      "es": "Hojas que caen"
+    },
+    "letraConPulsos": {
+      "gl": "* Fo-llas * que caen, * fo-llas * de cor,\n* o ven-to * as le-va * dun * lado ao ou-tro.\n* Cru-ac, * cru-ac, * pi-so * de-va-gar,\n* cru-ac, * cru-ac, * vol-vo * empe-zar.",
+      "es": "* Ho-jas * que caen, * ho-jas * de co-lor,\n* el vien-to * las lle-va * de un * lado a o-tro.\n* Cras, * cras, * pi-so * des-pa-cio,\n* cras, * cras, * vuel-vo a * em-pe-zar."
+    },
+    "bpm": 72,
+    "consignaDocente": {
+      "gl": "Deixar caer unha folla de verdade desde arriba en cada 'caen', para que sigan a caída coa mirada antes de pisar nada.",
+      "es": "Dejar caer una hoja de verdad desde arriba en cada 'caen', para que sigan la caída con la mirada antes de pisar nada."
+    },
+    "audioAsset": {
+      "gl": "assets/voice/gl_tutor_e2e6d550_169.m4a",
+      "es": "assets/voice/es_tutor_79af1463_171.m4a"
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa e o vento do Castro",
+      "es": "Lúa y el viento del Castro"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "A gata Lúa sobe ao monte do Castro. As árbores están cheas de follas marróns e laranxas que se moven co vento.",
+          "es": "La gata Lúa sube al monte del Castro. Los árboles están llenos de hojas marrones y naranjas que se mueven con el viento."
+        },
+        "preguntaComprension": {
+          "gl": "De que cor están as follas? Móvense soas ou móveas alguén?",
+          "es": "¿De qué color están las hojas? ¿Se mueven solas o las mueve alguien?"
+        },
+        "ingles": [
+          "Leaf",
+          "Brown",
+          "Orange"
+        ]
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Sopra un vento forte e as follas caen a modo, dando voltas no aire ata chegar ao chan.",
+          "es": "Sopla un viento fuerte y las hojas caen despacio, dando vueltas en el aire hasta llegar al suelo."
+        },
+        "preguntaComprension": {
+          "gl": "Caen rápido ou amodo? Facemos nós de folla que cae?",
+          "es": "¿Caen rápido o despacio? ¿Hacemos nosotros de hoja que cae?"
+        },
+        "ingles": [
+          "Wind",
+          "Falling",
+          "Fall down"
+        ]
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "Lúa pisa as follas secas cos catro pés e escoita: crac, crac, crac! Despois enche a cesta e baixa contenta.",
+          "es": "Lúa pisa las hojas secas con las cuatro patas y escucha: ¡crac, crac, crac! Después llena la cesta y baja contenta."
+        },
+        "preguntaComprension": {
+          "gl": "Que son fan as follas secas? Que leva Lúa na cesta?",
+          "es": "¿Qué sonido hacen las hojas secas? ¿Qué lleva Lúa en la cesta?"
+        },
+        "ingles": [
+          "Crunch",
+          "Crunch, crunch, crunch!"
+        ]
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "folla",
+      "palabra": {
+        "gl": "Folla",
+        "es": "Hoja"
+      },
+      "definicionBreve": {
+        "gl": "Peza plana das árbores que cae no outono.",
+        "es": "Pieza plana de los árboles que cae en otoño."
+      },
+      "ingles": "Leaf",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_56253689_5.m4a",
+        "es": "assets/voice/es_slow_26ee0da5_4.m4a"
+      }
+    },
+    {
+      "id": "castana",
+      "palabra": {
+        "gl": "Castaña",
+        "es": "Castaña"
+      },
+      "definicionBreve": {
+        "gl": "Froito do castiñeiro que se asa no Magosto.",
+        "es": "Fruto del castaño que se asa en el Magosto."
+      },
+      "ingles": "Chestnut",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_68085fff_7.m4a",
+        "es": "assets/voice/es_slow_68085fff_7.m4a"
+      }
+    },
+    {
+      "id": "arbore",
+      "palabra": {
+        "gl": "Árbore",
+        "es": "Árbol"
+      },
+      "definicionBreve": {
+        "gl": "Planta alta de tronco groso onde nacen as follas.",
+        "es": "Planta alta de tronco grueso donde nacen las hojas."
+      },
+      "ingles": "Tree",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_c8712990_6.m4a",
+        "es": "assets/voice/es_slow_814e544b_5.m4a"
+      }
+    },
+    {
+      "id": "vento",
+      "palabra": {
+        "gl": "Vento",
+        "es": "Viento"
+      },
+      "definicionBreve": {
+        "gl": "Aire que se move e leva as follas dun lado ao outro.",
+        "es": "Aire que se mueve y lleva las hojas de un lado a otro."
+      },
+      "ingles": "Wind",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_6353ebc3_5.m4a",
+        "es": "assets/voice/es_slow_7347638e_6.m4a"
+      }
+    },
+    {
+      "id": "cesta",
+      "palabra": {
+        "gl": "Cesta",
+        "es": "Cesta"
+      },
+      "definicionBreve": {
+        "gl": "Recipiente de vimbio no que se gardan as follas e as castañas.",
+        "es": "Recipiente de mimbre en el que se guardan las hojas y las castañas."
+      },
+      "ingles": "Basket",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_75af6829_5.m4a",
+        "es": "assets/voice/es_slow_75af6829_5.m4a"
+      }
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Onde está a folla máis grande?",
+        "es": "¿Dónde está la hoja más grande?"
+      },
+      "respuestaSugerida": {
+        "gl": "Sinalar coa man ou coller a folla da bandexa.",
+        "es": "Señalar con la mano o coger la hoja de la bandeja."
+      },
+      "consejoDocente": {
+        "gl": "Poñer só dúas follas diante: con cinco á vez, a escolla deixa de ser unha resposta.",
+        "es": "Poner solo dos hojas delante: con cinco a la vez, la elección deja de ser una respuesta."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Que son fai a folla seca cando a pisamos?",
+        "es": "¿Qué sonido hace la hoja seca cuando la pisamos?"
+      },
+      "respuestaSugerida": {
+        "gl": "Imitar o crac co pé, coa boca ou coa man.",
+        "es": "Imitar el crac con el pie, con la boca o con la mano."
+      },
+      "consejoDocente": {
+        "gl": "A onomatopea é palabra: 'crac' conta tanto como 'folla'.",
+        "es": "La onomatopeya es palabra: 'crac' cuenta tanto como 'hoja'."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Por que a folla verde non fai crac e a marrón si?",
+        "es": "¿Por qué la hoja verde no hace crac y la marrón sí?"
+      },
+      "respuestaSugerida": {
+        "gl": "Porque unha está mollada e branda e a outra está seca e dura.",
+        "es": "Porque una está mojada y blanda y la otra está seca y dura."
+      },
+      "consejoDocente": {
+        "gl": "Deixar que toquen as dúas antes de preguntar: a resposta está nos dedos, non na cabeza.",
+        "es": "Dejar que toquen las dos antes de preguntar: la respuesta está en los dedos, no en la cabeza."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "Bandexa de outono: seco e mollado",
+      "es": "Bandeja de otoño: seco y mojado"
+    },
+    "materiales": [
+      {
+        "gl": "Follas grandes de carballo ou castiñeiro, lavadas e secas, de máis de 8 cm.",
+        "es": "Hojas grandes de roble o castaño, lavadas y secas, de más de 8 cm."
+      },
+      {
+        "gl": "Follas verdes recentes, aínda brandas, para comparar ao tacto.",
+        "es": "Hojas verdes recientes, aún blandas, para comparar al tacto."
+      },
+      {
+        "gl": "Un bote transparente pechado con castañas dentro, a modo de marabaixo.",
+        "es": "Un bote transparente cerrado con castañas dentro, a modo de sonajero."
+      },
+      {
+        "gl": "Unha cesta baixa de vimbio sen fíos soltos.",
+        "es": "Una cesta baja de mimbre sin hilos sueltos."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Ofrecer primeiro a folla verde e despois a seca, unha en cada man.",
+        "es": "Ofrecer primero la hoja verde y después la seca, una en cada mano."
+      },
+      {
+        "gl": "Apertar a folla seca preto da orella para escoitar o crac.",
+        "es": "Apretar la hoja seca cerca de la oreja para escuchar el crac."
+      },
+      {
+        "gl": "Axitar o bote das castañas e parar, axitar e parar.",
+        "es": "Agitar el bote de las castañas y parar, agitar y parar."
+      },
+      {
+        "gl": "Gardar todo na cesta entre todas, unha peza cada quen.",
+        "es": "Guardar todo en la cesta entre todas, una pieza cada una."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. AS CASTAÑAS NON SE MANIPULAN SOLTAS: van sempre dentro dun bote pechado e precintado, porque son un risco de atragoamento. As follas recóllense lonxe de estradas, lávanse e sécanse antes de entrar na aula, e retírase calquera que estea rota en anacos pequenos.",
+      "es": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. LAS CASTAÑAS NO SE MANIPULAN SUELTAS: van siempre dentro de un bote cerrado y precintado, porque son un riesgo de atragantamiento. Las hojas se recogen lejos de carreteras, se lavan y se secan antes de entrar en el aula, y se retira cualquiera que esté rota en trozos pequeños."
+    },
+    "objetivoSensorial": {
+      "gl": "Discriminar seco e mollado, forte e suave, co tacto e co oído.",
+      "es": "Discriminar seco y mojado, fuerte y suave, con el tacto y con el oído."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Moitas e poucas: a cesta das follas",
+      "es": "Muchas y pocas: la cesta de las hojas"
+    },
+    "descripcion": {
+      "gl": "Comparación de cantidade con material solto e grande: unha cesta chea fronte a unha cesta con dúas follas.",
+      "es": "Comparación de cantidad con material suelto y grande: una cesta llena frente a una cesta con dos hojas."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Encher unha cesta e deixar a outra case baleira, e preguntar cal ten moitas.",
+        "es": "Llenar una cesta y dejar la otra casi vacía, y preguntar cuál tiene muchas."
+      },
+      {
+        "gl": "Baleirar a cesta chea de golpe e ver como o chan se enche de follas.",
+        "es": "Vaciar la cesta llena de golpe y ver cómo el suelo se llena de hojas."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Moitas / Poucas, Chea / Baleira, Grande / Pequena",
+      "es": "Muchas / Pocas, Llena / Vacía, Grande / Pequeña"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe subimos ao Castro coa gata Lúa: vimos caer as follas, escoitamos como soan ao pisalas e axitamos o bote das castañas do Magosto.",
+      "es": "Hoy subimos al Castro con la gata Lúa: vimos caer las hojas, escuchamos cómo suenan al pisarlas y agitamos el bote de las castañas del Magosto."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "No paseo polo parque, buscar unha folla seca e pisala xuntos dicindo 'Crunch, crunch, crunch!'.",
+        "es": "En el paseo por el parque, buscar una hoja seca y pisarla juntos diciendo 'Crunch, crunch, crunch!'."
+      },
+      {
+        "gl": "Deixar caer unha folla desde a man aberta e seguila coa mirada ata o chan, sen dicir nada.",
+        "es": "Dejar caer una hoja desde la mano abierta y seguirla con la mirada hasta el suelo, sin decir nada."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "As castañas só se tocan asadas, abertas e coa persoa adulta ao lado. Crúas e enteiras non se dan nunca a unha crianza de 0 a 3 anos.",
+      "es": "Las castañas solo se tocan asadas, abiertas y con la persona adulta al lado. Crudas y enteras no se dan nunca a una criatura de 0 a 3 años."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_2_descubrimento_contorna",
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA2.1",
+      "CA2.2",
+      "CA3.2"
+    ]
+  },
+  "ingles": {
+    "frase": "Crunch, crunch, crunch!",
+    "porFase": {
+      "pulso": [
+        "Falling",
+        "Fall down",
+        "Wind"
+      ],
+      "conto": [
+        "Leaf",
+        "Brown",
+        "Orange",
+        "Wind"
+      ],
+      "preguntas": [
+        "Leaf",
+        "Crunch"
+      ],
+      "exploracion": [
+        "Crunch",
+        "Crunch leaves",
+        "Walk softly"
+      ],
+      "matematicas": [
+        "Leaf",
+        "Basket"
+      ],
+      "ponteCasa": [
+        "Crunch, crunch, crunch!",
+        "Tree"
+      ]
+    },
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-13",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

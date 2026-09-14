@@ -5,6 +5,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/unidad_model.dart';
 import '../../../data/repositories/content_repository.dart';
@@ -68,6 +69,10 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   late bool _esDocente;
   int _mesSeleccionadoIndex = 0;
   CalendarioContenido? _contenido;
+
+  /// Lo que impidió leer el contenido, si pasó. Con esto la pantalla enseña
+  /// una avería en vez de un disco girando.
+  String? _fallo;
 
   List<MesCurricular> get _meses => _contenido?.meses ?? const [];
 
@@ -190,6 +195,13 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           _contenido = c;
           _situarEnElMesDeHoy();
         });
+        // Sin este catchError, un fallo de lectura no llegaba a ninguna parte:
+        // el setState no corría, `_meses` se quedaba vacío y la pantalla
+        // giraba para siempre. Fue exactamente lo que pasó cuando faltaba
+        // `assets/content/calendario/` en pubspec.yaml.
+      }).catchError((Object e) {
+        if (!mounted) return;
+        setState(() => _fallo = '${CalendarioContenido.mesesAsset} · $e');
       });
     }
   }
@@ -245,6 +257,14 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final fallo = _fallo;
+    if (fallo != null) {
+      return Scaffold(
+        backgroundColor: AppTheme.pageBg,
+        appBar: AppBar(title: Text(_titulo.resolve(_language))),
+        body: AvisoContenidoIlegible(asset: fallo, language: _language),
+      );
+    }
     if (_meses.isEmpty) {
       // El contenido todavía se está leyendo del paquete. Dura un fotograma en
       // un aparato real; una pantalla a medias se vería peor que esto.
