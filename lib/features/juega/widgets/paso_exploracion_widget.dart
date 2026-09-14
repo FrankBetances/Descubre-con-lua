@@ -82,9 +82,16 @@ class PasoExploracionWidget extends StatelessWidget {
                   const SizedBox(width: 10),
                   Expanded(
                     child: Text(
+                      // Sin el emoji de aviso: lo dice YA el icono de al lado,
+                      // que es del set de la app. Un emoji del sistema cambia
+                      // de dibujo entre fabricantes —en unos es un triángulo
+                      // naranja, en otros uno rojo plano— y aquí salía DOS
+                      // veces el mismo aviso con dos dibujos distintos. Es la
+                      // regla 5 del CLAUDE.md: la iconografía sale del set
+                      // propio, no del teclado.
                       isGl
-                          ? '⚠️ PROTOCOLO DE SEGURIDADE NA AULA'
-                          : '⚠️ PROTOCOLO DE SEGURIDAD EN EL AULA',
+                          ? 'PROTOCOLO DE SEGURIDADE NA AULA'
+                          : 'PROTOCOLO DE SEGURIDAD EN EL AULA',
                       style: const TextStyle(
                         color: AppTheme.accentTerracotta,
                         fontWeight: FontWeight.bold,

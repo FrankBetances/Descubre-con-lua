@@ -55,6 +55,7 @@ compara el ancho pintado con el que el texto mide de verdad.
 | `premios-{gl,es}.png` | Los premios de Lúa: nivel, racha e insignias |
 | `creditos-{gl,es}.png` | Créditos |
 | `asamblea-conto-{gl,es}.png` | Asamblea · fase 2: a lámina do conto, o texto e a pregunta |
+| `asamblea-seguridade-{gl,es}.png` | Asamblea · fase 4: o protocolo de seguridade que se le antes de sacar material |
 | `laminas-hoja.png` | Hoja de contacto de las láminas del **vocabulario** (cuadradas) |
 | `laminas-conto-hoja.png` | Hoja de contacto de las **escenas del cuento** (apaisadas) |
 

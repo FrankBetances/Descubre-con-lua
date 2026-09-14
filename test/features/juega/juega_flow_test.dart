@@ -248,7 +248,7 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('Fase 4 de 6'), findsOneWidget);
-      expect(find.text('⚠️ PROTOCOLO DE SEGURIDADE NA AULA'), findsOneWidget);
+      expect(find.text('PROTOCOLO DE SEGURIDADE NA AULA'), findsOneWidget);
       expect(find.textContaining('Supervisión adulta continua'), findsWidgets);
 
       // Advance to Phase 5: Matematicas temperas

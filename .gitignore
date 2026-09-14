@@ -14,8 +14,13 @@ build/
 # Voice models downloaded by tools/generate_voice_assets.py (never committed)
 tools/.voices/
 
-# Machine-specific SDK paths
+# Machine-specific SDK paths. OJO: estar aquí NO basta si el fichero ya está
+# trackeado —git sigue vigilándolo—, y eso es justo lo que pasaba: los dos
+# aparecían modificados en cada sesión con la ruta absoluta del contenedor de
+# turno, una ruta que no existe en ninguna otra máquina. Se sacaron del índice
+# con `git rm --cached`; siguen en el disco de quien compila, que es su sitio.
 android/local.properties
+.dart_tool/
 
 # Signing material never enters the repository
 android/key.properties

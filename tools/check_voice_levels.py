@@ -9,6 +9,12 @@ risk of clipping on a phone speaker in a classroom.
 
 So this reads the artefacts, the same way the permission gate reads the APK
 instead of the manifest.
+
+Y por eso, si no hay ffmpeg, esto FALLA en vez de saltarse. La primera versión
+devolvía 0 cuando faltaba la herramienta, y en CI nunca se instaló: el gate
+llevaba desde que se escribió diciendo PASS sin haber medido una grabación.
+Salirse en verde por no poder comprobar es exactamente el fallo que este
+repositorio lleva pagando en otras formas.
 """
 from __future__ import annotations
 
@@ -41,11 +47,30 @@ def peak_dbfs(path: Path) -> float | None:
 
 
 def main() -> int:
+    recordings = sorted(VOICE_DIR.glob("*.m4a")) if VOICE_DIR.exists() else []
+
     if shutil.which("ffmpeg") is None:
-        print("SKIP: ffmpeg is not installed, cannot measure the recordings")
+        # Sin ffmpeg no se puede medir nada. Antes esto devolvía 0 y el gate
+        # salía PASS: en CI no había ffmpeg instalado, así que este gate llevaba
+        # desde que existe informando de verde SIN HABER ABIERTO UN SOLO
+        # FICHERO. Un gate que dice verde sin comprobar es peor que no tenerlo,
+        # porque ocupa el sitio del que sí comprobaría.
+        #
+        # Ausencia de herramienta no es ausencia de problema. Si hay grabaciones
+        # que medir y no hay con qué, esto es un fallo, no un salto.
+        if recordings:
+            print(
+                f"FAIL: hay {len(recordings)} grabaciones que medir y ffmpeg no "
+                f"está instalado.\n"
+                f"      Instálalo (apt-get install ffmpeg / brew install ffmpeg) "
+                f"o el gate no puede\n"
+                f"      decir nada sobre los picos de audio que van en el APK.",
+                file=sys.stderr,
+            )
+            return 1
+        print("OK: no hay grabaciones que medir, así que no hace falta ffmpeg")
         return 0
 
-    recordings = sorted(VOICE_DIR.glob("*.m4a")) if VOICE_DIR.exists() else []
     if not recordings:
         print("OK: no recordings to measure yet")
         return 0

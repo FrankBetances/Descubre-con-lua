@@ -449,7 +449,7 @@ void main() {
       expect(find.text('Fase 4 de 6'), findsOneWidget);
 
       // Verify Safety Alert Banner
-      expect(find.text('⚠️ PROTOCOLO DE SEGURIDADE NA AULA'), findsOneWidget);
+      expect(find.text('PROTOCOLO DE SEGURIDADE NA AULA'), findsOneWidget);
       expect(find.byIcon(Icons.warning_amber_rounded), findsOneWidget);
       expect(
           find.textContaining('Pezas de tamaño superior a 4 cm'), findsWidgets);
