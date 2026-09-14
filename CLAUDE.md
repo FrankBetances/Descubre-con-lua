@@ -7,7 +7,9 @@ App Android nativa en Flutter, de finalidad **exclusivamente educativa**, para l
 
 Todo el contenido está en gallego y castellano. La primera versión la generó Google Antigravity y la revisión y mejora la hace Claude Code.
 
-**No es Valeria+.** No se copia código, pantallas ni módulos de Valeria+. De Valeria+ se heredan las reglas de trabajo de abajo, la identidad de Lúa y las tuberías de compilación (voz neuronal, rejilla de la mascota), nada más.
+**No es el otro producto de la casa.** No se copia su código, sus pantallas ni sus módulos. De él se heredan las reglas de trabajo de abajo, la identidad de Lúa y las tuberías de compilación (voz neuronal, rejilla de la mascota), nada más.
+
+> Este repositorio es **público**. Lo que se escriba aquí lo lee cualquiera, así que en este fichero y en los demás documentos no entran ni incidencias de otros productos, ni fechas de rechazos de tienda, ni nombres de ficheros internos ajenos, ni el estado de las claves de firma.
 
 ## Reglas de producto
 
@@ -25,7 +27,7 @@ Plataforma de esta fase: **solo Android**. No crees ni borres `ios/`.
 
 ## Reglas de trabajo (obligatorias, no negociables)
 
-Heredadas del CLAUDE.md de Valeria+ y adaptadas a Flutter. Allí nacieron de errores reales, cada uno con su coste. No son buenas prácticas genéricas: son lo que ya salió mal.
+Heredadas del proyecto anterior de la casa y adaptadas a Flutter. Nacieron de errores reales, cada uno con su coste. No son buenas prácticas genéricas: son lo que ya salió mal.
 
 ### 0. No afirmes nada que no hayas comprobado. Manda sobre todas las demás
 
@@ -43,7 +45,7 @@ Heredadas del CLAUDE.md de Valeria+ y adaptadas a Flutter. Allí nacieron de err
 
 **Si no lo has comprobado, dilo con esas palabras: «esto no lo he verificado».**
 
-Coste heredado: en Valeria+ se dijo «está hecho» tres veces sin haber mirado, y la tercera la build ya estaba distribuida a testers de todo el mundo.
+Coste heredado: se dijo «está hecho» tres veces sin haber mirado, y a la tercera la build ya estaba distribuida.
 
 Coste propio: este proyecto llegó a declarar «1443/1443 · CERTIFIED READY FOR PRODUCTION» mientras la app no compilaba. El certificador leía los `.dart` y comprobaba que contuvieran `import flutter_test`.
 
@@ -57,7 +59,7 @@ Coste propio: este proyecto llegó a declarar «1443/1443 · CERTIFIED READY FOR
 
 «Revisa y mejora» no es permiso para cambiar. Se ejecuta así: informe, Frank elige lotes, se aplica solo el lote elegido.
 
-Coste heredado: en Valeria+ un trabajo pedido para el galego tocó también un formulario que nadie mandó tocar. Frank publicó sin saberlo, y la app llegó a producción con ese formulario bloqueado.
+Coste heredado: un trabajo pedido para el galego tocó también un formulario que nadie mandó tocar, y el cambio salió publicado sin que nadie lo hubiera aprobado.
 
 ### 1. No digas que una pantalla está hecha sin haberla mirado
 
@@ -72,7 +74,7 @@ Las dos lenguas no miden lo mismo: una pantalla correcta en castellano puede cor
 
 ### 1b. «Hecho» exige los gates, no solo analyze
 
-Los gates se sacan **del script o del workflow de CI** (`tools/gates.sh` o `.github/workflows/`), nunca de una lista escrita aquí. En Valeria+ la lista del CLAUDE.md se quedó atrás respecto al workflow y una build murió en un gate que no figuraba en ella.
+Los gates se sacan **del script o del workflow de CI** (`tools/gates.sh` o `.github/workflows/`), nunca de una lista escrita aquí. Una lista escrita a mano se queda atrás respecto al workflow, y entonces una build muere en un gate que no figuraba en ella.
 
 Si todavía no existe ni script ni CI, díselo a Frank. Hasta entonces, el mínimo es:
 
@@ -125,9 +127,9 @@ Nada de emoji del sistema como iconografía: cambian entre fabricantes y nunca f
 
 ### 5b. La mascota es Lúa, la gata
 
-- Es el mismo personaje que en Valeria+. Allí el sprite vive como rejilla de caracteres en `src/ValeriaCatPixel.tsx` del repositorio Valeria, y de esa rejilla salen icono, icono adaptativo y splash.
+- Es el mismo personaje que en el proyecto anterior de la casa, donde el sprite vive como rejilla de caracteres y de ella salen icono, icono adaptativo y splash.
 - Aquí se **porta la rejilla**, no se redibuja a ojo. Vive en `assets/brand/lua_head.txt`, y de ahí salen icono, icono adaptativo y splash mediante `tools/build_launcher_icons.py`. Icono y splash deben salir de la misma fuente.
-- **El sistema de premios existe, pero premia al ADULTO.** Frank lo pidió así. Lo que NO se hereda de Valeria+ es el sujeto: allí los gana quien juega, que es la criatura; aquí el niño no toca la pantalla, así que premiar su «progreso» sería inventarse un dato que nadie ha medido. Hay dos recorridos separados: la docente por asambleas dirigidas, la familia por cápsulas leídas. Sigue sin heredarse el desfile ni el espejo con el periférico Lúa. Lúa aparece para la docente y la familia, nunca para captar la atención infantil.
+- **El sistema de premios existe, pero premia al ADULTO.** Frank lo pidió así. Lo que NO se hereda es el sujeto: allí los gana quien juega, que es la criatura; aquí el niño no toca la pantalla, así que premiar su «progreso» sería inventarse un dato que nadie ha medido. Hay dos recorridos separados: la docente por asambleas dirigidas, la familia por cápsulas leídas. Sigue sin heredarse el desfile ni el espejo con el periférico Lúa. Lúa aparece para la docente y la familia, nunca para captar la atención infantil.
 - Los premios viven en `lib/features/premios/` y su contenido —niveles e insignias— en `assets/content/premios/premios.json`, nunca escrito en los widgets.
 
 ### 6. Rediseñar, no parchear
@@ -140,7 +142,7 @@ Comenta solo lo que evita que alguien rompa algo (red, datos, finalidad educativ
 
 ## El pulso se ve, no se oye
 
-El metrónomo de la canción a pulso es **visual**, como en Valeria+. La razón no es estética: parte de las crianzas llevan audiófono o implante, y un metrónomo sonoro compite justo con la voz que tienen que seguir. El pulso se dibuja y el canal auditivo queda entero para la letra.
+El metrónomo de la canción a pulso es **visual**. La razón no es estética: parte de las crianzas llevan audiófono o implante, y un metrónomo sonoro compite justo con la voz que tienen que seguir. El pulso se dibuja y el canal auditivo queda entero para la letra.
 
 Los tiempos del compás salen de las marcas `*` de `letraConPulsos`, no de una configuración aparte: así el pulso no puede discrepar de lo que la docente está leyendo.
 
@@ -171,11 +173,11 @@ https://frankbetances.github.io/Descubre-con-lua/privacy.html   ← política de
 https://frankbetances.github.io/Descubre-con-lua/
 ```
 
-Son las que se declaran en Play Console. No reutilices las de Valeria+, que describen otra app.
+Son las que se declaran en Play Console. No reutilices las de ningún otro proyecto: describen otra app.
 
 Lo comprueban dos gates, y hacen falta los dos:
 
 - `tools/check_legal_urls.py --offline`, dentro de `tools/gates.sh`: que los ficheros existan en `docs/`, sean lo que dicen ser y lleven el correo de contacto.
 - `.github/workflows/legal-urls.yml`, **a diario y por calendario**: que las URLs respondan 200 de verdad.
 
-El segundo no es redundante. En Valeria+, el 19/8/2026 Google rechazó la ficha con «HTTP server is returning 404» con el fichero intacto y el último despliegue de Pages en verde: no se rompió el contenido, se apagó el sitio. Ese fallo es mudo —no hay run rojo ni push que lo delate— y solo aparece semanas después por boca de Google, con la publicación parada. Un despliegue correcto no demuestra que el sitio esté vivo; solo lo demuestra pedir la URL.
+El segundo no es redundante. Un sitio de Pages se puede apagar con el fichero intacto y el último despliegue en verde: no se rompe el contenido, se apaga el sitio, y la tienda rechaza la ficha con un «HTTP server is returning 404». Ese fallo es mudo —no hay run rojo ni push que lo delate— y solo aparece semanas después por boca de la tienda, con la publicación parada. Un despliegue correcto no demuestra que el sitio esté vivo; solo lo demuestra pedir la URL.

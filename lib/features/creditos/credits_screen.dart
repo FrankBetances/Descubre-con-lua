@@ -160,9 +160,14 @@ class CreditsScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         // El escudo es de Frank, no de un tercero: se usa.
+                        // Va sobre placa OSCURA porque está dibujado para fondo
+                        // oscuro: sobre la tarjeta clara, el cuervo blanco y el
+                        // círculo blanco desaparecían y quedaba medio escudo.
                         const LogoInstitucional(
                           fichero: 'dr-betances-crest.png',
                           alto: 72,
+                          sobrePlaca: true,
+                          colorPlaca: AppTheme.dark,
                         ),
                         const SizedBox(height: AppTheme.spaceMd),
                         Text(

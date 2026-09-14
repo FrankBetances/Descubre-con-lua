@@ -30,12 +30,23 @@ class LogoInstitucional extends StatefulWidget {
   /// transparencia no la necesitan.
   final bool sobrePlaca;
 
+  /// De qué color es esa placa. Blanca por defecto, que es lo que piden los
+  /// originales con fondo blanco opaco.
+  ///
+  /// Existe por el escudo del Dr. Betances, que está dibujado para fondo
+  /// OSCURO: tiene un cuervo blanco y un círculo blanco. Sobre la tarjeta clara
+  /// de los créditos esas dos piezas desaparecían y quedaba medio escudo, el
+  /// cuervo negro suelto. Un logotipo al que le falta la mitad no acredita a
+  /// nadie. La placa oscura es la forma de colocarlo sin retocar el dibujo.
+  final Color colorPlaca;
+
   const LogoInstitucional({
     super.key,
     required this.fichero,
     this.etiqueta,
     this.alto = 44,
     this.sobrePlaca = false,
+    this.colorPlaca = Colors.white,
   });
 
   @override
@@ -99,7 +110,7 @@ class _LogoInstitucionalState extends State<LogoInstitucional> {
           ? Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: widget.colorPlaca,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: imagen,

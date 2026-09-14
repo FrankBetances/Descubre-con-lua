@@ -36,6 +36,25 @@ run_gate() {
   fi
 }
 
+# Las dependencias, ANTES del primer gate. Sin `.dart_tool/package_config.json`,
+# `dart format` no puede resolver el `include` de analysis_options.yaml, escupe
+# un «Package resolution error» por fichero y da los 95 por CAMBIADOS: el gate
+# sale rojo con el código perfectamente formateado.
+#
+# Hasta ahora no pasaba porque `package_config.json` estaba TRACKEADO, con la
+# ruta absoluta de la máquina que lo generó por última vez. Al sacarlo del
+# índice —que es donde tiene que estar, porque es un fichero de máquina— quedó
+# a la vista que este script nunca resolvió sus propias dependencias: se
+# apoyaba en que alguien hubiera corrido `flutter pub get` antes. El workflow de
+# CI sí lo hace; un clon nuevo, no.
+#
+# Es barato: con las dependencias ya resueltas no hace nada.
+printf '\n\033[1m── flutter pub get\033[0m\n'
+if ! flutter pub get; then
+  echo "No se pudieron resolver las dependencias; los gates no pueden correr."
+  exit 1
+fi
+
 # ---------------------------------------------------------------- Dart gates
 run_gate "dart format" dart format --output=none --set-exit-if-changed .
 run_gate "flutter analyze" flutter analyze
