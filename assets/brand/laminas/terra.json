@@ -1,0 +1,60 @@
+{
+  "vb": 100,
+  "nota": "Terra / Tierra: maceta con tierra oscura y grumos. Es lo que se toca en la bandeja.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M20 40 L80 40 L72 86 C70 92 66 94 60 94 L40 94 C34 94 30 92 28 86 Z",
+      "f": "#c2410c",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "rrect",
+      "x": 14,
+      "y": 28,
+      "w": 72,
+      "h": 16,
+      "r": 6,
+      "f": "#ff851b",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M22 40 C34 30 44 36 52 32 C62 28 72 34 78 40 Z",
+      "f": "#4a2c11"
+    },
+    {
+      "t": "ruta",
+      "d": "M24 38 L76 38 L74 48 L26 48 Z",
+      "f": "#4a2c11",
+      "s": "#38220f",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 42,
+      "rx": 4,
+      "ry": 3,
+      "f": "#8b5a2b"
+    },
+    {
+      "t": "elipse",
+      "cx": 58,
+      "cy": 44,
+      "rx": 5,
+      "ry": 3,
+      "f": "#8b5a2b"
+    },
+    {
+      "t": "elipse",
+      "cx": 30,
+      "cy": 64,
+      "rx": 7,
+      "ry": 12,
+      "f": "#ffffff33"
+    }
+  ]
+}

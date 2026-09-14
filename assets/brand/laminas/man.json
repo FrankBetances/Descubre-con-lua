@@ -1,0 +1,28 @@
+{
+  "vb": 100,
+  "nota": "Man / Mano. Palma abierta saludando, cuatro dedos y pulgar separado. Contorno grueso y brillo en la base del pulgar.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M30 46 L30 22 C30 16 40 16 40 22 L40 44 L40 18 C40 12 50 12 50 18 L50 44 L50 20 C50 14 60 14 60 20 L60 46 L60 28 C60 22 70 22 70 28 L70 56 C70 78 58 92 44 92 C30 92 20 80 20 64 L20 50 C20 42 30 42 30 50 Z",
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M20 58 C12 52 6 56 8 64 C10 72 18 74 22 70",
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 66,
+      "rx": 9,
+      "ry": 12,
+      "f": "#ffffff44"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "vb": 100,
+  "nota": "Cuncha / Concha de vieira con el abanico ARRIBA y la charnela abajo, que es su orientación real. Los radios salen del punto de abajo, que es lo que la distingue de una cesta.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M50 84 C18 84 6 56 10 34 C22 22 38 16 50 16 C62 16 78 22 90 34 C94 56 82 84 50 84 Z",
+      "f": "#fcedc7",
+      "s": "#8b5a2b",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M50 84 L50 18 M50 84 L30 24 M50 84 L70 24 M50 84 L14 40 M50 84 L86 40",
+      "s": "#c89666",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M38 86 C38 78 62 78 62 86 C62 92 38 92 38 86 Z",
+      "f": "#c89666",
+      "s": "#8b5a2b",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M10 34 C22 22 38 16 50 16 C40 22 28 28 16 40 Z",
+      "f": "#ffffff66"
+    }
+  ]
+}

@@ -27,7 +27,7 @@ void main() {
         .toList()
       ..sort();
 
-    tester.view.physicalSize = const Size(480, 780) * 2;
+    tester.view.physicalSize = const Size(560, 1560) * 2;
     tester.view.devicePixelRatio = 2.0;
     addTearDown(tester.view.reset);
 

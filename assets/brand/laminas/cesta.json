@@ -1,0 +1,56 @@
+{
+  "vb": 100,
+  "nota": "Cesta de vimbio con asa y trenzado. Vacía, para que sirva igual con hojas que con castañas.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M28 44 C28 22 72 22 72 44",
+      "s": "#c89666",
+      "sw": 8
+    },
+    {
+      "t": "ruta",
+      "d": "M28 44 C28 26 72 26 72 44",
+      "s": "#8b5a2b",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M12 44 L88 44 C84 70 76 88 50 88 C24 88 16 70 12 44 Z",
+      "f": "#c89666",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M14 56 L86 56 M18 68 L82 68 M24 80 L76 80",
+      "s": "#8b5a2b",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M30 46 L32 86 M50 46 L50 88 M70 46 L68 86",
+      "s": "#8b5a2b",
+      "sw": 3
+    },
+    {
+      "t": "rrect",
+      "x": 10,
+      "y": 38,
+      "w": 80,
+      "h": 10,
+      "r": 5,
+      "f": "#c89666",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 30,
+      "cy": 60,
+      "rx": 7,
+      "ry": 9,
+      "f": "#ffffff33"
+    }
+  ]
+}

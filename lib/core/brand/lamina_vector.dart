@@ -30,7 +30,7 @@ import 'package:flutter/services.dart' show rootBundle;
 ///   "vb": 100,
 ///   "formas": [
 ///     {"t": "elipse", "cx": 50, "cy": 55, "rx": 32, "ry": 30,
-///      "f": "#e62828", "s": "#7a1414", "w": 4},
+///      "f": "#e62828", "s": "#7a1414", "sw": 4},
 ///     {"t": "rrect", "x": 20, "y": 40, "w": 60, "h": 26, "r": 10, "f": "#2f6fd0"},
 ///     {"t": "poli", "p": [[10,80],[50,20],[90,80]], "f": "#2ecc40"},
 ///     {"t": "ruta", "d": "M10 80 Q50 20 90 80 Z", "f": "#00c4be"}
@@ -39,8 +39,9 @@ import 'package:flutter/services.dart' show rootBundle;
 /// ```
 ///
 /// `vb` es el lado del lienzo de diseño; todo se escala desde ahí. `f` relleno,
-/// `s` contorno, `w` grosor del contorno en unidades del lienzo. Se pinta en
-/// orden: la primera forma es la de más atrás.
+/// `s` color del contorno, `sw` su grosor en unidades del lienzo. En `rrect`,
+/// `w` y `h` son el ancho y el alto: por eso el grosor NO puede llamarse `w`.
+/// Se pinta en orden: la primera forma es la de más atrás.
 @immutable
 class LaminaVectorial {
   final double lienzo;
@@ -100,7 +101,12 @@ class FormaLamina {
         datos: m,
         relleno: _color(m['f']),
         contorno: _color(m['s']),
-        grosor: (m['w'] as num?)?.toDouble() ?? 0,
+        // `sw`, no `w`: en un `rrect`, `w` ES EL ANCHO del rectángulo. Usar la
+        // misma letra para el grosor del contorno dejaba la clave duplicada
+        // dentro del mismo objeto JSON, y JSON se queda con la última en
+        // silencio. Resultado: la barra de la toalla no se pintaba y nadie
+        // podía saber por qué mirando el fichero.
+        grosor: (m['sw'] as num?)?.toDouble() ?? 0,
       );
 
   Path? aPath() {

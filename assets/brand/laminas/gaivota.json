@@ -1,0 +1,74 @@
+{
+  "vb": 100,
+  "nota": "Gaivota / Gaviota posada de perfil: cuerpo grande blanco, ala gris plegada, cabeza con pico amarillo y patas naranjas. Posada y no volando: así el cuerpo manda y las alas no parecen orejas.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M20 62 C20 44 34 34 52 34 C72 34 88 44 90 58 C92 70 80 78 60 78 L30 78 C22 78 20 70 20 62 Z",
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M34 44 C50 42 68 46 82 56 C74 66 58 70 40 66 C32 62 30 50 34 44 Z",
+      "f": "#e2e8f0",
+      "s": "#334155",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M86 58 C94 62 98 70 96 76 C88 74 82 70 78 66 Z",
+      "f": "#68707e",
+      "s": "#334155",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 28,
+      "cy": 28,
+      "rx": 16,
+      "ry": 16,
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M14 28 L2 32 L14 37 Z",
+      "f": "#ffdc00",
+      "s": "#d97706",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 26,
+      "cy": 24,
+      "rx": 4,
+      "ry": 5,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 27,
+      "cy": 22,
+      "rx": 1.5,
+      "ry": 1.5,
+      "f": "#ffffff"
+    },
+    {
+      "t": "ruta",
+      "d": "M40 78 L38 92 M32 92 L46 92 M58 78 L56 92 M50 92 L64 92",
+      "s": "#ff851b",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 54,
+      "rx": 8,
+      "ry": 6,
+      "f": "#ffffff88"
+    }
+  ]
+}

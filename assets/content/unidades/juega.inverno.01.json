@@ -103,7 +103,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_a1562429_8.m4a",
         "es": "assets/voice/es_slow_a1562429_8.m4a"
-      }
+      },
+      "lamina": "cascabel"
     },
     {
       "id": "manta",
@@ -119,7 +120,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_b5190140_5.m4a",
         "es": "assets/voice/es_slow_b5190140_5.m4a"
-      }
+      },
+      "lamina": "manta"
     },
     {
       "id": "frio",
@@ -135,7 +137,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_17ace9c1_4.m4a",
         "es": "assets/voice/es_slow_17ace9c1_4.m4a"
-      }
+      },
+      "lamina": "frio"
     },
     {
       "id": "quente",
@@ -151,7 +154,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_03197f97_6.m4a",
         "es": "assets/voice/es_slow_5e6135ee_8.m4a"
-      }
+      },
+      "lamina": "quente"
     },
     {
       "id": "luz",
@@ -167,7 +171,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_a51c9500_3.m4a",
         "es": "assets/voice/es_slow_a51c9500_3.m4a"
-      }
+      },
+      "lamina": "luz"
     }
   ],
   "preguntas": [

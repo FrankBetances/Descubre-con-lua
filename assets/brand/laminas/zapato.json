@@ -1,0 +1,45 @@
+{
+  "vb": 100,
+  "nota": "Zapato de perfil, con lengüeta, cordones y suela clara. La suela es lo que lo separa de una bota.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M22 74 L22 44 C22 32 34 24 46 24 C56 24 60 32 62 40 C64 50 72 52 82 56 C90 60 92 68 92 74 Z",
+      "f": "#8b5a2b",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M40 26 C46 22 54 24 56 32 C58 40 54 46 48 46 C42 46 38 38 40 26 Z",
+      "f": "#fcedc7",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M32 40 L46 48 M32 50 L46 58 M32 60 L46 66",
+      "s": "#fcedc7",
+      "sw": 3
+    },
+    {
+      "t": "rrect",
+      "x": 18,
+      "y": 72,
+      "w": 78,
+      "h": 12,
+      "r": 6,
+      "f": "#e2e8f0",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 34,
+      "cy": 40,
+      "rx": 7,
+      "ry": 6,
+      "f": "#ffffff33"
+    }
+  ]
+}
