@@ -152,7 +152,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_9c8d40a4_4.m4a",
         "es": "assets/voice/es_slow_9c8d40a4_4.m4a"
-      }
+      },
+      "lamina": "gato"
     },
     {
       "id": "careta",

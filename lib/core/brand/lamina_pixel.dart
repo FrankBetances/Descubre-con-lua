@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import 'lamina_vector.dart';
+
 /// Las láminas del contenido: un objeto por rejilla, en píxel art propio.
 ///
 /// **Por qué píxel art y no ilustraciones.** Porque el proyecto ya tiene un
@@ -41,6 +43,10 @@ class _LaminaPixelState extends State<LaminaPixel> {
 
   List<String>? _rejilla;
 
+  /// El dibujo vectorial de esta clave, si ya está redibujado. Manda sobre la
+  /// rejilla: la rejilla es el marcador de posición mientras se convierte.
+  LaminaVectorial? _vector;
+
   @override
   void initState() {
     super.initState();
@@ -54,6 +60,13 @@ class _LaminaPixelState extends State<LaminaPixel> {
   }
 
   Future<void> _cargar() async {
+    final vector = await LaminasVectoriales.cargar(widget.clave);
+    if (vector != null) {
+      if (mounted) setState(() => _vector = vector);
+      return;
+    }
+    if (mounted) setState(() => _vector = null);
+
     final yaEsta = _rejillas[widget.clave];
     if (yaEsta != null && _paleta != null) {
       setState(() => _rejilla = yaEsta);
@@ -88,6 +101,19 @@ class _LaminaPixelState extends State<LaminaPixel> {
 
   @override
   Widget build(BuildContext context) {
+    final vector = _vector;
+    if (vector != null) {
+      return SizedBox(
+        width: widget.size,
+        height: widget.size,
+        child: CustomPaint(
+          painter: LaminaVectorPainter(vector),
+          isComplex: true,
+          willChange: false,
+        ),
+      );
+    }
+
     final rejilla = _rejilla;
     final paleta = _paleta;
     if (rejilla == null || paleta == null) {

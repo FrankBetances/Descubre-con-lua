@@ -1,0 +1,17 @@
+{
+  "vb": 100,
+  "nota": "Mazá / Manzana. Dos lóbulos con el hueco del rabo, rabo curvo y hoja. Brillo arriba a la izquierda, que es de donde viene la luz en todas las láminas.",
+  "formas": [
+    {"t": "ruta", "d": "M50 30 C38 18 14 22 12 46 C10 70 26 90 40 90 C46 90 48 86 50 86 C52 86 54 90 60 90 C74 90 90 70 88 46 C86 22 62 18 50 30 Z",
+     "f": "#e62828", "s": "#7a1414", "w": 4},
+    {"t": "ruta", "d": "M50 30 C44 22 32 22 26 30 C20 38 22 50 26 56 C30 48 36 38 50 34 Z",
+     "f": "#ff6b6b"},
+    {"t": "ruta", "d": "M50 32 C50 22 52 14 58 8",
+     "s": "#5a3a12", "w": 6},
+    {"t": "ruta", "d": "M56 16 C68 6 84 10 86 20 C88 30 72 34 62 26 Z",
+     "f": "#2ecc40", "s": "#1b7a2b", "w": 4},
+    {"t": "ruta", "d": "M60 20 C70 16 80 18 84 22",
+     "s": "#1b7a2b", "w": 3},
+    {"t": "elipse", "cx": 30, "cy": 44, "rx": 7, "ry": 10, "f": "#ffffff88"}
+  ]
+}

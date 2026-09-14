@@ -126,9 +126,19 @@ def literals_in_content() -> dict[str, set[str]]:
             # misma familia de fallo que dejó el calendario girando.
             lamina = node.get("lamina")
             if isinstance(lamina, str) and lamina.strip():
-                found.setdefault(
-                    f"assets/brand/laminas/{lamina.strip()}.txt", set()
-                ).add(origin)
+                # Vale el dibujo vectorial (.json) o la rejilla de píxel art
+                # (.txt): durante la conversión conviven, y la app prefiere el
+                # vector. Se exige UNO de los dos, no los dos.
+                clave = lamina.strip()
+                candidatos = [
+                    f"assets/brand/laminas/{clave}.json",
+                    f"assets/brand/laminas/{clave}.txt",
+                ]
+                elegido = next(
+                    (c for c in candidatos if (ROOT / c).is_file()),
+                    candidatos[0],
+                )
+                found.setdefault(elegido, set()).add(origin)
             for value in node.values():
                 walk(value, origin)
         elif isinstance(node, list):

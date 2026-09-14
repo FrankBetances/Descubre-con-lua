@@ -101,7 +101,8 @@
         "gl": "assets/voice/gl_slow_7efb941c_5.m4a",
         "es": "assets/voice/es_slow_7efb941c_5.m4a"
       },
-      "ingles": "Boat"
+      "ingles": "Boat",
+      "lamina": "barco"
     },
     {
       "id": "gaivota",

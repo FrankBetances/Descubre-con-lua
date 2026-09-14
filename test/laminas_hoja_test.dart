@@ -21,7 +21,9 @@ void main() {
     final claves = Directory('assets/brand/laminas')
         .listSync()
         .whereType<File>()
-        .map((f) => f.uri.pathSegments.last.replaceAll('.txt', ''))
+        .map((f) => f.uri.pathSegments.last)
+        .map((n) => n.replaceAll('.txt', '').replaceAll('.json', ''))
+        .toSet()
         .toList()
       ..sort();
 

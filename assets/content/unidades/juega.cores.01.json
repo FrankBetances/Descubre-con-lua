@@ -103,7 +103,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_c8465376_4.m4a",
         "es": "assets/voice/es_slow_4ff29137_7.m4a"
-      }
+      },
+      "lamina": "mazan"
     },
     {
       "id": "laranxa",
