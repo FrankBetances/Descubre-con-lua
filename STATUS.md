@@ -9,10 +9,15 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
-## Rama `claude/youthful-dijkstra-9tf5gy` · Lúa entra en las actividades
+## Lúa entra en las actividades · **ya en `main`** (14/9/2026)
 
-Esto NO está en `main`. Dos piezas: el cierre de Lúa en las cápsulas de Academy
-(`luaDice`) y la gata al frente de la nota para las casas.
+Llegó por `claude/youthful-dijkstra-9tf5gy` y está mergeada. Dos piezas: el
+cierre de Lúa en las cápsulas de Academy (`luaDice`) y la gata al frente de la
+nota para las casas.
+
+**Frank mergeó sabiendo lo que falta**, que está en la tabla de abajo: ninguna
+pantalla se ha visto en un aparato. La regla 1c pide justamente eso —decirlo y
+que lo mire él— y no que la evidencia exista.
 
 ### Comprobado en este contenedor, con Flutter 3.47.4
 
