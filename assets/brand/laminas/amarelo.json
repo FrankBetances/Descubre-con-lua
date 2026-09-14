@@ -1,0 +1,49 @@
+{
+  "vb": 100,
+  "nota": "Amarelo / Amarillo: la misma mancha que el rojo, en amarillo. Las dos iguales de forma, para que lo único que cambie sea el color.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M50 10 C72 10 88 26 88 48 C88 68 76 84 58 88 C44 92 30 88 22 78 C10 64 12 40 26 24 C32 16 40 10 50 10 Z",
+      "f": "#ffdc00",
+      "s": "#d97706",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 82,
+      "cy": 76,
+      "rx": 8,
+      "ry": 8,
+      "f": "#ffdc00",
+      "s": "#d97706",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 20,
+      "cy": 86,
+      "rx": 6,
+      "ry": 6,
+      "f": "#ffdc00",
+      "s": "#d97706",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 36,
+      "rx": 11,
+      "ry": 13,
+      "f": "#fff677"
+    },
+    {
+      "t": "elipse",
+      "cx": 34,
+      "cy": 32,
+      "rx": 6,
+      "ry": 7,
+      "f": "#ffffff66"
+    }
+  ]
+}

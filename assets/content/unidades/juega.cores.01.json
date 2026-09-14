@@ -103,7 +103,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_c8465376_4.m4a",
         "es": "assets/voice/es_slow_4ff29137_7.m4a"
-      }
+      },
+      "lamina": "mazan"
     },
     {
       "id": "laranxa",
@@ -119,7 +120,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_3bbeb7e0_7.m4a",
         "es": "assets/voice/es_slow_0da5a780_7.m4a"
-      }
+      },
+      "lamina": "laranxa"
     },
     {
       "id": "aro",
@@ -135,7 +137,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_98fb4f2f_3.m4a",
         "es": "assets/voice/es_slow_98fb4f2f_3.m4a"
-      }
+      },
+      "lamina": "aro"
     },
     {
       "id": "vermello",
@@ -151,7 +154,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_d7b7185d_8.m4a",
         "es": "assets/voice/es_slow_963197d9_4.m4a"
-      }
+      },
+      "lamina": "vermello"
     },
     {
       "id": "amarelo",
@@ -167,7 +171,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_d831d4de_7.m4a",
         "es": "assets/voice/es_slow_647afeb0_8.m4a"
-      }
+      },
+      "lamina": "amarelo"
     }
   ],
   "preguntas": [

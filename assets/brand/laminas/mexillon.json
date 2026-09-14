@@ -1,0 +1,40 @@
+{
+  "vb": 100,
+  "nota": "Mexillón / Mejillón cerrado, azul oscuro con brillo nacarado y la charnela. El de las bateas de la ría.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M14 74 C4 60 12 36 34 22 C54 10 78 12 88 24 C94 32 88 48 72 62 C56 76 30 86 14 74 Z",
+      "f": "#143a7a",
+      "s": "#181a20",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M18 70 C14 58 24 40 40 30 C52 22 68 20 78 26 C64 26 48 34 36 46 C24 58 18 66 18 70 Z",
+      "f": "#2f6fd0"
+    },
+    {
+      "t": "ruta",
+      "d": "M88 24 C82 34 68 48 52 60 C38 70 24 76 16 76",
+      "s": "#5a208a",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 46,
+      "cy": 38,
+      "rx": 12,
+      "ry": 7,
+      "f": "#9b51e055"
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 34,
+      "rx": 7,
+      "ry": 4,
+      "f": "#ffffff55"
+    }
+  ]
+}

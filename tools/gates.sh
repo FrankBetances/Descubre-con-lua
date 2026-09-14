@@ -53,6 +53,10 @@ run_gate "contact address" python3 tools/check_contact_email.py
 # porque `assets/content/calendario/` no estaba en pubspec.yaml. Un asset que
 # falta no rompe la compilación: rompe una pantalla, en silencio.
 run_gate "every asset asked for exists and is packaged" python3 tools/check_bundled_assets.py
+# Nace de la barra de la toalla, que no se pintaba porque el formato usaba `w`
+# para el ancho del rectángulo Y para el grosor del contorno: clave repetida,
+# JSON se queda con la última y el fichero se lee perfectamente bien.
+run_gate "every lamina shape actually paints" python3 tools/check_laminas.py
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py

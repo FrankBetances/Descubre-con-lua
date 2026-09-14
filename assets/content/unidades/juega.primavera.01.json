@@ -103,7 +103,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_38f45ad6_4.m4a",
         "es": "assets/voice/es_slow_38f45ad6_4.m4a"
-      }
+      },
+      "lamina": "flor"
     },
     {
       "id": "semente",
@@ -119,7 +120,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_8f24f378_7.m4a",
         "es": "assets/voice/es_slow_cc18e606_7.m4a"
-      }
+      },
+      "lamina": "semente"
     },
     {
       "id": "choiva",
@@ -135,7 +137,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_a6d0392b_6.m4a",
         "es": "assets/voice/es_slow_5980b740_6.m4a"
-      }
+      },
+      "lamina": "choiva"
     },
     {
       "id": "sol",
@@ -151,7 +154,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_44c0d541_3.m4a",
         "es": "assets/voice/es_slow_44c0d541_3.m4a"
-      }
+      },
+      "lamina": "sol"
     },
     {
       "id": "terra",
@@ -167,7 +171,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_a6429615_5.m4a",
         "es": "assets/voice/es_slow_0c48c960_6.m4a"
-      }
+      },
+      "lamina": "terra"
     }
   ],
   "preguntas": [

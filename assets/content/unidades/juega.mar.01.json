@@ -101,7 +101,8 @@
         "gl": "assets/voice/gl_slow_7efb941c_5.m4a",
         "es": "assets/voice/es_slow_7efb941c_5.m4a"
       },
-      "ingles": "Boat"
+      "ingles": "Boat",
+      "lamina": "barco"
     },
     {
       "id": "gaivota",
@@ -117,7 +118,8 @@
         "gl": "assets/voice/gl_slow_c2d08ad4_7.m4a",
         "es": "assets/voice/es_slow_8ccc609e_7.m4a"
       },
-      "ingles": "Seagull"
+      "ingles": "Seagull",
+      "lamina": "gaivota"
     },
     {
       "id": "cuncha",
@@ -133,7 +135,8 @@
         "gl": "assets/voice/gl_slow_492e39a1_6.m4a",
         "es": "assets/voice/es_slow_35479b23_6.m4a"
       },
-      "ingles": "Shell"
+      "ingles": "Shell",
+      "lamina": "cuncha"
     },
     {
       "id": "mexillon",
@@ -149,7 +152,8 @@
         "gl": "assets/voice/gl_slow_cf99b481_8.m4a",
         "es": "assets/voice/es_slow_349f29ef_8.m4a"
       },
-      "ingles": "Mussel"
+      "ingles": "Mussel",
+      "lamina": "mexillon"
     },
     {
       "id": "peixe",
@@ -165,7 +169,8 @@
         "gl": "assets/voice/gl_slow_29231976_5.m4a",
         "es": "assets/voice/es_slow_c85081ac_3.m4a"
       },
-      "ingles": "Fish"
+      "ingles": "Fish",
+      "lamina": "peixe"
     }
   ],
   "preguntas": [

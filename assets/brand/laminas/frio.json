@@ -1,0 +1,48 @@
+{
+  "vb": 100,
+  "nota": "Frío: copo de nieve de seis brazos sobre azul claro. No es un objeto, es una sensación, así que se dice con su símbolo.",
+  "formas": [
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 50,
+      "rx": 42,
+      "ry": 42,
+      "f": "#a5f3fc",
+      "s": "#1e3a8a",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M50 14 L50 86 M20 32 L80 68 M80 32 L20 68",
+      "s": "#1e3a8a",
+      "sw": 6
+    },
+    {
+      "t": "ruta",
+      "d": "M50 24 L42 32 M50 24 L58 32 M50 76 L42 68 M50 76 L58 68",
+      "s": "#1e3a8a",
+      "sw": 5
+    },
+    {
+      "t": "ruta",
+      "d": "M28 36 L28 46 M28 36 L38 36 M72 64 L72 54 M72 64 L62 64",
+      "s": "#1e3a8a",
+      "sw": 5
+    },
+    {
+      "t": "ruta",
+      "d": "M72 36 L62 36 M72 36 L72 46 M28 64 L38 64 M28 64 L28 54",
+      "s": "#1e3a8a",
+      "sw": 5
+    },
+    {
+      "t": "elipse",
+      "cx": 34,
+      "cy": 32,
+      "rx": 8,
+      "ry": 6,
+      "f": "#ffffff66"
+    }
+  ]
+}

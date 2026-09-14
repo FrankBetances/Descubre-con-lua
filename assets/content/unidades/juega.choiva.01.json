@@ -103,7 +103,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_50f4dcec_5.m4a",
         "es": "assets/voice/es_slow_50f4dcec_5.m4a"
-      }
+      },
+      "lamina": "gorro"
     },
     {
       "id": "abrigo",
@@ -119,7 +120,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_5ecb9269_6.m4a",
         "es": "assets/voice/es_slow_5ecb9269_6.m4a"
-      }
+      },
+      "lamina": "abrigo"
     },
     {
       "id": "botas",
@@ -135,7 +137,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_e815caba_5.m4a",
         "es": "assets/voice/es_slow_e815caba_5.m4a"
-      }
+      },
+      "lamina": "botas"
     },
     {
       "id": "charco",
@@ -151,7 +154,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_039a058f_6.m4a",
         "es": "assets/voice/es_slow_039a058f_6.m4a"
-      }
+      },
+      "lamina": "charco"
     },
     {
       "id": "paraugas",
@@ -167,7 +171,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_cbc7e973_8.m4a",
         "es": "assets/voice/es_slow_8af33d8f_8.m4a"
-      }
+      },
+      "lamina": "paraugas"
     }
   ],
   "preguntas": [

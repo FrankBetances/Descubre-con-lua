@@ -103,7 +103,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_56253689_5.m4a",
         "es": "assets/voice/es_slow_26ee0da5_4.m4a"
-      }
+      },
+      "lamina": "folla"
     },
     {
       "id": "castana",
@@ -119,7 +120,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_68085fff_7.m4a",
         "es": "assets/voice/es_slow_68085fff_7.m4a"
-      }
+      },
+      "lamina": "castana"
     },
     {
       "id": "arbore",
@@ -135,7 +137,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_c8712990_6.m4a",
         "es": "assets/voice/es_slow_814e544b_5.m4a"
-      }
+      },
+      "lamina": "arbore"
     },
     {
       "id": "vento",
@@ -151,7 +154,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_6353ebc3_5.m4a",
         "es": "assets/voice/es_slow_7347638e_6.m4a"
-      }
+      },
+      "lamina": "vento"
     },
     {
       "id": "cesta",
@@ -167,7 +171,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_75af6829_5.m4a",
         "es": "assets/voice/es_slow_75af6829_5.m4a"
-      }
+      },
+      "lamina": "cesta"
     }
   ],
   "preguntas": [

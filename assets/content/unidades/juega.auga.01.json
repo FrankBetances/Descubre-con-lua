@@ -102,7 +102,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_0c8c39ef_4.m4a",
         "es": "assets/voice/es_slow_07cc8397_4.m4a"
-      }
+      },
+      "lamina": "auga"
     },
     {
       "id": "xabon",
@@ -118,7 +119,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_0a071b75_5.m4a",
         "es": "assets/voice/es_slow_2a4b3ad7_5.m4a"
-      }
+      },
+      "lamina": "xabon"
     },
     {
       "id": "toalla",
@@ -134,7 +136,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_a0ea0e5a_6.m4a",
         "es": "assets/voice/es_slow_a0ea0e5a_6.m4a"
-      }
+      },
+      "lamina": "toalla"
     },
     {
       "id": "billa",
@@ -150,7 +153,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_12be6f67_5.m4a",
         "es": "assets/voice/es_slow_d5663fec_5.m4a"
-      }
+      },
+      "lamina": "billa"
     },
     {
       "id": "espuma",
@@ -166,7 +170,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_7278d78c_6.m4a",
         "es": "assets/voice/es_slow_7278d78c_6.m4a"
-      }
+      },
+      "lamina": "espuma"
     }
   ],
   "preguntas": [

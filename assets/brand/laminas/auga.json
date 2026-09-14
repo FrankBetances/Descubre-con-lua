@@ -1,0 +1,42 @@
+{
+  "vb": 100,
+  "nota": "Auga / Agua: un vaso con agua dentro y su línea de superficie. Es la del lavabo y la del baño.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M26 18 L74 18 L68 88 C67 92 64 94 60 94 L40 94 C36 94 33 92 32 88 Z",
+      "f": "#a5f3fc55",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M31 42 L69 42 L64 86 C63 90 62 91 59 91 L41 91 C38 91 37 90 36 86 Z",
+      "f": "#2f6fd0",
+      "s": "#143a7a",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M31 42 C40 38 48 46 58 42 C62 40 66 42 69 42",
+      "s": "#a5f3fc",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 44,
+      "cy": 62,
+      "rx": 5,
+      "ry": 9,
+      "f": "#ffffff44"
+    },
+    {
+      "t": "elipse",
+      "cx": 58,
+      "cy": 74,
+      "rx": 3,
+      "ry": 5,
+      "f": "#ffffff33"
+    }
+  ]
+}

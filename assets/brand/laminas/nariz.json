@@ -1,0 +1,66 @@
+{
+  "vb": 100,
+  "nota": "Nariz dentro de una cara de frente: dos ojos arriba, la nariz en el centro con sus dos ventanas y la boca abajo. Sola, una nariz no se reconoce; en la cara, sí.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M50 6 C74 6 88 24 88 50 C88 76 72 92 50 92 C28 92 12 76 12 50 C12 24 26 6 50 6 Z",
+      "f": "#fcedc7",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 34,
+      "cy": 38,
+      "rx": 5,
+      "ry": 6,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 66,
+      "cy": 38,
+      "rx": 5,
+      "ry": 6,
+      "f": "#181a20"
+    },
+    {
+      "t": "ruta",
+      "d": "M50 38 C46 48 42 56 40 60 C38 66 44 70 50 70 C56 70 62 66 60 60 C58 56 54 48 50 38 Z",
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 43,
+      "cy": 64,
+      "rx": 3.5,
+      "ry": 2.5,
+      "f": "#c2410c"
+    },
+    {
+      "t": "elipse",
+      "cx": 57,
+      "cy": 64,
+      "rx": 3.5,
+      "ry": 2.5,
+      "f": "#c2410c"
+    },
+    {
+      "t": "ruta",
+      "d": "M40 80 C45 85 55 85 60 80",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 44,
+      "cy": 54,
+      "rx": 4,
+      "ry": 6,
+      "f": "#ffffff55"
+    }
+  ]
+}

@@ -37,6 +37,9 @@ flutter:
     - assets/brand/
     - assets/brand/logos/
     - assets/brand/awards/
+    # Las láminas del contenido: una rejilla de 24×24 por objeto, misma paleta
+    # que las insignias. Lo vigila tools/check_bundled_assets.py.
+    - assets/brand/laminas/
     # Neural voice recordings (Celtia gl / Sharvard es), synthesised at build
     # time by tools/generate_voice_assets.py and committed. The models never
     # run on the device.

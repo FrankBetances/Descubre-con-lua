@@ -303,6 +303,10 @@ class VocabularioItem {
   /// enseña entonces solo galego y castelán, sin prometer un audio que no hay.
   final String ingles;
 
+  /// La rejilla de píxel art de esta palabra, sin ruta ni extensión. Vacía
+  /// mientras no esté dibujada: la tarjeta enseña la palabra y ya.
+  final String lamina;
+
   const VocabularioItem({
     required this.id,
     required this.palabra,
@@ -310,6 +314,7 @@ class VocabularioItem {
     required this.imagenAsset,
     required this.audioAsset,
     this.ingles = '',
+    this.lamina = '',
   });
 
   factory VocabularioItem.fromJson(Map<String, dynamic> json) {
@@ -337,6 +342,7 @@ class VocabularioItem {
           '',
       audioAsset: resolvedAudio,
       ingles: json['ingles']?.toString().trim() ?? '',
+      lamina: json['lamina']?.toString().trim() ?? '',
     );
   }
 
@@ -347,6 +353,7 @@ class VocabularioItem {
         'imagenAsset': imagenAsset,
         'audioAsset': audioAsset.toJson(),
         'ingles': ingles,
+        'lamina': lamina,
       };
 
   @override

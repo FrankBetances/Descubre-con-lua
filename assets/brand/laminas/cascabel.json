@@ -1,0 +1,51 @@
+{
+  "vb": 100,
+  "nota": "Cascabel dorado con la ranura, el agujero y la anilla. Cosido a cinta, como manda el aviso de seguridad.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M44 14 C44 6 56 6 56 14 L56 24 L44 24 Z",
+      "f": "#d97706",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 56,
+      "rx": 34,
+      "ry": 34,
+      "f": "#ffdc00",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M18 60 L82 60",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 74,
+      "rx": 8,
+      "ry": 7,
+      "f": "#4a2c11"
+    },
+    {
+      "t": "ruta",
+      "d": "M32 68 L40 68 M60 68 L68 68",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 40,
+      "rx": 10,
+      "ry": 8,
+      "f": "#ffffff66"
+    }
+  ]
+}

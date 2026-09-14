@@ -120,6 +120,25 @@ def literals_in_content() -> dict[str, set[str]]:
 
     def walk(node, origin: str) -> None:
         if isinstance(node, dict):
+            # `"lamina": "barco"` no es una ruta, es una CLAVE que el widget
+            # convierte en una. Sin resolverla aquí, una errata deja la palabra
+            # sin dibujo y nadie se entera: el widget calla y sigue. Es la
+            # misma familia de fallo que dejó el calendario girando.
+            lamina = node.get("lamina")
+            if isinstance(lamina, str) and lamina.strip():
+                # Vale el dibujo vectorial (.json) o la rejilla de píxel art
+                # (.txt): durante la conversión conviven, y la app prefiere el
+                # vector. Se exige UNO de los dos, no los dos.
+                clave = lamina.strip()
+                candidatos = [
+                    f"assets/brand/laminas/{clave}.json",
+                    f"assets/brand/laminas/{clave}.txt",
+                ]
+                elegido = next(
+                    (c for c in candidatos if (ROOT / c).is_file()),
+                    candidatos[0],
+                )
+                found.setdefault(elegido, set()).add(origin)
             for value in node.values():
                 walk(value, origin)
         elif isinstance(node, list):

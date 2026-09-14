@@ -104,7 +104,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_5c04c9bc_2.m4a",
         "es": "assets/voice/es_slow_26c973d5_4.m4a"
-      }
+      },
+      "lamina": "ra"
     },
     {
       "id": "paxaro",
@@ -120,7 +121,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_944de63e_6.m4a",
         "es": "assets/voice/es_slow_d58ca0b4_6.m4a"
-      }
+      },
+      "lamina": "paxaro"
     },
     {
       "id": "oso",
@@ -136,7 +138,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_26ab0588_3.m4a",
         "es": "assets/voice/es_slow_26ab0588_3.m4a"
-      }
+      },
+      "lamina": "oso"
     },
     {
       "id": "gato",
@@ -152,7 +155,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_9c8d40a4_4.m4a",
         "es": "assets/voice/es_slow_9c8d40a4_4.m4a"
-      }
+      },
+      "lamina": "gato"
     },
     {
       "id": "careta",
@@ -168,7 +172,8 @@
       "audioAsset": {
         "gl": "assets/voice/gl_slow_7c27a38b_6.m4a",
         "es": "assets/voice/es_slow_7c27a38b_6.m4a"
-      }
+      },
+      "lamina": "careta"
     }
   ],
   "preguntas": [
