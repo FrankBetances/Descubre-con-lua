@@ -8,6 +8,8 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/unidad_model.dart';
+import '../../../data/models/asamblea_segundo_ciclo_model.dart';
+import '../../juega/views/backstage_asamblea_screen.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../juega/widgets/barra_ingles_widget.dart';
 import '../../academy/views/guia_atencion_screen.dart';
@@ -229,6 +231,23 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     final id = mes.unidadId;
     if (id == null) return null;
     return widget.repository?.getUnidadById(id);
+  }
+
+  /// Las asambleas de 2.º ciclo de este mes, una por nivel.
+  ///
+  /// El Calendario Escola·Fogar reparte el curso, y el 2.º ciclo no estaba
+  /// dentro: se llegaba a él solo por la lista del aula. Un calendario que no
+  /// enseña la mitad del contenido no es un calendario. Si el mes no tiene
+  /// asambleas escritas todavía, no se pinta nada: el mes no miente.
+  List<AsambleaSegundoCiclo> _asambleasSegundoCicloDe(MesCurricular mes) {
+    final repo = widget.repository;
+    if (repo == null) return const [];
+    final todas = repo
+        .getAllAsambleasSegundoCicloSync()
+        .where((a) => a.mes == mes.mesCalendario)
+        .toList()
+      ..sort((a, b) => a.nivel.index.compareTo(b.nivel.index));
+    return todas;
   }
 
   void _lanzarSesion(MesCurricular mes, bool esDocente) {
@@ -982,10 +1001,74 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 ),
               ),
             ],
+            ..._buildAsambleasSegundoCiclo(mes),
           ],
         ),
       ),
     );
+  }
+
+  /// El acceso al 2.º ciclo desde la ficha del mes, un botón por nivel.
+  List<Widget> _buildAsambleasSegundoCiclo(MesCurricular mes) {
+    final asambleas = _asambleasSegundoCicloDe(mes);
+    if (asambleas.isEmpty) return const [];
+    final isGl = _language == AppLanguage.gl;
+    return [
+      const SizedBox(height: 16),
+      const Divider(height: 1),
+      const SizedBox(height: 12),
+      Text(
+        isGl ? 'SEGUNDO CICLO (3-6 ANOS)' : 'SEGUNDO CICLO (3-6 AÑOS)',
+        style: const TextStyle(
+          fontSize: 11,
+          fontWeight: FontWeight.w800,
+          letterSpacing: 1.1,
+          color: AppTheme.primaryInk,
+        ),
+      ),
+      const SizedBox(height: 4),
+      Text(
+        isGl
+            ? 'A asemblea matinal deste mes, co inglés dentro. Elixe o nivel.'
+            : 'La asamblea matinal de este mes, con el inglés dentro. Elige el nivel.',
+        style: const TextStyle(
+          fontSize: 12.5,
+          color: AppTheme.textSecondary,
+          height: 1.35,
+        ),
+      ),
+      const SizedBox(height: 10),
+      // Wrap y no Row: tres botones con «5.º de Infantil (4-5 años)» dentro no
+      // caben en una línea de 360 dp.
+      Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: [
+          for (final asamblea in asambleas)
+            OutlinedButton(
+              key: ValueKey(
+                  'calendario_asamblea_2c_${mes.mesCalendario}_${asamblea.nivel.clave}'),
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => BackstageAsambleaScreen(
+                    repository: widget.repository!,
+                    audioService: widget.audioService,
+                    initialNivel: asamblea.nivel,
+                    initialMes: asamblea.mes,
+                    initialLanguage: _language,
+                    onLanguageChanged: _onToggleLanguage,
+                  ),
+                ),
+              ),
+              style: OutlinedButton.styleFrom(
+                minimumSize: const Size(0, AppTheme.touchMin),
+                foregroundColor: AppTheme.primaryInk,
+              ),
+              child: Text(asamblea.nivel.etiquetaCorta.resolve(_language)),
+            ),
+        ],
+      ),
+    ];
   }
 
   Widget _buildRoleSection({

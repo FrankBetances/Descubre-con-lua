@@ -9,6 +9,47 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Los seis defectos que encontró Frank en el 2.º ciclo · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
+
+Frank probó el módulo y devolvió seis cosas. Las seis eran ciertas, y una de
+ellas —el desbordamiento— era peor de lo que él veía.
+
+| Lo que dijo | Qué se encontró al comprobarlo | Qué se hizo |
+| --- | --- | --- |
+| «El diseño UX-UI no me gusta, prefiero el modelo del primer ciclo» | La asamblea de 2.º ciclo tenía su propia piel: fondo casi negro, stepper de cuatro pastillas y cronómetro gigante. Dos lenguajes visuales en un mismo producto | Rehecha con la pieza del primer ciclo: fondo claro, `Fase N de 4` con barra de progreso, aviso de «móvil fuera de la vista» y navegación por «Seguinte Fase» |
+| «El color de la tarjeta de asamblea es incorrecto, el negro no ayuda» | Los tokens `backstage*` eran una paleta oscura aparte, y el botón de cada nivel iba negro con texto verde encima: ilegible | Los tokens apuntan ya a la paleta clara del primer ciclo. El botón, turquesa oscuro con texto blanco |
+| «El texto se desborda donde dice cero pantallas» | **Desbordaba 299 px en gallego y 323 en castellano a escala normal, y 468 px a escala 1,3.** En cualquier móvil | `Wrap` en vez de `Row`, y `Flexible` en la línea. Y 11 filas más de icono+texto por toda la asamblea, que desbordaban igual |
+| «Falta el calendario, eso es un error imperdonable» | Cierto: al 2.º ciclo solo se llegaba por la lista del aula. El Calendario Escola·Fogar no lo mencionaba | La ficha del mes trae los tres niveles al final. Si un mes no tiene asambleas escritas, no se pinta nada |
+| «Faltan las voces en gallego e inglés» | Cierto: `tools/voice_corpus.py` no miraba `asambleas_segundo_ciclo/`, así que el gate de cobertura daba OK sin cubrirlo | 97 locuciones nuevas (42 gl + 42 es + 13 en): consignas, señales y órdenes TPR. Cada una con su altavoz en pantalla |
+| «¿Dónde están los gráficos e imágenes?» | Cierto: cuatro pantallas de prosa seguidas, sin una sola imagen | Lámina en cada fase y en la micro-rutina, del catálogo vectorial que ya existía: `gato`, `man`, `pes`, `mochila`, `abrigo`, `cuncha`, `arbore`, `toalla`, `amiga` |
+
+### Comprobado en este contenedor, con Flutter 3.47.4
+
+| Área | Evidencia |
+| --- | --- |
+| Gates locales | `tools/gates.sh --fast` → **13 de 14 en verde**; el que falta es la cobertura de voz, abajo |
+| Suite completa | `flutter test --exclude-tags capturas` → **340 tests, 0 fallos** |
+| Barrera nueva contra desbordes | `test/features/juega/segundo_ciclo_escala_test.dart`: las dos pantallas del 2.º ciclo, en gallego y castellano, a escala 1,0 y 1,3, sobre 360 dp. **Los ocho casos fallaban al escribirlo** |
+| Imágenes, **miradas** | `aula-lista-2ciclo-{gl,es}.png` —la pantalla que nunca se había retratado y donde estaba el desbordamiento—, `aula-backstage-{gl,es}.png`, `academy-micro-rutina-{gl,es}.png` y el calendario con su bloque de 2.º ciclo |
+
+### Por qué se coló
+
+La captura del turno anterior retrataba el **interior** de la asamblea, nunca la
+lista del aula con la pestaña de 2.º ciclo pulsada, que es la pantalla por la
+que se entra. Dije «capturas miradas» y era verdad de lo que capturé; lo que
+faltaba era capturar lo que importaba. Ahora esa pantalla está en el banco de
+capturas y en el test de escala.
+
+### NO comprobado en esta rama
+
+| Área | Por qué |
+| --- | --- |
+| **Las 97 grabaciones nuevas** | El corpus ya las declara; las sintetiza el workflow `voice-assets` al empujar. Hasta entonces `check_voice_coverage.py` está rojo y los altavoces no se pintan |
+| **Ninguna pantalla se ha visto en un aparato** | Sigue abierto, y es lo único que las capturas del motor no pueden cerrar |
+| **El 2.º ciclo solo cubre septiembre** | Tres asambleas, una por nivel. Los otros nueve meses no están escritos |
+
+---
+
 ## La rama `mejora` reconstruida sobre `main` · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
 
 El módulo de asambleas matinales de 2.º ciclo con el inglés como L3 —backstage

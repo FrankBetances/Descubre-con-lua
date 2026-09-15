@@ -628,7 +628,16 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
+                // Este Row desbordaba 299 px en gallego y 323 en castellano
+                // a escala normal, y 468 a escala 1,3: la etiqueta, el Spacer
+                // y «Cero pantallas infantís» no caben en 360 dp ni de lejos.
+                // Wrap en vez de Row: las dos piezas bajan de línea cuando no
+                // caben, que es lo que hace el filtro de edad desde que se
+                // arregló el suyo.
+                Wrap(
+                  spacing: 10,
+                  runSpacing: 8,
+                  crossAxisAlignment: WrapCrossAlignment.center,
                   children: [
                     Container(
                       padding: const EdgeInsets.symmetric(
@@ -636,40 +645,47 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                         vertical: 4,
                       ),
                       decoration: BoxDecoration(
-                        color: AppTheme.backstageAccent.withValues(alpha: 0.2),
+                        color: AppTheme.primaryLight,
                         borderRadius:
                             BorderRadius.circular(AppTheme.radiusField),
                       ),
                       child: Text(
-                        isGl
-                            ? 'MODO DOCENTE · BACKSTAGE'
-                            : 'MODO DOCENTE · BACKSTAGE',
+                        isGl ? 'ASEMBLEA · 2.º CICLO' : 'ASAMBLEA · 2.º CICLO',
                         style: const TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 12,
                           fontWeight: FontWeight.w800,
-                          color: AppTheme.backstageAccent,
+                          color: AppTheme.primaryInk,
                           letterSpacing: 1.0,
                         ),
                       ),
                     ),
-                    const Spacer(),
-                    const Icon(
-                      Icons.visibility_off_rounded,
-                      color: AppTheme.backstageTextSecondary,
-                      size: 20,
-                    ),
-                    const SizedBox(width: 6),
-                    Text(
-                      isGl
-                          ? 'Cero pantallas infantís'
-                          : 'Cero pantallas infantiles',
-                      style: const TextStyle(
-                        fontFamily: AppTheme.fontFamily,
-                        fontSize: 12,
-                        color: AppTheme.backstageTextSecondary,
-                        fontWeight: FontWeight.w600,
-                      ),
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(
+                          Icons.visibility_off_rounded,
+                          color: AppTheme.textSecondary,
+                          size: 18,
+                        ),
+                        const SizedBox(width: 6),
+                        // Flexible aunque el Row sea `min`: el Wrap le da como
+                        // mucho el ancho de la tarjeta, y esta línea se pasaba
+                        // 17 px en 360 dp. Con Flexible parte de línea.
+                        Flexible(
+                          child: Text(
+                            isGl
+                                ? 'Cero pantallas infantís'
+                                : 'Cero pantallas infantiles',
+                            style: const TextStyle(
+                              fontFamily: AppTheme.fontFamily,
+                              fontSize: 12,
+                              color: AppTheme.textSecondary,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -688,8 +704,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                 const SizedBox(height: 6),
                 Text(
                   isGl
-                      ? '4 fases rítmicas canónicas (10 min): Apertura (90s), Foco Rítmico (120s), Reto TPR en L3 (270s) e Calma (120s). Interfaz escura de alta visibilidade pensada para o docente.'
-                      : '4 fases rítmicas canónicas (10 min): Apertura (90s), Foco Rítmico (120s), Reto TPR en L3 (270s) y Calma (120s). Interfaz oscura de alta visibilidad pensada para el docente.',
+                      ? '4 fases (10 min): Apertura (90s), Foco Rítmico (120s), Reto TPR en L3 (270s) e Calma (120s). A mesma pantalla que a asemblea de primeiro ciclo.'
+                      : '4 fases (10 min): Apertura (90s), Foco Rítmico (120s), Reto TPR en L3 (270s) y Calma (120s). La misma pantalla que la asamblea de primer ciclo.',
                   style: const TextStyle(
                     fontFamily: AppTheme.fontFamily,
                     fontSize: 14.5,
@@ -727,9 +743,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                     ),
                     icon: const Icon(Icons.play_circle_filled_rounded),
                     label: Text(
-                      isGl
-                          ? 'Iniciar Asemblea Backstage'
-                          : 'Iniciar Asamblea Backstage',
+                      isGl ? 'Comezar a asemblea' : 'Comenzar la asamblea',
                       style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 16,
@@ -934,15 +948,17 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                 },
                 icon: const Icon(Icons.play_circle_outline),
                 label: Text(
-                  isGl ? 'Abrir Modo Backstage' : 'Abrir Modo Backstage',
+                  isGl ? 'Abrir a asemblea' : 'Abrir la asamblea',
                   style: const TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.dark,
-                  foregroundColor: AppTheme.backstageAccent,
+                  // Era negro con texto verde encima: ni se leía, ni pintaba
+                  // nada un botón negro en una pantalla clara.
+                  backgroundColor: AppTheme.primaryInk,
+                  foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 14.0),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0),

@@ -8,9 +8,11 @@ etapas de educación infantil: **primer ciclo (0-3 años)** y **segundo ciclo
 - **Juega con Lúa · Aula** — la usa la docente en la asamblea. Incluye
   **Formación · Aula**: una cápsula de tres minutos por cada paso de la asamblea.
 - **Asamblea matinal de segundo ciclo** — para 4.º, 5.º y 6.º de Infantil, con
-  el inglés como tercera lengua. Un *backstage* que la docente lleva en la mano:
-  cuatro fases —apertura, foco rítmico, reto TPR y calma—, cada una con su
-  consigna y su cronómetro, y el nivel se cambia sin salir de la pantalla.
+  el inglés como tercera lengua. Cuatro fases —apertura, foco rítmico, reto TPR
+  y calma—, cada una con su consigna, su lámina, su cronómetro y su altavoz; el
+  nivel se cambia sin salir de la pantalla. Es **la misma pantalla que la
+  asamblea de primer ciclo**: el producto tiene un solo lenguaje visual. Se
+  entra por la lista del aula o por la ficha del mes del Calendario.
 - **Academy · Familias** — la usan las familias en casa. Incluye la
   **micro-rutina del mes** para segundo ciclo: tres minutos en un momento
   concreto del día, con ejemplos de cómo devolver la frase bien dicha sin pedir
@@ -80,7 +82,7 @@ comprobado y nombra el comando que lo comprobó.
 | Contenido · primer ciclo | 10 unidades de aula, una por mes del curso · 10 meses de calendario · 6 fases de asamblea |
 | Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
-| Voz | 1038 locuciones (452 gl + 452 es + 134 en) grabadas dentro del paquete |
+| Voz | 1135 locuciones (494 gl + 494 es + 147 en) grabadas dentro del paquete |
 | Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 | Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |
 | Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |

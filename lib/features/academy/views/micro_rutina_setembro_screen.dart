@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
+import '../../../core/brand/lamina_vector.dart';
 import '../../../core/theme/app_theme.dart';
 import '../widgets/academy_header.dart';
 import '../widgets/recast_guia_card.dart';
@@ -208,6 +209,10 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
                         ],
                       ),
                       const SizedBox(height: 14),
+                      const Center(
+                        child: LaminaEscena(clave: 'abrigo', ancho: 120),
+                      ),
+                      const SizedBox(height: 10),
                       Text(
                         isGl
                             ? 'A Escena Cotiá: «The Magic Coat Hook»'
@@ -262,7 +267,8 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
                               size: 20,
                             ),
                             const SizedBox(width: 8),
-                            Text(
+                            Expanded(
+                                child: Text(
                               isGl
                                   ? 'Aliñamento Curricular (Decreto 150/2022)'
                                   : 'Alineamiento Curricular (Decreto 150/2022)',
@@ -272,7 +278,7 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
                                 fontWeight: FontWeight.w800,
                                 color: AppTheme.primaryInk,
                               ),
-                            ),
+                            )),
                           ],
                         ),
                         const SizedBox(height: 8),

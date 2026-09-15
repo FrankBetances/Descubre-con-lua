@@ -7,10 +7,9 @@ import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart' show Revision;
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/juega/views/backstage_asamblea_screen.dart';
+import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_phase_timer_widget.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
 import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_level_switcher.dart';
-import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_phase_stepper.dart';
-import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_phase_timer_widget.dart';
 
 void main() {
   late ContentRepository repository;
@@ -175,7 +174,7 @@ void main() {
 
   group('BackstageAsambleaScreen Widget Tests', () {
     testWidgets(
-        'renders backstage dark theme with level switcher, stepper and timer',
+        'renders the light assembly header with level switcher and progress',
         (tester) async {
       await tester.pumpWidget(
         MaterialApp(
@@ -199,18 +198,10 @@ void main() {
           findsOneWidget);
 
       // Verify phase stepper exists with 4 phases
-      expect(find.byType(BackstagePhaseStepper), findsOneWidget);
-      expect(
-          find.byKey(const ValueKey('stepper_phase_button_0')), findsOneWidget);
-      expect(
-          find.byKey(const ValueKey('stepper_phase_button_1')), findsOneWidget);
-      expect(
-          find.byKey(const ValueKey('stepper_phase_button_2')), findsOneWidget);
-      expect(
-          find.byKey(const ValueKey('stepper_phase_button_3')), findsOneWidget);
+      expect(find.text('Fase 1 de 4'), findsOneWidget);
+      expect(find.byType(LinearProgressIndicator), findsOneWidget);
 
       // Verify timer widget exists
-      expect(find.byType(BackstagePhaseTimerWidget), findsOneWidget);
 
       // Phase 1 (Apertura) initially displayed
       expect(find.text('FASE 1 · 90s'), findsOneWidget);
@@ -233,7 +224,8 @@ void main() {
       await tester.pumpAndSettle();
 
       // Step to Phase 2: Foco Rítmico (120s)
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_1')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
       expect(find.text('FASE 2 · 120s'), findsOneWidget);
       expect(find.text('Foco Rítmico e Pulso Constante'), findsOneWidget);
@@ -241,15 +233,17 @@ void main() {
           findsOneWidget);
 
       // Step to Phase 3: Reto TPR (270s)
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
       expect(find.text('FASE 3 · 270s'), findsOneWidget);
-      expect(find.text('Stand up and clap hands'), findsOneWidget);
+      expect(find.text('Stand up and clap hands'), findsWidgets);
       expect(find.byKey(const ValueKey('play_tpr_audio_cmd.test.01')),
           findsOneWidget);
 
       // Step to Phase 4: Calma e Transición (120s)
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_3')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
       expect(find.text('FASE 4 · 120s'), findsOneWidget);
       expect(find.text('Gasa de algodón orgánico'), findsOneWidget);
@@ -273,7 +267,11 @@ void main() {
       await tester.pumpAndSettle();
 
       // Navigate to Phase 3
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
+      await tester.pumpAndSettle();
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
 
       // In 4º Infantil: Acción Expandida, no freeze indicator
@@ -286,26 +284,34 @@ void main() {
       await tester.pumpAndSettle();
 
       // Nav to Phase 3
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
+      await tester.pumpAndSettle();
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
 
       // In 5º Infantil: Freeze indicator must appear!
       expect(find.byKey(const ValueKey('freeze_signal_indicator')),
           findsOneWidget);
       expect(find.text('The bell rings: run to the circle and freeze!'),
-          findsOneWidget);
+          findsWidgets);
 
       // Switch to 6º Infantil
       await tester.tap(find.byKey(const ValueKey('level_switcher_6_infantil')));
       await tester.pumpAndSettle();
 
       // Nav to Phase 3
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
+      await tester.pumpAndSettle();
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
 
       // In 6º Infantil: Cue cards indicator must appear!
       expect(find.byKey(const ValueKey('cue_cards_indicator')), findsOneWidget);
-      expect(find.text('Walk to the hook and hang your coat'), findsOneWidget);
+      expect(find.text('Walk to the hook and hang your coat'), findsWidgets);
     });
 
     testWidgets('toggles language between GL and ES dynamically',
@@ -326,7 +332,8 @@ void main() {
       expect(find.text('Apertura e Saúdo no Círculo'), findsOneWidget);
 
       // Tap language toggle
-      await tester.tap(find.byKey(const ValueKey('backstage_language_toggle')));
+      // El conmutador es el mismo de toda la app: dos pastillas, GL y ES.
+      await tester.tap(find.text('ES'));
       await tester.pumpAndSettle();
 
       expect(find.text('ES'), findsOneWidget);
@@ -510,7 +517,11 @@ void main() {
       await tester.pumpAndSettle();
 
       // Go to phase 3 (Reto TPR)
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
+      await tester.pumpAndSettle();
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
 
       // Must show "Voz docente" badge and not the play button

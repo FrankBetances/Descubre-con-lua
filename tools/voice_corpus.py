@@ -314,6 +314,59 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                      f"calendario/tramo/{tramo.get('id', '?')}/fraseIngles",
                      seen)
 
+    # La asamblea matinal de segundo ciclo. Nació MUDA: la docente leía la
+    # consigna y el inglés de las órdenes TPR sin poder oír cómo suena, que es
+    # justo lo que la voz neuronal existe para resolver. Este directorio no lo
+    # miraba nadie, así que el gate de cobertura daba OK sin cubrirlo.
+    asambleas = content_dir / "asambleas_segundo_ciclo"
+    if asambleas.exists():
+        for path in sorted(asambleas.glob("*.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            aid = data.get("id", path.stem)
+
+            for fase in data.get("fases") or []:
+                if not isinstance(fase, dict):
+                    continue
+                orden = fase.get("orden", "?")
+                # Lo que la docente dice en voz alta, en las dos lenguas.
+                if fase.get("consignaDocente"):
+                    _add(_localized(fase["consignaDocente"]), "tutor",
+                         f"{aid}/fase/{orden}/consigna", seen)
+                # La señal en inglés que abre la fase.
+                if fase.get("cueAcustica"):
+                    texto = str(fase["cueAcustica"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"{aid}/fase/{orden}/cue", seen)
+                for comando in fase.get("comandosL3") or []:
+                    if not isinstance(comando, dict):
+                        continue
+                    cid = comando.get("id", "?")
+                    # La orden en inglés: esto es el corazón del TPR y es lo
+                    # que nadie tiene por qué saber pronunciar de oído.
+                    if comando.get("textoIngles"):
+                        texto = str(comando["textoIngles"])
+                        _one(texto, "en", estilo_ingles(texto),
+                             f"{aid}/fase/{orden}/cmd/{cid}/ingles", seen)
+                    for campo in ("accionFisica", "modeladoDocente"):
+                        if comando.get(campo):
+                            _add(_localized(comando[campo]), "tutor",
+                                 f"{aid}/fase/{orden}/cmd/{cid}/{campo}", seen)
+
+            # La micro-rutina de casa la lee la familia, muchas veces con las
+            # manos ocupadas, igual que las cápsulas.
+            micro = data.get("microRutinaHogar") or {}
+            for campo in ("objetivoAutonomia", "escenaCotidiana"):
+                if micro.get(campo):
+                    _add(_localized(micro[campo]), "tutor",
+                         f"{aid}/microRutina/{campo}", seen)
+            for i, pauta in enumerate(micro.get("pautasRecast") or []):
+                if not isinstance(pauta, dict):
+                    continue
+                for campo in ("modeladoIndirecto", "consejoEvitar"):
+                    if pauta.get(campo):
+                        _add(_localized(pauta[campo]), "tutor",
+                             f"{aid}/microRutina/pauta/{i}/{campo}", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

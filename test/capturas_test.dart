@@ -369,6 +369,25 @@ void main() {
       );
     });
 
+    testWidgets('aula · lista, pestana de 2.º ciclo · $l', (tester) async {
+      final premios = await premiosConProgreso(tester);
+      await capturar(
+        tester,
+        'aula-lista-2ciclo-$l',
+        UnidadesListScreen(
+          repository: contenido,
+          premios: premios,
+          audioService: MockOfflineAudioService(),
+          initialLanguage: lang,
+        ),
+        tamano: const Size(412, 1500),
+        antesDeRetratar: (tester) async {
+          await tester.tap(find.byKey(const ValueKey('tab_segundo_ciclo')));
+          await tester.pumpAndSettle();
+        },
+      );
+    });
+
     testWidgets('aula · backstage da asemblea de 2.º ciclo · $l',
         (tester) async {
       await capturar(

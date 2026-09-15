@@ -181,7 +181,8 @@ class RecastGuiaCard extends StatelessWidget {
                           color: AppTheme.textSecondary,
                         ),
                         const SizedBox(width: 8),
-                        Text(
+                        Expanded(
+                            child: Text(
                           isGl ? 'A crianza di:' : 'La criatura dice:',
                           style: const TextStyle(
                             fontFamily: AppTheme.fontFamily,
@@ -189,7 +190,7 @@ class RecastGuiaCard extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                             color: AppTheme.textSecondary,
                           ),
-                        ),
+                        )),
                       ],
                     ),
                     const SizedBox(height: 6),

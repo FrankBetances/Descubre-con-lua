@@ -33,17 +33,30 @@ class AppTheme {
   static const Color star = Color(0xFFFACC15);
   static const Color dark = Color(0xFF0B1220);
 
-  // ---------------------------------------------------- backstage (docente)
-  /// Fondo ultra-escuro para o asistente entre bastidores do docente (sen brillo para o alumnado).
-  static const Color backstageBg = Color(0xFF0B1220);
-  static const Color backstageSurface = Color(0xFF131D31);
-  static const Color backstageSurfaceElevated = Color(0xFF1E293B);
-  static const Color backstageBorder = Color(0xFF2E3D5B);
-  static const Color backstageTextPrimary = Color(0xFFF8FAFC);
-  static const Color backstageTextSecondary = Color(0xFF94A3B8);
-  static const Color backstageTextMuted = Color(0xFF64748B);
-  static const Color backstageAccent = Color(0xFF00C4BE);
-  static const Color backstageWarning = Color(0xFFF59E0B);
+  // ------------------------------------------- asamblea de segundo ciclo
+  /// La asamblea de 2.º ciclo NACIÓ con fondo casi negro, y Frank la rechazó:
+  /// «el color negro no ayuda». Tenía razón por dos motivos. Uno, el aula de
+  /// infantil se da con luz de ventana y una pantalla oscura se lee peor, no
+  /// mejor. Dos, y más importante: la app tiene UN lenguaje visual, el del
+  /// primer ciclo, y una segunda piel convierte dos partes del mismo producto
+  /// en dos productos.
+  ///
+  /// Los nombres se conservan porque los citan los widgets de `backstage/`;
+  /// lo que cambia es que ya NO son oscuros: son la misma paleta clara que
+  /// usa la asamblea de primer ciclo.
+  static const Color backstageBg = pageBg;
+  static const Color backstageSurface = card;
+  static const Color backstageSurfaceElevated = primaryLight;
+  static const Color backstageBorder = border;
+  static const Color backstageTextPrimary = textPrimary;
+  static const Color backstageTextSecondary = textSecondary;
+  static const Color backstageTextMuted = textMuted;
+
+  /// Turquesa OSCURO, no el de marca: este color se usa como texto sobre
+  /// blanco, y el turquesa de marca sobre blanco no llega al contraste
+  /// mínimo. Lo vigila `theme_test.dart`.
+  static const Color backstageAccent = primaryInk;
+  static const Color backstageWarning = Color(0xFFB45309);
   static const double backstageTouchMin = 64.0;
 
   /// Turquesa para barras y cabeceras CON texto blanco.

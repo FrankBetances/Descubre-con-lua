@@ -120,8 +120,7 @@ enum MetodologiaTPR {
   accionExpandida,
 
   /// 5.º de Infantil (4-5 anos): Micro-narrativas de causa e efecto físico,
-  /// xogos de inhibición selectiva ante claves acústicas (Stop-signal / Freeze!),
-  /// e praxias orofaciais vinculadas a rimas dactilares.
+  /// e xogos de inhibición selectiva ante claves acústicas (Freeze!).
   dramatizadoNarrativo,
 
   /// 6.º de Infantil (5-6 anos): Dinámica transaccional e cooperativa entre
@@ -516,6 +515,12 @@ class FaseAsamblea {
   final List<ComandoTPR> comandosL3;
 
   /// Indicación de clave acústica (ex: "Freeze!", son de campá, pulso 72 BPM).
+  /// La lámina de la fase: el mismo formato vectorial que pinta el cuento y el
+  /// vocabulario del primer ciclo. La asamblea de 2.º ciclo nació sin ninguna
+  /// imagen —cuatro pantallas de prosa seguidas— y Frank preguntó dónde
+  /// estaban los gráficos. Vacío: no se pinta nada, no hay hueco.
+  final String lamina;
+
   final String? cueAcustica;
 
   /// Pista de son offline para ambientación ou fade suave.
@@ -531,6 +536,7 @@ class FaseAsamblea {
     required this.duracionSegundos,
     required this.consignaDocente,
     this.comandosL3 = const [],
+    this.lamina = '',
     this.cueAcustica,
     this.audioAsset,
     this.repertorioMateriales = const [],
@@ -602,6 +608,7 @@ class FaseAsamblea {
             {},
       ),
       comandosL3: List.unmodifiable(cmds),
+      lamina: json['lamina']?.toString().trim() ?? '',
       cueAcustica: json['cueAcustica']?.toString().trim() ??
           json['cue_acustica']?.toString().trim(),
       audioAsset: json['audioAsset']?.toString().trim() ??
@@ -617,6 +624,7 @@ class FaseAsamblea {
         'duracionSegundos': duracionSegundos,
         'consignaDocente': consignaDocente.toJson(),
         'comandosL3': comandosL3.map((c) => c.toJson()).toList(),
+        if (lamina.isNotEmpty) 'lamina': lamina,
         if (cueAcustica != null) 'cueAcustica': cueAcustica,
         if (audioAsset != null) 'audioAsset': audioAsset,
         'repertorioMateriales':
