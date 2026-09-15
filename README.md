@@ -40,22 +40,31 @@ no diagnostica y no trata nada. La criatura no usa la pantalla; la app es para
 la persona adulta que acompaña.
 
 <p align="center">
-  <img src="assets/brand/logos/dr-betances-crest.png" alt="Escudo del Dr. Frank Alberto Betances Reinoso" height="72" style="background:#0B1220;border-radius:10px;padding:6px">
+  <img src="assets/brand/logos/dr-betances-crest.jpg" alt="Escudo del Dr. Frank Alberto Betances Reinoso" height="72">
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/brand/logos/startic.png" alt="Incubadora de Alta Tecnoloxía startTIC" height="42">
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/brand/logos/zona-franca-vigo.png" alt="Consorcio da Zona Franca de Vigo" height="52">
+  <img src="assets/brand/logos/earlify-health.jpg" alt="Earlify Health S.L." height="72">
 </p>
 
 <p align="center">
-  <sub><strong>Dr. Frank Alberto Betances Reinoso</strong> · Incubadora de Alta
-  Tecnoloxía <strong>startTIC</strong> · <strong>Consorcio da Zona Franca de
+  <img src="assets/brand/logos/startic.png" alt="Incubadora de Alta Tecnoloxía startTIC" height="34">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/brand/logos/zona-franca-vigo.png" alt="Consorcio da Zona Franca de Vigo" height="48">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/brand/logos/concello-vigo.png" alt="Concello de Vigo" height="48">
+</p>
+
+<p align="center">
+  <sub><strong>Dr. Frank Alberto Betances Reinoso</strong> · <strong>Earlify
+  Health S.L.</strong> · Incubadora de Alta Tecnoloxía <strong>startTIC</strong>
+  · <strong>Consorcio da Zona Franca de Vigo</strong> · <strong>Concello de
   Vigo</strong></sub>
 </p>
 
 El proyecto **nace dentro del programa startTIC**, que es parte del **Consorcio
-da Zona Franca de Vigo**. Las marcas de la cabecera y de los créditos están por
-procedencia —de dónde sale esto—, no como respaldo pedido a un tercero.
+da Zona Franca de Vigo**, y está pensado para las **escuelas infantiles
+municipales del Concello de Vigo**. Las marcas de la cabecera y de los créditos
+están por procedencia y por destino —de dónde sale esto y para quién se hace—,
+no como respaldo pedido a un tercero.
 
 **Licencia: gratis para las familias, con licencia para las instituciones.**
 Para una familia o una persona a título individual, gratis y para siempre. Para

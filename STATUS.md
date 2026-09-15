@@ -9,6 +9,40 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Los logotipos, completos · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
+
+Frank creó la rama `logo` con los ficheros completos y pidió actualizarlos.
+
+| Fichero | Qué pasa con él |
+| --- | --- |
+| `concello-vigo.png` | **Vuelve.** El hueco ya estaba en `credits_screen.dart`; faltaba el fichero, así que `LogoInstitucional` no pintaba nada. Ahora se ve en créditos, manual y README |
+| `zona-franca-vigo.png` | **Resuelto de verdad.** Pasa de 400 × 166 RGB —un recorte de captura de web— a 702 × 280 RGBA con margen propio. Medido: el canal alfa no toca ningún borde |
+| `dr-betances-crest` | De PNG para fondo oscuro a JPEG 1024 × 1024 con fondo turquesa propio. Se le retira la placa oscura de créditos, que ahora solo le pondría un marco negro |
+| `earlify-health.jpg` | De 47 KB a 335 KB. Sube a 76 px en créditos: a 56 se veía diminuto al lado del escudo |
+| `startic.png` | **Sigue igual, y hay que decirlo.** El fichero de la rama `logo` es **byte a byte el mismo** que ya estaba: mismo SHA-256. Sigue recortado, con el dibujo tocando `x=0`, `x=509` e `y=101`. Falta el oficial de startTIC |
+| `starttic.png` | **No se copia.** Idéntico a `startic.png`; dos nombres para la misma imagen acaban desincronizándose |
+
+Las alturas se igualan por peso óptico y no por caja: 72-76 px los cuadrados,
+48 los apaisados medios, 32 el de startTIC, que es 5:1.
+
+### Comprobado en este contenedor
+
+| Área | Evidencia |
+| --- | --- |
+| Gates locales | `tools/gates.sh --fast` → **14 de 14 en verde** |
+| Suite completa | **340 tests, 0 fallos** · `analyze` limpio |
+| Medición de los ficheros | Canal alfa en la primera y última fila y columna de cada PNG, y SHA-256 para comparar con lo que ya había. No es una impresión: está medido |
+| Imágenes, **miradas** | `docs/capturas/creditos-{gl,es}.png` con las cinco marcas, y la portada del manual en el PDF regenerado |
+
+### NO comprobado
+
+| Área | Por qué |
+| --- | --- |
+| **El logotipo de startTIC sigue incompleto** | Lo que falta, falta. No se arregla por recorte ni retocando la marca de un tercero. Hace falta el fichero oficial |
+| **Ninguna pantalla se ha visto en un aparato** | Las capturas son del motor de Flutter |
+
+---
+
 ## Los seis defectos que encontró Frank en el 2.º ciclo · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
 
 Frank probó el módulo y devolvió seis cosas. Las seis eran ciertas, y una de

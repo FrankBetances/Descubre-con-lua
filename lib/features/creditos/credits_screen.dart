@@ -160,14 +160,13 @@ class CreditsScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         // El escudo es de Frank, no de un tercero: se usa.
-                        // Va sobre placa OSCURA porque está dibujado para fondo
-                        // oscuro: sobre la tarjeta clara, el cuervo blanco y el
-                        // círculo blanco desaparecían y quedaba medio escudo.
+                        // La versión de la rama `logo` trae YA su propio fondo
+                        // turquesa sólido, así que la placa oscura que llevaba
+                        // antes sobra: le pondría un marco negro alrededor de
+                        // un cuadrado que ya está resuelto.
                         const LogoInstitucional(
-                          fichero: 'dr-betances-crest.png',
+                          fichero: 'dr-betances-crest.jpg',
                           alto: 72,
-                          sobrePlaca: true,
-                          colorPlaca: AppTheme.dark,
                         ),
                         const SizedBox(height: AppTheme.spaceMd),
                         Text(
@@ -184,10 +183,12 @@ class CreditsScreen extends StatelessWidget {
                               ?.copyWith(color: AppTheme.primaryInk),
                         ),
                         const Divider(height: AppTheme.spaceXl),
+                        // Casi cuadrado y con margen blanco propio: a la
+                        // altura de los apaisados se veía diminuto. Las marcas
+                        // se igualan por peso óptico, no por alto de caja.
                         const LogoInstitucional(
                           fichero: 'earlify-health.jpg',
-                          alto: 56,
-                          sobrePlaca: true,
+                          alto: 76,
                         ),
                         const SizedBox(height: AppTheme.spaceSm),
                         Text(
@@ -224,13 +225,13 @@ class CreditsScreen extends StatelessWidget {
                         // vez de desbordar.
                         const Wrap(
                           spacing: AppTheme.spaceLg,
-                          runSpacing: AppTheme.spaceSm,
+                          runSpacing: AppTheme.spaceMd,
                           crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
-                            LogoInstitucional(fichero: 'startic.png'),
+                            LogoInstitucional(fichero: 'startic.png', alto: 32),
                             LogoInstitucional(
                               fichero: 'zona-franca-vigo.png',
-                              sobrePlaca: true,
+                              alto: 48,
                             ),
                           ],
                         ),
@@ -239,7 +240,10 @@ class CreditsScreen extends StatelessWidget {
                           detail: _starticDesc.resolve(currentLanguage),
                         ),
                         const SizedBox(height: AppTheme.spaceMd),
-                        const LogoInstitucional(fichero: 'concello-vigo.png'),
+                        const LogoInstitucional(
+                          fichero: 'concello-vigo.png',
+                          alto: 48,
+                        ),
                         _Entry(
                           name: _cityHall.resolve(currentLanguage),
                           detail: _cityHallDesc.resolve(currentLanguage),
