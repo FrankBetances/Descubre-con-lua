@@ -325,174 +325,175 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: PaxinaSenScroll(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0),
-              child: Text(
-                _subtitle.resolve(currentLanguage),
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: const Color(0xFF4A5568),
-                  fontWeight: FontWeight.w500,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-            const SizedBox(height: 16.0),
-            _buildModuleCard(
-              context: context,
-              title: _juegaTitle.resolve(currentLanguage),
-              description: _juegaSubtitle.resolve(currentLanguage),
-              icon: Icons.school_outlined,
-              buttonText: isGl ? 'Entrar en Modo Aula' : 'Entrar en Modo Aula',
-              formacionKey: const ValueKey('formacion_docente'),
-              formacionTexto: isGl
-                  ? 'Antes de entrar na aula · 2 min'
-                  : 'Antes de entrar en el aula · 2 min',
-              onFormacion: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => FormacionScreen(
-                      perfil: PerfilFormacion.docente,
-                      language: currentLanguage,
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: Text(
+                    _subtitle.resolve(currentLanguage),
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: const Color(0xFF4A5568),
+                      fontWeight: FontWeight.w500,
                     ),
-                  ),
-                );
-              },
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => UnidadesListScreen(
-                      repository: repository,
-                      premios: premios,
-                      calendario: calendario,
-                      audioService: audioService,
-                      initialLanguage: currentLanguage,
-                      onLanguageChanged: onLanguageChanged,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 16.0),
-            _buildModuleCard(
-              context: context,
-              title: _academyTitle.resolve(currentLanguage),
-              description: _academySubtitle.resolve(currentLanguage),
-              icon: Icons.family_restroom_outlined,
-              buttonText: isGl ? 'Entrar en Academy' : 'Entrar en Academy',
-              formacionKey: const ValueKey('formacion_familia'),
-              formacionTexto: isGl
-                  ? 'Antes de empezar na casa · 2 min'
-                  : 'Antes de empezar en casa · 2 min',
-              onFormacion: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => FormacionScreen(
-                      perfil: PerfilFormacion.familia,
-                      language: currentLanguage,
-                    ),
-                  ),
-                );
-              },
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => BloquesListScreen(
-                      repository: repository,
-                      premios: premios,
-                      calendario: calendario,
-                      audioService: audioService,
-                      initialLanguage: currentLanguage,
-                      onLanguageChanged: onLanguageChanged,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 16.0),
-            _buildModuleCard(
-              context: context,
-              title: _calendarioTitle.resolve(currentLanguage),
-              description: _calendarioSubtitle.resolve(currentLanguage),
-              icon: Icons.calendar_month_outlined,
-              buttonText: isGl
-                  ? 'Ver Calendario Escola · Fogar'
-                  : 'Ver Calendario Escuela · Hogar',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => CalendarioScreen(
-                      store: calendario ?? CalendarioStore(),
-                      initialLanguage: currentLanguage,
-                      onLanguageChanged: onLanguageChanged,
-                      repository: repository,
-                      audioService: audioService,
-                      premios: premios,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 24.0),
-            if (premios != null)
-              OutlinedButton.icon(
-                onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => PremiosScreen(
-                      repository: premios!,
-                      currentLanguage: currentLanguage,
-                      contadores: calendario?.contadores,
-                    ),
+                    textAlign: TextAlign.center,
                   ),
                 ),
-                icon: const Icon(Icons.military_tech_outlined),
-                label: Text(PremiosScreen.titulo.resolve(currentLanguage)),
-              ),
-            if (premios != null) ...[
-              const SizedBox(height: 8.0),
-              Text(
-                _premiosSubtitle.resolve(currentLanguage),
-                textAlign: TextAlign.center,
-                style: theme.textTheme.bodySmall
-                    ?.copyWith(color: AppTheme.textMuted),
-              ),
-              const SizedBox(height: 24.0),
-            ],
-            Card(
-              color: const Color(0xFFEBE7D5),
-              elevation: 0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12.0),
-                side: const BorderSide(color: Color(0xFFD3CEB8)),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.shield_outlined,
-                      color: AppTheme.primaryVigoBlue,
-                      size: 24,
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        _privacyNotice.resolve(currentLanguage),
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: AppTheme.textSlate,
-                          fontWeight: FontWeight.w600,
+                const SizedBox(height: 16.0),
+                _buildModuleCard(
+                  context: context,
+                  title: _juegaTitle.resolve(currentLanguage),
+                  description: _juegaSubtitle.resolve(currentLanguage),
+                  icon: Icons.school_outlined,
+                  buttonText:
+                      isGl ? 'Entrar en Modo Aula' : 'Entrar en Modo Aula',
+                  formacionKey: const ValueKey('formacion_docente'),
+                  formacionTexto: isGl
+                      ? 'Antes de entrar na aula · 2 min'
+                      : 'Antes de entrar en el aula · 2 min',
+                  onFormacion: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => FormacionScreen(
+                          perfil: PerfilFormacion.docente,
+                          language: currentLanguage,
+                        ),
+                      ),
+                    );
+                  },
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => UnidadesListScreen(
+                          repository: repository,
+                          premios: premios,
+                          calendario: calendario,
+                          audioService: audioService,
+                          initialLanguage: currentLanguage,
+                          onLanguageChanged: onLanguageChanged,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(height: 16.0),
+                _buildModuleCard(
+                  context: context,
+                  title: _academyTitle.resolve(currentLanguage),
+                  description: _academySubtitle.resolve(currentLanguage),
+                  icon: Icons.family_restroom_outlined,
+                  buttonText: isGl ? 'Entrar en Academy' : 'Entrar en Academy',
+                  formacionKey: const ValueKey('formacion_familia'),
+                  formacionTexto: isGl
+                      ? 'Antes de empezar na casa · 2 min'
+                      : 'Antes de empezar en casa · 2 min',
+                  onFormacion: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => FormacionScreen(
+                          perfil: PerfilFormacion.familia,
+                          language: currentLanguage,
+                        ),
+                      ),
+                    );
+                  },
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => BloquesListScreen(
+                          repository: repository,
+                          premios: premios,
+                          calendario: calendario,
+                          audioService: audioService,
+                          initialLanguage: currentLanguage,
+                          onLanguageChanged: onLanguageChanged,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(height: 16.0),
+                _buildModuleCard(
+                  context: context,
+                  title: _calendarioTitle.resolve(currentLanguage),
+                  description: _calendarioSubtitle.resolve(currentLanguage),
+                  icon: Icons.calendar_month_outlined,
+                  buttonText: isGl
+                      ? 'Ver Calendario Escola · Fogar'
+                      : 'Ver Calendario Escuela · Hogar',
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => CalendarioScreen(
+                          store: calendario ?? CalendarioStore(),
+                          initialLanguage: currentLanguage,
+                          onLanguageChanged: onLanguageChanged,
+                          repository: repository,
+                          audioService: audioService,
+                          premios: premios,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(height: 24.0),
+                if (premios != null)
+                  OutlinedButton.icon(
+                    onPressed: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => PremiosScreen(
+                          repository: premios!,
+                          currentLanguage: currentLanguage,
+                          contadores: calendario?.contadores,
                         ),
                       ),
                     ),
-                  ],
+                    icon: const Icon(Icons.military_tech_outlined),
+                    label: Text(PremiosScreen.titulo.resolve(currentLanguage)),
+                  ),
+                if (premios != null) ...[
+                  const SizedBox(height: 8.0),
+                  Text(
+                    _premiosSubtitle.resolve(currentLanguage),
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.bodySmall
+                        ?.copyWith(color: AppTheme.textMuted),
+                  ),
+                  const SizedBox(height: 24.0),
+                ],
+                Card(
+                  color: const Color(0xFFEBE7D5),
+                  elevation: 0,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                    side: const BorderSide(color: Color(0xFFD3CEB8)),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.shield_outlined,
+                          color: AppTheme.primaryVigoBlue,
+                          size: 24,
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(
+                            _privacyNotice.resolve(currentLanguage),
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: AppTheme.textSlate,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            ],
-          )),
+              ],
+            )),
       ),
     );
   }

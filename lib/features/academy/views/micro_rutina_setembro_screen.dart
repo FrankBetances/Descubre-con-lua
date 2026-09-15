@@ -120,189 +120,191 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
         ],
       ),
       body: PaxinaSenScroll(
-        padding: EdgeInsets.zero,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-          // Cabeceira gráfica Academy
-          AcademyHeader(
-            kicker: _kicker.resolve(_language),
-            titulo: _titulo.resolve(_language),
-            subtitulo: _subtitulo.resolve(_language),
-          ),
+          padding: EdgeInsets.zero,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Cabeceira gráfica Academy
+              AcademyHeader(
+                kicker: _kicker.resolve(_language),
+                titulo: _titulo.resolve(_language),
+                subtitulo: _subtitulo.resolve(_language),
+              ),
 
-          Padding(
-            padding: const EdgeInsets.fromLTRB(
-              AppTheme.spaceLg,
-              AppTheme.spaceXl,
-              AppTheme.spaceLg,
-              AppTheme.spaceXxl,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Nicho temporal e momento do día
-                Container(
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: AppTheme.card,
-                    borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-                    border: Border.all(color: AppTheme.border, width: 1.5),
-                  ),
-                  child: Column(
-                    children: [
-                      Row(
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppTheme.spaceLg,
+                  AppTheme.spaceXl,
+                  AppTheme.spaceLg,
+                  AppTheme.spaceXxl,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Nicho temporal e momento do día
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: AppTheme.card,
+                        borderRadius:
+                            BorderRadius.circular(AppTheme.radiusCard),
+                        border: Border.all(color: AppTheme.border, width: 1.5),
+                      ),
+                      child: Column(
                         children: [
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 10,
-                              vertical: 4,
-                            ),
-                            decoration: BoxDecoration(
-                              color: AppTheme.primaryLight,
-                              borderRadius: BorderRadius.circular(
-                                AppTheme.radiusField,
-                              ),
-                            ),
-                            child: const Row(
-                              children: [
-                                Icon(
-                                  Icons.hourglass_top_rounded,
-                                  size: 16,
-                                  color: AppTheme.primaryInk,
+                          Row(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 10,
+                                  vertical: 4,
                                 ),
-                                SizedBox(width: 4),
-                                Text(
-                                  '3-5 MINUTOS',
-                                  style: TextStyle(
-                                    fontFamily: AppTheme.fontFamily,
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w800,
-                                    color: AppTheme.primaryInk,
-                                    letterSpacing: 0.8,
+                                decoration: BoxDecoration(
+                                  color: AppTheme.primaryLight,
+                                  borderRadius: BorderRadius.circular(
+                                    AppTheme.radiusField,
                                   ),
                                 ),
-                              ],
+                                child: const Row(
+                                  children: [
+                                    Icon(
+                                      Icons.hourglass_top_rounded,
+                                      size: 16,
+                                      color: AppTheme.primaryInk,
+                                    ),
+                                    SizedBox(width: 4),
+                                    Text(
+                                      '3-5 MINUTOS',
+                                      style: TextStyle(
+                                        fontFamily: AppTheme.fontFamily,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w800,
+                                        color: AppTheme.primaryInk,
+                                        letterSpacing: 0.8,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 10,
+                                  vertical: 4,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFEFF6FF),
+                                  borderRadius: BorderRadius.circular(
+                                    AppTheme.radiusField,
+                                  ),
+                                ),
+                                child: Text(
+                                  isGl
+                                      ? 'Ao chegar da escola'
+                                      : 'Al llegar de la escuela',
+                                  style: const TextStyle(
+                                    fontFamily: AppTheme.fontFamily,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w700,
+                                    color: Color(0xFF1D4ED8),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 14),
+                          const Center(
+                            child: LaminaEscena(clave: 'abrigo', ancho: 120),
+                          ),
+                          const SizedBox(height: 10),
+                          Text(
+                            isGl
+                                ? 'A Escena Cotiá: «The Magic Coat Hook»'
+                                : 'La Escena Cotidiana: «The Magic Coat Hook»',
+                            style: const TextStyle(
+                              fontFamily: AppTheme.fontFamily,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w800,
+                              color: AppTheme.textPrimary,
                             ),
                           ),
-                          const SizedBox(width: 8),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 10,
-                              vertical: 4,
-                            ),
-                            decoration: BoxDecoration(
-                              color: const Color(0xFFEFF6FF),
-                              borderRadius: BorderRadius.circular(
-                                AppTheme.radiusField,
-                              ),
-                            ),
-                            child: Text(
-                              isGl
-                                  ? 'Ao chegar da escola'
-                                  : 'Al llegar de la escuela',
-                              style: const TextStyle(
-                                fontFamily: AppTheme.fontFamily,
-                                fontSize: 12,
-                                fontWeight: FontWeight.w700,
-                                color: Color(0xFF1D4ED8),
-                              ),
+                          const SizedBox(height: 6),
+                          Text(
+                            isGl
+                                ? 'No recibidor da casa: a crianza descalza e quita a chaqueta con calma. En vez de facer preguntas directas ou pedir traducións («Como se di abrigo?»), acompañamos o movemento con ritmo e modelado: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»'
+                                : 'En el recibidor de casa: el menor se descalza y se quita la chaqueta con calma. En lugar de hacer preguntas directas o pedir traducciones («¿Cómo se dice abrigo?»), acompañamos el movimiento con ritmo y modelado: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»',
+                            style: const TextStyle(
+                              fontFamily: AppTheme.fontFamily,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w400,
+                              color: AppTheme.textSecondary,
+                              height: 1.45,
                             ),
                           ),
                         ],
                       ),
-                      const SizedBox(height: 14),
-                      const Center(
-                        child: LaminaEscena(clave: 'abrigo', ancho: 120),
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        isGl
-                            ? 'A Escena Cotiá: «The Magic Coat Hook»'
-                            : 'La Escena Cotidiana: «The Magic Coat Hook»',
-                        style: const TextStyle(
-                          fontFamily: AppTheme.fontFamily,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w800,
-                          color: AppTheme.textPrimary,
-                        ),
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        isGl
-                            ? 'No recibidor da casa: a crianza descalza e quita a chaqueta con calma. En vez de facer preguntas directas ou pedir traducións («Como se di abrigo?»), acompañamos o movemento con ritmo e modelado: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»'
-                            : 'En el recibidor de casa: el menor se descalza y se quita la chaqueta con calma. En lugar de hacer preguntas directas o pedir traducciones («¿Cómo se dice abrigo?»), acompañamos el movimiento con ritmo y modelado: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»',
-                        style: const TextStyle(
-                          fontFamily: AppTheme.fontFamily,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w400,
-                          color: AppTheme.textSecondary,
-                          height: 1.45,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 20),
-
-                // Tarxeta interactiva de pautas Recast
-                RecastGuiaCard(language: _language),
-                const SizedBox(height: 20),
-
-                // Aliñamento Curricular e Seguridade Familiar. Sin el JSON de la
-                // cápsula delante no se pinta: los códigos no se adivinan.
-                if (widget.curriculo != null)
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFF8FAFC),
-                      borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-                      border: Border.all(color: const Color(0xFFE2E8F0)),
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
+                    const SizedBox(height: 20),
+
+                    // Tarxeta interactiva de pautas Recast
+                    RecastGuiaCard(language: _language),
+                    const SizedBox(height: 20),
+
+                    // Aliñamento Curricular e Seguridade Familiar. Sin el JSON de la
+                    // cápsula delante no se pinta: los códigos no se adivinan.
+                    if (widget.curriculo != null)
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFF8FAFC),
+                          borderRadius:
+                              BorderRadius.circular(AppTheme.radiusCard),
+                          border: Border.all(color: const Color(0xFFE2E8F0)),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Icon(
-                              Icons.school_outlined,
-                              color: AppTheme.primaryInk,
-                              size: 20,
+                            Row(
+                              children: [
+                                const Icon(
+                                  Icons.school_outlined,
+                                  color: AppTheme.primaryInk,
+                                  size: 20,
+                                ),
+                                const SizedBox(width: 8),
+                                Expanded(
+                                    child: Text(
+                                  isGl
+                                      ? 'Aliñamento Curricular (Decreto 150/2022)'
+                                      : 'Alineamiento Curricular (Decreto 150/2022)',
+                                  style: const TextStyle(
+                                    fontFamily: AppTheme.fontFamily,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w800,
+                                    color: AppTheme.primaryInk,
+                                  ),
+                                )),
+                              ],
                             ),
-                            const SizedBox(width: 8),
-                            Expanded(
-                                child: Text(
-                              isGl
-                                  ? 'Aliñamento Curricular (Decreto 150/2022)'
-                                  : 'Alineamiento Curricular (Decreto 150/2022)',
+                            const SizedBox(height: 8),
+                            Text(
+                              _lineasCurriculares(isGl),
                               style: const TextStyle(
                                 fontFamily: AppTheme.fontFamily,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w800,
-                                color: AppTheme.primaryInk,
+                                fontSize: 13.5,
+                                fontWeight: FontWeight.w500,
+                                color: AppTheme.textSecondary,
+                                height: 1.4,
                               ),
-                            )),
+                            ),
                           ],
                         ),
-                        const SizedBox(height: 8),
-                        Text(
-                          _lineasCurriculares(isGl),
-                          style: const TextStyle(
-                            fontFamily: AppTheme.fontFamily,
-                            fontSize: 13.5,
-                            fontWeight: FontWeight.w500,
-                            color: AppTheme.textSecondary,
-                            height: 1.4,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-              ],
-            ),
-          ),
-          ],
-        )),
+                      ),
+                  ],
+                ),
+              ),
+            ],
+          )),
     );
   }
 }

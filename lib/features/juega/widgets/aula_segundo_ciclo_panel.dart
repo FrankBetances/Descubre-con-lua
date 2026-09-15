@@ -357,80 +357,79 @@ class _TarxetaDeFluxo extends StatelessWidget {
       final compacto = constraints.maxHeight < 420 || escala > 1.15;
       return Container(
         key: const ValueKey('tarxeta_fluxo_2c'),
-        padding:
-            EdgeInsets.all(compacto ? AppTheme.spaceMd : AppTheme.spaceLg),
+        padding: EdgeInsets.all(compacto ? AppTheme.spaceMd : AppTheme.spaceLg),
         decoration: BoxDecoration(
           color: AppTheme.card,
           borderRadius: BorderRadius.circular(AppTheme.radiusCard),
           border: Border.all(color: AppTheme.border, width: 1.5),
         ),
         child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Text(
-            '${nomeMes.resolve(language)} · ${asamblea.nivel.etiquetaCorta.resolve(language)}',
-            style: const TextStyle(
-              fontFamily: AppTheme.fontFamily,
-              fontSize: 12,
-              fontWeight: FontWeight.w800,
-              color: AppTheme.primaryInk,
-              letterSpacing: 0.8,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              '${nomeMes.resolve(language)} · ${asamblea.nivel.etiquetaCorta.resolve(language)}',
+              style: const TextStyle(
+                fontFamily: AppTheme.fontFamily,
+                fontSize: 12,
+                fontWeight: FontWeight.w800,
+                color: AppTheme.primaryInk,
+                letterSpacing: 0.8,
+              ),
             ),
-          ),
-          const SizedBox(height: AppTheme.spaceXs),
-          Text(
-            asamblea.centroInteres.resolve(language),
-            maxLines: compacto ? 1 : 2,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              fontFamily: AppTheme.fontFamily,
-              fontSize: compacto ? 16 : 19,
-              fontWeight: FontWeight.w800,
-              color: AppTheme.textPrimary,
-              height: 1.2,
+            const SizedBox(height: AppTheme.spaceXs),
+            Text(
+              asamblea.centroInteres.resolve(language),
+              maxLines: compacto ? 1 : 2,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontFamily: AppTheme.fontFamily,
+                fontSize: compacto ? 16 : 19,
+                fontWeight: FontWeight.w800,
+                color: AppTheme.textPrimary,
+                height: 1.2,
+              ),
             ),
-          ),
-          SizedBox(height: compacto ? AppTheme.spaceSm : AppTheme.spaceMd),
-          // Las cuatro fases. Sin desplazable: son cuatro y caben.
-          Expanded(
-            child: BloqueDeFases(
-              isGl: isGl,
-              minutosTotais: asamblea.duracionTotalMinutos,
-              fases: [
-                for (final fase in asamblea.fases)
-                  (
-                    orden: fase.orden,
-                    titulo: fase.titulo.resolve(language),
-                    minutos: (fase.duracionSegundos / 60).round(),
+            SizedBox(height: compacto ? AppTheme.spaceSm : AppTheme.spaceMd),
+            // Las cuatro fases. Sin desplazable: son cuatro y caben.
+            Expanded(
+              child: BloqueDeFases(
+                isGl: isGl,
+                minutosTotais: asamblea.duracionTotalMinutos,
+                fases: [
+                  for (final fase in asamblea.fases)
+                    (
+                      orden: fase.orden,
+                      titulo: fase.titulo.resolve(language),
+                      minutos: (fase.duracionSegundos / 60).round(),
+                    ),
+                ],
+              ),
+            ),
+            SizedBox(height: compacto ? AppTheme.spaceSm : AppTheme.spaceMd),
+            SizedBox(
+              height: compacto ? AppTheme.touchMin : 52,
+              child: ElevatedButton.icon(
+                key: const ValueKey('comezar_asemblea_2c'),
+                onPressed: onComezar,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppTheme.primaryInk,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(AppTheme.radiusButton),
                   ),
-              ],
-            ),
-          ),
-          SizedBox(height: compacto ? AppTheme.spaceSm : AppTheme.spaceMd),
-          SizedBox(
-            height: compacto ? AppTheme.touchMin : 52,
-            child: ElevatedButton.icon(
-              key: const ValueKey('comezar_asemblea_2c'),
-              onPressed: onComezar,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.primaryInk,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(AppTheme.radiusButton),
                 ),
-              ),
-              icon: const Icon(Icons.play_circle_filled_rounded),
-              label: Text(
-                isGl ? 'Comezar a asemblea' : 'Comenzar la asamblea',
-                style: const TextStyle(
-                  fontFamily: AppTheme.fontFamily,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w800,
+                icon: const Icon(Icons.play_circle_filled_rounded),
+                label: Text(
+                  isGl ? 'Comezar a asemblea' : 'Comenzar la asamblea',
+                  style: const TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
         ),
       );
     });

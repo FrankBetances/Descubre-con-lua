@@ -4,7 +4,8 @@ import '../../../core/audio/fade_audio_coordinator.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../data/models/asamblea_segundo_ciclo_model.dart' show FaseAsamblea;
+import '../../../data/models/asamblea_segundo_ciclo_model.dart'
+    show FaseAsamblea;
 
 /// El reproductor de la asamblea, el mismo para los dos ciclos.
 ///
@@ -615,8 +616,7 @@ class _BarraInferior extends StatelessWidget {
                 onPressed: indice > 0 ? onAnterior : null,
                 style: OutlinedButton.styleFrom(
                   foregroundColor: _AsambleaPlayerScreenState._textoPrincipal,
-                  disabledForegroundColor:
-                      _AsambleaPlayerScreenState._borde,
+                  disabledForegroundColor: _AsambleaPlayerScreenState._borde,
                   side: const BorderSide(
                       color: _AsambleaPlayerScreenState._borde),
                   shape: RoundedRectangleBorder(

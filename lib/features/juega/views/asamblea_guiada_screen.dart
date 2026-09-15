@@ -440,48 +440,48 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
             // Main Phase Content View
             Expanded(
               child: PaxinaSenScroll(
-              // Esta es la asamblea VIEJA de seis pasos del 1.º ciclo, la que
-              // venía del encargo original. No está en los documentos
-              // curriculares de Frank, que piden CUATRO fases, y su contenido
-              // no cabe ni encogido al 80 %. Hasta que se retire en favor del
-              // reproductor nuevo, se deja desplazar antes que recortar texto.
-              desprazarSeNonCabe: true,
-                padding: const EdgeInsets.all(20.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                  _buildContenidoDelPaso(),
-                  const SizedBox(height: AppTheme.spaceLg),
-                  // Ni un ExpansionTile ni un acordeón por bloque: un solo
-                  // interruptor para toda la fase. Con el grupo delante no se
-                  // decide bloque a bloque qué se despliega, se decide una vez.
-                  Center(
-                    child: TextButton.icon(
-                      key: const Key('boton_ficha_completa'),
-                      onPressed: () =>
-                          setState(() => _modoAsamblea = !_modoAsamblea),
-                      icon: Icon(_modoAsamblea
-                          ? Icons.unfold_more_rounded
-                          : Icons.unfold_less_rounded),
-                      label: Text(
-                        _modoAsamblea
-                            ? (isGl
-                                ? 'Ver a ficha completa'
-                                : 'Ver la ficha completa')
-                            : (isGl
-                                ? 'Volver ao modo asemblea'
-                                : 'Volver al modo asamblea'),
-                        maxLines: 2,
-                        textAlign: TextAlign.center,
+                  // Esta es la asamblea VIEJA de seis pasos del 1.º ciclo, la que
+                  // venía del encargo original. No está en los documentos
+                  // curriculares de Frank, que piden CUATRO fases, y su contenido
+                  // no cabe ni encogido al 80 %. Hasta que se retire en favor del
+                  // reproductor nuevo, se deja desplazar antes que recortar texto.
+                  desprazarSeNonCabe: true,
+                  padding: const EdgeInsets.all(20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      _buildContenidoDelPaso(),
+                      const SizedBox(height: AppTheme.spaceLg),
+                      // Ni un ExpansionTile ni un acordeón por bloque: un solo
+                      // interruptor para toda la fase. Con el grupo delante no se
+                      // decide bloque a bloque qué se despliega, se decide una vez.
+                      Center(
+                        child: TextButton.icon(
+                          key: const Key('boton_ficha_completa'),
+                          onPressed: () =>
+                              setState(() => _modoAsamblea = !_modoAsamblea),
+                          icon: Icon(_modoAsamblea
+                              ? Icons.unfold_more_rounded
+                              : Icons.unfold_less_rounded),
+                          label: Text(
+                            _modoAsamblea
+                                ? (isGl
+                                    ? 'Ver a ficha completa'
+                                    : 'Ver la ficha completa')
+                                : (isGl
+                                    ? 'Volver ao modo asemblea'
+                                    : 'Volver al modo asamblea'),
+                            maxLines: 2,
+                            textAlign: TextAlign.center,
+                          ),
+                          style: TextButton.styleFrom(
+                            minimumSize: const Size(0, AppTheme.touchMin),
+                          ),
+                        ),
                       ),
-                      style: TextButton.styleFrom(
-                        minimumSize: const Size(0, AppTheme.touchMin),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 32.0),
-                  ],
-                )),
+                      const SizedBox(height: 32.0),
+                    ],
+                  )),
             ),
 
             // El inglés de la fase, ANCLADO encima de la navegación.

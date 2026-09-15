@@ -84,123 +84,124 @@ class NotaParaCasasScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: PaxinaSenScroll(
-          padding: const EdgeInsets.all(AppTheme.spaceLg),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-            // Lúa encabeza la nota porque la nota HABLA de ella: el mensaje
-            // para las familias de cada unidad la nombra («hoxe navegamos coa
-            // gata Lúa»), y hasta ahora la familia oía el nombre en la puerta
-            // sin haberle visto la cara nunca. Es el único sitio donde la
-            // gata cruza del aula a la casa, que es de lo que va esta pantalla.
-            //
-            // Cuadrado de lado fijo y centrado, sin nada al lado: no puede
-            // desbordar a lo ancho por mucho que crezca la escala de texto.
-            const Center(child: LuaPixel(pose: LuaPose.sit, size: 88)),
-            const SizedBox(height: AppTheme.spaceMd),
-            Text(
-              _comoUsala.resolve(language),
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: AppTheme.textMuted,
-              ),
-            ),
-            const SizedBox(height: AppTheme.spaceLg),
-            _Bloque(
-              kicker: _queDicimos.resolve(language),
-              child: Text(
-                unidad.titulo.resolve(language),
-                style: theme.textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: AppTheme.textPrimary,
+            padding: const EdgeInsets.all(AppTheme.spaceLg),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                // Lúa encabeza la nota porque la nota HABLA de ella: el mensaje
+                // para las familias de cada unidad la nombra («hoxe navegamos coa
+                // gata Lúa»), y hasta ahora la familia oía el nombre en la puerta
+                // sin haberle visto la cara nunca. Es el único sitio donde la
+                // gata cruza del aula a la casa, que es de lo que va esta pantalla.
+                //
+                // Cuadrado de lado fijo y centrado, sin nada al lado: no puede
+                // desbordar a lo ancho por mucho que crezca la escala de texto.
+                const Center(child: LuaPixel(pose: LuaPose.sit, size: 88)),
+                const SizedBox(height: AppTheme.spaceMd),
+                Text(
+                  _comoUsala.resolve(language),
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: AppTheme.textMuted,
+                  ),
                 ),
-              ),
-            ),
-            const SizedBox(height: AppTheme.spaceMd),
-            _Bloque(
-              kicker: _paraCasa.resolve(language),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    ponte.mensajeFamilias.resolve(language),
-                    style: theme.textTheme.bodyLarge?.copyWith(
+                const SizedBox(height: AppTheme.spaceLg),
+                _Bloque(
+                  kicker: _queDicimos.resolve(language),
+                  child: Text(
+                    unidad.titulo.resolve(language),
+                    style: theme.textTheme.titleLarge?.copyWith(
+                      fontWeight: FontWeight.bold,
                       color: AppTheme.textPrimary,
-                      height: 1.45,
                     ),
                   ),
-                  if (ponte.actividadesSugeridas.isNotEmpty) ...[
-                    const SizedBox(height: AppTheme.spaceMd),
-                    for (final actividad in ponte.actividadesSugeridas)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 8),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text('· ',
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold)),
-                            Expanded(
-                              child: Text(
-                                actividad.resolve(language),
-                                style: theme.textTheme.bodyMedium?.copyWith(
-                                  color: AppTheme.textSecondary,
-                                  height: 1.4,
-                                ),
-                              ),
-                            ),
-                          ],
+                ),
+                const SizedBox(height: AppTheme.spaceMd),
+                _Bloque(
+                  kicker: _paraCasa.resolve(language),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        ponte.mensajeFamilias.resolve(language),
+                        style: theme.textTheme.bodyLarge?.copyWith(
+                          color: AppTheme.textPrimary,
+                          height: 1.45,
                         ),
                       ),
-                  ],
-                ],
-              ),
-            ),
-            if (frase.isNotEmpty) ...[
-              const SizedBox(height: AppTheme.spaceMd),
-              _Bloque(
-                kicker: _laFrase.resolve(language),
-                acento: BarraInglesFase.acento,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Grande, porque esta es la línea que se copia en la
-                    // libreta y la que la familia va a decir esta noche.
-                    Text(
-                      frase,
-                      style: theme.textTheme.titleLarge?.copyWith(
-                        fontWeight: FontWeight.bold,
-                        color: BarraInglesFase.acento,
-                        height: 1.35,
-                      ),
-                    ),
-                    const SizedBox(height: AppTheme.spaceMd),
-                    BotonEscuchar(
-                      audioService: audioService,
-                      texto: frase,
-                      language: AppLanguage.en,
-                      style: estiloIngles(frase),
-                      comoChip: true,
-                      colorChip: BarraInglesFase.acento,
-                    ),
-                  ],
+                      if (ponte.actividadesSugeridas.isNotEmpty) ...[
+                        const SizedBox(height: AppTheme.spaceMd),
+                        for (final actividad in ponte.actividadesSugeridas)
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 8),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text('· ',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold)),
+                                Expanded(
+                                  child: Text(
+                                    actividad.resolve(language),
+                                    style: theme.textTheme.bodyMedium?.copyWith(
+                                      color: AppTheme.textSecondary,
+                                      height: 1.4,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                      ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
-            const SizedBox(height: AppTheme.spaceXl),
-            ElevatedButton.icon(
-              key: const Key('boton_cerrar_nota'),
-              onPressed: () => Navigator.of(context).pop(),
-              icon: const Icon(Icons.check),
-              label: Text(_cerrar.resolve(language)),
-              style: ElevatedButton.styleFrom(
-                minimumSize: const Size.fromHeight(AppTheme.touchMin),
-                backgroundColor: AppTheme.primaryVigoBlue,
-                foregroundColor: Colors.white,
-              ),
-            ),
-            const SizedBox(height: AppTheme.spaceXl),
-            ],
-          )),
+                if (frase.isNotEmpty) ...[
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _Bloque(
+                    kicker: _laFrase.resolve(language),
+                    acento: BarraInglesFase.acento,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // Grande, porque esta es la línea que se copia en la
+                        // libreta y la que la familia va a decir esta noche.
+                        Text(
+                          frase,
+                          style: theme.textTheme.titleLarge?.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: BarraInglesFase.acento,
+                            height: 1.35,
+                          ),
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
+                        BotonEscuchar(
+                          audioService: audioService,
+                          texto: frase,
+                          language: AppLanguage.en,
+                          style: estiloIngles(frase),
+                          comoChip: true,
+                          colorChip: BarraInglesFase.acento,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+                const SizedBox(height: AppTheme.spaceXl),
+                ElevatedButton.icon(
+                  key: const Key('boton_cerrar_nota'),
+                  onPressed: () => Navigator.of(context).pop(),
+                  icon: const Icon(Icons.check),
+                  label: Text(_cerrar.resolve(language)),
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: const Size.fromHeight(AppTheme.touchMin),
+                    backgroundColor: AppTheme.primaryVigoBlue,
+                    foregroundColor: Colors.white,
+                  ),
+                ),
+                const SizedBox(height: AppTheme.spaceXl),
+              ],
+            )),
       ),
     );
   }

@@ -675,8 +675,10 @@ void main() {
       // curricular —«sin navegación por capas ni deslizamientos profundos»—
       // convertida en gate.
       void nonHaiVerticais() {
-        for (final w in tester.widgetList<Scrollable>(find.byType(Scrollable))) {
-          expect(w.axisDirection, anyOf(AxisDirection.right, AxisDirection.left),
+        for (final w
+            in tester.widgetList<Scrollable>(find.byType(Scrollable))) {
+          expect(
+              w.axisDirection, anyOf(AxisDirection.right, AxisDirection.left),
               reason: 'Apareceu un desprazable vertical no aula');
         }
       }

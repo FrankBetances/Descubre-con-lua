@@ -115,7 +115,8 @@ class AsambleaPrimeiroCiclo {
       cancionDoMes: (json['cancionDoMes'] as String?) ?? '',
       fases: List.unmodifiable(fases),
       revision: json['revision'] is Map
-          ? Revision.fromJson(Map<String, dynamic>.from(json['revision'] as Map))
+          ? Revision.fromJson(
+              Map<String, dynamic>.from(json['revision'] as Map))
           : const Revision(
               autor: '',
               revisorPedagogico: '',

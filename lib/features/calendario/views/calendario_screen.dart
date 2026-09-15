@@ -389,7 +389,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                         maxHeight: restricciones.maxHeight * 0.55,
                       ),
                       child: PaxinaSenScroll(
-                    desprazarSeNonCabe: true,
+                        desprazarSeNonCabe: true,
                         padding: const EdgeInsets.fromLTRB(
                           AppTheme.spaceLg,
                           AppTheme.spaceLg,

@@ -157,168 +157,171 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
       body: SafeArea(
         top: false,
         child: PaxinaSenScroll(
-          padding: EdgeInsets.zero,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-            AcademyHeader(
-              kicker: _kicker.resolve(lang),
-              titulo: _titulo.resolve(lang),
-              subtitulo: _subtitulo.resolve(lang),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppTheme.spaceLg,
-                AppTheme.spaceXl,
-                AppTheme.spaceLg,
-                AppTheme.spaceXxl,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // La tira de juego de la familia, justo debajo de la cabecera:
-                  // la gata, el nivel por cápsulas leídas y la racha.
-                  if (widget.premios != null) ...[
-                    LuaGameStrip(
-                      repository: widget.premios!,
-                      perfil: Perfil.familia,
-                      language: lang,
-                      contadores: widget.calendario?.contadores,
-                    ),
-                    const SizedBox(height: AppTheme.spaceXl),
-                  ],
-                  // Acceso destacado a la Guía de Atención y al Calendario
-                  AcademyCard(
-                    icono: Icons.record_voice_over_outlined,
-                    kicker: lang == AppLanguage.gl
-                        ? 'O INGLÉS NA CASA'
-                        : 'EL INGLÉS EN CASA',
-                    titulo: lang == AppLanguage.gl
-                        ? 'Guía de inglés na casa'
-                        : 'Guía de inglés en casa',
-                    descripcion: lang == AppLanguage.gl
-                        ? 'Canto dura o xogo segundo a idade, tres regras para a casa e a pronuncia de cada frase.'
-                        : 'Cuánto dura el juego según la edad, tres reglas para casa y la pronunciación de cada frase.',
-                    meta: lang == AppLanguage.gl
-                        ? 'Guía interactiva'
-                        : 'Guía interactiva',
-                    onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => GuiaAtencionScreen(
-                          initialLanguage: _language,
-                          onLanguageChanged: _onToggleLanguage,
-                          audioService: widget.audioService,
+            padding: EdgeInsets.zero,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                AcademyHeader(
+                  kicker: _kicker.resolve(lang),
+                  titulo: _titulo.resolve(lang),
+                  subtitulo: _subtitulo.resolve(lang),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(
+                    AppTheme.spaceLg,
+                    AppTheme.spaceXl,
+                    AppTheme.spaceLg,
+                    AppTheme.spaceXxl,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // La tira de juego de la familia, justo debajo de la cabecera:
+                      // la gata, el nivel por cápsulas leídas y la racha.
+                      if (widget.premios != null) ...[
+                        LuaGameStrip(
+                          repository: widget.premios!,
+                          perfil: Perfil.familia,
+                          language: lang,
+                          contadores: widget.calendario?.contadores,
+                        ),
+                        const SizedBox(height: AppTheme.spaceXl),
+                      ],
+                      // Acceso destacado a la Guía de Atención y al Calendario
+                      AcademyCard(
+                        icono: Icons.record_voice_over_outlined,
+                        kicker: lang == AppLanguage.gl
+                            ? 'O INGLÉS NA CASA'
+                            : 'EL INGLÉS EN CASA',
+                        titulo: lang == AppLanguage.gl
+                            ? 'Guía de inglés na casa'
+                            : 'Guía de inglés en casa',
+                        descripcion: lang == AppLanguage.gl
+                            ? 'Canto dura o xogo segundo a idade, tres regras para a casa e a pronuncia de cada frase.'
+                            : 'Cuánto dura el juego según la edad, tres reglas para casa y la pronunciación de cada frase.',
+                        meta: lang == AppLanguage.gl
+                            ? 'Guía interactiva'
+                            : 'Guía interactiva',
+                        onTap: () => Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => GuiaAtencionScreen(
+                              initialLanguage: _language,
+                              onLanguageChanged: _onToggleLanguage,
+                              audioService: widget.audioService,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                  const SizedBox(height: AppTheme.spaceMd),
-                  // El calendario, DENTRO de Academy. Era una tarjeta que
-                  // llevaba a otra pantalla; una tarjeta que lleva al
-                  // calendario no es el calendario. La familia ve aquí el mes
-                  // que la escuela está trabajando, sin salir de su sitio.
-                  CalendarioDoCurso(
-                    lang: _language,
-                    esDocente: false,
-                    store: widget.calendario,
-                    contenido: widget.calendarioContenido,
-                    padding: EdgeInsets.zero,
-                    onAbrirMes: (contenido, mesIndex) =>
-                        Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => CalendarioScreen(
-                          store: widget.calendario ?? CalendarioStore(),
-                          contenido: contenido,
-                          mesInicialIndex: mesIndex,
-                          initialLanguage: _language,
-                          onLanguageChanged: _onToggleLanguage,
-                          esDocenteInicial: false,
-                          repository: widget.repository,
-                          audioService: widget.audioService,
-                          premios: widget.premios,
+                      const SizedBox(height: AppTheme.spaceMd),
+                      // El calendario, DENTRO de Academy. Era una tarjeta que
+                      // llevaba a otra pantalla; una tarjeta que lleva al
+                      // calendario no es el calendario. La familia ve aquí el mes
+                      // que la escuela está trabajando, sin salir de su sitio.
+                      CalendarioDoCurso(
+                        lang: _language,
+                        esDocente: false,
+                        store: widget.calendario,
+                        contenido: widget.calendarioContenido,
+                        padding: EdgeInsets.zero,
+                        onAbrirMes: (contenido, mesIndex) =>
+                            Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => CalendarioScreen(
+                              store: widget.calendario ?? CalendarioStore(),
+                              contenido: contenido,
+                              mesInicialIndex: mesIndex,
+                              initialLanguage: _language,
+                              onLanguageChanged: _onToggleLanguage,
+                              esDocenteInicial: false,
+                              repository: widget.repository,
+                              audioService: widget.audioService,
+                              premios: widget.premios,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                  const SizedBox(height: AppTheme.spaceMd),
-                  AcademyCard(
-                    icono: Icons.home_work_outlined,
-                    kicker: lang == AppLanguage.gl
-                        ? 'SEGUNDO CICLO (3-6 ANOS) · NOVO'
-                        : 'SEGUNDO CICLO (3-6 AÑOS) · NUEVO',
-                    titulo: lang == AppLanguage.gl
-                        ? 'Micro-rutina de setembro: responder sen corrixir'
-                        : 'Micro-rutina de septiembre: responder sin corregir',
-                    descripcion: lang == AppLanguage.gl
-                        ? 'Principio de Tempo e Lugar (3-5 min) e guía comparativa entre devolver a frase ben dita e corrixir de fronte.'
-                        : 'Principio de Tiempo y Lugar (3-5 min) y guía comparativa entre devolver la frase bien dicha y corregir de frente.',
-                    meta: lang == AppLanguage.gl
-                        ? 'Micro-rutina · Fogar'
-                        : 'Micro-rutina · Hogar',
-                    onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => MicroRutinaSetembroScreen(
-                          initialLanguage: _language,
-                          onLanguageChanged: _onToggleLanguage,
-                          curriculo: widget.repository
-                              .getCapsulaById(
-                                  'academy.segundo_ciclo.setembro.01')
-                              ?.curriculo,
+                      const SizedBox(height: AppTheme.spaceMd),
+                      AcademyCard(
+                        icono: Icons.home_work_outlined,
+                        kicker: lang == AppLanguage.gl
+                            ? 'SEGUNDO CICLO (3-6 ANOS) · NOVO'
+                            : 'SEGUNDO CICLO (3-6 AÑOS) · NUEVO',
+                        titulo: lang == AppLanguage.gl
+                            ? 'Micro-rutina de setembro: responder sen corrixir'
+                            : 'Micro-rutina de septiembre: responder sin corregir',
+                        descripcion: lang == AppLanguage.gl
+                            ? 'Principio de Tempo e Lugar (3-5 min) e guía comparativa entre devolver a frase ben dita e corrixir de fronte.'
+                            : 'Principio de Tiempo y Lugar (3-5 min) y guía comparativa entre devolver la frase bien dicha y corregir de frente.',
+                        meta: lang == AppLanguage.gl
+                            ? 'Micro-rutina · Fogar'
+                            : 'Micro-rutina · Hogar',
+                        onTap: () => Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => MicroRutinaSetembroScreen(
+                              initialLanguage: _language,
+                              onLanguageChanged: _onToggleLanguage,
+                              curriculo: widget.repository
+                                  .getCapsulaById(
+                                      'academy.segundo_ciclo.setembro.01')
+                                  ?.curriculo,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                  const SizedBox(height: AppTheme.spaceXl),
-                  Text(
-                    _disponibles.resolve(lang),
-                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: AppTheme.textSecondary,
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: 1.4,
-                        ),
-                  ),
-                  const SizedBox(height: AppTheme.spaceMd),
-                  ...bloques.map((bloque) {
-                    final capsulas =
-                        widget.repository.getCapsulasByBloqueId(bloque.id);
-                    final primera = capsulas.isNotEmpty ? capsulas.first : null;
-                    final minutos = primera?.tiempoLecturaMinutos;
+                      const SizedBox(height: AppTheme.spaceXl),
+                      Text(
+                        _disponibles.resolve(lang),
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                              color: AppTheme.textSecondary,
+                              fontWeight: FontWeight.w800,
+                              letterSpacing: 1.4,
+                            ),
+                      ),
+                      const SizedBox(height: AppTheme.spaceMd),
+                      ...bloques.map((bloque) {
+                        final capsulas =
+                            widget.repository.getCapsulasByBloqueId(bloque.id);
+                        final primera =
+                            capsulas.isNotEmpty ? capsulas.first : null;
+                        final minutos = primera?.tiempoLecturaMinutos;
 
-                    return Padding(
-                      padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
-                      child: AcademyCard(
-                        icono: _iconForBloque(bloque.icono),
-                        kicker: 'Bloque ${bloque.orden}',
-                        titulo: bloque.titulo.resolve(lang),
-                        descripcion: bloque.descripcion.resolve(lang),
-                        meta: capsulas.isEmpty
-                            ? _sinCapsulas.resolve(lang)
-                            : [
-                                '${capsulas.length} '
-                                    '${capsulas.length == 1 ? _unaCapsula.resolve(lang) : _variasCapsulas.resolve(lang)}',
-                                if (minutos != null) '$minutos min'
-                              ].join(' · '),
-                        onTap: primera == null
-                            ? null
-                            : () => Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                    builder: (context) => CapsulaDetailScreen(
-                                      capsula: primera,
-                                      initialLanguage: _language,
-                                      onLanguageChanged: _onToggleLanguage,
-                                      premios: widget.premios,
-                                      audioService: widget.audioService,
+                        return Padding(
+                          padding:
+                              const EdgeInsets.only(bottom: AppTheme.spaceMd),
+                          child: AcademyCard(
+                            icono: _iconForBloque(bloque.icono),
+                            kicker: 'Bloque ${bloque.orden}',
+                            titulo: bloque.titulo.resolve(lang),
+                            descripcion: bloque.descripcion.resolve(lang),
+                            meta: capsulas.isEmpty
+                                ? _sinCapsulas.resolve(lang)
+                                : [
+                                    '${capsulas.length} '
+                                        '${capsulas.length == 1 ? _unaCapsula.resolve(lang) : _variasCapsulas.resolve(lang)}',
+                                    if (minutos != null) '$minutos min'
+                                  ].join(' · '),
+                            onTap: primera == null
+                                ? null
+                                : () => Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            CapsulaDetailScreen(
+                                          capsula: primera,
+                                          initialLanguage: _language,
+                                          onLanguageChanged: _onToggleLanguage,
+                                          premios: widget.premios,
+                                          audioService: widget.audioService,
+                                        ),
+                                      ),
                                     ),
-                                  ),
-                                ),
-                      ),
-                    );
-                  }),
-                ],
-              ),
-            ),
-            ],
-          )),
+                          ),
+                        );
+                      }),
+                    ],
+                  ),
+                ),
+              ],
+            )),
       ),
     );
   }

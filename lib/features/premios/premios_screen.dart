@@ -143,75 +143,77 @@ class _PremiosScreenState extends State<PremiosScreen> {
                 .length;
 
             return PaxinaSenScroll(
-              padding: const EdgeInsets.fromLTRB(
-                AppTheme.spaceLg,
-                AppTheme.spaceLg,
-                AppTheme.spaceLg,
-                AppTheme.spaceXxl,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                _SelectorPerfil(
-                  perfil: _perfil,
-                  docente: _docente.resolve(lang),
-                  familia: _familia.resolve(lang),
-                  onChanged: (p) => setState(() => _perfil = p),
+                padding: const EdgeInsets.fromLTRB(
+                  AppTheme.spaceLg,
+                  AppTheme.spaceLg,
+                  AppTheme.spaceLg,
+                  AppTheme.spaceXxl,
                 ),
-                const SizedBox(height: AppTheme.spaceLg),
-                _Cabecera(
-                  progreso: progreso,
-                  catalogo: catalogo,
-                  lang: lang,
-                  paraSiguiente: _paraSiguiente.resolve(lang),
-                  nivelMaximo: _nivelMaximo.resolve(lang),
-                ),
-                const SizedBox(height: AppTheme.spaceLg),
-                _Cifras(
-                  racha: progreso.rachaActual,
-                  rachaLabel: _racha.resolve(lang),
-                  xp: progreso.xp(catalogo),
-                  xpLabel: _xpTotal.resolve(lang),
-                ),
-                const SizedBox(height: AppTheme.spaceXl),
-                Text(
-                  '${_insignias.resolve(lang)} · $ganadas / ${insignias.length}',
-                  style: text.titleSmall,
-                ),
-                const SizedBox(height: AppTheme.spaceMd),
-                if (progreso.eventos == 0)
-                  _Aviso(
-                    texto: _perfil == Perfil.docente
-                        ? _vacioDocente.resolve(lang)
-                        : _vacioFamilia.resolve(lang),
-                  ),
-                ...insignias.map(
-                  (i) => Padding(
-                    padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
-                    child: _TarjetaInsignia(
-                      insignia: i,
-                      ganada: progreso.insignias.contains(i.id),
-                      lang: lang,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    _SelectorPerfil(
+                      perfil: _perfil,
+                      docente: _docente.resolve(lang),
+                      familia: _familia.resolve(lang),
+                      onChanged: (p) => setState(() => _perfil = p),
                     ),
-                  ),
-                ),
-                if (widget.contadores != null &&
-                    catalogo.medallasDe(_perfil).isNotEmpty) ...[
-                  const SizedBox(height: AppTheme.spaceXl),
-                  MedallasCalendario(
-                    medallas: catalogo.medallasDe(_perfil),
-                    contadores: widget.contadores!,
-                    lang: lang,
-                    titulo: _medallas.resolve(lang),
-                  ),
-                ],
-                const SizedBox(height: AppTheme.spaceMd),
-                Text(
-                  _nota.resolve(lang),
-                  style: text.bodySmall?.copyWith(color: AppTheme.textMuted),
-                ),
-                ],
-              ));
+                    const SizedBox(height: AppTheme.spaceLg),
+                    _Cabecera(
+                      progreso: progreso,
+                      catalogo: catalogo,
+                      lang: lang,
+                      paraSiguiente: _paraSiguiente.resolve(lang),
+                      nivelMaximo: _nivelMaximo.resolve(lang),
+                    ),
+                    const SizedBox(height: AppTheme.spaceLg),
+                    _Cifras(
+                      racha: progreso.rachaActual,
+                      rachaLabel: _racha.resolve(lang),
+                      xp: progreso.xp(catalogo),
+                      xpLabel: _xpTotal.resolve(lang),
+                    ),
+                    const SizedBox(height: AppTheme.spaceXl),
+                    Text(
+                      '${_insignias.resolve(lang)} · $ganadas / ${insignias.length}',
+                      style: text.titleSmall,
+                    ),
+                    const SizedBox(height: AppTheme.spaceMd),
+                    if (progreso.eventos == 0)
+                      _Aviso(
+                        texto: _perfil == Perfil.docente
+                            ? _vacioDocente.resolve(lang)
+                            : _vacioFamilia.resolve(lang),
+                      ),
+                    ...insignias.map(
+                      (i) => Padding(
+                        padding:
+                            const EdgeInsets.only(bottom: AppTheme.spaceMd),
+                        child: _TarjetaInsignia(
+                          insignia: i,
+                          ganada: progreso.insignias.contains(i.id),
+                          lang: lang,
+                        ),
+                      ),
+                    ),
+                    if (widget.contadores != null &&
+                        catalogo.medallasDe(_perfil).isNotEmpty) ...[
+                      const SizedBox(height: AppTheme.spaceXl),
+                      MedallasCalendario(
+                        medallas: catalogo.medallasDe(_perfil),
+                        contadores: widget.contadores!,
+                        lang: lang,
+                        titulo: _medallas.resolve(lang),
+                      ),
+                    ],
+                    const SizedBox(height: AppTheme.spaceMd),
+                    Text(
+                      _nota.resolve(lang),
+                      style:
+                          text.bodySmall?.copyWith(color: AppTheme.textMuted),
+                    ),
+                  ],
+                ));
           },
         ),
       ),

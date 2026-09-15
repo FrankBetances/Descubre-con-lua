@@ -384,8 +384,8 @@ void main() {
 
       final tramo02 = textoDaTarxeta();
 
-      await tester.tap(find.byKey(
-          ValueKey('tramo_1c_${TramoPrimeiroCiclo.deambulantes2a3}')));
+      await tester.tap(find
+          .byKey(ValueKey('tramo_1c_${TramoPrimeiroCiclo.deambulantes2a3}')));
       await tester.pumpAndSettle();
       final tramo23 = textoDaTarxeta();
 
@@ -393,8 +393,8 @@ void main() {
           reason: 'Os dous tramos ensinan exactamente o mesmo');
 
       // E volver atrás recupera o primeiro, sen quedar pegado.
-      await tester.tap(find.byKey(
-          ValueKey('tramo_1c_${TramoPrimeiroCiclo.lactantes0a2}')));
+      await tester.tap(
+          find.byKey(ValueKey('tramo_1c_${TramoPrimeiroCiclo.lactantes0a2}')));
       await tester.pumpAndSettle();
       expect(textoDaTarxeta(), equals(tramo02));
     });

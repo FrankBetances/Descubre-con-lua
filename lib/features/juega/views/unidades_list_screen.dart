@@ -303,5 +303,4 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       },
     );
   }
-
 }

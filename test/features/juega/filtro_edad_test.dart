@@ -46,9 +46,7 @@ void main() {
 
   for (final lang in AppLanguage.deInterfaz) {
     for (final escala in [1.0, 1.3]) {
-      testWidgets(
-why(lang, escala),
-          (tester) async {
+      testWidgets(why(lang, escala), (tester) async {
         tester.view.physicalSize = const Size(360, 640);
         tester.view.devicePixelRatio = 1.0;
         addTearDown(tester.view.reset);
@@ -132,8 +130,8 @@ why(lang, escala),
         .map((t) => t.data)
         .join('|');
 
-    await tester.tap(find.byKey(
-        ValueKey('tramo_1c_${TramoPrimeiroCiclo.deambulantes2a3}')));
+    await tester.tap(
+        find.byKey(ValueKey('tramo_1c_${TramoPrimeiroCiclo.deambulantes2a3}')));
     await tester.pumpAndSettle();
 
     final despois = tester
