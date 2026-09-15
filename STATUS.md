@@ -9,6 +9,51 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## El calendario, DENTRO de los tres modos · **en la rama `claude/analizar-rama-mejora-g5yh9z`** (15/9/2026)
+
+Frank, cuatro veces: «el calendario de aula no está». Tenía razón las cuatro.
+En Modo Aula, en el 2.º ciclo y en Academy había **un botón** que saltaba a otra
+pantalla. Un botón que lleva al calendario no es el calendario.
+
+**Por qué no se vio antes**: se rehízo `calendario_screen.dart` —la pantalla
+suelta— cuatro entregas seguidas, con 379 tests, 14 gates y dos runs de CI en
+verde, sin haber abierto la app ni una vez. Una golden enseña la pantalla que se
+eligió construir; si se eligió la equivocada, la confirma en verde. Está
+registrado como **regla 1d de `CLAUDE.md`**, con los comandos para arrancar la
+app aquí.
+
+| Capa | Qué se hizo | Con qué se comprobó |
+| --- | --- | --- |
+| `calendario_do_curso.dart` (nuevo) | La sección del calendario como UNA pieza: tarjeta por mes, se pasa de lado, la siguiente asoma, al tocarla se abre el calendario por ESE mes | App ejecutada en escritorio Linux; capturas de los tres modos, **miradas** |
+| Modo Aula · 1.º ciclo | Fuera el botón azul. La sección va como primera fila de la lista de unidades | `tiro-31-aula.png`, **mirada** |
+| Modo Aula · 2.º ciclo | Fuera el salto. La sección abre la lista | `tiro-33-2ciclo.png`, **mirada** |
+| Academy · Familias | Fuera la `AcademyCard` que saltaba. La sección va en su sitio, con el lado familia | `tiro-34-academy.png`, **mirada** |
+| `CalendarioScreen` | Acepta `mesInicialIndex`: quien llega tocando la tarjeta de xaneiro ve xaneiro, no el mes de hoy | `flutter analyze` limpio |
+
+**Cuatro defectos encontrados al mirar, no al testear:**
+
+- **Desbordamiento de 5 px a escala 1,3.** La sección en el marco fijo de Modo
+  Aula no cabía. Ahora es la primera fila de la lista y se desplaza con ella.
+- **El arrastre con ratón no movía la tarjeta.** Flutter solo admite dedo y
+  lápiz por defecto; se amplió `dragDevices`. Con el dedo ya funcionaba, y por
+  eso el test no lo cazaba.
+- **Hueco en blanco en la captura de Academy.** La sección leía el contenido por
+  su cuenta y no llegaba a tiempo al retrato: golden inestable. Las dos
+  pantallas aceptan ahora `calendarioContenido` ya leído.
+- **«Sen rexistro» en la interfaz en castellano.** El distintivo de estado de la
+  tarjeta tenía las cadenas en gallego a fuego, sin lengua. Visto en
+  `aula-unidades-es.png`, no por un test.
+
+**Esto no se ha visto en un aparato Android.** Lo ejecutado es el escritorio
+Linux con pantalla virtual: sirve para saber qué pantalla sale y qué hay dentro,
+no para insets reales ni densidades.
+
+**Defecto visto y NO tocado, porque no se pidió**: en 2.º ciclo el rótulo dice
+«SESIÓNS POR NIVEL (SETEMBRO)» y la primera tarjeta debajo es «Xaneiro: A
+choiva…». O el rótulo o la tarjeta mienten.
+
+---
+
 ## El Calendario, rehecho: tarjetas que se pasan de lado · **en la rama `claude/analizar-rama-mejora-g5yh9z`** (15/9/2026)
 
 Frank había pedido tres cosas para esta pantalla —la interfaz del primer ciclo,

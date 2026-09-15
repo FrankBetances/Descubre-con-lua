@@ -125,6 +125,7 @@ class _TarjetaMesCurricularState extends State<TarjetaMesCurricular>
                 mes: widget.mes,
                 nombreMes: nombreMes,
                 estado: widget.estado,
+                lang: widget.lang,
               ),
               // ── Centro de interés ─────────────────────────────────────────
               // Flexible: la tarjeta vive en un carrusel de altura fija y el
@@ -166,11 +167,16 @@ class _Cabecera extends StatelessWidget {
   final String nombreMes;
   final EstadoEstimulacion estado;
 
+  /// La lengua de la pantalla. Sin ella el distintivo de estado salía en
+  /// gallego SIEMPRE: en castellano la tarjeta decía «Sen rexistro».
+  final AppLanguage lang;
+
   const _Cabecera({
     required this.acento,
     required this.mes,
     required this.nombreMes,
     required this.estado,
+    required this.lang,
   });
 
   @override
@@ -244,7 +250,7 @@ class _Cabecera extends StatelessWidget {
             Positioned(
               left: 12,
               bottom: 8,
-              child: _EstadoBadge(estado: estado),
+              child: _EstadoBadge(estado: estado, lang: lang),
             ),
           ],
         ),
@@ -716,14 +722,16 @@ class _IlustracionMesP extends CustomPainter {
 
 class _EstadoBadge extends StatelessWidget {
   final EstadoEstimulacion estado;
-  const _EstadoBadge({required this.estado});
+  final AppLanguage lang;
+  const _EstadoBadge({required this.estado, required this.lang});
 
   @override
   Widget build(BuildContext context) {
+    final isGl = lang == AppLanguage.gl;
     final (icon, label, color) = switch (estado) {
       EstadoEstimulacion.dobleEstimulacion => (
           Icons.star_rounded,
-          'Aula e casa',
+          isGl ? 'Aula e casa' : 'Aula y casa',
           _ambar,
         ),
       EstadoEstimulacion.soloAula => (
@@ -738,7 +746,7 @@ class _EstadoBadge extends StatelessWidget {
         ),
       EstadoEstimulacion.sinRegistro => (
           Icons.radio_button_unchecked,
-          'Sen rexistro',
+          isGl ? 'Sen rexistro' : 'Sin registro',
           Colors.white.withAlpha(100),
         ),
     };
