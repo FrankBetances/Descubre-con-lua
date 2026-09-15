@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.xuno.5_infantil",
+  "nivel": "5_infantil",
+  "mes": 6,
+  "titulo": {
+    "gl": "Xuño: O verán, as nosas rías e o mar atlántico",
+    "es": "Junio: El verano, nuestras rías y el mar atlántico",
+    "en": "June: Summer, Our Rías and the Atlantic Sea"
+  },
+  "centroInteres": {
+    "gl": "O mar en calma e a marea",
+    "es": "El mar en calma y la marea",
+    "en": "The Calm Sea and the Tide"
+  },
+  "metodologiaTpr": "dramatizado_narrativo",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "barco",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning sea! Row your boat!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Conto Motor e Freada",
+        "es": "Reto Núcleo TPR: Cuento Motor y Frenada",
+        "en": "Core TPR Challenge: Kinetic Story & Freeze"
+      },
+      "duracionSegundos": 270,
+      "lamina": "auga",
+      "consignaDocente": {
+        "gl": "Unha tea azul de grandes dimensións é sostida perimetralmente polo grupo.",
+        "es": "Una tela azul de grandes dimensiones es sostenida perimetralmente por el grupo.",
+        "en": "A large blue cloth is held around its edge by the group."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.xuno.5i.01",
+          "textoIngles": "Calm sea: move the cloth very slowly",
+          "accionFisica": {
+            "gl": "Ondulación lenta e sostida da tea azul con ambas as mans.",
+            "es": "Ondulación lenta y sostenida de la tela azul con ambas manos.",
+            "en": "Slow sustained rippling of the blue cloth with both hands."
+          },
+          "modeladoDocente": {
+            "gl": "Ondula co grupo e baixa a voz ao mínimo.",
+            "es": "Ondula con el grupo y baja la voz al mínimo.",
+            "en": "Ripples with the group and lowers the voice to a minimum."
+          }
+        },
+        {
+          "id": "cmd.xuno.5i.02",
+          "textoIngles": "Storm! Shake the sea with all your strength",
+          "accionFisica": {
+            "gl": "Axitación enérxica da tea con movemento amplo de brazos.",
+            "es": "Agitación enérgica de la tela con movimiento amplio de brazos.",
+            "en": "Energetic shaking of the cloth with wide arm movement."
+          },
+          "modeladoDocente": {
+            "gl": "Sube o volume da voz de golpe e axita coa mesma forza.",
+            "es": "Sube el volumen de la voz de golpe y agita con la misma fuerza.",
+            "en": "Raises the voice suddenly and shakes with the same force."
+          }
+        },
+        {
+          "id": "cmd.xuno.5i.03",
+          "textoIngles": "The sea sleeps: put the cloth down and lie still",
+          "accionFisica": {
+            "gl": "Depositar a tea no chan e deitarse inmóbil debaixo ou ao lado.",
+            "es": "Depositar la tela en el suelo y tumbarse inmóvil debajo o al lado.",
+            "en": "Lay the cloth down and lie still beneath or beside it."
+          },
+          "modeladoDocente": {
+            "gl": "Baixa a tea moi lentamente e cala ata que todos estean quietos.",
+            "es": "Baja la tela muy lentamente y calla hasta que todos estén quietos.",
+            "en": "Lowers the cloth very slowly and stays silent until all are still."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "auga",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "5_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.xuno.5i.01",
+    "titulo": {
+      "gl": "A tea azul do salón",
+      "es": "La tela azul del salón",
+      "en": "The Blue Cloth in the Living Room"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Nun rato de xogo na alfombra",
+      "es": "En un rato de juego en la alfombra",
+      "en": "A play moment on the rug"
+    },
+    "objetivoAutonomia": {
+      "gl": "Xogar co mar cunha sabana ou toalla grande, seguindo a voz.",
+      "es": "Jugar al mar con una sábana o toalla grande, siguiendo la voz.",
+      "en": "Play at the sea with a sheet or big towel, following the voice."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Tormenta!",
+          "es": "¡Tormenta!",
+          "en": "Storm!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Storm! Shake it hard! ... And now: calm sea. Very slow. The sea sleeps.",
+          "es": "Storm! Shake it hard! ... Y ahora: calm sea. Muy despacio. The sea sleeps.",
+          "en": "Storm! Shake it hard! ... And now: calm sea. Very slow. The sea sleeps."
+        },
+        "consejoEvitar": {
+          "gl": "O cambio de enerxía é a lección; as palabras veñen soas.",
+          "es": "El cambio de energía es la lección; las palabras vienen solas.",
+          "en": "The energy change is the lesson; the words come on their own."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na alfombra do salón, cunha sabana vella.",
+      "es": "En la alfombra del salón, con una sábana vieja.",
+      "en": "On the living-room rug, with an old sheet."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

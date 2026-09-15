@@ -7,7 +7,7 @@ import '../../../data/models/asamblea_segundo_ciclo_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
 import '../widgets/backstage/backstage_level_switcher.dart';
-import '../widgets/backstage/backstage_phase_timer_widget.dart';
+import '../widgets/consigna_fase_widget.dart';
 import '../widgets/backstage/paso_calm_widget.dart';
 import '../widgets/backstage/paso_core_tpr_widget.dart';
 import '../widgets/backstage/paso_opening_widget.dart';
@@ -237,7 +237,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
   /// sobra entonces es el adorno, no el contenido: misma regla que en la
   /// asamblea de primer ciclo.
   static bool _textoMoiGrande(BuildContext context) =>
-      MediaQuery.textScalerOf(context).scale(14) > 19;
+      MediaQuery.textScalerOf(context).scale(14) > 17;
 
   Future<bool> _confirmFinish() async {
     final isGl = _language == AppLanguage.gl;
@@ -460,12 +460,17 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          BackstageLevelSwitcher(
-                            nivelSeleccionado: _nivel,
-                            onNivelChanged: _onNivelChanged,
-                            language: _language,
-                          ),
-                          const SizedBox(height: 12),
+                          // Con el texto grande, el conmutador de nivel es lo
+                          // primero que se recoge: el nivel ya se eligió en la
+                          // lista del aula y aquí sobra antes que la consigna.
+                          if (!_textoMoiGrande(context)) ...[
+                            BackstageLevelSwitcher(
+                              nivelSeleccionado: _nivel,
+                              onNivelChanged: _onNivelChanged,
+                              language: _language,
+                            ),
+                            const SizedBox(height: 12),
+                          ],
                           if (!_textoMoiGrande(context))
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -515,23 +520,27 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                             minHeight: 6.0,
                             borderRadius: BorderRadius.circular(3.0),
                           ),
-                          const SizedBox(height: 10),
-                          // Los segundos de la fase. Empieza parado, como el de
-                          // primer ciclo: la asamblea arranca cuando lo dice la
-                          // docente, no cuando se abre la pantalla.
-                          Center(
-                            child: BackstagePhaseTimerWidget(
-                              key: ValueKey(
-                                'timer_fase_${_faseIndex}_nivel_${_nivel.clave}',
-                              ),
-                              duracionSegundos: asamblea
-                                  .fases[_faseIndex.clamp(
-                                      0, asamblea.fases.length - 1)]
-                                  .duracionSegundos,
-                            ),
-                          ),
                         ],
                       ),
+                    ),
+                    // La MISMA pieza que la asamblea de primer ciclo: qué se
+                    // hace ahora, en grande, con los minutos y el reloj al
+                    // lado. Antes la consigna estaba abajo, en una tarjeta más,
+                    // y el cronómetro ocupaba una caja para él solo.
+                    ConsignaFaseWidget(
+                      key: ValueKey('consigna_${_faseIndex}_${_nivel.clave}'),
+                      consigna: asamblea
+                          .fases[_faseIndex.clamp(0, asamblea.fases.length - 1)]
+                          .consignaDocente,
+                      minutos: (asamblea
+                                  .fases[_faseIndex.clamp(
+                                      0, asamblea.fases.length - 1)]
+                                  .duracionSegundos /
+                              60)
+                          .round(),
+                      claveFase: 'f${_faseIndex}_${_nivel.clave}',
+                      language: _language,
+                      audioService: widget.audioService,
                     ),
                     // El aviso de la asamblea de primer ciclo, palabra por
                     // palabra: el móvil es del adulto y no se enseña.

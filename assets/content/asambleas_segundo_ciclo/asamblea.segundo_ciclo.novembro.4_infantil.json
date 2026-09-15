@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.novembro.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 11,
+  "titulo": {
+    "gl": "Novembro: Samaín e Magosto — castañas, lume e cabazas",
+    "es": "Noviembre: Samaín y Magosto — castañas, fuego y calabazas",
+    "en": "November: Samaín and Magosto — Chestnuts, Fire and Pumpkins"
+  },
+  "centroInteres": {
+    "gl": "O magosto motor e o salto da castaña",
+    "es": "El magosto motor y el salto de la castaña",
+    "en": "The Kinetic Magosto and the Chestnut Jump"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "castana",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning fire! Warm hands up!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida",
+        "es": "Reto Núcleo TPR: Acción Expandida",
+        "en": "Core TPR Challenge: Expanded Action"
+      },
+      "duracionSegundos": 270,
+      "lamina": "castana",
+      "consignaDocente": {
+        "gl": "Sentados en círculo sobre a alfombra, botar ao compás.",
+        "es": "Sentados en círculo sobre la alfombra, botar al compás.",
+        "en": "Sitting in a circle on the rug, bounce to the beat."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.novembro.4i.01",
+          "textoIngles": "The chestnut pops in the fire: jump!",
+          "accionFisica": {
+            "gl": "Salto vertical con pés xuntos e caída sentada na alfombra.",
+            "es": "Salto vertical con pies juntos y caída sentada en la alfombra.",
+            "en": "Two-footed vertical jump landing seated on the rug."
+          },
+          "modeladoDocente": {
+            "gl": "Bota ao compás e salta coa mesma amplitude que se pide ao grupo.",
+            "es": "Bota al compás y salta con la misma amplitud que se pide al grupo.",
+            "en": "Bounces on the beat and jumps with the same amplitude asked of the group."
+          }
+        },
+        {
+          "id": "cmd.novembro.4i.02",
+          "textoIngles": "Roll the pumpkin on the floor",
+          "accionFisica": {
+            "gl": "Empurrar unha cabaza pequena polo chan coas dúas mans.",
+            "es": "Empujar una calabaza pequeña por el suelo con las dos manos.",
+            "en": "Push a small pumpkin along the floor with both hands."
+          },
+          "modeladoDocente": {
+            "gl": "Axeónllase e roda a cabaza cara a un neno nomeado.",
+            "es": "Se arrodilla y rueda la calabaza hacia un niño nombrado.",
+            "en": "Kneels and rolls the pumpkin towards a named child."
+          }
+        },
+        {
+          "id": "cmd.novembro.4i.03",
+          "textoIngles": "Warm your hands and rub them fast",
+          "accionFisica": {
+            "gl": "Fretar as palmas rapidamente e achegalas á cara sentindo a calor.",
+            "es": "Frotar las palmas rápidamente y acercarlas a la cara sintiendo el calor.",
+            "en": "Rub palms quickly and bring them to the face feeling the warmth."
+          },
+          "modeladoDocente": {
+            "gl": "Fretar as mans á vista de todos, sen presa e con sorriso.",
+            "es": "Frotar las manos a la vista de todos, sin prisa y con sonrisa.",
+            "en": "Rubs hands visibly, unhurried and smiling."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "quente",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.novembro.4i.01",
+    "titulo": {
+      "gl": "A cociña do magosto",
+      "es": "La cocina del magosto",
+      "en": "The Magosto Kitchen"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Antes de cear, lavando castañas e cabazas",
+      "es": "Antes de cenar, lavando castañas y calabazas",
+      "en": "Before dinner, washing chestnuts and pumpkins"
+    },
+    "objetivoAutonomia": {
+      "gl": "Lavar e secar xuntos o que se vai comer, nomeando cada paso sen traducir.",
+      "es": "Lavar y secar juntos lo que se va a comer, nombrando cada paso sin traducir.",
+      "en": "Wash and dry together what will be eaten, naming each step without translating."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Auga!",
+          "es": "¡Agua!",
+          "en": "Water!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes! Wash the big pumpkin, dry it with the towel. All clean!",
+          "es": "Yes! Wash the big pumpkin, dry it with the towel. ¡Todo limpio!",
+          "en": "Yes! Wash the big pumpkin, dry it with the towel. All clean!"
+        },
+        "consejoEvitar": {
+          "gl": "Non pedir que repita. Devolver a frase mentres se segue lavando.",
+          "es": "No pedir que repita. Devolver la frase mientras se sigue lavando.",
+          "en": "Never ask for repetition. Give the phrase back while the washing continues."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na cociña, cun barreño baixo e unha toalla ao alcance.",
+      "es": "En la cocina, con un barreño bajo y una toalla al alcance.",
+      "en": "In the kitchen, with a low basin and a towel within reach."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

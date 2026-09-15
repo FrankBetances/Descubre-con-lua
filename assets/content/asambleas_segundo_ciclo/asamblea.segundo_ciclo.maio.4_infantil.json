@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.maio.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 5,
+  "titulo": {
+    "gl": "Maio: As Letras Galegas e a riqueza da tradición oral",
+    "es": "Mayo: Las Letras Galegas y la riqueza de la tradición oral",
+    "en": "May: Galician Letters Day and the Wealth of Oral Tradition"
+  },
+  "centroInteres": {
+    "gl": "Os xogos de falda cruzando a liña media",
+    "es": "Los juegos de falda cruzando la línea media",
+    "en": "Lap Games Crossing the Midline"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning voices! Clap your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida",
+        "es": "Reto Núcleo TPR: Acción Expandida",
+        "en": "Core TPR Challenge: Expanded Action"
+      },
+      "duracionSegundos": 270,
+      "lamina": "aperta",
+      "consignaDocente": {
+        "gl": "Xogos tradicionais de falda adaptados ao inglés: palmadas sobre xeonllos alternadas coas palmas do compañeiro, integrando cruces de mans sobre a liña media corporal.",
+        "es": "Juegos tradicionales de falda adaptados al inglés: palmadas sobre rodillas alternadas con las palmas del compañero, integrando cruces de manos sobre la línea media corporal.",
+        "en": "Traditional lap games adapted to English: knee claps alternating with a partner's palms, including hand crossings over the body midline."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.maio.4i.01",
+          "textoIngles": "Clap the rhythm on your chest",
+          "accionFisica": {
+            "gl": "Palmadas sobre o peito marcando o pulso regular.",
+            "es": "Palmadas sobre el pecho marcando el pulso regular.",
+            "en": "Chest claps marking the steady beat."
+          },
+          "modeladoDocente": {
+            "gl": "Marca o pulso no seu propio peito antes de pedilo.",
+            "es": "Marca el pulso en su propio pecho antes de pedirlo.",
+            "en": "Marks the beat on her own chest before asking."
+          }
+        },
+        {
+          "id": "cmd.maio.4i.02",
+          "textoIngles": "Cross your hands and clap with your friend",
+          "accionFisica": {
+            "gl": "Palmada cruzada coa man do compañeiro pasando a liña media.",
+            "es": "Palmada cruzada con la mano del compañero pasando la línea media.",
+            "en": "Crossed clap with a partner's hand, passing the midline."
+          },
+          "modeladoDocente": {
+            "gl": "Fai o cruce cun neno á vista de todos, moi lento.",
+            "es": "Hace el cruce con un niño a la vista de todos, muy lento.",
+            "en": "Does the crossing with one child in full view, very slowly."
+          }
+        },
+        {
+          "id": "cmd.maio.4i.03",
+          "textoIngles": "Clap high, clap low",
+          "accionFisica": {
+            "gl": "Palmada arriba da cabeza e palmada abaixo preto do chan.",
+            "es": "Palmada encima de la cabeza y palmada abajo cerca del suelo.",
+            "en": "Clap above the head and clap low near the floor."
+          },
+          "modeladoDocente": {
+            "gl": "Alterna arriba e abaixo sen nomear as posicións en galego.",
+            "es": "Alterna arriba y abajo sin nombrar las posiciones en gallego.",
+            "en": "Alternates high and low without naming the positions in Galician."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "luz",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.maio.4i.01",
+    "titulo": {
+      "gl": "As palmas da sobremesa",
+      "es": "Las palmas de la sobremesa",
+      "en": "Clapping After Dinner"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Na sobremesa, sentados fronte a fronte",
+      "es": "En la sobremesa, sentados frente a frente",
+      "en": "After dinner, sitting face to face"
+    },
+    "objetivoAutonomia": {
+      "gl": "Xogo de palmas por quendas, marcando o pulso coa voz.",
+      "es": "Juego de palmas por turnos, marcando el pulso con la voz.",
+      "en": "Turn-taking clapping game, marking the beat with the voice."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Outra vez!",
+          "es": "¡Otra vez!",
+          "en": "Again!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Again! Clap high, clap low, touch your nose, off we go!",
+          "es": "Again! Clap high, clap low, touch your nose, off we go!",
+          "en": "Again! Clap high, clap low, touch your nose, off we go!"
+        },
+        "consejoEvitar": {
+          "gl": "Repetir é o método. Non se pide que diga as palabras.",
+          "es": "Repetir es el método. No se pide que diga las palabras.",
+          "en": "Repetition is the method. No one asks for the words."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na mesa, sen material: só as mans e o ritmo.",
+      "es": "En la mesa, sin material: solo las manos y el ritmo.",
+      "en": "At the table, no materials: just hands and rhythm."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

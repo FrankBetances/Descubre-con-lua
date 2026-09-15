@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.marzo.5_infantil",
+  "nivel": "5_infantil",
+  "mes": 3,
+  "titulo": {
+    "gl": "Marzo: A primavera esperta e a sementeira na horta",
+    "es": "Marzo: La primavera despierta y la siembra en la huerta",
+    "en": "March: Spring Wakes and Sowing in the Garden"
+  },
+  "centroInteres": {
+    "gl": "O voo polinizador das abellas",
+    "es": "El vuelo polinizador de las abejas",
+    "en": "The Pollinating Flight of the Bees"
+  },
+  "metodologiaTpr": "dramatizado_narrativo",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "semente",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning sun! Grow up tall!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Conto Motor e Freada",
+        "es": "Reto Núcleo TPR: Cuento Motor y Frenada",
+        "en": "Core TPR Challenge: Kinetic Story & Freeze"
+      },
+      "duracionSegundos": 270,
+      "lamina": "flor",
+      "consignaDocente": {
+        "gl": "Desprazamento libre movendo os brazos con velocidade e articulando vibración labial suave.",
+        "es": "Desplazamiento libre moviendo los brazos con velocidad y articulando vibración labial suave.",
+        "en": "Free movement with fast arm beats and a soft lip vibration."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.marzo.5i.01",
+          "textoIngles": "Fly like a busy bee",
+          "accionFisica": {
+            "gl": "Desprazamento rápido cos brazos en batido curto e continuo.",
+            "es": "Desplazamiento rápido con los brazos en batido corto y continuo.",
+            "en": "Fast movement with short continuous arm beats."
+          },
+          "modeladoDocente": {
+            "gl": "Voa entre o grupo marcando o zumbido coa voz.",
+            "es": "Vuela entre el grupo marcando el zumbido con la voz.",
+            "en": "Flies among the group, humming the buzz."
+          }
+        },
+        {
+          "id": "cmd.marzo.5i.02",
+          "textoIngles": "Find the red flower and land softly",
+          "accionFisica": {
+            "gl": "Aterraxe suave sobre a marca vermella, axeonllado.",
+            "es": "Aterrizaje suave sobre la marca roja, arrodillado.",
+            "en": "Soft landing on the red mark, kneeling."
+          },
+          "modeladoDocente": {
+            "gl": "Nomea a cor unha soa vez e non sinala a marca.",
+            "es": "Nombra el color una sola vez y no señala la marca.",
+            "en": "Names the colour once and does not point at the mark."
+          }
+        },
+        {
+          "id": "cmd.marzo.5i.03",
+          "textoIngles": "Sleep in the flower until the sun wakes up",
+          "accionFisica": {
+            "gl": "Quietude total sobre a marca ata escoitar a orde de espertar.",
+            "es": "Quietud total sobre la marca hasta escuchar la orden de despertar.",
+            "en": "Complete stillness on the mark until the waking cue."
+          },
+          "modeladoDocente": {
+            "gl": "Baixa a voz e agarda; o silencio forma parte da orde.",
+            "es": "Baja la voz y espera; el silencio forma parte de la orden.",
+            "en": "Lowers the voice and waits; silence is part of the command."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "sol",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "5_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.marzo.5i.01",
+    "titulo": {
+      "gl": "A folla que se toca con tino",
+      "es": "La hoja que se toca con tiento",
+      "en": "The Leaf Touched Gently"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Ao regar, en calquera momento do día",
+      "es": "Al regar, en cualquier momento del día",
+      "en": "At watering time, any moment of the day"
+    },
+    "objetivoAutonomia": {
+      "gl": "Tocar as follas con suavidade nomeando a acción, sen esixir palabra.",
+      "es": "Tocar las hojas con suavidad nombrando la acción, sin exigir palabra.",
+      "en": "Touch the leaves gently while naming the action, demanding no word."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Folla verde",
+          "es": "Hoja verde",
+          "en": "Green leaf"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, a green leaf! Touch it gently, very gently. Now smell the flower!",
+          "es": "Yes, a green leaf! Touch it gently, very gently. ¡Ahora huele la flor!",
+          "en": "Yes, a green leaf! Touch it gently, very gently. Now smell the flower!"
+        },
+        "consejoEvitar": {
+          "gl": "Agardar cinco segundos: o tempo de resposta forma parte do método.",
+          "es": "Esperar cinco segundos: el tiempo de respuesta forma parte del método.",
+          "en": "Wait five seconds: response time is part of the method."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Diante da planta, coas mans limpas e sen présa.",
+      "es": "Delante de la planta, con las manos limpias y sin prisa.",
+      "en": "In front of the plant, clean hands and no hurry."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

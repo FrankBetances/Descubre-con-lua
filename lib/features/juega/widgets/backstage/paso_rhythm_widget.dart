@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/localization/app_language.dart';
 import '../../../../core/audio/offline_audio_service.dart';
-import '../../../../core/audio/voice_id.dart';
-import '../../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../../core/brand/lamina_vector.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
@@ -36,7 +34,6 @@ class PasoRhythmWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
     final titulo = fase.titulo.resolve(language);
-    final consigna = fase.consignaDocente.resolve(language);
     final cueText = fase.cueAcustica ?? 'Pulse 72 BPM';
 
     return Column(
@@ -108,79 +105,6 @@ class PasoRhythmWidget extends StatelessWidget {
         const SizedBox(height: 16),
 
         // Consigna pedagóxica do docente
-        Container(
-          padding: const EdgeInsets.all(18),
-          decoration: BoxDecoration(
-            color: AppTheme.backstageSurfaceElevated,
-            borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-            border: Border.all(color: AppTheme.backstageBorder),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  const Icon(
-                    Icons.record_voice_over_outlined,
-                    color: AppTheme.backstageAccent,
-                    size: 22,
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                      child: Text(
-                    isGl
-                        ? 'Consigna para o Docente'
-                        : 'Consigna para el Docente',
-                    style: const TextStyle(
-                      fontFamily: AppTheme.fontFamily,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w700,
-                      color: AppTheme.backstageAccent,
-                    ),
-                  )),
-                ],
-              ),
-              const SizedBox(height: 12),
-              Text(
-                consigna,
-                style: const TextStyle(
-                  fontFamily: AppTheme.fontFamily,
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.w500,
-                  color: AppTheme.backstageTextPrimary,
-                  height: 1.4,
-                ),
-              ),
-              BotonEscuchar(
-                audioService: audioService,
-                texto: consigna,
-                language: language,
-                compacto: true,
-                descripcion: isGl
-                    ? 'a consigna do foco rítmico'
-                    : 'la consigna del foco rítmico',
-              ),
-              if (cueText.trim().isNotEmpty)
-                Padding(
-                  padding: const EdgeInsets.only(top: 8),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: BotonEscuchar(
-                      audioService: audioService,
-                      texto: cueText,
-                      language: AppLanguage.en,
-                      style: estiloIngles(cueText),
-                      compacto: true,
-                      descripcion:
-                          isGl ? 'o sinal en inglés' : 'la señal en inglés',
-                    ),
-                  ),
-                ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 16),
-
         // Pulso rítmico a 72 BPM
         Container(
           padding: const EdgeInsets.all(18),

@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.outubro.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 10,
+  "titulo": {
+    "gl": "Outubro: O outono, o vento e as follas secas do bosque galego",
+    "es": "Octubre: El otoño, el viento y las hojas secas del bosque gallego",
+    "en": "October: Autumn, Wind and Dry Leaves in the Galician Forest"
+  },
+  "centroInteres": {
+    "gl": "A clasificación activa con aros de vimbio",
+    "es": "La clasificación activa con aros de mimbre",
+    "en": "Active Sorting with Wicker Rings"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "folla",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning wind! Cross your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales",
+        "en": "Core TPR Challenge: Peer-to-Peer Commands"
+      },
+      "duracionSegundos": 270,
+      "lamina": "cesta",
+      "consignaDocente": {
+        "gl": "Dispor aros de vimbio no chan.",
+        "es": "Disponer aros de mimbre en el suelo.",
+        "en": "Lay wicker rings on the floor."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.outubro.6i.01",
+          "textoIngles": "Take a rough leaf and put it in the brown ring",
+          "accionFisica": {
+            "gl": "Elección táctil dunha folla rugosa e traslado ata o aro marrón.",
+            "es": "Elección táctil de una hoja rugosa y traslado hasta el aro marrón.",
+            "en": "Tactile choice of a rough leaf and transfer to the brown ring."
+          },
+          "modeladoDocente": {
+            "gl": "A docente non xesticula: repite a orde a ritmo pausado e agarda cinco segundos.",
+            "es": "La docente no gesticula: repite la orden a ritmo pausado y espera cinco segundos.",
+            "en": "Teacher gives no gesture: repeats the command slowly and waits five seconds."
+          }
+        },
+        {
+          "id": "cmd.outubro.6i.02",
+          "textoIngles": "Noa, walk slowly and give the smooth leaf to your friend",
+          "accionFisica": {
+            "gl": "Marcha lenta e entrega en man a un compañeiro nomeado.",
+            "es": "Marcha lenta y entrega en mano a un compañero nombrado.",
+            "en": "Slow walk and hand-to-hand delivery to a named peer."
+          },
+          "modeladoDocente": {
+            "gl": "Entrega a tarxeta icónica a quen dá a orde e retírase a un lado.",
+            "es": "Entrega la tarjeta icónica a quien da la orden y se retira a un lado.",
+            "en": "Hands the icon card to the child giving the command and steps aside."
+          }
+        },
+        {
+          "id": "cmd.outubro.6i.03",
+          "textoIngles": "Count three leaves and jump over the ring",
+          "accionFisica": {
+            "gl": "Conteo motriz de tres follas e salto con pés xuntos por riba do aro.",
+            "es": "Conteo motriz de tres hojas y salto con pies juntos por encima del aro.",
+            "en": "Motor counting of three leaves and a two-footed jump over the ring."
+          },
+          "modeladoDocente": {
+            "gl": "Mostra o aro e marca o salto cunha palmada, sen contar en voz alta.",
+            "es": "Muestra el aro y marca el salto con una palmada, sin contar en voz alta.",
+            "en": "Shows the ring and marks the jump with a clap, without counting aloud."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "vento",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.outubro.6i.01",
+    "titulo": {
+      "gl": "Tres follas para a casa",
+      "es": "Tres hojas para casa",
+      "en": "Three Leaves for Home"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Ao chegar do paseo, antes de merendar",
+      "es": "Al llegar del paseo, antes de merendar",
+      "en": "Home from the walk, before the afternoon snack"
+    },
+    "objetivoAutonomia": {
+      "gl": "Ordenar por tamaño o que se trouxo, deixando que a crianza dea as ordes.",
+      "es": "Ordenar por tamaño lo que se trajo, dejando que la criatura dé las órdenes.",
+      "en": "Sort what came home by size, letting the child give the commands."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Esta é more big!",
+          "es": "¡Esta es more big!",
+          "en": "This one is more big!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, that one is bigger! Put the bigger leaf here and the small one there.",
+          "es": "Yes, that one is bigger! Put the bigger leaf here and the small one there.",
+          "en": "Yes, that one is bigger! Put the bigger leaf here and the small one there."
+        },
+        "consejoEvitar": {
+          "gl": "Non dicir «non se di así». Devolver a forma correcta dentro do xogo e seguir.",
+          "es": "No decir «no se dice así». Devolver la forma correcta dentro del juego y seguir.",
+          "en": "Never say «that's wrong». Give the correct form inside the game and move on."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na mesa da cociña, cun pano estendido para colocar o atopado.",
+      "es": "En la mesa de la cocina, con un paño extendido para colocar lo encontrado.",
+      "en": "On the kitchen table, with a cloth spread out for the finds."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

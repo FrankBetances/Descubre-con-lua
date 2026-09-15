@@ -31,7 +31,6 @@ class PasoOpeningWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
     final titulo = fase.titulo.resolve(language);
-    final consigna = fase.consignaDocente.resolve(language);
     final hasAudio = fase.audioAsset != null && fase.audioAsset!.isNotEmpty;
 
     return Column(
@@ -98,60 +97,6 @@ class PasoOpeningWidget extends StatelessWidget {
         const SizedBox(height: 16),
 
         // Consigna pedagóxica do docente
-        Container(
-          padding: const EdgeInsets.all(18),
-          decoration: BoxDecoration(
-            color: AppTheme.backstageSurfaceElevated,
-            borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-            border: Border.all(color: AppTheme.backstageBorder),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  const Icon(Icons.record_voice_over_outlined,
-                      color: AppTheme.backstageAccent, size: 22),
-                  const SizedBox(width: 8),
-                  Expanded(
-                      child: Text(
-                    isGl
-                        ? 'Consigna para o Docente'
-                        : 'Consigna para el Docente',
-                    style: const TextStyle(
-                      fontFamily: AppTheme.fontFamily,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w700,
-                      color: AppTheme.backstageAccent,
-                    ),
-                  )),
-                ],
-              ),
-              const SizedBox(height: 12),
-              Text(
-                consigna,
-                style: const TextStyle(
-                  fontFamily: AppTheme.fontFamily,
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.w500,
-                  color: AppTheme.backstageTextPrimary,
-                  height: 1.4,
-                ),
-              ),
-              BotonEscuchar(
-                audioService: audioService,
-                texto: consigna,
-                language: language,
-                compacto: true,
-                descripcion: isGl
-                    ? 'a consigna da apertura'
-                    : 'la consigna de la apertura',
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 16),
-
         // Pista acústica / Saúdo condicionado
         if (fase.cueAcustica != null) ...[
           Container(

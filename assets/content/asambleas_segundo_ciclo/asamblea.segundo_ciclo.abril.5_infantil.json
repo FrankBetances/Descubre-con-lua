@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.abril.5_infantil",
+  "nivel": "5_infantil",
+  "mes": 4,
+  "titulo": {
+    "gl": "Abril: Os animais da nosa contorna — granxa e monte",
+    "es": "Abril: Los animales de nuestro entorno — granja y monte",
+    "en": "April: Animals Around Us — Farm and Woodland"
+  },
+  "centroInteres": {
+    "gl": "O lobo esperta no bosque",
+    "es": "El lobo despierta en el bosque",
+    "en": "The Wolf Wakes in the Forest"
+  },
+  "metodologiaTpr": "dramatizado_narrativo",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "oso",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning animals! Stretch your paws!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Conto Motor e Freada",
+        "es": "Reto Núcleo TPR: Cuento Motor y Frenada",
+        "en": "Core TPR Challenge: Kinetic Story & Freeze"
+      },
+      "duracionSegundos": 270,
+      "lamina": "ra",
+      "consignaDocente": {
+        "gl": "Xogo dramático: os nenos despráganse placidamente como ovellas ata que se emite a orde condicionada «The hungry wolf wakes up!», que esixe conxelación inmediata.",
+        "es": "Juego dramático: los niños se desplazan plácidamente como ovejas hasta que se emite la orden condicionada «The hungry wolf wakes up!», que exige congelación inmediata.",
+        "en": "Dramatic play: children move calmly as sheep until the conditioned cue «The hungry wolf wakes up!», demanding an immediate freeze."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.abril.5i.01",
+          "textoIngles": "Walk calmly like a sheep in the field",
+          "accionFisica": {
+            "gl": "Marcha tranquila e dispersa polo espazo, sen présa.",
+            "es": "Marcha tranquila y dispersa por el espacio, sin prisa.",
+            "en": "Calm scattered walk through the space, unhurried."
+          },
+          "modeladoDocente": {
+            "gl": "Camiña entre eles marcando a calma coa voz baixa.",
+            "es": "Camina entre ellos marcando la calma con la voz baja.",
+            "en": "Walks among them setting the calm with a low voice."
+          }
+        },
+        {
+          "id": "cmd.abril.5i.02",
+          "textoIngles": "The hungry wolf wakes up: FREEZE!",
+          "accionFisica": {
+            "gl": "Conxelación inmediata na postura en que se estaba.",
+            "es": "Congelación inmediata en la postura en que se estaba.",
+            "en": "Immediate freeze in the position reached."
+          },
+          "modeladoDocente": {
+            "gl": "Di a frase enteira e cala: o silencio mantén a tensión.",
+            "es": "Dice la frase entera y calla: el silencio mantiene la tensión.",
+            "en": "Says the whole phrase and falls silent: the silence holds the tension."
+          }
+        },
+        {
+          "id": "cmd.abril.5i.03",
+          "textoIngles": "The wolf sleeps again: tiptoe away",
+          "accionFisica": {
+            "gl": "Marcha silenciosa en puntas afastándose do centro.",
+            "es": "Marcha silenciosa de puntillas alejándose del centro.",
+            "en": "Silent tiptoe walk away from the centre."
+          },
+          "modeladoDocente": {
+            "gl": "Modela a marcha en puntas e baixa aínda máis a voz.",
+            "es": "Modela la marcha de puntillas y baja aún más la voz.",
+            "en": "Models the tiptoe walk and lowers the voice further."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "arbore",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "5_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.abril.5i.01",
+    "titulo": {
+      "gl": "Os animais que van á caixa",
+      "es": "Los animales que van a la caja",
+      "en": "The Animals Going into the Box"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Despois do baño, antes do conto",
+      "es": "Después del baño, antes del cuento",
+      "en": "After the bath, before the story"
+    },
+    "objetivoAutonomia": {
+      "gl": "Gardar figuras de animais imitando o seu andar ata a caixa.",
+      "es": "Guardar figuras de animales imitando su andar hasta la caja.",
+      "en": "Put animal figures away imitating their gait to the box."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Salta a ra!",
+          "es": "¡Salta la rana!",
+          "en": "The frog jumps!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes! Hop like a frog to the box. Now sneak like a fox. All the animals sleep!",
+          "es": "Yes! Hop like a frog to the box. Ahora sneak like a fox. ¡Todos a dormir!",
+          "en": "Yes! Hop like a frog to the box. Now sneak like a fox. All the animals sleep!"
+        },
+        "consejoEvitar": {
+          "gl": "A orde dáse movéndose, non explicando. O xesto é a tradución.",
+          "es": "La orden se da moviéndose, no explicando. El gesto es la traducción.",
+          "en": "The command is given by moving, not explaining. The gesture is the translation."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No cuarto, coa caixa no chan e as figuras á vista.",
+      "es": "En el cuarto, con la caja en el suelo y las figuras a la vista.",
+      "en": "In the bedroom, box on the floor and figures in sight."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

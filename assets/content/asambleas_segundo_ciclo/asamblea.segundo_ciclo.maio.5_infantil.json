@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.maio.5_infantil",
+  "nivel": "5_infantil",
+  "mes": 5,
+  "titulo": {
+    "gl": "Maio: As Letras Galegas e a riqueza da tradición oral",
+    "es": "Mayo: Las Letras Galegas y la riqueza de la tradición oral",
+    "en": "May: Galician Letters Day and the Wealth of Oral Tradition"
+  },
+  "centroInteres": {
+    "gl": "O nabo enorme e a corda de cáñamo",
+    "es": "El nabo enorme y la cuerda de cáñamo",
+    "en": "The Enormous Turnip and the Hemp Rope"
+  },
+  "metodologiaTpr": "dramatizado_narrativo",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning voices! Clap your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Conto Motor e Freada",
+        "es": "Reto Núcleo TPR: Cuento Motor y Frenada",
+        "en": "Core TPR Challenge: Kinetic Story & Freeze"
+      },
+      "duracionSegundos": 270,
+      "lamina": "amiga",
+      "consignaDocente": {
+        "gl": "Representación de micro-contos encadeados: adaptación de The Enormous Turnip traccionando de forma cooperativa dunha corda grosa de cáñamo.",
+        "es": "Representación de micro-cuentos encadenados: adaptación de The Enormous Turnip traccionando de forma cooperativa de una cuerda gruesa de cáñamo.",
+        "en": "Chained micro-story enactment: an adaptation of The Enormous Turnip with cooperative pulling on a thick hemp rope."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.maio.5i.01",
+          "textoIngles": "Pull the rope together: one, two, three!",
+          "accionFisica": {
+            "gl": "Tracción cooperativa da corda coordinada ao conteo.",
+            "es": "Tracción cooperativa de la cuerda coordinada al conteo.",
+            "en": "Cooperative rope pulling coordinated to the count."
+          },
+          "modeladoDocente": {
+            "gl": "Conta e tira coa mesma forza que pide ao grupo.",
+            "es": "Cuenta y tira con la misma fuerza que pide al grupo.",
+            "en": "Counts and pulls with the same force she asks of the group."
+          }
+        },
+        {
+          "id": "cmd.maio.5i.02",
+          "textoIngles": "Call your friend: come and help us!",
+          "accionFisica": {
+            "gl": "Xesto amplo de chamada e incorporación dun novo neno á corda.",
+            "es": "Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda.",
+            "en": "Wide calling gesture and a new child joining the rope."
+          },
+          "modeladoDocente": {
+            "gl": "Modela a chamada unha vez; despois chámanse entre eles.",
+            "es": "Modela la llamada una vez; después se llaman entre ellos.",
+            "en": "Models the call once; after that they call each other."
+          }
+        },
+        {
+          "id": "cmd.maio.5i.03",
+          "textoIngles": "Whisper the secret word to your friend",
+          "accionFisica": {
+            "gl": "Murmurio ao oído do compañeiro sen que o escoite o resto.",
+            "es": "Susurro al oído del compañero sin que lo escuche el resto.",
+            "en": "Whisper into a partner's ear, unheard by the rest."
+          },
+          "modeladoDocente": {
+            "gl": "Baixa a voz ao mínimo e non pregunta cal foi a palabra.",
+            "es": "Baja la voz al mínimo y no pregunta cuál fue la palabra.",
+            "en": "Lowers the voice to a minimum and never asks what the word was."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "luz",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "5_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.maio.5i.01",
+    "titulo": {
+      "gl": "O segredo ao oído",
+      "es": "El secreto al oído",
+      "en": "The Secret in the Ear"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Antes de durmir, sentados na cama",
+      "es": "Antes de dormir, sentados en la cama",
+      "en": "Before sleep, sitting on the bed"
+    },
+    "objetivoAutonomia": {
+      "gl": "Pasar unha palabra en inglés ao oído por quendas, rindo.",
+      "es": "Pasar una palabra en inglés al oído por turnos, riendo.",
+      "en": "Pass an English word ear to ear in turns, laughing."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Dime outra!",
+          "es": "¡Dime otra!",
+          "en": "Tell me another!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Another one! Whisper: «good night». Now you whisper it to teddy.",
+          "es": "Another one! Whisper: «good night». Ahora susúrraselo al osito.",
+          "en": "Another one! Whisper: «good night». Now you whisper it to teddy."
+        },
+        "consejoEvitar": {
+          "gl": "Se non quere dicila, dise ao peluche. Nunca se insiste.",
+          "es": "Si no quiere decirla, se le dice al peluche. Nunca se insiste.",
+          "en": "If they will not say it, say it to the teddy. Never insist."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No cuarto, coa luz xa baixa.",
+      "es": "En el cuarto, con la luz ya baja.",
+      "en": "In the bedroom, light already low."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

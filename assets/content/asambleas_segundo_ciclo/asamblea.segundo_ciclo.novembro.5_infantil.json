@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.novembro.5_infantil",
+  "nivel": "5_infantil",
+  "mes": 11,
+  "titulo": {
+    "gl": "Novembro: Samaín e Magosto — castañas, lume e cabazas",
+    "es": "Noviembre: Samaín y Magosto — castañas, fuego y calabazas",
+    "en": "November: Samaín and Magosto — Chestnuts, Fire and Pumpkins"
+  },
+  "centroInteres": {
+    "gl": "A viaxe da castaña ladeira abaixo",
+    "es": "El viaje de la castaña ladera abajo",
+    "en": "The Chestnut's Journey Down the Slope"
+  },
+  "metodologiaTpr": "dramatizado_narrativo",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "castana",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning fire! Warm hands up!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Conto Motor e Freada",
+        "es": "Reto Núcleo TPR: Cuento Motor y Frenada",
+        "en": "Core TPR Challenge: Kinetic Story & Freeze"
+      },
+      "duracionSegundos": 270,
+      "lamina": "castana",
+      "consignaDocente": {
+        "gl": "Narrativa física: a castaña rola ladeira abaixo.",
+        "es": "Narrativa física: la castaña rueda ladera abajo.",
+        "en": "Physical narrative: the chestnut rolls downhill."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.novembro.5i.01",
+          "textoIngles": "Roll down the hill like a chestnut",
+          "accionFisica": {
+            "gl": "Rodadura lateral controlada sobre colchoneta cos brazos xunto ao corpo.",
+            "es": "Rodadura lateral controlada sobre colchoneta con los brazos junto al cuerpo.",
+            "en": "Controlled lateral roll on the mat with arms along the body."
+          },
+          "modeladoDocente": {
+            "gl": "Modelado narrativo lento, marcando o inicio e o final da rodadura.",
+            "es": "Modelado narrativo lento, marcando el inicio y el final de la rodadura.",
+            "en": "Slow narrative modeling, marking the start and end of the roll."
+          }
+        },
+        {
+          "id": "cmd.novembro.5i.02",
+          "textoIngles": "The hedgehog wakes up: FREEZE and curl up small!",
+          "accionFisica": {
+            "gl": "Parada inmediata e encollemento en ovelo protexendo a cabeza.",
+            "es": "Parada inmediata y encogimiento en ovillo protegiendo la cabeza.",
+            "en": "Immediate stop and curl into a ball protecting the head."
+          },
+          "modeladoDocente": {
+            "gl": "Detense e encóllese, mantendo o silencio ata a orde seguinte.",
+            "es": "Se detiene y se encoge, manteniendo el silencio hasta la orden siguiente.",
+            "en": "Stops and curls, holding silence until the next cue."
+          }
+        },
+        {
+          "id": "cmd.novembro.5i.03",
+          "textoIngles": "Pop out and dance around the fire",
+          "accionFisica": {
+            "gl": "Estirada explosiva e baile circular arredor dun punto central.",
+            "es": "Estirada explosiva y baile circular alrededor de un punto central.",
+            "en": "Explosive stretch and circular dance around a central point."
+          },
+          "modeladoDocente": {
+            "gl": "Abre os brazos amplamente e marca o círculo co paso.",
+            "es": "Abre los brazos ampliamente y marca el círculo con el paso.",
+            "en": "Opens arms wide and marks the circle with the step."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "quente",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "5_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.novembro.5i.01",
+    "titulo": {
+      "gl": "O ourizo da man",
+      "es": "El erizo de la mano",
+      "en": "The Hand Hedgehog"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Despois de merendar, sentados no sofá",
+      "es": "Después de merendar, sentados en el sofá",
+      "en": "After the snack, sitting on the sofa"
+    },
+    "objetivoAutonomia": {
+      "gl": "Xogo de abrir e pechar a man como un ourizo, seguindo a voz do adulto.",
+      "es": "Juego de abrir y cerrar la mano como un erizo, siguiendo la voz del adulto.",
+      "en": "Open-and-close hand game like a hedgehog, following the adult's voice."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Pincha!",
+          "es": "¡Pincha!",
+          "en": "Pokey!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, it is spiky! Curl up small... and now open your hand slowly. Soft again!",
+          "es": "Yes, it is spiky! Curl up small... y ahora abre la mano despacio. ¡Soft again!",
+          "en": "Yes, it is spiky! Curl up small... and now open your hand slowly. Soft again!"
+        },
+        "consejoEvitar": {
+          "gl": "Agardar cinco segundos antes de axudar co xesto.",
+          "es": "Esperar cinco segundos antes de ayudar con el gesto.",
+          "en": "Wait five seconds before helping with the gesture."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No sofá, sen obxectos: só as mans e a voz.",
+      "es": "En el sofá, sin objetos: solo las manos y la voz.",
+      "en": "On the sofa, with no objects: just hands and voice."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

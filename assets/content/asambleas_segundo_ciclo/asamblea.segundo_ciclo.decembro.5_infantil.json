@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.decembro.5_infantil",
+  "nivel": "5_infantil",
+  "mes": 12,
+  "titulo": {
+    "gl": "Decembro: Solsticio de inverno, luces e abrigo",
+    "es": "Diciembre: Solsticio de invierno, luces y abrigo",
+    "en": "December: Winter Solstice, Lights and Warm Clothes"
+  },
+  "centroInteres": {
+    "gl": "O control inhibitorio na noite de inverno",
+    "es": "El control inhibitorio en la noche de invierno",
+    "en": "Inhibitory Control on a Winter Night"
+  },
+  "metodologiaTpr": "dramatizado_narrativo",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "botas",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning winter! Warm your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Conto Motor e Freada",
+        "es": "Reto Núcleo TPR: Cuento Motor y Frenada",
+        "en": "Core TPR Challenge: Kinetic Story & Freeze"
+      },
+      "duracionSegundos": 270,
+      "lamina": "manta",
+      "consignaDocente": {
+        "gl": "Danza libre ao ritmo do pandeiro.",
+        "es": "Danza libre al ritmo del pandero.",
+        "en": "Free dance to the frame drum."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.decembro.5i.01",
+          "textoIngles": "Dance freely while the drum sings",
+          "accionFisica": {
+            "gl": "Desprazamento libre polo espazo seguindo o pulso do pandeiro.",
+            "es": "Desplazamiento libre por el espacio siguiendo el pulso del pandero.",
+            "en": "Free movement through the space following the drum beat."
+          },
+          "modeladoDocente": {
+            "gl": "Toca o pandeiro a ritmo pausado e desprázase entre o grupo.",
+            "es": "Toca el pandero a ritmo pausado y se desplaza entre el grupo.",
+            "en": "Plays the drum slowly and moves among the group."
+          }
+        },
+        {
+          "id": "cmd.decembro.5i.02",
+          "textoIngles": "Cold winter night: curl up and do not move",
+          "accionFisica": {
+            "gl": "Acurruchamento no chan, inmóbil, coas mans baixo a meixela.",
+            "es": "Acurrucamiento en el suelo, inmóvil, con las manos bajo la mejilla.",
+            "en": "Curl up on the floor, motionless, hands under the cheek."
+          },
+          "modeladoDocente": {
+            "gl": "Murmura a frase e detén o pandeiro; non engade ningunha palabra máis.",
+            "es": "Susurra la frase y detiene el pandero; no añade ninguna palabra más.",
+            "en": "Whispers the phrase and stops the drum; adds no further words."
+          }
+        },
+        {
+          "id": "cmd.decembro.5i.03",
+          "textoIngles": "Sunlight! Stand up and stretch tall",
+          "accionFisica": {
+            "gl": "Incorporación lenta e extensión axial completa cos brazos arriba.",
+            "es": "Incorporación lenta y extensión axial completa con los brazos arriba.",
+            "en": "Slow rise and full axial stretch with arms overhead."
+          },
+          "modeladoDocente": {
+            "gl": "Eleva as mans amosando a luz e retoma o pulso do pandeiro.",
+            "es": "Eleva las manos mostrando la luz y retoma el pulso del pandero.",
+            "en": "Raises hands showing the light and resumes the drum beat."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "frio",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "5_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.decembro.5i.01",
+    "titulo": {
+      "gl": "A manta e a luz pequena",
+      "es": "La manta y la luz pequeña",
+      "en": "The Blanket and the Little Light"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Antes de durmir, no cuarto",
+      "es": "Antes de dormir, en el cuarto",
+      "en": "Before sleep, in the bedroom"
+    },
+    "objetivoAutonomia": {
+      "gl": "Ritual curto de acougo con manta e luz baixa, guiado coa voz.",
+      "es": "Ritual corto de calma con manta y luz baja, guiado con la voz.",
+      "en": "A short calming ritual with a blanket and low light, guided by voice."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Manta!",
+          "es": "¡Manta!",
+          "en": "Blanket!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, the soft blanket! Pull the blanket up, close your eyes. Good night!",
+          "es": "Yes, the soft blanket! Pull the blanket up, close your eyes. ¡Buenas noches!",
+          "en": "Yes, the soft blanket! Pull the blanket up, close your eyes. Good night!"
+        },
+        "consejoEvitar": {
+          "gl": "Á noite, menos palabras e máis xesto. Nunca pedir produción.",
+          "es": "Por la noche, menos palabras y más gesto. Nunca pedir producción.",
+          "en": "At night, fewer words and more gesture. Never ask for output."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No cuarto, coa luz xa baixa e a manta sobre a cama.",
+      "es": "En el cuarto, con la luz ya baja y la manta sobre la cama.",
+      "en": "In the bedroom, with the light already low and the blanket on the bed."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

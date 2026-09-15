@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.xuno.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 6,
+  "titulo": {
+    "gl": "Xuño: O verán, as nosas rías e o mar atlántico",
+    "es": "Junio: El verano, nuestras rías y el mar atlántico",
+    "en": "June: Summer, Our Rías and the Atlantic Sea"
+  },
+  "centroInteres": {
+    "gl": "Remar en parellas planta con planta",
+    "es": "Remar en parejas planta con planta",
+    "en": "Rowing in Pairs, Sole to Sole"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "barco",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning sea! Row your boat!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida",
+        "es": "Reto Núcleo TPR: Acción Expandida",
+        "en": "Core TPR Challenge: Expanded Action"
+      },
+      "duracionSegundos": 270,
+      "lamina": "barco",
+      "consignaDocente": {
+        "gl": "Traballo por parellas: sentados no chan fronte a fronte, planta con planta e collidos das mans, flexionan e estenden alternadamente o tronco simulando remar.",
+        "es": "Trabajo por parejas: sentados en el suelo frente a frente, planta con planta y cogidos de las manos, flexionan y extienden alternadamente el tronco simulando remar.",
+        "en": "Paired work: sitting on the floor face to face, sole to sole and holding hands, they alternately bend and extend the torso as if rowing."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.xuno.4i.01",
+          "textoIngles": "Row your boat through the big waves",
+          "accionFisica": {
+            "gl": "Flexo-extensión alternada do tronco en parella, collidos das mans.",
+            "es": "Flexo-extensión alternada del tronco en pareja, cogidos de las manos.",
+            "en": "Alternating torso bend and extension in pairs, holding hands."
+          },
+          "modeladoDocente": {
+            "gl": "Rema cun neno diante do grupo marcando o compás.",
+            "es": "Rema con un niño delante del grupo marcando el compás.",
+            "en": "Rows with one child in front of the group, marking the beat."
+          }
+        },
+        {
+          "id": "cmd.xuno.4i.02",
+          "textoIngles": "Swim like a fast fish in the ría",
+          "accionFisica": {
+            "gl": "Desprazamento polo chan con brazada alternada de peito.",
+            "es": "Desplazamiento por el suelo con brazada alternada de pecho.",
+            "en": "Movement along the floor with alternating breaststroke arms."
+          },
+          "modeladoDocente": {
+            "gl": "Nada polo chan en liña recta antes de pedilo.",
+            "es": "Nada por el suelo en línea recta antes de pedirlo.",
+            "en": "Swims along the floor in a straight line before asking."
+          }
+        },
+        {
+          "id": "cmd.xuno.4i.03",
+          "textoIngles": "Dive deep and find a white shell",
+          "accionFisica": {
+            "gl": "Inmersión simulada e recollida dunha cuncha do chan.",
+            "es": "Inmersión simulada y recogida de una concha del suelo.",
+            "en": "Mimed dive and pick-up of a shell from the floor."
+          },
+          "modeladoDocente": {
+            "gl": "Mergúllase e amosa a cuncha en alto, sen nomeala en galego.",
+            "es": "Se sumerge y muestra la concha en alto, sin nombrarla en gallego.",
+            "en": "Dives and holds the shell up, never naming it in Galician."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "auga",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.xuno.4i.01",
+    "titulo": {
+      "gl": "A auga na praia ou na piscina",
+      "es": "El agua en la playa o la piscina",
+      "en": "Water at the Beach or the Pool"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "No baño de verán, na orela",
+      "es": "En el baño de verano, en la orilla",
+      "en": "At summer bathing, by the water's edge"
+    },
+    "objetivoAutonomia": {
+      "gl": "Xogar na auga seguindo tres ordes curtas de movemento.",
+      "es": "Jugar en el agua siguiendo tres órdenes cortas de movimiento.",
+      "en": "Play in the water following three short movement commands."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Auga fría!",
+          "es": "¡Agua fría!",
+          "en": "Cold water!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, cold water! Splash your knees, scoop the wet sand, jump over the little wave!",
+          "es": "Yes, cold water! Splash your knees, scoop the wet sand, ¡salta la ola pequeña!",
+          "en": "Yes, cold water! Splash your knees, scoop the wet sand, jump over the little wave!"
+        },
+        "consejoEvitar": {
+          "gl": "Na auga, primeiro a seguridade; o inglés é un xogo que acompaña.",
+          "es": "En el agua, primero la seguridad; el inglés es un juego que acompaña.",
+          "en": "In water, safety first; English is a game that comes along."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na orela ou na piscina, con supervisión constante.",
+      "es": "En la orilla o la piscina, con supervisión constante.",
+      "en": "At the shore or the pool, under constant supervision."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

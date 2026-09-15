@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.marzo.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 3,
+  "titulo": {
+    "gl": "Marzo: A primavera esperta e a sementeira na horta",
+    "es": "Marzo: La primavera despierta y la siembra en la huerta",
+    "en": "March: Spring Wakes and Sowing in the Garden"
+  },
+  "centroInteres": {
+    "gl": "A sementeira real en macetas biodegradables",
+    "es": "La siembra real en macetas biodegradables",
+    "en": "Real Sowing in Biodegradable Pots"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "semente",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning sun! Grow up tall!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales",
+        "en": "Core TPR Challenge: Peer-to-Peer Commands"
+      },
+      "duracionSegundos": 270,
+      "lamina": "terra",
+      "consignaDocente": {
+        "gl": "Manexo de macetas biodegradables, terra e sementes de leguminosas.",
+        "es": "Manejo de macetas biodegradables, tierra y semillas de leguminosas.",
+        "en": "Handling biodegradable pots, soil and legume seeds."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.marzo.6i.01",
+          "textoIngles": "Fill the pot, plant the seed and water it",
+          "accionFisica": {
+            "gl": "Secuencia autónoma de tres pasos: encher, sementar e regar.",
+            "es": "Secuencia autónoma de tres pasos: llenar, sembrar y regar.",
+            "en": "Autonomous three-step sequence: fill, sow and water."
+          },
+          "modeladoDocente": {
+            "gl": "Dita a secuencia unha vez, sen xesto, e agarda.",
+            "es": "Dicta la secuencia una vez, sin gesto, y espera.",
+            "en": "Dictates the sequence once, gesture-free, and waits."
+          }
+        },
+        {
+          "id": "cmd.marzo.6i.02",
+          "textoIngles": "Here you go: pass the soil to your friend",
+          "accionFisica": {
+            "gl": "Entrega do recipiente de terra coa fórmula pragmática.",
+            "es": "Entrega del recipiente de tierra con la fórmula pragmática.",
+            "en": "Hand over the soil container with the pragmatic formula."
+          },
+          "modeladoDocente": {
+            "gl": "Só supervisa a quenda; non repite a fórmula polos nenos.",
+            "es": "Solo supervisa el turno; no repite la fórmula por los niños.",
+            "en": "Only supervises the turn; never says the formula for them."
+          }
+        },
+        {
+          "id": "cmd.marzo.6i.03",
+          "textoIngles": "If the seed is big, put it in the brown pot",
+          "accionFisica": {
+            "gl": "Escoita condicional e clasificación da semente segundo o tamaño.",
+            "es": "Escucha condicional y clasificación de la semilla según el tamaño.",
+            "en": "Conditional listening and seed sorting by size."
+          },
+          "modeladoDocente": {
+            "gl": "Coloca os dous vasos e formula a condicional sen sinalar.",
+            "es": "Coloca los dos tiestos y formula la condicional sin señalar.",
+            "en": "Places both pots and states the conditional without pointing."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "sol",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.marzo.6i.01",
+    "titulo": {
+      "gl": "O caderno da horta",
+      "es": "El cuaderno de la huerta",
+      "en": "The Garden Notebook"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Unha vez ao día, ao regar",
+      "es": "Una vez al día, al regar",
+      "en": "Once a day, at watering time"
+    },
+    "objetivoAutonomia": {
+      "gl": "Observar e describir o cambio da planta con frases curtas en inglés.",
+      "es": "Observar y describir el cambio de la planta con frases cortas en inglés.",
+      "en": "Watch and describe the plant's change with short English phrases."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Creceu moito!",
+          "es": "¡Ha crecido mucho!",
+          "en": "It grew a lot!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, it is growing! It is taller today. Water it and draw the tall plant.",
+          "es": "Yes, it is growing! It is taller today. Riégala y dibuja la planta alta.",
+          "en": "Yes, it is growing! It is taller today. Water it and draw the tall plant."
+        },
+        "consejoEvitar": {
+          "gl": "Non hai exame: describir en voz alta xa é o modelado.",
+          "es": "No hay examen: describir en voz alta ya es el modelado.",
+          "en": "There is no test: describing aloud is already the modelling."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Xunto á fiestra, coa maceta e un caderno de debuxo.",
+      "es": "Junto a la ventana, con la maceta y un cuaderno de dibujo.",
+      "en": "By the window, with the pot and a drawing notebook."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

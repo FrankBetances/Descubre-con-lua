@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.decembro.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 12,
+  "titulo": {
+    "gl": "Decembro: Solsticio de inverno, luces e abrigo",
+    "es": "Diciembre: Solsticio de invierno, luces y abrigo",
+    "en": "December: Winter Solstice, Lights and Warm Clothes"
+  },
+  "centroInteres": {
+    "gl": "A colocación mimética do abrigo de inverno",
+    "es": "La colocación mimética del abrigo de invierno",
+    "en": "Miming the Winter Coat"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "botas",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning winter! Warm your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida",
+        "es": "Reto Núcleo TPR: Acción Expandida",
+        "en": "Core TPR Challenge: Expanded Action"
+      },
+      "duracionSegundos": 270,
+      "lamina": "botas",
+      "consignaDocente": {
+        "gl": "Flexión de pernas para calzar botas pesadas imaxinarias e camiñada con pasos lentos e firmes sobre a alfombra («Stomp, stomp»).",
+        "es": "Flexión de piernas para calzar botas pesadas imaginarias y caminata con pasos lentos y firmes sobre la alfombra («Stomp, stomp»).",
+        "en": "Bend the legs to pull on imaginary heavy boots and walk with slow firm steps on the rug («Stomp, stomp»)."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.decembro.4i.01",
+          "textoIngles": "Put on your winter boots",
+          "accionFisica": {
+            "gl": "Sentarse, flexionar a perna e mímica de calzar unha bota pesada.",
+            "es": "Sentarse, flexionar la pierna y mímica de calzar una bota pesada.",
+            "en": "Sit, bend the leg and mime pulling on a heavy boot."
+          },
+          "modeladoDocente": {
+            "gl": "Fai o xesto completo das dúas botas antes de dar a orde seguinte.",
+            "es": "Hace el gesto completo de las dos botas antes de dar la orden siguiente.",
+            "en": "Completes the gesture for both boots before the next command."
+          }
+        },
+        {
+          "id": "cmd.decembro.4i.02",
+          "textoIngles": "Stomp in the snow",
+          "accionFisica": {
+            "gl": "Marcha con pisadas marcadas e sonoras sobre a alfombra.",
+            "es": "Marcha con pisadas marcadas y sonoras sobre la alfombra.",
+            "en": "March with strong audible steps on the rug."
+          },
+          "modeladoDocente": {
+            "gl": "Marca o pulso coa propia pisada, sen palmadas.",
+            "es": "Marca el pulso con la propia pisada, sin palmadas.",
+            "en": "Marks the beat with the footstep itself, no clapping."
+          }
+        },
+        {
+          "id": "cmd.decembro.4i.03",
+          "textoIngles": "Tiptoe quietly to blow out the light",
+          "accionFisica": {
+            "gl": "Marcha en puntas ata unha vela LED e sopro suave final.",
+            "es": "Marcha de puntillas hasta una vela LED y soplo suave final.",
+            "en": "Tiptoe to an LED candle and a final soft blow."
+          },
+          "modeladoDocente": {
+            "gl": "Baixa a voz e camiña en puntas antes de soprar.",
+            "es": "Baja la voz y camina de puntillas antes de soplar.",
+            "en": "Lowers the voice and tiptoes before blowing."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "frio",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.decembro.4i.01",
+    "titulo": {
+      "gl": "Antes de saír á rúa",
+      "es": "Antes de salir a la calle",
+      "en": "Before Going Outside"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Ao saír da casa en inverno",
+      "es": "Al salir de casa en invierno",
+      "en": "Leaving home in winter"
+    },
+    "objetivoAutonomia": {
+      "gl": "Vestir o abrigo por pasos, nomeando cada peza sen pedir que repita.",
+      "es": "Vestir el abrigo por pasos, nombrando cada prenda sin pedir que repita.",
+      "en": "Put the coat on step by step, naming each item without asking for repetition."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Frío!",
+          "es": "¡Frío!",
+          "en": "Cold!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, it is cold! Right foot in, left foot in, zip your warm coat. Ready!",
+          "es": "Yes, it is cold! Right foot in, left foot in, zip your warm coat. ¡Listo!",
+          "en": "Yes, it is cold! Right foot in, left foot in, zip your warm coat. Ready!"
+        },
+        "consejoEvitar": {
+          "gl": "Non converter a saída nunha présa con exame. Primeiro o xesto, logo a frase.",
+          "es": "No convertir la salida en una prisa con examen. Primero el gesto, luego la frase.",
+          "en": "Do not turn leaving into a rushed test. Gesture first, phrase after."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na entrada da casa, coas prendas ao alcance da crianza.",
+      "es": "En la entrada de casa, con las prendas al alcance de la criatura.",
+      "en": "At the front door, with the clothes within the child's reach."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

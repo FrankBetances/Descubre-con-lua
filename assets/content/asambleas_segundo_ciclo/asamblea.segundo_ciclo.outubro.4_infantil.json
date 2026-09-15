@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.outubro.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 10,
+  "titulo": {
+    "gl": "Outubro: O outono, o vento e as follas secas do bosque galego",
+    "es": "Octubre: El otoño, el viento y las hojas secas del bosque gallego",
+    "en": "October: Autumn, Wind and Dry Leaves in the Galician Forest"
+  },
+  "centroInteres": {
+    "gl": "As gasas de seda e a caída da folla",
+    "es": "Las gasas de seda y la caída de la hoja",
+    "en": "Silk Scarves and the Falling Leaf"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "folla",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning wind! Cross your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida",
+        "es": "Reto Núcleo TPR: Acción Expandida",
+        "en": "Core TPR Challenge: Expanded Action"
+      },
+      "duracionSegundos": 270,
+      "lamina": "folla",
+      "consignaDocente": {
+        "gl": "Repartir gasas de seda translúcidas en ocres e amarelos.",
+        "es": "Repartir gasas de seda translúcidas en ocres y amarillos.",
+        "en": "Hand out translucent ochre and yellow silk scarves."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.outubro.4i.01",
+          "textoIngles": "Blow like the autumn wind",
+          "accionFisica": {
+            "gl": "Sopro suave e continuo mentres se eleva a gasa por riba da cabeza.",
+            "es": "Soplo suave y continuo mientras se eleva la gasa por encima de la cabeza.",
+            "en": "Soft continuous blow while lifting the scarf overhead."
+          },
+          "modeladoDocente": {
+            "gl": "A docente sopra e eleva a súa gasa ao mesmo tempo que di a orde.",
+            "es": "La docente sopla y eleva su gasa a la vez que dice la orden.",
+            "en": "Teacher blows and lifts her own scarf while saying the command."
+          }
+        },
+        {
+          "id": "cmd.outubro.4i.02",
+          "textoIngles": "Spin around and fall down like a leaf",
+          "accionFisica": {
+            "gl": "Xiro lento sobre o propio eixe e caída controlada sentados na alfombra.",
+            "es": "Giro lento sobre el propio eje y caída controlada sentados en la alfombra.",
+            "en": "Slow turn on the axis and controlled fall to sitting on the rug."
+          },
+          "modeladoDocente": {
+            "gl": "Xiro modelado a media velocidade, coa gasa á vista, e sentada final visible.",
+            "es": "Giro modelado a media velocidad, con la gasa a la vista, y sentada final visible.",
+            "en": "Half-speed modeled turn with the scarf visible and a clear final sit."
+          }
+        },
+        {
+          "id": "cmd.outubro.4i.03",
+          "textoIngles": "Pick up two acorns and put them in the basket",
+          "accionFisica": {
+            "gl": "Recoller dúas landras do chan e depositalas nun cesto de vimbio.",
+            "es": "Recoger dos bellotas del suelo y depositarlas en un cesto de mimbre.",
+            "en": "Pick up two acorns from the floor and drop them into the wicker basket."
+          },
+          "modeladoDocente": {
+            "gl": "Conta co dedo dúas veces mentres recolle, sen pedir que ninguén conte en voz alta.",
+            "es": "Cuenta con el dedo dos veces mientras recoge, sin pedir que nadie cuente en voz alta.",
+            "en": "Counts twice with a finger while collecting, never asking for spoken counting."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "vento",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.outubro.4i.01",
+    "titulo": {
+      "gl": "O paseo das follas",
+      "es": "El paseo de las hojas",
+      "en": "The Leaf Walk"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Nun paseo polo parque ou polo monte",
+      "es": "En un paseo por el parque o por el monte",
+      "en": "On a walk in the park or the woods"
+    },
+    "objetivoAutonomia": {
+      "gl": "Recoller follas e piñas xuntos, nomeando o que se colle sen pedir tradución.",
+      "es": "Recoger hojas y piñas juntos, nombrando lo que se coge sin pedir traducción.",
+      "en": "Collect leaves and pine cones together, naming what you pick without asking for translation."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Folla!",
+          "es": "¡Hoja!",
+          "en": "Leaf!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Si! A big dry leaf! Put the big leaf in the bag. Look how it crunches!",
+          "es": "¡Sí! A big dry leaf! Put the big leaf in the bag. ¡Mira cómo cruje!",
+          "en": "Yes! A big dry leaf! Put the big leaf in the bag. Look how it crunches!"
+        },
+        "consejoEvitar": {
+          "gl": "Evitar «como se di folla en inglés?». Recoller xuntos e nomear, sen exame.",
+          "es": "Evitar «¿cómo se dice hoja en inglés?». Recoger juntos y nombrar, sin examen.",
+          "en": "Avoid «how do you say leaf?». Collect together and name it, with no test."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No parque ou no camiño do monte, cunha bolsa de tea para o que se atope.",
+      "es": "En el parque o en el camino del monte, con una bolsa de tela para lo que se encuentre.",
+      "en": "In the park or on a woodland path, with a cloth bag for whatever turns up."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

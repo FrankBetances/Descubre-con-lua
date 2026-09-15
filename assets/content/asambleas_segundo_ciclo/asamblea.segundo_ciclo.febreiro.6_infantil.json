@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.febreiro.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 2,
+  "titulo": {
+    "gl": "Febreiro: O Entroido e o xogo das máscaras",
+    "es": "Febrero: El Entroido y el juego de las máscaras",
+    "en": "February: Entroido Carnival and the Mask Game"
+  },
+  "centroInteres": {
+    "gl": "O escultor de disfraces",
+    "es": "El escultor de disfraces",
+    "en": "The Costume Sculptor"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "careta",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning bells! Shake your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "cascabel",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales",
+        "en": "Core TPR Challenge: Peer-to-Peer Commands"
+      },
+      "duracionSegundos": 270,
+      "lamina": "amiga",
+      "consignaDocente": {
+        "gl": "Por parellas, un escolar adopta o rol de escultor e posiciona os brazos e as pernas do compañeiro mediante indicacións orais en L3.",
+        "es": "Por parejas, un escolar adopta el rol de escultor y posiciona los brazos y las piernas del compañero mediante indicaciones orales en L3.",
+        "en": "In pairs, one child acts as sculptor and positions a peer's arms and legs through spoken L3 directions."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.febreiro.6i.01",
+          "textoIngles": "Put your arms up and your left foot forward",
+          "accionFisica": {
+            "gl": "Colocación postural seguindo a indicación oral do compañeiro.",
+            "es": "Colocación postural siguiendo la indicación oral del compañero.",
+            "en": "Postural placement following a peer's spoken direction."
+          },
+          "modeladoDocente": {
+            "gl": "Entrega a tarxeta icónica e afástase da parella.",
+            "es": "Entrega la tarjeta icónica y se aleja de la pareja.",
+            "en": "Hands over the icon card and moves away from the pair."
+          }
+        },
+        {
+          "id": "cmd.febreiro.6i.02",
+          "textoIngles": "Your turn: now you are the sculptor",
+          "accionFisica": {
+            "gl": "Intercambio de rol entre os dous membros da parella.",
+            "es": "Intercambio de rol entre los dos miembros de la pareja.",
+            "en": "Role swap between the two members of the pair."
+          },
+          "modeladoDocente": {
+            "gl": "Marca a quenda cun toque de clave e nada máis.",
+            "es": "Marca el turno con un toque de clave y nada más.",
+            "en": "Marks the turn with a single clave tap and nothing else."
+          }
+        },
+        {
+          "id": "cmd.febreiro.6i.03",
+          "textoIngles": "Look at the card and copy the shape",
+          "accionFisica": {
+            "gl": "Lectura da tarxeta icónica e reprodución corporal da postura.",
+            "es": "Lectura de la tarjeta icónica y reproducción corporal de la postura.",
+            "en": "Read the icon card and reproduce the posture with the body."
+          },
+          "modeladoDocente": {
+            "gl": "Ofrece tarxetas sen texto e deixa decidir á parella.",
+            "es": "Ofrece tarjetas sin texto y deja decidir a la pareja.",
+            "en": "Offers text-free cards and lets the pair decide."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "manta",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.febreiro.6i.01",
+    "titulo": {
+      "gl": "As estatuas do corredor",
+      "es": "Las estatuas del pasillo",
+      "en": "Hallway Statues"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Antes do baño, no corredor",
+      "es": "Antes del baño, en el pasillo",
+      "en": "Before the bath, in the hallway"
+    },
+    "objetivoAutonomia": {
+      "gl": "Xogo de estatuas por quendas: manda a crianza e obedece o adulto.",
+      "es": "Juego de estatuas por turnos: manda la criatura y obedece el adulto.",
+      "en": "Turn-taking statue game: the child commands and the adult obeys."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Tú freeze!",
+          "es": "¡Tú freeze!",
+          "en": "You freeze!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Your turn! I freeze. Now you: walk on the line and... freeze! Perfect statue.",
+          "es": "Your turn! I freeze. Now you: walk on the line and... freeze! Perfect statue.",
+          "en": "Your turn! I freeze. Now you: walk on the line and... freeze! Perfect statue."
+        },
+        "consejoEvitar": {
+          "gl": "Que mande a crianza é o obxectivo: obedecer é o mellor modelado.",
+          "es": "Que mande la criatura es el objetivo: obedecer es el mejor modelado.",
+          "en": "The child commanding is the goal: obeying is the best modelling."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No corredor, cunha cinta no chan para marcar a liña.",
+      "es": "En el pasillo, con una cinta en el suelo para marcar la línea.",
+      "en": "In the hallway, with tape on the floor marking the line."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}
