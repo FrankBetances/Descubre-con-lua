@@ -47,7 +47,7 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 
 | | |
 | --- | --- |
-| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | Para la docente y la familia: cómo funciona una asamblea de ocho minutos, y 15 casos de uso con sus imágenes de pantalla. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | Para la docente y la familia: seis capítulos —qué es y qué no es, antes de empezar, el mapa de la app, cómo funciona una asamblea de ocho minutos, los límites de esta versión y qué hacer si algo va mal— con 20 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
 | [**CLAUDE.md**](CLAUDE.md) | Reglas de trabajo del proyecto |
@@ -58,40 +58,64 @@ comprobado y nombra el comando que lo comprobó.
 
 ## Estado
 
-Resumen honesto: **`main` pasa sus 15 gates**, el binario **no lleva ni un
-permiso de red**, las **1010 locuciones tienen grabación** y de cada run de
+Resumen honesto: **`main` pasa sus 16 gates**, el binario **no lleva ni un
+permiso de red**, las **1020 locuciones tienen grabación** y de cada run de
 `main` sale un **AAB firmado con la clave de release**, listo para Play Console.
 
 | | |
 | --- | --- |
-| Último run verde de `main` | 74 · APK 55,5 MB · AAB 81,3 MB · `versionCode` 74 |
-| Tests | 265 |
-| Contenido | 10 unidades de aula, una por mes del curso · 11 cápsulas entre Academy y formación docente · 10 meses de calendario |
-| Voz | 1010 locuciones (438 gl + 438 es + 134 en) dentro del paquete |
+| Último run verde de `main` | [Gates #89](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/34861022894) sobre `f13a92b` · `versionCode` 89 · APK 56,0 MB · AAB 81,7 MB (tamaño de los artefactos del run) |
+| Gates | **16** en `tools/gates.sh` · 14 con `--fast`; los otros dos compilan el APK de release y auditan sus permisos |
+| Tests | 245 |
+| Contenido | 10 unidades de aula, una por mes del curso · 11 cápsulas (5 de Academy + 6 de formación docente) · 10 meses de calendario · 6 fases de asamblea |
+| Voz | 1020 locuciones (443 gl + 443 es + 134 en) dentro del paquete |
 | Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
+| Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos del adulto |
+| Android | `minSdk 24` · `compileSdk` y `targetSdk` **36**, que es lo que Play exige desde el rechazo del `versionCode` 80 por apuntar a la API 34 |
+
+**De dónde sale cada número.** Lo del run —verde, `versionCode`, tamaños— está
+leído de la API de Actions del run #89, que corre sobre `f13a92b`, la cabeza de
+`main`. Los gates, el contenido, la voz, las láminas y los premios están
+contados sobre el repositorio en este contenedor. Los **245 tests** NO los he
+vuelto a ejecutar: **aquí no hay Flutter instalado**, así que la cuenta viene de
+`STATUS.md`, que la midió con `flutter test --exclude-tags capturas` sobre
+`39fa44a`, hoy dentro de `main`; lo que sí he hecho es contar 240 declaraciones
+de `test(`/`testWidgets(` en `test/`, que es coherente con esa cifra pero no la
+sustituye.
 
 Lo que no está comprobado, y no lo arregla ningún run verde:
 
 - **Ninguna pantalla se ha visto en un aparato.** Lo que sí está comprobado es
-  que caben: `filtro_edad_test.dart` y `calendario_escala_test.dart` abren las
-  pantallas en gallego y castellano, a escala de texto 1,0 y 1,8, y fallan si
-  algo desborda. Eso caza los desbordes; no caza la muesca, la barra de gestos,
-  la densidad real ni el audio sonando.
+  que caben: `filtro_edad_test.dart`, `asamblea_escala_test.dart`,
+  `academy_escala_test.dart` y `calendario_escala_test.dart` abren las pantallas
+  en gallego y castellano, a escala de texto 1,0 y 1,8, y fallan si algo
+  desborda. Eso caza los desbordes; no caza la muesca, la barra de gestos, la
+  densidad real ni el audio sonando. Con `targetSdk 36` el borde a borde es
+  obligatorio en Android 15+, así que esta es la comprobación que más falta
+  hace.
 - **Nadie ha escuchado las voces.** Ni el galego de Celtia ni el inglés de
   LJSpeech. Ningún gate dice si una frase sale imitable para una docente.
 - **Los picos de audio SÍ se miden ya**, y esto está aquí porque durante meses
   no fue verdad: el gate escribía `SKIP: ffmpeg is not installed` y el script lo
   contaba como PASS, o sea un salto leyéndose como una comprobación. Ahora el
   job instala `ffmpeg` y el gate FALLA si hay grabaciones y no hay con qué
-  medirlas. Las 1010 están medidas y ninguna supera el techo de −1,0 dBFS.
-  **Aviso: cuatro se quedan exactamente en −1,0**, así que el gate no tiene
-  margen y la próxima síntesis puede ponerlo rojo. Se arregla remasterizando
-  esas cuatro, no subiendo el techo.
+  medirlas. El techo es **−1,0 dBFS** (`CEILING_DBFS` en
+  `tools/check_voice_levels.py`) y el gate pasó en el run #89 con las 1020.
+  **Aviso: en una síntesis anterior cuatro grabaciones se quedaban exactamente
+  en −1,0**, o sea sin margen. *Eso no lo he vuelto a medir —en este contenedor
+  no hay `ffmpeg`—*, así que sigue siendo razonable esperar que la próxima
+  síntesis ponga el gate en rojo. Se arregla remasterizando esas grabaciones, no
+  subiendo el techo.
 
-Lo que sí se ha cerrado desde la versión anterior de este README: el
-vocabulario ya tiene pantalla donde verse (la fase 2 de la asamblea, con su
-lámina y las tres lenguas), el cuento ya lleva sus 30 escenas, y el manual ya
-documenta el Calendario Escola·Fogar y la Guía de inglés, con 20 casos de uso.
+Lo que sí se ha cerrado desde la versión anterior de este README:
+
+- **Lúa entra en las actividades**, que es lo último mergeado a `main`: el
+  cierre de cada cápsula de Academy (`luaDice`) y la gata al frente de la nota
+  que cruza del aula a la casa. Antes solo estaba en el cuento.
+- **`targetSdk 36`** y las cinco pantallas que quedaban debajo de la barra de
+  gestos.
+- El **capítulo 5 del manual** ya no lleva las tres filas que eran contabilidad
+  interna del proyecto en un documento que lee el Concello.
 
 Defectos abiertos que hay que mirar antes de publicar:
 
@@ -115,20 +139,29 @@ tools/gates.sh          # además compila el APK release y audita sus permisos
 ```
 
 CI ejecuta ese mismo script (`.github/workflows/ci.yml`). La lista de gates vive
-en el script, no en un documento que se pueda quedar atrás:
+en el script, no en un documento que se pueda quedar atrás. Esta tabla es una
+copia de cortesía, en el orden en que corren; si discrepa de `tools/gates.sh`,
+manda el script:
 
 | Gate | Qué comprueba |
 | --- | --- |
 | `dart format` · `flutter analyze` · `flutter test` | Formato, análisis y la suite, ejecutándose de verdad |
 | `check_contact_email.py` | Que no aparezca ningún correo distinto del fijo del proyecto |
+| `check_bundled_assets.py` | Que todo activo que el código pide exista y viaje dentro del paquete |
+| `check_laminas.py` | Que cada forma de cada lámina se pinte de verdad, y no salga una lámina en blanco |
+| `check_no_emoji.py` | Que no se use emoji del sistema como iconografía (regla 5) |
 | `export_voice_corpus.py --check` | Que el corpus de voz siga sincronizado con los textos |
 | `check_pulse_bpm.py` | Que el tempo mostrado sea el que suena, **medido del audio** |
 | `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |
 | `check_voice_coverage.py` | Que toda locución reproducible tenga grabación en el paquete |
 | `check_voice_levels.py` | Que ninguna grabación del paquete pique cerca de saturación, **medido del fichero** |
 | `check_manual_build.py` | Que el PDF y el Word del manual salgan del HTML actual y no de uno anterior |
+| `check_legal_urls.py --offline` | Que las páginas legales de `docs/` existan, sean lo que dicen ser y lleven el correo fijo |
 | `flutter build apk --release` | Que el APK compile |
 | Permisos del APK | Que el **binario** no declare más permiso que el que inyecta AndroidX |
+
+Los dos últimos solo corren sin `--fast`: son los que necesitan el SDK de
+Android. Por eso `--fast` da **14 de 14** y el run completo, **16 de 16**.
 
 ## Publicar
 
@@ -284,7 +317,9 @@ El texto vive en un solo sitio a propósito: cuando el constructor lleva su
 propia copia, la fuente avanza y el documento generado se queda describiendo una
 versión anterior sin que nada avise.
 
-Las 14 imágenes de pantalla viven en `docs/capturas/` y se regeneran con:
+Las 20 imágenes que el manual incrusta viven en `docs/capturas/` —que guarda 32
+PNG en total, porque también están las de las láminas y las que aún no entran en
+el manual— y se regeneran con:
 
 ```bash
 flutter test --tags capturas --update-goldens test/capturas_test.dart
@@ -329,12 +364,12 @@ lib/data/       modelos, cargador, repositorio, validador de contenido
 lib/features/   juega/ (aula, asamblea de 6 fases, metrónomo, formación docente)
                 academy/ (familias) · calendario/ (escola·fogar, 10 meses)
                 premios/ (insignias y medallas) · bienvenida/ · creditos/
-assets/content/ unidades, cápsulas y calendario en JSON, bilingües
+assets/content/ unidades, cápsulas, asamblea y premios en JSON, bilingües
                 calendario/ (10 meses + guía de inglés en casa)
 assets/voice/   grabaciones neuronales (generadas en CI)
 assets/brand/   rejilla de píxeles de Lúa: de aquí salen icono y splash
                 awards/ (los 10 glifos de insignia) · logos/ (marcas)
-docs/capturas/  las imágenes de pantalla (14 del manual + calendario y guía)
+docs/capturas/  32 PNG del motor de Flutter; 20 los incrusta el manual
 tools/          gates y tubería de voz
 LICENSE.md      condiciones de uso: familias gratis, instituciones con licencia
 ```
