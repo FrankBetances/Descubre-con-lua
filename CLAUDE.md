@@ -11,6 +11,59 @@ Todo el contenido está en gallego y castellano. La primera versión la generó 
 
 > Este repositorio es **público**. Lo que se escriba aquí lo lee cualquiera, así que en este fichero y en los demás documentos no entran ni incidencias de otros productos, ni fechas de rechazos de tienda, ni nombres de ficheros internos ajenos, ni el estado de las claves de firma.
 
+## LAS CINCO REGLAS
+
+Las dictó Frank. **Mandan sobre todo lo demás de este fichero.** Si algo de más abajo las contradice, ganan ellas. Se citan como **R1…R5** —no como «regla 1»— porque «regla 1», «regla 1c» y «regla 5» ya nombran las reglas de trabajo de más abajo, que están citadas desde el código, los tests y `docs/`.
+
+### R1 · Honestidad ante todo
+
+Manda sobre las otras cuatro. No se afirma nada que no se haya comprobado, y se nombra con qué se comprobó. No se presenta la propia actividad como estado del producto. Si algo no se ha mirado, se dice **«esto no lo he verificado»**, con esas palabras.
+
+Dos casos que ya han pasado y que cuentan como mentira aunque no lo parezcan:
+
+- dar por bueno un número que viene de un documento, sin decir que viene de un documento;
+- dar por literal el **resumen** que ha hecho otra herramienta de un fichero. Un resumen no es el fichero: si no se ha leído el original, se dice.
+
+Desarrollo: regla 0 y regla 2.
+
+### R2 · Nunca atajos. Siempre el trabajo completo
+
+«Hecho» se mide en capas, no en ficheros tocados. Un cambio de contenido vive en el JSON gallego, el JSON castellano, el audio gallego, el audio castellano, el imprimible, la interfaz y la documentación: **se enumeran las capas y se dice cuál se ha mirado y cuál no.**
+
+Si el encargo tiene cinco partes y una se atasca, se terminan las otras cuatro enteras y se dice cuál falta y por qué. Entregar la parte fácil y callar la difícil es un atajo. Reducir el alcance lo decide Frank, no Claude Code.
+
+Desarrollo: reglas 1b, 5, 5b y 6.
+
+### R3 · Revisar todo antes de entregar
+
+Antes de decir que algo está listo se revisa **lo entregado**, no lo recordado: se relee el diff propio buscando qué lo tumbaría, se corren los gates, se miran las capturas en gallego y en castellano, y se comprueba que los enlaces y las referencias sigan apuntando a algo que existe.
+
+La revisión incluye **lo entregado en turnos anteriores de la misma tarea**. Si al revisar aparece un fallo propio ya empujado, se corrige y se dice; no se deja correr porque ya esté en la rama.
+
+Desarrollo: reglas 1, 1b, 1c y 4.
+
+### R4 · Nada confidencial en un documento público
+
+Este repositorio es público, y lo son **todos** sus ficheros: el README, el manual, `STATUS.md`, `PROJECT.md` y este mismo `CLAUDE.md`. Antes de escribir una línea en cualquiera de ellos: *si esto lo lee el Concello, una familia o un evaluador, ¿les sirve, o solo cuenta cómo va la obra por dentro —o cómo va otro producto de la casa—?*
+
+Nunca, en ninguno de los ficheros de este repositorio: rechazos de tienda con sus fechas, números de versión o motivos; el estado de las claves de firma; incidencias, clientes, fechas o nombres de fichero de **otros productos de la casa**.
+
+Desarrollo: regla 0b.
+
+### R5 · Hacer todo lo posible por completar la tarea
+
+Un obstáculo no es el final del encargo. Antes de parar se prueban las vías que quedan, empezando por la menos invasiva, y se agotan.
+
+Y lo que R5 **no** autoriza:
+
+- no autoriza a ensanchar el encargo. Se agotan las vías **dentro** de lo pedido; lo que no se pidió sigue sin tocarse (regla 0a);
+- no autoriza a inventarse el resultado que no se pudo obtener. **R1 manda sobre R5**: si una vía queda bloqueada, se dice que quedó bloqueada y con qué motivo exacto;
+- no autoriza a saltarse un permiso denegado por una vía torcida. Se busca la vía legítima más sencilla; si tampoco, se para y se explica qué permiso hace falta.
+
+Parar con las manos vacías solo vale si seguir sería inseguro, o si el resultado sería inútil en caso de equivocarse. En cualquier otro caso se entrega todo lo demás terminado y se dice, en una línea, qué falta y qué se necesita para cerrarlo.
+
+---
+
 ## Reglas de producto
 
 Este archivo importaba `.agents/rules/01-producto.md`, `02-flutter-android.md` y `03-contenido.md`. **Esos tres ficheros no existen en el repositorio**, así que las importaciones se han retirado: un import roto no es una regla, es una regla que nadie lee. Estas son las reglas, sin depender de ningún import:
@@ -27,9 +80,11 @@ Plataforma de esta fase: **solo Android**. No crees ni borres `ios/`.
 
 ## Reglas de trabajo (obligatorias, no negociables)
 
-Heredadas del proyecto anterior de la casa y adaptadas a Flutter. Nacieron de errores reales, cada uno con su coste. No son buenas prácticas genéricas: son lo que ya salió mal.
+**Son el desarrollo de las cinco de arriba, no una lista aparte.** Donde R1…R5 dicen qué, estas dicen cómo, y en caso de choque manda R1…R5. Heredadas del proyecto anterior de la casa —solo las reglas: ni sus incidencias, ni sus clientes, ni sus nombres de fichero, que R4 deja fuera— y adaptadas a Flutter. Nacieron de errores reales. No son buenas prácticas genéricas: son lo que ya salió mal.
 
-### 0. No afirmes nada que no hayas comprobado. Manda sobre todas las demás
+Su numeración se conserva —0, 0a, 0b, 1, 1b, 1c, 2…7— porque el código, los tests y `docs/` las citan por ese número.
+
+### 0. No afirmes nada que no hayas comprobado · desarrollo de R1
 
 | Puedes decir | Cuándo |
 | --- | --- |
@@ -49,7 +104,7 @@ Coste heredado: se dijo «está hecho» tres veces sin haber mirado, y a la terc
 
 Coste propio: este proyecto llegó a declarar «1443/1443 · CERTIFIED READY FOR PRODUCTION» mientras la app no compilaba. El certificador leía los `.dart` y comprobaba que contuvieran `import flutter_test`.
 
-### 0a. No actúes sin autorización
+### 0a. No actúes sin autorización · límite de R5
 
 **No hagas nada que Frank no haya pedido.** Decide él. Si ves algo que convendría cambiar, **no lo cambies: díselo en una frase y espera.** Estas tres cosas no son un sí:
 
@@ -61,7 +116,7 @@ Coste propio: este proyecto llegó a declarar «1443/1443 · CERTIFIED READY FOR
 
 Coste heredado: un trabajo pedido para el galego tocó también un formulario que nadie mandó tocar, y el cambio salió publicado sin que nadie lo hubiera aprobado.
 
-### 0b. Este repositorio es PÚBLICO. El README es un escaparate, no un parte de trabajo
+### 0b. Este repositorio es PÚBLICO · desarrollo de R4
 
 Lo escrito aquí lo lee cualquiera: una familia, una escuela, el Concello, un evaluador de convocatoria. **El README describe el producto. No lleva contabilidad interna del proyecto.**
 
@@ -77,7 +132,7 @@ Nada de esto desaparece: **va a `STATUS.md`**, que es el fichero cuya regla es q
 
 La prueba antes de escribir una línea en el README: *si esto lo lee el Concello o una familia, ¿les sirve, o solo cuenta cómo va la obra por dentro?* Si es lo segundo, va a `STATUS.md`.
 
-Coste propio: este README llegó a llevar el rechazo de un `versionCode` por apuntar a una API vieja, con el número dentro, en un documento público. Lo escribió Claude Code mientras el propio fichero ya decía, tres líneas más arriba, que eso no entra.
+Coste propio: el README llegó a llevar un dato de operación de tienda que este mismo fichero ya prohibía tres líneas más arriba. Lo escribió Claude Code. Que la regla estuviera escrita no bastó, porque estaba en una cita suelta y no en una regla numerada; por eso ahora lo es.
 
 ### 1. No digas que una pantalla está hecha sin haberla mirado
 
