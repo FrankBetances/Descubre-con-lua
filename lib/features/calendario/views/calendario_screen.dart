@@ -6,6 +6,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/unidad_model.dart';
@@ -387,7 +388,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                       constraints: BoxConstraints(
                         maxHeight: restricciones.maxHeight * 0.55,
                       ),
-                      child: SingleChildScrollView(
+                      child: PaxinaSenScroll(
+                    desprazarSeNonCabe: true,
                         padding: const EdgeInsets.fromLTRB(
                           AppTheme.spaceLg,
                           AppTheme.spaceLg,
@@ -499,7 +501,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         : (hoy.month >= 9 ? hoy.year + 1 : hoy.year);
     final estado = widget.store.estadoParaMes(anhoDoMes, mesItem.mesCalendario);
 
-    return SingleChildScrollView(
+    return PaxinaSenScroll(
       padding: const EdgeInsets.symmetric(
         horizontal: AppTheme.spaceSm,
         vertical: AppTheme.spaceSm,

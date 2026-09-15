@@ -5,6 +5,7 @@ import '../../core/brand/lua_pixel.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/widgets/paxina_sen_scroll.dart';
 
 /// Créditos, con la estructura de los del proyecto anterior de la casa
 /// (`docs/screenshots/02-creditos.png`): la gata y el nombre arriba, un
@@ -136,7 +137,7 @@ class CreditsScreen extends StatelessWidget {
             child: ExcludeSemantics(child: _Blob(size: 280)),
           ),
           SafeArea(
-            child: SingleChildScrollView(
+            child: PaxinaSenScroll(
               padding: const EdgeInsets.fromLTRB(
                 AppTheme.spaceXl,
                 AppTheme.spaceXl,

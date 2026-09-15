@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../localization/app_language.dart';
 import '../localization/localized_string.dart';
 import '../theme/app_theme.dart';
+import '../widgets/paxina_sen_scroll.dart';
 
 /// Lo que se ve cuando el contenido de una pantalla no se puede leer.
 ///
@@ -54,7 +55,7 @@ class AvisoContenidoIlegible extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Center(
-      child: SingleChildScrollView(
+      child: PaxinaSenScroll(
         padding: const EdgeInsets.all(AppTheme.spaceXl),
         child: Column(
           mainAxisSize: MainAxisSize.min,

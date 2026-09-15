@@ -3,6 +3,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/brand/lamina_vector.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../widgets/academy_header.dart';
 import '../widgets/recast_guia_card.dart';
 import '../widgets/selector_idioma_widget.dart';
@@ -118,9 +119,11 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
           ),
         ],
       ),
-      body: ListView(
+      body: PaxinaSenScroll(
         padding: EdgeInsets.zero,
-        children: [
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
           // Cabeceira gráfica Academy
           AcademyHeader(
             kicker: _kicker.resolve(_language),
@@ -298,8 +301,8 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
               ],
             ),
           ),
-        ],
-      ),
+          ],
+        )),
     );
   }
 }

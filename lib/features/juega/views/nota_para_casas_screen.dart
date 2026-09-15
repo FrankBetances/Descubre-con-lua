@@ -7,6 +7,7 @@ import '../../../core/brand/lua_pixel.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/models/unidad_model.dart';
 import '../widgets/barra_ingles_widget.dart';
 
@@ -82,9 +83,11 @@ class NotaParaCasasScreen extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-        child: ListView(
+        child: PaxinaSenScroll(
           padding: const EdgeInsets.all(AppTheme.spaceLg),
-          children: [
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
             // Lúa encabeza la nota porque la nota HABLA de ella: el mensaje
             // para las familias de cada unidad la nombra («hoxe navegamos coa
             // gata Lúa»), y hasta ahora la familia oía el nombre en la puerta
@@ -196,8 +199,8 @@ class NotaParaCasasScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: AppTheme.spaceXl),
-          ],
-        ),
+            ],
+          )),
       ),
     );
   }

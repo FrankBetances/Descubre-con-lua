@@ -4,6 +4,7 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
@@ -155,9 +156,11 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
       // consume el AppBar; volver a pedirlo aquí no suma nada.
       body: SafeArea(
         top: false,
-        child: ListView(
+        child: PaxinaSenScroll(
           padding: EdgeInsets.zero,
-          children: [
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
             AcademyHeader(
               kicker: _kicker.resolve(lang),
               titulo: _titulo.resolve(lang),
@@ -314,8 +317,8 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                 ],
               ),
             ),
-          ],
-        ),
+            ],
+          )),
       ),
     );
   }

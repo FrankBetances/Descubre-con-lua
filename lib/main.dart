@@ -4,6 +4,7 @@ import 'core/audio/offline_audio_service.dart';
 import 'core/localization/app_language.dart';
 import 'core/localization/localized_string.dart';
 import 'core/theme/app_theme.dart';
+import 'core/widgets/paxina_sen_scroll.dart';
 import 'data/models/capsula_model.dart';
 import 'data/models/unidad_model.dart';
 import 'data/repositories/content_repository.dart';
@@ -323,9 +324,11 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: SafeArea(
-        child: ListView(
+        child: PaxinaSenScroll(
           padding: const EdgeInsets.all(16.0),
-          children: [
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
@@ -488,8 +491,8 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-          ],
-        ),
+            ],
+          )),
       ),
     );
   }

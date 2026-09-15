@@ -5,6 +5,7 @@ import '../../core/brand/pixel_award.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/widgets/paxina_sen_scroll.dart';
 import '../../data/models/calendario_model.dart';
 import 'medallas_widget.dart';
 import 'premios_model.dart';
@@ -141,14 +142,16 @@ class _PremiosScreenState extends State<PremiosScreen> {
                 .where((i) => progreso.insignias.contains(i.id))
                 .length;
 
-            return ListView(
+            return PaxinaSenScroll(
               padding: const EdgeInsets.fromLTRB(
                 AppTheme.spaceLg,
                 AppTheme.spaceLg,
                 AppTheme.spaceLg,
                 AppTheme.spaceXxl,
               ),
-              children: [
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
                 _SelectorPerfil(
                   perfil: _perfil,
                   docente: _docente.resolve(lang),
@@ -207,8 +210,8 @@ class _PremiosScreenState extends State<PremiosScreen> {
                   _nota.resolve(lang),
                   style: text.bodySmall?.copyWith(color: AppTheme.textMuted),
                 ),
-              ],
-            );
+                ],
+              ));
           },
         ),
       ),

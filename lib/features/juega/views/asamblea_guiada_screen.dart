@@ -3,6 +3,7 @@ import '../../../core/audio/local_audio_player.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/models/unidad_model.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
 import '../widgets/paso_cancion_widget.dart';
@@ -438,9 +439,17 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
 
             // Main Phase Content View
             Expanded(
-              child: ListView(
+              child: PaxinaSenScroll(
+              // Esta es la asamblea VIEJA de seis pasos del 1.º ciclo, la que
+              // venía del encargo original. No está en los documentos
+              // curriculares de Frank, que piden CUATRO fases, y su contenido
+              // no cabe ni encogido al 80 %. Hasta que se retire en favor del
+              // reproductor nuevo, se deja desplazar antes que recortar texto.
+              desprazarSeNonCabe: true,
                 padding: const EdgeInsets.all(20.0),
-                children: [
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
                   _buildContenidoDelPaso(),
                   const SizedBox(height: AppTheme.spaceLg),
                   // Ni un ExpansionTile ni un acordeón por bloque: un solo
@@ -471,8 +480,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                     ),
                   ),
                   const SizedBox(height: 32.0),
-                ],
-              ),
+                  ],
+                )),
             ),
 
             // El inglés de la fase, ANCLADO encima de la navegación.

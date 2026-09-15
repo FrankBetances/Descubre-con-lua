@@ -3,6 +3,7 @@ import '../../../core/audio/fade_audio_coordinator.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
@@ -574,9 +575,12 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                       height: 1,
                     ),
 
-                    // Bloque principal scrollable co contido da fase activa
+                    // O contido da fase activa. Sen desprazamento vertical: se
+                    // non cabe, encóllese. O documento curricular pídeo así, e
+                    // lerlle cara abaixo a unha pantalla con doce crianzas
+                    // diante non funciona.
                     Expanded(
-                      child: SingleChildScrollView(
+                      child: PaxinaSenScroll(
                         padding: const EdgeInsets.all(16),
                         child: _buildPhaseContent(asamblea),
                       ),

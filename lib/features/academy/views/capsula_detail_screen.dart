@@ -6,6 +6,7 @@ import '../../../core/brand/lua_pixel.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/models/capsula_model.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
@@ -405,7 +406,7 @@ class _PaginaSeccion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = Theme.of(context).textTheme;
-    return SingleChildScrollView(
+    return PaxinaSenScroll(
       child: Column(
         children: [
           cabecera,
@@ -491,7 +492,7 @@ class _PaginaLua extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = Theme.of(context).textTheme;
-    return SingleChildScrollView(
+    return PaxinaSenScroll(
       child: Column(
         children: [
           cabecera,
@@ -572,7 +573,7 @@ class _PaginaReflexion extends StatelessWidget {
     final text = Theme.of(context).textTheme;
     final acertada = respuesta == afirmacion.esVerdadera;
 
-    return SingleChildScrollView(
+    return PaxinaSenScroll(
       child: Column(
         children: [
           cabecera,

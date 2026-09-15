@@ -9,6 +9,42 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Fóra o desprazamento vertical de toda a app · **sen mergear** (15/9/2026)
+
+Frank: «quita a merda de scroll de todo». Fíxose, con dúas excepcións medidas
+que se explican abaixo.
+
+A peza nova é `lib/core/widgets/paxina_sen_scroll.dart`: mide o contido co
+ancho real e, se é máis alto que o oco, **encólleo** ata que cabe, cun chan no
+80 % para que non quede ilexible. A escala aplícase ao debuxo e aos toques, así
+que os botóns seguen respondendo onde se ven.
+
+| Pantalla | Que había | Que hai |
+| --- | --- | --- |
+| Inicio, Benvida, Créditos | `ListView` / `SingleChildScrollView` | Páxina que cabe |
+| Academy · bloques e lector de cápsulas | Desprazable por páxina | Páxina que cabe; o lector xa ía por páxinas |
+| Micro-rutina, cápsulas do aula, nota para as casas | `ListView` | Páxina que cabe |
+| Premios, aviso de contido ilexible | `ListView` / desprazable | Páxina que cabe |
+| Backstage do 2.º ciclo | Desprazable no corpo da fase | Páxina que cabe |
+
+**As dúas excepcións, e por que.** A guía de inglés na casa e a ficha do mes do
+calendario **seguen desprazándose**. Mediuse: o seu texto **non cabe nin
+encollido ao 80 %**. Apretar máis a tipografía deixa sen ler a quen pon a letra
+grande do sistema porque ve pouco. O «no scroll» dos dous documentos
+curriculares fala da superficie de traballo —a asemblea, lida dun golpe de
+vista a dous metros—, non dun texto que un adulto le sentado. Para que esas dúas
+deixen de desprazarse hai que **acurtar o seu contido**, non apretar a letra.
+Está escrito no código, con ese motivo.
+
+**Unha pantalla que debería desaparecer.** A asemblea guiada vella de **seis
+pasos** do 1.º ciclo segue aí, colgando do calendario, e tamén se despraza polo
+mesmo motivo. Non está nos documentos de Frank —piden catro fases— e xa existe
+o reprodutor novo que a substitúe. **Non se borrou**: é decisión de Frank.
+
+**Non comprobado**: ningunha destas pantallas se viu nun aparello Android.
+
+---
+
 ## El aula rehecha desde los dos documentos curriculares · **sin mergear** (15/9/2026)
 
 Frank, muchas veces: «la UX del aula está mal», «quita el scroll», «estructurado

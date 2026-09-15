@@ -4,6 +4,7 @@ import '../../core/brand/lua_pixel.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/widgets/paxina_sen_scroll.dart';
 
 /// Pantalla de bienvenida, con la estructura de la del proyecto anterior de la casa
 /// (`docs/screenshots/01-bienvenida.png`): fondo turquesa a sangre, círculos
@@ -86,7 +87,7 @@ class WelcomeScreen extends StatelessWidget {
             // NINGÚN hijo puede ser Expanded ni Flexible aquí, o la altura
             // vuelve a quedar acotada y el desborde regresa.
             child: LayoutBuilder(
-              builder: (context, constraints) => SingleChildScrollView(
+              builder: (context, constraints) => PaxinaSenScroll(
                 padding: const EdgeInsets.symmetric(
                   horizontal: AppTheme.spaceXl,
                   vertical: AppTheme.spaceLg,

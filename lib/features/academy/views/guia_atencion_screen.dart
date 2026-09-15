@@ -6,6 +6,7 @@ import '../../../core/brand/iconos_contenido.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/repositories/calendario_repository.dart';
@@ -164,7 +165,8 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
             ? AvisoContenidoIlegible(asset: fallo, language: _language)
             : guia == null
                 ? const Center(child: CircularProgressIndicator())
-                : SingleChildScrollView(
+                : PaxinaSenScroll(
+                    desprazarSeNonCabe: true,
                     padding: const EdgeInsets.all(AppTheme.spaceLg),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
