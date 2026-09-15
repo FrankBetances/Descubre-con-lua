@@ -1,0 +1,87 @@
+{
+  "id": "academy.segundo_ciclo.setembro.01",
+  "bloqueId": "bilinguismo_y_cultura",
+  "destinatario": "familia",
+  "orden": 2,
+  "titulo": {
+    "gl": "Acollida na escola e linguas na casa: o principio de tempo e lugar",
+    "es": "Acogida en la escuela y lenguas en casa: el principio de tiempo y lugar"
+  },
+  "subtitulo": {
+    "gl": "Como acompañar o Segundo Ciclo con micro-rutinas diarias e modelado indirecto (recast)",
+    "es": "Cómo acompañar el Segundo Ciclo con micro-rutinas diarias y modelado indirecto (recast)"
+  },
+  "tiempoLecturaMinutos": 3,
+  "icono": "home_globe",
+  "ideaClave": {
+    "gl": "No Segundo Ciclo (3-6 anos), a introdución do inglés a través do movemento (TPR) convive en perfecta harmonía co galego e o castelán. A mellor axuda no fogar non son os exames nin traducir, senón micro-rutinas de 3 a 5 minutos baseadas no principio de Tempo e Lugar.",
+    "es": "En el Segundo Ciclo (3-6 años), la introducción del inglés a través del movimiento (TPR) convive en perfecta armonía con el gallego y el castellano. La mejor ayuda en el hogar no son los exámenes ni traducir, sino micro-rutinas de 3 a 5 minutos basadas en el principio de Tiempo y Lugar."
+  },
+  "porQueImporta": {
+    "gl": "Esixir que a crianza fale en inglés ou preguntarlle «como se di isto?» convérteo nun exame, e o exame corta a conversa. Devolverlle a frase ben dita dentro do xogo (modelado indirecto ou recast) valida o que dixo e mantén viva a ganas de falar.",
+    "es": "Exigir que el niño hable en inglés o preguntarle «¿cómo se dice esto?» lo convierte en un examen, y el examen corta la conversación. Devolverle la frase bien dicha dentro del juego (modelado indirecto o recast) valida lo que dijo y mantiene vivas las ganas de hablar."
+  },
+  "queHacerEnCasa": {
+    "gl": "Escolle un nicho cotián de 3 minutos, como colgar o abrigo ao chegar da escola («The Magic Coat Hook»). Se a crianza di «Abrigo chan!», non a corrixas: responde con sorriso e acción motriz: «Si! O abrigo na percha: Up on the hook, zip!».",
+    "es": "Escoge un nicho cotidiano de 3 minutos, como colgar el abrigo al llegar del colegio («The Magic Coat Hook»). Si el niño dice «¡Abrigo suelo!», no lo corrijas: responde con sonrisa y acción motriz: «¡Sí! El abrigo en la percha: Up on the hook, zip!». "
+  },
+  "ejemploCotidiano": {
+    "gl": "No recibidor da casa: a crianza quita a chaqueta con calma. En vez de facer preguntas directas, a nai acompaña o movemento con ritmo: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»",
+    "es": "En el recibidor de casa: el menor se quita la chaqueta con calma. En lugar de hacer preguntas directas, la madre acompaña el movimiento con ritmo: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»"
+  },
+  "afirmaciones": [
+    {
+      "id": "afirmacion_01",
+      "enunciado": {
+        "gl": "O modelado indirecto (recast) axuda máis á aprendizaxe que pedir que repita a frase ben dita.",
+        "es": "El modelado indirecto (recast) ayuda más al aprendizaje que pedir que repita la frase bien dicha."
+      },
+      "esVerdadera": true,
+      "explicacion": {
+        "gl": "Exacto: escoitar o modelo correcto dentro dunha conversa real e agarimosa deixa a porta aberta a seguir falando; esixir a repetición pecha a conversa.",
+        "es": "Exacto: escuchar el modelo correcto dentro de una conversación real y afectuosa deja la puerta abierta a seguir hablando; exigir la repetición cierra la conversación."
+      }
+    },
+    {
+      "id": "afirmacion_02",
+      "enunciado": {
+        "gl": "Para axudar na casa hai que falar en inglés durante todo o día sen mesturar as linguas.",
+        "es": "Para ayudar en casa hay que hablar en inglés durante todo el día sin mezclar las lenguas."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Non é necesario nin recomendable: as linguas ambientais da casa (galego e castelán) son o piar afectivo. O inglés intégrase en pequenos nichos de xogo motriz de 3 a 5 minutos.",
+        "es": "No es necesario ni recomendable: las lenguas ambientales de casa (gallego y castellano) son el pilar afectivo. El inglés se integra en pequeños nichos de juego motriz de 3 a 5 minutos."
+      }
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "luaDice": {
+    "gl": "Son Lúa. Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
+    "es": "Soy Lúa. Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-14",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

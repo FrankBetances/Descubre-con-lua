@@ -1,0 +1,259 @@
+{
+  "id": "asamblea.segundo_ciclo.setembro.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 9,
+  "titulo": {
+    "gl": "Setembro: Acollida, espazos escolares e axuda mutua",
+    "es": "Septiembre: Acogida, espacios escolares y ayuda mutua",
+    "en": "September: Welcome, School Spaces and Mutual Help"
+  },
+  "centroInteres": {
+    "gl": "A organización das perchas persoais e os mandatos entre iguais con tarxetas icónicas",
+    "es": "La organización de las perchas personales y los mandatos entre iguales con tarjetas icónicas",
+    "en": "Personal Coat Hook Organization and Peer-to-Peer Cue Card Commands"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo Cooperativo no Círculo",
+        "es": "Apertura y Saludo Cooperativo en el Círculo",
+        "en": "Opening & Cooperative Circle Greeting"
+      },
+      "duracionSegundos": 90,
+      "lamina": "amiga",
+      "consignaDocente": {
+        "gl": "Reunir ao grupo no círculo. Saúdo cara a cara por parellas enlazando mans con xiro suave e contacto visual cálido. Establecer un clima de pertenza e seguridade.",
+        "es": "Reunir al grupo en el círculo. Saludo cara a cara por parejas enlazando manos con giro suave y contacto visual cálido. Establecer un clima de pertenencia y seguridad.",
+        "en": "Gather the group in the circle. Peer-to-peer greeting holding hands with gentle turning and warm eye contact. Establish belonging and safety."
+      },
+      "cueAcustica": "Good morning partners! Hands together!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico Cruzado e Pulso en Parellas",
+        "es": "Foco Rítmico Cruzado y Pulso en Parejas",
+        "en": "Crossed Rhythmic Focus and Partner Beat"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Pulso constante a 72 BPM con palmadas cruzadas entre parellas (man dereita con dereita, esquerda con esquerda) marcando tempos fortes e débiles sen esixir verbalización.",
+        "es": "Pulso constante a 72 BPM con palmadas cruzadas entre parejas (mano derecha con derecha, izquierda con izquierda) marcando tiempos fuertes y débiles sin exigir verbalización.",
+        "en": "Steady 72 BPM beat with cross-clapping between partners (right to right, left to left) marking strong and weak beats without speech demand."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais (Peer-to-Peer)",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales (Peer-to-Peer)",
+        "en": "Core TPR Challenge: Peer-to-Peer Cue Card Exchanges"
+      },
+      "duracionSegundos": 270,
+      "lamina": "abrigo",
+      "consignaDocente": {
+        "gl": "Intercambio comunicativo entre escolares mediante tarxetas de apoio exclusivamente icónicas (sen texto escrito). Un escolar guía ao compañeiro cara á súa percha e entrega do babi, empregando fórmulas pragmáticas de cortesía.",
+        "es": "Intercambio comunicativo entre escolares mediante tarjetas de apoyo exclusivamente icónicas (sin texto escrito). Un escolar guía al compañero hacia su percha y entrega del babi, empleando fórmulas pragmáticas de cortesía.",
+        "en": "Communicative exchange between children using textless visual cue cards. One child guides a peer to their coat peg and smock delivery, using polite pragmatic formulas."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.setembro.6i.01",
+          "textoIngles": "Walk to the hook and hang your coat",
+          "accionFisica": {
+            "gl": "Camiñar con paso firme cara á percha baixa asignada e colgar o abrigo pola presilla.",
+            "es": "Caminar con paso firme hacia la percha baja asignada y colgar el abrigo por la presilla.",
+            "en": "Walk steadily to the assigned low hook and hang the coat by its loop."
+          },
+          "modeladoDocente": {
+            "gl": "A docente facilita a tarxeta icónica da percha ao alumno guía e media discretamente sen interferir no intercambio.",
+            "es": "La docente facilita la tarjeta icónica de la percha al alumno guía y media discretamente sin interferir en el intercambio.",
+            "en": "Teacher hands the coat peg icon card to the leader child and observes discretely without intruding."
+          }
+        },
+        {
+          "id": "cmd.setembro.6i.02",
+          "textoIngles": "Take the smock, turn around and give it to Noa",
+          "accionFisica": {
+            "gl": "Recoller o babi do cesto, dar un xiro completo sobre un mesmo e entregarllo ao compañeiro con ambas mans.",
+            "es": "Recoger el babi del cesto, dar un giro completo sobre uno mismo y entregárselo al compañero con ambas manos.",
+            "en": "Pick up the smock from the basket, turn completely around, and hand it to a peer with both hands."
+          },
+          "modeladoDocente": {
+            "gl": "Reforzo cinestésico do xesto de entrega e recepción con sorriso e contacto visual directo.",
+            "es": "Refuerzo cinestésico del gesto de entrega y recepción con sonrisa y contacto visual directo.",
+            "en": "Kinesthetic reinforcement of giving and receiving with a smile and direct eye contact."
+          }
+        },
+        {
+          "id": "cmd.setembro.6i.03",
+          "textoIngles": "Sit on the green mat and freeze!",
+          "accionFisica": {
+            "gl": "Desprazarse amodo cara ao cadrante verde da alfombra e adoptar postura inmóbil de acougo.",
+            "es": "Desplazarse despacio hacia el cuadrante verde de la alfombra y adoptar postura inmóvil de calma.",
+            "en": "Move gently to the green rug section and hold a quiet motionless posture."
+          },
+          "modeladoDocente": {
+            "gl": "Sinalización espacial con xesto manual aberto cara á alfombra verde e silencio atento.",
+            "es": "Señalización espacial con gesto manual abierto hacia la alfombra verde y silencio atento.",
+            "en": "Spatial open-palm cue toward the green carpet followed by attentive silence."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Exploración Sensorial de Cunchas das Rías",
+        "es": "Calma y Exploración Sensorial de Conchas de las Rías",
+        "en": "Calm & Sensory Exploration of Ría Shells"
+      },
+      "duracionSegundos": 120,
+      "lamina": "cuncha",
+      "consignaDocente": {
+        "gl": "Repartir unha cuncha de vieira pulida a cada parella. Sentir o peso, a temperatura e a textura acanalada mentres respiramos con ritmo pausado antes de pasar ás tarefas do día.",
+        "es": "Repartir una concha de vieira pulida a cada pareja. Sentir el peso, la temperatura y la textura acanalada mientras respiramos con ritmo pausado antes de pasar a las tareas del día.",
+        "en": "Hand a smooth scallop shell to each pair. Feel weight, cool temperature, and ribbed ridges while breathing slowly before beginning classroom centers."
+      },
+      "comandosL3": [],
+      "repertorioMateriales": [
+        {
+          "id": "cunchas_vieira_pulidas",
+          "nombre": {
+            "gl": "Cunchas naturais de vieira das rías",
+            "es": "Conchas naturales de vieira de las rías",
+            "en": "Natural Polished Ría Scallop Shells"
+          },
+          "procedencia": {
+            "gl": "Recollidas e limpas de xeito sostible no litoral das rías galegas",
+            "es": "Recogidas y limpiadas de forma sostenible en el litoral de las rías gallegas",
+            "en": "Sustainably harvested and cleaned from the Galician coast"
+          },
+          "pautaManipulacion": {
+            "gl": "Acariciar as rañuras con ambas xemas dos dedos e pasala con coidado ao compañeiro.",
+            "es": "Acariciar las estrías con ambas yemas de los dedos y pasarla con cuidado al compañero.",
+            "en": "Stroke the ribbed grooves with fingertips and pass carefully to a partner."
+          },
+          "avisoSeguridad": {
+            "gl": "Pezas de máis de 10 cm de diámetro con bordos suavizados e redondeados, sen risco de cortes.",
+            "es": "Piezas de más de 10 cm de diámetro con bordes suavizados y redondeados, sin riesgo de cortes.",
+            "en": "Pieces larger than 10 cm in diameter with smoothed rounded edges, no cut risk."
+          }
+        }
+      ]
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_2_descubrimento_contorna",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA",
+      "CC"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.3",
+      "CA2.2",
+      "CA3.3"
+    ]
+  },
+  "materialesEntorno": [
+    {
+      "id": "tarxetas_iconicas_madeira",
+      "nombre": {
+        "gl": "Tarxetas icónicas de madeira sen texto",
+        "es": "Tarjetas icónicas de madera sin texto",
+        "en": "Textless Wooden Icon Cue Cards"
+      },
+      "procedencia": {
+        "gl": "Taboíñas de faia pulida gravadas con pictogramas vectoriais de percha, babi e alfombra",
+        "es": "Tablillas de haya pulida grabadas con pictogramas vectoriales de percha, babi y alfombra",
+        "en": "Smooth beechwood tiles engraved with vector icons for coat peg, smock, and rug"
+      },
+      "pautaManipulacion": {
+        "gl": "O alumno guía escolle unha tarxeta do cesto e móstralla ao seu compañeiro como consigna motriz.",
+        "es": "El alumno guía escoge una tarjeta del cesto y se la muestra a su compañero como consigna motriz.",
+        "en": "The guide child selects a card from the basket and shows it to their peer as a movement cue."
+      },
+      "avisoSeguridad": {
+        "gl": "Dimensións de 8x8 cm e 5 mm de grosor con esquinas redondeadas, sen arestas nin pinturas tóxicas.",
+        "es": "Dimensiones de 8x8 cm y 5 mm de grosor con esquinas redondeadas, sin aristas ni pinturas tóxicas.",
+        "en": "Dimensions 8x8 cm and 5 mm thick with rounded corners, no splinters or toxic paints."
+      }
+    }
+  ],
+  "microRutinaHogar": {
+    "id": "micro_rutina.setembro.6i.01",
+    "titulo": {
+      "gl": "O relevo da cea en familia",
+      "es": "El relevo de la cena en familia",
+      "en": "The Family Dinner Relay"
+    },
+    "nichoTiempoMinutos": 5,
+    "momentoDelDia": {
+      "gl": "Durante os preparativos da cea na cociña",
+      "es": "Durante los preparativos de la cena en la cocina",
+      "en": "During dinner preparations in the kitchen"
+    },
+    "objetivoAutonomia": {
+      "gl": "Repartir os garfos e panos de mesa colaborando en parella mediante fórmulas de cortesía.",
+      "es": "Repartir los tenedores y servilletas colaborando en pareja mediante fórmulas de cortesía.",
+      "en": "Distribute forks and napkins collaborating with a partner using polite phrases."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Aquí pano toma!",
+          "es": "¡Aquí servilleta toma!",
+          "en": "Here napkin take!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Moitas grazas! «Here you go! Thank you, Mateo!». Que mesa tan acolledora estamos poñendo xuntos!",
+          "es": "¡Muchas gracias! «Here you go! Thank you, Mateo!». ¡Qué mesa tan acogedora estamos poniendo juntos!",
+          "en": "Thank you so much! «Here you go! Thank you, Mateo!». What a lovely table we are setting together!"
+        },
+        "consejoEvitar": {
+          "gl": "Evitar esixir a tradución: non dicir «Dilo en inglés». O adulto modela a fórmula con calidez no fluxo natural da acción.",
+          "es": "Evitar exigir la traducción: no decir «Dilo en inglés». El adulto modela la fórmula con calidez en el flujo natural de la acción.",
+          "en": "Avoid demanding translation: do not say «Say it in English». Adult models the phrase warmly in the natural flow."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Mesa do comedor familiar con acceso seguro aos caixóns dos panos e cubertos infantís.",
+      "es": "Mesa del comedor familiar con acceso seguro a los cajones de servilletas y cubiertos infantiles.",
+      "en": "Family dining table with safe child access to napkin and cutlery drawers."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-14",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

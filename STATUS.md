@@ -9,6 +9,97 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Los seis defectos que encontró Frank en el 2.º ciclo · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
+
+Frank probó el módulo y devolvió seis cosas. Las seis eran ciertas, y una de
+ellas —el desbordamiento— era peor de lo que él veía.
+
+| Lo que dijo | Qué se encontró al comprobarlo | Qué se hizo |
+| --- | --- | --- |
+| «El diseño UX-UI no me gusta, prefiero el modelo del primer ciclo» | La asamblea de 2.º ciclo tenía su propia piel: fondo casi negro, stepper de cuatro pastillas y cronómetro gigante. Dos lenguajes visuales en un mismo producto | Rehecha con la pieza del primer ciclo: fondo claro, `Fase N de 4` con barra de progreso, aviso de «móvil fuera de la vista» y navegación por «Seguinte Fase» |
+| «El color de la tarjeta de asamblea es incorrecto, el negro no ayuda» | Los tokens `backstage*` eran una paleta oscura aparte, y el botón de cada nivel iba negro con texto verde encima: ilegible | Los tokens apuntan ya a la paleta clara del primer ciclo. El botón, turquesa oscuro con texto blanco |
+| «El texto se desborda donde dice cero pantallas» | **Desbordaba 299 px en gallego y 323 en castellano a escala normal, y 468 px a escala 1,3.** En cualquier móvil | `Wrap` en vez de `Row`, y `Flexible` en la línea. Y 11 filas más de icono+texto por toda la asamblea, que desbordaban igual |
+| «Falta el calendario, eso es un error imperdonable» | Cierto: al 2.º ciclo solo se llegaba por la lista del aula. El Calendario Escola·Fogar no lo mencionaba | La ficha del mes trae los tres niveles al final. Si un mes no tiene asambleas escritas, no se pinta nada |
+| «Faltan las voces en gallego e inglés» | Cierto: `tools/voice_corpus.py` no miraba `asambleas_segundo_ciclo/`, así que el gate de cobertura daba OK sin cubrirlo | 97 locuciones nuevas (42 gl + 42 es + 13 en): consignas, señales y órdenes TPR. Cada una con su altavoz en pantalla |
+| «¿Dónde están los gráficos e imágenes?» | Cierto: cuatro pantallas de prosa seguidas, sin una sola imagen | Lámina en cada fase y en la micro-rutina, del catálogo vectorial que ya existía: `gato`, `man`, `pes`, `mochila`, `abrigo`, `cuncha`, `arbore`, `toalla`, `amiga` |
+
+### Comprobado en este contenedor, con Flutter 3.47.4
+
+| Área | Evidencia |
+| --- | --- |
+| Gates locales | `tools/gates.sh --fast` → **13 de 14 en verde**; el que falta es la cobertura de voz, abajo |
+| Suite completa | `flutter test --exclude-tags capturas` → **340 tests, 0 fallos** |
+| Barrera nueva contra desbordes | `test/features/juega/segundo_ciclo_escala_test.dart`: las dos pantallas del 2.º ciclo, en gallego y castellano, a escala 1,0 y 1,3, sobre 360 dp. **Los ocho casos fallaban al escribirlo** |
+| Imágenes, **miradas** | `aula-lista-2ciclo-{gl,es}.png` —la pantalla que nunca se había retratado y donde estaba el desbordamiento—, `aula-backstage-{gl,es}.png`, `academy-micro-rutina-{gl,es}.png` y el calendario con su bloque de 2.º ciclo |
+
+### Por qué se coló
+
+La captura del turno anterior retrataba el **interior** de la asamblea, nunca la
+lista del aula con la pestaña de 2.º ciclo pulsada, que es la pantalla por la
+que se entra. Dije «capturas miradas» y era verdad de lo que capturé; lo que
+faltaba era capturar lo que importaba. Ahora esa pantalla está en el banco de
+capturas y en el test de escala.
+
+### NO comprobado en esta rama
+
+| Área | Por qué |
+| --- | --- |
+| **Las 97 grabaciones nuevas** | El corpus ya las declara; las sintetiza el workflow `voice-assets` al empujar. Hasta entonces `check_voice_coverage.py` está rojo y los altavoces no se pintan |
+| **Ninguna pantalla se ha visto en un aparato** | Sigue abierto, y es lo único que las capturas del motor no pueden cerrar |
+| **El 2.º ciclo solo cubre septiembre** | Tres asambleas, una por nivel. Los otros nueve meses no están escritos |
+
+---
+
+## La rama `mejora` reconstruida sobre `main` · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
+
+El módulo de asambleas matinales de 2.º ciclo con el inglés como L3 —backstage
+docente, micro-rutina de hogar y cápsula de familia— venía de la rama `mejora`,
+que estaba 43 commits por detrás de `main` y **no compilaba**: usaba
+`LocalizedString(en:)`, que `main` había retirado a propósito en `d79e85a`.
+Aquí se porta encima de `main`, alineado con esa decisión, y se corrige lo que
+salió al correrlo por primera vez.
+
+### Comprobado en este contenedor, con Flutter 3.47.4
+
+| Área | Evidencia |
+| --- | --- |
+| Gates locales | `tools/gates.sh --fast` → **14 de 14 en verde**, con el manual y la voz dentro |
+| Suite completa | `flutter test --exclude-tags capturas` → **332 tests, 0 fallos** |
+| Análisis y formato | `flutter analyze` → *No issues found* · `dart format` limpio |
+| La rama de origen NO compilaba | `flutter analyze` sobre `origin/mejora` en un worktree aparte → **12 errores** en `recast_guia_card.dart` y 3 en tests. Sus `GATE_STATUS.md` decían «PASS» y «CLEAN»: eran agentes aprobándose entre ellos, con `handoff.md` por única fuente |
+| Desborde real, cazado y rehecho | El selector de ciclo desbordaba **224 px** a escala 1,3 (`filtro_edad_test.dart`). El stepper de fases medía **1387 px** de ancho: las fases 3 y 4 caían fuera de la pantalla y no había manera de pulsarlas. Las dos piezas rehechas, no apretadas |
+| Imágenes, **miradas** | `docs/capturas/aula-backstage-{gl,es}.png` y `academy-micro-rutina-{gl,es}.png`, generadas con el motor real |
+| README y manual | La etapa 3-6 descrita en los dos. El manual suma **CU-12** (conducir la asamblea matinal de 2.º ciclo) y **CU-17** (la micro-rutina en casa), el mapa de la app, dos pares de capturas y los límites reales. PDF y Word regenerados; `check_manual_build.py` en verde. Los rótulos de CU-12 se contrastaron contra el código: el manual llegó a citar un botón —«Comezar a asemblea»— que no existe |
+| Fuga R4 | `grep` sobre el árbol entero → **0 ficheros** con el nombre del otro producto o la ruta personal. `mejora` traía 210 porque es anterior a la limpieza de `5323d79`; sus 124 ficheros nuevos de `.agents/` no se han traído |
+
+### Lo que se corrigió del contenido, y por qué
+
+| Qué | Por qué |
+| --- | --- |
+| Fuera las **praxias orofaciales** (soplo y vibración labial /v/ /z/) de 5.º de Infantil | Es técnica logopédica prescrita a una docente, en una app que declara no tener finalidad sanitaria. La fase se queda como foco rítmico |
+| «Bloquea el filtro afectivo» → reescrito | Estaba del revés: en el modelo de Krashen la ansiedad SUBE el filtro. El mismo texto decía lo correcto en inglés y lo contrario en gallego y castellano |
+| «El cerebro infantil ajusta sus estructuras» → fuera | Mecanismo neurológico afirmado sin fuente, en un texto que leen familias |
+| `revisorPedagogico` vacío y `aprobadoParaAula: false` en los 4 ficheros nuevos | Declaraban revisión y aprobación de un especialista que no existe |
+| El alineamiento curricular sale ya del JSON | La pantalla decía **CA1.2** y su propia cápsula dice **CA1.1**. Ahora hay una sola fuente |
+| El conmutador de nivel, bilingüe | Tenía los rótulos escritos solo en gallego: en castellano enseñaba «anos» |
+| Los minutos de cada fase y el resumen de la tarjeta, desde el modelo | Estaban escritos a mano en los widgets; si el JSON decía otra duración, la pantalla mentía |
+| Emoji fuera (🧥 ❌ ✅ 📍 🛑 🎴) | Regla 5. Sustituidos por iconos Material |
+| `luaDice` en la cápsula nueva | `cierre_lua_test.dart` existe justo para que la cápsula número seis no se escriba sin él. Lo cazó |
+
+### NO comprobado en esta rama
+
+| Área | Por qué |
+| --- | --- |
+| ~~Faltan 6 grabaciones~~ · **resuelto** | Las sintetizó el workflow `voice-assets` (run #23, en verde) y las commiteó en `1e326a3`. `check_voice_coverage.py` → **OK, 1038 locuciones, todas presentes** |
+| **El APK de release, EN LOCAL** | No hay Android SDK en este contenedor. Lo cubre CI |
+| **Ninguna pantalla se ha visto en un aparato** | Las capturas son del motor de Flutter: cazan desbordes, no la muesca, ni la barra de gestos, ni la densidad real |
+| **El 2.º ciclo solo cubre septiembre** | Tres asambleas (una por nivel) y una cápsula. Los otros nueve meses del curso no están escritos. El manual lo dice en su capítulo 5 |
+| **Nadie ha escuchado nada** | El gate de niveles dice que no saturan. Ningún gate dice si Celtia pronuncia bien |
+| **Si CA1.1 o CA1.2 es el criterio correcto** | No tengo el Decreto 150/2022 delante. Lo que se arregló es que haya **una sola** fuente, no que esa fuente sea la buena |
+| ~~Si el 2.º ciclo (3-6) entra en el encargo~~ · **decidido** | Frank: «es el objetivo de esta iteración y una ampliación natural del proyecto». README y manual actualizados en consecuencia |
+
+---
+
 ## Lúa entra en las actividades · **ya en `main`** (14/9/2026)
 
 Llegó por `claude/youthful-dijkstra-9tf5gy` y está mergeada. Dos piezas: el

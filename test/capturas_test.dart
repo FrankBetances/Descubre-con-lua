@@ -27,7 +27,9 @@ import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.da
 import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
 import 'package:descubre_con_lua/features/creditos/credits_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/capsulas_aula_screen.dart';
+import 'package:descubre_con_lua/features/juega/views/backstage_asamblea_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
+import 'package:descubre_con_lua/features/academy/views/micro_rutina_setembro_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_model.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/premios/premios_screen.dart';
@@ -364,6 +366,53 @@ void main() {
           initialLanguage: lang,
         ),
         tamano: const Size(412, 1400),
+      );
+    });
+
+    testWidgets('aula · lista, pestana de 2.º ciclo · $l', (tester) async {
+      final premios = await premiosConProgreso(tester);
+      await capturar(
+        tester,
+        'aula-lista-2ciclo-$l',
+        UnidadesListScreen(
+          repository: contenido,
+          premios: premios,
+          audioService: MockOfflineAudioService(),
+          initialLanguage: lang,
+        ),
+        tamano: const Size(412, 1500),
+        antesDeRetratar: (tester) async {
+          await tester.tap(find.byKey(const ValueKey('tab_segundo_ciclo')));
+          await tester.pumpAndSettle();
+        },
+      );
+    });
+
+    testWidgets('aula · backstage da asemblea de 2.º ciclo · $l',
+        (tester) async {
+      await capturar(
+        tester,
+        'aula-backstage-$l',
+        BackstageAsambleaScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          initialLanguage: lang,
+        ),
+        tamano: const Size(412, 1200),
+      );
+    });
+
+    testWidgets('academy · micro-rutina de setembro · $l', (tester) async {
+      await capturar(
+        tester,
+        'academy-micro-rutina-$l',
+        MicroRutinaSetembroScreen(
+          initialLanguage: lang,
+          curriculo: contenido
+              .getCapsulaById('academy.segundo_ciclo.setembro.01')
+              ?.curriculo,
+        ),
+        tamano: const Size(412, 2000),
       );
     });
 

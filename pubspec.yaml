@@ -29,6 +29,8 @@ flutter:
     - assets/content/calendario/
     # El ritual de la asamblea: la consigna y los minutos de cada fase.
     - assets/content/asamblea/
+    # Las asambleas de segundo ciclo con el inglés como L3.
+    - assets/content/asambleas_segundo_ciclo/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

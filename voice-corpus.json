@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-09-14T14:06:52Z",
- "entries": 1020,
+ "generatedAt": "2026-09-15T11:44:18Z",
+ "entries": 1135,
  "byStyle": {
   "slow": 186,
-  "tutor": 834
+  "tutor": 949
  },
  "byLang": {
-  "en": 134,
-  "es": 443,
-  "gl": 443
+  "en": 147,
+  "es": 494,
+  "gl": 494
  },
  "corpus": [
   {
@@ -700,6 +700,14 @@
    "source": "juega.cores.01/ingles/conto"
   },
   {
+   "id": "en_tutor_0b5d3fd3_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hello, Lúa! Wave hello!",
+   "speech": "Hello, Lúa! Wave hello!",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/1/cue"
+  },
+  {
    "id": "en_tutor_0b5d526f_11",
    "lang": "en",
    "style": "tutor",
@@ -714,6 +722,14 @@
    "text": "Rub your hands",
    "speech": "Rub your hands",
    "source": "juega.auga.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_1878498c_45",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The bell rings: run to the circle and freeze!",
+   "speech": "The bell rings: run to the circle and freeze!",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.02/ingles"
   },
   {
    "id": "en_tutor_190aa18c_16",
@@ -746,6 +762,14 @@
    "text": "Touch your head",
    "speech": "Touch your head",
    "source": "juega.corpo.01/ingles/pulso"
+  },
+  {
+   "id": "en_tutor_2ce4e1b5_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Walk to the circle and sit down",
+   "speech": "Walk to the circle and sit down",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.02/ingles"
   },
   {
    "id": "en_tutor_2fd20253_23",
@@ -900,6 +924,14 @@
    "source": "calendario/mes/1/ingles/tpr"
   },
   {
+   "id": "en_tutor_8b9117fe_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Walk to the hook and hang your coat",
+   "speech": "Walk to the hook and hang your coat",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/ingles"
+  },
+  {
    "id": "en_tutor_8d836a41_27",
    "lang": "en",
    "style": "tutor",
@@ -914,6 +946,22 @@
    "text": "Wash your face",
    "speech": "Wash your face",
    "source": "juega.auga.01/ingles/pulso"
+  },
+  {
+   "id": "en_tutor_8fbc8db9_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sit on the green mat and freeze!",
+   "speech": "Sit on the green mat and freeze!",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.03/ingles"
+  },
+  {
+   "id": "en_tutor_912cc72e_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pulse 72 BPM",
+   "speech": "Pulse 72 BPM",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/2/cue"
   },
   {
    "id": "en_tutor_93dd927d_10",
@@ -932,12 +980,44 @@
    "source": "juega.animais.01/ingles/pulso"
   },
   {
+   "id": "en_tutor_9702483d_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Good morning partners! Hands together!",
+   "speech": "Good morning partners! Hands together!",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_9e75475c_46",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Take the smock, turn around and give it to Noa",
+   "speech": "Take the smock, turn around and give it to Noa",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.02/ingles"
+  },
+  {
    "id": "en_tutor_9f0f3823_7",
    "lang": "en",
    "style": "tutor",
    "text": "Grow up",
    "speech": "Grow up",
    "source": "juega.primavera.01/ingles/pulso"
+  },
+  {
+   "id": "en_tutor_a4d73802_43",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Walk like a sleepy bear with your heavy bag",
+   "speech": "Walk like a sleepy bear with your heavy bag",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.01/ingles"
+  },
+  {
+   "id": "en_tutor_a710a4d0_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch your knees and freeze!",
+   "speech": "Touch your knees and freeze!",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.03/ingles"
   },
   {
    "id": "en_tutor_a93ded17_16",
@@ -956,6 +1036,14 @@
    "source": "calendario/tramo/24_36/fraseIngles"
   },
   {
+   "id": "en_tutor_ad0dee0a_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Good morning friends! Hands across!",
+   "speech": "Good morning friends! Hands across!",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/1/cue"
+  },
+  {
    "id": "en_tutor_adc4d82e_12",
    "lang": "en",
    "style": "tutor",
@@ -970,6 +1058,14 @@
    "text": "One shoe, two shoes, up! Push, push!",
    "speech": "One shoe, two shoes, up! Push, push!",
    "source": "juega.benvida.01/ingles/ponteCasa"
+  },
+  {
+   "id": "en_tutor_b4d43012_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open your bag, take out your smock and smile",
+   "speech": "Open your bag, take out your smock and smile",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.03/ingles"
   },
   {
    "id": "en_tutor_b4e60ca8_54",
@@ -1066,6 +1162,14 @@
    "text": "Sleep tight",
    "speech": "Sleep tight",
    "source": "juega.inverno.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_ee7b02eb_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stand up and clap hands",
+   "speech": "Stand up and clap hands",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.01/ingles"
   },
   {
    "id": "en_tutor_f32efa7d_8",
@@ -1508,12 +1612,36 @@
    "source": "juega.primavera.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_01080abe_108",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Recoger el babi del cesto, dar un giro completo sobre uno mismo y entregárselo al compañero con ambas manos.",
+   "speech": "Recoger el babi del cesto, dar un giro completo sobre uno mismo y entregárselo al compañero con ambas manos.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.02/accionFisica"
+  },
+  {
    "id": "es_tutor_012d72a1_175",
    "lang": "es",
    "style": "tutor",
    "text": "No: un sonido o un gesto SON su turno, y tratarlos como respuesta válida es lo que mantiene la conversación viva. Insistir lo convierte en un examen y el niño deja de iniciar.",
    "speech": "No: un sonido o un gesto SON su turno, y tratarlos como respuesta válida es lo que mantiene la conversación viva. Insistir lo convierte en un examen y el niño deja de iniciar.",
    "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_03487cd0_166",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Exacto: escuchar el modelo correcto dentro de una conversación real y afectuosa deja la puerta abierta a seguir hablando; exigir la repetición cierra la conversación.",
+   "speech": "Exacto: escuchar el modelo correcto dentro de una conversación real y afectuosa deja la puerta abierta a seguir hablando; exigir la repetición cierra la conversación.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_0380d8cb_91",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mímica de abrir la cremallera, sacar el babi y mostrar una amplia sonrisa a los compañeros.",
+   "speech": "Mímica de abrir la cremallera, sacar el babi y mostrar una amplia sonrisa a los compañeros.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.03/accionFisica"
   },
   {
    "id": "es_tutor_03ae32f8_409",
@@ -1524,12 +1652,28 @@
    "source": "aula.pulso.01/porQueImporta"
   },
   {
+   "id": "es_tutor_04249102_77",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Gesto amplio de acogida y sonrisa visible sin exigir producción verbal en L3.",
+   "speech": "Gesto amplio de acogida y sonrisa visible sin exigir producción verbal en L3.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.03/modeladoDocente"
+  },
+  {
    "id": "es_tutor_04f1a7ac_77",
    "lang": "es",
    "style": "tutor",
    "text": "Dejar que la hagan rodar antes de preguntar. El movimiento es la explicación.",
    "speech": "Dejar que la hagan rodar antes de preguntar. El movimiento es la explicación.",
    "source": "juega.cores.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "es_tutor_053e7f79_89",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señalización espacial con gesto manual abierto hacia la alfombra verde y silencio atento.",
+   "speech": "Señalización espacial con gesto manual abierto hacia la alfombra verde y silencio atento.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.03/modeladoDocente"
   },
   {
    "id": "es_tutor_0555068a_129",
@@ -1594,6 +1738,14 @@
    "text": "Para trabajar «grande» basta con enseñar el objeto grande y repetir la palabra.",
    "speech": "Para trabajar «grande» basta con enseñar el objeto grande y repetir la palabra.",
    "source": "aula.matematicas.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_0b059bc7_133",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ejecución autónoma motriz: comando exclusivamente oral en L3. Cero demanda de habla; valoración por el movimiento y la parada física.",
+   "speech": "Ejecución autónoma motriz: comando exclusivamente oral en L3. Cero demanda de habla; valoración por el movimiento y la parada física.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.03/modeladoDocente"
   },
   {
    "id": "es_tutor_0b2296ad_56",
@@ -1764,6 +1916,14 @@
    "source": "juega.benvida.01/matematicas/accion/0"
   },
   {
+   "id": "es_tutor_18386d10_88",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Caminar con paso firme hacia la percha baja asignada y colgar el abrigo por la presilla.",
+   "speech": "Caminar con paso firme hacia la percha baja asignada y colgar el abrigo por la presilla.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/accionFisica"
+  },
+  {
    "id": "es_tutor_19f3208a_52",
    "lang": "es",
    "style": "tutor",
@@ -1900,6 +2060,22 @@
    "source": "juega.animais.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "es_tutor_2365ea9b_86",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Caminar con pasos lentos y balanceo de hombros imitando llevar una mochila muy pesada.",
+   "speech": "Caminar con pasos lentos y balanceo de hombros imitando llevar una mochila muy pesada.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.01/accionFisica"
+  },
+  {
+   "id": "es_tutor_2409766d_166",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Reunir al grupo en el círculo. Saludo cara a cara por parejas enlazando manos con giro suave y contacto visual cálido. Establecer un clima de pertenencia y seguridad.",
+   "speech": "Reunir al grupo en el círculo. Saludo cara a cara por parejas enlazando manos con giro suave y contacto visual cálido. Establecer un clima de pertenencia y seguridad.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_24a6a559_61",
    "lang": "es",
    "style": "tutor",
@@ -1964,12 +2140,28 @@
    "source": "juega.inverno.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_289c1118_96",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mesa del comedor familiar con acceso seguro a los cajones de servilletas y cubiertos infantiles.",
+   "speech": "Mesa del comedor familiar con acceso seguro a los cajones de servilletas y cubiertos infantiles.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/escenaCotidiana"
+  },
+  {
    "id": "es_tutor_28e2a1bc_83",
    "lang": "es",
    "style": "tutor",
    "text": "Conviene decirle a la familia qué hacer esta noche, y no solo lo que no debe hacer.",
    "speech": "Conviene decirle a la familia qué hacer esta noche, y no solo lo que no debe hacer.",
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "es_tutor_29e4a397_89",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Para ayudar en casa hay que hablar en inglés durante todo el día sin mezclar las lenguas.",
+   "speech": "Para ayudar en casa hay que hablar en inglés durante todo el día sin mezclar las lenguas.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/enunciado"
   },
   {
    "id": "es_tutor_29fb9a33_78",
@@ -2020,6 +2212,14 @@
    "source": "juega.auga.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_2c02ae18_287",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el Segundo Ciclo (3-6 años), la introducción del inglés a través del movimiento (TPR) convive en perfecta armonía con el gallego y el castellano. La mejor ayuda en el hogar no son los exámenes ni traducir, sino micro-rutinas de 3 a 5 minutos basadas en el principio de Tiempo y Lugar.",
+   "speech": "En el Segundo Ciclo (3-6 años), la introducción del inglés a través del movimiento (TPR) convive en perfecta armonía con el gallego y el castellano. La mejor ayuda en el hogar no son los exámenes ni traducir, sino microrutinas de 3 a 5 minutos basadas en el principio de Tiempo y Lugar.",
+   "source": "academy.segundo_ciclo.setembro.01/ideaClave"
+  },
+  {
    "id": "es_tutor_2c7bc292_196",
    "lang": "es",
    "style": "tutor",
@@ -2042,6 +2242,14 @@
    "text": "Trabajar la propiocepción, el equilibrio y la inhibición del movimiento.",
    "speech": "Trabajar la propiocepción, el equilibrio y la inhibición del movimiento.",
    "source": "juega.corpo.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "es_tutor_2eda39ae_96",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Desplazarse despacio hacia el cuadrante verde de la alfombra y adoptar postura inmóvil de calma.",
+   "speech": "Desplazarse despacio hacia el cuadrante verde de la alfombra y adoptar postura inmóvil de calma.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.03/accionFisica"
   },
   {
    "id": "es_tutor_300ecb3a_112",
@@ -2172,6 +2380,14 @@
    "source": "juega.mar.01/cancionPulso"
   },
   {
+   "id": "es_tutor_3b137f3d_124",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Ay, el abrigo quiere descansar en su percha! Vamos a ayudarle juntos: «Up on the hook, zip!». ¡Mira qué bien colgado quedó!",
+   "speech": "¡Ay, el abrigo quiere descansar en su percha! Vamos a ayudarle juntos: «Up on the hook, zip!». ¡Mira qué bien colgado quedó!",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
    "id": "es_tutor_3b453fce_91",
    "lang": "es",
    "style": "tutor",
@@ -2244,12 +2460,44 @@
    "source": "juega.corpo.01/exploracion/paso/2"
   },
   {
+   "id": "es_tutor_3fcb4e96_151",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Marcar el compás suave con palmas en las piernas a 72 BPM: 'Clap, tap, clap, tap'. Sincronización psicomotriz y propioceptiva sin exigir verbalización.",
+   "speech": "Marcar el compás suave con palmas en las piernas a 72 BPM: 'Clap, tap, clap, tap'. Sincronización psicomotriz y propioceptiva sin exigir verbalización.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_41016f60_126",
    "lang": "es",
    "style": "tutor",
    "text": "Lúa coge su pulsera de cascabeles y la mueve muy rápido: ¡ring, ring, ring! Después para de golpe y todo se queda en silencio.",
    "speech": "Lúa coge su pulsera de cascabeles y la mueve muy rápido: ¡ring, ring, ring! Después para de golpe y todo se queda en silencio.",
    "source": "juega.inverno.01/cuento/1/texto"
+  },
+  {
+   "id": "es_tutor_4146d15b_54",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Levantarse despacio de la alfombra y dar dos palmadas.",
+   "speech": "Levantarse despacio de la alfombra y dar dos palmadas.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.01/accionFisica"
+  },
+  {
+   "id": "es_tutor_41f04b98_89",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Recibidor de la casa junto a la puerta, con una percha a la altura de la vista del menor.",
+   "speech": "Recibidor de la casa junto a la puerta, con una percha a la altura de la vista del menor.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_4265cde9_90",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Trote rápido hacia el centro de la alfombra y parada instantánea inmóvil como una estatua.",
+   "speech": "Trote rápido hacia el centro de la alfombra y parada instantánea inmóvil como una estatua.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.02/accionFisica"
   },
   {
    "id": "es_tutor_42c2e679_59",
@@ -2284,6 +2532,14 @@
    "source": "juega.follas.01/matematicas/accion/0"
   },
   {
+   "id": "es_tutor_4451fea9_89",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repartir los tenedores y servilletas colaborando en pareja mediante fórmulas de cortesía.",
+   "speech": "Repartir los tenedores y servilletas colaborando en pareja mediante fórmulas de cortesía.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/objetivoAutonomia"
+  },
+  {
    "id": "es_tutor_4462e6eb_41",
    "lang": "es",
    "style": "tutor",
@@ -2298,6 +2554,14 @@
    "text": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante y sin interrupciones. El agua NO supera los 37 °C —compruébese con el dorso de la muñeca antes de cada sesión— ni los dos dedos de altura. Ninguna criatura se queda sola con la bandeja ni un segundo. El jabón lo aplica solo la persona adulta y se mantiene fuera de su alcance. Séquese el suelo de inmediato: el agua en el suelo es la causa más común de caída en el aula.",
    "speech": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante y sin interrupciones. El agua NO supera los 37 °C —compruébese con el dorso de la muñeca antes de cada sesión— ni los dos dedos de altura. Ninguna criatura se queda sola con la bandeja ni un segundo. El jabón lo aplica solo la persona adulta y se mantiene fuera de su alcance. Séquese el suelo de inmediato: el agua en el suelo es la causa más común de caída en el aula.",
    "source": "juega.auga.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "es_tutor_4480fba7_79",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dar tres pasos hacia el centro del círculo y sentarse con las piernas cruzadas.",
+   "speech": "Dar tres pasos hacia el centro del círculo y sentarse con las piernas cruzadas.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.02/accionFisica"
   },
   {
    "id": "es_tutor_46b7bb68_91",
@@ -2436,6 +2700,14 @@
    "source": "juega.choiva.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_50888d69_184",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No es necesario ni recomendable: las lenguas ambientales de casa (gallego y castellano) son el pilar afectivo. El inglés se integra en pequeños nichos de juego motriz de 3 a 5 minutos.",
+   "speech": "No es necesario ni recomendable: las lenguas ambientales de casa (gallego y castellano) son el pilar afectivo. El inglés se integra en pequeños nichos de juego motriz de 3 a 5 minutos.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
    "id": "es_tutor_51755997_58",
    "lang": "es",
    "style": "tutor",
@@ -2458,6 +2730,14 @@
    "text": "Cuanta más información se le dé a la familia en la puerta, mejor aprovecha el día en casa.",
    "speech": "Cuanta más información se le dé a la familia en la puerta, mejor aprovecha el día en casa.",
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_53b9ded5_107",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toque suave de claves de madera seguido del comando en L3; la docente se detiene en seco con postura firme.",
+   "speech": "Toque suave de claves de madera seguido del comando en L3; la docente se detiene en seco con postura firme.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.02/modeladoDocente"
   },
   {
    "id": "es_tutor_53c150d9_54",
@@ -2540,12 +2820,28 @@
    "source": "juega.auga.01/exploracion/objetivoSensorial"
   },
   {
+   "id": "es_tutor_594bfe97_142",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Evitar la corrección frontal negativa: no decir «Mal, no tires el abrigo» ni exigir que repita la frase. Esperar 5 segundos de escucha activa.",
+   "speech": "Evitar la corrección frontal negativa: no decir «Mal, no tires el abrigo» ni exigir que repita la frase. Esperar 5 segundos de escucha activa.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
    "id": "es_tutor_59b06bc1_117",
    "lang": "es",
    "style": "tutor",
    "text": "Tener en la mano el objeto del color que se canta. La palabra sola sin objeto delante no enseña el color a esta edad.",
    "speech": "Tener en la mano el objeto del color que se canta. La palabra sola sin objeto delante no enseña el color a esta edad.",
    "source": "juega.cores.01/cancionPulso/consigna"
+  },
+  {
+   "id": "es_tutor_59c181ec_221",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Intercambio comunicativo entre escolares mediante tarjetas de apoyo exclusivamente icónicas (sin texto escrito). Un escolar guía al compañero hacia su percha y entrega del babi, empleando fórmulas pragmáticas de cortesía.",
+   "speech": "Intercambio comunicativo entre escolares mediante tarjetas de apoyo exclusivamente icónicas (sin texto escrito). Un escolar guía al compañero hacia su percha y entrega del babi, empleando fórmulas pragmáticas de cortesía.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/consigna"
   },
   {
    "id": "es_tutor_5a1ab698_65",
@@ -2588,6 +2884,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "es_tutor_5bfe65e7_76",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Aparador o cajón bajo de la entrada donde se guarda el material del colegio.",
+   "speech": "Aparador o cajón bajo de la entrada donde se guarda el material del colegio.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/escenaCotidiana"
+  },
+  {
    "id": "es_tutor_5c5d46f0_98",
    "lang": "es",
    "style": "tutor",
@@ -2618,6 +2922,14 @@
    "text": "Hoy subimos al Castro con la gata Lúa: vimos caer las hojas, escuchamos cómo suenan al pisarlas y agitamos el bote de las castañas del Magosto.",
    "speech": "Hoy subimos al Castro con la gata Lúa: vimos caer las hojas, escuchamos cómo suenan al pisarlas y agitamos el bote de las castañas del Magosto.",
    "source": "juega.follas.01/puenteCasa/mensajeFamilias"
+  },
+  {
+   "id": "es_tutor_5db7a5e0_173",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pulso constante a 72 BPM con palmadas cruzadas entre parejas (mano derecha con derecha, izquierda con izquierda) marcando tiempos fuertes y débiles sin exigir verbalización.",
+   "speech": "Pulso constante a 72 BPM con palmadas cruzadas entre parejas (mano derecha con derecha, izquierda con izquierda) marcando tiempos fuertes y débiles sin exigir verbalización.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/2/consigna"
   },
   {
    "id": "es_tutor_5f0a5d1e_208",
@@ -2660,6 +2972,14 @@
    "source": "juega.follas.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_60b3c5a0_91",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Vaciar la fiambrera de la merienda y guardar la mochila en su rincón con juego de estatuas.",
+   "speech": "Vaciar la fiambrera de la merienda y guardar la mochila en su rincón con juego de estatuas.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/objetivoAutonomia"
+  },
+  {
    "id": "es_tutor_619aa2bd_112",
    "lang": "es",
    "style": "tutor",
@@ -2674,6 +2994,14 @@
    "text": "Poner dos vasos, uno lleno y otro vacío, y preguntar cuál pesa más.",
    "speech": "Poner dos vasos, uno lleno y otro vacío, y preguntar cuál pesa más.",
    "source": "juega.auga.01/matematicas/accion/1"
+  },
+  {
+   "id": "es_tutor_623b80c7_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Uf, qué mochila tan valiente! Vamos juntos: «One, two, three, zip open!». Sacamos la merienda y... ¡congelados!",
+   "speech": "¡Uf, qué mochila tan valiente! Vamos juntos: «One, two, three, zip open!». Sacamos la merienda y... ¡congelados!",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
    "id": "es_tutor_6375504a_37",
@@ -2916,6 +3244,14 @@
    "source": "juega.choiva.01/cancionPulso/consigna"
   },
   {
+   "id": "es_tutor_758ef845_181",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soy Lúa. Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita.",
+   "speech": "Soy Lúa. Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita.",
+   "source": "academy.segundo_ciclo.setembro.01/luaDice"
+  },
+  {
    "id": "es_tutor_7627cae9_59",
    "lang": "es",
    "style": "tutor",
@@ -3140,6 +3476,14 @@
    "source": "aula.preguntas.01/queHacerEnCasa"
   },
   {
+   "id": "es_tutor_82e69b09_249",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Escoge un nicho cotidiano de 3 minutos, como colgar el abrigo al llegar del colegio («The Magic Coat Hook»). Si el niño dice «¡Abrigo suelo!», no lo corrijas: responde con sonrisa y acción motriz: «¡Sí! El abrigo en la percha: Up on the hook, zip!».",
+   "speech": "Escoge un nicho cotidiano de 3 minutos, como colgar el abrigo al llegar del colegio («The Magic Coat Hook»). Si el niño dice «¡Abrigo suelo!», no lo corrijas: responde con sonrisa y acción motriz: «¡Sí! El abrigo en la percha: Up on the hook, zip!».",
+   "source": "academy.segundo_ciclo.setembro.01/queHacerEnCasa"
+  },
+  {
    "id": "es_tutor_82f3d3d4_43",
    "lang": "es",
    "style": "tutor",
@@ -3300,6 +3644,14 @@
    "source": "juega.inverno.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_91055c56_153",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Reunir al grupo en la alfombra en círculo. Contacto visual cálido y saludo afectuoso a la mascota Lúa. Establecer un clima de seguridad y escucha atenta.",
+   "speech": "Reunir al grupo en la alfombra en círculo. Contacto visual cálido y saludo afectuoso a la mascota Lúa. Establecer un clima de seguridad y escucha atenta.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_9181485c_45",
    "lang": "es",
    "style": "tutor",
@@ -3402,6 +3754,14 @@
    "text": "Agitar el bote de las castañas y parar, agitar y parar.",
    "speech": "Agitar el bote de las castañas y parar, agitar y parar.",
    "source": "juega.follas.01/exploracion/paso/2"
+  },
+  {
+   "id": "es_tutor_9b7aa44b_84",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Posar las dos manos sobre las rodillas y mantener el cuerpo quieto como una estatua.",
+   "speech": "Posar las dos manos sobre las rodillas y mantener el cuerpo quieto como una estatua.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.03/accionFisica"
   },
   {
    "id": "es_tutor_9b9436c5_106",
@@ -3572,12 +3932,28 @@
    "source": "juega.choiva.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_a57820a2_267",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Exigir que el niño hable en inglés o preguntarle «¿cómo se dice esto?» lo convierte en un examen, y el examen corta la conversación. Devolverle la frase bien dicha dentro del juego (modelado indirecto o recast) valida lo que dijo y mantiene vivas las ganas de hablar.",
+   "speech": "Exigir que el niño hable en inglés o preguntarle «¿cómo se dice esto?» lo convierte en un examen, y el examen corta la conversación. Devolverle la frase bien dicha dentro del juego (modelado indirecto o recast) valida lo que dijo y mantiene vivas las ganas de hablar.",
+   "source": "academy.segundo_ciclo.setembro.01/porQueImporta"
+  },
+  {
    "id": "es_tutor_a5eead18_70",
    "lang": "es",
    "style": "tutor",
    "text": "Discriminar seco y mojado, fuerte y suave, con el tacto y con el oído.",
    "speech": "Discriminar seco y mojado, fuerte y suave, con el tacto y con el oído.",
    "source": "juega.follas.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "es_tutor_a70f7ac9_129",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Evitar exigir la traducción: no decir «Dilo en inglés». El adulto modela la fórmula con calidez en el flujo natural de la acción.",
+   "speech": "Evitar exigir la traducción: no decir «Dilo en inglés». El adulto modela la fórmula con calidez en el flujo natural de la acción.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
    "id": "es_tutor_a711ebfd_53",
@@ -3708,6 +4084,14 @@
    "source": "juega.follas.01/exploracion/paso/1"
   },
   {
+   "id": "es_tutor_b2cb49af_207",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dramatización motriz de la mochila dormilona. El grupo encarna el desplazamiento pesado y la frenada brusca ante la clave sintáctica 'FREEZE!'. Exigir control inhibitorio sin interrupciones metalingüísticas.",
+   "speech": "Dramatización motriz de la mochila dormilona. El grupo encarna el desplazamiento pesado y la frenada brusca ante la clave sintáctica 'FREEZE!'. Exigir control inhibitorio sin interrupciones metalingüísticas.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/consigna"
+  },
+  {
    "id": "es_tutor_b2d89818_124",
    "lang": "es",
    "style": "tutor",
@@ -3722,6 +4106,22 @@
    "text": "¿Qué abre la planta? ¿Estiramos nosotros los brazos arriba?",
    "speech": "¿Qué abre la planta? ¿Estiramos nosotros los brazos arriba?",
    "source": "juega.primavera.01/cuento/2/pregunta"
+  },
+  {
+   "id": "es_tutor_b3c1be4b_202",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sentar en la alfombra con las piernas cruzadas. Respiración diafragmática profunda: tomar aire imaginando oler la hierba húmeda y expulsarlo con un suave soplo /s/ mientras tocamos las claves de madera.",
+   "speech": "Sentar en la alfombra con las piernas cruzadas. Respiración diafragmática profunda: tomar aire imaginando oler la hierba húmeda y expulsarlo con un suave soplo /s/ mientras tocamos las claves de madera.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/4/consigna"
+  },
+  {
+   "id": "es_tutor_b4685003_139",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Fading a 2 segundos: la docente pronuncia la orden, espera 2 segundos para permitir la respuesta autónoma y solo hace el gesto si hay duda.",
+   "speech": "Fading a 2 segundos: la docente pronuncia la orden, espera 2 segundos para permitir la respuesta autónoma y solo hace el gesto si hay duda.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.02/modeladoDocente"
   },
   {
    "id": "es_tutor_b52a3fdb_85",
@@ -3778,6 +4178,14 @@
    "text": "Está mirando el perro por la ventana. En vez de «mira el coche», dices: «¡El perro! ¿Ves el perro?» (uno, dos, tres, cuatro, cinco). Él hace «¡eh!» y señala. Tú: «¡Sí! El perro. ¿Qué hace el perro?» (uno, dos, tres, cuatro, cinco). Acabáis de tener una conversación de cuatro turnos sin una sola palabra suya.",
    "speech": "Está mirando el perro por la ventana. En vez de «mira el coche», dices: «¡El perro! ¿Ves el perro?» (uno, dos, tres, cuatro, cinco). Él hace «¡eh!» y señala. Tú: «¡Sí! El perro. ¿Qué hace el perro?» (uno, dos, tres, cuatro, cinco). Acabáis de tener una conversación de cuatro turnos sin una sola palabra suya.",
    "source": "academy.turnos_atencion_conjunta.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_b6a51990_99",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Muchas gracias! «Here you go! Thank you, Mateo!». ¡Qué mesa tan acogedora estamos poniendo juntos!",
+   "speech": "¡Muchas gracias! «Here you go! Thank you, Mateo!». ¡Qué mesa tan acogedora estamos poniendo juntos!",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
    "id": "es_tutor_b7051a78_73",
@@ -3892,6 +4300,14 @@
    "source": "juega.follas.01/cuento/1/texto"
   },
   {
+   "id": "es_tutor_c0df54b4_150",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Marcar el pulso de 72 BPM con palmadas alternadas en rodillas y hombros. Acompañar la rima dactilar con la voz y el gesto, sin pedir que nadie repita.",
+   "speech": "Marcar el pulso de 72 BPM con palmadas alternadas en rodillas y hombros. Acompañar la rima dactilar con la voz y el gesto, sin pedir que nadie repita.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_c0e5aac6_362",
    "lang": "es",
    "style": "tutor",
@@ -3980,6 +4396,14 @@
    "source": "juega.animais.01/cuento/1/texto"
   },
   {
+   "id": "es_tutor_c3c9eb3a_256",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Comandos coordinados de dos fases unidos por la conjunción 'and'. Aplicar andamiaje decreciente: modelado sincrónico inicial, fading a 2 segundos y autonomía motriz. Respeto estricto al periodo de silencio fónico: la respuesta corporal es la única exigida.",
+   "speech": "Comandos coordinados de dos fases unidos por la conjunción 'and'. Aplicar andamiaje decreciente: modelado sincrónico inicial, fading a 2 segundos y autonomía motriz. Respeto estricto al periodo de silencio fónico: la respuesta corporal es la única exigida.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/consigna"
+  },
+  {
    "id": "es_tutor_c43727a1_33",
    "lang": "es",
    "style": "tutor",
@@ -4060,6 +4484,14 @@
    "source": "juega.corpo.01/cancionPulso"
   },
   {
+   "id": "es_tutor_ca5e3880_100",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Modelado sincrónico total: la docente se levanta y da palmadas simultáneamente con el comando en L3.",
+   "speech": "Modelado sincrónico total: la docente se levanta y da palmadas simultáneamente con el comando en L3.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.01/modeladoDocente"
+  },
+  {
    "id": "es_tutor_ca8e09d2_157",
    "lang": "es",
    "style": "tutor",
@@ -4076,6 +4508,14 @@
    "source": "juega.primavera.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_cd3c415e_92",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Refuerzo cinestésico del gesto de entrega y recepción con sonrisa y contacto visual directo.",
+   "speech": "Refuerzo cinestésico del gesto de entrega y recepción con sonrisa y contacto visual directo.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.02/modeladoDocente"
+  },
+  {
    "id": "es_tutor_cd9d74bf_60",
    "lang": "es",
    "style": "tutor",
@@ -4090,6 +4530,14 @@
    "text": "Vaciar la cesta llena de golpe y ver cómo el suelo se llena de hojas.",
    "speech": "Vaciar la cesta llena de golpe y ver cómo el suelo se llena de hojas.",
    "source": "juega.follas.01/matematicas/accion/1"
+  },
+  {
+   "id": "es_tutor_cef365f3_122",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La docente facilita la tarjeta icónica de la percha al alumno guía y media discretamente sin interferir en el intercambio.",
+   "speech": "La docente facilita la tarjeta icónica de la percha al alumno guía y media discretamente sin interferir en el intercambio.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/modeladoDocente"
   },
   {
    "id": "es_tutor_d041ebdf_55",
@@ -4130,6 +4578,14 @@
    "text": "Llueve muy menudo sobre Vigo. La gata Lúa posa un dedo en el cristal y sigue una gota que baja: tap, tap, tap.",
    "speech": "Llueve muy menudo sobre Vigo. La gata Lúa posa un dedo en el cristal y sigue una gota que baja: tap, tap, tap.",
    "source": "juega.primavera.01/cuento/0/texto"
+  },
+  {
+   "id": "es_tutor_d2a059c6_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El modelado indirecto (recast) ayuda más al aprendizaje que pedir que repita la frase bien dicha.",
+   "speech": "El modelado indirecto (recast) ayuda más al aprendizaje que pedir que repita la frase bien dicha.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
    "id": "es_tutor_d37e28ac_184",
@@ -4260,6 +4716,14 @@
    "source": "juega.primavera.01/exploracion/paso/1"
   },
   {
+   "id": "es_tutor_e0bb1bde_213",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el recibidor de casa: el menor se quita la chaqueta con calma. En lugar de hacer preguntas directas, la madre acompaña el movimiento con ritmo: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»",
+   "speech": "En el recibidor de casa: el menor se quita la chaqueta con calma. En lugar de hacer preguntas directas, la madre acompaña el movimiento con ritmo: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»",
+   "source": "academy.segundo_ciclo.setembro.01/ejemploCotidiano"
+  },
+  {
    "id": "es_tutor_e0f936d6_93",
    "lang": "es",
    "style": "tutor",
@@ -4300,6 +4764,14 @@
    "source": "juega.inverno.01/matematicas/accion/1"
   },
   {
+   "id": "es_tutor_e5c917a4_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Evitar el reproche conductual: no decir «Tú puedes hacerlo solo, no te quejes». Acompañar el movimiento y validar el esfuerzo.",
+   "speech": "Evitar el reproche conductual: no decir «Tú puedes hacerlo solo, no te quejes». Acompañar el movimiento y validar el esfuerzo.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
    "id": "es_tutor_e6d853be_95",
    "lang": "es",
    "style": "tutor",
@@ -4338,6 +4810,14 @@
    "text": "Antes de salir a la calle, nombrar cada prenda mientras se pone diciendo 'Put on your hat! Now boots: stomp, stomp on the floor!'.",
    "speech": "Antes de salir a la calle, nombrar cada prenda mientras se pone diciendo 'Put on your hat! Now boots: stomp, stomp on the floor!'.",
    "source": "juega.choiva.01/puenteCasa/act/0"
+  },
+  {
+   "id": "es_tutor_ea18b47c_149",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Reunir al grupo en el círculo. Cruzar los brazos sobre el pecho para saludar a Lúa y girar suavemente sobre el propio eje. Activar la escucha atenta.",
+   "speech": "Reunir al grupo en el círculo. Cruzar los brazos sobre el pecho para saludar a Lúa y girar suavemente sobre el propio eje. Activar la escucha atenta.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/1/consigna"
   },
   {
    "id": "es_tutor_ea2e1381_25",
@@ -4404,6 +4884,22 @@
    "source": "juega.animais.01/puenteCasa/recomendacionConversacion"
   },
   {
+   "id": "es_tutor_ebe84aa6_218",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Distribuir un pañuelo de gasa suave de algodón a cada escolar. Cubrir las manos, soplar suavemente para ver cómo se eleva y dejarlo caer lentamente sobre las piernas mientras respiramos hondo para pasar a los rincones.",
+   "speech": "Distribuir un pañuelo de gasa suave de algodón a cada escolar. Cubrir las manos, soplar suavemente para ver cómo se eleva y dejarlo caer lentamente sobre las piernas mientras respiramos hondo para pasar a los rincones.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/4/consigna"
+  },
+  {
+   "id": "es_tutor_ec48dea1_180",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repartir una concha de vieira pulida a cada pareja. Sentir el peso, la temperatura y la textura acanalada mientras respiramos con ritmo pausado antes de pasar a las tareas del día.",
+   "speech": "Repartir una concha de vieira pulida a cada pareja. Sentir el peso, la temperatura y la textura acanalada mientras respiramos con ritmo pausado antes de pasar a las tareas del día.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_ec7960a2_79",
    "lang": "es",
    "style": "tutor",
@@ -4458,6 +4954,14 @@
    "text": "Lúa pisa las hojas secas con las cuatro patas y escucha: ¡crac, crac, crac! Después llena la cesta y baja contenta.",
    "speech": "Lúa pisa las hojas secas con las cuatro patas y escucha: ¡crac, crac, crac! Después llena la cesta y baja contenta.",
    "source": "juega.follas.01/cuento/2/texto"
+  },
+  {
+   "id": "es_tutor_f21491bf_89",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Modelado expresivo corporal: la docente encorva ligeramente el tronco y camina al compás.",
+   "speech": "Modelado expresivo corporal: la docente encorva ligeramente el tronco y camina al compás.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.01/modeladoDocente"
   },
   {
    "id": "es_tutor_f28ecc81_275",
@@ -4594,6 +5098,14 @@
    "text": "Mirar juntas el remolino del desagüe: es de los espectáculos que más atención sostiene a esta edad.",
    "speech": "Mirar juntas el remolino del desagüe: es de los espectáculos que más atención sostiene a esta edad.",
    "source": "juega.auga.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "es_tutor_fc33bfa1_84",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Fomentar la autonomía al colgar el abrigo en la percha baja sin prisas ni tensiones.",
+   "speech": "Fomentar la autonomía al colgar el abrigo en la percha baja sin prisas ni tensiones.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/objetivoAutonomia"
   },
   {
    "id": "es_tutor_fcb60d6f_54",
@@ -5052,6 +5564,14 @@
    "source": "juega.corpo.01/exploracion/avisoSeguridad"
   },
   {
+   "id": "gl_tutor_04572c5d_149",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Marcar o pulso de 72 BPM con palmadas alternadas en xeonllos e ombreiros. Acompañar a rima dactilar coa voz e co xesto, sen pedir que ninguén repita.",
+   "speech": "Marcar o pulso de 72 BPM con palmadas alternadas en xeonllos e ombreiros. Acompañar a rima dactilar coa voz e co xesto, sen pedir que ninguén repita.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_04eef6c9_156",
    "lang": "gl",
    "style": "tutor",
@@ -5084,6 +5604,14 @@
    "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "gl_tutor_070f82a1_87",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Para axudar na casa hai que falar en inglés durante todo o día sen mesturar as linguas.",
+   "speech": "Para axudar na casa hai que falar en inglés durante todo o día sen mesturar as linguas.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
    "id": "gl_tutor_07aaac78_153",
    "lang": "gl",
    "style": "tutor",
@@ -5114,6 +5642,14 @@
    "text": "Que un neno mesture palabras das dúas linguas nunha mesma frase é esperable e non indica un problema.",
    "speech": "Que un neno mesture palabras das dúas linguas nunha mesma frase é esperable e non indica un problema.",
    "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_090cc9a0_79",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pousar as dúas mans sobre os xeonllos e manter o corpo quedo coma unha estatua.",
+   "speech": "Pousar as dúas mans sobre os xeonllos e manter o corpo quedo coma unha estatua.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.03/accionFisica"
   },
   {
    "id": "gl_tutor_09937937_116",
@@ -5252,12 +5788,28 @@
    "source": "juega.corpo.01/puenteCasa/act/1"
   },
   {
+   "id": "gl_tutor_12842f46_114",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A docente facilita a tarxeta icónica da percha ao alumno guía e media discretamente sen interferir no intercambio.",
+   "speech": "A docente facilita a tarxeta icónica da percha ao alumno guía e media discretamente sen interferir no intercambio.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/modeladoDocente"
+  },
+  {
    "id": "gl_tutor_12e5980e_62",
    "lang": "gl",
    "style": "tutor",
    "text": "Calquera resposta vale; o que importa é probar as dúas cousas.",
    "speech": "Calquera resposta vale; o que importa é probar as dúas cousas.",
    "source": "juega.corpo.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_148bdc23_56",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Erguerse amodo da alfombra e bater as palmas dúas veces.",
+   "speech": "Erguerse amodo da alfombra e bater as palmas dúas veces.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.01/accionFisica"
   },
   {
    "id": "gl_tutor_159b861b_34",
@@ -5388,6 +5940,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/ejemploCotidiano"
   },
   {
+   "id": "gl_tutor_1ae95f85_72",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Aparador ou caixón baixo da entrada onde se garda o material do colexio.",
+   "speech": "Aparador ou caixón baixo da entrada onde se garda o material do colexio.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/escenaCotidiana"
+  },
+  {
    "id": "gl_tutor_1b2ab42d_58",
    "lang": "gl",
    "style": "tutor",
@@ -5442,6 +6002,14 @@
    "text": "Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar, agocharse. E pon palabras ao movemento mentres sucede, non despois. Se a pantalla entra nalgún momento, que sexa acompañada e falada, nunca como forma de que estea quieto.",
    "speech": "Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar, agocharse. E pon palabras ao movemento mentres sucede, non despois. Se a pantalla entra nalgún momento, que sexa acompañada e falada, nunca como forma de que estea quieto.",
    "source": "academy.juego_movimiento_sin_pantallas.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_20dd83f4_244",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esixir que a crianza fale en inglés ou preguntarlle «como se di isto?» convérteo nun exame, e o exame corta a conversa. Devolverlle a frase ben dita dentro do xogo (modelado indirecto ou recast) valida o que dixo e mantén viva a ganas de falar.",
+   "speech": "Esixir que a crianza fale en inglés ou preguntarlle «como se di isto?» convérteo nun exame, e o exame corta a conversa. Devolverlle a frase ben dita dentro do xogo (modelado indirecto ou recast) valida o que dixo e mantén viva a ganas de falar.",
+   "source": "academy.segundo_ciclo.setembro.01/porQueImporta"
   },
   {
    "id": "gl_tutor_20fa7f98_58",
@@ -5556,6 +6124,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/ideaClave"
   },
   {
+   "id": "gl_tutor_26d3977c_211",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Distribuír un pano de gasa suave de algodón a cada escolar. Cubrir as mans, soprar con suavidade para ver como se eleva e deixalo caer lentamente sobre as pernas mentres respiramos fondo para pasar aos recantos.",
+   "speech": "Distribuír un pano de gasa suave de algodón a cada escolar. Cubrir as mans, soprar con suavidade para ver como se eleva e deixalo caer lentamente sobre as pernas mentres respiramos fondo para pasar aos recantos.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_28780ee7_70",
    "lang": "gl",
    "style": "tutor",
@@ -5628,12 +6204,36 @@
    "source": "juega.follas.01/preguntas/?/enunciado"
   },
   {
+   "id": "gl_tutor_2dd720e2_106",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Uf, que mochila tan valente! Imos xuntos: «One, two, three, zip open!». Sacamos a merenda e... conxelados!",
+   "speech": "Uf, que mochila tan valente! Imos xuntos: «One, two, three, zip open!». Sacamos a merenda e... conxelados!",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_2ddca96e_120",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Evitar esixir a tradución: non dicir «Dilo en inglés». O adulto modela a fórmula con calidez no fluxo natural da acción.",
+   "speech": "Evitar esixir a tradución: non dicir «Dilo en inglés». O adulto modela a fórmula con calidez no fluxo natural da acción.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
    "id": "gl_tutor_2e23d356_172",
    "lang": "gl",
    "style": "tutor",
    "text": "Sen algo pequeno ao lado, «grande» non se pode notar: é só un son que acompaña a un obxecto. A noción aparece na comparación, así que os dous teñen que estar á vista á vez.",
    "speech": "Sen algo pequeno ao lado, «grande» non se pode notar: é só un son que acompaña a un obxecto. A noción aparece na comparación, así que os dous teñen que estar á vista á vez.",
    "source": "aula.matematicas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_2e24ff4e_150",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Exacto: escoitar o modelo correcto dentro dunha conversa real e agarimosa deixa a porta aberta a seguir falando; esixir a repetición pecha a conversa.",
+   "speech": "Exacto: escoitar o modelo correcto dentro dunha conversa real e agarimosa deixa a porta aberta a seguir falando; esixir a repetición pecha a conversa.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
    "id": "gl_tutor_2e2d47fe_125",
@@ -5706,6 +6306,14 @@
    "text": "Empezar todas enroscadas no chan e subir unha liña de cada vez. Non hai que chegar de pé: subir un pouco xa é medrar.",
    "speech": "Empezar todas enroscadas no chan e subir unha liña de cada vez. Non hai que chegar de pé: subir un pouco xa é medrar.",
    "source": "juega.primavera.01/cancionPulso/consigna"
+  },
+  {
+   "id": "gl_tutor_31f4056a_250",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Comandos coordenados de dúas fases unidos pola conxunción 'and'. Aplicar andamiaxe decrecente: modelado sincrónico inicial, fading a 2 segundos e autonomía motriz. Respecto estrito ao período de silencio fónico: a resposta corporal é a única esixida.",
+   "speech": "Comandos coordenados de dúas fases unidos pola conxunción 'and'. Aplicar andamiaxe decrecente: modelado sincrónico inicial, fading a 2 segundos e autonomía motriz. Respecto estrito ao período de silencio fónico: a resposta corporal é a única esixida.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/consigna"
   },
   {
    "id": "gl_tutor_32654535_58",
@@ -5812,6 +6420,14 @@
    "source": "juega.auga.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "gl_tutor_3c83481e_266",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No Segundo Ciclo (3-6 anos), a introdución do inglés a través do movemento (TPR) convive en perfecta harmonía co galego e o castelán. A mellor axuda no fogar non son os exames nin traducir, senón micro-rutinas de 3 a 5 minutos baseadas no principio de Tempo e Lugar.",
+   "speech": "No Segundo Ciclo (3-6 anos), a introdución do inglés a través do movemento (TPR) convive en perfecta harmonía co galego e o castelán. A mellor axuda no fogar non son os exames nin traducir, senón microrutinas de 3 a 5 minutos baseadas no principio de Tempo e Lugar.",
+   "source": "academy.segundo_ciclo.setembro.01/ideaClave"
+  },
+  {
    "id": "gl_tutor_3e5ed832_191",
    "lang": "gl",
    "style": "tutor",
@@ -5908,12 +6524,28 @@
    "source": "juega.mar.01/exploracion/paso/1"
   },
   {
+   "id": "gl_tutor_44ff3205_189",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sentar na alfombra coas pernas cruzadas. Respiración diafragmática fonda: coller aire imaxinando cheirar a herba húmida e expulsalo cun suave sopro /s/ mentres tocamos as claves de madeira.",
+   "speech": "Sentar na alfombra coas pernas cruzadas. Respiración diafragmática fonda: coller aire imaxinando cheirar a herba húmida e expulsalo cun suave sopro /s/ mentres tocamos as claves de madeira.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_4512cfe0_25",
    "lang": "gl",
    "style": "tutor",
    "text": "Onde están as túas botas?",
    "speech": "Onde están as túas botas?",
    "source": "juega.choiva.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_46191138_71",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dar tres pasos cara ao centro do círculo e sentar coas pernas cruzadas.",
+   "speech": "Dar tres pasos cara ao centro do círculo e sentar coas pernas cruzadas.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.02/accionFisica"
   },
   {
    "id": "gl_tutor_4689bb41_68",
@@ -5938,6 +6570,14 @@
    "text": "Ao poñer os zapatos pola mañá, erguer un pé de cada vez dicindo 'One shoe, two shoes, up! Push, push!'.",
    "speech": "Ao poñer os zapatos pola mañá, erguer un pé de cada vez dicindo 'One shoe, two shoes, up! Push, push!'.",
    "source": "juega.benvida.01/puenteCasa/act/0"
+  },
+  {
+   "id": "gl_tutor_490d0a85_142",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Evitar a corrección frontal negativa: non dicir «Mal, non tires o abrigo» nin esixir que repita a frase. Agardar 5 segundos de escoita activa.",
+   "speech": "Evitar a corrección frontal negativa: non dicir «Mal, non tires o abrigo» nin esixir que repita a frase. Agardar 5 segundos de escoita activa.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
    "id": "gl_tutor_49d5158e_49",
@@ -5996,6 +6636,22 @@
    "source": "juega.corpo.01/cuento/2/texto"
   },
   {
+   "id": "gl_tutor_4f5b6ab9_132",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fading a 2 segundos: a docente pronuncia a orde, agarda 2 segundos para permitir a resposta autónoma e só fai o xesto se hai dúbida.",
+   "speech": "Fading a 2 segundos: a docente pronuncia a orde, agarda 2 segundos para permitir a resposta autónoma e só fai o xesto se hai dúbida.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.02/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_4f7fa664_103",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toque suave de claves de madeira seguido do comando en L3; a docente detense en seco con postura firme.",
+   "speech": "Toque suave de claves de madeira seguido do comando en L3; a docente detense en seco con postura firme.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.02/modeladoDocente"
+  },
+  {
    "id": "gl_tutor_4ff463b9_90",
    "lang": "gl",
    "style": "tutor",
@@ -6052,6 +6708,14 @@
    "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "gl_tutor_52dbd917_224",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Intercambio comunicativo entre escolares mediante tarxetas de apoio exclusivamente icónicas (sen texto escrito). Un escolar guía ao compañeiro cara á súa percha e entrega do babi, empregando fórmulas pragmáticas de cortesía.",
+   "speech": "Intercambio comunicativo entre escolares mediante tarxetas de apoio exclusivamente icónicas (sen texto escrito). Un escolar guía ao compañeiro cara á súa percha e entrega do babi, empregando fórmulas pragmáticas de cortesía.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/consigna"
+  },
+  {
    "id": "gl_tutor_53232f5f_123",
    "lang": "gl",
    "style": "tutor",
@@ -6082,6 +6746,14 @@
    "text": "Hoxe demos a benvida ao curso coa gata Lúa: saudamos coa man, tocamos teas suaves e aprendemos a dicir ola e adeus en inglés.",
    "speech": "Hoxe demos a benvida ao curso coa gata Lúa: saudamos coa man, tocamos teas suaves e aprendemos a dicir ola e adeus en inglés.",
    "source": "juega.benvida.01/puenteCasa/mensajeFamilias"
+  },
+  {
+   "id": "gl_tutor_54abf22d_146",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Reunir ao grupo na alfombra en círculo. Contacto visual cálido e saúdo afectivo á mascota Lúa. Establecer un clima de seguridade e escoita atenta.",
+   "speech": "Reunir ao grupo na alfombra en círculo. Contacto visual cálido e saúdo afectivo á mascota Lúa. Establecer un clima de seguridade e escoita atenta.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/1/consigna"
   },
   {
    "id": "gl_tutor_54cd33d6_221",
@@ -6188,6 +6860,14 @@
    "source": "juega.auga.01/exploracion/paso/0"
   },
   {
+   "id": "gl_tutor_58712ef1_75",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Recibidor da casa xunto á porta, cunha percha á altura da vista da crianza.",
+   "speech": "Recibidor da casa xunto á porta, cunha percha á altura da vista da crianza.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/escenaCotidiana"
+  },
+  {
    "id": "gl_tutor_58fa2bc6_45",
    "lang": "gl",
    "style": "tutor",
@@ -6250,6 +6930,14 @@
    "text": "Porque unha é redonda e a outra ten esquinas.",
    "speech": "Porque unha é redonda e a outra ten esquinas.",
    "source": "juega.cores.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_6033590b_169",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pulso constante a 72 BPM con palmadas cruzadas entre parellas (man dereita con dereita, esquerda con esquerda) marcando tempos fortes e débiles sen esixir verbalización.",
+   "speech": "Pulso constante a 72 BPM con palmadas cruzadas entre parellas (man dereita con dereita, esquerda con esquerda) marcando tempos fortes e débiles sen esixir verbalización.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/2/consigna"
   },
   {
    "id": "gl_tutor_612cf6b9_49",
@@ -6348,12 +7036,28 @@
    "source": "juega.cores.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "gl_tutor_67ce3f8e_128",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Execución autónoma motriz: comando exclusivamente oral en L3. Cero demanda de fala; valoración polo movemento e a parada física.",
+   "speech": "Execución autónoma motriz: comando exclusivamente oral en L3. Cero demanda de fala; valoración polo movemento e a parada física.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.03/modeladoDocente"
+  },
+  {
    "id": "gl_tutor_67daaf1f_59",
    "lang": "gl",
    "style": "tutor",
    "text": "Que é máis difícil, moverse moito ou quedar quieto de todo?",
    "speech": "Que é máis difícil, moverse moito ou quedar quieto de todo?",
    "source": "juega.corpo.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_680760b1_84",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Camiñar con paso firme cara á percha baixa asignada e colgar o abrigo pola presilla.",
+   "speech": "Camiñar con paso firme cara á percha baixa asignada e colgar o abrigo pola presilla.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/accionFisica"
   },
   {
    "id": "gl_tutor_68b599bf_87",
@@ -6396,6 +7100,22 @@
    "source": "juega.corpo.01/exploracion/paso/0"
   },
   {
+   "id": "gl_tutor_6af8cf2f_175",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repartir unha cuncha de vieira pulida a cada parella. Sentir o peso, a temperatura e a textura acanalada mentres respiramos con ritmo pausado antes de pasar ás tarefas do día.",
+   "speech": "Repartir unha cuncha de vieira pulida a cada parella. Sentir o peso, a temperatura e a textura acanalada mentres respiramos con ritmo pausado antes de pasar ás tarefas do día.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/4/consigna"
+  },
+  {
+   "id": "gl_tutor_6b760980_197",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dramatización motriz da mochila durmiñona. O grupo encarna o desprazamento pesado e a freada brusca ante a clave sintáctica 'FREEZE!'. Exixir control inhibitorio sen interrupcións metalingüísticas.",
+   "speech": "Dramatización motriz da mochila durmiñona. O grupo encarna o desprazamento pesado e a freada brusca ante a clave sintáctica 'FREEZE!'. Exixir control inhibitorio sen interrupcións metalingüísticas.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/consigna"
+  },
+  {
    "id": "gl_tutor_6ca6a6dd_313",
    "lang": "gl",
    "style": "tutor",
@@ -6410,6 +7130,14 @@
    "text": "Unha nena mete a man na bandexa e retírala de golpe. Non lle preguntas nada. Dis: «Auga! Auga morna.» Volve metela, máis amodo. «Si, morna.» Á terceira vez mete as dúas mans e mírate. Esa ollada é a súa quenda, e xa asociou a palabra á sensación.",
    "speech": "Unha nena mete a man na bandexa e retírala de golpe. Non lle preguntas nada. Dis: «Auga! Auga morna.» Volve metela, máis amodo. «Si, morna.» Á terceira vez mete as dúas mans e mírate. Esa ollada é a súa quenda, e xa asociou a palabra á sensación.",
    "source": "aula.exploracion.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_6d1b0b95_198",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No recibidor da casa: a crianza quita a chaqueta con calma. En vez de facer preguntas directas, a nai acompaña o movemento con ritmo: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»",
+   "speech": "No recibidor da casa: a crianza quita a chaqueta con calma. En vez de facer preguntas directas, a nai acompaña o movemento con ritmo: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»",
+   "source": "academy.segundo_ciclo.setembro.01/ejemploCotidiano"
   },
   {
    "id": "gl_tutor_6dd5a459_49",
@@ -6748,6 +7476,14 @@
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "gl_tutor_875abdee_90",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Reforzo cinestésico do xesto de entrega e recepción con sorriso e contacto visual directo.",
+   "speech": "Reforzo cinestésico do xesto de entrega e recepción con sorriso e contacto visual directo.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.02/modeladoDocente"
+  },
+  {
    "id": "gl_tutor_87dcf84b_65",
    "lang": "gl",
    "style": "tutor",
@@ -6908,6 +7644,14 @@
    "source": "juega.corpo.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "gl_tutor_9063ca14_177",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Son Lúa. Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
+   "speech": "Son Lúa. Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
+   "source": "academy.segundo_ciclo.setembro.01/luaDice"
+  },
+  {
    "id": "gl_tutor_91bdd081_133",
    "lang": "gl",
    "style": "tutor",
@@ -6938,6 +7682,14 @@
    "text": "A palabra que se aprende é a que chega mentres a crianza xa está a mirar iso. Non a que se di primeiro nin a que se repite máis: a que coincide. O dedo é o que fai coincidir; sen el, a túa voz vai por un lado e a atención da roda por outro, e a páxina pasa sen deixar nada.",
    "speech": "A palabra que se aprende é a que chega mentres a crianza xa está a mirar iso. Non a que se di primeiro nin a que se repite máis: a que coincide. O dedo é o que fai coincidir; sen el, a túa voz vai por un lado e a atención da roda por outro, e a páxina pasa sen deixar nada.",
    "source": "aula.conto.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_96c07a00_89",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Desprazarse amodo cara ao cadrante verde da alfombra e adoptar postura inmóbil de acougo.",
+   "speech": "Desprazarse amodo cara ao cadrante verde da alfombra e adoptar postura inmóbil de acougo.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.03/accionFisica"
   },
   {
    "id": "gl_tutor_96f3ad6a_207",
@@ -7010,6 +7762,14 @@
    "text": "Regar un pouco e volver tocar: agora está fría e apéganse os dedos.",
    "speech": "Regar un pouco e volver tocar: agora está fría e apéganse os dedos.",
    "source": "juega.primavera.01/exploracion/paso/1"
+  },
+  {
+   "id": "gl_tutor_9cbd051b_88",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Modelado expresivo corporal: a docente encorva lixeiramente o tronco e camiña ao compás.",
+   "speech": "Modelado expresivo corporal: a docente encorva lixeiramente o tronco e camiña ao compás.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.01/modeladoDocente"
   },
   {
    "id": "gl_tutor_9d37119d_45",
@@ -7106,6 +7866,14 @@
    "text": "Que hai que facer para que o cascabel non soe nada?",
    "speech": "Que hai que facer para que o cascabel non soe nada?",
    "source": "juega.inverno.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_a57f4a69_237",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escolle un nicho cotián de 3 minutos, como colgar o abrigo ao chegar da escola («The Magic Coat Hook»). Se a crianza di «Abrigo chan!», non a corrixas: responde con sorriso e acción motriz: «Si! O abrigo na percha: Up on the hook, zip!».",
+   "speech": "Escolle un nicho cotián de 3 minutos, como colgar o abrigo ao chegar da escola («The Magic Coat Hook»). Se a crianza di «Abrigo chan!», non a corrixas: responde con sorriso e acción motriz: «Si! O abrigo na percha: Up on the hook, zip!».",
+   "source": "academy.segundo_ciclo.setembro.01/queHacerEnCasa"
   },
   {
    "id": "gl_tutor_a60d2a41_139",
@@ -7218,6 +7986,14 @@
    "text": "Lúa atopa unha cuncha fermosa na area de Samil. Achégaa á orella e sorrí con agarimo. O mar de Vigo está cheo de vida!",
    "speech": "Lúa atopa unha cuncha fermosa na area de Samil. Achégaa á orella e sorrí con agarimo. O mar de Vigo está cheo de vida!",
    "source": "juega.mar.01/cuento/2/texto"
+  },
+  {
+   "id": "gl_tutor_acf185ab_96",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Modelado sincrónico total: a docente ergue o corpo e dá palmas simultaneamente co comando en L3.",
+   "speech": "Modelado sincrónico total: a docente ergue o corpo e dá palmas simultaneamente co comando en L3.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.01/modeladoDocente"
   },
   {
    "id": "gl_tutor_ad06987b_53",
@@ -7340,6 +8116,14 @@
    "source": "juega.follas.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_b8e6df0d_175",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non é necesario nin recomendable: as linguas ambientais da casa (galego e castelán) son o piar afectivo. O inglés intégrase en pequenos nichos de xogo motriz de 3 a 5 minutos.",
+   "speech": "Non é necesario nin recomendable: as linguas ambientais da casa (galego e castelán) son o piar afectivo. O inglés intégrase en pequenos nichos de xogo motriz de 3 a 5 minutos.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
    "id": "gl_tutor_b8f2d5a4_107",
    "lang": "gl",
    "style": "tutor",
@@ -7354,6 +8138,14 @@
    "text": "De camiño ao parque, buscar un paxaro de verdade e quedar quietos mirándoo ata que voe.",
    "speech": "De camiño ao parque, buscar un paxaro de verdade e quedar quietos mirándoo ata que voe.",
    "source": "juega.animais.01/puenteCasa/act/1"
+  },
+  {
+   "id": "gl_tutor_b9c3b8d5_80",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fomentar a autonomía ao colgar o abrigo na percha baixa sen presas nin tensións.",
+   "speech": "Fomentar a autonomía ao colgar o abrigo na percha baixa sen presas nin tensións.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/objetivoAutonomia"
   },
   {
    "id": "gl_tutor_ba225669_28",
@@ -7444,6 +8236,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/enunciado"
   },
   {
+   "id": "gl_tutor_bdfd665f_120",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Evitar o reproche condutuais: non dicir «Ti podes facelo só, non te queixes». Acompañar o movemento e validar o esforzo.",
+   "speech": "Evitar o reproche condutuais: non dicir «Ti podes facelo só, non te queixes». Acompañar o movemento e validar o esforzo.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
    "id": "gl_tutor_be66f4f4_47",
    "lang": "gl",
    "style": "tutor",
@@ -7466,6 +8266,14 @@
    "text": "A resposta que importa é 'tempo': a planta non medra hoxe, e agardar tamén se aprende.",
    "speech": "A resposta que importa é 'tempo': a planta non medra hoxe, e agardar tamén se aprende.",
    "source": "juega.primavera.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_bf7ab514_147",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Marcar o compás suave con palmas nas pernas a 72 BPM: 'Clap, tap, clap, tap'. Sincronización psicomotriz e proprioceptiva sen esixir verbalización.",
+   "speech": "Marcar o compás suave con palmas nas pernas a 72 BPM: 'Clap, tap, clap, tap'. Sincronización psicomotriz e proprioceptiva sen esixir verbalización.",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/2/consigna"
   },
   {
    "id": "gl_tutor_c143e227_86",
@@ -7498,6 +8306,14 @@
    "text": "Unha pregunta na asemblea non serve para saber se a crianza sabe. Serve para abrirlle unha quenda. Por iso a resposta esperada nas preguntas de nivel un é sinalar co dedo: iso xa é responder, e conta igual que unha palabra.",
    "speech": "Unha pregunta na asemblea non serve para saber se a crianza sabe. Serve para abrirlle unha quenda. Por iso a resposta esperada nas preguntas de nivel un é sinalar co dedo: iso xa é responder, e conta igual que unha palabra.",
    "source": "aula.preguntas.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_c311ca73_76",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Gesto amplo de acollida e sorriso visible sen esixir produción verbal en L3.",
+   "speech": "Gesto amplo de acollida e sorriso visible sen esixir produción verbal en L3.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.03/modeladoDocente"
   },
   {
    "id": "gl_tutor_c33d20a7_66",
@@ -7564,6 +8380,14 @@
    "source": "juega.auga.01/preguntas/?/enunciado"
   },
   {
+   "id": "gl_tutor_c7fe4c5c_119",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ai, o abrigo quere descansar na súa percha! Imos axudarlle xuntos: «Up on the hook, zip!». Mira que ben colgado quedou!",
+   "speech": "Ai, o abrigo quere descansar na súa percha! Imos axudarlle xuntos: «Up on the hook, zip!». Mira que ben colgado quedou!",
+   "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
    "id": "gl_tutor_c87e4f9e_245",
    "lang": "gl",
    "style": "tutor",
@@ -7620,6 +8444,14 @@
    "source": "juega.mar.01/exploracion/avisoSeguridad"
   },
   {
+   "id": "gl_tutor_cf24cf7c_86",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mímica de abrir a cremalleira, sacar o babi e amosar un sorriso amplo aos compañeiros.",
+   "speech": "Mímica de abrir a cremalleira, sacar o babi e amosar un sorriso amplo aos compañeiros.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.03/accionFisica"
+  },
+  {
    "id": "gl_tutor_cf2573a5_52",
    "lang": "gl",
    "style": "tutor",
@@ -7652,6 +8484,14 @@
    "source": "academy.turnos_atencion_conjunta.01/ideaClave"
   },
   {
+   "id": "gl_tutor_d00edd7a_85",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Camiñar con pasos lentos e balanceo de ombros imitando levar unha mochila moi pesada.",
+   "speech": "Camiñar con pasos lentos e balanceo de ombros imitando levar unha mochila moi pesada.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.01/accionFisica"
+  },
+  {
    "id": "gl_tutor_d06711ee_264",
    "lang": "gl",
    "style": "tutor",
@@ -7682,6 +8522,14 @@
    "text": "Ao arroupar na cama, pasar a manta pola cara e polas mans dicindo 'Warm, soft blanket. Sleep, sleep, wake up!'.",
    "speech": "Ao arroupar na cama, pasar a manta pola cara e polas mans dicindo 'Warm, soft blanket. Sleep, sleep, wake up!'.",
    "source": "juega.inverno.01/puenteCasa/act/0"
+  },
+  {
+   "id": "gl_tutor_d1ba162a_142",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Reunir ao grupo no círculo. Cruzar os brazos sobre o peito para saudar a Lúa e xirar suavemente sobre o propio eixe. Activar a escoita atenta.",
+   "speech": "Reunir ao grupo no círculo. Cruzar os brazos sobre o peito para saudar a Lúa e xirar suavemente sobre o propio eixe. Activar a escoita atenta.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/1/consigna"
   },
   {
    "id": "gl_tutor_d1f20542_62",
@@ -7812,12 +8660,28 @@
    "source": "juega.primavera.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "gl_tutor_daffef8d_86",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinalización espacial con xesto manual aberto cara á alfombra verde e silencio atento.",
+   "speech": "Sinalización espacial con xesto manual aberto cara á alfombra verde e silencio atento.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.03/modeladoDocente"
+  },
+  {
    "id": "gl_tutor_db930d0a_146",
    "lang": "gl",
    "style": "tutor",
    "text": "* Sal-ta * a ra, * sal-ta, * ri-bit! * Voa * o pa-xa-ro, * voa, * moi al-to! * An-da * o oso, * pum, * pum! * Dor-me * o ga-to, * miau, * e ca-la.",
    "speech": "Salta a ra, salta, ribit! Voa o paxaro, voa, moi alto! Anda o oso, pum, pum! Dorme o gato, miau, e cala.",
    "source": "juega.animais.01/cancionPulso"
+  },
+  {
+   "id": "gl_tutor_dbfd1188_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O modelado indirecto (recast) axuda máis á aprendizaxe que pedir que repita a frase ben dita.",
+   "speech": "O modelado indirecto (recast) axuda máis á aprendizaxe que pedir que repita a frase ben dita.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
    "id": "gl_tutor_dcca94d5_156",
@@ -7932,12 +8796,36 @@
    "source": "juega.primavera.01/exploracion/objetivoSensorial"
   },
   {
+   "id": "gl_tutor_e55b0048_85",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mesa do comedor familiar con acceso seguro aos caixóns dos panos e cubertos infantís.",
+   "speech": "Mesa do comedor familiar con acceso seguro aos caixóns dos panos e cubertos infantís.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "gl_tutor_e5b862f5_88",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Baleirar a fiambreira da merenda e gardar a mochila no seu recanto con xogo de estatuas.",
+   "speech": "Baleirar a fiambreira da merenda e gardar a mochila no seu recanto con xogo de estatuas.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/objetivoAutonomia"
+  },
+  {
    "id": "gl_tutor_e5c0245e_61",
    "lang": "gl",
    "style": "tutor",
    "text": "Rematar sentadas, lavadas as mans, probando o bastón de mazá.",
    "speech": "Rematar sentadas, lavadas as mans, probando o bastón de mazá.",
    "source": "juega.cores.01/exploracion/paso/3"
+  },
+  {
+   "id": "gl_tutor_e731f168_160",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Reunir ao grupo no círculo. Saúdo cara a cara por parellas enlazando mans con xiro suave e contacto visual cálido. Establecer un clima de pertenza e seguridade.",
+   "speech": "Reunir ao grupo no círculo. Saúdo cara a cara por parellas enlazando mans con xiro suave e contacto visual cálido. Establecer un clima de pertenza e seguridade.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/1/consigna"
   },
   {
    "id": "gl_tutor_e874ee2a_79",
@@ -8052,6 +8940,22 @@
    "source": "juega.animais.01/puenteCasa/recomendacionConversacion"
   },
   {
+   "id": "gl_tutor_f1d80d49_96",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Moitas grazas! «Here you go! Thank you, Mateo!». Que mesa tan acolledora estamos poñendo xuntos!",
+   "speech": "Moitas grazas! «Here you go! Thank you, Mateo!». Que mesa tan acolledora estamos poñendo xuntos!",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_f1f2116e_87",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Trote rápido cara ao centro da alfombra e parada instantánea inmóbil coma unha estatua.",
+   "speech": "Trote rápido cara ao centro da alfombra e parada instantánea inmóbil coma unha estatua.",
+   "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.02/accionFisica"
+  },
+  {
    "id": "gl_tutor_f22403c0_94",
    "lang": "gl",
    "style": "tutor",
@@ -8074,6 +8978,14 @@
    "text": "Nunha asemblea de cero a tres, o conto non se le para chegar ao final. Lese para que haxa un momento no que a túa voz, o teu dedo e a mirada da crianza estean na mesma cousa. Se iso pasa dúas veces en toda a páxina, a páxina valeu.",
    "speech": "Nunha asemblea de cero a tres, o conto non se le para chegar ao final. Lese para que haxa un momento no que a túa voz, o teu dedo e a mirada da crianza estean na mesma cousa. Se iso pasa dúas veces en toda a páxina, a páxina valeu.",
    "source": "aula.conto.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_f45881f0_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Recoller o babi do cesto, dar un xiro completo sobre un mesmo e entregarllo ao compañeiro con ambas mans.",
+   "speech": "Recoller o babi do cesto, dar un xiro completo sobre un mesmo e entregarllo ao compañeiro con ambas mans.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.02/accionFisica"
   },
   {
    "id": "gl_tutor_f474b130_70",
@@ -8154,6 +9066,14 @@
    "text": "Sinalar a laranxa, facela rolar ou dicir o nome.",
    "speech": "Sinalar a laranxa, facela rolar ou dicir o nome.",
    "source": "juega.cores.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_fe574264_88",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repartir os garfos e panos de mesa colaborando en parella mediante fórmulas de cortesía.",
+   "speech": "Repartir os garfos e panos de mesa colaborando en parella mediante fórmulas de cortesía.",
+   "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/objetivoAutonomia"
   },
   {
    "id": "gl_tutor_ff807611_145",

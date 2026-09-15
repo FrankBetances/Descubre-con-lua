@@ -1,12 +1,22 @@
 # Descubre con Lúa · Edición Vigo
 
 Aplicación Android educativa, **sin conexión**, para las escuelas infantiles
-municipales de Vigo y sus familias. Primer ciclo de educación infantil (0-3
-años). Todo el contenido existe en gallego y castellano.
+municipales de Vigo, los colegios de la ciudad y sus familias. Cubre las dos
+etapas de educación infantil: **primer ciclo (0-3 años)** y **segundo ciclo
+(3-6 años)**. Todo el contenido existe en gallego y castellano.
 
 - **Juega con Lúa · Aula** — la usa la docente en la asamblea. Incluye
   **Formación · Aula**: una cápsula de tres minutos por cada paso de la asamblea.
-- **Academy · Familias** — la usan las familias en casa.
+- **Asamblea matinal de segundo ciclo** — para 4.º, 5.º y 6.º de Infantil, con
+  el inglés como tercera lengua. Cuatro fases —apertura, foco rítmico, reto TPR
+  y calma—, cada una con su consigna, su lámina, su cronómetro y su altavoz; el
+  nivel se cambia sin salir de la pantalla. Es **la misma pantalla que la
+  asamblea de primer ciclo**: el producto tiene un solo lenguaje visual. Se
+  entra por la lista del aula o por la ficha del mes del Calendario.
+- **Academy · Familias** — la usan las familias en casa. Incluye la
+  **micro-rutina del mes** para segundo ciclo: tres minutos en un momento
+  concreto del día, con ejemplos de cómo devolver la frase bien dicha sin pedir
+  que la criatura la repita.
 - **Calendario Escola · Fogar** — los diez meses del curso, de septiembre a
   junio. La docente registra la asamblea, la familia registra el juego de tres
   minutos en casa, y el día que coinciden las dos cosas queda enlazado.
@@ -19,6 +29,11 @@ pantalla se lee en inglés. Lo que hay son las palabras, las órdenes de cuerpo
 (TPR) y la frase de cada mes, cada una con su grabación: la persona adulta pulsa
 y oye cómo se dice antes de decírselo a la criatura. Una maestra de una escuela
 infantil de Vigo no tiene por qué pronunciar «Crunch leaves» de oído.
+
+En segundo ciclo el inglés entra como **tercera lengua dentro de la asamblea**,
+siempre asociado al movimiento y sin pedir que nadie lo produzca: la orden se
+dice y se hace, y la criatura responde con el cuerpo. El gallego y el castellano
+siguen siendo las lenguas del aula y de la casa.
 
 **Finalidad exclusivamente educativa.** No es un producto sanitario: no evalúa,
 no diagnostica y no trata nada. La criatura no usa la pantalla; la app es para
@@ -51,7 +66,7 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 
 | | |
 | --- | --- |
-| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | Para la docente y la familia: seis capítulos —qué es y qué no es, antes de empezar, el mapa de la app, cómo funciona una asamblea de ocho minutos, los límites de esta versión y qué hacer si algo va mal— con 20 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | Para la docente y la familia: seis capítulos —qué es y qué no es, antes de empezar, el mapa de la app, cómo funciona una asamblea, los límites de esta versión y qué hacer si algo va mal— más 17 casos de uso, incluidos los dos de segundo ciclo: conducir la asamblea matinal y hacer la micro-rutina en casa. Lleva 24 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
 | [**CLAUDE.md**](CLAUDE.md) | Reglas de trabajo del proyecto |
@@ -64,8 +79,10 @@ comprobado y nombra el comando que lo comprobó.
 
 | | |
 | --- | --- |
-| Contenido | 10 unidades de aula, una por mes del curso · 11 cápsulas (5 de Academy + 6 de formación docente) · 10 meses de calendario · 6 fases de asamblea |
-| Voz | 1020 locuciones (443 gl + 443 es + 134 en) grabadas dentro del paquete |
+| Contenido · primer ciclo | 10 unidades de aula, una por mes del curso · 10 meses de calendario · 6 fases de asamblea |
+| Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
+| Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
+| Voz | 1135 locuciones (494 gl + 494 es + 147 en) grabadas dentro del paquete |
 | Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 | Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |
 | Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |
@@ -265,7 +282,7 @@ El texto vive en un solo sitio a propósito: cuando el constructor lleva su
 propia copia, la fuente avanza y el documento generado se queda describiendo una
 versión anterior sin que nada avise.
 
-Las 20 imágenes que el manual incrusta viven en `docs/capturas/` —que guarda 32
+Las 24 imágenes que el manual incrusta viven en `docs/capturas/` —que guarda 36
 PNG en total, porque también están las de las láminas y las que aún no entran en
 el manual— y se regeneran con:
 

@@ -1,0 +1,256 @@
+{
+  "id": "asamblea.segundo_ciclo.setembro.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 9,
+  "titulo": {
+    "gl": "Setembro: Acollida, espazos escolares e novas rutinas",
+    "es": "Septiembre: Acogida, espacios escolares y nuevas rutinas",
+    "en": "September: Welcome, School Spaces and New Routines"
+  },
+  "centroInteres": {
+    "gl": "A alfombra da asemblea e as rutinas de saúdo",
+    "es": "La alfombra de la asamblea y las rutinas de saludo",
+    "en": "The Morning Circle Carpet and Greeting Routines"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Circle Greeting"
+      },
+      "duracionSegundos": 90,
+      "lamina": "gato",
+      "consignaDocente": {
+        "gl": "Reunir ao grupo na alfombra en círculo. Contacto visual cálido e saúdo afectivo á mascota Lúa. Establecer un clima de seguridade e escoita atenta.",
+        "es": "Reunir al grupo en la alfombra en círculo. Contacto visual cálido y saludo afectuoso a la mascota Lúa. Establecer un clima de seguridad y escucha atenta.",
+        "en": "Gather the children in a circle on the rug. Warm eye contact and greeting to mascot Lúa. Establish a safe and attentive atmosphere."
+      },
+      "cueAcustica": "Hello, Lúa! Wave hello!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Pulso Constante",
+        "es": "Foco Rítmico y Pulso Constante",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marcar o compás suave con palmas nas pernas a 72 BPM: 'Clap, tap, clap, tap'. Sincronización psicomotriz e proprioceptiva sen esixir verbalización.",
+        "es": "Marcar el compás suave con palmas en las piernas a 72 BPM: 'Clap, tap, clap, tap'. Sincronización psicomotriz y propioceptiva sin exigir verbalización.",
+        "en": "Keep a gentle beat tapping knees at 72 BPM: 'Clap, tap, clap, tap'. Psychomotor and proprioceptive synchronization without demanding speech."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida e Modelado",
+        "es": "Reto Núcleo TPR: Acción Expandida y Modelado",
+        "en": "Core TPR Challenge: Action-Expanded & Modeling"
+      },
+      "duracionSegundos": 270,
+      "lamina": "pes",
+      "consignaDocente": {
+        "gl": "Comandos coordenados de dúas fases unidos pola conxunción 'and'. Aplicar andamiaxe decrecente: modelado sincrónico inicial, fading a 2 segundos e autonomía motriz. Respecto estrito ao período de silencio fónico: a resposta corporal é a única esixida.",
+        "es": "Comandos coordinados de dos fases unidos por la conjunción 'and'. Aplicar andamiaje decreciente: modelado sincrónico inicial, fading a 2 segundos y autonomía motriz. Respeto estricto al periodo de silencio fónico: la respuesta corporal es la única exigida.",
+        "en": "Two-phase coordinated commands linked by 'and'. Apply fading scaffolding: initial synchronous modeling, 2-second delay, and autonomous motor action. Strict respect for the silent period: physical movement is the only required response."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.setembro.4i.01",
+          "textoIngles": "Stand up and clap hands",
+          "accionFisica": {
+            "gl": "Erguerse amodo da alfombra e bater as palmas dúas veces.",
+            "es": "Levantarse despacio de la alfombra y dar dos palmadas.",
+            "en": "Stand up slowly from the rug and clap hands twice."
+          },
+          "modeladoDocente": {
+            "gl": "Modelado sincrónico total: a docente ergue o corpo e dá palmas simultaneamente co comando en L3.",
+            "es": "Modelado sincrónico total: la docente se levanta y da palmadas simultáneamente con el comando en L3.",
+            "en": "Full synchronous modeling: teacher stands and claps simultaneously with the L3 command."
+          }
+        },
+        {
+          "id": "cmd.setembro.4i.02",
+          "textoIngles": "Walk to the circle and sit down",
+          "accionFisica": {
+            "gl": "Dar tres pasos cara ao centro do círculo e sentar coas pernas cruzadas.",
+            "es": "Dar tres pasos hacia el centro del círculo y sentarse con las piernas cruzadas.",
+            "en": "Take three steps toward circle center and sit cross-legged."
+          },
+          "modeladoDocente": {
+            "gl": "Fading a 2 segundos: a docente pronuncia a orde, agarda 2 segundos para permitir a resposta autónoma e só fai o xesto se hai dúbida.",
+            "es": "Fading a 2 segundos: la docente pronuncia la orden, espera 2 segundos para permitir la respuesta autónoma y solo hace el gesto si hay duda.",
+            "en": "2-second fading: teacher says the command, waits 2 seconds for autonomous response, gesturing only if hesitation occurs."
+          }
+        },
+        {
+          "id": "cmd.setembro.4i.03",
+          "textoIngles": "Touch your knees and freeze!",
+          "accionFisica": {
+            "gl": "Pousar as dúas mans sobre os xeonllos e manter o corpo quedo coma unha estatua.",
+            "es": "Posar las dos manos sobre las rodillas y mantener el cuerpo quieto como una estatua.",
+            "en": "Place both hands on knees and stay completely still like a statue."
+          },
+          "modeladoDocente": {
+            "gl": "Execución autónoma motriz: comando exclusivamente oral en L3. Cero demanda de fala; valoración polo movemento e a parada física.",
+            "es": "Ejecución autónoma motriz: comando exclusivamente oral en L3. Cero demanda de habla; valoración por el movimiento y la parada física.",
+            "en": "Autonomous motor execution: oral L3 prompt only. Zero speech demand; observed through posture and motionless hold."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición con Gasas de Algodón",
+        "es": "Calma y Transición con Gasas de Algodón",
+        "en": "Calm & Transition with Cotton Muslin"
+      },
+      "duracionSegundos": 120,
+      "lamina": "toalla",
+      "consignaDocente": {
+        "gl": "Distribuír un pano de gasa suave de algodón a cada escolar. Cubrir as mans, soprar con suavidade para ver como se eleva e deixalo caer lentamente sobre as pernas mentres respiramos fondo para pasar aos recantos.",
+        "es": "Distribuir un pañuelo de gasa suave de algodón a cada escolar. Cubrir las manos, soplar suavemente para ver cómo se eleva y dejarlo caer lentamente sobre las piernas mientras respiramos hondo para pasar a los rincones.",
+        "en": "Hand out a soft cotton muslin cloth to each child. Cover hands, blow softly watching it float, and let it drift down over knees while breathing deeply before transitioning to learning corners."
+      },
+      "comandosL3": [],
+      "repertorioMateriales": [
+        {
+          "id": "gasa_algodon_calma",
+          "nombre": {
+            "gl": "Gasa suave de algodón orgánico",
+            "es": "Gasa suave de algodón orgánico",
+            "en": "Soft Organic Cotton Muslin"
+          },
+          "procedencia": {
+            "gl": "Texido tradicional galego de algodón lixeiro e transpirable",
+            "es": "Tejido tradicional gallego de algodón ligero y transpirable",
+            "en": "Traditional Galician light and breathable cotton fabric"
+          },
+          "pautaManipulacion": {
+            "gl": "Colocar sobre a palma aberta, soprar con suavidade para sentir o aire e acariciar as fazulas.",
+            "es": "Colocar sobre la palma abierta, soplar suavemente para sentir el aire y acariciar las mejillas.",
+            "en": "Place open on the palm, blow gently to feel the breeze and caress cheeks."
+          },
+          "avisoSeguridad": {
+            "gl": "Dimensións controladas de 30x30 cm, peza téxtil limpa e esterilizada, sen fíos soltos nin elementos que poidan desprenderse.",
+            "es": "Dimensiones controladas de 30x30 cm, pieza textil limpia y esterilizada, sin hilos sueltos ni elementos desprendibles.",
+            "en": "Controlled dimensions 30x30 cm, clean and sanitized fabric, no loose threads or detachable parts."
+          }
+        }
+      ]
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CPSAA",
+      "CCEC"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [
+    {
+      "id": "cesto_vimbio_alfombra",
+      "nombre": {
+        "gl": "Cesto de vimbio tradicional",
+        "es": "Cesto de mimbre tradicional",
+        "en": "Traditional Wicker Basket"
+      },
+      "procedencia": {
+        "gl": "Cestería tradicional de Galicia, fibras vexetais trenzadas a man",
+        "es": "Cestería tradicional de Galicia, fibras vegetales trenzadas a mano",
+        "en": "Traditional Galician basket weaving, hand-woven natural plant fibers"
+      },
+      "pautaManipulacion": {
+        "gl": "Contén os panos de gasa no centro da alfombra; explorar a textura das fibras pulidas antes de recoller.",
+        "es": "Contiene los pañuelos de gasa en el centro de la alfombra; explorar la textura de las fibras pulidas antes de recoger.",
+        "en": "Holds the muslin cloths in the circle center; explore smooth woven fibers before packing away."
+      },
+      "avisoSeguridad": {
+        "gl": "Diámetro de 35 cm, peza con acabado pulido sen estelas nin arestas punzantes.",
+        "es": "Diámetro de 35 cm, pieza con acabado pulido sin astillas ni aristas punzantes.",
+        "en": "Diameter of 35 cm, polished finish with no splinters or sharp edges."
+      }
+    }
+  ],
+  "microRutinaHogar": {
+    "id": "micro_rutina.setembro.4i.01",
+    "titulo": {
+      "gl": "A percha máxica dos abrigos",
+      "es": "La percha mágica de los abrigos",
+      "en": "The Magic Coat Hook"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Ao chegar da escola á casa",
+      "es": "Al llegar del colegio a casa",
+      "en": "When arriving home from school"
+    },
+    "objetivoAutonomia": {
+      "gl": "Fomentar a autonomía ao colgar o abrigo na percha baixa sen presas nin tensións.",
+      "es": "Fomentar la autonomía al colgar el abrigo en la percha baja sin prisas ni tensiones.",
+      "en": "Encourage independence hanging the coat on a low hook without rush or stress."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Abrigo chan!",
+          "es": "¡Abrigo suelo!",
+          "en": "Coat floor!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Ai, o abrigo quere descansar na súa percha! Imos axudarlle xuntos: «Up on the hook, zip!». Mira que ben colgado quedou!",
+          "es": "¡Ay, el abrigo quiere descansar en su percha! Vamos a ayudarle juntos: «Up on the hook, zip!». ¡Mira qué bien colgado quedó!",
+          "en": "Oh, the coat wants to rest on its hook! Let's help it together: «Up on the hook, zip!». Look how nicely it hangs!"
+        },
+        "consejoEvitar": {
+          "gl": "Evitar a corrección frontal negativa: non dicir «Mal, non tires o abrigo» nin esixir que repita a frase. Agardar 5 segundos de escoita activa.",
+          "es": "Evitar la corrección frontal negativa: no decir «Mal, no tires el abrigo» ni exigir que repita la frase. Esperar 5 segundos de escucha activa.",
+          "en": "Avoid negative frontal correction: do not say «Bad, don't drop the coat» or force verbal repetition. Wait 5 seconds actively."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Recibidor da casa xunto á porta, cunha percha á altura da vista da crianza.",
+      "es": "Recibidor de la casa junto a la puerta, con una percha a la altura de la vista del menor.",
+      "en": "Home hallway next to the door, with a coat peg placed at the child's eye level."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-14",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}
