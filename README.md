@@ -60,79 +60,23 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 Si sólo vas a leer uno: **STATUS.md**, que separa lo comprobado de lo no
 comprobado y nombra el comando que lo comprobó.
 
-## Estado
-
-Resumen honesto: **`main` pasa sus 16 gates**, el binario **no lleva ni un
-permiso de red**, las **1020 locuciones tienen grabación** y de cada run de
-`main` sale un **AAB firmado con la clave de release**, listo para Play Console.
+## Qué hay dentro
 
 | | |
 | --- | --- |
-| Último run verde de `main` | [Gates #89](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/34861022894) sobre `f13a92b` · `versionCode` 89 · APK 56,0 MB · AAB 81,7 MB (tamaño de los artefactos del run) |
-| Gates | **16** en `tools/gates.sh` · 14 con `--fast`; los otros dos compilan el APK de release y auditan sus permisos |
-| Tests | 245 |
 | Contenido | 10 unidades de aula, una por mes del curso · 11 cápsulas (5 de Academy + 6 de formación docente) · 10 meses de calendario · 6 fases de asamblea |
-| Voz | 1020 locuciones (443 gl + 443 es + 134 en) dentro del paquete |
+| Voz | 1020 locuciones (443 gl + 443 es + 134 en) grabadas dentro del paquete |
 | Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
-| Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos del adulto |
-| Android | `minSdk 24` · `compileSdk` y `targetSdk` **36**, que es lo que Play exige desde el rechazo del `versionCode` 80 por apuntar a la API 34 |
+| Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |
+| Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |
 
-**De dónde sale cada número.** Lo del run —verde, `versionCode`, tamaños— está
-leído de la API de Actions del run #89, que corre sobre `f13a92b`, la cabeza de
-`main`. Los gates, el contenido, la voz, las láminas y los premios están
-contados sobre el repositorio en este contenedor. Los **245 tests** NO los he
-vuelto a ejecutar: **aquí no hay Flutter instalado**, así que la cuenta viene de
-`STATUS.md`, que la midió con `flutter test --exclude-tags capturas` sobre
-`39fa44a`, hoy dentro de `main`; lo que sí he hecho es contar 240 declaraciones
-de `test(`/`testWidgets(` en `test/`, que es coherente con esa cifra pero no la
-sustituye.
+El binario **no declara ni un permiso de red**, y eso lo comprueba un gate que
+lee el APK compilado, no el manifiesto fuente.
 
-Lo que no está comprobado, y no lo arregla ningún run verde:
-
-- **Ninguna pantalla se ha visto en un aparato.** Lo que sí está comprobado es
-  que caben: `filtro_edad_test.dart`, `asamblea_escala_test.dart`,
-  `academy_escala_test.dart` y `calendario_escala_test.dart` abren las pantallas
-  en gallego y castellano, a escala de texto 1,0 y 1,8, y fallan si algo
-  desborda. Eso caza los desbordes; no caza la muesca, la barra de gestos, la
-  densidad real ni el audio sonando. Con `targetSdk 36` el borde a borde es
-  obligatorio en Android 15+, así que esta es la comprobación que más falta
-  hace.
-- **Nadie ha escuchado las voces.** Ni el galego de Celtia ni el inglés de
-  LJSpeech. Ningún gate dice si una frase sale imitable para una docente.
-- **Los picos de audio SÍ se miden ya**, y esto está aquí porque durante meses
-  no fue verdad: el gate escribía `SKIP: ffmpeg is not installed` y el script lo
-  contaba como PASS, o sea un salto leyéndose como una comprobación. Ahora el
-  job instala `ffmpeg` y el gate FALLA si hay grabaciones y no hay con qué
-  medirlas. El techo es **−1,0 dBFS** (`CEILING_DBFS` en
-  `tools/check_voice_levels.py`) y el gate pasó en el run #89 con las 1020.
-  **Aviso: en una síntesis anterior cuatro grabaciones se quedaban exactamente
-  en −1,0**, o sea sin margen. *Eso no lo he vuelto a medir —en este contenedor
-  no hay `ffmpeg`—*, así que sigue siendo razonable esperar que la próxima
-  síntesis ponga el gate en rojo. Se arregla remasterizando esas grabaciones, no
-  subiendo el techo.
-
-Lo que sí se ha cerrado desde la versión anterior de este README:
-
-- **Lúa entra en las actividades**, que es lo último mergeado a `main`: el
-  cierre de cada cápsula de Academy (`luaDice`) y la gata al frente de la nota
-  que cruza del aula a la casa. Antes solo estaba en el cuento.
-- **`targetSdk 36`** y las cinco pantallas que quedaban debajo de la barra de
-  gestos.
-- El **capítulo 5 del manual** ya no lleva las tres filas que eran contabilidad
-  interna del proyecto en un documento que lee el Concello.
-
-Defectos abiertos que hay que mirar antes de publicar:
-
-- **`startic.png` está recortado**: el dibujo toca los bordes izquierdo,
-  derecho e inferior de la imagen, así que no tiene margen y se pinta peor de lo
-  que la marca merece. Hace falta el original con su margen, no un recorte; por
-  recorte no tiene arreglo (`assets/brand/logos/README.md`);
-- **las 80 láminas no son de una persona ilustradora profesional**, y se nota.
-  Son un puente honesto mientras no haya un set encargado, que es lo que este
-  producto merece para las escuelas de Vigo;
-- la revisión de las condiciones de los componentes de terceros y la revisión
-  legal de `LICENSE.md` están **pendientes**, y se llevan fuera de este
-  documento.
+**El estado de verificación no vive en este documento.** Qué está comprobado,
+con qué comando, y qué no lo está, va en [STATUS.md](STATUS.md), que es el
+fichero cuya regla es que cada línea diga con qué se comprobó. Aquí no se
+resume: un resumen de estado envejece en silencio y acaba afirmando de más.
 
 ## Comprobar
 

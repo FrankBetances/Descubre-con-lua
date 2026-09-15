@@ -61,6 +61,24 @@ Coste propio: este proyecto llegó a declarar «1443/1443 · CERTIFIED READY FOR
 
 Coste heredado: un trabajo pedido para el galego tocó también un formulario que nadie mandó tocar, y el cambio salió publicado sin que nadie lo hubiera aprobado.
 
+### 0b. Este repositorio es PÚBLICO. El README es un escaparate, no un parte de trabajo
+
+Lo escrito aquí lo lee cualquiera: una familia, una escuela, el Concello, un evaluador de convocatoria. **El README describe el producto. No lleva contabilidad interna del proyecto.**
+
+Fuera del README, sin excepción:
+
+- **fechas y motivos de rechazos de tienda**, y cualquier historia de versiones rechazadas;
+- **el estado de las claves de firma**: si están dadas de alta, con cuál y desde cuándo. Los nombres de los secrets viven donde se usan, en el workflow, y ahí se quedan;
+- **incidencias de otros productos de la casa**, sus nombres de fichero internos y sus capturas;
+- **contabilidad interna de QA**: qué no se ha visto en un aparato, qué gate estuvo roto durante meses, qué activo lo dibujó alguien que no es ilustrador, qué revisión legal está pendiente;
+- **números de run, tamaños de artefacto y `versionCode`** como si fueran el estado del producto.
+
+Nada de esto desaparece: **va a `STATUS.md`**, que es el fichero cuya regla es que cada línea diga con qué se comprobó. Y una advertencia real para quien usa la app —«estas imágenes no son fotos de un móvil»— no es contabilidad interna: esa se queda.
+
+La prueba antes de escribir una línea en el README: *si esto lo lee el Concello o una familia, ¿les sirve, o solo cuenta cómo va la obra por dentro?* Si es lo segundo, va a `STATUS.md`.
+
+Coste propio: este README llegó a llevar el rechazo de un `versionCode` por apuntar a una API vieja, con el número dentro, en un documento público. Lo escribió Claude Code mientras el propio fichero ya decía, tres líneas más arriba, que eso no entra.
+
 ### 1. No digas que una pantalla está hecha sin haberla mirado
 
 Todo cambio visual lleva **captura propia en emulador o aparato**, en gallego **y** en castellano:
