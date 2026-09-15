@@ -48,6 +48,7 @@
         "en": "Steady 72 BPM beat with cross-clapping between partners (right to right, left to left) marking strong and weak beats without speech demand."
       },
       "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
       "comandosL3": [],
       "repertorioMateriales": []
     },
@@ -78,8 +79,7 @@
             "gl": "A docente facilita a tarxeta icónica da percha ao alumno guía e media discretamente sen interferir no intercambio.",
             "es": "La docente facilita la tarjeta icónica de la percha al alumno guía y media discretamente sin interferir en el intercambio.",
             "en": "Teacher hands the coat peg icon card to the leader child and observes discretely without intruding."
-          },
-          "audioAsset": "assets/voice/l3/walk_hook_hang_coat.m4a"
+          }
         },
         {
           "id": "cmd.setembro.6i.02",
@@ -93,8 +93,7 @@
             "gl": "Reforzo cinestésico do xesto de entrega e recepción con sorriso e contacto visual directo.",
             "es": "Refuerzo cinestésico del gesto de entrega y recepción con sonrisa y contacto visual directo.",
             "en": "Kinesthetic reinforcement of giving and receiving with a smile and direct eye contact."
-          },
-          "audioAsset": "assets/voice/l3/take_smock_turn_give.m4a"
+          }
         },
         {
           "id": "cmd.setembro.6i.03",
@@ -108,8 +107,7 @@
             "gl": "Sinalización espacial con xesto manual aberto cara á alfombra verde e silencio atento.",
             "es": "Señalización espacial con gesto manual abierto hacia la alfombra verde y silencio atento.",
             "en": "Spatial open-palm cue toward the green carpet followed by attentive silence."
-          },
-          "audioAsset": "assets/voice/l3/sit_green_mat_freeze.m4a"
+          }
         }
       ],
       "repertorioMateriales": []

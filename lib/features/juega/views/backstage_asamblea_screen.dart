@@ -72,6 +72,16 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
   }
 
   void _loadAsamblea() {
+    if (!widget.repository.isInitialized) {
+      widget.repository.initialize().then((_) {
+        if (mounted) {
+          setState(() {
+            _loadAsamblea();
+          });
+        }
+      });
+      return;
+    }
     final asamblea = widget.repository.getAsambleaByMesYNivelSync(
       widget.initialMes,
       _nivel,
@@ -127,7 +137,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
   }
 
   Future<void> _handlePlayOpeningCue(String? cueAsset) async {
-    if (_audioCoordinator == null) return;
+    if (_audioCoordinator == null || cueAsset == null || cueAsset.isEmpty) return;
     if (_isPlayingCue) {
       await _stopAllAudio();
     } else {
@@ -136,8 +146,15 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
         _isPlayingCue = true;
         _currentlyPlayingAsset = cueAsset;
       });
-      if (cueAsset != null && cueAsset.isNotEmpty) {
+      try {
         await _audioCoordinator!.playWithFadeIn(cueAsset);
+      } catch (_) {
+        if (mounted) {
+          setState(() {
+            _isPlayingCue = false;
+            _currentlyPlayingAsset = null;
+          });
+        }
       }
     }
   }
@@ -148,12 +165,22 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
       await _stopAllAudio();
     } else {
       await _stopAllAudio();
+      final assetToPlay = (pulseAsset != null && pulseAsset.isNotEmpty)
+          ? pulseAsset
+          : 'assets/audio/mar_pulso_72bpm.wav';
       setState(() {
         _isPulsePlaying = true;
-        _currentlyPlayingAsset = pulseAsset;
+        _currentlyPlayingAsset = assetToPlay;
       });
-      if (pulseAsset != null && pulseAsset.isNotEmpty) {
-        await _audioCoordinator!.playWithFadeIn(pulseAsset);
+      try {
+        await _audioCoordinator!.playWithFadeIn(assetToPlay);
+      } catch (_) {
+        if (mounted) {
+          setState(() {
+            _isPulsePlaying = false;
+            _currentlyPlayingAsset = null;
+          });
+        }
       }
     }
   }
@@ -167,12 +194,20 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
       setState(() {
         _currentlyPlayingAsset = audioAsset;
       });
-      await _audioCoordinator!.playWithFadeIn(audioAsset);
+      try {
+        await _audioCoordinator!.playWithFadeIn(audioAsset);
+      } catch (_) {
+        if (mounted) {
+          setState(() {
+            _currentlyPlayingAsset = null;
+          });
+        }
+      }
     }
   }
 
   Future<void> _handlePlayCalmAudio(String? calmAsset) async {
-    if (_audioCoordinator == null) return;
+    if (_audioCoordinator == null || calmAsset == null || calmAsset.isEmpty) return;
     if (_isPlayingCalmAudio) {
       await _stopAllAudio();
     } else {
@@ -181,10 +216,88 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
         _isPlayingCalmAudio = true;
         _currentlyPlayingAsset = calmAsset;
       });
-      if (calmAsset != null && calmAsset.isNotEmpty) {
+      try {
         await _audioCoordinator!.playWithFadeIn(calmAsset);
+      } catch (_) {
+        if (mounted) {
+          setState(() {
+            _isPlayingCalmAudio = false;
+            _currentlyPlayingAsset = null;
+          });
+        }
       }
     }
+  }
+
+  Future<bool> _confirmFinish() async {
+    final isGl = _language == AppLanguage.gl;
+    final shouldFinish = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: AppTheme.backstageSurfaceElevated,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+          side: const BorderSide(color: AppTheme.backstageBorder, width: 1.5),
+        ),
+        title: Text(
+          isGl ? 'Rematar Asemblea Matinal?' : '¿Finalizar Asamblea Matinal?',
+          style: const TextStyle(
+            fontFamily: AppTheme.fontFamily,
+            fontSize: 20,
+            fontWeight: FontWeight.w800,
+            color: AppTheme.backstageTextPrimary,
+          ),
+        ),
+        content: Text(
+          isGl
+              ? 'Completáronse as 4 fases canónicas da asemblea de hoxe. Desexas concluír a sesión e saír ao menú?'
+              : 'Se han completado las 4 fases canónicas de la asamblea de hoy. ¿Deseas concluir la sesión y salir al menú?',
+          style: const TextStyle(
+            fontFamily: AppTheme.fontFamily,
+            fontSize: 16,
+            color: AppTheme.backstageTextSecondary,
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: Text(
+              isGl ? 'Continuar na Asemblea' : 'Continuar en la Asamblea',
+              style: const TextStyle(
+                fontFamily: AppTheme.fontFamily,
+                fontSize: 15,
+                fontWeight: FontWeight.w700,
+                color: AppTheme.backstageTextSecondary,
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppTheme.backstageAccent,
+              foregroundColor: AppTheme.backstageBg,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+              ),
+            ),
+            child: Text(
+              isGl ? 'Rematar e Saír' : 'Finalizar y Salir',
+              style: const TextStyle(
+                fontFamily: AppTheme.fontFamily,
+                fontSize: 15,
+                fontWeight: FontWeight.w800,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    if (shouldFinish == true) {
+      await _stopAllAudio();
+      return true;
+    }
+    return false;
   }
 
   Future<bool> _confirmExit() async {
@@ -429,7 +542,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                                 key: ValueKey(
                                   'timer_fase_${_faseIndex}_nivel_${_nivel.clave}',
                                 ),
-                                duracionSegundos: asamblea.fases[_faseIndex]
+                                duracionSegundos: asamblea.fases[_faseIndex.clamp(0, asamblea.fases.length - 1)]
                                     .duracionSegundos,
                               ),
                             ),
@@ -489,7 +602,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                                 ),
                                 icon: const Icon(Icons.arrow_back_rounded),
                                 label: Text(
-                                  isGl ? 'Fase Anterior' : 'Fase Anterior',
+                                    isGl ? 'Fase Anterior' : 'Fase Anterior',
                                   style: const TextStyle(
                                     fontFamily: AppTheme.fontFamily,
                                     fontSize: 15,
@@ -509,7 +622,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                                     _onFaseSelected(_faseIndex + 1);
                                   } else {
                                     // Rematar asemblea
-                                    _confirmExit().then((ok) {
+                                    _confirmFinish().then((ok) {
                                       if (ok && mounted) {
                                         Navigator.of(context).pop();
                                       }
@@ -555,13 +668,17 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
   }
 
   Widget _buildPhaseContent(AsambleaSegundoCiclo asamblea) {
-    final fase = asamblea.fases[_faseIndex];
+    if (asamblea.fases.isEmpty) return const SizedBox.shrink();
+    final safeIndex = _faseIndex.clamp(0, asamblea.fases.length - 1);
+    final fase = asamblea.fases[safeIndex];
 
-    return switch (_faseIndex) {
+    return switch (safeIndex) {
       0 => PasoOpeningWidget(
           fase: fase,
           language: _language,
-          onPlayCue: () => _handlePlayOpeningCue(fase.audioAsset),
+          onPlayCue: (fase.audioAsset != null && fase.audioAsset!.isNotEmpty)
+              ? () => _handlePlayOpeningCue(fase.audioAsset)
+              : null,
           isPlayingCue: _isPlayingCue,
         ),
       1 => PasoRhythmWidget(
@@ -581,7 +698,9 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
       3 => PasoCalmWidget(
           fase: fase,
           language: _language,
-          onPlayCalmAudio: () => _handlePlayCalmAudio(fase.audioAsset),
+          onPlayCalmAudio: (fase.audioAsset != null && fase.audioAsset!.isNotEmpty)
+              ? () => _handlePlayCalmAudio(fase.audioAsset)
+              : null,
           isPlayingCalmAudio: _isPlayingCalmAudio,
         ),
       _ => const SizedBox.shrink(),

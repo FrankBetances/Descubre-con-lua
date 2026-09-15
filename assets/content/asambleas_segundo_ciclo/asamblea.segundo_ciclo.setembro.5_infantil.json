@@ -48,6 +48,7 @@
         "en": "Keep 72 BPM tapping knees and shoulders alternately. Combine gentle lip vibrations /v/ and /z/ with fingerplay rhythms."
       },
       "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
       "comandosL3": [],
       "repertorioMateriales": []
     },
@@ -78,8 +79,7 @@
             "gl": "Modelado expresivo corporal: a docente encorva lixeiramente o tronco e camiña ao compás.",
             "es": "Modelado expresivo corporal: la docente encorva ligeramente el tronco y camina al compás.",
             "en": "Expressive physical modeling: teacher curves torso slightly and paces along the beat."
-          },
-          "audioAsset": "assets/voice/l3/walk_sleepy_bear_heavy_bag.m4a"
+          }
         },
         {
           "id": "cmd.setembro.5i.02",
@@ -93,8 +93,7 @@
             "gl": "Toque suave de claves de madeira seguido do comando en L3; a docente detense en seco con postura firme.",
             "es": "Toque suave de claves de madera seguido del comando en L3; la docente se detiene en seco con postura firme.",
             "en": "Gentle wood tap followed by oral L3 prompt; teacher freezes suddenly in an upright posture."
-          },
-          "audioAsset": "assets/voice/l3/bell_rings_run_freeze.m4a"
+          }
         },
         {
           "id": "cmd.setembro.5i.03",
@@ -108,8 +107,7 @@
             "gl": "Gesto amplo de acollida e sorriso visible sen esixir produción verbal en L3.",
             "es": "Gesto amplio de acogida y sonrisa visible sin exigir producción verbal en L3.",
             "en": "Open welcoming gesture and visible smile without requiring verbal L3 output."
-          },
-          "audioAsset": "assets/voice/l3/open_bag_take_smock_smile.m4a"
+          }
         }
       ],
       "repertorioMateriales": []

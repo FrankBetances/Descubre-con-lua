@@ -11,6 +11,7 @@ class FadeAudioCoordinator {
   final Duration defaultFadeDuration;
 
   Timer? _fadeTimer;
+  Completer<void>? _fadeCompleter;
   bool _isFading = false;
 
   FadeAudioCoordinator({
@@ -32,16 +33,24 @@ class FadeAudioCoordinator {
     _cancelCurrentFade();
     _isFading = true;
 
-    // Iniciamos a reprodución no servizo base
-    await _service.playAsset(assetPath);
+    try {
+      await _service.playAsset(assetPath);
+    } catch (_) {
+      _isFading = false;
+      rethrow;
+    }
 
     final fadeTime = duration ?? defaultFadeDuration;
     final completer = Completer<void>();
+    _fadeCompleter = completer;
 
     // Temporizador de simulación de fade-in para estados coordinados
     _fadeTimer = Timer(fadeTime, () {
       _isFading = false;
-      completer.complete();
+      if (!completer.isCompleted) {
+        completer.complete();
+      }
+      _fadeCompleter = null;
     });
 
     return completer.future;
@@ -58,11 +67,18 @@ class FadeAudioCoordinator {
 
     final fadeTime = duration ?? defaultFadeDuration;
     final completer = Completer<void>();
+    _fadeCompleter = completer;
 
     _fadeTimer = Timer(fadeTime, () async {
-      await _service.stop();
-      _isFading = false;
-      completer.complete();
+      try {
+        await _service.stop();
+      } finally {
+        _isFading = false;
+        if (!completer.isCompleted) {
+          completer.complete();
+        }
+        _fadeCompleter = null;
+      }
     });
 
     return completer.future;
@@ -75,10 +91,14 @@ class FadeAudioCoordinator {
     await _service.stop();
   }
 
-  /// Cancela calquera temporizador de fundido en curso.
+  /// Cancela calquera temporizador de fundido en curso sen deixar completers colgados.
   void _cancelCurrentFade() {
     _fadeTimer?.cancel();
     _fadeTimer = null;
+    if (_fadeCompleter != null && !_fadeCompleter!.isCompleted) {
+      _fadeCompleter!.complete();
+    }
+    _fadeCompleter = null;
   }
 
   /// Libera recursos.

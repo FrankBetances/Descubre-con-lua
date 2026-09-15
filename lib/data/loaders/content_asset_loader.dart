@@ -37,11 +37,11 @@ class ContentAssetLoader {
 
   /// Canonical base assembly paths for September pilot month.
   static const String baseAsambleaSetembro4 =
-      'assets/content/asambleas_segundo_ciclo/asamblea.setembro.4_infantil.json';
+      'assets/content/asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.4_infantil.json';
   static const String baseAsambleaSetembro5 =
-      'assets/content/asambleas_segundo_ciclo/asamblea.setembro.5_infantil.json';
+      'assets/content/asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.5_infantil.json';
   static const String baseAsambleaSetembro6 =
-      'assets/content/asambleas_segundo_ciclo/asamblea.setembro.6_infantil.json';
+      'assets/content/asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.6_infantil.json';
 
   /// Loads and parses an [Unidad] from an asset path.
   Future<Unidad> loadUnidadFromAsset(String assetPath) async {

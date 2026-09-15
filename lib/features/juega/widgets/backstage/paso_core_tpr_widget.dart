@@ -389,7 +389,9 @@ class PasoCoreTprWidget extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
-                    if (cmd.audioAsset != null && onPlayCommandAudio != null)
+                    if (cmd.audioAsset != null &&
+                        cmd.audioAsset!.isNotEmpty &&
+                        onPlayCommandAudio != null)
                       SizedBox(
                         height: 48,
                         child: ElevatedButton.icon(
@@ -432,6 +434,40 @@ class PasoCoreTprWidget extends StatelessWidget {
                               fontWeight: FontWeight.w800,
                             ),
                           ),
+                        ),
+                      )
+                    else
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 6,
+                        ),
+                        decoration: BoxDecoration(
+                          color: AppTheme.backstageSurfaceElevated,
+                          borderRadius: BorderRadius.circular(
+                            AppTheme.radiusField,
+                          ),
+                          border: Border.all(color: AppTheme.backstageBorder),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(
+                              Icons.record_voice_over_rounded,
+                              size: 16,
+                              color: AppTheme.backstageAccent,
+                            ),
+                            const SizedBox(width: 6),
+                            Text(
+                              isGl ? 'Voz docente' : 'Voz docente',
+                              style: const TextStyle(
+                                fontFamily: AppTheme.fontFamily,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                                color: AppTheme.backstageAccent,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                   ],
@@ -568,7 +604,7 @@ class PasoCoreTprWidget extends StatelessWidget {
           : 'Micro-narrativa de causa-efecto físico, movimientos corporales pesados o ligeros y frenada postural inmediata ante la señal sintáctica «¡FREEZE!». Cero penalizaciones.',
       MetodologiaTPR.transaccionalPragmatico => isGl
           ? 'Dinámica cooperativa entre iguais (peer-to-peer) mediante tarxetas icónicas sen texto escrito, fórmulas pragmáticas de cortesía e orientación espacial.'
-          : 'Dinámica cooperativa entre iguales (peer-to-peer) mediante tarjetas icónicas sin texto escrito, fórmulas pragmáticas de cortesía y orientación espacial.',
+          : 'Dinámica cooperativa entre iguales (peer-to-peer) mediante tarjetas visuales sin palabras escritas. Un compañero guía y el otro realiza la acción motriz.',
     };
   }
 }

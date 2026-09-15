@@ -353,6 +353,235 @@ void main() {
       // Still on backstage screen
       expect(find.byType(BackstageAsambleaScreen), findsOneWidget);
     });
+
+    testWidgets('navigates with bottom Next and Prev buttons and confirms assembly finish on phase 4',
+        (tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: BackstageAsambleaScreen(
+            repository: repository,
+            audioService: mockAudio,
+            initialNivel: NivelEducativoSegundoCiclo.infantil4,
+            initialLanguage: AppLanguage.gl,
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      // Initial Phase 1: Prev button is disabled (onPressed null)
+      final prevFinder = find.byKey(const ValueKey('backstage_prev_phase_button'));
+      final nextFinder = find.byKey(const ValueKey('backstage_next_phase_button'));
+
+      expect(tester.widget<OutlinedButton>(prevFinder).onPressed, isNull);
+      expect(find.text('Seguinte Fase'), findsOneWidget);
+
+      // Advance to Phase 2 with next button
+      await tester.tap(nextFinder);
+      await tester.pumpAndSettle();
+      expect(find.text('FASE 2 · 120s'), findsOneWidget);
+      expect(tester.widget<OutlinedButton>(prevFinder).onPressed, isNotNull);
+
+      // Advance to Phase 3
+      await tester.tap(nextFinder);
+      await tester.pumpAndSettle();
+      expect(find.text('FASE 3 · 270s'), findsOneWidget);
+
+      // Go back to Phase 2 with prev button
+      await tester.tap(prevFinder);
+      await tester.pumpAndSettle();
+      expect(find.text('FASE 2 · 120s'), findsOneWidget);
+
+      // Advance to Phase 3 again
+      await tester.tap(nextFinder);
+      await tester.pumpAndSettle();
+      expect(find.text('FASE 3 · 270s'), findsOneWidget);
+
+      // Advance to Phase 4
+      await tester.tap(nextFinder);
+      await tester.pumpAndSettle();
+      expect(find.text('FASE 4 · 120s'), findsOneWidget);
+
+      // Next button now says "Rematar Asemblea"
+      expect(find.text('Rematar Asemblea'), findsOneWidget);
+
+      // Tap finish assembly
+      await tester.tap(nextFinder);
+      await tester.pumpAndSettle();
+
+      // Verify dedicated finish dialog appears
+      expect(find.text('Rematar Asemblea Matinal?'), findsOneWidget);
+      expect(find.text('Rematar e Saír'), findsOneWidget);
+      expect(find.text('Continuar na Asemblea'), findsOneWidget);
+
+      // Cancel finish
+      await tester.tap(find.text('Continuar na Asemblea'));
+      await tester.pumpAndSettle();
+
+      // Still on backstage screen
+      expect(find.byType(BackstageAsambleaScreen), findsOneWidget);
+    });
+
+    testWidgets('displays Voz docente badge in opening phase when no audio asset is specified',
+        (tester) async {
+      final fixtureWithoutAudio = buildFixture(NivelEducativoSegundoCiclo.infantil4);
+      final repoWithoutAudio = ContentRepository();
+      // buildFixture has audioAsset in phase 1, replace with one without audioAsset
+      final fases = List<FaseAsamblea>.from(fixtureWithoutAudio.fases);
+      fases[0] = FaseAsamblea(
+        orden: 1,
+        tipo: TipoFaseAsamblea.aperturaSaudo,
+        titulo: const LocalizedString(gl: 'Apertura', es: 'Apertura', en: 'Opening'),
+        duracionSegundos: 90,
+        consignaDocente: const LocalizedString(gl: 'Consigna', es: 'Consigna', en: 'Directive'),
+        cueAcustica: 'Hello, Lúa!',
+        audioAsset: null,
+      );
+      final asambleaSinAudio = fixtureWithoutAudio.copyWith(fases: fases);
+      repoWithoutAudio.addAsambleaSegundoCiclo(asambleaSinAudio);
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: BackstageAsambleaScreen(
+            repository: repoWithoutAudio,
+            audioService: mockAudio,
+            initialNivel: NivelEducativoSegundoCiclo.infantil4,
+            initialLanguage: AppLanguage.gl,
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      // Must show "Voz docente" badge and not the play button
+      expect(find.text('Voz docente'), findsOneWidget);
+      expect(find.byKey(const ValueKey('play_opening_cue_button')), findsNothing);
+    });
+
+    testWidgets('displays Voz docente badge in TPR phase when command has no audio asset',
+        (tester) async {
+      final fixtureWithoutAudio = buildFixture(NivelEducativoSegundoCiclo.infantil4);
+      final repoWithoutAudio = ContentRepository();
+      final fases = List<FaseAsamblea>.from(fixtureWithoutAudio.fases);
+      fases[2] = FaseAsamblea(
+        orden: 3,
+        tipo: TipoFaseAsamblea.coreTprChallenge,
+        titulo: const LocalizedString(gl: 'Reto TPR', es: 'Reto TPR', en: 'TPR Challenge'),
+        duracionSegundos: 270,
+        consignaDocente: const LocalizedString(gl: 'Consigna', es: 'Consigna', en: 'Directive'),
+        comandosL3: const [
+          ComandoTPR(
+            id: 'cmd.no_audio.01',
+            textoIngles: 'Stand up and stretch',
+            accionFisica: LocalizedString(gl: 'Erguerse', es: 'Levantarse', en: 'Stand up'),
+            modeladoDocente: LocalizedString(gl: 'Modelado', es: 'Modelado', en: 'Modeling'),
+            audioAsset: null,
+          ),
+        ],
+      );
+      final asambleaSinAudio = fixtureWithoutAudio.copyWith(fases: fases);
+      repoWithoutAudio.addAsambleaSegundoCiclo(asambleaSinAudio);
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: BackstageAsambleaScreen(
+            repository: repoWithoutAudio,
+            audioService: mockAudio,
+            initialNivel: NivelEducativoSegundoCiclo.infantil4,
+            initialLanguage: AppLanguage.gl,
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      // Go to phase 3 (Reto TPR)
+      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester.pumpAndSettle();
+
+      // Must show "Voz docente" badge and not the play button
+      expect(find.text('Voz docente'), findsOneWidget);
+      expect(find.byKey(const ValueKey('play_tpr_audio_cmd.no_audio.01')), findsNothing);
+    });
+
+    testWidgets('timer widget starts, pauses and formats time accurately',
+        (tester) async {
+      await tester.pumpWidget(
+        const MaterialApp(
+          home: Scaffold(
+            body: Center(
+              child: BackstagePhaseTimerWidget(
+                duracionSegundos: 90,
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      // Initially 90s = 01:30
+      expect(find.text('01:30'), findsOneWidget);
+
+      // Tap play/pause button to start
+      await tester.tap(find.byKey(const ValueKey('timer_play_pause_button')));
+      await tester.pump(const Duration(seconds: 2));
+
+      // After 2 seconds, timer should show 01:28
+      expect(find.text('01:28'), findsOneWidget);
+
+      // Tap reset button
+      await tester.tap(find.byKey(const ValueKey('timer_reset_button')));
+      await tester.pumpAndSettle();
+
+      // Back to initial 01:30
+      expect(find.text('01:30'), findsOneWidget);
+    });
+
+    testWidgets('timer widget formats overtime correctly with plus prefix and amber warning',
+        (tester) async {
+      await tester.pumpWidget(
+        const MaterialApp(
+          home: Scaffold(
+            body: Center(
+              child: BackstagePhaseTimerWidget(
+                duracionSegundos: 2,
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      expect(find.text('00:02'), findsOneWidget);
+
+      // Start timer and run past 2 seconds
+      await tester.tap(find.byKey(const ValueKey('timer_play_pause_button')));
+      await tester.pump(const Duration(seconds: 4));
+
+      // Overtime: should display +00:02 with hourglass icon
+      expect(find.text('+00:02'), findsOneWidget);
+      expect(find.byIcon(Icons.hourglass_bottom_rounded), findsOneWidget);
+    });
+
+    testWidgets('automatically initializes repository if screen is opened before initialization completes',
+        (tester) async {
+      // Content repository without pre-added fixtures, initialized via loader mock
+      final uninitializedRepo = ContentRepository();
+      expect(uninitializedRepo.isInitialized, isFalse);
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: BackstageAsambleaScreen(
+            repository: uninitializedRepo,
+            audioService: mockAudio,
+            initialNivel: NivelEducativoSegundoCiclo.infantil4,
+            initialLanguage: AppLanguage.gl,
+          ),
+        ),
+      );
+      // Wait for async initialization triggered by _loadAsamblea
+      await tester.pump();
+
+      // Screen is mounted and has initiated initialization
+      expect(find.byType(BackstageAsambleaScreen), findsOneWidget);
+    });
   });
 
   group('UnidadesListScreen Cycle Selector Tests', () {

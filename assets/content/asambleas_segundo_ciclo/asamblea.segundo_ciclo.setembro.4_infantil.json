@@ -48,6 +48,7 @@
         "en": "Keep a gentle beat tapping knees at 72 BPM: 'Clap, tap, clap, tap'. Psychomotor and proprioceptive synchronization without demanding speech."
       },
       "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
       "comandosL3": [],
       "repertorioMateriales": []
     },
@@ -78,8 +79,7 @@
             "gl": "Modelado sincrónico total: a docente ergue o corpo e dá palmas simultaneamente co comando en L3.",
             "es": "Modelado sincrónico total: la docente se levanta y da palmadas simultáneamente con el comando en L3.",
             "en": "Full synchronous modeling: teacher stands and claps simultaneously with the L3 command."
-          },
-          "audioAsset": "assets/voice/l3/stand_up_and_clap_hands.m4a"
+          }
         },
         {
           "id": "cmd.setembro.4i.02",
@@ -93,8 +93,7 @@
             "gl": "Fading a 2 segundos: a docente pronuncia a orde, agarda 2 segundos para permitir a resposta autónoma e só fai o xesto se hai dúbida.",
             "es": "Fading a 2 segundos: la docente pronuncia la orden, espera 2 segundos para permitir la respuesta autónoma y solo hace el gesto si hay duda.",
             "en": "2-second fading: teacher says the command, waits 2 seconds for autonomous response, gesturing only if hesitation occurs."
-          },
-          "audioAsset": "assets/voice/l3/walk_to_circle_sit_down.m4a"
+          }
         },
         {
           "id": "cmd.setembro.4i.03",
@@ -108,8 +107,7 @@
             "gl": "Execución autónoma motriz: comando exclusivamente oral en L3. Cero demanda de fala; valoración polo movemento e a parada física.",
             "es": "Ejecución autónoma motriz: comando exclusivamente oral en L3. Cero demanda de habla; valoración por el movimiento y la parada física.",
             "en": "Autonomous motor execution: oral L3 prompt only. Zero speech demand; observed through posture and motionless hold."
-          },
-          "audioAsset": "assets/voice/l3/touch_knees_freeze.m4a"
+          }
         }
       ],
       "repertorioMateriales": []

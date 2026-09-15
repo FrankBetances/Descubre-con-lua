@@ -127,7 +127,13 @@ class ContentRepository {
             ? discovered!.capsulas
             : [ContentAssetLoader.baseCapsulaHablar01]);
     final effectiveAsambleaPaths = asambleaSegundoCicloPaths ??
-        (discovered?.asambleasSegundoCiclo ?? const []);
+        (discovered?.asambleasSegundoCiclo.isNotEmpty ?? false
+            ? discovered!.asambleasSegundoCiclo
+            : [
+                ContentAssetLoader.baseAsambleaSetembro4,
+                ContentAssetLoader.baseAsambleaSetembro5,
+                ContentAssetLoader.baseAsambleaSetembro6,
+              ]);
 
     _unidadesById.clear();
     _capsulasById.clear();

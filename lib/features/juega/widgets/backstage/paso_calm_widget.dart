@@ -375,8 +375,10 @@ class PasoCalmWidget extends StatelessWidget {
           }),
         ],
 
-        // Botón opcional de audio de calma
-        if (onPlayCalmAudio != null) ...[
+        // Botón opcional de audio de calma (só se hai audioAsset dispoñible)
+        if (fase.audioAsset != null &&
+            fase.audioAsset!.isNotEmpty &&
+            onPlayCalmAudio != null) ...[
           const SizedBox(height: 8),
           SizedBox(
             width: double.infinity,

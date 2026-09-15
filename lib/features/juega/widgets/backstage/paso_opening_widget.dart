@@ -20,8 +20,10 @@ class PasoOpeningWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
     final titulo = fase.titulo.resolve(language);
     final consigna = fase.consignaDocente.resolve(language);
+    final hasAudio = fase.audioAsset != null && fase.audioAsset!.isNotEmpty;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -87,13 +89,13 @@ class PasoOpeningWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Row(
+              Row(
                 children: [
-                  Icon(Icons.record_voice_over_outlined, color: AppTheme.backstageAccent, size: 22),
-                  SizedBox(width: 8),
+                  const Icon(Icons.record_voice_over_outlined, color: AppTheme.backstageAccent, size: 22),
+                  const SizedBox(width: 8),
                   Text(
-                    'Consigna para o Docente',
-                    style: TextStyle(
+                    isGl ? 'Consigna para o Docente' : 'Consigna para el Docente',
+                    style: const TextStyle(
                       fontFamily: AppTheme.fontFamily,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w700,
@@ -133,9 +135,11 @@ class PasoOpeningWidget extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        'Sinal Sonoro de Transición (Cue)',
-                        style: TextStyle(
+                      Text(
+                        isGl
+                            ? 'Sinal Sonoro de Transición (Cue)'
+                            : 'Señal Sonora de Transición (Cue)',
+                        style: const TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 13,
                           fontWeight: FontWeight.w600,
@@ -155,26 +159,59 @@ class PasoOpeningWidget extends StatelessWidget {
                     ],
                   ),
                 ),
-                if (onPlayCue != null)
+                if (hasAudio && onPlayCue != null)
                   ElevatedButton.icon(
                     key: const ValueKey('play_opening_cue_button'),
                     onPressed: onPlayCue,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.backstageAccent,
+                      backgroundColor: isPlayingCue
+                          ? AppTheme.backstageWarning
+                          : AppTheme.backstageAccent,
                       foregroundColor: AppTheme.backstageBg,
                       minimumSize: const Size(120, 52),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(AppTheme.radiusButton),
                       ),
                     ),
-                    icon: Icon(isPlayingCue ? Icons.pause_rounded : Icons.play_arrow_rounded),
+                    icon: Icon(isPlayingCue ? Icons.stop_rounded : Icons.play_arrow_rounded),
                     label: Text(
-                      isPlayingCue ? 'Pausar' : 'Tocar',
+                      isPlayingCue
+                          ? (isGl ? 'Deter' : 'Detener')
+                          : (isGl ? 'Escoitar' : 'Escuchar'),
                       style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w800,
                       ),
+                    ),
+                  )
+                else
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: AppTheme.backstageSurfaceElevated,
+                      borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                      border: Border.all(color: AppTheme.backstageBorder),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(
+                          Icons.record_voice_over_rounded,
+                          size: 18,
+                          color: AppTheme.backstageAccent,
+                        ),
+                        const SizedBox(width: 6),
+                        Text(
+                          isGl ? 'Voz docente' : 'Voz docente',
+                          style: const TextStyle(
+                            fontFamily: AppTheme.fontFamily,
+                            fontSize: 13,
+                            fontWeight: FontWeight.w700,
+                            color: AppTheme.backstageAccent,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
               ],
