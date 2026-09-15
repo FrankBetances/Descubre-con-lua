@@ -2,9 +2,9 @@
  "lang": "es",
  "voice": "Sharvard (femenina) · rhasspy/piper-voices",
  "peakDbfs": -3.0,
- "entries": 123,
- "totalBytes": 5978553,
- "totalSeconds": 1133.47,
+ "entries": 131,
+ "totalBytes": 6435414,
+ "totalSeconds": 1220.3,
  "files": [
   {
    "id": "es_slow_349f29ef_8",
@@ -145,10 +145,22 @@
    "bytes": 23445
   },
   {
+   "id": "es_tutor_29e4a397_89",
+   "file": "es_tutor_29e4a397_89.m4a",
+   "seconds": 4.7,
+   "bytes": 25327
+  },
+  {
    "id": "es_tutor_2ac25e0b_70",
    "file": "es_tutor_2ac25e0b_70.m4a",
    "seconds": 4.01,
    "bytes": 21721
+  },
+  {
+   "id": "es_tutor_2c02ae18_287",
+   "file": "es_tutor_2c02ae18_287.m4a",
+   "seconds": 16.37,
+   "bytes": 85356
   },
   {
    "id": "es_tutor_2c7bc292_196",
@@ -275,6 +287,12 @@
    "file": "es_tutor_4ec405b8_212.m4a",
    "seconds": 11.71,
    "bytes": 62003
+  },
+  {
+   "id": "es_tutor_50888d69_184",
+   "file": "es_tutor_50888d69_184.m4a",
+   "seconds": 10.5,
+   "bytes": 54887
   },
   {
    "id": "es_tutor_52f023a9_90",
@@ -433,6 +451,12 @@
    "bytes": 34564
   },
   {
+   "id": "es_tutor_80053795_161",
+   "file": "es_tutor_80053795_161.m4a",
+   "seconds": 9.15,
+   "bytes": 48369
+  },
+  {
    "id": "es_tutor_816a5b0c_92",
    "file": "es_tutor_816a5b0c_92.m4a",
    "seconds": 5.38,
@@ -449,6 +473,12 @@
    "file": "es_tutor_81f0fa70_211.m4a",
    "seconds": 12.38,
    "bytes": 65776
+  },
+  {
+   "id": "es_tutor_82e69b09_249",
+   "file": "es_tutor_82e69b09_249.m4a",
+   "seconds": 13.56,
+   "bytes": 70920
   },
   {
    "id": "es_tutor_82f3d3d4_43",
@@ -625,6 +655,12 @@
    "bytes": 29255
   },
   {
+   "id": "es_tutor_d2a059c6_97",
+   "file": "es_tutor_d2a059c6_97.m4a",
+   "seconds": 5.18,
+   "bytes": 27925
+  },
+  {
    "id": "es_tutor_d4d1e330_304",
    "file": "es_tutor_d4d1e330_304.m4a",
    "seconds": 17.09,
@@ -653,6 +689,12 @@
    "file": "es_tutor_e088c730_49.m4a",
    "seconds": 2.54,
    "bytes": 14165
+  },
+  {
+   "id": "es_tutor_e0bb1bde_213",
+   "file": "es_tutor_e0bb1bde_213.m4a",
+   "seconds": 11.6,
+   "bytes": 61255
   },
   {
    "id": "es_tutor_e47ad0d7_101",
@@ -719,6 +761,12 @@
    "file": "es_tutor_f3737e4b_172.m4a",
    "seconds": 10.09,
    "bytes": 52858
+  },
+  {
+   "id": "es_tutor_f686a802_286",
+   "file": "es_tutor_f686a802_286.m4a",
+   "seconds": 15.77,
+   "bytes": 82822
   },
   {
    "id": "es_tutor_fb322427_97",

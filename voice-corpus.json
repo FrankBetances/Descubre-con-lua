@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-09-12T14:49:25Z",
- "entries": 246,
+ "generatedAt": "2026-09-15T05:26:59Z",
+ "entries": 262,
  "byStyle": {
   "slow": 10,
-  "tutor": 236
+  "tutor": 252
  },
  "byLang": {
-  "es": 123,
-  "gl": 123
+  "es": 131,
+  "gl": 131
  },
  "corpus": [
   {
@@ -195,12 +195,28 @@
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/enunciado"
   },
   {
+   "id": "es_tutor_29e4a397_89",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Para ayudar en casa hay que hablar en inglés durante todo el día sin mezclar las lenguas.",
+   "speech": "Para ayudar en casa hay que hablar en inglés durante todo el día sin mezclar las lenguas.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
    "id": "es_tutor_2ac25e0b_70",
    "lang": "es",
    "style": "tutor",
    "text": "Aprovechar para vincular la palabra con la sensación térmica y táctil.",
    "speech": "Aprovechar para vincular la palabra con la sensación térmica y táctil.",
    "source": "juega.mar.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "es_tutor_2c02ae18_287",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el Segundo Ciclo (3-6 años), la introducción del inglés a través del movimiento (TPR) convive en perfecta armonía con el gallego y el castellano. La mejor ayuda en el hogar no son los exámenes ni traducir, sino micro-rutinas de 3 a 5 minutos basadas en el principio de Tiempo y Lugar.",
+   "speech": "En el Segundo Ciclo (3-6 años), la introducción del inglés a través del movimiento (TPR) convive en perfecta armonía con el gallego y el castellano. La mejor ayuda en el hogar no son los exámenes ni traducir, sino microrutinas de 3 a 5 minutos basadas en el principio de Tiempo y Lugar.",
+   "source": "academy.segundo_ciclo.setembro.01/ideaClave"
   },
   {
    "id": "es_tutor_2c7bc292_196",
@@ -369,6 +385,14 @@
    "text": "El habla comienza mucho antes de la primera palabra. El cerebro infantil construye el lenguaje a partir de las conversaciones cálidas, miradas compartidas y palabras afectuosas que escucha a diario en su familia.",
    "speech": "El habla comienza mucho antes de la primera palabra. El cerebro infantil construye el lenguaje a partir de las conversaciones cálidas, miradas compartidas y palabras afectuosas que escucha a diario en su familia.",
    "source": "academy.como_se_aprende_a_hablar.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_50888d69_184",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No es necesario ni recomendable: las lenguas ambientales de casa (gallego y castellano) son el pilar afectivo. El inglés se integra en pequeños nichos de juego motriz de 3 a 5 minutos.",
+   "speech": "No es necesario ni recomendable: las lenguas ambientales de casa (gallego y castellano) son el pilar afectivo. El inglés se integra en pequeños nichos de juego motriz de 3 a 5 minutos.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
    "id": "es_tutor_52f023a9_90",
@@ -579,6 +603,14 @@
    "source": "juega.mar.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "es_tutor_80053795_161",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Exacto: al escuchar el modelo correcto dentro de una conversación real y afectuosa, el cerebro infantil ajusta sus estructuras sin frustración ni miedo al error.",
+   "speech": "Exacto: al escuchar el modelo correcto dentro de una conversación real y afectuosa, el cerebro infantil ajusta sus estructuras sin frustración ni miedo al error.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
    "id": "es_tutor_816a5b0c_92",
    "lang": "es",
    "style": "tutor",
@@ -601,6 +633,14 @@
    "text": "Pregunta y calla cinco segundos contando en tu cabeza. Si nadie responde, no repitas la pregunta: dale la respuesta tú nombrando y señalando, y pasa a la siguiente. Nunca pidas que repitan la palabra bien dicha.",
    "speech": "Pregunta y calla cinco segundos contando en tu cabeza. Si nadie responde, no repitas la pregunta: dale la respuesta tú nombrando y señalando, y pasa a la siguiente. Nunca pidas que repitan la palabra bien dicha.",
    "source": "aula.preguntas.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_82e69b09_249",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Escoge un nicho cotidiano de 3 minutos, como colgar el abrigo al llegar del colegio («The Magic Coat Hook»). Si el niño dice «¡Abrigo suelo!», no lo corrijas: responde con sonrisa y acción motriz: «¡Sí! El abrigo en la percha: Up on the hook, zip!».",
+   "speech": "Escoge un nicho cotidiano de 3 minutos, como colgar el abrigo al llegar del colegio («The Magic Coat Hook»). Si el niño dice «¡Abrigo suelo!», no lo corrijas: responde con sonrisa y acción motriz: «¡Sí! El abrigo en la percha: Up on the hook, zip!».",
+   "source": "academy.segundo_ciclo.setembro.01/queHacerEnCasa"
   },
   {
    "id": "es_tutor_82f3d3d4_43",
@@ -835,6 +875,14 @@
    "source": "juega.mar.01/matematicas/accion/1"
   },
   {
+   "id": "es_tutor_d2a059c6_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El modelado indirecto (recast) ayuda más al aprendizaje que pedir que repita la frase bien dicha.",
+   "speech": "El modelado indirecto (recast) ayuda más al aprendizaje que pedir que repita la frase bien dicha.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
    "id": "es_tutor_d4d1e330_304",
    "lang": "es",
    "style": "tutor",
@@ -873,6 +921,14 @@
    "text": "¿Dónde está el barco grande que navega en el mar?",
    "speech": "¿Dónde está el barco grande que navega en el mar?",
    "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_e0bb1bde_213",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el recibidor de casa: el menor se quita la chaqueta con calma. En lugar de hacer preguntas directas, la madre acompaña el movimiento con ritmo: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»",
+   "speech": "En el recibidor de casa: el menor se quita la chaqueta con calma. En lugar de hacer preguntas directas, la madre acompaña el movimiento con ritmo: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»",
+   "source": "academy.segundo_ciclo.setembro.01/ejemploCotidiano"
   },
   {
    "id": "es_tutor_e47ad0d7_101",
@@ -963,6 +1019,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
+   "id": "es_tutor_f686a802_286",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Exigir que el niño hable en inglés o preguntarle «¿cómo se dice esto?» genera ansiedad y bloquea el filtro afectivo. Por el contrario, el modelado indirecto (recast) valida lo que dice el menor y devuelve la frase correcta con afecto y movimiento, protegiendo su seguridad comunicativa.",
+   "speech": "Exigir que el niño hable en inglés o preguntarle «¿cómo se dice esto?» genera ansiedad y bloquea el filtro afectivo. Por el contrario, el modelado indirecto (recast) valida lo que dice el menor y devuelve la frase correcta con afecto y movimiento, protegiendo su seguridad comunicativa.",
+   "source": "academy.segundo_ciclo.setembro.01/porQueImporta"
+  },
+  {
    "id": "es_tutor_fb322427_97",
    "lang": "es",
    "style": "tutor",
@@ -1043,12 +1107,28 @@
    "source": "aula.preguntas.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
+   "id": "gl_tutor_035b72e5_277",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esixir que a crianza fale en inglés ou preguntarlle «como se di isto?» xera ansiedade e bloquea o filtro afectivo. Pola contra, o modelado indirecto (recast) valida o que di a crianza e devolve a frase correcta con agarimo e movemento, protexendo a súa seguridade comunicativa.",
+   "speech": "Esixir que a crianza fale en inglés ou preguntarlle «como se di isto?» xera ansiedade e bloquea o filtro afectivo. Pola contra, o modelado indirecto (recast) valida o que di a crianza e devolve a frase correcta con agarimo e movemento, protexendo a súa seguridade comunicativa.",
+   "source": "academy.segundo_ciclo.setembro.01/porQueImporta"
+  },
+  {
    "id": "gl_tutor_0690a29f_160",
    "lang": "gl",
    "style": "tutor",
    "text": "Así é: o vídeo emite igual atenda ou non. O adulto axusta, agarda e responde ao que acaba de facer, e esa resposta é a que constrúe linguaxe nos primeiros anos.",
    "speech": "Así é: o vídeo emite igual atenda ou non. O adulto axusta, agarda e responde ao que acaba de facer, e esa resposta é a que constrúe linguaxe nos primeiros anos.",
    "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_070f82a1_87",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Para axudar na casa hai que falar en inglés durante todo o día sen mesturar as linguas.",
+   "speech": "Para axudar na casa hai que falar en inglés durante todo o día sen mesturar as linguas.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/enunciado"
   },
   {
    "id": "gl_tutor_07aaac78_153",
@@ -1129,6 +1209,14 @@
    "text": "Correcto: a palabra que chega mentres el xa está a atender é a que aprende. Redirixir a atención gasta o momento en conseguir que mire, e a palabra chega tarde.",
    "speech": "Correcto: a palabra que chega mentres el xa está a atender é a que aprende. Redirixir a atención gasta o momento en conseguir que mire, e a palabra chega tarde.",
    "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_14a239ce_156",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Exacto: ao escoitar o modelo correcto dentro dunha conversa real e agarimosa, o cerebro infantil axusta as súas estruturas sen frustración nin medo ao erro.",
+   "speech": "Exacto: ao escoitar o modelo correcto dentro dunha conversa real e agarimosa, o cerebro infantil axusta as súas estruturas sen frustración nin medo ao erro.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
    "id": "gl_tutor_168a89d1_101",
@@ -1273,6 +1361,14 @@
    "text": "Que pasa cando metemos a cuncha dentro da auga morna?",
    "speech": "Que pasa cando metemos a cuncha dentro da auga morna?",
    "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_3c83481e_266",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No Segundo Ciclo (3-6 anos), a introdución do inglés a través do movemento (TPR) convive en perfecta harmonía co galego e o castelán. A mellor axuda no fogar non son os exames nin traducir, senón micro-rutinas de 3 a 5 minutos baseadas no principio de Tempo e Lugar.",
+   "speech": "No Segundo Ciclo (3-6 anos), a introdución do inglés a través do movemento (TPR) convive en perfecta harmonía co galego e o castelán. A mellor axuda no fogar non son os exames nin traducir, senón microrutinas de 3 a 5 minutos baseadas no principio de Tempo e Lugar.",
+   "source": "academy.segundo_ciclo.setembro.01/ideaClave"
   },
   {
    "id": "gl_tutor_3e5ed832_191",
@@ -1449,6 +1545,14 @@
    "text": "Unha nena mete a man na bandexa e retírala de golpe. Non lle preguntas nada. Dis: «Auga! Auga morna.» Volve metela, máis amodo. «Si, morna.» Á terceira vez mete as dúas mans e mírate. Esa ollada é a súa quenda, e xa asociou a palabra á sensación.",
    "speech": "Unha nena mete a man na bandexa e retírala de golpe. Non lle preguntas nada. Dis: «Auga! Auga morna.» Volve metela, máis amodo. «Si, morna.» Á terceira vez mete as dúas mans e mírate. Esa ollada é a súa quenda, e xa asociou a palabra á sensación.",
    "source": "aula.exploracion.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_6d1b0b95_198",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No recibidor da casa: a crianza quita a chaqueta con calma. En vez de facer preguntas directas, a nai acompaña o movemento con ritmo: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»",
+   "speech": "No recibidor da casa: a crianza quita a chaqueta con calma. En vez de facer preguntas directas, a nai acompaña o movemento con ritmo: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»",
+   "source": "academy.segundo_ciclo.setembro.01/ejemploCotidiano"
   },
   {
    "id": "gl_tutor_6f8664e9_79",
@@ -1675,6 +1779,14 @@
    "source": "aula.pulso.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "gl_tutor_a57f4a69_237",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escolle un nicho cotián de 3 minutos, como colgar o abrigo ao chegar da escola («The Magic Coat Hook»). Se a crianza di «Abrigo chan!», non a corrixas: responde con sorriso e acción motriz: «Si! O abrigo na percha: Up on the hook, zip!».",
+   "speech": "Escolle un nicho cotián de 3 minutos, como colgar o abrigo ao chegar da escola («The Magic Coat Hook»). Se a crianza di «Abrigo chan!», non a corrixas: responde con sorriso e acción motriz: «Si! O abrigo na percha: Up on the hook, zip!».",
+   "source": "academy.segundo_ciclo.setembro.01/queHacerEnCasa"
+  },
+  {
    "id": "gl_tutor_a85c28d7_66",
    "lang": "gl",
    "style": "tutor",
@@ -1745,6 +1857,14 @@
    "text": "A parella de palabras opostas —grande e pequeno, moito e pouco, dentro e fóra— só significa algo cando as dúas se ven á vez. Cun obxecto só, «grande» non ten con que compararse e queda como un adxectivo calquera. Dous obxectos na mesma man é o que converte a palabra nunha noción.",
    "speech": "A parella de palabras opostas —grande e pequeno, moito e pouco, dentro e fóra— só significa algo cando as dúas se ven á vez. Cun obxecto só, «grande» non ten con que compararse e queda como un adxectivo calquera. Dous obxectos na mesma man é o que converte a palabra nunha noción.",
    "source": "aula.matematicas.01/porQueImporta"
+  },
+  {
+   "id": "gl_tutor_b8e6df0d_175",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non é necesario nin recomendable: as linguas ambientais da casa (galego e castelán) son o piar afectivo. O inglés intégrase en pequenos nichos de xogo motriz de 3 a 5 minutos.",
+   "speech": "Non é necesario nin recomendable: as linguas ambientais da casa (galego e castelán) son o piar afectivo. O inglés intégrase en pequenos nichos de xogo motriz de 3 a 5 minutos.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
    "id": "gl_tutor_b8f2d5a4_107",
@@ -1873,6 +1993,14 @@
    "text": "Fala cada un na lingua na que te sintas cómodo e sexas ti mesmo. Se mestura palabras das dúas nunha mesma frase, non o corrixas: é normal e pasa. E busca que en cada lingua haxa alguén que lle fale moito, non só que a oia de fondo.",
    "speech": "Fala cada un na lingua na que te sintas cómodo e sexas ti mesmo. Se mestura palabras das dúas nunha mesma frase, non o corrixas: é normal e pasa. E busca que en cada lingua haxa alguén que lle fale moito, non só que a oia de fondo.",
    "source": "academy.bilinguismo_y_cultura.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_dbfd1188_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O modelado indirecto (recast) axuda máis á aprendizaxe que pedir que repita a frase ben dita.",
+   "speech": "O modelado indirecto (recast) axuda máis á aprendizaxe que pedir que repita a frase ben dita.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
    "id": "gl_tutor_dcca94d5_156",

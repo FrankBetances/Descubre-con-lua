@@ -2,9 +2,9 @@
  "lang": "gl",
  "voice": "Celtia · Proxecto Nós (proxectonos)",
  "peakDbfs": -3.0,
- "entries": 123,
- "totalBytes": 6618045,
- "totalSeconds": 1135.24,
+ "entries": 131,
+ "totalBytes": 7107233,
+ "totalSeconds": 1219.84,
  "files": [
   {
    "id": "gl_slow_29231976_5",
@@ -43,10 +43,22 @@
    "bytes": 60229
   },
   {
+   "id": "gl_tutor_035b72e5_277",
+   "file": "gl_tutor_035b72e5_277.m4a",
+   "seconds": 15.3,
+   "bytes": 86120
+  },
+  {
    "id": "gl_tutor_0690a29f_160",
    "file": "gl_tutor_0690a29f_160.m4a",
    "seconds": 10.4,
    "bytes": 61490
+  },
+  {
+   "id": "gl_tutor_070f82a1_87",
+   "file": "gl_tutor_070f82a1_87.m4a",
+   "seconds": 4.56,
+   "bytes": 27306
   },
   {
    "id": "gl_tutor_07aaac78_153",
@@ -107,6 +119,12 @@
    "file": "gl_tutor_120a84c7_160.m4a",
    "seconds": 9.08,
    "bytes": 55186
+  },
+  {
+   "id": "gl_tutor_14a239ce_156",
+   "file": "gl_tutor_14a239ce_156.m4a",
+   "seconds": 8.93,
+   "bytes": 52677
   },
   {
    "id": "gl_tutor_168a89d1_101",
@@ -215,6 +233,12 @@
    "file": "gl_tutor_3b588b92_53.m4a",
    "seconds": 2.68,
    "bytes": 18342
+  },
+  {
+   "id": "gl_tutor_3c83481e_266",
+   "file": "gl_tutor_3c83481e_266.m4a",
+   "seconds": 13.99,
+   "bytes": 78632
   },
   {
    "id": "gl_tutor_3e5ed832_191",
@@ -347,6 +371,12 @@
    "file": "gl_tutor_6d03d2d9_246.m4a",
    "seconds": 17.41,
    "bytes": 98410
+  },
+  {
+   "id": "gl_tutor_6d1b0b95_198",
+   "file": "gl_tutor_6d1b0b95_198.m4a",
+   "seconds": 11.85,
+   "bytes": 70441
   },
   {
    "id": "gl_tutor_6f8664e9_79",
@@ -517,6 +547,12 @@
    "bytes": 66826
   },
   {
+   "id": "gl_tutor_a57f4a69_237",
+   "file": "gl_tutor_a57f4a69_237.m4a",
+   "seconds": 14.12,
+   "bytes": 83592
+  },
+  {
    "id": "gl_tutor_a85c28d7_66",
    "file": "gl_tutor_a85c28d7_66.m4a",
    "seconds": 3.78,
@@ -569,6 +605,12 @@
    "file": "gl_tutor_b57e6d9f_280.m4a",
    "seconds": 15.58,
    "bytes": 88213
+  },
+  {
+   "id": "gl_tutor_b8e6df0d_175",
+   "file": "gl_tutor_b8e6df0d_175.m4a",
+   "seconds": 10.31,
+   "bytes": 58395
   },
   {
    "id": "gl_tutor_b8f2d5a4_107",
@@ -665,6 +707,12 @@
    "file": "gl_tutor_d83e643c_231.m4a",
    "seconds": 13.37,
    "bytes": 77342
+  },
+  {
+   "id": "gl_tutor_dbfd1188_93",
+   "file": "gl_tutor_dbfd1188_93.m4a",
+   "seconds": 5.54,
+   "bytes": 32025
   },
   {
    "id": "gl_tutor_dcca94d5_156",
