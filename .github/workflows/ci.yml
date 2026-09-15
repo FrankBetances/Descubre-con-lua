@@ -1,8 +1,8 @@
 name: Gates
 
-# Los gates Y el binario firmado, en un solo workflow. Corre `tools/gates.sh` — el mismo fichero que corre un contribuyente
-# en su máquina, así que la lista de gates no puede separarse de lo que de
-# verdad se exige.
+# Los gates Y el binario firmado, en un solo workflow. Corre `tools/gates.sh`,
+# el mismo fichero que corre un contribuyente en su máquina, así que la lista de
+# gates no puede separarse de lo que de verdad se exige.
 #
 # Firma de release: requiere estos secrets en Settings > Secrets and variables >
 # Actions (los valores son POR REPOSITORIO: hay que darlos de alta aquí):
@@ -118,6 +118,12 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          # `packages` por defecto es «tools platform-tools», y `tools` ya no
+          # existe en el repositorio de Google: sdkmanager responde «Failed to
+          # find package 'tools'» y la acción muere con exit 1 ANTES de que
+          # corra un solo gate. Se pide solo platform-tools, que sí existe.
+          packages: 'platform-tools'
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
