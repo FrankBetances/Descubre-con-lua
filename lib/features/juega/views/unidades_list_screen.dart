@@ -14,6 +14,8 @@ import 'capsulas_aula_screen.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../calendario/views/calendario_screen.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
+import '../../../data/repositories/calendario_repository.dart';
+import '../../calendario/widgets/calendario_do_curso.dart';
 
 /// Ciclos educativos de Educación Infantil (Decreto 150/2022).
 enum CicloEducativo {
@@ -41,6 +43,12 @@ class UnidadesListScreen extends StatefulWidget {
   /// Opcional: para sincronizar asambleas realizadas con o calendario escola-fogar.
   final CalendarioStore? calendario;
 
+  /// Los diez meses, si quien abre esta pantalla ya los tiene leídos. Sin
+  /// esto la sección del calendario los lee sola, que en la app tarda un
+  /// fotograma pero en un test de captura puede no llegar a tiempo: la
+  /// imagen salía con un hueco en blanco donde va el calendario.
+  final CalendarioContenido? calendarioContenido;
+
   /// Ciclo educativo seleccionado por defecto (1.er Ciclo ou 2.º Ciclo).
   final CicloEducativo initialCiclo;
 
@@ -52,6 +60,7 @@ class UnidadesListScreen extends StatefulWidget {
     this.onLanguageChanged,
     this.premios,
     this.calendario,
+    this.calendarioContenido,
     this.initialCiclo = CicloEducativo.primerCiclo,
   });
 
@@ -69,6 +78,47 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
     super.initState();
     _language = widget.initialLanguage;
     _selectedCiclo = widget.initialCiclo;
+  }
+
+  /// El calendario del curso, DENTRO de esta pantalla.
+  ///
+  /// Aquí había un botón azul que saltaba a otra pantalla. Un botón que lleva
+  /// al calendario no es el calendario: la docente que abre el aula con dos
+  /// minutos de margen tiene que ver el mes que le toca sin salir de donde
+  /// está. Va en los dos ciclos, y la misma pieza va en Academy.
+  Widget _buildCalendarioDoAula({EdgeInsets? padding}) {
+    return CalendarioDoCurso(
+      lang: _language,
+      esDocente: true,
+      store: widget.calendario,
+      contenido: widget.calendarioContenido,
+      onAbrirMes: _abrirCalendario,
+      padding: padding ??
+          const EdgeInsets.fromLTRB(
+            AppTheme.spaceLg,
+            AppTheme.spaceMd,
+            AppTheme.spaceLg,
+            0,
+          ),
+    );
+  }
+
+  void _abrirCalendario(CalendarioContenido contenido, int mesIndex) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => CalendarioScreen(
+          store: widget.calendario ?? CalendarioStore(),
+          contenido: contenido,
+          mesInicialIndex: mesIndex,
+          initialLanguage: _language,
+          onLanguageChanged: _onToggleLanguage,
+          esDocenteInicial: true,
+          repository: widget.repository,
+          audioService: widget.audioService,
+          premios: widget.premios,
+        ),
+      ),
+    );
   }
 
   void _onToggleLanguage(AppLanguage newLang) {
@@ -258,44 +308,6 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                   ),
                 ),
 
-              // La puerta a la formación docente. Va arriba y no escondida en un
-              // menú: una maestra que abre el aula con dos minutos de margen
-              // tiene que poder leer el paso que le toca sin buscarlo.
-              Padding(
-                padding: const EdgeInsets.fromLTRB(
-                  AppTheme.spaceLg,
-                  AppTheme.spaceMd,
-                  AppTheme.spaceLg,
-                  0,
-                ),
-                child: ElevatedButton.icon(
-                  onPressed: () => Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => CalendarioScreen(
-                        store: widget.calendario ?? CalendarioStore(),
-                        initialLanguage: _language,
-                        onLanguageChanged: _onToggleLanguage,
-                        esDocenteInicial: true,
-                        repository: widget.repository,
-                        audioService: widget.audioService,
-                        premios: widget.premios,
-                      ),
-                    ),
-                  ),
-                  icon: const Icon(Icons.calendar_month_rounded),
-                  label: Text(
-                    isGl
-                        ? 'Calendario Escola · Fogar (Dobre Estimulación)'
-                        : 'Calendario Escuela · Hogar (Doble Estimulación)',
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.primaryVigoBlue,
-                    foregroundColor: Colors.white,
-                    minimumSize: const Size.fromHeight(AppTheme.touchMin),
-                  ),
-                ),
-              ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(
                   AppTheme.spaceLg,
@@ -371,25 +383,47 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               // Units List View
               Expanded(
                 child: unidades.isEmpty
-                    ? Center(
-                        child: Padding(
-                          padding: const EdgeInsets.all(24.0),
-                          child: Text(
-                            isGl
-                                ? 'Non se atoparon unidades para este tramo de idade.'
-                                : 'No se encontraron unidades para este tramo de edad.',
-                            style: theme.textTheme.bodyMedium?.copyWith(
-                              color: const Color(0xFF64748B),
-                            ),
-                            textAlign: TextAlign.center,
+                    // El calendario sigue estando aunque el filtro de edad no
+                    // deje ninguna unidad: no depende del tramo.
+                    ? ListView(
+                        padding: const EdgeInsets.all(20.0),
+                        children: [
+                          _buildCalendarioDoAula(
+                            padding:
+                                const EdgeInsets.only(bottom: AppTheme.spaceLg),
                           ),
-                        ),
+                          Padding(
+                            padding: const EdgeInsets.all(24.0),
+                            child: Text(
+                              isGl
+                                  ? 'Non se atoparon unidades para este tramo de idade.'
+                                  : 'No se encontraron unidades para este tramo de edad.',
+                              style: theme.textTheme.bodyMedium?.copyWith(
+                                color: const Color(0xFF64748B),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
                       )
                     : ListView.builder(
                         padding: const EdgeInsets.all(20.0),
-                        itemCount: unidades.length,
+                        // +1: el calendario es la primera fila de la lista.
+                        //
+                        // Va DENTRO de la lista y no en el marco fijo de
+                        // arriba a propósito: en el marco sumaba alto y a
+                        // escala de texto 1,3 la pantalla desbordaba 5 px por
+                        // abajo. Aquí se ve nada más entrar, que es lo que
+                        // pedía Frank, y se desplaza con el resto.
+                        itemCount: unidades.length + 1,
                         itemBuilder: (context, index) {
-                          final unidad = unidades[index];
+                          if (index == 0) {
+                            return _buildCalendarioDoAula(
+                              padding: const EdgeInsets.only(
+                                  bottom: AppTheme.spaceLg),
+                            );
+                          }
+                          final unidad = unidades[index - 1];
                           return _buildUnidadCard(context, unidad, isGl);
                         },
                       ),
@@ -615,8 +649,21 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
 
     return Expanded(
       child: ListView(
+        // Con clave: los tests necesitan decir POR CUÁL de los desplazables
+        // bajan, y ahora hay dos —este y el carrusel de meses, que va de
+        // lado—. Sin clave, `find.byType(Scrollable).last` cogía el carrusel.
+        key: const Key('lista_segundo_ciclo'),
         padding: const EdgeInsets.all(AppTheme.spaceLg),
         children: [
+          // El calendario también aquí. El 2.º ciclo reparte el mismo curso de
+          // diez meses que el primero, y no tenerlo obligaba a salir de esta
+          // pantalla para saber por dónde va el curso.
+          //
+          // Sin margen lateral propio: esta lista ya trae el suyo, y sumados
+          // dejaban la tarjeta estrecha.
+          _buildCalendarioDoAula(
+            padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
+          ),
           // Banner explicativo do Segundo Ciclo
           Container(
             padding: const EdgeInsets.all(18),

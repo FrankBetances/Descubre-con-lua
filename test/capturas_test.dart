@@ -344,6 +344,10 @@ void main() {
 
     testWidgets('aula · lista de unidades · $l', (tester) async {
       final premios = await premiosConProgreso(tester);
+      // El calendario, ya leído. Si se deja que lo lea la propia sección, la
+      // lectura puede no llegar antes del retrato y la imagen sale con un
+      // hueco en blanco donde va el calendario.
+      final cal = await contenidoCalendario(tester);
       await capturar(
           tester,
           'aula-unidades-$l',
@@ -352,6 +356,7 @@ void main() {
             premios: premios,
             audioService: MockOfflineAudioService(),
             initialLanguage: lang,
+            calendarioContenido: cal,
           ));
     });
 
@@ -371,6 +376,7 @@ void main() {
 
     testWidgets('aula · lista, pestana de 2.º ciclo · $l', (tester) async {
       final premios = await premiosConProgreso(tester);
+      final cal = await contenidoCalendario(tester);
       await capturar(
         tester,
         'aula-lista-2ciclo-$l',
@@ -379,6 +385,7 @@ void main() {
           premios: premios,
           audioService: MockOfflineAudioService(),
           initialLanguage: lang,
+          calendarioContenido: cal,
         ),
         tamano: const Size(412, 1500),
         antesDeRetratar: (tester) async {
@@ -418,6 +425,7 @@ void main() {
 
     testWidgets('academy · bloques · $l', (tester) async {
       final premios = await premiosConProgreso(tester);
+      final cal = await contenidoCalendario(tester);
       await capturar(
         tester,
         'academy-bloques-$l',
@@ -425,6 +433,7 @@ void main() {
           repository: contenido,
           premios: premios,
           initialLanguage: lang,
+          calendarioContenido: cal,
         ),
         tamano: const Size(412, 1400),
       );

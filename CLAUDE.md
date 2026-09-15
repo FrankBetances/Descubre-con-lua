@@ -195,8 +195,48 @@ La familia de defectos típica aquí es **`RenderFlex overflowed`** con una cade
 En todo cambio de disposición:
 
 - comprueba en aparato con gl, es y **escala de texto grande**;
-- si no hay aparato, escribe **«esto no lo he visto en un aparato»** y no mergees a `main` sin que Frank lo mire;
+- si no hay aparato, escribe **«esto no lo he visto en un aparato»**;
 - lo más seguro sin aparato es **no cambiar la disposición**.
+
+Lo que esta regla **no** autoriza: retener el cambio en una rama a la espera de que Frank lo mire. No puede mirar lo que no está en `main`. Ver 1d.
+
+### 1d. Abre la app y llega hasta donde Frank dijo · desarrollo de R1 y R6
+
+**Una golden enseña la pantalla QUE TÚ ELEGISTE construir.** Si elegiste la equivocada, la golden te la confirma en verde. Los tests, los gates y CI están todos por debajo de tu interpretación de la orden: ninguno puede desmentirla. La única comprobación que sí puede es **arrancar la app y llegar andando hasta el sitio que Frank nombró**.
+
+Antes de tocar una línea por una orden de pantalla:
+
+1. arranca la app de verdad;
+2. navega hasta ese sitio **por el camino que usa Frank**, no por el fichero;
+3. captura esa pantalla y **mírala**;
+4. si lo que ves no es lo que él describe, **para y pregunta antes de cambiar nada**. No hay prisa que justifique rehacer la pantalla equivocada.
+
+Al terminar, la misma ruta otra vez: arrancar, navegar, capturar, mirar.
+
+**Sí se puede arrancar aquí.** No hay emulador de Android, pero sí escritorio Linux con pantalla virtual. Sobre una COPIA del repositorio, nunca sobre él:
+
+```bash
+apt-get install -y libgtk-3-dev imagemagick xdotool xvfb   # una vez
+flutter config --enable-linux-desktop
+flutter create --platforms=linux .          # en la copia
+flutter build linux --debug
+Xvfb :99 -screen 0 460x1000x24 &
+DISPLAY=:99 ./descubre_con_lua &            # bundle: binario + data/ + lib/
+DISPLAY=:99 import -window root tiro.png    # capturar
+DISPLAY=:99 xdotool mousemove X Y click 1   # navegar
+```
+
+Dos avisos de lo que ahí NO es real: el arrastre con ratón no mueve un `PageView` salvo que se amplíe `dragDevices` —con el dedo sí—, y el almacenamiento de Android no existe, así que los contadores salen a cero. Lo que sí es real, y es lo que importa: **qué pantalla sale y qué hay dentro**.
+
+**El sitio se nombra por el camino, no por el fichero.** «El calendario» no es `calendario_screen.dart`: es el sitio al que se llega por Inicio → Entrar en Modo Aula. Buscar la palabra con `grep` y quedarse con el fichero que sale es elegir la interpretación que ya sabes satisfacer. Si la orden nombra un sitio, escribe el camino completo en la respuesta **antes de empezar**, para que Frank lo corrija en una línea si te equivocaste de puerta.
+
+**Si la orden nombra un elemento, va en TODOS los modos donde ese elemento pinta.** Enumera los modos —aula de 1.º ciclo, aula de 2.º ciclo, Academy— y di en cuál está y en cuál no.
+
+**Un botón que lleva a una pantalla no es esa pantalla.** «Pon el calendario aquí» no se cumple poniendo un enlace al calendario.
+
+**Y no está cumplida mientras viva en una rama.** Frank compila `main`. Si el cambio es de disposición y no se ha visto en aparato, se mergea igual y se dice con esas palabras que no se ha visto; retenerlo es incumplir la orden, no protegerla.
+
+Coste propio: el Calendario se rehízo entero, con 379 tests, 14 gates y dos runs de CI en verde, sobre `calendario_screen.dart`. La orden era sobre el Calendario del **Modo Aula**, donde solo había un botón que saltaba fuera. Cuatro entregas seguidas dadas por buenas sin haber abierto la app ni una vez.
 
 ### 2. Informa de lo que Frank VA A VER, no de lo que has hecho
 

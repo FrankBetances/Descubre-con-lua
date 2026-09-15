@@ -152,9 +152,18 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      // Find the card for Segundo Ciclo micro-routine
+      // Find the card for Segundo Ciclo micro-routine.
+      //
+      // Hai que baixar: o calendario do curso xa vive dentro de Academy, e
+      // empuxa esta tarxeta fóra da primeira pantalla.
       final segundoCicloCard =
           find.text('Micro-rutina de setembro: responder sen corrixir');
+      await tester.scrollUntilVisible(
+        segundoCicloCard,
+        300,
+        scrollable: find.byType(Scrollable).last,
+      );
+      await tester.pumpAndSettle();
       expect(segundoCicloCard, findsOneWidget);
 
       // Tap card to open screen

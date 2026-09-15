@@ -15,6 +15,8 @@ import 'guia_atencion_screen.dart';
 import 'micro_rutina_setembro_screen.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../calendario/views/calendario_screen.dart';
+import '../../calendario/widgets/calendario_do_curso.dart';
+import '../../../data/repositories/calendario_repository.dart';
 
 /// Los 5 bloques de desarrollo de «Academy · Familias».
 ///
@@ -39,6 +41,12 @@ class BloquesListScreen extends StatefulWidget {
   /// Opcional: para acceder ao calendario sincronizado escola-fogar.
   final CalendarioStore? calendario;
 
+  /// Los diez meses, si quien abre esta pantalla ya los tiene leídos. Sin
+  /// esto la sección del calendario los lee sola, que en la app tarda un
+  /// fotograma pero en un test de captura puede no llegar a tiempo: la
+  /// imagen salía con un hueco en blanco donde va el calendario.
+  final CalendarioContenido? calendarioContenido;
+
   const BloquesListScreen({
     super.key,
     required this.repository,
@@ -47,6 +55,7 @@ class BloquesListScreen extends StatefulWidget {
     this.premios,
     this.audioService,
     this.calendario,
+    this.calendarioContenido,
   });
 
   @override
@@ -201,24 +210,23 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                     ),
                   ),
                   const SizedBox(height: AppTheme.spaceMd),
-                  AcademyCard(
-                    icono: Icons.calendar_month_rounded,
-                    kicker: lang == AppLanguage.gl
-                        ? 'SINCRONIZACIÓN ESCOLA-FOGAR'
-                        : 'SINCRONIZACIÓN ESCUELA-HOGAR',
-                    titulo: lang == AppLanguage.gl
-                        ? 'Calendario Escola · Fogar'
-                        : 'Calendario Escuela · Hogar',
-                    descripcion: lang == AppLanguage.gl
-                        ? '10 meses de conexión coa escola: mira o que traballaron pola mañá e rexistra o xogo de 3 min na casa.'
-                        : '10 meses de conexión con la escuela: mira lo que trabajaron por la mañana y registra el juego de 3 min en casa.',
-                    meta: lang == AppLanguage.gl
-                        ? 'Dobre estimulación'
-                        : 'Doble estimulación',
-                    onTap: () => Navigator.of(context).push(
+                  // El calendario, DENTRO de Academy. Era una tarjeta que
+                  // llevaba a otra pantalla; una tarjeta que lleva al
+                  // calendario no es el calendario. La familia ve aquí el mes
+                  // que la escuela está trabajando, sin salir de su sitio.
+                  CalendarioDoCurso(
+                    lang: _language,
+                    esDocente: false,
+                    store: widget.calendario,
+                    contenido: widget.calendarioContenido,
+                    padding: EdgeInsets.zero,
+                    onAbrirMes: (contenido, mesIndex) =>
+                        Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => CalendarioScreen(
                           store: widget.calendario ?? CalendarioStore(),
+                          contenido: contenido,
+                          mesInicialIndex: mesIndex,
                           initialLanguage: _language,
                           onLanguageChanged: _onToggleLanguage,
                           esDocenteInicial: false,

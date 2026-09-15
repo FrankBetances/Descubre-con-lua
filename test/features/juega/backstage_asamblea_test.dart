@@ -640,11 +640,28 @@ void main() {
       await tester.tap(find.byKey(const ValueKey('tab_segundo_ciclo')));
       await tester.pumpAndSettle();
 
-      // Verify Segundo Ciclo banner and cards are shown
+      // O banner e o botón principal vense ao entrar, por riba do dobrez.
       expect(find.text('Asemblea Matinal do 2.º Ciclo (3-6 anos)'),
           findsOneWidget);
       expect(find.byKey(const ValueKey('launch_backstage_primary_button')),
           findsOneWidget);
+
+      // As tarxetas de nivel quedan máis abaixo: agora o calendario do curso
+      // é a primeira fila desta lista. A lista só constrúe o que se ve, así
+      // que hai que baixar ata elas antes de buscalas.
+      await tester.scrollUntilVisible(
+        find.byKey(const ValueKey('launch_backstage_nivel_4_infantil')),
+        300,
+        // `.first`: dentro desta lista hai outro desplazable, o carrusel de
+        // meses do calendario, que vai de lado. O de fóra é o primeiro.
+        scrollable: find
+            .descendant(
+              of: find.byKey(const Key('lista_segundo_ciclo')),
+              matching: find.byType(Scrollable),
+            )
+            .first,
+      );
+      await tester.pumpAndSettle();
       expect(find.byKey(const ValueKey('launch_backstage_nivel_4_infantil')),
           findsOneWidget);
       // La lista solo construye lo que se ve: hay que bajar hasta las tarjetas
@@ -652,7 +669,14 @@ void main() {
       await tester.scrollUntilVisible(
         find.byKey(const ValueKey('launch_backstage_nivel_6_infantil')),
         300,
-        scrollable: find.byType(Scrollable).first,
+        // `.first`: dentro de esta lista hai outro desplazable, o carrusel
+        // de meses do calendario, que vai de lado. O de fóra é o primeiro.
+        scrollable: find
+            .descendant(
+              of: find.byKey(const Key('lista_segundo_ciclo')),
+              matching: find.byType(Scrollable),
+            )
+            .first,
       );
       await tester.pumpAndSettle();
       expect(find.byKey(const ValueKey('launch_backstage_nivel_5_infantil')),

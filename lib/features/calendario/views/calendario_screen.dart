@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/brand/lua_pixel.dart';
@@ -40,6 +41,10 @@ class CalendarioScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
   final bool esDocenteInicial;
+
+  /// Por qué mes abrir. Sin esto la pantalla abre siempre por el mes de hoy,
+  /// y quien llega tocando la tarjeta de xaneiro en Modo Aula esperaba xaneiro.
+  final int? mesInicialIndex;
   final IniciarSesionCallback? onIniciarSesion;
   final ContentRepository? repository;
   final OfflineAudioService? audioService;
@@ -56,6 +61,7 @@ class CalendarioScreen extends StatefulWidget {
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.esDocenteInicial = false,
+    this.mesInicialIndex,
     this.onIniciarSesion,
     this.repository,
     this.audioService,
@@ -218,7 +224,11 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
 
   /// Abre por el mes de curso que toca hoy, no por septiembre.
   void _situarEnElMesDeHoy() {
-    final indice = _contenido?.indiceParaFecha(DateTime.now()) ?? 0;
+    final pedido = widget.mesInicialIndex;
+    final total = _contenido?.meses.length ?? 0;
+    final indice = (pedido != null && pedido >= 0 && pedido < total)
+        ? pedido
+        : (_contenido?.indiceParaFecha(DateTime.now()) ?? 0);
     _mesSeleccionadoIndex = indice < 0 ? 0 : indice;
     // El controlador se crea AQUI y no en `initState`: hasta que el contenido
     // no esta leido no se sabe por que mes hay que abrir, y `initialPage` solo
@@ -439,15 +449,23 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     // Sin controlador no hay páginas: pasa solo mientras el contenido se lee,
     // y en ese rato la pantalla ya está enseñando el indicador de carga.
     if (paginas == null) return const SizedBox.shrink();
-    return PageView.builder(
-      key: const Key('paginas_meses'),
-      controller: paginas,
-      itemCount: _meses.length,
-      onPageChanged: (index) {
-        setState(() => _mesSeleccionadoIndex = index);
-        _traerPastillaALaVista(index);
-      },
-      itemBuilder: (context, index) => _buildPaginaMes(index, estadoHoy, theme),
+    return ScrollConfiguration(
+      // Flutter, por defecto, NO deja arrastrar con el ratón ni con el
+      // trackpad: solo con el dedo y el lápiz. Con el dedo se desliza —lo
+      // prueba el test, que usa un gesto táctil—, pero arrastrando con el
+      // ratón la tarjeta no se movía y parecía que la pantalla no hacía nada.
+      behavior: const _ArrastreTamenConRato(),
+      child: PageView.builder(
+        key: const Key('paginas_meses'),
+        controller: paginas,
+        itemCount: _meses.length,
+        onPageChanged: (index) {
+          setState(() => _mesSeleccionadoIndex = index);
+          _traerPastillaALaVista(index);
+        },
+        itemBuilder: (context, index) =>
+            _buildPaginaMes(index, estadoHoy, theme),
+      ),
     );
   }
 
@@ -1280,4 +1298,23 @@ class _AvisoEnPreparacion extends StatelessWidget {
       ),
     );
   }
+}
+
+/// El arrastre lateral, también con ratón y trackpad.
+///
+/// `MaterialScrollBehavior` solo admite dedo y lápiz. En un móvil eso basta,
+/// pero con un ratón conectado —o en un portátil— la tarjeta del mes no se
+/// movía al arrastrarla, y quien lo probaba así concluía que el deslizamiento
+/// no existía.
+class _ArrastreTamenConRato extends MaterialScrollBehavior {
+  const _ArrastreTamenConRato();
+
+  @override
+  Set<PointerDeviceKind> get dragDevices => const {
+        PointerDeviceKind.touch,
+        PointerDeviceKind.stylus,
+        PointerDeviceKind.invertedStylus,
+        PointerDeviceKind.mouse,
+        PointerDeviceKind.trackpad,
+      };
 }
