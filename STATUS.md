@@ -9,6 +9,54 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## La rama `mejora` reconstruida sobre `main` · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
+
+El módulo de asambleas matinales de 2.º ciclo con el inglés como L3 —backstage
+docente, micro-rutina de hogar y cápsula de familia— venía de la rama `mejora`,
+que estaba 43 commits por detrás de `main` y **no compilaba**: usaba
+`LocalizedString(en:)`, que `main` había retirado a propósito en `d79e85a`.
+Aquí se porta encima de `main`, alineado con esa decisión, y se corrige lo que
+salió al correrlo por primera vez.
+
+### Comprobado en este contenedor, con Flutter 3.47.4
+
+| Área | Evidencia |
+| --- | --- |
+| Gates locales | `tools/gates.sh --fast` → **13 de 14 en verde** (el que falta, abajo) |
+| Suite completa | `flutter test --exclude-tags capturas` → **332 tests, 0 fallos** |
+| Análisis y formato | `flutter analyze` → *No issues found* · `dart format` limpio |
+| La rama de origen NO compilaba | `flutter analyze` sobre `origin/mejora` en un worktree aparte → **12 errores** en `recast_guia_card.dart` y 3 en tests. Sus `GATE_STATUS.md` decían «PASS» y «CLEAN»: eran agentes aprobándose entre ellos, con `handoff.md` por única fuente |
+| Desborde real, cazado y rehecho | El selector de ciclo desbordaba **224 px** a escala 1,3 (`filtro_edad_test.dart`). El stepper de fases medía **1387 px** de ancho: las fases 3 y 4 caían fuera de la pantalla y no había manera de pulsarlas. Las dos piezas rehechas, no apretadas |
+| Imágenes, **miradas** | `docs/capturas/aula-backstage-{gl,es}.png` y `academy-micro-rutina-{gl,es}.png`, generadas con el motor real |
+| Fuga R4 | `grep` sobre el árbol entero → **0 ficheros** con el nombre del otro producto o la ruta personal. `mejora` traía 210 porque es anterior a la limpieza de `5323d79`; sus 124 ficheros nuevos de `.agents/` no se han traído |
+
+### Lo que se corrigió del contenido, y por qué
+
+| Qué | Por qué |
+| --- | --- |
+| Fuera las **praxias orofaciales** (soplo y vibración labial /v/ /z/) de 5.º de Infantil | Es técnica logopédica prescrita a una docente, en una app que declara no tener finalidad sanitaria. La fase se queda como foco rítmico |
+| «Bloquea el filtro afectivo» → reescrito | Estaba del revés: en el modelo de Krashen la ansiedad SUBE el filtro. El mismo texto decía lo correcto en inglés y lo contrario en gallego y castellano |
+| «El cerebro infantil ajusta sus estructuras» → fuera | Mecanismo neurológico afirmado sin fuente, en un texto que leen familias |
+| `revisorPedagogico` vacío y `aprobadoParaAula: false` en los 4 ficheros nuevos | Declaraban revisión y aprobación de un especialista que no existe |
+| El alineamiento curricular sale ya del JSON | La pantalla decía **CA1.2** y su propia cápsula dice **CA1.1**. Ahora hay una sola fuente |
+| El conmutador de nivel, bilingüe | Tenía los rótulos escritos solo en gallego: en castellano enseñaba «anos» |
+| Los minutos de cada fase y el resumen de la tarjeta, desde el modelo | Estaban escritos a mano en los widgets; si el JSON decía otra duración, la pantalla mentía |
+| Emoji fuera (🧥 ❌ ✅ 📍 🛑 🎴) | Regla 5. Sustituidos por iconos Material |
+| `luaDice` en la cápsula nueva | `cierre_lua_test.dart` existe justo para que la cápsula número seis no se escriba sin él. Lo cazó |
+
+### NO comprobado en esta rama
+
+| Área | Por qué |
+| --- | --- |
+| **Faltan 6 grabaciones** | Son los 3 textos que se corrigieron (`porQueImporta`, la explicación de la primera afirmación y `luaDice`), en gallego y castellano. La voz gallega necesita un token de Hugging Face que aquí no hay: las sintetiza el workflow `voice-assets` al empujar. **`check_voice_coverage.py` está rojo hasta entonces** |
+| **El APK de release, EN LOCAL** | No hay Android SDK en este contenedor. Lo cubre CI |
+| **Ninguna pantalla se ha visto en un aparato** | Las capturas son del motor de Flutter: cazan desbordes, no la muesca, ni la barra de gestos, ni la densidad real |
+| **Nadie ha escuchado nada** | El gate de niveles dice que no saturan. Ningún gate dice si Celtia pronuncia bien |
+| **Si CA1.1 o CA1.2 es el criterio correcto** | No tengo el Decreto 150/2022 delante. Lo que se arregló es que haya **una sola** fuente, no que esa fuente sea la buena |
+| **Si el 2.º ciclo (3-6) entra en el encargo** | La app se describe para las escuelas infantiles municipales de Vigo, que son 0-3. Esto es 3-6. Es decisión de Frank, no mía |
+
+---
+
 ## Lúa entra en las actividades · **ya en `main`** (14/9/2026)
 
 Llegó por `claude/youthful-dijkstra-9tf5gy` y está mergeada. Dos piezas: el

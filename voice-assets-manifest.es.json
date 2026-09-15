@@ -2,9 +2,9 @@
  "lang": "es",
  "voice": "Sharvard (femenina) · rhasspy/piper-voices",
  "peakDbfs": -3.0,
- "entries": 443,
- "totalBytes": 13882210,
- "totalSeconds": 2599.96,
+ "entries": 449,
+ "totalBytes": 14207880,
+ "totalSeconds": 2661.9,
  "files": [
   {
    "id": "es_slow_00222185_5",
@@ -673,6 +673,12 @@
    "bytes": 23445
   },
   {
+   "id": "es_tutor_29e4a397_89",
+   "file": "es_tutor_29e4a397_89.m4a",
+   "seconds": 4.7,
+   "bytes": 25327
+  },
+  {
    "id": "es_tutor_29fb9a33_78",
    "file": "es_tutor_29fb9a33_78.m4a",
    "seconds": 4.68,
@@ -707,6 +713,12 @@
    "file": "es_tutor_2bb7fb4b_55.m4a",
    "seconds": 3.0,
    "bytes": 16630
+  },
+  {
+   "id": "es_tutor_2c02ae18_287",
+   "file": "es_tutor_2c02ae18_287.m4a",
+   "seconds": 16.37,
+   "bytes": 85356
   },
   {
    "id": "es_tutor_2c7bc292_196",
@@ -1019,6 +1031,12 @@
    "file": "es_tutor_501a79d6_44.m4a",
    "seconds": 2.21,
    "bytes": 12492
+  },
+  {
+   "id": "es_tutor_50888d69_184",
+   "file": "es_tutor_50888d69_184.m4a",
+   "seconds": 10.5,
+   "bytes": 54887
   },
   {
    "id": "es_tutor_51755997_58",
@@ -1547,6 +1565,12 @@
    "file": "es_tutor_81f0fa70_211.m4a",
    "seconds": 12.38,
    "bytes": 65776
+  },
+  {
+   "id": "es_tutor_82e69b09_249",
+   "file": "es_tutor_82e69b09_249.m4a",
+   "seconds": 13.56,
+   "bytes": 70920
   },
   {
    "id": "es_tutor_82f3d3d4_43",
@@ -2293,6 +2317,12 @@
    "bytes": 32225
   },
   {
+   "id": "es_tutor_d2a059c6_97",
+   "file": "es_tutor_d2a059c6_97.m4a",
+   "seconds": 5.18,
+   "bytes": 27925
+  },
+  {
    "id": "es_tutor_d37e28ac_184",
    "file": "es_tutor_d37e28ac_184.m4a",
    "seconds": 8.7,
@@ -2387,6 +2417,12 @@
    "file": "es_tutor_e08c3186_69.m4a",
    "seconds": 4.26,
    "bytes": 23006
+  },
+  {
+   "id": "es_tutor_e0bb1bde_213",
+   "file": "es_tutor_e0bb1bde_213.m4a",
+   "seconds": 11.6,
+   "bytes": 61255
   },
   {
    "id": "es_tutor_e0f936d6_93",

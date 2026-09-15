@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-09-14T14:06:52Z",
- "entries": 1020,
+ "generatedAt": "2026-09-15T10:10:19Z",
+ "entries": 1038,
  "byStyle": {
   "slow": 186,
-  "tutor": 834
+  "tutor": 852
  },
  "byLang": {
   "en": 134,
-  "es": 443,
-  "gl": 443
+  "es": 452,
+  "gl": 452
  },
  "corpus": [
   {
@@ -1516,6 +1516,14 @@
    "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
+   "id": "es_tutor_03487cd0_166",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Exacto: escuchar el modelo correcto dentro de una conversación real y afectuosa deja la puerta abierta a seguir hablando; exigir la repetición cierra la conversación.",
+   "speech": "Exacto: escuchar el modelo correcto dentro de una conversación real y afectuosa deja la puerta abierta a seguir hablando; exigir la repetición cierra la conversación.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
    "id": "es_tutor_03ae32f8_409",
    "lang": "es",
    "style": "tutor",
@@ -1972,6 +1980,14 @@
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/enunciado"
   },
   {
+   "id": "es_tutor_29e4a397_89",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Para ayudar en casa hay que hablar en inglés durante todo el día sin mezclar las lenguas.",
+   "speech": "Para ayudar en casa hay que hablar en inglés durante todo el día sin mezclar las lenguas.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
    "id": "es_tutor_29fb9a33_78",
    "lang": "es",
    "style": "tutor",
@@ -2018,6 +2034,14 @@
    "text": "Frotar una contra la otra, o hacer el gesto en el aire.",
    "speech": "Frotar una contra la otra, o hacer el gesto en el aire.",
    "source": "juega.auga.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_2c02ae18_287",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el Segundo Ciclo (3-6 años), la introducción del inglés a través del movimiento (TPR) convive en perfecta armonía con el gallego y el castellano. La mejor ayuda en el hogar no son los exámenes ni traducir, sino micro-rutinas de 3 a 5 minutos basadas en el principio de Tiempo y Lugar.",
+   "speech": "En el Segundo Ciclo (3-6 años), la introducción del inglés a través del movimiento (TPR) convive en perfecta armonía con el gallego y el castellano. La mejor ayuda en el hogar no son los exámenes ni traducir, sino microrutinas de 3 a 5 minutos basadas en el principio de Tiempo y Lugar.",
+   "source": "academy.segundo_ciclo.setembro.01/ideaClave"
   },
   {
    "id": "es_tutor_2c7bc292_196",
@@ -2434,6 +2458,14 @@
    "text": "¿Qué nos ponemos en la cabeza cuando llueve?",
    "speech": "¿Qué nos ponemos en la cabeza cuando llueve?",
    "source": "juega.choiva.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_50888d69_184",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No es necesario ni recomendable: las lenguas ambientales de casa (gallego y castellano) son el pilar afectivo. El inglés se integra en pequeños nichos de juego motriz de 3 a 5 minutos.",
+   "speech": "No es necesario ni recomendable: las lenguas ambientales de casa (gallego y castellano) son el pilar afectivo. El inglés se integra en pequeños nichos de juego motriz de 3 a 5 minutos.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
    "id": "es_tutor_51755997_58",
@@ -2916,6 +2948,14 @@
    "source": "juega.choiva.01/cancionPulso/consigna"
   },
   {
+   "id": "es_tutor_758ef845_181",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soy Lúa. Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita.",
+   "speech": "Soy Lúa. Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita.",
+   "source": "academy.segundo_ciclo.setembro.01/luaDice"
+  },
+  {
    "id": "es_tutor_7627cae9_59",
    "lang": "es",
    "style": "tutor",
@@ -3138,6 +3178,14 @@
    "text": "Pregunta y calla cinco segundos contando en tu cabeza. Si nadie responde, no repitas la pregunta: dale la respuesta tú nombrando y señalando, y pasa a la siguiente. Nunca pidas que repitan la palabra bien dicha.",
    "speech": "Pregunta y calla cinco segundos contando en tu cabeza. Si nadie responde, no repitas la pregunta: dale la respuesta tú nombrando y señalando, y pasa a la siguiente. Nunca pidas que repitan la palabra bien dicha.",
    "source": "aula.preguntas.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_82e69b09_249",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Escoge un nicho cotidiano de 3 minutos, como colgar el abrigo al llegar del colegio («The Magic Coat Hook»). Si el niño dice «¡Abrigo suelo!», no lo corrijas: responde con sonrisa y acción motriz: «¡Sí! El abrigo en la percha: Up on the hook, zip!».",
+   "speech": "Escoge un nicho cotidiano de 3 minutos, como colgar el abrigo al llegar del colegio («The Magic Coat Hook»). Si el niño dice «¡Abrigo suelo!», no lo corrijas: responde con sonrisa y acción motriz: «¡Sí! El abrigo en la percha: Up on the hook, zip!».",
+   "source": "academy.segundo_ciclo.setembro.01/queHacerEnCasa"
   },
   {
    "id": "es_tutor_82f3d3d4_43",
@@ -3570,6 +3618,14 @@
    "text": "Decir 'gorro', llevarse la mano a la cabeza o coger la capucha.",
    "speech": "Decir 'gorro', llevarse la mano a la cabeza o coger la capucha.",
    "source": "juega.choiva.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_a57820a2_267",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Exigir que el niño hable en inglés o preguntarle «¿cómo se dice esto?» lo convierte en un examen, y el examen corta la conversación. Devolverle la frase bien dicha dentro del juego (modelado indirecto o recast) valida lo que dijo y mantiene vivas las ganas de hablar.",
+   "speech": "Exigir que el niño hable en inglés o preguntarle «¿cómo se dice esto?» lo convierte en un examen, y el examen corta la conversación. Devolverle la frase bien dicha dentro del juego (modelado indirecto o recast) valida lo que dijo y mantiene vivas las ganas de hablar.",
+   "source": "academy.segundo_ciclo.setembro.01/porQueImporta"
   },
   {
    "id": "es_tutor_a5eead18_70",
@@ -4132,6 +4188,14 @@
    "source": "juega.primavera.01/cuento/0/texto"
   },
   {
+   "id": "es_tutor_d2a059c6_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El modelado indirecto (recast) ayuda más al aprendizaje que pedir que repita la frase bien dicha.",
+   "speech": "El modelado indirecto (recast) ayuda más al aprendizaje que pedir que repita la frase bien dicha.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
    "id": "es_tutor_d37e28ac_184",
    "lang": "es",
    "style": "tutor",
@@ -4258,6 +4322,14 @@
    "text": "Regar un poco y volver a tocar: ahora está fría y se pegan los dedos.",
    "speech": "Regar un poco y volver a tocar: ahora está fría y se pegan los dedos.",
    "source": "juega.primavera.01/exploracion/paso/1"
+  },
+  {
+   "id": "es_tutor_e0bb1bde_213",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el recibidor de casa: el menor se quita la chaqueta con calma. En lugar de hacer preguntas directas, la madre acompaña el movimiento con ritmo: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»",
+   "speech": "En el recibidor de casa: el menor se quita la chaqueta con calma. En lugar de hacer preguntas directas, la madre acompaña el movimiento con ritmo: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»",
+   "source": "academy.segundo_ciclo.setembro.01/ejemploCotidiano"
   },
   {
    "id": "es_tutor_e0f936d6_93",
@@ -5084,6 +5156,14 @@
    "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "gl_tutor_070f82a1_87",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Para axudar na casa hai que falar en inglés durante todo o día sen mesturar as linguas.",
+   "speech": "Para axudar na casa hai que falar en inglés durante todo o día sen mesturar as linguas.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
    "id": "gl_tutor_07aaac78_153",
    "lang": "gl",
    "style": "tutor",
@@ -5444,6 +5524,14 @@
    "source": "academy.juego_movimiento_sin_pantallas.01/queHacerEnCasa"
   },
   {
+   "id": "gl_tutor_20dd83f4_244",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esixir que a crianza fale en inglés ou preguntarlle «como se di isto?» convérteo nun exame, e o exame corta a conversa. Devolverlle a frase ben dita dentro do xogo (modelado indirecto ou recast) valida o que dixo e mantén viva a ganas de falar.",
+   "speech": "Esixir que a crianza fale en inglés ou preguntarlle «como se di isto?» convérteo nun exame, e o exame corta a conversa. Devolverlle a frase ben dita dentro do xogo (modelado indirecto ou recast) valida o que dixo e mantén viva a ganas de falar.",
+   "source": "academy.segundo_ciclo.setembro.01/porQueImporta"
+  },
+  {
    "id": "gl_tutor_20fa7f98_58",
    "lang": "gl",
    "style": "tutor",
@@ -5636,6 +5724,14 @@
    "source": "aula.matematicas.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "gl_tutor_2e24ff4e_150",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Exacto: escoitar o modelo correcto dentro dunha conversa real e agarimosa deixa a porta aberta a seguir falando; esixir a repetición pecha a conversa.",
+   "speech": "Exacto: escoitar o modelo correcto dentro dunha conversa real e agarimosa deixa a porta aberta a seguir falando; esixir a repetición pecha a conversa.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
    "id": "gl_tutor_2e2d47fe_125",
    "lang": "gl",
    "style": "tutor",
@@ -5810,6 +5906,14 @@
    "text": "Facer o xesto en seco antes de abrir a billa: así non se aprende coa auga correndo.",
    "speech": "Facer o xesto en seco antes de abrir a billa: así non se aprende coa auga correndo.",
    "source": "juega.auga.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_3c83481e_266",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No Segundo Ciclo (3-6 anos), a introdución do inglés a través do movemento (TPR) convive en perfecta harmonía co galego e o castelán. A mellor axuda no fogar non son os exames nin traducir, senón micro-rutinas de 3 a 5 minutos baseadas no principio de Tempo e Lugar.",
+   "speech": "No Segundo Ciclo (3-6 anos), a introdución do inglés a través do movemento (TPR) convive en perfecta harmonía co galego e o castelán. A mellor axuda no fogar non son os exames nin traducir, senón microrutinas de 3 a 5 minutos baseadas no principio de Tempo e Lugar.",
+   "source": "academy.segundo_ciclo.setembro.01/ideaClave"
   },
   {
    "id": "gl_tutor_3e5ed832_191",
@@ -6412,6 +6516,14 @@
    "source": "aula.exploracion.01/ejemploCotidiano"
   },
   {
+   "id": "gl_tutor_6d1b0b95_198",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No recibidor da casa: a crianza quita a chaqueta con calma. En vez de facer preguntas directas, a nai acompaña o movemento con ritmo: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»",
+   "speech": "No recibidor da casa: a crianza quita a chaqueta con calma. En vez de facer preguntas directas, a nai acompaña o movemento con ritmo: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»",
+   "source": "academy.segundo_ciclo.setembro.01/ejemploCotidiano"
+  },
+  {
    "id": "gl_tutor_6dd5a459_49",
    "lang": "gl",
    "style": "tutor",
@@ -6908,6 +7020,14 @@
    "source": "juega.corpo.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "gl_tutor_9063ca14_177",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Son Lúa. Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
+   "speech": "Son Lúa. Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
+   "source": "academy.segundo_ciclo.setembro.01/luaDice"
+  },
+  {
    "id": "gl_tutor_91bdd081_133",
    "lang": "gl",
    "style": "tutor",
@@ -7106,6 +7226,14 @@
    "text": "Que hai que facer para que o cascabel non soe nada?",
    "speech": "Que hai que facer para que o cascabel non soe nada?",
    "source": "juega.inverno.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_a57f4a69_237",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escolle un nicho cotián de 3 minutos, como colgar o abrigo ao chegar da escola («The Magic Coat Hook»). Se a crianza di «Abrigo chan!», non a corrixas: responde con sorriso e acción motriz: «Si! O abrigo na percha: Up on the hook, zip!».",
+   "speech": "Escolle un nicho cotián de 3 minutos, como colgar o abrigo ao chegar da escola («The Magic Coat Hook»). Se a crianza di «Abrigo chan!», non a corrixas: responde con sorriso e acción motriz: «Si! O abrigo na percha: Up on the hook, zip!».",
+   "source": "academy.segundo_ciclo.setembro.01/queHacerEnCasa"
   },
   {
    "id": "gl_tutor_a60d2a41_139",
@@ -7338,6 +7466,14 @@
    "text": "Imitar o crac co pé, coa boca ou coa man.",
    "speech": "Imitar o crac co pé, coa boca ou coa man.",
    "source": "juega.follas.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_b8e6df0d_175",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non é necesario nin recomendable: as linguas ambientais da casa (galego e castelán) son o piar afectivo. O inglés intégrase en pequenos nichos de xogo motriz de 3 a 5 minutos.",
+   "speech": "Non é necesario nin recomendable: as linguas ambientais da casa (galego e castelán) son o piar afectivo. O inglés intégrase en pequenos nichos de xogo motriz de 3 a 5 minutos.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
    "id": "gl_tutor_b8f2d5a4_107",
@@ -7818,6 +7954,14 @@
    "text": "* Sal-ta * a ra, * sal-ta, * ri-bit! * Voa * o pa-xa-ro, * voa, * moi al-to! * An-da * o oso, * pum, * pum! * Dor-me * o ga-to, * miau, * e ca-la.",
    "speech": "Salta a ra, salta, ribit! Voa o paxaro, voa, moi alto! Anda o oso, pum, pum! Dorme o gato, miau, e cala.",
    "source": "juega.animais.01/cancionPulso"
+  },
+  {
+   "id": "gl_tutor_dbfd1188_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O modelado indirecto (recast) axuda máis á aprendizaxe que pedir que repita a frase ben dita.",
+   "speech": "O modelado indirecto (recast) axuda máis á aprendizaxe que pedir que repita a frase ben dita.",
+   "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
    "id": "gl_tutor_dcca94d5_156",

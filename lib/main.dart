@@ -18,7 +18,10 @@ import 'features/creditos/credits_screen.dart';
 import 'features/premios/premios_repository.dart';
 import 'features/premios/premios_screen.dart';
 import 'features/juega/views/asamblea_guiada_screen.dart';
+import 'features/juega/views/backstage_asamblea_screen.dart';
 import 'features/juega/views/unidades_list_screen.dart';
+import 'features/academy/views/micro_rutina_setembro_screen.dart';
+import 'data/models/asamblea_segundo_ciclo_model.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -161,9 +164,27 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               onLanguageChanged: _setLanguage,
               audioService: _audioService,
             ),
+        // `/juega/backstage` NO va aquí: `routes` gana a `onGenerateRoute` y se
+        // come los `arguments`, así que el nivel elegido se perdía y la pantalla
+        // abría siempre en 4.º de Infantil. Vive solo en `onGenerateRoute`.
+        '/academy/micro-rutina': (context) => MicroRutinaSetembroScreen(
+              initialLanguage: _currentLanguage,
+              onLanguageChanged: _setLanguage,
+            ),
       },
       onGenerateRoute: (settings) {
-        if (settings.name == '/academy/capsula') {
+        if (settings.name == '/juega/backstage') {
+          final nivel = settings.arguments as NivelEducativoSegundoCiclo?;
+          return MaterialPageRoute(
+            builder: (context) => BackstageAsambleaScreen(
+              repository: _repository,
+              audioService: _audioService,
+              initialNivel: nivel ?? NivelEducativoSegundoCiclo.infantil4,
+              initialLanguage: _currentLanguage,
+              onLanguageChanged: _setLanguage,
+            ),
+          );
+        } else if (settings.name == '/academy/capsula') {
           final capsula = settings.arguments as Capsula?;
           if (capsula != null) {
             return MaterialPageRoute(
