@@ -330,6 +330,83 @@ void main() {
       expect(find.byKey(const Key('aviso_mes_en_preparacion')), findsNothing);
     });
 
+    testWidgets('o mes cámbiase deslizando a tarxeta de lado', (tester) async {
+      // O que Frank pediu: tarxetas de desprazamento lateral. O que había era
+      // unha tira de tarxetas de 160 px metida nunha páxina que medía 2,2
+      // pantallas de alto, e o mes non se cambiaba deslizando: cambiábase
+      // baixando ata as pastillas. Agora cada mes é unha páxina enteira.
+      tester.view.physicalSize = const Size(600, 1600);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.resetPhysicalSize);
+
+      await tester.pumpWidget(_wrap(CalendarioScreen(
+        store: store,
+        contenido: contenido,
+        repository: repositorio,
+        initialLanguage: AppLanguage.gl,
+        esDocenteInicial: true,
+      )));
+      await tester.pumpAndSettle();
+
+      // A pantalla abre polo mes que toca hoxe, non sempre por setembro.
+      final indice = contenido.indiceParaFecha(DateTime.now());
+      final aberto = contenido.meses[indice];
+      final seguinte = contenido.meses[(indice + 1) % contenido.meses.length];
+      expect(find.text(aberto.centroInteres.gl), findsWidgets);
+
+      await tester.drag(
+          find.byKey(const Key('paginas_meses')), const Offset(-500, 0));
+      await tester.pumpAndSettle();
+
+      expect(find.text(seguinte.centroInteres.gl), findsWidgets);
+      // E o mes anterior XA NON ESTÁ na árbore. Non é un detalle: cando a
+      // páxina veciña se construía había dous botóns «Iniciar asemblea» á vez,
+      // un deles doutro mes e tocable polo canto.
+      expect(find.text(aberto.centroInteres.gl), findsNothing);
+    });
+
+    testWidgets('a pastilla do mes aberto non se queda fóra da tira',
+        (tester) async {
+      // A tira de pastillas non se move soa. Deslizando ata o quinto mes, a
+      // súa pastilla quedaba fóra da pantalla e a fila seguía a ensinar os
+      // catro primeiros, ningún deles marcado.
+      const ancho = 600.0;
+      tester.view.physicalSize = const Size(ancho, 1600);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.resetPhysicalSize);
+
+      await tester.pumpWidget(_wrap(CalendarioScreen(
+        store: store,
+        contenido: contenido,
+        repository: repositorio,
+        initialLanguage: AppLanguage.gl,
+        esDocenteInicial: true,
+      )));
+      await tester.pumpAndSettle();
+
+      final inicio = contenido.indiceParaFecha(DateTime.now());
+      const saltos = 5;
+      for (var i = 0; i < saltos; i++) {
+        await tester.drag(
+            find.byKey(const Key('paginas_meses')), const Offset(-500, 0));
+        await tester.pumpAndSettle();
+      }
+
+      final destino =
+          contenido.meses[(inicio + saltos) % contenido.meses.length];
+      final pastilla = find.descendant(
+        of: find.byType(ChoiceChip),
+        matching: find.text(destino.nombreMes.gl),
+      );
+      expect(pastilla, findsOneWidget);
+
+      final caixa = tester.getRect(pastilla);
+      expect(caixa.left, greaterThanOrEqualTo(0.0),
+          reason: '${destino.nombreMes.gl} quedou fóra pola esquerda');
+      expect(caixa.right, lessThanOrEqualTo(ancho),
+          reason: '${destino.nombreMes.gl} quedou fóra pola dereita');
+    });
+
     testWidgets('cada mes leva á SÚA unidade, non todos á mesma',
         (tester) async {
       // O defecto orixinal: `unidades.first` como rede de seguridade facía que

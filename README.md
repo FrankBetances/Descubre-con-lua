@@ -18,8 +18,9 @@ etapas de educación infantil: **primer ciclo (0-3 años)** y **segundo ciclo
   concreto del día, con ejemplos de cómo devolver la frase bien dicha sin pedir
   que la criatura la repita.
 - **Calendario Escola · Fogar** — los diez meses del curso, de septiembre a
-  junio. La docente registra la asamblea, la familia registra el juego de tres
-  minutos en casa, y el día que coinciden las dos cosas queda enlazado.
+  junio, uno por tarjeta y se pasa deslizando de lado. La docente registra la
+  asamblea, la familia registra el juego de tres minutos en casa, y el día que
+  coinciden las dos cosas queda enlazado.
 - **Los premios de Lúa** — nivel, XP, racha, insignias y las medallas del
   calendario. Premian **a la persona adulta** que usa la app, nunca a la
   criatura.
