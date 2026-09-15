@@ -1,0 +1,148 @@
+{
+ "id": "asamblea.primeiro_ciclo.xaneiro.0_2_anos",
+ "tramo": "0_2",
+ "mes": 1,
+ "titulo": {
+  "gl": "Xaneiro: roupa de inverno, botas grandes e luvas brandas",
+  "es": "Enero: ropa de invierno, botas grandes y manoplas suaves",
+  "en": "January: Winter Clothes, Big Boots and Soft Mittens"
+ },
+ "centroInteres": {
+  "gl": "As rutinas de abrigo e a autonomía ao vestirse",
+  "es": "Las rutinas de abrigo y la autonomía al vestirse",
+  "en": "Wrapping-up routines and independence when dressing"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Gorros e luvas de la, e o espello da asemblea",
+  "es": "Gorros y manoplas de lana, y el espejo de la asamblea",
+  "en": "Wool hats and mittens, and the circle-time mirror"
+ },
+ "cancionDoMes": "",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Sitúate co bebé diante do espello da parede.",
+    "es": "Sitúate con el bebé delante del espejo de la pared.",
+    "en": "Sit with the baby in front of the wall mirror."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Pon e quita o gorro mirando o reflexo, sen présa.",
+    "es": "Pon y quita el gorro mirando el reflejo, sin prisa.",
+    "en": "Put the hat on and off while watching the reflection, unhurried."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.xaneiro.0_2.01",
+     "textoIngles": "Put on your hat!",
+     "accionFisica": {
+      "gl": "Colocar o gorro na cabeza mirando o espello.",
+      "es": "Colocar el gorro en la cabeza mirando el espejo.",
+      "en": "Place the hat on the head while looking in the mirror."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.xaneiro.0_2.02",
+     "textoIngles": "Take off!",
+     "accionFisica": {
+      "gl": "Retirar a prenda suavemente.",
+      "es": "Retirar la prenda suavemente.",
+      "en": "Take the garment off gently."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Fregar as luvas sobre as palmas do bebé, amodo.",
+    "es": "Frotar las manoplas sobre las palmas del bebé, despacio.",
+    "en": "Rub the mittens over the baby's palms, slowly."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "0_2",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

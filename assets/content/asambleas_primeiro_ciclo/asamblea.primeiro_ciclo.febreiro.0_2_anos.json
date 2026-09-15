@@ -1,0 +1,134 @@
+{
+ "id": "asamblea.primeiro_ciclo.febreiro.0_2_anos",
+ "tramo": "0_2",
+ "mes": 2,
+ "titulo": {
+  "gl": "Febreiro: o reino animal e o Entroido",
+  "es": "Febrero: el reino animal y el Entroido",
+  "en": "February: The Animal Kingdom and Entroido"
+ },
+ "centroInteres": {
+  "gl": "A motricidade zoomorfa e as onomatopeas",
+  "es": "La motricidad zoomorfa y las onomatopeyas",
+  "en": "Animal-like movement and onomatopoeia"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Títeres de man de tea branda: ra, paxaro e gato",
+  "es": "Títeres de mano de tela suave: rana, pájaro y gato",
+  "en": "Soft hand puppets: frog, bird and cat"
+ },
+ "cancionDoMes": "",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Presenta os tres títeres un a un, á altura dos seus ollos.",
+    "es": "Presenta los tres títeres uno a uno, a la altura de sus ojos.",
+    "en": "Introduce the three puppets one by one at their eye level."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "A ra achégase con botes rítmicos sobre a colchoneta.",
+    "es": "La rana se acerca con botes rítmicos sobre la colchoneta.",
+    "en": "The frog hops rhythmically closer across the mat."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.febreiro.0_2.01",
+     "textoIngles": "Jump, jump, green frog! Ribbit!",
+     "accionFisica": {
+      "gl": "Apoiar as patiñas do títere nos xeonllos do neno para que flexione as pernas.",
+      "es": "Apoyar las patitas del títere en las rodillas del niño para que flexione las piernas.",
+      "en": "Rest the puppet's feet on the child's knees so the legs bend in response."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "O gato deitase e a voz baixa ata o susurro.",
+    "es": "El gato se tumba y la voz baja hasta el susurro.",
+    "en": "The cat lies down and the voice drops to a whisper."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "0_2",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

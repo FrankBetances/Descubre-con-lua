@@ -1,0 +1,148 @@
+{
+ "id": "asamblea.primeiro_ciclo.novembro.2_3_anos",
+ "tramo": "2_3",
+ "mes": 11,
+ "titulo": {
+  "gl": "Novembro: follas de outono e os bosques de Galicia (o Magosto)",
+  "es": "Noviembre: hojas de otoño y los bosques de Galicia (el Magosto)",
+  "en": "November: Autumn Leaves and the Woods of Galicia"
+ },
+ "centroInteres": {
+  "gl": "O outono galego e as texturas do bosque",
+  "es": "El otoño gallego y las texturas del bosque",
+  "en": "Galician autumn and the textures of the woods"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Dúas follas de cartolina en tons ocres e marróns por neno",
+  "es": "Dos hojas de cartulina en tonos ocres y marrones por niño",
+  "en": "Two ochre and brown card leaves per child"
+ },
+ "cancionDoMes": "",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Reparte dúas follas de cartolina a cada neno.",
+    "es": "Reparte dos hojas de cartulina a cada niño.",
+    "en": "Hand out two card leaves to each child."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Camiñar de puntillas ao ritmo dunha marcha.",
+    "es": "Caminar de puntillas al ritmo de una marcha.",
+    "en": "Walk on tiptoe to a marching rhythm."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.novembro.2_3.01",
+     "textoIngles": "The wind blows! Whoosh!",
+     "accionFisica": {
+      "gl": "Bater os brazos camiñando de puntillas.",
+      "es": "Batir los brazos caminando de puntillas.",
+      "en": "Flap the arms while walking on tiptoe."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.novembro.2_3.02",
+     "textoIngles": "Crunch your leaves!",
+     "accionFisica": {
+      "gl": "Agacharse rápido e fregar as follas contra o chan.",
+      "es": "Agacharse rápido y frotar las hojas contra el suelo.",
+      "en": "Crouch quickly and rub the leaves against the floor."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Ao cesar a música, deixarse caer amodo na alfombra coma follas.",
+    "es": "Al cesar la música, dejarse caer despacio en la alfombra como hojas.",
+    "en": "When the music stops, drop slowly to the rug like falling leaves."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "2_3",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

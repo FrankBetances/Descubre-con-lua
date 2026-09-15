@@ -1,0 +1,148 @@
+{
+ "id": "asamblea.primeiro_ciclo.abril.2_3_anos",
+ "tramo": "2_3",
+ "mes": 4,
+ "titulo": {
+  "gl": "Abril: esperta a primavera — flores, choiva e bechiños",
+  "es": "Abril: despierta la primavera — flores, lluvia y bichitos",
+  "en": "April: Spring Awakening — Flowers, Rain and Little Bugs"
+ },
+ "centroInteres": {
+  "gl": "O orballo e o espertar biolóxico da primavera",
+  "es": "El orballo y el despertar biológico de la primavera",
+  "en": "The soft Atlantic drizzle and the waking of spring"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Sen material: o corpo no chan",
+  "es": "Sin material: el cuerpo en el suelo",
+  "en": "No materials: the body on the floor"
+ },
+ "cancionDoMes": "",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Ovillados no chan en posición fetal encollida.",
+    "es": "Ovillados en el suelo en posición fetal encogida.",
+    "en": "Curled up on the floor in a tucked position."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Golpes rítmicos dos dedos imitando as pingas de choiva.",
+    "es": "Golpes rítmicos de los dedos imitando las gotas de lluvia.",
+    "en": "Rhythmic finger taps imitating raindrops."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.abril.2_3.01",
+     "textoIngles": "We are tiny seeds under the ground",
+     "accionFisica": {
+      "gl": "Manterse encollidos e quietos no chan.",
+      "es": "Mantenerse encogidos y quietos en el suelo.",
+      "en": "Stay curled up and still on the floor."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.abril.2_3.02",
+     "textoIngles": "Bloom! Big bright flowers!",
+     "accionFisica": {
+      "gl": "Erguerse milímetro a milímetro ata as puntas dos pés cos brazos en abano.",
+      "es": "Erguirse milímetro a milímetro hasta las puntas de los pies con los brazos en abanico.",
+      "en": "Rise millimetre by millimetre onto tiptoe with the arms fanned open."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Baixar os brazos amodo e volver a sentarse.",
+    "es": "Bajar los brazos despacio y volver a sentarse.",
+    "en": "Lower the arms slowly and sit back down."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "2_3",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

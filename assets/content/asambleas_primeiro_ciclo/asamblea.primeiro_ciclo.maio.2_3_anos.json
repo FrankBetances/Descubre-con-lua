@@ -1,0 +1,162 @@
+{
+ "id": "asamblea.primeiro_ciclo.maio.2_3_anos",
+ "tramo": "2_3",
+ "mes": 5,
+ "titulo": {
+  "gl": "Maio: auga, salpicaduras e rutinas de aseo",
+  "es": "Mayo: agua, salpicaduras y rutinas de aseo",
+  "en": "May: Water, Splashing and Bathroom Routines"
+ },
+ "centroInteres": {
+  "gl": "Os hábitos de hixiene e o pracer de lavarse",
+  "es": "Los hábitos de higiene y el placer de lavarse",
+  "en": "Hygiene habits and the pleasure of washing"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Unha toalla pequena de microfibra seca por neno",
+  "es": "Una toalla pequeña de microfibra seca por niño",
+  "en": "One small dry microfibre towel per child"
+ },
+ "cancionDoMes": "",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Reparte unha toalla a cada neno, sentados en círculo.",
+    "es": "Reparte una toalla a cada niño, sentados en círculo.",
+    "en": "Hand a towel to each child, seated in a circle."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Secuencia de aseo simbólico sen auga, en orde.",
+    "es": "Secuencia de aseo simbólico sin agua, en orden.",
+    "en": "A symbolic washing sequence without water, in order."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.maio.2_3.01",
+     "textoIngles": "Wash your face!",
+     "accionFisica": {
+      "gl": "Fregar con suavidade meixelas e fronte coa toalla.",
+      "es": "Frotar con suavidad mejillas y frente con la toalla.",
+      "en": "Gently rub cheeks and forehead with the towel."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.maio.2_3.02",
+     "textoIngles": "Wash your belly!",
+     "accionFisica": {
+      "gl": "Describir círculos sobre a camiseta á altura do embigo.",
+      "es": "Describir círculos sobre la camiseta a la altura del ombligo.",
+      "en": "Draw circles on the shirt at tummy height."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.maio.2_3.03",
+     "textoIngles": "Dry your toes!",
+     "accionFisica": {
+      "gl": "Inclinar o tronco adiante para secar os zapatos sen dobrar os xeonllos.",
+      "es": "Inclinar el tronco adelante para secar los zapatos sin doblar las rodillas.",
+      "en": "Bend forward to dry the shoes without bending the knees."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Dobrar a toalla sobre os xeonllos e quedar quietos.",
+    "es": "Doblar la toalla sobre las rodillas y quedarse quietos.",
+    "en": "Fold the towel over the knees and stay still."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "2_3",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "id": "asamblea.primeiro_ciclo.setembro.2_3_anos",
+ "tramo": "2_3",
+ "mes": 9,
+ "titulo": {
+  "gl": "Setembro: acollida, caricias suaves e novas amizades",
+  "es": "Septiembre: acogida, caricias suaves y nuevas amistades",
+  "en": "September: Welcome, Gentle Touches and New Friends"
+ },
+ "centroInteres": {
+  "gl": "A acollida e o vínculo afectivo co grupo",
+  "es": "La acogida y el vínculo afectivo con el grupo",
+  "en": "Welcome and building a safe bond with the group"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Cinta elástica ancha forrada de veludo",
+  "es": "Cinta elástica ancha forrada de terciopelo",
+  "en": "Wide velvet-covered elastic band"
+ },
+ "cancionDoMes": "Hello Hello, Hello to You!",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Sentados en roda, todos suxeitan a cinta elástica coas dúas mans.",
+    "es": "Sentados en rueda, todos sujetan la cinta elástica con las dos manos.",
+    "en": "Sitting in a ring, everyone holds the elastic band with both hands."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Hello Hello, Hello to You!"
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Canta a canción marcando o pulso coa cinta, sen pedir que repitan.",
+    "es": "Canta la canción marcando el pulso con la cinta, sin pedir que repitan.",
+    "en": "Sing the song marking the beat with the band, never asking them to repeat."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Hello Hello, Hello to You!"
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.setembro.2_3.01",
+     "textoIngles": "Everybody stand up!",
+     "accionFisica": {
+      "gl": "Tracción suave da cinta para erguerse á vez.",
+      "es": "Tracción suave de la cinta para levantarse a la vez.",
+      "en": "Gentle pull on the band so everyone stands up together."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.setembro.2_3.02",
+     "textoIngles": "Hello!",
+     "accionFisica": {
+      "gl": "Traslado do peso dun pé ao outro.",
+      "es": "Traslado del peso de un pie al otro.",
+      "en": "Shift the body weight from one foot to the other."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.setembro.2_3.03",
+     "textoIngles": "Everybody sit down!",
+     "accionFisica": {
+      "gl": "Sentarse con coidado sobre a alfombra.",
+      "es": "Sentarse con cuidado sobre la alfombra.",
+      "en": "Sit down carefully on the rug."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Sentar con coidado sobre a alfombra e soltar a cinta amodo.",
+    "es": "Sentarse con cuidado sobre la alfombra y soltar la cinta despacio.",
+    "en": "Sit down carefully on the rug and release the band slowly."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "2_3",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

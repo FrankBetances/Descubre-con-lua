@@ -387,7 +387,7 @@ void main() {
           initialLanguage: lang,
           calendarioContenido: cal,
         ),
-        tamano: const Size(412, 1500),
+        tamano: const Size(412, 900),
         antesDeRetratar: (tester) async {
           await tester.tap(find.byKey(const ValueKey('tab_segundo_ciclo')));
           await tester.pumpAndSettle();

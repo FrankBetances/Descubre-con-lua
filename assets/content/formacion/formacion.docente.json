@@ -1,0 +1,98 @@
+{
+ "id": "formacion.docente",
+ "perfil": "docente",
+ "titulo": {
+  "gl": "Antes de entrar na aula",
+  "es": "Antes de entrar en el aula"
+ },
+ "subtitulo": {
+  "gl": "Seis cousas en dous minutos. Léeas unha vez e xa podes empezar.",
+  "es": "Seis cosas en dos minutos. Léelas una vez y ya puedes empezar."
+ },
+ "pasos": [
+  {
+   "titulo": {
+    "gl": "O móbil é teu, non das crianzas",
+    "es": "El móvil es tuyo, no de las criaturas"
+   },
+   "corpo": {
+    "gl": "O aparello é un apuntador entre bastidores. Vai nunha repisa ou nun atril, fóra da vista do grupo. Non se lle ensina a ninguén, non reproduce vídeo e non serve para captar a atención. Iso é o que significa «cero pantallas infantís».",
+    "es": "El aparato es un apuntador entre bastidores. Va en una repisa o en un atril, fuera de la vista del grupo. No se le enseña a nadie, no reproduce vídeo y no sirve para captar la atención. Eso es lo que significa «cero pantallas infantiles»."
+   },
+   "clave": {
+    "gl": "Se unha crianza mira a pantalla, a pantalla está mal posta.",
+    "es": "Si una criatura mira la pantalla, la pantalla está mal puesta."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "A sesión son catro fases e nada máis",
+    "es": "La sesión son cuatro fases y nada más"
+   },
+   "corpo": {
+    "gl": "Apertura e saúdo, foco e movemento, núcleo TPR, e calma. Entre oito e dez minutos en total. Non se alonga: a microcápsula acaba cando acaba, e o resto da xornada segue.",
+    "es": "Apertura y saludo, foco y movimiento, núcleo TPR, y calma. Entre ocho y diez minutos en total. No se alarga: la microcápsula acaba cuando acaba, y el resto de la jornada sigue."
+   },
+   "clave": {
+    "gl": "Mellor curta e enteira que longa e a medias.",
+    "es": "Mejor corta y entera que larga y a medias."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "O corpo vai antes que a voz",
+    "es": "El cuerpo va antes que la voz"
+   },
+   "corpo": {
+    "gl": "En TPR a crianza responde movéndose, non falando. Hai un período de silencio que é normal e que hai que respectar: entende moito antes de producir. Se executa a acción, comprendeu.",
+    "es": "En TPR la criatura responde moviéndose, no hablando. Hay un período de silencio que es normal y que hay que respetar: entiende mucho antes de producir. Si ejecuta la acción, ha comprendido."
+   },
+   "clave": {
+    "gl": "Nunca pidas que repitan. Nunca preguntes «como se di?».",
+    "es": "Nunca pidas que repitan. Nunca preguntes «¿cómo se dice?»."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "Tres ordes por sesión",
+    "es": "Tres órdenes por sesión"
+   },
+   "corpo": {
+    "gl": "Tres, non dez. Repítense varias veces coa mesma entoación e co mesmo xesto. O modelado faino a persoa adulta: di a orde e faina á vez, sen traducir.",
+    "es": "Tres, no diez. Se repiten varias veces con la misma entonación y con el mismo gesto. El modelado lo hace la persona adulta: dice la orden y la hace a la vez, sin traducir."
+   },
+   "clave": {
+    "gl": "Sen tradución. A acción é a tradución.",
+    "es": "Sin traducción. La acción es la traducción."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "O pulso vese, non se oe",
+    "es": "El pulso se ve, no se oye"
+   },
+   "corpo": {
+    "gl": "O metrónomo desta app é visual a propósito. Parte das crianzas leva audiófono ou implante, e un metrónomo sonoro compite xusto coa voz que teñen que seguir. O canal auditivo queda enteiro para a letra.",
+    "es": "El metrónomo de esta app es visual a propósito. Parte de las criaturas lleva audífono o implante, y un metrónomo sonoro compite justo con la voz que tienen que seguir. El canal auditivo queda entero para la letra."
+   },
+   "clave": {
+    "gl": "O compás márcao o teu corpo, non un pitido.",
+    "es": "El compás lo marca tu cuerpo, no un pitido."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "Cada idade ten a súa dinámica",
+    "es": "Cada edad tiene su dinámica"
+   },
+   "corpo": {
+    "gl": "No 1.º ciclo cambia por tramo: 0-2 traballa no colo e co contacto; 2-3 xa é movemento en grupo. No 2.º ciclo cambia por clase: 4.º acción expandida, 5.º dramatizado e narrativo, 6.º entre iguais. Elixe o teu grupo ao entrar e a app dáche o que lle toca.",
+    "es": "En el 1.º ciclo cambia por tramo: 0-2 trabaja en el regazo y con el contacto; 2-3 ya es movimiento en grupo. En el 2.º ciclo cambia por clase: 4.º acción expandida, 5.º dramatizado y narrativo, 6.º entre iguales. Elige tu grupo al entrar y la app te da lo que le toca."
+   },
+   "clave": {
+    "gl": "Non é a mesma sesión con outra etiqueta.",
+    "es": "No es la misma sesión con otra etiqueta."
+   }
+  }
+ ]
+}

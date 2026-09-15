@@ -1,0 +1,98 @@
+{
+ "id": "formacion.familia",
+ "perfil": "familia",
+ "titulo": {
+  "gl": "Antes de empezar na casa",
+  "es": "Antes de empezar en casa"
+ },
+ "subtitulo": {
+  "gl": "Seis cousas en dous minutos. Non fai falta saber inglés.",
+  "es": "Seis cosas en dos minutos. No hace falta saber inglés."
+ },
+ "pasos": [
+  {
+   "titulo": {
+    "gl": "Isto non é unha app para a crianza",
+    "es": "Esto no es una app para la criatura"
+   },
+   "corpo": {
+    "gl": "A app é para ti. A crianza non toca a pantalla en ningún momento: o que funciona nesta idade é o corpo, a voz e os obxectos da casa. Todo o que aquí se propón faise sen pantallas.",
+    "es": "La app es para ti. La criatura no toca la pantalla en ningún momento: lo que funciona a esta edad es el cuerpo, la voz y los objetos de casa. Todo lo que aquí se propone se hace sin pantallas."
+   },
+   "clave": {
+    "gl": "Se acaba mirando o móbil, algo se torceu.",
+    "es": "Si acaba mirando el móvil, algo se ha torcido."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "Tres minutos, sempre no mesmo momento",
+    "es": "Tres minutos, siempre en el mismo momento"
+   },
+   "corpo": {
+    "gl": "Non hai que falar inglés todo o día: iso cansa e acábase deixando. Escóllese un momento fixo e curto, de tres a cinco minutos, e sempre o mesmo: vestirse pola mañá, recoller despois de xogar, poñer a mesa, ou o baño da noite.",
+    "es": "No hay que hablar inglés todo el día: eso cansa y se acaba dejando. Se escoge un momento fijo y corto, de tres a cinco minutos, y siempre el mismo: vestirse por la mañana, recoger después de jugar, poner la mesa, o el baño de la noche."
+   },
+   "clave": {
+    "gl": "Pouco e sempre igual gaña a moito e ás veces.",
+    "es": "Poco y siempre igual le gana a mucho y a veces."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "Nunca preguntes «como se di?»",
+    "es": "Nunca preguntes «¿cómo se dice?»"
+   },
+   "corpo": {
+    "gl": "Esa pregunta convierte un xogo nun exame. Xera ansiedade e o resultado adoita ser que a crianza cala ou rexeita a actividade. O mesmo pasa con «non se di así» ou «dillo a papá».",
+    "es": "Esa pregunta convierte un juego en un examen. Genera ansiedad y el resultado suele ser que la criatura calla o rechaza la actividad. Lo mismo pasa con «no se dice así» o «díselo a papá»."
+   },
+   "clave": {
+    "gl": "Non se examina. Acompáñase.",
+    "es": "No se examina. Se acompaña."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "Se se equivoca, repítese ben e séguese",
+    "es": "Si se equivoca, se repite bien y se sigue"
+   },
+   "corpo": {
+    "gl": "Chámase modelado indirecto. A crianza di «mira mamá, castaña small» e a resposta non é corrixir, é: «Yes! A small chestnut! Put the small chestnut inside the basket!». Válidase o que quixo dicir, dáse a forma correcta e continúase o xogo.",
+    "es": "Se llama modelado indirecto. La criatura dice «mira mamá, castaña small» y la respuesta no es corregir, es: «Yes! A small chestnut! Put the small chestnut inside the basket!». Se valida lo que quiso decir, se da la forma correcta y se continúa el juego."
+   },
+   "clave": {
+    "gl": "Reformular, non recriminar.",
+    "es": "Reformular, no recriminar."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "Cada cápsula dura minuto e medio",
+    "es": "Cada cápsula dura minuto y medio"
+   },
+   "corpo": {
+    "gl": "Sempre coa mesma estrutura: unha situación da casa que recoñeces, como se fai exactamente, as tres ordes da semana, e unha regra que resume por que funciona.",
+    "es": "Siempre con la misma estructura: una situación de casa que reconoces, cómo se hace exactamente, las tres órdenes de la semana, y una regla que resume por qué funciona."
+   },
+   "clave": {
+    "gl": "Unha á semana chega.",
+    "es": "Una a la semana basta."
+   }
+  },
+  {
+   "titulo": {
+    "gl": "Mira o que fai, non o que di",
+    "es": "Mira lo que hace, no lo que dice"
+   },
+   "corpo": {
+    "gl": "Durante meses vai entender moito máis do que produce. É o período de silencio e é normal. Se lle dis «coat on» e vai buscar o abrigo, comprendeu: iso é o que hai que celebrar.",
+    "es": "Durante meses va a entender mucho más de lo que produce. Es el período de silencio y es normal. Si le dices «coat on» y va a buscar el abrigo, ha comprendido: eso es lo que hay que celebrar."
+   },
+   "clave": {
+    "gl": "Se executa a acción, o seu cerebro xa comprendeu.",
+    "es": "Si ejecuta la acción, su cerebro ya ha comprendido."
+   }
+  }
+ ]
+}

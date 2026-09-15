@@ -15,6 +15,8 @@ import 'features/academy/widgets/selector_idioma_widget.dart';
 import 'features/bienvenida/welcome_screen.dart';
 import 'features/calendario/views/calendario_screen.dart';
 import 'features/creditos/credits_screen.dart';
+import 'data/models/formacion_model.dart';
+import 'features/formacion/views/formacion_screen.dart';
 import 'features/premios/premios_repository.dart';
 import 'features/premios/premios_screen.dart';
 import 'features/juega/views/asamblea_guiada_screen.dart';
@@ -342,6 +344,20 @@ class HomeScreen extends StatelessWidget {
               description: _juegaSubtitle.resolve(currentLanguage),
               icon: Icons.school_outlined,
               buttonText: isGl ? 'Entrar en Modo Aula' : 'Entrar en Modo Aula',
+              formacionKey: const ValueKey('formacion_docente'),
+              formacionTexto: isGl
+                  ? 'Antes de entrar na aula · 2 min'
+                  : 'Antes de entrar en el aula · 2 min',
+              onFormacion: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => FormacionScreen(
+                      perfil: PerfilFormacion.docente,
+                      language: currentLanguage,
+                    ),
+                  ),
+                );
+              },
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
@@ -364,6 +380,20 @@ class HomeScreen extends StatelessWidget {
               description: _academySubtitle.resolve(currentLanguage),
               icon: Icons.family_restroom_outlined,
               buttonText: isGl ? 'Entrar en Academy' : 'Entrar en Academy',
+              formacionKey: const ValueKey('formacion_familia'),
+              formacionTexto: isGl
+                  ? 'Antes de empezar na casa · 2 min'
+                  : 'Antes de empezar en casa · 2 min',
+              onFormacion: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => FormacionScreen(
+                      perfil: PerfilFormacion.familia,
+                      language: currentLanguage,
+                    ),
+                  ),
+                );
+              },
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
@@ -471,6 +501,9 @@ class HomeScreen extends StatelessWidget {
     required IconData icon,
     required String buttonText,
     required VoidCallback onTap,
+    String? formacionTexto,
+    VoidCallback? onFormacion,
+    Key? formacionKey,
   }) {
     final theme = Theme.of(context);
 
@@ -506,6 +539,29 @@ class HomeScreen extends StatelessWidget {
               style: theme.textTheme.bodyMedium,
             ),
             const SizedBox(height: 16),
+            // La formación va ANTES del botón de entrar, a propósito: es lo
+            // que hay que leer la primera vez, y si se pone detrás nadie la
+            // abre. Dos minutos, y evita los dos errores de uso que los
+            // documentos curriculares señalan: enseñarle la pantalla a la
+            // criatura, y preguntarle «¿cómo se dice?».
+            if (formacionTexto != null && onFormacion != null)
+              Align(
+                alignment: Alignment.centerLeft,
+                child: TextButton.icon(
+                  key: formacionKey,
+                  onPressed: onFormacion,
+                  icon: const Icon(Icons.school_outlined, size: 20),
+                  label: Text(formacionTexto),
+                  style: TextButton.styleFrom(
+                    foregroundColor: AppTheme.primaryInk,
+                    minimumSize: const Size(0, AppTheme.touchMin),
+                    textStyle: const TextStyle(
+                      fontFamily: AppTheme.fontFamily,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                ),
+              ),
             Align(
               alignment: Alignment.centerRight,
               child: ElevatedButton(

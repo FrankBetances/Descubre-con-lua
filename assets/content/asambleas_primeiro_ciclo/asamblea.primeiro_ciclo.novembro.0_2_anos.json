@@ -1,0 +1,148 @@
+{
+ "id": "asamblea.primeiro_ciclo.novembro.0_2_anos",
+ "tramo": "0_2",
+ "mes": 11,
+ "titulo": {
+  "gl": "Novembro: follas de outono e os bosques de Galicia (o Magosto)",
+  "es": "Noviembre: hojas de otoño y los bosques de Galicia (el Magosto)",
+  "en": "November: Autumn Leaves and the Woods of Galicia"
+ },
+ "centroInteres": {
+  "gl": "O outono galego e as texturas do bosque",
+  "es": "El otoño gallego y las texturas del bosque",
+  "en": "Galician autumn and the textures of the woods"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Cesta de vimbio con follas de carballo e castiñeiro lavadas",
+  "es": "Cesta de mimbre con hojas de roble y castaño lavadas",
+  "en": "Wicker basket with washed oak and chestnut leaves"
+ },
+ "cancionDoMes": "",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Achega a cesta e deixa que miren e toquen as follas.",
+    "es": "Acerca la cesta y deja que miren y toquen las hojas.",
+    "en": "Bring the basket close and let them look at and touch the leaves."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Ergue un puñado de follas á altura dos seus ollos.",
+    "es": "Eleva un puñado de hojas a la altura de sus ojos.",
+    "en": "Raise a handful of leaves to their eye level."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.novembro.0_2.01",
+     "textoIngles": "Falling, falling, falling down!",
+     "accionFisica": {
+      "gl": "Deixar caer as follas en choiva lixeira diante deles.",
+      "es": "Dejar caer las hojas en lluvia ligera delante de ellos.",
+      "en": "Let the leaves fall like light rain in front of them."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.novembro.0_2.02",
+     "textoIngles": "Crunch, crunch!",
+     "accionFisica": {
+      "gl": "Apertar unha folla seca xunto ao oído do neno.",
+      "es": "Apretar una hoja seca junto al oído del niño.",
+      "en": "Squeeze a dry leaf next to the child's ear."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Deixa unha folla na man do bebé e baixa a voz.",
+    "es": "Deja una hoja en la mano del bebé y baja la voz.",
+    "en": "Leave one leaf in the baby's hand and lower your voice."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "0_2",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

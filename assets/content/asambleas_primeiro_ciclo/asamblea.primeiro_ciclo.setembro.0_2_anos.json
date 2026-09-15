@@ -1,0 +1,164 @@
+{
+ "id": "asamblea.primeiro_ciclo.setembro.0_2_anos",
+ "tramo": "0_2",
+ "mes": 9,
+ "titulo": {
+  "gl": "Setembro: acollida, caricias suaves e novas amizades",
+  "es": "Septiembre: acogida, caricias suaves y nuevas amistades",
+  "en": "September: Welcome, Gentle Touches and New Friends"
+ },
+ "centroInteres": {
+  "gl": "A acollida e o vínculo afectivo co grupo",
+  "es": "La acogida y el vínculo afectivo con el grupo",
+  "en": "Welcome and building a safe bond with the group"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Monicreque brando de feltro",
+  "es": "Muñeco blando de fieltro",
+  "en": "Soft felt doll"
+ },
+ "cancionDoMes": "Up and Down, Clap Clap Clap",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Reúne aos bebés sobre colchonetas brandas e achega o monicreque a cada un.",
+    "es": "Reúne a los bebés sobre colchonetas mullidas y acerca el muñeco a cada uno.",
+    "en": "Gather the babies on soft mats and bring the doll close to each one."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Up and Down, Clap Clap Clap"
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Sostén as mans do bebé e entoa a canción mirándoo aos ollos.",
+    "es": "Sostén las manos del bebé y entona la canción mirándolo a los ojos.",
+    "en": "Hold the baby's hands and sing while keeping eye contact."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Up and Down, Clap Clap Clap"
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.setembro.0_2.01",
+     "textoIngles": "Up",
+     "accionFisica": {
+      "gl": "Eleva as mans do bebé cara arriba.",
+      "es": "Eleva las manos del bebé hacia arriba.",
+      "en": "Lift the baby's hands upwards."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.setembro.0_2.02",
+     "textoIngles": "Down",
+     "accionFisica": {
+      "gl": "Baixa as mans e apóiaas nos seus muslos.",
+      "es": "Baja las manos y apóyalas en sus muslos.",
+      "en": "Lower the hands and rest them on the thighs."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.setembro.0_2.03",
+     "textoIngles": "Clap",
+     "accionFisica": {
+      "gl": "Guía dúas palmadas lentas.",
+      "es": "Guía dos palmadas lentas.",
+      "en": "Guide two slow claps."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Caricias no torso e susurro prosódico ata que baixe o ritmo.",
+    "es": "Caricias en el torso y susurro prosódico hasta que baje el ritmo.",
+    "en": "Stroke the chest and whisper softly until the pace slows down."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "0_2",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

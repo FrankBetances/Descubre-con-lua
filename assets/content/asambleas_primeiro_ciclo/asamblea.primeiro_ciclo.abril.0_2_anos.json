@@ -1,0 +1,148 @@
+{
+ "id": "asamblea.primeiro_ciclo.abril.0_2_anos",
+ "tramo": "0_2",
+ "mes": 4,
+ "titulo": {
+  "gl": "Abril: esperta a primavera — flores, choiva e bechiños",
+  "es": "Abril: despierta la primavera — flores, lluvia y bichitos",
+  "en": "April: Spring Awakening — Flowers, Rain and Little Bugs"
+ },
+ "centroInteres": {
+  "gl": "O orballo e o espertar biolóxico da primavera",
+  "es": "El orballo y el despertar biológico de la primavera",
+  "en": "The soft Atlantic drizzle and the waking of spring"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Atomizador con auga morna e tea de tul translúcido amarelo",
+  "es": "Atomizador con agua tibia y tela de tul translúcido amarillo",
+  "en": "Spray bottle with warm water and translucent yellow tulle"
+ },
+ "cancionDoMes": "",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Achega o atomizador e deixa que oian o son antes de sentilo.",
+    "es": "Acerca el atomizador y deja que oigan el sonido antes de sentirlo.",
+    "en": "Bring the spray close and let them hear it before they feel it."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Néboa imperceptible sobre o dorso das mans, con cadencia suave.",
+    "es": "Niebla imperceptible sobre el dorso de las manos, con cadencia suave.",
+    "en": "A barely-there mist over the backs of the hands, in a gentle cadence."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.abril.0_2.01",
+     "textoIngles": "Rain, rain, little drops, tap, tap, tap",
+     "accionFisica": {
+      "gl": "Pulverizar auga morna sobre o dorso das mans.",
+      "es": "Pulverizar agua tibia sobre el dorso de las manos.",
+      "en": "Spray warm water over the backs of the hands."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.abril.0_2.02",
+     "textoIngles": "Sun comes up!",
+     "accionFisica": {
+      "gl": "Ondear o tul amarelo sobre os seus rostros.",
+      "es": "Ondear el tul amarillo sobre sus rostros.",
+      "en": "Wave the yellow tulle above their faces."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Pousa o tul sobre as pernas e deixa que o toquen.",
+    "es": "Posa el tul sobre las piernas y deja que lo toquen.",
+    "en": "Lay the tulle over their legs and let them touch it."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "0_2",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

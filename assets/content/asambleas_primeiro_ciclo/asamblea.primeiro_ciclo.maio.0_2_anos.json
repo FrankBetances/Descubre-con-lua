@@ -1,0 +1,136 @@
+{
+ "id": "asamblea.primeiro_ciclo.maio.0_2_anos",
+ "tramo": "0_2",
+ "mes": 5,
+ "titulo": {
+  "gl": "Maio: auga, salpicaduras e rutinas de aseo",
+  "es": "Mayo: agua, salpicaduras y rutinas de aseo",
+  "en": "May: Water, Splashing and Bathroom Routines"
+ },
+ "centroInteres": {
+  "gl": "Os hábitos de hixiene e o pracer de lavarse",
+  "es": "Los hábitos de higiene y el placer de lavarse",
+  "en": "Hygiene habits and the pleasure of washing"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Toalliñas de felpa humedecidas en hidrolato de lavanda apto para bebés",
+  "es": "Toallitas de felpa humedecidas en hidrolato de lavanda apto para bebés",
+  "en": "Towelling cloths dampened with baby-safe lavender water"
+ },
+ "cancionDoMes": "This Is the Way We Wash Our Hands",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Amosa a toalliña e deixa que a cheiren antes de tocala.",
+    "es": "Muestra la toallita y deja que la huelan antes de tocarla.",
+    "en": "Show the cloth and let them smell it before touching."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "This Is the Way We Wash Our Hands"
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Desliza a toalliña polas palmas e frótaas ritmicamente.",
+    "es": "Desliza la toallita por las palmas y frótalas rítmicamente.",
+    "en": "Slide the cloth over the palms and rub them rhythmically."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "This Is the Way We Wash Our Hands"
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.maio.0_2.01",
+     "textoIngles": "Wash, wash, clean hands!",
+     "accionFisica": {
+      "gl": "Sostén as mans do bebé e frótaas unha contra a outra.",
+      "es": "Sostén las manos del bebé y frótalas una contra la otra.",
+      "en": "Hold the baby's hands and rub them together."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Acariña as meixelas reforzando a sensación de frescor.",
+    "es": "Acaricia las mejillas reforzando la sensación de frescor.",
+    "en": "Stroke the cheeks, reinforcing the fresh, calm feeling."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "0_2",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

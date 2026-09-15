@@ -1,6 +1,7 @@
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 
 import '../loaders/content_asset_loader.dart';
+import '../models/asamblea_primeiro_ciclo_model.dart';
 import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
 import '../models/unidad_model.dart';
@@ -24,6 +25,7 @@ class ContentRepository {
   final ContentAssetLoader _loader;
   final Map<String, Unidad> _unidadesById = {};
   final Map<String, Capsula> _capsulasById = {};
+  final Map<String, AsambleaPrimeiroCiclo> _asambleasPrimeiroCicloById = {};
   final Map<String, AsambleaSegundoCiclo> _asambleasSegundoCicloById = {};
   final List<ContentLoadFailure> _loadErrors = [];
   bool _isInitialized = false;
@@ -56,6 +58,8 @@ class ContentRepository {
   int get capsuleCount => _capsulasById.length;
 
   /// Total count of loaded Segundo Ciclo assemblies.
+  int get asambleaPrimeiroCicloCount => _asambleasPrimeiroCicloById.length;
+
   int get asambleaSegundoCicloCount => _asambleasSegundoCicloById.length;
 
   /// Initializes the repository by loading assets from default or specified paths.
@@ -137,6 +141,7 @@ class ContentRepository {
 
     _unidadesById.clear();
     _capsulasById.clear();
+    _asambleasPrimeiroCicloById.clear();
     _asambleasSegundoCicloById.clear();
     _loadErrors.clear();
 
@@ -165,6 +170,17 @@ class ContentRepository {
       }
     }
 
+    for (final path in discovered?.asambleasPrimeiroCiclo ?? const <String>[]) {
+      if (generation != _initGeneration) return;
+      try {
+        final asamblea = await _loader.loadAsambleaPrimeiroCiclo(path);
+        if (generation != _initGeneration) return;
+        _asambleasPrimeiroCicloById[asamblea.id] = asamblea;
+      } catch (e) {
+        _loadErrors.add(ContentLoadFailure(path, e.toString()));
+      }
+    }
+
     for (final path in effectiveAsambleaPaths) {
       if (generation != _initGeneration) return;
       try {
@@ -182,6 +198,29 @@ class ContentRepository {
   }
 
   // --- UNIDADES (Juega con Lúa · Aula) ---
+
+  // --- ASAMBLEAS DO 1.º CICLO (0-3) ---
+
+  /// Todas as microcápsulas do 1.º ciclo: 10 meses x 2 tramos.
+  List<AsambleaPrimeiroCiclo> getAllAsambleasPrimeiroCicloSync() {
+    final list = _asambleasPrimeiroCicloById.values.toList();
+    list.sort((a, b) {
+      final ma = a.mes >= 9 ? a.mes : a.mes + 12;
+      final mb = b.mes >= 9 ? b.mes : b.mes + 12;
+      if (ma != mb) return ma.compareTo(mb);
+      return a.tramo.clave.compareTo(b.tramo.clave);
+    });
+    return List.unmodifiable(list);
+  }
+
+  /// A microcápsula dun mes e un tramo concretos, ou `null` se non existe.
+  AsambleaPrimeiroCiclo? getAsambleaPrimeiroCicloSync(
+      int mes, TramoPrimeiroCiclo tramo) {
+    for (final a in _asambleasPrimeiroCicloById.values) {
+      if (a.mes == mes && a.tramo == tramo) return a;
+    }
+    return null;
+  }
 
   /// Returns all available pedagogical units sorted by their canonical order.
   List<Unidad> getAllUnidades() {
@@ -402,6 +441,11 @@ class ContentRepository {
                 (a) => isJsonUnder(a, ContentAssetLoader.capsulasAssetPrefix))
             .toList()
           ..sort()),
+        asambleasPrimeiroCiclo: (assets
+            .where((a) => isJsonUnder(
+                a, ContentAssetLoader.asambleasPrimeiroCicloAssetPrefix))
+            .toList()
+          ..sort()),
         asambleasSegundoCiclo: (assets
             .where((a) => isJsonUnder(
                 a, ContentAssetLoader.asambleasSegundoCicloAssetPrefix))
@@ -412,6 +456,7 @@ class ContentRepository {
       return const _DiscoveredContent(
         unidades: [],
         capsulas: [],
+        asambleasPrimeiroCiclo: [],
         asambleasSegundoCiclo: [],
       );
     }
@@ -421,11 +466,13 @@ class ContentRepository {
 class _DiscoveredContent {
   final List<String> unidades;
   final List<String> capsulas;
+  final List<String> asambleasPrimeiroCiclo;
   final List<String> asambleasSegundoCiclo;
 
   const _DiscoveredContent({
     required this.unidades,
     required this.capsulas,
+    this.asambleasPrimeiroCiclo = const [],
     this.asambleasSegundoCiclo = const [],
   });
 }

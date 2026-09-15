@@ -1,0 +1,136 @@
+{
+ "id": "asamblea.primeiro_ciclo.xuno.0_2_anos",
+ "tramo": "0_2",
+ "mes": 6,
+ "titulo": {
+  "gl": "Xuño: días de sol, o océano e despedidas alegres",
+  "es": "Junio: días de sol, el océano y despedidas alegres",
+  "en": "June: Sunny Days, The Ocean and Happy Farewells"
+ },
+ "centroInteres": {
+  "gl": "O Atlántico, as rías de Vigo e a despedida do curso",
+  "es": "El Atlántico, las rías de Vigo y la despedida del curso",
+  "en": "The Atlantic, the Vigo rías and the end-of-year farewell"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Tea extensa de lycra azul brillante",
+  "es": "Tela extensa de lycra azul brillante",
+  "en": "A large bright blue lycra sheet"
+ },
+ "cancionDoMes": "Waves go up, waves go down, blue sea",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Os bebés deitados comodamente sobre unha colchoneta central.",
+    "es": "Los bebés tumbados cómodamente sobre una colchoneta central.",
+    "en": "The babies lying comfortably on a central mat."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Waves go up, waves go down, blue sea"
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Ondear a tea horizontalmente a poucos centímetros dos seus corpos.",
+    "es": "Ondear la tela horizontalmente a pocos centímetros de sus cuerpos.",
+    "en": "Wave the sheet horizontally a few centimetres above their bodies."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Waves go up, waves go down, blue sea"
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.xuno.0_2.01",
+     "textoIngles": "Waves go up, waves go down, blue sea",
+     "accionFisica": {
+      "gl": "Ondear a tea creando fluxo de aire e ondada visual.",
+      "es": "Ondear la tela creando flujo de aire y oleaje visual.",
+      "en": "Wave the sheet to create airflow and a visual swell."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Baixar a tea ata pousala e deixala quieta enriba deles.",
+    "es": "Bajar la tela hasta posarla y dejarla quieta encima de ellos.",
+    "en": "Lower the sheet until it rests still over them."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "0_2",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "id": "asamblea.primeiro_ciclo.outubro.0_2_anos",
+ "tramo": "0_2",
+ "mes": 10,
+ "titulo": {
+  "gl": "Outubro: o meu corpiño en movemento",
+  "es": "Octubre: mi cuerpecito en movimiento",
+  "en": "October: My Little Body in Motion"
+ },
+ "centroInteres": {
+  "gl": "A conciencia do propio corpo e a propiocepción",
+  "es": "La conciencia del propio cuerpo y la propiocepción",
+  "en": "Body awareness and proprioception"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Plumas de avestruz de cores claras",
+  "es": "Plumas de avestruz de colores claros",
+  "en": "Light-coloured ostrich feathers"
+ },
+ "cancionDoMes": "One Little Finger",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Deita aos bebés de costas ou sostenos no regazo.",
+    "es": "Recuesta a los bebés de espaldas o sostenlos en el regazo.",
+    "en": "Lay the babies on their backs or hold them in your lap."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "One Little Finger"
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Rozar as partes do corpo coa pluma ao son da canción.",
+    "es": "Rozar las partes del cuerpo con la pluma al son de la canción.",
+    "en": "Brush body parts with the feather along with the song."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "One Little Finger"
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.outubro.0_2.01",
+     "textoIngles": "Head",
+     "accionFisica": {
+      "gl": "Roza suavemente a coroniña.",
+      "es": "Roza suavemente la coronilla.",
+      "en": "Gently brush the top of the head."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.outubro.0_2.02",
+     "textoIngles": "Tummy",
+     "accionFisica": {
+      "gl": "Acaricia a barriga con movementos circulares.",
+      "es": "Acaricia la tripita con movimientos circulares.",
+      "en": "Stroke the tummy in circles."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.outubro.0_2.03",
+     "textoIngles": "Toes",
+     "accionFisica": {
+      "gl": "Lixeiro cóxegas nos dedos dos pés.",
+      "es": "Leve cosquilleo en los dedos de los pies.",
+      "en": "A light tickle on the toes."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Retira a pluma e deixa a man aberta e quieta sobre a barriga.",
+    "es": "Retira la pluma y deja la mano abierta y quieta sobre la tripa.",
+    "en": "Put the feather away and rest an open, still hand on the tummy."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "0_2",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "id": "asamblea.primeiro_ciclo.xuno.2_3_anos",
+ "tramo": "2_3",
+ "mes": 6,
+ "titulo": {
+  "gl": "Xuño: días de sol, o océano e despedidas alegres",
+  "es": "Junio: días de sol, el océano y despedidas alegres",
+  "en": "June: Sunny Days, The Ocean and Happy Farewells"
+ },
+ "centroInteres": {
+  "gl": "O Atlántico, as rías de Vigo e a despedida do curso",
+  "es": "El Atlántico, las rías de Vigo y la despedida del curso",
+  "en": "The Atlantic, the Vigo rías and the end-of-year farewell"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Paracaídas azul de asemblea",
+  "es": "Paracaídas azul de asamblea",
+  "en": "Blue circle-time parachute"
+ },
+ "cancionDoMes": "Bye-Bye, Goodbye",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Todos suxeitan o contorno do paracaídas coas dúas mans.",
+    "es": "Todos sujetan el contorno del paracaídas con las dos manos.",
+    "en": "Everyone holds the rim of the parachute with both hands."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Bye-Bye, Goodbye"
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Modular a intensidade da ondada segundo a orde.",
+    "es": "Modular la intensidad del oleaje según la orden.",
+    "en": "Modulate the swell according to the command."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Bye-Bye, Goodbye"
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.xuno.2_3.01",
+     "textoIngles": "Gentle waves",
+     "accionFisica": {
+      "gl": "Pequenos tremores de pulso.",
+      "es": "Pequeños temblores de muñeca.",
+      "en": "Small wrist tremors."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.xuno.2_3.02",
+     "textoIngles": "Giant waves!",
+     "accionFisica": {
+      "gl": "Bater os brazos enteiros desde os ombreiros.",
+      "es": "Batir los brazos enteros desde los hombros.",
+      "en": "Beat the whole arms from the shoulders."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.xuno.2_3.03",
+     "textoIngles": "Little fish swimming under the sea!",
+     "accionFisica": {
+      "gl": "Dous nenos designados gatean rápido por debaixo da tea.",
+      "es": "Dos niños designados gatean rápido por debajo de la tela.",
+      "en": "Two chosen children crawl quickly under the sheet."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Sentados en círculo, cantar a despedida co axitar de mans.",
+    "es": "Sentados en círculo, cantar la despedida con el agitar de manos.",
+    "en": "Seated in a circle, sing the farewell with a coordinated hand wave."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "2_3",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

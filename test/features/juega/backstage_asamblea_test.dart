@@ -629,67 +629,63 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      // Verify cycle tabs exist
       expect(find.byKey(const ValueKey('tab_primer_ciclo')), findsOneWidget);
       expect(find.byKey(const ValueKey('tab_segundo_ciclo')), findsOneWidget);
 
-      // Initially on Primer Ciclo (filter chip is visible)
-      expect(find.text('Filtrar por tramo etario:'), findsOneWidget);
+      // 1.º ciclo: o selector é por TRAMO de idade, e a tarxeta do día está
+      // á vista sen desprazar nada.
+      expect(find.text('O MEU GRUPO'), findsOneWidget);
+      expect(
+        find.byKey(const ValueKey('tramo_1c_TramoPrimeiroCiclo.lactantes0a2')),
+        findsOneWidget,
+      );
 
-      // Switch to Segundo Ciclo
       await tester.tap(find.byKey(const ValueKey('tab_segundo_ciclo')));
       await tester.pumpAndSettle();
 
-      // O banner e o botón principal vense ao entrar, por riba do dobrez.
-      expect(find.text('Asemblea Matinal do 2.º Ciclo (3-6 anos)'),
-          findsOneWidget);
-      expect(find.byKey(const ValueKey('launch_backstage_primary_button')),
-          findsOneWidget);
-
-      // As tarxetas de nivel quedan máis abaixo: agora o calendario do curso
-      // é a primeira fila desta lista. A lista só constrúe o que se ve, así
-      // que hai que baixar ata elas antes de buscalas.
-      await tester.scrollUntilVisible(
-        find.byKey(const ValueKey('launch_backstage_nivel_4_infantil')),
-        300,
-        // `.first`: dentro desta lista hai outro desplazable, o carrusel de
-        // meses do calendario, que vai de lado. O de fóra é o primeiro.
-        scrollable: find
-            .descendant(
-              of: find.byKey(const Key('lista_segundo_ciclo')),
-              matching: find.byType(Scrollable),
-            )
-            .first,
+      // 2.º ciclo: o selector é por CLASE, e tamén hai unha soa tarxeta.
+      expect(find.text('A MIÑA CLASE'), findsOneWidget);
+      expect(
+        find.byKey(const ValueKey('clase_2c_4_infantil')),
+        findsOneWidget,
       );
-      await tester.pumpAndSettle();
-      expect(find.byKey(const ValueKey('launch_backstage_nivel_4_infantil')),
-          findsOneWidget);
-      // La lista solo construye lo que se ve: hay que bajar hasta las tarjetas
-      // de 5.º y 6.º antes de buscarlas.
-      await tester.scrollUntilVisible(
-        find.byKey(const ValueKey('launch_backstage_nivel_6_infantil')),
-        300,
-        // `.first`: dentro de esta lista hai outro desplazable, o carrusel
-        // de meses do calendario, que vai de lado. O de fóra é o primeiro.
-        scrollable: find
-            .descendant(
-              of: find.byKey(const Key('lista_segundo_ciclo')),
-              matching: find.byType(Scrollable),
-            )
-            .first,
-      );
-      await tester.pumpAndSettle();
-      expect(find.byKey(const ValueKey('launch_backstage_nivel_5_infantil')),
-          findsOneWidget);
-      expect(find.byKey(const ValueKey('launch_backstage_nivel_6_infantil')),
-          findsOneWidget);
+      expect(find.byKey(const ValueKey('tarxeta_fluxo_2c')), findsOneWidget);
+      expect(find.byKey(const ValueKey('comezar_asemblea_2c')), findsOneWidget);
 
-      // Switch back to Primer Ciclo
       await tester.tap(find.byKey(const ValueKey('tab_primer_ciclo')));
       await tester.pumpAndSettle();
+      expect(find.text('O MEU GRUPO'), findsOneWidget);
+    });
 
-      // 0-3 views are restored
-      expect(find.text('Filtrar por tramo etario:'), findsOneWidget);
+    testWidgets('o aula non se despraza cara abaixo en ningún dos dous ciclos',
+        (tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: UnidadesListScreen(
+            repository: repository,
+            audioService: mockAudio,
+            initialLanguage: AppLanguage.gl,
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      // O único desprazable que pode haber é a tira de meses, e vai DE LADO.
+      // Se aparece un vertical, esta proba cae: é a regra do documento
+      // curricular —«sin navegación por capas ni deslizamientos profundos»—
+      // convertida en gate.
+      void nonHaiVerticais() {
+        for (final w in tester.widgetList<Scrollable>(find.byType(Scrollable))) {
+          expect(w.axisDirection, anyOf(AxisDirection.right, AxisDirection.left),
+              reason: 'Apareceu un desprazable vertical no aula');
+        }
+      }
+
+      nonHaiVerticais();
+
+      await tester.tap(find.byKey(const ValueKey('tab_segundo_ciclo')));
+      await tester.pumpAndSettle();
+      nonHaiVerticais();
     });
   });
 }

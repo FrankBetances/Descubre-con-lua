@@ -1,0 +1,150 @@
+{
+ "id": "asamblea.primeiro_ciclo.decembro.0_2_anos",
+ "tramo": "0_2",
+ "mes": 12,
+ "titulo": {
+  "gl": "Decembro: abrazos quentes, campaíñas e aire de inverno",
+  "es": "Diciembre: abrazos cálidos, campanillas y aire de invierno",
+  "en": "December: Warm Hugs, Little Bells and Winter Air"
+ },
+ "centroInteres": {
+  "gl": "O contraste entre o frío de fóra e a calor do colo",
+  "es": "El contraste entre el frío de fuera y el calor del regazo",
+  "en": "The contrast between the cold outside and the warmth of the lap"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Muñequeiras de feltro con axóuxeres inoxidables",
+  "es": "Muñequeras de fieltro con cascabeles inoxidables",
+  "en": "Felt cuffs with stainless bells"
+ },
+ "cancionDoMes": "Ring the Bells",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Axusta as muñequeiras cos axóuxeres nos nocellos dos bebés.",
+    "es": "Ajusta las muñequeras con cascabeles en los tobillos de los bebés.",
+    "en": "Fit the bell cuffs around the babies' ankles."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Ring the Bells"
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Flexiona as pernas do bebé de xeito alterno ao compás.",
+    "es": "Flexiona las piernas del bebé de manera alterna al compás.",
+    "en": "Bend the baby's legs alternately to the beat."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Ring the Bells"
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.decembro.0_2.01",
+     "textoIngles": "Ring the bells",
+     "accionFisica": {
+      "gl": "Patexo alterno que fai soar os axóuxeres.",
+      "es": "Pataleo alterno que hace sonar los cascabeles.",
+      "en": "Alternate kicking that rings the bells."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.decembro.0_2.02",
+     "textoIngles": "Warm... soft and warm",
+     "accionFisica": {
+      "gl": "Envolver os ombreiros na toalla morna.",
+      "es": "Envolver los hombros en la toalla cálida.",
+      "en": "Wrap the shoulders in the warm towel."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Envolve os ombreiros nunha toalla morna e susurra.",
+    "es": "Envuelve los hombros en una toalla cálida y susurra.",
+    "en": "Wrap the shoulders in a warm towel and whisper."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "0_2",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

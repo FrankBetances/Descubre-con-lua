@@ -29,6 +29,13 @@ flutter:
     - assets/content/calendario/
     # El ritual de la asamblea: la consigna y los minutos de cada fase.
     - assets/content/asamblea/
+    # La formación previa: lo que docente y familia tienen que saber ANTES
+    # de usar la app. Los dos documentos curriculares la piden.
+    - assets/content/formacion/
+    # Las 20 microcápsulas del primer ciclo: 10 meses x 2 tramos (0-2 y 2-3).
+    # Salen del documento curricular del primer ciclo, que describe una
+    # dinámica distinta para cada tramo en cada mes.
+    - assets/content/asambleas_primeiro_ciclo/
     # Las asambleas de segundo ciclo con el inglés como L3.
     - assets/content/asambleas_segundo_ciclo/
     - assets/audio/

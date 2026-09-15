@@ -1,0 +1,162 @@
+{
+ "id": "asamblea.primeiro_ciclo.febreiro.2_3_anos",
+ "tramo": "2_3",
+ "mes": 2,
+ "titulo": {
+  "gl": "Febreiro: o reino animal e o Entroido",
+  "es": "Febrero: el reino animal y el Entroido",
+  "en": "February: The Animal Kingdom and Entroido"
+ },
+ "centroInteres": {
+  "gl": "A motricidade zoomorfa e as onomatopeas",
+  "es": "La motricidad zoomorfa y las onomatopeyas",
+  "en": "Animal-like movement and onomatopoeia"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Tarxetas de gran formato coas siluetas dos animais",
+  "es": "Tarjetas de gran formato con las siluetas de los animales",
+  "en": "Large cards with animal silhouettes"
+ },
+ "cancionDoMes": "",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Amosa a primeira tarxeta sen dicir nada e agarda.",
+    "es": "Muestra la primera tarjeta sin decir nada y espera.",
+    "en": "Show the first card without speaking and wait."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Circuito de emulación corporal polo aula.",
+    "es": "Circuito de emulación corporal por el aula.",
+    "en": "A body-imitation circuit around the room."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.febreiro.2_3.01",
+     "textoIngles": "Fly like a bird!",
+     "accionFisica": {
+      "gl": "Desprazarse de puntillas cos brazos estendidos.",
+      "es": "Desplazarse de puntillas con los brazos extendidos.",
+      "en": "Move on tiptoe with the arms stretched out."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.febreiro.2_3.02",
+     "textoIngles": "Big heavy bear! Stomp!",
+     "accionFisica": {
+      "gl": "Cuadrupedia pesada con mans e pés no chan.",
+      "es": "Cuadrupedia pesada con manos y pies en el suelo.",
+      "en": "Heavy four-legged walk with hands and feet on the floor."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.febreiro.2_3.03",
+     "textoIngles": "Carnival Freeze!",
+     "accionFisica": {
+      "gl": "Conxelar a postura do animal predilecto en silencio.",
+      "es": "Congelar la postura del animal predilecto en silencio.",
+      "en": "Freeze in the favourite animal's pose, in silence."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Conxelar a postura do animal preferido, sen emitir son.",
+    "es": "Congelar la postura del animal preferido, sin emitir sonido.",
+    "en": "Freeze in the favourite animal's posture, without a sound."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "2_3",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

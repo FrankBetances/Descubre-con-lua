@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import '../../helpers/scroll_helpers.dart';
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/data/models/curricular_model.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart';
+import 'package:descubre_con_lua/data/models/asamblea_primeiro_ciclo_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
@@ -19,8 +19,12 @@ void main() {
   late Unidad testUnidad2to3;
   late Unidad testUnidad0to3;
 
-  setUp(() {
+  setUp(() async {
     repository = ContentRepository();
+    // El aula ya no pinta unidades sueltas: pinta la microcápsula del grupo y
+    // el mes. Eso vive en los assets, así que el repositorio hay que
+    // inicializarlo de verdad, no dejarlo vacío.
+    await repository.initialize();
     mockAudioService = MockOfflineAudioService();
 
     testUnidad0to2 = const Unidad(
@@ -356,9 +360,8 @@ void main() {
     });
   });
 
-  group('Adversarial Suite 3: Age Filter Edge Cases in UnidadesListScreen', () {
-    testWidgets(
-        'Age filter correctly segregates 0-2, 2-3, and includes 0-3 in both',
+  group('Adversarial Suite 3: o selector de grupo do 1.º ciclo', () {
+    testWidgets('cada tramo dá a súa propia microcápsula, non a mesma',
         (tester) async {
       await tester.pumpWidget(
         MaterialApp(
@@ -369,56 +372,48 @@ void main() {
           ),
         ),
       );
-
-      // Default: 'Todas as idades' shows all 3. The third card falls below the
-      // fold on the test surface, so the test scrolls the way a teacher would.
-      await expectAfterScrolling(tester, find.text('Mar de Vigo 0-2'));
-      await expectAfterScrolling(tester, find.text('Monte do Castro 2-3'));
-      await expectAfterScrolling(tester, find.text('Vigo Global 0-3'));
-
-      // Select '0-2 anos'
-      await tester.tap(find.text('0-2 anos'));
       await tester.pumpAndSettle();
 
-      await expectAfterScrolling(tester, find.text('Mar de Vigo 0-2'));
-      await expectAfterScrolling(tester, find.text('Vigo Global 0-3'));
-      expect(find.text('Monte do Castro 2-3'), findsNothing,
-          reason: '2-3 unit must be excluded in 0-2 filter');
+      String textoDaTarxeta() => tester
+          .widgetList<Text>(find.descendant(
+            of: find.byKey(const ValueKey('tarxeta_fluxo_1c')),
+            matching: find.byType(Text),
+          ))
+          .map((t) => t.data)
+          .join('|');
 
-      // Select '2-3 anos'
-      await tester.tap(find.text('2-3 anos'));
+      final tramo02 = textoDaTarxeta();
+
+      await tester.tap(find.byKey(
+          ValueKey('tramo_1c_${TramoPrimeiroCiclo.deambulantes2a3}')));
       await tester.pumpAndSettle();
+      final tramo23 = textoDaTarxeta();
 
-      await expectAfterScrolling(tester, find.text('Monte do Castro 2-3'));
-      await expectAfterScrolling(tester, find.text('Vigo Global 0-3'));
-      expect(find.text('Mar de Vigo 0-2'), findsNothing,
-          reason: '0-2 unit must be excluded in 2-3 filter');
+      expect(tramo23, isNot(equals(tramo02)),
+          reason: 'Os dous tramos ensinan exactamente o mesmo');
 
-      // Back to 'Todas as idades'
-      await tester.tap(find.text('Todas as idades'));
+      // E volver atrás recupera o primeiro, sen quedar pegado.
+      await tester.tap(find.byKey(
+          ValueKey('tramo_1c_${TramoPrimeiroCiclo.lactantes0a2}')));
       await tester.pumpAndSettle();
-
-      await expectAfterScrolling(tester, find.text('Mar de Vigo 0-2'));
-      await expectAfterScrolling(tester, find.text('Monte do Castro 2-3'));
-      await expectAfterScrolling(tester, find.text('Vigo Global 0-3'));
+      expect(textoDaTarxeta(), equals(tramo02));
     });
 
-    testWidgets('Empty repository shows friendly empty state without crash',
-        (tester) async {
-      final emptyRepo = ContentRepository();
-
+    testWidgets('un repositorio baleiro non rompe o aula', (tester) async {
+      final baleiro = ContentRepository();
       await tester.pumpWidget(
         MaterialApp(
           home: UnidadesListScreen(
-            repository: emptyRepo,
+            repository: baleiro,
             audioService: mockAudioService,
             initialLanguage: AppLanguage.gl,
           ),
         ),
       );
+      await tester.pumpAndSettle();
 
-      expect(find.text('Non se atoparon unidades para este tramo de idade.'),
-          findsOneWidget);
+      expect(tester.takeException(), isNull);
+      expect(find.text('O MEU GRUPO'), findsOneWidget);
     });
   });
 

@@ -14,8 +14,12 @@ void main() {
   late MockOfflineAudioService mockAudioService;
   late Unidad testUnidad;
 
-  setUp(() {
+  setUp(() async {
     repository = ContentRepository();
+    // El aula ya no pinta unidades sueltas: pinta la microcápsula del grupo y
+    // el mes. Eso vive en los assets, así que el repositorio hay que
+    // inicializarlo de verdad, no dejarlo vacío.
+    await repository.initialize();
     mockAudioService = MockOfflineAudioService();
 
     testUnidad = const Unidad(
@@ -177,7 +181,7 @@ void main() {
   });
 
   group('Juega con Lúa Feature Tests', () {
-    testWidgets('UnidadesListScreen renders unit card and launches assembly',
+    testWidgets('UnidadesListScreen ensina a microcápsula do grupo escollido',
         (tester) async {
       await tester.pumpWidget(
         MaterialApp(
@@ -189,10 +193,15 @@ void main() {
         ),
       );
 
+      await tester.pumpAndSettle();
+
+      // O aula xa non lista unidades: ensina UNHA microcápsula, a do grupo e
+      // o mes escollidos. A unidade segue no repositorio, pero non é a porta.
       expect(find.text('Juega con Lúa · Aula'), findsOneWidget);
-      expect(find.text('Explorando o Mar de Vigo'), findsOneWidget);
-      expect(find.text('Tramo 0-2 anos'), findsOneWidget);
-      expect(find.text('Iniciar Asemblea Guiada'), findsOneWidget);
+      expect(find.text('O MEU GRUPO'), findsOneWidget);
+      expect(find.text('MES DO CURSO'), findsOneWidget);
+      expect(find.byKey(const ValueKey('tarxeta_fluxo_1c')), findsOneWidget);
+      expect(find.byKey(const ValueKey('comezar_asemblea_1c')), findsOneWidget);
     });
 
     testWidgets(

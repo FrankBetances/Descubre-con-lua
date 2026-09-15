@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import '../models/asamblea_primeiro_ciclo_model.dart';
 import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
 import '../models/unidad_model.dart';
@@ -30,6 +31,10 @@ class ContentAssetLoader {
   /// Canonical base capsule path.
   static const String baseCapsulaHablar01 =
       'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json';
+
+  /// Default asset path prefix for Primeiro Ciclo microcapsules (0-3 years).
+  static const String asambleasPrimeiroCicloAssetPrefix =
+      'assets/content/asambleas_primeiro_ciclo/';
 
   /// Default asset path prefix for Segundo Ciclo assemblies (3-6 years).
   static const String asambleasSegundoCicloAssetPrefix =
@@ -98,6 +103,17 @@ class ContentAssetLoader {
       String assetPath) async {
     final jsonString = await _stringLoader(assetPath);
     return parseAsambleaSegundoCiclo(jsonString);
+  }
+
+  /// Loads and parses an [AsambleaPrimeiroCiclo] from an asset path.
+  Future<AsambleaPrimeiroCiclo> loadAsambleaPrimeiroCiclo(
+      String assetPath) async {
+    final jsonString = await _stringLoader(assetPath);
+    final dynamic decoded = jsonDecode(jsonString);
+    if (decoded is! Map) {
+      throw FormatException('Root of $assetPath is not a JSON object');
+    }
+    return AsambleaPrimeiroCiclo.fromJson(Map<String, dynamic>.from(decoded));
   }
 
   /// Alias for [loadAsambleaSegundoCiclo] matching [loadUnidadFromAsset] nomenclature.

@@ -1,0 +1,150 @@
+{
+ "id": "asamblea.primeiro_ciclo.xaneiro.2_3_anos",
+ "tramo": "2_3",
+ "mes": 1,
+ "titulo": {
+  "gl": "Xaneiro: roupa de inverno, botas grandes e luvas brandas",
+  "es": "Enero: ropa de invierno, botas grandes y manoplas suaves",
+  "en": "January: Winter Clothes, Big Boots and Soft Mittens"
+ },
+ "centroInteres": {
+  "gl": "As rutinas de abrigo e a autonomía ao vestirse",
+  "es": "Las rutinas de abrigo y la autonomía al vestirse",
+  "en": "Wrapping-up routines and independence when dressing"
+ },
+ "duracionTotalMinutos": 9,
+ "materialDoMes": {
+  "gl": "Sen material: mimo da roupa",
+  "es": "Sin material: mimo de la ropa",
+  "en": "No materials: miming the clothes"
+ },
+ "cancionDoMes": "Put on Your Shoes",
+ "fases": [
+  {
+   "orden": 1,
+   "tipo": "apertura_saudo",
+   "titulo": {
+    "gl": "Apertura e Saúdo",
+    "es": "Apertura y Saludo",
+    "en": "Opening and Greeting"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "En pé, con sitio arredor para mover as pernas.",
+    "es": "De pie, con sitio alrededor para mover las piernas.",
+    "en": "Standing, with room around to move the legs."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Put on Your Shoes"
+  },
+  {
+   "orden": 2,
+   "tipo": "movement_rhythm_focus",
+   "titulo": {
+    "gl": "Enfoque e Fingerplay",
+    "es": "Enfoque y Fingerplay",
+    "en": "Focus and Fingerplay"
+   },
+   "duracionSegundos": 120,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Simular poñer uns pantalóns pesados, unha perna e logo a outra.",
+    "es": "Simular ponerse unos pantalones pesados, una pierna y luego la otra.",
+    "en": "Mime pulling on heavy trousers, one leg then the other."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": [],
+   "cueAcustica": "Put on Your Shoes"
+  },
+  {
+   "orden": 3,
+   "tipo": "core_tpr_challenge",
+   "titulo": {
+    "gl": "Núcleo TPR Temático",
+    "es": "Núcleo TPR Temático",
+    "en": "Thematic TPR Core"
+   },
+   "duracionSegundos": 210,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+    "es": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+    "en": "Three motor commands with this month's material. Never ask them to repeat."
+   },
+   "comandosL3": [
+    {
+     "id": "cmd.xaneiro.2_3.01",
+     "textoIngles": "Put on your coat!",
+     "accionFisica": {
+      "gl": "Deslizar os brazos por mangas imaxinarias e facer «Zzzip!».",
+      "es": "Deslizar los brazos por mangas imaginarias y hacer «Zzzip!».",
+      "en": "Slide the arms into imaginary sleeves and go «Zzzip!»."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    },
+    {
+     "id": "cmd.xaneiro.2_3.02",
+     "textoIngles": "Stomp your boots in the puddles!",
+     "accionFisica": {
+      "gl": "Tres pisotóns contundentes contra o chan.",
+      "es": "Tres pisotones contundentes contra el suelo.",
+      "en": "Three firm stomps on the floor."
+     },
+     "modeladoDocente": {
+      "gl": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+      "es": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+      "en": "The educator performs the gesture while saying the command, and waits without demanding a response."
+     }
+    }
+   ],
+   "repertorioMateriales": []
+  },
+  {
+   "orden": 4,
+   "tipo": "calma_transicion",
+   "titulo": {
+    "gl": "Calma e Despedida",
+    "es": "Calma y Despedida",
+    "en": "Calm and Farewell"
+   },
+   "duracionSegundos": 90,
+   "lamina": "gato",
+   "consignaDocente": {
+    "gl": "Sentarse e atar as botas imaxinarias en silencio.",
+    "es": "Sentarse y atar las botas imaginarias en silencio.",
+    "en": "Sit down and tie the imaginary boots in silence."
+   },
+   "comandosL3": [],
+   "repertorioMateriales": []
+  }
+ ],
+ "curriculo": {
+  "normativa": "Decreto 150/2022",
+  "etapa": "educacion_infantil",
+  "ciclo": "primeiro_ciclo_0_3",
+  "nivel": "2_3",
+  "areas": [
+   "area_1_crecemento_harmonia",
+   "area_3_comunicacion_representacion"
+  ],
+  "competenciasClave": [
+   "CCL",
+   "CP",
+   "CPSAA"
+  ],
+  "criteriosEvaluacion": []
+ },
+ "revision": {
+  "autor": "Claude Code",
+  "revisorPedagogico": "",
+  "fechaRevision": "",
+  "version": "1.0.0",
+  "aprobadoParaAula": false
+ }
+}

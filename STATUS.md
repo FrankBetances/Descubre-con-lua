@@ -9,6 +9,58 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## El aula rehecha desde los dos documentos curriculares · **sin mergear** (15/9/2026)
+
+Frank, muchas veces: «la UX del aula está mal», «quita el scroll», «estructurado
+por edad», «la docencia tiene que ser escalonada», «te di dos documentos y los
+has destrozado». Las cinco cosas eran ciertas y se pueden citar.
+
+**De dónde sale ahora la pedagogía.** De los dos documentos de Frank, leídos
+enteros en esta sesión:
+
+- *Diseño Curricular Infantil Trilingüe Galicia* (2.º ciclo, 3-6). Escalona por
+  nivel: 4.º acción expandida, 5.º dramatizado narrativo, 6.º transaccional.
+- *Planificación Inglés Escuelas Infantiles* (1.º ciclo, 0-3). Escalona por
+  tramo y trimestre: cada mes trae **dos dinámicas distintas**, una para 0-2 y
+  otra para 2-3, con su material, su canción y sus órdenes.
+
+**Lo que estaba incumplido, con la cita al lado.** Los dos documentos piden
+«una única tarjeta de flujo diario… **sin navegación por capas ni
+deslizamientos profundos (*no scroll*)**», modo oscuro y tipografía «no
+inferior a 24 puntos» legible a dos metros. El aula de 2.º ciclo volcaba las 30
+asambleas en una lista vertical bajo un encabezado que decía «SETEMBRO» con
+enero debajo; no tenía selector de clase ni de mes; el botón de empezar abría
+siempre septiembre de 4.º. El 1.º ciclo no seguía el documento en nada: 10
+unidades con cuento, vocabulario y matemáticas, y una asamblea de **seis**
+pasos, cuando el documento pide **cuatro** fases y dos tramos por mes.
+
+| Capa | Qué se hizo | Con qué se comprobó |
+| --- | --- | --- |
+| Contenido 1.º ciclo (nuevo) | **20 microcápsulas**: 10 meses × 2 tramos, con las órdenes en inglés, las canciones y los materiales **literales del documento**. Donde el documento no especifica algo, el campo va vacío | `tools/gen_asambleas_primeiro_ciclo.py`; 20 ficheros en `assets/content/asambleas_primeiro_ciclo/` |
+| Aula 1.º ciclo | Selector de grupo (0-2 / 2-3), tira de meses **de lado**, y UNA tarjeta con centro de interés, material, canción y 4 fases. Cero scroll vertical | App arrancada en escritorio Linux; captura **mirada** |
+| Aula 2.º ciclo | Selector de clase (4.º/5.º/6.º con su metodología TPR), misma tira de meses, misma tarjeta única | App arrancada; captura **mirada** |
+| Reproductor de asamblea (nuevo, uno para los dos ciclos) | Fondo oscuro, consigna a 26 pt, **una fase por pantalla**, se pasa de lado | App arrancada; captura **mirada** |
+| Formación previa (nueva) | Dos recorridos de 6 pasos —docente y familia— en JSON, enlazados **antes** del botón de entrar en cada modo | `flutter analyze` limpio; **no vista en la app todavía** |
+| Tests | Reescritos los que probaban el diseño viejo; añadido un gate que falla si aparece **cualquier desplazable vertical** en el aula | Suite completa |
+
+**Defectos propios encontrados y corregidos por el camino**: la tarjeta sin
+scroll desbordaba 200 px en 360×640, y otros 33 y 5 con la escala de texto 1,3.
+Ahora el bloque de fases se resume solo cuando no caben las cuatro filas, y la
+etiqueta del tramo se comprueba contra las líneas que la pastilla permite, no
+contra una sola.
+
+**Lo que NO se ha comprobado**: nada de esto se ha visto en un aparato Android.
+Solo en escritorio Linux con pantalla virtual.
+
+**Lo que falta del encargo**: Academy, Calendario, Premios, Créditos y
+Bienvenida siguen con desplazamiento vertical. Y las 20 microcápsulas nuevas
+**no tienen audio**: el corpus de voz no se ha regenerado para ellas.
+
+Las 10 unidades viejas del 1.º ciclo **no se han borrado**: siguen en
+`assets/content/unidades/`. Dejan de ser la puerta del aula, nada más.
+
+---
+
 ## El calendario, DENTRO de los tres modos · **en la rama `claude/analizar-rama-mejora-g5yh9z`** (15/9/2026)
 
 Frank, cuatro veces: «el calendario de aula no está». Tenía razón las cuatro.
