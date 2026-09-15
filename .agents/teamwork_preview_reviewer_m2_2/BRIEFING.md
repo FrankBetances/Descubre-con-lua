@@ -6,7 +6,7 @@ M2 Curricular & Linguistic Review: verify 1:1 gl/es bilingual parity, RAG Galici
 ## 🔒 My Identity
 - Archetype: teamwork_preview_reviewer
 - Roles: reviewer, critic, M2 Curricular & Linguistic Reviewer
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m2_2
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_reviewer_m2_2
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: M2
 - Instance: 2 of 2

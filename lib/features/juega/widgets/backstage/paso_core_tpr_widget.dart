@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../../core/localization/app_language.dart';
+import '../../../../core/audio/offline_audio_service.dart';
+import '../../../../core/audio/voice_id.dart';
+import '../../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../../core/brand/lamina_vector.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 
@@ -14,6 +18,10 @@ import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 class PasoCoreTprWidget extends StatelessWidget {
   final FaseAsamblea fase;
   final AppLanguage language;
+
+  /// Para el altavoz de la consigna y del inglés. Sin él la fase se lee
+  /// pero no se escucha, que es como nació este módulo.
+  final OfflineAudioService? audioService;
   final MetodologiaTPR metodologia;
   final Function(String audioAsset)? onPlayCommandAudio;
   final String? currentlyPlayingAsset;
@@ -23,6 +31,7 @@ class PasoCoreTprWidget extends StatelessWidget {
     super.key,
     required this.fase,
     required this.language,
+    this.audioService,
     required this.metodologia,
     this.onPlayCommandAudio,
     this.currentlyPlayingAsset,
@@ -35,12 +44,21 @@ class PasoCoreTprWidget extends StatelessWidget {
     final titulo = fase.titulo.resolve(language);
     final consigna = fase.consignaDocente.resolve(language);
     final isDramatizado = metodologia == MetodologiaTPR.dramatizadoNarrativo;
-    final isTransaccional = metodologia == MetodologiaTPR.transaccionalPragmatico;
+    final isTransaccional =
+        metodologia == MetodologiaTPR.transaccionalPragmatico;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         // Cabeceira da fase
+        // La lámina de la fase: la asamblea eran cuatro pantallas de prosa
+        // seguidas, sin una sola imagen.
+        if (fase.lamina.isNotEmpty) ...[
+          Center(
+            child: LaminaEscena(clave: fase.lamina, ancho: 128),
+          ),
+          const SizedBox(height: 16),
+        ],
         Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
@@ -62,9 +80,9 @@ class PasoCoreTprWidget extends StatelessWidget {
                       color: AppTheme.backstageAccent.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
-                    child: const Text(
-                      'FASE 3 · 270s',
-                      style: TextStyle(
+                    child: Text(
+                      'FASE ${fase.orden} · ${fase.duracionSegundos}s',
+                      style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 13,
                         fontWeight: FontWeight.w800,
@@ -175,8 +193,8 @@ class PasoCoreTprWidget extends StatelessWidget {
                     children: [
                       Text(
                         isGl
-                            ? 'Sinal de Inhibición: FREEZE! 🛑'
-                            : 'Señal de Inhibición: ¡FREEZE! 🛑',
+                            ? 'Sinal de Inhibición: FREEZE!'
+                            : 'Señal de Inhibición: ¡FREEZE!',
                         style: const TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 17,
@@ -233,8 +251,8 @@ class PasoCoreTprWidget extends StatelessWidget {
                     children: [
                       Text(
                         isGl
-                            ? 'Tarxetas Icónicas Cue Cards (Sen Texto) 🎴'
-                            : 'Tarjetas Icónicas Cue Cards (Sin Texto) 🎴',
+                            ? 'Tarxetas Icónicas Cue Cards (Sen Texto)'
+                            : 'Tarjetas Icónicas Cue Cards (Sin Texto)',
                         style: const TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 17,
@@ -283,15 +301,18 @@ class PasoCoreTprWidget extends StatelessWidget {
                     size: 22,
                   ),
                   const SizedBox(width: 8),
-                  Text(
-                    isGl ? 'Pauta Xeral para o Docente' : 'Pauta General para el Docente',
+                  Expanded(
+                      child: Text(
+                    isGl
+                        ? 'Pauta Xeral para o Docente'
+                        : 'Pauta General para el Docente',
                     style: const TextStyle(
                       fontFamily: AppTheme.fontFamily,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w700,
                       color: AppTheme.backstageAccent,
                     ),
-                  ),
+                  )),
                 ],
               ),
               const SizedBox(height: 12),
@@ -304,6 +325,15 @@ class PasoCoreTprWidget extends StatelessWidget {
                   color: AppTheme.backstageTextPrimary,
                   height: 1.4,
                 ),
+              ),
+              BotonEscuchar(
+                audioService: audioService,
+                texto: consigna,
+                language: language,
+                compacto: true,
+                descripcion: isGl
+                    ? 'a consigna do reto TPR'
+                    : 'la consigna del reto TPR',
               ),
             ],
           ),
@@ -319,7 +349,8 @@ class PasoCoreTprWidget extends StatelessWidget {
               size: 22,
             ),
             const SizedBox(width: 8),
-            Text(
+            Expanded(
+                child: Text(
               isGl ? 'Comandos de Acción en L3' : 'Comandos de Acción en L3',
               style: const TextStyle(
                 fontFamily: AppTheme.fontFamily,
@@ -327,7 +358,7 @@ class PasoCoreTprWidget extends StatelessWidget {
                 fontWeight: FontWeight.w800,
                 color: AppTheme.backstageTextPrimary,
               ),
-            ),
+            )),
             const Spacer(),
             Text(
               '${fase.comandosL3.length} ${isGl ? 'comandos' : 'comandos'}',
@@ -345,8 +376,8 @@ class PasoCoreTprWidget extends StatelessWidget {
         // Lista de Comandos TPR
         ...List.generate(fase.comandosL3.length, (index) {
           final cmd = fase.comandosL3[index];
-          final isPlayingThis = cmd.audioAsset != null &&
-              currentlyPlayingAsset == cmd.audioAsset;
+          final isPlayingThis =
+              cmd.audioAsset != null && currentlyPlayingAsset == cmd.audioAsset;
 
           return Container(
             margin: const EdgeInsets.only(bottom: 16),
@@ -375,7 +406,8 @@ class PasoCoreTprWidget extends StatelessWidget {
                       ),
                       decoration: BoxDecoration(
                         color: AppTheme.backstageAccent.withValues(alpha: 0.2),
-                        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                        borderRadius:
+                            BorderRadius.circular(AppTheme.radiusField),
                       ),
                       child: Text(
                         'COMANDO ${index + 1}',
@@ -484,6 +516,21 @@ class PasoCoreTprWidget extends StatelessWidget {
                     color: AppTheme.backstageTextPrimary,
                     height: 1.25,
                     letterSpacing: 0.2,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                // La orden en inglés, para oírla antes de darla. Es el motivo
+                // por el que esta app lleva voz neuronal inglesa.
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: BotonEscuchar(
+                    audioService: audioService,
+                    texto: cmd.textoIngles,
+                    language: AppLanguage.en,
+                    style: estiloIngles(cmd.textoIngles),
+                    compacto: true,
+                    descripcion:
+                        isGl ? 'a orde en inglés' : 'la orden en inglés',
                   ),
                 ),
                 const SizedBox(height: 16),

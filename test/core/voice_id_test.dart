@@ -4,9 +4,9 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('Voice asset identifiers', () {
-    test('FNV-1a matches the value the Valeria corpus already ships', () {
+    test('FNV-1a matches the value the inherited corpus already ships', () {
       // gl_child_fd51808f_8 is a real entry of voice-assets-manifest.gl.json in
-      // the Valeria repository. Pinning it here means the Dart, Python and
+      // the earlier project in the house. Pinning it here means the Dart, Python and
       // JavaScript ports cannot drift apart without a red test: if they did,
       // every recording would be looked up under a name that does not exist.
       expect(fnv1a32('Di: rúa.'), 'fd51808f');
@@ -73,7 +73,8 @@ void main() {
       expect(path, isNot(contains('://')));
     });
 
-    test('English voice identifiers and paths support LJSpeech offline assets', () {
+    test('English voice identifiers and paths support LJSpeech offline assets',
+        () {
       const word = 'Hello';
       final slowId = englishVoiceAssetId(VoiceStyle.slow, word);
       final tutorId = englishVoiceAssetId(VoiceStyle.tutor, word);
@@ -82,7 +83,8 @@ void main() {
       expect(slowId, startsWith('en_slow_'));
       expect(tutorId, startsWith('en_tutor_'));
       expect(path, equals('assets/voice/$slowId.m4a'));
-      expect(voiceAssetId(VoiceStyle.slow, word, AppLanguage.en), equals(slowId));
+      expect(
+          voiceAssetId(VoiceStyle.slow, word, AppLanguage.en), equals(slowId));
     });
   });
 }

@@ -54,3 +54,15 @@ compara el ancho pintado con el que el texto mide de verdad.
 | `academy-lector-{gl,es}.png` | El lector paginado de una cápsula |
 | `premios-{gl,es}.png` | Los premios de Lúa: nivel, racha e insignias |
 | `creditos-{gl,es}.png` | Créditos |
+| `asamblea-conto-{gl,es}.png` | Asamblea · fase 2: a lámina do conto, o texto e a pregunta |
+| `asamblea-seguridade-{gl,es}.png` | Asamblea · fase 4: o protocolo de seguridade que se le antes de sacar material |
+| `laminas-hoja.png` | Hoja de contacto de las láminas del **vocabulario** (cuadradas) |
+| `laminas-conto-hoja.png` | Hoja de contacto de las **escenas del cuento** (apaisadas) |
+
+Las dos hojas de contacto no son capturas de pantalla: son el set entero junto,
+que es como se juzga si comparten grosor, terminaciones y peso de color. Salen
+de `test/laminas_hoja_test.dart` y se rehacen con:
+
+```bash
+flutter test --tags capturas --update-goldens test/laminas_hoja_test.dart
+```

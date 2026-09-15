@@ -6,7 +6,7 @@ Implement Content-as-Data architecture, strongly-typed Dart models, JSON assets,
 ## 🔒 My Identity
 - Archetype: teamwork_preview_worker
 - Roles: implementer, qa, specialist
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m2/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m2/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: M2: Content-as-Data, JSON Assets & Validation Suite
 

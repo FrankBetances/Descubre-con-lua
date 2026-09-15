@@ -9,7 +9,7 @@ import os
 import re
 import sys
 
-PROJECT_ROOT = "/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa"
+PROJECT_ROOT = "<documentos locales>/Descubre con Lúa"
 
 stress_passed = 0
 stress_failed = 0

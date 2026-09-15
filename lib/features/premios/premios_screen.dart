@@ -5,15 +5,17 @@ import '../../core/brand/pixel_award.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
+import '../../data/models/calendario_model.dart';
+import 'medallas_widget.dart';
 import 'premios_model.dart';
 import 'premios_repository.dart';
 
-/// «Os premios de Lúa», con la estructura de la hoja de premios de Valeria+
+/// «Os premios de Lúa», con la estructura de la hoja de premios del proyecto anterior de la casa
 /// (`docs/screenshots/26-premios-insignias.png`): cabecera con la gata, nivel y
 /// barra de XP; tarjeta de racha y XP total; y la rejilla de insignias, las
 /// ganadas en color y las pendientes en gris.
 ///
-/// La diferencia con Valeria+ no es estética, es de fondo: allí estos premios
+/// La diferencia con el proyecto anterior de la casa no es estética, es de fondo: allí estos premios
 /// son del niño, que juega. Aquí el niño no toca la pantalla, así que hay dos
 /// recorridos de ADULTO —la maestra por asambleas dirigidas, la familia por
 /// cápsulas leídas— y un conmutador para pasar de uno a otro.
@@ -22,11 +24,16 @@ class PremiosScreen extends StatefulWidget {
   final AppLanguage currentLanguage;
   final Perfil perfilInicial;
 
+  /// Las tres cuentas del Calendario Escola·Fogar. Sin ellas no se pintan las
+  /// medallas: no se enseña una colección cuyo avance no se puede saber.
+  final ContadoresCalendario? contadores;
+
   const PremiosScreen({
     super.key,
     required this.repository,
     required this.currentLanguage,
     this.perfilInicial = Perfil.docente,
+    this.contadores,
   });
 
   static const titulo = LocalizedString(
@@ -40,6 +47,11 @@ class PremiosScreen extends StatefulWidget {
 
 class _PremiosScreenState extends State<PremiosScreen> {
   late Perfil _perfil = widget.perfilInicial;
+
+  static const _medallas = LocalizedString(
+    gl: 'Medallas do calendario',
+    es: 'Medallas del calendario',
+  );
 
   static const _docente = LocalizedString(gl: 'Mestra', es: 'Maestra');
   static const _familia = LocalizedString(gl: 'Familia', es: 'Familia');
@@ -98,89 +110,107 @@ class _PremiosScreenState extends State<PremiosScreen> {
 
     return Scaffold(
       appBar: AppBar(title: Text(PremiosScreen.titulo.resolve(lang))),
-      body: AnimatedBuilder(
-        animation: widget.repository,
-        builder: (context, _) {
-          final catalogo = widget.repository.catalogo;
-          if (catalogo == null) {
-            // Un spinner eterno dice «espera, ya viene» cuando en realidad no
-            // viene nada: si el catálogo no está, no va a estar. Se dice lo que
-            // pasa, y el resto de la app sigue funcionando igual sin premios.
-            return Center(
-              child: Padding(
-                padding: const EdgeInsets.all(AppTheme.spaceXl),
-                child: Text(
-                  _sinCatalogo.resolve(lang),
-                  textAlign: TextAlign.center,
-                  style: text.bodyMedium?.copyWith(color: AppTheme.textMuted),
-                ),
-              ),
-            );
-          }
-          final progreso = widget.repository.progresoDe(_perfil);
-          final insignias = catalogo.insigniasDe(_perfil);
-          final ganadas =
-              insignias.where((i) => progreso.insignias.contains(i.id)).length;
-
-          return ListView(
-            padding: const EdgeInsets.fromLTRB(
-              AppTheme.spaceLg,
-              AppTheme.spaceLg,
-              AppTheme.spaceLg,
-              AppTheme.spaceXxl,
-            ),
-            children: [
-              _SelectorPerfil(
-                perfil: _perfil,
-                docente: _docente.resolve(lang),
-                familia: _familia.resolve(lang),
-                onChanged: (p) => setState(() => _perfil = p),
-              ),
-              const SizedBox(height: AppTheme.spaceLg),
-              _Cabecera(
-                progreso: progreso,
-                catalogo: catalogo,
-                lang: lang,
-                paraSiguiente: _paraSiguiente.resolve(lang),
-                nivelMaximo: _nivelMaximo.resolve(lang),
-              ),
-              const SizedBox(height: AppTheme.spaceLg),
-              _Cifras(
-                racha: progreso.rachaActual,
-                rachaLabel: _racha.resolve(lang),
-                xp: progreso.xp(catalogo),
-                xpLabel: _xpTotal.resolve(lang),
-              ),
-              const SizedBox(height: AppTheme.spaceXl),
-              Text(
-                '${_insignias.resolve(lang)} · $ganadas / ${insignias.length}',
-                style: text.titleSmall,
-              ),
-              const SizedBox(height: AppTheme.spaceMd),
-              if (progreso.eventos == 0)
-                _Aviso(
-                  texto: _perfil == Perfil.docente
-                      ? _vacioDocente.resolve(lang)
-                      : _vacioFamilia.resolve(lang),
-                ),
-              ...insignias.map(
-                (i) => Padding(
-                  padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
-                  child: _TarjetaInsignia(
-                    insignia: i,
-                    ganada: progreso.insignias.contains(i.id),
-                    lang: lang,
+      // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
+      // ya no reserva la barra de gestos y el final de esta pantalla
+      // quedaba por debajo. `top: false` porque el inset de arriba ya lo
+      // consume el AppBar; volver a pedirlo aquí no suma nada.
+      body: SafeArea(
+        top: false,
+        child: AnimatedBuilder(
+          animation: widget.repository,
+          builder: (context, _) {
+            final catalogo = widget.repository.catalogo;
+            if (catalogo == null) {
+              // Un spinner eterno dice «espera, ya viene» cuando en realidad no
+              // viene nada: si el catálogo no está, no va a estar. Se dice lo que
+              // pasa, y el resto de la app sigue funcionando igual sin premios.
+              return Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(AppTheme.spaceXl),
+                  child: Text(
+                    _sinCatalogo.resolve(lang),
+                    textAlign: TextAlign.center,
+                    style: text.bodyMedium?.copyWith(color: AppTheme.textMuted),
                   ),
                 ),
+              );
+            }
+            final progreso = widget.repository.progresoDe(_perfil);
+            final insignias = catalogo.insigniasDe(_perfil);
+            final ganadas = insignias
+                .where((i) => progreso.insignias.contains(i.id))
+                .length;
+
+            return ListView(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceLg,
+                AppTheme.spaceLg,
+                AppTheme.spaceXxl,
               ),
-              const SizedBox(height: AppTheme.spaceMd),
-              Text(
-                _nota.resolve(lang),
-                style: text.bodySmall?.copyWith(color: AppTheme.textMuted),
-              ),
-            ],
-          );
-        },
+              children: [
+                _SelectorPerfil(
+                  perfil: _perfil,
+                  docente: _docente.resolve(lang),
+                  familia: _familia.resolve(lang),
+                  onChanged: (p) => setState(() => _perfil = p),
+                ),
+                const SizedBox(height: AppTheme.spaceLg),
+                _Cabecera(
+                  progreso: progreso,
+                  catalogo: catalogo,
+                  lang: lang,
+                  paraSiguiente: _paraSiguiente.resolve(lang),
+                  nivelMaximo: _nivelMaximo.resolve(lang),
+                ),
+                const SizedBox(height: AppTheme.spaceLg),
+                _Cifras(
+                  racha: progreso.rachaActual,
+                  rachaLabel: _racha.resolve(lang),
+                  xp: progreso.xp(catalogo),
+                  xpLabel: _xpTotal.resolve(lang),
+                ),
+                const SizedBox(height: AppTheme.spaceXl),
+                Text(
+                  '${_insignias.resolve(lang)} · $ganadas / ${insignias.length}',
+                  style: text.titleSmall,
+                ),
+                const SizedBox(height: AppTheme.spaceMd),
+                if (progreso.eventos == 0)
+                  _Aviso(
+                    texto: _perfil == Perfil.docente
+                        ? _vacioDocente.resolve(lang)
+                        : _vacioFamilia.resolve(lang),
+                  ),
+                ...insignias.map(
+                  (i) => Padding(
+                    padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
+                    child: _TarjetaInsignia(
+                      insignia: i,
+                      ganada: progreso.insignias.contains(i.id),
+                      lang: lang,
+                    ),
+                  ),
+                ),
+                if (widget.contadores != null &&
+                    catalogo.medallasDe(_perfil).isNotEmpty) ...[
+                  const SizedBox(height: AppTheme.spaceXl),
+                  MedallasCalendario(
+                    medallas: catalogo.medallasDe(_perfil),
+                    contadores: widget.contadores!,
+                    lang: lang,
+                    titulo: _medallas.resolve(lang),
+                  ),
+                ],
+                const SizedBox(height: AppTheme.spaceMd),
+                Text(
+                  _nota.resolve(lang),
+                  style: text.bodySmall?.copyWith(color: AppTheme.textMuted),
+                ),
+              ],
+            );
+          },
+        ),
       ),
     );
   }

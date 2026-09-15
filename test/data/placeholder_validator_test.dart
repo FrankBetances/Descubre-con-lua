@@ -84,31 +84,28 @@ void main() {
     });
 
     test('direct RegExp pattern assertions for placeholderPattern', () {
-      // Lowercase and Titlecase should NOT match
-      expect(ContentValidator.placeholderPattern.hasMatch('todo'), isFalse);
-      expect(ContentValidator.placeholderPattern.hasMatch('Todo'), isFalse);
-      expect(
-          ContentValidator.placeholderPattern.hasMatch('sobre todo'), isFalse);
-      expect(ContentValidator.placeholderPattern.hasMatch('todos'), isFalse);
-      expect(ContentValidator.placeholderPattern.hasMatch('método'), isFalse);
-      expect(ContentValidator.placeholderPattern.hasMatch('tbd'), isFalse);
-      expect(
-          ContentValidator.placeholderPattern.hasMatch('placeholder'), isFalse);
-      expect(
-          ContentValidator.placeholderPattern.hasMatch('pendiente'), isFalse);
-      expect(ContentValidator.placeholderPattern.hasMatch('pendente'), isFalse);
+      // Palabras corrientes en gl/es: NO son marcadores.
+      expect(ContentValidator.hasPlaceholder('todo'), isFalse);
+      expect(ContentValidator.hasPlaceholder('Todo'), isFalse);
+      expect(ContentValidator.hasPlaceholder('sobre todo'), isFalse);
+      expect(ContentValidator.hasPlaceholder('todos'), isFalse);
+      expect(ContentValidator.hasPlaceholder('método'), isFalse);
+      expect(ContentValidator.hasPlaceholder('tbd'), isTrue);
+      expect(ContentValidator.hasPlaceholder('placeholder'), isTrue);
+      expect(ContentValidator.hasPlaceholder('pendiente'), isFalse);
+      expect(ContentValidator.hasPlaceholder('pendente'), isFalse);
 
-      // Uppercase markers MUST match
-      expect(ContentValidator.placeholderPattern.hasMatch('TODO'), isTrue);
-      expect(ContentValidator.placeholderPattern.hasMatch('TODO: fix'), isTrue);
-      expect(ContentValidator.placeholderPattern.hasMatch('TBD'), isTrue);
-      expect(ContentValidator.placeholderPattern.hasMatch('TBD: check'), isTrue);
-      expect(
-          ContentValidator.placeholderPattern.hasMatch('PLACEHOLDER'), isTrue);
-      expect(ContentValidator.placeholderPattern.hasMatch('PENDIENTE'), isTrue);
-      expect(ContentValidator.placeholderPattern.hasMatch('PENDENTE'), isTrue);
-      expect(
-          ContentValidator.placeholderPattern.hasMatch('LOREM IPSUM'), isTrue);
+      // Marcadores de desarrollo: SÍ lo son.
+      // `placeholder`, `tbd` y `lorem ipsum` no son palabras del contenido,
+      // así que se rechazan también en minúscula (test/data/clinical_terms_blacklist_test.dart).
+      expect(ContentValidator.hasPlaceholder('TODO'), isTrue);
+      expect(ContentValidator.hasPlaceholder('TODO: fix'), isTrue);
+      expect(ContentValidator.hasPlaceholder('TBD'), isTrue);
+      expect(ContentValidator.hasPlaceholder('TBD: check'), isTrue);
+      expect(ContentValidator.hasPlaceholder('PLACEHOLDER'), isTrue);
+      expect(ContentValidator.hasPlaceholder('PENDIENTE'), isTrue);
+      expect(ContentValidator.hasPlaceholder('PENDENTE'), isTrue);
+      expect(ContentValidator.hasPlaceholder('LOREM IPSUM'), isTrue);
     });
   });
 }

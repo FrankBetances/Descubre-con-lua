@@ -1,0 +1,60 @@
+{
+  "vb": 100,
+  "nota": "Botas de agua, un par, amarillas y con suela. Amarillas porque es como se ven en un día de lluvia.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M14 18 L42 18 L42 62 C42 74 38 80 30 80 L14 80 C10 76 10 70 10 62 Z",
+      "f": "#ffdc00",
+      "s": "#d97706",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M58 18 L86 18 L90 62 C90 70 90 76 86 80 L70 80 C62 80 58 74 58 62 Z",
+      "f": "#ffdc00",
+      "s": "#d97706",
+      "sw": 4
+    },
+    {
+      "t": "rrect",
+      "x": 8,
+      "y": 78,
+      "w": 36,
+      "h": 12,
+      "r": 5,
+      "f": "#334155"
+    },
+    {
+      "t": "rrect",
+      "x": 56,
+      "y": 78,
+      "w": 36,
+      "h": 12,
+      "r": 5,
+      "f": "#334155"
+    },
+    {
+      "t": "ruta",
+      "d": "M12 30 L42 30 M58 30 L88 30",
+      "s": "#d97706",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 22,
+      "cy": 46,
+      "rx": 5,
+      "ry": 10,
+      "f": "#ffffff55"
+    },
+    {
+      "t": "elipse",
+      "cx": 68,
+      "cy": 46,
+      "rx": 5,
+      "ry": 10,
+      "f": "#ffffff55"
+    }
+  ]
+}

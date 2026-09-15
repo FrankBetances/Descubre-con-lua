@@ -1,50 +1,34 @@
-# DISPATCH — Forensic Auditor m1_1
+## 2026-09-11T08:40:07Z
+You are the Forensic Integrity Auditor for Milestone 1 in «Descubre con Lúa · Edición Vigo».
 
-## Identity
-- Type: teamwork_preview_auditor
-- Working Directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_auditor_m1_1
-- Parent Conversation ID: e7633361-cefb-4427-91ff-c3fbb93625fc
+Your identity:
+- Archetype: teamwork_preview_auditor
+- Role: Milestone 1 Forensic Auditor
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_auditor_m1_1/
+- Project root: <documentos locales>/Descubre con Lúa
 
-## Objective
-Perform independent forensic integrity audit of Milestone M1 implementation:
-1. MANDATORY: Read `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md` (specifically `## Follow-up — 2026-09-14T13:15:17Z`) and `.agents/teamwork_preview_orchestrator_3/PROJECT.md`.
-2. Audit the actual codebase modifications made by `worker_m1`:
-   - `lib/data/models/asamblea_segundo_ciclo_model.dart`
-   - `lib/data/loaders/content_asset_loader.dart`
-   - `lib/data/repositories/content_repository.dart`
-   - `lib/data/validators/content_validator.dart`
-   - `test/data/asamblea_segundo_ciclo_models_test.dart`
-   - `test/data/placeholder_validator_test.dart`
-3. Forensic checks:
-   - Check for hardcoded test outputs, mocks disguised as production code, dummy implementations, or bypassed validations.
-   - Check for network calls, external URLs, telemetry, or internet permissions (verify 100% offline).
-   - Check that all Decreto 150/2022 constants and 4 canonical phase durations are genuine.
-   - Check that no clinical or diagnostic blacklist terms were introduced in models or comments.
-4. Render your verdict: `CLEAN` or `INTEGRITY VIOLATION`.
-   Document full forensic evidence in `handoff.md` and notify parent orchestrator via `send_message`.
+Mandatory: Read ORIGINAL_REQUEST.md first:
+<documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md
 
-## 2026-09-14T13:37:13Z
+Read PROJECT.md for architecture and contracts:
+<documentos locales>/Descubre con Lúa/PROJECT.md
 
-You are the Forensic Auditor for Milestone M1 in «Descubre con Lúa · Edición Vigo».
-Your working directory is: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_auditor_m1_1
-Your dispatch instructions are at: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_auditor_m1_1/DISPATCH.md
+Read Worker M1 handoff:
+<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m1/handoff.md
 
-MANDATORY: Read /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md before doing any work (specifically the section '## Follow-up — 2026-09-14T13:15:17Z').
-Also read /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_orchestrator_3/PROJECT.md.
+Your mission:
+Perform a forensic integrity audit on all Milestone 1 deliverables:
+1. Check for integrity violations:
+   - Are there dummy/facade implementations or fake test runners?
+   - Are any test results hardcoded in production code?
+   - Are the Android files (`build.gradle`, `MainActivity.kt`, `AndroidManifest.xml`) genuine and functional?
+   - Are the Dart classes in `lib/core/` authentic implementations?
+   - Is `pubspec.yaml` genuinely configured without network dependencies?
+   - Are the tests in `test/privacy/` and `test/core/` real, executable tests?
+2. Execute static analysis, file inspection, and hash/content verification.
+3. Report your binary verdict: CLEAN or INTEGRITY VIOLATION. If an integrity violation is found, provide full forensic evidence.
 
-Perform a forensic integrity audit on worker_m1's changes:
-1. lib/data/models/asamblea_segundo_ciclo_model.dart
-2. lib/data/loaders/content_asset_loader.dart
-3. lib/data/repositories/content_repository.dart
-4. lib/data/validators/content_validator.dart
-5. test/data/asamblea_segundo_ciclo_models_test.dart
-6. test/data/placeholder_validator_test.dart
-
-Forensic checks:
-- Authenticity check: Verify all models and methods contain genuine business logic, not facades, mocks, or hardcoded return values.
-- Privacy & Network check: Verify zero internet calls, network packages, URLs, or telemetry.
-- Curricular integrity: Verify Decreto 150/2022 constants and 4 canonical phases (90s, 120s, 270s, 120s) are authentic.
-- Clinical blacklist: Verify zero appearance of forbidden medical/diagnostic terms.
-
-Render your verdict: CLEAN or INTEGRITY VIOLATION.
-Document full evidence in handoff.md and notify parent orchestrator via send_message.
+Output requirements:
+- Write `progress.md` with timestamps.
+- Write `handoff.md` with your verdict (CLEAN or INTEGRITY VIOLATION) and detailed forensic audit evidence.
+- Send a message to parent with your verdict and evidence summary.

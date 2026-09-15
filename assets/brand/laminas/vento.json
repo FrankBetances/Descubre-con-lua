@@ -1,0 +1,31 @@
+{
+  "vb": 100,
+  "nota": "Vento / Viento: tres rachas con el rizo del aire y una hoja volando, que es lo que hace visible el viento.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M8 32 L56 32 C66 32 70 24 66 18 C62 12 54 14 52 20",
+      "s": "#a5f3fc",
+      "sw": 8
+    },
+    {
+      "t": "ruta",
+      "d": "M14 52 L70 52 C82 52 86 42 80 36 C74 30 66 34 64 40",
+      "s": "#00c4be",
+      "sw": 8
+    },
+    {
+      "t": "ruta",
+      "d": "M10 72 L48 72 C58 72 62 80 58 86 C54 92 46 90 44 84",
+      "s": "#a5f3fc",
+      "sw": 8
+    },
+    {
+      "t": "ruta",
+      "d": "M78 62 C88 58 96 64 94 72 C92 80 82 82 78 76 C74 70 74 64 78 62 Z",
+      "f": "#ff851b",
+      "s": "#c2410c",
+      "sw": 3
+    }
+  ]
+}

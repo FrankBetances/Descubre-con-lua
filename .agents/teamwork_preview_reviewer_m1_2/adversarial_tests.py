@@ -1,297 +1,339 @@
 #!/usr/bin/env python3
 """
-Adversarial & Edge-Case Stress Testing Suite for Milestone M1 (Segundo Ciclo).
-Executed independently by Reviewer & Adversarial Critic (teamwork_preview_reviewer_m1_2).
-
-Covers:
-1. Integrity violation checks (hardcoded test results, facade logic, dummy stubs, fake tests).
-2. Directory isolation under assets/content/asambleas_segundo_ciclo/.
-3. Backward compatibility with existing 0-3 loaders, repos, models, and tests.
-4. Robustness of query methods by level/month, sorting, null handling, trimming.
-5. Initialization error resilience and headless test fallback.
-6. Edge case parsing and validator placeholder regex behavior.
+Adversarial & Edge-Case Stress Testing Suite for Milestone 1.
+Executed independently by Reviewer 2 (teamwork_preview_reviewer_m1_2).
 """
 
 import os
 import sys
 import re
-import json
+import xml.etree.ElementTree as ET
 
-PROJECT_ROOT = "/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa"
+PROJECT_ROOT = "<documentos locales>/Descubre con Lúa"
 
-def check(condition, message):
-    if not condition:
-        print(f"❌ FAIL: {message}")
-        sys.exit(1)
-    print(f"✅ PASS: {message}")
+def test_app_language_logic():
+    print("Testing AppLanguage logic...")
+    # Re-implement exact logic as defined in lib/core/localization/app_language.dart
+    def from_code(code):
+        if code is None:
+            return "gl"
+        normalized = code.strip().lower()
+        if normalized.startswith("es"):
+            return "es"
+        return "gl"
 
-def test_integrity_and_anti_cheat():
-    print("\n--- 1. Integrity & Anti-Cheat Checks ---")
-    # Inspect test files to ensure assertions are genuine and not trivial expect(true, isTrue)
-    models_test_path = os.path.join(PROJECT_ROOT, "test/data/asamblea_segundo_ciclo_models_test.dart")
-    check(os.path.exists(models_test_path), "asamblea_segundo_ciclo_models_test.dart exists")
-    with open(models_test_path, "r", encoding="utf-8") as f:
-        test_code = f.read()
+    def toggle(lang):
+        return "es" if lang == "gl" else "gl"
 
-    # Count real expectations
-    expect_count = len(re.findall(r"\bexpect\(", test_code))
-    check(expect_count >= 50, f"Comprehensive test assertions: found {expect_count} expect() calls (>= 50 expected)")
-    
-    # Check that tests are not just expect(true, true) or expect(1, 1)
-    fake_expects = re.findall(r"expect\(\s*(true|1|'a')\s*,\s*(equals\(true\)|isTrue|equals\(1\)|equals\('a'\))\s*\)", test_code)
-    check(len(fake_expects) == 0, f"Zero fake/dummy expectations found in models test (found {len(fake_expects)})")
+    # Edge cases
+    assert from_code(None) == "gl", "null should fallback to gl"
+    assert from_code("") == "gl", "empty string should fallback to gl"
+    assert from_code("   ") == "gl", "whitespace should fallback to gl"
+    assert from_code("es") == "es"
+    assert from_code("ES") == "es"
+    assert from_code("  es  ") == "es"
+    assert from_code("es-ES") == "es"
+    assert from_code("es_ES") == "es"
+    assert from_code("es-MX") == "es"
+    assert from_code("gl") == "gl"
+    assert from_code("GL") == "gl"
+    assert from_code("gl-ES") == "gl"
+    assert from_code("en") == "gl", "unsupported language should fallback to gl"
+    assert from_code("fr") == "gl"
+    assert from_code("pt") == "gl"
 
-    # Check for hardcoded test results embedded in source code
-    loader_path = os.path.join(PROJECT_ROOT, "lib/data/loaders/content_asset_loader.dart")
-    with open(loader_path, "r", encoding="utf-8") as f:
-        loader_code = f.read()
-    check("return AsambleaSegundoCiclo(" not in loader_code, "Loader does not return hardcoded dummy instances")
-    check("parseAsambleaSegundoCiclo(jsonString)" in loader_code, "Loader delegates parsing to real JSON deserialization")
+    assert toggle("gl") == "es"
+    assert toggle("es") == "gl"
+    assert toggle(toggle("gl")) == "gl"
+    print("✅ AppLanguage logic passed all edge cases.")
 
-    repo_path = os.path.join(PROJECT_ROOT, "lib/data/repositories/content_repository.dart")
-    with open(repo_path, "r", encoding="utf-8") as f:
-        repo_code = f.read()
-    check("_asambleasSegundoCicloById[asamblea.id] = asamblea" in repo_code, "Repository uses genuine Map caching")
-    check("_asambleasSegundoCicloById.values" in repo_code, "Repository queries dynamically evaluate cached map values")
+def test_localized_string_logic():
+    print("Testing LocalizedString logic...")
+    class LocalizedString:
+        def __init__(self, gl, es):
+            self.gl = gl
+            self.es = es
+        
+        @classmethod
+        def from_json(cls, json_data):
+            return cls(
+                gl=str(json_data.get("gl") or ""),
+                es=str(json_data.get("es") or "")
+            )
+        
+        def resolve(self, lang):
+            return self.gl if lang == "gl" else self.es
+        
+        def to_json(self):
+            return {"gl": self.gl, "es": self.es}
+        
+        @property
+        def has_parity(self):
+            return bool(self.gl and self.gl.strip()) and bool(self.es and self.es.strip())
+        
+        def copy_with(self, gl=None, es=None):
+            return LocalizedString(
+                gl=self.gl if gl is None else gl,
+                es=self.es if es is None else es
+            )
+        
+        def __eq__(self, other):
+            return isinstance(other, LocalizedString) and self.gl == other.gl and self.es == other.es
+        
+        def __hash__(self):
+            return hash((self.gl, self.es))
 
-    # Check that no network packages were introduced
-    check("package:http" not in loader_code and "package:http" not in repo_code, "Zero network packages imported")
-    print("✅ Anti-cheat and integrity audit passed with zero violations.")
+    s1 = LocalizedString("O mar", "El mar")
+    assert s1.resolve("gl") == "O mar"
+    assert s1.resolve("es") == "El mar"
+    assert s1.has_parity is True
 
-def test_directory_isolation():
-    print("\n--- 2. Directory Isolation Under assets/content/asambleas_segundo_ciclo/ ---")
-    loader_path = os.path.join(PROJECT_ROOT, "lib/data/loaders/content_asset_loader.dart")
-    with open(loader_path, "r", encoding="utf-8") as f:
-        loader_code = f.read()
+    # Parity edge cases
+    assert LocalizedString("", "El mar").has_parity is False
+    assert LocalizedString("O mar", "").has_parity is False
+    assert LocalizedString("   ", "El mar").has_parity is False
+    assert LocalizedString("O mar", "   ").has_parity is False
+    assert LocalizedString("   ", "   ").has_parity is False
+    assert LocalizedString("", "").has_parity is False
+    assert LocalizedString("\t\n", "El mar").has_parity is False
 
-    # Verify prefixes
-    expected_segundo_ciclo_prefix = "assets/content/asambleas_segundo_ciclo/"
-    expected_unidades_prefix = "assets/content/unidades/"
-    expected_capsulas_prefix = "assets/content/capsulas/"
+    # from_json edge cases
+    parsed = LocalizedString.from_json({"gl": "Peixe", "es": "Pez"})
+    assert parsed.gl == "Peixe" and parsed.es == "Pez"
+    assert parsed.has_parity is True
 
-    check(f"'{expected_segundo_ciclo_prefix}'" in loader_code, "Loader defines asambleasSegundoCicloAssetPrefix constant")
-    check(f"'{expected_unidades_prefix}'" in loader_code, "Loader defines unidadesAssetPrefix constant")
-    check(f"'{expected_capsulas_prefix}'" in loader_code, "Loader defines capsulasAssetPrefix constant")
+    empty_parsed = LocalizedString.from_json({})
+    assert empty_parsed.gl == "" and empty_parsed.es == ""
+    assert empty_parsed.has_parity is False
 
-    # Verify prefixes do not overlap or collide
-    prefixes = [expected_segundo_ciclo_prefix, expected_unidades_prefix, expected_capsulas_prefix]
-    for i in range(len(prefixes)):
-        for j in range(len(prefixes)):
-            if i != j:
-                check(not prefixes[i].startswith(prefixes[j]), f"Prefix '{prefixes[i]}' does not collide with '{prefixes[j]}'")
+    null_parsed = LocalizedString.from_json({"gl": None, "es": None})
+    assert null_parsed.gl == "" and null_parsed.es == ""
 
-    # Verify discovery in repository
-    repo_path = os.path.join(PROJECT_ROOT, "lib/data/repositories/content_repository.dart")
-    with open(repo_path, "r", encoding="utf-8") as f:
-        repo_code = f.read()
+    # copy_with
+    c1 = s1.copy_with(es="Nuevo")
+    assert c1.gl == "O mar" and c1.es == "Nuevo"
+    c2 = s1.copy_with()
+    assert c2 == s1
 
-    check("ContentAssetLoader.asambleasSegundoCicloAssetPrefix" in repo_code, "Repository _discover filters for asambleasSegundoCicloAssetPrefix")
-    print("✅ Directory isolation confirmed.")
+    # Equality & Hash
+    assert s1 == LocalizedString("O mar", "El mar")
+    assert hash(s1) == hash(LocalizedString("O mar", "El mar"))
+    assert s1 != LocalizedString("Outro", "Otro")
+    print("✅ LocalizedString logic passed all edge cases.")
 
-def test_backward_compatibility_0_to_3():
-    print("\n--- 3. Backward Compatibility with 0-3 Code & Tests ---")
-    repo_path = os.path.join(PROJECT_ROOT, "lib/data/repositories/content_repository.dart")
-    with open(repo_path, "r", encoding="utf-8") as f:
-        repo_code = f.read()
+def test_mock_audio_service_logic():
+    print("Testing MockOfflineAudioService logic simulation...")
+    class MockAudio:
+        def __init__(self):
+            self.is_playing = False
+            self.current_asset = None
+            self.call_log = []
+            self.is_disposed = False
+            self.stream_events = []
 
-    # Verify 0-3 methods are present and unchanged
-    methods_0_3 = [
-        "getAllUnidades",
-        "getUnidadById",
-        "getUnidadesByTramoEtario",
-        "getAllCapsulas",
-        "getCapsulaById",
-        "getCapsulasByBloqueId",
-        "getAllBloques",
-        "getAllBloquesAula",
-        "getCapsulasAulaByBloqueId",
-        "getBloqueById",
-        "addUnidad",
-        "addCapsula",
-        "clear",
+        def _check_disposed(self):
+            if self.is_disposed:
+                raise RuntimeError("Cannot use after dispose")
+
+        def play_asset(self, path):
+            self._check_disposed()
+            if not path or not path.strip():
+                raise ValueError("Asset path cannot be empty")
+            self.current_asset = path
+            self.is_playing = True
+            self.call_log.append(f"playAsset:{path}")
+            self.stream_events.append(True)
+
+        def pause(self):
+            self._check_disposed()
+            self.is_playing = False
+            self.call_log.append("pause")
+            self.stream_events.append(False)
+
+        def stop(self):
+            self._check_disposed()
+            self.is_playing = False
+            self.call_log.append("stop")
+            self.stream_events.append(False)
+
+        def reset(self):
+            self.is_playing = False
+            self.current_asset = None
+            self.call_log.clear()
+            if not self.is_disposed:
+                self.stream_events.append(False)
+
+        def dispose(self):
+            if not self.is_disposed:
+                self.is_disposed = True
+
+    svc = MockAudio()
+    assert svc.is_playing is False
+    assert svc.current_asset is None
+    assert len(svc.call_log) == 0
+
+    # Normal playback
+    svc.play_asset("assets/audio/mar_pulso_72bpm.wav")
+    assert svc.is_playing is True
+    assert svc.current_asset == "assets/audio/mar_pulso_72bpm.wav"
+    assert "playAsset:assets/audio/mar_pulso_72bpm.wav" in svc.call_log
+    assert svc.stream_events[-1] is True
+
+    # Pause
+    svc.pause()
+    assert svc.is_playing is False
+    assert "pause" in svc.call_log
+    assert svc.stream_events[-1] is False
+
+    # Stop
+    svc.stop()
+    assert svc.is_playing is False
+    assert "stop" in svc.call_log
+    assert svc.stream_events[-1] is False
+
+    # Empty asset error
+    try:
+        svc.play_asset("   ")
+        assert False, "Should have thrown on empty asset"
+    except ValueError:
+        pass
+
+    # Reset
+    svc.reset()
+    assert svc.is_playing is False
+    assert svc.current_asset is None
+    assert len(svc.call_log) == 0
+
+    # Dispose
+    svc.dispose()
+    assert svc.is_disposed is True
+    svc.dispose() # Idempotent
+
+    try:
+        svc.play_asset("test.wav")
+        assert False, "Should throw after dispose"
+    except RuntimeError:
+        pass
+
+    try:
+        svc.pause()
+        assert False, "Should throw after dispose"
+    except RuntimeError:
+        pass
+
+    try:
+        svc.stop()
+        assert False, "Should throw after dispose"
+    except RuntimeError:
+        pass
+    print("✅ MockOfflineAudioService passed all state machine tests.")
+
+def test_theme_specifications():
+    print("Testing AppTheme specifications...")
+    theme_file = os.path.join(PROJECT_ROOT, "lib/core/theme/app_theme.dart")
+    with open(theme_file, "r", encoding="utf-8") as f:
+        theme = f.read()
+
+    # Verify colors
+    assert "0xFF1B4965" in theme, "Missing Primary Vigo Blue (0xFF1B4965)"
+    assert "0xFF62B6CB" in theme, "Missing Secondary Sea Glass (0xFF62B6CB)"
+    assert "0xFFF4F1DE" in theme, "Missing Background Sand (0xFFF4F1DE)"
+    assert "0xFF1C2541" in theme, "Missing Text Slate (0xFF1C2541)"
+    assert "0xFFE07A5F" in theme, "Missing Accent Terracotta (0xFFE07A5F)"
+    assert "0xFF81B29A" in theme, "Missing Calm Sage (0xFF81B29A)"
+
+    # Verify typography scale
+    assert "fontSize: 18.0" in theme, "bodyLarge should be 18sp"
+    assert "fontSize: 16.0" in theme, "bodyMedium should be 16sp"
+    assert "useMaterial3: true" in theme, "Material 3 must be enabled"
+    print("✅ AppTheme tokens and typography specifications verified.")
+
+def test_adversarial_network_scan():
+    print("Running adversarial network scan across the entire project...")
+    network_signatures = [
+        r"package:http",
+        r"package:dio",
+        r"package:retrofit",
+        r"package:chopper",
+        r"package:web_socket_channel",
+        r"package:grpc",
+        r"package:firebase",
+        r"package:sentry",
+        r"package:datadog",
+        r"package:mixpanel",
+        r"package:amplitude",
+        r"HttpClient\b",
+        r"WebSocket\b",
+        r"Socket\.connect",
+        r"RawSocket",
+        r"InternetAddress",
+        r"http://",
+        r"https://",
+        r"ws://",
+        r"wss://",
     ]
-    for m in methods_0_3:
-        check(f"{m}(" in repo_code, f"0-3 method '{m}' preserved in ContentRepository")
 
-    # Verify headless test safety:
-    # In initialize(), if asambleaSegundoCicloPaths is null and discovered is empty (headless tests),
-    # effectiveAsambleaPaths must be empty, so no load errors are generated!
-    check("discovered?.asambleasSegundoCiclo ?? const []" in repo_code, "effectiveAsambleaPaths safely defaults to empty list in headless mode")
+    lib_dir = os.path.join(PROJECT_ROOT, "lib")
+    found_violations = []
 
-    # Verify existing base units fallbacks are preserved
-    check("ContentAssetLoader.baseUnidadMar01" in repo_code, "baseUnidadMar01 fallback preserved for 0-3 tests")
-    check("ContentAssetLoader.baseCapsulaHablar01" in repo_code, "baseCapsulaHablar01 fallback preserved for 0-3 tests")
-    print("✅ Backward compatibility verified.")
+    for root, _, files in os.walk(lib_dir):
+        for file in files:
+            if file.endswith(".dart"):
+                fpath = os.path.join(root, file)
+                with open(fpath, "r", encoding="utf-8") as f:
+                    lines = f.readlines()
+                for idx, line in enumerate(lines, 1):
+                    # Ignore schema urls in xml comments or flutter imports
+                    stripped = line.strip()
+                    for sig in network_signatures:
+                        if re.search(sig, line):
+                            # Allow if in comment explaining zero network
+                            if stripped.startswith("//") or stripped.startswith("///"):
+                                continue
+                            found_violations.append((fpath, idx, line.strip(), sig))
 
-def test_repository_query_methods_and_sorting():
-    print("\n--- 4. Repository Query Methods, Filtering, and Sorting Semantics ---")
-    # Simulate ContentRepository sorting and querying logic in Python to stress test edge cases
-    class MockAsamblea:
-        def __init__(self, id, mes, nivel_index, nivel_clave):
-            self.id = id
-            self.mes = mes
-            self.nivel_index = nivel_index
-            self.nivel_clave = nivel_clave
+    assert len(found_violations) == 0, f"Network violations found: {found_violations}"
+    print("✅ Zero network calls, sockets, or HTTP clients detected in lib/.")
 
-    assemblies = {
-        "asamblea.outubro.6": MockAsamblea("asamblea.outubro.6", 10, 2, "6_infantil"),
-        "asamblea.setembro.5": MockAsamblea("asamblea.setembro.5", 9, 1, "5_infantil"),
-        "asamblea.setembro.4": MockAsamblea("asamblea.setembro.4", 9, 0, "4_infantil"),
-        "asamblea.outubro.4": MockAsamblea("asamblea.outubro.4", 10, 0, "4_infantil"),
-        "asamblea.setembro.6": MockAsamblea("asamblea.setembro.6", 9, 2, "6_infantil"),
-    }
+def test_manifest_security():
+    print("Testing AndroidManifest security and permissions...")
+    manifest_path = os.path.join(PROJECT_ROOT, "android/app/src/main/AndroidManifest.xml")
+    tree = ET.parse(manifest_path)
+    root = tree.getroot()
 
-    # Test sorting logic: mes ascending, then nivel.index ascending
-    def sort_assemblies(items):
-        return sorted(items, key=lambda a: (a.mes, a.nivel_index))
+    tools_ns = "{http://schemas.android.com/tools}"
+    android_ns = "{http://schemas.android.com/apk/res/android}"
 
-    sorted_list = sort_assemblies(list(assemblies.values()))
-    expected_order = [
-        "asamblea.setembro.4", # mes 9, nivel 0
-        "asamblea.setembro.5", # mes 9, nivel 1
-        "asamblea.setembro.6", # mes 9, nivel 2
-        "asamblea.outubro.4",  # mes 10, nivel 0
-        "asamblea.outubro.6",  # mes 10, nivel 2
-    ]
-    actual_order = [a.id for a in sorted_list]
-    check(actual_order == expected_order, f"Sorting order matches: {actual_order}")
+    assert root.attrib.get("package") == "com.earlify.descubreconlua", "Package ID mismatch"
 
-    # Test filtering by nivel
-    def filter_by_nivel(items, nivel_clave):
-        filtered = [a for a in items if a.nivel_clave == nivel_clave]
-        return sorted(filtered, key=lambda a: a.mes)
+    permissions = root.findall("uses-permission")
+    assert len(permissions) >= 3, f"Expected at least 3 permission removals, found {len(permissions)}"
 
-    n4 = filter_by_nivel(list(assemblies.values()), "4_infantil")
-    check([a.id for a in n4] == ["asamblea.setembro.4", "asamblea.outubro.4"], "Filtered by 4_infantil sorted by mes")
+    removed_permissions = set()
+    for p in permissions:
+        name = p.attrib.get(f"{android_ns}name")
+        node_action = p.attrib.get(f"{tools_ns}node")
+        assert node_action == "remove", f"Permission {name} is NOT removed! tools:node='{node_action}'"
+        removed_permissions.add(name)
 
-    n5 = filter_by_nivel(list(assemblies.values()), "5_infantil")
-    check([a.id for a in n5] == ["asamblea.setembro.5"], "Filtered by 5_infantil sorted by mes")
-
-    # Test query by mes and nivel
-    def query_mes_nivel(items, mes, nivel_clave):
-        for a in items:
-            if a.mes == mes and a.nivel_clave == nivel_clave:
-                return a
-        return None
-
-    res = query_mes_nivel(list(assemblies.values()), 9, "5_infantil")
-    check(res is not None and res.id == "asamblea.setembro.5", "Lookup by mes=9 and 5_infantil succeeds")
-
-    res_none = query_mes_nivel(list(assemblies.values()), 11, "5_infantil")
-    check(res_none is None, "Lookup for unrepresented month returns None gracefully")
-
-    # Test whitespace trimming on ID lookups
-    def lookup_id(items_map, query_id):
-        return items_map.get(query_id.strip())
-
-    res_trimmed = lookup_id(assemblies, "  asamblea.setembro.4  \n")
-    check(res_trimmed is not None and res_trimmed.id == "asamblea.setembro.4", "ID lookup safely trims whitespace")
-
-    print("✅ Repository query, sorting, and edge cases verified.")
-
-def test_canonical_phase_durations_and_invariants():
-    print("\n--- 5. Canonical Phase Durations & Invariants ---")
-    phases = {
-        "aperturaSaudo": {"orden": 1, "seconds": 90, "decimal": 1.5},
-        "movementRhythmFocus": {"orden": 2, "seconds": 120, "decimal": 2.0},
-        "coreTprChallenge": {"orden": 3, "seconds": 270, "decimal": 4.5},
-        "calmaTransicion": {"orden": 4, "seconds": 120, "decimal": 2.0},
-    }
-
-    total_seconds = sum(p["seconds"] for p in phases.values())
-    check(total_seconds == 600, f"Total canonical duration is exactly 600 seconds (10 minutes), got {total_seconds}")
-
-    # Verify model file reflects these exact constants
-    model_path = os.path.join(PROJECT_ROOT, "lib/data/models/asamblea_segundo_ciclo_model.dart")
-    with open(model_path, "r", encoding="utf-8") as f:
-        model_code = f.read()
-
-    check("TipoFaseAsamblea.aperturaSaudo => 90" in model_code, "aperturaSaudo duration is 90s")
-    check("TipoFaseAsamblea.movementRhythmFocus => 120" in model_code, "movementRhythmFocus duration is 120s")
-    check("TipoFaseAsamblea.coreTprChallenge => 270" in model_code, "coreTprChallenge duration is 270s")
-    check("TipoFaseAsamblea.calmaTransicion => 120" in model_code, "calmaTransicion duration is 120s")
-    check("hasCanonicalPhases" in model_code, "hasCanonicalPhases getter implemented")
-
-    print("✅ Canonical phase durations and temporal invariants verified.")
-
-def test_placeholder_validator_regex():
-    print("\n--- 6. Validator Placeholder Regex Behavior ---")
-    # Test the exact RegExp from content_validator.dart:
-    # static final RegExp placeholderPattern = RegExp(
-    #   r'\b(TODO|TBD|PLACEHOLDER|PENDIENTE|PENDENTE|LOREM\s+IPSUM)\b',
-    #   caseSensitive: true,
-    # );
-    pattern = re.compile(r"\b(TODO|TBD|PLACEHOLDER|PENDIENTE|PENDENTE|LOREM\s+IPSUM)\b")
-
-    # False positive test cases that MUST NOT match
-    legit_phrases = [
-        "todo",
-        "Todo",
-        "todos",
-        "Todos",
-        "sobre todo",
-        "todo o alumnado",
-        "método",
-        "tbd",
-        "placeholder",
-        "pendiente",
-        "pendente",
-        "lorem ipsum",
-    ]
-    for phrase in legit_phrases:
-        match = pattern.search(phrase)
-        check(match is None, f"Legitimate phrase '{phrase}' is NOT matched by placeholderPattern")
-
-    # True positive test cases that MUST match
-    forbidden_tokens = [
-        "TODO",
-        "TODO: add voice asset",
-        "TBD",
-        "TBD: review",
-        "PLACEHOLDER",
-        "PENDIENTE",
-        "PENDENTE",
-        "LOREM IPSUM",
-        "Text with LOREM   IPSUM inside",
-    ]
-    for token in forbidden_tokens:
-        match = pattern.search(token)
-        check(match is not None, f"Forbidden developer marker '{token}' IS matched by placeholderPattern")
-
-    print("✅ PlaceholderPattern regex correctly discriminates case.")
-
-def test_initialization_error_handling():
-    print("\n--- 7. ContentRepository Initialization Error Resilience ---")
-    repo_path = os.path.join(PROJECT_ROOT, "lib/data/repositories/content_repository.dart")
-    with open(repo_path, "r", encoding="utf-8") as f:
-        repo_code = f.read()
-
-    check("class ContentLoadFailure" in repo_code, "ContentLoadFailure class exists")
-    check("final List<ContentLoadFailure> _loadErrors = [];" in repo_code, "Repository captures _loadErrors list")
-    check("List<ContentLoadFailure> get loadErrors" in repo_code, "Repository exposes loadErrors getter")
-    check("bool get hasLoadErrors => _loadErrors.isNotEmpty;" in repo_code, "Repository exposes hasLoadErrors getter")
-
-    # Check try/catch block for asambleas
-    check("for (final path in effectiveAsambleaPaths)" in repo_code, "Iterates through effectiveAsambleaPaths")
-    check("_loadErrors.add(ContentLoadFailure(path, e.toString()));" in repo_code, "Captures failed paths without throwing uncaught exceptions")
-
-    print("✅ Error resilience verified.")
+    assert "android.permission.INTERNET" in removed_permissions, "INTERNET permission must be explicitly removed"
+    assert "android.permission.ACCESS_NETWORK_STATE" in removed_permissions, "ACCESS_NETWORK_STATE must be explicitly removed"
+    assert "android.permission.ACCESS_WIFI_STATE" in removed_permissions, "ACCESS_WIFI_STATE must be explicitly removed"
+    print("✅ AndroidManifest strictly removes all network permissions.")
 
 def main():
-    print("==================================================================")
-    print("Milestone M1 Adversarial Stress Testing & Integrity Verification")
-    print("Loader & Repository Extensions for Segundo Ciclo (3-6 Anos)")
-    print("==================================================================")
-    test_integrity_and_anti_cheat()
-    test_directory_isolation()
-    test_backward_compatibility_0_to_3()
-    test_repository_query_methods_and_sorting()
-    test_canonical_phase_durations_and_invariants()
-    test_placeholder_validator_regex()
-    test_initialization_error_handling()
-    print("==================================================================")
-    print("🎉 ALL ADVERSARIAL STRESS TESTS AND INTEGRITY CHECKS PASSED")
-    print("==================================================================")
+    print("==========================================================")
+    print("Reviewer 2 Adversarial Stress Testing Suite — Milestone 1")
+    print("==========================================================")
+    test_app_language_logic()
+    test_localized_string_logic()
+    test_mock_audio_service_logic()
+    test_theme_specifications()
+    test_adversarial_network_scan()
+    test_manifest_security()
+    print("==========================================================")
+    print("🎉 ALL ADVERSARIAL CHALLENGES AND VERIFICATIONS PASSED")
+    print("==========================================================")
 
 if __name__ == "__main__":
     main()

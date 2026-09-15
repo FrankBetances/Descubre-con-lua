@@ -4,7 +4,6 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
-import 'package:descubre_con_lua/data/models/unidad_model.dart' show Revision;
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 
 void main() {
@@ -62,8 +61,10 @@ void main() {
 
       expect(MetodologiaTPR.transaccionalPragmatico.clave,
           equals('transaccional_pragmatico'));
-      expect(MetodologiaTPR.transaccionalPragmatico.usaSenalInhibicion, isFalse);
-      expect(MetodologiaTPR.transaccionalPragmatico.usaTarjetasIconicas, isTrue);
+      expect(
+          MetodologiaTPR.transaccionalPragmatico.usaSenalInhibicion, isFalse);
+      expect(
+          MetodologiaTPR.transaccionalPragmatico.usaTarjetasIconicas, isTrue);
       expect(MetodologiaTPR.transaccionalPragmatico.nivelCorrespondiente,
           equals(NivelEducativoSegundoCiclo.infantil6));
 
@@ -97,8 +98,8 @@ void main() {
           equals(4.5));
 
       expect(TipoFaseAsamblea.calmaTransicion.orden, equals(4));
-      expect(
-          TipoFaseAsamblea.calmaTransicion.duracionCanonicoSegundos, equals(120));
+      expect(TipoFaseAsamblea.calmaTransicion.duracionCanonicoSegundos,
+          equals(120));
       expect(
           TipoFaseAsamblea.calmaTransicion.duracionMinutosDecimal, equals(2.0));
 
@@ -182,19 +183,19 @@ void main() {
     });
 
     test('FaseAsamblea exposes formatted duration and canonical accessors', () {
-      final fase = FaseAsamblea(
+      const fase = FaseAsamblea(
         orden: 3,
         tipo: TipoFaseAsamblea.coreTprChallenge,
-        titulo: const LocalizedString(gl: 'Reto TPR', es: 'Reto TPR'),
+        titulo: LocalizedString(gl: 'Reto TPR', es: 'Reto TPR'),
         duracionSegundos: 270,
         consignaDocente:
-            const LocalizedString(gl: 'Consigna docente', es: 'Consigna docente'),
-        comandosL3: const [
+            LocalizedString(gl: 'Consigna docente', es: 'Consigna docente'),
+        comandosL3: [
           ComandoTPR(
             id: 'cmd1',
             textoIngles: 'Walk to the circle and sit down',
-            accionFisica:
-                LocalizedString(gl: 'Camiñar e sentar', es: 'Caminar y sentarse'),
+            accionFisica: LocalizedString(
+                gl: 'Camiñar e sentar', es: 'Caminar y sentarse'),
             modeladoDocente:
                 LocalizedString(gl: 'Fading a 2s', es: 'Fading a 2s'),
           )
@@ -287,7 +288,8 @@ void main() {
       final rutina = MicroRutinaHogarSegundoCiclo.fromJson(json);
       expect(rutina.nichoTiempoMinutos, inInclusiveRange(3, 5));
       expect(rutina.pautasRecast.length, equals(1));
-      expect(rutina.pautasRecast.first.expresionMenor.gl, equals('Abrigo chan!'));
+      expect(
+          rutina.pautasRecast.first.expresionMenor.gl, equals('Abrigo chan!'));
       expect(rutina.pautasRecast.first.consejoEvitar.es, contains('No digas'));
 
       final serialized = rutina.toJson();
@@ -296,7 +298,9 @@ void main() {
     });
   });
 
-  group('3. Deserialization and Serialization Round-Trip of 4.º, 5.º, and 6.º Models', () {
+  group(
+      '3. Deserialization and Serialization Round-Trip of 4.º, 5.º, and 6.º Models',
+      () {
     test(
         'Round-trip 4.º Infantil: Action-Expanded TPR with 2-clause commands and silent period',
         () {
@@ -330,7 +334,10 @@ void main() {
           {
             'orden': 2,
             'tipo': 'movement_rhythm_focus',
-            'titulo': {'gl': 'Foco Rítmico e Pulso', 'es': 'Foco Rítmico y Pulso'},
+            'titulo': {
+              'gl': 'Foco Rítmico e Pulso',
+              'es': 'Foco Rítmico y Pulso'
+            },
             'duracionSegundos': 120,
             'consignaDocente': {
               'gl': 'Palmas nas pernas a 72 BPM',
@@ -629,7 +636,10 @@ void main() {
                 'gl': 'Moi ben, a botella xa está dentro da mochila!',
                 'es': 'Muy bien, la botella ya está dentro de la mochila!'
               },
-              'consejoEvitar': {'gl': 'Non dicir "Así non"', 'es': 'No decir "Así no"'}
+              'consejoEvitar': {
+                'gl': 'Non dicir "Así non"',
+                'es': 'No decir "Así no"'
+              }
             }
           ],
           'escenaCotidiana': {'gl': 'Habitación', 'es': 'Habitación'},
@@ -666,7 +676,8 @@ void main() {
         'mes': 9,
         'titulo': {
           'gl': 'Setembro: Axudámonos cos abrigos e asemblea cooperativa',
-          'es': 'Septiembre: Nos ayudamos con los abrigos y asamblea cooperativa'
+          'es':
+              'Septiembre: Nos ayudamos con los abrigos y asamblea cooperativa'
         },
         'centroInteres': {
           'gl': 'Xogos transaccionais entre iguais con tarxetas icónicas',
@@ -789,9 +800,15 @@ void main() {
         'materialesEntorno': [],
         'microRutinaHogar': {
           'id': 'micro.6i.01',
-          'titulo': {'gl': 'A zapateira autónoma', 'es': 'El zapatero autónomo'},
+          'titulo': {
+            'gl': 'A zapateira autónoma',
+            'es': 'El zapatero autónomo'
+          },
           'nichoTiempoMinutos': 5,
-          'momentoDelDia': {'gl': 'Entrada na casa', 'es': 'Entrada en la casa'},
+          'momentoDelDia': {
+            'gl': 'Entrada na casa',
+            'es': 'Entrada en la casa'
+          },
           'objetivoAutonomia': {
             'gl': 'Colocar os zapatos no seu andel',
             'es': 'Colocar los zapatos en su estante'
@@ -973,7 +990,8 @@ void main() {
       expect(asambleaIncompleta.hasCanonicalPhases, isFalse);
     });
 
-    test('handles missing or blank optional fields defensively without throwing',
+    test(
+        'handles missing or blank optional fields defensively without throwing',
         () {
       final jsonDefensivo = {
         'id': 'test.defensivo',
@@ -1009,7 +1027,9 @@ void main() {
     });
   });
 
-  group('5. ContentAssetLoader and ContentRepository Extensions for Segundo Ciclo', () {
+  group(
+      '5. ContentAssetLoader and ContentRepository Extensions for Segundo Ciclo',
+      () {
     test(
         'ContentAssetLoader parses valid AsambleaSegundoCiclo JSON and throws on malformed JSON',
         () {
@@ -1125,13 +1145,13 @@ void main() {
       final byIdMissing = await repo.getAsambleaSegundoCicloById('missing');
       expect(byIdMissing, isNull);
 
-      final byNivel4 = await repo
-          .getAsambleasByNivel(NivelEducativoSegundoCiclo.infantil4);
+      final byNivel4 =
+          await repo.getAsambleasByNivel(NivelEducativoSegundoCiclo.infantil4);
       expect(byNivel4.length, equals(1));
       expect(byNivel4.first, equals(a4));
 
-      final byNivel6 = await repo
-          .getAsambleasByNivel(NivelEducativoSegundoCiclo.infantil6);
+      final byNivel6 =
+          await repo.getAsambleasByNivel(NivelEducativoSegundoCiclo.infantil6);
       expect(byNivel6, isEmpty);
 
       final byMesNivel = await repo.getAsambleaByMesYNivel(
@@ -1145,8 +1165,7 @@ void main() {
       // Sync queries
       expect(repo.getAllAsambleasSegundoCicloSync().length, equals(2));
       expect(
-          repo.getAsambleaSegundoCicloByIdSync(
-              'asamblea.setembro.5_infantil'),
+          repo.getAsambleaSegundoCicloByIdSync('asamblea.setembro.5_infantil'),
           equals(a5));
       expect(
           repo

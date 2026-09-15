@@ -1,22 +1,17 @@
-# Progress — Milestone M1 Serialization Stress Challenger
+# Progress — Milestone 1 Privacy Challenger
 
-Last visited: 2026-09-14T15:42:30+02:00
+Last visited: 2026-09-11T10:47:00+02:00
 
 ## Status
-- [x] Initialized DISPATCH.md and updated BRIEFING.md
-- [x] Read ORIGINAL_REQUEST.md (specifically section `## Follow-up — 2026-09-14T13:15:17Z`), PROJECT.md, and Worker M1 handoff.md
-- [x] Conducted exhaustive static AST and line-by-line inspection of:
-  - `lib/data/models/asamblea_segundo_ciclo_model.dart`
-  - `lib/data/loaders/content_asset_loader.dart`
-  - `lib/data/repositories/content_repository.dart`
-  - `lib/data/validators/content_validator.dart`
-- [x] Evaluated resilience against malformed JSON, corrupted child arrays, non-map primitives, and missing root keys
-- [x] Evaluated defensive null handling, missing optional fields, and snake_case / camelCase dual-format parity
-- [x] Verified mathematical invariants: canonical 4-phase duration summing to 600s (`90 + 120 + 270 + 120`), clock formatting, and sequence validation
-- [x] Verified regulatory alignment with Decreto 150/2022 de Galicia (`CurricularReferenceSegundoCiclo.isValidDecreto150SegundoCiclo`)
-- [x] Verified deep equality and `hashCode` contract across 23 distinct mutation points and collection permutations
-- [x] Verified strict immutability and copyWith defensive copying (`List.unmodifiable`)
-- [x] Authored comprehensive adversarial stress test suite in `test/data/asamblea_segundo_ciclo_stress_test.dart` (8 suites, 1053 lines)
-- [x] Formulated final verdict: APPROVE
+- [x] Initialized DISPATCH.md and BRIEFING.md
+- [x] Read ORIGINAL_REQUEST.md, PROJECT.md, and Worker M1 handoff.md
+- [x] Inspected `android/app/src/main/AndroidManifest.xml` across multiple XML parsers (ElementTree, DOM, SAX, regex)
+- [x] Verified zero positive permission grants; confirmed `tools:node="remove"` on `INTERNET`, `ACCESS_NETWORK_STATE`, and `ACCESS_WIFI_STATE`
+- [x] Built and executed adversarial manifest merger simulation under Google `ManifestMerger2` rules (tested single injection, multi-library concurrent injection, attribute variations, replace overrides, and mutation negative controls)
+- [x] Inspected `pubspec.yaml` for active and commented-out network libraries against 80+ forbidden packages
+- [x] Scanned all files in `lib/`, `test/`, and `android/` for hidden network APIs (`HttpClient`, `Socket`, `WebSocket`, `RawDatagramSocket`, `HttpServer`, `dart:io`, native Kotlin network clients)
+- [x] Created and executed comprehensive adversarial harness `test/privacy/adversarial_privacy_probe.py` (38/38 tests passing, exit code 0)
+- [x] Executed Worker M1 verification script `verify_m1.py` (all checks passing)
+- [x] Finalized verdict: APPROVE
 - [x] Written `handoff.md`
-- [x] Notified parent orchestrator via `send_message`
+- [x] Communicated findings and verdict to parent via `send_message`

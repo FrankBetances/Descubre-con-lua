@@ -47,17 +47,32 @@ enum NivelEducativoSegundoCiclo {
         NivelEducativoSegundoCiclo.infantil4 => const LocalizedString(
             gl: '4.º de Infantil (3-4 anos)',
             es: '4.º de Infantil (3-4 años)',
-            en: '4th Preschool (3-4 years)',
           ),
         NivelEducativoSegundoCiclo.infantil5 => const LocalizedString(
             gl: '5.º de Infantil (4-5 anos)',
             es: '5.º de Infantil (4-5 años)',
-            en: '5th Preschool (4-5 years)',
           ),
         NivelEducativoSegundoCiclo.infantil6 => const LocalizedString(
             gl: '6.º de Infantil (5-6 anos)',
             es: '6.º de Infantil (5-6 años)',
-            en: '6th Preschool (5-6 years)',
+          ),
+      };
+
+  /// Etiqueta breve para el conmutador de nivel. La larga no cabe en la
+  /// pastilla, y el conmutador la tenía escrita SOLO en galego: en castellano
+  /// enseñaba «anos».
+  LocalizedString get etiquetaCorta => switch (this) {
+        NivelEducativoSegundoCiclo.infantil4 => const LocalizedString(
+            gl: '4.º (3-4 anos)',
+            es: '4.º (3-4 años)',
+          ),
+        NivelEducativoSegundoCiclo.infantil5 => const LocalizedString(
+            gl: '5.º (4-5 anos)',
+            es: '5.º (4-5 años)',
+          ),
+        NivelEducativoSegundoCiclo.infantil6 => const LocalizedString(
+            gl: '6.º (5-6 anos)',
+            es: '6.º (5-6 años)',
           ),
       };
 
@@ -74,11 +89,20 @@ enum NivelEducativoSegundoCiclo {
   static NivelEducativoSegundoCiclo desdeClave(String? valor) {
     final v = valor?.trim().toLowerCase();
     return switch (v) {
-      '4_infantil' || '4' || 'infantil4' || '3-4' =>
+      '4_infantil' ||
+      '4' ||
+      'infantil4' ||
+      '3-4' =>
         NivelEducativoSegundoCiclo.infantil4,
-      '5_infantil' || '5' || 'infantil5' || '4-5' =>
+      '5_infantil' ||
+      '5' ||
+      'infantil5' ||
+      '4-5' =>
         NivelEducativoSegundoCiclo.infantil5,
-      '6_infantil' || '6' || 'infantil6' || '5-6' =>
+      '6_infantil' ||
+      '6' ||
+      'infantil6' ||
+      '5-6' =>
         NivelEducativoSegundoCiclo.infantil6,
       _ => NivelEducativoSegundoCiclo.infantil4,
     };
@@ -96,8 +120,7 @@ enum MetodologiaTPR {
   accionExpandida,
 
   /// 5.º de Infantil (4-5 anos): Micro-narrativas de causa e efecto físico,
-  /// xogos de inhibición selectiva ante claves acústicas (Stop-signal / Freeze!),
-  /// e praxias orofaciais vinculadas a rimas dactilares.
+  /// e xogos de inhibición selectiva ante claves acústicas (Freeze!).
   dramatizadoNarrativo,
 
   /// 6.º de Infantil (5-6 anos): Dinámica transaccional e cooperativa entre
@@ -117,17 +140,30 @@ enum MetodologiaTPR {
         MetodologiaTPR.accionExpandida => const LocalizedString(
             gl: 'TPR de Acción Expandida e Modelado',
             es: 'TPR de Acción Expandida y Modelado',
-            en: 'Action-Expanded TPR & Modeling',
           ),
         MetodologiaTPR.dramatizadoNarrativo => const LocalizedString(
             gl: 'TPR Dramatizado e Narrativo con Inhibición',
             es: 'TPR Dramatizado y Narrativo con Inhibición',
-            en: 'Dramatized & Narrative TPR with Inhibition',
           ),
         MetodologiaTPR.transaccionalPragmatico => const LocalizedString(
             gl: 'TPR Transaccional e Xogos entre Iguais',
             es: 'TPR Transaccional y Juegos entre Iguales',
-            en: 'Transactional & Peer-to-Peer TPR',
+          ),
+      };
+
+  /// Nombre breve para la pastilla del conmutador.
+  LocalizedString get nombreCorto => switch (this) {
+        MetodologiaTPR.accionExpandida => const LocalizedString(
+            gl: 'Acción Expandida',
+            es: 'Acción Expandida',
+          ),
+        MetodologiaTPR.dramatizadoNarrativo => const LocalizedString(
+            gl: 'Dramatizado / Freeze',
+            es: 'Dramatizado / Freeze',
+          ),
+        MetodologiaTPR.transaccionalPragmatico => const LocalizedString(
+            gl: 'Entre iguais / P2P',
+            es: 'Entre iguales / P2P',
           ),
       };
 
@@ -141,7 +177,8 @@ enum MetodologiaTPR {
       };
 
   /// Indica se a metodoloxía esixe tarxetas icónicas sen texto.
-  bool get usaTarjetasIconicas => this == MetodologiaTPR.transaccionalPragmatico;
+  bool get usaTarjetasIconicas =>
+      this == MetodologiaTPR.transaccionalPragmatico;
 
   /// Indica se a metodoloxía inclúe sinais acústicos de parada inmediata (Freeze).
   bool get usaSenalInhibicion => this == MetodologiaTPR.dramatizadoNarrativo;
@@ -150,9 +187,7 @@ enum MetodologiaTPR {
   static MetodologiaTPR desdeClave(String? valor) {
     final v = valor?.trim().toLowerCase();
     return switch (v) {
-      'accion_expandida' ||
-      'accionexpandida' =>
-        MetodologiaTPR.accionExpandida,
+      'accion_expandida' || 'accionexpandida' => MetodologiaTPR.accionExpandida,
       'dramatizado_narrativo' ||
       'dramatizadonarrativo' =>
         MetodologiaTPR.dramatizadoNarrativo,
@@ -219,22 +254,18 @@ enum TipoFaseAsamblea {
         TipoFaseAsamblea.aperturaSaudo => const LocalizedString(
             gl: 'Apertura e Saúdo',
             es: 'Apertura y Saludo',
-            en: 'Opening & Greeting',
           ),
         TipoFaseAsamblea.movementRhythmFocus => const LocalizedString(
             gl: 'Foco Rítmico e Movemento',
             es: 'Foco Rítmico y Movimiento',
-            en: 'Movement & Rhythmic Focus',
           ),
         TipoFaseAsamblea.coreTprChallenge => const LocalizedString(
             gl: 'Reto Núcleo TPR en L3',
             es: 'Reto Núcleo TPR en L3',
-            en: 'Core TPR Challenge',
           ),
         TipoFaseAsamblea.calmaTransicion => const LocalizedString(
             gl: 'Calma e Transición',
             es: 'Calma y Transición',
-            en: 'Calm & Transition Out',
           ),
       };
 
@@ -242,7 +273,9 @@ enum TipoFaseAsamblea {
   static TipoFaseAsamblea desdeClave(String? valor) {
     final v = valor?.trim().toLowerCase();
     return switch (v) {
-      'apertura_saudo' || 'aperturasaudo' || 'opening' =>
+      'apertura_saudo' ||
+      'aperturasaudo' ||
+      'opening' =>
         TipoFaseAsamblea.aperturaSaudo,
       'movement_rhythm_focus' ||
       'movementrhythmfocus' ||
@@ -252,7 +285,9 @@ enum TipoFaseAsamblea {
       'coretprchallenge' ||
       'tpr' =>
         TipoFaseAsamblea.coreTprChallenge,
-      'calma_transicion' || 'calmatransicion' || 'calm' =>
+      'calma_transicion' ||
+      'calmatransicion' ||
+      'calm' =>
         TipoFaseAsamblea.calmaTransicion,
       _ => TipoFaseAsamblea.aperturaSaudo,
     };
@@ -480,6 +515,12 @@ class FaseAsamblea {
   final List<ComandoTPR> comandosL3;
 
   /// Indicación de clave acústica (ex: "Freeze!", son de campá, pulso 72 BPM).
+  /// La lámina de la fase: el mismo formato vectorial que pinta el cuento y el
+  /// vocabulario del primer ciclo. La asamblea de 2.º ciclo nació sin ninguna
+  /// imagen —cuatro pantallas de prosa seguidas— y Frank preguntó dónde
+  /// estaban los gráficos. Vacío: no se pinta nada, no hay hueco.
+  final String lamina;
+
   final String? cueAcustica;
 
   /// Pista de son offline para ambientación ou fade suave.
@@ -495,6 +536,7 @@ class FaseAsamblea {
     required this.duracionSegundos,
     required this.consignaDocente,
     this.comandosL3 = const [],
+    this.lamina = '',
     this.cueAcustica,
     this.audioAsset,
     this.repertorioMateriales = const [],
@@ -521,9 +563,8 @@ class FaseAsamblea {
       duracionSegundos == tipo.duracionCanonicoSegundos;
 
   factory FaseAsamblea.fromJson(Map<String, dynamic> json) {
-    final rawComandos = json['comandosL3'] ??
-        json['comandos_l3'] ??
-        json['comandos'];
+    final rawComandos =
+        json['comandosL3'] ?? json['comandos_l3'] ?? json['comandos'];
     final List<ComandoTPR> cmds = [];
     if (rawComandos is List) {
       for (final c in rawComandos) {
@@ -557,16 +598,17 @@ class FaseAsamblea {
       titulo: LocalizedString.fromJson(
         json['titulo'] as Map<String, dynamic>? ?? {},
       ),
-      duracionSegundos: (json['duracionSegundos'] ??
-                  json['duracion_segundos'] as num?)
-              ?.toInt() ??
-          tipo.duracionCanonicoSegundos,
+      duracionSegundos:
+          (json['duracionSegundos'] ?? json['duracion_segundos'] as num?)
+                  ?.toInt() ??
+              tipo.duracionCanonicoSegundos,
       consignaDocente: LocalizedString.fromJson(
         (json['consignaDocente'] ?? json['consigna_docente'])
                 as Map<String, dynamic>? ??
             {},
       ),
       comandosL3: List.unmodifiable(cmds),
+      lamina: json['lamina']?.toString().trim() ?? '',
       cueAcustica: json['cueAcustica']?.toString().trim() ??
           json['cue_acustica']?.toString().trim(),
       audioAsset: json['audioAsset']?.toString().trim() ??
@@ -582,6 +624,7 @@ class FaseAsamblea {
         'duracionSegundos': duracionSegundos,
         'consignaDocente': consignaDocente.toJson(),
         'comandosL3': comandosL3.map((c) => c.toJson()).toList(),
+        if (lamina.isNotEmpty) 'lamina': lamina,
         if (cueAcustica != null) 'cueAcustica': cueAcustica,
         if (audioAsset != null) 'audioAsset': audioAsset,
         'repertorioMateriales':
@@ -605,9 +648,8 @@ class FaseAsamblea {
       titulo: titulo ?? this.titulo,
       duracionSegundos: duracionSegundos ?? this.duracionSegundos,
       consignaDocente: consignaDocente ?? this.consignaDocente,
-      comandosL3: comandosL3 != null
-          ? List.unmodifiable(comandosL3)
-          : this.comandosL3,
+      comandosL3:
+          comandosL3 != null ? List.unmodifiable(comandosL3) : this.comandosL3,
       cueAcustica: cueAcustica ?? this.cueAcustica,
       audioAsset: audioAsset ?? this.audioAsset,
       repertorioMateriales: repertorioMateriales != null
@@ -802,8 +844,7 @@ class CurricularReferenceSegundoCiclo {
       criteriosEvaluacion.contains(criterioCode);
 
   /// Comproba se se referencia unha competencia clave específica.
-  bool hasCompetencia(String compCode) =>
-      competenciasClave.contains(compCode);
+  bool hasCompetencia(String compCode) => competenciasClave.contains(compCode);
 
   CurricularReferenceSegundoCiclo copyWith({
     String? normativa,
@@ -992,10 +1033,10 @@ class MicroRutinaHogarSegundoCiclo {
       titulo: LocalizedString.fromJson(
         json['titulo'] as Map<String, dynamic>? ?? {},
       ),
-      nichoTiempoMinutos: (json['nichoTiempoMinutos'] ??
-                  json['nicho_tiempo_minutos'] as num?)
-              ?.toInt() ??
-          3,
+      nichoTiempoMinutos:
+          (json['nichoTiempoMinutos'] ?? json['nicho_tiempo_minutos'] as num?)
+                  ?.toInt() ??
+              3,
       momentoDelDia: LocalizedString.fromJson(
         (json['momentoDelDia'] ?? json['momento_del_dia'])
                 as Map<String, dynamic>? ??
@@ -1012,8 +1053,9 @@ class MicroRutinaHogarSegundoCiclo {
                 as Map<String, dynamic>? ??
             {},
       ),
-      enlaceCapsulaAcademyId: json['enlaceCapsulaAcademyId']?.toString().trim() ??
-          json['enlace_capsula_academy_id']?.toString().trim(),
+      enlaceCapsulaAcademyId:
+          json['enlaceCapsulaAcademyId']?.toString().trim() ??
+              json['enlace_capsula_academy_id']?.toString().trim(),
     );
   }
 
@@ -1214,9 +1256,9 @@ class AsambleaSegundoCiclo {
       }
     }
 
-    final curriculoData = (json['curriculo'] ?? json['curricular'])
-            as Map<String, dynamic>? ??
-        {};
+    final curriculoData =
+        (json['curriculo'] ?? json['curricular']) as Map<String, dynamic>? ??
+            {};
     final microData = (json['microRutinaHogar'] ?? json['micro_rutina_hogar'])
             as Map<String, dynamic>? ??
         {};
@@ -1262,8 +1304,7 @@ class AsambleaSegundoCiclo {
         'duracionTotalMinutos': duracionTotalMinutos,
         'fases': fases.map((f) => f.toJson()).toList(),
         'curriculo': curriculo.toJson(),
-        'materialesEntorno':
-            materialesEntorno.map((m) => m.toJson()).toList(),
+        'materialesEntorno': materialesEntorno.map((m) => m.toJson()).toList(),
         'microRutinaHogar': microRutinaHogar.toJson(),
         'revision': revision.toJson(),
       };

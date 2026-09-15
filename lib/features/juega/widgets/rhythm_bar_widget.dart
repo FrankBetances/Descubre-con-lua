@@ -4,11 +4,11 @@ import '../../../core/theme/app_theme.dart';
 
 /// Visual metronome for the pulse step.
 ///
-/// Ported from Valeria's LuaRhythmBar, and for the reason written there: the
-/// pulse has to be SEEN, not only heard. Half the children this kind of work is
-/// aimed at wear a hearing aid or an implant, and an audible metronome competes
-/// with the very voice they are meant to follow. Drawing the pulse leaves the
-/// auditory channel whole for the words.
+/// Ported from the rhythm bar of the earlier project in the house, and for the
+/// reason written there: the pulse has to be SEEN, not only heard. Half the
+/// children this kind of work is aimed at wear a hearing aid or an implant, and
+/// an audible metronome competes with the very voice they are meant to follow.
+/// Drawing the pulse leaves the auditory channel whole for the words.
 ///
 /// Drawn, not emoji: circles on a single stroke width, like the rest of the
 /// set. The strong beat is larger and filled, the weak ones are rings, and the
@@ -90,7 +90,7 @@ class _BeatPainter extends CustomPainter {
     required this.colour,
   });
 
-  /// One stroke width for the whole set, as in the Valeria sprite sheet.
+  /// One stroke width for the whole set, as in the sprite sheet of the earlier project in the house.
   static const double _stroke = 2.4;
 
   @override

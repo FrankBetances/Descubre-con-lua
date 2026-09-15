@@ -5,7 +5,7 @@
   python3 tools/generate_voice_assets.py --lang es
   python3 tools/generate_voice_assets.py --lang en
 
-Voices, same decision as Valeria+:
+Voices:
   · gl -> «Celtia» do Proxecto Nós (VITS de grafemas, motor coqui-tts). The
     checkpoint files are discovered through the Hugging Face API so this
     pipeline does not depend on the repository's internal file names. The model
@@ -13,8 +13,8 @@ Voices, same decision as Valeria+:
     token and expose it as HF_TOKEN, or the download returns 401.
   · es -> «Sharvard» (rhasspy/piper-voices), the open female VITS that pairs
     with Celtia in Spanish.
-  · en -> «LJSpeech» (rhasspy/piper-voices), the open female VITS used in Valeria+
-    for English (en_US-ljspeech-medium).
+  · en -> «LJSpeech» (rhasspy/piper-voices), the open female VITS for English
+    (en_US-ljspeech-medium).
 
 Mastering: peak at -3 dBFS, mono, AAC at 40 kbit/s. Style is baked into the
 VITS length_scale rather than applied afterwards with atempo, so the pauses are
@@ -27,9 +27,9 @@ permissions and of any machine-learning runtime.
 Incremental: only locutions without a recording are synthesised, so re-running
 this does not rewrite what already exists and does not churn the repository.
 
-This is a port of scripts/generate-voice-assets.py in the Valeria repository,
-supporting gl, es and en. Build-time tooling only: no
-Valeria screen, module or app code is reused here.
+This is a port of the voice pipeline of the earlier project in the house,
+supporting gl, es and en. Build-time tooling only: none of that project's
+screens, modules or app code is reused here.
 """
 from __future__ import annotations
 

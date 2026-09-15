@@ -1,0 +1,376 @@
+{
+  "id": "juega.corpo.01",
+  "tramoEtario": "0-3",
+  "orden": 2,
+  "titulo": {
+    "gl": "O meu corpo en movemento",
+    "es": "Mi cuerpo en movimiento"
+  },
+  "subtitulo": {
+    "gl": "Unidade de esquema corporal, parada e arranque",
+    "es": "Unidad de esquema corporal, parada y arranque"
+  },
+  "descripcion": {
+    "gl": "Unidade de recoñecemento das partes do corpo e de control do movemento: mover moito, parar en seco e volver a empezar. A orde 'Freeze!' dá a parada, que é o máis difícil e o máis divertido.",
+    "es": "Unidad de reconocimiento de las partes del cuerpo y de control del movimiento: mover mucho, parar en seco y volver a empezar. La orden 'Freeze!' da la parada, que es lo más difícil y lo más divertido."
+  },
+  "cancionPulso": {
+    "titulo": {
+      "gl": "Cabeza, ombreiros, xeonllos e pés",
+      "es": "Cabeza, hombros, rodillas y pies"
+    },
+    "letraConPulsos": {
+      "gl": "* Ca-be-za, * om-brei-ros, * xeon-llos * e pés,\n* xeon-llos * e pés, * xeon-llos * e pés.\n* Ollos * e o-re-llas, * boca * e na-riz,\n* to-do * o cor-po * se * move a-quí.",
+      "es": "* Ca-be-za, * hom-bros, * ro-di-llas * y pies,\n* ro-di-llas * y pies, * ro-di-llas * y pies.\n* Ojos * y o-re-jas, * boca * y na-riz,\n* to-do * el cuer-po * se * mue-ve a-quí."
+    },
+    "bpm": 72,
+    "consignaDocente": {
+      "gl": "Tocar cada parte na propia mestra primeiro, non na crianza. Quen queira imitar, imita; quen queira só mirar, mira.",
+      "es": "Tocar cada parte en la propia maestra primero, no en la criatura. Quien quiera imitar, imita; quien quiera solo mirar, mira."
+    },
+    "audioAsset": {
+      "gl": "assets/voice/gl_tutor_4ff54a8c_169.m4a",
+      "es": "assets/voice/es_tutor_c9a5356e_174.m4a"
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa non para quieta",
+      "es": "Lúa no para quieta"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "A gata Lúa érguese e move a cabeza dun lado ao outro. Despois move os ollos, e despois o nariz, que lle fai cóxegas.",
+          "es": "La gata Lúa se levanta y mueve la cabeza de un lado a otro. Después mueve los ojos, y después la nariz, que le hace cosquillas."
+        },
+        "preguntaComprension": {
+          "gl": "Que move Lúa primeiro? Sabes mover ti o nariz?",
+          "es": "¿Qué mueve Lúa primero? ¿Sabes mover tú la nariz?"
+        },
+        "ingles": [
+          "Head",
+          "Eyes",
+          "Nose"
+        ],
+        "lamina": "conto_corpo_1"
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Lúa baixa as mans ata a barriga e faise cóxegas. Logo chega aos pés e móvelle os dedos un por un.",
+          "es": "Lúa baja las manos hasta la barriga y se hace cosquillas. Luego llega a los pies y le mueve los dedos uno por uno."
+        },
+        "preguntaComprension": {
+          "gl": "Onde chegan as mans de Lúa? Chegas ti aos teus pés?",
+          "es": "¿Dónde llegan las manos de Lúa? ¿Llegas tú a tus pies?"
+        },
+        "ingles": [
+          "Tummy",
+          "Toes",
+          "Soft tummy, tickle toes!"
+        ],
+        "lamina": "conto_corpo_2"
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "De súpeto alguén di unha palabra máxica e Lúa queda quieta coma unha estatua. Non se move nin un bigote!",
+          "es": "De repente alguien dice una palabra mágica y Lúa se queda quieta como una estatua. ¡No se mueve ni un bigote!"
+        },
+        "preguntaComprension": {
+          "gl": "Que fai Lúa cando escoita a palabra? Probamos nós?",
+          "es": "¿Qué hace Lúa cuando escucha la palabra? ¿Probamos nosotros?"
+        },
+        "ingles": [
+          "Freeze",
+          "Freeze!"
+        ],
+        "lamina": "conto_corpo_3"
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "cabeza",
+      "palabra": {
+        "gl": "Cabeza",
+        "es": "Cabeza"
+      },
+      "definicionBreve": {
+        "gl": "Parte de arriba do corpo, onde están os ollos e o nariz.",
+        "es": "Parte de arriba del cuerpo, donde están los ojos y la nariz."
+      },
+      "ingles": "Head",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_7a546549_6.m4a",
+        "es": "assets/voice/es_slow_7a546549_6.m4a"
+      },
+      "lamina": "cabeza"
+    },
+    {
+      "id": "barriga",
+      "palabra": {
+        "gl": "Barriga",
+        "es": "Barriga"
+      },
+      "definicionBreve": {
+        "gl": "Parte branda do medio do corpo, onde se fan as cóxegas.",
+        "es": "Parte blanda del medio del cuerpo, donde se hacen las cosquillas."
+      },
+      "ingles": "Tummy",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_cb05a217_7.m4a",
+        "es": "assets/voice/es_slow_cb05a217_7.m4a"
+      },
+      "lamina": "barriga"
+    },
+    {
+      "id": "pes",
+      "palabra": {
+        "gl": "Pés",
+        "es": "Pies"
+      },
+      "definicionBreve": {
+        "gl": "Coas que camiñamos, corremos e pisamos forte.",
+        "es": "Con los que caminamos, corremos y pisamos fuerte."
+      },
+      "ingles": "Feet",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_b80a3b33_3.m4a",
+        "es": "assets/voice/es_slow_73ab11d2_4.m4a"
+      },
+      "lamina": "pes"
+    },
+    {
+      "id": "ollos",
+      "palabra": {
+        "gl": "Ollos",
+        "es": "Ojos"
+      },
+      "definicionBreve": {
+        "gl": "Cos que miramos e recoñecemos as caras queridas.",
+        "es": "Con los que miramos y reconocemos las caras queridas."
+      },
+      "ingles": "Eyes",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_fee40140_5.m4a",
+        "es": "assets/voice/es_slow_d470212e_4.m4a"
+      },
+      "lamina": "ollos"
+    },
+    {
+      "id": "nariz",
+      "palabra": {
+        "gl": "Nariz",
+        "es": "Nariz"
+      },
+      "definicionBreve": {
+        "gl": "Co que cheiramos a comida e o aire da rúa.",
+        "es": "Con la que olemos la comida y el aire de la calle."
+      },
+      "ingles": "Nose",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_00222185_5.m4a",
+        "es": "assets/voice/es_slow_00222185_5.m4a"
+      },
+      "lamina": "nariz"
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Onde tes a cabeza?",
+        "es": "¿Dónde tienes la cabeza?"
+      },
+      "respuestaSugerida": {
+        "gl": "Levar a man á cabeza ou mirar cara arriba.",
+        "es": "Llevarse la mano a la cabeza o mirar hacia arriba."
+      },
+      "consejoDocente": {
+        "gl": "Preguntar sempre pola propia, nunca tocando o corpo da crianza sen aviso.",
+        "es": "Preguntar siempre por la propia, nunca tocando el cuerpo de la criatura sin aviso."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Que parte do corpo move Lúa cando lle fan cóxegas?",
+        "es": "¿Qué parte del cuerpo mueve Lúa cuando le hacen cosquillas?"
+      },
+      "respuestaSugerida": {
+        "gl": "Sinalar a barriga, rir ou dicir 'barriga'.",
+        "es": "Señalar la barriga, reír o decir 'barriga'."
+      },
+      "consejoDocente": {
+        "gl": "A risa é resposta: non hai que traducila a palabra para dala por boa.",
+        "es": "La risa es respuesta: no hay que traducirla a palabra para darla por buena."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Que é máis difícil, moverse moito ou quedar quieto de todo?",
+        "es": "¿Qué es más difícil, moverse mucho o quedarse quieto del todo?"
+      },
+      "respuestaSugerida": {
+        "gl": "Calquera resposta vale; o que importa é probar as dúas cousas.",
+        "es": "Cualquier respuesta vale; lo que importa es probar las dos cosas."
+      },
+      "consejoDocente": {
+        "gl": "Parar en seco custa moito máis ca arrancar. Celebrar as paradas curtas, non esixir as longas.",
+        "es": "Parar en seco cuesta mucho más que arrancar. Celebrar las paradas cortas, no exigir las largas."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "Move e para: o xogo da estatua",
+      "es": "Mueve y para: el juego de la estatua"
+    },
+    "materiales": [
+      {
+        "gl": "Un pandeiro ou dúas culleres de pau para dar o sinal de parada.",
+        "es": "Un pandero o dos cucharas de madera para dar la señal de parada."
+      },
+      {
+        "gl": "Un espello irrompible grande, fixado á parede.",
+        "es": "Un espejo irrompible grande, fijado a la pared."
+      },
+      {
+        "gl": "Colchonetas ou alfombra que cubran toda a zona de movemento.",
+        "es": "Colchonetas o alfombra que cubran toda la zona de movimiento."
+      },
+      {
+        "gl": "Pañuelos lixeiros de 40 x 40 cm para mover cos brazos.",
+        "es": "Pañuelos ligeros de 40 x 40 cm para mover con los brazos."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Mover os pañuelos arriba e abaixo mentres soa o pandeiro.",
+        "es": "Mover los pañuelos arriba y abajo mientras suena el pandero."
+      },
+      {
+        "gl": "Ao parar o son, quedar quietas; contar ata tres e seguir.",
+        "es": "Al parar el sonido, quedarse quietas; contar hasta tres y seguir."
+      },
+      {
+        "gl": "Repetir diante do espello para que se vexan paradas.",
+        "es": "Repetir delante del espejo para que se vean paradas."
+      },
+      {
+        "gl": "Rematar sentadas, coas mans na barriga, sentindo a respiración.",
+        "es": "Terminar sentadas, con las manos en la barriga, sintiendo la respiración."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. Despexar a zona de mesas, cantos e xoguetes duros antes de empezar. Os pañuelos só se moven cos brazos: nunca se poñen sobre a cara nin arredor do pescozo.",
+      "es": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. Despejar la zona de mesas, esquinas y juguetes duros antes de empezar. Los pañuelos solo se mueven con los brazos: nunca se ponen sobre la cara ni alrededor del cuello."
+    },
+    "objetivoSensorial": {
+      "gl": "Traballar a propiocepción, o equilibrio e a inhibición do movemento.",
+      "es": "Trabajar la propiocepción, el equilibrio y la inhibición del movimiento."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Dous de cada: as parellas do corpo",
+      "es": "Dos de cada: las parejas del cuerpo"
+    },
+    "descripcion": {
+      "gl": "O corpo ensina a primeira parella: dúas mans, dous pés, dous ollos, dúas orellas, e unha soa cabeza.",
+      "es": "El cuerpo enseña la primera pareja: dos manos, dos pies, dos ojos, dos orejas, y una sola cabeza."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Erguer as dúas mans e contalas moi amodo mentres se miran.",
+        "es": "Levantar las dos manos y contarlas muy despacio mientras se miran."
+      },
+      {
+        "gl": "Preguntar cantas cabezas temos, e rir xuntas da resposta.",
+        "es": "Preguntar cuántas cabezas tenemos, y reír juntas de la respuesta."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Un / Dous, Arriba / Abaixo, Move / Para",
+      "es": "Uno / Dos, Arriba / Abajo, Mueve / Para"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe movemos todo o corpo coa gata Lúa e aprendemos a parar en seco cando escoitamos 'Freeze!'. Tamén nomeamos a cabeza, a barriga e os pés.",
+      "es": "Hoy movimos todo el cuerpo con la gata Lúa y aprendimos a parar en seco cuando oímos 'Freeze!'. También nombramos la cabeza, la barriga y los pies."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "No cambio de cueiro ou na hora do baño, nomear a barriga e os dedos dos pés dicindo 'Soft tummy, tickle toes!'.",
+        "es": "En el cambio de pañal o en la hora del baño, nombrar la barriga y los dedos de los pies diciendo 'Soft tummy, tickle toes!'."
+      },
+      {
+        "gl": "Xogar a parar de camiño ao parque: andar, dicir 'Freeze!' e quedar quietos tres segundos.",
+        "es": "Jugar a parar de camino al parque: andar, decir 'Freeze!' y quedarse quietos tres segundos."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "Tocar a propia barriga antes de tocar a súa, e agardar a que estenda a man. Pedir permiso co xesto tamén é linguaxe.",
+      "es": "Tocar la propia barriga antes de tocar la suya, y esperar a que extienda la mano. Pedir permiso con el gesto también es lenguaje."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "ingles": {
+    "frase": "Soft tummy, tickle toes!",
+    "porFase": {
+      "pulso": [
+        "Head",
+        "Toes",
+        "Touch your head"
+      ],
+      "conto": [
+        "Head",
+        "Eyes",
+        "Nose",
+        "Tummy"
+      ],
+      "preguntas": [
+        "Head",
+        "Tummy"
+      ],
+      "exploracion": [
+        "Freeze",
+        "Freeze!",
+        "Shake hands"
+      ],
+      "matematicas": [
+        "Eyes",
+        "Toes"
+      ],
+      "ponteCasa": [
+        "Soft tummy, tickle toes!",
+        "Freeze!"
+      ]
+    },
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-13",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

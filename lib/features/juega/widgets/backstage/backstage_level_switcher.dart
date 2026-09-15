@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../core/localization/app_language.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 
@@ -6,19 +7,21 @@ import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 class BackstageLevelSwitcher extends StatelessWidget {
   final NivelEducativoSegundoCiclo nivelSeleccionado;
   final ValueChanged<NivelEducativoSegundoCiclo> onNivelChanged;
+  final AppLanguage language;
 
   const BackstageLevelSwitcher({
     super.key,
     required this.nivelSeleccionado,
     required this.onNivelChanged,
+    this.language = AppLanguage.gl,
   });
 
   @override
   Widget build(BuildContext context) {
     const niveis = [
-      (NivelEducativoSegundoCiclo.infantil4, '4.º (3-4 anos)', 'Acción Expandida'),
-      (NivelEducativoSegundoCiclo.infantil5, '5.º (4-5 anos)', 'Dramatizado / Freeze'),
-      (NivelEducativoSegundoCiclo.infantil6, '6.º (5-6 anos)', 'Peer-to-Peer / P2P'),
+      NivelEducativoSegundoCiclo.infantil4,
+      NivelEducativoSegundoCiclo.infantil5,
+      NivelEducativoSegundoCiclo.infantil6,
     ];
 
     return Container(
@@ -29,10 +32,9 @@ class BackstageLevelSwitcher extends StatelessWidget {
       ),
       padding: const EdgeInsets.all(4),
       child: Row(
-        children: niveis.map((item) {
-          final nivel = item.$1;
-          final label = item.$2;
-          final sub = item.$3;
+        children: niveis.map((nivel) {
+          final label = nivel.etiquetaCorta.resolve(language);
+          final sub = nivel.metodologiaPorDefecto.nombreCorto.resolve(language);
           final isSelected = nivel == nivelSeleccionado;
 
           return Expanded(
@@ -46,9 +48,12 @@ class BackstageLevelSwitcher extends StatelessWidget {
                   borderRadius: BorderRadius.circular(AppTheme.radiusField),
                   child: Container(
                     constraints: const BoxConstraints(minHeight: 48),
-                    padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
                     decoration: BoxDecoration(
-                      color: isSelected ? AppTheme.backstageAccent : Colors.transparent,
+                      color: isSelected
+                          ? AppTheme.backstageAccent
+                          : Colors.transparent,
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
                     child: Column(
@@ -59,8 +64,11 @@ class BackstageLevelSwitcher extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: AppTheme.fontFamily,
                             fontSize: 14.0,
-                            fontWeight: isSelected ? FontWeight.w800 : FontWeight.w600,
-                            color: isSelected ? AppTheme.backstageBg : AppTheme.backstageTextPrimary,
+                            fontWeight:
+                                isSelected ? FontWeight.w800 : FontWeight.w600,
+                            color: isSelected
+                                ? AppTheme.backstageBg
+                                : AppTheme.backstageTextPrimary,
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -71,7 +79,9 @@ class BackstageLevelSwitcher extends StatelessWidget {
                             fontFamily: AppTheme.fontFamily,
                             fontSize: 11.0,
                             fontWeight: FontWeight.w500,
-                            color: isSelected ? AppTheme.backstageBg : AppTheme.backstageTextMuted,
+                            color: isSelected
+                                ? AppTheme.backstageBg
+                                : AppTheme.backstageTextMuted,
                           ),
                           textAlign: TextAlign.center,
                           maxLines: 1,

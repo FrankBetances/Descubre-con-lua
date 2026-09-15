@@ -1,9 +1,10 @@
 import '../../core/brand/pixel_award.dart';
 import '../../core/localization/localized_string.dart';
+import '../../data/models/calendario_model.dart';
 
 /// Quién gana los premios.
 ///
-/// El adulto, siempre. En Valeria+ los gana quien juega, que es la criatura;
+/// El adulto, siempre. En el proyecto anterior de la casa los gana quien juega, que es la criatura;
 /// aquí la criatura no toca la pantalla, así que premiar su «progreso» sería
 /// inventarse un dato que nadie ha medido. Lo que sí se mide es lo que hace el
 /// adulto con la app: dirigir asambleas y leer cápsulas.
@@ -111,6 +112,80 @@ class Insignia {
   bool aplicaA(Perfil p) => perfil == null || perfil == p;
 }
 
+/// De qué cuenta del Calendario Escola·Fogar depende una medalla.
+///
+/// Solo hay tres, y son exactamente las tres cosas que el calendario mide: días
+/// con asamblea en el aula, días con rutina en casa y días con las dos. No hay
+/// criterio de «toda la clase» ni nada parecido, porque la app conoce un
+/// aparato, no un aula: premiar eso sería inventarse un dato que nadie midió.
+enum CriterioCalendario { aula, fogar, dobre }
+
+/// Una medalla del Calendario Escola·Fogar.
+///
+/// Se DERIVA de los contadores, no se guarda: el fichero del calendario sigue
+/// teniendo solo fechas y dos marcas, y ganar una medalla no añade ni un campo.
+class Medalla {
+  final String id;
+
+  /// `docente`, `familia`, o `null` si la pueden ganar las dos.
+  final Perfil? perfil;
+  final CriterioCalendario criterio;
+  final int valor;
+  final AwardGlyph glifo;
+  final AwardTier rango;
+  final LocalizedString titulo;
+  final LocalizedString descripcion;
+
+  const Medalla({
+    required this.id,
+    required this.perfil,
+    required this.criterio,
+    required this.valor,
+    required this.glifo,
+    required this.rango,
+    required this.titulo,
+    required this.descripcion,
+  });
+
+  factory Medalla.fromJson(Map<String, dynamic> json) {
+    final criterio = Map<String, dynamic>.from(json['criterio'] as Map);
+    final perfilTexto = json['perfil']?.toString() ?? 'ambos';
+    return Medalla(
+      id: json['id'].toString(),
+      perfil: perfilTexto == 'ambos' ? null : Perfil.desdeClave(perfilTexto),
+      criterio: CriterioCalendario.values.firstWhere(
+        (c) => c.name == criterio['tipo'].toString(),
+        orElse: () => CriterioCalendario.dobre,
+      ),
+      valor: (criterio['valor'] as num).toInt(),
+      glifo: AwardGlyph.desdeClave(json['glifo']?.toString() ?? 'star'),
+      rango: AwardTier.desdeClave(json['rango']?.toString() ?? 'bronze'),
+      titulo: LocalizedString.fromJson(
+        Map<String, dynamic>.from(json['titulo'] as Map),
+      ),
+      descripcion: LocalizedString.fromJson(
+        Map<String, dynamic>.from(json['descripcion'] as Map),
+      ),
+    );
+  }
+
+  bool aplicaA(Perfil p) => perfil == null || perfil == p;
+
+  /// Cuánto lleva hecho de lo que pide esta medalla.
+  int avanceCon(ContadoresCalendario c) {
+    switch (criterio) {
+      case CriterioCalendario.aula:
+        return c.diasAula;
+      case CriterioCalendario.fogar:
+        return c.diasFogar;
+      case CriterioCalendario.dobre:
+        return c.diasDobres;
+    }
+  }
+
+  bool ganadaCon(ContadoresCalendario c) => avanceCon(c) >= valor;
+}
+
 /// El catálogo entero, leído de `assets/content/premios/premios.json`.
 class CatalogoPremios {
   final int xpPorAsamblea;
@@ -118,11 +193,16 @@ class CatalogoPremios {
   final List<Nivel> niveles;
   final List<Insignia> insignias;
 
+  /// Las medallas del Calendario Escola·Fogar. Mismo catálogo, mismo fichero:
+  /// una insignia y una medalla se editan en el mismo sitio.
+  final List<Medalla> medallas;
+
   const CatalogoPremios({
     required this.xpPorAsamblea,
     required this.xpPorCapsula,
     required this.niveles,
     required this.insignias,
+    this.medallas = const [],
   });
 
   factory CatalogoPremios.fromJson(Map<String, dynamic> json) {
@@ -137,12 +217,19 @@ class CatalogoPremios {
       insignias: (json['insignias'] as List)
           .map((e) => Insignia.fromJson(Map<String, dynamic>.from(e as Map)))
           .toList(),
+      medallas: ((json['medallas'] as List?) ?? const [])
+          .map((e) => Medalla.fromJson(Map<String, dynamic>.from(e as Map)))
+          .toList(),
     );
   }
 
   /// Las insignias que este perfil puede ganar, en el orden del catálogo.
   List<Insignia> insigniasDe(Perfil perfil) =>
       insignias.where((i) => i.aplicaA(perfil)).toList();
+
+  /// Las medallas de calendario que este perfil puede ganar.
+  List<Medalla> medallasDe(Perfil perfil) =>
+      medallas.where((m) => m.aplicaA(perfil)).toList();
 }
 
 /// Lo que se guarda de un perfil. Números y fechas, nada más.

@@ -2,7 +2,7 @@
 
 **Agent**: Sentinel  
 **Project**: «Descubre con Lúa · Edición Vigo» (`com.earlify.descubreconlua`)  
-**Workspace**: `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa`  
+**Workspace**: `<documentos locales>/Descubre con Lúa`  
 **Timestamp**: 2026-09-11T14:22:45Z  
 **Verdict**: **VICTORY CONFIRMED**
 

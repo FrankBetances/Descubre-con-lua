@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../../core/localization/app_language.dart';
+import '../../../../core/audio/offline_audio_service.dart';
+import '../../../../core/audio/voice_id.dart';
+import '../../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../../core/brand/lamina_vector.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 
@@ -7,6 +11,10 @@ import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 class PasoOpeningWidget extends StatelessWidget {
   final FaseAsamblea fase;
   final AppLanguage language;
+
+  /// Para el altavoz de la consigna y del inglés. Sin él la fase se lee
+  /// pero no se escucha, que es como nació este módulo.
+  final OfflineAudioService? audioService;
   final VoidCallback? onPlayCue;
   final bool isPlayingCue;
 
@@ -14,6 +22,7 @@ class PasoOpeningWidget extends StatelessWidget {
     super.key,
     required this.fase,
     required this.language,
+    this.audioService,
     this.onPlayCue,
     this.isPlayingCue = false,
   });
@@ -29,6 +38,14 @@ class PasoOpeningWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         // Cabeceira da fase
+        // La lámina de la fase: la asamblea eran cuatro pantallas de prosa
+        // seguidas, sin una sola imagen.
+        if (fase.lamina.isNotEmpty) ...[
+          Center(
+            child: LaminaEscena(clave: fase.lamina, ancho: 128),
+          ),
+          const SizedBox(height: 16),
+        ],
         Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
@@ -42,14 +59,15 @@ class PasoOpeningWidget extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
                       color: AppTheme.backstageAccent.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
-                    child: const Text(
-                      'FASE 1 · 90s',
-                      style: TextStyle(
+                    child: Text(
+                      'FASE ${fase.orden} · ${fase.duracionSegundos}s',
+                      style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 13,
                         fontWeight: FontWeight.w800,
@@ -59,7 +77,8 @@ class PasoOpeningWidget extends StatelessWidget {
                     ),
                   ),
                   const Spacer(),
-                  const Icon(Icons.wb_sunny_rounded, color: AppTheme.star, size: 24),
+                  const Icon(Icons.wb_sunny_rounded,
+                      color: AppTheme.star, size: 24),
                 ],
               ),
               const SizedBox(height: 12),
@@ -91,17 +110,21 @@ class PasoOpeningWidget extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  const Icon(Icons.record_voice_over_outlined, color: AppTheme.backstageAccent, size: 22),
+                  const Icon(Icons.record_voice_over_outlined,
+                      color: AppTheme.backstageAccent, size: 22),
                   const SizedBox(width: 8),
-                  Text(
-                    isGl ? 'Consigna para o Docente' : 'Consigna para el Docente',
+                  Expanded(
+                      child: Text(
+                    isGl
+                        ? 'Consigna para o Docente'
+                        : 'Consigna para el Docente',
                     style: const TextStyle(
                       fontFamily: AppTheme.fontFamily,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w700,
                       color: AppTheme.backstageAccent,
                     ),
-                  ),
+                  )),
                 ],
               ),
               const SizedBox(height: 12),
@@ -115,6 +138,15 @@ class PasoOpeningWidget extends StatelessWidget {
                   height: 1.4,
                 ),
               ),
+              BotonEscuchar(
+                audioService: audioService,
+                texto: consigna,
+                language: language,
+                compacto: true,
+                descripcion: isGl
+                    ? 'a consigna da apertura'
+                    : 'la consigna de la apertura',
+              ),
             ],
           ),
         ),
@@ -127,11 +159,14 @@ class PasoOpeningWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color: AppTheme.backstageSurface,
               borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-              border: Border.all(color: AppTheme.backstageAccent.withValues(alpha: 0.5)),
+              border: Border.all(
+                  color: AppTheme.backstageAccent.withValues(alpha: 0.5)),
             ),
-            child: Row(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Expanded(
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -159,6 +194,17 @@ class PasoOpeningWidget extends StatelessWidget {
                     ],
                   ),
                 ),
+                // El cue es inglés: aquí se oye cómo suena antes de decirlo.
+                BotonEscuchar(
+                  audioService: audioService,
+                  texto: fase.cueAcustica ?? '',
+                  language: AppLanguage.en,
+                  style: estiloIngles(fase.cueAcustica ?? ''),
+                  compacto: true,
+                  descripcion:
+                      isGl ? 'o sinal en inglés' : 'la señal en inglés',
+                ),
+                const SizedBox(height: 8),
                 if (hasAudio && onPlayCue != null)
                   ElevatedButton.icon(
                     key: const ValueKey('play_opening_cue_button'),
@@ -170,10 +216,13 @@ class PasoOpeningWidget extends StatelessWidget {
                       foregroundColor: AppTheme.backstageBg,
                       minimumSize: const Size(120, 52),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+                        borderRadius:
+                            BorderRadius.circular(AppTheme.radiusButton),
                       ),
                     ),
-                    icon: Icon(isPlayingCue ? Icons.stop_rounded : Icons.play_arrow_rounded),
+                    icon: Icon(isPlayingCue
+                        ? Icons.stop_rounded
+                        : Icons.play_arrow_rounded),
                     label: Text(
                       isPlayingCue
                           ? (isGl ? 'Deter' : 'Detener')
@@ -187,7 +236,8 @@ class PasoOpeningWidget extends StatelessWidget {
                   )
                 else
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     decoration: BoxDecoration(
                       color: AppTheme.backstageSurfaceElevated,
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),

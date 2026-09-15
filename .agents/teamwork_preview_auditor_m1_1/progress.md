@@ -1,31 +1,20 @@
-# Progress — Milestone M1 Forensic Audit (Segundo Ciclo)
+# Progress — Milestone 1 Forensic Audit
 
-- **Last visited**: 2026-09-14T13:45:00Z
+- **Last visited**: 2026-09-11T08:44:00Z
 - **Current status**: Independent forensic audit completed. Verdict: CLEAN.
-- **Phase**: Step 10 - Final handoff report written, ready to notify parent.
+- **Phase**: Step 10 - Writing final handoff report and preparing message for parent.
 
 ## Completed Milestones in Audit
-1. ✅ **Regulatory & Ground-Truth Verification**:
-   - Verified `ORIGINAL_REQUEST.md` lines 96–161 (`## Follow-up — 2026-09-14T13:15:17Z`) and `PROJECT.md`.
-2. ✅ **Mode-Agnostic Source Code Analysis**:
+1. ✅ **Verification of Ground-Truth Constraints**: Read `ORIGINAL_REQUEST.md` (Development integrity mode) and `PROJECT.md`.
+2. ✅ **Worker Handoff Analysis**: Reviewed Worker M1 `handoff.md` claims against physical repository files.
+3. ✅ **Phase 1 Mode-Agnostic Forensic Investigation**:
    - Zero pre-populated artifacts (*.log, *result*, *output*) in workspace.
-   - `lib/data/models/asamblea_segundo_ciclo_model.dart`: genuine business logic, immutable models, robust enums, full serialization/deserialization.
-   - `lib/data/loaders/content_asset_loader.dart`: real JSON parsing, error throwing on invalid structures.
-   - `lib/data/repositories/content_repository.dart`: real multi-key query, sorting, caching, and discovery.
-   - `lib/data/validators/content_validator.dart`: `caseSensitive: true` fix prevents false positives while rejecting uppercase developer markers.
-   - Zero facades, zero dummy stubs, zero mocks in production code.
-3. ✅ **Privacy & Network Audit**:
-   - Zero internet calls, network sockets, URLs, or telemetry across all files.
-   - `pubspec.yaml` has zero network dependencies.
-   - `AndroidManifest.xml` explicitly strips `INTERNET`, `ACCESS_NETWORK_STATE`, and `ACCESS_WIFI_STATE` with `tools:node="remove"`.
-4. ✅ **Curricular & Pedagogical Integrity**:
-   - Decreto 150/2022 constants verified (`area1CrecementoHarmonia`, `area2DescubrimentoContorna`, `area3ComunicacionRepresentacion`, criteria `CA1.1` to `CA3.3`).
-   - 4 canonical phases verified with exact durations: 90s, 120s, 270s, 120s summing to exactly 600s (10 min).
-   - Differentiated TPR methodologies verified for 4.º, 5.º, and 6.º Infantil.
-   - Home micro-routine and recast modeling verified.
-5. ✅ **Clinical Blacklist Audit**:
-   - Scanned all 6 audited files against full clinical terms blacklist (`forbiddenClinicalPattern`). Zero matches detected.
-6. ✅ **Test Suite Authenticity**:
-   - `test/data/asamblea_segundo_ciclo_models_test.dart` (14 tests) and `test/data/placeholder_validator_test.dart` (3 tests) contain genuine assertions, testing positive cases, edge cases, invariants, and mutations.
-7. ✅ **Final Report**:
-   - Generated `handoff.md` with complete evidence chain and verdict: CLEAN.
+   - Pubspec.yaml and source code audit: 100% free of network, socket, telemetry, or analytics dependencies.
+   - Android scaffolding & manifest audit: `com.earlify.descubreconlua` confirmed across Gradle, Kotlin, and manifest. Positive permissions: 0. Explicit removal of `INTERNET`, `ACCESS_NETWORK_STATE`, and `ACCESS_WIFI_STATE` via `tools:node="remove"`.
+   - Dart source audit: Zero facade implementations, zero placeholders, zero hardcoded test result constants.
+   - Test suite audit: Real executable `flutter_test` code with balanced AST syntax and strict assertions.
+   - Asset directories verified: `assets/content/unidades`, `assets/content/capsulas`, `assets/audio`.
+   - Cryptographic SHA-256 fingerprinting generated for all 18 Milestone 1 deliverables.
+4. ✅ **Phase 2 Mode-Specific Flagging**: Under Development mode, zero integrity violations detected.
+5. ✅ **Adversarial Stress-Testing**: Tested parity edge cases, language code fallbacks, and manifest merger resilience.
+6. ✅ **Independent Script Execution**: Built and executed `audit_m1.py` with 43/43 passing checks (exit code 0).

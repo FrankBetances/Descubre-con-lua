@@ -9,6 +9,7 @@ import 'package:descubre_con_lua/data/models/curricular_model.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
+import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
 
 void main() {
@@ -207,7 +208,7 @@ void main() {
     });
 
     testWidgets(
-        'Phase 6 Finalizar stops audio, displays snackbar, and pops navigator',
+        'Phase 6 Finalizar para o audio, ensina a nota para as casas e sae',
         (tester) async {
       bool popped = false;
 
@@ -246,6 +247,16 @@ void main() {
 
       expect(mockAudioService.callLog, contains('stop'));
       expect(mockAudioService.isPlaying, isFalse);
+
+      // Terminar la asamblea abre la NOTA PARA LAS CASAS. Es el puente: sin
+      // red, lo que llega a la familia es un mensaje que se copia, no una
+      // casilla en el móvil de alguien que no estuvo en el aula.
+      expect(find.text(NotaParaCasasScreen.titulo.gl), findsOneWidget);
+      expect(popped, isFalse, reason: 'La nota se enseña antes de salir.');
+
+      await tester.tap(find.byKey(const Key('boton_cerrar_nota')));
+      await tester.pumpAndSettle();
+
       expect(popped, isTrue);
     });
   });
@@ -438,7 +449,7 @@ void main() {
       expect(find.text('Fase 4 de 6'), findsOneWidget);
 
       // Verify Safety Alert Banner
-      expect(find.text('⚠️ PROTOCOLO DE SEGURIDADE NA AULA'), findsOneWidget);
+      expect(find.text('PROTOCOLO DE SEGURIDADE NA AULA'), findsOneWidget);
       expect(find.byIcon(Icons.warning_amber_rounded), findsOneWidget);
       expect(
           find.textContaining('Pezas de tamaño superior a 4 cm'), findsWidgets);

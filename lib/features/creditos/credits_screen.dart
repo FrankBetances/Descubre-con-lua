@@ -6,7 +6,7 @@ import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
 
-/// Créditos, con la estructura de los de Valeria+
+/// Créditos, con la estructura de los del proyecto anterior de la casa
 /// (`docs/screenshots/02-creditos.png`): la gata y el nombre arriba, un
 /// antetítulo en versalitas, la tarjeta de autoría y debajo los bloques de
 /// atribución.
@@ -100,13 +100,11 @@ class CreditsScreen extends StatelessWidget {
   static const _sharvardDesc = LocalizedString(
     gl: 'Voz en castelán. rhasspy/piper-voices.',
     es: 'Voz en castellano. rhasspy/piper-voices.',
-    en: 'Spanish voice. rhasspy/piper-voices.',
   );
 
   static const _ljSpeechDesc = LocalizedString(
-    gl: 'Voz en inglés (en-US). rhasspy/piper-voices.',
-    es: 'Voz en inglés (en-US). rhasspy/piper-voices.',
-    en: 'English voice (en-US). rhasspy/piper-voices.',
+    gl: 'Voz en inglés (en-US), a da capa de inglés. rhasspy/piper-voices.',
+    es: 'Voz en inglés (en-US), la de la capa de inglés. rhasspy/piper-voices.',
   );
 
   static const _typeKicker = LocalizedString(
@@ -162,9 +160,14 @@ class CreditsScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         // El escudo es de Frank, no de un tercero: se usa.
+                        // Va sobre placa OSCURA porque está dibujado para fondo
+                        // oscuro: sobre la tarjeta clara, el cuervo blanco y el
+                        // círculo blanco desaparecían y quedaba medio escudo.
                         const LogoInstitucional(
                           fichero: 'dr-betances-crest.png',
                           alto: 72,
+                          sobrePlaca: true,
+                          colorPlaca: AppTheme.dark,
                         ),
                         const SizedBox(height: AppTheme.spaceMd),
                         Text(
@@ -181,6 +184,12 @@ class CreditsScreen extends StatelessWidget {
                               ?.copyWith(color: AppTheme.primaryInk),
                         ),
                         const Divider(height: AppTheme.spaceXl),
+                        const LogoInstitucional(
+                          fichero: 'earlify-health.jpg',
+                          alto: 56,
+                          sobrePlaca: true,
+                        ),
+                        const SizedBox(height: AppTheme.spaceSm),
                         Text(
                           'Earlify Health S.L.',
                           textAlign: TextAlign.center,
@@ -219,7 +228,10 @@ class CreditsScreen extends StatelessWidget {
                           crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
                             LogoInstitucional(fichero: 'startic.png'),
-                            LogoInstitucional(fichero: 'zona-franca-vigo.png'),
+                            LogoInstitucional(
+                              fichero: 'zona-franca-vigo.png',
+                              sobrePlaca: true,
+                            ),
                           ],
                         ),
                         _Entry(

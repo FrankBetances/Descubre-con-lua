@@ -1,9 +1,0 @@
---- a/lib/data/validators/content_validator.dart
-+++ b/lib/data/validators/content_validator.dart
-@@ -59,7 +59,7 @@ class ContentValidator {
-   /// Prohibited placeholder patterns that indicate incomplete text.
-   static final RegExp placeholderPattern = RegExp(
-     r'\b(TODO|TBD|PLACEHOLDER|PENDIENTE|PENDENTE|LOREM\s+IPSUM)\b',
--    caseSensitive: false,
-+    caseSensitive: true,
-   );

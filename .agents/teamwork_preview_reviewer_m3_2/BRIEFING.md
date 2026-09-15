@@ -6,7 +6,7 @@ Adversarial and quality review of Milestone 3: Juega con Lúa (Aula / Docentes) 
 ## 🔒 My Identity
 - Archetype: teamwork_preview_reviewer
 - Roles: reviewer, critic
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m3_2
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_reviewer_m3_2
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 3 - Juega con Lúa & Audio Review
 - Instance: 2 of 2

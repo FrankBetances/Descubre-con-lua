@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../../../core/localization/app_language.dart';
+import '../../../../core/audio/offline_audio_service.dart';
+import '../../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../../core/brand/lamina_vector.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 
@@ -14,6 +17,10 @@ import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 class PasoCalmWidget extends StatelessWidget {
   final FaseAsamblea fase;
   final AppLanguage language;
+
+  /// Para el altavoz de la consigna y del inglés. Sin él la fase se lee
+  /// pero no se escucha, que es como nació este módulo.
+  final OfflineAudioService? audioService;
   final VoidCallback? onPlayCalmAudio;
   final bool isPlayingCalmAudio;
 
@@ -21,6 +28,7 @@ class PasoCalmWidget extends StatelessWidget {
     super.key,
     required this.fase,
     required this.language,
+    this.audioService,
     this.onPlayCalmAudio,
     this.isPlayingCalmAudio = false,
   });
@@ -36,6 +44,14 @@ class PasoCalmWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         // Cabeceira da fase
+        // La lámina de la fase: la asamblea eran cuatro pantallas de prosa
+        // seguidas, sin una sola imagen.
+        if (fase.lamina.isNotEmpty) ...[
+          Center(
+            child: LaminaEscena(clave: fase.lamina, ancho: 128),
+          ),
+          const SizedBox(height: 16),
+        ],
         Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
@@ -57,9 +73,9 @@ class PasoCalmWidget extends StatelessWidget {
                       color: AppTheme.backstageAccent.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
-                    child: const Text(
-                      'FASE 4 · 120s',
-                      style: TextStyle(
+                    child: Text(
+                      'FASE ${fase.orden} · ${fase.duracionSegundos}s',
+                      style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 13,
                         fontWeight: FontWeight.w800,
@@ -111,15 +127,18 @@ class PasoCalmWidget extends StatelessWidget {
                     size: 22,
                   ),
                   const SizedBox(width: 8),
-                  Text(
-                    isGl ? 'Consigna para o Docente' : 'Consigna para el Docente',
+                  Expanded(
+                      child: Text(
+                    isGl
+                        ? 'Consigna para o Docente'
+                        : 'Consigna para el Docente',
                     style: const TextStyle(
                       fontFamily: AppTheme.fontFamily,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w700,
                       color: AppTheme.backstageAccent,
                     ),
-                  ),
+                  )),
                 ],
               ),
               const SizedBox(height: 12),
@@ -132,6 +151,14 @@ class PasoCalmWidget extends StatelessWidget {
                   color: AppTheme.backstageTextPrimary,
                   height: 1.4,
                 ),
+              ),
+              BotonEscuchar(
+                audioService: audioService,
+                texto: consigna,
+                language: language,
+                compacto: true,
+                descripcion:
+                    isGl ? 'a consigna da calma' : 'la consigna de la calma',
               ),
             ],
           ),
@@ -210,7 +237,8 @@ class PasoCalmWidget extends StatelessWidget {
                 size: 22,
               ),
               const SizedBox(width: 8),
-              Text(
+              Expanded(
+                  child: Text(
                 isGl
                     ? 'Materiais Naturais da Contorna'
                     : 'Materiales Naturales del Entorno',
@@ -220,7 +248,7 @@ class PasoCalmWidget extends StatelessWidget {
                   fontWeight: FontWeight.w800,
                   color: AppTheme.backstageTextPrimary,
                 ),
-              ),
+              )),
             ],
           ),
           const SizedBox(height: 12),
@@ -264,10 +292,12 @@ class PasoCalmWidget extends StatelessWidget {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        '📍 ',
-                        style: TextStyle(fontSize: 14),
+                      const Icon(
+                        Icons.place_outlined,
+                        size: 16,
+                        color: AppTheme.backstageTextSecondary,
                       ),
+                      const SizedBox(width: 6),
                       Expanded(
                         child: Text(
                           '${isGl ? 'Procedencia:' : 'Procedencia:'} ${mat.procedencia.resolve(language)}',
@@ -321,10 +351,13 @@ class PasoCalmWidget extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
-                        color: AppTheme.backstageWarning.withValues(alpha: 0.12),
-                        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                        color:
+                            AppTheme.backstageWarning.withValues(alpha: 0.12),
+                        borderRadius:
+                            BorderRadius.circular(AppTheme.radiusField),
                         border: Border.all(
-                          color: AppTheme.backstageWarning.withValues(alpha: 0.6),
+                          color:
+                              AppTheme.backstageWarning.withValues(alpha: 0.6),
                         ),
                       ),
                       child: Row(
@@ -406,7 +439,9 @@ class PasoCalmWidget extends StatelessWidget {
               label: Text(
                 isPlayingCalmAudio
                     ? (isGl ? 'Deter Son de Calma' : 'Detener Sonido de Calma')
-                    : (isGl ? 'Reproducir Sons da Fraga / Calma' : 'Reproducir Sonidos del Bosque / Calma'),
+                    : (isGl
+                        ? 'Reproducir Sons da Fraga / Calma'
+                        : 'Reproducir Sonidos del Bosque / Calma'),
                 style: const TextStyle(
                   fontFamily: AppTheme.fontFamily,
                   fontSize: 15,

@@ -6,7 +6,7 @@ Adversarially challenge domain models, loader, and repository for Milestone 2 (s
 ## 🔒 My Identity
 - Archetype: teamwork_preview_challenger
 - Roles: critic, specialist, M2 Model & Repo Challenger
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m2_2/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_challenger_m2_2/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: M2
 - Instance: 2 of 2 (Challenger 2)

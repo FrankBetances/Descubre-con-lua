@@ -6,7 +6,7 @@ Perform an independent forensic integrity audit on all Milestone 2 deliverables 
 ## 🔒 My Identity
 - Archetype: forensic_auditor
 - Roles: critic, specialist, auditor
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_auditor_m2_1
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_auditor_m2_1
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Target: Milestone 2 Deliverables
 

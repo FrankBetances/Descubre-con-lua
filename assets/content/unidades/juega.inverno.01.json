@@ -1,0 +1,376 @@
+{
+  "id": "juega.inverno.01",
+  "tramoEtario": "0-3",
+  "orden": 4,
+  "titulo": {
+    "gl": "Cascabeis, mantas e aire de inverno",
+    "es": "Cascabeles, mantas y aire de invierno"
+  },
+  "subtitulo": {
+    "gl": "Unidade de contrastes: rápido e lento, forte e suave, frío e quente",
+    "es": "Unidad de contrastes: rápido y lento, fuerte y suave, frío y caliente"
+  },
+  "descripcion": {
+    "gl": "Unidade de decembro arredor do contraste. Cascabeis que soan forte e mans que se paran; manta quente e aire frío da fiestra. Remata sempre coa calma, porque en decembro a aula vén acelerada da rúa.",
+    "es": "Unidad de diciembre en torno al contraste. Cascabeles que suenan fuerte y manos que se paran; manta caliente y aire frío de la ventana. Termina siempre con la calma, porque en diciembre el aula viene acelerada de la calle."
+  },
+  "cancionPulso": {
+    "titulo": {
+      "gl": "Soa o cascabel",
+      "es": "Suena el cascabel"
+    },
+    "letraConPulsos": {
+      "gl": "* Soa, * soa, * soa * o cas-ca-bel,\n* soa * for-te * e para * ou-tra vez.\n* Man-ta * quen-te, * ollos * pe-cha-dos,\n* dor-me, * dor-me, * e * es-per-ta.",
+      "es": "* Sue-na, * sue-na, * sue-na * el cas-ca-bel,\n* sue-na * fuer-te * y para * o-tra vez.\n* Man-ta * ca-lien-te, * ojos * ce-rra-dos,\n* duer-me, * duer-me, * y * des-pier-ta."
+    },
+    "bpm": 72,
+    "consignaDocente": {
+      "gl": "As dúas primeiras liñas van con enerxía e as dúas últimas moi baixiño. O cambio de volume é o que se está a ensinar.",
+      "es": "Las dos primeras líneas van con energía y las dos últimas muy bajito. El cambio de volumen es lo que se está enseñando."
+    },
+    "audioAsset": {
+      "gl": "assets/voice/gl_tutor_0879c78d_152.m4a",
+      "es": "assets/voice/es_tutor_7912e922_171.m4a"
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa e a noite máis longa",
+      "es": "Lúa y la noche más larga"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "Fóra fai frío e as rúas de Vigo están cheas de luces. A gata Lúa pega o nariz ao cristal e ponse frío, frío.",
+          "es": "Fuera hace frío y las calles de Vigo están llenas de luces. La gata Lúa pega la nariz al cristal y se le queda fría, fría."
+        },
+        "preguntaComprension": {
+          "gl": "Como ten Lúa o nariz? Tocamos o cristal nós tamén?",
+          "es": "¿Cómo tiene Lúa la nariz? ¿Tocamos el cristal nosotros también?"
+        },
+        "ingles": [
+          "Cold",
+          "Nose"
+        ],
+        "lamina": "conto_inverno_1"
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Lúa colle a súa pulseira de cascabeis e móvea moi rápido: ring, ring, ring! Despois para de golpe e todo queda en silencio.",
+          "es": "Lúa coge su pulsera de cascabeles y la mueve muy rápido: ¡ring, ring, ring! Después para de golpe y todo se queda en silencio."
+        },
+        "preguntaComprension": {
+          "gl": "Soa rápido ou amodo? Que pasa cando Lúa para?",
+          "es": "¿Suena rápido o despacio? ¿Qué pasa cuando Lúa para?"
+        },
+        "ingles": [
+          "Bell",
+          "Ring",
+          "Ring bells"
+        ],
+        "lamina": "conto_inverno_2"
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "Debaixo da manta suave, Lúa está quente e pecha os ollos. Durme un pouquiño... e esperta cun bocexo grande.",
+          "es": "Debajo de la manta suave, Lúa está calentita y cierra los ojos. Duerme un poquito... y despierta con un bostezo grande."
+        },
+        "preguntaComprension": {
+          "gl": "Como está Lúa debaixo da manta? Bocexamos todos xuntos?",
+          "es": "¿Cómo está Lúa debajo de la manta? ¿Bostezamos todos juntos?"
+        },
+        "ingles": [
+          "Warm",
+          "Sleep",
+          "Wake up"
+        ],
+        "lamina": "conto_inverno_3"
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "cascabel",
+      "palabra": {
+        "gl": "Cascabel",
+        "es": "Cascabel"
+      },
+      "definicionBreve": {
+        "gl": "Bóla pequena de metal que soa ao movela.",
+        "es": "Bola pequeña de metal que suena al moverla."
+      },
+      "ingles": "Bell",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_a1562429_8.m4a",
+        "es": "assets/voice/es_slow_a1562429_8.m4a"
+      },
+      "lamina": "cascabel"
+    },
+    {
+      "id": "manta",
+      "palabra": {
+        "gl": "Manta",
+        "es": "Manta"
+      },
+      "definicionBreve": {
+        "gl": "Tea grosa e quente coa que nos tapamos para durmir.",
+        "es": "Tela gruesa y caliente con la que nos tapamos para dormir."
+      },
+      "ingles": "Blanket",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_b5190140_5.m4a",
+        "es": "assets/voice/es_slow_b5190140_5.m4a"
+      },
+      "lamina": "manta"
+    },
+    {
+      "id": "frio",
+      "palabra": {
+        "gl": "Frío",
+        "es": "Frío"
+      },
+      "definicionBreve": {
+        "gl": "O que se sente ao tocar o cristal da fiestra no inverno.",
+        "es": "Lo que se siente al tocar el cristal de la ventana en invierno."
+      },
+      "ingles": "Cold",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_17ace9c1_4.m4a",
+        "es": "assets/voice/es_slow_17ace9c1_4.m4a"
+      },
+      "lamina": "frio"
+    },
+    {
+      "id": "quente",
+      "palabra": {
+        "gl": "Quente",
+        "es": "Caliente"
+      },
+      "definicionBreve": {
+        "gl": "O que se sente debaixo da manta ou nos brazos de alguén.",
+        "es": "Lo que se siente debajo de la manta o en los brazos de alguien."
+      },
+      "ingles": "Warm",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_03197f97_6.m4a",
+        "es": "assets/voice/es_slow_5e6135ee_8.m4a"
+      },
+      "lamina": "quente"
+    },
+    {
+      "id": "luz",
+      "palabra": {
+        "gl": "Luz",
+        "es": "Luz"
+      },
+      "definicionBreve": {
+        "gl": "O que alumea a rúa e a aula cando é de noite.",
+        "es": "Lo que ilumina la calle y el aula cuando es de noche."
+      },
+      "ingles": "Light",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_a51c9500_3.m4a",
+        "es": "assets/voice/es_slow_a51c9500_3.m4a"
+      },
+      "lamina": "luz"
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Onde está o cascabel?",
+        "es": "¿Dónde está el cascabel?"
+      },
+      "respuestaSugerida": {
+        "gl": "Xirar a cabeza cara ao son ou sinalar a man que o move.",
+        "es": "Girar la cabeza hacia el sonido o señalar la mano que lo mueve."
+      },
+      "consejoDocente": {
+        "gl": "Facelo soar detrás dun ombreiro e despois do outro: buscar o son coa cabeza xa é responder.",
+        "es": "Hacerlo sonar detrás de un hombro y luego del otro: buscar el sonido con la cabeza ya es responder."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Como está a manta: fría ou quente?",
+        "es": "¿Cómo está la manta: fría o caliente?"
+      },
+      "respuestaSugerida": {
+        "gl": "Tocala, apertala contra a cara ou dicir 'quente'.",
+        "es": "Tocarla, apretarla contra la cara o decir 'caliente'."
+      },
+      "consejoDocente": {
+        "gl": "Dar a tocar antes as dúas cousas, o cristal e a manta. Sen contraste non hai resposta posible.",
+        "es": "Dar a tocar antes las dos cosas, el cristal y la manta. Sin contraste no hay respuesta posible."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Que hai que facer para que o cascabel non soe nada?",
+        "es": "¿Qué hay que hacer para que el cascabel no suene nada?"
+      },
+      "respuestaSugerida": {
+        "gl": "Non movelo, apertalo coa man ou deixalo no chan.",
+        "es": "No moverlo, apretarlo con la mano o dejarlo en el suelo."
+      },
+      "consejoDocente": {
+        "gl": "É a mesma aprendizaxe da parada de outubro, agora co son en vez de co corpo.",
+        "es": "Es el mismo aprendizaje de la parada de octubre, ahora con el sonido en vez de con el cuerpo."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "Forte e baixiño, frío e quente",
+      "es": "Fuerte y bajito, frío y caliente"
+    },
+    "materiales": [
+      {
+        "gl": "Pulseiras de cascabeis cosidas a cinta ancha, revisadas antes de cada uso.",
+        "es": "Pulseras de cascabeles cosidas a cinta ancha, revisadas antes de cada uso."
+      },
+      {
+        "gl": "Unha manta de la ou polar, dobrada, quente ao tacto.",
+        "es": "Una manta de lana o polar, doblada, caliente al tacto."
+      },
+      {
+        "gl": "Dúas botellas pechadas: unha con auga morna e outra con auga fresca.",
+        "es": "Dos botellas cerradas: una con agua templada y otra con agua fresca."
+      },
+      {
+        "gl": "Unha lanterna de luz cálida para proxectar no teito.",
+        "es": "Una linterna de luz cálida para proyectar en el techo."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Mover os cascabeis todas xuntas mentres soa a canción.",
+        "es": "Mover los cascabeles todas juntas mientras suena la canción."
+      },
+      {
+        "gl": "Parar de golpe e escoitar o silencio contando ata tres.",
+        "es": "Parar de golpe y escuchar el silencio contando hasta tres."
+      },
+      {
+        "gl": "Tocar as dúas botellas coas palmas e nomear frío e quente.",
+        "es": "Tocar las dos botellas con las palmas y nombrar frío y caliente."
+      },
+      {
+        "gl": "Deitarse baixo a manta coa lanterna acesa no teito ata calmar.",
+        "es": "Tumbarse bajo la manta con la linterna encendida en el techo hasta calmarse."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. Os cascabeis van SEMPRE cosidos a unha cinta ancha, nunca soltos: un cascabel solto é un risco de atragoamento. Revísese a costura antes de cada sesión e retírese calquera pulseira con fío frouxo. A auga das botellas non pasa dos 37 °C e as botellas van precintadas.",
+      "es": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. Los cascabeles van SIEMPRE cosidos a una cinta ancha, nunca sueltos: un cascabel suelto es un riesgo de atragantamiento. Revísese la costura antes de cada sesión y retírese cualquier pulsera con hilo flojo. El agua de las botellas no pasa de 37 °C y las botellas van precintadas."
+    },
+    "objetivoSensorial": {
+      "gl": "Discriminar intensidade sonora e temperatura, e regular a activación.",
+      "es": "Discriminar intensidad sonora y temperatura, y regular la activación."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Rápido e lento: o ritmo do cascabel",
+      "es": "Rápido y lento: el ritmo del cascabel"
+    },
+    "descripcion": {
+      "gl": "Primeira noción de velocidade co propio corpo: a mesma man move o mesmo cascabel rápido e despois moi a modo.",
+      "es": "Primera noción de velocidad con el propio cuerpo: la misma mano mueve el mismo cascabel rápido y después muy despacio."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Axitar moi rápido contando ata tres, e despois moverse a cámara lenta.",
+        "es": "Agitar muy rápido contando hasta tres, y después moverse a cámara lenta."
+      },
+      {
+        "gl": "Deixar que unha crianza marque o ritmo e que as demais a sigan.",
+        "es": "Dejar que una criatura marque el ritmo y que las demás la sigan."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Rápido / Lento, Forte / Baixiño, Frío / Quente",
+      "es": "Rápido / Lento, Fuerte / Bajito, Frío / Caliente"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe fixemos soar os cascabeis moi forte e despois paramos de golpe, e acabamos moi tranquilos debaixo dunha manta quente coa gata Lúa.",
+      "es": "Hoy hicimos sonar los cascabeles muy fuerte y después paramos de golpe, y acabamos muy tranquilos debajo de una manta caliente con la gata Lúa."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "Ao arroupar na cama, pasar a manta pola cara e polas mans dicindo 'Warm, soft blanket. Sleep, sleep, wake up!'.",
+        "es": "Al arropar en la cama, pasar la manta por la cara y por las manos diciendo 'Warm, soft blanket. Sleep, sleep, wake up!'."
+      },
+      {
+        "gl": "Ao saír á rúa, tocar xuntos algo frío —a varanda, o cristal do coche— e nomear o frío antes de subir ao carriño.",
+        "es": "Al salir a la calle, tocar juntos algo frío —la barandilla, el cristal del coche— y nombrar el frío antes de subir al carrito."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "En decembro hai moito ruído, moita visita e pouca rutina. Un rato curto e tranquilo cada día rende máis ca unha tarde enteira de estímulos.",
+      "es": "En diciembre hay mucho ruido, mucha visita y poca rutina. Un rato corto y tranquilo cada día rinde más que una tarde entera de estímulos."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_2_descubrimento_contorna"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA2.1",
+      "CA2.2"
+    ]
+  },
+  "ingles": {
+    "frase": "Warm, soft blanket. Sleep, sleep, wake up!",
+    "porFase": {
+      "pulso": [
+        "Bell",
+        "Ring",
+        "Ring bells"
+      ],
+      "conto": [
+        "Cold",
+        "Warm",
+        "Bell",
+        "Sleep"
+      ],
+      "preguntas": [
+        "Cold",
+        "Warm"
+      ],
+      "exploracion": [
+        "Ring bells",
+        "Sleep tight"
+      ],
+      "matematicas": [
+        "Ring",
+        "Sleep"
+      ],
+      "ponteCasa": [
+        "Warm, soft blanket. Sleep, sleep, wake up!",
+        "Wake up!"
+      ]
+    },
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-13",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

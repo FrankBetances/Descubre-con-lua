@@ -1,12 +1,20 @@
-import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import '../../data/models/calendario_model.dart';
 import 'local_store.dart';
 
-/// Almacenamiento local soberano y offline para el registro del Calendario Sincronizado.
+/// El registro del Calendario Escola·Fogar, en la carpeta privada de la app.
 ///
-/// **Privacidad estricta:** Solo almacena fechas y marcas booleanas de actividad
-/// ('aula' y 'hogar'). Cero identificadores, cero nombres y cero conexión de red.
+/// **Qué guarda, y nada más:** por cada día en que alguien marcó algo, la fecha
+/// en `aaaa-mm-dd` —sin hora— y dos booleanos, `aula` y `hogar`. No hay nombre,
+/// ni edad, ni identificador de aparato, ni nada de ninguna criatura: dice
+/// cuánto se usó la app, nunca quién la usó. Vive en `getFilesDir()`, que
+/// ninguna otra app puede leer, y no puede salir del aparato porque el APK no
+/// tiene permiso de INTERNET.
+///
+/// Esto está declarado en `docs/privacy.html` y en el formulario de Seguridad
+/// de los datos de Play. **Si añades una clave a este fichero, actualiza los dos
+/// en el mismo cambio**, o lo declarado y lo compilado dejan de coincidir. Lo
+/// vigila `test/privacy/privacy_manifest_test.dart`.
 class CalendarioStore extends ChangeNotifier {
   static const String _nombreFichero = 'calendario_progreso.json';
 
@@ -74,11 +82,37 @@ class CalendarioStore extends ChangeNotifier {
     return EstadoEstimulacion.sinRegistro;
   }
 
+  /// El estado de un MES entero: lo mejor que se alcanzó cualquier día de ese
+  /// mes del año escolar.
+  ///
+  /// La tarjeta del carrusel preguntaba por el día 15 de cada mes y enseñaba
+  /// «sen rexistro» en un mes con la mitad de los días trabajados. Un mes no
+  /// tiene el estado de su día 15.
+  EstadoEstimulacion estadoParaMes(int anho, int mes) {
+    final prefijo = '$anho-${mes.toString().padLeft(2, '0')}-';
+    var huboAula = false;
+    var huboFogar = false;
+    var huboDobre = false;
+    for (final entrada in _registros.entries) {
+      if (!entrada.key.startsWith(prefijo)) continue;
+      final aula = entrada.value['aula'] == true;
+      final fogar = entrada.value['hogar'] == true;
+      if (aula && fogar) huboDobre = true;
+      if (aula) huboAula = true;
+      if (fogar) huboFogar = true;
+    }
+    if (huboDobre) return EstadoEstimulacion.dobleEstimulacion;
+    if (huboAula) return EstadoEstimulacion.soloAula;
+    if (huboFogar) return EstadoEstimulacion.soloHogar;
+    return EstadoEstimulacion.sinRegistro;
+  }
+
   /// Registra la realización de una asamblea en el aula para una fecha (por defecto hoy).
   Future<bool> registrarAula([DateTime? fecha]) async {
     final f = fecha ?? DateTime.now();
     final clave = _claveFecha(f);
-    final reg = _registros.putIfAbsent(clave, () => {'aula': false, 'hogar': false});
+    final reg =
+        _registros.putIfAbsent(clave, () => {'aula': false, 'hogar': false});
     final nuevo = !reg['aula']!;
     reg['aula'] = true;
     notifyListeners();
@@ -90,7 +124,8 @@ class CalendarioStore extends ChangeNotifier {
   Future<bool> registrarHogar([DateTime? fecha]) async {
     final f = fecha ?? DateTime.now();
     final clave = _claveFecha(f);
-    final reg = _registros.putIfAbsent(clave, () => {'aula': false, 'hogar': false});
+    final reg =
+        _registros.putIfAbsent(clave, () => {'aula': false, 'hogar': false});
     final nuevo = !reg['hogar']!;
     reg['hogar'] = true;
     notifyListeners();
@@ -102,7 +137,8 @@ class CalendarioStore extends ChangeNotifier {
   Future<void> toggleHogar([DateTime? fecha]) async {
     final f = fecha ?? DateTime.now();
     final clave = _claveFecha(f);
-    final reg = _registros.putIfAbsent(clave, () => {'aula': false, 'hogar': false});
+    final reg =
+        _registros.putIfAbsent(clave, () => {'aula': false, 'hogar': false});
     reg['hogar'] = !(reg['hogar'] == true);
     notifyListeners();
     await _guardar();
@@ -110,7 +146,9 @@ class CalendarioStore extends ChangeNotifier {
 
   /// Total de días en los que se alcanzó la Doble Estimulación (Aula + Hogar).
   int get totalDobleEstimulacion {
-    return _registros.values.where((r) => r['aula'] == true && r['hogar'] == true).length;
+    return _registros.values
+        .where((r) => r['aula'] == true && r['hogar'] == true)
+        .length;
   }
 
   /// Total de asambleas realizadas en el aula.
@@ -122,4 +160,12 @@ class CalendarioStore extends ChangeNotifier {
   int get totalSesionesHogar {
     return _registros.values.where((r) => r['hogar'] == true).length;
   }
+
+  /// Las tres cuentas, que es lo único que sale de aquí hacia las medallas.
+  /// Las fechas no viajan: se quedan en este objeto.
+  ContadoresCalendario get contadores => ContadoresCalendario(
+        diasAula: totalSesionesAula,
+        diasFogar: totalSesionesHogar,
+        diasDobres: totalDobleEstimulacion,
+      );
 }

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import '../../../core/localization/app_language.dart';
+import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
 
 /// Tarxeta pedagóxica comparativa de Modelado Indirecto (Recast).
 ///
 /// Ilustra de xeito visual e amigable a diferenza entre:
-/// - ❌ Corrección frontal punitiva (xera bloqueo e ansiedade).
-/// - ✅ Modelado indirecto afectivo con movemento (recast) sen esixir repetición.
+/// - Corrección frontal punitiva (xera bloqueo e ansiedade).
+/// - Modelado indirecto afectivo con movemento (recast) sen esixir repetición.
 ///
 /// Incorpora tamén o principio «Time and Place» (3 a 5 minutos) e os 5 segundos
 /// de agarda activa para respectar o tempo de procesamento da crianza.
@@ -26,34 +27,28 @@ class RecastGuiaCard extends StatelessWidget {
       expresionMenor: LocalizedString(
         gl: '«Abrigo chan!»',
         es: '«¡Abrigo suelo!»',
-        en: '«Coat floor!»',
       ),
       modeladoIndirecto: LocalizedString(
         gl: '«Si! O abrigo na percha: Up on the hook, zip!» (Acompañar co xesto de colgar e subir a cremalleira sen pedir que repita).',
         es: '«¡Sí! El abrigo en la percha: Up on the hook, zip!» (Acompañar con el gesto de colgar y subir la cremallera sin pedir que repita).',
-        en: '«Yes! Coat on the hook: Up on the hook, zip!» (Accompany with hanging gesture without demanding repetition).',
       ),
       consejoEvitar: LocalizedString(
-        gl: '«Non se di así! Mal, tes que dicir: mamá, colle o abrigo...» (Bloquea o filtro afectivo e xera rexeitamento comunicativo).',
-        es: '«¡No se dice así! Mal, tienes que decir: mamá, coge el abrigo...» (Bloquea el filtro afectivo y genera rechazo comunicativo).',
-        en: '«That\'s wrong! Say it properly...» (Raises affective filter and triggers communication avoidance).',
+        gl: '«Non se di así! Mal, tes que dicir: mamá, colle o abrigo...» (Convértese en exame: a crianza cala e deixa de probar).',
+        es: '«¡No se dice así! Mal, tienes que decir: mamá, coge el abrigo...» (Se convierte en examen: el niño calla y deja de probar).',
       ),
     ),
     PautaRecast(
       expresionMenor: LocalizedString(
         gl: '«Babi gardar!»',
         es: '«¡Babi guardar!»',
-        en: '«Smock put away!»',
       ),
       modeladoIndirecto: LocalizedString(
         gl: '«Moi ben! Dobramos o babi e ao cesto: Fold the smock and put it in the basket! Bravo!»',
         es: '«¡Muy bien! Doblamos el babi y al cesto: Fold the smock and put it in the basket! ¡Bravo!»',
-        en: '«Great job! Fold the smock and put it in the basket! Wonderful!»',
       ),
       consejoEvitar: LocalizedString(
         gl: '«Como se di babi en inglés? Dimo antes de merendar!» (Os exames directos aumentan a presión e cortan o diálogo).',
         es: '«¿Cómo se dice babi en inglés? ¡Dímelo antes de merendar!» (Los exámenes directos aumentan la presión y cortan el diálogo).',
-        en: '«How do you say smock in English? Tell me now!» (Direct testing increases stress and interrupts natural bonding).',
       ),
     ),
   ];
@@ -61,9 +56,8 @@ class RecastGuiaCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
-    final listaPautas = (pautas != null && pautas!.isNotEmpty)
-        ? pautas!
-        : _pautasPorDefecto;
+    final listaPautas =
+        (pautas != null && pautas!.isNotEmpty) ? pautas! : _pautasPorDefecto;
 
     return Card(
       elevation: 0,
@@ -149,8 +143,8 @@ class RecastGuiaCard extends StatelessWidget {
                   Expanded(
                     child: Text(
                       isGl
-                          ? 'Regra de Ouro: Agarda activa de 5 segundos antes de axudar. O cerebro da crianza precisa tempo para procesar e organizar o movemento.'
-                          : 'Regla de Oro: Espera activa de 5 segundos antes de ayudar. El cerebro infantil necesita tiempo para procesar y organizar el movimiento.',
+                          ? 'Regra de Ouro: agarda 5 segundos antes de axudar. Dálle tempo a responder pola súa conta.'
+                          : 'Regla de Oro: espera 5 segundos antes de ayudar. Dale tiempo a responder por su cuenta.',
                       style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 14,
@@ -187,7 +181,8 @@ class RecastGuiaCard extends StatelessWidget {
                           color: AppTheme.textSecondary,
                         ),
                         const SizedBox(width: 8),
-                        Text(
+                        Expanded(
+                            child: Text(
                           isGl ? 'A crianza di:' : 'La criatura dice:',
                           style: const TextStyle(
                             fontFamily: AppTheme.fontFamily,
@@ -195,7 +190,7 @@ class RecastGuiaCard extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                             color: AppTheme.textSecondary,
                           ),
-                        ),
+                        )),
                       ],
                     ),
                     const SizedBox(height: 6),
@@ -237,8 +232,8 @@ class RecastGuiaCard extends StatelessWidget {
                               children: [
                                 Text(
                                   isGl
-                                      ? '❌ Evitar (corrección frontal):'
-                                      : '❌ Evitar (corrección frontal):',
+                                      ? 'Evitar (corrección frontal):'
+                                      : 'Evitar (corrección frontal):',
                                   style: const TextStyle(
                                     fontFamily: AppTheme.fontFamily,
                                     fontSize: 12,
@@ -291,8 +286,8 @@ class RecastGuiaCard extends StatelessWidget {
                               children: [
                                 Text(
                                   isGl
-                                      ? '✅ Acompañar con Recast (Agarimo e movemento):'
-                                      : '✅ Acompañar con Recast (Afecto y movimiento):',
+                                      ? 'Acompañar con Recast (Agarimo e movemento):'
+                                      : 'Acompañar con Recast (Afecto y movimiento):',
                                   style: const TextStyle(
                                     fontFamily: AppTheme.fontFamily,
                                     fontSize: 12,

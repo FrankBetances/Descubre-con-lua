@@ -36,6 +36,25 @@ run_gate() {
   fi
 }
 
+# Las dependencias, ANTES del primer gate. Sin `.dart_tool/package_config.json`,
+# `dart format` no puede resolver el `include` de analysis_options.yaml, escupe
+# un «Package resolution error» por fichero y da los 95 por CAMBIADOS: el gate
+# sale rojo con el código perfectamente formateado.
+#
+# Hasta ahora no pasaba porque `package_config.json` estaba TRACKEADO, con la
+# ruta absoluta de la máquina que lo generó por última vez. Al sacarlo del
+# índice —que es donde tiene que estar, porque es un fichero de máquina— quedó
+# a la vista que este script nunca resolvió sus propias dependencias: se
+# apoyaba en que alguien hubiera corrido `flutter pub get` antes. El workflow de
+# CI sí lo hace; un clon nuevo, no.
+#
+# Es barato: con las dependencias ya resueltas no hace nada.
+printf '\n\033[1m── flutter pub get\033[0m\n'
+if ! flutter pub get; then
+  echo "No se pudieron resolver las dependencias; los gates no pueden correr."
+  exit 1
+fi
+
 # ---------------------------------------------------------------- Dart gates
 run_gate "dart format" dart format --output=none --set-exit-if-changed .
 run_gate "flutter analyze" flutter analyze
@@ -49,6 +68,18 @@ run_gate "flutter test" flutter test --exclude-tags capturas
 
 # ------------------------------------------------------------- content gates
 run_gate "contact address" python3 tools/check_contact_email.py
+# Nace del Calendario, que llegó al aparato como un disco girando para siempre
+# porque `assets/content/calendario/` no estaba en pubspec.yaml. Un asset que
+# falta no rompe la compilación: rompe una pantalla, en silencio.
+run_gate "every asset asked for exists and is packaged" python3 tools/check_bundled_assets.py
+# Nace de la barra de la toalla, que no se pintaba porque el formato usaba `w`
+# para el ancho del rectángulo Y para el grosor del contorno: clave repetida,
+# JSON se queda con la última y el fichero se lee perfectamente bien.
+run_gate "every lamina shape actually paints" python3 tools/check_laminas.py
+# Nace del aviso de seguridad del aula, que llevaba un ⚠️ del teclado JUSTO al
+# lado de un icono del set propio diciendo lo mismo: dos avisos y dos dibujos,
+# distintos en cada fabricante. Regla 5 del CLAUDE.md.
+run_gate "no system emoji used as iconography" python3 tools/check_no_emoji.py
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py

@@ -23,11 +23,30 @@ class LogoInstitucional extends StatefulWidget {
 
   final double alto;
 
+  /// Para los originales que vienen con fondo blanco opaco (sin canal alfa).
+  /// Sobre una tarjeta tintada, un JPEG blanco se ve como un recuadro blanco
+  /// pegado; con esto se apoya en una placa blanca con esquinas redondeadas,
+  /// que es como se coloca un logotipo ajeno sin tocarlo. Los que ya traen
+  /// transparencia no la necesitan.
+  final bool sobrePlaca;
+
+  /// De qué color es esa placa. Blanca por defecto, que es lo que piden los
+  /// originales con fondo blanco opaco.
+  ///
+  /// Existe por el escudo del Dr. Betances, que está dibujado para fondo
+  /// OSCURO: tiene un cuervo blanco y un círculo blanco. Sobre la tarjeta clara
+  /// de los créditos esas dos piezas desaparecían y quedaba medio escudo, el
+  /// cuervo negro suelto. Un logotipo al que le falta la mitad no acredita a
+  /// nadie. La placa oscura es la forma de colocarlo sin retocar el dibujo.
+  final Color colorPlaca;
+
   const LogoInstitucional({
     super.key,
     required this.fichero,
     this.etiqueta,
     this.alto = 44,
+    this.sobrePlaca = false,
+    this.colorPlaca = Colors.white,
   });
 
   @override
@@ -73,19 +92,30 @@ class _LogoInstitucionalState extends State<LogoInstitucional> {
   @override
   Widget build(BuildContext context) {
     if (_hay != true) return const SizedBox.shrink();
+    final imagen = Image.asset(
+      _ruta,
+      height: widget.alto,
+      fit: BoxFit.contain,
+      // Que falte en tiempo de ejecución ya no debería pasar —para eso está
+      // la comprobación de arriba— pero un error de imagen no puede tumbar
+      // los créditos.
+      errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+    );
+
     return Semantics(
       image: true,
       label: widget.etiqueta,
       excludeSemantics: widget.etiqueta == null,
-      child: Image.asset(
-        _ruta,
-        height: widget.alto,
-        fit: BoxFit.contain,
-        // Que falte en tiempo de ejecución ya no debería pasar —para eso está
-        // la comprobación de arriba— pero un error de imagen no puede tumbar
-        // los créditos.
-        errorBuilder: (_, __, ___) => const SizedBox.shrink(),
-      ),
+      child: widget.sobrePlaca
+          ? Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+              decoration: BoxDecoration(
+                color: widget.colorPlaca,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: imagen,
+            )
+          : imagen,
     );
   }
 }

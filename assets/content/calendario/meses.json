@@ -1,0 +1,477 @@
+{
+  "version": 1,
+  "id": "calendario.meses.01",
+  "nota": "Los diez meses del curso (septiembre a junio) del Calendario Escola·Fogar. Contenido, no código: la pantalla lo lee de aquí. El bloque `ingles` es la capa L3 y es LA FUENTE de las grabaciones en inglés: cada palabra de `lexico`, cada orden de `tpr` y la `frase` tienen una grabación en assets/voice/, generada por tools/generate_voice_assets.py. Si cambias una cadena inglesa aquí, su grabación deja de existir y el gate check_voice_coverage.py lo dice. El inglés NO es lengua de interfaz: la app se lee en gallego o castellano y el inglés solo se escucha, para que la persona adulta lo pronuncie antes de decirselo a la criatura. El campo `unidad` dice QUÉ unidad de aula se dirige ese mes, por su id. Antes se emparejaba por `orden`, y el `orden` de una unidad es su sitio en el catálogo, no el mes del curso: la unidad del mar acababa cayendo en septiembre. Un mes sin `unidad` se ve «en preparación» y no abre nada.",
+  "meses": [
+    {
+      "orden": 1,
+      "mesCalendario": 9,
+      "icono": "saudo",
+      "nombreMes": {
+        "gl": "Setembro",
+        "es": "Septiembre"
+      },
+      "centroInteres": {
+        "gl": "Benvida, caricias suaves e novos amigos",
+        "es": "Bienvenida, caricias suaves y nuevos amigos"
+      },
+      "objetivoPedagogico": {
+        "gl": "Vínculo afectivo, adaptación escolar e primeiras fórmulas de saúdo en inglés con palmas asistidas.",
+        "es": "Vínculo afectivo, adaptación escolar y primeras fórmulas de saludo en inglés con palmas asistidas."
+      },
+      "actividadAula": {
+        "gl": "Asemblea en círculo con cinta elástica. Subir mans con \"Up\" e baixar con \"Down\".",
+        "es": "Asamblea en círculo con cinta elástica. Subir manos con \"Up\" y bajar con \"Down\"."
+      },
+      "actividadHogar": {
+        "gl": "Rutina do calzado: elevar os pés con \"One shoe, two shoes, up! Push, push!\".",
+        "es": "Rutina del calzado: elevar los pies con \"One shoe, two shoes, up! Push, push!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Cambio de roupa ou calzado da mañá",
+        "es": "Cambio de ropa o calzado de la mañana"
+      },
+      "minutosSugeridos": 3,
+      "unidad": "juega.benvida.01",
+      "ingles": {
+        "lexico": [
+          "Hello",
+          "Bye-bye",
+          "Up",
+          "Down",
+          "Clap",
+          "Gentle"
+        ],
+        "tpr": [
+          "Stand up",
+          "Sit down",
+          "Clap hands"
+        ],
+        "frase": "One shoe, two shoes, up! Push, push!"
+      }
+    },
+    {
+      "orden": 2,
+      "mesCalendario": 10,
+      "icono": "corpo",
+      "nombreMes": {
+        "gl": "Outubro",
+        "es": "Octubre"
+      },
+      "centroInteres": {
+        "gl": "O meu pequeno corpo en movemento",
+        "es": "Mi pequeño cuerpo en movimiento"
+      },
+      "objetivoPedagogico": {
+        "gl": "Esquema corporal, propiocepción e dinámica de inhibición motriz (\"Freeze!\").",
+        "es": "Esquema corporal, propiocepción y dinámica de inhibición motriz (\"Freeze!\")."
+      },
+      "actividadAula": {
+        "gl": "Head, shoulders, knees and toes. Parada inmediata ao escoitar \"Freeze!\".",
+        "es": "Head, shoulders, knees and toes. Parada inmediata al escuchar \"Freeze!\"."
+      },
+      "actividadHogar": {
+        "gl": "No baño: masaxe suave na barriga e cóxegas nos pés con \"Soft tummy, tickle toes!\".",
+        "es": "En el baño: masaje suave en la barriga y cosquillas en los pies con \"Soft tummy, tickle toes!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Hora do baño ou masaxe antes de durmir",
+        "es": "Hora del baño o masaje antes de dormir"
+      },
+      "minutosSugeridos": 4,
+      "unidad": "juega.corpo.01",
+      "ingles": {
+        "lexico": [
+          "Head",
+          "Tummy",
+          "Toes",
+          "Eyes",
+          "Nose",
+          "Freeze"
+        ],
+        "tpr": [
+          "Touch your head",
+          "Shake hands",
+          "Freeze!"
+        ],
+        "frase": "Soft tummy, tickle toes!"
+      }
+    },
+    {
+      "orden": 3,
+      "mesCalendario": 11,
+      "icono": "follas",
+      "nombreMes": {
+        "gl": "Novembro",
+        "es": "Noviembre"
+      },
+      "centroInteres": {
+        "gl": "As follas de outono e o Magosto",
+        "es": "Las hojas de otoño y el Magosto"
+      },
+      "objetivoPedagogico": {
+        "gl": "Percepción sensorial da natureza atlántica (follas secas de carballo e castiñeiro).",
+        "es": "Percepción sensorial de la naturaleza atlántica (hojas secas de roble y castaño)."
+      },
+      "actividadAula": {
+        "gl": "Chuvia de follas de carballo: caer suave con \"Falling down\" e pisar forte en \"Crunch!\".",
+        "es": "Lluvia de hojas de roble: caer suave con \"Falling down\" y pisar fuerte en \"Crunch!\"."
+      },
+      "actividadHogar": {
+        "gl": "No paseo polo parque: recoller follas secas e facelas estalar con \"Crunch, crunch, crunch!\".",
+        "es": "En el paseo por el parque: recoger hojas secas y hacerlas crujir con \"Crunch, crunch, crunch!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Paseo polo parque ou de camiño á escola",
+        "es": "Paseo por el parque o de camino a la escuela"
+      },
+      "minutosSugeridos": 4,
+      "unidad": "juega.follas.01",
+      "ingles": {
+        "lexico": [
+          "Leaf",
+          "Falling",
+          "Wind",
+          "Crunch",
+          "Brown",
+          "Orange"
+        ],
+        "tpr": [
+          "Fall down",
+          "Walk softly",
+          "Crunch leaves"
+        ],
+        "frase": "Crunch, crunch, crunch!"
+      }
+    },
+    {
+      "orden": 4,
+      "mesCalendario": 12,
+      "icono": "inverno",
+      "nombreMes": {
+        "gl": "Decembro",
+        "es": "Diciembre"
+      },
+      "centroInteres": {
+        "gl": "Abrazos cálidos, campaíñas e o aire de inverno",
+        "es": "Abrazos cálidos, campanitas y el aire de invierno"
+      },
+      "objetivoPedagogico": {
+        "gl": "Contraste acústico e térmico (rápido/lento, forte/suave, frío/quente).",
+        "es": "Contraste acústico y térmico (rápido/lento, fuerte/suave, frío/cálido)."
+      },
+      "actividadAula": {
+        "gl": "Pulseiras de cascabeis: tremer rápido con \"Ring fast!\" e deitarse en silencio con \"Sleep\".",
+        "es": "Pulseras de cascabeles: temblar rápido con \"Ring fast!\" y tumbarse en silencio con \"Sleep\"."
+      },
+      "actividadHogar": {
+        "gl": "Ao arroupar na cama, coa manta suave: \"Warm, soft blanket. Sleep, sleep, wake up!\".",
+        "es": "Al arropar en la cama, con la manta suave: \"Warm, soft blanket. Sleep, sleep, wake up!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Ao deitarse na cama coa mantiña",
+        "es": "Al acostarse en la cama con la mantita"
+      },
+      "minutosSugeridos": 3,
+      "unidad": "juega.inverno.01",
+      "ingles": {
+        "lexico": [
+          "Cold",
+          "Warm",
+          "Bell",
+          "Ring",
+          "Sleep",
+          "Wake up"
+        ],
+        "tpr": [
+          "Ring bells",
+          "Sleep tight",
+          "Wake up!"
+        ],
+        "frase": "Warm, soft blanket. Sleep, sleep, wake up!"
+      }
+    },
+    {
+      "orden": 5,
+      "mesCalendario": 1,
+      "icono": "choiva",
+      "nombreMes": {
+        "gl": "Xaneiro",
+        "es": "Enero"
+      },
+      "centroInteres": {
+        "gl": "A roupa de abrigo, botas de chuvia e luvas",
+        "es": "La ropa de abrigo, botas de lluvia y manoplas"
+      },
+      "objetivoPedagogico": {
+        "gl": "Rutinas de autonomía e protección fronte á chuvia e o frío invernal de Galicia.",
+        "es": "Rutinas de autonomía y protección frente a la lluvia y el frío invernal de Galicia."
+      },
+      "actividadAula": {
+        "gl": "Mímica de poñer o abrigo cunha cremalleira imaxinaria (\"Zzzip!\") e pisar charcos con botas.",
+        "es": "Mímica de ponerse el abrigo con una cremallera imaginaria (\"Zzzip!\") y pisar charcos con botas."
+      },
+      "actividadHogar": {
+        "gl": "Antes de saír á rúa: \"Put on your hat! Now boots: stomp, stomp on the floor!\".",
+        "es": "Antes de salir a la calle: \"Put on your hat! Now boots: stomp, stomp on the floor!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Preparación para saír da casa",
+        "es": "Preparación para salir de casa"
+      },
+      "minutosSugeridos": 4,
+      "unidad": "juega.choiva.01",
+      "ingles": {
+        "lexico": [
+          "Coat",
+          "Boots",
+          "Hat",
+          "Put on",
+          "Take off",
+          "Big"
+        ],
+        "tpr": [
+          "Put on your hat",
+          "Zip your coat",
+          "Stomp your boots"
+        ],
+        "frase": "Put on your hat! Now boots: stomp, stomp on the floor!"
+      }
+    },
+    {
+      "orden": 6,
+      "mesCalendario": 2,
+      "icono": "animais",
+      "nombreMes": {
+        "gl": "Febreiro",
+        "es": "Febrero"
+      },
+      "centroInteres": {
+        "gl": "O reino animal e as festas do Entroido",
+        "es": "El reino animal y las fiestas del Entroido"
+      },
+      "objetivoPedagogico": {
+        "gl": "Locomoción zoomorfa, xogo simbólico e onomatopeas do Entroido.",
+        "es": "Locomoción zoomorfa, juego simbólico y onomatopeyas del Entroido."
+      },
+      "actividadAula": {
+        "gl": "Circuíto zoomorfo: saltar como ras (\"Ribbit!\"), voar de puntillas e pisar pesado como un oso.",
+        "es": "Circuito zoomorfo: saltar como ranas (\"Ribbit!\"), volar de puntillas y pisar pesado como un oso."
+      },
+      "actividadHogar": {
+        "gl": "Xogo de alfombra: gatear como un gato suave e saltar como unha ra con \"Sleepy cat, meow! Jump, frog!\".",
+        "es": "Juego de alfombra: gatear como un gato suave y saltar como una rana con \"Sleepy cat, meow! Jump, frog!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Xogo libre sobre a alfombra do salón",
+        "es": "Juego libre sobre la alfombra del salón"
+      },
+      "minutosSugeridos": 5,
+      "unidad": "juega.animais.01",
+      "ingles": {
+        "lexico": [
+          "Frog",
+          "Bird",
+          "Bear",
+          "Cat",
+          "Jump",
+          "Fly"
+        ],
+        "tpr": [
+          "Jump like a frog",
+          "Fly like a bird",
+          "Stomp like a bear"
+        ],
+        "frase": "Sleepy cat, meow! Jump, frog!"
+      }
+    },
+    {
+      "orden": 7,
+      "mesCalendario": 3,
+      "icono": "cores",
+      "nombreMes": {
+        "gl": "Marzo",
+        "es": "Marzo"
+      },
+      "centroInteres": {
+        "gl": "Cores, formas e alimentos sans",
+        "es": "Colores, formas y alimentos sanos"
+      },
+      "objetivoPedagogico": {
+        "gl": "Discriminación visual, cores primarias e hábitos de alimentación sensorial.",
+        "es": "Discriminación visual, colores primarios y hábitos de alimentación sensorial."
+      },
+      "actividadAula": {
+        "gl": "Aros de cores no chan: buscar círculos amarelos e tocalos coa punta do pé (\"Touch yellow!\").",
+        "es": "Aros de colores en el suelo: buscar círculos amarillos y tocarlos con la punta del pie (\"Touch yellow!\")."
+      },
+      "actividadHogar": {
+        "gl": "Na merenda con froita: mostrar un anaco de mazá vermella con \"Red apple, sweet and yummy!\".",
+        "es": "En la merienda con fruta: mostrar un trozo de manzana roja con \"Red apple, sweet and yummy!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Hora da merenda ou preparación da comida",
+        "es": "Hora de la merienda o preparación de la comida"
+      },
+      "minutosSugeridos": 4,
+      "unidad": "juega.cores.01",
+      "ingles": {
+        "lexico": [
+          "Red",
+          "Yellow",
+          "Circle",
+          "Sweet",
+          "Roll",
+          "Shake"
+        ],
+        "tpr": [
+          "Find something red",
+          "Roll the circle",
+          "Shake the bottle"
+        ],
+        "frase": "Red apple, sweet and yummy!"
+      }
+    },
+    {
+      "orden": 8,
+      "mesCalendario": 4,
+      "icono": "primavera",
+      "nombreMes": {
+        "gl": "Abril",
+        "es": "Abril"
+      },
+      "centroInteres": {
+        "gl": "O espertar da primavera, flores e o orballo",
+        "es": "El despertar de la primavera, flores y el orballo"
+      },
+      "objetivoPedagogico": {
+        "gl": "Sensibilización cutánea co orballo galego e xogo corporal de crecemento vexetal.",
+        "es": "Sensibilización cutánea con el orballo gallego y juego corporal de crecimiento vegetal."
+      },
+      "actividadAula": {
+        "gl": "Deitarse como sementes no chan e medrar a modo ata erguer os brazos como flores (\"Bloom!\").",
+        "es": "Tumbarse como semillas en el suelo y crecer despacio hasta abrir los brazos como flores (\"Bloom!\")."
+      },
+      "actividadHogar": {
+        "gl": "Ante a fiestra un día de choiva suave: tocar o cristal con \"Rain, rain, tap, tap, little drops!\".",
+        "es": "Ante la ventana un día de lluvia suave: tocar el cristal con \"Rain, rain, tap, tap, little drops!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Xunto á fiestra ou no lavado de mans",
+        "es": "Junto a la ventana o en el lavado de manos"
+      },
+      "minutosSugeridos": 4,
+      "unidad": "juega.primavera.01",
+      "ingles": {
+        "lexico": [
+          "Rain",
+          "Sun",
+          "Flower",
+          "Grow",
+          "Tap-tap",
+          "Open"
+        ],
+        "tpr": [
+          "Be a little seed",
+          "Grow up",
+          "Open your flower"
+        ],
+        "frase": "Rain, rain, tap, tap, little drops!"
+      }
+    },
+    {
+      "orden": 9,
+      "mesCalendario": 5,
+      "icono": "auga",
+      "nombreMes": {
+        "gl": "Maio",
+        "es": "Mayo"
+      },
+      "centroInteres": {
+        "gl": "Xogos de auga, chapuzóns e hixiene",
+        "es": "Juegos de agua, chapuzones e higiene"
+      },
+      "objetivoPedagogico": {
+        "gl": "Consolidación de hábitos de hixiene e goce sensoriomotriz coa auga.",
+        "es": "Consolidación de hábitos de higiene y disfrute sensoriomotriz con el agua."
+      },
+      "actividadAula": {
+        "gl": "Mímica con toalliñas suaves: fregar fazulas (\"Wash your face\") e sacudir as toallas en \"Splash!\".",
+        "es": "Mímica con toallitas suaves: frotar mejillas (\"Wash your face\") y sacudir las toallas en \"Splash!\"."
+      },
+      "actividadHogar": {
+        "gl": "No lavabo, ao abrir a billa: \"Warm water! Rub the soap, splash, splash! Clean hands!\".",
+        "es": "En el lavabo, al abrir el grifo: \"Warm water! Rub the soap, splash, splash! Clean hands!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Lavado de mans antes de comer ou no baño",
+        "es": "Lavado de manos antes de comer o en el baño"
+      },
+      "minutosSugeridos": 4,
+      "unidad": "juega.auga.01",
+      "ingles": {
+        "lexico": [
+          "Wash",
+          "Water",
+          "Soap",
+          "Clean",
+          "Splash",
+          "Rub"
+        ],
+        "tpr": [
+          "Wash your face",
+          "Rub your hands",
+          "Splash the water"
+        ],
+        "frase": "Warm water! Rub the soap, splash, splash! Clean hands!"
+      }
+    },
+    {
+      "orden": 10,
+      "mesCalendario": 6,
+      "icono": "mar",
+      "nombreMes": {
+        "gl": "Xuño",
+        "es": "Junio"
+      },
+      "centroInteres": {
+        "gl": "Días de sol, o mar e as Rías de Vigo",
+        "es": "Días de sol, el mar y las Rías de Vigo"
+      },
+      "objetivoPedagogico": {
+        "gl": "Movemento vestibular colectivo, simulación das ondas mariñas e despedida alegre.",
+        "es": "Movimiento vestibular colectivo, simulación de las olas marinas y despedida alegre."
+      },
+      "actividadAula": {
+        "gl": "Paracaídas azul facendo ondas suaves (\"Gentle waves\") e peixiños nadando por debaixo.",
+        "es": "Paracaídas azul haciendo olas suaves (\"Gentle waves\") y pececitos nadando por debajo."
+      },
+      "actividadHogar": {
+        "gl": "Cunha saba entre dous adultos ou na cama: ondear dicindo \"Blue sea, waves go up and down!\".",
+        "es": "Con una sábana entre dos adultos o en la cama: ondear diciendo \"Blue sea, waves go up and down!\"."
+      },
+      "rutinaRecomendadaHogar": {
+        "gl": "Xogo de saba ou manta na cama",
+        "es": "Juego de sábana o manta en la cama"
+      },
+      "minutosSugeridos": 5,
+      "unidad": "juega.mar.01",
+      "ingles": {
+        "lexico": [
+          "Sea",
+          "Waves",
+          "Swim",
+          "Fish",
+          "Blue",
+          "Goodbye"
+        ],
+        "tpr": [
+          "Gentle waves",
+          "Big waves!",
+          "Swim like a fish"
+        ],
+        "frase": "Blue sea, waves go up and down!"
+      }
+    }
+  ]
+}

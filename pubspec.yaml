@@ -22,6 +22,14 @@ flutter:
     - assets/content/unidades/
     - assets/content/capsulas/
     - assets/content/premios/
+    # Los diez meses del curso y la guía de atención. Faltaba esta línea, y
+    # como Flutter NO entra en los subdirectorios de una entrada, `meses.json`
+    # no viajaba en el APK: el Calendario y la Guía se quedaban girando para
+    # siempre. Lo vigila tools/check_bundled_assets.py.
+    - assets/content/calendario/
+    # El ritual de la asamblea: la consigna y los minutos de cada fase.
+    - assets/content/asamblea/
+    # Las asambleas de segundo ciclo con el inglés como L3.
     - assets/content/asambleas_segundo_ciclo/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
@@ -31,12 +39,15 @@ flutter:
     - assets/brand/
     - assets/brand/logos/
     - assets/brand/awards/
+    # Las láminas del contenido: una rejilla de 24×24 por objeto, misma paleta
+    # que las insignias. Lo vigila tools/check_bundled_assets.py.
+    - assets/brand/laminas/
     # Neural voice recordings (Celtia gl / Sharvard es), synthesised at build
     # time by tools/generate_voice_assets.py and committed. The models never
     # run on the device.
     - assets/voice/
-    # Nunito: la tipografía de Valeria+. Los cuatro pesos que usa su sistema de
-    # diseño (valeriaTheme.ts: regular/semibold/bold/extrabold). Se empaquetan en
+    # Nunito, en los cuatro pesos del sistema de diseño de la casa
+    # (regular/semibold/bold/extrabold). Se empaquetan en
     # la app, no se piden por red: el APK no tiene permiso de INTERNET.
     - assets/fonts/
 

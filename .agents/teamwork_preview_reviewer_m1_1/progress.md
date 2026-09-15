@@ -1,20 +1,19 @@
-# Progress — Reviewer 1 (M1 Segundo Ciclo Model Correctness)
+# Progress — Reviewer 1 (M1 Android & Privacy)
 
-- Last visited: 2026-09-14T13:42:00Z
-- Status: Adversarial and quality review of Milestone M1 complete. Verdict: APPROVE. Preparing handoff report and notification.
+- Last visited: 2026-09-11T10:45:00+02:00
+- Status: Independent verification & adversarial audit completed. Preparing handoff report and verdict.
 - Steps completed:
-  1. Updated `DISPATCH.md` with incoming user request and UTC timestamp `2026-09-14T13:37:13Z`. [2026-09-14T13:37:25Z]
-  2. Read `ORIGINAL_REQUEST.md` (specifically `## Follow-up — 2026-09-14T13:15:17Z`) and `.agents/teamwork_preview_orchestrator_3/PROJECT.md`. [2026-09-14T13:37:37Z]
-  3. Inspected Worker M1's deliverables:
-     - `lib/data/models/asamblea_segundo_ciclo_model.dart` (1332 lines, 7 immutable classes, 3 enums).
-     - `lib/data/validators/content_validator.dart` (line 62: `caseSensitive: true` regex fix).
-     - `test/data/asamblea_segundo_ciclo_models_test.dart` (1168 lines, 14 test cases across 5 groups).
-     - `test/data/placeholder_validator_test.dart` (115 lines, 3 test suites).
-     - `lib/data/loaders/content_asset_loader.dart` and `lib/data/repositories/content_repository.dart` extensions.
-  4. Conducted deep integrity violation check: verified 0 hardcoded test bypasses, 0 facade implementations, 0 shortcuts, 0 trivial assertions.
-  5. Verified canonical phase durations (90s, 120s, 270s, 120s summing to 600s / 10 min) and sequence validation `hasCanonicalPhases`.
-  6. Verified Decreto 150/2022 constants (`Decreto 150/2022`, `educacion_infantil`, `segundo_ciclo_3_6`, Áreas 1, 2, 3, criteria CA1.1..CA3.3).
-  7. Verified immutability, `const` constructors, `List.unmodifiable` defensive copying, `listEquals`, and deep `hashCode`.
-  8. Verified placeholder regex fix (`caseSensitive: true`) against adversarial corpus (22 legitimate phrases with "todo/Todo" passing without false positives, 13 developer placeholders strictly rejected).
-  9. Verified delimiter and syntax balance across all modified Dart files.
-  10. Generated review handoff report and issuing APPROVE verdict to parent orchestrator.
+  1. Read ORIGINAL_REQUEST.md, PROJECT.md, and Worker M1 handoff.md. [2026-09-11T10:41:20+02:00]
+  2. Inspected Android configuration:
+     - `android/app/build.gradle` (namespace, applicationId, compileSdk 34, minSdk 24, targetSdk 34, Java 17). [2026-09-11T10:41:30+02:00]
+     - `android/app/src/main/kotlin/com/earlify/descubreconlua/MainActivity.kt` (package com.earlify.descubreconlua, FlutterActivity). [2026-09-11T10:41:35+02:00]
+     - `android/app/src/main/AndroidManifest.xml` (explicit removal of INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, zero positive grants, allowBackup=false). [2026-09-11T10:41:40+02:00]
+  3. Inspected `pubspec.yaml`: zero network dependencies, only flutter sdk, clean assets declarations. [2026-09-11T10:41:45+02:00]
+  4. Inspected `lib/core/` and entrypoint:
+     - `AppTheme`: Material 3, adult typography (>= 16sp), sober maritime palette (#1B4965, #62B6CB, #F4F1DE). [2026-09-11T10:42:10+02:00]
+     - `AppLanguage` and `LocalizedString`: strongly typed, 1:1 parity check, JSON serialization. [2026-09-11T10:42:20+02:00]
+     - `OfflineAudioService` and `MockOfflineAudioService`: full reactive stream, state management, parameter checks. [2026-09-11T10:42:30+02:00]
+  5. Inspected test suites: `test/privacy/privacy_manifest_test.dart`, `test/core/localization_test.dart`, `test/core/offline_audio_test.dart`, `test/core/theme_test.dart`. [2026-09-11T10:43:15+02:00]
+  6. Ran Worker M1's `verify_m1.py` empirical test script: 100% passed (exit code 0). [2026-09-11T10:43:50+02:00]
+  7. Developed and executed `independent_m1_adversarial_audit.py`: 33 adversarial checks executed, 0 violations, 0 integrity violations, 0 facades. [2026-09-11T10:44:30+02:00]
+  8. Preparing handoff and verdict message to parent. [2026-09-11T10:45:00+02:00]

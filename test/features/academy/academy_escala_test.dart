@@ -36,6 +36,14 @@ void main() {
         porQueImporta: LocalizedString(gl: 'Porque si.', es: 'Porque sí.'),
         queHacerEnCasa: LocalizedString(gl: 'Nomea.', es: 'Nombra.'),
         ejemploCotidiano: LocalizedString(gl: 'Mira.', es: 'Mira.'),
+        luaDice: LocalizedString(
+          gl: 'Son Lúa. Hoxe quédate cun só xesto: nomea o que estea a mirar '
+              'e despois cala mentres contas ata cinco. Ese silencio é a súa '
+              'quenda, e é o máis difícil de todo o que che pedín hoxe.',
+          es: 'Soy Lúa. Hoy quédate con un solo gesto: nombra lo que esté '
+              'mirando y después calla mientras cuentas hasta cinco. Ese '
+              'silencio es su turno.',
+        ),
         curriculo: CurricularReference(
           normativa: 'Decreto 150/2022',
           etapa: 'educacion_infantil',
@@ -69,7 +77,7 @@ void main() {
         ],
       );
 
-  for (final lang in AppLanguage.values) {
+  for (final lang in AppLanguage.deInterfaz) {
     testWidgets('el lector cabe con la escala de texto grande en ${lang.code}',
         (tester) async {
       tester.view.physicalSize = const Size(360, 640);
@@ -88,9 +96,14 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
-      // Se recorren TODAS las páginas: un desborde puede estar en cualquiera,
-      // y la de la afirmación es la que más texto lleva.
-      for (var i = 0; i < 5; i++) {
+      // Se recorren TODAS las páginas: un desborde puede estar en cualquiera.
+      //
+      // El bucle CONTESTA la afirmación en vez de pararse ahí. Mientras no lo
+      // hacía, el recorrido moría en la página de la reflexión —el botón está
+      // apagado hasta responder— y ninguna página posterior se miraba nunca:
+      // el cierre de Lúa, que va detrás, quedaba fuera del único test que caza
+      // desbordes.
+      for (var i = 0; i < 10; i++) {
         final errores = <Object>[];
         while (true) {
           final e = tester.takeException();
@@ -103,9 +116,17 @@ void main() {
         final siguiente =
             find.text(lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente');
         if (siguiente.evaluate().isEmpty) break;
-        final boton =
-            tester.widget<ElevatedButton>(find.byType(ElevatedButton));
-        if (boton.onPressed == null) break;
+
+        var boton = tester.widget<ElevatedButton>(find.byType(ElevatedButton));
+        if (boton.onPressed == null) {
+          final verdadero =
+              find.text(lang == AppLanguage.gl ? 'Verdadeiro' : 'Verdadero');
+          if (verdadero.evaluate().isEmpty) break;
+          await tester.tap(verdadero);
+          await tester.pumpAndSettle();
+          boton = tester.widget<ElevatedButton>(find.byType(ElevatedButton));
+          if (boton.onPressed == null) break;
+        }
         await tester.tap(siguiente);
         await tester.pumpAndSettle();
       }

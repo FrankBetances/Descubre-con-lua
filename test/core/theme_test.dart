@@ -4,12 +4,12 @@ import 'package:descubre_con_lua/core/theme/app_theme.dart';
 
 void main() {
   group('AppTheme tests', () {
-    test('Material 3 is enabled and the palette is Valeria+\'s', () {
+    test('Material 3 is enabled and the palette is the inherited one', () {
       final theme = AppTheme.lightTheme;
 
       expect(theme.useMaterial3, isTrue);
 
-      // Los tokens de src/valeriaTheme.ts. Si alguien vuelve al azul Vigo por
+      // Los tokens del tema del proyecto anterior. Si alguien vuelve al azul Vigo por
       // error, esto lo dice.
       expect(theme.colorScheme.primary, equals(const Color(0xFF00C4BE)));
       expect(theme.scaffoldBackgroundColor, equals(const Color(0xFFF6FAFA)));

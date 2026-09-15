@@ -12,7 +12,7 @@ import 'rhythm_bar_widget.dart';
 ///
 /// The teacher gets:
 /// - a VISUAL metronome at the unit's tempo, beats read from the `*` markers
-///   in the lyrics. It is drawn rather than clicked, as in Valeria: an audible
+///   in the lyrics. It is drawn rather than clicked, as in the earlier project in the house: an audible
 ///   metronome competes with the voice the children are following, and many of
 ///   them wear a hearing aid or an implant
 /// - the lyrics with those same markers, for clapping or patting knees
@@ -23,11 +23,16 @@ class PasoCancionWidget extends StatefulWidget {
   final AppLanguage language;
   final OfflineAudioService audioService;
 
+  /// Modo asamblea: solo lo que se hace AHORA. Lo demás —la consigna, que ya
+  /// está arriba en grande, y la nota de que el audio es local— se pliega.
+  final bool soloEsencial;
+
   const PasoCancionWidget({
     super.key,
     required this.cancion,
     required this.language,
     required this.audioService,
+    this.soloEsencial = false,
   });
 
   @override
@@ -39,7 +44,7 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
   String? _audioError;
   StreamSubscription<bool>? _audioSubscription;
 
-  /// Visual metronome state. One tick per beat, as in Valeria: the pulse is
+  /// Visual metronome state. One tick per beat, as in the earlier project in the house: the pulse is
   /// drawn rather than sounded, so the auditory channel stays free for the
   /// voice — half the children this work is aimed at wear a hearing aid or an
   /// implant, and a clicking metronome competes with the words.
@@ -238,17 +243,22 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                       ),
                     ),
                     const SizedBox(width: 8),
-                    Text(
-                      _isPlaying
-                          ? (isGl
-                              ? 'Reproducindo o recitado da letra'
-                              : 'Reproduciendo el recitado de la letra')
-                          : (isGl
-                              ? 'Recitado da letra detido'
-                              : 'Recitado de la letra detenido'),
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        fontWeight: FontWeight.w600,
-                        color: AppTheme.textSlate,
+                    // Flexible: «Reproduciendo el recitado de la letra» no cabe
+                    // en una línea de 256 dp ni a escala normal.
+                    Flexible(
+                      child: Text(
+                        _isPlaying
+                            ? (isGl
+                                ? 'Reproducindo o recitado da letra'
+                                : 'Reproduciendo el recitado de la letra')
+                            : (isGl
+                                ? 'Recitado da letra detido'
+                                : 'Recitado de la letra detenido'),
+                        maxLines: 2,
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          fontWeight: FontWeight.w600,
+                          color: AppTheme.textSlate,
+                        ),
                       ),
                     ),
                   ],
@@ -308,77 +318,82 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 8.0),
-                Text(
-                  isGl
-                      ? '🔒 Audio 100% sen conexión (mar_pulso_72bpm.wav / local)'
-                      : '🔒 Audio 100% sin conexión (mar_pulso_72bpm.wav / local)',
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: const Color(0xFF64748B),
-                    fontSize: 12.0,
+                if (!widget.soloEsencial) const SizedBox(height: 8.0),
+                if (!widget.soloEsencial)
+                  Text(
+                    isGl
+                        ? 'Audio 100% sen conexión (mar_pulso_72bpm.wav / local)'
+                        : 'Audio 100% sin conexión (mar_pulso_72bpm.wav / local)',
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: const Color(0xFF64748B),
+                      fontSize: 12.0,
+                    ),
                   ),
-                ),
               ],
             ),
           ),
         ),
         const SizedBox(height: 20.0),
 
-        // Teacher Consigna
-        Container(
-          padding: const EdgeInsets.all(16.0),
-          decoration: BoxDecoration(
-            color: const Color(0xFFFAF7EE),
-            borderRadius: BorderRadius.circular(12.0),
-            border: Border.all(color: const Color(0xFFDFD7BE)),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Icon(Icons.record_voice_over_outlined,
-                  color: AppTheme.primaryVigoBlue, size: 24),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      isGl
-                          ? 'Consigna para a docente:'
-                          : 'Consigna para la docente:',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: AppTheme.primaryVigoBlue,
-                        fontSize: 16.0,
+        // Teacher Consigna. En modo asamblea se pliega: la consigna de la
+        // fase ya está arriba, en grande, y repetirla aquí solo alarga la
+        // pantalla que hay que recorrer con doce criaturas delante.
+        if (!widget.soloEsencial)
+          Container(
+            padding: const EdgeInsets.all(16.0),
+            decoration: BoxDecoration(
+              color: const Color(0xFFFAF7EE),
+              borderRadius: BorderRadius.circular(12.0),
+              border: Border.all(color: const Color(0xFFDFD7BE)),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(Icons.record_voice_over_outlined,
+                    color: AppTheme.primaryVigoBlue, size: 24),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        isGl
+                            ? 'Consigna para a docente:'
+                            : 'Consigna para la docente:',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: AppTheme.primaryVigoBlue,
+                          fontSize: 16.0,
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      cancion.consignaDocente.resolve(widget.language),
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        fontSize: 16.0,
-                        height: 1.45,
-                        color: AppTheme.textSlate,
+                      const SizedBox(height: 4),
+                      Text(
+                        cancion.consignaDocente.resolve(widget.language),
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          fontSize: 16.0,
+                          height: 1.45,
+                          color: AppTheme.textSlate,
+                        ),
                       ),
-                    ),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: BotonEscuchar(
-                        audioService: widget.audioService,
-                        texto: cancion.consignaDocente.resolve(widget.language),
-                        language: widget.language,
-                        compacto: true,
-                        descripcion: widget.language == AppLanguage.gl
-                            ? 'a consigna docente'
-                            : 'la consigna docente',
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: BotonEscuchar(
+                          audioService: widget.audioService,
+                          texto:
+                              cancion.consignaDocente.resolve(widget.language),
+                          language: widget.language,
+                          compacto: true,
+                          descripcion: widget.language == AppLanguage.gl
+                              ? 'a consigna docente'
+                              : 'la consigna docente',
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
         const SizedBox(height: 20.0),
 
         // Lyrics with Pulse Markers

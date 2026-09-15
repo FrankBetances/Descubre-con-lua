@@ -7,10 +7,9 @@ import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart' show Revision;
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/juega/views/backstage_asamblea_screen.dart';
+import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_phase_timer_widget.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
 import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_level_switcher.dart';
-import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_phase_stepper.dart';
-import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_phase_timer_widget.dart';
 
 void main() {
   late ContentRepository repository;
@@ -24,12 +23,10 @@ void main() {
       titulo: LocalizedString(
         gl: 'Setembro: Acollida e Rutinas (${nivel.clave})',
         es: 'Septiembre: Acogida y Rutinas (${nivel.clave})',
-        en: 'September: Welcome and Routines (${nivel.clave})',
       ),
       centroInteres: const LocalizedString(
         gl: 'A alfombra da asemblea',
         es: 'La alfombra de la asamblea',
-        en: 'The circle rug',
       ),
       metodologiaTpr: nivel.metodologiaPorDefecto,
       duracionTotalMinutos: 10,
@@ -40,13 +37,11 @@ void main() {
           titulo: LocalizedString(
             gl: 'Apertura e Saúdo no Círculo',
             es: 'Apertura y Saludo en el Círculo',
-            en: 'Opening & Circle Greeting',
           ),
           duracionSegundos: 90,
           consignaDocente: LocalizedString(
             gl: 'Reunir ao grupo na alfombra en círculo. Contacto visual cálido.',
             es: 'Reunir al grupo en la alfombra en círculo. Contacto visual cálido.',
-            en: 'Gather the group in circle. Warm eye contact.',
           ),
           cueAcustica: 'Hello, Lúa!',
           audioAsset: 'assets/audio/hello_lua.mp3',
@@ -57,13 +52,11 @@ void main() {
           titulo: LocalizedString(
             gl: 'Foco Rítmico e Pulso Constante',
             es: 'Foco Rítmico y Pulso Constante',
-            en: 'Movement & Rhythmic Focus',
           ),
           duracionSegundos: 120,
           consignaDocente: LocalizedString(
             gl: 'Marcar o compás suave con palmas a 72 BPM.',
             es: 'Marcar el compás suave con palmas a 72 BPM.',
-            en: 'Keep gentle 72 BPM pulse with claps.',
           ),
           cueAcustica: 'Pulse 72 BPM',
           audioAsset: 'assets/audio/pulse_72bpm.mp3',
@@ -74,13 +67,11 @@ void main() {
           titulo: LocalizedString(
             gl: 'Reto Núcleo TPR en L3 (${nivel.clave})',
             es: 'Reto Núcleo TPR en L3 (${nivel.clave})',
-            en: 'Core TPR Challenge in L3 (${nivel.clave})',
           ),
           duracionSegundos: 270,
           consignaDocente: const LocalizedString(
             gl: 'Comandos TPR graduados sen esixir produción verbal en L3.',
             es: 'Comandos TPR graduados sin exigir producción verbal en L3.',
-            en: 'Graded TPR commands without verbal speech demand.',
           ),
           comandosL3: [
             ComandoTPR(
@@ -93,12 +84,10 @@ void main() {
               accionFisica: const LocalizedString(
                 gl: 'Acción física de proba',
                 es: 'Acción física de prueba',
-                en: 'Test physical action',
               ),
               modeladoDocente: const LocalizedString(
                 gl: 'Modelado sincrónico polo docente',
                 es: 'Modelado sincrónico por el docente',
-                en: 'Synchronous modeling by teacher',
               ),
               audioAsset: 'assets/voice/l3/test_command.m4a',
             ),
@@ -110,13 +99,11 @@ void main() {
           titulo: LocalizedString(
             gl: 'Calma e Transición con Materiais',
             es: 'Calma y Transición con Materiales',
-            en: 'Calm & Transition with Materials',
           ),
           duracionSegundos: 120,
           consignaDocente: LocalizedString(
             gl: 'Respiración diafragmática e manipulación de materiais naturais.',
             es: 'Respiración diafragmática y manipulación de materiales naturales.',
-            en: 'Diaphragmatic breathing and sensory exploration.',
           ),
           repertorioMateriales: [
             MaterialNatural(
@@ -124,22 +111,18 @@ void main() {
               nombre: LocalizedString(
                 gl: 'Gasa de algodón orgánico',
                 es: 'Gasa de algodón orgánico',
-                en: 'Organic Cotton Muslin',
               ),
               procedencia: LocalizedString(
                 gl: 'Texido tradicional galego',
                 es: 'Tejido tradicional gallego',
-                en: 'Traditional Galician fabric',
               ),
               pautaManipulacion: LocalizedString(
                 gl: 'Soprar suavemente para sentir o aire.',
                 es: 'Soplar suavemente para sentir el aire.',
-                en: 'Blow gently to feel the air.',
               ),
               avisoSeguridad: LocalizedString(
                 gl: 'Pezas grandes >= 4 cm baixo supervisión.',
                 es: 'Piezas grandes >= 4 cm bajo supervisión.',
-                en: 'Safe sizes >= 4 cm under supervision.',
               ),
             ),
           ],
@@ -147,24 +130,32 @@ void main() {
       ],
       curriculo: const CurricularReferenceSegundoCiclo(
         nivel: '4_infantil',
-        areas: ['area_1_crecemento_harmonia', 'area_3_comunicacion_representacion'],
+        areas: [
+          'area_1_crecemento_harmonia',
+          'area_3_comunicacion_representacion'
+        ],
         criteriosEvaluacion: ['CA1.1', 'CA3.1'],
       ),
       materialesEntorno: const [],
       microRutinaHogar: const MicroRutinaHogarSegundoCiclo(
         id: 'micro.test.01',
-        titulo: LocalizedString(gl: 'The Magic Coat Hook', es: 'The Magic Coat Hook'),
+        titulo: LocalizedString(
+            gl: 'The Magic Coat Hook', es: 'The Magic Coat Hook'),
         nichoTiempoMinutos: 3,
-        momentoDelDia: LocalizedString(gl: 'Ao chegar da escola', es: 'Al llegar de la escuela'),
-        objetivoAutonomia: LocalizedString(gl: 'Colgar o abrigo', es: 'Colgar el abrigo'),
+        momentoDelDia: LocalizedString(
+            gl: 'Ao chegar da escola', es: 'Al llegar de la escuela'),
+        objetivoAutonomia:
+            LocalizedString(gl: 'Colgar o abrigo', es: 'Colgar el abrigo'),
         pautasRecast: [],
-        escenaCotidiana: LocalizedString(gl: 'No recibidor', es: 'En el recibidor'),
+        escenaCotidiana:
+            LocalizedString(gl: 'No recibidor', es: 'En el recibidor'),
       ),
       revision: const Revision(
         autor: 'Equipo Pedagóxico',
+        revisorPedagogico: '',
         fechaRevision: '2026-09-15',
         version: '1.0.0',
-        aprobadoParaAula: true,
+        aprobadoParaAula: false,
       ),
     );
   }
@@ -173,13 +164,17 @@ void main() {
     repository = ContentRepository();
     mockAudio = MockOfflineAudioService();
 
-    repository.addAsambleaSegundoCiclo(buildFixture(NivelEducativoSegundoCiclo.infantil4));
-    repository.addAsambleaSegundoCiclo(buildFixture(NivelEducativoSegundoCiclo.infantil5));
-    repository.addAsambleaSegundoCiclo(buildFixture(NivelEducativoSegundoCiclo.infantil6));
+    repository.addAsambleaSegundoCiclo(
+        buildFixture(NivelEducativoSegundoCiclo.infantil4));
+    repository.addAsambleaSegundoCiclo(
+        buildFixture(NivelEducativoSegundoCiclo.infantil5));
+    repository.addAsambleaSegundoCiclo(
+        buildFixture(NivelEducativoSegundoCiclo.infantil6));
   });
 
   group('BackstageAsambleaScreen Widget Tests', () {
-    testWidgets('renders backstage dark theme with level switcher, stepper and timer',
+    testWidgets(
+        'renders the light assembly header with level switcher and progress',
         (tester) async {
       await tester.pumpWidget(
         MaterialApp(
@@ -195,19 +190,18 @@ void main() {
 
       // Verify level switcher exists
       expect(find.byType(BackstageLevelSwitcher), findsOneWidget);
-      expect(find.byKey(const ValueKey('level_switcher_4_infantil')), findsOneWidget);
-      expect(find.byKey(const ValueKey('level_switcher_5_infantil')), findsOneWidget);
-      expect(find.byKey(const ValueKey('level_switcher_6_infantil')), findsOneWidget);
+      expect(find.byKey(const ValueKey('level_switcher_4_infantil')),
+          findsOneWidget);
+      expect(find.byKey(const ValueKey('level_switcher_5_infantil')),
+          findsOneWidget);
+      expect(find.byKey(const ValueKey('level_switcher_6_infantil')),
+          findsOneWidget);
 
       // Verify phase stepper exists with 4 phases
-      expect(find.byType(BackstagePhaseStepper), findsOneWidget);
-      expect(find.byKey(const ValueKey('stepper_phase_button_0')), findsOneWidget);
-      expect(find.byKey(const ValueKey('stepper_phase_button_1')), findsOneWidget);
-      expect(find.byKey(const ValueKey('stepper_phase_button_2')), findsOneWidget);
-      expect(find.byKey(const ValueKey('stepper_phase_button_3')), findsOneWidget);
+      expect(find.text('Fase 1 de 4'), findsOneWidget);
+      expect(find.byType(LinearProgressIndicator), findsOneWidget);
 
       // Verify timer widget exists
-      expect(find.byType(BackstagePhaseTimerWidget), findsOneWidget);
 
       // Phase 1 (Apertura) initially displayed
       expect(find.text('FASE 1 · 90s'), findsOneWidget);
@@ -230,28 +224,35 @@ void main() {
       await tester.pumpAndSettle();
 
       // Step to Phase 2: Foco Rítmico (120s)
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_1')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
       expect(find.text('FASE 2 · 120s'), findsOneWidget);
       expect(find.text('Foco Rítmico e Pulso Constante'), findsOneWidget);
-      expect(find.byKey(const ValueKey('play_rhythm_pulse_button')), findsOneWidget);
+      expect(find.byKey(const ValueKey('play_rhythm_pulse_button')),
+          findsOneWidget);
 
       // Step to Phase 3: Reto TPR (270s)
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
       expect(find.text('FASE 3 · 270s'), findsOneWidget);
-      expect(find.text('Stand up and clap hands'), findsOneWidget);
-      expect(find.byKey(const ValueKey('play_tpr_audio_cmd.test.01')), findsOneWidget);
+      expect(find.text('Stand up and clap hands'), findsWidgets);
+      expect(find.byKey(const ValueKey('play_tpr_audio_cmd.test.01')),
+          findsOneWidget);
 
       // Step to Phase 4: Calma e Transición (120s)
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_3')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
       expect(find.text('FASE 4 · 120s'), findsOneWidget);
       expect(find.text('Gasa de algodón orgánico'), findsOneWidget);
-      expect(find.text('Pezas grandes >= 4 cm baixo supervisión.'), findsOneWidget);
+      expect(find.text('Pezas grandes >= 4 cm baixo supervisión.'),
+          findsOneWidget);
     });
 
-    testWidgets('switches levels and updates methodology and indicators (freeze & cue cards)',
+    testWidgets(
+        'switches levels and updates methodology and indicators (freeze & cue cards)',
         (tester) async {
       await tester.pumpWidget(
         MaterialApp(
@@ -266,11 +267,16 @@ void main() {
       await tester.pumpAndSettle();
 
       // Navigate to Phase 3
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
+      await tester.pumpAndSettle();
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
 
       // In 4º Infantil: Acción Expandida, no freeze indicator
-      expect(find.byKey(const ValueKey('freeze_signal_indicator')), findsNothing);
+      expect(
+          find.byKey(const ValueKey('freeze_signal_indicator')), findsNothing);
       expect(find.byKey(const ValueKey('cue_cards_indicator')), findsNothing);
 
       // Switch to 5º Infantil
@@ -278,24 +284,34 @@ void main() {
       await tester.pumpAndSettle();
 
       // Nav to Phase 3
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
+      await tester.pumpAndSettle();
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
 
       // In 5º Infantil: Freeze indicator must appear!
-      expect(find.byKey(const ValueKey('freeze_signal_indicator')), findsOneWidget);
-      expect(find.text('The bell rings: run to the circle and freeze!'), findsOneWidget);
+      expect(find.byKey(const ValueKey('freeze_signal_indicator')),
+          findsOneWidget);
+      expect(find.text('The bell rings: run to the circle and freeze!'),
+          findsWidgets);
 
       // Switch to 6º Infantil
       await tester.tap(find.byKey(const ValueKey('level_switcher_6_infantil')));
       await tester.pumpAndSettle();
 
       // Nav to Phase 3
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
+      await tester.pumpAndSettle();
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
 
       // In 6º Infantil: Cue cards indicator must appear!
       expect(find.byKey(const ValueKey('cue_cards_indicator')), findsOneWidget);
-      expect(find.text('Walk to the hook and hang your coat'), findsOneWidget);
+      expect(find.text('Walk to the hook and hang your coat'), findsWidgets);
     });
 
     testWidgets('toggles language between GL and ES dynamically',
@@ -316,15 +332,15 @@ void main() {
       expect(find.text('Apertura e Saúdo no Círculo'), findsOneWidget);
 
       // Tap language toggle
-      await tester.tap(find.byKey(const ValueKey('backstage_language_toggle')));
+      // El conmutador es el mismo de toda la app: dos pastillas, GL y ES.
+      await tester.tap(find.text('ES'));
       await tester.pumpAndSettle();
 
       expect(find.text('ES'), findsOneWidget);
       expect(find.text('Apertura y Saludo en el Círculo'), findsOneWidget);
     });
 
-    testWidgets('shows exit confirmation dialog on back press',
-        (tester) async {
+    testWidgets('shows exit confirmation dialog on back press', (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: BackstageAsambleaScreen(
@@ -354,7 +370,8 @@ void main() {
       expect(find.byType(BackstageAsambleaScreen), findsOneWidget);
     });
 
-    testWidgets('navigates with bottom Next and Prev buttons and confirms assembly finish on phase 4',
+    testWidgets(
+        'navigates with bottom Next and Prev buttons and confirms assembly finish on phase 4',
         (tester) async {
       await tester.pumpWidget(
         MaterialApp(
@@ -369,8 +386,10 @@ void main() {
       await tester.pumpAndSettle();
 
       // Initial Phase 1: Prev button is disabled (onPressed null)
-      final prevFinder = find.byKey(const ValueKey('backstage_prev_phase_button'));
-      final nextFinder = find.byKey(const ValueKey('backstage_next_phase_button'));
+      final prevFinder =
+          find.byKey(const ValueKey('backstage_prev_phase_button'));
+      final nextFinder =
+          find.byKey(const ValueKey('backstage_next_phase_button'));
 
       expect(tester.widget<OutlinedButton>(prevFinder).onPressed, isNull);
       expect(find.text('Seguinte Fase'), findsOneWidget);
@@ -421,18 +440,20 @@ void main() {
       expect(find.byType(BackstageAsambleaScreen), findsOneWidget);
     });
 
-    testWidgets('displays Voz docente badge in opening phase when no audio asset is specified',
+    testWidgets(
+        'displays Voz docente badge in opening phase when no audio asset is specified',
         (tester) async {
-      final fixtureWithoutAudio = buildFixture(NivelEducativoSegundoCiclo.infantil4);
+      final fixtureWithoutAudio =
+          buildFixture(NivelEducativoSegundoCiclo.infantil4);
       final repoWithoutAudio = ContentRepository();
       // buildFixture has audioAsset in phase 1, replace with one without audioAsset
       final fases = List<FaseAsamblea>.from(fixtureWithoutAudio.fases);
-      fases[0] = FaseAsamblea(
+      fases[0] = const FaseAsamblea(
         orden: 1,
         tipo: TipoFaseAsamblea.aperturaSaudo,
-        titulo: const LocalizedString(gl: 'Apertura', es: 'Apertura', en: 'Opening'),
+        titulo: LocalizedString(gl: 'Apertura', es: 'Apertura'),
         duracionSegundos: 90,
-        consignaDocente: const LocalizedString(gl: 'Consigna', es: 'Consigna', en: 'Directive'),
+        consignaDocente: LocalizedString(gl: 'Consigna', es: 'Consigna'),
         cueAcustica: 'Hello, Lúa!',
         audioAsset: null,
       );
@@ -453,26 +474,29 @@ void main() {
 
       // Must show "Voz docente" badge and not the play button
       expect(find.text('Voz docente'), findsOneWidget);
-      expect(find.byKey(const ValueKey('play_opening_cue_button')), findsNothing);
+      expect(
+          find.byKey(const ValueKey('play_opening_cue_button')), findsNothing);
     });
 
-    testWidgets('displays Voz docente badge in TPR phase when command has no audio asset',
+    testWidgets(
+        'displays Voz docente badge in TPR phase when command has no audio asset',
         (tester) async {
-      final fixtureWithoutAudio = buildFixture(NivelEducativoSegundoCiclo.infantil4);
+      final fixtureWithoutAudio =
+          buildFixture(NivelEducativoSegundoCiclo.infantil4);
       final repoWithoutAudio = ContentRepository();
       final fases = List<FaseAsamblea>.from(fixtureWithoutAudio.fases);
-      fases[2] = FaseAsamblea(
+      fases[2] = const FaseAsamblea(
         orden: 3,
         tipo: TipoFaseAsamblea.coreTprChallenge,
-        titulo: const LocalizedString(gl: 'Reto TPR', es: 'Reto TPR', en: 'TPR Challenge'),
+        titulo: LocalizedString(gl: 'Reto TPR', es: 'Reto TPR'),
         duracionSegundos: 270,
-        consignaDocente: const LocalizedString(gl: 'Consigna', es: 'Consigna', en: 'Directive'),
-        comandosL3: const [
+        consignaDocente: LocalizedString(gl: 'Consigna', es: 'Consigna'),
+        comandosL3: [
           ComandoTPR(
             id: 'cmd.no_audio.01',
             textoIngles: 'Stand up and stretch',
-            accionFisica: LocalizedString(gl: 'Erguerse', es: 'Levantarse', en: 'Stand up'),
-            modeladoDocente: LocalizedString(gl: 'Modelado', es: 'Modelado', en: 'Modeling'),
+            accionFisica: LocalizedString(gl: 'Erguerse', es: 'Levantarse'),
+            modeladoDocente: LocalizedString(gl: 'Modelado', es: 'Modelado'),
             audioAsset: null,
           ),
         ],
@@ -493,12 +517,17 @@ void main() {
       await tester.pumpAndSettle();
 
       // Go to phase 3 (Reto TPR)
-      await tester.tap(find.byKey(const ValueKey('stepper_phase_button_2')));
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
+      await tester.pumpAndSettle();
+      await tester
+          .tap(find.byKey(const ValueKey('backstage_next_phase_button')));
       await tester.pumpAndSettle();
 
       // Must show "Voz docente" badge and not the play button
       expect(find.text('Voz docente'), findsOneWidget);
-      expect(find.byKey(const ValueKey('play_tpr_audio_cmd.no_audio.01')), findsNothing);
+      expect(find.byKey(const ValueKey('play_tpr_audio_cmd.no_audio.01')),
+          findsNothing);
     });
 
     testWidgets('timer widget starts, pauses and formats time accurately',
@@ -534,7 +563,8 @@ void main() {
       expect(find.text('01:30'), findsOneWidget);
     });
 
-    testWidgets('timer widget formats overtime correctly with plus prefix and amber warning',
+    testWidgets(
+        'timer widget formats overtime correctly with plus prefix and amber warning',
         (tester) async {
       await tester.pumpWidget(
         const MaterialApp(
@@ -560,7 +590,8 @@ void main() {
       expect(find.byIcon(Icons.hourglass_bottom_rounded), findsOneWidget);
     });
 
-    testWidgets('automatically initializes repository if screen is opened before initialization completes',
+    testWidgets(
+        'automatically initializes repository if screen is opened before initialization completes',
         (tester) async {
       // Content repository without pre-added fixtures, initialized via loader mock
       final uninitializedRepo = ContentRepository();
@@ -610,11 +641,24 @@ void main() {
       await tester.pumpAndSettle();
 
       // Verify Segundo Ciclo banner and cards are shown
-      expect(find.text('Asemblea Matinal do 2.º Ciclo (3-6 anos)'), findsOneWidget);
-      expect(find.byKey(const ValueKey('launch_backstage_primary_button')), findsOneWidget);
-      expect(find.byKey(const ValueKey('launch_backstage_nivel_4_infantil')), findsOneWidget);
-      expect(find.byKey(const ValueKey('launch_backstage_nivel_5_infantil')), findsOneWidget);
-      expect(find.byKey(const ValueKey('launch_backstage_nivel_6_infantil')), findsOneWidget);
+      expect(find.text('Asemblea Matinal do 2.º Ciclo (3-6 anos)'),
+          findsOneWidget);
+      expect(find.byKey(const ValueKey('launch_backstage_primary_button')),
+          findsOneWidget);
+      expect(find.byKey(const ValueKey('launch_backstage_nivel_4_infantil')),
+          findsOneWidget);
+      // La lista solo construye lo que se ve: hay que bajar hasta las tarjetas
+      // de 5.º y 6.º antes de buscarlas.
+      await tester.scrollUntilVisible(
+        find.byKey(const ValueKey('launch_backstage_nivel_6_infantil')),
+        300,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('launch_backstage_nivel_5_infantil')),
+          findsOneWidget);
+      expect(find.byKey(const ValueKey('launch_backstage_nivel_6_infantil')),
+          findsOneWidget);
 
       // Switch back to Primer Ciclo
       await tester.tap(find.byKey(const ValueKey('tab_primer_ciclo')));

@@ -5,8 +5,8 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../academy/widgets/selector_idioma_widget.dart';
 import '../widgets/backstage/backstage_level_switcher.dart';
-import '../widgets/backstage/backstage_phase_stepper.dart';
 import '../widgets/backstage/backstage_phase_timer_widget.dart';
 import '../widgets/backstage/paso_calm_widget.dart';
 import '../widgets/backstage/paso_core_tpr_widget.dart';
@@ -137,7 +137,9 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
   }
 
   Future<void> _handlePlayOpeningCue(String? cueAsset) async {
-    if (_audioCoordinator == null || cueAsset == null || cueAsset.isEmpty) return;
+    if (_audioCoordinator == null || cueAsset == null || cueAsset.isEmpty) {
+      return;
+    }
     if (_isPlayingCue) {
       await _stopAllAudio();
     } else {
@@ -207,7 +209,9 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
   }
 
   Future<void> _handlePlayCalmAudio(String? calmAsset) async {
-    if (_audioCoordinator == null || calmAsset == null || calmAsset.isEmpty) return;
+    if (_audioCoordinator == null || calmAsset == null || calmAsset.isEmpty) {
+      return;
+    }
     if (_isPlayingCalmAudio) {
       await _stopAllAudio();
     } else {
@@ -228,6 +232,12 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
       }
     }
   }
+
+  /// Con el texto grande del sistema la cabecera se come la pantalla. Lo que
+  /// sobra entonces es el adorno, no el contenido: misma regla que en la
+  /// asamblea de primer ciclo.
+  static bool _textoMoiGrande(BuildContext context) =>
+      MediaQuery.textScalerOf(context).scale(14) > 19;
 
   Future<bool> _confirmFinish() async {
     final isGl = _language == AppLanguage.gl;
@@ -392,277 +402,283 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
           Navigator.of(context).pop();
         }
       },
-      child: Theme(
-        data: AppTheme.backstageDarkTheme,
-        child: Scaffold(
-          backgroundColor: AppTheme.backstageBg,
-          appBar: AppBar(
-            backgroundColor: AppTheme.backstageBg,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(
-                Icons.arrow_back_rounded,
-                color: AppTheme.backstageTextPrimary,
-                size: 26,
+      child: Scaffold(
+        backgroundColor: AppTheme.backstageBg,
+        appBar: AppBar(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back_rounded, size: 26),
+            onPressed: () async {
+              final ok = await _confirmExit();
+              if (ok && context.mounted) {
+                Navigator.of(context).pop();
+              }
+            },
+            tooltip: 'Volver',
+          ),
+          title: Text(
+            isGl ? 'Modo Asemblea · 2.º Ciclo' : 'Modo Asamblea · 2.º Ciclo',
+            style: const TextStyle(fontWeight: FontWeight.bold),
+          ),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 12.0),
+              child: SelectorIdiomaWidget(
+                currentLanguage: _language,
+                onLanguageChanged: (l) => _toggleLanguage(),
+                compact: true,
               ),
-              onPressed: () async {
-                final ok = await _confirmExit();
-                if (ok && context.mounted) {
-                  Navigator.of(context).pop();
-                }
-              },
-              tooltip: isGl ? 'Volver' : 'Volver',
             ),
-            title: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
+          ],
+        ),
+        body: asamblea == null
+            ? Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Text(
+                    isGl
+                        ? 'Non se atoparon contidos para este nivel.'
+                        : 'No se encontraron contenidos para este nivel.',
+                    style: const TextStyle(
+                      fontFamily: AppTheme.fontFamily,
+                      fontSize: 16,
+                      color: AppTheme.backstageTextSecondary,
+                    ),
+                  ),
+                ),
+              )
+            : SafeArea(
+                child: Column(
                   children: [
+                    // La cabecera de la asamblea de primer ciclo, misma
+                    // pieza: en qué fase vamos, cómo se llama, y una barra
+                    // que lo dice sin números. El stepper de cuatro
+                    // pastillas y el cronómetro gigante se fueron con el
+                    // fondo negro: decían lo mismo ocupando media pantalla.
                     Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 8,
-                        vertical: 2,
+                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+                      color: AppTheme.cardSurface,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          BackstageLevelSwitcher(
+                            nivelSeleccionado: _nivel,
+                            onNivelChanged: _onNivelChanged,
+                            language: _language,
+                          ),
+                          const SizedBox(height: 12),
+                          if (!_textoMoiGrande(context))
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Flexible(
+                                  child: Text(
+                                    isGl
+                                        ? 'Fase ${_faseIndex + 1} de 4'
+                                        : 'Fase ${_faseIndex + 1} de 4',
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                      color: AppTheme.primaryVigoBlue,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 14.0,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                Flexible(
+                                  child: Text(
+                                    asamblea
+                                        .fases[_faseIndex.clamp(
+                                            0, asamblea.fases.length - 1)]
+                                        .tipo
+                                        .nombre
+                                        .resolve(_language),
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    textAlign: TextAlign.end,
+                                    style: const TextStyle(
+                                      color: AppTheme.textSlate,
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 14.0,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          if (!_textoMoiGrande(context))
+                            const SizedBox(height: 8),
+                          LinearProgressIndicator(
+                            value: (_faseIndex + 1) / 4.0,
+                            backgroundColor: const Color(0xFFE2DDD0),
+                            valueColor: const AlwaysStoppedAnimation<Color>(
+                                AppTheme.primaryVigoBlue),
+                            minHeight: 6.0,
+                            borderRadius: BorderRadius.circular(3.0),
+                          ),
+                          const SizedBox(height: 10),
+                          // Los segundos de la fase. Empieza parado, como el de
+                          // primer ciclo: la asamblea arranca cuando lo dice la
+                          // docente, no cuando se abre la pantalla.
+                          Center(
+                            child: BackstagePhaseTimerWidget(
+                              key: ValueKey(
+                                'timer_fase_${_faseIndex}_nivel_${_nivel.clave}',
+                              ),
+                              duracionSegundos: asamblea
+                                  .fases[_faseIndex.clamp(
+                                      0, asamblea.fases.length - 1)]
+                                  .duracionSegundos,
+                            ),
+                          ),
+                        ],
                       ),
-                      decoration: BoxDecoration(
-                        color: AppTheme.backstageAccent.withValues(alpha: 0.2),
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                      child: Text(
-                        isGl
-                            ? 'BACKSTAGE · 2.º CICLO (3-6)'
-                            : 'BACKSTAGE · 2.º CICLO (3-6)',
-                        style: const TextStyle(
-                          fontFamily: AppTheme.fontFamily,
-                          fontSize: 11,
-                          fontWeight: FontWeight.w800,
-                          color: AppTheme.backstageAccent,
-                          letterSpacing: 0.8,
+                    ),
+                    // El aviso de la asamblea de primer ciclo, palabra por
+                    // palabra: el móvil es del adulto y no se enseña.
+                    if (!_textoMoiGrande(context))
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16.0, vertical: 8.0),
+                        color: AppTheme.primaryLight,
+                        child: Row(
+                          children: [
+                            const Icon(Icons.phonelink_erase_rounded,
+                                size: 18, color: AppTheme.primaryDark),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                isGl
+                                    ? 'Asistente docente · Móbil fóra da vista'
+                                    : 'Asistente docente · Móvil fuera de la vista',
+                                style: const TextStyle(
+                                  fontSize: 12.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppTheme.primaryDark,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
+                      ),
+                    const Divider(
+                      color: AppTheme.backstageBorder,
+                      height: 1,
+                    ),
+
+                    // Bloque principal scrollable co contido da fase activa
+                    Expanded(
+                      child: SingleChildScrollView(
+                        padding: const EdgeInsets.all(16),
+                        child: _buildPhaseContent(asamblea),
+                      ),
+                    ),
+
+                    // Barra inferior de navegación entre fases
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: const BoxDecoration(
+                        color: AppTheme.backstageSurface,
+                        border: Border(
+                          top: BorderSide(
+                            color: AppTheme.backstageBorder,
+                            width: 1.0,
+                          ),
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          // Botón Fase Anterior
+                          Expanded(
+                            child: OutlinedButton.icon(
+                              key:
+                                  const ValueKey('backstage_prev_phase_button'),
+                              onPressed: _faseIndex > 0
+                                  ? () => _onFaseSelected(_faseIndex - 1)
+                                  : null,
+                              style: OutlinedButton.styleFrom(
+                                foregroundColor: AppTheme.backstageTextPrimary,
+                                disabledForegroundColor:
+                                    AppTheme.backstageTextMuted,
+                                side: BorderSide(
+                                  color: _faseIndex > 0
+                                      ? AppTheme.backstageBorder
+                                      : AppTheme.backstageBorder
+                                          .withValues(alpha: 0.3),
+                                ),
+                                minimumSize: const Size(0, 52),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                    AppTheme.radiusButton,
+                                  ),
+                                ),
+                              ),
+                              icon: const Icon(Icons.chevron_left_rounded),
+                              label: Text(
+                                isGl ? 'Fase Anterior' : 'Fase Anterior',
+                                style: const TextStyle(
+                                  fontFamily: AppTheme.fontFamily,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 14),
+
+                          // Botón Seguinte Fase / Rematar
+                          Expanded(
+                            child: ElevatedButton.icon(
+                              key:
+                                  const ValueKey('backstage_next_phase_button'),
+                              onPressed: () async {
+                                if (_faseIndex < 3) {
+                                  _onFaseSelected(_faseIndex + 1);
+                                  return;
+                                }
+                                // Rematar asemblea
+                                final ok = await _confirmFinish();
+                                if (!context.mounted) return;
+                                if (ok) {
+                                  Navigator.of(context).pop();
+                                }
+                              },
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: AppTheme.backstageAccent,
+                                foregroundColor: AppTheme.backstageBg,
+                                minimumSize: const Size(0, 52),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                    AppTheme.radiusButton,
+                                  ),
+                                ),
+                              ),
+                              icon: Icon(
+                                _faseIndex < 3
+                                    ? Icons.arrow_forward_rounded
+                                    : Icons.check_circle_rounded,
+                              ),
+                              label: Text(
+                                _faseIndex < 3
+                                    ? (isGl
+                                        ? 'Seguinte Fase'
+                                        : 'Siguiente Fase')
+                                    : (isGl
+                                        ? 'Rematar Asemblea'
+                                        : 'Finalizar Asamblea'),
+                                style: const TextStyle(
+                                  fontFamily: AppTheme.fontFamily,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 2),
-                Text(
-                  asamblea?.titulo.resolve(_language) ??
-                      (isGl
-                          ? 'Asemblea Matinal en L3'
-                          : 'Asamblea Matinal en L3'),
-                  style: const TextStyle(
-                    fontFamily: AppTheme.fontFamily,
-                    fontSize: 17.0,
-                    fontWeight: FontWeight.w700,
-                    color: AppTheme.backstageTextPrimary,
-                  ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ],
-            ),
-            actions: [
-              // Conmutador de idioma de alto contraste
-              Padding(
-                padding: const EdgeInsets.only(right: 12.0),
-                child: TextButton.icon(
-                  key: const ValueKey('backstage_language_toggle'),
-                  onPressed: _toggleLanguage,
-                  style: TextButton.styleFrom(
-                    backgroundColor: AppTheme.backstageSurfaceElevated,
-                    foregroundColor: AppTheme.backstageTextPrimary,
-                    side: const BorderSide(color: AppTheme.backstageBorder),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(AppTheme.radiusField),
-                    ),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 6,
-                    ),
-                  ),
-                  icon: const Icon(
-                    Icons.language_rounded,
-                    size: 18,
-                    color: AppTheme.backstageAccent,
-                  ),
-                  label: Text(
-                    isGl ? 'GL' : 'ES',
-                    style: const TextStyle(
-                      fontFamily: AppTheme.fontFamily,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w800,
-                      color: AppTheme.backstageTextPrimary,
-                    ),
-                  ),
-                ),
               ),
-            ],
-          ),
-          body: asamblea == null
-              ? Center(
-                  child: Padding(
-                    padding: const EdgeInsets.all(24.0),
-                    child: Text(
-                      isGl
-                          ? 'Non se atoparon contidos para este nivel.'
-                          : 'No se encontraron contenidos para este nivel.',
-                      style: const TextStyle(
-                        fontFamily: AppTheme.fontFamily,
-                        fontSize: 16,
-                        color: AppTheme.backstageTextSecondary,
-                      ),
-                    ),
-                  ),
-                )
-              : SafeArea(
-                  child: Column(
-                    children: [
-                      // Bloque superior fixo: Selector de Nivel, Stepper e Temporizador
-                      Container(
-                        padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
-                        color: AppTheme.backstageBg,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            // 1. Selector de Nivel Educativo (4.º, 5.º, 6.º)
-                            BackstageLevelSwitcher(
-                              nivelSeleccionado: _nivel,
-                              onNivelChanged: _onNivelChanged,
-                            ),
-                            const SizedBox(height: 12),
-
-                            // 2. Stepper de Fases (1..4)
-                            BackstagePhaseStepper(
-                              faseActivaIndex: _faseIndex,
-                              onFaseSelected: _onFaseSelected,
-                            ),
-                            const SizedBox(height: 12),
-
-                            // 3. Temporizador discreto da fase activa
-                            Center(
-                              child: BackstagePhaseTimerWidget(
-                                key: ValueKey(
-                                  'timer_fase_${_faseIndex}_nivel_${_nivel.clave}',
-                                ),
-                                duracionSegundos: asamblea.fases[_faseIndex.clamp(0, asamblea.fases.length - 1)]
-                                    .duracionSegundos,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Divider(
-                        color: AppTheme.backstageBorder,
-                        height: 1,
-                      ),
-
-                      // Bloque principal scrollable co contido da fase activa
-                      Expanded(
-                        child: SingleChildScrollView(
-                          padding: const EdgeInsets.all(16),
-                          child: _buildPhaseContent(asamblea),
-                        ),
-                      ),
-
-                      // Barra inferior de navegación entre fases
-                      Container(
-                        padding: const EdgeInsets.all(16),
-                        decoration: const BoxDecoration(
-                          color: AppTheme.backstageSurface,
-                          border: Border(
-                            top: BorderSide(
-                              color: AppTheme.backstageBorder,
-                              width: 1.0,
-                            ),
-                          ),
-                        ),
-                        child: Row(
-                          children: [
-                            // Botón Fase Anterior
-                            Expanded(
-                              child: OutlinedButton.icon(
-                                key: const ValueKey('backstage_prev_phase_button'),
-                                onPressed: _faseIndex > 0
-                                    ? () => _onFaseSelected(_faseIndex - 1)
-                                    : null,
-                                style: OutlinedButton.styleFrom(
-                                  foregroundColor: AppTheme.backstageTextPrimary,
-                                  disabledForegroundColor:
-                                      AppTheme.backstageTextMuted,
-                                  side: BorderSide(
-                                    color: _faseIndex > 0
-                                        ? AppTheme.backstageBorder
-                                        : AppTheme.backstageBorder
-                                            .withValues(alpha: 0.3),
-                                  ),
-                                  minimumSize: const Size(0, 52),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(
-                                      AppTheme.radiusButton,
-                                    ),
-                                  ),
-                                ),
-                                icon: const Icon(Icons.arrow_back_rounded),
-                                label: Text(
-                                    isGl ? 'Fase Anterior' : 'Fase Anterior',
-                                  style: const TextStyle(
-                                    fontFamily: AppTheme.fontFamily,
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w700,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            const SizedBox(width: 14),
-
-                            // Botón Seguinte Fase / Rematar
-                            Expanded(
-                              child: ElevatedButton.icon(
-                                key: const ValueKey('backstage_next_phase_button'),
-                                onPressed: () {
-                                  if (_faseIndex < 3) {
-                                    _onFaseSelected(_faseIndex + 1);
-                                  } else {
-                                    // Rematar asemblea
-                                    _confirmFinish().then((ok) {
-                                      if (ok && mounted) {
-                                        Navigator.of(context).pop();
-                                      }
-                                    });
-                                  }
-                                },
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: AppTheme.backstageAccent,
-                                  foregroundColor: AppTheme.backstageBg,
-                                  minimumSize: const Size(0, 52),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(
-                                      AppTheme.radiusButton,
-                                    ),
-                                  ),
-                                ),
-                                icon: Icon(
-                                  _faseIndex < 3
-                                      ? Icons.arrow_forward_rounded
-                                      : Icons.check_circle_rounded,
-                                ),
-                                label: Text(
-                                  _faseIndex < 3
-                                      ? (isGl ? 'Seguinte Fase' : 'Siguiente Fase')
-                                      : (isGl ? 'Rematar Asemblea' : 'Finalizar Asamblea'),
-                                  style: const TextStyle(
-                                    fontFamily: AppTheme.fontFamily,
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w800,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-        ),
       ),
     );
   }
@@ -676,6 +692,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
       0 => PasoOpeningWidget(
           fase: fase,
           language: _language,
+          audioService: widget.audioService,
           onPlayCue: (fase.audioAsset != null && fase.audioAsset!.isNotEmpty)
               ? () => _handlePlayOpeningCue(fase.audioAsset)
               : null,
@@ -684,12 +701,14 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
       1 => PasoRhythmWidget(
           fase: fase,
           language: _language,
+          audioService: widget.audioService,
           onTogglePulse: () => _handleTogglePulse(fase.audioAsset),
           isPulsePlaying: _isPulsePlaying,
         ),
       2 => PasoCoreTprWidget(
           fase: fase,
           language: _language,
+          audioService: widget.audioService,
           metodologia: asamblea.metodologiaTpr,
           onPlayCommandAudio: _handlePlayCommandAudio,
           currentlyPlayingAsset: _currentlyPlayingAsset,
@@ -698,9 +717,11 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
       3 => PasoCalmWidget(
           fase: fase,
           language: _language,
-          onPlayCalmAudio: (fase.audioAsset != null && fase.audioAsset!.isNotEmpty)
-              ? () => _handlePlayCalmAudio(fase.audioAsset)
-              : null,
+          audioService: widget.audioService,
+          onPlayCalmAudio:
+              (fase.audioAsset != null && fase.audioAsset!.isNotEmpty)
+                  ? () => _handlePlayCalmAudio(fase.audioAsset)
+                  : null,
           isPlayingCalmAudio: _isPlayingCalmAudio,
         ),
       _ => const SizedBox.shrink(),

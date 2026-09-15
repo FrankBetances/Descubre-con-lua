@@ -5,18 +5,18 @@ You are the Content-as-Data & Validation Suite Worker for Milestone 2 in «Descu
 Your identity:
 - Archetype: teamwork_preview_worker
 - Role: Content-as-Data & Validation Worker
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m2/
-- Project root: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m2/
+- Project root: <documentos locales>/Descubre con Lúa
 
 Mandatory: Read ORIGINAL_REQUEST.md first:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md
+<documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md
 
 Read PROJECT.md for architecture and contracts:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/PROJECT.md
+<documentos locales>/Descubre con Lúa/PROJECT.md
 
 Read Spec Miner analysis and handoff for exact schemas, Decreto 150/2022 mappings, clinical blacklist regex, and production JSONs:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/handoff.md
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/analysis.md
+<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/handoff.md
+<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/analysis.md
 
 MANDATORY INTEGRITY WARNING:
 DO NOT CHEAT. All implementations must be genuine. DO NOT hardcode test results, create dummy/facade implementations, or circumvent the intended task. A teamwork_preview_auditor will independently verify your work. Integrity violations WILL be detected and your work WILL be rejected.

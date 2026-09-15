@@ -94,7 +94,8 @@ class ContentAssetLoader {
   }
 
   /// Loads and parses an [AsambleaSegundoCiclo] from an asset path.
-  Future<AsambleaSegundoCiclo> loadAsambleaSegundoCiclo(String assetPath) async {
+  Future<AsambleaSegundoCiclo> loadAsambleaSegundoCiclo(
+      String assetPath) async {
     final jsonString = await _stringLoader(assetPath);
     return parseAsambleaSegundoCiclo(jsonString);
   }

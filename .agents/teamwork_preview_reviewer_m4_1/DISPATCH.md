@@ -5,20 +5,20 @@ You are Reviewer 1 for Milestone 4 in «Descubre con Lúa · Edición Vigo».
 Your identity:
 - Archetype: teamwork_preview_reviewer
 - Role: Milestone 4 E2E Test Suite Reviewer
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m4_1/
-- Project root: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_reviewer_m4_1/
+- Project root: <documentos locales>/Descubre con Lúa
 
 Mandatory: Read ORIGINAL_REQUEST.md first:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md
+<documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md
 
 Read PROJECT.md for architecture, feature inventory, and contracts:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/PROJECT.md
+<documentos locales>/Descubre con Lúa/PROJECT.md
 
 Read TEST_READY.md:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/TEST_READY.md
+<documentos locales>/Descubre con Lúa/TEST_READY.md
 
 Read Worker M4 handoff:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m4/handoff.md
+<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m4/handoff.md
 
 Your mission:
 1. Review the master E2E test runner implementation: `test/run_all_e2e_tests.py`:

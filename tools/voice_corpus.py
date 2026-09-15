@@ -8,7 +8,7 @@ referenced, the new one does not exist yet, and check_voice_coverage.py says so.
 That is what makes it impossible to ship a screen that shows one sentence and
 plays another.
 
-The hash is the same FNV-1a used by the Valeria pipeline, so an id computed
+The hash is the same FNV-1a used by the earlier pipeline in the house, so an id computed
 here, in Dart (lib/core/audio/voice_id.dart) or in JavaScript is identical.
 """
 from __future__ import annotations
@@ -23,9 +23,15 @@ CONTENT_DIR = ROOT / "assets" / "content"
 VOICE_DIR = ROOT / "assets" / "voice"
 CORPUS_JSON = ROOT / "voice-corpus.json"
 
+# Las dos lenguas en las que se LEE la app. Toda la prosa bilingüe va en estas.
 LANGS = ("gl", "es")
-ALL_LANGS = ("gl", "es", "en")
-VOICE_LANGS = ALL_LANGS
+
+# El inglés no es lengua de interfaz: no hay ni una pantalla en inglés. Entra en
+# el corpus como CONTENIDO que se escucha —el léxico, las órdenes TPR y las
+# frases de assets/content/calendario/— para que la persona adulta pueda oír la
+# pronunciación antes de decirla. Por eso se recoge aparte y no con _localized.
+VOICE_LANGS = ("gl", "es", "en")
+ALL_LANGS = VOICE_LANGS
 
 # Reading pace passed to the synthesiser. There is no `child` style because a
 # child never uses this app, and no `clinical` style because nothing here has a
@@ -92,29 +98,45 @@ def voice_id(style: str, text: str, lang: str) -> str:
     return f"{lang}_{style}_{fnv1a32(normalized)}_{utf16_length(normalized)}"
 
 
-def _localized(node: object, langs: tuple[str, ...] = LANGS) -> dict[str, str]:
+def _localized(node: object) -> dict[str, str]:
     if isinstance(node, dict):
-        return {lang: str(node.get(lang, "")) for lang in langs}
-    return {lang: "" for lang in langs}
+        return {lang: str(node.get(lang, "")) for lang in LANGS}
+    return {lang: "" for lang in LANGS}
 
 
-def _add(text: dict[str, str], style: str, source: str, seen: dict[str, Locution], langs: tuple[str, ...] = LANGS) -> None:
-    for lang in langs:
-        value = normalize(text.get(lang, ""))
-        if not value:
-            continue
-        entry = Locution(
-            id=voice_id(style, value, lang),
-            lang=lang,
-            style=style,
-            text=value,
-            speech=speech_text(value),
-            source=source,
-        )
-        seen.setdefault(entry.id, entry)
+def _one(text: str, lang: str, style: str, source: str,
+         seen: dict[str, Locution]) -> None:
+    """Una locución suelta en una lengua concreta. La usa el inglés."""
+    value = normalize(text)
+    if not value:
+        return
+    entry = Locution(
+        id=voice_id(style, value, lang),
+        lang=lang,
+        style=style,
+        text=value,
+        speech=speech_text(value),
+        source=source,
+    )
+    seen.setdefault(entry.id, entry)
 
 
-def collect_locutions(content_dir: Path = CONTENT_DIR, langs: tuple[str, ...] = LANGS) -> list[Locution]:
+def _add(text: dict[str, str], style: str, source: str, seen: dict[str, Locution]) -> None:
+    for lang in LANGS:
+        _one(text.get(lang, ""), lang, style, source, seen)
+
+
+def estilo_ingles(text: str) -> str:
+    """Una palabra suelta se imita, una frase se lee.
+
+    La MISMA regla está en `estiloIngles` de lib/core/audio/voice_id.dart. Si
+    las dos dejaran de coincidir, la app pediría una grabación con otro
+    identificador y el botón desaparecería sin que nadie supiera por qué.
+    """
+    return "tutor" if " " in normalize(text) else "slow"
+
+
+def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     """Every locution the app can play, read from the content JSON.
 
     Nothing is invented here: if a screen starts playing something new, it gets
@@ -135,18 +157,21 @@ def collect_locutions(content_dir: Path = CONTENT_DIR, langs: tuple[str, ...] = 
     imitated.
     """
     seen: dict[str, Locution] = {}
-    _orig_localized = globals()["_localized"]
-    _orig_add = globals()["_add"]
-
-    def _localized(node: object) -> dict[str, str]:
-        return _orig_localized(node, langs=langs)
-
-    def _add(text: dict[str, str], style: str, source: str, _s: dict[str, Locution] = seen) -> None:
-        _orig_add(text, style, source, seen, langs=langs)
 
     for path in sorted((content_dir / "unidades").glob("*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
         unit_id = data.get("id", path.stem)
+
+        # El inglés de la unidad, fase por fase: es lo que la barra de la
+        # asamblea pinta con altavoz, así que tiene que estar grabado.
+        ingles = data.get("ingles") or {}
+        for fase, textos in (ingles.get("porFase") or {}).items():
+            for texto in textos or []:
+                _one(str(texto), "en", estilo_ingles(str(texto)),
+                     f"{unit_id}/ingles/{fase}", seen)
+        if ingles.get("frase"):
+            _one(str(ingles["frase"]), "en", estilo_ingles(str(ingles["frase"])),
+                 f"{unit_id}/ingles/frase", seen)
 
         cancion = data.get("cancionPulso") or data.get("cancion") or {}
         letra = cancion.get("letraConPulsos") or cancion.get("letra_con_pulsos")
@@ -174,6 +199,12 @@ def collect_locutions(content_dir: Path = CONTENT_DIR, langs: tuple[str, ...] = 
             if pagina.get("preguntaComprension"):
                 _add(_localized(pagina["preguntaComprension"]), "tutor",
                      f"{unit_id}/cuento/{i}/pregunta", seen)
+            # El inglés de ESA página: lo que la persona adulta dice mientras la
+            # lee. Va aquí y no en porFase porque la docente tiene delante la
+            # página, no la fase.
+            for texto in pagina.get("ingles") or []:
+                _one(str(texto), "en", estilo_ingles(str(texto)),
+                     f"{unit_id}/cuento/{i}/ingles", seen)
 
         for pregunta in data.get("preguntas") or []:
             if not isinstance(pregunta, dict):
@@ -192,6 +223,11 @@ def collect_locutions(content_dir: Path = CONTENT_DIR, langs: tuple[str, ...] = 
             if item.get("palabra"):
                 _add(_localized(item["palabra"]), "slow",
                      f"{unit_id}/vocabulario/{item_id}", seen)
+            # La palabra inglesa, al lado de la galega y la castellana: la
+            # tarjeta las enseña juntas y las tres se pueden oír.
+            if item.get("ingles"):
+                _one(str(item["ingles"]), "en", estilo_ingles(str(item["ingles"])),
+                     f"{unit_id}/vocabulario/{item_id}/ingles", seen)
             # `definicionBreve` NO entra en el corpus: hoy no hay ninguna
             # pantalla que pinte el vocabulario, así que esas grabaciones
             # viajarían en el APK sin que nada pudiera reproducirlas. Entra el
@@ -228,8 +264,11 @@ def collect_locutions(content_dir: Path = CONTENT_DIR, langs: tuple[str, ...] = 
         data = json.loads(path.read_text(encoding="utf-8"))
         cap_id = data.get("id", path.stem)
 
+        # `luaDice` es el cierre de la gata. Entra en el corpus como las
+        # otras cuatro: es prosa que la familia lee, y si se pudiera leer
+        # pero no escuchar sería la única tarjeta del lector sin altavoz.
         for campo in ("ideaClave", "porQueImporta", "queHacerEnCasa",
-                      "ejemploCotidiano"):
+                      "ejemploCotidiano", "luaDice"):
             if data.get(campo):
                 _add(_localized(data[campo]), "tutor", f"{cap_id}/{campo}", seen)
 
@@ -241,6 +280,92 @@ def collect_locutions(content_dir: Path = CONTENT_DIR, langs: tuple[str, ...] = 
                 if afirmacion.get(campo):
                     _add(_localized(afirmacion[campo]), "tutor",
                          f"{cap_id}/afirmaciones/{aid}/{campo}", seen)
+
+    # ── El inglés del Calendario Escola·Fogar ──────────────────────────────
+    # Es la razón de ser de la voz inglesa: una maestra de una escuela infantil
+    # de Vigo no tiene por qué pronunciar «Crunch leaves», y aquí lo oye antes
+    # de llevarlo a la asamblea. Solo entra lo que una pantalla puede
+    # reproducir: el léxico, las órdenes y la frase del mes se pintan como
+    # pastillas con altavoz, y la frase de cada tramo, en la guía de la
+    # familia. Nada que no se pueda pulsar viaja en el APK.
+    meses_json = content_dir / "calendario" / "meses.json"
+    if meses_json.exists():
+        data = json.loads(meses_json.read_text(encoding="utf-8"))
+        for mes in data.get("meses") or []:
+            orden = mes.get("orden", "?")
+            ingles = mes.get("ingles") or {}
+            for palabra in ingles.get("lexico") or []:
+                # Despacio: las palabras sueltas existen para imitarse.
+                _one(str(palabra), "en", "slow",
+                     f"calendario/mes/{orden}/ingles/lexico", seen)
+            for comando in ingles.get("tpr") or []:
+                _one(str(comando), "en", "tutor",
+                     f"calendario/mes/{orden}/ingles/tpr", seen)
+            if ingles.get("frase"):
+                _one(str(ingles["frase"]), "en", "tutor",
+                     f"calendario/mes/{orden}/ingles/frase", seen)
+
+    atencion_json = content_dir / "calendario" / "atencion.json"
+    if atencion_json.exists():
+        data = json.loads(atencion_json.read_text(encoding="utf-8"))
+        for tramo in data.get("tramos") or []:
+            if tramo.get("fraseIngles"):
+                _one(str(tramo["fraseIngles"]), "en", "tutor",
+                     f"calendario/tramo/{tramo.get('id', '?')}/fraseIngles",
+                     seen)
+
+    # La asamblea matinal de segundo ciclo. Nació MUDA: la docente leía la
+    # consigna y el inglés de las órdenes TPR sin poder oír cómo suena, que es
+    # justo lo que la voz neuronal existe para resolver. Este directorio no lo
+    # miraba nadie, así que el gate de cobertura daba OK sin cubrirlo.
+    asambleas = content_dir / "asambleas_segundo_ciclo"
+    if asambleas.exists():
+        for path in sorted(asambleas.glob("*.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            aid = data.get("id", path.stem)
+
+            for fase in data.get("fases") or []:
+                if not isinstance(fase, dict):
+                    continue
+                orden = fase.get("orden", "?")
+                # Lo que la docente dice en voz alta, en las dos lenguas.
+                if fase.get("consignaDocente"):
+                    _add(_localized(fase["consignaDocente"]), "tutor",
+                         f"{aid}/fase/{orden}/consigna", seen)
+                # La señal en inglés que abre la fase.
+                if fase.get("cueAcustica"):
+                    texto = str(fase["cueAcustica"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"{aid}/fase/{orden}/cue", seen)
+                for comando in fase.get("comandosL3") or []:
+                    if not isinstance(comando, dict):
+                        continue
+                    cid = comando.get("id", "?")
+                    # La orden en inglés: esto es el corazón del TPR y es lo
+                    # que nadie tiene por qué saber pronunciar de oído.
+                    if comando.get("textoIngles"):
+                        texto = str(comando["textoIngles"])
+                        _one(texto, "en", estilo_ingles(texto),
+                             f"{aid}/fase/{orden}/cmd/{cid}/ingles", seen)
+                    for campo in ("accionFisica", "modeladoDocente"):
+                        if comando.get(campo):
+                            _add(_localized(comando[campo]), "tutor",
+                                 f"{aid}/fase/{orden}/cmd/{cid}/{campo}", seen)
+
+            # La micro-rutina de casa la lee la familia, muchas veces con las
+            # manos ocupadas, igual que las cápsulas.
+            micro = data.get("microRutinaHogar") or {}
+            for campo in ("objetivoAutonomia", "escenaCotidiana"):
+                if micro.get(campo):
+                    _add(_localized(micro[campo]), "tutor",
+                         f"{aid}/microRutina/{campo}", seen)
+            for i, pauta in enumerate(micro.get("pautasRecast") or []):
+                if not isinstance(pauta, dict):
+                    continue
+                for campo in ("modeladoIndirecto", "consejoEvitar"):
+                    if pauta.get(campo):
+                        _add(_localized(pauta[campo]), "tutor",
+                             f"{aid}/microRutina/pauta/{i}/{campo}", seen)
 
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 

@@ -1,0 +1,105 @@
+{
+  "vb": 100,
+  "nota": "Ra / Rana verde de frente, con los ojos saltones arriba y las patas a los lados. Lista para saltar.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M16 62 C6 66 4 80 14 84 C22 88 30 82 30 74",
+      "f": "#2ecc40",
+      "s": "#1b7a2b",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M84 62 C94 66 96 80 86 84 C78 88 70 82 70 74",
+      "f": "#2ecc40",
+      "s": "#1b7a2b",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M50 26 C74 26 88 44 88 62 C88 78 72 86 50 86 C28 86 12 78 12 62 C12 44 26 26 50 26 Z",
+      "f": "#2ecc40",
+      "s": "#1b7a2b",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 30,
+      "cy": 26,
+      "rx": 14,
+      "ry": 14,
+      "f": "#2ecc40",
+      "s": "#1b7a2b",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 70,
+      "cy": 26,
+      "rx": 14,
+      "ry": 14,
+      "f": "#2ecc40",
+      "s": "#1b7a2b",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 30,
+      "cy": 26,
+      "rx": 8,
+      "ry": 9,
+      "f": "#ffffff",
+      "s": "#1b7a2b",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 70,
+      "cy": 26,
+      "rx": 8,
+      "ry": 9,
+      "f": "#ffffff",
+      "s": "#1b7a2b",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 31,
+      "cy": 27,
+      "rx": 4,
+      "ry": 6,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 69,
+      "cy": 27,
+      "rx": 4,
+      "ry": 6,
+      "f": "#181a20"
+    },
+    {
+      "t": "ruta",
+      "d": "M28 64 C38 76 62 76 72 64",
+      "s": "#1b7a2b",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 26,
+      "cy": 52,
+      "rx": 8,
+      "ry": 6,
+      "f": "#84cc16aa"
+    },
+    {
+      "t": "elipse",
+      "cx": 74,
+      "cy": 52,
+      "rx": 8,
+      "ry": 6,
+      "f": "#84cc16aa"
+    }
+  ]
+}

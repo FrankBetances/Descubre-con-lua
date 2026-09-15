@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../../core/localization/app_language.dart';
+import '../../../../core/audio/offline_audio_service.dart';
+import '../../../../core/audio/voice_id.dart';
+import '../../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../../core/brand/lamina_vector.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 
@@ -12,6 +16,10 @@ import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
 class PasoRhythmWidget extends StatelessWidget {
   final FaseAsamblea fase;
   final AppLanguage language;
+
+  /// Para el altavoz de la consigna y del inglés. Sin él la fase se lee
+  /// pero no se escucha, que es como nació este módulo.
+  final OfflineAudioService? audioService;
   final VoidCallback? onTogglePulse;
   final bool isPulsePlaying;
 
@@ -19,6 +27,7 @@ class PasoRhythmWidget extends StatelessWidget {
     super.key,
     required this.fase,
     required this.language,
+    this.audioService,
     this.onTogglePulse,
     this.isPulsePlaying = false,
   });
@@ -34,6 +43,14 @@ class PasoRhythmWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         // Cabeceira da fase
+        // La lámina de la fase: la asamblea eran cuatro pantallas de prosa
+        // seguidas, sin una sola imagen.
+        if (fase.lamina.isNotEmpty) ...[
+          Center(
+            child: LaminaEscena(clave: fase.lamina, ancho: 128),
+          ),
+          const SizedBox(height: 16),
+        ],
         Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
@@ -55,9 +72,9 @@ class PasoRhythmWidget extends StatelessWidget {
                       color: AppTheme.backstageAccent.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
-                    child: const Text(
-                      'FASE 2 · 120s',
-                      style: TextStyle(
+                    child: Text(
+                      'FASE ${fase.orden} · ${fase.duracionSegundos}s',
+                      style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 13,
                         fontWeight: FontWeight.w800,
@@ -109,15 +126,18 @@ class PasoRhythmWidget extends StatelessWidget {
                     size: 22,
                   ),
                   const SizedBox(width: 8),
-                  Text(
-                    isGl ? 'Consigna para o Docente' : 'Consigna para el Docente',
+                  Expanded(
+                      child: Text(
+                    isGl
+                        ? 'Consigna para o Docente'
+                        : 'Consigna para el Docente',
                     style: const TextStyle(
                       fontFamily: AppTheme.fontFamily,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w700,
                       color: AppTheme.backstageAccent,
                     ),
-                  ),
+                  )),
                 ],
               ),
               const SizedBox(height: 12),
@@ -131,6 +151,31 @@ class PasoRhythmWidget extends StatelessWidget {
                   height: 1.4,
                 ),
               ),
+              BotonEscuchar(
+                audioService: audioService,
+                texto: consigna,
+                language: language,
+                compacto: true,
+                descripcion: isGl
+                    ? 'a consigna do foco rítmico'
+                    : 'la consigna del foco rítmico',
+              ),
+              if (cueText.trim().isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: BotonEscuchar(
+                      audioService: audioService,
+                      texto: cueText,
+                      language: AppLanguage.en,
+                      style: estiloIngles(cueText),
+                      compacto: true,
+                      descripcion:
+                          isGl ? 'o sinal en inglés' : 'la señal en inglés',
+                    ),
+                  ),
+                ),
             ],
           ),
         ),
@@ -220,17 +265,24 @@ class PasoRhythmWidget extends StatelessWidget {
                     minimumSize: const Size.fromHeight(56),
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+                      borderRadius:
+                          BorderRadius.circular(AppTheme.radiusButton),
                     ),
                   ),
                   icon: Icon(
-                    isPulsePlaying ? Icons.stop_rounded : Icons.play_arrow_rounded,
+                    isPulsePlaying
+                        ? Icons.stop_rounded
+                        : Icons.play_arrow_rounded,
                     size: 28,
                   ),
                   label: Text(
                     isPulsePlaying
-                        ? (isGl ? 'Deter Pulso Rítmico' : 'Detener Pulso Rítmico')
-                        : (isGl ? 'Activar Pulso 72 BPM' : 'Activar Pulso 72 BPM'),
+                        ? (isGl
+                            ? 'Deter Pulso Rítmico'
+                            : 'Detener Pulso Rítmico')
+                        : (isGl
+                            ? 'Activar Pulso 72 BPM'
+                            : 'Activar Pulso 72 BPM'),
                     style: const TextStyle(
                       fontFamily: AppTheme.fontFamily,
                       fontSize: 17,
@@ -266,7 +318,8 @@ class PasoRhythmWidget extends StatelessWidget {
                     size: 20,
                   ),
                   const SizedBox(width: 8),
-                  Text(
+                  Expanded(
+                      child: Text(
                     isGl
                         ? 'Praxias Orofaciais e Rimas Dactilares'
                         : 'Praxias Orofaciales y Rimas Dactilares',
@@ -276,7 +329,7 @@ class PasoRhythmWidget extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                       color: AppTheme.backstageAccent,
                     ),
-                  ),
+                  )),
                 ],
               ),
               const SizedBox(height: 8),

@@ -1,13 +1,11 @@
 name: Gates
 
-# Los gates Y el binario firmado, en un solo workflow, como `android.yml` en
-# Valeria+. Corre `tools/gates.sh` — el mismo fichero que corre un contribuyente
-# en su máquina, así que la lista de gates no puede separarse de lo que de
-# verdad se exige.
+# Los gates Y el binario firmado, en un solo workflow. Corre `tools/gates.sh`,
+# el mismo fichero que corre un contribuyente en su máquina, así que la lista de
+# gates no puede separarse de lo que de verdad se exige.
 #
 # Firma de release: requiere estos secrets en Settings > Secrets and variables >
-# Actions (los mismos nombres que en Valeria+, pero los valores son POR
-# REPOSITORIO: hay que darlos de alta también aquí):
+# Actions (los valores son POR REPOSITORIO: hay que darlos de alta aquí):
 #   ANDROID_RELEASE_KEYSTORE_BASE64  → keystore codificado (base64 -w0 release.keystore)
 #   ANDROID_RELEASE_STORE_PASSWORD   → contraseña del keystore
 #   ANDROID_RELEASE_KEY_ALIAS        → alias de la clave
@@ -56,8 +54,8 @@ on:
   workflow_dispatch:
 
 # Un run por rama Y POR EVENTO, y siempre el último. `github.event_name` entra en
-# el grupo por lo que le pasó a Valeria+ el 4/9/2026: con el grupo puesto solo en
-# la rama, un "Run workflow" lanzado a mano mataba el run del push cuando ya
+# el grupo por un fallo ya visto: con el grupo puesto solo en
+# la rama, un "Run workflow" lanzado a mano mata el run del push cuando ya
 # llevaba los gates en verde. Ese run queda como `cancelled`, GitHub resume el
 # commit con la peor conclusión de sus checks, y `main` sale con una X roja
 # teniendo el binario compilado. Una X que no significa nada es la que hace que
@@ -120,6 +118,12 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          # `packages` por defecto es «tools platform-tools», y `tools` ya no
+          # existe en el repositorio de Google: sdkmanager responde «Failed to
+          # find package 'tools'» y la acción muere con exit 1 ANTES de que
+          # corra un solo gate. Se pide solo platform-tools, que sí existe.
+          packages: 'platform-tools'
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
@@ -134,6 +138,13 @@ jobs:
 
       - name: Install the content gates' dependencies
         run: pip install numpy Pillow
+
+      # ffmpeg es lo que MIDE las grabaciones en check_voice_levels.py. Sin él
+      # ese gate se saltaba y devolvía 0: salía PASS en el resumen sin haber
+      # abierto un solo fichero. Un gate que informa de verde sin comprobar nada
+      # es peor que no tenerlo, porque ocupa su sitio.
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
       - name: flutter pub get
         run: flutter pub get
@@ -265,20 +276,29 @@ jobs:
           if-no-files-found: ignore
           retention-days: 30
 
-      # En las ramas `claude/**` el APK no se instala en ningún sitio: la regla
-      # de trabajo es que nada llega a Frank hasta estar en main con run verde,
-      # así que ese fichero nacía muerto. La rama SIGUE COMPILANDO —los gates y
-      # Gradle corren igual, que es para lo que sirven—; lo único que se pierde
-      # es el fichero. Para bajarse el APK de una rama: pestaña Actions →
-      # "Gates" → "Run workflow" eligiendo esa rama. Ese dispatch sí sube.
+      # El APK sube SIEMPRE, también desde una rama. Antes solo subía en main, y
+      # la regla que lo justificaba —«nada llega a Frank hasta estar en main con
+      # run verde»— acababa forzando lo contrario de lo que quiere: para mirar
+      # algo en el móvil había que fusionar a main primero, o sea meter en main
+      # lo que nadie ha visto en un aparato para poder verlo en un aparato.
+      #
+      # Esa regla es sobre lo que YO puedo decir —no se dice «entregado» desde
+      # una rama—, no sobre lo que Frank puede probar. El artefacto de rama es
+      # para probar; el de main es el que cuenta.
+      #
+      # `retention-days` corto en rama: son builds de trabajo y no hacen falta
+      # dos días después. El de main mantiene sus cinco.
       - name: Subir el APK de release
-        if: always() && (env.TARGET_BRANCH == 'main' || github.event_name == 'workflow_dispatch')
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: android-apk
+          # Nombre distinto por rama: si la rama y main compartieran nombre, la
+          # limpieza de «2 copias por nombre» borraría el de main al subir el de
+          # una rama, que es justo el que hay que poder recuperar.
+          name: ${{ env.TARGET_BRANCH == 'main' && 'android-apk' || format('android-apk-{0}', github.run_number) }}
           path: build/app/outputs/flutter-apk/app-release.apk
           if-no-files-found: warn
-          retention-days: 5
+          retention-days: ${{ env.TARGET_BRANCH == 'main' && 5 || 2 }}
 
       # Cuando Gradle muere dentro de un worker, el log no dice si fue la memoria
       # o el disco. Estas dos líneas lo dicen, y solo cuestan algo en los runs

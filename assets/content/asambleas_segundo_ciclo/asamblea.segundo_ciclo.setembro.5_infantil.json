@@ -24,6 +24,7 @@
         "en": "Opening & Circle Greeting with Midline Crossing"
       },
       "duracionSegundos": 90,
+      "lamina": "gato",
       "consignaDocente": {
         "gl": "Reunir ao grupo no círculo. Cruzar os brazos sobre o peito para saudar a Lúa e xirar suavemente sobre o propio eixe. Activar a escoita atenta.",
         "es": "Reunir al grupo en el círculo. Cruzar los brazos sobre el pecho para saludar a Lúa y girar suavemente sobre el propio eje. Activar la escucha atenta.",
@@ -37,15 +38,16 @@
       "orden": 2,
       "tipo": "movement_rhythm_focus",
       "titulo": {
-        "gl": "Foco Rítmico e Calistenia Orofacial",
-        "es": "Foco Rítmico y Calistenia Orofacial",
-        "en": "Movement & Rhythmic Focus with Orofacial Praxias"
+        "gl": "Foco Rítmico e Movemento Cruzado",
+        "es": "Foco Rítmico y Movimiento Cruzado",
+        "en": "Movement & Rhythmic Focus"
       },
       "duracionSegundos": 120,
+      "lamina": "man",
       "consignaDocente": {
-        "gl": "Marcar o pulso de 72 BPM con palmadas alternadas en xeonllos e ombreiros. Asociar praxias de sopro e vibración labial suave /v/ e /z/ ao ritmo da rima dactilar.",
-        "es": "Marcar el pulso de 72 BPM con palmadas alternadas en rodillas y hombros. Asociar praxias de soplo y vibración labial suave /v/ y /z/ al ritmo de la rima dactilar.",
-        "en": "Keep 72 BPM tapping knees and shoulders alternately. Combine gentle lip vibrations /v/ and /z/ with fingerplay rhythms."
+        "gl": "Marcar o pulso de 72 BPM con palmadas alternadas en xeonllos e ombreiros. Acompañar a rima dactilar coa voz e co xesto, sen pedir que ninguén repita.",
+        "es": "Marcar el pulso de 72 BPM con palmadas alternadas en rodillas y hombros. Acompañar la rima dactilar con la voz y el gesto, sin pedir que nadie repita.",
+        "en": "Keep 72 BPM tapping knees and shoulders alternately. Follow the fingerplay rhyme with voice and gesture, without asking anyone to repeat."
       },
       "cueAcustica": "Pulse 72 BPM",
       "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
@@ -61,6 +63,7 @@
         "en": "Core TPR Challenge: Kinetic Story & Stop-Signal Freeze"
       },
       "duracionSegundos": 270,
+      "lamina": "mochila",
       "consignaDocente": {
         "gl": "Dramatización motriz da mochila durmiñona. O grupo encarna o desprazamento pesado e a freada brusca ante a clave sintáctica 'FREEZE!'. Exixir control inhibitorio sen interrupcións metalingüísticas.",
         "es": "Dramatización motriz de la mochila dormilona. El grupo encarna el desplazamiento pesado y la frenada brusca ante la clave sintáctica 'FREEZE!'. Exigir control inhibitorio sin interrupciones metalingüísticas.",
@@ -121,6 +124,7 @@
         "en": "Calm, Deep Breathing and Forest Sounds"
       },
       "duracionSegundos": 120,
+      "lamina": "arbore",
       "consignaDocente": {
         "gl": "Sentar na alfombra coas pernas cruzadas. Respiración diafragmática fonda: coller aire imaxinando cheirar a herba húmida e expulsalo cun suave sopro /s/ mentres tocamos as claves de madeira.",
         "es": "Sentar en la alfombra con las piernas cruzadas. Respiración diafragmática profunda: tomar aire imaginando oler la hierba húmeda y expulsarlo con un suave soplo /s/ mientras tocamos las claves de madera.",
@@ -246,9 +250,9 @@
   },
   "revision": {
     "autor": "Equipo Pedagóxico Descubre con Lúa",
-    "revisorPedagogico": "Especialista en Educación Infantil e Desenvolvemento da Linguaxe",
+    "revisorPedagogico": "",
     "fechaRevision": "2026-09-14",
     "version": "1.0.0",
-    "aprobadoParaAula": true
+    "aprobadoParaAula": false
   }
 }

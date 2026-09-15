@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+
+
 <html lang="es">
 <head>
 <meta charset="utf-8">
@@ -9,10 +12,9 @@
     · PDF   — docs/build-pdf.js
     · Word  — docs/build-docx.py
 
-  Misma estructura que Valeria+, y por la misma razón que está escrita en su
-  build-docx.py: allí el texto llegó a estar duplicado dentro del constructor,
-  el HTML avanzó a la v12 y el Word se quedó describiendo la v10.3 sin que nada
-  avisara. Aquí no se edita el Word ni el PDF: se edita esto y se reconstruyen.
+  El texto vive en un solo sitio a propósito: cuando el constructor lleva su
+  propia copia, la fuente avanza y el documento generado se queda describiendo
+  una versión anterior sin que nada avise. Aquí no se edita el Word ni el PDF: se edita esto y se reconstruyen.
 
   Regla de contenido, la del resto del proyecto: sólo se describe lo que la app
   hace hoy. Lo que no existe está en «Límites de esta versión».
@@ -132,6 +134,22 @@
   .shot-note { font-size: 8.5pt; color: var(--warn-ink); background: #FBF6E9;
                border-left: 3px solid #D9C89A; padding: 7px 10px;
                border-radius: 0 4px 4px 0; margin: 4px 0 14px; }
+
+    /* La fila de marcas de la portada. El escudo va sobre placa oscura porque
+       está dibujado para fondo oscuro: sobre blanco pierde el cuervo blanco y
+       el círculo, y queda medio escudo. */
+    .marcas { display: flex; justify-content: center; align-items: flex-start;
+              gap: 26px; flex-wrap: wrap; margin-top: 18px; }
+    /* `max-width` en la IMAGEN, no solo en el figure: un logotipo muy apaisado
+       —startTIC es 5:1— se salía de su hueco a la altura fija y se montaba
+       encima del de al lado. */
+    .marcas figure { margin: 0; text-align: center; width: 168px; }
+    .marcas img { max-height: 46px; max-width: 100%; width: auto; height: auto;
+                  object-fit: contain; }
+    .marcas figure:first-child img { max-height: 58px; background: #0B1220;
+                                     border-radius: 10px; padding: 6px; }
+    .marcas figcaption { font-size: 8.5pt; color: #64748B; margin-top: 6px;
+                         line-height: 1.3; }
 </style>
 </head>
 <body>
@@ -140,7 +158,7 @@
 <section class="cover">
   <div class="brand">Escolas Infantís Municipais de Vigo</div>
   <div class="title">Descubre con Lúa<br>Manual de Casos de Uso</div>
-  <div class="subtitle">Edición Vigo · Primeiro ciclo de educación infantil (0-3)</div>
+  <div class="subtitle">Edición Vigo · Educación infantil: primeiro ciclo (0-3) e segundo ciclo (3-6)</div>
   <div class="rule"></div>
   <p class="meta">
     Aplicación Android sen conexión · <code>com.earlify.descubreconlua</code><br>
@@ -151,6 +169,22 @@
     Este manual describe <strong>únicamente lo que la app hace hoy</strong>. Lo que
     todavía no existe está recogido en el capítulo «Límites de esta versión».
   </p>
+
+  <div class="rule"></div>
+  <div class="marcas">
+    <figure>
+      <img src="../assets/brand/logos/dr-betances-crest.png" alt="Escudo del Dr. Frank Alberto Betances Reinoso">
+      <figcaption>Dr. Frank Alberto Betances Reinoso</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/brand/logos/startic.png" alt="Incubadora de Alta Tecnoloxía startTIC">
+      <figcaption>Incubadora de Alta Tecnoloxía startTIC</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/brand/logos/zona-franca-vigo.png" alt="Consorcio da Zona Franca de Vigo">
+      <figcaption>Consorcio da Zona Franca de Vigo</figcaption>
+    </figure>
+  </div>
 </section>
 
 <!-- ══════════════════════════════════════════════════════════ ÍNDICE ════ -->
@@ -161,29 +195,29 @@
     <li><span class="num">1</span><span class="txt">Qué es, y qué no es</span></li>
     <li><span class="num">2</span><span class="txt">Antes de empezar</span></li>
     <li><span class="num">3</span><span class="txt">Mapa de la aplicación, y las pantallas</span></li>
+    <li><span class="num">4</span><span class="txt">Cómo funciona una asamblea</span></li>
     <li class="section-label">Casos de uso · Docente</li>
-    <li><span class="num">CU-1</span><span class="txt">Elegir la unidad de la asamblea</span></li>
-    <li><span class="num">CU-2</span><span class="txt">Conducir la asamblea guiada</span></li>
-    <li><span class="num">CU-3</span><span class="txt">Marcar el pulso</span></li>
-    <li><span class="num">CU-4</span><span class="txt">Reproducir el recitado de la letra</span></li>
-    <li><span class="num">CU-5</span><span class="txt">Cambiar de lengua a media asamblea</span></li>
-    <li><span class="num">CU-6</span><span class="txt">Cuando una grabación no está</span></li>
-    <li><span class="num">CU-7</span><span class="txt">Escuchar cómo se dice</span></li>
-    <li><span class="num">CU-8</span><span class="txt">Leer la formación de un paso</span></li>
-    <li><span class="num">CU-9</span><span class="txt">Ver los premios de Lúa</span></li>
+    <li><span class="num">CU-1</span><span class="txt">Ver qué toca este mes</span></li>
+    <li><span class="num">CU-2</span><span class="txt">Elegir la unidad de la asamblea</span></li>
+    <li><span class="num">CU-3</span><span class="txt">Conducir la asamblea guiada</span></li>
+    <li><span class="num">CU-4</span><span class="txt">Marcar el pulso</span></li>
+    <li><span class="num">CU-5</span><span class="txt">Reproducir el recitado de la letra</span></li>
+    <li><span class="num">CU-6</span><span class="txt">Cambiar de lengua a media asamblea</span></li>
+    <li><span class="num">CU-7</span><span class="txt">Cuando una grabación no está</span></li>
+    <li><span class="num">CU-8</span><span class="txt">Escuchar cómo se dice</span></li>
+    <li><span class="num">CU-9</span><span class="txt">Decir el inglés mientras se lee el cuento</span></li>
+    <li><span class="num">CU-10</span><span class="txt">Leer la formación de un paso</span></li>
+    <li><span class="num">CU-11</span><span class="txt">Ver los premios de Lúa</span></li>
+    <li><span class="num">CU-12</span><span class="txt">Conducir la asamblea matinal de segundo ciclo</span></li>
     <li class="section-label">Casos de uso · Familias</li>
-    <li><span class="num">CU-10</span><span class="txt">Leer una cápsula</span></li>
-    <li><span class="num">CU-11</span><span class="txt">Responder la reflexión</span></li>
-    <li><span class="num">CU-12</span><span class="txt">Usar la app sin la criatura delante</span></li>
-    <li class="section-label">Casos de uso · Mantenimiento</li>
-    <li><span class="num">CU-13</span><span class="txt">Añadir una unidad o una cápsula</span></li>
-    <li><span class="num">CU-14</span><span class="txt">Cambiar un texto que tiene audio</span></li>
-    <li><span class="num">CU-15</span><span class="txt">Regenerar las voces</span></li>
-    <li><span class="num">CU-16</span><span class="txt">Comprobar antes de entregar</span></li>
-    <li><span class="num">CU-17</span><span class="txt">Auditar la privacidad del binario</span></li>
+    <li><span class="num">CU-13</span><span class="txt">Leer una cápsula</span></li>
+    <li><span class="num">CU-14</span><span class="txt">Responder la reflexión</span></li>
+    <li><span class="num">CU-15</span><span class="txt">Usar la app sin la criatura delante</span></li>
+    <li><span class="num">CU-16</span><span class="txt">Preparar el inglés en casa</span></li>
+    <li><span class="num">CU-17</span><span class="txt">Hacer la micro-rutina del mes, en segundo ciclo</span></li>
     <li class="section-label">Cierre</li>
-    <li><span class="num">4</span><span class="txt">Límites de esta versión</span></li>
-    <li><span class="num">5</span><span class="txt">Si algo va mal</span></li>
+    <li><span class="num">5</span><span class="txt">Límites de esta versión</span></li>
+    <li><span class="num">6</span><span class="txt">Si algo va mal</span></li>
   </ul>
 </section>
 
@@ -192,8 +226,16 @@
   <p class="chapter-kicker">La aplicación</p>
   <h2>1 · Qué es, y qué no es</h2>
 
-  <p><strong>Es</strong> material pedagógico para el primer ciclo de educación
-  infantil (0-3 años), en gallego y castellano, que funciona entero sin conexión.</p>
+  <p><strong>Es</strong> material pedagógico para las dos etapas de educación
+  infantil —<strong>primer ciclo (0-3 años)</strong> y <strong>segundo ciclo
+  (3-6 años)</strong>—, en gallego y castellano, que funciona entero sin conexión.</p>
+
+  <p>Las dos etapas no se usan igual, y la app no las mezcla. En primer ciclo la
+  docente conduce una <strong>asamblea de seis fases</strong> alrededor de la
+  unidad del mes. En segundo ciclo conduce una <strong>asamblea matinal de
+  cuatro fases</strong>, más corta y con el inglés dentro, y elige el nivel
+  —4.º, 5.º o 6.º de Infantil— en la propia pantalla. Un conmutador en la lista
+  del aula decide con cuál de las dos se trabaja.</p>
 
   <div class="callout warn">
     <p class="lbl">No es un producto sanitario</p>
@@ -217,7 +259,7 @@
       adulta</em>: asambleas dirigidas, cápsulas leídas, racha actual y mejor racha, la fecha del
       último día <em>sin hora</em> y las insignias ganadas. No identifica a nadie y no puede salir del
       aparato, porque no hay permiso de red</td></tr>
-      <tr><th>Idiomas</th><td>Gallego y castellano, conmutables en cualquier pantalla con el selector <strong>GL / ES</strong> de la barra superior</td></tr>
+      <tr><th>Idiomas</th><td><strong>La aplicación</strong> está en gallego y castellano, conmutables en cualquier pantalla con el selector <strong>GL / ES</strong> de la barra superior. <strong>El inglés es contenido, no un idioma de la aplicación</strong>: son las palabras y frases que la persona adulta dice en su momento, con su grabación para oírlas antes. Ninguna pantalla se traduce al inglés</td></tr>
     </tbody>
   </table>
   <p>Al desinstalar no queda nada que borrar en ningún servidor, porque nunca hubo ninguno, y los
@@ -233,6 +275,12 @@
   </div>
   <div class="flowmap">
     <span class="node">Juega con Lúa · Aula</span>
+    <span class="node">2.º Ciclo (3-6)</span>
+    <span class="node">Nivel: 4.º · 5.º · 6.º</span>
+    <span class="node">Backstage de la asamblea (4 fases)</span>
+  </div>
+  <div class="flowmap">
+    <span class="node">Juega con Lúa · Aula</span>
     <span class="node">Formación · Aula</span>
     <span class="node">6 pasos de la asamblea</span>
     <span class="node">Cápsula docente</span>
@@ -242,6 +290,21 @@
     <span class="node">Academy · Familias</span>
     <span class="node">5 bloques</span>
     <span class="node">Cápsula (4 partes + reflexión)</span>
+  </div>
+  <div class="flowmap">
+    <span class="node">Pantalla inicial</span>
+    <span class="node">Calendario Escola·Fogar</span>
+    <span class="node">Mes del curso</span>
+    <span class="node">Unidad de aula + cápsula de casa</span>
+  </div>
+  <div class="flowmap">
+    <span class="node">Academy · Familias</span>
+    <span class="node">Guía de inglés en casa</span>
+  </div>
+  <div class="flowmap">
+    <span class="node">Academy · Familias</span>
+    <span class="node">Segundo ciclo · micro-rutina del mes</span>
+    <span class="node">Cómo responder sin corregir</span>
   </div>
   <div class="flowmap">
     <span class="node">Cualquier lista</span>
@@ -278,6 +341,36 @@
         <figcaption>Juega con Lúa · Aula · ES</figcaption></figure>
     </div>
     <div class="pair">
+      <figure><img src="capturas/calendario-gl.png" alt="Calendario Escola·Fogar en gallego">
+        <figcaption>Calendario Escola·Fogar · GL</figcaption></figure>
+      <figure><img src="capturas/calendario-es.png" alt="Calendario Escola·Fogar en castellano">
+        <figcaption>Calendario Escola·Fogar · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/asamblea-conto-gl.png" alt="Fase del cuento con su lámina en gallego">
+        <figcaption>Asamblea · el cuento y su lámina · GL</figcaption></figure>
+      <figure><img src="capturas/asamblea-conto-es.png" alt="Fase del cuento con su lámina en castellano">
+        <figcaption>Asamblea · el cuento y su lámina · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/aula-backstage-gl.png" alt="Backstage de la asamblea de segundo ciclo en gallego">
+        <figcaption>2.º ciclo · backstage de la asamblea · GL</figcaption></figure>
+      <figure><img src="capturas/aula-backstage-es.png" alt="Backstage de la asamblea de segundo ciclo en castellano">
+        <figcaption>2.º ciclo · backstage de la asamblea · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/academy-micro-rutina-gl.png" alt="Micro-rutina del mes para segundo ciclo en gallego">
+        <figcaption>2.º ciclo · micro-rutina del mes · GL</figcaption></figure>
+      <figure><img src="capturas/academy-micro-rutina-es.png" alt="Micro-rutina del mes para segundo ciclo en castellano">
+        <figcaption>2.º ciclo · micro-rutina del mes · ES</figcaption></figure>
+    </div>
+    <div class="pair">
+      <figure><img src="capturas/guia-ingles-gl.png" alt="Guía de inglés en casa en gallego">
+        <figcaption>Guía de inglés en casa · GL</figcaption></figure>
+      <figure><img src="capturas/guia-ingles-es.png" alt="Guía de inglés en casa en castellano">
+        <figcaption>Guía de inglés en casa · ES</figcaption></figure>
+    </div>
+    <div class="pair">
       <figure><img src="capturas/aula-formacion-gl.png" alt="Formación docente en gallego">
         <figcaption>Formación · Aula · GL</figcaption></figure>
       <figure><img src="capturas/aula-formacion-es.png" alt="Formación docente en castellano">
@@ -310,6 +403,93 @@
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════ CÓMO FUNCIONA ════ -->
+<section class="page-break">
+  <p class="chapter-kicker">La aplicación</p>
+  <h2>4 · Cómo funciona una asamblea</h2>
+
+  <p>Esta es la parte que conviene leer una vez antes de usar la app con un
+  grupo. No explica botones —eso está en los casos de uso— sino <strong>qué pasa
+  en esos ocho minutos y por qué van en ese orden</strong>.</p>
+
+  <p>La app <strong>no conduce la asamblea: la conduces tú</strong>. Cada fase se
+  abre con una sola frase en letra grande, que es lo que tienes que hacer, y con
+  los minutos que se le suponen. El móvil se queda fuera de la vista de las
+  criaturas; la pantalla es tu guion, no su juguete.</p>
+
+  <table>
+    <thead><tr><th>Fase</th><th>Min.</th><th>Lo que haces</th><th>Para qué</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>1 · Canción a pulso</strong></td><td>1</td>
+        <td>«Círculo en la alfombra. Marca el pulso en las piernas y canta muy despacio.»</td>
+        <td>Reúne al grupo y asienta el ritmo. El pulso regular es lo que sostiene después la palabra: primero el cuerpo, luego la boca</td>
+      </tr>
+      <tr>
+        <td><strong>2 · Cuento guiado</strong></td><td>2</td>
+        <td>«Lee la página en alto, haz la pregunta y espera cinco segundos.»</td>
+        <td>Lengua en contexto, con una lámina que da de qué hablar. Los cinco segundos son la fase: a esta edad la respuesta tarda</td>
+      </tr>
+      <tr>
+        <td><strong>3 · Preguntas graduadas</strong></td><td>1</td>
+        <td>«Una pregunta cada vez. El gesto vale igual que la palabra.»</td>
+        <td>Tres niveles —señalar, nombrar, causa-efecto— para que en el mismo círculo participe quien aún no habla y quien ya cuenta cosas</td>
+      </tr>
+      <tr>
+        <td><strong>4 · Exploración sensorial</strong></td><td>2</td>
+        <td>«Lee el aviso antes de sacar el material. Ofrece; no pongas nada en la mano de nadie.»</td>
+        <td>La experiencia directa con el objeto del que se ha hablado. <strong>Ofrecer y no imponer</strong> es la regla: quien no quiere tocar, mira</td>
+      </tr>
+      <tr>
+        <td><strong>5 · Matemáticas tempranas</strong></td><td>1</td>
+        <td>«Dos objetos, no cinco. Nombra mientras lo haces y deja que toquen.»</td>
+        <td>Cantidad, tamaño y forma dichas en voz alta mientras se manipulan. No se cuenta de memoria: se compara</td>
+      </tr>
+      <tr>
+        <td><strong>6 · Puente a casa</strong></td><td>1</td>
+        <td>«Quédate con la nota para las casas: dila en la puerta o escríbela en la entrada.»</td>
+        <td>Que lo del aula llegue a casa <em>esa misma tarde</em>. Sin esto, la asamblea se queda en el aula</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout ok">
+    <p class="lbl">Ocho minutos, y el reloj empieza parado</p>
+    <p>La cabecera suma los minutos de las seis fases. El reloj de cada fase no
+    arranca solo: lo arrancas tú cuando el grupo está listo, y cambia de color
+    si te pasas. No suena nada y no pasa nada por pasarse: es una referencia,
+    no una alarma.</p>
+  </div>
+
+  <h3>Tres hilos que cruzan las seis fases</h3>
+
+  <p><strong>El pulso se ve, no se oye.</strong> El metrónomo es visual a
+  propósito. Parte de las criaturas llevan audiófono o implante coclear, y un
+  metrónomo sonoro compite justo con la voz que tienen que seguir. El pulso se
+  dibuja y el canal auditivo queda entero para la letra.</p>
+
+  <p><strong>El inglés es contenido, no un idioma de la app.</strong> Ninguna
+  pantalla se lee en inglés. Lo que hay son dos o tres palabras y una orden de
+  cuerpo por fase, con su grabación: <em>pulsas, oyes cómo se dice, y luego lo
+  dices tú</em>. No hace falta saber inglés para usarlo; hace falta oírlo antes.
+  Las grabaciones van despacio a propósito.</p>
+
+  <p><strong>El calendario es lo que une aula y casa.</strong> Cada mes tiene un
+  centro de interés, y de él salen la unidad que usas en la asamblea y la
+  cápsula que la familia lee en casa. Cuando en la misma semana la docente
+  registra la asamblea y la familia registra su juego de tres minutos, el mes
+  queda enlazado. Esa coincidencia es el objetivo: que la criatura oiga lo mismo
+  en los dos sitios.</p>
+
+  <div class="callout warn">
+    <p class="lbl">Lo que la app no hace, y no es un olvido</p>
+    <p>No evalúa a nadie, no puntúa, no guarda quién hizo qué y no emite
+    informes. Los premios de Lúa cuentan lo que hace <strong>la persona
+    adulta</strong> —asambleas dirigidas, cápsulas leídas— y nunca el progreso
+    de una criatura, porque ese dato no se ha medido y no se inventa.</p>
+  </div>
+</section>
+
 <!-- ═══════════════════════════════════════════════ CU · DOCENTE ═════════ -->
 <section class="page-break">
   <p class="chapter-kicker">Casos de uso</p>
@@ -318,6 +498,29 @@
   <div class="uc">
     <div class="uc-head">
       <div class="id">CU-1</div>
+      <div class="title">Ver qué toca este mes</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente, y también la familia</div>
+        <div class="k">Cuándo</div><div class="v">Al empezar el mes, o cualquier día que haya dudas de por dónde se va</div>
+        <div class="k">Resultado</div><div class="v">El centro de interés del mes, con su unidad de aula y su cápsula de casa</div>
+      </div>
+      <ol>
+        <li>En la pantalla inicial, pulsa <strong>Calendario Escola·Fogar</strong>.</li>
+        <li>El mes en curso aparece destacado. Los diez meses del curso están ahí, de septiembre a junio.</li>
+        <li>Cada mes trae su <strong>centro de interés</strong>, lo que se hace en el aula y lo que se propone en casa.</li>
+        <li>Desde el mes se abre directamente su unidad de aula.</li>
+      </ol>
+      <p class="small muted">El calendario es lo que hace que aula y casa vayan por el
+      mismo sitio la misma semana. No pide fecha de nacimiento de nadie ni guarda
+      quién lo abrió: solo sabe en qué mes del calendario estamos.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-2</div>
       <div class="title">Elegir la unidad de la asamblea</div>
     </div>
     <div class="uc-body">
@@ -340,7 +543,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-2</div>
+      <div class="id">CU-3</div>
       <div class="title">Conducir la asamblea guiada</div>
     </div>
     <div class="uc-body">
@@ -376,7 +579,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-3</div>
+      <div class="id">CU-4</div>
       <div class="title">Marcar el pulso</div>
     </div>
     <div class="uc-body">
@@ -410,7 +613,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-4</div>
+      <div class="id">CU-5</div>
       <div class="title">Reproducir el recitado de la letra</div>
     </div>
     <div class="uc-body">
@@ -430,7 +633,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-5</div>
+      <div class="id">CU-6</div>
       <div class="title">Cambiar de lengua a media asamblea</div>
     </div>
     <div class="uc-body">
@@ -447,7 +650,7 @@
 
   <div class="uc">
     <div class="uc-head violet">
-      <div class="id">CU-6</div>
+      <div class="id">CU-7</div>
       <div class="title">Cuando una grabación no está</div>
     </div>
     <div class="uc-body">
@@ -468,7 +671,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-7</div>
+      <div class="id">CU-8</div>
       <div class="title">Escuchar cómo se dice</div>
     </div>
     <div class="uc-body">
@@ -500,7 +703,31 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-8</div>
+      <div class="id">CU-9</div>
+      <div class="title">Decir el inglés mientras se lee el cuento</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente</div>
+        <div class="k">Cuándo</div><div class="v">En la fase 2, con el cuento abierto</div>
+        <div class="k">Resultado</div><div class="v">Dos o tres palabras en inglés dichas en su momento, no sueltas</div>
+      </div>
+      <ol>
+        <li>Abre la fase <strong>2 · Cuento guiado</strong>. Cada página trae su lámina ilustrada.</li>
+        <li>Abajo, anclada, está la barra <strong>Dillo en inglés</strong>: enseña lo que se dice
+        <em>en esa página</em>, no un resumen de todo el cuento.</li>
+        <li>Pulsa para oírlo <strong>antes</strong> de decirlo. La grabación va despacio a propósito.</li>
+        <li>Al pasar de página, la barra cambia sola.</li>
+      </ol>
+      <p class="small muted">No hace falta saber inglés para usar esto: el botón existe justo
+      para oír la pronunciación modelo antes de decirla delante del grupo. Y el vocabulario de
+      la unidad trae la palabra en las tres lenguas, con su lámina.</p>
+    </div>
+  </div>
+
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-10</div>
       <div class="title">Leer la formación de un paso</div>
     </div>
     <div class="uc-body">
@@ -522,7 +749,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-9</div>
+      <div class="id">CU-11</div>
       <div class="title">Ver los premios de Lúa</div>
     </div>
     <div class="uc-body">
@@ -550,12 +777,57 @@
 
 <!-- ═══════════════════════════════════════════════ CU · FAMILIAS ════════ -->
 <section class="page-break">
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-12</div>
+      <div class="title">Conducir la asamblea matinal de segundo ciclo</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La docente de 4.º, 5.º o 6.º de Infantil</div>
+        <div class="k">Cuándo</div><div class="v">A primera hora, con el grupo sentado en la alfombra. Son diez minutos</div>
+        <div class="k">Resultado</div><div class="v">Las cuatro fases recorridas, del saludo a la calma, con el inglés dentro del movimiento</div>
+      </div>
+      <ol>
+        <li>Abre <strong>Juega con Lúa · Aula</strong> y pulsa la pestaña <strong>2.º Ciclo (3-6 anos)</strong>.</li>
+        <li>Verás <strong>Asemblea Matinal do 2.º Ciclo</strong>. Para entrar hay dos caminos:
+          <ul>
+            <li><strong>Comezar a asemblea</strong>, el botón grande de arriba, que abre el nivel que ya estuviera elegido.</li>
+            <li>O baja a <strong>Sesións por nivel</strong> y pulsa <strong>Abrir a asemblea</strong> en la tarjeta del nivel que te toque. Cada uno trae su propia asamblea y su manera de trabajar: 4.º con acción expandida, 5.º dramatizado con parada («freeze»), 6.º entre iguales.</li>
+          </ul>
+        </li>
+        <li>También se llega desde el <strong>Calendario Escola·Fogar</strong>: la ficha del mes trae los tres niveles al final, debajo de lo del primer ciclo.</li>
+        <li>Se abre la asamblea. <strong>Es la misma pantalla que la de primer ciclo</strong>: fondo claro, «Fase 1 de 4» con su barra de progreso, el aviso de móvil fuera de la vista, y la lámina de la fase.</li>
+        <li>Arriba tienes las <strong>cuatro fases</strong>. Pulsa la que toque, o avanza con <strong>Seguinte Fase</strong>.
+          <ul>
+            <li><strong>1 · Apertura y saludo</strong> — reunir el círculo y saludar a Lúa.</li>
+            <li><strong>2 · Foco rítmico</strong> — el pulso a 72 por minuto, con palmas.</li>
+            <li><strong>3 · Reto TPR en inglés</strong> — la orden se dice y se hace. El grupo responde con el cuerpo.</li>
+            <li><strong>4 · Calma y transición</strong> — respiración y material natural para salir del círculo.</li>
+          </ul>
+        </li>
+        <li>Cada fase trae su <strong>cronómetro</strong> con los segundos que le tocan, y su consigna escrita para la docente.</li>
+        <li>El nivel se cambia sin salir: pulsa otro en la fila de arriba y la asamblea entera cambia con él.</li>
+      </ol>
+      <div class="callout warn">
+        <p class="lbl">El inglés no se pide, se hace</p>
+        <p>En la fase 3 nunca se le pide a la criatura que diga nada en inglés, ni que
+        repita, ni que traduzca. La orden se acompaña del gesto, y responder con el
+        cuerpo ya es responder. Quien habla inglés en la asamblea es la persona
+        adulta.</p>
+      </div>
+      <p class="small muted">Cada consigna lleva su altavoz, en gallego y en castellano, y
+      el inglés del saludo y de cada orden TPR tiene el suyo aparte: se oye cómo suena antes
+      de decirlo en el aula. El pulso de la fase 2 se ve además de oírse.</p>
+    </div>
+  </div>
+
   <p class="chapter-kicker">Casos de uso</p>
   <h2>Familias · Academy</h2>
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-10</div>
+      <div class="id">CU-13</div>
       <div class="title">Leer una cápsula</div>
     </div>
     <div class="uc-body">
@@ -593,7 +865,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-11</div>
+      <div class="id">CU-14</div>
       <div class="title">Responder la reflexión</div>
     </div>
     <div class="uc-body">
@@ -615,7 +887,7 @@
 
   <div class="uc">
     <div class="uc-head">
-      <div class="id">CU-12</div>
+      <div class="id">CU-15</div>
       <div class="title">Usar la app sin la criatura delante</div>
     </div>
     <div class="uc-body">
@@ -629,140 +901,80 @@
       tipografía grande y cómoda.</p>
     </div>
   </div>
-</section>
-
-<!-- ═══════════════════════════════════════════ CU · MANTENIMIENTO ═══════ -->
-<section class="page-break">
-  <p class="chapter-kicker">Casos de uso</p>
-  <h2>Mantenimiento · Equipo del proyecto</h2>
 
   <div class="uc">
-    <div class="uc-head violet">
-      <div class="id">CU-13</div>
-      <div class="title">Añadir una unidad o una cápsula</div>
-    </div>
-    <div class="uc-body">
-      <ol>
-        <li>Crea el JSON en <code>assets/content/unidades/</code> o
-        <code>assets/content/capsulas/</code>, con las dos lenguas completas.</li>
-        <li><code>python3 tools/export_voice_corpus.py</code> extrae las locuciones
-        nuevas y sincroniza las rutas de audio.</li>
-        <li>Lanza el workflow <strong>Generate Voice Assets</strong> para sintetizarlas.</li>
-        <li><code>tools/gates.sh</code>.</li>
-      </ol>
-      <p class="small muted">No hay que tocar Dart: el catálogo se descubre del propio paquete.</p>
-    </div>
-  </div>
-
-  <div class="uc">
-    <div class="uc-head violet">
-      <div class="id">CU-14</div>
-      <div class="title">Cambiar un texto que tiene audio</div>
-    </div>
-    <div class="uc-body">
-      <div class="callout ok">
-        <p class="lbl">Esto es lo que más fácil se rompe, y está resuelto por construcción</p>
-        <p>El identificador de cada grabación es el hash de su propio texto.</p>
-      </div>
-      <p>Si cambias una frase:</p>
-      <ol>
-        <li>Cambia el identificador.</li>
-        <li>La grabación vieja queda huérfana y la nueva no existe.</li>
-        <li><code>tools/check_voice_coverage.py</code> falla y dice exactamente cuál falta.</li>
-      </ol>
-      <p>No se puede publicar una pantalla que enseñe un texto y reproduzca otro.</p>
-    </div>
-  </div>
-
-  <div class="uc">
-    <div class="uc-head violet">
-      <div class="id">CU-15</div>
-      <div class="title">Regenerar las voces</div>
-    </div>
-    <div class="uc-body">
-      <table>
-        <thead><tr><th>Lengua</th><th>Voz</th><th>Requisito</th></tr></thead>
-        <tbody>
-          <tr><td>Gallego</td><td><strong>Celtia</strong>, do Proxecto Nós</td><td>Secret <code>HF_TOKEN</code> (el modelo es <em>gated</em> en Hugging Face)</td></tr>
-          <tr><td>Castellano</td><td><strong>Sharvard</strong> (rhasspy/piper-voices)</td><td>Ninguno</td></tr>
-        </tbody>
-      </table>
-      <p>Lanza el workflow <strong>Generate Voice Assets</strong>. Sintetiza sólo
-      lo que falta, masteriza con objetivo de −3 dBFS, comprueba el pico del
-      fichero <em>ya codificado</em> y atenúa si hace falta, y commitea los
-      <code>.m4a</code>.</p>
-      <div class="callout warn">
-        <p class="lbl">El objetivo previo no basta</p>
-        <p>Un códec con pérdida no conserva el pico que se le entrega. Un recitado
-        masterizado a −3 dBFS salió del codificador a −0,0, sin margen ninguno.
-        <code>tools/check_voice_levels.py</code> mide los ficheros que se publican.</p>
-      </div>
-      <p class="small muted">Los modelos corren en CI y jamás en el aparato: la app
-      lleva grabaciones, no inferencia. Por eso el APK no necesita ni un permiso de red.</p>
-    </div>
-  </div>
-
-  <div class="uc">
-    <div class="uc-head violet">
+    <div class="uc-head">
       <div class="id">CU-16</div>
-      <div class="title">Comprobar antes de entregar</div>
+      <div class="title">Preparar el inglés en casa</div>
     </div>
     <div class="uc-body">
-      <p><code>tools/gates.sh --fast</code> pasa formato, análisis, tests y los
-      gates de contenido. <code>tools/gates.sh</code> añade la compilación del APK
-      y la auditoría de sus permisos.</p>
-      <p>CI ejecuta ese mismo script, así que la lista de gates no puede quedarse
-      atrás respecto a lo que de verdad se exige. El estado real de cada uno está
-      en <code>STATUS.md</code>.</p>
-    </div>
-  </div>
-
-  <div class="uc">
-    <div class="uc-head violet">
-      <div class="id">CU-17</div>
-      <div class="title">Auditar la privacidad del binario</div>
-    </div>
-    <div class="uc-body">
-      <ol>
-        <li><code>flutter build apk --release</code></li>
-        <li><code>aapt2 dump permissions build/app/outputs/flutter-apk/app-release.apk</code></li>
-      </ol>
-      <p>Debe aparecer <strong>un único permiso</strong>, el que AndroidX inyecta
-      (<code>…DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, de nivel
-      <em>signature</em> y con el nombre de paquete de la propia app). Cualquier
-      otro, y en especial <code>android.permission.INTERNET</code>, es un fallo
-      bloqueante.</p>
-      <div class="callout">
-        <p class="lbl">Por qué se lee del binario y no del manifiesto</p>
-        <p>Esa salida es la prueba que sostiene la política de privacidad y el
-        formulario de <em>Seguridad de los datos</em> de Google Play. Un manifiesto
-        fuente que quita INTERNET no demuestra nada por sí solo: una dependencia
-        fusionada puede devolverlo.</p>
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La familia</div>
+        <div class="k">Cuándo</div><div class="v">Antes de un momento de rutina: el baño, la comida, salir a la calle</div>
+        <div class="k">Resultado</div><div class="v">Una frase corta en inglés, oída antes de decirla</div>
       </div>
+      <ol>
+        <li>En <strong>Academy · Familias</strong>, abre la <strong>Guía de inglés en casa</strong>.</li>
+        <li>Verás lo que se propone para el mes en curso, en la rutina donde encaja.</li>
+        <li>Pulsa para oír cada frase. Se dicen despacio.</li>
+        <li>Dila una vez, en su momento. No es una clase: es una frase dentro de lo que ya se hace.</li>
+      </ol>
+      <p class="small muted">Lo que se propone en casa es lo mismo que la docente dice en la
+      asamblea ese mes. Esa coincidencia es el punto: la criatura oye la misma palabra en los
+      dos sitios.</p>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════════════ CIERRE ════ -->
+
+
 <section class="page-break">
+  <div class="uc">
+    <div class="uc-head">
+      <div class="id">CU-17</div>
+      <div class="title">Hacer la micro-rutina del mes, en segundo ciclo</div>
+    </div>
+    <div class="uc-body">
+      <div class="uc-grid">
+        <div class="k">Quién</div><div class="v">La familia de una criatura de 3 a 6 años</div>
+        <div class="k">Cuándo</div><div class="v">Tres minutos, en un momento fijo del día. Al llegar a casa, por ejemplo</div>
+        <div class="k">Resultado</div><div class="v">Un rato de lengua dentro de una rutina que ya existía, sin deberes y sin examen</div>
+      </div>
+      <ol>
+        <li>En <strong>Academy · Familias</strong>, abre la tarjeta <strong>Segundo ciclo (3-6 anos)</strong>, la que se titula <em>Micro-rutina de setembro: responder sen corrixir</em>.</li>
+        <li>Lee la <strong>escena cotidiana</strong> del mes: qué momento es y qué se hace en él.</li>
+        <li>Debajo está la guía de <strong>cómo responder sin corregir</strong>. Cada ejemplo trae tres cosas: lo que dice la criatura, lo que conviene evitar, y cómo devolverle la frase entera dentro del juego.</li>
+        <li>Elige un solo momento y repítelo la misma semana. La repetición es el método; la variedad no.</li>
+      </ol>
+      <div class="callout warn">
+        <p class="lbl">Ni examen ni traducción</p>
+        <p>Preguntar «¿cómo se dice esto?» convierte el rato en una prueba, y la prueba
+        corta la conversación. Devolver la frase bien dicha y seguir jugando deja la
+        puerta abierta a que siga hablando. La regla de oro: esperar cinco segundos
+        antes de ayudar.</p>
+      </div>
+      <p class="small muted">Las lenguas de casa —gallego, castellano, o las que haya— son
+      el suelo afectivo y no se sustituyen. El inglés entra en un hueco pequeño, y no
+      hace falta hablarlo bien para acompañarlo.</p>
+    </div>
+  </div>
+
   <p class="chapter-kicker">Cierre</p>
-  <h2>4 · Límites de esta versión</h2>
+  <h2>5 · Límites de esta versión</h2>
   <p>Para que nadie se lleve una sorpresa en un aula:</p>
   <table>
     <thead><tr><th>Límite</th><th>Detalle</th></tr></thead>
     <tbody>
-      <tr><td><strong>Contenido</strong></td><td>Una unidad de aula. Academy tiene una cápsula en cada uno de sus cinco bloques, y la formación docente una en cada uno de sus seis pasos</td></tr>
-      <tr><td><strong>Ilustraciones</strong></td><td>El cuento no lleva láminas. La pantalla lo indica y sugiere señalar en el aula</td></tr>
-      <tr><td><strong>Grabaciones</strong></td><td>Completas: las 246 locuciones que el contenido declara viajan dentro del paquete. Si alguna faltase, el botón de escuchar no se pinta</td></tr>
-      <tr><td><strong>Vocabulario</strong></td><td>El contenido declara cinco palabras por unidad, con definición y grabación, pero todavía no hay ninguna pantalla que las muestre</td></tr>
-      <tr><td><strong>Logotipos</strong></td><td>En los créditos falta el logotipo de la Incubadora startTIC, del Consorcio de la Zona Franca y del Concello. Los nombres sí constan</td></tr>
-      <tr><td><strong>Filtro por edad</strong></td><td>La única unidad es <code>0-3</code>, así que aparece en las tres pestañas</td></tr>
-      <tr><td><strong>Sin aparato</strong></td><td>Ninguna pantalla se ha visto todavía en un móvil o tablet real</td></tr>
-      <tr><td><strong>Google Play</strong></td><td>No está publicada</td></tr>
+      <tr><td><strong>Contenido · primer ciclo</strong></td><td>Diez unidades de aula, una por cada mes del curso, que es lo que el Calendario Escola·Fogar reparte. Doce cápsulas en total: seis para las familias y seis de formación docente</td></tr>
+      <tr><td><strong>Contenido · segundo ciclo</strong></td><td><strong>Solo septiembre.</strong> Tres asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), con su micro-rutina de casa y su cápsula de familia. Los otros nueve meses del curso todavía no están escritos</td></tr>
+      <tr><td><strong>Ilustraciones</strong></td><td>Ochenta láminas propias, dibujadas como datos y pintadas por la app: cincuenta de vocabulario (una por palabra) y treinta escenas del cuento (una por página). No son de una persona ilustradora profesional, y se nota: son un puente honesto, no el destino</td></tr>
+      <tr><td><strong>Grabaciones</strong></td><td>Completas: las 1038 locuciones que el contenido declara viajan dentro del paquete, en gallego, castellano e inglés. Si alguna faltase, el botón de escuchar no se pinta. <strong>Las consignas de la asamblea de segundo ciclo no llevan voz</strong>: se leen</td></tr>
+      <tr><td><strong>Vocabulario</strong></td><td>Cinco palabras por unidad, con su lámina, su definición y su grabación en las tres lenguas. Se ven en la fase 2 de la asamblea</td></tr>
+      <tr><td><strong>Filtro por edad</strong></td><td>Dentro del primer ciclo, las diez unidades están declaradas <code>0-3</code>, así que las tres pestañas enseñan lo mismo. El tramo está en el contenido, listo para el día que se separe. El conmutador de ciclo sí separa de verdad: cada etapa tiene su contenido</td></tr>
     </tbody>
   </table>
 
-  <h2>5 · Si algo va mal</h2>
+  <h2>6 · Si algo va mal</h2>
   <table>
     <thead><tr><th>Qué ves</th><th>Qué pasa</th></tr></thead>
     <tbody>
@@ -771,6 +983,7 @@
       <tr><td>«Lámina ilustrada pendente»</td><td>El cuento aún no tiene imágenes. Lee el texto y señalad en el aula</td></tr>
       <tr><td>«Novas cápsulas deste bloque…»</td><td>Ese bloque todavía no tiene contenido</td></tr>
       <tr><td>Una tarjeta sin botón de escuchar</td><td>Ese texto no tiene grabación. El botón no se pinta a propósito: un altavoz que no suena engaña</td></tr>
+      <tr><td>El 2.º ciclo solo enseña septiembre</td><td>Es así en esta versión: los otros nueve meses aún no están escritos</td></tr>
       <tr><td>Listas vacías sin mensaje</td><td>Eso sí sería un defecto: escríbelo al correo de contacto</td></tr>
     </tbody>
   </table>

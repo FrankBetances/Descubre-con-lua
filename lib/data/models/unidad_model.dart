@@ -184,11 +184,29 @@ class CuentoPagina {
   final String imagenAsset;
   final LocalizedString preguntaComprension;
 
+  /// Lo que la persona adulta DICE en inglés mientras lee esta página.
+  ///
+  /// El inglés estaba solo en `ingles.porFase`, que da tres palabras para todo
+  /// el cuento: la docente no sabía en qué página decir cuál. Aquí va pegado a
+  /// la página que se tiene delante.
+  final List<String> ingles;
+
+  /// La clave de la lámina que ilustra ESTA página, sin ruta ni extensión:
+  /// `conto_mar_1`. Vacía significa que la escena todavía no está dibujada, y
+  /// entonces la tarjeta enseña el aviso en vez de un hueco en blanco.
+  ///
+  /// No es `imagenAsset`. Ese campo guarda una ruta a un PNG que nunca existió
+  /// —lo dejó escrito la primera generación— y por eso la tarjeta llegó a
+  /// imprimir «assets/images/cuento/...» en el proyector de la asamblea.
+  final String lamina;
+
   const CuentoPagina({
     required this.orden,
     required this.texto,
     required this.imagenAsset,
     required this.preguntaComprension,
+    this.ingles = const [],
+    this.lamina = '',
   });
 
   factory CuentoPagina.fromJson(Map<String, dynamic> json) {
@@ -204,6 +222,12 @@ class CuentoPagina {
                 as Map<String, dynamic>? ??
             {},
       ),
+      ingles: List.unmodifiable(
+        (json['ingles'] as List? ?? const [])
+            .map((e) => e.toString().trim())
+            .where((e) => e.isNotEmpty),
+      ),
+      lamina: json['lamina']?.toString().trim() ?? '',
     );
   }
 
@@ -212,6 +236,8 @@ class CuentoPagina {
         'texto': texto.toJson(),
         'imagenAsset': imagenAsset,
         'preguntaComprension': preguntaComprension.toJson(),
+        'ingles': ingles,
+        'lamina': lamina,
       };
 
   @override
@@ -222,11 +248,12 @@ class CuentoPagina {
           orden == other.orden &&
           texto == other.texto &&
           imagenAsset == other.imagenAsset &&
-          preguntaComprension == other.preguntaComprension;
+          preguntaComprension == other.preguntaComprension &&
+          lamina == other.lamina;
 
   @override
   int get hashCode =>
-      Object.hash(orden, texto, imagenAsset, preguntaComprension);
+      Object.hash(orden, texto, imagenAsset, preguntaComprension, lamina);
 }
 
 /// Story section for step 2.
@@ -285,12 +312,22 @@ class VocabularioItem {
   final String imagenAsset;
   final LocalizedString audioAsset;
 
+  /// La misma palabra en inglés. Vacía mientras no esté escrita: la tarjeta
+  /// enseña entonces solo galego y castelán, sin prometer un audio que no hay.
+  final String ingles;
+
+  /// La rejilla de píxel art de esta palabra, sin ruta ni extensión. Vacía
+  /// mientras no esté dibujada: la tarjeta enseña la palabra y ya.
+  final String lamina;
+
   const VocabularioItem({
     required this.id,
     required this.palabra,
     required this.definicionBreve,
     required this.imagenAsset,
     required this.audioAsset,
+    this.ingles = '',
+    this.lamina = '',
   });
 
   factory VocabularioItem.fromJson(Map<String, dynamic> json) {
@@ -317,6 +354,8 @@ class VocabularioItem {
           json['imagen_asset']?.toString().trim() ??
           '',
       audioAsset: resolvedAudio,
+      ingles: json['ingles']?.toString().trim() ?? '',
+      lamina: json['lamina']?.toString().trim() ?? '',
     );
   }
 
@@ -326,6 +365,8 @@ class VocabularioItem {
         'definicionBreve': definicionBreve.toJson(),
         'imagenAsset': imagenAsset,
         'audioAsset': audioAsset.toJson(),
+        'ingles': ingles,
+        'lamina': lamina,
       };
 
   @override
@@ -632,6 +673,59 @@ class PonteCasa {
 
 /// Strongly typed pedagogical unit model for «Juega con Lúa · Aula».
 @immutable
+
+/// El inglés que la persona adulta DICE durante la asamblea, fase por fase.
+///
+/// No es una lengua de la app: es contenido que se escucha. Vive junto a la
+/// fase en la que se usa —no en una pantalla aparte— porque una docente con
+/// doce criaturas en la alfombra no va a ir a buscarlo a otro sitio.
+///
+/// Las claves de [porFase] son las seis fases de la asamblea, en su orden:
+/// `pulso`, `conto`, `preguntas`, `exploracion`, `matematicas`, `ponteCasa`.
+class InglesUnidad {
+  /// La frase entera del mes, la que se lleva a casa.
+  final String frase;
+
+  final Map<String, List<String>> porFase;
+
+  const InglesUnidad({this.frase = '', this.porFase = const {}});
+
+  static const List<String> fases = [
+    'pulso',
+    'conto',
+    'preguntas',
+    'exploracion',
+    'matematicas',
+    'ponteCasa',
+  ];
+
+  /// Lo que se dice en la fase [indice] (0..5). Vacío si esa fase no lleva.
+  List<String> deFase(int indice) {
+    if (indice < 0 || indice >= fases.length) return const [];
+    return porFase[fases[indice]] ?? const [];
+  }
+
+  bool get estaVacio => porFase.values.every((v) => v.isEmpty);
+
+  factory InglesUnidad.fromJson(Map<String, dynamic> json) {
+    final raw = json['porFase'];
+    final mapa = <String, List<String>>{};
+    if (raw is Map) {
+      for (final entry in raw.entries) {
+        final valor = entry.value;
+        if (valor is List) {
+          mapa[entry.key.toString()] =
+              List<String>.unmodifiable(valor.map((e) => e.toString()));
+        }
+      }
+    }
+    return InglesUnidad(
+      frase: json['frase']?.toString() ?? '',
+      porFase: Map.unmodifiable(mapa),
+    );
+  }
+}
+
 class Unidad {
   final String id;
   final String tramoEtario; // '0-2' | '2-3' | '0-3'
@@ -650,6 +744,10 @@ class Unidad {
   final CurricularReference curriculo;
   final Revision revision;
 
+  /// El inglés de esta unidad, repartido por fases. Vacío si la unidad no lo
+  /// lleva: entonces la asamblea no pinta la barra y no promete nada.
+  final InglesUnidad ingles;
+
   const Unidad({
     required this.id,
     required this.tramoEtario,
@@ -667,6 +765,7 @@ class Unidad {
     required this.puenteCasa,
     required this.curriculo,
     required this.revision,
+    this.ingles = const InglesUnidad(),
   });
 
   // Canonical compatibility getters
@@ -746,6 +845,10 @@ class Unidad {
       puenteCasa: PonteCasa.fromJson(puenteCasaData),
       curriculo: CurricularReference.fromJson(curriculoData),
       revision: Revision.fromJson(revisionData),
+      ingles: json['ingles'] is Map
+          ? InglesUnidad.fromJson(
+              Map<String, dynamic>.from(json['ingles'] as Map))
+          : const InglesUnidad(),
     );
   }
 

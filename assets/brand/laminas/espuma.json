@@ -1,0 +1,100 @@
+{
+  "vb": 100,
+  "nota": "Espuma: un montón de burbujas de tamaños distintos, con brillo. Blanca y ligera, como en la bandeja.",
+  "formas": [
+    {
+      "t": "elipse",
+      "cx": 30,
+      "cy": 62,
+      "rx": 22,
+      "ry": 22,
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 66,
+      "cy": 66,
+      "rx": 20,
+      "ry": 20,
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 48,
+      "cy": 42,
+      "rx": 24,
+      "ry": 24,
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 78,
+      "cy": 38,
+      "rx": 13,
+      "ry": 13,
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 16,
+      "cy": 36,
+      "rx": 11,
+      "ry": 11,
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 40,
+      "cy": 34,
+      "rx": 8,
+      "ry": 7,
+      "f": "#a5f3fc88"
+    },
+    {
+      "t": "elipse",
+      "cx": 24,
+      "cy": 56,
+      "rx": 7,
+      "ry": 6,
+      "f": "#a5f3fc88"
+    },
+    {
+      "t": "elipse",
+      "cx": 60,
+      "cy": 60,
+      "rx": 6,
+      "ry": 5,
+      "f": "#a5f3fc88"
+    },
+    {
+      "t": "elipse",
+      "cx": 90,
+      "cy": 14,
+      "rx": 5,
+      "ry": 5,
+      "f": "#a5f3fc",
+      "s": "#334155",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 8,
+      "cy": 14,
+      "rx": 4,
+      "ry": 4,
+      "f": "#a5f3fc",
+      "s": "#334155",
+      "sw": 2
+    }
+  ]
+}

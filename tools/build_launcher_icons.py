@@ -7,7 +7,7 @@ The manifest referenced @mipmap/ic_launcher while android/app/src/main/res held
 nothing but values/styles.xml, so the resource did not exist at all.
 
 Lúa is drawn once, in assets/brand/lua_head.txt, as the character grid ported
-from the Valeria repository. Every output here is rendered from that file, so
+from the earlier project in the house. Every output here is rendered from it, so
 the icon, the adaptive icon and the splash cannot drift apart, and a change to
 the mascot shows up as a readable diff instead of an opaque PNG.
 """

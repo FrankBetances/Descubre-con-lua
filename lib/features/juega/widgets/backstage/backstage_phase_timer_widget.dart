@@ -100,12 +100,11 @@ class _BackstagePhaseTimerWidgetState extends State<BackstagePhaseTimerWidget> {
   @override
   Widget build(BuildContext context) {
     final isOvertime = _segundosRestantes < 0;
-    final timerColor = isOvertime
-        ? AppTheme.backstageWarning
-        : AppTheme.backstageTextPrimary;
+    final timerColor =
+        isOvertime ? AppTheme.backstageWarning : AppTheme.backstageTextPrimary;
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
         color: AppTheme.backstageSurface,
         borderRadius: BorderRadius.circular(AppTheme.radiusCard),
@@ -125,29 +124,29 @@ class _BackstagePhaseTimerWidgetState extends State<BackstagePhaseTimerWidget> {
                 ? Icons.hourglass_bottom_rounded
                 : (_isRunning ? Icons.play_arrow_rounded : Icons.pause_rounded),
             color: timerColor,
-            size: 28,
+            size: 22,
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 8),
           // Díxitos en alta lexibilidade
           Text(
             _formatTime(_segundosRestantes),
             style: TextStyle(
               fontFamily: AppTheme.fontFamily,
-              fontSize: 34.0,
+              fontSize: 24.0,
               fontWeight: FontWeight.w800,
               color: timerColor,
               letterSpacing: 1.5,
               fontFeatures: const [FontFeature.tabularFigures()],
             ),
           ),
-          const SizedBox(width: 16),
+          const SizedBox(width: 8),
           // Botón Iniciar / Pausa (área táctil >= 48dp)
           IconButton(
             key: const ValueKey('timer_play_pause_button'),
             icon: Icon(
               _isRunning ? Icons.pause_circle_filled : Icons.play_circle_filled,
               color: AppTheme.backstageAccent,
-              size: 38,
+              size: 30,
             ),
             onPressed: _toggleRunning,
             tooltip: _isRunning ? 'Pausar' : 'Iniciar',
@@ -158,7 +157,7 @@ class _BackstagePhaseTimerWidgetState extends State<BackstagePhaseTimerWidget> {
             icon: const Icon(
               Icons.replay_rounded,
               color: AppTheme.backstageTextSecondary,
-              size: 28,
+              size: 24,
             ),
             onPressed: _resetTimer,
             tooltip: 'Reiniciar tempo de fase',

@@ -25,8 +25,7 @@ class TemporizadorSutilWidget extends StatelessWidget {
     final isGl = language == AppLanguage.gl;
     final badgeColor =
         esDocente ? AppTheme.primaryDark : const Color(0xFFD97706);
-    final bgColor =
-        esDocente ? AppTheme.primaryLight : const Color(0xFFFFF4E5);
+    final bgColor = esDocente ? AppTheme.primaryLight : const Color(0xFFFFF4E5);
 
     final duracionTexto = minutosMin == minutosMax
         ? '$minutosMax min'

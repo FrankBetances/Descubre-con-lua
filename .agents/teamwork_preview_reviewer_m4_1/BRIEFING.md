@@ -6,7 +6,7 @@ Review Milestone 4 Master E2E Test Suite (`test/run_all_e2e_tests.py`), test sui
 ## 🔒 My Identity
 - Archetype: teamwork_preview_reviewer
 - Roles: reviewer, critic
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m4_1
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_reviewer_m4_1
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 4 (Master E2E Test Suite & Test Readiness)
 - Instance: 1 of 1

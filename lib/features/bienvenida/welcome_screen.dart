@@ -5,12 +5,12 @@ import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
 
-/// Pantalla de bienvenida, con la estructura de la de Valeria+
+/// Pantalla de bienvenida, con la estructura de la del proyecto anterior de la casa
 /// (`docs/screenshots/01-bienvenida.png`): fondo turquesa a sangre, círculos
 /// decorativos, la gata en una baldosa clara, el nombre, dos líneas de qué es
 /// esto, un botón grande y una línea de privacidad al pie.
 ///
-/// El texto va en TINTA OSCURA, no en blanco como en Valeria+: sobre el
+/// El texto va en TINTA OSCURA, no en blanco como en el proyecto anterior de la casa: sobre el
 /// turquesa de marca el blanco da 2,18:1 y aquí esto se mira en un aula con
 /// ventanales. Ver `AppTheme.primaryInk`.
 ///
@@ -61,7 +61,7 @@ class WelcomeScreen extends StatelessWidget {
       backgroundColor: AppTheme.primary,
       body: Stack(
         children: [
-          // Los dos círculos de Valeria+. Decorativos y nada más, así que van
+          // Los dos círculos del proyecto anterior de la casa. Decorativos y nada más, así que van
           // fuera del árbol semántico para que el lector de pantalla no los lea.
           const Positioned(
             top: -140,

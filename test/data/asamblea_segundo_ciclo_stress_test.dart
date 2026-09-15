@@ -218,7 +218,9 @@ void main() {
     };
   }
 
-  group('Adversarial Suite 1: Malformed & Corrupted JSON Root & Structure Payloads', () {
+  group(
+      'Adversarial Suite 1: Malformed & Corrupted JSON Root & Structure Payloads',
+      () {
     test('strictly rejects non-map roots via FormatException', () {
       final invalidRoots = [
         '""',
@@ -279,12 +281,15 @@ void main() {
       expect(asamblea.fases, isEmpty);
       expect(asamblea.materialesEntorno, isEmpty);
       expect(asamblea.curriculo.areas, isEmpty);
-      expect(asamblea.curriculo.competenciasClave, equals(['CCL', 'CPSAA', 'CCEC']));
+      expect(asamblea.curriculo.competenciasClave,
+          equals(['CCL', 'CPSAA', 'CCEC']));
       expect(asamblea.curriculo.criteriosEvaluacion, isEmpty);
       expect(asamblea.microRutinaHogar.pautasRecast, isEmpty);
     });
 
-    test('filters out nulls and corrupted non-map primitives inside array collections', () {
+    test(
+        'filters out nulls and corrupted non-map primitives inside array collections',
+        () {
       final payload = {
         'id': 'asamblea.dirty.list',
         'fases': [
@@ -314,7 +319,9 @@ void main() {
       expect(asamblea.materialesEntorno, isEmpty);
     });
 
-    test('safely handles non-string elements inside string lists by stringifying', () {
+    test(
+        'safely handles non-string elements inside string lists by stringifying',
+        () {
       final payload = {
         'normativa': 'Decreto 150/2022',
         'etapa': 'educacion_infantil',
@@ -334,8 +341,12 @@ void main() {
     });
   });
 
-  group('Adversarial Suite 2: Minimal Inputs, Missing Optional Fields & Key Formats', () {
-    test('minimal valid JSON with only "id" produces fully initialized immutable tree', () {
+  group(
+      'Adversarial Suite 2: Minimal Inputs, Missing Optional Fields & Key Formats',
+      () {
+    test(
+        'minimal valid JSON with only "id" produces fully initialized immutable tree',
+        () {
       final json = {'id': 'asamblea.minimal.valid'};
       final asamblea = AsambleaSegundoCiclo.fromJson(json);
 
@@ -439,21 +450,30 @@ void main() {
 
       final asamblea = AsambleaSegundoCiclo.fromJson(snakeCaseJson);
       expect(asamblea.centroInteres.gl, equals('Centro'));
-      expect(asamblea.metodologiaTpr, equals(MetodologiaTPR.dramatizadoNarrativo));
+      expect(
+          asamblea.metodologiaTpr, equals(MetodologiaTPR.dramatizadoNarrativo));
       expect(asamblea.fases.first.duracionSegundos, equals(90));
       expect(asamblea.fases.first.consignaDocente.gl, equals('CD'));
-      expect(asamblea.fases.first.comandosL3.first.textoIngles, equals('Freeze!'));
-      expect(asamblea.fases.first.comandosL3.first.audioAsset, equals('assets/voice/freeze.m4a'));
+      expect(
+          asamblea.fases.first.comandosL3.first.textoIngles, equals('Freeze!'));
+      expect(asamblea.fases.first.comandosL3.first.audioAsset,
+          equals('assets/voice/freeze.m4a'));
       expect(asamblea.fases.first.cueAcustica, equals('Freeze!'));
-      expect(asamblea.fases.first.audioAsset, equals('assets/audio/opening.m4a'));
-      expect(asamblea.fases.first.repertorioMateriales.first.pautaManipulacion.gl, equals('PM'));
-      expect(asamblea.fases.first.repertorioMateriales.first.avisoSeguridad?.gl, equals('AS'));
+      expect(
+          asamblea.fases.first.audioAsset, equals('assets/audio/opening.m4a'));
+      expect(
+          asamblea.fases.first.repertorioMateriales.first.pautaManipulacion.gl,
+          equals('PM'));
+      expect(asamblea.fases.first.repertorioMateriales.first.avisoSeguridad?.gl,
+          equals('AS'));
       expect(asamblea.curriculo.competenciasClave, equals(['CCL']));
       expect(asamblea.curriculo.criteriosEvaluacion, equals(['CA1.3']));
       expect(asamblea.materialesEntorno.first.id, equals('m2'));
       expect(asamblea.microRutinaHogar.nichoTiempoMinutos, equals(4));
-      expect(asamblea.microRutinaHogar.pautasRecast.first.expresionMenor.gl, equals('EM'));
-      expect(asamblea.microRutinaHogar.enlaceCapsulaAcademyId, equals('capsula.01'));
+      expect(asamblea.microRutinaHogar.pautasRecast.first.expresionMenor.gl,
+          equals('EM'));
+      expect(asamblea.microRutinaHogar.enlaceCapsulaAcademyId,
+          equals('capsula.01'));
       expect(asamblea.revision.revisorPedagogico, equals('R'));
       expect(asamblea.revision.aprobadoParaAula, isTrue);
     });
@@ -507,8 +527,12 @@ void main() {
     });
   });
 
-  group('Adversarial Suite 3: Deep Structural Equality (==), Symmetry, Transitivity & HashCode', () {
-    test('identical structure produces true equality, symmetry, and hash equality', () {
+  group(
+      'Adversarial Suite 3: Deep Structural Equality (==), Symmetry, Transitivity & HashCode',
+      () {
+    test(
+        'identical structure produces true equality, symmetry, and hash equality',
+        () {
       final a = AsambleaSegundoCiclo.fromJson(buildCanonicalFixture());
       final b = AsambleaSegundoCiclo.fromJson(buildCanonicalFixture());
       final c = AsambleaSegundoCiclo.fromJson(buildCanonicalFixture());
@@ -559,13 +583,16 @@ void main() {
       final permutedCurriculo = base.curriculo.copyWith(
         areas: base.curriculo.areas.reversed.toList(),
       );
-      final mutatedCurriculoAsamblea = base.copyWith(curriculo: permutedCurriculo);
+      final mutatedCurriculoAsamblea =
+          base.copyWith(curriculo: permutedCurriculo);
       expect(base == mutatedCurriculoAsamblea, isFalse);
       expect(base.hashCode == mutatedCurriculoAsamblea.hashCode, isFalse);
     });
   });
 
-  group('Adversarial Suite 4: Mutation Sensitivity Matrix (23 Individual Mutated Nodes)', () {
+  group(
+      'Adversarial Suite 4: Mutation Sensitivity Matrix (23 Individual Mutated Nodes)',
+      () {
     final original = AsambleaSegundoCiclo.fromJson(buildCanonicalFixture());
 
     void assertMutationBreaksEquality(
@@ -613,7 +640,8 @@ void main() {
       assertMutationBreaksEquality(
         'centroInteres',
         original.copyWith(
-          centroInteres: const LocalizedString(gl: 'Outro Centro', es: 'Otro Centro'),
+          centroInteres:
+              const LocalizedString(gl: 'Outro Centro', es: 'Otro Centro'),
         ),
       );
     });
@@ -621,7 +649,8 @@ void main() {
     test('Mutation 6: metodologiaTpr change', () {
       assertMutationBreaksEquality(
         'metodologiaTpr',
-        original.copyWith(metodologiaTpr: MetodologiaTPR.transaccionalPragmatico),
+        original.copyWith(
+            metodologiaTpr: MetodologiaTPR.transaccionalPragmatico),
       );
     });
 
@@ -673,7 +702,10 @@ void main() {
         'curriculo.areas',
         original.copyWith(
           curriculo: original.curriculo.copyWith(
-            areas: [...original.curriculo.areas, 'area_2_descubrimento_contorna'],
+            areas: [
+              ...original.curriculo.areas,
+              'area_2_descubrimento_contorna'
+            ],
           ),
         ),
       );
@@ -693,7 +725,10 @@ void main() {
         'curriculo.criteriosEvaluacion',
         original.copyWith(
           curriculo: original.curriculo.copyWith(
-            criteriosEvaluacion: [...original.curriculo.criteriosEvaluacion, 'CA2.1'],
+            criteriosEvaluacion: [
+              ...original.curriculo.criteriosEvaluacion,
+              'CA2.1'
+            ],
           ),
         ),
       );
@@ -706,7 +741,8 @@ void main() {
         original.fases[2],
         original.fases[3],
       ];
-      assertMutationBreaksEquality('fases[0].orden', original.copyWith(fases: mutatedFases));
+      assertMutationBreaksEquality(
+          'fases[0].orden', original.copyWith(fases: mutatedFases));
     });
 
     test('Mutation 16: fase duracionSegundos change', () {
@@ -716,7 +752,8 @@ void main() {
         original.fases[2],
         original.fases[3],
       ];
-      assertMutationBreaksEquality('fases[0].duracionSegundos', original.copyWith(fases: mutatedFases));
+      assertMutationBreaksEquality(
+          'fases[0].duracionSegundos', original.copyWith(fases: mutatedFases));
     });
 
     test('Mutation 17: deeply nested comando TPR text change', () {
@@ -730,7 +767,8 @@ void main() {
         faseMutated,
         original.fases[3],
       ];
-      assertMutationBreaksEquality('deep comando text', original.copyWith(fases: mutatedFases));
+      assertMutationBreaksEquality(
+          'deep comando text', original.copyWith(fases: mutatedFases));
     });
 
     test('Mutation 18: deeply nested comando TPR audioAsset change', () {
@@ -744,40 +782,46 @@ void main() {
         faseMutated,
         original.fases[3],
       ];
-      assertMutationBreaksEquality('deep comando audio', original.copyWith(fases: mutatedFases));
+      assertMutationBreaksEquality(
+          'deep comando audio', original.copyWith(fases: mutatedFases));
     });
 
     test('Mutation 19: deeply nested material natural pauta change', () {
       final matMutated = original.fases[3].repertorioMateriales[0].copyWith(
         pautaManipulacion: const LocalizedString(gl: 'Mutada', es: 'Mutada'),
       );
-      final faseMutated = original.fases[3].copyWith(repertorioMateriales: [matMutated]);
+      final faseMutated =
+          original.fases[3].copyWith(repertorioMateriales: [matMutated]);
       final mutatedFases = [
         original.fases[0],
         original.fases[1],
         original.fases[2],
         faseMutated,
       ];
-      assertMutationBreaksEquality('deep material natural', original.copyWith(fases: mutatedFases));
+      assertMutationBreaksEquality(
+          'deep material natural', original.copyWith(fases: mutatedFases));
     });
 
     test('Mutation 20: microRutinaHogar nichoTiempoMinutos change', () {
       assertMutationBreaksEquality(
         'microRutinaHogar.nicho',
         original.copyWith(
-          microRutinaHogar: original.microRutinaHogar.copyWith(nichoTiempoMinutos: 5),
+          microRutinaHogar:
+              original.microRutinaHogar.copyWith(nichoTiempoMinutos: 5),
         ),
       );
     });
 
     test('Mutation 21: microRutinaHogar pautaRecast expresionMenor change', () {
       final pautaMutated = original.microRutinaHogar.pautasRecast[0].copyWith(
-        expresionMenor: const LocalizedString(gl: 'Abrigo roto!', es: 'Abrigo roto!'),
+        expresionMenor:
+            const LocalizedString(gl: 'Abrigo roto!', es: 'Abrigo roto!'),
       );
       assertMutationBreaksEquality(
         'pautaRecast.expresionMenor',
         original.copyWith(
-          microRutinaHogar: original.microRutinaHogar.copyWith(pautasRecast: [pautaMutated]),
+          microRutinaHogar:
+              original.microRutinaHogar.copyWith(pautasRecast: [pautaMutated]),
         ),
       );
     });
@@ -786,7 +830,8 @@ void main() {
       assertMutationBreaksEquality(
         'enlaceCapsula',
         original.copyWith(
-          microRutinaHogar: original.microRutinaHogar.copyWith(enlaceCapsulaAcademyId: 'other.capsula'),
+          microRutinaHogar: original.microRutinaHogar
+              .copyWith(enlaceCapsulaAcademyId: 'other.capsula'),
         ),
       );
     });
@@ -806,25 +851,45 @@ void main() {
     });
   });
 
-  group('Adversarial Suite 5: Immutability Defense & CopyWith Scaffolding Resilience', () {
+  group(
+      'Adversarial Suite 5: Immutability Defense & CopyWith Scaffolding Resilience',
+      () {
     final asamblea = AsambleaSegundoCiclo.fromJson(buildCanonicalFixture());
 
     test('all collections throw UnsupportedError on modification attempts', () {
-      expect(() => asamblea.fases.add(asamblea.fases.first), throwsUnsupportedError);
+      expect(() => asamblea.fases.add(asamblea.fases.first),
+          throwsUnsupportedError);
       expect(() => asamblea.fases.removeAt(0), throwsUnsupportedError);
       expect(() => asamblea.fases.clear(), throwsUnsupportedError);
 
-      expect(() => asamblea.materialesEntorno.add(asamblea.materialesEntorno.first), throwsUnsupportedError);
-      expect(() => asamblea.curriculo.areas.add('area_test'), throwsUnsupportedError);
-      expect(() => asamblea.curriculo.competenciasClave.add('COMP'), throwsUnsupportedError);
-      expect(() => asamblea.curriculo.criteriosEvaluacion.add('CRIT'), throwsUnsupportedError);
+      expect(
+          () =>
+              asamblea.materialesEntorno.add(asamblea.materialesEntorno.first),
+          throwsUnsupportedError);
+      expect(() => asamblea.curriculo.areas.add('area_test'),
+          throwsUnsupportedError);
+      expect(() => asamblea.curriculo.competenciasClave.add('COMP'),
+          throwsUnsupportedError);
+      expect(() => asamblea.curriculo.criteriosEvaluacion.add('CRIT'),
+          throwsUnsupportedError);
 
-      expect(() => asamblea.fases[2].comandosL3.add(asamblea.fases[2].comandosL3.first), throwsUnsupportedError);
-      expect(() => asamblea.fases[3].repertorioMateriales.add(asamblea.fases[3].repertorioMateriales.first), throwsUnsupportedError);
-      expect(() => asamblea.microRutinaHogar.pautasRecast.add(asamblea.microRutinaHogar.pautasRecast.first), throwsUnsupportedError);
+      expect(
+          () => asamblea.fases[2].comandosL3
+              .add(asamblea.fases[2].comandosL3.first),
+          throwsUnsupportedError);
+      expect(
+          () => asamblea.fases[3].repertorioMateriales
+              .add(asamblea.fases[3].repertorioMateriales.first),
+          throwsUnsupportedError);
+      expect(
+          () => asamblea.microRutinaHogar.pautasRecast
+              .add(asamblea.microRutinaHogar.pautasRecast.first),
+          throwsUnsupportedError);
     });
 
-    test('external mutable list mutation does not bleed into copyWith instances', () {
+    test(
+        'external mutable list mutation does not bleed into copyWith instances',
+        () {
       final mutableCmds = <ComandoTPR>[
         const ComandoTPR(
           id: 'ext.cmd',
@@ -857,8 +922,11 @@ void main() {
     });
   });
 
-  group('Adversarial Suite 6: Durations, Mathematical Summation, and Clock Formatter', () {
-    test('duracionFormateada formats various integer edge cases accurately', () {
+  group(
+      'Adversarial Suite 6: Durations, Mathematical Summation, and Clock Formatter',
+      () {
+    test('duracionFormateada formats various integer edge cases accurately',
+        () {
       FaseAsamblea makeFase(int seconds) {
         return FaseAsamblea(
           orden: 1,
@@ -894,10 +962,15 @@ void main() {
       expect(valid.hasCanonicalPhases, isTrue);
 
       // Too few phases
-      expect(valid.copyWith(fases: valid.fases.sublist(0, 3)).hasCanonicalPhases, isFalse);
+      expect(
+          valid.copyWith(fases: valid.fases.sublist(0, 3)).hasCanonicalPhases,
+          isFalse);
 
       // Too many phases
-      expect(valid.copyWith(fases: [...valid.fases, valid.fases.first]).hasCanonicalPhases, isFalse);
+      expect(
+          valid.copyWith(
+              fases: [...valid.fases, valid.fases.first]).hasCanonicalPhases,
+          isFalse);
 
       // Swapped phase types
       final swapped = [
@@ -921,96 +994,156 @@ void main() {
     test('fasePorTipo and fasePorOrden lookup methods', () {
       final asamblea = AsambleaSegundoCiclo.fromJson(buildCanonicalFixture());
 
-      expect(asamblea.fasePorTipo(TipoFaseAsamblea.aperturaSaudo)?.orden, equals(1));
-      expect(asamblea.fasePorTipo(TipoFaseAsamblea.movementRhythmFocus)?.orden, equals(2));
-      expect(asamblea.fasePorTipo(TipoFaseAsamblea.coreTprChallenge)?.orden, equals(3));
-      expect(asamblea.fasePorTipo(TipoFaseAsamblea.calmaTransicion)?.orden, equals(4));
+      expect(asamblea.fasePorTipo(TipoFaseAsamblea.aperturaSaudo)?.orden,
+          equals(1));
+      expect(asamblea.fasePorTipo(TipoFaseAsamblea.movementRhythmFocus)?.orden,
+          equals(2));
+      expect(asamblea.fasePorTipo(TipoFaseAsamblea.coreTprChallenge)?.orden,
+          equals(3));
+      expect(asamblea.fasePorTipo(TipoFaseAsamblea.calmaTransicion)?.orden,
+          equals(4));
 
-      expect(asamblea.fasePorOrden(1)?.tipo, equals(TipoFaseAsamblea.aperturaSaudo));
-      expect(asamblea.fasePorOrden(2)?.tipo, equals(TipoFaseAsamblea.movementRhythmFocus));
-      expect(asamblea.fasePorOrden(3)?.tipo, equals(TipoFaseAsamblea.coreTprChallenge));
-      expect(asamblea.fasePorOrden(4)?.tipo, equals(TipoFaseAsamblea.calmaTransicion));
+      expect(asamblea.fasePorOrden(1)?.tipo,
+          equals(TipoFaseAsamblea.aperturaSaudo));
+      expect(asamblea.fasePorOrden(2)?.tipo,
+          equals(TipoFaseAsamblea.movementRhythmFocus));
+      expect(asamblea.fasePorOrden(3)?.tipo,
+          equals(TipoFaseAsamblea.coreTprChallenge));
+      expect(asamblea.fasePorOrden(4)?.tipo,
+          equals(TipoFaseAsamblea.calmaTransicion));
       expect(asamblea.fasePorOrden(99), isNull);
     });
   });
 
-  group('Adversarial Suite 7: Curricular Invariants & Negative Rejection (Decreto 150/2022)', () {
-    test('isValidDecreto150SegundoCiclo validates all required regulatory constraints', () {
+  group(
+      'Adversarial Suite 7: Curricular Invariants & Negative Rejection (Decreto 150/2022)',
+      () {
+    test(
+        'isValidDecreto150SegundoCiclo validates all required regulatory constraints',
+        () {
       const validRef = CurricularReferenceSegundoCiclo(
         normativa: 'Decreto 150/2022',
         etapa: 'educacion_infantil',
         ciclo: 'segundo_ciclo_3_6',
         nivel: '4_infantil',
-        areas: ['area_1_crecemento_harmonia', 'area_3_comunicacion_representacion'],
+        areas: [
+          'area_1_crecemento_harmonia',
+          'area_3_comunicacion_representacion'
+        ],
         criteriosEvaluacion: ['CA1.1', 'CA3.1'],
       );
       expect(validRef.isValidDecreto150SegundoCiclo, isTrue);
 
       // Invalid normativa
-      expect(validRef.copyWith(normativa: 'LOMLOE').isValidDecreto150SegundoCiclo, isFalse);
+      expect(
+          validRef.copyWith(normativa: 'LOMLOE').isValidDecreto150SegundoCiclo,
+          isFalse);
 
       // Invalid etapa
-      expect(validRef.copyWith(etapa: 'primaria').isValidDecreto150SegundoCiclo, isFalse);
+      expect(validRef.copyWith(etapa: 'primaria').isValidDecreto150SegundoCiclo,
+          isFalse);
 
       // Invalid ciclo
-      expect(validRef.copyWith(ciclo: 'primeiro_ciclo_0_3').isValidDecreto150SegundoCiclo, isFalse);
+      expect(
+          validRef
+              .copyWith(ciclo: 'primeiro_ciclo_0_3')
+              .isValidDecreto150SegundoCiclo,
+          isFalse);
 
       // Invalid nivel
-      expect(validRef.copyWith(nivel: '3_infantil').isValidDecreto150SegundoCiclo, isFalse);
-      expect(validRef.copyWith(nivel: '1_primaria').isValidDecreto150SegundoCiclo, isFalse);
+      expect(
+          validRef.copyWith(nivel: '3_infantil').isValidDecreto150SegundoCiclo,
+          isFalse);
+      expect(
+          validRef.copyWith(nivel: '1_primaria').isValidDecreto150SegundoCiclo,
+          isFalse);
 
       // Empty areas
-      expect(validRef.copyWith(areas: []).isValidDecreto150SegundoCiclo, isFalse);
+      expect(
+          validRef.copyWith(areas: []).isValidDecreto150SegundoCiclo, isFalse);
 
       // Illegal area injected
       expect(
-        validRef.copyWith(areas: ['area_1_crecemento_harmonia', 'area_ficticia_inventada']).isValidDecreto150SegundoCiclo,
+        validRef.copyWith(areas: [
+          'area_1_crecemento_harmonia',
+          'area_ficticia_inventada'
+        ]).isValidDecreto150SegundoCiclo,
         isFalse,
       );
 
       // Empty criterios
-      expect(validRef.copyWith(criteriosEvaluacion: []).isValidDecreto150SegundoCiclo, isFalse);
+      expect(
+          validRef
+              .copyWith(criteriosEvaluacion: []).isValidDecreto150SegundoCiclo,
+          isFalse);
 
       // Illegal criterio injected
       expect(
-        validRef.copyWith(criteriosEvaluacion: ['CA1.1', 'CA9.9_inventado']).isValidDecreto150SegundoCiclo,
+        validRef.copyWith(criteriosEvaluacion: [
+          'CA1.1',
+          'CA9.9_inventado'
+        ]).isValidDecreto150SegundoCiclo,
         isFalse,
       );
     });
 
     test('NivelEducativoSegundoCiclo bounds and tolerant parser', () {
-      expect(NivelEducativoSegundoCiclo.desdeClave('  4_INFANTIL  '), equals(NivelEducativoSegundoCiclo.infantil4));
-      expect(NivelEducativoSegundoCiclo.desdeClave('4'), equals(NivelEducativoSegundoCiclo.infantil4));
-      expect(NivelEducativoSegundoCiclo.desdeClave('3-4'), equals(NivelEducativoSegundoCiclo.infantil4));
-      expect(NivelEducativoSegundoCiclo.desdeClave('infantil4'), equals(NivelEducativoSegundoCiclo.infantil4));
+      expect(NivelEducativoSegundoCiclo.desdeClave('  4_INFANTIL  '),
+          equals(NivelEducativoSegundoCiclo.infantil4));
+      expect(NivelEducativoSegundoCiclo.desdeClave('4'),
+          equals(NivelEducativoSegundoCiclo.infantil4));
+      expect(NivelEducativoSegundoCiclo.desdeClave('3-4'),
+          equals(NivelEducativoSegundoCiclo.infantil4));
+      expect(NivelEducativoSegundoCiclo.desdeClave('infantil4'),
+          equals(NivelEducativoSegundoCiclo.infantil4));
 
-      expect(NivelEducativoSegundoCiclo.desdeClave('5_infantil'), equals(NivelEducativoSegundoCiclo.infantil5));
-      expect(NivelEducativoSegundoCiclo.desdeClave('5'), equals(NivelEducativoSegundoCiclo.infantil5));
-      expect(NivelEducativoSegundoCiclo.desdeClave('4-5'), equals(NivelEducativoSegundoCiclo.infantil5));
-      expect(NivelEducativoSegundoCiclo.desdeClave('infantil5'), equals(NivelEducativoSegundoCiclo.infantil5));
+      expect(NivelEducativoSegundoCiclo.desdeClave('5_infantil'),
+          equals(NivelEducativoSegundoCiclo.infantil5));
+      expect(NivelEducativoSegundoCiclo.desdeClave('5'),
+          equals(NivelEducativoSegundoCiclo.infantil5));
+      expect(NivelEducativoSegundoCiclo.desdeClave('4-5'),
+          equals(NivelEducativoSegundoCiclo.infantil5));
+      expect(NivelEducativoSegundoCiclo.desdeClave('infantil5'),
+          equals(NivelEducativoSegundoCiclo.infantil5));
 
-      expect(NivelEducativoSegundoCiclo.desdeClave('6_infantil'), equals(NivelEducativoSegundoCiclo.infantil6));
-      expect(NivelEducativoSegundoCiclo.desdeClave('6'), equals(NivelEducativoSegundoCiclo.infantil6));
-      expect(NivelEducativoSegundoCiclo.desdeClave('5-6'), equals(NivelEducativoSegundoCiclo.infantil6));
-      expect(NivelEducativoSegundoCiclo.desdeClave('infantil6'), equals(NivelEducativoSegundoCiclo.infantil6));
+      expect(NivelEducativoSegundoCiclo.desdeClave('6_infantil'),
+          equals(NivelEducativoSegundoCiclo.infantil6));
+      expect(NivelEducativoSegundoCiclo.desdeClave('6'),
+          equals(NivelEducativoSegundoCiclo.infantil6));
+      expect(NivelEducativoSegundoCiclo.desdeClave('5-6'),
+          equals(NivelEducativoSegundoCiclo.infantil6));
+      expect(NivelEducativoSegundoCiclo.desdeClave('infantil6'),
+          equals(NivelEducativoSegundoCiclo.infantil6));
 
-      expect(NivelEducativoSegundoCiclo.desdeClave(null), equals(NivelEducativoSegundoCiclo.infantil4));
-      expect(NivelEducativoSegundoCiclo.desdeClave('unknown_fallback'), equals(NivelEducativoSegundoCiclo.infantil4));
+      expect(NivelEducativoSegundoCiclo.desdeClave(null),
+          equals(NivelEducativoSegundoCiclo.infantil4));
+      expect(NivelEducativoSegundoCiclo.desdeClave('unknown_fallback'),
+          equals(NivelEducativoSegundoCiclo.infantil4));
     });
 
     test('MetodologiaTPR parser tolerances', () {
-      expect(MetodologiaTPR.desdeClave('accion_expandida'), equals(MetodologiaTPR.accionExpandida));
-      expect(MetodologiaTPR.desdeClave('ACCIONEXPANDIDA'), equals(MetodologiaTPR.accionExpandida));
-      expect(MetodologiaTPR.desdeClave('dramatizado_narrativo'), equals(MetodologiaTPR.dramatizadoNarrativo));
-      expect(MetodologiaTPR.desdeClave('DRAMATIZADONARRATIVO'), equals(MetodologiaTPR.dramatizadoNarrativo));
-      expect(MetodologiaTPR.desdeClave('transaccional_pragmatico'), equals(MetodologiaTPR.transaccionalPragmatico));
-      expect(MetodologiaTPR.desdeClave('TRANSACCIONALPRAGMATICO'), equals(MetodologiaTPR.transaccionalPragmatico));
-      expect(MetodologiaTPR.desdeClave('inexistente'), equals(MetodologiaTPR.accionExpandida));
-      expect(MetodologiaTPR.desdeClave(null), equals(MetodologiaTPR.accionExpandida));
+      expect(MetodologiaTPR.desdeClave('accion_expandida'),
+          equals(MetodologiaTPR.accionExpandida));
+      expect(MetodologiaTPR.desdeClave('ACCIONEXPANDIDA'),
+          equals(MetodologiaTPR.accionExpandida));
+      expect(MetodologiaTPR.desdeClave('dramatizado_narrativo'),
+          equals(MetodologiaTPR.dramatizadoNarrativo));
+      expect(MetodologiaTPR.desdeClave('DRAMATIZADONARRATIVO'),
+          equals(MetodologiaTPR.dramatizadoNarrativo));
+      expect(MetodologiaTPR.desdeClave('transaccional_pragmatico'),
+          equals(MetodologiaTPR.transaccionalPragmatico));
+      expect(MetodologiaTPR.desdeClave('TRANSACCIONALPRAGMATICO'),
+          equals(MetodologiaTPR.transaccionalPragmatico));
+      expect(MetodologiaTPR.desdeClave('inexistente'),
+          equals(MetodologiaTPR.accionExpandida));
+      expect(MetodologiaTPR.desdeClave(null),
+          equals(MetodologiaTPR.accionExpandida));
     });
   });
 
-  group('Adversarial Suite 8: ContentAssetLoader & ContentRepository Under Adversarial Stress', () {
+  group(
+      'Adversarial Suite 8: ContentAssetLoader & ContentRepository Under Adversarial Stress',
+      () {
     test('round-trip serialization with unicode and Galician diacritics', () {
       final fixture = buildCanonicalFixture();
       final asamblea = AsambleaSegundoCiclo.fromJson(fixture);
@@ -1020,19 +1153,28 @@ void main() {
 
       expect(asamblea, equals(decodedAsamblea));
       expect(asamblea.hashCode, equals(decodedAsamblea.hashCode));
-      expect(decodedAsamblea.titulo.resolve(AppLanguage.gl), contains('Acollida'));
+      expect(
+          decodedAsamblea.titulo.resolve(AppLanguage.gl), contains('Acollida'));
     });
 
-    test('ContentRepository handles rapid state resets, empty queries, and duplicate keys', () {
+    test(
+        'ContentRepository handles rapid state resets, empty queries, and duplicate keys',
+        () {
       final repo = ContentRepository();
       expect(repo.asambleaSegundoCicloCount, equals(0));
       expect(repo.getAllAsambleasSegundoCicloSync(), isEmpty);
       expect(repo.getAsambleaSegundoCicloByIdSync('any'), isNull);
-      expect(repo.getAsambleasByNivelSync(NivelEducativoSegundoCiclo.infantil4), isEmpty);
-      expect(repo.getAsambleaByMesYNivelSync(9, NivelEducativoSegundoCiclo.infantil4), isNull);
+      expect(repo.getAsambleasByNivelSync(NivelEducativoSegundoCiclo.infantil4),
+          isEmpty);
+      expect(
+          repo.getAsambleaByMesYNivelSync(
+              9, NivelEducativoSegundoCiclo.infantil4),
+          isNull);
 
-      final a1 = AsambleaSegundoCiclo.fromJson(buildCanonicalFixture(id: 'same.id', mes: 9));
-      final a2 = AsambleaSegundoCiclo.fromJson(buildCanonicalFixture(id: 'same.id', mes: 10));
+      final a1 = AsambleaSegundoCiclo.fromJson(
+          buildCanonicalFixture(id: 'same.id', mes: 9));
+      final a2 = AsambleaSegundoCiclo.fromJson(
+          buildCanonicalFixture(id: 'same.id', mes: 10));
 
       // Overwriting by same ID replaces cleanly in repository
       repo.addAsambleaSegundoCiclo(a1);

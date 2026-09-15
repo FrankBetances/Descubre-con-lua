@@ -57,11 +57,26 @@ class ContentValidator {
     caseSensitive: false,
   );
 
-  /// Prohibited placeholder patterns that indicate incomplete text.
+  /// Marcadores de desarrollo que NO son palabras de ninguna de las dos
+  /// lenguas del contenido. Se rechazan escritos como se escriban: en gallego
+  /// o en castellano nadie escribe «placeholder» queriendo decir algo.
   static final RegExp placeholderPattern = RegExp(
-    r'\b(TODO|TBD|PLACEHOLDER|PENDIENTE|PENDENTE|LOREM\s+IPSUM)\b',
-    caseSensitive: true,
+    r'\b(PLACEHOLDER|TBD|LOREM\s+IPSUM)\b',
+    caseSensitive: false,
   );
+
+  /// TODO, PENDIENTE y PENDENTE sí son palabras corrientes: «sobre todo»,
+  /// «pendente da percha». Rechazarlas en minúscula convertiría el validador
+  /// en un estorbo, así que solo se rechazan en MAYÚSCULAS, que es como las
+  /// deja una herramienta y nunca quien redacta.
+  static final RegExp placeholderUpperPattern = RegExp(
+    r'\b(TODO|PENDIENTE|PENDENTE)\b',
+  );
+
+  /// Un texto lleva marcador de desarrollo si cae en cualquiera de los dos.
+  static bool hasPlaceholder(String value) =>
+      placeholderPattern.hasMatch(value) ||
+      placeholderUpperPattern.hasMatch(value);
 
   /// Valid audio asset extensions for offline playback.
   static const Set<String> validAudioExtensions = {
@@ -208,14 +223,14 @@ class ContentValidator {
 
         if (glVal is! String || glVal.trim().isEmpty) {
           errors.add('$prefix$path: "gl" is missing, not a string, or blank');
-        } else if (placeholderPattern.hasMatch(glVal)) {
+        } else if (hasPlaceholder(glVal)) {
           errors.add(
               '$prefix$path: "gl" contains forbidden placeholder: "${glVal.trim()}"');
         }
 
         if (esVal is! String || esVal.trim().isEmpty) {
           errors.add('$prefix$path: "es" is missing, not a string, or blank');
-        } else if (placeholderPattern.hasMatch(esVal)) {
+        } else if (hasPlaceholder(esVal)) {
           errors.add(
               '$prefix$path: "es" contains forbidden placeholder: "${esVal.trim()}"');
         }
@@ -289,7 +304,8 @@ class ContentValidator {
     }
 
     final ciclo = curriculo['ciclo']?.toString().trim();
-    final isSegundoCiclo = ciclo == CurricularReferenceSegundoCiclo.cicloSegundo;
+    final isSegundoCiclo =
+        ciclo == CurricularReferenceSegundoCiclo.cicloSegundo;
     if (ciclo != CurricularReference.ciclo03 && !isSegundoCiclo) {
       errors.add(
         '${prefix}curriculo.ciclo must be "${CurricularReference.ciclo03}" or "${CurricularReferenceSegundoCiclo.cicloSegundo}" (got: "$ciclo")',

@@ -10,7 +10,7 @@ import re
 import xml.etree.ElementTree as ET
 import wave
 
-PROJECT_ROOT = "/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa"
+PROJECT_ROOT = "<documentos locales>/Descubre con Lúa"
 
 failures = []
 

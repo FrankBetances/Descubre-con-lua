@@ -1,0 +1,51 @@
+{
+  "vb": 100,
+  "nota": "Abrigo con capucha y cremallera de arriba abajo. La cremallera es la del zzzip de la canción.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M30 22 C34 12 66 12 70 22 C74 30 66 34 50 34 C34 34 26 30 30 22 Z",
+      "f": "#1b7a2b",
+      "s": "#143a7a",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M32 26 L18 34 L12 60 L24 64 L26 52 L26 90 L74 90 L74 52 L76 64 L88 60 L82 34 L68 26 C62 36 38 36 32 26 Z",
+      "f": "#2ecc40",
+      "s": "#1b7a2b",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M50 34 L50 90",
+      "s": "#1b7a2b",
+      "sw": 5
+    },
+    {
+      "t": "ruta",
+      "d": "M46 34 L46 90 M54 34 L54 90",
+      "s": "#84cc16",
+      "sw": 2
+    },
+    {
+      "t": "rrect",
+      "x": 46,
+      "y": 40,
+      "w": 8,
+      "h": 10,
+      "r": 3,
+      "f": "#c5ccd6",
+      "s": "#334155",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 34,
+      "cy": 58,
+      "rx": 7,
+      "ry": 12,
+      "f": "#ffffff33"
+    }
+  ]
+}

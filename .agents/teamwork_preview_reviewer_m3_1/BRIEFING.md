@@ -6,7 +6,7 @@ Review Milestone 3 Academy (Familias) module implementation in «Descubre con L�
 ## 🔒 My Identity
 - Archetype: teamwork_preview_reviewer
 - Roles: reviewer, critic
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m3_1/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_reviewer_m3_1/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 3 (Academy UI & Pedagogical Review)
 - Instance: 1 of 2

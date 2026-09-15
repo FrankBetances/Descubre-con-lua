@@ -1,0 +1,81 @@
+{
+  "vb": 100,
+  "nota": "Xabón / Jabón: pastilla con espuma encima y dos burbujas. La pastilla, no el bote, para que se vea que se frota.",
+  "formas": [
+    {
+      "t": "elipse",
+      "cx": 28,
+      "cy": 20,
+      "rx": 10,
+      "ry": 10,
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 48,
+      "cy": 14,
+      "rx": 13,
+      "ry": 13,
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 68,
+      "cy": 22,
+      "rx": 11,
+      "ry": 11,
+      "f": "#ffffff",
+      "s": "#334155",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M16 54 C16 44 30 38 50 38 C70 38 84 44 84 54 L84 68 C84 80 70 86 50 86 C30 86 16 80 16 68 Z",
+      "f": "#f472b6",
+      "s": "#911212",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 54,
+      "rx": 34,
+      "ry": 12,
+      "f": "#ffb3d9",
+      "s": "#911212",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 52,
+      "rx": 9,
+      "ry": 4,
+      "f": "#ffffff88"
+    },
+    {
+      "t": "elipse",
+      "cx": 84,
+      "cy": 40,
+      "rx": 5,
+      "ry": 5,
+      "f": "#a5f3fc",
+      "s": "#334155",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 14,
+      "cy": 36,
+      "rx": 4,
+      "ry": 4,
+      "f": "#a5f3fc",
+      "s": "#334155",
+      "sw": 2
+    }
+  ]
+}

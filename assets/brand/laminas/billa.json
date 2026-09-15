@@ -1,0 +1,52 @@
+{
+  "vb": 100,
+  "nota": "Billa / Grifo abierto, con el chorro cayendo y el volante arriba. Abierto: la palabra se aprende con el agua corriendo.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M8 22 L8 44 L34 44 L34 30 C34 24 40 22 48 22 L70 22",
+      "s": "#68707e",
+      "sw": 12
+    },
+    {
+      "t": "ruta",
+      "d": "M66 16 L66 40 L84 40 L84 16 Z",
+      "f": "#c5ccd6",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M62 40 L88 40 L84 52 L66 52 Z",
+      "f": "#68707e",
+      "s": "#334155",
+      "sw": 4
+    },
+    {
+      "t": "rrect",
+      "x": 60,
+      "y": 6,
+      "w": 30,
+      "h": 10,
+      "r": 5,
+      "f": "#e62828",
+      "s": "#911212",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M70 54 C70 68 68 80 70 92 L80 92 C82 80 80 68 80 54 Z",
+      "f": "#a5f3fc",
+      "s": "#2f6fd0",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 20,
+      "cy": 32,
+      "rx": 8,
+      "ry": 4,
+      "f": "#ffffff55"
+    }
+  ]
+}

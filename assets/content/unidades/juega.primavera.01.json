@@ -1,0 +1,376 @@
+{
+  "id": "juega.primavera.01",
+  "tramoEtario": "0-3",
+  "orden": 8,
+  "titulo": {
+    "gl": "Sementes que medran e orballo na fiestra",
+    "es": "Semillas que crecen y orballo en la ventana"
+  },
+  "subtitulo": {
+    "gl": "Unidade de crecemento corporal e choiva suave",
+    "es": "Unidad de crecimiento corporal y lluvia suave"
+  },
+  "descripcion": {
+    "gl": "Unidade de abril: pasar de estar enroscado no chan a estar de pé cos brazos arriba, como unha planta que medra. E escoitar o orballo, esa choiva miúda de Galicia que non molla de golpe.",
+    "es": "Unidad de abril: pasar de estar enroscado en el suelo a estar de pie con los brazos arriba, como una planta que crece. Y escuchar el orballo, esa lluvia menuda de Galicia que no moja de golpe."
+  },
+  "cancionPulso": {
+    "titulo": {
+      "gl": "Semente pequena",
+      "es": "Semilla pequeña"
+    },
+    "letraConPulsos": {
+      "gl": "* Se-men-te * pe-que-na * no * chan,\n* chove * un pou-co, * tap, * tap.\n* Me-dra, * me-dra, * xa * es-tou al-ta,\n* a-bro * os bra-zos, * son * unha flor.",
+      "es": "* Se-mi-lla * pe-que-ña * en el * sue-lo,\n* llue-ve * un po-co, * tap, * tap.\n* Cre-ce, * cre-ce, * ya * es-toy al-ta,\n* a-bro * los bra-zos, * soy * una flor."
+    },
+    "bpm": 72,
+    "consignaDocente": {
+      "gl": "Empezar todas enroscadas no chan e subir unha liña de cada vez. Non hai que chegar de pé: subir un pouco xa é medrar.",
+      "es": "Empezar todas enroscadas en el suelo y subir una línea cada vez. No hay que llegar de pie: subir un poco ya es crecer."
+    },
+    "audioAsset": {
+      "gl": "assets/voice/gl_tutor_330b34d0_153.m4a",
+      "es": "assets/voice/es_tutor_d9cf4aab_159.m4a"
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa agarda a que saia o sol",
+      "es": "Lúa espera a que salga el sol"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "Chove moi miúdo sobre Vigo. A gata Lúa pousa un dedo no cristal e segue unha pinga que baixa: tap, tap, tap.",
+          "es": "Llueve muy menudo sobre Vigo. La gata Lúa posa un dedo en el cristal y sigue una gota que baja: tap, tap, tap."
+        },
+        "preguntaComprension": {
+          "gl": "Que fai a pinga no cristal? Seguímola co dedo?",
+          "es": "¿Qué hace la gota en el cristal? ¿La seguimos con el dedo?"
+        },
+        "ingles": [
+          "Rain",
+          "Tap-tap",
+          "Rain, rain, tap, tap, little drops!"
+        ],
+        "lamina": "conto_primavera_1"
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Na maceta hai unha semente durmida debaixo da terra. Non se ve nada aínda, pero está a medrar por dentro.",
+          "es": "En la maceta hay una semilla dormida debajo de la tierra. No se ve nada todavía, pero está creciendo por dentro."
+        },
+        "preguntaComprension": {
+          "gl": "Vese a semente? Onde está agochada?",
+          "es": "¿Se ve la semilla? ¿Dónde está escondida?"
+        },
+        "ingles": [
+          "Grow",
+          "Be a little seed"
+        ],
+        "lamina": "conto_primavera_2"
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "Sae o sol e a planta abre os seus pétalos. Lúa érguese, estira os brazos ben arriba e tamén se abre.",
+          "es": "Sale el sol y la planta abre sus pétalos. Lúa se levanta, estira los brazos bien arriba y también se abre."
+        },
+        "preguntaComprension": {
+          "gl": "Que abre a planta? Estiramos nós os brazos arriba?",
+          "es": "¿Qué abre la planta? ¿Estiramos nosotros los brazos arriba?"
+        },
+        "ingles": [
+          "Sun",
+          "Flower",
+          "Open your flower"
+        ],
+        "lamina": "conto_primavera_3"
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "flor",
+      "palabra": {
+        "gl": "Flor",
+        "es": "Flor"
+      },
+      "definicionBreve": {
+        "gl": "O que se abre na planta cando chega a primavera.",
+        "es": "Lo que se abre en la planta cuando llega la primavera."
+      },
+      "ingles": "Flower",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_38f45ad6_4.m4a",
+        "es": "assets/voice/es_slow_38f45ad6_4.m4a"
+      },
+      "lamina": "flor"
+    },
+    {
+      "id": "semente",
+      "palabra": {
+        "gl": "Semente",
+        "es": "Semilla"
+      },
+      "definicionBreve": {
+        "gl": "Peza pequena que se planta na terra e dela sae unha planta.",
+        "es": "Pieza pequeña que se planta en la tierra y de ella sale una planta."
+      },
+      "ingles": "Seed",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_8f24f378_7.m4a",
+        "es": "assets/voice/es_slow_cc18e606_7.m4a"
+      },
+      "lamina": "semente"
+    },
+    {
+      "id": "choiva",
+      "palabra": {
+        "gl": "Choiva",
+        "es": "Lluvia"
+      },
+      "definicionBreve": {
+        "gl": "Auga que cae do ceo e moja a terra e os cristais.",
+        "es": "Agua que cae del cielo y moja la tierra y los cristales."
+      },
+      "ingles": "Rain",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_a6d0392b_6.m4a",
+        "es": "assets/voice/es_slow_5980b740_6.m4a"
+      },
+      "lamina": "choiva"
+    },
+    {
+      "id": "sol",
+      "palabra": {
+        "gl": "Sol",
+        "es": "Sol"
+      },
+      "definicionBreve": {
+        "gl": "A luz grande que quenta e fai medrar as plantas.",
+        "es": "La luz grande que calienta y hace crecer las plantas."
+      },
+      "ingles": "Sun",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_44c0d541_3.m4a",
+        "es": "assets/voice/es_slow_44c0d541_3.m4a"
+      },
+      "lamina": "sol"
+    },
+    {
+      "id": "terra",
+      "palabra": {
+        "gl": "Terra",
+        "es": "Tierra"
+      },
+      "definicionBreve": {
+        "gl": "O que hai na maceta, húmido e escuro, onde vive a raíz.",
+        "es": "Lo que hay en la maceta, húmedo y oscuro, donde vive la raíz."
+      },
+      "ingles": "Soil",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_a6429615_5.m4a",
+        "es": "assets/voice/es_slow_0c48c960_6.m4a"
+      },
+      "lamina": "terra"
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Onde está a flor?",
+        "es": "¿Dónde está la flor?"
+      },
+      "respuestaSugerida": {
+        "gl": "Sinalar a maceta ou achegar a cara a ela.",
+        "es": "Señalar la maceta o acercar la cara a ella."
+      },
+      "consejoDocente": {
+        "gl": "Ter unha planta de verdade na aula durante toda a unidade, e regala xuntas.",
+        "es": "Tener una planta de verdad en el aula durante toda la unidad, y regarla juntas."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Que fai a choiva no cristal?",
+        "es": "¿Qué hace la lluvia en el cristal?"
+      },
+      "respuestaSugerida": {
+        "gl": "Dicir 'tap', seguir a pinga co dedo ou petar no cristal.",
+        "es": "Decir 'tap', seguir la gota con el dedo o dar toquecitos en el cristal."
+      },
+      "consejoDocente": {
+        "gl": "Facelo un día que chova de verdade. En abril, en Vigo, non hai que agardar moito.",
+        "es": "Hacerlo un día que llueva de verdad. En abril, en Vigo, no hay que esperar mucho."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Que precisa a semente para medrar?",
+        "es": "¿Qué necesita la semilla para crecer?"
+      },
+      "respuestaSugerida": {
+        "gl": "Auga, sol, terra e tempo.",
+        "es": "Agua, sol, tierra y tiempo."
+      },
+      "consejoDocente": {
+        "gl": "A resposta que importa é 'tempo': a planta non medra hoxe, e agardar tamén se aprende.",
+        "es": "La respuesta que importa es 'tiempo': la planta no crece hoy, y esperar también se aprende."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "Terra húmida e pétalos suaves",
+      "es": "Tierra húmeda y pétalos suaves"
+    },
+    "materiales": [
+      {
+        "gl": "Unha maceta ancha e baixa con terra vexetal limpa, sen abono químico.",
+        "es": "Una maceta ancha y baja con tierra vegetal limpia, sin abono químico."
+      },
+      {
+        "gl": "Un regador pequeno de plástico con pouca auga dentro.",
+        "es": "Una regadera pequeña de plástico con poca agua dentro."
+      },
+      {
+        "gl": "Pétalos grandes e enteiros de flores non tóxicas, tipo rosa ou margarida.",
+        "es": "Pétalos grandes y enteros de flores no tóxicas, tipo rosa o margarita."
+      },
+      {
+        "gl": "Baldes ou palanganas pequenas e panos para lavar as mans ao rematar.",
+        "es": "Cubos o palanganas pequeñas y paños para lavar las manos al terminar."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Tocar a terra seca coa punta dos dedos e nomear o que se sente.",
+        "es": "Tocar la tierra seca con la punta de los dedos y nombrar lo que se siente."
+      },
+      {
+        "gl": "Regar un pouco e volver tocar: agora está fría e apéganse os dedos.",
+        "es": "Regar un poco y volver a tocar: ahora está fría y se pegan los dedos."
+      },
+      {
+        "gl": "Pasar un pétalo pola meixela de quen o pida, moi a modo.",
+        "es": "Pasar un pétalo por la mejilla de quien lo pida, muy despacio."
+      },
+      {
+        "gl": "Lavar as mans todas xuntas, que forma parte da actividade.",
+        "es": "Lavar las manos todas juntas, que forma parte de la actividad."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. As SEMENTES NON se manipulan soltas a esta idade: son un risco de atragoamento e de introdución nas fosas nasais; se se planta algo, plántao a persoa adulta. Úsese só terra vexetal envasada, nunca terra do exterior, e comprébese que as flores non son tóxicas nin están tratadas. Lávanse as mans ao rematar, sempre.",
+      "es": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. Las SEMILLAS NO se manipulan sueltas a esta edad: son un riesgo de atragantamiento y de introducción en las fosas nasales; si se planta algo, lo planta la persona adulta. Úsese solo tierra vegetal envasada, nunca tierra del exterior, y compruébese que las flores no son tóxicas ni están tratadas. Se lavan las manos al terminar, siempre."
+    },
+    "objetivoSensorial": {
+      "gl": "Explorar o contraste seco/húmido na man e o tacto moi fino do pétalo.",
+      "es": "Explorar el contraste seco/húmedo en la mano y el tacto muy fino del pétalo."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Pequeno e grande: o que medra",
+      "es": "Pequeño y grande: lo que crece"
+    },
+    "descripcion": {
+      "gl": "A magnitude vista como cambio no tempo: o mesmo corpo é pequeno enroscado no chan e grande de pé cos brazos arriba.",
+      "es": "La magnitud vista como cambio en el tiempo: el mismo cuerpo es pequeño enroscado en el suelo y grande de pie con los brazos arriba."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Facerse moi pequenas no chan e moi grandes de pé, dúas veces seguidas.",
+        "es": "Hacerse muy pequeñas en el suelo y muy grandes de pie, dos veces seguidas."
+      },
+      {
+        "gl": "Marcar na parede ata onde chega cada quen cos brazos arriba.",
+        "es": "Marcar en la pared hasta dónde llega cada una con los brazos arriba."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Pequeno / Grande, Abaixo / Arriba, Antes / Despois",
+      "es": "Pequeño / Grande, Abajo / Arriba, Antes / Después"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe fixemos de semente coa gata Lúa: empezamos enroscados no chan e acabamos de pé cos brazos abertos coma flores. E seguimos as pingas da choiva no cristal.",
+      "es": "Hoy hicimos de semilla con la gata Lúa: empezamos enroscados en el suelo y acabamos de pie con los brazos abiertos como flores. Y seguimos las gotas de lluvia en el cristal."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "Un día de orballo, na fiestra, seguir unha pinga co dedo dicindo 'Rain, rain, tap, tap, little drops!'.",
+        "es": "Un día de orballo, en la ventana, seguir una gota con el dedo diciendo 'Rain, rain, tap, tap, little drops!'."
+      },
+      {
+        "gl": "Ao espertar, facer xuntos o estirón: enroscarse na cama e abrirse dicindo 'Grow up!'.",
+        "es": "Al despertar, hacer juntos el estirón: enroscarse en la cama y abrirse diciendo 'Grow up!'."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "Deixar que toque a terra aínda que se manche. O que se toca dura moito máis ca o que só se mira.",
+      "es": "Dejar que toque la tierra aunque se manche. Lo que se toca dura mucho más que lo que solo se mira."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_2_descubrimento_contorna"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA2.1",
+      "CA2.2"
+    ]
+  },
+  "ingles": {
+    "frase": "Rain, rain, tap, tap, little drops!",
+    "porFase": {
+      "pulso": [
+        "Grow",
+        "Grow up",
+        "Be a little seed"
+      ],
+      "conto": [
+        "Rain",
+        "Sun",
+        "Flower",
+        "Tap-tap"
+      ],
+      "preguntas": [
+        "Flower",
+        "Rain"
+      ],
+      "exploracion": [
+        "Open",
+        "Open your flower"
+      ],
+      "matematicas": [
+        "Grow up",
+        "Open"
+      ],
+      "ponteCasa": [
+        "Rain, rain, tap, tap, little drops!",
+        "Sun"
+      ]
+    },
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-13",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

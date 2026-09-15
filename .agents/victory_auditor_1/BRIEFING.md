@@ -6,7 +6,7 @@ Independent Post-Victory Audit for «Descubre con Lúa · Edición Vigo». Verif
 ## 🔒 My Identity
 - Archetype: victory_auditor
 - Roles: critic, specialist, auditor, victory_verifier
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/victory_auditor_1
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/victory_auditor_1
 - Original parent: 1a408299-9f4b-4cfb-a545-99bdd04d65ff
 - Target: full project
 

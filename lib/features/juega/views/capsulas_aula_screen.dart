@@ -15,7 +15,7 @@ import '../../premios/widgets/lua_game_strip.dart';
 /// «Formación · Aula»: las cápsulas que lee la maestra.
 ///
 /// Misma pieza visual que Academy —`AcademyHeader` y `AcademyCard`, el estilo
-/// de Valeria+— y a propósito: es la misma clase de lectura, y que se vea
+/// del proyecto anterior de la casa— y a propósito: es la misma clase de lectura, y que se vea
 /// distinta solo obligaría a aprender dos interfaces para lo mismo. Lo que
 /// cambia es de quién es el recorrido y cómo se titulan las secciones dentro
 /// del lector.
@@ -136,81 +136,88 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
           ),
         ],
       ),
-      body: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          AcademyHeader(
-            kicker: _kicker.resolve(lang),
-            titulo: _titulo.resolve(lang),
-            subtitulo: _subtitulo.resolve(lang),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(
-              AppTheme.spaceLg,
-              AppTheme.spaceXl,
-              AppTheme.spaceLg,
-              AppTheme.spaceXxl,
+      // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
+      // ya no reserva la barra de gestos y el final de esta pantalla
+      // quedaba por debajo. `top: false` porque el inset de arriba ya lo
+      // consume el AppBar; volver a pedirlo aquí no suma nada.
+      body: SafeArea(
+        top: false,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            AcademyHeader(
+              kicker: _kicker.resolve(lang),
+              titulo: _titulo.resolve(lang),
+              subtitulo: _subtitulo.resolve(lang),
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                if (widget.premios != null) ...[
-                  LuaGameStrip(
-                    repository: widget.premios!,
-                    perfil: Perfil.docente,
-                    language: lang,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceXl,
+                AppTheme.spaceLg,
+                AppTheme.spaceXxl,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  if (widget.premios != null) ...[
+                    LuaGameStrip(
+                      repository: widget.premios!,
+                      perfil: Perfil.docente,
+                      language: lang,
+                    ),
+                    const SizedBox(height: AppTheme.spaceXl),
+                  ],
+                  Text(
+                    _disponibles.resolve(lang),
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: AppTheme.textSecondary,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 1.4,
+                        ),
                   ),
-                  const SizedBox(height: AppTheme.spaceXl),
-                ],
-                Text(
-                  _disponibles.resolve(lang),
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        color: AppTheme.textSecondary,
-                        fontWeight: FontWeight.w800,
-                        letterSpacing: 1.4,
-                      ),
-                ),
-                const SizedBox(height: AppTheme.spaceMd),
-                ...bloques.map((bloque) {
-                  final capsulas =
-                      widget.repository.getCapsulasAulaByBloqueId(bloque.id);
-                  final primera = capsulas.isNotEmpty ? capsulas.first : null;
-                  final minutos = primera?.tiempoLecturaMinutos;
+                  const SizedBox(height: AppTheme.spaceMd),
+                  ...bloques.map((bloque) {
+                    final capsulas =
+                        widget.repository.getCapsulasAulaByBloqueId(bloque.id);
+                    final primera = capsulas.isNotEmpty ? capsulas.first : null;
+                    final minutos = primera?.tiempoLecturaMinutos;
 
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
-                    child: AcademyCard(
-                      icono: _iconForBloque(bloque.icono),
-                      kicker: 'Paso ${bloque.orden}',
-                      titulo: bloque.titulo.resolve(lang),
-                      descripcion: bloque.descripcion.resolve(lang),
-                      meta: capsulas.isEmpty
-                          ? _sinCapsulas.resolve(lang)
-                          : [
-                              '${capsulas.length} '
-                                  '${capsulas.length == 1 ? _unaCapsula.resolve(lang) : _variasCapsulas.resolve(lang)}',
-                              if (minutos != null) '$minutos min',
-                            ].join(' · '),
-                      onTap: primera == null
-                          ? null
-                          : () => Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => CapsulaDetailScreen(
-                                    capsula: primera,
-                                    initialLanguage: _language,
-                                    onLanguageChanged: _onToggleLanguage,
-                                    premios: widget.premios,
-                                    audioService: widget.audioService,
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
+                      child: AcademyCard(
+                        icono: _iconForBloque(bloque.icono),
+                        kicker: 'Paso ${bloque.orden}',
+                        titulo: bloque.titulo.resolve(lang),
+                        descripcion: bloque.descripcion.resolve(lang),
+                        meta: capsulas.isEmpty
+                            ? _sinCapsulas.resolve(lang)
+                            : [
+                                '${capsulas.length} '
+                                    '${capsulas.length == 1 ? _unaCapsula.resolve(lang) : _variasCapsulas.resolve(lang)}',
+                                if (minutos != null) '$minutos min',
+                              ].join(' · '),
+                        onTap: primera == null
+                            ? null
+                            : () => Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => CapsulaDetailScreen(
+                                      capsula: primera,
+                                      initialLanguage: _language,
+                                      onLanguageChanged: _onToggleLanguage,
+                                      premios: widget.premios,
+                                      audioService: widget.audioService,
+                                    ),
                                   ),
                                 ),
-                              ),
-                    ),
-                  );
-                }),
-              ],
+                      ),
+                    );
+                  }),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

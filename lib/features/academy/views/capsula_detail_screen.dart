@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/lua_pixel.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
@@ -11,12 +12,12 @@ import '../../premios/premios_repository.dart';
 import '../widgets/academy_header.dart';
 import '../widgets/selector_idioma_widget.dart';
 
-/// El lector de una cápsula, portado del de Valeria+
+/// El lector de una cápsula, portado del proyecto anterior de la casa
 /// (`docs/screenshots/29-academy-lector.png` y `30-academy-quiz.png`).
 ///
 /// El cambio de fondo respecto a lo que había: **va paginado**. Antes era un
 /// scroll larguísimo con las cuatro secciones y la reflexión abajo del todo.
-/// Valeria+ presenta una idea por pantalla, con puntos de progreso arriba y un
+/// El proyecto anterior de la casa presenta una idea por pantalla, con puntos de progreso arriba y un
 /// botón grande abajo, y eso no es estética: una familia lee esto en cinco
 /// minutos robados, y una pantalla con una sola idea se puede terminar.
 ///
@@ -64,6 +65,11 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
   static const _reflexion = LocalizedString(
     gl: 'PARA PENSAR',
     es: 'PARA PENSAR',
+  );
+
+  static const _luaDi = LocalizedString(
+    gl: 'LÚA DI',
+    es: 'LÚA DICE',
   );
   static const _verdadero = LocalizedString(gl: 'Verdadeiro', es: 'Verdadero');
   static const _falso = LocalizedString(gl: 'Falso', es: 'Falso');
@@ -137,8 +143,18 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
     ];
   }
 
+  /// La cápsula termina con Lúa cuando el contenido la trae.
+  ///
+  /// Va la ÚLTIMA, después de las afirmaciones, y no antes: la cápsula se
+  /// cuenta como leída al responder la última afirmación, así que el premio
+  /// cae primero y la gata cierra. Al revés, Lúa despediría una cápsula que
+  /// todavía no está terminada.
+  bool get _tieneCierreDeLua => widget.capsula.luaDice != null;
+
   int get _totalPaginas =>
-      _secciones.length + widget.capsula.afirmaciones.length;
+      _secciones.length +
+      widget.capsula.afirmaciones.length +
+      (_tieneCierreDeLua ? 1 : 0);
 
   @override
   void initState() {
@@ -207,6 +223,9 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
   bool get _puedeAvanzar {
     final indice = _pagina - _secciones.length;
     if (indice < 0) return true;
+    // El cierre de Lúa va detrás de la última afirmación y no pide nada. Sin
+    // esta línea, la página de la gata se salía de la lista de afirmaciones.
+    if (indice >= widget.capsula.afirmaciones.length) return true;
     final afirmacion = widget.capsula.afirmaciones[indice];
     return _userAnswers[afirmacion.id] != null;
   }
@@ -242,17 +261,27 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
               itemCount: _totalPaginas,
               onPageChanged: (i) => setState(() => _pagina = i),
               itemBuilder: (context, i) {
-                final enReflexionAqui = i >= secciones.length;
+                final indiceAfirmacion = i - secciones.length;
+                final esCierreDeLua =
+                    indiceAfirmacion >= capsula.afirmaciones.length;
+
+                final String kicker;
+                if (i < secciones.length) {
+                  kicker = secciones[i].kicker.resolve(lang);
+                } else if (esCierreDeLua) {
+                  kicker = _luaDi.resolve(lang);
+                } else {
+                  kicker = _reflexion.resolve(lang);
+                }
+
                 // La cabecera va DENTRO del scroll de cada página, no fija
                 // arriba. Con la cabecera fija más el pie de botones, a escala
                 // de texto 1,8 no queda altura para el contenido y la pantalla
                 // desborda: lo cazó el test de escala, no un aparato. A escala
-                // normal se ve igual que la de Valeria+; a escala grande, se
+                // normal se ve igual que la del proyecto anterior de la casa; a escala grande, se
                 // desplaza en vez de cortarse.
                 final cabecera = AcademyHeader(
-                  kicker: enReflexionAqui
-                      ? _reflexion.resolve(lang)
-                      : secciones[i].kicker.resolve(lang),
+                  kicker: kicker,
                   titulo: capsula.titulo.resolve(lang),
                   pasos: _totalPaginas,
                   pasoActual: i,
@@ -265,7 +294,15 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                     audioService: widget.audioService,
                   );
                 }
-                final afirmacion = capsula.afirmaciones[i - secciones.length];
+                if (esCierreDeLua) {
+                  return _PaginaLua(
+                    cabecera: cabecera,
+                    texto: capsula.luaDice!,
+                    lang: lang,
+                    audioService: widget.audioService,
+                  );
+                }
+                final afirmacion = capsula.afirmaciones[indiceAfirmacion];
                 return _PaginaReflexion(
                   cabecera: cabecera,
                   afirmacion: afirmacion,
@@ -416,6 +453,83 @@ class _PaginaSeccion extends StatelessWidget {
                     texto: seccion.cuerpo.resolve(lang),
                     language: lang,
                     descripcion: seccion.titulo.resolve(lang),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// El cierre: Lúa convierte la cápsula en un gesto para hoy.
+///
+/// Es la ÚNICA pantalla de Academy en la que aparece la gata dentro de la
+/// lectura, y aparece al final por una razón: la familia acaba de leer cuatro
+/// pantallas de por qué, y lo que se lleva a la cocina es una sola cosa que
+/// hacer. Quien lee esto es la persona adulta —la criatura no usa la pantalla—,
+/// así que Lúa le habla a ella, no a la criatura.
+///
+/// La gata se pinta desde la MISMA rejilla que el icono del lanzador
+/// (`assets/brand/lua_sit.txt`), no desde un PNG aparte: si alguien cambia la
+/// rejilla, cambian las dos a la vez.
+class _PaginaLua extends StatelessWidget {
+  final Widget cabecera;
+  final LocalizedString texto;
+  final AppLanguage lang;
+  final OfflineAudioService? audioService;
+
+  const _PaginaLua({
+    required this.cabecera,
+    required this.texto,
+    required this.lang,
+    this.audioService,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final text = Theme.of(context).textTheme;
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          cabecera,
+          Padding(
+            padding: const EdgeInsets.all(AppTheme.spaceLg),
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(AppTheme.spaceXl),
+              decoration: BoxDecoration(
+                // Fondo y borde distintos de las cuatro tarjetas blancas: esto
+                // no es una quinta sección, es quien te lo cuenta.
+                color: AppTheme.primaryTint,
+                borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                border: Border.all(color: AppTheme.borderActive),
+              ),
+              child: Column(
+                children: [
+                  // Cuadrado de lado fijo y centrado: no hay texto al lado que
+                  // pueda empujarlo, así que no puede desbordar a lo ancho por
+                  // mucho que crezca la escala de texto del sistema.
+                  const LuaPixel(pose: LuaPose.sit, size: 104),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  Text(
+                    texto.resolve(lang),
+                    textAlign: TextAlign.center,
+                    style: text.titleMedium?.copyWith(
+                      color: AppTheme.textPrimary,
+                      height: 1.45,
+                    ),
+                  ),
+                  const SizedBox(height: AppTheme.spaceLg),
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: texto.resolve(lang),
+                    language: lang,
+                    descripcion: lang == AppLanguage.gl
+                        ? 'o que di Lúa'
+                        : 'lo que dice Lúa',
                   ),
                 ],
               ),

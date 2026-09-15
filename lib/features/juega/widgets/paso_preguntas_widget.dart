@@ -18,11 +18,16 @@ class PasoPreguntasWidget extends StatelessWidget {
   /// Sin él no hay botón de escuchar en las preguntas.
   final OfflineAudioService? audioService;
 
+  /// Modo asamblea: se ve el enunciado y nada más. La respuesta esperada y el
+  /// consejo docente son preparación, no algo que se lea con el grupo delante.
+  final bool soloEsencial;
+
   const PasoPreguntasWidget({
     super.key,
     required this.preguntas,
     required this.language,
     this.audioService,
+    this.soloEsencial = false,
   });
 
   String _levelTitle(int nivel, bool isGl) {
@@ -113,25 +118,31 @@ class PasoPreguntasWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Level Header
+                  // Flexible: «Nivel 3: Causa-efecto e experiencia cotiá» no
+                  // cabe en una pastilla de una línea en 360 dp. Desbordaba
+                  // 300 px y en release solo se veía el texto cortado.
                   Row(
                     children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 10.0,
-                          vertical: 4.0,
-                        ),
-                        decoration: BoxDecoration(
-                          color: levelColor.withValues(alpha: 0.15),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        child: Text(
-                          levelTitle,
-                          style: TextStyle(
-                            color: levelColor == AppTheme.secondarySeaGlass
-                                ? const Color(0xFF1B6A7F)
-                                : levelColor,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13.5,
+                      Flexible(
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 10.0,
+                            vertical: 4.0,
+                          ),
+                          decoration: BoxDecoration(
+                            color: levelColor.withValues(alpha: 0.15),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          child: Text(
+                            levelTitle,
+                            maxLines: 2,
+                            style: TextStyle(
+                              color: levelColor == AppTheme.secondarySeaGlass
+                                  ? const Color(0xFF1B6A7F)
+                                  : levelColor,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 13.5,
+                            ),
                           ),
                         ),
                       ),
@@ -163,115 +174,117 @@ class PasoPreguntasWidget extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 14.0),
+                  if (!soloEsencial) const SizedBox(height: 14.0),
 
                   // Expected toddler response
-                  Container(
-                    padding: const EdgeInsets.all(12.0),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFF1F5F9),
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Icon(
-                          Icons.subdirectory_arrow_right,
-                          color: Color(0xFF475569),
-                          size: 18,
-                        ),
-                        const SizedBox(width: 8),
-                        Expanded(
-                          child: RichText(
-                            text: TextSpan(
-                              style: theme.textTheme.bodyMedium?.copyWith(
-                                fontSize: 16.0,
-                                color: AppTheme.textSlate,
+                  if (!soloEsencial)
+                    Container(
+                      padding: const EdgeInsets.all(12.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFF1F5F9),
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Icon(
+                            Icons.subdirectory_arrow_right,
+                            color: Color(0xFF475569),
+                            size: 18,
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: RichText(
+                              text: TextSpan(
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  fontSize: 16.0,
+                                  color: AppTheme.textSlate,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: isGl
+                                        ? 'Resposta esperada: '
+                                        : 'Respuesta esperada: ',
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  TextSpan(
+                                    text: p.respuestaSugerida.resolve(language),
+                                    style: const TextStyle(
+                                        fontStyle: FontStyle.italic),
+                                  ),
+                                ],
                               ),
-                              children: [
-                                TextSpan(
-                                  text: isGl
-                                      ? 'Resposta esperada: '
-                                      : 'Respuesta esperada: ',
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                TextSpan(
-                                  text: p.respuestaSugerida.resolve(language),
-                                  style: const TextStyle(
-                                      fontStyle: FontStyle.italic),
-                                ),
-                              ],
                             ),
                           ),
-                        ),
-                        BotonEscuchar(
-                          audioService: audioService,
-                          texto: p.respuestaSugerida.resolve(language),
-                          language: language,
-                          compacto: true,
-                          descripcion: isGl
-                              ? 'a resposta esperada'
-                              : 'la respuesta esperada',
-                        ),
-                      ],
+                          BotonEscuchar(
+                            audioService: audioService,
+                            texto: p.respuestaSugerida.resolve(language),
+                            language: language,
+                            compacto: true,
+                            descripcion: isGl
+                                ? 'a resposta esperada'
+                                : 'la respuesta esperada',
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 10.0),
+                  if (!soloEsencial) const SizedBox(height: 10.0),
 
                   // Teacher pedagogical tip
-                  Container(
-                    padding: const EdgeInsets.all(12.0),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFFAF7EE),
-                      borderRadius: BorderRadius.circular(10.0),
-                      border: Border.all(color: const Color(0xFFDFD7BE)),
-                    ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Icon(
-                          Icons.lightbulb_outline,
-                          color: AppTheme.primaryVigoBlue,
-                          size: 18,
-                        ),
-                        const SizedBox(width: 8),
-                        Expanded(
-                          child: RichText(
-                            text: TextSpan(
-                              style: theme.textTheme.bodyMedium?.copyWith(
-                                fontSize: 16.0,
-                                color: AppTheme.textSlate,
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: isGl
-                                      ? 'Consello docente: '
-                                      : 'Consejo docente: ',
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: AppTheme.primaryVigoBlue,
+                  if (!soloEsencial)
+                    Container(
+                      padding: const EdgeInsets.all(12.0),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFAF7EE),
+                        borderRadius: BorderRadius.circular(10.0),
+                        border: Border.all(color: const Color(0xFFDFD7BE)),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Icon(
+                            Icons.lightbulb_outline,
+                            color: AppTheme.primaryVigoBlue,
+                            size: 18,
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: RichText(
+                              text: TextSpan(
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  fontSize: 16.0,
+                                  color: AppTheme.textSlate,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: isGl
+                                        ? 'Consello docente: '
+                                        : 'Consejo docente: ',
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: AppTheme.primaryVigoBlue,
+                                    ),
                                   ),
-                                ),
-                                TextSpan(
-                                  text: p.consejoDocente.resolve(language),
-                                ),
-                              ],
+                                  TextSpan(
+                                    text: p.consejoDocente.resolve(language),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
-                        ),
-                        BotonEscuchar(
-                          audioService: audioService,
-                          texto: p.consejoDocente.resolve(language),
-                          language: language,
-                          compacto: true,
-                          descripcion: isGl
-                              ? 'o consello docente'
-                              : 'el consejo docente',
-                        ),
-                      ],
+                          BotonEscuchar(
+                            audioService: audioService,
+                            texto: p.consejoDocente.resolve(language),
+                            language: language,
+                            compacto: true,
+                            descripcion: isGl
+                                ? 'o consello docente'
+                                : 'el consejo docente',
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
                 ],
               ),
             ),

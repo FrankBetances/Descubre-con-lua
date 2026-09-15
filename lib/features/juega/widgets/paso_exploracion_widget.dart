@@ -18,11 +18,18 @@ class PasoExploracionWidget extends StatelessWidget {
   /// Sin él no hay botón de escuchar en la exploración sensorial.
   final OfflineAudioService? audioService;
 
+  /// Modo asamblea: el AVISO DE SEGURIDAD y los pasos. Nunca se pliega el
+  /// aviso —eso no se negocia—; se pliegan el objetivo sensorial y la lista de
+  /// materiales, que son preparación y ya están sobre la mesa cuando el grupo
+  /// se sienta.
+  final bool soloEsencial;
+
   const PasoExploracionWidget({
     super.key,
     required this.exploracion,
     required this.language,
     this.audioService,
+    this.soloEsencial = false,
   });
 
   @override
@@ -75,9 +82,16 @@ class PasoExploracionWidget extends StatelessWidget {
                   const SizedBox(width: 10),
                   Expanded(
                     child: Text(
+                      // Sin el emoji de aviso: lo dice YA el icono de al lado,
+                      // que es del set de la app. Un emoji del sistema cambia
+                      // de dibujo entre fabricantes —en unos es un triángulo
+                      // naranja, en otros uno rojo plano— y aquí salía DOS
+                      // veces el mismo aviso con dos dibujos distintos. Es la
+                      // regla 5 del CLAUDE.md: la iconografía sale del set
+                      // propio, no del teclado.
                       isGl
-                          ? '⚠️ PROTOCOLO DE SEGURIDADE NA AULA'
-                          : '⚠️ PROTOCOLO DE SEGURIDAD EN EL AULA',
+                          ? 'PROTOCOLO DE SEGURIDADE NA AULA'
+                          : 'PROTOCOLO DE SEGURIDAD EN EL AULA',
                       style: const TextStyle(
                         color: AppTheme.accentTerracotta,
                         fontWeight: FontWeight.bold,
@@ -138,112 +152,116 @@ class PasoExploracionWidget extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(height: 20.0),
+        if (!soloEsencial) const SizedBox(height: 20.0),
 
         // Sensory Objective Box
-        Container(
-          padding: const EdgeInsets.all(16.0),
-          decoration: BoxDecoration(
-            color: const Color(0xFFE8F1F5),
-            borderRadius: BorderRadius.circular(14.0),
-            border: Border.all(color: const Color(0xFFB8D3DF)),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Icon(
-                Icons.center_focus_strong_outlined,
-                color: AppTheme.primaryVigoBlue,
-                size: 22,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      isGl ? 'Obxectivo sensorial:' : 'Objetivo sensorial:',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: AppTheme.primaryVigoBlue,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      exploracion.objetivoSensorial.resolve(language),
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        fontSize: 16.0,
-                        height: 1.45,
-                        color: AppTheme.textSlate,
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: BotonEscuchar(
-                        audioService: audioService,
-                        texto: exploracion.objetivoSensorial.resolve(language),
-                        language: language,
-                        compacto: true,
-                        descripcion: isGl
-                            ? 'o obxectivo sensorial'
-                            : 'el objetivo sensorial',
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 20.0),
-
-        // Materials List
-        Text(
-          isGl ? 'Materiais necesarios:' : 'Materiales necesarios:',
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
-            color: AppTheme.primaryVigoBlue,
-          ),
-        ),
-        const SizedBox(height: 10.0),
-        Card(
-          color: AppTheme.cardSurface,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(14.0),
-            side: const BorderSide(color: Color(0xFFE2DDD0)),
-          ),
-          child: Padding(
+        if (!soloEsencial)
+          Container(
             padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: exploracion.materiales.map((m) {
-                return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 4.0),
-                  child: Row(
+            decoration: BoxDecoration(
+              color: const Color(0xFFE8F1F5),
+              borderRadius: BorderRadius.circular(14.0),
+              border: Border.all(color: const Color(0xFFB8D3DF)),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(
+                  Icons.center_focus_strong_outlined,
+                  color: AppTheme.primaryVigoBlue,
+                  size: 22,
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Icon(
-                        Icons.check_box_outlined,
-                        size: 20,
-                        color: AppTheme.calmSage,
+                      Text(
+                        isGl ? 'Obxectivo sensorial:' : 'Objetivo sensorial:',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: AppTheme.primaryVigoBlue,
+                          fontSize: 16.0,
+                        ),
                       ),
-                      const SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          m.resolve(language),
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            fontSize: 16.0,
-                            color: AppTheme.textSlate,
-                          ),
+                      const SizedBox(height: 4),
+                      Text(
+                        exploracion.objetivoSensorial.resolve(language),
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          fontSize: 16.0,
+                          height: 1.45,
+                          color: AppTheme.textSlate,
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: BotonEscuchar(
+                          audioService: audioService,
+                          texto:
+                              exploracion.objetivoSensorial.resolve(language),
+                          language: language,
+                          compacto: true,
+                          descripcion: isGl
+                              ? 'o obxectivo sensorial'
+                              : 'el objetivo sensorial',
                         ),
                       ),
                     ],
                   ),
-                );
-              }).toList(),
+                ),
+              ],
             ),
           ),
-        ),
+        if (!soloEsencial) const SizedBox(height: 20.0),
+
+        // Materials List
+        if (!soloEsencial)
+          Text(
+            isGl ? 'Materiais necesarios:' : 'Materiales necesarios:',
+            style: theme.textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: AppTheme.primaryVigoBlue,
+            ),
+          ),
+        if (!soloEsencial) const SizedBox(height: 10.0),
+        if (!soloEsencial)
+          Card(
+            color: AppTheme.cardSurface,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(14.0),
+              side: const BorderSide(color: Color(0xFFE2DDD0)),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                children: exploracion.materiales.map((m) {
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Icon(
+                          Icons.check_box_outlined,
+                          size: 20,
+                          color: AppTheme.calmSage,
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            m.resolve(language),
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              fontSize: 16.0,
+                              color: AppTheme.textSlate,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }).toList(),
+              ),
+            ),
+          ),
         const SizedBox(height: 20.0),
 
         // Steps List

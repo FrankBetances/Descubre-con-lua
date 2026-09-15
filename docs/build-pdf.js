@@ -4,9 +4,9 @@
 //   CHROMIUM_PATH=/ruta/al/chrome node docs/build-pdf.js
 //
 // El HTML es la ÚNICA fuente del manual: de él salen el PDF (aquí) y el Word
-// (docs/build-docx.py). Portado de Valeria+, y por la razón que está escrita en
-// su build-docx.py: allí el texto llegó a estar duplicado y el Word se quedó
-// describiendo una versión anterior sin que nada avisara.
+// (docs/build-docx.py). Portado del proyecto anterior de la casa, y por la razón
+// escrita en su constructor: allí el texto llegó a estar duplicado y el Word se
+// quedó describiendo una versión anterior sin que nada avisara.
 //
 // printBackground va activado a propósito: la portada, las cabeceras de los
 // casos de uso y los recuadros de aviso SON color. Sin él, la cabecera azul sale

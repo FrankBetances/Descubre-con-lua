@@ -7,7 +7,62 @@ App Android nativa en Flutter, de finalidad **exclusivamente educativa**, para l
 
 Todo el contenido está en gallego y castellano. La primera versión la generó Google Antigravity y la revisión y mejora la hace Claude Code.
 
-**No es Valeria+.** No se copia código, pantallas ni módulos de Valeria+. De Valeria+ se heredan las reglas de trabajo de abajo, la identidad de Lúa y las tuberías de compilación (voz neuronal, rejilla de la mascota), nada más.
+**No es el otro producto de la casa.** No se copia su código, sus pantallas ni sus módulos. De él se heredan las reglas de trabajo de abajo, la identidad de Lúa y las tuberías de compilación (voz neuronal, rejilla de la mascota), nada más.
+
+> Este repositorio es **público**. Lo que se escriba aquí lo lee cualquiera, así que en este fichero y en los demás documentos no entran ni incidencias de otros productos, ni fechas de rechazos de tienda, ni nombres de ficheros internos ajenos, ni el estado de las claves de firma.
+
+## LAS CINCO REGLAS
+
+Las dictó Frank. **Mandan sobre todo lo demás de este fichero.** Si algo de más abajo las contradice, ganan ellas. Se citan como **R1…R5** —no como «regla 1»— porque «regla 1», «regla 1c» y «regla 5» ya nombran las reglas de trabajo de más abajo, que están citadas desde el código, los tests y `docs/`.
+
+### R1 · Honestidad ante todo
+
+Manda sobre las otras cuatro. No se afirma nada que no se haya comprobado, y se nombra con qué se comprobó. No se presenta la propia actividad como estado del producto. Si algo no se ha mirado, se dice **«esto no lo he verificado»**, con esas palabras.
+
+Dos casos que ya han pasado y que cuentan como mentira aunque no lo parezcan:
+
+- dar por bueno un número que viene de un documento, sin decir que viene de un documento;
+- dar por literal el **resumen** que ha hecho otra herramienta de un fichero. Un resumen no es el fichero: si no se ha leído el original, se dice.
+
+Desarrollo: regla 0 y regla 2.
+
+### R2 · Nunca atajos. Siempre el trabajo completo
+
+«Hecho» se mide en capas, no en ficheros tocados. Un cambio de contenido vive en el JSON gallego, el JSON castellano, el audio gallego, el audio castellano, el imprimible, la interfaz y la documentación: **se enumeran las capas y se dice cuál se ha mirado y cuál no.**
+
+Si el encargo tiene cinco partes y una se atasca, se terminan las otras cuatro enteras y se dice cuál falta y por qué. Entregar la parte fácil y callar la difícil es un atajo. Reducir el alcance lo decide Frank, no Claude Code.
+
+Desarrollo: reglas 1b, 5, 5b y 6.
+
+### R3 · Revisar todo antes de entregar
+
+Antes de decir que algo está listo se revisa **lo entregado**, no lo recordado: se relee el diff propio buscando qué lo tumbaría, se corren los gates, se miran las capturas en gallego y en castellano, y se comprueba que los enlaces y las referencias sigan apuntando a algo que existe.
+
+La revisión incluye **lo entregado en turnos anteriores de la misma tarea**. Si al revisar aparece un fallo propio ya empujado, se corrige y se dice; no se deja correr porque ya esté en la rama.
+
+Desarrollo: reglas 1, 1b, 1c y 4.
+
+### R4 · Nada confidencial en un documento público
+
+Este repositorio es público, y lo son **todos** sus ficheros: el README, el manual, `STATUS.md`, `PROJECT.md` y este mismo `CLAUDE.md`. Antes de escribir una línea en cualquiera de ellos: *si esto lo lee el Concello, una familia o un evaluador, ¿les sirve, o solo cuenta cómo va la obra por dentro —o cómo va otro producto de la casa—?*
+
+Nunca, en ninguno de los ficheros de este repositorio: rechazos de tienda con sus fechas, números de versión o motivos; el estado de las claves de firma; incidencias, clientes, fechas o nombres de fichero de **otros productos de la casa**.
+
+Desarrollo: regla 0b.
+
+### R5 · Hacer todo lo posible por completar la tarea
+
+Un obstáculo no es el final del encargo. Antes de parar se prueban las vías que quedan, empezando por la menos invasiva, y se agotan.
+
+Y lo que R5 **no** autoriza:
+
+- no autoriza a ensanchar el encargo. Se agotan las vías **dentro** de lo pedido; lo que no se pidió sigue sin tocarse (regla 0a);
+- no autoriza a inventarse el resultado que no se pudo obtener. **R1 manda sobre R5**: si una vía queda bloqueada, se dice que quedó bloqueada y con qué motivo exacto;
+- no autoriza a saltarse un permiso denegado por una vía torcida. Se busca la vía legítima más sencilla; si tampoco, se para y se explica qué permiso hace falta.
+
+Parar con las manos vacías solo vale si seguir sería inseguro, o si el resultado sería inútil en caso de equivocarse. En cualquier otro caso se entrega todo lo demás terminado y se dice, en una línea, qué falta y qué se necesita para cerrarlo.
+
+---
 
 ## Reglas de producto
 
@@ -25,9 +80,11 @@ Plataforma de esta fase: **solo Android**. No crees ni borres `ios/`.
 
 ## Reglas de trabajo (obligatorias, no negociables)
 
-Heredadas del CLAUDE.md de Valeria+ y adaptadas a Flutter. Allí nacieron de errores reales, cada uno con su coste. No son buenas prácticas genéricas: son lo que ya salió mal.
+**Son el desarrollo de las cinco de arriba, no una lista aparte.** Donde R1…R5 dicen qué, estas dicen cómo, y en caso de choque manda R1…R5. Heredadas del proyecto anterior de la casa —solo las reglas: ni sus incidencias, ni sus clientes, ni sus nombres de fichero, que R4 deja fuera— y adaptadas a Flutter. Nacieron de errores reales. No son buenas prácticas genéricas: son lo que ya salió mal.
 
-### 0. No afirmes nada que no hayas comprobado. Manda sobre todas las demás
+Su numeración se conserva —0, 0a, 0b, 1, 1b, 1c, 2…7— porque el código, los tests y `docs/` las citan por ese número.
+
+### 0. No afirmes nada que no hayas comprobado · desarrollo de R1
 
 | Puedes decir | Cuándo |
 | --- | --- |
@@ -43,11 +100,11 @@ Heredadas del CLAUDE.md de Valeria+ y adaptadas a Flutter. Allí nacieron de err
 
 **Si no lo has comprobado, dilo con esas palabras: «esto no lo he verificado».**
 
-Coste heredado: en Valeria+ se dijo «está hecho» tres veces sin haber mirado, y la tercera la build ya estaba distribuida a testers de todo el mundo.
+Coste heredado: se dijo «está hecho» tres veces sin haber mirado, y a la tercera la build ya estaba distribuida.
 
 Coste propio: este proyecto llegó a declarar «1443/1443 · CERTIFIED READY FOR PRODUCTION» mientras la app no compilaba. El certificador leía los `.dart` y comprobaba que contuvieran `import flutter_test`.
 
-### 0a. No actúes sin autorización
+### 0a. No actúes sin autorización · límite de R5
 
 **No hagas nada que Frank no haya pedido.** Decide él. Si ves algo que convendría cambiar, **no lo cambies: díselo en una frase y espera.** Estas tres cosas no son un sí:
 
@@ -57,7 +114,25 @@ Coste propio: este proyecto llegó a declarar «1443/1443 · CERTIFIED READY FOR
 
 «Revisa y mejora» no es permiso para cambiar. Se ejecuta así: informe, Frank elige lotes, se aplica solo el lote elegido.
 
-Coste heredado: en Valeria+ un trabajo pedido para el galego tocó también un formulario que nadie mandó tocar. Frank publicó sin saberlo, y la app llegó a producción con ese formulario bloqueado.
+Coste heredado: un trabajo pedido para el galego tocó también un formulario que nadie mandó tocar, y el cambio salió publicado sin que nadie lo hubiera aprobado.
+
+### 0b. Este repositorio es PÚBLICO · desarrollo de R4
+
+Lo escrito aquí lo lee cualquiera: una familia, una escuela, el Concello, un evaluador de convocatoria. **El README describe el producto. No lleva contabilidad interna del proyecto.**
+
+Fuera del README, sin excepción:
+
+- **fechas y motivos de rechazos de tienda**, y cualquier historia de versiones rechazadas;
+- **el estado de las claves de firma**: si están dadas de alta, con cuál y desde cuándo. Los nombres de los secrets viven donde se usan, en el workflow, y ahí se quedan;
+- **incidencias de otros productos de la casa**, sus nombres de fichero internos y sus capturas;
+- **contabilidad interna de QA**: qué no se ha visto en un aparato, qué gate estuvo roto durante meses, qué activo lo dibujó alguien que no es ilustrador, qué revisión legal está pendiente;
+- **números de run, tamaños de artefacto y `versionCode`** como si fueran el estado del producto.
+
+Nada de esto desaparece: **va a `STATUS.md`**, que es el fichero cuya regla es que cada línea diga con qué se comprobó. Y una advertencia real para quien usa la app —«estas imágenes no son fotos de un móvil»— no es contabilidad interna: esa se queda.
+
+La prueba antes de escribir una línea en el README: *si esto lo lee el Concello o una familia, ¿les sirve, o solo cuenta cómo va la obra por dentro?* Si es lo segundo, va a `STATUS.md`.
+
+Coste propio: el README llegó a llevar un dato de operación de tienda que este mismo fichero ya prohibía tres líneas más arriba. Lo escribió Claude Code. Que la regla estuviera escrita no bastó, porque estaba en una cita suelta y no en una regla numerada; por eso ahora lo es.
 
 ### 1. No digas que una pantalla está hecha sin haberla mirado
 
@@ -72,7 +147,7 @@ Las dos lenguas no miden lo mismo: una pantalla correcta en castellano puede cor
 
 ### 1b. «Hecho» exige los gates, no solo analyze
 
-Los gates se sacan **del script o del workflow de CI** (`tools/gates.sh` o `.github/workflows/`), nunca de una lista escrita aquí. En Valeria+ la lista del CLAUDE.md se quedó atrás respecto al workflow y una build murió en un gate que no figuraba en ella.
+Los gates se sacan **del script o del workflow de CI** (`tools/gates.sh` o `.github/workflows/`), nunca de una lista escrita aquí. Una lista escrita a mano se queda atrás respecto al workflow, y entonces una build muere en un gate que no figuraba en ella.
 
 Si todavía no existe ni script ni CI, díselo a Frank. Hasta entonces, el mínimo es:
 
@@ -125,9 +200,9 @@ Nada de emoji del sistema como iconografía: cambian entre fabricantes y nunca f
 
 ### 5b. La mascota es Lúa, la gata
 
-- Es el mismo personaje que en Valeria+. Allí el sprite vive como rejilla de caracteres en `src/ValeriaCatPixel.tsx` del repositorio Valeria, y de esa rejilla salen icono, icono adaptativo y splash.
+- Es el mismo personaje que en el proyecto anterior de la casa, donde el sprite vive como rejilla de caracteres y de ella salen icono, icono adaptativo y splash.
 - Aquí se **porta la rejilla**, no se redibuja a ojo. Vive en `assets/brand/lua_head.txt`, y de ahí salen icono, icono adaptativo y splash mediante `tools/build_launcher_icons.py`. Icono y splash deben salir de la misma fuente.
-- **El sistema de premios existe, pero premia al ADULTO.** Frank lo pidió así. Lo que NO se hereda de Valeria+ es el sujeto: allí los gana quien juega, que es la criatura; aquí el niño no toca la pantalla, así que premiar su «progreso» sería inventarse un dato que nadie ha medido. Hay dos recorridos separados: la docente por asambleas dirigidas, la familia por cápsulas leídas. Sigue sin heredarse el desfile ni el espejo con el periférico Lúa. Lúa aparece para la docente y la familia, nunca para captar la atención infantil.
+- **El sistema de premios existe, pero premia al ADULTO.** Frank lo pidió así. Lo que NO se hereda es el sujeto: allí los gana quien juega, que es la criatura; aquí el niño no toca la pantalla, así que premiar su «progreso» sería inventarse un dato que nadie ha medido. Hay dos recorridos separados: la docente por asambleas dirigidas, la familia por cápsulas leídas. Sigue sin heredarse el desfile ni el espejo con el periférico Lúa. Lúa aparece para la docente y la familia, nunca para captar la atención infantil.
 - Los premios viven en `lib/features/premios/` y su contenido —niveles e insignias— en `assets/content/premios/premios.json`, nunca escrito en los widgets.
 
 ### 6. Rediseñar, no parchear
@@ -140,7 +215,7 @@ Comenta solo lo que evita que alguien rompa algo (red, datos, finalidad educativ
 
 ## El pulso se ve, no se oye
 
-El metrónomo de la canción a pulso es **visual**, como en Valeria+. La razón no es estética: parte de las crianzas llevan audiófono o implante, y un metrónomo sonoro compite justo con la voz que tienen que seguir. El pulso se dibuja y el canal auditivo queda entero para la letra.
+El metrónomo de la canción a pulso es **visual**. La razón no es estética: parte de las crianzas llevan audiófono o implante, y un metrónomo sonoro compite justo con la voz que tienen que seguir. El pulso se dibuja y el canal auditivo queda entero para la letra.
 
 Los tiempos del compás salen de las marcas `*` de `letraConPulsos`, no de una configuración aparte: así el pulso no puede discrepar de lo que la docente está leyendo.
 
@@ -171,11 +246,11 @@ https://frankbetances.github.io/Descubre-con-lua/privacy.html   ← política de
 https://frankbetances.github.io/Descubre-con-lua/
 ```
 
-Son las que se declaran en Play Console. No reutilices las de Valeria+, que describen otra app.
+Son las que se declaran en Play Console. No reutilices las de ningún otro proyecto: describen otra app.
 
 Lo comprueban dos gates, y hacen falta los dos:
 
 - `tools/check_legal_urls.py --offline`, dentro de `tools/gates.sh`: que los ficheros existan en `docs/`, sean lo que dicen ser y lleven el correo de contacto.
 - `.github/workflows/legal-urls.yml`, **a diario y por calendario**: que las URLs respondan 200 de verdad.
 
-El segundo no es redundante. En Valeria+, el 19/8/2026 Google rechazó la ficha con «HTTP server is returning 404» con el fichero intacto y el último despliegue de Pages en verde: no se rompió el contenido, se apagó el sitio. Ese fallo es mudo —no hay run rojo ni push que lo delate— y solo aparece semanas después por boca de Google, con la publicación parada. Un despliegue correcto no demuestra que el sitio esté vivo; solo lo demuestra pedir la URL.
+El segundo no es redundante. Un sitio de Pages se puede apagar con el fichero intacto y el último despliegue en verde: no se rompe el contenido, se apaga el sitio, y la tienda rechaza la ficha con un «HTTP server is returning 404». Ese fallo es mudo —no hay run rojo ni push que lo delate— y solo aparece semanas después por boca de la tienda, con la publicación parada. Un despliegue correcto no demuestra que el sitio esté vivo; solo lo demuestra pedir la URL.

@@ -6,7 +6,7 @@ Adversarially challenge Milestone 3 Academy UI and Adult UX invariants in «Desc
 ## 🔒 My Identity
 - Archetype: teamwork_preview_challenger
 - Roles: critic, specialist (M3 Academy & Adult UX Challenger)
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m3_2/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_challenger_m3_2/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 3 (Academy UI & Adult UX)
 - Instance: 2 of 2

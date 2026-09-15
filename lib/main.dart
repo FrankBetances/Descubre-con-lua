@@ -113,7 +113,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
       theme: AppTheme.lightTheme,
       initialRoute: '/',
       routes: {
-        // La bienvenida es la primera pantalla, como en Valeria+. No guarda que
+        // La bienvenida es la primera pantalla, como en el proyecto anterior de la casa. No guarda que
         // ya la viste: esa marca sería un campo persistido más que declarar en
         // Play Console, y la app no guarda nada. Cuesta un toque por arranque.
         '/': (context) => WelcomeScreen(
@@ -162,13 +162,11 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
         '/guia-atencion': (context) => GuiaAtencionScreen(
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
-            ),
-        '/juega/backstage': (context) => BackstageAsambleaScreen(
-              repository: _repository,
               audioService: _audioService,
-              initialLanguage: _currentLanguage,
-              onLanguageChanged: _setLanguage,
             ),
+        // `/juega/backstage` NO va aquí: `routes` gana a `onGenerateRoute` y se
+        // come los `arguments`, así que el nivel elegido se perdía y la pantalla
+        // abría siempre en 4.º de Infantil. Vive solo en `onGenerateRoute`.
         '/academy/micro-rutina': (context) => MicroRutinaSetembroScreen(
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
@@ -413,6 +411,7 @@ class HomeScreen extends StatelessWidget {
                     builder: (context) => PremiosScreen(
                       repository: premios!,
                       currentLanguage: currentLanguage,
+                      contadores: calendario?.contadores,
                     ),
                   ),
                 ),
