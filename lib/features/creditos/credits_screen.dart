@@ -19,10 +19,10 @@ import '../../core/theme/app_theme.dart';
 /// Cada uno va con su NOMBRE EN TEXTO, y con logotipo solo si el fichero
 /// original está en `assets/brand/logos/`. Un logotipo institucional tiene
 /// normas de uso propias (proporciones, versiones, fondos permitidos) y usarlo
-/// mal es peor que no usarlo, así que no se redibuja ninguno a ojo: los huecos
-/// de StartTIC, la Zona Franca y el Concello están puestos y vacíos, y
-/// aparecen solos el día que se commiteen los ficheros. Ver el README de esa
-/// carpeta.
+/// mal es peor que no usarlo, así que no se redibuja ninguno a ojo. Hoy se
+/// pintan los de startTIC y la Zona Franca; el Concello de Vigo va sin
+/// logotipo por decisión de Frank, y su nombre sigue donde estaba. Ver el
+/// README de esa carpeta.
 ///
 /// Lo que sí está aquí es obligado: las voces neuronales y la tipografía llevan
 /// licencia, y citarlas no es cortesía.
@@ -240,10 +240,9 @@ class CreditsScreen extends StatelessWidget {
                           detail: _starticDesc.resolve(currentLanguage),
                         ),
                         const SizedBox(height: AppTheme.spaceMd),
-                        const LogoInstitucional(
-                          fichero: 'concello-vigo.png',
-                          alto: 48,
-                        ),
+                        // El Concello de Vigo va SOLO con su nombre: Frank
+                        // retiró su logotipo el 15/9/2026. El nombre no se
+                        // toca, que es lo que acredita la colaboración.
                         _Entry(
                           name: _cityHall.resolve(currentLanguage),
                           detail: _cityHallDesc.resolve(currentLanguage),

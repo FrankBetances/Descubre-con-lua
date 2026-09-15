@@ -111,11 +111,11 @@ concede al titular el derecho a incorporarla bajo esta misma licencia.
 
 ## 7. Marcas y logotipos ajenos
 
-Los logotipos institucionales que aparecen en los créditos —Concello de Vigo,
-Consorcio da Zona Franca de Vigo, programa startTIC— **son marcas de sus
-titulares y no se licencian aquí**. Su presencia acredita una colaboración; no
-implica que quien reciba esta licencia pueda usarlos. Ver
-`assets/brand/logos/README.md`.
+Los logotipos institucionales que aparecen en los créditos —Consorcio da Zona
+Franca de Vigo, programa startTIC— **son marcas de sus titulares y no se
+licencian aquí**. Su presencia acredita una colaboración; no implica que quien
+reciba esta licencia pueda usarlos. El Concello de Vigo consta por su nombre,
+sin logotipo. Ver `assets/brand/logos/README.md`.
 
 ## 8. Componentes de terceros
 

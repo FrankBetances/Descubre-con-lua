@@ -9,13 +9,38 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
-## Los logotipos, completos · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
+## El logotipo del Concello de Vigo, retirado · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
+
+Frank pidió eliminarlo. Se ha quitado la **marca gráfica** en las tres capas
+donde se pintaba, y se ha borrado el fichero del repositorio.
+
+| Capa | Qué se hizo |
+| --- | --- |
+| Pantalla de créditos | Fuera el `LogoInstitucional` de `credits_screen.dart`. Comprobado con `docs/capturas/creditos-gl.png` y `creditos-es.png`, regeneradas y **miradas** |
+| Portada del manual | Fuera la `<figure>` de `docs/manual-casos-de-uso.html`. PDF y DOCX regenerados; página 1 **mirada** |
+| Cabecera del README | Fuera el `<img>`. La fila de marcas queda con startTIC y la Zona Franca |
+| `assets/brand/logos/concello-vigo.png` | Borrado con `git rm` |
+| `LICENSE.md` §7 | La cláusula enumeraba los logotipos «que aparecen en los créditos». Ya no aparece, así que sale de la lista |
+
+**El nombre no se ha tocado**, y es a propósito: sigue en los créditos
+(«Concello de Vigo» / «Ayuntamiento de Vigo», con «Escolas infantís
+municipais» debajo), en la línea de entidades de la cabecera del README y en el
+texto que dice para quién se hace la app. Lo guarda el test
+`test/features/bienvenida_creditos_test.dart`, que exige ese nombre en las dos
+lenguas: si alguien lo borrara, el gate se pone rojo.
+
+Lo que **no** se ha hecho, porque no se pidió: retirar el nombre de la entidad
+de ningún sitio.
+
+---
+
+## Los logotipos, completos · **en `main`, run de Gates #111 en verde** (15/9/2026)
 
 Frank creó la rama `logo` con los ficheros completos y pidió actualizarlos.
 
 | Fichero | Qué pasa con él |
 | --- | --- |
-| `concello-vigo.png` | **Vuelve.** El hueco ya estaba en `credits_screen.dart`; faltaba el fichero, así que `LogoInstitucional` no pintaba nada. Ahora se ve en créditos, manual y README |
+| `concello-vigo.png` | Entró con la rama `logo` y **se retiró el mismo día**, a petición de Frank. Ver la sección de arriba |
 | `zona-franca-vigo.png` | **Resuelto de verdad.** Pasa de 400 × 166 RGB —un recorte de captura de web— a 702 × 280 RGBA con margen propio. Medido: el canal alfa no toca ningún borde |
 | `dr-betances-crest` | De PNG para fondo oscuro a JPEG 1024 × 1024 con fondo turquesa propio. Se le retira la placa oscura de créditos, que ahora solo le pondría un marco negro |
 | `earlify-health.jpg` | De 47 KB a 335 KB. Sube a 76 px en créditos: a 56 se veía diminuto al lado del escudo |
@@ -211,7 +236,7 @@ que antes quedaban para CI.
 | **Nadie ha escuchado el inglés de LJSpeech** | Ningún gate dice si una frase de tres palabras suena bien para imitarla |
 | **El APK de release no se ha compilado aquí** | Sigue sin resolverse el Android Gradle Plugin en este contenedor. El permiso del binario y el tamaño salen de CI |
 | **El manual no documenta el calendario** | Los 17 casos de uso y las 14 imágenes del manual son los de antes. Las cuatro imágenes nuevas están en `docs/capturas/` pero el manual no las usa |
-| **El permiso de uso de los logotipos** | Concello de Vigo, Zona Franca y startTIC son marcas de terceros y en una ficha de Play sugieren respaldo institucional. Hace falta autorización escrita |
+| **El permiso de uso de los logotipos** | Zona Franca y startTIC son marcas de terceros y en una ficha de Play sugieren respaldo institucional. Hace falta autorización escrita. El del Concello de Vigo ya no se usa: se retiró el 15/9/2026 |
 
 ---
 

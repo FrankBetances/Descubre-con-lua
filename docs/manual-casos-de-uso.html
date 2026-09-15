@@ -135,19 +135,22 @@
                border-left: 3px solid #D9C89A; padding: 7px 10px;
                border-radius: 0 4px 4px 0; margin: 4px 0 14px; }
 
-    /* La fila de marcas de la portada. El escudo va sobre placa oscura porque
-       está dibujado para fondo oscuro: sobre blanco pierde el cuervo blanco y
-       el círculo, y queda medio escudo. */
+    /* La fila de marcas de la portada. Son CUATRO y tienen que caber en una
+       sola línea: con el hueco antiguo de 168px la última se iba sola al
+       renglón de abajo y quedaba huérfana. 4 x 148 + 3 x 22 = 658px, que entra
+       en el ancho útil del A4 con los márgenes de impresión. */
     .marcas { display: flex; justify-content: center; align-items: flex-start;
-              gap: 26px; flex-wrap: wrap; margin-top: 18px; }
+              gap: 22px; flex-wrap: wrap; margin-top: 18px; }
     /* `max-width` en la IMAGEN, no solo en el figure: un logotipo muy apaisado
        —startTIC es 5:1— se salía de su hueco a la altura fija y se montaba
        encima del de al lado. */
-    .marcas figure { margin: 0; text-align: center; width: 168px; }
+    .marcas figure { margin: 0; text-align: center; width: 148px; }
     .marcas img { max-height: 46px; max-width: 100%; width: auto; height: auto;
                   object-fit: contain; }
-    .marcas figure:first-child img { max-height: 58px; background: #0B1220;
-                                     border-radius: 10px; padding: 6px; }
+    /* El escudo ya NO lleva placa oscura. La llevaba cuando era un PNG
+       dibujado para fondo oscuro; el JPEG actual trae su propio fondo turquesa
+       sólido, así que la placa solo le añadía un marco negro alrededor. */
+    .marcas figure:first-child img { max-height: 58px; border-radius: 10px; }
     .marcas figcaption { font-size: 8.5pt; color: #64748B; margin-top: 6px;
                          line-height: 1.3; }
 </style>
@@ -183,10 +186,6 @@
     <figure>
       <img src="../assets/brand/logos/zona-franca-vigo.png" alt="Consorcio da Zona Franca de Vigo">
       <figcaption>Consorcio da Zona Franca de Vigo</figcaption>
-    </figure>
-    <figure>
-      <img src="../assets/brand/logos/concello-vigo.png" alt="Concello de Vigo">
-      <figcaption>Concello de Vigo</figcaption>
     </figure>
     <figure>
       <img src="../assets/brand/logos/earlify-health.jpg" alt="Earlify Health S.L.">
