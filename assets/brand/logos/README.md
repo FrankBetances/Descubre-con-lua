@@ -11,96 +11,49 @@ no el logotipo.
 
 ## Los ficheros
 
-| Fichero | Entidad | Dónde se pinta |
+Los cinco los trajo Frank en la rama `logo`, el 15/9/2026.
+
+| Fichero | Entidad | Formato y tamaño | Dónde se pinta |
+| --- | --- | --- | --- |
+| `dr-betances-crest.jpg` | Escudo del Dr. Betances | JPEG 1024 × 1024, fondo turquesa propio | Créditos · portada del manual · cabecera del README |
+| `earlify-health.jpg` | Earlify Health S.L. | JPEG 992 × 1024, fondo claro propio | Créditos, bajo el escudo · portada del manual · cabecera del README |
+| `startic.png` | Incubadora de Alta Tecnoloxía startTIC | PNG 510 × 102, RGBA | Créditos, «en colaboración con» · portada del manual · cabecera del README |
+| `zona-franca-vigo.png` | Consorcio da Zona Franca de Vigo | PNG 702 × 280, RGBA | Créditos, «en colaboración con» · portada del manual · cabecera del README |
+| `concello-vigo.png` | Concello de Vigo | PNG 600 × 207, RGBA | Créditos, bajo startTIC y Zona Franca · portada del manual · cabecera del README |
+
+La rama traía además `starttic.png`, con dos tes. **No se ha copiado**: es byte
+a byte el mismo fichero que `startic.png` —mismo SHA-256— y dos nombres para la
+misma imagen es una forma segura de que algún día se actualice solo uno.
+
+## Las alturas no son iguales, y es a propósito
+
+Las proporciones no se parecen: el escudo y Earlify son cuadrados, startTIC es
+5:1, la Zona Franca 2,5:1 y el Concello 2,9:1. Igualarlos por altura de caja
+hace que los apaisados se coman la pantalla y los cuadrados se vean diminutos.
+Se igualan por **peso óptico**: 72-76 px los cuadrados, 48 los apaisados medios
+y 32 el de startTIC, que es el más alargado.
+
+El escudo ya **no** va sobre placa oscura. La llevaba porque la versión anterior
+estaba dibujada para fondo oscuro y sobre la tarjeta clara se perdían el cuervo
+blanco y el círculo; la de la rama `logo` trae su propio fondo turquesa sólido,
+así que la placa solo le añadiría un marco negro.
+
+## Lo que mejoró, y lo que no · medido, no supuesto
+
+| Fichero | Antes | Ahora |
 | --- | --- | --- |
-| `dr-betances-crest.png` | Escudo del Dr. Betances | Créditos (sobre placa oscura) · portada del manual · cabecera del README |
-| `earlify-health.jpg` | Earlify Health S.L. | Créditos, bajo el escudo |
-| `startic.png` | Incubadora de Alta Tecnoloxía startTIC | Créditos, «con el apoyo de» · portada del manual · cabecera del README |
-| `zona-franca-vigo.png` | Consorcio da Zona Franca de Vigo | Créditos, «con el apoyo de» · portada del manual · cabecera del README |
+| `zona-franca-vigo.png` | 400 × 166 RGB. Venía de una captura de web y hubo que **recortarlo** a `(190, 10, 590, 176)` para tirar unos arcos ajenos | **Resuelto.** 702 × 280 RGBA y el canal alfa **no toca ningún borde**: tiene margen propio. Es una exportación limpia, no un recorte |
+| `concello-vigo.png` | No estaba: se había retirado | **Vuelve.** Se pinta en créditos, manual y README |
+| `dr-betances-crest` | PNG para fondo oscuro | JPEG 1024 × 1024 con fondo turquesa propio |
+| `earlify-health.jpg` | 47 KB | 335 KB, bastante más resolución |
+| `startic.png` | Recortado: el dibujo toca los bordes izquierdo, derecho e inferior | **Sigue igual.** El fichero de la rama `logo` es **byte a byte el mismo** que ya había: mismo SHA-256. El alfa sigue con contenido en `x=0`, `x=509` e `y=101` |
 
-## Dónde se ven, además de en la app
+Cómo se midió: se abre el PNG, se lee el canal alfa y se comprueba si hay algún
+píxel opaco en la primera y la última fila y columna. Si lo hay, el dibujo llega
+al borde y por tanto falta margen.
 
-Los tres —el escudo del Dr. Betances, startTIC y el Consorcio da Zona Franca—
-van también en la **portada del manual** (`docs/manual-casos-de-uso.html`, y por
-tanto en su PDF y su Word) y en la **cabecera del README**. El del Concello no:
-Frank pidió retirarlo.
-
-## Lo que sigue mal en dos de los ficheros
-
-Está medido, no es una impresión:
-
-| Fichero | Defecto | Cómo se midió |
-| --- | --- | --- |
-| `startic.png` | **Está recortado.** El dibujo toca los bordes izquierdo, derecho e inferior de la imagen: no hay margen, es un recorte de algo mayor | El canal alfa tiene contenido en `x=0`, `x=509` e `y=101`, que son los propios bordes |
-| `zona-franca-vigo.png` | **Venía de una captura de pantalla**, con un fondo gris degradado y unos arcos de otra web pegados a la izquierda | 55 colores distintos en la fila superior y 77 en la columna izquierda; una exportación limpia tendría uno |
-
-Lo que se ha hecho con el de la Zona Franca: **recortarlo** a la caja
-`(190, 10, 590, 176)` para tirar los arcos ajenos y el sobrante. **No se ha
-tocado un solo píxel del dibujo**: recortar lo que no es de la marca no es lo
-mismo que retocar la marca. El de startTIC no tiene arreglo por recorte —lo que
-falta, falta— y se queda como está.
-
-**Para dejarlos bien hace falta el fichero oficial de cada entidad**: PNG con
-fondo transparente, al menos 128 px de alto, con el nombre exacto de la tabla de
-arriba. Si solo hay SVG, se convierte a PNG a 3×.
-
-## El que se retiró, y por qué
-
-El hueco de cada uno **sigue en el código**: en cuanto vuelva el fichero con su
-nombre exacto, el logotipo reaparece sin tocar una línea. Mientras tanto el
-nombre de la entidad se sigue leyendo en texto, que es lo que acredita.
-
-| Fichero retirado | Entidad | Motivo |
-| --- | --- | --- |
-| `concello-vigo.png` | Concello de Vigo | **Retirado por orden de Frank.** |
-
-Un logotipo ajeno mal puesto —cortado, recortado de una web, con el fondo de
-otra página pegado— es peor que no ponerlo: acredita mal a quien intentas
-acreditar. Y no se arregla retocándolo, porque retocar la marca de un tercero
-es exactamente lo que no se puede hacer.
-
-**Para que vuelvan**: el fichero oficial de cada entidad, PNG con fondo
-transparente y al menos 128 px de alto, con su nombre exacto de la tabla. Si la
-entidad solo da SVG, se convierte a PNG a 3×.
-
-**Un fichero que no se pinta no se queda aquí.** `pubspec.yaml` empaqueta la
-carpeta entera, así que un logotipo sin hueco en los créditos viaja en el APK
-sin que nadie lo vea: había dos duplicados en `.jpg` del escudo y de la Zona
-Franca —el mismo dibujo que ya estaba en `.png`— y el de Earlify entró a 992 px
-y 335 KB para pintarse a 56 dp. Entre los tres, casi medio mega de APK que no
-se veía. Borrados los duplicados; el de Earlify, reempaquetado a 512 px (47 KB),
-que es la misma imagen, sin retocar.
-
-Los originales sin canal alfa (`earlify-health.jpg`, `zona-franca-vigo.png`)
-traen su propio fondo blanco. Sobre la tarjeta tintada de los créditos se
-apoyan en una placa blanca (`sobrePlaca: true`), que es la forma de colocar un
-logotipo ajeno sin tocarlo. **No se recorta el fondo a mano**: eso es retocar
-una marca de un tercero.
-
-Para añadir uno: dejarlo aquí con ese nombre exacto y declararlo en el hueco
-que ya existe en `lib/features/creditos/credits_screen.dart`. No hace falta
-tocar el código si el hueco ya está puesto: aparece solo.
-
-PNG con fondo transparente, alto mínimo 128 px. Si hay SVG oficial, mejor
-convertirlo a PNG a 3× (la app no lleva librería de SVG y meterla por tres
-imágenes no compensa).
-
-## El escudo del Dr. Betances va sobre placa oscura
-
-Está dibujado para fondo OSCURO: tiene un cuervo blanco y un círculo blanco.
-Sobre la tarjeta clara de los créditos esas dos piezas desaparecían y quedaba
-medio escudo —el cuervo negro suelto, sin círculo—. Ahora se apoya en una placa
-`AppTheme.dark`, que es la forma de colocarlo sin retocar el dibujo.
-
-## Pendiente de Frank, antes de publicar
-
-Ninguna la puede resolver el código:
-
-1. **Los ficheros oficiales** de startTIC y del Consorcio da Zona Franca, si se
-   quieren acreditar con logotipo y no solo con el nombre.
-2. **Los nombres oficiales exactos.** Los créditos dicen hoy «Programa StartTIC»
-   y «Zona Franca de Vigo». No están confirmados, y acreditar a una institución
-   con el nombre mal escrito es peor que no acreditarla.
-3. **El permiso de uso**, para cualquier marca de tercero que vuelva a ponerse:
-   en una ficha de Google Play un logotipo institucional sugiere respaldo, y eso
-   hace falta por escrito.
+**El de startTIC sigue pendiente.** Lo que falta, falta: no se arregla por
+recorte ni retocando la marca, que es justo lo que no se puede hacer con el
+logotipo de un tercero. Para cerrarlo hace falta **el fichero oficial de
+startTIC**: PNG con fondo transparente, al menos 128 px de alto y con margen,
+guardado con ese mismo nombre. En cuanto esté, la app lo pinta sin tocar código.
