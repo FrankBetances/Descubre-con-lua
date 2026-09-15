@@ -603,7 +603,8 @@ void main() {
           initialLanguage: lang,
           esDocenteInicial: false,
         ),
-        tamano: const Size(412, 1800),
+        // Un móvil de verdad, no un lienzo de 1800 px. El Calendario ya no es
+        // una página larga: cabe en una pantalla y el mes se pasa de lado.
       );
     });
 
@@ -622,7 +623,8 @@ void main() {
           initialLanguage: lang,
           esDocenteInicial: true,
         ),
-        tamano: const Size(412, 2000),
+        // Un móvil de verdad, no un lienzo de 2000 px: esa altura era la
+        // prueba de que la pantalla medía 2,2 pantallas de alto.
       );
     });
 

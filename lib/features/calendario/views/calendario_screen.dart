@@ -72,6 +72,19 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   int _mesSeleccionadoIndex = 0;
   CalendarioContenido? _contenido;
 
+  /// El mes se cambia deslizando la tarjeta de lado, no bajando por la
+  /// pantalla. Antes el mes se elegía de tres maneras apiladas en una sola
+  /// página —una tira de tarjetas de 160 px, las pastillas y la ficha de
+  /// abajo—, y la pantalla medía 2,2 pantallas de alto. Ahora hay una tarjeta
+  /// por mes y se pasa como una página.
+  PageController? _paginas;
+
+  /// Una clave por pastilla de mes, para poder arrastrar la tira hasta la del
+  /// mes abierto. Sin esto, al deslizar hasta xuño la pastilla de xuño se
+  /// quedaba fuera de la tira y la fila seguía enseñando setembro marcado en
+  /// ningún sitio.
+  final List<GlobalKey> _clavesPastilla = [];
+
   /// Lo que impidió leer el contenido, si pasó. Con esto la pantalla enseña
   /// una avería en vez de un disco girando.
   String? _fallo;
@@ -156,11 +169,6 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     es: 'Círculo en la alfombra · Móvil solo para la docente · Pulso a 72 BPM y juego sensoriomotriz.',
   );
 
-  static const _porQueImportaTitulo = LocalizedString(
-    gl: 'Por que importa no desenvolvemento:',
-    es: 'Por qué importa en el desarrollo:',
-  );
-
   static const _enPreparacion = LocalizedString(
     gl: 'A unidade de aula deste mes aínda non está escrita. Cando estea, o '
         'botón de iniciar a asemblea aparece aquí só.',
@@ -212,6 +220,28 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   void _situarEnElMesDeHoy() {
     final indice = _contenido?.indiceParaFecha(DateTime.now()) ?? 0;
     _mesSeleccionadoIndex = indice < 0 ? 0 : indice;
+    // El controlador se crea AQUI y no en `initState`: hasta que el contenido
+    // no esta leido no se sabe por que mes hay que abrir, y `initialPage` solo
+    // se lee al construirlo. Mientras `_meses` esta vacio la pantalla ensena
+    // el indicador de carga, asi que el `PageView` todavia no existe.
+    _clavesPastilla
+      ..clear()
+      ..addAll(List.generate(_meses.length, (_) => GlobalKey()));
+    _paginas?.dispose();
+    _paginas = PageController(
+      initialPage: _mesSeleccionadoIndex,
+      // Una página entera por mes, sin dejar asomar la siguiente. Asomando
+      // —`viewportFraction` por debajo de 1— el mes vecino SE CONSTRUYE: había
+      // dos botones «Iniciar asemblea» y dos «Rexistrar» a la vez en la
+      // pantalla, uno de ellos del mes de al lado y tocable por el canto. Quien
+      // quiera saltar a un mes lejano tiene las pastillas justo encima.
+    );
+  }
+
+  @override
+  void dispose() {
+    _paginas?.dispose();
+    super.dispose();
   }
 
   void _onToggleLanguage(AppLanguage newLang) {
@@ -293,8 +323,6 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         body: const Center(child: CircularProgressIndicator()),
       );
     }
-    final mes = _meses[_mesSeleccionadoIndex];
-
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: AppBar(
@@ -331,27 +359,50 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             // la asamblea, se guardaba bien en disco, y el cartel seguía
             // diciendo «aínda non hai nada» hasta salir y volver a entrar.
             final estadoHoy = widget.store.estadoParaFecha(DateTime.now());
-            return SingleChildScrollView(
-              padding: const EdgeInsets.all(AppTheme.spaceLg),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  _buildHeader(theme),
-                  const SizedBox(height: AppTheme.spaceMd),
-                  _buildDobleEstimulacionCard(estadoHoy, theme),
-                  const SizedBox(height: AppTheme.spaceLg),
-                  _buildTarjetasVisuales(theme),
-                  const SizedBox(height: AppTheme.spaceMd),
-                  _buildMonthSelector(theme),
-                  const SizedBox(height: AppTheme.spaceLg),
-                  _buildRoleSwitcher(theme),
-                  const SizedBox(height: AppTheme.spaceLg),
-                  _buildMonthDetailCard(mes, theme),
-                  const SizedBox(height: AppTheme.spaceLg),
-                  _buildActionButtons(mes, estadoHoy, theme),
-                  const SizedBox(height: AppTheme.spaceXl),
-                ],
-              ),
+            return LayoutBuilder(
+              builder: (context, restricciones) {
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    // Lo de arriba NO se desplaza con los meses: es el marco de
+                    // la pantalla, igual que en «Juega con Lúa · Aula», donde
+                    // las pestañas de ciclo y los filtros se quedan fijos y
+                    // solo corre la lista.
+                    //
+                    // El techo del 55 % no es decorativo: a escala de texto 1,8
+                    // el marco crecía más que la pantalla y desbordaba 418 px en
+                    // gallego y 458 en castellano. Con techo, ahí se desplaza él
+                    // solo. A escala normal no llega al techo y no se mueve.
+                    ConstrainedBox(
+                      constraints: BoxConstraints(
+                        maxHeight: restricciones.maxHeight * 0.55,
+                      ),
+                      child: SingleChildScrollView(
+                        padding: const EdgeInsets.fromLTRB(
+                          AppTheme.spaceLg,
+                          AppTheme.spaceLg,
+                          AppTheme.spaceLg,
+                          0,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            _buildHeader(theme),
+                            const SizedBox(height: AppTheme.spaceMd),
+                            _buildDobleEstimulacionCard(estadoHoy, theme),
+                            const SizedBox(height: AppTheme.spaceMd),
+                            _buildRoleSwitcher(theme),
+                            const SizedBox(height: AppTheme.spaceMd),
+                            _buildMonthSelector(theme),
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: AppTheme.spaceSm),
+                    Expanded(child: _buildPaginasDeMes(estadoHoy, theme)),
+                  ],
+                );
+              },
             );
           },
         ),
@@ -374,118 +425,90 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     );
   }
 
-  /// Carrusel horizontal de tarjetas visuales curriculares (10 meses).
+  /// Una tarjeta por mes, y el mes se cambia deslizando de lado.
   ///
-  /// Muestra la [TarjetaMesCurricular] con ilustración vectorial del mes
-  /// seleccionado expandida y las demás en miniatura. Bajo la tarjeta activa
-  /// aparece el [DetalleSesionPanel] con la actividad contextualizada.
-  Widget _buildTarjetasVisuales(ThemeData theme) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Kicker de sección
-        Padding(
-          padding: const EdgeInsets.only(bottom: 10),
-          child: Row(
-            children: [
-              Container(
-                width: 4,
-                height: 18,
-                decoration: BoxDecoration(
-                  color: const Color(0xFF00838F),
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  _language == AppLanguage.gl
-                      ? 'TARXETAS CURRICULARES · 10 MESES'
-                      : 'TARJETAS CURRICULARES · 10 MESES',
-                  style: const TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w800,
-                    color: Color(0xFF00838F),
-                    letterSpacing: 1.2,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-        // Carrusel horizontal de tarjetas
-        SizedBox(
-          height: 232,
-          child: ListView.separated(
-            scrollDirection: Axis.horizontal,
-            padding: const EdgeInsets.symmetric(vertical: 4),
-            itemCount: _meses.length,
-            separatorBuilder: (_, __) => const SizedBox(width: 12),
-            itemBuilder: (context, index) {
-              final mesItem = _meses[index];
-              final isSelected = index == _mesSeleccionadoIndex;
-              // El año del curso: de septiembre a diciembre es el año en
-              // curso; de enero a junio, el siguiente. Preguntar siempre por
-              // el año natural de hoy dejaba enero a junio mirando un curso
-              // que aún no había empezado.
-              final hoy = DateTime.now();
-              final anhoDoMes = mesItem.mesCalendario >= 9
-                  ? (hoy.month >= 9 ? hoy.year : hoy.year - 1)
-                  : (hoy.month >= 9 ? hoy.year + 1 : hoy.year);
-              final estado =
-                  widget.store.estadoParaMes(anhoDoMes, mesItem.mesCalendario);
+  /// Esto es lo que Frank pidió y lo que la pantalla no hacía. Había una tira
+  /// horizontal de tarjetas de 160 px metida dentro de una página que medía
+  /// 2,2 pantallas de alto, y el mismo mes salía tres veces: en la tira, en
+  /// las pastillas y en la ficha de abajo. El [DetalleSesionPanel] que colgaba
+  /// de la tira repetía, palabra por palabra, la actividad que ya estaba en la
+  /// ficha. Ahora cada mes es una página entera y lo que se desplaza es la
+  /// tarjeta.
+  Widget _buildPaginasDeMes(EstadoEstimulacion estadoHoy, ThemeData theme) {
+    final paginas = _paginas;
+    // Sin controlador no hay páginas: pasa solo mientras el contenido se lee,
+    // y en ese rato la pantalla ya está enseñando el indicador de carga.
+    if (paginas == null) return const SizedBox.shrink();
+    return PageView.builder(
+      key: const Key('paginas_meses'),
+      controller: paginas,
+      itemCount: _meses.length,
+      onPageChanged: (index) {
+        setState(() => _mesSeleccionadoIndex = index);
+        _traerPastillaALaVista(index);
+      },
+      itemBuilder: (context, index) => _buildPaginaMes(index, estadoHoy, theme),
+    );
+  }
 
-              return SizedBox(
-                width: isSelected ? 220 : 160,
-                child: TarjetaMesCurricular(
-                  lang: _language,
-                  mes: mesItem,
-                  estado: estado,
-                  esDocente: _esDocente,
-                  isSelected: isSelected,
-                  onTap: () {
-                    setState(() => _mesSeleccionadoIndex = index);
-                  },
-                ),
-              );
-            },
-          ),
-        ),
-        // Panel de detalle contextualizado bajo la tarjeta activa
-        const SizedBox(height: 8),
-        AnimatedSwitcher(
-          duration: const Duration(milliseconds: 220),
-          transitionBuilder: (child, anim) => FadeTransition(
-            opacity: anim,
-            child: SlideTransition(
-              position: Tween<Offset>(
-                begin: const Offset(0, 0.06),
-                end: Offset.zero,
-              ).animate(anim),
-              child: child,
+  /// Arrastra la tira de pastillas hasta que se vea la del mes abierto.
+  ///
+  /// Va en el fotograma siguiente porque durante el `setState` la pastilla
+  /// nueva todavía no está montada y su contexto aún no existe.
+  void _traerPastillaALaVista(int index) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || index >= _clavesPastilla.length) return;
+      final contexto = _clavesPastilla[index].currentContext;
+      if (contexto == null) return;
+      Scrollable.ensureVisible(
+        contexto,
+        duration: const Duration(milliseconds: 260),
+        curve: Curves.easeOutCubic,
+        alignment: 0.5,
+      );
+    });
+  }
+
+  Widget _buildPaginaMes(
+      int index, EstadoEstimulacion estadoHoy, ThemeData theme) {
+    final mesItem = _meses[index];
+    // El año del curso: de septiembre a diciembre es el año en curso; de enero
+    // a junio, el siguiente. Preguntar siempre por el año natural de hoy
+    // dejaba enero a junio mirando un curso que aún no había empezado.
+    final hoy = DateTime.now();
+    final anhoDoMes = mesItem.mesCalendario >= 9
+        ? (hoy.month >= 9 ? hoy.year : hoy.year - 1)
+        : (hoy.month >= 9 ? hoy.year + 1 : hoy.year);
+    final estado = widget.store.estadoParaMes(anhoDoMes, mesItem.mesCalendario);
+
+    return SingleChildScrollView(
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppTheme.spaceSm,
+        vertical: AppTheme.spaceSm,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          // Altura acotada a propósito: la tarjeta recorta el centro de
+          // interés con un `Flexible`, y un `Flexible` dentro de una columna
+          // de altura libre —que es lo que hay dentro de un scroll— revienta.
+          SizedBox(
+            height: 170,
+            child: TarjetaMesCurricular(
+              lang: _language,
+              mes: mesItem,
+              estado: estado,
+              esDocente: _esDocente,
+              isSelected: true,
             ),
           ),
-          child: DetalleSesionPanel(
-            key: ValueKey('panel_$_mesSeleccionadoIndex'),
-            lang: _language,
-            audioService: widget.audioService,
-            mes: _meses[_mesSeleccionadoIndex],
-            esDocente: _esDocente,
-            acento: const [
-              Color(0xFF00BFA5),
-              Color(0xFFFF7043),
-              Color(0xFFFF8F00),
-              Color(0xFF1E88E5),
-              Color(0xFF5C6BC0),
-              Color(0xFFEF5350),
-              Color(0xFF43A047),
-              Color(0xFFF48FB1),
-              Color(0xFF29B6F6),
-              Color(0xFF00838F),
-            ][_mesSeleccionadoIndex],
-          ),
-        ),
-      ],
+          const SizedBox(height: AppTheme.spaceMd),
+          _buildMonthDetailCard(mesItem, theme),
+          const SizedBox(height: AppTheme.spaceLg),
+          _buildActionButtons(mesItem, estadoHoy, theme),
+          const SizedBox(height: AppTheme.spaceXl),
+        ],
+      ),
     );
   }
 
@@ -601,14 +624,22 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           final isSelected = index == _mesSeleccionadoIndex;
 
           return ChoiceChip(
+            key: _clavesPastilla[index],
             label: Text(mesItem.nombreMes.resolve(_language)),
             selected: isSelected,
             onSelected: (selected) {
-              if (selected) {
-                setState(() {
-                  _mesSeleccionadoIndex = index;
-                });
-              }
+              if (!selected) return;
+              // Las pastillas son el atajo para saltar a un mes lejano; el
+              // gesto normal es deslizar la tarjeta. Mueven LA PÁGINA, no un
+              // estado aparte: si cada una llevara su cuenta, la pastilla y la
+              // tarjeta acabarían enseñando meses distintos.
+              _paginas?.animateToPage(
+                index,
+                duration: const Duration(milliseconds: 260),
+                curve: Curves.easeOutCubic,
+              );
+              setState(() => _mesSeleccionadoIndex = index);
+              _traerPastillaALaVista(index);
             },
             selectedColor: AppTheme.primary,
             backgroundColor: Colors.white,
@@ -628,113 +659,96 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     );
   }
 
+  /// El conmutador Aula/Fogar, con el mismo patrón que las pestañas de ciclo
+  /// de «Juega con Lúa · Aula»: carril gris y pastilla levantada encima. Antes
+  /// era una caja blanca con borde y relleno turquesa, que no se parecía a
+  /// ningún otro conmutador de la app.
   Widget _buildRoleSwitcher(ThemeData theme) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(AppTheme.radiusField),
-        border: Border.all(color: AppTheme.border),
+        color: const Color(0xFFE2E8F0),
+        borderRadius: BorderRadius.circular(AppTheme.radiusButton),
       ),
+      padding: const EdgeInsets.all(4),
       child: Row(
         children: [
           Expanded(
-            child: InkWell(
-              key: const Key('tab_rol_docente'),
+            child: _buildRolePill(
+              clave: const Key('tab_rol_docente'),
+              icono: Icons.school_rounded,
+              texto: _rolDocente.resolve(_language),
+              activo: _esDocente,
               onTap: () => setState(() => _esDocente = true),
-              borderRadius: const BorderRadius.horizontal(
-                left: Radius.circular(AppTheme.radiusField),
-              ),
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                decoration: BoxDecoration(
-                  color:
-                      _esDocente ? AppTheme.primaryLight : Colors.transparent,
-                  borderRadius: const BorderRadius.horizontal(
-                    left: Radius.circular(AppTheme.radiusField),
-                  ),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.school_rounded,
-                      size: 20,
-                      color:
-                          _esDocente ? AppTheme.primaryInk : AppTheme.textMuted,
-                    ),
-                    const SizedBox(width: 8),
-                    // Flexible: «Fogar (Familias)» con su icono no cabe en
-                    // media pantalla estrecha, ni en gallego ni con el texto
-                    // grande del sistema. Desbordaba 5 px.
-                    Flexible(
-                      child: Text(
-                        _rolDocente.resolve(_language),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontWeight:
-                              _esDocente ? FontWeight.bold : FontWeight.normal,
-                          color: _esDocente
-                              ? AppTheme.primaryInk
-                              : AppTheme.textSecondary,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
             ),
           ),
+          const SizedBox(width: 4),
           Expanded(
-            child: InkWell(
-              key: const Key('tab_rol_familia'),
+            child: _buildRolePill(
+              clave: const Key('tab_rol_familia'),
+              icono: Icons.home_rounded,
+              texto: _rolFamilia.resolve(_language),
+              activo: !_esDocente,
               onTap: () => setState(() => _esDocente = false),
-              borderRadius: const BorderRadius.horizontal(
-                right: Radius.circular(AppTheme.radiusField),
-              ),
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                decoration: BoxDecoration(
-                  color:
-                      !_esDocente ? AppTheme.primaryLight : Colors.transparent,
-                  borderRadius: const BorderRadius.horizontal(
-                    right: Radius.circular(AppTheme.radiusField),
-                  ),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.home_rounded,
-                      size: 20,
-                      color: !_esDocente
-                          ? AppTheme.primaryInk
-                          : AppTheme.textMuted,
-                    ),
-                    const SizedBox(width: 8),
-                    // Flexible: «Fogar (Familias)» con su icono no cabe en
-                    // media pantalla estrecha, ni en gallego ni con el texto
-                    // grande del sistema. Desbordaba 5 px.
-                    Flexible(
-                      child: Text(
-                        _rolFamilia.resolve(_language),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontWeight:
-                              !_esDocente ? FontWeight.bold : FontWeight.normal,
-                          color: !_esDocente
-                              ? AppTheme.primaryInk
-                              : AppTheme.textSecondary,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildRolePill({
+    required Key clave,
+    required IconData icono,
+    required String texto,
+    required bool activo,
+    required VoidCallback onTap,
+  }) {
+    return InkWell(
+      key: clave,
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(AppTheme.radiusField),
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        decoration: BoxDecoration(
+          color: activo ? AppTheme.card : Colors.transparent,
+          borderRadius: BorderRadius.circular(AppTheme.radiusField),
+          boxShadow: activo
+              ? const [
+                  BoxShadow(
+                    color: Color(0x1A000000),
+                    blurRadius: 4,
+                    offset: Offset(0, 2),
+                  )
+                ]
+              : null,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              icono,
+              size: 20,
+              color: activo ? AppTheme.primaryInk : AppTheme.textMuted,
+            ),
+            const SizedBox(width: 8),
+            // Flexible: «Fogar (Familias)» con su icono no cabe en media
+            // pantalla estrecha, ni en gallego ni con el texto grande del
+            // sistema. Desbordaba 5 px.
+            Flexible(
+              child: Text(
+                texto,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontFamily: AppTheme.fontFamily,
+                  fontSize: 14.5,
+                  fontWeight: activo ? FontWeight.w800 : FontWeight.w600,
+                  color: activo ? AppTheme.primaryInk : AppTheme.textSecondary,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -752,8 +766,12 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Cabecera del mes
+            // Aquí NO se repiten el nombre del mes ni el centro de interés:
+            // están en la tarjeta que hay justo encima, en la misma página.
+            // Salían dos veces con 210 px de por medio, que es la misma
+            // duplicación que hacía larga esta pantalla.
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CircleAvatar(
                   backgroundColor: AppTheme.primaryLight,
@@ -763,36 +781,15 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 ),
                 const SizedBox(width: AppTheme.spaceMd),
                 Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        mes.nombreMes.resolve(_language).toUpperCase(),
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          color: AppTheme.primaryDark,
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: 1.2,
-                        ),
-                      ),
-                      Text(
-                        mes.centroInteres.resolve(_language),
-                        style: theme.textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: AppTheme.textPrimary,
-                        ),
-                      ),
-                    ],
+                  child: Text(
+                    mes.objetivoPedagogico.resolve(_language),
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: AppTheme.textSecondary,
+                      height: 1.4,
+                    ),
                   ),
                 ),
               ],
-            ),
-            const SizedBox(height: AppTheme.spaceMd),
-            Text(
-              mes.objetivoPedagogico.resolve(_language),
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: AppTheme.textSecondary,
-                height: 1.4,
-              ),
             ),
             const Divider(height: 32),
 
@@ -889,47 +886,10 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 esDocente: false,
                 language: _language,
               ),
-              const SizedBox(height: 12),
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFFFFDF5),
-                  borderRadius: BorderRadius.circular(AppTheme.radiusField),
-                  border: Border.all(
-                      color: const Color(0xFFD97706).withValues(alpha: 0.25)),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        const Icon(Icons.lightbulb_outline_rounded,
-                            size: 18, color: Color(0xFFD97706)),
-                        const SizedBox(width: 6),
-                        Expanded(
-                          child: Text(
-                            _porQueImportaTitulo.resolve(_language),
-                            style: const TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFFD97706),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      mes.objetivoPedagogico.resolve(_language),
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: AppTheme.textSecondary,
-                        height: 1.3,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              // Aquí iba «Por que importa no desenvolvemento» con el objetivo
+              // pedagógico dentro. Es EL MISMO TEXTO que abre esta ficha, dos
+              // veces en la misma tarjeta. Se veía menos cuando había 400 px
+              // de por medio; no por eso dejaba de estar duplicado.
               const SizedBox(height: 12),
               _buildRoleSection(
                 kicker: _hogarKicker.resolve(_language),

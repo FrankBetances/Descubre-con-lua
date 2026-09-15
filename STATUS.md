@@ -9,6 +9,48 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## El Calendario, rehecho: tarjetas que se pasan de lado · **en la rama `claude/analizar-rama-mejora-g5yh9z`** (15/9/2026)
+
+Frank había pedido tres cosas para esta pantalla —la interfaz del primer ciclo,
+el calendario como en el otro lado y tarjetas de desplazamiento lateral— y
+estaban sin hacer. La pantalla seguía siendo la que generó Antigravity.
+
+**Lo que había, medido**: el golden se renderizaba en una pantalla falsa de
+412×2000 px lógicos cuando un móvil real tiene ~915. Eran 2,2 pantallas de
+desplazamiento vertical, con el mismo mes representado tres veces —la tira de
+tarjetas de 160 px, las pastillas y la ficha de abajo—.
+
+| Capa | Qué se hizo | Con qué se comprobó |
+| --- | --- | --- |
+| `calendario_screen.dart` | Fuera el carrusel de 160 px. Una `PageView` con una tarjeta por mes; el mes se cambia deslizando de lado | `calendario_test.dart`, test nuevo «o mes cámbiase deslizando a tarxeta de lado» |
+| Marco de la pantalla | Subtítulo, cartel de hoy, conmutador de rol y pastillas quedan fijos arriba, como las pestañas de ciclo de «Juega con Lúa · Aula». El resto se desplaza | Capturas de las cuatro pantallas, **miradas** |
+| Conmutador Aula/Fogar | Repintado con el patrón del primer ciclo: carril gris y pastilla levantada | `docs/capturas/calendario-gl.png`, **mirada** |
+| Duplicados | Fuera `DetalleSesionPanel` (repetía la actividad palabra por palabra) y fuera el bloque «Por que importa no desenvolvemento» (repetía el objetivo pedagógico dentro de la misma tarjeta) | `flutter analyze` limpio; −132 líneas netas |
+| Tira de pastillas | Se arrastra sola hasta la pastilla del mes abierto | Test nuevo «a pastilla do mes aberto non se queda fóra da tira». **Verificado que falla sin el arreglo**: sin él la pastilla de febreiro ni se construye |
+| Capturas | Las cuatro pasan de lienzos de 1800/2000 px a un móvil de 412×915 | Regeneradas y **miradas** en gallego y castellano, lado aula y lado familia |
+| Manual y README | El paso 2 del caso de uso dice ahora cómo se cambia de mes; el README lo dice en la línea del Calendario | PDF y DOCX regenerados; `tools/check_manual_build.py` en verde |
+
+**Dos defectos propios encontrados al revisar, y corregidos:**
+
+- Con `viewportFraction: 0.92` —el trozo de la tarjeta siguiente asomando— la
+  página vecina **se construye**: había dos botones «Iniciar asemblea» y dos
+  «Rexistrar» a la vez, uno de ellos de otro mes y tocable por el canto. Se
+  pasó a página entera. Lo cazaron seis tests que pedían `findsOneWidget`.
+- Con el marco fijo arriba, a escala de texto 1,8 desbordaba **418 px en
+  gallego y 458 en castellano**. El marco tiene ahora un techo del 55 % de la
+  pantalla y se desplaza dentro de él. `calendario_escala_test.dart` en verde.
+
+**Esto no se ha visto en un aparato.** Es un cambio de disposición, que es
+justo la familia de defectos que la regla 1c dice que no se ve en un test:
+insets reales, densidades y escala de texto del sistema. Sigue sin mergearse a
+`main` a la espera de que Frank lo mire.
+
+**Decisión pendiente de Frank**: la tarjeta del mes siguiente no asoma por el
+canto. Asomando se ve mejor que la tarjeta se desliza, pero vuelve a construir
+la página vecina con sus botones tocables. Se eligió lo seguro.
+
+---
+
 ## El logotipo del Concello de Vigo, retirado · **en `main`** (15/9/2026)
 
 Frank pidió eliminarlo. Se ha quitado la **marca gráfica** en las tres capas

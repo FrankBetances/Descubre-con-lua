@@ -2,7 +2,6 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
-import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/calendario_model.dart';
@@ -801,102 +800,6 @@ class _PieDuracion extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-        ],
-      ),
-    );
-  }
-}
-
-// ─── Widget de detalle de sesión (expandido al tocar la tarjeta) ──────────────
-
-/// Panel expandido con la actividad de aula o de hogar del mes elegido.
-///
-/// El inglés NO se repite aquí: vive en la ficha del mes, más abajo en la misma
-/// pantalla, con su rótulo y su pronunciación. Estaba en los dos sitios, y la
-/// misma lista de palabras salía dos veces en una sola pantalla.
-class DetalleSesionPanel extends StatelessWidget {
-  final MesCurricular mes;
-  final bool esDocente;
-  final Color acento;
-
-  /// La lengua de la pantalla, la que eligió la persona adulta. Antes salía de
-  /// `Localizations.localeOf`, que no es el selector de la app: el panel podía
-  /// quedarse en una lengua mientras el resto cambiaba a la otra.
-  final AppLanguage lang;
-
-  final OfflineAudioService? audioService;
-
-  const DetalleSesionPanel({
-    super.key,
-    required this.mes,
-    required this.esDocente,
-    required this.acento,
-    this.lang = AppLanguage.gl,
-    this.audioService,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final actividad = esDocente
-        ? mes.actividadAula.resolve(lang)
-        : mes.actividadHogar.resolve(lang);
-    final rutina = mes.rutinaRecomendadaHogar.resolve(lang);
-
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-      padding: const EdgeInsets.all(14),
-      decoration: BoxDecoration(
-        color: acento.withAlpha(10),
-        borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-        border: Border.all(color: acento.withAlpha(40)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Actividad principal
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Icon(
-                esDocente ? Icons.school_rounded : Icons.home_rounded,
-                color: acento,
-                size: 18,
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  actividad,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w500,
-                    color: AppTheme.textPrimary,
-                    height: 1.45,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          // Rutina recomendada (solo hogar)
-          if (!esDocente) ...[
-            const SizedBox(height: 8),
-            Row(
-              children: [
-                const Icon(Icons.schedule_rounded,
-                    size: 13, color: AppTheme.textMuted),
-                const SizedBox(width: 5),
-                Expanded(
-                  child: Text(
-                    rutina,
-                    style: const TextStyle(
-                      fontSize: 12,
-                      color: AppTheme.textMuted,
-                      fontStyle: FontStyle.italic,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
         ],
       ),
     );
