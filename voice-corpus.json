@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-09-15T13:35:48Z",
- "entries": 1824,
+ "generatedAt": "2026-09-15T21:07:25Z",
+ "entries": 2125,
  "byStyle": {
-  "slow": 186,
-  "tutor": 1638
+  "slow": 188,
+  "tutor": 1937
  },
  "byLang": {
-  "en": 238,
-  "es": 793,
-  "gl": 793
+  "en": 281,
+  "es": 922,
+  "gl": 922
  },
  "corpus": [
   {
@@ -468,6 +468,14 @@
    "source": "juega.follas.01/ingles/conto"
   },
   {
+   "id": "en_slow_aa21c9de_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hello!",
+   "speech": "Hello!",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.02/ingles"
+  },
+  {
    "id": "en_slow_aacd536b_4",
    "lang": "en",
    "style": "slow",
@@ -684,6 +692,14 @@
    "source": "juega.benvida.01/ingles/pulso"
   },
   {
+   "id": "en_slow_f60d2779_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "FREEZE!",
+   "speech": "FREEZE!",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.03/ingles"
+  },
+  {
    "id": "en_slow_f8a56cde_5",
    "lang": "en",
    "style": "slow",
@@ -730,6 +746,14 @@
    "text": "Now the group copies your pattern",
    "speech": "Now the group copies your pattern",
    "source": "asamblea.segundo_ciclo.maio.6_infantil/fase/3/cmd/cmd.maio.6i.02/ingles"
+  },
+  {
+   "id": "en_tutor_08127677_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wash, wash, clean hands!",
+   "speech": "Wash, wash, clean hands!",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/3/cmd/cmd.maio.0_2.01/ingles"
   },
   {
    "id": "en_tutor_09ae9cd0_48",
@@ -828,12 +852,28 @@
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/3/cmd/cmd.xuno.4i.02/ingles"
   },
   {
+   "id": "en_tutor_137425f4_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crunch your leaves!",
+   "speech": "Crunch your leaves!",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/3/cmd/cmd.novembro.2_3.02/ingles"
+  },
+  {
    "id": "en_tutor_1437968b_39",
    "lang": "en",
    "style": "tutor",
    "text": "The sun comes back: shake the water off",
    "speech": "The sun comes back: shake the water off",
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.03/ingles"
+  },
+  {
+   "id": "en_tutor_149daaa9_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Shake your hands!",
+   "speech": "Shake your hands!",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.02/ingles"
   },
   {
    "id": "en_tutor_1567e3b7_14",
@@ -850,6 +890,14 @@
    "text": "Walk heavy like a big cow",
    "speech": "Walk heavy like a big cow",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/3/cmd/cmd.abril.4i.02/ingles"
+  },
+  {
+   "id": "en_tutor_18097eb6_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Head, shoulders, knees and toes",
+   "speech": "Head, shoulders, knees and toes",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.01/ingles"
   },
   {
    "id": "en_tutor_18675de5_34",
@@ -940,6 +988,14 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/fase/3/cmd/cmd.xuno.6i.02/ingles"
   },
   {
+   "id": "en_tutor_25e40601_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dry your toes!",
+   "speech": "Dry your toes!",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.03/ingles"
+  },
+  {
    "id": "en_tutor_290caad1_43",
    "lang": "en",
    "style": "tutor",
@@ -1012,6 +1068,14 @@
    "source": "juega.auga.01/ingles/exploracion"
   },
   {
+   "id": "en_tutor_315b185b_43",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Find a red circle! Touch it with your foot!",
+   "speech": "Find a red circle! Touch it with your foot!",
+   "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/3/cmd/cmd.marzo.2_3.01/ingles"
+  },
+  {
    "id": "en_tutor_3368a295_48",
    "lang": "en",
    "style": "tutor",
@@ -1044,6 +1108,14 @@
    "source": "calendario/tramo/0_6/fraseIngles"
   },
   {
+   "id": "en_tutor_3963516e_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ring the Bells",
+   "speech": "Ring the Bells",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/1/cue"
+  },
+  {
    "id": "en_tutor_396affbe_35",
    "lang": "en",
    "style": "tutor",
@@ -1066,6 +1138,14 @@
    "text": "Put on your hat! Now boots: stomp, stomp on the floor!",
    "speech": "Put on your hat! Now boots: stomp, stomp on the floor!",
    "source": "juega.choiva.01/ingles/ponteCasa"
+  },
+  {
+   "id": "en_tutor_3c7f4c44_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hello Hello, Hello to You!",
+   "speech": "Hello Hello, Hello to You!",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/1/cue"
   },
   {
    "id": "en_tutor_3d11bfe3_29",
@@ -1114,6 +1194,30 @@
    "text": "Big waves!",
    "speech": "Big waves!",
    "source": "juega.mar.01/ingles/pulso"
+  },
+  {
+   "id": "en_tutor_493e85fa_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Jump, jump, green frog! Ribbit!",
+   "speech": "Jump, jump, green frog! Ribbit!",
+   "source": "asamblea.primeiro_ciclo.febreiro.0_2_anos/fase/3/cmd/cmd.febreiro.0_2.01/ingles"
+  },
+  {
+   "id": "en_tutor_4a207cf0_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sun comes up!",
+   "speech": "Sun comes up!",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.02/ingles"
+  },
+  {
+   "id": "en_tutor_4b6f66b4_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Warm... soft and warm",
+   "speech": "Warm... soft and warm",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/3/cmd/cmd.decembro.0_2.02/ingles"
   },
   {
    "id": "en_tutor_4e0c5d60_47",
@@ -1220,12 +1324,36 @@
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/3/cmd/cmd.abril.4i.01/ingles"
   },
   {
+   "id": "en_tutor_6355535d_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Falling, falling, falling down!",
+   "speech": "Falling, falling, falling down!",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/3/cmd/cmd.novembro.0_2.01/ingles"
+  },
+  {
+   "id": "en_tutor_63555a17_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The wind blows! Whoosh!",
+   "speech": "The wind blows! Whoosh!",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/3/cmd/cmd.novembro.2_3.01/ingles"
+  },
+  {
    "id": "en_tutor_671fb104_25",
    "lang": "en",
    "style": "tutor",
    "text": "Graze like a gentle sheep",
    "speech": "Graze like a gentle sheep",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/3/cmd/cmd.abril.4i.03/ingles"
+  },
+  {
+   "id": "en_tutor_67bb890d_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Loud bells! Shake fast!",
+   "speech": "Loud bells! Shake fast!",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.01/ingles"
   },
   {
    "id": "en_tutor_68eb3e0f_11",
@@ -1244,6 +1372,22 @@
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/cmd/cmd.abril.5i.01/ingles"
   },
   {
+   "id": "en_tutor_69cff027_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Little fish swimming under the sea!",
+   "speech": "Little fish swimming under the sea!",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.03/ingles"
+  },
+  {
+   "id": "en_tutor_6ab8d505_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wash your face!",
+   "speech": "Wash your face!",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.01/ingles"
+  },
+  {
    "id": "en_tutor_6f2166ab_32",
    "lang": "en",
    "style": "tutor",
@@ -1258,6 +1402,30 @@
    "text": "Clap hands",
    "speech": "Clap hands",
    "source": "juega.benvida.01/ingles/pulso"
+  },
+  {
+   "id": "en_tutor_71aa4bb6_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put on your hat!",
+   "speech": "Put on your hat!",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/3/cmd/cmd.xaneiro.0_2.01/ingles"
+  },
+  {
+   "id": "en_tutor_7205d855_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Waves go up, waves go down, blue sea",
+   "speech": "Waves go up, waves go down, blue sea",
+   "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_72219a65_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Big heavy bear! Stomp!",
+   "speech": "Big heavy bear! Stomp!",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.02/ingles"
   },
   {
    "id": "en_tutor_74f64a37_51",
@@ -1284,6 +1452,14 @@
    "source": "juega.primavera.01/ingles/pulso"
   },
   {
+   "id": "en_tutor_78811788_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crunch, crunch!",
+   "speech": "Crunch, crunch!",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/3/cmd/cmd.novembro.0_2.02/ingles"
+  },
+  {
    "id": "en_tutor_79c49ace_35",
    "lang": "en",
    "style": "tutor",
@@ -1300,12 +1476,44 @@
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/fase/1/cue"
   },
   {
+   "id": "en_tutor_7a6f56d8_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put on your coat!",
+   "speech": "Put on your coat!",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/3/cmd/cmd.xaneiro.2_3.01/ingles"
+  },
+  {
+   "id": "en_tutor_7e583734_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Everybody stand up!",
+   "speech": "Everybody stand up!",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.01/ingles"
+  },
+  {
    "id": "en_tutor_7ea2f723_44",
    "lang": "en",
    "style": "tutor",
    "text": "Here you go: give the light to the next pair",
    "speech": "Here you go: give the light to the next pair",
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/cmd/cmd.decembro.6i.03/ingles"
+  },
+  {
+   "id": "en_tutor_7f08e57c_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stomp your boots in the puddles!",
+   "speech": "Stomp your boots in the puddles!",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/3/cmd/cmd.xaneiro.2_3.02/ingles"
+  },
+  {
+   "id": "en_tutor_80b583ce_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ring the bells",
+   "speech": "Ring the bells",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/3/cmd/cmd.decembro.0_2.01/ingles"
   },
   {
    "id": "en_tutor_81390e70_39",
@@ -1324,12 +1532,28 @@
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.03/ingles"
   },
   {
+   "id": "en_tutor_83d7e01c_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "This Is the Way We Wash Our Hands",
+   "speech": "This Is the Way We Wash Our Hands",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/1/cue"
+  },
+  {
    "id": "en_tutor_84158968_37",
    "lang": "en",
    "style": "tutor",
    "text": "Good morning voices! Clap your hands!",
    "speech": "Good morning voices! Clap your hands!",
    "source": "asamblea.segundo_ciclo.maio.4_infantil/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_84896356_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Head, Shoulders, Knees and Toes",
+   "speech": "Head, Shoulders, Knees and Toes",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/1/cue"
   },
   {
    "id": "en_tutor_84cb0556_41",
@@ -1386,6 +1610,14 @@
    "text": "Walk to the hook and hang your coat",
    "speech": "Walk to the hook and hang your coat",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/ingles"
+  },
+  {
+   "id": "en_tutor_8c3dc7d8_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fly like a bird!",
+   "speech": "Fly like a bird!",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.01/ingles"
   },
   {
    "id": "en_tutor_8d836a41_27",
@@ -1460,6 +1692,14 @@
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/1/cue"
   },
   {
+   "id": "en_tutor_9cd42162_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Roll, roll, yellow circle!",
+   "speech": "Roll, roll, yellow circle!",
+   "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/3/cmd/cmd.marzo.0_2.01/ingles"
+  },
+  {
    "id": "en_tutor_9cfc8741_45",
    "lang": "en",
    "style": "tutor",
@@ -1490,6 +1730,38 @@
    "text": "Walk together like one big cloud",
    "speech": "Walk together like one big cloud",
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.01/ingles"
+  },
+  {
+   "id": "en_tutor_a014daa2_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put on Your Shoes",
+   "speech": "Put on Your Shoes",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_a071d065_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bye-Bye, Goodbye",
+   "speech": "ByeBye, Goodbye",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_a0d906c2_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bloom! Big bright flowers!",
+   "speech": "Bloom! Big bright flowers!",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/3/cmd/cmd.abril.2_3.02/ingles"
+  },
+  {
+   "id": "en_tutor_a4a8b6ba_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Take off!",
+   "speech": "Take off!",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/3/cmd/cmd.xaneiro.0_2.02/ingles"
   },
   {
    "id": "en_tutor_a4d73802_43",
@@ -1572,6 +1844,14 @@
    "source": "juega.benvida.01/ingles/ponteCasa"
   },
   {
+   "id": "en_tutor_b035cfe4_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wash your belly!",
+   "speech": "Wash your belly!",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.02/ingles"
+  },
+  {
    "id": "en_tutor_b281c543_56",
    "lang": "en",
    "style": "tutor",
@@ -1596,6 +1876,14 @@
    "source": "juega.auga.01/ingles/ponteCasa"
   },
   {
+   "id": "en_tutor_b9823efa_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "One Little Finger",
+   "speech": "One Little Finger",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/1/cue"
+  },
+  {
    "id": "en_tutor_bb2f06d1_32",
    "lang": "en",
    "style": "tutor",
@@ -1610,6 +1898,14 @@
    "text": "Call your friend: come and help us!",
    "speech": "Call your friend: come and help us!",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.02/ingles"
+  },
+  {
+   "id": "en_tutor_bd3a1e8b_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Giant waves!",
+   "speech": "Giant waves!",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.02/ingles"
   },
   {
    "id": "en_tutor_c1bb5035_33",
@@ -1674,6 +1970,22 @@
    "text": "Stomp in the snow",
    "speech": "Stomp in the snow",
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.02/ingles"
+  },
+  {
+   "id": "en_tutor_ce5d5fbb_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We are tiny seeds under the ground",
+   "speech": "We are tiny seeds under the ground",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/3/cmd/cmd.abril.2_3.01/ingles"
+  },
+  {
+   "id": "en_tutor_cf1955de_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rain, rain, little drops, tap, tap, tap",
+   "speech": "Rain, rain, little drops, tap, tap, tap",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.01/ingles"
   },
   {
    "id": "en_tutor_cf3fccc3_15",
@@ -1820,6 +2132,14 @@
    "source": "juega.choiva.01/ingles/pulso"
   },
   {
+   "id": "en_tutor_e7287f55_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Up and Down, Clap Clap Clap",
+   "speech": "Up and Down, Clap Clap Clap",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/1/cue"
+  },
+  {
    "id": "en_tutor_e8f236d1_47",
    "lang": "en",
    "style": "tutor",
@@ -1868,6 +2188,14 @@
    "source": "calendario/mes/1/ingles/tpr"
   },
   {
+   "id": "en_tutor_f3392c95_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Carnival Freeze!",
+   "speech": "Carnival Freeze!",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.03/ingles"
+  },
+  {
    "id": "en_tutor_f3424e79_8",
    "lang": "en",
    "style": "tutor",
@@ -1900,6 +2228,14 @@
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.01/ingles"
   },
   {
+   "id": "en_tutor_fb5f7842_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Quiet bells... sleep",
+   "speech": "Quiet bells... sleep",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.02/ingles"
+  },
+  {
    "id": "en_tutor_feae7a17_42",
    "lang": "en",
    "style": "tutor",
@@ -1914,6 +2250,14 @@
    "text": "Curl small like a tiny seed",
    "speech": "Curl small like a tiny seed",
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/fase/3/cmd/cmd.marzo.4i.01/ingles"
+  },
+  {
+   "id": "en_tutor_fff59d53_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Everybody sit down!",
+   "speech": "Everybody sit down!",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.03/ingles"
   },
   {
    "id": "es_slow_00222185_5",
@@ -2316,6 +2660,14 @@
    "source": "juega.benvida.01/vocabulario/amiga"
   },
   {
+   "id": "es_tutor_00003e7e_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Posa el tul sobre las piernas y deja que lo toquen.",
+   "speech": "Posa el tul sobre las piernas y deja que lo toquen.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_0015b5a9_57",
    "lang": "es",
    "style": "tutor",
@@ -2386,6 +2738,22 @@
    "text": "Yes, you are a wolf! Sneak slowly... y ahora FREEZE. The wolf is sleeping.",
    "speech": "Yes, you are a wolf! Sneak slowly... y ahora FREEZE. The wolf is sleeping.",
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "es_tutor_0244298f_213",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El metrónomo de esta app es visual a propósito. Parte de las criaturas lleva audífono o implante, y un metrónomo sonoro compite justo con la voz que tienen que seguir. El canal auditivo queda entero para la letra.",
+   "speech": "El metrónomo de esta app es visual a propósito. Parte de las criaturas lleva audífono o implante, y un metrónomo sonoro compite justo con la voz que tienen que seguir. El canal auditivo queda entero para la letra.",
+   "source": "formacion.docente/paso/4/corpo"
+  },
+  {
+   "id": "es_tutor_025544ea_38",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Eleva las manos del bebé hacia arriba.",
+   "speech": "Eleva las manos del bebé hacia arriba.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/3/cmd/cmd.setembro.0_2.01/accionFisica"
   },
   {
    "id": "es_tutor_027c5292_47",
@@ -2468,6 +2836,14 @@
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/consigna"
   },
   {
+   "id": "es_tutor_0494c40e_238",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El aparato es un apuntador entre bastidores. Va en una repisa o en un atril, fuera de la vista del grupo. No se le enseña a nadie, no reproduce vídeo y no sirve para captar la atención. Eso es lo que significa «cero pantallas infantiles».",
+   "speech": "El aparato es un apuntador entre bastidores. Va en una repisa o en un atril, fuera de la vista del grupo. No se le enseña a nadie, no reproduce vídeo y no sirve para captar la atención. Eso es lo que significa «cero pantallas infantiles».",
+   "source": "formacion.docente/paso/0/corpo"
+  },
+  {
    "id": "es_tutor_04f1a7ac_77",
    "lang": "es",
    "style": "tutor",
@@ -2508,6 +2884,22 @@
    "source": "juega.corpo.01/cancionPulso/consigna"
   },
   {
+   "id": "es_tutor_05d03d84_45",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Apretar una hoja seca junto al oído del niño.",
+   "speech": "Apretar una hoja seca junto al oído del niño.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/3/cmd/cmd.novembro.0_2.02/accionFisica"
+  },
+  {
+   "id": "es_tutor_0669af9a_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canta la adaptación rítmica de búsqueda de colores.",
+   "speech": "Canta la adaptación rítmica de búsqueda de colores.",
+   "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_068c7d96_66",
    "lang": "es",
    "style": "tutor",
@@ -2538,6 +2930,14 @@
    "text": "Un día de orballo, en la ventana, seguir una gota con el dedo diciendo 'Rain, rain, tap, tap, little drops!'.",
    "speech": "Un día de orballo, en la ventana, seguir una gota con el dedo diciendo 'Rain, rain, tap, tap, little drops!'.",
    "source": "juega.primavera.01/puenteCasa/act/0"
+  },
+  {
+   "id": "es_tutor_07c9e452_189",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En TPR la criatura responde moviéndose, no hablando. Hay un período de silencio que es normal y que hay que respetar: entiende mucho antes de producir. Si ejecuta la acción, ha comprendido.",
+   "speech": "En TPR la criatura responde moviéndose, no hablando. Hay un período de silencio que es normal y que hay que respetar: entiende mucho antes de producir. Si ejecuta la acción, ha comprendido.",
+   "source": "formacion.docente/paso/2/corpo"
   },
   {
    "id": "es_tutor_083dd48d_65",
@@ -2644,6 +3044,22 @@
    "source": "juega.auga.01/exploracion/paso/1"
   },
   {
+   "id": "es_tutor_0c91f330_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Traslado del peso de un pie al otro.",
+   "speech": "Traslado del peso de un pie al otro.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.02/accionFisica"
+  },
+  {
+   "id": "es_tutor_0d61879c_171",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tres, no diez. Se repiten varias veces con la misma entonación y con el mismo gesto. El modelado lo hace la persona adulta: dice la orden y la hace a la vez, sin traducir.",
+   "speech": "Tres, no diez. Se repiten varias veces con la misma entonación y con el mismo gesto. El modelado lo hace la persona adulta: dice la orden y la hace a la vez, sin traducir.",
+   "source": "formacion.docente/paso/3/corpo"
+  },
+  {
    "id": "es_tutor_0da51793_50",
    "lang": "es",
    "style": "tutor",
@@ -2666,6 +3082,30 @@
    "text": "Soy Lúa. Hoy no dirijas: mira lo que está mirando, ponle nombre y espera. Si contesta con un sonido o un gesto, devuélveselo como si fuese una palabra.",
    "speech": "Soy Lúa. Hoy no dirijas: mira lo que está mirando, ponle nombre y espera. Si contesta con un sonido o un gesto, devuélveselo como si fuese una palabra.",
    "source": "academy.turnos_atencion_conjunta.01/luaDice"
+  },
+  {
+   "id": "es_tutor_0f7d0cbf_235",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No hay que hablar inglés todo el día: eso cansa y se acaba dejando. Se escoge un momento fijo y corto, de tres a cinco minutos, y siempre el mismo: vestirse por la mañana, recoger después de jugar, poner la mesa, o el baño de la noche.",
+   "speech": "No hay que hablar inglés todo el día: eso cansa y se acaba dejando. Se escoge un momento fijo y corto, de tres a cinco minutos, y siempre el mismo: vestirse por la mañana, recoger después de jugar, poner la mesa, o el baño de la noche.",
+   "source": "formacion.familia/paso/1/corpo"
+  },
+  {
+   "id": "es_tutor_0fd6b691_69",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sentados en rueda, todos sujetan la cinta elástica con las dos manos.",
+   "speech": "Sentados en rueda, todos sujetan la cinta elástica con las dos manos.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/1/consigna"
+  },
+  {
+   "id": "es_tutor_0fe99fe9_52",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tracción suave de la cinta para levantarse a la vez.",
+   "speech": "Tracción suave de la cinta para levantarse a la vez.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.01/accionFisica"
   },
   {
    "id": "es_tutor_10d195bf_184",
@@ -2764,6 +3204,14 @@
    "source": "juega.animais.01/cuento/0/pregunta"
   },
   {
+   "id": "es_tutor_1511c4d1_63",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Retira la pluma y deja la mano abierta y quieta sobre la tripa.",
+   "speech": "Retira la pluma y deja la mano abierta y quieta sobre la tripa.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_153363d8_33",
    "lang": "es",
    "style": "tutor",
@@ -2804,6 +3252,14 @@
    "source": "aula.matematicas.01/porQueImporta"
   },
   {
+   "id": "es_tutor_16c7ffc0_68",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Simular ponerse unos pantalones pesados, una pierna y luego la otra.",
+   "speech": "Simular ponerse unos pantalones pesados, una pierna y luego la otra.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_16eb9b71_62",
    "lang": "es",
    "style": "tutor",
@@ -2818,6 +3274,14 @@
    "text": "Introducción visual y manipulativa a las nociones de magnitud mediante barcos y conchas.",
    "speech": "Introducción visual y manipulativa a las nociones de magnitud mediante barcos y conchas.",
    "source": "juega.mar.01/matematicas/descripcion"
+  },
+  {
+   "id": "es_tutor_17480c43_46",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pataleo alterno que hace sonar los cascabeles.",
+   "speech": "Pataleo alterno que hace sonar los cascabeles.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/3/cmd/cmd.decembro.0_2.01/accionFisica"
   },
   {
    "id": "es_tutor_1774ad03_56",
@@ -2858,6 +3322,14 @@
    "text": "Caminar con paso firme hacia la percha baja asignada y colgar el abrigo por la presilla.",
    "speech": "Caminar con paso firme hacia la percha baja asignada y colgar el abrigo por la presilla.",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/accionFisica"
+  },
+  {
+   "id": "es_tutor_18818980_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Caminar de puntillas al ritmo de una marcha.",
+   "speech": "Caminar de puntillas al ritmo de una marcha.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/2/consigna"
   },
   {
    "id": "es_tutor_1962ec88_58",
@@ -3028,6 +3500,14 @@
    "source": "juega.inverno.01/puenteCasa/act/1"
   },
   {
+   "id": "es_tutor_1f738e1d_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Acaricia la tripita con movimientos circulares.",
+   "speech": "Acaricia la tripita con movimientos circulares.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/3/cmd/cmd.outubro.0_2.02/accionFisica"
+  },
+  {
    "id": "es_tutor_1facf3a0_79",
    "lang": "es",
    "style": "tutor",
@@ -3066,6 +3546,14 @@
    "text": "Nombrar en inglés los animales que aparezcan, moviéndose como ellos.",
    "speech": "Nombrar en inglés los animales que aparezcan, moviéndose como ellos.",
    "source": "asamblea.segundo_ciclo.abril.6_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "es_tutor_20340532_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pequeños temblores de muñeca.",
+   "speech": "Pequeños temblores de muñeca.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.01/accionFisica"
   },
   {
    "id": "es_tutor_20b7df4b_82",
@@ -3164,6 +3652,14 @@
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.01/accionFisica"
   },
   {
+   "id": "es_tutor_23f3f7a0_59",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Desliza la toallita por las palmas y frótalas rítmicamente.",
+   "speech": "Desliza la toallita por las palmas y frótalas rítmicamente.",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_24286992_59",
    "lang": "es",
    "style": "tutor",
@@ -3194,6 +3690,14 @@
    "text": "Pisar fuerte todos a la vez y escuchar cómo retumba el suelo.",
    "speech": "Pisar fuerte todos a la vez y escuchar cómo retumba el suelo.",
    "source": "juega.animais.01/matematicas/accion/0"
+  },
+  {
+   "id": "es_tutor_250dfcbe_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Desplazarse de puntillas con los brazos extendidos.",
+   "speech": "Desplazarse de puntillas con los brazos extendidos.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.01/accionFisica"
   },
   {
    "id": "es_tutor_25290c56_76",
@@ -3404,6 +3908,14 @@
    "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "es_tutor_2da08be5_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ovillados en el suelo en posición fetal encogida.",
+   "speech": "Ovillados en el suelo en posición fetal encogida.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_2db791f5_69",
    "lang": "es",
    "style": "tutor",
@@ -3442,6 +3954,14 @@
    "text": "Sin algo pequeño al lado, «grande» no se puede notar: es solo un sonido que acompaña a un objeto. La noción aparece en la comparación, así que los dos tienen que estar a la vista a la vez.",
    "speech": "Sin algo pequeño al lado, «grande» no se puede notar: es solo un sonido que acompaña a un objeto. La noción aparece en la comparación, así que los dos tienen que estar a la vista a la vez.",
    "source": "aula.matematicas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_30db17c7_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Reformular, no recriminar.",
+   "speech": "Reformular, no recriminar.",
+   "source": "formacion.familia/paso/3/clave"
   },
   {
    "id": "es_tutor_31a10fc2_97",
@@ -3548,6 +4068,14 @@
    "source": "aula.preguntas.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "es_tutor_35d72ced_75",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Reúne a los bebés sobre colchonetas mullidas y acerca el muñeco a cada uno.",
+   "speech": "Reúne a los bebés sobre colchonetas mullidas y acerca el muñeco a cada uno.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_35fbf6f2_58",
    "lang": "es",
    "style": "tutor",
@@ -3556,12 +4084,28 @@
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/microRutina/escenaCotidiana"
   },
   {
+   "id": "es_tutor_36263454_66",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Campanilla detrás de la espalda, tumbados y con los ojos cerrados.",
+   "speech": "Campanilla detrás de la espalda, tumbados y con los ojos cerrados.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_36285f58_201",
    "lang": "es",
    "style": "tutor",
    "text": "No dirijas: sigue. Mira lo que él está mirando, nómbralo, y calla cinco segundos contando en tu cabeza. Devuelve lo que haga —un sonido, un gesto, una mirada— como si fuese una respuesta, porque lo es.",
    "speech": "No dirijas: sigue. Mira lo que él está mirando, nómbralo, y calla cinco segundos contando en tu cabeza. Devuelve lo que haga —un sonido, un gesto, una mirada— como si fuese una respuesta, porque lo es.",
    "source": "academy.turnos_atencion_conjunta.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_365a3cb9_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si ejecuta la acción, su cerebro ya ha comprendido.",
+   "speech": "Si ejecuta la acción, su cerebro ya ha comprendido.",
+   "source": "formacion.familia/paso/5/clave"
   },
   {
    "id": "es_tutor_36b4a84a_57",
@@ -3626,6 +4170,14 @@
    "text": "En el momento de poner los zapatos por la mañana: «¡Mira, aquí está tu zapato azul! ¿Dónde va? ¡En el pie! Primero un pie... (pausa de 5 segundos con sonrisa)... ¡y ahora el otro pie! ¡Qué cosquillas en los dedos!»",
    "speech": "En el momento de poner los zapatos por la mañana: «¡Mira, aquí está tu zapato azul! ¿Dónde va? ¡En el pie! Primero un pie... (pausa de 5 segundos con sonrisa)... ¡y ahora el otro pie! ¡Qué cosquillas en los dedos!»",
    "source": "academy.como_se_aprende_a_hablar.01/ejemploCotidiano"
+  },
+  {
+   "id": "es_tutor_38951ea5_56",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sostén las manos del bebé y frótalas una contra la otra.",
+   "speech": "Sostén las manos del bebé y frótalas una contra la otra.",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/3/cmd/cmd.maio.0_2.01/accionFisica"
   },
   {
    "id": "es_tutor_3914e2f3_55",
@@ -3708,6 +4260,14 @@
    "source": "juega.benvida.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_3c800c79_66",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sentarse con cuidado sobre la alfombra y soltar la cinta despacio.",
+   "speech": "Sentarse con cuidado sobre la alfombra y soltar la cinta despacio.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_3d36f3a7_99",
    "lang": "es",
    "style": "tutor",
@@ -3754,6 +4314,14 @@
    "text": "Al arropar en la cama, pasar la manta por la cara y por las manos diciendo 'Warm, soft blanket. Sleep, sleep, wake up!'.",
    "speech": "Al arropar en la cama, pasar la manta por la cara y por las manos diciendo 'Warm, soft blanket. Sleep, sleep, wake up!'.",
    "source": "juega.inverno.01/puenteCasa/act/0"
+  },
+  {
+   "id": "es_tutor_3f314c91_46",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si acaba mirando el móvil, algo se ha torcido.",
+   "speech": "Si acaba mirando el móvil, algo se ha torcido.",
+   "source": "formacion.familia/paso/0/clave"
   },
   {
    "id": "es_tutor_3f3aa280_67",
@@ -3804,6 +4372,14 @@
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "es_tutor_40701abc_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sacudir los brazos con fuerza.",
+   "speech": "Sacudir los brazos con fuerza.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.02/accionFisica"
+  },
+  {
    "id": "es_tutor_40a9bfe9_73",
    "lang": "es",
    "style": "tutor",
@@ -3826,6 +4402,14 @@
    "text": "Levantarse despacio de la alfombra y dar dos palmadas.",
    "speech": "Levantarse despacio de la alfombra y dar dos palmadas.",
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.01/accionFisica"
+  },
+  {
+   "id": "es_tutor_417a7cf6_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Roza suavemente la coronilla.",
+   "speech": "Roza suavemente la coronilla.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/3/cmd/cmd.outubro.0_2.01/accionFisica"
   },
   {
    "id": "es_tutor_41831f36_62",
@@ -3900,6 +4484,14 @@
    "source": "academy.bilinguismo_y_cultura.01/queHacerEnCasa"
   },
   {
+   "id": "es_tutor_4325b1e6_50",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pulverizar agua tibia sobre el dorso de las manos.",
+   "speech": "Pulverizar agua tibia sobre el dorso de las manos.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.01/accionFisica"
+  },
+  {
    "id": "es_tutor_4328f19e_60",
    "lang": "es",
    "style": "tutor",
@@ -3972,6 +4564,14 @@
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/fase/3/cmd/cmd.febreiro.5i.02/accionFisica"
   },
   {
+   "id": "es_tutor_4528f145_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una a la semana basta.",
+   "speech": "Una a la semana basta.",
+   "source": "formacion.familia/paso/4/clave"
+  },
+  {
    "id": "es_tutor_456bd307_75",
    "lang": "es",
    "style": "tutor",
@@ -4020,6 +4620,14 @@
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.01/modeladoDocente"
   },
   {
+   "id": "es_tutor_46d6a31b_64",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sentados en círculo, cantar la despedida con el agitar de manos.",
+   "speech": "Sentados en círculo, cantar la despedida con el agitar de manos.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_46eacabb_77",
    "lang": "es",
    "style": "tutor",
@@ -4042,6 +4650,14 @@
    "text": "Marcha lenta y entrega en mano a un compañero nombrado.",
    "speech": "Marcha lenta y entrega en mano a un compañero nombrado.",
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/fase/3/cmd/cmd.outubro.6i.02/accionFisica"
+  },
+  {
+   "id": "es_tutor_47c92c35_66",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Guiar la prensión con las dos manos para que sacuda el recipiente.",
+   "speech": "Guiar la prensión con las dos manos para que sacuda el recipiente.",
+   "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/3/cmd/cmd.marzo.0_2.01/accionFisica"
   },
   {
    "id": "es_tutor_47fd4493_74",
@@ -4098,6 +4714,14 @@
    "text": "Hoy hicimos sonar los cascabeles muy fuerte y después paramos de golpe, y acabamos muy tranquilos debajo de una manta caliente con la gata Lúa.",
    "speech": "Hoy hicimos sonar los cascabeles muy fuerte y después paramos de golpe, y acabamos muy tranquilos debajo de una manta caliente con la gata Lúa.",
    "source": "juega.inverno.01/puenteCasa/mensajeFamilias"
+  },
+  {
+   "id": "es_tutor_49bb2268_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Circuito de emulación corporal por el aula.",
+   "speech": "Circuito de emulación corporal por el aula.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/2/consigna"
   },
   {
    "id": "es_tutor_49ff490a_58",
@@ -4164,12 +4788,28 @@
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/consigna"
   },
   {
+   "id": "es_tutor_4bbe71e4_58",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Flexiona las piernas del bebé de manera alterna al compás.",
+   "speech": "Flexiona las piernas del bebé de manera alterna al compás.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_4bff95c1_54",
    "lang": "es",
    "style": "tutor",
    "text": "Se sitúa fuera del círculo como conductora periférica.",
    "speech": "Se sitúa fuera del círculo como conductora periférica.",
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/cmd/cmd.novembro.6i.03/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_4c9cd4f0_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon y quita el gorro mirando el reflejo, sin prisa.",
+   "speech": "Pon y quita el gorro mirando el reflejo, sin prisa.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/2/consigna"
   },
   {
    "id": "es_tutor_4d00cdbb_47",
@@ -4186,6 +4826,14 @@
    "text": "Primera noción de cantidad con los objetos propios: un zapato en la mano y muchos zapatos en el suelo del círculo.",
    "speech": "Primera noción de cantidad con los objetos propios: un zapato en la mano y muchos zapatos en el suelo del círculo.",
    "source": "juega.benvida.01/matematicas/descripcion"
+  },
+  {
+   "id": "es_tutor_4e059228_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Acaricia las mejillas reforzando la sensación de frescor.",
+   "speech": "Acaricia las mejillas reforzando la sensación de frescor.",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/4/consigna"
   },
   {
    "id": "es_tutor_4e3d2791_55",
@@ -4268,6 +4916,14 @@
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/cmd/cmd.febreiro.6i.02/accionFisica"
   },
   {
+   "id": "es_tutor_4f97c26f_176",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Apertura y saludo, foco y movimiento, núcleo TPR, y calma. Entre ocho y diez minutos en total. No se alarga: la microcápsula acaba cuando acaba, y el resto de la jornada sigue.",
+   "speech": "Apertura y saludo, foco y movimiento, núcleo TPR, y calma. Entre ocho y diez minutos en total. No se alarga: la microcápsula acaba cuando acaba, y el resto de la jornada sigue.",
+   "source": "formacion.docente/paso/1/corpo"
+  },
+  {
    "id": "es_tutor_501a79d6_44",
    "lang": "es",
    "style": "tutor",
@@ -4308,6 +4964,14 @@
    "source": "juega.cores.01/puenteCasa/act/1"
   },
   {
+   "id": "es_tutor_5240a9ec_54",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Congelar la postura del animal predilecto en silencio.",
+   "speech": "Congelar la postura del animal predilecto en silencio.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.03/accionFisica"
+  },
+  {
    "id": "es_tutor_52f023a9_90",
    "lang": "es",
    "style": "tutor",
@@ -4340,6 +5004,14 @@
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/fase/3/consigna"
   },
   {
+   "id": "es_tutor_53ef1694_46",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esconder la campanilla y tumbarse en silencio.",
+   "speech": "Esconder la campanilla y tumbarse en silencio.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.02/accionFisica"
+  },
+  {
    "id": "es_tutor_540cb8c3_65",
    "lang": "es",
    "style": "tutor",
@@ -4364,6 +5036,14 @@
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/consigna"
   },
   {
+   "id": "es_tutor_55260c45_86",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Erguirse milímetro a milímetro hasta las puntas de los pies con los brazos en abanico.",
+   "speech": "Erguirse milímetro a milímetro hasta las puntas de los pies con los brazos en abanico.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/3/cmd/cmd.abril.2_3.02/accionFisica"
+  },
+  {
    "id": "es_tutor_55298714_62",
    "lang": "es",
    "style": "tutor",
@@ -4386,6 +5066,14 @@
    "text": "Entrega de la clave de madera al siguiente con la fórmula de turno.",
    "speech": "Entrega de la clave de madera al siguiente con la fórmula de turno.",
    "source": "asamblea.segundo_ciclo.maio.6_infantil/fase/3/cmd/cmd.maio.6i.03/accionFisica"
+  },
+  {
+   "id": "es_tutor_555c2d99_55",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Doblar la toalla sobre las rodillas y quedarse quietos.",
+   "speech": "Doblar la toalla sobre las rodillas y quedarse quietos.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/4/consigna"
   },
   {
    "id": "es_tutor_55700561_284",
@@ -4428,6 +5116,14 @@
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.02/accionFisica"
   },
   {
+   "id": "es_tutor_571b9dd7_69",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Niebla imperceptible sobre el dorso de las manos, con cadencia suave.",
+   "speech": "Niebla imperceptible sobre el dorso de las manos, con cadencia suave.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_573e538a_77",
    "lang": "es",
    "style": "tutor",
@@ -4468,6 +5164,14 @@
    "source": "juega.primavera.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "es_tutor_58db02aa_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Muestra la primera tarjeta sin decir nada y espera.",
+   "speech": "Muestra la primera tarjeta sin decir nada y espera.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_5919e347_93",
    "lang": "es",
    "style": "tutor",
@@ -4506,6 +5210,14 @@
    "text": "Yes! It is hard and cold. Pull it out! ¡Una cuchara! Put your hand inside again.",
    "speech": "Yes! It is hard and cold. Pull it out! ¡Una cuchara! Put your hand inside again.",
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "es_tutor_5a142ace_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El compás lo marca tu cuerpo, no un pitido.",
+   "speech": "El compás lo marca tu cuerpo, no un pitido.",
+   "source": "formacion.docente/paso/4/clave"
   },
   {
    "id": "es_tutor_5a1ab698_65",
@@ -4620,6 +5332,14 @@
    "source": "juega.follas.01/cancionPulso/consigna"
   },
   {
+   "id": "es_tutor_5d7ca9e9_60",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Deslizar los brazos por mangas imaginarias y hacer «Zzzip!».",
+   "speech": "Deslizar los brazos por mangas imaginarias y hacer «Zzzip!».",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/3/cmd/cmd.xaneiro.2_3.01/accionFisica"
+  },
+  {
    "id": "es_tutor_5d84a414_143",
    "lang": "es",
    "style": "tutor",
@@ -4652,6 +5372,14 @@
    "source": "aula.pulso.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "es_tutor_5f59312d_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Leve cosquilleo en los dedos de los pies.",
+   "speech": "Leve cosquilleo en los dedos de los pies.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/3/cmd/cmd.outubro.0_2.03/accionFisica"
+  },
+  {
    "id": "es_tutor_5f671a18_62",
    "lang": "es",
    "style": "tutor",
@@ -4676,6 +5404,14 @@
    "source": "juega.inverno.01/exploracion/avisoSeguridad"
   },
   {
+   "id": "es_tutor_601e6b2e_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Retirar la prenda suavemente.",
+   "speech": "Retirar la prenda suavemente.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/3/cmd/cmd.xaneiro.0_2.02/accionFisica"
+  },
+  {
    "id": "es_tutor_602e9ff6_202",
    "lang": "es",
    "style": "tutor",
@@ -4698,6 +5434,14 @@
    "text": "¿Qué sonido hace la hoja seca cuando la pisamos?",
    "speech": "¿Qué sonido hace la hoja seca cuando la pisamos?",
    "source": "juega.follas.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_606ac6f5_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "De pie, en círculo abierto, con las manos libres.",
+   "speech": "De pie, en círculo abierto, con las manos libres.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/1/consigna"
   },
   {
    "id": "es_tutor_608ad33f_76",
@@ -4860,6 +5604,14 @@
    "source": "juega.follas.01/cuento/1/pregunta"
   },
   {
+   "id": "es_tutor_68537ee9_60",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Los bebés tumbados cómodamente sobre una colchoneta central.",
+   "speech": "Los bebés tumbados cómodamente sobre una colchoneta central.",
+   "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_688a9bb0_52",
    "lang": "es",
    "style": "tutor",
@@ -4964,6 +5716,22 @@
    "source": "juega.choiva.01/matematicas/descripcion"
   },
   {
+   "id": "es_tutor_6dc1618b_67",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sostén las manos del bebé y entona la canción mirándolo a los ojos.",
+   "speech": "Sostén las manos del bebé y entona la canción mirándolo a los ojos.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_6dea82f8_167",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Siempre con la misma estructura: una situación de casa que reconoces, cómo se hace exactamente, las tres órdenes de la semana, y una regla que resume por qué funciona.",
+   "speech": "Siempre con la misma estructura: una situación de casa que reconoces, cómo se hace exactamente, las tres órdenes de la semana, y una regla que resume por qué funciona.",
+   "source": "formacion.familia/paso/4/corpo"
+  },
+  {
    "id": "es_tutor_6e04e430_173",
    "lang": "es",
    "style": "tutor",
@@ -4988,6 +5756,14 @@
    "source": "juega.cores.01/cuento/0/texto"
   },
   {
+   "id": "es_tutor_6e7bc47c_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Modular la intensidad del oleaje según la orden.",
+   "speech": "Modular la intensidad del oleaje según la orden.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_6e9ac16e_68",
    "lang": "es",
    "style": "tutor",
@@ -5010,6 +5786,14 @@
    "text": "Fuera hace frío y las calles de Vigo están llenas de luces. La gata Lúa pega la nariz al cristal y se le queda fría, fría.",
    "speech": "Fuera hace frío y las calles de Vigo están llenas de luces. La gata Lúa pega la nariz al cristal y se le queda fría, fría.",
    "source": "juega.inverno.01/cuento/0/texto"
+  },
+  {
+   "id": "es_tutor_6f513c2f_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Correr en el sitio haciendo sonar la campanilla.",
+   "speech": "Correr en el sitio haciendo sonar la campanilla.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.01/accionFisica"
   },
   {
    "id": "es_tutor_6f5431a9_234",
@@ -5076,6 +5860,14 @@
    "source": "juega.benvida.01/cancionPulso"
   },
   {
+   "id": "es_tutor_72bf55d9_65",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Caricias en el torso y susurro prosódico hasta que baje el ritmo.",
+   "speech": "Caricias en el torso y susurro prosódico hasta que baje el ritmo.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_72c7916b_165",
    "lang": "es",
    "style": "tutor",
@@ -5090,6 +5882,14 @@
    "text": "En diciembre hay mucho ruido, mucha visita y poca rutina. Un rato corto y tranquilo cada día rinde más que una tarde entera de estímulos.",
    "speech": "En diciembre hay mucho ruido, mucha visita y poca rutina. Un rato corto y tranquilo cada día rinde más que una tarde entera de estímulos.",
    "source": "juega.inverno.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "es_tutor_73262cbd_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Colocar el gorro en la cabeza mirando el espejo.",
+   "speech": "Colocar el gorro en la cabeza mirando el espejo.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/3/cmd/cmd.xaneiro.0_2.01/accionFisica"
   },
   {
    "id": "es_tutor_73a8a7d6_103",
@@ -5114,6 +5914,14 @@
    "text": "Flexión completa en el suelo, cabeza recogida entre las rodillas.",
    "speech": "Flexión completa en el suelo, cabeza recogida entre las rodillas.",
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/fase/3/cmd/cmd.marzo.4i.01/accionFisica"
+  },
+  {
+   "id": "es_tutor_74bf5b7e_58",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Golpes rítmicos de los dedos imitando las gotas de lluvia.",
+   "speech": "Golpes rítmicos de los dedos imitando las gotas de lluvia.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/2/consigna"
   },
   {
    "id": "es_tutor_758ef845_181",
@@ -5154,6 +5962,14 @@
    "text": "Comparación de cantidad con material suelto y grande: una cesta llena frente a una cesta con dos hojas.",
    "speech": "Comparación de cantidad con material suelto y grande: una cesta llena frente a una cesta con dos hojas.",
    "source": "juega.follas.01/matematicas/descripcion"
+  },
+  {
+   "id": "es_tutor_76c6b5dd_52",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Reparte una toalla a cada niño, sentados en círculo.",
+   "speech": "Reparte una toalla a cada niño, sentados en círculo.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/1/consigna"
   },
   {
    "id": "es_tutor_76e44434_60",
@@ -5244,6 +6060,14 @@
    "source": "juega.inverno.01/exploracion/paso/1"
   },
   {
+   "id": "es_tutor_78786cec_58",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Recuesta a los bebés de espaldas o sostenlos en el regazo.",
+   "speech": "Recuesta a los bebés de espaldas o sostenlos en el regazo.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_7912e922_171",
    "lang": "es",
    "style": "tutor",
@@ -5300,12 +6124,28 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/fase/3/cmd/cmd.xuno.6i.02/modeladoDocente"
   },
   {
+   "id": "es_tutor_79c70d57_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dos niños designados gatean rápido por debajo de la tela.",
+   "speech": "Dos niños designados gatean rápido por debajo de la tela.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.03/accionFisica"
+  },
+  {
    "id": "es_tutor_79c9e02f_60",
    "lang": "es",
    "style": "tutor",
    "text": "Señalar ya es responder. La palabra llega después, si llega.",
    "speech": "Señalar ya es responder. La palabra llega después, si llega.",
    "source": "asamblea.segundo_ciclo.abril.6_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
+   "id": "es_tutor_7a27516b_75",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Inclinar el tronco adelante para secar los zapatos sin doblar las rodillas.",
+   "speech": "Inclinar el tronco adelante para secar los zapatos sin doblar las rodillas.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.03/accionFisica"
   },
   {
    "id": "es_tutor_7a8af85f_76",
@@ -5388,6 +6228,14 @@
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "es_tutor_7d21b346_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La rana se acerca con botes rítmicos sobre la colchoneta.",
+   "speech": "La rana se acerca con botes rítmicos sobre la colchoneta.",
+   "source": "asamblea.primeiro_ciclo.febreiro.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_7d482c3d_62",
    "lang": "es",
    "style": "tutor",
@@ -5452,6 +6300,14 @@
    "source": "juega.animais.01/exploracion/paso/2"
   },
   {
+   "id": "es_tutor_8049a697_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Deja la botella quieta y mirad cómo bajan las purpurinas.",
+   "speech": "Deja la botella quieta y mirad cómo bajan las purpurinas.",
+   "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_80cda998_47",
    "lang": "es",
    "style": "tutor",
@@ -5476,12 +6332,28 @@
    "source": "academy.turnos_atencion_conjunta.01/porQueImporta"
   },
   {
+   "id": "es_tutor_81e3377d_186",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esa pregunta convierte un juego en un examen. Genera ansiedad y el resultado suele ser que la criatura calla o rechaza la actividad. Lo mismo pasa con «no se dice así» o «díselo a papá».",
+   "speech": "Esa pregunta convierte un juego en un examen. Genera ansiedad y el resultado suele ser que la criatura calla o rechaza la actividad. Lo mismo pasa con «no se dice así» o «díselo a papá».",
+   "source": "formacion.familia/paso/2/corpo"
+  },
+  {
    "id": "es_tutor_81f0fa70_211",
    "lang": "es",
    "style": "tutor",
    "text": "Pregunta y calla cinco segundos contando en tu cabeza. Si nadie responde, no repitas la pregunta: dale la respuesta tú nombrando y señalando, y pasa a la siguiente. Nunca pidas que repitan la palabra bien dicha.",
    "speech": "Pregunta y calla cinco segundos contando en tu cabeza. Si nadie responde, no repitas la pregunta: dale la respuesta tú nombrando y señalando, y pasa a la siguiente. Nunca pidas que repitan la palabra bien dicha.",
    "source": "aula.preguntas.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_82a8131f_71",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canta la canción marcando el pulso con la cinta, sin pedir que repitan.",
+   "speech": "Canta la canción marcando el pulso con la cinta, sin pedir que repitan.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/2/consigna"
   },
   {
    "id": "es_tutor_82e69b09_249",
@@ -5506,6 +6378,14 @@
    "text": "En la playa o la orilla del río, con un cubo y las manos.",
    "speech": "En la playa o la orilla del río, con un cubo y las manos.",
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_83a9d172_54",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Siéntate con el bebé y muestra la botella a contraluz.",
+   "speech": "Siéntate con el bebé y muestra la botella a contraluz.",
+   "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/1/consigna"
   },
   {
    "id": "es_tutor_8404fee1_68",
@@ -5540,12 +6420,28 @@
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/cmd/cmd.abril.5i.02/accionFisica"
   },
   {
+   "id": "es_tutor_86237a97_70",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tras el freeze, manos abiertas sobre las rodillas y respiración lenta.",
+   "speech": "Tras el freeze, manos abiertas sobre las rodillas y respiración lenta.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_86a8f3d3_97",
    "lang": "es",
    "style": "tutor",
    "text": "El cuerpo enseña la primera pareja: dos manos, dos pies, dos ojos, dos orejas, y una sola cabeza.",
    "speech": "El cuerpo enseña la primera pareja: dos manos, dos pies, dos ojos, dos orejas, y una sola cabeza.",
    "source": "juega.corpo.01/matematicas/descripcion"
+  },
+  {
+   "id": "es_tutor_86f0cf90_81",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+   "speech": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.01/modeladoDocente"
   },
   {
    "id": "es_tutor_870fc709_63",
@@ -5578,6 +6474,14 @@
    "text": "Marca el pulso con las palmas en las piernas o balanceando los brazos, amplio y lento, y mira a la rueda mientras lo haces. Tu voz va por encima, no por debajo. Si alguien se pierde, no pares la canción: exagera el gesto y sigue, que el pulso se recupera mirando.",
    "speech": "Marca el pulso con las palmas en las piernas o balanceando los brazos, amplio y lento, y mira a la rueda mientras lo haces. Tu voz va por encima, no por debajo. Si alguien se pierde, no pares la canción: exagera el gesto y sigue, que el pulso se recupera mirando.",
    "source": "aula.pulso.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_880f8f11_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tres pisotones contundentes contra el suelo.",
+   "speech": "Tres pisotones contundentes contra el suelo.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/3/cmd/cmd.xaneiro.2_3.02/accionFisica"
   },
   {
    "id": "es_tutor_8894d0e4_155",
@@ -5618,6 +6522,14 @@
    "text": "Soy Lúa. Elige una sola rutina —el baño, la cena, el abrigo— y esta semana dila siempre con las mismas palabras. Lo aburrido para ti es justo lo que ya puede adivinar.",
    "speech": "Soy Lúa. Elige una sola rutina —el baño, la cena, el abrigo— y esta semana dila siempre con las mismas palabras. Lo aburrido para ti es justo lo que ya puede adivinar.",
    "source": "academy.rutinas_bano_de_lenguaje.01/luaDice"
+  },
+  {
+   "id": "es_tutor_8ad5273e_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esparce las siluetas por la zona de la asamblea.",
+   "speech": "Esparce las siluetas por la zona de la asamblea.",
+   "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/1/consigna"
   },
   {
    "id": "es_tutor_8b1a0093_55",
@@ -5900,6 +6812,14 @@
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "es_tutor_97d548d4_62",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si una criatura mira la pantalla, la pantalla está mal puesta.",
+   "speech": "Si una criatura mira la pantalla, la pantalla está mal puesta.",
+   "source": "formacion.docente/paso/0/clave"
+  },
+  {
    "id": "es_tutor_9810bc2e_109",
    "lang": "es",
    "style": "tutor",
@@ -5916,12 +6836,28 @@
    "source": "juega.follas.01/cuento/0/texto"
   },
   {
+   "id": "es_tutor_9884a209_59",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Todos sujetan el contorno del paracaídas con las dos manos.",
+   "speech": "Todos sujetan el contorno del paracaídas con las dos manos.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_98a54a1c_123",
    "lang": "es",
    "style": "tutor",
    "text": "Cada línea cambia de altura: la rana en el suelo, el pájaro de pie, el oso pesado, el gato tumbado. Se acaba siempre abajo.",
    "speech": "Cada línea cambia de altura: la rana en el suelo, el pájaro de pie, el oso pesado, el gato tumbado. Se acaba siempre abajo.",
    "source": "juega.animais.01/cancionPulso/consigna"
+  },
+  {
+   "id": "es_tutor_99016d3d_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Reparte una campanilla a cada niño, en círculo.",
+   "speech": "Reparte una campanilla a cada niño, en círculo.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/1/consigna"
   },
   {
    "id": "es_tutor_99596401_65",
@@ -5938,6 +6874,14 @@
    "text": "Repartir una concha de vieira pulida a cada pareja.",
    "speech": "Repartir una concha de vieira pulida a cada pareja.",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/4/consigna"
+  },
+  {
+   "id": "es_tutor_99ccc65c_253",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Se llama modelado indirecto. La criatura dice «mira mamá, castaña small» y la respuesta no es corregir, es: «Yes! A small chestnut! Put the small chestnut inside the basket!». Se valida lo que quiso decir, se da la forma correcta y se continúa el juego.",
+   "speech": "Se llama modelado indirecto. La criatura dice «mira mamá, castaña small» y la respuesta no es corregir, es: «Yes! A small chestnut! Put the small chestnut inside the basket!». Se valida lo que quiso decir, se da la forma correcta y se continúa el juego.",
+   "source": "formacion.familia/paso/3/corpo"
   },
   {
    "id": "es_tutor_99e0c0ff_92",
@@ -5962,6 +6906,14 @@
    "text": "Agitar el bote de las castañas y parar, agitar y parar.",
    "speech": "Agitar el bote de las castañas y parar, agitar y parar.",
    "source": "juega.follas.01/exploracion/paso/2"
+  },
+  {
+   "id": "es_tutor_9b6f688d_52",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Agacharse rápido y frotar las hojas contra el suelo.",
+   "speech": "Agacharse rápido y frotar las hojas contra el suelo.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/3/cmd/cmd.novembro.2_3.02/accionFisica"
   },
   {
    "id": "es_tutor_9b7aa44b_84",
@@ -6004,6 +6956,22 @@
    "source": "juega.corpo.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "es_tutor_9c0f315e_61",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Describir círculos sobre la camiseta a la altura del ombligo.",
+   "speech": "Describir círculos sobre la camiseta a la altura del ombligo.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.02/accionFisica"
+  },
+  {
+   "id": "es_tutor_9c61dc34_52",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Frotar con suavidad mejillas y frente con la toalla.",
+   "speech": "Frotar con suavidad mejillas y frente con la toalla.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.01/accionFisica"
+  },
+  {
    "id": "es_tutor_9cc55706_97",
    "lang": "es",
    "style": "tutor",
@@ -6044,12 +7012,36 @@
    "source": "juega.choiva.01/exploracion/objetivoSensorial"
   },
   {
+   "id": "es_tutor_9e49ad12_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Secuencia de la canción tocando rodillas, hombros y pies.",
+   "speech": "Secuencia de la canción tocando rodillas, hombros y pies.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_9e7ccde5_58",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Muestra la toallita y deja que la huelan antes de tocarla.",
+   "speech": "Muestra la toallita y deja que la huelan antes de tocarla.",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_9e9a8ca1_60",
    "lang": "es",
    "style": "tutor",
    "text": "Mover los cascabeles todas juntas mientras suena la canción.",
    "speech": "Mover los cascabeles todas juntas mientras suena la canción.",
    "source": "juega.inverno.01/exploracion/paso/0"
+  },
+  {
+   "id": "es_tutor_9e9e99ba_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sin traducción. La acción es la traducción.",
+   "speech": "Sin traducción. La acción es la traducción.",
+   "source": "formacion.docente/paso/3/clave"
   },
   {
    "id": "es_tutor_9ebcce70_74",
@@ -6108,12 +7100,28 @@
    "source": "juega.animais.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_9fbe3d71_85",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Apoyar las patitas del títere en las rodillas del niño para que flexione las piernas.",
+   "speech": "Apoyar las patitas del títere en las rodillas del niño para que flexione las piernas.",
+   "source": "asamblea.primeiro_ciclo.febreiro.0_2_anos/fase/3/cmd/cmd.febreiro.0_2.01/accionFisica"
+  },
+  {
    "id": "es_tutor_9fd2024a_64",
    "lang": "es",
    "style": "tutor",
    "text": "Marca el ritmo rápido y luego lento, sin explicar la diferencia.",
    "speech": "Marca el ritmo rápido y luego lento, sin explicar la diferencia.",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/fase/3/cmd/cmd.xaneiro.4i.01/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_a02de827_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Poco y siempre igual le gana a mucho y a veces.",
+   "speech": "Poco y siempre igual le gana a mucho y a veces.",
+   "source": "formacion.familia/paso/1/clave"
   },
   {
    "id": "es_tutor_a0721be8_128",
@@ -6132,12 +7140,44 @@
    "source": "juega.choiva.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_a090e688_50",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sentarse y atar las botas imaginarias en silencio.",
+   "speech": "Sentarse y atar las botas imaginarias en silencio.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/4/consigna"
+  },
+  {
+   "id": "es_tutor_a0a0f725_46",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Bajar los brazos despacio y volver a sentarse.",
+   "speech": "Bajar los brazos despacio y volver a sentarse.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/4/consigna"
+  },
+  {
+   "id": "es_tutor_a10e623c_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tocar cada parte siguiendo un compás que acelera.",
+   "speech": "Tocar cada parte siguiendo un compás que acelera.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.01/accionFisica"
+  },
+  {
    "id": "es_tutor_a16df443_68",
    "lang": "es",
    "style": "tutor",
    "text": "Susurra la frase y detiene el pandero; no añade ninguna palabra más.",
    "speech": "Susurra la frase y detiene el pandero; no añade ninguna palabra más.",
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.02/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_a19955f2_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El gato se tumba y la voz baja hasta el susurro.",
+   "speech": "El gato se tumba y la voz baja hasta el susurro.",
+   "source": "asamblea.primeiro_ciclo.febreiro.0_2_anos/fase/4/consigna"
   },
   {
    "id": "es_tutor_a19c9102_65",
@@ -6212,6 +7252,14 @@
    "source": "aula.conto.01/queHacerEnCasa"
   },
   {
+   "id": "es_tutor_a3ce5c52_55",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dejar caer las hojas en lluvia ligera delante de ellos.",
+   "speech": "Dejar caer las hojas en lluvia ligera delante de ellos.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/3/cmd/cmd.novembro.0_2.01/accionFisica"
+  },
+  {
    "id": "es_tutor_a3df3406_60",
    "lang": "es",
    "style": "tutor",
@@ -6250,6 +7298,22 @@
    "text": "Discriminar seco y mojado, fuerte y suave, con el tacto y con el oído.",
    "speech": "Discriminar seco y mojado, fuerte y suave, con el tacto y con el oído.",
    "source": "juega.follas.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "es_tutor_a6218141_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Batir los brazos enteros desde los hombros.",
+   "speech": "Batir los brazos enteros desde los hombros.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.02/accionFisica"
+  },
+  {
+   "id": "es_tutor_a645d57e_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No se examina. Se acompaña.",
+   "speech": "No se examina. Se acompaña.",
+   "source": "formacion.familia/paso/2/clave"
   },
   {
    "id": "es_tutor_a6aaa849_69",
@@ -6348,6 +7412,14 @@
    "source": "juega.primavera.01/exploracion/avisoSeguridad"
   },
   {
+   "id": "es_tutor_ab0c9ed1_61",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Bajar la tela hasta posarla y dejarla quieta encima de ellos.",
+   "speech": "Bajar la tela hasta posarla y dejarla quieta encima de ellos.",
+   "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_ab78cb02_77",
    "lang": "es",
    "style": "tutor",
@@ -6386,6 +7458,14 @@
    "text": "Al final Lúa pisa pesado como un oso, pum, pum, y después se enrosca y vuelve a ser gata: miau.",
    "speech": "Al final Lúa pisa pesado como un oso, pum, pum, y después se enrosca y vuelve a ser gata: miau.",
    "source": "juega.animais.01/cuento/2/texto"
+  },
+  {
+   "id": "es_tutor_aca37815_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sentarse con cuidado sobre la alfombra.",
+   "speech": "Sentarse con cuidado sobre la alfombra.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.03/accionFisica"
   },
   {
    "id": "es_tutor_acafbb32_95",
@@ -6468,6 +7548,14 @@
    "source": "juega.follas.01/exploracion/paso/1"
   },
   {
+   "id": "es_tutor_b086b7f8_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mejor corta y entera que larga y a medias.",
+   "speech": "Mejor corta y entera que larga y a medias.",
+   "source": "formacion.docente/paso/1/clave"
+  },
+  {
    "id": "es_tutor_b0c37ee2_47",
    "lang": "es",
    "style": "tutor",
@@ -6490,6 +7578,22 @@
    "text": "En la cocina, con un barreño bajo y una toalla al alcance.",
    "speech": "En la cocina, con un barreño bajo y una toalla al alcance.",
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_b1c0e187_62",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Rozar las partes del cuerpo con la pluma al son de la canción.",
+   "speech": "Rozar las partes del cuerpo con la pluma al son de la canción.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_b1ec9d52_61",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta los tres títeres uno a uno, a la altura de sus ojos.",
+   "speech": "Presenta los tres títeres uno a uno, a la altura de sus ojos.",
+   "source": "asamblea.primeiro_ciclo.febreiro.0_2_anos/fase/1/consigna"
   },
   {
    "id": "es_tutor_b26f8e1a_74",
@@ -6532,6 +7636,14 @@
    "source": "juega.primavera.01/cuento/2/pregunta"
   },
   {
+   "id": "es_tutor_b3c3b8c4_56",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Recoger las siluetas por color y sentarse encima de una.",
+   "speech": "Recoger las siluetas por color y sentarse encima de una.",
+   "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_b3cd9272_47",
    "lang": "es",
    "style": "tutor",
@@ -6546,6 +7658,14 @@
    "text": "Modelado narrativo expresivo, mirando arriba como si hubiese ramas.",
    "speech": "Modelado narrativo expresivo, mirando arriba como si hubiese ramas.",
    "source": "asamblea.segundo_ciclo.outubro.5_infantil/fase/3/cmd/cmd.outubro.5i.03/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_b456fc12_37",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz rodar la botella por sus piernas.",
+   "speech": "Haz rodar la botella por sus piernas.",
+   "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/2/consigna"
   },
   {
    "id": "es_tutor_b4685003_139",
@@ -6594,6 +7714,14 @@
    "text": "Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar, esconderse. Y pon palabras al movimiento mientras sucede, no después. Si la pantalla entra en algún momento, que sea acompañada y hablada, nunca como forma de que esté quieto.",
    "speech": "Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar, esconderse. Y pon palabras al movimiento mientras sucede, no después. Si la pantalla entra en algún momento, que sea acompañada y hablada, nunca como forma de que esté quieto.",
    "source": "academy.juego_movimiento_sin_pantallas.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_b5d19aae_68",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Al cesar la música, dejarse caer despacio en la alfombra como hojas.",
+   "speech": "Al cesar la música, dejarse caer despacio en la alfombra como hojas.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/4/consigna"
   },
   {
    "id": "es_tutor_b5d8af5d_137",
@@ -6722,6 +7850,22 @@
    "text": "Antes de nada, lee el aviso de seguridad de la pantalla y comprueba el agua. Después ponte a su altura y ve nombrando lo que hacen mientras lo hacen, en frases cortas y sin preguntar nada: «agua templada», «la concha es suave», «la mano mojada». Las preguntas vienen en el paso siguiente, no aquí.",
    "speech": "Antes de nada, lee el aviso de seguridad de la pantalla y comprueba el agua. Después ponte a su altura y ve nombrando lo que hacen mientras lo hacen, en frases cortas y sin preguntar nada: «agua templada», «la concha es suave», «la mano mojada». Las preguntas vienen en el paso siguiente, no aquí.",
    "source": "aula.exploracion.01/queHacerEnCasa"
+  },
+  {
+   "id": "es_tutor_ba837c78_192",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La app es para ti. La criatura no toca la pantalla en ningún momento: lo que funciona a esta edad es el cuerpo, la voz y los objetos de casa. Todo lo que aquí se propone se hace sin pantallas.",
+   "speech": "La app es para ti. La criatura no toca la pantalla en ningún momento: lo que funciona a esta edad es el cuerpo, la voz y los objetos de casa. Todo lo que aquí se propone se hace sin pantallas.",
+   "source": "formacion.familia/paso/0/corpo"
+  },
+  {
+   "id": "es_tutor_bb95dbd7_40",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Batir los brazos caminando de puntillas.",
+   "speech": "Batir los brazos caminando de puntillas.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/3/cmd/cmd.novembro.2_3.01/accionFisica"
   },
   {
    "id": "es_tutor_bb9726cf_61",
@@ -6876,6 +8020,14 @@
    "source": "aula.exploracion.01/ejemploCotidiano"
   },
   {
+   "id": "es_tutor_c1a04940_66",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Localizar la pieza en el suelo y posar la punta del zapato encima.",
+   "speech": "Localizar la pieza en el suelo y posar la punta del zapato encima.",
+   "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/3/cmd/cmd.marzo.2_3.01/accionFisica"
+  },
+  {
    "id": "es_tutor_c1a6d0d3_23",
    "lang": "es",
    "style": "tutor",
@@ -6898,6 +8050,14 @@
    "text": "¿Qué se pone Lúa primero? ¿Y al final?",
    "speech": "¿Qué se pone Lúa primero? ¿Y al final?",
    "source": "juega.choiva.01/cuento/1/pregunta"
+  },
+  {
+   "id": "es_tutor_c2afcdd7_68",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+   "speech": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/consigna"
   },
   {
    "id": "es_tutor_c2cad933_158",
@@ -6980,6 +8140,14 @@
    "source": "juega.animais.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_c4878a77_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mantenerse encogidos y quietos en el suelo.",
+   "speech": "Mantenerse encogidos y quietos en el suelo.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/3/cmd/cmd.abril.2_3.01/accionFisica"
+  },
+  {
    "id": "es_tutor_c4a77653_71",
    "lang": "es",
    "style": "tutor",
@@ -6994,6 +8162,22 @@
    "text": "Coger espuma con las dos manos y ver cómo desaparece.",
    "speech": "Coger espuma con las dos manos y ver cómo desaparece.",
    "source": "juega.auga.01/exploracion/paso/2"
+  },
+  {
+   "id": "es_tutor_c56ad64d_40",
+   "lang": "es",
+   "style": "tutor",
+   "text": "No es la misma sesión con otra etiqueta.",
+   "speech": "No es la misma sesión con otra etiqueta.",
+   "source": "formacion.docente/paso/5/clave"
+  },
+  {
+   "id": "es_tutor_c5caecfa_52",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Acerca la cesta y deja que miren y toquen las hojas.",
+   "speech": "Acerca la cesta y deja que miren y toquen las hojas.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/1/consigna"
   },
   {
    "id": "es_tutor_c624eea8_46",
@@ -7148,6 +8332,14 @@
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/cmd/cmd.novembro.6i.01/modeladoDocente"
   },
   {
+   "id": "es_tutor_cc7d3377_66",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ondear la tela horizontalmente a pocos centímetros de sus cuerpos.",
+   "speech": "Ondear la tela horizontalmente a pocos centímetros de sus cuerpos.",
+   "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_cd19bd50_73",
    "lang": "es",
    "style": "tutor",
@@ -7234,6 +8426,14 @@
    "text": "Guiar el lavado por partes del cuerpo con la voz, sin traducir nada.",
    "speech": "Guiar el lavado por partes del cuerpo con la voz, sin traducir nada.",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "es_tutor_d023c05a_60",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Congelar la postura del animal preferido, sin emitir sonido.",
+   "speech": "Congelar la postura del animal preferido, sin emitir sonido.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/4/consigna"
   },
   {
    "id": "es_tutor_d0302984_66",
@@ -7380,6 +8580,22 @@
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/fase/3/consigna"
   },
   {
+   "id": "es_tutor_d66b7bfc_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Reparte dos hojas de cartulina a cada niño.",
+   "speech": "Reparte dos hojas de cartulina a cada niño.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/1/consigna"
+  },
+  {
+   "id": "es_tutor_d6ec0dee_56",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Frotar las manoplas sobre las palmas del bebé, despacio.",
+   "speech": "Frotar las manoplas sobre las palmas del bebé, despacio.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_d6fb9d91_80",
    "lang": "es",
    "style": "tutor",
@@ -7402,6 +8618,14 @@
    "text": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. Las telas deben superar los 20 cm por lado, sin hilos sueltos, botones ni lentejuelas, y se lavan después de cada sesión. Retírese cualquier pieza que se deshilache.",
    "speech": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. Las telas deben superar los 20 cm por lado, sin hilos sueltos, botones ni lentejuelas, y se lavan después de cada sesión. Retírese cualquier pieza que se deshilache.",
    "source": "juega.benvida.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "es_tutor_d7c0dbe7_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Eleva un puñado de hojas a la altura de sus ojos.",
+   "speech": "Eleva un puñado de hojas a la altura de sus ojos.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/2/consigna"
   },
   {
    "id": "es_tutor_d81bb376_63",
@@ -7452,12 +8676,28 @@
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.02/modeladoDocente"
   },
   {
+   "id": "es_tutor_dae7e41e_66",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Acerca el atomizador y deja que oigan el sonido antes de sentirlo.",
+   "speech": "Acerca el atomizador y deja que oigan el sonido antes de sentirlo.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_db10a8c7_55",
    "lang": "es",
    "style": "tutor",
    "text": "Again! Clap high, clap low, touch your nose, off we go!",
    "speech": "Again! Clap high, clap low, touch your nose, off we go!",
    "source": "asamblea.segundo_ciclo.maio.4_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "es_tutor_db70c156_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Detener al instante cualquier oscilación.",
+   "speech": "Detener al instante cualquier oscilación.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.03/accionFisica"
   },
   {
    "id": "es_tutor_dbc6b018_68",
@@ -7508,6 +8748,14 @@
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/cmd/cmd.decembro.6i.03/modeladoDocente"
   },
   {
+   "id": "es_tutor_dcbbfb17_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Guía dos palmadas lentas.",
+   "speech": "Guía dos palmadas lentas.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/3/cmd/cmd.setembro.0_2.03/accionFisica"
+  },
+  {
    "id": "es_tutor_dce6d34f_72",
    "lang": "es",
    "style": "tutor",
@@ -7516,12 +8764,28 @@
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/fase/3/cmd/cmd.outubro.6i.03/modeladoDocente"
   },
   {
+   "id": "es_tutor_ddad55be_53",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ondear la tela creando flujo de aire y oleaje visual.",
+   "speech": "Ondear la tela creando flujo de aire y oleaje visual.",
+   "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/3/cmd/cmd.xuno.0_2.01/accionFisica"
+  },
+  {
    "id": "es_tutor_de297476_62",
    "lang": "es",
    "style": "tutor",
    "text": "Si no quiere decirla, se le dice al peluche. Nunca se insiste.",
    "speech": "Si no quiere decirla, se le dice al peluche. Nunca se insiste.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
+   "id": "es_tutor_df36bd29_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ondear el tul amarillo sobre sus rostros.",
+   "speech": "Ondear el tul amarillo sobre sus rostros.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.02/accionFisica"
   },
   {
    "id": "es_tutor_df7e67ec_50",
@@ -7700,6 +8964,14 @@
    "source": "juega.mar.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_e83791f9_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Modula el volumen: fuerte y rápido, luego suave.",
+   "speech": "Modula el volumen: fuerte y rápido, luego suave.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_e8827823_65",
    "lang": "es",
    "style": "tutor",
@@ -7804,6 +9076,14 @@
    "source": "aula.pulso.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "es_tutor_eb16c04b_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Envolver los hombros en la toalla cálida.",
+   "speech": "Envolver los hombros en la toalla cálida.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/3/cmd/cmd.decembro.0_2.02/accionFisica"
+  },
+  {
    "id": "es_tutor_eb5abdee_65",
    "lang": "es",
    "style": "tutor",
@@ -7826,6 +9106,14 @@
    "text": "Si la careta o el disfraz dan miedo, no se insiste ni se ríe. Se guarda y se prueba en otro momento, o nunca.",
    "speech": "Si la careta o el disfraz dan miedo, no se insiste ni se ríe. Se guarda y se prueba en otro momento, o nunca.",
    "source": "juega.animais.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "es_tutor_ec0f95a4_190",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Durante meses va a entender mucho más de lo que produce. Es el período de silencio y es normal. Si le dices «coat on» y va a buscar el abrigo, ha comprendido: eso es lo que hay que celebrar.",
+   "speech": "Durante meses va a entender mucho más de lo que produce. Es el período de silencio y es normal. Si le dices «coat on» y va a buscar el abrigo, ha comprendido: eso es lo que hay que celebrar.",
+   "source": "formacion.familia/paso/5/corpo"
   },
   {
    "id": "es_tutor_ec7960a2_79",
@@ -7852,6 +9140,14 @@
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/3/cmd/cmd.xuno.4i.01/accionFisica"
   },
   {
+   "id": "es_tutor_ee30fa64_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sitúate con el bebé delante del espejo de la pared.",
+   "speech": "Sitúate con el bebé delante del espejo de la pared.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_ee7802ab_93",
    "lang": "es",
    "style": "tutor",
@@ -7876,6 +9172,14 @@
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/consigna"
   },
   {
+   "id": "es_tutor_eeef740d_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "De pie, con sitio alrededor para mover las piernas.",
+   "speech": "De pie, con sitio alrededor para mover las piernas.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/1/consigna"
+  },
+  {
    "id": "es_tutor_ef2dc09b_57",
    "lang": "es",
    "style": "tutor",
@@ -7898,6 +9202,14 @@
    "text": "Sentados en círculo sobre la alfombra, botar al compás.",
    "speech": "Sentados en círculo sobre la alfombra, botar al compás.",
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/consigna"
+  },
+  {
+   "id": "es_tutor_f02cedcb_268",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el 1.º ciclo cambia por tramo: 0-2 trabaja en el regazo y con el contacto; 2-3 ya es movimiento en grupo. En el 2.º ciclo cambia por clase: 4.º acción expandida, 5.º dramatizado y narrativo, 6.º entre iguales. Elige tu grupo al entrar y la app te da lo que le toca.",
+   "speech": "En el 1.º ciclo cambia por tramo: 0-2 trabaja en el regazo y con el contacto; 2-3 ya es movimiento en grupo. En el 2.º ciclo cambia por clase: 4.º acción expandida, 5.º dramatizado y narrativo, 6.º entre iguales. Elige tu grupo al entrar y la app te da lo que le toca.",
+   "source": "formacion.docente/paso/5/corpo"
   },
   {
    "id": "es_tutor_f0438279_87",
@@ -7948,6 +9260,14 @@
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.01/modeladoDocente"
   },
   {
+   "id": "es_tutor_f22520b3_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Incorporarse de un salto.",
+   "speech": "Incorporarse de un salto.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.03/accionFisica"
+  },
+  {
    "id": "es_tutor_f28ecc81_275",
    "lang": "es",
    "style": "tutor",
@@ -7986,6 +9306,14 @@
    "text": "Baja la voz al mínimo y no pregunta cuál fue la palabra.",
    "speech": "Baja la voz al mínimo y no pregunta cuál fue la palabra.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.03/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_f4358e41_52",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Envuelve los hombros en una toalla cálida y susurra.",
+   "speech": "Envuelve los hombros en una toalla cálida y susurra.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/4/consigna"
   },
   {
    "id": "es_tutor_f450c416_38",
@@ -8092,6 +9420,14 @@
    "source": "asamblea.segundo_ciclo.abril.6_infantil/fase/3/cmd/cmd.abril.6i.03/accionFisica"
   },
   {
+   "id": "es_tutor_f88d43fa_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Secuencia de aseo simbólico sin agua, en orden.",
+   "speech": "Secuencia de aseo simbólico sin agua, en orden.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "es_tutor_f8a93cf2_71",
    "lang": "es",
    "style": "tutor",
@@ -8156,6 +9492,14 @@
    "source": "juega.auga.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_faa5d1e0_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuadrupedia pesada con manos y pies en el suelo.",
+   "speech": "Cuadrupedia pesada con manos y pies en el suelo.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.02/accionFisica"
+  },
+  {
    "id": "es_tutor_faffe4f7_48",
    "lang": "es",
    "style": "tutor",
@@ -8196,6 +9540,14 @@
    "source": "aula.ponte_casa.01/queHacerEnCasa"
   },
   {
+   "id": "es_tutor_fc02be4c_58",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Nunca pidas que repitan. Nunca preguntes «¿cómo se dice?».",
+   "speech": "Nunca pidas que repitan. Nunca preguntes «¿cómo se dice?».",
+   "source": "formacion.docente/paso/2/clave"
+  },
+  {
    "id": "es_tutor_fc06055c_99",
    "lang": "es",
    "style": "tutor",
@@ -8228,12 +9580,28 @@
    "source": "juega.cores.01/cuento/0/pregunta"
   },
   {
+   "id": "es_tutor_fd14c764_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Deja una hoja en la mano del bebé y baja la voz.",
+   "speech": "Deja una hoja en la mano del bebé y baja la voz.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "es_tutor_fd2657f7_75",
    "lang": "es",
    "style": "tutor",
    "text": "Sumergir la concha en el agua tibia juntos y observar cómo cambia su color.",
    "speech": "Sumergir la concha en el agua tibia juntos y observar cómo cambia su color.",
    "source": "juega.mar.01/exploracion/paso/2"
+  },
+  {
+   "id": "es_tutor_fddbeb4d_40",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Baja las manos y apóyalas en sus muslos.",
+   "speech": "Baja las manos y apóyalas en sus muslos.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/3/cmd/cmd.setembro.0_2.02/accionFisica"
   },
   {
    "id": "es_tutor_fe20fe84_57",
@@ -8258,6 +9626,14 @@
    "text": "Señalar la barriga, reír o decir 'barriga'.",
    "speech": "Señalar la barriga, reír o decir 'barriga'.",
    "source": "juega.corpo.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_ff5840ad_66",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ajusta las muñequeras con cascabeles en los tobillos de los bebés.",
+   "speech": "Ajusta las muñequeras con cascabeles en los tobillos de los bebés.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/1/consigna"
   },
   {
    "id": "gl_slow_00222185_5",
@@ -8684,6 +10060,14 @@
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.01/modeladoDocente"
   },
   {
+   "id": "gl_tutor_02225cef_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mellor curta e enteira que longa e a medias.",
+   "speech": "Mellor curta e enteira que longa e a medias.",
+   "source": "formacion.docente/paso/1/clave"
+  },
+  {
    "id": "gl_tutor_02318cbd_180",
    "lang": "gl",
    "style": "tutor",
@@ -8698,6 +10082,14 @@
    "text": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. Despexar a zona de mesas, cantos e xoguetes duros antes de empezar. Os pañuelos só se moven cos brazos: nunca se poñen sobre a cara nin arredor do pescozo.",
    "speech": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. Despexar a zona de mesas, cantos e xoguetes duros antes de empezar. Os pañuelos só se moven cos brazos: nunca se poñen sobre a cara nin arredor do pescozo.",
    "source": "juega.corpo.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "gl_tutor_02c0e221_225",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non hai que falar inglés todo o día: iso cansa e acábase deixando. Escóllese un momento fixo e curto, de tres a cinco minutos, e sempre o mesmo: vestirse pola mañá, recoller despois de xogar, poñer a mesa, ou o baño da noite.",
+   "speech": "Non hai que falar inglés todo o día: iso cansa e acábase deixando. Escóllese un momento fixo e curto, de tres a cinco minutos, e sempre o mesmo: vestirse pola mañá, recoller despois de xogar, poñer a mesa, ou o baño da noite.",
+   "source": "formacion.familia/paso/1/corpo"
   },
   {
    "id": "gl_tutor_030de57b_49",
@@ -8748,6 +10140,14 @@
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.03/modeladoDocente"
   },
   {
+   "id": "gl_tutor_05e3a9dc_54",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Acariña as meixelas reforzando a sensación de frescor.",
+   "speech": "Acariña as meixelas reforzando a sensación de frescor.",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_05f3d129_19",
    "lang": "gl",
    "style": "tutor",
@@ -8762,6 +10162,14 @@
    "text": "Coloca as dúas alfombras e formula a condicional sen xesto.",
    "speech": "Coloca as dúas alfombras e formula a condicional sen xesto.",
    "source": "asamblea.segundo_ciclo.xaneiro.6_infantil/fase/3/cmd/cmd.xaneiro.6i.03/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_0634c06c_47",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Desprazarse de puntillas cos brazos estendidos.",
+   "speech": "Desprazarse de puntillas cos brazos estendidos.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.01/accionFisica"
   },
   {
    "id": "gl_tutor_068122bd_57",
@@ -8964,6 +10372,14 @@
    "source": "juega.animais.01/cuento/1/pregunta"
   },
   {
+   "id": "gl_tutor_0cd339fe_60",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sostén as mans do bebé e entoa a canción mirándoo aos ollos.",
+   "speech": "Sostén as mans do bebé e entoa a canción mirándoo aos ollos.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_0d04551c_157",
    "lang": "gl",
    "style": "tutor",
@@ -9004,6 +10420,14 @@
    "source": "juega.choiva.01/exploracion/avisoSeguridad"
   },
   {
+   "id": "gl_tutor_0e2a2651_232",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O aparello é un apuntador entre bastidores. Vai nunha repisa ou nun atril, fóra da vista do grupo. Non se lle ensina a ninguén, non reproduce vídeo e non serve para captar a atención. Iso é o que significa «cero pantallas infantís».",
+   "speech": "O aparello é un apuntador entre bastidores. Vai nunha repisa ou nun atril, fóra da vista do grupo. Non se lle ensina a ninguén, non reproduce vídeo e non serve para captar a atención. Iso é o que significa «cero pantallas infantís».",
+   "source": "formacion.docente/paso/0/corpo"
+  },
+  {
    "id": "gl_tutor_0ed19bb6_62",
    "lang": "gl",
    "style": "tutor",
@@ -9018,6 +10442,14 @@
    "text": "Axita os seus cascabeis coa mesma enerxía que pide.",
    "speech": "Axita os seus cascabeis coa mesma enerxía que pide.",
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/fase/3/cmd/cmd.febreiro.4i.01/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_0f928501_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Deter ao instante calquera oscilación.",
+   "speech": "Deter ao instante calquera oscilación.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.03/accionFisica"
   },
   {
    "id": "gl_tutor_0fcc9541_57",
@@ -9036,6 +10468,14 @@
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.03/modeladoDocente"
   },
   {
+   "id": "gl_tutor_109a1c66_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lixeiro cóxegas nos dedos dos pés.",
+   "speech": "Lixeiro cóxegas nos dedos dos pés.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/3/cmd/cmd.outubro.0_2.03/accionFisica"
+  },
+  {
    "id": "gl_tutor_109b196b_74",
    "lang": "gl",
    "style": "tutor",
@@ -9050,6 +10490,14 @@
    "text": "Xogar co mar cunha sabana ou toalla grande, seguindo a voz.",
    "speech": "Xogar co mar cunha sabana ou toalla grande, seguindo a voz.",
    "source": "asamblea.segundo_ciclo.xuno.5_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "gl_tutor_116e462e_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Manterse encollidos e quietos no chan.",
+   "speech": "Manterse encollidos e quietos no chan.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/3/cmd/cmd.abril.2_3.01/accionFisica"
   },
   {
    "id": "gl_tutor_116e4a8f_260",
@@ -9106,6 +10554,22 @@
    "text": "Calquera resposta vale; o que importa é probar as dúas cousas.",
    "speech": "Calquera resposta vale; o que importa é probar as dúas cousas.",
    "source": "juega.corpo.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_1302ee59_59",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Localizar a peza no chan e pousar a punta do zapato enriba.",
+   "speech": "Localizar a peza no chan e pousar a punta do zapato enriba.",
+   "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/3/cmd/cmd.marzo.2_3.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_13fb1ba4_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ondear o tul amarelo sobre os seus rostros.",
+   "speech": "Ondear o tul amarelo sobre os seus rostros.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.02/accionFisica"
   },
   {
    "id": "gl_tutor_1426e9cc_61",
@@ -9212,6 +10676,14 @@
    "source": "juega.inverno.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_17b05713_73",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Erguerse milímetro a milímetro ata as puntas dos pés cos brazos en abano.",
+   "speech": "Erguerse milímetro a milímetro ata as puntas dos pés cos brazos en abano.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/3/cmd/cmd.abril.2_3.02/accionFisica"
+  },
+  {
    "id": "gl_tutor_17f9f8ad_174",
    "lang": "gl",
    "style": "tutor",
@@ -9284,6 +10756,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/ejemploCotidiano"
   },
   {
+   "id": "gl_tutor_19e396d3_52",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Achega a cesta e deixa que miren e toquen as follas.",
+   "speech": "Achega a cesta e deixa que miren e toquen as follas.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/1/consigna"
+  },
+  {
    "id": "gl_tutor_1a3d4a39_50",
    "lang": "gl",
    "style": "tutor",
@@ -9298,6 +10778,14 @@
    "text": "Yes, that one is bigger! Put the bigger leaf here and the small one there.",
    "speech": "Yes, that one is bigger! Put the bigger leaf here and the small one there.",
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_1aaf0c1c_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Baixar os brazos amodo e volver a sentarse.",
+   "speech": "Baixar os brazos amodo e volver a sentarse.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/4/consigna"
   },
   {
    "id": "gl_tutor_1ae95f85_72",
@@ -9404,6 +10892,14 @@
    "source": "academy.juego_movimiento_sin_pantallas.01/queHacerEnCasa"
   },
   {
+   "id": "gl_tutor_1fde277c_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bater os brazos enteiros desde os ombreiros.",
+   "speech": "Bater os brazos enteiros desde os ombreiros.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.02/accionFisica"
+  },
+  {
    "id": "gl_tutor_20dd83f4_244",
    "lang": "gl",
    "style": "tutor",
@@ -9418,6 +10914,14 @@
    "text": "Erguer as dúas mans e contalas moi amodo mentres se miran.",
    "speech": "Erguer as dúas mans e contalas moi amodo mentres se miran.",
    "source": "juega.corpo.01/matematicas/accion/0"
+  },
+  {
+   "id": "gl_tutor_21112461_45",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Reparte dúas follas de cartolina a cada neno.",
+   "speech": "Reparte dúas follas de cartolina a cada neno.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_213e3b23_51",
@@ -9458,6 +10962,14 @@
    "text": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. As SEMENTES NON se manipulan soltas a esta idade: son un risco de atragoamento e de introdución nas fosas nasais; se se planta algo, plántao a persoa adulta. Úsese só terra vexetal envasada, nunca terra do exterior, e comprébese que as flores non son tóxicas nin están tratadas. Lávanse as mans ao rematar, sempre.",
    "speech": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. As SEMENTES NON se manipulan soltas a esta idade: son un risco de atragoamento e de introdución nas fosas nasais; se se planta algo, plántao a persoa adulta. Úsese só terra vexetal envasada, nunca terra do exterior, e comprébese que as flores non son tóxicas nin están tratadas. Lávanse as mans ao rematar, sempre.",
    "source": "juega.primavera.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "gl_tutor_22490518_60",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Caricias no torso e susurro prosódico ata que baixe o ritmo.",
+   "speech": "Caricias no torso e susurro prosódico ata que baixe o ritmo.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/4/consigna"
   },
   {
    "id": "gl_tutor_225c3a62_206",
@@ -9516,6 +11028,22 @@
    "source": "juega.choiva.01/cuento/1/texto"
   },
   {
+   "id": "gl_tutor_23cf9343_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tocar cada parte seguindo un compás que acelera.",
+   "speech": "Tocar cada parte seguindo un compás que acelera.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_23e73514_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tracción suave da cinta para erguerse á vez.",
+   "speech": "Tracción suave da cinta para erguerse á vez.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.01/accionFisica"
+  },
+  {
    "id": "gl_tutor_23ea82cf_76",
    "lang": "gl",
    "style": "tutor",
@@ -9532,6 +11060,22 @@
    "source": "academy.como_se_aprende_a_hablar.01/ideaClave"
   },
   {
+   "id": "gl_tutor_242bb214_65",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sentados en roda, todos suxeitan a cinta elástica coas dúas mans.",
+   "speech": "Sentados en roda, todos suxeitan a cinta elástica coas dúas mans.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/1/consigna"
+  },
+  {
+   "id": "gl_tutor_24e16912_180",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "En TPR a crianza responde movéndose, non falando. Hai un período de silencio que é normal e que hai que respectar: entende moito antes de producir. Se executa a acción, comprendeu.",
+   "speech": "En TPR a crianza responde movéndose, non falando. Hai un período de silencio que é normal e que hai que respectar: entende moito antes de producir. Se executa a acción, comprendeu.",
+   "source": "formacion.docente/paso/2/corpo"
+  },
+  {
    "id": "gl_tutor_25e97641_146",
    "lang": "gl",
    "style": "tutor",
@@ -9546,6 +11090,14 @@
    "text": "Axitación enérxica da tea con movemento amplo de brazos.",
    "speech": "Axitación enérxica da tea con movemento amplo de brazos.",
    "source": "asamblea.segundo_ciclo.xuno.5_infantil/fase/3/cmd/cmd.xuno.5i.02/accionFisica"
+  },
+  {
+   "id": "gl_tutor_27b74d54_45",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pouco e sempre igual gaña a moito e ás veces.",
+   "speech": "Pouco e sempre igual gaña a moito e ás veces.",
+   "source": "formacion.familia/paso/1/clave"
   },
   {
    "id": "gl_tutor_28780ee7_70",
@@ -9578,6 +11130,14 @@
    "text": "A docente non xesticula: repite a orde a ritmo pausado e agarda cinco segundos.",
    "speech": "A docente non xesticula: repite a orde a ritmo pausado e agarda cinco segundos.",
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/fase/3/cmd/cmd.outubro.6i.01/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_29ec4e31_58",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta os tres títeres un a un, á altura dos seus ollos.",
+   "speech": "Presenta os tres títeres un a un, á altura dos seus ollos.",
+   "source": "asamblea.primeiro_ciclo.febreiro.0_2_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_2aafedcd_108",
@@ -9650,6 +11210,22 @@
    "text": "Lavar e secar xuntos o que se vai comer, nomeando cada paso sen traducir.",
    "speech": "Lavar e secar xuntos o que se vai comer, nomeando cada paso sen traducir.",
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "gl_tutor_2d077764_59",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Axusta as muñequeiras cos axóuxeres nos nocellos dos bebés.",
+   "speech": "Axusta as muñequeiras cos axóuxeres nos nocellos dos bebés.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/1/consigna"
+  },
+  {
+   "id": "gl_tutor_2d31fd43_51",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dobrar a toalla sobre os xeonllos e quedar quietos.",
+   "speech": "Dobrar a toalla sobre os xeonllos e quedar quietos.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/4/consigna"
   },
   {
    "id": "gl_tutor_2d808757_193",
@@ -9804,6 +11380,14 @@
    "source": "juega.benvida.01/exploracion/paso/3"
   },
   {
+   "id": "gl_tutor_310394e7_60",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Os bebés deitados comodamente sobre unha colchoneta central.",
+   "speech": "Os bebés deitados comodamente sobre unha colchoneta central.",
+   "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/1/consigna"
+  },
+  {
    "id": "gl_tutor_313462ce_46",
    "lang": "gl",
    "style": "tutor",
@@ -9876,6 +11460,22 @@
    "source": "juega.benvida.01/cancionPulso/consigna"
   },
   {
+   "id": "gl_tutor_32966f10_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O gato deitase e a voz baixa ata o susurro.",
+   "speech": "O gato deitase e a voz baixa ata o susurro.",
+   "source": "asamblea.primeiro_ciclo.febreiro.0_2_anos/fase/4/consigna"
+  },
+  {
+   "id": "gl_tutor_32b91b00_58",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Deixa a botella quieta e mira como baixan as brillantiñas.",
+   "speech": "Deixa a botella quieta e mira como baixan as brillantiñas.",
+   "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_330b34d0_153",
    "lang": "gl",
    "style": "tutor",
@@ -9898,6 +11498,14 @@
    "text": "Colocar un barco grande e un barquiño pequeno diante da crianza.",
    "speech": "Colocar un barco grande e un barquiño pequeno diante da crianza.",
    "source": "juega.mar.01/matematicas/accion/0"
+  },
+  {
+   "id": "gl_tutor_33cfc962_59",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se unha crianza mira a pantalla, a pantalla está mal posta.",
+   "speech": "Se unha crianza mira a pantalla, a pantalla está mal posta.",
+   "source": "formacion.docente/paso/0/clave"
   },
   {
    "id": "gl_tutor_3429748c_57",
@@ -9956,12 +11564,28 @@
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "gl_tutor_380cae9d_66",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tras o freeze, mans abertas sobre os xeonllos e respiración lenta.",
+   "speech": "Tras o freeze, mans abertas sobre os xeonllos e respiración lenta.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_3824f51e_31",
    "lang": "gl",
    "style": "tutor",
    "text": "Non: só o parece, está a xogar.",
    "speech": "Non: só o parece, está a xogar.",
    "source": "juega.animais.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_39126783_45",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Acaricia a barriga con movementos circulares.",
+   "speech": "Acaricia a barriga con movementos circulares.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/3/cmd/cmd.outubro.0_2.02/accionFisica"
   },
   {
    "id": "gl_tutor_3960e52b_50",
@@ -10036,6 +11660,14 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.03/accionFisica"
   },
   {
+   "id": "gl_tutor_3e5a4f38_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Secuencia da canción tocando xeonllos, ombreiros e pés.",
+   "speech": "Secuencia da canción tocando xeonllos, ombreiros e pés.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_3e5ed832_191",
    "lang": "gl",
    "style": "tutor",
@@ -10050,6 +11682,14 @@
    "text": "Estimular o tacto, a propiocepción e a diferenza entre seco e mollado.",
    "speech": "Estimular o tacto, a propiocepción e a diferenza entre seco e mollado.",
    "source": "juega.mar.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "gl_tutor_3f2b08bf_71",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Inclinar o tronco adiante para secar os zapatos sen dobrar os xeonllos.",
+   "speech": "Inclinar o tronco adiante para secar os zapatos sen dobrar os xeonllos.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.03/accionFisica"
   },
   {
    "id": "gl_tutor_3fd4163c_51",
@@ -10116,6 +11756,14 @@
    "source": "juega.choiva.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "gl_tutor_41aef1e1_49",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pousa o tul sobre as pernas e deixa que o toquen.",
+   "speech": "Pousa o tul sobre as pernas e deixa que o toquen.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_41b3b3df_59",
    "lang": "gl",
    "style": "tutor",
@@ -10148,6 +11796,14 @@
    "source": "juega.mar.01/cuento/0/texto"
   },
   {
+   "id": "gl_tutor_42d89bd9_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sacudir os brazos con forza.",
+   "speech": "Sacudir os brazos con forza.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.02/accionFisica"
+  },
+  {
    "id": "gl_tutor_439a62ee_48",
    "lang": "gl",
    "style": "tutor",
@@ -10164,12 +11820,28 @@
    "source": "juega.corpo.01/puenteCasa/recomendacionConversacion"
   },
   {
+   "id": "gl_tutor_440b894c_46",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Secuencia de aseo simbólico sen auga, en orde.",
+   "speech": "Secuencia de aseo simbólico sen auga, en orde.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_44103d4c_168",
    "lang": "gl",
    "style": "tutor",
    "text": "Na porta hai trinta segundos e as mans ocupadas. Tres ideas convértense en ningunha; unha soa, concreta e de hoxe, é a que chega á bañeira. O resto pode esperar a mañá.",
    "speech": "Na porta hai trinta segundos e as mans ocupadas. Tres ideas convértense en ningunha; unha soa, concreta e de hoxe, é a que chega á bañeira. O resto pode esperar a mañá.",
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_442fd202_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Espalla as siluetas pola zona da asemblea.",
+   "speech": "Espalla as siluetas pola zona da asemblea.",
+   "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_44412d2c_63",
@@ -10212,6 +11884,14 @@
    "source": "juega.choiva.01/preguntas/?/enunciado"
   },
   {
+   "id": "gl_tutor_451d36e0_53",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Rozar as partes do corpo coa pluma ao son da canción.",
+   "speech": "Rozar as partes do corpo coa pluma ao son da canción.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_4540c48d_61",
    "lang": "gl",
    "style": "tutor",
@@ -10252,6 +11932,14 @@
    "source": "asamblea.segundo_ciclo.maio.6_infantil/microRutina/escenaCotidiana"
   },
   {
+   "id": "gl_tutor_46e704b7_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agochar a campaíña e deitarse en silencio.",
+   "speech": "Agochar a campaíña e deitarse en silencio.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.02/accionFisica"
+  },
+  {
    "id": "gl_tutor_474710e2_104",
    "lang": "gl",
    "style": "tutor",
@@ -10282,6 +11970,14 @@
    "text": "Coordinación psicomotriz diferencial: galope rítmico, marcha cuadrúpeda pesada e marcha sobre metatarsos, sincronizadas con cambios de pulso do pandeiro.",
    "speech": "Coordinación psicomotriz diferencial: galope rítmico, marcha cuadrúpeda pesada e marcha sobre metatarsos, sincronizadas con cambios de pulso do pandeiro.",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/3/consigna"
+  },
+  {
+   "id": "gl_tutor_496ab6f9_63",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Néboa imperceptible sobre o dorso das mans, con cadencia suave.",
+   "speech": "Néboa imperceptible sobre o dorso das mans, con cadencia suave.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/2/consigna"
   },
   {
    "id": "gl_tutor_49d5158e_49",
@@ -10348,6 +12044,14 @@
    "source": "juega.inverno.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_4d18db79_179",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A app é para ti. A crianza non toca a pantalla en ningún momento: o que funciona nesta idade é o corpo, a voz e os obxectos da casa. Todo o que aquí se propón faise sen pantallas.",
+   "speech": "A app é para ti. A crianza non toca a pantalla en ningún momento: o que funciona nesta idade é o corpo, a voz e os obxectos da casa. Todo o que aquí se propón faise sen pantallas.",
+   "source": "formacion.familia/paso/0/corpo"
+  },
+  {
    "id": "gl_tutor_4d22ba44_139",
    "lang": "gl",
    "style": "tutor",
@@ -10362,6 +12066,14 @@
    "text": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. A laranxa é material de OBSERVACIÓN e non se come nin se despeza na sesión. A mazá córtase SEMPRE en bastón fino no sentido longo, nunca en rodajas nin en dados, porque a rodaja é unha das formas de maior risco de atragoamento; sérvese sentadas e con supervisión directa, e só a quen xa tome sólidos. Consúltense as alerxias do grupo antes de ofrecer nada.",
    "speech": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. A laranxa é material de OBSERVACIÓN e non se come nin se despeza na sesión. A mazá córtase SEMPRE en bastón fino no sentido longo, nunca en rodajas nin en dados, porque a rodaja é unha das formas de maior risco de atragoamento; sérvese sentadas e con supervisión directa, e só a quen xa tome sólidos. Consúltense as alerxias do grupo antes de ofrecer nada.",
    "source": "juega.cores.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "gl_tutor_4ef4d6e2_40",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Correr no sitio facendo soar a campaíña.",
+   "speech": "Correr no sitio facendo soar a campaíña.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.01/accionFisica"
   },
   {
    "id": "gl_tutor_4f59745b_104",
@@ -10452,6 +12164,14 @@
    "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "gl_tutor_51bdc3c9_46",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Reparte unha campaíña a cada neno, en círculo.",
+   "speech": "Reparte unha campaíña a cada neno, en círculo.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/1/consigna"
+  },
+  {
    "id": "gl_tutor_51cc9793_48",
    "lang": "gl",
    "style": "tutor",
@@ -10466,6 +12186,14 @@
    "text": "Trepa simulada con brazos alternos e agachada final agochando as mans.",
    "speech": "Trepa simulada con brazos alternos e agachada final agochando as mans.",
    "source": "asamblea.segundo_ciclo.outubro.5_infantil/fase/3/cmd/cmd.outubro.5i.03/accionFisica"
+  },
+  {
+   "id": "gl_tutor_5318562d_50",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ergue un puñado de follas á altura dos seus ollos.",
+   "speech": "Ergue un puñado de follas á altura dos seus ollos.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/2/consigna"
   },
   {
    "id": "gl_tutor_53232f5f_123",
@@ -10530,6 +12258,14 @@
    "text": "Hoxe demos a benvida ao curso coa gata Lúa: saudamos coa man, tocamos teas suaves e aprendemos a dicir ola e adeus en inglés.",
    "speech": "Hoxe demos a benvida ao curso coa gata Lúa: saudamos coa man, tocamos teas suaves e aprendemos a dicir ola e adeus en inglés.",
    "source": "juega.benvida.01/puenteCasa/mensajeFamilias"
+  },
+  {
+   "id": "gl_tutor_549f5bdf_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sen tradución. A acción é a tradución.",
+   "speech": "Sen tradución. A acción é a tradución.",
+   "source": "formacion.docente/paso/3/clave"
   },
   {
    "id": "gl_tutor_54cd33d6_221",
@@ -10604,12 +12340,28 @@
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/4/consigna"
   },
   {
+   "id": "gl_tutor_55934e47_47",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fregar as luvas sobre as palmas do bebé, amodo.",
+   "speech": "Fregar as luvas sobre as palmas do bebé, amodo.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_564def8b_52",
    "lang": "gl",
    "style": "tutor",
    "text": "Ofrece tarxetas sen texto e deixa decidir á parella.",
    "speech": "Ofrece tarxetas sen texto e deixa decidir á parella.",
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/cmd/cmd.febreiro.6i.03/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_56530266_45",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canta a adaptación rítmica de busca de cores.",
+   "speech": "Canta a adaptación rítmica de busca de cores.",
+   "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/2/consigna"
   },
   {
    "id": "gl_tutor_5670134c_38",
@@ -10636,6 +12388,14 @@
    "source": "juega.primavera.01/exploracion/paso/3"
   },
   {
+   "id": "gl_tutor_56bb9449_54",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Flexiona as pernas do bebé de xeito alterno ao compás.",
+   "speech": "Flexiona as pernas do bebé de xeito alterno ao compás.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_56f280bd_46",
    "lang": "gl",
    "style": "tutor",
@@ -10650,6 +12410,14 @@
    "text": "Entrega a primeira clave e despois só observa.",
    "speech": "Entrega a primeira clave e despois só observa.",
    "source": "asamblea.segundo_ciclo.maio.6_infantil/fase/3/cmd/cmd.maio.6i.03/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_57406a94_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pequenos tremores de pulso.",
+   "speech": "Pequenos tremores de pulso.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.01/accionFisica"
   },
   {
    "id": "gl_tutor_575fd71d_44",
@@ -10748,6 +12516,14 @@
    "source": "juega.benvida.01/cuento/2/texto"
   },
   {
+   "id": "gl_tutor_5967dd32_253",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No 1.º ciclo cambia por tramo: 0-2 traballa no colo e co contacto; 2-3 xa é movemento en grupo. No 2.º ciclo cambia por clase: 4.º acción expandida, 5.º dramatizado e narrativo, 6.º entre iguais. Elixe o teu grupo ao entrar e a app dáche o que lle toca.",
+   "speech": "No 1.º ciclo cambia por tramo: 0-2 traballa no colo e co contacto; 2-3 xa é movemento en grupo. No 2.º ciclo cambia por clase: 4.º acción expandida, 5.º dramatizado e narrativo, 6.º entre iguais. Elixe o teu grupo ao entrar e a app dáche o que lle toca.",
+   "source": "formacion.docente/paso/5/corpo"
+  },
+  {
    "id": "gl_tutor_59fcb16b_58",
    "lang": "gl",
    "style": "tutor",
@@ -10762,6 +12538,14 @@
    "text": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. AS CASTAÑAS NON SE MANIPULAN SOLTAS: van sempre dentro dun bote pechado e precintado, porque son un risco de atragoamento. As follas recóllense lonxe de estradas, lávanse e sécanse antes de entrar na aula, e retírase calquera que estea rota en anacos pequenos.",
    "speech": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. AS CASTAÑAS NON SE MANIPULAN SOLTAS: van sempre dentro dun bote pechado e precintado, porque son un risco de atragoamento. As follas recóllense lonxe de estradas, lávanse e sécanse antes de entrar na aula, e retírase calquera que estea rota en anacos pequenos.",
    "source": "juega.follas.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "gl_tutor_5a9b77b9_77",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Apoiar as patiñas do títere nos xeonllos do neno para que flexione as pernas.",
+   "speech": "Apoiar as patiñas do títere nos xeonllos do neno para que flexione as pernas.",
+   "source": "asamblea.primeiro_ciclo.febreiro.0_2_anos/fase/3/cmd/cmd.febreiro.0_2.01/accionFisica"
   },
   {
    "id": "gl_tutor_5b2672bf_68",
@@ -10852,6 +12636,22 @@
    "source": "asamblea.segundo_ciclo.maio.5_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "gl_tutor_5e88c363_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Patexo alterno que fai soar os axóuxeres.",
+   "speech": "Patexo alterno que fai soar os axóuxeres.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/3/cmd/cmd.decembro.0_2.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_5f21d46a_50",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agacharse rápido e fregar as follas contra o chan.",
+   "speech": "Agacharse rápido e fregar as follas contra o chan.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/3/cmd/cmd.novembro.2_3.02/accionFisica"
+  },
+  {
    "id": "gl_tutor_5fd8ad44_165",
    "lang": "gl",
    "style": "tutor",
@@ -10882,6 +12682,14 @@
    "text": "Creación e execución dunha secuencia propia de tres movementos.",
    "speech": "Creación e execución dunha secuencia propia de tres movementos.",
    "source": "asamblea.segundo_ciclo.maio.6_infantil/fase/3/cmd/cmd.maio.6i.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_61144371_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Deita aos bebés de costas ou sostenos no regazo.",
+   "speech": "Deita aos bebés de costas ou sostenos no regazo.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_612cf6b9_49",
@@ -11028,6 +12836,14 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.01/accionFisica"
   },
   {
+   "id": "gl_tutor_6667a978_53",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Reparte unha toalla a cada neno, sentados en círculo.",
+   "speech": "Reparte unha toalla a cada neno, sentados en círculo.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/1/consigna"
+  },
+  {
    "id": "gl_tutor_6673eeca_50",
    "lang": "gl",
    "style": "tutor",
@@ -11074,6 +12890,14 @@
    "text": "Camiñar con paso firme cara á percha baixa asignada e colgar o abrigo pola presilla.",
    "speech": "Camiñar con paso firme cara á percha baixa asignada e colgar o abrigo pola presilla.",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_68182f48_46",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Deixa unha folla na man do bebé e baixa a voz.",
+   "speech": "Deixa unha folla na man do bebé e baixa a voz.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/4/consigna"
   },
   {
    "id": "gl_tutor_68a8b7a1_82",
@@ -11148,12 +12972,44 @@
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "gl_tutor_69f036d6_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "En pé, en círculo aberto, coas mans libres.",
+   "speech": "En pé, en círculo aberto, coas mans libres.",
+   "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/1/consigna"
+  },
+  {
    "id": "gl_tutor_6a3293e2_74",
    "lang": "gl",
    "style": "tutor",
    "text": "Yes, it is smooth! Put the smooth one in the bucket. Now find a rough one!",
    "speech": "Yes, it is smooth! Put the smooth one in the bucket. Now find a rough one!",
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_6aad63c0_74",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Reúne aos bebés sobre colchonetas brandas e achega o monicreque a cada un.",
+   "speech": "Reúne aos bebés sobre colchonetas brandas e achega o monicreque a cada un.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/1/consigna"
+  },
+  {
+   "id": "gl_tutor_6b8fe110_157",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sempre coa mesma estrutura: unha situación da casa que recoñeces, como se fai exactamente, as tres ordes da semana, e unha regra que resume por que funciona.",
+   "speech": "Sempre coa mesma estrutura: unha situación da casa que recoñeces, como se fai exactamente, as tres ordes da semana, e unha regra que resume por que funciona.",
+   "source": "formacion.familia/paso/4/corpo"
+  },
+  {
+   "id": "gl_tutor_6c35196a_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Retirar a prenda suavemente.",
+   "speech": "Retirar a prenda suavemente.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/3/cmd/cmd.xaneiro.0_2.02/accionFisica"
   },
   {
    "id": "gl_tutor_6c4ed369_46",
@@ -11186,6 +13042,22 @@
    "text": "No recibidor da casa: a crianza quita a chaqueta con calma. En vez de facer preguntas directas, a nai acompaña o movemento con ritmo: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»",
    "speech": "No recibidor da casa: a crianza quita a chaqueta con calma. En vez de facer preguntas directas, a nai acompaña o movemento con ritmo: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»",
    "source": "academy.segundo_ciclo.setembro.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_6d3ec276_58",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sentados en círculo, cantar a despedida co axitar de mans.",
+   "speech": "Sentados en círculo, cantar a despedida co axitar de mans.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/4/consigna"
+  },
+  {
+   "id": "gl_tutor_6d758eef_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Senta co bebé e amosa a botella á contraluz.",
+   "speech": "Senta co bebé e amosa a botella á contraluz.",
+   "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_6dbe47ba_58",
@@ -11292,6 +13164,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "gl_tutor_70daa0e8_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Colocar o gorro na cabeza mirando o espello.",
+   "speech": "Colocar o gorro na cabeza mirando o espello.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/3/cmd/cmd.xaneiro.0_2.01/accionFisica"
+  },
+  {
    "id": "gl_tutor_70efa809_58",
    "lang": "gl",
    "style": "tutor",
@@ -11362,6 +13242,14 @@
    "text": "Que facemos coa man cando dicimos ola?",
    "speech": "Que facemos coa man cando dicimos ola?",
    "source": "juega.benvida.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_730f6875_59",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sentar con coidado sobre a alfombra e soltar a cinta amodo.",
+   "speech": "Sentar con coidado sobre a alfombra e soltar a cinta amodo.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/4/consigna"
   },
   {
    "id": "gl_tutor_732933dc_63",
@@ -11476,6 +13364,14 @@
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_770b9205_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Conxelar a postura do animal preferido, sen emitir son.",
+   "speech": "Conxelar a postura do animal preferido, sen emitir son.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_771e7836_59",
    "lang": "gl",
    "style": "tutor",
@@ -11500,12 +13396,28 @@
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_7795c407_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha á semana chega.",
+   "speech": "Unha á semana chega.",
+   "source": "formacion.familia/paso/4/clave"
+  },
+  {
    "id": "gl_tutor_77ab587b_25",
    "lang": "gl",
    "style": "tutor",
    "text": "Auga, sol, terra e tempo.",
    "speech": "Auga, sol, terra e tempo.",
    "source": "juega.primavera.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_77c7c977_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Modula o volume: forte e rápido, logo suave.",
+   "speech": "Modula o volume: forte e rápido, logo suave.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/2/consigna"
   },
   {
    "id": "gl_tutor_795d3e8c_58",
@@ -11692,6 +13604,14 @@
    "source": "juega.choiva.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "gl_tutor_80865eab_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dous nenos designados gatean rápido por debaixo da tea.",
+   "speech": "Dous nenos designados gatean rápido por debaixo da tea.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.03/accionFisica"
+  },
+  {
    "id": "gl_tutor_80b78e43_24",
    "lang": "gl",
    "style": "tutor",
@@ -11724,6 +13644,14 @@
    "source": "juega.primavera.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_81c1074d_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Guía dúas palmadas lentas.",
+   "speech": "Guía dúas palmadas lentas.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/3/cmd/cmd.setembro.0_2.03/accionFisica"
+  },
+  {
    "id": "gl_tutor_81ff952b_54",
    "lang": "gl",
    "style": "tutor",
@@ -11748,6 +13676,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
+   "id": "gl_tutor_841686f3_52",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Conxelar a postura do animal predilecto en silencio.",
+   "speech": "Conxelar a postura do animal predilecto en silencio.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.03/accionFisica"
+  },
+  {
    "id": "gl_tutor_84b8cf5b_48",
    "lang": "gl",
    "style": "tutor",
@@ -11762,6 +13698,14 @@
    "text": "Yes, it is growing! It is taller today. Water it and draw the tall plant.",
    "speech": "Yes, it is growing! It is taller today. Water it and draw the tall plant.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_84e6458c_148",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tres, non dez. Repítense varias veces coa mesma entoación e co mesmo xesto. O modelado faino a persoa adulta: di a orde e faina á vez, sen traducir.",
+   "speech": "Tres, non dez. Repítense varias veces coa mesma entoación e co mesmo xesto. O modelado faino a persoa adulta: di a orde e faina á vez, sen traducir.",
+   "source": "formacion.docente/paso/3/corpo"
   },
   {
    "id": "gl_tutor_85a07724_72",
@@ -11834,6 +13778,14 @@
    "text": "Estimular o tacto fino da man e a tolerancia ao contacto elixido.",
    "speech": "Estimular o tacto fino da man e a tolerancia ao contacto elixido.",
    "source": "juega.benvida.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "gl_tutor_881d0ebb_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Reformular, non recriminar.",
+   "speech": "Reformular, non recriminar.",
+   "source": "formacion.familia/paso/3/clave"
   },
   {
    "id": "gl_tutor_881ef287_51",
@@ -11932,6 +13884,14 @@
    "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "gl_tutor_8c875113_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sentarse con coidado sobre a alfombra.",
+   "speech": "Sentarse con coidado sobre a alfombra.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.03/accionFisica"
+  },
+  {
    "id": "gl_tutor_8cb03fe3_74",
    "lang": "gl",
    "style": "tutor",
@@ -11970,6 +13930,14 @@
    "text": "Nomear a cor xunto ao obxecto —'mazá vermella'— e non a cor soa. A esta idade a cor viaxa pegada á cousa.",
    "speech": "Nomear a cor xunto ao obxecto —'mazá vermella'— e non a cor soa. A esta idade a cor viaxa pegada á cousa.",
    "source": "juega.cores.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "gl_tutor_8dec90f3_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Describir círculos sobre a camiseta á altura do embigo.",
+   "speech": "Describir círculos sobre a camiseta á altura do embigo.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.02/accionFisica"
   },
   {
    "id": "gl_tutor_8dfcc8ec_104",
@@ -12100,12 +14068,28 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/fase/3/cmd/cmd.xuno.6i.01/accionFisica"
   },
   {
+   "id": "gl_tutor_902934c7_58",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Campaíña detrás das costas, deitados e cos ollos pechados.",
+   "speech": "Campaíña detrás das costas, deitados e cos ollos pechados.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_9029e3fa_140",
    "lang": "gl",
    "style": "tutor",
    "text": "Hoxe movemos todo o corpo coa gata Lúa e aprendemos a parar en seco cando escoitamos 'Freeze!'. Tamén nomeamos a cabeza, a barriga e os pés.",
    "speech": "Hoxe movemos todo o corpo coa gata Lúa e aprendemos a parar en seco cando escoitamos 'Freeze!'. Tamén nomeamos a cabeza, a barriga e os pés.",
    "source": "juega.corpo.01/puenteCasa/mensajeFamilias"
+  },
+  {
+   "id": "gl_tutor_905d0c54_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai rodar a botella polas súas pernas.",
+   "speech": "Fai rodar a botella polas súas pernas.",
+   "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/2/consigna"
   },
   {
    "id": "gl_tutor_9063ca14_177",
@@ -12156,12 +14140,44 @@
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "gl_tutor_9348554c_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Traslado do peso dun pé ao outro.",
+   "speech": "Traslado do peso dun pé ao outro.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.02/accionFisica"
+  },
+  {
+   "id": "gl_tutor_93978b53_66",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ondear a tea horizontalmente a poucos centímetros dos seus corpos.",
+   "speech": "Ondear a tea horizontalmente a poucos centímetros dos seus corpos.",
+   "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/2/consigna"
+  },
+  {
+   "id": "gl_tutor_93a69e68_72",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+   "speech": "A educadora fai o xesto mentres di a orde, e agarda sen esixir resposta.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.01/modeladoDocente"
+  },
+  {
    "id": "gl_tutor_94642a3a_54",
    "lang": "gl",
    "style": "tutor",
    "text": "Na cociña, cun barreño baixo e unha toalla ao alcance.",
    "speech": "Na cociña, cun barreño baixo e unha toalla ao alcance.",
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "gl_tutor_9476dfd2_175",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Durante meses vai entender moito máis do que produce. É o período de silencio e é normal. Se lle dis «coat on» e vai buscar o abrigo, comprendeu: iso é o que hai que celebrar.",
+   "speech": "Durante meses vai entender moito máis do que produce. É o período de silencio e é normal. Se lle dis «coat on» e vai buscar o abrigo, comprendeu: iso é o que hai que celebrar.",
+   "source": "formacion.familia/paso/5/corpo"
   },
   {
    "id": "gl_tutor_9505d857_45",
@@ -12178,6 +14194,14 @@
    "text": "Escoita condicional e clasificación da semente segundo o tamaño.",
    "speech": "Escoita condicional e clasificación da semente segundo o tamaño.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.03/accionFisica"
+  },
+  {
+   "id": "gl_tutor_951e539e_61",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Retira a pluma e deixa a man aberta e quieta sobre a barriga.",
+   "speech": "Retira a pluma e deixa a man aberta e quieta sobre a barriga.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/4/consigna"
   },
   {
    "id": "gl_tutor_95e5a961_64",
@@ -12236,6 +14260,14 @@
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_990c4042_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Circuito de emulación corporal polo aula.",
+   "speech": "Circuito de emulación corporal polo aula.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_9997137d_73",
    "lang": "gl",
    "style": "tutor",
@@ -12292,6 +14324,14 @@
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/cmd/cmd.decembro.6i.02/accionFisica"
   },
   {
+   "id": "gl_tutor_9c747a6c_47",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Modular a intensidade da ondada segundo a orde.",
+   "speech": "Modular a intensidade da ondada segundo a orde.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_9c8e02d2_67",
    "lang": "gl",
    "style": "tutor",
@@ -12324,6 +14364,14 @@
    "source": "juega.cores.01/cuento/0/pregunta"
   },
   {
+   "id": "gl_tutor_9d49c5eb_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sitúate co bebé diante do espello da parede.",
+   "speech": "Sitúate co bebé diante do espello da parede.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/1/consigna"
+  },
+  {
    "id": "gl_tutor_9dff36f3_59",
    "lang": "gl",
    "style": "tutor",
@@ -12348,12 +14396,28 @@
    "source": "academy.rutinas_bano_de_lenguaje.01/ideaClave"
   },
   {
+   "id": "gl_tutor_9e91f695_49",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se executa a acción, o seu cerebro xa comprendeu.",
+   "speech": "Se executa a acción, o seu cerebro xa comprendeu.",
+   "source": "formacion.familia/paso/5/clave"
+  },
+  {
    "id": "gl_tutor_9efb36e1_54",
    "lang": "gl",
    "style": "tutor",
    "text": "Marcha lenta en parella con contacto manual constante.",
    "speech": "Marcha lenta en parella con contacto manual constante.",
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/cmd/cmd.decembro.6i.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_9f0c4d98_63",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Simular poñer uns pantalóns pesados, unha perna e logo a outra.",
+   "speech": "Simular poñer uns pantalóns pesados, unha perna e logo a outra.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/2/consigna"
   },
   {
    "id": "gl_tutor_9f783319_34",
@@ -12378,6 +14442,14 @@
    "text": "Ofrecer primeiro a folla verde e despois a seca, unha en cada man.",
    "speech": "Ofrecer primeiro a folla verde e despois a seca, unha en cada man.",
    "source": "juega.follas.01/exploracion/paso/0"
+  },
+  {
+   "id": "gl_tutor_a039f4e1_46",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ovillados no chan en posición fetal encollida.",
+   "speech": "Ovillados no chan en posición fetal encollida.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_a09e0405_77",
@@ -12410,6 +14482,14 @@
    "text": "Xusto ao revés: o clic compite coa voz na mesma canle, e nun audiófono ou nun implante o son curto e forte tápaa. Por iso aquí o pulso é visual e a canle auditiva queda libre para a letra.",
    "speech": "Xusto ao revés: o clic compite coa voz na mesma canle, e nun audiófono ou nun implante o son curto e forte tápaa. Por iso aquí o pulso é visual e a canle auditiva queda libre para a letra.",
    "source": "aula.pulso.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_a1f8706a_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Amosa a toalliña e deixa que a cheiren antes de tocala.",
+   "speech": "Amosa a toalliña e deixa que a cheiren antes de tocala.",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_a1fe5ce5_81",
@@ -12498,6 +14578,14 @@
    "text": "Yes! Take the small watering can, pour the water, touch the green leaf gently.",
    "speech": "Yes! Take the small watering can, pour the water, touch the green leaf gently.",
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_a4fec83b_62",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+   "speech": "Tres ordes motrices co material do mes. Non pidas que repitan.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/consigna"
   },
   {
    "id": "gl_tutor_a514458f_66",
@@ -12652,6 +14740,14 @@
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/microRutina/escenaCotidiana"
   },
   {
+   "id": "gl_tutor_a95ceaa1_53",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Recoller as siluetas por cor e sentarse enriba dunha.",
+   "speech": "Recoller as siluetas por cor e sentarse enriba dunha.",
+   "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_aa067008_276",
    "lang": "gl",
    "style": "tutor",
@@ -12674,6 +14770,14 @@
    "text": "Abre e pecha os brazos ao compás do pandeiro.",
    "speech": "Abre e pecha os brazos ao compás do pandeiro.",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/fase/3/cmd/cmd.xaneiro.4i.03/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_aabcc3b3_53",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sostén as mans do bebé e frótaas unha contra a outra.",
+   "speech": "Sostén as mans do bebé e frótaas unha contra a outra.",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/3/cmd/cmd.maio.0_2.01/accionFisica"
   },
   {
    "id": "gl_tutor_ab1b6db4_84",
@@ -12724,6 +14828,14 @@
    "source": "juega.mar.01/cuento/2/texto"
   },
   {
+   "id": "gl_tutor_ac39347b_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Desliza a toalliña polas palmas e frótaas ritmicamente.",
+   "speech": "Desliza a toalliña polas palmas e frótaas ritmicamente.",
+   "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_acc1bd35_55",
    "lang": "gl",
    "style": "tutor",
@@ -12748,12 +14860,28 @@
    "source": "juega.mar.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_ad37579f_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Nunca pidas que repitan. Nunca preguntes «como se di?».",
+   "speech": "Nunca pidas que repitan. Nunca preguntes «como se di?».",
+   "source": "formacion.docente/paso/2/clave"
+  },
+  {
    "id": "gl_tutor_ad6834c0_52",
    "lang": "gl",
    "style": "tutor",
    "text": "Intercambio de rol entre os dous membros da parella.",
    "speech": "Intercambio de rol entre os dous membros da parella.",
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/cmd/cmd.febreiro.6i.02/accionFisica"
+  },
+  {
+   "id": "gl_tutor_ad7213f4_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bater os brazos camiñando de puntillas.",
+   "speech": "Bater os brazos camiñando de puntillas.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/3/cmd/cmd.novembro.2_3.01/accionFisica"
   },
   {
    "id": "gl_tutor_ad86e22d_65",
@@ -12780,12 +14908,28 @@
    "source": "asamblea.segundo_ciclo.maio.6_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "gl_tutor_ae786c48_46",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Apertar unha folla seca xunto ao oído do neno.",
+   "speech": "Apertar unha folla seca xunto ao oído do neno.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/3/cmd/cmd.novembro.0_2.02/accionFisica"
+  },
+  {
    "id": "gl_tutor_aec87d6a_109",
    "lang": "gl",
    "style": "tutor",
    "text": "É a primeira conversa sobre o 'como se'. Se alguén ten medo da careta, quítase e ponse na man, nunca na cara.",
    "speech": "É a primeira conversa sobre o 'como se'. Se alguén ten medo da careta, quítase e ponse na man, nunca na cara.",
    "source": "juega.animais.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_af94c4e4_60",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Achega o atomizador e deixa que oian o son antes de sentilo.",
+   "speech": "Achega o atomizador e deixa que oian o son antes de sentilo.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_afe80f60_66",
@@ -12844,6 +14988,14 @@
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "gl_tutor_b20d24dc_177",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esa pregunta convierte un xogo nun exame. Xera ansiedade e o resultado adoita ser que a crianza cala ou rexeita a actividade. O mesmo pasa con «non se di así» ou «dillo a papá».",
+   "speech": "Esa pregunta convierte un xogo nun exame. Xera ansiedade e o resultado adoita ser que a crianza cala ou rexeita a actividade. O mesmo pasa con «non se di así» ou «dillo a papá».",
+   "source": "formacion.familia/paso/2/corpo"
+  },
+  {
    "id": "gl_tutor_b22b38cf_66",
    "lang": "gl",
    "style": "tutor",
@@ -12882,6 +15034,30 @@
    "text": "Abres o paso da canción. A barra da pantalla avanza e ti dás dúas palmadas nas pernas por compás, mirando á roda. Unha nena mira as túas mans e empeza a balancearse fóra de tempo. Non a corrixes: agrandas o xesto, achégaste un pouco e segues cantando. Ao terceiro compás xa vai contigo.",
    "speech": "Abres o paso da canción. A barra da pantalla avanza e ti dás dúas palmadas nas pernas por compás, mirando á roda. Unha nena mira as túas mans e empeza a balancearse fóra de tempo. Non a corrixes: agrandas o xesto, achégaste un pouco e segues cantando. Ao terceiro compás xa vai contigo.",
    "source": "aula.pulso.01/ejemploCotidiano"
+  },
+  {
+   "id": "gl_tutor_b32164be_49",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon e quita o gorro mirando o reflexo, sen présa.",
+   "speech": "Pon e quita o gorro mirando o reflexo, sen présa.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/2/consigna"
+  },
+  {
+   "id": "gl_tutor_b370f212_168",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Apertura e saúdo, foco e movemento, núcleo TPR, e calma. Entre oito e dez minutos en total. Non se alonga: a microcápsula acaba cando acaba, e o resto da xornada segue.",
+   "speech": "Apertura e saúdo, foco e movemento, núcleo TPR, e calma. Entre oito e dez minutos en total. Non se alonga: a microcápsula acaba cando acaba, e o resto da xornada segue.",
+   "source": "formacion.docente/paso/1/corpo"
+  },
+  {
+   "id": "gl_tutor_b3d2f1b2_45",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pulverizar auga morna sobre o dorso das mans.",
+   "speech": "Pulverizar auga morna sobre o dorso das mans.",
+   "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.01/accionFisica"
   },
   {
    "id": "gl_tutor_b4d20a2e_61",
@@ -12972,6 +15148,14 @@
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/cmd/cmd.abril.5i.02/modeladoDocente"
   },
   {
+   "id": "gl_tutor_b7233678_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Golpes rítmicos dos dedos imitando as pingas de choiva.",
+   "speech": "Golpes rítmicos dos dedos imitando as pingas de choiva.",
+   "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_b73b2eaf_133",
    "lang": "gl",
    "style": "tutor",
@@ -12986,6 +15170,14 @@
    "text": "Só supervisa a quenda; non repite a fórmula polos nenos.",
    "speech": "Só supervisa a quenda; non repite a fórmula polos nenos.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.02/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_b7b49441_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Todos suxeitan o contorno do paracaídas coas dúas mans.",
+   "speech": "Todos suxeitan o contorno do paracaídas coas dúas mans.",
+   "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_b84e0ec3_54",
@@ -13060,6 +15252,14 @@
    "source": "juega.auga.01/exploracion/paso/3"
   },
   {
+   "id": "gl_tutor_ba32ae8e_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tres pisotóns contundentes contra o chan.",
+   "speech": "Tres pisotóns contundentes contra o chan.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/3/cmd/cmd.xaneiro.2_3.02/accionFisica"
+  },
+  {
    "id": "gl_tutor_ba6c9493_114",
    "lang": "gl",
    "style": "tutor",
@@ -13130,6 +15330,14 @@
    "text": "Palmadas sobre o peito marcando o pulso regular.",
    "speech": "Palmadas sobre o peito marcando o pulso regular.",
    "source": "asamblea.segundo_ciclo.maio.4_infantil/fase/3/cmd/cmd.maio.4i.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_bd41da03_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Envolver os ombreiros na toalla morna.",
+   "speech": "Envolver os ombreiros na toalla morna.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/3/cmd/cmd.decembro.0_2.02/accionFisica"
   },
   {
    "id": "gl_tutor_bdb3f841_112",
@@ -13500,6 +15708,14 @@
    "source": "aula.conto.01/queHacerEnCasa"
   },
   {
+   "id": "gl_tutor_cf7590fa_238",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chámase modelado indirecto. A crianza di «mira mamá, castaña small» e a resposta non é corrixir, é: «Yes! A small chestnut! Put the small chestnut inside the basket!». Válidase o que quixo dicir, dáse a forma correcta e continúase o xogo.",
+   "speech": "Chámase modelado indirecto. A crianza di «mira mamá, castaña small» e a resposta non é corrixir, é: «Yes! A small chestnut! Put the small chestnut inside the basket!». Válidase o que quixo dicir, dáse a forma correcta e continúase o xogo.",
+   "source": "formacion.familia/paso/3/corpo"
+  },
+  {
    "id": "gl_tutor_cfadba68_50",
    "lang": "gl",
    "style": "tutor",
@@ -13538,6 +15754,14 @@
    "text": "Camiñar con pasos lentos e balanceo de ombros imitando levar unha mochila moi pesada.",
    "speech": "Camiñar con pasos lentos e balanceo de ombros imitando levar unha mochila moi pesada.",
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_d065721f_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Roza suavemente a coroniña.",
+   "speech": "Roza suavemente a coroniña.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/3/cmd/cmd.outubro.0_2.01/accionFisica"
   },
   {
    "id": "gl_tutor_d06711ee_264",
@@ -13684,6 +15908,14 @@
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/1/consigna"
   },
   {
+   "id": "gl_tutor_d5edb81b_63",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ao cesar a música, deixarse caer amodo na alfombra coma follas.",
+   "speech": "Ao cesar a música, deixarse caer amodo na alfombra coma follas.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_d5eeb646_123",
    "lang": "gl",
    "style": "tutor",
@@ -13804,6 +16036,22 @@
    "source": "juega.animais.01/matematicas/accion/1"
   },
   {
+   "id": "gl_tutor_d9d76993_49",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Amosa a primeira tarxeta sen dicir nada e agarda.",
+   "speech": "Amosa a primeira tarxeta sen dicir nada e agarda.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/1/consigna"
+  },
+  {
+   "id": "gl_tutor_d9d82118_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Incorporarse dun salto.",
+   "speech": "Incorporarse dun salto.",
+   "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.03/accionFisica"
+  },
+  {
    "id": "gl_tutor_daa230a7_56",
    "lang": "gl",
    "style": "tutor",
@@ -13834,6 +16082,14 @@
    "text": "Again! Clap high, clap low, touch your nose, off we go!",
    "speech": "Again! Clap high, clap low, touch your nose, off we go!",
    "source": "asamblea.segundo_ciclo.maio.4_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_db6caeb5_66",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canta a canción marcando o pulso coa cinta, sen pedir que repitan.",
+   "speech": "Canta a canción marcando o pulso coa cinta, sen pedir que repitan.",
+   "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/2/consigna"
   },
   {
    "id": "gl_tutor_db930d0a_146",
@@ -13900,6 +16156,14 @@
    "source": "juega.corpo.01/cuento/0/texto"
   },
   {
+   "id": "gl_tutor_dd49a54c_201",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O metrónomo desta app é visual a propósito. Parte das crianzas leva audiófono ou implante, e un metrónomo sonoro compite xusto coa voz que teñen que seguir. O canal auditivo queda enteiro para a letra.",
+   "speech": "O metrónomo desta app é visual a propósito. Parte das crianzas leva audiófono ou implante, e un metrónomo sonoro compite xusto coa voz que teñen que seguir. O canal auditivo queda enteiro para a letra.",
+   "source": "formacion.docente/paso/4/corpo"
+  },
+  {
    "id": "gl_tutor_dd5d168a_73",
    "lang": "gl",
    "style": "tutor",
@@ -13924,12 +16188,36 @@
    "source": "juega.benvida.01/matematicas/accion/0"
   },
   {
+   "id": "gl_tutor_de748016_50",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Envolve os ombreiros nunha toalla morna e susurra.",
+   "speech": "Envolve os ombreiros nunha toalla morna e susurra.",
+   "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/4/consigna"
+  },
+  {
    "id": "gl_tutor_de86ea06_78",
    "lang": "gl",
    "style": "tutor",
    "text": "Convén dicirlle á familia que facer esta noite, e non só o que non debe facer.",
    "speech": "Convén dicirlle á familia que facer esta noite, e non só o que non debe facer.",
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/enunciado"
+  },
+  {
+   "id": "gl_tutor_dedc19f7_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O compás márcao o teu corpo, non un pitido.",
+   "speech": "O compás márcao o teu corpo, non un pitido.",
+   "source": "formacion.docente/paso/4/clave"
+  },
+  {
+   "id": "gl_tutor_df7d14be_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Eleva as mans do bebé cara arriba.",
+   "speech": "Eleva as mans do bebé cara arriba.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/3/cmd/cmd.setembro.0_2.01/accionFisica"
   },
   {
    "id": "gl_tutor_dffaeeab_85",
@@ -13988,12 +16276,28 @@
    "source": "academy.juego_movimiento_sin_pantallas.01/ejemploCotidiano"
   },
   {
+   "id": "gl_tutor_e2e3dd4a_59",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Deslizar os brazos por mangas imaxinarias e facer «Zzzip!».",
+   "speech": "Deslizar os brazos por mangas imaxinarias e facer «Zzzip!».",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/3/cmd/cmd.xaneiro.2_3.01/accionFisica"
+  },
+  {
    "id": "gl_tutor_e2e6d550_169",
    "lang": "gl",
    "style": "tutor",
    "text": "* Fo-llas * que caen, * fo-llas * de cor, * o ven-to * as le-va * dun * lado ao ou-tro. * Cru-ac, * cru-ac, * pi-so * de-va-gar, * cru-ac, * cru-ac, * vol-vo * empe-zar.",
    "speech": "Follas que caen, follas de cor, o vento as leva dun lado ao outro. Cruac, cruac, piso devagar, cruac, cruac, volvo empezar.",
    "source": "juega.follas.01/cancionPulso"
+  },
+  {
+   "id": "gl_tutor_e343ab09_40",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Baixa as mans e apóiaas nos seus muslos.",
+   "speech": "Baixa as mans e apóiaas nos seus muslos.",
+   "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/3/cmd/cmd.setembro.0_2.02/accionFisica"
   },
   {
    "id": "gl_tutor_e3aeaad7_171",
@@ -14034,6 +16338,14 @@
    "text": "Se derrama, non se corrixe a lingua: recóllese xuntos e séguese.",
    "speech": "Se derrama, non se corrixe a lingua: recóllese xuntos e séguese.",
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
+   "id": "gl_tutor_e49b1b8f_50",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fregar con suavidade meixelas e fronte coa toalla.",
+   "speech": "Fregar con suavidade meixelas e fronte coa toalla.",
+   "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.01/accionFisica"
   },
   {
    "id": "gl_tutor_e4a6017d_96",
@@ -14114,6 +16426,14 @@
    "text": "Non dicir «non se di así». Devolver a forma correcta dentro do xogo e seguir.",
    "speech": "Non dicir «non se di así». Devolver a forma correcta dentro do xogo e seguir.",
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
+   "id": "gl_tutor_e754e3ae_46",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "En pé, con sitio arredor para mover as pernas.",
+   "speech": "En pé, con sitio arredor para mover as pernas.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/1/consigna"
   },
   {
    "id": "gl_tutor_e7a716a8_58",
@@ -14204,6 +16524,14 @@
    "source": "aula.preguntas.01/afirmaciones/afirmacion_02/enunciado"
   },
   {
+   "id": "gl_tutor_ea33b5ea_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se acaba mirando o móbil, algo se torceu.",
+   "speech": "Se acaba mirando o móbil, algo se torceu.",
+   "source": "formacion.familia/paso/0/clave"
+  },
+  {
    "id": "gl_tutor_ea4c62b9_61",
    "lang": "gl",
    "style": "tutor",
@@ -14226,6 +16554,14 @@
    "text": "Encher e baleirar é a primeira medida: o mesmo vaso pode ter moita auga, pouca ou ningunha.",
    "speech": "Encher e baleirar é a primeira medida: o mesmo vaso pode ter moita auga, pouca ou ningunha.",
    "source": "juega.auga.01/matematicas/descripcion"
+  },
+  {
+   "id": "gl_tutor_ebd310d3_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cuadrupedia pesada con mans e pés no chan.",
+   "speech": "Cuadrupedia pesada con mans e pés no chan.",
+   "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.02/accionFisica"
   },
   {
    "id": "gl_tutor_ebe7580f_57",
@@ -14258,6 +16594,22 @@
    "text": "Que fai a laranxa cando Lúa a toca? Por que rola?",
    "speech": "Que fai a laranxa cando Lúa a toca? Por que rola?",
    "source": "juega.cores.01/cuento/1/pregunta"
+  },
+  {
+   "id": "gl_tutor_ed5e04c5_53",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Deixar caer as follas en choiva lixeira diante deles.",
+   "speech": "Deixar caer as follas en choiva lixeira diante deles.",
+   "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/3/cmd/cmd.novembro.0_2.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_ee09ccd1_51",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ondear a tea creando fluxo de aire e ondada visual.",
+   "speech": "Ondear a tea creando fluxo de aire e ondada visual.",
+   "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/3/cmd/cmd.xuno.0_2.01/accionFisica"
   },
   {
    "id": "gl_tutor_ee4a4a68_67",
@@ -14314,6 +16666,14 @@
    "text": "Dar a tocar antes as dúas cousas, o cristal e a manta. Sen contraste non hai resposta posible.",
    "speech": "Dar a tocar antes as dúas cousas, o cristal e a manta. Sen contraste non hai resposta posible.",
    "source": "juega.inverno.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_f0c0db32_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non se examina. Acompáñase.",
+   "speech": "Non se examina. Acompáñase.",
+   "source": "formacion.familia/paso/2/clave"
   },
   {
    "id": "gl_tutor_f10bac0d_53",
@@ -14378,6 +16738,14 @@
    "text": "Nunha asemblea de cero a tres, o conto non se le para chegar ao final. Lese para que haxa un momento no que a túa voz, o teu dedo e a mirada da crianza estean na mesma cousa. Se iso pasa dúas veces en toda a páxina, a páxina valeu.",
    "speech": "Nunha asemblea de cero a tres, o conto non se le para chegar ao final. Lese para que haxa un momento no que a túa voz, o teu dedo e a mirada da crianza estean na mesma cousa. Se iso pasa dúas veces en toda a páxina, a páxina valeu.",
    "source": "aula.conto.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_f3eac1e7_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Camiñar de puntillas ao ritmo dunha marcha.",
+   "speech": "Camiñar de puntillas ao ritmo dunha marcha.",
+   "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/2/consigna"
   },
   {
    "id": "gl_tutor_f45881f0_105",
@@ -14476,6 +16844,14 @@
    "source": "asamblea.segundo_ciclo.xuno.5_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_f80446d3_40",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Non é a mesma sesión con outra etiqueta.",
+   "speech": "Non é a mesma sesión con outra etiqueta.",
+   "source": "formacion.docente/paso/5/clave"
+  },
+  {
    "id": "gl_tutor_f80cd1c9_91",
    "lang": "gl",
    "style": "tutor",
@@ -14500,6 +16876,14 @@
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.02/accionFisica"
   },
   {
+   "id": "gl_tutor_f95ad79f_52",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A ra achégase con botes rítmicos sobre a colchoneta.",
+   "speech": "A ra achégase con botes rítmicos sobre a colchoneta.",
+   "source": "asamblea.primeiro_ciclo.febreiro.0_2_anos/fase/2/consigna"
+  },
+  {
    "id": "gl_tutor_f96c0011_33",
    "lang": "gl",
    "style": "tutor",
@@ -14514,6 +16898,22 @@
    "text": "Baixa a voz e agarda; o silencio forma parte da orde.",
    "speech": "Baixa a voz e agarda; o silencio forma parte da orde.",
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/fase/3/cmd/cmd.marzo.5i.03/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_f9b3549f_49",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sentarse e atar as botas imaxinarias en silencio.",
+   "speech": "Sentarse e atar as botas imaxinarias en silencio.",
+   "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/4/consigna"
+  },
+  {
+   "id": "gl_tutor_fa686cac_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Baixar a tea ata pousala e deixala quieta enriba deles.",
+   "speech": "Baixar a tea ata pousala e deixala quieta enriba deles.",
+   "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/4/consigna"
   },
   {
    "id": "gl_tutor_face5b12_51",
@@ -14562,6 +16962,14 @@
    "text": "Sinalar a laranxa, facela rolar ou dicir o nome.",
    "speech": "Sinalar a laranxa, facela rolar ou dicir o nome.",
    "source": "juega.cores.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_fd6bfe1a_60",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Guiar a presión coas dúas mans para que sacuda o recipiente.",
+   "speech": "Guiar a presión coas dúas mans para que sacuda o recipiente.",
+   "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/3/cmd/cmd.marzo.0_2.01/accionFisica"
   },
   {
    "id": "gl_tutor_fe574264_88",
