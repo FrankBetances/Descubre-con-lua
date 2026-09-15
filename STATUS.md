@@ -9,7 +9,7 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
-## El logotipo del Concello de Vigo, retirado · **en `claude/analizar-rama-mejora-g5yh9z`, pendiente de mergear** (15/9/2026)
+## El logotipo del Concello de Vigo, retirado · **en `main`** (15/9/2026)
 
 Frank pidió eliminarlo. Se ha quitado la **marca gráfica** en las tres capas
 donde se pintaba, y se ha borrado el fichero del repositorio.
