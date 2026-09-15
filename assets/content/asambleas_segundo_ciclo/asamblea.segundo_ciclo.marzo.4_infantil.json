@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.marzo.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 3,
+  "titulo": {
+    "gl": "Marzo: A primavera esperta e a sementeira na horta",
+    "es": "Marzo: La primavera despierta y la siembra en la huerta",
+    "en": "March: Spring Wakes and Sowing in the Garden"
+  },
+  "centroInteres": {
+    "gl": "Da semente pequena á flor alta",
+    "es": "De la semilla pequeña a la flor alta",
+    "en": "From Tiny Seed to Tall Flower"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "semente",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning sun! Grow up tall!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida",
+        "es": "Reto Núcleo TPR: Acción Expandida",
+        "en": "Core TPR Challenge: Expanded Action"
+      },
+      "duracionSegundos": 270,
+      "lamina": "semente",
+      "consignaDocente": {
+        "gl": "Partindo de flexión completa no chan («tiny seed»), os nenos incorpóranse milimetricamente conforme a docente eleva as mans, culminando en extensión axial total («Grow!»).",
+        "es": "Partiendo de flexión completa en el suelo («tiny seed»), los niños se incorporan milimétricamente conforme la docente eleva las manos, culminando en extensión axial total («Grow!»).",
+        "en": "Starting from a full crouch on the floor («tiny seed»), children rise millimetre by millimetre as the teacher raises her hands, ending in full axial extension («Grow!»)."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.marzo.4i.01",
+          "textoIngles": "Curl small like a tiny seed",
+          "accionFisica": {
+            "gl": "Flexión completa no chan, cabeza recollida entre os xeonllos.",
+            "es": "Flexión completa en el suelo, cabeza recogida entre las rodillas.",
+            "en": "Full crouch on the floor, head tucked between the knees."
+          },
+          "modeladoDocente": {
+            "gl": "Faise pequena no chan e agarda a que todos o fagan.",
+            "es": "Se hace pequeña en el suelo y espera a que todos lo hagan.",
+            "en": "Makes herself small on the floor and waits for everyone."
+          }
+        },
+        {
+          "id": "cmd.marzo.4i.02",
+          "textoIngles": "Grow tall into a sunflower",
+          "accionFisica": {
+            "gl": "Extensión axial progresiva ata quedar de pé cos brazos arriba.",
+            "es": "Extensión axial progresiva hasta quedar de pie con los brazos arriba.",
+            "en": "Progressive axial extension to standing with arms overhead."
+          },
+          "modeladoDocente": {
+            "gl": "Eleva as mans moi lentamente marcando o ritmo do crecemento.",
+            "es": "Eleva las manos muy lentamente marcando el ritmo del crecimiento.",
+            "en": "Raises her hands very slowly, setting the pace of the growth."
+          }
+        },
+        {
+          "id": "cmd.marzo.4i.03",
+          "textoIngles": "Dig the soil with your hands",
+          "accionFisica": {
+            "gl": "Mímica de cavar coas dúas mans sobre a alfombra ou a terra.",
+            "es": "Mímica de cavar con las dos manos sobre la alfombra o la tierra.",
+            "en": "Mime digging with both hands on the rug or the soil."
+          },
+          "modeladoDocente": {
+            "gl": "Cava primeiro e logo repite a orde mentres o grupo cava.",
+            "es": "Cava primero y luego repite la orden mientras el grupo cava.",
+            "en": "Digs first, then repeats the command while the group digs."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "sol",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.marzo.4i.01",
+    "titulo": {
+      "gl": "A regadeira pequena",
+      "es": "La regadera pequeña",
+      "en": "The Little Watering Can"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Cada mañá, coas plantas da casa",
+      "es": "Cada mañana, con las plantas de casa",
+      "en": "Each morning, with the house plants"
+    },
+    "objetivoAutonomia": {
+      "gl": "Regar unha planta seguindo tres ordes curtas, sen traducir ningunha.",
+      "es": "Regar una planta siguiendo tres órdenes cortas, sin traducir ninguna.",
+      "en": "Water a plant following three short commands, translating none."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Auga á planta",
+          "es": "Agua a la planta",
+          "en": "Water the plant"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes! Take the small watering can, pour the water, touch the green leaf gently.",
+          "es": "Yes! Take the small watering can, pour the water, toca la hoja verde con cuidado.",
+          "en": "Yes! Take the small watering can, pour the water, touch the green leaf gently."
+        },
+        "consejoEvitar": {
+          "gl": "Se derrama, non se corrixe a lingua: recóllese xuntos e séguese.",
+          "es": "Si derrama, no se corrige la lengua: se recoge juntos y se sigue.",
+          "en": "If it spills, do not correct the language: clean up together and carry on."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Xunto ao vaso da planta, cunha regadeira pequena.",
+      "es": "Junto a la maceta, con una regadera pequeña.",
+      "en": "Beside the plant pot, with a small watering can."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

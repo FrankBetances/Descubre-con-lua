@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.abril.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 4,
+  "titulo": {
+    "gl": "Abril: Os animais da nosa contorna — granxa e monte",
+    "es": "Abril: Los animales de nuestro entorno — granja y monte",
+    "en": "April: Animals Around Us — Farm and Woodland"
+  },
+  "centroInteres": {
+    "gl": "A resolución pragmática dos refuxios",
+    "es": "La resolución pragmática de los refugios",
+    "en": "Pragmatic Habitat Solving"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "oso",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning animals! Stretch your paws!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales",
+        "en": "Core TPR Challenge: Peer-to-Peer Commands"
+      },
+      "duracionSegundos": 270,
+      "lamina": "paxaro",
+      "consignaDocente": {
+        "gl": "A docente describe un refuxio ecolóxico; os alumnos seleccionan a resposta motriz e verbalizan o chunk correspondente.",
+        "es": "La docente describe un refugio ecológico; los alumnos seleccionan la respuesta motriz y verbalizan el chunk correspondiente.",
+        "en": "The teacher describes an ecological shelter; children choose the motor response and say the matching chunk."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.abril.6i.01",
+          "textoIngles": "Where does the fox hide? Point with your elbows",
+          "accionFisica": {
+            "gl": "Sinalamento cos cóbados cara ao recuncho elixido do aula.",
+            "es": "Señalamiento con los codos hacia el rincón elegido del aula.",
+            "en": "Elbow-pointing towards the chosen corner of the room."
+          },
+          "modeladoDocente": {
+            "gl": "Pregunta e agarda cinco segundos sen repetir nin traducir.",
+            "es": "Pregunta y espera cinco segundos sin repetir ni traducir.",
+            "en": "Asks and waits five seconds without repeating or translating."
+          }
+        },
+        {
+          "id": "cmd.abril.6i.02",
+          "textoIngles": "Under the stones! Slither like a snake",
+          "accionFisica": {
+            "gl": "Reptación no chan ata a zona marcada como pedregal.",
+            "es": "Reptación en el suelo hasta la zona marcada como pedregal.",
+            "en": "Slithering on the floor to the area marked as stones."
+          },
+          "modeladoDocente": {
+            "gl": "Modela unha soa vez e deixa que eles escollan a zona.",
+            "es": "Modela una sola vez y deja que ellos escojan la zona.",
+            "en": "Models once and lets them choose the area."
+          }
+        },
+        {
+          "id": "cmd.abril.6i.03",
+          "textoIngles": "If it climbs the chestnut tree, crawl to the green mat",
+          "accionFisica": {
+            "gl": "Escoita condicional e gateo ata a alfombra verde ou a azul.",
+            "es": "Escucha condicional y gateo hasta la alfombra verde o la azul.",
+            "en": "Conditional listening and crawling to the green or blue mat."
+          },
+          "modeladoDocente": {
+            "gl": "Coloca as alfombras e formula a condicional completa sen xesto.",
+            "es": "Coloca las alfombras y formula la condicional completa sin gesto.",
+            "en": "Lays the mats and states the full conditional with no gesture."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "arbore",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.abril.6i.01",
+    "titulo": {
+      "gl": "O paseo dos nomes",
+      "es": "El paseo de los nombres",
+      "en": "The Naming Walk"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Nun paseo curto pola contorna",
+      "es": "En un paseo corto por el entorno",
+      "en": "On a short walk nearby"
+    },
+    "objetivoAutonomia": {
+      "gl": "Nomear en inglés os animais que aparezan, movéndose como eles.",
+      "es": "Nombrar en inglés los animales que aparezcan, moviéndose como ellos.",
+      "en": "Name in English any animals that appear, moving like them."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Un paxaro!",
+          "es": "¡Un pájaro!",
+          "en": "A bird!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, a bird! Fly with your arms. Where does it sleep? Up or down? Point!",
+          "es": "Yes, a bird! Fly with your arms. Where does it sleep? Up or down? ¡Señala!",
+          "en": "Yes, a bird! Fly with your arms. Where does it sleep? Up or down? Point!"
+        },
+        "consejoEvitar": {
+          "gl": "Sinalar xa é responder. A palabra chega despois, se chega.",
+          "es": "Señalar ya es responder. La palabra llega después, si llega.",
+          "en": "Pointing is already an answer. The word comes later, if it comes."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na rúa ou no parque, sen material ningún.",
+      "es": "En la calle o el parque, sin material alguno.",
+      "en": "In the street or the park, with no materials at all."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

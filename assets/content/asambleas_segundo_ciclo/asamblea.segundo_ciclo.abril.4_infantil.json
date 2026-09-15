@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.abril.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 4,
+  "titulo": {
+    "gl": "Abril: Os animais da nosa contorna — granxa e monte",
+    "es": "Abril: Los animales de nuestro entorno — granja y monte",
+    "en": "April: Animals Around Us — Farm and Woodland"
+  },
+  "centroInteres": {
+    "gl": "A coordinación diferencial dos andares",
+    "es": "La coordinación diferencial de los andares",
+    "en": "Differentiated Animal Gaits"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "oso",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning animals! Stretch your paws!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida",
+        "es": "Reto Núcleo TPR: Acción Expandida",
+        "en": "Core TPR Challenge: Expanded Action"
+      },
+      "duracionSegundos": 270,
+      "lamina": "oso",
+      "consignaDocente": {
+        "gl": "Coordinación psicomotriz diferencial: galope rítmico, marcha cuadrúpeda pesada e marcha sobre metatarsos, sincronizadas con cambios de pulso do pandeiro.",
+        "es": "Coordinación psicomotriz diferencial: galope rítmico, marcha cuadrúpeda pesada y marcha sobre metatarsos, sincronizadas con cambios de pulso del pandero.",
+        "en": "Differentiated psychomotor coordination: rhythmic gallop, heavy four-legged walk and walking on the balls of the feet, synced to drum tempo changes."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.abril.4i.01",
+          "textoIngles": "Gallop like a horse in the meadow",
+          "accionFisica": {
+            "gl": "Galope rítmico con cambio de apoio e mans nas rendas imaxinarias.",
+            "es": "Galope rítmico con cambio de apoyo y manos en las riendas imaginarias.",
+            "en": "Rhythmic gallop with alternating support and hands on imaginary reins."
+          },
+          "modeladoDocente": {
+            "gl": "Galopa co grupo un circuíto completo antes de cambiar.",
+            "es": "Galopa con el grupo un circuito completo antes de cambiar.",
+            "en": "Gallops a full circuit with the group before changing."
+          }
+        },
+        {
+          "id": "cmd.abril.4i.02",
+          "textoIngles": "Walk heavy like a big cow",
+          "accionFisica": {
+            "gl": "Marcha cuadrúpeda lenta cos apoios ben marcados.",
+            "es": "Marcha cuadrúpeda lenta con los apoyos bien marcados.",
+            "en": "Slow four-legged walk with clearly marked supports."
+          },
+          "modeladoDocente": {
+            "gl": "Baixa o pulso do pandeiro e camiña pesadamente.",
+            "es": "Baja el pulso del pandero y camina pesadamente.",
+            "en": "Slows the drum beat and walks heavily."
+          }
+        },
+        {
+          "id": "cmd.abril.4i.03",
+          "textoIngles": "Graze like a gentle sheep",
+          "accionFisica": {
+            "gl": "Agachada suave e xesto de pacer coa cabeza preto do chan.",
+            "es": "Agachada suave y gesto de pacer con la cabeza cerca del suelo.",
+            "en": "Gentle crouch and grazing gesture with the head near the floor."
+          },
+          "modeladoDocente": {
+            "gl": "Agáchase e pace en silencio, marcando a calma.",
+            "es": "Se agacha y pace en silencio, marcando la calma.",
+            "en": "Crouches and grazes in silence, setting the calm."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "arbore",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.abril.4i.01",
+    "titulo": {
+      "gl": "A recollida do cuarto",
+      "es": "La recogida del cuarto",
+      "en": "Tidying the Bedroom"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Antes de durmir, no cuarto",
+      "es": "Antes de dormir, en el cuarto",
+      "en": "Before sleep, in the bedroom"
+    },
+    "objetivoAutonomia": {
+      "gl": "Gardar os peluches nomeando o animal e o movemento, sen traducir.",
+      "es": "Guardar los peluches nombrando el animal y el movimiento, sin traducir.",
+      "en": "Put the soft toys away naming the animal and the movement, no translating."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "O oso!",
+          "es": "¡El oso!",
+          "en": "The bear!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, the big brown bear! Catch the bear, walk like an elephant, put it in the box.",
+          "es": "Yes, the big brown bear! Coge el oso, walk like an elephant, put it in the box.",
+          "en": "Yes, the big brown bear! Catch the bear, walk like an elephant, put it in the box."
+        },
+        "consejoEvitar": {
+          "gl": "Gardar é o xogo. Se nomea en galego, devólvese en inglés e adiante.",
+          "es": "Guardar es el juego. Si nombra en gallego, se devuelve en inglés y adelante.",
+          "en": "Tidying is the game. If named in Galician, give it back in English and move on."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No cuarto, cunha caixa baixa para os peluches.",
+      "es": "En el cuarto, con una caja baja para los peluches.",
+      "en": "In the bedroom, with a low box for the soft toys."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

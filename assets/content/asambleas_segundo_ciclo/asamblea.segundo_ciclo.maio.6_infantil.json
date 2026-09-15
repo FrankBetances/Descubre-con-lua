@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.maio.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 5,
+  "titulo": {
+    "gl": "Maio: As Letras Galegas e a riqueza da tradición oral",
+    "es": "Mayo: Las Letras Galegas y la riqueza de la tradición oral",
+    "en": "May: Galician Letters Day and the Wealth of Oral Tradition"
+  },
+  "centroInteres": {
+    "gl": "A creación de patróns rítmicos propios",
+    "es": "La creación de patrones rítmicos propios",
+    "en": "Creating Their Own Rhythm Patterns"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning voices! Clap your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales",
+        "en": "Core TPR Challenge: Peer-to-Peer Commands"
+      },
+      "duracionSegundos": 270,
+      "lamina": "cabeza",
+      "consignaDocente": {
+        "gl": "Os escolares deseñan unha secuencia de tres movementos corporais (palmada, salto, toque de pés) para que o resto da aula a replique.",
+        "es": "Los escolares diseñan una secuencia de tres movimientos corporales (palmada, salto, toque de pies) para que el resto del aula la replique.",
+        "en": "Children design a three-movement body sequence (clap, jump, foot tap) for the class to copy."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.maio.6i.01",
+          "textoIngles": "Make your pattern: clap, jump, tap",
+          "accionFisica": {
+            "gl": "Creación e execución dunha secuencia propia de tres movementos.",
+            "es": "Creación y ejecución de una secuencia propia de tres movimientos.",
+            "en": "Creating and performing an own three-movement sequence."
+          },
+          "modeladoDocente": {
+            "gl": "Marca o pulso coas claves e non propón ningún patrón.",
+            "es": "Marca el pulso con las claves y no propone ningún patrón.",
+            "en": "Marks the beat with claves and proposes no pattern."
+          }
+        },
+        {
+          "id": "cmd.maio.6i.02",
+          "textoIngles": "Now the group copies your pattern",
+          "accionFisica": {
+            "gl": "Reprodución grupal exacta da secuencia creada por un compañeiro.",
+            "es": "Reproducción grupal exacta de la secuencia creada por un compañero.",
+            "en": "Exact group reproduction of a peer's sequence."
+          },
+          "modeladoDocente": {
+            "gl": "Sinala a quenda cun toque e mantense fóra do círculo.",
+            "es": "Señala el turno con un toque y se mantiene fuera del círculo.",
+            "en": "Marks the turn with one tap and stays outside the circle."
+          }
+        },
+        {
+          "id": "cmd.maio.6i.03",
+          "textoIngles": "Pass the rhythm stick around the circle",
+          "accionFisica": {
+            "gl": "Entrega da clave de madeira ao seguinte coa fórmula de quenda.",
+            "es": "Entrega de la clave de madera al siguiente con la fórmula de turno.",
+            "en": "Pass the wooden clave to the next child with the turn formula."
+          },
+          "modeladoDocente": {
+            "gl": "Entrega a primeira clave e despois só observa.",
+            "es": "Entrega la primera clave y después solo observa.",
+            "en": "Hands over the first clave and then only watches."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "luz",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.maio.6i.01",
+    "titulo": {
+      "gl": "O ritmo da familia",
+      "es": "El ritmo de la familia",
+      "en": "The Family Rhythm"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Na sobremesa, toda a familia sentada",
+      "es": "En la sobremesa, toda la familia sentada",
+      "en": "After dinner, the whole family seated"
+    },
+    "objetivoAutonomia": {
+      "gl": "Cada persoa crea un patrón de tres movementos e o resto o copia.",
+      "es": "Cada persona crea un patrón de tres movimientos y el resto lo copia.",
+      "en": "Each person creates a three-movement pattern and the rest copy it."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Agora eu!",
+          "es": "¡Ahora yo!",
+          "en": "Now me!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Your turn! Make your pattern. Clap, jump, tap. Everybody copy!",
+          "es": "Your turn! Make your pattern. Clap, jump, tap. ¡Todos a copiar!",
+          "en": "Your turn! Make your pattern. Clap, jump, tap. Everybody copy!"
+        },
+        "consejoEvitar": {
+          "gl": "Que dirixa a crianza. O adulto copia e equivócase a propósito.",
+          "es": "Que dirija la criatura. El adulto copia y se equivoca a propósito.",
+          "en": "Let the child lead. The adult copies and gets it wrong on purpose."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na mesa, con toda a familia e sen obxectos.",
+      "es": "En la mesa, con toda la familia y sin objetos.",
+      "en": "At the table, whole family, no objects."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

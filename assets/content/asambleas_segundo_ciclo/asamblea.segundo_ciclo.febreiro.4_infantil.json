@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.febreiro.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 2,
+  "titulo": {
+    "gl": "Febreiro: O Entroido e o xogo das máscaras",
+    "es": "Febrero: El Entroido y el juego de las máscaras",
+    "en": "February: Entroido Carnival and the Mask Game"
+  },
+  "centroInteres": {
+    "gl": "As pulseiras de cascabeis: forte e baixo",
+    "es": "Las pulseras de cascabeles: fuerte y bajo",
+    "en": "Bell Bracelets: Loud and Quiet"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "careta",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning bells! Shake your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "cascabel",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida",
+        "es": "Reto Núcleo TPR: Acción Expandida",
+        "en": "Core TPR Challenge: Expanded Action"
+      },
+      "duracionSegundos": 270,
+      "lamina": "cascabel",
+      "consignaDocente": {
+        "gl": "Manipulación de pulseiras de cascabeis: axitación enérxica dos brazos en alto («loud») e detención brusca pegando as mans ao abdome ante o comando murmurado («quiet»).",
+        "es": "Manipulación de pulseras de cascabeles: agitación enérgica de los brazos en alto («loud») y detención brusca pegando las manos al abdomen ante el comando susurrado («quiet»).",
+        "en": "Bell bracelets: vigorous arm shaking overhead («loud») and a sharp stop with hands to the belly on the whispered command («quiet»)."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.febreiro.4i.01",
+          "textoIngles": "Shake your bells loudly",
+          "accionFisica": {
+            "gl": "Axitación enérxica dos brazos por riba da cabeza.",
+            "es": "Agitación enérgica de los brazos por encima de la cabeza.",
+            "en": "Vigorous arm shaking above the head."
+          },
+          "modeladoDocente": {
+            "gl": "Axita os seus cascabeis coa mesma enerxía que pide.",
+            "es": "Agita sus cascabeles con la misma energía que pide.",
+            "en": "Shakes her own bells with the energy she asks for."
+          }
+        },
+        {
+          "id": "cmd.febreiro.4i.02",
+          "textoIngles": "Quiet: hands on your tummy",
+          "accionFisica": {
+            "gl": "Detención inmediata coas mans pegadas ao abdome.",
+            "es": "Detención inmediata con las manos pegadas al abdomen.",
+            "en": "Immediate stop with hands pressed to the belly."
+          },
+          "modeladoDocente": {
+            "gl": "Murmura a orde: o contraste de volume é a clave.",
+            "es": "Susurra la orden: el contraste de volumen es la clave.",
+            "en": "Whispers the command: the volume contrast is the cue."
+          }
+        },
+        {
+          "id": "cmd.febreiro.4i.03",
+          "textoIngles": "Put on your animal mask and roar",
+          "accionFisica": {
+            "gl": "Colocación dunha careta de madeira e ruxido coas mans en garra.",
+            "es": "Colocación de una careta de madera y rugido con las manos en garra.",
+            "en": "Put on a wooden mask and roar with clawed hands."
+          },
+          "modeladoDocente": {
+            "gl": "Pon a careta primeiro e ruxe, sen pedir imitación verbal.",
+            "es": "Se pone la careta primero y ruge, sin pedir imitación verbal.",
+            "en": "Puts the mask on first and roars, never asking for verbal imitation."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "manta",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.febreiro.4i.01",
+    "titulo": {
+      "gl": "O recuncho dos disfraces",
+      "es": "El rincón de los disfraces",
+      "en": "The Dressing-Up Corner"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Nun rato de xogo, diante do espello",
+      "es": "En un rato de juego, delante del espejo",
+      "en": "At playtime, in front of the mirror"
+    },
+    "objetivoAutonomia": {
+      "gl": "Poñer e quitar pezas de disfrace seguindo ordes curtas e ledas.",
+      "es": "Poner y quitar prendas de disfraz siguiendo órdenes cortas y alegres.",
+      "en": "Put on and take off dressing-up items following short cheerful commands."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Sombreiro!",
+          "es": "¡Sombrero!",
+          "en": "Hat!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes! Put on the silly hat, spin twice, make a funny face and freeze!",
+          "es": "Yes! Put on the silly hat, spin twice, ¡pon una cara graciosa y freeze!",
+          "en": "Yes! Put on the silly hat, spin twice, make a funny face and freeze!"
+        },
+        "consejoEvitar": {
+          "gl": "O disfrace é xogo, non ensaio de vocabulario.",
+          "es": "El disfraz es juego, no ensayo de vocabulario.",
+          "en": "Dressing up is play, not vocabulary practice."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Diante do espello do cuarto, cunha caixa de pezas vellas.",
+      "es": "Delante del espejo del cuarto, con una caja de prendas viejas.",
+      "en": "In front of the bedroom mirror, with a box of old clothes."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

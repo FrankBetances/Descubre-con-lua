@@ -26,9 +26,9 @@
       "duracionSegundos": 90,
       "lamina": "amiga",
       "consignaDocente": {
-        "gl": "Reunir ao grupo no círculo. Saúdo cara a cara por parellas enlazando mans con xiro suave e contacto visual cálido. Establecer un clima de pertenza e seguridade.",
-        "es": "Reunir al grupo en el círculo. Saludo cara a cara por parejas enlazando manos con giro suave y contacto visual cálido. Establecer un clima de pertenencia y seguridad.",
-        "en": "Gather the group in the circle. Peer-to-peer greeting holding hands with gentle turning and warm eye contact. Establish belonging and safety."
+        "gl": "Reunir ao grupo no círculo.",
+        "es": "Reunir al grupo en el círculo.",
+        "en": "Gather the group in the circle."
       },
       "cueAcustica": "Good morning partners! Hands together!",
       "comandosL3": [],
@@ -65,9 +65,9 @@
       "duracionSegundos": 270,
       "lamina": "abrigo",
       "consignaDocente": {
-        "gl": "Intercambio comunicativo entre escolares mediante tarxetas de apoio exclusivamente icónicas (sen texto escrito). Un escolar guía ao compañeiro cara á súa percha e entrega do babi, empregando fórmulas pragmáticas de cortesía.",
-        "es": "Intercambio comunicativo entre escolares mediante tarjetas de apoyo exclusivamente icónicas (sin texto escrito). Un escolar guía al compañero hacia su percha y entrega del babi, empleando fórmulas pragmáticas de cortesía.",
-        "en": "Communicative exchange between children using textless visual cue cards. One child guides a peer to their coat peg and smock delivery, using polite pragmatic formulas."
+        "gl": "Intercambio comunicativo entre escolares mediante tarxetas de apoio exclusivamente icónicas (sen texto escrito).",
+        "es": "Intercambio comunicativo entre escolares mediante tarjetas de apoyo exclusivamente icónicas (sin texto escrito).",
+        "en": "Communicative exchange between children using textless visual cue cards."
       },
       "comandosL3": [
         {
@@ -126,9 +126,9 @@
       "duracionSegundos": 120,
       "lamina": "cuncha",
       "consignaDocente": {
-        "gl": "Repartir unha cuncha de vieira pulida a cada parella. Sentir o peso, a temperatura e a textura acanalada mentres respiramos con ritmo pausado antes de pasar ás tarefas do día.",
-        "es": "Repartir una concha de vieira pulida a cada pareja. Sentir el peso, la temperatura y la textura acanalada mientras respiramos con ritmo pausado antes de pasar a las tareas del día.",
-        "en": "Hand a smooth scallop shell to each pair. Feel weight, cool temperature, and ribbed ridges while breathing slowly before beginning classroom centers."
+        "gl": "Repartir unha cuncha de vieira pulida a cada parella.",
+        "es": "Repartir una concha de vieira pulida a cada pareja.",
+        "en": "Hand a smooth scallop shell to each pair."
       },
       "comandosL3": [],
       "repertorioMateriales": [

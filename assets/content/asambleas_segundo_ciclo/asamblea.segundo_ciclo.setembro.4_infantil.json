@@ -26,9 +26,9 @@
       "duracionSegundos": 90,
       "lamina": "gato",
       "consignaDocente": {
-        "gl": "Reunir ao grupo na alfombra en círculo. Contacto visual cálido e saúdo afectivo á mascota Lúa. Establecer un clima de seguridade e escoita atenta.",
-        "es": "Reunir al grupo en la alfombra en círculo. Contacto visual cálido y saludo afectuoso a la mascota Lúa. Establecer un clima de seguridad y escucha atenta.",
-        "en": "Gather the children in a circle on the rug. Warm eye contact and greeting to mascot Lúa. Establish a safe and attentive atmosphere."
+        "gl": "Reunir ao grupo na alfombra en círculo.",
+        "es": "Reunir al grupo en la alfombra en círculo.",
+        "en": "Gather the children in a circle on the rug."
       },
       "cueAcustica": "Hello, Lúa! Wave hello!",
       "comandosL3": [],
@@ -45,9 +45,9 @@
       "duracionSegundos": 120,
       "lamina": "man",
       "consignaDocente": {
-        "gl": "Marcar o compás suave con palmas nas pernas a 72 BPM: 'Clap, tap, clap, tap'. Sincronización psicomotriz e proprioceptiva sen esixir verbalización.",
-        "es": "Marcar el compás suave con palmas en las piernas a 72 BPM: 'Clap, tap, clap, tap'. Sincronización psicomotriz y propioceptiva sin exigir verbalización.",
-        "en": "Keep a gentle beat tapping knees at 72 BPM: 'Clap, tap, clap, tap'. Psychomotor and proprioceptive synchronization without demanding speech."
+        "gl": "Marcar o compás suave con palmas nas pernas a 72 BPM: 'Clap, tap, clap, tap'.",
+        "es": "Marcar el compás suave con palmas en las piernas a 72 BPM: 'Clap, tap, clap, tap'.",
+        "en": "Keep a gentle beat tapping knees at 72 BPM: 'Clap, tap, clap, tap'."
       },
       "cueAcustica": "Pulse 72 BPM",
       "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
@@ -65,9 +65,9 @@
       "duracionSegundos": 270,
       "lamina": "pes",
       "consignaDocente": {
-        "gl": "Comandos coordenados de dúas fases unidos pola conxunción 'and'. Aplicar andamiaxe decrecente: modelado sincrónico inicial, fading a 2 segundos e autonomía motriz. Respecto estrito ao período de silencio fónico: a resposta corporal é a única esixida.",
-        "es": "Comandos coordinados de dos fases unidos por la conjunción 'and'. Aplicar andamiaje decreciente: modelado sincrónico inicial, fading a 2 segundos y autonomía motriz. Respeto estricto al periodo de silencio fónico: la respuesta corporal es la única exigida.",
-        "en": "Two-phase coordinated commands linked by 'and'. Apply fading scaffolding: initial synchronous modeling, 2-second delay, and autonomous motor action. Strict respect for the silent period: physical movement is the only required response."
+        "gl": "Comandos coordenados de dúas fases unidos pola conxunción 'and'.",
+        "es": "Comandos coordinados de dos fases unidos por la conjunción 'and'.",
+        "en": "Two-phase coordinated commands linked by 'and'."
       },
       "comandosL3": [
         {
@@ -126,9 +126,9 @@
       "duracionSegundos": 120,
       "lamina": "toalla",
       "consignaDocente": {
-        "gl": "Distribuír un pano de gasa suave de algodón a cada escolar. Cubrir as mans, soprar con suavidade para ver como se eleva e deixalo caer lentamente sobre as pernas mentres respiramos fondo para pasar aos recantos.",
-        "es": "Distribuir un pañuelo de gasa suave de algodón a cada escolar. Cubrir las manos, soplar suavemente para ver cómo se eleva y dejarlo caer lentamente sobre las piernas mientras respiramos hondo para pasar a los rincones.",
-        "en": "Hand out a soft cotton muslin cloth to each child. Cover hands, blow softly watching it float, and let it drift down over knees while breathing deeply before transitioning to learning corners."
+        "gl": "Distribuír un pano de gasa suave de algodón a cada escolar.",
+        "es": "Distribuir un pañuelo de gasa suave de algodón a cada escolar.",
+        "en": "Hand out a soft cotton muslin cloth to each child."
       },
       "comandosL3": [],
       "repertorioMateriales": [

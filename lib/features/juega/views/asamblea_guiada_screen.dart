@@ -398,7 +398,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
             // La consigna de la fase: qué se hace AHORA, en una línea grande,
             // con los minutos sugeridos y un reloj que empieza parado.
             if (_ritual.enPosicion(_currentPaso) != null)
-              ConsignaFaseWidget(
+              ConsignaFaseWidget.dePrimeiroCiclo(
                 key: ValueKey('consigna_$_currentPaso'),
                 fase: _ritual.enPosicion(_currentPaso)!,
                 language: _language,

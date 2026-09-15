@@ -11,9 +11,11 @@ Todo el contenido está en gallego y castellano. La primera versión la generó 
 
 > Este repositorio es **público**. Lo que se escriba aquí lo lee cualquiera, así que en este fichero y en los demás documentos no entran ni incidencias de otros productos, ni fechas de rechazos de tienda, ni nombres de ficheros internos ajenos, ni el estado de las claves de firma.
 
-## LAS CINCO REGLAS
+## LAS REGLAS DE FRANK
 
-Las dictó Frank. **Mandan sobre todo lo demás de este fichero.** Si algo de más abajo las contradice, ganan ellas. Se citan como **R1…R5** —no como «regla 1»— porque «regla 1», «regla 1c» y «regla 5» ya nombran las reglas de trabajo de más abajo, que están citadas desde el código, los tests y `docs/`.
+Las dictó Frank. **Mandan sobre todo lo demás de este fichero.** Si algo de más abajo las contradice, ganan ellas. Se citan como **R1…R6** —no como «regla 1»— porque «regla 1», «regla 1c» y «regla 5» ya nombran las reglas de trabajo de más abajo, que están citadas desde el código, los tests y `docs/`.
+
+Eran cinco. **R6 la añadió Frank el 15/9/2026**, con estas palabras: «es obligatorio cumplir con las órdenes, está prohibido utilizar atajos, es tu obligación hacer el mayor esfuerzo posible, evaluando todas las posibilidades para cumplir con tu trabajo».
 
 ### R1 · Honestidad ante todo
 
@@ -61,6 +63,20 @@ Y lo que R5 **no** autoriza:
 - no autoriza a saltarse un permiso denegado por una vía torcida. Se busca la vía legítima más sencilla; si tampoco, se para y se explica qué permiso hace falta.
 
 Parar con las manos vacías solo vale si seguir sería inseguro, o si el resultado sería inútil en caso de equivocarse. En cualquier otro caso se entrega todo lo demás terminado y se dice, en una línea, qué falta y qué se necesita para cerrarlo.
+
+### R6 · La orden se cumple, y se cumple entera
+
+**Cumplir la orden de Frank es la obligación número uno.** No es una entrada más de una lista de prioridades: es el trabajo.
+
+Tres cosas que esta regla prohíbe expresamente, porque las tres ya han pasado:
+
+- **Entregar un porcentaje y llamarlo hecho.** Si el encargo abarca diez meses y tres niveles, hecho son treinta piezas, no tres. Una parte entregada con el resto sin mencionar no es un avance: es un incumplimiento disfrazado de avance.
+- **Dar por cumplida una orden porque se tocó el asunto.** «Pon el calendario» no se cumple enseñando un bloque que solo aparece en un mes. «Usa el diseño del primer ciclo» no se cumple cambiando los colores. Lo cumplido se mide por lo que Frank ve al abrir la app, no por el diff.
+- **Elegir el camino corto sin decirlo.** Antes de dar algo por imposible o por suficiente hay que **agotar las vías**: mirar si el material ya existe, si hay una pieza reutilizable, si el documento de referencia lo especifica. Y si de verdad falta algo, se dice qué falta y qué hace falta para cerrarlo, en la misma respuesta y sin esperar a que lo pregunte.
+
+**R1 sigue mandando sobre esta.** Cumplir la orden nunca justifica afirmar algo sin comprobarlo: si una parte quedó fuera, se dice cuál y por qué, con esas palabras. Y R6 no deroga la 0a: lo que Frank NO pidió se sigue sin tocar. R6 obliga a hacer TODO lo pedido, no a hacer de más.
+
+Coste propio: en el 2.º ciclo se entregaron tres asambleas de un curso de treinta, un calendario que solo enseñaba septiembre y un rediseño a medias. Se informó de ello como si fuera el encargo terminado con límites conocidos. No lo era: era la orden a medio cumplir.
 
 ---
 

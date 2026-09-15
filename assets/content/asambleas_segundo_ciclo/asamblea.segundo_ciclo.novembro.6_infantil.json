@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.novembro.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 11,
+  "titulo": {
+    "gl": "Novembro: Samaín e Magosto — castañas, lume e cabazas",
+    "es": "Noviembre: Samaín y Magosto — castañas, fuego y calabazas",
+    "en": "November: Samaín and Magosto — Chestnuts, Fire and Pumpkins"
+  },
+  "centroInteres": {
+    "gl": "O reto sensorial da bolsa de liño",
+    "es": "El reto sensorial de la bolsa de lino",
+    "en": "The Linen Bag Sensory Challenge"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "castana",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning fire! Warm hands up!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales",
+        "en": "Core TPR Challenge: Peer-to-Peer Commands"
+      },
+      "duracionSegundos": 270,
+      "lamina": "cesta",
+      "consignaDocente": {
+        "gl": "Reto de categorización: cos ollos pechados ou dentro de bolsas de liño, extraer elementos distinguindo texturas rugosas e lisas.",
+        "es": "Reto de categorización: con los ojos cerrados o dentro de bolsas de lino, extraer elementos distinguiendo texturas rugosas y lisas.",
+        "en": "Sorting challenge: eyes closed or hands inside linen bags, pull out items telling rough from smooth."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.novembro.6i.01",
+          "textoIngles": "Mateo, find a round cold chestnut",
+          "accionFisica": {
+            "gl": "Busca táctil dentro da bolsa ata atopar unha castaña redonda e fría.",
+            "es": "Búsqueda táctil dentro de la bolsa hasta encontrar una castaña redonda y fría.",
+            "en": "Tactile search inside the bag until a round cold chestnut is found."
+          },
+          "modeladoDocente": {
+            "gl": "Entrega a bolsa e retírase; non sinala nin corrixe.",
+            "es": "Entrega la bolsa y se retira; no señala ni corrige.",
+            "en": "Hands over the bag and steps back; no pointing, no correction."
+          }
+        },
+        {
+          "id": "cmd.novembro.6i.02",
+          "textoIngles": "Put the rough one here and the smooth one there",
+          "accionFisica": {
+            "gl": "Clasificación en dous aros segundo a textura percibida coa man.",
+            "es": "Clasificación en dos aros según la textura percibida con la mano.",
+            "en": "Sorting into two rings by the texture felt with the hand."
+          },
+          "modeladoDocente": {
+            "gl": "Coloca os dous aros e agarda en silencio a resposta motriz.",
+            "es": "Coloca los dos aros y espera en silencio la respuesta motriz.",
+            "en": "Places the two rings and waits silently for the motor response."
+          }
+        },
+        {
+          "id": "cmd.novembro.6i.03",
+          "textoIngles": "Your turn: give the command to your friend",
+          "accionFisica": {
+            "gl": "Toma de quenda: o escolar enuncia a orde e o compañeiro execútaa.",
+            "es": "Toma de turno: el escolar enuncia la orden y el compañero la ejecuta.",
+            "en": "Turn-taking: the child states the command and a peer performs it."
+          },
+          "modeladoDocente": {
+            "gl": "Sitúase fóra do círculo como condutora periférica.",
+            "es": "Se sitúa fuera del círculo como conductora periférica.",
+            "en": "Stands outside the circle as a peripheral facilitator."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "quente",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.novembro.6i.01",
+    "titulo": {
+      "gl": "A bolsa da curiosidade",
+      "es": "La bolsa de la curiosidad",
+      "en": "The Curiosity Bag"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Despois de cear, na alfombra do salón",
+      "es": "Después de cenar, en la alfombra del salón",
+      "en": "After dinner, on the living-room rug"
+    },
+    "objetivoAutonomia": {
+      "gl": "Adiviñar ao tacto dous ou tres obxectos da casa metidos nunha bolsa de tea.",
+      "es": "Adivinar al tacto dos o tres objetos de casa metidos en una bolsa de tela.",
+      "en": "Guess by touch two or three household objects placed in a cloth bag."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "É duro e frío",
+          "es": "Es duro y frío",
+          "en": "It is hard and cold"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes! It is hard and cold. Pull it out! A spoon! Put your hand inside again.",
+          "es": "Yes! It is hard and cold. Pull it out! ¡Una cuchara! Put your hand inside again.",
+          "en": "Yes! It is hard and cold. Pull it out! A spoon! Put your hand inside again."
+        },
+        "consejoEvitar": {
+          "gl": "Se mestura linguas, non se nomea a mestura: devólvese a frase enteira.",
+          "es": "Si mezcla lenguas, no se nombra la mezcla: se devuelve la frase entera.",
+          "en": "If languages mix, do not name the mixing: give the whole phrase back."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na alfombra, cunha bolsa de liño opaca e obxectos cotiáns.",
+      "es": "En la alfombra, con una bolsa de lino opaca y objetos cotidianos.",
+      "en": "On the rug, with an opaque linen bag and everyday objects."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

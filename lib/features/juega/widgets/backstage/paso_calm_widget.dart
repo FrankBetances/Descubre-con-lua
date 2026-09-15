@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/localization/app_language.dart';
 import '../../../../core/audio/offline_audio_service.dart';
-import '../../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../../core/brand/lamina_vector.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/asamblea_segundo_ciclo_model.dart';
@@ -37,7 +36,6 @@ class PasoCalmWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
     final titulo = fase.titulo.resolve(language);
-    final consigna = fase.consignaDocente.resolve(language);
     final hasMaterials = fase.repertorioMateriales.isNotEmpty;
 
     return Column(
@@ -109,62 +107,6 @@ class PasoCalmWidget extends StatelessWidget {
         const SizedBox(height: 16),
 
         // Consigna pedagóxica do docente
-        Container(
-          padding: const EdgeInsets.all(18),
-          decoration: BoxDecoration(
-            color: AppTheme.backstageSurfaceElevated,
-            borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-            border: Border.all(color: AppTheme.backstageBorder),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  const Icon(
-                    Icons.record_voice_over_outlined,
-                    color: AppTheme.backstageAccent,
-                    size: 22,
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                      child: Text(
-                    isGl
-                        ? 'Consigna para o Docente'
-                        : 'Consigna para el Docente',
-                    style: const TextStyle(
-                      fontFamily: AppTheme.fontFamily,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w700,
-                      color: AppTheme.backstageAccent,
-                    ),
-                  )),
-                ],
-              ),
-              const SizedBox(height: 12),
-              Text(
-                consigna,
-                style: const TextStyle(
-                  fontFamily: AppTheme.fontFamily,
-                  fontSize: 17.0,
-                  fontWeight: FontWeight.w500,
-                  color: AppTheme.backstageTextPrimary,
-                  height: 1.4,
-                ),
-              ),
-              BotonEscuchar(
-                audioService: audioService,
-                texto: consigna,
-                language: language,
-                compacto: true,
-                descripcion:
-                    isGl ? 'a consigna da calma' : 'la consigna de la calma',
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 16),
-
         // Pauta de respiración e desaceleración somática
         Container(
           padding: const EdgeInsets.all(16),

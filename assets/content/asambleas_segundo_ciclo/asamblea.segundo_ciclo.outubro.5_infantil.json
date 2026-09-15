@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.outubro.5_infantil",
+  "nivel": "5_infantil",
+  "mes": 10,
+  "titulo": {
+    "gl": "Outubro: O outono, o vento e as follas secas do bosque galego",
+    "es": "Octubre: El otoño, el viento y las hojas secas del bosque gallego",
+    "en": "October: Autumn, Wind and Dry Leaves in the Galician Forest"
+  },
+  "centroInteres": {
+    "gl": "O conto motor dos animais do bosque",
+    "es": "El cuento motor de los animales del bosque",
+    "en": "The Forest Animals Kinetic Story"
+  },
+  "metodologiaTpr": "dramatizado_narrativo",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "folla",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning wind! Cross your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Conto Motor e Freada",
+        "es": "Reto Núcleo TPR: Cuento Motor y Frenada",
+        "en": "Core TPR Challenge: Kinetic Story & Freeze"
+      },
+      "duracionSegundos": 270,
+      "lamina": "oso",
+      "consignaDocente": {
+        "gl": "Conto motor acumulativo: os nenos encarnan esquíos que recollen castañas.",
+        "es": "Cuento motor acumulativo: los niños encarnan ardillas que recogen castañas.",
+        "en": "Cumulative kinetic story: children enact squirrels gathering chestnuts."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.outubro.5i.01",
+          "textoIngles": "Hop like a squirrel and collect the chestnuts",
+          "accionFisica": {
+            "gl": "Saltos curtos con pés xuntos e recollida rápida de castañas do chan.",
+            "es": "Saltos cortos con pies juntos y recogida rápida de castañas del suelo.",
+            "en": "Short two-footed hops and quick chestnut gathering from the floor."
+          },
+          "modeladoDocente": {
+            "gl": "Salta dúas veces e recolle, marcando o ritmo coas claves de madeira.",
+            "es": "Salta dos veces y recoge, marcando el ritmo con las claves de madera.",
+            "en": "Hops twice and collects, marking the beat with wooden claves."
+          }
+        },
+        {
+          "id": "cmd.outubro.5i.02",
+          "textoIngles": "The wild boar is coming: FREEZE!",
+          "accionFisica": {
+            "gl": "Parada tónica inmediata na postura exacta en que se estaba.",
+            "es": "Parada tónica inmediata en la postura exacta en que se estaba.",
+            "en": "Immediate postural hold in the exact position reached."
+          },
+          "modeladoDocente": {
+            "gl": "Detense en seco cun xesto amplo e mantén o silencio ata a seguinte orde.",
+            "es": "Se detiene en seco con un gesto amplio y mantiene el silencio hasta la siguiente orden.",
+            "en": "Freezes sharply with a wide gesture and holds silence until the next cue."
+          }
+        },
+        {
+          "id": "cmd.outubro.5i.03",
+          "textoIngles": "Climb the oak tree and hide your nuts",
+          "accionFisica": {
+            "gl": "Trepa simulada con brazos alternos e agachada final agochando as mans.",
+            "es": "Trepa simulada con brazos alternos y agachada final escondiendo las manos.",
+            "en": "Mimed climbing with alternating arms and a final crouch hiding the hands."
+          },
+          "modeladoDocente": {
+            "gl": "Modelado narrativo expresivo, mirando arriba como se houbese pólas.",
+            "es": "Modelado narrativo expresivo, mirando arriba como si hubiese ramas.",
+            "en": "Expressive narrative modeling, looking up as if branches were there."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "vento",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "5_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.outubro.5i.01",
+    "titulo": {
+      "gl": "A misión das piñas",
+      "es": "La misión de las piñas",
+      "en": "The Pine Cone Mission"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Ao volver do parque, na entrada da casa",
+      "es": "Al volver del parque, en la entrada de casa",
+      "en": "Back from the park, at the front door"
+    },
+    "objetivoAutonomia": {
+      "gl": "Clasificar xuntos o que se trouxo do monte nunha caixa de madeira.",
+      "es": "Clasificar juntos lo que se trajo del monte en una caja de madera.",
+      "en": "Sort together what came home from the woods into a wooden box."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Piña grande!",
+          "es": "¡Piña grande!",
+          "en": "Big cone!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes! A big pine cone! Put the big pine cone in the box. Now the small one!",
+          "es": "Yes! A big pine cone! Put the big pine cone in the box. ¡Ahora la pequeña!",
+          "en": "Yes! A big pine cone! Put the big pine cone in the box. Now the small one!"
+        },
+        "consejoEvitar": {
+          "gl": "Non corrixir a mestura de linguas: devolver a frase enteira e seguir xogando.",
+          "es": "No corregir la mezcla de lenguas: devolver la frase entera y seguir jugando.",
+          "en": "Do not correct language mixing: give the full phrase back and keep playing."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No recibidor, cunha caixa baixa ao alcance da crianza.",
+      "es": "En el recibidor, con una caja baja al alcance de la criatura.",
+      "en": "In the hallway, with a low box within the child's reach."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

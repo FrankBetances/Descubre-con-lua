@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.xaneiro.4_infantil",
+  "nivel": "4_infantil",
+  "mes": 1,
+  "titulo": {
+    "gl": "Xaneiro: A choiva, o frío e a auga nas nosas aldeas",
+    "es": "Enero: La lluvia, el frío y el agua en nuestras aldeas",
+    "en": "January: Rain, Cold and Water in Our Villages"
+  },
+  "centroInteres": {
+    "gl": "A percusión corporal da choiva",
+    "es": "La percusión corporal de la lluvia",
+    "en": "Body Percussion of the Rain"
+  },
+  "metodologiaTpr": "accion_expandida",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "paraugas",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning rain! Open your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Acción Expandida",
+        "es": "Reto Núcleo TPR: Acción Expandida",
+        "en": "Core TPR Challenge: Expanded Action"
+      },
+      "duracionSegundos": 270,
+      "lamina": "charco",
+      "consignaDocente": {
+        "gl": "Percusión corporal reproducindo a choiva: dedos sobre a cabeza, palmas sobre as coxas.",
+        "es": "Percusión corporal reproduciendo la lluvia: dedos sobre la cabeza, palmas sobre los muslos.",
+        "en": "Body percussion for the rain: fingers on the head, palms on the thighs."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.xaneiro.4i.01",
+          "textoIngles": "Tap your knees like rain falling fast",
+          "accionFisica": {
+            "gl": "Repique rápido coas dúas mans sobre os xeonllos.",
+            "es": "Repiqueteo rápido con las dos manos sobre las rodillas.",
+            "en": "Fast tapping with both hands on the knees."
+          },
+          "modeladoDocente": {
+            "gl": "Marca o ritmo rápido e logo lento, sen explicar a diferenza.",
+            "es": "Marca el ritmo rápido y luego lento, sin explicar la diferencia.",
+            "en": "Marks a fast then a slow beat, without explaining the difference."
+          }
+        },
+        {
+          "id": "cmd.xaneiro.4i.02",
+          "textoIngles": "Jump over the big puddle",
+          "accionFisica": {
+            "gl": "Salto con pés xuntos por riba dun aro de madeira.",
+            "es": "Salto con pies juntos por encima de un aro de madera.",
+            "en": "Two-footed jump over a wooden ring."
+          },
+          "modeladoDocente": {
+            "gl": "Salta primeiro e agarda a que o grupo o faga.",
+            "es": "Salta primero y espera a que el grupo lo haga.",
+            "en": "Jumps first and waits for the group to follow."
+          }
+        },
+        {
+          "id": "cmd.xaneiro.4i.03",
+          "textoIngles": "Open your umbrella",
+          "accionFisica": {
+            "gl": "Apertura ampla dos brazos sobre a cabeza como un paraugas.",
+            "es": "Apertura amplia de los brazos sobre la cabeza como un paraguas.",
+            "en": "Wide opening of the arms overhead like an umbrella."
+          },
+          "modeladoDocente": {
+            "gl": "Abre e pecha os brazos ao compás do pandeiro.",
+            "es": "Abre y cierra los brazos al compás del pandero.",
+            "en": "Opens and closes the arms to the drum beat."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "xabon",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "4_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.xaneiro.4i.01",
+    "titulo": {
+      "gl": "O baño da noite",
+      "es": "El baño de la noche",
+      "en": "The Evening Bath"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Na hora de hixiene, antes de durmir",
+      "es": "En la hora de higiene, antes de dormir",
+      "en": "At washing time, before bed"
+    },
+    "objetivoAutonomia": {
+      "gl": "Guiar o lavado por partes do corpo coa voz, sen traducir nada.",
+      "es": "Guiar el lavado por partes del cuerpo con la voz, sin traducir nada.",
+      "en": "Guide the washing body part by body part with the voice, translating nothing."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Auga quente!",
+          "es": "¡Agua caliente!",
+          "en": "Hot water!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, warm water! Wash your hands, scrub your fingers. Dry: pat, pat, pat!",
+          "es": "Yes, warm water! Wash your hands, scrub your fingers. Dry: pat, pat, pat!",
+          "en": "Yes, warm water! Wash your hands, scrub your fingers. Dry: pat, pat, pat!"
+        },
+        "consejoEvitar": {
+          "gl": "Non preguntar «como se di auga?». Dicir a frase e seguir lavando.",
+          "es": "No preguntar «¿cómo se dice agua?». Decir la frase y seguir lavando.",
+          "en": "Never ask «how do you say water?». Say the phrase and keep washing."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No baño, coa auga xa temperada e a toalla preparada.",
+      "es": "En el baño, con el agua ya templada y la toalla preparada.",
+      "en": "In the bathroom, water already warm and the towel ready."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

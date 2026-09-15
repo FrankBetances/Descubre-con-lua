@@ -26,9 +26,9 @@
       "duracionSegundos": 90,
       "lamina": "gato",
       "consignaDocente": {
-        "gl": "Reunir ao grupo no círculo. Cruzar os brazos sobre o peito para saudar a Lúa e xirar suavemente sobre o propio eixe. Activar a escoita atenta.",
-        "es": "Reunir al grupo en el círculo. Cruzar los brazos sobre el pecho para saludar a Lúa y girar suavemente sobre el propio eje. Activar la escucha atenta.",
-        "en": "Gather the group in the circle. Cross arms over the chest to greet Lúa and turn gently on the axis. Activate attentive listening."
+        "gl": "Reunir ao grupo no círculo.",
+        "es": "Reunir al grupo en el círculo.",
+        "en": "Gather the group in the circle."
       },
       "cueAcustica": "Good morning friends! Hands across!",
       "comandosL3": [],
@@ -45,9 +45,9 @@
       "duracionSegundos": 120,
       "lamina": "man",
       "consignaDocente": {
-        "gl": "Marcar o pulso de 72 BPM con palmadas alternadas en xeonllos e ombreiros. Acompañar a rima dactilar coa voz e co xesto, sen pedir que ninguén repita.",
-        "es": "Marcar el pulso de 72 BPM con palmadas alternadas en rodillas y hombros. Acompañar la rima dactilar con la voz y el gesto, sin pedir que nadie repita.",
-        "en": "Keep 72 BPM tapping knees and shoulders alternately. Follow the fingerplay rhyme with voice and gesture, without asking anyone to repeat."
+        "gl": "Marcar o pulso de 72 BPM con palmadas alternadas en xeonllos e ombreiros.",
+        "es": "Marcar el pulso de 72 BPM con palmadas alternadas en rodillas y hombros.",
+        "en": "Keep 72 BPM tapping knees and shoulders alternately."
       },
       "cueAcustica": "Pulse 72 BPM",
       "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
@@ -65,9 +65,9 @@
       "duracionSegundos": 270,
       "lamina": "mochila",
       "consignaDocente": {
-        "gl": "Dramatización motriz da mochila durmiñona. O grupo encarna o desprazamento pesado e a freada brusca ante a clave sintáctica 'FREEZE!'. Exixir control inhibitorio sen interrupcións metalingüísticas.",
-        "es": "Dramatización motriz de la mochila dormilona. El grupo encarna el desplazamiento pesado y la frenada brusca ante la clave sintáctica 'FREEZE!'. Exigir control inhibitorio sin interrupciones metalingüísticas.",
-        "en": "Kinetic enactment of the sleepy backpack. Children enact heavy movement and sudden postural hold upon hearing 'FREEZE!'. Foster inhibitory control without metalinguistic interruptions."
+        "gl": "Dramatización motriz da mochila durmiñona.",
+        "es": "Dramatización motriz de la mochila dormilona.",
+        "en": "Kinetic enactment of the sleepy backpack."
       },
       "comandosL3": [
         {
@@ -126,9 +126,9 @@
       "duracionSegundos": 120,
       "lamina": "arbore",
       "consignaDocente": {
-        "gl": "Sentar na alfombra coas pernas cruzadas. Respiración diafragmática fonda: coller aire imaxinando cheirar a herba húmida e expulsalo cun suave sopro /s/ mentres tocamos as claves de madeira.",
-        "es": "Sentar en la alfombra con las piernas cruzadas. Respiración diafragmática profunda: tomar aire imaginando oler la hierba húmeda y expulsarlo con un suave soplo /s/ mientras tocamos las claves de madera.",
-        "en": "Sit cross-legged on the rug. Deep diaphragmatic breathing: inhale imagining wet forest grass and exhale softly with /s/ while holding polished wood claves."
+        "gl": "Sentar na alfombra coas pernas cruzadas.",
+        "es": "Sentar en la alfombra con las piernas cruzadas.",
+        "en": "Sit cross-legged on the rug."
       },
       "comandosL3": [],
       "repertorioMateriales": [

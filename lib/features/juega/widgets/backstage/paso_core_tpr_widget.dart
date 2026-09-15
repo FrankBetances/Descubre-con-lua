@@ -42,7 +42,6 @@ class PasoCoreTprWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
     final titulo = fase.titulo.resolve(language);
-    final consigna = fase.consignaDocente.resolve(language);
     final isDramatizado = metodologia == MetodologiaTPR.dramatizadoNarrativo;
     final isTransaccional =
         metodologia == MetodologiaTPR.transaccionalPragmatico;
@@ -283,61 +282,6 @@ class PasoCoreTprWidget extends StatelessWidget {
         ],
 
         // Consigna pedagóxica do docente
-        Container(
-          padding: const EdgeInsets.all(18),
-          decoration: BoxDecoration(
-            color: AppTheme.backstageSurface,
-            borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-            border: Border.all(color: AppTheme.backstageBorder),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  const Icon(
-                    Icons.record_voice_over_outlined,
-                    color: AppTheme.backstageAccent,
-                    size: 22,
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                      child: Text(
-                    isGl
-                        ? 'Pauta Xeral para o Docente'
-                        : 'Pauta General para el Docente',
-                    style: const TextStyle(
-                      fontFamily: AppTheme.fontFamily,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w700,
-                      color: AppTheme.backstageAccent,
-                    ),
-                  )),
-                ],
-              ),
-              const SizedBox(height: 12),
-              Text(
-                consigna,
-                style: const TextStyle(
-                  fontFamily: AppTheme.fontFamily,
-                  fontSize: 17.0,
-                  fontWeight: FontWeight.w500,
-                  color: AppTheme.backstageTextPrimary,
-                  height: 1.4,
-                ),
-              ),
-              BotonEscuchar(
-                audioService: audioService,
-                texto: consigna,
-                language: language,
-                compacto: true,
-                descripcion: isGl
-                    ? 'a consigna do reto TPR'
-                    : 'la consigna del reto TPR',
-              ),
-            ],
-          ),
-        ),
         const SizedBox(height: 20),
 
         // Título de Comandos L3

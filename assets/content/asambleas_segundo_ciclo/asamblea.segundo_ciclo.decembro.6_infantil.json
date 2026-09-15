@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.decembro.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 12,
+  "titulo": {
+    "gl": "Decembro: Solsticio de inverno, luces e abrigo",
+    "es": "Diciembre: Solsticio de invierno, luces y abrigo",
+    "en": "December: Winter Solstice, Lights and Warm Clothes"
+  },
+  "centroInteres": {
+    "gl": "O circuíto cooperativo coa luz",
+    "es": "El circuito cooperativo con la luz",
+    "en": "The Cooperative Light Circuit"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "botas",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning winter! Warm your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales",
+        "en": "Core TPR Challenge: Peer-to-Peer Commands"
+      },
+      "duracionSegundos": 270,
+      "lamina": "luz",
+      "consignaDocente": {
+        "gl": "Circuíto en parellas: un neno guía o compañeiro cos ollos pechados por un camiño delimitado con cordas, transportando unha vela LED apagada.",
+        "es": "Circuito en parejas: un niño guía al compañero con los ojos cerrados por un camino delimitado con cuerdas, transportando una vela LED apagada.",
+        "en": "Paired circuit: one child guides a blindfolded peer along a rope-marked path carrying an unlit LED candle."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.decembro.6i.01",
+          "textoIngles": "Walk slowly and hold your friend's hand",
+          "accionFisica": {
+            "gl": "Marcha lenta en parella con contacto manual constante.",
+            "es": "Marcha lenta en pareja con contacto manual constante.",
+            "en": "Slow paired walk with constant hand contact."
+          },
+          "modeladoDocente": {
+            "gl": "Comproba o camiño e retírase a un lado sen intervir.",
+            "es": "Comprueba el camino y se retira a un lado sin intervenir.",
+            "en": "Checks the path and steps aside without intervening."
+          }
+        },
+        {
+          "id": "cmd.decembro.6i.02",
+          "textoIngles": "Turn left and step over the rope",
+          "accionFisica": {
+            "gl": "Xiro á esquerda e paso elevado por riba dunha corda no chan.",
+            "es": "Giro a la izquierda y paso elevado por encima de una cuerda en el suelo.",
+            "en": "Left turn and a raised step over a rope on the floor."
+          },
+          "modeladoDocente": {
+            "gl": "Non sinala a dirección: repite a orde e conta cinco segundos.",
+            "es": "No señala la dirección: repite la orden y cuenta cinco segundos.",
+            "en": "Does not point: repeats the command and counts five seconds."
+          }
+        },
+        {
+          "id": "cmd.decembro.6i.03",
+          "textoIngles": "Here you go: give the light to the next pair",
+          "accionFisica": {
+            "gl": "Entrega da vela á seguinte parella coa fórmula pragmática.",
+            "es": "Entrega de la vela a la siguiente pareja con la fórmula pragmática.",
+            "en": "Hand the candle to the next pair with the pragmatic formula."
+          },
+          "modeladoDocente": {
+            "gl": "Só supervisa a quenda; a fórmula dina os escolares.",
+            "es": "Solo supervisa el turno; la fórmula la dicen los escolares.",
+            "en": "Only supervises the turn; the children say the formula."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "frio",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.decembro.6i.01",
+    "titulo": {
+      "gl": "A luz que pasa de man en man",
+      "es": "La luz que pasa de mano en mano",
+      "en": "The Light Passed Hand to Hand"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Na sobremesa, coa luz do salón baixa",
+      "es": "En la sobremesa, con la luz del salón baja",
+      "en": "After dinner, with the living-room light low"
+    },
+    "objetivoAutonomia": {
+      "gl": "Pasar unha lanterna pequena en quendas, dicindo a fórmula de entrega.",
+      "es": "Pasar una linterna pequeña por turnos, diciendo la fórmula de entrega.",
+      "en": "Pass a small torch in turns, saying the handover formula."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Toma!",
+          "es": "¡Toma!",
+          "en": "Take!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Here you go! Thank you! Your turn now. Pass the light to mamá.",
+          "es": "Here you go! Thank you! Your turn now. Pasa la luz a mamá.",
+          "en": "Here you go! Thank you! Your turn now. Pass the light to mum."
+        },
+        "consejoEvitar": {
+          "gl": "As fórmulas apréndense usándoas, non preguntando por elas.",
+          "es": "Las fórmulas se aprenden usándolas, no preguntando por ellas.",
+          "en": "Formulas are learnt by using them, not by being asked about them."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "No salón, sentados en círculo cunha lanterna pequena.",
+      "es": "En el salón, sentados en círculo con una linterna pequeña.",
+      "en": "In the living room, sitting in a circle with a small torch."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

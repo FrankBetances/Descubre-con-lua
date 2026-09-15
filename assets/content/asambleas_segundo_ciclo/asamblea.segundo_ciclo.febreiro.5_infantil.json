@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.febreiro.5_infantil",
+  "nivel": "5_infantil",
+  "mes": 2,
+  "titulo": {
+    "gl": "Febreiro: O Entroido e o xogo das máscaras",
+    "es": "Febrero: El Entroido y el juego de las máscaras",
+    "en": "February: Entroido Carnival and the Mask Game"
+  },
+  "centroInteres": {
+    "gl": "A transformación cinestésica dos animais do monte",
+    "es": "La transformación cinestésica de los animales del monte",
+    "en": "Kinetic Transformation into Woodland Animals"
+  },
+  "metodologiaTpr": "dramatizado_narrativo",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "careta",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning bells! Shake your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "cascabel",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Conto Motor e Freada",
+        "es": "Reto Núcleo TPR: Cuento Motor y Frenada",
+        "en": "Core TPR Challenge: Kinetic Story & Freeze"
+      },
+      "duracionSegundos": 270,
+      "lamina": "careta",
+      "consignaDocente": {
+        "gl": "A docente amosa caretas de madeira de animais tradicionais (lobo, xabaril, raposo); o grupo adopta ao instante a locomoción e a postura da especie.",
+        "es": "La docente muestra caretas de madera de animales tradicionales (lobo, jabalí, zorro); el grupo adopta al instante la locomoción y la postura de la especie.",
+        "en": "The teacher shows wooden masks of traditional animals (wolf, boar, fox); the group instantly takes on the species' gait and posture."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.febreiro.5i.01",
+          "textoIngles": "Gallop like a wild horse",
+          "accionFisica": {
+            "gl": "Galope rítmico con cambio de apoio e brazos recollidos.",
+            "es": "Galope rítmico con cambio de apoyo y brazos recogidos.",
+            "en": "Rhythmic gallop with alternating support and arms tucked in."
+          },
+          "modeladoDocente": {
+            "gl": "Galopa en círculo unha volta completa antes de parar.",
+            "es": "Galopa en círculo una vuelta completa antes de parar.",
+            "en": "Gallops one full circle before stopping."
+          }
+        },
+        {
+          "id": "cmd.febreiro.5i.02",
+          "textoIngles": "The wolf is watching: FREEZE!",
+          "accionFisica": {
+            "gl": "Parada tónica inmediata mantendo a postura do animal.",
+            "es": "Parada tónica inmediata manteniendo la postura del animal.",
+            "en": "Immediate postural hold keeping the animal's shape."
+          },
+          "modeladoDocente": {
+            "gl": "Levanta a careta do lobo e cala: a imaxe é a orde.",
+            "es": "Levanta la careta del lobo y calla: la imagen es la orden.",
+            "en": "Raises the wolf mask and stays silent: the image is the command."
+          }
+        },
+        {
+          "id": "cmd.febreiro.5i.03",
+          "textoIngles": "Sneak quietly like a fox in the woods",
+          "accionFisica": {
+            "gl": "Marcha silenciosa sobre metatarsos co tronco lixeiramente baixo.",
+            "es": "Marcha silenciosa sobre metatarsos con el tronco ligeramente bajo.",
+            "en": "Silent walk on the balls of the feet with the torso slightly low."
+          },
+          "modeladoDocente": {
+            "gl": "Modela a marcha silenciosa e baixa a voz ao mínimo.",
+            "es": "Modela la marcha silenciosa y baja la voz al mínimo.",
+            "en": "Models the silent walk and lowers the voice to a minimum."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "manta",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "5_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.febreiro.5i.01",
+    "titulo": {
+      "gl": "A careta de papel",
+      "es": "La careta de papel",
+      "en": "The Paper Mask"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Nun rato de tarde, na mesa do salón",
+      "es": "En un rato de tarde, en la mesa del salón",
+      "en": "An afternoon moment, at the living-room table"
+    },
+    "objetivoAutonomia": {
+      "gl": "Xogar a transformarse cunha careta feita en casa, seguindo ordes de movemento.",
+      "es": "Jugar a transformarse con una careta hecha en casa, siguiendo órdenes de movimiento.",
+      "en": "Play at transforming with a home-made mask, following movement commands."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Son lobo!",
+          "es": "¡Soy lobo!",
+          "en": "I am wolf!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, you are a wolf! Sneak slowly... and now FREEZE. The wolf is sleeping.",
+          "es": "Yes, you are a wolf! Sneak slowly... y ahora FREEZE. The wolf is sleeping.",
+          "en": "Yes, you are a wolf! Sneak slowly... and now FREEZE. The wolf is sleeping."
+        },
+        "consejoEvitar": {
+          "gl": "Validar a intención e devolver a forma; nunca esixir a repetición.",
+          "es": "Validar la intención y devolver la forma; nunca exigir la repetición.",
+          "en": "Validate the intent and give the form back; never demand repetition."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na mesa do salón, cunha careta de cartón e gomas.",
+      "es": "En la mesa del salón, con una careta de cartón y gomas.",
+      "en": "At the living-room table, with a cardboard mask and elastic."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

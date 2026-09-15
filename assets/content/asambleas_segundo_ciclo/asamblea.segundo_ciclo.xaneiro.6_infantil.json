@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.xaneiro.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 1,
+  "titulo": {
+    "gl": "Xaneiro: A choiva, o frío e a auga nas nosas aldeas",
+    "es": "Enero: La lluvia, el frío y el agua en nuestras aldeas",
+    "en": "January: Rain, Cold and Water in Our Villages"
+  },
+  "centroInteres": {
+    "gl": "O equilibrio e a auga que non se derrama",
+    "es": "El equilibrio y el agua que no se derrama",
+    "en": "Balance and the Water That Does Not Spill"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "paraugas",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning rain! Open your hands!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales",
+        "en": "Core TPR Challenge: Peer-to-Peer Commands"
+      },
+      "duracionSegundos": 270,
+      "lamina": "auga",
+      "consignaDocente": {
+        "gl": "Portar bandexas con vasos de auga temperada a través dun circuíto de bancos suecos.",
+        "es": "Portar bandejas con vasos de agua templada a través de un circuito de bancos suecos.",
+        "en": "Carry trays with glasses of warm water across a circuit of low benches."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.xaneiro.6i.01",
+          "textoIngles": "Step slowly, do not spill the water in the river",
+          "accionFisica": {
+            "gl": "Marcha moi lenta sobre banco baixo sostendo unha bandexa con auga.",
+            "es": "Marcha muy lenta sobre banco bajo sosteniendo una bandeja con agua.",
+            "en": "Very slow walk on a low bench holding a tray of water."
+          },
+          "modeladoDocente": {
+            "gl": "Non toca a bandexa: acompaña ao lado sen suxeitar.",
+            "es": "No toca la bandeja: acompaña al lado sin sujetar.",
+            "en": "Never touches the tray: walks alongside without holding it."
+          }
+        },
+        {
+          "id": "cmd.xaneiro.6i.02",
+          "textoIngles": "Ready, steady, go: pass the tray to your friend",
+          "accionFisica": {
+            "gl": "Entrega coordinada da bandexa a un compañeiro sen derramar.",
+            "es": "Entrega coordinada de la bandeja a un compañero sin derramar.",
+            "en": "Coordinated tray handover to a peer without spilling."
+          },
+          "modeladoDocente": {
+            "gl": "Dá a fórmula unha vez e cala; a quenda organízana eles.",
+            "es": "Da la fórmula una vez y calla; el turno lo organizan ellos.",
+            "en": "Says the formula once then stays quiet; the children organise the turn."
+          }
+        },
+        {
+          "id": "cmd.xaneiro.6i.03",
+          "textoIngles": "If the water is cold, walk to the blue mat",
+          "accionFisica": {
+            "gl": "Escoita condicional e desprazamento á alfombra azul ou á verde.",
+            "es": "Escucha condicional y desplazamiento a la alfombra azul o a la verde.",
+            "en": "Conditional listening and movement to the blue or the green mat."
+          },
+          "modeladoDocente": {
+            "gl": "Coloca as dúas alfombras e formula a condicional sen xesto.",
+            "es": "Coloca las dos alfombras y formula la condicional sin gesto.",
+            "en": "Lays out both mats and states the conditional with no gesture."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "xabon",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.xaneiro.6i.01",
+    "titulo": {
+      "gl": "Poñer a mesa",
+      "es": "Poner la mesa",
+      "en": "Setting the Table"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "Tres a cinco minutos antes de cear",
+      "es": "Tres a cinco minutos antes de cenar",
+      "en": "Three to five minutes before dinner"
+    },
+    "objetivoAutonomia": {
+      "gl": "Contar e colocar cubertos seguindo ordes de tres pasos.",
+      "es": "Contar y colocar cubiertos siguiendo órdenes de tres pasos.",
+      "en": "Count and place cutlery following three-step commands."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Tres cucharas",
+          "es": "Tres cucharas",
+          "en": "Three spoons"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes! Take three spoons. One for papá, one for mamá, one for you. Run to the table!",
+          "es": "Yes! Take three spoons. One for papá, one for mamá, one for you. ¡Corre a la mesa!",
+          "en": "Yes! Take three spoons. One for dad, one for mum, one for you. Run to the table!"
+        },
+        "consejoEvitar": {
+          "gl": "Se conta en castelán, non se corrixe: repítese en inglés dentro da acción.",
+          "es": "Si cuenta en castellano, no se corrige: se repite en inglés dentro de la acción.",
+          "en": "If counting happens in Spanish, do not correct: repeat in English inside the action."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na cociña ou no comedor, cos cubertos ao alcance.",
+      "es": "En la cocina o el comedor, con los cubiertos al alcance.",
+      "en": "In the kitchen or dining room, cutlery within reach."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "id": "asamblea.segundo_ciclo.xuno.6_infantil",
+  "nivel": "6_infantil",
+  "mes": 6,
+  "titulo": {
+    "gl": "Xuño: O verán, as nosas rías e o mar atlántico",
+    "es": "Junio: El verano, nuestras rías y el mar atlántico",
+    "en": "June: Summer, Our Rías and the Atlantic Sea"
+  },
+  "centroInteres": {
+    "gl": "A orientación mariña e a busca de recursos",
+    "es": "La orientación marina y la búsqueda de recursos",
+    "en": "Sea Orientation and Resource Hunting"
+  },
+  "metodologiaTpr": "transaccional_pragmatico",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo no Círculo",
+        "es": "Apertura y Saludo en el Círculo",
+        "en": "Opening & Greeting in the Circle"
+      },
+      "duracionSegundos": 90,
+      "lamina": "barco",
+      "consignaDocente": {
+        "gl": "Círculo, brazos cruzados sobre o peito e un xiro suave para saudar a Lúa.",
+        "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
+        "en": "Circle up, cross your arms and turn gently to greet Lúa."
+      },
+      "cueAcustica": "Good morning sea! Row your boat!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Movemento",
+        "es": "Foco Rítmico y Movimiento",
+        "en": "Movement & Rhythmic Focus"
+      },
+      "duracionSegundos": 120,
+      "lamina": "man",
+      "consignaDocente": {
+        "gl": "Marca o pulso con palmadas en xeonllos e ombreiros. Non pidas que repitan.",
+        "es": "Marca el pulso con palmadas en rodillas y hombros. No pidas que repitan.",
+        "en": "Mark the beat clapping knees and shoulders. Do not ask them to repeat."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Mandatos entre Iguais",
+        "es": "Reto Núcleo TPR: Mandatos entre Iguales",
+        "en": "Core TPR Challenge: Peer-to-Peer Commands"
+      },
+      "duracionSegundos": 270,
+      "lamina": "cuncha",
+      "consignaDocente": {
+        "gl": "Busca de recursos mariños (cunchas de vieira, pedras de río) distribuídos nos marxes da aula, navegando mediante traxectorias motrices precisas ditadas por un compañeiro.",
+        "es": "Búsqueda de recursos marinos (conchas de vieira, piedras de río) distribuidos en los márgenes del aula, navegando mediante trayectorias motrices precisas dictadas por un compañero.",
+        "en": "Hunt for sea resources (scallop shells, river stones) placed around the room, navigating precise motor paths dictated by a peer."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.xuno.6i.01",
+          "textoIngles": "Noa, walk five steps and take the white shell",
+          "accionFisica": {
+            "gl": "Conteo motriz de cinco pasos e recollida da cuncha nomeada.",
+            "es": "Conteo motriz de cinco pasos y recogida de la concha nombrada.",
+            "en": "Motor counting of five steps and pick-up of the named shell."
+          },
+          "modeladoDocente": {
+            "gl": "Entrega a tarxeta icónica e non sinala a dirección.",
+            "es": "Entrega la tarjeta icónica y no señala la dirección.",
+            "en": "Hands over the icon card and does not point the way."
+          }
+        },
+        {
+          "id": "cmd.xuno.6i.02",
+          "textoIngles": "If the shell is smooth, put it in the blue basket",
+          "accionFisica": {
+            "gl": "Escoita condicional e clasificación táctil en dous cestos.",
+            "es": "Escucha condicional y clasificación táctil en dos cestos.",
+            "en": "Conditional listening and tactile sorting into two baskets."
+          },
+          "modeladoDocente": {
+            "gl": "Coloca os dous cestos e formula a condicional completa.",
+            "es": "Coloca los dos cestos y formula la condicional completa.",
+            "en": "Places both baskets and states the full conditional."
+          }
+        },
+        {
+          "id": "cmd.xuno.6i.03",
+          "textoIngles": "Here you go. Thank you! Your turn",
+          "accionFisica": {
+            "gl": "Intercambio pragmático completo entre dous escolares.",
+            "es": "Intercambio pragmático completo entre dos escolares.",
+            "en": "Full pragmatic exchange between two children."
+          },
+          "modeladoDocente": {
+            "gl": "Só supervisa: as tres fórmulas dinas eles.",
+            "es": "Solo supervisa: las tres fórmulas las dicen ellos.",
+            "en": "Only supervises: the children say all three formulas."
+          }
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma e Transición",
+        "es": "Calma y Transición",
+        "en": "Calm & Transition Out"
+      },
+      "duracionSegundos": 120,
+      "lamina": "auga",
+      "consignaDocente": {
+        "gl": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
+        "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
+        "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
+      },
+      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "6_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CP",
+      "CPSAA"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1"
+    ]
+  },
+  "materialesEntorno": [],
+  "microRutinaHogar": {
+    "id": "micro_rutina.xuno.6i.01",
+    "titulo": {
+      "gl": "O tesouro da praia",
+      "es": "El tesoro de la playa",
+      "en": "The Beach Treasure"
+    },
+    "nichoTiempoMinutos": 3,
+    "momentoDelDia": {
+      "gl": "No paseo pola praia ou o río",
+      "es": "En el paseo por la playa o el río",
+      "en": "On a beach or riverside walk"
+    },
+    "objetivoAutonomia": {
+      "gl": "Buscar e clasificar cunchas e pedras seguindo condicionais simples.",
+      "es": "Buscar y clasificar conchas y piedras siguiendo condicionales simples.",
+      "en": "Find and sort shells and stones following simple conditionals."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "É smooth!",
+          "es": "¡Es smooth!",
+          "en": "It is smooth!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Yes, it is smooth! Put the smooth one in the bucket. Now find a rough one!",
+          "es": "Yes, it is smooth! Put the smooth one in the bucket. ¡Ahora busca una rugosa!",
+          "en": "Yes, it is smooth! Put the smooth one in the bucket. Now find a rough one!"
+        },
+        "consejoEvitar": {
+          "gl": "Mesturar linguas aquí é boa sinal: úsase o que ten máis a man.",
+          "es": "Mezclar lenguas aquí es buena señal: se usa lo que se tiene más a mano.",
+          "en": "Mixing languages here is a good sign: they use what is closest to hand."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Na praia ou na beira do río, cun cubo e as mans.",
+      "es": "En la playa o la orilla del río, con un cubo y las manos.",
+      "en": "At the beach or riverbank, with a bucket and bare hands."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "",
+    "fechaRevision": "2026-09-15",
+    "version": "1.0.0",
+    "aprobadoParaAula": false
+  }
+}
