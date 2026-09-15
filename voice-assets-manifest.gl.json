@@ -2,9 +2,9 @@
  "lang": "gl",
  "voice": "Celtia · Proxecto Nós (proxectonos)",
  "peakDbfs": -3.0,
- "entries": 449,
- "totalBytes": 15813256,
- "totalSeconds": 2668.8,
+ "entries": 452,
+ "totalBytes": 15999628,
+ "totalSeconds": 2701.67,
  "files": [
   {
    "id": "gl_slow_00222185_5",
@@ -625,6 +625,12 @@
    "bytes": 88395
   },
   {
+   "id": "gl_tutor_20dd83f4_244",
+   "file": "gl_tutor_20dd83f4_244.m4a",
+   "seconds": 13.11,
+   "bytes": 72283
+  },
+  {
    "id": "gl_tutor_20fa7f98_58",
    "file": "gl_tutor_20fa7f98_58.m4a",
    "seconds": 3.41,
@@ -767,6 +773,12 @@
    "file": "gl_tutor_2e23d356_172.m4a",
    "seconds": 9.88,
    "bytes": 56546
+  },
+  {
+   "id": "gl_tutor_2e24ff4e_150",
+   "file": "gl_tutor_2e24ff4e_150.m4a",
+   "seconds": 8.81,
+   "bytes": 50675
   },
   {
    "id": "gl_tutor_2e2d47fe_125",
@@ -1733,6 +1745,12 @@
    "file": "gl_tutor_9029e3fa_140.m4a",
    "seconds": 8.16,
    "bytes": 47718
+  },
+  {
+   "id": "gl_tutor_9063ca14_177",
+   "file": "gl_tutor_9063ca14_177.m4a",
+   "seconds": 10.98,
+   "bytes": 63414
   },
   {
    "id": "gl_tutor_91bdd081_133",
