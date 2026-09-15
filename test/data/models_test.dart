@@ -1,13 +1,14 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
-import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/data/models/curricular_model.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart';
 import 'package:descubre_con_lua/data/models/capsula_model.dart';
 
 void main() {
   group('CurricularReference Model Tests', () {
-    test('serializes and deserializes correctly with valid Decreto 150/2022 data', () {
+    test(
+        'serializes and deserializes correctly with valid Decreto 150/2022 data',
+        () {
       final json = {
         'normativa': 'Decreto 150/2022',
         'etapa': 'educacion_infantil',
@@ -36,7 +37,8 @@ void main() {
       final serialized = ref.toJson();
       expect(serialized['normativa'], equals('Decreto 150/2022'));
       expect(serialized['areas'], equals(ref.areas));
-      expect(serialized['criteriosEvaluacion'], equals(ref.criteriosEvaluacion));
+      expect(
+          serialized['criteriosEvaluacion'], equals(ref.criteriosEvaluacion));
 
       final copy = ref.copyWith(areas: ['area_2_descubrimento_contorna']);
       expect(copy.areas, equals(['area_2_descubrimento_contorna']));
@@ -44,7 +46,7 @@ void main() {
     });
 
     test('rejects non-Decreto 150/2022 regulations as invalid', () {
-      final invalid = CurricularReference(
+      const invalid = CurricularReference(
         normativa: 'LOMLOE_GENERICA',
         etapa: 'educacion_infantil',
         ciclo: 'primeiro_ciclo_0_3',
@@ -55,7 +57,7 @@ void main() {
     });
 
     test('rejects invalid or unrecognized area codes', () {
-      final invalidArea = CurricularReference(
+      const invalidArea = CurricularReference(
         normativa: 'Decreto 150/2022',
         etapa: 'educacion_infantil',
         ciclo: 'primeiro_ciclo_0_3',
@@ -149,14 +151,23 @@ void main() {
           'accionesSugeridas': [
             {'gl': 'Acción 1', 'es': 'Acción 1'}
           ],
-          'vocabularioMatematico': {'gl': 'Grande / pequeno', 'es': 'Grande / pequeño'},
+          'vocabularioMatematico': {
+            'gl': 'Grande / pequeno',
+            'es': 'Grande / pequeño'
+          },
         },
         'puenteCasa': {
-          'mensajeFamilias': {'gl': 'Mensaxe familias gl', 'es': 'Mensaje familias es'},
+          'mensajeFamilias': {
+            'gl': 'Mensaxe familias gl',
+            'es': 'Mensaje familias es'
+          },
           'actividadesSugeridas': [
             {'gl': 'Actividade casa gl', 'es': 'Actividad casa es'}
           ],
-          'recomendacionConversacion': {'gl': 'Conversa gl', 'es': 'Conversación es'},
+          'recomendacionConversacion': {
+            'gl': 'Conversa gl',
+            'es': 'Conversación es'
+          },
         },
         'curriculo': {
           'normativa': 'Decreto 150/2022',
@@ -179,9 +190,11 @@ void main() {
       expect(unidad.id, equals('juega.test.01'));
       expect(unidad.tramoEtario, equals('0-2'));
       expect(unidad.titulo.resolve(AppLanguage.gl), equals('Título en galego'));
-      expect(unidad.titulo.resolve(AppLanguage.es), equals('Título en castellano'));
+      expect(unidad.titulo.resolve(AppLanguage.es),
+          equals('Título en castellano'));
       expect(unidad.cancionPulso.bpm, equals(72));
-      expect(unidad.cancion.resolveAudio(AppLanguage.gl), equals('assets/audio/canciones/test_gl.mp3'));
+      expect(unidad.cancion.resolveAudio(AppLanguage.gl),
+          equals('assets/audio/canciones/test_gl.mp3'));
       expect(unidad.conto.paginas.length, equals(1));
       expect(unidad.vocabulario.length, equals(1));
       expect(unidad.preguntas.length, equals(3));
@@ -221,7 +234,10 @@ void main() {
         'tiempoLecturaMinutos': 3,
         'icono': 'ear_sparkles',
         'ideaClave': {'gl': 'Idea clave gl', 'es': 'Idea clave es'},
-        'porQueImporta': {'gl': 'Por que importa gl', 'es': 'Por qué importa es'},
+        'porQueImporta': {
+          'gl': 'Por que importa gl',
+          'es': 'Por qué importa es'
+        },
         'queHacerEnCasa': {'gl': 'Que facer gl', 'es': 'Qué hacer es'},
         'ejemploCotidiano': {'gl': 'Exemplo gl', 'es': 'Ejemplo es'},
         'afirmaciones': [
@@ -257,10 +273,14 @@ void main() {
       expect(capsula.afirmaciones.first.esVerdadera, isTrue);
 
       // Check 4 canonical sections directly and via contido helper
-      expect(capsula.ideaClave.resolve(AppLanguage.gl), equals('Idea clave gl'));
-      expect(capsula.porQueImporta.resolve(AppLanguage.es), equals('Por qué importa es'));
-      expect(capsula.queHacerEnCasa.resolve(AppLanguage.gl), equals('Que facer gl'));
-      expect(capsula.ejemploCotidiano.resolve(AppLanguage.es), equals('Ejemplo es'));
+      expect(
+          capsula.ideaClave.resolve(AppLanguage.gl), equals('Idea clave gl'));
+      expect(capsula.porQueImporta.resolve(AppLanguage.es),
+          equals('Por qué importa es'));
+      expect(capsula.queHacerEnCasa.resolve(AppLanguage.gl),
+          equals('Que facer gl'));
+      expect(capsula.ejemploCotidiano.resolve(AppLanguage.es),
+          equals('Ejemplo es'));
 
       final contido = capsula.contido;
       expect(contido.ideaClave, equals(capsula.ideaClave));
@@ -280,7 +300,8 @@ void main() {
       final b1 = Bloque.byId('desarrollo_comunicativo');
       expect(b1, isNotNull);
       expect(b1!.orden, equals(1));
-      expect(b1.titulo.resolve(AppLanguage.gl), contains('Como se aprende a falar'));
+      expect(b1.titulo.resolve(AppLanguage.gl),
+          contains('Como se aprende a falar'));
 
       final b2 = Bloque.byOrden(2);
       expect(b2, isNotNull);

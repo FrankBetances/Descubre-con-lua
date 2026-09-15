@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
@@ -12,13 +14,22 @@ import '../../../data/models/unidad_model.dart';
 class PasoPonteCasaWidget extends StatelessWidget {
   final PonteCasa ponteCasa;
   final AppLanguage language;
+
+  /// Sin él no hay botón de escuchar en el puente con la casa.
+  final OfflineAudioService? audioService;
   final VoidCallback? onFinalizar;
+
+  /// Modo asamblea: el mensaje para las familias y las actividades. La
+  /// recomendación de conversación es formación docente, y se lee otro día.
+  final bool soloEsencial;
 
   const PasoPonteCasaWidget({
     super.key,
     required this.ponteCasa,
     required this.language,
+    this.audioService,
     this.onFinalizar,
+    this.soloEsencial = false,
   });
 
   @override
@@ -31,7 +42,9 @@ class PasoPonteCasaWidget extends StatelessWidget {
       children: [
         // Title
         Text(
-          isGl ? 'Ponte á casa: Comunicación con familias' : 'Puente a casa: Comunicación con familias',
+          isGl
+              ? 'Ponte á casa: Comunicación con familias'
+              : 'Puente a casa: Comunicación con familias',
           style: theme.textTheme.headlineSmall?.copyWith(
             fontWeight: FontWeight.bold,
             color: AppTheme.primaryVigoBlue,
@@ -92,72 +105,101 @@ class PasoPonteCasaWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12.0),
                     border: Border.all(color: const Color(0xFFDFD7BE)),
                   ),
-                  child: Text(
-                    ponteCasa.mensajeFamilias.resolve(language),
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      fontSize: 16.0,
-                      height: 1.55,
-                      color: AppTheme.textSlate,
-                    ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        ponteCasa.mensajeFamilias.resolve(language),
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          fontSize: 16.0,
+                          height: 1.55,
+                          color: AppTheme.textSlate,
+                        ),
+                      ),
+                      BotonEscuchar(
+                        audioService: audioService,
+                        texto: ponteCasa.mensajeFamilias.resolve(language),
+                        language: language,
+                        compacto: true,
+                        descripcion: isGl
+                            ? 'a mensaxe para as familias'
+                            : 'el mensaje para las familias',
+                      ),
+                    ],
                   ),
                 ),
               ],
             ),
           ),
         ),
-        const SizedBox(height: 20.0),
+        if (!soloEsencial) const SizedBox(height: 20.0),
 
         // Conversation Recommendation Box
-        Container(
-          padding: const EdgeInsets.all(16.0),
-          decoration: BoxDecoration(
-            color: const Color(0xFFEFF6FF),
-            borderRadius: BorderRadius.circular(14.0),
-            border: Border.all(color: const Color(0xFFBFDBFE), width: 1.5),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Icon(
-                Icons.chat_outlined,
-                color: Color(0xFF1D4ED8),
-                size: 22,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      isGl
-                          ? 'Recomendación para a conversa no fogar:'
-                          : 'Recomendación para la conversación en el hogar:',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF1D4ED8),
-                        fontSize: 16.0,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      ponteCasa.recomendacionConversacion.resolve(language),
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        fontSize: 16.0,
-                        height: 1.5,
-                        color: AppTheme.textSlate,
-                      ),
-                    ),
-                  ],
+        if (!soloEsencial)
+          Container(
+            padding: const EdgeInsets.all(16.0),
+            decoration: BoxDecoration(
+              color: const Color(0xFFEFF6FF),
+              borderRadius: BorderRadius.circular(14.0),
+              border: Border.all(color: const Color(0xFFBFDBFE), width: 1.5),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(
+                  Icons.chat_outlined,
+                  color: Color(0xFF1D4ED8),
+                  size: 22,
                 ),
-              ),
-            ],
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        isGl
+                            ? 'Recomendación para a conversa no fogar:'
+                            : 'Recomendación para la conversación en el hogar:',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF1D4ED8),
+                          fontSize: 16.0,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        ponteCasa.recomendacionConversacion.resolve(language),
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          fontSize: 16.0,
+                          height: 1.5,
+                          color: AppTheme.textSlate,
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: BotonEscuchar(
+                          audioService: audioService,
+                          texto: ponteCasa.recomendacionConversacion
+                              .resolve(language),
+                          language: language,
+                          compacto: true,
+                          descripcion:
+                              isGl ? 'a recomendación' : 'la recomendación',
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
         const SizedBox(height: 20.0),
 
         // Home Suggested Activities
         Text(
-          isGl ? 'Actividades suxeridas para casa:' : 'Actividades sugeridas para casa:',
+          isGl
+              ? 'Actividades suxeridas para casa:'
+              : 'Actividades sugeridas para casa:',
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
             color: AppTheme.primaryVigoBlue,
@@ -193,6 +235,13 @@ class PasoPonteCasaWidget extends StatelessWidget {
                       ),
                     ),
                   ),
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: act.resolve(language),
+                    language: language,
+                    compacto: true,
+                    descripcion: isGl ? 'a actividade' : 'la actividad',
+                  ),
                 ],
               ),
             ),
@@ -208,7 +257,8 @@ class PasoPonteCasaWidget extends StatelessWidget {
               icon: const Icon(Icons.check_circle_outline),
               label: Text(
                 isGl ? 'Completar Asemblea' : 'Completar Asamblea',
-                style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                    fontSize: 16.0, fontWeight: FontWeight.bold),
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppTheme.primaryVigoBlue,

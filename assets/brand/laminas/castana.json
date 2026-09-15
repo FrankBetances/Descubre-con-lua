@@ -1,0 +1,34 @@
+{
+  "vb": 100,
+  "nota": "Castaña: cuerpo marrón brillante, base clara y el pico con su rabito. Es la del Magosto.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M50 16 C70 20 86 40 86 60 C86 78 70 88 50 88 C30 88 14 78 14 60 C14 40 30 20 50 16 Z",
+      "f": "#8b5a2b",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M16 68 C26 82 36 88 50 88 C64 88 74 82 84 68 C74 74 62 76 50 76 C38 76 26 74 16 68 Z",
+      "f": "#fcedc7",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M50 16 C50 10 52 6 56 4",
+      "s": "#4a2c11",
+      "sw": 6
+    },
+    {
+      "t": "elipse",
+      "cx": 34,
+      "cy": 40,
+      "rx": 9,
+      "ry": 12,
+      "f": "#ffffff44"
+    }
+  ]
+}

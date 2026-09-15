@@ -1,0 +1,361 @@
+name: Gates
+
+# Los gates Y el binario firmado, en un solo workflow. Corre `tools/gates.sh` — el mismo fichero que corre un contribuyente
+# en su máquina, así que la lista de gates no puede separarse de lo que de
+# verdad se exige.
+#
+# Firma de release: requiere estos secrets en Settings > Secrets and variables >
+# Actions (los valores son POR REPOSITORIO: hay que darlos de alta aquí):
+#   ANDROID_RELEASE_KEYSTORE_BASE64  → keystore codificado (base64 -w0 release.keystore)
+#   ANDROID_RELEASE_STORE_PASSWORD   → contraseña del keystore
+#   ANDROID_RELEASE_KEY_ALIAS        → alias de la clave
+#   ANDROID_RELEASE_KEY_PASSWORD     → contraseña de la clave
+#
+# Sin esos secrets el APK se firma con la clave de DEPURACIÓN: sirve para
+# instalar a mano y mirar una pantalla, y Google Play lo rechaza. El paso
+# «Comprobar con qué clave va firmado» lo dice en el resumen del run en vez de
+# dejarlo en una suposición, y el AAB directamente no se genera.
+#
+# La app no lleva backend: ni cuentas, ni sincronización, ni red. No hay más
+# secrets que los de firma y el HF_TOKEN de la síntesis de voz.
+
+on:
+  push:
+    branches:
+      - main
+      - claude/**
+    # OJO con lo que NO se puede ignorar aquí:
+    #   - README.md y CLAUDE.md los LEE check_contact_email.py (escanea .md), y
+    #     son justo los ficheros donde es más fácil colar una dirección mala;
+    #   - docs/**.html, **.pdf y **.docx los LEE check_manual_build.py, que
+    #     compara el hash del manual con el de sus stampas.
+    # Ignorar cualquiera de esos apagaría su gate en silencio. Solo se ignora lo
+    # que no entra en ningún gate ni en el APK.
+    paths-ignore:
+      - '.github/workflows/deploy-pages.yml'
+      - 'docs/capturas/**'
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/workflows/deploy-pages.yml'
+      - 'docs/capturas/**'
+  # Relanzo tras la síntesis de voz. El APK tiene que empaquetar los .m4a del
+  # corpus que compila, y "Generate Voice Assets" los sintetiza y los COMMITEA a
+  # la rama. Ese commit lo hace el GITHUB_TOKEN y, por política de GitHub
+  # (anti-bucle), un push del token NO dispara workflows: sin este `workflow_run`
+  # el run que corrió antes de la síntesis se queda en rojo para siempre, con el
+  # gate de cobertura de voz señalando grabaciones que ya existen en la rama.
+  # OJO: `workflow_run` solo surte efecto con el fichero ya en la rama por
+  # defecto; en una rama de trabajo no se activa hasta fusionar a main.
+  workflow_run:
+    workflows: ["Generate Voice Assets"]
+    types: [completed]
+  workflow_dispatch:
+
+# Un run por rama Y POR EVENTO, y siempre el último. `github.event_name` entra en
+# el grupo por un fallo ya visto: con el grupo puesto solo en
+# la rama, un "Run workflow" lanzado a mano mata el run del push cuando ya
+# llevaba los gates en verde. Ese run queda como `cancelled`, GitHub resume el
+# commit con la peor conclusión de sus checks, y `main` sale con una X roja
+# teniendo el binario compilado. Una X que no significa nada es la que hace que
+# la siguiente sí pase desapercibida.
+concurrency:
+  group: gates-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+# `actions: write` es lo único que se añade sobre el permiso de lectura, y es
+# para poder BORRAR artefactos viejos al final del job.
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    env:
+      HAS_SIGNING_SECRETS: ${{ secrets.ANDROID_RELEASE_KEYSTORE_BASE64 != '' }}
+      # Rama efectiva: en `workflow_run`, github.ref apunta a la rama por
+      # defecto, no a la que se sintetizó. Se resuelve una sola vez aquí para que
+      # el checkout y la condición del AAB usen ambos el mismo valor.
+      TARGET_BRANCH: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_branch || github.ref_name }}
+      # Play Console exige que cada subida tenga un versionCode mayor que el
+      # anterior. `pubspec.yaml` lo fija en 1, así que lo derivamos del número de
+      # run, que GitHub incrementa en cada ejecución.
+      BUILD_NUMBER: ${{ github.run_number }}
+      # Cuántas copias de CADA artefacto sobreviven a este run. Es lo que fija el
+      # suelo de almacenamiento del repositorio. En repositorio PÚBLICO el
+      # almacenamiento es gratis; en PRIVADO la cuota es de toda la cuenta. Con 2
+      # quedan el run actual y el anterior, el mínimo para poder volver atrás si
+      # el último sale malo.
+      KEEP_ARTIFACTS_PER_NAME: 2
+      # El mapa de R8 se guarda MÁS HONDO que el APK y el AAB porque su valor es
+      # histórico: sirve para leer una traza de un build que ya no es el último,
+      # que es justo el caso que se da. Es texto, no 100 MB como el APK.
+      KEEP_MAPPINGS: 10
+
+    # En `workflow_run` solo se recompila si la síntesis terminó bien: si falló,
+    # no hay grabaciones nuevas que empaquetar y el run seguiría igual de rojo.
+    if: >-
+      github.event_name != 'workflow_run'
+      || github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      # En `workflow_run` hay que pedir la RAMA, no el head_sha del run que nos
+      # despierta: ese sha es el anterior a la síntesis y no trae los .m4a.
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_branch || '' }}
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install the content gates' dependencies
+        run: pip install numpy Pillow
+
+      # ffmpeg es lo que MIDE las grabaciones en check_voice_levels.py. Sin él
+      # ese gate se saltaba y devolvía 0: salía PASS en el resumen sin haber
+      # abierto un solo fichero. Un gate que informa de verde sin comprobar nada
+      # es peor que no tenerlo, porque ocupa su sitio.
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: flutter pub get
+        run: flutter pub get
+
+      # Se escribe ANTES de los gates a propósito: así el APK que audita el gate
+      # de permisos es exactamente el que se publicaría, no un gemelo firmado de
+      # otra manera. `android/app/build.gradle` ya lee `android/key.properties`
+      # —está en .gitignore— y cae a la clave de depuración si no existe, así
+      # que aquí no hay que parchear ningún Gradle.
+      - name: Escribir la clave de firma desde los secrets
+        if: env.HAS_SIGNING_SECRETS == 'true'
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_RELEASE_KEYSTORE_BASE64 }}
+          STORE_PASSWORD: ${{ secrets.ANDROID_RELEASE_STORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_RELEASE_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_RELEASE_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+          printf %s "$KEYSTORE_BASE64" | base64 -d > android/app/release.keystore
+          # Sin esta comprobación, un secret mal pegado da un keystore corrupto
+          # y el fallo aparece mucho más tarde, dentro de Gradle, sin decir qué.
+          keytool -list -keystore android/app/release.keystore \
+            -storepass "$STORE_PASSWORD" > /dev/null
+          cat > android/key.properties <<PROPS
+          storeFile=release.keystore
+          storePassword=$STORE_PASSWORD
+          keyAlias=$KEY_ALIAS
+          keyPassword=$KEY_PASSWORD
+          PROPS
+          echo "Keystore de release escrito y verificado."
+
+      - name: Run the gates
+        run: ./tools/gates.sh
+
+      # El APK que firma la clave de depuración es indistinguible a simple vista
+      # del que firma la de release, y Play lo rechaza en la subida, no antes.
+      # Esto lo dice en el resumen del run, sobre el artefacto, no sobre la
+      # configuración: es la misma idea que el gate de permisos.
+      - name: Comprobar con qué clave va firmado
+        if: always()
+        run: |
+          set -uo pipefail
+          apk=build/app/outputs/flutter-apk/app-release.apk
+          if [ ! -f "$apk" ]; then
+            echo 'No se produjo APK de release.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          apksigner=$(ls -1 "$ANDROID_SDK_ROOT"/build-tools/*/apksigner 2>/dev/null | sort -V | tail -1 || true)
+          if [ -z "$apksigner" ]; then
+            echo "::error::No se encontró apksigner en $ANDROID_SDK_ROOT/build-tools."
+            echo ':x: **No se pudo leer la firma**: falta apksigner.' >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          certs=$("$apksigner" verify --print-certs "$apk" 2>&1) || true
+          {
+            echo '## Firma del APK de release'
+            echo '```'
+            printf '%s\n' "$certs"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          # Sin esta comprobación, un apksigner que falla deja `certs` vacío, el
+          # grep de abajo no encuentra nada y el paso declararía «firmado con la
+          # clave de release» sin haber leído una sola línea del certificado.
+          # Ausencia de prueba no es prueba.
+          if ! printf '%s' "$certs" | grep -q 'certificate DN:'; then
+            echo "::error::apksigner no devolvió ningún certificado; no se puede afirmar nada sobre la firma."
+            echo ':x: **No se pudo leer la firma del APK.**' >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          if printf '%s' "$certs" | grep -qi 'CN=Android Debug'; then
+            echo ':warning: **Firmado con la clave de DEPURACIÓN.** Google Play lo rechazará. Faltan los secrets de firma.' >> "$GITHUB_STEP_SUMMARY"
+            if [ "${HAS_SIGNING_SECRETS}" = "true" ]; then
+              echo "Los secrets de firma están puestos y aun así salió la clave de depuración."
+              exit 1
+            fi
+          else
+            echo ':lock: Firmado con la clave de release.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # Se mantiene aunque los gates fallen: el volcado de permisos es la prueba
+      # de lo que dice la política de privacidad y el formulario de Seguridad de
+      # los datos de Play Console, y vale la pena tenerlo también en un run rojo.
+      - name: Publicar los permisos del APK de release
+        if: always()
+        run: |
+          apk=build/app/outputs/flutter-apk/app-release.apk
+          if [ -f "$apk" ]; then
+            aapt2=$(ls -1 "$ANDROID_SDK_ROOT"/build-tools/*/aapt2 | sort -V | tail -1)
+            echo '## Permisos del APK de release' >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            "$aapt2" dump permissions "$apk" >> "$GITHUB_STEP_SUMMARY" 2>&1 || true
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'No se produjo APK de release.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # El AAB es el formato que exige Google Play. Solo en main (cada fusión) o
+      # al lanzar el workflow a mano, para no alargar los runs de rama. Sin
+      # secrets de firma no se genera: un AAB con la clave de depuración no se
+      # puede subir a ningún sitio, así que solo sería un fichero que engaña.
+      - name: Compilar el AAB firmado
+        if: env.HAS_SIGNING_SECRETS == 'true' && (env.TARGET_BRANCH == 'main' || github.event_name == 'workflow_dispatch')
+        run: flutter build appbundle --release --build-number=${{ github.run_number }}
+
+      # `retention-days` recorta la retención del repositorio SOLO hacia abajo.
+      # El AAB se sube a Play Console el mismo día que se compila.
+      - name: Subir el AAB
+        if: env.HAS_SIGNING_SECRETS == 'true' && (env.TARGET_BRANCH == 'main' || github.event_name == 'workflow_dispatch')
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-aab
+          path: build/app/outputs/bundle/release/*.aab
+          if-no-files-found: error
+          retention-days: 3
+
+      # El mapa de R8. Sin él, un fallo en Android Vitals se lee «S4.b.e» y no
+      # hay forma de saber qué línea es.
+      #
+      # HOY ESTE PASO NO SUBE NADA: `android/app/build.gradle` tiene
+      # `minifyEnabled false`, así que Gradle no escribe mapping.txt. Queda aquí
+      # puesto para que el día que se active la minificación no haya que
+      # acordarse de añadirlo — que es justo cuando hace falta y nadie se acuerda.
+      - name: Subir el mapa de R8
+        if: env.HAS_SIGNING_SECRETS == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-mapping
+          path: build/app/outputs/mapping/release/mapping.txt
+          if-no-files-found: ignore
+          retention-days: 30
+
+      # El APK sube SIEMPRE, también desde una rama. Antes solo subía en main, y
+      # la regla que lo justificaba —«nada llega a Frank hasta estar en main con
+      # run verde»— acababa forzando lo contrario de lo que quiere: para mirar
+      # algo en el móvil había que fusionar a main primero, o sea meter en main
+      # lo que nadie ha visto en un aparato para poder verlo en un aparato.
+      #
+      # Esa regla es sobre lo que YO puedo decir —no se dice «entregado» desde
+      # una rama—, no sobre lo que Frank puede probar. El artefacto de rama es
+      # para probar; el de main es el que cuenta.
+      #
+      # `retention-days` corto en rama: son builds de trabajo y no hacen falta
+      # dos días después. El de main mantiene sus cinco.
+      - name: Subir el APK de release
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          # Nombre distinto por rama: si la rama y main compartieran nombre, la
+          # limpieza de «2 copias por nombre» borraría el de main al subir el de
+          # una rama, que es justo el que hay que poder recuperar.
+          name: ${{ env.TARGET_BRANCH == 'main' && 'android-apk' || format('android-apk-{0}', github.run_number) }}
+          path: build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: warn
+          retention-days: ${{ env.TARGET_BRANCH == 'main' && 5 || 2 }}
+
+      # Cuando Gradle muere dentro de un worker, el log no dice si fue la memoria
+      # o el disco. Estas dos líneas lo dicen, y solo cuestan algo en los runs
+      # que ya han fallado.
+      - name: Qué había en la máquina cuando falló
+        if: failure()
+        run: |
+          df -h
+          free -m
+
+      # La retención sola no basta: entre dos barridos se acumulan todos los runs
+      # de la ventana. Esto deja el almacenamiento en un suelo FIJO —KEEP copias
+      # de cada nombre— en vez de en algo que crece con el ritmo de commits.
+      # `always()`: también limpia si el run falló, que es cuando más falta hace
+      # no dejar basura detrás.
+      - name: Retirar artefactos de runs anteriores
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh api --paginate "repos/$GH_REPO/actions/artifacts?per_page=100" \
+            --jq '.artifacts[] | select(.expired == false) | [.name, .created_at, .id, .size_in_bytes] | @tsv' \
+            > all.tsv || { echo "::warning::No se pudo listar artefactos; se salta la limpieza."; exit 0; }
+
+          # Orden: por nombre, y dentro de cada nombre del más nuevo al más
+          # viejo. Los KEEP primeros de cada nombre se quedan; el resto, fuera.
+          # `-t` explícito: el fichero es TSV y un nombre de artefacto con un
+          # espacio partiría el campo con el separador por defecto de sort. Este
+          # paso BORRA, así que no se deja a que los nombres sigan siendo simples.
+          sort -t$'\t' -k1,1 -k2,2r all.tsv \
+            | awk -F'\t' -v keep="$KEEP_ARTIFACTS_PER_NAME" -v keepmap="$KEEP_MAPPINGS" \
+                '{ k = ($1 == "android-mapping" ? keepmap : keep);
+                   n[$1]++; print (n[$1] <= k ? "VIVO" : "SOBRA") "\t" $0 }' > clasificados.tsv
+          sed -n 's/^VIVO\t//p'  clasificados.tsv > vivos.tsv
+          sed -n 's/^SOBRA\t//p' clasificados.tsv > sobran.tsv
+
+          freed=0
+          borrados=0
+          while IFS=$'\t' read -r name created id size; do
+            [ -z "$id" ] && continue
+            if gh api -X DELETE "repos/$GH_REPO/actions/artifacts/$id" --silent; then
+              freed=$((freed + size))
+              borrados=$((borrados + 1))
+              echo "borrado $name ($id · $size B · $created)"
+            else
+              echo "::warning::No se pudo borrar el artefacto $id ($name)."
+            fi
+          done < sobran.tsv
+
+          {
+            echo "### Almacenamiento de artefactos"
+            echo "Se conservan **$KEEP_ARTIFACTS_PER_NAME** copias de cada artefacto."
+            echo ""
+            echo "Borrados: **$borrados** · Liberado: **$((freed / 1000000)) MB**"
+            echo ""
+            echo "| Artefacto | Copias vivas | MB |"
+            echo "| --- | ---: | ---: |"
+            awk -F'\t' '{ s[$1] += $4; n[$1]++ }
+              END { for (k in s) printf "| %s | %d | %d |\n", k, n[k], s[k]/1000000 }' vivos.tsv
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # El keystore no debe sobrevivir al job ni acabar en una caché.
+      - name: Borrar la clave de firma
+        if: always()
+        run: rm -f android/app/release.keystore android/key.properties

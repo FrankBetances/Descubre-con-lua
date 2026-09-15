@@ -6,7 +6,7 @@ Build and execute the master E2E test runner (`test/run_all_e2e_tests.py`), veri
 ## 🔒 My Identity
 - Archetype: teamwork_preview_worker
 - Roles: E2E Verification & Test Suite Worker (implementer, qa, specialist)
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m4/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m4/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 4 (Master E2E Verification & Test Suite)
 
@@ -23,7 +23,7 @@ Build and execute the master E2E test runner (`test/run_all_e2e_tests.py`), veri
 ## Task Summary
 - **What to build**: Master E2E runner `test/run_all_e2e_tests.py` orchestrating Privacy, Core Architecture, Content Validation, Academy Feature, and Juega con Lúa Feature suites. Generate `TEST_READY.md`.
 - **Success criteria**: 100% of checks pass with exit code 0; `TEST_READY.md` generated with full feature matrix and execution instructions; comprehensive handoff report.
-- **Interface contracts**: `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/PROJECT.md`
+- **Interface contracts**: `<documentos locales>/Descubre con Lúa/PROJECT.md`
 - **Code layout**: Flutter project layout with test suites in `test/`, python verification harnesses in root & `test/`.
 
 ## Key Decisions Made

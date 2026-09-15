@@ -1,0 +1,51 @@
+{
+  "vb": 100,
+  "nota": "Laranxa / Naranja entera con hoja y el poro del ombligo. Redonda, que es lo que se trabaja en marzo.",
+  "formas": [
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 56,
+      "rx": 36,
+      "ry": 34,
+      "f": "#ff851b",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M50 22 C50 16 52 12 56 8",
+      "s": "#5a3a12",
+      "sw": 6
+    },
+    {
+      "t": "ruta",
+      "d": "M54 14 C66 6 82 10 84 20 C86 30 70 34 60 26 Z",
+      "f": "#2ecc40",
+      "s": "#1b7a2b",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 24,
+      "rx": 5,
+      "ry": 3,
+      "f": "#c2410c"
+    },
+    {
+      "t": "elipse",
+      "cx": 34,
+      "cy": 42,
+      "rx": 9,
+      "ry": 11,
+      "f": "#ffffff55"
+    },
+    {
+      "t": "ruta",
+      "d": "M28 74 C32 78 36 80 40 82 M60 82 C66 80 70 76 72 72",
+      "s": "#c2410c",
+      "sw": 3
+    }
+  ]
+}

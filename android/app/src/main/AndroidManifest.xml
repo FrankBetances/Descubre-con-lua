@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.earlify.descubreconlua">
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- The application id is declared once, as the Gradle `namespace`.
+         AGP 8 rejects the `package` attribute here, so a manifest carrying it
+         fails the release build outright. -->
 
     <!-- Strict Binary Privacy: Explicitly remove network permissions during APK manifest merging -->
     <uses-permission android:name="android.permission.INTERNET" tools:node="remove" />

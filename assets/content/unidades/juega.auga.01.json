@@ -1,0 +1,375 @@
+{
+  "id": "juega.auga.01",
+  "tramoEtario": "0-3",
+  "orden": 9,
+  "titulo": {
+    "gl": "Auga morna, xabón e mans limpas",
+    "es": "Agua templada, jabón y manos limpias"
+  },
+  "subtitulo": {
+    "gl": "Unidade de hixiene e gozo sensorial coa auga",
+    "es": "Unidad de higiene y disfrute sensorial con el agua"
+  },
+  "descripcion": {
+    "gl": "Unidade de maio arredor do lavado de mans e da cara. Traballa a rutina de hixiene como xogo con principio e final, e a espuma como material sensorial: fría, lixeira e que desaparece.",
+    "es": "Unidad de mayo en torno al lavado de manos y de la cara. Trabaja la rutina de higiene como juego con principio y final, y la espuma como material sensorial: fría, ligera y que desaparece."
+  },
+  "cancionPulso": {
+    "titulo": {
+      "gl": "Lava, lava as mans",
+      "es": "Lava, lava las manos"
+    },
+    "letraConPulsos": {
+      "gl": "* La-va, * la-va * as * mans,\n* fre-ga * o xa-bón * entre * os de-dos.\n* Chas, * chas, * sal-pi-ca * a au-ga,\n* mans * lim-pas, * xa * es-tá.",
+      "es": "* La-va, * la-va * las * ma-nos,\n* fro-ta * el ja-bón * entre * los de-dos.\n* Chas, * chas, * sal-pi-ca * el a-gua,\n* ma-nos * lim-pias, * ya * es-tá."
+    },
+    "bpm": 72,
+    "consignaDocente": {
+      "gl": "Cantala sempre no lavabo, nunca na alfombra: a canción é o temporizador do lavado, non unha canción máis.",
+      "es": "Cantarla siempre en el lavabo, nunca en la alfombra: la canción es el temporizador del lavado, no una canción más."
+    },
+    "audioAsset": {
+      "gl": "assets/voice/gl_tutor_16b80370_141.m4a",
+      "es": "assets/voice/es_tutor_1a101f8f_150.m4a"
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa ten as patas cheas de area",
+      "es": "Lúa tiene las patas llenas de arena"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "A gata Lúa volve do parque coas patas cheas de terra e area. Así non se pode merendar!",
+          "es": "La gata Lúa vuelve del parque con las patas llenas de tierra y arena. ¡Así no se puede merendar!"
+        },
+        "preguntaComprension": {
+          "gl": "Como ten Lúa as patas? Que hai que facer antes de comer?",
+          "es": "¿Cómo tiene Lúa las patas? ¿Qué hay que hacer antes de comer?"
+        },
+        "ingles": [
+          "Wash",
+          "Clean"
+        ],
+        "lamina": "conto_auga_1"
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Abre a billa e sae auga morna. Lúa colle xabón e frega, frega e frega ata que aparece a espuma branca.",
+          "es": "Abre el grifo y sale agua templada. Lúa coge jabón y frota, frota y frota hasta que aparece la espuma blanca."
+        },
+        "preguntaComprension": {
+          "gl": "Que aparece cando frega o xabón? Fregamos nós as mans?",
+          "es": "¿Qué aparece cuando frota el jabón? ¿Frotamos nosotros las manos?"
+        },
+        "ingles": [
+          "Soap",
+          "Rub",
+          "Rub your hands"
+        ],
+        "lamina": "conto_auga_2"
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "Splash! A auga lévao todo e as patas quedan limpas e brillantes. Agora si, á merenda.",
+          "es": "¡Splash! El agua se lo lleva todo y las patas quedan limpias y brillantes. Ahora sí, a la merienda."
+        },
+        "preguntaComprension": {
+          "gl": "Como quedan as patas? Ensinades as vosas mans limpas?",
+          "es": "¿Cómo quedan las patas? ¿Enseñáis vuestras manos limpias?"
+        },
+        "ingles": [
+          "Splash",
+          "Warm water! Rub the soap, splash, splash! Clean hands!"
+        ],
+        "lamina": "conto_auga_3"
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "auga",
+      "palabra": {
+        "gl": "Auga",
+        "es": "Agua"
+      },
+      "definicionBreve": {
+        "gl": "O que sae da billa e serve para beber e para lavar.",
+        "es": "Lo que sale del grifo y sirve para beber y para lavar."
+      },
+      "ingles": "Water",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_0c8c39ef_4.m4a",
+        "es": "assets/voice/es_slow_07cc8397_4.m4a"
+      },
+      "lamina": "auga"
+    },
+    {
+      "id": "xabon",
+      "palabra": {
+        "gl": "Xabón",
+        "es": "Jabón"
+      },
+      "definicionBreve": {
+        "gl": "O que se frega nas mans e fai espuma.",
+        "es": "Lo que se frota en las manos y hace espuma."
+      },
+      "ingles": "Soap",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_0a071b75_5.m4a",
+        "es": "assets/voice/es_slow_2a4b3ad7_5.m4a"
+      },
+      "lamina": "xabon"
+    },
+    {
+      "id": "toalla",
+      "palabra": {
+        "gl": "Toalla",
+        "es": "Toalla"
+      },
+      "definicionBreve": {
+        "gl": "Tea coa que se secan as mans e a cara.",
+        "es": "Tela con la que se secan las manos y la cara."
+      },
+      "ingles": "Towel",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_a0ea0e5a_6.m4a",
+        "es": "assets/voice/es_slow_a0ea0e5a_6.m4a"
+      },
+      "lamina": "toalla"
+    },
+    {
+      "id": "billa",
+      "palabra": {
+        "gl": "Billa",
+        "es": "Grifo"
+      },
+      "definicionBreve": {
+        "gl": "O que se abre para que saia a auga.",
+        "es": "Lo que se abre para que salga el agua."
+      },
+      "ingles": "Tap",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_12be6f67_5.m4a",
+        "es": "assets/voice/es_slow_d5663fec_5.m4a"
+      },
+      "lamina": "billa"
+    },
+    {
+      "id": "espuma",
+      "palabra": {
+        "gl": "Espuma",
+        "es": "Espuma"
+      },
+      "definicionBreve": {
+        "gl": "Burbullas brancas e lixeiras que fai o xabón.",
+        "es": "Burbujas blancas y ligeras que hace el jabón."
+      },
+      "ingles": "Bubbles",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_7278d78c_6.m4a",
+        "es": "assets/voice/es_slow_7278d78c_6.m4a"
+      },
+      "lamina": "espuma"
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Onde está a toalla?",
+        "es": "¿Dónde está la toalla?"
+      },
+      "respuestaSugerida": {
+        "gl": "Sinalar o colgadoiro ou ir collela.",
+        "es": "Señalar el colgador o ir a cogerla."
+      },
+      "consejoDocente": {
+        "gl": "Que a toalla estea sempre no mesmo sitio e á súa altura: a rutina ensina máis ca a pregunta.",
+        "es": "Que la toalla esté siempre en el mismo sitio y a su altura: la rutina enseña más que la pregunta."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Que facemos coas mans cando hai xabón?",
+        "es": "¿Qué hacemos con las manos cuando hay jabón?"
+      },
+      "respuestaSugerida": {
+        "gl": "Fregar unha contra a outra, ou facer o xesto no aire.",
+        "es": "Frotar una contra la otra, o hacer el gesto en el aire."
+      },
+      "consejoDocente": {
+        "gl": "Facer o xesto en seco antes de abrir a billa: así non se aprende coa auga correndo.",
+        "es": "Hacer el gesto en seco antes de abrir el grifo: así no se aprende con el agua corriendo."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Onde vai a sucidade cando abrimos a auga?",
+        "es": "¿Dónde va la suciedad cuando abrimos el agua?"
+      },
+      "respuestaSugerida": {
+        "gl": "Váise polo desagüe coa auga.",
+        "es": "Se va por el desagüe con el agua."
+      },
+      "consejoDocente": {
+        "gl": "Mirar xuntas o remuíño do desagüe: é dos espectáculos que máis atención sostén a esta idade.",
+        "es": "Mirar juntas el remolino del desagüe: es de los espectáculos que más atención sostiene a esta edad."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "Espuma na bandexa",
+      "es": "Espuma en la bandeja"
+    },
+    "materiales": [
+      {
+        "gl": "Unha bandexa ampla de bordos altos, apoiada nunha mesa baixa e estable.",
+        "es": "Una bandeja amplia de bordes altos, apoyada en una mesa baja y estable."
+      },
+      {
+        "gl": "Auga morna a temperatura corporal (36-37 °C), dous dedos de altura como máximo.",
+        "es": "Agua templada a temperatura corporal (36-37 °C), dos dedos de altura como máximo."
+      },
+      {
+        "gl": "Xabón neutro apto para pel infantil, aplicado só pola persoa adulta.",
+        "es": "Jabón neutro apto para piel infantil, aplicado solo por la persona adulta."
+      },
+      {
+        "gl": "Toallas de man e unha alfombra antiescorregante para o chan.",
+        "es": "Toallas de mano y una alfombra antideslizante para el suelo."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Meter as mans na auga morna sen xabón e mover os dedos.",
+        "es": "Meter las manos en el agua templada sin jabón y mover los dedos."
+      },
+      {
+        "gl": "Engadir a persoa adulta unhas gotas de xabón e bater ata facer espuma.",
+        "es": "Añadir la persona adulta unas gotas de jabón y batir hasta hacer espuma."
+      },
+      {
+        "gl": "Coller espuma coas dúas mans e ver como desaparece.",
+        "es": "Coger espuma con las dos manos y ver cómo desaparece."
+      },
+      {
+        "gl": "Aclarar, secar coa toalla e ensinar as mans limpas ao grupo.",
+        "es": "Aclarar, secar con la toalla y enseñar las manos limpias al grupo."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante e sen interrupcións. A auga NON supera os 37 °C —compróbese co dorso do pulso antes de cada sesión— nin os dous dedos de altura. Ningunha crianza queda soa coa bandexa nin un segundo. O xabón aplícao só a persoa adulta e mantense fóra do seu alcance. Séquese o chan de contado: a auga no chan é a causa máis común de caída na aula.",
+      "es": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante y sin interrupciones. El agua NO supera los 37 °C —compruébese con el dorso de la muñeca antes de cada sesión— ni los dos dedos de altura. Ninguna criatura se queda sola con la bandeja ni un segundo. El jabón lo aplica solo la persona adulta y se mantiene fuera de su alcance. Séquese el suelo de inmediato: el agua en el suelo es la causa más común de caída en el aula."
+    },
+    "objetivoSensorial": {
+      "gl": "Explorar a temperatura morna, a textura da espuma e a coordinación das dúas mans.",
+      "es": "Explorar la temperatura templada, la textura de la espuma y la coordinación de las dos manos."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Cheo e baleiro: os vasos da bandexa",
+      "es": "Lleno y vacío: los vasos de la bandeja"
+    },
+    "descripcion": {
+      "gl": "Encher e baleirar é a primeira medida: o mesmo vaso pode ter moita auga, pouca ou ningunha.",
+      "es": "Llenar y vaciar es la primera medida: el mismo vaso puede tener mucha agua, poca o ninguna."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Encher un vaso de plástico e baleiralo na bandexa, unha e outra vez.",
+        "es": "Llenar un vaso de plástico y vaciarlo en la bandeja, una y otra vez."
+      },
+      {
+        "gl": "Poñer dous vasos, un cheo e outro baleiro, e preguntar cal pesa máis.",
+        "es": "Poner dos vasos, uno lleno y otro vacío, y preguntar cuál pesa más."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Cheo / Baleiro, Moita / Pouca, Dentro / Fóra",
+      "es": "Lleno / Vacío, Mucha / Poca, Dentro / Fuera"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe lavamos as mans coa gata Lúa: auga morna, xabón, moita espuma e splash. Aprendemos a cantar mentres fregamos, que é o xeito de que dure o suficiente.",
+      "es": "Hoy lavamos las manos con la gata Lúa: agua templada, jabón, mucha espuma y splash. Aprendimos a cantar mientras frotamos, que es la forma de que dure lo suficiente."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "No lavabo, ao abrir a billa, dicir 'Warm water! Rub the soap, splash, splash! Clean hands!' mentres se frega.",
+        "es": "En el lavabo, al abrir el grifo, decir 'Warm water! Rub the soap, splash, splash! Clean hands!' mientras se frota."
+      },
+      {
+        "gl": "Na hora do baño, deixar encher e baleirar un vaso: é o mellor xoguete e xa está na casa.",
+        "es": "En la hora del baño, dejar llenar y vaciar un vaso: es el mejor juguete y ya está en casa."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "Nomear a acción mentres se fai —'fregamos', 'aclaramos', 'secamos'— en vez de dar ordes. A rutina contada faise sola antes.",
+      "es": "Nombrar la acción mientras se hace —'frotamos', 'aclaramos', 'secamos'— en vez de dar órdenes. La rutina contada se hace sola antes."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_2_descubrimento_contorna"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA2.1",
+      "CA3.1"
+    ]
+  },
+  "ingles": {
+    "frase": "Warm water! Rub the soap, splash, splash! Clean hands!",
+    "porFase": {
+      "pulso": [
+        "Wash",
+        "Rub",
+        "Wash your face"
+      ],
+      "conto": [
+        "Wash",
+        "Soap",
+        "Water",
+        "Splash"
+      ],
+      "preguntas": [
+        "Clean",
+        "Soap"
+      ],
+      "exploracion": [
+        "Rub your hands",
+        "Splash the water"
+      ],
+      "matematicas": [
+        "Water",
+        "Splash"
+      ],
+      "ponteCasa": [
+        "Warm water! Rub the soap, splash, splash! Clean hands!",
+        "Clean"
+      ]
+    },
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-13",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

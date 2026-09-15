@@ -22,13 +22,17 @@ void main() {
 
   group('ContentAssetLoader Tests', () {
     test('loads and parses base unit juega.mar.01.json from assets', () async {
-      final unidad = await fileLoader.loadUnidadFromAsset('assets/content/unidades/juega.mar.01.json');
+      final unidad = await fileLoader
+          .loadUnidadFromAsset('assets/content/unidades/juega.mar.01.json');
 
       expect(unidad.id, equals('juega.mar.01'));
       expect(unidad.tramoEtario, equals('0-3'));
       expect(unidad.titulo.gl, contains('Mar de Vigo'));
       expect(unidad.titulo.es, contains('Mar de Vigo'));
-      expect(unidad.cancionPulso.bpm, equals(80));
+      // The pulse track measures 72.3 BPM (tools/check_pulse_bpm.py reads it
+      // off the audio). The content used to declare 80, so the badge showed a
+      // tempo nobody was clapping to.
+      expect(unidad.cancionPulso.bpm, equals(72));
       expect(unidad.cuento.paginas.length, equals(3));
       expect(unidad.vocabulario.length, equals(5));
       expect(unidad.preguntas.length, equals(3));
@@ -38,7 +42,9 @@ void main() {
       expect(unidad.revision.aprobadoParaAula, isTrue);
     });
 
-    test('loads and parses base capsule academy.como_se_aprende_a_hablar.01.json from assets', () async {
+    test(
+        'loads and parses base capsule academy.como_se_aprende_a_hablar.01.json from assets',
+        () async {
       final capsula = await fileLoader.loadCapsulaFromAsset(
         'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json',
       );
@@ -68,10 +74,13 @@ void main() {
   });
 
   group('ContentRepository Tests', () {
-    test('initializes and provides query methods for units and capsules', () async {
+    test('initializes and provides query methods for units and capsules',
+        () async {
       await repository.initialize(
         unidadPaths: ['assets/content/unidades/juega.mar.01.json'],
-        capsulaPaths: ['assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json'],
+        capsulaPaths: [
+          'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json'
+        ],
       );
 
       expect(repository.isInitialized, isTrue);
@@ -96,14 +105,16 @@ void main() {
       expect(allUnits.length, equals(1));
 
       // Capsule queries
-      final capsule = repository.getCapsulaById('academy.como_se_aprende_a_hablar.01');
+      final capsule =
+          repository.getCapsulaById('academy.como_se_aprende_a_hablar.01');
       expect(capsule, isNotNull);
       expect(capsule!.bloqueId, equals('desarrollo_comunicativo'));
 
       final nonExistentCapsule = repository.getCapsulaById('academy.fake.01');
       expect(nonExistentCapsule, isNull);
 
-      final blockCapsules = repository.getCapsulasByBloqueId('desarrollo_comunicativo');
+      final blockCapsules =
+          repository.getCapsulasByBloqueId('desarrollo_comunicativo');
       expect(blockCapsules.length, equals(1));
 
       final numericBlockCapsules = repository.getCapsulasByBloqueId('1');
@@ -127,7 +138,9 @@ void main() {
     test('clear resets repository state', () async {
       await repository.initialize(
         unidadPaths: ['assets/content/unidades/juega.mar.01.json'],
-        capsulaPaths: ['assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json'],
+        capsulaPaths: [
+          'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json'
+        ],
       );
       expect(repository.unitCount, equals(1));
 

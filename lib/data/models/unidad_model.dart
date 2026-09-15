@@ -24,9 +24,11 @@ class Revision {
     return Revision(
       autor: json['autor']?.toString().trim() ?? '',
       revisorPedagogico: json['revisorPedagogico']?.toString().trim() ??
-          json['revisor_pedagogico']?.toString().trim() ?? '',
+          json['revisor_pedagogico']?.toString().trim() ??
+          '',
       fechaRevision: json['fechaRevision']?.toString().trim() ??
-          json['fecha_revision']?.toString().trim() ?? '',
+          json['fecha_revision']?.toString().trim() ??
+          '',
       version: json['version']?.toString().trim() ?? '1.0.0',
       aprobadoParaAula: json['aprobadoParaAula'] as bool? ??
           json['aprobado_para_aula'] as bool? ??
@@ -35,12 +37,12 @@ class Revision {
   }
 
   Map<String, dynamic> toJson() => {
-    'autor': autor,
-    'revisorPedagogico': revisorPedagogico,
-    'fechaRevision': fechaRevision,
-    'version': version,
-    'aprobadoParaAula': aprobadoParaAula,
-  };
+        'autor': autor,
+        'revisorPedagogico': revisorPedagogico,
+        'fechaRevision': fechaRevision,
+        'version': version,
+        'aprobadoParaAula': aprobadoParaAula,
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -63,7 +65,8 @@ class Revision {
       );
 
   @override
-  String toString() => 'Revision(v$version, $fechaRevision, approved: $aprobadoParaAula)';
+  String toString() =>
+      'Revision(v$version, $fechaRevision, approved: $aprobadoParaAula)';
 }
 
 /// Song with rhythm pulse markings for assembly step 1.
@@ -95,28 +98,62 @@ class CancionPulso {
     }
 
     return CancionPulso(
-      titulo: LocalizedString.fromJson(json['titulo'] as Map<String, dynamic>? ?? {}),
+      titulo: LocalizedString.fromJson(
+          json['titulo'] as Map<String, dynamic>? ?? {}),
       letraConPulsos: LocalizedString.fromJson(
-        (json['letraConPulsos'] ?? json['letra_con_pulsos']) as Map<String, dynamic>? ?? {},
+        (json['letraConPulsos'] ?? json['letra_con_pulsos'])
+                as Map<String, dynamic>? ??
+            {},
       ),
       bpm: (json['bpm'] as num?)?.toInt() ?? 72,
       audioAsset: resolvedAudio,
       consignaDocente: LocalizedString.fromJson(
-        (json['consignaDocente'] ?? json['consigna_docente']) as Map<String, dynamic>? ?? {},
+        (json['consignaDocente'] ?? json['consigna_docente'])
+                as Map<String, dynamic>? ??
+            {},
       ),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'titulo': titulo.toJson(),
-    'letraConPulsos': letraConPulsos.toJson(),
-    'bpm': bpm,
-    'audioAsset': audioAsset.toJson(),
-    'consignaDocente': consignaDocente.toJson(),
-  };
+        'titulo': titulo.toJson(),
+        'letraConPulsos': letraConPulsos.toJson(),
+        'bpm': bpm,
+        'audioAsset': audioAsset.toJson(),
+        'consignaDocente': consignaDocente.toJson(),
+      };
 
   /// Resolves audio path according to active language.
   String resolveAudio(AppLanguage lang) => audioAsset.resolve(lang);
+
+  /// The song's lines, as written, one per verse.
+  List<String> versos(AppLanguage lang) => letraConPulsos
+      .resolve(lang)
+      .split('\n')
+      .map((line) => line.trim())
+      .where((line) => line.isNotEmpty)
+      .toList();
+
+  /// Beats in a bar, read from the `*` markers in the lyrics.
+  ///
+  /// The markers are the beats, so the pulse is not configured separately and
+  /// cannot disagree with the words the teacher is reading.
+  /// tools/check_pulse_markers.py enforces that every line carries the same
+  /// number of them, in both languages.
+  int beatsPerLine(AppLanguage lang) {
+    for (final verso in versos(lang)) {
+      final beats = '*'.allMatches(verso).length;
+      if (beats > 0) return beats;
+    }
+    return 4;
+  }
+
+  /// Beats between strong beats: the downbeat of every bar.
+  int accentEvery(AppLanguage lang) => beatsPerLine(lang);
+
+  /// How long one beat lasts at this tempo.
+  Duration get beatDuration =>
+      Duration(microseconds: (60000000 / (bpm <= 0 ? 72 : bpm)).round());
 
   @override
   bool operator ==(Object other) =>
@@ -147,31 +184,61 @@ class CuentoPagina {
   final String imagenAsset;
   final LocalizedString preguntaComprension;
 
+  /// Lo que la persona adulta DICE en inglés mientras lee esta página.
+  ///
+  /// El inglés estaba solo en `ingles.porFase`, que da tres palabras para todo
+  /// el cuento: la docente no sabía en qué página decir cuál. Aquí va pegado a
+  /// la página que se tiene delante.
+  final List<String> ingles;
+
+  /// La clave de la lámina que ilustra ESTA página, sin ruta ni extensión:
+  /// `conto_mar_1`. Vacía significa que la escena todavía no está dibujada, y
+  /// entonces la tarjeta enseña el aviso en vez de un hueco en blanco.
+  ///
+  /// No es `imagenAsset`. Ese campo guarda una ruta a un PNG que nunca existió
+  /// —lo dejó escrito la primera generación— y por eso la tarjeta llegó a
+  /// imprimir «assets/images/cuento/...» en el proyector de la asamblea.
+  final String lamina;
+
   const CuentoPagina({
     required this.orden,
     required this.texto,
     required this.imagenAsset,
     required this.preguntaComprension,
+    this.ingles = const [],
+    this.lamina = '',
   });
 
   factory CuentoPagina.fromJson(Map<String, dynamic> json) {
     return CuentoPagina(
       orden: (json['orden'] as num?)?.toInt() ?? 1,
-      texto: LocalizedString.fromJson(json['texto'] as Map<String, dynamic>? ?? {}),
+      texto: LocalizedString.fromJson(
+          json['texto'] as Map<String, dynamic>? ?? {}),
       imagenAsset: json['imagenAsset']?.toString().trim() ??
-          json['imagen_asset']?.toString().trim() ?? '',
+          json['imagen_asset']?.toString().trim() ??
+          '',
       preguntaComprension: LocalizedString.fromJson(
-        (json['preguntaComprension'] ?? json['pregunta_comprension']) as Map<String, dynamic>? ?? {},
+        (json['preguntaComprension'] ?? json['pregunta_comprension'])
+                as Map<String, dynamic>? ??
+            {},
       ),
+      ingles: List.unmodifiable(
+        (json['ingles'] as List? ?? const [])
+            .map((e) => e.toString().trim())
+            .where((e) => e.isNotEmpty),
+      ),
+      lamina: json['lamina']?.toString().trim() ?? '',
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'orden': orden,
-    'texto': texto.toJson(),
-    'imagenAsset': imagenAsset,
-    'preguntaComprension': preguntaComprension.toJson(),
-  };
+        'orden': orden,
+        'texto': texto.toJson(),
+        'imagenAsset': imagenAsset,
+        'preguntaComprension': preguntaComprension.toJson(),
+        'ingles': ingles,
+        'lamina': lamina,
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -181,10 +248,12 @@ class CuentoPagina {
           orden == other.orden &&
           texto == other.texto &&
           imagenAsset == other.imagenAsset &&
-          preguntaComprension == other.preguntaComprension;
+          preguntaComprension == other.preguntaComprension &&
+          lamina == other.lamina;
 
   @override
-  int get hashCode => Object.hash(orden, texto, imagenAsset, preguntaComprension);
+  int get hashCode =>
+      Object.hash(orden, texto, imagenAsset, preguntaComprension, lamina);
 }
 
 /// Story section for step 2.
@@ -211,15 +280,16 @@ class Cuento {
     }
 
     return Cuento(
-      titulo: LocalizedString.fromJson(json['titulo'] as Map<String, dynamic>? ?? {}),
+      titulo: LocalizedString.fromJson(
+          json['titulo'] as Map<String, dynamic>? ?? {}),
       paginas: List.unmodifiable(pages),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'titulo': titulo.toJson(),
-    'paginas': paginas.map((p) => p.toJson()).toList(),
-  };
+        'titulo': titulo.toJson(),
+        'paginas': paginas.map((p) => p.toJson()).toList(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -242,12 +312,22 @@ class VocabularioItem {
   final String imagenAsset;
   final LocalizedString audioAsset;
 
+  /// La misma palabra en inglés. Vacía mientras no esté escrita: la tarjeta
+  /// enseña entonces solo galego y castelán, sin prometer un audio que no hay.
+  final String ingles;
+
+  /// La rejilla de píxel art de esta palabra, sin ruta ni extensión. Vacía
+  /// mientras no esté dibujada: la tarjeta enseña la palabra y ya.
+  final String lamina;
+
   const VocabularioItem({
     required this.id,
     required this.palabra,
     required this.definicionBreve,
     required this.imagenAsset,
     required this.audioAsset,
+    this.ingles = '',
+    this.lamina = '',
   });
 
   factory VocabularioItem.fromJson(Map<String, dynamic> json) {
@@ -263,23 +343,31 @@ class VocabularioItem {
 
     return VocabularioItem(
       id: json['id']?.toString().trim() ?? '',
-      palabra: LocalizedString.fromJson(json['palabra'] as Map<String, dynamic>? ?? {}),
+      palabra: LocalizedString.fromJson(
+          json['palabra'] as Map<String, dynamic>? ?? {}),
       definicionBreve: LocalizedString.fromJson(
-        (json['definicionBreve'] ?? json['definicion_breve']) as Map<String, dynamic>? ?? {},
+        (json['definicionBreve'] ?? json['definicion_breve'])
+                as Map<String, dynamic>? ??
+            {},
       ),
       imagenAsset: json['imagenAsset']?.toString().trim() ??
-          json['imagen_asset']?.toString().trim() ?? '',
+          json['imagen_asset']?.toString().trim() ??
+          '',
       audioAsset: resolvedAudio,
+      ingles: json['ingles']?.toString().trim() ?? '',
+      lamina: json['lamina']?.toString().trim() ?? '',
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'palabra': palabra.toJson(),
-    'definicionBreve': definicionBreve.toJson(),
-    'imagenAsset': imagenAsset,
-    'audioAsset': audioAsset.toJson(),
-  };
+        'id': id,
+        'palabra': palabra.toJson(),
+        'definicionBreve': definicionBreve.toJson(),
+        'imagenAsset': imagenAsset,
+        'audioAsset': audioAsset.toJson(),
+        'ingles': ingles,
+        'lamina': lamina,
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -323,22 +411,27 @@ class PreguntaNivel {
   factory PreguntaNivel.fromJson(Map<String, dynamic> json) {
     return PreguntaNivel(
       nivel: (json['nivel'] as num?)?.toInt() ?? 1,
-      enunciado: LocalizedString.fromJson(json['enunciado'] as Map<String, dynamic>? ?? {}),
+      enunciado: LocalizedString.fromJson(
+          json['enunciado'] as Map<String, dynamic>? ?? {}),
       respuestaSugerida: LocalizedString.fromJson(
-        (json['respuestaSugerida'] ?? json['respuesta_sugerida']) as Map<String, dynamic>? ?? {},
+        (json['respuestaSugerida'] ?? json['respuesta_sugerida'])
+                as Map<String, dynamic>? ??
+            {},
       ),
       consejoDocente: LocalizedString.fromJson(
-        (json['consejoDocente'] ?? json['consejo_docente']) as Map<String, dynamic>? ?? {},
+        (json['consejoDocente'] ?? json['consejo_docente'])
+                as Map<String, dynamic>? ??
+            {},
       ),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'nivel': nivel,
-    'enunciado': enunciado.toJson(),
-    'respuestaSugerida': respuestaSugerida.toJson(),
-    'consejoDocente': consejoDocente.toJson(),
-  };
+        'nivel': nivel,
+        'enunciado': enunciado.toJson(),
+        'respuestaSugerida': respuestaSugerida.toJson(),
+        'consejoDocente': consejoDocente.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -400,25 +493,30 @@ class ExploracionSensorial {
     }
 
     return ExploracionSensorial(
-      titulo: LocalizedString.fromJson(json['titulo'] as Map<String, dynamic>? ?? {}),
+      titulo: LocalizedString.fromJson(
+          json['titulo'] as Map<String, dynamic>? ?? {}),
       materiales: List.unmodifiable(mats),
       pasos: List.unmodifiable(steps),
       avisoSeguridad: LocalizedString.fromJson(
-        (json['avisoSeguridad'] ?? json['aviso_seguridad']) as Map<String, dynamic>? ?? {},
+        (json['avisoSeguridad'] ?? json['aviso_seguridad'])
+                as Map<String, dynamic>? ??
+            {},
       ),
       objetivoSensorial: LocalizedString.fromJson(
-        (json['objetivoSensorial'] ?? json['objetivo_sensorial']) as Map<String, dynamic>? ?? {},
+        (json['objetivoSensorial'] ?? json['objetivo_sensorial'])
+                as Map<String, dynamic>? ??
+            {},
       ),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'titulo': titulo.toJson(),
-    'materiales': materiales.map((m) => m.toJson()).toList(),
-    'pasos': pasos.map((s) => s.toJson()).toList(),
-    'avisoSeguridad': avisoSeguridad.toJson(),
-    'objetivoSensorial': objetivoSensorial.toJson(),
-  };
+        'titulo': titulo.toJson(),
+        'materiales': materiales.map((m) => m.toJson()).toList(),
+        'pasos': pasos.map((s) => s.toJson()).toList(),
+        'avisoSeguridad': avisoSeguridad.toJson(),
+        'objetivoSensorial': objetivoSensorial.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -469,21 +567,25 @@ class MatematicasTempras {
     }
 
     return MatematicasTempras(
-      concepto: LocalizedString.fromJson(json['concepto'] as Map<String, dynamic>? ?? {}),
-      descripcion: LocalizedString.fromJson(json['descripcion'] as Map<String, dynamic>? ?? {}),
+      concepto: LocalizedString.fromJson(
+          json['concepto'] as Map<String, dynamic>? ?? {}),
+      descripcion: LocalizedString.fromJson(
+          json['descripcion'] as Map<String, dynamic>? ?? {}),
       accionesSugeridas: List.unmodifiable(actions),
       vocabularioMatematico: LocalizedString.fromJson(
-        (json['vocabularioMatematico'] ?? json['vocabulario_matematico']) as Map<String, dynamic>? ?? {},
+        (json['vocabularioMatematico'] ?? json['vocabulario_matematico'])
+                as Map<String, dynamic>? ??
+            {},
       ),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'concepto': concepto.toJson(),
-    'descripcion': descripcion.toJson(),
-    'accionesSugeridas': accionesSugeridas.map((a) => a.toJson()).toList(),
-    'vocabularioMatematico': vocabularioMatematico.toJson(),
-  };
+        'concepto': concepto.toJson(),
+        'descripcion': descripcion.toJson(),
+        'accionesSugeridas': accionesSugeridas.map((a) => a.toJson()).toList(),
+        'vocabularioMatematico': vocabularioMatematico.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -518,7 +620,8 @@ class PonteCasa {
   });
 
   factory PonteCasa.fromJson(Map<String, dynamic> json) {
-    final rawActs = json['actividadesSugeridas'] ?? json['actividades_sugeridas'];
+    final rawActs =
+        json['actividadesSugeridas'] ?? json['actividades_sugeridas'];
     final List<LocalizedString> acts;
     if (rawActs is List) {
       acts = rawActs
@@ -531,20 +634,25 @@ class PonteCasa {
 
     return PonteCasa(
       mensajeFamilias: LocalizedString.fromJson(
-        (json['mensajeFamilias'] ?? json['mensaje_familias']) as Map<String, dynamic>? ?? {},
+        (json['mensajeFamilias'] ?? json['mensaje_familias'])
+                as Map<String, dynamic>? ??
+            {},
       ),
       actividadesSugeridas: List.unmodifiable(acts),
       recomendacionConversacion: LocalizedString.fromJson(
-        (json['recomendacionConversacion'] ?? json['recomendacion_conversacion']) as Map<String, dynamic>? ?? {},
+        (json['recomendacionConversacion'] ??
+                json['recomendacion_conversacion']) as Map<String, dynamic>? ??
+            {},
       ),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'mensajeFamilias': mensajeFamilias.toJson(),
-    'actividadesSugeridas': actividadesSugeridas.map((a) => a.toJson()).toList(),
-    'recomendacionConversacion': recomendacionConversacion.toJson(),
-  };
+        'mensajeFamilias': mensajeFamilias.toJson(),
+        'actividadesSugeridas':
+            actividadesSugeridas.map((a) => a.toJson()).toList(),
+        'recomendacionConversacion': recomendacionConversacion.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -565,6 +673,59 @@ class PonteCasa {
 
 /// Strongly typed pedagogical unit model for «Juega con Lúa · Aula».
 @immutable
+
+/// El inglés que la persona adulta DICE durante la asamblea, fase por fase.
+///
+/// No es una lengua de la app: es contenido que se escucha. Vive junto a la
+/// fase en la que se usa —no en una pantalla aparte— porque una docente con
+/// doce criaturas en la alfombra no va a ir a buscarlo a otro sitio.
+///
+/// Las claves de [porFase] son las seis fases de la asamblea, en su orden:
+/// `pulso`, `conto`, `preguntas`, `exploracion`, `matematicas`, `ponteCasa`.
+class InglesUnidad {
+  /// La frase entera del mes, la que se lleva a casa.
+  final String frase;
+
+  final Map<String, List<String>> porFase;
+
+  const InglesUnidad({this.frase = '', this.porFase = const {}});
+
+  static const List<String> fases = [
+    'pulso',
+    'conto',
+    'preguntas',
+    'exploracion',
+    'matematicas',
+    'ponteCasa',
+  ];
+
+  /// Lo que se dice en la fase [indice] (0..5). Vacío si esa fase no lleva.
+  List<String> deFase(int indice) {
+    if (indice < 0 || indice >= fases.length) return const [];
+    return porFase[fases[indice]] ?? const [];
+  }
+
+  bool get estaVacio => porFase.values.every((v) => v.isEmpty);
+
+  factory InglesUnidad.fromJson(Map<String, dynamic> json) {
+    final raw = json['porFase'];
+    final mapa = <String, List<String>>{};
+    if (raw is Map) {
+      for (final entry in raw.entries) {
+        final valor = entry.value;
+        if (valor is List) {
+          mapa[entry.key.toString()] =
+              List<String>.unmodifiable(valor.map((e) => e.toString()));
+        }
+      }
+    }
+    return InglesUnidad(
+      frase: json['frase']?.toString() ?? '',
+      porFase: Map.unmodifiable(mapa),
+    );
+  }
+}
+
 class Unidad {
   final String id;
   final String tramoEtario; // '0-2' | '2-3' | '0-3'
@@ -583,6 +744,10 @@ class Unidad {
   final CurricularReference curriculo;
   final Revision revision;
 
+  /// El inglés de esta unidad, repartido por fases. Vacío si la unidad no lo
+  /// lleva: entonces la asamblea no pinta la barra y no promete nada.
+  final InglesUnidad ingles;
+
   const Unidad({
     required this.id,
     required this.tramoEtario,
@@ -600,6 +765,7 @@ class Unidad {
     required this.puenteCasa,
     required this.curriculo,
     required this.revision,
+    this.ingles = const InglesUnidad(),
   });
 
   // Canonical compatibility getters
@@ -635,24 +801,41 @@ class Unidad {
       questions = const [];
     }
 
-    final cancionData = (json['cancionPulso'] ?? json['cancion']) as Map<String, dynamic>? ?? {};
-    final cuentoData = (json['cuento'] ?? json['conto']) as Map<String, dynamic>? ?? {};
-    final exploracionData = (json['exploracion'] ?? json['exploracionSensorial']) as Map<String, dynamic>? ?? {};
-    final matematicasData = (json['matematicas'] ?? json['matematicasTempras']) as Map<String, dynamic>? ?? {};
-    final puenteCasaData = (json['puenteCasa'] ?? json['ponteCasa'] ?? json['puente_casa']) as Map<String, dynamic>? ?? {};
-    final curriculoData = (json['curriculo'] ?? json['curricular']) as Map<String, dynamic>? ?? {};
+    final cancionData =
+        (json['cancionPulso'] ?? json['cancion']) as Map<String, dynamic>? ??
+            {};
+    final cuentoData =
+        (json['cuento'] ?? json['conto']) as Map<String, dynamic>? ?? {};
+    final exploracionData = (json['exploracion'] ??
+            json['exploracionSensorial']) as Map<String, dynamic>? ??
+        {};
+    final matematicasData = (json['matematicas'] ?? json['matematicasTempras'])
+            as Map<String, dynamic>? ??
+        {};
+    final puenteCasaData = (json['puenteCasa'] ??
+            json['ponteCasa'] ??
+            json['puente_casa']) as Map<String, dynamic>? ??
+        {};
+    final curriculoData =
+        (json['curriculo'] ?? json['curricular']) as Map<String, dynamic>? ??
+            {};
     final revisionData = json['revision'] as Map<String, dynamic>? ?? {};
 
     return Unidad(
       id: json['id']?.toString().trim() ?? '',
       tramoEtario: json['tramoEtario']?.toString().trim() ??
-          json['tramo_etario']?.toString().trim() ?? '0-3',
+          json['tramo_etario']?.toString().trim() ??
+          '0-3',
       orden: (json['orden'] as num?)?.toInt() ?? 1,
-      titulo: LocalizedString.fromJson(json['titulo'] as Map<String, dynamic>? ?? {}),
-      subtitulo: LocalizedString.fromJson(json['subtitulo'] as Map<String, dynamic>? ?? {}),
-      descripcion: LocalizedString.fromJson(json['descripcion'] as Map<String, dynamic>? ?? {}),
+      titulo: LocalizedString.fromJson(
+          json['titulo'] as Map<String, dynamic>? ?? {}),
+      subtitulo: LocalizedString.fromJson(
+          json['subtitulo'] as Map<String, dynamic>? ?? {}),
+      descripcion: LocalizedString.fromJson(
+          json['descripcion'] as Map<String, dynamic>? ?? {}),
       portadaAsset: json['portadaAsset']?.toString().trim() ??
-          json['portada_asset']?.toString().trim() ?? '',
+          json['portada_asset']?.toString().trim() ??
+          '',
       cancionPulso: CancionPulso.fromJson(cancionData),
       cuento: Cuento.fromJson(cuentoData),
       vocabulario: List.unmodifiable(vocabs),
@@ -662,32 +845,75 @@ class Unidad {
       puenteCasa: PonteCasa.fromJson(puenteCasaData),
       curriculo: CurricularReference.fromJson(curriculoData),
       revision: Revision.fromJson(revisionData),
+      ingles: json['ingles'] is Map
+          ? InglesUnidad.fromJson(
+              Map<String, dynamic>.from(json['ingles'] as Map))
+          : const InglesUnidad(),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'tramoEtario': tramoEtario,
-    'orden': orden,
-    'titulo': titulo.toJson(),
-    'subtitulo': subtitulo.toJson(),
-    'descripcion': descripcion.toJson(),
-    'portadaAsset': portadaAsset,
-    'cancionPulso': cancionPulso.toJson(),
-    'cuento': cuento.toJson(),
-    'vocabulario': vocabulario.map((v) => v.toJson()).toList(),
-    'preguntas': preguntas.map((q) => q.toJson()).toList(),
-    'exploracion': exploracion.toJson(),
-    'matematicas': matematicas.toJson(),
-    'puenteCasa': puenteCasa.toJson(),
-    'curriculo': curriculo.toJson(),
-    'revision': revision.toJson(),
-  };
+        'id': id,
+        'tramoEtario': tramoEtario,
+        'orden': orden,
+        'titulo': titulo.toJson(),
+        'subtitulo': subtitulo.toJson(),
+        'descripcion': descripcion.toJson(),
+        'portadaAsset': portadaAsset,
+        'cancionPulso': cancionPulso.toJson(),
+        'cuento': cuento.toJson(),
+        'vocabulario': vocabulario.map((v) => v.toJson()).toList(),
+        'preguntas': preguntas.map((q) => q.toJson()).toList(),
+        'exploracion': exploracion.toJson(),
+        'matematicas': matematicas.toJson(),
+        'puenteCasa': puenteCasa.toJson(),
+        'curriculo': curriculo.toJson(),
+        'revision': revision.toJson(),
+      };
+
+  /// Returns a copy of this unit with the given fields replaced.
+  Unidad copyWith({
+    String? id,
+    String? tramoEtario,
+    int? orden,
+    LocalizedString? titulo,
+    LocalizedString? subtitulo,
+    LocalizedString? descripcion,
+    String? portadaAsset,
+    CancionPulso? cancionPulso,
+    Cuento? cuento,
+    List<VocabularioItem>? vocabulario,
+    List<PreguntaNivel>? preguntas,
+    ExploracionSensorial? exploracion,
+    MatematicasTempras? matematicas,
+    PonteCasa? puenteCasa,
+    CurricularReference? curriculo,
+    Revision? revision,
+  }) {
+    return Unidad(
+      id: id ?? this.id,
+      tramoEtario: tramoEtario ?? this.tramoEtario,
+      orden: orden ?? this.orden,
+      titulo: titulo ?? this.titulo,
+      subtitulo: subtitulo ?? this.subtitulo,
+      descripcion: descripcion ?? this.descripcion,
+      portadaAsset: portadaAsset ?? this.portadaAsset,
+      cancionPulso: cancionPulso ?? this.cancionPulso,
+      cuento: cuento ?? this.cuento,
+      vocabulario: vocabulario ?? this.vocabulario,
+      preguntas: preguntas ?? this.preguntas,
+      exploracion: exploracion ?? this.exploracion,
+      matematicas: matematicas ?? this.matematicas,
+      puenteCasa: puenteCasa ?? this.puenteCasa,
+      curriculo: curriculo ?? this.curriculo,
+      revision: revision ?? this.revision,
+    );
+  }
 
   /// Validates whether this unit matches the requested age band filter.
   bool matchesAgeBand(String filter) {
     final f = filter.trim();
-    final validFilters = const {'0-2', '2-3', '0-3'};
+    const validFilters = {'0-2', '2-3', '0-3'};
     if (!validFilters.contains(f)) return false;
     if (tramoEtario == '0-3') return true;
     return tramoEtario == f;
@@ -736,7 +962,8 @@ class Unidad {
       ]);
 
   @override
-  String toString() => 'Unidad(id: "$id", tramo: "$tramoEtario", titulo: $titulo)';
+  String toString() =>
+      'Unidad(id: "$id", tramo: "$tramoEtario", titulo: $titulo)';
 }
 
 // Aliases for dispatch & schema parity

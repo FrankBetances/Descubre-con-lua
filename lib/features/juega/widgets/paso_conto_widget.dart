@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/brand/lamina_vector.dart';
 import '../../../data/models/unidad_model.dart';
 
 /// Phase 2: Cuento guiado with story pages and comprehension prompts for assembly.
@@ -13,10 +16,20 @@ class PasoContoWidget extends StatefulWidget {
   final Cuento cuento;
   final AppLanguage language;
 
+  /// Sin él no hay botón de escuchar. La lectura de la asamblea es justo donde
+  /// más falta hace oír la pronunciación modelo en galego.
+  final OfflineAudioService? audioService;
+
+  /// Avisa de qué página se está leyendo, para que la barra de inglés anclada
+  /// enseñe lo que se dice EN ESA PÁGINA y no un resumen de todo el cuento.
+  final ValueChanged<int>? onPaginaCambiada;
+
   const PasoContoWidget({
     super.key,
     required this.cuento,
     required this.language,
+    this.audioService,
+    this.onPaginaCambiada,
   });
 
   @override
@@ -25,6 +38,11 @@ class PasoContoWidget extends StatefulWidget {
 
 class _PasoContoWidgetState extends State<PasoContoWidget> {
   int _currentPageIndex = 0;
+
+  void _irAPagina(int indice) {
+    setState(() => _currentPageIndex = indice);
+    widget.onPaginaCambiada?.call(indice);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +53,9 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
     if (pages.isEmpty) {
       return Center(
         child: Text(
-          isGl ? 'Non hai páxinas dispoñibles no conto.' : 'No hay páginas disponibles en el cuento.',
+          isGl
+              ? 'Non hai páxinas dispoñibles no conto.'
+              : 'No hay páginas disponibles en el cuento.',
           style: theme.textTheme.bodyMedium,
         ),
       );
@@ -59,20 +79,26 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                 ),
               ),
             ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
-              decoration: BoxDecoration(
-                color: AppTheme.secondarySeaGlass.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(8.0),
-              ),
-              child: Text(
-                isGl
-                    ? 'Páxina ${_currentPageIndex + 1} de ${pages.length}'
-                    : 'Página ${_currentPageIndex + 1} de ${pages.length}',
-                style: const TextStyle(
-                  color: AppTheme.primaryVigoBlue,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 13.0,
+            const SizedBox(width: 8),
+            Flexible(
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+                decoration: BoxDecoration(
+                  color: AppTheme.secondarySeaGlass.withValues(alpha: 0.2),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                child: Text(
+                  isGl
+                      ? 'Páxina ${_currentPageIndex + 1} de ${pages.length}'
+                      : 'Página ${_currentPageIndex + 1} de ${pages.length}',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: AppTheme.primaryVigoBlue,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 13.0,
+                  ),
                 ),
               ),
             ),
@@ -92,45 +118,18 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Visual illustration container (sober pedagogical frame)
-                Container(
-                  height: 140,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFE8F1F5),
-                    borderRadius: BorderRadius.circular(12.0),
-                    border: Border.all(color: const Color(0xFFCBD5E1)),
-                  ),
-                  child: Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.auto_stories_rounded,
-                          size: 42,
-                          color: AppTheme.primaryVigoBlue,
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          isGl
-                              ? 'Lámina visual ilustrada · ${currentPage.imagenAsset}'
-                              : 'Lámina visual ilustrada · ${currentPage.imagenAsset}',
-                          style: const TextStyle(
-                            fontSize: 12.0,
-                            color: Color(0xFF64748B),
-                            fontFamily: 'monospace',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                // La escena de esta página. Ocupa todo el ancho de la
+                // tarjeta porque es lo que la docente enseña al círculo desde
+                // dos metros: si se recorta a un cuadrado pequeño, la clase no
+                // distingue la gata del oso.
+                _Ilustracion(clave: currentPage.lamina, isGl: isGl),
                 const SizedBox(height: 20.0),
 
                 // Narrative text to read aloud
                 Text(
-                  isGl ? 'Lectura para a asamblea:' : 'Lectura para la asamblea:',
+                  isGl
+                      ? 'Lectura para a asamblea:'
+                      : 'Lectura para la asamblea:',
                   style: theme.textTheme.bodySmall?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: const Color(0xFF64748B),
@@ -144,6 +143,18 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                     height: 1.6,
                     color: AppTheme.textSlate,
                     fontWeight: FontWeight.w500,
+                  ),
+                ),
+                const SizedBox(height: 12.0),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: BotonEscuchar(
+                    audioService: widget.audioService,
+                    texto: currentPage.texto.resolve(widget.language),
+                    language: widget.language,
+                    descripcion: isGl
+                        ? 'a lectura da asemblea'
+                        : 'la lectura de la asamblea',
                   ),
                 ),
               ],
@@ -193,6 +204,20 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                         height: 1.4,
                       ),
                     ),
+                    const SizedBox(height: 8.0),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: BotonEscuchar(
+                        audioService: widget.audioService,
+                        texto: currentPage.preguntaComprension
+                            .resolve(widget.language),
+                        language: widget.language,
+                        compacto: true,
+                        descripcion: isGl
+                            ? 'a pregunta de comprensión'
+                            : 'la pregunta de comprensión',
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -205,31 +230,117 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            OutlinedButton.icon(
-              onPressed: _currentPageIndex > 0
-                  ? () {
-                      setState(() {
-                        _currentPageIndex--;
-                      });
-                    }
-                  : null,
-              icon: const Icon(Icons.arrow_back),
-              label: Text(isGl ? 'Páxina anterior' : 'Página anterior'),
+            // Expanded y etiqueta corta: «Páxina anterior» y «Seguinte páxina»
+            // juntos desbordaban 308 px en 360 dp, ya a escala normal. La
+            // flecha dice la dirección; la palabra larga sobraba.
+            Expanded(
+              child: OutlinedButton.icon(
+                onPressed: _currentPageIndex > 0
+                    ? () => _irAPagina(_currentPageIndex - 1)
+                    : null,
+                icon: const Icon(Icons.arrow_back),
+                // Dos líneas, no puntos suspensivos: «Páxina anterior» es lo
+                // que distingue este botón del de cambiar de FASE, que también
+                // dice «Anterior». Cortarlo dejaba dos botones iguales.
+                label: Text(
+                  isGl ? 'Páxina\nanterior' : 'Página\nanterior',
+                  maxLines: 2,
+                  textAlign: TextAlign.center,
+                ),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(0, 48),
+                  padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                ),
+              ),
             ),
-            OutlinedButton.icon(
-              onPressed: _currentPageIndex < pages.length - 1
-                  ? () {
-                      setState(() {
-                        _currentPageIndex++;
-                      });
-                    }
-                  : null,
-              icon: const Icon(Icons.arrow_forward),
-              label: Text(isGl ? 'Seguinte páxina' : 'Siguiente página'),
+            const SizedBox(width: 12),
+            Expanded(
+              child: OutlinedButton.icon(
+                onPressed: _currentPageIndex < pages.length - 1
+                    ? () => _irAPagina(_currentPageIndex + 1)
+                    : null,
+                icon: const Icon(Icons.arrow_forward),
+                label: Text(
+                  isGl ? 'Páxina\nseguinte' : 'Página\nsiguiente',
+                  maxLines: 2,
+                  textAlign: TextAlign.center,
+                ),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(0, 48),
+                  padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                ),
+              ),
             ),
           ],
         ),
       ],
+    );
+  }
+}
+
+/// El marco de la ilustración, con su plan B.
+///
+/// El plan B no es decoración: si la lámina de una página no está dibujada o no
+/// viaja en el APK, lo que la docente tiene delante no puede ser un hueco en
+/// blanco —que se lee como una app rota— sino una frase que le diga qué hacer
+/// mientras tanto. Es la misma decisión que el aviso del calendario.
+class _Ilustracion extends StatelessWidget {
+  final String clave;
+  final bool isGl;
+
+  const _Ilustracion({required this.clave, required this.isGl});
+
+  @override
+  Widget build(BuildContext context) {
+    final aviso = Padding(
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Icon(
+            Icons.auto_stories_rounded,
+            size: 42,
+            color: AppTheme.primaryVigoBlue,
+          ),
+          const SizedBox(height: 8),
+          // The asset path itself used to be printed here, so a teacher running
+          // the assembly read "assets/images/cuento/..." off the projector.
+          Text(
+            isGl
+                ? 'Lámina ilustrada pendente. Le o texto e sinala o que vedes na aula.'
+                : 'Lámina ilustrada pendiente. Lee el texto y señala lo que veis en el aula.',
+            style: const TextStyle(fontSize: 12.0, color: Color(0xFF64748B)),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+
+    return Container(
+      constraints: const BoxConstraints(minHeight: 140),
+      width: double.infinity,
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        color: const Color(0xFFE8F1F5),
+        borderRadius: BorderRadius.circular(12.0),
+        border: Border.all(color: const Color(0xFFCBD5E1)),
+      ),
+      child: clave.isEmpty
+          ? Center(child: aviso)
+          : LayoutBuilder(
+              builder: (context, limites) => Center(
+                child: LaminaEscena(
+                  clave: clave,
+                  // `maxWidth` puede llegar infinito si un día esto cae dentro
+                  // de algo que no acota; entonces se pinta con el ancho de la
+                  // pantalla y no con `Infinity`, que revienta el layout.
+                  ancho: limites.maxWidth.isFinite
+                      ? limites.maxWidth
+                      : MediaQuery.sizeOf(context).width,
+                  mentres: aviso,
+                ),
+              ),
+            ),
     );
   }
 }

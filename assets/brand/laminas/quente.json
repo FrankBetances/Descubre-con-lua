@@ -1,0 +1,40 @@
+{
+  "vb": 100,
+  "nota": "Quente / Caliente: taza humeante. El vaho sube, que es lo que dice que está caliente.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M36 12 C30 20 42 26 36 34 M50 8 C44 18 56 24 50 34 M64 12 C58 20 70 26 64 34",
+      "s": "#c5ccd6",
+      "sw": 6
+    },
+    {
+      "t": "ruta",
+      "d": "M76 52 C90 52 92 70 78 72",
+      "f": "#ff851b",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M16 44 L80 44 C80 74 68 88 48 88 C28 88 16 74 16 44 Z",
+      "f": "#e62828",
+      "s": "#911212",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M22 54 C34 60 62 60 74 54",
+      "s": "#fcedc7",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 32,
+      "cy": 62,
+      "rx": 7,
+      "ry": 10,
+      "f": "#ffffff44"
+    }
+  ]
+}

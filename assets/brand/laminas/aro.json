@@ -1,0 +1,38 @@
+{
+  "vb": 100,
+  "nota": "Aro de plástico visto de frente, grueso, con brillo. El que rueda por el suelo del aula.",
+  "formas": [
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 50,
+      "rx": 40,
+      "ry": 40,
+      "f": "#ffdc00",
+      "s": "#d97706",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 50,
+      "rx": 24,
+      "ry": 24,
+      "f": "#ffffff",
+      "s": "#d97706",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M50 10 C28 10 10 28 10 50",
+      "s": "#fff677",
+      "sw": 8
+    },
+    {
+      "t": "ruta",
+      "d": "M22 22 C30 14 40 10 50 10",
+      "s": "#ffffff88",
+      "sw": 6
+    }
+  ]
+}

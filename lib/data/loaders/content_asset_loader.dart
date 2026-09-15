@@ -23,7 +23,8 @@ class ContentAssetLoader {
   static const String capsulasAssetPrefix = 'assets/content/capsulas/';
 
   /// Canonical base unit path.
-  static const String baseUnidadMar01 = 'assets/content/unidades/juega.mar.01.json';
+  static const String baseUnidadMar01 =
+      'assets/content/unidades/juega.mar.01.json';
 
   /// Canonical base capsule path.
   static const String baseCapsulaHablar01 =

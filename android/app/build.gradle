@@ -22,9 +22,20 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0.0'
 }
 
+// Upload key, kept outside the repository. Without it the build still runs
+// (for local testing) but it is NOT publishable: Google Play rejects an APK
+// signed with the debug key, which is what this project shipped before.
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystorePropertiesFile.withReader('UTF-8') { reader ->
+        keystoreProperties.load(reader)
+    }
+}
+
 android {
     namespace "com.earlify.descubreconlua"
-    compileSdk 34
+    compileSdk 36
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -43,15 +54,33 @@ android {
     defaultConfig {
         applicationId "com.earlify.descubreconlua"
         minSdk 24
-        targetSdk 34
+        // Play Console rechazó el versionCode 80 por apuntar a la API 34:
+        // exige 36 como mínimo. Va atado al `compileSdk 36` de arriba.
+        // Subirlo no es solo un número: con targetSdk 36 el borde a borde es
+        // obligatorio en Android 15+ y la ventana deja de reservar la barra
+        // de gestos, así que una pantalla sin SafeArea dibuja por debajo.
+        targetSdk 36
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        if (keystorePropertiesFile.exists()) {
+            release {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
+        }
+    }
+
     buildTypes {
         release {
-            signingConfig signingConfigs.debug
+            signingConfig keystorePropertiesFile.exists()
+                ? signingConfigs.release
+                : signingConfigs.debug
             minifyEnabled false
             shrinkResources false
         }

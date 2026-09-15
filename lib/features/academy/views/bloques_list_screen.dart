@@ -1,29 +1,51 @@
 import 'package:flutter/material.dart';
+
+import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../data/models/capsula_model.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../premios/premios_model.dart';
+import '../../premios/premios_repository.dart';
+import '../../premios/widgets/lua_game_strip.dart';
+import '../widgets/academy_header.dart';
 import '../widgets/selector_idioma_widget.dart';
 import 'capsula_detail_screen.dart';
+import 'guia_atencion_screen.dart';
+import '../../../core/storage/calendario_store.dart';
+import '../../calendario/views/calendario_screen.dart';
 
-/// Screen displaying the 5 canonical developmental blocks of «Academy · Familias».
+/// Los 5 bloques de desarrollo de «Academy · Familias».
 ///
-/// Designed exclusively for adult caregivers and families:
-/// - Clear overview of infant neurodevelopmental areas (0-3 years).
-/// - Dynamic bilingual switcher (`gl`/`es`) in AppBar.
-/// - Navigation to 4-part micro-learning capsules.
-/// - ZERO external web links, ZERO child games or touch mechanics.
+/// Portada de la lista de Academy del proyecto anterior de la casa
+/// (`docs/screenshots/28-academy-capsulas.png`): cabecera de color a sangre con
+/// antetítulo en versalitas, y debajo una tarjeta blanca por bloque con su
+/// baldosa de icono, su título y su línea de metadatos.
+///
+/// Quien mira esto es un adulto en casa. Cero enlaces externos y cero mecánicas
+/// de juego infantil.
 class BloquesListScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
+
+  /// Opcional: sin él, leer una cápsula no cuenta para los premios.
+  final PremiosRepository? premios;
+
+  /// Opcional: sin él las cápsulas se leen, pero no se escuchan.
+  final OfflineAudioService? audioService;
+
+  /// Opcional: para acceder ao calendario sincronizado escola-fogar.
+  final CalendarioStore? calendario;
 
   const BloquesListScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
+    this.premios,
+    this.audioService,
+    this.calendario,
   });
 
   @override
@@ -32,6 +54,38 @@ class BloquesListScreen extends StatefulWidget {
 
 class _BloquesListScreenState extends State<BloquesListScreen> {
   late AppLanguage _language;
+
+  static const _kicker = LocalizedString(gl: 'ACADEMY', es: 'ACADEMY');
+
+  static const _titulo = LocalizedString(
+    gl: 'Os 5 bloques de desenvolvemento',
+    es: 'Los 5 bloques de desarrollo',
+  );
+
+  static const _subtitulo = LocalizedString(
+    gl: 'Lecturas curtas para a familia, cunha reflexión ao final. '
+        'Sen pantallas para a crianza.',
+    es: 'Lecturas cortas para la familia, con una reflexión al final. '
+        'Sin pantallas para la criatura.',
+  );
+
+  static const _disponibles = LocalizedString(
+    gl: 'BLOQUES DISPOÑIBLES',
+    es: 'BLOQUES DISPONIBLES',
+  );
+
+  static const _unaCapsula = LocalizedString(
+    gl: 'cápsula dispoñible',
+    es: 'cápsula disponible',
+  );
+  static const _variasCapsulas = LocalizedString(
+    gl: 'cápsulas dispoñibles',
+    es: 'cápsulas disponibles',
+  );
+  static const _sinCapsulas = LocalizedString(
+    gl: 'Novas cápsulas en preparación pedagóxica.',
+    es: 'Nuevas cápsulas en preparación pedagógica.',
+  );
 
   @override
   void initState() {
@@ -46,6 +100,9 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
     widget.onLanguageChanged?.call(newLang);
   }
 
+  /// Del set de Material, en su variante `outlined`: mismo grosor y mismas
+  /// terminaciones en los cinco. La regla 5 prohíbe emoji del sistema, que es
+  /// lo que usa el proyecto anterior de la casa aquí y lo que cambia de fabricante a fabricante.
   IconData _iconForBloque(String iconKey) {
     switch (iconKey) {
       case 'ear_sparkles':
@@ -63,32 +120,17 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
     }
   }
 
-  Color _colorFromHex(String hexString, Color fallback) {
-    try {
-      final buffer = StringBuffer();
-      if (hexString.length == 6 || hexString.length == 7) buffer.write('ff');
-      buffer.write(hexString.replaceFirst('#', ''));
-      return Color(int.parse(buffer.toString(), radix: 16));
-    } catch (_) {
-      return fallback;
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final isGl = _language == AppLanguage.gl;
+    final lang = _language;
     final bloques = widget.repository.getAllBloques();
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          isGl ? 'Academy · Familias' : 'Academy · Familias',
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
+        title: const Text('Academy · Familias'),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 12.0),
+            padding: const EdgeInsets.only(right: AppTheme.spaceMd),
             child: SelectorIdiomaWidget(
               currentLanguage: _language,
               onLanguageChanged: _onToggleLanguage,
@@ -97,259 +139,144 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
           ),
         ],
       ),
+      // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
+      // ya no reserva la barra de gestos y el final de esta pantalla
+      // quedaba por debajo. `top: false` porque el inset de arriba ya lo
+      // consume el AppBar; volver a pedirlo aquí no suma nada.
       body: SafeArea(
+        top: false,
         child: ListView(
-          padding: const EdgeInsets.all(20.0),
+          padding: EdgeInsets.zero,
           children: [
-            // Header introduction for adult caregivers
-            Container(
-              padding: const EdgeInsets.all(18.0),
-              decoration: BoxDecoration(
-                color: AppTheme.cardSurface,
-                borderRadius: BorderRadius.circular(16.0),
-                border: Border.all(
-                  color: AppTheme.primaryVigoBlue.withOpacity(0.2),
-                  width: 1.5,
-                ),
+            AcademyHeader(
+              kicker: _kicker.resolve(lang),
+              titulo: _titulo.resolve(lang),
+              subtitulo: _subtitulo.resolve(lang),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceXl,
+                AppTheme.spaceLg,
+                AppTheme.spaceXxl,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      const Icon(
-                        Icons.family_restroom_outlined,
-                        color: AppTheme.primaryVigoBlue,
-                        size: 26,
-                      ),
-                      const SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          isGl
-                              ? 'Desenvolvemento infantil no fogar'
-                              : 'Desarrollo infantil en el hogar',
-                          style: theme.textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: AppTheme.primaryVigoBlue,
-                          ),
+                  // La tira de juego de la familia, justo debajo de la cabecera:
+                  // la gata, el nivel por cápsulas leídas y la racha.
+                  if (widget.premios != null) ...[
+                    LuaGameStrip(
+                      repository: widget.premios!,
+                      perfil: Perfil.familia,
+                      language: lang,
+                      contadores: widget.calendario?.contadores,
+                    ),
+                    const SizedBox(height: AppTheme.spaceXl),
+                  ],
+                  // Acceso destacado a la Guía de Atención y al Calendario
+                  AcademyCard(
+                    icono: Icons.record_voice_over_outlined,
+                    kicker: lang == AppLanguage.gl
+                        ? 'O INGLÉS NA CASA'
+                        : 'EL INGLÉS EN CASA',
+                    titulo: lang == AppLanguage.gl
+                        ? 'Guía de inglés na casa'
+                        : 'Guía de inglés en casa',
+                    descripcion: lang == AppLanguage.gl
+                        ? 'Canto dura o xogo segundo a idade, tres regras para a casa e a pronuncia de cada frase.'
+                        : 'Cuánto dura el juego según la edad, tres reglas para casa y la pronunciación de cada frase.',
+                    meta: lang == AppLanguage.gl
+                        ? 'Guía interactiva'
+                        : 'Guía interactiva',
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => GuiaAtencionScreen(
+                          initialLanguage: _language,
+                          onLanguageChanged: _onToggleLanguage,
+                          audioService: widget.audioService,
                         ),
                       ),
-                    ],
-                  ),
-                  const SizedBox(height: 10.0),
-                  Text(
-                    isGl
-                        ? 'Guías prácticas de lectura rápida (3 minutos) baseadas na evidencia para acompañar a linguaxe e a comunicación dende o nacemento ata os 3 anos sen pantallas.'
-                        : 'Guías prácticas de lectura rápida (3 minutos) basadas en la evidencia para acompañar el lenguaje y la comunicación desde el nacimiento hasta los 3 años sin pantallas.',
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      fontSize: 16.0,
-                      height: 1.5,
-                      color: AppTheme.textSlate,
                     ),
                   ),
+                  const SizedBox(height: AppTheme.spaceMd),
+                  AcademyCard(
+                    icono: Icons.calendar_month_rounded,
+                    kicker: lang == AppLanguage.gl
+                        ? 'SINCRONIZACIÓN ESCOLA-FOGAR'
+                        : 'SINCRONIZACIÓN ESCUELA-HOGAR',
+                    titulo: lang == AppLanguage.gl
+                        ? 'Calendario Escola · Fogar'
+                        : 'Calendario Escuela · Hogar',
+                    descripcion: lang == AppLanguage.gl
+                        ? '10 meses de conexión coa escola: mira o que traballaron pola mañá e rexistra o xogo de 3 min na casa.'
+                        : '10 meses de conexión con la escuela: mira lo que trabajaron por la mañana y registra el juego de 3 min en casa.',
+                    meta: lang == AppLanguage.gl
+                        ? 'Dobre estimulación'
+                        : 'Doble estimulación',
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => CalendarioScreen(
+                          store: widget.calendario ?? CalendarioStore(),
+                          initialLanguage: _language,
+                          onLanguageChanged: _onToggleLanguage,
+                          esDocenteInicial: false,
+                          repository: widget.repository,
+                          audioService: widget.audioService,
+                          premios: widget.premios,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: AppTheme.spaceXl),
+                  Text(
+                    _disponibles.resolve(lang),
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: AppTheme.textSecondary,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 1.4,
+                        ),
+                  ),
+                  const SizedBox(height: AppTheme.spaceMd),
+                  ...bloques.map((bloque) {
+                    final capsulas =
+                        widget.repository.getCapsulasByBloqueId(bloque.id);
+                    final primera = capsulas.isNotEmpty ? capsulas.first : null;
+                    final minutos = primera?.tiempoLecturaMinutos;
+
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
+                      child: AcademyCard(
+                        icono: _iconForBloque(bloque.icono),
+                        kicker: 'Bloque ${bloque.orden}',
+                        titulo: bloque.titulo.resolve(lang),
+                        descripcion: bloque.descripcion.resolve(lang),
+                        meta: capsulas.isEmpty
+                            ? _sinCapsulas.resolve(lang)
+                            : [
+                                '${capsulas.length} '
+                                    '${capsulas.length == 1 ? _unaCapsula.resolve(lang) : _variasCapsulas.resolve(lang)}',
+                                if (minutos != null) '$minutos min'
+                              ].join(' · '),
+                        onTap: primera == null
+                            ? null
+                            : () => Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => CapsulaDetailScreen(
+                                      capsula: primera,
+                                      initialLanguage: _language,
+                                      onLanguageChanged: _onToggleLanguage,
+                                      premios: widget.premios,
+                                      audioService: widget.audioService,
+                                    ),
+                                  ),
+                                ),
+                      ),
+                    );
+                  }),
                 ],
               ),
             ),
-            const SizedBox(height: 20.0),
-
-            // Section title
-            Text(
-              isGl
-                  ? 'Os 5 bloques de desenvolvemento'
-                  : 'Los 5 bloques de desarrollo',
-              style: theme.textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-                color: AppTheme.primaryVigoBlue,
-                fontSize: 19.0,
-              ),
-            ),
-            const SizedBox(height: 14.0),
-
-            // List of the 5 canonical blocks
-            ...bloques.map((bloque) {
-              final capsulas = widget.repository.getCapsulasByBloqueId(bloque.id);
-              final blockColor = _colorFromHex(bloque.colorHex, AppTheme.primaryVigoBlue);
-              final icon = _iconForBloque(bloque.icono);
-
-              return Card(
-                margin: const EdgeInsets.only(bottom: 16.0),
-                elevation: 0,
-                color: AppTheme.cardSurface,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16.0),
-                  side: BorderSide(
-                    color: blockColor.withOpacity(0.35),
-                    width: 1.5,
-                  ),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(18.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          CircleAvatar(
-                            radius: 22,
-                            backgroundColor: blockColor.withOpacity(0.15),
-                            child: Icon(icon, color: blockColor, size: 24),
-                          ),
-                          const SizedBox(width: 14),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 8.0,
-                                    vertical: 2.0,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: blockColor.withOpacity(0.12),
-                                    borderRadius: BorderRadius.circular(6.0),
-                                  ),
-                                  child: Text(
-                                    isGl
-                                        ? 'Bloque ${bloque.orden}'
-                                        : 'Bloque ${bloque.orden}',
-                                    style: TextStyle(
-                                      color: blockColor,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 12.0,
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(height: 6),
-                                Text(
-                                  bloque.titulo.resolve(_language),
-                                  style: theme.textTheme.titleMedium?.copyWith(
-                                    fontSize: 17.5,
-                                    fontWeight: FontWeight.bold,
-                                    color: AppTheme.textSlate,
-                                    height: 1.25,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 12),
-                      Text(
-                        bloque.descripcion.resolve(_language),
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          fontSize: 16.0,
-                          height: 1.45,
-                          color: const Color(0xFF4A5568),
-                        ),
-                      ),
-                      const SizedBox(height: 16),
-
-                      // Capsules list or status
-                      if (capsulas.isNotEmpty) ...[
-                        const Divider(height: 1),
-                        const SizedBox(height: 12),
-                        Text(
-                          isGl ? 'Cápsulas dispoñibles:' : 'Cápsulas disponibles:',
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: AppTheme.primaryVigoBlue,
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        ...capsulas.map((c) {
-                          return Container(
-                            margin: const EdgeInsets.only(bottom: 8.0),
-                            child: ListTile(
-                              contentPadding: const EdgeInsets.symmetric(
-                                horizontal: 12.0,
-                                vertical: 4.0,
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0),
-                                side: BorderSide(
-                                  color: blockColor.withOpacity(0.2),
-                                ),
-                              ),
-                              tileColor: const Color(0xFFFAF9F4),
-                              leading: Icon(
-                                Icons.menu_book_outlined,
-                                color: blockColor,
-                                size: 22,
-                              ),
-                              title: Text(
-                                c.titulo.resolve(_language),
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 16.0,
-                                  color: AppTheme.textSlate,
-                                ),
-                              ),
-                              subtitle: Text(
-                                isGl
-                                    ? '${c.tiempoLecturaMinutos} min · 4 apartados prácticos'
-                                    : '${c.tiempoLecturaMinutos} min · 4 apartados prácticos',
-                                style: const TextStyle(fontSize: 13.0),
-                              ),
-                              trailing: const Icon(
-                                Icons.arrow_forward_ios,
-                                size: 14,
-                                color: Color(0xFF718096),
-                              ),
-                              onTap: () {
-                                Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                    builder: (context) => CapsulaDetailScreen(
-                                      capsula: c,
-                                      initialLanguage: _language,
-                                      onLanguageChanged: _onToggleLanguage,
-                                    ),
-                                  ),
-                                );
-                              },
-                            ),
-                          );
-                        }),
-                      ] else ...[
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 12.0,
-                            vertical: 8.0,
-                          ),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFF0EFE7),
-                            borderRadius: BorderRadius.circular(8.0),
-                          ),
-                          child: Row(
-                            children: [
-                              const Icon(
-                                Icons.hourglass_empty_outlined,
-                                size: 16,
-                                color: Color(0xFF718096),
-                              ),
-                              const SizedBox(width: 8),
-                              Expanded(
-                                child: Text(
-                                  isGl
-                                      ? 'Novas cápsulas deste bloque en preparación pedagóxica.'
-                                      : 'Nuevas cápsulas de este bloque en preparación pedagógica.',
-                                  style: const TextStyle(
-                                    fontSize: 13.0,
-                                    color: Color(0xFF718096),
-                                    fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ],
-                  ),
-                ),
-              );
-            }),
           ],
         ),
       ),

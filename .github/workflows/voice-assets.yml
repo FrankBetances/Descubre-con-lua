@@ -1,0 +1,152 @@
+name: Generate Voice Assets
+
+# Synthesises the offline voice assets with the neural voices and COMMITS the
+# resulting .m4a files to the branch it ran from. The models only ever run
+# here: the app ships the recordings and no inference code, which is what keeps
+# the release APK free of network permissions.
+#
+# Run it by hand after editing content, or let a push to a work branch that
+# touches the corpus or the pipeline trigger it.
+
+on:
+  workflow_dispatch:
+    inputs:
+      lang:
+        description: 'Language to synthesise (gl · es · en · all)'
+        required: false
+        default: 'all'
+  push:
+    branches:
+      - claude/**
+      - mejora
+    paths:
+      - 'assets/content/**'
+      - 'voice-corpus.json'
+      - 'tools/voice_corpus.py'
+      - 'tools/generate_voice_assets.py'
+      - 'tools/export_voice_corpus.py'
+      - '.github/workflows/voice-assets.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: voice-assets-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  synthesize:
+    runs-on: ubuntu-latest
+    # The commit this workflow pushes also touches the corpus: without this it
+    # would trigger itself.
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Refresh the corpus from the content
+        run: python3 tools/export_voice_corpus.py
+
+      # Qué hay que sintetizar. Una sola decisión, aquí, en vez de repartirla
+      # entre seis condiciones `if` que nadie podía leer y que además daban
+      # siempre 0 para el inglés: el recuento se hacía con los idiomas por
+      # defecto del corpus, que eran solo gl y es, así que el paso del inglés
+      # no se ejecutaba nunca en un push.
+      - name: Decide qué idiomas tocan
+        id: plan
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import os, sys
+          sys.path.insert(0, 'tools')
+          from voice_corpus import collect_locutions, iter_missing, VOICE_LANGS
+
+          pedido = (os.environ.get('LANG_INPUT') or 'all').strip() or 'all'
+          missing = list(iter_missing(collect_locutions()))
+          for lang in VOICE_LANGS:
+              faltan = sum(1 for e in missing if e.lang == lang)
+              corre = faltan > 0 and pedido in ('all', lang)
+              print(f"{lang}={faltan}")
+              print(f"do_{lang}={'yes' if corre else 'no'}")
+          PY
+          cat "$GITHUB_OUTPUT"
+        env:
+          LANG_INPUT: ${{ github.event.inputs.lang }}
+
+      # Sharvard and LJSpeech are open Piper voices: onnxruntime only, no torch.
+      - name: Install piper-tts
+        if: steps.plan.outputs.do_es == 'yes' || steps.plan.outputs.do_en == 'yes'
+        run: pip install piper-tts
+
+      - name: Synthesise es (Sharvard · piper)
+        if: steps.plan.outputs.do_es == 'yes'
+        run: python3 tools/generate_voice_assets.py --lang es
+
+      - name: Synthesise en (LJSpeech · piper)
+        if: steps.plan.outputs.do_en == 'yes'
+        run: python3 tools/generate_voice_assets.py --lang en
+
+      # coqui-tts does not pull torch in (it declares it optional), so the CPU
+      # wheels are installed explicitly: no CUDA, far lighter.
+      - name: Install coqui-tts (Celtia)
+        if: steps.plan.outputs.do_gl == 'yes'
+        run: |
+          pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          # transformers 5.x removed isin_mps_friendly, which coqui still imports.
+          pip install coqui-tts "transformers<4.50"
+
+      # HF_TOKEN: the proxectonos models are gated on Hugging Face. Accept the
+      # model's conditions with an account, create a read token and add it as
+      # the HF_TOKEN secret, or the download returns 401.
+      # continue-on-error, then commit, then check: a failure here (a missing
+      # HF_TOKEN, say) used to abort the job before the commit step, throwing
+      # away the Spanish recordings that had already been synthesised. The job
+      # still fails — on the coverage gate at the end, which is the honest
+      # reason — but the work that succeeded is kept.
+      - name: Synthesise gl (Celtia · Proxecto Nós)
+        id: gl
+        if: steps.plan.outputs.do_gl == 'yes'
+        continue-on-error: true
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 tools/generate_voice_assets.py --lang gl
+
+      - name: Commit whatever was synthesised
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add assets/voice voice-corpus.json voice-assets-manifest.*.json assets/content
+          if git diff --cached --quiet; then
+            echo 'Nothing to commit: every recording was already present.'
+          else
+            git commit -m 'chore(voice): synthesise offline voice assets (Celtia gl / Sharvard es / LJSpeech en)'
+            # Sintetizar el gallego con Celtia son quince o veinte minutos. Si
+            # alguien empuja a la rama mientras tanto, este push se rechaza con
+            # «fetch first» y las grabaciones se van con el runner: pasó el
+            # 13/9/2026 y se perdieron 659 locuciones ya sintetizadas.
+            # El commit solo AÑADE ficheros de audio, así que rebasar encima de
+            # lo que haya llegado no puede chocar con nada.
+            for intento in 1 2 3; do
+              git pull --rebase origin "${{ github.ref_name }}"
+              if git push origin HEAD:"${{ github.ref_name }}"; then
+                echo "Empujado al intento $intento."
+                break
+              fi
+              echo "::warning::Push rechazado en el intento $intento; se reintenta."
+              sleep $((intento * 5))
+            done
+          fi
+
+      - name: Verify every locution now has a recording
+        if: always()
+        run: python3 tools/check_voice_coverage.py

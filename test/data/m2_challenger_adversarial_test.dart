@@ -19,13 +19,16 @@ void main() {
       ];
 
       for (final term in terms) {
-        final node = {'texto': {'gl': 'Atención: $term', 'es': 'Atención: $term'}};
+        final node = {
+          'texto': {'gl': 'Atención: $term', 'es': 'Atención: $term'}
+        };
         final List<String> errors = [];
         validator.checkClinicalTerms(node, errors: errors);
         expect(
           errors,
           isNotEmpty,
-          reason: 'Vulnerability: ContentValidator failed to catch clinical inflection "$term"',
+          reason:
+              'Vulnerability: ContentValidator failed to catch clinical inflection "$term"',
         );
       }
     });
@@ -38,31 +41,39 @@ void main() {
       ];
 
       for (final p in placeholders) {
-        final node = {'titulo': {'gl': p, 'es': 'Texto válido'}};
+        final node = {
+          'titulo': {'gl': p, 'es': 'Texto válido'}
+        };
         final List<String> errors = [];
         validator.checkBilingualParity(node, errors: errors);
         expect(
           errors,
           isNotEmpty,
-          reason: 'Vulnerability: ContentValidator accepted untranslated token "$p"',
+          reason:
+              'Vulnerability: ContentValidator accepted untranslated token "$p"',
         );
       }
     });
 
-    test('PROBE-FP-01: Probes false positive resistance on legitimate non-clinical terms', () {
+    test(
+        'PROBE-FP-01: Probes false positive resistance on legitimate non-clinical terms',
+        () {
       final nonClinicalTerms = [
         'O tratamento de auga na ría de Vigo',
         'El tratamiento de agua en la ría de Vigo',
       ];
 
       for (final term in nonClinicalTerms) {
-        final node = {'texto': {'gl': term, 'es': term}};
+        final node = {
+          'texto': {'gl': term, 'es': term}
+        };
         final List<String> errors = [];
         validator.checkClinicalTerms(node, errors: errors);
         expect(
           errors,
           isEmpty,
-          reason: 'False Positive: ContentValidator falsely flagged legitimate term "$term"',
+          reason:
+              'False Positive: ContentValidator falsely flagged legitimate term "$term"',
         );
       }
     });

@@ -1,6 +1,19 @@
+import 'package:flutter/services.dart' show AssetManifest, rootBundle;
+
 import '../loaders/content_asset_loader.dart';
 import '../models/capsula_model.dart';
 import '../models/unidad_model.dart';
+
+/// A content file that could not be loaded, kept instead of being discarded.
+class ContentLoadFailure {
+  final String assetPath;
+  final String reason;
+
+  const ContentLoadFailure(this.assetPath, this.reason);
+
+  @override
+  String toString() => 'ContentLoadFailure($assetPath): $reason';
+}
 
 /// Central repository providing structured query and filtering capabilities for
 /// thematic units («Juega con Lúa · Aula») and Academy capsules («Academy · Familias»).
@@ -10,6 +23,7 @@ class ContentRepository {
   final ContentAssetLoader _loader;
   final Map<String, Unidad> _unidadesById = {};
   final Map<String, Capsula> _capsulasById = {};
+  final List<ContentLoadFailure> _loadErrors = [];
   bool _isInitialized = false;
 
   ContentRepository({ContentAssetLoader? loader})
@@ -18,6 +32,15 @@ class ContentRepository {
   /// Whether the repository has been initialized with default or loaded content.
   bool get isInitialized => _isInitialized;
 
+  /// Content files that failed to load during [initialize].
+  ///
+  /// An empty catalogue and a broken catalogue look identical on screen unless
+  /// somebody asks this.
+  List<ContentLoadFailure> get loadErrors => List.unmodifiable(_loadErrors);
+
+  /// Whether any content file failed to load.
+  bool get hasLoadErrors => _loadErrors.isNotEmpty;
+
   /// Total count of loaded units.
   int get unitCount => _unidadesById.length;
 
@@ -25,23 +48,41 @@ class ContentRepository {
   int get capsuleCount => _capsulasById.length;
 
   /// Initializes the repository by loading assets from default or specified paths.
+  ///
+  /// With no paths given the catalogue is discovered from the bundle, so adding
+  /// a unit or a capsule is a matter of dropping a JSON file into
+  /// `assets/content/` — it used to require editing Dart, which is the opposite
+  /// of content-as-data.
   Future<void> initialize({
     List<String>? unidadPaths,
     List<String>? capsulaPaths,
   }) async {
-    final effectiveUnidadPaths = unidadPaths ?? [ContentAssetLoader.baseUnidadMar01];
-    final effectiveCapsulaPaths =
-        capsulaPaths ?? [ContentAssetLoader.baseCapsulaHablar01];
+    final discovered = (unidadPaths == null || capsulaPaths == null)
+        ? await _discover()
+        : null;
+
+    final effectiveUnidadPaths = unidadPaths ??
+        (discovered?.unidades.isNotEmpty ?? false
+            ? discovered!.unidades
+            : [ContentAssetLoader.baseUnidadMar01]);
+    final effectiveCapsulaPaths = capsulaPaths ??
+        (discovered?.capsulas.isNotEmpty ?? false
+            ? discovered!.capsulas
+            : [ContentAssetLoader.baseCapsulaHablar01]);
 
     _unidadesById.clear();
     _capsulasById.clear();
+    _loadErrors.clear();
 
     for (final path in effectiveUnidadPaths) {
       try {
         final unidad = await _loader.loadUnidadFromAsset(path);
         _unidadesById[unidad.id] = unidad;
       } catch (e) {
-        // Allow partial or graceful fallback if an optional path is not yet present
+        // A file that fails to load used to vanish without a trace, leaving an
+        // empty screen and no way to tell an empty catalogue from a broken
+        // one. The failure is kept so the screen can say which file it was.
+        _loadErrors.add(ContentLoadFailure(path, e.toString()));
       }
     }
 
@@ -50,7 +91,7 @@ class ContentRepository {
         final capsula = await _loader.loadCapsulaFromAsset(path);
         _capsulasById[capsula.id] = capsula;
       } catch (e) {
-        // Allow partial or graceful fallback if an optional path is not yet present
+        _loadErrors.add(ContentLoadFailure(path, e.toString()));
       }
     }
 
@@ -83,7 +124,7 @@ class ContentRepository {
 
   // --- CAPSULAS & BLOQUES (Academy · Familias) ---
 
-  /// Returns all available Academy capsules sorted by order.
+  /// Todas las cápsulas cargadas, de Academy y del aula.
   List<Capsula> getAllCapsulas() {
     final list = _capsulasById.values.toList();
     list.sort((a, b) => a.orden.compareTo(b.orden));
@@ -109,8 +150,12 @@ class ContentRepository {
 
     final target = mappedId ?? cleanId;
 
+    // Solo las de familia: si una cápsula del aula acabase aquí, Academy la
+    // pintaría igual de bien y una familia leería formación docente.
     final list = _capsulasById.values
-        .where((c) => c.bloqueId.toLowerCase() == target)
+        .where((c) =>
+            c.destinatario == DestinatarioCapsula.familia &&
+            c.bloqueId.toLowerCase() == target)
         .toList();
     list.sort((a, b) => a.orden.compareTo(b.orden));
     return List.unmodifiable(list);
@@ -118,6 +163,28 @@ class ContentRepository {
 
   /// Returns the 5 official developmental blocks of Academy.
   List<Bloque> getAllBloques() => Bloque.todos;
+
+  // --- CAPSULAS DEL AULA (Juega con Lúa · docentes) ---
+
+  /// Los 6 bloques de las cápsulas del aula, uno por paso de la asamblea.
+  List<Bloque> getAllBloquesAula() => Bloque.aula;
+
+  /// Las cápsulas del aula de un bloque, ya filtradas por destinatario.
+  ///
+  /// El filtro por destinatario no sobra aunque los identificadores de bloque
+  /// no se solapen: una cápsula mal etiquetada saldría igual de bien pintada
+  /// en la lista equivocada, y nadie lo vería. El validador lo caza al cargar
+  /// el contenido; esto lo caza en la consulta.
+  List<Capsula> getCapsulasAulaByBloqueId(String bloqueId) {
+    final target = bloqueId.trim().toLowerCase();
+    final list = _capsulasById.values
+        .where((c) =>
+            c.destinatario == DestinatarioCapsula.docente &&
+            c.bloqueId.toLowerCase() == target)
+        .toList();
+    list.sort((a, b) => a.orden.compareTo(b.orden));
+    return List.unmodifiable(list);
+  }
 
   /// Resolves a developmental block by its ID or ordinal number.
   Bloque? getBloqueById(String id) {
@@ -147,6 +214,41 @@ class ContentRepository {
   void clear() {
     _unidadesById.clear();
     _capsulasById.clear();
+    _loadErrors.clear();
     _isInitialized = false;
   }
+
+  /// Lists the content files actually present in the bundle.
+  ///
+  /// Falls back to an empty result outside a Flutter engine (plain unit tests),
+  /// where the caller's explicit paths are used instead.
+  Future<_DiscoveredContent> _discover() async {
+    try {
+      final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
+      final assets = manifest.listAssets();
+      bool isJsonUnder(String asset, String prefix) =>
+          asset.startsWith(prefix) && asset.endsWith('.json');
+      return _DiscoveredContent(
+        unidades: (assets
+            .where(
+                (a) => isJsonUnder(a, ContentAssetLoader.unidadesAssetPrefix))
+            .toList()
+          ..sort()),
+        capsulas: (assets
+            .where(
+                (a) => isJsonUnder(a, ContentAssetLoader.capsulasAssetPrefix))
+            .toList()
+          ..sort()),
+      );
+    } catch (_) {
+      return const _DiscoveredContent(unidades: [], capsulas: []);
+    }
+  }
+}
+
+class _DiscoveredContent {
+  final List<String> unidades;
+  final List<String> capsulas;
+
+  const _DiscoveredContent({required this.unidades, required this.capsulas});
 }

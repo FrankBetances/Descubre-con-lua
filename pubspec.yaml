@@ -21,4 +21,42 @@ flutter:
   assets:
     - assets/content/unidades/
     - assets/content/capsulas/
+    - assets/content/premios/
+    # Los diez meses del curso y la guía de atención. Faltaba esta línea, y
+    # como Flutter NO entra en los subdirectorios de una entrada, `meses.json`
+    # no viajaba en el APK: el Calendario y la Guía se quedaban girando para
+    # siempre. Lo vigila tools/check_bundled_assets.py.
+    - assets/content/calendario/
+    # El ritual de la asamblea: la consigna y los minutos de cada fase.
+    - assets/content/asamblea/
     - assets/audio/
+    # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
+    # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una
+    # pantalla quiso pintarlas, la app se quedó sin ellas. Son la MISMA fuente
+    # del icono y del splash: por eso se pintan desde aquí y no desde un PNG.
+    - assets/brand/
+    - assets/brand/logos/
+    - assets/brand/awards/
+    # Las láminas del contenido: una rejilla de 24×24 por objeto, misma paleta
+    # que las insignias. Lo vigila tools/check_bundled_assets.py.
+    - assets/brand/laminas/
+    # Neural voice recordings (Celtia gl / Sharvard es), synthesised at build
+    # time by tools/generate_voice_assets.py and committed. The models never
+    # run on the device.
+    - assets/voice/
+    # Nunito, en los cuatro pesos del sistema de diseño de la casa
+    # (regular/semibold/bold/extrabold). Se empaquetan en
+    # la app, no se piden por red: el APK no tiene permiso de INTERNET.
+    - assets/fonts/
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Nunito-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Nunito-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Nunito-ExtraBold.ttf
+          weight: 800

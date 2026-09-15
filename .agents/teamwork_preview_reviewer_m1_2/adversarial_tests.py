@@ -9,7 +9,7 @@ import sys
 import re
 import xml.etree.ElementTree as ET
 
-PROJECT_ROOT = "/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa"
+PROJECT_ROOT = "<documentos locales>/Descubre con Lúa"
 
 def test_app_language_logic():
     print("Testing AppLanguage logic...")

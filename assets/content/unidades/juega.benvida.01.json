@@ -1,0 +1,376 @@
+{
+  "id": "juega.benvida.01",
+  "tramoEtario": "0-3",
+  "orden": 1,
+  "titulo": {
+    "gl": "A benvida: mans que saúdan",
+    "es": "La bienvenida: manos que saludan"
+  },
+  "subtitulo": {
+    "gl": "Unidade de adaptación, vínculo e primeiros saúdos en inglés",
+    "es": "Unidad de adaptación, vínculo y primeros saludos en inglés"
+  },
+  "descripcion": {
+    "gl": "Primeira unidade do curso. Traballa a chegada á escola, o recoñecemento das persoas e dos obxectos propios, e o contacto suave, coas fórmulas de saúdo en inglés apoiadas en palmas e en movemento de brazos.",
+    "es": "Primera unidad del curso. Trabaja la llegada a la escuela, el reconocimiento de las personas y de los objetos propios, y el contacto suave, con las fórmulas de saludo en inglés apoyadas en palmas y movimiento de brazos."
+  },
+  "cancionPulso": {
+    "titulo": {
+      "gl": "Bos días, ola!",
+      "es": "¡Buenos días, hola!"
+    },
+    "letraConPulsos": {
+      "gl": "* Bos * días, * a-mi-ga, * ola!\n* Bos * días, * a-mi-go, * ola!\n* Pal-mas * arri-ba, * pal-mas * abai-xo,\n* to-dos * xun-tos * no * cír-cu-lo.",
+      "es": "* Bue-nos * días, * a-mi-ga, * ¡ho-la!\n* Bue-nos * días, * a-mi-go, * ¡ho-la!\n* Pal-mas * arri-ba, * pal-mas * aba-jo,\n* to-dos * jun-tos * en el * cír-cu-lo."
+    },
+    "bpm": 72,
+    "consignaDocente": {
+      "gl": "Cantar mirando a cada crianza pola súa vez e agardar a súa resposta antes de seguir. O pulso márcase nas pernas, moi amodo.",
+      "es": "Cantar mirando a cada criatura por turno y esperar su respuesta antes de seguir. El pulso se marca en las piernas, muy despacio."
+    },
+    "audioAsset": {
+      "gl": "assets/voice/gl_tutor_a6da6d7e_142.m4a",
+      "es": "assets/voice/es_tutor_7248d6a6_158.m4a"
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa chega á escola",
+      "es": "Lúa llega a la escuela"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "A gata Lúa colga a súa mochila no percheiro. Dentro leva un zapato de recambio e unha foto da súa casa.",
+          "es": "La gata Lúa cuelga su mochila en el perchero. Dentro lleva un zapato de recambio y una foto de su casa."
+        },
+        "preguntaComprension": {
+          "gl": "Onde colga Lúa a mochila? Que leva dentro?",
+          "es": "¿Dónde cuelga Lúa la mochila? ¿Qué lleva dentro?"
+        },
+        "ingles": [
+          "Hello",
+          "Backpack"
+        ],
+        "lamina": "conto_benvida_1"
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Na alfombra hai unha amiga nova. Lúa achégalle a man moi a modo e agarda. A amiga tócalle os dedos e as dúas rin.",
+          "es": "En la alfombra hay una amiga nueva. Lúa le acerca la mano muy despacio y espera. La amiga le toca los dedos y las dos ríen."
+        },
+        "preguntaComprension": {
+          "gl": "Que fai Lúa coa man? Ti tamén sabes dar a man?",
+          "es": "¿Qué hace Lúa con la mano? ¿Tú también sabes dar la mano?"
+        },
+        "ingles": [
+          "Hand",
+          "Gentle",
+          "Friend"
+        ],
+        "lamina": "conto_benvida_2"
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "Ao rematar a mañá, Lúa dá unha aperta suave e di adeus coa man. Mañá volverá haber círculo e palmas.",
+          "es": "Al terminar la mañana, Lúa da un abrazo suave y dice adiós con la mano. Mañana volverá a haber círculo y palmas."
+        },
+        "preguntaComprension": {
+          "gl": "Como se despide Lúa? Facemos adeus coa man?",
+          "es": "¿Cómo se despide Lúa? ¿Hacemos adiós con la mano?"
+        },
+        "ingles": [
+          "Hug",
+          "Bye-bye"
+        ],
+        "lamina": "conto_benvida_3"
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "man",
+      "palabra": {
+        "gl": "Man",
+        "es": "Mano"
+      },
+      "definicionBreve": {
+        "gl": "Parte do corpo coa que saudamos e tocamos con tino.",
+        "es": "Parte del cuerpo con la que saludamos y tocamos con cuidado."
+      },
+      "ingles": "Hand",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_4ea8000f_3.m4a",
+        "es": "assets/voice/es_slow_32789720_4.m4a"
+      },
+      "lamina": "man"
+    },
+    {
+      "id": "zapato",
+      "palabra": {
+        "gl": "Zapato",
+        "es": "Zapato"
+      },
+      "definicionBreve": {
+        "gl": "O que calzamos nos pés para saír á rúa.",
+        "es": "Lo que calzamos en los pies para salir a la calle."
+      },
+      "ingles": "Shoe",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_b47d0812_6.m4a",
+        "es": "assets/voice/es_slow_b47d0812_6.m4a"
+      },
+      "lamina": "zapato"
+    },
+    {
+      "id": "mochila",
+      "palabra": {
+        "gl": "Mochila",
+        "es": "Mochila"
+      },
+      "definicionBreve": {
+        "gl": "Bolsa que traemos da casa e colgamos no percheiro.",
+        "es": "Bolsa que traemos de casa y colgamos en el perchero."
+      },
+      "ingles": "Backpack",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_58442fee_7.m4a",
+        "es": "assets/voice/es_slow_58442fee_7.m4a"
+      },
+      "lamina": "mochila"
+    },
+    {
+      "id": "amiga",
+      "palabra": {
+        "gl": "Amiga",
+        "es": "Amiga"
+      },
+      "definicionBreve": {
+        "gl": "Persoa coa que xogamos e compartimos a alfombra.",
+        "es": "Persona con la que jugamos y compartimos la alfombra."
+      },
+      "ingles": "Friend",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_ebfa8ffe_5.m4a",
+        "es": "assets/voice/es_slow_ebfa8ffe_5.m4a"
+      },
+      "lamina": "amiga"
+    },
+    {
+      "id": "aperta",
+      "palabra": {
+        "gl": "Aperta",
+        "es": "Abrazo"
+      },
+      "definicionBreve": {
+        "gl": "Xeito de dicir ola e adeus cos brazos, sempre suave.",
+        "es": "Forma de decir hola y adiós con los brazos, siempre suave."
+      },
+      "ingles": "Hug",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_ed5a5afc_6.m4a",
+        "es": "assets/voice/es_slow_a7e97be4_6.m4a"
+      },
+      "lamina": "aperta"
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Onde está a túa mochila?",
+        "es": "¿Dónde está tu mochila?"
+      },
+      "respuestaSugerida": {
+        "gl": "Mirar cara ao percheiro ou sinalar co dedo.",
+        "es": "Mirar hacia el perchero o señalar con el dedo."
+      },
+      "consejoDocente": {
+        "gl": "Nas primeiras semanas moitas crianzas responden coa mirada. A mirada xa é resposta.",
+        "es": "En las primeras semanas muchas criaturas responden con la mirada. La mirada ya es respuesta."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Que facemos coa man cando dicimos ola?",
+        "es": "¿Qué hacemos con la mano cuando decimos hola?"
+      },
+      "respuestaSugerida": {
+        "gl": "Abrir a man, movela ou darlla a alguén.",
+        "es": "Abrir la mano, moverla o dársela a alguien."
+      },
+      "consejoDocente": {
+        "gl": "Facer o xesto ao mesmo tempo ca elas: ao principio imitan o movemento moito antes ca a palabra.",
+        "es": "Hacer el gesto a la vez que ellas: al principio imitan el movimiento mucho antes que la palabra."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Como sabemos que unha aperta é suave e non forte?",
+        "es": "¿Cómo sabemos que un abrazo es suave y no fuerte?"
+      },
+      "respuestaSugerida": {
+        "gl": "Porque non doe, porque a outra persoa sorrí, porque se fai a modo.",
+        "es": "Porque no duele, porque la otra persona sonríe, porque se hace despacio."
+      },
+      "consejoDocente": {
+        "gl": "É a primeira conversa do curso sobre o consentimento: se a outra persoa se aparta, párase.",
+        "es": "Es la primera conversación del curso sobre el consentimiento: si la otra persona se aparta, se para."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "Texturas suaves nas mans",
+      "es": "Texturas suaves en las manos"
+    },
+    "materiales": [
+      {
+        "gl": "Anacos de tea de tres texturas: algodón, veludo e seda (mínimo 20 x 20 cm).",
+        "es": "Trozos de tela de tres texturas: algodón, terciopelo y seda (mínimo 20 x 20 cm)."
+      },
+      {
+        "gl": "Un pincel ancho de cerdas moi suaves, de uso exclusivo da aula.",
+        "es": "Un pincel ancho de cerdas muy suaves, de uso exclusivo del aula."
+      },
+      {
+        "gl": "Unha cesta baixa e aberta para que collan por si mesmas.",
+        "es": "Una cesta baja y abierta para que cojan por sí mismas."
+      },
+      {
+        "gl": "Un espello irrompible fixado á parede, á altura dos seus ollos.",
+        "es": "Un espejo irrompible fijado a la pared, a la altura de sus ojos."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Sentar en círculo e pasar a cesta amodo, sen présa por que todas toquen.",
+        "es": "Sentarse en círculo y pasar la cesta despacio, sin prisa por que todas toquen."
+      },
+      {
+        "gl": "Pasar a tea polo dorso da man de quen o pida, nomeando a textura.",
+        "es": "Pasar la tela por el dorso de la mano de quien lo pida, nombrando la textura."
+      },
+      {
+        "gl": "Ofrecer o pincel só a quen estende a man: ninguén é tocado sen pedilo.",
+        "es": "Ofrecer el pincel solo a quien extiende la mano: nadie es tocado sin pedirlo."
+      },
+      {
+        "gl": "Rematar mirándose no espello e dicindo adeus coa man.",
+        "es": "Terminar mirándose en el espejo y diciendo adiós con la mano."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. As teas deben superar os 20 cm por lado, sen fíos soltos, botóns nin lentexoulas, e lávanse despois de cada sesión. Retírese calquera peza que se desfía.",
+      "es": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. Las telas deben superar los 20 cm por lado, sin hilos sueltos, botones ni lentejuelas, y se lavan después de cada sesión. Retírese cualquier pieza que se deshilache."
+    },
+    "objetivoSensorial": {
+      "gl": "Estimular o tacto fino da man e a tolerancia ao contacto elixido.",
+      "es": "Estimular el tacto fino de la mano y la tolerancia al contacto elegido."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Un e moitos: os zapatos do círculo",
+      "es": "Uno y muchos: los zapatos del círculo"
+    },
+    "descripcion": {
+      "gl": "Primeira noción de cantidade cos obxectos propios: un zapato na man e moitos zapatos no chan do círculo.",
+      "es": "Primera noción de cantidad con los objetos propios: un zapato en la mano y muchos zapatos en el suelo del círculo."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Erguer un zapato e dicir 'un', logo sinalar o montón e dicir 'moitos'.",
+        "es": "Levantar un zapato y decir 'uno', luego señalar el montón y decir 'muchos'."
+      },
+      {
+        "gl": "Pedir que cada crianza traia o seu e comprobar xuntas que a cada pé lle toca un.",
+        "es": "Pedir que cada criatura traiga el suyo y comprobar juntas que a cada pie le toca uno."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Un / Moitos, Meu / Teu, Dentro / Fóra",
+      "es": "Uno / Muchos, Mío / Tuyo, Dentro / Fuera"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe demos a benvida ao curso coa gata Lúa: saudamos coa man, tocamos teas suaves e aprendemos a dicir ola e adeus en inglés.",
+      "es": "Hoy dimos la bienvenida al curso con la gata Lúa: saludamos con la mano, tocamos telas suaves y aprendimos a decir hola y adiós en inglés."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "Ao poñer os zapatos pola mañá, erguer un pé de cada vez dicindo 'One shoe, two shoes, up! Push, push!'.",
+        "es": "Al poner los zapatos por la mañana, levantar un pie cada vez diciendo 'One shoe, two shoes, up! Push, push!'."
+      },
+      {
+        "gl": "Ao despedirse na porta da escola, facer sempre o mesmo xesto coa man: repetir a mesma despedida axuda máis ca alongala.",
+        "es": "Al despedirse en la puerta de la escuela, hacer siempre el mismo gesto con la mano: repetir la misma despedida ayuda más que alargarla."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "Nomear o que está a pasar mentres pasa, e agardar cinco segundos coa mirada posta. O silencio non é un oco: é o seu turno.",
+      "es": "Nombrar lo que está pasando mientras pasa, y esperar cinco segundos con la mirada puesta. El silencio no es un hueco: es su turno."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA3.1",
+      "CA3.2"
+    ]
+  },
+  "ingles": {
+    "frase": "One shoe, two shoes, up! Push, push!",
+    "porFase": {
+      "pulso": [
+        "Hello",
+        "Clap",
+        "Clap hands"
+      ],
+      "conto": [
+        "Hello",
+        "Backpack",
+        "Hand",
+        "Friend"
+      ],
+      "preguntas": [
+        "Hand",
+        "Gentle"
+      ],
+      "exploracion": [
+        "Gentle",
+        "Hand"
+      ],
+      "matematicas": [
+        "Shoe",
+        "Up",
+        "Down"
+      ],
+      "ponteCasa": [
+        "One shoe, two shoes, up! Push, push!",
+        "Bye-bye"
+      ]
+    },
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-13",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

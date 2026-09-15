@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+
+import '../../helpers/scroll_helpers.dart';
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/localization/localized_string.dart';
@@ -7,6 +9,7 @@ import 'package:descubre_con_lua/data/models/curricular_model.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
+import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
 
 void main() {
@@ -45,7 +48,8 @@ void main() {
             orden: 1,
             texto: LocalizedString(gl: 'Páxina 1', es: 'Página 1'),
             imagenAsset: 'assets/images/cuento/p1.png',
-            preguntaComprension: LocalizedString(gl: 'Pregunta?', es: '¿Pregunta?'),
+            preguntaComprension:
+                LocalizedString(gl: 'Pregunta?', es: '¿Pregunta?'),
           ),
         ],
       ),
@@ -72,7 +76,9 @@ void main() {
       ],
       exploracion: ExploracionSensorial(
         titulo: LocalizedString(gl: 'Exploración', es: 'Exploración'),
-        materiales: [LocalizedString(gl: 'Conchas > 5 cm', es: 'Conchas > 5 cm')],
+        materiales: [
+          LocalizedString(gl: 'Conchas > 5 cm', es: 'Conchas > 5 cm')
+        ],
         pasos: [LocalizedString(gl: 'Tocar', es: 'Tocar')],
         avisoSeguridad: LocalizedString(
           gl: 'ATENCIÓN: Pezas de tamaño superior a 4 cm. Supervisión adulta continua.',
@@ -81,15 +87,19 @@ void main() {
         objetivoSensorial: LocalizedString(gl: 'Tacto', es: 'Tacto'),
       ),
       matematicas: MatematicasTempras(
-        concepto: LocalizedString(gl: 'Grande / Pequeno', es: 'Grande / Pequeño'),
+        concepto:
+            LocalizedString(gl: 'Grande / Pequeno', es: 'Grande / Pequeño'),
         descripcion: LocalizedString(gl: 'Mates', es: 'Mates'),
         accionesSugeridas: [LocalizedString(gl: 'Agrupar', es: 'Agrupar')],
         vocabularioMatematico: LocalizedString(gl: 'Grande', es: 'Grande'),
       ),
       puenteCasa: PonteCasa(
         mensajeFamilias: LocalizedString(gl: 'Mensaxe', es: 'Mensaje'),
-        actividadesSugeridas: [LocalizedString(gl: 'Actividade', es: 'Actividad')],
-        recomendacionConversacion: LocalizedString(gl: 'Conversa', es: 'Conversación'),
+        actividadesSugeridas: [
+          LocalizedString(gl: 'Actividade', es: 'Actividad')
+        ],
+        recomendacionConversacion:
+            LocalizedString(gl: 'Conversa', es: 'Conversación'),
       ),
       curriculo: CurricularReference(
         normativa: 'Decreto 150/2022',
@@ -111,14 +121,16 @@ void main() {
       id: 'test.monte.01',
       tramoEtario: '2-3',
       orden: 2,
-      titulo: const LocalizedString(gl: 'Monte do Castro 2-3', es: 'Monte del Castro 2-3'),
+      titulo: const LocalizedString(
+          gl: 'Monte do Castro 2-3', es: 'Monte del Castro 2-3'),
     );
 
     testUnidad0to3 = testUnidad0to2.copyWith(
       id: 'test.global.01',
       tramoEtario: '0-3',
       orden: 3,
-      titulo: const LocalizedString(gl: 'Vigo Global 0-3', es: 'Vigo Global 0-3'),
+      titulo:
+          const LocalizedString(gl: 'Vigo Global 0-3', es: 'Vigo Global 0-3'),
     );
 
     repository.addUnidad(testUnidad0to2);
@@ -127,7 +139,9 @@ void main() {
   });
 
   group('Adversarial Suite 1: Phase Navigation Stress & Boundaries', () {
-    testWidgets('Boundary at Step 1: Previous button disabled (onPressed == null)', (tester) async {
+    testWidgets(
+        'Boundary at Step 1: Previous button disabled (onPressed == null)',
+        (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: AsambleaGuiadaScreen(
@@ -139,11 +153,15 @@ void main() {
       );
 
       expect(find.text('Fase 1 de 6'), findsOneWidget);
-      final prevBtn = tester.widget<OutlinedButton>(find.widgetWithText(OutlinedButton, 'Anterior'));
-      expect(prevBtn.onPressed, isNull, reason: 'Previous button MUST be disabled on Phase 1');
+      final prevBtn = tester.widget<OutlinedButton>(
+          find.widgetWithText(OutlinedButton, 'Anterior'));
+      expect(prevBtn.onPressed, isNull,
+          reason: 'Previous button MUST be disabled on Phase 1');
     });
 
-    testWidgets('Rapid back-and-forth transitions between steps 1..6 maintain bounded state', (tester) async {
+    testWidgets(
+        'Rapid back-and-forth transitions between steps 1..6 maintain bounded state',
+        (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: AsambleaGuiadaScreen(
@@ -189,15 +207,16 @@ void main() {
       expect(find.widgetWithText(ElevatedButton, 'Finalizar'), findsOneWidget);
     });
 
-    testWidgets('Phase 6 Finalizar stops audio, displays snackbar, and pops navigator', (tester) async {
+    testWidgets(
+        'Phase 6 Finalizar para o audio, ensina a nota para as casas e sae',
+        (tester) async {
       bool popped = false;
 
       await tester.pumpWidget(
         MaterialApp(
           home: Navigator(
-            onPopPage: (route, result) {
+            onDidRemovePage: (page) {
               popped = true;
-              return route.didPop(result);
             },
             pages: [
               MaterialPage(
@@ -228,12 +247,24 @@ void main() {
 
       expect(mockAudioService.callLog, contains('stop'));
       expect(mockAudioService.isPlaying, isFalse);
+
+      // Terminar la asamblea abre la NOTA PARA LAS CASAS. Es el puente: sin
+      // red, lo que llega a la familia es un mensaje que se copia, no una
+      // casilla en el móvil de alguien que no estuvo en el aula.
+      expect(find.text(NotaParaCasasScreen.titulo.gl), findsOneWidget);
+      expect(popped, isFalse, reason: 'La nota se enseña antes de salir.');
+
+      await tester.tap(find.byKey(const Key('boton_cerrar_nota')));
+      await tester.pumpAndSettle();
+
       expect(popped, isTrue);
     });
   });
 
   group('Adversarial Suite 2: Audio Controller Lifecycle & Auto-Pause', () {
-    testWidgets('Audio automatically pauses when moving from Phase 1 to Phase 2', (tester) async {
+    testWidgets(
+        'Audio automatically pauses when moving from Phase 1 to Phase 2',
+        (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: AsambleaGuiadaScreen(
@@ -245,7 +276,10 @@ void main() {
       );
 
       // Start audio in Phase 1
-      final playBtn = find.byIcon(Icons.play_arrow_rounded);
+      // The song step now carries two play controls: the audio one (an
+      // IconButton in the recording card) and the visual metronome's
+      // (an OutlinedButton). This targets the audio one.
+      final playBtn = find.widgetWithIcon(IconButton, Icons.play_arrow_rounded);
       await tester.tap(playBtn);
       await tester.pump();
       expect(mockAudioService.isPlaying, isTrue);
@@ -256,7 +290,8 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('Fase 2 de 6'), findsOneWidget);
-      expect(mockAudioService.isPlaying, isFalse, reason: 'Audio MUST pause when navigating away from Phase 1');
+      expect(mockAudioService.isPlaying, isFalse,
+          reason: 'Audio MUST pause when navigating away from Phase 1');
       expect(mockAudioService.callLog, contains('pause'));
 
       // Returning to Phase 1 does NOT auto-resume audio
@@ -265,10 +300,13 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('Fase 1 de 6'), findsOneWidget);
-      expect(mockAudioService.isPlaying, isFalse, reason: 'Audio MUST remain paused when returning to Phase 1');
+      expect(mockAudioService.isPlaying, isFalse,
+          reason: 'Audio MUST remain paused when returning to Phase 1');
     });
 
-    testWidgets('Audio stops and caller-injected service is NOT disposed when screen is disposed', (tester) async {
+    testWidgets(
+        'Audio stops and caller-injected service is NOT disposed when screen is disposed',
+        (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
@@ -298,7 +336,8 @@ void main() {
       await tester.pumpAndSettle();
 
       // Start audio
-      await tester.tap(find.byIcon(Icons.play_arrow_rounded));
+      await tester
+          .tap(find.widgetWithIcon(IconButton, Icons.play_arrow_rounded));
       await tester.pump();
       expect(mockAudioService.isPlaying, isTrue);
 
@@ -311,12 +350,16 @@ void main() {
       expect(mockAudioService.callLog, contains('stop'));
 
       // Injected service MUST NOT be disposed (usable for next launch)
-      expect(() => mockAudioService.playAsset('assets/audio/mar_pulso_72bpm.wav'), returnsNormally);
+      expect(
+          () => mockAudioService.playAsset('assets/audio/mar_pulso_72bpm.wav'),
+          returnsNormally);
     });
   });
 
   group('Adversarial Suite 3: Age Filter Edge Cases in UnidadesListScreen', () {
-    testWidgets('Age filter correctly segregates 0-2, 2-3, and includes 0-3 in both', (tester) async {
+    testWidgets(
+        'Age filter correctly segregates 0-2, 2-3, and includes 0-3 in both',
+        (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: UnidadesListScreen(
@@ -327,37 +370,41 @@ void main() {
         ),
       );
 
-      // Default: 'Todas as idades' shows all 3
-      expect(find.text('Mar de Vigo 0-2'), findsOneWidget);
-      expect(find.text('Monte do Castro 2-3'), findsOneWidget);
-      expect(find.text('Vigo Global 0-3'), findsOneWidget);
+      // Default: 'Todas as idades' shows all 3. The third card falls below the
+      // fold on the test surface, so the test scrolls the way a teacher would.
+      await expectAfterScrolling(tester, find.text('Mar de Vigo 0-2'));
+      await expectAfterScrolling(tester, find.text('Monte do Castro 2-3'));
+      await expectAfterScrolling(tester, find.text('Vigo Global 0-3'));
 
       // Select '0-2 anos'
       await tester.tap(find.text('0-2 anos'));
       await tester.pumpAndSettle();
 
-      expect(find.text('Mar de Vigo 0-2'), findsOneWidget);
-      expect(find.text('Vigo Global 0-3'), findsOneWidget, reason: '0-3 unit must match 0-2 filter');
-      expect(find.text('Monte do Castro 2-3'), findsNothing, reason: '2-3 unit must be excluded in 0-2 filter');
+      await expectAfterScrolling(tester, find.text('Mar de Vigo 0-2'));
+      await expectAfterScrolling(tester, find.text('Vigo Global 0-3'));
+      expect(find.text('Monte do Castro 2-3'), findsNothing,
+          reason: '2-3 unit must be excluded in 0-2 filter');
 
       // Select '2-3 anos'
       await tester.tap(find.text('2-3 anos'));
       await tester.pumpAndSettle();
 
-      expect(find.text('Monte do Castro 2-3'), findsOneWidget);
-      expect(find.text('Vigo Global 0-3'), findsOneWidget, reason: '0-3 unit must match 2-3 filter');
-      expect(find.text('Mar de Vigo 0-2'), findsNothing, reason: '0-2 unit must be excluded in 2-3 filter');
+      await expectAfterScrolling(tester, find.text('Monte do Castro 2-3'));
+      await expectAfterScrolling(tester, find.text('Vigo Global 0-3'));
+      expect(find.text('Mar de Vigo 0-2'), findsNothing,
+          reason: '0-2 unit must be excluded in 2-3 filter');
 
       // Back to 'Todas as idades'
       await tester.tap(find.text('Todas as idades'));
       await tester.pumpAndSettle();
 
-      expect(find.text('Mar de Vigo 0-2'), findsOneWidget);
-      expect(find.text('Monte do Castro 2-3'), findsOneWidget);
-      expect(find.text('Vigo Global 0-3'), findsOneWidget);
+      await expectAfterScrolling(tester, find.text('Mar de Vigo 0-2'));
+      await expectAfterScrolling(tester, find.text('Monte do Castro 2-3'));
+      await expectAfterScrolling(tester, find.text('Vigo Global 0-3'));
     });
 
-    testWidgets('Empty repository shows friendly empty state without crash', (tester) async {
+    testWidgets('Empty repository shows friendly empty state without crash',
+        (tester) async {
       final emptyRepo = ContentRepository();
 
       await tester.pumpWidget(
@@ -370,12 +417,15 @@ void main() {
         ),
       );
 
-      expect(find.text('Non se atoparon unidades para este tramo de idade.'), findsOneWidget);
+      expect(find.text('Non se atoparon unidades para este tramo de idade.'),
+          findsOneWidget);
     });
   });
 
   group('Adversarial Suite 4: Safety Alert Enforcement in Phase 4', () {
-    testWidgets('Phase 4 safety alert card is prominent, non-dismissible, and enforces piece size', (tester) async {
+    testWidgets(
+        'Phase 4 safety alert card is prominent, non-dismissible, and enforces piece size',
+        (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: AsambleaGuiadaScreen(
@@ -399,9 +449,10 @@ void main() {
       expect(find.text('Fase 4 de 6'), findsOneWidget);
 
       // Verify Safety Alert Banner
-      expect(find.text('⚠️ PROTOCOLO DE SEGURIDADE NA AULA'), findsOneWidget);
+      expect(find.text('PROTOCOLO DE SEGURIDADE NA AULA'), findsOneWidget);
       expect(find.byIcon(Icons.warning_amber_rounded), findsOneWidget);
-      expect(find.textContaining('Pezas de tamaño superior a 4 cm'), findsWidgets);
+      expect(
+          find.textContaining('Pezas de tamaño superior a 4 cm'), findsWidgets);
       expect(find.textContaining('Supervisión adulta continua'), findsWidgets);
 
       // Ensure no dismiss / close buttons exist for safety alert

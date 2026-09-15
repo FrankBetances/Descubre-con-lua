@@ -6,7 +6,7 @@ Execute Milestone 2 (Iteration 2) Remediation: resolve all issues identified by 
 ## 🔒 My Identity
 - Archetype: teamwork_preview_worker
 - Roles: implementer, qa, specialist (M2 Remediation Worker)
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m2_it2
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m2_it2
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: M2 Iteration 2 Remediation
 

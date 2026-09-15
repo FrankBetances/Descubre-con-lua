@@ -29,7 +29,7 @@
 ## 1. Observation
 
 ### 1.1 Integrity Mode & Ground-Truth Baseline
-Direct inspection of `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md`:
+Direct inspection of `<documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md`:
 - Line 8: `Integrity mode: development`
 - Lines 12-21: Mandates package ID `com.earlify.descubreconlua`, clean architecture in `lib/core/`, zero `android.permission.INTERNET`, and zero network dependencies in `pubspec.yaml` and `lib/`.
 

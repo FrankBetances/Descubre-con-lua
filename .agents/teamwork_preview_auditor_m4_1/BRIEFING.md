@@ -6,7 +6,7 @@ Perform comprehensive forensic integrity audit for Milestone 4 (Master Verificat
 ## 🔒 My Identity
 - Archetype: teamwork_preview_auditor
 - Roles: [critic, specialist, auditor]
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_auditor_m4_1/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_auditor_m4_1/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Target: Milestone 4 (Master Verification & Final Release)
 

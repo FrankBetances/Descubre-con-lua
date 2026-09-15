@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Descubre con Lúa · Edición Vigo</title>
+<meta name="description" content="Recurso educativo sen conexión para as escolas infantís municipais de Vigo e as súas familias (0-3 anos).">
+<style>
+  :root {
+    --primary: #1B4965;
+    --secondary: #62B6CB;
+    --bg: #F4F1DE;
+    --card-bg: #FFFFFF;
+    --text: #2B2D42;
+    --text-muted: #4A4E69;
+    --border: #E0DDCF;
+    --badge-bg: #E8F4F8;
+    --success: #2A9D8F;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    padding: 24px 16px;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 40px 32px;
+    box-shadow: 0 4px 20px rgba(27, 73, 101, 0.08);
+    border: 1px solid var(--border);
+  }
+  header { border-bottom: 2px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
+  .brand-tag {
+    display: inline-block; background: var(--badge-bg); color: var(--primary);
+    font-weight: 700; font-size: 0.85rem; text-transform: uppercase;
+    letter-spacing: 0.05em; padding: 6px 12px; border-radius: 6px; margin-bottom: 12px;
+  }
+  h1 { color: var(--primary); font-size: 2.1rem; line-height: 1.25; margin-bottom: 8px; }
+  .meta-info { color: var(--text-muted); font-size: 0.95rem; }
+  .lang-switcher { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+  .lang-btn {
+    background: #EAE6D6; border: 1px solid var(--border); padding: 6px 14px;
+    border-radius: 20px; font-size: 0.9rem; font-weight: 600; cursor: pointer;
+    color: var(--text); transition: all 0.2s ease;
+  }
+  .lang-btn.active, .lang-btn:hover { background: var(--primary); color: #fff; }
+  h2 { color: var(--primary); font-size: 1.3rem; margin: 32px 0 12px; }
+  p { margin-bottom: 14px; }
+  .modules { display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0; }
+  .module {
+    flex: 1 1 260px; border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px; background: #FCFBF6;
+  }
+  .module h3 { color: var(--primary); font-size: 1.05rem; margin-bottom: 8px; }
+  .module p { font-size: 0.95rem; color: var(--text-muted); margin: 0; }
+  ul { margin: 0 0 16px 22px; }
+  li { margin-bottom: 8px; }
+  .callout {
+    border-left: 4px solid var(--success); background: #F0F8F7;
+    padding: 16px 18px; border-radius: 8px; margin: 20px 0;
+  }
+  .callout strong { color: var(--primary); }
+  a { color: var(--primary); }
+  footer {
+    margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border);
+    font-size: 0.9rem; color: var(--text-muted);
+  }
+  code { background: var(--badge-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+  @media (max-width: 520px) {
+    .container { padding: 28px 20px; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+    <img src="app_icon.png" alt="Icono oficial de Lúa (Descubre con Lúa)" style="width: 96px; height: 96px; border-radius: 20px; box-shadow: 0 4px 14px rgba(27, 73, 101, 0.18); flex-shrink: 0;" />
+    <div style="flex: 1; min-width: 260px;">
+      <span class="brand-tag">Escolas Infantís Municipais de Vigo</span>
+      <h1>Descubre con Lúa · Edición Vigo</h1>
+      <p class="meta-info">
+        Aplicación Android educativa sen conexión (<code>com.earlify.descubreconlua</code>)<br>
+        Primeiro ciclo de educación infantil · 0-3 anos
+      </p>
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLanguage('gl')">Galego</button>
+        <button class="lang-btn" onclick="setLanguage('es')">Castellano</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================= GALEGO ======================= -->
+  <div id="content-gl" class="lang-section">
+    <div class="callout">
+      <strong>Finalidade exclusivamente educativa.</strong> Non é un produto sanitario,
+      non avalía, non diagnostica nin trata ningunha condición. É material pedagóxico
+      para docentes e familias.
+    </div>
+
+    <h2>Que é</h2>
+    <p>
+      Un recurso para a asemblea da aula e para a casa, con todo o contido en galego e
+      castelán. Funciona enteiramente sen conexión: non hai contas, non hai rexistro e
+      non hai ningún dato que saia do aparello.
+    </p>
+
+    <h2>Dous módulos</h2>
+    <div class="modules">
+      <div class="module">
+        <h3>Juega con Lúa · Aula</h3>
+        <p>
+          Para a docente. Unidades temáticas da contorna de Vigo cunha asemblea guiada
+          paso a paso: canción a pulso, conto, preguntas graduadas, exploración sensorial
+          con aviso de seguridade, matemáticas temperás e ponte á casa.
+        </p>
+      </div>
+      <div class="module">
+        <h3>Academy · Familias</h3>
+        <p>
+          Para pais e nais. Cápsulas de lectura breve organizadas en cinco bloques de
+          desenvolvemento, cada unha con idea clave, por que importa, que facer na casa
+          e un exemplo cotián.
+        </p>
+      </div>
+    </div>
+
+    <h2>Como está pensada</h2>
+    <ul>
+      <li><strong>A crianza non usa a pantalla.</strong> A app é para a persoa adulta que acompaña.</li>
+      <li><strong>Sen recollida de datos.</strong> Cero datos persoais, cero analítica, cero publicidade.</li>
+      <li><strong>Sen permiso de internet.</strong> O paquete de instalación non inclúe <code>android.permission.INTERNET</code>.</li>
+      <li><strong>Sen pantallas chamativas.</strong> Deseño sobrio, sen gamificación nin animacións deseñadas para captar a atención infantil.</li>
+      <li><strong>Bilingüe de verdade.</strong> Todo o contido existe en galego e en castelán, non como tradución automática.</li>
+    </ul>
+
+    <h2>Privacidade</h2>
+    <p>
+      A política completa está en <a href="privacy.html">privacy.html</a>, en galego,
+      castelán e inglés.
+    </p>
+
+    <h2>Contacto</h2>
+    <p>
+      Dr. Frank Alberto Betances Reinoso<br>
+      <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a>
+    </p>
+  </div>
+
+  <!-- ======================= CASTELLANO ======================= -->
+  <div id="content-es" class="lang-section" style="display: none;">
+    <div class="callout">
+      <strong>Finalidad exclusivamente educativa.</strong> No es un producto sanitario,
+      no evalúa, no diagnostica ni trata ninguna condición. Es material pedagógico para
+      docentes y familias.
+    </div>
+
+    <h2>Qué es</h2>
+    <p>
+      Un recurso para la asamblea del aula y para casa, con todo el contenido en gallego
+      y castellano. Funciona enteramente sin conexión: no hay cuentas, no hay registro y
+      no hay ningún dato que salga del dispositivo.
+    </p>
+
+    <h2>Dos módulos</h2>
+    <div class="modules">
+      <div class="module">
+        <h3>Juega con Lúa · Aula</h3>
+        <p>
+          Para la docente. Unidades temáticas del entorno de Vigo con una asamblea guiada
+          paso a paso: canción a pulso, cuento, preguntas graduadas, exploración sensorial
+          con aviso de seguridad, matemáticas tempranas y puente a casa.
+        </p>
+      </div>
+      <div class="module">
+        <h3>Academy · Familias</h3>
+        <p>
+          Para padres y madres. Cápsulas de lectura breve organizadas en cinco bloques de
+          desarrollo, cada una con idea clave, por qué importa, qué hacer en casa y un
+          ejemplo cotidiano.
+        </p>
+      </div>
+    </div>
+
+    <h2>Cómo está pensada</h2>
+    <ul>
+      <li><strong>El niño no usa la pantalla.</strong> La app es para la persona adulta que acompaña.</li>
+      <li><strong>Sin recogida de datos.</strong> Cero datos personales, cero analítica, cero publicidad.</li>
+      <li><strong>Sin permiso de internet.</strong> El paquete de instalación no incluye <code>android.permission.INTERNET</code>.</li>
+      <li><strong>Sin pantallas llamativas.</strong> Diseño sobrio, sin gamificación ni animaciones diseñadas para captar la atención infantil.</li>
+      <li><strong>Bilingüe de verdad.</strong> Todo el contenido existe en gallego y en castellano, no como traducción automática.</li>
+    </ul>
+
+    <h2>Privacidad</h2>
+    <p>
+      La política completa está en <a href="privacy.html">privacy.html</a>, en gallego,
+      castellano e inglés.
+    </p>
+
+    <h2>Contacto</h2>
+    <p>
+      Dr. Frank Alberto Betances Reinoso<br>
+      <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    Descubre con Lúa · <code>com.earlify.descubreconlua</code> · Vigo, Galicia
+  </footer>
+</div>
+
+<script>
+  function setLanguage(lang) {
+    document.querySelectorAll('.lang-section').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('content-' + lang).style.display = 'block';
+    document.documentElement.lang = lang;
+    event.currentTarget.classList.add('active');
+  }
+</script>
+</body>
+</html>

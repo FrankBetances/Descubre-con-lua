@@ -7,7 +7,7 @@
 
 ## 1. Executive Summary
 
-This investigation surveys the workspace at `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa`, assesses the host system environment, evaluates the technical and architectural requirements for R1 (Project structure, Android package ID, privacy, clean architecture, offline audio, and testing setup), and provides actionable specifications and code blueprints for implementation.
+This investigation surveys the workspace at `<documentos locales>/Descubre con Lúa`, assesses the host system environment, evaluates the technical and architectural requirements for R1 (Project structure, Android package ID, privacy, clean architecture, offline audio, and testing setup), and provides actionable specifications and code blueprints for implementation.
 
 ### Key Survey Discoveries
 1. **Initial Workspace**: The project root currently contains only `.git`, `.gitignore`, `README.md`, `ORIGINAL_REQUEST.md`, and `.agents/`. There is NO existing Flutter project scaffolding, no `pubspec.yaml`, no `android/`, no `lib/`, and no `test/` directory.
@@ -37,9 +37,9 @@ This investigation surveys the workspace at `/Users/frankalbertobetancesreinoso/
 ## 2. Workspace Status & Directory Inspection
 
 ### 2.1 File System Audit of Project Root
-Inspection of `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa` revealed:
+Inspection of `<documentos locales>/Descubre con Lúa` revealed:
 ```
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/
+<documentos locales>/Descubre con Lúa/
 ├── .agents/                      (Metadata for orchestrator and explorers)
 ├── .git/                         (Initialized Git repository)
 ├── .gitignore                    (Standard ignore file: node_modules, dist, build, .env)
@@ -50,9 +50,9 @@ Inspection of `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre co
 **Observation**: The workspace is completely greenfield. No Flutter files exist.
 
 ### 2.2 Sibling Project References
-A scan of `/Users/frankalbertobetancesreinoso/Documentos locales/` confirmed the presence of:
-- `/Users/frankalbertobetancesreinoso/Documentos locales/Valeria`: The React Native / Expo repository containing original Academy modules (`src/ValeriaAcademy/academyTypes.ts`, `academyContent.ts`), Galician voice manifests (`voice-assets-manifest.gl.json`), and 3,658 offline audio recordings (`assets/voice/*.m4a`).
-- `/Users/frankalbertobetancesreinoso/Documentos locales/Proyecto Lua`: Firmware and 3D assets for the Lúa companion.
+A scan of `<documentos locales>/` confirmed the presence of:
+- `<repositorio del proyecto anterior de la casa>`: The React Native / Expo repository containing original Academy modules (`<módulo del proyecto anterior>`, `<fichero del proyecto anterior>`), Galician voice manifests (`voice-assets-manifest.gl.json`), and 3,658 offline audio recordings (`assets/voice/*.m4a`).
+- `<documentos locales>/Proyecto Lua`: Firmware and 3D assets for the Lúa companion.
 
 ---
 

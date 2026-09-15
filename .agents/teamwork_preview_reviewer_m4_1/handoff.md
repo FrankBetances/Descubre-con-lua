@@ -4,7 +4,7 @@
 **Parent**: `parent` (`155c43c0-be2b-46ce-b47d-cc280903c77f`)  
 **Target Milestone**: Milestone 4 (Master Verification & End-to-End Test Suite)  
 **Project**: «Descubre con Lúa · Edición Vigo» (`com.earlify.descubreconlua`)  
-**Project Root**: `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa`  
+**Project Root**: `<documentos locales>/Descubre con Lúa`  
 **Timestamp**: 2026-09-11T14:09:00Z  
 **Verdict**: **REQUEST_CHANGES**  
 
@@ -61,7 +61,7 @@
   ```
   **Observation**: No `timeout` parameter is passed to `subprocess.run()`.
 - Global repository search for `timeout`:
-  `grep_search` across `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa` returned `0` matches.
+  `grep_search` across `<documentos locales>/Descubre con Lúa` returned `0` matches.
 
 ### 1.3 Inspection of Worker M4 Handoff Claims
 - In `.agents/teamwork_preview_worker_m4/handoff.md` line 23:

@@ -1,0 +1,379 @@
+{
+  "id": "juega.animais.01",
+  "tramoEtario": "0-3",
+  "orden": 6,
+  "titulo": {
+    "gl": "Animais do Entroido",
+    "es": "Animales del Entroido"
+  },
+  "subtitulo": {
+    "gl": "Unidade de locomoción zoomorfa e xogo simbólico",
+    "es": "Unidad de locomoción zoomorfa y juego simbólico"
+  },
+  "descripcion": {
+    "gl": "Unidade de febreiro: moverse como cada animal e soar como cada animal. O Entroido dá permiso para ser outro un rato, que é onde empeza o xogo simbólico.",
+    "es": "Unidad de febrero: moverse como cada animal y sonar como cada animal. El Entroido da permiso para ser otro un rato, que es donde empieza el juego simbólico."
+  },
+  "cancionPulso": {
+    "titulo": {
+      "gl": "Salta a ra, voa o paxaro",
+      "es": "Salta la rana, vuela el pájaro"
+    },
+    "letraConPulsos": {
+      "gl": "* Sal-ta * a ra, * sal-ta, * ri-bit!\n* Voa * o pa-xa-ro, * voa, * moi al-to!\n* An-da * o oso, * pum, * pum!\n* Dor-me * o ga-to, * miau, * e ca-la.",
+      "es": "* Sal-ta * la ra-na, * sal-ta, * ¡ri-bit!\n* Vue-la * el pá-ja-ro, * vue-la, * ¡muy al-to!\n* An-da * el o-so, * pum, * ¡pum!\n* Duer-me * el ga-to, * miau, * y ca-lla."
+    },
+    "bpm": 72,
+    "consignaDocente": {
+      "gl": "Cada liña cambia de altura: a ra no chan, o paxaro de pé, o oso pesado, o gato deitado. Acábase sempre abaixo.",
+      "es": "Cada línea cambia de altura: la rana en el suelo, el pájaro de pie, el oso pesado, el gato tumbado. Se acaba siempre abajo."
+    },
+    "audioAsset": {
+      "gl": "assets/voice/gl_tutor_db930d0a_146.m4a",
+      "es": "assets/voice/es_tutor_72c7916b_165.m4a"
+    }
+  },
+  "cuento": {
+    "titulo": {
+      "gl": "Lúa disfrázase no Entroido",
+      "es": "Lúa se disfraza en el Entroido"
+    },
+    "paginas": [
+      {
+        "orden": 1,
+        "texto": {
+          "gl": "É Entroido e a gata Lúa quere ser outra cousa. Ponse unhas patas verdes e salta polo chan: ribit, ribit!",
+          "es": "Es Entroido y la gata Lúa quiere ser otra cosa. Se pone unas patas verdes y salta por el suelo: ¡ribit, ribit!"
+        },
+        "preguntaComprension": {
+          "gl": "De que se disfrazou Lúa? Saltamos nós tamén?",
+          "es": "¿De qué se disfrazó Lúa? ¿Saltamos nosotros también?"
+        },
+        "ingles": [
+          "Frog",
+          "Jump",
+          "Jump like a frog"
+        ],
+        "lamina": "conto_animais_1"
+      },
+      {
+        "orden": 2,
+        "texto": {
+          "gl": "Despois abre os brazos coma ás e voa de puntillas arredor da alfombra, moi lixeira.",
+          "es": "Después abre los brazos como alas y vuela de puntillas alrededor de la alfombra, muy ligera."
+        },
+        "preguntaComprension": {
+          "gl": "Que animal é agora? Voa forte ou lixeiro?",
+          "es": "¿Qué animal es ahora? ¿Vuela fuerte o ligero?"
+        },
+        "ingles": [
+          "Bird",
+          "Fly",
+          "Fly like a bird"
+        ],
+        "lamina": "conto_animais_2"
+      },
+      {
+        "orden": 3,
+        "texto": {
+          "gl": "Ao final Lúa pisa pesado coma un oso, pum, pum, e despois enróscase e volve ser gata: miau.",
+          "es": "Al final Lúa pisa pesado como un oso, pum, pum, y después se enrosca y vuelve a ser gata: miau."
+        },
+        "preguntaComprension": {
+          "gl": "Como pisa o oso? E como acaba Lúa?",
+          "es": "¿Cómo pisa el oso? ¿Y cómo acaba Lúa?"
+        },
+        "ingles": [
+          "Bear",
+          "Cat",
+          "Stomp like a bear"
+        ],
+        "lamina": "conto_animais_3"
+      }
+    ]
+  },
+  "vocabulario": [
+    {
+      "id": "ra",
+      "palabra": {
+        "gl": "Ra",
+        "es": "Rana"
+      },
+      "definicionBreve": {
+        "gl": "Animal verde que salta e vive preto da auga.",
+        "es": "Animal verde que salta y vive cerca del agua."
+      },
+      "ingles": "Frog",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_5c04c9bc_2.m4a",
+        "es": "assets/voice/es_slow_26c973d5_4.m4a"
+      },
+      "lamina": "ra"
+    },
+    {
+      "id": "paxaro",
+      "palabra": {
+        "gl": "Paxaro",
+        "es": "Pájaro"
+      },
+      "definicionBreve": {
+        "gl": "Animal con ás que voa e canta nas árbores.",
+        "es": "Animal con alas que vuela y canta en los árboles."
+      },
+      "ingles": "Bird",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_944de63e_6.m4a",
+        "es": "assets/voice/es_slow_d58ca0b4_6.m4a"
+      },
+      "lamina": "paxaro"
+    },
+    {
+      "id": "oso",
+      "palabra": {
+        "gl": "Oso",
+        "es": "Oso"
+      },
+      "definicionBreve": {
+        "gl": "Animal grande e pesado que anda moi a modo.",
+        "es": "Animal grande y pesado que anda muy despacio."
+      },
+      "ingles": "Bear",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_26ab0588_3.m4a",
+        "es": "assets/voice/es_slow_26ab0588_3.m4a"
+      },
+      "lamina": "oso"
+    },
+    {
+      "id": "gato",
+      "palabra": {
+        "gl": "Gato",
+        "es": "Gato"
+      },
+      "definicionBreve": {
+        "gl": "Animal suave que fai miau e dorme moito, coma Lúa.",
+        "es": "Animal suave que hace miau y duerme mucho, como Lúa."
+      },
+      "ingles": "Cat",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_9c8d40a4_4.m4a",
+        "es": "assets/voice/es_slow_9c8d40a4_4.m4a"
+      },
+      "lamina": "gato"
+    },
+    {
+      "id": "careta",
+      "palabra": {
+        "gl": "Careta",
+        "es": "Careta"
+      },
+      "definicionBreve": {
+        "gl": "O que se pon na cara no Entroido para ser outro un rato.",
+        "es": "Lo que se pone en la cara en el Entroido para ser otro un rato."
+      },
+      "ingles": "Mask",
+      "audioAsset": {
+        "gl": "assets/voice/gl_slow_7c27a38b_6.m4a",
+        "es": "assets/voice/es_slow_7c27a38b_6.m4a"
+      },
+      "lamina": "careta"
+    }
+  ],
+  "preguntas": [
+    {
+      "nivel": 1,
+      "enunciado": {
+        "gl": "Cal destes dous salta: a ra ou o oso?",
+        "es": "¿Cuál de estos dos salta: la rana o el oso?"
+      },
+      "respuestaSugerida": {
+        "gl": "Sinalar a ra, saltar no sitio ou dicir 'ribit'.",
+        "es": "Señalar la rana, saltar en el sitio o decir 'ribit'."
+      },
+      "consejoDocente": {
+        "gl": "Facer a pregunta con dous bonecos na man, un en cada lado.",
+        "es": "Hacer la pregunta con dos muñecos en la mano, uno en cada lado."
+      }
+    },
+    {
+      "nivel": 2,
+      "enunciado": {
+        "gl": "Que son fai o gato?",
+        "es": "¿Qué sonido hace el gato?"
+      },
+      "respuestaSugerida": {
+        "gl": "Dicir 'miau' ou calquera aproximación.",
+        "es": "Decir 'miau' o cualquier aproximación."
+      },
+      "consejoDocente": {
+        "gl": "As onomatopeas adoitan chegar antes ca o nome do animal. Son a mesma conquista.",
+        "es": "Las onomatopeyas suelen llegar antes que el nombre del animal. Son la misma conquista."
+      }
+    },
+    {
+      "nivel": 3,
+      "enunciado": {
+        "gl": "Lúa é unha ra de verdade cando se pon as patas verdes?",
+        "es": "¿Lúa es una rana de verdad cuando se pone las patas verdes?"
+      },
+      "respuestaSugerida": {
+        "gl": "Non: só o parece, está a xogar.",
+        "es": "No: solo lo parece, está jugando."
+      },
+      "consejoDocente": {
+        "gl": "É a primeira conversa sobre o 'como se'. Se alguén ten medo da careta, quítase e ponse na man, nunca na cara.",
+        "es": "Es la primera conversación sobre el 'como si'. Si alguien tiene miedo de la careta, se quita y se pone en la mano, nunca en la cara."
+      }
+    }
+  ],
+  "exploracion": {
+    "titulo": {
+      "gl": "Circuíto de animais",
+      "es": "Circuito de animales"
+    },
+    "materiales": [
+      {
+        "gl": "Catro aros planos de goma para marcar os saltos da ra.",
+        "es": "Cuatro aros planos de goma para marcar los saltos de la rana."
+      },
+      {
+        "gl": "Pañuelos lixeiros para as ás do paxaro.",
+        "es": "Pañuelos ligeros para las alas del pájaro."
+      },
+      {
+        "gl": "Colchonetas para o tramo do oso, que vai pesado.",
+        "es": "Colchonetas para el tramo del oso, que va pesado."
+      },
+      {
+        "gl": "Caretas de cartón suxeitas a un pau, para poñer diante e non na cara.",
+        "es": "Caretas de cartón sujetas a un palo, para poner delante y no en la cara."
+      }
+    ],
+    "pasos": [
+      {
+        "gl": "Facer o circuíto enteiro a mestra primeiro, coas crianzas mirando.",
+        "es": "Hacer el circuito entero la maestra primero, con las criaturas mirando."
+      },
+      {
+        "gl": "Saltar de aro en aro coas dúas mans dadas a quen o precise.",
+        "es": "Saltar de aro en aro con las dos manos dadas a quien lo necesite."
+      },
+      {
+        "gl": "Cruzar a alfombra de puntillas movendo os pañuelos coma ás.",
+        "es": "Cruzar la alfombra de puntillas moviendo los pañuelos como alas."
+      },
+      {
+        "gl": "Rematar deitadas na colchoneta, enroscadas coma gatos.",
+        "es": "Terminar tumbadas en la colchoneta, enroscadas como gatos."
+      }
+    ],
+    "avisoSeguridad": {
+      "gl": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante. As caretas NON se poñen na cara de ningunha crianza: van suxeitas a un pau e sostéñense diante, porque tapan a visión e asustan. Os aros van planos no chan, nunca de pé. Despéxese a zona de cantos duros e retírese o circuíto ao rematar.",
+      "es": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. Las caretas NO se ponen en la cara de ninguna criatura: van sujetas a un palo y se sostienen delante, porque tapan la visión y asustan. Los aros van planos en el suelo, nunca de pie. Despéjese la zona de esquinas duras y retírese el circuito al terminar."
+    },
+    "objetivoSensorial": {
+      "gl": "Traballar o equilibrio, o salto con dous pés e o cambio de altura corporal.",
+      "es": "Trabajar el equilibrio, el salto con dos pies y el cambio de altura corporal."
+    }
+  },
+  "matematicas": {
+    "concepto": {
+      "gl": "Pesado e lixeiro: o oso e o paxaro",
+      "es": "Pesado y ligero: el oso y el pájaro"
+    },
+    "descripcion": {
+      "gl": "O peso séntese no propio corpo antes ca na balanza: pisar coma un oso e cruzar coma un paxaro son dúas cantidades de forza distintas.",
+      "es": "El peso se siente en el propio cuerpo antes que en la balanza: pisar como un oso y cruzar como un pájaro son dos cantidades de fuerza distintas."
+    },
+    "accionesSugeridas": [
+      {
+        "gl": "Pisar forte todos á vez e escoitar como retumba o chan.",
+        "es": "Pisar fuerte todos a la vez y escuchar cómo retumba el suelo."
+      },
+      {
+        "gl": "Cruzar de puntillas sen facer ruído ningún, e comparar.",
+        "es": "Cruzar de puntillas sin hacer ningún ruido, y comparar."
+      }
+    ],
+    "vocabularioMatematico": {
+      "gl": "Pesado / Lixeiro, Alto / Baixo, Moitos / Un",
+      "es": "Pesado / Ligero, Alto / Bajo, Muchos / Uno"
+    }
+  },
+  "puenteCasa": {
+    "mensajeFamilias": {
+      "gl": "Hoxe celebramos o Entroido coa gata Lúa: saltamos como ras, voamos como paxaros, pisamos como osos e acabamos durmindo como gatos.",
+      "es": "Hoy celebramos el Entroido con la gata Lúa: saltamos como ranas, volamos como pájaros, pisamos como osos y acabamos durmiendo como gatos."
+    },
+    "actividadesSugeridas": [
+      {
+        "gl": "Na alfombra da casa, gatear suave e saltar dicindo 'Sleepy cat, meow! Jump, frog!'.",
+        "es": "En la alfombra de casa, gatear suave y saltar diciendo 'Sleepy cat, meow! Jump, frog!'."
+      },
+      {
+        "gl": "De camiño ao parque, buscar un paxaro de verdade e quedar quietos mirándoo ata que voe.",
+        "es": "De camino al parque, buscar un pájaro de verdad y quedarse quietos mirándolo hasta que vuele."
+      }
+    ],
+    "recomendacionConversacion": {
+      "gl": "Se a careta ou o disfrace dan medo, non se insiste nin se ri. Gárdase e próbase noutro momento, ou nunca.",
+      "es": "Si la careta o el disfraz dan miedo, no se insiste ni se ríe. Se guarda y se prueba en otro momento, o nunca."
+    }
+  },
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_2_descubrimento_contorna",
+      "area_3_comunicacion_representacion"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.1",
+      "CA2.1",
+      "CA3.1"
+    ]
+  },
+  "ingles": {
+    "frase": "Sleepy cat, meow! Jump, frog!",
+    "porFase": {
+      "pulso": [
+        "Jump",
+        "Fly",
+        "Jump like a frog"
+      ],
+      "conto": [
+        "Frog",
+        "Bird",
+        "Bear",
+        "Cat"
+      ],
+      "preguntas": [
+        "Frog",
+        "Cat"
+      ],
+      "exploracion": [
+        "Jump like a frog",
+        "Fly like a bird",
+        "Stomp like a bear"
+      ],
+      "matematicas": [
+        "Bear",
+        "Bird"
+      ],
+      "ponteCasa": [
+        "Sleepy cat, meow! Jump, frog!",
+        "Cat"
+      ]
+    },
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo."
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil 0-3 Galicia",
+    "fechaRevision": "2026-09-13",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

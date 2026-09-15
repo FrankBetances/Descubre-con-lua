@@ -1,0 +1,63 @@
+{
+  "vb": 100,
+  "nota": "Semente / Semilla bajo tierra, con la raíz y el primer brote asomando. Enseña lo que no se ve, que es de lo que habla la unidad.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M6 48 L94 48 L94 92 L6 92 Z",
+      "f": "#8b5a2b",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M6 48 C20 42 30 52 44 46 C58 40 70 52 82 46 C88 44 92 46 94 48",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 66,
+      "rx": 13,
+      "ry": 16,
+      "f": "#c89666",
+      "s": "#4a2c11",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M50 82 C48 88 42 90 38 92 M50 82 C54 88 60 90 64 92 M50 82 L50 92",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M50 50 C50 36 50 26 50 18",
+      "s": "#2ecc40",
+      "sw": 6
+    },
+    {
+      "t": "ruta",
+      "d": "M50 26 C60 18 72 20 76 26 C68 34 56 34 50 30 Z",
+      "f": "#2ecc40",
+      "s": "#1b7a2b",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M50 36 C40 28 28 30 24 36 C32 44 44 44 50 40 Z",
+      "f": "#84cc16",
+      "s": "#1b7a2b",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 45,
+      "cy": 60,
+      "rx": 5,
+      "ry": 7,
+      "f": "#ffffff44"
+    }
+  ]
+}

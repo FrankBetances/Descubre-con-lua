@@ -6,7 +6,7 @@ Survey the project root, Flutter/Dart toolchain, Android configuration, clean ar
 ## 🔒 My Identity
 - Archetype: teamwork_preview_explorer
 - Roles: Flutter Arch Explorer
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Survey Phase (M0)
 
@@ -24,8 +24,8 @@ Survey the project root, Flutter/Dart toolchain, Android configuration, clean ar
 
 ## Investigation State
 - **Explored paths**:
-  - `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa` (root listing, .gitignore, README.md, ORIGINAL_REQUEST.md)
-  - `/Users/frankalbertobetancesreinoso/Documentos locales/Valeria` (Academy models, Galician voice manifests, assets/voice)
+  - `<documentos locales>/Descubre con Lúa` (root listing, .gitignore, README.md, ORIGINAL_REQUEST.md)
+  - `<repositorio del proyecto anterior de la casa>` (Academy models, Galician voice manifests, assets/voice)
   - System PATH, Homebrew cellar, Java OpenJDK 17, Android Studio application
 - **Key findings**:
   - Root is greenfield workspace; no Flutter project exists yet.
@@ -42,9 +42,9 @@ Survey the project root, Flutter/Dart toolchain, Android configuration, clean ar
 - Formulated the exact testing suite architecture covering models, JSON loader, repository, validator, widget flows, and static privacy gates.
 
 ## Artifact Index
-- `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md` — Original user request
-- `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/DISPATCH.md` — Dispatch log
-- `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/BRIEFING.md` — Working memory
-- `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/progress.md` — Liveness & progress heartbeat
-- `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/analysis.md` — Comprehensive survey findings & blueprints
-- `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/handoff.md` — 5-component survey handoff report
+- `<documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md` — Original user request
+- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/DISPATCH.md` — Dispatch log
+- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/BRIEFING.md` — Working memory
+- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/progress.md` — Liveness & progress heartbeat
+- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/analysis.md` — Comprehensive survey findings & blueprints
+- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/handoff.md` — 5-component survey handoff report

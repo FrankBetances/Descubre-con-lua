@@ -3,6 +3,30 @@ import '../../core/localization/localized_string.dart';
 import 'curricular_model.dart';
 import 'unidad_model.dart' show Revision;
 
+/// Quién lee la cápsula.
+///
+/// Las cápsulas de Academy las lee una familia en casa; las del aula las lee
+/// la maestra antes o después de la asamblea. Es el mismo objeto y la misma
+/// estructura de cuatro secciones —la diferencia no da para dos modelos—, pero
+/// no la misma lista ni los mismos títulos de sección: a una maestra no se le
+/// dice «qué hacer en casa».
+enum DestinatarioCapsula {
+  /// Academy. Es el valor por defecto: las cinco cápsulas que ya existían no
+  /// declaran el campo y son todas de familia.
+  familia,
+
+  /// Juega con Lúa. Formación breve atada a los seis pasos de la asamblea.
+  docente;
+
+  String get clave => name;
+
+  static DestinatarioCapsula desdeClave(String? valor) =>
+      DestinatarioCapsula.values.firstWhere(
+        (d) => d.clave == valor?.trim(),
+        orElse: () => DestinatarioCapsula.familia,
+      );
+}
+
 /// Formative reflective statement (true/false) with immediate supportive feedback.
 @immutable
 class Afirmacion {
@@ -21,18 +45,22 @@ class Afirmacion {
   factory Afirmacion.fromJson(Map<String, dynamic> json) {
     return Afirmacion(
       id: json['id']?.toString().trim() ?? '',
-      enunciado: LocalizedString.fromJson(json['enunciado'] as Map<String, dynamic>? ?? {}),
-      esVerdadera: json['esVerdadera'] as bool? ?? json['es_verdadera'] as bool? ?? false,
-      explicacion: LocalizedString.fromJson(json['explicacion'] as Map<String, dynamic>? ?? {}),
+      enunciado: LocalizedString.fromJson(
+          json['enunciado'] as Map<String, dynamic>? ?? {}),
+      esVerdadera: json['esVerdadera'] as bool? ??
+          json['es_verdadera'] as bool? ??
+          false,
+      explicacion: LocalizedString.fromJson(
+          json['explicacion'] as Map<String, dynamic>? ?? {}),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'enunciado': enunciado.toJson(),
-    'esVerdadera': esVerdadera,
-    'explicacion': explicacion.toJson(),
-  };
+        'id': id,
+        'enunciado': enunciado.toJson(),
+        'esVerdadera': esVerdadera,
+        'explicacion': explicacion.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -76,26 +104,33 @@ class ContidoCapsula {
   factory ContidoCapsula.fromJson(Map<String, dynamic> json) {
     return ContidoCapsula(
       ideaClave: LocalizedString.fromJson(
-        (json['ideaClave'] ?? json['idea_clave']) as Map<String, dynamic>? ?? {},
+        (json['ideaClave'] ?? json['idea_clave']) as Map<String, dynamic>? ??
+            {},
       ),
       porQueImporta: LocalizedString.fromJson(
-        (json['porQueImporta'] ?? json['por_que_importa']) as Map<String, dynamic>? ?? {},
+        (json['porQueImporta'] ?? json['por_que_importa'])
+                as Map<String, dynamic>? ??
+            {},
       ),
       queHacerEnCasa: LocalizedString.fromJson(
-        (json['queHacerEnCasa'] ?? json['que_hacer_en_casa']) as Map<String, dynamic>? ?? {},
+        (json['queHacerEnCasa'] ?? json['que_hacer_en_casa'])
+                as Map<String, dynamic>? ??
+            {},
       ),
       ejemploCotidiano: LocalizedString.fromJson(
-        (json['ejemploCotidiano'] ?? json['ejemplo_cotidiano']) as Map<String, dynamic>? ?? {},
+        (json['ejemploCotidiano'] ?? json['ejemplo_cotidiano'])
+                as Map<String, dynamic>? ??
+            {},
       ),
     );
   }
 
   Map<String, dynamic> toJson() => {
-    'ideaClave': ideaClave.toJson(),
-    'porQueImporta': porQueImporta.toJson(),
-    'queHacerEnCasa': queHacerEnCasa.toJson(),
-    'ejemploCotidiano': ejemploCotidiano.toJson(),
-  };
+        'ideaClave': ideaClave.toJson(),
+        'porQueImporta': porQueImporta.toJson(),
+        'queHacerEnCasa': queHacerEnCasa.toJson(),
+        'ejemploCotidiano': ejemploCotidiano.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -138,7 +173,8 @@ class Bloque {
   static const String desarrolloComunicativoId = 'desarrollo_comunicativo';
   static const String rutinasYBanoDeLenguajeId = 'rutinas_y_bano_de_lenguaje';
   static const String turnosYAtencionConjuntaId = 'turnos_y_atencion_conjunta';
-  static const String juegoMovimientoSinPantallasId = 'juego_movimiento_sin_pantallas';
+  static const String juegoMovimientoSinPantallasId =
+      'juego_movimiento_sin_pantallas';
   static const String bilinguismoYCulturaId = 'bilinguismo_y_cultura';
 
   /// The 5 official developmental blocks of Academy.
@@ -215,10 +251,124 @@ class Bloque {
     ),
   ];
 
-  /// Resolves a block by its canonical ID.
+  static const String aulaPulsoId = 'aula_pulso';
+  static const String aulaContoId = 'aula_conto';
+  static const String aulaPreguntasId = 'aula_preguntas';
+  static const String aulaExploracionId = 'aula_exploracion';
+  static const String aulaMatematicasId = 'aula_matematicas';
+  static const String aulaPonteCasaId = 'aula_ponte_casa';
+
+  /// Los 6 bloques de las cápsulas del aula.
+  ///
+  /// No son temas elegidos a gusto: son EXACTAMENTE los seis pasos de la
+  /// asamblea, en su orden. Así la formación de la maestra no vive aparte de
+  /// lo que hace: la cápsula del pulso está al lado del paso del pulso, y si
+  /// mañana se añade o se quita un paso, salta a la vista que aquí falta o
+  /// sobra un bloque.
+  static const List<Bloque> aula = [
+    Bloque(
+      id: aulaPulsoId,
+      orden: 1,
+      titulo: LocalizedString(
+        gl: 'O pulso que se ve',
+        es: 'El pulso que se ve',
+      ),
+      descripcion: LocalizedString(
+        gl: 'Por que o metrónomo se debuxa e non se escoita, e como marcar o '
+            'pulso co corpo.',
+        es: 'Por qué el metrónomo se dibuja y no se oye, y cómo marcar el '
+            'pulso con el cuerpo.',
+      ),
+      icono: 'ear_sparkles',
+      colorHex: '#1B4965',
+    ),
+    Bloque(
+      id: aulaContoId,
+      orden: 2,
+      titulo: LocalizedString(
+        gl: 'Ler para quen aínda non fala',
+        es: 'Leer para quien todavía no habla',
+      ),
+      descripcion: LocalizedString(
+        gl: 'A voz, o dedo e as pausas: como se le un conto nunha asemblea de '
+            'cero a tres.',
+        es: 'La voz, el dedo y las pausas: cómo se lee un cuento en una '
+            'asamblea de cero a tres.',
+      ),
+      icono: 'chat_bubble_heart',
+      colorHex: '#62B6CB',
+    ),
+    Bloque(
+      id: aulaPreguntasId,
+      orden: 3,
+      titulo: LocalizedString(
+        gl: 'Preguntar sen examinar',
+        es: 'Preguntar sin examinar',
+      ),
+      descripcion: LocalizedString(
+        gl: 'Os tres niveis de pregunta e o silencio que vai despois.',
+        es: 'Los tres niveles de pregunta y el silencio que va después.',
+      ),
+      icono: 'people_arrows',
+      colorHex: '#5FA8D3',
+    ),
+    Bloque(
+      id: aulaExploracionId,
+      orden: 4,
+      titulo: LocalizedString(
+        gl: 'Poñer palabras ao que tocan',
+        es: 'Poner palabras a lo que tocan',
+      ),
+      descripcion: LocalizedString(
+        gl: 'A exploración sensorial: seguridade primeiro, e nomear a '
+            'sensación mentres pasa.',
+        es: 'La exploración sensorial: seguridad primero, y nombrar la '
+            'sensación mientras pasa.',
+      ),
+      icono: 'child_play',
+      colorHex: '#E07A5F',
+    ),
+    Bloque(
+      id: aulaMatematicasId,
+      orden: 5,
+      titulo: LocalizedString(
+        gl: 'Grande e pequeno antes dos números',
+        es: 'Grande y pequeño antes de los números',
+      ),
+      descripcion: LocalizedString(
+        gl: 'As primeiras nocións de cantidade e tamaño chegan coas mans, non '
+            'coa conta.',
+        es: 'Las primeras nociones de cantidad y tamaño llegan con las manos, '
+            'no con la cuenta.',
+      ),
+      icono: 'home_globe',
+      colorHex: '#3D5A80',
+    ),
+    Bloque(
+      id: aulaPonteCasaId,
+      orden: 6,
+      titulo: LocalizedString(
+        gl: 'Pasar a mensaxe á casa',
+        es: 'Pasar el mensaje a casa',
+      ),
+      descripcion: LocalizedString(
+        gl: 'Como se conta na porta o que se fixo na aula para que siga na '
+            'casa.',
+        es: 'Cómo se cuenta en la puerta lo que se hizo en el aula para que '
+            'siga en casa.',
+      ),
+      icono: 'chat_bubble_heart',
+      colorHex: '#127A75',
+    ),
+  ];
+
+  /// Todos los bloques, los de Academy y los del aula.
+  static List<Bloque> get todosIncluidoAula => [...todos, ...aula];
+
+  /// Resolves a block by its canonical ID, Academy or aula.
   static Bloque? byId(String id) {
     final cleanId = id.trim().toLowerCase();
-    for (final b in todos) {
+    for (final b in todosIncluidoAula) {
       if (b.id.toLowerCase() == cleanId) return b;
     }
     return null;
@@ -252,6 +402,10 @@ class Bloque {
 class Capsula {
   final String id;
   final String bloqueId;
+
+  /// Quién la lee. Sin el campo, familia: las cinco de Academy son anteriores.
+  final DestinatarioCapsula destinatario;
+
   final int orden;
   final LocalizedString titulo;
   final LocalizedString subtitulo;
@@ -261,6 +415,20 @@ class Capsula {
   final LocalizedString porQueImporta;
   final LocalizedString queHacerEnCasa;
   final LocalizedString ejemploCotidiano;
+
+  /// El cierre de Lúa: una frase de la gata que convierte la idea de la
+  /// cápsula en UN gesto para hoy.
+  ///
+  /// Es opcional a propósito. No es una quinta sección canónica —las cuatro
+  /// siguen siendo cuatro, y `contido` sigue devolviendo esas cuatro—: es el
+  /// cierre, y una cápsula sin él se lee entera igual. Las del aula todavía no
+  /// lo traen.
+  ///
+  /// Nulo cuando el JSON no lo trae O cuando le falta una de las dos lenguas:
+  /// media frase en gallego y nada en castellano dejaría media pantalla en
+  /// blanco, y eso se ve peor que no pintar el cierre.
+  final LocalizedString? luaDice;
+
   final List<Afirmacion> afirmaciones;
   final CurricularReference curriculo;
   final Revision revision;
@@ -268,6 +436,7 @@ class Capsula {
   const Capsula({
     required this.id,
     required this.bloqueId,
+    this.destinatario = DestinatarioCapsula.familia,
     required this.orden,
     required this.titulo,
     required this.subtitulo,
@@ -277,6 +446,7 @@ class Capsula {
     required this.porQueImporta,
     required this.queHacerEnCasa,
     required this.ejemploCotidiano,
+    this.luaDice,
     required this.afirmaciones,
     required this.curriculo,
     required this.revision,
@@ -307,44 +477,69 @@ class Capsula {
     }
 
     // Support either top-level sections or a nested 'contido' map
-    final Map<String, dynamic> contidoMap = json['contido'] as Map<String, dynamic>? ?? {};
+    final Map<String, dynamic> contidoMap =
+        json['contido'] as Map<String, dynamic>? ?? {};
 
     final ideaClaveData = (json['ideaClave'] ??
-        json['idea_clave'] ??
-        contidoMap['ideaClave'] ??
-        contidoMap['idea_clave']) as Map<String, dynamic>? ?? {};
+            json['idea_clave'] ??
+            contidoMap['ideaClave'] ??
+            contidoMap['idea_clave']) as Map<String, dynamic>? ??
+        {};
 
     final porQueImportaData = (json['porQueImporta'] ??
-        json['por_que_importa'] ??
-        contidoMap['porQueImporta'] ??
-        contidoMap['por_que_importa']) as Map<String, dynamic>? ?? {};
+            json['por_que_importa'] ??
+            contidoMap['porQueImporta'] ??
+            contidoMap['por_que_importa']) as Map<String, dynamic>? ??
+        {};
 
     final queHacerEnCasaData = (json['queHacerEnCasa'] ??
-        json['que_hacer_en_casa'] ??
-        contidoMap['queHacerEnCasa'] ??
-        contidoMap['que_hacer_en_casa']) as Map<String, dynamic>? ?? {};
+            json['que_hacer_en_casa'] ??
+            contidoMap['queHacerEnCasa'] ??
+            contidoMap['que_hacer_en_casa']) as Map<String, dynamic>? ??
+        {};
 
     final ejemploCotidianoData = (json['ejemploCotidiano'] ??
-        json['ejemplo_cotidiano'] ??
-        contidoMap['ejemploCotidiano'] ??
-        contidoMap['ejemplo_cotidiano']) as Map<String, dynamic>? ?? {};
+            json['ejemplo_cotidiano'] ??
+            contidoMap['ejemploCotidiano'] ??
+            contidoMap['ejemplo_cotidiano']) as Map<String, dynamic>? ??
+        {};
 
-    final curriculoData = (json['curriculo'] ?? json['curricular']) as Map<String, dynamic>? ?? {};
+    // El cierre de Lúa. Se acepta en la raíz o dentro de `contido`, como las
+    // cuatro secciones, y se descarta si le falta una lengua.
+    final luaDiceData = (json['luaDice'] ??
+        json['lua_dice'] ??
+        contidoMap['luaDice'] ??
+        contidoMap['lua_dice']) as Map<String, dynamic>?;
+    final luaDiceParsed =
+        luaDiceData == null ? null : LocalizedString.fromJson(luaDiceData);
+
+    final curriculoData =
+        (json['curriculo'] ?? json['curricular']) as Map<String, dynamic>? ??
+            {};
     final revisionData = json['revision'] as Map<String, dynamic>? ?? {};
 
     return Capsula(
       id: json['id']?.toString().trim() ?? '',
       bloqueId: json['bloqueId']?.toString().trim() ??
-          json['bloque_id']?.toString().trim() ?? '',
+          json['bloque_id']?.toString().trim() ??
+          '',
+      destinatario:
+          DestinatarioCapsula.desdeClave(json['destinatario']?.toString()),
       orden: (json['orden'] as num?)?.toInt() ?? 1,
-      titulo: LocalizedString.fromJson(json['titulo'] as Map<String, dynamic>? ?? {}),
-      subtitulo: LocalizedString.fromJson(json['subtitulo'] as Map<String, dynamic>? ?? {}),
-      tiempoLecturaMinutos: (json['tiempoLecturaMinutos'] ?? json['tiempo_lectura_minutos'] as num?)?.toInt() ?? 3,
+      titulo: LocalizedString.fromJson(
+          json['titulo'] as Map<String, dynamic>? ?? {}),
+      subtitulo: LocalizedString.fromJson(
+          json['subtitulo'] as Map<String, dynamic>? ?? {}),
+      tiempoLecturaMinutos: (json['tiempoLecturaMinutos'] ??
+                  json['tiempo_lectura_minutos'] as num?)
+              ?.toInt() ??
+          3,
       icono: json['icono']?.toString().trim() ?? 'ear_sparkles',
       ideaClave: LocalizedString.fromJson(ideaClaveData),
       porQueImporta: LocalizedString.fromJson(porQueImportaData),
       queHacerEnCasa: LocalizedString.fromJson(queHacerEnCasaData),
       ejemploCotidiano: LocalizedString.fromJson(ejemploCotidianoData),
+      luaDice: (luaDiceParsed?.hasParity ?? false) ? luaDiceParsed : null,
       afirmaciones: List.unmodifiable(afirmations),
       curriculo: CurricularReference.fromJson(curriculoData),
       revision: Revision.fromJson(revisionData),
@@ -352,21 +547,23 @@ class Capsula {
   }
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'bloqueId': bloqueId,
-    'orden': orden,
-    'titulo': titulo.toJson(),
-    'subtitulo': subtitulo.toJson(),
-    'tiempoLecturaMinutos': tiempoLecturaMinutos,
-    'icono': icono,
-    'ideaClave': ideaClave.toJson(),
-    'porQueImporta': porQueImporta.toJson(),
-    'queHacerEnCasa': queHacerEnCasa.toJson(),
-    'ejemploCotidiano': ejemploCotidiano.toJson(),
-    'afirmaciones': afirmaciones.map((a) => a.toJson()).toList(),
-    'curriculo': curriculo.toJson(),
-    'revision': revision.toJson(),
-  };
+        'id': id,
+        'bloqueId': bloqueId,
+        'destinatario': destinatario.clave,
+        'orden': orden,
+        'titulo': titulo.toJson(),
+        'subtitulo': subtitulo.toJson(),
+        'tiempoLecturaMinutos': tiempoLecturaMinutos,
+        'icono': icono,
+        'ideaClave': ideaClave.toJson(),
+        'porQueImporta': porQueImporta.toJson(),
+        'queHacerEnCasa': queHacerEnCasa.toJson(),
+        'ejemploCotidiano': ejemploCotidiano.toJson(),
+        if (luaDice != null) 'luaDice': luaDice!.toJson(),
+        'afirmaciones': afirmaciones.map((a) => a.toJson()).toList(),
+        'curriculo': curriculo.toJson(),
+        'revision': revision.toJson(),
+      };
 
   @override
   bool operator ==(Object other) =>
@@ -384,6 +581,7 @@ class Capsula {
           porQueImporta == other.porQueImporta &&
           queHacerEnCasa == other.queHacerEnCasa &&
           ejemploCotidiano == other.ejemploCotidiano &&
+          luaDice == other.luaDice &&
           listEquals(afirmaciones, other.afirmaciones) &&
           curriculo == other.curriculo &&
           revision == other.revision;
@@ -401,11 +599,13 @@ class Capsula {
         porQueImporta,
         queHacerEnCasa,
         ejemploCotidiano,
+        luaDice,
         Object.hashAll(afirmaciones),
         curriculo,
         revision,
       ]);
 
   @override
-  String toString() => 'Capsula(id: "$id", bloque: "$bloqueId", titulo: $titulo)';
+  String toString() =>
+      'Capsula(id: "$id", bloque: "$bloqueId", titulo: $titulo)';
 }

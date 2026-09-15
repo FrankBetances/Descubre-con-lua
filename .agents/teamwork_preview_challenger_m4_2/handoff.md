@@ -3,7 +3,7 @@
 **Agent**: `teamwork_preview_challenger_m4_2` (Milestone 4 E2E Adversarial Challenger)  
 **Parent**: `parent` (`155c43c0-be2b-46ce-b47d-cc280903c77f`)  
 **Project**: «Descubre con Lúa · Edición Vigo» (`com.earlify.descubreconlua`)  
-**Project Root**: `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa`  
+**Project Root**: `<documentos locales>/Descubre con Lúa`  
 **Timestamp**: 2026-09-11T14:10:30Z  
 **Handoff Type**: Hard (Task Complete)  
 **Verdict**: **APPROVE**  
@@ -23,7 +23,7 @@ python3 test/adversarial_e2e_m4_challenger2_suite.py
 ===============================================================================
  CHALLENGER 2: ADVERSARIAL E2E INTEGRATION & DATA CONTRACTS STRESS SUITE
  Milestone 4 — «Descubre con Lúa · Edición Vigo»
- Target Root : /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+ Target Root : <documentos locales>/Descubre con Lúa
 ===============================================================================
 
 -------------------------------------------------------------------------------
@@ -136,7 +136,7 @@ python3 test/run_all_e2e_tests.py
  MASTER E2E VERIFICATION & TEST SUITE RUNNER
  «Descubre con Lúa · Edición Vigo» — Milestone 4 Master Regression
 ===============================================================================
- Working Directory : /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+ Working Directory : <documentos locales>/Descubre con Lúa
  Python Version    : 3.9.6 (/Applications/Xcode.app/Contents/Developer/usr/bin/python3)
  Flutter Runtime   : Static & Semantic AST Engine (Flutter CLI not in PATH)
  Target Package ID : com.earlify.descubreconlua

@@ -6,7 +6,7 @@ Adversarial and quality review of Milestone 1 Dart core architecture and tests f
 ## 🔒 My Identity
 - Archetype: teamwork_preview_reviewer
 - Roles: reviewer, critic
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m1_2/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_reviewer_m1_2/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 1 - Core Architecture
 - Instance: 2 of 2

@@ -3,7 +3,7 @@
 **Agent**: `teamwork_preview_worker_m4` (E2E Verification & Test Suite Worker)  
 **Parent**: `parent` (`155c43c0-be2b-46ce-b47d-cc280903c77f`)  
 **Project**: «Descubre con Lúa · Edición Vigo» (`com.earlify.descubreconlua`)  
-**Project Root**: `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa`  
+**Project Root**: `<documentos locales>/Descubre con Lúa`  
 **Timestamp**: 2026-09-11T14:04:45Z  
 **Handoff Type**: Hard (Task Complete)  
 
@@ -34,7 +34,7 @@ Verbatim execution log:
  MASTER E2E VERIFICATION & TEST SUITE RUNNER
  «Descubre con Lúa · Edición Vigo» — Milestone 4 Master Regression
 ===============================================================================
- Working Directory : /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+ Working Directory : <documentos locales>/Descubre con Lúa
  Python Version    : 3.9.6 (/Applications/Xcode.app/Contents/Developer/usr/bin/python3)
  Flutter Runtime   : Static & Semantic AST Engine (Flutter CLI not in PATH)
  Target Package ID : com.earlify.descubreconlua

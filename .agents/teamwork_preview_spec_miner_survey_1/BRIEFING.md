@@ -6,7 +6,7 @@ Survey, probe, and document all functional, pedagogical, curricular, and bilingu
 ## 🔒 My Identity
 - Archetype: teamwork_preview_spec_miner
 - Roles: Spec Miner Requirements
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1
+- Working directory: <raíz del proyecto>/.agents/teamwork_preview_spec_miner_survey_1
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Survey & Specifications
 
@@ -33,9 +33,9 @@ Survey, probe, and document all functional, pedagogical, curricular, and bilingu
 - Initialized survey phase for requirements, Decreto 150/2022, and JSON models.
 
 ## Artifact Index
-- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md — Base requirements
-- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/DISPATCH.md — Initial dispatch
-- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/BRIEFING.md — Working memory
-- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/progress.md — Liveness tracker
-- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/analysis.md — Comprehensive findings
-- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/handoff.md — 5-component report
+- <raíz del proyecto>/ORIGINAL_REQUEST.md — Base requirements
+- <raíz del proyecto>/.agents/teamwork_preview_spec_miner_survey_1/DISPATCH.md — Initial dispatch
+- <raíz del proyecto>/.agents/teamwork_preview_spec_miner_survey_1/BRIEFING.md — Working memory
+- <raíz del proyecto>/.agents/teamwork_preview_spec_miner_survey_1/progress.md — Liveness tracker
+- <raíz del proyecto>/.agents/teamwork_preview_spec_miner_survey_1/analysis.md — Comprehensive findings
+- <raíz del proyecto>/.agents/teamwork_preview_spec_miner_survey_1/handoff.md — 5-component report

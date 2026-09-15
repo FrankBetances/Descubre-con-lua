@@ -4,7 +4,7 @@
 **Role**: M4 Remediation Worker (implementer, qa, specialist)  
 **Target Milestone**: Milestone 4 (Iteration 2 Remediation)  
 **Project**: «Descubre con Lúa · Edición Vigo» (`com.earlify.descubreconlua`)  
-**Project Root**: `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa`  
+**Project Root**: `<documentos locales>/Descubre con Lúa`  
 **Timestamp**: 2026-09-11T14:16:00Z  
 **Verdict**: **READY_FOR_APPROVAL**  
 

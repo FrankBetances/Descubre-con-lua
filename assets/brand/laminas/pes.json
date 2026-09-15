@@ -1,0 +1,96 @@
+{
+  "vb": 100,
+  "nota": "Pés / Pies: dos pies descalzos de frente con sus dedos. Los dedos son lo que los distingue de dos manoplas.",
+  "formas": [
+    {
+      "t": "ruta",
+      "d": "M12 42 C12 28 20 24 28 24 C36 24 44 28 44 42 C44 60 40 78 36 88 C32 94 20 94 18 88 C14 78 12 60 12 42 Z",
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M56 42 C56 28 64 24 72 24 C80 24 88 28 88 42 C88 60 86 78 82 88 C78 94 66 94 64 88 C58 78 56 60 56 42 Z",
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 17,
+      "cy": 24,
+      "rx": 5,
+      "ry": 6,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 27,
+      "cy": 19,
+      "rx": 5,
+      "ry": 6,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 37,
+      "cy": 22,
+      "rx": 4,
+      "ry": 5,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 63,
+      "cy": 22,
+      "rx": 4,
+      "ry": 5,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 73,
+      "cy": 19,
+      "rx": 5,
+      "ry": 6,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 83,
+      "cy": 24,
+      "rx": 5,
+      "ry": 6,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 24,
+      "cy": 56,
+      "rx": 7,
+      "ry": 12,
+      "f": "#ffffff33"
+    },
+    {
+      "t": "elipse",
+      "cx": 68,
+      "cy": 56,
+      "rx": 7,
+      "ry": 12,
+      "f": "#ffffff33"
+    }
+  ]
+}

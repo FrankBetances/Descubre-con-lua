@@ -1,10 +1,11 @@
 import 'dart:convert';
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import '../../lib/core/audio/mock_offline_audio_service.dart';
-import '../../lib/core/localization/app_language.dart';
-import '../../lib/core/localization/localized_string.dart';
-import '../../lib/core/theme/app_theme.dart';
+import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
+import 'package:descubre_con_lua/core/localization/app_language.dart';
+import 'package:descubre_con_lua/core/localization/localized_string.dart';
+import 'package:descubre_con_lua/core/theme/app_theme.dart';
 
 void main() {
   group('Adversarial Stress Tests - LocalizedString', () {
@@ -43,7 +44,8 @@ void main() {
       // JSON string round-trip with utf-8 encoding/decoding
       final jsonMap = galicianCorpus.toJson();
       final serializedJson = jsonEncode(jsonMap);
-      final deserializedMap = jsonDecode(serializedJson) as Map<String, dynamic>;
+      final deserializedMap =
+          jsonDecode(serializedJson) as Map<String, dynamic>;
       final reconstructed = LocalizedString.fromJson(deserializedMap);
 
       expect(reconstructed, equals(galicianCorpus));
@@ -163,7 +165,8 @@ void main() {
       for (int i = 0; i < 100; i++) {
         await audioService.playAsset('assets/audio/test_$i.wav');
         expect(audioService.isPlaying, isTrue);
-        expect(audioService.currentAssetPath, equals('assets/audio/test_$i.wav'));
+        expect(
+            audioService.currentAssetPath, equals('assets/audio/test_$i.wav'));
 
         await audioService.pause();
         expect(audioService.isPlaying, isFalse);
@@ -173,12 +176,14 @@ void main() {
       }
 
       expect(audioService.callLog.length, equals(300));
-      expect(audioService.callLog.first, equals('playAsset:assets/audio/test_0.wav'));
+      expect(audioService.callLog.first,
+          equals('playAsset:assets/audio/test_0.wav'));
       expect(audioService.callLog.last, equals('stop'));
     });
 
     test('callLog is immutable against external tampering', () {
-      expect(() => (audioService.callLog as dynamic).add('illegal'), throwsA(isA<UnsupportedError>()));
+      expect(() => (audioService.callLog as dynamic).add('illegal'),
+          throwsA(isA<UnsupportedError>()));
     });
 
     test('Empty or blank asset paths are rejected', () async {
@@ -225,13 +230,20 @@ void main() {
   });
 
   group('Adversarial Stress Tests - AppTheme', () {
+    // Exponente 2.4, el de WCAG 2.1, no el cuadrado que había aquí antes.
+    // La aproximación al cuadrado no era conservadora en un sentido útil:
+    // devolvía ratios MÁS BAJOS que la norma (9,39 -> 7,22; 5,16 -> 4,15), así
+    // que este gate rechazaba colores que la norma acepta y habría aceptado
+    // otros que no. Un gate que mide otra cosa que la que nombra no protege
+    // nada. El umbral de 4,5 no se toca.
     double relativeLuminance(Color color) {
-      double transform(double c) =>
-          c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) * ((c + 0.055) / 1.055); // approximated power 2.4
+      double transform(double c) => c <= 0.04045
+          ? c / 12.92
+          : math.pow((c + 0.055) / 1.055, 2.4) as double;
 
-      final r = transform(color.red / 255.0);
-      final g = transform(color.green / 255.0);
-      final b = transform(color.blue / 255.0);
+      final r = transform(color.r);
+      final g = transform(color.g);
+      final b = transform(color.b);
       return 0.2126 * r + 0.7152 * g + 0.0722 * b;
     }
 
@@ -243,28 +255,41 @@ void main() {
       return (lighter + 0.05) / (darker + 0.05);
     }
 
-    test('Color contrast ratios meet WCAG AA standards (>= 4.5:1 for normal text, >= 3.0:1 for large)', () {
+    test(
+        'Color contrast ratios meet WCAG AA standards (>= 4.5:1 for normal text, >= 3.0:1 for large)',
+        () {
       final theme = AppTheme.lightTheme;
       final colorScheme = theme.colorScheme;
 
-      // onPrimary (white) on primary (Vigo Blue #1B4965)
-      final primaryContrast = contrastRatio(colorScheme.onPrimary, colorScheme.primary);
+      // onPrimary (tinta oscura) sobre primary (turquesa #00C4BE).
+      // Aquí es donde se cazó que el blanco daba 2,18:1.
+      final primaryContrast =
+          contrastRatio(colorScheme.onPrimary, colorScheme.primary);
       expect(primaryContrast, greaterThanOrEqualTo(4.5));
 
-      // onSurface (textSlate #1C2541) on surface (backgroundSand #F4F1DE)
-      final surfaceContrast = contrastRatio(colorScheme.onSurface, colorScheme.surface);
+      // onSurface (#1F2937) sobre surface (#F6FAFA)
+      final surfaceContrast =
+          contrastRatio(colorScheme.onSurface, colorScheme.surface);
       expect(surfaceContrast, greaterThanOrEqualTo(4.5));
 
-      // onSurface (textSlate) on cardSurface (#FFFFFF)
-      final cardContrast = contrastRatio(AppTheme.textSlate, AppTheme.cardSurface);
+      // onSurface sobre la tarjeta blanca
+      final cardContrast =
+          contrastRatio(AppTheme.textSlate, AppTheme.cardSurface);
       expect(cardContrast, greaterThanOrEqualTo(4.5));
 
-      // onSecondary (textSlate) on secondary (Sea Glass #62B6CB)
-      final secondaryContrast = contrastRatio(colorScheme.onSecondary, colorScheme.secondary);
-      expect(secondaryContrast, greaterThanOrEqualTo(3.0));
+      // onSecondary (blanco) sobre secondary (`primaryInk`), que es el color
+      // de la barra superior y de las cabeceras a sangre. Se le exige AA
+      // completo, no el 3,0 de texto grande: la barra lleva texto pequeño.
+      final secondaryContrast = contrastRatio(
+        colorScheme.onSecondary,
+        colorScheme.secondary,
+      );
+      expect(secondaryContrast, greaterThanOrEqualTo(4.5));
     });
 
-    test('Adult typography hierarchy strictly satisfies minimum 16sp body constraint', () {
+    test(
+        'Adult typography hierarchy strictly satisfies minimum 16sp body constraint',
+        () {
       final textTheme = AppTheme.lightTheme.textTheme;
 
       expect(textTheme.bodyLarge?.fontSize, greaterThanOrEqualTo(16.0));

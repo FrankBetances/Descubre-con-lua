@@ -13,7 +13,7 @@
 
 La aplicación nativa Android «Descubre con Lúa · Edición Vigo» (Package ID: `com.earlify.descubreconlua`) traslada la experiencia pedagógica y de estimulación de la comunicación temprana al contexto educativo infantil y familiar de Vigo y Galicia (0 a 3 años). 
 
-A diferencia de proyectos clínicos SaMD (como VIA+ o Valeria+ clínico), este desarrollo tiene un carácter **estrictamente educativo, preventivo y familiar**, operando bajo el paradigma de **«Contenido como Datos» (Content-as-Data)**:
+A diferencia de los proyectos clínicos de la casa, este desarrollo tiene un carácter **estrictamente educativo, preventivo y familiar**, operando bajo el paradigma de **«Contenido como Datos» (Content-as-Data)**:
 1. **Zero-Network / Privacidad Absoluta**: Ausencia total de permisos de internet en el `AndroidManifest.xml` de release y cero dependencias de red en `pubspec.yaml`.
 2. **Arquitectura Content-as-Data**: Todo el contenido temático y formativo se modela como documentos JSON fuertemente tipados bajo `assets/content/**`, con validación estricta en tiempo de pruebas unitarias (`test/data/`).
 3. **Paridad Bilingüe Estricta 1:1**: Coexistencia paritaria, simétrica y simultánea del Gallego (`gl` - RAG) y Castellano (`es`) en cada campo textual.

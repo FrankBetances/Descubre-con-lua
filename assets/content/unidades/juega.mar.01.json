@@ -1,7 +1,7 @@
 {
   "id": "juega.mar.01",
   "tramoEtario": "0-3",
-  "orden": 1,
+  "orden": 10,
   "titulo": {
     "gl": "Explorando o Mar de Vigo: A nosa Ría",
     "es": "Explorando el Mar de Vigo: Nuestra Ría"
@@ -14,7 +14,6 @@
     "gl": "Proposta de aula para achegar ás crianzas aos sons, animais e texturas da ría de Vigo mediante cancións a pulso, narración interactiva e xogos sensoriais con auga.",
     "es": "Propuesta de aula para acercar a los niños y niñas a los sonidos, animales y texturas de la ría de Vigo mediante canciones a pulso, narración interactiva y juegos sensoriales con agua."
   },
-  "portadaAsset": "assets/images/unidades/juega_mar_01_cover.png",
   "cancionPulso": {
     "titulo": {
       "gl": "As ondas da nosa ría",
@@ -22,12 +21,12 @@
     },
     "letraConPulsos": {
       "gl": "* On-das * que veñen, * on-das * que van,\n* no mar * de Vi-go * os pei-xes * es-tán.\n* Chof, * chof, * bate * a au-ga,\n* chas, * chas, * sobre * a a-rea.",
-      "es": "* O-las * que vienen, * o-las * que van,\n* en el * mar de * Vi-go * los pe-ces * es-tán.\n* Chof, * chof, * cae * el a-gua,\n* chas, * chas, * en la a-re-na."
+      "es": "* O-las * que vienen, * o-las * que van,\n* en el mar * de Vi-go * los pe-ces * es-tán.\n* Chof, * chof, * cae * el a-gua,\n* chas, * chas, * en la * a-re-na."
     },
-    "bpm": 80,
+    "bpm": 72,
     "audioAsset": {
-      "gl": "assets/audio/canciones/juega_mar_01_gl.mp3",
-      "es": "assets/audio/canciones/juega_mar_01_es.mp3"
+      "gl": "assets/voice/gl_tutor_07aaac78_153.m4a",
+      "es": "assets/voice/es_tutor_3a7014eb_155.m4a"
     },
     "consignaDocente": {
       "gl": "Marcar o pulso amodo palmeando nas pernas ou movendo os brazos en compás suave coma se fósemos ondas.",
@@ -46,11 +45,15 @@
           "gl": "A gata Lúa colle o seu barquiño de madeira e mira a ría de Vigo. A auga brilla baixo o sol e o aire cheira a mar fresco.",
           "es": "La gata Lúa coge su barquito de madera y mira la ría de Vigo. El agua brilla bajo el sol y el aire huele a mar fresco."
         },
-        "imagenAsset": "assets/images/cuento/juega_mar_01_p1.png",
         "preguntaComprension": {
           "gl": "Que ten Lúa na man? Mirade como brilla a auga!",
           "es": "¿Qué tiene Lúa en la mano? ¡Mirad cómo brilla el agua!"
-        }
+        },
+        "ingles": [
+          "Sea",
+          "Blue"
+        ],
+        "lamina": "conto_mar_1"
       },
       {
         "orden": 2,
@@ -58,11 +61,15 @@
           "gl": "Polo ceo cruza unha gaivota branca que fai: Aaaah, aaah! Na beira da auga hai cunchas grandes e lisas que gardan o son das ondas.",
           "es": "Por el cielo cruza una gaviota blanca que hace: ¡Aaaah, aaah! En la orilla del agua hay conchas grandes y suaves que guardan el sonido de las olas."
         },
-        "imagenAsset": "assets/images/cuento/juega_mar_01_p2.png",
         "preguntaComprension": {
           "gl": "Onde está a gaivota? Que son fai cando voa alto?",
           "es": "¿Dónde está la gaviota? ¿Qué sonido hace cuando vuela alto?"
-        }
+        },
+        "ingles": [
+          "Fish",
+          "Swim"
+        ],
+        "lamina": "conto_mar_2"
       },
       {
         "orden": 3,
@@ -70,11 +77,15 @@
           "gl": "Lúa atopa unha cuncha fermosa na area de Samil. Achégaa á orella e sorrí con agarimo. O mar de Vigo está cheo de vida!",
           "es": "Lúa encuentra una concha hermosa en la arena de Samil. La acerca a la oreja y sonríe con alegría. ¡El mar de Vigo está lleno de vida!"
         },
-        "imagenAsset": "assets/images/cuento/juega_mar_01_p3.png",
         "preguntaComprension": {
           "gl": "A quen saúda Lúa antes de marchar para a casa?",
           "es": "¿A quién saluda Lúa antes de volver a casa?"
-        }
+        },
+        "ingles": [
+          "Shell",
+          "Goodbye"
+        ],
+        "lamina": "conto_mar_3"
       }
     ]
   },
@@ -89,11 +100,12 @@
         "gl": "Embarcación que navega polas augas da nosa ría.",
         "es": "Embarcación que navega por las aguas de nuestra ría."
       },
-      "imagenAsset": "assets/images/vocabulario/barco.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/barco_gl.mp3",
-        "es": "assets/audio/vocabulario/barco_es.mp3"
-      }
+        "gl": "assets/voice/gl_slow_7efb941c_5.m4a",
+        "es": "assets/voice/es_slow_7efb941c_5.m4a"
+      },
+      "ingles": "Boat",
+      "lamina": "barco"
     },
     {
       "id": "gaivota",
@@ -105,11 +117,12 @@
         "gl": "Ave mariña de cor branca que voa preto da costa de Vigo.",
         "es": "Ave marina blanca que vuela cerca de la costa de Vigo."
       },
-      "imagenAsset": "assets/images/vocabulario/gaivota.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/gaivota_gl.mp3",
-        "es": "assets/audio/vocabulario/gaivota_es.mp3"
-      }
+        "gl": "assets/voice/gl_slow_c2d08ad4_7.m4a",
+        "es": "assets/voice/es_slow_8ccc609e_7.m4a"
+      },
+      "ingles": "Seagull",
+      "lamina": "gaivota"
     },
     {
       "id": "cuncha",
@@ -121,11 +134,12 @@
         "gl": "Peza dura e redondeada que deixan os moluscos no areal.",
         "es": "Pieza dura y redondeada que dejan los moluscos en el arenal."
       },
-      "imagenAsset": "assets/images/vocabulario/cuncha.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/cuncha_gl.mp3",
-        "es": "assets/audio/vocabulario/cuncha_es.mp3"
-      }
+        "gl": "assets/voice/gl_slow_492e39a1_6.m4a",
+        "es": "assets/voice/es_slow_35479b23_6.m4a"
+      },
+      "ingles": "Shell",
+      "lamina": "cuncha"
     },
     {
       "id": "mexillon",
@@ -137,11 +151,12 @@
         "gl": "Molusco escuro que medra nas bateas da ría de Vigo.",
         "es": "Molusco oscuro que crece en las bateas de la ría de Vigo."
       },
-      "imagenAsset": "assets/images/vocabulario/mexillon.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/mexillon_gl.mp3",
-        "es": "assets/audio/vocabulario/mexillon_es.mp3"
-      }
+        "gl": "assets/voice/gl_slow_cf99b481_8.m4a",
+        "es": "assets/voice/es_slow_349f29ef_8.m4a"
+      },
+      "ingles": "Mussel",
+      "lamina": "mexillon"
     },
     {
       "id": "peixe",
@@ -153,11 +168,12 @@
         "gl": "Animal que nada na auga e move a súa cola con rapidez.",
         "es": "Animal que nada en el agua y mueve su cola con rapidez."
       },
-      "imagenAsset": "assets/images/vocabulario/peixe.png",
       "audioAsset": {
-        "gl": "assets/audio/vocabulario/peixe_gl.mp3",
-        "es": "assets/audio/vocabulario/peixe_es.mp3"
-      }
+        "gl": "assets/voice/gl_slow_29231976_5.m4a",
+        "es": "assets/voice/es_slow_c85081ac_3.m4a"
+      },
+      "ingles": "Fish",
+      "lamina": "peixe"
     }
   ],
   "preguntas": [
@@ -322,5 +338,38 @@
     "fechaRevision": "2026-09-11",
     "version": "1.0.0",
     "aprobadoParaAula": true
+  },
+  "ingles": {
+    "nota": "Lo que la persona adulta DICE en inglés durante cada fase de la asamblea. Una palabra suelta se graba despacio (para imitarla); todo lo que lleve espacio, a ritmo de lectura. La repetición entre fases es intencionada: es la misma palabra volviendo.",
+    "frase": "Blue sea, waves go up and down!",
+    "porFase": {
+      "pulso": [
+        "Waves",
+        "Gentle waves",
+        "Big waves!"
+      ],
+      "conto": [
+        "Sea",
+        "Fish",
+        "Blue",
+        "Shell"
+      ],
+      "preguntas": [
+        "Fish",
+        "Blue"
+      ],
+      "exploracion": [
+        "Swim",
+        "Swim like a fish"
+      ],
+      "matematicas": [
+        "Gentle waves",
+        "Big waves!"
+      ],
+      "ponteCasa": [
+        "Blue sea, waves go up and down!",
+        "Goodbye"
+      ]
+    }
   }
 }

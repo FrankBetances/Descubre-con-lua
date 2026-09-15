@@ -6,7 +6,7 @@ Adversarially challenge the core Dart architecture for Milestone 1 (LocalizedStr
 ## 🔒 My Identity
 - Archetype: teamwork_preview_challenger
 - Roles: critic, specialist
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m1_2/
+- Working directory: <raíz del proyecto>/.agents/teamwork_preview_challenger_m1_2/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 1
 - Instance: 2 of 2

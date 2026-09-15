@@ -1,12 +1,12 @@
 # BRIEFING — 2026-09-11T08:32:00Z
 
 ## Mission
-Investigate pedagogical modules and reference material from Valeria (Academy and Juega con Lúa) and analyze R3 requirements for Academy (Familias), Juega con Lúa (Aula/Docentes), and offline audio assets for «Descubre con Lúa · Edición Vigo».
+Investigate pedagogical modules and reference material from el proyecto anterior de la casa (Academy and Juega con Lúa) and analyze R3 requirements for Academy (Familias), Juega con Lúa (Aula/Docentes), and offline audio assets for «Descubre con Lúa · Edición Vigo».
 
 ## 🔒 My Identity
 - Archetype: teamwork_preview_explorer
-- Roles: Valeria Port Explorer
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_3
+- Roles: el proyecto anterior de la casa Port Explorer
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_3
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Survey Phase - Pedagogical Port Exploration
 
@@ -23,12 +23,12 @@ Investigate pedagogical modules and reference material from Valeria (Academy and
 
 ## Investigation State
 - **Explored paths**:
-  - `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md`
-  - `/Users/frankalbertobetancesreinoso/Documentos locales/Valeria UX/Valeria/src/ValeriaAcademy/`
-  - `/Users/frankalbertobetancesreinoso/Documentos locales/Valeria UX/Valeria/src/AventurasLua/`
-  - Plugins and skills: `valeria`, `valeria-project-expert`, `lua-mascot-design`
+  - `<documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md`
+  - `<repositorio del proyecto anterior de la casa>`
+  - `<repositorio del proyecto anterior de la casa> UX/el proyecto anterior de la casa/<módulo del proyecto anterior>/`
+  - Plugins and skills: los plugins internos del proyecto anterior
 - **Key findings**:
-  - Successfully mapped the porting strategy from clinical Valeria to educational Descubre con Lúa (Decreto 150/2022).
+  - Successfully mapped the porting strategy from clinical el proyecto anterior de la casa to educational Descubre con Lúa (Decreto 150/2022).
   - Academy (Familias): 5 developmental blocks, 4-part rigid pedagogical capsule view, adult ergonomics, dynamic gl/es switcher, zero external links, zero child game mechanics.
   - Juega con Lúa (Docentes): Age bands 0-2 and 2-3, 6-step guided assembly mode for teachers, safety warnings, classroom sensory exploration.
   - Offline Audio: Local bundled assets (`assets/audio/`), 72 BPM pulse, zero network permissions.

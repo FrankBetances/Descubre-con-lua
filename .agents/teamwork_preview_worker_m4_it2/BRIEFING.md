@@ -6,7 +6,7 @@ Remediate test runner issues (timeouts, stderr/stdout diagnostics) in `test/run_
 ## 🔒 My Identity
 - Archetype: teamwork_preview_worker
 - Roles: implementer, qa, specialist
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m4_it2
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m4_it2
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 4 (Iteration 2) Remediation
 

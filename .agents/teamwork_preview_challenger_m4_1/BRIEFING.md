@@ -6,7 +6,7 @@ Adversarially challenge the Milestone 4 deliverables in «Descubre con Lúa · E
 ## 🔒 My Identity
 - Archetype: teamwork_preview_challenger
 - Roles: critic, specialist
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m4_1/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_challenger_m4_1/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 4
 - Instance: 1 of 1

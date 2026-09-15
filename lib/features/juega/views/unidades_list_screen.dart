@@ -5,7 +5,13 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
+import '../../premios/premios_model.dart';
+import '../../premios/premios_repository.dart';
+import '../../premios/widgets/lua_game_strip.dart';
 import 'asamblea_guiada_screen.dart';
+import 'capsulas_aula_screen.dart';
+import '../../../core/storage/calendario_store.dart';
+import '../../calendario/views/calendario_screen.dart';
 
 /// Screen listing pedagogical units for early childhood educators («Juega con Lúa · Aula»).
 ///
@@ -21,12 +27,20 @@ class UnidadesListScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
 
+  /// Opcional: sin él no se pinta la tira de juego ni cuentan las asambleas.
+  final PremiosRepository? premios;
+
+  /// Opcional: para sincronizar asambleas realizadas con o calendario escola-fogar.
+  final CalendarioStore? calendario;
+
   const UnidadesListScreen({
     super.key,
     required this.repository,
     this.audioService,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
+    this.premios,
+    this.calendario,
   });
 
   @override
@@ -83,33 +97,133 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       body: SafeArea(
         child: Column(
           children: [
+            // La tira de juego, arriba del todo: Lúa, el nivel de la maestra y
+            // su racha. Es lo primero que ve al entrar en el aula.
+            if (widget.premios != null)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppTheme.spaceLg,
+                  AppTheme.spaceMd,
+                  AppTheme.spaceLg,
+                  0,
+                ),
+                child: LuaGameStrip(
+                  repository: widget.premios!,
+                  perfil: Perfil.docente,
+                  language: _language,
+                  contadores: widget.calendario?.contadores,
+                ),
+              ),
+
+            // La puerta a la formación docente. Va arriba y no escondida en un
+            // menú: una maestra que abre el aula con dos minutos de margen
+            // tiene que poder leer el paso que le toca sin buscarlo.
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceMd,
+                AppTheme.spaceLg,
+                0,
+              ),
+              child: ElevatedButton.icon(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => CalendarioScreen(
+                      store: widget.calendario ?? CalendarioStore(),
+                      initialLanguage: _language,
+                      onLanguageChanged: _onToggleLanguage,
+                      esDocenteInicial: true,
+                      repository: widget.repository,
+                      audioService: widget.audioService,
+                      premios: widget.premios,
+                    ),
+                  ),
+                ),
+                icon: const Icon(Icons.calendar_month_rounded),
+                label: Text(
+                  isGl
+                      ? 'Calendario Escola · Fogar (Dobre Estimulación)'
+                      : 'Calendario Escuela · Hogar (Doble Estimulación)',
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppTheme.primaryVigoBlue,
+                  foregroundColor: Colors.white,
+                  minimumSize: const Size.fromHeight(AppTheme.touchMin),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceSm,
+                AppTheme.spaceLg,
+                0,
+              ),
+              child: OutlinedButton.icon(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => CapsulasAulaScreen(
+                      repository: widget.repository,
+                      initialLanguage: _language,
+                      onLanguageChanged: _onToggleLanguage,
+                      premios: widget.premios,
+                      audioService: widget.audioService,
+                    ),
+                  ),
+                ),
+                icon: const Icon(Icons.menu_book_outlined),
+                label: Text(
+                  isGl
+                      ? 'Formación: os seis pasos da asemblea'
+                      : 'Formación: los seis pasos de la asamblea',
+                ),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size.fromHeight(AppTheme.touchMin),
+                ),
+              ),
+            ),
+
             // Age band filter bar
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
               color: AppTheme.cardSurface,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    isGl ? 'Filtrar por tramo etario:' : 'Filtrar por tramo de edad:',
+                    isGl
+                        ? 'Filtrar por tramo etario:'
+                        : 'Filtrar por tramo de edad:',
                     style: theme.textTheme.bodySmall?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: const Color(0xFF64748B),
                     ),
                   ),
                   const SizedBox(height: 8),
-                  Row(
+                  // Wrap y no Row: con tres `Expanded` cada chip se llevaba un
+                  // tercio exacto del ancho, y «Todas las edades» no cabe en un
+                  // tercio. Se veía «Todas las edade», cortado, SOLO en
+                  // castellano —en galego «Todas as idades» sí cabía—, y ningún
+                  // test lo cazó porque un chip recorta en vez de desbordar: no
+                  // hay franjas amarillas ni excepción, el texto se corta y ya.
+                  //
+                  // Con Wrap cada chip ocupa lo que mide su texto y baja de
+                  // línea cuando no caben. Deja de depender del ancho de la
+                  // pantalla, de la lengua y de la escala de texto del sistema.
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
                     children: [
                       _buildFilterChip(
                         label: isGl ? 'Todas as idades' : 'Todas las edades',
                         filterKey: 'todas',
                       ),
-                      const SizedBox(width: 8),
                       _buildFilterChip(
                         label: isGl ? '0-2 anos' : '0-2 años',
                         filterKey: '0-2',
                       ),
-                      const SizedBox(width: 8),
                       _buildFilterChip(
                         label: isGl ? '2-3 anos' : '2-3 años',
                         filterKey: '2-3',
@@ -159,35 +273,34 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
   }) {
     final isSelected = _selectedAgeFilter == filterKey;
 
-    return Expanded(
-      child: FilterChip(
-        label: Center(
-          child: Text(
-            label,
-            style: TextStyle(
-              fontSize: 13.0,
-              fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-              color: isSelected ? Colors.white : AppTheme.textSlate,
-            ),
-          ),
+    // Sin Expanded ni Center: el chip se mide por su texto, que es lo que
+    // impide que lo recorte.
+    return FilterChip(
+      label: Text(
+        label,
+        style: TextStyle(
+          fontSize: 13.0,
+          fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+          color: isSelected ? Colors.white : AppTheme.textSlate,
         ),
-        selected: isSelected,
-        selectedColor: AppTheme.primaryVigoBlue,
-        backgroundColor: const Color(0xFFF1F5F9),
-        showCheckmark: false,
-        padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 8.0),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10.0),
-          side: BorderSide(
-            color: isSelected ? AppTheme.primaryVigoBlue : const Color(0xFFCBD5E1),
-          ),
-        ),
-        onSelected: (_) {
-          setState(() {
-            _selectedAgeFilter = filterKey;
-          });
-        },
       ),
+      selected: isSelected,
+      selectedColor: AppTheme.primaryVigoBlue,
+      backgroundColor: const Color(0xFFF1F5F9),
+      showCheckmark: false,
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 8.0),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+        side: BorderSide(
+          color:
+              isSelected ? AppTheme.primaryVigoBlue : const Color(0xFFCBD5E1),
+        ),
+      ),
+      onSelected: (_) {
+        setState(() {
+          _selectedAgeFilter = filterKey;
+        });
+      },
     );
   }
 
@@ -207,13 +320,22 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Top badges row (Age & Curriculum)
-            Row(
+            // Las dos etiquetas de arriba: tramo etario y normativa.
+            //
+            // Wrap y no Row, por lo mismo que los chips del filtro: en un
+            // móvil de 360 dp esta fila DESBORDABA 143 px, en las dos lenguas.
+            // No se había visto porque el aparato en el que se prueba tiene
+            // 412 dp, y porque en release un desborde no pinta franjas: las
+            // etiquetas se cortan y ya. Lo destapó el test del filtro.
+            Wrap(
+              spacing: 8,
+              runSpacing: 6,
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0, vertical: 4.0),
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryVigoBlue.withOpacity(0.12),
+                    color: AppTheme.primaryVigoBlue.withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Text(
@@ -227,11 +349,11 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                     ),
                   ),
                 ),
-                const SizedBox(width: 8),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0, vertical: 4.0),
                   decoration: BoxDecoration(
-                    color: AppTheme.calmSage.withOpacity(0.18),
+                    color: AppTheme.calmSage.withValues(alpha: 0.18),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Text(
@@ -283,7 +405,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
 
             // Assembly Phase Summary Pill
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
               decoration: BoxDecoration(
                 color: const Color(0xFFF8FAFC),
                 borderRadius: BorderRadius.circular(10.0),
@@ -291,7 +414,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.format_list_numbered, size: 18, color: AppTheme.primaryVigoBlue),
+                  const Icon(Icons.format_list_numbered,
+                      size: 18, color: AppTheme.primaryVigoBlue),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
@@ -322,6 +446,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                         audioService: widget.audioService,
                         initialLanguage: _language,
                         onLanguageChanged: _onToggleLanguage,
+                        premios: widget.premios,
+                        calendario: widget.calendario,
                       ),
                     ),
                   );

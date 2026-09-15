@@ -1,0 +1,76 @@
+{
+  "id": "aula.matematicas.01",
+  "bloqueId": "aula_matematicas",
+  "destinatario": "docente",
+  "orden": 1,
+  "titulo": {
+    "gl": "Grande e pequeno antes dos números",
+    "es": "Grande y pequeño antes de los números"
+  },
+  "subtitulo": {
+    "gl": "As primeiras nocións de cantidade chegan coas mans",
+    "es": "Las primeras nociones de cantidad llegan con las manos"
+  },
+  "tiempoLecturaMinutos": 3,
+  "icono": "home_globe",
+  "ideaClave": {
+    "gl": "Antes de contar, hai que notar a diferenza. Un barco grande e un barquiño pequeno na man, un ao lado do outro: iso é a primeira matemática de cero a tres. Contar «un, dous, tres» sen esa comparación é recitar, non contar.",
+    "es": "Antes de contar, hay que notar la diferencia. Un barco grande y un barquito pequeño en la mano, uno al lado del otro: esa es la primera matemática de cero a tres. Contar «uno, dos, tres» sin esa comparación es recitar, no contar."
+  },
+  "porQueImporta": {
+    "gl": "A parella de palabras opostas —grande e pequeno, moito e pouco, dentro e fóra— só significa algo cando as dúas se ven á vez. Cun obxecto só, «grande» non ten con que compararse e queda como un adxectivo calquera. Dous obxectos na mesma man é o que converte a palabra nunha noción.",
+    "es": "La pareja de palabras opuestas —grande y pequeño, mucho y poco, dentro y fuera— solo significa algo cuando las dos se ven a la vez. Con un objeto solo, «grande» no tiene con qué compararse y queda como un adjetivo cualquiera. Dos objetos en la misma mano es lo que convierte la palabra en una noción."
+  },
+  "queHacerEnCasa": {
+    "gl": "Pon sempre os dous obxectos xuntos e nomea a parella enteira na mesma frase: «este grande, este pequeno». Deixa que os collan e os cambien de man. Non pidas que digan cal é cal: iso volve exame o que aínda é exploración.",
+    "es": "Pon siempre los dos objetos juntos y nombra la pareja entera en la misma frase: «este grande, este pequeño». Deja que los cojan y los cambien de mano. No pidas que digan cuál es cuál: eso vuelve examen lo que todavía es exploración."
+  },
+  "ejemploCotidiano": {
+    "gl": "Sostés os dous barcos diante da roda. «Mirade: este grande... e este pequeno.» Dáslle o pequeno a un neno e o grande a outro, e cambiádelos. Ao pouco un colle o grande coas dúas mans e o pequeno cunha soa. Ninguén dixo unha palabra e a diferenza xa está feita.",
+    "es": "Sostienes los dos barcos delante de la rueda. «Mirad: este grande... y este pequeño.» Le das el pequeño a un niño y el grande a otro, y los cambiáis. Al poco uno coge el grande con las dos manos y el pequeño con una sola. Nadie dijo una palabra y la diferencia ya está hecha."
+  },
+  "afirmaciones": [
+    {
+      "id": "afirmacion_01",
+      "enunciado": {
+        "gl": "Para traballar «grande» abonda con ensinar o obxecto grande e repetir a palabra.",
+        "es": "Para trabajar «grande» basta con enseñar el objeto grande y repetir la palabra."
+      },
+      "esVerdadera": false,
+      "explicacion": {
+        "gl": "Sen algo pequeno ao lado, «grande» non se pode notar: é só un son que acompaña a un obxecto. A noción aparece na comparación, así que os dous teñen que estar á vista á vez.",
+        "es": "Sin algo pequeño al lado, «grande» no se puede notar: es solo un sonido que acompaña a un objeto. La noción aparece en la comparación, así que los dos tienen que estar a la vista a la vez."
+      }
+    },
+    {
+      "id": "afirmacion_02",
+      "enunciado": {
+        "gl": "Que a crianza colla o obxecto grande coas dúas mans xa indica que notou a diferenza de tamaño.",
+        "es": "Que la criatura coja el objeto grande con las dos manos ya indica que notó la diferencia de tamaño."
+      },
+      "esVerdadera": true,
+      "explicacion": {
+        "gl": "Axustar as mans ao tamaño é unha resposta ao tamaño, e chega moito antes que a palabra. Vela é máis fiable que preguntar, porque non depende de que saiba dicilo.",
+        "es": "Ajustar las manos al tamaño es una respuesta al tamaño, y llega mucho antes que la palabra. Verla es más fiable que preguntar, porque no depende de que sepa decirlo."
+      }
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "primeiro_ciclo_0_3",
+    "areas": [
+      "area_2_descubrimento_contorna"
+    ],
+    "criteriosEvaluacion": [
+      "CA2.1"
+    ]
+  },
+  "revision": {
+    "autor": "Dr. Frank Betances",
+    "revisorPedagogico": "Equipo Pedagóxico Vigo",
+    "fechaRevision": "2026-09-12",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}
