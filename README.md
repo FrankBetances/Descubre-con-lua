@@ -38,6 +38,10 @@ la persona adulta que acompaña.
   Vigo</strong></sub>
 </p>
 
+El proyecto **nace dentro del programa startTIC**, que es parte del **Consorcio
+da Zona Franca de Vigo**. Las marcas de la cabecera y de los créditos están por
+procedencia —de dónde sale esto—, no como respaldo pedido a un tercero.
+
 **Licencia: gratis para las familias, con licencia para las instituciones.**
 Para una familia o una persona a título individual, gratis y para siempre. Para
 una escuela, un ayuntamiento, un gabinete o una empresa, hace falta una licencia
@@ -119,10 +123,10 @@ Lo que sí se ha cerrado desde la versión anterior de este README:
 
 Defectos abiertos que hay que mirar antes de publicar:
 
-- los logotipos de startTIC, del Consorcio da Zona Franca y del Concello ya
-  están puestos y se pintan en los créditos, pero **falta la autorización
-  escrita de uso de las tres marcas**: en una ficha de Play sugieren respaldo
-  institucional (`assets/brand/logos/README.md`);
+- **`startic.png` está recortado**: el dibujo toca los bordes izquierdo,
+  derecho e inferior de la imagen, así que no tiene margen y se pinta peor de lo
+  que la marca merece. Hace falta el original con su margen, no un recorte; por
+  recorte no tiene arreglo (`assets/brand/logos/README.md`);
 - **las 80 láminas no son de una persona ilustradora profesional**, y se nota.
   Son un puente honesto mientras no haya un set encargado, que es lo que este
   producto merece para las escuelas de Vigo;
