@@ -1,0 +1,256 @@
+{
+  "id": "asamblea.segundo_ciclo.setembro.5_infantil",
+  "nivel": "5_infantil",
+  "mes": 9,
+  "titulo": {
+    "gl": "Setembro: Acollida, espazos escolares e a mochila durmiñona",
+    "es": "Septiembre: Acogida, espacios escolares y la mochila dormilona",
+    "en": "September: Welcome, School Spaces and The Sleepy Backpack"
+  },
+  "centroInteres": {
+    "gl": "A narrativa da mochila escolar e o xogo de estatuas con freada motriz",
+    "es": "La narrativa de la mochila escolar y el juego de estatuas con frenada motriz",
+    "en": "The School Backpack Story and Postural Freeze Games"
+  },
+  "metodologiaTpr": "dramatizado_narrativo",
+  "duracionTotalMinutos": 10,
+  "fases": [
+    {
+      "orden": 1,
+      "tipo": "apertura_saudo",
+      "titulo": {
+        "gl": "Apertura e Saúdo Circular con Cruce de Liña Media",
+        "es": "Apertura y Saludo Circular con Cruce de Línea Media",
+        "en": "Opening & Circle Greeting with Midline Crossing"
+      },
+      "duracionSegundos": 90,
+      "consignaDocente": {
+        "gl": "Reunir ao grupo no círculo. Cruzar os brazos sobre o peito para saudar a Lúa e xirar suavemente sobre o propio eixe. Activar a escoita atenta.",
+        "es": "Reunir al grupo en el círculo. Cruzar los brazos sobre el pecho para saludar a Lúa y girar suavemente sobre el propio eje. Activar la escucha atenta.",
+        "en": "Gather the group in the circle. Cross arms over the chest to greet Lúa and turn gently on the axis. Activate attentive listening."
+      },
+      "cueAcustica": "Good morning friends! Hands across!",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 2,
+      "tipo": "movement_rhythm_focus",
+      "titulo": {
+        "gl": "Foco Rítmico e Calistenia Orofacial",
+        "es": "Foco Rítmico y Calistenia Orofacial",
+        "en": "Movement & Rhythmic Focus with Orofacial Praxias"
+      },
+      "duracionSegundos": 120,
+      "consignaDocente": {
+        "gl": "Marcar o pulso de 72 BPM con palmadas alternadas en xeonllos e ombreiros. Asociar praxias de sopro e vibración labial suave /v/ e /z/ ao ritmo da rima dactilar.",
+        "es": "Marcar el pulso de 72 BPM con palmadas alternadas en rodillas y hombros. Asociar praxias de soplo y vibración labial suave /v/ y /z/ al ritmo de la rima dactilar.",
+        "en": "Keep 72 BPM tapping knees and shoulders alternately. Combine gentle lip vibrations /v/ and /z/ with fingerplay rhythms."
+      },
+      "cueAcustica": "Pulse 72 BPM",
+      "comandosL3": [],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 3,
+      "tipo": "core_tpr_challenge",
+      "titulo": {
+        "gl": "Reto Núcleo TPR: Cuento Motor e Freada Postural (Freeze)",
+        "es": "Reto Núcleo TPR: Cuento Motor y Frenada Postural (Freeze)",
+        "en": "Core TPR Challenge: Kinetic Story & Stop-Signal Freeze"
+      },
+      "duracionSegundos": 270,
+      "consignaDocente": {
+        "gl": "Dramatización motriz da mochila durmiñona. O grupo encarna o desprazamento pesado e a freada brusca ante a clave sintáctica 'FREEZE!'. Exixir control inhibitorio sen interrupcións metalingüísticas.",
+        "es": "Dramatización motriz de la mochila dormilona. El grupo encarna el desplazamiento pesado y la frenada brusca ante la clave sintáctica 'FREEZE!'. Exigir control inhibitorio sin interrupciones metalingüísticas.",
+        "en": "Kinetic enactment of the sleepy backpack. Children enact heavy movement and sudden postural hold upon hearing 'FREEZE!'. Foster inhibitory control without metalinguistic interruptions."
+      },
+      "comandosL3": [
+        {
+          "id": "cmd.setembro.5i.01",
+          "textoIngles": "Walk like a sleepy bear with your heavy bag",
+          "accionFisica": {
+            "gl": "Camiñar con pasos lentos e balanceo de ombros imitando levar unha mochila moi pesada.",
+            "es": "Caminar con pasos lentos y balanceo de hombros imitando llevar una mochila muy pesada.",
+            "en": "Walk with slow heavy steps and swaying shoulders carrying an imaginary heavy bag."
+          },
+          "modeladoDocente": {
+            "gl": "Modelado expresivo corporal: a docente encorva lixeiramente o tronco e camiña ao compás.",
+            "es": "Modelado expresivo corporal: la docente encorva ligeramente el tronco y camina al compás.",
+            "en": "Expressive physical modeling: teacher curves torso slightly and paces along the beat."
+          },
+          "audioAsset": "assets/voice/l3/walk_sleepy_bear_heavy_bag.m4a"
+        },
+        {
+          "id": "cmd.setembro.5i.02",
+          "textoIngles": "The bell rings: run to the circle and freeze!",
+          "accionFisica": {
+            "gl": "Trote rápido cara ao centro da alfombra e parada instantánea inmóbil coma unha estatua.",
+            "es": "Trote rápido hacia el centro de la alfombra y parada instantánea inmóvil como una estatua.",
+            "en": "Quick jog to circle center and instant motionless freeze like a statue."
+          },
+          "modeladoDocente": {
+            "gl": "Toque suave de claves de madeira seguido do comando en L3; a docente detense en seco con postura firme.",
+            "es": "Toque suave de claves de madera seguido del comando en L3; la docente se detiene en seco con postura firme.",
+            "en": "Gentle wood tap followed by oral L3 prompt; teacher freezes suddenly in an upright posture."
+          },
+          "audioAsset": "assets/voice/l3/bell_rings_run_freeze.m4a"
+        },
+        {
+          "id": "cmd.setembro.5i.03",
+          "textoIngles": "Open your bag, take out your smock and smile",
+          "accionFisica": {
+            "gl": "Mímica de abrir a cremalleira, sacar o babi e amosar un sorriso amplo aos compañeiros.",
+            "es": "Mímica de abrir la cremallera, sacar el babi y mostrar una amplia sonrisa a los compañeros.",
+            "en": "Pantomime unzipping the bag, lifting the smock and smiling warmly to peers."
+          },
+          "modeladoDocente": {
+            "gl": "Gesto amplo de acollida e sorriso visible sen esixir produción verbal en L3.",
+            "es": "Gesto amplio de acogida y sonrisa visible sin exigir producción verbal en L3.",
+            "en": "Open welcoming gesture and visible smile without requiring verbal L3 output."
+          },
+          "audioAsset": "assets/voice/l3/open_bag_take_smock_smile.m4a"
+        }
+      ],
+      "repertorioMateriales": []
+    },
+    {
+      "orden": 4,
+      "tipo": "calma_transicion",
+      "titulo": {
+        "gl": "Calma, Respiración e Sons da Fraga",
+        "es": "Calma, Respiración y Sonidos del Bosque",
+        "en": "Calm, Deep Breathing and Forest Sounds"
+      },
+      "duracionSegundos": 120,
+      "consignaDocente": {
+        "gl": "Sentar na alfombra coas pernas cruzadas. Respiración diafragmática fonda: coller aire imaxinando cheirar a herba húmida e expulsalo cun suave sopro /s/ mentres tocamos as claves de madeira.",
+        "es": "Sentar en la alfombra con las piernas cruzadas. Respiración diafragmática profunda: tomar aire imaginando oler la hierba húmeda y expulsarlo con un suave soplo /s/ mientras tocamos las claves de madera.",
+        "en": "Sit cross-legged on the rug. Deep diaphragmatic breathing: inhale imagining wet forest grass and exhale softly with /s/ while holding polished wood claves."
+      },
+      "comandosL3": [],
+      "repertorioMateriales": [
+        {
+          "id": "claves_madeira_castano",
+          "nombre": {
+            "gl": "Claves de madeira de castiñeiro",
+            "es": "Claves de madera de castaño",
+            "en": "Chestnut Wood Claves"
+          },
+          "procedencia": {
+            "gl": "Artesanía en madeira nobre galega de castiñeiro con acabado en cera de abella",
+            "es": "Artesanía en madera noble gallega de castaño con acabado en cera de abeja",
+            "en": "Galician artisanal chestnut wood with natural beeswax polish"
+          },
+          "pautaManipulacion": {
+            "gl": "Percusión suave para pautar a freada motriz e acariñar a madeira cálida durante a respiración final.",
+            "es": "Percusión suave para marcar la frenada motriz y acariciar la madera cálida durante la respiración final.",
+            "en": "Gently tapped for the stop-signal rhythm and held smoothly during final breathing."
+          },
+          "avisoSeguridad": {
+            "gl": "Pezas cilíndricas macizas de 18 cm de lonxitude e 2.5 cm de grosor, sen aristas nin lacas químicas.",
+            "es": "Piezas cilíndricas macizas de 18 cm de longitud y 2.5 cm de grosor, sin aristas ni lacas químicas.",
+            "en": "Solid cylindrical pieces 18 cm long and 2.5 cm thick, smooth edges and no chemical varnishes."
+          }
+        }
+      ]
+    }
+  ],
+  "curriculo": {
+    "normativa": "Decreto 150/2022",
+    "etapa": "educacion_infantil",
+    "ciclo": "segundo_ciclo_3_6",
+    "nivel": "5_infantil",
+    "areas": [
+      "area_1_crecemento_harmonia",
+      "area_2_descubrimento_contorna",
+      "area_3_comunicacion_representacion"
+    ],
+    "competenciasClave": [
+      "CCL",
+      "CPSAA",
+      "CC"
+    ],
+    "criteriosEvaluacion": [
+      "CA1.2",
+      "CA2.1",
+      "CA3.2"
+    ]
+  },
+  "materialesEntorno": [
+    {
+      "id": "mochila_lona_natural",
+      "nombre": {
+        "gl": "Mochila escolar de lona natural",
+        "es": "Mochila escolar de lona natural",
+        "en": "Natural Canvas School Backpack"
+      },
+      "procedencia": {
+        "gl": "Confección téxtil en algodón rústico sen plásticos nin rodas metálicas",
+        "es": "Confección textil en algodón rústico sin plásticos ni ruedas metálicas",
+        "en": "Rustic cotton fabric backpack with no plastics or metal wheels"
+      },
+      "pautaManipulacion": {
+        "gl": "Empregada para a dramatización da carga pesada e a extracción ordenada do babi escolar.",
+        "es": "Empleada para la dramatización de la carga pesada y la extracción ordenada del babi escolar.",
+        "en": "Used for dramatizing heavy loads and extracting the school smock neatly."
+      },
+      "avisoSeguridad": {
+        "gl": "Asas reforzadas e costuras redondeadas sen elementos punzantes nin pezas pequenas.",
+        "es": "Asas reforzadas y costuras redondeadas sin elementos punzantes ni piezas pequeñas.",
+        "en": "Reinforced straps and rounded seams without sharp edges or small parts."
+      }
+    }
+  ],
+  "microRutinaHogar": {
+    "id": "micro_rutina.setembro.5i.01",
+    "titulo": {
+      "gl": "A misión da mochila na entrada",
+      "es": "La misión de la mochila en la entrada",
+      "en": "The Entrance Backpack Mission"
+    },
+    "nichoTiempoMinutos": 4,
+    "momentoDelDia": {
+      "gl": "Ao regresar á casa despois do colexio",
+      "es": "Al regresar a casa después del colegio",
+      "en": "When returning home after school"
+    },
+    "objetivoAutonomia": {
+      "gl": "Baleirar a fiambreira da merenda e gardar a mochila no seu recanto con xogo de estatuas.",
+      "es": "Vaciar la fiambrera de la merienda y guardar la mochila en su rincón con juego de estatuas.",
+      "en": "Empty the snack box and store the bag in its dedicated spot through a freeze game."
+    },
+    "pautasRecast": [
+      {
+        "expresionMenor": {
+          "gl": "Mochila pesada non podo!",
+          "es": "¡Mochila pesada no puedo!",
+          "en": "Heavy backpack can't!"
+        },
+        "modeladoIndirecto": {
+          "gl": "Uf, que mochila tan valente! Imos xuntos: «One, two, three, zip open!». Sacamos a merenda e... conxelados!",
+          "es": "¡Uf, qué mochila tan valiente! Vamos juntos: «One, two, three, zip open!». Sacamos la merienda y... ¡congelados!",
+          "en": "Phew, what a brave backpack! Let's go together: «One, two, three, zip open!». Take out the snack and... freeze!"
+        },
+        "consejoEvitar": {
+          "gl": "Evitar o reproche condutuais: non dicir «Ti podes facelo só, non te queixes». Acompañar o movemento e validar o esforzo.",
+          "es": "Evitar el reproche conductual: no decir «Tú puedes hacerlo solo, no te quejes». Acompañar el movimiento y validar el esfuerzo.",
+          "en": "Avoid behavioral criticism: do not say «You can do it alone, stop whining». Accompany the action and validate effort."
+        }
+      }
+    ],
+    "escenaCotidiana": {
+      "gl": "Aparador ou caixón baixo da entrada onde se garda o material do colexio.",
+      "es": "Aparador o cajón bajo de la entrada donde se guarda el material del colegio.",
+      "en": "Low entrance sideboard or cubby where school bags are kept."
+    },
+    "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"
+  },
+  "revision": {
+    "autor": "Equipo Pedagóxico Descubre con Lúa",
+    "revisorPedagogico": "Especialista en Educación Infantil e Desenvolvemento da Linguaxe",
+    "fechaRevision": "2026-09-14",
+    "version": "1.0.0",
+    "aprobadoParaAula": true
+  }
+}

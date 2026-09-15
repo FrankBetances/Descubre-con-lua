@@ -9,9 +9,17 @@ import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../../premios/widgets/lua_game_strip.dart';
 import 'asamblea_guiada_screen.dart';
+import 'backstage_asamblea_screen.dart';
 import 'capsulas_aula_screen.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../calendario/views/calendario_screen.dart';
+import '../../../data/models/asamblea_segundo_ciclo_model.dart';
+
+/// Ciclos educativos de Educación Infantil (Decreto 150/2022).
+enum CicloEducativo {
+  primerCiclo, // 0-3 anos (1.er Ciclo)
+  segundoCiclo, // 3-6 anos (2.º Ciclo)
+}
 
 /// Screen listing pedagogical units for early childhood educators («Juega con Lúa · Aula»).
 ///
@@ -33,6 +41,9 @@ class UnidadesListScreen extends StatefulWidget {
   /// Opcional: para sincronizar asambleas realizadas con o calendario escola-fogar.
   final CalendarioStore? calendario;
 
+  /// Ciclo educativo seleccionado por defecto (1.er Ciclo ou 2.º Ciclo).
+  final CicloEducativo initialCiclo;
+
   const UnidadesListScreen({
     super.key,
     required this.repository,
@@ -41,6 +52,7 @@ class UnidadesListScreen extends StatefulWidget {
     this.onLanguageChanged,
     this.premios,
     this.calendario,
+    this.initialCiclo = CicloEducativo.primerCiclo,
   });
 
   @override
@@ -49,12 +61,14 @@ class UnidadesListScreen extends StatefulWidget {
 
 class _UnidadesListScreenState extends State<UnidadesListScreen> {
   late AppLanguage _language;
+  late CicloEducativo _selectedCiclo;
   String _selectedAgeFilter = 'todas'; // 'todas', '0-2', '2-3'
 
   @override
   void initState() {
     super.initState();
     _language = widget.initialLanguage;
+    _selectedCiclo = widget.initialCiclo;
   }
 
   void _onToggleLanguage(AppLanguage newLang) {
@@ -97,9 +111,169 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            // La tira de juego, arriba del todo: Lúa, el nivel de la maestra y
-            // su racha. Es lo primero que ve al entrar en el aula.
-            if (widget.premios != null)
+            // Selector de Ciclo Educativo: [ 1.er Ciclo (0-3) | 2.º Ciclo (3-6) ]
+            Container(
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppTheme.spaceLg,
+                vertical: AppTheme.spaceSm,
+              ),
+              color: AppTheme.pageBg,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xFFE2E8F0),
+                  borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+                ),
+                padding: const EdgeInsets.all(4),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: InkWell(
+                        key: const ValueKey('tab_primer_ciclo'),
+                        onTap: () {
+                          if (_selectedCiclo != CicloEducativo.primerCiclo) {
+                            setState(() {
+                              _selectedCiclo = CicloEducativo.primerCiclo;
+                            });
+                          }
+                        },
+                        borderRadius:
+                            BorderRadius.circular(AppTheme.radiusField),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(vertical: 10),
+                          decoration: BoxDecoration(
+                            color: _selectedCiclo == CicloEducativo.primerCiclo
+                                ? AppTheme.card
+                                : Colors.transparent,
+                            borderRadius:
+                                BorderRadius.circular(AppTheme.radiusField),
+                            boxShadow:
+                                _selectedCiclo == CicloEducativo.primerCiclo
+                                    ? const [
+                                        BoxShadow(
+                                          color: Color(0x1A000000),
+                                          blurRadius: 4,
+                                          offset: Offset(0, 2),
+                                        )
+                                      ]
+                                    : null,
+                          ),
+                          child: Text(
+                            isGl
+                                ? '1.º Ciclo (0-3 anos)'
+                                : '1.er Ciclo (0-3 años)',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontFamily: AppTheme.fontFamily,
+                              fontSize: 14.5,
+                              fontWeight:
+                                  _selectedCiclo == CicloEducativo.primerCiclo
+                                      ? FontWeight.w800
+                                      : FontWeight.w600,
+                              color:
+                                  _selectedCiclo == CicloEducativo.primerCiclo
+                                      ? AppTheme.primaryInk
+                                      : AppTheme.textSecondary,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 4),
+                    Expanded(
+                      child: InkWell(
+                        key: const ValueKey('tab_segundo_ciclo'),
+                        onTap: () {
+                          if (_selectedCiclo != CicloEducativo.segundoCiclo) {
+                            setState(() {
+                              _selectedCiclo = CicloEducativo.segundoCiclo;
+                            });
+                          }
+                        },
+                        borderRadius:
+                            BorderRadius.circular(AppTheme.radiusField),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(vertical: 10),
+                          decoration: BoxDecoration(
+                            color: _selectedCiclo == CicloEducativo.segundoCiclo
+                                ? AppTheme.backstageBg
+                                : Colors.transparent,
+                            borderRadius:
+                                BorderRadius.circular(AppTheme.radiusField),
+                            boxShadow:
+                                _selectedCiclo == CicloEducativo.segundoCiclo
+                                    ? const [
+                                        BoxShadow(
+                                          color: Color(0x33000000),
+                                          blurRadius: 4,
+                                          offset: Offset(0, 2),
+                                        )
+                                      ]
+                                    : null,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              if (_selectedCiclo ==
+                                  CicloEducativo.segundoCiclo) ...[
+                                const Icon(
+                                  Icons.dark_mode_rounded,
+                                  size: 16,
+                                  color: AppTheme.backstageAccent,
+                                ),
+                                const SizedBox(width: 6),
+                              ],
+                              Text(
+                                isGl
+                                    ? '2.º Ciclo (3-6 anos)'
+                                    : '2.º Ciclo (3-6 años)',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontFamily: AppTheme.fontFamily,
+                                  fontSize: 14.5,
+                                  fontWeight:
+                                      _selectedCiclo == CicloEducativo.segundoCiclo
+                                          ? FontWeight.w800
+                                          : FontWeight.w600,
+                                  color: _selectedCiclo ==
+                                          CicloEducativo.segundoCiclo
+                                      ? AppTheme.backstageAccent
+                                      : AppTheme.textSecondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            // Vista condicional polo ciclo seleccionado
+            if (_selectedCiclo == CicloEducativo.segundoCiclo)
+              _buildSegundoCicloView(context, isGl)
+            else ...[
+              // La tira de juego, arriba del todo: Lúa, el nivel de la maestra y
+              // su racha. Es lo primero que ve al entrar en el aula.
+              if (widget.premios != null)
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(
+                    AppTheme.spaceLg,
+                    AppTheme.spaceMd,
+                    AppTheme.spaceLg,
+                    0,
+                  ),
+                  child: LuaGameStrip(
+                    repository: widget.premios!,
+                    perfil: Perfil.docente,
+                    language: _language,
+                  ),
+                ),
+
+              // La puerta a la formación docente. Va arriba y no escondida en un
+              // menú: una maestra que abre el aula con dos minutos de margen
+              // tiene que poder leer el paso que le toca sin buscarlo.
               Padding(
                 padding: const EdgeInsets.fromLTRB(
                   AppTheme.spaceLg,
@@ -107,159 +281,133 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                   AppTheme.spaceLg,
                   0,
                 ),
-                child: LuaGameStrip(
-                  repository: widget.premios!,
-                  perfil: Perfil.docente,
-                  language: _language,
-                ),
-              ),
-
-            // La puerta a la formación docente. Va arriba y no escondida en un
-            // menú: una maestra que abre el aula con dos minutos de margen
-            // tiene que poder leer el paso que le toca sin buscarlo.
-            Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppTheme.spaceLg,
-                AppTheme.spaceMd,
-                AppTheme.spaceLg,
-                0,
-              ),
-              child: ElevatedButton.icon(
-                onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => CalendarioScreen(
-                      store: widget.calendario ?? CalendarioStore(),
-                      initialLanguage: _language,
-                      onLanguageChanged: _onToggleLanguage,
-                      esDocenteInicial: true,
-                      repository: widget.repository,
-                      audioService: widget.audioService,
-                      premios: widget.premios,
+                child: ElevatedButton.icon(
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => CalendarioScreen(
+                        store: widget.calendario ?? CalendarioStore(),
+                        initialLanguage: _language,
+                        onLanguageChanged: _onToggleLanguage,
+                        esDocenteInicial: true,
+                        repository: widget.repository,
+                        audioService: widget.audioService,
+                        premios: widget.premios,
+                      ),
                     ),
                   ),
-                ),
-                icon: const Icon(Icons.calendar_month_rounded),
-                label: Text(
-                  isGl
-                      ? 'Calendario Escola · Fogar (Dobre Estimulación)'
-                      : 'Calendario Escuela · Hogar (Doble Estimulación)',
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                ),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.primaryVigoBlue,
-                  foregroundColor: Colors.white,
-                  minimumSize: const Size.fromHeight(AppTheme.touchMin),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppTheme.spaceLg,
-                AppTheme.spaceSm,
-                AppTheme.spaceLg,
-                0,
-              ),
-              child: OutlinedButton.icon(
-                onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => CapsulasAulaScreen(
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                      onLanguageChanged: _onToggleLanguage,
-                      premios: widget.premios,
-                      audioService: widget.audioService,
-                    ),
-                  ),
-                ),
-                icon: const Icon(Icons.menu_book_outlined),
-                label: Text(
-                  isGl
-                      ? 'Formación: os seis pasos da asemblea'
-                      : 'Formación: los seis pasos de la asamblea',
-                ),
-                style: OutlinedButton.styleFrom(
-                  minimumSize: const Size.fromHeight(AppTheme.touchMin),
-                ),
-              ),
-            ),
-
-            // Age band filter bar
-            Container(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-              color: AppTheme.cardSurface,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
+                  icon: const Icon(Icons.calendar_month_rounded),
+                  label: Text(
                     isGl
-                        ? 'Filtrar por tramo etario:'
-                        : 'Filtrar por tramo de edad:',
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: const Color(0xFF64748B),
-                    ),
+                        ? 'Calendario Escola · Fogar (Dobre Estimulación)'
+                        : 'Calendario Escuela · Hogar (Doble Estimulación)',
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(height: 8),
-                  // Wrap y no Row: con tres `Expanded` cada chip se llevaba un
-                  // tercio exacto del ancho, y «Todas las edades» no cabe en un
-                  // tercio. Se veía «Todas las edade», cortado, SOLO en
-                  // castellano —en galego «Todas as idades» sí cabía—, y ningún
-                  // test lo cazó porque un chip recorta en vez de desbordar: no
-                  // hay franjas amarillas ni excepción, el texto se corta y ya.
-                  //
-                  // Con Wrap cada chip ocupa lo que mide su texto y baja de
-                  // línea cuando no caben. Deja de depender del ancho de la
-                  // pantalla, de la lengua y de la escala de texto del sistema.
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: [
-                      _buildFilterChip(
-                        label: isGl ? 'Todas as idades' : 'Todas las edades',
-                        filterKey: 'todas',
-                      ),
-                      _buildFilterChip(
-                        label: isGl ? '0-2 anos' : '0-2 años',
-                        filterKey: '0-2',
-                      ),
-                      _buildFilterChip(
-                        label: isGl ? '2-3 anos' : '2-3 años',
-                        filterKey: '2-3',
-                      ),
-                    ],
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppTheme.primaryVigoBlue,
+                    foregroundColor: Colors.white,
+                    minimumSize: const Size.fromHeight(AppTheme.touchMin),
                   ),
-                ],
+                ),
               ),
-            ),
-            const Divider(height: 1),
-
-            // Units List View
-            Expanded(
-              child: unidades.isEmpty
-                  ? Center(
-                      child: Padding(
-                        padding: const EdgeInsets.all(24.0),
-                        child: Text(
-                          isGl
-                              ? 'Non se atoparon unidades para este tramo de idade.'
-                              : 'No se encontraron unidades para este tramo de edad.',
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            color: const Color(0xFF64748B),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppTheme.spaceLg,
+                  AppTheme.spaceSm,
+                  AppTheme.spaceLg,
+                  0,
+                ),
+                child: OutlinedButton.icon(
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => CapsulasAulaScreen(
+                        repository: widget.repository,
+                        initialLanguage: _language,
+                        onLanguageChanged: _onToggleLanguage,
+                        premios: widget.premios,
+                        audioService: widget.audioService,
                       ),
-                    )
-                  : ListView.builder(
-                      padding: const EdgeInsets.all(20.0),
-                      itemCount: unidades.length,
-                      itemBuilder: (context, index) {
-                        final unidad = unidades[index];
-                        return _buildUnidadCard(context, unidad, isGl);
-                      },
                     ),
-            ),
+                  ),
+                  icon: const Icon(Icons.menu_book_outlined),
+                  label: Text(
+                    isGl
+                        ? 'Formación: os seis pasos da asemblea'
+                        : 'Formación: los seis pasos de la asamblea',
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    minimumSize: const Size.fromHeight(AppTheme.touchMin),
+                  ),
+                ),
+              ),
+
+              // Age band filter bar
+              Container(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 16.0, vertical: 12.0),
+                color: AppTheme.cardSurface,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      isGl
+                          ? 'Filtrar por tramo etario:'
+                          : 'Filtrar por tramo de edad:',
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: const Color(0xFF64748B),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: [
+                        _buildFilterChip(
+                          label: isGl ? 'Todas as idades' : 'Todas las edades',
+                          filterKey: 'todas',
+                        ),
+                        _buildFilterChip(
+                          label: isGl ? '0-2 anos' : '0-2 años',
+                          filterKey: '0-2',
+                        ),
+                        _buildFilterChip(
+                          label: isGl ? '2-3 anos' : '2-3 años',
+                          filterKey: '2-3',
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              const Divider(height: 1),
+
+              // Units List View
+              Expanded(
+                child: unidades.isEmpty
+                    ? Center(
+                        child: Padding(
+                          padding: const EdgeInsets.all(24.0),
+                          child: Text(
+                            isGl
+                                ? 'Non se atoparon unidades para este tramo de idade.'
+                                : 'No se encontraron unidades para este tramo de edad.',
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              color: const Color(0xFF64748B),
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      )
+                    : ListView.builder(
+                        padding: const EdgeInsets.all(20.0),
+                        itemCount: unidades.length,
+                        itemBuilder: (context, index) {
+                          final unidad = unidades[index];
+                          return _buildUnidadCard(context, unidad, isGl);
+                        },
+                      ),
+              ),
+            ],
           ],
         ),
       ),
@@ -462,6 +610,344 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppTheme.primaryVigoBlue,
                   foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 14.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSegundoCicloView(BuildContext context, bool isGl) {
+    final asambleas = widget.repository.getAllAsambleasSegundoCicloSync();
+
+    return Expanded(
+      child: ListView(
+        padding: const EdgeInsets.all(AppTheme.spaceLg),
+        children: [
+          // Banner explicativo do Segundo Ciclo
+          Container(
+            padding: const EdgeInsets.all(18),
+            decoration: BoxDecoration(
+              color: AppTheme.backstageBg,
+              borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+              border: Border.all(color: AppTheme.backstageBorder, width: 1.5),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: AppTheme.backstageAccent.withValues(alpha: 0.2),
+                        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                      ),
+                      child: Text(
+                        isGl ? 'MODO DOCENTE · BACKSTAGE' : 'MODO DOCENTE · BACKSTAGE',
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontFamily,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800,
+                          color: AppTheme.backstageAccent,
+                          letterSpacing: 1.0,
+                        ),
+                      ),
+                    ),
+                    const Spacer(),
+                    const Icon(
+                      Icons.visibility_off_rounded,
+                      color: AppTheme.backstageTextSecondary,
+                      size: 20,
+                    ),
+                    const SizedBox(width: 6),
+                    Text(
+                      isGl ? 'Cero pantallas infantís' : 'Cero pantallas infantiles',
+                      style: const TextStyle(
+                        fontFamily: AppTheme.fontFamily,
+                        fontSize: 12,
+                        color: AppTheme.backstageTextSecondary,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                Text(
+                  isGl
+                      ? 'Asemblea Matinal do 2.º Ciclo (3-6 anos)'
+                      : 'Asamblea Matinal del 2.º Ciclo (3-6 años)',
+                  style: const TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w800,
+                    color: AppTheme.backstageTextPrimary,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  isGl
+                      ? '4 fases rítmicas canónicas (10 min): Apertura (90s), Foco Rítmico (120s), Reto TPR en L3 (270s) e Calma (120s). Interfaz escura de alta visibilidade pensada para o docente.'
+                      : '4 fases rítmicas canónicas (10 min): Apertura (90s), Foco Rítmico (120s), Reto TPR en L3 (270s) y Calma (120s). Interfaz oscura de alta visibilidad pensada para el docente.',
+                  style: const TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 14.5,
+                    fontWeight: FontWeight.w400,
+                    color: AppTheme.backstageTextSecondary,
+                    height: 1.4,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton.icon(
+                    key: const ValueKey('launch_backstage_primary_button'),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => BackstageAsambleaScreen(
+                            repository: widget.repository,
+                            audioService: widget.audioService,
+                            initialNivel: NivelEducativoSegundoCiclo.infantil4,
+                            initialLanguage: _language,
+                            onLanguageChanged: _onToggleLanguage,
+                          ),
+                        ),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppTheme.backstageAccent,
+                      foregroundColor: AppTheme.backstageBg,
+                      minimumSize: const Size.fromHeight(50),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+                      ),
+                    ),
+                    icon: const Icon(Icons.play_circle_filled_rounded),
+                    label: Text(
+                      isGl ? 'Iniciar Asemblea Backstage' : 'Iniciar Asamblea Backstage',
+                      style: const TextStyle(
+                        fontFamily: AppTheme.fontFamily,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 20),
+
+          // Título da sección de unidades
+          Text(
+            isGl
+                ? 'SESIÓNS POR NIVEL (SETEMBRO)'
+                : 'SESIONES POR NIVEL (SEPTIEMBRE)',
+            style: const TextStyle(
+              fontFamily: AppTheme.fontFamily,
+              fontSize: 13,
+              fontWeight: FontWeight.w800,
+              color: AppTheme.textSecondary,
+              letterSpacing: 1.2,
+            ),
+          ),
+          const SizedBox(height: 12),
+
+          // Tarxetas de unidades do 2º ciclo
+          if (asambleas.isEmpty)
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: Text(
+                  isGl
+                      ? 'Non se atoparon asambleas de segundo ciclo dispoñibles.'
+                      : 'No se encontraron asambleas de segundo ciclo disponibles.',
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: const Color(0xFF64748B),
+                      ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            )
+          else
+            ...asambleas.map((asamblea) {
+              return _buildAsambleaSegundoCicloCard(context, asamblea, isGl);
+            }),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAsambleaSegundoCicloCard(
+    BuildContext context,
+    AsambleaSegundoCiclo asamblea,
+    bool isGl,
+  ) {
+    return Card(
+      margin: const EdgeInsets.only(bottom: 16.0),
+      color: AppTheme.cardSurface,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16.0),
+        side: const BorderSide(color: Color(0xFFD0D7DE), width: 1.5),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Wrap(
+              spacing: 8,
+              runSpacing: 6,
+              children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10.0,
+                    vertical: 4.0,
+                  ),
+                  decoration: BoxDecoration(
+                    color: AppTheme.primaryInk.withValues(alpha: 0.12),
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Text(
+                    asamblea.nivel.etiqueta.resolve(_language),
+                    style: const TextStyle(
+                      color: AppTheme.primaryInk,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12.5,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10.0,
+                    vertical: 4.0,
+                  ),
+                  decoration: BoxDecoration(
+                    color: AppTheme.calmSage.withValues(alpha: 0.18),
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Text(
+                    asamblea.curriculo.normativa,
+                    style: const TextStyle(
+                      color: Color(0xFF1E5E43),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12.0,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10.0,
+                    vertical: 4.0,
+                  ),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFEFF6FF),
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Text(
+                    asamblea.metodologiaTpr.nombre.resolve(_language),
+                    style: const TextStyle(
+                      color: Color(0xFF1D4ED8),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12.0,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 14.0),
+            Text(
+              asamblea.titulo.resolve(_language),
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: AppTheme.primaryInk,
+                    fontSize: 19.0,
+                    height: 1.25,
+                  ),
+            ),
+            const SizedBox(height: 6.0),
+            Text(
+              asamblea.centroInteres.resolve(_language),
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: const Color(0xFF4A5568),
+                    fontStyle: FontStyle.italic,
+                    fontSize: 15.0,
+                  ),
+            ),
+            const SizedBox(height: 12.0),
+            Container(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 12.0,
+                vertical: 8.0,
+              ),
+              decoration: BoxDecoration(
+                color: const Color(0xFFF8FAFC),
+                borderRadius: BorderRadius.circular(10.0),
+                border: Border.all(color: const Color(0xFFE2E8F0)),
+              ),
+              child: Row(
+                children: [
+                  const Icon(
+                    Icons.timer_outlined,
+                    size: 18,
+                    color: AppTheme.primaryInk,
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      isGl
+                          ? '4 fases (10 min): Apertura (90s), Ritmo (120s), TPR (270s), Calma (120s)'
+                          : '4 fases (10 min): Apertura (90s), Ritmo (120s), TPR (270s), Calma (120s)',
+                      style: const TextStyle(
+                        fontSize: 12.5,
+                        color: Color(0xFF475569),
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16.0),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton.icon(
+                key: ValueKey('launch_backstage_nivel_${asamblea.nivel.clave}'),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => BackstageAsambleaScreen(
+                        repository: widget.repository,
+                        audioService: widget.audioService,
+                        initialNivel: asamblea.nivel,
+                        initialLanguage: _language,
+                        onLanguageChanged: _onToggleLanguage,
+                      ),
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.play_circle_outline),
+                label: Text(
+                  isGl ? 'Abrir Modo Backstage' : 'Abrir Modo Backstage',
+                  style: const TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppTheme.dark,
+                  foregroundColor: AppTheme.backstageAccent,
                   padding: const EdgeInsets.symmetric(vertical: 14.0),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0),

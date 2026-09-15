@@ -12,6 +12,7 @@ import '../widgets/academy_header.dart';
 import '../widgets/selector_idioma_widget.dart';
 import 'capsula_detail_screen.dart';
 import 'guia_atencion_screen.dart';
+import 'micro_rutina_setembro_screen.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../calendario/views/calendario_screen.dart';
 
@@ -216,6 +217,30 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                         repository: widget.repository,
                         audioService: widget.audioService,
                         premios: widget.premios,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppTheme.spaceMd),
+                AcademyCard(
+                  icono: Icons.home_work_outlined,
+                  kicker: lang == AppLanguage.gl
+                      ? 'SEGUNDO CICLO (3-6 ANOS) · NOVO'
+                      : 'SEGUNDO CICLO (3-6 AÑOS) · NUEVO',
+                  titulo: lang == AppLanguage.gl
+                      ? 'Micro-rutina de setembro e modelado indirecto (recast)'
+                      : 'Micro-rutina de septiembre y modelado indirecto (recast)',
+                  descripcion: lang == AppLanguage.gl
+                      ? 'Principio de Tempo e Lugar (3-5 min) e guía comparativa de recast fronte á corrección frontal.'
+                      : 'Principio de Tiempo y Lugar (3-5 min) y guía comparativa de recast frente a la corrección frontal.',
+                  meta: lang == AppLanguage.gl
+                      ? 'Micro-rutina · Fogar'
+                      : 'Micro-rutina · Hogar',
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => MicroRutinaSetembroScreen(
+                        initialLanguage: _language,
+                        onLanguageChanged: _onToggleLanguage,
                       ),
                     ),
                   ),

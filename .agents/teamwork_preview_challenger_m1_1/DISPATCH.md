@@ -1,34 +1,29 @@
-## 2026-09-11T08:40:07Z
-<USER_REQUEST>
-You are Challenger 1 for Milestone 1 in «Descubre con Lúa · Edición Vigo».
+# DISPATCH — Challenger m1_1 (Serialization Stress)
 
-Your identity:
-- Archetype: teamwork_preview_challenger
-- Role: Milestone 1 Privacy Challenger
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m1_1/
-- Project root: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+## Identity
+- Type: teamwork_preview_challenger
+- Working Directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m1_1
+- Parent Conversation ID: e7633361-cefb-4427-91ff-c3fbb93625fc
 
-Mandatory: Read ORIGINAL_REQUEST.md first:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md
+## Objective
+Empirically challenge Milestone M1:
+1. MANDATORY: Read `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md` (specifically `## Follow-up — 2026-09-14T13:15:17Z`) and `.agents/teamwork_preview_orchestrator_3/PROJECT.md`.
+2. Adversarially test `lib/data/models/asamblea_segundo_ciclo_model.dart` and `lib/data/loaders/content_asset_loader.dart`:
+   - Write stress test generators for malformed JSON, boundary values, missing optional fields, and serialization round-trips.
+   - Challenge equality and hashCode implementations under deep collection nesting.
+3. Write your verdict (`APPROVE` or `FAIL`) and test findings in `handoff.md` and notify the parent orchestrator via `send_message`.
 
-Read PROJECT.md for architecture and contracts:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/PROJECT.md
+## 2026-09-14T13:37:13Z
+You are the Challenger (Serialization Stress) for Milestone M1 in «Descubre con Lúa · Edición Vigo».
+Your working directory is: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m1_1
+Your dispatch instructions are at: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m1_1/DISPATCH.md
 
-Read Worker M1 handoff:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m1/handoff.md
+MANDATORY: Read /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md before doing any work (specifically the section '## Follow-up — 2026-09-14T13:15:17Z').
+Also read /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_orchestrator_3/PROJECT.md and inspect:
+- lib/data/models/asamblea_segundo_ciclo_model.dart
+- lib/data/loaders/content_asset_loader.dart
 
-Your mission:
-Adversarially challenge the privacy and zero-network claims of Milestone 1:
-1. Write and execute an adversarial test harness/script to probe:
-   - Does `android/app/src/main/AndroidManifest.xml` leak any internet permission under any parser interpretation?
-   - What happens if someone adds a dependency that tries to merge `android.permission.INTERNET`? Does `tools:node="remove"` successfully override it?
-   - Does `pubspec.yaml` contain any transitive or commented network libraries?
-   - Are there any hidden network APIs (`HttpClient`, `dart:io` `Socket`, `WebSocket`, `RawDatagramSocket`, `HttpServer`) in any file under `lib/`?
-2. Empirically verify your findings with command execution and provide output logs.
-3. State your verdict: APPROVE (if privacy claims hold under adversarial scrutiny) or REQUEST_CHANGES (if any hole/leak is found).
+Adversarially challenge the models and serialization:
+Write stress tests covering malformed JSON, missing optional fields, deep equality, copyWith mutations, and edge case inputs.
+Write your findings and verdict (APPROVE or FAIL) to handoff.md and notify parent orchestrator via send_message.
 
-Output requirements:
-- Write `progress.md` with timestamps.
-- Write `handoff.md` with your verdict, adversarial test script details, test execution results.
-- Send a message to parent summarizing your findings and verdict.
-</USER_REQUEST>

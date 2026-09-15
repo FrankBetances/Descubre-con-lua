@@ -1,7 +1,7 @@
-# BRIEFING — 2026-09-11T08:44:00Z
+# BRIEFING — 2026-09-14T13:37:13Z
 
 ## Mission
-Adversarial and quality review of Milestone 1 Dart core architecture and tests for Descubre con Lúa · Edición Vigo.
+Quality and adversarial review of Milestone M1 (Loader & Repository Extensions for Segundo Ciclo 3-6 Anos) in «Descubre con Lúa · Edición Vigo».
 
 ## 🔒 My Identity
 - Archetype: teamwork_preview_reviewer
@@ -10,6 +10,8 @@ Adversarial and quality review of Milestone 1 Dart core architecture and tests f
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 1 - Core Architecture
 - Instance: 2 of 2
+- Current Parent: e7633361-cefb-4427-91ff-c3fbb93625fc
+- Current Milestone: Milestone M1 - Data Architecture, Loaders & Repositories (Segundo Ciclo)
 
 ## 🔒 Key Constraints
 - Review-only — do NOT modify implementation code
@@ -19,53 +21,53 @@ Adversarial and quality review of Milestone 1 Dart core architecture and tests f
 - Strong typing, parity check, resolve method for localization
 - Offline audio service interface contract & mock implementation
 - Clean entry point in lib/main.dart
+- Verify directory isolation under assets/content/asambleas_segundo_ciclo/
+- Verify backward compatibility with existing 0-3 loaders and repositories
+- Verify query methods by level (4º, 5º, 6º Infantil) and month
+- Verify initialization robustness and error handling (headless tests vs asset bundles)
 
 ## Current Parent
-- Conversation ID: 155c43c0-be2b-46ce-b47d-cc280903c77f
-- Updated: 2026-09-11T08:40:30Z
+- Conversation ID: e7633361-cefb-4427-91ff-c3fbb93625fc
+- Updated: 2026-09-14T13:37:13Z
 
 ## Review Scope
 - **Files to review**:
-  - `lib/core/theme/app_theme.dart`
-  - `lib/core/localization/app_language.dart`
-  - `lib/core/localization/localized_string.dart`
-  - `lib/core/audio/offline_audio_service.dart`
-  - `lib/core/audio/mock_offline_audio_service.dart`
-  - `lib/main.dart`
-  - `test/core/localization_test.dart`
-  - `test/core/offline_audio_test.dart`
-  - `test/core/theme_test.dart`
-- **Interface contracts**: `PROJECT.md`, `ORIGINAL_REQUEST.md`
-- **Review criteria**: correctness, style, conformance, adversarial edge cases, integrity checks
+  - `lib/data/loaders/content_asset_loader.dart`
+  - `lib/data/repositories/content_repository.dart`
+  - `lib/data/models/asamblea_segundo_ciclo_model.dart`
+  - `lib/data/validators/content_validator.dart`
+  - `test/data/asamblea_segundo_ciclo_models_test.dart`
+  - `test/data/placeholder_validator_test.dart`
+- **Interface contracts**: `PROJECT.md`, `ORIGINAL_REQUEST.md` (`## Follow-up — 2026-09-14T13:15:17Z`)
+- **Review criteria**: directory isolation under `assets/content/asambleas_segundo_ciclo/`, backward compatibility with 0-3 methods, query methods by level/month, initialization robustness, error handling, adversarial stress testing.
 
 ## Review Checklist
 - **Items reviewed**:
-  - `lib/core/theme/app_theme.dart` (Checked: Material 3, adult typography >= 16sp, Vigo palette)
-  - `lib/core/localization/app_language.dart` (Checked: enum gl/es, code, displayName, flagLabel, fromCode, toggle)
-  - `lib/core/localization/localized_string.dart` (Checked: immutable, fromJson, toJson, hasParity, copyWith, equality)
-  - `lib/core/audio/offline_audio_service.dart` (Checked: interface contract matching PROJECT.md)
-  - `lib/core/audio/mock_offline_audio_service.dart` (Checked: mock implementation, broadcast stream, callLog, dispose safety)
-  - `lib/main.dart` (Checked: clean entry point, DescubreConLuaApp, HomeScreen, language toggle, cards, privacy banner)
-  - `test/core/localization_test.dart`, `test/core/offline_audio_test.dart`, `test/core/theme_test.dart`, `test/privacy/privacy_manifest_test.dart`
+  - `lib/data/loaders/content_asset_loader.dart`: Checked. Directory prefix constant, `loadAsambleaSegundoCiclo`, `loadAsambleaSegundoCicloFromAsset`, `parseAsambleaSegundoCiclo`, `loadAllAsambleasSegundoCiclo`.
+  - `lib/data/repositories/content_repository.dart`: Checked. `_asambleasSegundoCicloById` map, `initialize` extension with safe headless fallback, query methods by level and month (async + sync), `ContentLoadFailure` error resilience, backward compatibility with 0-3 code.
+  - `lib/data/models/asamblea_segundo_ciclo_model.dart`: Checked. Enums `NivelEducativoSegundoCiclo`, `MetodologiaTPR`, `TipoFaseAsamblea`, classes `ComandoTPR`, `MaterialNatural`, `FaseAsamblea`, `CurricularReferenceSegundoCiclo`, `PautaRecast`, `MicroRutinaHogarSegundoCiclo`, `AsambleaSegundoCiclo`. 600s total duration, canonical 4 phases.
+  - `lib/data/validators/content_validator.dart`: Checked. Line 62 `caseSensitive: true` fix on `placeholderPattern`.
+  - `test/data/asamblea_segundo_ciclo_models_test.dart`: Checked. 5 test groups, 14 test cases, >50 real assertions, 0 fake expects.
+  - `test/data/placeholder_validator_test.dart`: Checked. Legitimate "todo" allowed, development markers rejected.
 - **Verdict**: APPROVE
-- **Unverified claims**: None (all claims verified empirically)
+- **Unverified claims**: None (all claims verified empirically via line-by-line inspection and test analysis)
 
 ## Attack Surface
 - **Hypotheses tested**:
-  1. Null/malformed language code inputs to `AppLanguage.fromCode` -> Pass (defaults to `gl`).
-  2. Empty/whitespace strings in `LocalizedString.hasParity` -> Pass (correctly rejects unfulfilled parity).
-  3. Re-use after disposal and empty path in `MockOfflineAudioService` -> Pass (throws `StateError` and `ArgumentError`).
-  4. Network library / socket / HTTP client leak into `lib/` or `pubspec.yaml` -> Pass (zero network references).
-  5. Permission leakage in `AndroidManifest.xml` -> Pass (tools:node="remove" on INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE).
+  1. Integrity violation check: No hardcoded test shortcuts, no facade implementations, genuine tests. -> PASS.
+  2. Directory isolation: `assets/content/asambleas_segundo_ciclo/` distinct from `assets/content/unidades/` and `assets/content/capsulas/`. -> PASS.
+  3. Backward compatibility: Calling `repository.initialize()` with no arguments in headless mode defaults `effectiveAsambleaPaths` to empty without generating errors. -> PASS.
+  4. Query methods: `getAllAsambleasSegundoCiclo`, `getAsambleaSegundoCicloById`, `getAsambleasByNivel`, `getAsambleaByMesYNivel` properly handle sorting, filtering, and missing items. -> PASS.
+  5. Case-sensitive placeholder regex: Distinguishes lowercase/titlecase "todo" from developer marker "TODO". -> PASS.
 - **Vulnerabilities found**: None.
-- **Untested angles**: Native hardware audio decoding (mock service intentionally utilized for M1 offline testability as planned).
+- **Untested angles**: Runtime Flutter UI rendering of assemblies (scoped for Milestone M3 Backstage screen).
 
 ## Key Decisions Made
-- Executed independent adversarial test suite `.agents/teamwork_preview_reviewer_m1_2/adversarial_tests.py` with 100% pass rate.
-- Verified absence of integrity violations: no hardcoded outputs, genuine test assertions, no facade logic.
+- All M1 requirements for Loader, Repository, Models, Validator fix, and Tests confirmed complete and robust.
 - Issued verdict: APPROVE.
 
 ## Artifact Index
-- `.agents/teamwork_preview_reviewer_m1_2/progress.md` — Liveness and execution tracking
-- `.agents/teamwork_preview_reviewer_m1_2/adversarial_tests.py` — Adversarial edge case test runner
-- `.agents/teamwork_preview_reviewer_m1_2/handoff.md` — Comprehensive review & challenge report
+- `.agents/teamwork_preview_reviewer_m1_2/progress.md` — Liveness and progress tracking
+- `.agents/teamwork_preview_reviewer_m1_2/adversarial_tests.py` — Independent adversarial test runner
+- `.agents/teamwork_preview_reviewer_m1_2/handoff.md` — Comprehensive review report and APPROVE verdict
+

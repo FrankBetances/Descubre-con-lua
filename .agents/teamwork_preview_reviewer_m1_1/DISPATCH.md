@@ -1,33 +1,33 @@
-## 2026-09-11T08:40:07Z
+# DISPATCH — Reviewer m1_1 (Model Correctness)
 
-You are Reviewer 1 for Milestone 1 in «Descubre con Lúa · Edición Vigo».
+## Identity
+- Type: teamwork_preview_reviewer
+- Working Directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m1_1
+- Parent Conversation ID: e7633361-cefb-4427-91ff-c3fbb93625fc
 
-Your identity:
-- Archetype: teamwork_preview_reviewer
-- Role: Milestone 1 Android & Privacy Reviewer
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m1_1/
-- Project root: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+## Objective
+Review Milestone M1 implementation:
+1. MANDATORY: Read `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md` (specifically `## Follow-up — 2026-09-14T13:15:17Z`) and `.agents/teamwork_preview_orchestrator_3/PROJECT.md`.
+2. Inspect the worker's changes in:
+   - `lib/data/models/asamblea_segundo_ciclo_model.dart`
+   - `lib/data/validators/content_validator.dart`
+   - `test/data/asamblea_segundo_ciclo_models_test.dart`
+   - `test/data/placeholder_validator_test.dart`
+3. Evaluate correctness, immutability, canonical durations (90, 120, 270, 120 summing to 600s), Decreto 150/2022 constants, and placeholder regex fix (`caseSensitive: true`).
+4. Write your review verdict (`APPROVE` or `REQUEST_CHANGES`) with full technical reasoning in `handoff.md` and notify the parent orchestrator via `send_message`.
 
-Mandatory: Read ORIGINAL_REQUEST.md first:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md
+## 2026-09-14T13:37:13Z
+You are the Reviewer (Model Correctness) for Milestone M1 in «Descubre con Lúa · Edición Vigo».
+Your working directory is: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m1_1
+Your dispatch instructions are at: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_reviewer_m1_1/DISPATCH.md
 
-Read PROJECT.md for architecture and contracts:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/PROJECT.md
+MANDATORY: Read /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md before doing any work (specifically the section '## Follow-up — 2026-09-14T13:15:17Z').
+Also read /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_orchestrator_3/PROJECT.md and inspect worker_m1's changes in:
+- lib/data/models/asamblea_segundo_ciclo_model.dart
+- lib/data/validators/content_validator.dart
+- test/data/asamblea_segundo_ciclo_models_test.dart
+- test/data/placeholder_validator_test.dart
 
-Read Worker M1 handoff:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m1/handoff.md
+Review the model correctness, immutability, canonical durations (90s, 120s, 270s, 120s summing to 600s), Decreto 150/2022 constants, and placeholder regex fix.
+Write your review report and verdict (APPROVE or REQUEST_CHANGES) to handoff.md and notify parent orchestrator via send_message.
 
-Your mission:
-1. Examine Android configuration:
-   - `android/app/build.gradle` (namespace, applicationId `com.earlify.descubreconlua`, compileSdk/minSdk/targetSdk).
-   - `android/app/src/main/kotlin/com/earlify/descubreconlua/MainActivity.kt`.
-   - `android/app/src/main/AndroidManifest.xml`: strictly ZERO internet permission, verify explicit removal rules (`tools:node="remove"` for `INTERNET`, `ACCESS_NETWORK_STATE`, `ACCESS_WIFI_STATE`).
-2. Examine `pubspec.yaml`: verify zero network dependencies.
-3. Review `test/privacy/privacy_manifest_test.dart`.
-4. Run verification commands to validate file structure, manifest syntax, and absence of prohibited permissions/dependencies.
-5. Provide your verdict: APPROVE or REQUEST_CHANGES.
-
-Output requirements:
-- Write `progress.md` with timestamps.
-- Write `handoff.md` with your verdict (APPROVE or REQUEST_CHANGES), observation, logic chain, and verification method.
-- Send a message to parent summarizing your review and stating your verdict clearly.

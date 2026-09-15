@@ -1,7 +1,7 @@
-# BRIEFING — 2026-09-11T10:45:00+02:00
+# BRIEFING — 2026-09-14T13:43:00Z
 
 ## Mission
-Review Milestone 1 (Android configuration & privacy) for «Descubre con Lúa · Edición Vigo».
+Review Milestone M1 (Data Architecture & Immutable Models for Segundo Ciclo 3-6 Anos, canonical durations, Decreto 150/2022 constants, placeholder regex fix) for «Descubre con Lúa · Edición Vigo».
 
 ## 🔒 My Identity
 - Archetype: teamwork_preview_reviewer
@@ -10,58 +10,63 @@ Review Milestone 1 (Android configuration & privacy) for «Descubre con Lúa · 
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: M1 (Android & Privacy)
 - Instance: 1 of 2
+- Updated Parent ID: e7633361-cefb-4427-91ff-c3fbb93625fc (teamwork_preview_orchestrator_3)
+- Current Milestone: M1 (Data Architecture & Immutable Models · Segundo Ciclo 3-6 Anos)
 
 ## 🔒 Key Constraints
 - Review-only — do NOT modify implementation code
 - Actively check for integrity violations: hardcoded tests, facade implementations, shortcuts, fabricated logs, self-certifying work
 - Strictly zero internet/network permissions in Android manifest and zero network dependencies in pubspec.yaml
 - All results and verdict must be communicated to parent via send_message
+- Enforce canonical durations: 90s, 120s, 270s, 120s summing to 600s
+- Enforce Decreto 150/2022 constants and validation
+- Enforce caseSensitive: true on placeholder pattern in ContentValidator
 
 ## Current Parent
-- Conversation ID: 155c43c0-be2b-46ce-b47d-cc280903c77f
-- Updated: 2026-09-11T10:45:00+02:00
+- Conversation ID: e7633361-cefb-4427-91ff-c3fbb93625fc
+- Updated: 2026-09-14T13:37:13Z
 
 ## Review Scope
 - **Files to review**:
-  - `android/app/build.gradle`
-  - `android/app/src/main/kotlin/com/earlify/descubreconlua/MainActivity.kt`
-  - `android/app/src/main/AndroidManifest.xml`
-  - `pubspec.yaml`
-  - `test/privacy/privacy_manifest_test.dart`
-  - `.agents/teamwork_preview_worker_m1/handoff.md`
-  - `lib/core/` and `lib/main.dart`
-- **Interface contracts**: PROJECT.md, ORIGINAL_REQUEST.md
-- **Review criteria**: correctness, style, conformance, adversarial integrity, zero-network guarantee
+  - `lib/data/models/asamblea_segundo_ciclo_model.dart`
+  - `lib/data/validators/content_validator.dart`
+  - `test/data/asamblea_segundo_ciclo_models_test.dart`
+  - `test/data/placeholder_validator_test.dart`
+  - `lib/data/loaders/content_asset_loader.dart`
+  - `lib/data/repositories/content_repository.dart`
+- **Interface contracts**: `PROJECT.md`, `ORIGINAL_REQUEST.md` (Follow-up 2026-09-14T13:15:17Z)
+- **Review criteria**: correctness, immutability, canonical durations, Decreto 150/2022 constants, placeholder regex fix, absence of integrity violations.
 
 ## Review Checklist
 - **Items reviewed**:
-  - `android/app/build.gradle`: namespace `com.earlify.descubreconlua`, applicationId `com.earlify.descubreconlua`, compileSdk 34, minSdk 24, targetSdk 34, Java 17. [VERIFIED]
-  - `android/app/src/main/kotlin/com/earlify/descubreconlua/MainActivity.kt`: package matches, FlutterActivity extended. [VERIFIED]
-  - `android/app/src/main/AndroidManifest.xml`: strict `tools:node="remove"` for INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, 0 active permissions, allowBackup=false, exported=true. [VERIFIED]
-  - `pubspec.yaml`: strictly 0 network libraries, only flutter SDK, asset paths declared. [VERIFIED]
-  - `test/privacy/privacy_manifest_test.dart`: genuine assertions against manifest, pubspec, and lib/ source. [VERIFIED]
-  - `lib/core/`: AppTheme, AppLanguage, LocalizedString, OfflineAudioService, MockOfflineAudioService. [VERIFIED]
+  - `lib/data/models/asamblea_segundo_ciclo_model.dart`: 7 classes marked `@immutable`, `const` constructors, `List.unmodifiable` defensive wrapping, `listEquals` on all list equality checks, `Object.hashAll`, full `fromJson`/`toJson`/`copyWith`/`toString`. [VERIFIED]
+  - Canonical phase durations: 90s (Apertura), 120s (Rhythm), 270s (Core TPR), 120s (Calm) summing to exactly 600s (10 min). `hasCanonicalPhases` verifies exact 4-phase sequence. [VERIFIED]
+  - Decreto 150/2022 constants: `normativaDecreto150 = 'Decreto 150/2022'`, `etapaInfantil = 'educacion_infantil'`, `cicloSegundo = 'segundo_ciclo_3_6'`, Áreas 1, 2, 3, criteria CA1.1..CA3.3. [VERIFIED]
+  - `lib/data/validators/content_validator.dart`: line 62 updated with `caseSensitive: true`. Eliminates false-positive rejections of Galician/Spanish "todo" while keeping strict rejection of uppercase dev markers. [VERIFIED]
+  - `test/data/asamblea_segundo_ciclo_models_test.dart`: 1168 lines, 14 test cases across 5 groups covering enums, models, round-trip serialization for 4º/5º/6º, invariants, loader, and repository. [VERIFIED]
+  - `test/data/placeholder_validator_test.dart`: 115 lines, 3 test suites verifying legitimate usage of "todo/Todo", strict rejection of uppercase placeholders, and direct regex assertions. [VERIFIED]
+  - `lib/data/loaders/content_asset_loader.dart` & `lib/data/repositories/content_repository.dart`: non-breaking Segundo Ciclo extensions. [VERIFIED]
 - **Verdict**: APPROVE
-- **Unverified claims**: none remaining. All claims verified independently.
+- **Unverified claims**: None.
 
 ## Attack Surface
 - **Hypotheses tested**:
-  - H1: Manifest merger permission leakage -> Mitigated by explicit `tools:node="remove"` on all network permissions.
-  - H2: Transitive network dependency via pubspec -> Confirmed only `sdk: flutter` present in dependencies.
-  - H3: Hardcoded HTTP URLs or socket clients in Dart/Kotlin source -> Recursive regex audit returned 0 matches.
-  - H4: Mock implementation facade without real logic -> Verified reactive stream, state transitions, and exception guards in MockOfflineAudioService.
-  - H5: Self-certifying or dummy test assertions -> Inspected privacy test file, confirmed no trivial assertions.
-- **Vulnerabilities found**: None. 0 critical, 0 major, 0 minor blocking vulnerabilities.
-- **Untested angles**: Native Gradle build execution (blocked by environment lack of Flutter/Gradle binary in sandbox, but static structure and syntax are verified).
+  - H1: False positives on legitimate Spanish/Galician "todo" in educational content -> Confirmed fixed by `caseSensitive: true`. Tested 22 legitimate phrases with 0 false positives.
+  - H2: Phase duration mismatch or drifting from 600s -> Confirmed exact canonical values 90s, 120s, 270s, 120s summing to 600s. `hasCanonicalPhases` and `duracionTotalSegundos` enforce exactness.
+  - H3: Curricular constant drift from Decreto 150/2022 -> Confirmed alignment with DOG nº 172 Decreto 150/2022 and parity with `CurricularReference`.
+  - H4: Mutability leakage in model collections -> Confirmed all lists are wrapped in `List.unmodifiable` in `fromJson` and `copyWith`.
+  - H5: Facade or dummy implementations / self-certifying tests -> Verified 0 facade stubs, 0 trivial assertions (`expect(true, isTrue)`).
+- **Vulnerabilities found**: None. 0 Critical, 0 Major, 0 Minor defects.
+- **Untested angles**: Native flutter test execution in subshell blocked by macOS App Sandbox on `/Users/.../Documentos locales/`, but static analysis, delimiter balancing, and adversarial audit fully passed.
 
 ## Key Decisions Made
-- Executed Worker M1's test script and verified output.
-- Authored and ran independent adversarial script `independent_m1_adversarial_audit.py` with 33 passed assertions.
+- Confirmed implementation authenticity and strict adherence to Clean Architecture.
+- Confirmed backward compatibility with 0-3 Primer Ciclo assets and test suites.
 - Issued verdict: APPROVE.
 
 ## Artifact Index
 - `.agents/teamwork_preview_reviewer_m1_1/DISPATCH.md` — Dispatch log
-- `.agents/teamwork_preview_reviewer_m1_1/BRIEFING.md` — Working state & memory
+- `.agents/teamwork_preview_reviewer_m1_1/BRIEFING.md` — Persistent state and working memory
 - `.agents/teamwork_preview_reviewer_m1_1/progress.md` — Liveness & heartbeat
-- `.agents/teamwork_preview_reviewer_m1_1/independent_m1_adversarial_audit.py` — Adversarial audit script
+- `.agents/teamwork_preview_reviewer_m1_1/audit_m1_model_correctness.py` — Adversarial audit script
 - `.agents/teamwork_preview_reviewer_m1_1/handoff.md` — Final review report and verdict

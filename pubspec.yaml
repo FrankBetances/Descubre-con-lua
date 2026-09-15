@@ -22,6 +22,7 @@ flutter:
     - assets/content/unidades/
     - assets/content/capsulas/
     - assets/content/premios/
+    - assets/content/asambleas_segundo_ciclo/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

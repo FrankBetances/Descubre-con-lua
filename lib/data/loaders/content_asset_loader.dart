@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
 import '../models/unidad_model.dart';
 
@@ -29,6 +30,18 @@ class ContentAssetLoader {
   /// Canonical base capsule path.
   static const String baseCapsulaHablar01 =
       'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json';
+
+  /// Default asset path prefix for Segundo Ciclo assemblies (3-6 years).
+  static const String asambleasSegundoCicloAssetPrefix =
+      'assets/content/asambleas_segundo_ciclo/';
+
+  /// Canonical base assembly paths for September pilot month.
+  static const String baseAsambleaSetembro4 =
+      'assets/content/asambleas_segundo_ciclo/asamblea.setembro.4_infantil.json';
+  static const String baseAsambleaSetembro5 =
+      'assets/content/asambleas_segundo_ciclo/asamblea.setembro.5_infantil.json';
+  static const String baseAsambleaSetembro6 =
+      'assets/content/asambleas_segundo_ciclo/asamblea.setembro.6_infantil.json';
 
   /// Loads and parses an [Unidad] from an asset path.
   Future<Unidad> loadUnidadFromAsset(String assetPath) async {
@@ -76,6 +89,38 @@ class ContentAssetLoader {
     for (final path in assetPaths) {
       final capsula = await loadCapsulaFromAsset(path);
       list.add(capsula);
+    }
+    return List.unmodifiable(list);
+  }
+
+  /// Loads and parses an [AsambleaSegundoCiclo] from an asset path.
+  Future<AsambleaSegundoCiclo> loadAsambleaSegundoCiclo(String assetPath) async {
+    final jsonString = await _stringLoader(assetPath);
+    return parseAsambleaSegundoCiclo(jsonString);
+  }
+
+  /// Alias for [loadAsambleaSegundoCiclo] matching [loadUnidadFromAsset] nomenclature.
+  Future<AsambleaSegundoCiclo> loadAsambleaSegundoCicloFromAsset(
+          String assetPath) =>
+      loadAsambleaSegundoCiclo(assetPath);
+
+  /// Parses an [AsambleaSegundoCiclo] from a raw JSON string.
+  AsambleaSegundoCiclo parseAsambleaSegundoCiclo(String rawJson) {
+    final dynamic decoded = jsonDecode(rawJson);
+    if (decoded is! Map<String, dynamic>) {
+      throw const FormatException(
+          'Expected JSON object at root for AsambleaSegundoCiclo');
+    }
+    return AsambleaSegundoCiclo.fromJson(decoded);
+  }
+
+  /// Loads multiple [AsambleaSegundoCiclo] instances from a list of asset paths.
+  Future<List<AsambleaSegundoCiclo>> loadAllAsambleasSegundoCiclo(
+      List<String> assetPaths) async {
+    final List<AsambleaSegundoCiclo> list = [];
+    for (final path in assetPaths) {
+      final asamblea = await loadAsambleaSegundoCiclo(path);
+      list.add(asamblea);
     }
     return List.unmodifiable(list);
   }

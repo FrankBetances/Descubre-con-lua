@@ -1,35 +1,43 @@
-## 2026-09-11T08:18:21Z
+# Dispatch for teamwork_preview_spec_miner_survey_1
 
-You are the Spec Miner for Requirements & Content Standards in «Descubre con Lúa · Edición Vigo».
+## Task
+You are teamwork_preview_spec_miner_survey_1.
+Your working directory is:
+/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1
 
-Your identity:
-- Archetype: teamwork_preview_spec_miner
-- Role: Spec Miner Requirements
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/
-- Project root: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+The project workspace root is:
+/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
 
-Mandatory: Read ORIGINAL_REQUEST.md first:
-/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md
+Authoritative user request:
+/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md
 
-Your mission in this survey phase:
-1. Probe and analyze all functional, pedagogical, curricular, and bilingual requirements from ORIGINAL_REQUEST.md.
-2. Specifically analyze R2 Content-as-Data layer requirements:
-   - Data models required for thematic units: `Unidad`, `Vocabulario`, `Actividad`, `Preguntas`, `Exploracion`, `Matematicas`, `PuenteCasa`, `Revision`.
-   - Data models required for Academy capsules: `Capsula`, `Bloque`, `Afirmacion`, `Revision`.
-   - The required JSON asset structure and exact schema for:
-     - `assets/content/unidades/juega.mar.01.json` (Vigo maritime exploration unit).
-     - `assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json` (family communicative development capsule).
-3. Analyze the curricular alignment with Decreto 150/2022 (educación infantil en Galicia, primer ciclo 0-3 años):
-   - What curricular areas, competencies, and criteria apply to 0-3 years in Galicia?
-   - How should units and capsules reference Decreto 150/2022?
-4. Define the strict rules and exact terminology dictionary for:
-   - Prohibited clinical / diagnostic terms (purely educational and family context 0-3 years; e.g. trastorno, patología, diagnóstico, síntoma, déficit, paciente, terapia, tratamiento, retraso clínico, etc.).
-   - Strict 1:1 bilingual parity between Galician (`gl`) and Spanish (`es`) across all text fields.
-5. Define the requirements for the automated validator suite (unit tests in `test/data/`):
-   - Schema validation, bilingual 1:1 completeness, referential integrity of audio files, curricular reference checks, clinical term blocker.
+Read the follow-up request dated 2026-09-13T09:04:47Z and the initial request.
+Investigate the specifications, curriculum (Decreto 150/2022, 10 meses), content models, audio requirements (LJSpeech · piper for English, Celtia · Proxecto Nós for Galician), moments of session (apertura, fingerplay/concentración, núcleo TPR en inglés con pronunciación LJSpeech, y cierre afectivo), and dual flow requirements (Aula/Asamblea vs Hogar/Academy).
 
-Output requirements:
-- Write your comprehensive findings to `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/analysis.md`
-- Write your summary and recommendations to `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/handoff.md`
-- Update `progress.md` in your working directory with timestamps regularly.
-- When finished, send a message to parent summarizing your findings and pointing to handoff.md.
+Write your findings and specification inventory in:
+/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/handoff.md
+
+Follow the Handoff Protocol:
+- Observation
+- Logic Chain
+- Caveats
+- Conclusion
+- Verification Method
+
+Notify your parent via send_message when complete.
+
+## 2026-09-13T09:06:16Z
+You are teamwork_preview_spec_miner_survey_1.
+Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1
+Workspace root: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+
+Read /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/DISPATCH.md and /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md.
+
+Investigate the specifications, curriculum (Decreto 150/2022, 10 meses), content models, audio requirements (LJSpeech · piper for English, Celtia · Proxecto Nós for Galician), moments of session (apertura, fingerplay/concentración, núcleo TPR en inglés con pronunciación LJSpeech, y cierre afectivo), and dual flow requirements (Aula/Asamblea vs Hogar/Academy).
+
+Write your findings and specification inventory to:
+/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/handoff.md
+
+Follow the Handoff Protocol (Observation, Logic Chain, Caveats, Conclusion, Verification Method).
+When done, notify parent via send_message.
+

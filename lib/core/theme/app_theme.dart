@@ -33,6 +33,19 @@ class AppTheme {
   static const Color star = Color(0xFFFACC15);
   static const Color dark = Color(0xFF0B1220);
 
+  // ---------------------------------------------------- backstage (docente)
+  /// Fondo ultra-escuro para o asistente entre bastidores do docente (sen brillo para o alumnado).
+  static const Color backstageBg = Color(0xFF0B1220);
+  static const Color backstageSurface = Color(0xFF131D31);
+  static const Color backstageSurfaceElevated = Color(0xFF1E293B);
+  static const Color backstageBorder = Color(0xFF2E3D5B);
+  static const Color backstageTextPrimary = Color(0xFFF8FAFC);
+  static const Color backstageTextSecondary = Color(0xFF94A3B8);
+  static const Color backstageTextMuted = Color(0xFF64748B);
+  static const Color backstageAccent = Color(0xFF00C4BE);
+  static const Color backstageWarning = Color(0xFFF59E0B);
+  static const double backstageTouchMin = 64.0;
+
   /// Turquesa para barras y cabeceras CON texto blanco.
   ///
   /// Existe por una medición: el blanco sobre el turquesa de marca da 2,18:1,
@@ -285,6 +298,57 @@ class AppTheme {
         color: primary,
         linearTrackColor: border,
         linearMinHeight: 10,
+      ),
+    );
+  }
+
+  /// Tema escuro de trasteira (Backstage) para a xestión da asemblea polo docente.
+  ///
+  /// Cero distraccións nin emisión lumínica cara aos nenos. Tipografías amplas (>= 26sp en títulos
+  /// e comandos), contraste AAA sobre fondo #0B1220 e botóns táctiles amplos (>= 64dp).
+  static ThemeData get backstageDarkTheme {
+    const colorScheme = ColorScheme(
+      brightness: Brightness.dark,
+      primary: backstageAccent,
+      onPrimary: backstageBg,
+      secondary: primaryLight,
+      onSecondary: backstageBg,
+      tertiary: backstageWarning,
+      onTertiary: backstageBg,
+      error: error,
+      onError: Colors.white,
+      surface: backstageBg,
+      onSurface: backstageTextPrimary,
+      surfaceContainerHighest: backstageSurface,
+      onSurfaceVariant: backstageTextSecondary,
+      outline: backstageBorder,
+    );
+
+    return ThemeData(
+      useMaterial3: true,
+      fontFamily: fontFamily,
+      colorScheme: colorScheme,
+      scaffoldBackgroundColor: backstageBg,
+      canvasColor: backstageBg,
+      cardTheme: CardThemeData(
+        color: backstageSurface,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(radiusCard),
+          side: const BorderSide(color: backstageBorder, width: 1.5),
+        ),
+      ),
+      appBarTheme: const AppBarTheme(
+        backgroundColor: backstageBg,
+        foregroundColor: backstageTextPrimary,
+        elevation: 0,
+        centerTitle: false,
+        titleTextStyle: TextStyle(
+          fontFamily: fontFamily,
+          fontSize: 22.0,
+          fontWeight: FontWeight.w800,
+          color: backstageTextPrimary,
+        ),
       ),
     );
   }

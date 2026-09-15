@@ -1,6 +1,7 @@
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 
 import '../loaders/content_asset_loader.dart';
+import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
 import '../models/unidad_model.dart';
 
@@ -23,8 +24,15 @@ class ContentRepository {
   final ContentAssetLoader _loader;
   final Map<String, Unidad> _unidadesById = {};
   final Map<String, Capsula> _capsulasById = {};
+  final Map<String, AsambleaSegundoCiclo> _asambleasSegundoCicloById = {};
   final List<ContentLoadFailure> _loadErrors = [];
   bool _isInitialized = false;
+
+  /// Synchronization latch preventing concurrent redundant initializations.
+  Future<void>? _initFuture;
+
+  /// Generation counter to safely invalidate in-flight initialization if [clear] is called.
+  int _initGeneration = 0;
 
   ContentRepository({ContentAssetLoader? loader})
       : _loader = loader ?? ContentAssetLoader();
@@ -47,19 +55,68 @@ class ContentRepository {
   /// Total count of loaded capsules.
   int get capsuleCount => _capsulasById.length;
 
+  /// Total count of loaded Segundo Ciclo assemblies.
+  int get asambleaSegundoCicloCount => _asambleasSegundoCicloById.length;
+
   /// Initializes the repository by loading assets from default or specified paths.
   ///
   /// With no paths given the catalogue is discovered from the bundle, so adding
   /// a unit or a capsule is a matter of dropping a JSON file into
   /// `assets/content/` — it used to require editing Dart, which is the opposite
   /// of content-as-data.
+  ///
+  /// A synchronization latch [_initFuture] ensures that multiple concurrent
+  /// async queries share the exact same initialization process without duplicate
+  /// file I/O or race conditions.
   Future<void> initialize({
     List<String>? unidadPaths,
     List<String>? capsulaPaths,
+    List<String>? asambleaSegundoCicloPaths,
+    bool forceReload = false,
+  }) {
+    if (!forceReload) {
+      if (_isInitialized &&
+          unidadPaths == null &&
+          capsulaPaths == null &&
+          asambleaSegundoCicloPaths == null) {
+        return Future.value();
+      }
+      if (_initFuture != null) {
+        return _initFuture!;
+      }
+    }
+
+    final generation = ++_initGeneration;
+    final future = _loadContent(
+      generation: generation,
+      unidadPaths: unidadPaths,
+      capsulaPaths: capsulaPaths,
+      asambleaSegundoCicloPaths: asambleaSegundoCicloPaths,
+    );
+
+    final latchedFuture = future.whenComplete(() {
+      if (!_isInitialized || generation != _initGeneration) {
+        _initFuture = null;
+      }
+    });
+
+    _initFuture = latchedFuture;
+    return latchedFuture;
+  }
+
+  Future<void> _loadContent({
+    required int generation,
+    List<String>? unidadPaths,
+    List<String>? capsulaPaths,
+    List<String>? asambleaSegundoCicloPaths,
   }) async {
-    final discovered = (unidadPaths == null || capsulaPaths == null)
+    final discovered = (unidadPaths == null ||
+            capsulaPaths == null ||
+            asambleaSegundoCicloPaths == null)
         ? await _discover()
         : null;
+
+    if (generation != _initGeneration) return;
 
     final effectiveUnidadPaths = unidadPaths ??
         (discovered?.unidades.isNotEmpty ?? false
@@ -69,14 +126,19 @@ class ContentRepository {
         (discovered?.capsulas.isNotEmpty ?? false
             ? discovered!.capsulas
             : [ContentAssetLoader.baseCapsulaHablar01]);
+    final effectiveAsambleaPaths = asambleaSegundoCicloPaths ??
+        (discovered?.asambleasSegundoCiclo ?? const []);
 
     _unidadesById.clear();
     _capsulasById.clear();
+    _asambleasSegundoCicloById.clear();
     _loadErrors.clear();
 
     for (final path in effectiveUnidadPaths) {
+      if (generation != _initGeneration) return;
       try {
         final unidad = await _loader.loadUnidadFromAsset(path);
+        if (generation != _initGeneration) return;
         _unidadesById[unidad.id] = unidad;
       } catch (e) {
         // A file that fails to load used to vanish without a trace, leaving an
@@ -87,15 +149,30 @@ class ContentRepository {
     }
 
     for (final path in effectiveCapsulaPaths) {
+      if (generation != _initGeneration) return;
       try {
         final capsula = await _loader.loadCapsulaFromAsset(path);
+        if (generation != _initGeneration) return;
         _capsulasById[capsula.id] = capsula;
       } catch (e) {
         _loadErrors.add(ContentLoadFailure(path, e.toString()));
       }
     }
 
-    _isInitialized = true;
+    for (final path in effectiveAsambleaPaths) {
+      if (generation != _initGeneration) return;
+      try {
+        final asamblea = await _loader.loadAsambleaSegundoCiclo(path);
+        if (generation != _initGeneration) return;
+        _asambleasSegundoCicloById[asamblea.id] = asamblea;
+      } catch (e) {
+        _loadErrors.add(ContentLoadFailure(path, e.toString()));
+      }
+    }
+
+    if (generation == _initGeneration) {
+      _isInitialized = true;
+    }
   }
 
   // --- UNIDADES (Juega con Lúa · Aula) ---
@@ -196,6 +273,77 @@ class ContentRepository {
     return Bloque.byId(cleanId);
   }
 
+  // --- ASAMBLEAS SEGUNDO CICLO (3-6 anos · Infantil 4º, 5º, 6º) ---
+
+  /// Returns all available Segundo Ciclo assemblies sorted by month and level.
+  Future<List<AsambleaSegundoCiclo>> getAllAsambleasSegundoCiclo() async {
+    if (!_isInitialized) {
+      await initialize();
+    }
+    return getAllAsambleasSegundoCicloSync();
+  }
+
+  /// Synchronous retrieval of all loaded Segundo Ciclo assemblies.
+  List<AsambleaSegundoCiclo> getAllAsambleasSegundoCicloSync() {
+    final list = _asambleasSegundoCicloById.values.toList();
+    list.sort((a, b) {
+      final cmpMes = a.mes.compareTo(b.mes);
+      if (cmpMes != 0) return cmpMes;
+      return a.nivel.index.compareTo(b.nivel.index);
+    });
+    return List.unmodifiable(list);
+  }
+
+  /// Finds a specific Segundo Ciclo assembly by its unique identifier.
+  Future<AsambleaSegundoCiclo?> getAsambleaSegundoCicloById(String id) async {
+    if (!_isInitialized) {
+      await initialize();
+    }
+    return getAsambleaSegundoCicloByIdSync(id);
+  }
+
+  /// Synchronous lookup of a Segundo Ciclo assembly by its ID.
+  AsambleaSegundoCiclo? getAsambleaSegundoCicloByIdSync(String id) {
+    return _asambleasSegundoCicloById[id.trim()];
+  }
+
+  /// Filters Segundo Ciclo assemblies by educational level (4º, 5º, or 6º).
+  Future<List<AsambleaSegundoCiclo>> getAsambleasByNivel(
+      NivelEducativoSegundoCiclo nivel) async {
+    if (!_isInitialized) {
+      await initialize();
+    }
+    return getAsambleasByNivelSync(nivel);
+  }
+
+  /// Synchronous filter of Segundo Ciclo assemblies by educational level.
+  List<AsambleaSegundoCiclo> getAsambleasByNivelSync(
+      NivelEducativoSegundoCiclo nivel) {
+    final list = _asambleasSegundoCicloById.values
+        .where((a) => a.nivel == nivel)
+        .toList();
+    list.sort((a, b) => a.mes.compareTo(b.mes));
+    return List.unmodifiable(list);
+  }
+
+  /// Finds a Segundo Ciclo assembly for a specific curricular month and level.
+  Future<AsambleaSegundoCiclo?> getAsambleaByMesYNivel(
+      int mes, NivelEducativoSegundoCiclo nivel) async {
+    if (!_isInitialized) {
+      await initialize();
+    }
+    return getAsambleaByMesYNivelSync(mes, nivel);
+  }
+
+  /// Synchronous lookup by month and level.
+  AsambleaSegundoCiclo? getAsambleaByMesYNivelSync(
+      int mes, NivelEducativoSegundoCiclo nivel) {
+    for (final a in _asambleasSegundoCicloById.values) {
+      if (a.mes == mes && a.nivel == nivel) return a;
+    }
+    return null;
+  }
+
   // --- IN-MEMORY & TEST HELPER METHODS ---
 
   /// Adds or updates an [Unidad] directly in memory (for tests and mocking).
@@ -210,10 +358,19 @@ class ContentRepository {
     _isInitialized = true;
   }
 
-  /// Clears all cached content.
+  /// Adds or updates an [AsambleaSegundoCiclo] directly in memory (for tests and mocking).
+  void addAsambleaSegundoCiclo(AsambleaSegundoCiclo asamblea) {
+    _asambleasSegundoCicloById[asamblea.id] = asamblea;
+    _isInitialized = true;
+  }
+
+  /// Clears all cached content across Primer and Segundo Ciclo.
   void clear() {
+    _initGeneration++;
+    _initFuture = null;
     _unidadesById.clear();
     _capsulasById.clear();
+    _asambleasSegundoCicloById.clear();
     _loadErrors.clear();
     _isInitialized = false;
   }
@@ -239,9 +396,18 @@ class ContentRepository {
                 (a) => isJsonUnder(a, ContentAssetLoader.capsulasAssetPrefix))
             .toList()
           ..sort()),
+        asambleasSegundoCiclo: (assets
+            .where((a) => isJsonUnder(
+                a, ContentAssetLoader.asambleasSegundoCicloAssetPrefix))
+            .toList()
+          ..sort()),
       );
     } catch (_) {
-      return const _DiscoveredContent(unidades: [], capsulas: []);
+      return const _DiscoveredContent(
+        unidades: [],
+        capsulas: [],
+        asambleasSegundoCiclo: [],
+      );
     }
   }
 }
@@ -249,6 +415,11 @@ class ContentRepository {
 class _DiscoveredContent {
   final List<String> unidades;
   final List<String> capsulas;
+  final List<String> asambleasSegundoCiclo;
 
-  const _DiscoveredContent({required this.unidades, required this.capsulas});
+  const _DiscoveredContent({
+    required this.unidades,
+    required this.capsulas,
+    this.asambleasSegundoCiclo = const [],
+  });
 }

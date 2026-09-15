@@ -1,3 +1,4 @@
+import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
 import '../models/curricular_model.dart';
 
@@ -59,7 +60,7 @@ class ContentValidator {
   /// Prohibited placeholder patterns that indicate incomplete text.
   static final RegExp placeholderPattern = RegExp(
     r'\b(TODO|TBD|PLACEHOLDER|PENDIENTE|PENDENTE|LOREM\s+IPSUM)\b',
-    caseSensitive: false,
+    caseSensitive: true,
   );
 
   /// Valid audio asset extensions for offline playback.
@@ -288,9 +289,10 @@ class ContentValidator {
     }
 
     final ciclo = curriculo['ciclo']?.toString().trim();
-    if (ciclo != CurricularReference.ciclo03) {
+    final isSegundoCiclo = ciclo == CurricularReferenceSegundoCiclo.cicloSegundo;
+    if (ciclo != CurricularReference.ciclo03 && !isSegundoCiclo) {
       errors.add(
-        '${prefix}curriculo.ciclo must be "${CurricularReference.ciclo03}" (got: "$ciclo")',
+        '${prefix}curriculo.ciclo must be "${CurricularReference.ciclo03}" or "${CurricularReferenceSegundoCiclo.cicloSegundo}" (got: "$ciclo")',
       );
     }
 
@@ -300,9 +302,12 @@ class ContentValidator {
     } else {
       for (final area in areas) {
         final areaStr = area.toString().trim();
-        if (!CurricularReference.validAreas.contains(areaStr)) {
+        final validAreas = isSegundoCiclo
+            ? CurricularReferenceSegundoCiclo.validAreas
+            : CurricularReference.validAreas;
+        if (!validAreas.contains(areaStr)) {
           errors.add(
-            '${prefix}curriculo.areas contains unrecognized area "$areaStr". Valid areas: ${CurricularReference.validAreas.toList()}',
+            '${prefix}curriculo.areas contains unrecognized area "$areaStr". Valid areas: ${validAreas.toList()}',
           );
         }
       }
@@ -314,11 +319,14 @@ class ContentValidator {
       errors.add(
           '${prefix}curriculo.criteriosEvaluacion must be a non-empty list');
     } else {
+      final validCriterios = isSegundoCiclo
+          ? CurricularReferenceSegundoCiclo.validCriteriosSegundoCiclo
+          : CurricularReference.validCriterios;
       for (final crit in criterios) {
         final critStr = crit.toString().trim();
-        if (!CurricularReference.validCriterios.contains(critStr)) {
+        if (!validCriterios.contains(critStr)) {
           errors.add(
-            '${prefix}curriculo.criteriosEvaluacion contains unrecognized criterion "$critStr". Valid criteria: ${CurricularReference.validCriterios.toList()}',
+            '${prefix}curriculo.criteriosEvaluacion contains unrecognized criterion "$critStr". Valid criteria: ${validCriterios.toList()}',
           );
         }
       }
@@ -522,6 +530,197 @@ class ContentValidator {
       errors.add(
         '$prefix$path: Audio asset path must begin with one of $bundledPrefixes (got: "$pathStr")',
       );
+    }
+  }
+
+  /// Validates a complete [AsambleaSegundoCiclo] JSON document.
+  ValidationResult validateAsambleaSegundoCicloJson(
+    Map<String, dynamic> json, {
+    String sourcePath = '',
+  }) {
+    final List<String> errors = [];
+    final List<String> warnings = [];
+
+    final prefix = sourcePath.isNotEmpty ? '[$sourcePath] ' : '';
+
+    // 1. Root structure
+    if (!json.containsKey('id') ||
+        json['id'] is! String ||
+        (json['id'] as String).trim().isEmpty) {
+      errors.add(
+          '${prefix}Missing or empty root "id": must be a non-empty string');
+    }
+
+    final nivelStr = json['nivel']?.toString().trim();
+    if (nivelStr == null || nivelStr.isEmpty) {
+      errors.add('${prefix}Missing required "nivel"');
+    } else if (nivelStr != '4_infantil' &&
+        nivelStr != '5_infantil' &&
+        nivelStr != '6_infantil') {
+      errors.add(
+          '${prefix}Invalid "nivel": "$nivelStr" (expected 4_infantil, 5_infantil, or 6_infantil)');
+    }
+
+    final mes = json['mes'];
+    if (mes is! int || mes < 1 || mes > 12) {
+      errors.add(
+          '${prefix}Invalid or missing "mes": must be an integer between 1 and 12');
+    }
+
+    final metodologiaStr = json['metodologiaTpr']?.toString().trim() ??
+        json['metodologia_tpr']?.toString().trim();
+    if (metodologiaStr == null || metodologiaStr.isEmpty) {
+      errors.add('${prefix}Missing required "metodologiaTpr"');
+    } else {
+      const validMetodologias = [
+        'accion_expandida',
+        'dramatizado_narrativo',
+        'transaccional_pragmatico',
+      ];
+      if (!validMetodologias.contains(metodologiaStr.toLowerCase())) {
+        errors.add(
+            '${prefix}Invalid "metodologiaTpr": "$metodologiaStr". Valid values: $validMetodologias');
+      }
+    }
+
+    // 2. Bilingual parity check across entire tree
+    checkBilingualParity(json, path: 'root', errors: errors, prefix: prefix);
+
+    // 3. Clinical term blacklist check across entire tree
+    checkClinicalTerms(json, path: 'root', errors: errors, prefix: prefix);
+
+    // 4. Curricular alignment (Decreto 150/2022)
+    final curriculo = _asMap(json['curriculo'] ?? json['curricular']);
+    if (curriculo == null) {
+      errors.add('${prefix}Missing required "curriculo" section');
+    } else {
+      checkCurricularAlignment(curriculo, errors: errors, prefix: prefix);
+    }
+
+    // 5. Referential integrity and required 4 phases
+    checkReferentialIntegrityAsamblea(json,
+        errors: errors, warnings: warnings, prefix: prefix);
+
+    return errors.isEmpty
+        ? ValidationResult.success(warnings: warnings)
+        : ValidationResult.failure(errors, warnings: warnings);
+  }
+
+  /// Verifies structural integrity of the 4 canonical phases of an assembly session.
+  void checkReferentialIntegrityAsamblea(
+    Map<String, dynamic> json, {
+    required List<String> errors,
+    required List<String> warnings,
+    String prefix = '',
+  }) {
+    final rawFases = json['fases'];
+    if (rawFases is! List) {
+      errors.add('${prefix}Missing or invalid "fases": must be a list');
+      return;
+    }
+
+    if (rawFases.length != 4) {
+      errors.add(
+          '${prefix}Assembly must have exactly 4 canonical phases (got ${rawFases.length})');
+      return;
+    }
+
+    final expectedTypes = [
+      'apertura_saudo',
+      'movement_rhythm_focus',
+      'core_tpr_challenge',
+      'calma_transicion',
+    ];
+    final expectedDurations = [90, 120, 270, 120];
+
+    int totalDuration = 0;
+
+    for (var i = 0; i < 4; i++) {
+      final fase = _asMap(rawFases[i]);
+      if (fase == null) {
+        errors.add('${prefix}fases[$i] is not a valid JSON object');
+        continue;
+      }
+
+      final orden = fase['orden'];
+      if (orden != i + 1) {
+        errors.add('${prefix}fases[$i].orden must be ${i + 1} (got: $orden)');
+      }
+
+      final tipo = fase['tipo']?.toString().trim();
+      if (tipo != expectedTypes[i]) {
+        errors.add(
+            '${prefix}fases[$i].tipo must be "${expectedTypes[i]}" (got: "$tipo")');
+      }
+
+      final duracion = fase['duracionSegundos'] ?? fase['duracion_segundos'];
+      if (duracion is! int || duracion != expectedDurations[i]) {
+        errors.add(
+            '${prefix}fases[$i].duracionSegundos must be exactly ${expectedDurations[i]}s (got: $duracion)');
+      } else {
+        totalDuration += duracion;
+      }
+
+      // Phase 3 (Core TPR Challenge) must contain L3 commands
+      if (i == 2) {
+        final comandos = fase['comandosL3'] ?? fase['comandos_l3'];
+        if (comandos is! List || comandos.isEmpty) {
+          errors.add(
+              '${prefix}Phase 3 (Core TPR Challenge) must contain at least 1 L3 command');
+        } else {
+          for (var cIdx = 0; cIdx < comandos.length; cIdx++) {
+            final cmd = _asMap(comandos[cIdx]);
+            if (cmd == null) {
+              errors.add('${prefix}comandosL3[$cIdx] is not a valid object');
+              continue;
+            }
+            final textoIngles = cmd['textoIngles']?.toString().trim() ??
+                cmd['texto_ingles']?.toString().trim();
+            if (textoIngles == null || textoIngles.isEmpty) {
+              errors.add(
+                  '${prefix}comandosL3[$cIdx] missing required "textoIngles"');
+            }
+            final audioAsset = cmd['audioAsset']?.toString().trim() ??
+                cmd['audio_asset']?.toString().trim();
+            if (audioAsset != null && audioAsset.isNotEmpty) {
+              _checkAudioPath(audioAsset,
+                  path: 'comandosL3[$cIdx].audioAsset',
+                  errors: errors,
+                  prefix: prefix);
+            }
+          }
+        }
+      }
+    }
+
+    if (totalDuration != 600) {
+      errors.add(
+          '${prefix}Total assembly duration must sum exactly 600 seconds / 10 minutes (got $totalDuration s)');
+    }
+
+    // Check natural materials safety notice
+    final materiales = json['materialesEntorno'] ?? json['materiales_entorno'];
+    if (materiales is List) {
+      for (var mIdx = 0; mIdx < materiales.length; mIdx++) {
+        final mat = _asMap(materiales[mIdx]);
+        if (mat != null) {
+          final aviso = mat['avisoSeguridad'] ?? mat['aviso_seguridad'];
+          if (aviso == null) {
+            errors.add(
+                '${prefix}materialesEntorno[$mIdx] missing required "avisoSeguridad"');
+          }
+        }
+      }
+    }
+
+    // Check home micro-routine
+    final rutina = json['microRutinaHogar'] ?? json['micro_rutina_hogar'];
+    if (rutina != null && rutina is Map) {
+      final pautas = rutina['pautasRecast'] ?? rutina['pautas_recast'];
+      if (pautas is! List || pautas.isEmpty) {
+        errors.add(
+            '${prefix}microRutinaHogar must contain at least one recast guideline ("pautasRecast")');
+      }
     }
   }
 }
