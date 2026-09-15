@@ -22,12 +22,13 @@ salió al correrlo por primera vez.
 
 | Área | Evidencia |
 | --- | --- |
-| Gates locales | `tools/gates.sh --fast` → **13 de 14 en verde** (el que falta, abajo) |
+| Gates locales | `tools/gates.sh --fast` → **14 de 14 en verde**, con el manual y la voz dentro |
 | Suite completa | `flutter test --exclude-tags capturas` → **332 tests, 0 fallos** |
 | Análisis y formato | `flutter analyze` → *No issues found* · `dart format` limpio |
 | La rama de origen NO compilaba | `flutter analyze` sobre `origin/mejora` en un worktree aparte → **12 errores** en `recast_guia_card.dart` y 3 en tests. Sus `GATE_STATUS.md` decían «PASS» y «CLEAN»: eran agentes aprobándose entre ellos, con `handoff.md` por única fuente |
 | Desborde real, cazado y rehecho | El selector de ciclo desbordaba **224 px** a escala 1,3 (`filtro_edad_test.dart`). El stepper de fases medía **1387 px** de ancho: las fases 3 y 4 caían fuera de la pantalla y no había manera de pulsarlas. Las dos piezas rehechas, no apretadas |
 | Imágenes, **miradas** | `docs/capturas/aula-backstage-{gl,es}.png` y `academy-micro-rutina-{gl,es}.png`, generadas con el motor real |
+| README y manual | La etapa 3-6 descrita en los dos. El manual suma **CU-12** (conducir la asamblea matinal de 2.º ciclo) y **CU-17** (la micro-rutina en casa), el mapa de la app, dos pares de capturas y los límites reales. PDF y Word regenerados; `check_manual_build.py` en verde. Los rótulos de CU-12 se contrastaron contra el código: el manual llegó a citar un botón —«Comezar a asemblea»— que no existe |
 | Fuga R4 | `grep` sobre el árbol entero → **0 ficheros** con el nombre del otro producto o la ruta personal. `mejora` traía 210 porque es anterior a la limpieza de `5323d79`; sus 124 ficheros nuevos de `.agents/` no se han traído |
 
 ### Lo que se corrigió del contenido, y por qué
@@ -48,12 +49,13 @@ salió al correrlo por primera vez.
 
 | Área | Por qué |
 | --- | --- |
-| **Faltan 6 grabaciones** | Son los 3 textos que se corrigieron (`porQueImporta`, la explicación de la primera afirmación y `luaDice`), en gallego y castellano. La voz gallega necesita un token de Hugging Face que aquí no hay: las sintetiza el workflow `voice-assets` al empujar. **`check_voice_coverage.py` está rojo hasta entonces** |
+| ~~Faltan 6 grabaciones~~ · **resuelto** | Las sintetizó el workflow `voice-assets` (run #23, en verde) y las commiteó en `1e326a3`. `check_voice_coverage.py` → **OK, 1038 locuciones, todas presentes** |
 | **El APK de release, EN LOCAL** | No hay Android SDK en este contenedor. Lo cubre CI |
 | **Ninguna pantalla se ha visto en un aparato** | Las capturas son del motor de Flutter: cazan desbordes, no la muesca, ni la barra de gestos, ni la densidad real |
+| **El 2.º ciclo solo cubre septiembre** | Tres asambleas (una por nivel) y una cápsula. Los otros nueve meses del curso no están escritos. El manual lo dice en su capítulo 5 |
 | **Nadie ha escuchado nada** | El gate de niveles dice que no saturan. Ningún gate dice si Celtia pronuncia bien |
 | **Si CA1.1 o CA1.2 es el criterio correcto** | No tengo el Decreto 150/2022 delante. Lo que se arregló es que haya **una sola** fuente, no que esa fuente sea la buena |
-| **Si el 2.º ciclo (3-6) entra en el encargo** | La app se describe para las escuelas infantiles municipales de Vigo, que son 0-3. Esto es 3-6. Es decisión de Frank, no mía |
+| ~~Si el 2.º ciclo (3-6) entra en el encargo~~ · **decidido** | Frank: «es el objetivo de esta iteración y una ampliación natural del proyecto». README y manual actualizados en consecuencia |
 
 ---
 
