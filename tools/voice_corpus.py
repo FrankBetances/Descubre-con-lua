@@ -367,6 +367,58 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                         _add(_localized(pauta[campo]), "tutor",
                              f"{aid}/microRutina/pauta/{i}/{campo}", seen)
 
+    # La microcápsula matinal del PRIMER ciclo. Nació muda por el mismo motivo
+    # exacto que la de segundo: el directorio es nuevo y esta función no lo
+    # miraba, así que el gate de cobertura habría dado OK sobre veinte ficheros
+    # sin una sola grabación. Es la segunda vez que pasa; por eso queda escrito.
+    primeiro = content_dir / "asambleas_primeiro_ciclo"
+    if primeiro.exists():
+        for path in sorted(primeiro.glob("*.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            aid = data.get("id", path.stem)
+
+            for fase in data.get("fases") or []:
+                if not isinstance(fase, dict):
+                    continue
+                orden = fase.get("orden", "?")
+                if fase.get("consignaDocente"):
+                    _add(_localized(fase["consignaDocente"]), "tutor",
+                         f"{aid}/fase/{orden}/consigna", seen)
+                # La canción del mes es el título de una canción inglesa, y es
+                # justo lo que una educadora que no la conoce necesita oír.
+                if fase.get("cueAcustica"):
+                    texto = str(fase["cueAcustica"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"{aid}/fase/{orden}/cue", seen)
+                for comando in fase.get("comandosL3") or []:
+                    if not isinstance(comando, dict):
+                        continue
+                    cid = comando.get("id", "?")
+                    if comando.get("textoIngles"):
+                        texto = str(comando["textoIngles"])
+                        _one(texto, "en", estilo_ingles(texto),
+                             f"{aid}/fase/{orden}/cmd/{cid}/ingles", seen)
+                    for campo in ("accionFisica", "modeladoDocente"):
+                        if comando.get(campo):
+                            _add(_localized(comando[campo]), "tutor",
+                                 f"{aid}/fase/{orden}/cmd/{cid}/{campo}", seen)
+
+    # La formación previa: lo que docente y familia leen ANTES de usar la app.
+    # Es prosa de adulto, igual que las cápsulas, y se lee muchas veces con las
+    # manos ocupadas.
+    formacion = content_dir / "formacion"
+    if formacion.exists():
+        for path in sorted(formacion.glob("*.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            gid = data.get("id", path.stem)
+            for i, paso in enumerate(data.get("pasos") or []):
+                if not isinstance(paso, dict):
+                    continue
+                for campo in ("corpo", "clave"):
+                    if paso.get(campo):
+                        _add(_localized(paso[campo]), "tutor",
+                             f"{gid}/paso/{i}/{campo}", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 
