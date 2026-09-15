@@ -62,7 +62,7 @@
      - Zero prohibited clinical or diagnostic terms.
    - `lib/data/validators/content_validator.dart` (452 lines):
      - Genuine programmatic validator with `forbiddenClinicalPattern` (including negative lookahead for environmental water treatment), `placeholderPattern`, `_asMap` type-safe defensive extraction, and recursive AST/tree checking.
-3. **R3: Pedagogical Modules from Valeria & Offline Audio**:
+3. **R3: Pedagogical Modules from el proyecto anterior de la casa & Offline Audio**:
    - `assets/audio/mar_pulso_72bpm.wav`:
      - Genuine 2,352,044-byte (2.24 MB) 16-bit 44.1 kHz mono WAV audio file with duration 26.67s and actual audio waveforms.
    - `lib/features/academy/`:

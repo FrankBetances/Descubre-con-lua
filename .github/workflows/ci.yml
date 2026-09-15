@@ -1,13 +1,11 @@
 name: Gates
 
-# Los gates Y el binario firmado, en un solo workflow, como `android.yml` en
-# Valeria+. Corre `tools/gates.sh` — el mismo fichero que corre un contribuyente
+# Los gates Y el binario firmado, en un solo workflow. Corre `tools/gates.sh` — el mismo fichero que corre un contribuyente
 # en su máquina, así que la lista de gates no puede separarse de lo que de
 # verdad se exige.
 #
 # Firma de release: requiere estos secrets en Settings > Secrets and variables >
-# Actions (los mismos nombres que en Valeria+, pero los valores son POR
-# REPOSITORIO: hay que darlos de alta también aquí):
+# Actions (los valores son POR REPOSITORIO: hay que darlos de alta aquí):
 #   ANDROID_RELEASE_KEYSTORE_BASE64  → keystore codificado (base64 -w0 release.keystore)
 #   ANDROID_RELEASE_STORE_PASSWORD   → contraseña del keystore
 #   ANDROID_RELEASE_KEY_ALIAS        → alias de la clave
@@ -56,8 +54,8 @@ on:
   workflow_dispatch:
 
 # Un run por rama Y POR EVENTO, y siempre el último. `github.event_name` entra en
-# el grupo por lo que le pasó a Valeria+ el 4/9/2026: con el grupo puesto solo en
-# la rama, un "Run workflow" lanzado a mano mataba el run del push cuando ya
+# el grupo por un fallo ya visto: con el grupo puesto solo en
+# la rama, un "Run workflow" lanzado a mano mata el run del push cuando ya
 # llevaba los gates en verde. Ese run queda como `cancelled`, GitHub resume el
 # commit con la peor conclusión de sus checks, y `main` sale con una X roja
 # teniendo el binario compilado. Una X que no significa nada es la que hace que

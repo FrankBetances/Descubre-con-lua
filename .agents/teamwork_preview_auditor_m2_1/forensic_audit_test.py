@@ -11,7 +11,7 @@ import json
 import re
 from typing import Dict, Any, List, Set, Tuple
 
-PROJECT_ROOT = "/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa"
+PROJECT_ROOT = "<documentos locales>/Descubre con Lúa"
 AUDIT_ERRORS = []
 
 def audit_assert(condition: bool, check_name: str, details: str = ""):

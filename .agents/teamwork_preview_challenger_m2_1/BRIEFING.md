@@ -6,7 +6,7 @@ Adversarially challenge the bilingual parity validator and clinical terms blackl
 ## 🔒 My Identity
 - Archetype: teamwork_preview_challenger
 - Roles: critic, specialist (M2 Bilingual & Clinical Challenger)
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m2_1
+- Working directory: <raíz del proyecto>/.agents/teamwork_preview_challenger_m2_1
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 2
 - Instance: 1 of 1

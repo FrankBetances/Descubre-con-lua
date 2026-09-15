@@ -4,9 +4,9 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('Voice asset identifiers', () {
-    test('FNV-1a matches the value the Valeria corpus already ships', () {
+    test('FNV-1a matches the value the inherited corpus already ships', () {
       // gl_child_fd51808f_8 is a real entry of voice-assets-manifest.gl.json in
-      // the Valeria repository. Pinning it here means the Dart, Python and
+      // the earlier project in the house. Pinning it here means the Dart, Python and
       // JavaScript ports cannot drift apart without a red test: if they did,
       // every recording would be looked up under a name that does not exist.
       expect(fnv1a32('Di: rúa.'), 'fd51808f');

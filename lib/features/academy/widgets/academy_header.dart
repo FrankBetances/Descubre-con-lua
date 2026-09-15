@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_theme.dart';
 
-/// La cabecera de Academy, portada de Valeria+
+/// La cabecera de Academy, portada del proyecto anterior de la casa
 /// (`docs/screenshots/28-academy-capsulas.png` y `29-academy-lector.png`):
 /// un bloque de color a sangre con las esquinas de abajo redondeadas,
 /// antetítulo en versalitas espaciadas, título grande y, opcionalmente,
@@ -12,7 +12,7 @@ import '../../../core/theme/app_theme.dart';
 /// blanco: sobre el turquesa el blanco da 2,18:1 y esto se lee en un aula con
 /// ventanales.
 class AcademyHeader extends StatelessWidget {
-  /// Versalitas de arriba. En Valeria+ es el bloque al que pertenece la cápsula.
+  /// Versalitas de arriba. En el proyecto anterior de la casa es el bloque al que pertenece la cápsula.
   final String kicker;
 
   final String titulo;
@@ -166,7 +166,7 @@ class AcademyCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Iconografía de un set coherente, no emoji del sistema:
-                // Valeria+ usa emoji aquí y cambian de fabricante a fabricante.
+                // El proyecto anterior de la casa usa emoji aquí y cambian de fabricante a fabricante.
                 Container(
                   width: 48,
                   height: 48,

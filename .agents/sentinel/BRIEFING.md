@@ -5,7 +5,7 @@ Sentinel monitoring and lifecycle management for Descubre con Lúa · Edición V
 
 ## 🔒 My Identity
 - Archetype: sentinel
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/sentinel
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/sentinel
 - Orchestrator: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Victory Auditor: 85221501-7a59-41c9-b53f-03da89608247
 
@@ -20,7 +20,7 @@ Sentinel monitoring and lifecycle management for Descubre con Lúa · Edición V
 - Clean up subagents and cancel crons before final delivery
 
 ## User Context
-- **Last user request**: Construir la aplicación nativa Android «Descubre con Lúa · Edición Vigo» en Flutter (com.earlify.descubreconlua), adaptando módulos desde FrankBetances/Valeria (Juega con Lúa y Academy) con contenido JSON bilingüe (gl/es), cero permisos de internet y audio offline.
+- **Last user request**: Construir la aplicación nativa Android «Descubre con Lúa · Edición Vigo» en Flutter (com.earlify.descubreconlua), adaptando módulos desde el repositorio del proyecto anterior de la casa (Juega con Lúa y Academy) con contenido JSON bilingüe (gl/es), cero permisos de internet y audio offline.
 - **Pending clarifications**: none
 - **Delivered results**:
   - Flutter Android project configured (`com.earlify.descubreconlua`) with strict binary privacy (zero internet/network permissions).
@@ -41,5 +41,5 @@ Sentinel monitoring and lifecycle management for Descubre con Lúa · Edición V
 - **Retry count**: 0
 
 ## Artifact Index
-- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md — Authoritative record of user request
-- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/ORIGINAL_REQUEST.md — Duplicate copy of authoritative record of user request
+- <documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md — Authoritative record of user request
+- <documentos locales>/Descubre con Lúa/.agents/ORIGINAL_REQUEST.md — Duplicate copy of authoritative record of user request

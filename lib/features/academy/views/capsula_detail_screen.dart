@@ -12,12 +12,12 @@ import '../../premios/premios_repository.dart';
 import '../widgets/academy_header.dart';
 import '../widgets/selector_idioma_widget.dart';
 
-/// El lector de una cápsula, portado del de Valeria+
+/// El lector de una cápsula, portado del proyecto anterior de la casa
 /// (`docs/screenshots/29-academy-lector.png` y `30-academy-quiz.png`).
 ///
 /// El cambio de fondo respecto a lo que había: **va paginado**. Antes era un
 /// scroll larguísimo con las cuatro secciones y la reflexión abajo del todo.
-/// Valeria+ presenta una idea por pantalla, con puntos de progreso arriba y un
+/// El proyecto anterior de la casa presenta una idea por pantalla, con puntos de progreso arriba y un
 /// botón grande abajo, y eso no es estética: una familia lee esto en cinco
 /// minutos robados, y una pantalla con una sola idea se puede terminar.
 ///
@@ -278,7 +278,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                 // arriba. Con la cabecera fija más el pie de botones, a escala
                 // de texto 1,8 no queda altura para el contenido y la pantalla
                 // desborda: lo cazó el test de escala, no un aparato. A escala
-                // normal se ve igual que la de Valeria+; a escala grande, se
+                // normal se ve igual que la del proyecto anterior de la casa; a escala grande, se
                 // desplaza en vez de cortarse.
                 final cabecera = AcademyHeader(
                   kicker: kicker,

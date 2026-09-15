@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 /// Tokens de diseño y tema Material 3 de «Descubre con Lúa · Edición Vigo».
 ///
 /// Fuente única de verdad para color, radios, espaciado y tipografía. Son los
-/// tokens de Valeria+ (`src/valeriaTheme.ts` de aquel repositorio), portados
+/// tokens del proyecto anterior de la casa, portados
 /// para que las dos apps se vean como la misma familia. Lo que NO se hereda es
 /// la mecánica infantil: aquí el niño no usa la pantalla, así que no hay nada
 /// pensado para captar su atención.
 ///
 /// La escala de espaciado va en múltiplos de 4 y la tipográfica tiene cinco
-/// tamaños. Mezclar 11/13/15/18 sueltos es lo que en Valeria+ produjo la
+/// tamaños. Mezclar 11/13/15/18 sueltos es lo que en el proyecto anterior de la casa produjo la
 /// sensación de «amontonado» que reportaron los testers.
 class AppTheme {
   AppTheme._();
@@ -36,7 +36,7 @@ class AppTheme {
   /// Turquesa para barras y cabeceras CON texto blanco.
   ///
   /// Existe por una medición: el blanco sobre el turquesa de marca da 2,18:1,
-  /// que no llega ni al umbral de texto grande (3,0). Valeria+ lo lleva así;
+  /// que no llega ni al umbral de texto grande (3,0). El proyecto anterior de la casa lo lleva así;
   /// aquí no, porque esto se mira en un aula con ventanales y en un móvil al
   /// sol.
   ///

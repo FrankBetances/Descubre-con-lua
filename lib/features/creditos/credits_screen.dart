@@ -6,7 +6,7 @@ import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
 
-/// Créditos, con la estructura de los de Valeria+
+/// Créditos, con la estructura de los del proyecto anterior de la casa
 /// (`docs/screenshots/02-creditos.png`): la gata y el nombre arriba, un
 /// antetítulo en versalitas, la tarjeta de autoría y debajo los bloques de
 /// atribución.

@@ -15,7 +15,7 @@ import '../../premios/widgets/lua_game_strip.dart';
 /// «Formación · Aula»: las cápsulas que lee la maestra.
 ///
 /// Misma pieza visual que Academy —`AcademyHeader` y `AcademyCard`, el estilo
-/// de Valeria+— y a propósito: es la misma clase de lectura, y que se vea
+/// del proyecto anterior de la casa— y a propósito: es la misma clase de lectura, y que se vea
 /// distinta solo obligaría a aprender dos interfaces para lo mismo. Lo que
 /// cambia es de quién es el recorrido y cómo se titulan las secciones dentro
 /// del lector.

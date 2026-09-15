@@ -3,7 +3,7 @@
 **Agent**: `teamwork_preview_challenger_m4_1` (Milestone 4 Invariant & Boundary Challenger)  
 **Parent**: `parent` (`155c43c0-be2b-46ce-b47d-cc280903c77f`)  
 **Project**: «Descubre con Lúa · Edición Vigo» (`com.earlify.descubreconlua`)  
-**Project Root**: `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa`  
+**Project Root**: `<documentos locales>/Descubre con Lúa`  
 **Timestamp**: 2026-09-11T16:10:00+02:00  
 **Handoff Type**: Hard (Task Complete)  
 **Verdict**: **APPROVE**

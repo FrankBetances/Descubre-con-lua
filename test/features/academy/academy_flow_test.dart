@@ -129,7 +129,7 @@ void main() {
       // the last ones, so the test scrolls too instead of asserting on height.
       for (var i = 1; i <= 5; i++) {
         // Versalitas: el antetítulo de la tarjeta de Academy va en mayúsculas,
-        // como en Valeria+. Si alguien quita el toUpperCase, esto lo dice.
+        // como en el proyecto anterior de la casa. Si alguien quita el toUpperCase, esto lo dice.
         await expectAfterScrolling(tester, find.text('BLOQUE $i'));
       }
 
@@ -150,7 +150,7 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      // El lector va PAGINADO, como el de Valeria+: una idea por pantalla. Así
+      // El lector va PAGINADO, como el del proyecto anterior de la casa: una idea por pantalla. Así
       // que no se busca todo a la vez, se recorre, que es lo que hace una
       // familia. Si alguien vuelve al scroll único, este test lo dice.
       Future<void> siguiente() async {

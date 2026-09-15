@@ -44,8 +44,8 @@ flutter:
     # time by tools/generate_voice_assets.py and committed. The models never
     # run on the device.
     - assets/voice/
-    # Nunito: la tipografía de Valeria+. Los cuatro pesos que usa su sistema de
-    # diseño (valeriaTheme.ts: regular/semibold/bold/extrabold). Se empaquetan en
+    # Nunito, en los cuatro pesos del sistema de diseño de la casa
+    # (regular/semibold/bold/extrabold). Se empaquetan en
     # la app, no se piden por red: el APK no tiene permiso de INTERNET.
     - assets/fonts/
 

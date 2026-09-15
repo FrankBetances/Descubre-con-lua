@@ -4,11 +4,10 @@
   python3 tools/check_legal_urls.py --offline   # solo los ficheros (va en gates.sh)
   python3 tools/check_legal_urls.py             # además pide las URLs por red
 
-Existe por lo que le pasó a Valeria+ el 19/8/2026: Google rechazó la ficha con
-«URL provided ... does not link to a valid privacy policy page, HTTP server is
-returning 404» teniendo el fichero intacto en el repositorio y el último
-despliegue de Pages en verde. No se rompió el contenido: se apagó el sitio, y
-volver a encenderlo no es automático.
+Existe por un fallo real y mudo: una tienda puede rechazar una ficha porque la
+URL legal devuelve 404 mientras el fichero sigue intacto en el repositorio y el
+último despliegue de Pages está en verde. No se rompe el contenido: se apaga el
+sitio, y volver a encenderlo no es automático.
 
 Ese fallo es MUDO. No hay run rojo, no hay push, no hay nada que mirar; aparece
 semanas después por boca de Google, con la publicación parada. Un despliegue
@@ -26,8 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 
 # El esquema de URL de un sitio de proyecto en GitHub Pages: el usuario en
-# minúsculas, el nombre del repositorio tal cual. Valeria+ sirve sus páginas
-# legales en https://frankbetances.github.io/Valeria/, y esta es la misma cuenta.
+# minúsculas, el nombre del repositorio tal cual.
 BASE = "https://frankbetances.github.io/Descubre-con-lua/"
 
 CONTACT_EMAIL = "frank.alberto.betances.reinoso@gmail.com"

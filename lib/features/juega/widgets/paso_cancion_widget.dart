@@ -12,7 +12,7 @@ import 'rhythm_bar_widget.dart';
 ///
 /// The teacher gets:
 /// - a VISUAL metronome at the unit's tempo, beats read from the `*` markers
-///   in the lyrics. It is drawn rather than clicked, as in Valeria: an audible
+///   in the lyrics. It is drawn rather than clicked, as in the earlier project in the house: an audible
 ///   metronome competes with the voice the children are following, and many of
 ///   them wear a hearing aid or an implant
 /// - the lyrics with those same markers, for clapping or patting knees
@@ -44,7 +44,7 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
   String? _audioError;
   StreamSubscription<bool>? _audioSubscription;
 
-  /// Visual metronome state. One tick per beat, as in Valeria: the pulse is
+  /// Visual metronome state. One tick per beat, as in the earlier project in the house: the pulse is
   /// drawn rather than sounded, so the auditory channel stays free for the
   /// voice — half the children this work is aimed at wear a hearing aid or an
   /// implant, and a clicking metronome competes with the words.

@@ -9,7 +9,7 @@
 ## 1. Observation
 
 1. **Pubspec Configuration**:
-   - File created at `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/pubspec.yaml`.
+   - File created at `<documentos locales>/Descubre con Lúa/pubspec.yaml`.
    - Content:
      ```yaml
      name: descubre_con_lua

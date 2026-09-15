@@ -17,7 +17,7 @@ import '../../calendario/views/calendario_screen.dart';
 
 /// Los 5 bloques de desarrollo de «Academy · Familias».
 ///
-/// Portada de la lista de Academy de Valeria+
+/// Portada de la lista de Academy del proyecto anterior de la casa
 /// (`docs/screenshots/28-academy-capsulas.png`): cabecera de color a sangre con
 /// antetítulo en versalitas, y debajo una tarjeta blanca por bloque con su
 /// baldosa de icono, su título y su línea de metadatos.
@@ -102,7 +102,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
 
   /// Del set de Material, en su variante `outlined`: mismo grosor y mismas
   /// terminaciones en los cinco. La regla 5 prohíbe emoji del sistema, que es
-  /// lo que usa Valeria+ aquí y lo que cambia de fabricante a fabricante.
+  /// lo que usa el proyecto anterior de la casa aquí y lo que cambia de fabricante a fabricante.
   IconData _iconForBloque(String iconKey) {
     switch (iconKey) {
       case 'ear_sparkles':

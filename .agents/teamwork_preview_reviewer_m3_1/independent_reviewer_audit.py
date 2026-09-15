@@ -10,7 +10,7 @@ import re
 import json
 import sys
 
-PROJECT_ROOT = "/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa"
+PROJECT_ROOT = "<documentos locales>/Descubre con Lúa"
 
 passed = 0
 failed = 0

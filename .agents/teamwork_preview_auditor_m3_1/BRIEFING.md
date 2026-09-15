@@ -6,7 +6,7 @@ Forensic integrity audit of Milestone 3 deliverables in «Descubre con Lúa · E
 ## 🔒 My Identity
 - Archetype: teamwork_preview_auditor
 - Roles: critic, specialist, auditor
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_auditor_m3_1/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_auditor_m3_1/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Target: Milestone 3 deliverables
 

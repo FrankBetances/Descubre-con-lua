@@ -8,7 +8,7 @@ referenced, the new one does not exist yet, and check_voice_coverage.py says so.
 That is what makes it impossible to ship a screen that shows one sentence and
 plays another.
 
-The hash is the same FNV-1a used by the Valeria pipeline, so an id computed
+The hash is the same FNV-1a used by the earlier pipeline in the house, so an id computed
 here, in Dart (lib/core/audio/voice_id.dart) or in JavaScript is identical.
 """
 from __future__ import annotations

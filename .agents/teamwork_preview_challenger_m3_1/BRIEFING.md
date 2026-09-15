@@ -6,7 +6,7 @@ Adversarially challenge Milestone 3 implementation: guided assembly flow (Asambl
 ## 🔒 My Identity
 - Archetype: teamwork_preview_challenger
 - Roles: critic, specialist (M3 Assembly & Audio Challenger)
-- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_challenger_m3_1/
+- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_challenger_m3_1/
 - Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
 - Milestone: Milestone 3
 - Instance: 1 of 1

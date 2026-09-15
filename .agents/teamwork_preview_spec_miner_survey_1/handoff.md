@@ -4,19 +4,19 @@
 **To**: Orchestrator (`teamwork_preview_orchestrator_1` / `155c43c0-be2b-46ce-b47d-cc280903c77f`)  
 **Date**: 2026-09-11  
 **Handoff Type**: Hard Handoff (Survey and Specification Mining Complete)  
-**Deliverable**: `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/analysis.md`
+**Deliverable**: `<raíz del proyecto>/.agents/teamwork_preview_spec_miner_survey_1/analysis.md`
 
 ---
 
 ## 1. Observation
 
 1. **Requisitos de Usuario (`ORIGINAL_REQUEST.md`)**:
-   - Líneas 5-8: Construir «Descubre con Lúa · Edición Vigo» en Flutter (Package ID: `com.earlify.descubreconlua`), portando módulos desde `FrankBetances/Valeria` (`Juega con Lúa · aula` y `Academy · familias`) bajo arquitectura estricta de contenido como datos JSON bilingües (`gl`/`es`), sin permisos de internet y con audio offline pregenerado.
+   - Líneas 5-8: Construir «Descubre con Lúa · Edición Vigo» en Flutter (Package ID: `com.earlify.descubreconlua`), portando módulos desde el repositorio del proyecto anterior de la casa (`Juega con Lúa · aula` y `Academy · familias`) bajo arquitectura estricta de contenido como datos JSON bilingües (`gl`/`es`), sin permisos de internet y con audio offline pregenerado.
    - Líneas 12-20 (R1): Manifiesto `AndroidManifest.xml` sin `android.permission.INTERNET` y cero clientes de red en `pubspec.yaml` ni en `lib/`.
    - Líneas 22-33 (R2): Modelos Dart para unidades temáticas (`Unidad`, `Vocabulario`, `Actividad`, `Preguntas`, `Exploracion`, `Matematicas`, `PuenteCasa`, `Revision`) y para Academy (`Capsula`, `Bloque`, `Afirmacion`, `Revision`). Carga desde `assets/content/**`. Archivos base: `unidades/juega.mar.01.json` y `capsulas/academy.como_se_aprende_a_hablar.01.json`. Validador automatizado en `test/data/` (paridad 1:1, integridad de audio, Decreto 150/2022 y filtro de términos clínicos prohibidos).
    - Líneas 34-44 (R3): Adaptación para uso exclusivo de adultos (docentes y familias). En Academy: 5 bloques, vista en 4 partes (idea clave, por qué importa, qué hacer en casa, ejemplo cotidiano), selector `gl`/`es`. En Juega: filtro por edad (0-2 y 2-3), asamblea guiada (canción a pulso, cuento, preguntas graduadas, exploración científica con materiales y aviso de seguridad, matemáticas tempranas, puente a casa).
 
-2. **Código de Referencia en Valeria (`Documentos locales/Valeria/src/ValeriaAcademy/`)**:
+2. **Código de Referencia en el proyecto anterior de la casa (`el proyecto anterior de la casa`)**:
    - `academyTypes.ts:22`: Declara silos de capacitación (`lenguaje`, etc.).
    - `academyContent.ts:25-94`: Estructura de cápsulas de lenguaje orientadas a familias con micro-explicaciones, turnos de conversación («serve and return») y tiempo de espera de 5 segundos.
 
@@ -32,7 +32,7 @@
 ## 2. Logic Chain
 
 1. **Desacoplamiento Clínico hacia lo Educativo**:
-   - *Premisa*: A diferencia de VIA+ (SaMD Clase IIa) o Valeria+ (rehabilitación logopédica hospitalaria/clínica), «Descubre con Lúa · Edición Vigo» está concebida para el aula de infantil (0-3) y el hogar.
+   - *Premisa*: A diferencia de los productos clínicos de la casa, «Descubre con Lúa · Edición Vigo» está concebida para el aula de infantil (0-3) y el hogar, y no tiene finalidad sanitaria.
    - *Inferencia*: Toda terminología patologizante o diagnóstica (*trastorno*, *patología*, *diagnóstico*, *síntoma*, *déficit*, *paciente*, *terapia*, *tratamiento*, *retraso clínico*) debe ser proscrita tanto de los JSONs como de la UI, sustituyéndose por conceptos del Decreto 150/2022 (*ritmo individual*, *desenvolvemento comunicativo*, *xogo guiado*, *estimulación*, *crianza*).
 
 2. **Garantía de Paridad Bilingüe 1:1 mediante `LocalizedString`**:
@@ -74,7 +74,7 @@ El diseño de la capa de Contenido como Datos (R2) y sus estándares pedagógico
 
 Para verificar independientemente las conclusiones de este informe:
 1. **Inspección del Documento de Análisis**:
-   - Leer `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/analysis.md`.
+   - Leer `<raíz del proyecto>/.agents/teamwork_preview_spec_miner_survey_1/analysis.md`.
    - Comprobar que los JSONs de las secciones 6.1 y 6.2 son sintácticamente válidos (`jq . assets/content/...` o validador JSON estándar).
 2. **Comprobación de Cumplimiento de Criterios de Aceptación**:
    - Contrastar los requisitos de `ORIGINAL_REQUEST.md` (líneas 22-33) contra las definiciones de `analysis.md` (Secciones 2, 3, 4, 5, 6 y 7).

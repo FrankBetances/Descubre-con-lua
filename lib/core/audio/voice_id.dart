@@ -21,7 +21,7 @@ String normalizeVoiceText(String text) =>
 
 /// FNV-1a, 32 bits, over UTF-16 code units.
 ///
-/// Same function as the Valeria pipeline so an id computed in Dart, in Python
+/// Same function as the earlier pipeline in the house so an id computed in Dart, in Python
 /// (the corpus exporter) or in JavaScript is byte-identical.
 String fnv1a32(String value) {
   var hash = 0x811c9dc5;

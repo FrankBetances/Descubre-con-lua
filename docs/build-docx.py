@@ -4,9 +4,9 @@
     pip install python-docx lxml
     python3 docs/build-docx.py
 
-Portado de docs/build-docx.py de Valeria+, incluida su lección: allí el script
-llevaba el texto del manual DUPLICADO dentro, el HTML avanzó y el Word se quedó
-describiendo una versión anterior sin que nada avisara.
+Portado del constructor del proyecto anterior de la casa, incluida su lección:
+allí el script llevaba el texto del manual DUPLICADO dentro, el HTML avanzó y el
+Word se quedó describiendo una versión anterior sin que nada avisara.
 
 Aquí hay una sola fuente, docs/manual-casos-de-uso.html, y de ella salen los tres
 formatos: HTML, PDF (docs/build-pdf.js) y este Word. Lo que no se puede
@@ -74,9 +74,9 @@ def no_borders(table):
 def write_stamp(kind):
     """Deja constancia de QUÉ versión del HTML produjo este fichero.
 
-    Es la salvaguarda contra el fallo que documenta el build-docx.py de
-    Valeria+: que la fuente avance y el documento generado se quede atrás sin
-    que nada avise. tools/check_manual_build.py compara este sello con el HTML.
+    Es la salvaguarda contra un fallo ya visto: que la fuente avance y el
+    documento generado se quede atrás sin que nada avise.
+    tools/check_manual_build.py compara este sello con el HTML.
     """
     import hashlib
     import json

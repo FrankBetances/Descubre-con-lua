@@ -2,9 +2,9 @@
 
 ## Initial Request — 2026-09-11T08:15:28Z
 
-Construir la aplicación nativa Android «Descubre con Lúa · Edición Vigo» en Flutter (Package ID: com.earlify.descubreconlua), adaptando y portando los módulos pedagógicos desde el repositorio FrankBetances/Valeria (Juega con Lúa · aula y Academy · familias) bajo arquitectura estricta de contenido como datos JSON bilingües (gl/es), privacidad verificable en el binario (sin permisos de internet) y audio offline pregenerado.
+Construir la aplicación nativa Android «Descubre con Lúa · Edición Vigo» en Flutter (Package ID: com.earlify.descubreconlua), adaptando y portando los módulos pedagógicos desde el repositorio el repositorio del proyecto anterior de la casa (Juega con Lúa · aula y Academy · familias) bajo arquitectura estricta de contenido como datos JSON bilingües (gl/es), privacidad verificable en el binario (sin permisos de internet) y audio offline pregenerado.
 
-Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+Working directory: <documentos locales>/Descubre con Lúa
 Integrity mode: development
 
 ## Requirements
@@ -31,8 +31,8 @@ Integrity mode: development
   - Integridad referencial de recursos de audio y referencias curriculares (Decreto 150/2022).
   - Ausencia de terminología clínica o diagnóstica prohibida (enfoque exclusivamente educativo/familiar 0-3 años).
 
-### R3. Portado y Adaptación de Módulos desde Valeria (GitHub: FrankBetances/Valeria)
-- Consultar los componentes homólogos en `FrankBetances/Valeria` y adaptarlos al diseño docente/familiar:
+### R3. Portado y Adaptación de Módulos desde el repositorio del proyecto anterior de la casa
+- Consultar los componentes homólogos en el repositorio del proyecto anterior de la casa y adaptarlos al diseño docente/familiar:
   - **Academy (Familias)**:
     - Navegación por los 5 bloques de desarrollo.
     - Vista de cápsula con las 4 partes: idea clave, por qué importa, qué hacer en casa y ejemplo cotidiano.

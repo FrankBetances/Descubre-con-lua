@@ -14,7 +14,7 @@ import re
 import hashlib
 import xml.etree.ElementTree as ET
 
-PROJECT_ROOT = "/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa"
+PROJECT_ROOT = "<documentos locales>/Descubre con Lúa"
 FAILURES = []
 FINDINGS = []
 OBSERVATIONS = []

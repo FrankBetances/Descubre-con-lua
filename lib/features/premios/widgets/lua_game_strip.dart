@@ -11,7 +11,7 @@ import '../premios_repository.dart';
 import '../premios_screen.dart';
 
 /// La tira de juego: Lúa, el nivel con su barra, la racha con su metal y la
-/// puerta a los premios. Portada de `ValeriaGameStrip.tsx`.
+/// puerta a los premios. Portada de la tira equivalente del proyecto anterior de la casa.
 ///
 /// Existe porque los premios estaban escondidos detrás de un botón del hub:
 /// se ganaban insignias que nadie veía. Una gamificación que no se ve no es

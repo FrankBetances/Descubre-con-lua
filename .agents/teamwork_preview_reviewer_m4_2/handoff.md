@@ -4,7 +4,7 @@
 **Parent**: `parent` (`155c43c0-be2b-46ce-b47d-cc280903c77f`)  
 **Target Milestone**: Milestone 4 (Master Verification & E2E Test Suite)  
 **Project**: «Descubre con Lúa · Edición Vigo» (`com.earlify.descubreconlua`)  
-**Project Root**: `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa`  
+**Project Root**: `<documentos locales>/Descubre con Lúa`  
 **Timestamp**: 2026-09-11T14:12:00Z  
 **Verdict**: **REQUEST_CHANGES**  
 

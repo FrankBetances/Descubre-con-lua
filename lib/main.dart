@@ -110,7 +110,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
       theme: AppTheme.lightTheme,
       initialRoute: '/',
       routes: {
-        // La bienvenida es la primera pantalla, como en Valeria+. No guarda que
+        // La bienvenida es la primera pantalla, como en el proyecto anterior de la casa. No guarda que
         // ya la viste: esa marca sería un campo persistido más que declarar en
         // Play Console, y la app no guarda nada. Cuesta un toque por arranque.
         '/': (context) => WelcomeScreen(

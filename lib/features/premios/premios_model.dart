@@ -4,7 +4,7 @@ import '../../data/models/calendario_model.dart';
 
 /// Quién gana los premios.
 ///
-/// El adulto, siempre. En Valeria+ los gana quien juega, que es la criatura;
+/// El adulto, siempre. En el proyecto anterior de la casa los gana quien juega, que es la criatura;
 /// aquí la criatura no toca la pantalla, así que premiar su «progreso» sería
 /// inventarse un dato que nadie ha medido. Lo que sí se mide es lo que hace el
 /// adulto con la app: dirigir asambleas y leer cápsulas.

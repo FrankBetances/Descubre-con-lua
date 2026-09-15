@@ -10,12 +10,12 @@ import 'medallas_widget.dart';
 import 'premios_model.dart';
 import 'premios_repository.dart';
 
-/// «Os premios de Lúa», con la estructura de la hoja de premios de Valeria+
+/// «Os premios de Lúa», con la estructura de la hoja de premios del proyecto anterior de la casa
 /// (`docs/screenshots/26-premios-insignias.png`): cabecera con la gata, nivel y
 /// barra de XP; tarjeta de racha y XP total; y la rejilla de insignias, las
 /// ganadas en color y las pendientes en gris.
 ///
-/// La diferencia con Valeria+ no es estética, es de fondo: allí estos premios
+/// La diferencia con el proyecto anterior de la casa no es estética, es de fondo: allí estos premios
 /// son del niño, que juega. Aquí el niño no toca la pantalla, así que hay dos
 /// recorridos de ADULTO —la maestra por asambleas dirigidas, la familia por
 /// cápsulas leídas— y un conmutador para pasar de uno a otro.

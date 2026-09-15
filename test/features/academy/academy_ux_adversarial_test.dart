@@ -15,7 +15,7 @@ import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.da
 /// Lleva el lector paginado hasta la primera afirmación.
 ///
 /// El lector dejó de ser un scroll único: ahora es una idea por pantalla, como
-/// el de Valeria+. Para llegar a la reflexión hay que recorrer las cuatro
+/// el del proyecto anterior de la casa. Para llegar a la reflexión hay que recorrer las cuatro
 /// secciones, que es lo que hace una familia.
 Future<void> irAPrimeraAfirmacion(WidgetTester tester) async {
   await tester.pumpAndSettle();

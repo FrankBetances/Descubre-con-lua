@@ -1,5 +1,5 @@
-# Lúa, a gata · pixel grid ported from the Valeria repository
-# (src/ValeriaCatPixel.tsx). Ported, not redrawn: the launcher icon, the
+# Lúa, a gata · pixel grid ported from the earlier project in the house.
+# Ported, not redrawn: the launcher icon, the
 # adaptive icon and the splash are all rendered from this one file by
 # tools/build_launcher_icons.py, so they cannot drift apart.
 #

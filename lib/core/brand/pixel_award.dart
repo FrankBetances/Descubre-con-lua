@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
-/// Los diez glifos de insignia, portados de Valeria+ (`ValeriaPixelArt.ts`).
+/// Los diez glifos de insignia, portados del proyecto anterior de la casa.
 ///
 /// Son las MISMAS rejillas de 24×24 que allí; no se han redibujado a ojo, igual
 /// que la rejilla de Lúa. Viven en `assets/brand/awards/*.txt`.
@@ -19,7 +19,7 @@ enum AwardGlyph {
   heart,
   crown,
 
-  /// El pescado. No es de la familia de insignias de Valeria+: es el
+  /// El pescado. No es de la familia de insignias del proyecto anterior de la casa: es el
   /// pictograma 117 de su set, y aquí hace de premio de Lúa porque es lo que
   /// una gata quiere.
   pez;
@@ -48,7 +48,7 @@ enum AwardTier {
       );
 }
 
-/// El metal de la racha sube con los días, igual que en Valeria+: el premio se
+/// El metal de la racha sube con los días, igual que en el proyecto anterior de la casa: el premio se
 /// ve venir antes de ganarlo.
 AwardTier tierDeRacha(int dias) => dias >= 30
     ? AwardTier.teal
@@ -60,7 +60,7 @@ AwardTier tierDeRacha(int dias) => dias >= 30
 
 /// Una insignia en píxel art, con su disco de fondo y sus dos anillos.
 ///
-/// El fondo va DENTRO del widget, no fuera, por la misma razón que en Valeria+:
+/// El fondo va DENTRO del widget, no fuera, por la misma razón que en el proyecto anterior de la casa:
 /// solo dos de los diez glifos usan celdas `a`/`b`, así que los otros ocho
 /// saldrían idénticos en los cinco metales si el rango solo tiñese la placa de
 /// alrededor. Metiéndolo aquí, una racha de 3 días y una de 30 se distinguen
@@ -288,7 +288,7 @@ class _AwardPainter extends CustomPainter {
     }
   }
 
-  /// El reparto es el mismo que hace Valeria+: `a` el tono del metal, `b` el
+  /// El reparto es el mismo que hace el proyecto anterior de la casa: `a` el tono del metal, `b` el
   /// núcleo del glifo si lo tiene y si no el realce. El núcleo SUSTITUYE a
   /// `b`, no le hace de reserva: el corazón de una llama es naranja aunque la
   /// insignia sea de plata.

@@ -75,7 +75,7 @@
      ```
      ======================================================================
      STARTING ADVERSARIAL PRIVACY & ZERO-NETWORK PROBE (CHALLENGER 1)
-     Target: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
+     Target: <documentos locales>/Descubre con Lúa
      ======================================================================
 
      SUITE 1: AndroidManifest.xml Multi-Parser & Token Stress Test

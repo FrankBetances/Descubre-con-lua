@@ -11,7 +11,7 @@ import json
 import re
 from typing import Any, List, Dict, Set, Tuple
 
-PROJECT_ROOT = "/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa"
+PROJECT_ROOT = "<documentos locales>/Descubre con Lúa"
 passed = 0
 failed = 0
 findings = []

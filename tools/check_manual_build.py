@@ -2,9 +2,9 @@
 """Fails when the manual's PDF or Word are older than the HTML they come from.
 
 docs/manual-casos-de-uso.html is the single source; the PDF and the Word are
-generated from it. Valeria's own build-docx.py records what happens without this
-check: the source moved on, the generated Word kept describing an earlier
-version, and nothing said so.
+generated from it. This check exists because of what happens without it: the
+source moves on, the generated Word keeps describing an earlier version, and
+nothing says so.
 
 Each builder stamps the hash of the HTML it read. This compares those stamps
 with the file on disk.

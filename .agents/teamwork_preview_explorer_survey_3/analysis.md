@@ -1,21 +1,21 @@
-# Informe de Análisis Pedagógico y Portado de Módulos: Valeria → Descubre con Lúa · Edición Vigo
+# Informe de Análisis Pedagógico y Portado de Módulos: el proyecto anterior de la casa → Descubre con Lúa · Edición Vigo
 
 **Fecha de relevamiento**: 2026-09-11  
-**Explorador**: Valeria Pedagogical Port Explorer (`teamwork_preview_explorer_survey_3`)  
+**Explorador**: el proyecto anterior de la casa Pedagogical Port Explorer (`teamwork_preview_explorer_survey_3`)  
 **Proyecto destino**: «Descubre con Lúa · Edición Vigo» (Flutter Android, `com.earlify.descubreconlua`)  
-**Repositorio de referencia**: `FrankBetances/Valeria` (v14 Expo/React Native, ubicado en `/Users/frankalbertobetancesreinoso/Documentos locales/Valeria UX/Valeria`)
+**Repositorio de referencia**: el repositorio del proyecto anterior de la casa (v14 Expo/React Native, ubicado en `<repositorio del proyecto anterior de la casa> UX/el proyecto anterior de la casa`)
 
 ---
 
 ## 1. Síntesis Ejecutiva y Hallazgos Principales
 
 1. **Localización de fuentes de referencia en el entorno local**:
-   - Se localizó el código fuente completo y actualizado de **Valeria v14** en `/Users/frankalbertobetancesreinoso/Documentos locales/Valeria UX/Valeria`.
+   - Se localizó el código fuente completo y actualizado de **el proyecto anterior de la casa v14** en `<repositorio del proyecto anterior de la casa> UX/el proyecto anterior de la casa`.
    - Se auditaron en profundidad los dos módulos canónicos:
-     - **Academy**: Implementado en `src/ValeriaAcademy/` (`academyTypes.ts`, `academyContent.ts`, `academyDomains.ts`, `ValeriaAcademyScreen.tsx`, `academyStore.ts`).
-     - **Aventuras con Lúa**: Implementado en `src/AventurasLua/` (`Catalog/LuaSongsCatalog.ts`, `Catalog/LuaStoriesCatalog.ts`, `Catalog/LuaAssessmentCatalog.ts`, `Screens/LuaSongPlayerScreen.tsx`, `Screens/ValeriaAventurasLuaHubScreen.tsx`).
+     - **Academy**: Implementado en `<módulo del proyecto anterior>` (`<fichero del proyecto anterior>`, `<fichero del proyecto anterior>`, `<fichero del proyecto anterior>`, `<fichero del proyecto anterior>`, `<fichero del proyecto anterior>`).
+     - **Aventuras con Lúa**: Implementado en `<módulo del proyecto anterior>` (`<módulo del proyecto anterior>`, `<módulo del proyecto anterior>`, `<módulo del proyecto anterior>`, `<módulo del proyecto anterior>`, `<módulo del proyecto anterior>`).
 2. **Reconversión de paradigma clínico a educativo (0–3 años)**:
-   - Valeria es un SaMD Clase I orientado a logopedia y patologías clínicas (hipoacusia, dislalia, dislexia, TEA, con silenciado clínico y telemetría).
+   - El proyecto anterior de la casa es un producto clínico, con otra finalidad, otro público y otro marco regulatorio.
    - «Descubre con Lúa · Edición Vigo» requiere una **desinfección clínica total**: se erradican los silos de patología y términos clínicos (`trastorno`, `patoloxía`, `diagnóstico`, `terapia`, `paciente`, `síntoma`). En su lugar, se adopta un marco estrictamente pedagógico y de estimulación natural para el **primer ciclo de educación infantil en Galicia (0–3 años)** bajo el amparo curricular del **Decreto 150/2022**.
 3. **Academy (Familias)**:
    - Se estructura sobre **5 Bloques de Desarrollo** en lugar de patologías.
@@ -34,15 +34,15 @@
 
 ---
 
-## 2. Estudio Comparativo de Arquitectura: Valeria vs. Descubre con Lúa
+## 2. Estudio Comparativo de Arquitectura: el proyecto anterior de la casa vs. Descubre con Lúa
 
-| Dimensión | Valeria v14 (Referencia) | Descubre con Lúa · Edición Vigo (Port) |
+| Dimensión | el proyecto anterior de la casa v14 (Referencia) | Descubre con Lúa · Edición Vigo (Port) |
 |---|---|---|
 | **Stack tecnológico** | React Native 0.81 / Expo SDK 54 / TypeScript | Flutter 3.x / Dart / Android Nativo (`com.earlify.descubreconlua`) |
 | **Público objetivo** | Clínico / Familiar mixto (niños de 0 a 10 años + cuidadores) | **Doble interfaz segregada**: Familias (Academy) y Docentes de aula 0-3 (Juega) |
-| **Marco regulatorio** | SaMD Clase I / MDR 2017/745 / ACOPROS | Educativo / Normativo Galicia: **Decreto 150/2022** (0–3 años) |
+| **Marco regulatorio** | Producto clínico (marco propio, fuera de este repositorio) | Educativo / Normativo Galicia: **Decreto 150/2022** (0–3 años) |
 | **Vocabulario** | Diagnóstico y terapéutico (pares mínimos, hipoacusia, implante) | **Educativo y estimulativo puro** (cero terminología clínica prohibida) |
-| **Almacenamiento de contenido** | Archivos TypeScript en memoria (`academyContent.ts`, etc.) | **Archivos JSON bilingües desacoplados** en `assets/content/**` |
+| **Almacenamiento de contenido** | Archivos TypeScript en memoria (`<fichero del proyecto anterior>`, etc.) | **Archivos JSON bilingües desacoplados** en `assets/content/**` |
 | **Estructura Academy** | Diapositivas libres + micro-quiz con XP vectorial | **4 partes fijas por cápsula** + reflexión adulta + ficha curricular |
 | **Estructura Juega** | Videojuegos táctiles infantiles (memorama, selección táctil) | **Modo Asamblea Guiada (6 pasos)** orquestado por la docente |
 | **Mecánicas infantiles en pantalla** | Sí (fichas voxel, premios, armario de Lúa, confeti) | **Eliminadas**: sobriedad adulta y pedagógica |
@@ -54,7 +54,7 @@
 ## 3. Especificación Detallada: Academy (Familias)
 
 ### 3.1. Los 5 Bloques de Desarrollo Infantil (0–3 años)
-En lugar de los dominios patológicos de Valeria (`hipoacusia`, `dislalias`, `dislexia`, `tea`), Academy en Descubre con Lúa se organiza en torno a los 5 ejes naturales del desarrollo psicopedagógico temprano alineados con las tres áreas curriculares del Decreto 150/2022:
+En lugar de los dominios patológicos del proyecto anterior de la casa (`hipoacusia`, `dislalias`, `dislexia`, `tea`), Academy en Descubre con Lúa se organiza en torno a los 5 ejes naturales del desarrollo psicopedagógico temprano alineados con las tres áreas curriculares del Decreto 150/2022:
 
 1. **`comunicacion_linguaxe` (Comunicación e linguaxe / Comunicación y lenguaje)**:
    - *Enfoque*: El baño de lenguaje, la atención conjunta, el turno de conversación (*serve and return*), el valor de la pausa silenciosa (4-5 segundos), entonación afectiva y modelado sin corrección punitiva.
