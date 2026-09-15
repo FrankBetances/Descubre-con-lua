@@ -49,8 +49,6 @@ la persona adulta que acompaña.
   <img src="assets/brand/logos/startic.png" alt="Incubadora de Alta Tecnoloxía startTIC" height="34">
   &nbsp;&nbsp;&nbsp;
   <img src="assets/brand/logos/zona-franca-vigo.png" alt="Consorcio da Zona Franca de Vigo" height="48">
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/brand/logos/concello-vigo.png" alt="Concello de Vigo" height="48">
 </p>
 
 <p align="center">

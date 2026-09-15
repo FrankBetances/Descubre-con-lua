@@ -11,7 +11,8 @@ no el logotipo.
 
 ## Los ficheros
 
-Los cinco los trajo Frank en la rama `logo`, el 15/9/2026.
+Los trajo Frank en la rama `logo`, el 15/9/2026. Eran cinco; el del Concello
+de Vigo se retiró ese mismo día, también por decisión suya.
 
 | Fichero | Entidad | Formato y tamaño | Dónde se pinta |
 | --- | --- | --- | --- |
@@ -19,7 +20,6 @@ Los cinco los trajo Frank en la rama `logo`, el 15/9/2026.
 | `earlify-health.jpg` | Earlify Health S.L. | JPEG 992 × 1024, fondo claro propio | Créditos, bajo el escudo · portada del manual · cabecera del README |
 | `startic.png` | Incubadora de Alta Tecnoloxía startTIC | PNG 510 × 102, RGBA | Créditos, «en colaboración con» · portada del manual · cabecera del README |
 | `zona-franca-vigo.png` | Consorcio da Zona Franca de Vigo | PNG 702 × 280, RGBA | Créditos, «en colaboración con» · portada del manual · cabecera del README |
-| `concello-vigo.png` | Concello de Vigo | PNG 600 × 207, RGBA | Créditos, bajo startTIC y Zona Franca · portada del manual · cabecera del README |
 
 La rama traía además `starttic.png`, con dos tes. **No se ha copiado**: es byte
 a byte el mismo fichero que `startic.png` —mismo SHA-256— y dos nombres para la
@@ -28,8 +28,8 @@ misma imagen es una forma segura de que algún día se actualice solo uno.
 ## Las alturas no son iguales, y es a propósito
 
 Las proporciones no se parecen: el escudo y Earlify son cuadrados, startTIC es
-5:1, la Zona Franca 2,5:1 y el Concello 2,9:1. Igualarlos por altura de caja
-hace que los apaisados se coman la pantalla y los cuadrados se vean diminutos.
+5:1 y la Zona Franca 2,5:1. Igualarlos por altura de caja hace que los
+apaisados se coman la pantalla y los cuadrados se vean diminutos.
 Se igualan por **peso óptico**: 72-76 px los cuadrados, 48 los apaisados medios
 y 32 el de startTIC, que es el más alargado.
 
@@ -38,12 +38,22 @@ estaba dibujada para fondo oscuro y sobre la tarjeta clara se perdían el cuervo
 blanco y el círculo; la de la rama `logo` trae su propio fondo turquesa sólido,
 así que la placa solo le añadiría un marco negro.
 
+## El Concello de Vigo va sin logotipo
+
+Frank lo retiró el 15/9/2026. **Su nombre no se ha tocado**: sigue en los
+créditos, en la línea de la cabecera del README y en el texto que dice para
+quién se hace la app. Lo que se ha quitado es la marca gráfica, en las tres
+capas donde se pintaba —pantalla de créditos, portada del manual y cabecera del
+README— y el fichero se ha borrado del repositorio.
+
+Es exactamente el caso para el que existe `LogoInstitucional`: acreditar a una
+entidad por su nombre sin usar su logotipo.
+
 ## Lo que mejoró, y lo que no · medido, no supuesto
 
 | Fichero | Antes | Ahora |
 | --- | --- | --- |
 | `zona-franca-vigo.png` | 400 × 166 RGB. Venía de una captura de web y hubo que **recortarlo** a `(190, 10, 590, 176)` para tirar unos arcos ajenos | **Resuelto.** 702 × 280 RGBA y el canal alfa **no toca ningún borde**: tiene margen propio. Es una exportación limpia, no un recorte |
-| `concello-vigo.png` | No estaba: se había retirado | **Vuelve.** Se pinta en créditos, manual y README |
 | `dr-betances-crest` | PNG para fondo oscuro | JPEG 1024 × 1024 con fondo turquesa propio |
 | `earlify-health.jpg` | 47 KB | 335 KB, bastante más resolución |
 | `startic.png` | Recortado: el dibujo toca los bordes izquierdo, derecho e inferior | **Sigue igual.** El fichero de la rama `logo` es **byte a byte el mismo** que ya había: mismo SHA-256. El alfa sigue con contenido en `x=0`, `x=509` e `y=101` |
