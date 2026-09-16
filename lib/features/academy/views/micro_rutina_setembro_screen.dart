@@ -8,6 +8,7 @@ import '../widgets/academy_header.dart';
 import '../widgets/recast_guia_card.dart';
 import '../widgets/selector_idioma_widget.dart';
 import '../../../data/models/curricular_model.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// Pantalla da Micro-Rutina do Fogar de Setembro para o Segundo Ciclo (3-6 anos).
 ///
@@ -105,6 +106,7 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        leading: const BotonAtras(),
         title: Text(
           isGl ? 'Micro-Rutina · Setembro' : 'Micro-Rutina · Septiembre',
         ),

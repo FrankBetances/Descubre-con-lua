@@ -4,10 +4,12 @@ import '../../../core/audio/fade_audio_coordinator.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart'
-    show FaseAsamblea;
+    show FaseAsamblea, TipoFaseAsamblea;
+import '../../../data/models/progresion_model.dart';
 
 /// El reproductor de la asamblea, el mismo para los dos ciclos.
 ///
@@ -43,6 +45,12 @@ class AsambleaPlayerScreen extends StatefulWidget {
   final OfflineAudioService? audioService;
   final AppLanguage language;
 
+  /// El día de la progresión que se está dando, si se abrió por un día. Se
+  /// enseña en la fase núcleo: semana, día y foco. Las [fases] ya vienen con
+  /// el día aplicado; esto es solo para decirlo en pantalla.
+  final DiaDeProgresion? dia;
+  final SemanaDeProgresion? semana;
+
   const AsambleaPlayerScreen({
     super.key,
     required this.fases,
@@ -52,6 +60,8 @@ class AsambleaPlayerScreen extends StatefulWidget {
     this.cancion,
     this.centroInteres,
     this.audioService,
+    this.dia,
+    this.semana,
   });
 
   @override
@@ -197,6 +207,8 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
                     soando: _soando,
                     onAlternarAudio: _alternar,
                     audioService: widget.audioService,
+                    dia: widget.dia,
+                    semana: widget.semana,
                   ),
                 ),
               ),
@@ -299,6 +311,8 @@ class _PantallaDeFase extends StatelessWidget {
   /// justo lo que pasó al unificar el reproductor: las grabaciones estaban en
   /// el paquete y ninguna tenía un botón que la tocara.
   final OfflineAudioService? audioService;
+  final DiaDeProgresion? dia;
+  final SemanaDeProgresion? semana;
 
   const _PantallaDeFase({
     required this.fase,
@@ -306,6 +320,8 @@ class _PantallaDeFase extends StatelessWidget {
     required this.soando,
     required this.onAlternarAudio,
     required this.audioService,
+    this.dia,
+    this.semana,
     this.material,
     this.cancion,
     this.centroInteres,
@@ -318,6 +334,9 @@ class _PantallaDeFase extends StatelessWidget {
     final asset = fase.audioAsset;
     final temAudio = asset != null && asset.isNotEmpty;
 
+    final eNucleo = fase.tipo == TipoFaseAsamblea.coreTprChallenge;
+    final diaDeHoxe = dia;
+
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
       child: Column(
@@ -325,19 +344,59 @@ class _PantallaDeFase extends StatelessWidget {
         children: [
           Row(
             children: [
-              Expanded(
-                child: Text(
-                  fase.titulo.resolve(language),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    fontFamily: AppTheme.fontFamily,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w700,
-                    color: _AsambleaPlayerScreenState._acento,
+              // La lámina de la fase. Se perdió al unificar el reproductor y
+              // es la imagen de apoyo que la docente enseña con la mano: sin
+              // ella la pantalla era solo texto.
+              if (fase.lamina.isNotEmpty) ...[
+                Container(
+                  width: 64,
+                  height: 64,
+                  decoration: BoxDecoration(
+                    color: _AsambleaPlayerScreenState._superficie,
+                    borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                    border:
+                        Border.all(color: _AsambleaPlayerScreenState._borde),
                   ),
+                  alignment: Alignment.center,
+                  child: LaminaEscena(clave: fase.lamina, ancho: 48),
+                ),
+                const SizedBox(width: 12),
+              ],
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      fase.titulo.resolve(language),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        fontFamily: AppTheme.fontFamily,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                        color: _AsambleaPlayerScreenState._acento,
+                      ),
+                    ),
+                    if (eNucleo && diaDeHoxe != null)
+                      Text(
+                        key: const ValueKey('dia_no_reproductor'),
+                        '${isGl ? 'Semana' : 'Semana'} ${diaDeHoxe.semana}'
+                        '${semana != null ? ' · ${semana!.nome.resolve(language)}' : ''}'
+                        ' · ${diaDeHoxe.nomeDia.resolve(language)}: '
+                        '${diaDeHoxe.foco.resolve(language)}',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontFamily,
+                          fontSize: 13,
+                          fontWeight: FontWeight.w600,
+                          color: _AsambleaPlayerScreenState._textoSecundario,
+                        ),
+                      ),
+                  ],
                 ),
               ),
+              const SizedBox(width: 8),
               Text(
                 '$minutos min',
                 style: const TextStyle(

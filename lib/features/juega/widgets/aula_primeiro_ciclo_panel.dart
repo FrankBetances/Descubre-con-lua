@@ -4,6 +4,7 @@ import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/asamblea_primeiro_ciclo_model.dart';
+import '../../../data/models/progresion_model.dart';
 import 'aula_ciclo_panel.dart';
 
 /// El aula de 1.º ciclo (0-3): se elige el TRAMO y el MES, y sale UNA tarjeta.
@@ -29,7 +30,13 @@ class AulaPrimeiroCicloPanel extends StatefulWidget {
 
   /// Las fichas de contenido que van debajo de la tarjeta del día.
   final Widget? pe;
-  final void Function(TramoPrimeiroCiclo tramo, int mes) onComezar;
+
+  /// La progresión diaria del tramo, por su clave («primeiro_ciclo.0_2»).
+  /// Sin ella la tarjeta enseña el mes entero, que es lo que había.
+  final ProgresionDoMes? Function(String clave)? progresionDe;
+
+  final void Function(TramoPrimeiroCiclo tramo, int mes, DiaDeProgresion? dia)
+      onComezar;
 
   const AulaPrimeiroCicloPanel({
     super.key,
@@ -39,6 +46,7 @@ class AulaPrimeiroCicloPanel extends StatefulWidget {
     this.cabeceira,
     this.calendario,
     this.pe,
+    this.progresionDe,
   });
 
   @override
@@ -48,13 +56,29 @@ class AulaPrimeiroCicloPanel extends StatefulWidget {
 class _AulaPrimeiroCicloPanelState extends State<AulaPrimeiroCicloPanel> {
   late TramoPrimeiroCiclo _tramo;
   late int _mes;
+  late int _semana;
+  late int _dia;
 
   @override
   void initState() {
     super.initState();
     _tramo = TramoPrimeiroCiclo.lactantes0a2;
     _mes = mesDeHoxe();
+    _irAoDiaDeHoxe();
   }
+
+  /// Al cambiar de mes se abre por el día que toca: hoy si es este mes, el
+  /// primer lunes si no.
+  void _irAoDiaDeHoxe() {
+    final h = ProgresionDoMes.hoxe(mesElixido: _mes);
+    _semana = h.semana;
+    _dia = h.dia;
+  }
+
+  ProgresionDoMes? get _progresion =>
+      widget.progresionDe?.call('primeiro_ciclo.${_tramo.clave}');
+
+  DiaDeProgresion? get _diaActual => _progresion?.dia(_semana, _dia);
 
   AsambleaPrimeiroCiclo? get _actual {
     for (final a in widget.asambleas) {
@@ -116,8 +140,38 @@ class _AulaPrimeiroCicloPanelState extends State<AulaPrimeiroCicloPanel> {
             prefixoClave: '1c',
             mesSeleccionado: _mes,
             language: lang,
-            onCambiar: (m) => setState(() => _mes = m),
+            onCambiar: (m) => setState(() {
+              _mes = m;
+              _irAoDiaDeHoxe();
+            }),
           ),
+          if (_progresion != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceLg,
+                AppTheme.spaceLg,
+                0,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  RotuloSeccion(isGl ? 'SEMANA E DÍA' : 'SEMANA Y DÍA'),
+                  const SizedBox(height: AppTheme.spaceSm),
+                  TiraDeDias(
+                    prefixoClave: '1c',
+                    progresion: _progresion!,
+                    semana: _semana,
+                    dia: _dia,
+                    language: lang,
+                    onCambiar: (s, d) => setState(() {
+                      _semana = s;
+                      _dia = d;
+                    }),
+                  ),
+                ],
+              ),
+            ),
           const SizedBox(height: AppTheme.spaceLg),
           Padding(
             padding: const EdgeInsets.symmetric(
@@ -143,7 +197,9 @@ class _AulaPrimeiroCicloPanelState extends State<AulaPrimeiroCicloPanel> {
                 : _TarxetaDeFluxo(
                     asamblea: asamblea,
                     language: lang,
-                    onComezar: () => widget.onComezar(_tramo, _mes),
+                    dia: _diaActual,
+                    semana: _progresion?.semana(_semana),
+                    onComezar: () => widget.onComezar(_tramo, _mes, _diaActual),
                   ),
           ),
           if (widget.calendario != null) widget.calendario!,
@@ -157,13 +213,29 @@ class _AulaPrimeiroCicloPanelState extends State<AulaPrimeiroCicloPanel> {
 class _TarxetaDeFluxo extends StatelessWidget {
   final AsambleaPrimeiroCiclo asamblea;
   final AppLanguage language;
+  final DiaDeProgresion? dia;
+  final SemanaDeProgresion? semana;
   final VoidCallback onComezar;
 
   const _TarxetaDeFluxo({
     required this.asamblea,
     required this.language,
+    required this.dia,
+    required this.semana,
     required this.onComezar,
   });
+
+  /// Las órdenes en inglés que tocan hoy, ya recortadas al día.
+  List<String> get _ordesDeHoxe {
+    final d = dia;
+    if (d == null) return const [];
+    for (final f in d.aplicarA(asamblea.fases)) {
+      if (f.comandosL3.isNotEmpty) {
+        return [for (final c in f.comandosL3) c.textoIngles];
+      }
+    }
+    return const [];
+  }
 
   /// La lámina de la fase del núcleo TPR, que es la que da el tema del mes.
   String get _lamina {
@@ -240,6 +312,15 @@ class _TarxetaDeFluxo extends StatelessWidget {
                   ),
                 ],
                 const SizedBox(height: AppTheme.spaceMd),
+                if (dia != null) ...[
+                  BloqueDoDia(
+                    dia: dia!,
+                    semana: semana,
+                    ordes: _ordesDeHoxe,
+                    language: language,
+                  ),
+                  const SizedBox(height: AppTheme.spaceMd),
+                ],
                 for (final fase in asamblea.fases)
                   Padding(
                     padding: const EdgeInsets.only(bottom: AppTheme.spaceSm),

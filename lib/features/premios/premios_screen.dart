@@ -10,6 +10,7 @@ import '../../data/models/calendario_model.dart';
 import 'medallas_widget.dart';
 import 'premios_model.dart';
 import 'premios_repository.dart';
+import '../../core/widgets/boton_atras.dart';
 
 /// «Os premios de Lúa», con la estructura de la hoja de premios del proyecto anterior de la casa
 /// (`docs/screenshots/26-premios-insignias.png`): cabecera con la gata, nivel y
@@ -110,7 +111,9 @@ class _PremiosScreenState extends State<PremiosScreen> {
     final text = Theme.of(context).textTheme;
 
     return Scaffold(
-      appBar: AppBar(title: Text(PremiosScreen.titulo.resolve(lang))),
+      appBar: AppBar(
+          leading: const BotonAtras(),
+          title: Text(PremiosScreen.titulo.resolve(lang))),
       // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
       // ya no reserva la barra de gestos y el final de esta pantalla
       // quedaba por debajo. `top: false` porque el inset de arriba ya lo

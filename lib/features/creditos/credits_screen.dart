@@ -6,6 +6,7 @@ import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/paxina_sen_scroll.dart';
+import '../../core/widgets/boton_atras.dart';
 
 /// Créditos, con la estructura de los del proyecto anterior de la casa
 /// (`docs/screenshots/02-creditos.png`): la gata y el nombre arriba, un
@@ -128,7 +129,9 @@ class CreditsScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: AppTheme.primary,
-      appBar: AppBar(title: Text(_title.resolve(currentLanguage))),
+      appBar: AppBar(
+          leading: const BotonAtras(),
+          title: Text(_title.resolve(currentLanguage))),
       body: Stack(
         children: [
           const Positioned(

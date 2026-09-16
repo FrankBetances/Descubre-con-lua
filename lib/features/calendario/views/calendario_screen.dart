@@ -11,7 +11,11 @@ import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/unidad_model.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
-import '../../juega/views/backstage_asamblea_screen.dart';
+import '../../juega/views/asamblea_player_screen.dart';
+import '../../juega/widgets/aula_ciclo_panel.dart';
+import '../../juega/widgets/aula_segundo_ciclo_panel.dart';
+import '../../../data/models/asamblea_primeiro_ciclo_model.dart';
+import '../../../data/models/progresion_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../juega/widgets/barra_ingles_widget.dart';
 import '../../academy/views/guia_atencion_screen.dart';
@@ -25,6 +29,7 @@ import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/brand/iconos_contenido.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../widgets/temporizador_sutil_widget.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// Contrato de callback para o lanzamento a un toque da sesión
 typedef IniciarSesionCallback = void Function(
@@ -78,6 +83,10 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   late bool _esDocente;
   int _mesSeleccionadoIndex = 0;
   CalendarioContenido? _contenido;
+
+  /// La semana y el día de la asamblea que se abre desde aquí.
+  int _semana = ProgresionDoMes.hoxe().semana;
+  int _dia = ProgresionDoMes.hoxe().dia;
 
   /// El mes se cambia deslizando la tarjeta de lado, no bajando por la
   /// pantalla. Antes el mes se elegía de tres maneras apiladas en una sola
@@ -274,23 +283,6 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     return widget.repository?.getUnidadById(id);
   }
 
-  /// Las asambleas de 2.º ciclo de este mes, una por nivel.
-  ///
-  /// El Calendario Escola·Fogar reparte el curso, y el 2.º ciclo no estaba
-  /// dentro: se llegaba a él solo por la lista del aula. Un calendario que no
-  /// enseña la mitad del contenido no es un calendario. Si el mes no tiene
-  /// asambleas escritas todavía, no se pinta nada: el mes no miente.
-  List<AsambleaSegundoCiclo> _asambleasSegundoCicloDe(MesCurricular mes) {
-    final repo = widget.repository;
-    if (repo == null) return const [];
-    final todas = repo
-        .getAllAsambleasSegundoCicloSync()
-        .where((a) => a.mes == mes.mesCalendario)
-        .toList()
-      ..sort((a, b) => a.nivel.index.compareTo(b.nivel.index));
-    return todas;
-  }
-
   void _lanzarSesion(MesCurricular mes, bool esDocente) {
     if (widget.onIniciarSesion != null) {
       widget.onIniciarSesion!(mes, esDocente);
@@ -321,7 +313,9 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     if (fallo != null) {
       return Scaffold(
         backgroundColor: AppTheme.pageBg,
-        appBar: AppBar(title: Text(_titulo.resolve(_language))),
+        appBar: AppBar(
+            leading: const BotonAtras(),
+            title: Text(_titulo.resolve(_language))),
         body: AvisoContenidoIlegible(asset: fallo, language: _language),
       );
     }
@@ -330,13 +324,16 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       // un aparato real; una pantalla a medias se vería peor que esto.
       return Scaffold(
         backgroundColor: AppTheme.pageBg,
-        appBar: AppBar(title: Text(_titulo.resolve(_language))),
+        appBar: AppBar(
+            leading: const BotonAtras(),
+            title: Text(_titulo.resolve(_language))),
         body: const Center(child: CircularProgressIndicator()),
       );
     }
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: AppBar(
+        leading: const BotonAtras(),
         title: Text(
           _titulo.resolve(_language),
           style: const TextStyle(fontWeight: FontWeight.bold),
@@ -501,7 +498,11 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         : (hoy.month >= 9 ? hoy.year + 1 : hoy.year);
     final estado = widget.store.estadoParaMes(anhoDoMes, mesItem.mesCalendario);
 
+    // La ficha del mes se DESPLAZA. Encogerla hasta caber la dejaba al 80 %,
+    // descentrada y con la mitad de abajo cortada: un adulto la lee sentado,
+    // y lo que un adulto lee sentado se desplaza (ver PaxinaSenScroll).
     return PaxinaSenScroll(
+      desprazarSeNonCabe: true,
       padding: const EdgeInsets.symmetric(
         horizontal: AppTheme.spaceSm,
         vertical: AppTheme.spaceSm,
@@ -981,24 +982,69 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 ),
               ),
             ],
-            ..._buildAsambleasSegundoCiclo(mes),
+            if (_esDocente) ..._buildAsambleasDoDia(mes),
           ],
         ),
       ),
     );
   }
 
-  /// El acceso al 2.º ciclo desde la ficha del mes, un botón por nivel.
-  List<Widget> _buildAsambleasSegundoCiclo(MesCurricular mes) {
-    final asambleas = _asambleasSegundoCicloDe(mes);
-    if (asambleas.isEmpty) return const [];
+  /// La asamblea del DÍA desde la ficha del mes: semana, día y un botón por
+  /// grupo (0-2, 2-3, 4.º, 5.º, 6.º). Antes aquí había un botón por nivel de
+  /// 2.º ciclo que abría la asamblea del mes entero; el calendario decía «una
+  /// actividad por mes» porque eso era lo que abría.
+  List<Widget> _buildAsambleasDoDia(MesCurricular mes) {
+    final repo = widget.repository;
+    if (repo == null) return const [];
+    // Las semanas y los días se llaman igual en todos los tramos; para la tira
+    // vale cualquiera de las progresiones que haya en el paquete.
+    final progresions = repo.getAllProgresionsSync();
+    if (progresions.isEmpty) return const [];
+    final referencia = progresions.first;
     final isGl = _language == AppLanguage.gl;
+
+    final grupos = <({String etiqueta, String clave, VoidCallback? abrir})>[];
+    for (final tramo in TramoPrimeiroCiclo.values) {
+      final a = repo.getAsambleaPrimeiroCicloSync(mes.mesCalendario, tramo);
+      grupos.add((
+        etiqueta: tramo.etiquetaCorta.resolve(_language),
+        clave: '1c_${tramo.clave}',
+        abrir: a == null
+            ? null
+            : () => _abrirDia(
+                  clave: 'primeiro_ciclo.${tramo.clave}',
+                  fases: a.fases,
+                  subtitulo:
+                      '${mes.nombreMes.resolve(_language)} · ${tramo.etiquetaCorta.resolve(_language)}',
+                  material: a.materialDoMes.resolve(_language),
+                  cancion: a.cancionDoMes,
+                  centroInteres: a.centroInteres.resolve(_language),
+                ),
+      ));
+    }
+    for (final nivel in NivelEducativoSegundoCiclo.values) {
+      final a = repo.getAsambleaByMesYNivelSync(mes.mesCalendario, nivel);
+      grupos.add((
+        etiqueta: nivel.etiquetaCorta.resolve(_language),
+        clave: '2c_${nivel.clave}',
+        abrir: a == null
+            ? null
+            : () => _abrirDia(
+                  clave: AulaSegundoCicloPanel.claveProgresion(nivel),
+                  fases: a.fases,
+                  subtitulo:
+                      '${mes.nombreMes.resolve(_language)} · ${nivel.etiquetaCorta.resolve(_language)}',
+                  centroInteres: a.centroInteres.resolve(_language),
+                ),
+      ));
+    }
+
     return [
       const SizedBox(height: 16),
       const Divider(height: 1),
       const SizedBox(height: 12),
       Text(
-        isGl ? 'SEGUNDO CICLO (3-6 ANOS)' : 'SEGUNDO CICLO (3-6 AÑOS)',
+        isGl ? 'A ASEMBLEA DE HOXE' : 'LA ASAMBLEA DE HOY',
         style: const TextStyle(
           fontSize: 11,
           fontWeight: FontWeight.w800,
@@ -1009,8 +1055,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       const SizedBox(height: 4),
       Text(
         isGl
-            ? 'A asemblea matinal deste mes, co inglés dentro. Elixe o nivel.'
-            : 'La asamblea matinal de este mes, con el inglés dentro. Elige el nivel.',
+            ? 'Cada día do mes ten a súa asemblea: elixe semana, día e grupo.'
+            : 'Cada día del mes tiene su asamblea: elige semana, día y grupo.',
         style: const TextStyle(
           fontSize: 12.5,
           color: AppTheme.textSecondary,
@@ -1018,37 +1064,63 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         ),
       ),
       const SizedBox(height: 10),
-      // Wrap y no Row: tres botones con «5.º de Infantil (4-5 años)» dentro no
-      // caben en una línea de 360 dp.
+      TiraDeDias(
+        prefixoClave: 'cal',
+        progresion: referencia,
+        semana: _semana,
+        dia: _dia,
+        language: _language,
+        onCambiar: (s, d) => setState(() {
+          _semana = s;
+          _dia = d;
+        }),
+      ),
+      const SizedBox(height: 10),
       Wrap(
         spacing: 8,
         runSpacing: 8,
         children: [
-          for (final asamblea in asambleas)
+          for (final g in grupos)
             OutlinedButton(
-              key: ValueKey(
-                  'calendario_asamblea_2c_${mes.mesCalendario}_${asamblea.nivel.clave}'),
-              onPressed: () => Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => BackstageAsambleaScreen(
-                    repository: widget.repository!,
-                    audioService: widget.audioService,
-                    initialNivel: asamblea.nivel,
-                    initialMes: asamblea.mes,
-                    initialLanguage: _language,
-                    onLanguageChanged: _onToggleLanguage,
-                  ),
-                ),
-              ),
+              key: ValueKey('calendario_dia_${mes.mesCalendario}_${g.clave}'),
+              onPressed: g.abrir,
               style: OutlinedButton.styleFrom(
                 minimumSize: const Size(0, AppTheme.touchMin),
                 foregroundColor: AppTheme.primaryInk,
               ),
-              child: Text(asamblea.nivel.etiquetaCorta.resolve(_language)),
+              child: Text(g.etiqueta),
             ),
         ],
       ),
     ];
+  }
+
+  void _abrirDia({
+    required String clave,
+    required List<FaseAsamblea> fases,
+    required String subtitulo,
+    String? material,
+    String? cancion,
+    String? centroInteres,
+  }) {
+    final progresion = widget.repository?.getProgresionSync(clave);
+    final dia = progresion?.dia(_semana, _dia);
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => AsambleaPlayerScreen(
+          fases: dia?.aplicarA(fases) ?? fases,
+          subtitulo:
+              '$subtitulo${dia != null ? ' · S${dia.semana} ${dia.nomeDia.resolve(_language)}' : ''}',
+          material: material,
+          cancion: cancion,
+          centroInteres: centroInteres,
+          audioService: widget.audioService,
+          language: _language,
+          dia: dia,
+          semana: progresion?.semana(_semana),
+        ),
+      ),
+    );
   }
 
   Widget _buildRoleSection({

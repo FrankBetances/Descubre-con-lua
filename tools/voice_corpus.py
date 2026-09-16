@@ -419,6 +419,23 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                         _add(_localized(paso[campo]), "tutor",
                              f"{gid}/paso/{i}/{campo}", seen)
 
+    # La progresión diaria: el foco y la consigna de cada uno de los 20 días
+    # de cada tramo. Es lo que la docente lee en la fase núcleo en vez de la
+    # consigna del mes, así que necesita voz igual que ella.
+    progresion = content_dir / "progresion"
+    if progresion.exists():
+        for path in sorted(progresion.glob("*.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            pid = data.get("id", path.stem)
+            for dia in data.get("dias") or []:
+                if not isinstance(dia, dict):
+                    continue
+                ref = f"{pid}/s{dia.get('semana', '?')}/d{dia.get('dia', '?')}"
+                for campo in ("foco", "consigna"):
+                    if dia.get(campo):
+                        _add(_localized(dia[campo]), "tutor",
+                             f"{ref}/{campo}", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

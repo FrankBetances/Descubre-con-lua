@@ -346,7 +346,7 @@ void main() {
       expect(mockAudioService.isPlaying, isTrue);
 
       // Pop route (simulating AppBar back or hardware back)
-      await tester.pageBack();
+      await tester.tap(find.byKey(const ValueKey('boton_atras')));
       await tester.pumpAndSettle();
 
       // Service MUST be stopped

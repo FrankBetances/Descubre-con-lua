@@ -36,6 +36,9 @@ flutter:
     # Salen del documento curricular del primer ciclo, que describe una
     # dinámica distinta para cada tramo en cada mes.
     - assets/content/asambleas_primeiro_ciclo/
+    # La progresión diaria: 4 semanas x 5 días por tramo. Es lo que hace
+    # que la asamblea de hoy no sea la misma que la de ayer.
+    - assets/content/progresion/
     # Las asambleas de segundo ciclo con el inglés como L3.
     - assets/content/asambleas_segundo_ciclo/
     - assets/audio/

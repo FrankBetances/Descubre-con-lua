@@ -5,6 +5,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
+import '../../../data/models/progresion_model.dart';
 import 'aula_ciclo_panel.dart';
 
 /// El aula de 2.º ciclo: se elige la CLASE y el MES, y sale UNA tarjeta.
@@ -40,8 +41,14 @@ class AulaSegundoCicloPanel extends StatefulWidget {
   /// Las fichas de contenido que van debajo de la tarjeta del día.
   final Widget? pe;
 
-  /// Abre el Modo Asamblea por la clase y el mes que la docente eligió aquí.
-  final void Function(NivelEducativoSegundoCiclo nivel, int mes) onComezar;
+  /// La progresión diaria del nivel, por su clave («segundo_ciclo.4»).
+  final ProgresionDoMes? Function(String clave)? progresionDe;
+
+  /// Abre el Modo Asamblea por la clase, el mes y el día que la docente
+  /// eligió aquí.
+  final void Function(
+          NivelEducativoSegundoCiclo nivel, int mes, DiaDeProgresion? dia)
+      onComezar;
 
   const AulaSegundoCicloPanel({
     super.key,
@@ -51,7 +58,16 @@ class AulaSegundoCicloPanel extends StatefulWidget {
     this.cabeceira,
     this.calendario,
     this.pe,
+    this.progresionDe,
   });
+
+  /// La clave de progresión de un nivel: «segundo_ciclo.4», «.5», «.6».
+  static String claveProgresion(NivelEducativoSegundoCiclo nivel) =>
+      'segundo_ciclo.${switch (nivel) {
+        NivelEducativoSegundoCiclo.infantil4 => '4',
+        NivelEducativoSegundoCiclo.infantil5 => '5',
+        _ => '6',
+      }}';
 
   @override
   State<AulaSegundoCicloPanel> createState() => _AulaSegundoCicloPanelState();
@@ -76,13 +92,27 @@ class _AulaSegundoCicloPanelState extends State<AulaSegundoCicloPanel> {
 
   late NivelEducativoSegundoCiclo _nivel;
   late int _mes;
+  late int _semana;
+  late int _dia;
 
   @override
   void initState() {
     super.initState();
     _nivel = NivelEducativoSegundoCiclo.infantil4;
     _mes = _mesDeHoxe();
+    _irAoDiaDeHoxe();
   }
+
+  void _irAoDiaDeHoxe() {
+    final h = ProgresionDoMes.hoxe(mesElixido: _mes);
+    _semana = h.semana;
+    _dia = h.dia;
+  }
+
+  ProgresionDoMes? get _progresion =>
+      widget.progresionDe?.call(AulaSegundoCicloPanel.claveProgresion(_nivel));
+
+  DiaDeProgresion? get _diaActual => _progresion?.dia(_semana, _dia);
 
   /// Abre por el mes de curso que toca hoy. En julio y agosto no hay curso: se
   /// entra por septiembre, que es por donde se empieza.
@@ -139,8 +169,40 @@ class _AulaSegundoCicloPanelState extends State<AulaSegundoCicloPanel> {
             mesSeleccionado: _mes,
             nomes: _nomeMes,
             language: lang,
-            onCambiar: (m) => setState(() => _mes = m),
+            onCambiar: (m) => setState(() {
+              _mes = m;
+              _irAoDiaDeHoxe();
+            }),
           ),
+          if (_progresion != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppTheme.spaceLg,
+                AppTheme.spaceLg,
+                AppTheme.spaceLg,
+                0,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  _RotuloSeccion(
+                    texto: isGl ? 'SEMANA E DÍA' : 'SEMANA Y DÍA',
+                  ),
+                  const SizedBox(height: AppTheme.spaceSm),
+                  TiraDeDias(
+                    prefixoClave: '2c',
+                    progresion: _progresion!,
+                    semana: _semana,
+                    dia: _dia,
+                    language: lang,
+                    onCambiar: (s, d) => setState(() {
+                      _semana = s;
+                      _dia = d;
+                    }),
+                  ),
+                ],
+              ),
+            ),
           const SizedBox(height: AppTheme.spaceLg),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: AppTheme.spaceLg),
@@ -150,7 +212,9 @@ class _AulaSegundoCicloPanelState extends State<AulaSegundoCicloPanel> {
                     asamblea: asamblea,
                     nomeMes: _nomeMes[_mes]!,
                     language: lang,
-                    onComezar: () => widget.onComezar(_nivel, _mes),
+                    dia: _diaActual,
+                    semana: _progresion?.semana(_semana),
+                    onComezar: () => widget.onComezar(_nivel, _mes, _diaActual),
                   ),
           ),
           if (widget.calendario != null) widget.calendario!,
@@ -343,14 +407,30 @@ class _TarxetaDeFluxo extends StatelessWidget {
   final AsambleaSegundoCiclo asamblea;
   final LocalizedString nomeMes;
   final AppLanguage language;
+  final DiaDeProgresion? dia;
+  final SemanaDeProgresion? semana;
   final VoidCallback onComezar;
 
   const _TarxetaDeFluxo({
     required this.asamblea,
     required this.nomeMes,
     required this.language,
+    required this.dia,
+    required this.semana,
     required this.onComezar,
   });
+
+  /// Las órdenes en inglés que tocan hoy, ya recortadas al día.
+  List<String> get _ordesDeHoxe {
+    final d = dia;
+    if (d == null) return const [];
+    for (final f in d.aplicarA(asamblea.fases)) {
+      if (f.comandosL3.isNotEmpty) {
+        return [for (final c in f.comandosL3) c.textoIngles];
+      }
+    }
+    return const [];
+  }
 
   String get _lamina {
     for (final f in asamblea.fases) {
@@ -408,6 +488,15 @@ class _TarxetaDeFluxo extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: AppTheme.spaceMd),
+                if (dia != null) ...[
+                  BloqueDoDia(
+                    dia: dia!,
+                    semana: semana,
+                    ordes: _ordesDeHoxe,
+                    language: language,
+                  ),
+                  const SizedBox(height: AppTheme.spaceMd),
+                ],
                 for (final fase in asamblea.fases)
                   Padding(
                     padding: const EdgeInsets.only(bottom: AppTheme.spaceSm),

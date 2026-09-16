@@ -12,6 +12,7 @@ import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../widgets/academy_header.dart';
 import '../widgets/selector_idioma_widget.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// El lector de una cápsula, portado del proyecto anterior de la casa
 /// (`docs/screenshots/29-academy-lector.png` y `30-academy-quiz.png`).
@@ -240,6 +241,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        leading: const BotonAtras(),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: AppTheme.spaceMd),

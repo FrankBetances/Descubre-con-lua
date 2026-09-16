@@ -18,6 +18,7 @@ import '../../../core/storage/calendario_store.dart';
 import '../../calendario/views/calendario_screen.dart';
 import '../../calendario/widgets/calendario_do_curso.dart';
 import '../../../data/repositories/calendario_repository.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// Los 5 bloques de desarrollo de «Academy · Familias».
 ///
@@ -138,6 +139,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        leading: const BotonAtras(),
         title: const Text('Academy · Familias'),
         actions: [
           Padding(

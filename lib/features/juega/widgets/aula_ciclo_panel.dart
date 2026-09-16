@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../data/models/progresion_model.dart';
 
 /// Los diez meses del curso escolar, en el orden en que se dan.
 const List<int> mesesDoCurso = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
@@ -356,5 +357,251 @@ class BloqueDeFases extends StatelessWidget {
         ),
       );
     });
+  }
+}
+
+/// La semana y el día: lo que hace que hoy no sea ayer.
+///
+/// Dos filas de pastillas: las cuatro semanas del mes y los cinco días
+/// lectivos. Frank: «las asambleas deben ser distintas cada día; es posible
+/// que mantengan una misma temática durante varios días, pero no puede ser la
+/// misma un mes completo».
+class TiraDeDias extends StatelessWidget {
+  final ProgresionDoMes progresion;
+  final int semana;
+  final int dia;
+  final AppLanguage language;
+  final void Function(int semana, int dia) onCambiar;
+  final String prefixoClave;
+
+  const TiraDeDias({
+    super.key,
+    required this.progresion,
+    required this.semana,
+    required this.dia,
+    required this.language,
+    required this.onCambiar,
+    required this.prefixoClave,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final semanaActual = progresion.semana(semana);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          children: [
+            for (final s in progresion.semanas)
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(right: AppTheme.spaceSm),
+                  child: _Pastilla(
+                    clave: ValueKey('${prefixoClave}_semana_${s.numero}'),
+                    activa: s.numero == semana,
+                    onTap: () => onCambiar(s.numero, dia),
+                    texto: '${s.numero}',
+                    subtexto: s.nome.resolve(language),
+                  ),
+                ),
+              ),
+          ],
+        ),
+        const SizedBox(height: AppTheme.spaceSm),
+        Row(
+          children: [
+            for (final d in progresion.dias.where((d) => d.semana == semana))
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(right: AppTheme.spaceSm),
+                  child: _Pastilla(
+                    clave: ValueKey('${prefixoClave}_dia_${d.dia}'),
+                    activa: d.dia == dia,
+                    onTap: () => onCambiar(semana, d.dia),
+                    texto: d.nomeDia.resolve(language).substring(0, 2),
+                    subtexto: null,
+                  ),
+                ),
+              ),
+          ],
+        ),
+        if (semanaActual != null) ...[
+          const SizedBox(height: AppTheme.spaceSm),
+          Text(
+            semanaActual.meta.resolve(language),
+            style: const TextStyle(
+              fontFamily: AppTheme.fontFamily,
+              fontSize: 12.5,
+              color: AppTheme.textSecondary,
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+class _Pastilla extends StatelessWidget {
+  final Key clave;
+  final bool activa;
+  final VoidCallback onTap;
+  final String texto;
+  final String? subtexto;
+
+  const _Pastilla({
+    required this.clave,
+    required this.activa,
+    required this.onTap,
+    required this.texto,
+    required this.subtexto,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        key: clave,
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+        child: Container(
+          constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+          padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: activa ? AppTheme.primary : AppTheme.card,
+            borderRadius: BorderRadius.circular(AppTheme.radiusField),
+            border: Border.all(
+              color: activa ? AppTheme.primary : AppTheme.border,
+              width: 1.5,
+            ),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                texto,
+                style: TextStyle(
+                  fontFamily: AppTheme.fontFamily,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w800,
+                  color: activa ? Colors.white : AppTheme.textPrimary,
+                ),
+              ),
+              if (subtexto != null)
+                Text(
+                  subtexto!,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 10.5,
+                    fontWeight: FontWeight.w600,
+                    color: activa
+                        ? Colors.white.withValues(alpha: 0.9)
+                        : AppTheme.textMuted,
+                  ),
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Lo que se hace HOY, dentro de la tarjeta de flujo: el foco del día, la
+/// consigna y las órdenes en inglés que tocan.
+class BloqueDoDia extends StatelessWidget {
+  final DiaDeProgresion dia;
+  final SemanaDeProgresion? semana;
+  final List<String> ordes;
+  final AppLanguage language;
+
+  const BloqueDoDia({
+    super.key,
+    required this.dia,
+    required this.semana,
+    required this.ordes,
+    required this.language,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    return Container(
+      key: const ValueKey('bloque_do_dia'),
+      padding: const EdgeInsets.all(AppTheme.spaceMd),
+      decoration: BoxDecoration(
+        color: AppTheme.primaryTint,
+        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            '${isGl ? 'HOXE' : 'HOY'} · ${isGl ? 'SEMANA' : 'SEMANA'} ${dia.semana}'
+            '${semana != null ? ' · ${semana!.nome.resolve(language).toUpperCase()}' : ''}'
+            ' · ${dia.nomeDia.resolve(language).toUpperCase()}',
+            style: const TextStyle(
+              fontFamily: AppTheme.fontFamily,
+              fontSize: 11,
+              fontWeight: FontWeight.w800,
+              color: AppTheme.primaryInk,
+              letterSpacing: 0.8,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            dia.foco.resolve(language),
+            style: const TextStyle(
+              fontFamily: AppTheme.fontFamily,
+              fontSize: 16,
+              fontWeight: FontWeight.w800,
+              color: AppTheme.textPrimary,
+              height: 1.2,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            dia.consigna.resolve(language),
+            style: const TextStyle(
+              fontFamily: AppTheme.fontFamily,
+              fontSize: 13.5,
+              color: AppTheme.textSecondary,
+              height: 1.35,
+            ),
+          ),
+          if (ordes.isNotEmpty) ...[
+            const SizedBox(height: AppTheme.spaceSm),
+            Wrap(
+              spacing: 6,
+              runSpacing: 6,
+              children: [
+                for (final o in ordes)
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(
+                      color: AppTheme.card,
+                      borderRadius: BorderRadius.circular(999),
+                      border: Border.all(color: AppTheme.border),
+                    ),
+                    child: Text(
+                      o,
+                      style: const TextStyle(
+                        fontFamily: AppTheme.fontFamily,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w700,
+                        color: AppTheme.primaryInk,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ],
+        ],
+      ),
+    );
   }
 }

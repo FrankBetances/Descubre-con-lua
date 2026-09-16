@@ -18,6 +18,7 @@ import '../widgets/aula_segundo_ciclo_panel.dart';
 import 'asamblea_player_screen.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../data/repositories/calendario_repository.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// Ciclos educativos de Educación Infantil (Decreto 150/2022).
 enum CicloEducativo {
@@ -100,6 +101,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        leading: const BotonAtras(),
         title: Text(
           isGl ? 'Juega con Lúa · Aula' : 'Juega con Lúa · Aula',
           style: const TextStyle(fontWeight: FontWeight.bold),
@@ -336,21 +338,30 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       cabeceira: _tiraDeLua(),
       calendario: _calendarioDoAula(),
       pe: _fichasDeUnidades(),
-      onComezar: (tramo, mes) {
+      progresionDe: widget.repository.getProgresionSync,
+      onComezar: (tramo, mes, dia) {
         final asamblea =
             widget.repository.getAsambleaPrimeiroCicloSync(mes, tramo);
         if (asamblea == null) return;
+        final semana = widget.repository
+            .getProgresionSync('primeiro_ciclo.${tramo.clave}')
+            ?.semana(dia?.semana ?? 0);
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) => AsambleaPlayerScreen(
-              fases: asamblea.fases,
+              // El día se aplica a las fases ANTES de entrar: el reproductor
+              // no sabe de progresiones, solo enseña lo que le dan.
+              fases: dia?.aplicarA(asamblea.fases) ?? asamblea.fases,
               subtitulo:
-                  '${nomeDoMes[asamblea.mes]!.resolve(_language)} · ${asamblea.tramo.etiquetaCorta.resolve(_language)}',
+                  '${nomeDoMes[asamblea.mes]!.resolve(_language)} · ${asamblea.tramo.etiquetaCorta.resolve(_language)}'
+                  '${dia != null ? ' · S${dia.semana} ${dia.nomeDia.resolve(_language)}' : ''}',
               material: asamblea.materialDoMes.resolve(_language),
               cancion: asamblea.cancionDoMes,
               centroInteres: asamblea.centroInteres.resolve(_language),
               audioService: widget.audioService,
               language: _language,
+              dia: dia,
+              semana: semana,
             ),
           ),
         );
@@ -368,19 +379,26 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       language: _language,
       cabeceira: _tiraDeLua(),
       calendario: _calendarioDoAula(),
-      onComezar: (nivel, mes) {
+      progresionDe: widget.repository.getProgresionSync,
+      onComezar: (nivel, mes, dia) {
         final asamblea =
             widget.repository.getAsambleaByMesYNivelSync(mes, nivel);
         if (asamblea == null) return;
+        final semana = widget.repository
+            .getProgresionSync(AulaSegundoCicloPanel.claveProgresion(nivel))
+            ?.semana(dia?.semana ?? 0);
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) => AsambleaPlayerScreen(
-              fases: asamblea.fases,
+              fases: dia?.aplicarA(asamblea.fases) ?? asamblea.fases,
               subtitulo:
-                  '${nomeDoMes[asamblea.mes]!.resolve(_language)} · ${asamblea.nivel.etiquetaCorta.resolve(_language)}',
+                  '${nomeDoMes[asamblea.mes]!.resolve(_language)} · ${asamblea.nivel.etiquetaCorta.resolve(_language)}'
+                  '${dia != null ? ' · S${dia.semana} ${dia.nomeDia.resolve(_language)}' : ''}',
               centroInteres: asamblea.centroInteres.resolve(_language),
               audioService: widget.audioService,
               language: _language,
+              dia: dia,
+              semana: semana,
             ),
           ),
         );

@@ -11,6 +11,7 @@ import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../widgets/selector_idioma_widget.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// La guía de la familia: cómo meter el inglés en la casa sin saturar.
 ///
@@ -137,6 +138,7 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: AppBar(
+        leading: const BotonAtras(),
         title: Text(
           _titulo.resolve(_language),
           style: const TextStyle(fontWeight: FontWeight.bold),

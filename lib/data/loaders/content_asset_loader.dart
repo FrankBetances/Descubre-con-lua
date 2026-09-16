@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import '../models/asamblea_primeiro_ciclo_model.dart';
+import '../models/progresion_model.dart';
 import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
 import '../models/unidad_model.dart';
@@ -35,6 +36,9 @@ class ContentAssetLoader {
   /// Default asset path prefix for Primeiro Ciclo microcapsules (0-3 years).
   static const String asambleasPrimeiroCicloAssetPrefix =
       'assets/content/asambleas_primeiro_ciclo/';
+
+  /// La progresión diaria (4 semanas x 5 días) de cada tramo.
+  static const String progresionAssetPrefix = 'assets/content/progresion/';
 
   /// Default asset path prefix for Segundo Ciclo assemblies (3-6 years).
   static const String asambleasSegundoCicloAssetPrefix =
@@ -114,6 +118,12 @@ class ContentAssetLoader {
       throw FormatException('Root of $assetPath is not a JSON object');
     }
     return AsambleaPrimeiroCiclo.fromJson(Map<String, dynamic>.from(decoded));
+  }
+
+  /// Lee la progresión diaria de un tramo.
+  Future<ProgresionDoMes> loadProgresion(String assetPath) async {
+    final jsonString = await _stringLoader(assetPath);
+    return ProgresionDoMes.fromRaw(jsonString);
   }
 
   /// Alias for [loadAsambleaSegundoCiclo] matching [loadUnidadFromAsset] nomenclature.

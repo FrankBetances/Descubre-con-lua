@@ -20,6 +20,7 @@ import '../widgets/paso_preguntas_widget.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../../../core/storage/calendario_store.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// Screen orchestrating the 6 canonical assembly phases for early childhood teachers.
 ///
@@ -317,6 +318,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        leading: const BotonAtras(),
         title: Text(
           isGl ? 'Modo Asemblea · Aula' : 'Modo Asamblea · Aula',
           style: const TextStyle(fontWeight: FontWeight.bold),

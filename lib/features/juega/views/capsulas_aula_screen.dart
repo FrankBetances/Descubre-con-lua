@@ -12,6 +12,7 @@ import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../../premios/widgets/lua_game_strip.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// «Formación · Aula»: las cápsulas que lee la maestra.
 ///
@@ -125,6 +126,7 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        leading: const BotonAtras(),
         title: Text(CapsulasAulaScreen.titulo.resolve(lang)),
         actions: [
           Padding(

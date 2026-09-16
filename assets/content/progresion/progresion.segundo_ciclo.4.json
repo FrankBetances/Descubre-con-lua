@@ -1,0 +1,483 @@
+{
+  "version": 1,
+  "id": "progresion.segundo_ciclo.4",
+  "nota": {
+    "gl": "A temática, o material, a canción e as ordes de cada mes saen do documento curricular. O reparto por semanas e días é unha proposta de escalonamento segundo o método TPR (descubrir, practicar, combinar, consolidar); non está no documento e pódese cambiar aquí.",
+    "es": "La temática, el material, la canción y las órdenes de cada mes salen del documento curricular. El reparto por semanas y días es una propuesta de escalonamiento según el método TPR (descubrir, practicar, combinar, consolidar); no está en el documento y se puede cambiar aquí."
+  },
+  "semanas": [
+    {
+      "numero": 1,
+      "nome": {
+        "gl": "Descubrir",
+        "es": "Descubrir"
+      },
+      "meta": {
+        "gl": "Unha orde nova cada vez, con modelado completo.",
+        "es": "Una orden nueva cada vez, con modelado completo."
+      }
+    },
+    {
+      "numero": 2,
+      "nome": {
+        "gl": "Practicar",
+        "es": "Practicar"
+      },
+      "meta": {
+        "gl": "As tres ordes do mes, con canción e con material.",
+        "es": "Las tres órdenes del mes, con canción y con material."
+      }
+    },
+    {
+      "numero": 3,
+      "nome": {
+        "gl": "Combinar",
+        "es": "Combinar"
+      },
+      "meta": {
+        "gl": "Series, cambio de ritmo, historia e cambio de papel.",
+        "es": "Series, cambio de ritmo, historia y cambio de papel."
+      }
+    },
+    {
+      "numero": 4,
+      "nome": {
+        "gl": "Consolidar",
+        "es": "Consolidar"
+      },
+      "meta": {
+        "gl": "Sen modelo, noutro espazo e ensaio para as casas.",
+        "es": "Sin modelo, en otro espacio y ensayo para casa."
+      }
+    }
+  ],
+  "dias": [
+    {
+      "semana": 1,
+      "dia": 1,
+      "nomeDia": {
+        "gl": "Luns",
+        "es": "Lunes"
+      },
+      "foco": {
+        "gl": "A primeira orde, con modelado",
+        "es": "La primera orden, con modelado"
+      },
+      "consigna": {
+        "gl": "Presenta a primeira orde: dila e faina á vez, tres veces. A clase mira. Aínda non lle pidas que a faga.",
+        "es": "Presenta la primera orden: dila y hazla a la vez, tres veces. La clase mira. Aún no le pidas que la haga."
+      },
+      "comandos": [
+        0
+      ],
+      "modo": "novo"
+    },
+    {
+      "semana": 1,
+      "dia": 2,
+      "nomeDia": {
+        "gl": "Martes",
+        "es": "Martes"
+      },
+      "foco": {
+        "gl": "A mesma orde, co material",
+        "es": "La misma orden, con el material"
+      },
+      "consigna": {
+        "gl": "Repite a orde de onte co material do mes. Quen queira faina contigo; quen non, mira. Modelas todo o tempo.",
+        "es": "Repite la orden de ayer con el material del mes. Quien quiera la hace contigo; quien no, mira. Modelas todo el tiempo."
+      },
+      "comandos": [
+        0
+      ],
+      "modo": "material"
+    },
+    {
+      "semana": 1,
+      "dia": 3,
+      "nomeDia": {
+        "gl": "Mércores",
+        "es": "Miércoles"
+      },
+      "foco": {
+        "gl": "A segunda orde, con modelado",
+        "es": "La segunda orden, con modelado"
+      },
+      "consigna": {
+        "gl": "Hoxe só a segunda orde, co mesmo esquema: dila, faina, agarda. Cada orde nova ten o seu día.",
+        "es": "Hoy solo la segunda orden, con el mismo esquema: dila, hazla, espera. Cada orden nueva tiene su día."
+      },
+      "comandos": [
+        1
+      ],
+      "modo": "novo"
+    },
+    {
+      "semana": 1,
+      "dia": 4,
+      "nomeDia": {
+        "gl": "Xoves",
+        "es": "Jueves"
+      },
+      "foco": {
+        "gl": "As dúas ordes, xuntas",
+        "es": "Las dos órdenes, juntas"
+      },
+      "consigna": {
+        "gl": "Primeira e segunda orde seguidas, con pausa entre elas. Ti modelas as dúas; a clase fai o que pode.",
+        "es": "Primera y segunda orden seguidas, con pausa entre ellas. Tú modelas las dos; la clase hace lo que puede."
+      },
+      "comandos": [
+        0,
+        1
+      ],
+      "modo": "combinar"
+    },
+    {
+      "semana": 1,
+      "dia": 5,
+      "nomeDia": {
+        "gl": "Venres",
+        "es": "Viernes"
+      },
+      "foco": {
+        "gl": "As dúas ordes, coa canción",
+        "es": "Las dos órdenes, con la canción"
+      },
+      "consigna": {
+        "gl": "Canción do mes coas dúas ordes onde caen no ritmo. O pulso vese na túa man; non se oe.",
+        "es": "Canción del mes con las dos órdenes donde caen en el ritmo. El pulso se ve en tu mano; no se oye."
+      },
+      "comandos": [
+        0,
+        1
+      ],
+      "modo": "cancion"
+    },
+    {
+      "semana": 2,
+      "dia": 1,
+      "nomeDia": {
+        "gl": "Luns",
+        "es": "Lunes"
+      },
+      "foco": {
+        "gl": "A terceira orde, con modelado",
+        "es": "La tercera orden, con modelado"
+      },
+      "consigna": {
+        "gl": "Presenta a terceira orde igual que as outras. Se o mes só ten dúas, repasa a segunda con outro xesto.",
+        "es": "Presenta la tercera orden igual que las otras. Si el mes solo tiene dos, repasa la segunda con otro gesto."
+      },
+      "comandos": [
+        2
+      ],
+      "modo": "novo"
+    },
+    {
+      "semana": 2,
+      "dia": 2,
+      "nomeDia": {
+        "gl": "Martes",
+        "es": "Martes"
+      },
+      "foco": {
+        "gl": "Segunda e terceira, seguidas",
+        "es": "Segunda y tercera, seguidas"
+      },
+      "consigna": {
+        "gl": "Encadea a segunda e a terceira orde. Cambia a orde de aparición unha vez: escoitan, non memorizan.",
+        "es": "Encadena la segunda y la tercera orden. Cambia el orden de aparición una vez: escuchan, no memorizan."
+      },
+      "comandos": [
+        1,
+        2
+      ],
+      "modo": "combinar"
+    },
+    {
+      "semana": 2,
+      "dia": 3,
+      "nomeDia": {
+        "gl": "Mércores",
+        "es": "Miércoles"
+      },
+      "foco": {
+        "gl": "As tres ordes, coa canción",
+        "es": "Las tres órdenes, con la canción"
+      },
+      "consigna": {
+        "gl": "Canción enteira coas tres ordes dentro, modelando todo o tempo. Aínda non retiras o xesto.",
+        "es": "Canción entera con las tres órdenes dentro, modelando todo el tiempo. Aún no retiras el gesto."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "cancion"
+    },
+    {
+      "semana": 2,
+      "dia": 4,
+      "nomeDia": {
+        "gl": "Xoves",
+        "es": "Jueves"
+      },
+      "foco": {
+        "gl": "As tres ordes, co material",
+        "es": "Las tres órdenes, con el material"
+      },
+      "consigna": {
+        "gl": "As tres ordes co material do mes. O obxecto pasa de man en man: quen o ten, fai; o resto mira e anticipa.",
+        "es": "Las tres órdenes con el material del mes. El objeto pasa de mano en mano: quien lo tiene, hace; el resto mira y anticipa."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "material"
+    },
+    {
+      "semana": 2,
+      "dia": 5,
+      "nomeDia": {
+        "gl": "Venres",
+        "es": "Viernes"
+      },
+      "foco": {
+        "gl": "A clase elixe",
+        "es": "La clase elige"
+      },
+      "consigna": {
+        "gl": "Fai as tres ordes e deixa que unha crianza sinale cal repetimos. Non fai falta que a diga en inglés: co xesto abonda.",
+        "es": "Haz las tres órdenes y deja que una criatura señale cuál repetimos. No hace falta que la diga en inglés: con el gesto basta."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "elixir"
+    },
+    {
+      "semana": 3,
+      "dia": 1,
+      "nomeDia": {
+        "gl": "Luns",
+        "es": "Lunes"
+      },
+      "foco": {
+        "gl": "Dúas ordes nunha soa serie",
+        "es": "Dos órdenes en una sola serie"
+      },
+      "consigna": {
+        "gl": "Une a primeira e a segunda orde nunha serie, sen parar entre elas. Primeiro moi amodo, despois ao ritmo normal.",
+        "es": "Une la primera y la segunda orden en una serie, sin parar entre ellas. Primero muy despacio, después al ritmo normal."
+      },
+      "comandos": [
+        0,
+        1
+      ],
+      "modo": "serie"
+    },
+    {
+      "semana": 3,
+      "dia": 2,
+      "nomeDia": {
+        "gl": "Martes",
+        "es": "Martes"
+      },
+      "foco": {
+        "gl": "Amodo e lixeiro",
+        "es": "Despacio y rápido"
+      },
+      "consigna": {
+        "gl": "Segunda e terceira orde: unha rolda moi amodo, outra lixeira. O contraste fai escoitar mellor.",
+        "es": "Segunda y tercera orden: una ronda muy despacio, otra rápida. El contraste hace escuchar mejor."
+      },
+      "comandos": [
+        1,
+        2
+      ],
+      "modo": "ritmo"
+    },
+    {
+      "semana": 3,
+      "dia": 3,
+      "nomeDia": {
+        "gl": "Mércores",
+        "es": "Miércoles"
+      },
+      "foco": {
+        "gl": "A historia da lámina",
+        "es": "La historia de la lámina"
+      },
+      "consigna": {
+        "gl": "Ensina a lámina do mes e conta en tres frases o que pasa. Cada orde é un xesto do protagonista; a clase fai o xesto.",
+        "es": "Enseña la lámina del mes y cuenta en tres frases lo que pasa. Cada orden es un gesto del protagonista; la clase hace el gesto."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "historia"
+    },
+    {
+      "semana": 3,
+      "dia": 4,
+      "nomeDia": {
+        "gl": "Xoves",
+        "es": "Jueves"
+      },
+      "foco": {
+        "gl": "Unha crianza modela contigo",
+        "es": "Una criatura modela contigo"
+      },
+      "consigna": {
+        "gl": "Unha crianza ponse ao teu lado e fai o xesto contigo mentres ti dis a orde. Cambia de crianza en cada orde.",
+        "es": "Una criatura se pone a tu lado y hace el gesto contigo mientras tú dices la orden. Cambia de criatura en cada orden."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "rol"
+    },
+    {
+      "semana": 3,
+      "dia": 5,
+      "nomeDia": {
+        "gl": "Venres",
+        "es": "Viernes"
+      },
+      "foco": {
+        "gl": "Repaso coa canción",
+        "es": "Repaso con la canción"
+      },
+      "consigna": {
+        "gl": "Canción do mes coas tres ordes. Fíxate en quen anticipa o xesto antes da palabra: esas xa a teñen.",
+        "es": "Canción del mes con las tres órdenes. Fíjate en quién anticipa el gesto antes de la palabra: esas ya la tienen."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "cancion"
+    },
+    {
+      "semana": 4,
+      "dia": 1,
+      "nomeDia": {
+        "gl": "Luns",
+        "es": "Lunes"
+      },
+      "foco": {
+        "gl": "Só a voz, sen xesto",
+        "es": "Solo la voz, sin gesto"
+      },
+      "consigna": {
+        "gl": "Di a orde e non fagas o xesto. Conta ata tres en silencio. Se ninguén a fai, modela e segue sen comentario.",
+        "es": "Di la orden y no hagas el gesto. Cuenta hasta tres en silencio. Si nadie la hace, modela y sigue sin comentario."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "senModelo"
+    },
+    {
+      "semana": 4,
+      "dia": 2,
+      "nomeDia": {
+        "gl": "Martes",
+        "es": "Martes"
+      },
+      "foco": {
+        "gl": "Noutro sitio",
+        "es": "En otro sitio"
+      },
+      "consigna": {
+        "gl": "As tres ordes fóra da alfombra: no corredor, no patio ou na fila. A palabra ten que valer en calquera sitio.",
+        "es": "Las tres órdenes fuera de la alfombra: en el pasillo, en el patio o en la fila. La palabra tiene que valer en cualquier sitio."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "contexto"
+    },
+    {
+      "semana": 4,
+      "dia": 3,
+      "nomeDia": {
+        "gl": "Mércores",
+        "es": "Miércoles"
+      },
+      "foco": {
+        "gl": "Canción enteira, ao ritmo",
+        "es": "Canción entera, al ritmo"
+      },
+      "consigna": {
+        "gl": "Canción completa coas tres ordes, ao ritmo do mes e sen parar entre estrofas. Ti só marcas o pulso coa man.",
+        "es": "Canción completa con las tres órdenes, al ritmo del mes y sin parar entre estrofas. Tú solo marcas el pulso con la mano."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "cancion"
+    },
+    {
+      "semana": 4,
+      "dia": 4,
+      "nomeDia": {
+        "gl": "Xoves",
+        "es": "Jueves"
+      },
+      "foco": {
+        "gl": "Ensaio para as casas",
+        "es": "Ensayo para casa"
+      },
+      "consigna": {
+        "gl": "Fai a sesión como a farán as familias: sen material especial, en dous minutos. É o que levan na nota.",
+        "es": "Haz la sesión como la harán las familias: sin material especial, en dos minutos. Es lo que se llevan en la nota."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "familias"
+    },
+    {
+      "semana": 4,
+      "dia": 5,
+      "nomeDia": {
+        "gl": "Venres",
+        "es": "Viernes"
+      },
+      "foco": {
+        "gl": "Peche do mes, con calma",
+        "es": "Cierre del mes, con calma"
+      },
+      "consigna": {
+        "gl": "Última vez do mes: as tres ordes, a canción e a despedida en círculo. Remata máis amodo do que empezaches.",
+        "es": "Última vez del mes: las tres órdenes, la canción y la despedida en círculo. Termina más despacio de lo que empezaste."
+      },
+      "comandos": [
+        0,
+        1,
+        2
+      ],
+      "modo": "festa"
+    }
+  ]
+}

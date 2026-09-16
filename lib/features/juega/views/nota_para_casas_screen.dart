@@ -10,6 +10,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/models/unidad_model.dart';
 import '../widgets/barra_ingles_widget.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// La nota que la escuela manda a las casas al terminar la asamblea.
 ///
@@ -77,6 +78,7 @@ class NotaParaCasasScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: AppBar(
+        leading: const BotonAtras(),
         title: Text(
           titulo.resolve(language),
           style: const TextStyle(fontWeight: FontWeight.bold),

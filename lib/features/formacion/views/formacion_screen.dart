@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/formacion_model.dart';
+import '../../../core/widgets/boton_atras.dart';
 
 /// La formación previa: lo que hay que saber ANTES de usar la app.
 ///
@@ -80,6 +81,7 @@ class _FormacionScreenState extends State<FormacionScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: AppBar(
+        leading: const BotonAtras(),
         title: Text(
           guia?.titulo.resolve(widget.language) ??
               (isGl ? 'Antes de empezar' : 'Antes de empezar'),

@@ -2,6 +2,7 @@ import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 
 import '../loaders/content_asset_loader.dart';
 import '../models/asamblea_primeiro_ciclo_model.dart';
+import '../models/progresion_model.dart';
 import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
 import '../models/unidad_model.dart';
@@ -27,6 +28,9 @@ class ContentRepository {
   final Map<String, Capsula> _capsulasById = {};
   final Map<String, AsambleaPrimeiroCiclo> _asambleasPrimeiroCicloById = {};
   final Map<String, AsambleaSegundoCiclo> _asambleasSegundoCicloById = {};
+
+  /// La progresión diaria por tramo: «primeiro_ciclo.0_2», «segundo_ciclo.4»…
+  final Map<String, ProgresionDoMes> _progresionsPorClave = {};
   final List<ContentLoadFailure> _loadErrors = [];
   bool _isInitialized = false;
 
@@ -143,6 +147,7 @@ class ContentRepository {
     _capsulasById.clear();
     _asambleasPrimeiroCicloById.clear();
     _asambleasSegundoCicloById.clear();
+    _progresionsPorClave.clear();
     _loadErrors.clear();
 
     for (final path in effectiveUnidadPaths) {
@@ -181,6 +186,17 @@ class ContentRepository {
       }
     }
 
+    for (final path in discovered?.progresions ?? const <String>[]) {
+      if (generation != _initGeneration) return;
+      try {
+        final progresion = await _loader.loadProgresion(path);
+        if (generation != _initGeneration) return;
+        _progresionsPorClave[progresion.clave] = progresion;
+      } catch (e) {
+        _loadErrors.add(ContentLoadFailure(path, e.toString()));
+      }
+    }
+
     for (final path in effectiveAsambleaPaths) {
       if (generation != _initGeneration) return;
       try {
@@ -210,6 +226,18 @@ class ContentRepository {
       if (ma != mb) return ma.compareTo(mb);
       return a.tramo.clave.compareTo(b.tramo.clave);
     });
+    return List.unmodifiable(list);
+  }
+
+  /// A progresión diaria dun tramo («primeiro_ciclo.0_2», «segundo_ciclo.4»),
+  /// ou `null` se non está no paquete.
+  ProgresionDoMes? getProgresionSync(String clave) =>
+      _progresionsPorClave[clave];
+
+  /// Todas as progresións diarias, ordenadas pola súa clave.
+  List<ProgresionDoMes> getAllProgresionsSync() {
+    final list = _progresionsPorClave.values.toList()
+      ..sort((a, b) => a.clave.compareTo(b.clave));
     return List.unmodifiable(list);
   }
 
@@ -451,6 +479,11 @@ class ContentRepository {
                 a, ContentAssetLoader.asambleasSegundoCicloAssetPrefix))
             .toList()
           ..sort()),
+        progresions: (assets
+            .where(
+                (a) => isJsonUnder(a, ContentAssetLoader.progresionAssetPrefix))
+            .toList()
+          ..sort()),
       );
     } catch (_) {
       return const _DiscoveredContent(
@@ -468,11 +501,13 @@ class _DiscoveredContent {
   final List<String> capsulas;
   final List<String> asambleasPrimeiroCiclo;
   final List<String> asambleasSegundoCiclo;
+  final List<String> progresions;
 
   const _DiscoveredContent({
     required this.unidades,
     required this.capsulas,
     this.asambleasPrimeiroCiclo = const [],
     this.asambleasSegundoCiclo = const [],
+    this.progresions = const [],
   });
 }
