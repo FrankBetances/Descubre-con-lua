@@ -641,8 +641,12 @@ class FaseAsamblea {
     String? cueAcustica,
     String? audioAsset,
     List<MaterialNatural>? repertorioMateriales,
+    String? lamina,
   }) {
     return FaseAsamblea(
+      // A lámina viaxa co copyWith: sen isto, aplicar o día á fase núcleo
+      // deixábaa sen imaxe de apoio, xusto a que Frank botou en falta.
+      lamina: lamina ?? this.lamina,
       orden: orden ?? this.orden,
       tipo: tipo ?? this.tipo,
       titulo: titulo ?? this.titulo,

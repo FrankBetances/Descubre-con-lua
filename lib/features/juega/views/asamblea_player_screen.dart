@@ -417,7 +417,9 @@ class _PantallaDeFase extends StatelessWidget {
               Expanded(
                 child: Text(
                   fase.consignaDocente.resolve(language),
-                  maxLines: 4,
+                  // As consignas do día son máis longas que as do mes: seis
+                  // liñas para que non se corte o que a docente ten que ler.
+                  maxLines: 6,
                   overflow: TextOverflow.ellipsis,
                   style: const TextStyle(
                     fontFamily: AppTheme.fontFamily,
