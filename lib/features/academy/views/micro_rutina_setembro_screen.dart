@@ -120,6 +120,7 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
         ],
       ),
       body: PaxinaSenScroll(
+          desprazarSeNonCabe: true,
           padding: EdgeInsets.zero,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,

@@ -28,20 +28,20 @@ class PaxinaSenScroll extends StatelessWidget {
   /// contenido con su margen, no el contenido dentro de un margen fijo.
   final EdgeInsetsGeometry? padding;
 
-  /// Las DOS pantallas de lectura larga de la persona adulta que siguen
-  /// desplazándose: la guía de inglés en casa y la ficha del mes del
-  /// calendario. En todo lo demás esto va a `false` y la página no se desplaza.
+  /// Deja que la pantalla se desplace.
   ///
-  /// Por qué estas dos sí, dicho sin adornos: se midió, y su texto **no cabe
-  /// ni encogido al 80 %**. Encogerlo más sería dejar sin leer justo a quien
-  /// pone la letra grande del sistema porque ve poco. El «no scroll» de los
-  /// dos documentos curriculares es sobre la superficie de trabajo —la
-  /// asamblea, con doce criaturas delante y el aparato en una repisa, leída de
-  /// un vistazo a dos metros—, no sobre un texto que un adulto lee sentado.
+  /// Corrección de Frank, y tenía razón: «el scroll es permitido y puede ser
+  /// usado para dejar leer la pantalla». Bloquearlo en todas partes dejó el
+  /// Inicio y Academy rotos —el contenido no cabía y no había forma de verlo—.
   ///
-  /// Lo que hay que hacer para que estas dos también dejen de desplazarse es
-  /// **acortar su contenido**, no apretar más la tipografía. Mientras el texto
-  /// sea el que es, esto se queda.
+  /// El «no scroll» de los dos documentos curriculares es sobre la SUPERFICIE
+  /// DE TRABAJO: la asamblea, leída de un golpe de vista a dos metros con doce
+  /// criaturas delante. Ahí sigue sin desplazarse, y ahí es donde importa.
+  /// Todo lo que un adulto lee sentado se desplaza.
+  ///
+  /// Lo que no vale, en ninguno de los dos casos, es una lista vertical
+  /// infinita: dentro de estas pantallas el contenido va en fichas y en
+  /// carruseles que se pasan de lado.
   final bool desprazarSeNonCabe;
 
   const PaxinaSenScroll({

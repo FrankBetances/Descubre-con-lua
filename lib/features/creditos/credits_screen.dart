@@ -138,6 +138,7 @@ class CreditsScreen extends StatelessWidget {
           ),
           SafeArea(
             child: PaxinaSenScroll(
+              desprazarSeNonCabe: true,
               padding: const EdgeInsets.fromLTRB(
                 AppTheme.spaceXl,
                 AppTheme.spaceXl,

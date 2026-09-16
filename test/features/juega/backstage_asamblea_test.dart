@@ -8,6 +8,9 @@ import 'package:descubre_con_lua/data/models/unidad_model.dart' show Revision;
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/juega/views/backstage_asamblea_screen.dart';
 import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_phase_timer_widget.dart';
+import 'package:descubre_con_lua/features/calendario/widgets/calendario_do_curso.dart';
+import 'package:descubre_con_lua/features/juega/widgets/fichas_de_unidades.dart';
+import 'package:descubre_con_lua/core/brand/lamina_vector.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
 import 'package:descubre_con_lua/features/juega/widgets/backstage/backstage_level_switcher.dart';
 
@@ -159,6 +162,16 @@ void main() {
       ),
     );
   }
+
+  late ContentRepository real;
+
+  setUpAll(() async {
+    // O contido REAL do paquete: as unidades e o calendario non están nos
+    // fixtures desta suite. Inicialízase AQUÍ e non dentro dun testWidgets:
+    // alí o reloxo falso deixa a lectura de assets colgada para sempre.
+    real = ContentRepository();
+    await real.initialize();
+  });
 
   setUp(() {
     repository = ContentRepository();
@@ -657,12 +670,12 @@ void main() {
       expect(find.text('O MEU GRUPO'), findsOneWidget);
     });
 
-    testWidgets('o aula non se despraza cara abaixo en ningún dos dous ciclos',
+    testWidgets('o aula ten as tres pezas que se perderan ao refacela',
         (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: UnidadesListScreen(
-            repository: repository,
+            repository: real,
             audioService: mockAudio,
             initialLanguage: AppLanguage.gl,
           ),
@@ -670,24 +683,56 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      // O único desprazable que pode haber é a tira de meses, e vai DE LADO.
-      // Se aparece un vertical, esta proba cae: é a regra do documento
-      // curricular —«sin navegación por capas ni deslizamientos profundos»—
-      // convertida en gate.
-      void nonHaiVerticais() {
-        for (final w
-            in tester.widgetList<Scrollable>(find.byType(Scrollable))) {
-          expect(
-              w.axisDirection, anyOf(AxisDirection.right, AxisDirection.left),
-              reason: 'Apareceu un desprazable vertical no aula');
-        }
-      }
+      // Estas tres desapareceron ao refacer o aula, e Frank tivo que dicilo:
+      // «quitaste a mascota, o calendario e as imaxes». Este gate está para
+      // que non volva pasar.
+      //
+      // 1. A lámina da tarxeta do día, que está arriba e á vista. Comprόbase
+      //    ANTES de baixar: despois xa non está na pantalla.
+      expect(find.byType(LaminaEscena), findsWidgets,
+          reason: 'A tarxeta do día quedou sen lámina');
 
-      nonHaiVerticais();
-
-      await tester.tap(find.byKey(const ValueKey('tab_segundo_ciclo')));
+      // A lista só constrúe o que se ve, así que hai que baixar ata o resto.
+      await tester.dragUntilVisible(
+        find.byType(FichasDeUnidades),
+        find.byType(Scrollable).first,
+        const Offset(0, -300),
+      );
       await tester.pumpAndSettle();
-      nonHaiVerticais();
+
+      // 2. O calendario do curso, DENTRO do aula.
+      expect(find.byType(CalendarioDoCurso), findsOneWidget,
+          reason: 'Falta o calendario do curso no aula');
+      // 3. As fichas das unidades: dez unidades de contido que quedaran sen
+      //    ningunha porta que levase a elas.
+      expect(find.byType(FichasDeUnidades), findsOneWidget,
+          reason: 'Faltan as fichas das unidades temáticas');
+    });
+
+    testWidgets('a tira de meses vai DE LADO, non cara abaixo', (tester) async {
+      tester.view.physicalSize = const Size(420, 2400);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: UnidadesListScreen(
+            repository: real,
+            audioService: mockAudio,
+            initialLanguage: AppLanguage.gl,
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      // O aula SI se despraza: Frank corrixiuno —«el scroll es permitido y
+      // puede ser usado para dejar leer la pantalla»—. O que non pode volver
+      // é a lista vertical de todo: o contido vai en tiras que se pasan de
+      // lado. Esta é a do mes, que é a que manda no que se ve.
+      final tira =
+          tester.widget<ListView>(find.byKey(const Key('tira_meses_1c')));
+      expect(tira.scrollDirection, Axis.horizontal,
+          reason: 'A tira de meses deixou de ir de lado');
     });
   });
 }

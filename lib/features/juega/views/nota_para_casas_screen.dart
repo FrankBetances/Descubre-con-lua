@@ -84,6 +84,7 @@ class NotaParaCasasScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: PaxinaSenScroll(
+            desprazarSeNonCabe: true,
             padding: const EdgeInsets.all(AppTheme.spaceLg),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,

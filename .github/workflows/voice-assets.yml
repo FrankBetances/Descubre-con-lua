@@ -17,6 +17,12 @@ on:
         default: 'all'
   push:
     branches:
+      # `main` TEN que estar aquí. Sen ela, calquera contido novo que entre
+      # directamente en main nace mudo e ninguén se entera: o gate de cobertura
+      # queda vermello e as gravacións non as xera nada. Pasou o 15/9/2026 con
+      # 301 locucións do 1.º ciclo e da formación, e houbo que lanzar o
+      # workflow a man.
+      - main
       - claude/**
       - mejora
     paths:

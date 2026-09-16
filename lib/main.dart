@@ -325,6 +325,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: PaxinaSenScroll(
+            desprazarSeNonCabe: true,
             padding: const EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,

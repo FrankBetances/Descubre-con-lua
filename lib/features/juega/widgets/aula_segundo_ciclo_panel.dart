@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
@@ -28,6 +29,17 @@ class AulaSegundoCicloPanel extends StatefulWidget {
 
   final AppLanguage language;
 
+  /// La tira de Lúa. Es la mascota y el núcleo del proyecto: se quitó por error
+  /// al rehacer el aula y vuelve aquí, arriba del todo.
+  final Widget? cabeceira;
+
+  /// El calendario del curso. Volvió por el mismo motivo: un aula sin el mes a
+  /// la vista obliga a salir de la pantalla para saber por dónde va el curso.
+  final Widget? calendario;
+
+  /// Las fichas de contenido que van debajo de la tarjeta del día.
+  final Widget? pe;
+
   /// Abre el Modo Asamblea por la clase y el mes que la docente eligió aquí.
   final void Function(NivelEducativoSegundoCiclo nivel, int mes) onComezar;
 
@@ -36,6 +48,9 @@ class AulaSegundoCicloPanel extends StatefulWidget {
     required this.asambleas,
     required this.language,
     required this.onComezar,
+    this.cabeceira,
+    this.calendario,
+    this.pe,
   });
 
   @override
@@ -89,62 +104,58 @@ class _AulaSegundoCicloPanelState extends State<AulaSegundoCicloPanel> {
     final isGl = lang == AppLanguage.gl;
     final asamblea = _asambleaActual;
 
-    // Sin scroll, el marco no puede comerse la tarjeta: en pantallas cortas o
-    // con texto grande se recortan los rótulos, que son etiqueta, y no la
-    // tarjeta del día, que es el trabajo.
-    final escala = MediaQuery.textScalerOf(context).scale(16.0) / 16.0;
-    final alto = MediaQuery.sizeOf(context).height;
-    final apretado = alto < 720 || escala > 1.15;
-    final hueco = apretado ? AppTheme.spaceXs : AppTheme.spaceLg;
-
     return Expanded(
-      child: Padding(
-        padding: EdgeInsets.fromLTRB(
-          AppTheme.spaceLg,
-          apretado ? AppTheme.spaceXs : AppTheme.spaceMd,
-          AppTheme.spaceLg,
-          apretado ? AppTheme.spaceXs : AppTheme.spaceLg,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            _RotuloSeccion(
-              texto: isGl ? 'A MIÑA CLASE' : 'MI CLASE',
+      child: ListView(
+        padding: const EdgeInsets.only(bottom: AppTheme.spaceXxl),
+        children: [
+          if (widget.cabeceira != null) widget.cabeceira!,
+          Padding(
+            padding: const EdgeInsets.fromLTRB(
+              AppTheme.spaceLg,
+              AppTheme.spaceMd,
+              AppTheme.spaceLg,
+              0,
             ),
-            const SizedBox(height: AppTheme.spaceSm),
-            _SelectorDeClase(
-              nivelSeleccionado: _nivel,
-              language: lang,
-              onCambiar: (n) => setState(() => _nivel = n),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                _RotuloSeccion(texto: isGl ? 'A MIÑA CLASE' : 'MI CLASE'),
+                const SizedBox(height: AppTheme.spaceSm),
+                _SelectorDeClase(
+                  nivelSeleccionado: _nivel,
+                  language: lang,
+                  onCambiar: (n) => setState(() => _nivel = n),
+                ),
+                const SizedBox(height: AppTheme.spaceLg),
+                _RotuloSeccion(
+                  texto: isGl ? 'MES DO CURSO' : 'MES DEL CURSO',
+                ),
+                const SizedBox(height: AppTheme.spaceSm),
+              ],
             ),
-            SizedBox(height: hueco),
-            _RotuloSeccion(
-              texto: isGl ? 'MES DO CURSO' : 'MES DEL CURSO',
-            ),
-            const SizedBox(height: AppTheme.spaceSm),
-            _SelectorDeMes(
-              meses: _mesesDoCurso,
-              mesSeleccionado: _mes,
-              nomes: _nomeMes,
-              language: lang,
-              onCambiar: (m) => setState(() => _mes = m),
-            ),
-            SizedBox(height: hueco),
-            // La tarjeta única. Ocupa lo que queda y NO se desplaza: si una
-            // fase no cupiera, se recorta el texto de la fase, no se añade
-            // scroll. Con doce criaturas delante no se lee hacia abajo.
-            Expanded(
-              child: asamblea == null
-                  ? _SenContido(isGl: isGl)
-                  : _TarxetaDeFluxo(
-                      asamblea: asamblea,
-                      nomeMes: _nomeMes[_mes]!,
-                      language: lang,
-                      onComezar: () => widget.onComezar(_nivel, _mes),
-                    ),
-            ),
-          ],
-        ),
+          ),
+          _SelectorDeMes(
+            meses: _mesesDoCurso,
+            mesSeleccionado: _mes,
+            nomes: _nomeMes,
+            language: lang,
+            onCambiar: (m) => setState(() => _mes = m),
+          ),
+          const SizedBox(height: AppTheme.spaceLg),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: AppTheme.spaceLg),
+            child: asamblea == null
+                ? _SenContido(isGl: isGl)
+                : _TarxetaDeFluxo(
+                    asamblea: asamblea,
+                    nomeMes: _nomeMes[_mes]!,
+                    language: lang,
+                    onComezar: () => widget.onComezar(_nivel, _mes),
+                  ),
+          ),
+          if (widget.calendario != null) widget.calendario!,
+          if (widget.pe != null) widget.pe!,
+        ],
       ),
     );
   }
@@ -341,98 +352,102 @@ class _TarxetaDeFluxo extends StatelessWidget {
     required this.onComezar,
   });
 
+  String get _lamina {
+    for (final f in asamblea.fases) {
+      if (f.lamina.isNotEmpty && f.lamina != 'gato') return f.lamina;
+    }
+    return 'gato';
+  }
+
   @override
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
 
-    // Sin scroll hay que caber de verdad. En 360x640, y más con la escala de
-    // texto grande, sobra contenido: se aprieta lo accesorio y se queda lo que
-    // no puede faltar —qué se trabaja, las cuatro fases y el botón—.
-    return LayoutBuilder(builder: (context, constraints) {
-      // El umbral no es un número mágico: con la escala de texto grande del
-      // sistema la versión holgada necesita cerca de 400 px, así que por
-      // debajo de eso —o en cuanto el sistema agranda el texto— se pasa a la
-      // compacta. Sin scroll, quedarse corto no desborda: recorta.
-      final escala = MediaQuery.textScalerOf(context).scale(16.0) / 16.0;
-      final compacto = constraints.maxHeight < 420 || escala > 1.15;
-      return Container(
-        key: const ValueKey('tarxeta_fluxo_2c'),
-        padding: EdgeInsets.all(compacto ? AppTheme.spaceMd : AppTheme.spaceLg),
-        decoration: BoxDecoration(
-          color: AppTheme.card,
-          borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-          border: Border.all(color: AppTheme.border, width: 1.5),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              '${nomeMes.resolve(language)} · ${asamblea.nivel.etiquetaCorta.resolve(language)}',
-              style: const TextStyle(
-                fontFamily: AppTheme.fontFamily,
-                fontSize: 12,
-                fontWeight: FontWeight.w800,
-                color: AppTheme.primaryInk,
-                letterSpacing: 0.8,
-              ),
-            ),
-            const SizedBox(height: AppTheme.spaceXs),
-            Text(
-              asamblea.centroInteres.resolve(language),
-              maxLines: compacto ? 1 : 2,
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                fontFamily: AppTheme.fontFamily,
-                fontSize: compacto ? 16 : 19,
-                fontWeight: FontWeight.w800,
-                color: AppTheme.textPrimary,
-                height: 1.2,
-              ),
-            ),
-            SizedBox(height: compacto ? AppTheme.spaceSm : AppTheme.spaceMd),
-            // Las cuatro fases. Sin desplazable: son cuatro y caben.
-            Expanded(
-              child: BloqueDeFases(
-                isGl: isGl,
-                minutosTotais: asamblea.duracionTotalMinutos,
-                fases: [
-                  for (final fase in asamblea.fases)
-                    (
+    return Container(
+      key: const ValueKey('tarxeta_fluxo_2c'),
+      decoration: BoxDecoration(
+        color: AppTheme.card,
+        borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+        border: Border.all(color: AppTheme.borderActive, width: 1.5),
+        boxShadow: AppTheme.shadowCard,
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            height: 120,
+            color: AppTheme.primaryTint,
+            alignment: Alignment.center,
+            child: LaminaEscena(clave: _lamina, ancho: 96),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(AppTheme.spaceLg),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  '${nomeMes.resolve(language)} · ${asamblea.nivel.etiquetaCorta.resolve(language)}',
+                  style: const TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w800,
+                    color: AppTheme.primaryInk,
+                    letterSpacing: 0.8,
+                  ),
+                ),
+                const SizedBox(height: AppTheme.spaceXs),
+                Text(
+                  asamblea.centroInteres.resolve(language),
+                  style: const TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 19,
+                    fontWeight: FontWeight.w800,
+                    color: AppTheme.textPrimary,
+                    height: 1.2,
+                  ),
+                ),
+                const SizedBox(height: AppTheme.spaceMd),
+                for (final fase in asamblea.fases)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: AppTheme.spaceSm),
+                    child: FilaDeFase(
                       orden: fase.orden,
                       titulo: fase.titulo.resolve(language),
                       minutos: (fase.duracionSegundos / 60).round(),
                     ),
-                ],
-              ),
-            ),
-            SizedBox(height: compacto ? AppTheme.spaceSm : AppTheme.spaceMd),
-            SizedBox(
-              height: compacto ? AppTheme.touchMin : 52,
-              child: ElevatedButton.icon(
-                key: const ValueKey('comezar_asemblea_2c'),
-                onPressed: onComezar,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.primaryInk,
-                  foregroundColor: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+                  ),
+                const SizedBox(height: AppTheme.spaceSm),
+                SizedBox(
+                  height: 52,
+                  child: ElevatedButton.icon(
+                    key: const ValueKey('comezar_asemblea_2c'),
+                    onPressed: onComezar,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppTheme.primaryInk,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(AppTheme.radiusButton),
+                      ),
+                    ),
+                    icon: const Icon(Icons.play_circle_filled_rounded),
+                    label: Text(
+                      isGl ? 'Comezar a asemblea' : 'Comenzar la asamblea',
+                      style: const TextStyle(
+                        fontFamily: AppTheme.fontFamily,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
                   ),
                 ),
-                icon: const Icon(Icons.play_circle_filled_rounded),
-                label: Text(
-                  isGl ? 'Comezar a asemblea' : 'Comenzar la asamblea',
-                  style: const TextStyle(
-                    fontFamily: AppTheme.fontFamily,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-              ),
+              ],
             ),
-          ],
-        ),
-      );
-    });
+          ),
+        ],
+      ),
+    );
   }
 }
 

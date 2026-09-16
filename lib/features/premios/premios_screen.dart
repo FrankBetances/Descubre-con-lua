@@ -143,6 +143,7 @@ class _PremiosScreenState extends State<PremiosScreen> {
                 .length;
 
             return PaxinaSenScroll(
+                desprazarSeNonCabe: true,
                 padding: const EdgeInsets.fromLTRB(
                   AppTheme.spaceLg,
                   AppTheme.spaceLg,

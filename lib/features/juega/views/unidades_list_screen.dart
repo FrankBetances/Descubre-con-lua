@@ -5,7 +5,14 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../premios/premios_repository.dart';
+import '../../calendario/views/calendario_screen.dart';
+import '../../calendario/widgets/calendario_do_curso.dart';
+import '../../premios/premios_model.dart';
+import '../../premios/widgets/lua_game_strip.dart';
+import '../../../data/models/unidad_model.dart';
 import '../widgets/aula_ciclo_panel.dart';
+import '../widgets/fichas_de_unidades.dart';
+import 'asamblea_guiada_screen.dart';
 import '../widgets/aula_primeiro_ciclo_panel.dart';
 import '../widgets/aula_segundo_ciclo_panel.dart';
 import 'asamblea_player_screen.dart';
@@ -250,10 +257,85 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
   }
 
   /// O aula do 1.º ciclo: tramo de idade, mes, e a microcápsula do día.
+  /// La tira de Lúa: la mascota, el nivel de la maestra y su racha. Es el
+  /// núcleo del proyecto y se había perdido al rehacer esta pantalla.
+  Widget? _tiraDeLua() {
+    final premios = widget.premios;
+    if (premios == null) return null;
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        AppTheme.spaceLg,
+        AppTheme.spaceMd,
+        AppTheme.spaceLg,
+        0,
+      ),
+      child: LuaGameStrip(
+        repository: premios,
+        perfil: Perfil.docente,
+        language: _language,
+        contadores: widget.calendario?.contadores,
+      ),
+    );
+  }
+
+  /// El calendario del curso, DENTRO del aula. Un botón que lleva al
+  /// calendario no es el calendario: la docente tiene que ver el mes que le
+  /// toca sin salir de donde está.
+  Widget _calendarioDoAula() {
+    return CalendarioDoCurso(
+      lang: _language,
+      esDocente: true,
+      store: widget.calendario,
+      contenido: widget.calendarioContenido,
+      onAbrirMes: (contenido, mesIndex) {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => CalendarioScreen(
+              store: widget.calendario ?? CalendarioStore(),
+              contenido: contenido,
+              mesInicialIndex: mesIndex,
+              initialLanguage: _language,
+              onLanguageChanged: _onToggleLanguage,
+              repository: widget.repository,
+              audioService: widget.audioService,
+              premios: widget.premios,
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  /// Las unidades temáticas, en fichas que se pasan de lado. Diez unidades de
+  /// contenido que se quedaron sin ninguna puerta al rehacer el aula.
+  Widget _fichasDeUnidades() {
+    return FichasDeUnidades(
+      unidades: widget.repository.getAllUnidades(),
+      language: _language,
+      onAbrir: (Unidad unidad) {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => AsambleaGuiadaScreen(
+              unidad: unidad,
+              premios: widget.premios,
+              calendario: widget.calendario,
+              audioService: widget.audioService,
+              initialLanguage: _language,
+              onLanguageChanged: _onToggleLanguage,
+            ),
+          ),
+        );
+      },
+    );
+  }
+
   Widget _buildPrimeiroCicloView(BuildContext context) {
     return AulaPrimeiroCicloPanel(
       asambleas: widget.repository.getAllAsambleasPrimeiroCicloSync(),
       language: _language,
+      cabeceira: _tiraDeLua(),
+      calendario: _calendarioDoAula(),
+      pe: _fichasDeUnidades(),
       onComezar: (tramo, mes) {
         final asamblea =
             widget.repository.getAsambleaPrimeiroCicloSync(mes, tramo);
@@ -284,6 +366,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
     return AulaSegundoCicloPanel(
       asambleas: widget.repository.getAllAsambleasSegundoCicloSync(),
       language: _language,
+      cabeceira: _tiraDeLua(),
+      calendario: _calendarioDoAula(),
       onComezar: (nivel, mes) {
         final asamblea =
             widget.repository.getAsambleaByMesYNivelSync(mes, nivel);

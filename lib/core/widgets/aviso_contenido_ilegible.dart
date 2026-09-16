@@ -56,6 +56,7 @@ class AvisoContenidoIlegible extends StatelessWidget {
 
     return Center(
       child: PaxinaSenScroll(
+        desprazarSeNonCabe: true,
         padding: const EdgeInsets.all(AppTheme.spaceXl),
         child: Column(
           mainAxisSize: MainAxisSize.min,

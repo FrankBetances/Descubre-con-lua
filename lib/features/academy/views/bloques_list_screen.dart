@@ -157,6 +157,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
       body: SafeArea(
         top: false,
         child: PaxinaSenScroll(
+            desprazarSeNonCabe: true,
             padding: EdgeInsets.zero,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
