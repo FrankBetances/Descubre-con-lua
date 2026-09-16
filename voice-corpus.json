@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-09-15T21:07:25Z",
- "entries": 2125,
+ "generatedAt": "2026-09-16T10:56:19Z",
+ "entries": 2419,
  "byStyle": {
   "slow": 188,
-  "tutor": 1937
+  "tutor": 2231
  },
  "byLang": {
   "en": 281,
-  "es": 922,
-  "gl": 922
+  "es": 1069,
+  "gl": 1069
  },
  "corpus": [
   {
@@ -2676,6 +2676,14 @@
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.02/modeladoDocente"
   },
   {
+   "id": "es_tutor_0019dc36_118",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz la sesión tal y como la harán las familias: sin material especial, en dos minutos. Es lo que se llevan en la nota.",
+   "speech": "Haz la sesión tal y como la harán las familias: sin material especial, en dos minutos. Es lo que se llevan en la nota.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d4/consigna"
+  },
+  {
    "id": "es_tutor_007f67f9_58",
    "lang": "es",
    "style": "tutor",
@@ -2732,12 +2740,36 @@
    "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
+   "id": "es_tutor_01d47455_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El grupo elige",
+   "speech": "El grupo elige",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d5/foco"
+  },
+  {
+   "id": "es_tutor_01f77ed3_105",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la primera orden: dila y hazla a la vez, tres veces. La clase mira. Aún no le pidas que la haga.",
+   "speech": "Presenta la primera orden: dila y hazla a la vez, tres veces. La clase mira. Aún no le pidas que la haga.",
+   "source": "progresion.segundo_ciclo.4/s1/d1/consigna"
+  },
+  {
    "id": "es_tutor_021e073c_74",
    "lang": "es",
    "style": "tutor",
    "text": "Yes, you are a wolf! Sneak slowly... y ahora FREEZE. The wolf is sleeping.",
    "speech": "Yes, you are a wolf! Sneak slowly... y ahora FREEZE. The wolf is sleeping.",
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "es_tutor_0221afba_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dos órdenes en un solo gesto",
+   "speech": "Dos órdenes en un solo gesto",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d1/foco"
   },
   {
    "id": "es_tutor_0244298f_213",
@@ -2884,6 +2916,14 @@
    "source": "juega.corpo.01/cancionPulso/consigna"
   },
   {
+   "id": "es_tutor_059b5b7c_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ensayo para casa",
+   "speech": "Ensayo para casa",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d4/foco"
+  },
+  {
    "id": "es_tutor_05d03d84_45",
    "lang": "es",
    "style": "tutor",
@@ -2946,6 +2986,14 @@
    "text": "Saltar de aro en aro con las dos manos dadas a quien lo necesite.",
    "speech": "Saltar de aro en aro con las dos manos dadas a quien lo necesite.",
    "source": "juega.animais.01/exploracion/paso/1"
+  },
+  {
+   "id": "es_tutor_09812a26_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En otro sitio",
+   "speech": "En otro sitio",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d2/foco"
   },
   {
    "id": "es_tutor_09fbdcab_106",
@@ -3044,6 +3092,14 @@
    "source": "juega.auga.01/exploracion/paso/1"
   },
   {
+   "id": "es_tutor_0c53e62e_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La primera orden, dramatizada",
+   "speech": "La primera orden, dramatizada",
+   "source": "progresion.segundo_ciclo.5/s1/d1/foco"
+  },
+  {
    "id": "es_tutor_0c91f330_36",
    "lang": "es",
    "style": "tutor",
@@ -3060,6 +3116,14 @@
    "source": "formacion.docente/paso/3/corpo"
   },
   {
+   "id": "es_tutor_0d90a713_101",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Encadena la segunda y la tercera orden. Cambia el orden de aparición una vez: escuchan, no memorizan.",
+   "speech": "Encadena la segunda y la tercera orden. Cambia el orden de aparición una vez: escuchan, no memorizan.",
+   "source": "progresion.segundo_ciclo.4/s2/d2/consigna"
+  },
+  {
    "id": "es_tutor_0da51793_50",
    "lang": "es",
    "style": "tutor",
@@ -3074,6 +3138,14 @@
    "text": "En la cocina o el comedor, con los cubiertos al alcance.",
    "speech": "En la cocina o el comedor, con los cubiertos al alcance.",
    "source": "asamblea.segundo_ciclo.xaneiro.6_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_0e9944e4_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Solo la voz, sin gesto",
+   "speech": "Solo la voz, sin gesto",
+   "source": "progresion.segundo_ciclo.4/s4/d1/foco"
   },
   {
    "id": "es_tutor_0ebe6808_151",
@@ -3108,6 +3180,14 @@
    "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.01/accionFisica"
   },
   {
+   "id": "es_tutor_10157edb_119",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la primera orden en el regazo, una vez por bebé. Di la palabra y haz tú el gesto con sus manos. No pidas nada.",
+   "speech": "Presenta la primera orden en el regazo, una vez por bebé. Di la palabra y haz tú el gesto con sus manos. No pidas nada.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d1/consigna"
+  },
+  {
    "id": "es_tutor_10d195bf_184",
    "lang": "es",
    "style": "tutor",
@@ -3132,12 +3212,36 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.01/modeladoDocente"
   },
   {
+   "id": "es_tutor_11b56b31_116",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción del mes con las tres órdenes, dirigida por una criatura. Fíjate en quién dice las órdenes enteras en inglés.",
+   "speech": "Canción del mes con las tres órdenes, dirigida por una criatura. Fíjate en quién dice las órdenes enteras en inglés.",
+   "source": "progresion.segundo_ciclo.6/s3/d5/consigna"
+  },
+  {
    "id": "es_tutor_11b5a042_59",
    "lang": "es",
    "style": "tutor",
    "text": "La onomatopeya es palabra: 'crac' cuenta tanto como 'hoja'.",
    "speech": "La onomatopeya es palabra: 'crac' cuenta tanto como 'hoja'.",
    "source": "juega.follas.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "es_tutor_11ca350c_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Une la primera y la segunda orden en una serie seguida, en parejas. Primero muy despacio, después al ritmo normal.",
+   "speech": "Une la primera y la segunda orden en una serie seguida, en parejas. Primero muy despacio, después al ritmo normal.",
+   "source": "progresion.segundo_ciclo.6/s3/d1/consigna"
+  },
+  {
+   "id": "es_tutor_12864522_117",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción completa con las tres órdenes y freeze entre estrofas, al ritmo del mes. Tú solo marcas el pulso con la mano.",
+   "speech": "Canción completa con las tres órdenes y freeze entre estrofas, al ritmo del mes. Tú solo marcas el pulso con la mano.",
+   "source": "progresion.segundo_ciclo.5/s4/d3/consigna"
   },
   {
    "id": "es_tutor_12931e44_98",
@@ -3226,6 +3330,14 @@
    "text": "La gata Lúa cuelga su mochila en el perchero. Dentro lleva un zapato de recambio y una foto de su casa.",
    "speech": "La gata Lúa cuelga su mochila en el perchero. Dentro lleva un zapato de recambio y una foto de su casa.",
    "source": "juega.benvida.01/cuento/0/texto"
+  },
+  {
+   "id": "es_tutor_1576fff7_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dos órdenes en una escena",
+   "speech": "Dos órdenes en una escena",
+   "source": "progresion.segundo_ciclo.5/s3/d1/foco"
   },
   {
    "id": "es_tutor_159cce3b_46",
@@ -3324,6 +3436,14 @@
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/accionFisica"
   },
   {
+   "id": "es_tutor_186b970e_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz las tres órdenes y deja que una criatura señale cuál repetimos. No hace falta que la diga: con el gesto basta.",
+   "speech": "Haz las tres órdenes y deja que una criatura señale cuál repetimos. No hace falta que la diga: con el gesto basta.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d5/consigna"
+  },
+  {
    "id": "es_tutor_18818980_44",
    "lang": "es",
    "style": "tutor",
@@ -3338,6 +3458,14 @@
    "text": "Susurro al oído del compañero sin que lo escuche el resto.",
    "speech": "Susurro al oído del compañero sin que lo escuche el resto.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.03/accionFisica"
+  },
+  {
+   "id": "es_tutor_19e281d7_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La segunda orden, en círculo",
+   "speech": "La segunda orden, en círculo",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d3/foco"
   },
   {
    "id": "es_tutor_19e6725e_69",
@@ -3404,6 +3532,14 @@
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/2/consigna"
   },
   {
+   "id": "es_tutor_1aec9531_115",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Segunda y tercera orden y, entre ellas, «Freeze!»: todo el mundo se queda de estatua. Quien se mueve, ríe y vuelve.",
+   "speech": "Segunda y tercera orden y, entre ellas, «Freeze!»: todo el mundo se queda de estatua. Quien se mueve, ríe y vuelve.",
+   "source": "progresion.segundo_ciclo.5/s2/d2/consigna"
+  },
+  {
    "id": "es_tutor_1b51eedf_44",
    "lang": "es",
    "style": "tutor",
@@ -3458,6 +3594,30 @@
    "text": "El peso se siente en el propio cuerpo antes que en la balanza: pisar como un oso y cruzar como un pájaro son dos cantidades de fuerza distintas.",
    "speech": "El peso se siente en el propio cuerpo antes que en la balanza: pisar como un oso y cruzar como un pájaro son dos cantidades de fuerza distintas.",
    "source": "juega.animais.01/matematicas/descripcion"
+  },
+  {
+   "id": "es_tutor_1c81c441_124",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz las tres órdenes y deja que una criatura señale cuál repetimos. No hace falta que la diga en inglés: con el gesto basta.",
+   "speech": "Haz las tres órdenes y deja que una criatura señale cuál repetimos. No hace falta que la diga en inglés: con el gesto basta.",
+   "source": "progresion.segundo_ciclo.4/s2/d5/consigna"
+  },
+  {
+   "id": "es_tutor_1cac338c_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La tercera orden, en círculo",
+   "speech": "La tercera orden, en círculo",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d1/foco"
+  },
+  {
+   "id": "es_tutor_1d19b025_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción del mes con las tres órdenes. Fíjate en quién anticipa la acción antes de la palabra: esas ya la tienen.",
+   "speech": "Canción del mes con las tres órdenes. Fíjate en quién anticipa la acción antes de la palabra: esas ya la tienen.",
+   "source": "progresion.segundo_ciclo.5/s3/d5/consigna"
   },
   {
    "id": "es_tutor_1d80fe25_48",
@@ -3556,6 +3716,14 @@
    "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.01/accionFisica"
   },
   {
+   "id": "es_tutor_20a4e2f2_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dos órdenes, en parejas",
+   "speech": "Dos órdenes, en parejas",
+   "source": "progresion.segundo_ciclo.6/s1/d4/foco"
+  },
+  {
    "id": "es_tutor_20b7df4b_82",
    "lang": "es",
    "style": "tutor",
@@ -3604,6 +3772,14 @@
    "source": "asamblea.segundo_ciclo.abril.4_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "es_tutor_218104f8_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Enseña la lámina del mes y cuenta en tres frases lo que pasa. Cada orden es un gesto del protagonista; la clase hace el gesto.",
+   "speech": "Enseña la lámina del mes y cuenta en tres frases lo que pasa. Cada orden es un gesto del protagonista; la clase hace el gesto.",
+   "source": "progresion.segundo_ciclo.4/s3/d3/consigna"
+  },
+  {
    "id": "es_tutor_224805ff_62",
    "lang": "es",
    "style": "tutor",
@@ -3612,12 +3788,28 @@
    "source": "juega.follas.01/cuento/2/pregunta"
   },
   {
+   "id": "es_tutor_2293b092_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dos órdenes en una serie",
+   "speech": "Dos órdenes en una serie",
+   "source": "progresion.segundo_ciclo.6/s3/d1/foco"
+  },
+  {
    "id": "es_tutor_22a415f4_55",
    "lang": "es",
    "style": "tutor",
    "text": "Tracción cooperativa de la cuerda coordinada al conteo.",
    "speech": "Tracción cooperativa de la cuerda coordinada al conteo.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.01/accionFisica"
+  },
+  {
+   "id": "es_tutor_22d05205_102",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la tercera orden igual que las otras. Si el mes solo tiene dos, repasa la segunda en parejas.",
+   "speech": "Presenta la tercera orden igual que las otras. Si el mes solo tiene dos, repasa la segunda en parejas.",
+   "source": "progresion.segundo_ciclo.6/s2/d1/consigna"
   },
   {
    "id": "es_tutor_22de552c_133",
@@ -3634,6 +3826,14 @@
    "text": "Antes de los 3 años el lenguaje se construye moviéndose: cogiendo, tirando, subiendo a brazos, chocando las manos. La pantalla da imagen y sonido, pero no da lo que hace falta, que es un cuerpo respondiendo al suyo.",
    "speech": "Antes de los 3 años el lenguaje se construye moviéndose: cogiendo, tirando, subiendo a brazos, chocando las manos. La pantalla da imagen y sonido, pero no da lo que hace falta, que es un cuerpo respondiendo al suyo.",
    "source": "academy.juego_movimiento_sin_pantallas.01/ideaClave"
+  },
+  {
+   "id": "es_tutor_2305159b_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una criatura modela contigo",
+   "speech": "Una criatura modela contigo",
+   "source": "progresion.segundo_ciclo.4/s3/d4/foco"
   },
   {
    "id": "es_tutor_234cb5b3_86",
@@ -3658,6 +3858,14 @@
    "text": "Desliza la toallita por las palmas y frótalas rítmicamente.",
    "speech": "Desliza la toallita por las palmas y frótalas rítmicamente.",
    "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_240713e8_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La clase elige",
+   "speech": "La clase elige",
+   "source": "progresion.segundo_ciclo.4/s2/d5/foco"
   },
   {
    "id": "es_tutor_24286992_59",
@@ -3756,6 +3964,14 @@
    "source": "juega.primavera.01/cancionPulso/consigna"
   },
   {
+   "id": "es_tutor_27b6dc82_125",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes fuera de la alfombra: en el pasillo, en el patio o de camino al comedor. La palabra vale en cualquier sitio.",
+   "speech": "Las tres órdenes fuera de la alfombra: en el pasillo, en el patio o de camino al comedor. La palabra vale en cualquier sitio.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d2/consigna"
+  },
+  {
    "id": "es_tutor_27c01c83_57",
    "lang": "es",
    "style": "tutor",
@@ -3772,12 +3988,36 @@
    "source": "juega.inverno.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_28258acf_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La segunda orden, dramatizada",
+   "speech": "La segunda orden, dramatizada",
+   "source": "progresion.segundo_ciclo.5/s1/d3/foco"
+  },
+  {
+   "id": "es_tutor_28812e9d_108",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Encadena la segunda y la tercera orden. Cambia el orden de aparición una vez: el grupo escucha, no memoriza.",
+   "speech": "Encadena la segunda y la tercera orden. Cambia el orden de aparición una vez: el grupo escucha, no memoriza.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d2/consigna"
+  },
+  {
    "id": "es_tutor_289c1118_96",
    "lang": "es",
    "style": "tutor",
    "text": "Mesa del comedor familiar con acceso seguro a los cajones de servilletas y cubiertos infantiles.",
    "speech": "Mesa del comedor familiar con acceso seguro a los cajones de servilletas y cubiertos infantiles.",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_28bb592d_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Despacio y rápido",
+   "speech": "Despacio y rápido",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d2/foco"
   },
   {
    "id": "es_tutor_28e2a1bc_83",
@@ -3860,6 +4100,14 @@
    "source": "juega.primavera.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_2b9af635_121",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes con el material del mes. Quien tiene el objeto dice la orden; la clase la hace. Cambia de mano cada vez.",
+   "speech": "Las tres órdenes con el material del mes. Quien tiene el objeto dice la orden; la clase la hace. Cambia de mano cada vez.",
+   "source": "progresion.segundo_ciclo.6/s2/d4/consigna"
+  },
+  {
    "id": "es_tutor_2bb7fb4b_55",
    "lang": "es",
    "style": "tutor",
@@ -3906,6 +4154,22 @@
    "text": "Así es: el vídeo emite igual atienda o no. El adulto ajusta, espera y responde a lo que acaba de hacer, y esa respuesta es la que construye lenguaje en los primeros años.",
    "speech": "Así es: el vídeo emite igual atienda o no. El adulto ajusta, espera y responde a lo que acaba de hacer, y esa respuesta es la que construye lenguaje en los primeros años.",
    "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_2d0b2042_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Freeze!",
+   "speech": "¡Freeze!",
+   "source": "progresion.segundo_ciclo.5/s2/d2/foco"
+  },
+  {
+   "id": "es_tutor_2d73763c_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una criatura dirige",
+   "speech": "Una criatura dirige",
+   "source": "progresion.segundo_ciclo.6/s2/d5/foco"
   },
   {
    "id": "es_tutor_2da08be5_49",
@@ -4002,6 +4266,38 @@
    "text": "Nada por el suelo en línea recta antes de pedirlo.",
    "speech": "Nada por el suelo en línea recta antes de pedirlo.",
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/3/cmd/cmd.xuno.4i.02/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_326089e6_104",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Primera y segunda orden seguidas, con pausa entre ellas. Tú modelas las dos; la clase hace lo que puede.",
+   "speech": "Primera y segunda orden seguidas, con pausa entre ellas. Tú modelas las dos; la clase hace lo que puede.",
+   "source": "progresion.segundo_ciclo.4/s1/d4/consigna"
+  },
+  {
+   "id": "es_tutor_328a3686_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La tercera orden, en el regazo",
+   "speech": "La tercera orden, en el regazo",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d1/foco"
+  },
+  {
+   "id": "es_tutor_32aadb0b_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción entera, a su ritmo",
+   "speech": "Canción entera, a su ritmo",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d3/foco"
+  },
+  {
+   "id": "es_tutor_32eb3488_118",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repite la orden de ayer con el material del mes. Quien quiera la hace contigo; quien no, mira. Modelas todo el tiempo.",
+   "speech": "Repite la orden de ayer con el material del mes. Quien quiera la hace contigo; quien no, mira. Modelas todo el tiempo.",
+   "source": "progresion.segundo_ciclo.4/s1/d2/consigna"
   },
   {
    "id": "es_tutor_33630495_58",
@@ -4116,6 +4412,14 @@
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.02/accionFisica"
   },
   {
+   "id": "es_tutor_36dfaa28_109",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Primera y segunda orden en parejas. Quien dice la orden elige cuál; quien la hace, la hace. Cambian de papel.",
+   "speech": "Primera y segunda orden en parejas. Quien dice la orden elige cuál; quien la hace, la hace. Cambian de papel.",
+   "source": "progresion.segundo_ciclo.6/s1/d4/consigna"
+  },
+  {
    "id": "es_tutor_373268a4_52",
    "lang": "es",
    "style": "tutor",
@@ -4178,6 +4482,14 @@
    "text": "Sostén las manos del bebé y frótalas una contra la otra.",
    "speech": "Sostén las manos del bebé y frótalas una contra la otra.",
    "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/3/cmd/cmd.maio.0_2.01/accionFisica"
+  },
+  {
+   "id": "es_tutor_38f6c516_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hoy solo la segunda orden, con otro personaje. Dila, hazla, congela la postura un segundo, sigue.",
+   "speech": "Hoy solo la segunda orden, con otro personaje. Dila, hazla, congela la postura un segundo, sigue.",
+   "source": "progresion.segundo_ciclo.5/s1/d3/consigna"
   },
   {
    "id": "es_tutor_3914e2f3_55",
@@ -4260,6 +4572,14 @@
    "source": "juega.benvida.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_3c08b82f_93",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la tercera orden. Si el mes solo tiene dos, hoy repasa la segunda con otro material.",
+   "speech": "Presenta la tercera orden. Si el mes solo tiene dos, hoy repasa la segunda con otro material.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d1/consigna"
+  },
+  {
    "id": "es_tutor_3c800c79_66",
    "lang": "es",
    "style": "tutor",
@@ -4292,6 +4612,14 @@
    "source": "juega.auga.01/puenteCasa/recomendacionConversacion"
   },
   {
+   "id": "es_tutor_3dbdb177_116",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una criatura se pone a tu lado y hace el gesto contigo mientras tú dices la orden. Cambia de criatura en cada orden.",
+   "speech": "Una criatura se pone a tu lado y hace el gesto contigo mientras tú dices la orden. Cambia de criatura en cada orden.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d4/consigna"
+  },
+  {
    "id": "es_tutor_3e3c84bf_80",
    "lang": "es",
    "style": "tutor",
@@ -4306,6 +4634,14 @@
    "text": "¿Qué tiene Lúa en la mano? ¡Mirad cómo brilla el agua!",
    "speech": "¿Qué tiene Lúa en la mano? ¡Mirad cómo brilla el agua!",
    "source": "juega.mar.01/cuento/0/pregunta"
+  },
+  {
+   "id": "es_tutor_3eda4bd2_11",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Solo la voz",
+   "speech": "Solo la voz",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d1/foco"
   },
   {
    "id": "es_tutor_3ee3b484_120",
@@ -4540,6 +4876,14 @@
    "source": "juega.choiva.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_4463d77a_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sigue lo que el bebé hace",
+   "speech": "Sigue lo que el bebé hace",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d5/foco"
+  },
+  {
    "id": "es_tutor_4472e705_468",
    "lang": "es",
    "style": "tutor",
@@ -4676,6 +5020,14 @@
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/cmd/cmd.outubro.4i.03/accionFisica"
   },
   {
+   "id": "es_tutor_4831756a_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las dos órdenes, juntas",
+   "speech": "Las dos órdenes, juntas",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d4/foco"
+  },
+  {
    "id": "es_tutor_484dc462_100",
    "lang": "es",
    "style": "tutor",
@@ -4746,6 +5098,14 @@
    "text": "Decir 'tap', seguir la gota con el dedo o dar toquecitos en el cristal.",
    "speech": "Decir 'tap', seguir la gota con el dedo o dar toquecitos en el cristal.",
    "source": "juega.primavera.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_4a35b38d_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cierre del mes, con calma",
+   "speech": "Cierre del mes, con calma",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d5/foco"
   },
   {
    "id": "es_tutor_4a77f9d7_52",
@@ -4820,12 +5180,28 @@
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/fase/3/cmd/cmd.xaneiro.4i.03/modeladoDocente"
   },
   {
+   "id": "es_tutor_4d064090_106",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la tercera orden igual que las otras. Si el mes solo tiene dos, repasa la segunda con otro gesto.",
+   "speech": "Presenta la tercera orden igual que las otras. Si el mes solo tiene dos, repasa la segunda con otro gesto.",
+   "source": "progresion.segundo_ciclo.4/s2/d1/consigna"
+  },
+  {
    "id": "es_tutor_4d5ab917_114",
    "lang": "es",
    "style": "tutor",
    "text": "Primera noción de cantidad con los objetos propios: un zapato en la mano y muchos zapatos en el suelo del círculo.",
    "speech": "Primera noción de cantidad con los objetos propios: un zapato en la mano y muchos zapatos en el suelo del círculo.",
    "source": "juega.benvida.01/matematicas/descripcion"
+  },
+  {
+   "id": "es_tutor_4d6ba855_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las dos órdenes, con la canción",
+   "speech": "Las dos órdenes, con la canción",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d5/foco"
   },
   {
    "id": "es_tutor_4e059228_57",
@@ -4932,6 +5308,14 @@
    "source": "juega.choiva.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_5035fe1a_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción completa con las tres órdenes, al ritmo del mes y sin parar entre estrofas. Es la sesión entera seguida.",
+   "speech": "Canción completa con las tres órdenes, al ritmo del mes y sin parar entre estrofas. Es la sesión entera seguida.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d3/consigna"
+  },
+  {
    "id": "es_tutor_50888d69_184",
    "lang": "es",
    "style": "tutor",
@@ -4956,6 +5340,14 @@
    "source": "juega.animais.01/exploracion/paso/3"
   },
   {
+   "id": "es_tutor_51dd41e4_118",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción entera con las tres órdenes dentro. Tú sigues haciendo todo el movimiento: aún no es hora de dejar de modelar.",
+   "speech": "Canción entera con las tres órdenes dentro. Tú sigues haciendo todo el movimiento: aún no es hora de dejar de modelar.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d3/consigna"
+  },
+  {
    "id": "es_tutor_523aa264_83",
    "lang": "es",
    "style": "tutor",
@@ -4978,6 +5370,14 @@
    "text": "Cuanta más información se le dé a la familia en la puerta, mejor aprovecha el día en casa.",
    "speech": "Cuanta más información se le dé a la familia en la puerta, mejor aprovecha el día en casa.",
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_5361fa1f_121",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes con el material del mes. El objeto pasa de mano en mano: quien lo tiene, hace; el resto mira y anticipa.",
+   "speech": "Las tres órdenes con el material del mes. El objeto pasa de mano en mano: quien lo tiene, hace; el resto mira y anticipa.",
+   "source": "progresion.segundo_ciclo.4/s2/d4/consigna"
   },
   {
    "id": "es_tutor_53b9ded5_107",
@@ -5164,12 +5564,28 @@
    "source": "juega.primavera.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "es_tutor_589c9358_117",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Última vez del mes: las tres órdenes, la canción y la despedida en círculo. Termina más despacio de lo que empezaste.",
+   "speech": "Última vez del mes: las tres órdenes, la canción y la despedida en círculo. Termina más despacio de lo que empezaste.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d5/consigna"
+  },
+  {
    "id": "es_tutor_58db02aa_51",
    "lang": "es",
    "style": "tutor",
    "text": "Muestra la primera tarjeta sin decir nada y espera.",
    "speech": "Muestra la primera tarjeta sin decir nada y espera.",
    "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/1/consigna"
+  },
+  {
+   "id": "es_tutor_591909cd_121",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Última vez del mes: las tres órdenes, la canción y un abrazo largo a cada bebé. Termina más despacio de lo que empezaste.",
+   "speech": "Última vez del mes: las tres órdenes, la canción y un abrazo largo a cada bebé. Termina más despacio de lo que empezaste.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d5/consigna"
   },
   {
    "id": "es_tutor_5919e347_93",
@@ -5260,6 +5676,14 @@
    "source": "academy.bilinguismo_y_cultura.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "es_tutor_5b968fd7_129",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la tercera orden igual que las otras: en el regazo, palabra y gesto guiado. Si el mes solo tiene dos, repasa la segunda.",
+   "speech": "Presenta la tercera orden igual que las otras: en el regazo, palabra y gesto guiado. Si el mes solo tiene dos, repasa la segunda.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d1/consigna"
+  },
+  {
    "id": "es_tutor_5bba7e1a_81",
    "lang": "es",
    "style": "tutor",
@@ -5330,6 +5754,14 @@
    "text": "Dejar caer una hoja de verdad desde arriba en cada 'caen', para que sigan la caída con la mirada antes de pisar nada.",
    "speech": "Dejar caer una hoja de verdad desde arriba en cada 'caen', para que sigan la caída con la mirada antes de pisar nada.",
    "source": "juega.follas.01/cancionPulso/consigna"
+  },
+  {
+   "id": "es_tutor_5d79b991_127",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes fuera de la alfombra, en parejas: en el pasillo, en el patio o en la fila. La palabra vale en cualquier sitio.",
+   "speech": "Las tres órdenes fuera de la alfombra, en parejas: en el pasillo, en el patio o en la fila. La palabra vale en cualquier sitio.",
+   "source": "progresion.segundo_ciclo.6/s4/d2/consigna"
   },
   {
    "id": "es_tutor_5d7ca9e9_60",
@@ -5460,6 +5892,22 @@
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "es_tutor_60e65abc_110",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Primera y segunda orden, cada una con su personaje. Cambia de voz entre una y otra: es la señal para escuchar.",
+   "speech": "Primera y segunda orden, cada una con su personaje. Cambia de voz entre una y otra: es la señal para escuchar.",
+   "source": "progresion.segundo_ciclo.5/s1/d4/consigna"
+  },
+  {
+   "id": "es_tutor_6131812f_122",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si hay otra persona adulta, cada bebé pasa de un regazo a otro entre orden y orden. Si no, cambia tú de bebé más a menudo.",
+   "speech": "Si hay otra persona adulta, cada bebé pasa de un regazo a otro entre orden y orden. Si no, cambia tú de bebé más a menudo.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d4/consigna"
+  },
+  {
    "id": "es_tutor_619aa2bd_112",
    "lang": "es",
    "style": "tutor",
@@ -5490,6 +5938,14 @@
    "text": "¿Cómo pisa el oso? ¿Y cómo acaba Lúa?",
    "speech": "¿Cómo pisa el oso? ¿Y cómo acaba Lúa?",
    "source": "juega.animais.01/cuento/2/pregunta"
+  },
+  {
+   "id": "es_tutor_639dedc2_130",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repite la orden de ayer con el material del mes. Cada criatura que quiere hace el gesto con el objeto en la mano; las demás miran.",
+   "speech": "Repite la orden de ayer con el material del mes. Cada criatura que quiere hace el gesto con el objeto en la mano; las demás miran.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d2/consigna"
   },
   {
    "id": "es_tutor_63a4ddb5_378",
@@ -5532,6 +5988,14 @@
    "source": "juega.corpo.01/cuento/1/pregunta"
   },
   {
+   "id": "es_tutor_646e7fe0_132",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz la sesión como la harán las familias: la criatura dice las órdenes y la persona adulta las hace. Es lo que se llevan en la nota.",
+   "speech": "Haz la sesión como la harán las familias: la criatura dice las órdenes y la persona adulta las hace. Es lo que se llevan en la nota.",
+   "source": "progresion.segundo_ciclo.6/s4/d4/consigna"
+  },
+  {
    "id": "es_tutor_649984e1_52",
    "lang": "es",
    "style": "tutor",
@@ -5570,6 +6034,14 @@
    "text": "Jugar a transformarse con una careta hecha en casa, siguiendo órdenes de movimiento.",
    "speech": "Jugar a transformarse con una careta hecha en casa, siguiendo órdenes de movimiento.",
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "es_tutor_65ca59d8_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cambio de pareja",
+   "speech": "Cambio de pareja",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d4/foco"
   },
   {
    "id": "es_tutor_6645b58a_79",
@@ -5636,6 +6108,14 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.02/accionFisica"
   },
   {
+   "id": "es_tutor_69fb820e_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Segunda y tercera, seguidas",
+   "speech": "Segunda y tercera, seguidas",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d2/foco"
+  },
+  {
    "id": "es_tutor_6a3815d0_48",
    "lang": "es",
    "style": "tutor",
@@ -5692,6 +6172,14 @@
    "source": "juega.follas.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_6d4bba68_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La primera orden, en círculo",
+   "speech": "La primera orden, en círculo",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d1/foco"
+  },
+  {
    "id": "es_tutor_6d6e4a5d_96",
    "lang": "es",
    "style": "tutor",
@@ -5740,12 +6228,28 @@
    "source": "asamblea.segundo_ciclo.maio.4_infantil/fase/3/consigna"
   },
   {
+   "id": "es_tutor_6e195de5_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La tercera orden, con modelado",
+   "speech": "La tercera orden, con modelado",
+   "source": "progresion.segundo_ciclo.4/s2/d1/foco"
+  },
+  {
    "id": "es_tutor_6e50b473_79",
    "lang": "es",
    "style": "tutor",
    "text": "Una tela azul de grandes dimensiones es sostenida perimetralmente por el grupo.",
    "speech": "Una tela azul de grandes dimensiones es sostenida perimetralmente por el grupo.",
    "source": "asamblea.segundo_ciclo.xuno.5_infantil/fase/3/consigna"
+  },
+  {
+   "id": "es_tutor_6e5fb1b2_137",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Última vez del mes: las tres órdenes dichas por la clase, la canción y la despedida en círculo. Termina más despacio de lo que empezaste.",
+   "speech": "Última vez del mes: las tres órdenes dichas por la clase, la canción y la despedida en círculo. Termina más despacio de lo que empezaste.",
+   "source": "progresion.segundo_ciclo.6/s4/d5/consigna"
   },
   {
    "id": "es_tutor_6e7b4cac_125",
@@ -5762,6 +6266,14 @@
    "text": "Modular la intensidad del oleaje según la orden.",
    "speech": "Modular la intensidad del oleaje según la orden.",
    "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_6e8acf29_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La historia de la lámina",
+   "speech": "La historia de la lámina",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d3/foco"
   },
   {
    "id": "es_tutor_6e9ac16e_68",
@@ -5804,6 +6316,14 @@
    "source": "aula.preguntas.01/ideaClave"
   },
   {
+   "id": "es_tutor_6f84adb0_122",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una criatura se pone en tu sitio y dice las tres órdenes a la clase. Tú haces de alumna. Cambia de directora a cada orden.",
+   "speech": "Una criatura se pone en tu sitio y dice las tres órdenes a la clase. Tú haces de alumna. Cambia de directora a cada orden.",
+   "source": "progresion.segundo_ciclo.6/s2/d5/consigna"
+  },
+  {
    "id": "es_tutor_6fb59658_68",
    "lang": "es",
    "style": "tutor",
@@ -5836,6 +6356,14 @@
    "source": "asamblea.segundo_ciclo.abril.4_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "es_tutor_71e47b56_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Une la primera y la segunda orden en una escena seguida, sin parar. Primero muy despacio, después al ritmo normal.",
+   "speech": "Une la primera y la segunda orden en una escena seguida, sin parar. Primero muy despacio, después al ritmo normal.",
+   "source": "progresion.segundo_ciclo.5/s3/d1/consigna"
+  },
+  {
    "id": "es_tutor_720ac9dd_61",
    "lang": "es",
    "style": "tutor",
@@ -5850,6 +6378,14 @@
    "text": "Colocación de una careta de madera y rugido con las manos en garra.",
    "speech": "Colocación de una careta de madera y rugido con las manos en garra.",
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/fase/3/cmd/cmd.febreiro.4i.03/accionFisica"
+  },
+  {
+   "id": "es_tutor_722d732e_115",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Une la primera y la segunda orden en un movimiento continuo, sin pausa. Primero despacio, luego un poco más ligero.",
+   "speech": "Une la primera y la segunda orden en un movimiento continuo, sin pausa. Primero despacio, luego un poco más ligero.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d1/consigna"
   },
   {
    "id": "es_tutor_7248d6a6_158",
@@ -5882,6 +6418,14 @@
    "text": "En diciembre hay mucho ruido, mucha visita y poca rutina. Un rato corto y tranquilo cada día rinde más que una tarde entera de estímulos.",
    "speech": "En diciembre hay mucho ruido, mucha visita y poca rutina. Un rato corto y tranquilo cada día rinde más que una tarde entera de estímulos.",
    "source": "juega.inverno.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "es_tutor_731e0406_94",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción entera con las tres órdenes dentro, modelando todo el tiempo. Aún no retiras el gesto.",
+   "speech": "Canción entera con las tres órdenes dentro, modelando todo el tiempo. Aún no retiras el gesto.",
+   "source": "progresion.segundo_ciclo.4/s2/d3/consigna"
   },
   {
    "id": "es_tutor_73262cbd_48",
@@ -5922,6 +6466,14 @@
    "text": "Golpes rítmicos de los dedos imitando las gotas de lluvia.",
    "speech": "Golpes rítmicos de los dedos imitando las gotas de lluvia.",
    "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_74e31f4b_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción entera, al ritmo",
+   "speech": "Canción entera, al ritmo",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d3/foco"
   },
   {
    "id": "es_tutor_758ef845_181",
@@ -5994,6 +6546,14 @@
    "text": "En la entrada de casa, con las prendas al alcance de la criatura.",
    "speech": "En la entrada de casa, con las prendas al alcance de la criatura.",
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_77b42d44_109",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canta la canción del mes y mete las dos órdenes donde caen en el ritmo. El pulso se ve en tu mano, no se oye.",
+   "speech": "Canta la canción del mes y mete las dos órdenes donde caen en el ritmo. El pulso se ve en tu mano, no se oye.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d5/consigna"
   },
   {
    "id": "es_tutor_77e391a0_49",
@@ -6212,6 +6772,14 @@
    "source": "academy.bilinguismo_y_cultura.01/luaDice"
   },
   {
+   "id": "es_tutor_7c1b4809_129",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes fuera de la alfombra: en el cambiador, en la silla o en el patio. La palabra tiene que valer en cualquier sitio.",
+   "speech": "Las tres órdenes fuera de la alfombra: en el cambiador, en la silla o en el patio. La palabra tiene que valer en cualquier sitio.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d2/consigna"
+  },
+  {
    "id": "es_tutor_7c542b05_64",
    "lang": "es",
    "style": "tutor",
@@ -6370,6 +6938,14 @@
    "text": "¿A quién saluda Lúa antes de volver a casa?",
    "speech": "¿A quién saluda Lúa antes de volver a casa?",
    "source": "juega.mar.01/cuento/2/pregunta"
+  },
+  {
+   "id": "es_tutor_83523583_110",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la primera orden: dila y hazla a la vez, tres veces. Luego pídele a una criatura que la haga contigo.",
+   "speech": "Presenta la primera orden: dila y hazla a la vez, tres veces. Luego pídele a una criatura que la haga contigo.",
+   "source": "progresion.segundo_ciclo.6/s1/d1/consigna"
   },
   {
    "id": "es_tutor_838a922b_57",
@@ -6628,6 +7204,14 @@
    "source": "juega.benvida.01/exploracion/paso/3"
   },
   {
+   "id": "es_tutor_8fc5b7e9_120",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción completa con las tres órdenes, al ritmo del mes y sin parar entre estrofas. Tú solo marcas el pulso con la mano.",
+   "speech": "Canción completa con las tres órdenes, al ritmo del mes y sin parar entre estrofas. Tú solo marcas el pulso con la mano.",
+   "source": "progresion.segundo_ciclo.4/s4/d3/consigna"
+  },
+  {
    "id": "es_tutor_8fd5993a_65",
    "lang": "es",
    "style": "tutor",
@@ -6636,12 +7220,36 @@
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "es_tutor_8fe86af4_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción del mes con las tres órdenes. Fíjate en qué bebé anticipa el gesto antes de la palabra: ese ya la tiene.",
+   "speech": "Canción del mes con las tres órdenes. Fíjate en qué bebé anticipa el gesto antes de la palabra: ese ya la tiene.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d5/consigna"
+  },
+  {
    "id": "es_tutor_9007b87a_28",
    "lang": "es",
    "style": "tutor",
    "text": "¿Dónde está el aro amarillo?",
    "speech": "¿Dónde está el aro amarillo?",
    "source": "juega.cores.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_904430a4_92",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Segunda y tercera orden: una ronda muy despacio, otra rápida, y freeze al final de cada una.",
+   "speech": "Segunda y tercera orden: una ronda muy despacio, otra rápida, y freeze al final de cada una.",
+   "source": "progresion.segundo_ciclo.5/s3/d2/consigna"
+  },
+  {
+   "id": "es_tutor_90525cf1_127",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción entera con las tres órdenes dentro. Mantén el contacto corporal: el bebé aprende por tu movimiento, no por tu petición.",
+   "speech": "Canción entera con las tres órdenes dentro. Mantén el contacto corporal: el bebé aprende por tu movimiento, no por tu petición.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d3/consigna"
   },
   {
    "id": "es_tutor_908e6a01_75",
@@ -6700,6 +7308,14 @@
    "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "es_tutor_920e33c5_124",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción completa con las tres órdenes, al ritmo del mes, dirigida por parejas que se van relevando. Tú solo marcas el pulso.",
+   "speech": "Canción completa con las tres órdenes, al ritmo del mes, dirigida por parejas que se van relevando. Tú solo marcas el pulso.",
+   "source": "progresion.segundo_ciclo.6/s4/d3/consigna"
+  },
+  {
    "id": "es_tutor_92539b0b_53",
    "lang": "es",
    "style": "tutor",
@@ -6714,6 +7330,22 @@
    "text": "Reto de categorización: con los ojos cerrados o dentro de bolsas de lino, extraer elementos distinguiendo texturas rugosas y lisas.",
    "speech": "Reto de categorización: con los ojos cerrados o dentro de bolsas de lino, extraer elementos distinguiendo texturas rugosas y lisas.",
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/consigna"
+  },
+  {
+   "id": "es_tutor_93273a97_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Enseña la lámina del mes y cuenta en tres frases lo que pasa. Cada orden es un gesto del protagonista; el grupo hace el gesto.",
+   "speech": "Enseña la lámina del mes y cuenta en tres frases lo que pasa. Cada orden es un gesto del protagonista; el grupo hace el gesto.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d3/consigna"
+  },
+  {
+   "id": "es_tutor_933ac880_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La clase elige el personaje",
+   "speech": "La clase elige el personaje",
+   "source": "progresion.segundo_ciclo.5/s2/d5/foco"
   },
   {
    "id": "es_tutor_93835347_59",
@@ -6804,6 +7436,14 @@
    "source": "juega.primavera.01/exploracion/paso/3"
   },
   {
+   "id": "es_tutor_974de13b_108",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di la orden y empieza el gesto, pero no lo termines. La clase lo completa. Si no sale, termínalo tú y sigue.",
+   "speech": "Di la orden y empieza el gesto, pero no lo termines. La clase lo completa. Si no sale, termínalo tú y sigue.",
+   "source": "progresion.segundo_ciclo.5/s3/d4/consigna"
+  },
+  {
    "id": "es_tutor_97b400c9_69",
    "lang": "es",
    "style": "tutor",
@@ -6826,6 +7466,14 @@
    "text": "Al poner los zapatos por la mañana, levantar un pie cada vez diciendo 'One shoe, two shoes, up! Push, push!'.",
    "speech": "Al poner los zapatos por la mañana, levantar un pie cada vez diciendo 'One shoe, two shoes, up! Push, push!'.",
    "source": "juega.benvida.01/puenteCasa/act/0"
+  },
+  {
+   "id": "es_tutor_981d3ceb_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La misma orden, con el material",
+   "speech": "La misma orden, con el material",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d2/foco"
   },
   {
    "id": "es_tutor_98720a53_120",
@@ -6860,6 +7508,14 @@
    "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/1/consigna"
   },
   {
+   "id": "es_tutor_9925bc38_115",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Segunda y tercera orden: una vez muy despacio, una vez rápida. El contraste es el juego; la risa dice que funciona.",
+   "speech": "Segunda y tercera orden: una vez muy despacio, una vez rápida. El contraste es el juego; la risa dice que funciona.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d2/consigna"
+  },
+  {
    "id": "es_tutor_99596401_65",
    "lang": "es",
    "style": "tutor",
@@ -6876,6 +7532,22 @@
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/4/consigna"
   },
   {
+   "id": "es_tutor_99a6b9b9_119",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di la orden con la voz del personaje y no hagas nada. Cuenta hasta tres. Si nadie actúa, modela y sigue sin comentario.",
+   "speech": "Di la orden con la voz del personaje y no hagas nada. Cuenta hasta tres. Si nadie actúa, modela y sigue sin comentario.",
+   "source": "progresion.segundo_ciclo.5/s4/d1/consigna"
+  },
+  {
+   "id": "es_tutor_99adc77d_138",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Enseña la lámina del mes y que la clase cuente lo que pasa. Cada orden es una acción del protagonista; en parejas, uno narra y otro actúa.",
+   "speech": "Enseña la lámina del mes y que la clase cuente lo que pasa. Cada orden es una acción del protagonista; en parejas, uno narra y otro actúa.",
+   "source": "progresion.segundo_ciclo.6/s3/d3/consigna"
+  },
+  {
    "id": "es_tutor_99ccc65c_253",
    "lang": "es",
    "style": "tutor",
@@ -6890,6 +7562,14 @@
    "text": "Desplazamiento libre moviendo los brazos con velocidad y articulando vibración labial suave.",
    "speech": "Desplazamiento libre moviendo los brazos con velocidad y articulando vibración labial suave.",
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/fase/3/consigna"
+  },
+  {
+   "id": "es_tutor_99fc3bd1_109",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En círculo: cada criatura dice una orden a la siguiente, que la hace y pasa otra. Tú solo arrancas la cadena.",
+   "speech": "En círculo: cada criatura dice una orden a la siguiente, que la hace y pasa otra. Tú solo arrancas la cadena.",
+   "source": "progresion.segundo_ciclo.6/s3/d4/consigna"
   },
   {
    "id": "es_tutor_9a69e05f_57",
@@ -6964,6 +7644,14 @@
    "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.02/accionFisica"
   },
   {
+   "id": "es_tutor_9c18b5ff_110",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes con el material del mes. El objeto pasa de mano en mano: quien lo tiene, hace; el resto mira.",
+   "speech": "Las tres órdenes con el material del mes. El objeto pasa de mano en mano: quien lo tiene, hace; el resto mira.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d4/consigna"
+  },
+  {
    "id": "es_tutor_9c61dc34_52",
    "lang": "es",
    "style": "tutor",
@@ -6994,6 +7682,14 @@
    "text": "Salto con pies juntos por encima de un aro de madera.",
    "speech": "Salto con pies juntos por encima de un aro de madera.",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/fase/3/cmd/cmd.xaneiro.4i.02/accionFisica"
+  },
+  {
+   "id": "es_tutor_9deb5f69_134",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz la sesión como la harán las familias: sin atrezo, en dos minutos. Un personaje y las tres órdenes. Es lo que se llevan en la nota.",
+   "speech": "Haz la sesión como la harán las familias: sin atrezo, en dos minutos. Un personaje y las tres órdenes. Es lo que se llevan en la nota.",
+   "source": "progresion.segundo_ciclo.5/s4/d4/consigna"
   },
   {
    "id": "es_tutor_9e21a0e3_165",
@@ -7050,6 +7746,14 @@
    "text": "Hacerse muy pequeñas en el suelo y muy grandes de pie, dos veces seguidas.",
    "speech": "Hacerse muy pequeñas en el suelo y muy grandes de pie, dos veces seguidas.",
    "source": "juega.primavera.01/matematicas/accion/0"
+  },
+  {
+   "id": "es_tutor_9ec4c5b7_83",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hoy solo la segunda orden, con el mismo esquema: dila, hazla, una criatura contigo.",
+   "speech": "Hoy solo la segunda orden, con el mismo esquema: dila, hazla, una criatura contigo.",
+   "source": "progresion.segundo_ciclo.6/s1/d3/consigna"
   },
   {
    "id": "es_tutor_9ed28f6d_159",
@@ -7114,6 +7818,22 @@
    "text": "Marca el ritmo rápido y luego lento, sin explicar la diferencia.",
    "speech": "Marca el ritmo rápido y luego lento, sin explicar la diferencia.",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/fase/3/cmd/cmd.xaneiro.4i.01/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_9ff211f5_95",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Segunda y tercera orden: una ronda muy despacio, otra rápida. El contraste hace escuchar mejor.",
+   "speech": "Segunda y tercera orden: una ronda muy despacio, otra rápida. El contraste hace escuchar mejor.",
+   "source": "progresion.segundo_ciclo.4/s3/d2/consigna"
+  },
+  {
+   "id": "es_tutor_a022f415_125",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Última vez del mes: las tres órdenes, la canción y un freeze largo para despedirse. Termina más despacio de lo que empezaste.",
+   "speech": "Última vez del mes: las tres órdenes, la canción y un freeze largo para despedirse. Termina más despacio de lo que empezaste.",
+   "source": "progresion.segundo_ciclo.5/s4/d5/consigna"
   },
   {
    "id": "es_tutor_a02de827_47",
@@ -7188,6 +7908,14 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "es_tutor_a1c2c20e_122",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Une la primera y la segunda orden en una sola serie, sin parar entre ellas. Primero muy despacio; después al ritmo normal.",
+   "speech": "Une la primera y la segunda orden en una sola serie, sin parar entre ellas. Primero muy despacio; después al ritmo normal.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d1/consigna"
+  },
+  {
    "id": "es_tutor_a1c5ddce_77",
    "lang": "es",
    "style": "tutor",
@@ -7226,6 +7954,22 @@
    "text": "Junto a la ventana, con la maceta y un cuaderno de dibujo.",
    "speech": "Junto a la ventana, con la maceta y un cuaderno de dibujo.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_a319bdec_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Despacio, rápido y freeze",
+   "speech": "Despacio, rápido y freeze",
+   "source": "progresion.segundo_ciclo.5/s3/d2/foco"
+  },
+  {
+   "id": "es_tutor_a32bd2c5_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción del mes con las dos órdenes donde caen en el ritmo. El pulso se ve en tu mano; no se oye.",
+   "speech": "Canción del mes con las dos órdenes donde caen en el ritmo. El pulso se ve en tu mano; no se oye.",
+   "source": "progresion.segundo_ciclo.4/s1/d5/consigna"
   },
   {
    "id": "es_tutor_a334bcd4_63",
@@ -7276,12 +8020,28 @@
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/fase/3/cmd/cmd.febreiro.5i.01/modeladoDocente"
   },
   {
+   "id": "es_tutor_a43f7b81_120",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di la orden y toca la parte del cuerpo que se mueve, sin guiar el gesto entero. Si no sale, guía y sigue sin comentario.",
+   "speech": "Di la orden y toca la parte del cuerpo que se mueve, sin guiar el gesto entero. Si no sale, guía y sigue sin comentario.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d1/consigna"
+  },
+  {
    "id": "es_tutor_a4f94974_63",
    "lang": "es",
    "style": "tutor",
    "text": "Decir 'gorro', llevarse la mano a la cabeza o coger la capucha.",
    "speech": "Decir 'gorro', llevarse la mano a la cabeza o coger la capucha.",
    "source": "juega.choiva.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_a537a784_100",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hoy solo la segunda orden, con el mismo esquema: dila, hazla, espera. Cada orden nueva tiene su día.",
+   "speech": "Hoy solo la segunda orden, con el mismo esquema: dila, hazla, espera. Cada orden nueva tiene su día.",
+   "source": "progresion.segundo_ciclo.4/s1/d3/consigna"
   },
   {
    "id": "es_tutor_a57820a2_267",
@@ -7364,6 +8124,14 @@
    "source": "juega.mar.01/puenteCasa/act/1"
   },
   {
+   "id": "es_tutor_a83420be_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di la orden y no hagas el gesto. Cuenta hasta tres en silencio. Si nadie la hace, hazla tú y sigue sin comentario.",
+   "speech": "Di la orden y no hagas el gesto. Cuenta hasta tres en silencio. Si nadie la hace, hazla tú y sigue sin comentario.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d1/consigna"
+  },
+  {
    "id": "es_tutor_a907bb3b_353",
    "lang": "es",
    "style": "tutor",
@@ -7378,6 +8146,14 @@
    "text": "Explorar el contraste seco/húmedo en la mano y el tacto muy fino del pétalo.",
    "speech": "Explorar el contraste seco/húmedo en la mano y el tacto muy fino del pétalo.",
    "source": "juega.primavera.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "es_tutor_a95a9a40_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción entera, dirigida",
+   "speech": "Canción entera, dirigida",
+   "source": "progresion.segundo_ciclo.6/s4/d3/foco"
   },
   {
    "id": "es_tutor_a9b154f6_24",
@@ -7452,6 +8228,14 @@
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.01/modeladoDocente"
   },
   {
+   "id": "es_tutor_ac53efe7_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes, con el material",
+   "speech": "Las tres órdenes, con el material",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d4/foco"
+  },
+  {
    "id": "es_tutor_ac718a1b_95",
    "lang": "es",
    "style": "tutor",
@@ -7490,6 +8274,14 @@
    "text": "Soy Lúa. Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
    "speech": "Soy Lúa. Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
    "source": "academy.juego_movimiento_sin_pantallas.01/luaDice"
+  },
+  {
+   "id": "es_tutor_ae364521_119",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repite la orden de ayer en parejas: uno dice la orden en inglés, el otro la hace. Cambian de papel en la segunda ronda.",
+   "speech": "Repite la orden de ayer en parejas: uno dice la orden en inglés, el otro la hace. Cambian de papel en la segunda ronda.",
+   "source": "progresion.segundo_ciclo.6/s1/d2/consigna"
   },
   {
    "id": "es_tutor_ae439573_60",
@@ -7604,6 +8396,14 @@
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/cmd/cmd.outubro.4i.02/accionFisica"
   },
   {
+   "id": "es_tutor_b273d299_115",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repite la orden de ayer con el material del mes como atrezo. Quien quiera entra en la escena; quien no, es público.",
+   "speech": "Repite la orden de ayer con el material del mes como atrezo. Quien quiera entra en la escena; quien no, es público.",
+   "source": "progresion.segundo_ciclo.5/s1/d2/consigna"
+  },
+  {
    "id": "es_tutor_b2b3c0e9_62",
    "lang": "es",
    "style": "tutor",
@@ -7634,6 +8434,14 @@
    "text": "¿Qué abre la planta? ¿Estiramos nosotros los brazos arriba?",
    "speech": "¿Qué abre la planta? ¿Estiramos nosotros los brazos arriba?",
    "source": "juega.primavera.01/cuento/2/pregunta"
+  },
+  {
+   "id": "es_tutor_b3c01d6b_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una criatura hace de maestra",
+   "speech": "Una criatura hace de maestra",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d4/foco"
   },
   {
    "id": "es_tutor_b3c3b8c4_56",
@@ -7836,6 +8644,22 @@
    "source": "juega.auga.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_b90f2cbd_116",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la primera orden con un personaje: dila con la voz de ese personaje y hazla exagerada. La clase mira y ríe.",
+   "speech": "Presenta la primera orden con un personaje: dila con la voz de ese personaje y hazla exagerada. La clase mira y ríe.",
+   "source": "progresion.segundo_ciclo.5/s1/d1/consigna"
+  },
+  {
+   "id": "es_tutor_b91b6c43_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes, con la canción",
+   "speech": "Las tres órdenes, con la canción",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d3/foco"
+  },
+  {
    "id": "es_tutor_b9237206_180",
    "lang": "es",
    "style": "tutor",
@@ -7924,6 +8748,14 @@
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/cmd/cmd.outubro.4i.01/modeladoDocente"
   },
   {
+   "id": "es_tutor_bcb9df79_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La primera orden, con modelado",
+   "speech": "La primera orden, con modelado",
+   "source": "progresion.segundo_ciclo.4/s1/d1/foco"
+  },
+  {
    "id": "es_tutor_bd562b1e_193",
    "lang": "es",
    "style": "tutor",
@@ -7956,6 +8788,14 @@
    "source": "juega.benvida.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "es_tutor_be85ade3_95",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Encadena la segunda y la tercera orden. Cambia de bebé cada vez; el grupo mira mientras espera.",
+   "speech": "Encadena la segunda y la tercera orden. Cambia de bebé cada vez; el grupo mira mientras espera.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d2/consigna"
+  },
+  {
    "id": "es_tutor_bead248f_72",
    "lang": "es",
    "style": "tutor",
@@ -7986,6 +8826,14 @@
    "text": "Buscar y clasificar conchas y piedras siguiendo condicionales simples.",
    "speech": "Buscar y clasificar conchas y piedras siguiendo condicionales simples.",
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "es_tutor_bf4c892e_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes fuera de la alfombra: en el pasillo, en el patio o en la fila. La palabra tiene que valer en cualquier sitio.",
+   "speech": "Las tres órdenes fuera de la alfombra: en el pasillo, en el patio o en la fila. La palabra tiene que valer en cualquier sitio.",
+   "source": "progresion.segundo_ciclo.4/s4/d2/consigna"
   },
   {
    "id": "es_tutor_c0466ec0_119",
@@ -8044,6 +8892,14 @@
    "source": "juega.mar.01/exploracion/paso/3"
   },
   {
+   "id": "es_tutor_c2716f74_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La misma orden, en parejas",
+   "speech": "La misma orden, en parejas",
+   "source": "progresion.segundo_ciclo.6/s1/d2/foco"
+  },
+  {
    "id": "es_tutor_c2809ca3_38",
    "lang": "es",
    "style": "tutor",
@@ -8074,6 +8930,22 @@
    "text": "Coloca los dos tiestos y formula la condicional sin señalar.",
    "speech": "Coloca los dos tiestos y formula la condicional sin señalar.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.03/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_c2f26f5f_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dos órdenes en una sola serie",
+   "speech": "Dos órdenes en una sola serie",
+   "source": "progresion.segundo_ciclo.4/s3/d1/foco"
+  },
+  {
+   "id": "es_tutor_c303988a_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La segunda orden, con modelado",
+   "speech": "La segunda orden, con modelado",
+   "source": "progresion.segundo_ciclo.4/s1/d3/foco"
   },
   {
    "id": "es_tutor_c33cc621_68",
@@ -8132,12 +9004,36 @@
    "source": "juega.animais.01/cuento/1/texto"
   },
   {
+   "id": "es_tutor_c3d3d755_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La segunda orden, en el regazo",
+   "speech": "La segunda orden, en el regazo",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d3/foco"
+  },
+  {
+   "id": "es_tutor_c428b21d_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Primera y segunda orden seguidas, con pausa entre ellas. Hazlo tú con todo el cuerpo; el grupo sigue lo que puede.",
+   "speech": "Primera y segunda orden seguidas, con pausa entre ellas. Hazlo tú con todo el cuerpo; el grupo sigue lo que puede.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d4/consigna"
+  },
+  {
    "id": "es_tutor_c43727a1_33",
    "lang": "es",
    "style": "tutor",
    "text": "No: solo lo parece, está jugando.",
    "speech": "No: solo lo parece, está jugando.",
    "source": "juega.animais.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_c47be8b5_117",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Segunda y tercera orden en parejas. Quien dice la orden puede cambiar la secuencia: quien la hace tiene que escuchar.",
+   "speech": "Segunda y tercera orden en parejas. Quien dice la orden puede cambiar la secuencia: quien la hace tiene que escuchar.",
+   "source": "progresion.segundo_ciclo.6/s2/d2/consigna"
   },
   {
    "id": "es_tutor_c4878a77_43",
@@ -8204,6 +9100,14 @@
    "source": "juega.cores.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "es_tutor_c67ec197_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di las órdenes sin gesto y en secuencia distinta a la de siempre. Cuenta hasta tres. Si no sale, modela y sigue.",
+   "speech": "Di las órdenes sin gesto y en secuencia distinta a la de siempre. Cuenta hasta tres. Si no sale, modela y sigue.",
+   "source": "progresion.segundo_ciclo.6/s4/d1/consigna"
+  },
+  {
    "id": "es_tutor_c6cb17d8_111",
    "lang": "es",
    "style": "tutor",
@@ -8236,6 +9140,14 @@
    "source": "aula.conto.01/ejemploCotidiano"
   },
   {
+   "id": "es_tutor_c7cc3f7a_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La primera orden, en el regazo",
+   "speech": "La primera orden, en el regazo",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d1/foco"
+  },
+  {
    "id": "es_tutor_c7d4dd11_69",
    "lang": "es",
    "style": "tutor",
@@ -8252,12 +9164,28 @@
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/2/consigna"
   },
   {
+   "id": "es_tutor_c838083a_108",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes con el material del mes como atrezo. El objeto pasa de mano en mano: quien lo tiene, actúa.",
+   "speech": "Las tres órdenes con el material del mes como atrezo. El objeto pasa de mano en mano: quien lo tiene, actúa.",
+   "source": "progresion.segundo_ciclo.5/s2/d4/consigna"
+  },
+  {
    "id": "es_tutor_c9336681_73",
    "lang": "es",
    "style": "tutor",
    "text": "Terminar sentadas, con las manos en la barriga, sintiendo la respiración.",
    "speech": "Terminar sentadas, con las manos en la barriga, sintiendo la respiración.",
    "source": "juega.corpo.01/exploracion/paso/3"
+  },
+  {
+   "id": "es_tutor_c9416fcc_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz la sesión como la harán las familias: sin material especial, en dos minutos. Es lo que se llevan en la nota.",
+   "speech": "Haz la sesión como la harán las familias: sin material especial, en dos minutos. Es lo que se llevan en la nota.",
+   "source": "progresion.segundo_ciclo.4/s4/d4/consigna"
   },
   {
    "id": "es_tutor_c9a5356e_174",
@@ -8308,6 +9236,14 @@
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "es_tutor_cb965f03_125",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Enseña la lámina del mes y cuenta en tres frases lo que pasa. Cada orden entra en la historia como un gesto del protagonista.",
+   "speech": "Enseña la lámina del mes y cuenta en tres frases lo que pasa. Cada orden entra en la historia como un gesto del protagonista.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d3/consigna"
+  },
+  {
    "id": "es_tutor_cbc135a3_27",
    "lang": "es",
    "style": "tutor",
@@ -8324,6 +9260,14 @@
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/cmd/cmd.novembro.6i.01/accionFisica"
   },
   {
+   "id": "es_tutor_cc3a72a0_107",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la primera orden en círculo. Dila y hazla tú tres veces; el grupo mira. Nadie tiene que repetirla.",
+   "speech": "Presenta la primera orden en círculo. Dila y hazla tú tres veces; el grupo mira. Nadie tiene que repetirla.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d1/consigna"
+  },
+  {
    "id": "es_tutor_cc73ca7e_51",
    "lang": "es",
    "style": "tutor",
@@ -8338,6 +9282,14 @@
    "text": "Ondear la tela horizontalmente a pocos centímetros de sus cuerpos.",
    "speech": "Ondear la tela horizontalmente a pocos centímetros de sus cuerpos.",
    "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_cd1323bd_120",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Enseña la lámina del mes y cuenta lo que pasa en tres frases. Cada orden es una acción del protagonista; la clase actúa.",
+   "speech": "Enseña la lámina del mes y cuenta lo que pasa en tres frases. Cada orden es una acción del protagonista; la clase actúa.",
+   "source": "progresion.segundo_ciclo.5/s3/d3/consigna"
   },
   {
    "id": "es_tutor_cd19bd50_73",
@@ -8410,6 +9362,14 @@
    "text": "La docente facilita la tarjeta icónica de la percha al alumno guía y media discretamente sin interferir en el intercambio.",
    "speech": "La docente facilita la tarjeta icónica de la percha al alumno guía y media discretamente sin interferir en el intercambio.",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_cf5e95dd_116",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hoy solo la segunda orden. Mismo esquema: dila, hazla, espera. Si alguien la imita, di la palabra otra vez y sonríe.",
+   "speech": "Hoy solo la segunda orden. Mismo esquema: dila, hazla, espera. Si alguien la imita, di la palabra otra vez y sonríe.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d3/consigna"
   },
   {
    "id": "es_tutor_cf8a6ec2_59",
@@ -8652,6 +9612,22 @@
    "source": "juega.primavera.01/cancionPulso"
   },
   {
+   "id": "es_tutor_da14495f_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz la sesión como la harán las familias: sin material especial, en dos minutos, en la cocina. Es lo que se llevan en la nota.",
+   "speech": "Haz la sesión como la harán las familias: sin material especial, en dos minutos, en la cocina. Es lo que se llevan en la nota.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d4/consigna"
+  },
+  {
+   "id": "es_tutor_da30c74a_104",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes con el material del mes. Deja que el bebé lo toque después de cada orden: es el premio.",
+   "speech": "Las tres órdenes con el material del mes. Deja que el bebé lo toque después de cada orden: es el premio.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d4/consigna"
+  },
+  {
    "id": "es_tutor_da38e2a1_71",
    "lang": "es",
    "style": "tutor",
@@ -8772,12 +9748,28 @@
    "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/3/cmd/cmd.xuno.0_2.01/accionFisica"
   },
   {
+   "id": "es_tutor_de062e56_117",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Une la primera y la segunda orden en una serie, sin parar entre ellas. Primero muy despacio, después al ritmo normal.",
+   "speech": "Une la primera y la segunda orden en una serie, sin parar entre ellas. Primero muy despacio, después al ritmo normal.",
+   "source": "progresion.segundo_ciclo.4/s3/d1/consigna"
+  },
+  {
    "id": "es_tutor_de297476_62",
    "lang": "es",
    "style": "tutor",
    "text": "Si no quiere decirla, se le dice al peluche. Nunca se insiste.",
    "speech": "Si no quiere decirla, se le dice al peluche. Nunca se insiste.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
+   "id": "es_tutor_de745b03_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción completa con las tres órdenes, al ritmo del mes. Hoy no paras entre estrofas: es la sesión entera seguida.",
+   "speech": "Canción completa con las tres órdenes, al ritmo del mes. Hoy no paras entre estrofas: es la sesión entera seguida.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d3/consigna"
   },
   {
    "id": "es_tutor_df36bd29_41",
@@ -8852,12 +9844,52 @@
    "source": "academy.segundo_ciclo.setembro.01/ejemploCotidiano"
   },
   {
+   "id": "es_tutor_e0ebde12_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las tres órdenes fuera de la alfombra: en el pasillo, en el patio o en la fila. La escena vale en cualquier sitio.",
+   "speech": "Las tres órdenes fuera de la alfombra: en el pasillo, en el patio o en la fila. La escena vale en cualquier sitio.",
+   "source": "progresion.segundo_ciclo.5/s4/d2/consigna"
+  },
+  {
    "id": "es_tutor_e0f936d6_93",
    "lang": "es",
    "style": "tutor",
    "text": "De camino al parque, buscar un pájaro de verdad y quedarse quietos mirándolo hasta que vuele.",
    "speech": "De camino al parque, buscar un pájaro de verdad y quedarse quietos mirándolo hasta que vuele.",
    "source": "juega.animais.01/puenteCasa/act/1"
+  },
+  {
+   "id": "es_tutor_e10a6042_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hoy vas detrás del bebé: cuando haga un gesto parecido a una orden, di la palabra y celébralo. Nada de corregir.",
+   "speech": "Hoy vas detrás del bebé: cuando haga un gesto parecido a una orden, di la palabra y celébralo. Nada de corregir.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d5/consigna"
+  },
+  {
+   "id": "es_tutor_e1381559_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dos órdenes, dos personajes",
+   "speech": "Dos órdenes, dos personajes",
+   "source": "progresion.segundo_ciclo.5/s1/d4/foco"
+  },
+  {
+   "id": "es_tutor_e1744d7c_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Segunda y tercera, en parejas",
+   "speech": "Segunda y tercera, en parejas",
+   "source": "progresion.segundo_ciclo.6/s2/d2/foco"
+  },
+  {
+   "id": "es_tutor_e1b82e8c_115",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Encadena las dos órdenes con cada bebé, despacio. Deja un silencio entre una y otra para que la mirada vuelva a ti.",
+   "speech": "Encadena las dos órdenes con cada bebé, despacio. Deja un silencio entre una y otra para que la mirada vuelva a ti.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d4/consigna"
   },
   {
    "id": "es_tutor_e2b6c34e_61",
@@ -8882,6 +9914,14 @@
    "text": "En el sofá, sin objetos: solo las manos y la voz.",
    "speech": "En el sofá, sin objetos: solo las manos y la voz.",
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_e3c7481e_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Solo la voz y un toque",
+   "speech": "Solo la voz y un toque",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d1/foco"
   },
   {
    "id": "es_tutor_e4159111_71",
@@ -8948,6 +9988,22 @@
    "source": "asamblea.segundo_ciclo.abril.5_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "es_tutor_e6881138_111",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz las tres órdenes y deja que una criatura elija con qué personaje las repetimos. El gesto basta para elegir.",
+   "speech": "Haz las tres órdenes y deja que una criatura elija con qué personaje las repetimos. El gesto basta para elegir.",
+   "source": "progresion.segundo_ciclo.5/s2/d5/consigna"
+  },
+  {
+   "id": "es_tutor_e699f697_100",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hoy solo la segunda orden. Misma calma: palabra, gesto guiado y sonrisa. Si un bebé se aparta, para.",
+   "speech": "Hoy solo la segunda orden. Misma calma: palabra, gesto guiado y sonrisa. Si un bebé se aparta, para.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d3/consigna"
+  },
+  {
    "id": "es_tutor_e6d853be_95",
    "lang": "es",
    "style": "tutor",
@@ -8964,12 +10020,28 @@
    "source": "juega.mar.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_e7c4ac78_94",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción entera con las tres órdenes dentro. Una criatura marca el pulso con la mano a tu lado.",
+   "speech": "Canción entera con las tres órdenes dentro. Una criatura marca el pulso con la mano a tu lado.",
+   "source": "progresion.segundo_ciclo.6/s2/d3/consigna"
+  },
+  {
    "id": "es_tutor_e83791f9_48",
    "lang": "es",
    "style": "tutor",
    "text": "Modula el volumen: fuerte y rápido, luego suave.",
    "speech": "Modula el volumen: fuerte y rápido, luego suave.",
    "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_e83a4b0a_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La tercera orden, dramatizada",
+   "speech": "La tercera orden, dramatizada",
+   "source": "progresion.segundo_ciclo.5/s2/d1/foco"
   },
   {
    "id": "es_tutor_e8827823_65",
@@ -9084,6 +10156,14 @@
    "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/3/cmd/cmd.decembro.0_2.02/accionFisica"
   },
   {
+   "id": "es_tutor_eb19c944_98",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Presenta la tercera orden con personaje. Si el mes solo tiene dos, repasa la segunda con otra voz.",
+   "speech": "Presenta la tercera orden con personaje. Si el mes solo tiene dos, repasa la segunda con otra voz.",
+   "source": "progresion.segundo_ciclo.5/s2/d1/consigna"
+  },
+  {
    "id": "es_tutor_eb5abdee_65",
    "lang": "es",
    "style": "tutor",
@@ -9124,6 +10204,14 @@
    "source": "juega.mar.01/exploracion/paso/0"
   },
   {
+   "id": "es_tutor_ecbe6b6d_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las dos órdenes, una tras otra",
+   "speech": "Las dos órdenes, una tras otra",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d4/foco"
+  },
+  {
    "id": "es_tutor_ed244ba8_51",
    "lang": "es",
    "style": "tutor",
@@ -9162,6 +10250,14 @@
    "text": "Correcto: la palabra que llega mientras él ya está atendiendo es la que aprende. Redirigir la atención gasta el momento en conseguir que mire, y la palabra llega tarde.",
    "speech": "Correcto: la palabra que llega mientras él ya está atendiendo es la que aprende. Redirigir la atención gasta el momento en conseguir que mire, y la palabra llega tarde.",
    "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "es_tutor_eea5a75a_101",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Segunda y tercera orden: una ronda muy despacio, otra rápida. El contraste hace reír y hace escuchar.",
+   "speech": "Segunda y tercera orden: una ronda muy despacio, otra rápida. El contraste hace reír y hace escuchar.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d2/consigna"
   },
   {
    "id": "es_tutor_eeabcf59_167",
@@ -9308,6 +10404,14 @@
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.03/modeladoDocente"
   },
   {
+   "id": "es_tutor_f4328f3a_106",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Segunda y tercera orden: quien dirige elige si va despacio o rápido, y lo dice en inglés: «slow» o «fast».",
+   "speech": "Segunda y tercera orden: quien dirige elige si va despacio o rápido, y lo dice en inglés: «slow» o «fast».",
+   "source": "progresion.segundo_ciclo.6/s3/d2/consigna"
+  },
+  {
    "id": "es_tutor_f4358e41_52",
    "lang": "es",
    "style": "tutor",
@@ -9340,6 +10444,14 @@
    "source": "juega.auga.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "es_tutor_f4935d8c_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Retiras el gesto a medias",
+   "speech": "Retiras el gesto a medias",
+   "source": "progresion.segundo_ciclo.5/s3/d4/foco"
+  },
+  {
    "id": "es_tutor_f615602c_61",
    "lang": "es",
    "style": "tutor",
@@ -9370,6 +10482,22 @@
    "text": "¿Por qué la naranja rueda y la caja no?",
    "speech": "¿Por qué la naranja rueda y la caja no?",
    "source": "juega.cores.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_f6dd1cb2_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dos órdenes seguidas, sin pausa",
+   "speech": "Dos órdenes seguidas, sin pausa",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d1/foco"
+  },
+  {
+   "id": "es_tutor_f6f17229_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repite la orden de ayer con el material del mes en la mano. El objeto atrae la mirada; la palabra va con el gesto.",
+   "speech": "Repite la orden de ayer con el material del mes en la mano. El objeto atrae la mirada; la palabra va con el gesto.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d2/consigna"
   },
   {
    "id": "es_tutor_f7920af2_62",
@@ -9436,12 +10564,28 @@
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "es_tutor_f8ed39a2_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cadena de órdenes",
+   "speech": "Cadena de órdenes",
+   "source": "progresion.segundo_ciclo.6/s3/d4/foco"
+  },
+  {
    "id": "es_tutor_f91ed985_33",
    "lang": "es",
    "style": "tutor",
    "text": "En el cuarto, con la luz ya baja.",
    "speech": "En el cuarto, con la luz ya baja.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_f941e600_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di la orden y no hagas el gesto. Cuenta hasta tres en silencio. Si nadie la hace, modela y sigue sin comentario.",
+   "speech": "Di la orden y no hagas el gesto. Cuenta hasta tres en silencio. Si nadie la hace, modela y sigue sin comentario.",
+   "source": "progresion.segundo_ciclo.4/s4/d1/consigna"
   },
   {
    "id": "es_tutor_f941f6c8_61",
@@ -9492,12 +10636,36 @@
    "source": "juega.auga.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_fa3915de_103",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción entera con las tres órdenes dentro. Tú aún modelas todo; el freeze va al final de cada estrofa.",
+   "speech": "Canción entera con las tres órdenes dentro. Tú aún modelas todo; el freeze va al final de cada estrofa.",
+   "source": "progresion.segundo_ciclo.5/s2/d3/consigna"
+  },
+  {
    "id": "es_tutor_faa5d1e0_48",
    "lang": "es",
    "style": "tutor",
    "text": "Cuadrupedia pesada con manos y pies en el suelo.",
    "speech": "Cuadrupedia pesada con manos y pies en el suelo.",
    "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.02/accionFisica"
+  },
+  {
+   "id": "es_tutor_faab5aa4_124",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canta la canción del mes y haz las dos órdenes donde caen en el ritmo. El pulso se marca con la mano, a la vista; no se oye.",
+   "speech": "Canta la canción del mes y haz las dos órdenes donde caen en el ritmo. El pulso se marca con la mano, a la vista; no se oye.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d5/consigna"
+  },
+  {
+   "id": "es_tutor_fae646c6_111",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Canción del mes con las tres órdenes. Fíjate en quién anticipa el gesto antes de la palabra: esas ya la tienen.",
+   "speech": "Canción del mes con las tres órdenes. Fíjate en quién anticipa el gesto antes de la palabra: esas ya la tienen.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d5/consigna"
   },
   {
    "id": "es_tutor_faffe4f7_48",
@@ -9634,6 +10802,14 @@
    "text": "Ajusta las muñequeras con cascabeles en los tobillos de los bebés.",
    "speech": "Ajusta las muñequeras con cascabeles en los tobillos de los bebés.",
    "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/1/consigna"
+  },
+  {
+   "id": "es_tutor_fff070d3_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Repaso con la canción",
+   "speech": "Repaso con la canción",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d5/foco"
   },
   {
    "id": "gl_slow_00222185_5",
@@ -10108,6 +11284,14 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "gl_tutor_04852eec_92",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes co material do mes. Deixa que o bebé o toque despois de cada orde: é o premio.",
+   "speech": "As tres ordes co material do mes. Deixa que o bebé o toque despois de cada orde: é o premio.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d4/consigna"
+  },
+  {
    "id": "gl_tutor_04eef6c9_156",
    "lang": "gl",
    "style": "tutor",
@@ -10172,12 +11356,28 @@
    "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.01/accionFisica"
   },
   {
+   "id": "gl_tutor_064b19fa_106",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repite a orde de onte co material do mes. Quen queira faina contigo; quen non, mira. Modelas todo o tempo.",
+   "speech": "Repite a orde de onte co material do mes. Quen queira faina contigo; quen non, mira. Modelas todo o tempo.",
+   "source": "progresion.segundo_ciclo.4/s1/d2/consigna"
+  },
+  {
    "id": "gl_tutor_068122bd_57",
    "lang": "gl",
    "style": "tutor",
    "text": "Fretar as mans á vista de todos, sen presa e con sorriso.",
    "speech": "Fretar as mans á vista de todos, sen presa e con sorriso.",
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.03/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_068a2b98_101",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai a sesión como a farán as familias: sen material especial, en dous minutos. É o que levan na nota.",
+   "speech": "Fai a sesión como a farán as familias: sen material especial, en dous minutos. É o que levan na nota.",
+   "source": "progresion.segundo_ciclo.4/s4/d4/consigna"
   },
   {
    "id": "gl_tutor_0690a29f_160",
@@ -10274,6 +11474,22 @@
    "text": "As dúas primeiras liñas van con enerxía e as dúas últimas moi baixiño. O cambio de volume é o que se está a ensinar.",
    "speech": "As dúas primeiras liñas van con enerxía e as dúas últimas moi baixiño. O cambio de volume é o que se está a ensinar.",
    "source": "juega.inverno.01/cancionPulso/consigna"
+  },
+  {
+   "id": "gl_tutor_09a0b6df_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A primeira orde, no colo",
+   "speech": "A primeira orde, no colo",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d1/foco"
+  },
+  {
+   "id": "gl_tutor_09ad461a_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción completa coas tres ordes, ao ritmo do mes e sen parar entre estrofas. Ti só marcas o pulso coa man.",
+   "speech": "Canción completa coas tres ordes, ao ritmo do mes e sen parar entre estrofas. Ti só marcas o pulso coa man.",
+   "source": "progresion.segundo_ciclo.4/s4/d3/consigna"
   },
   {
    "id": "gl_tutor_0a6c57c8_199",
@@ -10380,6 +11596,14 @@
    "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/2/consigna"
   },
   {
+   "id": "gl_tutor_0d032804_123",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción enteira coas tres ordes dentro. Mantén o contacto corporal: o bebé aprende polo teu movemento, non polo teu pedido.",
+   "speech": "Canción enteira coas tres ordes dentro. Mantén o contacto corporal: o bebé aprende polo teu movemento, non polo teu pedido.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d3/consigna"
+  },
+  {
    "id": "gl_tutor_0d04551c_157",
    "lang": "gl",
    "style": "tutor",
@@ -10466,6 +11690,14 @@
    "text": "Eleva as mans amosando a luz e retoma o pulso do pandeiro.",
    "speech": "Eleva as mans amosando a luz e retoma o pulso do pandeiro.",
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.03/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_108361fd_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A segunda orde, en círculo",
+   "speech": "A segunda orde, en círculo",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d3/foco"
   },
   {
    "id": "gl_tutor_109a1c66_34",
@@ -10564,6 +11796,14 @@
    "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/3/cmd/cmd.marzo.2_3.01/accionFisica"
   },
   {
+   "id": "gl_tutor_1329c6b8_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dúas ordes nun só xesto",
+   "speech": "Dúas ordes nun só xesto",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d1/foco"
+  },
+  {
    "id": "gl_tutor_13fb1ba4_43",
    "lang": "gl",
    "style": "tutor",
@@ -10594,6 +11834,14 @@
    "text": "Lectura da tarxeta icónica e reprodución corporal da postura.",
    "speech": "Lectura da tarxeta icónica e reprodución corporal da postura.",
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/cmd/cmd.febreiro.6i.03/accionFisica"
+  },
+  {
+   "id": "gl_tutor_1514fc22_111",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Une a primeira e a segunda orde nunha serie, sen parar entre elas. Primeiro moi amodo, despois ao ritmo normal.",
+   "speech": "Une a primeira e a segunda orde nunha serie, sen parar entre elas. Primeiro moi amodo, despois ao ritmo normal.",
+   "source": "progresion.segundo_ciclo.4/s3/d1/consigna"
   },
   {
    "id": "gl_tutor_154e5c1c_90",
@@ -10756,12 +12004,28 @@
    "source": "academy.como_se_aprende_a_hablar.01/ejemploCotidiano"
   },
   {
+   "id": "gl_tutor_19bfec1f_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dúas ordes nunha soa serie",
+   "speech": "Dúas ordes nunha soa serie",
+   "source": "progresion.segundo_ciclo.4/s3/d1/foco"
+  },
+  {
    "id": "gl_tutor_19e396d3_52",
    "lang": "gl",
    "style": "tutor",
    "text": "Achega a cesta e deixa que miren e toquen as follas.",
    "speech": "Achega a cesta e deixa que miren e toquen as follas.",
    "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/1/consigna"
+  },
+  {
+   "id": "gl_tutor_1a123b9f_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cadea de ordes",
+   "speech": "Cadea de ordes",
+   "source": "progresion.segundo_ciclo.6/s3/d4/foco"
   },
   {
    "id": "gl_tutor_1a3d4a39_50",
@@ -10796,6 +12060,14 @@
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/microRutina/escenaCotidiana"
   },
   {
+   "id": "gl_tutor_1b131f14_98",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di a orde e empeza o xesto, pero non o remates. A clase complétao. Se non sae, remátao ti e segue.",
+   "speech": "Di a orde e empeza o xesto, pero non o remates. A clase complétao. Se non sae, remátao ti e segue.",
+   "source": "progresion.segundo_ciclo.5/s3/d4/consigna"
+  },
+  {
    "id": "gl_tutor_1b1b50f7_51",
    "lang": "gl",
    "style": "tutor",
@@ -10828,12 +12100,28 @@
    "source": "aula.exploracion.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
+   "id": "gl_tutor_1c6d0bf3_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repaso coa canción",
+   "speech": "Repaso coa canción",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d5/foco"
+  },
+  {
    "id": "gl_tutor_1c9f79e9_49",
    "lang": "gl",
    "style": "tutor",
    "text": "Camiña entre eles marcando a calma coa voz baixa.",
    "speech": "Camiña entre eles marcando a calma coa voz baixa.",
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/cmd/cmd.abril.5i.01/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_1cc3964d_103",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repite a orde de onte co material do mes como atrezo. Quen queira entra na escena; quen non, é público.",
+   "speech": "Repite a orde de onte co material do mes como atrezo. Quen queira entra na escena; quen non, é público.",
+   "source": "progresion.segundo_ciclo.5/s1/d2/consigna"
   },
   {
    "id": "gl_tutor_1cfa3f26_120",
@@ -10844,12 +12132,28 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "gl_tutor_1dac6db3_86",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción do mes coas dúas ordes onde caen no ritmo. O pulso vese na túa man; non se oe.",
+   "speech": "Canción do mes coas dúas ordes onde caen no ritmo. O pulso vese na túa man; non se oe.",
+   "source": "progresion.segundo_ciclo.4/s1/d5/consigna"
+  },
+  {
    "id": "gl_tutor_1e06fd80_62",
    "lang": "gl",
    "style": "tutor",
    "text": "Extensión axial progresiva ata quedar de pé cos brazos arriba.",
    "speech": "Extensión axial progresiva ata quedar de pé cos brazos arriba.",
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/fase/3/cmd/cmd.marzo.4i.02/accionFisica"
+  },
+  {
+   "id": "gl_tutor_1e142c78_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A segunda orde, con modelado",
+   "speech": "A segunda orde, con modelado",
+   "source": "progresion.segundo_ciclo.4/s1/d3/foco"
   },
   {
    "id": "gl_tutor_1e394583_53",
@@ -10876,6 +12180,14 @@
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/fase/3/cmd/cmd.novembro.5i.02/modeladoDocente"
   },
   {
+   "id": "gl_tutor_1ef53474_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción enteira, dirixida",
+   "speech": "Canción enteira, dirixida",
+   "source": "progresion.segundo_ciclo.6/s4/d3/foco"
+  },
+  {
    "id": "gl_tutor_1f292968_154",
    "lang": "gl",
    "style": "tutor",
@@ -10898,6 +12210,14 @@
    "text": "Bater os brazos enteiros desde os ombreiros.",
    "speech": "Bater os brazos enteiros desde os ombreiros.",
    "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.02/accionFisica"
+  },
+  {
+   "id": "gl_tutor_2096bf1f_94",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segunda e terceira orde: unha rolda moi amodo, outra lixeira. O contraste fai escoitar mellor.",
+   "speech": "Segunda e terceira orde: unha rolda moi amodo, outra lixeira. O contraste fai escoitar mellor.",
+   "source": "progresion.segundo_ciclo.4/s3/d2/consigna"
   },
   {
    "id": "gl_tutor_20dd83f4_244",
@@ -10986,6 +12306,22 @@
    "text": "É Entroido e a gata Lúa quere ser outra cousa. Ponse unhas patas verdes e salta polo chan: ribit, ribit!",
    "speech": "É Entroido e a gata Lúa quere ser outra cousa. Ponse unhas patas verdes e salta polo chan: ribit, ribit!",
    "source": "juega.animais.01/cuento/0/texto"
+  },
+  {
+   "id": "gl_tutor_22676efc_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Noutro sitio",
+   "speech": "Noutro sitio",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d2/foco"
+  },
+  {
+   "id": "gl_tutor_22cd472a_90",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción enteira coas tres ordes dentro, modelando todo o tempo. Aínda non retiras o xesto.",
+   "speech": "Canción enteira coas tres ordes dentro, modelando todo o tempo. Aínda non retiras o xesto.",
+   "source": "progresion.segundo_ciclo.4/s2/d3/consigna"
   },
   {
    "id": "gl_tutor_23475ccf_28",
@@ -11084,6 +12420,14 @@
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_260cd529_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes fóra da alfombra: no corredor, no patio ou de camiño ao comedor. A palabra vale en calquera sitio.",
+   "speech": "As tres ordes fóra da alfombra: no corredor, no patio ou de camiño ao comedor. A palabra vale en calquera sitio.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d2/consigna"
+  },
+  {
    "id": "gl_tutor_2698273a_56",
    "lang": "gl",
    "style": "tutor",
@@ -11106,6 +12450,22 @@
    "text": "Axitar moi rápido contando ata tres, e despois moverse a cámara lenta.",
    "speech": "Axitar moi rápido contando ata tres, e despois moverse a cámara lenta.",
    "source": "juega.inverno.01/matematicas/accion/0"
+  },
+  {
+   "id": "gl_tutor_28e5cfab_116",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensina a lámina do mes e conta en tres frases o que pasa. Cada orde entra na historia como un xesto do protagonista.",
+   "speech": "Ensina a lámina do mes e conta en tres frases o que pasa. Cada orde entra na historia como un xesto do protagonista.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d3/consigna"
+  },
+  {
+   "id": "gl_tutor_29122687_98",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción do mes coas tres ordes. Fíxate en quen anticipa o xesto antes da palabra: esas xa a teñen.",
+   "speech": "Canción do mes coas tres ordes. Fíxate en quen anticipa o xesto antes da palabra: esas xa a teñen.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d5/consigna"
   },
   {
    "id": "gl_tutor_291b3e0c_82",
@@ -11276,6 +12636,14 @@
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "gl_tutor_2dea9a0a_110",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Encadea as dúas ordes con cada bebé, amodo. Deixa un silencio entre unha e outra para que a mirada volva a ti.",
+   "speech": "Encadea as dúas ordes con cada bebé, amodo. Deixa un silencio entre unha e outra para que a mirada volva a ti.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d4/consigna"
+  },
+  {
    "id": "gl_tutor_2e23d356_172",
    "lang": "gl",
    "style": "tutor",
@@ -11396,6 +12764,14 @@
    "source": "juega.corpo.01/cuento/0/pregunta"
   },
   {
+   "id": "gl_tutor_31940df4_98",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Encadea a segunda e a terceira orde. Cambia a orde de aparición unha vez: escoitan, non memorizan.",
+   "speech": "Encadea a segunda e a terceira orde. Cambia a orde de aparición unha vez: escoitan, non memorizan.",
+   "source": "progresion.segundo_ciclo.4/s2/d2/consigna"
+  },
+  {
    "id": "gl_tutor_31986b5d_49",
    "lang": "gl",
    "style": "tutor",
@@ -11476,6 +12852,14 @@
    "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/4/consigna"
   },
   {
+   "id": "gl_tutor_32fbe15b_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a terceira orde con personaxe. Se o mes só ten dúas, repasa a segunda con outra voz.",
+   "speech": "Presenta a terceira orde con personaxe. Se o mes só ten dúas, repasa a segunda con outra voz.",
+   "source": "progresion.segundo_ciclo.5/s2/d1/consigna"
+  },
+  {
    "id": "gl_tutor_330b34d0_153",
    "lang": "gl",
    "style": "tutor",
@@ -11508,6 +12892,14 @@
    "source": "formacion.docente/paso/0/clave"
   },
   {
+   "id": "gl_tutor_33ebe44d_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A clase elixe",
+   "speech": "A clase elixe",
+   "source": "progresion.segundo_ciclo.4/s2/d5/foco"
+  },
+  {
    "id": "gl_tutor_3429748c_57",
    "lang": "gl",
    "style": "tutor",
@@ -11538,6 +12930,14 @@
    "text": "Se a roda se distrae a media páxina, o mellor é acelerar para chegar ao final do conto.",
    "speech": "Se a roda se distrae a media páxina, o mellor é acelerar para chegar ao final do conto.",
    "source": "aula.conto.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_35e2238e_120",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai a sesión como a farán as familias: sen atrezo, en dous minutos. Un personaxe e as tres ordes. É o que levan na nota.",
+   "speech": "Fai a sesión como a farán as familias: sen atrezo, en dous minutos. Un personaxe e as tres ordes. É o que levan na nota.",
+   "source": "progresion.segundo_ciclo.5/s4/d4/consigna"
   },
   {
    "id": "gl_tutor_3670bc24_48",
@@ -11740,6 +13140,14 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_4093b385_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción completa coas tres ordes e freeze entre estrofas, ao ritmo do mes. Ti só marcas o pulso coa man.",
+   "speech": "Canción completa coas tres ordes e freeze entre estrofas, ao ritmo do mes. Ti só marcas o pulso coa man.",
+   "source": "progresion.segundo_ciclo.5/s4/d3/consigna"
+  },
+  {
    "id": "gl_tutor_4108dead_55",
    "lang": "gl",
    "style": "tutor",
@@ -11780,6 +13188,14 @@
    "source": "juega.animais.01/exploracion/paso/3"
   },
   {
+   "id": "gl_tutor_4201f334_116",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensina a lámina do mes e conta en tres frases o que pasa. Cada orde é un xesto do protagonista; a clase fai o xesto.",
+   "speech": "Ensina a lámina do mes e conta en tres frases o que pasa. Cada orde é un xesto do protagonista; a clase fai o xesto.",
+   "source": "progresion.segundo_ciclo.4/s3/d3/consigna"
+  },
+  {
    "id": "gl_tutor_4212e0e0_53",
    "lang": "gl",
    "style": "tutor",
@@ -11818,6 +13234,14 @@
    "text": "Tocar a propia barriga antes de tocar a súa, e agardar a que estenda a man. Pedir permiso co xesto tamén é linguaxe.",
    "speech": "Tocar a propia barriga antes de tocar a súa, e agardar a que estenda a man. Pedir permiso co xesto tamén é linguaxe.",
    "source": "juega.corpo.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "gl_tutor_43ca47c0_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A mesma orde, en parellas",
+   "speech": "A mesma orde, en parellas",
+   "source": "progresion.segundo_ciclo.6/s1/d2/foco"
   },
   {
    "id": "gl_tutor_440b894c_46",
@@ -11874,6 +13298,14 @@
    "text": "Pasar unha lanterna pequena en quendas, dicindo a fórmula de entrega.",
    "speech": "Pasar unha lanterna pequena en quendas, dicindo a fórmula de entrega.",
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "gl_tutor_44cee335_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Só a voz e un toque",
+   "speech": "Só a voz e un toque",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d1/foco"
   },
   {
    "id": "gl_tutor_4512cfe0_25",
@@ -12004,6 +13436,14 @@
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/fase/3/cmd/cmd.marzo.4i.03/accionFisica"
   },
   {
+   "id": "gl_tutor_4ac115a8_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes, coa canción",
+   "speech": "As tres ordes, coa canción",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d3/foco"
+  },
+  {
    "id": "gl_tutor_4b9ac26b_55",
    "lang": "gl",
    "style": "tutor",
@@ -12044,6 +13484,14 @@
    "source": "juega.inverno.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_4cafd426_97",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a terceira orde igual que as outras. Se o mes só ten dúas, repasa a segunda en parellas.",
+   "speech": "Presenta a terceira orde igual que as outras. Se o mes só ten dúas, repasa a segunda en parellas.",
+   "source": "progresion.segundo_ciclo.6/s2/d1/consigna"
+  },
+  {
    "id": "gl_tutor_4d18db79_179",
    "lang": "gl",
    "style": "tutor",
@@ -12074,6 +13522,14 @@
    "text": "Correr no sitio facendo soar a campaíña.",
    "speech": "Correr no sitio facendo soar a campaíña.",
    "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_4f0d1083_109",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di a orde e non fagas o xesto. Conta ata tres en silencio. Se ninguén a fai, faina ti e segue sen comentario.",
+   "speech": "Di a orde e non fagas o xesto. Conta ata tres en silencio. Se ninguén a fai, faina ti e segue sen comentario.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d1/consigna"
   },
   {
    "id": "gl_tutor_4f59745b_104",
@@ -12156,12 +13612,28 @@
    "source": "juega.primavera.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "gl_tutor_516f0882_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a primeira orde: dila e faina á vez, tres veces. Logo pídelle a unha crianza que a faga contigo.",
+   "speech": "Presenta a primeira orde: dila e faina á vez, tres veces. Logo pídelle a unha crianza que a faga contigo.",
+   "source": "progresion.segundo_ciclo.6/s1/d1/consigna"
+  },
+  {
    "id": "gl_tutor_517fadbd_143",
    "lang": "gl",
    "style": "tutor",
    "text": "Así é: antes dos 3 anos, a repetición estable é o que permite anticipar. Cando xa anticipa a fórmula enteira, entón é bo momento para ampliala.",
    "speech": "Así é: antes dos 3 anos, a repetición estable é o que permite anticipar. Cando xa anticipa a fórmula enteira, entón é bo momento para ampliala.",
    "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_51bb87d5_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeira e segunda orde en parellas. Quen di a orde elixe cal; quen a fai, faina. Cambian de papel.",
+   "speech": "Primeira e segunda orde en parellas. Quen di a orde elixe cal; quen a fai, faina. Cambian de papel.",
+   "source": "progresion.segundo_ciclo.6/s1/d4/consigna"
   },
   {
    "id": "gl_tutor_51bdc3c9_46",
@@ -12212,6 +13684,22 @@
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/cmd/cmd.outubro.4i.02/accionFisica"
   },
   {
+   "id": "gl_tutor_532c1bae_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A primeira orde, con modelado",
+   "speech": "A primeira orde, con modelado",
+   "source": "progresion.segundo_ciclo.4/s1/d1/foco"
+  },
+  {
+   "id": "gl_tutor_53389f1e_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeira e segunda orde seguidas, con pausa entre elas. Ti modelas as dúas; a clase fai o que pode.",
+   "speech": "Primeira e segunda orde seguidas, con pausa entre elas. Ti modelas as dúas; a clase fai o que pode.",
+   "source": "progresion.segundo_ciclo.4/s1/d4/consigna"
+  },
+  {
    "id": "gl_tutor_53591df9_452",
    "lang": "gl",
    "style": "tutor",
@@ -12242,6 +13730,14 @@
    "text": "Intercambio pragmático completo entre dous escolares.",
    "speech": "Intercambio pragmático completo entre dous escolares.",
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/fase/3/cmd/cmd.xuno.6i.03/accionFisica"
+  },
+  {
+   "id": "gl_tutor_53f8d002_113",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Última vez do mes: as tres ordes, a canción e unha aperta longa a cada bebé. Remata máis amodo do que empezaches.",
+   "speech": "Última vez do mes: as tres ordes, a canción e unha aperta longa a cada bebé. Remata máis amodo do que empezaches.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d5/consigna"
   },
   {
    "id": "gl_tutor_540c66f7_48",
@@ -12372,6 +13868,14 @@
    "source": "juega.choiva.01/preguntas/?/enunciado"
   },
   {
+   "id": "gl_tutor_5675888d_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a primeira orde cun personaxe: dila coa voz dese personaxe e faina exaxerada. A clase mira e ri.",
+   "speech": "Presenta a primeira orde cun personaxe: dila coa voz dese personaxe e faina exaxerada. A clase mira e ri.",
+   "source": "progresion.segundo_ciclo.5/s1/d1/consigna"
+  },
+  {
    "id": "gl_tutor_567dee5c_114",
    "lang": "gl",
    "style": "tutor",
@@ -12444,6 +13948,14 @@
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.03/modeladoDocente"
   },
   {
+   "id": "gl_tutor_57f1d41b_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As dúas ordes, xuntas",
+   "speech": "As dúas ordes, xuntas",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d4/foco"
+  },
+  {
    "id": "gl_tutor_57ffc222_112",
    "lang": "gl",
    "style": "tutor",
@@ -12474,6 +13986,14 @@
    "text": "Recibidor da casa xunto á porta, cunha percha á altura da vista da crianza.",
    "speech": "Recibidor da casa xunto á porta, cunha percha á altura da vista da crianza.",
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "gl_tutor_588a626e_103",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a primeira orde: dila e faina á vez, tres veces. A clase mira. Aínda non lle pidas que a faga.",
+   "speech": "Presenta a primeira orde: dila e faina á vez, tres veces. A clase mira. Aínda non lle pidas que a faga.",
+   "source": "progresion.segundo_ciclo.4/s1/d1/consigna"
   },
   {
    "id": "gl_tutor_58c6ae2f_77",
@@ -12524,6 +14044,22 @@
    "source": "formacion.docente/paso/5/corpo"
   },
   {
+   "id": "gl_tutor_5977207b_110",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Une a primeira e a segunda orde nun movemento continuo, sen pausa. Primeiro amodo, logo un pouco máis lixeiro.",
+   "speech": "Une a primeira e a segunda orde nun movemento continuo, sen pausa. Primeiro amodo, logo un pouco máis lixeiro.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d1/consigna"
+  },
+  {
+   "id": "gl_tutor_59c5096e_89",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a terceira orde. Se o mes só ten dúas, hoxe repasa a segunda con outro material.",
+   "speech": "Presenta a terceira orde. Se o mes só ten dúas, hoxe repasa a segunda con outro material.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d1/consigna"
+  },
+  {
    "id": "gl_tutor_59fcb16b_58",
    "lang": "gl",
    "style": "tutor",
@@ -12554,6 +14090,14 @@
    "text": "Yes! Put on the silly hat, spin twice, make a funny face and freeze!",
    "speech": "Yes! Put on the silly hat, spin twice, make a funny face and freeze!",
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_5b7bbf16_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Encadea a segunda e a terceira orde. Cambia a orde de aparición unha vez: o grupo escoita, non memoriza.",
+   "speech": "Encadea a segunda e a terceira orde. Cambia a orde de aparición unha vez: o grupo escoita, non memoriza.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d2/consigna"
   },
   {
    "id": "gl_tutor_5c03a323_64",
@@ -12628,6 +14172,14 @@
    "source": "juega.cores.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_5e5c2682_106",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segunda e terceira orde en parellas. Quen di a orde pode cambiar a secuencia: quen a fai ten que escoitar.",
+   "speech": "Segunda e terceira orde en parellas. Quen di a orde pode cambiar a secuencia: quen a fai ten que escoitar.",
+   "source": "progresion.segundo_ciclo.6/s2/d2/consigna"
+  },
+  {
    "id": "gl_tutor_5e5e400f_55",
    "lang": "gl",
    "style": "tutor",
@@ -12644,12 +14196,28 @@
    "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/3/cmd/cmd.decembro.0_2.01/accionFisica"
   },
   {
+   "id": "gl_tutor_5edf0086_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Só a voz, sen xesto",
+   "speech": "Só a voz, sen xesto",
+   "source": "progresion.segundo_ciclo.4/s4/d1/foco"
+  },
+  {
    "id": "gl_tutor_5f21d46a_50",
    "lang": "gl",
    "style": "tutor",
    "text": "Agacharse rápido e fregar as follas contra o chan.",
    "speech": "Agacharse rápido e fregar as follas contra o chan.",
    "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/3/cmd/cmd.novembro.2_3.02/accionFisica"
+  },
+  {
+   "id": "gl_tutor_5f5c82af_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A terceira orde, no colo",
+   "speech": "A terceira orde, no colo",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d1/foco"
   },
   {
    "id": "gl_tutor_5fd8ad44_165",
@@ -12708,6 +14276,14 @@
    "source": "juega.follas.01/matematicas/accion/1"
   },
   {
+   "id": "gl_tutor_61e0a9ab_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dúas ordes nunha escena",
+   "speech": "Dúas ordes nunha escena",
+   "source": "progresion.segundo_ciclo.5/s3/d1/foco"
+  },
+  {
    "id": "gl_tutor_61e6ed30_161",
    "lang": "gl",
    "style": "tutor",
@@ -12722,6 +14298,14 @@
    "text": "Facer o circuíto enteiro a mestra primeiro, coas crianzas mirando.",
    "speech": "Facer o circuíto enteiro a mestra primeiro, coas crianzas mirando.",
    "source": "juega.animais.01/exploracion/paso/0"
+  },
+  {
+   "id": "gl_tutor_6227db2e_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai a sesión tal e como a farán as familias: sen material especial, en dous minutos. É o que levan na nota.",
+   "speech": "Fai a sesión tal e como a farán as familias: sen material especial, en dous minutos. É o que levan na nota.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d4/consigna"
   },
   {
    "id": "gl_tutor_6277d94c_80",
@@ -12762,6 +14346,30 @@
    "text": "Manipulación de pulseiras de cascabeis: axitación enérxica dos brazos en alto («loud») e detención brusca pegando as mans ao abdome ante o comando murmurado («quiet»).",
    "speech": "Manipulación de pulseiras de cascabeis: axitación enérxica dos brazos en alto («loud») e detención brusca pegando as mans ao abdome ante o comando murmurado («quiet»).",
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/fase/3/consigna"
+  },
+  {
+   "id": "gl_tutor_63f32abb_31",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segunda e terceira, en parellas",
+   "speech": "Segunda e terceira, en parellas",
+   "source": "progresion.segundo_ciclo.6/s2/d2/foco"
+  },
+  {
+   "id": "gl_tutor_640a4ca6_132",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensina a lámina do mes e que a clase conte o que pasa. Cada orde é unha acción do protagonista; en parellas, un narra e outro actúa.",
+   "speech": "Ensina a lámina do mes e que a clase conte o que pasa. Cada orde é unha acción do protagonista; en parellas, un narra e outro actúa.",
+   "source": "progresion.segundo_ciclo.6/s3/d3/consigna"
+  },
+  {
+   "id": "gl_tutor_64422ee5_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As dúas ordes, unha tras outra",
+   "speech": "As dúas ordes, unha tras outra",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d4/foco"
   },
   {
    "id": "gl_tutor_6447194d_54",
@@ -12836,6 +14444,22 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.01/accionFisica"
   },
   {
+   "id": "gl_tutor_6637a180_109",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Une a primeira e a segunda orde nunha escena seguida, sen parar. Primeiro moi amodo, despois ao ritmo normal.",
+   "speech": "Une a primeira e a segunda orde nunha escena seguida, sen parar. Primeiro moi amodo, despois ao ritmo normal.",
+   "source": "progresion.segundo_ciclo.5/s3/d1/consigna"
+  },
+  {
+   "id": "gl_tutor_6639f706_110",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Une a primeira e a segunda orde nunha serie seguida, en parellas. Primeiro moi amodo, despois ao ritmo normal.",
+   "speech": "Une a primeira e a segunda orde nunha serie seguida, en parellas. Primeiro moi amodo, despois ao ritmo normal.",
+   "source": "progresion.segundo_ciclo.6/s3/d1/consigna"
+  },
+  {
    "id": "gl_tutor_6667a978_53",
    "lang": "gl",
    "style": "tutor",
@@ -12860,12 +14484,28 @@
    "source": "asamblea.segundo_ciclo.outubro.5_infantil/fase/3/cmd/cmd.outubro.5i.03/modeladoDocente"
   },
   {
+   "id": "gl_tutor_66dae02f_116",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensina a lámina do mes e conta en tres frases o que pasa. Cada orde é un xesto do protagonista; o grupo fai o xesto.",
+   "speech": "Ensina a lámina do mes e conta en tres frases o que pasa. Cada orde é un xesto do protagonista; o grupo fai o xesto.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d3/consigna"
+  },
+  {
    "id": "gl_tutor_67455127_120",
    "lang": "gl",
    "style": "tutor",
    "text": "Hoxe buscamos cores coa gata Lúa: o vermello da mazá e o amarelo do sol. E descubrimos que o redondo rola e a caixa non.",
    "speech": "Hoxe buscamos cores coa gata Lúa: o vermello da mazá e o amarelo do sol. E descubrimos que o redondo rola e a caixa non.",
    "source": "juega.cores.01/puenteCasa/mensajeFamilias"
+  },
+  {
+   "id": "gl_tutor_676bfd49_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción enteira, ao ritmo",
+   "speech": "Canción enteira, ao ritmo",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d3/foco"
   },
   {
    "id": "gl_tutor_67ce3f8e_128",
@@ -12956,6 +14596,14 @@
    "source": "juega.corpo.01/exploracion/paso/0"
   },
   {
+   "id": "gl_tutor_698a7e24_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segunda e terceira orde: unha rolda moi amodo, outra lixeira, e freeze ao final de cada unha.",
+   "speech": "Segunda e terceira orde: unha rolda moi amodo, outra lixeira, e freeze ao final de cada unha.",
+   "source": "progresion.segundo_ciclo.5/s3/d2/consigna"
+  },
+  {
    "id": "gl_tutor_69b92995_170",
    "lang": "gl",
    "style": "tutor",
@@ -13018,6 +14666,14 @@
    "text": "Marca a quenda cun toque de clave e nada máis.",
    "speech": "Marca a quenda cun toque de clave e nada máis.",
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/cmd/cmd.febreiro.6i.02/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_6c9f6c8b_97",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Hoxe só a segunda orde. Mesma calma: palabra, xesto guiado e sorriso. Se un bebé se aparta, para.",
+   "speech": "Hoxe só a segunda orde. Mesma calma: palabra, xesto guiado e sorriso. Se un bebé se aparta, para.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d3/consigna"
   },
   {
    "id": "gl_tutor_6ca6a6dd_313",
@@ -13092,6 +14748,14 @@
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/fase/3/cmd/cmd.novembro.5i.02/accionFisica"
   },
   {
+   "id": "gl_tutor_6e9397d5_115",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Última vez do mes: as tres ordes, a canción e un freeze longo para despedirse. Remata máis amodo do que empezaches.",
+   "speech": "Última vez do mes: as tres ordes, a canción e un freeze longo para despedirse. Remata máis amodo do que empezaches.",
+   "source": "progresion.segundo_ciclo.5/s4/d5/consigna"
+  },
+  {
    "id": "gl_tutor_6f149778_58",
    "lang": "gl",
    "style": "tutor",
@@ -13114,6 +14778,14 @@
    "text": "Onde está o barco grande que navega no mar?",
    "speech": "Onde está o barco grande que navega no mar?",
    "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "gl_tutor_6fd2373f_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Só a voz",
+   "speech": "Só a voz",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d1/foco"
   },
   {
    "id": "gl_tutor_7014d41a_71",
@@ -13154,6 +14826,14 @@
    "text": "Ondula co grupo e baixa a voz ao mínimo.",
    "speech": "Ondula co grupo e baixa a voz ao mínimo.",
    "source": "asamblea.segundo_ciclo.xuno.5_infantil/fase/3/cmd/cmd.xuno.5i.01/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_709a3815_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción do mes coas tres ordes. Fíxate en quen anticipa a acción antes da palabra: esas xa a teñen.",
+   "speech": "Canción do mes coas tres ordes. Fíxate en quen anticipa a acción antes da palabra: esas xa a teñen.",
+   "source": "progresion.segundo_ciclo.5/s3/d5/consigna"
   },
   {
    "id": "gl_tutor_70aa69c5_108",
@@ -13202,6 +14882,14 @@
    "text": "Facelo soar detrás dun ombreiro e despois do outro: buscar o son coa cabeza xa é responder.",
    "speech": "Facelo soar detrás dun ombreiro e despois do outro: buscar o son coa cabeza xa é responder.",
    "source": "juega.inverno.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_72334cf5_114",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di a orde e toca a parte do corpo que se move, sen guiar o xesto enteiro. Se non sae, guía e segue sen comentario.",
+   "speech": "Di a orde e toca a parte do corpo que se move, sen guiar o xesto enteiro. Se non sae, guía e segue sen comentario.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d1/consigna"
   },
   {
    "id": "gl_tutor_723987d1_59",
@@ -13396,6 +15084,14 @@
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_777b811f_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai a sesión como a farán as familias: sen material especial, en dous minutos, na cociña. É o que levan na nota.",
+   "speech": "Fai a sesión como a farán as familias: sen material especial, en dous minutos, na cociña. É o que levan na nota.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d4/consigna"
+  },
+  {
    "id": "gl_tutor_7795c407_20",
    "lang": "gl",
    "style": "tutor",
@@ -13508,6 +15204,14 @@
    "source": "juega.inverno.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_7b197b89_76",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Hoxe só a segunda orde, co mesmo esquema: dila, faina, unha crianza contigo.",
+   "speech": "Hoxe só a segunda orde, co mesmo esquema: dila, faina, unha crianza contigo.",
+   "source": "progresion.segundo_ciclo.6/s1/d3/consigna"
+  },
+  {
    "id": "gl_tutor_7b715ae3_41",
    "lang": "gl",
    "style": "tutor",
@@ -13562,6 +15266,14 @@
    "text": "Entrega da vela á seguinte parella coa fórmula pragmática.",
    "speech": "Entrega da vela á seguinte parella coa fórmula pragmática.",
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/cmd/cmd.decembro.6i.03/accionFisica"
+  },
+  {
+   "id": "gl_tutor_7e86fcbb_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repite a orde de onte co material do mes. Cada crianza que quere fai o xesto co obxecto na man; as demais miran.",
+   "speech": "Repite a orde de onte co material do mes. Cada crianza que quere fai o xesto co obxecto na man; as demais miran.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d2/consigna"
   },
   {
    "id": "gl_tutor_7f87b269_46",
@@ -13644,6 +15356,14 @@
    "source": "juega.primavera.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_813953c4_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A mesma orde, co material",
+   "speech": "A mesma orde, co material",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d2/foco"
+  },
+  {
    "id": "gl_tutor_81c1074d_26",
    "lang": "gl",
    "style": "tutor",
@@ -13684,6 +15404,14 @@
    "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.03/accionFisica"
   },
   {
+   "id": "gl_tutor_8434b6d5_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensaio para as casas",
+   "speech": "Ensaio para as casas",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d4/foco"
+  },
+  {
    "id": "gl_tutor_84b8cf5b_48",
    "lang": "gl",
    "style": "tutor",
@@ -13708,6 +15436,22 @@
    "source": "formacion.docente/paso/3/corpo"
   },
   {
+   "id": "gl_tutor_851906a0_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O grupo elixe",
+   "speech": "O grupo elixe",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d5/foco"
+  },
+  {
+   "id": "gl_tutor_856e7144_98",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes fóra da alfombra: no corredor, no patio ou na fila. A escena vale en calquera sitio.",
+   "speech": "As tres ordes fóra da alfombra: no corredor, no patio ou na fila. A escena vale en calquera sitio.",
+   "source": "progresion.segundo_ciclo.5/s4/d2/consigna"
+  },
+  {
    "id": "gl_tutor_85a07724_72",
    "lang": "gl",
    "style": "tutor",
@@ -13722,6 +15466,22 @@
    "text": "Murmurio ao oído do compañeiro sen que o escoite o resto.",
    "speech": "Murmurio ao oído do compañeiro sen que o escoite o resto.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.03/accionFisica"
+  },
+  {
+   "id": "gl_tutor_85cadee5_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A segunda orde, dramatizada",
+   "speech": "A segunda orde, dramatizada",
+   "source": "progresion.segundo_ciclo.5/s1/d3/foco"
+  },
+  {
+   "id": "gl_tutor_860345e5_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A segunda orde, no colo",
+   "speech": "A segunda orde, no colo",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d3/foco"
   },
   {
    "id": "gl_tutor_86b41e19_147",
@@ -13812,12 +15572,36 @@
    "source": "academy.rutinas_bano_de_lenguaje.01/ejemploCotidiano"
   },
   {
+   "id": "gl_tutor_88eeabbe_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a primeira orde en círculo. Dila e faina ti tres veces; o grupo mira. Ninguén ten que repetila.",
+   "speech": "Presenta a primeira orde en círculo. Dila e faina ti tres veces; o grupo mira. Ninguén ten que repetila.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d1/consigna"
+  },
+  {
+   "id": "gl_tutor_88f2b5fa_113",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di a orde coa voz do personaxe e non fagas nada. Conta ata tres. Se ninguén actúa, modela e segue sen comentario.",
+   "speech": "Di a orde coa voz do personaxe e non fagas nada. Conta ata tres. Se ninguén actúa, modela e segue sen comentario.",
+   "source": "progresion.segundo_ciclo.5/s4/d1/consigna"
+  },
+  {
    "id": "gl_tutor_8912f7a7_71",
    "lang": "gl",
    "style": "tutor",
    "text": "Celebrar calquera aproximación vocal ou xesto de abrir as mans coma ás.",
    "speech": "Celebrar calquera aproximación vocal ou xesto de abrir as mans coma ás.",
    "source": "juega.mar.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_895a62e2_102",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segunda e terceira orde: quen dirixe elixe se vai amodo ou lixeiro, e dío en inglés: «slow» ou «fast».",
+   "speech": "Segunda e terceira orde: quen dirixe elixe se vai amodo ou lixeiro, e dío en inglés: «slow» ou «fast».",
+   "source": "progresion.segundo_ciclo.6/s3/d2/consigna"
   },
   {
    "id": "gl_tutor_89b3358a_88",
@@ -13860,6 +15644,14 @@
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/3/cmd/cmd.abril.4i.01/accionFisica"
   },
   {
+   "id": "gl_tutor_8b8799af_109",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Hoxe vas detrás do bebé: cando faga un xesto parecido a unha orde, di a palabra e celébrao. Nada de corrixir.",
+   "speech": "Hoxe vas detrás do bebé: cando faga un xesto parecido a unha orde, di a palabra e celébrao. Nada de corrixir.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d5/consigna"
+  },
+  {
    "id": "gl_tutor_8bc89836_70",
    "lang": "gl",
    "style": "tutor",
@@ -13882,6 +15674,14 @@
    "text": "Repetir as mesmas palabras todos os días na mesma rutina axuda máis que variar o vocabulario para que non se aburra.",
    "speech": "Repetir as mesmas palabras todos os días na mesma rutina axuda máis que variar o vocabulario para que non se aburra.",
    "source": "academy.rutinas_bano_de_lenguaje.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "gl_tutor_8c55b49c_114",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a primeira orde no colo, unha vez por bebé. Di a palabra e fai ti o xesto coas súas mans. Non pidas nada.",
+   "speech": "Presenta a primeira orde no colo, unha vez por bebé. Di a palabra e fai ti o xesto coas súas mans. Non pidas nada.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d1/consigna"
   },
   {
    "id": "gl_tutor_8c875113_38",
@@ -13930,6 +15730,14 @@
    "text": "Nomear a cor xunto ao obxecto —'mazá vermella'— e non a cor soa. A esta idade a cor viaxa pegada á cousa.",
    "speech": "Nomear a cor xunto ao obxecto —'mazá vermella'— e non a cor soa. A esta idade a cor viaxa pegada á cousa.",
    "source": "juega.cores.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "gl_tutor_8dc5f766_92",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Hoxe só a segunda orde, co mesmo esquema: dila, faina, agarda. Cada orde nova ten o seu día.",
+   "speech": "Hoxe só a segunda orde, co mesmo esquema: dila, faina, agarda. Cada orde nova ten o seu día.",
+   "source": "progresion.segundo_ciclo.4/s1/d3/consigna"
   },
   {
    "id": "gl_tutor_8dec90f3_55",
@@ -14108,6 +15916,14 @@
    "source": "juega.follas.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "gl_tutor_924b6585_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes fóra da alfombra, en parellas: no corredor, no patio ou na fila. A palabra vale en calquera sitio.",
+   "speech": "As tres ordes fóra da alfombra, en parellas: no corredor, no patio ou na fila. A palabra vale en calquera sitio.",
+   "source": "progresion.segundo_ciclo.6/s4/d2/consigna"
+  },
+  {
    "id": "gl_tutor_9279e217_130",
    "lang": "gl",
    "style": "tutor",
@@ -14164,6 +15980,14 @@
    "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.01/modeladoDocente"
   },
   {
+   "id": "gl_tutor_944650e8_97",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segunda e terceira orde: unha rolda moi amodo, outra lixeira. O contraste fai rir e fai escoitar.",
+   "speech": "Segunda e terceira orde: unha rolda moi amodo, outra lixeira. O contraste fai rir e fai escoitar.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d2/consigna"
+  },
+  {
    "id": "gl_tutor_94642a3a_54",
    "lang": "gl",
    "style": "tutor",
@@ -14212,6 +16036,14 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "gl_tutor_962653ec_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Peche do mes, con calma",
+   "speech": "Peche do mes, con calma",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d5/foco"
+  },
+  {
    "id": "gl_tutor_96c07a00_89",
    "lang": "gl",
    "style": "tutor",
@@ -14220,12 +16052,28 @@
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.03/accionFisica"
   },
   {
+   "id": "gl_tutor_96e748c3_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A primeira orde, dramatizada",
+   "speech": "A primeira orde, dramatizada",
+   "source": "progresion.segundo_ciclo.5/s1/d1/foco"
+  },
+  {
    "id": "gl_tutor_96f3ad6a_207",
    "lang": "gl",
    "style": "tutor",
    "text": "Preguntar pídelle á crianza a palabra que aínda non ten e interrompe o que está a facer. Nomear ti mentres ela toca dálle a palabra no intre exacto; pedirlla vén despois, e a maioría das veces nin fai falta.",
    "speech": "Preguntar pídelle á crianza a palabra que aínda non ten e interrompe o que está a facer. Nomear ti mentres ela toca dálle a palabra no intre exacto; pedirlla vén despois, e a maioría das veces nin fai falta.",
    "source": "aula.exploracion.01/afirmaciones/afirmacion_01/explicacion"
+  },
+  {
+   "id": "gl_tutor_9782bf33_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A terceira orde, dramatizada",
+   "speech": "A terceira orde, dramatizada",
+   "source": "progresion.segundo_ciclo.5/s2/d1/foco"
   },
   {
    "id": "gl_tutor_97ffd361_252",
@@ -14252,6 +16100,22 @@
    "source": "juega.cores.01/cuento/2/texto"
   },
   {
+   "id": "gl_tutor_987531c8_106",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segunda e terceira orde e, entre elas, «Freeze!»: todo o mundo queda de estatua. Quen se move, ri e volve.",
+   "speech": "Segunda e terceira orde e, entre elas, «Freeze!»: todo o mundo queda de estatua. Quen se move, ri e volve.",
+   "source": "progresion.segundo_ciclo.5/s2/d2/consigna"
+  },
+  {
+   "id": "gl_tutor_98b052e8_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repite a orde de onte en parellas: un di a orde en inglés, o outro faina. Cambian de papel á segunda rolda.",
+   "speech": "Repite a orde de onte en parellas: un di a orde en inglés, o outro faina. Cambian de papel á segunda rolda.",
+   "source": "progresion.segundo_ciclo.6/s1/d2/consigna"
+  },
+  {
    "id": "gl_tutor_98c20c9e_127",
    "lang": "gl",
    "style": "tutor",
@@ -14274,6 +16138,22 @@
    "text": "Ir a buscalas xa é a resposta completa: a acción conta máis ca a palabra.",
    "speech": "Ir a buscalas xa é a resposta completa: a acción conta máis ca a palabra.",
    "source": "juega.choiva.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_99e07f23_98",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Repite a orde de onte co material do mes na man. O obxecto atrae a mirada; a palabra vai co xesto.",
+   "speech": "Repite a orde de onte co material do mes na man. O obxecto atrae a mirada; a palabra vai co xesto.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d2/consigna"
+  },
+  {
+   "id": "gl_tutor_9a4b921e_108",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai as tres ordes e deixa que unha crianza elixa con que personaxe as repetimos. O xesto abonda para elixir.",
+   "speech": "Fai as tres ordes e deixa que unha crianza elixa con que personaxe as repetimos. O xesto abonda para elixir.",
+   "source": "progresion.segundo_ciclo.5/s2/d5/consigna"
   },
   {
    "id": "gl_tutor_9a6a19d6_252",
@@ -14300,12 +16180,28 @@
    "source": "juega.choiva.01/matematicas/accion/1"
   },
   {
+   "id": "gl_tutor_9ad03ee4_117",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai as tres ordes e deixa que unha crianza sinale cal repetimos. Non fai falta que a diga en inglés: co xesto abonda.",
+   "speech": "Fai as tres ordes e deixa que unha crianza sinale cal repetimos. Non fai falta que a diga en inglés: co xesto abonda.",
+   "source": "progresion.segundo_ciclo.4/s2/d5/consigna"
+  },
+  {
    "id": "gl_tutor_9ae22b04_60",
    "lang": "gl",
    "style": "tutor",
    "text": "Yes! Wash the big pumpkin, dry it with the towel. All clean!",
    "speech": "Yes! Wash the big pumpkin, dry it with the towel. All clean!",
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_9b24b56e_106",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Última vez do mes: as tres ordes, a canción e a despedida en círculo. Remata máis amodo do que empezaches.",
+   "speech": "Última vez do mes: as tres ordes, a canción e a despedida en círculo. Remata máis amodo do que empezaches.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d5/consigna"
   },
   {
    "id": "gl_tutor_9bfcbb5c_51",
@@ -14356,6 +16252,14 @@
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.01/modeladoDocente"
   },
   {
+   "id": "gl_tutor_9d004148_94",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Hoxe só a segunda orde, con outro personaxe. Dila, faina, conxela a postura un segundo, segue.",
+   "speech": "Hoxe só a segunda orde, con outro personaxe. Dila, faina, conxela a postura un segundo, segue.",
+   "source": "progresion.segundo_ciclo.5/s1/d3/consigna"
+  },
+  {
    "id": "gl_tutor_9d37119d_45",
    "lang": "gl",
    "style": "tutor",
@@ -14394,6 +16298,14 @@
    "text": "As rutinas repítense todos os días coas mesmas palabras e na mesma orde. Esa repetición previsible é o que lle permite ao bebé adiviñar o que vén despois, e adiviñar é o primeiro paso para comprender.",
    "speech": "As rutinas repítense todos os días coas mesmas palabras e na mesma orde. Esa repetición previsible é o que lle permite ao bebé adiviñar o que vén despois, e adiviñar é o primeiro paso para comprender.",
    "source": "academy.rutinas_bano_de_lenguaje.01/ideaClave"
+  },
+  {
+   "id": "gl_tutor_9e87276b_102",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di as ordes sen xesto e en secuencia distinta á de sempre. Conta ata tres. Se non sae, modela e segue.",
+   "speech": "Di as ordes sen xesto e en secuencia distinta á de sempre. Conta ata tres. Se non sae, modela e segue.",
+   "source": "progresion.segundo_ciclo.6/s4/d1/consigna"
   },
   {
    "id": "gl_tutor_9e91f695_49",
@@ -14452,6 +16364,14 @@
    "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/1/consigna"
   },
   {
+   "id": "gl_tutor_a073a52c_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As dúas ordes, coa canción",
+   "speech": "As dúas ordes, coa canción",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d5/foco"
+  },
+  {
    "id": "gl_tutor_a09e0405_77",
    "lang": "gl",
    "style": "tutor",
@@ -14466,6 +16386,14 @@
    "text": "Facerse moi pequenas no chan e moi grandes de pé, dúas veces seguidas.",
    "speech": "Facerse moi pequenas no chan e moi grandes de pé, dúas veces seguidas.",
    "source": "juega.primavera.01/matematicas/accion/0"
+  },
+  {
+   "id": "gl_tutor_a1148522_110",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha crianza ponse no teu sitio e di as tres ordes á clase. Ti fas de alumna. Cambia de directora a cada orde.",
+   "speech": "Unha crianza ponse no teu sitio e di as tres ordes á clase. Ti fas de alumna. Cambia de directora a cada orde.",
+   "source": "progresion.segundo_ciclo.6/s2/d5/consigna"
   },
   {
    "id": "gl_tutor_a11e727b_111",
@@ -14748,6 +16676,22 @@
    "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/4/consigna"
   },
   {
+   "id": "gl_tutor_a9a3b23d_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes, co material",
+   "speech": "As tres ordes, co material",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d4/foco"
+  },
+  {
+   "id": "gl_tutor_a9e66b04_108",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segunda e terceira orde: unha vez moi amodo, unha vez lixeira. O contraste é o xogo; a risa di que funciona.",
+   "speech": "Segunda e terceira orde: unha vez moi amodo, unha vez lixeira. O contraste é o xogo; a risa di que funciona.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d2/consigna"
+  },
+  {
    "id": "gl_tutor_aa067008_276",
    "lang": "gl",
    "style": "tutor",
@@ -14786,6 +16730,14 @@
    "text": "Introdución visual e manipulativa ás nocións de magnitude mediante barcos e cunchas.",
    "speech": "Introdución visual e manipulativa ás nocións de magnitude mediante barcos e cunchas.",
    "source": "juega.mar.01/matematicas/descripcion"
+  },
+  {
+   "id": "gl_tutor_ab3ede34_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canta a canción do mes e fai as dúas ordes onde caen no ritmo. O pulso márcase coa man, á vista; non se oe.",
+   "speech": "Canta a canción do mes e fai as dúas ordes onde caen no ritmo. O pulso márcase coa man, á vista; non se oe.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d5/consigna"
   },
   {
    "id": "gl_tutor_ab5eb081_358",
@@ -14924,6 +16876,22 @@
    "source": "juega.animais.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "gl_tutor_af1da1a0_118",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se hai outra persoa adulta, cada bebé pasa dun colo a outro entre orde e orde. Se non, cambia ti de bebé máis a miúdo.",
+   "speech": "Se hai outra persoa adulta, cada bebé pasa dun colo a outro entre orde e orde. Se non, cambia ti de bebé máis a miúdo.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d4/consigna"
+  },
+  {
+   "id": "gl_tutor_af2da98e_108",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeira e segunda orde seguidas, con pausa entre elas. Faino ti con todo o corpo; o grupo segue o que pode.",
+   "speech": "Primeira e segunda orde seguidas, con pausa entre elas. Faino ti con todo o corpo; o grupo segue o que pode.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d4/consigna"
+  },
+  {
    "id": "gl_tutor_af94c4e4_60",
    "lang": "gl",
    "style": "tutor",
@@ -14940,12 +16908,28 @@
    "source": "asamblea.segundo_ciclo.outubro.5_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "gl_tutor_affec25b_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dúas ordes, dous personaxes",
+   "speech": "Dúas ordes, dous personaxes",
+   "source": "progresion.segundo_ciclo.5/s1/d4/foco"
+  },
+  {
    "id": "gl_tutor_b010e0e6_75",
    "lang": "gl",
    "style": "tutor",
    "text": "Traballar o equilibrio, o salto con dous pés e o cambio de altura corporal.",
    "speech": "Traballar o equilibrio, o salto con dous pés e o cambio de altura corporal.",
    "source": "juega.animais.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "gl_tutor_b069e2a2_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción completa coas tres ordes, ao ritmo do mes e sen parar entre estrofas. É a sesión enteira seguida.",
+   "speech": "Canción completa coas tres ordes, ao ritmo do mes e sen parar entre estrofas. É a sesión enteira seguida.",
+   "source": "progresion.primeiro_ciclo.2_3/s4/d3/consigna"
   },
   {
    "id": "gl_tutor_b0778e9e_106",
@@ -14994,6 +16978,14 @@
    "text": "Esa pregunta convierte un xogo nun exame. Xera ansiedade e o resultado adoita ser que a crianza cala ou rexeita a actividade. O mesmo pasa con «non se di así» ou «dillo a papá».",
    "speech": "Esa pregunta convierte un xogo nun exame. Xera ansiedade e o resultado adoita ser que a crianza cala ou rexeita a actividade. O mesmo pasa con «non se di así» ou «dillo a papá».",
    "source": "formacion.familia/paso/2/corpo"
+  },
+  {
+   "id": "gl_tutor_b216ce85_101",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a terceira orde igual que as outras. Se o mes só ten dúas, repasa a segunda con outro xesto.",
+   "speech": "Presenta a terceira orde igual que as outras. Se o mes só ten dúas, repasa a segunda con outro xesto.",
+   "source": "progresion.segundo_ciclo.4/s2/d1/consigna"
   },
   {
    "id": "gl_tutor_b22b38cf_66",
@@ -15052,6 +17044,14 @@
    "source": "formacion.docente/paso/1/corpo"
   },
   {
+   "id": "gl_tutor_b3784e64_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción do mes coas tres ordes. Fíxate en que bebé anticipa o xesto antes da palabra: ese xa a ten.",
+   "speech": "Canción do mes coas tres ordes. Fíxate en que bebé anticipa o xesto antes da palabra: ese xa a ten.",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d5/consigna"
+  },
+  {
    "id": "gl_tutor_b3d2f1b2_45",
    "lang": "gl",
    "style": "tutor",
@@ -15100,6 +17100,14 @@
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.02/modeladoDocente"
   },
   {
+   "id": "gl_tutor_b59cd1fb_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dúas ordes seguidas, sen pausa",
+   "speech": "Dúas ordes seguidas, sen pausa",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d1/foco"
+  },
+  {
    "id": "gl_tutor_b6131f8d_68",
    "lang": "gl",
    "style": "tutor",
@@ -15130,6 +17138,14 @@
    "text": "É a mesma aprendizaxe da parada de outubro, agora co son en vez de co corpo.",
    "speech": "É a mesma aprendizaxe da parada de outubro, agora co son en vez de co corpo.",
    "source": "juega.inverno.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_b68b46d0_113",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensina a lámina do mes e conta o que pasa en tres frases. Cada orde é unha acción do protagonista; a clase actúa.",
+   "speech": "Ensina a lámina do mes e conta o que pasa en tres frases. Cada orde é unha acción do protagonista; a clase actúa.",
+   "source": "progresion.segundo_ciclo.5/s3/d3/consigna"
   },
   {
    "id": "gl_tutor_b68cd2b7_52",
@@ -15164,6 +17180,14 @@
    "source": "juega.animais.01/matematicas/descripcion"
   },
   {
+   "id": "gl_tutor_b75406ef_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes fóra da alfombra: no cambiador, na cadeira ou no patio. A palabra ten que valer en calquera sitio.",
+   "speech": "As tres ordes fóra da alfombra: no cambiador, na cadeira ou no patio. A palabra ten que valer en calquera sitio.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d2/consigna"
+  },
+  {
    "id": "gl_tutor_b7b35206_56",
    "lang": "gl",
    "style": "tutor",
@@ -15186,6 +17210,14 @@
    "text": "Entrega do recipiente de terra coa fórmula pragmática.",
    "speech": "Entrega do recipiente de terra coa fórmula pragmática.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.02/accionFisica"
+  },
+  {
+   "id": "gl_tutor_b867e0b7_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Amodo, lixeiro e freeze",
+   "speech": "Amodo, lixeiro e freeze",
+   "source": "progresion.segundo_ciclo.5/s3/d2/foco"
   },
   {
    "id": "gl_tutor_b89947fd_41",
@@ -15234,6 +17266,14 @@
    "text": "Fomentar a autonomía ao colgar o abrigo na percha baixa sen presas nin tensións.",
    "speech": "Fomentar a autonomía ao colgar o abrigo na percha baixa sen presas nin tensións.",
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "gl_tutor_b9c833e2_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Amodo e lixeiro",
+   "speech": "Amodo e lixeiro",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d2/foco"
   },
   {
    "id": "gl_tutor_ba225669_28",
@@ -15292,6 +17332,14 @@
    "source": "asamblea.segundo_ciclo.maio.4_infantil/microRutina/escenaCotidiana"
   },
   {
+   "id": "gl_tutor_bb49fb1e_94",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes co material do mes. O obxecto pasa de man en man: quen o ten, fai; o resto mira.",
+   "speech": "As tres ordes co material do mes. O obxecto pasa de man en man: quen o ten, fai; o resto mira.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d4/consigna"
+  },
+  {
    "id": "gl_tutor_bb4a4489_69",
    "lang": "gl",
    "style": "tutor",
@@ -15314,6 +17362,14 @@
    "text": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante e sen interrupcións. A auga NON supera os 37 °C —compróbese co dorso do pulso antes de cada sesión— nin os dous dedos de altura. Ningunha crianza queda soa coa bandexa nin un segundo. O xabón aplícao só a persoa adulta e mantense fóra do seu alcance. Séquese o chan de contado: a auga no chan é a causa máis común de caída na aula.",
    "speech": "Aviso de seguridade obrigatorio: esta actividade require presenza e supervisión docente constante e sen interrupcións. A auga NON supera os 37 °C —compróbese co dorso do pulso antes de cada sesión— nin os dous dedos de altura. Ningunha crianza queda soa coa bandexa nin un segundo. O xabón aplícao só a persoa adulta e mantense fóra do seu alcance. Séquese o chan de contado: a auga no chan é a causa máis común de caída na aula.",
    "source": "juega.auga.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "gl_tutor_bbbb5fa6_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dúas ordes nunha serie",
+   "speech": "Dúas ordes nunha serie",
+   "source": "progresion.segundo_ciclo.6/s3/d1/foco"
   },
   {
    "id": "gl_tutor_bcac3d05_107",
@@ -15380,6 +17436,14 @@
    "source": "juega.mar.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "gl_tutor_bea4e117_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dúas ordes, en parellas",
+   "speech": "Dúas ordes, en parellas",
+   "source": "progresion.segundo_ciclo.6/s1/d4/foco"
+  },
+  {
    "id": "gl_tutor_beb84189_204",
    "lang": "gl",
    "style": "tutor",
@@ -15404,12 +17468,28 @@
    "source": "juega.primavera.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "gl_tutor_bfab9604_108",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes fóra da alfombra: no corredor, no patio ou na fila. A palabra ten que valer en calquera sitio.",
+   "speech": "As tres ordes fóra da alfombra: no corredor, no patio ou na fila. A palabra ten que valer en calquera sitio.",
+   "source": "progresion.segundo_ciclo.4/s4/d2/consigna"
+  },
+  {
    "id": "gl_tutor_c0da565a_118",
    "lang": "gl",
    "style": "tutor",
    "text": "A docente describe un refuxio ecolóxico; os alumnos seleccionan a resposta motriz e verbalizan o chunk correspondente.",
    "speech": "A docente describe un refuxio ecolóxico; os alumnos seleccionan a resposta motriz e verbalizan o chunk correspondente.",
    "source": "asamblea.segundo_ciclo.abril.6_infantil/fase/3/consigna"
+  },
+  {
+   "id": "gl_tutor_c130c2a7_109",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción completa coas tres ordes, ao ritmo do mes. Hoxe non paras entre estrofas: é a sesión enteira seguida.",
+   "speech": "Canción completa coas tres ordes, ao ritmo do mes. Hoxe non paras entre estrofas: é a sesión enteira seguida.",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d3/consigna"
   },
   {
    "id": "gl_tutor_c143e227_86",
@@ -15444,12 +17524,28 @@
    "source": "aula.preguntas.01/ideaClave"
   },
   {
+   "id": "gl_tutor_c1d0df49_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción do mes coas tres ordes, dirixida por unha crianza. Fíxate en quen di as ordes enteiras en inglés.",
+   "speech": "Canción do mes coas tres ordes, dirixida por unha crianza. Fíxate en quen di as ordes enteiras en inglés.",
+   "source": "progresion.segundo_ciclo.6/s3/d5/consigna"
+  },
+  {
    "id": "gl_tutor_c1d64d17_51",
    "lang": "gl",
    "style": "tutor",
    "text": "Tracción cooperativa da corda coordinada ao conteo.",
    "speech": "Tracción cooperativa da corda coordinada ao conteo.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_c2edd44d_102",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes co material do mes. Quen ten o obxecto di a orde; a clase faina. Cambia de man cada vez.",
+   "speech": "As tres ordes co material do mes. Quen ten o obxecto di a orde; a clase faina. Cambia de man cada vez.",
+   "source": "progresion.segundo_ciclo.6/s2/d4/consigna"
   },
   {
    "id": "gl_tutor_c311ca73_76",
@@ -15490,6 +17586,14 @@
    "text": "Soltar a laranxa pola rampla e seguila coa mirada ata que para.",
    "speech": "Soltar a laranxa pola rampla e seguila coa mirada ata que para.",
    "source": "juega.cores.01/exploracion/paso/0"
+  },
+  {
+   "id": "gl_tutor_c3f25e87_111",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeira e segunda orde, cada unha co seu personaxe. Cambia de voz entre unha e outra: é o sinal para escoitar.",
+   "speech": "Primeira e segunda orde, cada unha co seu personaxe. Cambia de voz entre unha e outra: é o sinal para escoitar.",
+   "source": "progresion.segundo_ciclo.5/s1/d4/consigna"
   },
   {
    "id": "gl_tutor_c4437789_70",
@@ -15580,6 +17684,22 @@
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "gl_tutor_c8db8dbc_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha crianza modela contigo",
+   "speech": "Unha crianza modela contigo",
+   "source": "progresion.segundo_ciclo.4/s3/d4/foco"
+  },
+  {
+   "id": "gl_tutor_c93c11e6_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cambio de par",
+   "speech": "Cambio de par",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d4/foco"
+  },
+  {
    "id": "gl_tutor_ca189b59_72",
    "lang": "gl",
    "style": "tutor",
@@ -15650,6 +17770,22 @@
    "text": "Yes, warm water! Wash your hands, scrub your fingers. Dry: pat, pat, pat!",
    "speech": "Yes, warm water! Wash your hands, scrub your fingers. Dry: pat, pat, pat!",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_cd23f7ec_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes co material do mes. O obxecto pasa de man en man: quen o ten, fai; o resto mira e anticipa.",
+   "speech": "As tres ordes co material do mes. O obxecto pasa de man en man: quen o ten, fai; o resto mira e anticipa.",
+   "source": "progresion.segundo_ciclo.4/s2/d4/consigna"
+  },
+  {
+   "id": "gl_tutor_ce28cade_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A terceira orde, con modelado",
+   "speech": "A terceira orde, con modelado",
+   "source": "progresion.segundo_ciclo.4/s2/d1/foco"
   },
   {
    "id": "gl_tutor_ce658a82_85",
@@ -15772,6 +17908,14 @@
    "source": "academy.turnos_atencion_conjunta.01/porQueImporta"
   },
   {
+   "id": "gl_tutor_d0ec51df_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segue o que o bebé fai",
+   "speech": "Segue o que o bebé fai",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d5/foco"
+  },
+  {
    "id": "gl_tutor_d13e690f_65",
    "lang": "gl",
    "style": "tutor",
@@ -15834,6 +17978,22 @@
    "text": "Deitarse baixo a manta coa lanterna acesa no teito ata calmar.",
    "speech": "Deitarse baixo a manta coa lanterna acesa no teito ata calmar.",
    "source": "juega.inverno.01/exploracion/paso/3"
+  },
+  {
+   "id": "gl_tutor_d2108ecd_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segunda e terceira, seguidas",
+   "speech": "Segunda e terceira, seguidas",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d2/foco"
+  },
+  {
+   "id": "gl_tutor_d2fbb559_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Freeze!",
+   "speech": "Freeze!",
+   "source": "progresion.segundo_ciclo.5/s2/d2/foco"
   },
   {
    "id": "gl_tutor_d311106c_53",
@@ -15996,6 +18156,14 @@
    "source": "academy.bilinguismo_y_cultura.01/queHacerEnCasa"
   },
   {
+   "id": "gl_tutor_d84f5fb0_87",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción enteira coas tres ordes dentro. Unha crianza marca o pulso coa man ao teu lado.",
+   "speech": "Canción enteira coas tres ordes dentro. Unha crianza marca o pulso coa man ao teu lado.",
+   "source": "progresion.segundo_ciclo.6/s2/d3/consigna"
+  },
+  {
    "id": "gl_tutor_d8892281_74",
    "lang": "gl",
    "style": "tutor",
@@ -16018,6 +18186,14 @@
    "text": "Agáchase e pace en silencio, marcando a calma.",
    "speech": "Agáchase e pace en silencio, marcando a calma.",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/3/cmd/cmd.abril.4i.03/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_d9a46d7d_114",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción enteira coas tres ordes dentro. Ti segues facendo todo o movemento: aínda non é hora de deixar de modelar.",
+   "speech": "Canción enteira coas tres ordes dentro. Ti segues facendo todo o movemento: aínda non é hora de deixar de modelar.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d3/consigna"
   },
   {
    "id": "gl_tutor_d9be5307_75",
@@ -16082,6 +18258,14 @@
    "text": "Again! Clap high, clap low, touch your nose, off we go!",
    "speech": "Again! Clap high, clap low, touch your nose, off we go!",
    "source": "asamblea.segundo_ciclo.maio.4_infantil/microRutina/pauta/0/modeladoIndirecto"
+  },
+  {
+   "id": "gl_tutor_db2bbfe0_97",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "En círculo: cada crianza di unha orde á seguinte, que a fai e pasa outra. Ti só arrancas a cadea.",
+   "speech": "En círculo: cada crianza di unha orde á seguinte, que a fai e pasa outra. Ti só arrancas a cadea.",
+   "source": "progresion.segundo_ciclo.6/s3/d4/consigna"
   },
   {
    "id": "gl_tutor_db6caeb5_66",
@@ -16204,12 +18388,28 @@
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/enunciado"
   },
   {
+   "id": "gl_tutor_dec683a3_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di a orde e non fagas o xesto. Conta ata tres en silencio. Se ninguén a fai, modela e segue sen comentario.",
+   "speech": "Di a orde e non fagas o xesto. Conta ata tres en silencio. Se ninguén a fai, modela e segue sen comentario.",
+   "source": "progresion.segundo_ciclo.4/s4/d1/consigna"
+  },
+  {
    "id": "gl_tutor_dedc19f7_43",
    "lang": "gl",
    "style": "tutor",
    "text": "O compás márcao o teu corpo, non un pitido.",
    "speech": "O compás márcao o teu corpo, non un pitido.",
    "source": "formacion.docente/paso/4/clave"
+  },
+  {
+   "id": "gl_tutor_df717a7b_101",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción enteira coas tres ordes dentro. Ti aínda modelas todo; o freeze vai ao final de cada estrofa.",
+   "speech": "Canción enteira coas tres ordes dentro. Ti aínda modelas todo; o freeze vai ao final de cada estrofa.",
+   "source": "progresion.segundo_ciclo.5/s2/d3/consigna"
   },
   {
    "id": "gl_tutor_df7d14be_34",
@@ -16226,6 +18426,22 @@
    "text": "Splash! A auga lévao todo e as patas quedan limpas e brillantes. Agora si, á merenda.",
    "speech": "Splash! A auga lévao todo e as patas quedan limpas e brillantes. Agora si, á merenda.",
    "source": "juega.auga.01/cuento/2/texto"
+  },
+  {
+   "id": "gl_tutor_e00ddf4c_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha crianza dirixe",
+   "speech": "Unha crianza dirixe",
+   "source": "progresion.segundo_ciclo.6/s2/d5/foco"
+  },
+  {
+   "id": "gl_tutor_e04a8eaa_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha crianza ponse ao teu lado e fai o xesto contigo mentres ti dis a orde. Cambia de crianza en cada orde.",
+   "speech": "Unha crianza ponse ao teu lado e fai o xesto contigo mentres ti dis a orde. Cambia de crianza en cada orde.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d4/consigna"
   },
   {
    "id": "gl_tutor_e0b05923_45",
@@ -16314,6 +18530,14 @@
    "text": "Poñer e quitar pezas de disfrace seguindo ordes curtas e ledas.",
    "speech": "Poñer e quitar pezas de disfrace seguindo ordes curtas e ledas.",
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "gl_tutor_e40c38b3_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A terceira orde, en círculo",
+   "speech": "A terceira orde, en círculo",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d1/foco"
   },
   {
    "id": "gl_tutor_e43e31b7_64",
@@ -16516,6 +18740,22 @@
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.01/accionFisica"
   },
   {
+   "id": "gl_tutor_e9e1fdf3_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A clase elixe o personaxe",
+   "speech": "A clase elixe o personaxe",
+   "source": "progresion.segundo_ciclo.5/s2/d5/foco"
+  },
+  {
+   "id": "gl_tutor_e9e8bb7d_123",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Última vez do mes: as tres ordes ditas pola clase, a canción e a despedida en círculo. Remata máis amodo do que empezaches.",
+   "speech": "Última vez do mes: as tres ordes ditas pola clase, a canción e a despedida en círculo. Remata máis amodo do que empezaches.",
+   "source": "progresion.segundo_ciclo.6/s4/d5/consigna"
+  },
+  {
    "id": "gl_tutor_ea1241d1_67",
    "lang": "gl",
    "style": "tutor",
@@ -16564,6 +18804,22 @@
    "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.02/accionFisica"
   },
   {
+   "id": "gl_tutor_ebd65608_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canta a canción do mes e mete as dúas ordes onde caen no ritmo. O pulso vese na túa man, non se oe.",
+   "speech": "Canta a canción do mes e mete as dúas ordes onde caen no ritmo. O pulso vese na túa man, non se oe.",
+   "source": "progresion.primeiro_ciclo.0_2/s1/d5/consigna"
+  },
+  {
+   "id": "gl_tutor_ebd8e4a2_94",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As tres ordes co material do mes como atrezo. O obxecto pasa de man en man: quen o ten, actúa.",
+   "speech": "As tres ordes co material do mes como atrezo. O obxecto pasa de man en man: quen o ten, actúa.",
+   "source": "progresion.segundo_ciclo.5/s2/d4/consigna"
+  },
+  {
    "id": "gl_tutor_ebe7580f_57",
    "lang": "gl",
    "style": "tutor",
@@ -16594,6 +18850,14 @@
    "text": "Que fai a laranxa cando Lúa a toca? Por que rola?",
    "speech": "Que fai a laranxa cando Lúa a toca? Por que rola?",
    "source": "juega.cores.01/cuento/1/pregunta"
+  },
+  {
+   "id": "gl_tutor_ed1bb26b_90",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Encadea a segunda e a terceira orde. Cambia de bebé cada vez; o grupo mira mentres agarda.",
+   "speech": "Encadea a segunda e a terceira orde. Cambia de bebé cada vez; o grupo mira mentres agarda.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d2/consigna"
   },
   {
    "id": "gl_tutor_ed5e04c5_53",
@@ -16634,6 +18898,14 @@
    "text": "Non preguntar «como se di auga?». Dicir a frase e seguir lavando.",
    "speech": "Non preguntar «como se di auga?». Dicir a frase e seguir lavando.",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
+   "id": "gl_tutor_ef10d194_115",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Une a primeira e a segunda orde nunha soa serie, sen parar entre elas. Primeiro moi amodo; despois ao ritmo normal.",
+   "speech": "Une a primeira e a segunda orde nunha soa serie, sen parar entre elas. Primeiro moi amodo; despois ao ritmo normal.",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d1/consigna"
   },
   {
    "id": "gl_tutor_ef27dff4_50",
@@ -16740,12 +19012,28 @@
    "source": "aula.conto.01/ideaClave"
   },
   {
+   "id": "gl_tutor_f2f27d64_116",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción completa coas tres ordes, ao ritmo do mes, dirixida por parellas que se van relevando. Ti só marcas o pulso.",
+   "speech": "Canción completa coas tres ordes, ao ritmo do mes, dirixida por parellas que se van relevando. Ti só marcas o pulso.",
+   "source": "progresion.segundo_ciclo.6/s4/d3/consigna"
+  },
+  {
    "id": "gl_tutor_f3eac1e7_43",
    "lang": "gl",
    "style": "tutor",
    "text": "Camiñar de puntillas ao ritmo dunha marcha.",
    "speech": "Camiñar de puntillas ao ritmo dunha marcha.",
    "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/2/consigna"
+  },
+  {
+   "id": "gl_tutor_f4569949_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Retiras o xesto a medias",
+   "speech": "Retiras o xesto a medias",
+   "source": "progresion.segundo_ciclo.5/s3/d4/foco"
   },
   {
    "id": "gl_tutor_f45881f0_105",
@@ -16788,6 +19076,22 @@
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/fase/3/cmd/cmd.marzo.4i.01/modeladoDocente"
   },
   {
+   "id": "gl_tutor_f4de1566_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A historia da lámina",
+   "speech": "A historia da lámina",
+   "source": "progresion.primeiro_ciclo.0_2/s3/d3/foco"
+  },
+  {
+   "id": "gl_tutor_f54849d2_110",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Hoxe só a segunda orde. Mesmo esquema: dila, faina, agarda. Se alguén a imita, di a palabra outra vez e sorrí.",
+   "speech": "Hoxe só a segunda orde. Mesmo esquema: dila, faina, agarda. Se alguén a imita, di a palabra outra vez e sorrí.",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d3/consigna"
+  },
+  {
    "id": "gl_tutor_f5c0193b_161",
    "lang": "gl",
    "style": "tutor",
@@ -16796,12 +19100,44 @@
    "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
+   "id": "gl_tutor_f624df43_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A primeira orde, en círculo",
+   "speech": "A primeira orde, en círculo",
+   "source": "progresion.primeiro_ciclo.2_3/s1/d1/foco"
+  },
+  {
+   "id": "gl_tutor_f664c883_118",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Presenta a terceira orde igual que as outras: no colo, palabra e xesto guiado. Se o mes só ten dúas, repasa a segunda.",
+   "speech": "Presenta a terceira orde igual que as outras: no colo, palabra e xesto guiado. Se o mes só ten dúas, repasa a segunda.",
+   "source": "progresion.primeiro_ciclo.0_2/s2/d1/consigna"
+  },
+  {
+   "id": "gl_tutor_f67d48ea_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canción enteira, ao seu ritmo",
+   "speech": "Canción enteira, ao seu ritmo",
+   "source": "progresion.primeiro_ciclo.0_2/s4/d3/foco"
+  },
+  {
    "id": "gl_tutor_f6845100_42",
    "lang": "gl",
    "style": "tutor",
    "text": "No sofá, sen obxectos: só as mans e a voz.",
    "speech": "No sofá, sen obxectos: só as mans e a voz.",
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "gl_tutor_f6ab58be_109",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai a sesión como a farán as familias: a crianza di as ordes e a persoa adulta as fai. É o que levan na nota.",
+   "speech": "Fai a sesión como a farán as familias: a crianza di as ordes e a persoa adulta as fai. É o que levan na nota.",
+   "source": "progresion.segundo_ciclo.6/s4/d4/consigna"
   },
   {
    "id": "gl_tutor_f6f69c25_71",
@@ -16916,12 +19252,28 @@
    "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/4/consigna"
   },
   {
+   "id": "gl_tutor_faa37e3d_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai as tres ordes e deixa que unha crianza sinale cal repetimos. Non fai falta que a diga: co xesto abonda.",
+   "speech": "Fai as tres ordes e deixa que unha crianza sinale cal repetimos. Non fai falta que a diga: co xesto abonda.",
+   "source": "progresion.primeiro_ciclo.2_3/s2/d5/consigna"
+  },
+  {
    "id": "gl_tutor_face5b12_51",
    "lang": "gl",
    "style": "tutor",
    "text": "Que son fan as follas secas? Que leva Lúa na cesta?",
    "speech": "Que son fan as follas secas? Que leva Lúa na cesta?",
    "source": "juega.follas.01/cuento/2/pregunta"
+  },
+  {
+   "id": "gl_tutor_fad56fee_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha crianza fai de mestra",
+   "speech": "Unha crianza fai de mestra",
+   "source": "progresion.primeiro_ciclo.2_3/s3/d4/foco"
   },
   {
    "id": "gl_tutor_fc4e120b_54",
