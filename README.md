@@ -74,7 +74,7 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 
 | | |
 | --- | --- |
-| [**Manual de casos de uso**](docs/manual-casos-de-uso.html) | Para la docente y la familia: seis capítulos —qué es y qué no es, antes de empezar, el mapa de la app, cómo funciona una asamblea, los límites de esta versión y qué hacer si algo va mal— más 17 casos de uso, incluidos los dos de segundo ciclo: conducir la asamblea matinal y hacer la micro-rutina en casa. Lleva 24 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el aula de los dos ciclos, el calendario, Academy, las lenguas y la voz, los premios y la privacidad—. Lleva 22 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
 | [**CLAUDE.md**](CLAUDE.md) | Reglas de trabajo del proyecto |

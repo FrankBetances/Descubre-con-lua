@@ -404,7 +404,7 @@ class Builder:
 
 def build():
     doc = Document()
-    doc.core_properties.title = 'Descubre con Lúa · Manual de Casos de Uso'
+    doc.core_properties.title = 'Descubre con Lúa · Manual de uso'
     doc.core_properties.author = 'Descubre con Lúa · Edición Vigo'
     doc.core_properties.language = 'es-ES'
 
