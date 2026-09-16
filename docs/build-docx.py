@@ -18,6 +18,7 @@ import re
 
 import lxml.html
 from docx import Document
+from docx.image.image import Image as DocxImage
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.oxml import OxmlElement
@@ -324,7 +325,16 @@ class Builder:
                 src = (fig.xpath('./img/@src') or [None])[0]
                 ruta = os.path.join(DOCS, src) if src else None
                 if ruta and os.path.exists(ruta):
-                    cell.paragraphs[0].add_run().add_picture(ruta, width=Cm(6.4))
+                    # Manda la ALTURA. Estas capturas son pantallas de móvil, muy
+                    # altas: a 6,4 cm de ancho una de ellas mide 34 cm de alto y
+                    # se sale de la hoja. Se escala por lo que no cabe.
+                    im = DocxImage.from_file(ruta)
+                    ancho, alto = Cm(6.4), int(Cm(6.4) * im.px_height / im.px_width)
+                    if alto > Cm(15.5):
+                        alto = Cm(15.5)
+                        ancho = int(Cm(15.5) * im.px_width / im.px_height)
+                    cell.paragraphs[0].add_run().add_picture(
+                        ruta, width=ancho, height=alto)
                 else:
                     # Nunca en silencio: si falta el PNG hay que verlo.
                     raise SystemExit(

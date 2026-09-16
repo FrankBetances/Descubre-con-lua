@@ -100,11 +100,17 @@
 
   /* ------------------------------------------------------------- capturas */
   .shots { margin: 10px 0 4px; }
-  .shots .pair { display: flex; gap: 10mm; align-items: flex-start;
-                 page-break-inside: avoid; margin-bottom: 10px; }
-  .shots figure { margin: 0; flex: 1; }
-  .shots img { width: 100%; border: 1px solid var(--line); border-radius: 6px;
-               display: block; }
+  /* Las capturas son pantallas de móvil: muy altas. A ancho de columna se
+     salían de la hoja y quedaban cortadas. Manda la ALTURA, y el ancho la
+     sigue: así la imagen entra entera en la página, siempre. */
+  .shots .pair { display: flex; gap: 8mm; align-items: flex-start;
+                 justify-content: center;
+                 page-break-inside: avoid; break-inside: avoid; margin-bottom: 12px; }
+  .shots figure { margin: 0; flex: 1; min-width: 0; text-align: center;
+                  page-break-inside: avoid; break-inside: avoid; }
+  .shots img { max-width: 100%; max-height: 160mm; width: auto; height: auto;
+               border: 1px solid var(--line); border-radius: 6px;
+               display: block; margin: 0 auto; }
   .shots figcaption { font-size: 8.5pt; color: var(--muted); margin-top: 4px; }
 
     /* La fila de marcas de la portada. Son CUATRO y tienen que caber en una

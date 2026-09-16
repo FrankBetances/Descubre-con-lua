@@ -161,6 +161,17 @@ adb exec-out screencap -p > docs/capturas/<pantalla>-<gl|es>.png
 
 Las dos lenguas no miden lo mismo: una pantalla correcta en castellano puede cortarse en gallego. **Mira las capturas antes de decir «hecho».**
 
+**Un documento generado se mira PAGINADO, página a página, antes de entregarlo.**
+Que el gate del manual diga que el PDF viene del HTML actual solo dice de dónde
+viene, no cómo se ve. Que el HTML se vea bien en una tira continua tampoco: una
+captura de móvil mide tres veces el alto de un A4 y, en la hoja, se sale o se
+corta. Si no hay visor de PDF en el entorno, se mide: se renderiza con el medio
+de impresión al tamaño de la caja y se comprueba que ninguna figura, tabla ni
+recuadro supere el alto ni el ancho de la página.
+
+Coste propio: el manual se entregó con las veintidós capturas desbordando la
+hoja. El PDF se construyó, el gate salió verde y nadie miró una página.
+
 ### 1b. «Hecho» exige los gates, no solo analyze
 
 Los gates se sacan **del script o del workflow de CI** (`tools/gates.sh` o `.github/workflows/`), nunca de una lista escrita aquí. Una lista escrita a mano se queda atrás respecto al workflow, y entonces una build muere en un gate que no figuraba en ella.
