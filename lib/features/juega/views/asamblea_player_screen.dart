@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../core/audio/fade_audio_coordinator.dart';
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart'
@@ -194,6 +196,7 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
                     centroInteres: widget.centroInteres,
                     soando: _soando,
                     onAlternarAudio: _alternar,
+                    audioService: widget.audioService,
                   ),
                 ),
               ),
@@ -292,11 +295,17 @@ class _PantallaDeFase extends StatelessWidget {
   final String? soando;
   final Future<void> Function(String asset) onAlternarAudio;
 
+  /// La voz. Sin ella la pantalla enseña las frases y no las dice, que es
+  /// justo lo que pasó al unificar el reproductor: las grabaciones estaban en
+  /// el paquete y ninguna tenía un botón que la tocara.
+  final OfflineAudioService? audioService;
+
   const _PantallaDeFase({
     required this.fase,
     required this.language,
     required this.soando,
     required this.onAlternarAudio,
+    required this.audioService,
     this.material,
     this.cancion,
     this.centroInteres,
@@ -342,17 +351,34 @@ class _PantallaDeFase extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           // La consigna, en grande. Es lo único que la docente lee de lejos.
-          Text(
-            fase.consignaDocente.resolve(language),
-            maxLines: 4,
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
-              fontFamily: AppTheme.fontFamily,
-              fontSize: 26,
-              height: 1.25,
-              fontWeight: FontWeight.w800,
-              color: _AsambleaPlayerScreenState._textoPrincipal,
-            ),
+          // Y con su voz al lado: la app la dice, no solo la enseña.
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(
+                  fase.consignaDocente.resolve(language),
+                  maxLines: 4,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 26,
+                    height: 1.25,
+                    fontWeight: FontWeight.w800,
+                    color: _AsambleaPlayerScreenState._textoPrincipal,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 10),
+              BotonEscuchar(
+                key: const ValueKey('voz_consigna'),
+                audioService: audioService,
+                texto: fase.consignaDocente.resolve(language),
+                language: language,
+                compacto: true,
+                descripcion: isGl ? 'a consigna' : 'la consigna',
+              ),
+            ],
           ),
           const SizedBox(height: 16),
           if (temAudio)
@@ -364,7 +390,7 @@ class _PantallaDeFase extends StatelessWidget {
               onPulsar: () => onAlternarAudio(asset),
             )
           else if (fase.cueAcustica?.isNotEmpty == true)
-            _Cue(texto: fase.cueAcustica!),
+            _Cue(texto: fase.cueAcustica!, audioService: audioService),
           const SizedBox(height: 14),
           // Los comandos en inglés, si esta fase los tiene. Máximo tres, que
           // es lo que dicen los documentos: tres órdenes por sesión.
@@ -384,6 +410,8 @@ class _PantallaDeFase extends StatelessWidget {
                           child: _Comando(
                             textoIngles: cmd.textoIngles,
                             accion: cmd.accionFisica.resolve(language),
+                            audioService: audioService,
+                            isGl: isGl,
                           ),
                         ),
                     ],
@@ -398,8 +426,15 @@ class _PantallaDeFase extends StatelessWidget {
 class _Comando extends StatelessWidget {
   final String textoIngles;
   final String accion;
+  final OfflineAudioService? audioService;
+  final bool isGl;
 
-  const _Comando({required this.textoIngles, required this.accion});
+  const _Comando({
+    required this.textoIngles,
+    required this.accion,
+    required this.audioService,
+    required this.isGl,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -411,33 +446,50 @@ class _Comando extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppTheme.radiusCard),
         border: Border.all(color: _AsambleaPlayerScreenState._borde),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Row(
         children: [
-          Text(
-            textoIngles,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
-              fontFamily: AppTheme.fontFamily,
-              fontSize: 20,
-              fontWeight: FontWeight.w800,
-              color: _AsambleaPlayerScreenState._textoPrincipal,
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  textoIngles,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w800,
+                    color: _AsambleaPlayerScreenState._textoPrincipal,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Flexible(
+                  child: Text(
+                    accion,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontFamily: AppTheme.fontFamily,
+                      fontSize: 13.5,
+                      color: _AsambleaPlayerScreenState._textoSecundario,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
-          const SizedBox(height: 2),
-          Flexible(
-            child: Text(
-              accion,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: const TextStyle(
-                fontFamily: AppTheme.fontFamily,
-                fontSize: 13.5,
-                color: _AsambleaPlayerScreenState._textoSecundario,
-              ),
-            ),
+          const SizedBox(width: 10),
+          // La orden en inglés, dicha por la voz inglesa. Es el corazón del
+          // TPR: la docente la oye y la repite; sin esto la app está muda.
+          BotonEscuchar(
+            audioService: audioService,
+            texto: textoIngles,
+            language: AppLanguage.en,
+            style: estiloIngles(textoIngles),
+            compacto: true,
+            descripcion: isGl ? 'a orde en inglés' : 'la orden en inglés',
           ),
         ],
       ),
@@ -492,8 +544,9 @@ class _BotonDeSon extends StatelessWidget {
 
 class _Cue extends StatelessWidget {
   final String texto;
+  final OfflineAudioService? audioService;
 
-  const _Cue({required this.texto});
+  const _Cue({required this.texto, required this.audioService});
 
   @override
   Widget build(BuildContext context) {
@@ -521,6 +574,14 @@ class _Cue extends StatelessWidget {
                 color: _AsambleaPlayerScreenState._textoPrincipal,
               ),
             ),
+          ),
+          const SizedBox(width: 10),
+          BotonEscuchar(
+            audioService: audioService,
+            texto: texto,
+            language: AppLanguage.en,
+            style: estiloIngles(texto),
+            compacto: true,
           ),
         ],
       ),
