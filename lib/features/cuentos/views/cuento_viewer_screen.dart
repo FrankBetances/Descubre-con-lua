@@ -301,6 +301,11 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                         Padding(
                           padding: const EdgeInsets.only(top: 8),
                           child: Column(
+                            // Sen isto cada tarxeta colle o ancho do seu propio
+                            // texto e queda centrada: as preguntas curtas saen
+                            // máis estreitas e metidas cara a dentro, coma se
+                            // fosen subapartados das longas.
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: cuento.preguntasGraduadas.map((preg) {
                               return Container(
                                 margin: const EdgeInsets.only(bottom: 8),
