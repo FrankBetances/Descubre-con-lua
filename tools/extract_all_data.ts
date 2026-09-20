@@ -1,3 +1,22 @@
+// ATENCIÓN: este script NO corre desde un clon de este repositorio.
+//
+// Importa de `.studio_ref/`, que es la copia local del proyecto de Studio AI del
+// que salió este contenido, y `.studio_ref/` está en `.gitignore`: no viaja, y
+// no va a viajar. Lo que sí está en el repositorio es su RESULTADO, en
+// `assets/content/`, que es lo que la app lee y lo que vigilan los gates.
+//
+// Entonces, ¿para qué sigue aquí? Para dejar escrito de dónde salió cada
+// fichero de contenido y con qué nombre se llamaba en el origen. Sin esto, los
+// 9 MB de JSON de `assets/content/` no tienen procedencia ninguna.
+//
+// Para volver a correrlo hace falta la copia de Studio AI en `.studio_ref/` y
+// `npx tsx tools/extract_all_data.ts`. Y ojo: ya NO reproduce el estado actual
+// del repositorio. Después de la extracción se corrigieron cosas que el
+// original traía mal —el `zipf_score` inventado del corpus, el `pos` inventado,
+// el `rfidTag` de otro producto, el banco de contos duplicado— y este script
+// las devolvería. Si algún día se vuelve a extraer, hay que revisar ese
+// historial antes de sobrescribir nada.
+
 import fs from 'fs';
 import path from 'path';
 

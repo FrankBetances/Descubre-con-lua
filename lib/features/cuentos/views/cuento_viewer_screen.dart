@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
+import '../../../core/localization/vocabulario_contos.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/cuento_model.dart';
@@ -29,6 +31,16 @@ class CuentoViewerScreen extends StatefulWidget {
 class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
   int _currentPageIndex = 0;
   bool _mostrarPreguntas = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // La tabla del vocabulario, una vez. Si tarda, la tarjeta se repinta al
+    // llegar; si no está, el vocabulario se queda en gallego y no pasa nada.
+    VocabularioContos.cargar().then((_) {
+      if (mounted) setState(() {});
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -113,92 +125,122 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           borderRadius:
                               BorderRadius.circular(AppTheme.radiusCard),
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(20),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    lang == AppLanguage.gl
-                                        ? 'Páxina ${paginaActual.numero} de ${paginas.length}'
-                                        : 'Página ${paginaActual.numero} de ${paginas.length}',
-                                    style: const TextStyle(
-                                      color: AppTheme.textSecondary,
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                  if (paginaActual.vocabularioClave.isNotEmpty)
-                                    Container(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 8, vertical: 4),
-                                      decoration: BoxDecoration(
-                                        color: AppTheme.primaryLight,
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                      child: Text(
-                                        paginaActual.vocabularioClave
-                                            .join(' · '),
-                                        style: const TextStyle(
-                                          color: AppTheme.primaryDark,
-                                          fontSize: 11,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ),
-                                ],
-                              ),
-                              const SizedBox(height: 16),
-                              Text(
-                                paginaActual.texto.resolve(lang),
-                                style: const TextStyle(
-                                  color: AppTheme.textPrimary,
-                                  fontSize: 17,
-                                  height: 1.5,
-                                  fontWeight: FontWeight.w500,
+                        clipBehavior: Clip.antiAlias,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            // La ilustración de ESTA página. Las 913 páginas
+                            // del banco traen su clave de lámina y las 41
+                            // láminas que nombran existen dibujadas en
+                            // assets/brand/laminas/: el visor simplemente no
+                            // las pintaba y el cuento llegaba al aula como un
+                            // muro de texto.
+                            if (paginaActual.lamina.trim().isNotEmpty)
+                              LayoutBuilder(
+                                builder: (context, limites) => LaminaEscena(
+                                  clave: paginaActual.lamina.trim(),
+                                  ancho: limites.maxWidth.isFinite
+                                      ? limites.maxWidth
+                                      : MediaQuery.of(context).size.width,
                                 ),
                               ),
-                              if ((paginaActual.preguntaImaxe?.resolve(lang) ??
-                                      '')
-                                  .trim()
-                                  .isNotEmpty) ...[
-                                const SizedBox(height: 16),
-                                Container(
-                                  padding: const EdgeInsets.all(12),
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber.shade50,
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(
-                                        color: Colors.amber.shade200),
-                                  ),
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                            Padding(
+                              padding: const EdgeInsets.all(20),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Icon(Icons.help_outline,
-                                          color: Colors.amber, size: 18),
-                                      const SizedBox(width: 8),
-                                      Expanded(
-                                        child: Text(
-                                          paginaActual.preguntaImaxe!
-                                              .resolve(lang),
-                                          style: TextStyle(
-                                            color: Colors.amber.shade900,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.w600,
+                                      Text(
+                                        lang == AppLanguage.gl
+                                            ? 'Páxina ${paginaActual.numero} de ${paginas.length}'
+                                            : 'Página ${paginaActual.numero} de ${paginas.length}',
+                                        style: const TextStyle(
+                                          color: AppTheme.textSecondary,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      if (VocabularioContos.lista(
+                                              paginaActual.vocabularioClave,
+                                              lang)
+                                          .isNotEmpty)
+                                        Container(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 8, vertical: 4),
+                                          decoration: BoxDecoration(
+                                            color: AppTheme.primaryLight,
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                          ),
+                                          child: Text(
+                                            VocabularioContos.lista(
+                                                    paginaActual
+                                                        .vocabularioClave,
+                                                    lang)
+                                                .join(' · '),
+                                            style: const TextStyle(
+                                              color: AppTheme.primaryDark,
+                                              fontSize: 11,
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
                                         ),
-                                      ),
                                     ],
                                   ),
-                                ),
-                              ],
-                            ],
-                          ),
+                                  const SizedBox(height: 16),
+                                  Text(
+                                    paginaActual.texto.resolve(lang),
+                                    style: const TextStyle(
+                                      color: AppTheme.textPrimary,
+                                      fontSize: 17,
+                                      height: 1.5,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                  if ((paginaActual.preguntaImaxe
+                                              ?.resolve(lang) ??
+                                          '')
+                                      .trim()
+                                      .isNotEmpty) ...[
+                                    const SizedBox(height: 16),
+                                    Container(
+                                      padding: const EdgeInsets.all(12),
+                                      decoration: BoxDecoration(
+                                        color: AppTheme.warningBg,
+                                        borderRadius: BorderRadius.circular(10),
+                                        border:
+                                            Border.all(color: AppTheme.star),
+                                      ),
+                                      child: Row(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          const Icon(Icons.help_outline,
+                                              color: AppTheme.warning,
+                                              size: 18),
+                                          const SizedBox(width: 8),
+                                          Expanded(
+                                            child: Text(
+                                              paginaActual.preguntaImaxe!
+                                                  .resolve(lang),
+                                              style: const TextStyle(
+                                                color: AppTheme.warning,
+                                                fontSize: 13,
+                                                fontWeight: FontWeight.w600,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ] else ...[
@@ -219,10 +261,10 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                     // Reto TPR Oral en Inglés
                     if (cuento.tprOral != null)
                       Card(
-                        color: Colors.indigo.shade50,
+                        color: AppTheme.primaryLight,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
-                          side: BorderSide(color: Colors.indigo.shade100),
+                          side: const BorderSide(color: AppTheme.primaryLight),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(14),
@@ -232,14 +274,14 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                               Row(
                                 children: [
                                   const Icon(Icons.sports_gymnastics,
-                                      color: Colors.indigo, size: 18),
+                                      color: AppTheme.primaryDark, size: 18),
                                   const SizedBox(width: 8),
                                   Text(
                                     lang == AppLanguage.gl
                                         ? 'Reto TPR Oral (L3 Inglés)'
                                         : 'Reto TPR Oral (L3 Inglés)',
                                     style: const TextStyle(
-                                      color: Colors.indigo,
+                                      color: AppTheme.primaryDark,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12,
                                     ),
@@ -260,8 +302,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                 lang == AppLanguage.gl
                                     ? cuento.tprOral!.comandoGl
                                     : cuento.tprOral!.comandoEs,
-                                style: TextStyle(
-                                  color: Colors.indigo.shade800,
+                                style: const TextStyle(
+                                  color: AppTheme.primaryInk,
                                   fontSize: 12,
                                 ),
                               ),
@@ -313,8 +355,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8),
-                                  border:
-                                      Border.all(color: Colors.grey.shade200),
+                                  border: Border.all(color: AppTheme.border),
                                 ),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -374,7 +415,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                       label: Text(
                           lang == AppLanguage.gl ? 'Anterior' : 'Anterior'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey.shade100,
+                        backgroundColor: AppTheme.pageBg,
                         foregroundColor: AppTheme.textPrimary,
                         elevation: 0,
                       ),

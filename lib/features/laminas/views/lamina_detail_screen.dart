@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
@@ -80,21 +81,18 @@ class LaminaDetailScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      if (lamina.simbolo != null && lamina.simbolo!.isNotEmpty)
-                        Text(
-                          lamina.simbolo!,
-                          style: TextStyle(
-                            fontSize: 72,
-                            fontWeight: FontWeight.bold,
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(16),
+                        child: LaminaEscena(
+                          clave: lamina.lamina,
+                          ancho: 150,
+                          mentres: Icon(
+                            Icons.image,
+                            size: 64,
                             color: mainColor,
                           ),
-                        )
-                      else
-                        Icon(
-                          Icons.image,
-                          size: 64,
-                          color: mainColor,
                         ),
+                      ),
                       const SizedBox(height: 12),
                       Text(
                         lang == AppLanguage.gl ? lamina.gl : lamina.es,
@@ -107,10 +105,10 @@ class LaminaDetailScreen extends StatelessWidget {
                       const SizedBox(height: 4),
                       Text(
                         'English: ${lamina.en}',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w600,
-                          color: Colors.indigo.shade700,
+                          color: AppTheme.primaryInk,
                         ),
                       ),
                     ],
@@ -125,20 +123,20 @@ class LaminaDetailScreen extends StatelessWidget {
                 children: [
                   _buildBadge(
                     'CEFR: ${lamina.cefr}',
-                    Colors.purple.shade50,
-                    Colors.purple.shade800,
+                    AppTheme.primaryLight,
+                    AppTheme.primaryInk,
                   ),
                   const SizedBox(width: 8),
                   _buildBadge(
                     lamina.categoria,
-                    Colors.teal.shade50,
-                    Colors.teal.shade800,
+                    AppTheme.primaryLight,
+                    AppTheme.primaryInk,
                   ),
                   const SizedBox(width: 8),
                   _buildBadge(
                     'Proporción ${lamina.ratio}',
-                    Colors.grey.shade100,
-                    Colors.grey.shade700,
+                    AppTheme.pageBg,
+                    AppTheme.textSecondary,
                   ),
                 ],
               ),
@@ -205,16 +203,22 @@ class LaminaDetailScreen extends StatelessWidget {
                         Row(
                           children: [
                             const Icon(Icons.track_changes,
-                                color: Colors.amber, size: 20),
+                                color: AppTheme.warning, size: 20),
                             const SizedBox(width: 8),
                             Text(
                               lang == AppLanguage.gl
-                                  ? 'Obxectivo de neurodesenvolvemento'
-                                  : 'Objetivo de neurodesarrollo',
-                              style: TextStyle(
+                                  // «Neurodesenvolvemento» promete una
+                                  // medida del desarrollo del cerebro que esta
+                                  // app ni toma ni podría tomar, y además
+                                  // declara no tener finalidad sanitaria. Lo
+                                  // que hay aquí es lo que se busca con la
+                                  // lámina, que ya es bastante.
+                                  ? 'Que se busca con esta lámina'
+                                  : 'Qué se busca con esta lámina',
+                              style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13,
-                                color: Colors.amber.shade900,
+                                color: AppTheme.warning,
                               ),
                             ),
                           ],
@@ -238,11 +242,11 @@ class LaminaDetailScreen extends StatelessWidget {
               // Reto TPR en inglés
               if (lamina.tprAccion != null)
                 Card(
-                  color: Colors.indigo.shade50,
+                  color: AppTheme.primaryLight,
                   elevation: 0,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
-                    side: BorderSide(color: Colors.indigo.shade100),
+                    side: const BorderSide(color: AppTheme.primaryLight),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(16),
@@ -252,14 +256,14 @@ class LaminaDetailScreen extends StatelessWidget {
                         const Row(
                           children: [
                             Icon(Icons.directions_run,
-                                color: Colors.indigo, size: 20),
+                                color: AppTheme.primaryDark, size: 20),
                             SizedBox(width: 8),
                             Text(
                               'Acción TPR en Inglés (L3)',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13,
-                                color: Colors.indigo,
+                                color: AppTheme.primaryDark,
                               ),
                             ),
                           ],
@@ -278,9 +282,9 @@ class LaminaDetailScreen extends StatelessWidget {
                           lang == AppLanguage.gl
                               ? lamina.tprAccion!.gl
                               : lamina.tprAccion!.es,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 13,
-                            color: Colors.indigo.shade800,
+                            color: AppTheme.primaryInk,
                           ),
                         ),
                       ],

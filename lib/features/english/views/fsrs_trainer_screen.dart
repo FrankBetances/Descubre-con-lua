@@ -6,7 +6,10 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/fsrs_card_model.dart';
 
-/// Entrenador de vocabulario en inglés mediante algoritmo FSRS v4.5.
+/// Entrenador de vocabulario en inglés por repetición espaciada.
+///
+/// El motor es `FsrsService`: los pesos por defecto son los de FSRS-4 y la
+/// curva de olvido, la de 4.5. Por eso la pantalla no pone número de versión.
 class FsrsTrainerScreen extends StatefulWidget {
   final AppLanguage language;
 
@@ -132,19 +135,28 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(14),
-                  border: Border.all(color: Colors.grey.shade200),
+                  border: Border.all(color: AppTheme.border),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     _buildStat(
-                        'Tarxeta', '${_currentIndex + 1}/${_deck.length}'),
-                    _buildStat('Repaso', '$_reviewsCount'),
+                      lang == AppLanguage.gl ? 'Tarxeta' : 'Tarjeta',
+                      '${_currentIndex + 1}/${_deck.length}',
+                    ),
+                    _buildStat(
+                      lang == AppLanguage.gl ? 'Repasos' : 'Repasos',
+                      '$_reviewsCount',
+                    ),
                     if (currentCard != null) ...[
-                      _buildStat('Estabilidade',
-                          '${currentCard.stability.toStringAsFixed(1)}d'),
-                      _buildStat('Dificultade',
-                          '${currentCard.difficulty.toStringAsFixed(1)}/10'),
+                      _buildStat(
+                        lang == AppLanguage.gl ? 'Estabilidade' : 'Estabilidad',
+                        '${currentCard.stability.toStringAsFixed(1)}d',
+                      ),
+                      _buildStat(
+                        lang == AppLanguage.gl ? 'Dificultade' : 'Dificultad',
+                        '${currentCard.difficulty.toStringAsFixed(1)}/10',
+                      ),
                     ],
                   ],
                 ),
@@ -181,9 +193,9 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                             const SizedBox(height: 8),
                             Text(
                               currentWord['ipa']!,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 18,
-                                color: Colors.indigo.shade600,
+                                color: AppTheme.primaryDark,
                                 fontStyle: FontStyle.italic,
                               ),
                             ),
@@ -243,13 +255,25 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
               if (_revealed)
                 Row(
                   children: [
-                    _buildGradeButton(1, 'Again', Colors.red.shade600),
+                    _buildGradeButton(
+                        1,
+                        lang == AppLanguage.gl ? 'Outra vez' : 'Otra vez',
+                        AppTheme.error),
                     const SizedBox(width: 8),
-                    _buildGradeButton(2, 'Hard', Colors.orange.shade700),
+                    _buildGradeButton(
+                        2,
+                        lang == AppLanguage.gl ? 'Custoume' : 'Me costó',
+                        AppTheme.warning),
                     const SizedBox(width: 8),
-                    _buildGradeButton(3, 'Good', AppTheme.primary),
+                    _buildGradeButton(
+                        3,
+                        lang == AppLanguage.gl ? 'Ben' : 'Bien',
+                        AppTheme.primary),
                     const SizedBox(width: 8),
-                    _buildGradeButton(4, 'Easy', AppTheme.success),
+                    _buildGradeButton(
+                        4,
+                        lang == AppLanguage.gl ? 'Doado' : 'Fácil',
+                        AppTheme.success),
                   ],
                 )
               else

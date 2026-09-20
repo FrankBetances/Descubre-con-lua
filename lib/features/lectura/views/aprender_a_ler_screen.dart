@@ -35,8 +35,8 @@ class AprenderALerScreen extends StatelessWidget {
             ? 'Construción de palabras con letras reais de madeira ou imáns'
             : 'Construcción de palabras con letras reales de madera o imanes',
         'icon': Icons.extension,
-        'color': Colors.amber.shade800,
-        'bg': Colors.amber.shade50,
+        'color': AppTheme.warning,
+        'bg': AppTheme.warningBg,
         'builder': (BuildContext ctx) => AlphabotScreen(
               language: lang,
               audioService: audioService,
@@ -50,8 +50,8 @@ class AprenderALerScreen extends StatelessWidget {
             ? 'Guía de articulación e discriminación auditiva dos 44 fonemas'
             : 'Guía de articulación y discriminación auditiva de los 44 fonemas',
         'icon': Icons.graphic_eq,
-        'color': Colors.purple,
-        'bg': Colors.purple.shade50,
+        'color': AppTheme.primaryDark,
+        'bg': AppTheme.primaryLight,
         'builder': (BuildContext ctx) => PhonixQuestScreen(
               repository: repository,
               initialLanguage: lang,
@@ -98,8 +98,8 @@ class AprenderALerScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Colors.teal.shade600, Colors.teal.shade800],
+              gradient: const LinearGradient(
+                colors: [AppTheme.primaryDark, AppTheme.primaryInk],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -210,7 +210,8 @@ class AprenderALerScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Icon(Icons.chevron_right, color: Colors.grey),
+                      const Icon(Icons.chevron_right,
+                          color: AppTheme.textMuted),
                     ],
                   ),
                 ),

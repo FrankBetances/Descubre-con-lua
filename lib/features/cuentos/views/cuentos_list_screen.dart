@@ -8,7 +8,9 @@ import '../../../data/models/cuento_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import 'cuento_viewer_screen.dart';
 
-/// Catálogo y biblioteca de los 200 Contos Pedagóxicos (5 cursos × 10 meses × 4 semanas).
+/// Catálogo y biblioteca de los contos pedagóxicos (5 cursos × 10 meses × 4
+/// semanas). El número de contos NO se escribe en el rótulo: lo cuenta la
+/// propia pantalla a partir de lo que hay cargado, para que no pueda mentir.
 class CuentosListScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
@@ -90,8 +92,8 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
         leading: const BotonAtras(),
         title: Text(
           lang == AppLanguage.gl
-              ? 'Banco de 200 Contos'
-              : 'Banco de 200 Cuentos',
+              ? 'Biblioteca de Contos'
+              : 'Biblioteca de Cuentos',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,
@@ -272,28 +274,44 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                             overflow: TextOverflow.ellipsis,
                                           ),
                                           const SizedBox(height: 6),
-                                          Row(
+                                          // El curso va PRIMERO y siempre. El
+                                          // mismo título se repite a propósito
+                                          // en los cinco cursos —es la misma
+                                          // asamblea contada para cada edad—,
+                                          // así que sin esta etiqueta la lista
+                                          // parecía llena de filas repetidas.
+                                          Wrap(
+                                            spacing: 6,
+                                            runSpacing: 4,
                                             children: [
                                               _buildBadge(
-                                                'Mes ${cuento.mesNumero}',
-                                                Colors.teal.shade50,
-                                                Colors.teal.shade800,
+                                                _etiquetaCurso(
+                                                    cuento.cursoId, lang),
+                                                AppTheme.primaryLight,
+                                                AppTheme.primaryInk,
                                               ),
-                                              const SizedBox(width: 6),
                                               _buildBadge(
-                                                'Semana ${cuento.semanaSugerida}',
-                                                Colors.blue.shade50,
-                                                Colors.blue.shade800,
+                                                lang == AppLanguage.gl
+                                                    ? 'Mes ${cuento.mesNumero}'
+                                                    : 'Mes ${cuento.mesNumero}',
+                                                AppTheme.primaryTint,
+                                                AppTheme.primaryDark,
                                               ),
-                                              if (cuento
-                                                  .paginas.isNotEmpty) ...[
-                                                const SizedBox(width: 6),
+                                              _buildBadge(
+                                                lang == AppLanguage.gl
+                                                    ? 'Semana ${cuento.semanaSugerida}'
+                                                    : 'Semana ${cuento.semanaSugerida}',
+                                                AppTheme.primaryTint,
+                                                AppTheme.primaryDark,
+                                              ),
+                                              if (cuento.paginas.isNotEmpty)
                                                 _buildBadge(
-                                                  '${cuento.paginas.length} páx',
-                                                  Colors.grey.shade100,
-                                                  Colors.grey.shade700,
+                                                  lang == AppLanguage.gl
+                                                      ? '${cuento.paginas.length} páx'
+                                                      : '${cuento.paginas.length} pág',
+                                                  AppTheme.pageBg,
+                                                  AppTheme.textSecondary,
                                                 ),
-                                              ],
                                             ],
                                           ),
                                         ],
@@ -301,7 +319,7 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                     ),
                                     const Icon(
                                       Icons.chevron_right,
-                                      color: Colors.grey,
+                                      color: AppTheme.textMuted,
                                     ),
                                   ],
                                 ),
@@ -314,6 +332,17 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
         ],
       ),
     );
+  }
+
+  /// La misma etiqueta que usan los filtros de arriba, para que la fila y el
+  /// filtro hablen igual.
+  String _etiquetaCurso(String cursoId, AppLanguage lang) {
+    for (final curso in _cursosFiltro) {
+      if (curso['id'] == cursoId) {
+        return (lang == AppLanguage.gl ? curso['gl'] : curso['es'])!;
+      }
+    }
+    return cursoId;
   }
 
   Widget _buildBadge(String text, Color bg, Color textCol) {

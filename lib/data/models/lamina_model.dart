@@ -57,10 +57,24 @@ class Lamina {
   final String en;
   final String cefr; // 'Pre-A1', 'A1', 'A2'
   final String ratio; // '3:5' | '16:10'
-  final String? rfidTag;
+
+  /// La clave de la lámina vectorial que ILUSTRA esta tarjeta, sin ruta ni
+  /// extensión: `mazan`, `conto_mar_1`, `vocab_31`.
+  ///
+  /// No es decorativa: es la única razón por la que la galería enseña algo.
+  /// Antes de existir este campo, la tarjeta traía un `simbolo` que en el
+  /// original era un emoji —y aquí los emoji no entran, regla 5—, así que
+  /// llegaba VACÍO en las 205 y la galería pintaba 205 iconos de imagen rota.
+  /// Lo rellena `tools/draw_flashcards.py`, que además dibuja la lámina de la
+  /// tarjeta que no tenga una propia.
+  ///
+  /// Tampoco está ya `rfidTag`: era un identificador de las tarjetas físicas
+  /// con chip de otro producto. Aquí no hay lector de RFID ni lo va a haber, y
+  /// un campo que no significa nada en esta app solo sirve para que alguien
+  /// construya encima.
+  final String lamina;
   final String? corHex;
   final String? bgHex;
-  final String? simbolo;
   final LocalizedString? preguntaSugerida;
   final LocalizedString? obxectivo;
   final LaminaTprAccion? tprAccion;
@@ -74,10 +88,9 @@ class Lamina {
     required this.en,
     required this.cefr,
     required this.ratio,
-    this.rfidTag,
+    this.lamina = '',
     this.corHex,
     this.bgHex,
-    this.simbolo,
     this.preguntaSugerida,
     this.obxectivo,
     this.tprAccion,
@@ -114,13 +127,11 @@ class Lamina {
       en: json['en']?.toString().trim() ?? '',
       cefr: json['cefr']?.toString().trim() ?? 'Pre-A1',
       ratio: json['ratio']?.toString().trim() ?? '3:5',
-      rfidTag: json['rfidTag']?.toString().trim() ??
-          json['rfid_tag']?.toString().trim(),
+      lamina: json['lamina']?.toString().trim() ?? '',
       corHex: json['corHex']?.toString().trim() ??
           json['cor_hex']?.toString().trim(),
       bgHex:
           json['bgHex']?.toString().trim() ?? json['bg_hex']?.toString().trim(),
-      simbolo: json['simbolo']?.toString().trim(),
       preguntaSugerida: pregunta,
       obxectivo: obj,
       tprAccion: tpr,
@@ -136,10 +147,9 @@ class Lamina {
         'en': en,
         'cefr': cefr,
         'ratio': ratio,
-        if (rfidTag != null) 'rfidTag': rfidTag,
+        if (lamina.isNotEmpty) 'lamina': lamina,
         if (corHex != null) 'corHex': corHex,
         if (bgHex != null) 'bgHex': bgHex,
-        if (simbolo != null) 'simbolo': simbolo,
         if (preguntaSugerida != null)
           'preguntaSugerida': preguntaSugerida!.toJson(),
         if (obxectivo != null) 'obxectivo': obxectivo!.toJson(),
@@ -159,10 +169,9 @@ class Lamina {
           en == other.en &&
           cefr == other.cefr &&
           ratio == other.ratio &&
-          rfidTag == other.rfidTag &&
+          lamina == other.lamina &&
           corHex == other.corHex &&
           bgHex == other.bgHex &&
-          simbolo == other.simbolo &&
           preguntaSugerida == other.preguntaSugerida &&
           obxectivo == other.obxectivo &&
           tprAccion == other.tprAccion;
@@ -177,10 +186,9 @@ class Lamina {
         en,
         cefr,
         ratio,
-        rfidTag,
+        lamina,
         corHex,
         bgHex,
-        simbolo,
         preguntaSugerida,
         obxectivo,
         tprAccion,

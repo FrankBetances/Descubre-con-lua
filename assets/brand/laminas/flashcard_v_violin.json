@@ -1,0 +1,40 @@
+{
+  "vb": 100,
+  "vh": 100,
+  "nota": "Tarxeta de vocabulario: V · Violín doce.",
+  "generado": "tools/draw_flashcards.py",
+  "formas": [
+    {
+      "t": "rrect",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100,
+      "r": 0,
+      "f": "#fef3c7"
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 48,
+      "rx": 33,
+      "ry": 33,
+      "f": "#a162071a"
+    },
+    {
+      "t": "ruta",
+      "d": "M 34.88 24 L 50 72 L 65.12 24",
+      "s": "#a16207",
+      "sw": 7
+    },
+    {
+      "t": "rrect",
+      "x": 34,
+      "y": 84,
+      "w": 32,
+      "h": 5,
+      "r": 2.5,
+      "f": "#a16207"
+    }
+  ]
+}

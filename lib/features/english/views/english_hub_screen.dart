@@ -30,14 +30,17 @@ class EnglishHubScreen extends StatelessWidget {
     final List<Map<String, dynamic>> modules = [
       {
         'title': lang == AppLanguage.gl
-            ? 'Adestrador FSRS v4.5'
-            : 'Entrenador FSRS v4.5',
+            // Sin el número de versión: el motor usa los pesos por defecto de
+            // FSRS-4 con la curva de olvido de 4.5, así que llamarlo «v4.5» a
+            // secas es más preciso de lo que el código sostiene.
+            ? 'Adestrador de repetición espazada'
+            : 'Entrenador de repetición espaciada',
         'subtitle': lang == AppLanguage.gl
             ? 'Repetición espazada baseada na curva de esquecemento DSR'
             : 'Repetición espaciada basada en la curva de olvido DSR',
         'icon': Icons.bolt,
-        'color': Colors.amber.shade700,
-        'bg': Colors.amber.shade50,
+        'color': AppTheme.warning,
+        'bg': AppTheme.warningBg,
         'builder': (BuildContext ctx) => FsrsTrainerScreen(language: lang),
       },
       {
@@ -48,8 +51,8 @@ class EnglishHubScreen extends StatelessWidget {
             ? 'Escoita dialóxica con resposta corporal motora (TPR)'
             : 'Escucha dialógica con respuesta corporal motora (TPR)',
         'icon': Icons.headphones,
-        'color': Colors.indigo,
-        'bg': Colors.indigo.shade50,
+        'color': AppTheme.primaryDark,
+        'bg': AppTheme.primaryLight,
         'builder': (BuildContext ctx) => ListeningScreen(
               language: lang,
               audioService: audioService,
@@ -63,8 +66,8 @@ class EnglishHubScreen extends StatelessWidget {
             ? 'Patróns léxicos naturais verbo + substantivo para o fogar e aula'
             : 'Patrones léxicos naturales verbo + sustantivo para el hogar y aula',
         'icon': Icons.menu_book,
-        'color': Colors.teal,
-        'bg': Colors.teal.shade50,
+        'color': AppTheme.primaryDark,
+        'bg': AppTheme.primaryLight,
         'builder': (BuildContext ctx) => CollocationsScreen(
               repository: repository,
               initialLanguage: lang,
@@ -76,11 +79,11 @@ class EnglishHubScreen extends StatelessWidget {
             ? 'Corpus 8.000 Palabras'
             : 'Corpus 8.000 Palabras',
         'subtitle': lang == AppLanguage.gl
-            ? 'Explorador BNC/COCA organizado por bandas 1k..8k e niveis CEFR'
-            : 'Explorador BNC/COCA organizado por bandas 1k..8k y niveles CEFR',
+            ? 'Explorador BNC/COCA por bandas de frecuencia 1k..8k, con nivel orientativo'
+            : 'Explorador BNC/COCA por bandas de frecuencia 1k..8k, con nivel orientativo',
         'icon': Icons.search,
-        'color': Colors.purple,
-        'bg': Colors.purple.shade50,
+        'color': AppTheme.primaryDark,
+        'bg': AppTheme.primaryLight,
         'builder': (BuildContext ctx) => Palabras8000Screen(
               repository: repository,
               initialLanguage: lang,
@@ -113,8 +116,8 @@ class EnglishHubScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Colors.indigo.shade600, Colors.indigo.shade800],
+              gradient: const LinearGradient(
+                colors: [AppTheme.primaryDark, AppTheme.primaryInk],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -128,7 +131,7 @@ class EnglishHubScreen extends StatelessWidget {
                     Icon(Icons.language, color: Colors.white, size: 24),
                     SizedBox(width: 8),
                     Text(
-                      'ENGLISH IMMERSION HUB',
+                      'INMERSIÓN EN INGLÉS',
                       style: TextStyle(
                         color: Colors.white70,
                         fontWeight: FontWeight.bold,
@@ -225,7 +228,8 @@ class EnglishHubScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Icon(Icons.chevron_right, color: Colors.grey),
+                      const Icon(Icons.chevron_right,
+                          color: AppTheme.textMuted),
                     ],
                   ),
                 ),

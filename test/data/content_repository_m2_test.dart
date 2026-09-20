@@ -110,26 +110,20 @@ void main() {
       const p1 = CorpusPalabra(
         id: 1,
         lemma: 'water',
-        pos: 'NOUN',
         banda: '1k',
         nivelCefr: 'A1/A2',
-        zipfScore: 7.2,
       );
       const p2 = CorpusPalabra(
         id: 2,
         lemma: 'watermelon',
-        pos: 'NOUN',
         banda: '3k',
         nivelCefr: 'B1',
-        zipfScore: 4.8,
       );
       const p3 = CorpusPalabra(
         id: 3,
         lemma: 'drink',
-        pos: 'VERB',
         banda: '1k',
         nivelCefr: 'A1/A2',
-        zipfScore: 6.9,
       );
 
       repo.addCorpusPalabra(p1);
@@ -376,7 +370,7 @@ void main() {
     test('loading from mocked asset bundle loader parses successfully',
         () async {
       final mockAssets = <String, String>{
-        ContentRepository.cuentos200AssetPath: jsonEncode([
+        ContentRepository.historiasProgresivasAssetPath: jsonEncode([
           {
             'id': 'conto_mock_01',
             'cursoId': 'curso_0_2',

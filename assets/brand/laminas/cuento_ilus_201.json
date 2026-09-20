@@ -1,0 +1,46 @@
+{
+  "vb": 100,
+  "vh": 100,
+  "nota": "Tarxeta de vocabulario: A abella que convidou aos seus amigos.",
+  "generado": "tools/draw_flashcards.py",
+  "formas": [
+    {
+      "t": "rrect",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100,
+      "r": 0,
+      "f": "#eab30812"
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 48,
+      "rx": 33,
+      "ry": 33,
+      "f": "#eab3081a"
+    },
+    {
+      "t": "ruta",
+      "d": "M 32 72 L 50 24 L 68 72",
+      "s": "#eab308",
+      "sw": 7
+    },
+    {
+      "t": "ruta",
+      "d": "M 38.48 55.68 L 61.52 55.68",
+      "s": "#eab308",
+      "sw": 7
+    },
+    {
+      "t": "rrect",
+      "x": 34,
+      "y": 84,
+      "w": 32,
+      "h": 5,
+      "r": 2.5,
+      "f": "#eab308"
+    }
+  ]
+}

@@ -6,7 +6,14 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/estrategia_model.dart';
 import '../../../data/repositories/content_repository.dart';
 
-/// Catálogo de Estratexias Pedagóxicas baseadas en evidencia científica.
+/// Catálogo de estratexias pedagóxicas de aula.
+///
+/// **Cuidado con la palabra «evidencia».** Este catálogo llegó rotulado como
+/// «baseadas en evidencia científica» y con un apartado titulado «Base
+/// Neurobiolóxica», y ni el modelo de datos ni el contenido traen UNA sola
+/// referencia que sostenga eso. Son buenas prácticas de aula, que es mucho, y
+/// se presentan como lo que son: sin cita no se dice «evidencia», y esta app
+/// declara que no tiene finalidad sanitaria.
 class EstrategiasScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
@@ -67,9 +74,36 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
           ? const Center(child: CircularProgressIndicator())
           : ListView.builder(
               padding: const EdgeInsets.all(16),
-              itemCount: _estrategias.length,
+              itemCount: _estrategias.length + 1,
               itemBuilder: (context, index) {
-                final est = _estrategias[index];
+                if (index == 0) {
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 16),
+                    child: Container(
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: AppTheme.warningBg,
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: AppTheme.star),
+                      ),
+                      child: Text(
+                        lang == AppLanguage.gl
+                            ? 'Son orientacións de práctica de aula, escritas para '
+                                'a persoa adulta. Non son un protocolo clínico nin '
+                                'substitúen a valoración dun profesional.'
+                            : 'Son orientaciones de práctica de aula, escritas para '
+                                'la persona adulta. No son un protocolo clínico ni '
+                                'sustituyen la valoración de un profesional.',
+                        style: const TextStyle(
+                          fontSize: 12,
+                          height: 1.4,
+                          color: AppTheme.warning,
+                        ),
+                      ),
+                    ),
+                  );
+                }
+                final est = _estrategias[index - 1];
                 return Card(
                   margin: const EdgeInsets.only(bottom: 16),
                   elevation: 0.5,
@@ -119,14 +153,14 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                         ),
                         const SizedBox(height: 14),
 
-                        // Base Neurobiolóxica
+                        // El porqué de la estrategia
                         _buildSection(
                           icon: Icons.biotech,
                           title: lang == AppLanguage.gl
-                              ? 'Base Neurobiolóxica'
-                              : 'Base Neurobiológica',
+                              ? 'Por que funciona'
+                              : 'Por qué funciona',
                           content: est.baseNeurobioloxica.resolve(lang),
-                          color: Colors.teal.shade800,
+                          color: AppTheme.primaryInk,
                         ),
 
                         const SizedBox(height: 10),
@@ -147,23 +181,23 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                         Container(
                           padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
-                            color: Colors.amber.shade50,
+                            color: AppTheme.warningBg,
                             borderRadius: BorderRadius.circular(10),
-                            border: Border.all(color: Colors.amber.shade200),
+                            border: Border.all(color: AppTheme.star),
                           ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Icon(Icons.forum,
-                                  color: Colors.amber, size: 18),
+                                  color: AppTheme.warning, size: 18),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
                                   est.exemploDialogoAula.resolve(lang),
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 13,
                                     fontStyle: FontStyle.italic,
-                                    color: Colors.amber.shade900,
+                                    color: AppTheme.warning,
                                   ),
                                 ),
                               ),
@@ -177,22 +211,22 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                         Container(
                           padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
-                            color: Colors.red.shade50,
+                            color: AppTheme.errorBg,
                             borderRadius: BorderRadius.circular(10),
-                            border: Border.all(color: Colors.red.shade100),
+                            border: Border.all(color: AppTheme.errorBg),
                           ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Icon(Icons.warning_amber,
-                                  color: Colors.red.shade700, size: 18),
+                              const Icon(Icons.warning_amber,
+                                  color: AppTheme.error, size: 18),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
                                   'Evitar: ${est.erroComunAEvitar.resolve(lang)}',
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 12,
-                                    color: Colors.red.shade900,
+                                    color: AppTheme.error,
                                   ),
                                 ),
                               ),

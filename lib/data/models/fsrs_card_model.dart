@@ -130,6 +130,11 @@ class FSRSCard {
     );
   }
 
+  /// `aaaa-mm-dd` de una fecha, sin hora ni zona.
+  static String _soloDia(DateTime d) => '${d.year.toString().padLeft(4, '0')}-'
+      '${d.month.toString().padLeft(2, '0')}-'
+      '${d.day.toString().padLeft(2, '0')}';
+
   /// Serializes to JSON map.
   Map<String, dynamic> toJson() => {
         'id': id,
@@ -139,8 +144,12 @@ class FSRSCard {
         'retrievability': retrievability,
         'reps': reps,
         'lapses': lapses,
-        'lastReviewDate': lastReviewDate.millisecondsSinceEpoch,
-        'nextDueDate': nextDueDate.millisecondsSinceEpoch,
+        // aaaa-mm-dd, SIN hora. Guardar el instante en milisegundos diría a
+        // qué hora trabaja la persona adulta, y la política de privacidad
+        // promete lo contrario. FSRS programa en días enteros: la hora no le
+        // hace falta a nadie. Lo vigila test/core/progreso_privacidad_test.dart.
+        'lastReviewDate': _soloDia(lastReviewDate),
+        'nextDueDate': _soloDia(nextDueDate),
         'scheduledDays': scheduledDays,
         'state': state.label,
       };

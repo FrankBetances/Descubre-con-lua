@@ -249,7 +249,7 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                                     ? 'Rutina no Fogar'
                                     : 'Rutina en el Hogar',
                                 content: mes.actividadHogar.resolve(lang),
-                                color: Colors.amber.shade900,
+                                color: AppTheme.warning,
                               ),
                               const SizedBox(height: 8),
 
@@ -257,19 +257,19 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                               Container(
                                 padding: const EdgeInsets.all(10),
                                 decoration: BoxDecoration(
-                                  color: Colors.indigo.shade50,
+                                  color: AppTheme.primaryLight,
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Row(
                                   children: [
                                     const Icon(Icons.language,
-                                        color: Colors.indigo, size: 18),
+                                        color: AppTheme.primaryDark, size: 18),
                                     const SizedBox(width: 8),
                                     Expanded(
                                       child: Text(
                                         'L3: "${mes.ingles.frase}" (TPR: ${mes.ingles.tpr.join(", ")})',
-                                        style: TextStyle(
-                                          color: Colors.indigo.shade800,
+                                        style: const TextStyle(
+                                          color: AppTheme.primaryInk,
                                           fontSize: 12,
                                           fontWeight: FontWeight.w600,
                                         ),

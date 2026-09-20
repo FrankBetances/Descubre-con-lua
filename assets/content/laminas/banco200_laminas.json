@@ -8,10 +8,8 @@
     "en": "A · Apple",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-001",
     "corHex": "#dc2626",
     "bgHex": "#fef2f2",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ves a mazá vermella? ¿A quen lle gusta morder «ñam-ñam»?",
       "es": "¿Ves la manzana roja? ¿A quién le gusta morder «ñam-ñam»?"
@@ -24,7 +22,8 @@
       "en": "Munch an apple! Crunch, crunch!",
       "gl": "Facer o xesto de morder unha mazá saborosa.",
       "es": "Hacer el gesto de morder una manzana sabrosa."
-    }
+    },
+    "lamina": "mazan"
   },
   {
     "id": "flashcard_b_boat",
@@ -35,10 +34,8 @@
     "en": "B · Boat",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-002",
     "corHex": "#0284c7",
     "bgHex": "#f0f9ff",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde navega o barquiño? ¿Baila sobre as ondas do mar?",
       "es": "¿Dónde navega el barquito? ¿Baila sobre las olas del mar?"
@@ -51,7 +48,8 @@
       "en": "Row your boat on the sea waves!",
       "gl": "Remar cos brazos cara adiante e cara atrás.",
       "es": "Remar con los brazos hacia adelante y hacia atrás."
-    }
+    },
+    "lamina": "barco"
   },
   {
     "id": "flashcard_c_cat",
@@ -62,10 +60,8 @@
     "en": "C · Cat",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-003",
     "corHex": "#ea580c",
     "bgHex": "#fff7ed",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como fai a gatiña cando está agarimosa? «Miau, miau...»",
       "es": "¿Cómo hace la gatita cuando está cariñosa? «Miau, miau...»"
@@ -78,7 +74,8 @@
       "en": "Soft kitten paws, stretch and purr!",
       "gl": "Pousar a man suavemente na cara coma unha patiña.",
       "es": "Poner la mano suavemente en la cara como una patita."
-    }
+    },
+    "lamina": "gato"
   },
   {
     "id": "flashcard_d_dog",
@@ -89,10 +86,8 @@
     "en": "D · Dog",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-004",
     "corHex": "#b45309",
     "bgHex": "#fefce8",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como move o rabiño o can de Vigo? «Guau, guau!»",
       "es": "¿Cómo mueve la colita el perro de Vigo? «¡Guau, guau!»"
@@ -105,7 +100,8 @@
       "en": "Wiggle your tail like a happy puppy!",
       "gl": "Mover as mans atrás simulando o rabiño contento.",
       "es": "Mover las manos atrás simulando la colita contenta."
-    }
+    },
+    "lamina": "flashcard_d_dog"
   },
   {
     "id": "flashcard_e_elephant",
@@ -116,10 +112,8 @@
     "en": "E · Elephant",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-005",
     "corHex": "#64748b",
     "bgHex": "#f8fafc",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que longa é a trompa do elefante! ¿Podes erguela ben alto?",
       "es": "¡Qué larga es la trompa del elefante! ¿Puedes alzarla bien alto?"
@@ -132,7 +126,8 @@
       "en": "Raise your trunk high and stomp your feet!",
       "gl": "Erguer o brazo facendo de trompa e pisar forte no chan.",
       "es": "Alzar el brazo haciendo de trompa y pisar fuerte en el suelo."
-    }
+    },
+    "lamina": "flashcard_e_elephant"
   },
   {
     "id": "flashcard_f_fish",
@@ -143,10 +138,8 @@
     "en": "F · Fish",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-006",
     "corHex": "#0891b2",
     "bgHex": "#ecfeff",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como nada o peixe na auga limpa? «Glub, glub!»",
       "es": "¿Cómo nada el pez en el agua limpia? «¡Glub, glub!»"
@@ -159,7 +152,8 @@
       "en": "Swim like a little fish, glide through the water!",
       "gl": "Xuntar palmas e facer ondas suaves diante do peito.",
       "es": "Juntar palmas y hacer ondas suaves delante del pecho."
-    }
+    },
+    "lamina": "peixe"
   },
   {
     "id": "flashcard_g_guitar",
@@ -170,10 +164,8 @@
     "en": "G · Guitar",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-007",
     "corHex": "#d97706",
     "bgHex": "#fffbeb",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Tocas as cordas da guitarra? «Din, don, dan!»",
       "es": "¿Tocas las cuerdas de la guitarra? «¡Din, don, dan!»"
@@ -186,7 +178,8 @@
       "en": "Strum the strings to the 72 bpm beat!",
       "gl": "Mover os dedos no aire coma tocando cordas rítmicas.",
       "es": "Mover los dedos en el aire como tocando cuerdas rítmicas."
-    }
+    },
+    "lamina": "flashcard_g_guitar"
   },
   {
     "id": "flashcard_h_hat",
@@ -197,10 +190,8 @@
     "en": "H · Hat",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-008",
     "corHex": "#4338ca",
     "bgHex": "#eef2ff",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde pomos o gorro cando fai frío? ¿Na cabeza ou nos pés?",
       "es": "¿Dónde ponemos el gorro cuando hace frío? ¿En la cabeza o en los pies?"
@@ -213,7 +204,8 @@
       "en": "Put on your warm winter hat!",
       "gl": "Levar as dúas mans á cabeza e axustar o gorro imaxinario.",
       "es": "Llevar las dos manos a la cabeza y ajustar el gorro imaginario."
-    }
+    },
+    "lamina": "gorro"
   },
   {
     "id": "flashcard_i_island",
@@ -224,10 +216,8 @@
     "en": "I · Island",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-009",
     "corHex": "#059669",
     "bgHex": "#ecfdf5",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ves as tres illas verdes na entrada da nosa ría?",
       "es": "¿Ves las tres islas verdes en la entrada de nuestra ría?"
@@ -240,7 +230,8 @@
       "en": "Look far away with hand over eyes: island ahead!",
       "gl": "Poñer a man na fronte coma visera ollando ao horizonte.",
       "es": "Poner la mano en la frente como visera mirando al horizonte."
-    }
+    },
+    "lamina": "flashcard_i_island"
   },
   {
     "id": "flashcard_j_juice",
@@ -251,10 +242,8 @@
     "en": "J · Juice",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-010",
     "corHex": "#f97316",
     "bgHex": "#fff7ed",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Bebemos un groliño de zume fresco na merenda? «Glup!»",
       "es": "¿Bebemos un traguito de zumo fresco en la merienda? «¡Glup!»"
@@ -267,7 +256,8 @@
       "en": "Hold your cup with two hands and take a sip!",
       "gl": "Suxeitar o vaso coas dúas mans e facer son de beber.",
       "es": "Sujetar el vaso con las dos manos y hacer sonido de beber."
-    }
+    },
+    "lamina": "laranxa"
   },
   {
     "id": "flashcard_k_kite",
@@ -278,10 +268,8 @@
     "en": "K · Kite",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-011",
     "corHex": "#7c3aed",
     "bgHex": "#f5f3ff",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como voa o papaventos cando sopra o vento da ría? ¡Sopla forte!",
       "es": "¿Cómo vuela la cometa cuando sopla el viento de la ría? ¡Sopla fuerte!"
@@ -294,7 +282,8 @@
       "en": "Blow wind: Fffff! Fly your kite high!",
       "gl": "Soprar cos beizos en círculo e erguer a man cara arriba.",
       "es": "Soplar con los labios en círculo y alzar la mano hacia arriba."
-    }
+    },
+    "lamina": "flashcard_k_kite"
   },
   {
     "id": "flashcard_l_leaf",
@@ -305,10 +294,8 @@
     "en": "L · Leaf",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-012",
     "corHex": "#ca8a04",
     "bgHex": "#fefce8",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A folla cae amodo da árbore de Castrelos? «Plaf!»",
       "es": "¿La hoja cae despacio del árbol de Castrelos? «¡Plaf!»"
@@ -321,7 +308,8 @@
       "en": "Falling leaf, twirl gently to the floor!",
       "gl": "Xirar as mans baixando amodiño ata tocar o chan.",
       "es": "Girar las manos bajando despacito hasta tocar el suelo."
-    }
+    },
+    "lamina": "folla"
   },
   {
     "id": "flashcard_m_moon",
@@ -332,10 +320,8 @@
     "en": "M · Moon",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-013",
     "corHex": "#1e293b",
     "bgHex": "#f8fafc",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ves a Lúa brillante que nos canta o cantar de berce?",
       "es": "¿Ves la Luna brillante que nos canta la nana de cuna?"
@@ -348,7 +334,8 @@
       "en": "Close your eyes and make a soft sleeping sound: Shhh...",
       "gl": "Pechar os ollos e xuntar as mans debaixo da meixela.",
       "es": "Cerrar los ojos y juntar las manos debajo de la mejilla."
-    }
+    },
+    "lamina": "flashcard_m_moon"
   },
   {
     "id": "flashcard_n_nest",
@@ -359,10 +346,8 @@
     "en": "N · Nest",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-014",
     "corHex": "#78350f",
     "bgHex": "#fef3c7",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que hai dentro do niño quentiño? ¿Paxariños pequenos?",
       "es": "¿Qué hay dentro del nido calentito? ¿Pajaritos pequeños?"
@@ -375,7 +360,8 @@
       "en": "Cup your hands together to make a warm nest!",
       "gl": "Facer un cunquiño coas dúas mans diante do peito.",
       "es": "Hacer un cuenquito con las dos manos delante del pecho."
-    }
+    },
+    "lamina": "flashcard_n_nest"
   },
   {
     "id": "flashcard_o_octopus",
@@ -386,10 +372,8 @@
     "en": "O · Octopus",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-015",
     "corHex": "#db2777",
     "bgHex": "#fdf2f8",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Cantas patas ten o polvo mariño? ¡Baila con oito tentáculos!",
       "es": "¿Cuántas patas tiene el pulpo marino? ¡Baila con ocho tentáculos!"
@@ -402,7 +386,8 @@
       "en": "Wiggle all your eight fingers like octopus legs!",
       "gl": "Mover todos os dedos axilmente coma tentáculos brandos.",
       "es": "Mover todos los dedos ágilmente como tentáculos blandos."
-    }
+    },
+    "lamina": "flashcard_o_octopus"
   },
   {
     "id": "flashcard_p_pumpkin",
@@ -413,10 +398,8 @@
     "en": "P · Pumpkin",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-016",
     "corHex": "#ea580c",
     "bgHex": "#fff7ed",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A cabaza é redonda coma unha pelota grande? ¿Facemos un círculo?",
       "es": "¿La calabaza es redonda como una pelota grande? ¿Hacemos un círculo?"
@@ -429,7 +412,8 @@
       "en": "Draw a big round circle in the air with both hands!",
       "gl": "Debuxar un gran círculo no aire cos dous brazos xuntos.",
       "es": "Dibujar un gran círculo en el aire con los dos brazos juntos."
-    }
+    },
+    "lamina": "flashcard_p_pumpkin"
   },
   {
     "id": "flashcard_q_quiet",
@@ -440,10 +424,8 @@
     "en": "Q · Quiet",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-017",
     "corHex": "#6366f1",
     "bgHex": "#e0e7ff",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Podes poñer o dedito nos beizos? «Shhh... calmiña...»",
       "es": "¿Puedes poner el dedito en los labios? «Shhh... calma...»"
@@ -456,7 +438,8 @@
       "en": "Finger to lips: Shhh, quiet time...",
       "gl": "Dedo índice sobre os beizos en actitude de escoita.",
       "es": "Dedo índice sobre los labios en actitud de escucha."
-    }
+    },
+    "lamina": "flashcard_q_quiet"
   },
   {
     "id": "flashcard_r_rain",
@@ -467,10 +450,8 @@
     "en": "R · Rain",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-018",
     "corHex": "#2563eb",
     "bgHex": "#eff6ff",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como caen as pinguiñas de chuvia de Vigo? «Plip, plop, plip!»",
       "es": "¿Cómo caen las gotitas de lluvia de Vigo? «¡Plip, plop, plip!»"
@@ -483,7 +464,8 @@
       "en": "Tip-tap fingers on thighs like gentle rain: Plip, plop!",
       "gl": "Bater as puntas dos dedos nas pernas coma pingas no tellado.",
       "es": "Golpear las puntas de los dedos en las piernas como gotas en el tejado."
-    }
+    },
+    "lamina": "choiva"
   },
   {
     "id": "flashcard_s_sun",
@@ -494,10 +476,8 @@
     "en": "S · Sun",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-019",
     "corHex": "#eab308",
     "bgHex": "#fef9c3",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como quece o sol na praia de Samil? ¿Sentides a calorciña?",
       "es": "¿Cómo calienta el sol en la playa de Samil? ¿Sentís el calorcito?"
@@ -510,7 +490,8 @@
       "en": "Open your arms wide to welcome the sunny day!",
       "gl": "Abrir os dous brazos en cruz mirando cara arriba cun sorriso.",
       "es": "Abrir los dos brazos en cruz mirando hacia arriba con una sonrisa."
-    }
+    },
+    "lamina": "sol"
   },
   {
     "id": "flashcard_t_tree",
@@ -521,10 +502,8 @@
     "en": "T · Tree",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-020",
     "corHex": "#15803d",
     "bgHex": "#f0fdf4",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A árbore é alta e forte? ¿Móvense as súas ramas co vento?",
       "es": "¿El árbol es alto y fuerte? ¿Se mueven sus ramas con el viento?"
@@ -537,7 +516,8 @@
       "en": "Stand tall like a strong oak tree in the forest!",
       "gl": "Poñerse de pé moi rectos e erguer as ramas ao aire.",
       "es": "Ponerse de pie muy rectos y alzar las ramas al aire."
-    }
+    },
+    "lamina": "arbore"
   },
   {
     "id": "flashcard_u_umbrella",
@@ -548,10 +528,8 @@
     "en": "U · Umbrella",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-021",
     "corHex": "#0284c7",
     "bgHex": "#e0f2fe",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Abrimos o paraugas para non mollarnos? ¡Chas!",
       "es": "¿Abrimos el paraguas para no mojarnos? ¡Chas!"
@@ -564,7 +542,8 @@
       "en": "Open your umbrella: Click! Stay dry under the rain!",
       "gl": "Erguer unha man por riba da cabeza facendo o arco protector.",
       "es": "Alzar una mano por encima de la cabeza haciendo el arco protector."
-    }
+    },
+    "lamina": "paraugas"
   },
   {
     "id": "flashcard_v_violin",
@@ -575,10 +554,8 @@
     "en": "V · Violin",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-022",
     "corHex": "#a16207",
     "bgHex": "#fef3c7",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como soa o violín fino? «Ñi, ñi, ñi...»",
       "es": "¿Cómo suena el violín fino? «Ñi, ñi, ñi...»"
@@ -591,7 +568,8 @@
       "en": "Move your bow across the violin: Sweeeet melody!",
       "gl": "Apoiar o queixo nun ombreiro e mover a man coma un arco.",
       "es": "Apoyar la barbilla en un hombro y mover la mano como un arco."
-    }
+    },
+    "lamina": "flashcard_v_violin"
   },
   {
     "id": "flashcard_w_water",
@@ -602,10 +580,8 @@
     "en": "W · Water",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-023",
     "corHex": "#06b6d4",
     "bgHex": "#cffafe",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como lavamos as mans con auga morna? «Chof, chof!»",
       "es": "¿Cómo lavamos las manos con agua tibia? «¡Chof, chof!»"
@@ -618,7 +594,8 @@
       "en": "Wash, wash your hands with clean warm water!",
       "gl": "Fregar as dúas palmas xuntas coma lavando con xabón.",
       "es": "Frotar las dos palmas juntas como lavando con jabón."
-    }
+    },
+    "lamina": "auga"
   },
   {
     "id": "flashcard_x_xylophone",
@@ -629,10 +606,8 @@
     "en": "X · Xylophone",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-024",
     "corHex": "#ec4899",
     "bgHex": "#fdf2f8",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Tocamos cada barra de cor? ¡Tilín, tilán, tilón!",
       "es": "¿Tocamos cada barra de color? ¡Tilín, tilán, tilón!"
@@ -645,7 +620,8 @@
       "en": "Tap the xylophone keys: Ting, ting, tong!",
       "gl": "Puntear no aire coma tocando láminas musicais afinadas.",
       "es": "Puntear en el aire como tocando láminas musicales afinadas."
-    }
+    },
+    "lamina": "flashcard_x_xylophone"
   },
   {
     "id": "flashcard_y_yellow",
@@ -656,10 +632,8 @@
     "en": "Y · Yellow",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-025",
     "corHex": "#eab308",
     "bgHex": "#fefce8",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que cousas son amarelas? ¿O limón, o sol, o plátano?",
       "es": "¿Qué cosas son amarillas? ¿El limón, el sol, el plátano?"
@@ -672,7 +646,8 @@
       "en": "Point to something yellow around you!",
       "gl": "Sinalar co dedo calquera elemento amarelo da aula.",
       "es": "Señalar con el dedo cualquier elemento amarillo del aula."
-    }
+    },
+    "lamina": "amarelo"
   },
   {
     "id": "flashcard_z_zebra",
@@ -683,10 +658,8 @@
     "en": "Z · Zebra",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-026",
     "corHex": "#18181b",
     "bgHex": "#f4f4f5",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A cebra ten raias brancas e negras? ¿Podes contalas?",
       "es": "¿La cebra tiene rayas blancas y negras? ¿Puedes contarlas?"
@@ -699,7 +672,8 @@
       "en": "Trot, trot like a striped zebra: Clip-clop!",
       "gl": "Picar no chan cos pés alternos coma o trote da cebra.",
       "es": "Picar en el suelo con los pies alternos como el trote de la cebra."
-    }
+    },
+    "lamina": "flashcard_z_zebra"
   },
   {
     "id": "vocab_27",
@@ -710,10 +684,8 @@
     "en": "House",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-027",
     "corHex": "#b45309",
     "bgHex": "#b4530912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde vive a túa familia con agarimo?",
       "es": "¿Dónde vive tu familia con cariño?"
@@ -726,7 +698,8 @@
       "en": "Make a roof with your hands",
       "gl": "Facer o tellado coas mans",
       "es": "Facer o tellado coas mans"
-    }
+    },
+    "lamina": "vocab_27"
   },
   {
     "id": "vocab_28",
@@ -737,10 +710,8 @@
     "en": "Table",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-028",
     "corHex": "#78350f",
     "bgHex": "#78350f12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que poñemos sobre a mesa para merendar?",
       "es": "¿Qué ponemos sobre la mesa para merendar?"
@@ -753,7 +724,8 @@
       "en": "Put flat hands on the table",
       "gl": "Pousar as mans planas na mesa",
       "es": "Pousar as mans planas na mesa"
-    }
+    },
+    "lamina": "vocab_28"
   },
   {
     "id": "vocab_29",
@@ -764,10 +736,8 @@
     "en": "Chair",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-029",
     "corHex": "#d97706",
     "bgHex": "#d9770612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Sentamos xuntos na cadeira baixiña?",
       "es": "¿Nos sentamos juntos en la silla bajita?"
@@ -780,7 +750,8 @@
       "en": "Sit down gently and quiet",
       "gl": "Sentar amodiño sen ruído",
       "es": "Sentar amodiño sen ruído"
-    }
+    },
+    "lamina": "vocab_29"
   },
   {
     "id": "vocab_30",
@@ -791,10 +762,8 @@
     "en": "Plate",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-030",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿O prato está cheo de comida rica?",
       "es": "¿El plato está lleno de comida rica?"
@@ -807,7 +776,8 @@
       "en": "Trace a circle in the air",
       "gl": "Debuxar un prato no aire",
       "es": "Debuxar un prato no aire"
-    }
+    },
+    "lamina": "vocab_30"
   },
   {
     "id": "vocab_31",
@@ -818,10 +788,8 @@
     "en": "Spoon",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-031",
     "corHex": "#64748b",
     "bgHex": "#64748b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Levamos a culler á boca sen verquer?",
       "es": "¿Llevamos la cuchara a la boca sin tirar?"
@@ -834,7 +802,8 @@
       "en": "Bring spoon to mouth",
       "gl": "Levar a culler imaxinaria á boca",
       "es": "Levar a culler imaxinaria á boca"
-    }
+    },
+    "lamina": "vocab_31"
   },
   {
     "id": "vocab_32",
@@ -845,10 +814,8 @@
     "en": "Glass",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-032",
     "corHex": "#06b6d4",
     "bgHex": "#06b6d412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Bebemos auga fresca cando temos sede?",
       "es": "¿Bebemos agua fresca cuando tenemos sed?"
@@ -861,7 +828,8 @@
       "en": "Hold glass with two hands",
       "gl": "Suxeitar con dúas mans",
       "es": "Suxeitar con dúas mans"
-    }
+    },
+    "lamina": "vocab_32"
   },
   {
     "id": "vocab_33",
@@ -872,10 +840,8 @@
     "en": "Bed",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-033",
     "corHex": "#6366f1",
     "bgHex": "#6366f112",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde descansamos para ter soños doces?",
       "es": "¿Dónde descansamos para tener dulces sueños?"
@@ -888,7 +854,8 @@
       "en": "Snuggle your head to rest",
       "gl": "Acochar a cabeza no colo",
       "es": "Acochar a cabeza no colo"
-    }
+    },
+    "lamina": "vocab_33"
   },
   {
     "id": "vocab_34",
@@ -899,10 +866,8 @@
     "en": "Rug",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-034",
     "corHex": "#ea580c",
     "bgHex": "#ea580c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Sentamos todos no círculo da alfombra?",
       "es": "¿Nos sentamos todos en el círculo de la alfombra?"
@@ -915,7 +880,8 @@
       "en": "Sit crossed-legged in circle",
       "gl": "Sentar coas pernas cruzadas",
       "es": "Sentar coas pernas cruzadas"
-    }
+    },
+    "lamina": "vocab_34"
   },
   {
     "id": "vocab_35",
@@ -926,10 +892,8 @@
     "en": "Book",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-035",
     "corHex": "#c2410c",
     "bgHex": "#c2410c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Pasamos a páxina con coidadiño?",
       "es": "¿Pasamos la página con cuidadito?"
@@ -942,7 +906,8 @@
       "en": "Open hands like a book",
       "gl": "Abrir e pechar mans coma un libro",
       "es": "Abrir e pechar mans coma un libro"
-    }
+    },
+    "lamina": "vocab_35"
   },
   {
     "id": "vocab_36",
@@ -953,10 +918,8 @@
     "en": "Backpack",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-036",
     "corHex": "#ef4444",
     "bgHex": "#ef444412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que traes hoxe na túa mochiliña?",
       "es": "¿Qué traes hoy en tu mochilita?"
@@ -969,7 +932,8 @@
       "en": "Put straps over shoulders",
       "gl": "Colgar tirantes nos ombreiros",
       "es": "Colgar tirantes nos ombreiros"
-    }
+    },
+    "lamina": "mochila"
   },
   {
     "id": "vocab_37",
@@ -980,10 +944,8 @@
     "en": "Shoes",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-037",
     "corHex": "#475569",
     "bgHex": "#47556912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Quen sabe poñer os seus propios sapatos?",
       "es": "¿Quién sabe ponerse sus propios zapatos?"
@@ -996,7 +958,8 @@
       "en": "Touch your toes",
       "gl": "Tocar a punta dos pés",
       "es": "Tocar a punta dos pés"
-    }
+    },
+    "lamina": "zapato"
   },
   {
     "id": "vocab_38",
@@ -1007,10 +970,8 @@
     "en": "Coat",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-038",
     "corHex": "#7c3aed",
     "bgHex": "#7c3aed12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Pechamos a cremalleira do abrigo? ¡Zas!",
       "es": "¿Cerramos la cremallera del abrigo? ¡Zas!"
@@ -1023,7 +984,8 @@
       "en": "Zip up your coat: Zip!",
       "gl": "Subir cremalleira do peito",
       "es": "Subir cremalleira do peito"
-    }
+    },
+    "lamina": "abrigo"
   },
   {
     "id": "vocab_39",
@@ -1034,10 +996,8 @@
     "en": "Soap",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-039",
     "corHex": "#38bdf8",
     "bgHex": "#38bdf812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Fai moitas burbullas ao lavar as mans?",
       "es": "¿Hace muchas burbujas al lavar las manos?"
@@ -1050,7 +1010,8 @@
       "en": "Rub hands making bubbles",
       "gl": "Fregar as mans facendo escuma",
       "es": "Fregar as mans facendo escuma"
-    }
+    },
+    "lamina": "xabon"
   },
   {
     "id": "vocab_40",
@@ -1061,10 +1022,8 @@
     "en": "Towel",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-040",
     "corHex": "#10b981",
     "bgHex": "#10b98112",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Secamos ben as mans entre os dedos?",
       "es": "¿Secamos bien las manos entre los dedos?"
@@ -1077,7 +1036,8 @@
       "en": "Dry each little finger",
       "gl": "Secar cada dedo con mimo",
       "es": "Secar cada dedo con mimo"
-    }
+    },
+    "lamina": "toalla"
   },
   {
     "id": "vocab_41",
@@ -1088,10 +1048,8 @@
     "en": "Toothbrush",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-041",
     "corHex": "#f43f5e",
     "bgHex": "#f43f5e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Limpamos os dentes despois de comer?",
       "es": "¿Limpiamos los dientes después de comer?"
@@ -1104,7 +1062,8 @@
       "en": "Brush up and down gently",
       "gl": "Facer movementos arriba e abaixo",
       "es": "Facer movementos arriba e abaixo"
-    }
+    },
+    "lamina": "vocab_41"
   },
   {
     "id": "vocab_42",
@@ -1115,10 +1074,8 @@
     "en": "Scissors",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-042",
     "corHex": "#8b5cf6",
     "bgHex": "#8b5cf612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como fan as tesoiras de papel? «Chas, chas!»",
       "es": "¿Cómo hacen las tijeras de papel? «¡Chas, chas!»"
@@ -1131,7 +1088,8 @@
       "en": "Snip, snip with two fingers",
       "gl": "Abrir e pechar dous dedos",
       "es": "Abrir e pechar dous dedos"
-    }
+    },
+    "lamina": "vocab_42"
   },
   {
     "id": "vocab_43",
@@ -1142,10 +1100,8 @@
     "en": "Pencil",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-043",
     "corHex": "#f59e0b",
     "bgHex": "#f59e0b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que cor escolles para pintar a ría?",
       "es": "¿Qué color escoges para pintar la ría?"
@@ -1158,7 +1114,8 @@
       "en": "Scribble softly in the air",
       "gl": "Facer trazos no aire co índice",
       "es": "Facer trazos no aire co índice"
-    }
+    },
+    "lamina": "vocab_43"
   },
   {
     "id": "vocab_44",
@@ -1169,10 +1126,8 @@
     "en": "Paper",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-044",
     "corHex": "#94a3b8",
     "bgHex": "#94a3b812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Sentides o tacto liso desta folla?",
       "es": "¿Sentís el tacto liso de esta hoja?"
@@ -1185,7 +1140,8 @@
       "en": "Stroke the smooth sheet",
       "gl": "Acariciar o papel suavemente",
       "es": "Acariciar o papel suavemente"
-    }
+    },
+    "lamina": "vocab_44"
   },
   {
     "id": "vocab_45",
@@ -1196,10 +1152,8 @@
     "en": "Ball",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-045",
     "corHex": "#ef4444",
     "bgHex": "#ef444412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como bota a pelota no patio? ¡Boing, boing!",
       "es": "¿Cómo bota la pelota en el patio? ¡Boing, boing!"
@@ -1212,7 +1166,8 @@
       "en": "Bounce like a soft ball",
       "gl": "Botar coma unha pelota pequena",
       "es": "Botar coma unha pelota pequena"
-    }
+    },
+    "lamina": "vocab_45"
   },
   {
     "id": "vocab_46",
@@ -1223,10 +1178,8 @@
     "en": "Doll",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-046",
     "corHex": "#ec4899",
     "bgHex": "#ec489912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Arrolamos a boneca para que durma?",
       "es": "¿Arropamos a la muñeca para que duerma?"
@@ -1239,7 +1192,8 @@
       "en": "Rock gentle in your arms",
       "gl": "Balancear nos brazos amodiño",
       "es": "Balancear nos brazos amodiño"
-    }
+    },
+    "lamina": "vocab_46"
   },
   {
     "id": "vocab_47",
@@ -1250,10 +1204,8 @@
     "en": "Train",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-047",
     "corHex": "#0ea5e9",
     "bgHex": "#0ea5e912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como apita o tren de Vigo? «Chu-chu!»",
       "es": "¿Cómo pita el tren de Vigo? «¡Chu-chu!»"
@@ -1266,7 +1218,8 @@
       "en": "Roll your arms: Choo-choo!",
       "gl": "Mover os cóbados coma rodas",
       "es": "Mover os cóbados coma rodas"
-    }
+    },
+    "lamina": "vocab_47"
   },
   {
     "id": "vocab_48",
@@ -1277,10 +1230,8 @@
     "en": "Car",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-048",
     "corHex": "#dc2626",
     "bgHex": "#dc262612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como soa a bucina do coche? «Piiip-piiip!»",
       "es": "¿Cómo suena la bocina del coche? «¡Piiip-piiip!»"
@@ -1293,7 +1244,8 @@
       "en": "Turn the steering wheel",
       "gl": "Xirar o volante imaxinario",
       "es": "Xirar o volante imaxinario"
-    }
+    },
+    "lamina": "vocab_48"
   },
   {
     "id": "vocab_49",
@@ -1304,10 +1256,8 @@
     "en": "Bell",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-049",
     "corHex": "#eab308",
     "bgHex": "#eab30812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que nos avisa a campá? ¡É hora do xogo!",
       "es": "¿Qué nos avisa la campana? ¡Es hora del juego!"
@@ -1320,7 +1270,8 @@
       "en": "Ring the high bell: Ding-dong!",
       "gl": "Tocar a campá coa man arriba",
       "es": "Tocar a campá coa man arriba"
-    }
+    },
+    "lamina": "vocab_49"
   },
   {
     "id": "vocab_50",
@@ -1331,10 +1282,8 @@
     "en": "Clock",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-050",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿ComoLate o reloxo con calma? «Tic-tac, tic-tac»",
       "es": "¿Cómo late el reloj con calma? «Tic-tac, tic-tac»"
@@ -1347,7 +1296,8 @@
       "en": "Tick-tock head swing at 72 bpm",
       "gl": "Balanzo de cabeza a 72 bpm",
       "es": "Balanzo de cabeza a 72 bpm"
-    }
+    },
+    "lamina": "vocab_50"
   },
   {
     "id": "vocab_51",
@@ -1358,10 +1308,8 @@
     "en": "Window",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-051",
     "corHex": "#38bdf8",
     "bgHex": "#38bdf812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que vemos a través dos cristais limpos?",
       "es": "¿Qué vemos a través de los cristales limpios?"
@@ -1374,7 +1322,8 @@
       "en": "Push open the window frame",
       "gl": "Abrir as dúas follas da fiestra",
       "es": "Abrir as dúas follas da fiestra"
-    }
+    },
+    "lamina": "vocab_51"
   },
   {
     "id": "vocab_52",
@@ -1385,10 +1334,8 @@
     "en": "Door",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-052",
     "corHex": "#78350f",
     "bgHex": "#78350f12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Quen chama á porta da nosa aula? «Toc-toc!»",
       "es": "¿Quién llama a la puerta de nuestra aula? «¡Toc-toc!»"
@@ -1401,7 +1348,8 @@
       "en": "Knock on the door: Knock-knock!",
       "gl": "Bater no ar co puño pechado",
       "es": "Bater no ar co puño pechado"
-    }
+    },
+    "lamina": "vocab_52"
   },
   {
     "id": "vocab_53",
@@ -1412,10 +1360,8 @@
     "en": "Key",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-053",
     "corHex": "#ca8a04",
     "bgHex": "#ca8a0412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Xiramos a chave na pechadura? ¡Clic!",
       "es": "¿Giramos la llave en la cerradura? ¡Clic!"
@@ -1428,7 +1374,8 @@
       "en": "Turn the key: Click!",
       "gl": "Xirar dous dedos no ar",
       "es": "Xirar dous dedos no ar"
-    }
+    },
+    "lamina": "vocab_53"
   },
   {
     "id": "vocab_54",
@@ -1439,10 +1386,8 @@
     "en": "Mirror",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-054",
     "corHex": "#a855f7",
     "bgHex": "#a855f712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A quen ves no espello cando sorrís?",
       "es": "¿A quién ves en el espejo cuando sonríes?"
@@ -1455,7 +1400,8 @@
       "en": "Smile at your reflection",
       "gl": "Poñer carantoñas no espello",
       "es": "Poñer carantoñas no espello"
-    }
+    },
+    "lamina": "vocab_54"
   },
   {
     "id": "vocab_55",
@@ -1466,10 +1412,8 @@
     "en": "Lamp",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-055",
     "corHex": "#facc15",
     "bgHex": "#facc1512",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A lámpada dá unha luz suave e acolledora?",
       "es": "¿La lámpara da una luz suave y acogedora?"
@@ -1482,7 +1426,8 @@
       "en": "Flicker fingers like light",
       "gl": "Abrir e pechar mans coma luz",
       "es": "Abrir e pechar mans coma luz"
-    }
+    },
+    "lamina": "vocab_55"
   },
   {
     "id": "vocab_56",
@@ -1493,10 +1438,8 @@
     "en": "Box",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-056",
     "corHex": "#92400e",
     "bgHex": "#92400e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que gardamos na caixa de madeira?",
       "es": "¿Qué guardamos en la caja de madera?"
@@ -1509,7 +1452,8 @@
       "en": "Lift open the treasure lid",
       "gl": "Erguer a tapa da caixa",
       "es": "Erguer a tapa da caixa"
-    }
+    },
+    "lamina": "vocab_56"
   },
   {
     "id": "vocab_57",
@@ -1520,10 +1464,8 @@
     "en": "Button",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-057",
     "corHex": "#059669",
     "bgHex": "#05966912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Abotoamos o ojal cun dedito con xeito?",
       "es": "¿Abotonamos el ojal con un dedito con maña?"
@@ -1536,7 +1478,8 @@
       "en": "Pincer grasp with thumb and finger",
       "gl": "Pinza dixital índice e polgar",
       "es": "Pinza dixital índice e polgar"
-    }
+    },
+    "lamina": "vocab_57"
   },
   {
     "id": "vocab_58",
@@ -1547,10 +1490,8 @@
     "en": "Ribbon",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-058",
     "corHex": "#f43f5e",
     "bgHex": "#f43f5e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como baila o lazo cando se move?",
       "es": "¿Cómo baila el lazo cuando se mueve?"
@@ -1563,7 +1504,8 @@
       "en": "Wave ribbon in gentle waves",
       "gl": "Ondear o brazo no aire",
       "es": "Ondear o brazo no aire"
-    }
+    },
+    "lamina": "vocab_58"
   },
   {
     "id": "vocab_59",
@@ -1574,10 +1516,8 @@
     "en": "Blanket",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-059",
     "corHex": "#4338ca",
     "bgHex": "#4338ca12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Tapámonos coa manta quentiña para a sesta?",
       "es": "¿Nos tapamos con la manta calentita para la siesta?"
@@ -1590,7 +1530,8 @@
       "en": "Pull blanket over shoulders",
       "gl": "Taparse ata os ombreiros",
       "es": "Taparse ata os ombreiros"
-    }
+    },
+    "lamina": "manta"
   },
   {
     "id": "vocab_60",
@@ -1601,10 +1542,8 @@
     "en": "Crib",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-060",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿O berce mece ao bebé con amor?",
       "es": "¿La cuna mece al bebé con amor?"
@@ -1617,7 +1556,8 @@
       "en": "Sway gently side to side",
       "gl": "Balanzo doce dos brazos",
       "es": "Balanzo doce dos brazos"
-    }
+    },
+    "lamina": "vocab_60"
   },
   {
     "id": "vocab_61",
@@ -1628,10 +1568,8 @@
     "en": "Nappy",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-061",
     "corHex": "#06b6d4",
     "bgHex": "#06b6d412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que fresco e cómodo se sente o bebé agora?",
       "es": "¿Qué fresco y cómodo se siente el bebé ahora?"
@@ -1644,7 +1582,8 @@
       "en": "Pat tummy softly",
       "gl": "Acariciar a barriga",
       "es": "Acariciar a barriga"
-    }
+    },
+    "lamina": "vocab_61"
   },
   {
     "id": "vocab_62",
@@ -1655,10 +1594,8 @@
     "en": "Bottle",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-062",
     "corHex": "#10b981",
     "bgHex": "#10b98112",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Bebemos o leite morno a groliños?",
       "es": "¿Bebemos la leche tibia a traguitos?"
@@ -1671,7 +1608,8 @@
       "en": "Hold baby bottle with care",
       "gl": "Suxeitar o bibe con coidado",
       "es": "Suxeitar o bibe con coidado"
-    }
+    },
+    "lamina": "vocab_62"
   },
   {
     "id": "vocab_63",
@@ -1682,10 +1620,8 @@
     "en": "Kiss",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-063",
     "corHex": "#e11d48",
     "bgHex": "#e11d4812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Damos un bico suave na meixela?",
       "es": "¿Damos un beso suave en la mejilla?"
@@ -1698,7 +1634,8 @@
       "en": "Blow a sweet kiss",
       "gl": "Lanzar un bico coa man",
       "es": "Lanzar un bico coa man"
-    }
+    },
+    "lamina": "vocab_63"
   },
   {
     "id": "vocab_64",
@@ -1709,10 +1646,8 @@
     "en": "Hug",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-064",
     "corHex": "#d97706",
     "bgHex": "#d9770612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Sentides que ben senta un abrazo?",
       "es": "¿Sentís qué bien sienta un abrazo?"
@@ -1725,7 +1660,8 @@
       "en": "Hug yourself warm and tight",
       "gl": "Abrazarse a un mesmo",
       "es": "Abrazarse a un mesmo"
-    }
+    },
+    "lamina": "aperta"
   },
   {
     "id": "vocab_65",
@@ -1736,10 +1672,8 @@
     "en": "Tickle",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-065",
     "corHex": "#ea580c",
     "bgHex": "#ea580c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Quen quere cóxegas suaves de formiguiña?",
       "es": "¿Quién quiere cosquillitas suaves de hormiguita?"
@@ -1752,7 +1686,8 @@
       "en": "Crawl fingers on tummy: Giggle!",
       "gl": "Camiñar dedos pola barriga",
       "es": "Camiñar dedos pola barriga"
-    }
+    },
+    "lamina": "barriga"
   },
   {
     "id": "vocab_66",
@@ -1763,10 +1698,8 @@
     "en": "Smile",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-066",
     "corHex": "#f59e0b",
     "bgHex": "#f59e0b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Amosamos os nosos dentes nun sorriso grande?",
       "es": "¿Mostramos nuestros dientes en una sonrisa grande?"
@@ -1779,7 +1712,8 @@
       "en": "Trace a big bright smile",
       "gl": "Debuxar sorriso co índice",
       "es": "Debuxar sorriso co índice"
-    }
+    },
+    "lamina": "vocab_66"
   },
   {
     "id": "animais_67",
@@ -1790,10 +1724,8 @@
     "en": "Puppy",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-067",
     "corHex": "#b45309",
     "bgHex": "#b4530912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde corre o can polo parque?",
       "es": "¿Dónde corre el perro por el parque?"
@@ -1806,7 +1738,8 @@
       "en": "Paws up and bark: Woof!",
       "gl": "Mover patas dianteiras",
       "es": "Mover patas dianteiras"
-    }
+    },
+    "lamina": "animais_67"
   },
   {
     "id": "animais_68",
@@ -1817,10 +1750,8 @@
     "en": "Kitten",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-068",
     "corHex": "#475569",
     "bgHex": "#47556912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A gata ronronea cando a acaricias?",
       "es": "¿La gata ronronea cuando la acaricias?"
@@ -1833,7 +1764,8 @@
       "en": "Purr softly: Purrr-purrr",
       "gl": "Ronronear «prrr-prrr»",
       "es": "Ronronear «prrr-prrr»"
-    }
+    },
+    "lamina": "gato"
   },
   {
     "id": "animais_69",
@@ -1844,10 +1776,8 @@
     "en": "Bird",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-069",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como voa polo ceo azul? «Pío, pío!»",
       "es": "¿Cómo vuela por el cielo azul? «¡Pío, pío!»"
@@ -1860,7 +1790,8 @@
       "en": "Flap wings gently",
       "gl": "Aletear cos cóbados",
       "es": "Aletear cos cóbados"
-    }
+    },
+    "lamina": "paxaro"
   },
   {
     "id": "animais_70",
@@ -1871,10 +1802,8 @@
     "en": "Frog",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-070",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como salta a raniña ao charco? «Croac, hop!»",
       "es": "¿Cómo salta la ranita al charco? «¡Croac, hop!»"
@@ -1887,7 +1816,8 @@
       "en": "Ribbit hop on the floor!",
       "gl": "Dar un salto pequeno no chan",
       "es": "Dar un salto pequeno no chan"
-    }
+    },
+    "lamina": "ra"
   },
   {
     "id": "animais_71",
@@ -1898,10 +1828,8 @@
     "en": "Goldfish",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-071",
     "corHex": "#f97316",
     "bgHex": "#f9731612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como abre a boquiña o peixe na auga?",
       "es": "¿Cómo abre la boquita el pez en el agua?"
@@ -1914,7 +1842,8 @@
       "en": "Fish mouth pop: Pop-pop!",
       "gl": "Abrir e pechar beizos en O",
       "es": "Abrir e pechar beizos en O"
-    }
+    },
+    "lamina": "peixe"
   },
   {
     "id": "animais_72",
@@ -1925,10 +1854,8 @@
     "en": "Seagull",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-072",
     "corHex": "#64748b",
     "bgHex": "#64748b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A gaivota plana sobre as Illas Cíes?",
       "es": "¿La gaviota planea sobre las Islas Cíes?"
@@ -1941,7 +1868,8 @@
       "en": "Glide arms like a seagull",
       "gl": "Planear cos brazos estendidos",
       "es": "Planear cos brazos estendidos"
-    }
+    },
+    "lamina": "gaivota"
   },
   {
     "id": "animais_73",
@@ -1952,10 +1880,8 @@
     "en": "Dolphin",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-073",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿O golfiño salta por riba das ondas de Vigo?",
       "es": "¿El delfín salta por encima de las olas de Vigo?"
@@ -1968,7 +1894,8 @@
       "en": "Leap like a dolphin in water",
       "gl": "Ondas co corpo adiante",
       "es": "Ondas co corpo adiante"
-    }
+    },
+    "lamina": "animais_73"
   },
   {
     "id": "animais_74",
@@ -1979,10 +1906,8 @@
     "en": "Octopus",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-074",
     "corHex": "#db2777",
     "bgHex": "#db277712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿O polvo agochouse debaixo da rocha?",
       "es": "¿El pulpo se escondió debajo de la roca?"
@@ -1995,7 +1920,8 @@
       "en": "Hide and spread tentacle fingers",
       "gl": "Encollerse e abrirse de golpe",
       "es": "Encollerse e abrirse de golpe"
-    }
+    },
+    "lamina": "animais_74"
   },
   {
     "id": "animais_75",
@@ -2006,10 +1932,8 @@
     "en": "Snail",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-075",
     "corHex": "#ca8a04",
     "bgHex": "#ca8a0412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿O caracol leva a súa casiña ás costas?",
       "es": "¿El caracol lleva su casita a cuestas?"
@@ -2022,7 +1946,8 @@
       "en": "Crawl slowly like a snail",
       "gl": "Camiñar dous dedos moi amodo",
       "es": "Camiñar dous dedos moi amodo"
-    }
+    },
+    "lamina": "animais_75"
   },
   {
     "id": "animais_76",
@@ -2033,10 +1958,8 @@
     "en": "Butterfly",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-076",
     "corHex": "#8b5cf6",
     "bgHex": "#8b5cf612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como baila a bolboreta sobre as flores?",
       "es": "¿Cómo baila la mariposa sobre las flores?"
@@ -2049,7 +1972,8 @@
       "en": "Cross thumbs and flutter wings",
       "gl": "Cruzar polgares e aletear",
       "es": "Cruzar polgares e aletear"
-    }
+    },
+    "lamina": "animais_76"
   },
   {
     "id": "animais_77",
@@ -2060,10 +1984,8 @@
     "en": "Bee",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-077",
     "corHex": "#eab308",
     "bgHex": "#eab30812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como zumba a abelliña? «Bzzzz!»",
       "es": "¿Cómo zumba la abejita? «¡Bzzzz!»"
@@ -2076,7 +1998,8 @@
       "en": "Buzz sound: Bzzzzz!",
       "gl": "Zumbido continuo cos dentes",
       "es": "Zumbido continuo cos dentes"
-    }
+    },
+    "lamina": "animais_77"
   },
   {
     "id": "animais_78",
@@ -2087,10 +2010,8 @@
     "en": "Ant",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-078",
     "corHex": "#78350f",
     "bgHex": "#78350f12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿As formiguiñas van en fila polo carreiro?",
       "es": "¿Las hormiguitas van en fila por el sendero?"
@@ -2103,7 +2024,8 @@
       "en": "Tiptoe small like tiny ants",
       "gl": "Camiñar de puntas moi baixiño",
       "es": "Camiñar de puntas moi baixiño"
-    }
+    },
+    "lamina": "animais_78"
   },
   {
     "id": "animais_79",
@@ -2114,10 +2036,8 @@
     "en": "Cow",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-079",
     "corHex": "#1e293b",
     "bgHex": "#1e293b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como fai a vaca no prado verde? «Muuu!»",
       "es": "¿Cómo hace la vaca en el prado verde? «¡Muuu!»"
@@ -2130,7 +2050,8 @@
       "en": "Deep long sound: Moooo!",
       "gl": "Voz grave prolongada",
       "es": "Voz grave prolongada"
-    }
+    },
+    "lamina": "animais_79"
   },
   {
     "id": "animais_80",
@@ -2141,10 +2062,8 @@
     "en": "Sheep",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-080",
     "corHex": "#94a3b8",
     "bgHex": "#94a3b812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A ovella ten la suave coma unha almofada?",
       "es": "¿La oveja tiene lana suave como una almohada?"
@@ -2157,7 +2076,8 @@
       "en": "Gentle bleat: Baaa-baaa!",
       "gl": "Imitar o balido: «Beeee!»",
       "es": "Imitar o balido: «Beeee!»"
-    }
+    },
+    "lamina": "animais_80"
   },
   {
     "id": "animais_81",
@@ -2168,10 +2088,8 @@
     "en": "Horse",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-081",
     "corHex": "#92400e",
     "bgHex": "#92400e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como soan os cascos do cabalo? «Toc, toc!»",
       "es": "¿Cómo suenan los cascos del caballo? «¡Toc, toc!»"
@@ -2184,7 +2102,8 @@
       "en": "Clap thighs like horse hooves",
       "gl": "Percusión de palmas nas pernas",
       "es": "Percusión de palmas nas pernas"
-    }
+    },
+    "lamina": "animais_81"
   },
   {
     "id": "animais_82",
@@ -2195,10 +2114,8 @@
     "en": "Pig",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-082",
     "corHex": "#f43f5e",
     "bgHex": "#f43f5e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como funga o porquiño alegre? «Oinc, oinc!»",
       "es": "¿Cómo gruñe el cerdito alegre? «¡Oinc, oinc!»"
@@ -2211,7 +2128,8 @@
       "en": "Wrinkle nose: Oink-oink!",
       "gl": "Fungar co nariz engurrado",
       "es": "Fungar co nariz engurrado"
-    }
+    },
+    "lamina": "animais_82"
   },
   {
     "id": "animais_83",
@@ -2222,10 +2140,8 @@
     "en": "Hen",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-083",
     "corHex": "#ea580c",
     "bgHex": "#ea580c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como choca a pita polos ovos? «Co-co-co!»",
       "es": "¿Cómo cloquea la gallina por los huevos? «¡Co-co-co!»"
@@ -2238,7 +2154,8 @@
       "en": "Flap elbows: Cluck-cluck!",
       "gl": "Aleteo de cóbados e bico",
       "es": "Aleteo de cóbados e bico"
-    }
+    },
+    "lamina": "animais_83"
   },
   {
     "id": "animais_84",
@@ -2249,10 +2166,8 @@
     "en": "Duck",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-084",
     "corHex": "#059669",
     "bgHex": "#05966912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como nada o parrulo no estanque? «Cuac, cuac!»",
       "es": "¿Cómo nada el patito en el estanque? «¡Cuac, cuac!»"
@@ -2265,7 +2180,8 @@
       "en": "Make a beak: Quack-quack!",
       "gl": "Facer bico coas mans",
       "es": "Facer bico coas mans"
-    }
+    },
+    "lamina": "animais_84"
   },
   {
     "id": "animais_85",
@@ -2276,10 +2192,8 @@
     "en": "Rabbit",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-085",
     "corHex": "#cbd5e1",
     "bgHex": "#cbd5e112",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como move o coello o seu fociño rápido?",
       "es": "¿Cómo mueve el conejo su hociquito rápido?"
@@ -2292,7 +2206,8 @@
       "en": "Rabbit ears finger hops",
       "gl": "Dous dedos na cabeza coma orellas",
       "es": "Dous dedos na cabeza coma orellas"
-    }
+    },
+    "lamina": "animais_85"
   },
   {
     "id": "animais_86",
@@ -2303,10 +2218,8 @@
     "en": "Mouse",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-086",
     "corHex": "#64748b",
     "bgHex": "#64748b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde corre o ratiño pequeniño? «Iii-iii!»",
       "es": "¿Dónde corre el ratoncito pequeñito? «¡Iii-iii!»"
@@ -2319,7 +2232,8 @@
       "en": "Scurry fingers fast and light",
       "gl": "Correr cos dedos polas pernas",
       "es": "Correr cos dedos polas pernas"
-    }
+    },
+    "lamina": "animais_86"
   },
   {
     "id": "animais_87",
@@ -2330,10 +2244,8 @@
     "en": "Turtle",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-087",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A tartaruga agocha a cabeza na coiraza?",
       "es": "¿La tortuga esconde la cabeza en el caparazón?"
@@ -2346,7 +2258,8 @@
       "en": "Tuck head inside shoulders",
       "gl": "Encoller o pescozo nos ombreiros",
       "es": "Encoller o pescozo nos ombreiros"
-    }
+    },
+    "lamina": "animais_87"
   },
   {
     "id": "animais_88",
@@ -2357,10 +2270,8 @@
     "en": "Bear",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-088",
     "corHex": "#78350f",
     "bgHex": "#78350f12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como camiña o oso polo bosque de outono?",
       "es": "¿Cómo camina el oso por el bosque de otoño?"
@@ -2373,7 +2284,8 @@
       "en": "Heavy slow bear stomps",
       "gl": "Pisadas pesadas de xigante",
       "es": "Pisadas pesadas de xigante"
-    }
+    },
+    "lamina": "oso"
   },
   {
     "id": "animais_89",
@@ -2384,10 +2296,8 @@
     "en": "Lion",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-089",
     "corHex": "#d97706",
     "bgHex": "#d9770612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como ruxe o rei da selva? «Groaaar!»",
       "es": "¿Cómo ruge el rey de la selva? «¡Groaaar!»"
@@ -2400,7 +2310,8 @@
       "en": "Roar with soft bear paws",
       "gl": "Abrir mans con gadellas",
       "es": "Abrir mans con gadellas"
-    }
+    },
+    "lamina": "animais_89"
   },
   {
     "id": "animais_90",
@@ -2411,10 +2322,8 @@
     "en": "Fox",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-090",
     "corHex": "#ea580c",
     "bgHex": "#ea580c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como camiña o raposo sen facer ruído?",
       "es": "¿Cómo camina el zorro sin hacer ruido?"
@@ -2427,7 +2336,8 @@
       "en": "Silent tiptoe like a sly fox",
       "gl": "Camiñar con pisada de seda",
       "es": "Camiñar con pisada de seda"
-    }
+    },
+    "lamina": "animais_90"
   },
   {
     "id": "animais_91",
@@ -2438,10 +2348,8 @@
     "en": "Whale",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-091",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A balea bota un chorro de auga ao ceo?",
       "es": "¿La ballena echa un chorro de agua al cielo?"
@@ -2454,7 +2362,8 @@
       "en": "Spout water from head: Whoosh!",
       "gl": "Brotar mans dende a cabeza: Chuuuf!",
       "es": "Brotar mans dende a cabeza: Chuuuf!"
-    }
+    },
+    "lamina": "animais_91"
   },
   {
     "id": "animais_92",
@@ -2465,10 +2374,8 @@
     "en": "Seal",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-092",
     "corHex": "#475569",
     "bgHex": "#47556912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como aplaude a foca coas súas aletas?",
       "es": "¿Cómo aplaude la foca con sus aletas?"
@@ -2481,7 +2388,8 @@
       "en": "Clap with wrists together",
       "gl": "Aplaudir cos pulsos xuntos",
       "es": "Aplaudir cos pulsos xuntos"
-    }
+    },
+    "lamina": "animais_92"
   },
   {
     "id": "animais_93",
@@ -2492,10 +2400,8 @@
     "en": "Crab",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-093",
     "corHex": "#ef4444",
     "bgHex": "#ef444412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como camiña o cangrexo de lado na area?",
       "es": "¿Cómo camina el cangrejo de lado en la arena?"
@@ -2508,7 +2414,8 @@
       "en": "Scuttle sideways with pincer claws",
       "gl": "Camiñar de lado abrindo pinzas",
       "es": "Camiñar de lado abrindo pinzas"
-    }
+    },
+    "lamina": "animais_93"
   },
   {
     "id": "animais_94",
@@ -2519,10 +2426,8 @@
     "en": "Starfish",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-094",
     "corHex": "#f59e0b",
     "bgHex": "#f59e0b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A estrela de mar brilla no fondo da ría?",
       "es": "¿La estrella de mar brilla en el fondo de la ría?"
@@ -2535,7 +2440,8 @@
       "en": "Open limbs like a sea star",
       "gl": "Abrir brazos e pernas en estrela",
       "es": "Abrir brazos e pernas en estrela"
-    }
+    },
+    "lamina": "animais_94"
   },
   {
     "id": "animais_95",
@@ -2546,10 +2452,8 @@
     "en": "Sea Urchin",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-095",
     "corHex": "#334155",
     "bgHex": "#33415512",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿O ourizo ten picos para protexerse?",
       "es": "¿El erizo tiene púas para protegerse?"
@@ -2562,7 +2466,8 @@
       "en": "Spread prickly spiky fingers",
       "gl": "Poñer dedos ergueitos ríxidos",
       "es": "Poñer dedos ergueitos ríxidos"
-    }
+    },
+    "lamina": "animais_95"
   },
   {
     "id": "animais_96",
@@ -2573,10 +2478,8 @@
     "en": "Mussel",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-096",
     "corHex": "#1e293b",
     "bgHex": "#1e293b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿O mexillón abre e pecha a súa cuncha negra?",
       "es": "¿El mejillón abre y cierra su concha negra?"
@@ -2589,7 +2492,8 @@
       "en": "Open and close your shell hands",
       "gl": "Xuntar palmas e abrir amodo",
       "es": "Xuntar palmas e abrir amodo"
-    }
+    },
+    "lamina": "mexillon"
   },
   {
     "id": "vigo_nat_97",
@@ -2600,10 +2504,8 @@
     "en": "Sea",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-097",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ves como bailan as ondas azuis da ría?",
       "es": "¿Ves cómo bailan las olas azules de la ría?"
@@ -2616,7 +2518,8 @@
       "en": "Row your arms with the waves",
       "gl": "Vaivén de remar co corpo",
       "es": "Vaivén de remar co corpo"
-    }
+    },
+    "lamina": "vigo_nat_97"
   },
   {
     "id": "vigo_nat_98",
@@ -2627,10 +2530,8 @@
     "en": "Cíes Islands",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-098",
     "corHex": "#059669",
     "bgHex": "#05966912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿As Cíes protexen a nosa cidade das tormentas?",
       "es": "¿Las Cíes protegen nuestra ciudad de las tormentas?"
@@ -2643,7 +2544,8 @@
       "en": "Form a shelter with your arms",
       "gl": "Brazos arredor coma un escudo",
       "es": "Brazos arredor coma un escudo"
-    }
+    },
+    "lamina": "vigo_nat_98"
   },
   {
     "id": "vigo_nat_99",
@@ -2654,10 +2556,8 @@
     "en": "Beach",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-099",
     "corHex": "#d97706",
     "bgHex": "#d9770612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Pisas a area suave cos pés descalzos?",
       "es": "¿Pisas la arena suave con los pies descalzos?"
@@ -2670,7 +2570,8 @@
       "en": "Step barefoot on soft floor",
       "gl": "Pisar amodo sentindo o chan",
       "es": "Pisar amodo sentindo o chan"
-    }
+    },
+    "lamina": "vigo_nat_99"
   },
   {
     "id": "vigo_nat_100",
@@ -2681,10 +2582,8 @@
     "en": "Castro Hill",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-100",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Subimos ao alto do Castro para ver Vigo?",
       "es": "¿Subimos a lo alto de O Castro para ver Vigo?"
@@ -2697,7 +2596,8 @@
       "en": "March high knees climbing the hill",
       "gl": "Erguer xeonllos subindo a costa",
       "es": "Erguer xeonllos subindo a costa"
-    }
+    },
+    "lamina": "vigo_nat_100"
   },
   {
     "id": "vigo_nat_101",
@@ -2708,10 +2608,8 @@
     "en": "Castrelos Park",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-101",
     "corHex": "#15803d",
     "bgHex": "#15803d12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Recoñeces os cisnes nadando no estanque?",
       "es": "¿Reconoces los cisnes nadando en el estanque?"
@@ -2724,7 +2622,8 @@
       "en": "Graceful swan neck posture",
       "gl": "Pescozo ergueito coma un cisne",
       "es": "Pescozo ergueito coma un cisne"
-    }
+    },
+    "lamina": "vigo_nat_101"
   },
   {
     "id": "vigo_nat_102",
@@ -2735,10 +2634,8 @@
     "en": "A Guía Hill",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-102",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ves a capeliña branca que saúda aos barcos?",
       "es": "¿Ves la capillita blanca que saluda a los barcos?"
@@ -2751,7 +2648,8 @@
       "en": "Hands pointed high like a spire",
       "gl": "Xuntar mans coma campanario",
       "es": "Xuntar mans coma campanario"
-    }
+    },
+    "lamina": "vigo_nat_102"
   },
   {
     "id": "vigo_nat_103",
@@ -2762,10 +2660,8 @@
     "en": "Old Port",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-103",
     "corHex": "#0891b2",
     "bgHex": "#0891b212",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que traen as redes dos barcos pesqueiros?",
       "es": "¿Qué traen las redes de los barcos pesqueros?"
@@ -2778,7 +2674,8 @@
       "en": "Pull the heavy fishing net: Heave!",
       "gl": "Tirar da rede con forza",
       "es": "Tirar da rede con forza"
-    }
+    },
+    "lamina": "vigo_nat_103"
   },
   {
     "id": "vigo_nat_104",
@@ -2789,10 +2686,8 @@
     "en": "Sunlight",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-104",
     "corHex": "#eab308",
     "bgHex": "#eab30812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que quentiño brilla o sol sobre a cabeza!",
       "es": "¡Qué calentito brilla el sol sobre la cabeza!"
@@ -2805,7 +2700,8 @@
       "en": "Bask your face in warm light",
       "gl": "Abrir peito cara a luz",
       "es": "Abrir peito cara a luz"
-    }
+    },
+    "lamina": "sol"
   },
   {
     "id": "vigo_nat_105",
@@ -2816,10 +2712,8 @@
     "en": "Cloud",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-105",
     "corHex": "#94a3b8",
     "bgHex": "#94a3b812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A nube viaxa flotando polo ceo?",
       "es": "¿La nube viaja flotando por el cielo?"
@@ -2832,7 +2726,8 @@
       "en": "Float your hands like soft clouds",
       "gl": "Flotar mans moi brandas",
       "es": "Flotar mans moi brandas"
-    }
+    },
+    "lamina": "vigo_nat_105"
   },
   {
     "id": "vigo_nat_106",
@@ -2843,10 +2738,8 @@
     "en": "Puddles",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-106",
     "corHex": "#2563eb",
     "bgHex": "#2563eb12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Pisamos os charquiños con botas de auga? «Chof!»",
       "es": "¿Pisamos los charquitos con botas de agua? «¡Chof!»"
@@ -2859,7 +2752,8 @@
       "en": "Splash gently in the puddle",
       "gl": "Salto suave dentro do charco",
       "es": "Salto suave dentro do charco"
-    }
+    },
+    "lamina": "charco"
   },
   {
     "id": "vigo_nat_107",
@@ -2870,10 +2764,8 @@
     "en": "Wind",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-107",
     "corHex": "#06b6d4",
     "bgHex": "#06b6d412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Sentes como o vento move as follas verdes?",
       "es": "¿Sientes cómo el viento mueve las hojas verdes?"
@@ -2886,7 +2778,8 @@
       "en": "Sway your torso with blowing wind",
       "gl": "Balanceo de tronco e sopro",
       "es": "Balanceo de tronco e sopro"
-    }
+    },
+    "lamina": "vento"
   },
   {
     "id": "vigo_nat_108",
@@ -2897,10 +2790,8 @@
     "en": "Rainbow",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-108",
     "corHex": "#a855f7",
     "bgHex": "#a855f712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Cantas cores ten o arco da vella no ceo?",
       "es": "¿Cuántos colores tiene el arco iris en el cielo?"
@@ -2913,7 +2804,8 @@
       "en": "Paint an arc from left to right",
       "gl": "Debuxar arco amplo de lado a lado",
       "es": "Debuxar arco amplo de lado a lado"
-    }
+    },
+    "lamina": "vigo_nat_108"
   },
   {
     "id": "vigo_nat_109",
@@ -2924,10 +2816,8 @@
     "en": "Autumn",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-109",
     "corHex": "#ca8a04",
     "bgHex": "#ca8a0412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿O chan énchese de follas amarelas e castañas?",
       "es": "¿El suelo se llena de hojas amarillas y castañas?"
@@ -2940,7 +2830,8 @@
       "en": "Gather leaves from the floor",
       "gl": "Recoller follas do chan",
       "es": "Recoller follas do chan"
-    }
+    },
+    "lamina": "vigo_nat_109"
   },
   {
     "id": "vigo_nat_110",
@@ -2951,10 +2842,8 @@
     "en": "Winter",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-110",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Poñemos a bufanda e abrigámonos ben?",
       "es": "¿Nos ponemos la bufanda y nos abrigamos bien?"
@@ -2967,7 +2856,8 @@
       "en": "Warm up your arms with a rub",
       "gl": "Fregar os brazos para quentar",
       "es": "Fregar os brazos para quentar"
-    }
+    },
+    "lamina": "vigo_nat_110"
   },
   {
     "id": "vigo_nat_111",
@@ -2978,10 +2868,8 @@
     "en": "Spring",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-111",
     "corHex": "#ec4899",
     "bgHex": "#ec489912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Medran as flores e cantan os paxariños?",
       "es": "¿Crecen las flores y cantan los pajaritos?"
@@ -2994,7 +2882,8 @@
       "en": "Stretch tall like a blooming flower",
       "gl": "Espreguizase medrando cara arriba",
       "es": "Espreguizase medrando cara arriba"
-    }
+    },
+    "lamina": "vigo_nat_111"
   },
   {
     "id": "vigo_nat_112",
@@ -3005,10 +2894,8 @@
     "en": "Summer",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-112",
     "corHex": "#ef4444",
     "bgHex": "#ef444412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Xogamos na praia e tomamos melón fresco?",
       "es": "¿Jugamos en la playa y tomamos melón fresco?"
@@ -3021,7 +2908,8 @@
       "en": "Splash water with your feet",
       "gl": "Xogo de salpicar auga cos pés",
       "es": "Xogo de salpicar auga cos pés"
-    }
+    },
+    "lamina": "vigo_nat_112"
   },
   {
     "id": "vigo_nat_113",
@@ -3032,10 +2920,8 @@
     "en": "Oak tree",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-113",
     "corHex": "#15803d",
     "bgHex": "#15803d12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que grosas son as raíces do carballo galego?",
       "es": "¿Qué gruesas son las raíces del roble gallego?"
@@ -3048,7 +2934,8 @@
       "en": "Roots planted deep and firm",
       "gl": "Pés cravados firmes no chan",
       "es": "Pés cravados firmes no chan"
-    }
+    },
+    "lamina": "arbore"
   },
   {
     "id": "vigo_nat_114",
@@ -3059,10 +2946,8 @@
     "en": "Blossom",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-114",
     "corHex": "#f43f5e",
     "bgHex": "#f43f5e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A flor esperta cando sae a luz do sol?",
       "es": "¿La flor despierta cuando sale la luz del sol?"
@@ -3075,7 +2960,8 @@
       "en": "Open clenched fists into a bloom",
       "gl": "Abrir as mans dende o puño pechado",
       "es": "Abrir as mans dende o puño pechado"
-    }
+    },
+    "lamina": "flor"
   },
   {
     "id": "vigo_nat_115",
@@ -3086,10 +2972,8 @@
     "en": "Dancing leaf",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-115",
     "corHex": "#ea580c",
     "bgHex": "#ea580c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Xira a folla no aire antes de caer?",
       "es": "¿Gira la hoja en el aire antes de caer?"
@@ -3102,7 +2986,8 @@
       "en": "Twirl slowly around yourself",
       "gl": "Xiro suave sobre si mesmo",
       "es": "Xiro suave sobre si mesmo"
-    }
+    },
+    "lamina": "folla"
   },
   {
     "id": "vigo_nat_116",
@@ -3113,10 +2998,8 @@
     "en": "Chestnut",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-116",
     "corHex": "#78350f",
     "bgHex": "#78350f12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que ricas son as castañas asadas no outono!",
       "es": "¡Qué ricas son las castañas asadas en otoño!"
@@ -3129,7 +3012,8 @@
       "en": "Blow gently on a hot chestnut",
       "gl": "Soprar a castaña quente",
       "es": "Soprar a castaña quente"
-    }
+    },
+    "lamina": "castana"
   },
   {
     "id": "vigo_nat_117",
@@ -3140,10 +3024,8 @@
     "en": "Golden sand",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-117",
     "corHex": "#eab308",
     "bgHex": "#eab30812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Deixas escorregar a area entre os dedos?",
       "es": "¿Dejas escurrir la arena entre los dedos?"
@@ -3156,7 +3038,8 @@
       "en": "Let sand trickle through fingers",
       "gl": "Deixar caer dedos brandos",
       "es": "Deixar caer dedos brandos"
-    }
+    },
+    "lamina": "terra"
   },
   {
     "id": "vigo_nat_118",
@@ -3167,10 +3050,8 @@
     "en": "Pebble",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-118",
     "corHex": "#64748b",
     "bgHex": "#64748b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A pedra é dura e lisa coma a concha?",
       "es": "¿La piedra es dura y lisa como la concha?"
@@ -3183,7 +3064,8 @@
       "en": "Squeeze fist tight: Hard rock!",
       "gl": "Apertar o puño con forza: dura!",
       "es": "Apertar o puño con forza: dura!"
-    }
+    },
+    "lamina": "vigo_nat_118"
   },
   {
     "id": "vigo_nat_119",
@@ -3194,10 +3076,8 @@
     "en": "Sea wave",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-119",
     "corHex": "#0891b2",
     "bgHex": "#0891b212",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A onda vén e vai na beira da praia?",
       "es": "¿La ola viene y va en la orilla de la playa?"
@@ -3210,7 +3090,8 @@
       "en": "Back and forth wave motion",
       "gl": "Brazos adiante e atrás en vaivén",
       "es": "Brazos adiante e atrás en vaivén"
-    }
+    },
+    "lamina": "espuma"
   },
   {
     "id": "vigo_nat_120",
@@ -3221,10 +3102,8 @@
     "en": "Seed",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-120",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Plantamos a sementeira na horta da escola?",
       "es": "¿Plantamos la semilla en el huerto de la escuela?"
@@ -3237,7 +3116,8 @@
       "en": "Crouch tiny, then grow tall",
       "gl": "Abaixarse pequeniño e medrar",
       "es": "Abaixarse pequeniño e medrar"
-    }
+    },
+    "lamina": "semente"
   },
   {
     "id": "vigo_nat_121",
@@ -3248,10 +3128,8 @@
     "en": "Mussel rafts",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-121",
     "corHex": "#92400e",
     "bgHex": "#92400e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ves as bateas de madeira flotando na ría?",
       "es": "¿Ves las bateas de madera flotando en la ría?"
@@ -3264,7 +3142,8 @@
       "en": "Extend arms flat like floating rafts",
       "gl": "Brazos estendidos horizontais",
       "es": "Brazos estendidos horizontais"
-    }
+    },
+    "lamina": "mexillon"
   },
   {
     "id": "escola_rut_122",
@@ -3275,10 +3154,8 @@
     "en": "Morning Circle",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-122",
     "corHex": "#ea580c",
     "bgHex": "#ea580c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Dámonos a man todos sentados na alfombra?",
       "es": "¿Nos damos la mano todos sentados en la alfombra?"
@@ -3291,7 +3168,8 @@
       "en": "Join hands in morning circle",
       "gl": "Darse a man en círculo",
       "es": "Darse a man en círculo"
-    }
+    },
+    "lamina": "aro"
   },
   {
     "id": "escola_rut_123",
@@ -3302,10 +3180,8 @@
     "en": "Welcome",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-123",
     "corHex": "#f43f5e",
     "bgHex": "#f43f5e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que ben nos recibe a mestra cun saúdo doce?",
       "es": "¿Qué bien nos recibe la maestra con un saludo dulce?"
@@ -3318,7 +3194,8 @@
       "en": "Open arms and say: Welcome!",
       "gl": "Abrir os brazos e saudar",
       "es": "Abrir os brazos e saudar"
-    }
+    },
+    "lamina": "aperta"
   },
   {
     "id": "escola_rut_124",
@@ -3329,10 +3206,8 @@
     "en": "Handwashing",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-124",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Fregamos ben co xabón para ter mans limpas?",
       "es": "¿Frotamos bien con jabón para tener manos limpias?"
@@ -3345,7 +3220,8 @@
       "en": "Scrub palms and rinse clean",
       "gl": "Fregar palmas e dedos",
       "es": "Fregar palmas e dedos"
-    }
+    },
+    "lamina": "xabon"
   },
   {
     "id": "escola_rut_125",
@@ -3356,10 +3232,8 @@
     "en": "Snack time",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-125",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Comemos a mazá e o plátano sentados xuntos?",
       "es": "¿Comemos la manzana y el plátano sentados juntos?"
@@ -3372,7 +3246,8 @@
       "en": "Chew peacefully and share fruit",
       "gl": "Comer a amodo mastigando ben",
       "es": "Comer a amodo mastigando ben"
-    }
+    },
+    "lamina": "escola_rut_125"
   },
   {
     "id": "escola_rut_126",
@@ -3383,10 +3258,8 @@
     "en": "Naptime",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-126",
     "corHex": "#6366f1",
     "bgHex": "#6366f112",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Pousamos a cabeza para descansar en silencio?",
       "es": "¿Posamos la cabeza para descansar en silencio?"
@@ -3399,7 +3272,8 @@
       "en": "Slow deep breathing: In and out",
       "gl": "Respirar amodo pechando os ollos",
       "es": "Respirar amodo pechando os ollos"
-    }
+    },
+    "lamina": "escola_rut_126"
   },
   {
     "id": "escola_rut_127",
@@ -3410,10 +3284,8 @@
     "en": "Free Play",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-127",
     "corHex": "#b45309",
     "bgHex": "#b4530912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que torre alta podemos construír sen que caia?",
       "es": "¿Qué torre alta podemos construir sin que caiga?"
@@ -3426,7 +3298,8 @@
       "en": "Stack blocks one on top of another",
       "gl": "Poñer unha man sobre a outra",
       "es": "Poñer unha man sobre a outra"
-    }
+    },
+    "lamina": "escola_rut_127"
   },
   {
     "id": "escola_rut_128",
@@ -3437,10 +3310,8 @@
     "en": "Tidy up time",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-128",
     "corHex": "#d97706",
     "bgHex": "#d9770612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Gardamos cada cousa no seu cestiño?",
       "es": "¿Guardamos cada cosa en su cestito?"
@@ -3453,7 +3324,8 @@
       "en": "Place toys gently in the basket",
       "gl": "Gardar elementos imaxinarios",
       "es": "Gardar elementos imaxinarios"
-    }
+    },
+    "lamina": "escola_rut_128"
   },
   {
     "id": "escola_rut_129",
@@ -3464,10 +3336,8 @@
     "en": "Storytime",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-129",
     "corHex": "#c2410c",
     "bgHex": "#c2410c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Escoitamos a historia con ollos moi abertos?",
       "es": "¿Escuchamos la historia con ojos muy abiertos?"
@@ -3480,7 +3350,8 @@
       "en": "Cupped hands behind ears to listen",
       "gl": "Orellas atentas con mans detrás",
       "es": "Orellas atentas con mans detrás"
-    }
+    },
+    "lamina": "escola_rut_129"
   },
   {
     "id": "escola_rut_130",
@@ -3491,10 +3362,8 @@
     "en": "Singing beat",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-130",
     "corHex": "#7c3aed",
     "bgHex": "#7c3aed12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Seguimos o latexo do noso corazón coas palmas?",
       "es": "¿Seguimos el latido de nuestro corazón con las palmas?"
@@ -3507,7 +3376,8 @@
       "en": "Gentle heartbeat taps on chest",
       "gl": "Palmas rítmicas lentas no peito",
       "es": "Palmas rítmicas lentas no peito"
-    }
+    },
+    "lamina": "cascabel"
   },
   {
     "id": "escola_rut_131",
@@ -3518,10 +3388,8 @@
     "en": "Crawling time",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-131",
     "corHex": "#059669",
     "bgHex": "#05966912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Gateamos coma gatiños pola alfombra suave?",
       "es": "¿Gateamos como gatitos por la alfombra suave?"
@@ -3534,7 +3402,8 @@
       "en": "Crawl on all fours like a cat",
       "gl": "Gatear amodo a catro patas",
       "es": "Gatear amodo a catro patas"
-    }
+    },
+    "lamina": "escola_rut_131"
   },
   {
     "id": "escola_rut_132",
@@ -3545,10 +3414,8 @@
     "en": "Farewell",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-132",
     "corHex": "#ec4899",
     "bgHex": "#ec489912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Dicímosche «ata mañá!» cun sorriso e a man?",
       "es": "¿Te decimos «¡hasta mañana!» con sonrisa y la mano?"
@@ -3561,7 +3428,8 @@
       "en": "Wave hand saying: Bye-bye!",
       "gl": "Mover a man no aire saúdando",
       "es": "Mover a man no aire saúdando"
-    }
+    },
+    "lamina": "escola_rut_132"
   },
   {
     "id": "escola_rut_133",
@@ -3572,10 +3440,8 @@
     "en": "Gentle drop-off",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-133",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Despídeste con calma e un bico de papá ou mamá?",
       "es": "¿Te despides con calma y un beso de papá o mamá?"
@@ -3588,7 +3454,8 @@
       "en": "Warm eye contact and goodbye kiss",
       "gl": "Contacto visual e bico na meixela",
       "es": "Contacto visual e bico na meixela"
-    }
+    },
+    "lamina": "escola_rut_133"
   },
   {
     "id": "escola_rut_134",
@@ -3599,10 +3466,8 @@
     "en": "Hanging coat",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-134",
     "corHex": "#475569",
     "bgHex": "#47556912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde colgas o teu abrigo coa túa foto?",
       "es": "¿Dónde cuelgas tu abrigo con tu foto?"
@@ -3615,7 +3480,8 @@
       "en": "Reach high to hang your coat",
       "gl": "Erguer brazos ata a percha",
       "es": "Erguer brazos ata a percha"
-    }
+    },
+    "lamina": "abrigo"
   },
   {
     "id": "escola_rut_135",
@@ -3626,10 +3492,8 @@
     "en": "Quiet sitting",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-135",
     "corHex": "#8b5cf6",
     "bgHex": "#8b5cf612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Pousamos o corpo coma unha pluma lixeira?",
       "es": "¿Posamos el cuerpo como una pluma ligera?"
@@ -3642,7 +3506,8 @@
       "en": "Land softly like a light feather",
       "gl": "Sentar amodiño sen golpes",
       "es": "Sentar amodiño sen golpes"
-    }
+    },
+    "lamina": "escola_rut_135"
   },
   {
     "id": "escola_rut_136",
@@ -3653,10 +3518,8 @@
     "en": "Taking turns",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-136",
     "corHex": "#0891b2",
     "bgHex": "#0891b212",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ergues a man cando queres falar na asemblea?",
       "es": "¿Alzas la mano cuando quieres hablar en la asamblea?"
@@ -3669,7 +3532,8 @@
       "en": "Raise your hand gently: My turn!",
       "gl": "Erguer a man suavemente",
       "es": "Erguer a man suavemente"
-    }
+    },
+    "lamina": "escola_rut_136"
   },
   {
     "id": "escola_rut_137",
@@ -3680,10 +3544,8 @@
     "en": "Sharing toys",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-137",
     "corHex": "#f59e0b",
     "bgHex": "#f59e0b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ofreces a pelota ao teu compañeiro de aula?",
       "es": "¿Ofreces la pelota a tu compañero de aula?"
@@ -3696,7 +3558,8 @@
       "en": "Offer hands forward with a gift",
       "gl": "Entregar mans adiante abertas",
       "es": "Entregar mans adiante abertas"
-    }
+    },
+    "lamina": "escola_rut_137"
   },
   {
     "id": "escola_rut_138",
@@ -3707,10 +3570,8 @@
     "en": "Finger painting",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-138",
     "corHex": "#ef4444",
     "bgHex": "#ef444412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que sinte a túa man ao tocar a textura fría?",
       "es": "¿Qué siente tu mano al tocar la textura fría?"
@@ -3723,7 +3584,8 @@
       "en": "Dip fingers into smooth paint",
       "gl": "Tocar a mesa con cadanseu dedo",
       "es": "Tocar a mesa con cadanseu dedo"
-    }
+    },
+    "lamina": "escola_rut_138"
   },
   {
     "id": "escola_rut_139",
@@ -3734,10 +3596,8 @@
     "en": "Water sensory play",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-139",
     "corHex": "#06b6d4",
     "bgHex": "#06b6d412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Metemos os barquiños a flotar na auga limpa?",
       "es": "¿Metemos los barquitos a flotar en el agua limpia?"
@@ -3750,7 +3610,8 @@
       "en": "Swirl water in slow circles",
       "gl": "Mover auga con movemento suave",
       "es": "Mover auga con movemento suave"
-    }
+    },
+    "lamina": "auga"
   },
   {
     "id": "escola_rut_140",
@@ -3761,10 +3622,8 @@
     "en": "Garden walk",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-140",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Cheiras a herba mollada despois da chuvia?",
       "es": "¿Hueles la hierba mojada tras la lluvia?"
@@ -3777,7 +3636,8 @@
       "en": "Breathe deep the fresh grass",
       "gl": "Inhalar fondo polo nariz",
       "es": "Inhalar fondo polo nariz"
-    }
+    },
+    "lamina": "escola_rut_140"
   },
   {
     "id": "escola_rut_141",
@@ -3788,10 +3648,8 @@
     "en": "Ring dance",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-141",
     "corHex": "#ec4899",
     "bgHex": "#ec489912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Xiramos todos collidos da man con coidado?",
       "es": "¿Giramos todos cogidos de la mano con cuidado?"
@@ -3804,7 +3662,8 @@
       "en": "Step in rhythm around the circle",
       "gl": "Xiro en corro a pasos curtos",
       "es": "Xiro en corro a pasos curtos"
-    }
+    },
+    "lamina": "escola_rut_141"
   },
   {
     "id": "escola_rut_142",
@@ -3815,10 +3674,8 @@
     "en": "Quiet breath",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-142",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Inspiramos polo nariz e soltamos amodo?",
       "es": "¿Inspiramos por la nariz y soltamos despacio?"
@@ -3831,7 +3688,8 @@
       "en": "Hands on belly: Breathe in and out",
       "gl": "Mans na barriga notando o aire",
       "es": "Mans na barriga notando o aire"
-    }
+    },
+    "lamina": "escola_rut_142"
   },
   {
     "id": "escola_rut_143",
@@ -3842,10 +3700,8 @@
     "en": "Safe bond",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-143",
     "corHex": "#64748b",
     "bgHex": "#64748b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Sentes a man segura que te acompaña na escola?",
       "es": "¿Sientes la mano segura que te acompaña en la escuela?"
@@ -3858,7 +3714,8 @@
       "en": "Gentle reassuring hand squeeze",
       "gl": "Apertar a man con firmeza suave",
       "es": "Apertar a man con firmeza suave"
-    }
+    },
+    "lamina": "aperta"
   },
   {
     "id": "escola_rut_144",
@@ -3869,10 +3726,8 @@
     "en": "Eye contact",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-144",
     "corHex": "#1e293b",
     "bgHex": "#1e293b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Miras aos ollos cando dis un saúdo agarimoso?",
       "es": "¿Miras a los ojos cuando dices un saludo cariñoso?"
@@ -3885,7 +3740,8 @@
       "en": "Warm direct eye contact and smile",
       "gl": "Mirada serena e sorriso cálido",
       "es": "Mirada serena e sorriso cálido"
-    }
+    },
+    "lamina": "ollos"
   },
   {
     "id": "escola_rut_145",
@@ -3896,10 +3752,8 @@
     "en": "Reunion time",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-145",
     "corHex": "#d97706",
     "bgHex": "#d9770612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Vén buscarte a túa familia ao rematar o día?",
       "es": "¿Viene a buscarte tu familia al terminar el día?"
@@ -3912,7 +3766,8 @@
       "en": "Happy reunion hug at pickup",
       "gl": "Dar un abrazo de reencontro",
       "es": "Dar un abrazo de reencontro"
-    }
+    },
+    "lamina": "escola_rut_145"
   },
   {
     "id": "escola_rut_146",
@@ -3923,10 +3778,8 @@
     "en": "Home bridge",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-146",
     "corHex": "#c2410c",
     "bgHex": "#c2410c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Contámoslle na casa o que aprendemos hoxe?",
       "es": "¿Le contamos en casa lo que aprendimos hoy?"
@@ -3939,7 +3792,8 @@
       "en": "Hand on heart: Tell family our tale",
       "gl": "Sinalar o corazón coa man",
       "es": "Sinalar o corazón coa man"
-    }
+    },
+    "lamina": "escola_rut_146"
   },
   {
     "id": "emocions_corp_147",
@@ -3950,10 +3804,8 @@
     "en": "Joy",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-147",
     "corHex": "#f59e0b",
     "bgHex": "#f59e0b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que cousa che fai rir con ganas na escola?",
       "es": "¿Qué cosa te hace reír con ganas en la escuela?"
@@ -3966,7 +3818,8 @@
       "en": "Laugh out loud with open arms",
       "gl": "Rir «xa, xa, xa!» abrindo os brazos",
       "es": "Rir «xa, xa, xa!» abrindo os brazos"
-    }
+    },
+    "lamina": "emocions_corp_147"
   },
   {
     "id": "emocions_corp_148",
@@ -3977,10 +3830,8 @@
     "en": "Calm",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-148",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como se sinte o teu corpo cando descansas?",
       "es": "¿Cómo se siente tu cuerpo cuando descansas?"
@@ -3993,7 +3844,8 @@
       "en": "Drop shoulders and breathe ease",
       "gl": "Ombreiros abaixo e respiración fonda",
       "es": "Ombreiros abaixo e respiración fonda"
-    }
+    },
+    "lamina": "emocions_corp_148"
   },
   {
     "id": "emocions_corp_149",
@@ -4004,10 +3856,8 @@
     "en": "Surprise",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-149",
     "corHex": "#a855f7",
     "bgHex": "#a855f712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que sorpresa hai dentro da caixa secreta?",
       "es": "¿Qué sorpresa hay dentro de la caja secreta?"
@@ -4020,7 +3870,8 @@
       "en": "Hands to cheeks: Wow, look!",
       "gl": "Mans ás meixelas: ¡Ohhh!",
       "es": "Mans ás meixelas: ¡Ohhh!"
-    }
+    },
+    "lamina": "emocions_corp_149"
   },
   {
     "id": "emocions_corp_150",
@@ -4031,10 +3882,8 @@
     "en": "Sleepy",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-150",
     "corHex": "#6366f1",
     "bgHex": "#6366f112",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Tes sono despois de xogar moito no patio?",
       "es": "¿Tienes sueño tras jugar mucho en el patio?"
@@ -4047,7 +3896,8 @@
       "en": "Yawn and stretch your sleepy arms",
       "gl": "Bocexo amplo tapando a boca",
       "es": "Bocexo amplo tapando a boca"
-    }
+    },
+    "lamina": "emocions_corp_150"
   },
   {
     "id": "emocions_corp_151",
@@ -4058,10 +3908,8 @@
     "en": "Hungry",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-151",
     "corHex": "#ea580c",
     "bgHex": "#ea580c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A barriga pídete comida rica e sa?",
       "es": "¿La barriga te pide comida rica y sana?"
@@ -4074,7 +3922,8 @@
       "en": "Rub tummy in happy circles",
       "gl": "Acariciar a barriga en círculos",
       "es": "Acariciar a barriga en círculos"
-    }
+    },
+    "lamina": "emocions_corp_151"
   },
   {
     "id": "emocions_corp_152",
@@ -4085,10 +3934,8 @@
     "en": "Thirsty",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-152",
     "corHex": "#06b6d4",
     "bgHex": "#06b6d412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Pedimos auga cando temos a gorxa seca?",
       "es": "¿Pedimos agua cuando tenemos la garganta seca?"
@@ -4101,7 +3948,8 @@
       "en": "Cup hand asking for clean water",
       "gl": "Pedir auga coa man en cunca",
       "es": "Pedir auga coa man en cunca"
-    }
+    },
+    "lamina": "emocions_corp_152"
   },
   {
     "id": "emocions_corp_153",
@@ -4112,10 +3960,8 @@
     "en": "Love",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-153",
     "corHex": "#f43f5e",
     "bgHex": "#f43f5e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A quen lle queres dar un abrazo ben apretado?",
       "es": "¿A quién le quieres dar un abrazo bien apretado?"
@@ -4128,7 +3974,8 @@
       "en": "Hand over heart with warm smile",
       "gl": "Pousar a man no corazón",
       "es": "Pousar a man no corazón"
-    }
+    },
+    "lamina": "aperta"
   },
   {
     "id": "emocions_corp_154",
@@ -4139,10 +3986,8 @@
     "en": "Comfort",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-154",
     "corHex": "#64748b",
     "bgHex": "#64748b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Quen che dá un abrazo cando che cae unha bágoa?",
       "es": "¿Quién te da un abrazo cuando te cae una lágrima?"
@@ -4155,7 +4000,8 @@
       "en": "Wipe a teardrop with soft finger",
       "gl": "Secar a bágoa con caricia suave",
       "es": "Secar a bágoa con caricia suave"
-    }
+    },
+    "lamina": "emocions_corp_154"
   },
   {
     "id": "emocions_corp_155",
@@ -4166,10 +4012,8 @@
     "en": "Calming down",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-155",
     "corHex": "#dc2626",
     "bgHex": "#dc262612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Inspiramos tres veces para que pase o enfado?",
       "es": "¿Inspiramos tres veces para que pase el enfado?"
@@ -4182,7 +4026,8 @@
       "en": "Blow out anger like blowing a candle",
       "gl": "Soprar o aire amodiño para calmar",
       "es": "Soprar o aire amodiño para calmar"
-    }
+    },
+    "lamina": "emocions_corp_155"
   },
   {
     "id": "emocions_corp_156",
@@ -4193,10 +4038,8 @@
     "en": "Head",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-156",
     "corHex": "#475569",
     "bgHex": "#47556912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde está a túa cabeza? ¡Tócaa coas mans!",
       "es": "¿Dónde está tu cabeza? ¡Tócala con las manos!"
@@ -4209,7 +4052,8 @@
       "en": "Touch your head with both hands",
       "gl": "Pousar as dúas mans na cabeza",
       "es": "Pousar as dúas mans na cabeza"
-    }
+    },
+    "lamina": "cabeza"
   },
   {
     "id": "emocions_corp_157",
@@ -4220,10 +4064,8 @@
     "en": "Eyes",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-157",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que cores tan bonitas ven os teus ollos?",
       "es": "¿Qué colores tan bonitos ven tus ojos?"
@@ -4236,7 +4078,8 @@
       "en": "Blink eyes open and shut",
       "gl": "Pestanexar suavemente",
       "es": "Pestanexar suavemente"
-    }
+    },
+    "lamina": "ollos"
   },
   {
     "id": "emocions_corp_158",
@@ -4247,10 +4090,8 @@
     "en": "Ears",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-158",
     "corHex": "#d97706",
     "bgHex": "#d9770612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Escoitas o canto dos paxariños no xardín?",
       "es": "¿Escuchas el canto de los pajaritos en el jardín?"
@@ -4263,7 +4104,8 @@
       "en": "Touch your ears to listen close",
       "gl": "Tocar o lóbulo da orella",
       "es": "Tocar o lóbulo da orella"
-    }
+    },
+    "lamina": "emocions_corp_158"
   },
   {
     "id": "emocions_corp_159",
@@ -4274,10 +4116,8 @@
     "en": "Nose",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-159",
     "corHex": "#f59e0b",
     "bgHex": "#f59e0b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A que cheira a flor do monte de Castrelos?",
       "es": "¿A qué huele la flor del monte de Castrelos?"
@@ -4290,7 +4130,8 @@
       "en": "Sniff twice through the nose",
       "gl": "Cheirar dúas veces polo nariz",
       "es": "Cheirar dúas veces polo nariz"
-    }
+    },
+    "lamina": "nariz"
   },
   {
     "id": "emocions_corp_160",
@@ -4301,10 +4142,8 @@
     "en": "Mouth",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-160",
     "corHex": "#ef4444",
     "bgHex": "#ef444412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Abrimos a boca para cantar a canción da Lúa?",
       "es": "¿Abrimos la boca para cantar la canción de Lúa?"
@@ -4317,7 +4156,8 @@
       "en": "Sing out loud: La-la-la!",
       "gl": "Abrir a boca e cantar: «Laaa!»",
       "es": "Abrir a boca e cantar: «Laaa!»"
-    }
+    },
+    "lamina": "emocions_corp_160"
   },
   {
     "id": "emocions_corp_161",
@@ -4328,10 +4168,8 @@
     "en": "Hands",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-161",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Cantas cousas marabillosas fan as túas mans?",
       "es": "¿Cuántas cosas maravillosas hacen tus manos?"
@@ -4344,7 +4182,8 @@
       "en": "Turn palms up and down",
       "gl": "Xirar palmas cara arriba e abaixo",
       "es": "Xirar palmas cara arriba e abaixo"
-    }
+    },
+    "lamina": "man"
   },
   {
     "id": "emocions_corp_162",
@@ -4355,10 +4194,8 @@
     "en": "Feet",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-162",
     "corHex": "#059669",
     "bgHex": "#05966912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Pisar forte no chan fai un son de tambor?",
       "es": "¿Pisar fuerte en el suelo hace un sonido de tambor?"
@@ -4371,7 +4208,8 @@
       "en": "Stomp feet to the beat",
       "gl": "Patear no chan con ritmo",
       "es": "Patear no chan con ritmo"
-    }
+    },
+    "lamina": "pes"
   },
   {
     "id": "emocions_corp_163",
@@ -4382,10 +4220,8 @@
     "en": "Tummy",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-163",
     "corHex": "#ca8a04",
     "bgHex": "#ca8a0412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde vai a comida rica? ¡Á barriguiña!",
       "es": "¿Dónde va la comida rica? ¡A la barriguita!"
@@ -4398,7 +4234,8 @@
       "en": "Circle hands on warm tummy",
       "gl": "Facer círculos na barriga",
       "es": "Facer círculos na barriga"
-    }
+    },
+    "lamina": "barriga"
   },
   {
     "id": "emocions_corp_164",
@@ -4409,10 +4246,8 @@
     "en": "Back",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-164",
     "corHex": "#78350f",
     "bgHex": "#78350f12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Poñemos as costas ben rectas coma unha árbore?",
       "es": "¿Ponemos la espalda bien recta como un árbol?"
@@ -4425,7 +4260,8 @@
       "en": "Straighten your spine tall",
       "gl": "Estirar a columna cara ao ceo",
       "es": "Estirar a columna cara ao ceo"
-    }
+    },
+    "lamina": "emocions_corp_164"
   },
   {
     "id": "emocions_corp_165",
@@ -4436,10 +4272,8 @@
     "en": "Fingers",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-165",
     "corHex": "#a855f7",
     "bgHex": "#a855f712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Podes mover cada dedito un por un?",
       "es": "¿Puedes mover cada dedito uno por uno?"
@@ -4452,7 +4286,8 @@
       "en": "Tap thumb to each fingertip",
       "gl": "Tocar polgar con cada dedo",
       "es": "Tocar polgar con cada dedo"
-    }
+    },
+    "lamina": "emocions_corp_165"
   },
   {
     "id": "emocions_corp_166",
@@ -4463,10 +4298,8 @@
     "en": "Foot tickles",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-166",
     "corHex": "#ec4899",
     "bgHex": "#ec489912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Quen aguanta as cóxegas na planta dos pés?",
       "es": "¿Quién aguanta las cosquillas en la planta de los pies?"
@@ -4479,7 +4312,8 @@
       "en": "Curl your toes and giggle!",
       "gl": "Encoller os pés e rir",
       "es": "Encoller os pés e rir"
-    }
+    },
+    "lamina": "pes"
   },
   {
     "id": "emocions_corp_167",
@@ -4490,10 +4324,8 @@
     "en": "Soft touch",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-167",
     "corHex": "#94a3b8",
     "bgHex": "#94a3b812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Sentides que suave é o pelo da gatiña Lúa?",
       "es": "¿Sentís qué suave es el pelo de la gatita Lúa?"
@@ -4506,7 +4338,8 @@
       "en": "Caress the back of your hand",
       "gl": "Acariciar o dorso da man",
       "es": "Acariciar o dorso da man"
-    }
+    },
+    "lamina": "emocions_corp_167"
   },
   {
     "id": "emocions_corp_168",
@@ -4517,10 +4350,8 @@
     "en": "Loud sound",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-168",
     "corHex": "#dc2626",
     "bgHex": "#dc262612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como soa un trono lonxe no ceo? «Bum!»",
       "es": "¿Cómo suena un trueno lejos en el cielo? «¡Bum!»"
@@ -4533,7 +4364,8 @@
       "en": "One loud clap: Boom!",
       "gl": "Palma forte única no ar",
       "es": "Palma forte única no ar"
-    }
+    },
+    "lamina": "emocions_corp_168"
   },
   {
     "id": "emocions_corp_169",
@@ -4544,10 +4376,8 @@
     "en": "Sweet lullaby",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-169",
     "corHex": "#8b5cf6",
     "bgHex": "#8b5cf612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como soa a música suave que nos adormece?",
       "es": "¿Cómo suena la música suave que nos adormece?"
@@ -4560,7 +4390,8 @@
       "en": "Gentle rocking to lullaby rhythm",
       "gl": "Balanzo lento do corpo",
       "es": "Balanzo lento do corpo"
-    }
+    },
+    "lamina": "cascabel"
   },
   {
     "id": "emocions_corp_170",
@@ -4571,10 +4402,8 @@
     "en": "Warmth",
     "cefr": "Pre-A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-170",
     "corHex": "#f59e0b",
     "bgHex": "#f59e0b12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A man de mamá ou da educadora dá calorciña?",
       "es": "¿La mano de mamá o de la educadora da calorcito?"
@@ -4587,7 +4416,8 @@
       "en": "Rub palms warm and place on cheeks",
       "gl": "Fregar palmas para xerar calor",
       "es": "Fregar palmas para xerar calor"
-    }
+    },
+    "lamina": "quente"
   },
   {
     "id": "emocions_corp_171",
@@ -4598,10 +4428,8 @@
     "en": "Cold ice",
     "cefr": "A1",
     "ratio": "3:5",
-    "rfidTag": "RFID-VIGO-171",
     "corHex": "#0ea5e9",
     "bgHex": "#0ea5e912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que facemos cando a auga está moi fría? ¡Brrr!",
       "es": "¿Qué hacemos cuando el agua está muy fría? «¡Brrr!»"
@@ -4614,7 +4442,8 @@
       "en": "Shiver shoulders playfully: Brrr!",
       "gl": "Tremer ombreiros: ¡Brrr!",
       "es": "Tremer ombreiros: ¡Brrr!"
-    }
+    },
+    "lamina": "frio"
   },
   {
     "id": "cuento_ilus_172",
@@ -4625,10 +4454,8 @@
     "en": "Samil shore walk",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-172",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde está o barquiño que baila nas ondas?",
       "es": "¿Dónde está el barquito que baila en las olas?"
@@ -4641,7 +4468,8 @@
       "en": "Point at the dancing boat",
       "gl": "Sinalar o mar co índice",
       "es": "Sinalar o mar co índice"
-    }
+    },
+    "lamina": "conto_mar_1"
   },
   {
     "id": "cuento_ilus_173",
@@ -4652,10 +4480,8 @@
     "en": "Jumping fish",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-173",
     "corHex": "#ea580c",
     "bgHex": "#ea580c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como salta o peixiño laranxa? «Chuf, chuf!»",
       "es": "¿Cómo salta el pececito naranja? «¡Chuf, chuf!»"
@@ -4668,7 +4494,8 @@
       "en": "Hands jump like fish over waves",
       "gl": "Salto coas mans xuntas",
       "es": "Salto coas mans xuntas"
-    }
+    },
+    "lamina": "conto_mar_2"
   },
   {
     "id": "cuento_ilus_174",
@@ -4679,10 +4506,8 @@
     "en": "Sea shell secret",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-174",
     "corHex": "#ca8a04",
     "bgHex": "#ca8a0412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que escoitas se poñemos a cuncha na orella?",
       "es": "¿Qué escuchas si ponemos la concha en la oreja?"
@@ -4695,7 +4520,8 @@
       "en": "Cup ear listening to ocean roar",
       "gl": "Man na orella escoitando o mar",
       "es": "Man na orella escoitando o mar"
-    }
+    },
+    "lamina": "conto_mar_3"
   },
   {
     "id": "cuento_ilus_175",
@@ -4706,10 +4532,8 @@
     "en": "First day at school",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-175",
     "corHex": "#c2410c",
     "bgHex": "#c2410c12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A quen saúda Lúa coa súa mochiliña amarela?",
       "es": "¿A quién saluda Lúa con su mochilita amarilla?"
@@ -4722,7 +4546,8 @@
       "en": "Wave paw welcoming friends",
       "gl": "Saúdo alegre coa pata",
       "es": "Saúdo alegre coa pata"
-    }
+    },
+    "lamina": "conto_benvida_1"
   },
   {
     "id": "cuento_ilus_176",
@@ -4733,10 +4558,8 @@
     "en": "Circle of friends",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-176",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Sentámonos todos xuntos na alfombra suave?",
       "es": "¿Nos sentamos todos juntos en la alfombra suave?"
@@ -4749,7 +4572,8 @@
       "en": "Squeeze neighbor hands softly",
       "gl": "Apertar as mans dos compañeiros",
       "es": "Apertar as mans dos compañeiros"
-    }
+    },
+    "lamina": "conto_benvida_2"
   },
   {
     "id": "cuento_ilus_177",
@@ -4760,10 +4584,8 @@
     "en": "Hands holding together",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-177",
     "corHex": "#f43f5e",
     "bgHex": "#f43f5e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Dámonos as mans para cantar a canción?",
       "es": "¿Nos damos las manos para cantar la canción?"
@@ -4776,7 +4598,8 @@
       "en": "Hold neighbor palm with care",
       "gl": "Acariciar a palma do veciño",
       "es": "Acariciar a palma do veciño"
-    }
+    },
+    "lamina": "conto_benvida_3"
   },
   {
     "id": "cuento_ilus_178",
@@ -4787,10 +4610,8 @@
     "en": "Body scheme fun",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-178",
     "corHex": "#d97706",
     "bgHex": "#d9770612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde está a túa barriguiña? ¡Cóxegas!",
       "es": "¿Dónde está tu barriguita? ¡Cosquillas!"
@@ -4803,7 +4624,8 @@
       "en": "Touch head, tummy, toes",
       "gl": "Tocar cabeza, barriga e pés",
       "es": "Tocar cabeza, barriga e pés"
-    }
+    },
+    "lamina": "conto_corpo_2"
   },
   {
     "id": "cuento_ilus_179",
@@ -4814,10 +4636,8 @@
     "en": "Autumn leaves falling",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-179",
     "corHex": "#ca8a04",
     "bgHex": "#ca8a0412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como fan as follas ao pisalas? «Crunch, crunch!»",
       "es": "¿Cómo hacen las hojas al pisarlas? «¡Crunch, crunch!»"
@@ -4830,7 +4650,8 @@
       "en": "Crush leaves: Crunch, crunch!",
       "gl": "Pisar facendo «crunch»",
       "es": "Pisar facendo «crunch»"
-    }
+    },
+    "lamina": "conto_follas_2"
   },
   {
     "id": "cuento_ilus_180",
@@ -4841,10 +4662,8 @@
     "en": "Magosto feast",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-180",
     "corHex": "#78350f",
     "bgHex": "#78350f12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como ferve a ola das castañas? «Chuf-chuf!»",
       "es": "¿Cómo hierve la olla de las castañas? «¡Chuf-chuf!»"
@@ -4857,7 +4676,8 @@
       "en": "Stir the hot chestnut pot",
       "gl": "Facer círculos coas mans",
       "es": "Facer círculos coas mans"
-    }
+    },
+    "lamina": "conto_follas_3"
   },
   {
     "id": "cuento_ilus_181",
@@ -4868,10 +4688,8 @@
     "en": "Warm winter wool",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-181",
     "corHex": "#4338ca",
     "bgHex": "#4338ca12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que peza che pon quentiño o pescozo?",
       "es": "¿Qué prenda te pone calentito el cuello?"
@@ -4884,7 +4702,8 @@
       "en": "Wrap scarf around neck",
       "gl": "Arrimar a bufanda ao queixo",
       "es": "Arrimar a bufanda ao queixo"
-    }
+    },
+    "lamina": "conto_choiva_2"
   },
   {
     "id": "cuento_ilus_182",
@@ -4895,10 +4714,8 @@
     "en": "Vigo festive lights",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-182",
     "corHex": "#eab308",
     "bgHex": "#eab30812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ves tantas luces brillantes na rúa da nosa cidade?",
       "es": "¿Ves tantas luces brillantes en la calle de nuestra ciudad?"
@@ -4911,7 +4728,8 @@
       "en": "Twinkle fingers like shining lights",
       "gl": "Abrir e pechar dedos coma chispas",
       "es": "Abrir e pechar dedos coma chispas"
-    }
+    },
+    "lamina": "conto_inverno_1"
   },
   {
     "id": "cuento_ilus_183",
@@ -4922,10 +4740,8 @@
     "en": "Animal footprints",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-183",
     "corHex": "#92400e",
     "bgHex": "#92400e12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Quen pasou por aquí deixando estas pegadiñas?",
       "es": "¿Quién pasó por aquí dejando estas huellitas?"
@@ -4938,7 +4754,8 @@
       "en": "Press knuckles into the floor",
       "gl": "Marcar pegadas cos nós dos dedos",
       "es": "Marcar pegadas cos nós dos dedos"
-    }
+    },
+    "lamina": "conto_animais_3"
   },
   {
     "id": "cuento_ilus_184",
@@ -4949,10 +4766,8 @@
     "en": "Carnival mask",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-184",
     "corHex": "#ec4899",
     "bgHex": "#ec489912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Quen se agocha detrás da careta de cores?",
       "es": "¿Quién se esconde detrás de la careta de colores?"
@@ -4965,7 +4780,8 @@
       "en": "Peek-a-boo: I see you!",
       "gl": "Tapar a cara e abrir: ¡Cucú!",
       "es": "Tapar a cara e abrir: ¡Cucú!"
-    }
+    },
+    "lamina": "conto_animais_1"
   },
   {
     "id": "cuento_ilus_185",
@@ -4976,10 +4792,8 @@
     "en": "Color harmony",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-185",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde está a mazá vermella e o limón amarelo?",
       "es": "¿Dónde está la manzana roja y el limón amarillo?"
@@ -4992,7 +4806,8 @@
       "en": "Touch red, yellow, blue items",
       "gl": "Sinalar obxectos das 3 cores",
       "es": "Sinalar obxectos das 3 cores"
-    }
+    },
+    "lamina": "conto_cores_1"
   },
   {
     "id": "cuento_ilus_186",
@@ -5003,10 +4818,8 @@
     "en": "Rain boots splash",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-186",
     "corHex": "#ef4444",
     "bgHex": "#ef444412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Damos un salto no charco de auga limpa?",
       "es": "¿Damos un salto en el charco de agua limpia?"
@@ -5019,7 +4832,8 @@
       "en": "Two-foot jump into the puddle",
       "gl": "Salto suave cos dous pés",
       "es": "Salto suave cos dous pés"
-    }
+    },
+    "lamina": "conto_choiva_3"
   },
   {
     "id": "cuento_ilus_187",
@@ -5030,10 +4844,8 @@
     "en": "Garden awakening",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-187",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que flor medrou na horta de Lúa? ¡Unha flor rosa!",
       "es": "¿Qué flor creció en el huerto de Lúa? ¡Una flor rosa!"
@@ -5046,7 +4858,8 @@
       "en": "Rise slowly from a seed to bloom",
       "gl": "Medrar dende o chan amodo",
       "es": "Medrar dende o chan amodo"
-    }
+    },
+    "lamina": "conto_primavera_2"
   },
   {
     "id": "cuento_ilus_188",
@@ -5057,10 +4870,8 @@
     "en": "Soap bubble magic",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-188",
     "corHex": "#06b6d4",
     "bgHex": "#06b6d412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Podes soprar moi suave para facer unha burbulla?",
       "es": "¿Puedes soplar muy suave para hacer una burbuja?"
@@ -5073,7 +4884,8 @@
       "en": "Gentle blow to make a bubble",
       "gl": "Soplar moi lixeiro polos beizos",
       "es": "Soplar moi lixeiro polos beizos"
-    }
+    },
+    "lamina": "conto_auga_2"
   },
   {
     "id": "cuento_ilus_189",
@@ -5084,10 +4896,8 @@
     "en": "Trawler coming home",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-189",
     "corHex": "#0891b2",
     "bgHex": "#0891b212",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Ves as gaivotas voando detrás do barco?",
       "es": "¿Ves las gaviotas volando detrás del barco?"
@@ -5100,7 +4910,8 @@
       "en": "Wave to the boat docking at port",
       "gl": "Saudar co brazo ao barco que chega",
       "es": "Saudar co brazo ao barco que chega"
-    }
+    },
+    "lamina": "conto_mar_1"
   },
   {
     "id": "cuento_ilus_190",
@@ -5111,10 +4922,8 @@
     "en": "The boy who loved drumming",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-190",
     "corHex": "#b45309",
     "bgHex": "#b4530912",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como toca o tambor no ritmo de 72 bpm?",
       "es": "¿Cómo toca el tambor en el ritmo de 72 bpm?"
@@ -5127,7 +4936,8 @@
       "en": "Drum the floor with soft palms",
       "gl": "Tocar tambor imaxinario no chan",
       "es": "Tocar tambor imaxinario no chan"
-    }
+    },
+    "lamina": "conto_inverno_2"
   },
   {
     "id": "cuento_ilus_191",
@@ -5138,10 +4948,8 @@
     "en": "The sheltering tree",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-191",
     "corHex": "#15803d",
     "bgHex": "#15803d12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Quen descansa debaixo das ramas frescas?",
       "es": "¿Quién descansa debajo de las ramas frescas?"
@@ -5154,7 +4962,8 @@
       "en": "Cuddle under tree branch arms",
       "gl": "Acubillarse baixo o tellado de brazos",
       "es": "Acubillarse baixo o tellado de brazos"
-    }
+    },
+    "lamina": "conto_follas_1"
   },
   {
     "id": "cuento_ilus_192",
@@ -5165,10 +4974,8 @@
     "en": "The lion and the brave mouse",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-192",
     "corHex": "#d97706",
     "bgHex": "#d9770612",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A ratiña pequena axudou ao gran león?",
       "es": "¿La ratita pequeña ayudó al gran león?"
@@ -5181,7 +4988,8 @@
       "en": "Tiny fingers meet giant paw",
       "gl": "Xuntar mans pequena e grande",
       "es": "Xuntar mans pequena e grande"
-    }
+    },
+    "lamina": "conto_animais_2"
   },
   {
     "id": "cuento_ilus_193",
@@ -5192,10 +5000,8 @@
     "en": "The wind and the kite dance",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-193",
     "corHex": "#7c3aed",
     "bgHex": "#7c3aed12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A cometa sobe moi alto cara ás nubes?",
       "es": "¿La cometa sube muy alto hacia las nubes?"
@@ -5208,7 +5014,8 @@
       "en": "Hold kite string swaying high",
       "gl": "Soster o fío da cometa no ar",
       "es": "Soster o fío da cometa no ar"
-    }
+    },
+    "lamina": "conto_animais_2"
   },
   {
     "id": "cuento_ilus_194",
@@ -5219,10 +5026,8 @@
     "en": "Singing raindrops",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-194",
     "corHex": "#2563eb",
     "bgHex": "#2563eb12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Que che di a chuvia cando pica na fiestra?",
       "es": "¿Qué te dice la lluvia cuando pica en la ventana?"
@@ -5235,7 +5040,8 @@
       "en": "Tap fingertips on window sill",
       "gl": "Puntear no peitoril da fiestra",
       "es": "Puntear no peitoril da fiestra"
-    }
+    },
+    "lamina": "conto_primavera_1"
   },
   {
     "id": "cuento_ilus_195",
@@ -5246,10 +5052,8 @@
     "en": "The bird that found its song",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-195",
     "corHex": "#38bdf8",
     "bgHex": "#38bdf812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como axudan os amigos ao paxariño a cantar?",
       "es": "¿Cómo ayudan los amigos al pajarito a cantar?"
@@ -5262,7 +5066,8 @@
       "en": "Chirp together in harmony",
       "gl": "Cantar suavemente «chío-chío»",
       "es": "Cantar suavemente «chío-chío»"
-    }
+    },
+    "lamina": "conto_animais_2"
   },
   {
     "id": "cuento_ilus_196",
@@ -5273,10 +5078,8 @@
     "en": "The patient tortoise",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-196",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A tartaruga chega feliz camiñando pasiño a pasiño?",
       "es": "¿La tortuga llega feliz caminando pasito a pasito?"
@@ -5289,7 +5092,8 @@
       "en": "Slow peaceful footsteps",
       "gl": "Pasos lentos con respiración calma",
       "es": "Pasos lentos con respiración calma"
-    }
+    },
+    "lamina": "conto_corpo_3"
   },
   {
     "id": "cuento_ilus_197",
@@ -5300,10 +5104,8 @@
     "en": "Rainbow across the bay",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-197",
     "corHex": "#a855f7",
     "bgHex": "#a855f712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Une o arco da vella a cidade coas illas?",
       "es": "¿Une el arco iris la ciudad con las islas?"
@@ -5316,7 +5118,8 @@
       "en": "Stretch giant rainbow overhead",
       "gl": "Arco cos dous brazos no alto",
       "es": "Arco cos dous brazos no alto"
-    }
+    },
+    "lamina": "cuento_ilus_197"
   },
   {
     "id": "cuento_ilus_198",
@@ -5327,10 +5130,8 @@
     "en": "The traveling seed",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-198",
     "corHex": "#ca8a04",
     "bgHex": "#ca8a0412",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Onde caeu a semente para botar raíces?",
       "es": "¿Dónde cayó la semilla para echar raíces?"
@@ -5343,7 +5144,8 @@
       "en": "Drift in wind and land gently",
       "gl": "Flotar e pousarse suavemente",
       "es": "Flotar e pousarse suavemente"
-    }
+    },
+    "lamina": "conto_primavera_2"
   },
   {
     "id": "cuento_ilus_199",
@@ -5354,10 +5156,8 @@
     "en": "Full moon bedtime watch",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-199",
     "corHex": "#fef08a",
     "bgHex": "#fef08a12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A lúa alumea as casiñas mentres durmides?",
       "es": "¿La luna alumbra las casitas mientras dormís?"
@@ -5370,7 +5170,8 @@
       "en": "Close eyes softly under moonlight",
       "gl": "Pechar os ollos cun sorriso calmo",
       "es": "Pechar os ollos cun sorriso calmo"
-    }
+    },
+    "lamina": "conto_inverno_3"
   },
   {
     "id": "cuento_ilus_200",
@@ -5381,10 +5182,8 @@
     "en": "The silver fish treasure",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-200",
     "corHex": "#94a3b8",
     "bgHex": "#94a3b812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿O tesouro era unha cuncha que cantaba?",
       "es": "¿El tesoro era una concha que cantaba?"
@@ -5397,7 +5196,8 @@
       "en": "Reveal treasure in open palms",
       "gl": "Abrir mans amosando o tesouro",
       "es": "Abrir mans amosando o tesouro"
-    }
+    },
+    "lamina": "conto_mar_1"
   },
   {
     "id": "cuento_ilus_201",
@@ -5408,10 +5208,8 @@
     "en": "The sharing bee",
     "cefr": "Pre-A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-201",
     "corHex": "#eab308",
     "bgHex": "#eab30812",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿A abella reparte o zume doce da flor?",
       "es": "¿La abeja reparte el zumo dulce de la flor?"
@@ -5424,7 +5222,8 @@
       "en": "Serve sweet drops to friends",
       "gl": "Compartir gotas de mel imaxinario",
       "es": "Compartir gotas de mel imaxinario"
-    }
+    },
+    "lamina": "cuento_ilus_201"
   },
   {
     "id": "cuento_ilus_202",
@@ -5435,10 +5234,8 @@
     "en": "Dinamita the dog of Vigo",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-202",
     "corHex": "#78350f",
     "bgHex": "#78350f12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Recoñeces a historia do famoso can vigués?",
       "es": "¿Reconoces la historia del famoso perro vigués?"
@@ -5451,7 +5248,8 @@
       "en": "Greet all citizens with a tail wag",
       "gl": "Mover as mans coma quen saúda a todos",
       "es": "Mover as mans coma quen saúda a todos"
-    }
+    },
+    "lamina": "conto_benvida_3"
   },
   {
     "id": "cuento_ilus_203",
@@ -5462,10 +5260,8 @@
     "en": "Rande Bridge across the fjord",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-203",
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Os coches pasan por riba e os barcos por debaixo?",
       "es": "¿Los coches pasan por arriba y los barcos por debajo?"
@@ -5478,7 +5274,8 @@
       "en": "Form a bridge arch with fingertips",
       "gl": "Facer arco coas mans unidas arriba",
       "es": "Facer arco coas mans unidas arriba"
-    }
+    },
+    "lamina": "cuento_ilus_203"
   },
   {
     "id": "cuento_ilus_204",
@@ -5489,10 +5286,8 @@
     "en": "The midsummer frog dance",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-204",
     "corHex": "#15803d",
     "bgHex": "#15803d12",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Como cantan as ras cando empeza o verán?",
       "es": "¿Cómo cantan las ranas cuando empieza el verano?"
@@ -5505,7 +5300,8 @@
       "en": "Frog chorus: Ribbit-ribbit!",
       "gl": "Cantar en coro: ¡Croac, croac!",
       "es": "Cantar en coro: ¡Croac, croac!"
-    }
+    },
+    "lamina": "cuento_ilus_204"
   },
   {
     "id": "cuento_ilus_205",
@@ -5516,10 +5312,8 @@
     "en": "End of year sea welcome",
     "cefr": "A1",
     "ratio": "16:10",
-    "rfidTag": "RFID-VIGO-205",
     "corHex": "#0891b2",
     "bgHex": "#0891b212",
-    "simbolo": "",
     "preguntaSugerida": {
       "gl": "¿Canto crecemos xuntos este curso na escola?",
       "es": "¿Cuánto crecimos juntos este curso en la escuela?"
@@ -5532,6 +5326,7 @@
       "en": "Stand on tiptoes showing how much we grew",
       "gl": "Erguerse moi altos medrando moito",
       "es": "Erguerse moi altos medrando moito"
-    }
+    },
+    "lamina": "conto_mar_2"
   }
 ]

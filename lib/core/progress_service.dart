@@ -185,22 +185,25 @@ class ProgressService {
   }
 
   /// Logs a daily classroom activity marker.
+  ///
+  /// La clave se normaliza a `aaaa-mm-dd`: si llega un ISO con hora, la hora
+  /// se descarta ANTES de tocar el mapa. Guardarla diría a qué hora trabaja la
+  /// persona adulta, que es justo lo que la política de privacidad promete que
+  /// no se guarda.
   Future<void> recordRegistroAula(String dateIso) async {
-    final key = dateIso.trim();
-    if (key.isEmpty) return;
+    final key = _normalizaClaveDia(dateIso);
+    if (key == null) return;
     _registrosAula[key] = true;
-    final parsed = DateTime.tryParse(key) ?? DateTime.now();
-    _updateStreak(parsed);
+    _updateStreak(DateTime.parse(key));
     await save();
   }
 
   /// Logs a daily home activity marker.
   Future<void> recordRegistroFogar(String dateIso) async {
-    final key = dateIso.trim();
-    if (key.isEmpty) return;
+    final key = _normalizaClaveDia(dateIso);
+    if (key == null) return;
     _registrosFogar[key] = true;
-    final parsed = DateTime.tryParse(key) ?? DateTime.now();
-    _updateStreak(parsed);
+    _updateStreak(DateTime.parse(key));
     await save();
   }
 
@@ -266,6 +269,16 @@ class ProgressService {
   }
 
   // --- PRIVATE HELPERS ---
+
+  /// Devuelve `aaaa-mm-dd` de una fecha escrita de cualquier forma, o `null`
+  /// si no hay fecha que valga.
+  String? _normalizaClaveDia(String raw) {
+    final limpio = raw.trim();
+    if (limpio.isEmpty) return null;
+    final parsed = DateTime.tryParse(limpio);
+    if (parsed == null) return null;
+    return _formatDateKey(parsed);
+  }
 
   String _formatDateKey(DateTime dt) {
     final year = dt.year.toString().padLeft(4, '0');

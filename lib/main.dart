@@ -356,24 +356,27 @@ class _HomeScreenState extends State<HomeScreen> {
     es: 'Para familias: 5 bloques de desarrollo de la comunicación, lectura en 4 partes con ejemplos cotidianos sin pantallas infantiles.',
   );
 
+  // Ningún rótulo lleva la cuenta escrita. La llevaba —«Banco de 200»— y la
+  // pantalla cargaba 306 contos y 205 láminas: el rótulo mentía en la cara de
+  // quien abría la app. Ahora cuenta la pantalla, que sabe lo que hay.
   static const _cuentosTitle = LocalizedString(
-    gl: 'Banco de 200 Contos Pedagóxicos',
-    es: 'Banco de 200 Cuentos Pedagógicos',
+    gl: 'Biblioteca de Contos Pedagóxicos',
+    es: 'Biblioteca de Cuentos Pedagógicos',
   );
 
   static const _cuentosSubtitle = LocalizedString(
-    gl: 'Biblioteca de 200 contos estruturados por curso, mes e semana con preguntas graduadas e TPR oral.',
-    es: 'Biblioteca de 200 cuentos estructurados por curso, mes y semana con preguntas graduadas y TPR oral.',
+    gl: 'Contos ilustrados por curso, mes e semana, con preguntas graduadas en tres niveis e reto TPR oral.',
+    es: 'Cuentos ilustrados por curso, mes y semana, con preguntas graduadas en tres niveles y reto TPR oral.',
   );
 
   static const _laminasTitle = LocalizedString(
-    gl: 'Banco de 200 Láminas Didácticas',
-    es: 'Banco de 200 Láminas Didácticas',
+    gl: 'Banco de Láminas Didácticas',
+    es: 'Banco de Láminas Didácticas',
   );
 
   static const _laminasSubtitle = LocalizedString(
-    gl: 'Galería de láminas ilustradas para estimulación visual e enriquecemento de vocabulario temperán.',
-    es: 'Galería de láminas ilustradas para estimulación visual y enriquecimiento de vocabulario temprano.',
+    gl: 'Láminas debuxadas e tarxetas de vocabulario por categoría, con pregunta suxerida e acción TPR.',
+    es: 'Láminas dibujadas y tarjetas de vocabulario por categoría, con pregunta sugerida y acción TPR.',
   );
 
   static const _lecturaTitle = LocalizedString(
@@ -402,8 +405,8 @@ class _HomeScreenState extends State<HomeScreen> {
   );
 
   static const _englishSubtitle = LocalizedString(
-    gl: 'Adestrador FSRS v4.5, colocacións gramaticais e comprensión auditiva guiada polo adulto.',
-    es: 'Entrenador FSRS v4.5, colocaciones gramaticales y comprensión auditiva guiada por el adulto.',
+    gl: 'Repetición espazada do vocabulario, colocacións gramaticais e comprensión auditiva guiada polo adulto.',
+    es: 'Repetición espaciada del vocabulario, colocaciones gramaticales y comprensión auditiva guiada por el adulto.',
   );
 
   static const _estrategiasTitle = LocalizedString(
@@ -412,8 +415,8 @@ class _HomeScreenState extends State<HomeScreen> {
   );
 
   static const _estrategiasSubtitle = LocalizedString(
-    gl: '5 estratexias baseadas en evidencia científica con fundamentación, guía de aplicación e indicadores.',
-    es: '5 estrategias basadas en evidencia científica con fundamentación, guía de aplicación e indicadores.',
+    gl: '5 estratexias de aula co seu porqué, a guía de aplicación, un exemplo de diálogo e o erro a evitar.',
+    es: '5 estrategias de aula con su porqué, la guía de aplicación, un ejemplo de diálogo y el error a evitar.',
   );
 
   static const _dinamicasTitle = LocalizedString(
@@ -773,7 +776,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: _englishTitle.resolve(widget.currentLanguage),
         description: _englishSubtitle.resolve(widget.currentLanguage),
         icon: Icons.language_outlined,
-        buttonText: isGl ? 'Entrar en English L3' : 'Entrar en English L3',
+        buttonText: isGl ? 'Entrar en Inglés L3' : 'Entrar en Inglés L3',
         onTap: () {
           Navigator.of(context).push(
             MaterialPageRoute(

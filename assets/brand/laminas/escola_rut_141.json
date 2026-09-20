@@ -1,0 +1,46 @@
+{
+  "vb": 100,
+  "vh": 100,
+  "nota": "Tarxeta de vocabulario: Danza en corro con ritmo.",
+  "generado": "tools/draw_flashcards.py",
+  "formas": [
+    {
+      "t": "rrect",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100,
+      "r": 0,
+      "f": "#ec489912"
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 48,
+      "rx": 33,
+      "ry": 33,
+      "f": "#ec48991a"
+    },
+    {
+      "t": "ruta",
+      "d": "M 34.88 24 L 34.88 72",
+      "s": "#ec4899",
+      "sw": 7
+    },
+    {
+      "t": "ruta",
+      "d": "M 34.88 24 L 49.28 24 Q 68 48 49.28 72 L 34.88 72",
+      "s": "#ec4899",
+      "sw": 7
+    },
+    {
+      "t": "rrect",
+      "x": 34,
+      "y": 84,
+      "w": 32,
+      "h": 5,
+      "r": 2.5,
+      "f": "#ec4899"
+    }
+  ]
+}

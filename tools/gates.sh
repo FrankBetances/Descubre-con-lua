@@ -76,6 +76,10 @@ run_gate "every asset asked for exists and is packaged" python3 tools/check_bund
 # para el ancho del rectángulo Y para el grosor del contorno: clave repetida,
 # JSON se queda con la última y el fichero se lee perfectamente bien.
 run_gate "every lamina shape actually paints" python3 tools/check_laminas.py
+# Nace de la galería del banco, que enseñaba 205 iconos grises de «imagen rota»
+# porque el campo que traía el dibujo venía vacío en las 205. Ahora cada lámina
+# del banco apunta a un dibujo, y esto comprueba que siga siendo verdad.
+run_gate "every bank card has a drawing" python3 tools/draw_flashcards.py --check
 # Nace del aviso de seguridad del aula, que llevaba un ⚠️ del teclado JUSTO al
 # lado de un icono del set propio diciendo lo mismo: dos avisos y dos dibujos,
 # distintos en cada fabricante. Regla 5 del CLAUDE.md.

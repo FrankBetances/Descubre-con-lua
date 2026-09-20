@@ -45,6 +45,23 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
     }
   }
 
+  /// La categoría del fonema llega como clave de máquina —`short_vowel`,
+  /// `magic_e`— y se enseñaba tal cual, en inglés y con guion bajo, dentro de
+  /// una pantalla en galego.
+  static String _categoria(String clave, AppLanguage lang) {
+    const nombres = <String, List<String>>{
+      'short_vowel': ['vogal curta', 'vocal corta'],
+      'vowel_team': ['parella de vogais', 'pareja de vocales'],
+      'r_controlled': ['vogal con r', 'vocal con r'],
+      'magic_e': ['e muda final', 'e muda final'],
+      'digraph': ['dígrafo', 'dígrafo'],
+      'consonant': ['consoante', 'consonante'],
+    };
+    final par = nombres[clave];
+    if (par == null) return clave.replaceAll('_', ' ');
+    return lang == AppLanguage.gl ? par[0] : par[1];
+  }
+
   @override
   Widget build(BuildContext context) {
     final lang = widget.initialLanguage;
@@ -76,13 +93,14 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: Colors.purple.shade50,
+                    color: AppTheme.primaryLight,
                     borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: Colors.purple.shade100),
+                    border: Border.all(color: AppTheme.primaryLight),
                   ),
                   child: Row(
                     children: [
-                      Icon(Icons.mic, color: Colors.purple.shade700, size: 28),
+                      const Icon(Icons.mic,
+                          color: AppTheme.primaryInk, size: 28),
                       const SizedBox(width: 12),
                       Expanded(
                         child: Column(
@@ -92,8 +110,8 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                               lang == AppLanguage.gl
                                   ? 'Guía de Articulación para Docentes e Nais/Pais'
                                   : 'Guía de Articulación para Docentes y Madres/Padres',
-                              style: TextStyle(
-                                color: Colors.purple.shade900,
+                              style: const TextStyle(
+                                color: AppTheme.primaryInk,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13,
                               ),
@@ -103,8 +121,8 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                               lang == AppLanguage.gl
                                   ? 'Conciencia fonolóxica sintética: o adulto pronuncia o son e o neno imita sen pantallas.'
                                   : 'Conciencia fonológica sintética: el adulto pronuncia el sonido y el niño imita sin pantallas.',
-                              style: TextStyle(
-                                color: Colors.purple.shade800,
+                              style: const TextStyle(
+                                color: AppTheme.primaryInk,
                                 fontSize: 11,
                               ),
                             ),
@@ -133,16 +151,16 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                             width: 52,
                             height: 52,
                             decoration: BoxDecoration(
-                              color: Colors.purple.shade100,
+                              color: AppTheme.primaryLight,
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Center(
                               child: Text(
                                 ph.symbolIpa,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.purple.shade900,
+                                  color: AppTheme.primaryInk,
                                 ),
                               ),
                             ),
@@ -167,13 +185,13 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 6, vertical: 2),
                                       decoration: BoxDecoration(
-                                        color: Colors.grey.shade100,
+                                        color: AppTheme.pageBg,
                                         borderRadius: BorderRadius.circular(6),
                                       ),
                                       child: Text(
-                                        ph.category.replaceAll('_', ' '),
-                                        style: TextStyle(
-                                          color: Colors.grey.shade700,
+                                        _categoria(ph.category, lang),
+                                        style: const TextStyle(
+                                          color: AppTheme.textSecondary,
                                           fontSize: 10,
                                         ),
                                       ),
@@ -183,9 +201,9 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                                 const SizedBox(height: 4),
                                 Text(
                                   'Exemplo: ${ph.exampleWord.en} (${lang == AppLanguage.gl ? ph.exampleWord.gl : ph.exampleWord.es})',
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 13,
-                                    color: Colors.indigo.shade800,
+                                    color: AppTheme.primaryInk,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),

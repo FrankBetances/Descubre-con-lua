@@ -96,22 +96,22 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
               Container(
                 padding: const EdgeInsets.all(14),
                 decoration: BoxDecoration(
-                  color: Colors.amber.shade50,
+                  color: AppTheme.warningBg,
                   borderRadius: BorderRadius.circular(14),
-                  border: Border.all(color: Colors.amber.shade200),
+                  border: Border.all(color: AppTheme.star),
                 ),
                 child: Row(
                   children: [
                     const Icon(Icons.shield_outlined,
-                        color: Colors.amber, size: 22),
+                        color: AppTheme.warning, size: 22),
                     const SizedBox(width: 10),
                     Expanded(
                       child: Text(
                         lang == AppLanguage.gl
                             ? 'Xogo 100% físico para a crianza. Usa letras reais de madeira ou imáns na neveira.'
                             : 'Juego 100% físico para la infancia. Usa letras reales de madera o imanes en la nevera.',
-                        style: TextStyle(
-                          color: Colors.amber.shade900,
+                        style: const TextStyle(
+                          color: AppTheme.warning,
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
                         ),
@@ -169,12 +169,12 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                                 decoration: BoxDecoration(
                                   color: placed
                                       ? AppTheme.primary
-                                      : Colors.grey.shade100,
+                                      : AppTheme.pageBg,
                                   borderRadius: BorderRadius.circular(14),
                                   border: Border.all(
                                     color: placed
                                         ? AppTheme.primaryDark
-                                        : Colors.grey.shade300,
+                                        : AppTheme.border,
                                     width: 2,
                                   ),
                                   boxShadow: placed
@@ -196,7 +196,7 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                                       fontWeight: FontWeight.bold,
                                       color: placed
                                           ? Colors.white
-                                          : Colors.grey.shade400,
+                                          : AppTheme.textMuted,
                                     ),
                                   ),
                                 ),
@@ -276,7 +276,7 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                           }
                         : null,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey.shade100,
+                      backgroundColor: AppTheme.pageBg,
                       foregroundColor: AppTheme.textPrimary,
                     ),
                     child:

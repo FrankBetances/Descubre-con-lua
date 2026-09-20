@@ -94,10 +94,9 @@ void main() {
         'en': 'A · Apple',
         'cefr': 'Pre-A1',
         'ratio': '3:5',
-        'rfidTag': 'RFID-VIGO-001',
+        'lamina': 'mazan',
         'corHex': '#dc2626',
         'bgHex': '#fef2f2',
-        'simbolo': 'apple',
         'preguntaSugerida': {'gl': 'Ves a mazá?', 'es': '¿Ves la manzana?'},
         'obxectivo': {
           'gl': 'Recoñecemento fónico',
@@ -115,7 +114,8 @@ void main() {
       expect(lamina.numero, equals(1));
       expect(lamina.categoria, equals('alfabeto'));
       expect(lamina.ratio, equals('3:5'));
-      expect(lamina.rfidTag, equals('RFID-VIGO-001'));
+      // La clave del dibujo: sin ella la galería no tiene qué pintar.
+      expect(lamina.lamina, equals('mazan'));
       expect(lamina.tprAccion?.en, equals('Bite apple'));
 
       final serialized = lamina.toJson();
@@ -131,20 +131,16 @@ void main() {
       final jsonCefr = {
         'id_global': 101,
         'lemma': 'water',
-        'pos': 'NOUN',
         'banda_frecuencia': '1k',
         'nivel_cefr': 'A1/A2',
-        'zipf_score': 7.5,
       };
 
       final palabra = CorpusPalabra.fromJson(jsonCefr);
       expect(palabra.id, equals(101));
       expect(palabra.lemma, equals('water'));
-      expect(palabra.pos, equals('NOUN'));
       expect(palabra.banda, equals('1k'));
       expect(palabra.bandaNumero, equals(1));
       expect(palabra.nivelCefr, equals('A1/A2'));
-      expect(palabra.zipfScore, equals(7.5));
 
       final jsonBasic = {
         'id': 202,

@@ -304,7 +304,12 @@ Si la app se publica en Google Play, la política de privacidad y el formulario 
 
 Cualquier cambio en lo que la app recoge (un permiso, un paquete, un campo guardado) obliga a actualizar **en el mismo cambio** la política y el formulario de Play Console.
 
-**Lo que la app guarda hoy**, y nada más: la cuenta de uso de la persona adulta para los premios de Lúa —asambleas dirigidas, cápsulas leídas, racha actual y mejor racha, fecha del último día **sin hora**, e identificadores de insignias ganadas—. Va en el almacenamiento privado de la app (`getFilesDir()`), no identifica a nadie, no contiene nada de ninguna crianza y no puede salir del aparato porque no hay permiso de red. Lo guarda un gate: `test/features/premios_test.dart` falla si aparece una clave nueva en ese fichero.
+**Lo que la app guarda hoy**, y nada más, en **dos** ficheros del almacenamiento privado de la app (`getFilesDir()`):
+
+- `premios.json`: la cuenta de uso de la persona adulta para los premios de Lúa —asambleas dirigidas, cápsulas leídas, racha actual y mejor racha, fecha del último día **sin hora**, e identificadores de insignias ganadas—.
+- `user_progress.json`: los mismos contadores del recorrido de la persona adulta (XP, rachas, fecha del último día **sin hora**, qué asambleas y cápsulas completó, y una casilla aula/hogar **por día**, no por momento) y, además, **una tarjeta de repaso espaciado por palabra inglesa**: la palabra, sus números de FSRS (dificultad, estabilidad, repasos, fallos) y las dos fechas del repaso, **en día, sin hora**.
+
+Ninguno de los dos identifica a nadie, ninguno contiene nada de ninguna crianza y ninguno puede salir del aparato porque no hay permiso de red. Que una hora no se cuele —ni escrita, ni en milisegundos desde 1970— no es una promesa: lo comprueban dos gates, y hacen falta los dos, porque cada uno mira su fichero: `test/features/premios_test.dart` y `test/core/progreso_privacidad_test.dart`. Cualquiera de los dos falla si aparece una clave nueva en el fichero que vigila.
 
 Las URLs legales de esta app son estas, y no otras. Salen del sitio de GitHub Pages que publica `docs/`:
 

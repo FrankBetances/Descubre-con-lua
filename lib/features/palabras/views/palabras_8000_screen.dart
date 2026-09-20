@@ -101,7 +101,9 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                 // Search Input
                 TextField(
                   decoration: InputDecoration(
-                    hintText: 'Search English lemma (e.g. water, play)...',
+                    hintText: lang == AppLanguage.gl
+                        ? 'Buscar palabra inglesa (auga: water)...'
+                        : 'Buscar palabra inglesa (agua: water)...',
                     prefixIcon:
                         const Icon(Icons.search, color: AppTheme.primaryDark),
                     filled: true,
@@ -125,7 +127,9 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                       Padding(
                         padding: const EdgeInsets.only(right: 6),
                         child: ChoiceChip(
-                          label: const Text('All Bands'),
+                          label: Text(lang == AppLanguage.gl
+                              ? 'Todas as bandas'
+                              : 'Todas las bandas'),
                           selected: _selectedBanda == null,
                           onSelected: (sel) {
                             if (sel) {
@@ -175,7 +179,9 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                       Padding(
                         padding: const EdgeInsets.only(right: 6),
                         child: ChoiceChip(
-                          label: const Text('All CEFR'),
+                          label: Text(lang == AppLanguage.gl
+                              ? 'Todos os niveis'
+                              : 'Todos los niveles'),
                           selected: _selectedCefr == null,
                           onSelected: (sel) {
                             if (sel) {
@@ -183,7 +189,7 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                               _fetchPalabras();
                             }
                           },
-                          selectedColor: Colors.purple.shade600,
+                          selectedColor: AppTheme.primaryDark,
                           labelStyle: TextStyle(
                             color: _selectedCefr == null
                                 ? Colors.white
@@ -203,7 +209,7 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                               setState(() => _selectedCefr = sel ? c : null);
                               _fetchPalabras();
                             },
-                            selectedColor: Colors.purple.shade600,
+                            selectedColor: AppTheme.primaryDark,
                             labelStyle: TextStyle(
                               color:
                                   isSel ? Colors.white : AppTheme.textPrimary,
@@ -219,6 +225,27 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
             ),
           ),
 
+          // De dónde sale el nivel. Sin esta línea, la etiqueta «A1/A2» se lee
+          // como una clasificación CEFR oficial, y no lo es: sale de la banda
+          // de frecuencia, en bloques de mil.
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+            child: Text(
+              lang == AppLanguage.gl
+                  ? 'O nivel oriéntase pola banda de frecuencia (as mil primeiras '
+                      'palabras, A1/A2; as mil seguintes, A2/B1…). Non é unha '
+                      'clasificación oficial do MCER.'
+                  : 'El nivel se orienta por la banda de frecuencia (las mil primeras '
+                      'palabras, A1/A2; las mil siguientes, A2/B1…). No es una '
+                      'clasificación oficial del MCER.',
+              style: const TextStyle(
+                fontSize: 11,
+                color: AppTheme.textMuted,
+                height: 1.35,
+              ),
+            ),
+          ),
+
           // Count Indicator
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -226,7 +253,9 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '${_palabras.length} words found',
+                  lang == AppLanguage.gl
+                      ? '${_palabras.length} palabras'
+                      : '${_palabras.length} palabras',
                   style: const TextStyle(
                     color: AppTheme.textSecondary,
                     fontWeight: FontWeight.w600,
@@ -265,24 +294,25 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                                   horizontal: 16, vertical: 12),
                               child: Row(
                                 children: [
+                                  // Aquí iba la categoría gramatical, y estaba
+                                  // inventada: 6.206 de las 8.000 palabras
+                                  // venían etiquetadas «NOUN». Ahora va la
+                                  // banda, que es el dato que la lista trae de
+                                  // verdad.
                                   Container(
                                     width: 38,
                                     height: 38,
                                     decoration: BoxDecoration(
-                                      color: Colors.indigo.shade50,
+                                      color: AppTheme.primaryLight,
                                       borderRadius: BorderRadius.circular(10),
                                     ),
                                     child: Center(
                                       child: Text(
-                                        item.pos.substring(
-                                            0,
-                                            item.pos.length > 3
-                                                ? 3
-                                                : item.pos.length),
-                                        style: TextStyle(
-                                          color: Colors.indigo.shade800,
+                                        item.banda,
+                                        style: const TextStyle(
+                                          color: AppTheme.primaryInk,
                                           fontWeight: FontWeight.bold,
-                                          fontSize: 10,
+                                          fontSize: 12,
                                         ),
                                       ),
                                     ),
@@ -303,7 +333,9 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                                         ),
                                         const SizedBox(height: 2),
                                         Text(
-                                          'Band: ${item.banda} · Zipf: ${item.zipfScore.toStringAsFixed(1)}',
+                                          lang == AppLanguage.gl
+                                              ? 'Banda de frecuencia ${item.banda}'
+                                              : 'Banda de frecuencia ${item.banda}',
                                           style: const TextStyle(
                                             fontSize: 12,
                                             color: AppTheme.textSecondary,
@@ -316,13 +348,13 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 8, vertical: 4),
                                     decoration: BoxDecoration(
-                                      color: Colors.purple.shade50,
+                                      color: AppTheme.primaryTint,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Text(
                                       item.nivelCefr,
-                                      style: TextStyle(
-                                        color: Colors.purple.shade800,
+                                      style: const TextStyle(
+                                        color: AppTheme.primaryDark,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 12,
                                       ),

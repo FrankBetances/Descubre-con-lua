@@ -102,15 +102,15 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 10, vertical: 4),
                               decoration: BoxDecoration(
-                                color: Colors.blue.shade50,
+                                color: AppTheme.primaryLight,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
                                 '${din.duracionMinutos} min · ${din.ritmoBpm} BPM',
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 12,
-                                  color: Colors.blue.shade800,
+                                  color: AppTheme.primaryInk,
                                 ),
                               ),
                             ),
@@ -151,7 +151,7 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                               ? 'Procedemento Paso a Paso'
                               : 'Procedimiento Paso a Paso',
                           content: din.procedementoPasoAPaso.resolve(lang),
-                          color: Colors.teal.shade800,
+                          color: AppTheme.primaryInk,
                         ),
 
                         const SizedBox(height: 10),
@@ -162,7 +162,7 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                               ? 'Material Sensorial'
                               : 'Material Sensorial',
                           content: din.materialSensorial.resolve(lang),
-                          color: Colors.brown.shade700,
+                          color: AppTheme.textSecondary,
                         ),
 
                         const SizedBox(height: 12),
@@ -171,23 +171,23 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                         Container(
                           padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
-                            color: Colors.amber.shade50,
+                            color: AppTheme.warningBg,
                             borderRadius: BorderRadius.circular(10),
-                            border: Border.all(color: Colors.amber.shade200),
+                            border: Border.all(color: AppTheme.star),
                           ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Icon(Icons.record_voice_over,
-                                  color: Colors.amber, size: 18),
+                                  color: AppTheme.warning, size: 18),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
                                   din.fraseDocente.resolve(lang),
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 13,
                                     fontStyle: FontStyle.italic,
-                                    color: Colors.amber.shade900,
+                                    color: AppTheme.warning,
                                   ),
                                 ),
                               ),

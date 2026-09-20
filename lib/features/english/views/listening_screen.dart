@@ -98,13 +98,13 @@ class _ListeningScreenState extends State<ListeningScreen> {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: Colors.indigo.shade50,
+                      color: AppTheme.primaryLight,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Text(
+                    child: const Text(
                       'L3 Immersion',
                       style: TextStyle(
-                        color: Colors.indigo.shade800,
+                        color: AppTheme.primaryInk,
                         fontWeight: FontWeight.bold,
                         fontSize: 11,
                       ),
@@ -153,9 +153,9 @@ class _ListeningScreenState extends State<ListeningScreen> {
                         Container(
                           padding: const EdgeInsets.all(16),
                           decoration: BoxDecoration(
-                            color: Colors.grey.shade50,
+                            color: AppTheme.pageBg,
                             borderRadius: BorderRadius.circular(14),
-                            border: Border.all(color: Colors.grey.shade200),
+                            border: Border.all(color: AppTheme.border),
                           ),
                           child: Text(
                             '"${exercise['phrase']!}"',
@@ -186,21 +186,21 @@ class _ListeningScreenState extends State<ListeningScreen> {
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 12, vertical: 6),
                             decoration: BoxDecoration(
-                              color: Colors.amber.shade50,
+                              color: AppTheme.warningBg,
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 const Icon(Icons.pan_tool,
-                                    size: 16, color: Colors.amber),
+                                    size: 16, color: AppTheme.warning),
                                 const SizedBox(width: 6),
                                 Text(
                                   'Acción TPR: ${exercise['tpr']!}',
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.amber.shade900,
+                                    color: AppTheme.warning,
                                   ),
                                 ),
                               ],
@@ -239,7 +239,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
                           }
                         : null,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey.shade100,
+                      backgroundColor: AppTheme.pageBg,
                       foregroundColor: AppTheme.textPrimary,
                       elevation: 0,
                     ),

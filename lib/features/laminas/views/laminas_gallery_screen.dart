@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
@@ -65,6 +66,25 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
     }).toList();
   }
 
+  /// El nombre de la categoría en la lengua de la interfaz. La clave que trae
+  /// el banco —`vigo_natureza`, `escola_rutinas`— es de máquina y se enseñaba
+  /// tal cual, con guion bajo y en gallego para los dos idiomas.
+  String _nomeCategoria(String clave, AppLanguage lang) {
+    const nombres = <String, List<String>>{
+      'todas': ['Todas', 'Todas'],
+      'alfabeto': ['Alfabeto', 'Alfabeto'],
+      'vocabulario': ['Vocabulario', 'Vocabulario'],
+      'animais': ['Animais', 'Animales'],
+      'vigo_natureza': ['Vigo e natureza', 'Vigo y naturaleza'],
+      'escola_rutinas': ['Escola e rutinas', 'Escuela y rutinas'],
+      'emocions_corpo': ['Emocións e corpo', 'Emociones y cuerpo'],
+      'cuento_ilustrado': ['Contos ilustrados', 'Cuentos ilustrados'],
+    };
+    final par = nombres[clave];
+    if (par == null) return clave.replaceAll('_', ' ');
+    return lang == AppLanguage.gl ? par[0] : par[1];
+  }
+
   List<String> get _categoriasDisponibles {
     final set = <String>{'todas'};
     for (final l in _allLaminas) {
@@ -84,9 +104,7 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
         elevation: 0,
         leading: const BotonAtras(),
         title: Text(
-          lang == AppLanguage.gl
-              ? 'Banco de 200 Láminas'
-              : 'Banco de 200 Láminas',
+          lang == AppLanguage.gl ? 'Banco de Láminas' : 'Banco de Láminas',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,
@@ -134,7 +152,7 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                       return Padding(
                         padding: const EdgeInsets.only(right: 8),
                         child: ChoiceChip(
-                          label: Text(cat.toUpperCase()),
+                          label: Text(_nomeCategoria(cat, lang).toUpperCase()),
                           selected: isSelected,
                           onSelected: (selected) {
                             if (selected) {
@@ -232,18 +250,22 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    if (lamina.simbolo != null &&
-                                        lamina.simbolo!.isNotEmpty)
-                                      Text(
-                                        lamina.simbolo!,
-                                        style: const TextStyle(fontSize: 36),
-                                      )
-                                    else
-                                      const Icon(
-                                        Icons.photo_library,
-                                        size: 36,
-                                        color: AppTheme.primaryDark,
+                                    // La lámina, dibujada. Las 205 tienen una:
+                                    // 88 reutilizan un dibujo del repositorio y
+                                    // el resto son tarjeta tipográfica, todas
+                                    // en el mismo formato vectorial.
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.circular(10),
+                                      child: LaminaEscena(
+                                        clave: lamina.lamina,
+                                        ancho: 92,
+                                        mentres: const Icon(
+                                          Icons.photo_library,
+                                          size: 36,
+                                          color: AppTheme.primaryDark,
+                                        ),
                                       ),
+                                    ),
                                     const SizedBox(height: 8),
                                     Text(
                                       lang == AppLanguage.gl
@@ -261,9 +283,9 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                                     const SizedBox(height: 2),
                                     Text(
                                       lamina.en,
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontSize: 12,
-                                        color: Colors.indigo.shade700,
+                                        color: AppTheme.primaryInk,
                                         fontWeight: FontWeight.w500,
                                       ),
                                     ),
@@ -272,13 +294,13 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 6, vertical: 2),
                                       decoration: BoxDecoration(
-                                        color: Colors.purple.shade50,
+                                        color: AppTheme.primaryLight,
                                         borderRadius: BorderRadius.circular(6),
                                       ),
                                       child: Text(
                                         lamina.cefr,
-                                        style: TextStyle(
-                                          color: Colors.purple.shade700,
+                                        style: const TextStyle(
+                                          color: AppTheme.primaryInk,
                                           fontSize: 10,
                                           fontWeight: FontWeight.bold,
                                         ),

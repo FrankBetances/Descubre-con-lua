@@ -31,6 +31,13 @@ class AppTheme {
   static const Color success = Color(0xFF10B981);
   static const Color successBg = Color(0xFFEAFAF2);
   static const Color star = Color(0xFFFACC15);
+
+  /// Aviso: ni error ni éxito. Es el ámbar de la casa, y existe porque las
+  /// pantallas nuevas traían cajas de «ojo con esto» pintadas con
+  /// `Colors.amber.shade50/900` de Material, que no es de este set (regla 5).
+  /// #B45309 sobre #FEF6E7 pasa de sobra el umbral AA de texto normal.
+  static const Color warning = Color(0xFFB45309);
+  static const Color warningBg = Color(0xFFFEF6E7);
   static const Color dark = Color(0xFF0B1220);
 
   // ------------------------------------------- asamblea de segundo ciclo

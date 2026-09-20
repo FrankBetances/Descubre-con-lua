@@ -197,16 +197,16 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 8, vertical: 2),
                               decoration: BoxDecoration(
-                                color: Colors.indigo.shade50,
+                                color: AppTheme.primaryLight,
                                 borderRadius: BorderRadius.circular(6),
                               ),
                               child: Text(
                                 lang == AppLanguage.gl
                                     ? item['gl']!
                                     : item['es']!,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 12,
-                                  color: Colors.indigo.shade800,
+                                  color: AppTheme.primaryInk,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),

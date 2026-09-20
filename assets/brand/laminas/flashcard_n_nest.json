@@ -1,0 +1,40 @@
+{
+  "vb": 100,
+  "vh": 100,
+  "nota": "Tarxeta de vocabulario: N · Niño de paxaro.",
+  "generado": "tools/draw_flashcards.py",
+  "formas": [
+    {
+      "t": "rrect",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100,
+      "r": 0,
+      "f": "#fef3c7"
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 48,
+      "rx": 33,
+      "ry": 33,
+      "f": "#78350f1a"
+    },
+    {
+      "t": "ruta",
+      "d": "M 36.32 72 L 36.32 24 L 63.68 72 L 63.68 24",
+      "s": "#78350f",
+      "sw": 7
+    },
+    {
+      "t": "rrect",
+      "x": 34,
+      "y": 84,
+      "w": 32,
+      "h": 5,
+      "r": 2.5,
+      "f": "#78350f"
+    }
+  ]
+}

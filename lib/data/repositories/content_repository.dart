@@ -39,8 +39,11 @@ class ContentLoadFailure {
 /// Operates completely offline with zero network clients.
 class ContentRepository {
   // Canonical asset paths for new pedagogical modules
-  static const String cuentos200AssetPath =
-      'assets/content/cuentos/banco200_cuentos.json';
+  //
+  // `banco200_cuentos.json` ya no está: sus 200 contos estaban BYTE A BYTE
+  // dentro de historias_progresivas.json, que además trae 6 más. Eran 1,5 MB
+  // de APK que no añadían un solo conto, y una primera carga más lenta por
+  // leer y descartar el mismo fichero dos veces.
   static const String cuentos100AssetPath =
       'assets/content/cuentos/banco100_cuentos.json';
   static const String historiasProgresivasAssetPath =
@@ -474,24 +477,35 @@ class ContentRepository {
   /// Loads pedagogical stories, optionally filtered by course ID and month.
   Future<List<Cuento>> loadCuentos({String? cursoId, int? mesNumero}) async {
     if (_cuentosById.isEmpty) {
+      // El orden manda: primero el banco progresivo, que es el catálogo
+      // completo; después el de 100, que solo aporta lo que no esté ya.
       final paths = [
-        cuentos200AssetPath,
-        cuentos100AssetPath,
         historiasProgresivasAssetPath,
+        cuentos100AssetPath,
       ];
+      // Un mismo título se repite a propósito en los cinco cursos: es la misma
+      // asamblea contada para cada edad. Lo que NO puede repetirse es un título
+      // dentro del MISMO curso, porque entonces la docente ve dos filas iguales
+      // y no hay forma de saber cuál abrir.
+      final vistosPorCurso = <String>{};
       for (final path in paths) {
         try {
           final raw = await _loader.loadRawString(path);
           final dynamic decoded = jsonDecode(raw);
           if (decoded is List) {
             for (final item in decoded) {
-              if (item is Map<String, dynamic>) {
-                final cuento = Cuento.fromJson(item);
-                _cuentosById[cuento.id] = cuento;
-              } else if (item is Map) {
-                final cuento = Cuento.fromJson(Map<String, dynamic>.from(item));
-                _cuentosById[cuento.id] = cuento;
+              final Cuento? cuento = item is Map<String, dynamic>
+                  ? Cuento.fromJson(item)
+                  : item is Map
+                      ? Cuento.fromJson(Map<String, dynamic>.from(item))
+                      : null;
+              if (cuento == null) continue;
+              final firma = '${cuento.cursoId}|${cuento.titulo.gl}';
+              if (!vistosPorCurso.add(firma) &&
+                  !_cuentosById.containsKey(cuento.id)) {
+                continue;
               }
+              _cuentosById[cuento.id] = cuento;
             }
           }
         } catch (e) {
