@@ -1,50 +1,52 @@
-# BRIEFING — 2026-09-11T08:32:00Z
+# BRIEFING — 2026-09-20T15:02:30Z
 
 ## Mission
-Survey the project root, Flutter/Dart toolchain, Android configuration, clean architecture layout, privacy constraints, offline audio options, and testing setup for «Descubre con Lúa · Edición Vigo».
+Investigate the Flutter target codebase for the survey phase of migrating pedagogical content & UI from React to Flutter native.
 
 ## 🔒 My Identity
-- Archetype: teamwork_preview_explorer
-- Roles: Flutter Arch Explorer
-- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2
-- Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
-- Milestone: Survey Phase (M0)
+- Archetype: explorer
+- Roles: read-only investigation, synthesize findings, produce structured reports
+- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2
+- Original parent: 9e628138-021d-44c9-9a72-2da6208e84bb
+- Milestone: survey
 
 ## 🔒 Key Constraints
-- Read-only investigation — do NOT implement source code
-- Package ID must be com.earlify.descubreconlua
-- Release manifest android/app/src/main/AndroidManifest.xml must NOT contain android.permission.INTERNET or non-essential permissions
-- Zero network dependencies, sockets, analytics, or telemetry SDKs in pubspec.yaml and lib/
-- Strict offline audio architecture for local assets
-- All findings documented in analysis.md and handoff.md
+- Read-only investigation — do NOT implement or modify project files
+- Use /Library/Developer/CommandLineTools/usr/bin/git
+- Target branch must be studio, do NOT touch main
+- Strict zero-network privacy policy
+- Frank's rules R1-R6 (honest reporting, no shortcuts, full verification)
 
 ## Current Parent
-- Conversation ID: 155c43c0-be2b-46ce-b47d-cc280903c77f
-- Updated: 2026-09-11T08:32:00Z
+- Conversation ID: 9e628138-021d-44c9-9a72-2da6208e84bb
+- Updated: 2026-09-20T14:54:30Z
 
 ## Investigation State
 - **Explored paths**:
-  - `<documentos locales>/Descubre con Lúa` (root listing, .gitignore, README.md, ORIGINAL_REQUEST.md)
-  - `<repositorio del proyecto anterior de la casa>` (Academy models, Galician voice manifests, assets/voice)
-  - System PATH, Homebrew cellar, Java OpenJDK 17, Android Studio application
+  - `ORIGINAL_REQUEST.md`, `CLAUDE.md`, `.github/workflows/ci.yml`, `tools/gates.sh`
+  - `pubspec.yaml`, `android/app/src/main/AndroidManifest.xml`
+  - `lib/core/` (`local_audio_player.dart`, `local_store.dart`, `localized_string.dart`, `app_theme.dart`, `lamina_pixel.dart`)
+  - `lib/data/models/` (`unidad_model.dart`, `capsula_model.dart`, `calendario_model.dart`)
+  - `lib/data/repositories/content_repository.dart`
+  - `lib/features/` (`unidades_list_screen.dart`, `bloques_list_screen.dart`, `calendario_screen.dart`)
+  - `lib/main.dart`
+  - `assets/` (`assets/content/`, `assets/voice/` [2442 files], `assets/brand/laminas/` [80 files])
 - **Key findings**:
-  - Root is greenfield workspace; no Flutter project exists yet.
-  - Package ID `com.earlify.descubreconlua` needs to be configured in Gradle and Kotlin directories.
-  - Manifest privacy requires explicit `tools:node="remove"` for `INTERNET` and `ACCESS_NETWORK_STATE`.
-  - Zero-network dependencies in `pubspec.yaml`; offline audio player abstracted via `OfflineAudioService`.
-  - Clean architecture blueprints designed for `lib/core`, `lib/data`, `lib/features/juega`, `lib/features/academy`.
-  - Test suites mapped for `test/data/`, `test/features/`, and `test/privacy/`.
-- **Unexplored areas**: None for M0 survey. Implementation work ready for dispatch in M1-M4.
+  - Git branch is `studio` at commit `88d2ae8`, cleanly synchronized with `origin/studio`.
+  - Local macOS environment lacks `flutter` and `dart` CLI binaries; CI/CD runs via GitHub Actions on `ubuntu-latest`.
+  - Binary privacy: `AndroidManifest.xml` strictly strips all network permissions with `tools:node="remove"`. `pubspec.yaml` contains zero third-party dependencies.
+  - Zero external packages standard: Audio uses `MethodChannel` (`LocalAudioPlayer`), storage uses `LocalStore` in `getFilesDir()`.
+  - Full gap analysis and roadmap prepared for R1–R5.
+- **Unexplored areas**: None for survey scope. Full codebase analyzed.
 
 ## Key Decisions Made
-- Recommended abstract `OfflineAudioService` pattern with `MockOfflineAudioService` for deterministic widget/unit tests and lightweight Android native asset player.
-- Defined explicit manifest stripping to guarantee binary-level zero internet permission.
-- Formulated the exact testing suite architecture covering models, JSON loader, repository, validator, widget flows, and static privacy gates.
+- Confirmed strictly read-only execution.
+- Recommended using `LocalStore` rather than adding `shared_preferences` for `progress_service.dart`.
+- Produced comprehensive `report.md` and 5-component `handoff.md`.
 
 ## Artifact Index
-- `<documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md` — Original user request
-- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/DISPATCH.md` — Dispatch log
-- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/BRIEFING.md` — Working memory
-- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/progress.md` — Liveness & progress heartbeat
-- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/analysis.md` — Comprehensive survey findings & blueprints
-- `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/handoff.md` — 5-component survey handoff report
+- `DISPATCH.md` — Prompt record
+- `BRIEFING.md` — Working memory and identity
+- `progress.md` — Liveness heartbeat
+- `report.md` — Comprehensive survey report
+- `handoff.md` — 5-component formal handoff report

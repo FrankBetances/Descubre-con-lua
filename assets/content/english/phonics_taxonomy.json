@@ -1,0 +1,1621 @@
+{
+  "phonemes": [
+    {
+      "id": "ph_short_a",
+      "symbolIpa": "/æ/",
+      "grapheme": "a",
+      "category": "short_vowel",
+      "name": {
+        "gl": "A curta (/æ/)",
+        "es": "A corta (/æ/)"
+      },
+      "exampleWord": {
+        "en": "apple",
+        "gl": "mazá",
+        "es": "manzana"
+      },
+      "audioCue": "/æ/ como en apple e cat",
+      "articulationGuide": {
+        "gl": "Abre a boca ampla e redondea a lingua cara abaixo e adiante.",
+        "es": "Abre la boca amplia y posiciona la lengua hacia abajo y adelante."
+      },
+      "frequencyRank": 1,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:11"
+    },
+    {
+      "id": "ph_short_e",
+      "symbolIpa": "/ɛ/",
+      "grapheme": "e",
+      "category": "short_vowel",
+      "name": {
+        "gl": "E curta (/ɛ/)",
+        "es": "E corta (/ɛ/)"
+      },
+      "exampleWord": {
+        "en": "egg",
+        "gl": "ovo",
+        "es": "huevo"
+      },
+      "audioCue": "/ɛ/ como en egg e bed",
+      "articulationGuide": {
+        "gl": "Boca medio aberta, beizos relaxados coma un medio sorriso.",
+        "es": "Boca medio abierta, labios relajados como media sonrisa."
+      },
+      "frequencyRank": 4,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:12"
+    },
+    {
+      "id": "ph_short_i",
+      "symbolIpa": "/ɪ/",
+      "grapheme": "i",
+      "category": "short_vowel",
+      "name": {
+        "gl": "I curta (/ɪ/)",
+        "es": "I corta (/ɪ/)"
+      },
+      "exampleWord": {
+        "en": "insect",
+        "gl": "insecto",
+        "es": "insecto"
+      },
+      "audioCue": "/ɪ/ como en igloo e pin",
+      "articulationGuide": {
+        "gl": "Lingua alta cara ao padal dianteiro, son rápido e seco.",
+        "es": "Lengua alta hacia el paladar delantero, sonido rápido y seco."
+      },
+      "frequencyRank": 3,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:13"
+    },
+    {
+      "id": "ph_short_o",
+      "symbolIpa": "/ɒ/",
+      "grapheme": "o",
+      "category": "short_vowel",
+      "name": {
+        "gl": "O curta (/ɒ/)",
+        "es": "O corta (/ɒ/)"
+      },
+      "exampleWord": {
+        "en": "octopus",
+        "gl": "polbo",
+        "es": "pulpo"
+      },
+      "audioCue": "/ɒ/ como en octopus e dog",
+      "articulationGuide": {
+        "gl": "Abre a boca en forma oval vertical, lingua relaxada no fondo.",
+        "es": "Abre la boca en forma oval vertical, lengua relajada al fondo."
+      },
+      "frequencyRank": 7,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:14"
+    },
+    {
+      "id": "ph_short_u",
+      "symbolIpa": "/ʌ/",
+      "grapheme": "u",
+      "category": "short_vowel",
+      "name": {
+        "gl": "U curta (/ʌ/)",
+        "es": "U corta (/ʌ/)"
+      },
+      "exampleWord": {
+        "en": "umbrella",
+        "gl": "paraugas",
+        "es": "paraguas"
+      },
+      "audioCue": "/ʌ/ como en umbrella e sun",
+      "articulationGuide": {
+        "gl": "Son gutural central relaxado desde o peito, boca entreaberta.",
+        "es": "Sonido gutural central relajado desde el pecho, boca entreabierta."
+      },
+      "frequencyRank": 9,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:15"
+    },
+    {
+      "id": "ph_b",
+      "symbolIpa": "/b/",
+      "grapheme": "b",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /b/",
+        "es": "Sonido /b/"
+      },
+      "exampleWord": {
+        "en": "bat",
+        "gl": "morcego",
+        "es": "murciélago"
+      },
+      "audioCue": "/b/ bilabial sonoro",
+      "articulationGuide": {
+        "gl": "Xunta ambos beizos e solta o aire con vibración vocal.",
+        "es": "Une ambos labios y suelta el aire con vibración vocal."
+      },
+      "frequencyRank": 5,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:21"
+    },
+    {
+      "id": "ph_c_k",
+      "symbolIpa": "/k/",
+      "grapheme": "c/k",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /k/ (c/k)",
+        "es": "Sonido /k/ (c/k)"
+      },
+      "exampleWord": {
+        "en": "cat",
+        "gl": "gato",
+        "es": "gato"
+      },
+      "audioCue": "/k/ oclusivo velar xordo",
+      "articulationGuide": {
+        "gl": "Dorso da lingua contra o padal brando, solta aire seco sen voz.",
+        "es": "Dorso de la lengua contra el velo del paladar, suelta aire seco sin voz."
+      },
+      "frequencyRank": 2,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:22"
+    },
+    {
+      "id": "ph_d",
+      "symbolIpa": "/d/",
+      "grapheme": "d",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /d/",
+        "es": "Sonido /d/"
+      },
+      "exampleWord": {
+        "en": "dog",
+        "gl": "can",
+        "es": "perro"
+      },
+      "audioCue": "/d/ alveolar sonoro",
+      "articulationGuide": {
+        "gl": "Punta da lingua toca detrás dos dentes superiores con voz.",
+        "es": "Punta de la lengua toca detrás de los dientes superiores con voz."
+      },
+      "frequencyRank": 6,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:23"
+    },
+    {
+      "id": "ph_f",
+      "symbolIpa": "/f/",
+      "grapheme": "f",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /f/",
+        "es": "Sonido /f/"
+      },
+      "exampleWord": {
+        "en": "fish",
+        "gl": "peixe",
+        "es": "pez"
+      },
+      "audioCue": "/f/ labiodental continuo",
+      "articulationGuide": {
+        "gl": "Dentes superiores sobre o beizo inferior, sopra aire suave.",
+        "es": "Dientes superiores sobre el labio inferior, sopla aire suave."
+      },
+      "frequencyRank": 8,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:24"
+    },
+    {
+      "id": "ph_g",
+      "symbolIpa": "/g/",
+      "grapheme": "g",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /g/",
+        "es": "Sonido /g/"
+      },
+      "exampleWord": {
+        "en": "gum",
+        "gl": "chicle",
+        "es": "goma"
+      },
+      "audioCue": "/g/ velar sonoro",
+      "articulationGuide": {
+        "gl": "Igual que /k/ pero facendo vibrar as cordas vocais.",
+        "es": "Igual que /k/ pero haciendo vibrar las cuerdas vocales."
+      },
+      "frequencyRank": 10,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:25"
+    },
+    {
+      "id": "ph_h",
+      "symbolIpa": "/h/",
+      "grapheme": "h",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /h/ aspirado",
+        "es": "Sonido /h/ aspirado"
+      },
+      "exampleWord": {
+        "en": "hat",
+        "gl": "sombreiro",
+        "es": "sombrero"
+      },
+      "audioCue": "/h/ aspiración glotal",
+      "articulationGuide": {
+        "gl": "Expulsa aire coma un suspiro cálido diante da man.",
+        "es": "Expulsa aire como un suspiro cálido frente a la mano."
+      },
+      "frequencyRank": 11,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:26"
+    },
+    {
+      "id": "ph_l",
+      "symbolIpa": "/l/",
+      "grapheme": "l",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /l/",
+        "es": "Sonido /l/"
+      },
+      "exampleWord": {
+        "en": "lion",
+        "gl": "león",
+        "es": "león"
+      },
+      "audioCue": "/l/ lateral alveolar",
+      "articulationGuide": {
+        "gl": "A punta da lingua toca os alvéolos e o aire sae polos lados.",
+        "es": "La punta de la lengua toca los alvéolos y el aire sale por los lados."
+      },
+      "frequencyRank": 12,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:27"
+    },
+    {
+      "id": "ph_m",
+      "symbolIpa": "/m/",
+      "grapheme": "m",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /m/",
+        "es": "Sonido /m/"
+      },
+      "exampleWord": {
+        "en": "moon",
+        "gl": "lúa",
+        "es": "luna"
+      },
+      "audioCue": "/m/ nasal bilabial vibrante",
+      "articulationGuide": {
+        "gl": "Beizos pechados suavemente, o son resoa no nariz (mmmm).",
+        "es": "Labios cerrados suavemente, el sonido resuena en la nariz (mmmm)."
+      },
+      "frequencyRank": 13,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:28"
+    },
+    {
+      "id": "ph_n",
+      "symbolIpa": "/n/",
+      "grapheme": "n",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /n/",
+        "es": "Sonido /n/"
+      },
+      "exampleWord": {
+        "en": "nest",
+        "gl": "niño",
+        "es": "nido"
+      },
+      "audioCue": "/n/ nasal alveolar",
+      "articulationGuide": {
+        "gl": "Punta da lingua pegada arriba, aire polo nariz.",
+        "es": "Punta de la lengua pegada arriba, aire por la nariz."
+      },
+      "frequencyRank": 14,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:29"
+    },
+    {
+      "id": "ph_p",
+      "symbolIpa": "/p/",
+      "grapheme": "p",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /p/",
+        "es": "Sonido /p/"
+      },
+      "exampleWord": {
+        "en": "pig",
+        "gl": "porquiño",
+        "es": "cerdito"
+      },
+      "audioCue": "/p/ bilabial explosivo xordo",
+      "articulationGuide": {
+        "gl": "Xunta beizos e solta unha pequena explosión de aire sen voz.",
+        "es": "Une labios y suelta una pequeña explosión de aire sin voz."
+      },
+      "frequencyRank": 15,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:2A"
+    },
+    {
+      "id": "ph_r",
+      "symbolIpa": "/r/",
+      "grapheme": "r",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /r/ inglés",
+        "es": "Sonido /r/ inglés"
+      },
+      "exampleWord": {
+        "en": "red",
+        "gl": "vermello",
+        "es": "rojo"
+      },
+      "audioCue": "/r/ aproximante alveolar",
+      "articulationGuide": {
+        "gl": "Curva a lingua lixeiramente cara atrás sen tocar o padal.",
+        "es": "Curva la lengua ligeramente hacia atrás sin tocar el paladar."
+      },
+      "frequencyRank": 16,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:2B"
+    },
+    {
+      "id": "ph_s",
+      "symbolIpa": "/s/",
+      "grapheme": "s",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /s/",
+        "es": "Sonido /s/"
+      },
+      "exampleWord": {
+        "en": "sun",
+        "gl": "sol",
+        "es": "sol"
+      },
+      "audioCue": "/s/ sibilante alveolar xordo",
+      "articulationGuide": {
+        "gl": "Dentes case xuntos, aire silbante continuo coma unha serpe.",
+        "es": "Dientes casi juntos, aire silbante continuo como serpiente."
+      },
+      "frequencyRank": 17,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:2C"
+    },
+    {
+      "id": "ph_t",
+      "symbolIpa": "/t/",
+      "grapheme": "t",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /t/",
+        "es": "Sonido /t/"
+      },
+      "exampleWord": {
+        "en": "top",
+        "gl": "peón",
+        "es": "peonza"
+      },
+      "audioCue": "/t/ oclusivo alveolar xordo",
+      "articulationGuide": {
+        "gl": "Punta da lingua toca enriba e solta un golpe de aire rápido.",
+        "es": "Punta de la lengua toca arriba y suelta un golpe de aire rápido."
+      },
+      "frequencyRank": 18,
+      "readingLevel": 1,
+      "nfcUid": "04:A1:7E:2D"
+    },
+    {
+      "id": "ph_v",
+      "symbolIpa": "/v/",
+      "grapheme": "v",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /v/",
+        "es": "Sonido /v/"
+      },
+      "exampleWord": {
+        "en": "van",
+        "gl": "furgoneta",
+        "es": "furgoneta"
+      },
+      "audioCue": "/v/ labiodental sonoro vibrante",
+      "articulationGuide": {
+        "gl": "Dentes superiores no beizo inferior facendo vibrar a voz.",
+        "es": "Dientes superiores en el labio inferior haciendo vibrar la voz."
+      },
+      "frequencyRank": 19,
+      "readingLevel": 2,
+      "nfcUid": "04:A1:7E:2E"
+    },
+    {
+      "id": "ph_w",
+      "symbolIpa": "/w/",
+      "grapheme": "w",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /w/",
+        "es": "Sonido /w/"
+      },
+      "exampleWord": {
+        "en": "wind",
+        "gl": "vento",
+        "es": "viento"
+      },
+      "audioCue": "/w/ semivocal velar redondeada",
+      "articulationGuide": {
+        "gl": "Beizos en círculo coma soprando unha candea suave.",
+        "es": "Labios en círculo como soplando una vela suave."
+      },
+      "frequencyRank": 20,
+      "readingLevel": 2,
+      "nfcUid": "04:A1:7E:2F"
+    },
+    {
+      "id": "ph_z",
+      "symbolIpa": "/z/",
+      "grapheme": "z",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /z/ abella",
+        "es": "Sonido /z/ abeja"
+      },
+      "exampleWord": {
+        "en": "zip",
+        "gl": "cremalleira",
+        "es": "cremallera"
+      },
+      "audioCue": "/z/ sibilante sonoro (zzzzz)",
+      "articulationGuide": {
+        "gl": "Como /s/ pero zumbando con forte vibración de cordas vocais.",
+        "es": "Como /s/ pero zumbando con fuerte vibración de cuerdas vocales."
+      },
+      "frequencyRank": 21,
+      "readingLevel": 2,
+      "nfcUid": "04:A1:7E:30"
+    },
+    {
+      "id": "ph_sh",
+      "symbolIpa": "/ʃ/",
+      "grapheme": "sh",
+      "category": "digraph",
+      "name": {
+        "gl": "Dígrafo /sh/",
+        "es": "Dígrafo /sh/"
+      },
+      "exampleWord": {
+        "en": "ship",
+        "gl": "barco",
+        "es": "barco"
+      },
+      "audioCue": "/ʃ/ son de silencio (shhh)",
+      "articulationGuide": {
+        "gl": "Beizos proxectados cara adiante, aire suave coma pedir silencio.",
+        "es": "Labios proyectados hacia adelante, aire suave como pedir silencio."
+      },
+      "frequencyRank": 22,
+      "readingLevel": 2,
+      "nfcUid": "04:A1:7E:31"
+    },
+    {
+      "id": "ph_ch",
+      "symbolIpa": "/tʃ/",
+      "grapheme": "ch",
+      "category": "digraph",
+      "name": {
+        "gl": "Dígrafo /ch/",
+        "es": "Dígrafo /ch/"
+      },
+      "exampleWord": {
+        "en": "chin",
+        "gl": "queixo",
+        "es": "barbilla"
+      },
+      "audioCue": "/tʃ/ africado xordo (choo-choo)",
+      "articulationGuide": {
+        "gl": "Bloquea o aire coma con /t/ e solta instantaneamente en /sh/.",
+        "es": "Bloquea el aire como con /t/ y suelta instantáneamente en /sh/."
+      },
+      "frequencyRank": 23,
+      "readingLevel": 2,
+      "nfcUid": "04:A1:7E:32"
+    },
+    {
+      "id": "ph_th_unvoiced",
+      "symbolIpa": "/θ/",
+      "grapheme": "th",
+      "category": "digraph",
+      "name": {
+        "gl": "Dígrafo /th/ suave",
+        "es": "Dígrafo /th/ suave"
+      },
+      "exampleWord": {
+        "en": "thumb",
+        "gl": "polgar",
+        "es": "pulgar"
+      },
+      "audioCue": "/θ/ interdental xordo",
+      "articulationGuide": {
+        "gl": "Punta da lingua suavemente entre os dentes, só sopra aire.",
+        "es": "Punta de la lengua suavemente entre los dientes, solo sopla aire."
+      },
+      "frequencyRank": 24,
+      "readingLevel": 2,
+      "nfcUid": "04:A1:7E:33"
+    },
+    {
+      "id": "ph_th_voiced",
+      "symbolIpa": "/ð/",
+      "grapheme": "th",
+      "category": "digraph",
+      "name": {
+        "gl": "Dígrafo /th/ sonoro",
+        "es": "Dígrafo /th/ sonoro"
+      },
+      "exampleWord": {
+        "en": "this",
+        "gl": "isto",
+        "es": "esto"
+      },
+      "audioCue": "/ð/ interdental con vibración vocal",
+      "articulationGuide": {
+        "gl": "Lingua entre dentes con zumbido sonoro continuo.",
+        "es": "Lengua entre dientes con zumbido sonoro continuo."
+      },
+      "frequencyRank": 25,
+      "readingLevel": 2,
+      "nfcUid": "04:A1:7E:34"
+    },
+    {
+      "id": "ph_ck",
+      "symbolIpa": "/k/",
+      "grapheme": "ck",
+      "category": "digraph",
+      "name": {
+        "gl": "Dígrafo -ck final",
+        "es": "Dígrafo -ck final"
+      },
+      "exampleWord": {
+        "en": "duck",
+        "gl": "parrulo",
+        "es": "pato"
+      },
+      "audioCue": "/k/ ao rematar vogal curta",
+      "articulationGuide": {
+        "gl": "Peche seco ao final dunha palabra de vogal curta.",
+        "es": "Cierre seco al final de una palabra de vocal corta."
+      },
+      "frequencyRank": 26,
+      "readingLevel": 2,
+      "nfcUid": "04:A1:7E:35"
+    },
+    {
+      "id": "ph_magic_a",
+      "symbolIpa": "/eɪ/",
+      "grapheme": "a_e",
+      "category": "magic_e",
+      "name": {
+        "gl": "A con E máxico (a_e)",
+        "es": "A con E mágico (a_e)"
+      },
+      "exampleWord": {
+        "en": "cake",
+        "gl": "tarta",
+        "es": "tarta"
+      },
+      "audioCue": "/eɪ/ o E final fai que a vogal diga o seu nome",
+      "articulationGuide": {
+        "gl": "Abre en /e/ e desliza cara a un sorriso /ɪ/.",
+        "es": "Abre en /e/ y desliza hacia una sonrisa /ɪ/."
+      },
+      "frequencyRank": 27,
+      "readingLevel": 3,
+      "nfcUid": "04:A1:7E:41"
+    },
+    {
+      "id": "ph_magic_i",
+      "symbolIpa": "/aɪ/",
+      "grapheme": "i_e",
+      "category": "magic_e",
+      "name": {
+        "gl": "I con E máxico (i_e)",
+        "es": "I con E mágico (i_e)"
+      },
+      "exampleWord": {
+        "en": "bike",
+        "gl": "bicicleta",
+        "es": "bicicleta"
+      },
+      "audioCue": "/aɪ/ o E silencioso fai soar o nome do I",
+      "articulationGuide": {
+        "gl": "Abre en /a/ amplo e pecha rápido cara a /ɪ/.",
+        "es": "Abre en /a/ amplio y cierra rápido hacia /ɪ/."
+      },
+      "frequencyRank": 28,
+      "readingLevel": 3,
+      "nfcUid": "04:A1:7E:42"
+    },
+    {
+      "id": "ph_magic_o",
+      "symbolIpa": "/oʊ/",
+      "grapheme": "o_e",
+      "category": "magic_e",
+      "name": {
+        "gl": "O con E máxico (o_e)",
+        "es": "O con E mágico (o_e)"
+      },
+      "exampleWord": {
+        "en": "rope",
+        "gl": "corda",
+        "es": "cuerda"
+      },
+      "audioCue": "/oʊ/ o E converte a vogal en longa",
+      "articulationGuide": {
+        "gl": "Inicia con boca aberta redondeada e pecha cara a /ʊ/.",
+        "es": "Inicia con boca abierta redondeada y cierra hacia /ʊ/."
+      },
+      "frequencyRank": 29,
+      "readingLevel": 3,
+      "nfcUid": "04:A1:7E:43"
+    },
+    {
+      "id": "ph_magic_u",
+      "symbolIpa": "/juː/",
+      "grapheme": "u_e",
+      "category": "magic_e",
+      "name": {
+        "gl": "U con E máxico (u_e)",
+        "es": "U con E mágico (u_e)"
+      },
+      "exampleWord": {
+        "en": "cube",
+        "gl": "cubo",
+        "es": "cubo"
+      },
+      "audioCue": "/juː/ son longo \"you\"",
+      "articulationGuide": {
+        "gl": "Arranca en /j/ e prollórgase en beizos estreitamente redondeados.",
+        "es": "Arranca en /j/ y se prolonga en labios estrechamente redondeados."
+      },
+      "frequencyRank": 30,
+      "readingLevel": 3,
+      "nfcUid": "04:A1:7E:44"
+    },
+    {
+      "id": "ph_ee_ea",
+      "symbolIpa": "/iː/",
+      "grapheme": "ee/ea",
+      "category": "vowel_team",
+      "name": {
+        "gl": "Equipo ee / ea",
+        "es": "Equipo ee / ea"
+      },
+      "exampleWord": {
+        "en": "tree",
+        "gl": "árbore",
+        "es": "árbol"
+      },
+      "audioCue": "/iː/ son longo de dúas vogais xuntas",
+      "articulationGuide": {
+        "gl": "Sorriso ancho, lingua alta no padal, son longo sostido.",
+        "es": "Sonrisa ancha, lengua alta en el paladar, sonido largo sostenido."
+      },
+      "frequencyRank": 31,
+      "readingLevel": 4,
+      "nfcUid": "04:A1:7E:51"
+    },
+    {
+      "id": "ph_oa_ow",
+      "symbolIpa": "/oʊ/",
+      "grapheme": "oa/ow",
+      "category": "vowel_team",
+      "name": {
+        "gl": "Equipo oa / ow",
+        "es": "Equipo oa / ow"
+      },
+      "exampleWord": {
+        "en": "boat",
+        "gl": "barco",
+        "es": "barco"
+      },
+      "audioCue": "/oʊ/ barco flotando no mar",
+      "articulationGuide": {
+        "gl": "A primeira vogal fala, a segunda escoita calada.",
+        "es": "La primera vocal habla, la segunda escucha en silencio."
+      },
+      "frequencyRank": 32,
+      "readingLevel": 4,
+      "nfcUid": "04:A1:7E:52"
+    },
+    {
+      "id": "ph_oo_long",
+      "symbolIpa": "/uː/",
+      "grapheme": "oo",
+      "category": "vowel_team",
+      "name": {
+        "gl": "Dobre oo longo",
+        "es": "Doble oo largo"
+      },
+      "exampleWord": {
+        "en": "moon",
+        "gl": "lúa",
+        "es": "luna"
+      },
+      "audioCue": "/uː/ como na lúa redonda",
+      "articulationGuide": {
+        "gl": "Beizos moi redondeados en tubo pequeno, son fondo.",
+        "es": "Labios muy redondeados en tubo pequeño, sonido hondo."
+      },
+      "frequencyRank": 33,
+      "readingLevel": 4,
+      "nfcUid": "04:A1:7E:53"
+    },
+    {
+      "id": "ph_r_ar",
+      "symbolIpa": "/ɑːr/",
+      "grapheme": "ar",
+      "category": "r_controlled",
+      "name": {
+        "gl": "R pirata (ar)",
+        "es": "R pirata (ar)"
+      },
+      "exampleWord": {
+        "en": "star",
+        "gl": "estrela",
+        "es": "estrella"
+      },
+      "audioCue": "/ɑːr/ \"Arrr!\" do pirata",
+      "articulationGuide": {
+        "gl": "Abre a boca en /ɑː/ e retrae a lingua cara atrás para o /r/.",
+        "es": "Abre la boca en /ɑː/ y retrae la lengua hacia atrás para la /r/."
+      },
+      "frequencyRank": 34,
+      "readingLevel": 5,
+      "nfcUid": "04:A1:7E:61"
+    }
+  ],
+  "decodableWords": [
+    {
+      "id": "w_cat",
+      "word": "cat",
+      "letters": [
+        "c",
+        "a",
+        "t"
+      ],
+      "phonemes": [
+        "ph_c_k",
+        "ph_short_a",
+        "ph_t"
+      ],
+      "phonemeIpa": [
+        "/k/",
+        "/æ/",
+        "/t/"
+      ],
+      "wordFamily": "-at",
+      "category": "cvc",
+      "level": 1,
+      "gl": "gato",
+      "es": "gato",
+      "en": "cat",
+      "sampleSentence": {
+        "gl": "O gato miau durme na manta.",
+        "es": "El gato miau duerme en la manta."
+      },
+      "audioTrack": 101,
+      "nfcUid": "04:D1:01:A1"
+    },
+    {
+      "id": "w_bat",
+      "word": "bat",
+      "letters": [
+        "b",
+        "a",
+        "t"
+      ],
+      "phonemes": [
+        "ph_b",
+        "ph_short_a",
+        "ph_t"
+      ],
+      "phonemeIpa": [
+        "/b/",
+        "/æ/",
+        "/t/"
+      ],
+      "wordFamily": "-at",
+      "category": "cvc",
+      "level": 1,
+      "gl": "morcego",
+      "es": "murciélago",
+      "en": "bat",
+      "sampleSentence": {
+        "gl": "O morcego voa pola noite.",
+        "es": "El murciélago vuela por la noche."
+      },
+      "audioTrack": 102,
+      "nfcUid": "04:D1:01:A2"
+    },
+    {
+      "id": "w_hat",
+      "word": "hat",
+      "letters": [
+        "h",
+        "a",
+        "t"
+      ],
+      "phonemes": [
+        "ph_h",
+        "ph_short_a",
+        "ph_t"
+      ],
+      "phonemeIpa": [
+        "/h/",
+        "/æ/",
+        "/t/"
+      ],
+      "wordFamily": "-at",
+      "category": "cvc",
+      "level": 1,
+      "gl": "sombreiro",
+      "es": "sombrero",
+      "en": "hat",
+      "sampleSentence": {
+        "gl": "Lúa pon o seu sombreiro de verán.",
+        "es": "Lúa se pone su sombrero de verano."
+      },
+      "audioTrack": 103,
+      "nfcUid": "04:D1:01:A3"
+    },
+    {
+      "id": "w_pan",
+      "word": "pan",
+      "letters": [
+        "p",
+        "a",
+        "n"
+      ],
+      "phonemes": [
+        "ph_p",
+        "ph_short_a",
+        "ph_n"
+      ],
+      "phonemeIpa": [
+        "/p/",
+        "/æ/",
+        "/n/"
+      ],
+      "wordFamily": "-an",
+      "category": "cvc",
+      "level": 1,
+      "gl": "sartén",
+      "es": "sartén",
+      "en": "pan",
+      "sampleSentence": {
+        "gl": "Cociñamos a tortilla na tixola quente.",
+        "es": "Cocinamos la tortilla en la sartén caliente."
+      },
+      "audioTrack": 104,
+      "nfcUid": "04:D1:01:A4"
+    },
+    {
+      "id": "w_bed",
+      "word": "bed",
+      "letters": [
+        "b",
+        "e",
+        "d"
+      ],
+      "phonemes": [
+        "ph_b",
+        "ph_short_e",
+        "ph_d"
+      ],
+      "phonemeIpa": [
+        "/b/",
+        "/ɛ/",
+        "/d/"
+      ],
+      "wordFamily": "-ed",
+      "category": "cvc",
+      "level": 1,
+      "gl": "cama",
+      "es": "cama",
+      "en": "bed",
+      "sampleSentence": {
+        "gl": "Imos descansar na nosa cama cómoda.",
+        "es": "Vamos a descansar en nuestra cama cómoda."
+      },
+      "audioTrack": 105,
+      "nfcUid": "04:D1:01:B1"
+    },
+    {
+      "id": "w_red",
+      "word": "red",
+      "letters": [
+        "r",
+        "e",
+        "d"
+      ],
+      "phonemes": [
+        "ph_r",
+        "ph_short_e",
+        "ph_d"
+      ],
+      "phonemeIpa": [
+        "/r/",
+        "/ɛ/",
+        "/d/"
+      ],
+      "wordFamily": "-ed",
+      "category": "cvc",
+      "level": 1,
+      "gl": "vermello",
+      "es": "rojo",
+      "en": "red",
+      "sampleSentence": {
+        "gl": "A mazá madura é de cor vermella brillante.",
+        "es": "La manzana madura es de color rojo brillante."
+      },
+      "audioTrack": 106,
+      "nfcUid": "04:D1:01:B2"
+    },
+    {
+      "id": "w_pen",
+      "word": "pen",
+      "letters": [
+        "p",
+        "e",
+        "n"
+      ],
+      "phonemes": [
+        "ph_p",
+        "ph_short_e",
+        "ph_n"
+      ],
+      "phonemeIpa": [
+        "/p/",
+        "/ɛ/",
+        "/n/"
+      ],
+      "wordFamily": "-en",
+      "category": "cvc",
+      "level": 1,
+      "gl": "bolígrafo",
+      "es": "bolígrafo",
+      "en": "pen",
+      "sampleSentence": {
+        "gl": "Debuxamos na folla cun bolígrafo azul.",
+        "es": "Dibujamos en la hoja con un bolígrafo azul."
+      },
+      "audioTrack": 107,
+      "nfcUid": "04:D1:01:B3"
+    },
+    {
+      "id": "w_pin",
+      "word": "pin",
+      "letters": [
+        "p",
+        "i",
+        "n"
+      ],
+      "phonemes": [
+        "ph_p",
+        "ph_short_i",
+        "ph_n"
+      ],
+      "phonemeIpa": [
+        "/p/",
+        "/ɪ/",
+        "/n/"
+      ],
+      "wordFamily": "-in",
+      "category": "cvc",
+      "level": 1,
+      "gl": "alfinete",
+      "es": "alfiler",
+      "en": "pin",
+      "sampleSentence": {
+        "gl": "O alfinete sostén o papel no taboleiro.",
+        "es": "El alfiler sostiene el papel en el corcho."
+      },
+      "audioTrack": 108,
+      "nfcUid": "04:D1:01:C1"
+    },
+    {
+      "id": "w_pig",
+      "word": "pig",
+      "letters": [
+        "p",
+        "i",
+        "g"
+      ],
+      "phonemes": [
+        "ph_p",
+        "ph_short_i",
+        "ph_g"
+      ],
+      "phonemeIpa": [
+        "/p/",
+        "/ɪ/",
+        "/g/"
+      ],
+      "wordFamily": "-ig",
+      "category": "cvc",
+      "level": 1,
+      "gl": "porquiño",
+      "es": "cerdito",
+      "en": "pig",
+      "sampleSentence": {
+        "gl": "O porquiño xoga alegre na granxa.",
+        "es": "El cerdito juega alegre en la granja."
+      },
+      "audioTrack": 109,
+      "nfcUid": "04:D1:01:C2"
+    },
+    {
+      "id": "w_dog",
+      "word": "dog",
+      "letters": [
+        "d",
+        "o",
+        "g"
+      ],
+      "phonemes": [
+        "ph_d",
+        "ph_short_o",
+        "ph_g"
+      ],
+      "phonemeIpa": [
+        "/d/",
+        "/ɒ/",
+        "/g/"
+      ],
+      "wordFamily": "-og",
+      "category": "cvc",
+      "level": 1,
+      "gl": "can",
+      "es": "perro",
+      "en": "dog",
+      "sampleSentence": {
+        "gl": "O can leal move o rabiño contento.",
+        "es": "El perro leal mueve la colita contento."
+      },
+      "audioTrack": 110,
+      "nfcUid": "04:D1:01:D1"
+    },
+    {
+      "id": "w_pot",
+      "word": "pot",
+      "letters": [
+        "p",
+        "o",
+        "t"
+      ],
+      "phonemes": [
+        "ph_p",
+        "ph_short_o",
+        "ph_t"
+      ],
+      "phonemeIpa": [
+        "/p/",
+        "/ɒ/",
+        "/t/"
+      ],
+      "wordFamily": "-ot",
+      "category": "cvc",
+      "level": 1,
+      "gl": "pota",
+      "es": "olla",
+      "en": "pot",
+      "sampleSentence": {
+        "gl": "A sopa quente ferve na pota da cociña.",
+        "es": "La sopa caliente hierve en la olla de la cocina."
+      },
+      "audioTrack": 111,
+      "nfcUid": "04:D1:01:D2"
+    },
+    {
+      "id": "w_sun",
+      "word": "sun",
+      "letters": [
+        "s",
+        "u",
+        "n"
+      ],
+      "phonemes": [
+        "ph_s",
+        "ph_short_u",
+        "ph_n"
+      ],
+      "phonemeIpa": [
+        "/s/",
+        "/ʌ/",
+        "/n/"
+      ],
+      "wordFamily": "-un",
+      "category": "cvc",
+      "level": 1,
+      "gl": "sol",
+      "es": "sol",
+      "en": "sun",
+      "sampleSentence": {
+        "gl": "O sol dourado quenta a praia de Samil.",
+        "es": "El sol dorado calienta la playa de Samil."
+      },
+      "audioTrack": 112,
+      "nfcUid": "04:D1:01:E1"
+    },
+    {
+      "id": "w_bug",
+      "word": "bug",
+      "letters": [
+        "b",
+        "u",
+        "g"
+      ],
+      "phonemes": [
+        "ph_b",
+        "ph_short_u",
+        "ph_g"
+      ],
+      "phonemeIpa": [
+        "/b/",
+        "/ʌ/",
+        "/g/"
+      ],
+      "wordFamily": "-ug",
+      "category": "cvc",
+      "level": 1,
+      "gl": "bichiño",
+      "es": "bichito",
+      "en": "bug",
+      "sampleSentence": {
+        "gl": "A xoaniña é un bichiño vermello con puntiños.",
+        "es": "La mariquita es un bichito rojo con puntitos."
+      },
+      "audioTrack": 113,
+      "nfcUid": "04:D1:01:E2"
+    },
+    {
+      "id": "w_ship",
+      "word": "ship",
+      "letters": [
+        "s",
+        "h",
+        "i",
+        "p"
+      ],
+      "phonemes": [
+        "ph_sh",
+        "ph_short_i",
+        "ph_p"
+      ],
+      "phonemeIpa": [
+        "/ʃ/",
+        "/ɪ/",
+        "/p/"
+      ],
+      "wordFamily": "-ip",
+      "category": "ccvc",
+      "level": 2,
+      "gl": "barco",
+      "es": "barco",
+      "en": "ship",
+      "sampleSentence": {
+        "gl": "O barco cruza a ría de Vigo cara ás Illas Cíes.",
+        "es": "El barco cruza la ría de Vigo hacia las Islas Cíes."
+      },
+      "audioTrack": 114,
+      "nfcUid": "04:D2:02:A1"
+    },
+    {
+      "id": "w_fish",
+      "word": "fish",
+      "letters": [
+        "f",
+        "i",
+        "s",
+        "h"
+      ],
+      "phonemes": [
+        "ph_f",
+        "ph_short_i",
+        "ph_sh"
+      ],
+      "phonemeIpa": [
+        "/f/",
+        "/ɪ/",
+        "/ʃ/"
+      ],
+      "wordFamily": "-ish",
+      "category": "cvcc",
+      "level": 2,
+      "gl": "peixe",
+      "es": "pez",
+      "en": "fish",
+      "sampleSentence": {
+        "gl": "O peixiño prateado nada na auga limpa.",
+        "es": "El pececito plateado nada en el agua limpia."
+      },
+      "audioTrack": 115,
+      "nfcUid": "04:D2:02:A2"
+    },
+    {
+      "id": "w_cake",
+      "word": "cake",
+      "letters": [
+        "c",
+        "a",
+        "k",
+        "e"
+      ],
+      "phonemes": [
+        "ph_c_k",
+        "ph_magic_a",
+        "ph_c_k"
+      ],
+      "phonemeIpa": [
+        "/k/",
+        "/eɪ/",
+        "/k/"
+      ],
+      "wordFamily": "-ake",
+      "category": "magic_e",
+      "level": 3,
+      "gl": "tarta",
+      "es": "tarta",
+      "en": "cake",
+      "sampleSentence": {
+        "gl": "Preparamos unha tarta doce para o aniversario.",
+        "es": "Preparamos una tarta dulce para el cumpleaños."
+      },
+      "audioTrack": 116,
+      "nfcUid": "04:D3:03:A1"
+    },
+    {
+      "id": "w_bike",
+      "word": "bike",
+      "letters": [
+        "b",
+        "i",
+        "k",
+        "e"
+      ],
+      "phonemes": [
+        "ph_b",
+        "ph_magic_i",
+        "ph_c_k"
+      ],
+      "phonemeIpa": [
+        "/b/",
+        "/aɪ/",
+        "/k/"
+      ],
+      "wordFamily": "-ike",
+      "category": "magic_e",
+      "level": 3,
+      "gl": "bicicleta",
+      "es": "bicicleta",
+      "en": "bike",
+      "sampleSentence": {
+        "gl": "Pedaleamos na nosa bicicleta polo paseo.",
+        "es": "Pedaleamos en nuestra bicicleta por el paseo."
+      },
+      "audioTrack": 117,
+      "nfcUid": "04:D3:03:A2"
+    }
+  ],
+  "wordFamilies": [
+    {
+      "id": "wf_at",
+      "rime": "-at",
+      "vowelType": "short_a",
+      "level": 1,
+      "words": [
+        "cat",
+        "bat",
+        "hat",
+        "mat",
+        "rat",
+        "sat"
+      ]
+    },
+    {
+      "id": "wf_an",
+      "rime": "-an",
+      "vowelType": "short_a",
+      "level": 1,
+      "words": [
+        "pan",
+        "man",
+        "fan",
+        "can",
+        "van",
+        "ran"
+      ]
+    },
+    {
+      "id": "wf_en",
+      "rime": "-en",
+      "vowelType": "short_e",
+      "level": 1,
+      "words": [
+        "hen",
+        "pen",
+        "men",
+        "ten",
+        "den"
+      ]
+    },
+    {
+      "id": "wf_ed",
+      "rime": "-ed",
+      "vowelType": "short_e",
+      "level": 1,
+      "words": [
+        "bed",
+        "red",
+        "led",
+        "fed"
+      ]
+    },
+    {
+      "id": "wf_in",
+      "rime": "-in",
+      "vowelType": "short_i",
+      "level": 1,
+      "words": [
+        "pin",
+        "win",
+        "bin",
+        "tin",
+        "fin"
+      ]
+    },
+    {
+      "id": "wf_ip",
+      "rime": "-ip",
+      "vowelType": "short_i",
+      "level": 1,
+      "words": [
+        "lip",
+        "tip",
+        "dip",
+        "zip",
+        "rip",
+        "ship"
+      ]
+    },
+    {
+      "id": "wf_og",
+      "rime": "-og",
+      "vowelType": "short_o",
+      "level": 1,
+      "words": [
+        "dog",
+        "fog",
+        "log",
+        "jog",
+        "frog"
+      ]
+    },
+    {
+      "id": "wf_ot",
+      "rime": "-ot",
+      "vowelType": "short_o",
+      "level": 1,
+      "words": [
+        "hot",
+        "pot",
+        "dot",
+        "cot",
+        "not"
+      ]
+    },
+    {
+      "id": "wf_ug",
+      "rime": "-ug",
+      "vowelType": "short_u",
+      "level": 1,
+      "words": [
+        "bug",
+        "hug",
+        "mug",
+        "rug",
+        "jug"
+      ]
+    },
+    {
+      "id": "wf_un",
+      "rime": "-un",
+      "vowelType": "short_u",
+      "level": 1,
+      "words": [
+        "sun",
+        "run",
+        "fun",
+        "bun"
+      ]
+    },
+    {
+      "id": "wf_ake",
+      "rime": "-ake",
+      "vowelType": "long_vowel",
+      "level": 3,
+      "words": [
+        "cake",
+        "bake",
+        "lake",
+        "make",
+        "rake"
+      ]
+    },
+    {
+      "id": "wf_ike",
+      "rime": "-ike",
+      "vowelType": "long_vowel",
+      "level": 3,
+      "words": [
+        "bike",
+        "like",
+        "hike"
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "id": "mis_01_sound_k",
+      "title": {
+        "gl": "Misión 1: O Son /k/ do Gato",
+        "es": "Misión 1: El Sonido /k/ del Gato"
+      },
+      "missionType": "find_phoneme",
+      "targetPhonemeId": "ph_c_k",
+      "audioPrompt": {
+        "gl": "Lúa di: \"Escanea o toca o son inicial /k/ como en cat e mazá!\"",
+        "es": "Lúa dice: \"¡Escanea o toca el sonido inicial /k/ como en cat y manzana!\""
+      },
+      "hint": {
+        "gl": "Busca a tarxeta coa letra C ou K.",
+        "es": "Busca la tarjeta con la letra C o K."
+      },
+      "expectedInput": [
+        "c",
+        "k"
+      ],
+      "level": 1,
+      "xpReward": 25
+    },
+    {
+      "id": "mis_02_blend_cat",
+      "title": {
+        "gl": "Misión 2: Constrúe a Palabra CAT",
+        "es": "Misión 2: Construye la Palabra CAT"
+      },
+      "missionType": "blend_cvc",
+      "targetWordId": "w_cat",
+      "audioPrompt": {
+        "gl": "Lúa di: \"Coloca as letras na mesa física: /k/ ... /æ/ ... /t/ -> CAT!\"",
+        "es": "Lúa dice: \"Coloca las letras en la mesa física: /k/ ... /æ/ ... /t/ -> ¡CAT!\""
+      },
+      "hint": {
+        "gl": "Combina as tres letras de madeira C - A - T.",
+        "es": "Combina las tres letras de madera C - A - T."
+      },
+      "expectedInput": [
+        "c",
+        "a",
+        "t"
+      ],
+      "level": 1,
+      "xpReward": 30
+    },
+    {
+      "id": "mis_03_rhyme_at",
+      "title": {
+        "gl": "Misión 3: Familia que Rima con -AT",
+        "es": "Misión 3: Familia que Rima con -AT"
+      },
+      "missionType": "rhyme_match",
+      "targetWordId": "w_bat",
+      "audioPrompt": {
+        "gl": "Lúa di: \"Que palabra rima con cat e voa na noite? Comeza por /b/!\"",
+        "es": "Lúa dice: \"¿Qué palabra rima con cat y vuela en la noche? ¡Empieza por /b/!\""
+      },
+      "hint": {
+        "gl": "É o morcego bat (/b/ + /at/).",
+        "es": "Es el murciélago bat (/b/ + /at/)."
+      },
+      "expectedInput": [
+        "b",
+        "a",
+        "t"
+      ],
+      "level": 1,
+      "xpReward": 35
+    },
+    {
+      "id": "mis_04_sound_sun",
+      "title": {
+        "gl": "Misión 4: O Son Sibilante /s/ do Sol",
+        "es": "Misión 4: El Sonido Sibilante /s/ del Sol"
+      },
+      "missionType": "find_phoneme",
+      "targetPhonemeId": "ph_s",
+      "audioPrompt": {
+        "gl": "Lúa di: \"Escanea o son silbante /s/ como a serpe ou o sol de verán!\"",
+        "es": "Lúa dice: \"¡Escanea el sonido silbante /s/ como la serpiente o el sol de verano!\""
+      },
+      "hint": {
+        "gl": "Toca a letra S na mesa de lectura.",
+        "es": "Toca la letra S en la mesa de lectura."
+      },
+      "expectedInput": [
+        "s"
+      ],
+      "level": 1,
+      "xpReward": 25
+    },
+    {
+      "id": "mis_05_digraph_ship",
+      "title": {
+        "gl": "Misión 5: O Silencio do Dígrafo SH",
+        "es": "Misión 5: El Silencio del Dígrafo SH"
+      },
+      "missionType": "blend_cvc",
+      "targetWordId": "w_ship",
+      "audioPrompt": {
+        "gl": "Lúa di: \"Fai o son de silencio /ʃ/ e constrúe o barco marítimo SHIP!\"",
+        "es": "Lúa dice: \"¡Haz el sonido de silencio /ʃ/ y construye el barco marítimo SHIP!\""
+      },
+      "hint": {
+        "gl": "Combina o dígrafo SH + I + P.",
+        "es": "Combina el dígrafo SH + I + P."
+      },
+      "expectedInput": [
+        "s",
+        "h",
+        "i",
+        "p"
+      ],
+      "level": 2,
+      "xpReward": 40
+    },
+    {
+      "id": "mis_06_magic_e_cake",
+      "title": {
+        "gl": "Misión 6: O Feitizo do E Máxico",
+        "es": "Misión 6: El Hechizo del E Mágico"
+      },
+      "missionType": "magic_e_transform",
+      "targetWordId": "w_cake",
+      "audioPrompt": {
+        "gl": "Lúa di: \"Engade o E silencioso ao final para transformar a vogal en CAKE!\"",
+        "es": "Lúa dice: \"¡Añade la E silenciosa al final para transformar la vocal en CAKE!\""
+      },
+      "hint": {
+        "gl": "A letra E fai que a letra A diga o seu nome en inglés: /eɪ/.",
+        "es": "La letra E hace que la letra A diga su nombre en inglés: /eɪ/."
+      },
+      "expectedInput": [
+        "c",
+        "a",
+        "k",
+        "e"
+      ],
+      "level": 3,
+      "xpReward": 45
+    }
+  ]
+}

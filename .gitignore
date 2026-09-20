@@ -30,3 +30,7 @@ android/key.properties
 # Caché de bytecode de Python: depende de la máquina y cambia en cada ejecución
 __pycache__/
 *.pyc
+
+# Local reference source from Studio AI (read-only reference, never committed)
+.studio_ref/
+

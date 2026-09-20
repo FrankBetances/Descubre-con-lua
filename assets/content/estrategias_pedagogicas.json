@@ -1,0 +1,162 @@
+[
+  {
+    "id": "est-espera-5s",
+    "clave": "espera_5s",
+    "nome": {
+      "gl": "Regra de Ouro dos 5 Segundos de Espera Activa",
+      "es": "Regla de Oro de los 5 Segundos de Espera Activa"
+    },
+    "subtitulo": {
+      "gl": "Dar tempo ao córtex prefrontal e ás vías auditivas sen anticiparse",
+      "es": "Dar tiempo a la corteza prefrontal y vías auditivas sin anticiparse"
+    },
+    "baseNeurobioloxica": {
+      "gl": "O cerebro da crianza de 0 a 6 anos require entre 3 e 5 segundos para procesar a fonoloxía, recuperar o significado do léxico no hipocampo e planificar a resposta motriz nos beizos e lingua. A présa adulta bloquea o proceso e xera ansiedade.",
+      "es": "El cerebro infantil de 0 a 6 años requiere entre 3 y 5 segundos para procesar la fonología, recuperar el significado léxico en el hipocampo y planificar la respuesta motriz en labios y lengua. La prisa adulta bloquea el proceso y genera ansiedad."
+    },
+    "comoAplicarNaAula": {
+      "gl": "Tras facer unha pregunta ou amosar unha páxina do conto, gardar silencio absoluto durante 5 segundos con mirada acolledora e sorriso calmo. Contar mentalmente: \"mil un, mil dous, mil tres, mil catro, mil cinco\".",
+      "es": "Tras formular una pregunta o mostrar una página del cuento, guardar silencio absoluto durante 5 segundos con mirada acogedora y sonrisa serena. Contar mentalmente: \"mil uno, mil dos, mil tres, mil cuatro, mil cinco\"."
+    },
+    "exemploDialogoAula": {
+      "gl": "Docente: \"Onde pensades que se agochou o polvo pequeno?\" ... [5 segundos de pausa silenciosa e mirada agarimosa] ... Martiño: \"Aló nas algas verdes!\"",
+      "es": "Docente: \"¿Dónde pensáis que se escondió el pulpo pequeño?\" ... [5 segundos de pausa silenciosa y mirada afectuosa] ... Martiño: \"¡Allí en las algas verdes!\""
+    },
+    "erroComunAEvitar": {
+      "gl": "Repetir a pregunta aos 2 segundos ou responder pola crianza cando aínda está procesando a información.",
+      "es": "Repetir la pregunta a los 2 segundos o responder por el niño cuando aún está procesando la información."
+    },
+    "consignaDocente": {
+      "gl": "Silencio fértil: quen sabe esperar permite que o neno pense por si mesmo.",
+      "es": "Silencio fértil: quien sabe esperar permite que el niño piense por sí mismo."
+    }
+  },
+  {
+    "id": "est-andamiaxe-bloom",
+    "clave": "andamiaxe_bloom",
+    "nome": {
+      "gl": "Andamiaxe Dialóxica Graduada (Taxonomía de Bloom Infantil)",
+      "es": "Andamiaje Dialógico Graduado (Taxonomía de Bloom Infantil)"
+    },
+    "subtitulo": {
+      "gl": "Do literal (sinalar) ao inferencial (emocións) e crítico (crear)",
+      "es": "De lo literal (señalar) a lo inferencial (emociones) y crítico (crear)"
+    },
+    "baseNeurobioloxica": {
+      "gl": "O desenvolvemento das funcións executivas constrúese dende o recoñecemento sensorial primario cara ao razoamento abstracto e a empatía social (teoría da mente no lóbulo frontal).",
+      "es": "El desarrollo de las funciones ejecutivas se construye desde el reconocimiento sensorial primario hacia el razonamiento abstracto y la empatía social (teoría de la mente en el lóbulo frontal)."
+    },
+    "comoAplicarNaAula": {
+      "gl": "Empezar polo Nivel 1 (¿Que animal ves aquí?), avanzar ao Nivel 2 (¿Por que pensas que ten frío?) e culminar no Nivel 3 (¿Se ti foses a gaivota, que farías?).",
+      "es": "Comenzar por el Nivel 1 (¿Qué animal ves aquí?), avanzar al Nivel 2 (¿Por qué crees que tiene frío?) y culminar en el Nivel 3 (¿Si tú fueras la gaviota, qué harías?)."
+    },
+    "exemploDialogoAula": {
+      "gl": "Nivel 1: \"Sinalade a barca vermella\". Nivel 2: \"Como se sente o mariñeiro cando chove?\". Nivel 3: \"Que canción lle cantariades para que non teña medo?\".",
+      "es": "Nivel 1: \"Señalad la barca roja\". Nivel 2: \"¿Cómo se siente el marinero cuando llueve?\". Nivel 3: \"¿Qué canción le cantaríais para que no tenga miedo?\"."
+    },
+    "erroComunAEvitar": {
+      "gl": "Facer unicamente preguntas fechadas de Si/Non que non esixen elaboración lingüística.",
+      "es": "Hacer únicamente preguntas cerradas de Sí/No que no exigen elaboración lingüística."
+    },
+    "consignaDocente": {
+      "gl": "Sube un chanziño cada vez; axuda a subir, pero non o cargues nos ombreiros.",
+      "es": "Sube un escalón a la vez; ayuda a subir, pero no lo cargues en hombros."
+    }
+  },
+  {
+    "id": "est-recast-eco",
+    "clave": "recast_eco",
+    "nome": {
+      "gl": "Eco Correctivo Positivo (Recast Oral sen Censura)",
+      "es": "Eco Correctivo Positivo (Recast Oral sin Censura)"
+    },
+    "subtitulo": {
+      "gl": "Modelado fonolóxico e morfosintáctico expansivo sen castigo nin \"non\"",
+      "es": "Modelado fonológico y morfosintáctico expansivo sin castigo ni \"no\""
+    },
+    "baseNeurobioloxica": {
+      "gl": "A corrección punitiva directa activa a amígdala e o medo ao erro, inhibindo a área de Broca. Pola contra, o eco afirmativo e enriquecido almacénase na memoria de traballo como patrón sonoro correcto.",
+      "es": "La corrección punitiva directa activa la amígdala y el miedo al error, inhibiendo el área de Broca. Por contra, el eco afirmativo y enriquecido se almacena en la memoria de trabajo como patrón sonoro correcto."
+    },
+    "comoAplicarNaAula": {
+      "gl": "Cando unha crianza diga unha palabra incompleta ou con erro gramatical, a docente repite a frase de xeito natural, correcto e ampliado, mantendo o entusiasmo da conversa.",
+      "es": "Cuando un niño diga una palabra incompleta o con error gramatical, la docente repite la frase de forma natural, correcta y ampliada, manteniendo el entusiasmo de la conversación."
+    },
+    "exemploDialogoAula": {
+      "gl": "Nena: \"Mira, a poia do peixe!\". Docente: \"Si! É a cola grande do peixe azul que nada rápido na auga!\".",
+      "es": "Niña: \"¡Mira, la poia del pece!\". Docente: \"¡Sí! ¡Es la cola grande del pez azul que nada rápido en el agua!\"."
+    },
+    "erroComunAEvitar": {
+      "gl": "Dicir \"Non se di así, repite comigo\". A censura bloquea a espontaneidade comunicativa.",
+      "es": "Decir \"No se dice así, repite conmigo\". La censura bloquea la espontaneidad comunicativa."
+    },
+    "consignaDocente": {
+      "gl": "Acolle o intento, devolve a música correcta con máis cores e palabras.",
+      "es": "Acoge el intento, devuelve la música correcta con más colores y palabras."
+    }
+  },
+  {
+    "id": "est-cero-pantallas",
+    "clave": "cero_pantallas",
+    "nome": {
+      "gl": "Compromiso Neurobiolóxico Cero Pantallas (0 a 6 Anos)",
+      "es": "Compromiso Neurobiológico Cero Pantallas (0 a 6 Años)"
+    },
+    "subtitulo": {
+      "gl": "Protexer a atención sostida, a mirada humana e o sono profundo",
+      "es": "Proteger la atención sostenida, la mirada humana y el sueño profundo"
+    },
+    "baseNeurobioloxica": {
+      "gl": "A luz azul e os cambios de plano hiperexcitantes das pantallas inundan o cerebro inmaturo de dopamina rápida, atrofian o tempo de atención sostida e impiden a maduración do córtex prefrontal dorsolateral.",
+      "es": "La luz azul y los cambios de plano hiperexcitantes de las pantallas inundan el cerebro inmaduro de dopamina rápida, atrofian el tiempo de atención sostenida e impiden la maduración de la corteza prefrontal dorsolateral."
+    },
+    "comoAplicarNaAula": {
+      "gl": "Todas as interaccións son con persoas de carne e óso, materiais manipulativos naturais (madeira, la, arxila, pedras) e voz viva con instrumentos acústicos reais.",
+      "es": "Todas las interacciones son con personas de carne y hueso, materiales manipulativos naturales (madera, lana, arcilla, piedras) y voz viva con instrumentos acústicos reales."
+    },
+    "exemploDialogoAula": {
+      "gl": "Se un neno pide ver un vídeo: \"Na nosa aula temos algo moito máis marabilloso: as túas mans, os nosos ollos e este conto de verdade que cheira a papel novo\".",
+      "es": "Si un niño pide ver un vídeo: \"En nuestra aula tenemos algo mucho más maravilloso: tus manos, nuestros ojos y este cuento de verdad que huele a papel nuevo\"."
+    },
+    "erroComunAEvitar": {
+      "gl": "Usar pantallas dixitais, tablets ou encerados dixitais coma \"chupetes electrónicos\" para tranquilizar á clase.",
+      "es": "Usar pantallas digitales, tablets o pizarras digitales como \"chupetes electrónicos\" para calmar a la clase."
+    },
+    "consignaDocente": {
+      "gl": "Voz humana, tacto real e presenza plena: ningún algoritmo supera o calor dunha mestra.",
+      "es": "Voz humana, tacto real y presencia plena: ningún algoritmo supera el calor de una maestra."
+    }
+  },
+  {
+    "id": "est-bano-linguaxe",
+    "clave": "bano_linguaxe",
+    "nome": {
+      "gl": "Baño de Linguaxe Prosódica e Riqueza Léxica (BNC/COCA)",
+      "es": "Baño de Lenguaje Prosódico y Riqueza Léxica (BNC/COCA)"
+    },
+    "subtitulo": {
+      "gl": "Narración rica, sinónimos precisos e prosodia melódica constante",
+      "es": "Narración rica, sinónimos precisos y prosodia melódica constante"
+    },
+    "baseNeurobioloxica": {
+      "gl": "O córtex auditivo analiza a melodía e a frecuencia das palabras antes do significado estrito. Un vocabulario diverso e preciso estimula a sinaptoxénese nas áreas temporais e parietais.",
+      "es": "La corteza auditiva analiza la melodía y la frecuencia de las palabras antes del significado estricto. Un vocabulario diverso y preciso estimula la sinaptogénesis en las áreas temporales y parietales."
+    },
+    "comoAplicarNaAula": {
+      "gl": "Non empobrecer a linguaxe con diminutivos excesivos. Empregar palabras precisas (\"diminuto\", \"xigantesco\", \"brumoso\", \"cristalino\") e acompañalas de entoación expresiva.",
+      "es": "No empobrecer el lenguaje con diminutivos excesivos. Emplear palabras precisas (\"diminuto\", \"gigantesco\", \"brumoso\", \"cristalino\") y acompañarlas de entonación expresiva."
+    },
+    "exemploDialogoAula": {
+      "gl": "\"Non é só auga, crianzas: é a marea cristalina da nosa ría que lambe a area da praia con calma.\"",
+      "es": "\"No es solo agua, niños: es la marea cristalina de nuestra ría que lame la arena de la playa con calma.\""
+    },
+    "erroComunAEvitar": {
+      "gl": "Falar con linguaxe telegráfica ou considerar que certos termos son \"demasiado difíciles\" para as crianzas.",
+      "es": "Hablar con lenguaje telegráfico o considerar que ciertos términos son \"demasiado difíciles\" para los niños."
+    },
+    "consignaDocente": {
+      "gl": "Baña os seus oídos en poesía e verdade; as palabras sementadas hoxe serán o seu pensamento mañá.",
+      "es": "Baña sus oídos en poesía y verdad; las palabras sembradas hoy serán su pensamiento mañana."
+    }
+  }
+]

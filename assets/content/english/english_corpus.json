@@ -1,0 +1,531 @@
+{
+  "words": [
+    {
+      "id": "en_hello",
+      "rank": 1,
+      "word": "hello",
+      "phonetic": "/həˈloʊ/",
+      "partOfSpeech": "phrase",
+      "translation": {
+        "gl": "ola",
+        "es": "hola"
+      },
+      "definition": {
+        "gl": "Saúdo afectuoso ao atoparse con alguén",
+        "es": "Saludo afectuoso al encontrarse con alguien"
+      },
+      "category": "social_phrases",
+      "cefr": "Pre-A1",
+      "targetAge": "0-2",
+      "naturalPhrase": {
+        "en": "Hello, good morning! Let’s wash our hands.",
+        "translation": {
+          "gl": "Ola, bos días! Imos lavar as mans.",
+          "es": "¡Hola, buenos días! Vamos a lavarnos las manos."
+        }
+      },
+      "collocations": [
+        "say hello",
+        "wave hello",
+        "hello friend"
+      ],
+      "tprAction": {
+        "gl": "Acenar coa man aberta sorrindo á altura dos ollos",
+        "es": "Saludar con la mano abierta sonriendo a la altura de los ojos"
+      },
+      "frequencyTier": 1000
+    },
+    {
+      "id": "en_water",
+      "rank": 2,
+      "word": "water",
+      "phonetic": "/ˈwɔː.tər/",
+      "partOfSpeech": "noun",
+      "translation": {
+        "gl": "auga",
+        "es": "agua"
+      },
+      "definition": {
+        "gl": "Líquido transparente vital para beber e lavarse",
+        "es": "Líquido transparente vital para beber y lavarse"
+      },
+      "category": "daily_life",
+      "cefr": "Pre-A1",
+      "targetAge": "0-2",
+      "naturalPhrase": {
+        "en": "Drink some fresh water, sip by sip.",
+        "translation": {
+          "gl": "Bebe un pouquiño de auga fresca, trago a trago.",
+          "es": "Bebe un poquito de agua fresca, sorbo a sorbo."
+        }
+      },
+      "collocations": [
+        "drink water",
+        "warm water",
+        "splash water",
+        "tap water"
+      ],
+      "tprAction": {
+        "gl": "Xuntar as dúas mans en cunca coma collendo pingas de auga",
+        "es": "Juntar las dos manos en cuenco simulando recoger gotas de agua"
+      },
+      "frequencyTier": 1000
+    },
+    {
+      "id": "en_listen",
+      "rank": 3,
+      "word": "listen",
+      "phonetic": "/ˈlɪs.ən/",
+      "partOfSpeech": "verb",
+      "translation": {
+        "gl": "escoitar",
+        "es": "escuchar"
+      },
+      "definition": {
+        "gl": "Prestar atención cos oídos aos sons da contorna",
+        "es": "Prestar atención con los oídos a los sonidos del entorno"
+      },
+      "category": "actions_verbs",
+      "cefr": "Pre-A1",
+      "targetAge": "0-2",
+      "naturalPhrase": {
+        "en": "Listen quietly: do you hear the gentle rain tapping?",
+        "translation": {
+          "gl": "Escoita amodo: ¿escoitas o tamborileo da choiva amodiño?",
+          "es": "Escucha despacio: ¿oyes el tamborileo de la lluvia suavemente?"
+        }
+      },
+      "collocations": [
+        "listen carefully",
+        "listen to music",
+        "listen to the birds"
+      ],
+      "tprAction": {
+        "gl": "Levar o dedo índice á orella suavemente en silencio",
+        "es": "Llevar el dedo índice a la oreja suavemente en silencio"
+      },
+      "frequencyTier": 1000
+    },
+    {
+      "id": "en_gentle",
+      "rank": 4,
+      "word": "gentle",
+      "phonetic": "/ˈdʒen.təl/",
+      "partOfSpeech": "adjective",
+      "translation": {
+        "gl": "amable / suave",
+        "es": "suave / delicado"
+      },
+      "definition": {
+        "gl": "Que actúa con agarimo, calma e sen brusquedade",
+        "es": "Que actúa con cariño, calma y sin brusquedad"
+      },
+      "category": "emotions_feelings",
+      "cefr": "A1",
+      "targetAge": "0-2",
+      "naturalPhrase": {
+        "en": "Be gentle with the kitten, soft hands only.",
+        "translation": {
+          "gl": "Sé agarimoso co gatiño, só mans suaves.",
+          "es": "Sé cariñoso con el gatito, solo manos suaves."
+        }
+      },
+      "collocations": [
+        "gentle touch",
+        "gentle breeze",
+        "gentle voice"
+      ],
+      "tprAction": {
+        "gl": "Acariciar o propio antebrazo con calma e lentitude",
+        "es": "Acariciar el propio antebrazo con calma y lentitud"
+      },
+      "frequencyTier": 1000
+    },
+    {
+      "id": "en_breathe",
+      "rank": 5,
+      "word": "breathe",
+      "phonetic": "/briːð/",
+      "partOfSpeech": "verb",
+      "translation": {
+        "gl": "respirar",
+        "es": "respirar"
+      },
+      "definition": {
+        "gl": "Tomar aire polo nariz e soltalo amodo pola boca",
+        "es": "Tomar aire por la nariz y soltarlo despacio por la boca"
+      },
+      "category": "body_health",
+      "cefr": "A1",
+      "targetAge": "0-2",
+      "naturalPhrase": {
+        "en": "Breathe in deep like smelling a flower, and breathe out like blowing a feather.",
+        "translation": {
+          "gl": "Respira fondo coma cheirando unha flor, e solta coma soprando unha pluma.",
+          "es": "Respira hondo como oliendo una flor, y suelta como soplando una pluma."
+        }
+      },
+      "collocations": [
+        "breathe in",
+        "breathe out",
+        "deep breath"
+      ],
+      "tprAction": {
+        "gl": "Man na barriga sentindo como sobe e baixa ao ritmo de 72 BPM",
+        "es": "Mano en la barriga sintiendo cómo sube y baja al compás de 72 BPM"
+      },
+      "frequencyTier": 1000
+    },
+    {
+      "id": "en_together",
+      "rank": 6,
+      "word": "together",
+      "phonetic": "/təˈɡeð.ər/",
+      "partOfSpeech": "adverb",
+      "translation": {
+        "gl": "xuntos",
+        "es": "juntos"
+      },
+      "definition": {
+        "gl": "En compañía doutras persoas compartindo a actividade",
+        "es": "En compañía de otras personas compartiendo la actividad"
+      },
+      "category": "social_phrases",
+      "cefr": "A1",
+      "targetAge": "2-3",
+      "naturalPhrase": {
+        "en": "We tidy up our wooden blocks together.",
+        "translation": {
+          "gl": "Recollemos os nosos bloques de madeira xuntos.",
+          "es": "Recogemos nuestros bloques de madera juntos."
+        }
+      },
+      "collocations": [
+        "play together",
+        "sing together",
+        "hold hands together"
+      ],
+      "tprAction": {
+        "gl": "Cruzar as mans no peito ou dar a man ao compañeiro",
+        "es": "Cruzar las manos en el pecho o tender la mano al compañero"
+      },
+      "frequencyTier": 1000
+    },
+    {
+      "id": "en_wonder",
+      "rank": 7,
+      "word": "wonder",
+      "phonetic": "/ˈwʌn.dər/",
+      "partOfSpeech": "noun",
+      "translation": {
+        "gl": "asombro / marabilla",
+        "es": "asombro / maravilla"
+      },
+      "definition": {
+        "gl": "Sentimento de curiosidade e fascinación ante o descubrimento",
+        "es": "Sentimiento de curiosidad y fascinación ante el descubrimiento"
+      },
+      "category": "science_wonder",
+      "cefr": "A2",
+      "targetAge": "3-4",
+      "naturalPhrase": {
+        "en": "I wonder where the little ladybug is flying today!",
+        "translation": {
+          "gl": "Pregúntome onde estará voando hoxe a nosa xoaniña!",
+          "es": "¡Me pregunto adónde estará volando hoy nuestra mariquita!"
+        }
+      },
+      "collocations": [
+        "full of wonder",
+        "I wonder why",
+        "natural wonder"
+      ],
+      "tprAction": {
+        "gl": "Mirar cara arriba abrindo os ollos con curiosidade e asombro",
+        "es": "Mirar hacia arriba abriendo los ojos con curiosidad y asombro"
+      },
+      "frequencyTier": 2000
+    },
+    {
+      "id": "en_explore",
+      "rank": 8,
+      "word": "explore",
+      "phonetic": "/ɪkˈsplɔːr/",
+      "partOfSpeech": "verb",
+      "translation": {
+        "gl": "explorar",
+        "es": "explorar"
+      },
+      "definition": {
+        "gl": "Percorrer un lugar descoñecido para aprender e investigar",
+        "es": "Recorrer un lugar desconocido para aprender e investigar"
+      },
+      "category": "actions_verbs",
+      "cefr": "A2",
+      "targetAge": "3-4",
+      "naturalPhrase": {
+        "en": "Let’s explore the garden path and find autumn pinecones.",
+        "translation": {
+          "gl": "Imos explorar o camiño do xardín e atopar piñas de outono.",
+          "es": "Vamos a explorar el camino del jardín y encontrar piñas de otoño."
+        }
+      },
+      "collocations": [
+        "explore nature",
+        "explore outdoors",
+        "ready to explore"
+      ],
+      "tprAction": {
+        "gl": "Facer o xesto duns prismáticos cos dedos sobre os ollos",
+        "es": "Hacer el gesto de unos prismáticos con los dedos sobre los ojos"
+      },
+      "frequencyTier": 2000
+    },
+    {
+      "id": "en_curious",
+      "rank": 9,
+      "word": "curious",
+      "phonetic": "/ˈkjʊr.i.əs/",
+      "partOfSpeech": "adjective",
+      "translation": {
+        "gl": "curioso / inquedo",
+        "es": "curioso / despierto"
+      },
+      "definition": {
+        "gl": "Con moitas ganas de coñecer, probar e facerse preguntas",
+        "es": "Con muchas ganas de conocer, probar y hacerse preguntas"
+      },
+      "category": "emotions_feelings",
+      "cefr": "B1",
+      "targetAge": "4-5",
+      "naturalPhrase": {
+        "en": "Lúa is very curious about how sea snails build their shells.",
+        "translation": {
+          "gl": "Lúa sente moita curiosidade por como os caracois do mar constrúen as súas cunchas.",
+          "es": "Lúa siente mucha curiosidad por cómo los caracoles de mar construyen sus conchas."
+        }
+      },
+      "collocations": [
+        "stay curious",
+        "curious mind",
+        "curious about"
+      ],
+      "tprAction": {
+        "gl": "Inclinar a cabeza lixeiramente cara a un lado amosando interese",
+        "es": "Inclinar la cabeza ligeramente hacia un lado mostrando interés"
+      },
+      "frequencyTier": 3000
+    },
+    {
+      "id": "en_observe",
+      "rank": 10,
+      "word": "observe",
+      "phonetic": "/əbˈzɜːrv/",
+      "partOfSpeech": "verb",
+      "translation": {
+        "gl": "observar",
+        "es": "observar"
+      },
+      "definition": {
+        "gl": "Mirar atentamente durante un tempo para comprender algo",
+        "es": "Mirar atentamente durante un tiempo para comprender algo"
+      },
+      "category": "science_wonder",
+      "cefr": "B1",
+      "targetAge": "5-6",
+      "naturalPhrase": {
+        "en": "If we observe patiently, the butterfly will open its wings.",
+        "translation": {
+          "gl": "Se observamos con paciencia, a bolboreta abrirá as súas ás.",
+          "es": "Si observamos con paciencia, la mariposa abrirá sus alas."
+        }
+      },
+      "collocations": [
+        "observe carefully",
+        "observe nature",
+        "observe changes"
+      ],
+      "tprAction": {
+        "gl": "Apoiarse suavemente no queixo con ollada atenta e serena",
+        "es": "Apoyarse suavemente en la barbilla con mirada atenta y serena"
+      },
+      "frequencyTier": 5000
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sc_morning_welcome",
+      "title": {
+        "gl": "Benvida Matinal no Aula e no Fogar",
+        "es": "Bienvenida Matutina en el Aula y en el Hogar"
+      },
+      "category": "social_phrases",
+      "cefr": "A1",
+      "context": {
+        "gl": "Comezo do día, contacto visual e acollida agarimosa",
+        "es": "Comienzo del día, contacto visual y acogida cariñosa"
+      },
+      "pedagogicalObjective": {
+        "gl": "Establecer seguridade afectiva e saúdo espontáneo en inglés",
+        "es": "Establecer seguridad afectiva y saludo espontáneo en inglés"
+      },
+      "turns": [
+        {
+          "speaker": "Teacher / Adult",
+          "en": "Good morning, sweet friend! How are you feeling today?",
+          "translation": {
+            "gl": "Bos días, agarimo! Como te sentes hoxe?",
+            "es": "¡Buenos días, cariño! ¿Cómo te sientes hoy?"
+          },
+          "keyVocabulary": [
+            "morning",
+            "feeling",
+            "today"
+          ]
+        },
+        {
+          "speaker": "Child / Lúa",
+          "en": "I am happy and ready to play!",
+          "translation": {
+            "gl": "Estou ledo e listo para xogar!",
+            "es": "¡Estoy contento y listo para jugar!"
+          },
+          "keyVocabulary": [
+            "happy",
+            "ready",
+            "play"
+          ]
+        },
+        {
+          "speaker": "Teacher / Adult",
+          "en": "Wonderful. Let’s take off our little coat and hang it right here.",
+          "translation": {
+            "gl": "Marabilloso. Imos quitar o noso abriguito e penduralo xusto aquí.",
+            "es": "Maravilloso. Vamos a quitarnos el abriguito y colgarlo justo aquí."
+          },
+          "keyVocabulary": [
+            "coat",
+            "hang",
+            "here"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sc_snack_water",
+      "title": {
+        "gl": "Momento da Merenda e Auga Fresca",
+        "es": "Momento de la Merienda y Agua Fresca"
+      },
+      "category": "food_nutrition",
+      "cefr": "A1",
+      "context": {
+        "gl": "Compartir comida saudable, pedir e agradecer con educación",
+        "es": "Compartir comida saludable, pedir y agradecer con educación"
+      },
+      "pedagogicalObjective": {
+        "gl": "Expresar necesidades vitais básicas de forma autónoma",
+        "es": "Expresar necesidades vitales básicas de forma autónoma"
+      },
+      "turns": [
+        {
+          "speaker": "Child",
+          "en": "May I have some fresh water, please?",
+          "translation": {
+            "gl": "Podo tomar un pouco de auga fresca, por favor?",
+            "es": "¿Puedo tomar un poco de agua fresca, por favor?"
+          },
+          "keyVocabulary": [
+            "water",
+            "fresh",
+            "please"
+          ]
+        },
+        {
+          "speaker": "Adult",
+          "en": "Here you go! Cold and clear. Hold the cup with two hands.",
+          "translation": {
+            "gl": "Aquí tes! Fresca e transparente. Suxeita o vaso con dúas mans.",
+            "es": "¡Aquí tienes! Fresca y transparente. Sujeta el vaso con dos manos."
+          },
+          "keyVocabulary": [
+            "cup",
+            "hands",
+            "cold"
+          ]
+        },
+        {
+          "speaker": "Child",
+          "en": "Thank you! It feels good and refreshing.",
+          "translation": {
+            "gl": "Moitas grazas! Senta moi ben e refresca.",
+            "es": "¡Muchas gracias! Sienta muy bien y refresca."
+          },
+          "keyVocabulary": [
+            "thank you",
+            "feels",
+            "refreshing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sc_nature_discovery",
+      "title": {
+        "gl": "Paseo polo Xardín e Descubrimento da Natureza",
+        "es": "Paseo por el Jardín y Descubrimiento de la Naturaleza"
+      },
+      "category": "nature_animals",
+      "cefr": "A2",
+      "context": {
+        "gl": "Observación sensorial das plantas, insectos e sons de fóra",
+        "es": "Observación sensorial de las plantas, insectos y sonidos exteriores"
+      },
+      "pedagogicalObjective": {
+        "gl": "Formular hipóteses simples sobre o mundo natural con vocabulario preciso",
+        "es": "Formular hipótesis simples sobre el mundo natural con vocabulario preciso"
+      },
+      "turns": [
+        {
+          "speaker": "Adult",
+          "en": "Look down by the green moss: what is crawling on that bark?",
+          "translation": {
+            "gl": "Mira abaixo xunto ao musgo verde: que é iso que gatuña nesa codia?",
+            "es": "Mira abajo junto al musgo verde: ¿qué es eso que repta en esa corteza?"
+          },
+          "keyVocabulary": [
+            "moss",
+            "crawling",
+            "bark"
+          ]
+        },
+        {
+          "speaker": "Child",
+          "en": "It is a tiny red ladybug! It has seven black spots.",
+          "translation": {
+            "gl": "É unha pequena xoaniña vermella! Ten sete puntiños negros.",
+            "es": "¡Es una pequeña mariquita roja! Tiene siete motas negras."
+          },
+          "keyVocabulary": [
+            "ladybug",
+            "spots",
+            "tiny"
+          ]
+        },
+        {
+          "speaker": "Adult",
+          "en": "Let us watch gently without disturbing its journey.",
+          "translation": {
+            "gl": "Imos mirala con agarimo sen perturbar o seu camiño.",
+            "es": "Vamos a mirarla con cariño sin perturbar su camino."
+          },
+          "keyVocabulary": [
+            "watch",
+            "gently",
+            "journey"
+          ]
+        }
+      ]
+    }
+  ]
+}

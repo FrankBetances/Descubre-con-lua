@@ -1,43 +1,35 @@
-## 2026-09-11T08:18:21Z
+## 2026-09-20T14:54:10Z
 
-You are the Codebase & Flutter Tooling Explorer in «Descubre con Lúa · Edición Vigo».
+<USER_REQUEST>
+You are the Flutter Codebase Explorer for the Survey phase of migrating pedagogical content and UI from a React/TypeScript prototype to the Flutter native app "Descubre con Lúa · Edición Vigo".
 
-Your identity:
-- Archetype: teamwork_preview_explorer
-- Role: Flutter Arch Explorer
-- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/
-- Project root: <documentos locales>/Descubre con Lúa
+Working directory for your metadata and report:
+/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/
 
-Mandatory: Read ORIGINAL_REQUEST.md first:
-<documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md
+MANDATORY FIRST STEP:
+Read /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md (especially under ## Follow-up — 2026-09-20T14:51:45Z) and /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/CLAUDE.md.
 
-Your mission in this survey phase:
-1. Inspect the current project root (`<documentos locales>/Descubre con Lúa`):
-   - What files and folders currently exist? Is there already a Flutter project, `pubspec.yaml`, `android/` directory, or is it an initial workspace?
-2. Investigate the available system environment:
-   - Run commands to check `flutter --version`, `dart --version`, and toolchain status.
-3. Investigate the R1 requirements:
-   - Package ID configuration: `com.earlify.descubreconlua` for Android.
-   - Clean architecture layout in `lib/`:
-     - `lib/core/` (themes, typographic constants, local offline audio utilities).
-     - `lib/data/` (strongly typed Dart models, JSON asset loader, content repository).
-     - `lib/features/juega/` (Juega con Lúa · aula module for teachers).
-     - `lib/features/academy/` (Academy · familias module for parents).
-   - Strict privacy & zero-internet requirements:
-     - Release manifest `android/app/src/main/AndroidManifest.xml` must NOT contain `android.permission.INTERNET` or non-essential permissions.
-     - Zero network dependencies, sockets, analytics, or telemetry SDKs in `pubspec.yaml` and `lib/` (e.g. no http, dio, firebase, sentry, etc.).
-     - Allowed local audio dependencies: check lightweight offline audio packages (like `audioplayers` or `just_audio` configured for local assets only without network plugins) or custom platform channels if needed.
-4. Investigate testing setup:
-   - How `flutter test` will run unit tests in `test/data/` and widget tests in `test/features/`.
+YOUR MISSION:
+Investigate the target Flutter codebase at `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/`:
+1. Verify Git status:
+   - Current branch must be `studio`. Verify with `/Library/Developer/CommandLineTools/usr/bin/git status` and `branch`.
+   - Confirm remote tracking and origin status.
+2. Verify Flutter environment:
+   - Check Flutter and Dart tools availability and versions (`flutter --version`).
+   - Run current tests: `flutter test`. Are existing tests passing?
+   - Run `flutter analyze`. What is the baseline?
+3. Inspect current project architecture and files:
+   - `pubspec.yaml` (dependencies, current asset declarations).
+   - `android/app/src/main/AndroidManifest.xml` (verify zero-network permissions).
+   - `lib/core/` (themes, constants, localized strings, audio utilities).
+   - `lib/data/models/` (examine `unidad_model.dart`, `capsula_model.dart` for coding patterns, json serialization, LocalizedString handling).
+   - `lib/data/repositories/content_repository.dart` (how data is loaded and cached).
+   - `lib/features/` (existing `juega/`, `academy/`, `calendario/`).
+   - `lib/main.dart` (entry point, current navigation).
+   - `assets/` directory structure (what exists in `assets/content/`, `assets/voice/`, etc.).
+4. Write a comprehensive survey report to:
+   `/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/report.md`
+5. Send a completion message via send_message to the parent orchestrator with your findings summary and file path.
 
-Output requirements:
-- Write your comprehensive findings to `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/analysis.md`
-- Write your summary and recommendations to `<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_explorer_survey_2/handoff.md`
-- Update `progress.md` in your working directory with timestamps regularly.
-- When finished, send a message to parent summarizing your findings and pointing to handoff.md.
-
-## 2026-09-11T08:30:25Z
-
-**Context**: Phase 0 Survey Heartbeat
-**Content**: Checking in on your survey status. Please update your progress.md with your latest timestamp and findings, or provide an estimated completion status for analysis.md and handoff.md.
-**Action**: Update progress.md and finalize your survey findings.
+DO NOT modify project files. This is a read-only investigation.
+</USER_REQUEST>

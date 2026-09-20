@@ -1,24 +1,18 @@
-# Progress — teamwork_preview_explorer_survey_2
+# Progress
 
-Last visited: 2026-09-11T08:32:30Z
+Last visited: 2026-09-20T15:02:10Z
 
-## Status
-Survey complete. Artifacts `analysis.md` and `handoff.md` generated and verified. Ready for orchestrator M1 planning.
-
-## Steps Completed
-- [x] Initialized DISPATCH.md, BRIEFING.md, progress.md.
-- [x] Inspected project root directory (confirmed initial clean workspace: only .git, .gitignore, README.md, ORIGINAL_REQUEST.md, .agents/).
-- [x] Evaluated host system environment:
-  - Darwin arm64 (macOS).
-  - OpenJDK 17.0.19 verified at `/opt/homebrew/opt/openjdk@17/bin/java`.
-  - Android Studio verified at `/Applications/Android Studio.app`.
-  - Git 2.50.1, Node v26.3.1, Python 3.9 / 3.12 / 3.13.
-  - Flutter / Dart CLI not in default non-interactive PATH; offline sandbox active.
-- [x] Investigated R1 Android package ID requirements (`com.earlify.descubreconlua`).
-- [x] Investigated privacy requirements (explicit manifest `tools:node="remove"` for `INTERNET` and `ACCESS_NETWORK_STATE`, zero-network pubspec).
-- [x] Evaluated offline audio options (abstract `OfflineAudioService` + `MockOfflineAudioService` + native MediaPlayer channel).
-- [x] Designed clean architecture blueprints for `lib/core`, `lib/data`, `lib/features/juega`, `lib/features/academy`.
-- [x] Formulated test setup (`test/data/`, `test/features/`, `test/privacy/`).
-- [x] Generated comprehensive `analysis.md`.
-- [x] Generated 5-component `handoff.md`.
-- [x] Updated BRIEFING.md and DISPATCH.md.
+- [x] Initialized DISPATCH.md and BRIEFING.md
+- [x] 1. Verify Git status and branches (Branch `studio` @ `88d2ae8`, in sync with `origin/studio`)
+- [x] 2. Verify Flutter environment (Host has no local flutter CLI; CI uses GitHub Actions ubuntu-latest stable)
+- [x] 3. Inspect project architecture and key files:
+  - [x] pubspec.yaml (zero external dependencies, 14 asset dirs declared)
+  - [x] AndroidManifest.xml (strict tools:node="remove" for INTERNET and network permissions)
+  - [x] lib/core/ (LocalAudioPlayer via method channel, LocalStore, LocalizedString, AppTheme)
+  - [x] lib/data/models/ (immutable models, camelCase/snake_case resilient deserializers)
+  - [x] lib/data/repositories/content_repository.dart (dynamic asset bundle discovery, synchronized latch)
+  - [x] lib/features/ (juega, academy, calendario, premios, bienvenida, creditos)
+  - [x] lib/main.dart (routes, initialization)
+  - [x] assets/ structure (2,442 offline voice .m4a files, 80 vector laminas, 9 content dirs)
+- [x] 4. Write comprehensive survey report (`report.md` and `handoff.md`)
+- [x] 5. Send message to orchestrator

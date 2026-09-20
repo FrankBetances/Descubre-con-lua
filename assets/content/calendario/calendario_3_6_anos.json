@@ -1,0 +1,467 @@
+{
+  "version": "1.0.0",
+  "tramo": "3-6_anos",
+  "descripcion": "Calendario Escola · Fogar para 2.º Ciclo de Educación Infantil (4.º, 5.º y 6.º de Infantil - 10 meses lectivos)",
+  "meses": [
+    {
+      "id": "setembro",
+      "mes_numero": 1,
+      "nombre": {
+        "gl": "Setembro",
+        "es": "Septiembre"
+      },
+      "centro_interes": {
+        "gl": "Acollida e Vínculo Afectivo",
+        "es": "Acogida y Vínculo Afectivo"
+      },
+      "frase_ingles": {
+        "texto": "One shoe, two shoes, up! Push, push!",
+        "audio_id": "en_voice_setembro_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Asemblea en círculo con cinta elástica. Subir mans con 'Up' e baixar con 'Down'.",
+            "es": "Asamblea en círculo con cinta elástica. Subir manos con 'Up' y bajar con 'Down'."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Xogo do 'Freeze' ao ritmo de 'Push, push!'. Parada postural inmediata ao parar o pulso.",
+            "es": "Juego del 'Freeze' al ritmo de 'Push, push!'. Parada postural inmediata al cesar el pulso."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Comandos motrices guiados por parellas de nenos indicando 'Up', 'Down' e 'Push'.",
+            "es": "Comandos motrices guiados por parejas de niños indicando 'Up', 'Down' y 'Push'."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "Ao poñer os zapatos pola mañá, dicir 'One shoe, two shoes, up! Push, push!'.",
+        "es": "Al poner los zapatos por la mañana, decir 'One shoe, two shoes, up! Push, push!'."
+      }
+    },
+    {
+      "id": "outubro",
+      "mes_numero": 2,
+      "nombre": {
+        "gl": "Outubro",
+        "es": "Octubre"
+      },
+      "centro_interes": {
+        "gl": "Esquema Corporal e Outono",
+        "es": "Esquema Corporal y Otoño"
+      },
+      "frase_ingles": {
+        "texto": "Touch your head, touch your tummy, freeze!",
+        "audio_id": "en_voice_outubro_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Tocar partes do corpo cunha gasa de seda e conxelarse na posición ao dicir 'Freeze!'.",
+            "es": "Tocar partes del cuerpo con una gasa de seda y congelarse en la posición al decir 'Freeze!'."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Conto motor da orballada e as follas do outono con estatua corporal.",
+            "es": "Cuento motor de la llovizna y las hojas de otoño con estatua corporal."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Clasificación de follas de outono en aros por instrucións orais entre parellas.",
+            "es": "Clasificación de hojas de otoño en aros por instrucciones orales entre parejas."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "No momento do secado despois do baño, xogar a tocar cabeza e barriga e facer a estatua.",
+        "es": "En el momento del secado tras el baño, jugar a tocar cabeza y barriga y hacer la estatua."
+      }
+    },
+    {
+      "id": "novembro",
+      "mes_numero": 3,
+      "nombre": {
+        "gl": "Novembro",
+        "es": "Noviembre"
+      },
+      "centro_interes": {
+        "gl": "O Magosto e o Bosque Galego",
+        "es": "El Magosto y el Bosque Gallego"
+      },
+      "frase_ingles": {
+        "texto": "Pop, pop, chestnut! Jump up high!",
+        "audio_id": "en_voice_novembro_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Simular o estralar das castañas no asador con saltos e palmas rítmicas.",
+            "es": "Simular el estallido de las castañas en el asador con saltos y palmas rítmicas."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Dramatización do xabaril e as castañas con paradas de seguridade antes do salto.",
+            "es": "Dramatización del jabalí y las castañas con paradas de seguridad antes del salto."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Circuíto motriz onde un neno dá a orde de ritmo e o outro executa o salto alto.",
+            "es": "Circuito motriz donde un niño da la orden de ritmo y el otro ejecuta el salto alto."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "Na cociña ao cociñar ou preparar a merenda, facer o son 'Pop, pop!' e un salto divertido.",
+        "es": "En la cocina al cocinar o preparar la merienda, hacer el sonido 'Pop, pop!' y un salto divertido."
+      }
+    },
+    {
+      "id": "decembro",
+      "mes_numero": 4,
+      "nombre": {
+        "gl": "Decembro",
+        "es": "Diciembre"
+      },
+      "centro_interes": {
+        "gl": "Inverno, Frío e Texturas",
+        "es": "Invierno, Frío y Texturas"
+      },
+      "frase_ingles": {
+        "texto": "Cold wind blows, stomp your feet!",
+        "audio_id": "en_voice_decembro_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Zapatear suavemente imitando o paso sobre neve e conxearse ao parar o vento.",
+            "es": "Pisotear suavemente imitando el paso sobre nieve y congelarse al parar el viento."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Dramatización do vento frío e refuxio en conxunto baixo mantas de algodón.",
+            "es": "Dramatización del viento frío y refugio conjunto bajo mantas de algodón."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Xogo de guía a cegas no pasillo con instrucións de ritmo e aceleración.",
+            "es": "Juego de guía a ciegas en el pasillo con instrucciones de ritmo y aceleración."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "Ao abrigarse para saír á rúa, dicir 'Cold wind blows!' e dar dous pisadas forte no chan.",
+        "es": "Al abrigarse para salir a la calle, decir 'Cold wind blows!' y dar dos pisadas fuertes en el suelo."
+      }
+    },
+    {
+      "id": "xaneiro",
+      "mes_numero": 5,
+      "nombre": {
+        "gl": "Xaneiro",
+        "es": "Enero"
+      },
+      "centro_interes": {
+        "gl": "Chuvia, Botas e Calzado",
+        "es": "Lluvia, Botas y Calzado"
+      },
+      "frase_ingles": {
+        "texto": "Splish, splash, rain! Puddle jump!",
+        "audio_id": "en_voice_xaneiro_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Percusión corporal representando a chuvia nas pernas e salto ao charco simulado.",
+            "es": "Percución corporal representando la lluvia en las piernas y salto al charco simulado."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Creación dunha treboada con instrumentos de madeira e parada corporal ante o trono.",
+            "es": "Creación de una tormenta con instrumentos de madera y parada corporal ante el trueno."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Carreira de chuvia e equilibrio en banco sueco sen verter auga dun vaso.",
+            "es": "Carrera de lluvia y equilibrio en banco sueco sin verter agua de un vaso."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "Nos días de chuvia en Vigo, ao ver charcos no paseo: 'Splish, splash! Puddle jump!'.",
+        "es": "En los días de lluvia en Vigo, al ver charcos en el paseo: 'Splish, splash! Puddle jump!'."
+      }
+    },
+    {
+      "id": "febreiro",
+      "mes_numero": 6,
+      "nombre": {
+        "gl": "Febreiro",
+        "es": "Febrero"
+      },
+      "centro_interes": {
+        "gl": "Entroido e Mundo Animal",
+        "es": "Carnaval y Mundo Animal"
+      },
+      "frase_ingles": {
+        "texto": "Little frog, jump! Big bear, sleep!",
+        "audio_id": "en_voice_febreiro_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Mímica motriz de rá e oso con cambios de velocidade e altura no espazo.",
+            "es": "Mímica motriz de rana y oso con cambios de velocidad y altura en el espacio."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Dramatización do Entroido con máscaras tradicionais e conxelación ao parar o tambor.",
+            "es": "Dramatización del Carnaval con máscaras tradicionales y congelación al cesar el tambor."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Xogo do escultor animal: un neno moldea a postura do outro segundo a instrución.",
+            "es": "Juego del escultor animal: un niño moldea la postura del otro según la instrucción."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "Antes de ir á cama, xogar a saltar coma ra e recostarse coma o oso durmiñón.",
+        "es": "Antes de ir a la cama, jugar a saltar como rana y recostarse como el oso dormilón."
+      }
+    },
+    {
+      "id": "marzo",
+      "mes_numero": 7,
+      "nombre": {
+        "gl": "Marzo",
+        "es": "Marzo"
+      },
+      "centro_interes": {
+        "gl": "A Horta e a Primavera",
+        "es": "El Huerto y la Primavera"
+      },
+      "frase_ingles": {
+        "texto": "Small seed grow, reach for the sun!",
+        "audio_id": "en_voice_marzo_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Crecemento desde semente acurrucada no chan ata estirarse cara á luz.",
+            "es": "Crecimiento desde semilla acurrucada en el suelo hasta estirarse hacia la luz."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Voo de abellas e bolboretas con paradas nas flores ao dicir 'Sun!'.",
+            "es": "Vuelo de abejas y mariposas con paradas en las flores al decir 'Sun!'."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Sementeira real en macetas biodegradables seguindo instrucións por pasos.",
+            "es": "Siembra real en macetas biodegradables siguiendo instrucciones por pasos."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "Ao regar unha planta na casa, estirarse xuntos coma a semente que busca o sol.",
+        "es": "Al regar una planta en casa, estirarse juntos como la semilla que busca el sol."
+      }
+    },
+    {
+      "id": "abril",
+      "mes_numero": 8,
+      "nombre": {
+        "gl": "Abril",
+        "es": "Abril"
+      },
+      "centro_interes": {
+        "gl": "O Orballo e o Despertar",
+        "es": "El Orballo y el Despertar"
+      },
+      "frase_ingles": {
+        "texto": "Soft breeze blows, wake up now!",
+        "audio_id": "en_voice_abril_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Brisa suave con pañuelos e desperezamento lento do corpo en círculo.",
+            "es": "Brisa suave con pañuelos y desperezamiento lento del cuerpo en círculo."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Juego del lobo en el bosque con conxelación inmediata ante o soplo do vento.",
+            "es": "Juego del lobo en el bosque con congelación inmediata ante el soplo del viento."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Búsqueda de elementos naturais no patio e descrición de texturas en parellas.",
+            "es": "Búsqueda de elementos naturales en el patio y descripción de texturas en parejas."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "Ao abrir a ventá pola mañá para ventilar, dicir 'Soft breeze blows! Wake up!' e desperezarse.",
+        "es": "Al abrir la ventana por la mañana para ventilar, decir 'Soft breeze blows! Wake up!' y desperezarse."
+      }
+    },
+    {
+      "id": "maio",
+      "mes_numero": 9,
+      "nombre": {
+        "gl": "Maio",
+        "es": "Mayo"
+      },
+      "centro_interes": {
+        "gl": "Hixiene, Auga e Letras Galegas",
+        "es": "Higiene, Agua y Letras Gallegas"
+      },
+      "frase_ingles": {
+        "texto": "Wash your hands, dry them dry!",
+        "audio_id": "en_voice_maio_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Mímica de lavar as mans e sacudilas ao ritmo de 72 BPM.",
+            "es": "Mímica de lavarse las manos y sacudirlas al ritmo de 72 BPM."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Tracción cooperativa de cordas xogando ás Maiolas e conxelación ao secar.",
+            "es": "Tracción cooperativa de cuerdas jugando a las Mayolas y congelación al secar."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Creación e liderado de patróns rítmicos de palmas creados polo alumnado.",
+            "es": "Creación y liderazgo de patrones rítmicos de palmas creados por el alumnado."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "No lavabo antes de xantar: 'Wash your hands, dry them dry!' con frotado de palmas.",
+        "es": "En el lavabo antes de comer: 'Wash your hands, dry them dry!' con frotado de palmas."
+      }
+    },
+    {
+      "id": "xuno",
+      "mes_numero": 10,
+      "nombre": {
+        "gl": "Xuño",
+        "es": "Junio"
+      },
+      "centro_interes": {
+        "gl": "O Mar Atlántico e Despedida",
+        "es": "El Mar Atlántico y Despedida"
+      },
+      "frase_ingles": {
+        "texto": "Giant waves, row your boat!",
+        "audio_id": "en_voice_xuno_01"
+      },
+      "niveles": {
+        "4_infantil": {
+          "dinamica": "Acción expandida",
+          "actividad_aula": {
+            "gl": "Movemento en vaivén con paracaídas azul simulando as ondas da Ría de Vigo.",
+            "es": "Movimiento en vaivén con paracaídas azul simulando las olas de la Ría de Vigo."
+          },
+          "duracion_sugerida_min": 5
+        },
+        "5_infantil": {
+          "dinamica": "Dramatizado / Freeze",
+          "actividad_aula": {
+            "gl": "Xogo de remar en parellas no chan e conxelarse na calma mariña.",
+            "es": "Juego de remar en parejas en el suelo y congelarse en la calma marina."
+          },
+          "duracion_sugerida_min": 7
+        },
+        "6_infantil": {
+          "dinamica": "Entre iguais / Peer-to-Peer",
+          "actividad_aula": {
+            "gl": "Navegación e busca de cunchas no patio en traxectorias espaciais coordinadas.",
+            "es": "Navegación y búsqueda de conchas en el patio en trayectorias espaciales coordinadas."
+          },
+          "duracion_sugerida_min": 8
+        }
+      },
+      "rutina_fogar": {
+        "gl": "Na praia de Samil ou na bañera, simular o vaivén das ondas e remar en parella.",
+        "es": "En la playa de Samil o en la bañera, simular el vaivén de las olas y remar en pareja."
+      }
+    }
+  ]
+}

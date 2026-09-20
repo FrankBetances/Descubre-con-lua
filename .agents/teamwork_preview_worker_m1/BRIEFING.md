@@ -1,76 +1,67 @@
-# BRIEFING — 2026-09-11T08:34:00Z
+# BRIEFING — 2026-09-20T17:14:00+02:00
 
 ## Mission
-Base Setup & Privacy Worker for Milestone 1 in «Descubre con Lúa · Edición Vigo». Configure Flutter pubspec, zero-network privacy manifest, Android scaffolding, core clean architecture (theme, localization, offline audio service), and automated privacy verification tests.
+Milestone 1: Extract and convert all 15+ pedagogical data sources from `.studio_ref/` into offline JSON assets under `assets/content/`, register them in `pubspec.yaml`, and validate counts and integrity.
 
 ## 🔒 My Identity
-- Archetype: teamwork_preview_worker
-- Roles: [implementer, qa, specialist]
-- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m1/
-- Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
-- Milestone: Milestone 1 - Base Setup & Privacy
+- Archetype: implementer
+- Roles: implementer, qa, specialist
+- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m1
+- Original parent: 9e628138-021d-44c9-9a72-2da6208e84bb
+- Milestone: Milestone 1 (R1: Data Extraction, Conversion to JSON, Asset Registration)
 
 ## 🔒 Key Constraints
-- Pure offline: strictly ZERO network dependencies in pubspec.yaml (no http, dio, sockets, analytics, firebase, sentry, etc.)
-- AndroidManifest.xml must strictly exclude android.permission.INTERNET and ACCESS_NETWORK_STATE using tools:node="remove"
-- AppTheme tailored for adult educators and families: warm, calm maritime Vigo palette (#1B4965, #62B6CB, #F4F1DE), large typography (body >= 16sp), zero neon/distracting gaming colors
-- Strongly typed LocalizedString with gl and es support
-- OfflineAudioService interface + MockOfflineAudioService for headless testing
-- Integrity: DO NOT CHEAT, no hardcoded test outputs or dummy facades
-- Ownership: pubspec.yaml, android/**, lib/core/**, lib/main.dart, test/privacy/**
+- Pure offline JSON assets, zero network, zero analytics/telemetry.
+- Strict integrity: no hardcoding, no fake counts, full data parsing.
+- Read reference files strictly from `.studio_ref/`.
+- Owned files: `assets/content/**`, `tools/**`, `pubspec.yaml`.
+- Git branch: `studio` only.
 
 ## Current Parent
-- Conversation ID: 155c43c0-be2b-46ce-b47d-cc280903c77f
-- Updated: 2026-09-11T08:34:00Z
+- Conversation ID: 9e628138-021d-44c9-9a72-2da6208e84bb
+- Updated: 2026-09-20T17:14:00+02:00
 
 ## Task Summary
-- **What to build**: pubspec.yaml, android/ scaffolding, lib/core/{theme,localization,audio}, lib/main.dart, test/privacy/privacy_manifest_test.dart
-- **Success criteria**: Zero network dependencies, zero internet permissions, full privacy tests passing, clean architecture core abstractions working
-- **Interface contracts**: PROJECT.md
-- **Code layout**: PROJECT.md § Code Layout
-
-## Key Decisions Made
-- Used tools:node="remove" for INTERNET, ACCESS_NETWORK_STATE, and ACCESS_WIFI_STATE in AndroidManifest.xml to guarantee binary immunity against transitive permission merge.
-- Selected pure Flutter SDK dependencies without third-party audio packages to eliminate external network vectors and native compile issues.
-- Implemented MockOfflineAudioService with genuine broadcast StreamController and state tracking for headless testability.
-- Added relative test imports to allow execution both in pubspec-resolved and standalone test environments.
-
-## Artifact Index
-- `pubspec.yaml` — Flutter configuration with zero network packages and local offline assets
-- `android/` — Gradle configuration and AndroidManifest with explicit permission removal
-- `lib/core/` — Theme (maritime Vigo palette), localization (gl/es, LocalizedString), and OfflineAudioService
-- `lib/main.dart` — Root MaterialApp with sober adult educator/family navigation
-- `test/privacy/privacy_manifest_test.dart` — Automated privacy verification test
-- `.agents/teamwork_preview_worker_m1/verify_m1.py` — Verification suite certifying all constraints
+- **What to build**: Full extraction script for all 15+ data sources from `.studio_ref/` to `assets/content/`, registration in `pubspec.yaml`, and verification script.
+- **Success criteria**:
+  - `banco200_cuentos.json`: exactly 200 stories with required fields.
+  - `banco200_laminas.json`: exactly 200 cards.
+  - `banco100_cuentos.json`: 100 extra stories.
+  - `historias_progresivas.json`: progressive stories.
+  - `curriculo_50_meses.json`: 5 courses × 10 months.
+  - `calendario_dias.json`: exactly 1,000 days.
+  - `english_corpus.json`: English corpus items.
+  - `collocations_grammar.json`: Collocations & grammar.
+  - `phonics_taxonomy.json`: 44 English phonemes.
+  - `estrategias_pedagogicas.json`: pedagogical strategies.
+  - `dinamicas_aula.json`: classroom dynamics.
+  - `curriculo_catalogo.json`: catalogs from contentRepository.ts.
+  - `lua_art.json`: Lua art definitions.
+  - `bnc_coca_8000.json`: >= 7,500 words with lemma & frequency.
+  - `bnc_coca_8000_cefr.json`: >= 7,500 words with lemma & CEFR.
+  - `calendario_3_6_anos.json`: from `.studio_ref/calendario-3-6-anos.json`.
+  - Direct copy of `bncCoca8000.json` and `bncCoca8000Cefr.json`.
+  - `pubspec.yaml` updated with asset paths.
+- **Interface contracts**: `ORIGINAL_REQUEST.md` (R1) and `CLAUDE.md`.
+- **Code layout**: `assets/content/{cuentos,laminas,calendario,english,corpus}/`
 
 ## Change Tracker
-- **Files modified**:
-  - `pubspec.yaml`: Flutter configuration and offline assets
-  - `analysis_options.yaml`: Standard Flutter linter rules
-  - `android/build.gradle`: Root Gradle build file
-  - `android/settings.gradle`: Flutter Gradle plugin settings
-  - `android/app/build.gradle`: App build file (com.earlify.descubreconlua, SDK 34/24/34)
-  - `android/app/src/main/kotlin/com/earlify/descubreconlua/MainActivity.kt`: Main Android activity
-  - `android/app/src/main/AndroidManifest.xml`: Release manifest with tools:node="remove"
-  - `android/app/src/main/res/values/styles.xml`: Theme definitions for Android launcher
-  - `assets/content/unidades/.gitkeep`, `assets/content/capsulas/.gitkeep`, `assets/audio/.gitkeep`: Asset directories
-  - `lib/core/localization/app_language.dart`: AppLanguage enum (gl/es)
-  - `lib/core/localization/localized_string.dart`: LocalizedString with 1:1 parity check and JSON methods
-  - `lib/core/theme/app_theme.dart`: Material 3 maritime Vigo theme with adult typography (>= 16sp)
-  - `lib/core/audio/offline_audio_service.dart`: OfflineAudioService interface
-  - `lib/core/audio/mock_offline_audio_service.dart`: MockOfflineAudioService implementation
-  - `lib/main.dart`: Root MaterialApp with sober navigation hub and language switcher
-  - `test/privacy/privacy_manifest_test.dart`: Automated privacy manifest test
-  - `test/core/localization_test.dart`: Localization unit tests
-  - `test/core/offline_audio_test.dart`: Audio service unit tests
-  - `test/core/theme_test.dart`: Material 3 theme unit tests
-- **Build status**: All verification checks passing (Exit Code 0)
+- **Files modified**: None yet
+- **Build status**: Pending
 - **Pending issues**: None
 
 ## Quality Status
-- **Build/test result**: PASS (Empirical verification suite verify_m1.py executed with 0 defects)
-- **Lint status**: 0 violations, analysis_options.yaml configured
-- **Tests added/modified**: 4 test suites (test/privacy/privacy_manifest_test.dart, test/core/localization_test.dart, test/core/offline_audio_test.dart, test/core/theme_test.dart)
+- **Build/test result**: Pending
+- **Lint status**: Pending
+- **Tests added/modified**: Pending
 
 ## Loaded Skills
-None
+- None required
+
+## Key Decisions Made
+- Will check environment node / python version to build an extraction script.
+
+## Artifact Index
+- `.agents/teamwork_preview_worker_m1/DISPATCH.md` — Assignment instructions
+- `.agents/teamwork_preview_worker_m1/BRIEFING.md` — Situational awareness
+- `.agents/teamwork_preview_worker_m1/progress.md` — Heartbeat and step progress

@@ -25,6 +25,14 @@ import 'features/juega/views/backstage_asamblea_screen.dart';
 import 'features/juega/views/unidades_list_screen.dart';
 import 'features/academy/views/micro_rutina_setembro_screen.dart';
 import 'data/models/asamblea_segundo_ciclo_model.dart';
+import 'features/cuentos/views/cuentos_list_screen.dart';
+import 'features/laminas/views/laminas_gallery_screen.dart';
+import 'features/palabras/views/palabras_8000_screen.dart';
+import 'features/english/views/english_hub_screen.dart';
+import 'features/lectura/views/aprender_a_ler_screen.dart';
+import 'features/planificador/views/planificador_screen.dart';
+import 'features/planificador/views/estrategias_screen.dart';
+import 'features/planificador/views/dinamicas_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -174,6 +182,43 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               initialLanguage: _currentLanguage,
               onLanguageChanged: _setLanguage,
             ),
+        '/cuentos': (context) => CuentosListScreen(
+              repository: _repository,
+              initialLanguage: _currentLanguage,
+              audioService: _audioService,
+            ),
+        '/laminas': (context) => LaminasGalleryScreen(
+              repository: _repository,
+              initialLanguage: _currentLanguage,
+              audioService: _audioService,
+            ),
+        '/palabras': (context) => Palabras8000Screen(
+              repository: _repository,
+              initialLanguage: _currentLanguage,
+              audioService: _audioService,
+            ),
+        '/english': (context) => EnglishHubScreen(
+              repository: _repository,
+              initialLanguage: _currentLanguage,
+              audioService: _audioService,
+            ),
+        '/lectura': (context) => AprenderALerScreen(
+              repository: _repository,
+              initialLanguage: _currentLanguage,
+              audioService: _audioService,
+            ),
+        '/planificador': (context) => PlanificadorScreen(
+              repository: _repository,
+              initialLanguage: _currentLanguage,
+            ),
+        '/estrategias': (context) => EstrategiasScreen(
+              repository: _repository,
+              initialLanguage: _currentLanguage,
+            ),
+        '/dinamicas': (context) => DinamicasScreen(
+              repository: _repository,
+              initialLanguage: _currentLanguage,
+            ),
       },
       onGenerateRoute: (settings) {
         if (settings.name == '/juega/backstage') {
@@ -224,7 +269,15 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
 /// Main hub screen providing access to the two pedagogical modules:
 /// - Juega con Lúa (Aula / Docentes)
 /// - Academy (Familias)
-class HomeScreen extends StatelessWidget {
+enum PortalRole {
+  familias,
+  docentes,
+}
+
+/// Main hub screen providing access to both pedagogical portals:
+/// - Portal Familias (Academy, Contos, Láminas, Aprender a Ler, Calendario, Premios)
+/// - Portal Docentes (Juega con Lúa, Planificador 50 Meses, English L3, Estratexias, Dinámicas, Corpus 8000)
+class HomeScreen extends StatefulWidget {
   final ContentRepository repository;
   final PremiosRepository? premios;
   final CalendarioStore? calendario;
@@ -232,6 +285,7 @@ class HomeScreen extends StatelessWidget {
   final AppLanguage currentLanguage;
   final VoidCallback onToggleLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
+  final PortalRole initialRole;
 
   const HomeScreen({
     super.key,
@@ -242,7 +296,15 @@ class HomeScreen extends StatelessWidget {
     this.onLanguageChanged,
     this.premios,
     this.calendario,
+    this.initialRole = PortalRole.familias,
   });
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  late PortalRole _currentRole;
 
   static const _appBarTitle = LocalizedString(
     gl: 'Descubre con Lúa · Vigo',
@@ -250,8 +312,18 @@ class HomeScreen extends StatelessWidget {
   );
 
   static const _subtitle = LocalizedString(
-    gl: 'Recurso pedagóxico e familiar para o 1º ciclo de educación infantil (0-3 anos)',
-    es: 'Recurso pedagógico y familiar para el 1.er ciclo de educación infantil (0-3 años)',
+    gl: 'Recurso pedagóxico e familiar para o desenvolvemento da linguaxe e comunicación',
+    es: 'Recurso pedagógico y familiar para el desarrollo del lenguaje y la comunicación',
+  );
+
+  static const _portalFamilias = LocalizedString(
+    gl: 'Portal Familias',
+    es: 'Portal Familias',
+  );
+
+  static const _portalDocentes = LocalizedString(
+    gl: 'Portal Docentes',
+    es: 'Portal Docentes',
   );
 
   static const _juegaTitle = LocalizedString(
@@ -284,6 +356,86 @@ class HomeScreen extends StatelessWidget {
     es: 'Para familias: 5 bloques de desarrollo de la comunicación, lectura en 4 partes con ejemplos cotidianos sin pantallas infantiles.',
   );
 
+  static const _cuentosTitle = LocalizedString(
+    gl: 'Banco de 200 Contos Pedagóxicos',
+    es: 'Banco de 200 Cuentos Pedagógicos',
+  );
+
+  static const _cuentosSubtitle = LocalizedString(
+    gl: 'Biblioteca de 200 contos estruturados por curso, mes e semana con preguntas graduadas e TPR oral.',
+    es: 'Biblioteca de 200 cuentos estructurados por curso, mes y semana con preguntas graduadas y TPR oral.',
+  );
+
+  static const _laminasTitle = LocalizedString(
+    gl: 'Banco de 200 Láminas Didácticas',
+    es: 'Banco de 200 Láminas Didácticas',
+  );
+
+  static const _laminasSubtitle = LocalizedString(
+    gl: 'Galería de láminas ilustradas para estimulación visual e enriquecemento de vocabulario temperán.',
+    es: 'Galería de láminas ilustradas para estimulación visual y enriquecimiento de vocabulario temprano.',
+  );
+
+  static const _lecturaTitle = LocalizedString(
+    gl: 'Aprender a Ler · Alfabetización',
+    es: 'Aprender a Leer · Alfabetización',
+  );
+
+  static const _lecturaSubtitle = LocalizedString(
+    gl: 'Mesa manipulativa Alphabot e misións Phonics Quest para a alfabetización temperá con letras reais.',
+    es: 'Mesa manipulativa Alphabot y misiones Phonics Quest para la alfabetización temprana con letras reales.',
+  );
+
+  static const _planificadorTitle = LocalizedString(
+    gl: 'Planificador Curricular (50 Meses)',
+    es: 'Planificador Curricular (50 Meses)',
+  );
+
+  static const _planificadorSubtitle = LocalizedString(
+    gl: 'Programación completa dos 5 cursos de Educación Infantil (0 a 6 anos) con obxectivos e actividades.',
+    es: 'Programación completa de los 5 cursos de Educación Infantil (0 a 6 años) con objetivos y actividades.',
+  );
+
+  static const _englishTitle = LocalizedString(
+    gl: 'Inmersión en Inglés · L3',
+    es: 'Inmersión en Inglés · L3',
+  );
+
+  static const _englishSubtitle = LocalizedString(
+    gl: 'Adestrador FSRS v4.5, colocacións gramaticais e comprensión auditiva guiada polo adulto.',
+    es: 'Entrenador FSRS v4.5, colocaciones gramaticales y comprensión auditiva guiada por el adulto.',
+  );
+
+  static const _estrategiasTitle = LocalizedString(
+    gl: 'Estratexias Pedagóxicas',
+    es: 'Estrategias Pedagógicas',
+  );
+
+  static const _estrategiasSubtitle = LocalizedString(
+    gl: '5 estratexias baseadas en evidencia científica con fundamentación, guía de aplicación e indicadores.',
+    es: '5 estrategias basadas en evidencia científica con fundamentación, guía de aplicación e indicadores.',
+  );
+
+  static const _dinamicasTitle = LocalizedString(
+    gl: 'Dinámicas de Aula Activa',
+    es: 'Dinámicas de Aula Activa',
+  );
+
+  static const _dinamicasSubtitle = LocalizedString(
+    gl: 'Catálogo de dinámicas activas con roles, espazos, materiais e protocolo de avaliación.',
+    es: 'Catálogo de dinámicas activas con roles, espacios, materiales y protocolo de evaluación.',
+  );
+
+  static const _corpusTitle = LocalizedString(
+    gl: 'Corpus 8.000 Palabras (BNC/COCA)',
+    es: 'Corpus 8.000 Palabras (BNC/COCA)',
+  );
+
+  static const _corpusSubtitle = LocalizedString(
+    gl: 'Explorador léxico con bandas de frecuencia 1k-8k e clasificación curricular CEFR (A1-C2).',
+    es: 'Explorador léxico con bandas de frecuencia 1k-8k y clasificación curricular CEFR (A1-C2).',
+  );
+
   static const _privacyNotice = LocalizedString(
     gl: 'Sen conexión e sen datos persoais. O único que se garda neste '
         'aparello é a túa propia conta de uso. Deseñado baixo o Decreto '
@@ -299,23 +451,29 @@ class HomeScreen extends StatelessWidget {
   );
 
   @override
+  void initState() {
+    super.initState();
+    _currentRole = widget.initialRole;
+  }
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final isGl = currentLanguage == AppLanguage.gl;
+    final isGl = widget.currentLanguage == AppLanguage.gl;
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(_appBarTitle.resolve(currentLanguage)),
+        title: Text(_appBarTitle.resolve(widget.currentLanguage)),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 12.0),
             child: SelectorIdiomaWidget(
-              currentLanguage: currentLanguage,
+              currentLanguage: widget.currentLanguage,
               onLanguageChanged: (newLang) {
-                if (onLanguageChanged != null) {
-                  onLanguageChanged!(newLang);
+                if (widget.onLanguageChanged != null) {
+                  widget.onLanguageChanged!(newLang);
                 } else {
-                  onToggleLanguage();
+                  widget.onToggleLanguage();
                 }
               },
               compact: true,
@@ -325,178 +483,361 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: PaxinaSenScroll(
-            desprazarSeNonCabe: true,
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8.0),
-                  child: Text(
-                    _subtitle.resolve(currentLanguage),
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      color: const Color(0xFF4A5568),
-                      fontWeight: FontWeight.w500,
+          desprazarSeNonCabe: true,
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4.0),
+                child: Text(
+                  _subtitle.resolve(widget.currentLanguage),
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    color: const Color(0xFF4A5568),
+                    fontWeight: FontWeight.w500,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              const SizedBox(height: 12.0),
+              // Selector de Portal Dual: Familias / Docentes
+              Center(
+                child: SegmentedButton<PortalRole>(
+                  segments: [
+                    ButtonSegment<PortalRole>(
+                      value: PortalRole.familias,
+                      icon: const Icon(Icons.family_restroom_outlined),
+                      label: Text(_portalFamilias.resolve(widget.currentLanguage)),
                     ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                const SizedBox(height: 16.0),
-                _buildModuleCard(
-                  context: context,
-                  title: _juegaTitle.resolve(currentLanguage),
-                  description: _juegaSubtitle.resolve(currentLanguage),
-                  icon: Icons.school_outlined,
-                  buttonText:
-                      isGl ? 'Entrar en Modo Aula' : 'Entrar en Modo Aula',
-                  formacionKey: const ValueKey('formacion_docente'),
-                  formacionTexto: isGl
-                      ? 'Antes de entrar na aula · 2 min'
-                      : 'Antes de entrar en el aula · 2 min',
-                  onFormacion: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => FormacionScreen(
-                          perfil: PerfilFormacion.docente,
-                          language: currentLanguage,
-                        ),
-                      ),
-                    );
-                  },
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => UnidadesListScreen(
-                          repository: repository,
-                          premios: premios,
-                          calendario: calendario,
-                          audioService: audioService,
-                          initialLanguage: currentLanguage,
-                          onLanguageChanged: onLanguageChanged,
-                        ),
-                      ),
-                    );
-                  },
-                ),
-                const SizedBox(height: 16.0),
-                _buildModuleCard(
-                  context: context,
-                  title: _academyTitle.resolve(currentLanguage),
-                  description: _academySubtitle.resolve(currentLanguage),
-                  icon: Icons.family_restroom_outlined,
-                  buttonText: isGl ? 'Entrar en Academy' : 'Entrar en Academy',
-                  formacionKey: const ValueKey('formacion_familia'),
-                  formacionTexto: isGl
-                      ? 'Antes de empezar na casa · 2 min'
-                      : 'Antes de empezar en casa · 2 min',
-                  onFormacion: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => FormacionScreen(
-                          perfil: PerfilFormacion.familia,
-                          language: currentLanguage,
-                        ),
-                      ),
-                    );
-                  },
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => BloquesListScreen(
-                          repository: repository,
-                          premios: premios,
-                          calendario: calendario,
-                          audioService: audioService,
-                          initialLanguage: currentLanguage,
-                          onLanguageChanged: onLanguageChanged,
-                        ),
-                      ),
-                    );
-                  },
-                ),
-                const SizedBox(height: 16.0),
-                _buildModuleCard(
-                  context: context,
-                  title: _calendarioTitle.resolve(currentLanguage),
-                  description: _calendarioSubtitle.resolve(currentLanguage),
-                  icon: Icons.calendar_month_outlined,
-                  buttonText: isGl
-                      ? 'Ver Calendario Escola · Fogar'
-                      : 'Ver Calendario Escuela · Hogar',
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => CalendarioScreen(
-                          store: calendario ?? CalendarioStore(),
-                          initialLanguage: currentLanguage,
-                          onLanguageChanged: onLanguageChanged,
-                          repository: repository,
-                          audioService: audioService,
-                          premios: premios,
-                        ),
-                      ),
-                    );
-                  },
-                ),
-                const SizedBox(height: 24.0),
-                if (premios != null)
-                  OutlinedButton.icon(
-                    onPressed: () => Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => PremiosScreen(
-                          repository: premios!,
-                          currentLanguage: currentLanguage,
-                          contadores: calendario?.contadores,
-                        ),
-                      ),
+                    ButtonSegment<PortalRole>(
+                      value: PortalRole.docentes,
+                      icon: const Icon(Icons.school_outlined),
+                      label: Text(_portalDocentes.resolve(widget.currentLanguage)),
                     ),
-                    icon: const Icon(Icons.military_tech_outlined),
-                    label: Text(PremiosScreen.titulo.resolve(currentLanguage)),
-                  ),
-                if (premios != null) ...[
-                  const SizedBox(height: 8.0),
-                  Text(
-                    _premiosSubtitle.resolve(currentLanguage),
-                    textAlign: TextAlign.center,
-                    style: theme.textTheme.bodySmall
-                        ?.copyWith(color: AppTheme.textMuted),
-                  ),
-                  const SizedBox(height: 24.0),
-                ],
-                Card(
-                  color: const Color(0xFFEBE7D5),
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12.0),
-                    side: const BorderSide(color: Color(0xFFD3CEB8)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.shield_outlined,
-                          color: AppTheme.primaryVigoBlue,
-                          size: 24,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(
-                            _privacyNotice.resolve(currentLanguage),
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: AppTheme.textSlate,
-                              fontWeight: FontWeight.w600,
-                            ),
+                  ],
+                  selected: {_currentRole},
+                  onSelectionChanged: (Set<PortalRole> newSelection) {
+                    setState(() {
+                      _currentRole = newSelection.first;
+                    });
+                  },
+                ),
+              ),
+              const SizedBox(height: 16.0),
+              if (_currentRole == PortalRole.familias) ..._buildFamiliasModules(context, isGl),
+              if (_currentRole == PortalRole.docentes) ..._buildDocentesModules(context, isGl),
+              const SizedBox(height: 24.0),
+              Card(
+                color: const Color(0xFFEBE7D5),
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                  side: const BorderSide(color: Color(0xFFD3CEB8)),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.shield_outlined,
+                        color: AppTheme.primaryVigoBlue,
+                        size: 24,
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          _privacyNotice.resolve(widget.currentLanguage),
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: AppTheme.textSlate,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
-              ],
-            )),
+              ),
+            ],
+          ),
+        ),
       ),
     );
+  }
+
+  List<Widget> _buildFamiliasModules(BuildContext context, bool isGl) {
+    final theme = Theme.of(context);
+    return [
+      _buildModuleCard(
+        context: context,
+        title: _academyTitle.resolve(widget.currentLanguage),
+        description: _academySubtitle.resolve(widget.currentLanguage),
+        icon: Icons.family_restroom_outlined,
+        buttonText: isGl ? 'Entrar en Academy' : 'Entrar en Academy',
+        formacionKey: const ValueKey('formacion_familia'),
+        formacionTexto: isGl
+            ? 'Antes de empezar na casa · 2 min'
+            : 'Antes de empezar en casa · 2 min',
+        onFormacion: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => FormacionScreen(
+                perfil: PerfilFormacion.familia,
+                language: widget.currentLanguage,
+              ),
+            ),
+          );
+        },
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => BloquesListScreen(
+                repository: widget.repository,
+                premios: widget.premios,
+                calendario: widget.calendario,
+                audioService: widget.audioService,
+                initialLanguage: widget.currentLanguage,
+                onLanguageChanged: widget.onLanguageChanged,
+              ),
+            ),
+          );
+        },
+      ),
+      const SizedBox(height: 16.0),
+      _buildModuleCard(
+        context: context,
+        title: _cuentosTitle.resolve(widget.currentLanguage),
+        description: _cuentosSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.menu_book_outlined,
+        buttonText: isGl ? 'Explorar Contos' : 'Explorar Cuentos',
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => CuentosListScreen(
+                repository: widget.repository,
+                initialLanguage: widget.currentLanguage,
+                audioService: widget.audioService,
+              ),
+            ),
+          );
+        },
+      ),
+      const SizedBox(height: 16.0),
+      _buildModuleCard(
+        context: context,
+        title: _laminasTitle.resolve(widget.currentLanguage),
+        description: _laminasSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.photo_library_outlined,
+        buttonText: isGl ? 'Ver Láminas' : 'Ver Láminas',
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => LaminasGalleryScreen(
+                repository: widget.repository,
+                initialLanguage: widget.currentLanguage,
+                audioService: widget.audioService,
+              ),
+            ),
+          );
+        },
+      ),
+      const SizedBox(height: 16.0),
+      _buildModuleCard(
+        context: context,
+        title: _lecturaTitle.resolve(widget.currentLanguage),
+        description: _lecturaSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.spellcheck_outlined,
+        buttonText: isGl ? 'Entrar en Lectura' : 'Entrar en Lectura',
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => AprenderALerScreen(
+                repository: widget.repository,
+                initialLanguage: widget.currentLanguage,
+                audioService: widget.audioService,
+              ),
+            ),
+          );
+        },
+      ),
+      const SizedBox(height: 16.0),
+      _buildModuleCard(
+        context: context,
+        title: _calendarioTitle.resolve(widget.currentLanguage),
+        description: _calendarioSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.calendar_month_outlined,
+        buttonText: isGl
+            ? 'Ver Calendario Escola · Fogar'
+            : 'Ver Calendario Escuela · Hogar',
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => CalendarioScreen(
+                store: widget.calendario ?? CalendarioStore(),
+                initialLanguage: widget.currentLanguage,
+                onLanguageChanged: widget.onLanguageChanged,
+                repository: widget.repository,
+                audioService: widget.audioService,
+                premios: widget.premios,
+              ),
+            ),
+          );
+        },
+      ),
+      if (widget.premios != null) ...[
+        const SizedBox(height: 24.0),
+        OutlinedButton.icon(
+          onPressed: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => PremiosScreen(
+                repository: widget.premios!,
+                currentLanguage: widget.currentLanguage,
+                contadores: widget.calendario?.contadores,
+              ),
+            ),
+          ),
+          icon: const Icon(Icons.military_tech_outlined),
+          label: Text(PremiosScreen.titulo.resolve(widget.currentLanguage)),
+        ),
+        const SizedBox(height: 8.0),
+        Text(
+          _premiosSubtitle.resolve(widget.currentLanguage),
+          textAlign: TextAlign.center,
+          style: theme.textTheme.bodySmall?.copyWith(color: AppTheme.textMuted),
+        ),
+      ],
+    ];
+  }
+
+  List<Widget> _buildDocentesModules(BuildContext context, bool isGl) {
+    return [
+      _buildModuleCard(
+        context: context,
+        title: _juegaTitle.resolve(widget.currentLanguage),
+        description: _juegaSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.school_outlined,
+        buttonText: isGl ? 'Entrar en Modo Aula' : 'Entrar en Modo Aula',
+        formacionKey: const ValueKey('formacion_docente'),
+        formacionTexto: isGl
+            ? 'Antes de entrar na aula · 2 min'
+            : 'Antes de entrar en el aula · 2 min',
+        onFormacion: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => FormacionScreen(
+                perfil: PerfilFormacion.docente,
+                language: widget.currentLanguage,
+              ),
+            ),
+          );
+        },
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => UnidadesListScreen(
+                repository: widget.repository,
+                premios: widget.premios,
+                calendario: widget.calendario,
+                audioService: widget.audioService,
+                initialLanguage: widget.currentLanguage,
+                onLanguageChanged: widget.onLanguageChanged,
+              ),
+            ),
+          );
+        },
+      ),
+      const SizedBox(height: 16.0),
+      _buildModuleCard(
+        context: context,
+        title: _planificadorTitle.resolve(widget.currentLanguage),
+        description: _planificadorSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.calendar_view_month_outlined,
+        buttonText: isGl ? 'Abrir Planificador' : 'Abrir Planificador',
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => PlanificadorScreen(
+                repository: widget.repository,
+                initialLanguage: widget.currentLanguage,
+              ),
+            ),
+          );
+        },
+      ),
+      const SizedBox(height: 16.0),
+      _buildModuleCard(
+        context: context,
+        title: _englishTitle.resolve(widget.currentLanguage),
+        description: _englishSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.language_outlined,
+        buttonText: isGl ? 'Entrar en English L3' : 'Entrar en English L3',
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => EnglishHubScreen(
+                repository: widget.repository,
+                initialLanguage: widget.currentLanguage,
+                audioService: widget.audioService,
+              ),
+            ),
+          );
+        },
+      ),
+      const SizedBox(height: 16.0),
+      _buildModuleCard(
+        context: context,
+        title: _estrategiasTitle.resolve(widget.currentLanguage),
+        description: _estrategiasSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.psychology_outlined,
+        buttonText: isGl ? 'Ver Estratexias' : 'Ver Estrategias',
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => EstrategiasScreen(
+                repository: widget.repository,
+                initialLanguage: widget.currentLanguage,
+              ),
+            ),
+          );
+        },
+      ),
+      const SizedBox(height: 16.0),
+      _buildModuleCard(
+        context: context,
+        title: _dinamicasTitle.resolve(widget.currentLanguage),
+        description: _dinamicasSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.groups_outlined,
+        buttonText: isGl ? 'Explorar Dinámicas' : 'Explorar Dinámicas',
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => DinamicasScreen(
+                repository: widget.repository,
+                initialLanguage: widget.currentLanguage,
+              ),
+            ),
+          );
+        },
+      ),
+      const SizedBox(height: 16.0),
+      _buildModuleCard(
+        context: context,
+        title: _corpusTitle.resolve(widget.currentLanguage),
+        description: _corpusSubtitle.resolve(widget.currentLanguage),
+        icon: Icons.format_list_numbered_outlined,
+        buttonText: isGl ? 'Abrir Corpus' : 'Abrir Corpus',
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => Palabras8000Screen(
+                repository: widget.repository,
+                initialLanguage: widget.currentLanguage,
+                audioService: widget.audioService,
+              ),
+            ),
+          );
+        },
+      ),
+    ];
   }
 
   Widget _buildModuleCard({
@@ -544,11 +885,6 @@ class HomeScreen extends StatelessWidget {
               style: theme.textTheme.bodyMedium,
             ),
             const SizedBox(height: 16),
-            // La formación va ANTES del botón de entrar, a propósito: es lo
-            // que hay que leer la primera vez, y si se pone detrás nadie la
-            // abre. Dos minutos, y evita los dos errores de uso que los
-            // documentos curriculares señalan: enseñarle la pantalla a la
-            // criatura, y preguntarle «¿cómo se dice?».
             if (formacionTexto != null && onFormacion != null)
               Align(
                 alignment: Alignment.centerLeft,

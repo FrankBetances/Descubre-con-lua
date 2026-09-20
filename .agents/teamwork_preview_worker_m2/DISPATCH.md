@@ -1,54 +1,81 @@
-## 2026-09-11T08:48:43Z
+## 2026-09-20T15:13:00Z
 
-You are the Content-as-Data & Validation Suite Worker for Milestone 2 in «Descubre con Lúa · Edición Vigo».
+<USER_REQUEST>
+You are the Dart Models & Core Services Worker for Milestone 2 (R2 & R4 Core) of the project "Descubre con Lúa · Edición Vigo".
 
-Your identity:
-- Archetype: teamwork_preview_worker
-- Role: Content-as-Data & Validation Worker
-- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m2/
-- Project root: <documentos locales>/Descubre con Lúa
+Working directory for your metadata:
+/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m2/
 
-Mandatory: Read ORIGINAL_REQUEST.md first:
-<documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md
+Project root:
+/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa
 
-Read PROJECT.md for architecture and contracts:
-<documentos locales>/Descubre con Lúa/PROJECT.md
+REFERENCE SOURCE (READ-ONLY):
+The entire reference codebase is available in the workspace at:
+`/Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.studio_ref/`
+Specifically inspect:
+- `.studio_ref/src/utils/fsrsAlgorithm.ts` (for FSRS v4.5 port)
+- `.studio_ref/src/data/` (for TypeScript types and data structures)
 
-Read Spec Miner analysis and handoff for exact schemas, Decreto 150/2022 mappings, clinical blacklist regex, and production JSONs:
-<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/handoff.md
-<documentos locales>/Descubre con Lúa/.agents/teamwork_preview_spec_miner_survey_1/analysis.md
+MANDATORY FIRST STEP:
+Read /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md and /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/CLAUDE.md.
+Also inspect existing models in `lib/data/models/` (e.g. `unidad_model.dart`, `capsula_model.dart`) and `lib/core/localization/localized_string.dart` for coding conventions, `@immutable`, `LocalizedString`, and `fromJson`/`toJson` style.
 
 MANDATORY INTEGRITY WARNING:
 DO NOT CHEAT. All implementations must be genuine. DO NOT hardcode test results, create dummy/facade implementations, or circumvent the intended task. A teamwork_preview_auditor will independently verify your work. Integrity violations WILL be detected and your work WILL be rejected.
 
-Your write ownership:
-You own `lib/data/**`, `assets/content/**`, `test/data/**`.
+OWNED FILES:
+You exclusively own:
+- All new model files in `lib/data/models/`:
+  - `lib/data/models/cuento_model.dart`
+  - `lib/data/models/lamina_model.dart`
+  - `lib/data/models/corpus_palabra_model.dart`
+  - `lib/data/models/dia_calendario_dual_model.dart`
+  - `lib/data/models/fsrs_card_model.dart`
+  - `lib/data/models/english_corpus_model.dart`
+  - `lib/data/models/phonics_model.dart`
+  - `lib/data/models/estrategia_model.dart`
+  - `lib/data/models/dinamica_model.dart`
+- Core services in `lib/core/`:
+  - `lib/core/fsrs_service.dart` (port of FSRS v4.5 from `.studio_ref/src/utils/fsrsAlgorithm.ts`)
+  - `lib/core/progress_service.dart` (UserProgress service on top of LocalStore)
+- Content repository in `lib/data/repositories/`:
+  - `lib/data/repositories/content_repository.dart` (extend with loader and query methods for all new models)
 
-Your mission in Milestone 2:
-1. Implement strongly-typed Dart models in `lib/data/models/`:
-   - `curricular_model.dart`: `CurricularReference` representing Decreto 150/2022 (areas: 1, 2, 3; competencias clave, criterios de avaliación).
-   - `unidad_model.dart`: `Unidad`, `Vocabulario`, `Actividad`, `Preguntas` (`PreguntaNivel`), `Exploracion` (`ExploracionSensorial`), `Matematicas` (`MatematicasTempras`), `PuenteCasa` (`PonteCasa`), `Revision`.
-   - `capsula_model.dart`: `Capsula`, `Bloque`, `Afirmacion`, `Revision`, `ContidoCapsula` (with the 4 canonical sections: `ideaClave`, `porQueImporta`, `queHacerEnCasa`, `ejemploCotidiano`).
-   - Use `LocalizedString` (`lib/core/localization/localized_string.dart`) for all bilingual text fields.
-2. Implement asset loader, repository, and validator in `lib/data/`:
-   - `loaders/content_asset_loader.dart`: Loads and parses JSON content from bundle or raw strings.
-   - `repositories/content_repository.dart`: Provides query and filter methods for units (by ID, tramoEtario: `0-2` / `2-3`) and capsules (by ID, bloqueId: 1 to 5).
-   - `validators/content_validator.dart`: Programmatic validator for bilingual parity, Decreto 150/2022 curriculum alignment, clinical blacklist regex, and referential integrity.
-3. Incorporate production-ready base JSON files:
-   - `assets/content/unidades/juega.mar.01.json`: Vigo maritime exploration unit (Samil, bateas, ría de Vigo, pulso 72 BPM, cuento, preguntas graduadas por nivel, exploración sensorial con materiales y aviso de seguridad >4cm, matemáticas tempranas, puente a casa).
-   - `assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json`: Family communicative development capsule (baño de lenguaje, turnos de 5 segundos, escenas cotidianas, idea clave, por qué importa, qué hacer en casa, ejemplo cotidiano).
-4. Implement automated validation test suite in `test/data/`:
-   - `models_test.dart`: Full model serialization/deserialization and field validation.
-   - `content_loader_test.dart`: Asset loading and JSON parsing verification.
-   - `bilingual_parity_test.dart`: Strict 1:1 non-empty parity between `gl` and `es` across all text fields.
-   - `curricular_alignment_test.dart`: Decreto 150/2022 references and curricular areas validation.
-   - `clinical_terms_blacklist_test.dart`: Regex linter verifying zero prohibited clinical or diagnostic terms in all JSONs and models.
-   - `referential_integrity_test.dart`: Referential integrity of audio paths and required sections.
-5. Verify your implementation:
-   - Write and run an empirical verification script testing all models, JSONs, and test suites.
-   - Document all verification results in `handoff.md`.
+TASKS:
+1. Create `lib/core/fsrs_service.dart`:
+   - Pure Dart implementation of FSRS v4.5 ported from `.studio_ref/src/utils/fsrsAlgorithm.ts`.
+   - Default 17 weights: `[0.4, 0.6, 2.4, 5.8, 4.93, 0.94, 0.86, 0.01, 1.49, 0.14, 0.94, 2.18, 0.05, 0.34, 1.26, 0.29, 2.61]`.
+   - Retrievability formula: $R = (1 + \text{factor} \cdot t / S)^{-0.5}$.
+   - Methods: `initStability`, `initDifficulty`, `nextStability`, `nextDifficulty`, `nextInterval`, `repeat(card, rating, now)`.
+2. Create `lib/core/progress_service.dart`:
+   - Manages user XP, streaks, completed assemblies, completed capsules, dual-track logs (aula vs fogar), and FSRS card reviews.
+   - Uses `LocalStore` (`lib/core/storage/local_store.dart`) for atomic offline file persistence.
+   - Zero network, zero external dependencies.
+3. Create Dart data models in `lib/data/models/`:
+   - Follow existing patterns in `unidad_model.dart` and `capsula_model.dart`:
+     - `@immutable`
+     - Use `LocalizedString` for bilingual text (`gl` / `es`).
+     - Provide factory `fromJson(Map<String, dynamic> json)` and `Map<String, dynamic> toJson()`.
+     - Implement `==` and `hashCode`.
+4. Extend `lib/data/repositories/content_repository.dart`:
+   - Add caching and loading methods:
+     - `loadCuentos({String? cursoId, int? mesNumero})`
+     - `getCuentoById(String id)`
+     - `loadLaminas({String? categoria, String? nivel})`
+     - `getLaminaById(String id)`
+     - `loadCorpusPalabras({int? banda, String? cefr})`
+     - `searchPalabras(String query)`
+     - `loadCalendarioDias({required String cursoId, int? mes})`
+     - `loadEnglishCorpus()`
+     - `loadPhonicsTaxonomy()`
+     - `loadEstrategias()`
+     - `loadDinamicas()`
+     - `loadCurriculo50Meses()`
 
-Output requirements:
-- Write `progress.md` with timestamps.
-- Write `handoff.md` with full details following Handoff Protocol.
-- Send a message to parent summarizing your deliverables and pointing to `handoff.md`.
+COMPLETION CRITERIA:
+- All model files created in `lib/data/models/`.
+- `fsrs_service.dart` and `progress_service.dart` created in `lib/core/`.
+- `content_repository.dart` extended.
+- Code formatted and free of syntax errors.
+- Report completion via send_message to parent orchestrator.
+</USER_REQUEST>

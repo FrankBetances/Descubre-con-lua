@@ -1,10 +1,19 @@
+import 'dart:convert';
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 
 import '../loaders/content_asset_loader.dart';
 import '../models/asamblea_primeiro_ciclo_model.dart';
-import '../models/progresion_model.dart';
 import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
+import '../models/corpus_palabra_model.dart';
+import '../models/cuento_model.dart';
+import '../models/dia_calendario_dual_model.dart';
+import '../models/dinamica_model.dart';
+import '../models/english_corpus_model.dart';
+import '../models/estrategia_model.dart';
+import '../models/lamina_model.dart';
+import '../models/phonics_model.dart';
+import '../models/progresion_model.dart';
 import '../models/unidad_model.dart';
 
 /// A content file that could not be loaded, kept instead of being discarded.
@@ -23,6 +32,32 @@ class ContentLoadFailure {
 ///
 /// Operates completely offline with zero network clients.
 class ContentRepository {
+  // Canonical asset paths for new pedagogical modules
+  static const String cuentos200AssetPath =
+      'assets/content/cuentos/banco200_cuentos.json';
+  static const String cuentos100AssetPath =
+      'assets/content/cuentos/banco100_cuentos.json';
+  static const String historiasProgresivasAssetPath =
+      'assets/content/cuentos/historias_progresivas.json';
+  static const String laminas200AssetPath =
+      'assets/content/laminas/banco200_laminas.json';
+  static const String corpusCefrAssetPath =
+      'assets/content/corpus/bnc_coca_8000_cefr.json';
+  static const String corpusBaseAssetPath =
+      'assets/content/corpus/bnc_coca_8000.json';
+  static const String calendarioDiasAssetPath =
+      'assets/content/calendario/calendario_dias.json';
+  static const String englishCorpusAssetPath =
+      'assets/content/english/english_corpus.json';
+  static const String phonicsTaxonomyAssetPath =
+      'assets/content/english/phonics_taxonomy.json';
+  static const String estrategiasAssetPath =
+      'assets/content/estrategias_pedagogicas.json';
+  static const String dinamicasAssetPath =
+      'assets/content/dinamicas_aula.json';
+  static const String curriculo50MesesAssetPath =
+      'assets/content/calendario/curriculo_50_meses.json';
+
   final ContentAssetLoader _loader;
   final Map<String, Unidad> _unidadesById = {};
   final Map<String, Capsula> _capsulasById = {};
@@ -31,6 +66,18 @@ class ContentRepository {
 
   /// La progresión diaria por tramo: «primeiro_ciclo.0_2», «segundo_ciclo.4»…
   final Map<String, ProgresionDoMes> _progresionsPorClave = {};
+
+  // Milestone 2 Caches
+  final Map<String, Cuento> _cuentosById = {};
+  final Map<String, Lamina> _laminasById = {};
+  final List<CorpusPalabra> _corpusPalabras = [];
+  final List<DiaCalendarioDual> _calendarioDias = [];
+  EnglishCorpus? _englishCorpus;
+  PhonicsTaxonomy? _phonicsTaxonomy;
+  final List<EstrategiaPedagogica> _estrategias = [];
+  final List<DinamicaPedagogica> _dinamicas = [];
+  final List<MesCurricular50> _curriculo50Meses = [];
+
   final List<ContentLoadFailure> _loadErrors = [];
   bool _isInitialized = false;
 
@@ -417,6 +464,381 @@ class ContentRepository {
     return null;
   }
 
+  // --- CUENTOS (Banco de 200 Contos e Historias Progresivas) ---
+
+  /// Loads pedagogical stories, optionally filtered by course ID and month.
+  Future<List<Cuento>> loadCuentos({String? cursoId, int? mesNumero}) async {
+    if (_cuentosById.isEmpty) {
+      final paths = [
+        cuentos200AssetPath,
+        cuentos100AssetPath,
+        historiasProgresivasAssetPath,
+      ];
+      for (final path in paths) {
+        try {
+          final raw = await _loader.loadRawString(path);
+          final dynamic decoded = jsonDecode(raw);
+          if (decoded is List) {
+            for (final item in decoded) {
+              if (item is Map<String, dynamic>) {
+                final cuento = Cuento.fromJson(item);
+                _cuentosById[cuento.id] = cuento;
+              } else if (item is Map) {
+                final cuento = Cuento.fromJson(Map<String, dynamic>.from(item));
+                _cuentosById[cuento.id] = cuento;
+              }
+            }
+          }
+        } catch (e) {
+          _loadErrors.add(ContentLoadFailure(path, e.toString()));
+        }
+      }
+    }
+
+    var list = _cuentosById.values.toList();
+    if (cursoId != null && cursoId.trim().isNotEmpty) {
+      final clean = cursoId.trim();
+      list = list.where((c) => c.cursoId == clean).toList();
+    }
+    if (mesNumero != null) {
+      list = list.where((c) => c.mesNumero == mesNumero).toList();
+    }
+    list.sort((a, b) {
+      final cmpCurso = a.cursoId.compareTo(b.cursoId);
+      if (cmpCurso != 0) return cmpCurso;
+      final cmpMes = a.mesNumero.compareTo(b.mesNumero);
+      if (cmpMes != 0) return cmpMes;
+      final cmpSem = a.semanaSugerida.compareTo(b.semanaSugerida);
+      if (cmpSem != 0) return cmpSem;
+      return a.id.compareTo(b.id);
+    });
+    return List.unmodifiable(list);
+  }
+
+  /// Finds a story by its unique ID.
+  Future<Cuento?> getCuentoById(String id) async {
+    final cleanId = id.trim();
+    if (_cuentosById.containsKey(cleanId)) {
+      return _cuentosById[cleanId];
+    }
+    await loadCuentos();
+    return _cuentosById[cleanId];
+  }
+
+  /// Synchronous lookup for an in-memory cached story.
+  Cuento? getCuentoByIdSync(String id) => _cuentosById[id.trim()];
+
+  // --- LAMINAS (Banco de 200+ Láminas Ilustradas) ---
+
+  /// Loads didactic cards/flashcards, optionally filtered by category and CEFR level.
+  Future<List<Lamina>> loadLaminas({String? categoria, String? nivel}) async {
+    if (_laminasById.isEmpty) {
+      try {
+        final raw = await _loader.loadRawString(laminas200AssetPath);
+        final dynamic decoded = jsonDecode(raw);
+        if (decoded is List) {
+          for (final item in decoded) {
+            if (item is Map<String, dynamic>) {
+              final lamina = Lamina.fromJson(item);
+              _laminasById[lamina.id] = lamina;
+            } else if (item is Map) {
+              final lamina = Lamina.fromJson(Map<String, dynamic>.from(item));
+              _laminasById[lamina.id] = lamina;
+            }
+          }
+        }
+      } catch (e) {
+        _loadErrors.add(ContentLoadFailure(laminas200AssetPath, e.toString()));
+      }
+    }
+
+    var list = _laminasById.values.toList();
+    if (categoria != null && categoria.trim().isNotEmpty) {
+      final cleanCat = categoria.trim().toLowerCase();
+      list = list.where((l) => l.categoria.toLowerCase() == cleanCat).toList();
+    }
+    if (nivel != null && nivel.trim().isNotEmpty) {
+      final cleanNiv = nivel.trim().toLowerCase();
+      list = list.where((l) => l.cefr.toLowerCase() == cleanNiv).toList();
+    }
+    list.sort((a, b) => a.numero.compareTo(b.numero));
+    return List.unmodifiable(list);
+  }
+
+  /// Finds a didactic card by its unique ID.
+  Future<Lamina?> getLaminaById(String id) async {
+    final cleanId = id.trim();
+    if (_laminasById.containsKey(cleanId)) {
+      return _laminasById[cleanId];
+    }
+    await loadLaminas();
+    return _laminasById[cleanId];
+  }
+
+  /// Synchronous lookup for a didactic card.
+  Lamina? getLaminaByIdSync(String id) => _laminasById[id.trim()];
+
+  // --- CORPUS 8,000 PALABRAS ---
+
+  /// Loads the 8,000-word corpus, optionally filtered by frequency band (1..8) or CEFR level.
+  Future<List<CorpusPalabra>> loadCorpusPalabras({
+    int? banda,
+    String? cefr,
+  }) async {
+    if (_corpusPalabras.isEmpty) {
+      final paths = [corpusCefrAssetPath, corpusBaseAssetPath];
+      for (final path in paths) {
+        try {
+          final raw = await _loader.loadRawString(path);
+          final dynamic decoded = jsonDecode(raw);
+          if (decoded is List && decoded.isNotEmpty) {
+            _corpusPalabras.clear();
+            for (final item in decoded) {
+              if (item is Map<String, dynamic>) {
+                _corpusPalabras.add(CorpusPalabra.fromJson(item));
+              } else if (item is Map) {
+                _corpusPalabras.add(
+                  CorpusPalabra.fromJson(Map<String, dynamic>.from(item)),
+                );
+              }
+            }
+            break;
+          }
+        } catch (e) {
+          _loadErrors.add(ContentLoadFailure(path, e.toString()));
+        }
+      }
+    }
+
+    var list = _corpusPalabras;
+    if (banda != null) {
+      list = list
+          .where((p) => p.bandaNumero == banda || p.banda == '${banda}k')
+          .toList();
+    }
+    if (cefr != null && cefr.trim().isNotEmpty) {
+      final cleanCefr = cefr.trim().toLowerCase();
+      list = list
+          .where((p) => p.nivelCefr.toLowerCase().contains(cleanCefr))
+          .toList();
+    }
+    return List.unmodifiable(list);
+  }
+
+  /// Searches words matching [query] by prefix or substring with intelligent ranking.
+  Future<List<CorpusPalabra>> searchPalabras(String query) async {
+    final clean = query.trim().toLowerCase();
+    if (clean.isEmpty) return const [];
+    if (_corpusPalabras.isEmpty) {
+      await loadCorpusPalabras();
+    }
+    final results = _corpusPalabras.where((p) {
+      final lemma = p.lemma.toLowerCase();
+      return lemma.contains(clean);
+    }).toList();
+
+    results.sort((a, b) {
+      final aLemma = a.lemma.toLowerCase();
+      final bLemma = b.lemma.toLowerCase();
+      final aExact = aLemma == clean;
+      final bExact = bLemma == clean;
+      if (aExact && !bExact) return -1;
+      if (!aExact && bExact) return 1;
+
+      final aStarts = aLemma.startsWith(clean);
+      final bStarts = bLemma.startsWith(clean);
+      if (aStarts && !bStarts) return -1;
+      if (!aStarts && bStarts) return 1;
+
+      final cmpBanda = a.bandaNumero.compareTo(b.bandaNumero);
+      if (cmpBanda != 0) return cmpBanda;
+      return a.id.compareTo(b.id);
+    });
+    return List.unmodifiable(results);
+  }
+
+  // --- CALENDARIO 1,000 DÍAS DUAL ---
+
+  /// Loads daily dual calendar entries (aula + fogar) for a specific course and optional month.
+  Future<List<DiaCalendarioDual>> loadCalendarioDias({
+    required String cursoId,
+    int? mes,
+  }) async {
+    if (_calendarioDias.isEmpty) {
+      try {
+        final raw = await _loader.loadRawString(calendarioDiasAssetPath);
+        final dynamic decoded = jsonDecode(raw);
+        if (decoded is List) {
+          for (final item in decoded) {
+            if (item is Map<String, dynamic>) {
+              _calendarioDias.add(DiaCalendarioDual.fromJson(item));
+            } else if (item is Map) {
+              _calendarioDias.add(
+                DiaCalendarioDual.fromJson(Map<String, dynamic>.from(item)),
+              );
+            }
+          }
+        }
+      } catch (e) {
+        _loadErrors.add(
+          ContentLoadFailure(calendarioDiasAssetPath, e.toString()),
+        );
+      }
+    }
+
+    final cleanCurso = cursoId.trim();
+    var list = _calendarioDias.where((d) {
+      return d.fechaClave.contains(cleanCurso) || cleanCurso.isEmpty;
+    }).toList();
+
+    if (mes != null) {
+      list = list.where((d) => d.mesNumero == mes).toList();
+    }
+
+    list.sort((a, b) => a.diaGlobalNumero.compareTo(b.diaGlobalNumero));
+    return List.unmodifiable(list);
+  }
+
+  // --- ENGLISH IMMERSION CORPUS ---
+
+  /// Loads the English Immersion lexicon and dialogue scenarios.
+  Future<EnglishCorpus> loadEnglishCorpus() async {
+    if (_englishCorpus != null) return _englishCorpus!;
+    try {
+      final raw = await _loader.loadRawString(englishCorpusAssetPath);
+      final dynamic decoded = jsonDecode(raw);
+      if (decoded is Map<String, dynamic>) {
+        _englishCorpus = EnglishCorpus.fromJson(decoded);
+      } else if (decoded is Map) {
+        _englishCorpus =
+            EnglishCorpus.fromJson(Map<String, dynamic>.from(decoded));
+      } else if (decoded is List) {
+        _englishCorpus = EnglishCorpus.fromJson({
+          'words': decoded,
+          'scenarios': [],
+        });
+      }
+    } catch (e) {
+      _loadErrors.add(ContentLoadFailure(englishCorpusAssetPath, e.toString()));
+    }
+    return _englishCorpus ?? const EnglishCorpus(words: [], scenarios: []);
+  }
+
+  // --- PHONICS TAXONOMY ---
+
+  /// Loads the 44-phoneme taxonomy, decodable words, word families, and missions.
+  Future<PhonicsTaxonomy> loadPhonicsTaxonomy() async {
+    if (_phonicsTaxonomy != null) return _phonicsTaxonomy!;
+    try {
+      final raw = await _loader.loadRawString(phonicsTaxonomyAssetPath);
+      final dynamic decoded = jsonDecode(raw);
+      if (decoded is Map<String, dynamic>) {
+        _phonicsTaxonomy = PhonicsTaxonomy.fromJson(decoded);
+      } else if (decoded is Map) {
+        _phonicsTaxonomy =
+            PhonicsTaxonomy.fromJson(Map<String, dynamic>.from(decoded));
+      }
+    } catch (e) {
+      _loadErrors.add(ContentLoadFailure(phonicsTaxonomyAssetPath, e.toString()));
+    }
+    return _phonicsTaxonomy ??
+        const PhonicsTaxonomy(
+          phonemes: [],
+          decodableWords: [],
+          wordFamilies: [],
+          missions: [],
+        );
+  }
+
+  // --- ESTRATEGIAS PEDAGÓXICAS ---
+
+  /// Loads the pedagogical strategies catalogue.
+  Future<List<EstrategiaPedagogica>> loadEstrategias() async {
+    if (_estrategias.isEmpty) {
+      try {
+        final raw = await _loader.loadRawString(estrategiasAssetPath);
+        final dynamic decoded = jsonDecode(raw);
+        final List list = decoded is List
+            ? decoded
+            : (decoded is Map && decoded['estrategias'] is List
+                ? decoded['estrategias'] as List
+                : const []);
+        for (final item in list) {
+          if (item is Map<String, dynamic>) {
+            _estrategias.add(EstrategiaPedagogica.fromJson(item));
+          } else if (item is Map) {
+            _estrategias.add(
+              EstrategiaPedagogica.fromJson(Map<String, dynamic>.from(item)),
+            );
+          }
+        }
+      } catch (e) {
+        _loadErrors.add(ContentLoadFailure(estrategiasAssetPath, e.toString()));
+      }
+    }
+    return List.unmodifiable(_estrategias);
+  }
+
+  // --- DINÁMICAS DA AULA ---
+
+  /// Loads classroom dynamics.
+  Future<List<DinamicaPedagogica>> loadDinamicas() async {
+    if (_dinamicas.isEmpty) {
+      try {
+        final raw = await _loader.loadRawString(dinamicasAssetPath);
+        final dynamic decoded = jsonDecode(raw);
+        final List list = decoded is List
+            ? decoded
+            : (decoded is Map && decoded['dinamicas'] is List
+                ? decoded['dinamicas'] as List
+                : const []);
+        for (final item in list) {
+          if (item is Map<String, dynamic>) {
+            _dinamicas.add(DinamicaPedagogica.fromJson(item));
+          } else if (item is Map) {
+            _dinamicas.add(
+              DinamicaPedagogica.fromJson(Map<String, dynamic>.from(item)),
+            );
+          }
+        }
+      } catch (e) {
+        _loadErrors.add(ContentLoadFailure(dinamicasAssetPath, e.toString()));
+      }
+    }
+    return List.unmodifiable(_dinamicas);
+  }
+
+  // --- CURRICULO 50 MESES ---
+
+  /// Loads the 50-month curricular timeline (5 courses × 10 months).
+  Future<List<MesCurricular50>> loadCurriculo50Meses() async {
+    if (_curriculo50Meses.isEmpty) {
+      try {
+        final raw = await _loader.loadRawString(curriculo50MesesAssetPath);
+        final dynamic decoded = jsonDecode(raw);
+        final List list = decoded is List
+            ? decoded
+            : (decoded is Map && decoded['meses'] is List
+                ? decoded['meses'] as List
+                : const []);
+        for (final item in list) {
+          if (item is Map<String, dynamic>) {
+            _curriculo50Meses.add(MesCurricular50.fromJson(item));
+          } else if (item is Map) {
+            _curriculo50Meses.add(
+              MesCurricular50.fromJson(Map<String, dynamic>.from(item)),
+            );
+          }
+        }
+      } catch (e) {
+        _loadErrors.add(
+          ContentLoadFailure(curriculo50MesesAssetPath, e.toString()),
+        );
+      }
+    }
+    return List.unmodifiable(_curriculo50Meses);
+  }
+
   // --- IN-MEMORY & TEST HELPER METHODS ---
 
   /// Adds or updates an [Unidad] directly in memory (for tests and mocking).
@@ -437,13 +859,69 @@ class ContentRepository {
     _isInitialized = true;
   }
 
-  /// Clears all cached content across Primer and Segundo Ciclo.
+  /// Adds or updates a [Cuento] directly in memory (for tests and mocking).
+  void addCuento(Cuento cuento) {
+    _cuentosById[cuento.id] = cuento;
+  }
+
+  /// Adds or updates a [Lamina] directly in memory (for tests and mocking).
+  void addLamina(Lamina lamina) {
+    _laminasById[lamina.id] = lamina;
+  }
+
+  /// Adds a [CorpusPalabra] directly in memory (for tests and mocking).
+  void addCorpusPalabra(CorpusPalabra palabra) {
+    _corpusPalabras.add(palabra);
+  }
+
+  /// Adds a [DiaCalendarioDual] directly in memory (for tests and mocking).
+  void addCalendarioDia(DiaCalendarioDual dia) {
+    _calendarioDias.add(dia);
+  }
+
+  /// Sets [EnglishCorpus] directly in memory (for tests and mocking).
+  void setEnglishCorpus(EnglishCorpus corpus) {
+    _englishCorpus = corpus;
+  }
+
+  /// Sets [PhonicsTaxonomy] directly in memory (for tests and mocking).
+  void setPhonicsTaxonomy(PhonicsTaxonomy taxonomy) {
+    _phonicsTaxonomy = taxonomy;
+  }
+
+  /// Adds an [EstrategiaPedagogica] directly in memory (for tests and mocking).
+  void addEstrategia(EstrategiaPedagogica estrategia) {
+    _estrategias.add(estrategia);
+  }
+
+  /// Adds a [DinamicaPedagogica] directly in memory (for tests and mocking).
+  void addDinamica(DinamicaPedagogica dinamica) {
+    _dinamicas.add(dinamica);
+  }
+
+  /// Adds a [MesCurricular50] directly in memory (for tests and mocking).
+  void addMesCurricular50(MesCurricular50 mes) {
+    _curriculo50Meses.add(mes);
+  }
+
+  /// Clears all cached content across all modules.
   void clear() {
     _initGeneration++;
     _initFuture = null;
     _unidadesById.clear();
     _capsulasById.clear();
+    _asambleasPrimeiroCicloById.clear();
     _asambleasSegundoCicloById.clear();
+    _progresionsPorClave.clear();
+    _cuentosById.clear();
+    _laminasById.clear();
+    _corpusPalabras.clear();
+    _calendarioDias.clear();
+    _englishCorpus = null;
+    _phonicsTaxonomy = null;
+    _estrategias.clear();
+    _dinamicas.clear();
+    _curriculo50Meses.clear();
     _loadErrors.clear();
     _isInitialized = false;
   }

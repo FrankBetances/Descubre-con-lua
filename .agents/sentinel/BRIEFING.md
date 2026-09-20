@@ -1,13 +1,13 @@
-# BRIEFING — 2026-09-11T08:15:28Z
+# BRIEFING — 2026-09-20T15:13:30Z
 
 ## Mission
-Sentinel monitoring and lifecycle management for Descubre con Lúa · Edición Vigo (Android Flutter app).
+Sentinel lifecycle supervision and monitoring for the migration of pedagogical content and UI modules from React/TS prototype into native Flutter (Descubre con Lúa · Edición Vigo).
 
 ## 🔒 My Identity
 - Archetype: sentinel
-- Working directory: <documentos locales>/Descubre con Lúa/.agents/sentinel
-- Orchestrator: 155c43c0-be2b-46ce-b47d-cc280903c77f
-- Victory Auditor: 85221501-7a59-41c9-b53f-03da89608247
+- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/sentinel
+- Orchestrator: 9e628138-021d-44c9-9a72-2da6208e84bb
+- Victory Auditor: [to be spawned on victory claim]
 
 ## 🔒 Key Constraints
 - No technical decisions — relay only
@@ -18,28 +18,30 @@ Sentinel monitoring and lifecycle management for Descubre con Lúa · Edición V
 - Run progress reporting cron (*/8) and liveness check cron (*/10)
 - On completion claim, spawn teamwork_preview_victory_auditor; report success only after VICTORY CONFIRMED
 - Clean up subagents and cancel crons before final delivery
+- Git branch: work on `studio` only, never touch `main`
+- Zero internet permissions in AndroidManifest.xml (tools:node="remove")
+- Offline only: no network libraries, no TTS/speech web APIs
 
 ## User Context
-- **Last user request**: Construir la aplicación nativa Android «Descubre con Lúa · Edición Vigo» en Flutter (com.earlify.descubreconlua), adaptando módulos desde el repositorio del proyecto anterior de la casa (Juega con Lúa y Academy) con contenido JSON bilingüe (gl/es), cero permisos de internet y audio offline.
-- **Pending clarifications**: none
+- **Last user request**: Migrar todo el contenido pedagógico y módulos de UI desde el prototipo React/TS (disponible localmente en `.studio_ref/`) a la app nativa Flutter en la rama `studio`. Cero código React/web en el repo Flutter. Todo Dart + JSON offline sin internet. R1 (conversión de 15+ archivos TS a JSON), R2 (modelos Dart y repositorio), R3 (pantallas para cuentos, láminas, palabras 8000, english, lectura, planificador), R4 (calendario 5 cursos, Portal Dual, UserProgress, FSRS v4.5), R5 (commit y push a origin/studio).
+- **Pending clarifications**: none (reference files placed inside workspace at `.studio_ref/`).
 - **Delivered results**:
-  - Flutter Android project configured (`com.earlify.descubreconlua`) with strict binary privacy (zero internet/network permissions).
-  - Clean architecture (`lib/core/`, `lib/data/`, `lib/features/academy/`, `lib/features/juega/`).
-  - Content-as-data architecture with strongly typed models and JSON assets for Vigo (`juega.mar.01.json`) and communicative development (`academy.como_se_aprende_a_hablar.01.json`).
-  - Automated validation suite enforcing 1:1 `gl`/`es` bilingual parity, Decreto 150/2022 curriculum alignment, and clinical terms exclusion.
-  - Pedagogical modules for Academy (5 blocks, 4 sections, adult typography >= 16sp, no external links) and Juega con Lúa (6 assembly steps, offline 72 BPM audio pulse, safety alerts).
-  - Comprehensive test verification: 27/27 test suites PASSED, 1443/1443 checks evaluated (100% pass).
-  - Independent post-victory audit: VICTORY CONFIRMED across Timeline, Integrity Forensics, and Independent Execution.
+  - Relevamiento y especificaciones técnicas completadas al 100% por el orquestador y subagentes.
+  - Diseño de suites E2E (Dual Track) preparadas para validación de privacidad y contenido JSON.
 
 ## Project Status
-- **Phase**: complete
+- **Phase**: in progress
 - **Route**: General (`teamwork_preview_orchestrator`)
+- **Active Orchestrator**: 9e628138-021d-44c9-9a72-2da6208e84bb (.agents/teamwork_preview_orchestrator_2/)
+- **Cron 1 (Reporting, */8)**: task-26
+- **Cron 2 (Liveness, */10)**: task-28
 
 ## Victory Audit Status
-- **Triggered**: yes
-- **Verdict**: VICTORY CONFIRMED
+- **Triggered**: no
+- **Verdict**: pending
 - **Retry count**: 0
 
 ## Artifact Index
-- <documentos locales>/Descubre con Lúa/ORIGINAL_REQUEST.md — Authoritative record of user request
-- <documentos locales>/Descubre con Lúa/.agents/ORIGINAL_REQUEST.md — Duplicate copy of authoritative record of user request
+- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/ORIGINAL_REQUEST.md — Authoritative record of user request
+- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/ORIGINAL_REQUEST.md — Duplicate copy of authoritative record of user request
+- /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_orchestrator_2/context.md — Active orchestrator initial context

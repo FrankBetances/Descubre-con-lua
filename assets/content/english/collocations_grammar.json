@@ -1,0 +1,452 @@
+{
+  "collocations": [
+    {
+      "id": "col-1",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "fresh",
+      "collocate": "water",
+      "fullCollocation": "fresh water",
+      "cefr": "A1",
+      "naturalContext": "Always drink clean, fresh water when playing outside.",
+      "translation": {
+        "gl": "Auga fresca e limpa",
+        "es": "Agua fresca y limpia"
+      },
+      "tip": {
+        "gl": "En inglés o adxectivo vai case sempre antes do substantivo.",
+        "es": "En inglés el adjetivo se coloca casi siempre antes del sustantivo."
+      }
+    },
+    {
+      "id": "col-2",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "deep",
+      "collocate": "breath",
+      "fullCollocation": "deep breath",
+      "cefr": "A1",
+      "naturalContext": "Take a slow, deep breath to feel calm and centered.",
+      "translation": {
+        "gl": "Respiración profunda",
+        "es": "Respiración profunda"
+      },
+      "tip": {
+        "gl": "Emprégase con \"take\" (take a deep breath, non \"make a breath\").",
+        "es": "Se usa con \"take\" (take a deep breath, nunca \"make a breath\")."
+      }
+    },
+    {
+      "id": "col-3",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "make",
+      "collocate": "decision",
+      "fullCollocation": "make a decision",
+      "cefr": "A2",
+      "naturalContext": "Take your time to make a good decision.",
+      "translation": {
+        "gl": "Tomar unha decisión",
+        "es": "Tomar una decisión"
+      },
+      "tip": {
+        "gl": "Dise \"make a decision\", nunca *\"do a decision\" nin *\"take a decision\" en inglés estándar.",
+        "es": "Se dice \"make a decision\", nunca *\"do a decision\"."
+      }
+    },
+    {
+      "id": "col-4",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "pay",
+      "collocate": "attention",
+      "fullCollocation": "pay attention",
+      "cefr": "A1",
+      "naturalContext": "Please pay close attention to the sound of the birds.",
+      "translation": {
+        "gl": "Prestar atención",
+        "es": "Prestar atención"
+      },
+      "tip": {
+        "gl": "Colocación fixa: \"pay attention to something\".",
+        "es": "Colocación fija: \"pay attention to something\"."
+      }
+    },
+    {
+      "id": "col-5",
+      "type": "verb_adverb",
+      "typeLabel": {
+        "gl": "Verbo + Adverbio",
+        "es": "Verbo + Adverbio"
+      },
+      "headword": "speak",
+      "collocate": "clearly",
+      "fullCollocation": "speak clearly",
+      "cefr": "A2",
+      "naturalContext": "Open your mouth gently and speak clearly so everyone understands.",
+      "translation": {
+        "gl": "Falar con claridade",
+        "es": "Hablar con claridad"
+      },
+      "tip": {
+        "gl": "O adverbio rematado en -ly describe a calidade da acción verbal.",
+        "es": "El adverbio terminado en -ly describe la calidad de la acción verbal."
+      }
+    },
+    {
+      "id": "col-6",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "bright",
+      "collocate": "sunlight",
+      "fullCollocation": "bright sunlight",
+      "cefr": "A2",
+      "naturalContext": "The warm room was filled with bright sunlight.",
+      "translation": {
+        "gl": "Luz solar brillante",
+        "es": "Luz solar brillante"
+      },
+      "tip": {
+        "gl": "\"Bright\" cualifica a intensidade luminosa de obxectos e ideas.",
+        "es": "\"Bright\" califica la intensidad luminosa de objetos e ideas."
+      }
+    },
+    {
+      "id": "col-7",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "in",
+      "collocate": "advance",
+      "fullCollocation": "in advance",
+      "cefr": "B1",
+      "naturalContext": "Thank you very much in advance for your kind help.",
+      "translation": {
+        "gl": "Con antelación / Por adiantado",
+        "es": "Con antelación / Por adelantado"
+      },
+      "tip": {
+        "gl": "Fórmula espontánea de cortesía no diálogo cotián.",
+        "es": "Fórmula espontánea de cortesía en el diálogo cotidiano."
+      }
+    },
+    {
+      "id": "col-8",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "keep",
+      "collocate": "promise",
+      "fullCollocation": "keep a promise",
+      "cefr": "A2",
+      "naturalContext": "True friends always try hard to keep a promise.",
+      "translation": {
+        "gl": "Cumprir unha promesa",
+        "es": "Cumplir una promesa"
+      },
+      "tip": {
+        "gl": "O oposto exacto é \"break a promise\".",
+        "es": "El opuesto exacto es \"break a promise\"."
+      }
+    },
+    {
+      "id": "col-9",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "heavy",
+      "collocate": "rain",
+      "fullCollocation": "heavy rain",
+      "cefr": "A2",
+      "naturalContext": "We put on our yellow boots because of the heavy rain.",
+      "translation": {
+        "gl": "Chuvia forte / Intensa",
+        "es": "Lluvia fuerte / Intensa"
+      },
+      "tip": {
+        "gl": "En inglés dise \"heavy rain\", nunca *\"strong rain\".",
+        "es": "En inglés se dice \"heavy rain\", nunca *\"strong rain\"."
+      }
+    },
+    {
+      "id": "col-10",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "catch",
+      "collocate": "cold",
+      "fullCollocation": "catch a cold",
+      "cefr": "A1",
+      "naturalContext": "Wear your coat so you do not catch a cold today.",
+      "translation": {
+        "gl": "Coller un arrefriado",
+        "es": "Pescar un resfriado"
+      },
+      "tip": {
+        "gl": "Emprégase con \"catch\" (catch a cold).",
+        "es": "Se usa con \"catch\" (catch a cold)."
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sc-morning-routine",
+      "title": {
+        "gl": "Rutina Matinal e Benvida",
+        "es": "Rutina Matinal y Bienvenida"
+      },
+      "cefr": "A1",
+      "setting": {
+        "gl": "No salón da casa ou na aula ao comezo do día",
+        "es": "En el salón de casa o en el aula al empezar el día"
+      },
+      "targetWords": [
+        "morning",
+        "sun",
+        "bright",
+        "ready",
+        "breakfast",
+        "smile",
+        "happy"
+      ],
+      "roles": {
+        "guide": "Lúa (Tutor)",
+        "learner": "You (Explorer)"
+      },
+      "exchanges": [
+        {
+          "guidePrompt": "Good morning! Look at the window: is the sun shining today?",
+          "guideAudioText": "Good morning! Look at the window: is the sun shining today?",
+          "suggestedResponses": [
+            "Yes, good morning! The sun is shining bright.",
+            "Good morning, Lúa! Yes, it is a sunny day.",
+            "Good morning! I can see the warm sunshine."
+          ],
+          "learnerRolePrompt": {
+            "gl": "Saúda a Lúa e di se fai sol hoxe.",
+            "es": "Saluda a Lúa y di si hace sol hoy."
+          },
+          "expectedKeyLemmas": [
+            "morning",
+            "sun",
+            "bright",
+            "yes"
+          ]
+        },
+        {
+          "guidePrompt": "Wonderful! Are you ready to eat a healthy breakfast with some fresh fruit?",
+          "guideAudioText": "Wonderful! Are you ready to eat a healthy breakfast with some fresh fruit?",
+          "suggestedResponses": [
+            "Yes, I am ready! I love sweet red apples.",
+            "Yes, I want breakfast and fresh orange juice.",
+            "I am hungry and ready to eat fruit."
+          ],
+          "learnerRolePrompt": {
+            "gl": "Confirma que estás listo e menciona a túa froita favorita.",
+            "es": "Confirma que estás listo y menciona tu fruta favorita."
+          },
+          "expectedKeyLemmas": [
+            "ready",
+            "breakfast",
+            "fruit",
+            "eat"
+          ]
+        },
+        {
+          "guidePrompt": "How are you feeling inside your heart right now?",
+          "guideAudioText": "How are you feeling inside your heart right now?",
+          "suggestedResponses": [
+            "I feel very happy and full of energy!",
+            "I feel calm and peaceful today.",
+            "I feel excited to play and learn."
+          ],
+          "learnerRolePrompt": {
+            "gl": "Expresa como te sentes hoxe (happy, calm, excited).",
+            "es": "Expresa cómo te sientes hoy (happy, calm, excited)."
+          },
+          "expectedKeyLemmas": [
+            "feel",
+            "happy",
+            "calm",
+            "good"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sc-market-food",
+      "title": {
+        "gl": "No Mercado das Froitas e Verduras",
+        "es": "En el Mercado de Frutas y Verduras"
+      },
+      "cefr": "A2",
+      "setting": {
+        "gl": "No posto de froitas ecolóxicas da aldea",
+        "es": "En el puesto de frutas ecológicas del mercado"
+      },
+      "targetWords": [
+        "market",
+        "apple",
+        "please",
+        "fresh",
+        "cost",
+        "delicious",
+        "thank"
+      ],
+      "roles": {
+        "guide": "Fruit Merchant",
+        "learner": "Customer"
+      },
+      "exchanges": [
+        {
+          "guidePrompt": "Hello! Welcome to our local farm market. What would you like today?",
+          "guideAudioText": "Hello! Welcome to our local farm market. What would you like today?",
+          "suggestedResponses": [
+            "Hello! I would like three green apples, please.",
+            "Good morning! May I have fresh sweet strawberries?",
+            "Hello! I need fresh bread and bananas, please."
+          ],
+          "learnerRolePrompt": {
+            "gl": "Pide educadamente unha froita usando \"please\" e \"would like\".",
+            "es": "Pide educadamente una fruta usando \"please\" y \"would like\"."
+          },
+          "expectedKeyLemmas": [
+            "like",
+            "apple",
+            "please",
+            "fresh"
+          ]
+        },
+        {
+          "guidePrompt": "Here they are, crisp and ripe! Would you also like to try our wild honey?",
+          "guideAudioText": "Here they are, crisp and ripe! Would you also like to try our wild honey?",
+          "suggestedResponses": [
+            "Yes, please! Wild honey sounds delicious.",
+            "No, thank you, just the fruit today.",
+            "Yes! Can I taste a little spoon of honey?"
+          ],
+          "learnerRolePrompt": {
+            "gl": "Responde se che gustaría probar o mel silvestre.",
+            "es": "Responde si te gustaría probar la miel silvestre."
+          },
+          "expectedKeyLemmas": [
+            "yes",
+            "honey",
+            "delicious",
+            "thank"
+          ]
+        },
+        {
+          "guidePrompt": "That will be two coins, please. Thank you for visiting us!",
+          "guideAudioText": "That will be two coins, please. Thank you for visiting us!",
+          "suggestedResponses": [
+            "Here you go! Thank you very much, have a nice day!",
+            "Thank you so much! Goodbye!",
+            "Here is the money, thank you!"
+          ],
+          "learnerRolePrompt": {
+            "gl": "Entrega as moedas e despídete con agradecemento.",
+            "es": "Entrega las monedas y despídete con agradecimiento."
+          },
+          "expectedKeyLemmas": [
+            "thank",
+            "here",
+            "day",
+            "goodbye"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sc-nature-animals",
+      "title": {
+        "gl": "Exploración da Natureza e Animais",
+        "es": "Exploración de la Naturaleza y Animales"
+      },
+      "cefr": "B1",
+      "setting": {
+        "gl": "Paseo polo bosque e beira do río",
+        "es": "Paseo por el bosque y orilla del río"
+      },
+      "targetWords": [
+        "forest",
+        "river",
+        "listen",
+        "bird",
+        "quiet",
+        "gentle",
+        "tree",
+        "discover"
+      ],
+      "roles": {
+        "guide": "Nature Ranger",
+        "learner": "Explorer"
+      },
+      "exchanges": [
+        {
+          "guidePrompt": "Listen quietly: do you hear that gentle song up in the tall oak tree?",
+          "guideAudioText": "Listen quietly: do you hear that gentle song up in the tall oak tree?",
+          "suggestedResponses": [
+            "Yes! It sounds like a little bird singing to the sky.",
+            "I hear it clearly! Is it an owl or a robin?",
+            "Yes, the forest sounds so peaceful and alive."
+          ],
+          "learnerRolePrompt": {
+            "gl": "Describe o que escoitas na árbore alta.",
+            "es": "Describe lo que escuchas en el árbol alto."
+          },
+          "expectedKeyLemmas": [
+            "listen",
+            "bird",
+            "song",
+            "tree",
+            "quiet"
+          ]
+        },
+        {
+          "guidePrompt": "Look down by the clear river stream. What kind of animal footprints can you see in the soft mud?",
+          "guideAudioText": "Look down by the clear river stream. What kind of animal footprints can you see in the soft mud?",
+          "suggestedResponses": [
+            "I see tiny tracks! Maybe a curious hedgehog or rabbit.",
+            "They look like deer footprints heading towards the water.",
+            "I see small round prints beside the river."
+          ],
+          "learnerRolePrompt": {
+            "gl": "Identifica ou imaxina que pegadas de animal hai na beira do río.",
+            "es": "Identifica o imagina qué huellas de animal hay en el barro."
+          },
+          "expectedKeyLemmas": [
+            "river",
+            "see",
+            "animal",
+            "footprint",
+            "water"
+          ]
+        }
+      ]
+    }
+  ]
+}

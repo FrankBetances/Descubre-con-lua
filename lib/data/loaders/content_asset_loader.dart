@@ -19,6 +19,9 @@ class ContentAssetLoader {
   ContentAssetLoader({AssetBundleStringLoader? stringLoader})
       : _stringLoader = stringLoader ?? ((path) => rootBundle.loadString(path));
 
+  /// Loads raw string content from an asset path using the configured string loader.
+  Future<String> loadRawString(String assetPath) => _stringLoader(assetPath);
+
   /// Default asset path prefix for thematic units.
   static const String unidadesAssetPrefix = 'assets/content/unidades/';
 

@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "c1_m1",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 1,
+    "nombreMes": {
+      "gl": "Setembro",
+      "es": "Septiembre"
+    },
+    "icono": "acollemento",
+    "centroInteres": {
+      "gl": "Acollemento, apego e primeiros saúdos",
+      "es": "Acogida, apego y primeros saludos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Seguridade emocional, recoñecemento fónico do nome e contacto visual cálido.",
+      "es": "Seguridad emocional, reconocimiento fónico del nombre y contacto visual cálido."
+    },
+    "actividadAula": {
+      "gl": "Apertura de brazos en círculo, saúdo suave coas mans abertas e canto de acollida a 72 bpm.",
+      "es": "Apertura de brazos en círculo, saludo suave con las manos abiertas y canto de acogida a 72 bpm."
+    },
+    "actividadHogar": {
+      "gl": "Ao despertar, xogo de palmas suaves no peito da crianza con \"Hello, baby! Clap, clap, smile!\".",
+      "es": "Al despertar, juego de palmas suaves en el pecho de la criatura con \"Hello, baby! Clap, clap, smile!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Despertar e almorzo no colo",
+      "es": "Despertar y desayuno en el regazo"
+    },
+    "minutosSugeridos": 3,
+    "ingles": {
+      "lexico": [
+        "Hello",
+        "Baby",
+        "Mama",
+        "Dada",
+        "Clap"
+      ],
+      "tpr": [
+        "Clap hands",
+        "Wave hello",
+        "Smile"
+      ],
+      "frase": "Hello, baby! Clap, clap, clap hands!",
+      "audio_id": "en_c1_m1_hello"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Fase de apego primario. O adulto é o espello emocional e fónico.",
+      "es": "Fase de apego primario. El adulto es el espejo emocional y fónico."
+    },
+    "ponteCasaEscola": {
+      "gl": "A calma que sente na casa antes de saír permite un acollamento sereno na escola.",
+      "es": "La calma que siente en casa antes de salir permite una acogida serena en la escuela."
+    }
+  },
+  {
+    "id": "c1_m2",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 2,
+    "nombreMes": {
+      "gl": "Outubro",
+      "es": "Octubre"
+    },
+    "icono": "corpo",
+    "centroInteres": {
+      "gl": "Esquema corporal primario e caricias",
+      "es": "Esquema corporal primario y caricias"
+    },
+    "objetivoPedagogico": {
+      "gl": "Identificación propioceptiva das faccións: cabeza, ollos, nariz e boca.",
+      "es": "Identificación propioceptiva de las facciones: cabeza, ojos, nariz y boca."
+    },
+    "actividadAula": {
+      "gl": "Tocar suavemente a coronilla cun pano de gasa e sinalar as meixelas ao ritmo da voz docente.",
+      "es": "Tocar suavemente la coronilla con una gasa de tela y señalar las mejillas al ritmo de la voz docente."
+    },
+    "actividadHogar": {
+      "gl": "Ao vestir ou mudar o cueiro, tocar a punta do nariz con \"Beep! Touch your nose, kiss your tummy!\".",
+      "es": "Al vestir o cambiar el pañal, tocar la punta de la nariz con \"Beep! Touch your nose, kiss your tummy!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Mudador de cueiros ou masaje relaxante",
+      "es": "Cambiador de pañales o masaje relajante"
+    },
+    "minutosSugeridos": 3,
+    "ingles": {
+      "lexico": [
+        "Head",
+        "Eye",
+        "Nose",
+        "Mouth",
+        "Touch"
+      ],
+      "tpr": [
+        "Touch head",
+        "Touch nose",
+        "Kiss tummy"
+      ],
+      "frase": "Touch your head, touch your little nose!",
+      "audio_id": "en_c1_m2_head"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Construción do mapa somatosensorial a través do tacto afectivo da persoa adulta.",
+      "es": "Construcción del mapa somatosensorial a través del tacto afectivo de la persona adulta."
+    },
+    "ponteCasaEscola": {
+      "gl": "O mesmo toque cariñoso no nariz na escola e na casa reforza a previsibilidade e a seguridade.",
+      "es": "El mismo toque cariñoso en la nariz en la escuela y en la casa refuerza la previsibilidad y la seguridad."
+    }
+  },
+  {
+    "id": "c1_m3",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 3,
+    "nombreMes": {
+      "gl": "Novembro",
+      "es": "Noviembre"
+    },
+    "icono": "magosto",
+    "centroInteres": {
+      "gl": "O Magosto tradicional e texturas naturais",
+      "es": "El Magosto tradicional y texturas naturales"
+    },
+    "objetivoPedagogico": {
+      "gl": "Sensibilización táctil con elementos outonais seguros: castañas pulidas e follas suaves.",
+      "es": "Sensibilización táctil con elementos otoñales seguros: castañas pulidas y hojas suaves."
+    },
+    "actividadAula": {
+      "gl": "Cesta dos tesouros con castañas grandes e follas secas para esmagar con mans abertas.",
+      "es": "Cesta de los tesoros con castañas grandes y hojas secas para apretar con manos abiertas."
+    },
+    "actividadHogar": {
+      "gl": "Ao preparar a comida, amosar unha castaña no puño: \"Open hand! Big chestnut, pick it up!\".",
+      "es": "Al preparar la comida, mostrar una castaña en el puño: \"Open hand! Big chestnut, pick it up!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Cociña ou momento da merenda",
+      "es": "Cocina o momento de la merienda"
+    },
+    "minutosSugeridos": 4,
+    "ingles": {
+      "lexico": [
+        "Chestnut",
+        "Leaf",
+        "Fall",
+        "Big",
+        "Pick up"
+      ],
+      "tpr": [
+        "Open hand",
+        "Pick up",
+        "Fall down"
+      ],
+      "frase": "Leaves fall down, pick up the chestnut!",
+      "audio_id": "en_c1_m3_leaf"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Presión palmar e coordinación óculo-manual con materiais naturais de alta densidade sensorial.",
+      "es": "Presión palmar y coordinación óculo-manual con materiales naturales de alta densidad sensorial."
+    },
+    "ponteCasaEscola": {
+      "gl": "A castaña vólvese o símbolo compartido do outono vigués entre o fogar e a escola.",
+      "es": "La castaña se convierte en el símbolo compartido del otoño vigués entre el hogar y la escuela."
+    }
+  },
+  {
+    "id": "c1_m4",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 4,
+    "nombreMes": {
+      "gl": "Decembro",
+      "es": "Diciembre"
+    },
+    "icono": "abrigo",
+    "centroInteres": {
+      "gl": "O frío do inverno e o agarimo do abrigo",
+      "es": "El frío del invierno y el calor del abrigo"
+    },
+    "objetivoPedagogico": {
+      "gl": "Anticipación das rutinas de vestido: calzado, gorro e agarimo corporal.",
+      "es": "Anticipación de las rutinas de vestido: calzado, gorro y calor corporal."
+    },
+    "actividadAula": {
+      "gl": "Xogo con mantas térmicas suaves e cóxegas nos pés descalzos imitando o frío e a calor.",
+      "es": "Juego con mantas térmicas suaves y cosquillas en los pies descalzos imitando el frío y el calor."
+    },
+    "actividadHogar": {
+      "gl": "Ao calzar os zapatos para saír: \"One shoe, two shoes! Warm little feet, push, push!\".",
+      "es": "Al calzar los zapatos para salir: \"One shoe, two shoes! Warm little feet, push, push!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Preparación para saír á rúa",
+      "es": "Preparación para salir a la calle"
+    },
+    "minutosSugeridos": 3,
+    "ingles": {
+      "lexico": [
+        "Shoe",
+        "Sock",
+        "Coat",
+        "Cold",
+        "Warm"
+      ],
+      "tpr": [
+        "Push foot",
+        "Put on",
+        "Hug warm"
+      ],
+      "frase": "One shoe, two shoes! Warm feet, push!",
+      "audio_id": "en_c1_m4_shoe"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Asimilación de secuencias temporais na rutina diaria sen ansiedade nin présas.",
+      "es": "Asimilación de secuencias temporales en la rutina diaria sin ansiedad ni prisas."
+    },
+    "ponteCasaEscola": {
+      "gl": "A rutina do calzado convértese no primeiro fito de autonomía compartida entre casa e escola.",
+      "es": "La rutina del calzado se convierte en el primer hito de autonomía compartida entre casa y escuela."
+    }
+  },
+  {
+    "id": "c1_m5",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 5,
+    "nombreMes": {
+      "gl": "Xaneiro",
+      "es": "Enero"
+    },
+    "icono": "animais",
+    "centroInteres": {
+      "gl": "Animais da contorna e sons tranquilos",
+      "es": "Animales del entorno y sonidos tranquilos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Estimulación da huella fónica e imitación motriz de animais familiares.",
+      "es": "Estimulación de la huella fónica e imitación motriz de animales familiares."
+    },
+    "actividadAula": {
+      "gl": "Imitación de pasos suaves de gato sobre colchóns acolchados con movemento rítmico.",
+      "es": "Imitación de pasos suaves de gato sobre colchonetas acolchadas con movimiento rítmico."
+    },
+    "actividadHogar": {
+      "gl": "Na alfombra do salón con \"Sleepy cat, meow! Gentle petting, soft, soft cat!\".",
+      "es": "En la alfombra del salón con \"Sleepy cat, meow! Gentle petting, soft, soft cat!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xogo de alfombra relaxado",
+      "es": "Juego de alfombra relajado"
+    },
+    "minutosSugeridos": 4,
+    "ingles": {
+      "lexico": [
+        "Cat",
+        "Dog",
+        "Bird",
+        "Sleepy",
+        "Soft"
+      ],
+      "tpr": [
+        "Walk soft",
+        "Pet cat",
+        "Sleep"
+      ],
+      "frase": "Sleepy cat, meow! Pet the soft cat!",
+      "audio_id": "en_c1_m5_cat"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Xogo simbólico inicial e modulación tónica a través do contacto suave.",
+      "es": "Juego simbólico inicial y modulación tónica a través del contacto suave."
+    },
+    "ponteCasaEscola": {
+      "gl": "O respecto polos seres vivos iníciase coa suavidade dos xestos compartidos.",
+      "es": "El respeto por los seres vivos se inicia con la suavidad de los gestos compartidos."
+    }
+  },
+  {
+    "id": "c1_m6",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 6,
+    "nombreMes": {
+      "gl": "Febreiro",
+      "es": "Febrero"
+    },
+    "icono": "entroido",
+    "centroInteres": {
+      "gl": "O Entroido dos bebés: risas e balanceo",
+      "es": "El Entroido de los bebés: risas y balanceo"
+    },
+    "objetivoPedagogico": {
+      "gl": "Descarga tónica a través do riso, o balanceo vestibular e a sorpresa.",
+      "es": "Descarga tónica a través de la risa, el balanceo vestibular y la sorpresa."
+    },
+    "actividadAula": {
+      "gl": "Xogo de ocultamento e aparición (Peek-a-boo!) con teas de cores alegres e pandeireta.",
+      "es": "Juego de ocultamiento y aparición (Peek-a-boo!) con telas de colores alegres y pandereta."
+    },
+    "actividadHogar": {
+      "gl": "Detrás dun pano ou coxín: \"Where is baby? Peek-a-boo! I see you, smile!\" con cóxegas.",
+      "es": "Detrás de un paño o cojín: \"Where is baby? Peek-a-boo! I see you, smile!\" con cosquillas."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Antes do baño ou xogo en familia",
+      "es": "Antes del baño o juego en familia"
+    },
+    "minutosSugeridos": 4,
+    "ingles": {
+      "lexico": [
+        "Peek-a-boo",
+        "See",
+        "Smile",
+        "Shake",
+        "Funny"
+      ],
+      "tpr": [
+        "Hide face",
+        "Peek-a-boo",
+        "Shake shake"
+      ],
+      "frase": "Where is baby? Peek-a-boo! I see you!",
+      "audio_id": "en_c1_m6_peekaboo"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Permanencia do obxecto e xúbilo afectivo na interacción cara a cara.",
+      "es": "Permanencia del objeto y júbilo afectivo en la interacción cara a cara."
+    },
+    "ponteCasaEscola": {
+      "gl": "A alegría do Entroido sen sobreestimulación nin ruído excesivo.",
+      "es": "La alegría del Entroido sin sobreestimulación ni ruido excesivo."
+    }
+  },
+  {
+    "id": "c1_m7",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 7,
+    "nombreMes": {
+      "gl": "Marzo",
+      "es": "Marzo"
+    },
+    "icono": "alimentos",
+    "centroInteres": {
+      "gl": "Cores primarias e alimentos doces",
+      "es": "Colores primarios y alimentos dulces"
+    },
+    "objetivoPedagogico": {
+      "gl": "Discriminación visual inicial de cores e exploración gustativa sensorial.",
+      "es": "Discriminación visual inicial de colores y exploración gustativa sensorial."
+    },
+    "actividadAula": {
+      "gl": "Pelotas brandas de cor vermella e amarela para facer rodar polo chan acolchado.",
+      "es": "Pelotas blandas de color rojo y amarillo para hacer rodar por el suelo acolchado."
+    },
+    "actividadHogar": {
+      "gl": "Na merenda cun anaco de mazá ou plátano: \"Red apple, yummy! Eat, eat, good food!\".",
+      "es": "En la merienda con un trozo de manzana o plátano: \"Red apple, yummy! Eat, eat, good food!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Hora da merenda ou comida compartida",
+      "es": "Hora de la merienda o comida compartida"
+    },
+    "minutosSugeridos": 4,
+    "ingles": {
+      "lexico": [
+        "Red",
+        "Yellow",
+        "Apple",
+        "Yummy",
+        "Eat"
+      ],
+      "tpr": [
+        "Roll ball",
+        "Eat apple",
+        "Yummy tummy"
+      ],
+      "frase": "Red apple, sweet and yummy! Eat, eat!",
+      "audio_id": "en_c1_m7_apple"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Relación positiva coa alimentación baseada na autonomía e o goce multisensorial.",
+      "es": "Relación positiva con la alimentación basada en la autonomía y el disfrute multisensorial."
+    },
+    "ponteCasaEscola": {
+      "gl": "Alimentación respectuosa sen pantallas nin distraccións mecánicas.",
+      "es": "Alimentación respetuosa sin pantallas ni distracciones mecánicas."
+    }
+  },
+  {
+    "id": "c1_m8",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 8,
+    "nombreMes": {
+      "gl": "Abril",
+      "es": "Abril"
+    },
+    "icono": "primavera",
+    "centroInteres": {
+      "gl": "O espertar da primavera e o orballo",
+      "es": "El despertar de la primavera y el orballo"
+    },
+    "objetivoPedagogico": {
+      "gl": "Sensibilización ante o crecemento da natureza e o tacto suave da choiva miudiña.",
+      "es": "Sensibilización ante el crecimiento de la naturaleza y el tacto suave de la lluvia fina."
+    },
+    "actividadAula": {
+      "gl": "Deitarse como sementes no chan e medrar a modo erguendo os brazos ao escoitar \"Grow up!\".",
+      "es": "Tumbarse como semillas en el suelo y crecer despacio levantando los brazos al escuchar \"Grow up!\"."
+    },
+    "actividadHogar": {
+      "gl": "Xunto á fiestra tocando o cristal cunha pinga de auga: \"Rain, rain, tap, tap, little drops!\".",
+      "es": "Junto a la ventana tocando el cristal con una gota de agua: \"Rain, rain, tap, tap, little drops!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xunto á fiestra da casa un día de choiva",
+      "es": "Junto a la ventana de casa un día de lluvia"
+    },
+    "minutosSugeridos": 3,
+    "ingles": {
+      "lexico": [
+        "Rain",
+        "Sun",
+        "Flower",
+        "Grow",
+        "Tap"
+      ],
+      "tpr": [
+        "Be a seed",
+        "Grow up",
+        "Tap fingers"
+      ],
+      "frase": "Rain, rain, tap, tap! Little flower, grow!",
+      "audio_id": "en_c1_m8_flower"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Estiramento axial e desenvolvemento da conciencia do propio tamaño corporal.",
+      "es": "Estiramiento axial y desarrollo de la conciencia del propio tamaño corporal."
+    },
+    "ponteCasaEscola": {
+      "gl": "Conectar co clima atlántico galego como fonte de descubrimento sensorial.",
+      "es": "Conectar con el clima atlántico gallego como fuente de descubrimiento sensorial."
+    }
+  },
+  {
+    "id": "c1_m9",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 9,
+    "nombreMes": {
+      "gl": "Maio",
+      "es": "Mayo"
+    },
+    "icono": "auga",
+    "centroInteres": {
+      "gl": "Xogos de auga e hixiene afectiva",
+      "es": "Juegos de agua e higiene afectiva"
+    },
+    "objetivoPedagogico": {
+      "gl": "Prazer polo contacto coa auga morna e o lavado autónomo de mans.",
+      "es": "Placer por el contacto con el agua tibia y el lavado autónomo de manos."
+    },
+    "actividadAula": {
+      "gl": "Cuncas de auga morna e esponxas suaves para fregar as meixelas e facer \"Splash!\".",
+      "es": "Cuencos de agua tibia y esponjas suaves para frotar las mejillas y hacer \"¡Splash!\"."
+    },
+    "actividadHogar": {
+      "gl": "No baño diario: \"Warm water! Rub the soap, splash, splash! Clean hands!\".",
+      "es": "En el baño diario: \"Warm water! Rub the soap, splash, splash! Clean hands!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Hora do baño ou lavado de mans",
+      "es": "Hora del baño o lavado de manos"
+    },
+    "minutosSugeridos": 4,
+    "ingles": {
+      "lexico": [
+        "Water",
+        "Soap",
+        "Clean",
+        "Splash",
+        "Rub"
+      ],
+      "tpr": [
+        "Splash water",
+        "Rub hands",
+        "Clean face"
+      ],
+      "frase": "Warm water! Splash, splash, clean hands!",
+      "audio_id": "en_c1_m9_splash"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Relaxación muscular parasimpática e consolidación dos hábitos de hixiene corporal.",
+      "es": "Relajación muscular parasimpática y consolidación de los hábitos de higiene corporal."
+    },
+    "ponteCasaEscola": {
+      "gl": "O baño na casa convértese nun santuario de diálogo fónico e calma afectiva.",
+      "es": "El baño en casa se convierte en un santuario de diálogo fónico y calma afectiva."
+    }
+  },
+  {
+    "id": "c1_m10",
+    "cursoId": "curso_0_2",
+    "cursoNumero": 1,
+    "mesNumero": 10,
+    "nombreMes": {
+      "gl": "Xuño",
+      "es": "Junio"
+    },
+    "icono": "mar",
+    "centroInteres": {
+      "gl": "O mar de Samil e peches afectivos",
+      "es": "El mar de Samil y cierres afectivos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Celebración dos logros do primeiro curso e contacto coa brisa mariña da ría.",
+      "es": "Celebración de los logros del primer curso y contacto con la brisa marina de la ría."
+    },
+    "actividadAula": {
+      "gl": "Bandeixa con cunchas mariñas redondeadas e movemento ondulatorio de brazos en círculo.",
+      "es": "Bandeja con conchas marinas redondeadas y movimiento ondulatorio de brazos en círculo."
+    },
+    "actividadHogar": {
+      "gl": "Paseo por Samil ou no xardín: \"Look at the blue sea! Waves go up and down, bye-bye!\".",
+      "es": "Paseo por Samil o en el jardín: \"Look at the blue sea! Waves go up and down, bye-bye!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Paseo á beiramar ou xogo con auga",
+      "es": "Paseo a la orilla del mar o juego con agua"
+    },
+    "minutosSugeridos": 4,
+    "ingles": {
+      "lexico": [
+        "Sea",
+        "Blue",
+        "Wave",
+        "Sun",
+        "Bye-bye"
+      ],
+      "tpr": [
+        "Wave hands",
+        "Up and down",
+        "Swim fish"
+      ],
+      "frase": "Blue sea! Waves go up, waves go down!",
+      "audio_id": "en_c1_m10_sea"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Integración afectiva do curso e balance vestibular con movementos ondulatorios.",
+      "es": "Integración afectiva del curso y balance vestibular con movimientos ondulatorios."
+    },
+    "ponteCasaEscola": {
+      "gl": "Despedida serena e agradecemento polo crecemento compartido neste primeiro ano.",
+      "es": "Despedida serena y agradecimiento por el crecimiento compartido en este primer año."
+    }
+  },
+  {
+    "id": "c2_m1",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 1,
+    "nombreMes": {
+      "gl": "Setembro",
+      "es": "Septiembre"
+    },
+    "icono": "reencontro",
+    "centroInteres": {
+      "gl": "Reencontro, orde e xogos compartidos",
+      "es": "Reencuentro, orden y juegos compartidos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Consolidación de rutinas de aula e primeiras construcións SVO (suxeito-verbo-obxecto).",
+      "es": "Consolidación de rutinas de aula y primeras construcciones SVO (sujeto-verbo-objeto)."
+    },
+    "actividadAula": {
+      "gl": "Recoller bloques de madeira e gardalos na caixa con \"Put the block inside the box!\".",
+      "es": "Recoger bloques de madera y guardarlos en la caja con \"Put the block inside the box!\"."
+    },
+    "actividadHogar": {
+      "gl": "Na recollida dos xoguetes da tarde: \"Pick up the car! Put it inside, good job!\".",
+      "es": "En la recogida de los juguetes de la tarde: \"Pick up the car! Put it inside, good job!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Recollida de xoguetes antes da cea",
+      "es": "Recogida de juguetes antes de la cena"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Block",
+        "Box",
+        "Inside",
+        "Pick up",
+        "Help"
+      ],
+      "tpr": [
+        "Pick up block",
+        "Put inside",
+        "Clap fast"
+      ],
+      "frase": "Pick up the block and put it inside the box!",
+      "audio_id": "en_c2_m1_box"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Orientación topolóxica tridimensional: dentro/fóra con mandatos TPR directos.",
+      "es": "Orientación topológica tridimensional: dentro/fuera con mandatos TPR directos."
+    },
+    "ponteCasaEscola": {
+      "gl": "A orde física exterior aporta calma interior á mente do neno de dous anos.",
+      "es": "El orden físico exterior aporta calma interior a la mente del niño de dos años."
+    }
+  },
+  {
+    "id": "c2_m2",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 2,
+    "nombreMes": {
+      "gl": "Outubro",
+      "es": "Octubre"
+    },
+    "icono": "movemento",
+    "centroInteres": {
+      "gl": "Corpo en acción: xeonllos e saltos",
+      "es": "Cuerpo en acción: rodillas y saltos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Discriminación segmentaria: xeonllos, ombreiros e nocellos con aceleración e freado.",
+      "es": "Discriminación segmentaria: rodillas, hombros y tobillos con aceleración y frenado."
+    },
+    "actividadAula": {
+      "gl": "Circuíto con saltos sobre aros: \"Touch your knees, jump up high, stop!\".",
+      "es": "Circuito con saltos sobre aros: \"Touch your knees, jump up high, stop!\"."
+    },
+    "actividadHogar": {
+      "gl": "Subindo as escaleiras ou no corredor: \"One, two, jump! Touch your knees, brave boy/girl!\".",
+      "es": "Subiendo las escaleras o en el pasillo: \"One, two, jump! Touch your knees, brave boy/girl!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Paseo activo pola casa ou parque",
+      "es": "Paseo activo por la casa o parque"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Knees",
+        "Shoulders",
+        "Jump",
+        "High",
+        "Stop"
+      ],
+      "tpr": [
+        "Touch knees",
+        "Jump high",
+        "Turn around"
+      ],
+      "frase": "Touch your knees and jump up high! Now stop!",
+      "audio_id": "en_c2_m2_knees"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Control inhibitorio inicial mediante a alternancia entre movemento explosivo e parada.",
+      "es": "Control inhibitorio inicial mediante la alternancia entre movimiento explosivo y parada."
+    },
+    "ponteCasaEscola": {
+      "gl": "Gastar enerxía motriz no xogo físico reduce os desbordes emocionais na casa.",
+      "es": "Gastar energía motriz en el juego físico reduce los desbordes emocionales en casa."
+    }
+  },
+  {
+    "id": "c2_m3",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 3,
+    "nombreMes": {
+      "gl": "Novembro",
+      "es": "Noviembre"
+    },
+    "icono": "castrelos",
+    "centroInteres": {
+      "gl": "O Magosto no parque de Castrelos",
+      "es": "El Magosto en el parque de Castrelos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Experimentación cinestésica co vento e o son das follas secas ao pisar.",
+      "es": "Experimentación cinestésica con el viento y el sonido de las hojas secas al pisar."
+    },
+    "actividadAula": {
+      "gl": "Soplar con forza coma o vento e pisar papel crujiente: \"Wind blows! Crunch the leaves!\".",
+      "es": "Soplar con fuerza como el viento y pisar papel crujiente: \"Wind blows! Crunch the leaves!\"."
+    },
+    "actividadHogar": {
+      "gl": "Paseando por Castrelos: \"Stomp, stomp on the dry leaves! Hear the crunch!\".",
+      "es": "Paseando por Castrelos: \"Stomp, stomp on the dry leaves! Hear the crunch!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Paseo ao aire libre no parque",
+      "es": "Paseo al aire libre en el parque"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Wind",
+        "Leaf",
+        "Crunch",
+        "Blow",
+        "Stomp"
+      ],
+      "tpr": [
+        "Blow wind",
+        "Stomp feet",
+        "Spin fast"
+      ],
+      "frase": "The wind blows strong! Stomp, stomp on the leaves!",
+      "audio_id": "en_c2_m3_crunch"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Retroalimentación acústica e propioceptiva na marcha vigorosa.",
+      "es": "Retroalimentación acústica y propioceptiva en la marcha vigorosa."
+    },
+    "ponteCasaEscola": {
+      "gl": "A natureza de Vigo é a nosa mellor aula verde para aprender xogando.",
+      "es": "La naturaleza de Vigo es nuestra mejor aula verde para aprender jugando."
+    }
+  },
+  {
+    "id": "c2_m4",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 4,
+    "nombreMes": {
+      "gl": "Decembro",
+      "es": "Diciembre"
+    },
+    "icono": "choiva",
+    "centroInteres": {
+      "gl": "A choiva, as botas e os charcos",
+      "es": "La lluvia, las botas y los charcos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Destreza motriz no calzado autónomo e desprazamento con pisada pesada controlada.",
+      "es": "Destreza motriz en el calzado autónomo y desplazamiento con pisada pesada controlada."
+    },
+    "actividadAula": {
+      "gl": "Circuíto con charcos de cartolina azul para saltar dentro e fóra: \"Jump in! Jump out!\".",
+      "es": "Circuito con charcos de cartulina azul para saltar dentro y fuera: \"Jump in! Jump out!\"."
+    },
+    "actividadHogar": {
+      "gl": "Cun día de choiva ao pór as botas de auga: \"Put on your boots! Stomp in the puddle, splash!\".",
+      "es": "Con un día de lluvia al poner las botas de agua: \"Put on your boots! Stomp in the puddle, splash!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Saída á rúa baixo a choiva miudiña",
+      "es": "Salida a la calle bajo la lluvia fina"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Boots",
+        "Puddle",
+        "In",
+        "Out",
+        "Splash"
+      ],
+      "tpr": [
+        "Put on boots",
+        "Jump in",
+        "Jump out"
+      ],
+      "frase": "Put on your boots! Jump in the puddle, jump out!",
+      "audio_id": "en_c2_m4_puddle"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Diferenciación espacial dentro/fóra con resposta motriz bilateral.",
+      "es": "Diferenciación espacial dentro/fuera con respuesta motriz bilateral."
+    },
+    "ponteCasaEscola": {
+      "gl": "A choiva en Galicia non é un atranco, senón unha oportunidade para o xogo motor.",
+      "es": "La lluvia en Galicia no es un obstáculo, sino una oportunidad para el juego motor."
+    }
+  },
+  {
+    "id": "c2_m5",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 5,
+    "nombreMes": {
+      "gl": "Xaneiro",
+      "es": "Enero"
+    },
+    "icono": "transportes",
+    "centroInteres": {
+      "gl": "Transportes e desprazamentos pola cidade",
+      "es": "Transportes y desplazamientos por la ciudad"
+    },
+    "objetivoPedagogico": {
+      "gl": "Modulación da velocidade motriz: rápido, lento e detención total.",
+      "es": "Modulación de la velocidad motriz: rápido, lento y detención total."
+    },
+    "actividadAula": {
+      "gl": "O tren da clase en fila guiada: \"Chugga-chugga, train goes fast, train goes slow, STOP!\".",
+      "es": "El tren de la clase en fila guiada: \"Chugga-chugga, train goes fast, train goes slow, ¡STOP!\"."
+    },
+    "actividadHogar": {
+      "gl": "Empurrando un carriño pola alfombra: \"The red car goes fast, fast, fast... and stops!\".",
+      "es": "Empujando un carrito por la alfombra: \"The red car goes fast, fast, fast... and stops!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xogo de alfombra con vehículos",
+      "es": "Juego de alfombra con vehículos"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Car",
+        "Bus",
+        "Train",
+        "Fast",
+        "Slow"
+      ],
+      "tpr": [
+        "Drive car",
+        "Go fast",
+        "Go slow"
+      ],
+      "frase": "The train goes fast, now goes slow... and STOP!",
+      "audio_id": "en_c2_m5_train"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Regulación do ton muscular a través da aceleración e deceleración deliberada.",
+      "es": "Regulación del tono muscular a través de la aceleración y deceleración deliberada."
+    },
+    "ponteCasaEscola": {
+      "gl": "Aprender a parar a tempo é a base neurobiolóxica do respecto aos límites.",
+      "es": "Aprender a parar a tiempo es la base neurobiológica del respeto a los límites."
+    }
+  },
+  {
+    "id": "c2_m6",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 6,
+    "nombreMes": {
+      "gl": "Febreiro",
+      "es": "Febrero"
+    },
+    "icono": "zoomorfo",
+    "centroInteres": {
+      "gl": "O Entroido zoomorfo e animais salvaxes",
+      "es": "El Entroido zoomorfo y animales salvajes"
+    },
+    "objetivoPedagogico": {
+      "gl": "Xogo de roles con desprazamento cuadrúpede, saltos e emisión onomatopeica.",
+      "es": "Juego de roles con desplazamiento cuadrúpedo, saltos y emisión onomatopeica."
+    },
+    "actividadAula": {
+      "gl": "Circuíto zoomorfo: saltar coma ras (\"Hop, frog!\"), ruxir coma leóns e voar con brazos estendidos.",
+      "es": "Circuito zoomorfo: saltar como ranas (\"Hop, frog!\"), rugir como leones y volar con brazos extendidos."
+    },
+    "actividadHogar": {
+      "gl": "Na alfombra antes do baño: \"Can you hop like a frog? Ribbit! Now roar like a lion!\".",
+      "es": "En la alfombra antes del baño: \"Can you hop like a frog? Ribbit! Now roar like a lion!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Descarga de enerxía antes do baño",
+      "es": "Descarga de energía antes del baño"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Frog",
+        "Lion",
+        "Hop",
+        "Roar",
+        "Fly"
+      ],
+      "tpr": [
+        "Hop like frog",
+        "Roar like lion",
+        "Fly like bird"
+      ],
+      "frase": "Hop like a green frog! Now roar like a big lion!",
+      "audio_id": "en_c2_m6_frog"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Locomoción zoomorfa cuadrúpede para fortalecer a cintura escapular e a coordinación cruzada.",
+      "es": "Locomoción zoomorfa cuadrúpeda para fortalecer la cintura escapular y la coordinación cruzada."
+    },
+    "ponteCasaEscola": {
+      "gl": "O xogo corporal imaxinativo substitúe con creces calquera vídeo de debuxos animados.",
+      "es": "El juego corporal imaginativo sustituye con creces cualquier vídeo de dibujos animados."
+    }
+  },
+  {
+    "id": "c2_m7",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 7,
+    "nombreMes": {
+      "gl": "Marzo",
+      "es": "Marzo"
+    },
+    "icono": "formas",
+    "centroInteres": {
+      "gl": "Formas no espazo e froitas da primavera",
+      "es": "Formas en el espacio y frutas de la primavera"
+    },
+    "objetivoPedagogico": {
+      "gl": "Identificación de formas xeométricas básicas (círculo, cadrado) e cores secundarias.",
+      "es": "Identificación de formas geométricas básicas (círculo, cuadrado) y colores secundarios."
+    },
+    "actividadAula": {
+      "gl": "Rodar un aro grande e perseguilo: \"Roll the circle! Touch the square box!\".",
+      "es": "Rodar un aro grande y perseguirlo: \"Roll the circle! Touch the square box!\"."
+    },
+    "actividadHogar": {
+      "gl": "Na mesa da merenda cortando unha laranxa en rodajas: \"Look, round circle! Sweet orange, take one!\".",
+      "es": "En la mesa de la merienda cortando una naranja en rodajas: \"Look, round circle! Sweet orange, take one!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Momento da froita na merenda",
+      "es": "Momento de la fruta en la merienda"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Circle",
+        "Square",
+        "Orange",
+        "Roll",
+        "Sweet"
+      ],
+      "tpr": [
+        "Roll circle",
+        "Make a square",
+        "Eat orange"
+      ],
+      "frase": "Roll the round circle! Eat the sweet orange!",
+      "audio_id": "en_c2_m7_circle"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Comprensión visuoespacial de formas primarias en interacción con obxectos reais.",
+      "es": "Comprensión visuoespacial de formas primarias en interacción con objetos reales."
+    },
+    "ponteCasaEscola": {
+      "gl": "A xeometría comeza na cociña e nos xoguetes do día a día, sen fichas de papel.",
+      "es": "La geometría comienza en la cocina y en los juguetes del día a día, sin fichas de papel."
+    }
+  },
+  {
+    "id": "c2_m8",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 8,
+    "nombreMes": {
+      "gl": "Abril",
+      "es": "Abril"
+    },
+    "icono": "natureza",
+    "centroInteres": {
+      "gl": "O espertar da herba e os paxariños",
+      "es": "El despertar de la hierba y los pajaritos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Desprazamento de puntillas, equilibrio e discriminación auditiva de cantos.",
+      "es": "Desplazamiento de puntillas, equilibrio y discriminación auditiva de cantos."
+    },
+    "actividadAula": {
+      "gl": "Camiñar de puntillas coma paxariños sen facer ruído: \"Walk quietly on the soft green grass!\".",
+      "es": "Caminar de puntillas como pajaritos sin hacer ruido: \"Walk quietly on the soft green grass!\"."
+    },
+    "actividadHogar": {
+      "gl": "No parque ou terraza mirando os paxaros: \"Look at the bird flying high! Sing, tweet tweet!\".",
+      "es": "En el parque o terraza mirando los pájaros: \"Look at the bird flying high! Sing, tweet tweet!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Observación dende a fiestra ou parque",
+      "es": "Observación desde la ventana o parque"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Bird",
+        "Grass",
+        "Fly",
+        "High",
+        "Quiet"
+      ],
+      "tpr": [
+        "Walk on toes",
+        "Fly arms",
+        "Whisper quiet"
+      ],
+      "frase": "Walk on your toes like a little bird! Fly high!",
+      "audio_id": "en_c2_m8_bird"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Desenvolvemento do arco plantar e control fino da marcha silenciosa.",
+      "es": "Desarrollo del arco plantar y control fino de la marcha silenciosa."
+    },
+    "ponteCasaEscola": {
+      "gl": "O silencio e o murmurio axudan a afinar a escoita activa da L3.",
+      "es": "El silencio y el susurro ayudan a afinar la escucha activa de la L3."
+    }
+  },
+  {
+    "id": "c2_m9",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 9,
+    "nombreMes": {
+      "gl": "Maio",
+      "es": "Mayo"
+    },
+    "icono": "autonomia",
+    "centroInteres": {
+      "gl": "Autonomía no lavado e xogos con auga",
+      "es": "Autonomía en el lavado y juegos con agua"
+    },
+    "objetivoPedagogico": {
+      "gl": "Secuencia completa de hixiene: abrir billa, ensaboar, aclarar e secar con toalla.",
+      "es": "Secuencia completa de higiene: abrir grifo, enjabonar, aclarar y secar con toalla."
+    },
+    "actividadAula": {
+      "gl": "Rincón de hixiene: fregar mans con escuma suave cantando e secando os dedos un a un.",
+      "es": "Rincón de higiene: frotar manos con espuma suave cantando y secando los dedos uno a uno."
+    },
+    "actividadHogar": {
+      "gl": "Antes de xantar: \"Soap on your hands! Rub, rub, rub, wash away the bubbles, dry with towel!\".",
+      "es": "Antes de comer: \"Soap on your hands! Rub, rub, rub, wash away the bubbles, dry with towel!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Lavado de mans antes das comidas",
+      "es": "Lavado de manos antes de las comidas"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Soap",
+        "Bubbles",
+        "Wash",
+        "Dry",
+        "Towel"
+      ],
+      "tpr": [
+        "Rub hands",
+        "Blow bubbles",
+        "Dry towel"
+      ],
+      "frase": "Rub the soap, wash the bubbles! Dry with towel!",
+      "audio_id": "en_c2_m9_bubbles"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Encadeamento práxico de catro pasos autónomos sen axuda directa do adulto.",
+      "es": "Encadenamiento práxico de cuatro pasos autónomos sin ayuda directa del adulto."
+    },
+    "ponteCasaEscola": {
+      "gl": "Cando a rutina é a mesma na casa e na escola, a crianza séntese competente e segura.",
+      "es": "Cuando la rutina es la misma en casa y en la escuela, la criatura se siente competente y segura."
+    }
+  },
+  {
+    "id": "c2_m10",
+    "cursoId": "curso_2_3",
+    "cursoNumero": 2,
+    "mesNumero": 10,
+    "nombreMes": {
+      "gl": "Xuño",
+      "es": "Junio"
+    },
+    "icono": "barcos",
+    "centroInteres": {
+      "gl": "Barcos na ría de Vigo e area de Samil",
+      "es": "Barcos en la ría de Vigo y arena de Samil"
+    },
+    "objetivoPedagogico": {
+      "gl": "Coordinación visomotora en xogos de area e auga, remando en parellas.",
+      "es": "Coordinación visomotora en juegos de arena y agua, remando en parejas."
+    },
+    "actividadAula": {
+      "gl": "Remar sentados cara a cara balanceándose adiante e atrás: \"Row, row your boat gently down the stream!\".",
+      "es": "Remar sentados frente a frente balanceándose adelante y atrás: \"Row, row your boat gently down the stream!\"."
+    },
+    "actividadHogar": {
+      "gl": "Na praia ou na bañeira: \"Row your little boat in the sea! Waves go splash, splash!\".",
+      "es": "En la playa o en la bañera: \"Row your little boat in the sea! Waves go splash, splash!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Paseo ou visita á praia de Samil",
+      "es": "Paseo o visita a la playa de Samil"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Boat",
+        "Row",
+        "Stream",
+        "Sand",
+        "Splash"
+      ],
+      "tpr": [
+        "Row boat",
+        "Push sand",
+        "Wave bye"
+      ],
+      "frase": "Row, row your little boat! Splish, splash in the sea!",
+      "audio_id": "en_c2_m10_row"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Sincronización social en díada (remar xuntos) e modulación rítmica compartida.",
+      "es": "Sincronización social en díada (remar juntos) y modulación rítmica compartida."
+    },
+    "ponteCasaEscola": {
+      "gl": "Pechamos o 1.º ciclo de educación infantil con nenos autónomos, falantes e felices.",
+      "es": "Cerramos el 1.er ciclo de educación infantil con niños autónomos, hablantes y felices."
+    }
+  },
+  {
+    "id": "c3_m1",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 1,
+    "nombreMes": {
+      "gl": "Setembro",
+      "es": "Septiembre"
+    },
+    "icono": "escola_maior",
+    "centroInteres": {
+      "gl": "A nova escola de maiores e a asemblea con pulso",
+      "es": "La nueva escuela de mayores y la asamblea con pulso"
+    },
+    "objetivoPedagogico": {
+      "gl": "Adaptación ao segundo ciclo con metrónomo visual a capela e mandatos de dous pasos.",
+      "es": "Adaptación al segundo ciclo con metrónomo visual a capela y mandatos de dos pasos."
+    },
+    "actividadAula": {
+      "gl": "Asemblea con cinta elástica: \"Sit in the circle AND raise your hands high to the sky!\".",
+      "es": "Asamblea con cinta elástica: \"Sit in the circle AND raise your hands high to the sky!\"."
+    },
+    "actividadHogar": {
+      "gl": "Ao chegar a casa pola tarde: \"Take off your backpack AND put your shoes in the box!\".",
+      "es": "Al llegar a casa por la tarde: \"Take off your backpack AND put your shoes in the box!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Chegada da escola á casa",
+      "es": "Llegada de la escuela a casa"
+    },
+    "minutosSugeridos": 6,
+    "ingles": {
+      "lexico": [
+        "Circle",
+        "Backpack",
+        "Raise",
+        "Sky",
+        "Teacher"
+      ],
+      "tpr": [
+        "Sit in circle",
+        "Raise hands",
+        "Take off backpack"
+      ],
+      "frase": "Sit in the circle AND raise your hands high!",
+      "audio_id": "en_c3_m1_circle"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Primeiras ordes encadeadas con conector \"AND\" para estirar a memoria de traballo.",
+      "es": "Primeras órdenes encadenadas con conector \"AND\" para estirar la memoria de trabajo."
+    },
+    "ponteCasaEscola": {
+      "gl": "A entrada en 4.º de infantil é un gran paso madurativo que se apoia no diálogo sen pantallas.",
+      "es": "La entrada en 4.º de infantil es un gran paso madurativo que se apoya en el diálogo sin pantallas."
+    }
+  },
+  {
+    "id": "c3_m2",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 2,
+    "nombreMes": {
+      "gl": "Outubro",
+      "es": "Octubre"
+    },
+    "icono": "lateralidade",
+    "centroInteres": {
+      "gl": "Coordinación corporal e xiro espacial",
+      "es": "Coordinación corporal y giro espacial"
+    },
+    "objetivoPedagogico": {
+      "gl": "Discriminación do esquema corporal con movemento rotatorio e estabilización inmediata.",
+      "es": "Discriminación del esquema corporal con movimiento rotatorio y estabilización inmediata."
+    },
+    "actividadAula": {
+      "gl": "Dinamización motriz: \"Touch your shoulders AND turn around two times, then freeze!\".",
+      "es": "Dinamización motriz: \"Touch your shoulders AND turn around two times, then freeze!\"."
+    },
+    "actividadHogar": {
+      "gl": "No corredor da casa: \"Touch your knees AND spin around like a top! Now hug me tight!\".",
+      "es": "En el pasillo de la casa: \"Touch your knees AND spin around like a top! Now hug me tight!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xogo de movemento no salón",
+      "es": "Juego de movimiento en el salón"
+    },
+    "minutosSugeridos": 6,
+    "ingles": {
+      "lexico": [
+        "Shoulders",
+        "Turn around",
+        "Spin",
+        "Freeze",
+        "Hug"
+      ],
+      "tpr": [
+        "Touch shoulders",
+        "Turn around",
+        "Hug tight"
+      ],
+      "frase": "Touch your shoulders AND turn around two times!",
+      "audio_id": "en_c3_m2_shoulders"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Aceleración vestibular controlada con parada postural compensatoria.",
+      "es": "Aceleración vestibular controlada con parada postural compensatoria."
+    },
+    "ponteCasaEscola": {
+      "gl": "A estabilidade física reflicte a capacidade crecente de autocontrol e calma.",
+      "es": "La estabilidad física refleja la capacidad creciente de autocontrol y calma."
+    }
+  },
+  {
+    "id": "c3_m3",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 3,
+    "nombreMes": {
+      "gl": "Novembro",
+      "es": "Noviembre"
+    },
+    "icono": "bosque",
+    "centroInteres": {
+      "gl": "Magosto e biodiversidade do bosque atlántico",
+      "es": "Magosto y biodiversidad del bosque atlántico"
+    },
+    "objetivoPedagogico": {
+      "gl": "Clasificación de obxectos naturais por tamaño e encadeamento motor de recollida.",
+      "es": "Clasificación de objetos naturales por tamaño y encadenamiento motor de recogida."
+    },
+    "actividadAula": {
+      "gl": "Circuíto con castañas e follas: \"Pick up the chestnut AND put it in the green basket!\".",
+      "es": "Circuito con castañas y hojas: \"Pick up the chestnut AND put it in the green basket!\"."
+    },
+    "actividadHogar": {
+      "gl": "Preparando a merenda ou recollendo piñas: \"Pick up three acorns AND count them: one, two, three!\".",
+      "es": "Preparando la merienda o recogiendo piñas: \"Pick up three acorns AND count them: one, two, three!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Contar elementos na mesa da merenda",
+      "es": "Contar elementos en la mesa de la merienda"
+    },
+    "minutosSugeridos": 6,
+    "ingles": {
+      "lexico": [
+        "Chestnut",
+        "Acorn",
+        "Basket",
+        "Count",
+        "Pick up"
+      ],
+      "tpr": [
+        "Pick up acorn",
+        "Put in basket",
+        "Count three"
+      ],
+      "frase": "Pick up the chestnut AND put it in the basket!",
+      "audio_id": "en_c3_m3_basket"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Asociación numérica temperá vinculada á acción táctil real.",
+      "es": "Asociación numérica temprana vinculada a la acción táctil real."
+    },
+    "ponteCasaEscola": {
+      "gl": "A natureza galega fornece todas as ferramentas lóxicas que a infancia precisa.",
+      "es": "La naturaleza gallega provee todas las herramientas lógicas que la infancia necesita."
+    }
+  },
+  {
+    "id": "c3_m4",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 4,
+    "nombreMes": {
+      "gl": "Decembro",
+      "es": "Diciembre"
+    },
+    "icono": "inverno_luces",
+    "centroInteres": {
+      "gl": "Inverno, luces de Vigo e abrigo compartido",
+      "es": "Invierno, luces de Vigo y abrigo compartido"
+    },
+    "objetivoPedagogico": {
+      "gl": "Concepto de escuridade e luz, contraste térmico e precisión na marcha.",
+      "es": "Concepto de oscuridad y luz, contraste térmico y precisión en la marcha."
+    },
+    "actividadAula": {
+      "gl": "Asemblea en penumbra con lanterna: \"Zip your warm coat AND walk very slowly to the light!\".",
+      "es": "Asamblea en penumbra con linterna: \"Zip your warm coat AND walk very slowly to the light!\"."
+    },
+    "actividadHogar": {
+      "gl": "Vendo as luces de Vigo pola rúa: \"Look at the bright lights AND hold my warm hand!\".",
+      "es": "Viendo las luces de Vigo por la calle: \"Look at the bright lights AND hold my warm hand!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Paseo nocturno baixo o alumeado",
+      "es": "Paseo nocturno bajo el alumbrado"
+    },
+    "minutosSugeridos": 6,
+    "ingles": {
+      "lexico": [
+        "Coat",
+        "Light",
+        "Bright",
+        "Dark",
+        "Zip"
+      ],
+      "tpr": [
+        "Zip coat",
+        "Walk to light",
+        "Hold hand"
+      ],
+      "frase": "Zip your warm coat AND walk slowly to the light!",
+      "audio_id": "en_c3_m4_light"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Adaptación sensorial visual ante contrastes de luminosidade sen sobreexcitación.",
+      "es": "Adaptación sensorial visual ante contrastes de luminosidad sin sobreexcitación."
+    },
+    "ponteCasaEscola": {
+      "gl": "As luces compartidas en familia crean memorias afectivas imperecedoiras.",
+      "es": "Las luces compartidas en familia crean memorias afectivas imperecederas."
+    }
+  },
+  {
+    "id": "c3_m5",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 5,
+    "nombreMes": {
+      "gl": "Xaneiro",
+      "es": "Enero"
+    },
+    "icono": "oficios",
+    "centroInteres": {
+      "gl": "A comunidade, o barrio e os oficios",
+      "es": "La comunidad, el barrio y los oficios"
+    },
+    "objetivoPedagogico": {
+      "gl": "Comprensión do rol social dos axudantes da comunidade e empatía.",
+      "es": "Comprensión del rol social de los ayudantes de la comunidad y empatía."
+    },
+    "actividadAula": {
+      "gl": "Dramatización do médico e bombeiro: \"Listen to the doctor AND breathe in deeply!\".",
+      "es": "Dramatización del médico y bombero: \"Listen to the doctor AND breathe in deeply!\"."
+    },
+    "actividadHogar": {
+      "gl": "Ao pasar polo mercado ou panadería: \"Say thank you to the baker AND carry the bread bag!\".",
+      "es": "Al pasar por el mercado o panadería: \"Say thank you to the baker AND carry the bread bag!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Encargo sinxelo de recado na tenda do barrio",
+      "es": "Encargo sencillo de recado en la tienda del barrio"
+    },
+    "minutosSugeridos": 6,
+    "ingles": {
+      "lexico": [
+        "Doctor",
+        "Baker",
+        "Help",
+        "Breathe",
+        "Market"
+      ],
+      "tpr": [
+        "Help doctor",
+        "Breathe deep",
+        "Carry bag"
+      ],
+      "frase": "Listen to the doctor AND breathe in deeply!",
+      "audio_id": "en_c3_m5_doctor"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Proxección social e xogo simbólico cooperativo de roles profesionais.",
+      "es": "Proyección social y juego simbólico cooperativo de roles profesionales."
+    },
+    "ponteCasaEscola": {
+      "gl": "O sentido de pertenza ao barrio de Vigo comeza cos pequenos saúdos aos veciños.",
+      "es": "El sentido de pertenencia al barrio de Vigo comienza con los pequeños saludos a los vecinos."
+    }
+  },
+  {
+    "id": "c3_m6",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 6,
+    "nombreMes": {
+      "gl": "Febreiro",
+      "es": "Febrero"
+    },
+    "icono": "mecos",
+    "centroInteres": {
+      "gl": "O Entroido tradicional e personaxes cómicos",
+      "es": "El Entroido tradicional y personajes cómicos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Expresión corporal dramática, percusión con ritmo e xogo de conxelación.",
+      "es": "Expresión corporal dramática, percusión con ritmo y juego de congelación."
+    },
+    "actividadAula": {
+      "gl": "Bailar libremente ao son das chocas: \"Dance to the loud music AND freeze like a stone statue!\".",
+      "es": "Bailar libremente al son de las chocas: \"Dance to the loud music AND freeze like a stone statue!\"."
+    },
+    "actividadHogar": {
+      "gl": "Disfrazándose cun sombreiro vello: \"Put on the funny hat AND dance with me, then freeze!\".",
+      "es": "Disfrazándose con un sombrero viejo: \"Put on the funny hat AND dance with me, then freeze!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xogo de disfraces con roupa vella",
+      "es": "Juego de disfraces con ropa vieja"
+    },
+    "minutosSugeridos": 6,
+    "ingles": {
+      "lexico": [
+        "Music",
+        "Hat",
+        "Statue",
+        "Dance",
+        "Freeze"
+      ],
+      "tpr": [
+        "Dance music",
+        "Put on hat",
+        "Freeze statue"
+      ],
+      "frase": "Dance to the music AND freeze like a stone statue!",
+      "audio_id": "en_c3_m6_statue"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Inhibición motriz prefrontal durante a estimulación auditiva musical.",
+      "es": "Inhibición motriz prefrontal durante la estimulación auditiva musical."
+    },
+    "ponteCasaEscola": {
+      "gl": "O Entroido vívese con creatividade artesanal sen mercar disfraces caros de plástico.",
+      "es": "El Entroido se vive con creatividad artesanal sin comprar disfraces caros de plástico."
+    }
+  },
+  {
+    "id": "c3_m7",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 7,
+    "nombreMes": {
+      "gl": "Marzo",
+      "es": "Marzo"
+    },
+    "icono": "xeometria",
+    "centroInteres": {
+      "gl": "Xeometría e cores secundarias no espazo",
+      "es": "Geometría y colores secundarios en el espacio"
+    },
+    "objetivoPedagogico": {
+      "gl": "Discriminación de triángulos e cadrados no espazo do aula mediante desprazamentos.",
+      "es": "Discriminación de triángulos y cuadrados en el espacio del aula mediante desplazamientos."
+    },
+    "actividadAula": {
+      "gl": "Buscar formas debuxadas con cinta no chan: \"Find the green triangle AND touch it with two feet!\".",
+      "es": "Buscar formas dibujadas con cinta en el suelo: \"Find the green triangle AND touch it with two feet!\"."
+    },
+    "actividadHogar": {
+      "gl": "Buscando formas pola casa: \"Find something square in the room AND bring it to me!\".",
+      "es": "Buscando formas por la casa: \"Find something square in the room AND bring it to me!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xogo de detectives de formas pola casa",
+      "es": "Juego de detectives de formas por la casa"
+    },
+    "minutosSugeridos": 6,
+    "ingles": {
+      "lexico": [
+        "Triangle",
+        "Green",
+        "Find",
+        "Feet",
+        "Room"
+      ],
+      "tpr": [
+        "Find triangle",
+        "Touch with feet",
+        "Bring square"
+      ],
+      "frase": "Find the green triangle AND touch it with your feet!",
+      "audio_id": "en_c3_m7_triangle"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Construción de conceptos lóxicos tridimensionais a través do movemento propio.",
+      "es": "Construcción de conceptos lógicos tridimensionales a través del movimiento propio."
+    },
+    "ponteCasaEscola": {
+      "gl": "O espazo doméstico é un laboratorio matemático marabilloso para a mente infantil.",
+      "es": "El espacio doméstico es un laboratorio matemático maravilloso para la mente infantil."
+    }
+  },
+  {
+    "id": "c3_m8",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 8,
+    "nombreMes": {
+      "gl": "Abril",
+      "es": "Abril"
+    },
+    "icono": "horta",
+    "centroInteres": {
+      "gl": "A horta escolar e o ciclo da auga",
+      "es": "El huerto escolar y el ciclo del agua"
+    },
+    "objetivoPedagogico": {
+      "gl": "Coidado do medio ambiente, regar sementes e observar a transformación biolóxica.",
+      "es": "Cuidado del medio ambiente, regar semillas y observar la transformación biológica."
+    },
+    "actividadAula": {
+      "gl": "Plantar un garbanzo en vaso de barro: \"Pour the water gently AND watch the seed grow!\".",
+      "es": "Plantar un garbanzo en vaso de barro: \"Pour the water gently AND watch the seed grow!\"."
+    },
+    "actividadHogar": {
+      "gl": "Regando as plantas do balcón: \"Pour the water on the flower AND smell the sweet earth!\".",
+      "es": "Regando las plantas del balcón: \"Pour the water on the flower AND smell the sweet earth!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Coidado das plantas da casa",
+      "es": "Cuidado de las plantas de la casa"
+    },
+    "minutosSugeridos": 6,
+    "ingles": {
+      "lexico": [
+        "Seed",
+        "Pour",
+        "Water",
+        "Watch",
+        "Plant"
+      ],
+      "tpr": [
+        "Pour water",
+        "Watch grow",
+        "Smell flower"
+      ],
+      "frase": "Pour the water gently AND watch the little seed grow!",
+      "audio_id": "en_c3_m8_seed"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Paciencia temporal e comprensión do tempo biolóxico fronte á inmediatez dixital.",
+      "es": "Paciencia temporal y comprensión del tiempo biológico frente a la inmediatez digital."
+    },
+    "ponteCasaEscola": {
+      "gl": "Ver medrar unha planta ensina a respectar os ritmos naturais do propio crecemento.",
+      "es": "Ver crecer una planta enseña a respetar los ritmos naturales del propio crecimiento."
+    }
+  },
+  {
+    "id": "c3_m9",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 9,
+    "nombreMes": {
+      "gl": "Maio",
+      "es": "Mayo"
+    },
+    "icono": "respiracion",
+    "centroInteres": {
+      "gl": "O corpo forte e a respiración tranquila",
+      "es": "El cuerpo fuerte y la respiración tranquila"
+    },
+    "objetivoPedagogico": {
+      "gl": "Control da respiración diafragmática e recoñecemento das pulsacións cardíacas.",
+      "es": "Control de la respiración diafragmática y reconocimiento de las pulsaciones cardíacas."
+    },
+    "actividadAula": {
+      "gl": "Transición á calma: \"Breathe in like smelling a flower AND blow out like the soft wind!\".",
+      "es": "Transición a la calma: \"Breathe in like smelling a flower AND blow out like the soft wind!\"."
+    },
+    "actividadHogar": {
+      "gl": "Antes de deitarse na cama: \"Breathe in deeply AND close your eyes in peace, sweet dreams!\".",
+      "es": "Antes de acostarse en la cama: \"Breathe in deeply AND close your eyes in peace, sweet dreams!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Momento de relaxación antes de durmir",
+      "es": "Momento de relajación antes de dormir"
+    },
+    "minutosSugeridos": 5,
+    "ingles": {
+      "lexico": [
+        "Breathe",
+        "Flower",
+        "Blow",
+        "Wind",
+        "Heart"
+      ],
+      "tpr": [
+        "Breathe in",
+        "Blow out",
+        "Close eyes"
+      ],
+      "frase": "Breathe in like a flower AND blow out like the wind!",
+      "audio_id": "en_c3_m9_breathe"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Activación do nervio vago mediante espiracións prolongadas para a calma emocional.",
+      "es": "Activación del nervio vago mediante espiraciones prolongadas para la calma emocional."
+    },
+    "ponteCasaEscola": {
+      "gl": "A respiración consciente é a mellor ferramenta de autorregulación para toda a vida.",
+      "es": "La respiración consciente es la mejor herramienta de autorregulación para toda la vida."
+    }
+  },
+  {
+    "id": "c3_m10",
+    "cursoId": "curso_3_4",
+    "cursoNumero": 3,
+    "mesNumero": 10,
+    "nombreMes": {
+      "gl": "Xuño",
+      "es": "Junio"
+    },
+    "icono": "cies",
+    "centroInteres": {
+      "gl": "A ría de Vigo e os delfíns das Cíes",
+      "es": "La ría de Vigo y los delfines de las Cíes"
+    },
+    "objetivoPedagogico": {
+      "gl": "Orgullo pola contorna mariña atlántica e despedida alegre do 4.º de infantil.",
+      "es": "Orgullo por el entorno marino atlántico y despedida alegre del 4.º de infantil."
+    },
+    "actividadAula": {
+      "gl": "Xogo de nadar coma arroaces: \"Swim like a fast dolphin AND wave hello to the white boat!\".",
+      "es": "Juego de nadar como delfines: \"Swim like a fast dolphin AND wave hello to the white boat!\"."
+    },
+    "actividadHogar": {
+      "gl": "Mirando as illas Cíes dende o Castro ou Samil: \"Look at the islands AND swim your hands in the air!\".",
+      "es": "Mirando las islas Cíes desde O Castro o Samil: \"Look at the islands AND swim your hands in the air!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Excursión ao monte do Castro ou praia",
+      "es": "Excursión al monte de O Castro o playa"
+    },
+    "minutosSugeridos": 6,
+    "ingles": {
+      "lexico": [
+        "Dolphin",
+        "Swim",
+        "Island",
+        "Wave",
+        "Ocean"
+      ],
+      "tpr": [
+        "Swim dolphin",
+        "Wave hello",
+        "Jump wave"
+      ],
+      "frase": "Swim like a dolphin AND wave hello to the boat!",
+      "audio_id": "en_c3_m10_dolphin"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Coordinación dinámica xeral con desprazamentos sinuosos e celebración grupal.",
+      "es": "Coordinación dinámica general con desplazamientos sinuosos y celebración grupal."
+    },
+    "ponteCasaEscola": {
+      "gl": "Rematamos 4.º de infantil con seguridade expresiva e alegría polo camiño percorrido.",
+      "es": "Terminamos 4.º de infantil con seguridad expresiva y alegría por el camino recorrido."
+    }
+  },
+  {
+    "id": "c4_m1",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 1,
+    "nombreMes": {
+      "gl": "Setembro",
+      "es": "Septiembre"
+    },
+    "icono": "cooperacion",
+    "centroInteres": {
+      "gl": "Cooperación, regras e subordinación causal",
+      "es": "Cooperación, reglas y subordinación causal"
+    },
+    "objetivoPedagogico": {
+      "gl": "Emprego de conectores causais (because) e negociación pacífica de conflitos.",
+      "es": "Empleo de conectores causales (because) y negociación pacífica de conflictos."
+    },
+    "actividadAula": {
+      "gl": "Construción cooperativa con bloques: \"We share the big blocks BECAUSE we build a tall tower together!\".",
+      "es": "Construcción cooperativa con bloques: \"We share the big blocks BECAUSE we build a tall tower together!\"."
+    },
+    "actividadHogar": {
+      "gl": "Na cociña axudando a pór a mesa: \"We wash our hands BECAUSE we are going to eat together!\".",
+      "es": "En la cocina ayudando a poner la mesa: \"We wash our hands BECAUSE we are going to eat together!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Preparación colaborativa da comida",
+      "es": "Preparación colaborativa de la comida"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Because",
+        "Share",
+        "Build",
+        "Together",
+        "Tower"
+      ],
+      "tpr": [
+        "Share blocks",
+        "Build high",
+        "Wash hands"
+      ],
+      "frase": "We share the blocks BECAUSE we build a tower together!",
+      "audio_id": "en_c4_m1_because"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Comprensión lóxica da causa-efecto nas relacións interpersoais e as regras sociais.",
+      "es": "Comprensión lógica de la causa-efecto en las relaciones interpersonales y las reglas sociales."
+    },
+    "ponteCasaEscola": {
+      "gl": "Explicar o \"por que\" das normas axuda a que se interioricen dende o sentido común.",
+      "es": "Explicar el \"por qué\" de las normas ayuda a que se interioricen desde el sentido común."
+    }
+  },
+  {
+    "id": "c4_m2",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 2,
+    "nombreMes": {
+      "gl": "Outubro",
+      "es": "Octubre"
+    },
+    "icono": "freeze_game",
+    "centroInteres": {
+      "gl": "Xogos cinestésicos de inhibición e reflexos rápidos",
+      "es": "Juegos cinestésicos de inhibición y reflejos rápidos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Inhibición tónica motriz ante sinais acústicos e visuais imprevistos.",
+      "es": "Inhibición tónica motriz ante señales acústicas y visuales imprevistas."
+    },
+    "actividadAula": {
+      "gl": "O xogo do raposo e a curuxa: \"Run fast like a hungry fox... and FREEZE when the owl sings!\".",
+      "es": "El juego del zorro y la lechuza: \"Run fast like a hungry fox... and FREEZE when the owl sings!\"."
+    },
+    "actividadHogar": {
+      "gl": "No salón antes da cea: \"Walk fast like a bear... and FREEZE when I clap two times!\".",
+      "es": "En el salón antes de la cena: \"Walk fast like a bear... and FREEZE when I clap two times!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xogo de estatuas na sala de estar",
+      "es": "Juego de estatuas en la sala de estar"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Fox",
+        "Owl",
+        "Fast",
+        "Freeze",
+        "Sing"
+      ],
+      "tpr": [
+        "Run like fox",
+        "Freeze immediately",
+        "Clap twice"
+      ],
+      "frase": "Run very fast like a fox... and FREEZE when the owl sings!",
+      "audio_id": "en_c4_m2_fox"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Maduración do córtex prefrontal a través da inhibición deliberada do movemento.",
+      "es": "Maduración del córtex prefrontal a través de la inhibición deliberada del movimiento."
+    },
+    "ponteCasaEscola": {
+      "gl": "A capacidade de deterse ante un estímulo é a base da atención sostida e da seguridade.",
+      "es": "La capacidad de detenerse ante un estímulo es la base de la atención sostenida y de la seguridad."
+    }
+  },
+  {
+    "id": "c4_m3",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 3,
+    "nombreMes": {
+      "gl": "Novembro",
+      "es": "Noviembre"
+    },
+    "icono": "monte_guia",
+    "centroInteres": {
+      "gl": "O monte da Guía e os bosques de carballos",
+      "es": "El monte de A Guía y los bosques de robles"
+    },
+    "objetivoPedagogico": {
+      "gl": "Comprensión dos ecosistemas galegos e subordinación: causa da caída das follas.",
+      "es": "Comprensión de los ecosistemas gallegos y subordinación: causa de la caída de las hojas."
+    },
+    "actividadAula": {
+      "gl": "Dramatización do bosque: \"The dry leaves fall down from the tall oak tree BECAUSE the autumn wind blows strong!\".",
+      "es": "Dramatización del bosque: \"The dry leaves fall down from the tall oak tree BECAUSE the autumn wind blows strong!\"."
+    },
+    "actividadHogar": {
+      "gl": "No monte da Guía ou parque: \"Pick up the brown acorn BECAUSE the hungry squirrel needs food!\".",
+      "es": "En el monte de A Guía o parque: \"Pick up the brown acorn BECAUSE the hungry squirrel needs food!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Paseo polo monte da Guía en Vigo",
+      "es": "Paseo por el monte de A Guía en Vigo"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Oak",
+        "Squirrel",
+        "Strong",
+        "Blow",
+        "Forest"
+      ],
+      "tpr": [
+        "Sway like oak",
+        "Fall down",
+        "Gather acorns"
+      ],
+      "frase": "Leaves fall down BECAUSE the autumn wind blows very strong!",
+      "audio_id": "en_c4_m3_oak"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Articulación de hipóteses causais sobre fenómenos ecolóxicos directos.",
+      "es": "Articulación de hipótesis causales sobre fenómenos ecológicos directos."
+    },
+    "ponteCasaEscola": {
+      "gl": "Coñecer a flora e fauna de Vigo espreme o respecto activo polo medio ambiente.",
+      "es": "Conocer la flora y fauna de Vigo exprime el respeto activo por el medio ambiente."
+    }
+  },
+  {
+    "id": "c4_m4",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 4,
+    "nombreMes": {
+      "gl": "Decembro",
+      "es": "Diciembre"
+    },
+    "icono": "xeo_ciencia",
+    "centroInteres": {
+      "gl": "Ciencia do inverno: o xeo e as comparacións",
+      "es": "Ciencia del invierno: el hielo y las comparaciones"
+    },
+    "objetivoPedagogico": {
+      "gl": "Estruturas comparativas (colder than, warmer than) e cambios de estado da materia.",
+      "es": "Estructuras comparativas (colder than, warmer than) y cambios de estado de la materia."
+    },
+    "actividadAula": {
+      "gl": "Experimento con cubos de xeo en cuncas: \"Ice is colder than water, but it melts into your warm hands!\".",
+      "es": "Experimento con cubos de hielo en cuencos: \"Ice is colder than water, but it melts into your warm hands!\"."
+    },
+    "actividadHogar": {
+      "gl": "Tocando a fiestra fría da cociña: \"This glass is colder than my cheek! Warm it with soft breath!\".",
+      "es": "Tocando la ventana fría de la cocina: \"This glass is colder than my cheek! Warm it with soft breath!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Observación do vapor na cociña",
+      "es": "Observación del vapor en la cocina"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Ice",
+        "Melt",
+        "Colder",
+        "Warmer",
+        "Glass"
+      ],
+      "tpr": [
+        "Hold ice",
+        "Blow warm breath",
+        "Rub cheeks"
+      ],
+      "frase": "Ice is colder than water, but it melts in your hand!",
+      "audio_id": "en_c4_m4_ice"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Pensamento pre-científico mediante a comparación sensorial de graos térmicos.",
+      "es": "Pensamiento pre-científico mediante la comparación sensorial de grados térmicos."
+    },
+    "ponteCasaEscola": {
+      "gl": "A ciencia na infancia non son fórmulas, senón observación atenta do mundo real.",
+      "es": "La ciencia en la infancia no son fórmulas, sino observación atenta del mundo real."
+    }
+  },
+  {
+    "id": "c4_m5",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 5,
+    "nombreMes": {
+      "gl": "Xaneiro",
+      "es": "Enero"
+    },
+    "icono": "mapas",
+    "centroInteres": {
+      "gl": "Mapas da cidade, transportes e orientación",
+      "es": "Mapas de la ciudad, transportes y orientación"
+    },
+    "objetivoPedagogico": {
+      "gl": "Orientación espacial relativa (beside, between, across) e seguimento de mapas gráficos.",
+      "es": "Orientación espacial relativa (beside, between, across) y seguimiento de mapas gráficos."
+    },
+    "actividadAula": {
+      "gl": "Camiño con fita no chan do aula: \"Walk across the wooden bridge AND step between the two trees!\".",
+      "es": "Camino con cinta en el suelo del aula: \"Walk across the wooden bridge AND step between the two trees!\"."
+    },
+    "actividadHogar": {
+      "gl": "Debuxando un mapa da habitación: \"Put the teddy between the bed and the chair!\".",
+      "es": "Dibujando un mapa de la habitación: \"Put the teddy between the bed and the chair!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xogo de pistas pola casa",
+      "es": "Juego de pistas por la casa"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Bridge",
+        "Across",
+        "Between",
+        "Map",
+        "Step"
+      ],
+      "tpr": [
+        "Walk across",
+        "Step between",
+        "Follow map"
+      ],
+      "frase": "Walk across the bridge AND step between the two trees!",
+      "audio_id": "en_c4_m5_bridge"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Transición da percepción egocéntrica á representación topolóxica alocéntrica.",
+      "es": "Transición de la percepción egocéntrica a la representación topológica alocéntrica."
+    },
+    "ponteCasaEscola": {
+      "gl": "Saber orientarse no espazo fortalece a seguridade e a autonomía persoal.",
+      "es": "Saber orientarse en el espacio fortalece la seguridad y la autonomía personal."
+    }
+  },
+  {
+    "id": "c4_m6",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 6,
+    "nombreMes": {
+      "gl": "Febreiro",
+      "es": "Febrero"
+    },
+    "icono": "teatro_entroido",
+    "centroInteres": {
+      "gl": "O Entroido teatral e dramatización con regras",
+      "es": "El Entroido teatral y dramatización con reglas"
+    },
+    "objetivoPedagogico": {
+      "gl": "Representación simbólica de personaxes con cambios bruscos de velocidade e actitude.",
+      "es": "Representación simbólica de personajes con cambios bruscos de velocidad y actitud."
+    },
+    "actividadAula": {
+      "gl": "Xogo dos xigantes e ananos: \"Walk heavy like a giant, but hide quietly when I count to three!\".",
+      "es": "Juego de los gigantes y enanos: \"Walk heavy like a giant, but hide quietly when I count to three!\"."
+    },
+    "actividadHogar": {
+      "gl": "Improvisando un conto na casa: \"You are the brave knight AND I am the friendly dragon, let us talk!\".",
+      "es": "Improvisando un cuento en casa: \"You are the brave knight AND I am the friendly dragon, let us talk!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Representación teatral en familia antes de durmir",
+      "es": "Representación teatral en familia antes de dormir"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Giant",
+        "Heavy",
+        "Hide",
+        "Quietly",
+        "Count"
+      ],
+      "tpr": [
+        "Walk heavy",
+        "Hide quietly",
+        "Count three"
+      ],
+      "frase": "Walk heavy like a giant, but hide quietly when I count three!",
+      "audio_id": "en_c4_m6_giant"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Dobre codificación motriz e semántica: forza física combinada con inhibición rápida.",
+      "es": "Doble codificación motriz y semántica: fuerza física combinada con inhibición rápida."
+    },
+    "ponteCasaEscola": {
+      "gl": "O teatro é a mellor escola para comprender as emocións e as perspectivas dos demais.",
+      "es": "El teatro es la mejor escuela para comprender las emociones y las perspectivas de los demás."
+    }
+  },
+  {
+    "id": "c4_m7",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 7,
+    "nombreMes": {
+      "gl": "Marzo",
+      "es": "Marzo"
+    },
+    "icono": "comparativos",
+    "centroInteres": {
+      "gl": "Nutrición, sabores e graos comparativos",
+      "es": "Nutrición, sabores y grados comparativos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Morfosintaxe comparativa en inglés (bigger than, sweeter than, faster than).",
+      "es": "Morfosintaxis comparativa en inglés (bigger than, sweeter than, faster than)."
+    },
+    "actividadAula": {
+      "gl": "Comparar obxectos e froitas: \"This yellow banana is longer and sweeter than the small green lemon!\".",
+      "es": "Comparar objetos y frutas: \"This yellow banana is longer and sweeter than the small green lemon!\"."
+    },
+    "actividadHogar": {
+      "gl": "Na cociña ao preparar o almorzo: \"My cup is bigger than yours, but your milk is warmer than mine!\".",
+      "es": "En la cocina al preparar el desayuno: \"My cup is bigger than yours, but your milk is warmer than mine!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Comparación de elementos durante as comidas",
+      "es": "Comparación de elementos durante las comidas"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Bigger",
+        "Smaller",
+        "Sweeter",
+        "Longer",
+        "Than"
+      ],
+      "tpr": [
+        "Show big arms",
+        "Show small fingers",
+        "Taste sweet"
+      ],
+      "frase": "This banana is bigger AND sweeter than the small lemon!",
+      "audio_id": "en_c4_m7_banana"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Adquisición implícita de sufixos gramaticais (-er) mediante o contraste vivencial.",
+      "es": "Adquisición implícita de sufijos gramaticales (-er) mediante el contraste vivencial."
+    },
+    "ponteCasaEscola": {
+      "gl": "A linguaxe medra cando serve para describir matices reais do que sentimos e comemos.",
+      "es": "El lenguaje crece cuando sirve para describir matices reales de lo que sentimos y comemos."
+    }
+  },
+  {
+    "id": "c4_m8",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 8,
+    "nombreMes": {
+      "gl": "Abril",
+      "es": "Abril"
+    },
+    "icono": "cies_biodiversidade",
+    "centroInteres": {
+      "gl": "A biodiversidade do Parque Nacional das Cíes",
+      "es": "La biodiversidad del Parque Nacional de las Cíes"
+    },
+    "objetivoPedagogico": {
+      "gl": "Subordinación condicional inicial (IF) e respecto polo hábitat natural das gaivotas.",
+      "es": "Subordinación condicional inicial (IF) y respeto por el hábitat natural de las gaviotas."
+    },
+    "actividadAula": {
+      "gl": "Simular o voo das gaivotas sobre o mar: \"Fly like a seagull over the waves, but IF the rain begins, hide under your wings!\".",
+      "es": "Simular el vuelo de las gaviotas sobre el mar: \"Fly like a seagull over the waves, but IF the rain begins, hide under your wings!\"."
+    },
+    "actividadHogar": {
+      "gl": "Na rúa ou parque cun paraugas: \"IF it rains, open the umbrella! IF the sun shines, smile bright!\".",
+      "es": "En la calle o parque con un paraguas: \"IF it rains, open the umbrella! IF the sun shines, smile bright!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Saída ao aire libre con mudanzas de tempo",
+      "es": "Salida al aire libre con cambios de tiempo"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Seagull",
+        "Waves",
+        "Wings",
+        "If",
+        "Hide"
+      ],
+      "tpr": [
+        "Fly wings",
+        "Hide under",
+        "Watch sky"
+      ],
+      "frase": "Fly like a seagull, but IF it rains, hide under your wings!",
+      "audio_id": "en_c4_m8_seagull"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Razoamento condicional dependente dunha cláusula contextual concreta.",
+      "es": "Razonamiento condicional dependiente de una cláusula contextual concreta."
+    },
+    "ponteCasaEscola": {
+      "gl": "As Cíes ensínannos que protexer a natureza é un deber cotián de toda a veciñanza de Vigo.",
+      "es": "Las Cíes nos enseñan que proteger la naturaleza es un deber cotidiano de toda la vecindad de Vigo."
+    }
+  },
+  {
+    "id": "c4_m9",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 9,
+    "nombreMes": {
+      "gl": "Maio",
+      "es": "Mayo"
+    },
+    "icono": "flotabilidade",
+    "centroInteres": {
+      "gl": "Forzas físicas na auga: flotar ou afundir",
+      "es": "Fuerzas físicas en el agua: flotar o hundirse"
+    },
+    "objetivoPedagogico": {
+      "gl": "Formulación de prediccións simples sobre densidade de materiais (madeira vs pedra).",
+      "es": "Formulación de predicciones simples sobre densidad de materiales (madera vs piedra)."
+    },
+    "actividadAula": {
+      "gl": "Bandeixa con auga: \"The heavy stone sinks to the bottom, but the wooden stick floats on top!\".",
+      "es": "Bandeja con agua: \"The heavy stone sinks to the bottom, but the wooden stick floats on top!\"."
+    },
+    "actividadHogar": {
+      "gl": "Na bañeira probando xoguetes: \"Look! The plastic boat floats, but the coin sinks fast!\".",
+      "es": "En la bañera probando juguetes: \"Look! The plastic boat floats, but the coin sinks fast!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xogo de descubrimento durante o baño",
+      "es": "Juego de descubrimiento durante el baño"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Sink",
+        "Float",
+        "Heavy",
+        "Stone",
+        "Stick"
+      ],
+      "tpr": [
+        "Sink down",
+        "Float top",
+        "Drop stone"
+      ],
+      "frase": "The heavy stone sinks, but the wooden stick floats on top!",
+      "audio_id": "en_c4_m9_float"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Contraste cinestésico e gravitacional: afundir cara abaixo fronte a aboiar.",
+      "es": "Contraste cinestésico y gravitacional: hundirse hacia abajo frente a flotar."
+    },
+    "ponteCasaEscola": {
+      "gl": "Preguntar \"¿por que cres que flota?\" estimula o pensamento crítico moito máis que dar a resposta.",
+      "es": "Preguntar \"¿por qué crees que flota?\" estimula el pensamiento crítico mucho más que dar la respuesta."
+    }
+  },
+  {
+    "id": "c4_m10",
+    "cursoId": "curso_4_5",
+    "cursoNumero": 4,
+    "mesNumero": 10,
+    "nombreMes": {
+      "gl": "Xuño",
+      "es": "Junio"
+    },
+    "icono": "bateas",
+    "centroInteres": {
+      "gl": "As bateas da ría de Vigo e peche de 5.º",
+      "es": "Las bateas de la ría de Vigo y cierre de 5.º"
+    },
+    "objetivoPedagogico": {
+      "gl": "Consolidación da competencia narrativa e orgullo polo patrimonio marisqueiro vigués.",
+      "es": "Consolidación de la competencia narrativa y orgullo por el patrimonio marisquero vigués."
+    },
+    "actividadAula": {
+      "gl": "Construción simbólica de bateas con paus de madeira e movemento conxunto de remadores.",
+      "es": "Construcción simbólica de bateas con palos de madera y movimiento conjunto de remeros."
+    },
+    "actividadHogar": {
+      "gl": "Dende o porto de Vigo ou Samil contando bateas: \"We see the wooden platforms floating in the bay!\".",
+      "es": "Desde el puerto de Vigo o Samil contando bateas: \"We see the wooden platforms floating in the bay!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Paseo polo porto ou paseo marítimo",
+      "es": "Paseo por el puerto o paseo marítimo"
+    },
+    "minutosSugeridos": 7,
+    "ingles": {
+      "lexico": [
+        "Platform",
+        "Bay",
+        "Mussels",
+        "Proud",
+        "Climb"
+      ],
+      "tpr": [
+        "Climb up",
+        "Look through binoculars",
+        "Celebrate high"
+      ],
+      "frase": "We climbed the hill AND now we see the wide blue bay!",
+      "audio_id": "en_c4_m10_bay"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Sensación de eficacia persoal e peche madurativo previo ao último ano de infantil.",
+      "es": "Sensación de eficacia personal y cierre madurativo previo al último año de infantil."
+    },
+    "ponteCasaEscola": {
+      "gl": "Un curso cheo de descubrimentos que prepara o terreo para o gran liderado en 6.º de infantil.",
+      "es": "Un curso lleno de descubrimientos que prepara el terreno para el gran liderazgo en 6.º de infantil."
+    }
+  },
+  {
+    "id": "c5_m1",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 1,
+    "nombreMes": {
+      "gl": "Setembro",
+      "es": "Septiembre"
+    },
+    "icono": "liderado",
+    "centroInteres": {
+      "gl": "Liderado cooperativo, acordos e asemblea democrática",
+      "es": "Liderazgo cooperativo, acuerdos y asamblea democrática"
+    },
+    "objetivoPedagogico": {
+      "gl": "Construción de regras comúns, quendas conducidas por nenos e primeiro condicional.",
+      "es": "Construcción de reglas comunes, turnos conducidos por niños y primer condicional."
+    },
+    "actividadAula": {
+      "gl": "Asemblea guiada por parellas infantís: \"IF we listen carefully to each other, our classroom will be a peaceful team!\".",
+      "es": "Asamblea guiada por parejas infantiles: \"IF we listen carefully to each other, our classroom will be a peaceful team!\"."
+    },
+    "actividadHogar": {
+      "gl": "Establecendo acordos da semana en familia: \"IF we help each other, we will have more time to play in the park!\".",
+      "es": "Estableciendo acuerdos de la semana en familia: \"IF we help each other, we will have more time to play in the park!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Reunión familiar do domingo ou comezo de semana",
+      "es": "Reunión familiar del domingo o comienzo de semana"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "Agree",
+        "Listen",
+        "Team",
+        "Peaceful",
+        "If"
+      ],
+      "tpr": [
+        "Listen hand to ear",
+        "Shake hands",
+        "Celebrate team"
+      ],
+      "frase": "IF we listen to each other, our classroom will be a happy team!",
+      "audio_id": "en_c5_m1_team"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Student-led TPR: os nenos asumen por quendas o rol de dar a orde en L3 aos seus compañeiros.",
+      "es": "Student-led TPR: los niños asumen por turnos el rol de dar la orden en L3 a sus compañeros."
+    },
+    "ponteCasaEscola": {
+      "gl": "A escoita activa e a negociación entre iguais son as mellores competencias para a vida.",
+      "es": "La escucha activa y la negociación entre iguales son las mejores competencias para la vida."
+    }
+  },
+  {
+    "id": "c5_m2",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 2,
+    "nombreMes": {
+      "gl": "Outubro",
+      "es": "Octubre"
+    },
+    "icono": "fisioloxia",
+    "centroInteres": {
+      "gl": "O corpo humano, os sentidos e o latexo do corazón",
+      "es": "El cuerpo humano, los sentidos y el latido del corazón"
+    },
+    "objetivoPedagogico": {
+      "gl": "Recoñecemento do ritmo cardíaco tras o esforzo e discriminación propioceptiva fina.",
+      "es": "Reconocimiento del ritmo cardíaco tras el esfuerzo y discriminación propioceptiva fina."
+    },
+    "actividadAula": {
+      "gl": "Carreira rápida e parada coa man no peito: \"Touch your chest to feel your heart beating fast after the race!\".",
+      "es": "Carrera rápida y parada con la mano en el pecho: \"Touch your chest to feel your heart beating fast after the race!\"."
+    },
+    "actividadHogar": {
+      "gl": "Tralo baño ou xogo activo: \"Put your hand on my chest, feel my heart beat! Now feel yours, thump thump!\".",
+      "es": "Tras el baño o juego activo: \"Put your hand on my chest, feel my heart beat! Now feel yours, thump thump!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Momento de calma despois de facer exercicio",
+      "es": "Momento de calma después de hacer ejercicio"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "Heart",
+        "Chest",
+        "Beating",
+        "Fast",
+        "Bones"
+      ],
+      "tpr": [
+        "Feel heartbeat",
+        "Sprint fast",
+        "Breathe slow"
+      ],
+      "frase": "Touch your chest to feel your heart beating fast!",
+      "audio_id": "en_c5_m2_heart"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Conciencia interoceptiva: escoitar as sinais internas do propio corpo.",
+      "es": "Conciencia interoceptiva: escuchar las señales internas del propio cuerpo."
+    },
+    "ponteCasaEscola": {
+      "gl": "Aprender a sentir o propio corazón axuda a modular o estrés e a ansiedade.",
+      "es": "Aprender a sentir el propio corazón ayuda a modular el estrés y la ansiedad."
+    }
+  },
+  {
+    "id": "c5_m3",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 3,
+    "nombreMes": {
+      "gl": "Novembro",
+      "es": "Noviembre"
+    },
+    "icono": "balanza",
+    "centroInteres": {
+      "gl": "O gran Magosto científico: balanzas e pesos",
+      "es": "El gran Magosto científico: balanzas y pesos"
+    },
+    "objetivoPedagogico": {
+      "gl": "Uso de instrumentos de medida analóxicos (balanza de pratos) e superlativos.",
+      "es": "Uso de instrumentos de medida analógicos (balanza de platos) y superlativos."
+    },
+    "actividadAula": {
+      "gl": "Pesar froitas do outono con balanza: \"Compare the weights: the basket of acorns is HEAVIER than the dry leaves!\".",
+      "es": "Pesar frutas del otoño con balanza: \"Compare the weights: the basket of acorns is HEAVIER than the dry leaves!\"."
+    },
+    "actividadHogar": {
+      "gl": "Na cociña sostendo dous obxectos nas mans: \"Which one is heavier? The heavy cast-iron pan or the light wooden spoon?\".",
+      "es": "En la cocina sosteniendo dos objetos en las manos: \"Which one is heavier? The heavy cast-iron pan or the light wooden spoon?\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Cociñando ou pesando alimentos xuntos",
+      "es": "Cocinando o pesando alimentos juntos"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "Balanza",
+        "Heavier",
+        "Lightest",
+        "Weight",
+        "Compare"
+      ],
+      "tpr": [
+        "Balance arms",
+        "Show heavy side",
+        "Drop light feather"
+      ],
+      "frase": "Compare the weights: the basket of acorns is heavier than leaves!",
+      "audio_id": "en_c5_m3_weight"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Comprensión do equilibrio estático a través do propio corpo facendo de balanza humana.",
+      "es": "Comprensión del equilibrio estático a través del propio cuerpo haciendo de balanza humana."
+    },
+    "ponteCasaEscola": {
+      "gl": "O peso e a masa apréndense cos brazos e as mans, non con números abstractos.",
+      "es": "El peso y la masa se aprenden con los brazos y las manos, no con números abstractos."
+    }
+  },
+  {
+    "id": "c5_m4",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 4,
+    "nombreMes": {
+      "gl": "Decembro",
+      "es": "Diciembre"
+    },
+    "icono": "astronomia",
+    "centroInteres": {
+      "gl": "Astronomía, solsticio e o paso dos meses",
+      "es": "Astronomía, solsticio y el paso de los meses"
+    },
+    "objetivoPedagogico": {
+      "gl": "Nocións temporais de ciclo solar, rotación da Terra e o calendario anual.",
+      "es": "Nociones temporales de ciclo solar, rotación de la Tierra y el calendario anual."
+    },
+    "actividadAula": {
+      "gl": "Un neno fai de Sol no centro e outros xiran: \"The Earth spins around the Sun while we count the twelve months!\".",
+      "es": "Un niño hace de Sol en el centro y otros giran: \"The Earth spins around the Sun while we count the twelve months!\"."
+    },
+    "actividadHogar": {
+      "gl": "Mirando as estrelas ou a Lúa pola noite: \"Look at the Moon! The Earth is spinning while we sleep peacefully!\".",
+      "es": "Mirando las estrellas o la Luna por la noche: \"Look at the Moon! The Earth is spinning while we sleep peacefully!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Mirar o ceo nocturno antes de durmir",
+      "es": "Mirar el cielo nocturno antes de dormir"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "Earth",
+        "Sun",
+        "Moon",
+        "Spin",
+        "Month"
+      ],
+      "tpr": [
+        "Spin like Earth",
+        "Shine like Sun",
+        "Sleep like Moon"
+      ],
+      "frase": "The Earth spins around the Sun while we count the months!",
+      "audio_id": "en_c5_m4_earth"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Descentralización cognitiva cósmica: comprender que o tempo é un ciclo ordenado.",
+      "es": "Descentralización cognitiva cósmica: comprender que el tiempo es un ciclo ordenado."
+    },
+    "ponteCasaEscola": {
+      "gl": "Mirar o ceo en familia xera asombro científico e respecto pola nosa casa común.",
+      "es": "Mirar el cielo en familia genera asombro científico y respeto por nuestra casa común."
+    }
+  },
+  {
+    "id": "c5_m5",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 5,
+    "nombreMes": {
+      "gl": "Xaneiro",
+      "es": "Enero"
+    },
+    "icono": "oliveira",
+    "centroInteres": {
+      "gl": "A Oliveira de Vigo e a historia da nosa cidade",
+      "es": "La Olivera de Vigo y la historia de nuestra ciudad"
+    },
+    "objetivoPedagogico": {
+      "gl": "Discurso narrativo estruturado en tres tempos: First, Then, Finally.",
+      "es": "Discurso narrativo estructurado en tres tiempos: First, Then, Finally."
+    },
+    "actividadAula": {
+      "gl": "Narración colectiva do escudo e a árbore da Oliveira: \"FIRST we planted the seed, THEN it grew strong, FINALLY it gave peace to Vigo!\".",
+      "es": "Narración colectiva del escudo y el árbol de la Olivera: \"FIRST we planted the seed, THEN it grew strong, FINALLY it gave peace to Vigo!\"."
+    },
+    "actividadHogar": {
+      "gl": "Ao lembrar o día antes de durmir: \"FIRST we had breakfast, THEN we walked in the park, FINALLY we read this story!\".",
+      "es": "Al recordar el día antes de dormir: \"FIRST we had breakfast, THEN we walked in the park, FINALLY we read this story!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Resumo oral do día na hora de ir á cama",
+      "es": "Resumen oral del día en la hora de ir a la cama"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "First",
+        "Then",
+        "Finally",
+        "Olive tree",
+        "Peace"
+      ],
+      "tpr": [
+        "Hold up one finger (First)",
+        "Two fingers (Then)",
+        "Open arms (Finally)"
+      ],
+      "frase": "FIRST the seed, THEN it grew strong, FINALLY peace for all!",
+      "audio_id": "en_c5_m5_first"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Secuenciación canónica temporal do relato indispensable para a competencia lectora.",
+      "es": "Secuenciación canónica temporal del relato indispensable para la competencia lectora."
+    },
+    "ponteCasaEscola": {
+      "gl": "Contar o día en tres pasos consolida a memoria e a coherencia narrativa da crianza.",
+      "es": "Contar el día en tres pasos consolida la memoria y la coherencia narrativa de la criatura."
+    }
+  },
+  {
+    "id": "c5_m6",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 6,
+    "nombreMes": {
+      "gl": "Febreiro",
+      "es": "Febrero"
+    },
+    "icono": "trovas",
+    "centroInteres": {
+      "gl": "O Entroido lírico e teatro dirixido entre iguais",
+      "es": "El Entroido lírico y teatro dirigido entre iguales"
+    },
+    "objetivoPedagogico": {
+      "gl": "Comandos emitidos por nenos para nenos (Peer-to-Peer TPR) con rimas fonolóxicas.",
+      "es": "Comandos emitidos por niños para niños (Peer-to-Peer TPR) con rimas fonológicas."
+    },
+    "actividadAula": {
+      "gl": "Un neno toma o bastón de mando: \"Mateo says: Take the golden mask, walk backwards, and tell everyone to FREEZE!\".",
+      "es": "Un niño toma el bastón de mando: \"Mateo says: Take the golden mask, walk backwards, and tell everyone to FREEZE!\"."
+    },
+    "actividadHogar": {
+      "gl": "O neno dirixe o xogo aos pais: \"Now you must obey my rule: jump on one foot until I say STOP!\".",
+      "es": "El niño dirige el juego a los padres: \"Now you must obey my rule: jump on one foot until I say STOP!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "O neno fai de mestre no salón da casa",
+      "es": "El niño hace de maestro en el salón de casa"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "Mask",
+        "Backwards",
+        "Leader",
+        "Rule",
+        "Obey"
+      ],
+      "tpr": [
+        "Take mask",
+        "Walk backwards",
+        "Freeze command"
+      ],
+      "frase": "Leader says: take the mask, walk backwards, and FREEZE!",
+      "audio_id": "en_c5_m6_leader"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Liderado positivo e inversión de roles xerárquicos para o afianzamento da autoestima.",
+      "es": "Liderazgo positivo e inversión de roles jerárquicos para el afianzamiento de la autoestima."
+    },
+    "ponteCasaEscola": {
+      "gl": "Permitir que a crianza guíe o xogo cos adultos desenvolve a súa autonomía e responsabilidade.",
+      "es": "Permitir que la criatura guíe el juego con los adultos desarrolla su autonomía y responsabilidad."
+    }
+  },
+  {
+    "id": "c5_m7",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 7,
+    "nombreMes": {
+      "gl": "Marzo",
+      "es": "Marzo"
+    },
+    "icono": "patrons",
+    "centroInteres": {
+      "gl": "Matemáticas na natureza: patróns e simetrías",
+      "es": "Matemáticas en la naturaleza: patrones y simetrías"
+    },
+    "objetivoPedagogico": {
+      "gl": "Predición lóxica de secuencias e descubrimento da simetría nas follas e cunchas.",
+      "es": "Predicción lógica de secuencias y descubrimiento de la simetría en las hojas y conchas."
+    },
+    "actividadAula": {
+      "gl": "Cadea de movemento con patrón: \"Circle, square, triangle... PREDICT what shape comes next!\".",
+      "es": "Cadena de movimiento con patrón: \"Circle, square, triangle... ¡PREDICT what shape comes next!\"."
+    },
+    "actividadHogar": {
+      "gl": "Dobrando unha folla pola metade: \"Fold the paper in half, look at the mirror symmetry on both sides!\".",
+      "es": "Doblando una hoja por la mitad: \"Fold the paper in half, look at the mirror symmetry on both sides!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Xogo de papiroflexia sinxela na mesa",
+      "es": "Juego de papiroflexia sencilla en la mesa"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "Pattern",
+        "Predict",
+        "Symmetry",
+        "Mirror",
+        "Next"
+      ],
+      "tpr": [
+        "Clap pattern",
+        "Predict next",
+        "Fold paper"
+      ],
+      "frase": "Follow the pattern and PREDICT what shape comes next!",
+      "audio_id": "en_c5_m7_predict"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Capacidade de anticipación cognitiva e descubrimento de regularidades no contorno.",
+      "es": "Capacidad de anticipación cognitiva y descubrimiento de regularidades en el entorno."
+    },
+    "ponteCasaEscola": {
+      "gl": "A mente matemática florece cando xoga coas formas e a simetría da propia natureza.",
+      "es": "La mente matemática florece cuando juega con las formas y la simetría de la propia naturaleza."
+    }
+  },
+  {
+    "id": "c5_m8",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 8,
+    "nombreMes": {
+      "gl": "Abril",
+      "es": "Abril"
+    },
+    "icono": "ecoloxia_marina",
+    "centroInteres": {
+      "gl": "Ecoloxía mariña e protección dos fondos da ría",
+      "es": "Ecología marina y protección de los fondos de la ría"
+    },
+    "objetivoPedagogico": {
+      "gl": "Argumentación ética básica, primeiro condicional e responsabilidade ecolóxica.",
+      "es": "Argumentación ética básica, primer condicional y responsabilidad ecológica."
+    },
+    "actividadAula": {
+      "gl": "Debate en asemblea: \"IF we protect the clean ocean, THEN the white dolphins will swim near our beaches!\".",
+      "es": "Debate en asamblea: \"IF we protect the clean ocean, THEN the white dolphins will swim near our beaches!\"."
+    },
+    "actividadHogar": {
+      "gl": "Recollendo o lixo na praia de Samil: \"IF we pick up this plastic, THEN the sea turtles will stay safe!\".",
+      "es": "Recogiendo la basura en la playa de Samil: \"IF we pick up this plastic, THEN the sea turtles will stay safe!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Coidado activo da praia ou parque",
+      "es": "Cuidado activo de la playa o parque"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "Protect",
+        "Plastic",
+        "Ocean",
+        "Clean",
+        "Turtle"
+      ],
+      "tpr": [
+        "Pick up trash",
+        "Swim like dolphin",
+        "Thumbs up clean"
+      ],
+      "frase": "IF we protect the ocean, THEN the dolphins will swim safely!",
+      "audio_id": "en_c5_m8_ocean"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Conciencia moral ecolóxica e nexo de causa-consecuencia futura (If... then).",
+      "es": "Conciencia moral ecológica y nexo de causa-consecuencia futura (If... then)."
+    },
+    "ponteCasaEscola": {
+      "gl": "Os nenos son os verdadeiros embaixadores da sostibilidade e da limpeza en Vigo.",
+      "es": "Los niños son los verdaderos embajadores de la sostenibilidad y de la limpieza en Vigo."
+    }
+  },
+  {
+    "id": "c5_m9",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 9,
+    "nombreMes": {
+      "gl": "Maio",
+      "es": "Mayo"
+    },
+    "icono": "empatia",
+    "centroInteres": {
+      "gl": "Intelixencia emocional, desacordos e empatía",
+      "es": "Inteligencia emocional, desacuerdos y empatía"
+    },
+    "objetivoPedagogico": {
+      "gl": "Expresión de desacordo non violento (\"I disagree because...\") e busca de acordos.",
+      "es": "Expresión de desacuerdo no violento (\"I disagree because...\") y búsqueda de acuerdos."
+    },
+    "actividadAula": {
+      "gl": "Rolda de acordos con obxecto parlante: \"I understand your idea, but I suggest we take turns with the game!\".",
+      "es": "Ronda de acuerdos con objeto parlante: \"I understand your idea, but I suggest we take turns with the game!\"."
+    },
+    "actividadHogar": {
+      "gl": "Nun conflito entre irmáns ou amigos: \"Let us stop, take a deep breath, and negotiate fairly!\".",
+      "es": "En un conflicto entre hermanos o amigos: \"Let us stop, take a deep breath, and negotiate fairly!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Conversa serena tras un enfado",
+      "es": "Conversación serena tras un enfado"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "Understand",
+        "Suggest",
+        "Negotiate",
+        "Fair",
+        "Calm"
+      ],
+      "tpr": [
+        "Open hands agree",
+        "Breathe calm",
+        "Shake hands kindly"
+      ],
+      "frase": "I understand you, let us negotiate AND share fairly!",
+      "audio_id": "en_c5_m9_negotiate"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Teoría da mente madura: recoñecer desexos e pensamentos distintos nos iguais.",
+      "es": "Teoría de la mente madura: reconocer deseos y pensamientos distintos en los iguales."
+    },
+    "ponteCasaEscola": {
+      "gl": "Resolver conflitos sen berros nin castigos punitivos prepara para a cidadanía democrática.",
+      "es": "Resolver conflictos sin gritos ni castigos punitivos prepara para la ciudadanía democrática."
+    }
+  },
+  {
+    "id": "c5_m10",
+    "cursoId": "curso_5_6",
+    "cursoNumero": 5,
+    "mesNumero": 10,
+    "nombreMes": {
+      "gl": "Xuño",
+      "es": "Junio"
+    },
+    "icono": "graduacion",
+    "centroInteres": {
+      "gl": "O gran salto a Primaria: memoria de cinco anos con Lúa",
+      "es": "El gran salto a Primaria: memoria de cinco años con Lúa"
+    },
+    "objetivoPedagogico": {
+      "gl": "Celebración da traxectoria de 0 a 6 anos, despedida afectiva e orgullo polo salto escolar.",
+      "es": "Celebración de la trayectoria de 0 a 6 años, despedida afectiva y orgullo por el salto escolar."
+    },
+    "actividadAula": {
+      "gl": "Gran asemblea de graduación: \"We are brave explorers! We are ready for Primary School, hurray!\".",
+      "es": "Gran asamblea de graduación: \"We are brave explorers! We are ready for Primary School, ¡hurray!\"."
+    },
+    "actividadHogar": {
+      "gl": "Revisando as fotos de bebé: \"Look how tall you are now! You are ready for the big school, so proud!\".",
+      "es": "Revisando las fotos de bebé: \"Look how tall you are now! You are ready for the big school, so proud!\"."
+    },
+    "rutinaRecomendadaHogar": {
+      "gl": "Mirar fotos familiares dende os 0 anos",
+      "es": "Mirar fotos familiares desde los 0 años"
+    },
+    "minutosSugeridos": 8,
+    "ingles": {
+      "lexico": [
+        "Brave",
+        "Explorer",
+        "Primary",
+        "Ready",
+        "Celebrate"
+      ],
+      "tpr": [
+        "Stand tall",
+        "Wave graduate cap",
+        "Cheer hurray"
+      ],
+      "frase": "We are brave explorers ready for Primary School, hurray!",
+      "audio_id": "en_c5_m10_graduate"
+    },
+    "dinamicaEvolutiva": {
+      "gl": "Consolidación da identidade persoal, autoeficacia e despedida amorosa da etapa infantil.",
+      "es": "Consolidación de la identidad personal, autoeficacia y despedida amorosa de la etapa infantil."
+    },
+    "ponteCasaEscola": {
+      "gl": "Cinco anos de camiño conxunto entre a escola e o fogar en Vigo: unha infancia libre de pantallas, rica en movemento e chea de amor.",
+      "es": "Cinco años de camino conjunto entre la escuela y el hogar en Vigo: una infancia libre de pantallas, rica en movimiento y llena de amor."
+    }
+  }
+]

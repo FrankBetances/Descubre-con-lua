@@ -1,79 +1,82 @@
-# BRIEFING — 2026-09-11T08:55:00Z
+# BRIEFING — 2026-09-20T15:21:00Z
 
 ## Mission
-Implement Content-as-Data architecture, strongly-typed Dart models, JSON assets, loaders, repositories, validators, and complete automated test suite for Milestone 2 in «Descubre con Lúa · Edición Vigo».
+Implement Milestone 2 (R2 & R4 Core): Pure Dart FSRS v4.5 service, LocalStore-backed UserProgressService, 9 Dart data models, and extend ContentRepository with loaders and query methods.
 
 ## 🔒 My Identity
-- Archetype: teamwork_preview_worker
+- Archetype: teamwork_preview_worker_m2
 - Roles: implementer, qa, specialist
-- Working directory: <documentos locales>/Descubre con Lúa/.agents/teamwork_preview_worker_m2/
-- Original parent: 155c43c0-be2b-46ce-b47d-cc280903c77f
-- Milestone: M2: Content-as-Data, JSON Assets & Validation Suite
+- Working directory: /Users/frankalbertobetancesreinoso/Documentos locales/Descubre con Lúa/.agents/teamwork_preview_worker_m2/
+- Original parent: 9e628138-021d-44c9-9a72-2da6208e84bb
+- Milestone: Milestone 2 (R2 & R4 Core)
 
 ## 🔒 Key Constraints
-- Pure offline: Zero network calls, zero network packages in pubspec.
-- Strict 1:1 bilingual parity (Galego RAG & Castellano) on all text fields.
-- Curricular alignment: Decreto 150/2022 (Áreas 1, 2, 3 do primeiro ciclo 0-3 anos).
-- Clinical blacklist: Zero prohibited clinical, diagnostic, or pathological terms.
-- Integrity: Genuine implementations only, no hardcoding of test results or dummy facades.
-- File ownership: lib/data/**, assets/content/**, test/data/**.
+- Pure Dart / Flutter implementation matching reference `.studio_ref/`.
+- Zero network, zero external cloud dependencies.
+- LocalStore for atomic offline persistence.
+- Immutable models with LocalizedString, fromJson/toJson, == and hashCode.
+- 17 weights and exact retrievability formula for FSRS v4.5.
+- DO NOT CHEAT. No hardcoding, genuine logic throughout.
 
 ## Current Parent
-- Conversation ID: 155c43c0-be2b-46ce-b47d-cc280903c77f
-- Updated: 2026-09-11T08:55:00Z
+- Conversation ID: 9e628138-021d-44c9-9a72-2da6208e84bb
+- Updated: not yet
 
 ## Task Summary
 - **What to build**:
-  1. Strongly typed models in `lib/data/models/` (`curricular_model.dart`, `unidad_model.dart`, `capsula_model.dart`).
-  2. Loaders, repository, and validators in `lib/data/` (`content_asset_loader.dart`, `content_repository.dart`, `content_validator.dart`).
-  3. Base JSON assets in `assets/content/unidades/` and `assets/content/capsulas/`.
-  4. Automated validation test suite in `test/data/` (6 test suites).
-  5. Empirical verification suite.
-- **Success criteria**: 100% tests pass, zero clinical terms, 1:1 parity, complete schema validation.
-- **Interface contracts**: PROJECT.md § Interface Contracts.
-- **Code layout**: PROJECT.md § Code Layout.
-
-## Key Decisions Made
-- Used `LocalizedString` from `lib/core/localization/localized_string.dart` as the atomic bilingual value object.
-- Provided canonical compatibility aliases (`PreguntaNivel` = `PreguntasItem`, `ExploracionSensorial` = `Exploracion`, `MatematicasTempras` = `Matematicas`, `PonteCasa` = `PuenteCasa`) to satisfy both dispatch naming and schema specification seamlessly.
-- Canonical getters exposed: `unidad.cancion`, `unidad.conto`, `unidad.ponteCasa`, `unidad.curricular`, and `capsula.contido`.
-- Supported both single string and `LocalizedString` audio assets for multilingual audio resolution.
-- Enriched clinical blacklist regex to catch both Galician and Spanish variants (`patoloxía`/`patología`, `tratamento`/`tratamiento`, etc.).
+  - `lib/core/fsrs_service.dart`: Complete pure Dart FSRS v4.5 implementation with 17 weights, retrievability formula, mean reversion, review turning.
+  - `lib/core/progress_service.dart`: Offline UserProgress manager on top of LocalStore (XP, streaks, aula/fogar dual logs, FSRS review).
+  - `lib/data/models/cuento_model.dart`: 200-story bank model with pages, graduated comprehension questions, TPR.
+  - `lib/data/models/lamina_model.dart`: 200 illustrated cards / flashcards model.
+  - `lib/data/models/corpus_palabra_model.dart`: 8000-word corpus model with lemma, pos, frequency band (1k..8k), CEFR, zipf score.
+  - `lib/data/models/dia_calendario_dual_model.dart`: 1000-day dual calendar model (aula + fogar), MesCurricular50, CursoInfo.
+  - `lib/data/models/fsrs_card_model.dart`: FSRS card state model (DSR model).
+  - `lib/data/models/english_corpus_model.dart`: English high frequency lexicon and dialogue scenarios.
+  - `lib/data/models/phonics_model.dart`: 44 phonemes, decodable words, word families, phonics missions.
+  - `lib/data/models/estrategia_model.dart`: Pedagogical strategies catalog model.
+  - `lib/data/models/dinamica_model.dart`: Classroom daily dynamics catalog model.
+  - `lib/data/repositories/content_repository.dart`: Extended with caching, loading and query methods for all new models.
+  - Unit tests in `test/core/fsrs_service_test.dart`, `test/core/progress_service_test.dart`, `test/data/m2_models_test.dart`, `test/data/content_repository_m2_test.dart`.
+- **Success criteria**: All files created, genuine implementations, all tests written and passing, 100% offline, zero network.
 
 ## Change Tracker
-- **Files modified/created**:
-  - `lib/data/models/curricular_model.dart`: Decreto 150/2022 reference and validation model.
-  - `lib/data/models/unidad_model.dart`: Unidad and nested component models.
-  - `lib/data/models/capsula_model.dart`: Capsula, Bloque, Afirmacion, ContidoCapsula models.
-  - `lib/data/loaders/content_asset_loader.dart`: Offline JSON loader with headless test support.
-  - `lib/data/repositories/content_repository.dart`: Querying and filtering repository.
-  - `lib/data/validators/content_validator.dart`: Programmatic validator for parity, curriculum, blacklist, referential integrity.
-  - `assets/content/unidades/juega.mar.01.json`: Vigo maritime base unit.
-  - `assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json`: Base communicative development capsule.
-  - `test/data/models_test.dart`: Serialization, deserialization, and model invariant tests.
-  - `test/data/content_loader_test.dart`: Loader and repository query tests.
-  - `test/data/bilingual_parity_test.dart`: 1:1 gl/es non-empty parity tests.
-  - `test/data/curricular_alignment_test.dart`: Decreto 150/2022 alignment tests.
-  - `test/data/clinical_terms_blacklist_test.dart`: Clinical blacklist linter tests.
-  - `test/data/referential_integrity_test.dart`: Referential integrity and structure tests.
-  - `.agents/teamwork_preview_worker_m2/verify_m2.py`: Empirical verification suite (93 checks, 100% pass).
-  - `test/data/run_m2_adversarial_suite.py`: Complete test runner (73 checks, 100% pass).
-- **Build status**: PASS (100% empirical checks passed).
-- **Pending issues**: None.
+- **Files modified**:
+  - `lib/data/loaders/content_asset_loader.dart`: Added `loadRawString` method.
+  - `lib/data/repositories/content_repository.dart`: Added caching and query methods for all 9 content types.
+- **Files created**:
+  - `lib/core/fsrs_service.dart`
+  - `lib/core/progress_service.dart`
+  - `lib/data/models/fsrs_card_model.dart`
+  - `lib/data/models/cuento_model.dart`
+  - `lib/data/models/lamina_model.dart`
+  - `lib/data/models/corpus_palabra_model.dart`
+  - `lib/data/models/dia_calendario_dual_model.dart`
+  - `lib/data/models/english_corpus_model.dart`
+  - `lib/data/models/phonics_model.dart`
+  - `lib/data/models/estrategia_model.dart`
+  - `lib/data/models/dinamica_model.dart`
+  - `test/core/fsrs_service_test.dart`
+  - `test/core/progress_service_test.dart`
+  - `test/data/m2_models_test.dart`
+  - `test/data/content_repository_m2_test.dart`
+- **Build status**: Ready for verification
+- **Pending issues**: None
 
 ## Quality Status
-- **Build/test result**: 93/93 empirical checks PASS, 73/73 test suite PASS, 0 defects.
-- **Lint status**: 0 violations, zero network calls, zero network packages.
-- **Tests added/modified**: 6 comprehensive Flutter Dart test suites in `test/data/` + Python runners.
+- **Build/test result**: Self-contained Dart logic, pure unit tests created.
+- **Lint status**: Follows Flutter best practices, `@immutable`, `const` constructors, strict typing.
+- **Tests added/modified**: 4 comprehensive test suites covering all models, algorithms, persistence, and repo methods.
 
 ## Loaded Skills
-- **Source**: N/A (Standard teamwork worker workflow)
-- **Local copy**: N/A
-- **Core methodology**: Content-as-Data with strongly-typed Dart domain models and programmatic validation gates.
+None loaded.
+
+## Key Decisions Made
+- Used exact 17 weights and decay formulas from FSRS v4.5 matching TypeScript reference `.studio_ref/src/utils/fsrsAlgorithm.ts`.
+- Integrated `LocalStore` for atomic file persistence in `ProgressService` ensuring offline data integrity.
+- Ensured all models implement `@immutable`, `LocalizedString`, `fromJson`/`toJson`, `==`, `hashCode`, and `toString()`.
 
 ## Artifact Index
-- `.agents/teamwork_preview_worker_m2/DISPATCH.md` — Assignment and requirements.
-- `.agents/teamwork_preview_worker_m2/BRIEFING.md` — Agent state and memory.
-- `.agents/teamwork_preview_worker_m2/progress.md` — Step-by-step progress tracking.
-- `.agents/teamwork_preview_worker_m2/verify_m2.py` — Empirical verification script.
-- `.agents/teamwork_preview_worker_m2/handoff.md` — Final completion report.
+- `.agents/teamwork_preview_worker_m2/DISPATCH.md` — Assignment record
+- `.agents/teamwork_preview_worker_m2/BRIEFING.md` — Situational awareness
+- `.agents/teamwork_preview_worker_m2/progress.md` — Liveness heartbeat
+- `.agents/teamwork_preview_worker_m2/handoff.md` — Final handoff report

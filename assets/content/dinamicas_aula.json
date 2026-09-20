@@ -1,0 +1,192 @@
+[
+  {
+    "id": "din-luns-pulso",
+    "clave": "asemblea_pulso",
+    "diaSemana": "luns",
+    "titulo": {
+      "gl": "Asemblea de Benvida e Pulso Calmo a 72 bpm",
+      "es": "Asamblea de Bienvenida y Pulso Calmo a 72 bpm"
+    },
+    "subtitulo": {
+      "gl": "Sincronización vagal do grupo e escoita do conto semanal",
+      "es": "Sincronización vagal del grupo y escucha del cuento semanal"
+    },
+    "duracionMinutos": 15,
+    "ritmoBpm": 72,
+    "obxectivo": {
+      "gl": "Activar a escoita conxunta, baixar o cortisol da fin de semana e presentar a temática do conto da semana.",
+      "es": "Activar la escucha conjunta, reducir el cortisol del fin de semana y presentar la temática del cuento de la semana."
+    },
+    "procedementoPasoAPaso": {
+      "gl": "1. Sentarse en círculo na alfombra sen pantallas nin altofalantes estridentes. 2. A mestra marca 72 bpm batendo suavemente os xeonllos coas palmas. 3. Mirada afectiva a cada crianza chamándoa polo seu nome. 4. Apertura do libro grande ou lámina ilustrada do conto semanal.",
+      "es": "1. Sentarse en círculo en la alfombra sin pantallas ni altavoces estridentes. 2. La maestra marca 72 bpm palmeando suavemente las rodillas. 3. Mirada afectiva a cada niño llamándolo por su nombre. 4. Apertura del libro grande o lámina ilustrada del cuento semanal."
+    },
+    "materialSensorial": {
+      "gl": "Alfombra de la ou teas naturais, coixíns de algodón, lámina ilustrada en papel mate A3.",
+      "es": "Alfombra de lana o telas naturales, cojines de algodón, lámina ilustrada en papel mate A3."
+    },
+    "fraseDocente": {
+      "gl": "\"Mans abertas, ollos curiosos. Respiramos xuntas e escoitamos o que nos trae Lúa hoxe.\"",
+      "es": "\"Manos abiertas, ojos curiosos. Respiramos juntas y escuchamos lo que nos trae Lúa hoy.\""
+    },
+    "tprIngles": {
+      "comando": "Welcome friends, sit in circle!",
+      "accion": {
+        "gl": "Abrir brazos e sentar en calma marcando o círculo coas mans.",
+        "es": "Abrir brazos y sentarse en calma marcando el círculo con las manos."
+      }
+    }
+  },
+  {
+    "id": "din-martes-fonica",
+    "clave": "fonica_kinestesica",
+    "diaSemana": "martes",
+    "titulo": {
+      "gl": "Fónica Kinestésica e Discriminación de Sons da Ría",
+      "es": "Fónica Kinestésica y Discriminación de Sonidos de la Ría"
+    },
+    "subtitulo": {
+      "gl": "Asociación de fonemas a xestos corporais e tacto de madeira",
+      "es": "Asociación de fonemas a gestos corporales y tacto de madera"
+    },
+    "duracionMinutos": 20,
+    "ritmoBpm": 68,
+    "obxectivo": {
+      "gl": "Discriminar o fonema inicial da palabra diana do conto mediante propiocepción e movemento manual.",
+      "es": "Discriminar el fonema inicial de la palabra diana del cuento mediante propiocepción y movimiento manual."
+    },
+    "procedementoPasoAPaso": {
+      "gl": "1. Presentar a letra en relevo de madeira de faia. 2. Trazar co dedo índice mentres se emite o son continuado /s/ ou /m/. 3. Imitar o movemento dun animal do conto (ex. a gaivota ou a balea). 4. Xogo de silencio: detectar quen atopa no cesto un obxecto que empece polo mesmo son.",
+      "es": "1. Presentar la letra en relieve de madera de haya. 2. Trazar con el dedo índice mientras se emite el sonido continuado /s/ o /m/. 3. Imitar el movimiento de un animal del cuento (ej. la gaviota o la ballena). 4. Juego de silencio: detectar quién encuentra en el cesto un objeto que comience por el mismo sonido."
+    },
+    "materialSensorial": {
+      "gl": "Letras de lixa ou madeira maciza, cesto de vimbio con obxectos naturais (cunchas, pedras, piñas).",
+      "es": "Letras de lija o madera maciza, cesto de mimbre con objetos naturales (conchas, piedras, piñas)."
+    },
+    "fraseDocente": {
+      "gl": "\"Sente como vibra o son nos teus beizos antes de que saia a voar.\"",
+      "es": "\"Siente cómo vibra el sonido en tus labios antes de que salga a volar.\""
+    },
+    "tprIngles": {
+      "comando": "Touch the sound, make the wave!",
+      "accion": {
+        "gl": "Tocar a letra na man e facer co brazo a onda do mar.",
+        "es": "Tocar la letra en la mano y hacer con el brazo la ola del mar."
+      }
+    }
+  },
+  {
+    "id": "din-mercores-sensorial",
+    "clave": "exploracion_sensorial",
+    "diaSemana": "mercores",
+    "titulo": {
+      "gl": "Caixa de Tesouros da Ría e Matemáticas Temperás",
+      "es": "Caja de Tesoros de la Ría y Matemáticas Tempranas"
+    },
+    "subtitulo": {
+      "gl": "Clasificación táctil, seriacions e texturas vivas de Vigo",
+      "es": "Clasificación táctil, seriaciones y texturas vivas de Vigo"
+    },
+    "duracionMinutos": 25,
+    "ritmoBpm": 70,
+    "obxectivo": {
+      "gl": "Desenvolver a discriminación háptica, contar ata 3 elementos e clasificar por tamaño sen pantallas.",
+      "es": "Desarrollar la discriminación háptica, contar hasta 3 elementos y clasificar por tamaño sin pantallas."
+    },
+    "procedementoPasoAPaso": {
+      "gl": "1. Cada parella recibe unha bandexa de madeira con area de praia limpa e cunchas de bivalvos. 2. Pechar os ollos e buscar con dúas mans a cuncha máis grande e a máis pequena. 3. Agrupar de dúas en dúas mentres contamos en voz viva. 4. Limpar as mans con pano húmido de herbas aromáticas.",
+      "es": "1. Cada pareja recibe una bandeja de madera con arena de playa limpia y conchas de bivalvos. 2. Cerrar los ojos y buscar con dos manos la concha más grande y la más pequeña. 3. Agrupar de dos en dos mientras contamos en voz viva. 4. Limpiar las manos con paño húmedo de hierbas aromáticas."
+    },
+    "materialSensorial": {
+      "gl": "Bandexas de castiñeiro, area fina, cunchas recollidas na praia de Samil, auga morna.",
+      "es": "Bandejas de castaño, arena fina, conchas recogidas en la playa de Samil, agua tibia."
+    },
+    "fraseDocente": {
+      "gl": "\"Que che contan os teus dedos? Está fría, rugosa ou moi suave?\"",
+      "es": "\"¿Qué te cuentan tus dedos? ¿Está fría, rugosa o muy suave?\""
+    },
+    "tprIngles": {
+      "comando": "Pick one shell, hide it behind your back!",
+      "accion": {
+        "gl": "Apañar unha cuncha coa man dereita e agondala ás costas rindo.",
+        "es": "Coger una concha con la mano derecha y esconderla a la espalda riendo."
+      }
+    }
+  },
+  {
+    "id": "din-xoves-tpr",
+    "clave": "inmersion_tpr",
+    "diaSemana": "xoves",
+    "titulo": {
+      "gl": "Inmersión Oral TPR e Circuíto de Psicomotricidade Atlántica",
+      "es": "Inmersión Oral TPR y Circuito de Psicomotricidad Atlántica"
+    },
+    "subtitulo": {
+      "gl": "Asimilación do inglés mediante movemento groso e xogo corporal",
+      "es": "Asimilación del inglés mediante movimiento grueso y juego corporal"
+    },
+    "duracionMinutos": 25,
+    "ritmoBpm": 80,
+    "obxectivo": {
+      "gl": "Interiorizar verbos de acción en inglés (jump, run, freeze, swim) mediante resposta motriz instantánea sen tradución mental.",
+      "es": "Interiorizar verbos de acción en inglés (jump, run, freeze, swim) mediante respuesta motriz instantánea sin traducción mental."
+    },
+    "procedementoPasoAPaso": {
+      "gl": "1. O docente modela primeiro a acción co propio corpo dicindo a frase en inglés con prosodia musical. 2. O alumnado imita a acción xunto á docente en compás de 4 tempos. 3. A docente di a frase e os nenos executan o movemento en silencio motor. 4. Xogo \"Freeze like a lighthouse of Cíes\".",
+      "es": "1. El docente modela primero la acción con el propio cuerpo diciendo la frase en inglés con prosodia musical. 2. El alumnado imita la acción junto a la docente en compás de 4 tiempos. 3. La docente dice la frase y los niños ejecutan el movimiento en silencio motor. 4. Juego \"Freeze like a lighthouse of Cíes\"."
+    },
+    "materialSensorial": {
+      "gl": "Colchonetas de psicomotricidade, cordas grosas de algodón, banco sueco de madeira.",
+      "es": "Colchonetas de psicomotricidad, cuerdas gruesas de algodón, banco sueco de madera."
+    },
+    "fraseDocente": {
+      "gl": "\"Listen with your ears, answer with your feet! Jump like a dolphin!\"",
+      "es": "\"Listen with your ears, answer with your feet! Jump like a dolphin!\""
+    },
+    "tprIngles": {
+      "comando": "Swim, swim, jump high, freeze!",
+      "accion": {
+        "gl": "Nadar cos brazos, chimpar cos dous pés e quedar conxelados coma estatuas.",
+        "es": "Nadar con los brazos, saltar con los dos pies y quedar congelados como estatuas."
+      }
+    }
+  },
+  {
+    "id": "din-venres-calma",
+    "clave": "circulo_calma",
+    "diaSemana": "venres",
+    "titulo": {
+      "gl": "Círculo da Calma, Respiración do Oso e Síntese co Fogar",
+      "es": "Círculo de la Calma, Respiración del Oso y Síntesis con el Hogar"
+    },
+    "subtitulo": {
+      "gl": "Regulación parasimpática, despedida afectiva e ponte para a familia",
+      "es": "Regulación parasimpática, despedida afectiva y puente para la familia"
+    },
+    "duracionMinutos": 15,
+    "ritmoBpm": 60,
+    "obxectivo": {
+      "gl": "Restablecer o ton vagal, recordar o fito máis fermoso da semana e levar a casa unha mensaxe de complicidade oral.",
+      "es": "Restablecer el tono vagal, recordar el hito más hermoso de la semana y llevar a casa un mensaje de complicidad oral."
+    },
+    "procedementoPasoAPaso": {
+      "gl": "1. Baixar a intensidade da luz natural e sentarse en roda. 2. Pousar as mans sobre a barriga: \"Respiración do oso pardo\": inspirar en 3 tempos, expulsar o aire suave coma unha brisa. 3. Cada quen entrega unha aperta ou unha palabra doce á parella do lado. 4. A mestra le a nota de conexión para as nais e pais da fin de semana.",
+      "es": "1. Bajar la intensidad de la luz natural y sentarse en rueda. 2. Posar las manos sobre la barriga: \"Respiración del oso pardo\": inspirar en 3 tiempos, expulsar el aire suave como una brisa. 3. Cada uno entrega un abrazo o una palabra dulce a la pareja de al lado. 4. La maestra lee la nota de conexión para las madres y padres del fin de semana."
+    },
+    "materialSensorial": {
+      "gl": "Luz cálida indirecta, difusor de esencias naturais de lavanda ou eucalipto, peluche de apego de Lúa.",
+      "es": "Luz cálida indirecta, difusor de esencias naturales de lavanda o eucalipto, peluche de apego de Lúa."
+    },
+    "fraseDocente": {
+      "gl": "\"Todo está ben. O noso corpo descansa e leva un sorriso enorme para compartir na casa.\"",
+      "es": "\"Todo está bien. Nuestro cuerpo descansa y lleva una sonrisa enorme para compartir en casa.\""
+    },
+    "tprIngles": {
+      "comando": "Breathe in deep, hug your friend, goodbye!",
+      "accion": {
+        "gl": "Inspirar fondo inflando o peito, abrazarse con cariño e dicir adeus sorrindo.",
+        "es": "Inspirar profundo inflando el pecho, abrazarse con cariño y decir adiós sonriendo."
+      }
+    }
+  }
+]

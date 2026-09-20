@@ -1,0 +1,5537 @@
+[
+  {
+    "id": "flashcard_a_apple",
+    "numero": 1,
+    "categoria": "alfabeto",
+    "gl": "A · Mazá vermella",
+    "es": "A · Manzana roja",
+    "en": "A · Apple",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-001",
+    "corHex": "#dc2626",
+    "bgHex": "#fef2f2",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ves a mazá vermella? ¿A quen lle gusta morder «ñam-ñam»?",
+      "es": "¿Ves la manzana roja? ¿A quién le gusta morder «ñam-ñam»?"
+    },
+    "obxectivo": {
+      "gl": "Recoñecemento fonético do son A e identificación cromática do vermello.",
+      "es": "Reconocimiento fonético del sonido A e identificación cromática del rojo."
+    },
+    "tprAccion": {
+      "en": "Munch an apple! Crunch, crunch!",
+      "gl": "Facer o xesto de morder unha mazá saborosa.",
+      "es": "Hacer el gesto de morder una manzana sabrosa."
+    }
+  },
+  {
+    "id": "flashcard_b_boat",
+    "numero": 2,
+    "categoria": "alfabeto",
+    "gl": "B · Barco da ría",
+    "es": "B · Barco de la ría",
+    "en": "B · Boat",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-002",
+    "corHex": "#0284c7",
+    "bgHex": "#f0f9ff",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde navega o barquiño? ¿Baila sobre as ondas do mar?",
+      "es": "¿Dónde navega el barquito? ¿Baila sobre las olas del mar?"
+    },
+    "obxectivo": {
+      "gl": "Asociación do son B co balanceo corporal mariño.",
+      "es": "Asociación del sonido B con el balanceo corporal marino."
+    },
+    "tprAccion": {
+      "en": "Row your boat on the sea waves!",
+      "gl": "Remar cos brazos cara adiante e cara atrás.",
+      "es": "Remar con los brazos hacia adelante y hacia atrás."
+    }
+  },
+  {
+    "id": "flashcard_c_cat",
+    "numero": 3,
+    "categoria": "alfabeto",
+    "gl": "C · Gata Lúa",
+    "es": "C · Gata Lúa",
+    "en": "C · Cat",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-003",
+    "corHex": "#ea580c",
+    "bgHex": "#fff7ed",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como fai a gatiña cando está agarimosa? «Miau, miau...»",
+      "es": "¿Cómo hace la gatita cuando está cariñosa? «Miau, miau...»"
+    },
+    "obxectivo": {
+      "gl": "Discriminación auditiva e imitación fónica do son felino.",
+      "es": "Discriminación auditiva e imitación fónica del sonido felino."
+    },
+    "tprAccion": {
+      "en": "Soft kitten paws, stretch and purr!",
+      "gl": "Pousar a man suavemente na cara coma unha patiña.",
+      "es": "Poner la mano suavemente en la cara como una patita."
+    }
+  },
+  {
+    "id": "flashcard_d_dog",
+    "numero": 4,
+    "categoria": "alfabeto",
+    "gl": "D · Can alegre",
+    "es": "D · Perro alegre",
+    "en": "D · Dog",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-004",
+    "corHex": "#b45309",
+    "bgHex": "#fefce8",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como move o rabiño o can de Vigo? «Guau, guau!»",
+      "es": "¿Cómo mueve la colita el perro de Vigo? «¡Guau, guau!»"
+    },
+    "obxectivo": {
+      "gl": "Conexión afectiva co animal doméstico e onomatopeia rítmica.",
+      "es": "Conexión afectiva con el animal doméstico y onomatopeya rítmica."
+    },
+    "tprAccion": {
+      "en": "Wiggle your tail like a happy puppy!",
+      "gl": "Mover as mans atrás simulando o rabiño contento.",
+      "es": "Mover las manos atrás simulando la colita contenta."
+    }
+  },
+  {
+    "id": "flashcard_e_elephant",
+    "numero": 5,
+    "categoria": "alfabeto",
+    "gl": "E · Elefante grande",
+    "es": "E · Elefante grande",
+    "en": "E · Elephant",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-005",
+    "corHex": "#64748b",
+    "bgHex": "#f8fafc",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que longa é a trompa do elefante! ¿Podes erguela ben alto?",
+      "es": "¡Qué larga es la trompa del elefante! ¿Puedes alzarla bien alto?"
+    },
+    "obxectivo": {
+      "gl": "Concepto de tamaño grande e movemento do brazo no espazo.",
+      "es": "Concepto de tamaño grande y movimiento del brazo en el espacio."
+    },
+    "tprAccion": {
+      "en": "Raise your trunk high and stomp your feet!",
+      "gl": "Erguer o brazo facendo de trompa e pisar forte no chan.",
+      "es": "Alzar el brazo haciendo de trompa y pisar fuerte en el suelo."
+    }
+  },
+  {
+    "id": "flashcard_f_fish",
+    "numero": 6,
+    "categoria": "alfabeto",
+    "gl": "F · Peixe da ría",
+    "es": "F · Pez de la ría",
+    "en": "F · Fish",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-006",
+    "corHex": "#0891b2",
+    "bgHex": "#ecfeff",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como nada o peixe na auga limpa? «Glub, glub!»",
+      "es": "¿Cómo nada el pez en el agua limpia? «¡Glub, glub!»"
+    },
+    "obxectivo": {
+      "gl": "Xuntas as mans nadando en ondas e emisión fónica bucal.",
+      "es": "Juntar las manos nadando en ondas y emisión fónica bucal."
+    },
+    "tprAccion": {
+      "en": "Swim like a little fish, glide through the water!",
+      "gl": "Xuntar palmas e facer ondas suaves diante do peito.",
+      "es": "Juntar palmas y hacer ondas suaves delante del pecho."
+    }
+  },
+  {
+    "id": "flashcard_g_guitar",
+    "numero": 7,
+    "categoria": "alfabeto",
+    "gl": "G · Guitarra de música",
+    "es": "G · Guitarra de música",
+    "en": "G · Guitar",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-007",
+    "corHex": "#d97706",
+    "bgHex": "#fffbeb",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Tocas as cordas da guitarra? «Din, don, dan!»",
+      "es": "¿Tocas las cuerdas de la guitarra? «¡Din, don, dan!»"
+    },
+    "obxectivo": {
+      "gl": "Psicomotricidade fina dixital e estímulo da escoita musical.",
+      "es": "Psicomotricidad fina digital y estímulo de la escucha musical."
+    },
+    "tprAccion": {
+      "en": "Strum the strings to the 72 bpm beat!",
+      "gl": "Mover os dedos no aire coma tocando cordas rítmicas.",
+      "es": "Mover los dedos en el aire como tocando cuerdas rítmicas."
+    }
+  },
+  {
+    "id": "flashcard_h_hat",
+    "numero": 8,
+    "categoria": "alfabeto",
+    "gl": "H · Gorro de abrigo",
+    "es": "H · Gorro de abrigo",
+    "en": "H · Hat",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-008",
+    "corHex": "#4338ca",
+    "bgHex": "#eef2ff",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde pomos o gorro cando fai frío? ¿Na cabeza ou nos pés?",
+      "es": "¿Dónde ponemos el gorro cuando hace frío? ¿En la cabeza o en los pies?"
+    },
+    "obxectivo": {
+      "gl": "Conciencia do esquema corporal (cabeza) e rutinas de vestimenta.",
+      "es": "Conciencia del esquema corporal (cabeza) y rutinas de vestimenta."
+    },
+    "tprAccion": {
+      "en": "Put on your warm winter hat!",
+      "gl": "Levar as dúas mans á cabeza e axustar o gorro imaxinario.",
+      "es": "Llevar las dos manos a la cabeza y ajustar el gorro imaginario."
+    }
+  },
+  {
+    "id": "flashcard_i_island",
+    "numero": 9,
+    "categoria": "alfabeto",
+    "gl": "I · Illas Cíes",
+    "es": "I · Islas Cíes",
+    "en": "I · Island",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-009",
+    "corHex": "#059669",
+    "bgHex": "#ecfdf5",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ves as tres illas verdes na entrada da nosa ría?",
+      "es": "¿Ves las tres islas verdes en la entrada de nuestra ría?"
+    },
+    "obxectivo": {
+      "gl": "Sentido de pertenza territorial a Vigo e conta visual 1, 2, 3.",
+      "es": "Sentido de pertenencia territorial a Vigo y conteo visual 1, 2, 3."
+    },
+    "tprAccion": {
+      "en": "Look far away with hand over eyes: island ahead!",
+      "gl": "Poñer a man na fronte coma visera ollando ao horizonte.",
+      "es": "Poner la mano en la frente como visera mirando al horizonte."
+    }
+  },
+  {
+    "id": "flashcard_j_juice",
+    "numero": 10,
+    "categoria": "alfabeto",
+    "gl": "J · Zume de laranxa",
+    "es": "J · Zumo de naranja",
+    "en": "J · Juice",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-010",
+    "corHex": "#f97316",
+    "bgHex": "#fff7ed",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Bebemos un groliño de zume fresco na merenda? «Glup!»",
+      "es": "¿Bebemos un traguito de zumo fresco en la merienda? «¡Glup!»"
+    },
+    "obxectivo": {
+      "gl": "Alimentación sa, agarre de vaso con dúas mans e deglutición.",
+      "es": "Alimentación sana, agarre de vaso con dos manos y deglución."
+    },
+    "tprAccion": {
+      "en": "Hold your cup with two hands and take a sip!",
+      "gl": "Suxeitar o vaso coas dúas mans e facer son de beber.",
+      "es": "Sujetar el vaso con las dos manos y hacer sonido de beber."
+    }
+  },
+  {
+    "id": "flashcard_k_kite",
+    "numero": 11,
+    "categoria": "alfabeto",
+    "gl": "K · Papaventos no ceo",
+    "es": "K · Cometa en el cielo",
+    "en": "K · Kite",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-011",
+    "corHex": "#7c3aed",
+    "bgHex": "#f5f3ff",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como voa o papaventos cando sopra o vento da ría? ¡Sopla forte!",
+      "es": "¿Cómo vuela la cometa cuando sopla el viento de la ría? ¡Sopla fuerte!"
+    },
+    "obxectivo": {
+      "gl": "Exercizo bucofonatorio de sopro continuo e seguimento vertical.",
+      "es": "Ejercicio bucofonatorio de soplo continuo y seguimiento vertical."
+    },
+    "tprAccion": {
+      "en": "Blow wind: Fffff! Fly your kite high!",
+      "gl": "Soprar cos beizos en círculo e erguer a man cara arriba.",
+      "es": "Soplar con los labios en círculo y alzar la mano hacia arriba."
+    }
+  },
+  {
+    "id": "flashcard_l_leaf",
+    "numero": 12,
+    "categoria": "alfabeto",
+    "gl": "L · Folla de outono",
+    "es": "L · Hoja de otoño",
+    "en": "L · Leaf",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-012",
+    "corHex": "#ca8a04",
+    "bgHex": "#fefce8",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A folla cae amodo da árbore de Castrelos? «Plaf!»",
+      "es": "¿La hoja cae despacio del árbol de Castrelos? «¡Plaf!»"
+    },
+    "obxectivo": {
+      "gl": "Ritmo desacelerado de caída e textura visual do outono.",
+      "es": "Ritmo desacelerado de caída y textura visual del otoño."
+    },
+    "tprAccion": {
+      "en": "Falling leaf, twirl gently to the floor!",
+      "gl": "Xirar as mans baixando amodiño ata tocar o chan.",
+      "es": "Girar las manos bajando despacito hasta tocar el suelo."
+    }
+  },
+  {
+    "id": "flashcard_m_moon",
+    "numero": 13,
+    "categoria": "alfabeto",
+    "gl": "M · Lúa de noite",
+    "es": "M · Luna de noche",
+    "en": "M · Moon",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-013",
+    "corHex": "#1e293b",
+    "bgHex": "#f8fafc",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ves a Lúa brillante que nos canta o cantar de berce?",
+      "es": "¿Ves la Luna brillante que nos canta la nana de cuna?"
+    },
+    "obxectivo": {
+      "gl": "Vínculo afectivo con Lúa, calma antes do sono e pulso lento.",
+      "es": "Vínculo afectivo con Lúa, calma antes del sueño y pulso lento."
+    },
+    "tprAccion": {
+      "en": "Close your eyes and make a soft sleeping sound: Shhh...",
+      "gl": "Pechar os ollos e xuntar as mans debaixo da meixela.",
+      "es": "Cerrar los ojos y juntar las manos debajo de la mejilla."
+    }
+  },
+  {
+    "id": "flashcard_n_nest",
+    "numero": 14,
+    "categoria": "alfabeto",
+    "gl": "N · Niño de paxaro",
+    "es": "N · Nido de pájaro",
+    "en": "N · Nest",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-014",
+    "corHex": "#78350f",
+    "bgHex": "#fef3c7",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que hai dentro do niño quentiño? ¿Paxariños pequenos?",
+      "es": "¿Qué hay dentro del nido calentito? ¿Pajaritos pequeños?"
+    },
+    "obxectivo": {
+      "gl": "Concepto de acubillo seguro e protección afectiva.",
+      "es": "Concepto de cobijo seguro y protección afectiva."
+    },
+    "tprAccion": {
+      "en": "Cup your hands together to make a warm nest!",
+      "gl": "Facer un cunquiño coas dúas mans diante do peito.",
+      "es": "Hacer un cuenquito con las dos manos delante del pecho."
+    }
+  },
+  {
+    "id": "flashcard_o_octopus",
+    "numero": 15,
+    "categoria": "alfabeto",
+    "gl": "O · Polvo da ría",
+    "es": "O · Pulpo de la ría",
+    "en": "O · Octopus",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-015",
+    "corHex": "#db2777",
+    "bgHex": "#fdf2f8",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Cantas patas ten o polvo mariño? ¡Baila con oito tentáculos!",
+      "es": "¿Cuántas patas tiene el pulpo marino? ¡Baila con ocho tentáculos!"
+    },
+    "obxectivo": {
+      "gl": "Motricidade dactilar ampla e fauna tradicional de Vigo.",
+      "es": "Motricidad dactilar amplia y fauna tradicional de Vigo."
+    },
+    "tprAccion": {
+      "en": "Wiggle all your eight fingers like octopus legs!",
+      "gl": "Mover todos os dedos axilmente coma tentáculos brandos.",
+      "es": "Mover todos los dedos ágilmente como tentáculos blandos."
+    }
+  },
+  {
+    "id": "flashcard_p_pumpkin",
+    "numero": 16,
+    "categoria": "alfabeto",
+    "gl": "P · Cabaza redonda",
+    "es": "P · Calabaza redonda",
+    "en": "P · Pumpkin",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-016",
+    "corHex": "#ea580c",
+    "bgHex": "#fff7ed",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A cabaza é redonda coma unha pelota grande? ¿Facemos un círculo?",
+      "es": "¿La calabaza es redonda como una pelota grande? ¿Hacemos un círculo?"
+    },
+    "obxectivo": {
+      "gl": "Concepto xeométrico do círculo e tradicións de Samaín.",
+      "es": "Concepto geométrico del círculo y tradiciones de Samaín."
+    },
+    "tprAccion": {
+      "en": "Draw a big round circle in the air with both hands!",
+      "gl": "Debuxar un gran círculo no aire cos dous brazos xuntos.",
+      "es": "Dibujar un gran círculo en el aire con los dos brazos juntos."
+    }
+  },
+  {
+    "id": "flashcard_q_quiet",
+    "numero": 17,
+    "categoria": "alfabeto",
+    "gl": "Q · Silencio suave",
+    "es": "Q · Silencio suave",
+    "en": "Q · Quiet",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-017",
+    "corHex": "#6366f1",
+    "bgHex": "#e0e7ff",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Podes poñer o dedito nos beizos? «Shhh... calmiña...»",
+      "es": "¿Puedes poner el dedito en los labios? «Shhh... calma...»"
+    },
+    "obxectivo": {
+      "gl": "Autocontrol sensorial, tempo de silencio de 5s e retorno ao pulso.",
+      "es": "Autocontrol sensorial, tiempo de silencio de 5s y retorno al pulso."
+    },
+    "tprAccion": {
+      "en": "Finger to lips: Shhh, quiet time...",
+      "gl": "Dedo índice sobre os beizos en actitude de escoita.",
+      "es": "Dedo índice sobre los labios en actitud de escucha."
+    }
+  },
+  {
+    "id": "flashcard_r_rain",
+    "numero": 18,
+    "categoria": "alfabeto",
+    "gl": "R · Chuvia miudiña",
+    "es": "R · Lluvia fina",
+    "en": "R · Rain",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-018",
+    "corHex": "#2563eb",
+    "bgHex": "#eff6ff",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como caen as pinguiñas de chuvia de Vigo? «Plip, plop, plip!»",
+      "es": "¿Cómo caen las gotitas de lluvia de Vigo? «¡Plip, plop, plip!»"
+    },
+    "obxectivo": {
+      "gl": "Percusión dixital corporal nas pernas simulando pingas.",
+      "es": "Percusión digital corporal en las piernas simulando gotas."
+    },
+    "tprAccion": {
+      "en": "Tip-tap fingers on thighs like gentle rain: Plip, plop!",
+      "gl": "Bater as puntas dos dedos nas pernas coma pingas no tellado.",
+      "es": "Golpear las puntas de los dedos en las piernas como gotas en el tejado."
+    }
+  },
+  {
+    "id": "flashcard_s_sun",
+    "numero": 19,
+    "categoria": "alfabeto",
+    "gl": "S · Sol dourado",
+    "es": "S · Sol dorado",
+    "en": "S · Sun",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-019",
+    "corHex": "#eab308",
+    "bgHex": "#fef9c3",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como quece o sol na praia de Samil? ¿Sentides a calorciña?",
+      "es": "¿Cómo calienta el sol en la playa de Samil? ¿Sentís el calorcito?"
+    },
+    "obxectivo": {
+      "gl": "Percepción térmica agradable e apertura de brazos.",
+      "es": "Percepción térmica agradable y apertura de brazos."
+    },
+    "tprAccion": {
+      "en": "Open your arms wide to welcome the sunny day!",
+      "gl": "Abrir os dous brazos en cruz mirando cara arriba cun sorriso.",
+      "es": "Abrir los dos brazos en cruz mirando hacia arriba con una sonrisa."
+    }
+  },
+  {
+    "id": "flashcard_t_tree",
+    "numero": 20,
+    "categoria": "alfabeto",
+    "gl": "T · Árbore verde",
+    "es": "T · Árbol verde",
+    "en": "T · Tree",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-020",
+    "corHex": "#15803d",
+    "bgHex": "#f0fdf4",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A árbore é alta e forte? ¿Móvense as súas ramas co vento?",
+      "es": "¿El árbol es alto y fuerte? ¿Se mueven sus ramas con el viento?"
+    },
+    "obxectivo": {
+      "gl": "Equilibrio corporal en bipedestación e balanceo suave.",
+      "es": "Equilibrio corporal en bipedestación y balanceo suave."
+    },
+    "tprAccion": {
+      "en": "Stand tall like a strong oak tree in the forest!",
+      "gl": "Poñerse de pé moi rectos e erguer as ramas ao aire.",
+      "es": "Ponerse de pie muy rectos y alzar las ramas al aire."
+    }
+  },
+  {
+    "id": "flashcard_u_umbrella",
+    "numero": 21,
+    "categoria": "alfabeto",
+    "gl": "U · Paraugas aberto",
+    "es": "U · Paraguas abierto",
+    "en": "U · Umbrella",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-021",
+    "corHex": "#0284c7",
+    "bgHex": "#e0f2fe",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Abrimos o paraugas para non mollarnos? ¡Chas!",
+      "es": "¿Abrimos el paraguas para no mojarnos? ¡Chas!"
+    },
+    "obxectivo": {
+      "gl": "Xesto de abrir por riba da cabeza e concepto dentro/fóra.",
+      "es": "Gesto de abrir por encima de la cabeza y concepto dentro/fuera."
+    },
+    "tprAccion": {
+      "en": "Open your umbrella: Click! Stay dry under the rain!",
+      "gl": "Erguer unha man por riba da cabeza facendo o arco protector.",
+      "es": "Alzar una mano por encima de la cabeza haciendo el arco protector."
+    }
+  },
+  {
+    "id": "flashcard_v_violin",
+    "numero": 22,
+    "categoria": "alfabeto",
+    "gl": "V · Violín doce",
+    "es": "V · Violín dulce",
+    "en": "V · Violin",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-022",
+    "corHex": "#a16207",
+    "bgHex": "#fef3c7",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como soa o violín fino? «Ñi, ñi, ñi...»",
+      "es": "¿Cómo suena el violín fino? «Ñi, ñi, ñi...»"
+    },
+    "obxectivo": {
+      "gl": "Coordinación bimanual disociada (soster e mover arco).",
+      "es": "Coordinación bimanual disociada (sostener y mover arco)."
+    },
+    "tprAccion": {
+      "en": "Move your bow across the violin: Sweeeet melody!",
+      "gl": "Apoiar o queixo nun ombreiro e mover a man coma un arco.",
+      "es": "Apoyar la barbilla en un hombro y mover la mano como un arco."
+    }
+  },
+  {
+    "id": "flashcard_w_water",
+    "numero": 23,
+    "categoria": "alfabeto",
+    "gl": "W · Auga limpa",
+    "es": "W · Agua limpia",
+    "en": "W · Water",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-023",
+    "corHex": "#06b6d4",
+    "bgHex": "#cffafe",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como lavamos as mans con auga morna? «Chof, chof!»",
+      "es": "¿Cómo lavamos las manos con agua tibia? «¡Chof, chof!»"
+    },
+    "obxectivo": {
+      "gl": "Hixiene escolar diaria e frote bimanual palmar.",
+      "es": "Higiene escolar diaria y frote bimanual palmar."
+    },
+    "tprAccion": {
+      "en": "Wash, wash your hands with clean warm water!",
+      "gl": "Fregar as dúas palmas xuntas coma lavando con xabón.",
+      "es": "Frotar las dos palmas juntas como lavando con jabón."
+    }
+  },
+  {
+    "id": "flashcard_x_xylophone",
+    "numero": 24,
+    "categoria": "alfabeto",
+    "gl": "X · Xilófono de cores",
+    "es": "X · Xilófono de colores",
+    "en": "X · Xylophone",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-024",
+    "corHex": "#ec4899",
+    "bgHex": "#fdf2f8",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Tocamos cada barra de cor? ¡Tilín, tilán, tilón!",
+      "es": "¿Tocamos cada barra de color? ¡Tilín, tilán, tilón!"
+    },
+    "obxectivo": {
+      "gl": "Escala sonora pentatónica e precisión óculo-manual.",
+      "es": "Escala sonora pentatónica y precisión óculo-manual."
+    },
+    "tprAccion": {
+      "en": "Tap the xylophone keys: Ting, ting, tong!",
+      "gl": "Puntear no aire coma tocando láminas musicais afinadas.",
+      "es": "Puntear en el aire como tocando láminas musicales afinadas."
+    }
+  },
+  {
+    "id": "flashcard_y_yellow",
+    "numero": 25,
+    "categoria": "alfabeto",
+    "gl": "Y · Amarelo brillante",
+    "es": "Y · Amarillo brillante",
+    "en": "Y · Yellow",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-025",
+    "corHex": "#eab308",
+    "bgHex": "#fefce8",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que cousas son amarelas? ¿O limón, o sol, o plátano?",
+      "es": "¿Qué cosas son amarillas? ¿El limón, el sol, el plátano?"
+    },
+    "obxectivo": {
+      "gl": "Discriminación léxica de cor primaria amarela.",
+      "es": "Discriminación léxica de color primario amarillo."
+    },
+    "tprAccion": {
+      "en": "Point to something yellow around you!",
+      "gl": "Sinalar co dedo calquera elemento amarelo da aula.",
+      "es": "Señalar con el dedo cualquier elemento amarillo del aula."
+    }
+  },
+  {
+    "id": "flashcard_z_zebra",
+    "numero": 26,
+    "categoria": "alfabeto",
+    "gl": "Z · Cebra a raias",
+    "es": "Z · Cebra a rayas",
+    "en": "Z · Zebra",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-026",
+    "corHex": "#18181b",
+    "bgHex": "#f4f4f5",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A cebra ten raias brancas e negras? ¿Podes contalas?",
+      "es": "¿La cebra tiene rayas blancas y negras? ¿Puedes contarlas?"
+    },
+    "obxectivo": {
+      "gl": "Patrón visual alternante e ritmo binario 1-2.",
+      "es": "Patrón visual alternante y ritmo binario 1-2."
+    },
+    "tprAccion": {
+      "en": "Trot, trot like a striped zebra: Clip-clop!",
+      "gl": "Picar no chan cos pés alternos coma o trote da cebra.",
+      "es": "Picar en el suelo con los pies alternos como el trote de la cebra."
+    }
+  },
+  {
+    "id": "vocab_27",
+    "numero": 27,
+    "categoria": "vocabulario",
+    "gl": "Casa acolledora",
+    "es": "Casa acogedora",
+    "en": "House",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-027",
+    "corHex": "#b45309",
+    "bgHex": "#b4530912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde vive a túa familia con agarimo?",
+      "es": "¿Dónde vive tu familia con cariño?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Casa acolledora».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Casa acogedora»."
+    },
+    "tprAccion": {
+      "en": "Make a roof with your hands",
+      "gl": "Facer o tellado coas mans",
+      "es": "Facer o tellado coas mans"
+    }
+  },
+  {
+    "id": "vocab_28",
+    "numero": 28,
+    "categoria": "vocabulario",
+    "gl": "Mesa de madeira",
+    "es": "Mesa de madera",
+    "en": "Table",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-028",
+    "corHex": "#78350f",
+    "bgHex": "#78350f12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que poñemos sobre a mesa para merendar?",
+      "es": "¿Qué ponemos sobre la mesa para merendar?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Mesa de madeira».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Mesa de madera»."
+    },
+    "tprAccion": {
+      "en": "Put flat hands on the table",
+      "gl": "Pousar as mans planas na mesa",
+      "es": "Pousar as mans planas na mesa"
+    }
+  },
+  {
+    "id": "vocab_29",
+    "numero": 29,
+    "categoria": "vocabulario",
+    "gl": "Cadeira pequena",
+    "es": "Silla pequeña",
+    "en": "Chair",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-029",
+    "corHex": "#d97706",
+    "bgHex": "#d9770612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Sentamos xuntos na cadeira baixiña?",
+      "es": "¿Nos sentamos juntos en la silla bajita?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cadeira pequena».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Silla pequeña»."
+    },
+    "tprAccion": {
+      "en": "Sit down gently and quiet",
+      "gl": "Sentar amodiño sen ruído",
+      "es": "Sentar amodiño sen ruído"
+    }
+  },
+  {
+    "id": "vocab_30",
+    "numero": 30,
+    "categoria": "vocabulario",
+    "gl": "Prato redondo",
+    "es": "Plato redondo",
+    "en": "Plate",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-030",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿O prato está cheo de comida rica?",
+      "es": "¿El plato está lleno de comida rica?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Prato redondo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Plato redondo»."
+    },
+    "tprAccion": {
+      "en": "Trace a circle in the air",
+      "gl": "Debuxar un prato no aire",
+      "es": "Debuxar un prato no aire"
+    }
+  },
+  {
+    "id": "vocab_31",
+    "numero": 31,
+    "categoria": "vocabulario",
+    "gl": "Culler de sopa",
+    "es": "Cuchara de sopa",
+    "en": "Spoon",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-031",
+    "corHex": "#64748b",
+    "bgHex": "#64748b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Levamos a culler á boca sen verquer?",
+      "es": "¿Llevamos la cuchara a la boca sin tirar?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Culler de sopa».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cuchara de sopa»."
+    },
+    "tprAccion": {
+      "en": "Bring spoon to mouth",
+      "gl": "Levar a culler imaxinaria á boca",
+      "es": "Levar a culler imaxinaria á boca"
+    }
+  },
+  {
+    "id": "vocab_32",
+    "numero": 32,
+    "categoria": "vocabulario",
+    "gl": "Vaso de auga",
+    "es": "Vaso de agua",
+    "en": "Glass",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-032",
+    "corHex": "#06b6d4",
+    "bgHex": "#06b6d412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Bebemos auga fresca cando temos sede?",
+      "es": "¿Bebemos agua fresca cuando tenemos sed?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Vaso de auga».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Vaso de agua»."
+    },
+    "tprAccion": {
+      "en": "Hold glass with two hands",
+      "gl": "Suxeitar con dúas mans",
+      "es": "Suxeitar con dúas mans"
+    }
+  },
+  {
+    "id": "vocab_33",
+    "numero": 33,
+    "categoria": "vocabulario",
+    "gl": "Cama suave",
+    "es": "Cama suave",
+    "en": "Bed",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-033",
+    "corHex": "#6366f1",
+    "bgHex": "#6366f112",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde descansamos para ter soños doces?",
+      "es": "¿Dónde descansamos para tener dulces sueños?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cama suave».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cama suave»."
+    },
+    "tprAccion": {
+      "en": "Snuggle your head to rest",
+      "gl": "Acochar a cabeza no colo",
+      "es": "Acochar a cabeza no colo"
+    }
+  },
+  {
+    "id": "vocab_34",
+    "numero": 34,
+    "categoria": "vocabulario",
+    "gl": "Alfombra do círculo",
+    "es": "Alfombra del círculo",
+    "en": "Rug",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-034",
+    "corHex": "#ea580c",
+    "bgHex": "#ea580c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Sentamos todos no círculo da alfombra?",
+      "es": "¿Nos sentamos todos en el círculo de la alfombra?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Alfombra do círculo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Alfombra del círculo»."
+    },
+    "tprAccion": {
+      "en": "Sit crossed-legged in circle",
+      "gl": "Sentar coas pernas cruzadas",
+      "es": "Sentar coas pernas cruzadas"
+    }
+  },
+  {
+    "id": "vocab_35",
+    "numero": 35,
+    "categoria": "vocabulario",
+    "gl": "Libro de contos",
+    "es": "Libro de cuentos",
+    "en": "Book",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-035",
+    "corHex": "#c2410c",
+    "bgHex": "#c2410c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Pasamos a páxina con coidadiño?",
+      "es": "¿Pasamos la página con cuidadito?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Libro de contos».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Libro de cuentos»."
+    },
+    "tprAccion": {
+      "en": "Open hands like a book",
+      "gl": "Abrir e pechar mans coma un libro",
+      "es": "Abrir e pechar mans coma un libro"
+    }
+  },
+  {
+    "id": "vocab_36",
+    "numero": 36,
+    "categoria": "vocabulario",
+    "gl": "Mochila escolar",
+    "es": "Mochila escolar",
+    "en": "Backpack",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-036",
+    "corHex": "#ef4444",
+    "bgHex": "#ef444412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que traes hoxe na túa mochiliña?",
+      "es": "¿Qué traes hoy en tu mochilita?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Mochila escolar».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Mochila escolar»."
+    },
+    "tprAccion": {
+      "en": "Put straps over shoulders",
+      "gl": "Colgar tirantes nos ombreiros",
+      "es": "Colgar tirantes nos ombreiros"
+    }
+  },
+  {
+    "id": "vocab_37",
+    "numero": 37,
+    "categoria": "vocabulario",
+    "gl": "Sapatos cómodos",
+    "es": "Zapatos cómodos",
+    "en": "Shoes",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-037",
+    "corHex": "#475569",
+    "bgHex": "#47556912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Quen sabe poñer os seus propios sapatos?",
+      "es": "¿Quién sabe ponerse sus propios zapatos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Sapatos cómodos».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Zapatos cómodos»."
+    },
+    "tprAccion": {
+      "en": "Touch your toes",
+      "gl": "Tocar a punta dos pés",
+      "es": "Tocar a punta dos pés"
+    }
+  },
+  {
+    "id": "vocab_38",
+    "numero": 38,
+    "categoria": "vocabulario",
+    "gl": "Abrigo quentiño",
+    "es": "Abrigo calentito",
+    "en": "Coat",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-038",
+    "corHex": "#7c3aed",
+    "bgHex": "#7c3aed12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Pechamos a cremalleira do abrigo? ¡Zas!",
+      "es": "¿Cerramos la cremallera del abrigo? ¡Zas!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Abrigo quentiño».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Abrigo calentito»."
+    },
+    "tprAccion": {
+      "en": "Zip up your coat: Zip!",
+      "gl": "Subir cremalleira do peito",
+      "es": "Subir cremalleira do peito"
+    }
+  },
+  {
+    "id": "vocab_39",
+    "numero": 39,
+    "categoria": "vocabulario",
+    "gl": "Xabón con escuma",
+    "es": "Jabón con espuma",
+    "en": "Soap",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-039",
+    "corHex": "#38bdf8",
+    "bgHex": "#38bdf812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Fai moitas burbullas ao lavar as mans?",
+      "es": "¿Hace muchas burbujas al lavar las manos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Xabón con escuma».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Jabón con espuma»."
+    },
+    "tprAccion": {
+      "en": "Rub hands making bubbles",
+      "gl": "Fregar as mans facendo escuma",
+      "es": "Fregar as mans facendo escuma"
+    }
+  },
+  {
+    "id": "vocab_40",
+    "numero": 40,
+    "categoria": "vocabulario",
+    "gl": "Toalla suave",
+    "es": "Toalla suave",
+    "en": "Towel",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-040",
+    "corHex": "#10b981",
+    "bgHex": "#10b98112",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Secamos ben as mans entre os dedos?",
+      "es": "¿Secamos bien las manos entre los dedos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Toalla suave».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Toalla suave»."
+    },
+    "tprAccion": {
+      "en": "Dry each little finger",
+      "gl": "Secar cada dedo con mimo",
+      "es": "Secar cada dedo con mimo"
+    }
+  },
+  {
+    "id": "vocab_41",
+    "numero": 41,
+    "categoria": "vocabulario",
+    "gl": "Cepillo de dentes",
+    "es": "Cepillo de dientes",
+    "en": "Toothbrush",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-041",
+    "corHex": "#f43f5e",
+    "bgHex": "#f43f5e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Limpamos os dentes despois de comer?",
+      "es": "¿Limpiamos los dientes después de comer?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cepillo de dentes».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cepillo de dientes»."
+    },
+    "tprAccion": {
+      "en": "Brush up and down gently",
+      "gl": "Facer movementos arriba e abaixo",
+      "es": "Facer movementos arriba e abaixo"
+    }
+  },
+  {
+    "id": "vocab_42",
+    "numero": 42,
+    "categoria": "vocabulario",
+    "gl": "Tesoiras de punta redonda",
+    "es": "Tijeras de punta redonda",
+    "en": "Scissors",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-042",
+    "corHex": "#8b5cf6",
+    "bgHex": "#8b5cf612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como fan as tesoiras de papel? «Chas, chas!»",
+      "es": "¿Cómo hacen las tijeras de papel? «¡Chas, chas!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Tesoiras de punta redonda».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Tijeras de punta redonda»."
+    },
+    "tprAccion": {
+      "en": "Snip, snip with two fingers",
+      "gl": "Abrir e pechar dous dedos",
+      "es": "Abrir e pechar dous dedos"
+    }
+  },
+  {
+    "id": "vocab_43",
+    "numero": 43,
+    "categoria": "vocabulario",
+    "gl": "Lapis de cores",
+    "es": "Lápiz de colores",
+    "en": "Pencil",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-043",
+    "corHex": "#f59e0b",
+    "bgHex": "#f59e0b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que cor escolles para pintar a ría?",
+      "es": "¿Qué color escoges para pintar la ría?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lapis de cores».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lápiz de colores»."
+    },
+    "tprAccion": {
+      "en": "Scribble softly in the air",
+      "gl": "Facer trazos no aire co índice",
+      "es": "Facer trazos no aire co índice"
+    }
+  },
+  {
+    "id": "vocab_44",
+    "numero": 44,
+    "categoria": "vocabulario",
+    "gl": "Papel branco",
+    "es": "Papel blanco",
+    "en": "Paper",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-044",
+    "corHex": "#94a3b8",
+    "bgHex": "#94a3b812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Sentides o tacto liso desta folla?",
+      "es": "¿Sentís el tacto liso de esta hoja?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Papel branco».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Papel blanco»."
+    },
+    "tprAccion": {
+      "en": "Stroke the smooth sheet",
+      "gl": "Acariciar o papel suavemente",
+      "es": "Acariciar o papel suavemente"
+    }
+  },
+  {
+    "id": "vocab_45",
+    "numero": 45,
+    "categoria": "vocabulario",
+    "gl": "Pelota que bota",
+    "es": "Pelota que bota",
+    "en": "Ball",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-045",
+    "corHex": "#ef4444",
+    "bgHex": "#ef444412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como bota a pelota no patio? ¡Boing, boing!",
+      "es": "¿Cómo bota la pelota en el patio? ¡Boing, boing!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Pelota que bota».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Pelota que bota»."
+    },
+    "tprAccion": {
+      "en": "Bounce like a soft ball",
+      "gl": "Botar coma unha pelota pequena",
+      "es": "Botar coma unha pelota pequena"
+    }
+  },
+  {
+    "id": "vocab_46",
+    "numero": 46,
+    "categoria": "vocabulario",
+    "gl": "Boneca de trapo",
+    "es": "Muñeca de trapo",
+    "en": "Doll",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-046",
+    "corHex": "#ec4899",
+    "bgHex": "#ec489912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Arrolamos a boneca para que durma?",
+      "es": "¿Arropamos a la muñeca para que duerma?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Boneca de trapo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Muñeca de trapo»."
+    },
+    "tprAccion": {
+      "en": "Rock gentle in your arms",
+      "gl": "Balancear nos brazos amodiño",
+      "es": "Balancear nos brazos amodiño"
+    }
+  },
+  {
+    "id": "vocab_47",
+    "numero": 47,
+    "categoria": "vocabulario",
+    "gl": "Tren de madeira",
+    "es": "Tren de madera",
+    "en": "Train",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-047",
+    "corHex": "#0ea5e9",
+    "bgHex": "#0ea5e912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como apita o tren de Vigo? «Chu-chu!»",
+      "es": "¿Cómo pita el tren de Vigo? «¡Chu-chu!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Tren de madeira».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Tren de madera»."
+    },
+    "tprAccion": {
+      "en": "Roll your arms: Choo-choo!",
+      "gl": "Mover os cóbados coma rodas",
+      "es": "Mover os cóbados coma rodas"
+    }
+  },
+  {
+    "id": "vocab_48",
+    "numero": 48,
+    "categoria": "vocabulario",
+    "gl": "Coche vermello",
+    "es": "Coche rojo",
+    "en": "Car",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-048",
+    "corHex": "#dc2626",
+    "bgHex": "#dc262612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como soa a bucina do coche? «Piiip-piiip!»",
+      "es": "¿Cómo suena la bocina del coche? «¡Piiip-piiip!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Coche vermello».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Coche rojo»."
+    },
+    "tprAccion": {
+      "en": "Turn the steering wheel",
+      "gl": "Xirar o volante imaxinario",
+      "es": "Xirar o volante imaxinario"
+    }
+  },
+  {
+    "id": "vocab_49",
+    "numero": 49,
+    "categoria": "vocabulario",
+    "gl": "Campá da escola",
+    "es": "Campana de la escuela",
+    "en": "Bell",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-049",
+    "corHex": "#eab308",
+    "bgHex": "#eab30812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que nos avisa a campá? ¡É hora do xogo!",
+      "es": "¿Qué nos avisa la campana? ¡Es hora del juego!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Campá da escola».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Campana de la escuela»."
+    },
+    "tprAccion": {
+      "en": "Ring the high bell: Ding-dong!",
+      "gl": "Tocar a campá coa man arriba",
+      "es": "Tocar a campá coa man arriba"
+    }
+  },
+  {
+    "id": "vocab_50",
+    "numero": 50,
+    "categoria": "vocabulario",
+    "gl": "Reloxo de parede",
+    "es": "Reloj de pared",
+    "en": "Clock",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-050",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿ComoLate o reloxo con calma? «Tic-tac, tic-tac»",
+      "es": "¿Cómo late el reloj con calma? «Tic-tac, tic-tac»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Reloxo de parede».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Reloj de pared»."
+    },
+    "tprAccion": {
+      "en": "Tick-tock head swing at 72 bpm",
+      "gl": "Balanzo de cabeza a 72 bpm",
+      "es": "Balanzo de cabeza a 72 bpm"
+    }
+  },
+  {
+    "id": "vocab_51",
+    "numero": 51,
+    "categoria": "vocabulario",
+    "gl": "Fiestra con sol",
+    "es": "Ventana con sol",
+    "en": "Window",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-051",
+    "corHex": "#38bdf8",
+    "bgHex": "#38bdf812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que vemos a través dos cristais limpos?",
+      "es": "¿Qué vemos a través de los cristales limpios?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Fiestra con sol».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Ventana con sol»."
+    },
+    "tprAccion": {
+      "en": "Push open the window frame",
+      "gl": "Abrir as dúas follas da fiestra",
+      "es": "Abrir as dúas follas da fiestra"
+    }
+  },
+  {
+    "id": "vocab_52",
+    "numero": 52,
+    "categoria": "vocabulario",
+    "gl": "Porta da aula",
+    "es": "Puerta del aula",
+    "en": "Door",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-052",
+    "corHex": "#78350f",
+    "bgHex": "#78350f12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Quen chama á porta da nosa aula? «Toc-toc!»",
+      "es": "¿Quién llama a la puerta de nuestra aula? «¡Toc-toc!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Porta da aula».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Puerta del aula»."
+    },
+    "tprAccion": {
+      "en": "Knock on the door: Knock-knock!",
+      "gl": "Bater no ar co puño pechado",
+      "es": "Bater no ar co puño pechado"
+    }
+  },
+  {
+    "id": "vocab_53",
+    "numero": 53,
+    "categoria": "vocabulario",
+    "gl": "Chave pequena",
+    "es": "Llave pequeña",
+    "en": "Key",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-053",
+    "corHex": "#ca8a04",
+    "bgHex": "#ca8a0412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Xiramos a chave na pechadura? ¡Clic!",
+      "es": "¿Giramos la llave en la cerradura? ¡Clic!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Chave pequena».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Llave pequeña»."
+    },
+    "tprAccion": {
+      "en": "Turn the key: Click!",
+      "gl": "Xirar dous dedos no ar",
+      "es": "Xirar dous dedos no ar"
+    }
+  },
+  {
+    "id": "vocab_54",
+    "numero": 54,
+    "categoria": "vocabulario",
+    "gl": "Espello brillante",
+    "es": "Espejo brillante",
+    "en": "Mirror",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-054",
+    "corHex": "#a855f7",
+    "bgHex": "#a855f712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A quen ves no espello cando sorrís?",
+      "es": "¿A quién ves en el espejo cuando sonríes?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Espello brillante».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Espejo brillante»."
+    },
+    "tprAccion": {
+      "en": "Smile at your reflection",
+      "gl": "Poñer carantoñas no espello",
+      "es": "Poñer carantoñas no espello"
+    }
+  },
+  {
+    "id": "vocab_55",
+    "numero": 55,
+    "categoria": "vocabulario",
+    "gl": "Lámpada de noite",
+    "es": "Lámpara de noche",
+    "en": "Lamp",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-055",
+    "corHex": "#facc15",
+    "bgHex": "#facc1512",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A lámpada dá unha luz suave e acolledora?",
+      "es": "¿La lámpara da una luz suave y acogedora?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lámpada de noite».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lámpara de noche»."
+    },
+    "tprAccion": {
+      "en": "Flicker fingers like light",
+      "gl": "Abrir e pechar mans coma luz",
+      "es": "Abrir e pechar mans coma luz"
+    }
+  },
+  {
+    "id": "vocab_56",
+    "numero": 56,
+    "categoria": "vocabulario",
+    "gl": "Caixa de tesouros",
+    "es": "Caja de tesoros",
+    "en": "Box",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-056",
+    "corHex": "#92400e",
+    "bgHex": "#92400e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que gardamos na caixa de madeira?",
+      "es": "¿Qué guardamos en la caja de madera?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Caixa de tesouros».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Caja de tesoros»."
+    },
+    "tprAccion": {
+      "en": "Lift open the treasure lid",
+      "gl": "Erguer a tapa da caixa",
+      "es": "Erguer a tapa da caixa"
+    }
+  },
+  {
+    "id": "vocab_57",
+    "numero": 57,
+    "categoria": "vocabulario",
+    "gl": "Botón de madeira",
+    "es": "Botón de madera",
+    "en": "Button",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-057",
+    "corHex": "#059669",
+    "bgHex": "#05966912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Abotoamos o ojal cun dedito con xeito?",
+      "es": "¿Abotonamos el ojal con un dedito con maña?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Botón de madeira».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Botón de madera»."
+    },
+    "tprAccion": {
+      "en": "Pincer grasp with thumb and finger",
+      "gl": "Pinza dixital índice e polgar",
+      "es": "Pinza dixital índice e polgar"
+    }
+  },
+  {
+    "id": "vocab_58",
+    "numero": 58,
+    "categoria": "vocabulario",
+    "gl": "Lazo de cores",
+    "es": "Lazo de colores",
+    "en": "Ribbon",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-058",
+    "corHex": "#f43f5e",
+    "bgHex": "#f43f5e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como baila o lazo cando se move?",
+      "es": "¿Cómo baila el lazo cuando se mueve?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lazo de cores».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lazo de colores»."
+    },
+    "tprAccion": {
+      "en": "Wave ribbon in gentle waves",
+      "gl": "Ondear o brazo no aire",
+      "es": "Ondear o brazo no aire"
+    }
+  },
+  {
+    "id": "vocab_59",
+    "numero": 59,
+    "categoria": "vocabulario",
+    "gl": "Manta de la",
+    "es": "Manta de lana",
+    "en": "Blanket",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-059",
+    "corHex": "#4338ca",
+    "bgHex": "#4338ca12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Tapámonos coa manta quentiña para a sesta?",
+      "es": "¿Nos tapamos con la manta calentita para la siesta?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Manta de la».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Manta de lana»."
+    },
+    "tprAccion": {
+      "en": "Pull blanket over shoulders",
+      "gl": "Taparse ata os ombreiros",
+      "es": "Taparse ata os ombreiros"
+    }
+  },
+  {
+    "id": "vocab_60",
+    "numero": 60,
+    "categoria": "vocabulario",
+    "gl": "Berce seguro",
+    "es": "Cuna segura",
+    "en": "Crib",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-060",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿O berce mece ao bebé con amor?",
+      "es": "¿La cuna mece al bebé con amor?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Berce seguro».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cuna segura»."
+    },
+    "tprAccion": {
+      "en": "Sway gently side to side",
+      "gl": "Balanzo doce dos brazos",
+      "es": "Balanzo doce dos brazos"
+    }
+  },
+  {
+    "id": "vocab_61",
+    "numero": 61,
+    "categoria": "vocabulario",
+    "gl": "Cueiro limpo",
+    "es": "Pañal limpio",
+    "en": "Nappy",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-061",
+    "corHex": "#06b6d4",
+    "bgHex": "#06b6d412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que fresco e cómodo se sente o bebé agora?",
+      "es": "¿Qué fresco y cómodo se siente el bebé ahora?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cueiro limpo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Pañal limpio»."
+    },
+    "tprAccion": {
+      "en": "Pat tummy softly",
+      "gl": "Acariciar a barriga",
+      "es": "Acariciar a barriga"
+    }
+  },
+  {
+    "id": "vocab_62",
+    "numero": 62,
+    "categoria": "vocabulario",
+    "gl": "Biberón morno",
+    "es": "Biberón tibio",
+    "en": "Bottle",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-062",
+    "corHex": "#10b981",
+    "bgHex": "#10b98112",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Bebemos o leite morno a groliños?",
+      "es": "¿Bebemos la leche tibia a traguitos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Biberón morno».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Biberón tibio»."
+    },
+    "tprAccion": {
+      "en": "Hold baby bottle with care",
+      "gl": "Suxeitar o bibe con coidado",
+      "es": "Suxeitar o bibe con coidado"
+    }
+  },
+  {
+    "id": "vocab_63",
+    "numero": 63,
+    "categoria": "vocabulario",
+    "gl": "Bico con agarimo",
+    "es": "Beso con cariño",
+    "en": "Kiss",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-063",
+    "corHex": "#e11d48",
+    "bgHex": "#e11d4812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Damos un bico suave na meixela?",
+      "es": "¿Damos un beso suave en la mejilla?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Bico con agarimo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Beso con cariño»."
+    },
+    "tprAccion": {
+      "en": "Blow a sweet kiss",
+      "gl": "Lanzar un bico coa man",
+      "es": "Lanzar un bico coa man"
+    }
+  },
+  {
+    "id": "vocab_64",
+    "numero": 64,
+    "categoria": "vocabulario",
+    "gl": "Aperta forte",
+    "es": "Abrazo fuerte",
+    "en": "Hug",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-064",
+    "corHex": "#d97706",
+    "bgHex": "#d9770612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Sentides que ben senta un abrazo?",
+      "es": "¿Sentís qué bien sienta un abrazo?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Aperta forte».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Abrazo fuerte»."
+    },
+    "tprAccion": {
+      "en": "Hug yourself warm and tight",
+      "gl": "Abrazarse a un mesmo",
+      "es": "Abrazarse a un mesmo"
+    }
+  },
+  {
+    "id": "vocab_65",
+    "numero": 65,
+    "categoria": "vocabulario",
+    "gl": "Cóxegas na barriga",
+    "es": "Cosquillas en la barriga",
+    "en": "Tickle",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-065",
+    "corHex": "#ea580c",
+    "bgHex": "#ea580c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Quen quere cóxegas suaves de formiguiña?",
+      "es": "¿Quién quiere cosquillitas suaves de hormiguita?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cóxegas na barriga».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cosquillas en la barriga»."
+    },
+    "tprAccion": {
+      "en": "Crawl fingers on tummy: Giggle!",
+      "gl": "Camiñar dedos pola barriga",
+      "es": "Camiñar dedos pola barriga"
+    }
+  },
+  {
+    "id": "vocab_66",
+    "numero": 66,
+    "categoria": "vocabulario",
+    "gl": "Sorriso alegre",
+    "es": "Sonrisa alegre",
+    "en": "Smile",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-066",
+    "corHex": "#f59e0b",
+    "bgHex": "#f59e0b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Amosamos os nosos dentes nun sorriso grande?",
+      "es": "¿Mostramos nuestros dientes en una sonrisa grande?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Sorriso alegre».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Sonrisa alegre»."
+    },
+    "tprAccion": {
+      "en": "Trace a big bright smile",
+      "gl": "Debuxar sorriso co índice",
+      "es": "Debuxar sorriso co índice"
+    }
+  },
+  {
+    "id": "animais_67",
+    "numero": 67,
+    "categoria": "animais",
+    "gl": "Can leal",
+    "es": "Perro leal",
+    "en": "Puppy",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-067",
+    "corHex": "#b45309",
+    "bgHex": "#b4530912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde corre o can polo parque?",
+      "es": "¿Dónde corre el perro por el parque?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Can leal».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Perro leal»."
+    },
+    "tprAccion": {
+      "en": "Paws up and bark: Woof!",
+      "gl": "Mover patas dianteiras",
+      "es": "Mover patas dianteiras"
+    }
+  },
+  {
+    "id": "animais_68",
+    "numero": 68,
+    "categoria": "animais",
+    "gl": "Gata suave",
+    "es": "Gata suave",
+    "en": "Kitten",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-068",
+    "corHex": "#475569",
+    "bgHex": "#47556912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A gata ronronea cando a acaricias?",
+      "es": "¿La gata ronronea cuando la acaricias?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Gata suave».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Gata suave»."
+    },
+    "tprAccion": {
+      "en": "Purr softly: Purrr-purrr",
+      "gl": "Ronronear «prrr-prrr»",
+      "es": "Ronronear «prrr-prrr»"
+    }
+  },
+  {
+    "id": "animais_69",
+    "numero": 69,
+    "categoria": "animais",
+    "gl": "Paxariño cantor",
+    "es": "Pajarito cantor",
+    "en": "Bird",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-069",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como voa polo ceo azul? «Pío, pío!»",
+      "es": "¿Cómo vuela por el cielo azul? «¡Pío, pío!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Paxariño cantor».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Pajarito cantor»."
+    },
+    "tprAccion": {
+      "en": "Flap wings gently",
+      "gl": "Aletear cos cóbados",
+      "es": "Aletear cos cóbados"
+    }
+  },
+  {
+    "id": "animais_70",
+    "numero": 70,
+    "categoria": "animais",
+    "gl": "Raniña do río",
+    "es": "Ranita del río",
+    "en": "Frog",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-070",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como salta a raniña ao charco? «Croac, hop!»",
+      "es": "¿Cómo salta la ranita al charco? «¡Croac, hop!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Raniña do río».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Ranita del río»."
+    },
+    "tprAccion": {
+      "en": "Ribbit hop on the floor!",
+      "gl": "Dar un salto pequeno no chan",
+      "es": "Dar un salto pequeno no chan"
+    }
+  },
+  {
+    "id": "animais_71",
+    "numero": 71,
+    "categoria": "animais",
+    "gl": "Peixiño dourado",
+    "es": "Pececito dorado",
+    "en": "Goldfish",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-071",
+    "corHex": "#f97316",
+    "bgHex": "#f9731612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como abre a boquiña o peixe na auga?",
+      "es": "¿Cómo abre la boquita el pez en el agua?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Peixiño dourado».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Pececito dorado»."
+    },
+    "tprAccion": {
+      "en": "Fish mouth pop: Pop-pop!",
+      "gl": "Abrir e pechar beizos en O",
+      "es": "Abrir e pechar beizos en O"
+    }
+  },
+  {
+    "id": "animais_72",
+    "numero": 72,
+    "categoria": "animais",
+    "gl": "Gaivota da ría",
+    "es": "Gaviota de la ría",
+    "en": "Seagull",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-072",
+    "corHex": "#64748b",
+    "bgHex": "#64748b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A gaivota plana sobre as Illas Cíes?",
+      "es": "¿La gaviota planea sobre las Islas Cíes?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Gaivota da ría».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Gaviota de la ría»."
+    },
+    "tprAccion": {
+      "en": "Glide arms like a seagull",
+      "gl": "Planear cos brazos estendidos",
+      "es": "Planear cos brazos estendidos"
+    }
+  },
+  {
+    "id": "animais_73",
+    "numero": 73,
+    "categoria": "animais",
+    "gl": "Golfiño xoguetón",
+    "es": "Delfín juguetón",
+    "en": "Dolphin",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-073",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿O golfiño salta por riba das ondas de Vigo?",
+      "es": "¿El delfín salta por encima de las olas de Vigo?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Golfiño xoguetón».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Delfín juguetón»."
+    },
+    "tprAccion": {
+      "en": "Leap like a dolphin in water",
+      "gl": "Ondas co corpo adiante",
+      "es": "Ondas co corpo adiante"
+    }
+  },
+  {
+    "id": "animais_74",
+    "numero": 74,
+    "categoria": "animais",
+    "gl": "Polvo de oito patas",
+    "es": "Pulpo de ocho patas",
+    "en": "Octopus",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-074",
+    "corHex": "#db2777",
+    "bgHex": "#db277712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿O polvo agochouse debaixo da rocha?",
+      "es": "¿El pulpo se escondió debajo de la roca?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Polvo de oito patas».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Pulpo de ocho patas»."
+    },
+    "tprAccion": {
+      "en": "Hide and spread tentacle fingers",
+      "gl": "Encollerse e abrirse de golpe",
+      "es": "Encollerse e abrirse de golpe"
+    }
+  },
+  {
+    "id": "animais_75",
+    "numero": 75,
+    "categoria": "animais",
+    "gl": "Caracol amodo",
+    "es": "Caracol despacio",
+    "en": "Snail",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-075",
+    "corHex": "#ca8a04",
+    "bgHex": "#ca8a0412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿O caracol leva a súa casiña ás costas?",
+      "es": "¿El caracol lleva su casita a cuestas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Caracol amodo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Caracol despacio»."
+    },
+    "tprAccion": {
+      "en": "Crawl slowly like a snail",
+      "gl": "Camiñar dous dedos moi amodo",
+      "es": "Camiñar dous dedos moi amodo"
+    }
+  },
+  {
+    "id": "animais_76",
+    "numero": 76,
+    "categoria": "animais",
+    "gl": "Bolboreta de cores",
+    "es": "Mariposa de colores",
+    "en": "Butterfly",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-076",
+    "corHex": "#8b5cf6",
+    "bgHex": "#8b5cf612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como baila a bolboreta sobre as flores?",
+      "es": "¿Cómo baila la mariposa sobre las flores?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Bolboreta de cores».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Mariposa de colores»."
+    },
+    "tprAccion": {
+      "en": "Cross thumbs and flutter wings",
+      "gl": "Cruzar polgares e aletear",
+      "es": "Cruzar polgares e aletear"
+    }
+  },
+  {
+    "id": "animais_77",
+    "numero": 77,
+    "categoria": "animais",
+    "gl": "Abella traballadora",
+    "es": "Abeja trabajadora",
+    "en": "Bee",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-077",
+    "corHex": "#eab308",
+    "bgHex": "#eab30812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como zumba a abelliña? «Bzzzz!»",
+      "es": "¿Cómo zumba la abejita? «¡Bzzzz!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Abella traballadora».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Abeja trabajadora»."
+    },
+    "tprAccion": {
+      "en": "Buzz sound: Bzzzzz!",
+      "gl": "Zumbido continuo cos dentes",
+      "es": "Zumbido continuo cos dentes"
+    }
+  },
+  {
+    "id": "animais_78",
+    "numero": 78,
+    "categoria": "animais",
+    "gl": "Formiga pequeniña",
+    "es": "Hormiga pequeñita",
+    "en": "Ant",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-078",
+    "corHex": "#78350f",
+    "bgHex": "#78350f12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿As formiguiñas van en fila polo carreiro?",
+      "es": "¿Las hormiguitas van en fila por el sendero?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Formiga pequeniña».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Hormiga pequeñita»."
+    },
+    "tprAccion": {
+      "en": "Tiptoe small like tiny ants",
+      "gl": "Camiñar de puntas moi baixiño",
+      "es": "Camiñar de puntas moi baixiño"
+    }
+  },
+  {
+    "id": "animais_79",
+    "numero": 79,
+    "categoria": "animais",
+    "gl": "Vaca pastando",
+    "es": "Vaca pastando",
+    "en": "Cow",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-079",
+    "corHex": "#1e293b",
+    "bgHex": "#1e293b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como fai a vaca no prado verde? «Muuu!»",
+      "es": "¿Cómo hace la vaca en el prado verde? «¡Muuu!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Vaca pastando».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Vaca pastando»."
+    },
+    "tprAccion": {
+      "en": "Deep long sound: Moooo!",
+      "gl": "Voz grave prolongada",
+      "es": "Voz grave prolongada"
+    }
+  },
+  {
+    "id": "animais_80",
+    "numero": 80,
+    "categoria": "animais",
+    "gl": "Ovella de la branca",
+    "es": "Oveja de lana blanca",
+    "en": "Sheep",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-080",
+    "corHex": "#94a3b8",
+    "bgHex": "#94a3b812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A ovella ten la suave coma unha almofada?",
+      "es": "¿La oveja tiene lana suave como una almohada?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Ovella de la branca».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Oveja de lana blanca»."
+    },
+    "tprAccion": {
+      "en": "Gentle bleat: Baaa-baaa!",
+      "gl": "Imitar o balido: «Beeee!»",
+      "es": "Imitar o balido: «Beeee!»"
+    }
+  },
+  {
+    "id": "animais_81",
+    "numero": 81,
+    "categoria": "animais",
+    "gl": "Cabalo veloz",
+    "es": "Caballo veloz",
+    "en": "Horse",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-081",
+    "corHex": "#92400e",
+    "bgHex": "#92400e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como soan os cascos do cabalo? «Toc, toc!»",
+      "es": "¿Cómo suenan los cascos del caballo? «¡Toc, toc!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cabalo veloz».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Caballo veloz»."
+    },
+    "tprAccion": {
+      "en": "Clap thighs like horse hooves",
+      "gl": "Percusión de palmas nas pernas",
+      "es": "Percusión de palmas nas pernas"
+    }
+  },
+  {
+    "id": "animais_82",
+    "numero": 82,
+    "categoria": "animais",
+    "gl": "Porquiño rosado",
+    "es": "Cerdito rosado",
+    "en": "Pig",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-082",
+    "corHex": "#f43f5e",
+    "bgHex": "#f43f5e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como funga o porquiño alegre? «Oinc, oinc!»",
+      "es": "¿Cómo gruñe el cerdito alegre? «¡Oinc, oinc!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Porquiño rosado».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cerdito rosado»."
+    },
+    "tprAccion": {
+      "en": "Wrinkle nose: Oink-oink!",
+      "gl": "Fungar co nariz engurrado",
+      "es": "Fungar co nariz engurrado"
+    }
+  },
+  {
+    "id": "animais_83",
+    "numero": 83,
+    "categoria": "animais",
+    "gl": "Pita ciscadora",
+    "es": "Gallina clueca",
+    "en": "Hen",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-083",
+    "corHex": "#ea580c",
+    "bgHex": "#ea580c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como choca a pita polos ovos? «Co-co-co!»",
+      "es": "¿Cómo cloquea la gallina por los huevos? «¡Co-co-co!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Pita ciscadora».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Gallina clueca»."
+    },
+    "tprAccion": {
+      "en": "Flap elbows: Cluck-cluck!",
+      "gl": "Aleteo de cóbados e bico",
+      "es": "Aleteo de cóbados e bico"
+    }
+  },
+  {
+    "id": "animais_84",
+    "numero": 84,
+    "categoria": "animais",
+    "gl": "Parrulo nadador",
+    "es": "Patito nadador",
+    "en": "Duck",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-084",
+    "corHex": "#059669",
+    "bgHex": "#05966912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como nada o parrulo no estanque? «Cuac, cuac!»",
+      "es": "¿Cómo nada el patito en el estanque? «¡Cuac, cuac!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Parrulo nadador».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Patito nadador»."
+    },
+    "tprAccion": {
+      "en": "Make a beak: Quack-quack!",
+      "gl": "Facer bico coas mans",
+      "es": "Facer bico coas mans"
+    }
+  },
+  {
+    "id": "animais_85",
+    "numero": 85,
+    "categoria": "animais",
+    "gl": "Coelliño saltarín",
+    "es": "Conejito saltarín",
+    "en": "Rabbit",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-085",
+    "corHex": "#cbd5e1",
+    "bgHex": "#cbd5e112",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como move o coello o seu fociño rápido?",
+      "es": "¿Cómo mueve el conejo su hociquito rápido?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Coelliño saltarín».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Conejito saltarín»."
+    },
+    "tprAccion": {
+      "en": "Rabbit ears finger hops",
+      "gl": "Dous dedos na cabeza coma orellas",
+      "es": "Dous dedos na cabeza coma orellas"
+    }
+  },
+  {
+    "id": "animais_86",
+    "numero": 86,
+    "categoria": "animais",
+    "gl": "Ratiño veloz",
+    "es": "Ratoncito veloz",
+    "en": "Mouse",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-086",
+    "corHex": "#64748b",
+    "bgHex": "#64748b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde corre o ratiño pequeniño? «Iii-iii!»",
+      "es": "¿Dónde corre el ratoncito pequeñito? «¡Iii-iii!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Ratiño veloz».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Ratoncito veloz»."
+    },
+    "tprAccion": {
+      "en": "Scurry fingers fast and light",
+      "gl": "Correr cos dedos polas pernas",
+      "es": "Correr cos dedos polas pernas"
+    }
+  },
+  {
+    "id": "animais_87",
+    "numero": 87,
+    "categoria": "animais",
+    "gl": "Tartaruga paciente",
+    "es": "Tortuga paciente",
+    "en": "Turtle",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-087",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A tartaruga agocha a cabeza na coiraza?",
+      "es": "¿La tortuga esconde la cabeza en el caparazón?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Tartaruga paciente».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Tortuga paciente»."
+    },
+    "tprAccion": {
+      "en": "Tuck head inside shoulders",
+      "gl": "Encoller o pescozo nos ombreiros",
+      "es": "Encoller o pescozo nos ombreiros"
+    }
+  },
+  {
+    "id": "animais_88",
+    "numero": 88,
+    "categoria": "animais",
+    "gl": "Oso grande e forte",
+    "es": "Oso grande y fuerte",
+    "en": "Bear",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-088",
+    "corHex": "#78350f",
+    "bgHex": "#78350f12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como camiña o oso polo bosque de outono?",
+      "es": "¿Cómo camina el oso por el bosque de otoño?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Oso grande e forte».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Oso grande y fuerte»."
+    },
+    "tprAccion": {
+      "en": "Heavy slow bear stomps",
+      "gl": "Pisadas pesadas de xigante",
+      "es": "Pisadas pesadas de xigante"
+    }
+  },
+  {
+    "id": "animais_89",
+    "numero": 89,
+    "categoria": "animais",
+    "gl": "León que ruxe",
+    "es": "León que ruge",
+    "en": "Lion",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-089",
+    "corHex": "#d97706",
+    "bgHex": "#d9770612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como ruxe o rei da selva? «Groaaar!»",
+      "es": "¿Cómo ruge el rey de la selva? «¡Groaaar!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «León que ruxe».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «León que ruge»."
+    },
+    "tprAccion": {
+      "en": "Roar with soft bear paws",
+      "gl": "Abrir mans con gadellas",
+      "es": "Abrir mans con gadellas"
+    }
+  },
+  {
+    "id": "animais_90",
+    "numero": 90,
+    "categoria": "animais",
+    "gl": "Raposo astuto",
+    "es": "Zorro astuto",
+    "en": "Fox",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-090",
+    "corHex": "#ea580c",
+    "bgHex": "#ea580c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como camiña o raposo sen facer ruído?",
+      "es": "¿Cómo camina el zorro sin hacer ruido?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Raposo astuto».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Zorro astuto»."
+    },
+    "tprAccion": {
+      "en": "Silent tiptoe like a sly fox",
+      "gl": "Camiñar con pisada de seda",
+      "es": "Camiñar con pisada de seda"
+    }
+  },
+  {
+    "id": "animais_91",
+    "numero": 91,
+    "categoria": "animais",
+    "gl": "Balea xigante",
+    "es": "Ballena gigante",
+    "en": "Whale",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-091",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A balea bota un chorro de auga ao ceo?",
+      "es": "¿La ballena echa un chorro de agua al cielo?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Balea xigante».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Ballena gigante»."
+    },
+    "tprAccion": {
+      "en": "Spout water from head: Whoosh!",
+      "gl": "Brotar mans dende a cabeza: Chuuuf!",
+      "es": "Brotar mans dende a cabeza: Chuuuf!"
+    }
+  },
+  {
+    "id": "animais_92",
+    "numero": 92,
+    "categoria": "animais",
+    "gl": "Foca mariña",
+    "es": "Foca marina",
+    "en": "Seal",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-092",
+    "corHex": "#475569",
+    "bgHex": "#47556912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como aplaude a foca coas súas aletas?",
+      "es": "¿Cómo aplaude la foca con sus aletas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Foca mariña».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Foca marina»."
+    },
+    "tprAccion": {
+      "en": "Clap with wrists together",
+      "gl": "Aplaudir cos pulsos xuntos",
+      "es": "Aplaudir cos pulsos xuntos"
+    }
+  },
+  {
+    "id": "animais_93",
+    "numero": 93,
+    "categoria": "animais",
+    "gl": "Cangrexo da praia",
+    "es": "Cangrejo de la playa",
+    "en": "Crab",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-093",
+    "corHex": "#ef4444",
+    "bgHex": "#ef444412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como camiña o cangrexo de lado na area?",
+      "es": "¿Cómo camina el cangrejo de lado en la arena?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cangrexo da praia».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cangrejo de la playa»."
+    },
+    "tprAccion": {
+      "en": "Scuttle sideways with pincer claws",
+      "gl": "Camiñar de lado abrindo pinzas",
+      "es": "Camiñar de lado abrindo pinzas"
+    }
+  },
+  {
+    "id": "animais_94",
+    "numero": 94,
+    "categoria": "animais",
+    "gl": "Estrela de mar",
+    "es": "Estrella de mar",
+    "en": "Starfish",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-094",
+    "corHex": "#f59e0b",
+    "bgHex": "#f59e0b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A estrela de mar brilla no fondo da ría?",
+      "es": "¿La estrella de mar brilla en el fondo de la ría?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Estrela de mar».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Estrella de mar»."
+    },
+    "tprAccion": {
+      "en": "Open limbs like a sea star",
+      "gl": "Abrir brazos e pernas en estrela",
+      "es": "Abrir brazos e pernas en estrela"
+    }
+  },
+  {
+    "id": "animais_95",
+    "numero": 95,
+    "categoria": "animais",
+    "gl": "Ourizo do mar",
+    "es": "Erizo de mar",
+    "en": "Sea Urchin",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-095",
+    "corHex": "#334155",
+    "bgHex": "#33415512",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿O ourizo ten picos para protexerse?",
+      "es": "¿El erizo tiene púas para protegerse?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Ourizo do mar».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Erizo de mar»."
+    },
+    "tprAccion": {
+      "en": "Spread prickly spiky fingers",
+      "gl": "Poñer dedos ergueitos ríxidos",
+      "es": "Poñer dedos ergueitos ríxidos"
+    }
+  },
+  {
+    "id": "animais_96",
+    "numero": 96,
+    "categoria": "animais",
+    "gl": "Mexillón da batea",
+    "es": "Mejillón de la batea",
+    "en": "Mussel",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-096",
+    "corHex": "#1e293b",
+    "bgHex": "#1e293b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿O mexillón abre e pecha a súa cuncha negra?",
+      "es": "¿El mejillón abre y cierra su concha negra?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Mexillón da batea».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Mejillón de la batea»."
+    },
+    "tprAccion": {
+      "en": "Open and close your shell hands",
+      "gl": "Xuntar palmas e abrir amodo",
+      "es": "Xuntar palmas e abrir amodo"
+    }
+  },
+  {
+    "id": "vigo_nat_97",
+    "numero": 97,
+    "categoria": "vigo_natureza",
+    "gl": "Mar da ría de Vigo",
+    "es": "Mar de la ría de Vigo",
+    "en": "Sea",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-097",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ves como bailan as ondas azuis da ría?",
+      "es": "¿Ves cómo bailan las olas azules de la ría?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Mar da ría de Vigo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Mar de la ría de Vigo»."
+    },
+    "tprAccion": {
+      "en": "Row your arms with the waves",
+      "gl": "Vaivén de remar co corpo",
+      "es": "Vaivén de remar co corpo"
+    }
+  },
+  {
+    "id": "vigo_nat_98",
+    "numero": 98,
+    "categoria": "vigo_natureza",
+    "gl": "Illas Cíes verdes",
+    "es": "Islas Cíes verdes",
+    "en": "Cíes Islands",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-098",
+    "corHex": "#059669",
+    "bgHex": "#05966912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿As Cíes protexen a nosa cidade das tormentas?",
+      "es": "¿Las Cíes protegen nuestra ciudad de las tormentas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Illas Cíes verdes».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Islas Cíes verdes»."
+    },
+    "tprAccion": {
+      "en": "Form a shelter with your arms",
+      "gl": "Brazos arredor coma un escudo",
+      "es": "Brazos arredor coma un escudo"
+    }
+  },
+  {
+    "id": "vigo_nat_99",
+    "numero": 99,
+    "categoria": "vigo_natureza",
+    "gl": "Praia de Samil",
+    "es": "Playa de Samil",
+    "en": "Beach",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-099",
+    "corHex": "#d97706",
+    "bgHex": "#d9770612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Pisas a area suave cos pés descalzos?",
+      "es": "¿Pisas la arena suave con los pies descalzos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Praia de Samil».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Playa de Samil»."
+    },
+    "tprAccion": {
+      "en": "Step barefoot on soft floor",
+      "gl": "Pisar amodo sentindo o chan",
+      "es": "Pisar amodo sentindo o chan"
+    }
+  },
+  {
+    "id": "vigo_nat_100",
+    "numero": 100,
+    "categoria": "vigo_natureza",
+    "gl": "Monte do Castro",
+    "es": "Monte de O Castro",
+    "en": "Castro Hill",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-100",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Subimos ao alto do Castro para ver Vigo?",
+      "es": "¿Subimos a lo alto de O Castro para ver Vigo?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Monte do Castro».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Monte de O Castro»."
+    },
+    "tprAccion": {
+      "en": "March high knees climbing the hill",
+      "gl": "Erguer xeonllos subindo a costa",
+      "es": "Erguer xeonllos subindo a costa"
+    }
+  },
+  {
+    "id": "vigo_nat_101",
+    "numero": 101,
+    "categoria": "vigo_natureza",
+    "gl": "Parque de Castrelos",
+    "es": "Parque de Castrelos",
+    "en": "Castrelos Park",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-101",
+    "corHex": "#15803d",
+    "bgHex": "#15803d12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Recoñeces os cisnes nadando no estanque?",
+      "es": "¿Reconoces los cisnes nadando en el estanque?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Parque de Castrelos».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Parque de Castrelos»."
+    },
+    "tprAccion": {
+      "en": "Graceful swan neck posture",
+      "gl": "Pescozo ergueito coma un cisne",
+      "es": "Pescozo ergueito coma un cisne"
+    }
+  },
+  {
+    "id": "vigo_nat_102",
+    "numero": 102,
+    "categoria": "vigo_natureza",
+    "gl": "Monte da Guía",
+    "es": "Monte de A Guía",
+    "en": "A Guía Hill",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-102",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ves a capeliña branca que saúda aos barcos?",
+      "es": "¿Ves la capillita blanca que saluda a los barcos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Monte da Guía».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Monte de A Guía»."
+    },
+    "tprAccion": {
+      "en": "Hands pointed high like a spire",
+      "gl": "Xuntar mans coma campanario",
+      "es": "Xuntar mans coma campanario"
+    }
+  },
+  {
+    "id": "vigo_nat_103",
+    "numero": 103,
+    "categoria": "vigo_natureza",
+    "gl": "O Berbés mariñeiro",
+    "es": "O Berbés marinero",
+    "en": "Old Port",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-103",
+    "corHex": "#0891b2",
+    "bgHex": "#0891b212",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que traen as redes dos barcos pesqueiros?",
+      "es": "¿Qué traen las redes de los barcos pesqueros?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O Berbés mariñeiro».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «O Berbés marinero»."
+    },
+    "tprAccion": {
+      "en": "Pull the heavy fishing net: Heave!",
+      "gl": "Tirar da rede con forza",
+      "es": "Tirar da rede con forza"
+    }
+  },
+  {
+    "id": "vigo_nat_104",
+    "numero": 104,
+    "categoria": "vigo_natureza",
+    "gl": "Sol de verán",
+    "es": "Sol de verano",
+    "en": "Sunlight",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-104",
+    "corHex": "#eab308",
+    "bgHex": "#eab30812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que quentiño brilla o sol sobre a cabeza!",
+      "es": "¡Qué calentito brilla el sol sobre la cabeza!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Sol de verán».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Sol de verano»."
+    },
+    "tprAccion": {
+      "en": "Bask your face in warm light",
+      "gl": "Abrir peito cara a luz",
+      "es": "Abrir peito cara a luz"
+    }
+  },
+  {
+    "id": "vigo_nat_105",
+    "numero": 105,
+    "categoria": "vigo_natureza",
+    "gl": "Nube de algodón",
+    "es": "Nube de algodón",
+    "en": "Cloud",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-105",
+    "corHex": "#94a3b8",
+    "bgHex": "#94a3b812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A nube viaxa flotando polo ceo?",
+      "es": "¿La nube viaja flotando por el cielo?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Nube de algodón».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Nube de algodón»."
+    },
+    "tprAccion": {
+      "en": "Float your hands like soft clouds",
+      "gl": "Flotar mans moi brandas",
+      "es": "Flotar mans moi brandas"
+    }
+  },
+  {
+    "id": "vigo_nat_106",
+    "numero": 106,
+    "categoria": "vigo_natureza",
+    "gl": "Chuvia con charcos",
+    "es": "Lluvia con charcos",
+    "en": "Puddles",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-106",
+    "corHex": "#2563eb",
+    "bgHex": "#2563eb12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Pisamos os charquiños con botas de auga? «Chof!»",
+      "es": "¿Pisamos los charquitos con botas de agua? «¡Chof!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Chuvia con charcos».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lluvia con charcos»."
+    },
+    "tprAccion": {
+      "en": "Splash gently in the puddle",
+      "gl": "Salto suave dentro do charco",
+      "es": "Salto suave dentro do charco"
+    }
+  },
+  {
+    "id": "vigo_nat_107",
+    "numero": 107,
+    "categoria": "vigo_natureza",
+    "gl": "Vento que sopra",
+    "es": "Viento que sopla",
+    "en": "Wind",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-107",
+    "corHex": "#06b6d4",
+    "bgHex": "#06b6d412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Sentes como o vento move as follas verdes?",
+      "es": "¿Sientes cómo el viento mueve las hojas verdes?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Vento que sopra».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Viento que sopla»."
+    },
+    "tprAccion": {
+      "en": "Sway your torso with blowing wind",
+      "gl": "Balanceo de tronco e sopro",
+      "es": "Balanceo de tronco e sopro"
+    }
+  },
+  {
+    "id": "vigo_nat_108",
+    "numero": 108,
+    "categoria": "vigo_natureza",
+    "gl": "Arco da vella",
+    "es": "Arco iris",
+    "en": "Rainbow",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-108",
+    "corHex": "#a855f7",
+    "bgHex": "#a855f712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Cantas cores ten o arco da vella no ceo?",
+      "es": "¿Cuántos colores tiene el arco iris en el cielo?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Arco da vella».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Arco iris»."
+    },
+    "tprAccion": {
+      "en": "Paint an arc from left to right",
+      "gl": "Debuxar arco amplo de lado a lado",
+      "es": "Debuxar arco amplo de lado a lado"
+    }
+  },
+  {
+    "id": "vigo_nat_109",
+    "numero": 109,
+    "categoria": "vigo_natureza",
+    "gl": "Estación de Outono",
+    "es": "Estación de Otoño",
+    "en": "Autumn",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-109",
+    "corHex": "#ca8a04",
+    "bgHex": "#ca8a0412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿O chan énchese de follas amarelas e castañas?",
+      "es": "¿El suelo se llena de hojas amarillas y castañas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Estación de Outono».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Estación de Otoño»."
+    },
+    "tprAccion": {
+      "en": "Gather leaves from the floor",
+      "gl": "Recoller follas do chan",
+      "es": "Recoller follas do chan"
+    }
+  },
+  {
+    "id": "vigo_nat_110",
+    "numero": 110,
+    "categoria": "vigo_natureza",
+    "gl": "Estación de Inverno",
+    "es": "Estación de Invierno",
+    "en": "Winter",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-110",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Poñemos a bufanda e abrigámonos ben?",
+      "es": "¿Nos ponemos la bufanda y nos abrigamos bien?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Estación de Inverno».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Estación de Invierno»."
+    },
+    "tprAccion": {
+      "en": "Warm up your arms with a rub",
+      "gl": "Fregar os brazos para quentar",
+      "es": "Fregar os brazos para quentar"
+    }
+  },
+  {
+    "id": "vigo_nat_111",
+    "numero": 111,
+    "categoria": "vigo_natureza",
+    "gl": "Estación de Primavera",
+    "es": "Estación de Primavera",
+    "en": "Spring",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-111",
+    "corHex": "#ec4899",
+    "bgHex": "#ec489912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Medran as flores e cantan os paxariños?",
+      "es": "¿Crecen las flores y cantan los pajaritos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Estación de Primavera».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Estación de Primavera»."
+    },
+    "tprAccion": {
+      "en": "Stretch tall like a blooming flower",
+      "gl": "Espreguizase medrando cara arriba",
+      "es": "Espreguizase medrando cara arriba"
+    }
+  },
+  {
+    "id": "vigo_nat_112",
+    "numero": 112,
+    "categoria": "vigo_natureza",
+    "gl": "Estación de Verán",
+    "es": "Estación de Verano",
+    "en": "Summer",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-112",
+    "corHex": "#ef4444",
+    "bgHex": "#ef444412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Xogamos na praia e tomamos melón fresco?",
+      "es": "¿Jugamos en la playa y tomamos melón fresco?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Estación de Verán».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Estación de Verano»."
+    },
+    "tprAccion": {
+      "en": "Splash water with your feet",
+      "gl": "Xogo de salpicar auga cos pés",
+      "es": "Xogo de salpicar auga cos pés"
+    }
+  },
+  {
+    "id": "vigo_nat_113",
+    "numero": 113,
+    "categoria": "vigo_natureza",
+    "gl": "Carballo centenario",
+    "es": "Roble centenario",
+    "en": "Oak tree",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-113",
+    "corHex": "#15803d",
+    "bgHex": "#15803d12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que grosas son as raíces do carballo galego?",
+      "es": "¿Qué gruesas son las raíces del roble gallego?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Carballo centenario».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Roble centenario»."
+    },
+    "tprAccion": {
+      "en": "Roots planted deep and firm",
+      "gl": "Pés cravados firmes no chan",
+      "es": "Pés cravados firmes no chan"
+    }
+  },
+  {
+    "id": "vigo_nat_114",
+    "numero": 114,
+    "categoria": "vigo_natureza",
+    "gl": "Flor que se abre",
+    "es": "Flor que se abre",
+    "en": "Blossom",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-114",
+    "corHex": "#f43f5e",
+    "bgHex": "#f43f5e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A flor esperta cando sae a luz do sol?",
+      "es": "¿La flor despierta cuando sale la luz del sol?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Flor que se abre».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Flor que se abre»."
+    },
+    "tprAccion": {
+      "en": "Open clenched fists into a bloom",
+      "gl": "Abrir as mans dende o puño pechado",
+      "es": "Abrir as mans dende o puño pechado"
+    }
+  },
+  {
+    "id": "vigo_nat_115",
+    "numero": 115,
+    "categoria": "vigo_natureza",
+    "gl": "Folla que baila",
+    "es": "Hoja que baila",
+    "en": "Dancing leaf",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-115",
+    "corHex": "#ea580c",
+    "bgHex": "#ea580c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Xira a folla no aire antes de caer?",
+      "es": "¿Gira la hoja en el aire antes de caer?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Folla que baila».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Hoja que baila»."
+    },
+    "tprAccion": {
+      "en": "Twirl slowly around yourself",
+      "gl": "Xiro suave sobre si mesmo",
+      "es": "Xiro suave sobre si mesmo"
+    }
+  },
+  {
+    "id": "vigo_nat_116",
+    "numero": 116,
+    "categoria": "vigo_natureza",
+    "gl": "Castaña do Magosto",
+    "es": "Castaña del Magosto",
+    "en": "Chestnut",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-116",
+    "corHex": "#78350f",
+    "bgHex": "#78350f12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que ricas son as castañas asadas no outono!",
+      "es": "¡Qué ricas son las castañas asadas en otoño!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Castaña do Magosto».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Castaña del Magosto»."
+    },
+    "tprAccion": {
+      "en": "Blow gently on a hot chestnut",
+      "gl": "Soprar a castaña quente",
+      "es": "Soprar a castaña quente"
+    }
+  },
+  {
+    "id": "vigo_nat_117",
+    "numero": 117,
+    "categoria": "vigo_natureza",
+    "gl": "Area dourada",
+    "es": "Arena dorada",
+    "en": "Golden sand",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-117",
+    "corHex": "#eab308",
+    "bgHex": "#eab30812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Deixas escorregar a area entre os dedos?",
+      "es": "¿Dejas escurrir la arena entre los dedos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Area dourada».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Arena dorada»."
+    },
+    "tprAccion": {
+      "en": "Let sand trickle through fingers",
+      "gl": "Deixar caer dedos brandos",
+      "es": "Deixar caer dedos brandos"
+    }
+  },
+  {
+    "id": "vigo_nat_118",
+    "numero": 118,
+    "categoria": "vigo_natureza",
+    "gl": "Pedra redonda do río",
+    "es": "Piedra redonda del río",
+    "en": "Pebble",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-118",
+    "corHex": "#64748b",
+    "bgHex": "#64748b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A pedra é dura e lisa coma a concha?",
+      "es": "¿La piedra es dura y lisa como la concha?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Pedra redonda do río».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Piedra redonda del río»."
+    },
+    "tprAccion": {
+      "en": "Squeeze fist tight: Hard rock!",
+      "gl": "Apertar o puño con forza: dura!",
+      "es": "Apertar o puño con forza: dura!"
+    }
+  },
+  {
+    "id": "vigo_nat_119",
+    "numero": 119,
+    "categoria": "vigo_natureza",
+    "gl": "Onda mariña",
+    "es": "Ola marina",
+    "en": "Sea wave",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-119",
+    "corHex": "#0891b2",
+    "bgHex": "#0891b212",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A onda vén e vai na beira da praia?",
+      "es": "¿La ola viene y va en la orilla de la playa?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Onda mariña».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Ola marina»."
+    },
+    "tprAccion": {
+      "en": "Back and forth wave motion",
+      "gl": "Brazos adiante e atrás en vaivén",
+      "es": "Brazos adiante e atrás en vaivén"
+    }
+  },
+  {
+    "id": "vigo_nat_120",
+    "numero": 120,
+    "categoria": "vigo_natureza",
+    "gl": "Semente que medra",
+    "es": "Semilla que crece",
+    "en": "Seed",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-120",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Plantamos a sementeira na horta da escola?",
+      "es": "¿Plantamos la semilla en el huerto de la escuela?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Semente que medra».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Semilla que crece»."
+    },
+    "tprAccion": {
+      "en": "Crouch tiny, then grow tall",
+      "gl": "Abaixarse pequeniño e medrar",
+      "es": "Abaixarse pequeniño e medrar"
+    }
+  },
+  {
+    "id": "vigo_nat_121",
+    "numero": 121,
+    "categoria": "vigo_natureza",
+    "gl": "Bateas de mexillóns",
+    "es": "Bateas de mejillones",
+    "en": "Mussel rafts",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-121",
+    "corHex": "#92400e",
+    "bgHex": "#92400e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ves as bateas de madeira flotando na ría?",
+      "es": "¿Ves las bateas de madera flotando en la ría?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Bateas de mexillóns».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Bateas de mejillones»."
+    },
+    "tprAccion": {
+      "en": "Extend arms flat like floating rafts",
+      "gl": "Brazos estendidos horizontais",
+      "es": "Brazos estendidos horizontais"
+    }
+  },
+  {
+    "id": "escola_rut_122",
+    "numero": 122,
+    "categoria": "escola_rutinas",
+    "gl": "Asemblea no círculo",
+    "es": "Asamblea en el círculo",
+    "en": "Morning Circle",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-122",
+    "corHex": "#ea580c",
+    "bgHex": "#ea580c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Dámonos a man todos sentados na alfombra?",
+      "es": "¿Nos damos la mano todos sentados en la alfombra?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Asemblea no círculo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Asamblea en el círculo»."
+    },
+    "tprAccion": {
+      "en": "Join hands in morning circle",
+      "gl": "Darse a man en círculo",
+      "es": "Darse a man en círculo"
+    }
+  },
+  {
+    "id": "escola_rut_123",
+    "numero": 123,
+    "categoria": "escola_rutinas",
+    "gl": "Acollemento con agarimo",
+    "es": "Acogida con cariño",
+    "en": "Welcome",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-123",
+    "corHex": "#f43f5e",
+    "bgHex": "#f43f5e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que ben nos recibe a mestra cun saúdo doce?",
+      "es": "¿Qué bien nos recibe la maestra con un saludo dulce?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Acollemento con agarimo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Acogida con cariño»."
+    },
+    "tprAccion": {
+      "en": "Open arms and say: Welcome!",
+      "gl": "Abrir os brazos e saudar",
+      "es": "Abrir os brazos e saudar"
+    }
+  },
+  {
+    "id": "escola_rut_124",
+    "numero": 124,
+    "categoria": "escola_rutinas",
+    "gl": "Lavado de mans antes de comer",
+    "es": "Lavado de manos antes de comer",
+    "en": "Handwashing",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-124",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Fregamos ben co xabón para ter mans limpas?",
+      "es": "¿Frotamos bien con jabón para tener manos limpias?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lavado de mans antes de comer».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lavado de manos antes de comer»."
+    },
+    "tprAccion": {
+      "en": "Scrub palms and rinse clean",
+      "gl": "Fregar palmas e dedos",
+      "es": "Fregar palmas e dedos"
+    }
+  },
+  {
+    "id": "escola_rut_125",
+    "numero": 125,
+    "categoria": "escola_rutinas",
+    "gl": "Hora da merenda compartida",
+    "es": "Hora de la merienda compartida",
+    "en": "Snack time",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-125",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Comemos a mazá e o plátano sentados xuntos?",
+      "es": "¿Comemos la manzana y el plátano sentados juntos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Hora da merenda compartida».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Hora de la merienda compartida»."
+    },
+    "tprAccion": {
+      "en": "Chew peacefully and share fruit",
+      "gl": "Comer a amodo mastigando ben",
+      "es": "Comer a amodo mastigando ben"
+    }
+  },
+  {
+    "id": "escola_rut_126",
+    "numero": 126,
+    "categoria": "escola_rutinas",
+    "gl": "Hora da sesta en acougo",
+    "es": "Hora de la siesta en reposo",
+    "en": "Naptime",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-126",
+    "corHex": "#6366f1",
+    "bgHex": "#6366f112",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Pousamos a cabeza para descansar en silencio?",
+      "es": "¿Posamos la cabeza para descansar en silencio?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Hora da sesta en acougo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Hora de la siesta en reposo»."
+    },
+    "tprAccion": {
+      "en": "Slow deep breathing: In and out",
+      "gl": "Respirar amodo pechando os ollos",
+      "es": "Respirar amodo pechando os ollos"
+    }
+  },
+  {
+    "id": "escola_rut_127",
+    "numero": 127,
+    "categoria": "escola_rutinas",
+    "gl": "Xogo libre con pezas de madeira",
+    "es": "Juego libre con piezas de madera",
+    "en": "Free Play",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-127",
+    "corHex": "#b45309",
+    "bgHex": "#b4530912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que torre alta podemos construír sen que caia?",
+      "es": "¿Qué torre alta podemos construir sin que caiga?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Xogo libre con pezas de madeira».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Juego libre con piezas de madera»."
+    },
+    "tprAccion": {
+      "en": "Stack blocks one on top of another",
+      "gl": "Poñer unha man sobre a outra",
+      "es": "Poñer unha man sobre a outra"
+    }
+  },
+  {
+    "id": "escola_rut_128",
+    "numero": 128,
+    "categoria": "escola_rutinas",
+    "gl": "Recollida en equipo",
+    "es": "Recogida en equipo",
+    "en": "Tidy up time",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-128",
+    "corHex": "#d97706",
+    "bgHex": "#d9770612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Gardamos cada cousa no seu cestiño?",
+      "es": "¿Guardamos cada cosa en su cestito?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Recollida en equipo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Recogida en equipo»."
+    },
+    "tprAccion": {
+      "en": "Place toys gently in the basket",
+      "gl": "Gardar elementos imaxinarios",
+      "es": "Gardar elementos imaxinarios"
+    }
+  },
+  {
+    "id": "escola_rut_129",
+    "numero": 129,
+    "categoria": "escola_rutinas",
+    "gl": "Lectura de conto colectivo",
+    "es": "Lectura de cuento colectivo",
+    "en": "Storytime",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-129",
+    "corHex": "#c2410c",
+    "bgHex": "#c2410c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Escoitamos a historia con ollos moi abertos?",
+      "es": "¿Escuchamos la historia con ojos muy abiertos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lectura de conto colectivo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lectura de cuento colectivo»."
+    },
+    "tprAccion": {
+      "en": "Cupped hands behind ears to listen",
+      "gl": "Orellas atentas con mans detrás",
+      "es": "Orellas atentas con mans detrás"
+    }
+  },
+  {
+    "id": "escola_rut_130",
+    "numero": 130,
+    "categoria": "escola_rutinas",
+    "gl": "Cantar a 72 bpm",
+    "es": "Cantar a 72 bpm",
+    "en": "Singing beat",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-130",
+    "corHex": "#7c3aed",
+    "bgHex": "#7c3aed12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Seguimos o latexo do noso corazón coas palmas?",
+      "es": "¿Seguimos el latido de nuestro corazón con las palmas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cantar a 72 bpm».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cantar a 72 bpm»."
+    },
+    "tprAccion": {
+      "en": "Gentle heartbeat taps on chest",
+      "gl": "Palmas rítmicas lentas no peito",
+      "es": "Palmas rítmicas lentas no peito"
+    }
+  },
+  {
+    "id": "escola_rut_131",
+    "numero": 131,
+    "categoria": "escola_rutinas",
+    "gl": "Psicomotricidade e gateo",
+    "es": "Psicomotricidad y gateo",
+    "en": "Crawling time",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-131",
+    "corHex": "#059669",
+    "bgHex": "#05966912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Gateamos coma gatiños pola alfombra suave?",
+      "es": "¿Gateamos como gatitos por la alfombra suave?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Psicomotricidade e gateo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Psicomotricidad y gateo»."
+    },
+    "tprAccion": {
+      "en": "Crawl on all fours like a cat",
+      "gl": "Gatear amodo a catro patas",
+      "es": "Gatear amodo a catro patas"
+    }
+  },
+  {
+    "id": "escola_rut_132",
+    "numero": 132,
+    "categoria": "escola_rutinas",
+    "gl": "Despedida afectiva",
+    "es": "Despedida afectiva",
+    "en": "Farewell",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-132",
+    "corHex": "#ec4899",
+    "bgHex": "#ec489912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Dicímosche «ata mañá!» cun sorriso e a man?",
+      "es": "¿Te decimos «¡hasta mañana!» con sonrisa y la mano?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Despedida afectiva».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Despedida afectiva»."
+    },
+    "tprAccion": {
+      "en": "Wave hand saying: Bye-bye!",
+      "gl": "Mover a man no aire saúdando",
+      "es": "Mover a man no aire saúdando"
+    }
+  },
+  {
+    "id": "escola_rut_133",
+    "numero": 133,
+    "categoria": "escola_rutinas",
+    "gl": "Entrada coa familia sen présas",
+    "es": "Entrada con la familia sin prisas",
+    "en": "Gentle drop-off",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-133",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Despídeste con calma e un bico de papá ou mamá?",
+      "es": "¿Te despides con calma y un beso de papá o mamá?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Entrada coa familia sen présas».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Entrada con la familia sin prisas»."
+    },
+    "tprAccion": {
+      "en": "Warm eye contact and goodbye kiss",
+      "gl": "Contacto visual e bico na meixela",
+      "es": "Contacto visual e bico na meixela"
+    }
+  },
+  {
+    "id": "escola_rut_134",
+    "numero": 134,
+    "categoria": "escola_rutinas",
+    "gl": "Colgar o abrigo na percha",
+    "es": "Colgar el abrigo en la percha",
+    "en": "Hanging coat",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-134",
+    "corHex": "#475569",
+    "bgHex": "#47556912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde colgas o teu abrigo coa túa foto?",
+      "es": "¿Dónde cuelgas tu abrigo con tu foto?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Colgar o abrigo na percha».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Colgar el abrigo en la percha»."
+    },
+    "tprAccion": {
+      "en": "Reach high to hang your coat",
+      "gl": "Erguer brazos ata a percha",
+      "es": "Erguer brazos ata a percha"
+    }
+  },
+  {
+    "id": "escola_rut_135",
+    "numero": 135,
+    "categoria": "escola_rutinas",
+    "gl": "Sentar na alfombra sen ruído",
+    "es": "Sentarse en la alfombra sin ruido",
+    "en": "Quiet sitting",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-135",
+    "corHex": "#8b5cf6",
+    "bgHex": "#8b5cf612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Pousamos o corpo coma unha pluma lixeira?",
+      "es": "¿Posamos el cuerpo como una pluma ligera?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Sentar na alfombra sen ruído».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Sentarse en la alfombra sin ruido»."
+    },
+    "tprAccion": {
+      "en": "Land softly like a light feather",
+      "gl": "Sentar amodiño sen golpes",
+      "es": "Sentar amodiño sen golpes"
+    }
+  },
+  {
+    "id": "escola_rut_136",
+    "numero": 136,
+    "categoria": "escola_rutinas",
+    "gl": "Quendas de palabra e escoita",
+    "es": "Turnos de palabra y escucha",
+    "en": "Taking turns",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-136",
+    "corHex": "#0891b2",
+    "bgHex": "#0891b212",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ergues a man cando queres falar na asemblea?",
+      "es": "¿Alzas la mano cuando quieres hablar en la asamblea?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Quendas de palabra e escoita».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Turnos de palabra y escucha»."
+    },
+    "tprAccion": {
+      "en": "Raise your hand gently: My turn!",
+      "gl": "Erguer a man suavemente",
+      "es": "Erguer a man suavemente"
+    }
+  },
+  {
+    "id": "escola_rut_137",
+    "numero": 137,
+    "categoria": "escola_rutinas",
+    "gl": "Compartir o xoguete co amigo",
+    "es": "Compartir el juguete con el amigo",
+    "en": "Sharing toys",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-137",
+    "corHex": "#f59e0b",
+    "bgHex": "#f59e0b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ofreces a pelota ao teu compañeiro de aula?",
+      "es": "¿Ofreces la pelota a tu compañero de aula?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Compartir o xoguete co amigo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Compartir el juguete con el amigo»."
+    },
+    "tprAccion": {
+      "en": "Offer hands forward with a gift",
+      "gl": "Entregar mans adiante abertas",
+      "es": "Entregar mans adiante abertas"
+    }
+  },
+  {
+    "id": "escola_rut_138",
+    "numero": 138,
+    "categoria": "escola_rutinas",
+    "gl": "Pintura con dedos e fariña",
+    "es": "Pintura con dedos y harina",
+    "en": "Finger painting",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-138",
+    "corHex": "#ef4444",
+    "bgHex": "#ef444412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que sinte a túa man ao tocar a textura fría?",
+      "es": "¿Qué siente tu mano al tocar la textura fría?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Pintura con dedos e fariña».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Pintura con dedos y harina»."
+    },
+    "tprAccion": {
+      "en": "Dip fingers into smooth paint",
+      "gl": "Tocar a mesa con cadanseu dedo",
+      "es": "Tocar a mesa con cadanseu dedo"
+    }
+  },
+  {
+    "id": "escola_rut_139",
+    "numero": 139,
+    "categoria": "escola_rutinas",
+    "gl": "Xogo con auga morna en baldes",
+    "es": "Juego con agua tibia en cubos",
+    "en": "Water sensory play",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-139",
+    "corHex": "#06b6d4",
+    "bgHex": "#06b6d412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Metemos os barquiños a flotar na auga limpa?",
+      "es": "¿Metemos los barquitos a flotar en el agua limpia?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Xogo con auga morna en baldes».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Juego con agua tibia en cubos»."
+    },
+    "tprAccion": {
+      "en": "Swirl water in slow circles",
+      "gl": "Mover auga con movemento suave",
+      "es": "Mover auga con movemento suave"
+    }
+  },
+  {
+    "id": "escola_rut_140",
+    "numero": 140,
+    "categoria": "escola_rutinas",
+    "gl": "Paseo polo patio verde",
+    "es": "Paseo por el patio verde",
+    "en": "Garden walk",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-140",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Cheiras a herba mollada despois da chuvia?",
+      "es": "¿Hueles la hierba mojada tras la lluvia?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Paseo polo patio verde».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Paseo por el patio verde»."
+    },
+    "tprAccion": {
+      "en": "Breathe deep the fresh grass",
+      "gl": "Inhalar fondo polo nariz",
+      "es": "Inhalar fondo polo nariz"
+    }
+  },
+  {
+    "id": "escola_rut_141",
+    "numero": 141,
+    "categoria": "escola_rutinas",
+    "gl": "Danza en corro con ritmo",
+    "es": "Danza en corro con ritmo",
+    "en": "Ring dance",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-141",
+    "corHex": "#ec4899",
+    "bgHex": "#ec489912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Xiramos todos collidos da man con coidado?",
+      "es": "¿Giramos todos cogidos de la mano con cuidado?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Danza en corro con ritmo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Danza en corro con ritmo»."
+    },
+    "tprAccion": {
+      "en": "Step in rhythm around the circle",
+      "gl": "Xiro en corro a pasos curtos",
+      "es": "Xiro en corro a pasos curtos"
+    }
+  },
+  {
+    "id": "escola_rut_142",
+    "numero": 142,
+    "categoria": "escola_rutinas",
+    "gl": "Momento de respiración e acougo",
+    "es": "Momento de respiración y calma",
+    "en": "Quiet breath",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-142",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Inspiramos polo nariz e soltamos amodo?",
+      "es": "¿Inspiramos por la nariz y soltamos despacio?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Momento de respiración e acougo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Momento de respiración y calma»."
+    },
+    "tprAccion": {
+      "en": "Hands on belly: Breathe in and out",
+      "gl": "Mans na barriga notando o aire",
+      "es": "Mans na barriga notando o aire"
+    }
+  },
+  {
+    "id": "escola_rut_143",
+    "numero": 143,
+    "categoria": "escola_rutinas",
+    "gl": "Apego seguro con educadora",
+    "es": "Apego seguro con educadora",
+    "en": "Safe bond",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-143",
+    "corHex": "#64748b",
+    "bgHex": "#64748b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Sentes a man segura que te acompaña na escola?",
+      "es": "¿Sientes la mano segura que te acompaña en la escuela?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Apego seguro con educadora».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Apego seguro con educadora»."
+    },
+    "tprAccion": {
+      "en": "Gentle reassuring hand squeeze",
+      "gl": "Apertar a man con firmeza suave",
+      "es": "Apertar a man con firmeza suave"
+    }
+  },
+  {
+    "id": "escola_rut_144",
+    "numero": 144,
+    "categoria": "escola_rutinas",
+    "gl": "Mirada aos ollos sincera",
+    "es": "Mirada a los ojos sincera",
+    "en": "Eye contact",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-144",
+    "corHex": "#1e293b",
+    "bgHex": "#1e293b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Miras aos ollos cando dis un saúdo agarimoso?",
+      "es": "¿Miras a los ojos cuando dices un saludo cariñoso?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Mirada aos ollos sincera».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Mirada a los ojos sincera»."
+    },
+    "tprAccion": {
+      "en": "Warm direct eye contact and smile",
+      "gl": "Mirada serena e sorriso cálido",
+      "es": "Mirada serena e sorriso cálido"
+    }
+  },
+  {
+    "id": "escola_rut_145",
+    "numero": 145,
+    "categoria": "escola_rutinas",
+    "gl": "Saída feliz coa familia",
+    "es": "Salida feliz con la familia",
+    "en": "Reunion time",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-145",
+    "corHex": "#d97706",
+    "bgHex": "#d9770612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Vén buscarte a túa familia ao rematar o día?",
+      "es": "¿Viene a buscarte tu familia al terminar el día?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Saída feliz coa familia».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Salida feliz con la familia»."
+    },
+    "tprAccion": {
+      "en": "Happy reunion hug at pickup",
+      "gl": "Dar un abrazo de reencontro",
+      "es": "Dar un abrazo de reencontro"
+    }
+  },
+  {
+    "id": "escola_rut_146",
+    "numero": 146,
+    "categoria": "escola_rutinas",
+    "gl": "Ponte á casa co conto do día",
+    "es": "Puente a casa con el cuento del día",
+    "en": "Home bridge",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-146",
+    "corHex": "#c2410c",
+    "bgHex": "#c2410c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Contámoslle na casa o que aprendemos hoxe?",
+      "es": "¿Le contamos en casa lo que aprendimos hoy?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Ponte á casa co conto do día».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Puente a casa con el cuento del día»."
+    },
+    "tprAccion": {
+      "en": "Hand on heart: Tell family our tale",
+      "gl": "Sinalar o corazón coa man",
+      "es": "Sinalar o corazón coa man"
+    }
+  },
+  {
+    "id": "emocions_corp_147",
+    "numero": 147,
+    "categoria": "emocions_corpo",
+    "gl": "Aledía e risa aberta",
+    "es": "Alegría y risa abierta",
+    "en": "Joy",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-147",
+    "corHex": "#f59e0b",
+    "bgHex": "#f59e0b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que cousa che fai rir con ganas na escola?",
+      "es": "¿Qué cosa te hace reír con ganas en la escuela?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Aledía e risa aberta».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Alegría y risa abierta»."
+    },
+    "tprAccion": {
+      "en": "Laugh out loud with open arms",
+      "gl": "Rir «xa, xa, xa!» abrindo os brazos",
+      "es": "Rir «xa, xa, xa!» abrindo os brazos"
+    }
+  },
+  {
+    "id": "emocions_corp_148",
+    "numero": 148,
+    "categoria": "emocions_corpo",
+    "gl": "Calma e serenidade",
+    "es": "Calma y serenidad",
+    "en": "Calm",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-148",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como se sinte o teu corpo cando descansas?",
+      "es": "¿Cómo se siente tu cuerpo cuando descansas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Calma e serenidade».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Calma y serenidad»."
+    },
+    "tprAccion": {
+      "en": "Drop shoulders and breathe ease",
+      "gl": "Ombreiros abaixo e respiración fonda",
+      "es": "Ombreiros abaixo e respiración fonda"
+    }
+  },
+  {
+    "id": "emocions_corp_149",
+    "numero": 149,
+    "categoria": "emocions_corpo",
+    "gl": "Sorpresa con ollos grandes",
+    "es": "Sorpresa con ojos grandes",
+    "en": "Surprise",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-149",
+    "corHex": "#a855f7",
+    "bgHex": "#a855f712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que sorpresa hai dentro da caixa secreta?",
+      "es": "¿Qué sorpresa hay dentro de la caja secreta?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Sorpresa con ollos grandes».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Sorpresa con ojos grandes»."
+    },
+    "tprAccion": {
+      "en": "Hands to cheeks: Wow, look!",
+      "gl": "Mans ás meixelas: ¡Ohhh!",
+      "es": "Mans ás meixelas: ¡Ohhh!"
+    }
+  },
+  {
+    "id": "emocions_corp_150",
+    "numero": 150,
+    "categoria": "emocions_corpo",
+    "gl": "Sono reparador",
+    "es": "Sueño reparador",
+    "en": "Sleepy",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-150",
+    "corHex": "#6366f1",
+    "bgHex": "#6366f112",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Tes sono despois de xogar moito no patio?",
+      "es": "¿Tienes sueño tras jugar mucho en el patio?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Sono reparador».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Sueño reparador»."
+    },
+    "tprAccion": {
+      "en": "Yawn and stretch your sleepy arms",
+      "gl": "Bocexo amplo tapando a boca",
+      "es": "Bocexo amplo tapando a boca"
+    }
+  },
+  {
+    "id": "emocions_corp_151",
+    "numero": 151,
+    "categoria": "emocions_corpo",
+    "gl": "Fame sa de comer froita",
+    "es": "Hambre sana de comer fruta",
+    "en": "Hungry",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-151",
+    "corHex": "#ea580c",
+    "bgHex": "#ea580c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A barriga pídete comida rica e sa?",
+      "es": "¿La barriga te pide comida rica y sana?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Fame sa de comer froita».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Hambre sana de comer fruta»."
+    },
+    "tprAccion": {
+      "en": "Rub tummy in happy circles",
+      "gl": "Acariciar a barriga en círculos",
+      "es": "Acariciar a barriga en círculos"
+    }
+  },
+  {
+    "id": "emocions_corp_152",
+    "numero": 152,
+    "categoria": "emocions_corpo",
+    "gl": "Sede de auga fresca",
+    "es": "Sed de agua fresca",
+    "en": "Thirsty",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-152",
+    "corHex": "#06b6d4",
+    "bgHex": "#06b6d412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Pedimos auga cando temos a gorxa seca?",
+      "es": "¿Pedimos agua cuando tenemos la garganta seca?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Sede de auga fresca».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Sed de agua fresca»."
+    },
+    "tprAccion": {
+      "en": "Cup hand asking for clean water",
+      "gl": "Pedir auga coa man en cunca",
+      "es": "Pedir auga coa man en cunca"
+    }
+  },
+  {
+    "id": "emocions_corp_153",
+    "numero": 153,
+    "categoria": "emocions_corpo",
+    "gl": "Afecto e agarimo seguro",
+    "es": "Afecto y cariño seguro",
+    "en": "Love",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-153",
+    "corHex": "#f43f5e",
+    "bgHex": "#f43f5e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A quen lle queres dar un abrazo ben apretado?",
+      "es": "¿A quién le quieres dar un abrazo bien apretado?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Afecto e agarimo seguro».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Afecto y cariño seguro»."
+    },
+    "tprAccion": {
+      "en": "Hand over heart with warm smile",
+      "gl": "Pousar a man no corazón",
+      "es": "Pousar a man no corazón"
+    }
+  },
+  {
+    "id": "emocions_corp_154",
+    "numero": 154,
+    "categoria": "emocions_corpo",
+    "gl": "Tristeza consolada",
+    "es": "Tristeza consolada",
+    "en": "Comfort",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-154",
+    "corHex": "#64748b",
+    "bgHex": "#64748b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Quen che dá un abrazo cando che cae unha bágoa?",
+      "es": "¿Quién te da un abrazo cuando te cae una lágrima?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Tristeza consolada».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Tristeza consolada»."
+    },
+    "tprAccion": {
+      "en": "Wipe a teardrop with soft finger",
+      "gl": "Secar a bágoa con caricia suave",
+      "es": "Secar a bágoa con caricia suave"
+    }
+  },
+  {
+    "id": "emocions_corp_155",
+    "numero": 155,
+    "categoria": "emocions_corpo",
+    "gl": "Enfado acougado",
+    "es": "Enfado calmado",
+    "en": "Calming down",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-155",
+    "corHex": "#dc2626",
+    "bgHex": "#dc262612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Inspiramos tres veces para que pase o enfado?",
+      "es": "¿Inspiramos tres veces para que pase el enfado?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Enfado acougado».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Enfado calmado»."
+    },
+    "tprAccion": {
+      "en": "Blow out anger like blowing a candle",
+      "gl": "Soprar o aire amodiño para calmar",
+      "es": "Soprar o aire amodiño para calmar"
+    }
+  },
+  {
+    "id": "emocions_corp_156",
+    "numero": 156,
+    "categoria": "emocions_corpo",
+    "gl": "Cabeza pensadora",
+    "es": "Cabeza pensadora",
+    "en": "Head",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-156",
+    "corHex": "#475569",
+    "bgHex": "#47556912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde está a túa cabeza? ¡Tócaa coas mans!",
+      "es": "¿Dónde está tu cabeza? ¡Tócala con las manos!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cabeza pensadora».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cabeza pensadora»."
+    },
+    "tprAccion": {
+      "en": "Touch your head with both hands",
+      "gl": "Pousar as dúas mans na cabeza",
+      "es": "Pousar as dúas mans na cabeza"
+    }
+  },
+  {
+    "id": "emocions_corp_157",
+    "numero": 157,
+    "categoria": "emocions_corpo",
+    "gl": "Ollos que ollan",
+    "es": "Ojos que miran",
+    "en": "Eyes",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-157",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que cores tan bonitas ven os teus ollos?",
+      "es": "¿Qué colores tan bonitos ven tus ojos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Ollos que ollan».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Ojos que miran»."
+    },
+    "tprAccion": {
+      "en": "Blink eyes open and shut",
+      "gl": "Pestanexar suavemente",
+      "es": "Pestanexar suavemente"
+    }
+  },
+  {
+    "id": "emocions_corp_158",
+    "numero": 158,
+    "categoria": "emocions_corpo",
+    "gl": "Orellas que escoitan",
+    "es": "Orejas que escuchan",
+    "en": "Ears",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-158",
+    "corHex": "#d97706",
+    "bgHex": "#d9770612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Escoitas o canto dos paxariños no xardín?",
+      "es": "¿Escuchas el canto de los pajaritos en el jardín?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Orellas que escoitan».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Orejas que escuchan»."
+    },
+    "tprAccion": {
+      "en": "Touch your ears to listen close",
+      "gl": "Tocar o lóbulo da orella",
+      "es": "Tocar o lóbulo da orella"
+    }
+  },
+  {
+    "id": "emocions_corp_159",
+    "numero": 159,
+    "categoria": "emocions_corpo",
+    "gl": "Nariz que cheira",
+    "es": "Nariz que huele",
+    "en": "Nose",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-159",
+    "corHex": "#f59e0b",
+    "bgHex": "#f59e0b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A que cheira a flor do monte de Castrelos?",
+      "es": "¿A qué huele la flor del monte de Castrelos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Nariz que cheira».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Nariz que huele»."
+    },
+    "tprAccion": {
+      "en": "Sniff twice through the nose",
+      "gl": "Cheirar dúas veces polo nariz",
+      "es": "Cheirar dúas veces polo nariz"
+    }
+  },
+  {
+    "id": "emocions_corp_160",
+    "numero": 160,
+    "categoria": "emocions_corpo",
+    "gl": "Boca que canta",
+    "es": "Boca que canta",
+    "en": "Mouth",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-160",
+    "corHex": "#ef4444",
+    "bgHex": "#ef444412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Abrimos a boca para cantar a canción da Lúa?",
+      "es": "¿Abrimos la boca para cantar la canción de Lúa?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Boca que canta».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Boca que canta»."
+    },
+    "tprAccion": {
+      "en": "Sing out loud: La-la-la!",
+      "gl": "Abrir a boca e cantar: «Laaa!»",
+      "es": "Abrir a boca e cantar: «Laaa!»"
+    }
+  },
+  {
+    "id": "emocions_corp_161",
+    "numero": 161,
+    "categoria": "emocions_corpo",
+    "gl": "Mans que crean",
+    "es": "Manos que crean",
+    "en": "Hands",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-161",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Cantas cousas marabillosas fan as túas mans?",
+      "es": "¿Cuántas cosas maravillosas hacen tus manos?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Mans que crean».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Manos que crean»."
+    },
+    "tprAccion": {
+      "en": "Turn palms up and down",
+      "gl": "Xirar palmas cara arriba e abaixo",
+      "es": "Xirar palmas cara arriba e abaixo"
+    }
+  },
+  {
+    "id": "emocions_corp_162",
+    "numero": 162,
+    "categoria": "emocions_corpo",
+    "gl": "Pés que camiñan",
+    "es": "Pies que caminan",
+    "en": "Feet",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-162",
+    "corHex": "#059669",
+    "bgHex": "#05966912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Pisar forte no chan fai un son de tambor?",
+      "es": "¿Pisar fuerte en el suelo hace un sonido de tambor?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Pés que camiñan».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Pies que caminan»."
+    },
+    "tprAccion": {
+      "en": "Stomp feet to the beat",
+      "gl": "Patear no chan con ritmo",
+      "es": "Patear no chan con ritmo"
+    }
+  },
+  {
+    "id": "emocions_corp_163",
+    "numero": 163,
+    "categoria": "emocions_corpo",
+    "gl": "Barriga redondiña",
+    "es": "Barriga redondita",
+    "en": "Tummy",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-163",
+    "corHex": "#ca8a04",
+    "bgHex": "#ca8a0412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde vai a comida rica? ¡Á barriguiña!",
+      "es": "¿Dónde va la comida rica? ¡A la barriguita!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Barriga redondiña».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Barriga redondita»."
+    },
+    "tprAccion": {
+      "en": "Circle hands on warm tummy",
+      "gl": "Facer círculos na barriga",
+      "es": "Facer círculos na barriga"
+    }
+  },
+  {
+    "id": "emocions_corp_164",
+    "numero": 164,
+    "categoria": "emocions_corpo",
+    "gl": "Costas fortes",
+    "es": "Espalda fuerte",
+    "en": "Back",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-164",
+    "corHex": "#78350f",
+    "bgHex": "#78350f12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Poñemos as costas ben rectas coma unha árbore?",
+      "es": "¿Ponemos la espalda bien recta como un árbol?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Costas fortes».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Espalda fuerte»."
+    },
+    "tprAccion": {
+      "en": "Straighten your spine tall",
+      "gl": "Estirar a columna cara ao ceo",
+      "es": "Estirar a columna cara ao ceo"
+    }
+  },
+  {
+    "id": "emocions_corp_165",
+    "numero": 165,
+    "categoria": "emocions_corpo",
+    "gl": "Dedos áxiles",
+    "es": "Dedos ágiles",
+    "en": "Fingers",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-165",
+    "corHex": "#a855f7",
+    "bgHex": "#a855f712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Podes mover cada dedito un por un?",
+      "es": "¿Puedes mover cada dedito uno por uno?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Dedos áxiles».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Dedos ágiles»."
+    },
+    "tprAccion": {
+      "en": "Tap thumb to each fingertip",
+      "gl": "Tocar polgar con cada dedo",
+      "es": "Tocar polgar con cada dedo"
+    }
+  },
+  {
+    "id": "emocions_corp_166",
+    "numero": 166,
+    "categoria": "emocions_corpo",
+    "gl": "Cóxegas nos pés",
+    "es": "Cosquillas en los pies",
+    "en": "Foot tickles",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-166",
+    "corHex": "#ec4899",
+    "bgHex": "#ec489912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Quen aguanta as cóxegas na planta dos pés?",
+      "es": "¿Quién aguanta las cosquillas en la planta de los pies?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cóxegas nos pés».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Cosquillas en los pies»."
+    },
+    "tprAccion": {
+      "en": "Curl your toes and giggle!",
+      "gl": "Encoller os pés e rir",
+      "es": "Encoller os pés e rir"
+    }
+  },
+  {
+    "id": "emocions_corp_167",
+    "numero": 167,
+    "categoria": "emocions_corpo",
+    "gl": "Tacto suave coma pluma",
+    "es": "Tacto suave como pluma",
+    "en": "Soft touch",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-167",
+    "corHex": "#94a3b8",
+    "bgHex": "#94a3b812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Sentides que suave é o pelo da gatiña Lúa?",
+      "es": "¿Sentís qué suave es el pelo de la gatita Lúa?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Tacto suave coma pluma».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Tacto suave como pluma»."
+    },
+    "tprAccion": {
+      "en": "Caress the back of your hand",
+      "gl": "Acariciar o dorso da man",
+      "es": "Acariciar o dorso da man"
+    }
+  },
+  {
+    "id": "emocions_corp_168",
+    "numero": 168,
+    "categoria": "emocions_corpo",
+    "gl": "Son forte de trallazo",
+    "es": "Sonido fuerte de trallazo",
+    "en": "Loud sound",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-168",
+    "corHex": "#dc2626",
+    "bgHex": "#dc262612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como soa un trono lonxe no ceo? «Bum!»",
+      "es": "¿Cómo suena un trueno lejos en el cielo? «¡Bum!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Son forte de trallazo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Sonido fuerte de trallazo»."
+    },
+    "tprAccion": {
+      "en": "One loud clap: Boom!",
+      "gl": "Palma forte única no ar",
+      "es": "Palma forte única no ar"
+    }
+  },
+  {
+    "id": "emocions_corp_169",
+    "numero": 169,
+    "categoria": "emocions_corpo",
+    "gl": "Son doce de berce",
+    "es": "Sonido dulce de cuna",
+    "en": "Sweet lullaby",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-169",
+    "corHex": "#8b5cf6",
+    "bgHex": "#8b5cf612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como soa a música suave que nos adormece?",
+      "es": "¿Cómo suena la música suave que nos adormece?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Son doce de berce».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Sonido dulce de cuna»."
+    },
+    "tprAccion": {
+      "en": "Gentle rocking to lullaby rhythm",
+      "gl": "Balanzo lento do corpo",
+      "es": "Balanzo lento do corpo"
+    }
+  },
+  {
+    "id": "emocions_corp_170",
+    "numero": 170,
+    "categoria": "emocions_corpo",
+    "gl": "Calor morna da aperta",
+    "es": "Calor tibia del abrazo",
+    "en": "Warmth",
+    "cefr": "Pre-A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-170",
+    "corHex": "#f59e0b",
+    "bgHex": "#f59e0b12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A man de mamá ou da educadora dá calorciña?",
+      "es": "¿La mano de mamá o de la educadora da calorcito?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Calor morna da aperta».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Calor tibia del abrazo»."
+    },
+    "tprAccion": {
+      "en": "Rub palms warm and place on cheeks",
+      "gl": "Fregar palmas para xerar calor",
+      "es": "Fregar palmas para xerar calor"
+    }
+  },
+  {
+    "id": "emocions_corp_171",
+    "numero": 171,
+    "categoria": "emocions_corpo",
+    "gl": "Frío fresco da neve",
+    "es": "Frío fresco de la nieve",
+    "en": "Cold ice",
+    "cefr": "A1",
+    "ratio": "3:5",
+    "rfidTag": "RFID-VIGO-171",
+    "corHex": "#0ea5e9",
+    "bgHex": "#0ea5e912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que facemos cando a auga está moi fría? ¡Brrr!",
+      "es": "¿Qué hacemos cuando el agua está muy fría? «¡Brrr!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Frío fresco da neve».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Frío fresco de la nieve»."
+    },
+    "tprAccion": {
+      "en": "Shiver shoulders playfully: Brrr!",
+      "gl": "Tremer ombreiros: ¡Brrr!",
+      "es": "Tremer ombreiros: ¡Brrr!"
+    }
+  },
+  {
+    "id": "cuento_ilus_172",
+    "numero": 172,
+    "categoria": "cuento_ilustrado",
+    "gl": "Lúa pasea pola praia de Samil",
+    "es": "Lúa pasea por la playa de Samil",
+    "en": "Samil shore walk",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-172",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde está o barquiño que baila nas ondas?",
+      "es": "¿Dónde está el barquito que baila en las olas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lúa pasea pola praia de Samil».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lúa pasea por la playa de Samil»."
+    },
+    "tprAccion": {
+      "en": "Point at the dancing boat",
+      "gl": "Sinalar o mar co índice",
+      "es": "Sinalar o mar co índice"
+    }
+  },
+  {
+    "id": "cuento_ilus_173",
+    "numero": 173,
+    "categoria": "cuento_ilustrado",
+    "gl": "O peixiño que saúda entre a escuma",
+    "es": "El pececito que saluda entre la espuma",
+    "en": "Jumping fish",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-173",
+    "corHex": "#ea580c",
+    "bgHex": "#ea580c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como salta o peixiño laranxa? «Chuf, chuf!»",
+      "es": "¿Cómo salta el pececito naranja? «¡Chuf, chuf!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O peixiño que saúda entre a escuma».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El pececito que saluda entre la espuma»."
+    },
+    "tprAccion": {
+      "en": "Hands jump like fish over waves",
+      "gl": "Salto coas mans xuntas",
+      "es": "Salto coas mans xuntas"
+    }
+  },
+  {
+    "id": "cuento_ilus_174",
+    "numero": 174,
+    "categoria": "cuento_ilustrado",
+    "gl": "A concha que garda o murmurio do mar",
+    "es": "La concha que guarda el murmullo del mar",
+    "en": "Sea shell secret",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-174",
+    "corHex": "#ca8a04",
+    "bgHex": "#ca8a0412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que escoitas se poñemos a cuncha na orella?",
+      "es": "¿Qué escuchas si ponemos la concha en la oreja?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A concha que garda o murmurio do mar».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «La concha que guarda el murmullo del mar»."
+    },
+    "tprAccion": {
+      "en": "Cup ear listening to ocean roar",
+      "gl": "Man na orella escoitando o mar",
+      "es": "Man na orella escoitando o mar"
+    }
+  },
+  {
+    "id": "cuento_ilus_175",
+    "numero": 175,
+    "categoria": "cuento_ilustrado",
+    "gl": "Lúa chega á escola infantil de Vigo",
+    "es": "Lúa llega a la escuela infantil de Vigo",
+    "en": "First day at school",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-175",
+    "corHex": "#c2410c",
+    "bgHex": "#c2410c12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A quen saúda Lúa coa súa mochiliña amarela?",
+      "es": "¿A quién saluda Lúa con su mochilita amarilla?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lúa chega á escola infantil de Vigo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lúa llega a la escuela infantil de Vigo»."
+    },
+    "tprAccion": {
+      "en": "Wave paw welcoming friends",
+      "gl": "Saúdo alegre coa pata",
+      "es": "Saúdo alegre coa pata"
+    }
+  },
+  {
+    "id": "cuento_ilus_176",
+    "numero": 176,
+    "categoria": "cuento_ilustrado",
+    "gl": "O círculo acolledor na asemblea",
+    "es": "El círculo acogedor en la asamblea",
+    "en": "Circle of friends",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-176",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Sentámonos todos xuntos na alfombra suave?",
+      "es": "¿Nos sentamos todos juntos en la alfombra suave?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O círculo acolledor na asemblea».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El círculo acogedor en la asamblea»."
+    },
+    "tprAccion": {
+      "en": "Squeeze neighbor hands softly",
+      "gl": "Apertar as mans dos compañeiros",
+      "es": "Apertar as mans dos compañeiros"
+    }
+  },
+  {
+    "id": "cuento_ilus_177",
+    "numero": 177,
+    "categoria": "cuento_ilustrado",
+    "gl": "Mans que se xuntan con agarimo",
+    "es": "Manos que se unen con cariño",
+    "en": "Hands holding together",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-177",
+    "corHex": "#f43f5e",
+    "bgHex": "#f43f5e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Dámonos as mans para cantar a canción?",
+      "es": "¿Nos damos las manos para cantar la canción?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Mans que se xuntan con agarimo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Manos que se unen con cariño»."
+    },
+    "tprAccion": {
+      "en": "Hold neighbor palm with care",
+      "gl": "Acariciar a palma do veciño",
+      "es": "Acariciar a palma do veciño"
+    }
+  },
+  {
+    "id": "cuento_ilus_178",
+    "numero": 178,
+    "categoria": "cuento_ilustrado",
+    "gl": "O corpo en movemento: cóxegas e risas",
+    "es": "El cuerpo en movimiento: cosquillas y risas",
+    "en": "Body scheme fun",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-178",
+    "corHex": "#d97706",
+    "bgHex": "#d9770612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde está a túa barriguiña? ¡Cóxegas!",
+      "es": "¿Dónde está tu barriguita? ¡Cosquillas!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O corpo en movemento: cóxegas e risas».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El cuerpo en movimiento: cosquillas y risas»."
+    },
+    "tprAccion": {
+      "en": "Touch head, tummy, toes",
+      "gl": "Tocar cabeza, barriga e pés",
+      "es": "Tocar cabeza, barriga e pés"
+    }
+  },
+  {
+    "id": "cuento_ilus_179",
+    "numero": 179,
+    "categoria": "cuento_ilustrado",
+    "gl": "As follas secas caen no parque",
+    "es": "Las hojas secas caen en el parque",
+    "en": "Autumn leaves falling",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-179",
+    "corHex": "#ca8a04",
+    "bgHex": "#ca8a0412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como fan as follas ao pisalas? «Crunch, crunch!»",
+      "es": "¿Cómo hacen las hojas al pisarlas? «¡Crunch, crunch!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «As follas secas caen no parque».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Las hojas secas caen en el parque»."
+    },
+    "tprAccion": {
+      "en": "Crush leaves: Crunch, crunch!",
+      "gl": "Pisar facendo «crunch»",
+      "es": "Pisar facendo «crunch»"
+    }
+  },
+  {
+    "id": "cuento_ilus_180",
+    "numero": 180,
+    "categoria": "cuento_ilustrado",
+    "gl": "O Magosto: castañas asadas e fume doce",
+    "es": "El Magosto: castañas asadas y humo dulce",
+    "en": "Magosto feast",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-180",
+    "corHex": "#78350f",
+    "bgHex": "#78350f12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como ferve a ola das castañas? «Chuf-chuf!»",
+      "es": "¿Cómo hierve la olla de las castañas? «¡Chuf-chuf!»"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O Magosto: castañas asadas e fume doce».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El Magosto: castañas asadas y humo dulce»."
+    },
+    "tprAccion": {
+      "en": "Stir the hot chestnut pot",
+      "gl": "Facer círculos coas mans",
+      "es": "Facer círculos coas mans"
+    }
+  },
+  {
+    "id": "cuento_ilus_181",
+    "numero": 181,
+    "categoria": "cuento_ilustrado",
+    "gl": "O abrigo de la e os primeiros fríos",
+    "es": "El abrigo de lana y los primeros fríos",
+    "en": "Warm winter wool",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-181",
+    "corHex": "#4338ca",
+    "bgHex": "#4338ca12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que peza che pon quentiño o pescozo?",
+      "es": "¿Qué prenda te pone calentito el cuello?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O abrigo de la e os primeiros fríos».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El abrigo de lana y los primeros fríos»."
+    },
+    "tprAccion": {
+      "en": "Wrap scarf around neck",
+      "gl": "Arrimar a bufanda ao queixo",
+      "es": "Arrimar a bufanda ao queixo"
+    }
+  },
+  {
+    "id": "cuento_ilus_182",
+    "numero": 182,
+    "categoria": "cuento_ilustrado",
+    "gl": "As luces de Nadal en Vigo",
+    "es": "Las luces de Navidad en Vigo",
+    "en": "Vigo festive lights",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-182",
+    "corHex": "#eab308",
+    "bgHex": "#eab30812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ves tantas luces brillantes na rúa da nosa cidade?",
+      "es": "¿Ves tantas luces brillantes en la calle de nuestra ciudad?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «As luces de Nadal en Vigo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Las luces de Navidad en Vigo»."
+    },
+    "tprAccion": {
+      "en": "Twinkle fingers like shining lights",
+      "gl": "Abrir e pechar dedos coma chispas",
+      "es": "Abrir e pechar dedos coma chispas"
+    }
+  },
+  {
+    "id": "cuento_ilus_183",
+    "numero": 183,
+    "categoria": "cuento_ilustrado",
+    "gl": "As pegadas dos animais na lama",
+    "es": "Las huellas de los animales en el barro",
+    "en": "Animal footprints",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-183",
+    "corHex": "#92400e",
+    "bgHex": "#92400e12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Quen pasou por aquí deixando estas pegadiñas?",
+      "es": "¿Quién pasó por aquí dejando estas huellitas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «As pegadas dos animais na lama».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Las huellas de los animales en el barro»."
+    },
+    "tprAccion": {
+      "en": "Press knuckles into the floor",
+      "gl": "Marcar pegadas cos nós dos dedos",
+      "es": "Marcar pegadas cos nós dos dedos"
+    }
+  },
+  {
+    "id": "cuento_ilus_184",
+    "numero": 184,
+    "categoria": "cuento_ilustrado",
+    "gl": "A máscara divertida do Entroido",
+    "es": "La máscara divertida del Carnaval",
+    "en": "Carnival mask",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-184",
+    "corHex": "#ec4899",
+    "bgHex": "#ec489912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Quen se agocha detrás da careta de cores?",
+      "es": "¿Quién se esconde detrás de la careta de colores?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A máscara divertida do Entroido».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «La máscara divertida del Carnaval»."
+    },
+    "tprAccion": {
+      "en": "Peek-a-boo: I see you!",
+      "gl": "Tapar a cara e abrir: ¡Cucú!",
+      "es": "Tapar a cara e abrir: ¡Cucú!"
+    }
+  },
+  {
+    "id": "cuento_ilus_185",
+    "numero": 185,
+    "categoria": "cuento_ilustrado",
+    "gl": "Cores primarias: vermello, amarelo e azul",
+    "es": "Colores primarios: rojo, amarillo y azul",
+    "en": "Color harmony",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-185",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde está a mazá vermella e o limón amarelo?",
+      "es": "¿Dónde está la manzana roja y el limón amarillo?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Cores primarias: vermello, amarelo e azul».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Colores primarios: rojo, amarillo y azul»."
+    },
+    "tprAccion": {
+      "en": "Touch red, yellow, blue items",
+      "gl": "Sinalar obxectos das 3 cores",
+      "es": "Sinalar obxectos das 3 cores"
+    }
+  },
+  {
+    "id": "cuento_ilus_186",
+    "numero": 186,
+    "categoria": "cuento_ilustrado",
+    "gl": "A choiva miudiña e as botas vermellas",
+    "es": "La lluvia fina y las botas rojas",
+    "en": "Rain boots splash",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-186",
+    "corHex": "#ef4444",
+    "bgHex": "#ef444412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Damos un salto no charco de auga limpa?",
+      "es": "¿Damos un salto en el charco de agua limpia?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A choiva miudiña e as botas vermellas».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «La lluvia fina y las botas rojas»."
+    },
+    "tprAccion": {
+      "en": "Two-foot jump into the puddle",
+      "gl": "Salto suave cos dous pés",
+      "es": "Salto suave cos dous pés"
+    }
+  },
+  {
+    "id": "cuento_ilus_187",
+    "numero": 187,
+    "categoria": "cuento_ilustrado",
+    "gl": "A semente que esperta na horta",
+    "es": "La semilla que despierta en el huerto",
+    "en": "Garden awakening",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-187",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que flor medrou na horta de Lúa? ¡Unha flor rosa!",
+      "es": "¿Qué flor creció en el huerto de Lúa? ¡Una flor rosa!"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A semente que esperta na horta».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «La semilla que despierta en el huerto»."
+    },
+    "tprAccion": {
+      "en": "Rise slowly from a seed to bloom",
+      "gl": "Medrar dende o chan amodo",
+      "es": "Medrar dende o chan amodo"
+    }
+  },
+  {
+    "id": "cuento_ilus_188",
+    "numero": 188,
+    "categoria": "cuento_ilustrado",
+    "gl": "Xogos con auga e xabón: burbullas",
+    "es": "Juegos con agua y jabón: burbujas",
+    "en": "Soap bubble magic",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-188",
+    "corHex": "#06b6d4",
+    "bgHex": "#06b6d412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Podes soprar moi suave para facer unha burbulla?",
+      "es": "¿Puedes soplar muy suave para hacer una burbuja?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Xogos con auga e xabón: burbullas».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Juegos con agua y jabón: burbujas»."
+    },
+    "tprAccion": {
+      "en": "Gentle blow to make a bubble",
+      "gl": "Soplar moi lixeiro polos beizos",
+      "es": "Soplar moi lixeiro polos beizos"
+    }
+  },
+  {
+    "id": "cuento_ilus_189",
+    "numero": 189,
+    "categoria": "cuento_ilustrado",
+    "gl": "O barco que regresa ao porto do Berbés",
+    "es": "El barco que regresa al puerto de O Berbés",
+    "en": "Trawler coming home",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-189",
+    "corHex": "#0891b2",
+    "bgHex": "#0891b212",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Ves as gaivotas voando detrás do barco?",
+      "es": "¿Ves las gaviotas volando detrás del barco?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O barco que regresa ao porto do Berbés».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El barco que regresa al puerto de O Berbés»."
+    },
+    "tprAccion": {
+      "en": "Wave to the boat docking at port",
+      "gl": "Saudar co brazo ao barco que chega",
+      "es": "Saudar co brazo ao barco que chega"
+    }
+  },
+  {
+    "id": "cuento_ilus_190",
+    "numero": 190,
+    "categoria": "cuento_ilustrado",
+    "gl": "O neno que amaba o son do tambor",
+    "es": "El niño que amaba el sonido del tambor",
+    "en": "The boy who loved drumming",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-190",
+    "corHex": "#b45309",
+    "bgHex": "#b4530912",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como toca o tambor no ritmo de 72 bpm?",
+      "es": "¿Cómo toca el tambor en el ritmo de 72 bpm?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O neno que amaba o son do tambor».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El niño que amaba el sonido del tambor»."
+    },
+    "tprAccion": {
+      "en": "Drum the floor with soft palms",
+      "gl": "Tocar tambor imaxinario no chan",
+      "es": "Tocar tambor imaxinario no chan"
+    }
+  },
+  {
+    "id": "cuento_ilus_191",
+    "numero": 191,
+    "categoria": "cuento_ilustrado",
+    "gl": "A árbore que daba sombra a todos",
+    "es": "El árbol que daba sombra a todos",
+    "en": "The sheltering tree",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-191",
+    "corHex": "#15803d",
+    "bgHex": "#15803d12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Quen descansa debaixo das ramas frescas?",
+      "es": "¿Quién descansa debajo de las ramas frescas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A árbore que daba sombra a todos».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El árbol que daba sombra a todos»."
+    },
+    "tprAccion": {
+      "en": "Cuddle under tree branch arms",
+      "gl": "Acubillarse baixo o tellado de brazos",
+      "es": "Acubillarse baixo o tellado de brazos"
+    }
+  },
+  {
+    "id": "cuento_ilus_192",
+    "numero": 192,
+    "categoria": "cuento_ilustrado",
+    "gl": "O león pequeno e a ratiña valente",
+    "es": "El león pequeño y la ratita valiente",
+    "en": "The lion and the brave mouse",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-192",
+    "corHex": "#d97706",
+    "bgHex": "#d9770612",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A ratiña pequena axudou ao gran león?",
+      "es": "¿La ratita pequeña ayudó al gran león?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O león pequeno e a ratiña valente».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El león pequeño y la ratita valiente»."
+    },
+    "tprAccion": {
+      "en": "Tiny fingers meet giant paw",
+      "gl": "Xuntar mans pequena e grande",
+      "es": "Xuntar mans pequena e grande"
+    }
+  },
+  {
+    "id": "cuento_ilus_193",
+    "numero": 193,
+    "categoria": "cuento_ilustrado",
+    "gl": "O vento que quería bailar coa cometa",
+    "es": "El viento que quería bailar con la cometa",
+    "en": "The wind and the kite dance",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-193",
+    "corHex": "#7c3aed",
+    "bgHex": "#7c3aed12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A cometa sobe moi alto cara ás nubes?",
+      "es": "¿La cometa sube muy alto hacia las nubes?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O vento que quería bailar coa cometa».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El viento que quería bailar con la cometa»."
+    },
+    "tprAccion": {
+      "en": "Hold kite string swaying high",
+      "gl": "Soster o fío da cometa no ar",
+      "es": "Soster o fío da cometa no ar"
+    }
+  },
+  {
+    "id": "cuento_ilus_194",
+    "numero": 194,
+    "categoria": "cuento_ilustrado",
+    "gl": "A chuvia que cantaba unha canción",
+    "es": "La lluvia que cantaba una canción",
+    "en": "Singing raindrops",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-194",
+    "corHex": "#2563eb",
+    "bgHex": "#2563eb12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Que che di a chuvia cando pica na fiestra?",
+      "es": "¿Qué te dice la lluvia cuando pica en la ventana?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A chuvia que cantaba unha canción».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «La lluvia que cantaba una canción»."
+    },
+    "tprAccion": {
+      "en": "Tap fingertips on window sill",
+      "gl": "Puntear no peitoril da fiestra",
+      "es": "Puntear no peitoril da fiestra"
+    }
+  },
+  {
+    "id": "cuento_ilus_195",
+    "numero": 195,
+    "categoria": "cuento_ilustrado",
+    "gl": "O paxariño que perdeu o seu cantar",
+    "es": "El pajarito que perdió su canto",
+    "en": "The bird that found its song",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-195",
+    "corHex": "#38bdf8",
+    "bgHex": "#38bdf812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como axudan os amigos ao paxariño a cantar?",
+      "es": "¿Cómo ayudan los amigos al pajarito a cantar?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O paxariño que perdeu o seu cantar».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El pajarito que perdió su canto»."
+    },
+    "tprAccion": {
+      "en": "Chirp together in harmony",
+      "gl": "Cantar suavemente «chío-chío»",
+      "es": "Cantar suavemente «chío-chío»"
+    }
+  },
+  {
+    "id": "cuento_ilus_196",
+    "numero": 196,
+    "categoria": "cuento_ilustrado",
+    "gl": "A tartaruga que non tiña présa",
+    "es": "La tortuga que no tenía prisa",
+    "en": "The patient tortoise",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-196",
+    "corHex": "#16a34a",
+    "bgHex": "#16a34a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A tartaruga chega feliz camiñando pasiño a pasiño?",
+      "es": "¿La tortuga llega feliz caminando pasito a pasito?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A tartaruga que non tiña présa».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «La tortuga que no tenía prisa»."
+    },
+    "tprAccion": {
+      "en": "Slow peaceful footsteps",
+      "gl": "Pasos lentos con respiración calma",
+      "es": "Pasos lentos con respiración calma"
+    }
+  },
+  {
+    "id": "cuento_ilus_197",
+    "numero": 197,
+    "categoria": "cuento_ilustrado",
+    "gl": "O arco da vella que cruzaba a ría",
+    "es": "El arco iris que cruzaba la ría",
+    "en": "Rainbow across the bay",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-197",
+    "corHex": "#a855f7",
+    "bgHex": "#a855f712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Une o arco da vella a cidade coas illas?",
+      "es": "¿Une el arco iris la ciudad con las islas?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O arco da vella que cruzaba a ría».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El arco iris que cruzaba la ría»."
+    },
+    "tprAccion": {
+      "en": "Stretch giant rainbow overhead",
+      "gl": "Arco cos dous brazos no alto",
+      "es": "Arco cos dous brazos no alto"
+    }
+  },
+  {
+    "id": "cuento_ilus_198",
+    "numero": 198,
+    "categoria": "cuento_ilustrado",
+    "gl": "A semente viaxeira levada polo vento",
+    "es": "La semilla viajera llevada por el viento",
+    "en": "The traveling seed",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-198",
+    "corHex": "#ca8a04",
+    "bgHex": "#ca8a0412",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Onde caeu a semente para botar raíces?",
+      "es": "¿Dónde cayó la semilla para echar raíces?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A semente viaxeira levada polo vento».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «La semilla viajera llevada por el viento»."
+    },
+    "tprAccion": {
+      "en": "Drift in wind and land gently",
+      "gl": "Flotar e pousarse suavemente",
+      "es": "Flotar e pousarse suavemente"
+    }
+  },
+  {
+    "id": "cuento_ilus_199",
+    "numero": 199,
+    "categoria": "cuento_ilustrado",
+    "gl": "O conto da lúa chea que vixía o sono",
+    "es": "El cuento de la luna llena que cuida el sueño",
+    "en": "Full moon bedtime watch",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-199",
+    "corHex": "#fef08a",
+    "bgHex": "#fef08a12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A lúa alumea as casiñas mentres durmides?",
+      "es": "¿La luna alumbra las casitas mientras dormís?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O conto da lúa chea que vixía o sono».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El cuento de la luna llena que cuida el sueño»."
+    },
+    "tprAccion": {
+      "en": "Close eyes softly under moonlight",
+      "gl": "Pechar os ollos cun sorriso calmo",
+      "es": "Pechar os ollos cun sorriso calmo"
+    }
+  },
+  {
+    "id": "cuento_ilus_200",
+    "numero": 200,
+    "categoria": "cuento_ilustrado",
+    "gl": "O peixe prateado que atopou un tesouro",
+    "es": "El pez plateado que encontró un tesoro",
+    "en": "The silver fish treasure",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-200",
+    "corHex": "#94a3b8",
+    "bgHex": "#94a3b812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿O tesouro era unha cuncha que cantaba?",
+      "es": "¿El tesoro era una concha que cantaba?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O peixe prateado que atopou un tesouro».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El pez plateado que encontró un tesoro»."
+    },
+    "tprAccion": {
+      "en": "Reveal treasure in open palms",
+      "gl": "Abrir mans amosando o tesouro",
+      "es": "Abrir mans amosando o tesouro"
+    }
+  },
+  {
+    "id": "cuento_ilus_201",
+    "numero": 201,
+    "categoria": "cuento_ilustrado",
+    "gl": "A abella que convidou aos seus amigos",
+    "es": "La abeja que invitó a sus amigos",
+    "en": "The sharing bee",
+    "cefr": "Pre-A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-201",
+    "corHex": "#eab308",
+    "bgHex": "#eab30812",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿A abella reparte o zume doce da flor?",
+      "es": "¿La abeja reparte el zumo dulce de la flor?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A abella que convidou aos seus amigos».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «La abeja que invitó a sus amigos»."
+    },
+    "tprAccion": {
+      "en": "Serve sweet drops to friends",
+      "gl": "Compartir gotas de mel imaxinario",
+      "es": "Compartir gotas de mel imaxinario"
+    }
+  },
+  {
+    "id": "cuento_ilus_202",
+    "numero": 202,
+    "categoria": "cuento_ilustrado",
+    "gl": "O can Dinamita paseando por Vigo",
+    "es": "El perro Dinamita paseando por Vigo",
+    "en": "Dinamita the dog of Vigo",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-202",
+    "corHex": "#78350f",
+    "bgHex": "#78350f12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Recoñeces a historia do famoso can vigués?",
+      "es": "¿Reconoces la historia del famoso perro vigués?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O can Dinamita paseando por Vigo».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El perro Dinamita paseando por Vigo»."
+    },
+    "tprAccion": {
+      "en": "Greet all citizens with a tail wag",
+      "gl": "Mover as mans coma quen saúda a todos",
+      "es": "Mover as mans coma quen saúda a todos"
+    }
+  },
+  {
+    "id": "cuento_ilus_203",
+    "numero": 203,
+    "categoria": "cuento_ilustrado",
+    "gl": "A ponte de Rande sobre a auga azul",
+    "es": "El puente de Rande sobre el agua azul",
+    "en": "Rande Bridge across the fjord",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-203",
+    "corHex": "#0284c7",
+    "bgHex": "#0284c712",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Os coches pasan por riba e os barcos por debaixo?",
+      "es": "¿Los coches pasan por arriba y los barcos por debajo?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A ponte de Rande sobre a auga azul».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El puente de Rande sobre el agua azul»."
+    },
+    "tprAccion": {
+      "en": "Form a bridge arch with fingertips",
+      "gl": "Facer arco coas mans unidas arriba",
+      "es": "Facer arco coas mans unidas arriba"
+    }
+  },
+  {
+    "id": "cuento_ilus_204",
+    "numero": 204,
+    "categoria": "cuento_ilustrado",
+    "gl": "O baile das ras na noite de San Xoán",
+    "es": "El baile de las ranas en San Juan",
+    "en": "The midsummer frog dance",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-204",
+    "corHex": "#15803d",
+    "bgHex": "#15803d12",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Como cantan as ras cando empeza o verán?",
+      "es": "¿Cómo cantan las ranas cuando empieza el verano?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O baile das ras na noite de San Xoán».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El baile de las ranas en San Juan»."
+    },
+    "tprAccion": {
+      "en": "Frog chorus: Ribbit-ribbit!",
+      "gl": "Cantar en coro: ¡Croac, croac!",
+      "es": "Cantar en coro: ¡Croac, croac!"
+    }
+  },
+  {
+    "id": "cuento_ilus_205",
+    "numero": 205,
+    "categoria": "cuento_ilustrado",
+    "gl": "O adeus ao curso e a benvida ao mar",
+    "es": "El adiós al curso y la bienvenida al mar",
+    "en": "End of year sea welcome",
+    "cefr": "A1",
+    "ratio": "16:10",
+    "rfidTag": "RFID-VIGO-205",
+    "corHex": "#0891b2",
+    "bgHex": "#0891b212",
+    "simbolo": "",
+    "preguntaSugerida": {
+      "gl": "¿Canto crecemos xuntos este curso na escola?",
+      "es": "¿Cuánto crecimos juntos este curso en la escuela?"
+    },
+    "obxectivo": {
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O adeus ao curso e a benvida ao mar».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El adiós al curso y la bienvenida al mar»."
+    },
+    "tprAccion": {
+      "en": "Stand on tiptoes showing how much we grew",
+      "gl": "Erguerse moi altos medrando moito",
+      "es": "Erguerse moi altos medrando moito"
+    }
+  }
+]

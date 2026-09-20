@@ -19,9 +19,15 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/content/
+    - assets/content/cuentos/
+    - assets/content/laminas/
+    - assets/content/english/
+    - assets/content/corpus/
     - assets/content/unidades/
     - assets/content/capsulas/
     - assets/content/premios/
+
     # Los diez meses del curso y la guía de atención. Faltaba esta línea, y
     # como Flutter NO entra en los subdirectorios de una entrada, `meses.json`
     # no viajaba en el APK: el Calendario y la Guía se quedaban girando para
