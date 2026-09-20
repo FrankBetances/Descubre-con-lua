@@ -30,29 +30,94 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
     {
       'pattern': 'Verb + Noun (Actions)',
       'items': [
-        {'en': 'wash hands', 'gl': 'lavar as mans', 'es': 'lavar las manos', 'ex': 'Wash your hands before eating.'},
-        {'en': 'brush teeth', 'gl': 'lavar os dentes', 'es': 'cepillarse los dientes', 'ex': 'Brush your teeth twice a day.'},
-        {'en': 'read a story', 'gl': 'ler un conto', 'es': 'leer un cuento', 'ex': 'Let\'s read a story together.'},
-        {'en': 'sing a song', 'gl': 'cantar unha canción', 'es': 'cantar una canción', 'ex': 'Sing a happy song.'},
-        {'en': 'open eyes', 'gl': 'abrir os ollos', 'es': 'abrir los ojos', 'ex': 'Open your eyes and look!'},
+        {
+          'en': 'wash hands',
+          'gl': 'lavar as mans',
+          'es': 'lavar las manos',
+          'ex': 'Wash your hands before eating.'
+        },
+        {
+          'en': 'brush teeth',
+          'gl': 'lavar os dentes',
+          'es': 'cepillarse los dientes',
+          'ex': 'Brush your teeth twice a day.'
+        },
+        {
+          'en': 'read a story',
+          'gl': 'ler un conto',
+          'es': 'leer un cuento',
+          'ex': 'Let\'s read a story together.'
+        },
+        {
+          'en': 'sing a song',
+          'gl': 'cantar unha canción',
+          'es': 'cantar una canción',
+          'ex': 'Sing a happy song.'
+        },
+        {
+          'en': 'open eyes',
+          'gl': 'abrir os ollos',
+          'es': 'abrir los ojos',
+          'ex': 'Open your eyes and look!'
+        },
       ]
     },
     {
       'pattern': 'Adjective + Noun (Sensory & Emotions)',
       'items': [
-        {'en': 'warm milk', 'gl': 'leite morno', 'es': 'leche tibia', 'ex': 'Drink warm milk at bedtime.'},
-        {'en': 'soft blanket', 'gl': 'manta suave', 'es': 'manta suave', 'ex': 'Sleep with a soft blanket.'},
-        {'en': 'big smile', 'gl': 'grande sorriso', 'es': 'gran sonrisa', 'ex': 'Give me a big smile!'},
-        {'en': 'loud sound', 'gl': 'son forte', 'es': 'sonido fuerte', 'ex': 'Listen to that loud sound.'},
+        {
+          'en': 'warm milk',
+          'gl': 'leite morno',
+          'es': 'leche tibia',
+          'ex': 'Drink warm milk at bedtime.'
+        },
+        {
+          'en': 'soft blanket',
+          'gl': 'manta suave',
+          'es': 'manta suave',
+          'ex': 'Sleep with a soft blanket.'
+        },
+        {
+          'en': 'big smile',
+          'gl': 'grande sorriso',
+          'es': 'gran sonrisa',
+          'ex': 'Give me a big smile!'
+        },
+        {
+          'en': 'loud sound',
+          'gl': 'son forte',
+          'es': 'sonido fuerte',
+          'ex': 'Listen to that loud sound.'
+        },
       ]
     },
     {
       'pattern': 'Preposition + Noun (Spatial & Routine)',
       'items': [
-        {'en': 'at school', 'gl': 'na escola', 'es': 'en la escuela', 'ex': 'We are happy at school.'},
-        {'en': 'at home', 'gl': 'na casa', 'es': 'en el hogar', 'ex': 'Rest and relax at home.'},
-        {'en': 'in the morning', 'gl': 'pola mañá', 'es': 'por la mañana', 'ex': 'Wake up in the morning.'},
-        {'en': 'at night', 'gl': 'pola noite', 'es': 'por la noche', 'ex': 'Go to sleep at night.'},
+        {
+          'en': 'at school',
+          'gl': 'na escola',
+          'es': 'en la escuela',
+          'ex': 'We are happy at school.'
+        },
+        {
+          'en': 'at home',
+          'gl': 'na casa',
+          'es': 'en el hogar',
+          'ex': 'Rest and relax at home.'
+        },
+        {
+          'en': 'in the morning',
+          'gl': 'pola mañá',
+          'es': 'por la mañana',
+          'ex': 'Wake up in the morning.'
+        },
+        {
+          'en': 'at night',
+          'gl': 'pola noite',
+          'es': 'por la noche',
+          'ex': 'Go to sleep at night.'
+        },
       ]
     },
   ];
@@ -129,13 +194,16 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
                               ),
                             ),
                             Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8, vertical: 2),
                               decoration: BoxDecoration(
                                 color: Colors.indigo.shade50,
                                 borderRadius: BorderRadius.circular(6),
                               ),
                               child: Text(
-                                lang == AppLanguage.gl ? item['gl']! : item['es']!,
+                                lang == AppLanguage.gl
+                                    ? item['gl']!
+                                    : item['es']!,
                                 style: TextStyle(
                                   fontSize: 12,
                                   color: Colors.indigo.shade800,

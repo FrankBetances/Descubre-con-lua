@@ -102,7 +102,8 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                 ),
                 child: Row(
                   children: [
-                    const Icon(Icons.shield_outlined, color: Colors.amber, size: 22),
+                    const Icon(Icons.shield_outlined,
+                        color: Colors.amber, size: 22),
                     const SizedBox(width: 10),
                     Expanded(
                       child: Text(
@@ -163,18 +164,24 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                               child: Container(
                                 width: 64,
                                 height: 72,
-                                margin: const EdgeInsets.symmetric(horizontal: 6),
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 6),
                                 decoration: BoxDecoration(
-                                  color: placed ? AppTheme.primary : Colors.grey.shade100,
+                                  color: placed
+                                      ? AppTheme.primary
+                                      : Colors.grey.shade100,
                                   borderRadius: BorderRadius.circular(14),
                                   border: Border.all(
-                                    color: placed ? AppTheme.primaryDark : Colors.grey.shade300,
+                                    color: placed
+                                        ? AppTheme.primaryDark
+                                        : Colors.grey.shade300,
                                     width: 2,
                                   ),
                                   boxShadow: placed
                                       ? [
                                           BoxShadow(
-                                            color: AppTheme.primary.withOpacity(0.3),
+                                            color: AppTheme.primary
+                                                .withValues(alpha: 0.3),
                                             blurRadius: 6,
                                             offset: const Offset(0, 2),
                                           )
@@ -187,7 +194,9 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                                     style: TextStyle(
                                       fontSize: 32,
                                       fontWeight: FontWeight.bold,
-                                      color: placed ? Colors.white : Colors.grey.shade400,
+                                      color: placed
+                                          ? Colors.white
+                                          : Colors.grey.shade400,
                                     ),
                                   ),
                                 ),
@@ -220,22 +229,24 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                         if (isComplete) ...[
                           const SizedBox(height: 20),
                           Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 16, vertical: 8),
                             decoration: BoxDecoration(
-                              color: Colors.emerald.shade50,
+                              color: AppTheme.successBg,
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                const Icon(Icons.check_circle, color: Colors.emerald, size: 20),
+                                const Icon(Icons.check_circle,
+                                    color: AppTheme.success, size: 20),
                                 const SizedBox(width: 8),
                                 Text(
                                   lang == AppLanguage.gl
                                       ? 'Mesa montada con éxito!'
                                       : '¡Mesa montada con éxito!',
-                                  style: TextStyle(
-                                    color: Colors.emerald.shade900,
+                                  style: const TextStyle(
+                                    color: AppTheme.primaryInk,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -268,7 +279,8 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                       backgroundColor: Colors.grey.shade100,
                       foregroundColor: AppTheme.textPrimary,
                     ),
-                    child: Text(lang == AppLanguage.gl ? 'Anterior' : 'Anterior'),
+                    child:
+                        Text(lang == AppLanguage.gl ? 'Anterior' : 'Anterior'),
                   ),
                   ElevatedButton(
                     onPressed: _currentWordIndex < _manipulativeWords.length - 1
@@ -283,7 +295,8 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                       backgroundColor: AppTheme.primary,
                       foregroundColor: Colors.white,
                     ),
-                    child: Text(lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente'),
+                    child:
+                        Text(lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente'),
                   ),
                 ],
               ),

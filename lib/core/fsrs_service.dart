@@ -8,18 +8,26 @@ import '../data/models/fsrs_card_model.dart';
 ///
 /// Operates completely offline with zero network or external dependencies.
 class FsrsService {
-  /// Default 17 weights for FSRS v4.5
+  /// Los 17 pesos por defecto de FSRS.
+  ///
+  /// El papel de cada índice NO es libre: lo fija el algoritmo publicado, y este
+  /// vector es el de FSRS-4 tal cual. Los rótulos que llevaba antes este bloque
+  /// decían otra cosa —w[8] «hard penalty», w[9] «easy reward»— y el código los
+  /// creía: con eso, puntuar «Easy» daba MENOS estabilidad que «Hard», que es
+  /// justo lo contrario de lo que significa el botón. Lo cazaba el propio test
+  /// de la rama («nextStability increases on success…»), que salía rojo.
   static const List<double> defaultWeights = [
-    0.4, 0.6, 2.4, 5.8, // Initial stabilities for rating 1, 2, 3, 4 (w[0..3])
-    4.93, 0.94, // Initial difficulty baseline & rating modifier (w[4..5])
-    0.86, // Mean reversion weight (w[6])
-    0.01, // Retrievability factor power (w[7])
-    1.49, // Hard penalty (w[8])
-    0.14, // Easy reward (w[9])
-    0.94, // Stability saturation power (w[10])
-    2.18, // Difficulty penalty power (w[11])
-    0.05, 0.34, 1.26, 0.29, // Post-lapse stability parameters (w[12..15])
-    2.61, // Additional transition parameter (w[16])
+    0.4, 0.6, 2.4, 5.8, // S inicial para rating 1..4 (w[0..3])
+    4.93, 0.94, // D inicial: base y modificador por rating (w[4..5])
+    0.86, // Delta de dificultad por rating (w[6])
+    0.01, // Peso de la regresión a la media (w[7])
+    1.49, // Factor exponencial de la ganancia de estabilidad (w[8])
+    0.14, // Saturación: S^(-w9) (w[9])
+    0.94, // Bonificación por recuperabilidad baja (w[10])
+    2.18, // Coeficiente de la estabilidad tras un lapso (w[11])
+    0.05, 0.34, 1.26, // Exponentes del lapso: D, (S+1) y (1-R) (w[12..14])
+    0.29, // Penalización de «Hard» (w[15])
+    2.61, // Bonificación de «Easy» (w[16])
   ];
 
   static const double factor = 19.0 / 81.0; // ~0.2345679
@@ -83,10 +91,15 @@ class FsrsService {
     required int rating,
   }) {
     final clampedRating = rating.clamp(1, 4);
-    final deltaD = -weights[5] * (clampedRating - 3);
+    // w[6] es el delta por rating y w[7] el peso de la regresión a la media; el
+    // código usaba w[5] y w[6], que son los de la dificultad INICIAL. Con
+    // w[6]=0.86 de peso de reversión, la dificultad de cualquier tarjeta volvía
+    // casi entera a 4.93 en cada repaso: el historial de la palabra no contaba.
+    final deltaD = -weights[6] * (clampedRating - 3);
     final rawD = currentDifficulty + deltaD;
-    final meanD = weights[4]; // Starting baseline difficulty
-    final nextD = weights[6] * meanD + (1.0 - weights[6]) * rawD;
+    // La media a la que se revierte es D0(4), la dificultad inicial de «Easy».
+    final meanD = weights[4] - weights[5];
+    final nextD = weights[7] * meanD + (1.0 - weights[7]) * rawD;
     final clamped = nextD.clamp(1.0, 10.0);
     return (clamped * 100).round() / 100.0;
   }
@@ -126,26 +139,28 @@ class FsrsService {
     if (s <= 0.0) {
       return initStability(rating);
     }
-    final hardPenalty = rating == 2 ? weights[8] : 1.0;
-    final easyReward = rating == 4 ? weights[9] : 1.0;
+    // «Hard» frena la ganancia (w15 < 1) y «Easy» la multiplica (w16 > 1). Al
+    // revés —que es como estaba— el botón «Easy» acortaba el intervalo.
+    final hardPenalty = rating == 2 ? weights[15] : 1.0;
+    final easyBonus = rating == 4 ? weights[16] : 1.0;
 
-    // Desirable difficulty: lower R at review gives bigger boost
-    final retrievabilityBonus = math.exp(weights[7] * (1.0 - r));
+    // Dificultad deseable: cuanto más baja es R al repasar, mayor es el empujón.
+    final retrievabilityBonus = math.exp((1.0 - r) * weights[10]) - 1.0;
 
-    // Stability saturation: consolidating already large stability requires more effort
-    final saturationModifier = math.pow(s, -weights[10]);
+    // Saturación: consolidar una estabilidad ya alta cuesta más.
+    final saturationModifier = math.pow(s, -weights[9]);
 
-    // Difficulty penalty: harder cards gain stability more slowly
-    final difficultyPenalty = math.pow(11.0 - d, weights[11]);
+    // Penalización por dificultad: las tarjetas difíciles ganan más despacio.
+    final difficultyPenalty = 11.0 - d;
 
-    final gainMultiplier = 1.0 +
+    final gain = math.exp(weights[8]) *
         difficultyPenalty *
-            saturationModifier *
-            retrievabilityBonus *
-            hardPenalty *
-            easyReward;
+        saturationModifier *
+        retrievabilityBonus *
+        hardPenalty *
+        easyBonus;
 
-    final nextS = s * math.max(1.05, gainMultiplier);
+    final nextS = s * (1.0 + math.max(0.0, gain));
     return (nextS * 10).round() / 10.0;
   }
 
@@ -158,10 +173,13 @@ class FsrsService {
     if (s <= 0.0) {
       return initStability(1);
     }
-    final postLapseS = weights[12] *
-        math.pow(d, -weights[13]) *
-        (math.pow(s + 1.0, weights[14]) - 1.0) *
-        math.exp((1.0 - r) * weights[15]);
+    // Mismo desplazamiento de índices que en el éxito: el coeficiente del lapso
+    // es w[11], y los exponentes, w[12..14]. Con w[12] de coeficiente la
+    // estabilidad tras un fallo se hundía a la décima parte de lo que toca.
+    final postLapseS = weights[11] *
+        math.pow(d, -weights[12]) *
+        (math.pow(s + 1.0, weights[13]) - 1.0) *
+        math.exp((1.0 - r) * weights[14]);
 
     final rounded = (postLapseS * 10).round() / 10.0;
     final clamped = math.max(0.3, math.min(s * 0.8, rounded));
@@ -216,7 +234,8 @@ class FsrsService {
       nextState = FSRSCardState.relearning;
       lapses += 1;
     } else {
-      nextD = nextDifficulty(currentDifficulty: card.difficulty, rating: rating);
+      nextD =
+          nextDifficulty(currentDifficulty: card.difficulty, rating: rating);
       nextS = nextStability(
         difficulty: nextD,
         stability: card.stability,

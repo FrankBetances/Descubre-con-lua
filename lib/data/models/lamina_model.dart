@@ -84,8 +84,7 @@ class Lamina {
   });
 
   factory Lamina.fromJson(Map<String, dynamic> json) {
-    final rawPregunta =
-        json['preguntaSugerida'] ?? json['pregunta_sugerida'];
+    final rawPregunta = json['preguntaSugerida'] ?? json['pregunta_sugerida'];
     final LocalizedString? pregunta = rawPregunta is Map<String, dynamic>
         ? LocalizedString.fromJson(rawPregunta)
         : (rawPregunta is Map
@@ -119,8 +118,8 @@ class Lamina {
           json['rfid_tag']?.toString().trim(),
       corHex: json['corHex']?.toString().trim() ??
           json['cor_hex']?.toString().trim(),
-      bgHex: json['bgHex']?.toString().trim() ??
-          json['bg_hex']?.toString().trim(),
+      bgHex:
+          json['bgHex']?.toString().trim() ?? json['bg_hex']?.toString().trim(),
       simbolo: json['simbolo']?.toString().trim(),
       preguntaSugerida: pregunta,
       obxectivo: obj,

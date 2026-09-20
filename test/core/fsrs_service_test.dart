@@ -10,7 +10,9 @@ void main() {
       service = const FsrsService();
     });
 
-    test('default 17 weights conform strictly to FSRS v4.5 canonical configuration', () {
+    test(
+        'default 17 weights conform strictly to FSRS v4.5 canonical configuration',
+        () {
       expect(FsrsService.defaultWeights.length, equals(17));
       expect(
         FsrsService.defaultWeights,
@@ -29,7 +31,9 @@ void main() {
       );
     });
 
-    test('retrievability formula R(t, S) = (1 + factor * t / S)^decay behaves predictably', () {
+    test(
+        'retrievability formula R(t, S) = (1 + factor * t / S)^decay behaves predictably',
+        () {
       // At t = 0, R must be 100%
       expect(service.calculateRetrievability(0.0, 10.0), equals(1.0));
 
@@ -48,14 +52,17 @@ void main() {
       expect(service.calculateRetrievability(5.0, -1.0), equals(0.0));
     });
 
-    test('initStability maps ratings 1..4 directly to initial weight tiers', () {
+    test('initStability maps ratings 1..4 directly to initial weight tiers',
+        () {
       expect(service.initStability(1), equals(0.4)); // Again
       expect(service.initStability(2), equals(0.6)); // Hard
       expect(service.initStability(3), equals(2.4)); // Good
       expect(service.initStability(4), equals(5.8)); // Easy
     });
 
-    test('initDifficulty computes initial difficulty correctly clamped in [1.0, 10.0]', () {
+    test(
+        'initDifficulty computes initial difficulty correctly clamped in [1.0, 10.0]',
+        () {
       // Rating 3 (Good): baseline w[4] = 4.93
       expect(service.initDifficulty(3), equals(4.93));
 
@@ -66,7 +73,9 @@ void main() {
       expect(service.initDifficulty(4), equals(3.99));
     });
 
-    test('nextInterval calculates days correctly for stability at 90% retrievability', () {
+    test(
+        'nextInterval calculates days correctly for stability at 90% retrievability',
+        () {
       // At stability = 10 days and targetR = 0.90, next interval must equal 10 days
       expect(service.nextInterval(stability: 10.0, targetR: 0.90), equals(10));
       expect(service.nextInterval(stability: 1.0, targetR: 0.90), equals(1));
@@ -81,7 +90,8 @@ void main() {
       expect(nextD, greaterThan(4.93));
 
       // Starting from easy difficulty 2.0, rating 3 should regress upwards towards mean (4.93)
-      final nextDEasy = service.nextDifficulty(currentDifficulty: 2.0, rating: 3);
+      final nextDEasy =
+          service.nextDifficulty(currentDifficulty: 2.0, rating: 3);
       expect(nextDEasy, greaterThan(2.0));
       expect(nextDEasy, lessThan(4.93));
     });
@@ -92,17 +102,21 @@ void main() {
       const r = 0.90;
 
       // Rating 1: Lapse
-      final lapseS = service.nextStability(difficulty: d, stability: s, retrievability: r, rating: 1);
+      final lapseS = service.nextStability(
+          difficulty: d, stability: s, retrievability: r, rating: 1);
       expect(lapseS, lessThan(s));
       expect(lapseS, greaterThanOrEqualTo(0.3));
 
       // Rating 3: Good (Success)
-      final goodS = service.nextStability(difficulty: d, stability: s, retrievability: r, rating: 3);
+      final goodS = service.nextStability(
+          difficulty: d, stability: s, retrievability: r, rating: 3);
       expect(goodS, greaterThan(s));
 
       // Rating 4: Easy gives larger stability gain than Rating 2: Hard
-      final hardS = service.nextStability(difficulty: d, stability: s, retrievability: r, rating: 2);
-      final easyS = service.nextStability(difficulty: d, stability: s, retrievability: r, rating: 4);
+      final hardS = service.nextStability(
+          difficulty: d, stability: s, retrievability: r, rating: 2);
+      final easyS = service.nextStability(
+          difficulty: d, stability: s, retrievability: r, rating: 4);
       expect(easyS, greaterThan(goodS));
       expect(goodS, greaterThan(hardS));
     });
@@ -124,7 +138,9 @@ void main() {
       expect(reviewed.nextDueDate.isAfter(now), isTrue);
     });
 
-    test('repeat handles lapse by incrementing lapses and setting relearning state', () {
+    test(
+        'repeat handles lapse by incrementing lapses and setting relearning state',
+        () {
       final now = DateTime(2026, 9, 20, 10, 0);
       final initialCard = FSRSCard(
         id: 10,

@@ -1,5 +1,4 @@
 import 'dart:math' as math;
-import 'package:flutter/foundation.dart';
 import '../data/models/fsrs_card_model.dart';
 import 'fsrs_service.dart';
 import 'storage/local_store.dart';
@@ -46,7 +45,8 @@ class ProgressService {
   String? get lastActiveDate => _lastActiveDate;
   List<String> get asambleasCompletadas =>
       List.unmodifiable(_asambleasCompletadas);
-  List<String> get capsulasCompletadas => List.unmodifiable(_capsulasCompletadas);
+  List<String> get capsulasCompletadas =>
+      List.unmodifiable(_capsulasCompletadas);
   Map<String, bool> get registrosAula => Map.unmodifiable(_registrosAula);
   Map<String, bool> get registrosFogar => Map.unmodifiable(_registrosFogar);
   Map<int, FSRSCard> get fsrsCards => Map.unmodifiable(_fsrsCards);
@@ -212,7 +212,8 @@ class ProgressService {
     int xpReward = 10,
   }) async {
     final current = now ?? DateTime.now();
-    final updated = _fsrsService.repeat(card: card, rating: rating, now: current);
+    final updated =
+        _fsrsService.repeat(card: card, rating: rating, now: current);
     _fsrsCards[updated.id] = updated;
     _xp += xpReward;
     _updateStreak(current);

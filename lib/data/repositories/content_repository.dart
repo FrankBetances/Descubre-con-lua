@@ -14,7 +14,13 @@ import '../models/estrategia_model.dart';
 import '../models/lamina_model.dart';
 import '../models/phonics_model.dart';
 import '../models/progresion_model.dart';
-import '../models/unidad_model.dart';
+// `Cuento` y `CuentoPagina` existen DOS veces en el proyecto y no son la misma
+// cosa: en unidad_model.dart son el cuento que vive DENTRO de una unidad de la
+// asamblea (sin id, con páginas de la unidad), y en cuento_model.dart son el
+// cuento suelto del banco de 200 (con id, curso, mes y preguntas graduadas).
+// Este fichero solo usa los del banco, así que se ocultan los de la unidad: sin
+// esto, los dos nombres chocan y el proyecto NO compila.
+import '../models/unidad_model.dart' hide Cuento, CuentoPagina;
 
 /// A content file that could not be loaded, kept instead of being discarded.
 class ContentLoadFailure {
@@ -53,8 +59,7 @@ class ContentRepository {
       'assets/content/english/phonics_taxonomy.json';
   static const String estrategiasAssetPath =
       'assets/content/estrategias_pedagogicas.json';
-  static const String dinamicasAssetPath =
-      'assets/content/dinamicas_aula.json';
+  static const String dinamicasAssetPath = 'assets/content/dinamicas_aula.json';
   static const String curriculo50MesesAssetPath =
       'assets/content/calendario/curriculo_50_meses.json';
 
@@ -739,7 +744,8 @@ class ContentRepository {
             PhonicsTaxonomy.fromJson(Map<String, dynamic>.from(decoded));
       }
     } catch (e) {
-      _loadErrors.add(ContentLoadFailure(phonicsTaxonomyAssetPath, e.toString()));
+      _loadErrors
+          .add(ContentLoadFailure(phonicsTaxonomyAssetPath, e.toString()));
     }
     return _phonicsTaxonomy ??
         const PhonicsTaxonomy(

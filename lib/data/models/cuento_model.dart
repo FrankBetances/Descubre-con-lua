@@ -253,7 +253,8 @@ class PreguntaGraduada {
 @immutable
 class Cuento {
   final String id;
-  final String cursoId; // 'curso_0_2', 'curso_2_3', 'curso_3_4', 'curso_4_5', 'curso_5_6'
+  final String
+      cursoId; // 'curso_0_2', 'curso_2_3', 'curso_3_4', 'curso_4_5', 'curso_5_6'
   final int mesNumero; // 1..10
   final int semanaSugerida; // 1..4
   final LocalizedString? cursoEtiqueta;
@@ -310,7 +311,8 @@ class Cuento {
         if (p is Map<String, dynamic>) {
           preguntasList.add(PreguntaGraduada.fromJson(p));
         } else if (p is Map) {
-          preguntasList.add(PreguntaGraduada.fromJson(Map<String, dynamic>.from(p)));
+          preguntasList
+              .add(PreguntaGraduada.fromJson(Map<String, dynamic>.from(p)));
         }
       }
     }
@@ -318,12 +320,15 @@ class Cuento {
     final rawTpr = json['tprOral'] ?? json['tpr_oral'];
     final CuentoTprOral? tpr = rawTpr is Map<String, dynamic>
         ? CuentoTprOral.fromJson(rawTpr)
-        : (rawTpr is Map ? CuentoTprOral.fromJson(Map<String, dynamic>.from(rawTpr)) : null);
+        : (rawTpr is Map
+            ? CuentoTprOral.fromJson(Map<String, dynamic>.from(rawTpr))
+            : null);
 
     final rawCursoEtiqueta = json['cursoEtiqueta'] ?? json['curso_etiqueta'];
-    final LocalizedString? cursoEtiqueta = rawCursoEtiqueta is Map<String, dynamic>
-        ? LocalizedString.fromJson(rawCursoEtiqueta)
-        : null;
+    final LocalizedString? cursoEtiqueta =
+        rawCursoEtiqueta is Map<String, dynamic>
+            ? LocalizedString.fromJson(rawCursoEtiqueta)
+            : null;
 
     final rawMesNome = json['mesNome'] ?? json['mes_nome'];
     final LocalizedString? mesNome = rawMesNome is Map<String, dynamic>
@@ -360,7 +365,8 @@ class Cuento {
       nivelLectura: (json['nivelLectura'] as num?)?.toInt() ??
           (json['nivel_lectura'] as num?)?.toInt() ??
           1,
-      licenza: json['licenza']?.toString().trim() ?? 'Creative Commons CC BY 4.0',
+      licenza:
+          json['licenza']?.toString().trim() ?? 'Creative Commons CC BY 4.0',
       orixeOpenSource: json['orixeOpenSource']?.toString().trim() ??
           json['orixe_open_source']?.toString().trim() ??
           'Patrimonio Vigo Infantil',

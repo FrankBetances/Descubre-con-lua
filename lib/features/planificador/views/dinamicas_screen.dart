@@ -137,7 +137,8 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
 
                         // Obxectivo
                         _buildSection(
-                          title: lang == AppLanguage.gl ? 'Obxectivo' : 'Objetivo',
+                          title:
+                              lang == AppLanguage.gl ? 'Obxectivo' : 'Objetivo',
                           content: din.obxectivo.resolve(lang),
                           color: AppTheme.primaryInk,
                         ),
@@ -146,7 +147,9 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
 
                         // Procedemento
                         _buildSection(
-                          title: lang == AppLanguage.gl ? 'Procedemento Paso a Paso' : 'Procedimiento Paso a Paso',
+                          title: lang == AppLanguage.gl
+                              ? 'Procedemento Paso a Paso'
+                              : 'Procedimiento Paso a Paso',
                           content: din.procedementoPasoAPaso.resolve(lang),
                           color: Colors.teal.shade800,
                         ),
@@ -155,7 +158,9 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
 
                         // Material
                         _buildSection(
-                          title: lang == AppLanguage.gl ? 'Material Sensorial' : 'Material Sensorial',
+                          title: lang == AppLanguage.gl
+                              ? 'Material Sensorial'
+                              : 'Material Sensorial',
                           content: din.materialSensorial.resolve(lang),
                           color: Colors.brown.shade700,
                         ),

@@ -31,10 +31,26 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
 
   static const List<Map<String, String>> _cursos = [
     {'id': 'curso_0_2', 'gl': '0 a 2 anos (Nido)', 'es': '0 a 2 años (Nido)'},
-    {'id': 'curso_2_3', 'gl': '2 a 3 anos (Comunidade)', 'es': '2 a 3 años (Comunidad)'},
-    {'id': 'curso_3_4', 'gl': '3 a 4 anos (Descubridores)', 'es': '3 a 4 años (Descubridores)'},
-    {'id': 'curso_4_5', 'gl': '4 a 5 anos (Investigadores)', 'es': '4 a 5 años (Investigadores)'},
-    {'id': 'curso_5_6', 'gl': '5 a 6 anos (Grandes Creadores)', 'es': '5 a 6 años (Grandes Creadores)'},
+    {
+      'id': 'curso_2_3',
+      'gl': '2 a 3 anos (Comunidade)',
+      'es': '2 a 3 años (Comunidad)'
+    },
+    {
+      'id': 'curso_3_4',
+      'gl': '3 a 4 anos (Descubridores)',
+      'es': '3 a 4 años (Descubridores)'
+    },
+    {
+      'id': 'curso_4_5',
+      'gl': '4 a 5 anos (Investigadores)',
+      'es': '4 a 5 años (Investigadores)'
+    },
+    {
+      'id': 'curso_5_6',
+      'gl': '5 a 6 anos (Grandes Creadores)',
+      'es': '5 a 6 años (Grandes Creadores)'
+    },
   ];
 
   @override
@@ -70,7 +86,9 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
         elevation: 0,
         leading: const BotonAtras(),
         title: Text(
-          lang == AppLanguage.gl ? 'Planificador Curricular' : 'Planificador Curricular',
+          lang == AppLanguage.gl
+              ? 'Planificador Curricular'
+              : 'Planificador Curricular',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,
@@ -134,7 +152,8 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                       selectedColor: AppTheme.primary,
                       labelStyle: TextStyle(
                         color: isSelected ? Colors.white : AppTheme.textPrimary,
-                        fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                        fontWeight:
+                            isSelected ? FontWeight.bold : FontWeight.normal,
                         fontSize: 12,
                       ),
                     ),
@@ -165,7 +184,8 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Container(
                                     padding: const EdgeInsets.symmetric(
@@ -214,7 +234,9 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                               // Aula
                               _buildPill(
                                 icon: Icons.school,
-                                title: lang == AppLanguage.gl ? 'Actividade de Aula' : 'Actividad de Aula',
+                                title: lang == AppLanguage.gl
+                                    ? 'Actividade de Aula'
+                                    : 'Actividad de Aula',
                                 content: mes.actividadAula.resolve(lang),
                                 color: AppTheme.primaryInk,
                               ),
@@ -223,7 +245,9 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                               // Fogar
                               _buildPill(
                                 icon: Icons.home,
-                                title: lang == AppLanguage.gl ? 'Rutina no Fogar' : 'Rutina en el Hogar',
+                                title: lang == AppLanguage.gl
+                                    ? 'Rutina no Fogar'
+                                    : 'Rutina en el Hogar',
                                 content: mes.actividadHogar.resolve(lang),
                                 color: Colors.amber.shade900,
                               ),
@@ -238,7 +262,8 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                                 ),
                                 child: Row(
                                   children: [
-                                    const Icon(Icons.language, color: Colors.indigo, size: 18),
+                                    const Icon(Icons.language,
+                                        color: Colors.indigo, size: 18),
                                     const SizedBox(width: 8),
                                     Expanded(
                                       child: Text(
@@ -279,7 +304,8 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
         Expanded(
           child: RichText(
             text: TextSpan(
-              style: const TextStyle(fontSize: 13, color: AppTheme.textPrimary, height: 1.3),
+              style: const TextStyle(
+                  fontSize: 13, color: AppTheme.textPrimary, height: 1.3),
               children: [
                 TextSpan(
                   text: '$title: ',

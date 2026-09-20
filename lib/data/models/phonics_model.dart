@@ -52,7 +52,8 @@ class PhonemeDef {
   final String id;
   final String symbolIpa;
   final String grapheme;
-  final String category; // 'short_vowel', 'consonant', 'digraph', 'magic_e', etc.
+  final String
+      category; // 'short_vowel', 'consonant', 'digraph', 'magic_e', etc.
   final LocalizedString name;
   final PhonemeExampleWord exampleWord;
   final String audioCue;
@@ -157,7 +158,8 @@ class PhonemeDef {
       );
 
   @override
-  String toString() => 'PhonemeDef($id, grapheme: "$grapheme", IPA: $symbolIpa)';
+  String toString() =>
+      'PhonemeDef($id, grapheme: "$grapheme", IPA: $symbolIpa)';
 }
 
 /// Decodable word entry for early phonics blending practice.
@@ -536,7 +538,8 @@ class PhonicsTaxonomy {
         if (m is Map<String, dynamic>) {
           missionsList.add(PhonicsMission.fromJson(m));
         } else if (m is Map) {
-          missionsList.add(PhonicsMission.fromJson(Map<String, dynamic>.from(m)));
+          missionsList
+              .add(PhonicsMission.fromJson(Map<String, dynamic>.from(m)));
         }
       }
     }

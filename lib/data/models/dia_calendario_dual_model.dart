@@ -31,7 +31,8 @@ class DiaProfesorado {
       duracionMin: (json['duracionMin'] as num?)?.toInt() ??
           (json['duracion_min'] as num?)?.toInt() ??
           15,
-      tprIngles: json['tprIngles']?.toString() ?? json['tpr_ingles']?.toString(),
+      tprIngles:
+          json['tprIngles']?.toString() ?? json['tpr_ingles']?.toString(),
       consignaDocente: LocalizedString.fromJson(
         json['consignaDocente'] as Map<String, dynamic>? ??
             json['consigna_docente'] as Map<String, dynamic>? ??

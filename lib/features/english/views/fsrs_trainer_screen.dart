@@ -27,12 +27,48 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
   int _reviewsCount = 0;
 
   static const List<Map<String, String>> _sampleWords = [
-    {'lemma': 'hello', 'ipa': '/həˈloʊ/', 'gl': 'ola', 'es': 'hola', 'example': 'Hello my friend!'},
-    {'lemma': 'water', 'ipa': '/ˈwɔːtər/', 'gl': 'auga', 'es': 'agua', 'example': 'Drink some water.'},
-    {'lemma': 'apple', 'ipa': '/ˈæp.əl/', 'gl': 'mazá', 'es': 'manzana', 'example': 'A sweet red apple.'},
-    {'lemma': 'play', 'ipa': '/pleɪ/', 'gl': 'xogar', 'es': 'jugar', 'example': 'Let\'s play together.'},
-    {'lemma': 'happy', 'ipa': '/ˈhæp.i/', 'gl': 'feliz', 'es': 'feliz', 'example': 'We are happy today.'},
-    {'lemma': 'listen', 'ipa': '/ˈlɪs.ən/', 'gl': 'escoitar', 'es': 'escuchar', 'example': 'Listen to the music.'},
+    {
+      'lemma': 'hello',
+      'ipa': '/həˈloʊ/',
+      'gl': 'ola',
+      'es': 'hola',
+      'example': 'Hello my friend!'
+    },
+    {
+      'lemma': 'water',
+      'ipa': '/ˈwɔːtər/',
+      'gl': 'auga',
+      'es': 'agua',
+      'example': 'Drink some water.'
+    },
+    {
+      'lemma': 'apple',
+      'ipa': '/ˈæp.əl/',
+      'gl': 'mazá',
+      'es': 'manzana',
+      'example': 'A sweet red apple.'
+    },
+    {
+      'lemma': 'play',
+      'ipa': '/pleɪ/',
+      'gl': 'xogar',
+      'es': 'jugar',
+      'example': 'Let\'s play together.'
+    },
+    {
+      'lemma': 'happy',
+      'ipa': '/ˈhæp.i/',
+      'gl': 'feliz',
+      'es': 'feliz',
+      'example': 'We are happy today.'
+    },
+    {
+      'lemma': 'listen',
+      'ipa': '/ˈlɪs.ən/',
+      'gl': 'escoitar',
+      'es': 'escuchar',
+      'example': 'Listen to the music.'
+    },
   ];
 
   @override
@@ -91,7 +127,8 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
             children: [
               // Stats Card
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(14),
@@ -100,11 +137,14 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    _buildStat('Tarxeta', '${_currentIndex + 1}/${_deck.length}'),
+                    _buildStat(
+                        'Tarxeta', '${_currentIndex + 1}/${_deck.length}'),
                     _buildStat('Repaso', '$_reviewsCount'),
                     if (currentCard != null) ...[
-                      _buildStat('Estabilidade', '${currentCard.stability.toStringAsFixed(1)}d'),
-                      _buildStat('Dificultade', '${currentCard.difficulty.toStringAsFixed(1)}/10'),
+                      _buildStat('Estabilidade',
+                          '${currentCard.stability.toStringAsFixed(1)}d'),
+                      _buildStat('Dificultade',
+                          '${currentCard.difficulty.toStringAsFixed(1)}/10'),
                     ],
                   ],
                 ),
@@ -209,7 +249,7 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                     const SizedBox(width: 8),
                     _buildGradeButton(3, 'Good', AppTheme.primary),
                     const SizedBox(width: 8),
-                    _buildGradeButton(4, 'Easy', Colors.emerald.shade600),
+                    _buildGradeButton(4, 'Easy', AppTheme.success),
                   ],
                 )
               else
@@ -223,7 +263,9 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                     ),
                   ),
                   child: Text(
-                    lang == AppLanguage.gl ? 'Amosar Resposta' : 'Mostrar Respuesta',
+                    lang == AppLanguage.gl
+                        ? 'Amosar Resposta'
+                        : 'Mostrar Respuesta',
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 16,

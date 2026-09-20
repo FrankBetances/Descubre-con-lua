@@ -51,7 +51,8 @@ class EnglishWordEntry {
   final int rank; // Frequency rank 1 - 8000
   final String word;
   final String phonetic;
-  final String partOfSpeech; // 'noun', 'verb', 'adjective', 'adverb', 'phrase', etc.
+  final String
+      partOfSpeech; // 'noun', 'verb', 'adjective', 'adverb', 'phrase', etc.
   final LocalizedString translation;
   final LocalizedString definition;
   final String category; // 'daily_life', 'actions_verbs', etc.
@@ -350,7 +351,8 @@ class EnglishCorpus {
         if (w is Map<String, dynamic>) {
           wordsList.add(EnglishWordEntry.fromJson(w));
         } else if (w is Map) {
-          wordsList.add(EnglishWordEntry.fromJson(Map<String, dynamic>.from(w)));
+          wordsList
+              .add(EnglishWordEntry.fromJson(Map<String, dynamic>.from(w)));
         }
       }
     }

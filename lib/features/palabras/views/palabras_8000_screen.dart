@@ -53,7 +53,8 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
       setState(() {
         if (_searchQuery.isNotEmpty) {
           final q = _searchQuery.toLowerCase();
-          _palabras = results.where((p) => p.lemma.toLowerCase().contains(q)).toList();
+          _palabras =
+              results.where((p) => p.lemma.toLowerCase().contains(q)).toList();
         } else {
           _palabras = results;
         }
@@ -101,10 +102,12 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'Search English lemma (e.g. water, play)...',
-                    prefixIcon: const Icon(Icons.search, color: AppTheme.primaryDark),
+                    prefixIcon:
+                        const Icon(Icons.search, color: AppTheme.primaryDark),
                     filled: true,
                     fillColor: AppTheme.pageBg,
-                    contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+                    contentPadding:
+                        const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                       borderSide: BorderSide.none,
@@ -132,7 +135,9 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                           },
                           selectedColor: AppTheme.primary,
                           labelStyle: TextStyle(
-                            color: _selectedBanda == null ? Colors.white : AppTheme.textPrimary,
+                            color: _selectedBanda == null
+                                ? Colors.white
+                                : AppTheme.textPrimary,
                             fontSize: 11,
                           ),
                         ),
@@ -150,7 +155,8 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                             },
                             selectedColor: AppTheme.primary,
                             labelStyle: TextStyle(
-                              color: isSel ? Colors.white : AppTheme.textPrimary,
+                              color:
+                                  isSel ? Colors.white : AppTheme.textPrimary,
                               fontSize: 11,
                             ),
                           ),
@@ -179,7 +185,9 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                           },
                           selectedColor: Colors.purple.shade600,
                           labelStyle: TextStyle(
-                            color: _selectedCefr == null ? Colors.white : AppTheme.textPrimary,
+                            color: _selectedCefr == null
+                                ? Colors.white
+                                : AppTheme.textPrimary,
                             fontSize: 11,
                           ),
                         ),
@@ -197,7 +205,8 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                             },
                             selectedColor: Colors.purple.shade600,
                             labelStyle: TextStyle(
-                              color: isSel ? Colors.white : AppTheme.textPrimary,
+                              color:
+                                  isSel ? Colors.white : AppTheme.textPrimary,
                               fontSize: 11,
                             ),
                           ),
@@ -241,7 +250,8 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                       )
                     : ListView.builder(
                         padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
-                        itemCount: _palabras.length > 500 ? 500 : _palabras.length,
+                        itemCount:
+                            _palabras.length > 500 ? 500 : _palabras.length,
                         itemBuilder: (context, index) {
                           final item = _palabras[index];
                           return Card(
@@ -264,7 +274,11 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                                     ),
                                     child: Center(
                                       child: Text(
-                                        item.pos.substring(0, item.pos.length > 3 ? 3 : item.pos.length),
+                                        item.pos.substring(
+                                            0,
+                                            item.pos.length > 3
+                                                ? 3
+                                                : item.pos.length),
                                         style: TextStyle(
                                           color: Colors.indigo.shade800,
                                           fontWeight: FontWeight.bold,
@@ -276,7 +290,8 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                                   const SizedBox(width: 14),
                                   Expanded(
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           item.lemma,

@@ -79,7 +79,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
               color: AppTheme.primaryLight,
               child: Row(
                 children: [
-                  const Icon(Icons.auto_stories, color: AppTheme.primaryDark, size: 20),
+                  const Icon(Icons.auto_stories,
+                      color: AppTheme.primaryDark, size: 20),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
@@ -109,7 +110,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                       Card(
                         elevation: 1,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                          borderRadius:
+                              BorderRadius.circular(AppTheme.radiusCard),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(20),
@@ -117,7 +119,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
                                     lang == AppLanguage.gl
@@ -138,7 +141,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Text(
-                                        paginaActual.vocabularioClave.join(' · '),
+                                        paginaActual.vocabularioClave
+                                            .join(' · '),
                                         style: const TextStyle(
                                           color: AppTheme.primaryDark,
                                           fontSize: 11,
@@ -158,24 +162,30 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
-                              if (paginaActual.preguntaImaxe.isNotEmpty) ...[
+                              if ((paginaActual.preguntaImaxe?.resolve(lang) ??
+                                      '')
+                                  .trim()
+                                  .isNotEmpty) ...[
                                 const SizedBox(height: 16),
                                 Container(
                                   padding: const EdgeInsets.all(12),
                                   decoration: BoxDecoration(
                                     color: Colors.amber.shade50,
                                     borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(color: Colors.amber.shade200),
+                                    border: Border.all(
+                                        color: Colors.amber.shade200),
                                   ),
                                   child: Row(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       const Icon(Icons.help_outline,
                                           color: Colors.amber, size: 18),
                                       const SizedBox(width: 8),
                                       Expanded(
                                         child: Text(
-                                          paginaActual.preguntaImaxe.resolve(lang),
+                                          paginaActual.preguntaImaxe!
+                                              .resolve(lang),
                                           style: TextStyle(
                                             color: Colors.amber.shade900,
                                             fontSize: 13,
@@ -298,13 +308,16 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8),
-                                  border: Border.all(color: Colors.grey.shade200),
+                                  border:
+                                      Border.all(color: Colors.grey.shade200),
                                 ),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Nivel ${preg.nivel}: ${preg.enfoque.resolve(lang)}',
+                                      preg.tipo != null
+                                          ? 'Nivel ${preg.nivel}: ${preg.tipo!.resolve(lang)}'
+                                          : 'Nivel ${preg.nivel}',
                                       style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 12,
@@ -313,9 +326,10 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                     ),
                                     const SizedBox(height: 4),
                                     Text(
-                                      preg.pregunta.resolve(lang),
+                                      preg.enunciado.resolve(lang),
                                       style: const TextStyle(
-                                          fontSize: 13, color: AppTheme.textPrimary),
+                                          fontSize: 13,
+                                          color: AppTheme.textPrimary),
                                     ),
                                   ],
                                 ),
@@ -332,12 +346,13 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
             // Bottom Navigation Stepper
             if (hasPaginas && paginas.length > 1)
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.05),
+                      color: Colors.black.withValues(alpha: 0.05),
                       blurRadius: 4,
                       offset: const Offset(0, -2),
                     ),
@@ -351,7 +366,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           ? () => setState(() => _currentPageIndex--)
                           : null,
                       icon: const Icon(Icons.arrow_back, size: 16),
-                      label: Text(lang == AppLanguage.gl ? 'Anterior' : 'Anterior'),
+                      label: Text(
+                          lang == AppLanguage.gl ? 'Anterior' : 'Anterior'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey.shade100,
                         foregroundColor: AppTheme.textPrimary,
@@ -369,7 +385,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                       onPressed: _currentPageIndex < paginas.length - 1
                           ? () => setState(() => _currentPageIndex++)
                           : null,
-                      label: Text(lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente'),
+                      label: Text(
+                          lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente'),
                       icon: const Icon(Icons.arrow_forward, size: 16),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppTheme.primary,

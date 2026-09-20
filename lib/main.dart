@@ -507,12 +507,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     ButtonSegment<PortalRole>(
                       value: PortalRole.familias,
                       icon: const Icon(Icons.family_restroom_outlined),
-                      label: Text(_portalFamilias.resolve(widget.currentLanguage)),
+                      label:
+                          Text(_portalFamilias.resolve(widget.currentLanguage)),
                     ),
                     ButtonSegment<PortalRole>(
                       value: PortalRole.docentes,
                       icon: const Icon(Icons.school_outlined),
-                      label: Text(_portalDocentes.resolve(widget.currentLanguage)),
+                      label:
+                          Text(_portalDocentes.resolve(widget.currentLanguage)),
                     ),
                   ],
                   selected: {_currentRole},
@@ -524,8 +526,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 16.0),
-              if (_currentRole == PortalRole.familias) ..._buildFamiliasModules(context, isGl),
-              if (_currentRole == PortalRole.docentes) ..._buildDocentesModules(context, isGl),
+              if (_currentRole == PortalRole.familias)
+                ..._buildFamiliasModules(context, isGl),
+              if (_currentRole == PortalRole.docentes)
+                ..._buildDocentesModules(context, isGl),
               const SizedBox(height: 24.0),
               Card(
                 color: const Color(0xFFEBE7D5),

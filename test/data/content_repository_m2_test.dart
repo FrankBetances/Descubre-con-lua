@@ -57,9 +57,11 @@ void main() {
 
       final all02 = await repo.loadCuentos(cursoId: 'curso_0_2');
       expect(all02.length, equals(2));
-      expect(all02.map((c) => c.id), containsAll(['conto_001_s1', 'conto_002_s2']));
+      expect(all02.map((c) => c.id),
+          containsAll(['conto_001_s1', 'conto_002_s2']));
 
-      final mes1Curso2 = await repo.loadCuentos(cursoId: 'curso_2_3', mesNumero: 1);
+      final mes1Curso2 =
+          await repo.loadCuentos(cursoId: 'curso_2_3', mesNumero: 1);
       expect(mes1Curso2.length, equals(1));
       expect(mes1Curso2.first.id, equals('conto_041_s1'));
     });
@@ -209,7 +211,8 @@ void main() {
       repo.addCalendarioDia(dia1);
       repo.addCalendarioDia(dia2);
 
-      final curso02 = await repo.loadCalendarioDias(cursoId: 'curso_0_2', mes: 1);
+      final curso02 =
+          await repo.loadCalendarioDias(cursoId: 'curso_0_2', mes: 1);
       expect(curso02.length, equals(1));
       expect(curso02.first.fechaClave, equals('curso_0_2-mes-1-dia-1'));
 
@@ -218,7 +221,9 @@ void main() {
       expect(curso23.first.fechaClave, equals('curso_2_3-mes-1-dia-1'));
     });
 
-    test('EnglishCorpus, Phonics, Estrategias, Dinamicas, and Curriculo50 loaders', () async {
+    test(
+        'EnglishCorpus, Phonics, Estrategias, Dinamicas, and Curriculo50 loaders',
+        () async {
       final repo = ContentRepository();
 
       const corpus = EnglishCorpus(
@@ -236,7 +241,8 @@ void main() {
             targetAge: '0-2',
             naturalPhrase: EnglishNaturalPhrase(
               en: 'Hello friend!',
-              translation: LocalizedString(gl: 'Ola amigo!', es: '¡Hola amigo!'),
+              translation:
+                  LocalizedString(gl: 'Ola amigo!', es: '¡Hola amigo!'),
             ),
             collocations: ['say hello'],
             frequencyTier: 1000,
@@ -257,7 +263,8 @@ void main() {
             grapheme: 'a',
             category: 'short_vowel',
             name: LocalizedString(gl: 'A', es: 'A'),
-            exampleWord: PhonemeExampleWord(en: 'apple', gl: 'mazá', es: 'manzana'),
+            exampleWord:
+                PhonemeExampleWord(en: 'apple', gl: 'mazá', es: 'manzana'),
             audioCue: '/æ/ in apple',
             articulationGuide: LocalizedString(gl: 'Guía', es: 'Guía'),
             frequencyRank: 1,
@@ -320,7 +327,8 @@ void main() {
         actividadHogar: LocalizedString(gl: 'Fogar', es: 'Hogar'),
         rutinaRecomendadaHogar: LocalizedString(gl: 'Rutina', es: 'Rutina'),
         minutosSugeridos: 3,
-        ingles: InglesMesCurricular(lexico: ['Hello'], tpr: ['Clap'], frase: 'Hello!'),
+        ingles: InglesMesCurricular(
+            lexico: ['Hello'], tpr: ['Clap'], frase: 'Hello!'),
         dinamicaEvolutiva: LocalizedString(gl: 'Evolutiva', es: 'Evolutiva'),
         ponteCasaEscola: LocalizedString(gl: 'Ponte', es: 'Puente'),
       );
@@ -365,7 +373,8 @@ void main() {
       expect(repo.getLaminaByIdSync('lamina_1'), isNull);
     });
 
-    test('loading from mocked asset bundle loader parses successfully', () async {
+    test('loading from mocked asset bundle loader parses successfully',
+        () async {
       final mockAssets = <String, String>{
         ContentRepository.cuentos200AssetPath: jsonEncode([
           {

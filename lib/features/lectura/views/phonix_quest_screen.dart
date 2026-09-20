@@ -57,7 +57,9 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
         elevation: 0,
         leading: const BotonAtras(),
         title: Text(
-          lang == AppLanguage.gl ? 'Phonix Quest · Fonemas' : 'Phonix Quest · Fonemas',
+          lang == AppLanguage.gl
+              ? 'Phonix Quest · Fonemas'
+              : 'Phonix Quest · Fonemas',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,

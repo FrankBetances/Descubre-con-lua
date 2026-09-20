@@ -63,10 +63,17 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
 
   void _applyFilters() {
     _filteredCuentos = _allCuentos.where((c) {
-      final matchesCurso = _selectedCurso == 'todos' || c.cursoId == _selectedCurso;
+      final matchesCurso =
+          _selectedCurso == 'todos' || c.cursoId == _selectedCurso;
       final matchesSearch = _searchQuery.isEmpty ||
-          c.titulo.resolve(_language).toLowerCase().contains(_searchQuery.toLowerCase()) ||
-          c.sinopse.resolve(_language).toLowerCase().contains(_searchQuery.toLowerCase());
+          c.titulo
+              .resolve(_language)
+              .toLowerCase()
+              .contains(_searchQuery.toLowerCase()) ||
+          c.sinopse
+              .resolve(_language)
+              .toLowerCase()
+              .contains(_searchQuery.toLowerCase());
       return matchesCurso && matchesSearch;
     }).toList();
   }
@@ -82,7 +89,9 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
         elevation: 0,
         leading: const BotonAtras(),
         title: Text(
-          lang == AppLanguage.gl ? 'Banco de 200 Contos' : 'Banco de 200 Cuentos',
+          lang == AppLanguage.gl
+              ? 'Banco de 200 Contos'
+              : 'Banco de 200 Cuentos',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,
@@ -101,11 +110,15 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                 // Search Input
                 TextField(
                   decoration: InputDecoration(
-                    hintText: lang == AppLanguage.gl ? 'Buscar conto...' : 'Buscar cuento...',
-                    prefixIcon: const Icon(Icons.search, color: AppTheme.primaryDark),
+                    hintText: lang == AppLanguage.gl
+                        ? 'Buscar conto...'
+                        : 'Buscar cuento...',
+                    prefixIcon:
+                        const Icon(Icons.search, color: AppTheme.primaryDark),
                     filled: true,
                     fillColor: AppTheme.pageBg,
-                    contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+                    contentPadding:
+                        const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                       borderSide: BorderSide.none,
@@ -129,7 +142,8 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                       return Padding(
                         padding: const EdgeInsets.only(right: 8),
                         child: ChoiceChip(
-                          label: Text(lang == AppLanguage.gl ? c['gl']! : c['es']!),
+                          label: Text(
+                              lang == AppLanguage.gl ? c['gl']! : c['es']!),
                           selected: isSelected,
                           onSelected: (selected) {
                             if (selected) {
@@ -141,8 +155,12 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                           },
                           selectedColor: AppTheme.primary,
                           labelStyle: TextStyle(
-                            color: isSelected ? Colors.white : AppTheme.textPrimary,
-                            fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                            color: isSelected
+                                ? Colors.white
+                                : AppTheme.textPrimary,
+                            fontWeight: isSelected
+                                ? FontWeight.bold
+                                : FontWeight.normal,
                             fontSize: 12,
                           ),
                         ),
@@ -232,7 +250,8 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                     const SizedBox(width: 14),
                                     Expanded(
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             cuento.titulo.resolve(lang),
@@ -266,7 +285,8 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                                 Colors.blue.shade50,
                                                 Colors.blue.shade800,
                                               ),
-                                              if (cuento.paginas.isNotEmpty) ...[
+                                              if (cuento
+                                                  .paginas.isNotEmpty) ...[
                                                 const SizedBox(width: 6),
                                                 _buildBadge(
                                                   '${cuento.paginas.length} páx',

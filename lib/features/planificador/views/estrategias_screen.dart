@@ -154,7 +154,8 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Icon(Icons.forum, color: Colors.amber, size: 18),
+                              const Icon(Icons.forum,
+                                  color: Colors.amber, size: 18),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(

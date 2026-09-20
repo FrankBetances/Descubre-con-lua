@@ -1,5 +1,4 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/data/models/corpus_palabra_model.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
 import 'package:descubre_con_lua/data/models/dia_calendario_dual_model.dart';
@@ -48,10 +47,16 @@ void main() {
             'nivel': 1,
             'rangoIdade': '0 a 3 anos',
             'tipo': {'gl': 'Literal', 'es': 'Literal'},
-            'enunciado': {'gl': 'Onde están as mans?', 'es': '¿Dónde están las manos?'},
+            'enunciado': {
+              'gl': 'Onde están as mans?',
+              'es': '¿Dónde están las manos?'
+            },
             'obxectivo': {'gl': 'Sinalar', 'es': 'Señalar'},
             'respostaModelo': {'gl': 'Alí', 'es': 'Allí'},
-            'pistaEducadora': {'gl': 'Amosa as mans', 'es': 'Muestra las manos'},
+            'pistaEducadora': {
+              'gl': 'Amosa as mans',
+              'es': 'Muestra las manos'
+            },
           }
         ],
       };
@@ -94,8 +99,15 @@ void main() {
         'bgHex': '#fef2f2',
         'simbolo': 'apple',
         'preguntaSugerida': {'gl': 'Ves a mazá?', 'es': '¿Ves la manzana?'},
-        'obxectivo': {'gl': 'Recoñecemento fónico', 'es': 'Reconocimiento fónico'},
-        'tprAccion': {'en': 'Bite apple', 'gl': 'Morde a mazá', 'es': 'Muerde la manzana'},
+        'obxectivo': {
+          'gl': 'Recoñecemento fónico',
+          'es': 'Reconocimiento fónico'
+        },
+        'tprAccion': {
+          'en': 'Bite apple',
+          'gl': 'Morde a mazá',
+          'es': 'Muerde la manzana'
+        },
       };
 
       final lamina = Lamina.fromJson(json);
@@ -299,10 +311,13 @@ void main() {
       expect(corpus.words.first.word, equals('hello'));
       expect(corpus.words.first.collocations, contains('say hello'));
       expect(corpus.scenarios.length, equals(1));
-      expect(corpus.scenarios.first.turns.first.en, equals('Do you want water?'));
+      expect(
+          corpus.scenarios.first.turns.first.en, equals('Do you want water?'));
     });
 
-    test('PhonicsTaxonomy model parses 44 phonemes, decodable words, and missions', () {
+    test(
+        'PhonicsTaxonomy model parses 44 phonemes, decodable words, and missions',
+        () {
       final json = {
         'phonemes': [
           {
@@ -369,14 +384,25 @@ void main() {
       expect(taxonomy.missions.first.xpReward, equals(25));
     });
 
-    test('EstrategiaPedagogica and DinamicaPedagogica models serialize correctly', () {
+    test(
+        'EstrategiaPedagogica and DinamicaPedagogica models serialize correctly',
+        () {
       final jsonEst = {
         'id': 'est-espera-5s',
         'clave': 'espera_5s',
         'nome': {'gl': 'Regra dos 5 Segundos', 'es': 'Regla de los 5 Segundos'},
-        'subtitulo': {'gl': 'Tempo de procesamento', 'es': 'Tiempo de procesamiento'},
-        'baseNeurobioloxica': {'gl': 'Córtex prefrontal', 'es': 'Corteza prefrontal'},
-        'comoAplicarNaAula': {'gl': 'Gardar silencio', 'es': 'Guardar silencio'},
+        'subtitulo': {
+          'gl': 'Tempo de procesamento',
+          'es': 'Tiempo de procesamiento'
+        },
+        'baseNeurobioloxica': {
+          'gl': 'Córtex prefrontal',
+          'es': 'Corteza prefrontal'
+        },
+        'comoAplicarNaAula': {
+          'gl': 'Gardar silencio',
+          'es': 'Guardar silencio'
+        },
         'exemploDialogoAula': {'gl': 'Docente agarda', 'es': 'Docente espera'},
         'erroComunAEvitar': {'gl': 'Présas', 'es': 'Prisas'},
         'consignaDocente': {'gl': 'Silencio fértil', 'es': 'Silencio fértil'},

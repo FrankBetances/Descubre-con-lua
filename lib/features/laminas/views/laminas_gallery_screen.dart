@@ -54,7 +54,8 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
 
   void _applyFilters() {
     _filteredLaminas = _allLaminas.where((l) {
-      final matchesCat = _selectedCategoria == 'todas' || l.categoria == _selectedCategoria;
+      final matchesCat =
+          _selectedCategoria == 'todas' || l.categoria == _selectedCategoria;
       final query = _searchQuery.toLowerCase();
       final matchesSearch = query.isEmpty ||
           l.gl.toLowerCase().contains(query) ||
@@ -83,7 +84,9 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
         elevation: 0,
         leading: const BotonAtras(),
         title: Text(
-          lang == AppLanguage.gl ? 'Banco de 200 Láminas' : 'Banco de 200 Láminas',
+          lang == AppLanguage.gl
+              ? 'Banco de 200 Láminas'
+              : 'Banco de 200 Láminas',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,
@@ -101,11 +104,15 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
               children: [
                 TextField(
                   decoration: InputDecoration(
-                    hintText: lang == AppLanguage.gl ? 'Buscar lámina...' : 'Buscar lámina...',
-                    prefixIcon: const Icon(Icons.search, color: AppTheme.primaryDark),
+                    hintText: lang == AppLanguage.gl
+                        ? 'Buscar lámina...'
+                        : 'Buscar lámina...',
+                    prefixIcon:
+                        const Icon(Icons.search, color: AppTheme.primaryDark),
                     filled: true,
                     fillColor: AppTheme.pageBg,
-                    contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+                    contentPadding:
+                        const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                       borderSide: BorderSide.none,
@@ -139,8 +146,12 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                           },
                           selectedColor: AppTheme.primary,
                           labelStyle: TextStyle(
-                            color: isSelected ? Colors.white : AppTheme.textPrimary,
-                            fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                            color: isSelected
+                                ? Colors.white
+                                : AppTheme.textPrimary,
+                            fontWeight: isSelected
+                                ? FontWeight.bold
+                                : FontWeight.normal,
                             fontSize: 11,
                           ),
                         ),
@@ -187,7 +198,8 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                       )
                     : GridView.builder(
                         padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
-                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           childAspectRatio: 0.85,
                           crossAxisSpacing: 12,
@@ -220,7 +232,8 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    if (lamina.simbolo != null && lamina.simbolo!.isNotEmpty)
+                                    if (lamina.simbolo != null &&
+                                        lamina.simbolo!.isNotEmpty)
                                       Text(
                                         lamina.simbolo!,
                                         style: const TextStyle(fontSize: 36),
@@ -233,7 +246,9 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                                       ),
                                     const SizedBox(height: 8),
                                     Text(
-                                      lang == AppLanguage.gl ? lamina.gl : lamina.es,
+                                      lang == AppLanguage.gl
+                                          ? lamina.gl
+                                          : lamina.es,
                                       style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 14,

@@ -95,7 +95,8 @@ class _ListeningScreenState extends State<ListeningScreen> {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
                       color: Colors.indigo.shade50,
                       borderRadius: BorderRadius.circular(8),
@@ -129,7 +130,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
                         Container(
                           width: 80,
                           height: 80,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: AppTheme.primaryLight,
                             shape: BoxShape.circle,
                           ),
@@ -182,7 +183,8 @@ class _ListeningScreenState extends State<ListeningScreen> {
                           ),
                           const SizedBox(height: 12),
                           Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 12, vertical: 6),
                             decoration: BoxDecoration(
                               color: Colors.amber.shade50,
                               borderRadius: BorderRadius.circular(8),
@@ -190,7 +192,8 @@ class _ListeningScreenState extends State<ListeningScreen> {
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                const Icon(Icons.pan_tool, size: 16, color: Colors.amber),
+                                const Icon(Icons.pan_tool,
+                                    size: 16, color: Colors.amber),
                                 const SizedBox(width: 6),
                                 Text(
                                   'Acción TPR: ${exercise['tpr']!}',
@@ -240,7 +243,8 @@ class _ListeningScreenState extends State<ListeningScreen> {
                       foregroundColor: AppTheme.textPrimary,
                       elevation: 0,
                     ),
-                    child: Text(lang == AppLanguage.gl ? 'Anterior' : 'Anterior'),
+                    child:
+                        Text(lang == AppLanguage.gl ? 'Anterior' : 'Anterior'),
                   ),
                   ElevatedButton(
                     onPressed: _currentIndex < _listeningExercises.length - 1
@@ -256,7 +260,8 @@ class _ListeningScreenState extends State<ListeningScreen> {
                       foregroundColor: Colors.white,
                       elevation: 0,
                     ),
-                    child: Text(lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente'),
+                    child:
+                        Text(lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente'),
                   ),
                 ],
               ),

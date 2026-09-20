@@ -4,7 +4,8 @@ import 'package:descubre_con_lua/core/progress_service.dart';
 import 'package:descubre_con_lua/data/models/fsrs_card_model.dart';
 
 void main() {
-  group('ProgressService Tests (Offline LocalStore Persistence & XP Engine)', () {
+  group('ProgressService Tests (Offline LocalStore Persistence & XP Engine)',
+      () {
     late Directory tempDir;
     late ProgressService service;
 
@@ -44,9 +45,12 @@ void main() {
       expect(reloaded.xp, equals(150));
     });
 
-    test('recordAssemblyCompleted logs assembly, adds XP, marks aula, and updates streak', () async {
+    test(
+        'recordAssemblyCompleted logs assembly, adds XP, marks aula, and updates streak',
+        () async {
       final today = DateTime(2026, 9, 20);
-      await service.recordAssemblyCompleted('juega.mar.01', date: today, xpReward: 50);
+      await service.recordAssemblyCompleted('juega.mar.01',
+          date: today, xpReward: 50);
 
       expect(service.xp, equals(50));
       expect(service.asambleasCompletadas, contains('juega.mar.01'));
@@ -56,14 +60,18 @@ void main() {
       expect(service.lastActiveDate, equals('2026-09-20'));
 
       // Re-running same day should not increment streak
-      await service.recordAssemblyCompleted('juega.auga.01', date: today, xpReward: 50);
+      await service.recordAssemblyCompleted('juega.auga.01',
+          date: today, xpReward: 50);
       expect(service.xp, equals(100));
       expect(service.currentStreak, equals(1));
     });
 
-    test('recordCapsulaCompleted logs capsule, adds XP, marks fogar, and updates streak', () async {
+    test(
+        'recordCapsulaCompleted logs capsule, adds XP, marks fogar, and updates streak',
+        () async {
       final today = DateTime(2026, 9, 20);
-      await service.recordCapsulaCompleted('academy.hablar.01', date: today, xpReward: 30);
+      await service.recordCapsulaCompleted('academy.hablar.01',
+          date: today, xpReward: 30);
 
       expect(service.xp, equals(30));
       expect(service.capsulasCompletadas, contains('academy.hablar.01'));
@@ -71,7 +79,9 @@ void main() {
       expect(service.currentStreak, equals(1));
     });
 
-    test('streak progression updates on consecutive days and resets on missed days', () async {
+    test(
+        'streak progression updates on consecutive days and resets on missed days',
+        () async {
       // Day 1
       await service.recordRegistroAula('2026-09-20');
       expect(service.currentStreak, equals(1));
@@ -88,7 +98,8 @@ void main() {
       expect(service.bestStreak, equals(2)); // Best streak preserved
     });
 
-    test('recordFsrsReview updates card state and stores in collection', () async {
+    test('recordFsrsReview updates card state and stores in collection',
+        () async {
       final now = DateTime(2026, 9, 20, 12, 0);
       final initialCard = FSRSCard.initial(id: 1, lemma: 'water', now: now);
       await service.saveCard(initialCard);
@@ -97,7 +108,8 @@ void main() {
       expect(service.getCard(1)!.state, equals(FSRSCardState.newCard));
 
       // Review card with rating 3 (Good)
-      final reviewed = await service.recordFsrsReview(initialCard, 3, now: now, xpReward: 10);
+      final reviewed = await service.recordFsrsReview(initialCard, 3,
+          now: now, xpReward: 10);
       expect(reviewed.state, equals(FSRSCardState.review));
       expect(reviewed.reps, equals(1));
       expect(service.xp, equals(10));
@@ -114,7 +126,8 @@ void main() {
       expect(reloaded.getCard(1)?.reps, equals(1));
     });
 
-    test('getDueCards returns cards scheduled before or at current time', () async {
+    test('getDueCards returns cards scheduled before or at current time',
+        () async {
       final now = DateTime(2026, 9, 20, 12, 0);
       final dueCard = FSRSCard(
         id: 1,
