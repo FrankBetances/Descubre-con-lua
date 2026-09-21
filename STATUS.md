@@ -88,15 +88,22 @@ subir nada, y está sin mirar.
 
 ### Cómo se graban, y por qué el workflow cambió
 
-Son **16.555 locuciones inglesas sin grabación** (`tools/voice_missing.py
---lang en`, medido). El paso del inglés de `voice-assets.yml` sintetizaba de
+El corpus de voz pasa de **3.159 a 18.974 locuciones** y quedan **16.555
+inglesas sin grabación** (`tools/voice_missing.py --lang en`, medido). El paso del inglés de `voice-assets.yml` sintetizaba de
 una vez y hacía **un solo commit al final**: con este volumen, un job que se
 queda sin sus seis horas se lleva por delante todo lo sintetizado. Ahora va
 **por tandas de 40 minutos**, y cada tanda se empuja en cuanto acaba
 (`tools/ci_push_voice.sh`). El generador es incremental, así que la vuelta
-siguiente sigue por donde iba. Cuánto tarda en total **no lo sé**: no hay forma
-de medir aquí la velocidad de Piper en un runner, porque `huggingface.co` está
-bloqueado en este entorno y el modelo no se puede descargar.
+siguiente sigue por donde iba.
+
+**Cuánto va a tardar, con el único dato real que hay.** La corrida anterior de
+este mismo workflow (run 33, paso «Synthesise en») sintetizó **740 locuciones
+inglesas en 103 segundos**, descarga del modelo incluida: unas 7 por segundo.
+A ese ritmo, 16.555 serían unos 40 minutos, pero esas 740 eran palabras y
+órdenes cortas y estas traen 7.998 frases de 51 caracteres de media, que
+tardan bastante más por pieza. **No está medido**: lo dirá la primera tanda.
+Aquí no se puede medir, porque `huggingface.co` está bloqueado en este entorno
+y el modelo no se descarga.
 
 `tools/check_voice_levels.py` mide ahora **en paralelo y en silencio**: con
 casi veinte mil ficheros, uno detrás de otro eran más de veinte minutos de gate
