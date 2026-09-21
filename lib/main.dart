@@ -27,7 +27,7 @@ import 'features/academy/views/micro_rutina_setembro_screen.dart';
 import 'data/models/asamblea_segundo_ciclo_model.dart';
 import 'features/cuentos/views/cuentos_list_screen.dart';
 import 'features/laminas/views/laminas_gallery_screen.dart';
-import 'features/palabras/views/palabras_8000_screen.dart';
+import 'features/palabras/views/vocabulario_ingles_screen.dart';
 import 'features/english/views/english_hub_screen.dart';
 import 'features/lectura/views/aprender_a_ler_screen.dart';
 import 'features/planificador/views/planificador_screen.dart';
@@ -192,7 +192,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               initialLanguage: _currentLanguage,
               audioService: _audioService,
             ),
-        '/palabras': (context) => Palabras8000Screen(
+        '/palabras': (context) => VocabularioInglesScreen(
               repository: _repository,
               initialLanguage: _currentLanguage,
               audioService: _audioService,
@@ -835,7 +835,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: () {
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) => Palabras8000Screen(
+              builder: (context) => VocabularioInglesScreen(
                 repository: widget.repository,
                 initialLanguage: widget.currentLanguage,
                 audioService: widget.audioService,

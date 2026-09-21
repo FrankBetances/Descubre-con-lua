@@ -50,10 +50,14 @@ class ContentRepository {
       'assets/content/cuentos/historias_progresivas.json';
   static const String laminas200AssetPath =
       'assets/content/laminas/banco200_laminas.json';
+
+  /// El vocabulario inglés que la app enseña: las 4.000 de uso habitual.
+  ///
+  /// Lo escribe `tools/build_corpus_ingles.py` desde la lista BNC/COCA de
+  /// 7.998, quedándose con las cuatro primeras bandas de frecuencia y sin las
+  /// doce que Frank mandó quitar.
   static const String corpusCefrAssetPath =
-      'assets/content/corpus/bnc_coca_8000_cefr.json';
-  static const String corpusBaseAssetPath =
-      'assets/content/corpus/bnc_coca_8000.json';
+      'assets/content/corpus/ingles_4000_uso_habitual.json';
   static const String calendarioDiasAssetPath =
       'assets/content/calendario/calendario_dias.json';
   static const String englishCorpusAssetPath =
@@ -603,10 +607,15 @@ class ContentRepository {
   Future<List<CorpusPalabra>> loadCorpusPalabras({
     int? banda,
     String? cefr,
+    String? pos,
+    bool soloOnomatopeias = false,
   }) async {
     if (_corpusPalabras.isEmpty) {
-      final paths = [corpusCefrAssetPath, corpusBaseAssetPath];
-      for (final path in paths) {
+      // Una sola ruta, a propósito. Antes había un respaldo a la lista cruda
+      // de 7.998 palabras: si el fichero bueno fallaba, la app enseñaba las
+      // 7.998 sin categoría, sin frase y con las doce que Frank mandó quitar.
+      // Un respaldo que enseña lo que se prohibió no es un respaldo.
+      for (final path in [corpusCefrAssetPath]) {
         try {
           final raw = await _loader.loadRawString(path);
           final dynamic decoded = jsonDecode(raw);
@@ -636,10 +645,19 @@ class ContentRepository {
           .toList();
     }
     if (cefr != null && cefr.trim().isNotEmpty) {
+      // Igualdad, no `contains`. Con `contains`, pedir «B2» devolvía también
+      // las de «B1/B2» y pedir «B1» las de «A2/B1»: dos pastillas distintas de
+      // la pantalla daban listas solapadas, y la cuenta de arriba no cuadraba
+      // con la banda elegida.
       final cleanCefr = cefr.trim().toLowerCase();
-      list = list
-          .where((p) => p.nivelCefr.toLowerCase().contains(cleanCefr))
-          .toList();
+      list = list.where((p) => p.nivelCefr.toLowerCase() == cleanCefr).toList();
+    }
+    if (pos != null && pos.trim().isNotEmpty) {
+      final cleanPos = pos.trim().toUpperCase();
+      list = list.where((p) => p.pos == cleanPos).toList();
+    }
+    if (soloOnomatopeias) {
+      list = list.where((p) => p.onomatopeya).toList();
     }
     return List.unmodifiable(list);
   }

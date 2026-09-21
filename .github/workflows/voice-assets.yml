@@ -97,9 +97,31 @@ jobs:
         if: steps.plan.outputs.do_es == 'yes'
         run: python3 tools/generate_voice_assets.py --lang es
 
-      - name: Synthesise en (LJSpeech · piper)
+      # El inglés, POR TANDAS, empujando cada una.
+      #
+      # Son las 8.000 palabras del corpus BNC/COCA con su frase entera: unas
+      # 16.500 locuciones nuevas. Frank ordenó que suenen todas. A un job de
+      # Actions se le acaban las seis horas antes de que eso termine, y hasta
+      # ahora el commit era un solo paso al final: si el runner se corta, se va
+      # TODO. Ahora cada tanda de 40 minutos se empuja en cuanto acaba, y la
+      # vuelta siguiente sigue por donde iba porque el generador es
+      # incremental. Lo que no quepa en esta corrida lo termina la siguiente:
+      # se relanza a mano desde «Run workflow» con lang=en.
+      - name: Synthesise en (LJSpeech · piper), tanda a tanda
         if: steps.plan.outputs.do_en == 'yes'
-        run: python3 tools/generate_voice_assets.py --lang en
+        timeout-minutes: 320
+        run: |
+          set -euo pipefail
+          for tanda in $(seq 1 7); do
+            echo "── tanda $tanda ──"
+            python3 tools/generate_voice_assets.py --lang en --minutes 40
+            tools/ci_push_voice.sh "${{ github.ref_name }}"
+            faltan=$(python3 tools/voice_missing.py --lang en)
+            echo "Quedan $faltan locucións inglesas sen gravar."
+            if [ "$faltan" = "0" ]; then
+              break
+            fi
+          done
 
       # coqui-tts does not pull torch in (it declares it optional), so the CPU
       # wheels are installed explicitly: no CUDA, far lighter.
@@ -128,30 +150,7 @@ jobs:
 
       - name: Commit whatever was synthesised
         if: always()
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add assets/voice voice-corpus.json voice-assets-manifest.*.json assets/content
-          if git diff --cached --quiet; then
-            echo 'Nothing to commit: every recording was already present.'
-          else
-            git commit -m 'chore(voice): synthesise offline voice assets (Celtia gl / Sharvard es / LJSpeech en)'
-            # Sintetizar el gallego con Celtia son quince o veinte minutos. Si
-            # alguien empuja a la rama mientras tanto, este push se rechaza con
-            # «fetch first» y las grabaciones se van con el runner: pasó el
-            # 13/9/2026 y se perdieron 659 locuciones ya sintetizadas.
-            # El commit solo AÑADE ficheros de audio, así que rebasar encima de
-            # lo que haya llegado no puede chocar con nada.
-            for intento in 1 2 3; do
-              git pull --rebase origin "${{ github.ref_name }}"
-              if git push origin HEAD:"${{ github.ref_name }}"; then
-                echo "Empujado al intento $intento."
-                break
-              fi
-              echo "::warning::Push rechazado en el intento $intento; se reintenta."
-              sleep $((intento * 5))
-            done
-          fi
+        run: tools/ci_push_voice.sh "${{ github.ref_name }}"
 
       - name: Verify every locution now has a recording
         if: always()

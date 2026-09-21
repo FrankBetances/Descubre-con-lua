@@ -39,6 +39,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 import urllib.request
 import wave
 from pathlib import Path
@@ -336,6 +337,16 @@ def main() -> int:
     parser.add_argument("--lang", choices=sorted(VOICES), required=True)
     parser.add_argument("--force", action="store_true",
                         help="re-synthesise locutions that already have a recording")
+    # El presupuesto de tiempo. Nace de las 8.000 palabras del corpus: con sus
+    # frases son unas 16.500 locuciones nuevas de una tacada, y un job de
+    # GitHub Actions se corta a las seis horas. Sin presupuesto, una corrida
+    # larga se queda sin runner a mitad y lo sintetizado se va con él; con
+    # presupuesto, el generador para solo, el workflow empuja lo que hay y la
+    # siguiente vuelta sigue por donde iba, porque esto es incremental.
+    parser.add_argument("--minutes", type=float, default=0,
+                        help="para limpiamente pasados estos minutos (0 = sin límite)")
+    parser.add_argument("--limit", type=int, default=0,
+                        help="sintetiza como mucho estas locuciones (0 = todas)")
     args = parser.parse_args()
 
     if not CORPUS_JSON.exists():
@@ -348,7 +359,13 @@ def main() -> int:
     pending = [e for e in entries
                if args.force or not (VOICE_DIR / f"{e['id']}.m4a").exists()]
 
-    print(f"{args.lang}: {len(entries)} locutions, {len(pending)} to synthesise")
+    total_pendentes = len(pending)
+    if args.limit > 0:
+        pending = pending[:args.limit]
+
+    print(f"{args.lang}: {len(entries)} locutions, {total_pendentes} to synthesise"
+          + (f" ({len(pending)} in this batch)" if len(pending) != total_pendentes
+             else ""))
     if not pending:
         return 0
 
@@ -359,7 +376,13 @@ def main() -> int:
     work.mkdir(parents=True, exist_ok=True)
 
     files = []
+    prazo = time.monotonic() + args.minutes * 60 if args.minutes > 0 else None
     for index, entry in enumerate(pending, start=1):
+        if prazo is not None and time.monotonic() > prazo:
+            print(f"  presupuesto de {args.minutes:g} min agotado: "
+                  f"{len(pending) - index + 1} locuciones quedan para la "
+                  f"siguiente vuelta")
+            break
         raw = work / "raw.wav"
         mastered = work / "mastered.wav"
         target = VOICE_DIR / f"{entry['id']}.m4a"

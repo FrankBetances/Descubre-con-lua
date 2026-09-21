@@ -5,7 +5,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../palabras/views/palabras_8000_screen.dart';
+import '../../palabras/views/vocabulario_ingles_screen.dart';
 import 'collocations_screen.dart';
 import '../../lectura/views/phonix_quest_screen.dart';
 import 'fsrs_trainer_screen.dart';
@@ -42,7 +42,10 @@ class EnglishHubScreen extends StatelessWidget {
         'icon': Icons.bolt,
         'color': AppTheme.warning,
         'bg': AppTheme.warningBg,
-        'builder': (BuildContext ctx) => FsrsTrainerScreen(language: lang),
+        'builder': (BuildContext ctx) => FsrsTrainerScreen(
+              language: lang,
+              audioService: audioService,
+            ),
       },
       {
         'title': lang == AppLanguage.gl
@@ -97,15 +100,15 @@ class EnglishHubScreen extends StatelessWidget {
       },
       {
         'title': lang == AppLanguage.gl
-            ? 'Corpus 8.000 Palabras'
-            : 'Corpus 8.000 Palabras',
+            ? '4.000 palabras de uso habitual'
+            : '4.000 palabras de uso habitual',
         'subtitle': lang == AppLanguage.gl
-            ? 'Explorador BNC/COCA por bandas de frecuencia 1k..8k, con nivel orientativo'
-            : 'Explorador BNC/COCA por bandas de frecuencia 1k..8k, con nivel orientativo',
+            ? 'As máis usadas do inglés, con categoría, frase enteira e son'
+            : 'Las más usadas del inglés, con categoría, frase entera y sonido',
         'icon': Icons.search,
         'color': AppTheme.primaryDark,
         'bg': AppTheme.primaryLight,
-        'builder': (BuildContext ctx) => Palabras8000Screen(
+        'builder': (BuildContext ctx) => VocabularioInglesScreen(
               repository: repository,
               initialLanguage: lang,
               audioService: audioService,

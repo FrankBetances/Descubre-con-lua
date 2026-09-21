@@ -84,10 +84,31 @@ run_gate "every bank card has a drawing" python3 tools/draw_flashcards.py --chec
 # lado de un icono del set propio diciendo lo mismo: dos avisos y dos dibujos,
 # distintos en cada fabricante. Regla 5 del CLAUDE.md.
 run_gate "no system emoji used as iconography" python3 tools/check_no_emoji.py
+# Nace del vocabulario inglés, que llegó del proyecto de origen con la
+# categoría gramatical y la frecuencia INVENTADAS y sin una sola frase. Ahora
+# las 3.995 traen categoría, frase entera y frecuencia medida, y esto comprueba
+# que ninguna se quede sin ellas, que ninguna salga de las bandas 1k-4k y que
+# no vuelva ninguna de las doce que Frank mandó quitar. No reconstruye —eso
+# pide WordNet y una descarga— sino que mira el fichero que viaja en el
+# repositorio.
+run_gate "every corpus word has a part of speech and a whole sentence" \
+  python3 tools/build_corpus_ingles.py --check
+# Nace de las 1.000 rutinas de familia, que eran cinco textos repetidos
+# doscientas veces, idénticos para un bebé de doce meses y para una criatura de
+# seis años, y que empezaban por un corchete de máquina y una firma personal.
+# Esto comprueba que no vuelvan.
+run_gate "family routines sound like a home, not like a leaflet" \
+  python3 tools/humaniza_rutinas_fogar.py --check
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py
 run_gate "every locution has a recording" python3 tools/check_voice_coverage.py
+# Y el contrario: que no queden grabaciones de locuciones que ya no existen.
+# Al recortar el vocabulario inglés a las 4.000 de uso habitual quedaron 1.275
+# ficheros huérfanos, 9 MB de APK que nadie reproduce. El gate de cobertura no
+# los veía: un fichero de más no es una locución de menos.
+run_gate "no recording left over from content that is gone" \
+  python3 tools/prune_voice_assets.py --check
 run_gate "no recording peaks near full scale" python3 tools/check_voice_levels.py
 run_gate "manual PDF and Word match their source" python3 tools/check_manual_build.py
 # --offline: la mitad de red vive en su propio workflow, por calendario. Entre

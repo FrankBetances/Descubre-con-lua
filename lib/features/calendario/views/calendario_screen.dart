@@ -18,6 +18,7 @@ import '../../../data/models/asamblea_primeiro_ciclo_model.dart';
 import '../../../data/models/progresion_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../juega/widgets/barra_ingles_widget.dart';
+import '../widgets/dia_no_fogar.dart';
 import '../../academy/views/guia_atencion_screen.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../juega/views/asamblea_guiada_screen.dart';
@@ -88,6 +89,12 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   int _semana = ProgresionDoMes.hoxe().semana;
   int _dia = ProgresionDoMes.hoxe().dia;
 
+  /// El curso de la crianza, para el lado de las familias. El aula elige
+  /// «O MEU GRUPO» y la familia elige lo mismo: la rutina de casa de un bebé
+  /// de dieciocho meses no es la de uno de cinco años, y el calendario de
+  /// familias no preguntaba.
+  String _cursoFogar = _cursosDaCrianza.first.valor;
+
   /// El mes se cambia deslizando la tarjeta de lado, no bajando por la
   /// pantalla. Antes el mes se elegía de tres maneras apiladas en una sola
   /// página —una tira de tarjetas de 160 px, las pastillas y la ficha de
@@ -119,6 +126,34 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         'nota; la familia hace el juego de tres minutos en casa. Cada lado '
         'marca lo suyo.',
   );
+
+  static const List<OpcionDeIdade<String>> _cursosDaCrianza = [
+    OpcionDeIdade(
+      valor: 'curso_0_2',
+      etiqueta: LocalizedString(gl: '0-2 anos', es: '0-2 años'),
+      matiz: LocalizedString(gl: 'Colo', es: 'Regazo'),
+    ),
+    OpcionDeIdade(
+      valor: 'curso_2_3',
+      etiqueta: LocalizedString(gl: '2-3 anos', es: '2-3 años'),
+      matiz: LocalizedString(gl: 'Xogo', es: 'Juego'),
+    ),
+    OpcionDeIdade(
+      valor: 'curso_3_4',
+      etiqueta: LocalizedString(gl: '3-4 anos', es: '3-4 años'),
+      matiz: LocalizedString(gl: 'Frases', es: 'Frases'),
+    ),
+    OpcionDeIdade(
+      valor: 'curso_4_5',
+      etiqueta: LocalizedString(gl: '4-5 anos', es: '4-5 años'),
+      matiz: LocalizedString(gl: 'Relato', es: 'Relato'),
+    ),
+    OpcionDeIdade(
+      valor: 'curso_5_6',
+      etiqueta: LocalizedString(gl: '5-6 anos', es: '5-6 años'),
+      matiz: LocalizedString(gl: 'Ler', es: 'Leer'),
+    ),
+  ];
 
   static const _rolDocente =
       LocalizedString(gl: 'Aula (Docentes)', es: 'Aula (Docentes)');
@@ -402,6 +437,23 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                             const SizedBox(height: AppTheme.spaceMd),
                             _buildRoleSwitcher(theme),
                             const SizedBox(height: AppTheme.spaceMd),
+                            // El espejo del aula: allí se elige el grupo antes
+                            // que el mes, aquí también.
+                            if (!_esDocente && widget.repository != null) ...[
+                              RotuloSeccion(_language == AppLanguage.gl
+                                  ? 'A MIÑA CRIANZA'
+                                  : 'MI CRIATURA'),
+                              const SizedBox(height: AppTheme.spaceSm),
+                              SelectorDeIdade<String>(
+                                prefixoClave: 'curso_fogar',
+                                seleccionado: _cursoFogar,
+                                language: _language,
+                                opcions: _cursosDaCrianza,
+                                onCambiar: (c) =>
+                                    setState(() => _cursoFogar = c),
+                              ),
+                              const SizedBox(height: AppTheme.spaceMd),
+                            ],
                             _buildMonthSelector(theme),
                           ],
                         ),
@@ -919,9 +971,23 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                     '${_language == AppLanguage.gl ? "Momento suxerido" : "Momento sugerido"}: ${mes.rutinaRecomendadaHogar.resolve(_language)}',
                 badge: '${mes.minutosSugeridos} min',
                 icon: Icons.volunteer_activism_rounded,
-                color: const Color(0xFFD97706),
+                color: AppTheme.warning,
                 theme: theme,
               ),
+              // Y aquí baja el calendario de las familias hasta el DÍA, que es
+              // donde llegaba el del aula y donde se quedaba el de casa: el mes
+              // entero no dice qué hacer el martes de la semana 3.
+              if (widget.repository != null) ...[
+                const SizedBox(height: 12),
+                DiaNoFogar(
+                  repository: widget.repository!,
+                  cursoId: _cursoFogar,
+                  // El calendario numera los meses por el orden del CURSO:
+                  // setembro es 1. Es el mismo número que usa el banco de días.
+                  mes: _mesSeleccionadoIndex + 1,
+                  language: _language,
+                ),
+              ],
               const SizedBox(height: 12),
               InkWell(
                 key: const Key('boton_guia_atencion'),

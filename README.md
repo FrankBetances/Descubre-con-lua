@@ -123,10 +123,12 @@ manda el script:
 | `check_bundled_assets.py` | Que todo activo que el código pide exista y viaje dentro del paquete |
 | `check_laminas.py` | Que cada forma de cada lámina se pinte de verdad, y no salga una lámina en blanco |
 | `check_no_emoji.py` | Que no se use emoji del sistema como iconografía (regla 5) |
+| `build_corpus_ingles.py --check` | Que cada palabra del vocabulario inglés traiga categoría gramatical y una frase entera, y que no entre ninguna de las excluidas |
 | `export_voice_corpus.py --check` | Que el corpus de voz siga sincronizado con los textos |
 | `check_pulse_bpm.py` | Que el tempo mostrado sea el que suena, **medido del audio** |
 | `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |
 | `check_voice_coverage.py` | Que toda locución reproducible tenga grabación en el paquete |
+| `prune_voice_assets.py --check` | Que no queden grabaciones de contenido que ya no existe |
 | `check_voice_levels.py` | Que ninguna grabación del paquete pique cerca de saturación, **medido del fichero** |
 | `check_manual_build.py` | Que el PDF y el Word del manual salgan del HTML actual y no de uno anterior |
 | `check_legal_urls.py --offline` | Que las páginas legales de `docs/` existan, sean lo que dicen ser y lleven el correo fijo |
@@ -224,8 +226,10 @@ apagado ni con aviso—: un altavoz que no suena promete algo que no cumple.
 - inglés → **LJSpeech** (rhasspy/piper-voices)
 
 **El inglés es un caso aparte.** No hay pantallas en inglés: lo que se graba es
-el léxico, las órdenes TPR y la frase de cada mes del calendario, que salen de
-`assets/content/calendario/meses.json`. La persona adulta pulsa la pastilla y
+el léxico, las órdenes TPR, la frase de cada mes del calendario y **las 4.000
+palabras de uso habitual del inglés con su frase completa**. Cada una suena dos
+veces: la palabra sola, despacio, que es la que se imita, y su frase entera, a
+ritmo de tutor, que es la que se entiende. La persona adulta pulsa la pastilla y
 oye cómo se dice antes de decírselo a la criatura. Una pastilla sin grabación se
 pinta igual, con la palabra legible y sin altavoz.
 

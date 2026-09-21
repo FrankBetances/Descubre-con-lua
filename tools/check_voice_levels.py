@@ -18,10 +18,12 @@ repositorio lleva pagando en otras formas.
 """
 from __future__ import annotations
 
+import os
 import re
 import shutil
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -75,15 +77,22 @@ def main() -> int:
         print("OK: no recordings to measure yet")
         return 0
 
+    # En paralelo y en silencio. Con las 8.000 palabras del corpus y sus
+    # frases esto mide casi veinte mil ficheros: uno detrás de otro son más de
+    # veinte minutos de gate, y veinte mil líneas de «OK» que nadie lee. Se
+    # miden a la vez y solo se escribe lo que se sale de sitio, que es lo que
+    # hay que ver.
+    trabajadores = min(16, (os.cpu_count() or 2) * 4)
+    with ThreadPoolExecutor(max_workers=trabajadores) as pool:
+        picos = list(pool.map(peak_dbfs, recordings))
+
     failures: list[str] = []
-    for path in recordings:
-        peak = peak_dbfs(path)
+    for path, peak in zip(recordings, picos):
         if peak is None:
             failures.append(f"{path.name}: could not be measured")
             continue
-        flag = "  <-- too hot" if peak > CEILING_DBFS else ""
-        print(f"  {path.name:<36} {peak:>6.1f} dBFS{flag}")
         if peak > CEILING_DBFS:
+            print(f"  {path.name:<36} {peak:>6.1f} dBFS  <-- too hot")
             failures.append(f"{path.name}: peaks at {peak:.1f} dBFS")
 
     if failures:
