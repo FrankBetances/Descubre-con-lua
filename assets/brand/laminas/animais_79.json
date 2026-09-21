@@ -1,40 +1,110 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Vaca pastando.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Vaca pastando",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#1e293b12"
+      "t": "elipse",
+      "cx": 24,
+      "cy": 40,
+      "rx": 10,
+      "ry": 7,
+      "f": "#fcedc7",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 76,
+      "cy": 40,
+      "rx": 10,
+      "ry": 7,
+      "f": "#fcedc7",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M30 30 C26 20 34 16 38 24",
+      "s": "#fcedc7",
+      "sw": 6
+    },
+    {
+      "t": "ruta",
+      "d": "M70 30 C74 20 66 16 62 24",
+      "s": "#fcedc7",
+      "sw": 6
     },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#1e293b1a"
+      "cy": 52,
+      "rx": 32,
+      "ry": 30,
+      "f": "#ffffff",
+      "s": "#4a2c11",
+      "sw": 4
     },
     {
       "t": "ruta",
-      "d": "M 34.88 24 L 50 72 L 65.12 24",
-      "s": "#1e293b",
-      "sw": 7
+      "d": "M28 40 C20 48 24 60 34 56 C40 52 36 40 28 40 Z",
+      "f": "#181a20"
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#1e293b"
+      "t": "ruta",
+      "d": "M70 34 C80 34 82 46 74 48 C68 48 64 36 70 34 Z",
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 40,
+      "cy": 48,
+      "rx": 4.5,
+      "ry": 5,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 60,
+      "cy": 48,
+      "rx": 4.5,
+      "ry": 5,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 70,
+      "rx": 17,
+      "ry": 12,
+      "f": "#f472b6",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 44,
+      "cy": 68,
+      "rx": 3.5,
+      "ry": 4,
+      "f": "#4a2c11"
+    },
+    {
+      "t": "elipse",
+      "cx": 56,
+      "cy": 68,
+      "rx": 3.5,
+      "ry": 4,
+      "f": "#4a2c11"
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 36,
+      "rx": 6,
+      "ry": 8,
+      "f": "#ffffff88"
     }
   ]
 }

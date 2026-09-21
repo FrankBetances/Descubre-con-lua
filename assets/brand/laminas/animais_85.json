@@ -1,40 +1,100 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Coelliño saltarín.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Coelliño saltarín",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#cbd5e112"
+      "t": "elipse",
+      "cx": 34,
+      "cy": 26,
+      "rx": 9,
+      "ry": 22,
+      "f": "#ffffff",
+      "s": "#475569",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 66,
+      "cy": 26,
+      "rx": 9,
+      "ry": 22,
+      "f": "#ffffff",
+      "s": "#475569",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 34,
+      "cy": 26,
+      "rx": 4,
+      "ry": 15,
+      "f": "#f472b6"
+    },
+    {
+      "t": "elipse",
+      "cx": 66,
+      "cy": 26,
+      "rx": 4,
+      "ry": 15,
+      "f": "#f472b6"
     },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#cbd5e11a"
+      "cy": 62,
+      "rx": 28,
+      "ry": 25,
+      "f": "#ffffff",
+      "s": "#475569",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 41,
+      "cy": 58,
+      "rx": 4.5,
+      "ry": 5,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 59,
+      "cy": 58,
+      "rx": 4.5,
+      "ry": 5,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 70,
+      "rx": 6,
+      "ry": 4,
+      "f": "#ec4899",
+      "s": "#475569",
+      "sw": 2
     },
     {
       "t": "ruta",
-      "d": "M 66.2 33.6 Q 50 19.2 37.04 38.4 Q 30.56 57.6 39.92 66.24 Q 53.6 76.8 66.2 62.4",
-      "s": "#cbd5e1",
-      "sw": 7
+      "d": "M50 74 L50 78",
+      "s": "#475569",
+      "sw": 2
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#cbd5e1"
+      "t": "ruta",
+      "d": "M44 80 Q50 76 56 80",
+      "s": "#475569",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 38,
+      "cy": 50,
+      "rx": 6,
+      "ry": 7,
+      "f": "#ffffff88"
     }
   ]
 }

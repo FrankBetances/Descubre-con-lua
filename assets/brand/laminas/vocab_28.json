@@ -1,40 +1,49 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Mesa de madeira.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Mesa de madeira",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
       "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#78350f12"
-    },
-    {
-      "t": "elipse",
-      "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#78350f1a"
-    },
-    {
-      "t": "ruta",
-      "d": "M 34.16 72 L 34.16 24 L 50 52.8 L 65.84 24 L 65.84 72",
-      "s": "#78350f",
-      "sw": 7
+      "x": 12,
+      "y": 38,
+      "w": 76,
+      "h": 12,
+      "r": 4,
+      "f": "#c89666",
+      "s": "#5a3a12",
+      "sw": 4
     },
     {
       "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#78350f"
+      "x": 20,
+      "y": 50,
+      "w": 10,
+      "h": 36,
+      "r": 3,
+      "f": "#c89666",
+      "s": "#5a3a12",
+      "sw": 4
+    },
+    {
+      "t": "rrect",
+      "x": 70,
+      "y": 50,
+      "w": 10,
+      "h": 36,
+      "r": 3,
+      "f": "#c89666",
+      "s": "#5a3a12",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 24,
+      "cy": 42,
+      "rx": 6,
+      "ry": 3,
+      "f": "#ffffff88"
     }
   ]
 }

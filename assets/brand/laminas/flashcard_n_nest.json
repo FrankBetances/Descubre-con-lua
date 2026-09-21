@@ -1,40 +1,65 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: N · Niño de paxaro.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "N · Niño de paxaro",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#fef3c7"
-    },
-    {
-      "t": "elipse",
-      "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#78350f1a"
+      "t": "ruta",
+      "d": "M14 56 C14 78 34 88 50 88 C66 88 86 78 86 56 Z",
+      "f": "#5a3a12",
+      "s": "#4a2c11",
+      "sw": 4
     },
     {
       "t": "ruta",
-      "d": "M 36.32 72 L 36.32 24 L 63.68 72 L 63.68 24",
-      "s": "#78350f",
-      "sw": 7
+      "d": "M14 56 C30 48 70 48 86 56",
+      "s": "#c89666",
+      "sw": 5
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#78350f"
+      "t": "ruta",
+      "d": "M20 64 C36 58 64 58 80 64",
+      "s": "#c89666",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 38,
+      "cy": 54,
+      "rx": 11,
+      "ry": 9,
+      "f": "#a5f3fc",
+      "s": "#1e3a8a",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 58,
+      "cy": 52,
+      "rx": 11,
+      "ry": 9,
+      "f": "#fcedc7",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 48,
+      "cy": 46,
+      "rx": 11,
+      "ry": 9,
+      "f": "#f472b6",
+      "s": "#911212",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 26,
+      "cy": 60,
+      "rx": 5,
+      "ry": 4,
+      "f": "#ffffff88"
     }
   ]
 }

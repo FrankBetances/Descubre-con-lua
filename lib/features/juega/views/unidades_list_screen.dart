@@ -14,6 +14,7 @@ import '../widgets/aula_ciclo_panel.dart';
 import '../widgets/fichas_de_unidades.dart';
 import 'asamblea_guiada_screen.dart';
 import '../widgets/aula_primeiro_ciclo_panel.dart';
+import '../widgets/circulo_do_dia.dart';
 import '../widgets/aula_segundo_ciclo_panel.dart';
 import 'asamblea_player_screen.dart';
 import '../../../core/storage/calendario_store.dart';
@@ -310,6 +311,22 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
 
   /// Las unidades temáticas, en fichas que se pasan de lado. Diez unidades de
   /// contenido que se quedaron sin ninguna puerta al rehacer el aula.
+  /// El cuento con su lámina y la dinámica que le tocan al día elegido.
+  ///
+  /// Vive aquí y no dentro del panel porque es esta pantalla la que tiene el
+  /// repositorio y el navegador; el panel solo sabe qué hay seleccionado.
+  Widget _circuloDoDia(String cursoId, int mes, int semana, int dia) {
+    return CirculoDoDia(
+      repository: widget.repository,
+      cursoId: cursoId,
+      mes: mes,
+      semana: semana,
+      dia: dia,
+      language: _language,
+      audioService: widget.audioService,
+    );
+  }
+
   Widget _fichasDeUnidades() {
     return FichasDeUnidades(
       unidades: widget.repository.getAllUnidades(),
@@ -339,6 +356,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       calendario: _calendarioDoAula(),
       pe: _fichasDeUnidades(),
       progresionDe: widget.repository.getProgresionSync,
+      circuloDoDia: _circuloDoDia,
       onComezar: (tramo, mes, dia) {
         final asamblea =
             widget.repository.getAsambleaPrimeiroCicloSync(mes, tramo);
@@ -380,6 +398,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       cabeceira: _tiraDeLua(),
       calendario: _calendarioDoAula(),
       progresionDe: widget.repository.getProgresionSync,
+      circuloDoDia: _circuloDoDia,
       onComezar: (nivel, mes, dia) {
         final asamblea =
             widget.repository.getAsambleaByMesYNivelSync(mes, nivel);

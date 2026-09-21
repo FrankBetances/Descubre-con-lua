@@ -1,40 +1,55 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Campá da escola.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Campá da escola",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
+      "t": "ruta",
+      "d": "M50 16 C70 16 78 42 78 70 L22 70 C22 42 30 16 50 16 Z",
+      "f": "#ffdc00",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
       "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#eab30812"
+      "x": 16,
+      "y": 68,
+      "w": 68,
+      "h": 10,
+      "r": 5,
+      "f": "#ff851b",
+      "s": "#c2410c",
+      "sw": 4
     },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#eab3081a"
-    },
-    {
-      "t": "ruta",
-      "d": "M 66.2 33.6 Q 50 19.2 37.04 38.4 Q 30.56 57.6 39.92 66.24 Q 53.6 76.8 66.2 62.4",
-      "s": "#eab308",
-      "sw": 7
+      "cy": 84,
+      "rx": 8,
+      "ry": 8,
+      "f": "#c2410c",
+      "s": "#5a3a12",
+      "sw": 3
     },
     {
       "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#eab308"
+      "x": 46,
+      "y": 8,
+      "w": 8,
+      "h": 10,
+      "r": 4,
+      "f": "#c2410c",
+      "s": "#5a3a12",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 34,
+      "rx": 6,
+      "ry": 10,
+      "f": "#ffffff88"
     }
   ]
 }

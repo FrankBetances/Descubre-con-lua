@@ -1,40 +1,82 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: León que ruxe.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "León que ruxe",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#d9770612"
+      "t": "elipse",
+      "cx": 50,
+      "cy": 52,
+      "rx": 40,
+      "ry": 38,
+      "f": "#c2410c",
+      "s": "#c2410c",
+      "sw": 4
     },
     {
       "t": "elipse",
       "cx": 50,
+      "cy": 54,
+      "rx": 28,
+      "ry": 26,
+      "f": "#f59e0b",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 41,
       "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#d977061a"
+      "rx": 4.5,
+      "ry": 5,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 59,
+      "cy": 48,
+      "rx": 4.5,
+      "ry": 5,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 62,
+      "rx": 10,
+      "ry": 7,
+      "f": "#fcedc7",
+      "s": "#c2410c",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 60,
+      "rx": 4,
+      "ry": 3,
+      "f": "#181a20"
     },
     {
       "t": "ruta",
-      "d": "M 37.76 24 L 37.76 72 L 63.68 72",
-      "s": "#d97706",
-      "sw": 7
+      "d": "M50 64 Q44 70 38 66",
+      "s": "#c2410c",
+      "sw": 2
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#d97706"
+      "t": "ruta",
+      "d": "M50 64 Q56 70 62 66",
+      "s": "#c2410c",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 34,
+      "cy": 34,
+      "rx": 6,
+      "ry": 7,
+      "f": "#ffffff88"
     }
   ]
 }

@@ -1,46 +1,79 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Danza en corro con ritmo.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Danza en corro con ritmo",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
-    {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#ec489912"
-    },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#ec48991a"
+      "cy": 56,
+      "rx": 34,
+      "ry": 30,
+      "s": "#00c4be",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 50.0,
+      "cy": 26.0,
+      "rx": 11,
+      "ry": 11,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 82.3,
+      "cy": 46.7,
+      "rx": 11,
+      "ry": 11,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 70.0,
+      "cy": 80.3,
+      "rx": 11,
+      "ry": 11,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 30.0,
+      "cy": 80.3,
+      "rx": 11,
+      "ry": 11,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 17.7,
+      "cy": 46.7,
+      "rx": 11,
+      "ry": 11,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
     },
     {
       "t": "ruta",
-      "d": "M 34.88 24 L 34.88 72",
-      "s": "#ec4899",
-      "sw": 7
+      "d": "M50 12 C58 4 68 10 62 18",
+      "s": "#2f6fd0",
+      "sw": 3
     },
     {
       "t": "ruta",
-      "d": "M 34.88 24 L 49.28 24 Q 68 48 49.28 72 L 34.88 72",
-      "s": "#ec4899",
-      "sw": 7
-    },
-    {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#ec4899"
+      "d": "M18 30 L12 24",
+      "s": "#2f6fd0",
+      "sw": 3
     }
   ]
 }

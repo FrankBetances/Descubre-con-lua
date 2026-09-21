@@ -1,46 +1,46 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Tesoiras de punta redonda.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Tesoiras de punta redonda",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#8b5cf612"
+      "t": "ruta",
+      "d": "M30 24 L62 62",
+      "s": "#475569",
+      "sw": 7
+    },
+    {
+      "t": "ruta",
+      "d": "M70 24 L38 62",
+      "s": "#94a3b8",
+      "sw": 7
+    },
+    {
+      "t": "elipse",
+      "cx": 32,
+      "cy": 74,
+      "rx": 12,
+      "ry": 12,
+      "s": "#e62828",
+      "sw": 6
+    },
+    {
+      "t": "elipse",
+      "cx": 68,
+      "cy": 74,
+      "rx": 12,
+      "ry": 12,
+      "s": "#e62828",
+      "sw": 6
     },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#8b5cf61a"
-    },
-    {
-      "t": "ruta",
-      "d": "M 50 24 L 50 72",
-      "s": "#8b5cf6",
-      "sw": 7
-    },
-    {
-      "t": "ruta",
-      "d": "M 34.88 24 L 65.12 24",
-      "s": "#8b5cf6",
-      "sw": 7
-    },
-    {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#8b5cf6"
+      "cy": 56,
+      "rx": 4,
+      "ry": 4,
+      "f": "#475569"
     }
   ]
 }

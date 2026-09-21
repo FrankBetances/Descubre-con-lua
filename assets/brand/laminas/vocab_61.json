@@ -1,40 +1,58 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Cueiro limpo.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Cueiro limpo",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#06b6d412"
+      "t": "ruta",
+      "d": "M12 26 L88 26 L50 88 Z",
+      "f": "#ffffff",
+      "s": "#475569",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M12 26 L88 26 L82 36 L18 36 Z",
+      "f": "#00c4be",
+      "s": "#1e3a8a",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M34 50 Q50 58 66 50",
+      "s": "#00c4be",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M42 62 Q50 68 58 62",
+      "s": "#00c4be",
+      "sw": 3
     },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#06b6d41a"
+      "cy": 30,
+      "rx": 5,
+      "ry": 5,
+      "f": "#94a3b8",
+      "s": "#475569",
+      "sw": 2
     },
     {
       "t": "ruta",
-      "d": "M 66.2 33.6 Q 50 19.2 37.04 38.4 Q 30.56 57.6 39.92 66.24 Q 53.6 76.8 66.2 62.4",
-      "s": "#06b6d4",
-      "sw": 7
+      "d": "M50 30 L50 44",
+      "s": "#475569",
+      "sw": 3
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#06b6d4"
+      "t": "elipse",
+      "cx": 30,
+      "cy": 32,
+      "rx": 5,
+      "ry": 3,
+      "f": "#ffffff88"
     }
   ]
 }

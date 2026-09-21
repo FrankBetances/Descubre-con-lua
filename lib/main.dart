@@ -385,8 +385,8 @@ class _HomeScreenState extends State<HomeScreen> {
   );
 
   static const _lecturaSubtitle = LocalizedString(
-    gl: 'Mesa manipulativa Alphabot e misións Phonics Quest para a alfabetización temperá con letras reais.',
-    es: 'Mesa manipulativa Alphabot y misiones Phonics Quest para la alfabetización temprana con letras reales.',
+    gl: 'Mesa manipulativa Alphabot con letras reais de madeira e a biblioteca de contos para ler xuntos.',
+    es: 'Mesa manipulativa Alphabot con letras reales de madera y la biblioteca de cuentos para leer juntos.',
   );
 
   static const _planificadorTitle = LocalizedString(
@@ -405,8 +405,8 @@ class _HomeScreenState extends State<HomeScreen> {
   );
 
   static const _englishSubtitle = LocalizedString(
-    gl: 'Repetición espazada do vocabulario, colocacións gramaticais e comprensión auditiva guiada polo adulto.',
-    es: 'Repetición espaciada del vocabulario, colocaciones gramaticales y comprensión auditiva guiada por el adulto.',
+    gl: 'Repetición espazada, colocacións, comprensión auditiva e os 44 fonemas do inglés, guiado polo adulto.',
+    es: 'Repetición espaciada, colocaciones, comprensión auditiva y los 44 fonemas del inglés, guiado por el adulto.',
   );
 
   static const _estrategiasTitle = LocalizedString(

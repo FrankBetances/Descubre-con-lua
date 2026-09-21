@@ -1,40 +1,44 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Lazo de cores.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Lazo de cores",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#f43f5e12"
+      "t": "ruta",
+      "d": "M50 50 C30 28 10 34 14 52 C18 70 38 66 50 50 Z",
+      "f": "#ec4899",
+      "s": "#911212",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M50 50 C70 28 90 34 86 52 C82 70 62 66 50 50 Z",
+      "f": "#ec4899",
+      "s": "#911212",
+      "sw": 4
     },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#f43f5e1a"
+      "cy": 50,
+      "rx": 10,
+      "ry": 10,
+      "f": "#e62828",
+      "s": "#911212",
+      "sw": 3
     },
     {
       "t": "ruta",
-      "d": "M 37.76 24 L 37.76 72 L 63.68 72",
-      "s": "#f43f5e",
+      "d": "M44 58 L34 86",
+      "s": "#ec4899",
       "sw": 7
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#f43f5e"
+      "t": "ruta",
+      "d": "M56 58 L66 86",
+      "s": "#ec4899",
+      "sw": 7
     }
   ]
 }

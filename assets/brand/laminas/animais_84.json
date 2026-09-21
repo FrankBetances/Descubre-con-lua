@@ -1,40 +1,70 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Parrulo nadador.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Parrulo nadador",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
-    {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#05966912"
-    },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#0596691a"
+      "cy": 66,
+      "rx": 30,
+      "ry": 22,
+      "f": "#ffdc00",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 36,
+      "rx": 20,
+      "ry": 19,
+      "f": "#ffdc00",
+      "s": "#c2410c",
+      "sw": 4
     },
     {
       "t": "ruta",
-      "d": "M 36.32 72 L 36.32 24 L 52.88 24 Q 67.28 37.44 52.88 50.4 L 36.32 50.4",
-      "s": "#059669",
-      "sw": 7
+      "d": "M18 38 L4 42 L18 48 Z",
+      "f": "#ff851b",
+      "s": "#c2410c",
+      "sw": 2
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#059669"
+      "t": "elipse",
+      "cx": 32,
+      "cy": 32,
+      "rx": 4,
+      "ry": 4.5,
+      "f": "#181a20"
+    },
+    {
+      "t": "ruta",
+      "d": "M62 58 C78 54 84 70 66 76 Z",
+      "f": "#fcedc7",
+      "s": "#c2410c",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M40 86 L34 92",
+      "s": "#ff851b",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M58 86 L64 92",
+      "s": "#ff851b",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 30,
+      "cy": 28,
+      "rx": 5,
+      "ry": 6,
+      "f": "#ffffff88"
     }
   ]
 }

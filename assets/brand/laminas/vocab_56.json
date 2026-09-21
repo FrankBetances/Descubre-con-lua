@@ -1,40 +1,59 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Caixa de tesouros.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Caixa de tesouros",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
       "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#92400e12"
+      "x": 18,
+      "y": 44,
+      "w": 64,
+      "h": 42,
+      "r": 4,
+      "f": "#c89666",
+      "s": "#5a3a12",
+      "sw": 4
+    },
+    {
+      "t": "rrect",
+      "x": 14,
+      "y": 34,
+      "w": 72,
+      "h": 14,
+      "r": 4,
+      "f": "#c2410c",
+      "s": "#5a3a12",
+      "sw": 4
+    },
+    {
+      "t": "rrect",
+      "x": 44,
+      "y": 34,
+      "w": 12,
+      "h": 52,
+      "r": 2,
+      "f": "#ffdc00",
+      "s": "#c2410c",
+      "sw": 3
     },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#92400e1a"
+      "cy": 26,
+      "rx": 9,
+      "ry": 7,
+      "f": "#ffdc00",
+      "s": "#c2410c",
+      "sw": 3
     },
     {
-      "t": "ruta",
-      "d": "M 66.2 33.6 Q 50 19.2 37.04 38.4 Q 30.56 57.6 39.92 66.24 Q 53.6 76.8 66.2 62.4",
-      "s": "#92400e",
-      "sw": 7
-    },
-    {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#92400e"
+      "t": "elipse",
+      "cx": 24,
+      "cy": 52,
+      "rx": 5,
+      "ry": 8,
+      "f": "#ffffff88"
     }
   ]
 }
