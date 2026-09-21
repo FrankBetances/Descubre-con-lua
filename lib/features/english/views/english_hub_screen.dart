@@ -42,7 +42,10 @@ class EnglishHubScreen extends StatelessWidget {
         'icon': Icons.bolt,
         'color': AppTheme.warning,
         'bg': AppTheme.warningBg,
-        'builder': (BuildContext ctx) => FsrsTrainerScreen(language: lang),
+        'builder': (BuildContext ctx) => FsrsTrainerScreen(
+              language: lang,
+              audioService: audioService,
+            ),
       },
       {
         'title': lang == AppLanguage.gl

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
@@ -199,13 +201,31 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                                   ],
                                 ),
                                 const SizedBox(height: 4),
-                                Text(
-                                  'Exemplo: ${ph.exampleWord.en} (${lang == AppLanguage.gl ? ph.exampleWord.gl : ph.exampleWord.es})',
-                                  style: const TextStyle(
-                                    fontSize: 13,
-                                    color: AppTheme.primaryInk,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                                Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        '${lang == AppLanguage.gl ? "Exemplo" : "Ejemplo"}: '
+                                        '${ph.exampleWord.en} '
+                                        '(${lang == AppLanguage.gl ? ph.exampleWord.gl : ph.exampleWord.es})',
+                                        style: const TextStyle(
+                                          fontSize: 13,
+                                          color: AppTheme.primaryInk,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                    // Una guía de articulación sin la palabra
+                                    // dicha obliga a leer «abre a boca ampla» y
+                                    // adivinar el resultado.
+                                    BotonEscuchar(
+                                      audioService: widget.audioService,
+                                      texto: ph.exampleWord.en,
+                                      language: AppLanguage.en,
+                                      style: estiloIngles(ph.exampleWord.en),
+                                      compacto: true,
+                                    ),
+                                  ],
                                 ),
                                 const SizedBox(height: 4),
                                 Text(

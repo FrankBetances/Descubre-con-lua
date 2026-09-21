@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/brand/lamina_vector.dart';
+import '../../../core/audio/voice_id.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
@@ -103,13 +105,28 @@ class LaminaDetailScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 4),
-                      Text(
-                        'English: ${lamina.en}',
-                        style: const TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w600,
-                          color: AppTheme.primaryInk,
-                        ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Flexible(
+                            child: Text(
+                              'English: ${lamina.en}',
+                              style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: AppTheme.primaryInk,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 6),
+                          BotonEscuchar(
+                            audioService: audioService,
+                            texto: lamina.en,
+                            language: AppLanguage.en,
+                            style: estiloIngles(lamina.en),
+                            compacto: true,
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -269,13 +286,26 @@ class LaminaDetailScreen extends StatelessWidget {
                           ],
                         ),
                         const SizedBox(height: 8),
-                        Text(
-                          lamina.tprAccion!.en,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black87,
-                          ),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                lamina.tprAccion!.en,
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppTheme.textPrimary,
+                                ),
+                              ),
+                            ),
+                            BotonEscuchar(
+                              audioService: audioService,
+                              texto: lamina.tprAccion!.en,
+                              language: AppLanguage.en,
+                              style: estiloIngles(lamina.tprAccion!.en),
+                              compacto: true,
+                            ),
+                          ],
                         ),
                         const SizedBox(height: 4),
                         Text(

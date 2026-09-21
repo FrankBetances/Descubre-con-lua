@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-09-16T10:56:19Z",
- "entries": 2419,
+ "generatedAt": "2026-09-21T05:50:33Z",
+ "entries": 3159,
  "byStyle": {
-  "slow": 188,
-  "tutor": 2231
+  "slow": 445,
+  "tutor": 2714
  },
  "byLang": {
-  "en": 281,
+  "en": 1021,
   "es": 1069,
   "gl": 1069
  },
@@ -20,12 +20,28 @@
    "source": "juega.animais.01/ingles/conto"
   },
   {
+   "id": "en_slow_02a9a7a5_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Puppy",
+   "speech": "Puppy",
+   "source": "lamina/animais_67/en"
+  },
+  {
    "id": "en_slow_02b8b9cf_5",
    "lang": "en",
    "style": "slow",
    "text": "Brown",
    "speech": "Brown",
    "source": "juega.follas.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_02fa980b_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Crib",
+   "speech": "Crib",
+   "source": "lamina/vocab_60/en"
   },
   {
    "id": "en_slow_0326c1b4_7",
@@ -36,6 +52,30 @@
    "source": "juega.auga.01/vocabulario/espuma/ingles"
   },
   {
+   "id": "en_slow_03b330eb_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Sunlight",
+   "speech": "Sunlight",
+   "source": "lamina/vigo_nat_104/en"
+  },
+  {
+   "id": "en_slow_03d5b964_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "butterfly",
+   "speech": "butterfly",
+   "source": "corpus/3125"
+  },
+  {
+   "id": "en_slow_047458e1_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "car",
+   "speech": "car",
+   "source": "corpus/135"
+  },
+  {
    "id": "en_slow_04a11b58_4",
    "lang": "en",
    "style": "slow",
@@ -44,12 +84,100 @@
    "source": "juega.inverno.01/ingles/conto"
   },
   {
+   "id": "en_slow_04ec0b2a_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Chair",
+   "speech": "Chair",
+   "source": "lamina/vocab_29/en"
+  },
+  {
+   "id": "en_slow_05bf6449_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "yellow",
+   "speech": "yellow",
+   "source": "corpus/992"
+  },
+  {
+   "id": "en_slow_06745c07_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "cat",
+   "speech": "cat",
+   "source": "english/fonema/ph_c_k/exemplo"
+  },
+  {
+   "id": "en_slow_07cc25f4_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "sheep",
+   "speech": "sheep",
+   "source": "corpus/1812"
+  },
+  {
+   "id": "en_slow_08b4ad08_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "hen",
+   "speech": "hen",
+   "source": "corpus/4401"
+  },
+  {
    "id": "en_slow_09d001f3_4",
    "lang": "en",
    "style": "slow",
    "text": "Rain",
    "speech": "Rain",
    "source": "juega.primavera.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_09f0bcf6_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "scissors",
+   "speech": "scissors",
+   "source": "corpus/5808"
+  },
+  {
+   "id": "en_slow_0a6a3b02_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "soil",
+   "speech": "soil",
+   "source": "corpus/1843"
+  },
+  {
+   "id": "en_slow_0a7ab2dc_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "mussel",
+   "speech": "mussel",
+   "source": "corpus/7565"
+  },
+  {
+   "id": "en_slow_0acedc2c_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Winter",
+   "speech": "Winter",
+   "source": "lamina/vigo_nat_110/en"
+  },
+  {
+   "id": "en_slow_0bf63733_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Autumn",
+   "speech": "Autumn",
+   "source": "lamina/vigo_nat_109/en"
+  },
+  {
+   "id": "en_slow_0cfb455b_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "house",
+   "speech": "house",
+   "source": "corpus/408"
   },
   {
    "id": "en_slow_0d837542_3",
@@ -68,6 +196,70 @@
    "source": "juega.animais.01/ingles/pulso"
   },
   {
+   "id": "en_slow_0e4af7dd_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "pebble",
+   "speech": "pebble",
+   "source": "corpus/5674"
+  },
+  {
+   "id": "en_slow_0f93019f_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "dolphin",
+   "speech": "dolphin",
+   "source": "corpus/3307"
+  },
+  {
+   "id": "en_slow_10bc2abf_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "apple",
+   "speech": "apple",
+   "source": "english/fonema/ph_short_a/exemplo"
+  },
+  {
+   "id": "en_slow_11751705_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Rabbit",
+   "speech": "Rabbit",
+   "source": "lamina/animais_85/en"
+  },
+  {
+   "id": "en_slow_11e1fc01_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "shell",
+   "speech": "shell",
+   "source": "corpus/1815"
+  },
+  {
+   "id": "en_slow_12e72983_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Crab",
+   "speech": "Crab",
+   "source": "lamina/animais_93/en"
+  },
+  {
+   "id": "en_slow_1414f107_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "wind",
+   "speech": "wind",
+   "source": "english/fonema/ph_w/exemplo"
+  },
+  {
+   "id": "en_slow_141a40d9_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Naptime",
+   "speech": "Naptime",
+   "source": "lamina/escola_rut_126/en"
+  },
+  {
    "id": "en_slow_1433f56a_4",
    "lang": "en",
    "style": "slow",
@@ -76,12 +268,68 @@
    "source": "juega.corpo.01/ingles/conto"
   },
   {
+   "id": "en_slow_15a40f5d_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "clock",
+   "speech": "clock",
+   "source": "corpus/163"
+  },
+  {
+   "id": "en_slow_16ff3d1e_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "roll",
+   "speech": "roll",
+   "source": "corpus/702"
+  },
+  {
    "id": "en_slow_17f2fa26_6",
    "lang": "en",
    "style": "slow",
    "text": "Flower",
    "speech": "Flower",
    "source": "juega.primavera.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_192eda16_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Scissors",
+   "speech": "Scissors",
+   "source": "lamina/vocab_42/en"
+  },
+  {
+   "id": "en_slow_197e2aee_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fox",
+   "speech": "Fox",
+   "source": "lamina/animais_90/en"
+  },
+  {
+   "id": "en_slow_19ed5bcc_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "doll",
+   "speech": "doll",
+   "source": "corpus/1293"
+  },
+  {
+   "id": "en_slow_1a0ddf81_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Goldfish",
+   "speech": "Goldfish",
+   "source": "lamina/animais_71/en"
+  },
+  {
+   "id": "en_slow_1ac6a97e_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "cloud",
+   "speech": "cloud",
+   "source": "corpus/1188"
   },
   {
    "id": "en_slow_1b741852_4",
@@ -100,12 +348,60 @@
    "source": "juega.mar.01/ingles/conto"
   },
   {
+   "id": "en_slow_1c04c5ab_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Nappy",
+   "speech": "Nappy",
+   "source": "lamina/vocab_61/en"
+  },
+  {
+   "id": "en_slow_1d247ee2_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Mirror",
+   "speech": "Mirror",
+   "source": "lamina/vocab_54/en"
+  },
+  {
+   "id": "en_slow_1e127109_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Train",
+   "speech": "Train",
+   "source": "lamina/vocab_47/en"
+  },
+  {
    "id": "en_slow_1e743f07_4",
    "lang": "en",
    "style": "slow",
    "text": "Frog",
    "speech": "Frog",
    "source": "juega.animais.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_1ecd3be6_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "rub",
+   "speech": "rub",
+   "source": "corpus/1768"
+  },
+  {
+   "id": "en_slow_1f29dbd6_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "ant",
+   "speech": "ant",
+   "source": "corpus/4033"
+  },
+  {
+   "id": "en_slow_21f5b729_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "door",
+   "speech": "door",
+   "source": "corpus/230"
   },
   {
    "id": "en_slow_227bfa82_3",
@@ -124,12 +420,76 @@
    "source": "juega.auga.01/ingles/pulso"
   },
   {
+   "id": "en_slow_23a5842e_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Kitten",
+   "speech": "Kitten",
+   "source": "lamina/animais_68/en"
+  },
+  {
+   "id": "en_slow_23cd43c5_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "rug",
+   "speech": "rug",
+   "source": "corpus/3777"
+  },
+  {
    "id": "en_slow_241500fc_6",
    "lang": "en",
    "style": "slow",
    "text": "Mussel",
    "speech": "Mussel",
    "source": "juega.mar.01/vocabulario/mexillon/ingles"
+  },
+  {
+   "id": "en_slow_248c3398_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Duck",
+   "speech": "Duck",
+   "source": "lamina/animais_84/en"
+  },
+  {
+   "id": "en_slow_2648cd55_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "leaf",
+   "speech": "leaf",
+   "source": "corpus/3552"
+  },
+  {
+   "id": "en_slow_27e17df3_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "welcome",
+   "speech": "welcome",
+   "source": "corpus/1982"
+  },
+  {
+   "id": "en_slow_2810323f_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Turtle",
+   "speech": "Turtle",
+   "source": "lamina/animais_87/en"
+  },
+  {
+   "id": "en_slow_28217089_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "circle",
+   "speech": "circle",
+   "source": "corpus/1179"
+  },
+  {
+   "id": "en_slow_28742158_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Book",
+   "speech": "Book",
+   "source": "lamina/vocab_35/en"
   },
   {
    "id": "en_slow_29463f08_7",
@@ -140,12 +500,44 @@
    "source": "juega.follas.01/ingles/pulso"
   },
   {
+   "id": "en_slow_2b1d9b64_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Mouse",
+   "speech": "Mouse",
+   "source": "lamina/animais_86/en"
+  },
+  {
+   "id": "en_slow_2b6ce2a9_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "rainbow",
+   "speech": "rainbow",
+   "source": "corpus/4694"
+  },
+  {
+   "id": "en_slow_2cacaa39_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "paper",
+   "speech": "paper",
+   "source": "corpus/608"
+  },
+  {
    "id": "en_slow_2fa62ca8_5",
    "lang": "en",
    "style": "slow",
    "text": "Sleep",
    "speech": "Sleep",
    "source": "juega.inverno.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_2fc941c2_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "mirror",
+   "speech": "mirror",
+   "source": "corpus/1564"
   },
   {
    "id": "en_slow_2fd9d583_4",
@@ -156,12 +548,76 @@
    "source": "juega.mar.01/ingles/conto"
   },
   {
+   "id": "en_slow_30be372f_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "brown",
+   "speech": "brown",
+   "source": "corpus/121"
+  },
+  {
+   "id": "en_slow_30c707a2_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "freeze",
+   "speech": "freeze",
+   "source": "corpus/329"
+  },
+  {
    "id": "en_slow_320260b3_6",
    "lang": "en",
    "style": "slow",
    "text": "Basket",
    "speech": "Basket",
    "source": "juega.follas.01/ingles/matematicas"
+  },
+  {
+   "id": "en_slow_32694bc3_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "head",
+   "speech": "head",
+   "source": "corpus/381"
+  },
+  {
+   "id": "en_slow_331dcf36_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Calm",
+   "speech": "Calm",
+   "source": "lamina/emocions_corp_148/en"
+  },
+  {
+   "id": "en_slow_333192ea_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Snail",
+   "speech": "Snail",
+   "source": "lamina/animais_75/en"
+  },
+  {
+   "id": "en_slow_336f28b6_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "spoon",
+   "speech": "spoon",
+   "source": "corpus/3848"
+  },
+  {
+   "id": "en_slow_33881a91_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Button",
+   "speech": "Button",
+   "source": "lamina/vocab_57/en"
+  },
+  {
+   "id": "en_slow_33cfde0e_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "kitten",
+   "speech": "kitten",
+   "source": "corpus/6485"
   },
   {
    "id": "en_slow_33f95b0f_4",
@@ -172,6 +628,14 @@
    "source": "juega.cores.01/vocabulario/aro/ingles"
   },
   {
+   "id": "en_slow_348f1364_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "ball",
+   "speech": "ball",
+   "source": "corpus/65"
+  },
+  {
    "id": "en_slow_35ece1e8_6",
    "lang": "en",
    "style": "slow",
@@ -180,12 +644,44 @@
    "source": "juega.follas.01/ingles/preguntas"
   },
   {
+   "id": "en_slow_38e03da6_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blossom",
+   "speech": "Blossom",
+   "source": "lamina/vigo_nat_114/en"
+  },
+  {
    "id": "en_slow_39ca7823_6",
    "lang": "en",
    "style": "slow",
    "text": "Put on",
    "speech": "Put on",
    "source": "calendario/mes/5/ingles/lexico"
+  },
+  {
+   "id": "en_slow_3ab857a9_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bottle",
+   "speech": "Bottle",
+   "source": "lamina/vocab_62/en"
+  },
+  {
+   "id": "en_slow_3b35226c_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "gum",
+   "speech": "gum",
+   "source": "english/fonema/ph_g/exemplo"
+  },
+  {
+   "id": "en_slow_3b3b76a6_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "listen",
+   "speech": "listen",
+   "source": "english/word/en_listen/word"
   },
   {
    "id": "en_slow_3b61cb75_4",
@@ -204,12 +700,68 @@
    "source": "juega.primavera.01/ingles/pulso"
   },
   {
+   "id": "en_slow_3ce2519d_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "curious",
+   "speech": "curious",
+   "source": "english/word/en_curious/word"
+  },
+  {
+   "id": "en_slow_3db9b915_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "down",
+   "speech": "down",
+   "source": "corpus/233"
+  },
+  {
+   "id": "en_slow_3dd9289d_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Joy",
+   "speech": "Joy",
+   "source": "lamina/emocions_corp_147/en"
+  },
+  {
    "id": "en_slow_3df32aad_6",
    "lang": "en",
    "style": "slow",
    "text": "Friend",
    "speech": "Friend",
    "source": "juega.benvida.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_4044a22d_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "rope",
+   "speech": "rope",
+   "source": "english/fonema/ph_magic_o/exemplo"
+  },
+  {
+   "id": "en_slow_40f480dc_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "red",
+   "speech": "red",
+   "source": "english/fonema/ph_r/exemplo"
+  },
+  {
+   "id": "en_slow_41465646_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Horse",
+   "speech": "Horse",
+   "source": "lamina/animais_81/en"
+  },
+  {
+   "id": "en_slow_42b4cb29_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "ribbon",
+   "speech": "ribbon",
+   "source": "corpus/4735"
   },
   {
    "id": "en_slow_42d8d701_3",
@@ -228,12 +780,36 @@
    "source": "juega.benvida.01/ingles/matematicas"
   },
   {
+   "id": "en_slow_42f6a154_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Summer",
+   "speech": "Summer",
+   "source": "lamina/vigo_nat_112/en"
+  },
+  {
+   "id": "en_slow_4324fd83_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "clap",
+   "speech": "clap",
+   "source": "corpus/4143"
+  },
+  {
    "id": "en_slow_433a7162_7",
    "lang": "en",
    "style": "slow",
    "text": "Bye-bye",
    "speech": "Byebye",
    "source": "juega.benvida.01/ingles/ponteCasa"
+  },
+  {
+   "id": "en_slow_43430b20_2",
+   "lang": "en",
+   "style": "slow",
+   "text": "up",
+   "speech": "up",
+   "source": "corpus/920"
   },
   {
    "id": "en_slow_4396de1b_4",
@@ -244,12 +820,36 @@
    "source": "juega.mar.01/vocabulario/barco/ingles"
   },
   {
+   "id": "en_slow_43b27471_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "button",
+   "speech": "button",
+   "source": "corpus/1135"
+  },
+  {
    "id": "en_slow_4417f7d3_3",
    "lang": "en",
    "style": "slow",
    "text": "Hug",
    "speech": "Hug",
    "source": "juega.benvida.01/cuento/2/ingles"
+  },
+  {
+   "id": "en_slow_44a59093_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "basket",
+   "speech": "basket",
+   "source": "corpus/1073"
+  },
+  {
+   "id": "en_slow_44d4c097_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Kiss",
+   "speech": "Kiss",
+   "source": "lamina/vocab_63/en"
   },
   {
    "id": "en_slow_44e67b40_4",
@@ -260,12 +860,140 @@
    "source": "juega.benvida.01/ingles/conto"
   },
   {
+   "id": "en_slow_45b473eb_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "orange",
+   "speech": "orange",
+   "source": "corpus/595"
+  },
+  {
+   "id": "en_slow_4620047c_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Mouth",
+   "speech": "Mouth",
+   "source": "lamina/emocions_corp_160/en"
+  },
+  {
+   "id": "en_slow_46c72e58_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "towel",
+   "speech": "towel",
+   "source": "corpus/1940"
+  },
+  {
+   "id": "en_slow_46d72f50_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "goodbye",
+   "speech": "goodbye",
+   "source": "corpus/354"
+  },
+  {
+   "id": "en_slow_49c69a10_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "water",
+   "speech": "water",
+   "source": "english/word/en_water/word"
+  },
+  {
+   "id": "en_slow_4a9c9bdf_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "table",
+   "speech": "table",
+   "source": "corpus/838"
+  },
+  {
+   "id": "en_slow_4cd1168b_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "tummy",
+   "speech": "tummy",
+   "source": "corpus/7926"
+  },
+  {
    "id": "en_slow_4e586f89_4",
    "lang": "en",
    "style": "slow",
    "text": "Mask",
    "speech": "Mask",
    "source": "juega.animais.01/vocabulario/careta/ingles"
+  },
+  {
+   "id": "en_slow_4e624c06_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "breathe",
+   "speech": "breathe",
+   "source": "english/word/en_breathe/word"
+  },
+  {
+   "id": "en_slow_4eeb6b24_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pencil",
+   "speech": "Pencil",
+   "source": "lamina/vocab_43/en"
+  },
+  {
+   "id": "en_slow_4f55eeec_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "pan",
+   "speech": "pan",
+   "source": "english/decodable/w_pan"
+  },
+  {
+   "id": "en_slow_4f9f2cab_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "hello",
+   "speech": "hello",
+   "source": "english/word/en_hello/word"
+  },
+  {
+   "id": "en_slow_5045bcac_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "seed",
+   "speech": "seed",
+   "source": "corpus/1797"
+  },
+  {
+   "id": "en_slow_506dff3e_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "clean",
+   "speech": "clean",
+   "source": "corpus/160"
+  },
+  {
+   "id": "en_slow_50ae46ec_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "bed",
+   "speech": "bed",
+   "source": "english/decodable/w_bed"
+  },
+  {
+   "id": "en_slow_51ae487f_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "bee",
+   "speech": "bee",
+   "source": "corpus/1079"
+  },
+  {
+   "id": "en_slow_535ef744_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Warmth",
+   "speech": "Warmth",
+   "source": "lamina/emocions_corp_170/en"
   },
   {
    "id": "en_slow_538b10e9_4",
@@ -276,12 +1004,124 @@
    "source": "juega.primavera.01/ingles/exploracion"
   },
   {
+   "id": "en_slow_53cacdb9_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "big",
+   "speech": "big",
+   "source": "corpus/91"
+  },
+  {
+   "id": "en_slow_5505928f_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "smile",
+   "speech": "smile",
+   "source": "corpus/777"
+  },
+  {
+   "id": "en_slow_5533661c_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "pot",
+   "speech": "pot",
+   "source": "english/decodable/w_pot"
+  },
+  {
    "id": "en_slow_5549af62_3",
    "lang": "en",
    "style": "slow",
    "text": "Hat",
    "speech": "Hat",
    "source": "juega.choiva.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_5584392f_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "sweet",
+   "speech": "sweet",
+   "source": "corpus/835"
+  },
+  {
+   "id": "en_slow_570ae59c_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hungry",
+   "speech": "Hungry",
+   "source": "lamina/emocions_corp_151/en"
+  },
+  {
+   "id": "en_slow_57cfdaf1_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Love",
+   "speech": "Love",
+   "source": "lamina/emocions_corp_153/en"
+  },
+  {
+   "id": "en_slow_585056a0_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "seal",
+   "speech": "seal",
+   "source": "corpus/1791"
+  },
+  {
+   "id": "en_slow_588a5993_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Welcome",
+   "speech": "Welcome",
+   "source": "lamina/escola_rut_123/en"
+  },
+  {
+   "id": "en_slow_58c1fbf3_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Shoes",
+   "speech": "Shoes",
+   "source": "lamina/vocab_37/en"
+  },
+  {
+   "id": "en_slow_592318c4_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "mouse",
+   "speech": "mouse",
+   "source": "corpus/1574"
+  },
+  {
+   "id": "en_slow_597d11c6_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "egg",
+   "speech": "egg",
+   "source": "english/fonema/ph_short_e/exemplo"
+  },
+  {
+   "id": "en_slow_5a1873f0_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Cow",
+   "speech": "Cow",
+   "source": "lamina/animais_79/en"
+  },
+  {
+   "id": "en_slow_5bb421a2_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "back",
+   "speech": "back",
+   "source": "corpus/62"
+  },
+  {
+   "id": "en_slow_5c15be49_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Rainbow",
+   "speech": "Rainbow",
+   "source": "lamina/vigo_nat_108/en"
   },
   {
    "id": "en_slow_5c65da32_4",
@@ -292,12 +1132,36 @@
    "source": "juega.choiva.01/ingles/pulso"
   },
   {
+   "id": "en_slow_5cb49d8a_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "chair",
+   "speech": "chair",
+   "source": "corpus/145"
+  },
+  {
+   "id": "en_slow_5d4a9704_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Butterfly",
+   "speech": "Butterfly",
+   "source": "lamina/animais_76/en"
+  },
+  {
    "id": "en_slow_5e080abf_8",
    "lang": "en",
    "style": "slow",
    "text": "Take off",
    "speech": "Take off",
    "source": "calendario/mes/5/ingles/lexico"
+  },
+  {
+   "id": "en_slow_5ed0d48b_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "nest",
+   "speech": "nest",
+   "source": "english/fonema/ph_n/exemplo"
   },
   {
    "id": "en_slow_63472495_5",
@@ -308,12 +1172,76 @@
    "source": "calendario/mes/7/ingles/lexico"
   },
   {
+   "id": "en_slow_63f1336c_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "spring",
+   "speech": "spring",
+   "source": "corpus/796"
+  },
+  {
+   "id": "en_slow_66354660_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Ears",
+   "speech": "Ears",
+   "source": "lamina/emocions_corp_158/en"
+  },
+  {
+   "id": "en_slow_66a9cf89_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "bottle",
+   "speech": "bottle",
+   "source": "corpus/110"
+  },
+  {
+   "id": "en_slow_66fef081_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Car",
+   "speech": "Car",
+   "source": "lamina/vocab_48/en"
+  },
+  {
+   "id": "en_slow_670001f6_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "whale",
+   "speech": "whale",
+   "source": "corpus/3992"
+  },
+  {
+   "id": "en_slow_6815c86c_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "key",
+   "speech": "key",
+   "source": "corpus/444"
+  },
+  {
+   "id": "en_slow_6840fb8f_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "pig",
+   "speech": "pig",
+   "source": "english/fonema/ph_p/exemplo"
+  },
+  {
    "id": "en_slow_68fef3a7_3",
    "lang": "en",
    "style": "slow",
    "text": "Cat",
    "speech": "Cat",
    "source": "juega.animais.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_69b12239_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "puddle",
+   "speech": "puddle",
+   "source": "corpus/6709"
   },
   {
    "id": "en_slow_6a72bc2f_4",
@@ -324,12 +1252,108 @@
    "source": "juega.inverno.01/ingles/conto"
   },
   {
+   "id": "en_slow_6b3f44a8_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hen",
+   "speech": "Hen",
+   "source": "lamina/animais_83/en"
+  },
+  {
+   "id": "en_slow_6b91d120_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "cube",
+   "speech": "cube",
+   "source": "english/fonema/ph_magic_u/exemplo"
+  },
+  {
+   "id": "en_slow_6bf0ef3b_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "lamp",
+   "speech": "lamp",
+   "source": "corpus/1501"
+  },
+  {
+   "id": "en_slow_6d8b34d5_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "tree",
+   "speech": "tree",
+   "source": "english/fonema/ph_ee_ea/exemplo"
+  },
+  {
    "id": "en_slow_6e82d356_4",
    "lang": "en",
    "style": "slow",
    "text": "Soap",
    "speech": "Soap",
    "source": "juega.auga.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_6f410694_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "pin",
+   "speech": "pin",
+   "source": "english/decodable/w_pin"
+  },
+  {
+   "id": "en_slow_6f4b93f0_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "pen",
+   "speech": "pen",
+   "source": "english/decodable/w_pen"
+  },
+  {
+   "id": "en_slow_6f7b9049_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Ribbon",
+   "speech": "Ribbon",
+   "source": "lamina/vocab_58/en"
+  },
+  {
+   "id": "en_slow_70b773a8_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "bat",
+   "speech": "bat",
+   "source": "english/fonema/ph_b/exemplo"
+  },
+  {
+   "id": "en_slow_70bd93ba_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Surprise",
+   "speech": "Surprise",
+   "source": "lamina/emocions_corp_149/en"
+  },
+  {
+   "id": "en_slow_70c67e32_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "box",
+   "speech": "box",
+   "source": "corpus/112"
+  },
+  {
+   "id": "en_slow_71da140d_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "swim",
+   "speech": "swim",
+   "source": "corpus/836"
+  },
+  {
+   "id": "en_slow_72400717_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Starfish",
+   "speech": "Starfish",
+   "source": "lamina/animais_94/en"
   },
   {
    "id": "en_slow_727b390b_6",
@@ -340,12 +1364,44 @@
    "source": "juega.cores.01/vocabulario/laranxa/ingles"
   },
   {
+   "id": "en_slow_730af99f_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Lion",
+   "speech": "Lion",
+   "source": "lamina/animais_89/en"
+  },
+  {
+   "id": "en_slow_736630e9_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "chestnut",
+   "speech": "chestnut",
+   "source": "corpus/5156"
+  },
+  {
+   "id": "en_slow_73d58d75_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "bug",
+   "speech": "bug",
+   "source": "english/decodable/w_bug"
+  },
+  {
    "id": "en_slow_73f4c1eb_8",
    "lang": "en",
    "style": "slow",
    "text": "Backpack",
    "speech": "Backpack",
    "source": "juega.benvida.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_742581dc_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "mouth",
+   "speech": "mouth",
+   "source": "corpus/539"
   },
   {
    "id": "en_slow_77800af0_7",
@@ -364,6 +1420,46 @@
    "source": "juega.inverno.01/ingles/pulso"
   },
   {
+   "id": "en_slow_78556c69_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "train",
+   "speech": "train",
+   "source": "corpus/897"
+  },
+  {
+   "id": "en_slow_78627a04_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "pencil",
+   "speech": "pencil",
+   "source": "corpus/3680"
+  },
+  {
+   "id": "en_slow_7eb3c233_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "comfort",
+   "speech": "comfort",
+   "source": "corpus/175"
+  },
+  {
+   "id": "en_slow_80292787_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "tickle",
+   "speech": "tickle",
+   "source": "corpus/5912"
+  },
+  {
+   "id": "en_slow_80ce85ec_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Doll",
+   "speech": "Doll",
+   "source": "lamina/vocab_46/en"
+  },
+  {
    "id": "en_slow_812746a9_6",
    "lang": "en",
    "style": "slow",
@@ -380,12 +1476,52 @@
    "source": "juega.auga.01/ingles/pulso"
   },
   {
+   "id": "en_slow_81b60676_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Ant",
+   "speech": "Ant",
+   "source": "lamina/animais_78/en"
+  },
+  {
+   "id": "en_slow_81fa6638_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "warm",
+   "speech": "warm",
+   "source": "corpus/936"
+  },
+  {
+   "id": "en_slow_826e1638_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "bell",
+   "speech": "bell",
+   "source": "corpus/1083"
+  },
+  {
+   "id": "en_slow_82fbf5cd_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "blue",
+   "speech": "blue",
+   "source": "corpus/100"
+  },
+  {
    "id": "en_slow_834d0359_6",
    "lang": "en",
    "style": "slow",
    "text": "Puddle",
    "speech": "Puddle",
    "source": "juega.choiva.01/vocabulario/charco/ingles"
+  },
+  {
+   "id": "en_slow_83b48faa_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "wonder",
+   "speech": "wonder",
+   "source": "english/word/en_wonder/word"
   },
   {
    "id": "en_slow_8477cb04_7",
@@ -396,12 +1532,60 @@
    "source": "juega.mar.01/vocabulario/gaivota/ingles"
   },
   {
+   "id": "en_slow_8657db65_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Rug",
+   "speech": "Rug",
+   "source": "lamina/vocab_34/en"
+  },
+  {
+   "id": "en_slow_86eeeedf_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "observe",
+   "speech": "observe",
+   "source": "english/word/en_observe/word"
+  },
+  {
+   "id": "en_slow_88d54e49_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Door",
+   "speech": "Door",
+   "source": "lamina/vocab_52/en"
+  },
+  {
+   "id": "en_slow_89a3b5d3_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "rain",
+   "speech": "rain",
+   "source": "corpus/670"
+  },
+  {
    "id": "en_slow_89ce70c2_6",
    "lang": "en",
    "style": "slow",
    "text": "Freeze",
    "speech": "Freeze",
    "source": "juega.corpo.01/ingles/exploracion"
+  },
+  {
+   "id": "en_slow_89eabb08_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "sleep",
+   "speech": "sleep",
+   "source": "corpus/771"
+  },
+  {
+   "id": "en_slow_8a524c53_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "bear",
+   "speech": "bear",
+   "source": "corpus/73"
   },
   {
    "id": "en_slow_8a968722_4",
@@ -420,12 +1604,76 @@
    "source": "juega.inverno.01/vocabulario/luz/ingles"
   },
   {
+   "id": "en_slow_8aea8859_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "cake",
+   "speech": "cake",
+   "source": "english/fonema/ph_magic_a/exemplo"
+  },
+  {
+   "id": "en_slow_8afbb84a_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "snail",
+   "speech": "snail",
+   "source": "corpus/6821"
+  },
+  {
+   "id": "en_slow_8c384f51_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "chin",
+   "speech": "chin",
+   "source": "english/fonema/ph_ch/exemplo"
+  },
+  {
+   "id": "en_slow_90407463_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "crab",
+   "speech": "crab",
+   "source": "corpus/4194"
+  },
+  {
+   "id": "en_slow_918d404a_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "nose",
+   "speech": "nose",
+   "source": "corpus/570"
+  },
+  {
    "id": "en_slow_94413d27_4",
    "lang": "en",
    "style": "slow",
    "text": "Wind",
    "speech": "Wind",
    "source": "juega.follas.01/ingles/pulso"
+  },
+  {
+   "id": "en_slow_948625b8_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "gentle",
+   "speech": "gentle",
+   "source": "english/word/en_gentle/word"
+  },
+  {
+   "id": "en_slow_9625faa2_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "van",
+   "speech": "van",
+   "source": "english/fonema/ph_v/exemplo"
+  },
+  {
+   "id": "en_slow_96e31366_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "splash",
+   "speech": "splash",
+   "source": "corpus/3846"
   },
   {
    "id": "en_slow_972b893e_4",
@@ -436,12 +1684,92 @@
    "source": "juega.cores.01/ingles/exploracion"
   },
   {
+   "id": "en_slow_977128b2_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "bird",
+   "speech": "bird",
+   "source": "corpus/94"
+  },
+  {
+   "id": "en_slow_97c0adcb_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Glass",
+   "speech": "Glass",
+   "source": "lamina/vocab_32/en"
+  },
+  {
    "id": "en_slow_99782d09_8",
    "lang": "en",
    "style": "slow",
    "text": "Chestnut",
    "speech": "Chestnut",
    "source": "juega.follas.01/vocabulario/castana/ingles"
+  },
+  {
+   "id": "en_slow_9afb96a3_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Plate",
+   "speech": "Plate",
+   "source": "lamina/vocab_30/en"
+  },
+  {
+   "id": "en_slow_9b47cc32_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "shoe",
+   "speech": "shoe",
+   "source": "corpus/744"
+  },
+  {
+   "id": "en_slow_9b703d84_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Ball",
+   "speech": "Ball",
+   "source": "lamina/vocab_45/en"
+  },
+  {
+   "id": "en_slow_9b8951a6_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "horse",
+   "speech": "horse",
+   "source": "corpus/404"
+  },
+  {
+   "id": "en_slow_9bcd89e7_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "frog",
+   "speech": "frog",
+   "source": "corpus/1392"
+  },
+  {
+   "id": "en_slow_a0f6c56e_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "wash",
+   "speech": "wash",
+   "source": "corpus/937"
+  },
+  {
+   "id": "en_slow_a172b7dd_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "window",
+   "speech": "window",
+   "source": "corpus/971"
+  },
+  {
+   "id": "en_slow_a2825d2f_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "together",
+   "speech": "together",
+   "source": "english/word/en_together/word"
   },
   {
    "id": "en_slow_a37f187c_3",
@@ -468,6 +1796,38 @@
    "source": "juega.follas.01/ingles/conto"
   },
   {
+   "id": "en_slow_a710dc3c_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "top",
+   "speech": "top",
+   "source": "english/fonema/ph_t/exemplo"
+  },
+  {
+   "id": "en_slow_a73f5c0d_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "jump",
+   "speech": "jump",
+   "source": "corpus/441"
+  },
+  {
+   "id": "en_slow_a8ca6410_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Thirsty",
+   "speech": "Thirsty",
+   "source": "lamina/emocions_corp_152/en"
+  },
+  {
+   "id": "en_slow_a9d3f149_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hands",
+   "speech": "Hands",
+   "source": "lamina/emocions_corp_161/en"
+  },
+  {
    "id": "en_slow_aa21c9de_6",
    "lang": "en",
    "style": "slow",
@@ -482,6 +1842,54 @@
    "text": "Eyes",
    "speech": "Eyes",
    "source": "juega.corpo.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_aaf74aa2_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "tap",
+   "speech": "tap",
+   "source": "corpus/1909"
+  },
+  {
+   "id": "en_slow_ab8273b4_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "zip",
+   "speech": "zip",
+   "source": "english/fonema/ph_z/exemplo"
+  },
+  {
+   "id": "en_slow_ac56f17f_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "ship",
+   "speech": "ship",
+   "source": "english/fonema/ph_sh/exemplo"
+  },
+  {
+   "id": "en_slow_af5c9dd3_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Comfort",
+   "speech": "Comfort",
+   "source": "lamina/emocions_corp_154/en"
+  },
+  {
+   "id": "en_slow_afad8963_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "fish",
+   "speech": "fish",
+   "source": "english/fonema/ph_f/exemplo"
+  },
+  {
+   "id": "en_slow_b0020094_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Sheep",
+   "speech": "Sheep",
+   "source": "lamina/animais_80/en"
   },
   {
    "id": "en_slow_b1db7b28_7",
@@ -500,6 +1908,46 @@
    "source": "juega.corpo.01/ingles/pulso"
   },
   {
+   "id": "en_slow_b2f18316_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "calm",
+   "speech": "calm",
+   "source": "corpus/1139"
+  },
+  {
+   "id": "en_slow_b3cd0eef_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "hoop",
+   "speech": "hoop",
+   "source": "corpus/6426"
+  },
+  {
+   "id": "en_slow_b532b2fb_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "House",
+   "speech": "House",
+   "source": "lamina/vocab_27/en"
+  },
+  {
+   "id": "en_slow_b5b3478c_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bed",
+   "speech": "Bed",
+   "source": "lamina/vocab_33/en"
+  },
+  {
+   "id": "en_slow_b5bda71f_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "turtle",
+   "speech": "turtle",
+   "source": "corpus/4926"
+  },
+  {
    "id": "en_slow_b6779c5f_5",
    "lang": "en",
    "style": "slow",
@@ -514,6 +1962,22 @@
    "text": "Toes",
    "speech": "Toes",
    "source": "juega.corpo.01/ingles/pulso"
+  },
+  {
+   "id": "en_slow_b6b3491f_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bee",
+   "speech": "Bee",
+   "source": "lamina/animais_77/en"
+  },
+  {
+   "id": "en_slow_b6f3934e_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "fox",
+   "speech": "fox",
+   "source": "corpus/1389"
   },
   {
    "id": "en_slow_b863f885_5",
@@ -532,12 +1996,28 @@
    "source": "juega.choiva.01/ingles/exploracion"
   },
   {
+   "id": "en_slow_b926f28c_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "sea",
+   "speech": "sea",
+   "source": "corpus/719"
+  },
+  {
    "id": "en_slow_ba1969a1_5",
    "lang": "en",
    "style": "slow",
    "text": "Shell",
    "speech": "Shell",
    "source": "juega.mar.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_ba49ee13_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Storytime",
+   "speech": "Storytime",
+   "source": "lamina/escola_rut_129/en"
   },
   {
    "id": "en_slow_ba953c4a_7",
@@ -548,12 +2028,116 @@
    "source": "juega.primavera.01/ingles/conto"
   },
   {
+   "id": "en_slow_bb323378_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "duck",
+   "speech": "duck",
+   "source": "english/fonema/ph_ck/exemplo"
+  },
+  {
+   "id": "en_slow_bb5f80fd_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Clock",
+   "speech": "Clock",
+   "source": "lamina/vocab_50/en"
+  },
+  {
+   "id": "en_slow_bc82b1da_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "grow",
+   "speech": "grow",
+   "source": "corpus/363"
+  },
+  {
+   "id": "en_slow_bd8bb2f5_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "shake",
+   "speech": "shake",
+   "source": "corpus/737"
+  },
+  {
+   "id": "en_slow_be045bd5_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Farewell",
+   "speech": "Farewell",
+   "source": "lamina/escola_rut_132/en"
+  },
+  {
+   "id": "en_slow_bebfab0e_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "octopus",
+   "speech": "octopus",
+   "source": "english/fonema/ph_short_o/exemplo"
+  },
+  {
+   "id": "en_slow_bfdde556_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Spoon",
+   "speech": "Spoon",
+   "source": "lamina/vocab_31/en"
+  },
+  {
+   "id": "en_slow_bff162e2_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "fly",
+   "speech": "fly",
+   "source": "corpus/315"
+  },
+  {
+   "id": "en_slow_c0821b1e_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Cloud",
+   "speech": "Cloud",
+   "source": "lamina/vigo_nat_105/en"
+  },
+  {
+   "id": "en_slow_c1948a38_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "book",
+   "speech": "book",
+   "source": "corpus/105"
+  },
+  {
+   "id": "en_slow_c2954bc2_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Back",
+   "speech": "Back",
+   "source": "lamina/emocions_corp_164/en"
+  },
+  {
    "id": "en_slow_c35149a3_4",
    "lang": "en",
    "style": "slow",
    "text": "Clap",
    "speech": "Clap",
    "source": "juega.benvida.01/ingles/pulso"
+  },
+  {
+   "id": "en_slow_c398c3c8_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "crunch",
+   "speech": "crunch",
+   "source": "corpus/4204"
+  },
+  {
+   "id": "en_slow_c4602668_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "bike",
+   "speech": "bike",
+   "source": "english/fonema/ph_magic_i/exemplo"
   },
   {
    "id": "en_slow_c4b9a762_7",
@@ -564,12 +2148,156 @@
    "source": "calendario/mes/4/ingles/lexico"
   },
   {
+   "id": "en_slow_c4ba2f20_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "hand",
+   "speech": "hand",
+   "source": "corpus/370"
+  },
+  {
+   "id": "en_slow_c4bb620c_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "winter",
+   "speech": "winter",
+   "source": "corpus/973"
+  },
+  {
+   "id": "en_slow_c4ed503f_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Dolphin",
+   "speech": "Dolphin",
+   "source": "lamina/animais_73/en"
+  },
+  {
+   "id": "en_slow_c5e12a13_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "autumn",
+   "speech": "autumn",
+   "source": "corpus/57"
+  },
+  {
+   "id": "en_slow_c6aedde8_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Beach",
+   "speech": "Beach",
+   "source": "lamina/vigo_nat_99/en"
+  },
+  {
+   "id": "en_slow_c6f1b4b5_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "farewell",
+   "speech": "farewell",
+   "source": "corpus/4333"
+  },
+  {
+   "id": "en_slow_c6fdde3c_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "explore",
+   "speech": "explore",
+   "source": "english/word/en_explore/word"
+  },
+  {
+   "id": "en_slow_c9011403_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "plate",
+   "speech": "plate",
+   "source": "corpus/1649"
+  },
+  {
+   "id": "en_slow_cb619ce5_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "rabbit",
+   "speech": "rabbit",
+   "source": "corpus/667"
+  },
+  {
+   "id": "en_slow_cb8c1e06_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "blossom",
+   "speech": "blossom",
+   "source": "corpus/4085"
+  },
+  {
+   "id": "en_slow_cba09f8d_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "friend",
+   "speech": "friend",
+   "source": "corpus/332"
+  },
+  {
+   "id": "en_slow_ccce80a1_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "insect",
+   "speech": "insect",
+   "source": "english/fonema/ph_short_i/exemplo"
+  },
+  {
+   "id": "en_slow_cd1ac90c_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Key",
+   "speech": "Key",
+   "source": "lamina/vocab_53/en"
+  },
+  {
+   "id": "en_slow_cd2a0f9a_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "surprise",
+   "speech": "surprise",
+   "source": "corpus/834"
+  },
+  {
+   "id": "en_slow_cd478f2f_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pig",
+   "speech": "Pig",
+   "source": "lamina/animais_82/en"
+  },
+  {
+   "id": "en_slow_cfa4f169_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "Handwashing",
+   "speech": "Handwashing",
+   "source": "lamina/escola_rut_124/en"
+  },
+  {
    "id": "en_slow_d07208cc_4",
    "lang": "en",
    "style": "slow",
    "text": "Seed",
    "speech": "Seed",
    "source": "juega.primavera.01/vocabulario/semente/ingles"
+  },
+  {
+   "id": "en_slow_d13b2f71_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "star",
+   "speech": "star",
+   "source": "english/fonema/ph_r_ar/exemplo"
+  },
+  {
+   "id": "en_slow_d1df8006_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "flower",
+   "speech": "flower",
+   "source": "corpus/314"
   },
   {
    "id": "en_slow_d1f4faf2_5",
@@ -588,12 +2316,76 @@
    "source": "juega.corpo.01/ingles/exploracion"
   },
   {
+   "id": "en_slow_d35ec4c9_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "open",
+   "speech": "open",
+   "source": "corpus/593"
+  },
+  {
+   "id": "en_slow_d3988d03_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Sleepy",
+   "speech": "Sleepy",
+   "source": "lamina/emocions_corp_150/en"
+  },
+  {
+   "id": "en_slow_d52792d1_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "love",
+   "speech": "love",
+   "source": "corpus/494"
+  },
+  {
+   "id": "en_slow_d5cb7ed2_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Box",
+   "speech": "Box",
+   "source": "lamina/vocab_56/en"
+  },
+  {
    "id": "en_slow_d63556b0_5",
    "lang": "en",
    "style": "slow",
    "text": "Water",
    "speech": "Water",
    "source": "juega.auga.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_d643be8c_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Spring",
+   "speech": "Spring",
+   "source": "lamina/vigo_nat_111/en"
+  },
+  {
+   "id": "en_slow_d70ceb7f_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Table",
+   "speech": "Table",
+   "source": "lamina/vocab_28/en"
+  },
+  {
+   "id": "en_slow_d87ca2c0_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Seal",
+   "speech": "Seal",
+   "source": "lamina/animais_92/en"
+  },
+  {
+   "id": "en_slow_d8d427fd_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "joy",
+   "speech": "joy",
+   "source": "corpus/1484"
   },
   {
    "id": "en_slow_d93fd32b_5",
@@ -612,12 +2404,116 @@
    "source": "juega.cores.01/ingles/pulso"
   },
   {
+   "id": "en_slow_da2bd281_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "this",
+   "speech": "this",
+   "source": "english/fonema/ph_th_voiced/exemplo"
+  },
+  {
    "id": "en_slow_da999fd8_6",
    "lang": "en",
    "style": "slow",
    "text": "Gentle",
    "speech": "Gentle",
    "source": "juega.benvida.01/ingles/preguntas"
+  },
+  {
+   "id": "en_slow_dc398e12_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "coat",
+   "speech": "coat",
+   "source": "corpus/168"
+  },
+  {
+   "id": "en_slow_dc3bfb1e_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Puddles",
+   "speech": "Puddles",
+   "source": "lamina/vigo_nat_106/en"
+  },
+  {
+   "id": "en_slow_dcb746fb_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "boat",
+   "speech": "boat",
+   "source": "english/fonema/ph_oa_ow/exemplo"
+  },
+  {
+   "id": "en_slow_dd29c103_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Toothbrush",
+   "speech": "Toothbrush",
+   "source": "lamina/vocab_41/en"
+  },
+  {
+   "id": "en_slow_ddf39677_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "kiss",
+   "speech": "kiss",
+   "source": "corpus/450"
+  },
+  {
+   "id": "en_slow_dec6cddd_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fingers",
+   "speech": "Fingers",
+   "source": "lamina/emocions_corp_165/en"
+  },
+  {
+   "id": "en_slow_e04e3f61_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "sun",
+   "speech": "sun",
+   "source": "english/fonema/ph_s/exemplo"
+  },
+  {
+   "id": "en_slow_e18d6033_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "hug",
+   "speech": "hug",
+   "source": "corpus/3479"
+  },
+  {
+   "id": "en_slow_e29d1e2f_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "light",
+   "speech": "light",
+   "source": "corpus/477"
+  },
+  {
+   "id": "en_slow_e668bd09_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "dog",
+   "speech": "dog",
+   "source": "english/fonema/ph_d/exemplo"
+  },
+  {
+   "id": "en_slow_e7774569_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "mask",
+   "speech": "mask",
+   "source": "corpus/1539"
+  },
+  {
+   "id": "en_slow_e78631fd_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Window",
+   "speech": "Window",
+   "source": "lamina/vocab_51/en"
   },
   {
    "id": "en_slow_e94dad58_4",
@@ -636,6 +2532,22 @@
    "source": "juega.mar.01/ingles/conto"
   },
   {
+   "id": "en_slow_ea44dd0f_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "cold",
+   "speech": "cold",
+   "source": "corpus/170"
+  },
+  {
+   "id": "en_slow_ec1d3b5b_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Lamp",
+   "speech": "Lamp",
+   "source": "lamina/vocab_55/en"
+  },
+  {
    "id": "en_slow_ec829ff8_5",
    "lang": "en",
    "style": "slow",
@@ -652,12 +2564,28 @@
    "source": "juega.follas.01/ingles/ponteCasa"
   },
   {
+   "id": "en_slow_ee568736_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "soap",
+   "speech": "soap",
+   "source": "corpus/3825"
+  },
+  {
    "id": "en_slow_ef623a05_8",
    "lang": "en",
    "style": "slow",
    "text": "Umbrella",
    "speech": "Umbrella",
    "source": "juega.choiva.01/vocabulario/paraugas/ingles"
+  },
+  {
+   "id": "en_slow_ef6886ae_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Octopus",
+   "speech": "Octopus",
+   "source": "lamina/animais_74/en"
   },
   {
    "id": "en_slow_efe8e986_6",
@@ -676,12 +2604,76 @@
    "source": "juega.animais.01/ingles/conto"
   },
   {
+   "id": "en_slow_f184ae40_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "moon",
+   "speech": "moon",
+   "source": "english/fonema/ph_m/exemplo"
+  },
+  {
+   "id": "en_slow_f203a92b_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "glass",
+   "speech": "glass",
+   "source": "corpus/349"
+  },
+  {
    "id": "en_slow_f206602d_4",
    "lang": "en",
    "style": "slow",
    "text": "Swim",
    "speech": "Swim",
    "source": "juega.mar.01/ingles/exploracion"
+  },
+  {
+   "id": "en_slow_f27bb2a7_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tickle",
+   "speech": "Tickle",
+   "source": "lamina/vocab_65/en"
+  },
+  {
+   "id": "en_slow_f2bf17c2_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "hat",
+   "speech": "hat",
+   "source": "english/fonema/ph_h/exemplo"
+  },
+  {
+   "id": "en_slow_f2dead7f_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "lion",
+   "speech": "lion",
+   "source": "english/fonema/ph_l/exemplo"
+  },
+  {
+   "id": "en_slow_f36ebe96_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Whale",
+   "speech": "Whale",
+   "source": "lamina/animais_91/en"
+  },
+  {
+   "id": "en_slow_f3ac9ae3_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "thumb",
+   "speech": "thumb",
+   "source": "english/fonema/ph_th_unvoiced/exemplo"
+  },
+  {
+   "id": "en_slow_f4b2c848_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "beach",
+   "speech": "beach",
+   "source": "corpus/72"
   },
   {
    "id": "en_slow_f55c314b_5",
@@ -692,12 +2684,36 @@
    "source": "juega.benvida.01/ingles/pulso"
   },
   {
+   "id": "en_slow_f590e1e5_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "umbrella",
+   "speech": "umbrella",
+   "source": "english/fonema/ph_short_u/exemplo"
+  },
+  {
    "id": "en_slow_f60d2779_7",
    "lang": "en",
    "style": "slow",
    "text": "FREEZE!",
    "speech": "FREEZE!",
    "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.03/ingles"
+  },
+  {
+   "id": "en_slow_f75afb6b_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "ring",
+   "speech": "ring",
+   "source": "corpus/697"
+  },
+  {
+   "id": "en_slow_f78ddc50_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "cow",
+   "speech": "cow",
+   "source": "corpus/1227"
   },
   {
    "id": "en_slow_f8a56cde_5",
@@ -708,12 +2724,100 @@
    "source": "juega.auga.01/ingles/preguntas"
   },
   {
+   "id": "en_slow_fac2972f_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Smile",
+   "speech": "Smile",
+   "source": "lamina/vocab_66/en"
+  },
+  {
+   "id": "en_slow_fba634fd_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pebble",
+   "speech": "Pebble",
+   "source": "lamina/vigo_nat_118/en"
+  },
+  {
+   "id": "en_slow_fce32734_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "summer",
+   "speech": "summer",
+   "source": "corpus/828"
+  },
+  {
    "id": "en_slow_fdba13cf_5",
    "lang": "en",
    "style": "slow",
    "text": "Sweet",
    "speech": "Sweet",
    "source": "juega.cores.01/ingles/conto"
+  },
+  {
+   "id": "en_slow_fea8bfd9_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Paper",
+   "speech": "Paper",
+   "source": "lamina/vocab_44/en"
+  },
+  {
+   "id": "en_slow_fefb9588_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "blanket",
+   "speech": "blanket",
+   "source": "corpus/1096"
+  },
+  {
+   "id": "en_tutor_009f34ec_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The patient tortoise",
+   "speech": "The patient tortoise",
+   "source": "lamina/cuento_ilus_196/en"
+  },
+  {
+   "id": "en_tutor_00a19c7e_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Peek-a-boo, where are you?",
+   "speech": "Peekaboo, where are you?",
+   "source": "conto/conto_012_a_careta_sorrinte_qu/tpr"
+  },
+  {
+   "id": "en_tutor_00bc2030_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Barefoot steps on the green grass!",
+   "speech": "Barefoot steps on the green grass!",
+   "source": "conto/conto_038_a_herba_verde_que_ol/tpr"
+  },
+  {
+   "id": "en_tutor_017919bf_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "pay attention",
+   "speech": "pay attention",
+   "source": "english/colocacion/col-4/fullCollocation"
+  },
+  {
+   "id": "en_tutor_018ef7e1_50",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Thank you very much in advance for your kind help.",
+   "speech": "Thank you very much in advance for your kind help.",
+   "source": "english/colocacion/col-7/naturalContext"
+  },
+  {
+   "id": "en_tutor_01e61533_46",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The warm room was filled with bright sunlight.",
+   "speech": "The warm room was filled with bright sunlight.",
+   "source": "english/colocacion/col-6/naturalContext"
   },
   {
    "id": "en_tutor_025fe12c_33",
@@ -724,12 +2828,76 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/fase/3/cmd/cmd.xuno.6i.03/ingles"
   },
   {
+   "id": "en_tutor_0261d4dd_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Falling leaf, twirl to the floor!",
+   "speech": "Falling leaf, twirl to the floor!",
+   "source": "conto/conto_004_a_folla_vermella_que/tpr"
+  },
+  {
    "id": "en_tutor_026434ec_42",
    "lang": "en",
    "style": "tutor",
    "text": "Sleep in the flower until the sun wakes up",
    "speech": "Sleep in the flower until the sun wakes up",
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/fase/3/cmd/cmd.marzo.5i.03/ingles"
+  },
+  {
+   "id": "en_tutor_02644b01_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hello friend, hands up high!",
+   "speech": "Hello friend, hands up high!",
+   "source": "conto/historia_benvida_escola/tpr"
+  },
+  {
+   "id": "en_tutor_02dc0d68_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hands holding together",
+   "speech": "Hands holding together",
+   "source": "lamina/cuento_ilus_177/en"
+  },
+  {
+   "id": "en_tutor_03325c55_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Write in your logbook: tides are high!",
+   "speech": "Write in your logbook: tides are high!",
+   "source": "conto/conto_081_o_caderno_de_bit_cor/tpr"
+  },
+  {
+   "id": "en_tutor_0384e422_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "make a decision",
+   "speech": "make a decision",
+   "source": "english/colocacion/col-3/fullCollocation"
+  },
+  {
+   "id": "en_tutor_03b08789_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "V · Violin",
+   "speech": "V · Violin",
+   "source": "lamina/flashcard_v_violin/en"
+  },
+  {
+   "id": "en_tutor_04110c8e_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "F · Fish",
+   "speech": "F · Fish",
+   "source": "lamina/flashcard_f_fish/en"
+  },
+  {
+   "id": "en_tutor_0438cc66_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "R · Rain",
+   "speech": "R · Rain",
+   "source": "lamina/flashcard_r_rain/en"
   },
   {
    "id": "en_tutor_04961ff4_33",
@@ -740,12 +2908,68 @@
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/fase/3/cmd/cmd.novembro.5i.03/ingles"
   },
   {
+   "id": "en_tutor_04ca37ef_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "One loud clap: Boom!",
+   "speech": "One loud clap: Boom!",
+   "source": "lamina/emocions_corp_168/tpr"
+  },
+  {
+   "id": "en_tutor_05b8300d_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A Guía Hill",
+   "speech": "A Guía Hill",
+   "source": "lamina/vigo_nat_102/en"
+  },
+  {
+   "id": "en_tutor_05e7bdc3_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "play together",
+   "speech": "play together",
+   "source": "english/word/en_together/colocacion"
+  },
+  {
    "id": "en_tutor_0607f50d_33",
    "lang": "en",
    "style": "tutor",
    "text": "Now the group copies your pattern",
    "speech": "Now the group copies your pattern",
    "source": "asamblea.segundo_ciclo.maio.6_infantil/fase/3/cmd/cmd.maio.6i.02/ingles"
+  },
+  {
+   "id": "en_tutor_0641b63b_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Make a roof with your hands",
+   "speech": "Make a roof with your hands",
+   "source": "lamina/vocab_27/tpr"
+  },
+  {
+   "id": "en_tutor_077dc739_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Offer hands forward with a gift",
+   "speech": "Offer hands forward with a gift",
+   "source": "lamina/escola_rut_137/tpr"
+  },
+  {
+   "id": "en_tutor_07856e44_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "in advance",
+   "speech": "in advance",
+   "source": "english/colocacion/col-7/fullCollocation"
+  },
+  {
+   "id": "en_tutor_07eae26c_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rise slowly from a seed to bloom",
+   "speech": "Rise slowly from a seed to bloom",
+   "source": "lamina/cuento_ilus_187/tpr"
   },
   {
    "id": "en_tutor_08127677_24",
@@ -756,12 +2980,44 @@
    "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/3/cmd/cmd.maio.0_2.01/ingles"
   },
   {
+   "id": "en_tutor_08aa3eee_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "heavy rain",
+   "speech": "heavy rain",
+   "source": "english/colocacion/col-9/fullCollocation"
+  },
+  {
    "id": "en_tutor_09ae9cd0_48",
    "lang": "en",
    "style": "tutor",
    "text": "The sea sleeps: put the cloth down and lie still",
    "speech": "The sea sleeps: put the cloth down and lie still",
    "source": "asamblea.segundo_ciclo.xuno.5_infantil/fase/3/cmd/cmd.xuno.5i.03/ingles"
+  },
+  {
+   "id": "en_tutor_09bffb14_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "listen to music",
+   "speech": "listen to music",
+   "source": "english/word/en_listen/colocacion"
+  },
+  {
+   "id": "en_tutor_0a8f45bd_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Form a shelter with your arms",
+   "speech": "Form a shelter with your arms",
+   "source": "lamina/vigo_nat_98/tpr"
+  },
+  {
+   "id": "en_tutor_0a928ef0_45",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open your arms wide to welcome the sunny day!",
+   "speech": "Open your arms wide to welcome the sunny day!",
+   "source": "lamina/flashcard_s_sun/tpr"
   },
   {
    "id": "en_tutor_0b5d3fd3_23",
@@ -780,6 +3036,30 @@
    "source": "juega.follas.01/ingles/exploracion"
   },
   {
+   "id": "en_tutor_0bce8969_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Munch an apple! Crunch, crunch!",
+   "speech": "Munch an apple! Crunch, crunch!",
+   "source": "lamina/flashcard_a_apple/tpr"
+  },
+  {
+   "id": "en_tutor_0bd22099_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wave to the boat docking at port",
+   "speech": "Wave to the boat docking at port",
+   "source": "lamina/cuento_ilus_189/tpr"
+  },
+  {
+   "id": "en_tutor_0c02126d_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gentle rocking to lullaby rhythm",
+   "speech": "Gentle rocking to lullaby rhythm",
+   "source": "lamina/emocions_corp_169/tpr"
+  },
+  {
    "id": "en_tutor_0ce80be6_45",
    "lang": "en",
    "style": "tutor",
@@ -796,6 +3076,62 @@
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.02/ingles"
   },
   {
+   "id": "en_tutor_0d5074e4_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Purr softly: Purrr-purrr",
+   "speech": "Purr softly: Purrrpurrr",
+   "source": "lamina/animais_68/tpr"
+  },
+  {
+   "id": "en_tutor_0dd55a28_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tap the xylophone keys: Ting, ting, tong!",
+   "speech": "Tap the xylophone keys: Ting, ting, tong!",
+   "source": "lamina/flashcard_x_xylophone/tpr"
+  },
+  {
+   "id": "en_tutor_0dfe5810_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Step in rhythm around the circle",
+   "speech": "Step in rhythm around the circle",
+   "source": "lamina/escola_rut_141/tpr"
+  },
+  {
+   "id": "en_tutor_0e164450_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Purr softly like a happy cat!",
+   "speech": "Purr softly like a happy cat!",
+   "source": "conto/conto_010_o_gati_o_que_ronrone/tpr"
+  },
+  {
+   "id": "en_tutor_0e21d4ab_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Splash gently in the puddle",
+   "speech": "Splash gently in the puddle",
+   "source": "lamina/vigo_nat_106/tpr"
+  },
+  {
+   "id": "en_tutor_0e9f90a7_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tidy up time",
+   "speech": "Tidy up time",
+   "source": "lamina/escola_rut_128/en"
+  },
+  {
+   "id": "en_tutor_0ed9cc01_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Morning Circle",
+   "speech": "Morning Circle",
+   "source": "lamina/escola_rut_122/en"
+  },
+  {
    "id": "en_tutor_0efb3bd9_34",
    "lang": "en",
    "style": "tutor",
@@ -804,12 +3140,60 @@
    "source": "asamblea.segundo_ciclo.maio.6_infantil/fase/3/cmd/cmd.maio.6i.01/ingles"
   },
   {
+   "id": "en_tutor_0f576486_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hand on heart: Tell family our tale",
+   "speech": "Hand on heart: Tell family our tale",
+   "source": "lamina/escola_rut_146/tpr"
+  },
+  {
+   "id": "en_tutor_0f9fe81d_55",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Close your eyes and make a soft sleeping sound: Shhh...",
+   "speech": "Close your eyes and make a soft sleeping sound: Shhh...",
+   "source": "lamina/flashcard_m_moon/tpr"
+  },
+  {
+   "id": "en_tutor_10748771_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Taking turns",
+   "speech": "Taking turns",
+   "source": "lamina/escola_rut_136/en"
+  },
+  {
    "id": "en_tutor_10c3fa85_32",
    "lang": "en",
    "style": "tutor",
    "text": "Dive deep and find a white shell",
    "speech": "Dive deep and find a white shell",
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/3/cmd/cmd.xuno.4i.03/ingles"
+  },
+  {
+   "id": "en_tutor_10d074c2_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Giant waves, row your boat!",
+   "speech": "Giant waves, row your boat!",
+   "source": "conto/conto_001_l_a_e_a_cuncha_m_gic/tpr"
+  },
+  {
+   "id": "en_tutor_10d0faf9_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rain boots splash",
+   "speech": "Rain boots splash",
+   "source": "lamina/cuento_ilus_186/en"
+  },
+  {
+   "id": "en_tutor_10fe19c8_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wrap scarf around neck",
+   "speech": "Wrap scarf around neck",
+   "source": "lamina/cuento_ilus_181/tpr"
   },
   {
    "id": "en_tutor_1190eb8d_19",
@@ -828,6 +3212,14 @@
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/1/cue"
   },
   {
+   "id": "en_tutor_11df4cb1_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Laugh out loud with open arms",
+   "speech": "Laugh out loud with open arms",
+   "source": "lamina/emocions_corp_147/tpr"
+  },
+  {
    "id": "en_tutor_11fd8671_26",
    "lang": "en",
    "style": "tutor",
@@ -836,12 +3228,36 @@
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/fase/3/cmd/cmd.febreiro.4i.02/ingles"
   },
   {
+   "id": "en_tutor_12b2bfc7_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Red means stop, green means walk!",
+   "speech": "Red means stop, green means walk!",
+   "source": "conto/conto_062_o_cami_o_seguro_cara/tpr"
+  },
+  {
+   "id": "en_tutor_12ba6be3_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "speak clearly",
+   "speech": "speak clearly",
+   "source": "english/colocacion/col-5/fullCollocation"
+  },
+  {
    "id": "en_tutor_12ccaa9f_29",
    "lang": "en",
    "style": "tutor",
    "text": "Roll the pumpkin on the floor",
    "speech": "Roll the pumpkin on the floor",
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.02/ingles"
+  },
+  {
+   "id": "en_tutor_12dce664_226",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'Let’s explore the garden path and find autumn pinecones.', 'translation': {'gl': 'Imos explorar o camiño do xardín e atopar piñas de outono.', 'es': 'Vamos a explorar el camino del jardín y encontrar piñas de otoño.'}}",
+   "speech": "{'en': 'Let’s explore the garden path and find autumn pinecones.', 'translation': {'gl': 'Imos explorar o camiño do xardín e atopar piñas de outono.', 'es': 'Vamos a explorar el camino del jardín y encontrar piñas de otoño.'}}",
+   "source": "english/word/en_explore/naturalPhrase"
   },
   {
    "id": "en_tutor_1330bd85_32",
@@ -860,12 +3276,36 @@
    "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/3/cmd/cmd.novembro.2_3.02/ingles"
   },
   {
+   "id": "en_tutor_13d84d50_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Brush up and down gently",
+   "speech": "Brush up and down gently",
+   "source": "lamina/vocab_41/tpr"
+  },
+  {
    "id": "en_tutor_1437968b_39",
    "lang": "en",
    "style": "tutor",
    "text": "The sun comes back: shake the water off",
    "speech": "The sun comes back: shake the water off",
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.03/ingles"
+  },
+  {
+   "id": "en_tutor_14601d3f_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wipe a teardrop with soft finger",
+   "speech": "Wipe a teardrop with soft finger",
+   "source": "lamina/emocions_corp_154/tpr"
+  },
+  {
+   "id": "en_tutor_14632c2c_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The sharing bee",
+   "speech": "The sharing bee",
+   "source": "lamina/cuento_ilus_201/en"
   },
   {
    "id": "en_tutor_149daaa9_17",
@@ -876,12 +3316,60 @@
    "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.02/ingles"
   },
   {
+   "id": "en_tutor_14b4e59b_7",
+   "lang": "en",
+   "style": "tutor",
+   "text": "C · Cat",
+   "speech": "C · Cat",
+   "source": "lamina/flashcard_c_cat/en"
+  },
+  {
+   "id": "en_tutor_14c6387a_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Join hands in morning circle",
+   "speech": "Join hands in morning circle",
+   "source": "lamina/escola_rut_122/tpr"
+  },
+  {
+   "id": "en_tutor_152fc5c6_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Eight arms moving, dance the tide!",
+   "speech": "Eight arms moving, dance the tide!",
+   "source": "conto/conto_051_o_disfrace_do_polvo_/tpr"
+  },
+  {
    "id": "en_tutor_1567e3b7_14",
    "lang": "en",
    "style": "tutor",
    "text": "Rub your hands",
    "speech": "Rub your hands",
    "source": "juega.auga.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_157c8626_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Soft touch",
+   "speech": "Soft touch",
+   "source": "lamina/emocions_corp_167/en"
+  },
+  {
+   "id": "en_tutor_15d8c2d0_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Buzz sound: Bzzzzz!",
+   "speech": "Buzz sound: Bzzzzz!",
+   "source": "lamina/animais_77/tpr"
+  },
+  {
+   "id": "en_tutor_162c03b4_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "curious about",
+   "speech": "curious about",
+   "source": "english/word/en_curious/colocacion"
   },
   {
    "id": "en_tutor_163761e4_25",
@@ -892,12 +3380,28 @@
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/3/cmd/cmd.abril.4i.02/ingles"
   },
   {
+   "id": "en_tutor_17649384_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hold compass steady, step three paces south!",
+   "speech": "Hold compass steady, step three paces south!",
+   "source": "conto/conto_095_o_mapa_do_tesouro_da/tpr"
+  },
+  {
    "id": "en_tutor_18097eb6_31",
    "lang": "en",
    "style": "tutor",
    "text": "Head, shoulders, knees and toes",
    "speech": "Head, shoulders, knees and toes",
    "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.01/ingles"
+  },
+  {
+   "id": "en_tutor_18303e26_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Roar with soft bear paws",
+   "speech": "Roar with soft bear paws",
+   "source": "lamina/animais_89/tpr"
   },
   {
    "id": "en_tutor_18675de5_34",
@@ -932,6 +3436,46 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/1/cue"
   },
   {
+   "id": "en_tutor_191240eb_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cross thumbs and flutter wings",
+   "speech": "Cross thumbs and flutter wings",
+   "source": "lamina/animais_76/tpr"
+  },
+  {
+   "id": "en_tutor_19f3c30b_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sit down gently and quiet",
+   "speech": "Sit down gently and quiet",
+   "source": "lamina/vocab_29/tpr"
+  },
+  {
+   "id": "en_tutor_1b1e17b5_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Follow the tracks, step by step!",
+   "speech": "Follow the tracks, step by step!",
+   "source": "conto/conto_050_as_pegadas_misterios/tpr"
+  },
+  {
+   "id": "en_tutor_1c073533_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "May I have some fresh water, please?",
+   "speech": "May I have some fresh water, please?",
+   "source": "english/scenario/sc_snack_water/turn/0"
+  },
+  {
+   "id": "en_tutor_1c098cf2_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "ready to explore",
+   "speech": "ready to explore",
+   "source": "english/word/en_explore/colocacion"
+  },
+  {
    "id": "en_tutor_1c757abb_41",
    "lang": "en",
    "style": "tutor",
@@ -948,6 +3492,22 @@
    "source": "juega.mar.01/ingles/ponteCasa"
   },
   {
+   "id": "en_tutor_1eeaf238_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dip fingers into smooth paint",
+   "speech": "Dip fingers into smooth paint",
+   "source": "lamina/escola_rut_138/tpr"
+  },
+  {
+   "id": "en_tutor_1fc32f22_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "observe nature",
+   "speech": "observe nature",
+   "source": "english/word/en_observe/colocacion"
+  },
+  {
    "id": "en_tutor_202cc169_36",
    "lang": "en",
    "style": "tutor",
@@ -956,12 +3516,44 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.01/ingles"
   },
   {
+   "id": "en_tutor_204c66ed_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Warm direct eye contact and smile",
+   "speech": "Warm direct eye contact and smile",
+   "source": "lamina/escola_rut_144/tpr"
+  },
+  {
+   "id": "en_tutor_208eab43_59",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look down by the green moss: what is crawling on that bark?",
+   "speech": "Look down by the green moss: what is crawling on that bark?",
+   "source": "english/scenario/sc_nature_discovery/turn/0"
+  },
+  {
+   "id": "en_tutor_2117d6ad_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Old Port",
+   "speech": "Old Port",
+   "source": "lamina/vigo_nat_103/en"
+  },
+  {
    "id": "en_tutor_21455565_33",
    "lang": "en",
    "style": "tutor",
    "text": "Warm your hands and rub them fast",
    "speech": "Warm your hands and rub them fast",
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.03/ingles"
+  },
+  {
+   "id": "en_tutor_232e7fc6_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sing out loud: La-la-la!",
+   "speech": "Sing out loud: Lalala!",
+   "source": "lamina/emocions_corp_160/tpr"
   },
   {
    "id": "en_tutor_236cf81f_46",
@@ -988,12 +3580,92 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/fase/3/cmd/cmd.xuno.6i.02/ingles"
   },
   {
+   "id": "en_tutor_25867b25_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rainbow across the bay",
+   "speech": "Rainbow across the bay",
+   "source": "lamina/cuento_ilus_197/en"
+  },
+  {
+   "id": "en_tutor_25dc74fc_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Squeeze fist tight: Hard rock!",
+   "speech": "Squeeze fist tight: Hard rock!",
+   "source": "lamina/vigo_nat_118/tpr"
+  },
+  {
    "id": "en_tutor_25e40601_14",
    "lang": "en",
    "style": "tutor",
    "text": "Dry your toes!",
    "speech": "Dry your toes!",
    "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.03/ingles"
+  },
+  {
+   "id": "en_tutor_261c7b85_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sing with the sea, hold the eternal wave!",
+   "speech": "Sing with the sea, hold the eternal wave!",
+   "source": "conto/conto_100_a_canci_n_eterna_da_/tpr"
+  },
+  {
+   "id": "en_tutor_266b1a2d_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Beat the drum at seventy-two!",
+   "speech": "Beat the drum at seventytwo!",
+   "source": "conto/conto_011_o_tambor_do_entroido/tpr"
+  },
+  {
+   "id": "en_tutor_267341b0_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Slow deep breathing: In and out",
+   "speech": "Slow deep breathing: In and out",
+   "source": "lamina/escola_rut_126/tpr"
+  },
+  {
+   "id": "en_tutor_26e1d2ef_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bloom wide open to the sky!",
+   "speech": "Bloom wide open to the sky!",
+   "source": "conto/conto_014_a_flor_amarela_que_b/tpr"
+  },
+  {
+   "id": "en_tutor_270230bd_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "splash water",
+   "speech": "splash water",
+   "source": "english/word/en_water/colocacion"
+  },
+  {
+   "id": "en_tutor_2768f089_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Reach high to hang your coat",
+   "speech": "Reach high to hang your coat",
+   "source": "lamina/escola_rut_134/tpr"
+  },
+  {
+   "id": "en_tutor_27d08a6c_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Keep the beat, steady and calm!",
+   "speech": "Keep the beat, steady and calm!",
+   "source": "conto/conto_046_o_reloxo_da_escola_q/tpr"
+  },
+  {
+   "id": "en_tutor_28f8321e_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "keep a promise",
+   "speech": "keep a promise",
+   "source": "english/colocacion/col-8/fullCollocation"
   },
   {
    "id": "en_tutor_290caad1_43",
@@ -1004,12 +3676,76 @@
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/cmd/cmd.febreiro.6i.01/ingles"
   },
   {
+   "id": "en_tutor_29a66694_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Greet all citizens with a tail wag",
+   "speech": "Greet all citizens with a tail wag",
+   "source": "lamina/cuento_ilus_202/tpr"
+  },
+  {
+   "id": "en_tutor_2b1fb102_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "E · Elephant",
+   "speech": "E · Elephant",
+   "source": "lamina/flashcard_e_elephant/en"
+  },
+  {
+   "id": "en_tutor_2baa92ce_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cup the camelia petal with gentle hands!",
+   "speech": "Cup the camelia petal with gentle hands!",
+   "source": "conto/conto_074_a_flor_de_camelia_qu/tpr"
+  },
+  {
+   "id": "en_tutor_2c09abb0_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Castro Hill",
+   "speech": "Castro Hill",
+   "source": "lamina/vigo_nat_100/en"
+  },
+  {
+   "id": "en_tutor_2c3333ff_51",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Take a slow, deep breath to feel calm and centered.",
+   "speech": "Take a slow, deep breath to feel calm and centered.",
+   "source": "english/colocacion/col-2/naturalContext"
+  },
+  {
    "id": "en_tutor_2c4a5317_15",
    "lang": "en",
    "style": "tutor",
    "text": "Touch your head",
    "speech": "Touch your head",
    "source": "juega.corpo.01/ingles/pulso"
+  },
+  {
+   "id": "en_tutor_2c809785_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Take your time to make a good decision.",
+   "speech": "Take your time to make a good decision.",
+   "source": "english/colocacion/col-3/naturalContext"
+  },
+  {
+   "id": "en_tutor_2caa549b_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Turn off tap: save every clear drop!",
+   "speech": "Turn off tap: save every clear drop!",
+   "source": "conto/conto_096_a_choiva_que_recarga/tpr"
+  },
+  {
+   "id": "en_tutor_2cc9ae7c_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Scribble softly in the air",
+   "speech": "Scribble softly in the air",
+   "source": "lamina/vocab_43/tpr"
   },
   {
    "id": "en_tutor_2ce4e1b5_31",
@@ -1020,12 +3756,36 @@
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.02/ingles"
   },
   {
+   "id": "en_tutor_2cf2ea4a_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Warm winter wool",
+   "speech": "Warm winter wool",
+   "source": "lamina/cuento_ilus_181/en"
+  },
+  {
    "id": "en_tutor_2d262c58_40",
    "lang": "en",
    "style": "tutor",
    "text": "Good morning animals! Stretch your paws!",
    "speech": "Good morning animals! Stretch your paws!",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_2e7ac236_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gentle heartbeat taps on chest",
+   "speech": "Gentle heartbeat taps on chest",
+   "source": "lamina/escola_rut_130/tpr"
+  },
+  {
+   "id": "en_tutor_2e7c29cf_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tiny caterpillar crawls slow and soft!",
+   "speech": "Tiny caterpillar crawls slow and soft!",
+   "source": "conto/conto_045_o_eiruga_que_quer_a_/tpr"
   },
   {
    "id": "en_tutor_2f07e85f_31",
@@ -1044,12 +3804,36 @@
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/fase/3/cmd/cmd.novembro.5i.02/ingles"
   },
   {
+   "id": "en_tutor_2f87b475_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Shake the tambourine: Cha-cha-cha!",
+   "speech": "Shake the tambourine: Chachacha!",
+   "source": "conto/conto_031_o_meco_travieso_que_/tpr"
+  },
+  {
+   "id": "en_tutor_2fafca35_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pat tummy softly",
+   "speech": "Pat tummy softly",
+   "source": "lamina/vocab_61/tpr"
+  },
+  {
    "id": "en_tutor_2fd20253_23",
    "lang": "en",
    "style": "tutor",
    "text": "Crunch, crunch, crunch!",
    "speech": "Crunch, crunch, crunch!",
    "source": "juega.follas.01/ingles/ponteCasa"
+  },
+  {
+   "id": "en_tutor_2fef6657_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Whoosh goes the wind, bend your knees!",
+   "speech": "Whoosh goes the wind, bend your knees!",
+   "source": "conto/conto_006_o_vento_que_sopraba_/tpr"
   },
   {
    "id": "en_tutor_3038d105_33",
@@ -1060,12 +3844,36 @@
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/cmd/cmd.abril.5i.02/ingles"
   },
   {
+   "id": "en_tutor_3066b0c1_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Drum the floor with soft palms",
+   "speech": "Drum the floor with soft palms",
+   "source": "lamina/cuento_ilus_190/tpr"
+  },
+  {
+   "id": "en_tutor_3075b19a_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Oak tree",
+   "speech": "Oak tree",
+   "source": "lamina/vigo_nat_113/en"
+  },
+  {
    "id": "en_tutor_30ac49c2_16",
    "lang": "en",
    "style": "tutor",
    "text": "Splash the water",
    "speech": "Splash the water",
    "source": "juega.auga.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_30fef5a3_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Vigo festive lights",
+   "speech": "Vigo festive lights",
+   "source": "lamina/cuento_ilus_182/en"
   },
   {
    "id": "en_tutor_315b185b_43",
@@ -1076,12 +3884,108 @@
    "source": "asamblea.primeiro_ciclo.marzo.2_3_anos/fase/3/cmd/cmd.marzo.2_3.01/ingles"
   },
   {
+   "id": "en_tutor_318d59fb_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch red, taste sweet fruit!",
+   "speech": "Touch red, taste sweet fruit!",
+   "source": "conto/conto_013_a_cesta_de_froitas_d/tpr"
+  },
+  {
+   "id": "en_tutor_32245219_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Q · Quiet",
+   "speech": "Q · Quiet",
+   "source": "lamina/flashcard_q_quiet/en"
+  },
+  {
+   "id": "en_tutor_33105bbd_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The lion and the brave mouse",
+   "speech": "The lion and the brave mouse",
+   "source": "lamina/cuento_ilus_192/en"
+  },
+  {
    "id": "en_tutor_3368a295_48",
    "lang": "en",
    "style": "tutor",
    "text": "Step slowly, do not spill the water in the river",
    "speech": "Step slowly, do not spill the water in the river",
    "source": "asamblea.segundo_ciclo.xaneiro.6_infantil/fase/3/cmd/cmd.xaneiro.6i.01/ingles"
+  },
+  {
+   "id": "en_tutor_338d820f_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Jumping fish",
+   "speech": "Jumping fish",
+   "source": "lamina/cuento_ilus_173/en"
+  },
+  {
+   "id": "en_tutor_34d896ae_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bend your joints, breath from diaphragm!",
+   "speech": "Bend your joints, breath from diaphragm!",
+   "source": "conto/conto_083_o_esquema_corporal_d/tpr"
+  },
+  {
+   "id": "en_tutor_3528e2ec_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch your toes",
+   "speech": "Touch your toes",
+   "source": "lamina/vocab_37/tpr"
+  },
+  {
+   "id": "en_tutor_35f898cb_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cuddle under tree branch arms",
+   "speech": "Cuddle under tree branch arms",
+   "source": "lamina/cuento_ilus_191/tpr"
+  },
+  {
+   "id": "en_tutor_36552bba_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cup hand asking for clean water",
+   "speech": "Cup hand asking for clean water",
+   "source": "lamina/emocions_corp_152/tpr"
+  },
+  {
+   "id": "en_tutor_36933156_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch your head with both hands",
+   "speech": "Touch your head with both hands",
+   "source": "lamina/emocions_corp_156/tpr"
+  },
+  {
+   "id": "en_tutor_36cf961d_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dancing leaf",
+   "speech": "Dancing leaf",
+   "source": "lamina/vigo_nat_115/en"
+  },
+  {
+   "id": "en_tutor_372d1cca_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Water sprouts gently with tiny drops!",
+   "speech": "Water sprouts gently with tiny drops!",
+   "source": "conto/conto_073_a_horta_biodin_mica_/tpr"
+  },
+  {
+   "id": "en_tutor_37305386_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Walk with silent steps in the palace garden!",
+   "speech": "Walk with silent steps in the palace garden!",
+   "source": "conto/conto_094_a_camelia_branca_dos/tpr"
   },
   {
    "id": "en_tutor_37797cbe_42",
@@ -1100,12 +4004,36 @@
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/fase/3/cmd/cmd.febreiro.4i.03/ingles"
   },
   {
+   "id": "en_tutor_38aa1f21_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "I wonder why",
+   "speech": "I wonder why",
+   "source": "english/word/en_wonder/colocacion"
+  },
+  {
+   "id": "en_tutor_38d2e3e1_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Breathe deep the fresh grass",
+   "speech": "Breathe deep the fresh grass",
+   "source": "lamina/escola_rut_140/tpr"
+  },
+  {
    "id": "en_tutor_39329cf4_41",
    "lang": "en",
    "style": "tutor",
    "text": "Gentle touch. Soft tummy, warm and sweet!",
    "speech": "Gentle touch. Soft tummy, warm and sweet!",
    "source": "calendario/tramo/0_6/fraseIngles"
+  },
+  {
+   "id": "en_tutor_39482041_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch the ancient stones with care!",
+   "speech": "Touch the ancient stones with care!",
+   "source": "conto/conto_063_o_segredo_das_pedras/tpr"
   },
   {
    "id": "en_tutor_3963516e_14",
@@ -1132,6 +4060,38 @@
    "source": "juega.choiva.01/ingles/pulso"
   },
   {
+   "id": "en_tutor_3aaa1e23_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hold neighbor palm with care",
+   "speech": "Hold neighbor palm with care",
+   "source": "lamina/cuento_ilus_177/tpr"
+  },
+  {
+   "id": "en_tutor_3b198c14_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Snuggle your head to rest",
+   "speech": "Snuggle your head to rest",
+   "source": "lamina/vocab_33/tpr"
+  },
+  {
+   "id": "en_tutor_3ba929ab_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Take your time, read with peace!",
+   "speech": "Take your time, read with peace!",
+   "source": "conto/conto_055_o_caracol_que_levaba/tpr"
+  },
+  {
+   "id": "en_tutor_3c3bbf84_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Squeeze neighbor hands softly",
+   "speech": "Squeeze neighbor hands softly",
+   "source": "lamina/cuento_ilus_176/tpr"
+  },
+  {
    "id": "en_tutor_3c6f028c_54",
    "lang": "en",
    "style": "tutor",
@@ -1156,6 +4116,14 @@
    "source": "juega.animais.01/ingles/ponteCasa"
   },
   {
+   "id": "en_tutor_3d466e52_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open hands like a book",
+   "speech": "Open hands like a book",
+   "source": "lamina/vocab_35/tpr"
+  },
+  {
    "id": "en_tutor_3d9db757_36",
    "lang": "en",
    "style": "tutor",
@@ -1172,12 +4140,68 @@
    "source": "juega.inverno.01/ingles/ponteCasa"
   },
   {
+   "id": "en_tutor_3e1e801b_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Friendly puppy wags his tail!",
+   "speech": "Friendly puppy wags his tail!",
+   "source": "conto/conto_030_o_can_dinamita_e_os_/tpr"
+  },
+  {
+   "id": "en_tutor_3e803b12_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "K · Kite",
+   "speech": "K · Kite",
+   "source": "lamina/flashcard_k_kite/en"
+  },
+  {
+   "id": "en_tutor_3ee36fb4_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stir the hot chestnut pot",
+   "speech": "Stir the hot chestnut pot",
+   "source": "lamina/cuento_ilus_180/tpr"
+  },
+  {
+   "id": "en_tutor_40662955_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Drop shoulders and breathe ease",
+   "speech": "Drop shoulders and breathe ease",
+   "source": "lamina/emocions_corp_148/tpr"
+  },
+  {
+   "id": "en_tutor_4076ee6a_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Row your arms with the waves",
+   "speech": "Row your arms with the waves",
+   "source": "lamina/vigo_nat_97/tpr"
+  },
+  {
    "id": "en_tutor_40978900_35",
    "lang": "en",
    "style": "tutor",
    "text": "Rain, rain, tap, tap, little drops!",
    "speech": "Rain, rain, tap, tap, little drops!",
    "source": "juega.primavera.01/ingles/ponteCasa"
+  },
+  {
+   "id": "en_tutor_40e49839_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Point at the dancing boat",
+   "speech": "Point at the dancing boat",
+   "source": "lamina/cuento_ilus_172/tpr"
+  },
+  {
+   "id": "en_tutor_40e56be9_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fish mouth pop: Pop-pop!",
+   "speech": "Fish mouth pop: Poppop!",
+   "source": "lamina/animais_71/tpr"
   },
   {
    "id": "en_tutor_40fbe822_51",
@@ -1188,12 +4212,156 @@
    "source": "calendario/tramo/12_18/fraseIngles"
   },
   {
+   "id": "en_tutor_4124d9d5_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gallop free across the mountain top!",
+   "speech": "Gallop free across the mountain top!",
+   "source": "conto/conto_069_o_cabalo_que_corr_a_/tpr"
+  },
+  {
+   "id": "en_tutor_42ae097e_204",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'I wonder where the little ladybug is flying today!', 'translation': {'gl': 'Pregúntome onde estará voando hoxe a nosa xoaniña!', 'es': '¡Me pregunto adónde estará volando hoy nuestra mariquita!'}}",
+   "speech": "{'en': 'I wonder where the little ladybug is flying today!', 'translation': {'gl': 'Pregúntome onde estará voando hoxe a nosa xoaniña!', 'es': '¡Me pregunto adónde estará volando hoy nuestra mariquita!'}}",
+   "source": "english/word/en_wonder/naturalPhrase"
+  },
+  {
+   "id": "en_tutor_43865c7b_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cíes Islands",
+   "speech": "Cíes Islands",
+   "source": "lamina/vigo_nat_98/en"
+  },
+  {
+   "id": "en_tutor_43fd68db_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "March high knees climbing the hill",
+   "speech": "March high knees climbing the hill",
+   "source": "lamina/vigo_nat_100/tpr"
+  },
+  {
+   "id": "en_tutor_44afae16_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rub palms warm and place on cheeks",
+   "speech": "Rub palms warm and place on cheeks",
+   "source": "lamina/emocions_corp_170/tpr"
+  },
+  {
+   "id": "en_tutor_44e187ac_217",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'Listen quietly: do you hear the gentle rain tapping?', 'translation': {'gl': 'Escoita amodo: ¿escoitas o tamborileo da choiva amodiño?', 'es': 'Escucha despacio: ¿oyes el tamborileo de la lluvia suavemente?'}}",
+   "speech": "{'en': 'Listen quietly: do you hear the gentle rain tapping?', 'translation': {'gl': 'Escoita amodo: ¿escoitas o tamborileo da choiva amodiño?', 'es': 'Escucha despacio: ¿oyes el tamborileo de la lluvia suavemente?'}}",
+   "source": "english/word/en_listen/naturalPhrase"
+  },
+  {
+   "id": "en_tutor_4538ef7e_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Serve sweet drops to friends",
+   "speech": "Serve sweet drops to friends",
+   "source": "lamina/cuento_ilus_201/tpr"
+  },
+  {
+   "id": "en_tutor_45466693_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Float your hands like soft clouds",
+   "speech": "Float your hands like soft clouds",
+   "source": "lamina/vigo_nat_105/tpr"
+  },
+  {
+   "id": "en_tutor_45786e8e_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Reach high and pop the sky bubbles!",
+   "speech": "Reach high and pop the sky bubbles!",
+   "source": "conto/conto_057_as_burbullas_que_que/tpr"
+  },
+  {
+   "id": "en_tutor_46864e5f_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Close eyes softly under moonlight",
+   "speech": "Close eyes softly under moonlight",
+   "source": "lamina/cuento_ilus_199/tpr"
+  },
+  {
+   "id": "en_tutor_46ca433e_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "O · Octopus",
+   "speech": "O · Octopus",
+   "source": "lamina/flashcard_o_octopus/en"
+  },
+  {
    "id": "en_tutor_477b99ce_10",
    "lang": "en",
    "style": "tutor",
    "text": "Big waves!",
    "speech": "Big waves!",
    "source": "juega.mar.01/ingles/pulso"
+  },
+  {
+   "id": "en_tutor_478470f2_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Make a funny face and freeze!",
+   "speech": "Make a funny face and freeze!",
+   "source": "conto/conto_052_a_chifla_do_meco_que/tpr"
+  },
+  {
+   "id": "en_tutor_47d5fc10_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Splash clean water, happy dry pants!",
+   "speech": "Splash clean water, happy dry pants!",
+   "source": "conto/conto_040_a_festa_da_auga_e_o_/tpr"
+  },
+  {
+   "id": "en_tutor_47f9aa54_175",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'We tidy up our wooden blocks together.', 'translation': {'gl': 'Recollemos os nosos bloques de madeira xuntos.', 'es': 'Recogemos nuestros bloques de madera juntos.'}}",
+   "speech": "{'en': 'We tidy up our wooden blocks together.', 'translation': {'gl': 'Recollemos os nosos bloques de madeira xuntos.', 'es': 'Recogemos nuestros bloques de madera juntos.'}}",
+   "source": "english/word/en_together/naturalPhrase"
+  },
+  {
+   "id": "en_tutor_480124f4_222",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'If we observe patiently, the butterfly will open its wings.', 'translation': {'gl': 'Se observamos con paciencia, a bolboreta abrirá as súas ás.', 'es': 'Si observamos con paciencia, la mariposa abrirá sus alas.'}}",
+   "speech": "{'en': 'If we observe patiently, the butterfly will open its wings.', 'translation': {'gl': 'Se observamos con paciencia, a bolboreta abrirá as súas ás.', 'es': 'Si observamos con paciencia, la mariposa abrirá sus alas.'}}",
+   "source": "english/word/en_observe/naturalPhrase"
+  },
+  {
+   "id": "en_tutor_48152388_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hands jump like fish over waves",
+   "speech": "Hands jump like fish over waves",
+   "source": "lamina/cuento_ilus_173/tpr"
+  },
+  {
+   "id": "en_tutor_485af178_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sweet lullaby",
+   "speech": "Sweet lullaby",
+   "source": "lamina/emocions_corp_169/en"
+  },
+  {
+   "id": "en_tutor_492534a8_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dance for rain, stamp your bare feet!",
+   "speech": "Dance for rain, stamp your bare feet!",
+   "source": "conto/conto_058_a_danza_da_chuvia_do/tpr"
   },
   {
    "id": "en_tutor_493e85fa_31",
@@ -1212,12 +4380,76 @@
    "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.02/ingles"
   },
   {
+   "id": "en_tutor_4b055d2b_55",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tip-tap fingers on thighs like gentle rain: Plip, plop!",
+   "speech": "Tiptap fingers on thighs like gentle rain: Plip, plop!",
+   "source": "lamina/flashcard_r_rain/tpr"
+  },
+  {
+   "id": "en_tutor_4b3bfcb0_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put on your warm winter hat!",
+   "speech": "Put on your warm winter hat!",
+   "source": "lamina/flashcard_h_hat/tpr"
+  },
+  {
    "id": "en_tutor_4b6f66b4_21",
    "lang": "en",
    "style": "tutor",
    "text": "Warm... soft and warm",
    "speech": "Warm... soft and warm",
    "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/3/cmd/cmd.decembro.0_2.02/ingles"
+  },
+  {
+   "id": "en_tutor_4bc3a6ec_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Spin the top and skip the skipping rope!",
+   "speech": "Spin the top and skip the skipping rope!",
+   "source": "conto/conto_078_a_batalla_dos_xogos_/tpr"
+  },
+  {
+   "id": "en_tutor_4bc7db0c_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Peer into water: see the cloudy sky!",
+   "speech": "Peer into water: see the cloudy sky!",
+   "source": "conto/conto_076_o_charco_que_era_un_/tpr"
+  },
+  {
+   "id": "en_tutor_4c70c8df_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Let sand trickle through fingers",
+   "speech": "Let sand trickle through fingers",
+   "source": "lamina/vigo_nat_117/tpr"
+  },
+  {
+   "id": "en_tutor_4d0eccea_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "stay curious",
+   "speech": "stay curious",
+   "source": "english/word/en_curious/colocacion"
+  },
+  {
+   "id": "en_tutor_4d0edf71_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crawling time",
+   "speech": "Crawling time",
+   "source": "lamina/escola_rut_131/en"
+  },
+  {
+   "id": "en_tutor_4d7bc5f2_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bounce like a soft ball",
+   "speech": "Bounce like a soft ball",
+   "source": "lamina/vocab_45/tpr"
   },
   {
    "id": "en_tutor_4e0c5d60_47",
@@ -1228,12 +4460,108 @@
    "source": "asamblea.segundo_ciclo.xaneiro.6_infantil/fase/3/cmd/cmd.xaneiro.6i.02/ingles"
   },
   {
+   "id": "en_tutor_4e2c5091_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Make room under the shady tree!",
+   "speech": "Make room under the shady tree!",
+   "source": "conto/conto_064_o_le_n_que_aprendeu_/tpr"
+  },
+  {
+   "id": "en_tutor_4e72a575_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Roots drink deep from crystal springs!",
+   "speech": "Roots drink deep from crystal springs!",
+   "source": "conto/conto_084_a_lenda_dos_carballo/tpr"
+  },
+  {
    "id": "en_tutor_4e8d2dac_18",
    "lang": "en",
    "style": "tutor",
    "text": "Open your umbrella",
    "speech": "Open your umbrella",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/fase/3/cmd/cmd.xaneiro.4i.03/ingles"
+  },
+  {
+   "id": "en_tutor_4f9810d5_65",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wonderful. Let’s take off our little coat and hang it right here.",
+   "speech": "Wonderful. Let’s take off our little coat and hang it right here.",
+   "source": "english/scenario/sc_morning_welcome/turn/2"
+  },
+  {
+   "id": "en_tutor_4fd6ff80_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Swim swift otter, splash downstream!",
+   "speech": "Swim swift otter, splash downstream!",
+   "source": "conto/conto_089_a_lontra_que_xogaba_/tpr"
+  },
+  {
+   "id": "en_tutor_5035d8f3_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tick-tock head swing at 72 bpm",
+   "speech": "Ticktock head swing at 72 bpm",
+   "source": "lamina/vocab_50/tpr"
+  },
+  {
+   "id": "en_tutor_508cf10e_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Singing beat",
+   "speech": "Singing beat",
+   "source": "lamina/escola_rut_130/en"
+  },
+  {
+   "id": "en_tutor_513395f6_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Show your treasure to all friends!",
+   "speech": "Show your treasure to all friends!",
+   "source": "conto/conto_041_a_mochila_dos_tesour/tpr"
+  },
+  {
+   "id": "en_tutor_51499c37_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Straighten your spine tall",
+   "speech": "Straighten your spine tall",
+   "source": "lamina/emocions_corp_164/tpr"
+  },
+  {
+   "id": "en_tutor_5197ba12_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stir warm soup, smell good food!",
+   "speech": "Stir warm soup, smell good food!",
+   "source": "conto/conto_028_a_sopa_quenti_a_que_/tpr"
+  },
+  {
+   "id": "en_tutor_51d5b30d_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Garden awakening",
+   "speech": "Garden awakening",
+   "source": "lamina/cuento_ilus_187/en"
+  },
+  {
+   "id": "en_tutor_5273dada_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Raise your hand gently: My turn!",
+   "speech": "Raise your hand gently: My turn!",
+   "source": "lamina/escola_rut_136/tpr"
+  },
+  {
+   "id": "en_tutor_5276540e_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gentle bleat: Baaa-baaa!",
+   "speech": "Gentle bleat: Baaabaaa!",
+   "source": "lamina/animais_80/tpr"
   },
   {
    "id": "en_tutor_5341283c_24",
@@ -1244,12 +4572,84 @@
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/fase/3/cmd/cmd.xaneiro.4i.02/ingles"
   },
   {
+   "id": "en_tutor_5366a4a4_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Come under, room for two!",
+   "speech": "Come under, room for two!",
+   "source": "conto/conto_035_o_paraugas_amarelo_q/tpr"
+  },
+  {
+   "id": "en_tutor_53a9df80_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow a sweet kiss",
+   "speech": "Blow a sweet kiss",
+   "source": "lamina/vocab_63/tpr"
+  },
+  {
+   "id": "en_tutor_53ba3280_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Z · Zebra",
+   "speech": "Z · Zebra",
+   "source": "lamina/flashcard_z_zebra/en"
+  },
+  {
+   "id": "en_tutor_540e1dac_7",
+   "lang": "en",
+   "style": "tutor",
+   "text": "D · Dog",
+   "speech": "D · Dog",
+   "source": "lamina/flashcard_d_dog/en"
+  },
+  {
    "id": "en_tutor_54e12bb1_37",
    "lang": "en",
    "style": "tutor",
    "text": "Sneak quietly like a fox in the woods",
    "speech": "Sneak quietly like a fox in the woods",
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/fase/3/cmd/cmd.febreiro.5i.03/ingles"
+  },
+  {
+   "id": "en_tutor_55eb161c_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Drift in wind and land gently",
+   "speech": "Drift in wind and land gently",
+   "source": "lamina/cuento_ilus_198/tpr"
+  },
+  {
+   "id": "en_tutor_56dccaef_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Warm eye contact and goodbye kiss",
+   "speech": "Warm eye contact and goodbye kiss",
+   "source": "lamina/escola_rut_133/tpr"
+  },
+  {
+   "id": "en_tutor_5746c796_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Row your boat on the sea waves!",
+   "speech": "Row your boat on the sea waves!",
+   "source": "lamina/flashcard_b_boat/tpr"
+  },
+  {
+   "id": "en_tutor_575868ab_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Home bridge",
+   "speech": "Home bridge",
+   "source": "lamina/escola_rut_146/en"
+  },
+  {
+   "id": "en_tutor_57fe354c_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Flutter wings and land on flower!",
+   "speech": "Flutter wings and land on flower!",
+   "source": "conto/conto_034_a_bolboreta_azul_que/tpr"
   },
   {
    "id": "en_tutor_582de662_37",
@@ -1260,12 +4660,52 @@
    "source": "asamblea.segundo_ciclo.outubro.5_infantil/fase/3/cmd/cmd.outubro.5i.03/ingles"
   },
   {
+   "id": "en_tutor_5876a0cf_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cup ear listening to ocean roar",
+   "speech": "Cup ear listening to ocean roar",
+   "source": "lamina/cuento_ilus_174/tpr"
+  },
+  {
+   "id": "en_tutor_589b8c05_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Carnival mask",
+   "speech": "Carnival mask",
+   "source": "lamina/cuento_ilus_184/en"
+  },
+  {
    "id": "en_tutor_58d788af_35",
    "lang": "en",
    "style": "tutor",
    "text": "Your turn: now you are the sculptor",
    "speech": "Your turn: now you are the sculptor",
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/cmd/cmd.febreiro.6i.02/ingles"
+  },
+  {
+   "id": "en_tutor_5932e782_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wave paw welcoming friends",
+   "speech": "Wave paw welcoming friends",
+   "source": "lamina/cuento_ilus_175/tpr"
+  },
+  {
+   "id": "en_tutor_594e4c61_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crawl on all fours like a cat",
+   "speech": "Crawl on all fours like a cat",
+   "source": "lamina/escola_rut_131/tpr"
+  },
+  {
+   "id": "en_tutor_59749346_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Snack time",
+   "speech": "Snack time",
+   "source": "lamina/escola_rut_125/en"
   },
   {
    "id": "en_tutor_59a8ce4c_34",
@@ -1284,12 +4724,76 @@
    "source": "juega.cores.01/ingles/pulso"
   },
   {
+   "id": "en_tutor_5b8d5d21_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hug the tree and laugh with joy!",
+   "speech": "Hug the tree and laugh with joy!",
+   "source": "conto/conto_024_a__rbore_vella_de_ca/tpr"
+  },
+  {
+   "id": "en_tutor_5bd008ed_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Step on grass, soft little feet!",
+   "speech": "Step on grass, soft little feet!",
+   "source": "conto/conto_003_s3/tpr"
+  },
+  {
+   "id": "en_tutor_5d20dd5f_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Quiet sitting",
+   "speech": "Quiet sitting",
+   "source": "lamina/escola_rut_135/en"
+  },
+  {
+   "id": "en_tutor_5d579f88_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The midsummer frog dance",
+   "speech": "The midsummer frog dance",
+   "source": "lamina/cuento_ilus_204/en"
+  },
+  {
+   "id": "en_tutor_5d5bab71_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Splish, splash, rain! Puddle jump!",
+   "speech": "Splish, splash, rain! Puddle jump!",
+   "source": "conto/historia_choiva_vigo/tpr"
+  },
+  {
+   "id": "en_tutor_5d64d6ef_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open and close your shell hands",
+   "speech": "Open and close your shell hands",
+   "source": "lamina/animais_96/tpr"
+  },
+  {
    "id": "en_tutor_5d8833fb_24",
    "lang": "en",
    "style": "tutor",
    "text": "Soft tummy, tickle toes!",
    "speech": "Soft tummy, tickle toes!",
    "source": "juega.corpo.01/ingles/ponteCasa"
+  },
+  {
+   "id": "en_tutor_5d962c5f_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "gentle touch",
+   "speech": "gentle touch",
+   "source": "english/word/en_gentle/colocacion"
+  },
+  {
+   "id": "en_tutor_5dfca8b6_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Light a candle for the shortest day!",
+   "speech": "Light a candle for the shortest day!",
+   "source": "conto/conto_088_o_solsticio_de_inver/tpr"
   },
   {
    "id": "en_tutor_5e080abf_8",
@@ -1300,6 +4804,30 @@
    "source": "juega.choiva.01/ingles/matematicas"
   },
   {
+   "id": "en_tutor_5e238803_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gather leaves from the floor",
+   "speech": "Gather leaves from the floor",
+   "source": "lamina/vigo_nat_109/tpr"
+  },
+  {
+   "id": "en_tutor_5e562b88_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Mussel rafts",
+   "speech": "Mussel rafts",
+   "source": "lamina/vigo_nat_121/en"
+  },
+  {
+   "id": "en_tutor_5e901e60_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "hold hands together",
+   "speech": "hold hands together",
+   "source": "english/word/en_together/colocacion"
+  },
+  {
    "id": "en_tutor_601b7b2e_28",
    "lang": "en",
    "style": "tutor",
@@ -1308,12 +4836,124 @@
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/fase/3/cmd/cmd.marzo.4i.03/ingles"
   },
   {
+   "id": "en_tutor_6124d16f_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Two-foot jump into the puddle",
+   "speech": "Twofoot jump into the puddle",
+   "source": "lamina/cuento_ilus_186/tpr"
+  },
+  {
    "id": "en_tutor_614948d9_36",
    "lang": "en",
    "style": "tutor",
    "text": "Good morning wind! Cross your hands!",
    "speech": "Good morning wind! Cross your hands!",
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_61716092_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "gentle voice",
+   "speech": "gentle voice",
+   "source": "english/word/en_gentle/colocacion"
+  },
+  {
+   "id": "en_tutor_61c4f0dd_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sea wave",
+   "speech": "Sea wave",
+   "source": "lamina/vigo_nat_119/en"
+  },
+  {
+   "id": "en_tutor_61d03718_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "W · Water",
+   "speech": "W · Water",
+   "source": "lamina/flashcard_w_water/en"
+  },
+  {
+   "id": "en_tutor_61d7c0fb_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Flap wings gently",
+   "speech": "Flap wings gently",
+   "source": "lamina/animais_69/tpr"
+  },
+  {
+   "id": "en_tutor_62225a39_46",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Recite with rhythm, rhyme your favorite words!",
+   "speech": "Recite with rhythm, rhyme your favorite words!",
+   "source": "conto/conto_098_o_canto_das_letras_g/tpr"
+  },
+  {
+   "id": "en_tutor_622e4d4c_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Place toys gently in the basket",
+   "speech": "Place toys gently in the basket",
+   "source": "lamina/escola_rut_128/tpr"
+  },
+  {
+   "id": "en_tutor_625c220b_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tuck head inside shoulders",
+   "speech": "Tuck head inside shoulders",
+   "source": "lamina/animais_87/tpr"
+  },
+  {
+   "id": "en_tutor_62960f77_174",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'Be gentle with the kitten, soft hands only.', 'translation': {'gl': 'Sé agarimoso co gatiño, só mans suaves.', 'es': 'Sé cariñoso con el gatito, solo manos suaves.'}}",
+   "speech": "{'en': 'Be gentle with the kitten, soft hands only.', 'translation': {'gl': 'Sé agarimoso co gatiño, só mans suaves.', 'es': 'Sé cariñoso con el gatito, solo manos suaves.'}}",
+   "source": "english/word/en_gentle/naturalPhrase"
+  },
+  {
+   "id": "en_tutor_62a54109_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Finger to lips: Shhh, quiet time...",
+   "speech": "Finger to lips: Shhh, quiet time...",
+   "source": "lamina/flashcard_q_quiet/tpr"
+  },
+  {
+   "id": "en_tutor_62af3e89_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Give a hand and say hello!",
+   "speech": "Give a hand and say hello!",
+   "source": "conto/conto_021_o_encontro_na_porta_/tpr"
+  },
+  {
+   "id": "en_tutor_62d1ff62_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "observe changes",
+   "speech": "observe changes",
+   "source": "english/word/en_observe/colocacion"
+  },
+  {
+   "id": "en_tutor_62d9069b_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put flat hands on the table",
+   "speech": "Put flat hands on the table",
+   "source": "lamina/vocab_28/tpr"
+  },
+  {
+   "id": "en_tutor_62e20d8a_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Paint an arc from left to right",
+   "speech": "Paint an arc from left to right",
+   "source": "lamina/vigo_nat_108/tpr"
   },
   {
    "id": "en_tutor_6329a382_33",
@@ -1340,12 +4980,84 @@
    "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/3/cmd/cmd.novembro.2_3.01/ingles"
   },
   {
+   "id": "en_tutor_636cc712_175",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'Drink some fresh water, sip by sip.', 'translation': {'gl': 'Bebe un pouquiño de auga fresca, trago a trago.', 'es': 'Bebe un poquito de agua fresca, sorbo a sorbo.'}}",
+   "speech": "{'en': 'Drink some fresh water, sip by sip.', 'translation': {'gl': 'Bebe un pouquiño de auga fresca, trago a trago.', 'es': 'Bebe un poquito de agua fresca, sorbo a sorbo.'}}",
+   "source": "english/word/en_water/naturalPhrase"
+  },
+  {
+   "id": "en_tutor_63d55f83_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Leap like a dolphin in water",
+   "speech": "Leap like a dolphin in water",
+   "source": "lamina/animais_73/tpr"
+  },
+  {
+   "id": "en_tutor_642c7197_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Share the scarf, stay together warm!",
+   "speech": "Share the scarf, stay together warm!",
+   "source": "conto/conto_048_a_bufanda_longa_que_/tpr"
+  },
+  {
+   "id": "en_tutor_6589ce15_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Trace a big bright smile",
+   "speech": "Trace a big bright smile",
+   "source": "lamina/vocab_66/tpr"
+  },
+  {
+   "id": "en_tutor_65da1da0_270",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'Lúa is very curious about how sea snails build their shells.', 'translation': {'gl': 'Lúa sente moita curiosidade por como os caracois do mar constrúen as súas cunchas.', 'es': 'Lúa siente mucha curiosidad por cómo los caracoles de mar construyen sus conchas.'}}",
+   "speech": "{'en': 'Lúa is very curious about how sea snails build their shells.', 'translation': {'gl': 'Lúa sente moita curiosidade por como os caracois do mar constrúen as súas cunchas.', 'es': 'Lúa siente mucha curiosidad por cómo los caracoles de mar construyen sus conchas.'}}",
+   "source": "english/word/en_curious/naturalPhrase"
+  },
+  {
+   "id": "en_tutor_665807fc_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sit crossed-legged in circle",
+   "speech": "Sit crossedlegged in circle",
+   "source": "lamina/vocab_34/tpr"
+  },
+  {
+   "id": "en_tutor_66d44346_49",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Swim like a little fish, glide through the water!",
+   "speech": "Swim like a little fish, glide through the water!",
+   "source": "lamina/flashcard_f_fish/tpr"
+  },
+  {
+   "id": "en_tutor_670adef3_53",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Always drink clean, fresh water when playing outside.",
+   "speech": "Always drink clean, fresh water when playing outside.",
+   "source": "english/colocacion/col-1/naturalContext"
+  },
+  {
    "id": "en_tutor_671fb104_25",
    "lang": "en",
    "style": "tutor",
    "text": "Graze like a gentle sheep",
    "speech": "Graze like a gentle sheep",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/3/cmd/cmd.abril.4i.03/ingles"
+  },
+  {
+   "id": "en_tutor_67a2e0d4_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Reunion time",
+   "speech": "Reunion time",
+   "source": "lamina/escola_rut_145/en"
   },
   {
    "id": "en_tutor_67bb890d_23",
@@ -1356,12 +5068,44 @@
    "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.01/ingles"
   },
   {
+   "id": "en_tutor_6818c0d9_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dive under waves, see sea horses dance!",
+   "speech": "Dive under waves, see sea horses dance!",
+   "source": "conto/conto_097_a_batea_ecol_xica_e_/tpr"
+  },
+  {
+   "id": "en_tutor_685f6e2e_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Golden sand",
+   "speech": "Golden sand",
+   "source": "lamina/vigo_nat_117/en"
+  },
+  {
    "id": "en_tutor_68eb3e0f_11",
    "lang": "en",
    "style": "tutor",
    "text": "Shake hands",
    "speech": "Shake hands",
    "source": "juega.corpo.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_6930ec57_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Knead corn bread with strong warm hands!",
+   "speech": "Knead corn bread with strong warm hands!",
+   "source": "conto/conto_087_a_coci_a_das_av_as__/tpr"
+  },
+  {
+   "id": "en_tutor_698d97d5_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wave hello, open your palms!",
+   "speech": "Wave hello, open your palms!",
+   "source": "conto/conto_002_mans_que_sa_dan_na_a/tpr"
   },
   {
    "id": "en_tutor_69a33139_37",
@@ -1372,12 +5116,44 @@
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/cmd/cmd.abril.5i.01/ingles"
   },
   {
+   "id": "en_tutor_69a5b397_48",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Move your bow across the violin: Sweeeet melody!",
+   "speech": "Move your bow across the violin: Sweeeet melody!",
+   "source": "lamina/flashcard_v_violin/tpr"
+  },
+  {
+   "id": "en_tutor_69bdf0ef_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Scuttle sideways with pincer claws",
+   "speech": "Scuttle sideways with pincer claws",
+   "source": "lamina/animais_93/tpr"
+  },
+  {
    "id": "en_tutor_69cff027_35",
    "lang": "en",
    "style": "tutor",
    "text": "Little fish swimming under the sea!",
    "speech": "Little fish swimming under the sea!",
    "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.03/ingles"
+  },
+  {
+   "id": "en_tutor_6a1555dd_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Listen close, shake the wooden box!",
+   "speech": "Listen close, shake the wooden box!",
+   "source": "conto/conto_042_o_segredo_da_caixa_d/tpr"
+  },
+  {
+   "id": "en_tutor_6a1740d4_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sniff twice through the nose",
+   "speech": "Sniff twice through the nose",
+   "source": "lamina/emocions_corp_159/tpr"
   },
   {
    "id": "en_tutor_6ab8d505_15",
@@ -1388,12 +5164,44 @@
    "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.01/ingles"
   },
   {
+   "id": "en_tutor_6ac45e3f_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Twirl slowly around yourself",
+   "speech": "Twirl slowly around yourself",
+   "source": "lamina/vigo_nat_115/tpr"
+  },
+  {
+   "id": "en_tutor_6b62be55_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Lift open the treasure lid",
+   "speech": "Lift open the treasure lid",
+   "source": "lamina/vocab_56/tpr"
+  },
+  {
+   "id": "en_tutor_6c56dc3a_51",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Draw a big round circle in the air with both hands!",
+   "speech": "Draw a big round circle in the air with both hands!",
+   "source": "lamina/flashcard_p_pumpkin/tpr"
+  },
+  {
    "id": "en_tutor_6f2166ab_32",
    "lang": "en",
    "style": "tutor",
    "text": "Turn left and step over the rope",
    "speech": "Turn left and step over the rope",
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/cmd/cmd.decembro.6i.02/ingles"
+  },
+  {
+   "id": "en_tutor_6f44db42_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow wind: Fffff! Fly your kite high!",
+   "speech": "Blow wind: Fffff! Fly your kite high!",
+   "source": "lamina/flashcard_k_kite/tpr"
   },
   {
    "id": "en_tutor_6faa8925_10",
@@ -1404,12 +5212,84 @@
    "source": "juega.benvida.01/ingles/pulso"
   },
   {
+   "id": "en_tutor_6fc59023_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ring the high bell: Ding-dong!",
+   "speech": "Ring the high bell: Dingdong!",
+   "source": "lamina/vocab_49/tpr"
+  },
+  {
+   "id": "en_tutor_6fcdaf08_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wash face with sweet herbs of midsummer!",
+   "speech": "Wash face with sweet herbs of midsummer!",
+   "source": "conto/conto_080_a_gran_fogueira_de_s/tpr"
+  },
+  {
+   "id": "en_tutor_6ffd9662_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "L · Leaf",
+   "speech": "L · Leaf",
+   "source": "lamina/flashcard_l_leaf/en"
+  },
+  {
+   "id": "en_tutor_70d5c3f4_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cup your hands together to make a warm nest!",
+   "speech": "Cup your hands together to make a warm nest!",
+   "source": "lamina/flashcard_n_nest/tpr"
+  },
+  {
+   "id": "en_tutor_712ef2ad_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "listen carefully",
+   "speech": "listen carefully",
+   "source": "english/word/en_listen/colocacion"
+  },
+  {
+   "id": "en_tutor_71427727_57",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Here you go! Cold and clear. Hold the cup with two hands.",
+   "speech": "Here you go! Cold and clear. Hold the cup with two hands.",
+   "source": "english/scenario/sc_snack_water/turn/1"
+  },
+  {
+   "id": "en_tutor_716c4361_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Peek-a-boo: I see you!",
+   "speech": "Peekaboo: I see you!",
+   "source": "lamina/cuento_ilus_184/tpr"
+  },
+  {
    "id": "en_tutor_71aa4bb6_16",
    "lang": "en",
    "style": "tutor",
    "text": "Put on your hat!",
    "speech": "Put on your hat!",
    "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/3/cmd/cmd.xaneiro.0_2.01/ingles"
+  },
+  {
+   "id": "en_tutor_71f663ec_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Step barefoot on soft floor",
+   "speech": "Step barefoot on soft floor",
+   "source": "lamina/vigo_nat_99/tpr"
+  },
+  {
+   "id": "en_tutor_71fa52d7_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cupped hands behind ears to listen",
+   "speech": "Cupped hands behind ears to listen",
+   "source": "lamina/escola_rut_129/tpr"
   },
   {
    "id": "en_tutor_7205d855_36",
@@ -1428,6 +5308,70 @@
    "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.02/ingles"
   },
   {
+   "id": "en_tutor_72f9fe95_170",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'Hello, good morning! Let’s wash our hands.', 'translation': {'gl': 'Ola, bos días! Imos lavar as mans.', 'es': '¡Hola, buenos días! Vamos a lavarnos las manos.'}}",
+   "speech": "{'en': 'Hello, good morning! Let’s wash our hands.', 'translation': {'gl': 'Ola, bos días! Imos lavar as mans.', 'es': '¡Hola, buenos días! Vamos a lavarnos las manos.'}}",
+   "source": "english/word/en_hello/naturalPhrase"
+  },
+  {
+   "id": "en_tutor_7378e1e1_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Press knuckles into the floor",
+   "speech": "Press knuckles into the floor",
+   "source": "lamina/cuento_ilus_183/tpr"
+  },
+  {
+   "id": "en_tutor_737ceb65_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Circle hands on warm tummy",
+   "speech": "Circle hands on warm tummy",
+   "source": "lamina/emocions_corp_163/tpr"
+  },
+  {
+   "id": "en_tutor_740f6a6b_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stretch tall like a blooming flower",
+   "speech": "Stretch tall like a blooming flower",
+   "source": "lamina/vigo_nat_111/tpr"
+  },
+  {
+   "id": "en_tutor_746ea22a_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wave ribbon in gentle waves",
+   "speech": "Wave ribbon in gentle waves",
+   "source": "lamina/vocab_58/tpr"
+  },
+  {
+   "id": "en_tutor_7496981b_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hand over heart with warm smile",
+   "speech": "Hand over heart with warm smile",
+   "source": "lamina/emocions_corp_153/tpr"
+  },
+  {
+   "id": "en_tutor_74b11d98_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Smile at your reflection",
+   "speech": "Smile at your reflection",
+   "source": "lamina/vocab_54/tpr"
+  },
+  {
+   "id": "en_tutor_74da2ff3_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Breathe in deep, sleep soft and calm!",
+   "speech": "Breathe in deep, sleep soft and calm!",
+   "source": "conto/conto_008_s4/tpr"
+  },
+  {
    "id": "en_tutor_74f64a37_51",
    "lang": "en",
    "style": "tutor",
@@ -1436,12 +5380,84 @@
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.02/ingles"
   },
   {
+   "id": "en_tutor_751e3e3f_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crawl slowly like a snail",
+   "speech": "Crawl slowly like a snail",
+   "source": "lamina/animais_75/tpr"
+  },
+  {
+   "id": "en_tutor_7568ba55_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The traveling seed",
+   "speech": "The traveling seed",
+   "source": "lamina/cuento_ilus_198/en"
+  },
+  {
    "id": "en_tutor_7571f217_35",
    "lang": "en",
    "style": "tutor",
    "text": "Good morning rain! Open your hands!",
    "speech": "Good morning rain! Open your hands!",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_7630dc37_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look back with pride, leap forward with joy!",
+   "speech": "Look back with pride, leap forward with joy!",
+   "source": "conto/conto_099_a_despedida_da_escol/tpr"
+  },
+  {
+   "id": "en_tutor_764ed7da_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wash, wash your hands with clean warm water!",
+   "speech": "Wash, wash your hands with clean warm water!",
+   "source": "lamina/flashcard_w_water/tpr"
+  },
+  {
+   "id": "en_tutor_7671025d_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "natural wonder",
+   "speech": "natural wonder",
+   "source": "english/word/en_wonder/colocacion"
+  },
+  {
+   "id": "en_tutor_767ecc7d_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Peek-a-boo, I see your smile!",
+   "speech": "Peekaboo, I see your smile!",
+   "source": "conto/conto_002_s2/tpr"
+  },
+  {
+   "id": "en_tutor_770efc68_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Deep long sound: Moooo!",
+   "speech": "Deep long sound: Moooo!",
+   "source": "lamina/animais_79/tpr"
+  },
+  {
+   "id": "en_tutor_7715d102_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Lift the heavy branch together, team!",
+   "speech": "Lift the heavy branch together, team!",
+   "source": "conto/conto_067_o_neno_que_constru_u/tpr"
+  },
+  {
+   "id": "en_tutor_7775ffda_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "I · Island",
+   "speech": "I · Island",
+   "source": "lamina/flashcard_i_island/en"
   },
   {
    "id": "en_tutor_78573aba_16",
@@ -1458,6 +5474,30 @@
    "text": "Crunch, crunch!",
    "speech": "Crunch, crunch!",
    "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/3/cmd/cmd.novembro.0_2.02/ingles"
+  },
+  {
+   "id": "en_tutor_789740f5_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Back and forth wave motion",
+   "speech": "Back and forth wave motion",
+   "source": "lamina/vigo_nat_119/tpr"
+  },
+  {
+   "id": "en_tutor_78e2f11f_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Turn the key: Click!",
+   "speech": "Turn the key: Click!",
+   "source": "lamina/vocab_53/tpr"
+  },
+  {
+   "id": "en_tutor_78ffd836_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Leap like frog, high and brave!",
+   "speech": "Leap like frog, high and brave!",
+   "source": "conto/conto_036_a_ra_que_quer_a_salt/tpr"
   },
   {
    "id": "en_tutor_79c49ace_35",
@@ -1484,6 +5524,30 @@
    "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/3/cmd/cmd.xaneiro.2_3.01/ingles"
   },
   {
+   "id": "en_tutor_7a86896c_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "J · Juice",
+   "speech": "J · Juice",
+   "source": "lamina/flashcard_j_juice/en"
+  },
+  {
+   "id": "en_tutor_7b71b577_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Quiet breath",
+   "speech": "Quiet breath",
+   "source": "lamina/escola_rut_142/en"
+  },
+  {
+   "id": "en_tutor_7d556aa6_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rock gentle in your arms",
+   "speech": "Rock gentle in your arms",
+   "source": "lamina/vocab_46/tpr"
+  },
+  {
    "id": "en_tutor_7e583734_19",
    "lang": "en",
    "style": "tutor",
@@ -1508,6 +5572,62 @@
    "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/3/cmd/cmd.xaneiro.2_3.02/ingles"
   },
   {
+   "id": "en_tutor_7f468d47_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "warm water",
+   "speech": "warm water",
+   "source": "english/word/en_water/colocacion"
+  },
+  {
+   "id": "en_tutor_7ff258db_51",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open your umbrella: Click! Stay dry under the rain!",
+   "speech": "Open your umbrella: Click! Stay dry under the rain!",
+   "source": "lamina/flashcard_u_umbrella/tpr"
+  },
+  {
+   "id": "en_tutor_8028dc91_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Castrelos Park",
+   "speech": "Castrelos Park",
+   "source": "lamina/vigo_nat_101/en"
+  },
+  {
+   "id": "en_tutor_8077c07c_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "First day at school",
+   "speech": "First day at school",
+   "source": "lamina/cuento_ilus_175/en"
+  },
+  {
+   "id": "en_tutor_809191bc_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rub scallop shells: scrape in time!",
+   "speech": "Rub scallop shells: scrape in time!",
+   "source": "conto/conto_072_a_m_sica_das_cunchas/tpr"
+  },
+  {
+   "id": "en_tutor_8092c620_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wiggle your tail like a happy puppy!",
+   "speech": "Wiggle your tail like a happy puppy!",
+   "source": "lamina/flashcard_d_dog/tpr"
+  },
+  {
+   "id": "en_tutor_80a20078_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stomp feet to the beat",
+   "speech": "Stomp feet to the beat",
+   "source": "lamina/emocions_corp_162/tpr"
+  },
+  {
    "id": "en_tutor_80b583ce_14",
    "lang": "en",
    "style": "tutor",
@@ -1524,12 +5644,68 @@
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/cmd/cmd.decembro.6i.01/ingles"
   },
   {
+   "id": "en_tutor_81a415a8_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wave hand saying: Bye-bye!",
+   "speech": "Wave hand saying: Byebye!",
+   "source": "lamina/escola_rut_132/tpr"
+  },
+  {
+   "id": "en_tutor_829a3d3e_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Color harmony",
+   "speech": "Color harmony",
+   "source": "lamina/cuento_ilus_185/en"
+  },
+  {
+   "id": "en_tutor_82d14713_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow a bubble, pop it soft!",
+   "speech": "Blow a bubble, pop it soft!",
+   "source": "conto/conto_017_burbullas_de_xab_n_n/tpr"
+  },
+  {
    "id": "en_tutor_83137e55_36",
    "lang": "en",
    "style": "tutor",
    "text": "Tiptoe quietly to blow out the light",
    "speech": "Tiptoe quietly to blow out the light",
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.03/ingles"
+  },
+  {
+   "id": "en_tutor_831edf56_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Calming down",
+   "speech": "Calming down",
+   "source": "lamina/emocions_corp_155/en"
+  },
+  {
+   "id": "en_tutor_838f1cd4_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch your ears to listen close",
+   "speech": "Touch your ears to listen close",
+   "source": "lamina/emocions_corp_158/tpr"
+  },
+  {
+   "id": "en_tutor_839c675e_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "I am happy and ready to play!",
+   "speech": "I am happy and ready to play!",
+   "source": "english/scenario/sc_morning_welcome/turn/1"
+  },
+  {
+   "id": "en_tutor_83c248a0_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hold kite string swaying high",
+   "speech": "Hold kite string swaying high",
+   "source": "lamina/cuento_ilus_193/tpr"
   },
   {
    "id": "en_tutor_83d7e01c_33",
@@ -1548,12 +5724,44 @@
    "source": "asamblea.segundo_ciclo.maio.4_infantil/fase/1/cue"
   },
   {
+   "id": "en_tutor_8469d022_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "drink water",
+   "speech": "drink water",
+   "source": "english/word/en_water/colocacion"
+  },
+  {
    "id": "en_tutor_84896356_31",
    "lang": "en",
    "style": "tutor",
    "text": "Head, Shoulders, Knees and Toes",
    "speech": "Head, Shoulders, Knees and Toes",
    "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_848aeff2_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Close your eyes, sleep tight now!",
+   "speech": "Close your eyes, sleep tight now!",
+   "source": "conto/conto_008_a_l_mpada_que_alumea/tpr"
+  },
+  {
+   "id": "en_tutor_84aa56ff_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Make a beak: Quack-quack!",
+   "speech": "Make a beak: Quackquack!",
+   "source": "lamina/animais_84/tpr"
+  },
+  {
+   "id": "en_tutor_84c5d8be_54",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Good morning, sweet friend! How are you feeling today?",
+   "speech": "Good morning, sweet friend! How are you feeling today?",
+   "source": "english/scenario/sc_morning_welcome/turn/0"
   },
   {
    "id": "en_tutor_84cb0556_41",
@@ -1564,12 +5772,52 @@
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/fase/3/cmd/cmd.outubro.6i.03/ingles"
   },
   {
+   "id": "en_tutor_84cb96f1_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ribbit hop on the floor!",
+   "speech": "Ribbit hop on the floor!",
+   "source": "lamina/animais_70/tpr"
+  },
+  {
+   "id": "en_tutor_85468e90_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fly above the fjord, look down below!",
+   "speech": "Fly above the fjord, look down below!",
+   "source": "conto/conto_061_a_ponte_de_rande_e_a/tpr"
+  },
+  {
+   "id": "en_tutor_85512aa4_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open clenched fists into a bloom",
+   "speech": "Open clenched fists into a bloom",
+   "source": "lamina/vigo_nat_114/tpr"
+  },
+  {
    "id": "en_tutor_859f0293_16",
    "lang": "en",
    "style": "tutor",
    "text": "Swim like a fish",
    "speech": "Swim like a fish",
    "source": "juega.mar.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_85d2a7b0_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Full moon bedtime watch",
+   "speech": "Full moon bedtime watch",
+   "source": "lamina/cuento_ilus_199/en"
+  },
+  {
+   "id": "en_tutor_8693ba74_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "full of wonder",
+   "speech": "full of wonder",
+   "source": "english/word/en_wonder/colocacion"
   },
   {
    "id": "en_tutor_86df0f56_54",
@@ -1580,12 +5828,68 @@
    "source": "asamblea.segundo_ciclo.abril.6_infantil/fase/3/cmd/cmd.abril.6i.03/ingles"
   },
   {
+   "id": "en_tutor_880d3626_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Scurry fingers fast and light",
+   "speech": "Scurry fingers fast and light",
+   "source": "lamina/animais_86/tpr"
+  },
+  {
+   "id": "en_tutor_88352cef_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hold your cup with two hands and take a sip!",
+   "speech": "Hold your cup with two hands and take a sip!",
+   "source": "lamina/flashcard_j_juice/tpr"
+  },
+  {
    "id": "en_tutor_88397a8c_9",
    "lang": "en",
    "style": "tutor",
    "text": "Fall down",
    "speech": "Fall down",
    "source": "juega.follas.01/ingles/pulso"
+  },
+  {
+   "id": "en_tutor_888bd9dc_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sing harmony: two voices in the round!",
+   "speech": "Sing harmony: two voices in the round!",
+   "source": "conto/conto_085_o_magosto_popular_e_/tpr"
+  },
+  {
+   "id": "en_tutor_888f4017_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "catch a cold",
+   "speech": "catch a cold",
+   "source": "english/colocacion/col-10/fullCollocation"
+  },
+  {
+   "id": "en_tutor_88c47e6e_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Loud sound",
+   "speech": "Loud sound",
+   "source": "lamina/emocions_corp_168/en"
+  },
+  {
+   "id": "en_tutor_88d2de98_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look at starry lights above our heads!",
+   "speech": "Look at starry lights above our heads!",
+   "source": "conto/conto_068_a_noite_m_xica_das_l/tpr"
+  },
+  {
+   "id": "en_tutor_8905221b_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Clap your hands: we are growing tall!",
+   "speech": "Clap your hands: we are growing tall!",
+   "source": "conto/conto_020_o_gran_sol_que_despi/tpr"
   },
   {
    "id": "en_tutor_892969dc_8",
@@ -1604,12 +5908,68 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/fase/3/cmd/cmd.xuno.6i.01/ingles"
   },
   {
+   "id": "en_tutor_894ad20e_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Listen with open heart, speak kind words!",
+   "speech": "Listen with open heart, speak kind words!",
+   "source": "conto/conto_090_o_elefante_que_sab_a/tpr"
+  },
+  {
+   "id": "en_tutor_89ea09e1_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hands on belly: Breathe in and out",
+   "speech": "Hands on belly: Breathe in and out",
+   "source": "lamina/escola_rut_142/tpr"
+  },
+  {
+   "id": "en_tutor_8a8b29b6_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "N · Nest",
+   "speech": "N · Nest",
+   "source": "lamina/flashcard_n_nest/en"
+  },
+  {
    "id": "en_tutor_8b9117fe_35",
    "lang": "en",
    "style": "tutor",
    "text": "Walk to the hook and hang your coat",
    "speech": "Walk to the hook and hang your coat",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/ingles"
+  },
+  {
+   "id": "en_tutor_8bae687c_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pull blanket over shoulders",
+   "speech": "Pull blanket over shoulders",
+   "source": "lamina/vocab_59/tpr"
+  },
+  {
+   "id": "en_tutor_8bbd01ea_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Autumn leaves falling",
+   "speech": "Autumn leaves falling",
+   "source": "lamina/cuento_ilus_179/en"
+  },
+  {
+   "id": "en_tutor_8c08aeb6_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bask your face in warm light",
+   "speech": "Bask your face in warm light",
+   "source": "lamina/vigo_nat_104/tpr"
+  },
+  {
+   "id": "en_tutor_8c369edb_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Roots planted deep and firm",
+   "speech": "Roots planted deep and firm",
+   "source": "lamina/vigo_nat_113/tpr"
   },
   {
    "id": "en_tutor_8c3dc7d8_16",
@@ -1620,12 +5980,44 @@
    "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.01/ingles"
   },
   {
+   "id": "en_tutor_8d27270c_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hug yourself warm and tight",
+   "speech": "Hug yourself warm and tight",
+   "source": "lamina/vocab_64/tpr"
+  },
+  {
    "id": "en_tutor_8d836a41_27",
    "lang": "en",
    "style": "tutor",
    "text": "Red apple, sweet and yummy!",
    "speech": "Red apple, sweet and yummy!",
    "source": "juega.cores.01/ingles/ponteCasa"
+  },
+  {
+   "id": "en_tutor_8df33e17_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tickle toes and touch your nose!",
+   "speech": "Tickle toes and touch your nose!",
+   "source": "conto/conto_003_onde_est_n_as_c_xega/tpr"
+  },
+  {
+   "id": "en_tutor_8e01d650_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Form a bridge arch with fingertips",
+   "speech": "Form a bridge arch with fingertips",
+   "source": "lamina/cuento_ilus_203/tpr"
+  },
+  {
+   "id": "en_tutor_8e14455e_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Singing raindrops",
+   "speech": "Singing raindrops",
+   "source": "lamina/cuento_ilus_194/en"
   },
   {
    "id": "en_tutor_8e3296cb_39",
@@ -1652,12 +6044,44 @@
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.03/ingles"
   },
   {
+   "id": "en_tutor_90718a04_48",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wear your coat so you do not catch a cold today.",
+   "speech": "Wear your coat so you do not catch a cold today.",
+   "source": "english/colocacion/col-10/naturalContext"
+  },
+  {
+   "id": "en_tutor_90d93a2f_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Point to something yellow around you!",
+   "speech": "Point to something yellow around you!",
+   "source": "lamina/flashcard_y_yellow/tpr"
+  },
+  {
+   "id": "en_tutor_90f71f0d_47",
+   "lang": "en",
+   "style": "tutor",
+   "text": "True friends always try hard to keep a promise.",
+   "speech": "True friends always try hard to keep a promise.",
+   "source": "english/colocacion/col-8/naturalContext"
+  },
+  {
    "id": "en_tutor_912cc72e_12",
    "lang": "en",
    "style": "tutor",
    "text": "Pulse 72 BPM",
    "speech": "Pulse 72 BPM",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/2/cue"
+  },
+  {
+   "id": "en_tutor_91fea21f_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Animal footprints",
+   "speech": "Animal footprints",
+   "source": "lamina/cuento_ilus_183/en"
   },
   {
    "id": "en_tutor_93dd927d_10",
@@ -1676,6 +6100,54 @@
    "source": "juega.animais.01/ingles/pulso"
   },
   {
+   "id": "en_tutor_93f5609d_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "breathe in",
+   "speech": "breathe in",
+   "source": "english/word/en_breathe/colocacion"
+  },
+  {
+   "id": "en_tutor_9463cd2c_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Magosto feast",
+   "speech": "Magosto feast",
+   "source": "lamina/cuento_ilus_180/en"
+  },
+  {
+   "id": "en_tutor_94c6efd7_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The boy who loved drumming",
+   "speech": "The boy who loved drumming",
+   "source": "lamina/cuento_ilus_190/en"
+  },
+  {
+   "id": "en_tutor_94d935b3_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Soar high, glide on sea breeze!",
+   "speech": "Soar high, glide on sea breeze!",
+   "source": "conto/conto_039_a_gaivota_curiosa_da/tpr"
+  },
+  {
+   "id": "en_tutor_9576593b_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Build the bridge with hands held high!",
+   "speech": "Build the bridge with hands held high!",
+   "source": "conto/conto_060_o_gran_abrazo_do_fin/tpr"
+  },
+  {
+   "id": "en_tutor_9671ab99_53",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We put on our yellow boots because of the heavy rain.",
+   "speech": "We put on our yellow boots because of the heavy rain.",
+   "source": "english/colocacion/col-9/naturalContext"
+  },
+  {
    "id": "en_tutor_9702483d_38",
    "lang": "en",
    "style": "tutor",
@@ -1684,12 +6156,100 @@
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/1/cue"
   },
   {
+   "id": "en_tutor_9744ae8d_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Water sensory play",
+   "speech": "Water sensory play",
+   "source": "lamina/escola_rut_139/en"
+  },
+  {
+   "id": "en_tutor_97dadd88_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Glide arms like a seagull",
+   "speech": "Glide arms like a seagull",
+   "source": "lamina/animais_72/tpr"
+  },
+  {
+   "id": "en_tutor_98034385_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Float your boat made of bark!",
+   "speech": "Float your boat made of bark!",
+   "source": "conto/conto_056_a_gran_charca_do_par/tpr"
+  },
+  {
+   "id": "en_tutor_9807a40f_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Circle of friends",
+   "speech": "Circle of friends",
+   "source": "lamina/cuento_ilus_176/en"
+  },
+  {
+   "id": "en_tutor_9887203c_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sway your arms like autumn trees!",
+   "speech": "Sway your arms like autumn trees!",
+   "source": "conto/conto_044_a_fraga_m_xica_dos_c/tpr"
+  },
+  {
+   "id": "en_tutor_98f4034a_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The silver fish treasure",
+   "speech": "The silver fish treasure",
+   "source": "lamina/cuento_ilus_200/en"
+  },
+  {
+   "id": "en_tutor_9997fe31_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hide and spread tentacle fingers",
+   "speech": "Hide and spread tentacle fingers",
+   "source": "lamina/animais_74/tpr"
+  },
+  {
+   "id": "en_tutor_999850be_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tap fingertips on window sill",
+   "speech": "Tap fingertips on window sill",
+   "source": "lamina/cuento_ilus_194/tpr"
+  },
+  {
+   "id": "en_tutor_99e54022_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Jump in puddles: Splish, splash!",
+   "speech": "Jump in puddles: Splish, splash!",
+   "source": "conto/conto_015_botas_vermellas_e_ch/tpr"
+  },
+  {
    "id": "en_tutor_99fd03c0_32",
    "lang": "en",
    "style": "tutor",
    "text": "Good morning sea! Row your boat!",
    "speech": "Good morning sea! Row your boat!",
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_9b5799c9_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open limbs like a sea star",
+   "speech": "Open limbs like a sea star",
+   "source": "lamina/animais_94/tpr"
+  },
+  {
+   "id": "en_tutor_9c5cf2a0_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Every object makes music: tap and scrape!",
+   "speech": "Every object makes music: tap and scrape!",
+   "source": "conto/conto_092_a_orquestra_dos_sons/tpr"
   },
   {
    "id": "en_tutor_9cd42162_26",
@@ -1708,12 +6268,52 @@
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/cmd/cmd.outubro.4i.03/ingles"
   },
   {
+   "id": "en_tutor_9d13edaf_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "March along with big cardboard heads!",
+   "speech": "March along with big cardboard heads!",
+   "source": "conto/conto_071_o_entroido_dos_cabez/tpr"
+  },
+  {
+   "id": "en_tutor_9d491afb_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stack blocks one on top of another",
+   "speech": "Stack blocks one on top of another",
+   "source": "lamina/escola_rut_127/tpr"
+  },
+  {
+   "id": "en_tutor_9d694acf_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Snip, snip with two fingers",
+   "speech": "Snip, snip with two fingers",
+   "source": "lamina/vocab_42/tpr"
+  },
+  {
+   "id": "en_tutor_9d853e4e_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rub hands making bubbles",
+   "speech": "Rub hands making bubbles",
+   "source": "lamina/vocab_39/tpr"
+  },
+  {
    "id": "en_tutor_9e75475c_46",
    "lang": "en",
    "style": "tutor",
    "text": "Take the smock, turn around and give it to Noa",
    "speech": "Take the smock, turn around and give it to Noa",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.02/ingles"
+  },
+  {
+   "id": "en_tutor_9e77061c_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "wave hello",
+   "speech": "wave hello",
+   "source": "english/word/en_hello/colocacion"
   },
   {
    "id": "en_tutor_9f0f3823_7",
@@ -1732,12 +6332,28 @@
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.01/ingles"
   },
   {
+   "id": "en_tutor_9ff2a73a_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Jump like a frog, run and stop!",
+   "speech": "Jump like a frog, run and stop!",
+   "source": "conto/conto_007_s3/tpr"
+  },
+  {
    "id": "en_tutor_a014daa2_17",
    "lang": "en",
    "style": "tutor",
    "text": "Put on Your Shoes",
    "speech": "Put on Your Shoes",
    "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_a021dbed_7",
+   "lang": "en",
+   "style": "tutor",
+   "text": "S · Sun",
+   "speech": "S · Sun",
+   "source": "lamina/flashcard_s_sun/en"
   },
   {
    "id": "en_tutor_a071d065_16",
@@ -1756,12 +6372,76 @@
    "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/3/cmd/cmd.abril.2_3.02/ingles"
   },
   {
+   "id": "en_tutor_a13249ef_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch head, tummy, toes",
+   "speech": "Touch head, tummy, toes",
+   "source": "lamina/cuento_ilus_178/tpr"
+  },
+  {
+   "id": "en_tutor_a1e826a6_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "breathe out",
+   "speech": "breathe out",
+   "source": "english/word/en_breathe/colocacion"
+  },
+  {
+   "id": "en_tutor_a330a2c7_48",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look far away with hand over eyes: island ahead!",
+   "speech": "Look far away with hand over eyes: island ahead!",
+   "source": "lamina/flashcard_i_island/tpr"
+  },
+  {
+   "id": "en_tutor_a3628348_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Paint double rainbow across sea sky!",
+   "speech": "Paint double rainbow across sea sky!",
+   "source": "conto/conto_075_o_arco_da_vella_dobr/tpr"
+  },
+  {
+   "id": "en_tutor_a4428958_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Flicker fingers like light",
+   "speech": "Flicker fingers like light",
+   "source": "lamina/vocab_55/tpr"
+  },
+  {
+   "id": "en_tutor_a46a0060_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "observe carefully",
+   "speech": "observe carefully",
+   "source": "english/word/en_observe/colocacion"
+  },
+  {
+   "id": "en_tutor_a47cb22e_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hug so tight, feel the heartbeat calm!",
+   "speech": "Hug so tight, feel the heartbeat calm!",
+   "source": "conto/conto_004_s4/tpr"
+  },
+  {
    "id": "en_tutor_a4a8b6ba_9",
    "lang": "en",
    "style": "tutor",
    "text": "Take off!",
    "speech": "Take off!",
    "source": "asamblea.primeiro_ciclo.xaneiro.0_2_anos/fase/3/cmd/cmd.xaneiro.0_2.02/ingles"
+  },
+  {
+   "id": "en_tutor_a4c766f6_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wash your hands, dry them dry!",
+   "speech": "Wash your hands, dry them dry!",
+   "source": "conto/historia_auga_hixiene/tpr"
   },
   {
    "id": "en_tutor_a4d73802_43",
@@ -1780,12 +6460,84 @@
    "source": "asamblea.segundo_ciclo.xaneiro.6_infantil/fase/3/cmd/cmd.xaneiro.6i.03/ingles"
   },
   {
+   "id": "en_tutor_a5fb3885_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Run, run, run and freeze like stone!",
+   "speech": "Run, run, run and freeze like stone!",
+   "source": "conto/conto_023_os_p_s_que_saben_sal/tpr"
+  },
+  {
+   "id": "en_tutor_a67a629d_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gentle drop-off",
+   "speech": "Gentle dropoff",
+   "source": "lamina/escola_rut_133/en"
+  },
+  {
+   "id": "en_tutor_a6a48521_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "explore outdoors",
+   "speech": "explore outdoors",
+   "source": "english/word/en_explore/colocacion"
+  },
+  {
    "id": "en_tutor_a710a4d0_28",
    "lang": "en",
    "style": "tutor",
    "text": "Touch your knees and freeze!",
    "speech": "Touch your knees and freeze!",
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.03/ingles"
+  },
+  {
+   "id": "en_tutor_a7551022_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Land softly like a light feather",
+   "speech": "Land softly like a light feather",
+   "source": "lamina/escola_rut_135/tpr"
+  },
+  {
+   "id": "en_tutor_a75abb6b_7",
+   "lang": "en",
+   "style": "tutor",
+   "text": "H · Hat",
+   "speech": "H · Hat",
+   "source": "lamina/flashcard_h_hat/en"
+  },
+  {
+   "id": "en_tutor_a79a0bfd_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pull the heavy rope from green water!",
+   "speech": "Pull the heavy rope from green water!",
+   "source": "conto/conto_079_o_misterio_dos_mexil/tpr"
+  },
+  {
+   "id": "en_tutor_a8da10f8_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "say hello",
+   "speech": "say hello",
+   "source": "english/word/en_hello/colocacion"
+  },
+  {
+   "id": "en_tutor_a913c605_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crush leaves: Crunch, crunch!",
+   "speech": "Crush leaves: Crunch, crunch!",
+   "source": "lamina/cuento_ilus_179/tpr"
+  },
+  {
+   "id": "en_tutor_a9197dbe_43",
+   "lang": "en",
+   "style": "tutor",
+   "text": "North, South, East and West: find your way!",
+   "speech": "North, South, East and West: find your way!",
+   "source": "conto/conto_086_a_rosa_dos_ventos_do/tpr"
   },
   {
    "id": "en_tutor_a93ded17_16",
@@ -1796,12 +6548,36 @@
    "source": "juega.primavera.01/ingles/exploracion"
   },
   {
+   "id": "en_tutor_a97cc9eb_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pincer grasp with thumb and finger",
+   "speech": "Pincer grasp with thumb and finger",
+   "source": "lamina/vocab_57/tpr"
+  },
+  {
    "id": "en_tutor_a9941e75_29",
    "lang": "en",
    "style": "tutor",
    "text": "Clap the rhythm on your chest",
    "speech": "Clap the rhythm on your chest",
    "source": "asamblea.segundo_ciclo.maio.4_infantil/fase/3/cmd/cmd.maio.4i.01/ingles"
+  },
+  {
+   "id": "en_tutor_aa4f4872_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Graceful swan neck posture",
+   "speech": "Graceful swan neck posture",
+   "source": "lamina/vigo_nat_101/tpr"
+  },
+  {
+   "id": "en_tutor_ab6c9caa_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Drip drop, tap the windowpane!",
+   "speech": "Drip drop, tap the windowpane!",
+   "source": "conto/conto_016_a_pinga_de_auga_que_/tpr"
   },
   {
    "id": "en_tutor_ac214da4_42",
@@ -1812,12 +6588,44 @@
    "source": "calendario/tramo/24_36/fraseIngles"
   },
   {
+   "id": "en_tutor_acb7f687_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow out anger like blowing a candle",
+   "speech": "Blow out anger like blowing a candle",
+   "source": "lamina/emocions_corp_155/tpr"
+  },
+  {
+   "id": "en_tutor_acfab907_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ask with gentle voice and hug tight!",
+   "speech": "Ask with gentle voice and hug tight!",
+   "source": "conto/conto_049_o_lobo_que_aprendeu_/tpr"
+  },
+  {
+   "id": "en_tutor_ad076e5c_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Swim little fish, move your fins!",
+   "speech": "Swim little fish, move your fins!",
+   "source": "conto/conto_019_o_peixi_o_azul_que_n/tpr"
+  },
+  {
    "id": "en_tutor_ad0dee0a_35",
    "lang": "en",
    "style": "tutor",
    "text": "Good morning friends! Hands across!",
    "speech": "Good morning friends! Hands across!",
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_ad6151a9_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Heavy slow bear stomps",
+   "speech": "Heavy slow bear stomps",
+   "source": "lamina/animais_88/tpr"
   },
   {
    "id": "en_tutor_adc4d82e_12",
@@ -1836,12 +6644,44 @@
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/fase/3/cmd/cmd.marzo.5i.02/ingles"
   },
   {
+   "id": "en_tutor_ae8acfd7_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Turn palms up and down",
+   "speech": "Turn palms up and down",
+   "source": "lamina/emocions_corp_161/tpr"
+  },
+  {
    "id": "en_tutor_aef062fb_36",
    "lang": "en",
    "style": "tutor",
    "text": "One shoe, two shoes, up! Push, push!",
    "speech": "One shoe, two shoes, up! Push, push!",
    "source": "juega.benvida.01/ingles/ponteCasa"
+  },
+  {
+   "id": "en_tutor_aef4cf6d_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Garden walk",
+   "speech": "Garden walk",
+   "source": "lamina/escola_rut_140/en"
+  },
+  {
+   "id": "en_tutor_af5b0724_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Falling leaf, twirl gently to the floor!",
+   "speech": "Falling leaf, twirl gently to the floor!",
+   "source": "lamina/flashcard_l_leaf/tpr"
+  },
+  {
+   "id": "en_tutor_afcfd4a3_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hear the north wind whistle soft stories!",
+   "speech": "Hear the north wind whistle soft stories!",
+   "source": "conto/conto_066_o_vento_do_norte_que/tpr"
   },
   {
    "id": "en_tutor_b035cfe4_16",
@@ -1852,12 +6692,60 @@
    "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.02/ingles"
   },
   {
+   "id": "en_tutor_b134a7dd_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tiny fingers meet giant paw",
+   "speech": "Tiny fingers meet giant paw",
+   "source": "lamina/cuento_ilus_192/tpr"
+  },
+  {
+   "id": "en_tutor_b168b264_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Step on leaves, crunch, crunch, crunch!",
+   "speech": "Step on leaves, crunch, crunch, crunch!",
+   "source": "conto/historia_follas_castrelos/tpr"
+  },
+  {
+   "id": "en_tutor_b1816d70_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gentle blow to make a bubble",
+   "speech": "Gentle blow to make a bubble",
+   "source": "lamina/cuento_ilus_188/tpr"
+  },
+  {
    "id": "en_tutor_b281c543_56",
    "lang": "en",
    "style": "tutor",
    "text": "Noa, walk slowly and give the smooth leaf to your friend",
    "speech": "Noa, walk slowly and give the smooth leaf to your friend",
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/fase/3/cmd/cmd.outubro.6i.02/ingles"
+  },
+  {
+   "id": "en_tutor_b326a433_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rande Bridge across the fjord",
+   "speech": "Rande Bridge across the fjord",
+   "source": "lamina/cuento_ilus_203/en"
+  },
+  {
+   "id": "en_tutor_b33b40fa_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Roll your arms: Choo-choo!",
+   "speech": "Roll your arms: Choochoo!",
+   "source": "lamina/vocab_47/tpr"
+  },
+  {
+   "id": "en_tutor_b4995575_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Body scheme fun",
+   "speech": "Body scheme fun",
+   "source": "lamina/cuento_ilus_178/en"
   },
   {
    "id": "en_tutor_b4d43012_44",
@@ -1876,6 +6764,38 @@
    "source": "juega.auga.01/ingles/ponteCasa"
   },
   {
+   "id": "en_tutor_b63fba38_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Chirp together in harmony",
+   "speech": "Chirp together in harmony",
+   "source": "lamina/cuento_ilus_195/tpr"
+  },
+  {
+   "id": "en_tutor_b6de6449_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Samil shore walk",
+   "speech": "Samil shore walk",
+   "source": "lamina/cuento_ilus_172/en"
+  },
+  {
+   "id": "en_tutor_b713032f_48",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wiggle all your eight fingers like octopus legs!",
+   "speech": "Wiggle all your eight fingers like octopus legs!",
+   "source": "lamina/flashcard_o_octopus/tpr"
+  },
+  {
+   "id": "en_tutor_b885717b_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Knock on the door: Knock-knock!",
+   "speech": "Knock on the door: Knockknock!",
+   "source": "lamina/vocab_52/tpr"
+  },
+  {
    "id": "en_tutor_b9823efa_17",
    "lang": "en",
    "style": "tutor",
@@ -1884,12 +6804,60 @@
    "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/1/cue"
   },
   {
+   "id": "en_tutor_b9846947_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Turn your light, guide boats safe home!",
+   "speech": "Turn your light, guide boats safe home!",
+   "source": "conto/conto_059_o_vello_faro_que_alu/tpr"
+  },
+  {
+   "id": "en_tutor_ba5fb03a_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Foot tickles",
+   "speech": "Foot tickles",
+   "source": "lamina/emocions_corp_166/en"
+  },
+  {
+   "id": "en_tutor_babd6459_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "hello friend",
+   "speech": "hello friend",
+   "source": "english/word/en_hello/colocacion"
+  },
+  {
+   "id": "en_tutor_bb074142_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Slow peaceful footsteps",
+   "speech": "Slow peaceful footsteps",
+   "source": "lamina/cuento_ilus_196/tpr"
+  },
+  {
    "id": "en_tutor_bb2f06d1_32",
    "lang": "en",
    "style": "tutor",
    "text": "The wild boar is coming: FREEZE!",
    "speech": "The wild boar is coming: FREEZE!",
    "source": "asamblea.segundo_ciclo.outubro.5_infantil/fase/3/cmd/cmd.outubro.5i.02/ingles"
+  },
+  {
+   "id": "en_tutor_bb4e872b_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stroke the smooth sheet",
+   "speech": "Stroke the smooth sheet",
+   "source": "lamina/vocab_44/tpr"
+  },
+  {
+   "id": "en_tutor_bc4dc057_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "U · Umbrella",
+   "speech": "U · Umbrella",
+   "source": "lamina/flashcard_u_umbrella/en"
   },
   {
    "id": "en_tutor_bc58721d_35",
@@ -1908,12 +6876,108 @@
    "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.02/ingles"
   },
   {
+   "id": "en_tutor_bf03bf90_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tiptoe small like tiny ants",
+   "speech": "Tiptoe small like tiny ants",
+   "source": "lamina/animais_78/tpr"
+  },
+  {
+   "id": "en_tutor_bf1fbbc8_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ring dance",
+   "speech": "Ring dance",
+   "source": "lamina/escola_rut_141/en"
+  },
+  {
+   "id": "en_tutor_bf4b3fc3_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Turn the steering wheel",
+   "speech": "Turn the steering wheel",
+   "source": "lamina/vocab_48/tpr"
+  },
+  {
+   "id": "en_tutor_c0d9507c_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch the soft leaf, listen to the sound!",
+   "speech": "Touch the soft leaf, listen to the sound!",
+   "source": "conto/conto_006_s2/tpr"
+  },
+  {
+   "id": "en_tutor_c14a9672_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sea shell secret",
+   "speech": "Sea shell secret",
+   "source": "lamina/cuento_ilus_174/en"
+  },
+  {
+   "id": "en_tutor_c1795418_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "X · Xylophone",
+   "speech": "X · Xylophone",
+   "source": "lamina/flashcard_x_xylophone/en"
+  },
+  {
+   "id": "en_tutor_c188a17c_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Scrub palms and rinse clean",
+   "speech": "Scrub palms and rinse clean",
+   "source": "lamina/escola_rut_124/tpr"
+  },
+  {
    "id": "en_tutor_c1bb5035_33",
    "lang": "en",
    "style": "tutor",
    "text": "Dance freely while the drum sings",
    "speech": "Dance freely while the drum sings",
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.01/ingles"
+  },
+  {
+   "id": "en_tutor_c242b999_51",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Let us watch gently without disturbing its journey.",
+   "speech": "Let us watch gently without disturbing its journey.",
+   "source": "english/scenario/sc_nature_discovery/turn/2"
+  },
+  {
+   "id": "en_tutor_c24db40c_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hands to cheeks: Wow, look!",
+   "speech": "Hands to cheeks: Wow, look!",
+   "source": "lamina/emocions_corp_149/tpr"
+  },
+  {
+   "id": "en_tutor_c2814a47_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch red, yellow, blue items",
+   "speech": "Touch red, yellow, blue items",
+   "source": "lamina/cuento_ilus_185/tpr"
+  },
+  {
+   "id": "en_tutor_c2bf01da_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Slow the engine, let dolphins jump!",
+   "speech": "Slow the engine, let dolphins jump!",
+   "source": "conto/conto_077_o_barco_mari_eiro_qu/tpr"
+  },
+  {
+   "id": "en_tutor_c3504671_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "bright sunlight",
+   "speech": "bright sunlight",
+   "source": "english/colocacion/col-6/fullCollocation"
   },
   {
    "id": "en_tutor_c4159677_25",
@@ -1948,12 +7012,84 @@
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/cmd/cmd.novembro.6i.02/ingles"
   },
   {
+   "id": "en_tutor_c55cb30d_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Twinkle fingers like shining lights",
+   "speech": "Twinkle fingers like shining lights",
+   "source": "lamina/cuento_ilus_182/tpr"
+  },
+  {
+   "id": "en_tutor_c5afd794_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cold morning freeze, stamp your boots!",
+   "speech": "Cold morning freeze, stamp your boots!",
+   "source": "conto/conto_027_o_manto_branco_da_xe/tpr"
+  },
+  {
+   "id": "en_tutor_c5f0d7b1_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rabbit ears finger hops",
+   "speech": "Rabbit ears finger hops",
+   "source": "lamina/animais_85/tpr"
+  },
+  {
    "id": "en_tutor_c607626c_13",
    "lang": "en",
    "style": "tutor",
    "text": "Crunch leaves",
    "speech": "Crunch leaves",
    "source": "juega.follas.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_c670b817_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Soap bubble magic",
+   "speech": "Soap bubble magic",
+   "source": "lamina/cuento_ilus_188/en"
+  },
+  {
+   "id": "en_tutor_c705ba5c_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Yawn and stretch your sleepy arms",
+   "speech": "Yawn and stretch your sleepy arms",
+   "source": "lamina/emocions_corp_150/tpr"
+  },
+  {
+   "id": "en_tutor_c74c29d7_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "gentle breeze",
+   "speech": "gentle breeze",
+   "source": "english/word/en_gentle/colocacion"
+  },
+  {
+   "id": "en_tutor_c7c6cc29_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Trace a circle in the air",
+   "speech": "Trace a circle in the air",
+   "source": "lamina/vocab_30/tpr"
+  },
+  {
+   "id": "en_tutor_c85bf8e0_42",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Raise your trunk high and stomp your feet!",
+   "speech": "Raise your trunk high and stomp your feet!",
+   "source": "lamina/flashcard_e_elephant/tpr"
+  },
+  {
+   "id": "en_tutor_c8a9ff61_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow gently on a hot chestnut",
+   "speech": "Blow gently on a hot chestnut",
+   "source": "lamina/vigo_nat_116/tpr"
   },
   {
    "id": "en_tutor_ca55ed6e_38",
@@ -1964,12 +7100,108 @@
    "source": "asamblea.segundo_ciclo.abril.6_infantil/fase/3/cmd/cmd.abril.6i.02/ingles"
   },
   {
+   "id": "en_tutor_cb507c2b_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Patter, patter, soft little paws!",
+   "speech": "Patter, patter, soft little paws!",
+   "source": "conto/conto_009_as_pegadas_do_can_no/tpr"
+  },
+  {
+   "id": "en_tutor_cbe99ef6_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Spread prickly spiky fingers",
+   "speech": "Spread prickly spiky fingers",
+   "source": "lamina/animais_95/tpr"
+  },
+  {
+   "id": "en_tutor_cc7b5a90_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put straps over shoulders",
+   "speech": "Put straps over shoulders",
+   "source": "lamina/vocab_36/tpr"
+  },
+  {
+   "id": "en_tutor_cc8a1551_42",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ring the cowbells: leap across the square!",
+   "speech": "Ring the cowbells: leap across the square!",
+   "source": "conto/conto_091_os_m_zcaras_e_os_pel/tpr"
+  },
+  {
+   "id": "en_tutor_cccbc47f_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stretch giant rainbow overhead",
+   "speech": "Stretch giant rainbow overhead",
+   "source": "lamina/cuento_ilus_197/tpr"
+  },
+  {
+   "id": "en_tutor_cd4b279c_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blink eyes open and shut",
+   "speech": "Blink eyes open and shut",
+   "source": "lamina/emocions_corp_157/tpr"
+  },
+  {
    "id": "en_tutor_cd593fbd_17",
    "lang": "en",
    "style": "tutor",
    "text": "Stomp in the snow",
    "speech": "Stomp in the snow",
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.02/ingles"
+  },
+  {
+   "id": "en_tutor_cd5b8641_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "tap water",
+   "speech": "tap water",
+   "source": "english/word/en_water/colocacion"
+  },
+  {
+   "id": "en_tutor_cd8a467c_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The wind and the kite dance",
+   "speech": "The wind and the kite dance",
+   "source": "lamina/cuento_ilus_193/en"
+  },
+  {
+   "id": "en_tutor_cd8a8634_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Flap elbows: Cluck-cluck!",
+   "speech": "Flap elbows: Cluckcluck!",
+   "source": "lamina/animais_83/tpr"
+  },
+  {
+   "id": "en_tutor_ce070ade_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "P · Pumpkin",
+   "speech": "P · Pumpkin",
+   "source": "lamina/flashcard_p_pumpkin/en"
+  },
+  {
+   "id": "en_tutor_ce415fba_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Clap thighs like horse hooves",
+   "speech": "Clap thighs like horse hooves",
+   "source": "lamina/animais_81/tpr"
+  },
+  {
+   "id": "en_tutor_ce48cd94_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Gentle reassuring hand squeeze",
+   "speech": "Gentle reassuring hand squeeze",
+   "source": "lamina/escola_rut_143/tpr"
   },
   {
    "id": "en_tutor_ce5d5fbb_34",
@@ -1988,12 +7220,44 @@
    "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.01/ingles"
   },
   {
+   "id": "en_tutor_cf1a1d2b_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Climb up high and hide your nut!",
+   "speech": "Climb up high and hide your nut!",
+   "source": "conto/conto_029_o_esqu_o_que_gardaba/tpr"
+  },
+  {
+   "id": "en_tutor_cf22953c_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hold glass with two hands",
+   "speech": "Hold glass with two hands",
+   "source": "lamina/vocab_32/tpr"
+  },
+  {
+   "id": "en_tutor_cf3e1fad_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sway gently side to side",
+   "speech": "Sway gently side to side",
+   "source": "lamina/vocab_60/tpr"
+  },
+  {
    "id": "en_tutor_cf3fccc3_15",
    "lang": "en",
    "style": "tutor",
    "text": "Roll the circle",
    "speech": "Roll the circle",
    "source": "juega.cores.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_cf670177_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Y · Yellow",
+   "speech": "Y · Yellow",
+   "source": "lamina/flashcard_y_yellow/en"
   },
   {
    "id": "en_tutor_cfd5ae81_43",
@@ -2004,12 +7268,52 @@
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.03/ingles"
   },
   {
+   "id": "en_tutor_cffecba7_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put on your hat, warm and snug!",
+   "speech": "Put on your hat, warm and snug!",
+   "source": "conto/conto_007_o_gorro_de_la_quenti/tpr"
+  },
+  {
+   "id": "en_tutor_d02f574f_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pull the heavy fishing net: Heave!",
+   "speech": "Pull the heavy fishing net: Heave!",
+   "source": "lamina/vigo_nat_103/tpr"
+  },
+  {
+   "id": "en_tutor_d054eff8_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "fresh water",
+   "speech": "fresh water",
+   "source": "english/colocacion/col-1/fullCollocation"
+  },
+  {
+   "id": "en_tutor_d122a422_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "T · Tree",
+   "speech": "T · Tree",
+   "source": "lamina/flashcard_t_tree/en"
+  },
+  {
    "id": "en_tutor_d199b22c_17",
    "lang": "en",
    "style": "tutor",
    "text": "Stomp like a bear",
    "speech": "Stomp like a bear",
    "source": "juega.animais.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_d1b50a5e_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Big chestnut, small chestnut, count one two!",
+   "speech": "Big chestnut, small chestnut, count one two!",
+   "source": "conto/conto_025_o_cesto_cheo_de_cast/tpr"
   },
   {
    "id": "en_tutor_d1ccc567_26",
@@ -2028,6 +7332,22 @@
    "source": "juega.animais.01/ingles/exploracion"
   },
   {
+   "id": "en_tutor_d28cd1c7_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "End of year sea welcome",
+   "speech": "End of year sea welcome",
+   "source": "lamina/cuento_ilus_205/en"
+  },
+  {
+   "id": "en_tutor_d2e5cab1_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hands pointed high like a spire",
+   "speech": "Hands pointed high like a spire",
+   "source": "lamina/vigo_nat_102/tpr"
+  },
+  {
    "id": "en_tutor_d2fbb559_7",
    "lang": "en",
    "style": "tutor",
@@ -2044,6 +7364,14 @@
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/cmd/cmd.novembro.6i.03/ingles"
   },
   {
+   "id": "en_tutor_d3c09dfd_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sway your torso with blowing wind",
+   "speech": "Sway your torso with blowing wind",
+   "source": "lamina/vigo_nat_107/tpr"
+  },
+  {
    "id": "en_tutor_d41d256f_33",
    "lang": "en",
    "style": "tutor",
@@ -2052,12 +7380,68 @@
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/cmd/cmd.novembro.6i.01/ingles"
   },
   {
+   "id": "en_tutor_d45eb5ec_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wrinkle nose: Oink-oink!",
+   "speech": "Wrinkle nose: Oinkoink!",
+   "source": "lamina/animais_82/tpr"
+  },
+  {
    "id": "en_tutor_d45f57d6_16",
    "lang": "en",
    "style": "tutor",
    "text": "Shake the bottle",
    "speech": "Shake the bottle",
    "source": "juega.cores.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_d4f40f6e_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Splash water with your feet",
+   "speech": "Splash water with your feet",
+   "source": "lamina/vigo_nat_112/tpr"
+  },
+  {
+   "id": "en_tutor_d5ef2952_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dry each little finger",
+   "speech": "Dry each little finger",
+   "source": "lamina/vocab_40/tpr"
+  },
+  {
+   "id": "en_tutor_d6156938_48",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stand tall like a strong oak tree in the forest!",
+   "speech": "Stand tall like a strong oak tree in the forest!",
+   "source": "lamina/flashcard_t_tree/tpr"
+  },
+  {
+   "id": "en_tutor_d7e50f02_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Strum the strings to the 72 bpm beat!",
+   "speech": "Strum the strings to the 72 bpm beat!",
+   "source": "lamina/flashcard_g_guitar/tpr"
+  },
+  {
+   "id": "en_tutor_d7ef0702_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Spout water from head: Whoosh!",
+   "speech": "Spout water from head: Whoosh!",
+   "source": "lamina/animais_91/tpr"
+  },
+  {
+   "id": "en_tutor_d80fdb17_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Free Play",
+   "speech": "Free Play",
+   "source": "lamina/escola_rut_127/en"
   },
   {
    "id": "en_tutor_d88ec612_43",
@@ -2076,12 +7460,44 @@
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/cmd/cmd.outubro.4i.02/ingles"
   },
   {
+   "id": "en_tutor_d93f33ae_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Shiver shoulders playfully: Brrr!",
+   "speech": "Shiver shoulders playfully: Brrr!",
+   "source": "lamina/emocions_corp_171/tpr"
+  },
+  {
+   "id": "en_tutor_da4ebf9f_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "curious mind",
+   "speech": "curious mind",
+   "source": "english/word/en_curious/colocacion"
+  },
+  {
    "id": "en_tutor_dd5017ba_35",
    "lang": "en",
    "style": "tutor",
    "text": "Row your boat through the big waves",
    "speech": "Row your boat through the big waves",
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/3/cmd/cmd.xuno.4i.01/ingles"
+  },
+  {
+   "id": "en_tutor_de4fbd5c_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "listen to the birds",
+   "speech": "listen to the birds",
+   "source": "english/word/en_listen/colocacion"
+  },
+  {
+   "id": "en_tutor_de744a70_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Finger painting",
+   "speech": "Finger painting",
+   "source": "lamina/escola_rut_138/en"
   },
   {
    "id": "en_tutor_de955058_45",
@@ -2100,12 +7516,132 @@
    "source": "juega.choiva.01/cuento/1/ingles"
   },
   {
+   "id": "en_tutor_df418122_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crouch tiny, then grow tall",
+   "speech": "Crouch tiny, then grow tall",
+   "source": "lamina/vigo_nat_120/tpr"
+  },
+  {
+   "id": "en_tutor_df84c24f_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "deep breath",
+   "speech": "deep breath",
+   "source": "english/word/en_breathe/colocacion"
+  },
+  {
+   "id": "en_tutor_df93c8d6_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "B · Boat",
+   "speech": "B · Boat",
+   "source": "lamina/flashcard_b_boat/en"
+  },
+  {
    "id": "en_tutor_dfd50540_40",
    "lang": "en",
    "style": "tutor",
    "text": "Pull the rope together: one, two, three!",
    "speech": "Pull the rope together: one, two, three!",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.01/ingles"
+  },
+  {
+   "id": "en_tutor_e016fcf0_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dig the soil and plant the seed!",
+   "speech": "Dig the soil and plant the seed!",
+   "source": "conto/conto_018_a_sementeira_na_hort/tpr"
+  },
+  {
+   "id": "en_tutor_e0fd0710_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bring spoon to mouth",
+   "speech": "Bring spoon to mouth",
+   "source": "lamina/vocab_31/tpr"
+  },
+  {
+   "id": "en_tutor_e11ee791_51",
+   "lang": "en",
+   "style": "tutor",
+   "text": "It is a tiny red ladybug! It has seven black spots.",
+   "speech": "It is a tiny red ladybug! It has seven black spots.",
+   "source": "english/scenario/sc_nature_discovery/turn/1"
+  },
+  {
+   "id": "en_tutor_e153727e_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Prowl like fox, stomp like bear!",
+   "speech": "Prowl like fox, stomp like bear!",
+   "source": "conto/conto_043_o_neno_que_sab_a_cam/tpr"
+  },
+  {
+   "id": "en_tutor_e2917a26_43",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Trot, trot like a striped zebra: Clip-clop!",
+   "speech": "Trot, trot like a striped zebra: Clipclop!",
+   "source": "lamina/flashcard_z_zebra/tpr"
+  },
+  {
+   "id": "en_tutor_e2b7ed2d_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hold baby bottle with care",
+   "speech": "Hold baby bottle with care",
+   "source": "lamina/vocab_62/tpr"
+  },
+  {
+   "id": "en_tutor_e2f6c3c5_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Reach up high and pick the fruit!",
+   "speech": "Reach up high and pick the fruit!",
+   "source": "conto/conto_033_o_manzano_que_deu_ma/tpr"
+  },
+  {
+   "id": "en_tutor_e2fe32a9_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Reveal treasure in open palms",
+   "speech": "Reveal treasure in open palms",
+   "source": "lamina/cuento_ilus_200/tpr"
+  },
+  {
+   "id": "en_tutor_e31df1a6_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Mix the colors, paint the grass!",
+   "speech": "Mix the colors, paint the grass!",
+   "source": "conto/conto_032_a_danza_das_cores_no/tpr"
+  },
+  {
+   "id": "en_tutor_e3aa0855_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The sheltering tree",
+   "speech": "The sheltering tree",
+   "source": "lamina/cuento_ilus_191/en"
+  },
+  {
+   "id": "en_tutor_e43e9b69_65",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open your mouth gently and speak clearly so everyone understands.",
+   "speech": "Open your mouth gently and speak clearly so everyone understands.",
+   "source": "english/colocacion/col-5/naturalContext"
+  },
+  {
+   "id": "en_tutor_e441016a_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hold hands round, feel the love!",
+   "speech": "Hold hands round, feel the love!",
+   "source": "conto/conto_022_a_ronda_dos_amigos_n/tpr"
   },
   {
    "id": "en_tutor_e4588558_57",
@@ -2124,6 +7660,38 @@
    "source": "asamblea.segundo_ciclo.maio.5_infantil/fase/3/cmd/cmd.maio.5i.03/ingles"
   },
   {
+   "id": "en_tutor_e5526509_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Caress the back of your hand",
+   "speech": "Caress the back of your hand",
+   "source": "lamina/emocions_corp_167/tpr"
+  },
+  {
+   "id": "en_tutor_e57b6207_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "explore nature",
+   "speech": "explore nature",
+   "source": "english/word/en_explore/colocacion"
+  },
+  {
+   "id": "en_tutor_e58b55c4_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Feed the soil, watch earthworms work!",
+   "speech": "Feed the soil, watch earthworms work!",
+   "source": "conto/conto_093_a_compostaxe_escolar/tpr"
+  },
+  {
+   "id": "en_tutor_e597744a_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Whisper words of care into the ear!",
+   "speech": "Whisper words of care into the ear!",
+   "source": "conto/conto_070_o_rato_sabio_que_sab/tpr"
+  },
+  {
    "id": "en_tutor_e5cf4542_13",
    "lang": "en",
    "style": "tutor",
@@ -2132,12 +7700,52 @@
    "source": "juega.choiva.01/ingles/pulso"
   },
   {
+   "id": "en_tutor_e5d5794d_269",
+   "lang": "en",
+   "style": "tutor",
+   "text": "{'en': 'Breathe in deep like smelling a flower, and breathe out like blowing a feather.', 'translation': {'gl': 'Respira fondo coma cheirando unha flor, e solta coma soprando unha pluma.', 'es': 'Respira hondo como oliendo una flor, y suelta como soplando una pluma.'}}",
+   "speech": "{'en': 'Breathe in deep like smelling a flower, and breathe out like blowing a feather.', 'translation': {'gl': 'Respira fondo coma cheirando unha flor, e solta coma soprando unha pluma.', 'es': 'Respira hondo como oliendo una flor, y suelta como soplando una pluma.'}}",
+   "source": "english/word/en_breathe/naturalPhrase"
+  },
+  {
+   "id": "en_tutor_e629a358_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Chew peacefully and share fruit",
+   "speech": "Chew peacefully and share fruit",
+   "source": "lamina/escola_rut_125/tpr"
+  },
+  {
+   "id": "en_tutor_e63aa020_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "sing together",
+   "speech": "sing together",
+   "source": "english/word/en_together/colocacion"
+  },
+  {
+   "id": "en_tutor_e65fba8f_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Frog chorus: Ribbit-ribbit!",
+   "speech": "Frog chorus: Ribbitribbit!",
+   "source": "lamina/cuento_ilus_204/tpr"
+  },
+  {
    "id": "en_tutor_e7287f55_27",
    "lang": "en",
    "style": "tutor",
    "text": "Up and Down, Clap Clap Clap",
    "speech": "Up and Down, Clap Clap Clap",
    "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/1/cue"
+  },
+  {
+   "id": "en_tutor_e8813221_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Push open the window frame",
+   "speech": "Push open the window frame",
+   "source": "lamina/vocab_51/tpr"
   },
   {
    "id": "en_tutor_e8f236d1_47",
@@ -2156,12 +7764,84 @@
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/fase/3/cmd/cmd.febreiro.5i.02/ingles"
   },
   {
+   "id": "en_tutor_e9666fbc_53",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Please pay close attention to the sound of the birds.",
+   "speech": "Please pay close attention to the sound of the birds.",
+   "source": "english/colocacion/col-4/naturalContext"
+  },
+  {
+   "id": "en_tutor_e9a2124b_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Clap with wrists together",
+   "speech": "Clap with wrists together",
+   "source": "lamina/animais_92/tpr"
+  },
+  {
+   "id": "en_tutor_e9b2e5ee_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "M · Moon",
+   "speech": "M · Moon",
+   "source": "lamina/flashcard_m_moon/en"
+  },
+  {
    "id": "en_tutor_e9c31f54_11",
    "lang": "en",
    "style": "tutor",
    "text": "Sleep tight",
    "speech": "Sleep tight",
    "source": "juega.inverno.01/ingles/exploracion"
+  },
+  {
+   "id": "en_tutor_eaeb8640_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sharing toys",
+   "speech": "Sharing toys",
+   "source": "lamina/escola_rut_137/en"
+  },
+  {
+   "id": "en_tutor_eb2f8214_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Feel your heartbeat, breath in deep!",
+   "speech": "Feel your heartbeat, breath in deep!",
+   "source": "conto/conto_047_o_peito_que_gardaba_/tpr"
+  },
+  {
+   "id": "en_tutor_eba00376_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Paws up and bark: Woof!",
+   "speech": "Paws up and bark: Woof!",
+   "source": "lamina/animais_67/tpr"
+  },
+  {
+   "id": "en_tutor_ec942c74_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Trawler coming home",
+   "speech": "Trawler coming home",
+   "source": "lamina/cuento_ilus_189/en"
+  },
+  {
+   "id": "en_tutor_ecf9692a_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hold your umbrella tight in the wind!",
+   "speech": "Hold your umbrella tight in the wind!",
+   "source": "conto/conto_026_o_vento_que_levou_o_/tpr"
+  },
+  {
+   "id": "en_tutor_ed4112f7_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dinamita the dog of Vigo",
+   "speech": "Dinamita the dog of Vigo",
+   "source": "lamina/cuento_ilus_202/en"
   },
   {
    "id": "en_tutor_ee7b02eb_23",
@@ -2172,12 +7852,52 @@
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.01/ingles"
   },
   {
+   "id": "en_tutor_efd683ef_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Zip up your coat: Zip!",
+   "speech": "Zip up your coat: Zip!",
+   "source": "lamina/vocab_38/tpr"
+  },
+  {
+   "id": "en_tutor_f0ee572e_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Thank you! It feels good and refreshing.",
+   "speech": "Thank you! It feels good and refreshing.",
+   "source": "english/scenario/sc_snack_water/turn/2"
+  },
+  {
+   "id": "en_tutor_f1b548a7_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wave your hands, welcome to school!",
+   "speech": "Wave your hands, welcome to school!",
+   "source": "conto/conto_005_s1/tpr"
+  },
+  {
    "id": "en_tutor_f1eb82fa_24",
    "lang": "en",
    "style": "tutor",
    "text": "Put on your winter boots",
    "speech": "Put on your winter boots",
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.01/ingles"
+  },
+  {
+   "id": "en_tutor_f20dfc4a_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rub tummy in happy circles",
+   "speech": "Rub tummy in happy circles",
+   "source": "lamina/emocions_corp_151/tpr"
+  },
+  {
+   "id": "en_tutor_f24f8aa6_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Swirl water in slow circles",
+   "speech": "Swirl water in slow circles",
+   "source": "lamina/escola_rut_139/tpr"
   },
   {
    "id": "en_tutor_f32efa7d_8",
@@ -2204,12 +7924,108 @@
    "source": "juega.inverno.01/ingles/ponteCasa"
   },
   {
+   "id": "en_tutor_f3ae51d2_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hanging coat",
+   "speech": "Hanging coat",
+   "source": "lamina/escola_rut_134/en"
+  },
+  {
+   "id": "en_tutor_f3d6d74b_42",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Lead the morning meeting with clear voice!",
+   "speech": "Lead the morning meeting with clear voice!",
+   "source": "conto/conto_082_a_asemblea_dos_sabio/tpr"
+  },
+  {
+   "id": "en_tutor_f42a53c5_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow the chestnut: cool it down!",
+   "speech": "Blow the chestnut: cool it down!",
+   "source": "conto/conto_005_o_magosto_e_o_fume_d/tpr"
+  },
+  {
+   "id": "en_tutor_f44c4d87_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "G · Guitar",
+   "speech": "G · Guitar",
+   "source": "lamina/flashcard_g_guitar/en"
+  },
+  {
+   "id": "en_tutor_f4cee906_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Happy reunion hug at pickup",
+   "speech": "Happy reunion hug at pickup",
+   "source": "lamina/escola_rut_145/tpr"
+  },
+  {
+   "id": "en_tutor_f5c80859_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A · Apple",
+   "speech": "A · Apple",
+   "source": "lamina/flashcard_a_apple/en"
+  },
+  {
+   "id": "en_tutor_f606f8dd_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Add two spoons of sweet gold honey!",
+   "speech": "Add two spoons of sweet gold honey!",
+   "source": "conto/conto_065_a_receita_tradiciona/tpr"
+  },
+  {
+   "id": "en_tutor_f62641f4_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Small seed grow, reach for the sun!",
+   "speech": "Small seed grow, reach for the sun!",
+   "source": "conto/historia_primavera_horta/tpr"
+  },
+  {
+   "id": "en_tutor_f6827078_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pour the water on green sprouts!",
+   "speech": "Pour the water on green sprouts!",
+   "source": "conto/conto_053_a_horta_que_medraba_/tpr"
+  },
+  {
+   "id": "en_tutor_f708b073_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crawl fingers on tummy: Giggle!",
+   "speech": "Crawl fingers on tummy: Giggle!",
+   "source": "lamina/vocab_65/tpr"
+  },
+  {
    "id": "en_tutor_f71a0067_24",
    "lang": "en",
    "style": "tutor",
    "text": "Gallop like a wild horse",
    "speech": "Gallop like a wild horse",
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/fase/3/cmd/cmd.febreiro.5i.01/ingles"
+  },
+  {
+   "id": "en_tutor_f76f36c3_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open arms and say: Welcome!",
+   "speech": "Open arms and say: Welcome!",
+   "source": "lamina/escola_rut_123/tpr"
+  },
+  {
+   "id": "en_tutor_f7b98256_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Silent tiptoe like a sly fox",
+   "speech": "Silent tiptoe like a sly fox",
+   "source": "lamina/animais_90/tpr"
   },
   {
    "id": "en_tutor_f7dd8639_23",
@@ -2220,12 +8036,44 @@
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/fase/3/cmd/cmd.febreiro.4i.01/ingles"
   },
   {
+   "id": "en_tutor_f83f1b52_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow soft wind, sail across!",
+   "speech": "Blow soft wind, sail across!",
+   "source": "conto/conto_037_o_barco_de_papel_que/tpr"
+  },
+  {
+   "id": "en_tutor_f85dcd14_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Extend arms flat like floating rafts",
+   "speech": "Extend arms flat like floating rafts",
+   "source": "lamina/vigo_nat_121/tpr"
+  },
+  {
    "id": "en_tutor_f9d1a2e6_41",
    "lang": "en",
    "style": "tutor",
    "text": "Fill the pot, plant the seed and water it",
    "speech": "Fill the pot, plant the seed and water it",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.01/ingles"
+  },
+  {
+   "id": "en_tutor_fa5f5ebf_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Warm up your arms with a rub",
+   "speech": "Warm up your arms with a rub",
+   "source": "lamina/vigo_nat_110/tpr"
+  },
+  {
+   "id": "en_tutor_fb57b137_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sea Urchin",
+   "speech": "Sea Urchin",
+   "source": "lamina/animais_95/en"
   },
   {
    "id": "en_tutor_fb5f7842_20",
@@ -2236,12 +8084,84 @@
    "source": "asamblea.primeiro_ciclo.decembro.2_3_anos/fase/3/cmd/cmd.decembro.2_3.02/ingles"
   },
   {
+   "id": "en_tutor_fca4165e_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Eye contact",
+   "speech": "Eye contact",
+   "source": "lamina/escola_rut_144/en"
+  },
+  {
+   "id": "en_tutor_fd3a6a75_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Soft kitten paws, stretch and purr!",
+   "speech": "Soft kitten paws, stretch and purr!",
+   "source": "lamina/flashcard_c_cat/tpr"
+  },
+  {
+   "id": "en_tutor_fd89baa9_9",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Safe bond",
+   "speech": "Safe bond",
+   "source": "lamina/escola_rut_143/en"
+  },
+  {
+   "id": "en_tutor_fd8bddc6_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Curl your toes and giggle!",
+   "speech": "Curl your toes and giggle!",
+   "source": "lamina/emocions_corp_166/tpr"
+  },
+  {
+   "id": "en_tutor_fdaed4a2_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Buzz around and find the flower sweet!",
+   "speech": "Buzz around and find the flower sweet!",
+   "source": "conto/conto_054_a_abella_que_non_ti_/tpr"
+  },
+  {
+   "id": "en_tutor_fdb7c603_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stand on tiptoes showing how much we grew",
+   "speech": "Stand on tiptoes showing how much we grew",
+   "source": "lamina/cuento_ilus_205/tpr"
+  },
+  {
    "id": "en_tutor_feae7a17_42",
    "lang": "en",
    "style": "tutor",
    "text": "Cold winter night: curl up and do not move",
    "speech": "Cold winter night: curl up and do not move",
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.02/ingles"
+  },
+  {
+   "id": "en_tutor_fed5d418_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cold ice",
+   "speech": "Cold ice",
+   "source": "lamina/emocions_corp_171/en"
+  },
+  {
+   "id": "en_tutor_ff5c7d87_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The bird that found its song",
+   "speech": "The bird that found its song",
+   "source": "lamina/cuento_ilus_195/en"
+  },
+  {
+   "id": "en_tutor_ffc2d1e6_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tap thumb to each fingertip",
+   "speech": "Tap thumb to each fingertip",
+   "source": "lamina/emocions_corp_165/tpr"
   },
   {
    "id": "en_tutor_ffe1a1db_27",

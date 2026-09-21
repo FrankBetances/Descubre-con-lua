@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/fsrs_service.dart';
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
@@ -12,10 +15,12 @@ import '../../../data/models/fsrs_card_model.dart';
 /// curva de olvido, la de 4.5. Por eso la pantalla no pone número de versión.
 class FsrsTrainerScreen extends StatefulWidget {
   final AppLanguage language;
+  final OfflineAudioService? audioService;
 
   const FsrsTrainerScreen({
     super.key,
     this.language = AppLanguage.gl,
+    this.audioService,
   });
 
   @override
@@ -199,7 +204,19 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                                 fontStyle: FontStyle.italic,
                               ),
                             ),
-                            const SizedBox(height: 24),
+                            const SizedBox(height: 12),
+                            // Un entrenador de vocabulario en el que la palabra
+                            // no suena obliga a la persona adulta a adivinar la
+                            // pronunciación justo antes de modelarla delante de
+                            // la criatura. La grabación existe: lo que faltaba
+                            // era el botón.
+                            BotonEscuchar(
+                              audioService: widget.audioService,
+                              texto: currentWord['lemma']!,
+                              language: AppLanguage.en,
+                              style: estiloIngles(currentWord['lemma']!),
+                            ),
+                            const SizedBox(height: 20),
                             if (_revealed) ...[
                               const Divider(),
                               const SizedBox(height: 16),
@@ -220,14 +237,27 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                                   color: AppTheme.primaryLight,
                                   borderRadius: BorderRadius.circular(10),
                                 ),
-                                child: Text(
-                                  '"${currentWord['example']!}"',
-                                  style: const TextStyle(
-                                    fontSize: 15,
-                                    fontStyle: FontStyle.italic,
-                                    color: AppTheme.primaryInk,
-                                  ),
-                                  textAlign: TextAlign.center,
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      '"${currentWord['example']!}"',
+                                      style: const TextStyle(
+                                        fontSize: 15,
+                                        fontStyle: FontStyle.italic,
+                                        color: AppTheme.primaryInk,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    BotonEscuchar(
+                                      audioService: widget.audioService,
+                                      texto: currentWord['example']!,
+                                      language: AppLanguage.en,
+                                      style:
+                                          estiloIngles(currentWord['example']!),
+                                      compacto: true,
+                                    ),
+                                  ],
                                 ),
                               ),
                             ] else ...[

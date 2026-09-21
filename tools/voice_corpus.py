@@ -436,6 +436,146 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                         _add(_localized(dia[campo]), "tutor",
                              f"{ref}/{campo}", seen)
 
+    # El inglés de los módulos nuevos. Nacieron MUDOS —es la tercera vez que
+    # pasa lo mismo: contenido nuevo en un directorio que esta función no
+    # miraba— y el efecto se ve en la pantalla: «Comprensión Auditiva» sin una
+    # sola grabación, el entrenador de vocabulario enseñando «water» sin poder
+    # decirlo, y la tarjeta de la lámina con su acción TPR en inglés y nadie
+    # que la pronuncie.
+    #
+    # Lo que NO entra aquí, a propósito: las 8.000 palabras del corpus
+    # BNC/COCA. Grabarlas serían unos 200 MB de APK —hoy toda la voz ocupa 61—
+    # para una lista que se explora, no se dice. Lo que se dice es esto otro:
+    # lo que la app enseña a la persona adulta para que lo repita.
+    ingles = content_dir / "english"
+    if ingles.exists():
+        corpus_json = ingles / "english_corpus.json"
+        if corpus_json.exists():
+            data = json.loads(corpus_json.read_text(encoding="utf-8"))
+            for palabra in data.get("words") or []:
+                if not isinstance(palabra, dict):
+                    continue
+                wid = palabra.get("id", "?")
+                for campo in ("word", "naturalPhrase"):
+                    if palabra.get(campo):
+                        texto = str(palabra[campo])
+                        _one(texto, "en", estilo_ingles(texto),
+                             f"english/word/{wid}/{campo}", seen)
+                tpr = palabra.get("tprAction")
+                if isinstance(tpr, dict) and tpr.get("en"):
+                    texto = str(tpr["en"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"english/word/{wid}/tpr", seen)
+                for colocacion in palabra.get("collocations") or []:
+                    texto = str(colocacion)
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"english/word/{wid}/colocacion", seen)
+            for escena in data.get("scenarios") or []:
+                if not isinstance(escena, dict):
+                    continue
+                sid = escena.get("id", "?")
+                for i, turno in enumerate(escena.get("turns") or []):
+                    if isinstance(turno, dict) and turno.get("en"):
+                        texto = str(turno["en"])
+                        _one(texto, "en", estilo_ingles(texto),
+                             f"english/scenario/{sid}/turn/{i}", seen)
+
+        colocaciones_json = ingles / "collocations_grammar.json"
+        if colocaciones_json.exists():
+            data = json.loads(colocaciones_json.read_text(encoding="utf-8"))
+            for col in data.get("collocations") or []:
+                if not isinstance(col, dict):
+                    continue
+                cid = col.get("id", "?")
+                for campo in ("fullCollocation", "naturalContext"):
+                    if col.get(campo):
+                        texto = str(col[campo])
+                        _one(texto, "en", estilo_ingles(texto),
+                             f"english/colocacion/{cid}/{campo}", seen)
+            for escena in data.get("scenarios") or []:
+                if not isinstance(escena, dict):
+                    continue
+                sid = escena.get("id", "?")
+                for i, turno in enumerate(escena.get("turns") or []):
+                    if isinstance(turno, dict) and turno.get("en"):
+                        texto = str(turno["en"])
+                        _one(texto, "en", estilo_ingles(texto),
+                             f"english/colocacion/{sid}/turn/{i}", seen)
+
+        fonemas_json = ingles / "phonics_taxonomy.json"
+        if fonemas_json.exists():
+            data = json.loads(fonemas_json.read_text(encoding="utf-8"))
+            for fonema in data.get("phonemes") or []:
+                if not isinstance(fonema, dict):
+                    continue
+                ej = fonema.get("exampleWord")
+                if isinstance(ej, dict) and ej.get("en"):
+                    texto = str(ej["en"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"english/fonema/{fonema.get('id', '?')}/exemplo", seen)
+            for palabra in data.get("decodableWords") or []:
+                if isinstance(palabra, dict) and palabra.get("word"):
+                    texto = str(palabra["word"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"english/decodable/{palabra.get('id', '?')}", seen)
+
+    # La palabra inglesa de cada lámina y su acción TPR: es lo que la persona
+    # adulta dice mientras enseña la tarjeta.
+    laminas_json = content_dir / "laminas" / "banco200_laminas.json"
+    if laminas_json.exists():
+        for lam in json.loads(laminas_json.read_text(encoding="utf-8")):
+            if not isinstance(lam, dict):
+                continue
+            lid = lam.get("id", "?")
+            if lam.get("en"):
+                texto = str(lam["en"])
+                _one(texto, "en", estilo_ingles(texto),
+                     f"lamina/{lid}/en", seen)
+            tpr = lam.get("tprAccion")
+            if isinstance(tpr, dict) and tpr.get("en"):
+                texto = str(tpr["en"])
+                _one(texto, "en", estilo_ingles(texto),
+                     f"lamina/{lid}/tpr", seen)
+
+    # El reto TPR oral de cada cuento del banco.
+    cuentos = content_dir / "cuentos"
+    if cuentos.exists():
+        for path in sorted(cuentos.glob("*.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(data, list):
+                continue
+            for cuento in data:
+                if not isinstance(cuento, dict):
+                    continue
+                tpr = cuento.get("tprOral")
+                if isinstance(tpr, dict) and tpr.get("fraseEn"):
+                    texto = str(tpr["fraseEn"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"conto/{cuento.get('id', '?')}/tpr", seen)
+
+    # El explorador de las 8.000 palabras dice las que la app ENSEÑA.
+    #
+    # El identificador de una grabación sale del texto EXACTO, así que «Bird»
+    # —como aparece en la asamblea— y «bird» —como aparece en la lista— son dos
+    # grabaciones distintas. Sin esta regla, el altavoz del explorador no salía
+    # en ninguna de las 8.000, ni siquiera en las que la app dice a diario.
+    #
+    # La regla es la que es y no una lista a mano: si la palabra ya se dice en
+    # alguna parte de la app, su forma de la lista también se graba. Hoy son
+    # 169 y crecen solas con el contenido. Las otras 7.800 NO se graban: serían
+    # unos 200 MB de APK para una lista que se explora, no se dice.
+    corpus_cefr = content_dir / "corpus" / "bnc_coca_8000_cefr.json"
+    if corpus_cefr.exists():
+        ditas = {normalize(e.text).lower()
+                 for e in seen.values() if e.lang == "en"}
+        for palabra in json.loads(corpus_cefr.read_text(encoding="utf-8")):
+            if not isinstance(palabra, dict):
+                continue
+            lema = normalize(str(palabra.get("lemma", "")))
+            if lema and lema.lower() in ditas:
+                _one(lema, "en", estilo_ingles(lema),
+                     f"corpus/{palabra.get('id_global', '?')}", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

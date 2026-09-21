@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
@@ -234,10 +236,14 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
               lang == AppLanguage.gl
                   ? 'O nivel oriéntase pola banda de frecuencia (as mil primeiras '
                       'palabras, A1/A2; as mil seguintes, A2/B1…). Non é unha '
-                      'clasificación oficial do MCER.'
+                      'clasificación oficial do MCER. O altavoz sae nas '
+                      'palabras que a app ensina noutras pantallas: esta é unha '
+                      'lista para explorar, non para dicir enteira.'
                   : 'El nivel se orienta por la banda de frecuencia (las mil primeras '
                       'palabras, A1/A2; las mil siguientes, A2/B1…). No es una '
-                      'clasificación oficial del MCER.',
+                      'clasificación oficial del MCER. El altavoz sale en las '
+                      'palabras que la app enseña en otras pantallas: esta es una '
+                      'lista para explorar, no para decirla entera.',
               style: const TextStyle(
                 fontSize: 11,
                 color: AppTheme.textMuted,
@@ -344,6 +350,21 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
                                       ],
                                     ),
                                   ),
+                                  // El altavoz solo aparece si la grabación
+                                  // existe: `BotonEscuchar` no se pinta apagado
+                                  // ni con un aviso. De estas 8.000 palabras
+                                  // suenan las que la app ENSEÑA de verdad en
+                                  // el resto de pantallas; el explorador no las
+                                  // graba todas a propósito (ver la nota de
+                                  // arriba y tools/voice_corpus.py).
+                                  BotonEscuchar(
+                                    audioService: widget.audioService,
+                                    texto: item.lemma,
+                                    language: AppLanguage.en,
+                                    style: estiloIngles(item.lemma),
+                                    compacto: true,
+                                  ),
+                                  const SizedBox(width: 6),
                                   Container(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 8, vertical: 4),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
@@ -157,15 +159,30 @@ class _ListeningScreenState extends State<ListeningScreen> {
                             borderRadius: BorderRadius.circular(14),
                             border: Border.all(color: AppTheme.border),
                           ),
-                          child: Text(
-                            '"${exercise['phrase']!}"',
-                            style: const TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600,
-                              height: 1.4,
-                              color: AppTheme.textPrimary,
-                            ),
-                            textAlign: TextAlign.center,
+                          // Una pantalla que se llama «Comprensión Auditiva»
+                          // y no tiene nada que escuchar es la promesa más
+                          // grande que se rompía en esta app. La frase se oye
+                          // aquí, con la voz del propio paquete.
+                          child: Column(
+                            children: [
+                              Text(
+                                '"${exercise['phrase']!}"',
+                                style: const TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w600,
+                                  height: 1.4,
+                                  color: AppTheme.textPrimary,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              const SizedBox(height: 12),
+                              BotonEscuchar(
+                                audioService: widget.audioService,
+                                texto: exercise['phrase']!,
+                                language: AppLanguage.en,
+                                style: estiloIngles(exercise['phrase']!),
+                              ),
+                            ],
                           ),
                         ),
                         const SizedBox(height: 20),
@@ -195,12 +212,14 @@ class _ListeningScreenState extends State<ListeningScreen> {
                                 const Icon(Icons.pan_tool,
                                     size: 16, color: AppTheme.warning),
                                 const SizedBox(width: 6),
-                                Text(
-                                  'Acción TPR: ${exercise['tpr']!}',
-                                  style: const TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.bold,
-                                    color: AppTheme.warning,
+                                Flexible(
+                                  child: Text(
+                                    'Acción TPR: ${exercise['tpr']!}',
+                                    style: const TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold,
+                                      color: AppTheme.warning,
+                                    ),
                                   ),
                                 ),
                               ],
