@@ -1,40 +1,57 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Lámpada de noite.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Lámpada de noite",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#facc1512"
+      "t": "ruta",
+      "d": "M28 44 L38 18 L62 18 L72 44 Z",
+      "f": "#ffdc00",
+      "s": "#c2410c",
+      "sw": 4
     },
     {
-      "t": "elipse",
-      "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#facc151a"
+      "t": "rrect",
+      "x": 46,
+      "y": 44,
+      "w": 8,
+      "h": 30,
+      "r": 3,
+      "f": "#94a3b8",
+      "s": "#475569",
+      "sw": 3
+    },
+    {
+      "t": "rrect",
+      "x": 32,
+      "y": 74,
+      "w": 36,
+      "h": 10,
+      "r": 5,
+      "f": "#475569",
+      "s": "#181a20",
+      "sw": 3
     },
     {
       "t": "ruta",
-      "d": "M 37.76 24 L 37.76 72 L 63.68 72",
-      "s": "#facc15",
-      "sw": 7
+      "d": "M34 52 L22 62",
+      "s": "#ffdc00",
+      "sw": 4
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#facc15"
+      "t": "ruta",
+      "d": "M66 52 L78 62",
+      "s": "#ffdc00",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 40,
+      "cy": 26,
+      "rx": 5,
+      "ry": 7,
+      "f": "#ffffff88"
     }
   ]
 }

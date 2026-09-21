@@ -13,12 +13,14 @@ Lo que hace este script, en dos pasos y por ese orden:
      `MAPA` dice, lámina a lámina, cuál de ellas es. Eso no se adivina: se
      escribe aquí a mano, y lo que no tiene dibujo propio no se fuerza.
 
-  2. **Dibuja el resto como tarjeta tipográfica**, en el mismo formato
-     vectorial y con los colores que la propia lámina ya traía (`corHex` y
-     `bgHex`): fondo de color, halo suave y la inicial de la palabra trazada
-     con el mismo pincel redondo del resto del set. No es una ilustración y no
-     pretende serlo: es una tarjeta de vocabulario legible, coherente y propia,
-     que es lo que se puede sostener sin inventar 205 dibujos.
+  2. **Dibuja el resto**, una por una, en `tools/draw_banco_laminas.py`: mismo
+     formato vectorial, misma paleta y el mismo trazo grueso con contorno
+     oscuro. Hoy no queda ninguna sin dibujo propio.
+
+  3. Si algún día se añade una lámina al banco y todavía no está dibujada,
+     sale como **tarjeta tipográfica** —fondo de color, halo y la inicial de la
+     palabra con el mismo pincel—, que es honesto y legible mientras tanto. No
+     es un sitio donde quedarse: es el andamio.
 
 El resultado se escribe en el campo `lamina` de cada entrada de
 `assets/content/laminas/banco200_laminas.json`, y las tarjetas generadas en
@@ -36,6 +38,11 @@ import re
 import sys
 import unicodedata
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from draw_banco_laminas import DIBUXOS  # noqa: E402
+from draw_banco_laminas import lamina as lamina_debuxada  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 LAMINAS_DIR = ROOT / "assets" / "brand" / "laminas"
@@ -65,6 +72,9 @@ MAPA = {
     "flashcard_w_water": "auga",
     "flashcard_y_yellow": "amarelo",
     # --- vocabulario ----------------------------------------------------
+    # «Vaso de auga» ES la lámina `auga`, que es justo un vaso con agua: se
+    # comprobó mirando el dibujo, no el nombre del fichero.
+    "vocab_32": "auga",
     "vocab_36": "mochila",
     "vocab_37": "zapato",
     "vocab_38": "abrigo",
@@ -268,31 +278,46 @@ def main() -> int:
     comprobar = "--check" in sys.argv
 
     banco = json.loads(BANCO.read_text(encoding="utf-8"))
-    generadas = 0
+    debuxadas = 0
     reutilizadas = 0
+    tipograficas = 0
     pendientes = []
+
+    def poner_ficheiro(fichero: Path, doc: dict) -> None:
+        nonlocal pendientes
+        texto = json.dumps(doc, ensure_ascii=False, indent=2) + "\n"
+        if comprobar:
+            if not fichero.exists() or fichero.read_text(
+                encoding="utf-8"
+            ) != texto:
+                pendientes.append(str(fichero.relative_to(ROOT)))
+        else:
+            fichero.write_text(texto, encoding="utf-8")
 
     for entrada in banco:
         clave_id = entrada["id"]
         if clave_id in MAPA:
+            # 1. Ya estaba dibujado en el repositorio.
             destino = MAPA[clave_id]
             if not (LAMINAS_DIR / f"{destino}.json").exists():
                 print(f"ERROR: {clave_id} apunta a {destino}, que no existe.")
                 return 1
             reutilizadas += 1
-        else:
+        elif clave_id in DIBUXOS:
+            # 2. Lo dibuja tools/draw_banco_laminas.py.
             destino = clave_id
-            fichero = LAMINAS_DIR / f"{destino}.json"
-            nueva = tarjeta(entrada)
-            texto = json.dumps(nueva, ensure_ascii=False, indent=2) + "\n"
-            if comprobar:
-                if not fichero.exists() or fichero.read_text(
-                    encoding="utf-8"
-                ) != texto:
-                    pendientes.append(str(fichero.relative_to(ROOT)))
-            else:
-                fichero.write_text(texto, encoding="utf-8")
-            generadas += 1
+            poner_ficheiro(
+                LAMINAS_DIR / f"{destino}.json",
+                lamina_debuxada(clave_id, entrada.get("gl", "")),
+            )
+            debuxadas += 1
+        else:
+            # 3. Sin dibujo: tarjeta tipográfica. Hoy no entra aquí ninguna, y
+            # el recorrido se deja porque una lámina nueva en el banco tiene
+            # que poder existir antes de estar dibujada, no después.
+            destino = clave_id
+            poner_ficheiro(LAMINAS_DIR / f"{destino}.json", tarjeta(entrada))
+            tipograficas += 1
 
         if entrada.get("lamina") != destino:
             if comprobar:
@@ -315,10 +340,11 @@ def main() -> int:
             print(f"  ... y {len(pendientes) - 10} más")
         return 1
 
+    resto = f" · {tipograficas} son tarxeta tipográfica" if tipograficas else ""
     print(
-        f"OK: {len(banco)} láminas del banco · "
-        f"{reutilizadas} reutilizan un dibujo del repositorio · "
-        f"{generadas} son tarjeta tipográfica."
+        f"OK: {len(banco)} láminas do banco · "
+        f"{reutilizadas} reutilizan un debuxo que xa estaba · "
+        f"{debuxadas} están debuxadas a man{resto}."
     )
     return 0
 

@@ -1,40 +1,56 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Calma e serenidade.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Calma e serenidade",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
-    {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#0284c712"
-    },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#0284c71a"
+      "cy": 52,
+      "rx": 34,
+      "ry": 34,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 36,
+      "rx": 8,
+      "ry": 10,
+      "f": "#ffffff88"
     },
     {
       "t": "ruta",
-      "d": "M 66.2 33.6 Q 50 19.2 37.04 38.4 Q 30.56 57.6 39.92 66.24 Q 53.6 76.8 66.2 62.4",
-      "s": "#0284c7",
-      "sw": 7
+      "d": "M32 46 Q38 41 44 46",
+      "s": "#181a20",
+      "sw": 3
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#0284c7"
+      "t": "ruta",
+      "d": "M56 46 Q62 41 68 46",
+      "s": "#181a20",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M36 63 Q50 76 64 63",
+      "s": "#181a20",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M12 30 C22 22 34 22 42 28",
+      "s": "#00c4be",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M58 28 C66 22 78 22 88 30",
+      "s": "#00c4be",
+      "sw": 3
     }
   ]
 }

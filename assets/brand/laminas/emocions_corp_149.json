@@ -1,40 +1,96 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Sorpresa con ollos grandes.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Sorpresa con ollos grandes",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#a855f712"
+      "t": "elipse",
+      "cx": 50,
+      "cy": 52,
+      "rx": 34,
+      "ry": 34,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 36,
+      "rx": 8,
+      "ry": 10,
+      "f": "#ffffff88"
+    },
+    {
+      "t": "elipse",
+      "cx": 38,
+      "cy": 45,
+      "rx": 8,
+      "ry": 9,
+      "f": "#ffffff",
+      "s": "#181a20",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 62,
+      "cy": 45,
+      "rx": 8,
+      "ry": 9,
+      "f": "#ffffff",
+      "s": "#181a20",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 38,
+      "cy": 46,
+      "rx": 4,
+      "ry": 4,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 62,
+      "cy": 46,
+      "rx": 4,
+      "ry": 4,
+      "f": "#181a20"
+    },
+    {
+      "t": "ruta",
+      "d": "M31 35 Q38 30 45 34",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M55 34 Q62 30 69 35",
+      "s": "#4a2c11",
+      "sw": 3
     },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#a855f71a"
+      "cy": 66,
+      "rx": 7,
+      "ry": 9,
+      "f": "#911212",
+      "s": "#181a20",
+      "sw": 3
     },
     {
       "t": "ruta",
-      "d": "M 64.4 32.64 Q 48.56 18.24 39.2 35.52 Q 33.44 48 50 50.4 Q 67.28 53.76 60.8 65.28 Q 50 76.8 35.6 62.4",
-      "s": "#a855f7",
-      "sw": 7
+      "d": "M12 26 L18 32",
+      "s": "#ffdc00",
+      "sw": 4
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#a855f7"
+      "t": "ruta",
+      "d": "M88 26 L82 32",
+      "s": "#ffdc00",
+      "sw": 4
     }
   ]
 }

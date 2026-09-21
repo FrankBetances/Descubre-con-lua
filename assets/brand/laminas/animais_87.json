@@ -1,46 +1,77 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Tartaruga paciente.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Tartaruga paciente",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#16a34a12"
+      "t": "ruta",
+      "d": "M12 70 C12 44 30 30 50 30 C70 30 88 44 88 70 Z",
+      "f": "#15803d",
+      "s": "#14532d",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M12 70 L88 70",
+      "s": "#14532d",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M50 30 L50 70",
+      "s": "#14532d",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M28 44 C40 52 60 52 72 44",
+      "s": "#14532d",
+      "sw": 3
     },
     {
       "t": "elipse",
-      "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#16a34a1a"
+      "cx": 88,
+      "cy": 56,
+      "rx": 12,
+      "ry": 11,
+      "f": "#2ecc40",
+      "s": "#14532d",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 92,
+      "cy": 52,
+      "rx": 3,
+      "ry": 3.5,
+      "f": "#181a20"
     },
     {
       "t": "ruta",
-      "d": "M 50 24 L 50 72",
-      "s": "#16a34a",
-      "sw": 7
+      "d": "M22 70 L18 82",
+      "s": "#2ecc40",
+      "sw": 8
     },
     {
       "t": "ruta",
-      "d": "M 34.88 24 L 65.12 24",
-      "s": "#16a34a",
-      "sw": 7
+      "d": "M44 70 L42 84",
+      "s": "#2ecc40",
+      "sw": 8
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#16a34a"
+      "t": "ruta",
+      "d": "M68 70 L70 84",
+      "s": "#2ecc40",
+      "sw": 8
+    },
+    {
+      "t": "elipse",
+      "cx": 32,
+      "cy": 44,
+      "rx": 7,
+      "ry": 5,
+      "f": "#ffffff88"
     }
   ]
 }

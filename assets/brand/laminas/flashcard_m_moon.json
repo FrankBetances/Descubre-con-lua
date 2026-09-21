@@ -1,8 +1,8 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: M · Lúa de noite.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "M · Lúa de noite",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
       "t": "rrect",
@@ -11,30 +11,54 @@
       "w": 100,
       "h": 100,
       "r": 0,
-      "f": "#f8fafc"
-    },
-    {
-      "t": "elipse",
-      "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#1e293b1a"
+      "f": "#143a7a"
     },
     {
       "t": "ruta",
-      "d": "M 34.16 72 L 34.16 24 L 50 52.8 L 65.84 24 L 65.84 72",
-      "s": "#1e293b",
-      "sw": 7
+      "d": "M62 12 C36 12 20 34 24 58 C28 80 50 92 70 86 C50 78 40 58 44 42 C48 26 56 16 62 12 Z",
+      "f": "#ffdc00",
+      "s": "#c2410c",
+      "sw": 4
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#1e293b"
+      "t": "elipse",
+      "cx": 78,
+      "cy": 28,
+      "rx": 3,
+      "ry": 3,
+      "f": "#ffffff"
+    },
+    {
+      "t": "elipse",
+      "cx": 86,
+      "cy": 50,
+      "rx": 2.5,
+      "ry": 2.5,
+      "f": "#ffffff"
+    },
+    {
+      "t": "elipse",
+      "cx": 70,
+      "cy": 68,
+      "rx": 2.5,
+      "ry": 2.5,
+      "f": "#ffffff"
+    },
+    {
+      "t": "elipse",
+      "cx": 18,
+      "cy": 20,
+      "rx": 2.5,
+      "ry": 2.5,
+      "f": "#ffffff"
+    },
+    {
+      "t": "elipse",
+      "cx": 40,
+      "cy": 34,
+      "rx": 5,
+      "ry": 8,
+      "f": "#ffffff88"
     }
   ]
 }

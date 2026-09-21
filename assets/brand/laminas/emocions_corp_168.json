@@ -1,40 +1,46 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Son forte de trallazo.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Son forte de trallazo",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
       "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#dc262612"
-    },
-    {
-      "t": "elipse",
-      "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#dc26261a"
+      "x": 18,
+      "y": 40,
+      "w": 18,
+      "h": 22,
+      "r": 3,
+      "f": "#c89666",
+      "s": "#5a3a12",
+      "sw": 4
     },
     {
       "t": "ruta",
-      "d": "M 64.4 32.64 Q 48.56 18.24 39.2 35.52 Q 33.44 48 50 50.4 Q 67.28 53.76 60.8 65.28 Q 50 76.8 35.6 62.4",
-      "s": "#dc2626",
-      "sw": 7
+      "d": "M36 40 L58 22 L58 80 L36 62 Z",
+      "f": "#c89666",
+      "s": "#5a3a12",
+      "sw": 4
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#dc2626"
+      "t": "ruta",
+      "d": "M66 34 C76 44 76 58 66 68",
+      "s": "#e62828",
+      "sw": 5
+    },
+    {
+      "t": "ruta",
+      "d": "M78 24 C94 42 94 60 78 78",
+      "s": "#e62828",
+      "sw": 5
+    },
+    {
+      "t": "elipse",
+      "cx": 24,
+      "cy": 46,
+      "rx": 4,
+      "ry": 5,
+      "f": "#ffffff88"
     }
   ]
 }

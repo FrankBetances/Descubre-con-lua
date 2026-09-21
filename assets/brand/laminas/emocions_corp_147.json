@@ -1,46 +1,97 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Aledía e risa aberta.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Aledía e risa aberta",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
-    {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#f59e0b12"
-    },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#f59e0b1a"
+      "cy": 52,
+      "rx": 34,
+      "ry": 34,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 36,
+      "rx": 8,
+      "ry": 10,
+      "f": "#ffffff88"
     },
     {
       "t": "ruta",
-      "d": "M 32 72 L 50 24 L 68 72",
-      "s": "#f59e0b",
-      "sw": 7
+      "d": "M32 46 Q38 41 44 46",
+      "s": "#181a20",
+      "sw": 3
     },
     {
       "t": "ruta",
-      "d": "M 38.48 55.68 L 61.52 55.68",
-      "s": "#f59e0b",
-      "sw": 7
+      "d": "M56 46 Q62 41 68 46",
+      "s": "#181a20",
+      "sw": 3
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#f59e0b"
+      "t": "ruta",
+      "d": "M31 35 Q38 30 45 34",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M55 34 Q62 30 69 35",
+      "s": "#4a2c11",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M34 60 Q50 80 66 60 Z",
+      "f": "#911212",
+      "s": "#181a20",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M40 62 Q50 60 60 62",
+      "s": "#ffffff",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 24,
+      "cy": 62,
+      "rx": 7,
+      "ry": 5,
+      "f": "#f472b6"
+    },
+    {
+      "t": "elipse",
+      "cx": 76,
+      "cy": 62,
+      "rx": 7,
+      "ry": 5,
+      "f": "#f472b6"
+    },
+    {
+      "t": "ruta",
+      "d": "M14 24 L20 30",
+      "s": "#ffdc00",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M86 24 L80 30",
+      "s": "#ffdc00",
+      "sw": 4
+    },
+    {
+      "t": "ruta",
+      "d": "M50 10 L50 16",
+      "s": "#ffdc00",
+      "sw": 4
     }
   ]
 }

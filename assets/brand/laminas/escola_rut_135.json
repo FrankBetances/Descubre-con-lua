@@ -1,40 +1,88 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Sentar na alfombra sen ruído.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Sentar na alfombra sen ruído",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#8b5cf612"
+      "t": "elipse",
+      "cx": 50,
+      "cy": 56,
+      "rx": 42,
+      "ry": 28,
+      "f": "#2f6fd0",
+      "s": "#1e3a8a",
+      "sw": 4
     },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#8b5cf61a"
+      "cy": 56,
+      "rx": 30,
+      "ry": 19,
+      "f": "#00c4be",
+      "s": "#1e3a8a",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 56,
+      "rx": 16,
+      "ry": 10,
+      "f": "#ffffff",
+      "s": "#1e3a8a",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 32,
+      "cy": 44,
+      "rx": 8,
+      "ry": 4,
+      "f": "#ffffff88"
+    },
+    {
+      "t": "elipse",
+      "cx": 50,
+      "cy": 30,
+      "rx": 12,
+      "ry": 12,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 3
     },
     {
       "t": "ruta",
-      "d": "M 64.4 32.64 Q 48.56 18.24 39.2 35.52 Q 33.44 48 50 50.4 Q 67.28 53.76 60.8 65.28 Q 50 76.8 35.6 62.4",
-      "s": "#8b5cf6",
-      "sw": 7
+      "d": "M38 48 C44 42 56 42 62 48 L64 58 L36 58 Z",
+      "f": "#7c3aed",
+      "s": "#1e3a8a",
+      "sw": 3
     },
     {
       "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#8b5cf6"
+      "x": 46,
+      "y": 24,
+      "w": 8,
+      "h": 22,
+      "r": 4,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 2
+    },
+    {
+      "t": "ruta",
+      "d": "M22 16 C22 8 30 8 30 16 L30 22",
+      "s": "#2f6fd0",
+      "sw": 3
+    },
+    {
+      "t": "elipse",
+      "cx": 26,
+      "cy": 26,
+      "rx": 3,
+      "ry": 3,
+      "f": "#2f6fd0"
     }
   ]
 }

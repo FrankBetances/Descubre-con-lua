@@ -1,40 +1,52 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Libro de contos.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Libro de contos",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
     {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#c2410c12"
-    },
-    {
-      "t": "elipse",
-      "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#c2410c1a"
+      "t": "ruta",
+      "d": "M50 30 C36 20 20 22 12 28 L12 76 C20 70 36 68 50 78 Z",
+      "f": "#ffffff",
+      "s": "#5a3a12",
+      "sw": 4
     },
     {
       "t": "ruta",
-      "d": "M 37.76 24 L 37.76 72 L 63.68 72",
-      "s": "#c2410c",
-      "sw": 7
+      "d": "M50 30 C64 20 80 22 88 28 L88 76 C80 70 64 68 50 78 Z",
+      "f": "#fcedc7",
+      "s": "#5a3a12",
+      "sw": 4
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#c2410c"
+      "t": "ruta",
+      "d": "M50 30 L50 78",
+      "s": "#5a3a12",
+      "sw": 3
+    },
+    {
+      "t": "ruta",
+      "d": "M20 38 L40 42",
+      "s": "#94a3b8",
+      "sw": 2
+    },
+    {
+      "t": "ruta",
+      "d": "M20 48 L40 52",
+      "s": "#94a3b8",
+      "sw": 2
+    },
+    {
+      "t": "ruta",
+      "d": "M60 42 L80 38",
+      "s": "#94a3b8",
+      "sw": 2
+    },
+    {
+      "t": "ruta",
+      "d": "M60 52 L80 48",
+      "s": "#94a3b8",
+      "sw": 2
     }
   ]
 }

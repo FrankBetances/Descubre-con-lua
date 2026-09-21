@@ -1,46 +1,87 @@
 {
   "vb": 100,
   "vh": 100,
-  "nota": "Tarxeta de vocabulario: Tristeza consolada.",
-  "generado": "tools/draw_flashcards.py",
+  "nota": "Tristeza consolada",
+  "generado": "tools/draw_banco_laminas.py",
   "formas": [
-    {
-      "t": "rrect",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "r": 0,
-      "f": "#64748b12"
-    },
     {
       "t": "elipse",
       "cx": 50,
-      "cy": 48,
-      "rx": 33,
-      "ry": 33,
-      "f": "#64748b1a"
+      "cy": 52,
+      "rx": 34,
+      "ry": 34,
+      "f": "#fca070",
+      "s": "#c2410c",
+      "sw": 4
+    },
+    {
+      "t": "elipse",
+      "cx": 36,
+      "cy": 36,
+      "rx": 8,
+      "ry": 10,
+      "f": "#ffffff88"
+    },
+    {
+      "t": "elipse",
+      "cx": 38,
+      "cy": 46,
+      "rx": 5,
+      "ry": 6,
+      "f": "#ffffff",
+      "s": "#181a20",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 62,
+      "cy": 46,
+      "rx": 5,
+      "ry": 6,
+      "f": "#ffffff",
+      "s": "#181a20",
+      "sw": 2
+    },
+    {
+      "t": "elipse",
+      "cx": 38,
+      "cy": 47,
+      "rx": 2.5,
+      "ry": 2.5,
+      "f": "#181a20"
+    },
+    {
+      "t": "elipse",
+      "cx": 62,
+      "cy": 47,
+      "rx": 2.5,
+      "ry": 2.5,
+      "f": "#181a20"
     },
     {
       "t": "ruta",
-      "d": "M 50 24 L 50 72",
-      "s": "#64748b",
-      "sw": 7
+      "d": "M36 70 Q50 58 64 70",
+      "s": "#181a20",
+      "sw": 3
     },
     {
       "t": "ruta",
-      "d": "M 34.88 24 L 65.12 24",
-      "s": "#64748b",
-      "sw": 7
+      "d": "M38 54 C34 62 34 70 40 70 C46 70 44 62 38 54 Z",
+      "f": "#00c4be",
+      "s": "#2f6fd0",
+      "sw": 2
     },
     {
-      "t": "rrect",
-      "x": 34,
-      "y": 84,
-      "w": 32,
-      "h": 5,
-      "r": 2.5,
-      "f": "#64748b"
+      "t": "ruta",
+      "d": "M82 74 C92 66 96 78 86 84",
+      "s": "#fca070",
+      "sw": 9
+    },
+    {
+      "t": "ruta",
+      "d": "M82 74 C92 66 96 78 86 84",
+      "s": "#c2410c",
+      "sw": 2
     }
   ]
 }
