@@ -58,9 +58,16 @@ flutter:
     # Las láminas del contenido: una rejilla de 24×24 por objeto, misma paleta
     # que las insignias. Lo vigila tools/check_bundled_assets.py.
     - assets/brand/laminas/
-    # Neural voice recordings (Celtia gl / Sharvard es), synthesised at build
-    # time by tools/generate_voice_assets.py and committed. The models never
-    # run on the device.
+    # Neural voice recordings (Celtia gl / Sharvard es / LJSpeech en),
+    # synthesised at build time by tools/generate_voice_assets.py and
+    # committed. The models never run on the device: la app lleva las
+    # grabaciones y ningún motor de inferencia, y por eso el release no pide
+    # permiso de red.
+    #
+    # Es, con diferencia, lo más pesado que lleva la app, y desde que las
+    # 8.000 palabras del corpus suenan —cada una con su palabra y su frase—
+    # es lo que decide el tamaño del paquete. El número medido está en
+    # STATUS.md; aquí no, porque aquí se quedaría viejo.
     - assets/voice/
     # Nunito, en los cuatro pesos del sistema de diseño de la casa
     # (regular/semibold/bold/extrabold). Se empaquetan en

@@ -124,11 +124,24 @@ void main() {
         lemma: 'drink',
         banda: '1k',
         nivelCefr: 'A1/A2',
+        pos: 'VERB',
+        frase: 'Drink your milk before the story.',
+      );
+      const p4 = CorpusPalabra(
+        id: 4,
+        lemma: 'splash',
+        banda: '3k',
+        nivelCefr: 'B1/B2',
+        // Con el filtro por igualdad, «B1» ya no arrastra «B1/B2»: esta
+        // palabra está aquí justo para comprobarlo.
+        pos: 'NOUN',
+        onomatopeya: true,
       );
 
       repo.addCorpusPalabra(p1);
       repo.addCorpusPalabra(p2);
       repo.addCorpusPalabra(p3);
+      repo.addCorpusPalabra(p4);
 
       final banda1 = await repo.loadCorpusPalabras(banda: 1);
       expect(banda1.length, equals(2));
@@ -137,6 +150,16 @@ void main() {
       final cefrB1 = await repo.loadCorpusPalabras(cefr: 'B1');
       expect(cefrB1.length, equals(1));
       expect(cefrB1.first.lemma, equals('watermelon'));
+
+      final cefrB1B2 = await repo.loadCorpusPalabras(cefr: 'B1/B2');
+      expect(cefrB1B2.map((p) => p.lemma), equals(['splash']));
+
+      final verbos = await repo.loadCorpusPalabras(pos: 'VERB');
+      expect(verbos.map((p) => p.lemma), equals(['drink']));
+
+      final onomatopeias =
+          await repo.loadCorpusPalabras(soloOnomatopeias: true);
+      expect(onomatopeias.map((p) => p.lemma), equals(['splash']));
 
       final searchResults = await repo.searchPalabras('water');
       expect(searchResults.length, equals(2));

@@ -123,6 +123,7 @@ manda el script:
 | `check_bundled_assets.py` | Que todo activo que el código pide exista y viaje dentro del paquete |
 | `check_laminas.py` | Que cada forma de cada lámina se pinte de verdad, y no salga una lámina en blanco |
 | `check_no_emoji.py` | Que no se use emoji del sistema como iconografía (regla 5) |
+| `build_corpus_8000.py --check` | Que cada palabra del corpus de inglés traiga categoría gramatical y una frase entera |
 | `export_voice_corpus.py --check` | Que el corpus de voz siga sincronizado con los textos |
 | `check_pulse_bpm.py` | Que el tempo mostrado sea el que suena, **medido del audio** |
 | `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |
@@ -224,8 +225,10 @@ apagado ni con aviso—: un altavoz que no suena promete algo que no cumple.
 - inglés → **LJSpeech** (rhasspy/piper-voices)
 
 **El inglés es un caso aparte.** No hay pantallas en inglés: lo que se graba es
-el léxico, las órdenes TPR y la frase de cada mes del calendario, que salen de
-`assets/content/calendario/meses.json`. La persona adulta pulsa la pastilla y
+el léxico, las órdenes TPR, la frase de cada mes del calendario y **las 8.000
+palabras del corpus con su frase completa**. Cada palabra del corpus suena dos
+veces: la palabra sola, despacio, que es la que se imita, y su frase entera, a
+ritmo de tutor, que es la que se entiende. La persona adulta pulsa la pastilla y
 oye cómo se dice antes de decírselo a la criatura. Una pastilla sin grabación se
 pinta igual, con la palabra legible y sin altavoz.
 

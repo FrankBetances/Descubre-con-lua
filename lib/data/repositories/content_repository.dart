@@ -603,6 +603,8 @@ class ContentRepository {
   Future<List<CorpusPalabra>> loadCorpusPalabras({
     int? banda,
     String? cefr,
+    String? pos,
+    bool soloOnomatopeias = false,
   }) async {
     if (_corpusPalabras.isEmpty) {
       final paths = [corpusCefrAssetPath, corpusBaseAssetPath];
@@ -636,10 +638,19 @@ class ContentRepository {
           .toList();
     }
     if (cefr != null && cefr.trim().isNotEmpty) {
+      // Igualdad, no `contains`. Con `contains`, pedir «B2» devolvía también
+      // las de «B1/B2» y pedir «B1» las de «A2/B1»: dos pastillas distintas de
+      // la pantalla daban listas solapadas, y la cuenta de arriba no cuadraba
+      // con la banda elegida.
       final cleanCefr = cefr.trim().toLowerCase();
-      list = list
-          .where((p) => p.nivelCefr.toLowerCase().contains(cleanCefr))
-          .toList();
+      list = list.where((p) => p.nivelCefr.toLowerCase() == cleanCefr).toList();
+    }
+    if (pos != null && pos.trim().isNotEmpty) {
+      final cleanPos = pos.trim().toUpperCase();
+      list = list.where((p) => p.pos == cleanPos).toList();
+    }
+    if (soloOnomatopeias) {
+      list = list.where((p) => p.onomatopeya).toList();
     }
     return List.unmodifiable(list);
   }

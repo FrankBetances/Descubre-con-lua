@@ -442,11 +442,6 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     # sola grabación, el entrenador de vocabulario enseñando «water» sin poder
     # decirlo, y la tarjeta de la lámina con su acción TPR en inglés y nadie
     # que la pronuncie.
-    #
-    # Lo que NO entra aquí, a propósito: las 8.000 palabras del corpus
-    # BNC/COCA. Grabarlas serían unos 200 MB de APK —hoy toda la voz ocupa 61—
-    # para una lista que se explora, no se dice. Lo que se dice es esto otro:
-    # lo que la app enseña a la persona adulta para que lo repita.
     ingles = content_dir / "english"
     if ingles.exists():
         corpus_json = ingles / "english_corpus.json"
@@ -553,28 +548,39 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                     _one(texto, "en", estilo_ingles(texto),
                          f"conto/{cuento.get('id', '?')}/tpr", seen)
 
-    # El explorador de las 8.000 palabras dice las que la app ENSEÑA.
+    # LAS 8.000 SUENAN ENTERAS: la palabra y su frase.
     #
-    # El identificador de una grabación sale del texto EXACTO, así que «Bird»
-    # —como aparece en la asamblea— y «bird» —como aparece en la lista— son dos
-    # grabaciones distintas. Sin esta regla, el altavoz del explorador no salía
-    # en ninguna de las 8.000, ni siquiera en las que la app dice a diario.
+    # Esto lo ordenó Frank: «las 8.000 deben sonar todas porque deben
+    # integrarse dentro de la aplicación… necesitamos todas las palabras con
+    # frases completas». Antes de esa orden aquí solo se grababan las 169
+    # palabras que la app ya decía en otras pantallas, con el argumento del
+    # tamaño. El argumento sigue siendo cierto y está medido —son unas dos
+    # veces y media lo que hoy ocupa toda la voz— pero la decisión es de él y
+    # ya está tomada. El tamaño se informa, no se decide aquí.
     #
-    # La regla es la que es y no una lista a mano: si la palabra ya se dice en
-    # alguna parte de la app, su forma de la lista también se graba. Hoy son
-    # 169 y crecen solas con el contenido. Las otras 7.800 NO se graban: serían
-    # unos 200 MB de APK para una lista que se explora, no se dice.
+    # Dos grabaciones por palabra, y las dos hacen falta:
+    #
+    #   · la PALABRA sola, en estilo `slow`, que es el que existe para imitar
+    #     —una palabra suelta dicha a ritmo de frase no se puede repetir—;
+    #   · la FRASE entera, en estilo `tutor`, que es comprensión auditiva:
+    #     oírla entera, entenderla y poder decirla.
+    #
+    # El identificador sale del texto EXACTO, así que «Bird» —como aparece en
+    # la asamblea— y «bird» —como aparece en la lista— son dos grabaciones
+    # distintas, y las dos se graban. No hay lista a mano de nada: lo que está
+    # en el fichero del corpus, suena.
     corpus_cefr = content_dir / "corpus" / "bnc_coca_8000_cefr.json"
     if corpus_cefr.exists():
-        ditas = {normalize(e.text).lower()
-                 for e in seen.values() if e.lang == "en"}
         for palabra in json.loads(corpus_cefr.read_text(encoding="utf-8")):
             if not isinstance(palabra, dict):
                 continue
+            ref = f"corpus/{palabra.get('id_global', '?')}"
             lema = normalize(str(palabra.get("lemma", "")))
-            if lema and lema.lower() in ditas:
-                _one(lema, "en", estilo_ingles(lema),
-                     f"corpus/{palabra.get('id_global', '?')}", seen)
+            if lema:
+                _one(lema, "en", "slow", f"{ref}/lemma", seen)
+            frase = normalize(str(palabra.get("frase", "")))
+            if frase:
+                _one(frase, "en", "tutor", f"{ref}/frase", seen)
 
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 

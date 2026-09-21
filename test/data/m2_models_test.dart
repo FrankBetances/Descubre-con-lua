@@ -133,6 +133,10 @@ void main() {
         'lemma': 'water',
         'banda_frecuencia': '1k',
         'nivel_cefr': 'A1/A2',
+        'pos': 'NOUN',
+        'zipf': 5.52,
+        'definicion': 'a liquid necessary for the life of most animals',
+        'frase': 'They invaded our territorial waters.',
       };
 
       final palabra = CorpusPalabra.fromJson(jsonCefr);
@@ -141,6 +145,26 @@ void main() {
       expect(palabra.banda, equals('1k'));
       expect(palabra.bandaNumero, equals(1));
       expect(palabra.nivelCefr, equals('A1/A2'));
+      expect(palabra.pos, equals('NOUN'));
+      expect(palabra.zipf, closeTo(5.52, 0.001));
+      expect(palabra.frase, equals('They invaded our territorial waters.'));
+      expect(palabra.onomatopeya, isFalse);
+      expect(palabra.posEtiqueta(galego: true), equals('Substantivo'));
+      expect(palabra.posEtiqueta(galego: false), equals('Sustantivo'));
+      // Ida y vuelta: lo que se lee es lo que se escribe.
+      expect(CorpusPalabra.fromJson(palabra.toJson()), equals(palabra));
+
+      final onomatopeya = CorpusPalabra.fromJson({
+        'id_global': 102,
+        'lemma': 'splash',
+        'banda_frecuencia': '3k',
+        'nivel_cefr': 'B1/B2',
+        'pos': 'NOUN',
+        'frase': 'He made a great splash and then disappeared.',
+        'onomatopeya': true,
+      });
+      expect(onomatopeya.onomatopeya, isTrue);
+      expect(onomatopeya.zipf, equals(0));
 
       final jsonBasic = {
         'id': 202,

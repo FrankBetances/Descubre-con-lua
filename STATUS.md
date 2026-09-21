@@ -9,6 +9,112 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Las 8.000 palabras suenan enteras, y con frase · **en la rama, pendiente de sintetizar** (21/9/2026)
+
+Frank: «las 8.000 deben sonar todas porque deben integrarse dentro de la
+aplicación, recuerda que deben haber onomatopeya, sustantivos, verbos,
+adverbios, comprensión auditiva y ser capaz de comunicarse, efectivamente y
+necesitamos todas las palabras con frases completas».
+
+Esto **deroga** la decisión anterior de esta misma rama, que dejaba mudas
+7.800 de las 8.000 por tamaño. El tamaño sigue siendo el que es y está medido
+más abajo; la decisión es de Frank y está tomada.
+
+### Qué trae ahora cada palabra, y de dónde sale
+
+El fichero lo escribe `tools/build_corpus_8000.py` y el gate
+`build_corpus_8000.py --check` comprueba que no se caiga ninguna.
+
+| Campo | De dónde sale | Cuántas |
+| --- | --- | --- |
+| `pos` | WordNet, por la cuenta real del corpus SemCor, no por el orden en que WordNet lista los sentidos; 89 a mano | 7.998 de 7.998 |
+| `frase` | Ejemplo real de WordNet que use la palabra, si pasa cuatro filtros; si no, oración construida con su definición; las 73 de clase cerrada, a mano | 7.998 de 7.998 |
+| `zipf` | `wordfreq`, frecuencia real | 7.993 de 7.998 |
+| `definicion` | Glosa del sentido más usado de esa categoría | 7.998 de 7.998 |
+| `onomatopeya` | Lista escrita a mano: WordNet no lo marca | 46 |
+
+Reparto por categoría, contado sobre el fichero: **4.188 sustantivos, 2.269
+verbos, 1.319 adjetivos, 151 adverbios** y 71 de clase cerrada. Antes eran
+6.206 «NOUN» inventados; después de quitarlos, no había ninguno.
+
+El origen de la frase, contado: **3.457** vienen de un ejemplo real de WordNet,
+**4.452** se construyen con su definición y **89** están escritas a mano.
+
+**Dieciséis de esas 89 salieron de abrir la app**, no de un test. WordNet sí
+tiene «a», «he», «it», «who» y «at», pero como el amperio, el helio, la
+informática, la OMS y el astato: la palabra más frecuente del inglés entraba en
+la pantalla definida como una unidad eléctrica. Ningún gate lo habría dicho.
+
+**Los cuatro filtros del ejemplo**, y por qué cada uno: que sea de la misma
+categoría que se enseña (si no, «overlook · sustantivo» salía con «the
+apartment overlooks the Hudson»); que sea una **oración con verbo en forma
+personal** —lo comprueba el etiquetador de nltk, no el ojo— porque «a card
+shark» no es una frase completa y Frank pidió frases completas; que quepa en 80
+caracteres, porque esto se graba y se imita; y que no traiga nada de una lista
+de veto, porque WordNet es un diccionario general y sus ejemplos vienen de
+prensa adulta.
+
+### Lo que hay que decirle a Frank y él tiene que decidir
+
+- **La lista de origen trae doce palabras que son insultos o anatomía sexual**
+  —entre ellas un insulto racista—. Son palabras de una lista de frecuencia del
+  inglés; **no se han quitado**, porque quitarlas es alterar la lista y eso no
+  se pidió. Lo que sí se ha hecho: su frase sale siempre de la definición del
+  diccionario, nunca de un ejemplo. Tal y como está la rama, **esas doce se van
+  a grabar y van a sonar**. Si no deben sonar, dilo y se sacan del corpus de voz
+  en una línea.
+
+### El tamaño, que es la consecuencia real
+
+Esto es una **estimación**, no una medición: las grabaciones todavía no
+existen. Sale de ajustar una recta a los 2.441 ficheros que sí existen
+(`en_slow` 5,4 KB de media para 4,9 caracteres; `en_tutor` 11,3 KB para 29,2;
+`gl_tutor` 30,4 KB para 85,8).
+
+| | Locuciones | Tamaño estimado |
+| --- | --- | --- |
+| Palabra sola (`slow`) | 7.998 | ~52 MB |
+| Frase entera (`tutor`) | 7.998 | ~145 MB |
+| **Nuevo** | **15.996** | **~197 MB** |
+| Voz de hoy | 2.441 | 67 MB medidos |
+| Todos los assets hoy | | 80 MB medidos |
+| **Assets después** | | **~277 MB estimados** |
+
+**Lo que eso implica, y no lo he verificado**: un APK de ese tamaño no cabe en
+el límite de descarga de un APK de Google Play, así que la publicación pide un
+**AAB con paquetes de activos** (install-time). No lo he comprobado contra la
+documentación de Play ni he compilado el AAB: es lo que hay que mirar antes de
+subir nada, y está sin mirar.
+
+### Cómo se graban, y por qué el workflow cambió
+
+Son **16.555 locuciones inglesas sin grabación** (`tools/voice_missing.py
+--lang en`, medido). El paso del inglés de `voice-assets.yml` sintetizaba de
+una vez y hacía **un solo commit al final**: con este volumen, un job que se
+queda sin sus seis horas se lleva por delante todo lo sintetizado. Ahora va
+**por tandas de 40 minutos**, y cada tanda se empuja en cuanto acaba
+(`tools/ci_push_voice.sh`). El generador es incremental, así que la vuelta
+siguiente sigue por donde iba. Cuánto tarda en total **no lo sé**: no hay forma
+de medir aquí la velocidad de Piper en un runner, porque `huggingface.co` está
+bloqueado en este entorno y el modelo no se puede descargar.
+
+`tools/check_voice_levels.py` mide ahora **en paralelo y en silencio**: con
+casi veinte mil ficheros, uno detrás de otro eran más de veinte minutos de gate
+y veinte mil líneas que nadie lee. Solo escribe las que se salen de sitio.
+
+### Estado de los gates
+
+| Gate | Cómo salió |
+| --- | --- |
+| `dart format`, `flutter analyze` | OK |
+| `flutter test --exclude-tags capturas` | OK |
+| `build_corpus_8000.py --check` | OK, gate nuevo |
+| `export_voice_corpus.py --check` | OK, 18.974 locuciones |
+| `check_voice_coverage.py` | **ROJO**, y tiene que estarlo: faltan 16.555 grabaciones que sintetiza el workflow |
+| `flutter build apk --release` y el de permisos | **No corridos**: `dl.google.com` está bloqueado en este entorno y no hay SDK de Android. Los corre CI |
+
+---
+
 ## Fóra o desprazamento vertical de toda a app · **sen mergear** (15/9/2026)
 
 Frank: «quita a merda de scroll de todo». Fíxose, con dúas excepcións medidas

@@ -84,6 +84,13 @@ run_gate "every bank card has a drawing" python3 tools/draw_flashcards.py --chec
 # lado de un icono del set propio diciendo lo mismo: dos avisos y dos dibujos,
 # distintos en cada fabricante. Regla 5 del CLAUDE.md.
 run_gate "no system emoji used as iconography" python3 tools/check_no_emoji.py
+# Nace del corpus de 8.000 palabras, que llegó del proyecto de origen con la
+# categoría gramatical y la frecuencia INVENTADAS y sin una sola frase. Ahora
+# las 7.998 traen categoría, frase entera y frecuencia medida, y esto comprueba
+# que ninguna se quede sin ellas. No reconstruye —eso pide WordNet y una
+# descarga— sino que mira el fichero que viaja en el repositorio.
+run_gate "every corpus word has a part of speech and a whole sentence" \
+  python3 tools/build_corpus_8000.py --check
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py
