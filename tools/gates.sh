@@ -103,6 +103,12 @@ run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py
 run_gate "every locution has a recording" python3 tools/check_voice_coverage.py
+# Y el contrario: que no queden grabaciones de locuciones que ya no existen.
+# Al recortar el vocabulario inglés a las 4.000 de uso habitual quedaron 1.275
+# ficheros huérfanos, 9 MB de APK que nadie reproduce. El gate de cobertura no
+# los veía: un fichero de más no es una locución de menos.
+run_gate "no recording left over from content that is gone" \
+  python3 tools/prune_voice_assets.py --check
 run_gate "no recording peaks near full scale" python3 tools/check_voice_levels.py
 run_gate "manual PDF and Word match their source" python3 tools/check_manual_build.py
 # --offline: la mitad de red vive en su propio workflow, por calendario. Entre

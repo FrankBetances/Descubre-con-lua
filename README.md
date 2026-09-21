@@ -128,6 +128,7 @@ manda el script:
 | `check_pulse_bpm.py` | Que el tempo mostrado sea el que suena, **medido del audio** |
 | `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |
 | `check_voice_coverage.py` | Que toda locución reproducible tenga grabación en el paquete |
+| `prune_voice_assets.py --check` | Que no queden grabaciones de contenido que ya no existe |
 | `check_voice_levels.py` | Que ninguna grabación del paquete pique cerca de saturación, **medido del fichero** |
 | `check_manual_build.py` | Que el PDF y el Word del manual salgan del HTML actual y no de uno anterior |
 | `check_legal_urls.py --offline` | Que las páginas legales de `docs/` existan, sean lo que dicen ser y lleven el correo fijo |
