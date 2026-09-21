@@ -9,7 +9,7 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
-## El inglés que la app enseña: 4.000 palabras que suenan, con su frase · **en la rama, pendiente de sintetizar** (21/9/2026)
+## El inglés que la app enseña: 4.000 palabras que suenan, con su frase · **en main, grabado y con los gates en verde** (21/9/2026)
 
 Tres órdenes de Frank, en este orden:
 
@@ -81,37 +81,76 @@ on water». Son correctas y reales, pero no son lenguaje de aula. Lo que faltar�
 para cerrarlo bien: escribir a mano las 1.000 de la banda 1k, que son las que de
 verdad se usan. **No está hecho y Frank no lo ha pedido.**
 
-### El tamaño
+### El tamaño, ya MEDIDO
 
-**Estimación, no medición** (ajustando una recta a los 2.441 ficheros que sí
-existían): ~25 MB las palabras, ~68 MB las frases, **~92 MB nuevos**, que dejan
-los assets en **~171 MB**. Con las 8.000 hubieran sido ~197 MB nuevos y ~277 MB
-de assets: el recorte a 4.000 ahorra unos 105 MB.
+Las grabaciones ya existen, así que esto deja de ser una estimación. Medido
+sobre `main` en `59f78f6`:
 
-**Lo que sigue sin verificar**: si 171 MB caben en el límite de descarga de un
-APK de Play o hace falta un AAB con paquetes de activos. No lo he comprobado
-contra la documentación de Play ni he compilado el AAB.
+| | Ficheros | Tamaño real |
+| --- | --- | --- |
+| Palabra sola (`en_slow`) | 4.174 | 24,4 MB |
+| Frase entera (`en_tutor`) | 4.663 | 69,6 MB |
+| Toda la voz (gl + es + en) | 10.975 | **151,4 MB** |
+| Todos los assets | | **163,6 MB** |
+
+La estimación que se dio antes de sintetizar decía ~92 MB de voz nueva y ~171
+MB de assets. Salió alta en un 5 %: lo real son 163,6 MB. El método —ajustar
+una recta al tamaño de los ficheros que ya existían— funcionó.
+
+**Y lo que construye CI con eso** (artefactos del run 157 de `Gates`):
+
+| Artefacto | Tamaño |
+| --- | --- |
+| `app-release.apk` | ~179 MB |
+| `app-release.aab` | ~211 MB |
+
+**El límite de Google Play sigue SIN VERIFICAR**, y no por falta de intentarlo:
+la página que lo dice —el artículo de «maximum size limits» del soporte de Play
+Console— está bloqueada por la política de salida de este entorno. Lo único que
+sí se pudo leer, en la documentación de Android, es que las apps de más de 200
+MB usan Play Asset Delivery en vez de los ficheros de expansión antiguos; el
+número exacto del límite hay que mirarlo en Play Console antes de subir nada.
 
 ### Cómo se graban
 
-Son **7.836 locuciones inglesas sin grabación** (`tools/voice_missing.py --lang
-en`, medido); el corpus de voz entero pasa de 3.159 a **10.975**. El paso del
-inglés de `voice-assets.yml` va ahora **por tandas de 40 minutos** que se
-empujan en cuanto acaban (`tools/ci_push_voice.sh`), porque de una sola vez un
-job que se queda sin sus seis horas se lleva por delante todo lo sintetizado.
+**Ya están grabadas todas.** El corpus de voz pasa de 3.159 a **10.975
+locuciones** y `check_voice_coverage.py` está en verde en `main`: ni falta
+ninguna grabación ni sobra ninguna.
 
-Ritmo real medido: la corrida 33 de ese mismo workflow hizo **740 locuciones en
-103 segundos**. Esas eran palabras y órdenes cortas y estas traen 3.995 frases
-de 47 caracteres de media, así que irán más lentas; el número real lo dirá la
-primera tanda.
+Las sintetizó el workflow en dos corridas. La última, el run 37 sobre `main`,
+hizo las **4.289 que faltaban en 17 minutos y 44 segundos** —del paso
+«Synthesise en»—, así que el temor al límite de seis horas de un job no se
+cumplió ni de lejos. El paso va **por tandas de 40 minutos** que se empujan en
+cuanto acaban (`tools/ci_push_voice.sh`); con este volumen basta una.
+
+**Lo que costó de verdad** fue coordinar las corridas con los merges: una
+corrida que arranca de un commit anterior no ve las grabaciones que ya
+entraron, las vuelve a sintetizar con otros bytes y el mismo nombre, y su push
+choca al rebasar. Hubo que parar dos corridas y relanzar una desde el `main`
+del momento.
 
 `tools/check_voice_levels.py` mide ahora **en paralelo y en silencio**: con
 tantos ficheros, uno detrás de otro eran veinte minutos de gate y miles de
 líneas que nadie lee.
 
+### Estado de los gates, en `main` y en `59f78f6`
+
+| Gate | Cómo salió |
+| --- | --- |
+| Los 18 de `tools/gates.sh` | **Todos en verde**, en el run 157 de `Gates` sobre `main`. Ahí van `dart format`, `flutter analyze`, los 387 tests, `flutter build apk --release` y el gate de permisos del APK |
+| `build_corpus_ingles.py --check` | OK, gate nuevo: 3.995 palabras, todas con categoría y frase |
+| `humaniza_rutinas_fogar.py --check` | OK, gate nuevo: 1.000 días, ninguna rutina con firma ni corchete |
+| `prune_voice_assets.py --check` | OK, gate nuevo: 10.975 grabaciones y ninguna sobra |
+| `check_voice_coverage.py` | OK: las 10.975 están |
+
+Lo que **no** se corrió en esta máquina, y por qué: `flutter build apk
+--release` y el gate de permisos del APK necesitan el SDK de Android, y
+`dl.google.com` está bloqueado por la política de salida de este entorno. Los
+corrió CI, y pasaron.
+
 ---
 
-## Las 1.000 rutinas de familia, reescritas para que suenen a casa · **en la rama** (21/9/2026)
+## Las 1.000 rutinas de familia, reescritas para que suenen a casa · **en main** (21/9/2026)
 
 Frank: «quita eso de que las 1.000 rutinas de familia empiezan por Dr.
 Betances, necesito que las rutinas suenen naturales, que empiecen como
