@@ -231,8 +231,7 @@ class _TarxetaDoDiaNoFogar extends StatelessWidget {
           _Bloque(
             icona: Icons.volunteer_activism_rounded,
             rotulo: isGl ? 'Que facer na casa' : 'Qué hacer en casa',
-            texto: _sinPrefixoDeMaquina(
-                dia.familias.rutinaFogar.resolve(language)),
+            texto: dia.familias.rutinaFogar.resolve(language),
             theme: theme,
           ),
           const SizedBox(height: AppTheme.spaceSm),
@@ -248,18 +247,6 @@ class _TarxetaDoDiaNoFogar extends StatelessWidget {
       ),
     );
   }
-}
-
-/// El texto del día, sin el corchete de máquina que trae el fichero.
-///
-/// Cada rutina empieza por «[Fogar · 1.º Curso (0-2 anos · 12 a 24 meses)]»,
-/// que repite lo que la tarjeta ya dice arriba y ocupa una línea y media de una
-/// tarjeta que se lee con una criatura en brazos.
-String _sinPrefixoDeMaquina(String texto) {
-  final limpio = texto.trimLeft();
-  if (!limpio.startsWith('[')) return texto.trim();
-  final fin = limpio.indexOf(']');
-  return fin < 0 ? texto.trim() : limpio.substring(fin + 1).trim();
 }
 
 class _Bloque extends StatelessWidget {

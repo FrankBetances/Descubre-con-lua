@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 
-/// Una palabra de la lista de 8.000 del corpus BNC/COCA.
+/// Una palabra del vocabulario inglés de la app.
 ///
 /// **De dónde sale cada campo.** El fichero que este modelo lee lo escribe
-/// `tools/build_corpus_8000.py`, y ahí está dicho con detalle. En corto: la
+/// `tools/build_corpus_ingles.py`, y ahí está dicho con detalle. En corto: la
 /// banda de frecuencia (1k…8k) la trae la lista de origen; el nivel se DERIVA
 /// de la banda y la pantalla dice que no es una clasificación oficial del
 /// MCER; la categoría gramatical sale de WordNet por la cuenta real de SemCor;

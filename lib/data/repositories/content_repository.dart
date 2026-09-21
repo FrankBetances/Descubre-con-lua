@@ -50,10 +50,14 @@ class ContentRepository {
       'assets/content/cuentos/historias_progresivas.json';
   static const String laminas200AssetPath =
       'assets/content/laminas/banco200_laminas.json';
+
+  /// El vocabulario inglés que la app enseña: las 4.000 de uso habitual.
+  ///
+  /// Lo escribe `tools/build_corpus_ingles.py` desde la lista BNC/COCA de
+  /// 7.998, quedándose con las cuatro primeras bandas de frecuencia y sin las
+  /// doce que Frank mandó quitar.
   static const String corpusCefrAssetPath =
-      'assets/content/corpus/bnc_coca_8000_cefr.json';
-  static const String corpusBaseAssetPath =
-      'assets/content/corpus/bnc_coca_8000.json';
+      'assets/content/corpus/ingles_4000_uso_habitual.json';
   static const String calendarioDiasAssetPath =
       'assets/content/calendario/calendario_dias.json';
   static const String englishCorpusAssetPath =
@@ -607,8 +611,11 @@ class ContentRepository {
     bool soloOnomatopeias = false,
   }) async {
     if (_corpusPalabras.isEmpty) {
-      final paths = [corpusCefrAssetPath, corpusBaseAssetPath];
-      for (final path in paths) {
+      // Una sola ruta, a propósito. Antes había un respaldo a la lista cruda
+      // de 7.998 palabras: si el fichero bueno fallaba, la app enseñaba las
+      // 7.998 sin categoría, sin frase y con las doce que Frank mandó quitar.
+      // Un respaldo que enseña lo que se prohibió no es un respaldo.
+      for (final path in [corpusCefrAssetPath]) {
         try {
           final raw = await _loader.loadRawString(path);
           final dynamic decoded = jsonDecode(raw);

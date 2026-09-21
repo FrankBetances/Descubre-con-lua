@@ -9,24 +9,30 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/corpus_palabra_model.dart';
 import '../../../data/repositories/content_repository.dart';
 
-/// Explorador del corpus de 8.000 palabras BNC/COCA.
+/// El vocabulario inglés de la app: las 4.000 palabras de uso habitual.
+///
+/// **Cuántas y por qué esas.** Frank: «solo deja las 4.000 palabras que usan
+/// de forma habitual». La lista BNC/COCA de origen trae 7.998 ordenadas por
+/// frecuencia en bandas de mil, así que las de uso habitual son las cuatro
+/// primeras bandas. De ahí salen 3.995: las 4.000 menos las cinco de la lista
+/// de exclusión que caían en esas bandas.
 ///
 /// **Qué se ve en cada tarjeta y por qué.** La palabra, su categoría
 /// gramatical, su frecuencia medida, la definición y UNA FRASE ENTERA. Y dos
 /// altavoces: uno para la palabra sola, despacio, que es lo que se imita; otro
 /// para la frase, a ritmo de tutor, que es lo que se entiende. Las dos
-/// grabaciones existen para las 7.998 palabras, así que el altavoz no
-/// desaparece a mitad de la lista.
+/// grabaciones existen para las 3.995, así que el altavoz no desaparece a
+/// mitad de la lista.
 ///
 /// **De dónde salen los datos.** De `assets/content/corpus/`, que escribe
-/// `tools/build_corpus_8000.py` con WordNet y wordfreq. El nivel se deriva de
-/// la banda de frecuencia y la pantalla lo dice: no es MCER oficial.
-class Palabras8000Screen extends StatefulWidget {
+/// `tools/build_corpus_ingles.py` con WordNet y wordfreq. El nivel se deriva
+/// de la banda de frecuencia y la pantalla lo dice: no es MCER oficial.
+class VocabularioInglesScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
   final OfflineAudioService? audioService;
 
-  const Palabras8000Screen({
+  const VocabularioInglesScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
@@ -34,7 +40,8 @@ class Palabras8000Screen extends StatefulWidget {
   });
 
   @override
-  State<Palabras8000Screen> createState() => _Palabras8000ScreenState();
+  State<VocabularioInglesScreen> createState() =>
+      _VocabularioInglesScreenState();
 }
 
 /// Un filtro de categoría gramatical, con su etiqueta en las dos lenguas.
@@ -47,7 +54,7 @@ class _FiltroPos {
   const _FiltroPos(this.pos, this.gl, this.es, {this.onomatopeia = false});
 }
 
-class _Palabras8000ScreenState extends State<Palabras8000Screen> {
+class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
   late AppLanguage _language;
   List<CorpusPalabra> _palabras = [];
   bool _isLoading = true;
@@ -56,7 +63,8 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
   String? _selectedCefr;
   int _filtroPos = 0;
 
-  static const List<int> _bandas = [1, 2, 3, 4, 5, 6, 7, 8];
+  // Solo las cuatro que entran: el fichero no trae ninguna de la 5k a la 8k.
+  static const List<int> _bandas = [1, 2, 3, 4];
 
   // Los niveles que el fichero trae DE VERDAD. Antes esta lista decía
   // «A1/A2, B1, B2, C1/C2» y tres de las cuatro pastillas no encontraban
@@ -66,8 +74,6 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
     'A2/B1',
     'B1/B2',
     'B2',
-    'C1',
-    'C1+',
   ];
 
   static const List<_FiltroPos> _filtrosPos = [
@@ -128,12 +134,14 @@ class _Palabras8000ScreenState extends State<Palabras8000Screen> {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: const BotonAtras(),
-        title: const Text(
-          'Corpus 8.000 Palabras',
-          style: TextStyle(
+        title: Text(
+          isGl
+              ? '4.000 palabras de uso habitual'
+              : '4.000 palabras de uso habitual',
+          style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,
-            fontSize: 18,
+            fontSize: 16,
           ),
         ),
       ),

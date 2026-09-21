@@ -9,116 +9,153 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
-## Las 8.000 palabras suenan enteras, y con frase · **en la rama, pendiente de sintetizar** (21/9/2026)
+## El inglés que la app enseña: 4.000 palabras que suenan, con su frase · **en la rama, pendiente de sintetizar** (21/9/2026)
 
-Frank: «las 8.000 deben sonar todas porque deben integrarse dentro de la
-aplicación, recuerda que deben haber onomatopeya, sustantivos, verbos,
-adverbios, comprensión auditiva y ser capaz de comunicarse, efectivamente y
-necesitamos todas las palabras con frases completas».
+Tres órdenes de Frank, en este orden:
 
-Esto **deroga** la decisión anterior de esta misma rama, que dejaba mudas
-7.800 de las 8.000 por tamaño. El tamaño sigue siendo el que es y está medido
-más abajo; la decisión es de Frank y está tomada.
+1. «Las 8.000 deben sonar todas… necesitamos todas las palabras con frases
+   completas».
+2. «Quita de la app las doce palabras que son insultos o anatomía sexual».
+3. «Solo deja las 4.000 palabras que usan de forma habitual».
+
+Queda: **3.995 palabras**, que son las cuatro primeras bandas de frecuencia
+(1k–4k) menos las cinco de la lista de exclusión que caían dentro. Las otras
+3.998 de la lista de origen no están ni en el fichero, ni en la pantalla, ni en
+el corpus de voz.
+
+**Supuesto explícito**: «las que se usan de forma habitual» se ha leído como
+«las cuatro primeras bandas de frecuencia de la lista BNC/COCA», que es el
+propio orden de frecuencia de la lista. Si querías otro corte —por Zipf real,
+por ejemplo— es una línea en `tools/build_corpus_ingles.py`.
+
+Con el recorte, el fichero y la pantalla cambian de nombre: se llamaban
+«8.000» y ya no lo son.
+
+| Antes | Ahora |
+| --- | --- |
+| `assets/content/corpus/bnc_coca_8000_cefr.json` | `assets/content/corpus/ingles_4000_uso_habitual.json` |
+| `tools/build_corpus_8000.py` | `tools/build_corpus_ingles.py` |
+| `Palabras8000Screen` · «Corpus 8.000 Palabras» | `VocabularioInglesScreen` · «4.000 palabras de uso habitual» |
+
+También se ha quitado el respaldo que tenía `ContentRepository`: si el fichero
+bueno fallaba, la app cargaba la lista cruda de 7.998 —sin categoría, sin frase
+y con las doce prohibidas dentro—. Un respaldo que enseña lo que se prohibió no
+es un respaldo.
 
 ### Qué trae ahora cada palabra, y de dónde sale
 
-El fichero lo escribe `tools/build_corpus_8000.py` y el gate
-`build_corpus_8000.py --check` comprueba que no se caiga ninguna.
+El fichero lo escribe `tools/build_corpus_ingles.py` y el gate
+`build_corpus_ingles.py --check` comprueba que no se caiga ninguna, que ninguna
+salga de las bandas 1k–4k y que no vuelva ninguna de las doce.
 
 | Campo | De dónde sale | Cuántas |
 | --- | --- | --- |
-| `pos` | WordNet, por la cuenta real del corpus SemCor, no por el orden en que WordNet lista los sentidos; 89 a mano | 7.998 de 7.998 |
-| `frase` | Ejemplo real de WordNet que use la palabra, si pasa cuatro filtros; si no, oración construida con su definición; las 73 de clase cerrada, a mano | 7.998 de 7.998 |
-| `zipf` | `wordfreq`, frecuencia real | 7.993 de 7.998 |
-| `definicion` | Glosa del sentido más usado de esa categoría | 7.998 de 7.998 |
-| `onomatopeya` | Lista escrita a mano: WordNet no lo marca | 46 |
+| `pos` | WordNet, por la cuenta real del corpus SemCor, no por el orden en que WordNet lista los sentidos; 65 a mano | 3.995 de 3.995 |
+| `frase` | Ejemplo real de WordNet que use la palabra, si pasa cuatro filtros; si no, oración construida con su definición; las de clase cerrada, a mano | 3.995 de 3.995 |
+| `zipf` | `wordfreq`, frecuencia real | 3.995 de 3.995 |
+| `definicion` | Glosa del sentido más usado de esa categoría | 3.995 de 3.995 |
+| `onomatopeya` | Lista escrita a mano: WordNet no lo marca | 23 |
 
-Reparto por categoría, contado sobre el fichero: **4.188 sustantivos, 2.269
-verbos, 1.319 adjetivos, 151 adverbios** y 71 de clase cerrada. Antes eran
-6.206 «NOUN» inventados; después de quitarlos, no había ninguno.
+Reparto: **1.978 sustantivos, 1.199 verbos, 636 adjetivos, 122 adverbios** y 60
+de clase cerrada. Antes eran 6.206 «NOUN» inventados.
 
-El origen de la frase, contado: **3.457** vienen de un ejemplo real de WordNet,
-**4.452** se construyen con su definición y **89** están escritas a mano.
+El origen de la frase: **2.326** de un ejemplo real de WordNet, **1.604**
+construidas con su definición y **65** escritas a mano.
 
-**Dieciséis de esas 89 salieron de abrir la app**, no de un test. WordNet sí
-tiene «a», «he», «it», «who» y «at», pero como el amperio, el helio, la
-informática, la OMS y el astato: la palabra más frecuente del inglés entraba en
-la pantalla definida como una unidad eléctrica. Ningún gate lo habría dicho.
+**Dieciséis de las escritas a mano salieron de abrir la app**, no de un test.
+WordNet sí tiene «a», «he», «it», «who» y «at», pero como el amperio, el helio,
+la informática, la OMS y el astato: la palabra más frecuente del inglés entraba
+en la pantalla definida como una unidad eléctrica. Ningún gate lo habría dicho.
 
-**Los cuatro filtros del ejemplo**, y por qué cada uno: que sea de la misma
-categoría que se enseña (si no, «overlook · sustantivo» salía con «the
-apartment overlooks the Hudson»); que sea una **oración con verbo en forma
-personal** —lo comprueba el etiquetador de nltk, no el ojo— porque «a card
-shark» no es una frase completa y Frank pidió frases completas; que quepa en 80
-caracteres, porque esto se graba y se imita; y que no traiga nada de una lista
-de veto, porque WordNet es un diccionario general y sus ejemplos vienen de
-prensa adulta.
+**Los cuatro filtros del ejemplo**: misma categoría que se enseña (si no,
+«overlook · sustantivo» salía con «the apartment overlooks the Hudson»);
+**oración con verbo en forma personal**, comprobado con el etiquetador de nltk,
+porque «a card shark» no es una frase completa; 80 caracteres como mucho,
+porque esto se graba y se imita; y nada de la lista de veto, porque WordNet es
+un diccionario general y sus ejemplos vienen de prensa adulta.
 
-### Lo que hay que decirle a Frank y él tiene que decidir
+### Lo que queda por decir de la calidad
 
-- **La lista de origen trae doce palabras que son insultos o anatomía sexual**
-  —entre ellas un insulto racista—. Son palabras de una lista de frecuencia del
-  inglés; **no se han quitado**, porque quitarlas es alterar la lista y eso no
-  se pidió. Lo que sí se ha hecho: su frase sale siempre de la definición del
-  diccionario, nunca de un ejemplo. Tal y como está la rama, **esas doce se van
-  a grabar y van a sonar**. Si no deben sonar, dilo y se sacan del corpus de voz
-  en una línea.
+**1.604 frases son prosa de diccionario**: «A boat is a small vessel for travel
+on water». Son correctas y reales, pero no son lenguaje de aula. Lo que faltaría
+para cerrarlo bien: escribir a mano las 1.000 de la banda 1k, que son las que de
+verdad se usan. **No está hecho y Frank no lo ha pedido.**
 
-### El tamaño, que es la consecuencia real
+### El tamaño
 
-Esto es una **estimación**, no una medición: las grabaciones todavía no
-existen. Sale de ajustar una recta a los 2.441 ficheros que sí existen
-(`en_slow` 5,4 KB de media para 4,9 caracteres; `en_tutor` 11,3 KB para 29,2;
-`gl_tutor` 30,4 KB para 85,8).
+**Estimación, no medición** (ajustando una recta a los 2.441 ficheros que sí
+existían): ~25 MB las palabras, ~68 MB las frases, **~92 MB nuevos**, que dejan
+los assets en **~171 MB**. Con las 8.000 hubieran sido ~197 MB nuevos y ~277 MB
+de assets: el recorte a 4.000 ahorra unos 105 MB.
 
-| | Locuciones | Tamaño estimado |
-| --- | --- | --- |
-| Palabra sola (`slow`) | 7.998 | ~52 MB |
-| Frase entera (`tutor`) | 7.998 | ~145 MB |
-| **Nuevo** | **15.996** | **~197 MB** |
-| Voz de hoy | 2.441 | 67 MB medidos |
-| Todos los assets hoy | | 80 MB medidos |
-| **Assets después** | | **~277 MB estimados** |
+**Lo que sigue sin verificar**: si 171 MB caben en el límite de descarga de un
+APK de Play o hace falta un AAB con paquetes de activos. No lo he comprobado
+contra la documentación de Play ni he compilado el AAB.
 
-**Lo que eso implica, y no lo he verificado**: un APK de ese tamaño no cabe en
-el límite de descarga de un APK de Google Play, así que la publicación pide un
-**AAB con paquetes de activos** (install-time). No lo he comprobado contra la
-documentación de Play ni he compilado el AAB: es lo que hay que mirar antes de
-subir nada, y está sin mirar.
+### Cómo se graban
 
-### Cómo se graban, y por qué el workflow cambió
+Son **7.836 locuciones inglesas sin grabación** (`tools/voice_missing.py --lang
+en`, medido); el corpus de voz entero pasa de 3.159 a **10.975**. El paso del
+inglés de `voice-assets.yml` va ahora **por tandas de 40 minutos** que se
+empujan en cuanto acaban (`tools/ci_push_voice.sh`), porque de una sola vez un
+job que se queda sin sus seis horas se lleva por delante todo lo sintetizado.
 
-El corpus de voz pasa de **3.159 a 18.974 locuciones** y quedan **16.555
-inglesas sin grabación** (`tools/voice_missing.py --lang en`, medido). El paso del inglés de `voice-assets.yml` sintetizaba de
-una vez y hacía **un solo commit al final**: con este volumen, un job que se
-queda sin sus seis horas se lleva por delante todo lo sintetizado. Ahora va
-**por tandas de 40 minutos**, y cada tanda se empuja en cuanto acaba
-(`tools/ci_push_voice.sh`). El generador es incremental, así que la vuelta
-siguiente sigue por donde iba.
-
-**Cuánto va a tardar, con el único dato real que hay.** La corrida anterior de
-este mismo workflow (run 33, paso «Synthesise en») sintetizó **740 locuciones
-inglesas en 103 segundos**, descarga del modelo incluida: unas 7 por segundo.
-A ese ritmo, 16.555 serían unos 40 minutos, pero esas 740 eran palabras y
-órdenes cortas y estas traen 7.998 frases de 51 caracteres de media, que
-tardan bastante más por pieza. **No está medido**: lo dirá la primera tanda.
-Aquí no se puede medir, porque `huggingface.co` está bloqueado en este entorno
-y el modelo no se descarga.
+Ritmo real medido: la corrida 33 de ese mismo workflow hizo **740 locuciones en
+103 segundos**. Esas eran palabras y órdenes cortas y estas traen 3.995 frases
+de 47 caracteres de media, así que irán más lentas; el número real lo dirá la
+primera tanda.
 
 `tools/check_voice_levels.py` mide ahora **en paralelo y en silencio**: con
-casi veinte mil ficheros, uno detrás de otro eran más de veinte minutos de gate
-y veinte mil líneas que nadie lee. Solo escribe las que se salen de sitio.
+tantos ficheros, uno detrás de otro eran veinte minutos de gate y miles de
+líneas que nadie lee.
 
-### Estado de los gates
+---
 
-| Gate | Cómo salió |
-| --- | --- |
-| `dart format`, `flutter analyze` | OK |
-| `flutter test --exclude-tags capturas` | OK |
-| `build_corpus_8000.py --check` | OK, gate nuevo |
-| `export_voice_corpus.py --check` | OK, 18.974 locuciones |
-| `check_voice_coverage.py` | **ROJO**, y tiene que estarlo: faltan 16.555 grabaciones que sintetiza el workflow |
-| `flutter build apk --release` y el de permisos | **No corridos**: `dl.google.com` está bloqueado en este entorno y no hay SDK de Android. Los corre CI |
+## Las 1.000 rutinas de familia, reescritas para que suenen a casa · **en la rama** (21/9/2026)
+
+Frank: «quita eso de que las 1.000 rutinas de familia empiezan por Dr.
+Betances, necesito que las rutinas suenen naturales, que empiecen como
+empezarían en la casa, calle o escuela de forma habitual».
+
+**Lo que había, medido**: las 1.000 rutinas eran **cinco textos repetidos 200
+veces cada uno**, y los cinco **idénticos para las cinco edades**. A una
+criatura de seis años le decían «piel con piel» y «canto de cuna», lo mismo que
+a un bebé de doce meses. Además empezaban por un corchete de máquina y llevaban
+una firma delante del consejo:
+
+> [Hogar · 1.º Curso (0-2 años · 12 a 24 meses)] En la hora del baño: Conectar
+> con el cuento "X". Dr. Betances: El agua tibia es el mejor espacio
+> sensoriomotriz sin pantallas para liberar tensiones. Sin pantallas ni prisas.
+
+**Lo que hay**: 25 rutinas escritas a mano —5 momentos del día × 5 cursos— en
+gallego y en castellano, en `tools/humaniza_rutinas_fogar.py`. Cada una empieza
+donde empieza de verdad, y el registro sube con la edad:
+
+> Antes de salir de casa, con la criatura en brazos, nombra lo que vais tocando
+> —el abrigo, la puerta, la calle— y repite el saludo de «Manos que Saludan en
+> la Asamblea». A esta edad el contacto y tu voz calman la despedida mucho más
+> que cualquier explicación.
+
+> De camino al colegio, pregúntale qué cree que va a pasar hoy y por qué, y liga
+> algo con «Asamblea de Diciembre: El Círculo de los Amigos de Lúa». Decir «por
+> qué» en voz alta es el paso que separa contar de explicar.
+
+Se reescriben cuatro campos de los 1.000 días: `rutinaFogar`,
+`consignaFamilia`, `momento` —«Antes de dormir / Canto de cuna» llevaba una
+barra que nadie dice en voz alta— y `fraseConexion`, que decía cosas como «en
+la hora de al despertar y antes de salir». El título del cuento se teje dentro,
+**en su lengua**: la rutina gallega citaba el título en castellano.
+
+Lo comprueba el gate `humaniza_rutinas_fogar.py --check`, que falla si vuelve
+la firma, si una rutina vuelve a empezar por corchete o si un día se sale de la
+tabla de 25.
+
+Las 1.000 rutinas son ahora **1.000 cadenas distintas** —ninguna se repite,
+contado sobre el fichero—, pero eso sale de 25 textos base más el cuento del
+día. **Lo que esto NO arregla**: dentro del mismo curso y el mismo momento, las
+cuatro semanas del mes comparten la misma estructura y solo cambia el cuento
+citado. Para que la estructura también cambiase habría que escribir 100 textos
+(25 × 4 semanas) en vez de 25, y eso no está hecho.
 
 ---
 

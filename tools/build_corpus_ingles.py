@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Reconstruye el corpus de 8.000 palabras con DATOS REALES y una frase entera.
+"""Escribe el vocabulario inglés de la app: las 4.000 de uso habitual.
+
+Cuántas y por qué esas. Frank: «solo deja las 4.000 palabras que usan de forma
+habitual». La lista de origen trae 7.998 ordenadas por frecuencia en bandas de
+mil, así que «las que se usan de forma habitual» son las CUATRO PRIMERAS
+BANDAS: 1k, 2k, 3k y 4k. Las 3.998 de la 5k a la 8k no entran ni en el fichero
+ni en la app ni en el corpus de voz. Y doce palabras más quedan fuera por otra
+razón, la de FORA: son insultos o anatomía sexual y Frank pidió quitarlas.
 
 Por qué existe. El corpus llegó del proyecto de origen con tres campos
 inventados: `pos` decía «NOUN» en 6.206 de las 8.000 —«able», «across» y
@@ -42,8 +49,8 @@ De dónde sale ahora cada campo, y esto es lo que importa:
 
 Nada de esto se inventa aquí. Si una palabra no tiene dato, no se le pone uno.
 
-    python3 tools/build_corpus_8000.py           # escribe
-    python3 tools/build_corpus_8000.py --check   # solo comprueba que está al día
+    python3 tools/build_corpus_ingles.py           # escribe
+    python3 tools/build_corpus_ingles.py --check   # solo comprueba que está al día
 
 Para ESCRIBIR hace falta `wordfreq` y `nltk` con tres paquetes: `wordnet`,
 `averaged_perceptron_tagger_eng` y `punkt_tab`. Para `--check` no hace falta
@@ -61,7 +68,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BANDAS = ROOT / "assets" / "content" / "corpus" / "bnc_coca_8000.json"
-DESTINO = ROOT / "assets" / "content" / "corpus" / "bnc_coca_8000_cefr.json"
+DESTINO = (ROOT / "assets" / "content" / "corpus"
+           / "ingles_4000_uso_habitual.json")
+
+# Las que entran. La lista de origen ordena por frecuencia en bandas de mil:
+# estas cuatro son las 4.000 que se usan de verdad.
+BANDAS_QUE_ENTRAN = {"1k", "2k", "3k", "4k"}
+
+# Las que NO entran, las pida quien las pida. Son palabras de una lista de
+# frecuencia del inglés y por eso estaban; en una app de escuela infantil no
+# pintan nada, y menos grabadas y sonando. Frank: «quita de la app las doce
+# palabras que son insultos o anatomía sexual».
+FORA = {
+    "ass", "bastard", "breast", "damn", "goddam", "nigger", "penis", "queer",
+    "rape", "sex", "vagina", "whore",
+}
 
 # El nivel es ORIENTATIVO y sale de la banda de frecuencia, en bloques de mil.
 # No es una clasificación del MCER y la pantalla lo dice con esas palabras.
@@ -232,6 +253,12 @@ VETO = {
     "aids", "hiv", "adultery", "adulterous", "martyr", "martyrs", "dogma",
     "muslim", "muslims", "jew", "jews", "jewish", "communist", "kill",
     "thief", "terror", "terrorism", "gossip",
+    # Y estas salieron de buscar «sex» en la pantalla ya montada: la palabra
+    # que Frank mandó quitar ya no estaba, pero seguía saliendo en la
+    # definición de otras. «Naughty» se enseñaba como «suggestive of sexual
+    # impropriety» en vez de «badly behaved».
+    "impropriety", "sexuality", "homosexuality", "intercourse", "erotic",
+    "obscene", "lewd", "seduce", "seduction", "genital", "genitals",
 }
 
 # Palabras de la lista de origen cuya frase NO puede salir de un ejemplo.
@@ -241,10 +268,7 @@ VETO = {
 # de frecuencia sin que nadie lo pidiera— pero su frase sale SIEMPRE de la
 # definición del diccionario, que nombra la cosa sin escenificarla. El ejemplo
 # de WordNet para «damn», por poner uno, es una blasfemia entera.
-SENSIBLES = {
-    "ass", "bastard", "breast", "damn", "goddam", "nigger", "penis", "queer",
-    "rape", "sex", "vagina", "whore",
-}
+SENSIBLES: set[str] = set()  # las doce que había aquí están ahora en FORA
 
 _PALABRAS = None  # tokenizador perezoso: solo se importa nltk si hace falta
 
@@ -412,10 +436,17 @@ def _definicion_curta(palabra: str, synsets: list, pos: str) -> str:
     mesma = [s for s in synsets if POS_WORDNET.get(s.pos(), "") == pos]
     candidatas = mesma or synsets
     candidatas = sorted(candidatas, key=lambda s: -_conta(s, palabra))
-    for s in candidatas:
-        d = _recorta(s.definition())
-        if d and len(d) <= MAX_DEFINICION:
-            return d
+
+    # Primero los sentidos cuya definición no lleva nada de VETO. WordNet
+    # ordena «naughty» con «suggestive of sexual impropriety» por delante de
+    # «badly behaved», que es el sentido que se usa con una criatura de cuatro
+    # años. La palabra se queda; el sentido que se enseña, no es ese.
+    limpas = [s for s in candidatas if not _vetada(s.definition())]
+    for grupo in (limpas, candidatas):
+        for s in grupo:
+            d = _recorta(s.definition())
+            if d and len(d) <= MAX_DEFINICION:
+                return d
     return _recorta(candidatas[0].definition()) if candidatas else ""
 
 
@@ -486,6 +517,10 @@ def construir() -> tuple[list[dict], dict[str, int]]:
         if not palabra:
             continue
         banda = str(entrada.get("band", "1k")).strip()
+        if banda not in BANDAS_QUE_ENTRAN:
+            continue
+        if palabra.lower() in FORA:
+            continue
 
         pos = ""
         definicion = ""
@@ -560,9 +595,18 @@ def comprobar() -> int:
     bandas = json.loads(BANDAS.read_text(encoding="utf-8"))
     fallos = []
 
-    if len(datos) != len(bandas):
+    esperadas = sum(1 for e in bandas
+                    if str(e.get("band", "")).strip() in BANDAS_QUE_ENTRAN
+                    and str(e.get("word", "")).strip().lower() not in FORA)
+    if len(datos) != esperadas:
         fallos.append(
-            f"o corpus ten {len(datos)} palabras e a lista de bandas {len(bandas)}")
+            f"o vocabulario ten {len(datos)} palabras e deberían ser {esperadas}")
+
+    for d in datos:
+        if str(d.get("banda_frecuencia", "")) not in BANDAS_QUE_ENTRAN:
+            fallos.append(f"«{d.get('lemma')}» está fóra das bandas 1k-4k")
+        if str(d.get("lemma", "")).lower() in FORA:
+            fallos.append(f"«{d.get('lemma')}» é unha das que Frank mandou quitar")
 
     for d in datos:
         lemma = d.get("lemma", "")
@@ -587,7 +631,7 @@ def comprobar() -> int:
         print(f"O corpus de 8.000 ten {len(fallos)} problemas. Os dez primeiros:")
         for f in fallos[:10]:
             print("  ·", f)
-        print("Corre: python3 tools/build_corpus_8000.py")
+        print("Corre: python3 tools/build_corpus_ingles.py")
         return 1
 
     onoma = sum(1 for d in datos if d.get("onomatopeya"))

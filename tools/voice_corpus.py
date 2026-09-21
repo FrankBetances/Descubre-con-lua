@@ -548,15 +548,13 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                     _one(texto, "en", estilo_ingles(texto),
                          f"conto/{cuento.get('id', '?')}/tpr", seen)
 
-    # LAS 8.000 SUENAN ENTERAS: la palabra y su frase.
+    # LAS 4.000 SUENAN ENTERAS: la palabra y su frase.
     #
-    # Esto lo ordenó Frank: «las 8.000 deben sonar todas porque deben
-    # integrarse dentro de la aplicación… necesitamos todas las palabras con
-    # frases completas». Antes de esa orden aquí solo se grababan las 169
-    # palabras que la app ya decía en otras pantallas, con el argumento del
-    # tamaño. El argumento sigue siendo cierto y está medido —son unas dos
-    # veces y media lo que hoy ocupa toda la voz— pero la decisión es de él y
-    # ya está tomada. El tamaño se informa, no se decide aquí.
+    # Esto lo ordenó Frank: «deben sonar todas porque deben integrarse dentro
+    # de la aplicación… necesitamos todas las palabras con frases completas».
+    # Después acotó cuáles: «solo deja las 4.000 palabras que usan de forma
+    # habitual». Así que suenan las 3.995 del fichero, que son las cuatro
+    # primeras bandas de frecuencia menos las doce que mandó quitar.
     #
     # Dos grabaciones por palabra, y las dos hacen falta:
     #
@@ -569,7 +567,7 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     # la asamblea— y «bird» —como aparece en la lista— son dos grabaciones
     # distintas, y las dos se graban. No hay lista a mano de nada: lo que está
     # en el fichero del corpus, suena.
-    corpus_cefr = content_dir / "corpus" / "bnc_coca_8000_cefr.json"
+    corpus_cefr = content_dir / "corpus" / "ingles_4000_uso_habitual.json"
     if corpus_cefr.exists():
         for palabra in json.loads(corpus_cefr.read_text(encoding="utf-8")):
             if not isinstance(palabra, dict):
