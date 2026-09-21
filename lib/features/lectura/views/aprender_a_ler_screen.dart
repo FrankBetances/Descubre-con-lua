@@ -7,7 +7,6 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../cuentos/views/cuentos_list_screen.dart';
 import 'alphabot_screen.dart';
-import 'phonix_quest_screen.dart';
 
 /// Hub de Aprender a Ler e Alfabetización Temperá.
 class AprenderALerScreen extends StatelessWidget {
@@ -42,26 +41,17 @@ class AprenderALerScreen extends StatelessWidget {
               audioService: audioService,
             ),
       },
+      // Phonix Quest NO está aquí. Enseña los 44 fonemas del INGLÉS, y esta
+      // pantalla es la alfabetización en gallego y castellano, que son
+      // ortografías transparentes: una letra, un sonido. El inventario inglés
+      // no transfiere —«a» no suena /æ/ en ninguna de las dos lenguas—, así que
+      // ponerlo aquí enseñaba a la familia una tabla que no le sirve para lo
+      // que esta pantalla promete. Vive donde es verdad: Portal Docentes →
+      // Entrar en Inglés L3.
       {
         'title': lang == AppLanguage.gl
-            ? 'Phonix Quest · Fonemas'
-            : 'Phonix Quest · Fonemas',
-        'subtitle': lang == AppLanguage.gl
-            ? 'Guía de articulación e discriminación auditiva dos 44 fonemas'
-            : 'Guía de articulación y discriminación auditiva de los 44 fonemas',
-        'icon': Icons.graphic_eq,
-        'color': AppTheme.primaryDark,
-        'bg': AppTheme.primaryLight,
-        'builder': (BuildContext ctx) => PhonixQuestScreen(
-              repository: repository,
-              initialLanguage: lang,
-              audioService: audioService,
-            ),
-      },
-      {
-        'title': lang == AppLanguage.gl
-            ? 'Biblioteca de 200 Contos'
-            : 'Biblioteca de 200 Cuentos',
+            ? 'Biblioteca de Contos'
+            : 'Biblioteca de Cuentos',
         'subtitle': lang == AppLanguage.gl
             ? 'Lectura dialóxica compartida con preguntas graduadas por nivel'
             : 'Lectura dialógica compartida con preguntas graduadas por nivel',

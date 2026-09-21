@@ -7,6 +7,7 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../palabras/views/palabras_8000_screen.dart';
 import 'collocations_screen.dart';
+import '../../lectura/views/phonix_quest_screen.dart';
 import 'fsrs_trainer_screen.dart';
 import 'listening_screen.dart';
 
@@ -69,6 +70,26 @@ class EnglishHubScreen extends StatelessWidget {
         'color': AppTheme.primaryDark,
         'bg': AppTheme.primaryLight,
         'builder': (BuildContext ctx) => CollocationsScreen(
+              repository: repository,
+              initialLanguage: lang,
+              audioService: audioService,
+            ),
+      },
+      {
+        // Los 44 fonemas son los del INGLÉS. Estaban colgando de «Aprender a
+        // Ler», que es la alfabetización en gallego y castellano: allí una
+        // tabla de fonemas ingleses no ayuda a leer, despista. Aquí sí es lo
+        // que dice ser.
+        'title': lang == AppLanguage.gl
+            ? 'Fonemas do inglés · Phonix Quest'
+            : 'Fonemas del inglés · Phonix Quest',
+        'subtitle': lang == AppLanguage.gl
+            ? 'Guía de articulación e discriminación auditiva dos 44 fonemas ingleses'
+            : 'Guía de articulación y discriminación auditiva de los 44 fonemas ingleses',
+        'icon': Icons.graphic_eq,
+        'color': AppTheme.primaryDark,
+        'bg': AppTheme.primaryLight,
+        'builder': (BuildContext ctx) => PhonixQuestScreen(
               repository: repository,
               initialLanguage: lang,
               audioService: audioService,

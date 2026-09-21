@@ -44,6 +44,12 @@ class AulaSegundoCicloPanel extends StatefulWidget {
   /// La progresión diaria del nivel, por su clave («segundo_ciclo.4»).
   final ProgresionDoMes? Function(String clave)? progresionDe;
 
+  /// El cuento con su lámina y la dinámica que le tocan a ESTE día. Igual que
+  /// en el 1.º ciclo, y por el mismo motivo: el aula es la misma interfaz en
+  /// los dos ciclos.
+  final Widget Function(String cursoId, int mes, int semana, int dia)?
+      circuloDoDia;
+
   /// Abre el Modo Asamblea por la clase, el mes y el día que la docente
   /// eligió aquí.
   final void Function(
@@ -59,6 +65,7 @@ class AulaSegundoCicloPanel extends StatefulWidget {
     this.calendario,
     this.pe,
     this.progresionDe,
+    this.circuloDoDia,
   });
 
   /// La clave de progresión de un nivel: «segundo_ciclo.4», «.5», «.6».
@@ -214,6 +221,16 @@ class _AulaSegundoCicloPanelState extends State<AulaSegundoCicloPanel> {
                     language: lang,
                     dia: _diaActual,
                     semana: _progresion?.semana(_semana),
+                    // El aula del 2.º ciclo numera los meses por el CALENDARIO
+                    // (setembro es 9), y el banco de cuentos por el ORDEN DEL
+                    // CURSO (setembro es 1). Sin esta conversión, en octubre
+                    // saldría el cuento de junio.
+                    circulo: widget.circuloDoDia?.call(
+                      'curso_${_nivel.tramoEtario.replaceAll('-', '_')}',
+                      _mesesDoCurso.indexOf(_mes) + 1,
+                      _semana,
+                      _dia,
+                    ),
                     onComezar: () => widget.onComezar(_nivel, _mes, _diaActual),
                   ),
           ),
@@ -409,6 +426,9 @@ class _TarxetaDeFluxo extends StatelessWidget {
   final AppLanguage language;
   final DiaDeProgresion? dia;
   final SemanaDeProgresion? semana;
+
+  /// El cuento y la dinámica del día. Nulo si la pantalla no lo pasa.
+  final Widget? circulo;
   final VoidCallback onComezar;
 
   const _TarxetaDeFluxo({
@@ -417,6 +437,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
     required this.language,
     required this.dia,
     required this.semana,
+    required this.circulo,
     required this.onComezar,
   });
 
@@ -506,6 +527,10 @@ class _TarxetaDeFluxo extends StatelessWidget {
                       minutos: (fase.duracionSegundos / 60).round(),
                     ),
                   ),
+                if (circulo != null) ...[
+                  const SizedBox(height: AppTheme.spaceSm),
+                  circulo!,
+                ],
                 const SizedBox(height: AppTheme.spaceSm),
                 SizedBox(
                   height: 52,
