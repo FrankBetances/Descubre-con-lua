@@ -2,9 +2,9 @@
  "lang": "en",
  "voice": "LJSpeech (en-US) · rhasspy/piper-voices",
  "peakDbfs": -3.0,
- "entries": 5290,
- "totalBytes": 76587194,
- "totalSeconds": 13717.58,
+ "entries": 5294,
+ "totalBytes": 76605425,
+ "totalSeconds": 13720.18,
  "files": [
   {
    "id": "en_slow_00cb28d2_4",
@@ -83,6 +83,12 @@
    "file": "en_slow_07cc25f4_5.m4a",
    "seconds": 0.75,
    "bytes": 5086
+  },
+  {
+   "id": "en_slow_099b73dc_3",
+   "file": "en_slow_099b73dc_3.m4a",
+   "seconds": 0.59,
+   "bytes": 4309
   },
   {
    "id": "en_slow_09d001f3_4",
@@ -625,6 +631,12 @@
    "bytes": 5017
   },
   {
+   "id": "en_slow_4b6dbda9_3",
+   "file": "en_slow_4b6dbda9_3.m4a",
+   "seconds": 0.7,
+   "bytes": 4747
+  },
+  {
    "id": "en_slow_4e586f89_4",
    "file": "en_slow_4e586f89_4.m4a",
    "seconds": 0.85,
@@ -635,6 +647,12 @@
    "file": "en_slow_4e624c06_7.m4a",
    "seconds": 0.95,
    "bytes": 6066
+  },
+  {
+   "id": "en_slow_4ea8000f_3",
+   "file": "en_slow_4ea8000f_3.m4a",
+   "seconds": 0.66,
+   "bytes": 4778
   },
   {
    "id": "en_slow_4eeb6b24_6",
@@ -1079,6 +1097,12 @@
    "file": "en_slow_86eeeedf_7.m4a",
    "seconds": 1.21,
    "bytes": 7257
+  },
+  {
+   "id": "en_slow_882428f8_3",
+   "file": "en_slow_882428f8_3.m4a",
+   "seconds": 0.65,
+   "bytes": 4397
   },
   {
    "id": "en_slow_88d54e49_4",
