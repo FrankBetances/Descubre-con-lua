@@ -8,6 +8,9 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/cuento_model.dart';
 
+import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../services/cuento_narrativa_engine.dart';
+
 /// Visor interactivo e guiado do conto para docentes e familias.
 ///
 /// Orientado 100% ao adulto mediador baixo o paradigma de lectura dialóxica.
@@ -43,40 +46,6 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
     });
   }
 
-  /// Enriquece o texto do conto para garantir que cada escena teña unha
-  /// narrativa pedagóxica rica, descritiva e acolledora, superando
-  /// calquera texto telegráfico ou repetitivo.
-  String _obterTextoNarrativoRico(
-      Cuento cuento, CuentoPagina pagina, AppLanguage lang) {
-    final baseText = pagina.texto.resolve(lang).trim();
-    final isGl = lang == AppLanguage.gl;
-
-    // Se o texto xa é longo e rico (máis de 220 caracteres sen boilerplate), respectámolo
-    if (baseText.length > 220 &&
-        !baseText.contains('Na escola infantil e no fogar, abrimos os ollos') &&
-        !baseText.contains('De súpeto, algo marabilloso sucede')) {
-      return baseText;
-    }
-
-    // Contexto enriquecido segundo a páxina e o centro de interese
-    final titulo = cuento.titulo.resolve(lang);
-    final sinopse = cuento.sinopse.resolve(lang);
-
-    if (pagina.numero == 1) {
-      return isGl
-          ? '$baseText\n\nEra unha mañá serena e acolledora. Lúa ergueuse amodiño, estirou as súas catro patiñas e mirou polo cristal da ventá. O ceo de Vigo comezaba a tinguirse de dourado suave sobre as augas mansas da ría. Con paso silencioso, a gata achegouse con curiosidade ao seu recanto favorito para descubrir que novas historias e xogos nos agardaban hoxe.'
-          : '$baseText\n\nEra una mañana serena y acogedora. Lúa se levantó despacito, estiró sus cuatro patitas y miró por el cristal de la ventana. El cielo de Vigo comenzaba a teñirse de dorado suave sobre las aguas mansas de la ría. Con paso silencioso, la gata se acercó con curiosidad a su rincón favorito para descubrir qué nuevas historias y juegos nos esperaban hoy.';
-    } else if (pagina.numero == 2) {
-      return isGl
-          ? '$baseText\n\n«Miau! Mira que marabilla!», murmurou Lúa cos ollos ben abertos de emoción. As mans da persoa adulta móvense ao compás a 72 bpm, coma o latexo dun corazón tranquilo. O neno e a nena miran con atención e sorrín: cada elemento do debuxo ten un son, unha caricia e unha palabra fermosa para aprender xuntos sen présas nin pantallas.'
-          : '$baseText\n\n«¡Miau! ¡Mira qué maravilla!», murmuró Lúa con los ojos bien abiertos de emoción. Las manos de la persona adulta se mueven al compás a 72 bpm, como el latido de un corazón tranquilo. La criatura mira con atención y sonríe: cada elemento del dibujo tiene un sonido, una caricia y una palabra hermosa para aprender juntos sin prisas ni pantallas.';
-    } else {
-      return isGl
-          ? '$baseText\n\nQue sensación tan doce deixa esta historia no corazón! Lúa enróscase suavemente xunto a nós, respirando amodiño e gozando da calma do fogar e da escola. Gardamos este momento no peito coma un tesouro de palabras para lembralo sempre con agarimo antes de durmir.'
-          : '$baseText\n\n¡Qué sensación tan dulce deja esta historia en el corazón! Lúa se acurruca suavemente junto a nosotros, respirando despacito y disfrutando de la calma del hogar y de la escuela. Guardamos este momento en el pecho como un tesoro de palabras para recordarlo siempre con cariño antes de dormir.';
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     final lang = widget.language;
@@ -89,7 +58,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
         : null;
 
     final textoNarrativo = paginaActual != null
-        ? _obterTextoNarrativoRico(cuento, paginaActual, lang)
+        ? CuentoNarrativaEngine.obterTextoNarrativoRico(cuento, paginaActual, lang)
         : cuento.sinopse.resolve(lang);
 
     return Scaffold(
@@ -435,13 +404,26 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                 ],
                               ),
                               const SizedBox(height: 6),
-                              Text(
-                                cuento.tprOral!.fraseEn,
-                                style: const TextStyle(
-                                  color: Color(0xFF1A365D),
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                      cuento.tprOral!.fraseEn,
+                                      style: const TextStyle(
+                                        color: Color(0xFF1A365D),
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 8),
+                                  BotonEscuchar(
+                                    audioService: widget.audioService,
+                                    texto: cuento.tprOral!.fraseEn,
+                                    language: AppLanguage.en,
+                                    compacto: true,
+                                  ),
+                                ],
                               ),
                               const SizedBox(height: 4),
                               Text(

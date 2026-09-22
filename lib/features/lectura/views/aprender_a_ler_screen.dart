@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
@@ -615,14 +616,26 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                 const SizedBox(height: 8),
 
                 // Palabra en letras grandes manipulativas
-                Text(
-                  item['word'] as String,
-                  style: const TextStyle(
-                    fontSize: 36,
-                    fontWeight: FontWeight.w900,
-                    color: AppTheme.primaryInk,
-                    letterSpacing: 6,
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      item['word'] as String,
+                      style: const TextStyle(
+                        fontSize: 36,
+                        fontWeight: FontWeight.w900,
+                        color: AppTheme.primaryInk,
+                        letterSpacing: 6,
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    BotonEscuchar(
+                      audioService: widget.audioService,
+                      texto: item['word'] as String,
+                      language: _language,
+                      compacto: true,
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 4),
                 Text(
@@ -817,13 +830,28 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                 ),
                 const SizedBox(height: 16),
 
-                Text(
-                  '${item["wordEn"]} · ${item["ipa"]}',
-                  style: const TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    color: AppTheme.textPrimary,
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      '${item["wordEn"]} · ${item["ipa"]}',
+                      style: const TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: AppTheme.textPrimary,
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    BotonEscuchar(
+                      audioService: widget.audioService,
+                      texto: item['wordEn'] as String,
+                      language: ((item['id'] as String).contains('pan') ||
+                              (item['id'] as String).contains('sol'))
+                          ? _language
+                          : AppLanguage.en,
+                      compacto: true,
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 4),
                 Text(
@@ -953,13 +981,25 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                         ),
                         child: Column(
                           children: [
-                            Text(
-                              item['palabra1En'] as String,
-                              style: const TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xFF2B6CB0),
-                              ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  item['palabra1En'] as String,
+                                  style: const TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFF2B6CB0),
+                                  ),
+                                ),
+                                const SizedBox(width: 4),
+                                BotonEscuchar(
+                                  audioService: widget.audioService,
+                                  texto: item['palabra1En'] as String,
+                                  language: AppLanguage.en,
+                                  compacto: true,
+                                ),
+                              ],
                             ),
                             Text(
                               item['palabra1Gl'] as String,
@@ -983,13 +1023,25 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                         ),
                         child: Column(
                           children: [
-                            Text(
-                              item['palabra2En'] as String,
-                              style: const TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xFFC53030),
-                              ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  item['palabra2En'] as String,
+                                  style: const TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFFC53030),
+                                  ),
+                                ),
+                                const SizedBox(width: 4),
+                                BotonEscuchar(
+                                  audioService: widget.audioService,
+                                  texto: item['palabra2En'] as String,
+                                  language: AppLanguage.en,
+                                  compacto: true,
+                                ),
+                              ],
                             ),
                             Text(
                               item['palabra2Gl'] as String,

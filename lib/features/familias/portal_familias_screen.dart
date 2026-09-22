@@ -27,6 +27,7 @@ import 'views/xogos_fogar_screen.dart';
 /// - A crianza non toca o teléfono nin a tablet.
 /// - O adulto consulta a partitura de xogo, a rutina diaria ou o conto,
 ///   e media a experiencia física, fónica e manipulativa no mundo real.
+/// - Sistema intuitivo de selección e filtrado de exercicios por área e tramo de idade.
 class PortalFamiliasScreen extends StatefulWidget {
   final ContentRepository repository;
   final PremiosRepository? premios;
@@ -53,6 +54,8 @@ class PortalFamiliasScreen extends StatefulWidget {
 
 class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   late AppLanguage _language;
+  String _selectedCategory = 'todas';
+  String _selectedAge = 'todas';
 
   static const _appBarTitle = LocalizedString(
     gl: 'Portal Familias · Fogar',
@@ -63,6 +66,25 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     gl: 'Espazo de estimulación familiar sen pantallas para a infancia. Recursos guiados para o desenvolvemento da linguaxe e o vínculo afectivo.',
     es: 'Espacio de estimulación familiar sin pantallas para la infancia. Recursos guiados para el desarrollo del lenguaje y el vínculo afectivo.',
   );
+
+  static const List<Map<String, String>> _categories = [
+    {'id': 'todas', 'gl': 'Todas as Áreas', 'es': 'Todas las Áreas'},
+    {'id': 'xogos', 'gl': 'Xogos Físicos (TPR)', 'es': 'Juegos Físicos (TPR)'},
+    {'id': 'contos', 'gl': 'Contos Dialogados', 'es': 'Cuentos Dialogados'},
+    {'id': 'lectura', 'gl': 'Aprender a Ler', 'es': 'Aprender a Leer'},
+    {'id': 'laminas', 'gl': 'Láminas e Vocabulario', 'es': 'Láminas y Vocabulario'},
+    {'id': 'calendario', 'gl': 'Calendario Escolar', 'es': 'Calendario Escolar'},
+    {'id': 'academy', 'gl': 'Pautas de Crianza', 'es': 'Pautas de Crianza'},
+  ];
+
+  static const List<Map<String, String>> _ages = [
+    {'id': 'todas', 'gl': 'Todas as idades', 'es': 'Todas las edades'},
+    {'id': '0_2', 'gl': '0-2 anos (Nido)', 'es': '0-2 años (Nido)'},
+    {'id': '2_3', 'gl': '2-3 anos (Maternal)', 'es': '2-3 años (Maternal)'},
+    {'id': '3_4', 'gl': '3-4 anos (4.º Infantil)', 'es': '3-4 años (4.º Infantil)'},
+    {'id': '4_5', 'gl': '4-5 anos (5.º Infantil)', 'es': '4-5 años (5.º Infantil)'},
+    {'id': '5_6', 'gl': '5-6 anos (6.º Infantil)', 'es': '5-6 años (6.º Infantil)'},
+  ];
 
   @override
   void initState() {
@@ -81,6 +103,15 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   void _handleLanguageChanged(AppLanguage newLang) {
     setState(() => _language = newLang);
     widget.onLanguageChanged?.call(newLang);
+  }
+
+  String? get _cursoIdActual {
+    if (_selectedAge == 'todas') return null;
+    return 'curso_$_selectedAge';
+  }
+
+  bool _matchesFilter(String categoryId) {
+    return _selectedCategory == 'todas' || _selectedCategory == categoryId;
   }
 
   @override
@@ -161,8 +192,8 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                   const SizedBox(height: 10),
                   Text(
                     isGl
-                      ? 'Benvida ao fogar de Lúa'
-                      : 'Bienvenida al hogar de Lúa',
+                        ? 'Benvida ao fogar de Lúa'
+                        : 'Bienvenida al hogar de Lúa',
                     style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -179,7 +210,6 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  // Botón de Formación Rápida
                   TextButton.icon(
                     key: const ValueKey('formacion_familia_portal'),
                     onPressed: () {
@@ -237,6 +267,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                         initialLanguage: _language,
                         audioService: widget.audioService,
                         onLanguageChanged: _handleLanguageChanged,
+                        initialCursoId: _cursoIdActual,
                       ),
                     ),
                   );
@@ -299,11 +330,11 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
             ),
             const SizedBox(height: 18.0),
 
-            // Título de Sección de Exercicios
+            // Selector e Filtros de Dinámicas e Exercicios
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4.0),
               child: Text(
-                isGl ? 'DINÁMICAS E RECURSOS NO FOGAR' : 'DINÁMICAS Y RECURSOS EN EL HOGAR',
+                isGl ? 'EXPLORAR DINÁMICAS POR ÁREA' : 'EXPLORAR DINÁMICAS POR ÁREA',
                 style: const TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w800,
@@ -312,182 +343,250 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 10.0),
+            const SizedBox(height: 8.0),
+
+            // Chips de filtro de categorías
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: _categories.map((cat) {
+                  final isSel = _selectedCategory == cat['id'];
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: ChoiceChip(
+                      label: Text(isGl ? cat['gl']! : cat['es']!),
+                      selected: isSel,
+                      onSelected: (selected) {
+                        if (selected) setState(() => _selectedCategory = cat['id']!);
+                      },
+                      selectedColor: AppTheme.primaryVigoBlue,
+                      labelStyle: TextStyle(
+                        color: isSel ? Colors.white : AppTheme.textPrimary,
+                        fontWeight: isSel ? FontWeight.bold : FontWeight.w500,
+                        fontSize: 12,
+                      ),
+                    ),
+                  );
+                }).toList(),
+              ),
+            ),
+            const SizedBox(height: 8.0),
+
+            // Chips de filtro por idade / etapa
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: _ages.map((age) {
+                  final isSel = _selectedAge == age['id'];
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: ChoiceChip(
+                      label: Text(isGl ? age['gl']! : age['es']!),
+                      selected: isSel,
+                      onSelected: (selected) {
+                        if (selected) setState(() => _selectedAge = age['id']!);
+                      },
+                      selectedColor: const Color(0xFFDD6B20),
+                      labelStyle: TextStyle(
+                        color: isSel ? Colors.white : AppTheme.textPrimary,
+                        fontWeight: isSel ? FontWeight.bold : FontWeight.w500,
+                        fontSize: 11.5,
+                      ),
+                    ),
+                  );
+                }).toList(),
+              ),
+            ),
+            const SizedBox(height: 16.0),
 
             // 1. Calendario Escolar no Fogar
-            _buildFamilyModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Calendario Escolar no Fogar'
-                  : 'Calendario Escolar en el Hogar',
-              description: isGl
-                  ? '10 meses escolares (Setembro a Xuño), 5 cursos diferenciados por semanas e días con actividades concretas de 3 min, momentos cotiáns e conexión coa escola.'
-                  : '10 meses escolares (Septiembre a Junio), 5 cursos diferenciados por semanas y días con actividades concretas de 3 min, momentos cotidianos y conexión con la escuela.',
-              icon: Icons.calendar_month_rounded,
-              iconColor: const Color(0xFFDD6B20),
-              iconBg: const Color(0xFFFFF9EE),
-              badge: isGl ? '10 Meses · 5 Cursos' : '10 Meses · 5 Cursos',
-              buttonText: isGl ? 'Abrir Calendario' : 'Abrir Calendario',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => CalendarioFogarScreen(
-                      repository: widget.repository,
-                      store: store,
-                      initialLanguage: _language,
-                      audioService: widget.audioService,
-                      onLanguageChanged: _handleLanguageChanged,
+            if (_matchesFilter('calendario')) ...[
+              _buildFamilyModuleCard(
+                context: context,
+                title: isGl
+                    ? 'Calendario Escolar no Fogar'
+                    : 'Calendario Escolar en el Hogar',
+                description: isGl
+                    ? '10 meses escolares (Setembro a Xuño), 5 cursos diferenciados por semanas e días con actividades concretas de 3 min, momentos cotiáns e conexión coa escola.'
+                    : '10 meses escolares (Septiembre a Junio), 5 cursos diferenciados por semanas y días con actividades concretas de 3 min, momentos cotidianos y conexión con la escuela.',
+                icon: Icons.calendar_month_rounded,
+                iconColor: const Color(0xFFDD6B20),
+                iconBg: const Color(0xFFFFF9EE),
+                badge: isGl ? '10 Meses · 5 Cursos' : '10 Meses · 5 Cursos',
+                buttonText: isGl ? 'Abrir Calendario' : 'Abrir Calendario',
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => CalendarioFogarScreen(
+                        repository: widget.repository,
+                        store: store,
+                        initialLanguage: _language,
+                        audioService: widget.audioService,
+                        onLanguageChanged: _handleLanguageChanged,
+                        initialCursoId: _cursoIdActual,
+                      ),
                     ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 14.0),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+            ],
 
             // 2. Biblioteca de Contos Ilustrados
-            _buildFamilyModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Biblioteca de Contos Dialóxicos'
-                  : 'Biblioteca de Cuentos Dialógicos',
-              description: isGl
-                  ? 'Contos ilustrados con desenvolvemento narrativo por curso e mes, preguntas graduadas en 3 niveis de comprensión e reto físico TPR oral en inglés.'
-                  : 'Cuentos ilustrados con desarrollo narrativo por curso y mes, preguntas graduadas en 3 niveles de comprensión y reto físico TPR oral en inglés.',
-              icon: Icons.auto_stories_rounded,
-              iconColor: AppTheme.primaryVigoBlue,
-              iconBg: AppTheme.primaryTint,
-              badge: isGl ? 'Lectura Dialóxica' : 'Lectura Dialógica',
-              buttonText: isGl ? 'Explorar Contos' : 'Explorar Cuentos',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => CuentosListScreen(
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                      audioService: widget.audioService,
+            if (_matchesFilter('contos')) ...[
+              _buildFamilyModuleCard(
+                context: context,
+                title: isGl
+                    ? 'Biblioteca de Contos Dialóxicos'
+                    : 'Biblioteca de Cuentos Dialógicos',
+                description: isGl
+                    ? 'Contos ilustrados con desenvolvemento narrativo por curso e mes, preguntas graduadas en 3 niveis de comprensión e reto físico TPR oral en inglés.'
+                    : 'Cuentos ilustrados con desarrollo narrativo por curso y mes, preguntas graduadas en 3 niveles de comprensión y reto físico TPR oral en inglés.',
+                icon: Icons.auto_stories_rounded,
+                iconColor: AppTheme.primaryVigoBlue,
+                iconBg: AppTheme.primaryTint,
+                badge: isGl ? 'Lectura Dialóxica' : 'Lectura Dialógica',
+                buttonText: isGl ? 'Explorar Contos' : 'Explorar Cuentos',
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => CuentosListScreen(
+                        repository: widget.repository,
+                        initialLanguage: _language,
+                        audioService: widget.audioService,
+                      ),
                     ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 14.0),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+            ],
 
             // 3. Aprender a Ler · Fónica Manipulativa
-            _buildFamilyModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Aprender a Ler · Fónica Manipulativa'
-                  : 'Aprender a Leer · Fonética Manipulativa',
-              description: isGl
-                  ? 'Conciencia fonolóxica, mesa Alphabot expandida con letras reais de madeira/imáns, cubos CVC combinatorios (Phonicubes) e discriminación de pares mínimos.'
-                  : 'Conciencia fonológica, mesa Alphabot expandida con letras reales de madera/imanes, cubos CVC combinatorios (Phonicubes) y discriminación de pares mínimos.',
-              icon: Icons.spellcheck_rounded,
-              iconColor: const Color(0xFFD69E2E),
-              iconBg: const Color(0xFFFEFCBF),
-              badge: isGl ? 'Alfabetización Táctil' : 'Alfabetización Táctil',
-              buttonText: isGl ? 'Entrar en Lectura' : 'Entrar en Lectura',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => AprenderALerScreen(
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                      audioService: widget.audioService,
+            if (_matchesFilter('lectura')) ...[
+              _buildFamilyModuleCard(
+                context: context,
+                title: isGl
+                    ? 'Aprender a Ler · Fónica Manipulativa'
+                    : 'Aprender a Leer · Fonética Manipulativa',
+                description: isGl
+                    ? 'Conciencia fonolóxica, mesa Alphabot expandida con letras reais de madeira/imáns, cubos CVC combinatorios (Phonicubes) e discriminación de pares mínimos.'
+                    : 'Conciencia fonológica, mesa Alphabot expandida con letras reales de madera/imanes, cubos CVC combinatorios (Phonicubes) y discriminación de pares mínimos.',
+                icon: Icons.spellcheck_rounded,
+                iconColor: const Color(0xFFD69E2E),
+                iconBg: const Color(0xFFFEFCBF),
+                badge: isGl ? 'Alfabetización Táctil' : 'Alfabetización Táctil',
+                buttonText: isGl ? 'Entrar en Lectura' : 'Entrar en Lectura',
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => AprenderALerScreen(
+                        repository: widget.repository,
+                        initialLanguage: _language,
+                        audioService: widget.audioService,
+                      ),
                     ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 14.0),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+            ],
 
             // 4. Banco de Láminas Didácticas
-            _buildFamilyModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Banco de Láminas e Vocabulario'
-                  : 'Banco de Láminas y Vocabulario',
-              description: isGl
-                  ? '200+ láminas ilustradas por categorías (animais, ría de Vigo, emocións, alimentos), con preguntas de diálogo, retos de sinalamento táctil e pronunciación.'
-                  : '200+ láminas ilustradas por categorías (animales, ría de Vigo, emociones, alimentos), con preguntas de diálogo, retos de señalamiento táctil y pronunciación.',
-              icon: Icons.photo_library_rounded,
-              iconColor: const Color(0xFF38A169),
-              iconBg: const Color(0xFFC6F6D5),
-              badge: isGl ? '200+ Tarxetas' : '200+ Tarjetas',
-              buttonText: isGl ? 'Ver Láminas' : 'Ver Láminas',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => LaminasGalleryScreen(
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                      audioService: widget.audioService,
+            if (_matchesFilter('laminas')) ...[
+              _buildFamilyModuleCard(
+                context: context,
+                title: isGl
+                    ? 'Banco de Láminas e Vocabulario'
+                    : 'Banco de Láminas y Vocabulario',
+                description: isGl
+                    ? '200+ láminas ilustradas por categorías (animais, ría de Vigo, emocións, alimentos), con preguntas de diálogo, retos de sinalamento táctil e pronunciación.'
+                    : '200+ láminas ilustradas por categorías (animales, ría de Vigo, emociones, alimentos), con preguntas de diálogo, retos de señalamiento táctil y pronunciación.',
+                icon: Icons.photo_library_rounded,
+                iconColor: const Color(0xFF38A169),
+                iconBg: const Color(0xFFC6F6D5),
+                badge: isGl ? '200+ Tarxetas' : '200+ Tarjetas',
+                buttonText: isGl ? 'Ver Láminas' : 'Ver Láminas',
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => LaminasGalleryScreen(
+                        repository: widget.repository,
+                        initialLanguage: _language,
+                        audioService: widget.audioService,
+                      ),
                     ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 14.0),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+            ],
 
             // 5. Xogos e Dinámicas Físicas no Fogar (TPR)
-            _buildFamilyModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Xogos e Dinámicas Corporais (TPR)'
-                  : 'Juegos y Dinámicas Corporales (TPR)',
-              description: isGl
-                  ? 'Repertorio de xogos de movemento físico sen pantallas: Caza do tesouro dos sons, O barquiño de Samil, O xigante e a formiga, e masaxe a 72 bpm.'
-                  : 'Repertorio de juegos de movimiento físico sin pantallas: Caza del tesoro de los sonidos, El barquito de Samil, El gigante y la hormiguita, y masaje a 72 bpm.',
-              icon: Icons.sports_gymnastics_rounded,
-              iconColor: const Color(0xFF805AD5),
-              iconBg: const Color(0xFFE9D8FD),
-              badge: isGl ? 'Xogos Físicos' : 'Juegos Físicos',
-              buttonText: isGl ? 'Ver Dinámicas' : 'Ver Dinámicas',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => XogosFogarScreen(
-                      initialLanguage: _language,
-                      audioService: widget.audioService,
+            if (_matchesFilter('xogos')) ...[
+              _buildFamilyModuleCard(
+                context: context,
+                title: isGl
+                    ? 'Xogos e Dinámicas Corporais (TPR)'
+                    : 'Juegos y Dinámicas Corporales (TPR)',
+                description: isGl
+                    ? 'Repertorio de xogos de movemento físico sen pantallas: Caza do tesouro dos sons, O barquiño de Samil, O xigante e a formiga, e masaxe a 72 bpm.'
+                    : 'Repertorio de juegos de movimiento físico sin pantallas: Caza del tesoro de los sonidos, El barquito de Samil, El gigante y la hormiguita, y masaje a 72 bpm.',
+                icon: Icons.sports_gymnastics_rounded,
+                iconColor: const Color(0xFF805AD5),
+                iconBg: const Color(0xFFE9D8FD),
+                badge: isGl ? 'Xogos Físicos' : 'Juegos Físicos',
+                buttonText: isGl ? 'Ver Dinámicas' : 'Ver Dinámicas',
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => XogosFogarScreen(
+                        initialLanguage: _language,
+                        audioService: widget.audioService,
+                      ),
                     ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 14.0),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+            ],
 
             // 6. Academy · Cápsulas de Crianza
-            _buildFamilyModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Academy · Pautas de Crianza'
-                  : 'Academy · Pautas de Crianza',
-              description: isGl
-                  ? '5 bloques de desenvolvemento da comunicación para a persoa adulta: quendas de conversa, baño de linguaxe, bilingüismo aditivo e xogo motor sen pantallas.'
-                  : '5 bloques de desarrollo de la comunicación para la persona adulta: turnos de conversación, baño de lenguaje, bilingüismo aditivo y juego motor sin pantallas.',
-              icon: Icons.family_restroom_rounded,
-              iconColor: const Color(0xFF319795),
-              iconBg: const Color(0xFFB2F5EA),
-              badge: isGl ? 'Formación Familiar' : 'Formación Familiar',
-              buttonText: isGl ? 'Entrar en Academy' : 'Entrar en Academy',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => BloquesListScreen(
-                      repository: widget.repository,
-                      premios: widget.premios,
-                      calendario: widget.calendario,
-                      audioService: widget.audioService,
-                      initialLanguage: _language,
-                      onLanguageChanged: _handleLanguageChanged,
+            if (_matchesFilter('academy')) ...[
+              _buildFamilyModuleCard(
+                context: context,
+                title: isGl
+                    ? 'Academy · Pautas de Crianza'
+                    : 'Academy · Pautas de Crianza',
+                description: isGl
+                    ? '5 bloques de desenvolvemento da comunicación para a persoa adulta: quendas de conversa, baño de linguaxe, bilingüismo aditivo e xogo motor sen pantallas.'
+                    : '5 bloques de desarrollo de la comunicación para la persona adulta: turnos de conversación, baño de lenguaje, bilingüismo aditivo y juego motor sin pantallas.',
+                icon: Icons.family_restroom_rounded,
+                iconColor: const Color(0xFF319795),
+                iconBg: const Color(0xFFB2F5EA),
+                badge: isGl ? 'Formación Familiar' : 'Formación Familiar',
+                buttonText: isGl ? 'Entrar en Academy' : 'Entrar en Academy',
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => BloquesListScreen(
+                        repository: widget.repository,
+                        premios: widget.premios,
+                        calendario: widget.calendario,
+                        audioService: widget.audioService,
+                        initialLanguage: _language,
+                        onLanguageChanged: _handleLanguageChanged,
+                      ),
                     ),
-                  ),
-                );
-              },
-            ),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+            ],
 
             // 7. Premios e Insignias do Mediador
             if (widget.premios != null) ...[
-              const SizedBox(height: 20.0),
+              const SizedBox(height: 14.0),
               OutlinedButton.icon(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
@@ -517,42 +616,6 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 style: theme.textTheme.bodySmall?.copyWith(color: AppTheme.textMuted),
               ),
             ],
-
-            const SizedBox(height: 24.0),
-
-            // Garantía de Privacidade e Cero Conexión
-            Card(
-              color: const Color(0xFFEBE7D5),
-              elevation: 0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12.0),
-                side: const BorderSide(color: Color(0xFFD3CEB8)),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.shield_outlined,
-                      color: AppTheme.primaryVigoBlue,
-                      size: 24,
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        isGl
-                            ? 'Sen conexión e sen datos persoais. O único que se garda neste aparello é a túa propia conta de uso. Deseñado baixo o Decreto 150/2022.'
-                            : 'Sin conexión y sin datos personales. Lo único que se guarda en este aparato es tu propia cuenta de uso. Diseñado bajo el Decreto 150/2022.',
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: AppTheme.textSlate,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
           ],
         ),
       ),
@@ -570,8 +633,6 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     required String buttonText,
     required VoidCallback onTap,
   }) {
-    final theme = Theme.of(context);
-
     return Card(
       elevation: 0.5,
       shape: RoundedRectangleBorder(
@@ -579,45 +640,38 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
         side: const BorderSide(color: AppTheme.border),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
                 CircleAvatar(
+                  radius: 20,
                   backgroundColor: iconBg,
-                  radius: 22,
-                  child: Icon(icon, color: iconColor, size: 24),
+                  child: Icon(icon, color: iconColor, size: 22),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 7, vertical: 2),
-                        decoration: BoxDecoration(
-                          color: iconBg,
-                          borderRadius: BorderRadius.circular(6),
-                        ),
-                        child: Text(
-                          badge,
-                          style: TextStyle(
-                            color: iconColor,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 10,
-                          ),
+                      Text(
+                        badge.toUpperCase(),
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.w800,
+                          color: iconColor,
+                          letterSpacing: 0.6,
                         ),
                       ),
-                      const SizedBox(height: 3),
+                      const SizedBox(height: 2),
                       Text(
                         title,
-                        style: theme.textTheme.titleMedium?.copyWith(
-                          color: AppTheme.textPrimary,
+                        style: const TextStyle(
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15,
+                          color: AppTheme.primaryInk,
                         ),
                       ),
                     ],
@@ -628,27 +682,33 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
             const SizedBox(height: 10),
             Text(
               description,
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: const Color(0xFF4A5568),
+              style: const TextStyle(
                 fontSize: 13,
+                color: Color(0xFF4A5568),
                 height: 1.4,
               ),
             ),
             const SizedBox(height: 14),
-            Align(
-              alignment: Alignment.centerRight,
+            SizedBox(
+              width: double.infinity,
+              height: 42,
               child: ElevatedButton(
                 onPressed: onTap,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.primaryVigoBlue,
+                  backgroundColor: iconColor,
                   foregroundColor: Colors.white,
+                  elevation: 0,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                 ),
-                child: Text(buttonText),
+                child: Text(
+                  buttonText,
+                  style: const TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ),
           ],
