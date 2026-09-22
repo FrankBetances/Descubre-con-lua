@@ -580,6 +580,52 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
             if frase:
                 _one(frase, "en", "tutor", f"{ref}/frase", seen)
 
+    # «Aprender a Ler». Las palabras de la mesa de letras, los cubos CVC y los
+    # pares mínimos: cada una lleva un altavoz en la pantalla, así que cada una
+    # tiene que estar grabada. Nacieron MUDAS —es la cuarta vez que pasa lo
+    # mismo: contenido nuevo en un sitio que esta función no miraba— y además
+    # estaban escritas dentro del widget, donde ni este corpus ni ningún gate
+    # de contenido podían verlas.
+    #
+    # Solo la PALABRA, en estilo `slow`, que es el que existe para imitar. Los
+    # materiales, los fonemas y las consignas NO entran: son etiquetas y prosa
+    # sin altavoz, y una grabación que ninguna pantalla puede reproducir es
+    # peso en el APK. La regla de esta función: lo que no se puede pulsar, no
+    # viaja.
+    lectura_json = content_dir / "lectura" / "aprender_a_ler.json"
+    if lectura_json.exists():
+        data = json.loads(lectura_json.read_text(encoding="utf-8"))
+
+        for categoria in data.get("categoriasAlphabot") or []:
+            if not isinstance(categoria, dict):
+                continue
+            cid = categoria.get("id", "?")
+            for palabra in categoria.get("palabras") or []:
+                if not isinstance(palabra, dict):
+                    continue
+                if palabra.get("palabra"):
+                    _add(_localized(palabra["palabra"]), "slow",
+                         f"lectura/alphabot/{cid}/{palabra.get('id', '?')}", seen)
+
+        for cubo in data.get("cubosCvc") or []:
+            if not isinstance(cubo, dict):
+                continue
+            ref = f"lectura/cvc/{cubo.get('id', '?')}"
+            # `palabraEn` cuando la palabra es inglesa; `palabra` cuando es una
+            # sílaba transparente de galego y castellano. Nunca las dos.
+            if cubo.get("palabraEn"):
+                _one(str(cubo["palabraEn"]), "en", "slow", ref, seen)
+            elif cubo.get("palabra"):
+                _add(_localized(cubo["palabra"]), "slow", ref, seen)
+
+        for par in data.get("paresMinimos") or []:
+            if not isinstance(par, dict):
+                continue
+            ref = f"lectura/par/{par.get('id', '?')}"
+            for campo in ("palabra1En", "palabra2En"):
+                if par.get(campo):
+                    _one(str(par[campo]), "en", "slow", f"{ref}/{campo}", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-09-21T10:50:56Z",
- "entries": 10975,
+ "generatedAt": "2026-09-22T14:33:16Z",
+ "entries": 10994,
  "byStyle": {
-  "slow": 4274,
+  "slow": 4293,
   "tutor": 6701
  },
  "byLang": {
-  "en": 8837,
-  "es": 1069,
-  "gl": 1069
+  "en": 8841,
+  "es": 1076,
+  "gl": 1077
  },
  "corpus": [
   {
@@ -1114,6 +1114,14 @@
    "text": "consequent",
    "speech": "consequent",
    "source": "corpus/2190/lemma"
+  },
+  {
+   "id": "en_slow_099b73dc_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Top",
+   "speech": "Top",
+   "source": "lectura/par/par_d_t/palabra2En"
   },
   {
    "id": "en_slow_09cc291a_5",
@@ -9436,6 +9444,14 @@
    "source": "corpus/2707/lemma"
   },
   {
+   "id": "en_slow_4b6dbda9_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Dog",
+   "speech": "Dog",
+   "source": "lectura/par/par_d_t/palabra1En"
+  },
+  {
    "id": "en_slow_4b728fd8_8",
    "lang": "en",
    "style": "slow",
@@ -9826,6 +9842,14 @@
    "text": "bottom",
    "speech": "bottom",
    "source": "corpus/112/lemma"
+  },
+  {
+   "id": "en_slow_4ea8000f_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Man",
+   "speech": "Man",
+   "source": "lectura/par/par_m_n/palabra1En"
   },
   {
    "id": "en_slow_4eb1f8ef_5",
@@ -16946,6 +16970,14 @@
    "text": "split",
    "speech": "split",
    "source": "corpus/1862/lemma"
+  },
+  {
+   "id": "en_slow_882428f8_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Net",
+   "speech": "Net",
+   "source": "lectura/par/par_m_n/palabra2En"
   },
   {
    "id": "en_slow_8827595f_4",
@@ -70756,6 +70788,14 @@
    "source": "juega.inverno.01/vocabulario/frio"
   },
   {
+   "id": "es_slow_1f518b1d_4",
+   "lang": "es",
+   "style": "slow",
+   "text": "Casa",
+   "speech": "Casa",
+   "source": "lectura/alphabot/fogar/casa"
+  },
+  {
    "id": "es_slow_26ab0588_3",
    "lang": "es",
    "style": "slow",
@@ -70818,6 +70858,14 @@
    "text": "Flor",
    "speech": "Flor",
    "source": "juega.primavera.01/vocabulario/flor"
+  },
+  {
+   "id": "es_slow_42a7ed2b_3",
+   "lang": "es",
+   "style": "slow",
+   "text": "Mar",
+   "speech": "Mar",
+   "source": "lectura/alphabot/vigo/mar"
   },
   {
    "id": "es_slow_44c0d541_3",
@@ -70972,6 +71020,22 @@
    "source": "juega.mar.01/vocabulario/gaivota"
   },
   {
+   "id": "es_slow_8ec07ec6_3",
+   "lang": "es",
+   "style": "slow",
+   "text": "Lúa",
+   "speech": "Lúa",
+   "source": "lectura/alphabot/animais/lua"
+  },
+  {
+   "id": "es_slow_8f56e0cb_3",
+   "lang": "es",
+   "style": "slow",
+   "text": "Ría",
+   "speech": "Ría",
+   "source": "lectura/alphabot/vigo/ria"
+  },
+  {
    "id": "es_slow_963197d9_4",
    "lang": "es",
    "style": "slow",
@@ -71028,6 +71092,14 @@
    "source": "juega.benvida.01/vocabulario/aperta"
   },
   {
+   "id": "es_slow_b45aef8c_3",
+   "lang": "es",
+   "style": "slow",
+   "text": "Pan",
+   "speech": "Pan",
+   "source": "lectura/alphabot/fogar/pan"
+  },
+  {
    "id": "es_slow_b47d0812_6",
    "lang": "es",
    "style": "slow",
@@ -71042,6 +71114,14 @@
    "text": "Manta",
    "speech": "Manta",
    "source": "juega.inverno.01/vocabulario/manta"
+  },
+  {
+   "id": "es_slow_c6c2bb92_4",
+   "lang": "es",
+   "style": "slow",
+   "text": "Amor",
+   "speech": "Amor",
+   "source": "lectura/alphabot/corpo/amor"
   },
   {
    "id": "es_slow_c85081ac_3",
@@ -71066,6 +71146,14 @@
    "text": "Semilla",
    "speech": "Semilla",
    "source": "juega.primavera.01/vocabulario/semente"
+  },
+  {
+   "id": "es_slow_cf479255_3",
+   "lang": "es",
+   "style": "slow",
+   "text": "Pie",
+   "speech": "Pie",
+   "source": "lectura/alphabot/corpo/pe"
   },
   {
    "id": "es_slow_d470212e_4",
@@ -79316,6 +79404,14 @@
    "source": "juega.inverno.01/vocabulario/frio"
   },
   {
+   "id": "gl_slow_1f518b1d_4",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Casa",
+   "speech": "Casa",
+   "source": "lectura/alphabot/fogar/casa"
+  },
+  {
    "id": "gl_slow_26ab0588_3",
    "lang": "gl",
    "style": "slow",
@@ -79346,6 +79442,14 @@
    "text": "Laranxa",
    "speech": "Laranxa",
    "source": "juega.cores.01/vocabulario/laranxa"
+  },
+  {
+   "id": "gl_slow_42a7ed2b_3",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Mar",
+   "speech": "Mar",
+   "source": "lectura/alphabot/vigo/mar"
   },
   {
    "id": "gl_slow_44c0d541_3",
@@ -79468,12 +79572,28 @@
    "source": "juega.mar.01/vocabulario/barco"
   },
   {
+   "id": "gl_slow_8ec07ec6_3",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Lúa",
+   "speech": "Lúa",
+   "source": "lectura/alphabot/animais/lua"
+  },
+  {
    "id": "gl_slow_8f24f378_7",
    "lang": "gl",
    "style": "slow",
    "text": "Semente",
    "speech": "Semente",
    "source": "juega.primavera.01/vocabulario/semente"
+  },
+  {
+   "id": "gl_slow_8f56e0cb_3",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Ría",
+   "speech": "Ría",
+   "source": "lectura/alphabot/vigo/ria"
   },
   {
    "id": "gl_slow_944de63e_6",
@@ -79540,6 +79660,14 @@
    "source": "juega.primavera.01/vocabulario/choiva"
   },
   {
+   "id": "gl_slow_b45aef8c_3",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Pan",
+   "speech": "Pan",
+   "source": "lectura/alphabot/fogar/pan"
+  },
+  {
    "id": "gl_slow_b47d0812_6",
    "lang": "gl",
    "style": "slow",
@@ -79570,6 +79698,22 @@
    "text": "Gaivota",
    "speech": "Gaivota",
    "source": "juega.mar.01/vocabulario/gaivota"
+  },
+  {
+   "id": "gl_slow_c6c2bb92_4",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Amor",
+   "speech": "Amor",
+   "source": "lectura/alphabot/corpo/amor"
+  },
+  {
+   "id": "gl_slow_c7ff6392_2",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Pé",
+   "speech": "Pé",
+   "source": "lectura/alphabot/corpo/pe"
   },
   {
    "id": "gl_slow_c8465376_4",
@@ -79626,6 +79770,14 @@
    "text": "Amarelo",
    "speech": "Amarelo",
    "source": "juega.cores.01/vocabulario/amarelo"
+  },
+  {
+   "id": "gl_slow_dc04003c_2",
+   "lang": "gl",
+   "style": "slow",
+   "text": "Rá",
+   "speech": "Rá",
+   "source": "lectura/alphabot/animais/ra"
   },
   {
    "id": "gl_slow_e815caba_5",

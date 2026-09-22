@@ -1,0 +1,969 @@
+{
+  "id": "aprender_a_ler",
+  "avisoZeroPantalla": {
+    "gl": "A conciencia fonolóxica é puramente acústica e táctil. O neno non precisa ver letras escritas aínda: o oído e o corpo son os primeiros lectores.",
+    "es": "La conciencia fonológica es puramente acústica y táctil. La criatura no necesita ver letras escritas todavía: el oído y el cuerpo son los primeros lectores."
+  },
+  "actividadesConciencia": [
+    {
+      "id": "cf_01",
+      "titulo": {
+        "gl": "Palmas Silábicas co Corpo",
+        "es": "Palmas Silábicas con el Cuerpo"
+      },
+      "subtitulo": {
+        "gl": "Segmentación silábica con ritmo corporal",
+        "es": "Segmentación silábica con ritmo corporal"
+      },
+      "descricion": {
+        "gl": "Di palabras cotiás da casa (PA-TO, GA-TO, CA-SA) e bate palmas ou toca os pés por cada anaco. A crianza imita o teu movemento sen mirar a pantalla.",
+        "es": "Di palabras cotidianas de la casa (PA-TO, GA-TO, CA-SA) y da palmadas o toca los pies por cada trozo. La criatura imita tu movimiento sin mirar la pantalla."
+      },
+      "tpr": {
+        "gl": "1 golpe de palma por cada sílaba clara",
+        "es": "1 golpe de palma por cada sílaba clara"
+      }
+    },
+    {
+      "id": "cf_02",
+      "titulo": {
+        "gl": "Caza de Rimas de Vigo",
+        "es": "Caza de Rimas de Vigo"
+      },
+      "subtitulo": {
+        "gl": "Discriminación do son final",
+        "es": "Discriminación del sonido final"
+      },
+      "descricion": {
+        "gl": "«Lúa quere unha cuncha na rúa». «O peixe salta e non se mexe». Xoga a rimar con obxectos reais. Riman cando soan igual ao final!",
+        "es": "«Lúa quiere una concha en la calle». «El pez salta y no se mueve». Juega a rimar con objetos reales. ¡Riman cuando suenan igual al final!"
+      },
+      "tpr": {
+        "gl": "Salto con xiro cando escoita a rima",
+        "es": "Salto con giro cuando escucha la rima"
+      }
+    },
+    {
+      "id": "cf_03",
+      "titulo": {
+        "gl": "O Son Inicial Misterioso",
+        "es": "El Sonido Inicial Misterioso"
+      },
+      "subtitulo": {
+        "gl": "Illa de fonemas iniciais: /m/, /p/, /s/, /l/",
+        "es": "Isla de fonemas iniciales: /m/, /p/, /s/, /l/"
+      },
+      "descricion": {
+        "gl": "Pon varios obxectos diante: mazá, pan, sol. «Que empeza por /m/? /m/... mazá!». Toca a gorxa para sentir como vibra o son.",
+        "es": "Pon varios objetos delante: manzana, pan, sol. «¿Qué empieza por /m/? /m/... ¡manzana!». Toca la garganta para sentir cómo vibra el sonido."
+      },
+      "tpr": {
+        "gl": "Sinalar o obxecto e imitar o son /m/",
+        "es": "Señalar el objeto e imitar el sonido /m/"
+      }
+    }
+  ],
+  "categoriasAlphabot": [
+    {
+      "id": "animais",
+      "nome": {
+        "gl": "Animais",
+        "es": "Animales"
+      },
+      "palabras": [
+        {
+          "id": "lua",
+          "palabra": {
+            "gl": "Lúa",
+            "es": "Lúa"
+          },
+          "letras": {
+            "gl": [
+              "L",
+              "Ú",
+              "A"
+            ],
+            "es": [
+              "L",
+              "Ú",
+              "A"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/l/",
+              "/u/",
+              "/a/"
+            ],
+            "es": [
+              "/l/",
+              "/u/",
+              "/a/"
+            ]
+          },
+          "significado": {
+            "gl": "Mascota e compañeira suave",
+            "es": "Mascota y compañera suave"
+          },
+          "material": {
+            "gl": "Letras de madeira ou feltro",
+            "es": "Letras de madera o fieltro"
+          },
+          "tpr": {
+            "gl": "Acaricia suave coma unha gata",
+            "es": "Acaricia suave como una gata"
+          }
+        },
+        {
+          "id": "ra",
+          "palabra": {
+            "gl": "Rá",
+            "es": "Rana"
+          },
+          "letras": {
+            "gl": [
+              "R",
+              "Á"
+            ],
+            "es": [
+              "R",
+              "A",
+              "N",
+              "A"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/r/",
+              "/a/"
+            ],
+            "es": [
+              "/r/",
+              "/a/",
+              "/n/",
+              "/a/"
+            ]
+          },
+          "significado": {
+            "gl": "Salta na beira do río Lagares",
+            "es": "Salta en la orilla del río Lagares"
+          },
+          "material": {
+            "gl": "Tacos de madeira verdes",
+            "es": "Tacos de madera verdes"
+          },
+          "tpr": {
+            "gl": "Salto pequeno dende o chan",
+            "es": "Salto pequeño desde el suelo"
+          }
+        },
+        {
+          "id": "gato",
+          "palabra": {
+            "gl": "Gato",
+            "es": "Gato"
+          },
+          "letras": {
+            "gl": [
+              "G",
+              "A",
+              "T",
+              "O"
+            ],
+            "es": [
+              "G",
+              "A",
+              "T",
+              "O"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/g/",
+              "/a/",
+              "/t/",
+              "/o/"
+            ],
+            "es": [
+              "/g/",
+              "/a/",
+              "/t/",
+              "/o/"
+            ]
+          },
+          "significado": {
+            "gl": "Compañeiro curioso e acolledor",
+            "es": "Compañero curioso y acogedor"
+          },
+          "material": {
+            "gl": "Imáns na neveira",
+            "es": "Imanes en la nevera"
+          },
+          "tpr": {
+            "gl": "Move as patiñas no aire",
+            "es": "Mueve las patitas en el aire"
+          }
+        },
+        {
+          "id": "oso",
+          "palabra": {
+            "gl": "Oso",
+            "es": "Oso"
+          },
+          "letras": {
+            "gl": [
+              "O",
+              "S",
+              "O"
+            ],
+            "es": [
+              "O",
+              "S",
+              "O"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/o/",
+              "/s/",
+              "/o/"
+            ],
+            "es": [
+              "/o/",
+              "/s/",
+              "/o/"
+            ]
+          },
+          "significado": {
+            "gl": "Pisa forte e abriga no inverno",
+            "es": "Pisa fuerte y abriga en invierno"
+          },
+          "material": {
+            "gl": "Cartolinas grosas recortadas",
+            "es": "Cartulinas gruesas recortadas"
+          },
+          "tpr": {
+            "gl": "Pisa pesado: pum, pum!",
+            "es": "Pisa pesado: ¡pum, pum!"
+          }
+        },
+        {
+          "id": "peixe",
+          "palabra": {
+            "gl": "Peixe",
+            "es": "Pez"
+          },
+          "letras": {
+            "gl": [
+              "P",
+              "E",
+              "I",
+              "X",
+              "E"
+            ],
+            "es": [
+              "P",
+              "E",
+              "Z"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/p/",
+              "/e/",
+              "/i/",
+              "/ʃ/",
+              "/e/"
+            ],
+            "es": [
+              "/p/",
+              "/e/",
+              "/θ/"
+            ]
+          },
+          "significado": {
+            "gl": "Baila nas ondas da ría de Vigo",
+            "es": "Baila en las olas de la ría de Vigo"
+          },
+          "material": {
+            "gl": "Conchas pintadas con letras",
+            "es": "Conchas pintadas con letras"
+          },
+          "tpr": {
+            "gl": "Xunta as mans e nada coma un peixe",
+            "es": "Junta las manos y nada como un pez"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fogar",
+      "nome": {
+        "gl": "Fogar e Cotián",
+        "es": "Hogar y Cotidiano"
+      },
+      "palabras": [
+        {
+          "id": "pan",
+          "palabra": {
+            "gl": "Pan",
+            "es": "Pan"
+          },
+          "letras": {
+            "gl": [
+              "P",
+              "A",
+              "N"
+            ],
+            "es": [
+              "P",
+              "A",
+              "N"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/p/",
+              "/a/",
+              "/n/"
+            ],
+            "es": [
+              "/p/",
+              "/a/",
+              "/n/"
+            ]
+          },
+          "significado": {
+            "gl": "Alimento cotián que se parte e comparte",
+            "es": "Alimento cotidiano que se parte y comparte"
+          },
+          "material": {
+            "gl": "Masa real ou letras de cartón",
+            "es": "Masa real o letras de cartón"
+          },
+          "tpr": {
+            "gl": "Amasa coas dúas mans abertas",
+            "es": "Amasa con las dos manos abiertas"
+          }
+        },
+        {
+          "id": "casa",
+          "palabra": {
+            "gl": "Casa",
+            "es": "Casa"
+          },
+          "letras": {
+            "gl": [
+              "C",
+              "A",
+              "S",
+              "A"
+            ],
+            "es": [
+              "C",
+              "A",
+              "S",
+              "A"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/k/",
+              "/a/",
+              "/s/",
+              "/a/"
+            ],
+            "es": [
+              "/k/",
+              "/a/",
+              "/s/",
+              "/a/"
+            ]
+          },
+          "significado": {
+            "gl": "O refuxio quentiño onde descansamos",
+            "es": "El refugio calentito donde descansamos"
+          },
+          "material": {
+            "gl": "Pezas de construción de madeira",
+            "es": "Piezas de construcción de madera"
+          },
+          "tpr": {
+            "gl": "Fai un tellado cos brazos sobre a cabeza",
+            "es": "Haz un tejado con los brazos sobre la cabeza"
+          }
+        },
+        {
+          "id": "sol",
+          "palabra": {
+            "gl": "Sol",
+            "es": "Sol"
+          },
+          "letras": {
+            "gl": [
+              "S",
+              "O",
+              "L"
+            ],
+            "es": [
+              "S",
+              "O",
+              "L"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/s/",
+              "/o/",
+              "/l/"
+            ],
+            "es": [
+              "/s/",
+              "/o/",
+              "/l/"
+            ]
+          },
+          "significado": {
+            "gl": "Luz cálida que esperta a mañá",
+            "es": "Luz cálida que despierta la mañana"
+          },
+          "material": {
+            "gl": "Imáns amarelos ou pasta de sal",
+            "es": "Imanes amarillos o pasta de sal"
+          },
+          "tpr": {
+            "gl": "Abre as mans coma raios que quentan",
+            "es": "Abre las manos como rayos que calientan"
+          }
+        },
+        {
+          "id": "luz",
+          "palabra": {
+            "gl": "Luz",
+            "es": "Luz"
+          },
+          "letras": {
+            "gl": [
+              "L",
+              "U",
+              "Z"
+            ],
+            "es": [
+              "L",
+              "U",
+              "Z"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/l/",
+              "/u/",
+              "/θ/"
+            ],
+            "es": [
+              "/l/",
+              "/u/",
+              "/θ/"
+            ]
+          },
+          "significado": {
+            "gl": "Brilla cando abrimos a ventá",
+            "es": "Brilla cuando abrimos la ventana"
+          },
+          "material": {
+            "gl": "Letras translúcidas con lanterna",
+            "es": "Letras translúcidas con linterna"
+          },
+          "tpr": {
+            "gl": "Pinta un círculo de luz co dedo no aire",
+            "es": "Pinta un círculo de luz con el dedo en el aire"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vigo",
+      "nome": {
+        "gl": "Vigo e Natureza",
+        "es": "Vigo y Naturaleza"
+      },
+      "palabras": [
+        {
+          "id": "mar",
+          "palabra": {
+            "gl": "Mar",
+            "es": "Mar"
+          },
+          "letras": {
+            "gl": [
+              "M",
+              "A",
+              "R"
+            ],
+            "es": [
+              "M",
+              "A",
+              "R"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/m/",
+              "/a/",
+              "/r/"
+            ],
+            "es": [
+              "/m/",
+              "/a/",
+              "/r/"
+            ]
+          },
+          "significado": {
+            "gl": "As ondas azuis de Samil e da ría",
+            "es": "Las olas azules de Samil y de la ría"
+          },
+          "material": {
+            "gl": "Pedras de praia lisas con rotulador",
+            "es": "Piedras de playa lisas con rotulador"
+          },
+          "tpr": {
+            "gl": "Onda suave cos brazos de lado a lado",
+            "es": "Onda suave con los brazos de lado a lado"
+          }
+        },
+        {
+          "id": "ria",
+          "palabra": {
+            "gl": "Ría",
+            "es": "Ría"
+          },
+          "letras": {
+            "gl": [
+              "R",
+              "Í",
+              "A"
+            ],
+            "es": [
+              "R",
+              "Í",
+              "A"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/r/",
+              "/i/",
+              "/a/"
+            ],
+            "es": [
+              "/r/",
+              "/i/",
+              "/a/"
+            ]
+          },
+          "significado": {
+            "gl": "A auga mansa onde navegan os barcos",
+            "es": "El agua mansa donde navegan los barcos"
+          },
+          "material": {
+            "gl": "Cintas azuis de tea no chan",
+            "es": "Cintas azules de tela en el suelo"
+          },
+          "tpr": {
+            "gl": "Abre os brazos en vaivén de calma",
+            "es": "Abre los brazos en vaivén de calma"
+          }
+        },
+        {
+          "id": "barco",
+          "palabra": {
+            "gl": "Barco",
+            "es": "Barco"
+          },
+          "letras": {
+            "gl": [
+              "B",
+              "A",
+              "R",
+              "C",
+              "O"
+            ],
+            "es": [
+              "B",
+              "A",
+              "R",
+              "C",
+              "O"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/b/",
+              "/a/",
+              "/r/",
+              "/k/",
+              "/o/"
+            ],
+            "es": [
+              "/b/",
+              "/a/",
+              "/r/",
+              "/k/",
+              "/o/"
+            ]
+          },
+          "significado": {
+            "gl": "Navega cara ás Illas Cíes",
+            "es": "Navega hacia las Islas Cíes"
+          },
+          "material": {
+            "gl": "Barquiño de papel dobrado con letras",
+            "es": "Barquito de papel doblado con letras"
+          },
+          "tpr": {
+            "gl": "Xesto de remar co corpo adiante e atrás",
+            "es": "Gesto de remar con el cuerpo adelante y atrás"
+          }
+        }
+      ]
+    },
+    {
+      "id": "corpo",
+      "nome": {
+        "gl": "Corpo e Afecto",
+        "es": "Cuerpo y Afecto"
+      },
+      "palabras": [
+        {
+          "id": "man",
+          "palabra": {
+            "gl": "Man",
+            "es": "Mano"
+          },
+          "letras": {
+            "gl": [
+              "M",
+              "A",
+              "N"
+            ],
+            "es": [
+              "M",
+              "A",
+              "N",
+              "O"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/m/",
+              "/a/",
+              "/n/"
+            ],
+            "es": [
+              "/m/",
+              "/a/",
+              "/n/",
+              "/o/"
+            ]
+          },
+          "significado": {
+            "gl": "Aperta, saúda e constrúe",
+            "es": "Abraza, saluda y construye"
+          },
+          "material": {
+            "gl": "Silueta da propia man debuxada",
+            "es": "Silueta de la propia mano dibujada"
+          },
+          "tpr": {
+            "gl": "Abre a palma e saúda suavemente",
+            "es": "Abre la palma y saluda suavemente"
+          }
+        },
+        {
+          "id": "pe",
+          "palabra": {
+            "gl": "Pé",
+            "es": "Pie"
+          },
+          "letras": {
+            "gl": [
+              "P",
+              "É"
+            ],
+            "es": [
+              "P",
+              "I",
+              "E"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/p/",
+              "/e/"
+            ],
+            "es": [
+              "/p/",
+              "/i/",
+              "/e/"
+            ]
+          },
+          "significado": {
+            "gl": "Sostén o corpo e dá os primeiros pasos",
+            "es": "Sostiene el cuerpo y da los primeros pasos"
+          },
+          "material": {
+            "gl": "Pegadas recortadas en cartolina",
+            "es": "Huellas recortadas en cartulina"
+          },
+          "tpr": {
+            "gl": "Toca os pés coas mans sen dobrar xeonllos",
+            "es": "Toca los pies con las manos sin doblar rodillas"
+          }
+        },
+        {
+          "id": "amor",
+          "palabra": {
+            "gl": "Amor",
+            "es": "Amor"
+          },
+          "letras": {
+            "gl": [
+              "A",
+              "M",
+              "O",
+              "R"
+            ],
+            "es": [
+              "A",
+              "M",
+              "O",
+              "R"
+            ]
+          },
+          "fonemas": {
+            "gl": [
+              "/a/",
+              "/m/",
+              "/o/",
+              "/r/"
+            ],
+            "es": [
+              "/a/",
+              "/m/",
+              "/o/",
+              "/r/"
+            ]
+          },
+          "significado": {
+            "gl": "O acollemento de cada día na casa",
+            "es": "La acogida de cada día en casa"
+          },
+          "material": {
+            "gl": "Corazón de feltro suave",
+            "es": "Corazón de fieltro suave"
+          },
+          "tpr": {
+            "gl": "Aperta forte o teu propio peito",
+            "es": "Abraza fuerte tu propio pecho"
+          }
+        }
+      ]
+    }
+  ],
+  "cubosCvc": [
+    {
+      "id": "cvc_cat",
+      "c1": "C",
+      "v": "A",
+      "c2": "T",
+      "palabraEn": "Cat",
+      "ipa": "/kæt/",
+      "significado": {
+        "gl": "Gato (Inglés L3)",
+        "es": "Gato (Inglés L3)"
+      },
+      "material": {
+        "gl": "3 cubos de madeira: azul (/k/), vermello (/æ/), verde (/t/)",
+        "es": "3 cubos de madera: azul (/k/), rojo (/æ/), verde (/t/)"
+      },
+      "consigna": {
+        "gl": "Xunta os tres bloques: /k/ + /æ/ + /t/ = CAT!",
+        "es": "Junta los tres bloques: /k/ + /æ/ + /t/ = ¡CAT!"
+      }
+    },
+    {
+      "id": "cvc_bed",
+      "c1": "B",
+      "v": "E",
+      "c2": "D",
+      "palabraEn": "Bed",
+      "ipa": "/bɛd/",
+      "significado": {
+        "gl": "Cama (Inglés L3)",
+        "es": "Cama (Inglés L3)"
+      },
+      "material": {
+        "gl": "3 cubos de madeira: azul (/b/), vermello (/ɛ/), verde (/d/)",
+        "es": "3 cubos de madera: azul (/b/), rojo (/ɛ/), verde (/d/)"
+      },
+      "consigna": {
+        "gl": "Xunta os tres bloques: /b/ + /ɛ/ + /d/ = BED!",
+        "es": "Junta los tres bloques: /b/ + /ɛ/ + /d/ = ¡BED!"
+      }
+    },
+    {
+      "id": "cvc_pig",
+      "c1": "P",
+      "v": "I",
+      "c2": "G",
+      "palabraEn": "Pig",
+      "ipa": "/pɪɡ/",
+      "significado": {
+        "gl": "Porquiño (Inglés L3)",
+        "es": "Cerdito (Inglés L3)"
+      },
+      "material": {
+        "gl": "3 cubos de madeira: azul (/p/), vermello (/ɪ/), verde (/ɡ/)",
+        "es": "3 cubos de madera: azul (/p/), rojo (/ɪ/), verde (/ɡ/)"
+      },
+      "consigna": {
+        "gl": "Xunta os tres bloques: /p/ + /ɪ/ + /ɡ/ = PIG!",
+        "es": "Junta los tres bloques: /p/ + /ɪ/ + /ɡ/ = ¡PIG!"
+      }
+    },
+    {
+      "id": "cvc_sun",
+      "c1": "S",
+      "v": "U",
+      "c2": "N",
+      "palabraEn": "Sun",
+      "ipa": "/sʌn/",
+      "significado": {
+        "gl": "Sol (Inglés L3)",
+        "es": "Sol (Inglés L3)"
+      },
+      "material": {
+        "gl": "3 cubos de madeira: azul (/s/), vermello (/ʌ/), verde (/n/)",
+        "es": "3 cubos de madera: azul (/s/), rojo (/ʌ/), verde (/n/)"
+      },
+      "consigna": {
+        "gl": "Xunta os tres bloques: /s/ + /ʌ/ + /n/ = SUN!",
+        "es": "Junta los tres bloques: /s/ + /ʌ/ + /n/ = ¡SUN!"
+      }
+    },
+    {
+      "id": "cvc_pan",
+      "c1": "P",
+      "v": "A",
+      "c2": "N",
+      "palabra": {
+        "gl": "Pan",
+        "es": "Pan"
+      },
+      "ipa": "/pan/",
+      "significado": {
+        "gl": "Pan (Galego / Castelán)",
+        "es": "Pan (Gallego / Castellano)"
+      },
+      "material": {
+        "gl": "3 cubos: /p/ + /a/ + /n/",
+        "es": "3 cubos: /p/ + /a/ + /n/"
+      },
+      "consigna": {
+        "gl": "Sílaba transparente: /p/ + /a/ + /n/ = PAN!",
+        "es": "Sílaba transparente: /p/ + /a/ + /n/ = ¡PAN!"
+      }
+    },
+    {
+      "id": "cvc_sol",
+      "c1": "S",
+      "v": "O",
+      "c2": "L",
+      "palabra": {
+        "gl": "Sol",
+        "es": "Sol"
+      },
+      "ipa": "/sɔl/",
+      "significado": {
+        "gl": "Sol (Galego / Castelán)",
+        "es": "Sol (Gallego / Castellano)"
+      },
+      "material": {
+        "gl": "3 cubos: /s/ + /o/ + /l/",
+        "es": "3 cubos: /s/ + /o/ + /l/"
+      },
+      "consigna": {
+        "gl": "Sílaba transparente: /s/ + /o/ + /l/ = SOL!",
+        "es": "Sílaba transparente: /s/ + /o/ + /l/ = ¡SOL!"
+      }
+    }
+  ],
+  "paresMinimos": [
+    {
+      "id": "par_b_p",
+      "par": "/b/ vs /p/",
+      "palabra1En": "Bear",
+      "palabra2En": "Pig",
+      "palabra1": {
+        "gl": "Oso",
+        "es": "Oso"
+      },
+      "palabra2": {
+        "gl": "Porquiño",
+        "es": "Cerdito"
+      },
+      "contraste": {
+        "gl": "Bilabial sonora (/b/) vs Bilabial xorda (/p/)",
+        "es": "Bilabial sonora (/b/) vs Bilabial sorda (/p/)"
+      },
+      "instrucion": {
+        "gl": "Tapa a túa boca cunha folla de papel para que a crianza non lea os teus beizos. Di «Bear» ou «Pig». Pídelle que sinale a tarxeta correcta.",
+        "es": "Tapa tu boca con una hoja de papel para que la criatura no lea tus labios. Di «Bear» o «Pig». Pídele que señale la tarjeta correcta."
+      }
+    },
+    {
+      "id": "par_m_n",
+      "par": "/m/ vs /n/",
+      "palabra1En": "Man",
+      "palabra2En": "Net",
+      "palabra1": {
+        "gl": "Home / Man",
+        "es": "Hombre / Mano"
+      },
+      "palabra2": {
+        "gl": "Rede",
+        "es": "Red"
+      },
+      "contraste": {
+        "gl": "Nasal bilabial (/m/) vs Nasal alveolar (/n/)",
+        "es": "Nasal bilabial (/m/) vs Nasal alveolar (/n/)"
+      },
+      "instrucion": {
+        "gl": "Sinte a vibración no nariz ao dicir /m/. Anima á crianza a tocar o seu nariz.",
+        "es": "Siente la vibración en la nariz al decir /m/. Anima a la criatura a tocar su nariz."
+      }
+    },
+    {
+      "id": "par_d_t",
+      "par": "/d/ vs /t/",
+      "palabra1En": "Dog",
+      "palabra2En": "Top",
+      "palabra1": {
+        "gl": "Can",
+        "es": "Perro"
+      },
+      "palabra2": {
+        "gl": "Peón / Buxaina",
+        "es": "Peonza"
+      },
+      "contraste": {
+        "gl": "Oclusiva alveolar sonora (/d/) vs xorda (/t/)",
+        "es": "Oclusiva alveolar sonora (/d/) vs sorda (/t/)"
+      },
+      "instrucion": {
+        "gl": "Coloca a man diante da boca: con /t/ sinto aire; con /d/ sinto voz.",
+        "es": "Coloca la mano delante de la boca: con /t/ siento aire; con /d/ siento voz."
+      }
+    }
+  ]
+}

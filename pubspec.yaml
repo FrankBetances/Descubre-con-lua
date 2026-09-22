@@ -47,6 +47,11 @@ flutter:
     - assets/content/progresion/
     # Las asambleas de segundo ciclo con el inglés como L3.
     - assets/content/asambleas_segundo_ciclo/
+    # El contenido de «Aprender a Ler»: la mesa de letras, los cubos CVC y los
+    # pares mínimos. Estaba escrito DENTRO del widget, que es justo lo que la
+    # regla de producto prohíbe: 165 cadenas que ningún gate de contenido podía
+    # mirar y que no podían tener audio.
+    - assets/content/lectura/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

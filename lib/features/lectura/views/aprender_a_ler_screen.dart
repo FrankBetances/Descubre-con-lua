@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
+import '../../../core/widgets/aviso_contenido_ilegible.dart';
+import '../../../data/models/lectura_model.dart';
 import '../../../data/repositories/content_repository.dart';
 
 /// Hub Integral de Aprender a Ler, Fónica e Alfabetización Temperá Manipulativa.
@@ -20,11 +23,20 @@ class AprenderALerScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
   final OfflineAudioService? audioService;
 
+  /// El contenido ya leído, si quien abre la pantalla lo tiene.
+  ///
+  /// Existe por lo mismo que en `CalendarioScreen`: un test tiene que poder
+  /// darle el contenido hecho. Si se deja que la pantalla lo lea ella dentro
+  /// de `testWidgets`, el disco de «cargando» no para nunca —el reloj de ahí
+  /// dentro es falso— y `pumpAndSettle` se agota sin decir por qué.
+  final ContidoLectura? contido;
+
   const AprenderALerScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
     this.audioService,
+    this.contido,
   });
 
   @override
@@ -50,297 +62,24 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
   // Rexistro Observacional 1-Toque
   final Map<String, String> _observacions = {}; // id -> 'L' | 'A' | 'E'
 
-  static const List<Map<String, dynamic>> _categoriasAlphabot = [
-    {
-      'id': 'animais',
-      'gl': 'Animais',
-      'es': 'Animales',
-      'words': [
-        {
-          'word': 'LÚA',
-          'letters': ['L', 'Ú', 'A'],
-          'gl': 'Mascota e compañeira suave',
-          'es': 'Mascota y compañera suave',
-          'material': 'Letras de madeira ou feltro',
-          'phonemes': ['/l/', '/u/', '/a/'],
-          'tpr': 'Acaricia suave coma unha gata',
-        },
-        {
-          'word': 'RÁ',
-          'letters': ['R', 'Á'],
-          'gl': 'Salta na beira do río Lagares',
-          'es': 'Salta en la orilla del río Lagares',
-          'material': 'Tacos de madeira verdes',
-          'phonemes': ['/r/', '/a/'],
-          'tpr': 'Salto pequeno dende o chan',
-        },
-        {
-          'word': 'GATO',
-          'letters': ['G', 'A', 'T', 'O'],
-          'gl': 'Compañeiro curioso e acolledor',
-          'es': 'Compañero curioso y acogedor',
-          'material': 'Imáns na neveira',
-          'phonemes': ['/g/', '/a/', '/t/', '/o/'],
-          'tpr': 'Move as patiñas no aire',
-        },
-        {
-          'word': 'OSO',
-          'letters': ['O', 'S', 'O'],
-          'gl': 'Pisa forte e abriga no inverno',
-          'es': 'Pisa fuerte y abriga en invierno',
-          'material': 'Cartolinas grosas recortadas',
-          'phonemes': ['/o/', '/s/', '/o/'],
-          'tpr': 'Pisa pesado: pum, pum!',
-        },
-        {
-          'word': 'PEIXE',
-          'letters': ['P', 'E', 'I', 'X', 'E'],
-          'gl': 'Baila nas ondas da ría de Vigo',
-          'es': 'Baila en las olas de la ría de Vigo',
-          'material': 'Conchas pintadas con letras',
-          'phonemes': ['/p/', '/e/', '/i/', '/ʃ/', '/e/'],
-          'tpr': 'Xunta as mans e nada coma un peixe',
-        },
-      ],
-    },
-    {
-      'id': 'fogar',
-      'gl': 'Fogar e Cotián',
-      'es': 'Hogar y Cotidiano',
-      'words': [
-        {
-          'word': 'PAN',
-          'letters': ['P', 'A', 'N'],
-          'gl': 'Alimento cotián que se parte e comparte',
-          'es': 'Alimento cotidiano que se parte y comparte',
-          'material': 'Masa real ou letras de cartón',
-          'phonemes': ['/p/', '/a/', '/n/'],
-          'tpr': 'Amasa coas dúas mans abertas',
-        },
-        {
-          'word': 'CASA',
-          'letters': ['C', 'A', 'S', 'A'],
-          'gl': 'O refuxio quentiño onde descansamos',
-          'es': 'El refugio calentito donde descansamos',
-          'material': 'Pezas de construción de madeira',
-          'phonemes': ['/k/', '/a/', '/s/', '/a/'],
-          'tpr': 'Fai un tellado cos brazos sobre a cabeza',
-        },
-        {
-          'word': 'SOL',
-          'letters': ['S', 'O', 'L'],
-          'gl': 'Luz cálida que esperta a mañá',
-          'es': 'Luz cálida que despierta la mañana',
-          'material': 'Imáns amarelos ou pasta de sal',
-          'phonemes': ['/s/', '/o/', '/l/'],
-          'tpr': 'Abre as mans coma raios que quentan',
-        },
-        {
-          'word': 'LUZ',
-          'letters': ['L', 'U', 'Z'],
-          'gl': 'Brilla cando abrimos a ventá',
-          'es': 'Brilla cuando abrimos la ventana',
-          'material': 'Letras translúcidas con lanterna',
-          'phonemes': ['/l/', '/u/', '/θ/'],
-          'tpr': 'Pinta un círculo de luz co dedo no aire',
-        },
-      ],
-    },
-    {
-      'id': 'vigo',
-      'gl': 'Vigo e Natureza',
-      'es': 'Vigo y Naturaleza',
-      'words': [
-        {
-          'word': 'MAR',
-          'letters': ['M', 'A', 'R'],
-          'gl': 'As ondas azuis de Samil e da ría',
-          'es': 'Las olas azules de Samil y de la ría',
-          'material': 'Pedras de praia lisas con rotulador',
-          'phonemes': ['/m/', '/a/', '/r/'],
-          'tpr': 'Onda suave cos brazos de lado a lado',
-        },
-        {
-          'word': 'RÍA',
-          'letters': ['R', 'Í', 'A'],
-          'gl': 'A auga mansa onde navegan os barcos',
-          'es': 'El agua mansa donde navegan los barcos',
-          'material': 'Cintas azuis de tea no chan',
-          'phonemes': ['/r/', '/i/', '/a/'],
-          'tpr': 'Abre os brazos en vaivén de calma',
-        },
-        {
-          'word': 'BARCO',
-          'letters': ['B', 'A', 'R', 'C', 'O'],
-          'gl': 'Navega cara ás Illas Cíes',
-          'es': 'Navega hacia las Islas Cíes',
-          'material': 'Barquiño de papel dobrado con letras',
-          'phonemes': ['/b/', '/a/', '/r/', '/k/', '/o/'],
-          'tpr': 'Xesto de remar co corpo adiante e atrás',
-        },
-      ],
-    },
-    {
-      'id': 'corpo',
-      'gl': 'Corpo e Afecto',
-      'es': 'Cuerpo y Afecto',
-      'words': [
-        {
-          'word': 'MAN',
-          'letters': ['M', 'A', 'N'],
-          'gl': 'Aperta, saúda e constrúe',
-          'es': 'Abraza, saluda y construye',
-          'material': 'Silueta da propia man debuxada',
-          'phonemes': ['/m/', '/a/', '/n/'],
-          'tpr': 'Abre a palma e saúda suavemente',
-        },
-        {
-          'word': 'PÉ',
-          'letters': ['P', 'É'],
-          'gl': 'Sostén o corpo e dá os primeiros pasos',
-          'es': 'Sostiene el cuerpo y da los primeros pasos',
-          'material': 'Pegadas recortadas en cartolina',
-          'phonemes': ['/p/', '/e/'],
-          'tpr': 'Toca os pés coas mans sen dobrar xeonllos',
-        },
-        {
-          'word': 'AMOR',
-          'letters': ['A', 'M', 'O', 'R'],
-          'gl': 'O acollemento de cada día na casa',
-          'es': 'La acogida de cada día en casa',
-          'material': 'Corazón de feltro suave',
-          'phonemes': ['/a/', '/m/', '/o/', '/r/'],
-          'tpr': 'Aperta forte o teu propio peito',
-        },
-      ],
-    },
-  ];
-
-  static const List<Map<String, dynamic>> _cubosCvc = [
-    {
-      'id': 'cvc_cat',
-      'c1': 'C',
-      'v': 'A',
-      'c2': 'T',
-      'wordEn': 'CAT',
-      'ipa': '/kæt/',
-      'meaningGl': 'Gato (Inglés L3)',
-      'meaningEs': 'Gato (Inglés L3)',
-      'material': '3 cubos de madeira: azul (/k/), vermello (/æ/), verde (/t/)',
-      'promptGl': 'Xunta os tres bloques: /k/ + /æ/ + /t/ = CAT!',
-      'promptEs': 'Junta los tres bloques: /k/ + /æ/ + /t/ = ¡CAT!',
-    },
-    {
-      'id': 'cvc_bed',
-      'c1': 'B',
-      'v': 'E',
-      'c2': 'D',
-      'wordEn': 'BED',
-      'ipa': '/bɛd/',
-      'meaningGl': 'Cama (Inglés L3)',
-      'meaningEs': 'Cama (Inglés L3)',
-      'material': '3 cubos de madeira: azul (/b/), vermello (/ɛ/), verde (/d/)',
-      'promptGl': 'Xunta os tres bloques: /b/ + /ɛ/ + /d/ = BED!',
-      'promptEs': 'Junta los tres bloques: /b/ + /ɛ/ + /d/ = ¡BED!',
-    },
-    {
-      'id': 'cvc_pig',
-      'c1': 'P',
-      'v': 'I',
-      'c2': 'G',
-      'wordEn': 'PIG',
-      'ipa': '/pɪɡ/',
-      'meaningGl': 'Porquiño (Inglés L3)',
-      'meaningEs': 'Cerdito (Inglés L3)',
-      'material': '3 cubos de madeira: azul (/p/), vermello (/ɪ/), verde (/ɡ/)',
-      'promptGl': 'Xunta os tres bloques: /p/ + /ɪ/ + /ɡ/ = PIG!',
-      'promptEs': 'Junta los tres bloques: /p/ + /ɪ/ + /ɡ/ = ¡PIG!',
-    },
-    {
-      'id': 'cvc_sun',
-      'c1': 'S',
-      'v': 'U',
-      'c2': 'N',
-      'wordEn': 'SUN',
-      'ipa': '/sʌn/',
-      'meaningGl': 'Sol (Inglés L3)',
-      'meaningEs': 'Sol (Inglés L3)',
-      'material': '3 cubos de madeira: azul (/s/), vermello (/ʌ/), verde (/n/)',
-      'promptGl': 'Xunta os tres bloques: /s/ + /ʌ/ + /n/ = SUN!',
-      'promptEs': 'Junta los tres bloques: /s/ + /ʌ/ + /n/ = ¡SUN!',
-    },
-    {
-      'id': 'cvc_pan',
-      'c1': 'P',
-      'v': 'A',
-      'c2': 'N',
-      'wordEn': 'PAN',
-      'ipa': '/pan/',
-      'meaningGl': 'Pan (Galego / Castelán)',
-      'meaningEs': 'Pan (Gallego / Castellano)',
-      'material': '3 cubos: /p/ + /a/ + /n/',
-      'promptGl': 'Sílaba transparente: /p/ + /a/ + /n/ = PAN!',
-      'promptEs': 'Sílaba transparente: /p/ + /a/ + /n/ = ¡PAN!',
-    },
-    {
-      'id': 'cvc_sol',
-      'c1': 'S',
-      'v': 'O',
-      'c2': 'L',
-      'wordEn': 'SOL',
-      'ipa': '/sɔl/',
-      'meaningGl': 'Sol (Galego / Castelán)',
-      'meaningEs': 'Sol (Gallego / Castellano)',
-      'material': '3 cubos: /s/ + /o/ + /l/',
-      'promptGl': 'Sílaba transparente: /s/ + /o/ + /l/ = SOL!',
-      'promptEs': 'Sílaba transparente: /s/ + /o/ + /l/ = ¡SOL!',
-    },
-  ];
-
-  static const List<Map<String, dynamic>> _paresMinimos = [
-    {
-      'id': 'par_b_p',
-      'par': '/b/ vs /p/',
-      'palabra1En': 'Bear',
-      'palabra2En': 'Pig',
-      'palabra1Gl': 'Oso',
-      'palabra2Gl': 'Porquiño',
-      'contrasteGl': 'Bilabial sonora (/b/) vs Bilabial xorda (/p/)',
-      'contrasteEs': 'Bilabial sonora (/b/) vs Bilabial sorda (/p/)',
-      'instruccionGl': 'Tapa a túa boca cunha folla de papel para que a crianza non lea os teus beizos. Di «Bear» ou «Pig». Pídelle que sinale a tarxeta correcta.',
-      'instruccionEs': 'Tapa tu boca con una hoja de papel para que la criatura no lea tus labios. Di «Bear» o «Pig». Pídele que señale la tarjeta correcta.',
-    },
-    {
-      'id': 'par_m_n',
-      'par': '/m/ vs /n/',
-      'palabra1En': 'Man',
-      'palabra2En': 'Net',
-      'palabra1Gl': 'Home / Man',
-      'palabra2Gl': 'Rede',
-      'contrasteGl': 'Nasal bilabial (/m/) vs Nasal alveolar (/n/)',
-      'contrasteEs': 'Nasal bilabial (/m/) vs Nasal alveolar (/n/)',
-      'instruccionGl': 'Sinte a vibración no nariz ao dicir /m/. Anima á crianza a tocar o seu nariz.',
-      'instruccionEs': 'Siente la vibración en la nariz al decir /m/. Anima a la criatura a tocar su nariz.',
-    },
-    {
-      'id': 'par_d_t',
-      'par': '/d/ vs /t/',
-      'palabra1En': 'Dog',
-      'palabra2En': 'Top',
-      'palabra1Gl': 'Can',
-      'palabra2Gl': 'Peón / Buxaina',
-      'contrasteGl': 'Oclusiva alveolar sonora (/d/) vs xorda (/t/)',
-      'contrasteEs': 'Oclusiva alveolar sonora (/d/) vs sorda (/t/)',
-      'instruccionGl': 'Coloca a man diante da boca: con /t/ sinto aire; con /d/ sinto voz.',
-      'instruccionEs': 'Coloca la mano delante de la boca: con /t/ siento aire; con /d/ siento voz.',
-    },
-  ];
+  // O contido vive en assets/content/lectura/aprender_a_ler.json, non aquí.
+  ContidoLectura? _contido;
+  Object? _erroContido;
 
   @override
   void initState() {
     super.initState();
     _language = widget.initialLanguage;
     _tabController = TabController(length: 4, vsync: this);
+    if (widget.contido != null) {
+      _contido = widget.contido;
+    } else {
+      ContidoLectura.cargar().then((c) {
+        if (mounted) setState(() => _contido = c);
+      }).catchError((Object e) {
+        if (mounted) setState(() => _erroContido = e);
+      });
+    }
   }
 
   @override
@@ -361,7 +100,9 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
         elevation: 0,
         leading: const BotonAtras(),
         title: Text(
-          isGl ? 'Aprender a Ler · Alfabetización' : 'Aprender a Leer · Alfabetización',
+          isGl
+              ? 'Aprender a Ler · Alfabetización'
+              : 'Aprender a Leer · Alfabetización',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,
@@ -376,7 +117,10 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
           indicatorColor: AppTheme.primaryVigoBlue,
           indicatorWeight: 3,
           tabs: [
-            Tab(text: isGl ? '1. Conciencia Fonolóxica' : '1. Conciencia Fonológica'),
+            Tab(
+                text: isGl
+                    ? '1. Conciencia Fonolóxica'
+                    : '1. Conciencia Fonológica'),
             Tab(text: isGl ? '2. Mesa Alphabot' : '2. Mesa Alphabot'),
             Tab(text: isGl ? '3. Cubos CVC' : '3. Cubos CVC'),
             Tab(text: isGl ? '4. Pares Mínimos' : '4. Pares Mínimos'),
@@ -384,67 +128,45 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
         ),
       ),
       body: SafeArea(
-        child: TabBarView(
-          controller: _tabController,
-          children: [
-            _buildTabConcienciaFonoloxica(isGl),
-            _buildTabMesaAlphabot(isGl),
-            _buildTabCubosCvc(isGl),
-            _buildTabParesMinimos(isGl),
-          ],
-        ),
+        child: _erroContido != null
+            // Un fallo de lectura se ENSEÑA. El disco girando queda para lo
+            // que de verdad tarda: ver aviso_contenido_ilegible.dart.
+            ? AvisoContenidoIlegible(
+                asset: ContidoLectura.assetPath,
+                language: lang,
+              )
+            : _contido == null
+                ? const Center(child: CircularProgressIndicator())
+                : TabBarView(
+                    controller: _tabController,
+                    children: [
+                      _buildTabConcienciaFonoloxica(isGl),
+                      _buildTabMesaAlphabot(isGl),
+                      _buildTabCubosCvc(isGl),
+                      _buildTabParesMinimos(isGl),
+                    ],
+                  ),
       ),
     );
   }
 
   // --- TAB 1: CONCIENCIA FONOLÓXICA ---
   Widget _buildTabConcienciaFonoloxica(bool isGl) {
-    final actividades = [
-      {
-        'id': 'cf_01',
-        'titulo': isGl ? 'Palmas Silábicas co Corpo' : 'Palmas Silábicas con el Cuerpo',
-        'subtitulo': isGl ? 'Segmentación silábica con ritmo corporal' : 'Segmentación silábica con ritmo corporal',
-        'desc': isGl
-            ? 'Di palabras cotiás da casa (PA-TO, GA-TO, CA-SA) e bate palmas ou toca os pés por cada anaco. A crianza imita o teu movemento sen mirar a pantalla.'
-            : 'Di palabras cotidianas de la casa (PA-TO, GA-TO, CA-SA) y da palmadas o toca los pies por cada trozo. La criatura imita tu movimiento sin mirar la pantalla.',
-        'tpr': isGl ? '1 golpe de palma por cada sílaba clara' : '1 golpe de palma por cada sílaba clara',
-      },
-      {
-        'id': 'cf_02',
-        'titulo': isGl ? 'Caza de Rimas de Vigo' : 'Caza de Rimas de Vigo',
-        'subtitulo': isGl ? 'Discriminación do son final' : 'Discriminación del sonido final',
-        'desc': isGl
-            ? '«Lúa quere unha cuncha na rúa». «O peixe salta e non se mexe». Xoga a rimar con obxectos reais. Riman cando soan igual ao final!'
-            : '«Lúa quiere una concha en la calle». «El pez salta y no se mueve». Juega a rimar con objetos reales. ¡Riman cuando suenan igual al final!',
-        'tpr': isGl ? 'Salto con xiro cando escoita a rima' : 'Salto con giro cuando escucha la rima',
-      },
-      {
-        'id': 'cf_03',
-        'titulo': isGl ? 'O Son Inicial Misterioso' : 'El Sonido Inicial Misterioso',
-        'subtitulo': isGl ? 'Illa de fonemas iniciais: /m/, /p/, /s/, /l/' : 'Isla de fonemas iniciales: /m/, /p/, /s/, /l/',
-        'desc': isGl
-            ? 'Pon varios obxectos diante: mazá, pan, sol. «Que empeza por /m/? /m/... mazá!». Toca a gorxa para sentir como vibra o son.'
-            : 'Pon varios objetos delante: manzana, pan, sol. «¿Qué empieza por /m/? /m/... ¡manzana!». Toca la garganta para sentir cómo vibra el sonido.',
-        'tpr': isGl ? 'Sinalar o obxecto e imitar o son /m/' : 'Señalar el objeto e imitar el sonido /m/',
-      },
-    ];
+    final contido = _contido!;
 
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        _buildGarantiaZeroScreen(
-          isGl
-              ? 'A conciencia fonolóxica é puramente acústica e táctil. O neno non precisa ver letras escritas aínda: o oído e o corpo son os primeiros lectores.'
-              : 'La conciencia fonológica es puramente acústica y táctil. La criatura no necesita ver letras escritas todavía: el oído y el cuerpo son los primeros lectores.',
-        ),
+        _buildGarantiaZeroScreen(contido.avisoZeroPantalla.resolve(_language)),
         const SizedBox(height: 14),
-        ...actividades.map((act) => _buildCardActividadeFonoloxica(act, isGl)),
+        ...contido.actividadesConciencia
+            .map((act) => _buildCardActividadeFonoloxica(act, isGl)),
       ],
     );
   }
 
-  Widget _buildCardActividadeFonoloxica(Map<String, String> act, bool isGl) {
-    final obs = _observacions[act['id']!];
+  Widget _buildCardActividadeFonoloxica(ActividadeConciencia act, bool isGl) {
+    final obs = _observacions[act.id];
 
     return Card(
       margin: const EdgeInsets.only(bottom: 14),
@@ -464,7 +186,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
-                    act['titulo']!,
+                    act.titulo.resolve(_language),
                     style: const TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
@@ -476,7 +198,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
             ),
             const SizedBox(height: 4),
             Text(
-              act['subtitulo']!,
+              act.subtitulo.resolve(_language),
               style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
@@ -485,7 +207,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
             ),
             const SizedBox(height: 8),
             Text(
-              act['desc']!,
+              act.descricion.resolve(_language),
               style: const TextStyle(
                 fontSize: 13,
                 color: Color(0xFF4A5568),
@@ -506,7 +228,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
-                      '${isGl ? "Acción corporal" : "Acción corporal"}: ${act["tpr"]}',
+                      'Acción corporal: ${act.tpr.resolve(_language)}',
                       style: const TextStyle(
                         fontSize: 11,
                         fontWeight: FontWeight.w500,
@@ -518,7 +240,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
               ),
             ),
             const SizedBox(height: 12),
-            _buildSelector1Tap(act['id']!, obs, isGl),
+            _buildSelector1Tap(act.id, obs, isGl),
           ],
         ),
       ),
@@ -527,13 +249,14 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
 
   // --- TAB 2: MESA MANIPULATIVA ALPHABOT ---
   Widget _buildTabMesaAlphabot(bool isGl) {
-    final cat = _categoriasAlphabot[_alphabotCategoryIndex];
-    final words = cat['words'] as List<Map<String, dynamic>>;
+    final categorias = _contido!.categoriasAlphabot;
+    final cat = categorias[_alphabotCategoryIndex % categorias.length];
+    final words = cat.palabras;
     final item = words[_alphabotWordIndex % words.length];
-    final letters = item['letters'] as List<String>;
-    final phonemes = item['phonemes'] as List<String>;
+    final letters = item.letras.resolve(_language);
+    final phonemes = item.fonemas.resolve(_language);
     final isComplete = _placedLetters.length >= letters.length;
-    final obs = _observacions[item['word'] as String];
+    final obs = _observacions[item.id];
 
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -549,13 +272,13 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: List.generate(_categoriasAlphabot.length, (idx) {
-              final c = _categoriasAlphabot[idx];
+            children: List.generate(categorias.length, (idx) {
+              final c = categorias[idx];
               final isSel = _alphabotCategoryIndex == idx;
               return Padding(
                 padding: const EdgeInsets.only(right: 8),
                 child: ChoiceChip(
-                  label: Text(isGl ? c['gl'] as String : c['es'] as String),
+                  label: Text(c.nome.resolve(_language)),
                   selected: isSel,
                   onSelected: (selected) {
                     if (selected) {
@@ -605,7 +328,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                       icon: const Icon(Icons.arrow_forward_rounded),
                       onPressed: () {
                         setState(() {
-                          _alphabotWordIndex = (_alphabotWordIndex + 1) % words.length;
+                          _alphabotWordIndex =
+                              (_alphabotWordIndex + 1) % words.length;
                           _placedLetters.clear();
                         });
                       },
@@ -620,7 +344,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      item['word'] as String,
+                      item.palabra.resolve(_language).toUpperCase(),
                       style: const TextStyle(
                         fontSize: 36,
                         fontWeight: FontWeight.w900,
@@ -629,18 +353,25 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                       ),
                     ),
                     const SizedBox(width: 8),
+                    // A ficha pintase en MAIÚSCULAS porque é unha ficha de
+                    // letras, pero ao botón vai a forma natural: o
+                    // identificador da gravación sae do texto exacto, e «GATO»
+                    // e «Gato» son dúas gravacións distintas. Pasar a forma da
+                    // pantalla deixaba o botón sen pintar.
                     BotonEscuchar(
                       audioService: widget.audioService,
-                      texto: item['word'] as String,
+                      texto: item.palabra.resolve(_language),
                       language: _language,
+                      style: VoiceStyle.slow,
                       compacto: true,
                     ),
                   ],
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  isGl ? item['gl'] as String : item['es'] as String,
-                  style: const TextStyle(fontSize: 13, color: AppTheme.textSecondary),
+                  item.significado.resolve(_language),
+                  style: const TextStyle(
+                      fontSize: 13, color: AppTheme.textSecondary),
                 ),
                 const SizedBox(height: 16),
 
@@ -694,12 +425,17 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                 const SizedBox(height: 8),
                 Text(
                   isComplete
-                      ? (isGl ? 'Palabra montada na mesa!' : '¡Palabra montada en la mesa!')
-                      : (isGl ? 'Toca as letras que a crianza coloque na mesa' : 'Toca las letras que la criatura coloque en la mesa'),
+                      ? (isGl
+                          ? 'Palabra montada na mesa!'
+                          : '¡Palabra montada en la mesa!')
+                      : (isGl
+                          ? 'Toca as letras que a crianza coloque na mesa'
+                          : 'Toca las letras que la criatura coloque en la mesa'),
                   style: TextStyle(
                     fontSize: 11,
                     fontWeight: FontWeight.bold,
-                    color: isComplete ? Colors.green[700] : AppTheme.textSecondary,
+                    color:
+                        isComplete ? Colors.green[700] : AppTheme.textSecondary,
                   ),
                 ),
                 const Divider(height: 28),
@@ -711,12 +447,17 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                     const Icon(Icons.record_voice_over_rounded,
                         size: 16, color: AppTheme.primaryVigoBlue),
                     const SizedBox(width: 6),
-                    Text(
-                      '${isGl ? "Fonemas" : "Fonemas"}: ${phonemes.join("  +  ")}',
-                      style: const TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold,
-                        color: AppTheme.primaryVigoBlue,
+                    // Flexible: cinco fonemas nunha palabra longa non caben
+                    // nunha fila de 400 px, e un `Text` espido nun `Row` non
+                    // se pode encoller.
+                    Flexible(
+                      child: Text(
+                        'Fonemas: ${phonemes.join("  +  ")}',
+                        style: const TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.bold,
+                          color: AppTheme.primaryVigoBlue,
+                        ),
                       ),
                     ),
                   ],
@@ -739,8 +480,9 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                           const SizedBox(width: 6),
                           Expanded(
                             child: Text(
-                              '${isGl ? "Material físico" : "Material físico"}: ${item["material"]}',
-                              style: const TextStyle(fontSize: 11, color: Color(0xFF4A5568)),
+                              'Material físico: ${item.material.resolve(_language)}',
+                              style: const TextStyle(
+                                  fontSize: 11, color: Color(0xFF4A5568)),
                             ),
                           ),
                         ],
@@ -753,8 +495,9 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                           const SizedBox(width: 6),
                           Expanded(
                             child: Text(
-                              '${isGl ? "Acción corporal" : "Acción corporal"}: ${item["tpr"]}',
-                              style: const TextStyle(fontSize: 11, color: Color(0xFF4A5568)),
+                              'Acción corporal: ${item.tpr.resolve(_language)}',
+                              style: const TextStyle(
+                                  fontSize: 11, color: Color(0xFF4A5568)),
                             ),
                           ),
                         ],
@@ -763,7 +506,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   ),
                 ),
                 const SizedBox(height: 14),
-                _buildSelector1Tap(item['word'] as String, obs, isGl),
+                _buildSelector1Tap(item.id, obs, isGl),
               ],
             ),
           ),
@@ -774,8 +517,9 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
 
   // --- TAB 3: CUBOS CVC (PHONICUBES) ---
   Widget _buildTabCubosCvc(bool isGl) {
-    final item = _cubosCvc[_cvcIndex % _cubosCvc.length];
-    final obs = _observacions[item['id'] as String];
+    final cubos = _contido!.cubosCvc;
+    final item = cubos[_cvcIndex % cubos.length];
+    final obs = _observacions[item.id];
 
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -786,7 +530,6 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
               : 'Phonicubes: bloques físicos de Consonante-Vocal-Consonante. La criatura junta físicamente tres tacos de madera y el adulto pronuncia la síntesis acústica inmediata.',
         ),
         const SizedBox(height: 14),
-
         Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
@@ -800,7 +543,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      '${isGl ? "Cubo CVC" : "Cubo CVC"} ${_cvcIndex + 1} / ${_cubosCvc.length}',
+                      'Cubo CVC ${_cvcIndex + 1} / ${cubos.length}',
                       style: const TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
@@ -810,7 +553,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                     IconButton(
                       icon: const Icon(Icons.arrow_forward_rounded),
                       onPressed: () {
-                        setState(() => _cvcIndex = (_cvcIndex + 1) % _cubosCvc.length);
+                        setState(
+                            () => _cvcIndex = (_cvcIndex + 1) % cubos.length);
                       },
                     ),
                   ],
@@ -821,11 +565,11 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    _buildCvcCube(item['c1'] as String, 'C', const Color(0xFF2B6CB0)),
+                    _buildCvcCube(item.c1, 'C', const Color(0xFF2B6CB0)),
                     const SizedBox(width: 8),
-                    _buildCvcCube(item['v'] as String, 'V', const Color(0xFFC53030)),
+                    _buildCvcCube(item.v, 'V', const Color(0xFFC53030)),
                     const SizedBox(width: 8),
-                    _buildCvcCube(item['c2'] as String, 'C', const Color(0xFF276749)),
+                    _buildCvcCube(item.c2, 'C', const Color(0xFF276749)),
                   ],
                 ),
                 const SizedBox(height: 16),
@@ -833,35 +577,40 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      '${item["wordEn"]} · ${item["ipa"]}',
-                      style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: AppTheme.textPrimary,
+                    Flexible(
+                      child: Text(
+                        '${item.rotulo(_language)} · ${item.ipa}',
+                        style: const TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: AppTheme.textPrimary,
+                        ),
                       ),
                     ),
                     const SizedBox(width: 8),
+                    // O rótulo vai en MAIÚSCULAS; ao audio vai a forma
+                    // natural, que é a que ten gravación. E a lingua sae de se
+                    // a palabra é inglesa ou unha sílaba transparente, non de
+                    // buscar «pan» ou «sol» dentro do id.
                     BotonEscuchar(
                       audioService: widget.audioService,
-                      texto: item['wordEn'] as String,
-                      language: ((item['id'] as String).contains('pan') ||
-                              (item['id'] as String).contains('sol'))
-                          ? _language
-                          : AppLanguage.en,
+                      texto: item.textoAudio(_language),
+                      language: item.esIngles ? AppLanguage.en : _language,
+                      style: VoiceStyle.slow,
                       compacto: true,
                     ),
                   ],
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  isGl ? item['meaningGl'] as String : item['meaningEs'] as String,
-                  style: const TextStyle(fontSize: 13, color: AppTheme.textSecondary),
+                  item.significado.resolve(_language),
+                  style: const TextStyle(
+                      fontSize: 13, color: AppTheme.textSecondary),
                 ),
                 const Divider(height: 24),
 
                 Text(
-                  isGl ? item['promptGl'] as String : item['promptEs'] as String,
+                  item.consigna.resolve(_language),
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 14,
@@ -871,12 +620,13 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  '${isGl ? "Materiais suxeridos" : "Materiales sugeridos"}: ${item["material"]}',
+                  'Materiais suxeridos: ${item.material.resolve(_language)}',
                   textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 11, color: Color(0xFF718096)),
+                  style:
+                      const TextStyle(fontSize: 11, color: Color(0xFF718096)),
                 ),
                 const SizedBox(height: 16),
-                _buildSelector1Tap(item['id'] as String, obs, isGl),
+                _buildSelector1Tap(item.id, obs, isGl),
               ],
             ),
           ),
@@ -920,8 +670,9 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
 
   // --- TAB 4: PARES MÍNIMOS ---
   Widget _buildTabParesMinimos(bool isGl) {
-    final item = _paresMinimos[_paresIndex % _paresMinimos.length];
-    final obs = _observacions[item['id'] as String];
+    final pares = _contido!.paresMinimos;
+    final item = pares[_paresIndex % pares.length];
+    final obs = _observacions[item.id];
 
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -932,7 +683,6 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
               : 'Pares Mínimos: entrenamiento de discriminación auditiva fina. El adulto oculta la boca con una hoja para que la criatura distinga el sonido exclusivamente por el oído.',
         ),
         const SizedBox(height: 14),
-
         Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
@@ -946,7 +696,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      item['par'] as String,
+                      item.par,
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -956,15 +706,17 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                     IconButton(
                       icon: const Icon(Icons.arrow_forward_rounded),
                       onPressed: () {
-                        setState(() => _paresIndex = (_paresIndex + 1) % _paresMinimos.length);
+                        setState(() =>
+                            _paresIndex = (_paresIndex + 1) % pares.length);
                       },
                     ),
                   ],
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  isGl ? item['contrasteGl'] as String : item['contrasteEs'] as String,
-                  style: const TextStyle(fontSize: 12, color: AppTheme.textSecondary),
+                  item.contraste.resolve(_language),
+                  style: const TextStyle(
+                      fontSize: 12, color: AppTheme.textSecondary),
                 ),
                 const Divider(height: 24),
 
@@ -984,26 +736,30 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  item['palabra1En'] as String,
-                                  style: const TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color(0xFF2B6CB0),
+                                Flexible(
+                                  child: Text(
+                                    item.palabra1En,
+                                    style: const TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF2B6CB0),
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(width: 4),
                                 BotonEscuchar(
                                   audioService: widget.audioService,
-                                  texto: item['palabra1En'] as String,
+                                  texto: item.palabra1En,
                                   language: AppLanguage.en,
+                                  style: VoiceStyle.slow,
                                   compacto: true,
                                 ),
                               ],
                             ),
                             Text(
-                              item['palabra1Gl'] as String,
-                              style: const TextStyle(fontSize: 11, color: Color(0xFF4A5568)),
+                              item.palabra1.resolve(_language),
+                              style: const TextStyle(
+                                  fontSize: 11, color: Color(0xFF4A5568)),
                             ),
                           ],
                         ),
@@ -1011,7 +767,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                     ),
                     const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: Text('vs', style: TextStyle(fontWeight: FontWeight.bold)),
+                      child: Text('vs',
+                          style: TextStyle(fontWeight: FontWeight.bold)),
                     ),
                     Expanded(
                       child: Container(
@@ -1026,26 +783,30 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  item['palabra2En'] as String,
-                                  style: const TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color(0xFFC53030),
+                                Flexible(
+                                  child: Text(
+                                    item.palabra2En,
+                                    style: const TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFFC53030),
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(width: 4),
                                 BotonEscuchar(
                                   audioService: widget.audioService,
-                                  texto: item['palabra2En'] as String,
+                                  texto: item.palabra2En,
                                   language: AppLanguage.en,
+                                  style: VoiceStyle.slow,
                                   compacto: true,
                                 ),
                               ],
                             ),
                             Text(
-                              item['palabra2Gl'] as String,
-                              style: const TextStyle(fontSize: 11, color: Color(0xFF4A5568)),
+                              item.palabra2.resolve(_language),
+                              style: const TextStyle(
+                                  fontSize: 11, color: Color(0xFF4A5568)),
                             ),
                           ],
                         ),
@@ -1057,11 +818,12 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
 
                 // Instrución de facilitación
                 Text(
-                  isGl ? item['instruccionGl'] as String : item['instruccionEs'] as String,
-                  style: const TextStyle(fontSize: 13, color: Color(0xFF2D3748), height: 1.4),
+                  item.instrucion.resolve(_language),
+                  style: const TextStyle(
+                      fontSize: 13, color: Color(0xFF2D3748), height: 1.4),
                 ),
                 const SizedBox(height: 16),
-                _buildSelector1Tap(item['id'] as String, obs, isGl),
+                _buildSelector1Tap(item.id, obs, isGl),
               ],
             ),
           ),
@@ -1086,7 +848,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
           Expanded(
             child: Text(
               texto,
-              style: const TextStyle(fontSize: 12, color: Color(0xFF7B341E), height: 1.35),
+              style: const TextStyle(
+                  fontSize: 12, color: Color(0xFF7B341E), height: 1.35),
             ),
           ),
         ],
@@ -1102,24 +865,34 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: const Color(0xFFE2E8F0)),
       ),
-      child: Row(
+      // Wrap e non Row: a etiqueta máis os tres botóns desbordaban 273 px a
+      // 400 de ancho. Nun teléfono os tres estados baixan á liña seguinte en
+      // vez de saírse da tarxeta.
+      child: Wrap(
+        spacing: 6,
+        runSpacing: 6,
+        crossAxisAlignment: WrapCrossAlignment.center,
         children: [
           Text(
             isGl ? 'Rexistro:' : 'Registro:',
-            style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: AppTheme.textSecondary),
+            style: const TextStyle(
+                fontSize: 11,
+                fontWeight: FontWeight.bold,
+                color: AppTheme.textSecondary),
           ),
-          const Spacer(),
-          _buildTapButton(id, 'L', '[L] Logrado', estadoActual == 'L', Colors.green, isGl),
-          const SizedBox(width: 6),
-          _buildTapButton(id, 'A', '[A] Asistido', estadoActual == 'A', Colors.blue, isGl),
-          const SizedBox(width: 6),
-          _buildTapButton(id, 'E', '[E] Explorando', estadoActual == 'E', Colors.orange, isGl),
+          _buildTapButton(
+              id, 'L', '[L] Logrado', estadoActual == 'L', Colors.green, isGl),
+          _buildTapButton(
+              id, 'A', '[A] Asistido', estadoActual == 'A', Colors.blue, isGl),
+          _buildTapButton(id, 'E', '[E] Explorando', estadoActual == 'E',
+              Colors.orange, isGl),
         ],
       ),
     );
   }
 
-  Widget _buildTapButton(String id, String val, String label, bool isSel, MaterialColor color, bool isGl) {
+  Widget _buildTapButton(String id, String val, String label, bool isSel,
+      MaterialColor color, bool isGl) {
     return InkWell(
       onTap: () => setState(() => _observacions[id] = val),
       borderRadius: BorderRadius.circular(6),
