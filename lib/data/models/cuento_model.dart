@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 
 /// Total Physical Response (TPR) oral instruction in English with Galician/Spanish guidance.
@@ -61,6 +62,13 @@ class CuentoPagina {
   final LocalizedString? guiaAtencion;
   final List<String> vocabularioClave;
 
+  /// El mismo vocabulario en castellano.
+  ///
+  /// Hasta ahora había UNA lista para las dos lenguas, así que una familia
+  /// castellanohablante veía «Acollemento, Cóxegas, Ourizo». Y era la misma
+  /// lista en los cien cuentos.
+  final List<String> vocabularioClaveEs;
+
   const CuentoPagina({
     required this.numero,
     this.tituloPagina,
@@ -69,7 +77,19 @@ class CuentoPagina {
     this.preguntaImaxe,
     this.guiaAtencion,
     required this.vocabularioClave,
+    this.vocabularioClaveEs = const [],
   });
+
+  /// El vocabulario en la lengua activa. Si el castellano no viniera en el
+  /// JSON, se cae al galego antes que dejar la tarjeta vacía.
+  List<String> vocabularioPara(AppLanguage lang) =>
+      lang == AppLanguage.gl || vocabularioClaveEs.isEmpty
+          ? vocabularioClave
+          : vocabularioClaveEs;
+
+  static List<String> _listaDeTexto(Object? raw) => raw is List
+      ? raw.map((e) => e.toString().trim()).toList()
+      : const <String>[];
 
   factory CuentoPagina.fromJson(Map<String, dynamic> json) {
     final rawVocab = json['vocabularioClave'] ?? json['vocabulario_clave'];
@@ -110,6 +130,8 @@ class CuentoPagina {
       preguntaImaxe: pregunta,
       guiaAtencion: guia,
       vocabularioClave: List.unmodifiable(vocabList),
+      vocabularioClaveEs: List.unmodifiable(_listaDeTexto(
+          json['vocabularioClaveEs'] ?? json['vocabulario_clave_es'])),
     );
   }
 
@@ -121,6 +143,7 @@ class CuentoPagina {
         if (preguntaImaxe != null) 'preguntaImaxe': preguntaImaxe!.toJson(),
         if (guiaAtencion != null) 'guiaAtencion': guiaAtencion!.toJson(),
         'vocabularioClave': vocabularioClave,
+        'vocabularioClaveEs': vocabularioClaveEs,
       };
 
   @override

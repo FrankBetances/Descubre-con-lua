@@ -9,7 +9,6 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/cuento_model.dart';
 
 import '../../../core/audio/widgets/boton_escuchar.dart';
-import '../services/cuento_narrativa_engine.dart';
 
 /// Visor interactivo e guiado do conto para docentes e familias.
 ///
@@ -57,8 +56,17 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
         ? paginas[_currentPageIndex]
         : null;
 
+    // O texto da páxina sae do JSON, non dun xerador.
+    //
+    // Había un «motor de narrativa» que detectaba que os cen contos do banco
+    // eran texto modelo e, en vez de arranxar o JSON, escribía tres parágrafos
+    // FIXOS en tempo de execución co título e o mes metidos dentro. Os cen
+    // contos lían igual salvo dúas palabras, e ningún gate podía verlo porque
+    // o texto non existía en ningún ficheiro. Agora os cen levan a súa propia
+    // narrativa nas tres páxinas e nas dúas linguas, dentro de
+    // assets/content/cuentos/banco100_cuentos.json.
     final textoNarrativo = paginaActual != null
-        ? CuentoNarrativaEngine.obterTextoNarrativoRico(cuento, paginaActual, lang)
+        ? paginaActual.texto.resolve(lang)
         : cuento.sinopse.resolve(lang);
 
     return Scaffold(
@@ -139,7 +147,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
             InkWell(
               onTap: () => setState(() => _mostrarPautas = !_mostrarPautas),
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 color: const Color(0xFFFFF9EE),
                 child: Row(
                   children: [
@@ -181,21 +190,24 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                       isGl
                           ? '1. Sinala o debuxo co dedo e agarda 5 segundos antes de intervir.'
                           : '1. Señala el dibujo con el dedo y espera 5 segundos antes de intervenir.',
-                      style: const TextStyle(fontSize: 11, color: Color(0xFF4A5568)),
+                      style: const TextStyle(
+                          fontSize: 11, color: Color(0xFF4A5568)),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       isGl
                           ? '2. Escoita a resposta do neno/a sen corrixir; expande a súa frase con agarimo.'
                           : '2. Escucha la respuesta de la criatura sin corregir; expande su frase con cariño.',
-                      style: const TextStyle(fontSize: 11, color: Color(0xFF4A5568)),
+                      style: const TextStyle(
+                          fontSize: 11, color: Color(0xFF4A5568)),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       isGl
                           ? '3. Acompaña o reto TPR oral con movemento físico conxunto.'
                           : '3. Acompaña el reto TPR oral con movimiento físico conjunto.',
-                      style: const TextStyle(fontSize: 11, color: Color(0xFF4A5568)),
+                      style: const TextStyle(
+                          fontSize: 11, color: Color(0xFF4A5568)),
                     ),
                   ],
                 ),
@@ -235,9 +247,13 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                  // Wrap: a pastilla da escena máis a do
+                                  // vocabulario desbordaban a 400 px de ancho.
+                                  Wrap(
+                                    spacing: 6,
+                                    runSpacing: 4,
+                                    crossAxisAlignment:
+                                        WrapCrossAlignment.center,
                                     children: [
                                       Container(
                                         padding: const EdgeInsets.symmetric(
@@ -259,7 +275,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                         ),
                                       ),
                                       if (VocabularioContos.lista(
-                                              paginaActual.vocabularioClave,
+                                              paginaActual
+                                                  .vocabularioPara(lang),
                                               lang)
                                           .isNotEmpty)
                                         Container(
@@ -273,7 +290,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                           child: Text(
                                             VocabularioContos.lista(
                                                     paginaActual
-                                                        .vocabularioClave,
+                                                        .vocabularioPara(lang),
                                                     lang)
                                                 .join(' · '),
                                             style: const TextStyle(
@@ -386,19 +403,19 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Row(
+                              const Row(
                                 children: [
-                                  const Icon(Icons.sports_gymnastics_rounded,
+                                  Icon(Icons.sports_gymnastics_rounded,
                                       color: Color(0xFF2B6CB0), size: 18),
-                                  const SizedBox(width: 8),
-                                  Text(
-                                    isGl
-                                        ? 'Reto Físico TPR (Inglés L3)'
-                                        : 'Reto Físico TPR (Inglés L3)',
-                                    style: const TextStyle(
-                                      color: Color(0xFF2B6CB0),
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 12,
+                                  SizedBox(width: 8),
+                                  Expanded(
+                                    child: Text(
+                                      'Reto Físico TPR (Inglés L3)',
+                                      style: TextStyle(
+                                        color: Color(0xFF2B6CB0),
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12,
+                                      ),
                                     ),
                                   ),
                                 ],
