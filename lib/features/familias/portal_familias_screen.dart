@@ -5,19 +5,20 @@ import '../../../core/brand/lua_pixel.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
+import '../../../data/models/calendario_model.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/formacion_model.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../academy/views/bloques_list_screen.dart';
-import '../../academy/widgets/selector_idioma_widget.dart';
-import '../../calendario/views/calendario_fogar_screen.dart';
-import '../../cuentos/views/cuentos_list_screen.dart';
-import '../../formacion/views/formacion_screen.dart';
-import '../../laminas/views/laminas_gallery_screen.dart';
-import '../../lectura/views/aprender_a_ler_screen.dart';
-import '../../premios/premios_repository.dart';
-import '../../premios/premios_screen.dart';
+import '../academy/views/bloques_list_screen.dart';
+import '../academy/widgets/selector_idioma_widget.dart';
+import '../calendario/views/calendario_fogar_screen.dart';
+import '../cuentos/views/cuentos_list_screen.dart';
+import '../formacion/views/formacion_screen.dart';
+import '../laminas/views/laminas_gallery_screen.dart';
+import '../lectura/views/aprender_a_ler_screen.dart';
+import '../premios/premios_repository.dart';
+import '../premios/premios_screen.dart';
 import 'views/xogos_fogar_screen.dart';
 
 /// Pantalla independente do Portal Familias.
@@ -72,8 +73,16 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     {'id': 'xogos', 'gl': 'Xogos Físicos (TPR)', 'es': 'Juegos Físicos (TPR)'},
     {'id': 'contos', 'gl': 'Contos Dialogados', 'es': 'Cuentos Dialogados'},
     {'id': 'lectura', 'gl': 'Aprender a Ler', 'es': 'Aprender a Leer'},
-    {'id': 'laminas', 'gl': 'Láminas e Vocabulario', 'es': 'Láminas y Vocabulario'},
-    {'id': 'calendario', 'gl': 'Calendario Escolar', 'es': 'Calendario Escolar'},
+    {
+      'id': 'laminas',
+      'gl': 'Láminas e Vocabulario',
+      'es': 'Láminas y Vocabulario'
+    },
+    {
+      'id': 'calendario',
+      'gl': 'Calendario Escolar',
+      'es': 'Calendario Escolar'
+    },
     {'id': 'academy', 'gl': 'Pautas de Crianza', 'es': 'Pautas de Crianza'},
   ];
 
@@ -81,9 +90,21 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     {'id': 'todas', 'gl': 'Todas as idades', 'es': 'Todas las edades'},
     {'id': '0_2', 'gl': '0-2 anos (Nido)', 'es': '0-2 años (Nido)'},
     {'id': '2_3', 'gl': '2-3 anos (Maternal)', 'es': '2-3 años (Maternal)'},
-    {'id': '3_4', 'gl': '3-4 anos (4.º Infantil)', 'es': '3-4 años (4.º Infantil)'},
-    {'id': '4_5', 'gl': '4-5 anos (5.º Infantil)', 'es': '4-5 años (5.º Infantil)'},
-    {'id': '5_6', 'gl': '5-6 anos (6.º Infantil)', 'es': '5-6 años (6.º Infantil)'},
+    {
+      'id': '3_4',
+      'gl': '3-4 anos (4.º Infantil)',
+      'es': '3-4 años (4.º Infantil)'
+    },
+    {
+      'id': '4_5',
+      'gl': '4-5 anos (5.º Infantil)',
+      'es': '4-5 años (5.º Infantil)'
+    },
+    {
+      'id': '5_6',
+      'gl': '5-6 anos (6.º Infantil)',
+      'es': '5-6 años (6.º Infantil)'
+    },
   ];
 
   @override
@@ -251,7 +272,9 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
                 side: BorderSide(
-                  color: feitoHoxe ? const Color(0xFF38A169) : AppTheme.primaryVigoBlue,
+                  color: feitoHoxe
+                      ? const Color(0xFF38A169)
+                      : AppTheme.primaryVigoBlue,
                   width: 1.5,
                 ),
               ),
@@ -298,8 +321,12 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                           children: [
                             Text(
                               feitoHoxe
-                                  ? (isGl ? 'Xogo de hoxe completado!' : '¡Juego de hoy completado!')
-                                  : (isGl ? 'O teu xogo de 3 min de hoxe' : 'Tu juego de 3 min de hoy'),
+                                  ? (isGl
+                                      ? 'Xogo de hoxe completado!'
+                                      : '¡Juego de hoy completado!')
+                                  : (isGl
+                                      ? 'O teu xogo de 3 min de hoxe'
+                                      : 'Tu juego de 3 min de hoy'),
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold,
@@ -311,8 +338,12 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                             const SizedBox(height: 3),
                             Text(
                               feitoHoxe
-                                  ? (isGl ? 'Racha: ${store.rachaActual} días de xogo compartido' : 'Racha: ${store.rachaActual} días de juego compartido')
-                                  : (isGl ? 'Toca para abrir a rutina do día no calendario escolar' : 'Toca para abrir la rutina del día en el calendario escolar'),
+                                  ? (isGl
+                                      ? 'Racha: ${store.rachaActual} días de xogo compartido'
+                                      : 'Racha: ${store.rachaActual} días de juego compartido')
+                                  : (isGl
+                                      ? 'Toca para abrir a rutina do día no calendario escolar'
+                                      : 'Toca para abrir la rutina del día en el calendario escolar'),
                               style: const TextStyle(
                                 fontSize: 12,
                                 color: AppTheme.textSecondary,
@@ -334,7 +365,9 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4.0),
               child: Text(
-                isGl ? 'EXPLORAR DINÁMICAS POR ÁREA' : 'EXPLORAR DINÁMICAS POR ÁREA',
+                isGl
+                    ? 'EXPLORAR DINÁMICAS POR ÁREA'
+                    : 'EXPLORAR DINÁMICAS POR ÁREA',
                 style: const TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w800,
@@ -357,7 +390,8 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                       label: Text(isGl ? cat['gl']! : cat['es']!),
                       selected: isSel,
                       onSelected: (selected) {
-                        if (selected) setState(() => _selectedCategory = cat['id']!);
+                        if (selected)
+                          setState(() => _selectedCategory = cat['id']!);
                       },
                       selectedColor: AppTheme.primaryVigoBlue,
                       labelStyle: TextStyle(
@@ -613,7 +647,8 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ? 'Nivel, racha e insignias da persoa adulta que dedica tempo á crianza.'
                     : 'Nivel, racha e insignias de la persona adulta que dedica tiempo a la criatura.',
                 textAlign: TextAlign.center,
-                style: theme.textTheme.bodySmall?.copyWith(color: AppTheme.textMuted),
+                style: theme.textTheme.bodySmall
+                    ?.copyWith(color: AppTheme.textMuted),
               ),
             ],
           ],

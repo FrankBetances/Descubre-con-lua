@@ -8,16 +8,16 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/formacion_model.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../academy/widgets/selector_idioma_widget.dart';
-import '../../calendario/views/calendario_screen.dart';
-import '../../english/views/english_hub_screen.dart';
-import '../../formacion/views/formacion_screen.dart';
-import '../../juega/views/unidades_list_screen.dart';
-import '../../palabras/views/vocabulario_ingles_screen.dart';
-import '../../planificador/views/dinamicas_screen.dart';
-import '../../planificador/views/estrategias_screen.dart';
-import '../../planificador/views/planificador_screen.dart';
-import '../../premios/premios_repository.dart';
+import '../academy/widgets/selector_idioma_widget.dart';
+import '../calendario/views/calendario_screen.dart';
+import '../english/views/english_hub_screen.dart';
+import '../formacion/views/formacion_screen.dart';
+import '../juega/views/unidades_list_screen.dart';
+import '../palabras/views/vocabulario_ingles_screen.dart';
+import '../planificador/views/dinamicas_screen.dart';
+import '../planificador/views/estrategias_screen.dart';
+import '../planificador/views/planificador_screen.dart';
+import '../premios/premios_repository.dart';
 
 /// Pantalla independente do Portal Docentes.
 ///
@@ -137,7 +137,9 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Text(
-                          isGl ? 'MODO AULA · DOCENTES' : 'MODO AULA · DOCENTES',
+                          isGl
+                              ? 'MODO AULA · DOCENTES'
+                              : 'MODO AULA · DOCENTES',
                           style: const TextStyle(
                             color: Colors.white,
                             fontSize: 10,
@@ -215,7 +217,9 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4.0),
               child: Text(
-                isGl ? 'PROGRAMACIÓN E AULA ACTIVA' : 'PROGRAMACIÓN Y AULA ACTIVA',
+                isGl
+                    ? 'PROGRAMACIÓN E AULA ACTIVA'
+                    : 'PROGRAMACIÓN Y AULA ACTIVA',
                 style: const TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w800,
@@ -229,7 +233,9 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
             // 1. Juega con Lúa · Modo Aula
             _buildDocenteModuleCard(
               context: context,
-              title: isGl ? 'Juega con Lúa · Modo Aula' : 'Juega con Lúa · Modo Aula',
+              title: isGl
+                  ? 'Juega con Lúa · Modo Aula'
+                  : 'Juega con Lúa · Modo Aula',
               description: isGl
                   ? 'Asambleas guiadas para 1.º Ciclo (0-2 e 2-3 anos) e 2.º Ciclo (4, 5 e 6 de Infantil), canción a pulso visual a 72 bpm, exploración sensorial e matemáticas temperás.'
                   : 'Asambleas guiadas para 1.º Ciclo (0-2 y 2-3 años) y 2.º Ciclo (4, 5 y 6 de Infantil), canción a pulso visual a 72 bpm, exploración sensorial y matemáticas tempranas.',

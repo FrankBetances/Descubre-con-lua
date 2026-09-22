@@ -93,13 +93,11 @@ class _FamiliaPainter extends CustomPainter {
 
     final leafPaint = Paint()..color = const Color(0xFF8BB741);
     canvas.drawOval(
-      Rect.fromCenter(
-          center: Offset(w * 0.81, h * 0.64), width: 14, height: 8),
+      Rect.fromCenter(center: Offset(w * 0.81, h * 0.64), width: 14, height: 8),
       leafPaint,
     );
     canvas.drawOval(
-      Rect.fromCenter(
-          center: Offset(w * 0.87, h * 0.60), width: 14, height: 8),
+      Rect.fromCenter(center: Offset(w * 0.87, h * 0.60), width: 14, height: 8),
       leafPaint,
     );
 
@@ -417,8 +415,7 @@ class _EscolaPainter extends CustomPainter {
     canvas.drawRRect(bgRect, borderPaint);
 
     // Nubes suaves no ceo
-    final cloudPaint = Paint()
-      ..color = Colors.white.withValues(alpha: 0.85);
+    final cloudPaint = Paint()..color = Colors.white.withValues(alpha: 0.85);
     canvas.drawCircle(Offset(w * 0.15, h * 0.25), 14, cloudPaint);
     canvas.drawCircle(Offset(w * 0.21, h * 0.22), 18, cloudPaint);
     canvas.drawCircle(Offset(w * 0.27, h * 0.26), 13, cloudPaint);
@@ -464,8 +461,8 @@ class _EscolaPainter extends CustomPainter {
 
     // Paredes da escola (crema suave institucional)
     final wallPaint = Paint()..color = const Color(0xFFFFFDF5);
-    final wallRect = Rect.fromLTWH(
-        schoolLeft, schoolTop, schoolWidth, schoolHeight);
+    final wallRect =
+        Rect.fromLTWH(schoolLeft, schoolTop, schoolWidth, schoolHeight);
     canvas.drawRect(wallRect, wallPaint);
 
     // Borde do edificio
@@ -546,8 +543,8 @@ class _EscolaPainter extends CustomPainter {
         winBorder);
 
     // Fiestra dereita
-    final winRightRect = Rect.fromLTWH(
-        schoolLeft + schoolWidth - 28, schoolTop + 14, 18, 22);
+    final winRightRect =
+        Rect.fromLTWH(schoolLeft + schoolWidth - 28, schoolTop + 14, 18, 22);
     canvas.drawRRect(
         RRect.fromRectAndRadius(winRightRect, const Radius.circular(8)),
         winPaint);
@@ -556,8 +553,8 @@ class _EscolaPainter extends CustomPainter {
         winBorder);
 
     // Porta principal de madeira aberta (Acollemento)
-    final doorWidth = 22.0;
-    final doorHeight = 32.0;
+    const doorWidth = 22.0;
+    const doorHeight = 32.0;
     final doorLeft = schoolLeft + schoolWidth / 2 - doorWidth / 2;
     final doorTop = schoolTop + schoolHeight - doorHeight;
 
@@ -570,7 +567,8 @@ class _EscolaPainter extends CustomPainter {
     canvas.drawRRect(doorRRect, doorPaint);
 
     final doorKnob = Paint()..color = const Color(0xFFFFD700);
-    canvas.drawCircle(Offset(doorLeft + doorWidth - 4, doorTop + 18), 1.8, doorKnob);
+    canvas.drawCircle(
+        Offset(doorLeft + doorWidth - 4, doorTop + 18), 1.8, doorKnob);
 
     // Camiño de entrada
     final pathPaint = Paint()

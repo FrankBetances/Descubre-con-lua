@@ -161,6 +161,31 @@ class CalendarioStore extends ChangeNotifier {
     return _registros.values.where((r) => r['hogar'] == true).length;
   }
 
+  /// Días consecutivos con sesión en el hogar, contando hacia atrás.
+  ///
+  /// Se DERIVA de `_registros`: no hay ninguna clave nueva en el fichero, que
+  /// es lo que permite que la política de privacidad y el formulario de
+  /// Seguridad de los datos sigan diciendo exactamente lo que dicen. Guardar
+  /// una racha sería guardar un dato que ya está implícito en las fechas.
+  ///
+  /// La cuenta arranca hoy si hoy está marcado y, si no, ayer: una racha no se
+  /// pierde por que aún no haya dado tiempo a hacer la sesión de hoy. En
+  /// cuanto falta un día entero, se corta.
+  int get rachaActual {
+    bool hayFogar(DateTime f) => _registros[_claveFecha(f)]?['hogar'] == true;
+
+    final hoxe = DateTime.now();
+    final hoy = DateTime(hoxe.year, hoxe.month, hoxe.day);
+    var cursor = hayFogar(hoy) ? hoy : hoy.subtract(const Duration(days: 1));
+
+    var racha = 0;
+    while (hayFogar(cursor)) {
+      racha++;
+      cursor = cursor.subtract(const Duration(days: 1));
+    }
+    return racha;
+  }
+
   /// Las tres cuentas, que es lo único que sale de aquí hacia las medallas.
   /// Las fechas no viajan: se quedan en este objeto.
   ContadoresCalendario get contadores => ContadoresCalendario(

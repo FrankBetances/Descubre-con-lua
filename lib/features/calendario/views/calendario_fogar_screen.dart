@@ -13,6 +13,7 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/repositories/calendario_repository.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
 
@@ -60,10 +61,26 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
 
   static const List<Map<String, String>> _cursos = [
     {'id': 'curso_0_2', 'gl': '0-2 anos (Nido)', 'es': '0-2 años (Nido)'},
-    {'id': 'curso_2_3', 'gl': '2-3 anos (Maternal)', 'es': '2-3 años (Maternal)'},
-    {'id': 'curso_3_4', 'gl': '3-4 anos (4.º Infantil)', 'es': '3-4 años (4.º Infantil)'},
-    {'id': 'curso_4_5', 'gl': '4-5 anos (5.º Infantil)', 'es': '4-5 años (5.º Infantil)'},
-    {'id': 'curso_5_6', 'gl': '5-6 anos (6.º Infantil)', 'es': '5-6 años (6.º Infantil)'},
+    {
+      'id': 'curso_2_3',
+      'gl': '2-3 anos (Maternal)',
+      'es': '2-3 años (Maternal)'
+    },
+    {
+      'id': 'curso_3_4',
+      'gl': '3-4 anos (4.º Infantil)',
+      'es': '3-4 años (4.º Infantil)'
+    },
+    {
+      'id': 'curso_4_5',
+      'gl': '4-5 anos (5.º Infantil)',
+      'es': '4-5 años (5.º Infantil)'
+    },
+    {
+      'id': 'curso_5_6',
+      'gl': '5-6 anos (6.º Infantil)',
+      'es': '5-6 años (6.º Infantil)'
+    },
   ];
 
   static const List<Map<String, String>> _mesesNomes = [
@@ -151,7 +168,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
         elevation: 0,
         leading: const BotonAtras(),
         title: Text(
-          isGl ? 'Calendario Escolar no Fogar' : 'Calendario Escolar en el Hogar',
+          isGl
+              ? 'Calendario Escolar no Fogar'
+              : 'Calendario Escolar en el Hogar',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,
@@ -160,7 +179,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
         ),
         actions: [
           IconButton(
-            tooltip: isGl ? 'Cambiar vista de calendario' : 'Cambiar vista de calendario',
+            tooltip: isGl
+                ? 'Cambiar vista de calendario'
+                : 'Cambiar vista de calendario',
             icon: Icon(
               _amosarReixaCompleta
                   ? Icons.calendar_view_month_rounded
@@ -209,8 +230,10 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                             },
                             selectedColor: AppTheme.primaryVigoBlue,
                             labelStyle: TextStyle(
-                              color: isSel ? Colors.white : AppTheme.textPrimary,
-                              fontWeight: isSel ? FontWeight.bold : FontWeight.normal,
+                              color:
+                                  isSel ? Colors.white : AppTheme.textPrimary,
+                              fontWeight:
+                                  isSel ? FontWeight.bold : FontWeight.normal,
                               fontSize: 12,
                             ),
                           ),
@@ -247,7 +270,8 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                             color: isSel
                                 ? AppTheme.primaryInk
                                 : AppTheme.textSecondary,
-                            fontWeight: isSel ? FontWeight.w800 : FontWeight.w500,
+                            fontWeight:
+                                isSel ? FontWeight.w800 : FontWeight.w500,
                             fontSize: 12,
                           ),
                           shape: RoundedRectangleBorder(
@@ -310,7 +334,8 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                     ),
                                     const SizedBox(height: 2),
                                     Text(
-                                      mesCurricular.objetivoPedagogico.resolve(lang),
+                                      mesCurricular.objetivoPedagogico
+                                          .resolve(lang),
                                       style: const TextStyle(
                                         fontSize: 11,
                                         color: AppTheme.textSecondary,
@@ -450,8 +475,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                             _diaSemana = diaSemanaNum;
                                           });
                                         },
-                                        borderRadius:
-                                            BorderRadius.circular(8),
+                                        borderRadius: BorderRadius.circular(8),
                                         child: Container(
                                           padding: const EdgeInsets.symmetric(
                                               vertical: 8),
@@ -520,14 +544,17 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                   padding: EdgeInsets.only(
                                       right: index < 3 ? 6.0 : 0.0),
                                   child: ChoiceChip(
-                                    label: Text('${isGl ? "Semana" : "Semana"} $s'),
+                                    label: Text(
+                                        '${isGl ? "Semana" : "Semana"} $s'),
                                     selected: isSel,
                                     onSelected: (selected) {
                                       if (selected) setState(() => _semana = s);
                                     },
                                     selectedColor: AppTheme.primaryVigoBlue,
                                     labelStyle: TextStyle(
-                                      color: isSel ? Colors.white : AppTheme.textPrimary,
+                                      color: isSel
+                                          ? Colors.white
+                                          : AppTheme.textPrimary,
                                       fontSize: 11,
                                     ),
                                   ),
@@ -551,11 +578,14 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                     label: Text(diaNome.substring(0, 3)),
                                     selected: isSel,
                                     onSelected: (selected) {
-                                      if (selected) setState(() => _diaSemana = d);
+                                      if (selected)
+                                        setState(() => _diaSemana = d);
                                     },
                                     selectedColor: AppTheme.primaryVigoBlue,
                                     labelStyle: TextStyle(
-                                      color: isSel ? Colors.white : AppTheme.textPrimary,
+                                      color: isSel
+                                          ? Colors.white
+                                          : AppTheme.textPrimary,
                                       fontSize: 11,
                                     ),
                                   ),
@@ -604,7 +634,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                isGl ? 'O teu seguimento no fogar' : 'Tu seguimiento en el hogar',
+                                isGl
+                                    ? 'O teu seguimento no fogar'
+                                    : 'Tu seguimiento en el hogar',
                                 style: const TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
@@ -633,8 +665,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
     );
   }
 
-  Widget _buildDetalleDoDia(
-      DiaCalendarioDual dia, bool isGl, bool feitoHoxe) {
+  Widget _buildDetalleDoDia(DiaCalendarioDual dia, bool isGl, bool feitoHoxe) {
     final fam = dia.familias;
     final prof = dia.profesorado;
     final diaSemanaNome = isGl
@@ -724,7 +755,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
 
             // Actividade Concreta no Fogar (3 min)
             Text(
-              isGl ? 'Xogo de 3 minutos na casa:' : 'Juego de 3 minutos en casa:',
+              isGl
+                  ? 'Xogo de 3 minutos na casa:'
+                  : 'Juego de 3 minutos en casa:',
               style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w800,
@@ -743,7 +776,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
             const SizedBox(height: 14),
 
             // Reto TPR en Inglés (L3) con BotonEscuchar
-            if (prof.tprIngles.isNotEmpty) ...[
+            if ((prof.tprIngles ?? '').isNotEmpty) ...[
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
@@ -760,7 +793,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                             size: 16, color: Color(0xFF2B6CB0)),
                         const SizedBox(width: 6),
                         Text(
-                          isGl ? 'Acción TPR en Inglés' : 'Acción TPR en Inglés',
+                          isGl
+                              ? 'Acción TPR en Inglés'
+                              : 'Acción TPR en Inglés',
                           style: const TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.bold,
@@ -785,7 +820,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                         const SizedBox(width: 8),
                         BotonEscuchar(
                           audioService: widget.audioService,
-                          texto: prof.tprIngles,
+                          texto: prof.tprIngles!,
                           language: AppLanguage.en,
                           compacto: true,
                         ),
@@ -841,7 +876,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
 
             // Consello Pedagóxico para a Familia
             Text(
-              isGl ? 'Pauta para a persoa adulta:' : 'Pauta para la persona adulta:',
+              isGl
+                  ? 'Pauta para a persoa adulta:'
+                  : 'Pauta para la persona adulta:',
               style: const TextStyle(
                 fontSize: 11,
                 fontWeight: FontWeight.bold,
@@ -865,7 +902,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
               height: AppTheme.touchMin,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  widget.store.marcarDiaHogar(DateTime.now());
+                  widget.store.registrarHogar(DateTime.now());
                   setState(() {});
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
@@ -884,13 +921,18 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                 ),
                 label: Text(
                   feitoHoxe
-                      ? (isGl ? 'Xogo Feito Hoxe no Fogar' : 'Juego Hecho Hoy en el Hogar')
-                      : (isGl ? 'Marcar como Feito Hoxe' : 'Marcar como Hecho Hoy'),
+                      ? (isGl
+                          ? 'Xogo Feito Hoxe no Fogar'
+                          : 'Juego Hecho Hoy en el Hogar')
+                      : (isGl
+                          ? 'Marcar como Feito Hoxe'
+                          : 'Marcar como Hecho Hoy'),
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor:
-                      feitoHoxe ? const Color(0xFF2F855A) : AppTheme.primaryVigoBlue,
+                  backgroundColor: feitoHoxe
+                      ? const Color(0xFF2F855A)
+                      : AppTheme.primaryVigoBlue,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),

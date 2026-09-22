@@ -36,44 +36,57 @@ void main() {
     calendarioStore = CalendarioStore();
     premiosRepository = PremiosRepository();
 
-    // Rexistramos un día dual de proba para garantir renderizado completo do calendario
+    // Rexistramos un día dual de proba para garantir renderizado completo do
+    // calendario. Os campos son os REAIS de DiaCalendarioDual: o test anterior
+    // inventaba `ContenidoProfesorado` e `ContenidoFamilia`, que non existen.
     repository.addCalendarioDia(const DiaCalendarioDual(
-      fechaClave: 'curso_0_2-mes-1-dia-1',
-      diaCursoNumero: 1,
-      semanaNumero: 1,
+      dia: 1,
+      diaSemana: 0,
       diaSemanaNumero: 1,
+      nombreDiaSemana: LocalizedString(gl: 'Luns', es: 'Lunes'),
+      semanaNumero: 1,
+      semanaCursoNumero: 1,
+      semanaGlobalNumero: 1,
+      diaCursoNumero: 1,
       diaGlobalNumero: 1,
       mesNumero: 1,
+      mesGlobalNumero: 1,
+      fechaClave: 'curso_0_2-mes-1-dia-1',
       temaDia: LocalizedString(
         gl: 'Primeiro día con Lúa',
         es: 'Primer día con Lúa',
       ),
-      profesorado: ContenidoProfesorado(
-        asamblea: LocalizedString(gl: 'Asamblea 1', es: 'Asamblea 1'),
-        cancion: LocalizedString(gl: 'Canción 1', es: 'Canción 1'),
-        retoMotor: LocalizedString(gl: 'Reto motor 1', es: 'Reto motor 1'),
+      profesorado: DiaProfesorado(
+        actividadAula: LocalizedString(gl: 'Asamblea 1', es: 'Asamblea 1'),
+        dinamica: LocalizedString(gl: 'Reto motor 1', es: 'Reto motor 1'),
+        duracionMin: 12,
         tprIngles: 'Clap hands, touch ground!',
+        consignaDocente: LocalizedString(
+          gl: 'Agarda cinco segundos antes de intervir.',
+          es: 'Espera cinco segundos antes de intervenir.',
+        ),
       ),
-      familias: ContenidoFamilia(
-        momento: LocalizedString(gl: 'Antes de durmir', es: 'Antes de dormir'),
+      familias: DiaFamilias(
         rutinaFogar: LocalizedString(
           gl: 'Xogo suave con Lúa sen pantallas.',
           es: 'Juego suave con Lúa sin pantallas.',
         ),
-        fraseConexion: LocalizedString(
-          gl: 'Hoxe na escola xogamos coas mans.',
-          es: 'Hoy en la escuela jugamos con las manos.',
-        ),
+        momento: LocalizedString(gl: 'Antes de durmir', es: 'Antes de dormir'),
         consignaFamilia: LocalizedString(
           gl: 'Pausa de 5 segundos antes de intervir.',
           es: 'Pausa de 5 segundos antes de intervenir.',
+        ),
+        fraseConexion: LocalizedString(
+          gl: 'Hoxe na escola xogamos coas mans.',
+          es: 'Hoy en la escuela jugamos con las manos.',
         ),
       ),
     ));
   });
 
   group('Pantalla de Selección de Portal Dual (Familias e Docentes)', () {
-    testWidgets('amosa dúas tarxetas destacadas con ilustracións propias debuxadas',
+    testWidgets(
+        'amosa dúas tarxetas destacadas con ilustracións propias debuxadas',
         (tester) async {
       await tester.pumpWidget(_wrap(
         SeleccionPortalScreen(
@@ -166,7 +179,8 @@ void main() {
   });
 
   group('Portal Familias Independente (Filtros, Chips e Selección)', () {
-    testWidgets('amosa módulos de estimulación familiar e permite filtrar por área e idade',
+    testWidgets(
+        'amosa módulos de estimulación familiar e permite filtrar por área e idade',
         (tester) async {
       await tester.pumpWidget(_wrap(
         PortalFamiliasScreen(
@@ -209,7 +223,8 @@ void main() {
   });
 
   group('Portal Docentes Independente', () {
-    testWidgets('amosa recursos de aula municipal a 72 bpm e planificador curricular',
+    testWidgets(
+        'amosa recursos de aula municipal a 72 bpm e planificador curricular',
         (tester) async {
       await tester.pumpWidget(_wrap(
         PortalDocentesScreen(
@@ -233,7 +248,8 @@ void main() {
   });
 
   group('Calendario Escolar no Fogar (Reixa de 20 días e 1-Tap Logging)', () {
-    testWidgets('renderiza reixa escolar de 20 días e permite alternar vista e marcar hoxe',
+    testWidgets(
+        'renderiza reixa escolar de 20 días e permite alternar vista e marcar hoxe',
         (tester) async {
       await tester.pumpWidget(_wrap(
         CalendarioFogarScreen(
@@ -319,7 +335,9 @@ void main() {
   });
 
   group('CuentoNarrativaEngine e Visor de Contos Dialóxicos', () {
-    test('preserva contos xenuínos artesanais sen mutilalos nin engadir fórmulas', () {
+    test(
+        'preserva contos xenuínos artesanais sen mutilalos nin engadir fórmulas',
+        () {
       const genuineText =
           'Hoxe Lúa vai á praia de Samil. O sol de Vigo brilla dourado no ceo. Ao lonxe vense as Illas Cíes e un barquiño de madeira que baila amodo sobre a auga azul.';
 
@@ -360,7 +378,8 @@ void main() {
       expect(resultado, equals(genuineText));
     });
 
-    test('enriquece contos con fórmulas modelo con narrativa rica en 3 escenas', () {
+    test('enriquece contos con fórmulas modelo con narrativa rica en 3 escenas',
+        () {
       const templateText =
           'Lúa atopa unha cuncha branca na beira de Samil. Na escola infantil e no fogar, abrimos os ollos e respiramos con calma o pulso da mañá.';
 
@@ -403,14 +422,16 @@ void main() {
       );
 
       // Debe conter a frase principal limpa, a ambientación de Vigo e o diálogo de Lúa
-      expect(resultado, contains('Lúa atopa unha cuncha branca na beira de Samil'));
+      expect(resultado,
+          contains('Lúa atopa unha cuncha branca na beira de Samil'));
       expect(resultado, contains('Vigo'));
       expect(resultado, contains('Miau! Que cousas tan fermosas'));
       // Non debe conter a fórmula modelo repetitiva
       expect(resultado, isNot(contains('abrimos os ollos e respiramos')));
     });
 
-    testWidgets('CuentoViewerScreen renderiza narrativa rica e botón de son TPR',
+    testWidgets(
+        'CuentoViewerScreen renderiza narrativa rica e botón de son TPR',
         (tester) async {
       const cuento = Cuento(
         id: 'conto_viewer_test',
@@ -457,13 +478,15 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('A Cuncha de Lúa'), findsOneWidget);
-      expect(find.textContaining('Giant waves, row your boat!'), findsOneWidget);
+      expect(
+          find.textContaining('Giant waves, row your boat!'), findsOneWidget);
       expect(find.byType(BotonEscuchar), findsOneWidget);
     });
   });
 
   group('Xogos Físicos e Dinámicas no Fogar (Zero-Screen TPR)', () {
-    testWidgets('renderiza o catálogo de xogos corporais e rexistro observacional',
+    testWidgets(
+        'renderiza o catálogo de xogos corporais e rexistro observacional',
         (tester) async {
       await tester.pumpWidget(_wrap(
         const XogosFogarScreen(
