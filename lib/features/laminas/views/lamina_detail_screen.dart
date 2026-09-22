@@ -22,9 +22,36 @@ class LaminaDetailScreen extends StatelessWidget {
     this.audioService,
   });
 
+  String _suxestionManipulativa(Lamina lamina, AppLanguage lang) {
+    final isGl = lang == AppLanguage.gl;
+    switch (lamina.categoria.toLowerCase()) {
+      case 'animais':
+        return isGl
+            ? 'Coloca un boneco ou figura do animal diante. Anima á crianza a imitar o seu son e movemento polo chan antes de nomealo.'
+            : 'Coloca un muñeco o figura del animal delante. Anima a la criatura a imitar su sonido y movimiento por el suelo antes de nombrarlo.';
+      case 'vigo_natureza':
+        return isGl
+            ? 'Se tedes unha cuncha, folla, pedra de praia ou auga nun caldeiro, tocade a textura real xuntos mentres escoitades o son do mar.'
+            : 'Si tenéis una concha, hoja, piedra de playa o agua en un cuenco, tocad la textura real juntos mientras escucháis el sonido del mar.';
+      case 'escola_rutinas':
+        return isGl
+            ? 'Usa o obxecto cotián real (mochila, culler, abrigo) e xogade a gardalo ou poñelo dicindo a palabra en voz alta a 72 bpm.'
+            : 'Usa el objeto cotidiano real (mochila, cuchara, abrigo) y jugad a guardarlo o ponerlo diciendo la palabra en voz alta a 72 bpm.';
+      case 'emocions_corpo':
+        return isGl
+            ? 'Toca no teu propio corpo a parte sinalada (ollos, nariz, mans) ou fai o xesto da emoción diante dun espello de man.'
+            : 'Toca en tu propio cuerpo la parte señalada (ojos, nariz, manos) o haz el gesto de la emoción delante de un espejo de mano.';
+      default:
+        return isGl
+            ? 'Busca un obxecto semellante no cuarto, pousade a man sobre el e agardade 5 segundos de silencio antes de repetir o nome.'
+            : 'Busca un objeto similar en la habitación, posad la mano sobre él y esperad 5 segundos de silencio antes de repetir el nombre.';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final lang = language;
+    final isGl = lang == AppLanguage.gl;
 
     Color cardBg = Colors.white;
     if (lamina.bgHex != null && lamina.bgHex!.startsWith('#')) {
@@ -49,7 +76,7 @@ class LaminaDetailScreen extends StatelessWidget {
         elevation: 0,
         leading: const BotonAtras(),
         title: Text(
-          'Lámina #${lamina.numero} · ${lamina.categoria.toUpperCase()}',
+          '${isGl ? "Lámina" : "Lámina"} #${lamina.numero} · ${lamina.categoria.toUpperCase()}',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontSize: 16,
@@ -160,12 +187,59 @@ class LaminaDetailScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
+              // Dinámica Manipulativa Física no Fogar (Zero-Screen)
+              Card(
+                color: const Color(0xFFFFF9EE),
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                  side: const BorderSide(color: Color(0xFFF6D4A0)),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          const Icon(Icons.touch_app_rounded,
+                              color: Color(0xFFDD6B20), size: 20),
+                          const SizedBox(width: 8),
+                          Text(
+                            isGl
+                                ? 'Xogo Manipulativo Táctil (Fogar / Aula)'
+                                : 'Juego Manipulativo Táctil (Hogar / Aula)',
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 13,
+                              color: Color(0xFFDD6B20),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        _suxestionManipulativa(lamina, lang),
+                        style: const TextStyle(
+                          fontSize: 13.5,
+                          height: 1.4,
+                          color: Color(0xFF4A5568),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 12),
+
               // Pregunta Sugerida
               if (lamina.preguntaSugerida != null)
                 Card(
                   elevation: 0.5,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
+                    side: const BorderSide(color: AppTheme.border),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(16),
@@ -178,7 +252,7 @@ class LaminaDetailScreen extends StatelessWidget {
                                 color: AppTheme.primaryDark, size: 20),
                             const SizedBox(width: 8),
                             Text(
-                              lang == AppLanguage.gl
+                              isGl
                                   ? 'Pregunta de estimulación dialóxica'
                                   : 'Pregunta de estimulación dialógica',
                               style: const TextStyle(
@@ -211,6 +285,7 @@ class LaminaDetailScreen extends StatelessWidget {
                   elevation: 0.5,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
+                    side: const BorderSide(color: AppTheme.border),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(16),
@@ -223,13 +298,7 @@ class LaminaDetailScreen extends StatelessWidget {
                                 color: AppTheme.warning, size: 20),
                             const SizedBox(width: 8),
                             Text(
-                              lang == AppLanguage.gl
-                                  // «Neurodesenvolvemento» promete una
-                                  // medida del desarrollo del cerebro que esta
-                                  // app ni toma ni podría tomar, y además
-                                  // declara no tener finalidad sanitaria. Lo
-                                  // que hay aquí es lo que se busca con la
-                                  // lámina, que ya es bastante.
+                              isGl
                                   ? 'Que se busca con esta lámina'
                                   : 'Qué se busca con esta lámina',
                               style: const TextStyle(
@@ -309,7 +378,7 @@ class LaminaDetailScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          lang == AppLanguage.gl
+                          isGl
                               ? lamina.tprAccion!.gl
                               : lamina.tprAccion!.es,
                           style: const TextStyle(
