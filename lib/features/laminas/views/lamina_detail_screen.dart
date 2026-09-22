@@ -378,9 +378,7 @@ class LaminaDetailScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          isGl
-                              ? lamina.tprAccion!.gl
-                              : lamina.tprAccion!.es,
+                          isGl ? lamina.tprAccion!.gl : lamina.tprAccion!.es,
                           style: const TextStyle(
                             fontSize: 13,
                             color: AppTheme.primaryInk,

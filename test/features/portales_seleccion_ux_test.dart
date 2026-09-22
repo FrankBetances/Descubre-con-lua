@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -12,7 +15,6 @@ import 'package:descubre_con_lua/data/models/cuento_model.dart';
 import 'package:descubre_con_lua/data/models/dia_calendario_dual_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_fogar_screen.dart';
-import 'package:descubre_con_lua/features/cuentos/services/cuento_narrativa_engine.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dart';
 import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
@@ -23,6 +25,53 @@ import 'package:descubre_con_lua/features/seleccion/seleccion_portal_screen.dart
 
 Widget _wrap(Widget child) =>
     MaterialApp(theme: AppTheme.lightTheme, home: child);
+
+/// Ancho de teléfono e ALTO de sobra.
+///
+/// Estes tests comproban que o CONTIDO está, non que caiba: con 600 px de alto
+/// —o que trae o test por defecto— os botóns dos portais caían fóra da árbore
+/// de render (y=681) e `tap()` non chegaba a eles, así que fallaban sen que a
+/// pantalla tivese nada malo.
+///
+/// Que caiba nun teléfono de verdade compróbase noutro sitio, e a propósito:
+/// `test/features/portales_escala_test.dart`, co tamaño e a escala de texto
+/// reais. Mesturar as dúas cousas nun só test fai que un fallo de disposición
+/// se confunda cun fallo de contido.
+void _pantallaDeTelefono(WidgetTester tester) {
+  tester.view.physicalSize = const Size(400, 2600);
+  tester.view.devicePixelRatio = 1.0;
+  addTearDown(tester.view.reset);
+}
+
+/// Fai o posible por deixar [finder] visible antes de comprobalo.
+///
+/// O contido dos portais vive nun `ListView`: o que está debaixo do prego non
+/// se constrúe, así que non se pode buscar sen desprazarse primeiro. Se xa
+/// está, non fai nada; se non se alcanza desprazándose, tampouco falla AQUÍ:
+/// falla o `expect` que vén despois, que é quen ten que dicir o que pasa.
+Future<void> _ataVer(WidgetTester tester, Finder finder) async {
+  if (finder.evaluate().isNotEmpty) {
+    await tester.ensureVisible(finder);
+    await tester.pumpAndSettle();
+    return;
+  }
+  final listas = find.byType(Scrollable);
+  for (var i = 0; i < listas.evaluate().length; i++) {
+    // Nas dúas direccións: un `expect` anterior pode ter baixado a lista, e o
+    // `ListView` destrúe o que queda fóra, así que o de arriba xa non existe.
+    for (final delta in [200.0, -200.0]) {
+      try {
+        await tester.scrollUntilVisible(finder, delta,
+            scrollable: listas.at(i));
+        await tester.pumpAndSettle();
+        if (finder.evaluate().isNotEmpty) return;
+      } catch (_) {
+        // Nin nesta lista nin nesta dirección: próbase a seguinte.
+      }
+    }
+  }
+  await tester.pumpAndSettle();
+}
 
 void main() {
   late ContentRepository repository;
@@ -88,6 +137,7 @@ void main() {
     testWidgets(
         'amosa dúas tarxetas destacadas con ilustracións propias debuxadas',
         (tester) async {
+      _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
         SeleccionPortalScreen(
           repository: repository,
@@ -101,19 +151,24 @@ void main() {
       await tester.pumpAndSettle();
 
       // Debe amosar as dúas tarxetas con debuxos propios
+      await _ataVer(tester, find.text('Portal Familias'));
       expect(find.text('Portal Familias'), findsOneWidget);
+      await _ataVer(tester, find.text('Portal Docentes'));
       expect(find.text('Portal Docentes'), findsOneWidget);
 
       expect(find.byType(IlustracionFamilia), findsOneWidget);
       expect(find.byType(IlustracionEscola), findsOneWidget);
 
       // Botóns de entrada independente
+      await _ataVer(tester, find.text('Entrar no Portal Familias'));
       expect(find.text('Entrar no Portal Familias'), findsOneWidget);
+      await _ataVer(tester, find.text('Entrar no Portal Docentes'));
       expect(find.text('Entrar no Portal Docentes'), findsOneWidget);
     });
 
     testWidgets('paridade bilingüe galego e castelán na selección de portal',
         (tester) async {
+      _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
         SeleccionPortalScreen(
           repository: repository,
@@ -126,13 +181,16 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('Entrar en el Portal Familias'));
       expect(find.text('Entrar en el Portal Familias'), findsOneWidget);
+      await _ataVer(tester, find.text('Entrar en el Portal Docentes'));
       expect(find.text('Entrar en el Portal Docentes'), findsOneWidget);
       expect(find.textContaining('CERO PANTALLAS'), findsOneWidget);
     });
 
     testWidgets('navega á pantalla independente do Portal Familias',
         (tester) async {
+      _pantallaDeTelefono(tester);
       await tester.pumpWidget(MaterialApp(
         theme: AppTheme.lightTheme,
         home: SeleccionPortalScreen(
@@ -146,16 +204,22 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
-      await tester.tap(find.text('Entrar no Portal Familias'));
+      final boton = find.text('Entrar no Portal Familias');
+      await tester.ensureVisible(boton);
+      await tester.pumpAndSettle();
+      await tester.tap(boton);
       await tester.pumpAndSettle();
 
       expect(find.byType(PortalFamiliasScreen), findsOneWidget);
+      await _ataVer(tester, find.text('Benvida ao fogar de Lúa'));
       expect(find.text('Benvida ao fogar de Lúa'), findsOneWidget);
+      await _ataVer(tester, find.text('CERO PANTALLAS INFANTÍS'));
       expect(find.text('CERO PANTALLAS INFANTÍS'), findsOneWidget);
     });
 
     testWidgets('navega á pantalla independente do Portal Docentes',
         (tester) async {
+      _pantallaDeTelefono(tester);
       await tester.pumpWidget(MaterialApp(
         theme: AppTheme.lightTheme,
         home: SeleccionPortalScreen(
@@ -169,11 +233,16 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
-      await tester.tap(find.text('Entrar no Portal Docentes'));
+      final boton = find.text('Entrar no Portal Docentes');
+      await tester.ensureVisible(boton);
+      await tester.pumpAndSettle();
+      await tester.tap(boton);
       await tester.pumpAndSettle();
 
       expect(find.byType(PortalDocentesScreen), findsOneWidget);
+      await _ataVer(tester, find.text('Escolas infantís de Vigo'));
       expect(find.text('Escolas infantís de Vigo'), findsOneWidget);
+      await _ataVer(tester, find.text('MODO AULA · DOCENTES'));
       expect(find.text('MODO AULA · DOCENTES'), findsOneWidget);
     });
   });
@@ -182,6 +251,7 @@ void main() {
     testWidgets(
         'amosa módulos de estimulación familiar e permite filtrar por área e idade',
         (tester) async {
+      _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
         PortalFamiliasScreen(
           repository: repository,
@@ -195,22 +265,32 @@ void main() {
       await tester.pumpAndSettle();
 
       // Módulos visibles por defecto
+      await _ataVer(tester, find.text('Calendario Escolar no Fogar'));
       expect(find.text('Calendario Escolar no Fogar'), findsOneWidget);
+      await _ataVer(tester, find.text('Biblioteca de Contos Dialóxicos'));
       expect(find.text('Biblioteca de Contos Dialóxicos'), findsOneWidget);
+      await _ataVer(tester, find.text('Aprender a Ler · Fónica Manipulativa'));
       expect(find.text('Aprender a Ler · Fónica Manipulativa'), findsOneWidget);
+      await _ataVer(tester, find.text('Banco de Láminas e Vocabulario'));
       expect(find.text('Banco de Láminas e Vocabulario'), findsOneWidget);
+      await _ataVer(tester, find.text('Xogos e Dinámicas Corporais (TPR)'));
       expect(find.text('Xogos e Dinámicas Corporais (TPR)'), findsOneWidget);
+      await _ataVer(tester, find.text('Academy · Pautas de Crianza'));
       expect(find.text('Academy · Pautas de Crianza'), findsOneWidget);
 
       // Chips de idades dispoñibles
+      await _ataVer(tester, find.text('Todas as idades'));
       expect(find.text('Todas as idades'), findsOneWidget);
+      await _ataVer(tester, find.text('0-2 anos (Nido)'));
       expect(find.text('0-2 anos (Nido)'), findsOneWidget);
+      await _ataVer(tester, find.text('2-3 anos (Maternal)'));
       expect(find.text('2-3 anos (Maternal)'), findsOneWidget);
 
       // Filtrar por categoría 'Xogos Físicos (TPR)'
       await tester.tap(find.text('Xogos Físicos (TPR)'));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('Xogos e Dinámicas Corporais (TPR)'));
       expect(find.text('Xogos e Dinámicas Corporais (TPR)'), findsOneWidget);
       expect(find.text('Biblioteca de Contos Dialóxicos'), findsNothing);
 
@@ -218,6 +298,7 @@ void main() {
       await tester.tap(find.text('Todas as Áreas'));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('Biblioteca de Contos Dialóxicos'));
       expect(find.text('Biblioteca de Contos Dialóxicos'), findsOneWidget);
     });
   });
@@ -226,6 +307,7 @@ void main() {
     testWidgets(
         'amosa recursos de aula municipal a 72 bpm e planificador curricular',
         (tester) async {
+      _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
         PortalDocentesScreen(
           repository: repository,
@@ -238,11 +320,17 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('Juega con Lúa · Modo Aula'));
       expect(find.text('Juega con Lúa · Modo Aula'), findsOneWidget);
+      await _ataVer(tester, find.text('Planificador Curricular (50 Meses)'));
       expect(find.text('Planificador Curricular (50 Meses)'), findsOneWidget);
+      await _ataVer(tester, find.text('Inmersión en Inglés · L3'));
       expect(find.text('Inmersión en Inglés · L3'), findsOneWidget);
+      await _ataVer(tester, find.text('Estratexias Pedagóxicas de Aula'));
       expect(find.text('Estratexias Pedagóxicas de Aula'), findsOneWidget);
+      await _ataVer(tester, find.text('Dinámicas de Aula Activa'));
       expect(find.text('Dinámicas de Aula Activa'), findsOneWidget);
+      await _ataVer(tester, find.text('Corpus 8.000 Palabras (BNC/COCA)'));
       expect(find.text('Corpus 8.000 Palabras (BNC/COCA)'), findsOneWidget);
     });
   });
@@ -251,6 +339,7 @@ void main() {
     testWidgets(
         'renderiza reixa escolar de 20 días e permite alternar vista e marcar hoxe',
         (tester) async {
+      _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
         CalendarioFogarScreen(
           repository: repository,
@@ -262,26 +351,36 @@ void main() {
       await tester.pumpAndSettle();
 
       // Cursos dispoñibles
+      await _ataVer(tester, find.text('0-2 anos (Nido)'));
       expect(find.text('0-2 anos (Nido)'), findsOneWidget);
+      await _ataVer(tester, find.text('2-3 anos (Maternal)'));
       expect(find.text('2-3 anos (Maternal)'), findsOneWidget);
+      await _ataVer(tester, find.text('Setembro'));
       expect(find.text('Setembro'), findsOneWidget);
 
       // Reixa de 20 días lectivos
+      await _ataVer(tester, find.text('REIXA ESCOLAR · 20 DÍAS LECTIVOS'));
       expect(find.text('REIXA ESCOLAR · 20 DÍAS LECTIVOS'), findsOneWidget);
+      await _ataVer(tester, find.text('Primeiro día con Lúa'));
       expect(find.text('Primeiro día con Lúa'), findsOneWidget);
-      expect(find.text('Clap hands, touch ground!'), findsOneWidget);
+      // Pintase entre comiñas angulares, así que o texto exacto non casa.
+      await _ataVer(tester, find.textContaining('Clap hands, touch ground!'));
+      expect(find.textContaining('Clap hands, touch ground!'), findsWidgets);
 
       // Botón 1-tap para marcar como feito hoxe
+      await _ataVer(tester, find.text('Marcar como Feito Hoxe'));
       expect(find.text('Marcar como Feito Hoxe'), findsOneWidget);
       await tester.tap(find.text('Marcar como Feito Hoxe'));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('Xogo Feito Hoxe no Fogar'));
       expect(find.text('Xogo Feito Hoxe no Fogar'), findsOneWidget);
 
       // Alternar a vista de calendario para ver selector de semanas
       await tester.tap(find.byIcon(Icons.calendar_view_month_rounded));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('Semana 1'));
       expect(find.text('Semana 1'), findsOneWidget);
     });
   });
@@ -289,6 +388,7 @@ void main() {
   group('Aprender a Ler · Fónica Manipulativa con Botóns de Audio', () {
     testWidgets('renderiza as 4 pestanas con botóns de reprodución de son',
         (tester) async {
+      _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
         AprenderALerScreen(
           repository: repository,
@@ -299,15 +399,20 @@ void main() {
       await tester.pumpAndSettle();
 
       // Pestanas
+      await _ataVer(tester, find.text('1. Conciencia Fonolóxica'));
       expect(find.text('1. Conciencia Fonolóxica'), findsOneWidget);
+      await _ataVer(tester, find.text('2. Mesa Alphabot'));
       expect(find.text('2. Mesa Alphabot'), findsOneWidget);
+      await _ataVer(tester, find.text('3. Cubos CVC'));
       expect(find.text('3. Cubos CVC'), findsOneWidget);
+      await _ataVer(tester, find.text('4. Pares Mínimos'));
       expect(find.text('4. Pares Mínimos'), findsOneWidget);
 
       // Tab 2: Mesa Alphabot
       await tester.tap(find.text('2. Mesa Alphabot'));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('LÚA'));
       expect(find.text('LÚA'), findsOneWidget);
       expect(find.byType(BotonEscuchar), findsWidgets);
 
@@ -320,6 +425,7 @@ void main() {
       await tester.tap(find.text('3. Cubos CVC'));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('CAT · /kæt/'));
       expect(find.text('CAT · /kæt/'), findsOneWidget);
       expect(find.byType(BotonEscuchar), findsWidgets);
 
@@ -327,112 +433,110 @@ void main() {
       await tester.tap(find.text('4. Pares Mínimos'));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('/b/ vs /p/'));
       expect(find.text('/b/ vs /p/'), findsOneWidget);
+      await _ataVer(tester, find.text('Bear'));
       expect(find.text('Bear'), findsOneWidget);
+      await _ataVer(tester, find.text('Pig'));
       expect(find.text('Pig'), findsOneWidget);
       expect(find.byType(BotonEscuchar), findsWidgets);
     });
   });
 
-  group('CuentoNarrativaEngine e Visor de Contos Dialóxicos', () {
-    test(
-        'preserva contos xenuínos artesanais sen mutilalos nin engadir fórmulas',
-        () {
-      const genuineText =
-          'Hoxe Lúa vai á praia de Samil. O sol de Vigo brilla dourado no ceo. Ao lonxe vense as Illas Cíes e un barquiño de madeira que baila amodo sobre a auga azul.';
+  group('Banco de contos: narrativa propia no JSON, non xerada', () {
+    // O que había aquí probaba un «motor de narrativa» que escribía tres
+    // parágrafos fixos en tempo de execución. Ese motor xa non existe: os cen
+    // contos levan a súa propia narrativa no JSON. Estes tests protexen
+    // precisamente iso, que é o que se podía volver perder.
 
-      const cuento = Cuento(
-        id: 'conto_mar_test',
-        cursoId: 'curso_0_2',
-        mesNumero: 10,
-        semanaSugerida: 1,
-        titulo: LocalizedString(gl: 'Lúa en Samil', es: 'Lúa en Samil'),
-        sinopse: LocalizedString(gl: 'Un día no mar.', es: 'Un día en el mar.'),
-        nivelLectura: 1,
-        licenza: 'CC BY',
-        orixeOpenSource: 'Vigo',
-        tempoEsperaSegundos: 5,
-        tprOral: CuentoTprOral(
-          fraseEn: 'Row the boat!',
-          comandoGl: 'Remar',
-          comandoEs: 'Remar',
-        ),
-        paginas: [
-          CuentoPagina(
-            numero: 1,
-            lamina: 'conto_mar_1',
-            texto: LocalizedString(gl: genuineText, es: genuineText),
-            vocabularioClave: ['Mar', 'Sol'],
-          ),
-        ],
-        preguntasGraduadas: [],
-      );
+    late List<Cuento> contos;
 
-      final resultado = CuentoNarrativaEngine.obterTextoNarrativoRico(
-        cuento,
-        cuento.paginas.first,
-        AppLanguage.gl,
-      );
-
-      // Debe devolver exactamente o texto xenuíno sen engadidos
-      expect(resultado, equals(genuineText));
+    setUpAll(() {
+      final raw = File('assets/content/cuentos/banco100_cuentos.json')
+          .readAsStringSync();
+      contos = (jsonDecode(raw) as List)
+          .map((e) => Cuento.fromJson(Map<String, dynamic>.from(e as Map)))
+          .toList();
     });
 
-    test('enriquece contos con fórmulas modelo con narrativa rica en 3 escenas',
-        () {
-      const templateText =
-          'Lúa atopa unha cuncha branca na beira de Samil. Na escola infantil e no fogar, abrimos os ollos e respiramos con calma o pulso da mañá.';
-
-      const cuento = Cuento(
-        id: 'conto_cuncha_test',
-        cursoId: 'curso_0_2',
-        mesNumero: 1,
-        semanaSugerida: 1,
-        mesNome: LocalizedString(gl: 'Setembro', es: 'Septiembre'),
-        centroInteres: LocalizedString(gl: 'Acollemento', es: 'Acogida'),
-        titulo: LocalizedString(gl: 'A Cuncha Branca', es: 'La Concha Blanca'),
-        sinopse: LocalizedString(
-          gl: 'Lúa escoita o murmurio do mar nunha cuncha.',
-          es: 'Lúa escucha el murmullo del mar en una concha.',
-        ),
-        nivelLectura: 1,
-        licenza: 'CC BY',
-        orixeOpenSource: 'Vigo',
-        tempoEsperaSegundos: 5,
-        tprOral: CuentoTprOral(
-          fraseEn: 'Giant waves, row your boat!',
-          comandoGl: 'Remar',
-          comandoEs: 'Remar',
-        ),
-        paginas: [
-          CuentoPagina(
-            numero: 1,
-            lamina: 'conto_mar_1',
-            texto: LocalizedString(gl: templateText, es: templateText),
-            vocabularioClave: ['Cuncha', 'Mar'],
-          ),
-        ],
-        preguntasGraduadas: [],
-      );
-
-      final resultado = CuentoNarrativaEngine.obterTextoNarrativoRico(
-        cuento,
-        cuento.paginas.first,
-        AppLanguage.gl,
-      );
-
-      // Debe conter a frase principal limpa, a ambientación de Vigo e o diálogo de Lúa
-      expect(resultado,
-          contains('Lúa atopa unha cuncha branca na beira de Samil'));
-      expect(resultado, contains('Vigo'));
-      expect(resultado, contains('Miau! Que cousas tan fermosas'));
-      // Non debe conter a fórmula modelo repetitiva
-      expect(resultado, isNot(contains('abrimos os ollos e respiramos')));
+    test('os cen contos teñen tres páxinas e ningunha en branco', () {
+      expect(contos, hasLength(100));
+      for (final c in contos) {
+        expect(c.paginas, hasLength(3), reason: c.id);
+        for (final pg in c.paginas) {
+          expect(pg.texto.gl.trim(), isNotEmpty,
+              reason: '${c.id}/${pg.numero}');
+          expect(pg.texto.es.trim(), isNotEmpty,
+              reason: '${c.id}/${pg.numero}');
+        }
+      }
     });
 
-    testWidgets(
-        'CuentoViewerScreen renderiza narrativa rica e botón de son TPR',
+    test('ningún texto de páxina se repite entre contos, nas dúas linguas', () {
+      // Isto é o defecto que había: a páxina 2 e a 3 eran UN texto repetido
+      // cen veces. Se alguén volve meter un xerador ou copiar e pegar, este
+      // test cae.
+      for (final numero in [1, 2, 3]) {
+        for (final gl in [true, false]) {
+          final textos = contos
+              .map((c) => c.paginas.firstWhere((p) => p.numero == numero))
+              .map((p) => gl ? p.texto.gl : p.texto.es)
+              .toList();
+          expect(textos.toSet(), hasLength(100),
+              reason:
+                  'páxina $numero, ${gl ? "gl" : "es"}: hai textos repetidos');
+        }
+      }
+    });
+
+    test('non queda ningunha fórmula modelo das que había', () {
+      const formulas = [
+        'Na escola infantil e no fogar, abrimos os ollos',
+        'En la escuela infantil y en el hogar, abrimos los ojos',
+        'De súpeto, algo marabilloso sucede',
+        'De repente, algo maravilloso sucede',
+        'Que ben se sinte o corazón tranquilo',
+        'Qué bien se siente el corazón tranquilo',
+        'Miau! Que cousas tan fermosas',
+      ];
+      for (final c in contos) {
+        for (final pg in c.paginas) {
+          for (final f in formulas) {
+            expect(pg.texto.gl, isNot(contains(f)),
+                reason: '${c.id}/${pg.numero}');
+            expect(pg.texto.es, isNot(contains(f)),
+                reason: '${c.id}/${pg.numero}');
+          }
+        }
+      }
+    });
+
+    test('o vocabulario é propio de cada páxina e ten as dúas linguas', () {
+      for (final numero in [1, 2, 3]) {
+        final listas = contos
+            .map((c) => c.paginas.firstWhere((p) => p.numero == numero))
+            .map((p) => p.vocabularioClave.join('|'))
+            .toList();
+        expect(listas.toSet(), hasLength(100),
+            reason: 'páxina $numero: o vocabulario repítese entre contos');
+      }
+      for (final c in contos) {
+        for (final pg in c.paginas) {
+          expect(pg.vocabularioClave, hasLength(4), reason: c.id);
+          expect(pg.vocabularioClaveEs, hasLength(4), reason: c.id);
+          expect(
+              pg.vocabularioPara(AppLanguage.es), equals(pg.vocabularioClaveEs),
+              reason: c.id);
+          expect(
+              pg.vocabularioPara(AppLanguage.gl), equals(pg.vocabularioClave),
+              reason: c.id);
+        }
+      }
+    });
+
+    testWidgets('o visor pinta o texto do JSON, tal cal, e o botón do TPR',
         (tester) async {
+      _pantallaDeTelefono(tester);
       const cuento = Cuento(
         id: 'conto_viewer_test',
         cursoId: 'curso_0_2',
@@ -463,6 +567,7 @@ void main() {
               es: 'Hoy Lúa va a la playa de Samil.',
             ),
             vocabularioClave: ['Mar', 'Samil'],
+            vocabularioClaveEs: ['Mar', 'Samil'],
           ),
         ],
         preguntasGraduadas: [],
@@ -477,7 +582,11 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('A Cuncha de Lúa'));
       expect(find.text('A Cuncha de Lúa'), findsOneWidget);
+      // O texto sae do JSON sen engadidos: nin unha palabra máis.
+      await _ataVer(tester, find.text('Hoxe Lúa vai á praia de Samil.'));
+      expect(find.text('Hoxe Lúa vai á praia de Samil.'), findsOneWidget);
       expect(
           find.textContaining('Giant waves, row your boat!'), findsOneWidget);
       expect(find.byType(BotonEscuchar), findsOneWidget);
@@ -488,6 +597,7 @@ void main() {
     testWidgets(
         'renderiza o catálogo de xogos corporais e rexistro observacional',
         (tester) async {
+      _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
         const XogosFogarScreen(
           initialLanguage: AppLanguage.gl,
@@ -495,8 +605,11 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
+      await _ataVer(tester, find.text('A Caza do Tesouro dos Sons'));
       expect(find.text('A Caza do Tesouro dos Sons'), findsOneWidget);
+      await _ataVer(tester, find.text('O Barquiño de Samil na Ría'));
       expect(find.text('O Barquiño de Samil na Ría'), findsOneWidget);
+      await _ataVer(tester, find.text('XOGO 100% CORPORAL E FÍSICO'));
       expect(find.text('XOGO 100% CORPORAL E FÍSICO'), findsOneWidget);
 
       // Rexistro 1-toque

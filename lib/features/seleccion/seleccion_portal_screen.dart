@@ -349,8 +349,8 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                     decoration: BoxDecoration(
                       color: badgeBg,
                       borderRadius: BorderRadius.circular(6),
-                      border: Border.all(
-                          color: badgeColor.withValues(alpha: 0.3)),
+                      border:
+                          Border.all(color: badgeColor.withValues(alpha: 0.3)),
                     ),
                     child: Text(
                       badge,
@@ -415,52 +415,63 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                   }),
                   const SizedBox(height: 14),
 
-                  // Botón de formación e Botón de Entrada
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      if (formacionTexto != null && onFormacion != null)
-                        Flexible(
-                          child: TextButton.icon(
-                            onPressed: onFormacion,
-                            icon: const Icon(Icons.school_outlined, size: 16),
-                            label: Text(
-                              formacionTexto,
-                              style: const TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            style: TextButton.styleFrom(
-                              foregroundColor: AppTheme.primaryInk,
-                              padding: EdgeInsets.zero,
-                              minimumSize: const Size(0, 36),
-                            ),
-                          ),
-                        ),
-                      const SizedBox(width: 8),
-                      ElevatedButton(
-                        onPressed: onTap,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: buttonColor,
-                          foregroundColor: Colors.white,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 20,
-                            vertical: 12,
-                          ),
-                        ),
-                        child: Text(
-                          buttonText,
+                  // Botón de formación e botón de entrada, UN DEBAIXO DO
+                  // OUTRO.
+                  //
+                  // Estaban os dous na mesma fila, e nun teléfono non caben:
+                  // «Entrar no Portal Docentes» a 13.5 bold máis o enlace de
+                  // formación desbordaban 95 px a 400 de ancho e 136 coa
+                  // escala de texto grande. A 800 px —o ancho que trae o test
+                  // por defecto— non se notaba nada.
+                  //
+                  // Non é un axuste de padding: nun teléfono a acción
+                  // principal vai a ancho completo, que é ademais máis doado
+                  // de acertar co dedo.
+                  if (formacionTexto != null && onFormacion != null)
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: TextButton.icon(
+                        onPressed: onFormacion,
+                        icon: const Icon(Icons.school_outlined, size: 16),
+                        label: Text(
+                          formacionTexto,
                           style: const TextStyle(
+                            fontSize: 11,
                             fontWeight: FontWeight.bold,
-                            fontSize: 13.5,
                           ),
+                        ),
+                        style: TextButton.styleFrom(
+                          foregroundColor: AppTheme.primaryInk,
+                          padding: EdgeInsets.zero,
+                          minimumSize: const Size(0, 36),
                         ),
                       ),
-                    ],
+                    ),
+                  const SizedBox(height: 8),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: onTap,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: buttonColor,
+                        foregroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 14,
+                        ),
+                      ),
+                      child: Text(
+                        buttonText,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 13.5,
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),

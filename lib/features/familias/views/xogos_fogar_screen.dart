@@ -66,7 +66,8 @@ class XogosFogarScreen extends StatefulWidget {
 class _XogosFogarScreenState extends State<XogosFogarScreen> {
   late AppLanguage _language;
   String _filtroIdade = 'todas';
-  final Map<String, String> _rexistroObservacional = {}; // id -> 'L' | 'A' | 'E'
+  final Map<String, String> _rexistroObservacional =
+      {}; // id -> 'L' | 'A' | 'E'
 
   static const List<XogoFogarItem> _xogos = [
     XogoFogarItem(
@@ -78,14 +79,21 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       materiaisGl: '3 obxectos da casa: culler, mazá e almofada',
       materiaisEs: '3 objetos de la casa: cuchara, manzana y almohada',
       obxectivoGl: 'Discriminación auditiva e discriminación do son inicial',
-      obxectivoEs: 'Discriminación auditiva y discriminación del sonido inicial',
+      obxectivoEs:
+          'Discriminación auditiva y discriminación del sonido inicial',
       fraseEn: 'Find the red apple, quick and gentle!',
-      guionAdultoGl: 'Esconde a mazá á vista. Di: «Onde está a mazá? Find the apple!». Agarda 5 segundos en silencio.',
-      guionAdultoEs: 'Esconde la manzana a la vista. Di: «¿Dónde está la manzana? Find the apple!». Espera 5 segundos en silencio.',
-      accionKinestesicaGl: 'A crianza camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.',
-      accionKinestesicaEs: 'La criatura camina o gatea por la habitación hasta coger el objeto y traerlo en las manos.',
-      criterioExitoGl: 'Localiza o obxecto e sorrí ao entregalo sen necesidade de indicacións adicionais.',
-      criterioExitoEs: 'Localiza el objeto y sonríe al entregarlo sin necesidad de indicaciones adicionales.',
+      guionAdultoGl:
+          'Esconde a mazá á vista. Di: «Onde está a mazá? Find the apple!». Agarda 5 segundos en silencio.',
+      guionAdultoEs:
+          'Esconde la manzana a la vista. Di: «¿Dónde está la manzana? Find the apple!». Espera 5 segundos en silencio.',
+      accionKinestesicaGl:
+          'A crianza camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.',
+      accionKinestesicaEs:
+          'La criatura camina o gatea por la habitación hasta coger el objeto y traerlo en las manos.',
+      criterioExitoGl:
+          'Localiza o obxecto e sorrí ao entregalo sen necesidade de indicacións adicionais.',
+      criterioExitoEs:
+          'Localiza el objeto y sonríe al entregarlo sin necesidad de indicaciones adicionales.',
     ),
     XogoFogarItem(
       id: 'xogo_02_barco_samil',
@@ -98,12 +106,18 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       obxectivoGl: 'Equilibrio vestibular, contacto afectivo e ritmo a 72 bpm',
       obxectivoEs: 'Equilibrio vestibular, contacto afectivo y ritmo a 72 bpm',
       fraseEn: 'Row, row your little boat!',
-      guionAdultoGl: 'Crianza sentada no teu colo mirando cara a ti. Vaivén suave de remo adiante e atrás entoando o ritmo.',
-      guionAdultoEs: 'Criatura sentada en tu regazo mirándote de frente. Vaivén suave de remo adelante y atrás entonando el ritmo.',
-      accionKinestesicaGl: 'Balanzo do torso sincronizado co adulto e parada na calma mariña.',
-      accionKinestesicaEs: 'Balanceo del torso sincronizado con el adulto y parada en la calma marina.',
-      criterioExitoGl: 'Anticipa a parada do movemento mantendo a mirada e o riso compartido.',
-      criterioExitoEs: 'Anticipa la parada del movimiento manteniendo la mirada y la risa compartida.',
+      guionAdultoGl:
+          'Crianza sentada no teu colo mirando cara a ti. Vaivén suave de remo adiante e atrás entoando o ritmo.',
+      guionAdultoEs:
+          'Criatura sentada en tu regazo mirándote de frente. Vaivén suave de remo adelante y atrás entonando el ritmo.',
+      accionKinestesicaGl:
+          'Balanzo do torso sincronizado co adulto e parada na calma mariña.',
+      accionKinestesicaEs:
+          'Balanceo del torso sincronizado con el adulto y parada en la calma marina.',
+      criterioExitoGl:
+          'Anticipa a parada do movemento mantendo a mirada e o riso compartido.',
+      criterioExitoEs:
+          'Anticipa la parada del movimiento manteniendo la mirada y la risa compartida.',
     ),
     XogoFogarItem(
       id: 'xogo_03_xigante_formiga',
@@ -116,12 +130,18 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       obxectivoGl: 'Contraste acústico forte/feble e inhibición motriz',
       obxectivoEs: 'Contraste acústico fuerte/débil e inhibición motriz',
       fraseEn: 'Big giant stomps! Tiny ant tiptoes!',
-      guionAdultoGl: 'Di con voz grosa: «Stomp like a giant!», pisando forte. Logo susurra: «Tiptoe like an ant», de puntillas.',
-      guionAdultoEs: 'Di con voz grave: «Stomp like a giant!», pisando fuerte. Luego susurra: «Tiptoe like an ant», de puntillas.',
-      accionKinestesicaGl: 'Pisa con forza no chan con todo o corpo e logo camiña en silencio absoluto de puntillas.',
-      accionKinestesicaEs: 'Pisa con fuerza en el suelo con todo el cuerpo y luego camina en silencio absoluto de puntillas.',
-      criterioExitoGl: 'Modula o volume do paso adaptándose ao comando sen precipitación.',
-      criterioExitoEs: 'Modula el volumen del paso adaptándose al comando sin precipitación.',
+      guionAdultoGl:
+          'Di con voz grosa: «Stomp like a giant!», pisando forte. Logo susurra: «Tiptoe like an ant», de puntillas.',
+      guionAdultoEs:
+          'Di con voz grave: «Stomp like a giant!», pisando fuerte. Luego susurra: «Tiptoe like an ant», de puntillas.',
+      accionKinestesicaGl:
+          'Pisa con forza no chan con todo o corpo e logo camiña en silencio absoluto de puntillas.',
+      accionKinestesicaEs:
+          'Pisa con fuerza en el suelo con todo el cuerpo y luego camina en silencio absoluto de puntillas.',
+      criterioExitoGl:
+          'Modula o volume do paso adaptándose ao comando sen precipitación.',
+      criterioExitoEs:
+          'Modula el volumen del paso adaptándose al comando sin precipitación.',
     ),
     XogoFogarItem(
       id: 'xogo_04_cuncha_escoita',
@@ -131,15 +151,23 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       duracionMin: 3,
       materiaisGl: 'Unha cuncha grande de Samil ou un vaso de plástico limpo',
       materiaisEs: 'Una concha grande de Samil o un vaso de plástico limpio',
-      obxectivoGl: 'Atención auditiva focalizada e silencio clínico tranquilizador',
-      obxectivoEs: 'Atención auditiva focalizada y silencio clínico tranquilizador',
+      obxectivoGl:
+          'Atención auditiva focalizada e silencio clínico tranquilizador',
+      obxectivoEs:
+          'Atención auditiva focalizada y silencio clínico tranquilizador',
       fraseEn: 'Listen close, hear the gentle sea!',
-      guionAdultoGl: 'Achega a cuncha á orella do neno/a. Respira amodiño: «Shhh... Escoitas o mar de Vigo?».',
-      guionAdultoEs: 'Acerca la concha a la oreja del niño/a. Respira despacio: «Shhh... ¿Escuchas el mar de Vigo?».',
-      accionKinestesicaGl: 'Inclina a cabeza, pecha os ollos ou pousa a man sobre a cuncha con curiosidade.',
-      accionKinestesicaEs: 'Inclina la cabeza, cierra los ojos o posa la mano sobre la concha con curiosidad.',
-      criterioExitoGl: 'Permanece en escoita tranquila polo menos 5 segundos sen retirar a cabeza.',
-      criterioExitoEs: 'Permanece en escucha tranquila al menos 5 segundos sin retirar la cabeza.',
+      guionAdultoGl:
+          'Achega a cuncha á orella do neno/a. Respira amodiño: «Shhh... Escoitas o mar de Vigo?».',
+      guionAdultoEs:
+          'Acerca la concha a la oreja del niño/a. Respira despacio: «Shhh... ¿Escuchas el mar de Vigo?».',
+      accionKinestesicaGl:
+          'Inclina a cabeza, pecha os ollos ou pousa a man sobre a cuncha con curiosidade.',
+      accionKinestesicaEs:
+          'Inclina la cabeza, cierra los ojos o posa la mano sobre la concha con curiosidad.',
+      criterioExitoGl:
+          'Permanece en escoita tranquila polo menos 5 segundos sen retirar a cabeza.',
+      criterioExitoEs:
+          'Permanece en escucha tranquila al menos 5 segundos sin retirar la cabeza.',
     ),
     XogoFogarItem(
       id: 'xogo_05_espello_corpo',
@@ -152,12 +180,18 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       obxectivoGl: 'Esquema corporal, propiocepción e denominación anatómica',
       obxectivoEs: 'Esquema corporal, propiocepción y denominación anatómica',
       fraseEn: 'Touch your nose, touch your toes!',
-      guionAdultoGl: 'Pon as mans no teu propio nariz e canta a orde en inglés. Despois agarda sen tocar para que o faga el/ela.',
-      guionAdultoEs: 'Pon las manos en tu propia nariz y canta la orden en inglés. Después espera sin tocar para que lo haga él/ella.',
-      accionKinestesicaGl: 'Localiza as partes do corpo nomeadas (nariz, orellas, xeonllos, pés) no seu propio corpo.',
-      accionKinestesicaEs: 'Localiza las partes del cuerpo nombradas (nariz, orejas, rodillas, pies) en su propio cuerpo.',
-      criterioExitoGl: 'Toca a parte correcta sen espello tras o modelado inicial do adulto.',
-      criterioExitoEs: 'Toca la parte correcta sin espejo tras el modelado inicial del adulto.',
+      guionAdultoGl:
+          'Pon as mans no teu propio nariz e canta a orde en inglés. Despois agarda sen tocar para que o faga el/ela.',
+      guionAdultoEs:
+          'Pon las manos en tu propia nariz y canta la orden en inglés. Después espera sin tocar para que lo haga él/ella.',
+      accionKinestesicaGl:
+          'Localiza as partes do corpo nomeadas (nariz, orellas, xeonllos, pés) no seu propio corpo.',
+      accionKinestesicaEs:
+          'Localiza las partes del cuerpo nombradas (nariz, orejas, rodillas, pies) en su propio cuerpo.',
+      criterioExitoGl:
+          'Toca a parte correcta sen espello tras o modelado inicial do adulto.',
+      criterioExitoEs:
+          'Toca la parte correcta sin espejo tras el modelado inicial del adulto.',
     ),
     XogoFogarItem(
       id: 'xogo_06_masaxe_72bpm',
@@ -168,14 +202,21 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       materiaisGl: 'Crema hidratante ou aceite suave, toalla tépeda',
       materiaisEs: 'Crema hidratante o aceite suave, toalla tibia',
       obxectivoGl: 'Regulación do ton muscular, calma parasimpática e vínculo',
-      obxectivoEs: 'Regulación del tono muscular, calma parasimpática y vínculo',
+      obxectivoEs:
+          'Regulación del tono muscular, calma parasimpática y vínculo',
       fraseEn: 'Soft and warm, gentle little arms!',
-      guionAdultoGl: 'Acaricia as costas ou as pernas ao compás dun pulso de corazón tranquilo (un toque por segundo).',
-      guionAdultoEs: 'Acaricia la espalda o las piernas al compás de un pulso de corazón tranquilo (un toque por segundo).',
-      accionKinestesicaGl: 'O bebé relaxa os puños, estira as pernas e sorrí relaxado.',
-      accionKinestesicaEs: 'El bebé relaja los puños, estira las piernas y sonríe relajado.',
-      criterioExitoGl: 'Desaparece a tensión nos membros e mantén contacto visual pracenteiro.',
-      criterioExitoEs: 'Desaparece la tensión en los miembros y mantiene contacto visual placentero.',
+      guionAdultoGl:
+          'Acaricia as costas ou as pernas ao compás dun pulso de corazón tranquilo (un toque por segundo).',
+      guionAdultoEs:
+          'Acaricia la espalda o las piernas al compás de un pulso de corazón tranquilo (un toque por segundo).',
+      accionKinestesicaGl:
+          'O bebé relaxa os puños, estira as pernas e sorrí relaxado.',
+      accionKinestesicaEs:
+          'El bebé relaja los puños, estira las piernas y sonríe relajado.',
+      criterioExitoGl:
+          'Desaparece a tensión nos membros e mantén contacto visual pracenteiro.',
+      criterioExitoEs:
+          'Desaparece la tensión en los miembros y mantiene contacto visual placentero.',
     ),
   ];
 
@@ -200,7 +241,9 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       appBar: AppBar(
         leading: const BotonAtras(),
         title: Text(
-          isGl ? 'Xogos e Dinámicas no Fogar' : 'Juegos y Dinámicas en el Hogar',
+          isGl
+              ? 'Xogos e Dinámicas no Fogar'
+              : 'Juegos y Dinámicas en el Hogar',
           style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
         ),
       ),
@@ -264,7 +307,8 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  _buildFiltroChip('todas', isGl ? 'Todas as idades' : 'Todas las edades'),
+                  _buildFiltroChip(
+                      'todas', isGl ? 'Todas as idades' : 'Todas las edades'),
                   const SizedBox(width: 8),
                   _buildFiltroChip('0-2', '0 a 2 anos'),
                   const SizedBox(width: 8),
@@ -364,12 +408,14 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                             ),
                           ),
                           const SizedBox(width: 8),
-                          Text(
-                            '${xogo.duracionMin} min',
-                            style: const TextStyle(
-                              fontSize: 11,
-                              color: AppTheme.textSecondary,
-                              fontWeight: FontWeight.w600,
+                          Flexible(
+                            child: Text(
+                              '${xogo.duracionMin} min',
+                              style: const TextStyle(
+                                fontSize: 11,
+                                color: AppTheme.textSecondary,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
                         ],
@@ -420,17 +466,19 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
+                  const Row(
                     children: [
-                      const Icon(Icons.record_voice_over_outlined,
+                      Icon(Icons.record_voice_over_outlined,
                           size: 16, color: Color(0xFF2B6CB0)),
-                      const SizedBox(width: 6),
-                      Text(
-                        isGl ? 'Comando Oral (Inglés L3)' : 'Comando Oral (Inglés L3)',
-                        style: const TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xFF2B6CB0),
+                      SizedBox(width: 6),
+                      Expanded(
+                        child: Text(
+                          'Comando Oral (Inglés L3)',
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF2B6CB0),
+                          ),
                         ),
                       ),
                     ],
@@ -461,7 +509,8 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
             const SizedBox(height: 2),
             Text(
               isGl ? xogo.guionAdultoGl : xogo.guionAdultoEs,
-              style: const TextStyle(fontSize: 13, color: Color(0xFF2D3748), height: 1.35),
+              style: const TextStyle(
+                  fontSize: 13, color: Color(0xFF2D3748), height: 1.35),
             ),
             const SizedBox(height: 10),
 
@@ -477,7 +526,8 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
             const SizedBox(height: 2),
             Text(
               isGl ? xogo.accionKinestesicaGl : xogo.accionKinestesicaEs,
-              style: const TextStyle(fontSize: 13, color: Color(0xFF4A5568), height: 1.35),
+              style: const TextStyle(
+                  fontSize: 13, color: Color(0xFF4A5568), height: 1.35),
             ),
             const SizedBox(height: 14),
 
@@ -492,12 +542,14 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 2,
+                    crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
-                      Text(
-                        isGl ? 'Observación 1-Toque:' : 'Observación 1-Toque:',
-                        style: const TextStyle(
+                      const Text(
+                        'Observación 1-Toque:',
+                        style: TextStyle(
                           fontSize: 11,
                           fontWeight: FontWeight.bold,
                           color: AppTheme.textSecondary,

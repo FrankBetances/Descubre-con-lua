@@ -390,8 +390,9 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                       label: Text(isGl ? cat['gl']! : cat['es']!),
                       selected: isSel,
                       onSelected: (selected) {
-                        if (selected)
+                        if (selected) {
                           setState(() => _selectedCategory = cat['id']!);
+                        }
                       },
                       selectedColor: AppTheme.primaryVigoBlue,
                       labelStyle: TextStyle(

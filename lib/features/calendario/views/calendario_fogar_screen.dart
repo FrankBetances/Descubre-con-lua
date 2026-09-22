@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
-import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/brand/iconos_contenido.dart';
 import '../../../core/brand/lua_pixel.dart';
 import '../../../core/localization/app_language.dart';
-import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
@@ -400,8 +398,13 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          // Wrap: o título en castelán («CUADRÍCULA ESCOLAR ·
+                          // 20 DÍAS LECTIVOS») máis a suxestión desbordaban
+                          // 271 px a 400 de ancho.
+                          Wrap(
+                            spacing: 8,
+                            runSpacing: 2,
+                            crossAxisAlignment: WrapCrossAlignment.center,
                             children: [
                               Text(
                                 isGl
@@ -578,8 +581,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                     label: Text(diaNome.substring(0, 3)),
                                     selected: isSel,
                                     onSelected: (selected) {
-                                      if (selected)
+                                      if (selected) {
                                         setState(() => _diaSemana = d);
+                                      }
                                     },
                                     selectedColor: AppTheme.primaryVigoBlue,
                                     labelStyle: TextStyle(
@@ -683,8 +687,13 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Cabecera do Día
-            Row(
+            // Cabecera do Día. Wrap: coa escala de texto grande a pastilla
+            // do día da semana e a etiqueta do día do curso non caben na
+            // mesma liña.
+            Wrap(
+              spacing: 8,
+              runSpacing: 4,
+              crossAxisAlignment: WrapCrossAlignment.center,
               children: [
                 Container(
                   padding:
@@ -702,7 +711,8 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                     ),
                   ),
                 ),
-                const Spacer(),
+                // Sen Flexible: dentro dun Wrap non vale, porque Wrap non é
+                // un Flex. O espazo poño o `spacing` do Wrap.
                 Text(
                   'Día ${dia.diaCursoNumero} do curso',
                   style: const TextStyle(
@@ -787,19 +797,19 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    const Row(
                       children: [
-                        const Icon(Icons.sports_gymnastics_rounded,
+                        Icon(Icons.sports_gymnastics_rounded,
                             size: 16, color: Color(0xFF2B6CB0)),
-                        const SizedBox(width: 6),
-                        Text(
-                          isGl
-                              ? 'Acción TPR en Inglés'
-                              : 'Acción TPR en Inglés',
-                          style: const TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF2B6CB0),
+                        SizedBox(width: 6),
+                        Expanded(
+                          child: Text(
+                            'Acción TPR en Inglés',
+                            style: TextStyle(
+                              fontSize: 11,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFF2B6CB0),
+                            ),
                           ),
                         ),
                       ],
@@ -848,14 +858,16 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                       const Icon(Icons.school_outlined,
                           size: 16, color: Color(0xFFC05621)),
                       const SizedBox(width: 6),
-                      Text(
-                        isGl
-                            ? 'Conexión coa Escola Infantil'
-                            : 'Conexión con la Escuela Infantil',
-                        style: const TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xFFC05621),
+                      Expanded(
+                        child: Text(
+                          isGl
+                              ? 'Conexión coa Escola Infantil'
+                              : 'Conexión con la Escuela Infantil',
+                          style: const TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFFC05621),
+                          ),
                         ),
                       ),
                     ],
