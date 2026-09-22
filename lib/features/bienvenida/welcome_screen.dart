@@ -21,6 +21,7 @@ import '../../core/widgets/paxina_sen_scroll.dart';
 class WelcomeScreen extends StatelessWidget {
   final AppLanguage currentLanguage;
   final VoidCallback onToggleLanguage;
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final VoidCallback onStart;
   final VoidCallback onShowCredits;
 
@@ -28,6 +29,7 @@ class WelcomeScreen extends StatelessWidget {
     super.key,
     required this.currentLanguage,
     required this.onToggleLanguage,
+    this.onLanguageChanged,
     required this.onStart,
     required this.onShowCredits,
   });
@@ -102,9 +104,10 @@ class WelcomeScreen extends StatelessWidget {
                     children: [
                       Align(
                         alignment: Alignment.centerRight,
-                        child: _LanguagePill(
-                          language: currentLanguage,
-                          onTap: onToggleLanguage,
+                        child: _LanguageSelector(
+                          currentLanguage: currentLanguage,
+                          onToggleLanguage: onToggleLanguage,
+                          onLanguageChanged: onLanguageChanged,
                         ),
                       ),
                       Column(
@@ -233,40 +236,134 @@ class _Blob extends StatelessWidget {
   }
 }
 
-/// Conmutador de lengua. Va arriba porque la mestra cambia de lingua delante
-/// de las crianzas y tiene que encontrarlo sin buscar.
-class _LanguagePill extends StatelessWidget {
-  final AppLanguage language;
-  final VoidCallback onTap;
+/// Conmutador de lingua accesible e intuitivo para a persoa adulta / mestra.
+///
+/// Mostra os dous códigos de idioma (GL / ES) xunto a unha icona global de lingua,
+/// facendo evidente o idioma activo e permitindo cambiar cun só toque.
+/// Cumpre cos criterios de contraste AA e área táctil accesible (48px).
+class _LanguageSelector extends StatelessWidget {
+  final AppLanguage currentLanguage;
+  final VoidCallback onToggleLanguage;
+  final ValueChanged<AppLanguage>? onLanguageChanged;
 
-  const _LanguagePill({required this.language, required this.onTap});
+  const _LanguageSelector({
+    required this.currentLanguage,
+    required this.onToggleLanguage,
+    this.onLanguageChanged,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final isGl = currentLanguage == AppLanguage.gl;
+
+    return Semantics(
+      container: true,
+      label: isGl
+          ? 'Selector de idioma. Galego activo.'
+          : 'Selector de idioma. Castelán activo.',
+      child: Container(
+        constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+        padding: const EdgeInsets.all(4.0),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(AppTheme.radiusButton),
+          boxShadow: const [
+            BoxShadow(
+              color: Color(0x1A000000),
+              offset: Offset(0, 2),
+              blurRadius: 8,
+            ),
+          ],
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              child: Icon(
+                Icons.language_rounded,
+                size: 20.0,
+                color: AppTheme.primaryInk,
+              ),
+            ),
+            Container(
+              width: 1.0,
+              height: 20.0,
+              color: AppTheme.border,
+            ),
+            const SizedBox(width: 4.0),
+            _buildSegment(
+              context: context,
+              lang: AppLanguage.gl,
+              label: 'GL',
+              fullName: 'Galego',
+              isSelected: isGl,
+            ),
+            const SizedBox(width: 4.0),
+            _buildSegment(
+              context: context,
+              lang: AppLanguage.es,
+              label: 'ES',
+              fullName: 'Castelán',
+              isSelected: !isGl,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSegment({
+    required BuildContext context,
+    required AppLanguage lang,
+    required String label,
+    required String fullName,
+    required bool isSelected,
+  }) {
     return Semantics(
       button: true,
-      label: language == AppLanguage.gl
-          ? 'Cambiar a castelán'
-          : 'Cambiar a galego',
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppTheme.radiusButton),
-        child: Container(
-          constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
-          padding: const EdgeInsets.symmetric(
-            horizontal: AppTheme.spaceLg,
-            vertical: AppTheme.spaceSm,
-          ),
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(AppTheme.radiusButton),
-          ),
-          child: Text(
-            language.flagLabel,
-            style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                  color: AppTheme.primaryInk,
-                ),
+      selected: isSelected,
+      label: isSelected ? fullName : 'Cambiar a $fullName',
+      child: Tooltip(
+        message: fullName,
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: () {
+              if (onLanguageChanged != null) {
+                if (lang != currentLanguage) {
+                  onLanguageChanged!(lang);
+                }
+              } else {
+                onToggleLanguage();
+              }
+            },
+            borderRadius: BorderRadius.circular(10.0),
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 150),
+              constraints: const BoxConstraints(
+                minHeight: 38.0,
+                minWidth: 42.0,
+              ),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 10.0,
+                vertical: 6.0,
+              ),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: isSelected ? AppTheme.primaryInk : Colors.transparent,
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              child: Text(
+                label,
+                style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                      color: isSelected ? Colors.white : AppTheme.textSecondary,
+                      fontWeight:
+                          isSelected ? FontWeight.w800 : FontWeight.w600,
+                      fontSize: 14.0,
+                    ),
+              ),
+            ),
           ),
         ),
       ),

@@ -130,6 +130,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
         '/': (context) => WelcomeScreen(
               currentLanguage: _currentLanguage,
               onToggleLanguage: _toggleLanguage,
+              onLanguageChanged: _setLanguage,
               onStart: () =>
                   Navigator.of(context).pushReplacementNamed('/home'),
               onShowCredits: () => Navigator.of(context).pushNamed('/creditos'),

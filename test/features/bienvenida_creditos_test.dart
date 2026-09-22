@@ -85,6 +85,27 @@ void main() {
       expect(toggles, 1);
     });
 
+    testWidgets('o selector mostra GL e ES e permite cambiar cun toque',
+        (tester) async {
+      AppLanguage? changed;
+      await tester.pumpWidget(_wrap(WelcomeScreen(
+        currentLanguage: AppLanguage.gl,
+        onToggleLanguage: () {},
+        onLanguageChanged: (lang) => changed = lang,
+        onStart: () {},
+        onShowCredits: () {},
+      )));
+      await tester.pumpAndSettle();
+
+      expect(find.text('GL'), findsOneWidget);
+      expect(find.text('ES'), findsOneWidget);
+      expect(find.byIcon(Icons.language_rounded), findsOneWidget);
+
+      await tester.tap(find.text('ES'));
+      await tester.pump();
+      expect(changed, AppLanguage.es);
+    });
+
     testWidgets('cabe con la escala de texto grande del sistema',
         (tester) async {
       // El defecto típico de esta app: una cadena galega más larga con el texto
