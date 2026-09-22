@@ -2,9 +2,9 @@
  "lang": "gl",
  "voice": "Celtia · Proxecto Nós (proxectonos)",
  "peakDbfs": -3.0,
- "entries": 1069,
- "totalBytes": 31770891,
- "totalSeconds": 5325.87,
+ "entries": 1077,
+ "totalBytes": 31815233,
+ "totalSeconds": 5331.64,
  "files": [
   {
    "id": "gl_slow_00222185_5",
@@ -49,6 +49,12 @@
    "bytes": 5013
   },
   {
+   "id": "gl_slow_1f518b1d_4",
+   "file": "gl_slow_1f518b1d_4.m4a",
+   "seconds": 0.83,
+   "bytes": 6366
+  },
+  {
    "id": "gl_slow_26ab0588_3",
    "file": "gl_slow_26ab0588_3.m4a",
    "seconds": 0.68,
@@ -71,6 +77,12 @@
    "file": "gl_slow_3bbeb7e0_7.m4a",
    "seconds": 1.02,
    "bytes": 7038
+  },
+  {
+   "id": "gl_slow_42a7ed2b_3",
+   "file": "gl_slow_42a7ed2b_3.m4a",
+   "seconds": 0.63,
+   "bytes": 6019
   },
   {
    "id": "gl_slow_44c0d541_3",
@@ -163,10 +175,22 @@
    "bytes": 4124
   },
   {
+   "id": "gl_slow_8ec07ec6_3",
+   "file": "gl_slow_8ec07ec6_3.m4a",
+   "seconds": 0.69,
+   "bytes": 4527
+  },
+  {
    "id": "gl_slow_8f24f378_7",
    "file": "gl_slow_8f24f378_7.m4a",
    "seconds": 1.09,
    "bytes": 7195
+  },
+  {
+   "id": "gl_slow_8f56e0cb_3",
+   "file": "gl_slow_8f56e0cb_3.m4a",
+   "seconds": 0.64,
+   "bytes": 5060
   },
   {
    "id": "gl_slow_944de63e_6",
@@ -217,6 +241,12 @@
    "bytes": 7404
   },
   {
+   "id": "gl_slow_b45aef8c_3",
+   "file": "gl_slow_b45aef8c_3.m4a",
+   "seconds": 0.53,
+   "bytes": 5386
+  },
+  {
    "id": "gl_slow_b47d0812_6",
    "file": "gl_slow_b47d0812_6.m4a",
    "seconds": 1.06,
@@ -239,6 +269,18 @@
    "file": "gl_slow_c2d08ad4_7.m4a",
    "seconds": 1.15,
    "bytes": 7938
+  },
+  {
+   "id": "gl_slow_c6c2bb92_4",
+   "file": "gl_slow_c6c2bb92_4.m4a",
+   "seconds": 0.71,
+   "bytes": 5223
+  },
+  {
+   "id": "gl_slow_c7ff6392_2",
+   "file": "gl_slow_c7ff6392_2.m4a",
+   "seconds": 0.95,
+   "bytes": 6419
   },
   {
    "id": "gl_slow_c8465376_4",
@@ -281,6 +323,12 @@
    "file": "gl_slow_d831d4de_7.m4a",
    "seconds": 1.12,
    "bytes": 7563
+  },
+  {
+   "id": "gl_slow_dc04003c_2",
+   "file": "gl_slow_dc04003c_2.m4a",
+   "seconds": 0.79,
+   "bytes": 5342
   },
   {
    "id": "gl_slow_e815caba_5",
