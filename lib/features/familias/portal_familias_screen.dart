@@ -359,6 +359,108 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 ),
               ),
             ),
+            const SizedBox(height: 14.0),
+
+            // Card Destacada: Ritmo de 5 Palabras Diarias e Reto TPR (Zero-Screen)
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: const Color(0xFFFAF5FF),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(color: const Color(0xFFE9D8FD), width: 1.5),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 8, vertical: 3),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF805AD5),
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Text(
+                          isGl ? 'RITMO DIARIO TPR' : 'RITMO DIARIO TPR',
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 0.6,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          isGl
+                              ? '5 palabras novas / día · 20 / semana'
+                              : '5 palabras nuevas / día · 20 / semana',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF553C9A),
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    isGl
+                        ? 'Modelo de adquisición natural (CDI MacArthur-Bates & Rescorla): luns a xoves 5 palabras con modelado motriz corporal; venres, Gran Reto Freeze acumulativo sen pantallas.'
+                        : 'Modelo de adquisición natural (CDI MacArthur-Bates & Rescorla): lunes a jueves 5 palabras con modelado motriz corporal; viernes, Gran Reto Freeze acumulativo sin pantallas.',
+                    style: const TextStyle(
+                      fontSize: 12.5,
+                      color: Color(0xFF4A5568),
+                      height: 1.35,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: OutlinedButton.icon(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => XogosFogarScreen(
+                              initialLanguage: _language,
+                              audioService: widget.audioService,
+                            ),
+                          ),
+                        );
+                      },
+                      icon: const Icon(Icons.sports_gymnastics_rounded,
+                          size: 16, color: Color(0xFF6B46C1)),
+                      label: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          isGl
+                              ? 'Ver xogos e dinámicas de 3 min'
+                              : 'Ver juegos y dinámicas de 3 min',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF6B46C1),
+                          ),
+                        ),
+                      ),
+                      style: OutlinedButton.styleFrom(
+                        side: const BorderSide(color: Color(0xFFD6BCFA)),
+                        backgroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 8),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
             const SizedBox(height: 18.0),
 
             // Selector e Filtros de Dinámicas e Exercicios
@@ -671,83 +773,95 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   }) {
     return Card(
       elevation: 0.5,
+      clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
         side: const BorderSide(color: AppTheme.border),
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  radius: 20,
-                  backgroundColor: iconBg,
-                  child: Icon(icon, color: iconColor, size: 22),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        badge.toUpperCase(),
-                        style: TextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.w800,
-                          color: iconColor,
-                          letterSpacing: 0.6,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        title,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: AppTheme.primaryInk,
-                        ),
-                      ),
-                    ],
+      child: InkWell(
+        borderRadius: BorderRadius.circular(16),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 20,
+                    backgroundColor: iconBg,
+                    child: Icon(icon, color: iconColor, size: 22),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            Text(
-              description,
-              style: const TextStyle(
-                fontSize: 13,
-                color: Color(0xFF4A5568),
-                height: 1.4,
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          badge.toUpperCase(),
+                          style: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w800,
+                            color: iconColor,
+                            letterSpacing: 0.6,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          title,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: AppTheme.primaryInk,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-            ),
-            const SizedBox(height: 14),
-            SizedBox(
-              width: double.infinity,
-              height: 42,
-              child: ElevatedButton(
-                onPressed: onTap,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: iconColor,
-                  foregroundColor: Colors.white,
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-                child: Text(
-                  buttonText,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.bold,
-                  ),
+              const SizedBox(height: 10),
+              Text(
+                description,
+                style: const TextStyle(
+                  fontSize: 13,
+                  color: Color(0xFF4A5568),
+                  height: 1.4,
                 ),
               ),
-            ),
-          ],
+              const SizedBox(height: 14),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: onTap,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: iconColor,
+                    foregroundColor: Colors.white,
+                    elevation: 0,
+                    minimumSize: const Size(double.infinity, 44),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 10,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      buttonText,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

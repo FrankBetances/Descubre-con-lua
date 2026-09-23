@@ -218,7 +218,10 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                         return Padding(
                           padding: const EdgeInsets.only(right: 8),
                           child: ChoiceChip(
-                            label: Text(isGl ? c['gl']! : c['es']!),
+                            label: FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(isGl ? c['gl']! : c['es']!),
+                            ),
                             selected: isSel,
                             onSelected: (selected) {
                               if (selected && _cursoSeleccionado != c['id']) {
@@ -241,7 +244,11 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   ),
                   const SizedBox(height: 10),
 
-                  // 2. Selector Horizontal dos 10 Meses Lectivos
+                  // 2. Selector de Trimestres Curriculares (Estruturación das 3 Etapas)
+                  _buildTrimesterBar(isGl),
+                  const SizedBox(height: 8),
+
+                  // 3. Selector Horizontal dos 10 Meses Lectivos
                   SizedBox(
                     height: 38,
                     child: ListView.separated(
@@ -254,7 +261,10 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                             ? _mesesNomes[index]['gl']!
                             : _mesesNomes[index]['es']!;
                         return ChoiceChip(
-                          label: Text(mesNome),
+                          label: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(mesNome),
+                          ),
                           selected: isSel,
                           onSelected: (selected) {
                             if (selected && _mesIndex != index) {
@@ -497,14 +507,17 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                           ),
                                           child: Column(
                                             children: [
-                                              Text(
-                                                '${diaGlobalIdx + 1}',
-                                                style: TextStyle(
-                                                  fontSize: 12,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: isSelected
-                                                      ? Colors.white
-                                                      : AppTheme.textPrimary,
+                                              FittedBox(
+                                                fit: BoxFit.scaleDown,
+                                                child: Text(
+                                                  '${diaGlobalIdx + 1}',
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: isSelected
+                                                        ? Colors.white
+                                                        : AppTheme.textPrimary,
+                                                  ),
                                                 ),
                                               ),
                                               const SizedBox(height: 2),
@@ -537,67 +550,80 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                       color: Colors.white,
                       padding: const EdgeInsets.all(12),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
-                            children: List.generate(4, (index) {
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: List.generate(4, (index) {
                               final s = index + 1;
                               final isSel = _semana == s;
-                              return Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.only(
-                                      right: index < 3 ? 6.0 : 0.0),
-                                  child: ChoiceChip(
-                                    label: Text(
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 8.0),
+                                child: ChoiceChip(
+                                  label: FittedBox(
+                                    fit: BoxFit.scaleDown,
+                                    child: Text(
                                         '${isGl ? "Semana" : "Semana"} $s'),
-                                    selected: isSel,
-                                    onSelected: (selected) {
-                                      if (selected) setState(() => _semana = s);
-                                    },
-                                    selectedColor: AppTheme.primaryVigoBlue,
-                                    labelStyle: TextStyle(
-                                      color: isSel
-                                          ? Colors.white
-                                          : AppTheme.textPrimary,
-                                      fontSize: 11,
-                                    ),
+                                  ),
+                                  selected: isSel,
+                                  onSelected: (selected) {
+                                    if (selected) setState(() => _semana = s);
+                                  },
+                                  selectedColor: AppTheme.primaryVigoBlue,
+                                  labelStyle: TextStyle(
+                                    color: isSel
+                                        ? Colors.white
+                                        : AppTheme.textPrimary,
+                                    fontWeight: isSel
+                                        ? FontWeight.bold
+                                        : FontWeight.normal,
+                                    fontSize: 12,
                                   ),
                                 ),
-                              );
+                               );
                             }),
                           ),
-                          const SizedBox(height: 8),
-                          Row(
+                        ),
+                        const SizedBox(height: 8),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
                             children: List.generate(5, (index) {
                               final d = index + 1;
                               final isSel = _diaSemana == d;
                               final diaNome = isGl
                                   ? _diasSemanaNomes[index]['gl']!
                                   : _diasSemanaNomes[index]['es']!;
-                              return Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.only(
-                                      right: index < 4 ? 6.0 : 0.0),
-                                  child: ChoiceChip(
-                                    label: Text(diaNome.substring(0, 3)),
-                                    selected: isSel,
-                                    onSelected: (selected) {
-                                      if (selected) {
-                                        setState(() => _diaSemana = d);
-                                      }
-                                    },
-                                    selectedColor: AppTheme.primaryVigoBlue,
-                                    labelStyle: TextStyle(
-                                      color: isSel
-                                          ? Colors.white
-                                          : AppTheme.textPrimary,
-                                      fontSize: 11,
-                                    ),
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 8.0),
+                                child: ChoiceChip(
+                                  label: FittedBox(
+                                    fit: BoxFit.scaleDown,
+                                    child: Text(diaNome),
+                                  ),
+                                  selected: isSel,
+                                  onSelected: (selected) {
+                                    if (selected) {
+                                      setState(() => _diaSemana = d);
+                                    }
+                                  },
+                                  selectedColor: AppTheme.primaryVigoBlue,
+                                  labelStyle: TextStyle(
+                                    color: isSel
+                                        ? Colors.white
+                                        : AppTheme.textPrimary,
+                                    fontWeight: isSel
+                                        ? FontWeight.bold
+                                        : FontWeight.normal,
+                                    fontSize: 12,
                                   ),
                                 ),
                               );
                             }),
                           ),
-                        ],
+                        ),
+                      ],
                       ),
                     ),
                     const SizedBox(height: 14),
@@ -842,6 +868,10 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
               const SizedBox(height: 14),
             ],
 
+            // Ritmo Acumulativo 5 Palabras / Día (CDI MacArthur-Bates & Rescorla)
+            _buildTprRhythmCard(dia, isGl),
+            const SizedBox(height: 14),
+
             // Conexión coa Escola Infantil
             Container(
               padding: const EdgeInsets.all(12),
@@ -909,9 +939,11 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
             const SizedBox(height: 18),
 
             // Botón 1-Tap para Marcar como Feito Hoxe
-            SizedBox(
-              width: double.infinity,
-              height: AppTheme.touchMin,
+            ConstrainedBox(
+              constraints: const BoxConstraints(
+                minWidth: double.infinity,
+                minHeight: AppTheme.touchMin,
+              ),
               child: ElevatedButton.icon(
                 onPressed: () {
                   widget.store.registrarHogar(DateTime.now());
@@ -931,21 +963,26 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   feitoHoxe ? Icons.check_circle : Icons.check_circle_outline,
                   size: 20,
                 ),
-                label: Text(
-                  feitoHoxe
-                      ? (isGl
-                          ? 'Xogo Feito Hoxe no Fogar'
-                          : 'Juego Hecho Hoy en el Hogar')
-                      : (isGl
-                          ? 'Marcar como Feito Hoxe'
-                          : 'Marcar como Hecho Hoy'),
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                label: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    feitoHoxe
+                        ? (isGl
+                            ? 'Xogo Feito Hoxe no Fogar'
+                            : 'Juego Hecho Hoy en el Hogar')
+                        : (isGl
+                            ? 'Marcar como Feito Hoxe'
+                            : 'Marcar como Hecho Hoy'),
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: feitoHoxe
                       ? const Color(0xFF2F855A)
                       : AppTheme.primaryVigoBlue,
                   foregroundColor: Colors.white,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
@@ -954,6 +991,225 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  int get _trimestreActual {
+    if (_mesIndex <= 3) return 0;
+    if (_mesIndex <= 6) return 1;
+    return 2;
+  }
+
+  Widget _buildTrimesterBar(bool isGl) {
+    final trimestreActual = _trimestreActual;
+    final trimestres = [
+      (
+        nome: isGl ? '1.º Outono' : '1.º Otoño',
+        meses: isGl ? 'Set - Dec (320 p.)' : 'Sep - Dic (320 p.)',
+        inicioMes: 0,
+      ),
+      (
+        nome: isGl ? '2.º Inverno' : '2.º Invierno',
+        meses: isGl ? 'Xan - Mar (240 p.)' : 'Ene - Mar (240 p.)',
+        inicioMes: 4,
+      ),
+      (
+        nome: isGl ? '3.º Primavera' : '3.º Primavera',
+        meses: isGl ? 'Abr - Xuñ (240 p.)' : 'Abr - Jun (240 p.)',
+        inicioMes: 7,
+      ),
+    ];
+
+    return Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+        color: const Color(0xFFEDF2F7),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Row(
+        children: List.generate(3, (i) {
+          final t = trimestres[i];
+          final isActivo = trimestreActual == i;
+          return Expanded(
+            child: InkWell(
+              onTap: () {
+                if (_mesIndex != t.inicioMes) {
+                  setState(() => _mesIndex = t.inicioMes);
+                  _cargarDias();
+                }
+              },
+              borderRadius: BorderRadius.circular(9),
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
+                decoration: BoxDecoration(
+                  color: isActivo ? Colors.white : Colors.transparent,
+                  borderRadius: BorderRadius.circular(9),
+                  boxShadow: isActivo
+                      ? const [
+                          BoxShadow(
+                            color: Color(0x14000000),
+                            blurRadius: 3,
+                            offset: Offset(0, 1),
+                          )
+                        ]
+                      : null,
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        t.nome,
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight:
+                              isActivo ? FontWeight.bold : FontWeight.w600,
+                          color: isActivo
+                              ? AppTheme.primaryInk
+                              : AppTheme.textSecondary,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 1),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        t.meses,
+                        style: TextStyle(
+                          fontSize: 9,
+                          color: isActivo
+                              ? AppTheme.primaryVigoBlue
+                              : AppTheme.textMuted,
+                          fontWeight:
+                              isActivo ? FontWeight.w700 : FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        }),
+      ),
+    );
+  }
+
+  Widget _buildTprRhythmCard(DiaCalendarioDual dia, bool isGl) {
+    final dNum = dia.diaSemanaNumero;
+    final String bloque;
+    final String carga;
+    final String detalle;
+    final Color cor;
+
+    switch (dNum) {
+      case 1:
+        bloque = isGl
+            ? 'Bloque A · 5 Palabras Novas'
+            : 'Bloque A · 5 Palabras Nuevas';
+        carga = isGl ? 'Carga: 5 palabras' : 'Carga: 5 palabras';
+        detalle = isGl
+            ? 'Introdución das primeiras 5 accións/termos da semana con modelado motor.'
+            : 'Introducción de las primeras 5 acciones/términos de la semana con modelado motor.';
+        cor = const Color(0xFF3182CE);
+        break;
+      case 2:
+        bloque = isGl
+            ? 'Bloque B · 5 Novas + Repaso A'
+            : 'Bloque B · 5 Nuevas + Repaso A';
+        carga = isGl ? 'Carga: 10 palabras' : 'Carga: 10 palabras';
+        detalle = isGl
+            ? '5 palabras novas e repaso das 5 de onte. Doble asociación auditiva e táctil.'
+            : '5 palabras nuevas y repaso de las 5 de ayer. Doble asociación auditiva y táctil.';
+        cor = const Color(0xFF2B6CB0);
+        break;
+      case 3:
+        bloque = isGl
+            ? 'Bloque C · 5 Novas + Repaso A-B'
+            : 'Bloque C · 5 Nuevas + Repaso A-B';
+        carga = isGl ? 'Carga: 15 palabras' : 'Carga: 15 palabras';
+        detalle = isGl
+            ? '5 palabras novas e repaso en cadea de A e B. Fortalecemento da memoria léxica.'
+            : '5 palabras nuevas y repaso en cadena de A y B. Fortalecimiento de la memoria léxica.';
+        cor = const Color(0xFF2C5282);
+        break;
+      case 4:
+        bloque = isGl
+            ? 'Bloque D · 5 Novas + Repaso A-C'
+            : 'Bloque D · 5 Nuevas + Repaso A-C';
+        carga = isGl ? 'Carga: 20 palabras' : 'Carga: 20 palabras';
+        detalle = isGl
+            ? 'Carga acumulativa completa (20 termos). O adulto lidera a acción sen presión de emitir voz.'
+            : 'Carga acumulativa completa (20 términos). El adulto lidera la acción sin presión de emitir voz.';
+        cor = const Color(0xFF1A365D);
+        break;
+      default:
+        bloque = isGl
+            ? 'Gran Reto Semanal «Freeze»'
+            : 'Gran Reto Semanal «Freeze»';
+        carga =
+            isGl ? 'Repaso Activo: 20 palabras' : 'Repaso Activo: 20 palabras';
+        detalle = isGl
+            ? '0 palabras novas. Xogo de conxelación e reto corporal coas 20 palabras da semana.'
+            : '0 palabras nuevas. Juego de congelación y reto corporal con las 20 palabras de la semana.';
+        cor = const Color(0xFF805AD5);
+    }
+
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: const Color(0xFFF7FAFC),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: const Color(0xFFE2E8F0)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.directions_run_rounded, size: 16, color: cor),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  bloque,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    color: cor,
+                  ),
+                ),
+              ),
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                decoration: BoxDecoration(
+                  color: cor.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: Text(
+                  carga,
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w700,
+                    color: cor,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            detalle,
+            style: const TextStyle(
+              fontSize: 11,
+              color: AppTheme.textSecondary,
+              height: 1.3,
+            ),
+          ),
+        ],
       ),
     );
   }

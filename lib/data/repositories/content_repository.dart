@@ -14,6 +14,7 @@ import '../models/estrategia_model.dart';
 import '../models/lamina_model.dart';
 import '../models/phonics_model.dart';
 import '../models/progresion_model.dart';
+import '../models/tpr_curriculum_scheduler.dart';
 // `Cuento` y `CuentoPagina` existen DOS veces en el proyecto y no son la misma
 // cosa: en unidad_model.dart son el cuento que vive DENTRO de una unidad de la
 // asamblea (sin id, con páginas de la unidad), y en cuento_model.dart son el
@@ -877,12 +878,41 @@ class ContentRepository {
     return List.unmodifiable(_curriculo50Meses);
   }
 
+  // --- TPR CURRICULUM SEMANA (5 PALABRAS DIARIAS) ---
+  static const String tprSemana01AssetPath = 'assets/content/semana_01.json';
+  TprSemanaContenido? _tprSemana01;
+
+  /// Loads the TPR weekly schedule with 5 daily words and cumulative reinforcement.
+  Future<TprSemanaContenido?> loadTprSemana([int semanaNum = 1]) async {
+    if (_tprSemana01 == null) {
+      try {
+        final raw = await _loader.loadRawString(tprSemana01AssetPath);
+        final dynamic decoded = jsonDecode(raw);
+        if (decoded is Map<String, dynamic>) {
+          _tprSemana01 = TprSemanaContenido.fromJson(decoded);
+        } else if (decoded is Map) {
+          _tprSemana01 = TprSemanaContenido.fromJson(
+            Map<String, dynamic>.from(decoded),
+          );
+        }
+      } catch (e) {
+        _loadErrors.add(ContentLoadFailure(tprSemana01AssetPath, e.toString()));
+      }
+    }
+    return _tprSemana01;
+  }
+
   // --- IN-MEMORY & TEST HELPER METHODS ---
 
   /// Adds or updates an [Unidad] directly in memory (for tests and mocking).
   void addUnidad(Unidad unidad) {
     _unidadesById[unidad.id] = unidad;
     _isInitialized = true;
+  }
+
+  /// Sets [TprSemanaContenido] directly in memory (for tests and mocking).
+  void addTprSemana(TprSemanaContenido semana) {
+    _tprSemana01 = semana;
   }
 
   /// Adds or updates a [Capsula] directly in memory (for tests and mocking).

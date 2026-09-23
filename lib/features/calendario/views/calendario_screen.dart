@@ -684,51 +684,164 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     );
   }
 
-  Widget _buildMonthSelector(ThemeData theme) {
-    return SizedBox(
-      height: 44,
-      child: ListView.separated(
-        key: const Key('selector_meses'),
-        scrollDirection: Axis.horizontal,
-        itemCount: _meses.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 8),
-        itemBuilder: (context, index) {
-          final mesItem = _meses[index];
-          final isSelected = index == _mesSeleccionadoIndex;
+  int get _trimestreActual {
+    if (_mesSeleccionadoIndex <= 3) return 0;
+    if (_mesSeleccionadoIndex <= 6) return 1;
+    return 2;
+  }
 
-          return ChoiceChip(
-            key: _clavesPastilla[index],
-            label: Text(mesItem.nombreMes.resolve(_language)),
-            selected: isSelected,
-            onSelected: (selected) {
-              if (!selected) return;
-              // Las pastillas son el atajo para saltar a un mes lejano; el
-              // gesto normal es deslizar la tarjeta. Mueven LA PÁGINA, no un
-              // estado aparte: si cada una llevara su cuenta, la pastilla y la
-              // tarjeta acabarían enseñando meses distintos.
-              _paginas?.animateToPage(
-                index,
-                duration: const Duration(milliseconds: 260),
-                curve: Curves.easeOutCubic,
-              );
-              setState(() => _mesSeleccionadoIndex = index);
-              _traerPastillaALaVista(index);
-            },
-            selectedColor: AppTheme.primary,
-            backgroundColor: Colors.white,
-            labelStyle: TextStyle(
-              color: isSelected ? Colors.white : AppTheme.textPrimary,
-              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-            ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-              side: BorderSide(
-                color: isSelected ? AppTheme.primary : AppTheme.border,
+  Widget _buildTrimesterSelector(ThemeData theme) {
+    final isGl = _language == AppLanguage.gl;
+    final trimestreActual = _trimestreActual;
+    final trimestres = [
+      (
+        nome: isGl ? '1.º Outono' : '1.º Otoño',
+        sub: isGl ? 'Set - Dec (320 p.)' : 'Sep - Dic (320 p.)',
+        inicioMes: 0,
+      ),
+      (
+        nome: isGl ? '2.º Inverno' : '2.º Invierno',
+        sub: isGl ? 'Xan - Mar (240 p.)' : 'Ene - Mar (240 p.)',
+        inicioMes: 4,
+      ),
+      (
+        nome: isGl ? '3.º Primavera' : '3.º Primavera',
+        sub: isGl ? 'Abr - Xuñ (240 p.)' : 'Abr - Jun (240 p.)',
+        inicioMes: 7,
+      ),
+    ];
+
+    return Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+        color: const Color(0xFFEDF2F7),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Row(
+        children: List.generate(3, (i) {
+          final t = trimestres[i];
+          final isActivo = trimestreActual == i;
+          return Expanded(
+            child: InkWell(
+              onTap: () {
+                final targetMes = t.inicioMes;
+                _paginas?.animateToPage(
+                  targetMes,
+                  duration: const Duration(milliseconds: 260),
+                  curve: Curves.easeOutCubic,
+                );
+                setState(() => _mesSeleccionadoIndex = targetMes);
+                _traerPastillaALaVista(targetMes);
+              },
+              borderRadius: BorderRadius.circular(9),
+              child: Container(
+                padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
+                decoration: BoxDecoration(
+                  color: isActivo ? Colors.white : Colors.transparent,
+                  borderRadius: BorderRadius.circular(9),
+                  boxShadow: isActivo
+                      ? const [
+                          BoxShadow(
+                            color: Color(0x14000000),
+                            blurRadius: 3,
+                            offset: Offset(0, 1),
+                          )
+                        ]
+                      : null,
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        t.nome,
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight:
+                              isActivo ? FontWeight.bold : FontWeight.w600,
+                          color: isActivo
+                              ? AppTheme.primaryInk
+                              : AppTheme.textSecondary,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 1),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        t.sub,
+                        style: TextStyle(
+                          fontSize: 9,
+                          color:
+                              isActivo ? AppTheme.primary : AppTheme.textMuted,
+                          fontWeight:
+                              isActivo ? FontWeight.w700 : FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           );
-        },
+        }),
       ),
+    );
+  }
+
+  Widget _buildMonthSelector(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _buildTrimesterSelector(theme),
+        const SizedBox(height: 6),
+        SizedBox(
+          height: 44,
+          child: ListView.separated(
+            key: const Key('selector_meses'),
+            scrollDirection: Axis.horizontal,
+            itemCount: _meses.length,
+            separatorBuilder: (_, __) => const SizedBox(width: 8),
+            itemBuilder: (context, index) {
+              final mesItem = _meses[index];
+              final isSelected = index == _mesSeleccionadoIndex;
+
+              return ChoiceChip(
+                key: _clavesPastilla[index],
+                label: Text(mesItem.nombreMes.resolve(_language)),
+                selected: isSelected,
+                onSelected: (selected) {
+                  if (!selected) return;
+                  // Las pastillas son el atajo para saltar a un mes lejano; el
+                  // gesto normal es deslizar la tarjeta. Mueven LA PÁGINA, no un
+                  // estado aparte: si cada una llevara su cuenta, la pastilla y la
+                  // tarjeta acabarían enseñando meses distintos.
+                  _paginas?.animateToPage(
+                    index,
+                    duration: const Duration(milliseconds: 260),
+                    curve: Curves.easeOutCubic,
+                  );
+                  setState(() => _mesSeleccionadoIndex = index);
+                  _traerPastillaALaVista(index);
+                },
+                selectedColor: AppTheme.primary,
+                backgroundColor: Colors.white,
+                labelStyle: TextStyle(
+                  color: isSelected ? Colors.white : AppTheme.textPrimary,
+                  fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  side: BorderSide(
+                    color: isSelected ? AppTheme.primary : AppTheme.border,
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 
@@ -952,6 +1065,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 color: AppTheme.primaryDark,
                 theme: theme,
               ),
+              const SizedBox(height: 14),
+              _buildMatrizSemanalDocente(mes, theme),
             ] else ...[
               TemporizadorSutilWidget(
                 minutosMin: 3,
@@ -988,6 +1103,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   language: _language,
                 ),
               ],
+              const SizedBox(height: 14),
+              _buildMatrizSemanalFogar(mes, theme),
               const SizedBox(height: 12),
               InkWell(
                 key: const Key('boton_guia_atencion'),
@@ -1051,6 +1168,213 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             if (_esDocente) ..._buildAsambleasDoDia(mes),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildMatrizSemanalDocente(MesCurricular mes, ThemeData theme) {
+    final isGl = _language == AppLanguage.gl;
+    final diasMatriz = [
+      (
+        dia: isGl ? 'Luns' : 'Lunes',
+        blq: isGl ? 'Bloque A (5 novas)' : 'Bloque A (5 nuevas)',
+        carga: '5 p.',
+        cor: const Color(0xFF3182CE),
+      ),
+      (
+        dia: isGl ? 'Martes' : 'Martes',
+        blq: isGl ? 'Bloque B (5 n.) + Repaso A' : 'Bloque B (5 n.) + Repaso A',
+        carga: '10 p.',
+        cor: const Color(0xFF2B6CB0),
+      ),
+      (
+        dia: isGl ? 'Mércores' : 'Miércoles',
+        blq: isGl ? 'Bloque C (5 n.) + Repaso A-B' : 'Bloque C (5 n.) + Repaso A-B',
+        carga: '15 p.',
+        cor: const Color(0xFF2C5282),
+      ),
+      (
+        dia: isGl ? 'Xoves' : 'Jueves',
+        blq: isGl ? 'Bloque D (5 n.) + Repaso A-C' : 'Bloque D (5 n.) + Repaso A-C',
+        carga: '20 p.',
+        cor: const Color(0xFF1A365D),
+      ),
+      (
+        dia: isGl ? 'Venres' : 'Viernes',
+        blq: isGl ? 'Reto Semanal «Freeze» (20 p.)' : 'Reto Semanal «Freeze» (20 p.)',
+        carga: '20 p.',
+        cor: const Color(0xFF805AD5),
+      ),
+    ];
+
+    return Container(
+      padding: const EdgeInsets.all(AppTheme.spaceMd),
+      decoration: BoxDecoration(
+        color: const Color(0xFFF7FAFC),
+        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+        border: Border.all(color: const Color(0xFFE2E8F0)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.psychology_outlined,
+                  size: 20, color: AppTheme.primaryDark),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  isGl
+                      ? 'RITMO SEMANAL TPR · 5 PALABRAS/DÍA'
+                      : 'RITMO SEMANAL TPR · 5 PALABRAS/DÍA',
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    fontWeight: FontWeight.w800,
+                    color: AppTheme.primaryDark,
+                    letterSpacing: 0.8,
+                  ),
+                ),
+              ),
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                  color: AppTheme.primaryTint,
+                  borderRadius: BorderRadius.circular(10),
+                  border:
+                      Border.all(color: AppTheme.primary.withValues(alpha: 0.3)),
+                ),
+                child: Text(
+                  isGl ? '80 p./mes' : '80 p./mes',
+                  style: const TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.bold,
+                    color: AppTheme.primaryDark,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            isGl
+                ? 'Distribución acumulativa segundo MacArthur-Bates & Rescorla. O venres consolida o léxico semanal con xogo sensoriomotriz.'
+                : 'Distribución acumulativa según MacArthur-Bates & Rescorla. El viernes consolida el léxico semanal con juego sensoriomotriz.',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: AppTheme.textSecondary,
+              height: 1.3,
+            ),
+          ),
+          const SizedBox(height: 10),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: diasMatriz.map((d) {
+                return Container(
+                  width: 115,
+                  margin: const EdgeInsets.only(right: 8),
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: AppTheme.border),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            d.dia,
+                            style: TextStyle(
+                              fontSize: 11,
+                              fontWeight: FontWeight.bold,
+                              color: d.cor,
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 4, vertical: 1),
+                            decoration: BoxDecoration(
+                              color: d.cor.withValues(alpha: 0.12),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Text(
+                              d.carga,
+                              style: TextStyle(
+                                fontSize: 9.5,
+                                fontWeight: FontWeight.w700,
+                                color: d.cor,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        d.blq,
+                        style: const TextStyle(
+                          fontSize: 10,
+                          color: AppTheme.textSecondary,
+                          height: 1.2,
+                        ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                );
+              }).toList(),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildMatrizSemanalFogar(MesCurricular mes, ThemeData theme) {
+    final isGl = _language == AppLanguage.gl;
+
+    return Container(
+      padding: const EdgeInsets.all(AppTheme.spaceMd),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFFBEB),
+        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+        border: Border.all(color: const Color(0xFFFDE68A)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.volunteer_activism_rounded,
+                  size: 20, color: Color(0xFFD97706)),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  isGl
+                      ? 'MICRO-RUTINA FAMILIAR · 3 MINUTOS SEN PANTALLAS'
+                      : 'MICRO-RUTINA FAMILIAR · 3 MINUTOS SIN PANTALLAS',
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    fontWeight: FontWeight.w800,
+                    color: const Color(0xFFB45309),
+                    letterSpacing: 0.8,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            isGl
+                ? 'O adulto sostén o dispositivo como partitura. Luns a xoves: modelado motor da orde en inglés. Venres: Gran reto «Freeze» bailando e conxelando o corpo.'
+                : 'El adulto sostiene el dispositivo como partitura. Lunes a jueves: modelado motor de la orden en inglés. Viernes: Gran reto «Freeze» bailando y congelando el cuerpo.',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: const Color(0xFF92400E),
+              height: 1.35,
+            ),
+          ),
+        ],
       ),
     );
   }
