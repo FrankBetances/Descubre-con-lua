@@ -108,12 +108,16 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     },
   ];
 
+  /// A crianza cuxas palabras de inglés se ven hoxe. Só mentres a pantalla
+  /// está aberta: a app non garda nada dunha crianza.
+  String _cursoIngles = 'curso_0_2';
+
   @override
   void initState() {
     super.initState();
     _language = widget.currentLanguage;
-    if (widget.repository.cursoTprSync == null) {
-      widget.repository.loadCursoTpr().then((_) {
+    if (widget.repository.programaTprSync == null) {
+      widget.repository.loadProgramaTpr().then((_) {
         if (mounted) setState(() {});
       });
     }
@@ -369,10 +373,12 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
             // O inglés de hoxe na casa: as MESMAS palabras que a escola ese
             // día. Sen o curso lido, non hai tarxeta: «cinco palabras hoxe»
             // sen as palabras non axuda.
-            if (widget.repository.cursoTprSync case final curso?) ...[
+            if (widget.repository.programaTprSync case final programa?) ...[
               const SizedBox(height: 14.0),
               TarxetaInglesDeHoxeFogar(
-                curso: curso,
+                programa: programa,
+                cursoId: _cursoIngles,
+                onCambiarCurso: (c) => setState(() => _cursoIngles = c),
                 language: _language,
                 audioService: widget.audioService,
                 onVerXogos: () {
@@ -470,12 +476,14 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ? 'Calendario Escolar no Fogar'
                     : 'Calendario Escolar en el Hogar',
                 description: isGl
-                    ? '10 meses escolares (Setembro a Xuño), 5 cursos diferenciados por semanas e días con actividades concretas de 3 min, momentos cotiáns e conexión coa escola.'
-                    : '10 meses escolares (Septiembre a Junio), 5 cursos diferenciados por semanas y días con actividades concretas de 3 min, momentos cotidianos y conexión con la escuela.',
+                    ? 'De 0 a 6 anos, curso a curso: os 5 cursos, cada un de Setembro a Xuño, por semanas e días con actividades concretas de 3 min, momentos cotiáns e conexión coa escola.'
+                    : 'De 0 a 6 años, curso a curso: los 5 cursos, cada uno de Septiembre a Junio, por semanas y días con actividades concretas de 3 min, momentos cotidianos y conexión con la escuela.',
                 icon: Icons.calendar_month_rounded,
                 iconColor: const Color(0xFFDD6B20),
                 iconBg: const Color(0xFFFFF9EE),
-                badge: isGl ? '10 Meses · 5 Cursos' : '10 Meses · 5 Cursos',
+                badge: isGl
+                    ? 'De 0 a 6 anos · 5 cursos'
+                    : 'De 0 a 6 años · 5 cursos',
                 buttonText: isGl ? 'Abrir Calendario' : 'Abrir Calendario',
                 onTap: () {
                   Navigator.of(context).push(

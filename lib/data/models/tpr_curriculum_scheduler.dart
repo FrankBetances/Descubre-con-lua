@@ -224,10 +224,35 @@ class CategoriaTpr {
       );
 }
 
-/// El modelo: el ritmo, los cinco días y las categorías.
+/// Un curso del trayecto tal como lo declara el modelo: su id, su etiqueta de
+/// edad y los diez ficheros de mes.
+class CursoDoModeloTpr {
+  final String id;
+  final LocalizedString etiqueta;
+  final List<String> meses;
+
+  const CursoDoModeloTpr({
+    required this.id,
+    required this.etiqueta,
+    required this.meses,
+  });
+
+  factory CursoDoModeloTpr.fromJson(Map<String, dynamic> json) =>
+      CursoDoModeloTpr(
+        id: json['id'] as String,
+        etiqueta: LocalizedString.fromJson(
+            Map<String, dynamic>.from(json['etiqueta'] as Map)),
+        meses: List.unmodifiable(
+            (json['meses'] as List? ?? const []).map((e) => e.toString())),
+      );
+}
+
+/// El modelo: el ritmo, los cinco días, las categorías y los cinco cursos.
 class ModeloTpr {
   final int ritmoDiario;
-  final List<String> meses;
+
+  /// De 0-2 a 5-6 años, en orden.
+  final List<CursoDoModeloTpr> cursos;
   final List<DiaDoModeloTpr> dias;
   final List<CategoriaTpr> categorias;
 
@@ -236,7 +261,7 @@ class ModeloTpr {
 
   const ModeloTpr({
     required this.ritmoDiario,
-    required this.meses,
+    required this.cursos,
     required this.dias,
     required this.categorias,
     required this.fontes,
@@ -244,8 +269,10 @@ class ModeloTpr {
 
   factory ModeloTpr.fromJson(Map<String, dynamic> json) => ModeloTpr(
         ritmoDiario: (json['ritmoDiario'] as num?)?.toInt() ?? 5,
-        meses: List.unmodifiable(
-            (json['meses'] as List? ?? const []).map((e) => e.toString())),
+        cursos: List.unmodifiable([
+          for (final c in json['cursos'] as List? ?? const [])
+            CursoDoModeloTpr.fromJson(Map<String, dynamic>.from(c as Map)),
+        ]),
         dias: List.unmodifiable([
           for (final d in json['dias'] as List? ?? const [])
             DiaDoModeloTpr.fromJson(Map<String, dynamic>.from(d as Map)),
@@ -269,35 +296,29 @@ class ModeloTpr {
 /// El día del curso al que apunta una fecha: mes, semana (1-4) y día (1-5).
 typedef DiaDoCursoTpr = ({int mesCalendario, int semana, int dia});
 
-/// El inglés del curso entero: el modelo y los diez meses.
+/// El inglés de UN curso: los diez meses de un grupo de edad.
 ///
-/// Sale de `assets/content/tpr/`. Aquí no hay ni una palabra: si algo de esta
-/// clase se puede leer en pantalla, viene del JSON. Y los totales —20 por
-/// semana, 80 por mes, 800 por curso, el reparto por categorías— se CUENTAN,
-/// no se escriben, para que no puedan discrepar de lo que el curso trae.
+/// Aquí no hay ni una palabra: si algo de esta clase se puede leer en
+/// pantalla, viene del JSON. Y los totales —20 por semana, 80 por mes, 800
+/// por curso, el reparto por categorías— se CUENTAN, no se escriben, para que
+/// no puedan discrepar de lo que el curso trae.
 class CursoTpr {
   static const String modeloAsset = 'assets/content/tpr/modelo.json';
 
+  /// `curso_0_2` … `curso_5_6`.
+  final String id;
+  final LocalizedString etiqueta;
   final ModeloTpr modelo;
 
   /// De septiembre a junio.
   final List<MesTpr> meses;
 
-  const CursoTpr({required this.modelo, required this.meses});
-
-  static Future<CursoTpr> cargar({
-    Future<String> Function(String path)? stringLoader,
-  }) async {
-    final ler = stringLoader ?? rootBundle.loadString;
-    final modelo = ModeloTpr.fromJson(
-        Map<String, dynamic>.from(jsonDecode(await ler(modeloAsset)) as Map));
-    final meses = <MesTpr>[
-      for (final ruta in modelo.meses)
-        MesTpr.fromJson(
-            Map<String, dynamic>.from(jsonDecode(await ler(ruta)) as Map)),
-    ]..sort((a, b) => a.orden.compareTo(b.orden));
-    return CursoTpr(modelo: modelo, meses: List.unmodifiable(meses));
-  }
+  const CursoTpr({
+    required this.id,
+    required this.etiqueta,
+    required this.modelo,
+    required this.meses,
+  });
 
   MesTpr? mes(int mesCalendario) {
     for (final m in meses) {
@@ -345,5 +366,75 @@ class CursoTpr {
     if (d.month == 7 || d.month == 8) return null;
     final h = ProgresionDoMes.hoxe(agora: d);
     return (mesCalendario: d.month, semana: h.semana, dia: h.dia);
+  }
+}
+
+/// El grupo del aula y el curso de inglés que le corresponde.
+///
+/// 1.º ciclo: 0-2 y 2-3. 2.º ciclo: 4.º es 3-4 años, 5.º es 4-5 y 6.º es 5-6.
+/// Si cada pantalla hiciera su propia cuenta, la docente de 5.º podría ver en
+/// el calendario las palabras de un curso y en la tarjeta de hoy las de otro.
+///
+/// La clave es la del grupo de la asamblea (`GrupoDaAsemblea.clave`).
+const Map<String, String> cursoTprDoGrupo = {
+  '1c_0_2': 'curso_0_2',
+  '1c_2_3': 'curso_2_3',
+  '2c_4_infantil': 'curso_3_4',
+  '2c_5_infantil': 'curso_4_5',
+  '2c_6_infantil': 'curso_5_6',
+};
+
+/// El trayecto entero: el modelo y los cinco cursos, de 0-2 a 5-6 años.
+///
+/// Sale de `assets/content/tpr/`. Cinco palabras nuevas al día en cada curso:
+/// 800 por curso y 4.000 en el trayecto, sin repetir ninguna.
+class ProgramaTpr {
+  final ModeloTpr modelo;
+
+  /// De 0-2 a 5-6 años, en el orden del modelo.
+  final List<CursoTpr> cursos;
+
+  const ProgramaTpr({required this.modelo, required this.cursos});
+
+  static Future<ProgramaTpr> cargar({
+    Future<String> Function(String path)? stringLoader,
+  }) async {
+    final ler = stringLoader ?? rootBundle.loadString;
+    final modelo = ModeloTpr.fromJson(Map<String, dynamic>.from(
+        jsonDecode(await ler(CursoTpr.modeloAsset)) as Map));
+    final cursos = <CursoTpr>[];
+    for (final c in modelo.cursos) {
+      final meses = <MesTpr>[
+        for (final ruta in c.meses)
+          MesTpr.fromJson(
+              Map<String, dynamic>.from(jsonDecode(await ler(ruta)) as Map)),
+      ]..sort((a, b) => a.orden.compareTo(b.orden));
+      cursos.add(CursoTpr(
+        id: c.id,
+        etiqueta: c.etiqueta,
+        modelo: modelo,
+        meses: List.unmodifiable(meses),
+      ));
+    }
+    return ProgramaTpr(modelo: modelo, cursos: List.unmodifiable(cursos));
+  }
+
+  /// El curso con ese id, o `null` si el modelo no lo trae.
+  CursoTpr? curso(String id) {
+    for (final c in cursos) {
+      if (c.id == id) return c;
+    }
+    return null;
+  }
+
+  int get totalPalabras => cursos.fold(0, (t, c) => t + c.totalPalabras);
+
+  /// Cuántas palabras hay de cada categoría en todo el trayecto.
+  Map<String, int> get porCategoria {
+    final cuenta = <String, int>{};
+    for (final c in cursos) {
+      c.porCategoria.forEach((k, v) => cuenta[k] = (cuenta[k] ?? 0) + v);
+    }
+    return cuenta;
   }
 }

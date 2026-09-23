@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.2_3.setembro",
+  "curso": "curso_2_3",
+  "orden": 1,
+  "mesCalendario": 9,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Volvemos á escola",
+        "es": "Volvemos a la escuela"
+      },
+      "palabras": [
+        {
+          "id": "2_3.setembro.s1.classroom",
+          "en": "Classroom",
+          "gl": "Aula",
+          "es": "Aula",
+          "tprAction": {
+            "gl": "Abrir os brazos dentro da aula",
+            "es": "Abrir los brazos dentro del aula"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s1.peg",
+          "en": "Peg",
+          "gl": "Percha co nome",
+          "es": "Percha con el nombre",
+          "tprAction": {
+            "gl": "Colgar a mochila na súa percha",
+            "es": "Colgar la mochila en su percha"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s1.lunchbox",
+          "en": "Lunchbox",
+          "gl": "Fiambreira",
+          "es": "Fiambrera",
+          "tprAction": {
+            "gl": "Abrir e pechar a fiambreira",
+            "es": "Abrir y cerrar la fiambrera"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s1.water-cup",
+          "en": "Water cup",
+          "gl": "Vaso de auga",
+          "es": "Vaso de agua",
+          "tprAction": {
+            "gl": "Beber do propio vaso",
+            "es": "Beber del propio vaso"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s1.name-tag",
+          "en": "Name tag",
+          "gl": "Etiqueta do nome",
+          "es": "Etiqueta del nombre",
+          "tprAction": {
+            "gl": "Sinalar a etiqueta co nome",
+            "es": "Señalar la etiqueta con el nombre"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s1.toy-box",
+          "en": "Toy box",
+          "gl": "Caixa dos xoguetes",
+          "es": "Caja de los juguetes",
+          "tprAction": {
+            "gl": "Meter un xoguete na caixa",
+            "es": "Meter un juguete en la caja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s1.shelf",
+          "en": "Shelf",
+          "gl": "Estante",
+          "es": "Estante",
+          "tprAction": {
+            "gl": "Pousar un libro no estante",
+            "es": "Dejar un libro en el estante"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s1.put-away",
+          "en": "Put away",
+          "gl": "Gardar",
+          "es": "Guardar",
+          "tprAction": {
+            "gl": "Gardar un bloque no seu sitio",
+            "es": "Guardar un bloque en su sitio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s1.line-up",
+          "en": "Line up",
+          "gl": "Poñerse en fila",
+          "es": "Ponerse en fila",
+          "tprAction": {
+            "gl": "Poñerse un detrás doutro",
+            "es": "Ponerse uno detrás de otro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s1.hang-up",
+          "en": "Hang up",
+          "gl": "Colgar",
+          "es": "Colgar",
+          "tprAction": {
+            "gl": "Colgar o abrigo na percha",
+            "es": "Colgar el abrigo en la percha"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s1.say-hello",
+          "en": "Say hello",
+          "gl": "Dicir ola",
+          "es": "Decir hola",
+          "tprAction": {
+            "gl": "Acenar a un compañeiro",
+            "es": "Saludar a un compañero"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s1.bring",
+          "en": "Bring",
+          "gl": "Traer",
+          "es": "Traer",
+          "tprAction": {
+            "gl": "Traer un xoguete á alfombra",
+            "es": "Traer un juguete a la alfombra"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s1.neat",
+          "en": "Neat",
+          "gl": "Ordenado",
+          "es": "Ordenado",
+          "tprAction": {
+            "gl": "Aliñar os zapatos xuntos",
+            "es": "Alinear los zapatos juntos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s1.nearby",
+          "en": "Nearby",
+          "gl": "Preto",
+          "es": "Cerca",
+          "tprAction": {
+            "gl": "Sentarse preto dun amigo",
+            "es": "Sentarse cerca de un amigo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s1.welcome-back",
+          "en": "Welcome back",
+          "gl": "De volta",
+          "es": "De vuelta",
+          "tprAction": {
+            "gl": "Abrir os brazos contentos",
+            "es": "Abrir los brazos contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s1.grown-up",
+          "en": "Grown-up",
+          "gl": "Maior",
+          "es": "Mayor",
+          "tprAction": {
+            "gl": "Estirarse moi alto",
+            "es": "Estirarse muy alto"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s1.where-does-it-go",
+          "en": "Where does it go?",
+          "gl": "Onde vai?",
+          "es": "¿Dónde va?",
+          "tprAction": {
+            "gl": "Coller un xoguete e mirar arredor",
+            "es": "Coger un juguete y mirar alrededor"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s1.it-goes-here",
+          "en": "It goes here",
+          "gl": "Vai aquí",
+          "es": "Va aquí",
+          "tprAction": {
+            "gl": "Pousar o xoguete no seu sitio",
+            "es": "Dejar el juguete en su sitio"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s1.coat-on-the-peg",
+          "en": "Coat on the peg",
+          "gl": "Abrigo na percha",
+          "es": "Abrigo en la percha",
+          "tprAction": {
+            "gl": "Colgar o abrigo",
+            "es": "Colgar el abrigo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.setembro.s1.back-in-the-box",
+          "en": "Back in the box",
+          "gl": "Outra vez na caixa",
+          "es": "Otra vez en la caja",
+          "tprAction": {
+            "gl": "Meter o xoguete na caixa",
+            "es": "Meter el juguete en la caja"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Xogamos xuntos",
+        "es": "Jugamos juntos"
+      },
+      "palabras": [
+        {
+          "id": "2_3.setembro.s2.building-blocks",
+          "en": "Building blocks",
+          "gl": "Bloques de construír",
+          "es": "Bloques de construcción",
+          "tprAction": {
+            "gl": "Poñer un bloque sobre outro",
+            "es": "Poner un bloque sobre otro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s2.tower",
+          "en": "Tower",
+          "gl": "Torre",
+          "es": "Torre",
+          "tprAction": {
+            "gl": "Facer unha torre alta",
+            "es": "Hacer una torre alta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s2.train-set",
+          "en": "Train set",
+          "gl": "Tren de xoguete",
+          "es": "Tren de juguete",
+          "tprAction": {
+            "gl": "Empurrar o tren pola vía",
+            "es": "Empujar el tren por la vía"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s2.toy-car",
+          "en": "Toy car",
+          "gl": "Cochiño",
+          "es": "Cochecito",
+          "tprAction": {
+            "gl": "Rodar o cochiño pola mesa",
+            "es": "Rodar el cochecito por la mesa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s2.play-dough",
+          "en": "Play dough",
+          "gl": "Plastilina",
+          "es": "Plastilina",
+          "tprAction": {
+            "gl": "Facer unha bóla de plastilina",
+            "es": "Hacer una bola de plastilina"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s2.puzzle",
+          "en": "Puzzle",
+          "gl": "Crebacabezas",
+          "es": "Puzle",
+          "tprAction": {
+            "gl": "Encaixar unha peza",
+            "es": "Encajar una pieza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s2.tea-set",
+          "en": "Tea set",
+          "gl": "Xogo de té",
+          "es": "Juego de té",
+          "tprAction": {
+            "gl": "Servir té de xoguete",
+            "es": "Servir té de juguete"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s2.take-turns",
+          "en": "Take turns",
+          "gl": "Facer quendas",
+          "es": "Turnarse",
+          "tprAction": {
+            "gl": "Pasar o xoguete ao seguinte",
+            "es": "Pasar el juguete al siguiente"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s2.stack-up",
+          "en": "Stack up",
+          "gl": "Amorear",
+          "es": "Amontonar",
+          "tprAction": {
+            "gl": "Amorear bloques ben alto",
+            "es": "Amontonar bloques bien alto"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s2.fit",
+          "en": "Fit",
+          "gl": "Encaixar",
+          "es": "Encajar",
+          "tprAction": {
+            "gl": "Meter a peza no seu oco",
+            "es": "Meter la pieza en su hueco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s2.pour-tea",
+          "en": "Pour tea",
+          "gl": "Servir o té",
+          "es": "Servir el té",
+          "tprAction": {
+            "gl": "Inclinar a teteira de xoguete",
+            "es": "Inclinar la tetera de juguete"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s2.hand-it-over",
+          "en": "Hand it over",
+          "gl": "Dalo",
+          "es": "Darlo",
+          "tprAction": {
+            "gl": "Estender a man co xoguete",
+            "es": "Extender la mano con el juguete"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s2.wobbly-tower",
+          "en": "Wobbly tower",
+          "gl": "Torre que bambea",
+          "es": "Torre que se tambalea",
+          "tprAction": {
+            "gl": "Mover a torre con coidado",
+            "es": "Mover la torre con cuidado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s2.tall-tower",
+          "en": "Tall tower",
+          "gl": "Torre alta",
+          "es": "Torre alta",
+          "tprAction": {
+            "gl": "Estirar o brazo ata a punta",
+            "es": "Estirar el brazo hasta la punta"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s2.sharing",
+          "en": "Sharing",
+          "gl": "Que comparte",
+          "es": "Que comparte",
+          "tprAction": {
+            "gl": "Partir a plastilina en dous",
+            "es": "Partir la plastilina en dos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s2.considerate",
+          "en": "Considerate",
+          "gl": "Considerado",
+          "es": "Considerado",
+          "tprAction": {
+            "gl": "Esperar coas mans no colo",
+            "es": "Esperar con las manos en el regazo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s2.my-turn",
+          "en": "My turn!",
+          "gl": "A miña vez!",
+          "es": "¡Mi turno!",
+          "tprAction": {
+            "gl": "Tocar o peito e sorrir",
+            "es": "Tocar el pecho y sonreír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s2.can-i-play",
+          "en": "Can I play?",
+          "gl": "Podo xogar?",
+          "es": "¿Puedo jugar?",
+          "tprAction": {
+            "gl": "Achegarse e abrir a man",
+            "es": "Acercarse y abrir la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s2.here-you-go",
+          "en": "Here you go",
+          "gl": "Toma",
+          "es": "Toma",
+          "tprAction": {
+            "gl": "Dar o xoguete a un amigo",
+            "es": "Dar el juguete a un amigo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s2.one-for-you-one-for-me",
+          "en": "One for you, one for me",
+          "gl": "Un para ti, un para min",
+          "es": "Uno para ti, uno para mí",
+          "tprAction": {
+            "gl": "Repartir dous bloques",
+            "es": "Repartir dos bloques"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Recollemos",
+        "es": "Recogemos"
+      },
+      "palabras": [
+        {
+          "id": "2_3.setembro.s3.tidy-up-song",
+          "en": "Tidy-up song",
+          "gl": "Canción de recoller",
+          "es": "Canción de recoger",
+          "tprAction": {
+            "gl": "Cantar mentres se recolle",
+            "es": "Cantar mientras se recoge"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s3.box-lid",
+          "en": "Box lid",
+          "gl": "Tapa da caixa",
+          "es": "Tapa de la caja",
+          "tprAction": {
+            "gl": "Pechar a tapa da caixa",
+            "es": "Cerrar la tapa de la caja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s3.drawer",
+          "en": "Drawer",
+          "gl": "Caixón",
+          "es": "Cajón",
+          "tprAction": {
+            "gl": "Abrir e pechar o caixón",
+            "es": "Abrir y cerrar el cajón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s3.crayon-pot",
+          "en": "Crayon pot",
+          "gl": "Bote de ceras",
+          "es": "Bote de ceras",
+          "tprAction": {
+            "gl": "Meter as ceras no bote",
+            "es": "Meter las ceras en el bote"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s3.tray",
+          "en": "Tray",
+          "gl": "Bandexa",
+          "es": "Bandeja",
+          "tprAction": {
+            "gl": "Levar a bandexa coas dúas mans",
+            "es": "Llevar la bandeja con las dos manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s3.mat",
+          "en": "Mat",
+          "gl": "Esteira",
+          "es": "Esterilla",
+          "tprAction": {
+            "gl": "Enrolar a esteira",
+            "es": "Enrollar la esterilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s3.place",
+          "en": "Place",
+          "gl": "Sitio",
+          "es": "Sitio",
+          "tprAction": {
+            "gl": "Sinalar o sitio de cada cousa",
+            "es": "Señalar el sitio de cada cosa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s3.pick-up-toys",
+          "en": "Pick up toys",
+          "gl": "Recoller xoguetes",
+          "es": "Recoger juguetes",
+          "tprAction": {
+            "gl": "Agacharse e coller un xoguete",
+            "es": "Agacharse y coger un juguete"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s3.roll-up",
+          "en": "Roll up",
+          "gl": "Enrolar",
+          "es": "Enrollar",
+          "tprAction": {
+            "gl": "Enrolar a esteira amodo",
+            "es": "Enrollar la esterilla despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s3.wipe-the-table",
+          "en": "Wipe the table",
+          "gl": "Limpar a mesa",
+          "es": "Limpiar la mesa",
+          "tprAction": {
+            "gl": "Pasar o pano pola mesa",
+            "es": "Pasar el paño por la mesa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s3.carry-carefully",
+          "en": "Carry carefully",
+          "gl": "Levar con coidado",
+          "es": "Llevar con cuidado",
+          "tprAction": {
+            "gl": "Levar a bandexa amodo",
+            "es": "Llevar la bandeja despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s3.shut-the-drawer",
+          "en": "Shut the drawer",
+          "gl": "Pechar o caixón",
+          "es": "Cerrar el cajón",
+          "tprAction": {
+            "gl": "Empurrar o caixón",
+            "es": "Empujar el cajón"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s3.sorted",
+          "en": "Sorted",
+          "gl": "Clasificado",
+          "es": "Clasificado",
+          "tprAction": {
+            "gl": "Xuntar ceras da mesma cor",
+            "es": "Juntar ceras del mismo color"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s3.clear-table",
+          "en": "Clear table",
+          "gl": "Mesa baleira",
+          "es": "Mesa despejada",
+          "tprAction": {
+            "gl": "Pasar a man pola mesa baleira",
+            "es": "Pasar la mano por la mesa despejada"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s3.helpful",
+          "en": "Helpful",
+          "gl": "Axudante",
+          "es": "Servicial",
+          "tprAction": {
+            "gl": "Axudar a un amigo a recoller",
+            "es": "Ayudar a un amigo a recoger"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s3.in-order",
+          "en": "In order",
+          "gl": "En orde",
+          "es": "En orden",
+          "tprAction": {
+            "gl": "Pousar tres cousas en fila",
+            "es": "Poner tres cosas en fila"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s3.clean-up-clean-up",
+          "en": "Clean up, clean up",
+          "gl": "Recoller, recoller",
+          "es": "A recoger, a recoger",
+          "tprAction": {
+            "gl": "Cantar e recoller",
+            "es": "Cantar y recoger"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s3.good-job",
+          "en": "Good job!",
+          "gl": "Moi ben!",
+          "es": "¡Muy bien!",
+          "tprAction": {
+            "gl": "Levantar o polgar",
+            "es": "Levantar el pulgar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s3.crayons-in-the-pot",
+          "en": "Crayons in the pot",
+          "gl": "Ceras no bote",
+          "es": "Ceras en el bote",
+          "tprAction": {
+            "gl": "Meter as ceras no bote",
+            "es": "Meter las ceras en el bote"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.setembro.s3.first-the-blocks-then-the-cars",
+          "en": "First the blocks, then the cars",
+          "gl": "Primeiro os bloques, logo os coches",
+          "es": "Primero los bloques, luego los coches",
+          "tprAction": {
+            "gl": "Recoller en dúas quendas",
+            "es": "Recoger en dos turnos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Amigos da clase",
+        "es": "Amigos de la clase"
+      },
+      "palabras": [
+        {
+          "id": "2_3.setembro.s4.classmate",
+          "en": "Classmate",
+          "gl": "Compañeiro",
+          "es": "Compañero",
+          "tprAction": {
+            "gl": "Sinalar a un compañeiro",
+            "es": "Señalar a un compañero"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s4.circle-time",
+          "en": "Circle time",
+          "gl": "Asemblea",
+          "es": "Asamblea",
+          "tprAction": {
+            "gl": "Sentarse en círculo",
+            "es": "Sentarse en círculo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s4.helper",
+          "en": "Helper",
+          "gl": "Axudante",
+          "es": "Ayudante",
+          "tprAction": {
+            "gl": "Poñer unha medalla de axudante",
+            "es": "Ponerse una medalla de ayudante"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s4.sticker-chart",
+          "en": "Sticker chart",
+          "gl": "Táboa de adhesivos",
+          "es": "Tabla de pegatinas",
+          "tprAction": {
+            "gl": "Pegar un adhesivo na táboa",
+            "es": "Pegar una pegatina en la tabla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s4.hand-wave",
+          "en": "Hand wave",
+          "gl": "Saúdo coa man",
+          "es": "Saludo con la mano",
+          "tprAction": {
+            "gl": "Acenar a todos",
+            "es": "Saludar a todos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s4.photo-wall",
+          "en": "Photo wall",
+          "gl": "Mural de fotos",
+          "es": "Mural de fotos",
+          "tprAction": {
+            "gl": "Buscar a propia foto no mural",
+            "es": "Buscar la propia foto en el mural"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s4.cushion-circle",
+          "en": "Cushion circle",
+          "gl": "Círculo de coxíns",
+          "es": "Círculo de cojines",
+          "tprAction": {
+            "gl": "Sentarse cada un no seu coxín",
+            "es": "Sentarse cada uno en su cojín"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.setembro.s4.hold-hands",
+          "en": "Hold hands",
+          "gl": "Darse a man",
+          "es": "Darse la mano",
+          "tprAction": {
+            "gl": "Collerse das mans en círculo",
+            "es": "Cogerse de las manos en círculo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s4.pass-the-ball",
+          "en": "Pass the ball",
+          "gl": "Pasar a pelota",
+          "es": "Pasar la pelota",
+          "tprAction": {
+            "gl": "Pasar a pelota ao da beira",
+            "es": "Pasar la pelota al de al lado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s4.invite",
+          "en": "Invite",
+          "gl": "Convidar",
+          "es": "Invitar",
+          "tprAction": {
+            "gl": "Chamar a un amigo coa man",
+            "es": "Llamar a un amigo con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s4.help-a-friend",
+          "en": "Help a friend",
+          "gl": "Axudar a un amigo",
+          "es": "Ayudar a un amigo",
+          "tprAction": {
+            "gl": "Dar a man a un amigo para erguerse",
+            "es": "Dar la mano a un amigo para levantarse"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s4.hug-a-friend",
+          "en": "Hug a friend",
+          "gl": "Abrazar a un amigo",
+          "es": "Abrazar a un amigo",
+          "tprAction": {
+            "gl": "Dar unha aperta suave",
+            "es": "Dar un abrazo suave"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.setembro.s4.kind-hearted",
+          "en": "Kind-hearted",
+          "gl": "De bo corazón",
+          "es": "De buen corazón",
+          "tprAction": {
+            "gl": "Acariñar o brazo dun amigo",
+            "es": "Acariciar el brazo de un amigo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s4.polite",
+          "en": "Polite",
+          "gl": "Educado",
+          "es": "Educado",
+          "tprAction": {
+            "gl": "Dicir «grazas» coa man no peito",
+            "es": "Decir «gracias» con la mano en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s4.caring",
+          "en": "Caring",
+          "gl": "Atento",
+          "es": "Atento",
+          "tprAction": {
+            "gl": "Preguntar «estás ben?» coa man",
+            "es": "Preguntar «¿estás bien?» con la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s4.together",
+          "en": "Together",
+          "gl": "Xuntos",
+          "es": "Juntos",
+          "tprAction": {
+            "gl": "Xuntar as mans de todos",
+            "es": "Juntar las manos de todos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.setembro.s4.hello-friend",
+          "en": "Hello, friend!",
+          "gl": "Ola, amigo!",
+          "es": "¡Hola, amigo!",
+          "tprAction": {
+            "gl": "Acenar a un compañeiro",
+            "es": "Saludar a un compañero"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s4.sit-with-me",
+          "en": "Sit with me",
+          "gl": "Senta comigo",
+          "es": "Siéntate conmigo",
+          "tprAction": {
+            "gl": "Palmear o chan á beira",
+            "es": "Dar palmaditas en el suelo al lado"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s4.are-you-ok",
+          "en": "Are you OK?",
+          "gl": "Estás ben?",
+          "es": "¿Estás bien?",
+          "tprAction": {
+            "gl": "Inclinar a cabeza preguntando",
+            "es": "Inclinar la cabeza preguntando"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.setembro.s4.friends-in-a-circle",
+          "en": "Friends in a circle",
+          "gl": "Amigos en círculo",
+          "es": "Amigos en círculo",
+          "tprAction": {
+            "gl": "Facer un círculo coas mans",
+            "es": "Hacer un círculo con las manos"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

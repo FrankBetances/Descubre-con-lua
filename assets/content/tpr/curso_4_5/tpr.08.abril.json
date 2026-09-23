@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.4_5.abril",
+  "curso": "curso_4_5",
+  "orden": 8,
+  "mesCalendario": 4,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "As illas Cíes",
+        "es": "Las islas Cíes"
+      },
+      "palabras": [
+        {
+          "id": "4_5.abril.s1.seabird",
+          "en": "Seabird",
+          "gl": "Ave mariña",
+          "es": "Ave marina",
+          "tprAction": {
+            "gl": "Planear cos brazos abertos",
+            "es": "Planear con los brazos abiertos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s1.cliff",
+          "en": "Cliff",
+          "gl": "Cantil",
+          "es": "Acantilado",
+          "tprAction": {
+            "gl": "Poñer a man vertical",
+            "es": "Poner la mano vertical"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s1.dune",
+          "en": "Dune",
+          "gl": "Duna",
+          "es": "Duna",
+          "tprAction": {
+            "gl": "Debuxar unha onda de area",
+            "es": "Dibujar una ola de arena"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s1.nature-reserve",
+          "en": "Nature reserve",
+          "gl": "Espazo protexido",
+          "es": "Espacio protegido",
+          "tprAction": {
+            "gl": "Abrazar o aire con coidado",
+            "es": "Abrazar el aire con cuidado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s1.binoculars",
+          "en": "Binoculars",
+          "gl": "Prismáticos",
+          "es": "Prismáticos",
+          "tprAction": {
+            "gl": "Facer prismáticos coas mans",
+            "es": "Hacer prismáticos con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s1.boat-trip",
+          "en": "Boat trip",
+          "gl": "Viaxe en barco",
+          "es": "Viaje en barco",
+          "tprAction": {
+            "gl": "Balancearse coma no barco",
+            "es": "Balancearse como en el barco"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s1.campsite",
+          "en": "Campsite",
+          "gl": "Cámping",
+          "es": "Camping",
+          "tprAction": {
+            "gl": "Facer unha tenda coas mans",
+            "es": "Hacer una tienda con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s1.fly-with-wings",
+          "en": "Fly with wings",
+          "gl": "Voar coas ás",
+          "es": "Volar con las alas",
+          "tprAction": {
+            "gl": "Estirar os brazos e voar",
+            "es": "Estirar los brazos y volar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s1.watch-the-sky",
+          "en": "Watch the sky",
+          "gl": "Mirar o ceo",
+          "es": "Mirar el cielo",
+          "tprAction": {
+            "gl": "Mirar cara arriba en silencio",
+            "es": "Mirar hacia arriba en silencio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s1.protect",
+          "en": "Protect",
+          "gl": "Protexer",
+          "es": "Proteger",
+          "tprAction": {
+            "gl": "Cubrir algo coas mans",
+            "es": "Cubrir algo con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s1.spot-a-bird",
+          "en": "Spot a bird",
+          "gl": "Ver un paxaro",
+          "es": "Avistar un pájaro",
+          "tprAction": {
+            "gl": "Sinalar co prismático",
+            "es": "Señalar con los prismáticos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s1.keep-the-path",
+          "en": "Keep the path",
+          "gl": "Seguir o camiño",
+          "es": "Seguir el camino",
+          "tprAction": {
+            "gl": "Camiñar pola liña",
+            "es": "Caminar por la línea"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s1.wild-and-free",
+          "en": "Wild and free",
+          "gl": "Salvaxe e libre",
+          "es": "Salvaje y libre",
+          "tprAction": {
+            "gl": "Correr cos brazos abertos",
+            "es": "Correr con los brazos abiertos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s1.protected",
+          "en": "Protected",
+          "gl": "Protexido",
+          "es": "Protegido",
+          "tprAction": {
+            "gl": "Facer unha cúpula coas mans",
+            "es": "Hacer una cúpula con las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s1.rocky",
+          "en": "Rocky",
+          "gl": "Rochoso",
+          "es": "Rocoso",
+          "tprAction": {
+            "gl": "Tocar unha superficie dura",
+            "es": "Tocar una superficie dura"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s1.remote",
+          "en": "Remote",
+          "gl": "Afastado",
+          "es": "Lejano",
+          "tprAction": {
+            "gl": "Sinalar moi lonxe",
+            "es": "Señalar muy lejos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s1.look-through-the-binoculars",
+          "en": "Look through the binoculars",
+          "gl": "Mira polos prismáticos",
+          "es": "Mira por los prismáticos",
+          "tprAction": {
+            "gl": "Levar as mans aos ollos",
+            "es": "Llevar las manos a los ojos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.abril.s1.what-bird-is-that",
+          "en": "What bird is that?",
+          "gl": "Que paxaro é ese?",
+          "es": "¿Qué pájaro es ese?",
+          "tprAction": {
+            "gl": "Sinalar o ceo",
+            "es": "Señalar el cielo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.abril.s1.we-walk-on-the-path-so-the-plants-can-grow",
+          "en": "We walk on the path so the plants can grow",
+          "gl": "Camiñamos polo camiño para que medren as plantas",
+          "es": "Caminamos por el camino para que crezcan las plantas",
+          "tprAction": {
+            "gl": "Camiñar pola liña",
+            "es": "Caminar por la línea"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.abril.s1.islands-in-the-sea",
+          "en": "Islands in the sea",
+          "gl": "Illas no mar",
+          "es": "Islas en el mar",
+          "tprAction": {
+            "gl": "Facer montes coas mans",
+            "es": "Hacer montes con las manos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Gaivotas e cormoráns",
+        "es": "Gaviotas y cormoranes"
+      },
+      "palabras": [
+        {
+          "id": "4_5.abril.s2.gull-chick",
+          "en": "Gull chick",
+          "gl": "Pito de gaivota",
+          "es": "Pollo de gaviota",
+          "tprAction": {
+            "gl": "Acurrucarse pequeno",
+            "es": "Acurrucarse pequeño"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s2.cormorant",
+          "en": "Cormorant",
+          "gl": "Corvo mariño",
+          "es": "Cormorán",
+          "tprAction": {
+            "gl": "Abrir os brazos a secar",
+            "es": "Abrir los brazos a secar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s2.wingspan",
+          "en": "Wingspan",
+          "gl": "Envergadura",
+          "es": "Envergadura",
+          "tprAction": {
+            "gl": "Estirar os brazos ao máximo",
+            "es": "Estirar los brazos al máximo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s2.feathers",
+          "en": "Feathers",
+          "gl": "Plumas",
+          "es": "Plumas",
+          "tprAction": {
+            "gl": "Acariñar os brazos coma plumas",
+            "es": "Acariciar los brazos como plumas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s2.cliff-nest",
+          "en": "Cliff nest",
+          "gl": "Niño no cantil",
+          "es": "Nido en el acantilado",
+          "tprAction": {
+            "gl": "Facer un niño na parede",
+            "es": "Hacer un nido en la pared"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s2.webbed-feet",
+          "en": "Webbed feet",
+          "gl": "Patas palmeadas",
+          "es": "Patas palmeadas",
+          "tprAction": {
+            "gl": "Abrir os dedos das mans",
+            "es": "Abrir los dedos de las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s2.fish-supper",
+          "en": "Fish supper",
+          "gl": "Cea de peixe",
+          "es": "Cena de pescado",
+          "tprAction": {
+            "gl": "Facer que se colle un peixe co bico",
+            "es": "Hacer que se coge un pez con el pico"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s2.soar",
+          "en": "Soar",
+          "gl": "Planear alto",
+          "es": "Planear alto",
+          "tprAction": {
+            "gl": "Abrir os brazos e xirar amodo",
+            "es": "Abrir los brazos y girar despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s2.dive-for-fish",
+          "en": "Dive for fish",
+          "gl": "Mergullarse a pescar",
+          "es": "Zambullirse a pescar",
+          "tprAction": {
+            "gl": "Baixar as mans xuntas en picado",
+            "es": "Bajar las manos juntas en picado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s2.dry-wings",
+          "en": "Dry wings",
+          "gl": "Secar as ás",
+          "es": "Secar las alas",
+          "tprAction": {
+            "gl": "Abrir os brazos ao sol",
+            "es": "Abrir los brazos al sol"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s2.squawk",
+          "en": "Squawk",
+          "gl": "Grallar",
+          "es": "Graznar",
+          "tprAction": {
+            "gl": "Facer «cuac» forte",
+            "es": "Hacer «cuac» fuerte"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s2.hover",
+          "en": "Hover",
+          "gl": "Pairar",
+          "es": "Cernerse",
+          "tprAction": {
+            "gl": "Quedar cos brazos abertos quietos",
+            "es": "Quedarse con los brazos abiertos quietos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s2.soaring",
+          "en": "Soaring",
+          "gl": "Planeando",
+          "es": "Planeando",
+          "tprAction": {
+            "gl": "Voar amodo",
+            "es": "Volar despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s2.webbed",
+          "en": "Webbed",
+          "gl": "Palmeado",
+          "es": "Palmeado",
+          "tprAction": {
+            "gl": "Abrir os dedos",
+            "es": "Abrir los dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s2.graceful-flight",
+          "en": "Graceful flight",
+          "gl": "Voo elegante",
+          "es": "Vuelo elegante",
+          "tprAction": {
+            "gl": "Mover os brazos suave",
+            "es": "Mover los brazos suave"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s2.glossy-black",
+          "en": "Glossy black",
+          "gl": "Negro brillante",
+          "es": "Negro brillante",
+          "tprAction": {
+            "gl": "Pasar a man polo cabelo",
+            "es": "Pasar la mano por el pelo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s2.look-how-high-it-flies",
+          "en": "Look how high it flies!",
+          "gl": "Mira que alto voa!",
+          "es": "¡Mira qué alto vuela!",
+          "tprAction": {
+            "gl": "Sinalar moi alto",
+            "es": "Señalar muy alto"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.abril.s2.the-gull-flies-higher-than-the-cormorant",
+          "en": "The gull flies higher than the cormorant",
+          "gl": "A gaivota voa máis alto ca o corvo mariño",
+          "es": "La gaviota vuela más alto que el cormorán",
+          "tprAction": {
+            "gl": "Voar alto e baixo",
+            "es": "Volar alto y bajo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.abril.s2.squawk-like-a-seagull",
+          "en": "Squawk like a seagull!",
+          "gl": "Gralla coma unha gaivota!",
+          "es": "¡Grazna como una gaviota!",
+          "tprAction": {
+            "gl": "Facer «cuac»",
+            "es": "Hacer «cuac»"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.abril.s2.dive-catch-fly",
+          "en": "Dive, catch, fly!",
+          "gl": "Mergúllate, colle, voa!",
+          "es": "¡Zambúllete, coge, vuela!",
+          "tprAction": {
+            "gl": "Baixar, coller e subir",
+            "es": "Bajar, coger y subir"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Debaixo da auga",
+        "es": "Debajo del agua"
+      },
+      "palabras": [
+        {
+          "id": "4_5.abril.s3.seabed",
+          "en": "Seabed",
+          "gl": "Fondo do mar",
+          "es": "Fondo del mar",
+          "tprAction": {
+            "gl": "Baixar as mans ata o chan",
+            "es": "Bajar las manos hasta el suelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s3.kelp",
+          "en": "Kelp",
+          "gl": "Laminaria",
+          "es": "Laminaria",
+          "tprAction": {
+            "gl": "Moverse ondulando coma alga",
+            "es": "Moverse ondulando como un alga"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s3.sea-urchin",
+          "en": "Sea urchin",
+          "gl": "Ourizo de mar",
+          "es": "Erizo de mar",
+          "tprAction": {
+            "gl": "Abrir os dedos coma púas",
+            "es": "Abrir los dedos como púas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s3.anemone",
+          "en": "Anemone",
+          "gl": "Anémona",
+          "es": "Anémona",
+          "tprAction": {
+            "gl": "Abrir e pechar os dedos amodo",
+            "es": "Abrir y cerrar los dedos despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s3.snorkel",
+          "en": "Snorkel",
+          "gl": "Tubo de bucear",
+          "es": "Tubo de buceo",
+          "tprAction": {
+            "gl": "Poñer un tubo imaxinario",
+            "es": "Ponerse un tubo imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s3.goggles",
+          "en": "Goggles",
+          "gl": "Lentes de bucear",
+          "es": "Gafas de bucear",
+          "tprAction": {
+            "gl": "Facer lentes coas mans",
+            "es": "Hacer gafas con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s3.shoal",
+          "en": "Shoal",
+          "gl": "Banco de peixes",
+          "es": "Banco de peces",
+          "tprAction": {
+            "gl": "Moverse todos xuntos",
+            "es": "Moverse todos juntos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s3.swim-underwater",
+          "en": "Swim underwater",
+          "gl": "Nadar baixo a auga",
+          "es": "Nadar bajo el agua",
+          "tprAction": {
+            "gl": "Aguantar o aire e nadar",
+            "es": "Aguantar el aire y nadar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s3.hold-your-breath",
+          "en": "Hold your breath",
+          "gl": "Aguantar o aire",
+          "es": "Aguantar la respiración",
+          "tprAction": {
+            "gl": "Inchar as meixelas",
+            "es": "Inflar las mejillas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s3.sway-with-the-current",
+          "en": "Sway with the current",
+          "gl": "Moverse coa corrente",
+          "es": "Moverse con la corriente",
+          "tprAction": {
+            "gl": "Balancearse amodo",
+            "es": "Balancearse despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s3.explore-the-seabed",
+          "en": "Explore the seabed",
+          "gl": "Explorar o fondo",
+          "es": "Explorar el fondo",
+          "tprAction": {
+            "gl": "Gatear mirando o chan",
+            "es": "Gatear mirando el suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s3.swim-in-a-group",
+          "en": "Swim in a group",
+          "gl": "Nadar en grupo",
+          "es": "Nadar en grupo",
+          "tprAction": {
+            "gl": "Moverse xuntos coma peixes",
+            "es": "Moverse juntos como peces"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s3.murky",
+          "en": "Murky",
+          "gl": "Turbio",
+          "es": "Turbio",
+          "tprAction": {
+            "gl": "Mover as mans diante dos ollos",
+            "es": "Mover las manos delante de los ojos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s3.crystal-clear",
+          "en": "Crystal-clear",
+          "gl": "Transparente",
+          "es": "Cristalino",
+          "tprAction": {
+            "gl": "Mirar a través dos dedos",
+            "es": "Mirar a través de los dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s3.deep-blue",
+          "en": "Deep blue",
+          "gl": "Azul fondo",
+          "es": "Azul profundo",
+          "tprAction": {
+            "gl": "Baixar amodo",
+            "es": "Bajar despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s3.spiny",
+          "en": "Spiny",
+          "gl": "Con púas",
+          "es": "Con púas",
+          "tprAction": {
+            "gl": "Tocar con coidado",
+            "es": "Tocar con cuidado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s3.what-lives-on-the-seabed",
+          "en": "What lives on the seabed?",
+          "gl": "Que vive no fondo do mar?",
+          "es": "¿Qué vive en el fondo del mar?",
+          "tprAction": {
+            "gl": "Mirar abaixo",
+            "es": "Mirar abajo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.abril.s3.don-t-touch-just-look",
+          "en": "Don't touch, just look",
+          "gl": "Non toques, só mira",
+          "es": "No toques, solo mira",
+          "tprAction": {
+            "gl": "Poñer as mans detrás",
+            "es": "Poner las manos detrás"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.abril.s3.the-deeper-you-go-the-darker-it-gets",
+          "en": "The deeper you go, the darker it gets",
+          "gl": "Canto máis fondo, máis escuro",
+          "es": "Cuanto más hondo, más oscuro",
+          "tprAction": {
+            "gl": "Baixar e pechar os ollos",
+            "es": "Bajar y cerrar los ojos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.abril.s3.fish-swim-together-in-a-shoal",
+          "en": "Fish swim together in a shoal",
+          "gl": "Os peixes nadan xuntos nun banco",
+          "es": "Los peces nadan juntos en un banco",
+          "tprAction": {
+            "gl": "Moverse todos xuntos",
+            "es": "Moverse todos juntos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Coidamos a natureza",
+        "es": "Cuidamos la naturaleza"
+      },
+      "palabras": [
+        {
+          "id": "4_5.abril.s4.litter",
+          "en": "Litter",
+          "gl": "Lixo",
+          "es": "Basura",
+          "tprAction": {
+            "gl": "Coller lixo do chan",
+            "es": "Coger basura del suelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s4.recycling-bin",
+          "en": "Recycling bin",
+          "gl": "Colector de reciclaxe",
+          "es": "Contenedor de reciclaje",
+          "tprAction": {
+            "gl": "Botar algo no colector",
+            "es": "Echar algo en el contenedor"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s4.plastic",
+          "en": "Plastic",
+          "gl": "Plástico",
+          "es": "Plástico",
+          "tprAction": {
+            "gl": "Engurrar un plástico",
+            "es": "Arrugar un plástico"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s4.glass-jar",
+          "en": "Glass jar",
+          "gl": "Bote de vidro",
+          "es": "Tarro de cristal",
+          "tprAction": {
+            "gl": "Suxeitar un bote con coidado",
+            "es": "Sostener un tarro con cuidado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s4.reusable-bag",
+          "en": "Reusable bag",
+          "gl": "Bolsa reutilizable",
+          "es": "Bolsa reutilizable",
+          "tprAction": {
+            "gl": "Dobrar e gardar a bolsa",
+            "es": "Doblar y guardar la bolsa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s4.compost",
+          "en": "Compost",
+          "gl": "Composto",
+          "es": "Compost",
+          "tprAction": {
+            "gl": "Botar restos de froita",
+            "es": "Echar restos de fruta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s4.nature",
+          "en": "Nature",
+          "gl": "Natureza",
+          "es": "Naturaleza",
+          "tprAction": {
+            "gl": "Abrir os brazos ao aire libre",
+            "es": "Abrir los brazos al aire libre"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.abril.s4.pick-up-litter",
+          "en": "Pick up litter",
+          "gl": "Recoller lixo",
+          "es": "Recoger basura",
+          "tprAction": {
+            "gl": "Agacharse e coller",
+            "es": "Agacharse y coger"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s4.recycle",
+          "en": "Recycle",
+          "gl": "Reciclar",
+          "es": "Reciclar",
+          "tprAction": {
+            "gl": "Facer un círculo con frechas",
+            "es": "Hacer un círculo con flechas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s4.reuse",
+          "en": "Reuse",
+          "gl": "Reutilizar",
+          "es": "Reutilizar",
+          "tprAction": {
+            "gl": "Usar outra vez a bolsa",
+            "es": "Usar otra vez la bolsa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s4.save-water",
+          "en": "Save water",
+          "gl": "Aforrar auga",
+          "es": "Ahorrar agua",
+          "tprAction": {
+            "gl": "Pechar a billa",
+            "es": "Cerrar el grifo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s4.turn-off-lights",
+          "en": "Turn off lights",
+          "gl": "Apagar as luces",
+          "es": "Apagar las luces",
+          "tprAction": {
+            "gl": "Premer un interruptor",
+            "es": "Pulsar un interruptor"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.abril.s4.tidy-beach",
+          "en": "Tidy beach",
+          "gl": "Praia limpa",
+          "es": "Playa limpia",
+          "tprAction": {
+            "gl": "Amosar a man baleira",
+            "es": "Enseñar la mano vacía"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s4.eco-friendly",
+          "en": "Eco-friendly",
+          "gl": "Respectuoso co planeta",
+          "es": "Respetuoso con el planeta",
+          "tprAction": {
+            "gl": "Abrazar unha bóla do mundo",
+            "es": "Abrazar una bola del mundo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s4.wasteful",
+          "en": "Wasteful",
+          "gl": "Que malgasta",
+          "es": "Que desperdicia",
+          "tprAction": {
+            "gl": "Deixar caer auga e parar",
+            "es": "Dejar caer agua y parar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s4.careful-with-nature",
+          "en": "Careful with nature",
+          "gl": "Coidadoso coa natureza",
+          "es": "Cuidadoso con la naturaleza",
+          "tprAction": {
+            "gl": "Pousar a man suave",
+            "es": "Posar la mano suave"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.abril.s4.plastic-goes-in-the-yellow-bin",
+          "en": "Plastic goes in the yellow bin",
+          "gl": "O plástico vai no colector amarelo",
+          "es": "El plástico va en el contenedor amarillo",
+          "tprAction": {
+            "gl": "Botar e sinalar o amarelo",
+            "es": "Echar y señalar el amarillo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.abril.s4.leave-only-footprints",
+          "en": "Leave only footprints",
+          "gl": "Deixa só pegadas",
+          "es": "Deja solo huellas",
+          "tprAction": {
+            "gl": "Pisar e mirar a pegada",
+            "es": "Pisar y mirar la huella"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.abril.s4.thumbs-up-for-a-clean-beach",
+          "en": "Thumbs up for a clean beach!",
+          "gl": "Polgar arriba pola praia limpa!",
+          "es": "¡Pulgar arriba por la playa limpia!",
+          "tprAction": {
+            "gl": "Levantar o polgar",
+            "es": "Levantar el pulgar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.abril.s4.turn-off-the-tap",
+          "en": "Turn off the tap!",
+          "gl": "Pecha a billa!",
+          "es": "¡Cierra el grifo!",
+          "tprAction": {
+            "gl": "Xirar a billa",
+            "es": "Girar el grifo"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

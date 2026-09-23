@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.2_3.febreiro",
+  "curso": "curso_2_3",
+  "orden": 6,
+  "mesCalendario": 2,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Disfraces de animais",
+        "es": "Disfraces de animales"
+      },
+      "palabras": [
+        {
+          "id": "2_3.febreiro.s1.tiger",
+          "en": "Tiger",
+          "gl": "Tigre",
+          "es": "Tigre",
+          "tprAction": {
+            "gl": "Poñer as mans coma poutas de tigre",
+            "es": "Poner las manos como garras de tigre"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s1.zebra",
+          "en": "Zebra",
+          "gl": "Cebra",
+          "es": "Cebra",
+          "tprAction": {
+            "gl": "Debuxar raias no brazo",
+            "es": "Dibujar rayas en el brazo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s1.penguin",
+          "en": "Penguin",
+          "gl": "Pingüín",
+          "es": "Pingüino",
+          "tprAction": {
+            "gl": "Camiñar con pasiños de pingüín",
+            "es": "Caminar con pasitos de pingüino"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s1.kangaroo",
+          "en": "Kangaroo",
+          "gl": "Canguro",
+          "es": "Canguro",
+          "tprAction": {
+            "gl": "Saltar cos pés xuntos",
+            "es": "Saltar con los pies juntos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s1.animal-ears",
+          "en": "Animal ears",
+          "gl": "Orellas de animal",
+          "es": "Orejas de animal",
+          "tprAction": {
+            "gl": "Poñer as mans coma orellas",
+            "es": "Poner las manos como orejas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s1.paws",
+          "en": "Paws",
+          "gl": "Poutas",
+          "es": "Zarpas",
+          "tprAction": {
+            "gl": "Camiñar a catro patas",
+            "es": "Caminar a cuatro patas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s1.mane",
+          "en": "Mane",
+          "gl": "Melena",
+          "es": "Melena",
+          "tprAction": {
+            "gl": "Axitar o pelo coma un león",
+            "es": "Agitar el pelo como un león"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s1.prowl",
+          "en": "Prowl",
+          "gl": "Axexar",
+          "es": "Acechar",
+          "tprAction": {
+            "gl": "Camiñar agachado amodo",
+            "es": "Caminar agachado despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s1.pounce",
+          "en": "Pounce",
+          "gl": "Abalanzarse",
+          "es": "Abalanzarse",
+          "tprAction": {
+            "gl": "Saltar cara adiante coas mans",
+            "es": "Saltar hacia adelante con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s1.growl",
+          "en": "Growl",
+          "gl": "Grunhir",
+          "es": "Gruñir",
+          "tprAction": {
+            "gl": "Facer «grrr» baixiño",
+            "es": "Hacer «grrr» bajito"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s1.stripe",
+          "en": "Stripe",
+          "gl": "Pintar raias",
+          "es": "Pintar rayas",
+          "tprAction": {
+            "gl": "Pintar raias na cara co dedo",
+            "es": "Pintar rayas en la cara con el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s1.hop-around",
+          "en": "Hop around",
+          "gl": "Saltar arredor",
+          "es": "Saltar alrededor",
+          "tprAction": {
+            "gl": "Saltar dando unha volta",
+            "es": "Saltar dando una vuelta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s1.stripy",
+          "en": "Stripy",
+          "gl": "Raiado",
+          "es": "Rayado",
+          "tprAction": {
+            "gl": "Tocar un pano de raias",
+            "es": "Tocar un pañuelo de rayas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s1.fierce",
+          "en": "Fierce",
+          "gl": "Feroz",
+          "es": "Feroz",
+          "tprAction": {
+            "gl": "Poñer cara de feroz rindo",
+            "es": "Poner cara de feroz riendo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s1.waddly",
+          "en": "Waddly",
+          "gl": "Bambeante",
+          "es": "Bamboleante",
+          "tprAction": {
+            "gl": "Bambearse coma un pingüín",
+            "es": "Bambolearse como un pingüino"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s1.hoppy",
+          "en": "Hoppy",
+          "gl": "Saltarín",
+          "es": "Brincador",
+          "tprAction": {
+            "gl": "Brincar sen parar",
+            "es": "Brincar sin parar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s1.i-m-a-tiger",
+          "en": "I'm a tiger!",
+          "gl": "Son un tigre!",
+          "es": "¡Soy un tigre!",
+          "tprAction": {
+            "gl": "Poñer as poutas e rir",
+            "es": "Poner las garras y reír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.febreiro.s1.grrr-grrr",
+          "en": "Grrr, grrr!",
+          "gl": "Grrr, grrr!",
+          "es": "¡Grrr, grrr!",
+          "tprAction": {
+            "gl": "Grunhir e sorrir",
+            "es": "Gruñir y sonreír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.febreiro.s1.hop-like-a-kangaroo",
+          "en": "Hop like a kangaroo",
+          "gl": "Salta coma un canguro",
+          "es": "Salta como un canguro",
+          "tprAction": {
+            "gl": "Saltar cos pés xuntos",
+            "es": "Saltar con los pies juntos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.febreiro.s1.walk-like-a-penguin",
+          "en": "Walk like a penguin",
+          "gl": "Camiña coma un pingüín",
+          "es": "Camina como un pingüino",
+          "tprAction": {
+            "gl": "Camiñar con pasiños curtos",
+            "es": "Caminar con pasitos cortos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Na selva",
+        "es": "En la selva"
+      },
+      "palabras": [
+        {
+          "id": "2_3.febreiro.s2.jungle",
+          "en": "Jungle",
+          "gl": "Selva",
+          "es": "Selva",
+          "tprAction": {
+            "gl": "Apartar follas coas mans",
+            "es": "Apartar hojas con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s2.hippo",
+          "en": "Hippo",
+          "gl": "Hipopótamo",
+          "es": "Hipopótamo",
+          "tprAction": {
+            "gl": "Abrir moito a boca",
+            "es": "Abrir mucho la boca"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s2.gorilla",
+          "en": "Gorilla",
+          "gl": "Gorila",
+          "es": "Gorila",
+          "tprAction": {
+            "gl": "Bater no peito suave",
+            "es": "Golpear el pecho suave"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s2.parrot-feather",
+          "en": "Parrot feather",
+          "gl": "Pluma de loro",
+          "es": "Pluma de loro",
+          "tprAction": {
+            "gl": "Mover unha pluma de cores",
+            "es": "Mover una pluma de colores"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s2.vine",
+          "en": "Vine",
+          "gl": "Liana",
+          "es": "Liana",
+          "tprAction": {
+            "gl": "Agarrarse a unha liana imaxinaria",
+            "es": "Agarrarse a una liana imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s2.palm-tree",
+          "en": "Palm tree",
+          "gl": "Palmeira",
+          "es": "Palmera",
+          "tprAction": {
+            "gl": "Estirar os brazos coma unha palmeira",
+            "es": "Estirar los brazos como una palmera"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s2.tiger-cub",
+          "en": "Tiger cub",
+          "gl": "Tigriño",
+          "es": "Cachorro de tigre",
+          "tprAction": {
+            "gl": "Acurrucarse coma un tigriño",
+            "es": "Acurrucarse como un cachorro de tigre"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s2.swing-from",
+          "en": "Swing from",
+          "gl": "Colgar de",
+          "es": "Colgarse de",
+          "tprAction": {
+            "gl": "Balancear os brazos coma un mono",
+            "es": "Balancear los brazos como un mono"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s2.beat-chest",
+          "en": "Beat chest",
+          "gl": "Bater no peito",
+          "es": "Golpear el pecho",
+          "tprAction": {
+            "gl": "Bater no peito coma un gorila",
+            "es": "Golpear el pecho como un gorila"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s2.tiptoe-past",
+          "en": "Tiptoe past",
+          "gl": "Pasar de puntas",
+          "es": "Pasar de puntillas",
+          "tprAction": {
+            "gl": "Pasar de puntas en silencio",
+            "es": "Pasar de puntillas en silencio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s2.peer",
+          "en": "Peer",
+          "gl": "Asomarse a ver",
+          "es": "Asomarse a mirar",
+          "tprAction": {
+            "gl": "Mirar entre as follas",
+            "es": "Mirar entre las hojas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s2.yawn-wide",
+          "en": "Yawn wide",
+          "gl": "Bocexar moito",
+          "es": "Bostezar mucho",
+          "tprAction": {
+            "gl": "Bocexar coma un hipopótamo",
+            "es": "Bostezar como un hipopótamo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s2.jungly",
+          "en": "Jungly",
+          "gl": "Selvático",
+          "es": "Selvático",
+          "tprAction": {
+            "gl": "Mover as mans coma herba alta",
+            "es": "Mover las manos como hierba alta"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s2.enormous",
+          "en": "Enormous",
+          "gl": "Enorme",
+          "es": "Enorme",
+          "tprAction": {
+            "gl": "Abrir os brazos moi grandes",
+            "es": "Abrir los brazos muy grandes"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s2.hot-and-sticky",
+          "en": "Hot and sticky",
+          "gl": "Quente e húmido",
+          "es": "Caluroso y húmedo",
+          "tprAction": {
+            "gl": "Abanarse coa man",
+            "es": "Abanicarse con la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s2.leafy-jungle",
+          "en": "Leafy jungle",
+          "gl": "Selva frondosa",
+          "es": "Selva frondosa",
+          "tprAction": {
+            "gl": "Mover os dedos coma follas",
+            "es": "Mover los dedos como hojas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s2.who-lives-here",
+          "en": "Who lives here?",
+          "gl": "Quen vive aquí?",
+          "es": "¿Quién vive aquí?",
+          "tprAction": {
+            "gl": "Mirar arredor sorprendido",
+            "es": "Mirar alrededor sorprendido"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.febreiro.s2.big-mouth-hippo",
+          "en": "Big mouth, hippo!",
+          "gl": "Boca grande, hipopótamo!",
+          "es": "¡Boca grande, hipopótamo!",
+          "tprAction": {
+            "gl": "Abrir a boca moito",
+            "es": "Abrir mucho la boca"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.febreiro.s2.through-the-jungle",
+          "en": "Through the jungle",
+          "gl": "Pola selva",
+          "es": "Por la selva",
+          "tprAction": {
+            "gl": "Camiñar apartando follas",
+            "es": "Caminar apartando hojas"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.febreiro.s2.up-the-palm-tree",
+          "en": "Up the palm tree",
+          "gl": "Pola palmeira arriba",
+          "es": "Por la palmera arriba",
+          "tprAction": {
+            "gl": "Subir os brazos coma trepando",
+            "es": "Subir los brazos como trepando"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Animais do frío",
+        "es": "Animales del frío"
+      },
+      "palabras": [
+        {
+          "id": "2_3.febreiro.s3.polar-bear",
+          "en": "Polar bear",
+          "gl": "Oso polar",
+          "es": "Oso polar",
+          "tprAction": {
+            "gl": "Camiñar pesado e amodo",
+            "es": "Caminar pesado y despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s3.seal",
+          "en": "Seal",
+          "gl": "Foca",
+          "es": "Foca",
+          "tprAction": {
+            "gl": "Bater as mans coma aletas",
+            "es": "Golpear las manos como aletas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s3.walrus",
+          "en": "Walrus",
+          "gl": "Morsa",
+          "es": "Morsa",
+          "tprAction": {
+            "gl": "Poñer dous dedos coma cairos",
+            "es": "Poner dos dedos como colmillos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s3.arctic-fox",
+          "en": "Arctic fox",
+          "gl": "Raposo ártico",
+          "es": "Zorro ártico",
+          "tprAction": {
+            "gl": "Enroscarse coma un raposo",
+            "es": "Enroscarse como un zorro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s3.iceberg",
+          "en": "Iceberg",
+          "gl": "Iceberg",
+          "es": "Iceberg",
+          "tprAction": {
+            "gl": "Facer un pico coas mans",
+            "es": "Hacer un pico con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s3.igloo",
+          "en": "Igloo",
+          "gl": "Iglú",
+          "es": "Iglú",
+          "tprAction": {
+            "gl": "Facer unha cúpula cos brazos",
+            "es": "Hacer una cúpula con los brazos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s3.fishing-hole",
+          "en": "Fishing hole",
+          "gl": "Burato no xeo",
+          "es": "Agujero en el hielo",
+          "tprAction": {
+            "gl": "Facer un círculo no chan",
+            "es": "Hacer un círculo en el suelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s3.clap-flippers",
+          "en": "Clap flippers",
+          "gl": "Bater as aletas",
+          "es": "Batir las aletas",
+          "tprAction": {
+            "gl": "Bater palmas coma unha foca",
+            "es": "Dar palmas como una foca"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s3.slide-on-ice",
+          "en": "Slide on ice",
+          "gl": "Esvarar no xeo",
+          "es": "Deslizarse en el hielo",
+          "tprAction": {
+            "gl": "Esvarar cos calcetíns",
+            "es": "Deslizarse con los calcetines"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s3.waddle-along",
+          "en": "Waddle along",
+          "gl": "Camiñar bambeando",
+          "es": "Caminar bamboleándose",
+          "tprAction": {
+            "gl": "Bambearse dun lado a outro",
+            "es": "Bambolearse de un lado a otro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s3.belly-slide",
+          "en": "Belly slide",
+          "gl": "Esvarar de barriga",
+          "es": "Deslizarse de barriga",
+          "tprAction": {
+            "gl": "Deitarse de barriga e esvarar",
+            "es": "Tumbarse de barriga y deslizarse"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s3.huddle-together",
+          "en": "Huddle together",
+          "gl": "Xuntarse para quentarse",
+          "es": "Juntarse para calentarse",
+          "tprAction": {
+            "gl": "Apertarse todos xuntos",
+            "es": "Apretarse todos juntos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s3.icy",
+          "en": "Icy",
+          "gl": "Xeado",
+          "es": "Helado",
+          "tprAction": {
+            "gl": "Tremer coma no xeo",
+            "es": "Temblar como en el hielo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s3.snowy-white",
+          "en": "Snowy white",
+          "gl": "Branco coma a neve",
+          "es": "Blanco como la nieve",
+          "tprAction": {
+            "gl": "Sinalar algo branco",
+            "es": "Señalar algo blanco"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s3.furry-coat",
+          "en": "Furry coat",
+          "gl": "Pelaxe grosa",
+          "es": "Pelaje grueso",
+          "tprAction": {
+            "gl": "Acariñar un peluche grosiño",
+            "es": "Acariciar un peluche gordito"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s3.arctic",
+          "en": "Arctic",
+          "gl": "Ártico",
+          "es": "Ártico",
+          "tprAction": {
+            "gl": "Abrazarse polo frío",
+            "es": "Abrazarse por el frío"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s3.brr-the-arctic",
+          "en": "Brr, the Arctic!",
+          "gl": "Brr, o Ártico!",
+          "es": "¡Brr, el Ártico!",
+          "tprAction": {
+            "gl": "Tremer e sorrir",
+            "es": "Temblar y sonreír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.febreiro.s3.slide-like-a-penguin",
+          "en": "Slide like a penguin",
+          "gl": "Esvara coma un pingüín",
+          "es": "Deslízate como un pingüino",
+          "tprAction": {
+            "gl": "Esvarar cos brazos pegados",
+            "es": "Deslizarse con los brazos pegados"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.febreiro.s3.seals-and-bears",
+          "en": "Seals and bears",
+          "gl": "Focas e osos",
+          "es": "Focas y osos",
+          "tprAction": {
+            "gl": "Bater palmas e camiñar pesado",
+            "es": "Dar palmas y caminar pesado"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.febreiro.s3.on-the-ice",
+          "en": "On the ice",
+          "gl": "No xeo",
+          "es": "En el hielo",
+          "tprAction": {
+            "gl": "Camiñar con coidado",
+            "es": "Caminar con cuidado"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "O desfile de animais",
+        "es": "El desfile de animales"
+      },
+      "palabras": [
+        {
+          "id": "2_3.febreiro.s4.animal-parade",
+          "en": "Animal parade",
+          "gl": "Desfile de animais",
+          "es": "Desfile de animales",
+          "tprAction": {
+            "gl": "Camiñar en fila coma animais",
+            "es": "Caminar en fila como animales"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s4.face-mask",
+          "en": "Face mask",
+          "gl": "Careta",
+          "es": "Careta",
+          "tprAction": {
+            "gl": "Poñer e quitar a careta",
+            "es": "Poner y quitar la careta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s4.animal-tail",
+          "en": "Animal tail",
+          "gl": "Rabo de disfrace",
+          "es": "Cola de disfraz",
+          "tprAction": {
+            "gl": "Menear o rabo do disfrace",
+            "es": "Menear la cola del disfraz"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s4.horns",
+          "en": "Horns",
+          "gl": "Cornos",
+          "es": "Cuernos",
+          "tprAction": {
+            "gl": "Poñer os dedos coma cornos",
+            "es": "Poner los dedos como cuernos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s4.paw-prints",
+          "en": "Paw prints",
+          "gl": "Pegadas de animal",
+          "es": "Huellas de animal",
+          "tprAction": {
+            "gl": "Pisar as pegadas pintadas",
+            "es": "Pisar las huellas pintadas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s4.big-drum",
+          "en": "Big drum",
+          "gl": "Bombo",
+          "es": "Bombo",
+          "tprAction": {
+            "gl": "Bater no bombo ao marchar",
+            "es": "Golpear el bombo al marchar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s4.cape",
+          "en": "Cape",
+          "gl": "Capa",
+          "es": "Capa",
+          "tprAction": {
+            "gl": "Xirar coa capa posta",
+            "es": "Girar con la capa puesta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.febreiro.s4.parade-around",
+          "en": "Parade around",
+          "gl": "Desfilar",
+          "es": "Desfilar",
+          "tprAction": {
+            "gl": "Camiñar levantando os xeonllos",
+            "es": "Caminar levantando las rodillas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s4.show-off",
+          "en": "Show off",
+          "gl": "Presumir",
+          "es": "Presumir",
+          "tprAction": {
+            "gl": "Xirar e amosar o disfrace",
+            "es": "Girar y enseñar el disfraz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s4.roar-loudly",
+          "en": "Roar loudly",
+          "gl": "Ruxir forte",
+          "es": "Rugir fuerte",
+          "tprAction": {
+            "gl": "Ruxir coas mans abertas",
+            "es": "Rugir con las manos abiertas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s4.flap-wings",
+          "en": "Flap wings",
+          "gl": "Bater as ás",
+          "es": "Batir las alas",
+          "tprAction": {
+            "gl": "Bater os brazos coma ás",
+            "es": "Batir los brazos como alas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s4.wiggle-a-tail",
+          "en": "Wiggle a tail",
+          "gl": "Menear o rabo",
+          "es": "Menear la cola",
+          "tprAction": {
+            "gl": "Menear o rabo do disfrace",
+            "es": "Menear la cola del disfraz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.febreiro.s4.dressed-up",
+          "en": "Dressed up",
+          "gl": "Disfrazado",
+          "es": "Disfrazado",
+          "tprAction": {
+            "gl": "Amosar o disfrace",
+            "es": "Enseñar el disfraz"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s4.silly-monster",
+          "en": "Silly monster",
+          "gl": "Monstro gracioso",
+          "es": "Monstruo gracioso",
+          "tprAction": {
+            "gl": "Poñer cara de monstro rindo",
+            "es": "Poner cara de monstruo riendo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s4.feathery-tail",
+          "en": "Feathery tail",
+          "gl": "Rabo de plumas",
+          "es": "Cola de plumas",
+          "tprAction": {
+            "gl": "Mover o rabo de plumas",
+            "es": "Mover la cola de plumas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s4.proud-peacock",
+          "en": "Proud peacock",
+          "gl": "Pavo real presumido",
+          "es": "Pavo real presumido",
+          "tprAction": {
+            "gl": "Abrir os brazos coma un pavo real",
+            "es": "Abrir los brazos como un pavo real"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.febreiro.s4.what-animal-are-you",
+          "en": "What animal are you?",
+          "gl": "Que animal es?",
+          "es": "¿Qué animal eres?",
+          "tprAction": {
+            "gl": "Sinalar o disfrace dun amigo",
+            "es": "Señalar el disfraz de un amigo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.febreiro.s4.i-m-a-lion",
+          "en": "I'm a lion!",
+          "gl": "Son un león!",
+          "es": "¡Soy un león!",
+          "tprAction": {
+            "gl": "Ruxir e sacudir a melena",
+            "es": "Rugir y sacudir la melena"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.febreiro.s4.let-s-parade",
+          "en": "Let's parade!",
+          "gl": "Imos desfilar!",
+          "es": "¡Vamos a desfilar!",
+          "tprAction": {
+            "gl": "Poñerse en fila e marchar",
+            "es": "Ponerse en fila y marchar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.febreiro.s4.tails-and-wings",
+          "en": "Tails and wings",
+          "gl": "Rabos e ás",
+          "es": "Colas y alas",
+          "tprAction": {
+            "gl": "Menear o rabo e bater as ás",
+            "es": "Menear la cola y batir las alas"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

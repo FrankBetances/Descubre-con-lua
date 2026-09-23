@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.2_3.maio",
+  "curso": "curso_2_3",
+  "orden": 9,
+  "mesCalendario": 5,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Lavo eu só",
+        "es": "Me lavo solo"
+      },
+      "palabras": [
+        {
+          "id": "2_3.maio.s1.soap-pump",
+          "en": "Soap pump",
+          "gl": "Dosificador de xabón",
+          "es": "Dosificador de jabón",
+          "tprAction": {
+            "gl": "Premer o dosificador",
+            "es": "Apretar el dosificador"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s1.tap-water",
+          "en": "Tap water",
+          "gl": "Auga da billa",
+          "es": "Agua del grifo",
+          "tprAction": {
+            "gl": "Pór as mans baixo a auga",
+            "es": "Poner las manos bajo el agua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s1.paper-towel",
+          "en": "Paper towel",
+          "gl": "Papel de secar",
+          "es": "Papel de secar",
+          "tprAction": {
+            "gl": "Coller un papel e secar",
+            "es": "Coger un papel y secar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s1.bin",
+          "en": "Bin",
+          "gl": "Papeleira",
+          "es": "Papelera",
+          "tprAction": {
+            "gl": "Botar o papel na papeleira",
+            "es": "Tirar el papel a la papelera"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s1.mirror-check",
+          "en": "Mirror check",
+          "gl": "Mirada ao espello",
+          "es": "Mirada al espejo",
+          "tprAction": {
+            "gl": "Mirarse no espello",
+            "es": "Mirarse en el espejo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s1.toothpaste",
+          "en": "Toothpaste",
+          "gl": "Pasta de dentes",
+          "es": "Pasta de dientes",
+          "tprAction": {
+            "gl": "Poñer un pouco de pasta",
+            "es": "Poner un poco de pasta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s1.hairband",
+          "en": "Hairband",
+          "gl": "Goma do pelo",
+          "es": "Goma del pelo",
+          "tprAction": {
+            "gl": "Recoller o pelo cunha goma",
+            "es": "Recoger el pelo con una goma"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s1.pump-the-soap",
+          "en": "Pump the soap",
+          "gl": "Premer o xabón",
+          "es": "Apretar el jabón",
+          "tprAction": {
+            "gl": "Premer unha vez o dosificador",
+            "es": "Apretar una vez el dosificador"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s1.rub-palms",
+          "en": "Rub palms",
+          "gl": "Fregar as palmas",
+          "es": "Frotar las palmas",
+          "tprAction": {
+            "gl": "Fregar palma con palma",
+            "es": "Frotar palma con palma"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s1.scrub-nails",
+          "en": "Scrub nails",
+          "gl": "Fregar as uñas",
+          "es": "Frotar las uñas",
+          "tprAction": {
+            "gl": "Fregar as puntas dos dedos",
+            "es": "Frotar las puntas de los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s1.shake-dry",
+          "en": "Shake dry",
+          "gl": "Sacudir para secar",
+          "es": "Sacudir para secar",
+          "tprAction": {
+            "gl": "Sacudir as mans tres veces",
+            "es": "Sacudir las manos tres veces"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s1.throw-away",
+          "en": "Throw away",
+          "gl": "Tirar",
+          "es": "Tirar",
+          "tprAction": {
+            "gl": "Botar o papel á papeleira",
+            "es": "Tirar el papel a la papelera"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s1.all-by-myself",
+          "en": "All by myself",
+          "gl": "Eu só",
+          "es": "Yo solo",
+          "tprAction": {
+            "gl": "Tocar o peito orgulloso",
+            "es": "Tocar el pecho orgulloso"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s1.spotless",
+          "en": "Spotless",
+          "gl": "Impecable",
+          "es": "Impecable",
+          "tprAction": {
+            "gl": "Amosar as mans limpas",
+            "es": "Enseñar las manos limpias"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s1.minty",
+          "en": "Minty",
+          "gl": "De menta",
+          "es": "De menta",
+          "tprAction": {
+            "gl": "Soprar alento fresco",
+            "es": "Soplar aliento fresco"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s1.independent",
+          "en": "Independent",
+          "gl": "Autónomo",
+          "es": "Autónomo",
+          "tprAction": {
+            "gl": "Facer o xesto de «podo eu»",
+            "es": "Hacer el gesto de «puedo yo»"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s1.i-can-do-it",
+          "en": "I can do it!",
+          "gl": "Podo eu!",
+          "es": "¡Puedo yo!",
+          "tprAction": {
+            "gl": "Levantar os brazos orgulloso",
+            "es": "Levantar los brazos orgulloso"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.maio.s1.soap-rub-rinse",
+          "en": "Soap, rub, rinse",
+          "gl": "Xabón, fregar, aclarar",
+          "es": "Jabón, frotar, aclarar",
+          "tprAction": {
+            "gl": "Facer os tres xestos",
+            "es": "Hacer los tres gestos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.maio.s1.paper-in-the-bin",
+          "en": "Paper in the bin",
+          "gl": "Papel na papeleira",
+          "es": "Papel en la papelera",
+          "tprAction": {
+            "gl": "Botar o papel",
+            "es": "Tirar el papel"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.maio.s1.front-and-back",
+          "en": "Front and back",
+          "gl": "Por diante e por detrás",
+          "es": "Por delante y por detrás",
+          "tprAction": {
+            "gl": "Fregar a palma e o dorso",
+            "es": "Frotar la palma y el dorso"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Os dentes",
+        "es": "Los dientes"
+      },
+      "palabras": [
+        {
+          "id": "2_3.maio.s2.brush-head",
+          "en": "Brush head",
+          "gl": "Cabeza do cepillo",
+          "es": "Cabeza del cepillo",
+          "tprAction": {
+            "gl": "Amosar a cabeza do cepillo",
+            "es": "Enseñar la cabeza del cepillo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s2.rinse-cup",
+          "en": "Rinse cup",
+          "gl": "Vaso de enxaugar",
+          "es": "Vaso de enjuagar",
+          "tprAction": {
+            "gl": "Encher o vaso de auga",
+            "es": "Llenar el vaso de agua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s2.smile-teeth",
+          "en": "Smile teeth",
+          "gl": "Dentes ao sorrir",
+          "es": "Dientes al sonreír",
+          "tprAction": {
+            "gl": "Sorrir amosando os dentes",
+            "es": "Sonreír enseñando los dientes"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s2.back-teeth",
+          "en": "Back teeth",
+          "gl": "Moas",
+          "es": "Muelas",
+          "tprAction": {
+            "gl": "Sinalar as moas",
+            "es": "Señalar las muelas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s2.front-teeth",
+          "en": "Front teeth",
+          "gl": "Dentes de diante",
+          "es": "Dientes de delante",
+          "tprAction": {
+            "gl": "Sinalar os dentes de diante",
+            "es": "Señalar los dientes de delante"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s2.sink-plug",
+          "en": "Sink plug",
+          "gl": "Tapón do lavabo",
+          "es": "Tapón del lavabo",
+          "tprAction": {
+            "gl": "Poñer e quitar o tapón",
+            "es": "Poner y quitar el tapón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s2.timer-song",
+          "en": "Timer song",
+          "gl": "Canción de dous minutos",
+          "es": "Canción de dos minutos",
+          "tprAction": {
+            "gl": "Cantar mentres se cepilla",
+            "es": "Cantar mientras se cepilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s2.brush-up-and-down",
+          "en": "Brush up and down",
+          "gl": "Cepillar arriba e abaixo",
+          "es": "Cepillar arriba y abajo",
+          "tprAction": {
+            "gl": "Mover o cepillo arriba e abaixo",
+            "es": "Mover el cepillo arriba y abajo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s2.spit-out",
+          "en": "Spit out",
+          "gl": "Cuspir",
+          "es": "Escupir",
+          "tprAction": {
+            "gl": "Cuspir no lavabo",
+            "es": "Escupir en el lavabo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s2.gargle",
+          "en": "Gargle",
+          "gl": "Facer gárgaras",
+          "es": "Hacer gárgaras",
+          "tprAction": {
+            "gl": "Facer gárgaras con auga",
+            "es": "Hacer gárgaras con agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s2.swish",
+          "en": "Swish",
+          "gl": "Enxaugar",
+          "es": "Enjuagar",
+          "tprAction": {
+            "gl": "Mover a auga na boca",
+            "es": "Mover el agua en la boca"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s2.open-the-mouth-wide",
+          "en": "Open the mouth wide",
+          "gl": "Abrir moito a boca",
+          "es": "Abrir mucho la boca",
+          "tprAction": {
+            "gl": "Abrir a boca coma un león",
+            "es": "Abrir la boca como un león"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s2.sparkly-teeth",
+          "en": "Sparkly teeth",
+          "gl": "Dentes brillantes",
+          "es": "Dientes brillantes",
+          "tprAction": {
+            "gl": "Sorrir con todos os dentes",
+            "es": "Sonreír con todos los dientes"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s2.foamy-mouth",
+          "en": "Foamy mouth",
+          "gl": "Boca con escuma",
+          "es": "Boca con espuma",
+          "tprAction": {
+            "gl": "Sinalar a escuma",
+            "es": "Señalar la espuma"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s2.fresh-breath",
+          "en": "Fresh breath",
+          "gl": "Alento fresco",
+          "es": "Aliento fresco",
+          "tprAction": {
+            "gl": "Soprar na man e cheirar",
+            "es": "Soplar en la mano y oler"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s2.wobbly-tooth",
+          "en": "Wobbly tooth",
+          "gl": "Dente que se move",
+          "es": "Diente que se mueve",
+          "tprAction": {
+            "gl": "Tocar un dente coa lingua",
+            "es": "Tocar un diente con la lengua"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s2.brush-brush-brush",
+          "en": "Brush, brush, brush",
+          "gl": "Cepilla, cepilla",
+          "es": "Cepilla, cepilla",
+          "tprAction": {
+            "gl": "Mover o cepillo no aire",
+            "es": "Mover el cepillo en el aire"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.maio.s2.show-me-your-teeth",
+          "en": "Show me your teeth",
+          "gl": "Amósame os dentes",
+          "es": "Enséñame los dientes",
+          "tprAction": {
+            "gl": "Sorrir moito",
+            "es": "Sonreír mucho"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.maio.s2.top-and-bottom",
+          "en": "Top and bottom",
+          "gl": "Arriba e abaixo",
+          "es": "Arriba y abajo",
+          "tprAction": {
+            "gl": "Sinalar os dentes de arriba e abaixo",
+            "es": "Señalar los dientes de arriba y abajo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.maio.s2.spit-in-the-sink",
+          "en": "Spit in the sink",
+          "gl": "Cospe no lavabo",
+          "es": "Escupe en el lavabo",
+          "tprAction": {
+            "gl": "Cuspir no lavabo",
+            "es": "Escupir en el lavabo"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Xogos con auga",
+        "es": "Juegos con agua"
+      },
+      "palabras": [
+        {
+          "id": "2_3.maio.s3.water-table",
+          "en": "Water table",
+          "gl": "Mesa de auga",
+          "es": "Mesa de agua",
+          "tprAction": {
+            "gl": "Pousar as mans na mesa de auga",
+            "es": "Posar las manos en la mesa de agua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s3.sieve",
+          "en": "Sieve",
+          "gl": "Coador",
+          "es": "Colador",
+          "tprAction": {
+            "gl": "Deixar escorrer auga polo coador",
+            "es": "Dejar escurrir agua por el colador"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s3.measuring-cup",
+          "en": "Measuring cup",
+          "gl": "Vaso medidor",
+          "es": "Vaso medidor",
+          "tprAction": {
+            "gl": "Encher ata a raia",
+            "es": "Llenar hasta la raya"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s3.water-wheel",
+          "en": "Water wheel",
+          "gl": "Roda de auga",
+          "es": "Rueda de agua",
+          "tprAction": {
+            "gl": "Botar auga na roda",
+            "es": "Echar agua en la rueda"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s3.pipette",
+          "en": "Pipette",
+          "gl": "Pipeta",
+          "es": "Pipeta",
+          "tprAction": {
+            "gl": "Collar auga coa pipeta",
+            "es": "Coger agua con la pipeta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s3.squirter",
+          "en": "Squirter",
+          "gl": "Pistola de auga",
+          "es": "Pistola de agua",
+          "tprAction": {
+            "gl": "Premer e botar auga",
+            "es": "Apretar y echar agua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s3.sponge-squeeze",
+          "en": "Sponge squeeze",
+          "gl": "Esponxa mollada",
+          "es": "Esponja mojada",
+          "tprAction": {
+            "gl": "Espremer a esponxa",
+            "es": "Escurrir la esponja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s3.pour-carefully",
+          "en": "Pour carefully",
+          "gl": "Verter con coidado",
+          "es": "Verter con cuidado",
+          "tprAction": {
+            "gl": "Verter amodo dun vaso a outro",
+            "es": "Verter despacio de un vaso a otro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s3.squirt",
+          "en": "Squirt",
+          "gl": "Botar un chorro",
+          "es": "Echar un chorro",
+          "tprAction": {
+            "gl": "Premer e botar un chorro",
+            "es": "Apretar y echar un chorro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s3.strain",
+          "en": "Strain",
+          "gl": "Coar",
+          "es": "Colar",
+          "tprAction": {
+            "gl": "Pasar auga polo coador",
+            "es": "Pasar agua por el colador"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s3.float-or-sink",
+          "en": "Float or sink",
+          "gl": "Flotar ou afundir",
+          "es": "Flotar o hundirse",
+          "tprAction": {
+            "gl": "Botar un obxecto e mirar",
+            "es": "Echar un objeto y mirar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s3.wring-out",
+          "en": "Wring out",
+          "gl": "Espremer",
+          "es": "Escurrir",
+          "tprAction": {
+            "gl": "Retorcer un pano mollado",
+            "es": "Retorcer un paño mojado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s3.sploshy",
+          "en": "Sploshy",
+          "gl": "Chapoteante",
+          "es": "Chapoteante",
+          "tprAction": {
+            "gl": "Chapotear coas mans",
+            "es": "Chapotear con las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s3.overflowing",
+          "en": "Overflowing",
+          "gl": "Desbordando",
+          "es": "Rebosando",
+          "tprAction": {
+            "gl": "Encher o vaso ata que rebose",
+            "es": "Llenar el vaso hasta que rebose"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s3.leaky",
+          "en": "Leaky",
+          "gl": "Que perde auga",
+          "es": "Que gotea",
+          "tprAction": {
+            "gl": "Botar auga nun vaso con burato",
+            "es": "Echar agua en un vaso con agujero"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s3.bubbly-water",
+          "en": "Bubbly water",
+          "gl": "Auga con burbullas",
+          "es": "Agua con burbujas",
+          "tprAction": {
+            "gl": "Soprar na auga cunha palla",
+            "es": "Soplar en el agua con una pajita"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s3.will-it-float",
+          "en": "Will it float?",
+          "gl": "Flotará?",
+          "es": "¿Flotará?",
+          "tprAction": {
+            "gl": "Botar un obxecto e agardar",
+            "es": "Echar un objeto y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.maio.s3.oops-it-spilled",
+          "en": "Oops, it spilled!",
+          "gl": "Ai, verteuse!",
+          "es": "¡Uy, se ha derramado!",
+          "tprAction": {
+            "gl": "Sinalar a auga e rir",
+            "es": "Señalar el agua y reír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.maio.s3.from-cup-to-cup",
+          "en": "From cup to cup",
+          "gl": "De vaso en vaso",
+          "es": "De vaso en vaso",
+          "tprAction": {
+            "gl": "Verter dun vaso a outro",
+            "es": "Verter de un vaso a otro"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.maio.s3.full-to-the-top",
+          "en": "Full to the top",
+          "gl": "Cheo ata arriba",
+          "es": "Lleno hasta arriba",
+          "tprAction": {
+            "gl": "Encher ata o bordo",
+            "es": "Llenar hasta el borde"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Lavamos a roupa",
+        "es": "Lavamos la ropa"
+      },
+      "palabras": [
+        {
+          "id": "2_3.maio.s4.washing-line",
+          "en": "Washing line",
+          "gl": "Tendal",
+          "es": "Tendedero",
+          "tprAction": {
+            "gl": "Estirar unha corda imaxinaria",
+            "es": "Estirar una cuerda imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s4.peg-bag",
+          "en": "Peg bag",
+          "gl": "Bolsa das pinzas",
+          "es": "Bolsa de las pinzas",
+          "tprAction": {
+            "gl": "Coller unha pinza",
+            "es": "Coger una pinza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s4.clothes-peg",
+          "en": "Clothes peg",
+          "gl": "Pinza",
+          "es": "Pinza",
+          "tprAction": {
+            "gl": "Abrir e pechar a pinza",
+            "es": "Abrir y cerrar la pinza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s4.laundry-basket",
+          "en": "Laundry basket",
+          "gl": "Cesto da roupa",
+          "es": "Cesto de la ropa",
+          "tprAction": {
+            "gl": "Levar o cesto coas dúas mans",
+            "es": "Llevar el cesto con las dos manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s4.washing-machine",
+          "en": "Washing machine",
+          "gl": "Lavadora",
+          "es": "Lavadora",
+          "tprAction": {
+            "gl": "Xirar as mans coma a lavadora",
+            "es": "Girar las manos como la lavadora"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s4.doll-clothes",
+          "en": "Doll clothes",
+          "gl": "Roupa de boneca",
+          "es": "Ropa de muñeca",
+          "tprAction": {
+            "gl": "Lavar a roupa da boneca",
+            "es": "Lavar la ropa de la muñeca"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s4.bucket-of-water",
+          "en": "Bucket of water",
+          "gl": "Balde de auga",
+          "es": "Cubo de agua",
+          "tprAction": {
+            "gl": "Levar o balde con coidado",
+            "es": "Llevar el cubo con cuidado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.maio.s4.hang-out",
+          "en": "Hang out",
+          "gl": "Tender",
+          "es": "Tender",
+          "tprAction": {
+            "gl": "Colgar a roupa na corda",
+            "es": "Colgar la ropa en la cuerda"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s4.peg-up",
+          "en": "Peg up",
+          "gl": "Suxeitar coa pinza",
+          "es": "Sujetar con la pinza",
+          "tprAction": {
+            "gl": "Pór unha pinza na roupa",
+            "es": "Poner una pinza en la ropa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s4.soak",
+          "en": "Soak",
+          "gl": "Remollar",
+          "es": "Remojar",
+          "tprAction": {
+            "gl": "Meter a roupa na auga",
+            "es": "Meter la ropa en el agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s4.take-down",
+          "en": "Take down",
+          "gl": "Recoller a roupa",
+          "es": "Descolgar",
+          "tprAction": {
+            "gl": "Quitar a roupa da corda",
+            "es": "Quitar la ropa de la cuerda"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s4.fold-up",
+          "en": "Fold up",
+          "gl": "Dobrar",
+          "es": "Doblar",
+          "tprAction": {
+            "gl": "Dobrar un pano pola metade",
+            "es": "Doblar un pañuelo por la mitad"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.maio.s4.dripping-clothes",
+          "en": "Dripping clothes",
+          "gl": "Roupa pingando",
+          "es": "Ropa goteando",
+          "tprAction": {
+            "gl": "Sacudir a roupa mollada",
+            "es": "Sacudir la ropa mojada"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s4.sun-dried",
+          "en": "Sun-dried",
+          "gl": "Seco ao sol",
+          "es": "Secado al sol",
+          "tprAction": {
+            "gl": "Cheirar a roupa seca",
+            "es": "Oler la ropa seca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s4.crumpled",
+          "en": "Crumpled",
+          "gl": "Engurrado",
+          "es": "Arrugado",
+          "tprAction": {
+            "gl": "Engurrar un pano",
+            "es": "Arrugar un pañuelo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s4.neatly-folded",
+          "en": "Neatly folded",
+          "gl": "Ben dobrado",
+          "es": "Bien doblado",
+          "tprAction": {
+            "gl": "Amosar o pano dobrado",
+            "es": "Enseñar el pañuelo doblado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.maio.s4.wash-wash-the-socks",
+          "en": "Wash, wash the socks",
+          "gl": "Lava, lava os calcetíns",
+          "es": "Lava, lava los calcetines",
+          "tprAction": {
+            "gl": "Fregar un calcetín",
+            "es": "Frotar un calcetín"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.maio.s4.pass-me-a-peg",
+          "en": "Pass me a peg",
+          "gl": "Pásame unha pinza",
+          "es": "Pásame una pinza",
+          "tprAction": {
+            "gl": "Estender a man",
+            "es": "Extender la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.maio.s4.socks-on-the-line",
+          "en": "Socks on the line",
+          "gl": "Calcetíns na corda",
+          "es": "Calcetines en la cuerda",
+          "tprAction": {
+            "gl": "Colgar dous calcetíns",
+            "es": "Colgar dos calcetines"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.maio.s4.one-peg-two-pegs",
+          "en": "One peg, two pegs",
+          "gl": "Unha pinza, dúas pinzas",
+          "es": "Una pinza, dos pinzas",
+          "tprAction": {
+            "gl": "Poñer unha pinza e logo outra",
+            "es": "Poner una pinza y luego otra"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

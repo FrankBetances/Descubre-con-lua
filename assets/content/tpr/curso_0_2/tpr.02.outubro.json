@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.0_2.outubro",
+  "curso": "curso_0_2",
+  "orden": 2,
+  "mesCalendario": 10,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Onde está o nariz?",
+        "es": "¿Dónde está la nariz?"
+      },
+      "palabras": [
+        {
+          "id": "0_2.outubro.s1.forehead",
+          "en": "Forehead",
+          "gl": "Fronte",
+          "es": "Frente",
+          "tprAction": {
+            "gl": "Bicar a fronte do bebé",
+            "es": "Besar la frente del bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s1.eyebrows",
+          "en": "Eyebrows",
+          "gl": "Cellas",
+          "es": "Cejas",
+          "tprAction": {
+            "gl": "Pasar o dedo polas cellas",
+            "es": "Pasar el dedo por las cejas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s1.lips",
+          "en": "Lips",
+          "gl": "Beizos",
+          "es": "Labios",
+          "tprAction": {
+            "gl": "Tocar os beizos cun dedo",
+            "es": "Tocar los labios con un dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s1.ears-and-nose",
+          "en": "Ears and nose",
+          "gl": "Orellas e nariz",
+          "es": "Orejas y nariz",
+          "tprAction": {
+            "gl": "Tocar as orellas e despois o nariz",
+            "es": "Tocar las orejas y luego la nariz"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s1.toenails",
+          "en": "Toenails",
+          "gl": "Uñas dos pés",
+          "es": "Uñas de los pies",
+          "tprAction": {
+            "gl": "Contar as uñas dos pés",
+            "es": "Contar las uñas de los pies"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s1.palm",
+          "en": "Palm",
+          "gl": "Palma",
+          "es": "Palma",
+          "tprAction": {
+            "gl": "Facer cóxegas na palma da man",
+            "es": "Hacer cosquillas en la palma de la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s1.wrist",
+          "en": "Wrist",
+          "gl": "Boneca",
+          "es": "Muñeca",
+          "tprAction": {
+            "gl": "Rodear a boneca cos dedos",
+            "es": "Rodear la muñeca con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s1.pat-a-cake",
+          "en": "Pat-a-cake",
+          "gl": "Bater palmiñas",
+          "es": "Palmitas",
+          "tprAction": {
+            "gl": "Bater palmiñas co bebé",
+            "es": "Hacer palmitas con el bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s1.pinch-softly",
+          "en": "Pinch softly",
+          "gl": "Beliscar amodo",
+          "es": "Pellizcar suave",
+          "tprAction": {
+            "gl": "Beliscar suave a meixela",
+            "es": "Pellizcar suave la mejilla"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s1.point-to",
+          "en": "Point to",
+          "gl": "Sinalar",
+          "es": "Señalar",
+          "tprAction": {
+            "gl": "Sinalar o nariz do bebé",
+            "es": "Señalar la nariz del bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s1.tap-lightly",
+          "en": "Tap lightly",
+          "gl": "Tocar lixeiro",
+          "es": "Tocar suave",
+          "tprAction": {
+            "gl": "Tocar lixeiro o xeonllo",
+            "es": "Tocar suave la rodilla"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s1.kick-legs",
+          "en": "Kick legs",
+          "gl": "Patexar",
+          "es": "Patalear",
+          "tprAction": {
+            "gl": "Mover as pernas do bebé coma en bici",
+            "es": "Mover las piernas del bebé como en bici"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s1.rosy",
+          "en": "Rosy",
+          "gl": "Rosado",
+          "es": "Sonrosado",
+          "tprAction": {
+            "gl": "Tocar as meixelas rosadas",
+            "es": "Tocar las mejillas sonrosadas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s1.tiny-toes",
+          "en": "Tiny toes",
+          "gl": "Deditos pequenos",
+          "es": "Deditos pequeños",
+          "tprAction": {
+            "gl": "Contar os deditos dos pés",
+            "es": "Contar los deditos de los pies"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s1.button-nose",
+          "en": "Button nose",
+          "gl": "Nariz de botón",
+          "es": "Nariz de botón",
+          "tprAction": {
+            "gl": "Premer o nariz coma un botón",
+            "es": "Apretar la nariz como un botón"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s1.chubby-cheeks",
+          "en": "Chubby cheeks",
+          "gl": "Meixelas gordiñas",
+          "es": "Mofletes",
+          "tprAction": {
+            "gl": "Inchar as meixelas e soltar o aire",
+            "es": "Inflar los mofletes y soltar el aire"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s1.where-s-your-nose",
+          "en": "Where's your nose?",
+          "gl": "Onde está o teu nariz?",
+          "es": "¿Dónde está tu nariz?",
+          "tprAction": {
+            "gl": "Buscar o nariz co dedo",
+            "es": "Buscar la nariz con el dedo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s1.beep-beep-nose",
+          "en": "Beep beep, nose!",
+          "gl": "Pi pi, nariz!",
+          "es": "¡Pi pi, nariz!",
+          "tprAction": {
+            "gl": "Premer o nariz facendo «pi pi»",
+            "es": "Apretar la nariz haciendo «pi pi»"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s1.one-two-toes",
+          "en": "One, two, toes",
+          "gl": "Un, dous, deditos",
+          "es": "Uno, dos, deditos",
+          "tprAction": {
+            "gl": "Contar dous deditos dos pés",
+            "es": "Contar dos deditos de los pies"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.outubro.s1.nose-to-nose",
+          "en": "Nose to nose",
+          "gl": "Nariz con nariz",
+          "es": "Nariz con nariz",
+          "tprAction": {
+            "gl": "Tocar nariz con nariz",
+            "es": "Tocar nariz con nariz"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Caricias",
+        "es": "Caricias"
+      },
+      "palabras": [
+        {
+          "id": "0_2.outubro.s2.massage",
+          "en": "Massage",
+          "gl": "Masaxe",
+          "es": "Masaje",
+          "tprAction": {
+            "gl": "Facer masaxe suave nas pernas",
+            "es": "Dar un masaje suave en las piernas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s2.baby-oil",
+          "en": "Baby oil",
+          "gl": "Aceite de bebé",
+          "es": "Aceite de bebé",
+          "tprAction": {
+            "gl": "Fregar as mans con aceite",
+            "es": "Frotar las manos con aceite"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s2.belly",
+          "en": "Belly",
+          "gl": "Barriga",
+          "es": "Barriga",
+          "tprAction": {
+            "gl": "Facer círculos na barriga",
+            "es": "Hacer círculos en la barriga"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s2.knee",
+          "en": "Knee",
+          "gl": "Xeonllo",
+          "es": "Rodilla",
+          "tprAction": {
+            "gl": "Tocar o xeonllo e dicir «pum»",
+            "es": "Tocar la rodilla y decir «pum»"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s2.heel",
+          "en": "Heel",
+          "gl": "Talón",
+          "es": "Talón",
+          "tprAction": {
+            "gl": "Coller o talón coa man",
+            "es": "Coger el talón con la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s2.shoulder-blade",
+          "en": "Shoulder blade",
+          "gl": "Omoplata",
+          "es": "Omóplato",
+          "tprAction": {
+            "gl": "Pasar a man polo ombro",
+            "es": "Pasar la mano por el hombro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s2.skin",
+          "en": "Skin",
+          "gl": "Pel",
+          "es": "Piel",
+          "tprAction": {
+            "gl": "Acariñar a pel do brazo",
+            "es": "Acariciar la piel del brazo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s2.caress",
+          "en": "Caress",
+          "gl": "Acariñar",
+          "es": "Acariciar",
+          "tprAction": {
+            "gl": "Pasar a man moi amodo polo brazo",
+            "es": "Pasar la mano muy despacio por el brazo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s2.pat-softly",
+          "en": "Pat softly",
+          "gl": "Palmear suave",
+          "es": "Dar palmaditas suaves",
+          "tprAction": {
+            "gl": "Palmear as costas suavemente",
+            "es": "Dar palmaditas en la espalda suavemente"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s2.blow-a-raspberry",
+          "en": "Blow a raspberry",
+          "gl": "Facer pedorretas",
+          "es": "Hacer pedorretas",
+          "tprAction": {
+            "gl": "Facer unha pedorreta na barriga",
+            "es": "Hacer una pedorreta en la barriga"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s2.massage-feet",
+          "en": "Massage feet",
+          "gl": "Dar masaxe nos pés",
+          "es": "Masajear los pies",
+          "tprAction": {
+            "gl": "Premer suave a planta dos pés",
+            "es": "Presionar suave la planta de los pies"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s2.draw-circles",
+          "en": "Draw circles",
+          "gl": "Debuxar círculos",
+          "es": "Dibujar círculos",
+          "tprAction": {
+            "gl": "Debuxar círculos co dedo nas costas",
+            "es": "Dibujar círculos con el dedo en la espalda"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s2.silky",
+          "en": "Silky",
+          "gl": "Sedoso",
+          "es": "Sedoso",
+          "tprAction": {
+            "gl": "Pasar un pano de seda pola man",
+            "es": "Pasar un pañuelo de seda por la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s2.tender",
+          "en": "Tender",
+          "gl": "Tenro",
+          "es": "Tierno",
+          "tprAction": {
+            "gl": "Bicar a man con tenrura",
+            "es": "Besar la mano con ternura"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s2.smooth-skin",
+          "en": "Smooth skin",
+          "gl": "Pel suave",
+          "es": "Piel suave",
+          "tprAction": {
+            "gl": "Acariñar a meixela co dorso da man",
+            "es": "Acariciar la mejilla con el dorso de la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s2.warm-hands",
+          "en": "Warm hands",
+          "gl": "Mans quentes",
+          "es": "Manos calientes",
+          "tprAction": {
+            "gl": "Fregar as mans e pousalas na barriga",
+            "es": "Frotar las manos y posarlas en la barriga"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s2.does-that-tickle",
+          "en": "Does that tickle?",
+          "gl": "Fai cóxegas?",
+          "es": "¿Hace cosquillas?",
+          "tprAction": {
+            "gl": "Facer cóxegas amodo e parar",
+            "es": "Hacer cosquillas despacio y parar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s2.round-and-round-the-garden",
+          "en": "Round and round the garden",
+          "gl": "Arredor do xardín",
+          "es": "Alrededor del jardín",
+          "tprAction": {
+            "gl": "Debuxar círculos na palma",
+            "es": "Dibujar círculos en la palma"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s2.this-little-piggy",
+          "en": "This little piggy",
+          "gl": "Este porquiño",
+          "es": "Este cerdito",
+          "tprAction": {
+            "gl": "Coller un dedo do pé tras outro",
+            "es": "Coger un dedo del pie tras otro"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s2.head-to-toes",
+          "en": "Head to toes",
+          "gl": "Da cabeza aos pés",
+          "es": "De la cabeza a los pies",
+          "tprAction": {
+            "gl": "Acariñar dende a cabeza ata os pés",
+            "es": "Acariciar desde la cabeza hasta los pies"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Espello, espelliño",
+        "es": "Espejo, espejito"
+      },
+      "palabras": [
+        {
+          "id": "0_2.outubro.s3.reflection",
+          "en": "Reflection",
+          "gl": "Reflexo",
+          "es": "Reflejo",
+          "tprAction": {
+            "gl": "Sinalar o bebé no espello",
+            "es": "Señalar al bebé en el espejo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s3.hairbrush",
+          "en": "Hairbrush",
+          "gl": "Cepillo do pelo",
+          "es": "Cepillo del pelo",
+          "tprAction": {
+            "gl": "Pasar o cepillo amodo polo pelo",
+            "es": "Pasar el cepillo despacio por el pelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s3.bonnet",
+          "en": "Bonnet",
+          "gl": "Gorriño",
+          "es": "Gorrito",
+          "tprAction": {
+            "gl": "Poñer e quitar un gorriño ante o espello",
+            "es": "Poner y quitar un gorrito ante el espejo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s3.muslin-cloth",
+          "en": "Muslin cloth",
+          "gl": "Muselina",
+          "es": "Muselina",
+          "tprAction": {
+            "gl": "Tapar a cara cunha muselina e descubrila",
+            "es": "Tapar la cara con una muselina y descubrirla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s3.hands-and-feet",
+          "en": "Hands and feet",
+          "gl": "Mans e pés",
+          "es": "Manos y pies",
+          "tprAction": {
+            "gl": "Amosar as mans e despois os pés",
+            "es": "Enseñar las manos y luego los pies"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s3.fingertip",
+          "en": "Fingertip",
+          "gl": "Punta do dedo",
+          "es": "Punta del dedo",
+          "tprAction": {
+            "gl": "Tocar a punta do dedo do bebé",
+            "es": "Tocar la punta del dedo del bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s3.tummy-time",
+          "en": "Tummy time",
+          "gl": "Tempo de barriga",
+          "es": "Tiempo boca abajo",
+          "tprAction": {
+            "gl": "Poñer o bebé boca abaixo na alfombra",
+            "es": "Poner al bebé boca abajo en la alfombra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s3.make-faces",
+          "en": "Make faces",
+          "gl": "Facer carantoñas",
+          "es": "Hacer muecas",
+          "tprAction": {
+            "gl": "Facer caras divertidas no espello",
+            "es": "Hacer caras divertidas en el espejo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s3.copy",
+          "en": "Copy",
+          "gl": "Imitar",
+          "es": "Imitar",
+          "tprAction": {
+            "gl": "Repetir o xesto que fai o bebé",
+            "es": "Repetir el gesto que hace el bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s3.stick-out",
+          "en": "Stick out",
+          "gl": "Sacar a lingua",
+          "es": "Sacar la lengua",
+          "tprAction": {
+            "gl": "Sacar a lingua e agardar a copia",
+            "es": "Sacar la lengua y esperar la copia"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s3.pull-faces",
+          "en": "Pull faces",
+          "gl": "Poñer caretas",
+          "es": "Poner caras",
+          "tprAction": {
+            "gl": "Abrir moito a boca e os ollos",
+            "es": "Abrir mucho la boca y los ojos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s3.lift-head",
+          "en": "Lift head",
+          "gl": "Levantar a cabeza",
+          "es": "Levantar la cabeza",
+          "tprAction": {
+            "gl": "Animar o bebé a erguer a cabeza boca abaixo",
+            "es": "Animar al bebé a levantar la cabeza boca abajo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s3.silly-face",
+          "en": "Silly face",
+          "gl": "Cara parva",
+          "es": "Cara graciosa",
+          "tprAction": {
+            "gl": "Poñer unha cara graciosa",
+            "es": "Poner una cara graciosa"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s3.wide-eyed",
+          "en": "Wide-eyed",
+          "gl": "Cos ollos abertos",
+          "es": "Con los ojos abiertos",
+          "tprAction": {
+            "gl": "Abrir moito os ollos sorprendidos",
+            "es": "Abrir mucho los ojos sorprendidos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s3.mirror-bright",
+          "en": "Mirror-bright",
+          "gl": "Brillante coma un espello",
+          "es": "Brillante como un espejo",
+          "tprAction": {
+            "gl": "Facer brillar o espello co pano",
+            "es": "Hacer brillar el espejo con el paño"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s3.upright",
+          "en": "Upright",
+          "gl": "Dereito",
+          "es": "Derecho",
+          "tprAction": {
+            "gl": "Sentar o bebé dereito",
+            "es": "Sentar al bebé derecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s3.who-s-in-the-mirror",
+          "en": "Who's in the mirror?",
+          "gl": "Quen está no espello?",
+          "es": "¿Quién está en el espejo?",
+          "tprAction": {
+            "gl": "Sinalar o espello e agardar",
+            "es": "Señalar el espejo y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s3.it-s-you",
+          "en": "It's you!",
+          "gl": "Es ti!",
+          "es": "¡Eres tú!",
+          "tprAction": {
+            "gl": "Tocar o peito do bebé",
+            "es": "Tocar el pecho del bebé"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s3.peekaboo-i-see-you",
+          "en": "Peekaboo, I see you!",
+          "gl": "Cucú, xa te vexo!",
+          "es": "¡Cucú, ya te veo!",
+          "tprAction": {
+            "gl": "Tapar a cara e descubrila",
+            "es": "Tapar la cara y descubrirla"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s3.behind-my-hands",
+          "en": "Behind my hands",
+          "gl": "Detrás das miñas mans",
+          "es": "Detrás de mis manos",
+          "tprAction": {
+            "gl": "Esconderse detrás das mans",
+            "es": "Esconderse detrás de las manos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "O meu corpo e o teu",
+        "es": "Mi cuerpo y el tuyo"
+      },
+      "palabras": [
+        {
+          "id": "0_2.outubro.s4.bottom",
+          "en": "Bottom",
+          "gl": "Cu",
+          "es": "Culito",
+          "tprAction": {
+            "gl": "Palmear suave o culiño",
+            "es": "Dar palmaditas suaves en el culito"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s4.leg",
+          "en": "Leg",
+          "gl": "Perna",
+          "es": "Pierna",
+          "tprAction": {
+            "gl": "Estirar unha perna e despois a outra",
+            "es": "Estirar una pierna y luego la otra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s4.foot",
+          "en": "Foot",
+          "gl": "Pé",
+          "es": "Pie",
+          "tprAction": {
+            "gl": "Coller un pé coa man",
+            "es": "Coger un pie con la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s4.big-toe",
+          "en": "Big toe",
+          "gl": "Dedo gordo",
+          "es": "Dedo gordo",
+          "tprAction": {
+            "gl": "Menear o dedo gordo do pé",
+            "es": "Mover el dedo gordo del pie"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s4.little-finger",
+          "en": "Little finger",
+          "gl": "Dedo miñeiro",
+          "es": "Meñique",
+          "tprAction": {
+            "gl": "Enganchar o dedo miñeiro",
+            "es": "Enganchar el meñique"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s4.tooth",
+          "en": "Tooth",
+          "gl": "Dente",
+          "es": "Diente",
+          "tprAction": {
+            "gl": "Sinalar o primeiro dente",
+            "es": "Señalar el primer diente"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s4.gums",
+          "en": "Gums",
+          "gl": "Enxivas",
+          "es": "Encías",
+          "tprAction": {
+            "gl": "Masaxear as enxivas cun mordedor",
+            "es": "Masajear las encías con un mordedor"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.outubro.s4.grasp",
+          "en": "Grasp",
+          "gl": "Agarrar",
+          "es": "Agarrar",
+          "tprAction": {
+            "gl": "Deixar que o bebé agarre o dedo",
+            "es": "Dejar que el bebé agarre el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s4.let-go",
+          "en": "Let go",
+          "gl": "Soltar",
+          "es": "Soltar",
+          "tprAction": {
+            "gl": "Abrir a man e soltar o xoguete",
+            "es": "Abrir la mano y soltar el juguete"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s4.bounce-on-knee",
+          "en": "Bounce on knee",
+          "gl": "Brincar no xeonllo",
+          "es": "Botar en la rodilla",
+          "tprAction": {
+            "gl": "Brincar o bebé no xeonllo",
+            "es": "Hacer botar al bebé en la rodilla"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s4.roll-over",
+          "en": "Roll over",
+          "gl": "Dar a volta",
+          "es": "Darse la vuelta",
+          "tprAction": {
+            "gl": "Axudar a xirar de costas a barriga",
+            "es": "Ayudar a girar de espaldas a barriga"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s4.teethe",
+          "en": "Teethe",
+          "gl": "Botar os dentes",
+          "es": "Echar los dientes",
+          "tprAction": {
+            "gl": "Dar o mordedor ao bebé",
+            "es": "Dar el mordedor al bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.outubro.s4.wiggly",
+          "en": "Wiggly",
+          "gl": "Inquedo",
+          "es": "Inquieto",
+          "tprAction": {
+            "gl": "Menear todo o corpo",
+            "es": "Mover todo el cuerpo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s4.ticklish-feet",
+          "en": "Ticklish feet",
+          "gl": "Pés con cóxegas",
+          "es": "Pies cosquillosos",
+          "tprAction": {
+            "gl": "Facer cóxegas nos pés",
+            "es": "Hacer cosquillas en los pies"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s4.growing",
+          "en": "Growing",
+          "gl": "Medrando",
+          "es": "Creciendo",
+          "tprAction": {
+            "gl": "Estirar os brazos cara arriba",
+            "es": "Estirar los brazos hacia arriba"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s4.strong-legs",
+          "en": "Strong legs",
+          "gl": "Pernas fortes",
+          "es": "Piernas fuertes",
+          "tprAction": {
+            "gl": "Empurrar as mans co pé",
+            "es": "Empujar las manos con el pie"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.outubro.s4.my-turn-your-turn",
+          "en": "My turn, your turn",
+          "gl": "A miña vez, a túa vez",
+          "es": "Mi turno, tu turno",
+          "tprAction": {
+            "gl": "Tocar o propio nariz e o do bebé",
+            "es": "Tocar la propia nariz y la del bebé"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s4.how-big-is-baby",
+          "en": "How big is baby?",
+          "gl": "Canto medra o bebé?",
+          "es": "¿Cuánto crece el bebé?",
+          "tprAction": {
+            "gl": "Abrir os brazos moi grandes",
+            "es": "Abrir los brazos muy grandes"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s4.so-big",
+          "en": "So big!",
+          "gl": "Moi grande!",
+          "es": "¡Muy grande!",
+          "tprAction": {
+            "gl": "Levantar os brazos ben alto",
+            "es": "Levantar los brazos bien alto"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.outubro.s4.your-hand-in-mine",
+          "en": "Your hand in mine",
+          "gl": "A túa man na miña",
+          "es": "Tu mano en la mía",
+          "tprAction": {
+            "gl": "Coller a man do bebé",
+            "es": "Coger la mano del bebé"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

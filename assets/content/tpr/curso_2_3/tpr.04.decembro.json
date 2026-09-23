@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.2_3.decembro",
+  "curso": "curso_2_3",
+  "orden": 4,
+  "mesCalendario": 12,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Charcos!",
+        "es": "¡Charcos!"
+      },
+      "palabras": [
+        {
+          "id": "2_3.decembro.s1.puddle-jump",
+          "en": "Puddle jump",
+          "gl": "Salto á poza",
+          "es": "Salto al charco",
+          "tprAction": {
+            "gl": "Saltar dentro dunha poza pintada",
+            "es": "Saltar dentro de un charco pintado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s1.wellington-boots",
+          "en": "Wellington boots",
+          "gl": "Botas de goma",
+          "es": "Botas de goma",
+          "tprAction": {
+            "gl": "Poñer as botas de goma",
+            "es": "Ponerse las botas de goma"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s1.rain-hat",
+          "en": "Rain hat",
+          "gl": "Chapeu de choiva",
+          "es": "Gorro de lluvia",
+          "tprAction": {
+            "gl": "Poñer o chapeu de choiva",
+            "es": "Ponerse el gorro de lluvia"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s1.rainwater",
+          "en": "Rainwater",
+          "gl": "Auga de choiva",
+          "es": "Agua de lluvia",
+          "tprAction": {
+            "gl": "Coller auga de choiva nun vaso",
+            "es": "Coger agua de lluvia en un vaso"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s1.drain",
+          "en": "Drain",
+          "gl": "Sumidoiro",
+          "es": "Alcantarilla",
+          "tprAction": {
+            "gl": "Sinalar a auga que marcha",
+            "es": "Señalar el agua que se va"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s1.gutter",
+          "en": "Gutter",
+          "gl": "Canlón",
+          "es": "Canalón",
+          "tprAction": {
+            "gl": "Seguir a auga que baixa",
+            "es": "Seguir el agua que baja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s1.splash-zone",
+          "en": "Splash zone",
+          "gl": "Zona de salpicar",
+          "es": "Zona de salpicar",
+          "tprAction": {
+            "gl": "Sinalar a zona das pozas",
+            "es": "Señalar la zona de los charcos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s1.jump-in",
+          "en": "Jump in",
+          "gl": "Saltar dentro",
+          "es": "Saltar dentro",
+          "tprAction": {
+            "gl": "Saltar dentro da poza",
+            "es": "Saltar dentro del charco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s1.jump-out",
+          "en": "Jump out",
+          "gl": "Saltar fóra",
+          "es": "Saltar fuera",
+          "tprAction": {
+            "gl": "Saltar fóra da poza",
+            "es": "Saltar fuera del charco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s1.splash-around",
+          "en": "Splash around",
+          "gl": "Salpicar arredor",
+          "es": "Salpicar alrededor",
+          "tprAction": {
+            "gl": "Pisar forte na poza",
+            "es": "Pisar fuerte en el charco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s1.wade",
+          "en": "Wade",
+          "gl": "Camiñar pola auga",
+          "es": "Caminar por el agua",
+          "tprAction": {
+            "gl": "Levantar moito as pernas",
+            "es": "Levantar mucho las piernas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s1.pull-on-boots",
+          "en": "Pull on boots",
+          "gl": "Calzar as botas",
+          "es": "Calzarse las botas",
+          "tprAction": {
+            "gl": "Tirar das botas cara arriba",
+            "es": "Tirar de las botas hacia arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s1.soggy",
+          "en": "Soggy",
+          "gl": "Empapado",
+          "es": "Empapado",
+          "tprAction": {
+            "gl": "Espremer unha luva mollada",
+            "es": "Escurrir un guante mojado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s1.squelchy",
+          "en": "Squelchy",
+          "gl": "Chapoteante",
+          "es": "Chapoteante",
+          "tprAction": {
+            "gl": "Pisar e facer «chof»",
+            "es": "Pisar y hacer «chof»"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s1.rubbery",
+          "en": "Rubbery",
+          "gl": "De goma",
+          "es": "De goma",
+          "tprAction": {
+            "gl": "Tocar a bota de goma",
+            "es": "Tocar la bota de goma"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s1.waterproof",
+          "en": "Waterproof",
+          "gl": "Impermeable",
+          "es": "Impermeable",
+          "tprAction": {
+            "gl": "Deixar esvarar auga polo impermeable",
+            "es": "Dejar resbalar agua por el impermeable"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s1.splash-splash",
+          "en": "Splash, splash!",
+          "gl": "Chof, chof!",
+          "es": "¡Chof, chof!",
+          "tprAction": {
+            "gl": "Saltar dúas veces na poza",
+            "es": "Saltar dos veces en el charco"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s1.boots-on-let-s-go",
+          "en": "Boots on, let's go!",
+          "gl": "Botas postas, imos!",
+          "es": "¡Botas puestas, vamos!",
+          "tprAction": {
+            "gl": "Pisar forte cara á porta",
+            "es": "Pisar fuerte hacia la puerta"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s1.in-the-puddle",
+          "en": "In the puddle",
+          "gl": "Na poza",
+          "es": "En el charco",
+          "tprAction": {
+            "gl": "Saltar e quedar dentro",
+            "es": "Saltar y quedarse dentro"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.decembro.s1.out-of-the-puddle",
+          "en": "Out of the puddle",
+          "gl": "Fóra da poza",
+          "es": "Fuera del charco",
+          "tprAction": {
+            "gl": "Saltar e saír",
+            "es": "Saltar y salir"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Nubes e choiva",
+        "es": "Nubes y lluvia"
+      },
+      "palabras": [
+        {
+          "id": "2_3.decembro.s2.rain-cloud",
+          "en": "Rain cloud",
+          "gl": "Nube de choiva",
+          "es": "Nube de lluvia",
+          "tprAction": {
+            "gl": "Facer unha nube cos brazos",
+            "es": "Hacer una nube con los brazos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s2.thunder",
+          "en": "Thunder",
+          "gl": "Trono",
+          "es": "Trueno",
+          "tprAction": {
+            "gl": "Bater nas pernas moi forte",
+            "es": "Golpear en las piernas muy fuerte"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s2.lightning",
+          "en": "Lightning",
+          "gl": "Lóstrego",
+          "es": "Relámpago",
+          "tprAction": {
+            "gl": "Debuxar un zigzag no aire",
+            "es": "Dibujar un zigzag en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s2.rain-jacket",
+          "en": "Rain jacket",
+          "gl": "Chaqueta de choiva",
+          "es": "Chaqueta de lluvia",
+          "tprAction": {
+            "gl": "Poñer a chaqueta e a carapucha",
+            "es": "Ponerse la chaqueta y la capucha"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s2.weather-chart",
+          "en": "Weather chart",
+          "gl": "Táboa do tempo",
+          "es": "Tabla del tiempo",
+          "tprAction": {
+            "gl": "Pegar o símbolo da choiva",
+            "es": "Pegar el símbolo de la lluvia"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s2.storm",
+          "en": "Storm",
+          "gl": "Treboada",
+          "es": "Tormenta",
+          "tprAction": {
+            "gl": "Mover todo o corpo forte",
+            "es": "Mover todo el cuerpo fuerte"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s2.shelter",
+          "en": "Shelter",
+          "gl": "Abeiro",
+          "es": "Refugio",
+          "tprAction": {
+            "gl": "Meterse baixo unha mesa",
+            "es": "Meterse bajo una mesa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s2.pour-down",
+          "en": "Pour down",
+          "gl": "Chover a cántaros",
+          "es": "Llover a cántaros",
+          "tprAction": {
+            "gl": "Baixar os brazos rápido",
+            "es": "Bajar los brazos rápido"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s2.rumble",
+          "en": "Rumble",
+          "gl": "Tronar",
+          "es": "Retumbar",
+          "tprAction": {
+            "gl": "Facer «brrum» coa voz",
+            "es": "Hacer «brrum» con la voz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s2.flash",
+          "en": "Flash",
+          "gl": "Destellar",
+          "es": "Destellar",
+          "tprAction": {
+            "gl": "Abrir as mans de súpeto",
+            "es": "Abrir las manos de golpe"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s2.take-cover",
+          "en": "Take cover",
+          "gl": "Resgardarse",
+          "es": "Resguardarse",
+          "tprAction": {
+            "gl": "Tapar a cabeza coas mans",
+            "es": "Taparse la cabeza con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s2.pitter-pat",
+          "en": "Pitter-pat",
+          "gl": "Repenicar",
+          "es": "Repiquetear",
+          "tprAction": {
+            "gl": "Bater cos dedos no chan",
+            "es": "Golpear con los dedos en el suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s2.stormy",
+          "en": "Stormy",
+          "gl": "Tormentoso",
+          "es": "Tormentoso",
+          "tprAction": {
+            "gl": "Mover as mans con forza",
+            "es": "Mover las manos con fuerza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s2.gloomy",
+          "en": "Gloomy",
+          "gl": "Escuro",
+          "es": "Oscuro",
+          "tprAction": {
+            "gl": "Baixar a luz da sala",
+            "es": "Bajar la luz de la sala"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s2.rumbly",
+          "en": "Rumbly",
+          "gl": "Retumbante",
+          "es": "Retumbante",
+          "tprAction": {
+            "gl": "Facer un son grave coa boca",
+            "es": "Hacer un sonido grave con la boca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s2.dripping",
+          "en": "Dripping",
+          "gl": "Pingando",
+          "es": "Goteando",
+          "tprAction": {
+            "gl": "Mover os dedos cara abaixo",
+            "es": "Mover los dedos hacia abajo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s2.boom-goes-the-thunder",
+          "en": "Boom goes the thunder",
+          "gl": "Pum, fai o trono",
+          "es": "Bum, hace el trueno",
+          "tprAction": {
+            "gl": "Bater nas pernas unha vez forte",
+            "es": "Golpear en las piernas una vez fuerte"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s2.it-s-pouring",
+          "en": "It's pouring!",
+          "gl": "Chove moito!",
+          "es": "¡Llueve mucho!",
+          "tprAction": {
+            "gl": "Baixar os brazos rápido",
+            "es": "Bajar los brazos rápido"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s2.where-s-the-sun",
+          "en": "Where's the sun?",
+          "gl": "Onde está o sol?",
+          "es": "¿Dónde está el sol?",
+          "tprAction": {
+            "gl": "Buscar co man na fronte",
+            "es": "Buscar con la mano en la frente"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s2.under-the-table",
+          "en": "Under the table",
+          "gl": "Debaixo da mesa",
+          "es": "Debajo de la mesa",
+          "tprAction": {
+            "gl": "Meterse debaixo da mesa",
+            "es": "Meterse debajo de la mesa"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Roupa de inverno",
+        "es": "Ropa de invierno"
+      },
+      "palabras": [
+        {
+          "id": "2_3.decembro.s3.jumper",
+          "en": "Jumper",
+          "gl": "Xersei",
+          "es": "Jersey",
+          "tprAction": {
+            "gl": "Meter a cabeza polo xersei",
+            "es": "Meter la cabeza por el jersey"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s3.tights",
+          "en": "Tights",
+          "gl": "Medias",
+          "es": "Leotardos",
+          "tprAction": {
+            "gl": "Tirar das medias cara arriba",
+            "es": "Tirar de los leotardos hacia arriba"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s3.earmuffs",
+          "en": "Earmuffs",
+          "gl": "Orelleiras",
+          "es": "Orejeras",
+          "tprAction": {
+            "gl": "Tapar as orellas coas mans",
+            "es": "Tapar las orejas con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s3.zipper-pull",
+          "en": "Zipper pull",
+          "gl": "Tirador da cremalleira",
+          "es": "Tirador de la cremallera",
+          "tprAction": {
+            "gl": "Coller o tirador e subilo",
+            "es": "Coger el tirador y subirlo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s3.sleeve",
+          "en": "Sleeve",
+          "gl": "Manga",
+          "es": "Manga",
+          "tprAction": {
+            "gl": "Meter o brazo pola manga",
+            "es": "Meter el brazo por la manga"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s3.hat-pompom",
+          "en": "Hat pompom",
+          "gl": "Pompón do gorro",
+          "es": "Pompón del gorro",
+          "tprAction": {
+            "gl": "Tocar o pompón do gorro",
+            "es": "Tocar el pompón del gorro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s3.pocket",
+          "en": "Pocket",
+          "gl": "Peto",
+          "es": "Bolsillo",
+          "tprAction": {
+            "gl": "Meter as mans nos petos",
+            "es": "Meter las manos en los bolsillos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s3.pull-on",
+          "en": "Pull on",
+          "gl": "Poñer tirando",
+          "es": "Ponerse tirando",
+          "tprAction": {
+            "gl": "Tirar do xersei cara abaixo",
+            "es": "Tirar del jersey hacia abajo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s3.zip-up",
+          "en": "Zip up",
+          "gl": "Subir a cremalleira",
+          "es": "Subir la cremallera",
+          "tprAction": {
+            "gl": "Subir a cremalleira ata arriba",
+            "es": "Subir la cremallera hasta arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s3.put-arms-in",
+          "en": "Put arms in",
+          "gl": "Meter os brazos",
+          "es": "Meter los brazos",
+          "tprAction": {
+            "gl": "Meter un brazo e despois o outro",
+            "es": "Meter un brazo y luego el otro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s3.fasten",
+          "en": "Fasten",
+          "gl": "Abrochar",
+          "es": "Abrochar",
+          "tprAction": {
+            "gl": "Abrochar un botón",
+            "es": "Abrochar un botón"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s3.get-dressed",
+          "en": "Get dressed",
+          "gl": "Vestirse",
+          "es": "Vestirse",
+          "tprAction": {
+            "gl": "Facer que se pon a roupa",
+            "es": "Hacer que se pone la ropa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s3.snuggly-jumper",
+          "en": "Snuggly jumper",
+          "gl": "Xersei quentiño",
+          "es": "Jersey calentito",
+          "tprAction": {
+            "gl": "Abrazarse co xersei",
+            "es": "Abrazarse con el jersey"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s3.chunky",
+          "en": "Chunky",
+          "gl": "Grosiño",
+          "es": "Gordito",
+          "tprAction": {
+            "gl": "Tocar un xersei groso",
+            "es": "Tocar un jersey grueso"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s3.matching",
+          "en": "Matching",
+          "gl": "A xogo",
+          "es": "A juego",
+          "tprAction": {
+            "gl": "Amosar dúas luvas iguais",
+            "es": "Enseñar dos guantes iguales"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s3.back-to-front",
+          "en": "Back to front",
+          "gl": "Ao revés",
+          "es": "Al revés",
+          "tprAction": {
+            "gl": "Poñer o gorro ao revés rindo",
+            "es": "Poner el gorro al revés riendo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s3.arms-up-high",
+          "en": "Arms up high!",
+          "gl": "Brazos arriba!",
+          "es": "¡Brazos arriba!",
+          "tprAction": {
+            "gl": "Levantar os brazos para o xersei",
+            "es": "Levantar los brazos para el jersey"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s3.where-s-your-hand",
+          "en": "Where's your hand?",
+          "gl": "Onde está a túa man?",
+          "es": "¿Dónde está tu mano?",
+          "tprAction": {
+            "gl": "Sacar a man pola manga",
+            "es": "Sacar la mano por la manga"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s3.zip-it-up",
+          "en": "Zip it up!",
+          "gl": "Sobe a cremalleira!",
+          "es": "¡Sube la cremallera!",
+          "tprAction": {
+            "gl": "Subir a cremalleira",
+            "es": "Subir la cremallera"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s3.hands-in-pockets",
+          "en": "Hands in pockets",
+          "gl": "Mans nos petos",
+          "es": "Manos en los bolsillos",
+          "tprAction": {
+            "gl": "Meter as mans nos petos",
+            "es": "Meter las manos en los bolsillos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Quentiño na casa",
+        "es": "Calentito en casa"
+      },
+      "palabras": [
+        {
+          "id": "2_3.decembro.s4.hot-chocolate",
+          "en": "Hot chocolate",
+          "gl": "Chocolate quente",
+          "es": "Chocolate caliente",
+          "tprAction": {
+            "gl": "Soprar a cunca de chocolate",
+            "es": "Soplar la taza de chocolate"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s4.mug",
+          "en": "Mug",
+          "gl": "Cunca",
+          "es": "Taza",
+          "tprAction": {
+            "gl": "Coller a cunca coas dúas mans",
+            "es": "Coger la taza con las dos manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s4.rug-by-the-fire",
+          "en": "Rug by the fire",
+          "gl": "Alfombra xunto ao lume",
+          "es": "Alfombra junto al fuego",
+          "tprAction": {
+            "gl": "Sentarse na alfombra",
+            "es": "Sentarse en la alfombra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s4.picture-book",
+          "en": "Picture book",
+          "gl": "Libro de imaxes",
+          "es": "Libro de imágenes",
+          "tprAction": {
+            "gl": "Pasar as páxinas",
+            "es": "Pasar las páginas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s4.radiator",
+          "en": "Radiator",
+          "gl": "Radiador",
+          "es": "Radiador",
+          "tprAction": {
+            "gl": "Achegar as mans ao radiador",
+            "es": "Acercar las manos al radiador"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s4.bedtime-story",
+          "en": "Bedtime story",
+          "gl": "Conto de noite",
+          "es": "Cuento para dormir",
+          "tprAction": {
+            "gl": "Abrir un libro no colo",
+            "es": "Abrir un libro en el regazo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s4.armchair",
+          "en": "Armchair",
+          "gl": "Butaca",
+          "es": "Sillón",
+          "tprAction": {
+            "gl": "Sentarse na butaca",
+            "es": "Sentarse en el sillón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.decembro.s4.get-warm",
+          "en": "Get warm",
+          "gl": "Quentarse",
+          "es": "Calentarse",
+          "tprAction": {
+            "gl": "Fregar as mans preto do radiador",
+            "es": "Frotar las manos cerca del radiador"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s4.sip-slowly",
+          "en": "Sip slowly",
+          "gl": "Beber amodo",
+          "es": "Beber despacio",
+          "tprAction": {
+            "gl": "Beber a grolos pequenos",
+            "es": "Beber a sorbos pequeños"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s4.curl-up-on-the-sofa",
+          "en": "Curl up on the sofa",
+          "gl": "Aconchegarse no sofá",
+          "es": "Acurrucarse en el sofá",
+          "tprAction": {
+            "gl": "Encollerse no sofá",
+            "es": "Acurrucarse en el sofá"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s4.turn-the-page",
+          "en": "Turn the page",
+          "gl": "Pasar a páxina",
+          "es": "Pasar la página",
+          "tprAction": {
+            "gl": "Pasar a páxina do libro",
+            "es": "Pasar la página del libro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s4.stay-in",
+          "en": "Stay in",
+          "gl": "Quedar na casa",
+          "es": "Quedarse en casa",
+          "tprAction": {
+            "gl": "Sinalar a casa e sentarse",
+            "es": "Señalar la casa y sentarse"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.decembro.s4.cosy-corner",
+          "en": "Cosy corner",
+          "gl": "Recuncho acolledor",
+          "es": "Rincón acogedor",
+          "tprAction": {
+            "gl": "Sentarse no recuncho con coxíns",
+            "es": "Sentarse en el rincón con cojines"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s4.steamy",
+          "en": "Steamy",
+          "gl": "Con vapor",
+          "es": "Con vapor",
+          "tprAction": {
+            "gl": "Soprar o vapor da cunca",
+            "es": "Soplar el vapor de la taza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s4.chocolatey",
+          "en": "Chocolatey",
+          "gl": "Achocolatado",
+          "es": "Achocolatado",
+          "tprAction": {
+            "gl": "Lamber os beizos",
+            "es": "Relamerse"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s4.snowy-outside",
+          "en": "Snowy outside",
+          "gl": "Nevado fóra",
+          "es": "Nevado fuera",
+          "tprAction": {
+            "gl": "Sinalar a fiestra",
+            "es": "Señalar la ventana"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.decembro.s4.is-it-warm",
+          "en": "Is it warm?",
+          "gl": "Está quentiño?",
+          "es": "¿Está calentito?",
+          "tprAction": {
+            "gl": "Tocar a cunca con coidado",
+            "es": "Tocar la taza con cuidado"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s4.read-me-a-story",
+          "en": "Read me a story",
+          "gl": "Léme un conto",
+          "es": "Léeme un cuento",
+          "tprAction": {
+            "gl": "Traer un libro",
+            "es": "Traer un libro"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s4.inside-is-warm",
+          "en": "Inside is warm",
+          "gl": "Dentro vai quentiño",
+          "es": "Dentro hace calorcito",
+          "tprAction": {
+            "gl": "Abrazarse dentro da casa",
+            "es": "Abrazarse dentro de casa"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.decembro.s4.blanket-and-a-book",
+          "en": "Blanket and a book",
+          "gl": "Manta e un libro",
+          "es": "Manta y un libro",
+          "tprAction": {
+            "gl": "Taparse e abrir un libro",
+            "es": "Taparse y abrir un libro"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

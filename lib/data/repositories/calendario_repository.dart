@@ -16,9 +16,29 @@ class CalendarioContenido {
   final List<MesCurricular> meses;
   final GuiaAtencion guia;
 
-  const CalendarioContenido({required this.meses, required this.guia});
+  /// Los seis años: los diez meses de cada curso, de 0-2 a 5-6, seguidos. Es
+  /// lo que recorre el calendario. Cada mes trae el tema, las actividades y el
+  /// inglés de SU curso, no los mismos diez para todas las edades.
+  final List<MesCurricular> trayecto;
+
+  const CalendarioContenido({
+    required this.meses,
+    required this.guia,
+    this.trayecto = const [],
+  });
 
   static const String mesesAsset = 'assets/content/calendario/meses.json';
+  static const String curriculoAsset =
+      'assets/content/calendario/curriculo_50_meses.json';
+
+  /// Los cursos del trayecto, en orden.
+  static const List<String> cursos = [
+    'curso_0_2',
+    'curso_2_3',
+    'curso_3_4',
+    'curso_4_5',
+    'curso_5_6',
+  ];
   static const String atencionAsset = 'assets/content/calendario/atencion.json';
 
   /// Una sola carga por ejecución: el contenido no cambia mientras la app vive,
@@ -56,7 +76,52 @@ class CalendarioContenido {
       AssetBundleStringLoader cargador) async {
     final meses = desdeJsonMeses(await cargador(mesesAsset));
     final guia = desdeJsonGuia(await cargador(atencionAsset));
-    return CalendarioContenido(meses: meses, guia: guia);
+    final trayecto = desdeJsonCurriculo(await cargador(curriculoAsset), meses);
+    return CalendarioContenido(meses: meses, guia: guia, trayecto: trayecto);
+  }
+
+  /// Los 50 meses del currículo, en el orden del trayecto: curso a curso y,
+  /// dentro de cada curso, de septiembre a junio.
+  static List<MesCurricular> desdeJsonCurriculo(
+      String rawJson, List<MesCurricular> meses) {
+    final decoded = json.decode(rawJson);
+    if (decoded is! List) {
+      throw const FormatException(
+          'curriculo_50_meses.json: se esperaba una lista');
+    }
+    final entradas = [
+      for (final e in decoded) Map<String, dynamic>.from(e as Map),
+    ]..sort((a, b) {
+        final c = cursos
+            .indexOf(a['cursoId'] as String)
+            .compareTo(cursos.indexOf(b['cursoId'] as String));
+        return c != 0
+            ? c
+            : (a['mesNumero'] as num).compareTo(b['mesNumero'] as num);
+      });
+    final porOrden = {for (final m in meses) m.orden: m};
+    return List.unmodifiable([
+      for (final (i, e) in entradas.indexed)
+        MesCurricular.doCurriculo(
+          e,
+          base: porOrden[(e['mesNumero'] as num).toInt()]!,
+          orden: i + 1,
+        ),
+    ]);
+  }
+
+  /// El índice en el [trayecto] del mes de [fecha] en el curso [cursoId].
+  int indiceNoTrayecto(String cursoId, DateTime fecha) {
+    final mes = mesParaFecha(fecha).mesCalendario;
+    final i = trayecto
+        .indexWhere((m) => m.cursoId == cursoId && m.mesCalendario == mes);
+    return i < 0 ? 0 : i;
+  }
+
+  /// El índice del primer mes de [cursoId] en el [trayecto].
+  int inicioDoCurso(String cursoId) {
+    final i = trayecto.indexWhere((m) => m.cursoId == cursoId);
+    return i < 0 ? 0 : i;
   }
 
   /// Parsea el catálogo de meses y lo deja ordenado por curso.

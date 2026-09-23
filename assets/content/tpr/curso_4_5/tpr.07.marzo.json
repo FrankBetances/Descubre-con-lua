@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.4_5.marzo",
+  "curso": "curso_4_5",
+  "orden": 7,
+  "mesCalendario": 3,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Sabores",
+        "es": "Sabores"
+      },
+      "palabras": [
+        {
+          "id": "4_5.marzo.s1.flavour",
+          "en": "Flavour",
+          "gl": "Sabor",
+          "es": "Sabor",
+          "tprAction": {
+            "gl": "Lamber os beizos",
+            "es": "Relamerse los labios"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s1.taste-test",
+          "en": "Taste test",
+          "gl": "Proba de sabores",
+          "es": "Cata de sabores",
+          "tprAction": {
+            "gl": "Probar e pensar",
+            "es": "Probar y pensar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s1.tasting-spoon",
+          "en": "Tasting spoon",
+          "gl": "Culler de probar",
+          "es": "Cuchara de probar",
+          "tprAction": {
+            "gl": "Achegar a culler á boca",
+            "es": "Acercar la cuchara a la boca"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s1.blindfold",
+          "en": "Blindfold",
+          "gl": "Venda",
+          "es": "Venda",
+          "tprAction": {
+            "gl": "Tapar os ollos coas mans",
+            "es": "Taparse los ojos con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s1.spice",
+          "en": "Spice",
+          "gl": "Especia",
+          "es": "Especia",
+          "tprAction": {
+            "gl": "Espolvorear algo cos dedos",
+            "es": "Espolvorear algo con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s1.vinegar",
+          "en": "Vinegar",
+          "gl": "Vinagre",
+          "es": "Vinagre",
+          "tprAction": {
+            "gl": "Facer careta de acedo",
+            "es": "Hacer mueca de ácido"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s1.olive",
+          "en": "Olive",
+          "gl": "Oliva",
+          "es": "Aceituna",
+          "tprAction": {
+            "gl": "Coller unha oliva cos dedos",
+            "es": "Coger una aceituna con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s1.taste-sweet",
+          "en": "Taste sweet",
+          "gl": "Saber doce",
+          "es": "Saber dulce",
+          "tprAction": {
+            "gl": "Sorrir ao probar",
+            "es": "Sonreír al probar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s1.guess-the-taste",
+          "en": "Guess the taste",
+          "gl": "Adiviñar o sabor",
+          "es": "Adivinar el sabor",
+          "tprAction": {
+            "gl": "Probar cos ollos pechados",
+            "es": "Probar con los ojos cerrados"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s1.savour",
+          "en": "Savour",
+          "gl": "Saborear",
+          "es": "Saborear",
+          "tprAction": {
+            "gl": "Mastigar amodo pechando os ollos",
+            "es": "Masticar despacio cerrando los ojos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s1.sprinkle-spice",
+          "en": "Sprinkle spice",
+          "gl": "Espolvorear",
+          "es": "Espolvorear",
+          "tprAction": {
+            "gl": "Mover os dedos por riba do prato",
+            "es": "Mover los dedos por encima del plato"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s1.pull-a-face",
+          "en": "Pull a face",
+          "gl": "Poñer unha careta",
+          "es": "Poner una mueca",
+          "tprAction": {
+            "gl": "Arrugar o nariz",
+            "es": "Arrugar la nariz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s1.sweeter",
+          "en": "Sweeter",
+          "gl": "Máis doce",
+          "es": "Más dulce",
+          "tprAction": {
+            "gl": "Sorrir máis",
+            "es": "Sonreír más"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s1.sourer",
+          "en": "Sourer",
+          "gl": "Máis acedo",
+          "es": "Más ácido",
+          "tprAction": {
+            "gl": "Arrugar máis a cara",
+            "es": "Arrugar más la cara"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s1.spicy",
+          "en": "Spicy",
+          "gl": "Picante",
+          "es": "Picante",
+          "tprAction": {
+            "gl": "Abanar a boca",
+            "es": "Abanicarse la boca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s1.mild",
+          "en": "Mild",
+          "gl": "Suave",
+          "es": "Suave",
+          "tprAction": {
+            "gl": "Mover a cabeza tranquilos",
+            "es": "Mover la cabeza tranquilos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s1.is-it-sweet-or-sour",
+          "en": "Is it sweet or sour?",
+          "gl": "É doce ou acedo?",
+          "es": "¿Es dulce o ácido?",
+          "tprAction": {
+            "gl": "Sorrir ou arrugar a cara",
+            "es": "Sonreír o arrugar la cara"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.marzo.s1.close-your-eyes-and-taste",
+          "en": "Close your eyes and taste",
+          "gl": "Pecha os ollos e proba",
+          "es": "Cierra los ojos y prueba",
+          "tprAction": {
+            "gl": "Pechar os ollos",
+            "es": "Cerrar los ojos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.marzo.s1.honey-is-sweeter-than-lemon",
+          "en": "Honey is sweeter than lemon",
+          "gl": "O mel é máis doce ca o limón",
+          "es": "La miel es más dulce que el limón",
+          "tprAction": {
+            "gl": "Sorrir e logo arrugar a cara",
+            "es": "Sonreír y luego arrugar la cara"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.marzo.s1.yuck-or-yum",
+          "en": "Yuck or yum?",
+          "gl": "Puaj ou ñam?",
+          "es": "¿Puaj o ñam?",
+          "tprAction": {
+            "gl": "Poñer dúas caras",
+            "es": "Poner dos caras"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Grande, maior, o maior",
+        "es": "Grande, mayor, el mayor"
+      },
+      "palabras": [
+        {
+          "id": "4_5.marzo.s2.size",
+          "en": "Size",
+          "gl": "Tamaño",
+          "es": "Tamaño",
+          "tprAction": {
+            "gl": "Abrir as mans a distinto tamaño",
+            "es": "Abrir las manos a distinto tamaño"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s2.row-of-dolls",
+          "en": "Row of dolls",
+          "gl": "Fila de bonecas",
+          "es": "Fila de muñecas",
+          "tprAction": {
+            "gl": "Aliñar de pequena a grande",
+            "es": "Alinear de pequeña a grande"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s2.nesting-dolls",
+          "en": "Nesting dolls",
+          "gl": "Bonecas rusas",
+          "es": "Muñecas rusas",
+          "tprAction": {
+            "gl": "Meter unha man dentro da outra",
+            "es": "Meter una mano dentro de la otra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s2.staircase",
+          "en": "Staircase",
+          "gl": "Escaleira",
+          "es": "Escalera",
+          "tprAction": {
+            "gl": "Subir a man chanzo a chanzo",
+            "es": "Subir la mano escalón a escalón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s2.giant-shoe",
+          "en": "Giant shoe",
+          "gl": "Zapato xigante",
+          "es": "Zapato gigante",
+          "tprAction": {
+            "gl": "Abrir moito as mans",
+            "es": "Abrir mucho las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s2.tiny-shoe",
+          "en": "Tiny shoe",
+          "gl": "Zapatiño",
+          "es": "Zapatito",
+          "tprAction": {
+            "gl": "Xuntar moito as mans",
+            "es": "Juntar mucho las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s2.order",
+          "en": "Order",
+          "gl": "Orde",
+          "es": "Orden",
+          "tprAction": {
+            "gl": "Poñer tres cousas en fila",
+            "es": "Poner tres cosas en fila"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s2.line-up-by-size",
+          "en": "Line up by size",
+          "gl": "Aliñar por tamaño",
+          "es": "Alinear por tamaño",
+          "tprAction": {
+            "gl": "Poñerse do máis baixo ao máis alto",
+            "es": "Ponerse del más bajo al más alto"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s2.show-big-arms",
+          "en": "Show big arms",
+          "gl": "Amosar brazos grandes",
+          "es": "Mostrar brazos grandes",
+          "tprAction": {
+            "gl": "Abrir os brazos moito",
+            "es": "Abrir los brazos mucho"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s2.show-small-fingers",
+          "en": "Show small fingers",
+          "gl": "Amosar dedos pequenos",
+          "es": "Mostrar dedos pequeños",
+          "tprAction": {
+            "gl": "Xuntar dous dedos",
+            "es": "Juntar dos dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s2.grow-taller",
+          "en": "Grow taller",
+          "gl": "Facerse máis alto",
+          "es": "Hacerse más alto",
+          "tprAction": {
+            "gl": "Estirarse de puntas",
+            "es": "Estirarse de puntillas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s2.shrink",
+          "en": "Shrink",
+          "gl": "Encoller",
+          "es": "Encoger",
+          "tprAction": {
+            "gl": "Facerse pequeno no chan",
+            "es": "Hacerse pequeño en el suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s2.bigger",
+          "en": "Bigger",
+          "gl": "Máis grande",
+          "es": "Más grande",
+          "tprAction": {
+            "gl": "Abrir máis os brazos",
+            "es": "Abrir más los brazos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s2.biggest",
+          "en": "Biggest",
+          "gl": "O máis grande",
+          "es": "El más grande",
+          "tprAction": {
+            "gl": "Abrir os brazos ao máximo",
+            "es": "Abrir los brazos al máximo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s2.smaller",
+          "en": "Smaller",
+          "gl": "Máis pequeno",
+          "es": "Más pequeño",
+          "tprAction": {
+            "gl": "Xuntar máis as mans",
+            "es": "Juntar más las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s2.smallest",
+          "en": "Smallest",
+          "gl": "O máis pequeno",
+          "es": "El más pequeño",
+          "tprAction": {
+            "gl": "Xuntar as mans ata tocarse",
+            "es": "Juntar las manos hasta tocarse"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s2.which-is-the-biggest",
+          "en": "Which is the biggest?",
+          "gl": "Cal é o máis grande?",
+          "es": "¿Cuál es el más grande?",
+          "tprAction": {
+            "gl": "Comparar tres cousas",
+            "es": "Comparar tres cosas"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.marzo.s2.big-bigger-biggest",
+          "en": "Big, bigger, biggest",
+          "gl": "Grande, máis grande, o máis grande",
+          "es": "Grande, más grande, el más grande",
+          "tprAction": {
+            "gl": "Abrir os brazos en tres pasos",
+            "es": "Abrir los brazos en tres pasos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.marzo.s2.from-small-to-big",
+          "en": "From small to big",
+          "gl": "De pequeno a grande",
+          "es": "De pequeño a grande",
+          "tprAction": {
+            "gl": "Crecer amodo dende o chan",
+            "es": "Crecer despacio desde el suelo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.marzo.s2.i-m-taller-than-you",
+          "en": "I'm taller than you!",
+          "gl": "Son máis alto ca ti!",
+          "es": "¡Soy más alto que tú!",
+          "tprAction": {
+            "gl": "Poñerse de puntas rindo",
+            "es": "Ponerse de puntillas riendo"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Comida sa",
+        "es": "Comida sana"
+      },
+      "palabras": [
+        {
+          "id": "4_5.marzo.s3.vegetables",
+          "en": "Vegetables",
+          "gl": "Verduras",
+          "es": "Verduras",
+          "tprAction": {
+            "gl": "Amosar unha cesta de verduras",
+            "es": "Enseñar una cesta de verduras"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s3.broccoli",
+          "en": "Broccoli",
+          "gl": "Brócoli",
+          "es": "Brócoli",
+          "tprAction": {
+            "gl": "Facer unha árbore coa man",
+            "es": "Hacer un árbol con la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s3.peas",
+          "en": "Peas",
+          "gl": "Chícharos",
+          "es": "Guisantes",
+          "tprAction": {
+            "gl": "Coller chícharos cos dedos",
+            "es": "Coger guisantes con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s3.beans",
+          "en": "Beans",
+          "gl": "Fabas",
+          "es": "Alubias",
+          "tprAction": {
+            "gl": "Contar fabas",
+            "es": "Contar alubias"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s3.lentils",
+          "en": "Lentils",
+          "gl": "Lentellas",
+          "es": "Lentejas",
+          "tprAction": {
+            "gl": "Botar lentellas nun bote",
+            "es": "Echar lentejas en un bote"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s3.egg-cup",
+          "en": "Egg cup",
+          "gl": "Oveira",
+          "es": "Huevera",
+          "tprAction": {
+            "gl": "Pousar un ovo na oveira",
+            "es": "Poner un huevo en la huevera"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s3.food-plate",
+          "en": "Food plate",
+          "gl": "Prato saudable",
+          "es": "Plato saludable",
+          "tprAction": {
+            "gl": "Dividir un prato imaxinario",
+            "es": "Dividir un plato imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s3.wash-vegetables",
+          "en": "Wash vegetables",
+          "gl": "Lavar as verduras",
+          "es": "Lavar las verduras",
+          "tprAction": {
+            "gl": "Fregar unha verdura baixo a auga",
+            "es": "Frotar una verdura bajo el agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s3.peel-a-carrot",
+          "en": "Peel a carrot",
+          "gl": "Pelar unha cenoria",
+          "es": "Pelar una zanahoria",
+          "tprAction": {
+            "gl": "Pelar no aire",
+            "es": "Pelar en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s3.boil",
+          "en": "Boil",
+          "gl": "Cocer",
+          "es": "Hervir",
+          "tprAction": {
+            "gl": "Facer burbullas coas mans",
+            "es": "Hacer burbujas con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s3.grate",
+          "en": "Grate",
+          "gl": "Relar",
+          "es": "Rallar",
+          "tprAction": {
+            "gl": "Mover a man arriba e abaixo",
+            "es": "Mover la mano arriba y abajo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s3.balance-a-plate",
+          "en": "Balance a plate",
+          "gl": "Equilibrar o prato",
+          "es": "Equilibrar el plato",
+          "tprAction": {
+            "gl": "Repartir cores no prato",
+            "es": "Repartir colores en el plato"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s3.nutritious",
+          "en": "Nutritious",
+          "gl": "Nutritivo",
+          "es": "Nutritivo",
+          "tprAction": {
+            "gl": "Poñer os brazos fortes",
+            "es": "Poner los brazos fuertes"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s3.leafy-green",
+          "en": "Leafy green",
+          "gl": "De folla verde",
+          "es": "De hoja verde",
+          "tprAction": {
+            "gl": "Mover as mans coma follas",
+            "es": "Mover las manos como hojas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s3.homemade",
+          "en": "Homemade",
+          "gl": "Caseiro",
+          "es": "Casero",
+          "tprAction": {
+            "gl": "Remexer unha pota",
+            "es": "Remover una olla"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s3.wholesome",
+          "en": "Wholesome",
+          "gl": "San e bo",
+          "es": "Sano y bueno",
+          "tprAction": {
+            "gl": "Tocar a barriga contentos",
+            "es": "Tocar la barriga contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s3.eat-your-greens",
+          "en": "Eat your greens!",
+          "gl": "Come a verdura!",
+          "es": "¡Come la verdura!",
+          "tprAction": {
+            "gl": "Levar o garfo á boca",
+            "es": "Llevar el tenedor a la boca"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.marzo.s3.what-colour-is-broccoli",
+          "en": "What colour is broccoli?",
+          "gl": "De que cor é o brócoli?",
+          "es": "¿De qué color es el brócoli?",
+          "tprAction": {
+            "gl": "Sinalar algo verde",
+            "es": "Señalar algo verde"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.marzo.s3.vegetables-make-us-strong",
+          "en": "Vegetables make us strong",
+          "gl": "As verduras fannos fortes",
+          "es": "Las verduras nos hacen fuertes",
+          "tprAction": {
+            "gl": "Poñer os brazos fortes",
+            "es": "Poner los brazos fuertes"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.marzo.s3.can-i-have-more-peas",
+          "en": "Can I have more peas?",
+          "gl": "Póñesme máis chícharos?",
+          "es": "¿Me pones más guisantes?",
+          "tprAction": {
+            "gl": "Estender o prato",
+            "es": "Extender el plato"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "No mercado",
+        "es": "En el mercado"
+      },
+      "palabras": [
+        {
+          "id": "4_5.marzo.s4.market-stall",
+          "en": "Market stall",
+          "gl": "Posto do mercado",
+          "es": "Puesto del mercado",
+          "tprAction": {
+            "gl": "Colocar froita no posto",
+            "es": "Colocar fruta en el puesto"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s4.shopping-list",
+          "en": "Shopping list",
+          "gl": "Lista da compra",
+          "es": "Lista de la compra",
+          "tprAction": {
+            "gl": "Ler unha lista imaxinaria",
+            "es": "Leer una lista imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s4.coin",
+          "en": "Coin",
+          "gl": "Moeda",
+          "es": "Moneda",
+          "tprAction": {
+            "gl": "Contar moedas na palma",
+            "es": "Contar monedas en la palma"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s4.price",
+          "en": "Price",
+          "gl": "Prezo",
+          "es": "Precio",
+          "tprAction": {
+            "gl": "Sinalar unha etiqueta",
+            "es": "Señalar una etiqueta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s4.shopping-bag",
+          "en": "Shopping bag",
+          "gl": "Bolsa da compra",
+          "es": "Bolsa de la compra",
+          "tprAction": {
+            "gl": "Levar a bolsa ao ombro",
+            "es": "Llevar la bolsa al hombro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s4.kilo",
+          "en": "Kilo",
+          "gl": "Quilo",
+          "es": "Kilo",
+          "tprAction": {
+            "gl": "Pesar coa man",
+            "es": "Pesar con la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s4.shopkeeper",
+          "en": "Shopkeeper",
+          "gl": "Tendeiro",
+          "es": "Tendero",
+          "tprAction": {
+            "gl": "Atender detrás dun mostrador",
+            "es": "Atender detrás de un mostrador"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.marzo.s4.pay",
+          "en": "Pay",
+          "gl": "Pagar",
+          "es": "Pagar",
+          "tprAction": {
+            "gl": "Dar moedas imaxinarias",
+            "es": "Dar monedas imaginarias"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s4.choose-fruit",
+          "en": "Choose fruit",
+          "gl": "Escoller froita",
+          "es": "Escoger fruta",
+          "tprAction": {
+            "gl": "Mirar e escoller unha",
+            "es": "Mirar y escoger una"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s4.count-coins",
+          "en": "Count coins",
+          "gl": "Contar moedas",
+          "es": "Contar monedas",
+          "tprAction": {
+            "gl": "Contar cos dedos",
+            "es": "Contar con los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s4.pack-the-bag",
+          "en": "Pack the bag",
+          "gl": "Encher a bolsa",
+          "es": "Llenar la bolsa",
+          "tprAction": {
+            "gl": "Meter cousas na bolsa",
+            "es": "Meter cosas en la bolsa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s4.ask-for",
+          "en": "Ask for",
+          "gl": "Pedir",
+          "es": "Pedir",
+          "tprAction": {
+            "gl": "Estender a man pedindo",
+            "es": "Extender la mano pidiendo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.marzo.s4.cheap",
+          "en": "Cheap",
+          "gl": "Barato",
+          "es": "Barato",
+          "tprAction": {
+            "gl": "Amosar unha moeda",
+            "es": "Enseñar una moneda"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s4.expensive",
+          "en": "Expensive",
+          "gl": "Caro",
+          "es": "Caro",
+          "tprAction": {
+            "gl": "Amosar moitas moedas",
+            "es": "Enseñar muchas monedas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s4.fresh-from-the-farm",
+          "en": "Fresh from the farm",
+          "gl": "Fresco da granxa",
+          "es": "Fresco de la granja",
+          "tprAction": {
+            "gl": "Cheirar unha froita",
+            "es": "Oler una fruta"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s4.heavy-bag",
+          "en": "Heavy bag",
+          "gl": "Bolsa pesada",
+          "es": "Bolsa pesada",
+          "tprAction": {
+            "gl": "Levar unha bolsa con esforzo",
+            "es": "Llevar una bolsa con esfuerzo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.marzo.s4.how-much-is-it",
+          "en": "How much is it?",
+          "gl": "Canto custa?",
+          "es": "¿Cuánto cuesta?",
+          "tprAction": {
+            "gl": "Sinalar a froita",
+            "es": "Señalar la fruta"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.marzo.s4.two-apples-please",
+          "en": "Two apples, please",
+          "gl": "Dúas mazás, por favor",
+          "es": "Dos manzanas, por favor",
+          "tprAction": {
+            "gl": "Amosar dous dedos",
+            "es": "Enseñar dos dedos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.marzo.s4.here-s-your-change",
+          "en": "Here's your change",
+          "gl": "Aquí tes o cambio",
+          "es": "Aquí tienes el cambio",
+          "tprAction": {
+            "gl": "Dar unha moeda",
+            "es": "Dar una moneda"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.marzo.s4.the-bag-is-heavier-with-potatoes",
+          "en": "The bag is heavier with potatoes",
+          "gl": "A bolsa pesa máis con patacas",
+          "es": "La bolsa pesa más con patatas",
+          "tprAction": {
+            "gl": "Baixar o brazo coma se pesase",
+            "es": "Bajar el brazo como si pesara"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

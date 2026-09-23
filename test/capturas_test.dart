@@ -148,18 +148,18 @@ void main() {
     return contenido;
   }
 
-  /// El inglés del curso, ya leído, como lo deja `main.dart` antes de la
+  /// El inglés de los cinco cursos, ya leído, como lo deja `main.dart` antes de la
   /// primera pantalla. Sin esto el calendario lo pide por su cuenta y, bajo el
   /// reloj falso, unas veces llega antes de la foto y otras no: el trimestre
   /// salía con «(320 p.)» en una imagen y sin él en la de al lado.
   Future<void> cursoTprLeido(WidgetTester tester) async {
     await tester.runAsync(() async {
-      contenido.addCursoTpr(await CursoTpr.cargar(
+      contenido.addProgramaTpr(await ProgramaTpr.cargar(
         stringLoader: (path) => File(path).readAsString(),
       ));
     });
-    expect(contenido.cursoTprSync?.totalPalabras, 800,
-        reason: 'O inglés do curso non chegou a lerse.');
+    expect(contenido.programaTprSync?.totalPalabras, 4000,
+        reason: 'O inglés dos cinco cursos non chegou a lerse.');
   }
 
   /// Un calendario con días ya enlazados: sin esto la imagen enseñaría el

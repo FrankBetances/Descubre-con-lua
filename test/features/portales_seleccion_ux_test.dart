@@ -322,8 +322,11 @@ void main() {
 
       await _ataVer(tester, find.text('Juega con Lúa · Modo Aula'));
       expect(find.text('Juega con Lúa · Modo Aula'), findsOneWidget);
-      await _ataVer(tester, find.text('Planificador Curricular (50 Meses)'));
-      expect(find.text('Planificador Curricular (50 Meses)'), findsOneWidget);
+      await _ataVer(tester, find.text('Planificador curricular'));
+      expect(find.text('Planificador curricular'), findsOneWidget);
+      // Frank: «solo deja planificador curricular, elimina donde dice 50 meses».
+      expect(find.textContaining('50 Meses'), findsNothing);
+      expect(find.textContaining('50 meses'), findsNothing);
       await _ataVer(tester, find.text('Inmersión en Inglés · L3'));
       expect(find.text('Inmersión en Inglés · L3'), findsOneWidget);
       await _ataVer(tester, find.text('Estratexias Pedagóxicas de Aula'));

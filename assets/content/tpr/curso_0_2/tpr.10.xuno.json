@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.0_2.xuno",
+  "curso": "curso_0_2",
+  "orden": 10,
+  "mesCalendario": 6,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "O mar de Samil",
+        "es": "El mar de Samil"
+      },
+      "palabras": [
+        {
+          "id": "0_2.xuno.s1.samil-beach",
+          "en": "Samil beach",
+          "gl": "Praia de Samil",
+          "es": "Playa de Samil",
+          "tprAction": {
+            "gl": "Sinalar o mar dende a area",
+            "es": "Señalar el mar desde la arena"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s1.seaside",
+          "en": "Seaside",
+          "gl": "Beira do mar",
+          "es": "Orilla del mar",
+          "tprAction": {
+            "gl": "Achegarse á beira co bebé",
+            "es": "Acercarse a la orilla con el bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s1.tide",
+          "en": "Tide",
+          "gl": "Marea",
+          "es": "Marea",
+          "tprAction": {
+            "gl": "Mover a man adiante e atrás",
+            "es": "Mover la mano adelante y atrás"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s1.seaweed",
+          "en": "Seaweed",
+          "gl": "Algas",
+          "es": "Algas",
+          "tprAction": {
+            "gl": "Tocar unha alga mollada",
+            "es": "Tocar un alga mojada"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s1.beach-towel",
+          "en": "Beach towel",
+          "gl": "Toalla de praia",
+          "es": "Toalla de playa",
+          "tprAction": {
+            "gl": "Tender a toalla na area",
+            "es": "Extender la toalla en la arena"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s1.parasol",
+          "en": "Parasol",
+          "gl": "Sombrilla",
+          "es": "Sombrilla",
+          "tprAction": {
+            "gl": "Facer sombra coa man",
+            "es": "Hacer sombra con la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s1.salty-air",
+          "en": "Salty air",
+          "gl": "Aire do mar",
+          "es": "Aire del mar",
+          "tprAction": {
+            "gl": "Inspirar polo nariz",
+            "es": "Inspirar por la nariz"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s1.paddle-in",
+          "en": "Paddle in",
+          "gl": "Mollar os pés",
+          "es": "Mojar los pies",
+          "tprAction": {
+            "gl": "Mollar os pés na beira",
+            "es": "Mojar los pies en la orilla"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s1.scoop-sand",
+          "en": "Scoop sand",
+          "gl": "Coller area",
+          "es": "Coger arena",
+          "tprAction": {
+            "gl": "Coller area coa man",
+            "es": "Coger arena con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s1.let-sand-run",
+          "en": "Let sand run",
+          "gl": "Deixar caer area",
+          "es": "Dejar caer arena",
+          "tprAction": {
+            "gl": "Abrir a man e deixar caer area",
+            "es": "Abrir la mano y dejar caer arena"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s1.wriggle-toes",
+          "en": "Wriggle toes",
+          "gl": "Menear os deditos",
+          "es": "Mover los deditos",
+          "tprAction": {
+            "gl": "Menear os deditos na area",
+            "es": "Mover los deditos en la arena"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s1.watch-the-waves",
+          "en": "Watch the waves",
+          "gl": "Mirar as ondas",
+          "es": "Mirar las olas",
+          "tprAction": {
+            "gl": "Mirar o mar en silencio",
+            "es": "Mirar el mar en silencio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s1.salty-lips",
+          "en": "Salty lips",
+          "gl": "Salgado",
+          "es": "Salado",
+          "tprAction": {
+            "gl": "Tocar os beizos despois do mar",
+            "es": "Tocar los labios después del mar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s1.warm-sand",
+          "en": "Warm sand",
+          "gl": "Area morna",
+          "es": "Arena templada",
+          "tprAction": {
+            "gl": "Pousar a man na area morna",
+            "es": "Posar la mano en la arena templada"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s1.sparkling-sea",
+          "en": "Sparkling sea",
+          "gl": "Mar brillante",
+          "es": "Mar brillante",
+          "tprAction": {
+            "gl": "Abrir e pechar os dedos coma o sol no mar",
+            "es": "Abrir y cerrar los dedos como el sol en el mar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s1.gritty",
+          "en": "Gritty",
+          "gl": "Areento",
+          "es": "Arenoso",
+          "tprAction": {
+            "gl": "Fregar area entre os dedos",
+            "es": "Frotar arena entre los dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s1.hello-sea",
+          "en": "Hello, sea!",
+          "gl": "Ola, mar!",
+          "es": "¡Hola, mar!",
+          "tprAction": {
+            "gl": "Acenar ao mar",
+            "es": "Saludar al mar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xuno.s1.here-comes-a-wave",
+          "en": "Here comes a wave!",
+          "gl": "Aí vén unha onda!",
+          "es": "¡Ahí viene una ola!",
+          "tprAction": {
+            "gl": "Levantar os brazos coma unha onda",
+            "es": "Levantar los brazos como una ola"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xuno.s1.sand-on-my-feet",
+          "en": "Sand on my feet",
+          "gl": "Area nos meus pés",
+          "es": "Arena en mis pies",
+          "tprAction": {
+            "gl": "Botar area nos pés",
+            "es": "Echar arena en los pies"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.xuno.s1.by-the-sea",
+          "en": "By the sea",
+          "gl": "Á beira do mar",
+          "es": "A la orilla del mar",
+          "tprAction": {
+            "gl": "Sentarse xuntos mirando o mar",
+            "es": "Sentarse juntos mirando el mar"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Peixiños e ondas",
+        "es": "Pececitos y olas"
+      },
+      "palabras": [
+        {
+          "id": "0_2.xuno.s2.little-fish",
+          "en": "Little fish",
+          "gl": "Peixiño",
+          "es": "Pececito",
+          "tprAction": {
+            "gl": "Mover a man coma un peixiño",
+            "es": "Mover la mano como un pececito"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s2.seahorse",
+          "en": "Seahorse",
+          "gl": "Cabaliño de mar",
+          "es": "Caballito de mar",
+          "tprAction": {
+            "gl": "Facer un S co dedo",
+            "es": "Hacer una S con el dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s2.jellyfish",
+          "en": "Jellyfish",
+          "gl": "Augamar",
+          "es": "Medusa",
+          "tprAction": {
+            "gl": "Abrir e pechar a man coma unha augamar",
+            "es": "Abrir y cerrar la mano como una medusa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s2.fishing-net",
+          "en": "Fishing net",
+          "gl": "Rede de pesca",
+          "es": "Red de pesca",
+          "tprAction": {
+            "gl": "Entrecruzar os dedos coma unha rede",
+            "es": "Entrecruzar los dedos como una red"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s2.bubble-trail",
+          "en": "Bubble trail",
+          "gl": "Rastro de burbullas",
+          "es": "Rastro de burbujas",
+          "tprAction": {
+            "gl": "Facer burbullas coa boca",
+            "es": "Hacer burbujas con la boca"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s2.fin",
+          "en": "Fin",
+          "gl": "Aleta",
+          "es": "Aleta",
+          "tprAction": {
+            "gl": "Poñer a man no lombo coma aleta",
+            "es": "Poner la mano en la espalda como aleta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s2.coral",
+          "en": "Coral",
+          "gl": "Coral",
+          "es": "Coral",
+          "tprAction": {
+            "gl": "Abrir os dedos coma coral",
+            "es": "Abrir los dedos como coral"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s2.swim-along",
+          "en": "Swim along",
+          "gl": "Nadar xunto",
+          "es": "Nadar junto",
+          "tprAction": {
+            "gl": "Mover as dúas mans coma peixes",
+            "es": "Mover las dos manos como peces"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s2.glide",
+          "en": "Glide",
+          "gl": "Esvarar",
+          "es": "Deslizarse",
+          "tprAction": {
+            "gl": "Pasar a man plana polo aire",
+            "es": "Pasar la mano plana por el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s2.blow-bubbles-in-water",
+          "en": "Blow bubbles in water",
+          "gl": "Facer burbullas na auga",
+          "es": "Hacer burbujas en el agua",
+          "tprAction": {
+            "gl": "Soprar na auga cos beizos",
+            "es": "Soplar en el agua con los labios"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s2.rise-and-fall",
+          "en": "Rise and fall",
+          "gl": "Subir e baixar",
+          "es": "Subir y bajar",
+          "tprAction": {
+            "gl": "Subir e baixar coma as ondas",
+            "es": "Subir y bajar como las olas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s2.hug-a-fish",
+          "en": "Hug a fish",
+          "gl": "Abrazar o peixe",
+          "es": "Abrazar al pez",
+          "tprAction": {
+            "gl": "Abrazar un peixe de peluche",
+            "es": "Abrazar un pez de peluche"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s2.slippery-fish",
+          "en": "Slippery fish",
+          "gl": "Peixe esvaradío",
+          "es": "Pez resbaladizo",
+          "tprAction": {
+            "gl": "Esvarar as mans unha sobre outra",
+            "es": "Resbalar las manos una sobre otra"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s2.swishy",
+          "en": "Swishy",
+          "gl": "Axitado",
+          "es": "Ondulante",
+          "tprAction": {
+            "gl": "Mover a cadeira coma unha cola",
+            "es": "Mover la cadera como una cola"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s2.silvery",
+          "en": "Silvery",
+          "gl": "Prateado",
+          "es": "Plateado",
+          "tprAction": {
+            "gl": "Amosar un papel prateado",
+            "es": "Enseñar un papel plateado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s2.glassy",
+          "en": "Glassy",
+          "gl": "Liso coma cristal",
+          "es": "Liso como cristal",
+          "tprAction": {
+            "gl": "Pasar a man plana",
+            "es": "Pasar la mano plana"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s2.swim-little-fish",
+          "en": "Swim, little fish",
+          "gl": "Nada, peixiño",
+          "es": "Nada, pececito",
+          "tprAction": {
+            "gl": "Mover a man coma un peixe",
+            "es": "Mover la mano como un pez"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xuno.s2.blub-blub-blub",
+          "en": "Blub, blub, blub",
+          "gl": "Glu, glu, glu",
+          "es": "Glu, glu, glu",
+          "tprAction": {
+            "gl": "Abrir e pechar a boca coma un peixe",
+            "es": "Abrir y cerrar la boca como un pez"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xuno.s2.one-fish-two-fish",
+          "en": "One fish, two fish",
+          "gl": "Un peixe, dous peixes",
+          "es": "Un pez, dos peces",
+          "tprAction": {
+            "gl": "Amosar unha man e despois as dúas",
+            "es": "Enseñar una mano y luego las dos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.xuno.s2.over-the-waves",
+          "en": "Over the waves",
+          "gl": "Por riba das ondas",
+          "es": "Por encima de las olas",
+          "tprAction": {
+            "gl": "Pasar a man por riba en ondas",
+            "es": "Pasar la mano por encima en ondas"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Sol de verán",
+        "es": "Sol de verano"
+      },
+      "palabras": [
+        {
+          "id": "0_2.xuno.s3.sun-cream",
+          "en": "Sun cream",
+          "gl": "Crema solar",
+          "es": "Crema solar",
+          "tprAction": {
+            "gl": "Estender a crema no brazo",
+            "es": "Extender la crema en el brazo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s3.sunshade",
+          "en": "Sunshade",
+          "gl": "Parasol do carriño",
+          "es": "Parasol del cochecito",
+          "tprAction": {
+            "gl": "Poñer o parasol no carriño",
+            "es": "Poner el parasol en el cochecito"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s3.water-bottle",
+          "en": "Water bottle",
+          "gl": "Botella de auga",
+          "es": "Botella de agua",
+          "tprAction": {
+            "gl": "Dar un grolo de auga",
+            "es": "Dar un sorbo de agua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s3.shade",
+          "en": "Shade",
+          "gl": "Sombra",
+          "es": "Sombra",
+          "tprAction": {
+            "gl": "Poñerse á sombra",
+            "es": "Ponerse a la sombra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s3.straw-hat",
+          "en": "Straw hat",
+          "gl": "Chapeu de palla",
+          "es": "Sombrero de paja",
+          "tprAction": {
+            "gl": "Poñer o chapeu de palla",
+            "es": "Poner el sombrero de paja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s3.fan",
+          "en": "Fan",
+          "gl": "Abano",
+          "es": "Abanico",
+          "tprAction": {
+            "gl": "Abanar o bebé suavemente",
+            "es": "Abanicar al bebé suavemente"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s3.sunrise",
+          "en": "Sunrise",
+          "gl": "Saída do sol",
+          "es": "Amanecer",
+          "tprAction": {
+            "gl": "Subir as mans dende o chan",
+            "es": "Subir las manos desde el suelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s3.cool-down",
+          "en": "Cool down",
+          "gl": "Refrescarse",
+          "es": "Refrescarse",
+          "tprAction": {
+            "gl": "Mollar a caluga con auga",
+            "es": "Mojar la nuca con agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s3.fan-yourself",
+          "en": "Fan yourself",
+          "gl": "Abanarse",
+          "es": "Abanicarse",
+          "tprAction": {
+            "gl": "Abanarse coa man",
+            "es": "Abanicarse con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s3.rub-in",
+          "en": "Rub in",
+          "gl": "Estender",
+          "es": "Extender",
+          "tprAction": {
+            "gl": "Estender a crema en círculos",
+            "es": "Extender la crema en círculos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s3.shade-your-eyes",
+          "en": "Shade your eyes",
+          "gl": "Taparse do sol",
+          "es": "Taparse del sol",
+          "tprAction": {
+            "gl": "Poñer a man sobre os ollos",
+            "es": "Poner la mano sobre los ojos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s3.nap",
+          "en": "Nap",
+          "gl": "Botar a sesta",
+          "es": "Echar la siesta",
+          "tprAction": {
+            "gl": "Pousar a cabeza nas mans",
+            "es": "Apoyar la cabeza en las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s3.sun-kissed",
+          "en": "Sun-kissed",
+          "gl": "Bicado polo sol",
+          "es": "Besado por el sol",
+          "tprAction": {
+            "gl": "Tocar as meixelas",
+            "es": "Tocar las mejillas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s3.summery",
+          "en": "Summery",
+          "gl": "Veraniego",
+          "es": "Veraniego",
+          "tprAction": {
+            "gl": "Abanarse sorrindo",
+            "es": "Abanicarse sonriendo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s3.cool-shade",
+          "en": "Cool shade",
+          "gl": "Sombra fresca",
+          "es": "Sombra fresca",
+          "tprAction": {
+            "gl": "Sentarse á sombra",
+            "es": "Sentarse a la sombra"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s3.sleepyhead",
+          "en": "Sleepyhead",
+          "gl": "Durmiñón",
+          "es": "Dormilón",
+          "tprAction": {
+            "gl": "Pechar os ollos e roncar suave",
+            "es": "Cerrar los ojos y roncar suave"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s3.hat-on-please",
+          "en": "Hat on, please",
+          "gl": "O chapeu, por favor",
+          "es": "El sombrero, por favor",
+          "tprAction": {
+            "gl": "Poñer o chapeu ao bebé",
+            "es": "Poner el sombrero al bebé"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xuno.s3.time-for-a-drink",
+          "en": "Time for a drink",
+          "gl": "Hora de beber",
+          "es": "Hora de beber",
+          "tprAction": {
+            "gl": "Achegar a botella",
+            "es": "Acercar la botella"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xuno.s3.in-the-shade",
+          "en": "In the shade",
+          "gl": "Á sombra",
+          "es": "A la sombra",
+          "tprAction": {
+            "gl": "Levar o bebé á sombra",
+            "es": "Llevar al bebé a la sombra"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.xuno.s3.sun-and-water",
+          "en": "Sun and water",
+          "gl": "Sol e auga",
+          "es": "Sol y agua",
+          "tprAction": {
+            "gl": "Sinalar o sol e despois a auga",
+            "es": "Señalar el sol y luego el agua"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Adeus, curso!",
+        "es": "¡Adiós, curso!"
+      },
+      "palabras": [
+        {
+          "id": "0_2.xuno.s4.memory-box",
+          "en": "Memory box",
+          "gl": "Caixa dos recordos",
+          "es": "Caja de los recuerdos",
+          "tprAction": {
+            "gl": "Gardar un debuxo na caixa",
+            "es": "Guardar un dibujo en la caja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s4.footprint",
+          "en": "Footprint",
+          "gl": "Pegada",
+          "es": "Huella",
+          "tprAction": {
+            "gl": "Pisar pintura e deixar a pegada",
+            "es": "Pisar pintura y dejar la huella"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s4.handprint",
+          "en": "Handprint",
+          "gl": "Pegada da man",
+          "es": "Huella de la mano",
+          "tprAction": {
+            "gl": "Pousar a man con pintura no papel",
+            "es": "Posar la mano con pintura en el papel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s4.farewell-song",
+          "en": "Farewell song",
+          "gl": "Canción de despedida",
+          "es": "Canción de despedida",
+          "tprAction": {
+            "gl": "Cantar e acenar a todos",
+            "es": "Cantar y saludar a todos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s4.keepsake",
+          "en": "Keepsake",
+          "gl": "Recordo",
+          "es": "Recuerdo",
+          "tprAction": {
+            "gl": "Amosar un recordo pequeno",
+            "es": "Enseñar un recuerdo pequeño"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s4.last-day",
+          "en": "Last day",
+          "gl": "Último día",
+          "es": "Último día",
+          "tprAction": {
+            "gl": "Amosar un dedo e despedirse",
+            "es": "Enseñar un dedo y despedirse"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s4.group-hug",
+          "en": "Group hug",
+          "gl": "Aperta de grupo",
+          "es": "Abrazo de grupo",
+          "tprAction": {
+            "gl": "Abrazarse todos xuntos",
+            "es": "Abrazarse todos juntos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xuno.s4.say-goodbye",
+          "en": "Say goodbye",
+          "gl": "Despedirse",
+          "es": "Despedirse",
+          "tprAction": {
+            "gl": "Acenar coa man á porta",
+            "es": "Saludar con la mano en la puerta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s4.hug-goodbye",
+          "en": "Hug goodbye",
+          "gl": "Abrazar ao marchar",
+          "es": "Abrazar al irse",
+          "tprAction": {
+            "gl": "Dar unha aperta ao marchar",
+            "es": "Dar un abrazo al irse"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s4.press-hands",
+          "en": "Press hands",
+          "gl": "Premer as mans",
+          "es": "Presionar las manos",
+          "tprAction": {
+            "gl": "Premer a man no papel",
+            "es": "Presionar la mano en el papel"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s4.keep",
+          "en": "Keep",
+          "gl": "Gardar",
+          "es": "Guardar",
+          "tprAction": {
+            "gl": "Gardar o recordo na caixa",
+            "es": "Guardar el recuerdo en la caja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s4.look-back",
+          "en": "Look back",
+          "gl": "Mirar atrás",
+          "es": "Mirar atrás",
+          "tprAction": {
+            "gl": "Mirar as fotos do curso",
+            "es": "Mirar las fotos del curso"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xuno.s4.bigger-now",
+          "en": "Bigger now",
+          "gl": "Máis grande agora",
+          "es": "Más grande ahora",
+          "tprAction": {
+            "gl": "Medir o bebé coa man",
+            "es": "Medir al bebé con la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s4.thankful",
+          "en": "Thankful",
+          "gl": "Agradecido",
+          "es": "Agradecido",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s4.bittersweet",
+          "en": "Bittersweet",
+          "gl": "Agridoce",
+          "es": "Agridulce",
+          "tprAction": {
+            "gl": "Sorrir e abrazar",
+            "es": "Sonreír y abrazar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s4.treasured",
+          "en": "Treasured",
+          "gl": "Querido",
+          "es": "Querido",
+          "tprAction": {
+            "gl": "Abrazar a caixa dos recordos",
+            "es": "Abrazar la caja de los recuerdos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xuno.s4.bye-bye-nursery",
+          "en": "Bye-bye, nursery!",
+          "gl": "Adeus, escola!",
+          "es": "¡Adiós, escuela!",
+          "tprAction": {
+            "gl": "Acenar á porta da escola",
+            "es": "Saludar a la puerta de la escuela"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xuno.s4.see-you-after-summer",
+          "en": "See you after summer",
+          "gl": "Ata despois do verán",
+          "es": "Hasta después del verano",
+          "tprAction": {
+            "gl": "Mandar un bico e acenar",
+            "es": "Mandar un beso y saludar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xuno.s4.hand-on-paper",
+          "en": "Hand on paper",
+          "gl": "Man no papel",
+          "es": "Mano en el papel",
+          "tprAction": {
+            "gl": "Pousar a man no papel",
+            "es": "Posar la mano en el papel"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.xuno.s4.together-again",
+          "en": "Together again",
+          "gl": "Xuntos outra vez",
+          "es": "Juntos otra vez",
+          "tprAction": {
+            "gl": "Abrazarse de novo",
+            "es": "Abrazarse de nuevo"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

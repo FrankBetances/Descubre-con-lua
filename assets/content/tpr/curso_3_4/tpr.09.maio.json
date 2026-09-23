@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.3_4.maio",
+  "curso": "curso_3_4",
+  "orden": 9,
+  "mesCalendario": 5,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Lavamos as mans",
+        "es": "Nos lavamos las manos"
+      },
+      "palabras": [
+        {
+          "id": "water",
+          "en": "Water",
+          "gl": "Auga",
+          "es": "Agua",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mover as mans coma se tocasen auga",
+            "es": "Mover las manos como si tocaran agua"
+          }
+        },
+        {
+          "id": "soap",
+          "en": "Soap",
+          "gl": "Xabón",
+          "es": "Jabón",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Frotar un xabón imaxinario entre as mans",
+            "es": "Frotar un jabón imaginario entre las manos"
+          }
+        },
+        {
+          "id": "towel",
+          "en": "Towel",
+          "gl": "Toalla",
+          "es": "Toalla",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Secar as mans cunha toalla imaxinaria",
+            "es": "Secarse las manos con una toalla imaginaria"
+          }
+        },
+        {
+          "id": "tap",
+          "en": "Tap",
+          "gl": "Billa",
+          "es": "Grifo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir e pechar unha billa imaxinaria",
+            "es": "Abrir y cerrar un grifo imaginario"
+          }
+        },
+        {
+          "id": "bubbles",
+          "en": "Bubbles",
+          "gl": "Burbullas",
+          "es": "Burbujas",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Soprar burbullas imaxinarias e tocalas cun dedo",
+            "es": "Soplar burbujas imaginarias y tocarlas con un dedo"
+          }
+        },
+        {
+          "id": "sink",
+          "en": "Sink",
+          "gl": "Lavabo",
+          "es": "Lavabo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Inclinarse sobre un lavabo imaxinario",
+            "es": "Inclinarse sobre un lavabo imaginario"
+          }
+        },
+        {
+          "id": "nails",
+          "en": "Nails",
+          "gl": "Unllas",
+          "es": "Uñas",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mirar as unllas cos dedos estirados",
+            "es": "Mirarse las uñas con los dedos estirados"
+          }
+        },
+        {
+          "id": "wash",
+          "en": "Wash",
+          "gl": "Lavar",
+          "es": "Lavar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Lavar unha boneca imaxinaria con coidado",
+            "es": "Lavar una muñeca imaginaria con cuidado"
+          }
+        },
+        {
+          "id": "rub",
+          "en": "Rub",
+          "gl": "Fregar",
+          "es": "Frotar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Fregar as palmas unha contra a outra",
+            "es": "Frotar las palmas una contra otra"
+          }
+        },
+        {
+          "id": "splash",
+          "en": "Splash",
+          "gl": "Salpicar",
+          "es": "Salpicar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Salpicar auga imaxinaria coas mans",
+            "es": "Salpicar agua imaginaria con las manos"
+          }
+        },
+        {
+          "id": "rinse",
+          "en": "Rinse",
+          "gl": "Enxaugar",
+          "es": "Aclarar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pasar as mans baixo unha auga imaxinaria",
+            "es": "Pasar las manos bajo un agua imaginaria"
+          }
+        },
+        {
+          "id": "scrub",
+          "en": "Scrub",
+          "gl": "Esfregar",
+          "es": "Restregar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Esfregar o dorso das mans con forza",
+            "es": "Restregar el dorso de las manos con fuerza"
+          }
+        },
+        {
+          "id": "clean",
+          "en": "Clean",
+          "gl": "Limpo, limpa",
+          "es": "Limpio, limpia",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Amosar as mans limpas e sorrir",
+            "es": "Enseñar las manos limpias y sonreír"
+          }
+        },
+        {
+          "id": "soapy",
+          "en": "Soapy",
+          "gl": "Con xabón",
+          "es": "Enjabonado, enjabonada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Mover as mans coma se esvarasen de xabón",
+            "es": "Mover las manos como si resbalaran de jabón"
+          }
+        },
+        {
+          "id": "bubbly",
+          "en": "Bubbly",
+          "gl": "Con burbullas",
+          "es": "Burbujeante",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Abrir e pechar os dedos coma burbullas que estouran",
+            "es": "Abrir y cerrar los dedos como burbujas que estallan"
+          }
+        },
+        {
+          "id": "cool",
+          "en": "Cool",
+          "gl": "Fresquiño, fresquiña",
+          "es": "Fresquito, fresquita",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Soprar suave na palma da man",
+            "es": "Soplar suave en la palma de la mano"
+          }
+        },
+        {
+          "id": "wash-your-hands",
+          "en": "Wash your hands",
+          "gl": "Lava as mans",
+          "es": "Lávate las manos",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Facer o xesto de lavar as mans ao escoitar a orde",
+            "es": "Hacer el gesto de lavarse las manos al oír la orden"
+          }
+        },
+        {
+          "id": "rub-your-hands",
+          "en": "Rub your hands",
+          "gl": "Frega as mans",
+          "es": "Frótate las manos",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Fregar as mans moi rápido para quentalas",
+            "es": "Frotarse las manos muy rápido para calentarlas"
+          }
+        },
+        {
+          "id": "wash-then-dry",
+          "en": "Wash, then dry",
+          "gl": "Lavar e logo secar",
+          "es": "Lavar y luego secar",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Lavar as mans imaxinarias e logo secalas",
+            "es": "Lavarse las manos imaginarias y luego secarlas"
+          }
+        },
+        {
+          "id": "under-the-tap",
+          "en": "Under the tap",
+          "gl": "Debaixo da billa",
+          "es": "Debajo del grifo",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Poñer as mans baixo unha billa imaxinaria",
+            "es": "Poner las manos bajo un grifo imaginario"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Hora do baño",
+        "es": "La hora del baño"
+      },
+      "palabras": [
+        {
+          "id": "bath",
+          "en": "Bath",
+          "gl": "Baño",
+          "es": "Baño",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Sentar no chan e mover as mans coma na auga",
+            "es": "Sentarse en el suelo y mover las manos como en el agua"
+          }
+        },
+        {
+          "id": "sponge",
+          "en": "Sponge",
+          "gl": "Esponxa",
+          "es": "Esponja",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Apertar unha esponxa imaxinaria sobre o brazo",
+            "es": "Apretar una esponja imaginaria sobre el brazo"
+          }
+        },
+        {
+          "id": "shampoo",
+          "en": "Shampoo",
+          "gl": "Xampú",
+          "es": "Champú",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Masaxear a cabeza coas puntas dos dedos",
+            "es": "Masajear la cabeza con las puntas de los dedos"
+          }
+        },
+        {
+          "id": "rubber-duck",
+          "en": "Rubber duck",
+          "gl": "Patiño de goma",
+          "es": "Patito de goma",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer flotar un patiño imaxinario sobre a palma",
+            "es": "Hacer flotar un patito imaginario sobre la palma"
+          }
+        },
+        {
+          "id": "mirror",
+          "en": "Mirror",
+          "gl": "Espello",
+          "es": "Espejo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mirarse nun espello imaxinario e sorrir",
+            "es": "Mirarse en un espejo imaginario y sonreír"
+          }
+        },
+        {
+          "id": "comb",
+          "en": "Comb",
+          "gl": "Peite",
+          "es": "Peine",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Peitear o pelo cun peite imaxinario",
+            "es": "Peinarse con un peine imaginario"
+          }
+        },
+        {
+          "id": "toothbrush",
+          "en": "Toothbrush",
+          "gl": "Cepillo de dentes",
+          "es": "Cepillo de dientes",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Suxeitar un cepillo de dentes imaxinario",
+            "es": "Sujetar un cepillo de dientes imaginario"
+          }
+        },
+        {
+          "id": "float",
+          "en": "Float",
+          "gl": "Flotar",
+          "es": "Flotar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tombar de costas cos brazos abertos coma na auga",
+            "es": "Tumbarse boca arriba con los brazos abiertos como en el agua"
+          }
+        },
+        {
+          "id": "pour",
+          "en": "Pour",
+          "gl": "Verter",
+          "es": "Echar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Verter auga imaxinaria dun vaso a outro",
+            "es": "Echar agua imaginaria de un vaso a otro"
+          }
+        },
+        {
+          "id": "paddle",
+          "en": "Paddle",
+          "gl": "Chapotear",
+          "es": "Chapotear",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Chapotear cos pés, sentados, nunha auga imaxinaria",
+            "es": "Chapotear con los pies, sentados, en un agua imaginaria"
+          }
+        },
+        {
+          "id": "dress",
+          "en": "Dress",
+          "gl": "Vestirse",
+          "es": "Vestirse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Meter a cabeza por unha camiseta imaxinaria",
+            "es": "Meter la cabeza por una camiseta imaginaria"
+          }
+        },
+        {
+          "id": "shower",
+          "en": "Shower",
+          "gl": "Ducharse",
+          "es": "Ducharse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Deixar caer auga imaxinaria desde a cabeza cos dedos",
+            "es": "Dejar caer agua imaginaria desde la cabeza con los dedos"
+          }
+        },
+        {
+          "id": "deep",
+          "en": "Deep",
+          "gl": "Fondo, fonda",
+          "es": "Profundo, profunda",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Baixar a man moi abaixo coma nunha auga fonda",
+            "es": "Bajar la mano muy abajo como en un agua profunda"
+          }
+        },
+        {
+          "id": "shallow",
+          "en": "Shallow",
+          "gl": "Pouco fondo, pouco fonda",
+          "es": "Poco profundo, poco profunda",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Tocar a auga imaxinaria só coa punta dos pés",
+            "es": "Tocar el agua imaginaria solo con la punta de los pies"
+          }
+        },
+        {
+          "id": "relaxed",
+          "en": "Relaxed",
+          "gl": "Relaxado, relaxada",
+          "es": "Relajado, relajada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Soltar o corpo e respirar amodo",
+            "es": "Soltar el cuerpo y respirar despacio"
+          }
+        },
+        {
+          "id": "ticklish",
+          "en": "Ticklish",
+          "gl": "Con cóxegas",
+          "es": "Cosquilloso, cosquillosa",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Rir encollidos cando alguén se achega cos dedos",
+            "es": "Reír encogidos cuando alguien se acerca con los dedos"
+          }
+        },
+        {
+          "id": "brush-your-teeth",
+          "en": "Brush your teeth",
+          "gl": "Lava os dentes",
+          "es": "Lávate los dientes",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Cepillar os dentes cun cepillo imaxinario",
+            "es": "Cepillarse los dientes con un cepillo imaginario"
+          }
+        },
+        {
+          "id": "wash-your-face",
+          "en": "Wash your face",
+          "gl": "Lava a cara",
+          "es": "Lávate la cara",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Lavar a cara con auga imaxinaria",
+            "es": "Lavarse la cara con agua imaginaria"
+          }
+        },
+        {
+          "id": "in-the-bath",
+          "en": "In the bath",
+          "gl": "No baño",
+          "es": "En el baño",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Meter un pé e logo o outro nunha bañeira imaxinaria",
+            "es": "Meter un pie y luego el otro en una bañera imaginaria"
+          }
+        },
+        {
+          "id": "top-to-toe",
+          "en": "Top to toe",
+          "gl": "Da cabeza aos pés",
+          "es": "De la cabeza a los pies",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Tocar da cabeza aos pés coas dúas mans",
+            "es": "Tocar de la cabeza a los pies con las dos manos"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Á mesa",
+        "es": "A la mesa"
+      },
+      "palabras": [
+        {
+          "id": "bread",
+          "en": "Bread",
+          "gl": "Pan",
+          "es": "Pan",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Partir un pan imaxinario coas dúas mans",
+            "es": "Partir un pan imaginario con las dos manos"
+          }
+        },
+        {
+          "id": "milk",
+          "en": "Milk",
+          "gl": "Leite",
+          "es": "Leche",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Beber un vaso de leite imaxinario e limpar o bigote",
+            "es": "Beber un vaso de leche imaginario y limpiarse el bigote"
+          }
+        },
+        {
+          "id": "cheese",
+          "en": "Cheese",
+          "gl": "Queixo",
+          "es": "Queso",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer un triángulo cos dedos coma un anaco de queixo",
+            "es": "Hacer un triángulo con los dedos como un trozo de queso"
+          }
+        },
+        {
+          "id": "spoon",
+          "en": "Spoon",
+          "gl": "Culler",
+          "es": "Cuchara",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Suxeitar unha culler imaxinaria e amosala",
+            "es": "Sostener una cuchara imaginaria y enseñarla"
+          }
+        },
+        {
+          "id": "plate",
+          "en": "Plate",
+          "gl": "Prato",
+          "es": "Plato",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Debuxar un prato redondo no aire",
+            "es": "Dibujar un plato redondo en el aire"
+          }
+        },
+        {
+          "id": "bowl",
+          "en": "Bowl",
+          "gl": "Cunca",
+          "es": "Cuenco",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Suxeitar unha cunca imaxinaria coas dúas mans",
+            "es": "Sostener un cuenco imaginario con las dos manos"
+          }
+        },
+        {
+          "id": "rice",
+          "en": "Rice",
+          "gl": "Arroz",
+          "es": "Arroz",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Deixar caer grans de arroz imaxinarios entre os dedos",
+            "es": "Dejar caer granos de arroz imaginarios entre los dedos"
+          }
+        },
+        {
+          "id": "eat",
+          "en": "Eat",
+          "gl": "Comer",
+          "es": "Comer",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Comer cunha culler imaxinaria",
+            "es": "Comer con una cuchara imaginaria"
+          }
+        },
+        {
+          "id": "drink",
+          "en": "Drink",
+          "gl": "Beber",
+          "es": "Beber",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Beber auga imaxinaria e dicir «aaah»",
+            "es": "Beber agua imaginaria y decir «aaah»"
+          }
+        },
+        {
+          "id": "spread",
+          "en": "Spread",
+          "gl": "Untar",
+          "es": "Untar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Untar unha rebanda imaxinaria cun dedo",
+            "es": "Untar una rebanada imaginaria con un dedo"
+          }
+        },
+        {
+          "id": "pass",
+          "en": "Pass",
+          "gl": "Pasar",
+          "es": "Pasar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pasar un prato imaxinario a quen está ao lado",
+            "es": "Pasar un plato imaginario a quien está al lado"
+          }
+        },
+        {
+          "id": "serve",
+          "en": "Serve",
+          "gl": "Servir",
+          "es": "Servir",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Servir comida imaxinaria nos pratos do grupo",
+            "es": "Servir comida imaginaria en los platos del grupo"
+          }
+        },
+        {
+          "id": "salty",
+          "en": "Salty",
+          "gl": "Salgado, salgada",
+          "es": "Salado, salada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Poñer cara de sorpresa e beber auga",
+            "es": "Poner cara de sorpresa y beber agua"
+          }
+        },
+        {
+          "id": "creamy",
+          "en": "Creamy",
+          "gl": "Cremoso, cremosa",
+          "es": "Cremoso, cremosa",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Mover a man amodo coma se remexese nata",
+            "es": "Mover la mano despacio como si removiera nata"
+          }
+        },
+        {
+          "id": "thick",
+          "en": "Thick",
+          "gl": "Mesto, mesta",
+          "es": "Espeso, espesa",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Remexer con forza coma nunha papa mesta",
+            "es": "Remover con fuerza como en una papilla espesa"
+          }
+        },
+        {
+          "id": "favourite",
+          "en": "Favourite",
+          "gl": "Favorito, favorita",
+          "es": "Favorito, favorita",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Abrazar un prato imaxinario e sorrir",
+            "es": "Abrazar un plato imaginario y sonreír"
+          }
+        },
+        {
+          "id": "i-m-hungry",
+          "en": "I'm hungry",
+          "gl": "Teño fame",
+          "es": "Tengo hambre",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Tocar a barriga e abrir a boca",
+            "es": "Tocarse la barriga y abrir la boca"
+          }
+        },
+        {
+          "id": "enjoy-your-meal",
+          "en": "Enjoy your meal!",
+          "gl": "Bo proveito!",
+          "es": "¡Buen provecho!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Abrir as mans cara ao grupo antes de comer",
+            "es": "Abrir las manos hacia el grupo antes de comer"
+          }
+        },
+        {
+          "id": "all-gone",
+          "en": "All gone!",
+          "gl": "Rematou!",
+          "es": "¡Se acabó!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Abrir as mans baleiras cara arriba",
+            "es": "Abrir las manos vacías hacia arriba"
+          }
+        },
+        {
+          "id": "bread-and-cheese",
+          "en": "Bread and cheese",
+          "gl": "Pan e queixo",
+          "es": "Pan y queso",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Xuntar as dúas mans coma un bocadillo",
+            "es": "Juntar las dos manos como un bocadillo"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Contos e palabras",
+        "es": "Cuentos y palabras"
+      },
+      "palabras": [
+        {
+          "id": "story",
+          "en": "Story",
+          "gl": "Conto",
+          "es": "Cuento",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir un libro imaxinario e mirar o grupo",
+            "es": "Abrir un libro imaginario y mirar al grupo"
+          }
+        },
+        {
+          "id": "page",
+          "en": "Page",
+          "gl": "Páxina",
+          "es": "Página",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pasar unha páxina imaxinaria cun dedo",
+            "es": "Pasar una página imaginaria con un dedo"
+          }
+        },
+        {
+          "id": "word",
+          "en": "Word",
+          "gl": "Palabra",
+          "es": "Palabra",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Levar a man da boca cara adiante ao dicir unha palabra",
+            "es": "Llevar la mano de la boca hacia delante al decir una palabra"
+          }
+        },
+        {
+          "id": "puppet",
+          "en": "Puppet",
+          "gl": "Monicreque",
+          "es": "Títere",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer falar a man coma un monicreque",
+            "es": "Hacer hablar a la mano como un títere"
+          }
+        },
+        {
+          "id": "castle",
+          "en": "Castle",
+          "gl": "Castelo",
+          "es": "Castillo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Levantar os brazos coma torres dun castelo",
+            "es": "Levantar los brazos como torres de un castillo"
+          }
+        },
+        {
+          "id": "giant",
+          "en": "Giant",
+          "gl": "Xigante",
+          "es": "Gigante",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Poñer voz grave e dar pasos pesados",
+            "es": "Poner voz grave y dar pasos pesados"
+          }
+        },
+        {
+          "id": "dragon",
+          "en": "Dragon",
+          "gl": "Dragón",
+          "es": "Dragón",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir as ás e soprar suave: fuuu",
+            "es": "Abrir las alas y soplar suave: fuuu"
+          }
+        },
+        {
+          "id": "imagine",
+          "en": "Imagine",
+          "gl": "Imaxinar",
+          "es": "Imaginar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pechar os ollos e sorrir pensando",
+            "es": "Cerrar los ojos y sonreír pensando"
+          }
+        },
+        {
+          "id": "whisper",
+          "en": "Whisper",
+          "gl": "Musitar",
+          "es": "Susurrar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tapar a boca coa man e falar moi baixiño",
+            "es": "Taparse la boca con la mano y hablar muy bajito"
+          }
+        },
+        {
+          "id": "guess",
+          "en": "Guess",
+          "gl": "Adiviñar",
+          "es": "Adivinar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tocar o queixo pensativos e sinalar",
+            "es": "Tocarse la barbilla pensativos y señalar"
+          }
+        },
+        {
+          "id": "rhyme",
+          "en": "Rhyme",
+          "gl": "Rimar",
+          "es": "Rimar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Bater palmas en dúas palabras que soan igual",
+            "es": "Dar palmas en dos palabras que suenan igual"
+          }
+        },
+        {
+          "id": "remember",
+          "en": "Remember",
+          "gl": "Lembrar",
+          "es": "Recordar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tocar a cabeza e asentir",
+            "es": "Tocarse la cabeza y asentir"
+          }
+        },
+        {
+          "id": "old",
+          "en": "Old",
+          "gl": "Vello, vella",
+          "es": "Viejo, vieja",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Soprar o po dun libro vello imaxinario",
+            "es": "Soplar el polvo de un libro viejo imaginario"
+          }
+        },
+        {
+          "id": "kind",
+          "en": "Kind",
+          "gl": "Amable",
+          "es": "Amable",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Ofrecer algo cun sorriso",
+            "es": "Ofrecer algo con una sonrisa"
+          }
+        },
+        {
+          "id": "great",
+          "en": "Great",
+          "gl": "Estupendo, estupenda",
+          "es": "Estupendo, estupenda",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Levantar os dous polgares",
+            "es": "Levantar los dos pulgares"
+          }
+        },
+        {
+          "id": "secret",
+          "en": "Secret",
+          "gl": "Secreto, secreta",
+          "es": "Secreto, secreta",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Levar o dedo aos beizos e chiscar un ollo",
+            "es": "Llevarse el dedo a los labios y guiñar un ojo"
+          }
+        },
+        {
+          "id": "once-upon-a-time",
+          "en": "Once upon a time",
+          "gl": "Era unha vez",
+          "es": "Érase una vez",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Abrir os brazos amodo coma quen abre un conto",
+            "es": "Abrir los brazos despacio como quien abre un cuento"
+          }
+        },
+        {
+          "id": "the-end",
+          "en": "The end",
+          "gl": "Fin",
+          "es": "Fin",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Pechar as mans coma un libro que se pecha",
+            "es": "Cerrar las manos como un libro que se cierra"
+          }
+        },
+        {
+          "id": "and-then",
+          "en": "And then...",
+          "gl": "E entón...",
+          "es": "Y entonces...",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Abrir unha man e logo a outra, con cara de misterio",
+            "es": "Abrir una mano y luego la otra, con cara de misterio"
+          }
+        },
+        {
+          "id": "big-like-a-giant",
+          "en": "Big like a giant",
+          "gl": "Grande coma un xigante",
+          "es": "Grande como un gigante",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Estirarse moito e camiñar a pasos grandes",
+            "es": "Estirarse mucho y caminar a pasos grandes"
+          }
+        }
+      ]
+    }
+  ]
+}

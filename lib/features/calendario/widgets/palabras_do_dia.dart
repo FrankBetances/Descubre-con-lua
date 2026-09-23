@@ -208,6 +208,55 @@ class BloqueInglesDoDia extends StatelessWidget {
   }
 }
 
+/// Las cinco edades del trayecto, en pastillas: el curso cuyas palabras se
+/// enseñan. Es la misma elección que «O meu grupo» en el aula y «A miña
+/// crianza» en casa.
+class SelectorDeCursoTpr extends StatelessWidget {
+  final ProgramaTpr programa;
+  final String seleccionado;
+  final AppLanguage language;
+  final String prefixoClave;
+  final ValueChanged<String> onCambiar;
+
+  const SelectorDeCursoTpr({
+    super.key,
+    required this.programa,
+    required this.seleccionado,
+    required this.language,
+    required this.prefixoClave,
+    required this.onCambiar,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    // Wrap y no fila con scroll: con texto grande las cinco edades bajan de
+    // línea y se ven todas, en vez de quedar la última fuera de la pantalla.
+    return Wrap(
+      spacing: 6,
+      runSpacing: 6,
+      children: [
+        for (final c in programa.cursos)
+          ChoiceChip(
+            key: ValueKey('${prefixoClave}_${c.id}'),
+            label: Text(c.etiqueta.resolve(language)),
+            selected: c.id == seleccionado,
+            onSelected: (sel) {
+              if (sel && c.id != seleccionado) onCambiar(c.id);
+            },
+            selectedColor: AppTheme.primaryVigoBlue,
+            backgroundColor: Colors.white,
+            showCheckmark: false,
+            labelStyle: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: c.id == seleccionado ? Colors.white : AppTheme.primaryInk,
+            ),
+            materialTapTargetSize: MaterialTapTargetSize.padded,
+          ),
+      ],
+    );
+  }
+}
+
 class _Pastilla extends StatelessWidget {
   final TprWord palabra;
   final OfflineAudioService? audioService;

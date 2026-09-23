@@ -226,12 +226,13 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                         store: widget.calendario,
                         contenido: widget.calendarioContenido,
                         padding: EdgeInsets.zero,
-                        onAbrirMes: (contenido, mesIndex) =>
+                        onAbrirMes: (contenido, curso, mesIndex) =>
                             Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => CalendarioScreen(
                               store: widget.calendario ?? CalendarioStore(),
                               contenido: contenido,
+                              cursoInicial: curso,
                               mesInicialIndex: mesIndex,
                               initialLanguage: _language,
                               onLanguageChanged: _onToggleLanguage,

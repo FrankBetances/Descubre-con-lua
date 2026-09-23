@@ -15,7 +15,12 @@ import '../../docentes/widgets/hoxe_na_aula.dart';
 /// vocabulario temperán pero non prescriben un ritmo de ensino. Agora ensina
 /// as palabras do día, sacadas do curso, e o número sae do modelo.
 class TarxetaInglesDeHoxeFogar extends StatelessWidget {
-  final CursoTpr curso;
+  final ProgramaTpr programa;
+
+  /// O curso da crianza (`curso_0_2` … `curso_5_6`): as palabras de hoxe son
+  /// as dese curso, as mesmas que ve a escola nese grupo.
+  final String cursoId;
+  final ValueChanged<String> onCambiarCurso;
   final AppLanguage language;
   final OfflineAudioService? audioService;
   final VoidCallback onVerXogos;
@@ -25,7 +30,9 @@ class TarxetaInglesDeHoxeFogar extends StatelessWidget {
 
   const TarxetaInglesDeHoxeFogar({
     super.key,
-    required this.curso,
+    required this.programa,
+    required this.cursoId,
+    required this.onCambiarCurso,
     required this.language,
     required this.onVerXogos,
     this.audioService,
@@ -37,8 +44,9 @@ class TarxetaInglesDeHoxeFogar extends StatelessWidget {
     final isGl = language == AppLanguage.gl;
     final hoxe = diaDoCursoParaHoxe(agora: agora);
     final d = hoxe.dia;
-    final plan = curso.planDoDia(d.mesCalendario, d.semana, d.dia);
-    if (plan == null) return const SizedBox.shrink();
+    final curso = programa.curso(cursoId);
+    final plan = curso?.planDoDia(d.mesCalendario, d.semana, d.dia);
+    if (curso == null || plan == null) return const SizedBox.shrink();
     final ritmo = curso.modelo.ritmoDiario;
     final porSemana = ritmo * WeeklyTprScheduler.diasConPalabrasNovas;
 
@@ -104,6 +112,14 @@ class TarxetaInglesDeHoxeFogar extends StatelessWidget {
               ),
             ),
           ],
+          const SizedBox(height: 10),
+          SelectorDeCursoTpr(
+            programa: programa,
+            seleccionado: cursoId,
+            language: language,
+            prefixoClave: 'fogar_curso',
+            onCambiar: onCambiarCurso,
+          ),
           const SizedBox(height: 10),
           PalabrasDoDia(
             plan: plan,

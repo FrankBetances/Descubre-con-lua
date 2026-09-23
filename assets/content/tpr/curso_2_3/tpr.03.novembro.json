@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.2_3.novembro",
+  "curso": "curso_2_3",
+  "orden": 3,
+  "mesCalendario": 11,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Castrelos no outono",
+        "es": "Castrelos en otoño"
+      },
+      "palabras": [
+        {
+          "id": "2_3.novembro.s1.castrelos-park",
+          "en": "Castrelos Park",
+          "gl": "Parque de Castrelos",
+          "es": "Parque de Castrelos",
+          "tprAction": {
+            "gl": "Sinalar o parque no mapa",
+            "es": "Señalar el parque en el mapa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s1.oak-tree",
+          "en": "Oak tree",
+          "gl": "Carballo",
+          "es": "Roble",
+          "tprAction": {
+            "gl": "Estirar os brazos coma un carballo",
+            "es": "Estirar los brazos como un roble"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s1.pond-duck",
+          "en": "Pond duck",
+          "gl": "Pato do estanque",
+          "es": "Pato del estanque",
+          "tprAction": {
+            "gl": "Camiñar coma un pato",
+            "es": "Caminar como un pato"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s1.fountain",
+          "en": "Fountain",
+          "gl": "Fonte",
+          "es": "Fuente",
+          "tprAction": {
+            "gl": "Subir as mans coma a auga da fonte",
+            "es": "Subir las manos como el agua de la fuente"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s1.footpath",
+          "en": "Footpath",
+          "gl": "Carreiro",
+          "es": "Sendero",
+          "tprAction": {
+            "gl": "Camiñar polo carreiro",
+            "es": "Caminar por el sendero"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s1.park-bench",
+          "en": "Park bench",
+          "gl": "Banco do parque",
+          "es": "Banco del parque",
+          "tprAction": {
+            "gl": "Sentarse no banco",
+            "es": "Sentarse en el banco"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s1.gate",
+          "en": "Gate",
+          "gl": "Portal",
+          "es": "Verja",
+          "tprAction": {
+            "gl": "Abrir o portal do parque",
+            "es": "Abrir la verja del parque"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s1.stroll",
+          "en": "Stroll",
+          "gl": "Pasear",
+          "es": "Pasear",
+          "tprAction": {
+            "gl": "Camiñar amodo de man",
+            "es": "Caminar despacio de la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s1.feed-the-ducks",
+          "en": "Feed the ducks",
+          "gl": "Dar de comer aos patos",
+          "es": "Dar de comer a los patos",
+          "tprAction": {
+            "gl": "Estender a man con miolos",
+            "es": "Extender la mano con migas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s1.kick-a-leaf",
+          "en": "Kick a leaf",
+          "gl": "Chutar unha folla",
+          "es": "Chutar una hoja",
+          "tprAction": {
+            "gl": "Chutar unha folla seca",
+            "es": "Chutar una hoja seca"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s1.hide-behind",
+          "en": "Hide behind",
+          "gl": "Esconderse detrás",
+          "es": "Esconderse detrás",
+          "tprAction": {
+            "gl": "Esconderse detrás dunha árbore",
+            "es": "Esconderse detrás de un árbol"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s1.point-at",
+          "en": "Point at",
+          "gl": "Sinalar a",
+          "es": "Señalar a",
+          "tprAction": {
+            "gl": "Sinalar un paxaro",
+            "es": "Señalar un pájaro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s1.leaf-covered",
+          "en": "Leaf-covered",
+          "gl": "Cuberto de follas",
+          "es": "Cubierto de hojas",
+          "tprAction": {
+            "gl": "Tapar os pés con follas",
+            "es": "Tapar los pies con hojas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s1.russet",
+          "en": "Russet",
+          "gl": "Avermellado",
+          "es": "Rojizo",
+          "tprAction": {
+            "gl": "Amosar unha folla avermellada",
+            "es": "Enseñar una hoja rojiza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s1.misty",
+          "en": "Misty",
+          "gl": "Neboento",
+          "es": "Brumoso",
+          "tprAction": {
+            "gl": "Mover as mans coma néboa",
+            "es": "Mover las manos como niebla"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s1.peaceful-park",
+          "en": "Peaceful park",
+          "gl": "Parque tranquilo",
+          "es": "Parque tranquilo",
+          "tprAction": {
+            "gl": "Respirar fondo no parque",
+            "es": "Respirar hondo en el parque"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s1.let-s-go-to-the-park",
+          "en": "Let's go to the park!",
+          "gl": "Imos ao parque!",
+          "es": "¡Vamos al parque!",
+          "tprAction": {
+            "gl": "Coller a man e camiñar",
+            "es": "Coger la mano y caminar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.novembro.s1.look-at-the-ducks",
+          "en": "Look at the ducks!",
+          "gl": "Mira os patos!",
+          "es": "¡Mira los patos!",
+          "tprAction": {
+            "gl": "Sinalar os patos",
+            "es": "Señalar los patos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.novembro.s1.along-the-path",
+          "en": "Along the path",
+          "gl": "Polo carreiro",
+          "es": "Por el sendero",
+          "tprAction": {
+            "gl": "Camiñar en fila polo carreiro",
+            "es": "Caminar en fila por el sendero"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.novembro.s1.leaves-on-my-shoes",
+          "en": "Leaves on my shoes",
+          "gl": "Follas nos zapatos",
+          "es": "Hojas en los zapatos",
+          "tprAction": {
+            "gl": "Sinalar as follas nos pés",
+            "es": "Señalar las hojas en los pies"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Vento de outono",
+        "es": "Viento de otoño"
+      },
+      "palabras": [
+        {
+          "id": "2_3.novembro.s2.gust",
+          "en": "Gust",
+          "gl": "Refacho",
+          "es": "Ráfaga",
+          "tprAction": {
+            "gl": "Soprar forte unha vez",
+            "es": "Soplar fuerte una vez"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s2.weather-vane",
+          "en": "Weather vane",
+          "gl": "Catavento",
+          "es": "Veleta",
+          "tprAction": {
+            "gl": "Xirar un brazo coma o catavento",
+            "es": "Girar un brazo como la veleta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s2.paper-bag",
+          "en": "Paper bag",
+          "gl": "Bolsa de papel",
+          "es": "Bolsa de papel",
+          "tprAction": {
+            "gl": "Encher a bolsa de follas",
+            "es": "Llenar la bolsa de hojas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s2.scarecrow",
+          "en": "Scarecrow",
+          "gl": "Espantallo",
+          "es": "Espantapájaros",
+          "tprAction": {
+            "gl": "Abrir os brazos coma un espantallo",
+            "es": "Abrir los brazos como un espantapájaros"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s2.windmill",
+          "en": "Windmill",
+          "gl": "Muíño",
+          "es": "Molino",
+          "tprAction": {
+            "gl": "Xirar os brazos coma un muíño",
+            "es": "Girar los brazos como un molino"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s2.hat-brim",
+          "en": "Hat brim",
+          "gl": "Aba do chapeu",
+          "es": "Ala del sombrero",
+          "tprAction": {
+            "gl": "Suxeitar o chapeu co vento",
+            "es": "Sujetar el sombrero con el viento"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s2.treetop",
+          "en": "Treetop",
+          "gl": "Copa da árbore",
+          "es": "Copa del árbol",
+          "tprAction": {
+            "gl": "Sinalar a copa da árbore",
+            "es": "Señalar la copa del árbol"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s2.blow-away",
+          "en": "Blow away",
+          "gl": "Levar o vento",
+          "es": "Llevárselo el viento",
+          "tprAction": {
+            "gl": "Soprar e deixar voar unha folla",
+            "es": "Soplar y dejar volar una hoja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s2.flap-arms",
+          "en": "Flap arms",
+          "gl": "Bater os brazos",
+          "es": "Batir los brazos",
+          "tprAction": {
+            "gl": "Bater os brazos coma o vento",
+            "es": "Batir los brazos como el viento"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s2.hold-on",
+          "en": "Hold on",
+          "gl": "Suxeitarse",
+          "es": "Agarrarse",
+          "tprAction": {
+            "gl": "Agarrarse ao banco",
+            "es": "Agarrarse al banco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s2.whoosh-around",
+          "en": "Whoosh around",
+          "gl": "Correr coma o vento",
+          "es": "Correr como el viento",
+          "tprAction": {
+            "gl": "Correr en círculo facendo «fiuuu»",
+            "es": "Correr en círculo haciendo «fiuuu»"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s2.bend-in-the-wind",
+          "en": "Bend in the wind",
+          "gl": "Dobrarse co vento",
+          "es": "Doblarse con el viento",
+          "tprAction": {
+            "gl": "Inclinarse dun lado a outro",
+            "es": "Inclinarse de un lado a otro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s2.blustery",
+          "en": "Blustery",
+          "gl": "Ventoso",
+          "es": "Ventoso",
+          "tprAction": {
+            "gl": "Mover o corpo co vento",
+            "es": "Mover el cuerpo con el viento"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s2.swirly",
+          "en": "Swirly",
+          "gl": "En remuíño",
+          "es": "En remolino",
+          "tprAction": {
+            "gl": "Facer un remuíño co dedo",
+            "es": "Hacer un remolino con el dedo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s2.chilly-wind",
+          "en": "Chilly wind",
+          "gl": "Vento fresco",
+          "es": "Viento fresco",
+          "tprAction": {
+            "gl": "Abrazarse polo frío",
+            "es": "Abrazarse por el frío"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s2.wild-wind",
+          "en": "Wild wind",
+          "gl": "Vento forte",
+          "es": "Viento fuerte",
+          "tprAction": {
+            "gl": "Mover os brazos con forza",
+            "es": "Mover los brazos con fuerza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s2.hold-your-hat",
+          "en": "Hold your hat!",
+          "gl": "Suxeita o chapeu!",
+          "es": "¡Sujeta el sombrero!",
+          "tprAction": {
+            "gl": "Pousar as mans na cabeza",
+            "es": "Posar las manos en la cabeza"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.novembro.s2.the-wind-is-blowing",
+          "en": "The wind is blowing",
+          "gl": "Sopra o vento",
+          "es": "Sopla el viento",
+          "tprAction": {
+            "gl": "Soprar e mover os brazos",
+            "es": "Soplar y mover los brazos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.novembro.s2.up-and-away",
+          "en": "Up and away",
+          "gl": "Arriba e lonxe",
+          "es": "Arriba y lejos",
+          "tprAction": {
+            "gl": "Lanzar a folla cara arriba",
+            "es": "Lanzar la hoja hacia arriba"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.novembro.s2.with-the-wind",
+          "en": "With the wind",
+          "gl": "Co vento",
+          "es": "Con el viento",
+          "tprAction": {
+            "gl": "Correr cos brazos abertos",
+            "es": "Correr con los brazos abiertos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Pisamos forte",
+        "es": "Pisamos fuerte"
+      },
+      "palabras": [
+        {
+          "id": "2_3.novembro.s3.boot-print",
+          "en": "Boot print",
+          "gl": "Pegada da bota",
+          "es": "Huella de la bota",
+          "tprAction": {
+            "gl": "Pisar na terra e mirar a pegada",
+            "es": "Pisar en la tierra y mirar la huella"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s3.giant-steps",
+          "en": "Giant steps",
+          "gl": "Pasos de xigante",
+          "es": "Pasos de gigante",
+          "tprAction": {
+            "gl": "Dar pasos moi longos",
+            "es": "Dar pasos muy largos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s3.ant-steps",
+          "en": "Ant steps",
+          "gl": "Pasos de formiga",
+          "es": "Pasos de hormiga",
+          "tprAction": {
+            "gl": "Dar pasos moi curtos",
+            "es": "Dar pasos muy cortos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s3.crunchy-path",
+          "en": "Crunchy path",
+          "gl": "Carreiro que cruxe",
+          "es": "Camino que cruje",
+          "tprAction": {
+            "gl": "Pisar sobre follas secas",
+            "es": "Pisar sobre hojas secas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s3.pile-of-leaves",
+          "en": "Pile of leaves",
+          "gl": "Monte de follas",
+          "es": "Pila de hojas",
+          "tprAction": {
+            "gl": "Saltar enriba do monte de follas",
+            "es": "Saltar encima de la pila de hojas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s3.puddle-edge",
+          "en": "Puddle edge",
+          "gl": "Beira da poza",
+          "es": "Borde del charco",
+          "tprAction": {
+            "gl": "Camiñar pola beira da poza",
+            "es": "Caminar por el borde del charco"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s3.log",
+          "en": "Log",
+          "gl": "Tronco caído",
+          "es": "Tronco caído",
+          "tprAction": {
+            "gl": "Camiñar por riba dun tronco",
+            "es": "Caminar por encima de un tronco"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s3.stomp-around",
+          "en": "Stomp around",
+          "gl": "Pisar forte arredor",
+          "es": "Pisar fuerte alrededor",
+          "tprAction": {
+            "gl": "Pisar forte dando unha volta",
+            "es": "Pisar fuerte dando una vuelta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s3.tread",
+          "en": "Tread",
+          "gl": "Pisar",
+          "es": "Pisar",
+          "tprAction": {
+            "gl": "Pisar amodo unha folla",
+            "es": "Pisar despacio una hoja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s3.stamp-feet",
+          "en": "Stamp feet",
+          "gl": "Bater os pés",
+          "es": "Patalear",
+          "tprAction": {
+            "gl": "Bater os pés no chan",
+            "es": "Patalear en el suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s3.walk-heavy",
+          "en": "Walk heavy",
+          "gl": "Camiñar pesado",
+          "es": "Caminar pesado",
+          "tprAction": {
+            "gl": "Camiñar coma un elefante",
+            "es": "Caminar como un elefante"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s3.walk-light",
+          "en": "Walk light",
+          "gl": "Camiñar lixeiro",
+          "es": "Caminar ligero",
+          "tprAction": {
+            "gl": "Camiñar de puntas",
+            "es": "Caminar de puntillas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s3.crunchy-leaves",
+          "en": "Crunchy leaves",
+          "gl": "Follas que cruxen",
+          "es": "Hojas crujientes",
+          "tprAction": {
+            "gl": "Esmagar follas na man",
+            "es": "Aplastar hojas en la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s3.heavy-steps",
+          "en": "Heavy steps",
+          "gl": "Pasos pesados",
+          "es": "Pasos pesados",
+          "tprAction": {
+            "gl": "Pisar moi forte",
+            "es": "Pisar muy fuerte"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s3.light-steps",
+          "en": "Light steps",
+          "gl": "Pasos lixeiros",
+          "es": "Pasos ligeros",
+          "tprAction": {
+            "gl": "Pisar moi suave",
+            "es": "Pisar muy suave"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s3.thumping",
+          "en": "Thumping",
+          "gl": "Retumbante",
+          "es": "Que retumba",
+          "tprAction": {
+            "gl": "Bater co pé e escoitar",
+            "es": "Golpear con el pie y escuchar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s3.stomp-stomp-stomp",
+          "en": "Stomp, stomp, stomp!",
+          "gl": "Pum, pum, pum!",
+          "es": "¡Pum, pum, pum!",
+          "tprAction": {
+            "gl": "Pisar forte tres veces",
+            "es": "Pisar fuerte tres veces"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.novembro.s3.listen-to-the-crunch",
+          "en": "Listen to the crunch",
+          "gl": "Escoita como cruxe",
+          "es": "Escucha cómo cruje",
+          "tprAction": {
+            "gl": "Pisar e levar a man á orella",
+            "es": "Pisar y llevar la mano a la oreja"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.novembro.s3.big-steps-and-little-steps",
+          "en": "Big steps and little steps",
+          "gl": "Pasos grandes e pequenos",
+          "es": "Pasos grandes y pequeños",
+          "tprAction": {
+            "gl": "Alternar pasos longos e curtos",
+            "es": "Alternar pasos largos y cortos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.novembro.s3.over-the-log",
+          "en": "Over the log",
+          "gl": "Por riba do tronco",
+          "es": "Por encima del tronco",
+          "tprAction": {
+            "gl": "Pasar a perna por riba",
+            "es": "Pasar la pierna por encima"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Magosto no parque",
+        "es": "Magosto en el parque"
+      },
+      "palabras": [
+        {
+          "id": "2_3.novembro.s4.chestnut-stall",
+          "en": "Chestnut stall",
+          "gl": "Posto de castañas",
+          "es": "Puesto de castañas",
+          "tprAction": {
+            "gl": "Sinalar o posto de castañas",
+            "es": "Señalar el puesto de castañas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s4.picnic-blanket",
+          "en": "Picnic blanket",
+          "gl": "Manta de picnic",
+          "es": "Manta de pícnic",
+          "tprAction": {
+            "gl": "Estender a manta na herba",
+            "es": "Extender la manta en la hierba"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s4.napkin",
+          "en": "Napkin",
+          "gl": "Servilleta",
+          "es": "Servilleta",
+          "tprAction": {
+            "gl": "Limpar a boca coa servilleta",
+            "es": "Limpiar la boca con la servilleta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s4.thermos",
+          "en": "Thermos",
+          "gl": "Termo",
+          "es": "Termo",
+          "tprAction": {
+            "gl": "Servir algo quente do termo",
+            "es": "Servir algo caliente del termo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s4.bonfire-smoke",
+          "en": "Bonfire smoke",
+          "gl": "Fume da fogueira",
+          "es": "Humo de la hoguera",
+          "tprAction": {
+            "gl": "Subir as mans en espiral",
+            "es": "Subir las manos en espiral"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s4.warm-chestnut",
+          "en": "Warm chestnut",
+          "gl": "Castaña quente",
+          "es": "Castaña caliente",
+          "tprAction": {
+            "gl": "Soprar a castaña antes de tocala",
+            "es": "Soplar la castaña antes de tocarla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s4.shell-pieces",
+          "en": "Shell pieces",
+          "gl": "Cascas",
+          "es": "Cáscaras",
+          "tprAction": {
+            "gl": "Xuntar as cascas nun montón",
+            "es": "Juntar las cáscaras en un montón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.novembro.s4.crack-open",
+          "en": "Crack open",
+          "gl": "Abrir rompendo",
+          "es": "Abrir rompiendo",
+          "tprAction": {
+            "gl": "Premer a castaña para abrila",
+            "es": "Apretar la castaña para abrirla"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s4.spread-out",
+          "en": "Spread out",
+          "gl": "Estender",
+          "es": "Extender",
+          "tprAction": {
+            "gl": "Estender a manta con todos",
+            "es": "Extender la manta con todos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s4.munch",
+          "en": "Munch",
+          "gl": "Mastigar",
+          "es": "Masticar",
+          "tprAction": {
+            "gl": "Mastigar contentos",
+            "es": "Masticar contentos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s4.blow-to-cool",
+          "en": "Blow to cool",
+          "gl": "Soprar para arrefriar",
+          "es": "Soplar para enfriar",
+          "tprAction": {
+            "gl": "Soprar a comida quente",
+            "es": "Soplar la comida caliente"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s4.sit-around",
+          "en": "Sit around",
+          "gl": "Sentarse arredor",
+          "es": "Sentarse alrededor",
+          "tprAction": {
+            "gl": "Sentarse todos arredor da manta",
+            "es": "Sentarse todos alrededor de la manta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.novembro.s4.steaming",
+          "en": "Steaming",
+          "gl": "Fumegante",
+          "es": "Humeante",
+          "tprAction": {
+            "gl": "Sinalar o vapor que sobe",
+            "es": "Señalar el vapor que sube"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s4.crackly-shell",
+          "en": "Crackly shell",
+          "gl": "Casca que estala",
+          "es": "Cáscara que cruje",
+          "tprAction": {
+            "gl": "Romper a casca e escoitar",
+            "es": "Romper la cáscara y escuchar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s4.autumn-coloured",
+          "en": "Autumn-coloured",
+          "gl": "Da cor do outono",
+          "es": "Color otoño",
+          "tprAction": {
+            "gl": "Sinalar follas e castañas",
+            "es": "Señalar hojas y castañas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s4.filling",
+          "en": "Filling",
+          "gl": "Que enche",
+          "es": "Que llena",
+          "tprAction": {
+            "gl": "Tocar a barriga chea",
+            "es": "Tocar la barriga llena"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.novembro.s4.careful-it-s-hot",
+          "en": "Careful, it's hot",
+          "gl": "Coidado, queima",
+          "es": "Cuidado, quema",
+          "tprAction": {
+            "gl": "Soprar e abanar a man",
+            "es": "Soplar y abanicar la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.novembro.s4.can-i-have-one",
+          "en": "Can I have one?",
+          "gl": "Podo coller unha?",
+          "es": "¿Puedo coger una?",
+          "tprAction": {
+            "gl": "Estender a man pedindo",
+            "es": "Extender la mano pidiendo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.novembro.s4.yummy-chestnut",
+          "en": "Yummy chestnut!",
+          "gl": "Que rica a castaña!",
+          "es": "¡Qué rica la castaña!",
+          "tprAction": {
+            "gl": "Tocar a barriga e sorrir",
+            "es": "Tocar la barriga y sonreír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.novembro.s4.on-the-blanket",
+          "en": "On the blanket",
+          "gl": "Na manta",
+          "es": "En la manta",
+          "tprAction": {
+            "gl": "Sentarse na manta",
+            "es": "Sentarse en la manta"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

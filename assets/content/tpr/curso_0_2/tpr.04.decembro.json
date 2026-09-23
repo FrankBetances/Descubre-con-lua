@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.0_2.decembro",
+  "curso": "curso_0_2",
+  "orden": 4,
+  "mesCalendario": 12,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Vai frío!",
+        "es": "¡Hace frío!"
+      },
+      "palabras": [
+        {
+          "id": "0_2.decembro.s1.mittens",
+          "en": "Mittens",
+          "gl": "Luvas sen dedos",
+          "es": "Manoplas",
+          "tprAction": {
+            "gl": "Poñer as luvas ao bebé",
+            "es": "Poner las manoplas al bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s1.snowsuit",
+          "en": "Snowsuit",
+          "gl": "Buzo de neve",
+          "es": "Buzo de nieve",
+          "tprAction": {
+            "gl": "Meter as pernas no buzo",
+            "es": "Meter las piernas en el buzo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s1.hood",
+          "en": "Hood",
+          "gl": "Carapucha",
+          "es": "Capucha",
+          "tprAction": {
+            "gl": "Poñer a carapucha e sorrir",
+            "es": "Poner la capucha y sonreír"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s1.hot-water-bottle",
+          "en": "Hot water bottle",
+          "gl": "Bolsa de auga quente",
+          "es": "Bolsa de agua caliente",
+          "tprAction": {
+            "gl": "Poñer a bolsa morna na barriga",
+            "es": "Poner la bolsa templada en la barriga"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s1.frost",
+          "en": "Frost",
+          "gl": "Xeada",
+          "es": "Escarcha",
+          "tprAction": {
+            "gl": "Sinalar a xeada na fiestra",
+            "es": "Señalar la escarcha en la ventana"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s1.fireplace",
+          "en": "Fireplace",
+          "gl": "Lareira",
+          "es": "Chimenea",
+          "tprAction": {
+            "gl": "Sinalar a lareira de lonxe",
+            "es": "Señalar la chimenea de lejos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s1.breath",
+          "en": "Breath",
+          "gl": "Alento",
+          "es": "Aliento",
+          "tprAction": {
+            "gl": "Botar o alento no cristal",
+            "es": "Echar el aliento en el cristal"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s1.wrap-up",
+          "en": "Wrap up",
+          "gl": "Abrigar",
+          "es": "Abrigar",
+          "tprAction": {
+            "gl": "Envolver o bebé na manta",
+            "es": "Envolver al bebé en la manta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s1.rub-hands",
+          "en": "Rub hands",
+          "gl": "Fregar as mans",
+          "es": "Frotar las manos",
+          "tprAction": {
+            "gl": "Fregar as mans para quentalas",
+            "es": "Frotar las manos para calentarlas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s1.warm-up-hands",
+          "en": "Warm up hands",
+          "gl": "Quentar as mans",
+          "es": "Calentar las manos",
+          "tprAction": {
+            "gl": "Soprar nas mans do bebé",
+            "es": "Soplar en las manos del bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s1.tuck-in",
+          "en": "Tuck in",
+          "gl": "Aconchegar",
+          "es": "Arropar",
+          "tprAction": {
+            "gl": "Meter a manta baixo o bebé",
+            "es": "Meter la manta bajo el bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s1.huddle",
+          "en": "Huddle",
+          "gl": "Xuntarse",
+          "es": "Acurrucarse juntos",
+          "tprAction": {
+            "gl": "Xuntarse todos baixo unha manta",
+            "es": "Juntarse todos bajo una manta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s1.freezing",
+          "en": "Freezing",
+          "gl": "Xeado",
+          "es": "Helado",
+          "tprAction": {
+            "gl": "Tremer coma de frío",
+            "es": "Temblar como de frío"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s1.toasty-warm",
+          "en": "Toasty warm",
+          "gl": "Quentiño",
+          "es": "Calentito",
+          "tprAction": {
+            "gl": "Abrazar o bebé ben apertado",
+            "es": "Abrazar al bebé bien apretado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s1.fleecy",
+          "en": "Fleecy",
+          "gl": "De forro polar",
+          "es": "Afelpado",
+          "tprAction": {
+            "gl": "Acariñar a chaqueta de forro",
+            "es": "Acariciar la chaqueta afelpada"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s1.frosty",
+          "en": "Frosty",
+          "gl": "Con xeada",
+          "es": "Escarchado",
+          "tprAction": {
+            "gl": "Pasar o dedo polo cristal frío",
+            "es": "Pasar el dedo por el cristal frío"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s1.brr-so-cold",
+          "en": "Brr, so cold!",
+          "gl": "Brr, que frío!",
+          "es": "¡Brr, qué frío!",
+          "tprAction": {
+            "gl": "Tremer e fregar os brazos",
+            "es": "Temblar y frotar los brazos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.decembro.s1.let-s-get-cosy",
+          "en": "Let's get cosy",
+          "gl": "Imos quentarnos",
+          "es": "Vamos a calentarnos",
+          "tprAction": {
+            "gl": "Abrazarse baixo a manta",
+            "es": "Abrazarse bajo la manta"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.decembro.s1.hat-and-mittens",
+          "en": "Hat and mittens",
+          "gl": "Gorro e luvas",
+          "es": "Gorro y manoplas",
+          "tprAction": {
+            "gl": "Tocar o gorro e despois as luvas",
+            "es": "Tocar el gorro y luego las manoplas"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.decembro.s1.close-to-me",
+          "en": "Close to me",
+          "gl": "Preto de min",
+          "es": "Cerca de mí",
+          "tprAction": {
+            "gl": "Achegar o bebé ao peito",
+            "es": "Acercar al bebé al pecho"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Abrazos quentes",
+        "es": "Abrazos calentitos"
+      },
+      "palabras": [
+        {
+          "id": "0_2.decembro.s2.big-hug",
+          "en": "Big hug",
+          "gl": "Aperta grande",
+          "es": "Abrazo grande",
+          "tprAction": {
+            "gl": "Dar unha aperta grande",
+            "es": "Dar un abrazo grande"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s2.quilt",
+          "en": "Quilt",
+          "gl": "Edredón",
+          "es": "Edredón",
+          "tprAction": {
+            "gl": "Tapar o bebé co edredón",
+            "es": "Tapar al bebé con el edredón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s2.cushion",
+          "en": "Cushion",
+          "gl": "Coxín",
+          "es": "Cojín",
+          "tprAction": {
+            "gl": "Apoiar a cabeza nun coxín",
+            "es": "Apoyar la cabeza en un cojín"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s2.slippers",
+          "en": "Slippers",
+          "gl": "Zapatillas",
+          "es": "Zapatillas",
+          "tprAction": {
+            "gl": "Poñer as zapatillas ao bebé",
+            "es": "Poner las zapatillas al bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s2.cardigan",
+          "en": "Cardigan",
+          "gl": "Chaqueta de punto",
+          "es": "Rebeca",
+          "tprAction": {
+            "gl": "Abotoar a chaqueta de punto",
+            "es": "Abotonar la rebeca"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s2.warm-milk",
+          "en": "Warm milk",
+          "gl": "Leite morno",
+          "es": "Leche templada",
+          "tprAction": {
+            "gl": "Achegar o biberón morno",
+            "es": "Acercar el biberón templado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s2.heater",
+          "en": "Heater",
+          "gl": "Calefacción",
+          "es": "Calefacción",
+          "tprAction": {
+            "gl": "Sinalar o radiador quente",
+            "es": "Señalar el radiador caliente"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s2.squeeze-tight",
+          "en": "Squeeze tight",
+          "gl": "Apertar forte",
+          "es": "Apretar fuerte",
+          "tprAction": {
+            "gl": "Dar unha aperta forte e soltar",
+            "es": "Dar un abrazo fuerte y soltar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s2.rock-gently",
+          "en": "Rock gently",
+          "gl": "Randear amodo",
+          "es": "Mecer despacio",
+          "tprAction": {
+            "gl": "Randear o bebé moi amodo",
+            "es": "Mecer al bebé muy despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s2.cover-up",
+          "en": "Cover up",
+          "gl": "Tapar",
+          "es": "Tapar",
+          "tprAction": {
+            "gl": "Tapar os pés coa manta",
+            "es": "Tapar los pies con la manta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s2.warm-feet",
+          "en": "Warm feet",
+          "gl": "Quentar os pés",
+          "es": "Calentar los pies",
+          "tprAction": {
+            "gl": "Fregar os pés do bebé",
+            "es": "Frotar los pies del bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s2.lean-on",
+          "en": "Lean on",
+          "gl": "Apoiarse",
+          "es": "Apoyarse",
+          "tprAction": {
+            "gl": "Apoiar o bebé no ombro",
+            "es": "Apoyar al bebé en el hombro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s2.snuggly",
+          "en": "Snuggly",
+          "gl": "Mimoso",
+          "es": "Mimoso",
+          "tprAction": {
+            "gl": "Aconchegar o bebé coa meixela",
+            "es": "Acurrucar al bebé con la mejilla"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s2.woolly-hat",
+          "en": "Woolly hat",
+          "gl": "Gorro de la",
+          "es": "Gorro de lana",
+          "tprAction": {
+            "gl": "Tocar o gorro de la",
+            "es": "Tocar el gorro de lana"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s2.heavy-blanket",
+          "en": "Heavy blanket",
+          "gl": "Manta pesada",
+          "es": "Manta pesada",
+          "tprAction": {
+            "gl": "Pousar a manta amodo",
+            "es": "Posar la manta despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s2.sleepy-eyed",
+          "en": "Sleepy-eyed",
+          "gl": "Con ollos de sono",
+          "es": "Con ojitos de sueño",
+          "tprAction": {
+            "gl": "Pechar os ollos amodo",
+            "es": "Cerrar los ojos despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s2.come-here-for-a-hug",
+          "en": "Come here for a hug",
+          "gl": "Ven que te aperte",
+          "es": "Ven que te abrazo",
+          "tprAction": {
+            "gl": "Abrir os brazos e agardar",
+            "es": "Abrir los brazos y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.decembro.s2.warm-as-toast",
+          "en": "Warm as toast",
+          "gl": "Quente coma un pan",
+          "es": "Calentito como el pan",
+          "tprAction": {
+            "gl": "Fregar a barriga do bebé",
+            "es": "Frotar la barriga del bebé"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.decembro.s2.under-the-quilt",
+          "en": "Under the quilt",
+          "gl": "Debaixo do edredón",
+          "es": "Debajo del edredón",
+          "tprAction": {
+            "gl": "Meterse baixo o edredón",
+            "es": "Meterse bajo el edredón"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.decembro.s2.cheek-to-cheek",
+          "en": "Cheek to cheek",
+          "gl": "Meixela con meixela",
+          "es": "Mejilla con mejilla",
+          "tprAction": {
+            "gl": "Xuntar meixela con meixela",
+            "es": "Juntar mejilla con mejilla"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Luces de inverno",
+        "es": "Luces de invierno"
+      },
+      "palabras": [
+        {
+          "id": "0_2.decembro.s3.fairy-lights",
+          "en": "Fairy lights",
+          "gl": "Luciñas",
+          "es": "Lucecitas",
+          "tprAction": {
+            "gl": "Sinalar as luciñas que brillan",
+            "es": "Señalar las lucecitas que brillan"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s3.torch",
+          "en": "Torch",
+          "gl": "Lanterna",
+          "es": "Linterna",
+          "tprAction": {
+            "gl": "Acender e apagar a lanterna",
+            "es": "Encender y apagar la linterna"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s3.glitter",
+          "en": "Glitter",
+          "gl": "Purpurina",
+          "es": "Purpurina",
+          "tprAction": {
+            "gl": "Axitar un bote con purpurina",
+            "es": "Agitar un bote con purpurina"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s3.snow-globe",
+          "en": "Snow globe",
+          "gl": "Bóla de neve",
+          "es": "Bola de nieve",
+          "tprAction": {
+            "gl": "Axitar a bóla de neve",
+            "es": "Agitar la bola de nieve"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s3.lantern",
+          "en": "Lantern",
+          "gl": "Farol",
+          "es": "Farol",
+          "tprAction": {
+            "gl": "Levar un farol de papel",
+            "es": "Llevar un farol de papel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s3.pine-tree",
+          "en": "Pine tree",
+          "gl": "Piñeiro",
+          "es": "Pino",
+          "tprAction": {
+            "gl": "Sinalar a árbore de Nadal",
+            "es": "Señalar el árbol de Navidad"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s3.star-light",
+          "en": "Star light",
+          "gl": "Luz de estrela",
+          "es": "Luz de estrella",
+          "tprAction": {
+            "gl": "Abrir e pechar as mans coma estrelas",
+            "es": "Abrir y cerrar las manos como estrellas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s3.switch-on",
+          "en": "Switch on",
+          "gl": "Acender",
+          "es": "Encender",
+          "tprAction": {
+            "gl": "Premer o interruptor e ver a luz",
+            "es": "Pulsar el interruptor y ver la luz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s3.switch-off",
+          "en": "Switch off",
+          "gl": "Apagar",
+          "es": "Apagar",
+          "tprAction": {
+            "gl": "Apagar a luz e dicir «ooh»",
+            "es": "Apagar la luz y decir «ooh»"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s3.glitter-and-shake",
+          "en": "Glitter and shake",
+          "gl": "Axitar",
+          "es": "Agitar",
+          "tprAction": {
+            "gl": "Axitar a botella de purpurina",
+            "es": "Agitar la botella de purpurina"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s3.follow-the-light",
+          "en": "Follow the light",
+          "gl": "Seguir a luz",
+          "es": "Seguir la luz",
+          "tprAction": {
+            "gl": "Mover a lanterna amodo",
+            "es": "Mover la linterna despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s3.sparkle",
+          "en": "Sparkle",
+          "gl": "Escintilar",
+          "es": "Destellar",
+          "tprAction": {
+            "gl": "Abrir e pechar os dedos rápido",
+            "es": "Abrir y cerrar los dedos rápido"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s3.glowing",
+          "en": "Glowing",
+          "gl": "Luminoso",
+          "es": "Luminoso",
+          "tprAction": {
+            "gl": "Amosar unha lámpada acesa",
+            "es": "Enseñar una lámpara encendida"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s3.twinkly",
+          "en": "Twinkly",
+          "gl": "Escintilante",
+          "es": "Centelleante",
+          "tprAction": {
+            "gl": "Mover os dedos coma luces",
+            "es": "Mover los dedos como luces"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s3.glittery",
+          "en": "Glittery",
+          "gl": "Con purpurina",
+          "es": "Con purpurina",
+          "tprAction": {
+            "gl": "Tocar un papel con purpurina",
+            "es": "Tocar un papel con purpurina"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s3.dim",
+          "en": "Dim",
+          "gl": "Tenue",
+          "es": "Tenue",
+          "tprAction": {
+            "gl": "Baixar a luz amodo",
+            "es": "Bajar la luz despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s3.lights-on",
+          "en": "Lights on!",
+          "gl": "Luz acesa!",
+          "es": "¡Luz encendida!",
+          "tprAction": {
+            "gl": "Acender a luz e sorrir",
+            "es": "Encender la luz y sonreír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.decembro.s3.lights-off",
+          "en": "Lights off!",
+          "gl": "Luz apagada!",
+          "es": "¡Luz apagada!",
+          "tprAction": {
+            "gl": "Apagar a luz e tapar a boca",
+            "es": "Apagar la luz y tapar la boca"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.decembro.s3.look-at-the-lights",
+          "en": "Look at the lights",
+          "gl": "Mira as luces",
+          "es": "Mira las luces",
+          "tprAction": {
+            "gl": "Sinalar as luces ao bebé",
+            "es": "Señalar las luces al bebé"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.decembro.s3.on-and-off",
+          "en": "On and off",
+          "gl": "Aceso e apagado",
+          "es": "Encendido y apagado",
+          "tprAction": {
+            "gl": "Acender e apagar dúas veces",
+            "es": "Encender y apagar dos veces"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Festas en familia",
+        "es": "Fiestas en familia"
+      },
+      "palabras": [
+        {
+          "id": "0_2.decembro.s4.present",
+          "en": "Present",
+          "gl": "Agasallo",
+          "es": "Regalo",
+          "tprAction": {
+            "gl": "Dar un paquete pequeno",
+            "es": "Dar un paquete pequeño"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s4.wrapping-paper",
+          "en": "Wrapping paper",
+          "gl": "Papel de agasallo",
+          "es": "Papel de regalo",
+          "tprAction": {
+            "gl": "Engurrar papel de agasallo",
+            "es": "Arrugar papel de regalo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s4.stocking",
+          "en": "Stocking",
+          "gl": "Calcetín de Nadal",
+          "es": "Calcetín de Navidad",
+          "tprAction": {
+            "gl": "Meter a man no calcetín",
+            "es": "Meter la mano en el calcetín"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s4.reindeer",
+          "en": "Reindeer",
+          "gl": "Reno",
+          "es": "Reno",
+          "tprAction": {
+            "gl": "Poñer as mans coma cornos",
+            "es": "Poner las manos como cuernos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s4.carol",
+          "en": "Carol",
+          "gl": "Panxoliña",
+          "es": "Villancico",
+          "tprAction": {
+            "gl": "Cantar unha panxoliña baixiño",
+            "es": "Cantar un villancico bajito"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s4.jingle-bell",
+          "en": "Jingle bell",
+          "gl": "Cascabel",
+          "es": "Cascabel",
+          "tprAction": {
+            "gl": "Axitar un cascabel",
+            "es": "Agitar un cascabel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s4.family-table",
+          "en": "Family table",
+          "gl": "Mesa familiar",
+          "es": "Mesa familiar",
+          "tprAction": {
+            "gl": "Sentar o bebé á mesa con todos",
+            "es": "Sentar al bebé a la mesa con todos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.decembro.s4.open-up",
+          "en": "Open up",
+          "gl": "Abrir",
+          "es": "Abrir",
+          "tprAction": {
+            "gl": "Rachar o papel xuntos",
+            "es": "Romper el papel juntos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s4.jingle",
+          "en": "Jingle",
+          "gl": "Tintinar",
+          "es": "Tintinear",
+          "tprAction": {
+            "gl": "Facer soar o cascabel",
+            "es": "Hacer sonar el cascabel"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s4.rock-and-sing",
+          "en": "Rock and sing",
+          "gl": "Randear e cantar",
+          "es": "Mecer y cantar",
+          "tprAction": {
+            "gl": "Randear o bebé cantando",
+            "es": "Mecer al bebé cantando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s4.pass-around",
+          "en": "Pass around",
+          "gl": "Pasar de man en man",
+          "es": "Pasar de mano en mano",
+          "tprAction": {
+            "gl": "Pasar o bebé con coidado ao avó",
+            "es": "Pasar al bebé con cuidado al abuelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s4.blow-kisses",
+          "en": "Blow kisses",
+          "gl": "Mandar bicos",
+          "es": "Mandar besos",
+          "tprAction": {
+            "gl": "Mandar bicos coa man",
+            "es": "Mandar besos con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.decembro.s4.merry",
+          "en": "Merry",
+          "gl": "Festivo",
+          "es": "Festivo",
+          "tprAction": {
+            "gl": "Bailar co bebé no colo",
+            "es": "Bailar con el bebé en el regazo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s4.sparkly",
+          "en": "Sparkly",
+          "gl": "Brillante",
+          "es": "Brillante",
+          "tprAction": {
+            "gl": "Amosar un papel brillante",
+            "es": "Enseñar un papel brillante"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s4.jolly",
+          "en": "Jolly",
+          "gl": "Divertido",
+          "es": "Alegre",
+          "tprAction": {
+            "gl": "Rir moito co bebé",
+            "es": "Reír mucho con el bebé"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s4.shiny-paper",
+          "en": "Shiny paper",
+          "gl": "Papel brillante",
+          "es": "Papel brillante",
+          "tprAction": {
+            "gl": "Facer soar o papel brillante",
+            "es": "Hacer sonar el papel brillante"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.decembro.s4.what-s-inside",
+          "en": "What's inside?",
+          "gl": "Que hai dentro?",
+          "es": "¿Qué hay dentro?",
+          "tprAction": {
+            "gl": "Axitar a caixa e escoitar",
+            "es": "Agitar la caja y escuchar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.decembro.s4.ho-ho-ho",
+          "en": "Ho, ho, ho!",
+          "gl": "Jo, jo, jo!",
+          "es": "¡Jo, jo, jo!",
+          "tprAction": {
+            "gl": "Palmear a barriga rindo",
+            "es": "Dar palmadas en la barriga riendo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.decembro.s4.merry-and-bright",
+          "en": "Merry and bright",
+          "gl": "Alegre e brillante",
+          "es": "Alegre y brillante",
+          "tprAction": {
+            "gl": "Bater palmas e abrir as mans",
+            "es": "Dar palmas y abrir las manos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.decembro.s4.all-the-family",
+          "en": "All the family",
+          "gl": "Toda a familia",
+          "es": "Toda la familia",
+          "tprAction": {
+            "gl": "Abrir os brazos a todos",
+            "es": "Abrir los brazos a todos"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

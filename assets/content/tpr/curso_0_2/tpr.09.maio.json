@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.0_2.maio",
+  "curso": "curso_0_2",
+  "orden": 9,
+  "mesCalendario": 5,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Chapoteo",
+        "es": "Chapoteo"
+      },
+      "palabras": [
+        {
+          "id": "0_2.maio.s1.paddling-pool",
+          "en": "Paddling pool",
+          "gl": "Piscina pequena",
+          "es": "Piscina hinchable",
+          "tprAction": {
+            "gl": "Meter os pés na piscina",
+            "es": "Meter los pies en la piscina"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s1.watering-pot",
+          "en": "Watering pot",
+          "gl": "Regadeira de xoguete",
+          "es": "Regadera de juguete",
+          "tprAction": {
+            "gl": "Verter auga coa regadeira",
+            "es": "Verter agua con la regadera"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s1.bath-toy",
+          "en": "Bath toy",
+          "gl": "Xoguete de baño",
+          "es": "Juguete de baño",
+          "tprAction": {
+            "gl": "Flotar un xoguete na auga",
+            "es": "Flotar un juguete en el agua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s1.ripples",
+          "en": "Ripples",
+          "gl": "Ondiñas",
+          "es": "Ondas pequeñas",
+          "tprAction": {
+            "gl": "Mover un dedo na auga",
+            "es": "Mover un dedo en el agua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s1.water-tray",
+          "en": "Water tray",
+          "gl": "Bandexa de auga",
+          "es": "Bandeja de agua",
+          "tprAction": {
+            "gl": "Pousar as mans na bandexa",
+            "es": "Posar las manos en la bandeja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s1.jug",
+          "en": "Jug",
+          "gl": "Xerra",
+          "es": "Jarra",
+          "tprAction": {
+            "gl": "Encher a xerra e baleirala",
+            "es": "Llenar la jarra y vaciarla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s1.funnel",
+          "en": "Funnel",
+          "gl": "Funil",
+          "es": "Embudo",
+          "tprAction": {
+            "gl": "Verter auga polo funil",
+            "es": "Verter agua por el embudo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s1.splash-about",
+          "en": "Splash about",
+          "gl": "Chapotear",
+          "es": "Chapotear",
+          "tprAction": {
+            "gl": "Bater na auga coas palmas",
+            "es": "Golpear el agua con las palmas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s1.kick-water",
+          "en": "Kick water",
+          "gl": "Patexar na auga",
+          "es": "Patalear en el agua",
+          "tprAction": {
+            "gl": "Mover as pernas na auga",
+            "es": "Mover las piernas en el agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s1.fill-up",
+          "en": "Fill up",
+          "gl": "Encher",
+          "es": "Llenar",
+          "tprAction": {
+            "gl": "Encher o vaso de auga",
+            "es": "Llenar el vaso de agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s1.empty-out",
+          "en": "Empty out",
+          "gl": "Baleirar",
+          "es": "Vaciar",
+          "tprAction": {
+            "gl": "Baleirar o vaso na bandexa",
+            "es": "Vaciar el vaso en la bandeja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s1.dip",
+          "en": "Dip",
+          "gl": "Mollar",
+          "es": "Mojar",
+          "tprAction": {
+            "gl": "Mollar os dedos na auga",
+            "es": "Mojar los dedos en el agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s1.splashy",
+          "en": "Splashy",
+          "gl": "Salpicón",
+          "es": "Salpicón",
+          "tprAction": {
+            "gl": "Salpicar un pouco de auga",
+            "es": "Salpicar un poco de agua"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s1.dripping-wet",
+          "en": "Dripping wet",
+          "gl": "Enchoupado",
+          "es": "Empapado",
+          "tprAction": {
+            "gl": "Espremer un pano enchoupado",
+            "es": "Escurrir un paño empapado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s1.lukewarm",
+          "en": "Lukewarm",
+          "gl": "Morno",
+          "es": "Templado",
+          "tprAction": {
+            "gl": "Tocar a auga co cóbado",
+            "es": "Tocar el agua con el codo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s1.sparkly-water",
+          "en": "Sparkly water",
+          "gl": "Auga brillante",
+          "es": "Agua brillante",
+          "tprAction": {
+            "gl": "Mover a auga ao sol",
+            "es": "Mover el agua al sol"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s1.splish-splash",
+          "en": "Splish, splash!",
+          "gl": "Chis, chas!",
+          "es": "¡Chis, chas!",
+          "tprAction": {
+            "gl": "Bater na auga dúas veces",
+            "es": "Golpear el agua dos veces"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s1.pour-it-out",
+          "en": "Pour it out",
+          "gl": "Vértea",
+          "es": "Viértela",
+          "tprAction": {
+            "gl": "Verter a xerra amodo",
+            "es": "Verter la jarra despacio"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s1.all-wet",
+          "en": "All wet!",
+          "gl": "Todo mollado!",
+          "es": "¡Todo mojado!",
+          "tprAction": {
+            "gl": "Amosar as mans molladas",
+            "es": "Enseñar las manos mojadas"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s1.water-on-my-toes",
+          "en": "Water on my toes",
+          "gl": "Auga nos meus deditos",
+          "es": "Agua en mis deditos",
+          "tprAction": {
+            "gl": "Botar auga nos pés",
+            "es": "Echar agua en los pies"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "O baño agarimoso",
+        "es": "El baño cariñoso"
+      },
+      "palabras": [
+        {
+          "id": "0_2.maio.s2.baby-bath",
+          "en": "Baby bath",
+          "gl": "Bañeira de bebé",
+          "es": "Bañera de bebé",
+          "tprAction": {
+            "gl": "Meter o bebé na bañeira amodo",
+            "es": "Meter al bebé en la bañera despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s2.washcloth",
+          "en": "Washcloth",
+          "gl": "Manopla de baño",
+          "es": "Manopla de baño",
+          "tprAction": {
+            "gl": "Pasar a manopla polo brazo",
+            "es": "Pasar la manopla por el brazo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s2.bath-towel",
+          "en": "Bath towel",
+          "gl": "Toalla de baño",
+          "es": "Toalla de baño",
+          "tprAction": {
+            "gl": "Envolver o bebé na toalla",
+            "es": "Envolver al bebé en la toalla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s2.hooded-towel",
+          "en": "Hooded towel",
+          "gl": "Toalla con carapucha",
+          "es": "Toalla con capucha",
+          "tprAction": {
+            "gl": "Poñer a carapucha da toalla",
+            "es": "Poner la capucha de la toalla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s2.bath-foam",
+          "en": "Bath foam",
+          "gl": "Escuma de baño",
+          "es": "Espuma de baño",
+          "tprAction": {
+            "gl": "Pousar escuma na man",
+            "es": "Posar espuma en la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s2.lotion",
+          "en": "Lotion",
+          "gl": "Crema hidratante",
+          "es": "Crema hidratante",
+          "tprAction": {
+            "gl": "Estender a crema coas mans",
+            "es": "Extender la crema con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s2.cotton-wool",
+          "en": "Cotton wool",
+          "gl": "Algodón",
+          "es": "Algodón",
+          "tprAction": {
+            "gl": "Limpar a cara cun algodón",
+            "es": "Limpiar la cara con un algodón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s2.soap-up",
+          "en": "Soap up",
+          "gl": "Enxaboar",
+          "es": "Enjabonar",
+          "tprAction": {
+            "gl": "Enxaboar as mans do bebé",
+            "es": "Enjabonar las manos del bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s2.rinse-off",
+          "en": "Rinse off",
+          "gl": "Aclarar",
+          "es": "Aclarar",
+          "tprAction": {
+            "gl": "Botar auga polas costas",
+            "es": "Echar agua por la espalda"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s2.pat-dry",
+          "en": "Pat dry",
+          "gl": "Secar a palmadiñas",
+          "es": "Secar a toquecitos",
+          "tprAction": {
+            "gl": "Secar a pel a palmadiñas",
+            "es": "Secar la piel a toquecitos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s2.wrap-in-a-towel",
+          "en": "Wrap in a towel",
+          "gl": "Envolver na toalla",
+          "es": "Envolver en la toalla",
+          "tprAction": {
+            "gl": "Envolver o bebé e abrazalo",
+            "es": "Envolver al bebé y abrazarlo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s2.wash-hair",
+          "en": "Wash hair",
+          "gl": "Lavar o pelo",
+          "es": "Lavar el pelo",
+          "tprAction": {
+            "gl": "Mollar o pelo coa man",
+            "es": "Mojar el pelo con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s2.squeaky-clean",
+          "en": "Squeaky clean",
+          "gl": "Limpísimo",
+          "es": "Limpísimo",
+          "tprAction": {
+            "gl": "Frotar a man ata que «chía»",
+            "es": "Frotar la mano hasta que «chirría»"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s2.foamy",
+          "en": "Foamy",
+          "gl": "Escumoso",
+          "es": "Espumoso",
+          "tprAction": {
+            "gl": "Soprar a escuma",
+            "es": "Soplar la espuma"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s2.soft-and-dry",
+          "en": "Soft and dry",
+          "gl": "Brando e seco",
+          "es": "Suave y seco",
+          "tprAction": {
+            "gl": "Acariñar a pel seca",
+            "es": "Acariciar la piel seca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s2.sweet-smelling-baby",
+          "en": "Sweet-smelling baby",
+          "gl": "Bebé recendente",
+          "es": "Bebé oloroso",
+          "tprAction": {
+            "gl": "Cheirar a cabeza do bebé",
+            "es": "Oler la cabeza del bebé"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s2.bath-time",
+          "en": "Bath time!",
+          "gl": "Hora do baño!",
+          "es": "¡Hora del baño!",
+          "tprAction": {
+            "gl": "Amosar a bañeira",
+            "es": "Enseñar la bañera"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s2.where-are-your-toes",
+          "en": "Where are your toes?",
+          "gl": "Onde están os teus deditos?",
+          "es": "¿Dónde están tus deditos?",
+          "tprAction": {
+            "gl": "Buscar os pés na auga",
+            "es": "Buscar los pies en el agua"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s2.out-you-come",
+          "en": "Out you come",
+          "gl": "Fóra da auga",
+          "es": "Fuera del agua",
+          "tprAction": {
+            "gl": "Sacar o bebé da bañeira",
+            "es": "Sacar al bebé de la bañera"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s2.snug-in-the-towel",
+          "en": "Snug in the towel",
+          "gl": "Abrigado na toalla",
+          "es": "Arropado en la toalla",
+          "tprAction": {
+            "gl": "Envolver e abrazar",
+            "es": "Envolver y abrazar"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Mans limpas",
+        "es": "Manos limpias"
+      },
+      "palabras": [
+        {
+          "id": "0_2.maio.s3.hand-towel",
+          "en": "Hand towel",
+          "gl": "Toalla de mans",
+          "es": "Toalla de manos",
+          "tprAction": {
+            "gl": "Secar as mans na toalla",
+            "es": "Secar las manos en la toalla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s3.soap-bar",
+          "en": "Soap bar",
+          "gl": "Pastilla de xabón",
+          "es": "Pastilla de jabón",
+          "tprAction": {
+            "gl": "Coller o xabón que esvara",
+            "es": "Coger el jabón que resbala"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s3.step-stool",
+          "en": "Step stool",
+          "gl": "Banquiño",
+          "es": "Taburete",
+          "tprAction": {
+            "gl": "Subir ao banquiño do lavabo",
+            "es": "Subir al taburete del lavabo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s3.washbasin",
+          "en": "Washbasin",
+          "gl": "Lavabo",
+          "es": "Lavabo",
+          "tprAction": {
+            "gl": "Sinalar o lavabo",
+            "es": "Señalar el lavabo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s3.tissue",
+          "en": "Tissue",
+          "gl": "Pano de papel",
+          "es": "Pañuelo de papel",
+          "tprAction": {
+            "gl": "Limpar o nariz cun pano",
+            "es": "Limpiar la nariz con un pañuelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s3.face-cloth",
+          "en": "Face cloth",
+          "gl": "Pano da cara",
+          "es": "Paño de la cara",
+          "tprAction": {
+            "gl": "Limpar a cara co pano",
+            "es": "Limpiar la cara con el paño"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s3.wet-wipe",
+          "en": "Wet wipe",
+          "gl": "Toalliña húmida",
+          "es": "Toallita húmeda",
+          "tprAction": {
+            "gl": "Limpar as mans cunha toalliña",
+            "es": "Limpiar las manos con una toallita"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s3.wash-up",
+          "en": "Wash up",
+          "gl": "Lavarse",
+          "es": "Lavarse",
+          "tprAction": {
+            "gl": "Lavar as mans xuntos",
+            "es": "Lavarse las manos juntos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s3.turn-the-tap",
+          "en": "Turn the tap",
+          "gl": "Abrir a billa",
+          "es": "Abrir el grifo",
+          "tprAction": {
+            "gl": "Xirar a billa amodo",
+            "es": "Girar el grifo despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s3.wipe-clean",
+          "en": "Wipe clean",
+          "gl": "Limpar",
+          "es": "Limpiar",
+          "tprAction": {
+            "gl": "Pasar o pano pola cara",
+            "es": "Pasar el paño por la cara"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s3.blow-nose",
+          "en": "Blow nose",
+          "gl": "Soarse",
+          "es": "Sonarse",
+          "tprAction": {
+            "gl": "Soarse o nariz cun pano",
+            "es": "Sonarse la nariz con un pañuelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s3.dry-off",
+          "en": "Dry off",
+          "gl": "Secarse",
+          "es": "Secarse",
+          "tprAction": {
+            "gl": "Secar as mans fregando",
+            "es": "Secarse las manos frotando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s3.slippery-soap",
+          "en": "Slippery soap",
+          "gl": "Xabón esvaradío",
+          "es": "Jabón resbaladizo",
+          "tprAction": {
+            "gl": "Deixar esvarar o xabón",
+            "es": "Dejar resbalar el jabón"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s3.tidy-face",
+          "en": "Tidy face",
+          "gl": "Cara limpa",
+          "es": "Cara limpia",
+          "tprAction": {
+            "gl": "Amosar a cara limpa no espello",
+            "es": "Enseñar la cara limpia en el espejo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s3.fresh-smelling",
+          "en": "Fresh-smelling",
+          "gl": "Recendo a limpo",
+          "es": "Con olor a limpio",
+          "tprAction": {
+            "gl": "Cheirar as mans limpas",
+            "es": "Oler las manos limpias"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s3.drip-dry",
+          "en": "Drip-dry",
+          "gl": "Escorrido",
+          "es": "Escurrido",
+          "tprAction": {
+            "gl": "Sacudir as mans sobre o lavabo",
+            "es": "Sacudir las manos sobre el lavabo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s3.wash-wash-wash",
+          "en": "Wash, wash, wash",
+          "gl": "Lava, lava, lava",
+          "es": "Lava, lava, lava",
+          "tprAction": {
+            "gl": "Fregar as mans tres veces",
+            "es": "Frotar las manos tres veces"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s3.clean-hands-happy-baby",
+          "en": "Clean hands, happy baby",
+          "gl": "Mans limpas, bebé contento",
+          "es": "Manos limpias, bebé contento",
+          "tprAction": {
+            "gl": "Amosar as mans e sorrir",
+            "es": "Enseñar las manos y sonreír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s3.all-clean-now",
+          "en": "All clean now",
+          "gl": "Xa todo limpo",
+          "es": "Ya todo limpio",
+          "tprAction": {
+            "gl": "Abrir as mans limpas",
+            "es": "Abrir las manos limpias"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s3.soap-and-water",
+          "en": "Soap and water",
+          "gl": "Xabón e auga",
+          "es": "Jabón y agua",
+          "tprAction": {
+            "gl": "Amosar o xabón e logo a auga",
+            "es": "Enseñar el jabón y luego el agua"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Burbullas",
+        "es": "Burbujas"
+      },
+      "palabras": [
+        {
+          "id": "0_2.maio.s4.bubble-wand",
+          "en": "Bubble wand",
+          "gl": "Variña de burbullas",
+          "es": "Varita de burbujas",
+          "tprAction": {
+            "gl": "Soprar pola variña",
+            "es": "Soplar por la varita"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s4.bubble-mixture",
+          "en": "Bubble mixture",
+          "gl": "Auga con xabón",
+          "es": "Agua con jabón",
+          "tprAction": {
+            "gl": "Mollar a variña no bote",
+            "es": "Mojar la varita en el bote"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s4.big-bubble",
+          "en": "Big bubble",
+          "gl": "Burbulla grande",
+          "es": "Burbuja grande",
+          "tprAction": {
+            "gl": "Abrir os brazos coma unha burbulla",
+            "es": "Abrir los brazos como una burbuja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s4.bubble-machine",
+          "en": "Bubble machine",
+          "gl": "Máquina de burbullas",
+          "es": "Máquina de burbujas",
+          "tprAction": {
+            "gl": "Sinalar as burbullas que saen",
+            "es": "Señalar las burbujas que salen"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s4.air",
+          "en": "Air",
+          "gl": "Aire",
+          "es": "Aire",
+          "tprAction": {
+            "gl": "Mover a man no aire",
+            "es": "Mover la mano en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s4.ceiling",
+          "en": "Ceiling",
+          "gl": "Teito",
+          "es": "Techo",
+          "tprAction": {
+            "gl": "Sinalar o teito",
+            "es": "Señalar el techo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s4.popping-sound",
+          "en": "Popping sound",
+          "gl": "Estalido",
+          "es": "Estallido",
+          "tprAction": {
+            "gl": "Facer «pop» cos beizos",
+            "es": "Hacer «pop» con los labios"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.maio.s4.blow-bubbles",
+          "en": "Blow bubbles",
+          "gl": "Facer burbullas",
+          "es": "Hacer burbujas",
+          "tprAction": {
+            "gl": "Soprar amodo pola variña",
+            "es": "Soplar despacio por la varita"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s4.burst",
+          "en": "Burst",
+          "gl": "Rebentar",
+          "es": "Reventar",
+          "tprAction": {
+            "gl": "Tocar unha burbulla co dedo",
+            "es": "Tocar una burbuja con el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s4.float-away",
+          "en": "Float away",
+          "gl": "Irse voando",
+          "es": "Irse flotando",
+          "tprAction": {
+            "gl": "Seguir a burbulla coa mirada",
+            "es": "Seguir la burbuja con la mirada"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s4.reach-for",
+          "en": "Reach for",
+          "gl": "Tentar coller",
+          "es": "Intentar coger",
+          "tprAction": {
+            "gl": "Estirar a man cara á burbulla",
+            "es": "Estirar la mano hacia la burbuja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s4.follow-with-eyes",
+          "en": "Follow with eyes",
+          "gl": "Seguir coa mirada",
+          "es": "Seguir con la mirada",
+          "tprAction": {
+            "gl": "Mover a cabeza seguindo a burbulla",
+            "es": "Mover la cabeza siguiendo la burbuja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.maio.s4.see-through",
+          "en": "See-through",
+          "gl": "Transparente",
+          "es": "Transparente",
+          "tprAction": {
+            "gl": "Mirar a través dunha burbulla",
+            "es": "Mirar a través de una burbuja"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s4.floating",
+          "en": "Floating",
+          "gl": "Flotante",
+          "es": "Flotante",
+          "tprAction": {
+            "gl": "Mover a man amodo no aire",
+            "es": "Mover la mano despacio en el aire"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s4.wobbly-bubble",
+          "en": "Wobbly bubble",
+          "gl": "Burbulla que treme",
+          "es": "Burbuja temblorosa",
+          "tprAction": {
+            "gl": "Mover as mans tremendo",
+            "es": "Mover las manos temblando"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s4.rainbow-bubble",
+          "en": "Rainbow bubble",
+          "gl": "Burbulla de cores",
+          "es": "Burbuja de colores",
+          "tprAction": {
+            "gl": "Sinalar as cores da burbulla",
+            "es": "Señalar los colores de la burbuja"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.maio.s4.pop-pop-pop",
+          "en": "Pop, pop, pop!",
+          "gl": "Pop, pop, pop!",
+          "es": "¡Pop, pop, pop!",
+          "tprAction": {
+            "gl": "Tocar tres burbullas",
+            "es": "Tocar tres burbujas"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s4.up-in-the-air",
+          "en": "Up in the air",
+          "gl": "No aire",
+          "es": "En el aire",
+          "tprAction": {
+            "gl": "Sinalar as burbullas arriba",
+            "es": "Señalar las burbujas arriba"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s4.so-many-bubbles",
+          "en": "So many bubbles!",
+          "gl": "Cantas burbullas!",
+          "es": "¡Cuántas burbujas!",
+          "tprAction": {
+            "gl": "Abrir os brazos sorprendidos",
+            "es": "Abrir los brazos sorprendidos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.maio.s4.bubbles-everywhere",
+          "en": "Bubbles everywhere",
+          "gl": "Burbullas por todas partes",
+          "es": "Burbujas por todas partes",
+          "tprAction": {
+            "gl": "Sinalar arredor",
+            "es": "Señalar alrededor"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

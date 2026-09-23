@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.0_2.novembro",
+  "curso": "curso_0_2",
+  "orden": 3,
+  "mesCalendario": 11,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Castañas e texturas",
+        "es": "Castañas y texturas"
+      },
+      "palabras": [
+        {
+          "id": "0_2.novembro.s1.chestnut-shell",
+          "en": "Chestnut shell",
+          "gl": "Ourizo",
+          "es": "Erizo de castaña",
+          "tprAction": {
+            "gl": "Amosar o ourizo sen tocalo",
+            "es": "Enseñar el erizo sin tocarlo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s1.moss",
+          "en": "Moss",
+          "gl": "Musgo",
+          "es": "Musgo",
+          "tprAction": {
+            "gl": "Acariñar o musgo co bebé",
+            "es": "Acariciar el musgo con el bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s1.tree-bark",
+          "en": "Tree bark",
+          "gl": "Cortiza",
+          "es": "Corteza",
+          "tprAction": {
+            "gl": "Pasar a man pola cortiza",
+            "es": "Pasar la mano por la corteza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s1.twig",
+          "en": "Twig",
+          "gl": "Ramiña",
+          "es": "Ramita",
+          "tprAction": {
+            "gl": "Dar unha ramiña pequena",
+            "es": "Dar una ramita pequeña"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s1.pebble",
+          "en": "Pebble",
+          "gl": "Pedriña",
+          "es": "Piedrecita",
+          "tprAction": {
+            "gl": "Poñer unha pedriña na man",
+            "es": "Poner una piedrecita en la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s1.wool",
+          "en": "Wool",
+          "gl": "La",
+          "es": "Lana",
+          "tprAction": {
+            "gl": "Acariñar a la dunha manta",
+            "es": "Acariciar la lana de una manta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s1.cotton",
+          "en": "Cotton",
+          "gl": "Algodón",
+          "es": "Algodón",
+          "tprAction": {
+            "gl": "Pasar un algodón pola meixela",
+            "es": "Pasar un algodón por la mejilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s1.feel",
+          "en": "Feel",
+          "gl": "Palpar",
+          "es": "Palpar",
+          "tprAction": {
+            "gl": "Palpar a textura coa man aberta",
+            "es": "Palpar la textura con la mano abierta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s1.rub-gently",
+          "en": "Rub gently",
+          "gl": "Fregar amodo",
+          "es": "Frotar despacio",
+          "tprAction": {
+            "gl": "Fregar a cortiza e escoitar",
+            "es": "Frotar la corteza y escuchar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s1.scrunch",
+          "en": "Scrunch",
+          "gl": "Engurrar",
+          "es": "Estrujar",
+          "tprAction": {
+            "gl": "Engurrar un papel coa man",
+            "es": "Estrujar un papel con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s1.discover",
+          "en": "Discover",
+          "gl": "Descubrir",
+          "es": "Descubrir",
+          "tprAction": {
+            "gl": "Deixar o bebé tocar a cesta",
+            "es": "Dejar al bebé tocar la cesta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s1.hold-up",
+          "en": "Hold up",
+          "gl": "Amosar",
+          "es": "Mostrar",
+          "tprAction": {
+            "gl": "Levantar a castaña para velo",
+            "es": "Levantar la castaña para verla"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s1.scratchy",
+          "en": "Scratchy",
+          "gl": "Rasposo",
+          "es": "Rasposo",
+          "tprAction": {
+            "gl": "Pasar a man pola cortiza rasposa",
+            "es": "Pasar la mano por la corteza rasposa"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s1.fuzzy",
+          "en": "Fuzzy",
+          "gl": "Peludiño",
+          "es": "Peludito",
+          "tprAction": {
+            "gl": "Acariñar un pompón peludo",
+            "es": "Acariciar un pompón peludo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s1.prickly",
+          "en": "Prickly",
+          "gl": "Picante ao tacto",
+          "es": "Pinchudo",
+          "tprAction": {
+            "gl": "Achegar e afastar a man do ourizo",
+            "es": "Acercar y alejar la mano del erizo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s1.bumpy-walnut",
+          "en": "Bumpy walnut",
+          "gl": "Noz rugosa",
+          "es": "Nuez rugosa",
+          "tprAction": {
+            "gl": "Rodar unha noz entre as mans",
+            "es": "Rodar una nuez entre las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s1.treasure-basket",
+          "en": "Treasure basket",
+          "gl": "Cesta dos tesouros",
+          "es": "Cesta de los tesoros",
+          "tprAction": {
+            "gl": "Abrir a cesta e sacar un obxecto",
+            "es": "Abrir la cesta y sacar un objeto"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.novembro.s1.soft-or-rough",
+          "en": "Soft or rough?",
+          "gl": "Suave ou áspero?",
+          "es": "¿Suave o áspero?",
+          "tprAction": {
+            "gl": "Tocar unha cousa suave e outra áspera",
+            "es": "Tocar una cosa suave y otra áspera"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.novembro.s1.feel-this",
+          "en": "Feel this!",
+          "gl": "Toca isto!",
+          "es": "¡Toca esto!",
+          "tprAction": {
+            "gl": "Achegar un obxecto á man",
+            "es": "Acercar un objeto a la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.novembro.s1.out-of-the-basket",
+          "en": "Out of the basket",
+          "gl": "Fóra da cesta",
+          "es": "Fuera de la cesta",
+          "tprAction": {
+            "gl": "Sacar un obxecto da cesta",
+            "es": "Sacar un objeto de la cesta"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "As follas caen",
+        "es": "Las hojas caen"
+      },
+      "palabras": [
+        {
+          "id": "0_2.novembro.s2.leaf-pile",
+          "en": "Leaf pile",
+          "gl": "Morea de follas",
+          "es": "Montón de hojas",
+          "tprAction": {
+            "gl": "Facer unha morea de follas",
+            "es": "Hacer un montón de hojas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s2.garden",
+          "en": "Garden",
+          "gl": "Xardín",
+          "es": "Jardín",
+          "tprAction": {
+            "gl": "Saír ao xardín da escola",
+            "es": "Salir al jardín de la escuela"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s2.rake",
+          "en": "Rake",
+          "gl": "Angazo",
+          "es": "Rastrillo",
+          "tprAction": {
+            "gl": "Pasar un angazo de xoguete",
+            "es": "Pasar un rastrillo de juguete"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s2.wheelbarrow",
+          "en": "Wheelbarrow",
+          "gl": "Carretilla",
+          "es": "Carretilla",
+          "tprAction": {
+            "gl": "Empurrar a carretilla con follas",
+            "es": "Empujar la carretilla con hojas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s2.breeze",
+          "en": "Breeze",
+          "gl": "Brisa",
+          "es": "Brisa",
+          "tprAction": {
+            "gl": "Soprar suave na cara do bebé",
+            "es": "Soplar suave en la cara del bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s2.tree-trunk",
+          "en": "Tree trunk",
+          "gl": "Tronco",
+          "es": "Tronco",
+          "tprAction": {
+            "gl": "Abrazar un tronco co bebé",
+            "es": "Abrazar un tronco con el bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s2.autumn-walk",
+          "en": "Autumn walk",
+          "gl": "Paseo de outono",
+          "es": "Paseo de otoño",
+          "tprAction": {
+            "gl": "Pasear co bebé entre follas",
+            "es": "Pasear con el bebé entre hojas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s2.drift",
+          "en": "Drift",
+          "gl": "Planear",
+          "es": "Planear",
+          "tprAction": {
+            "gl": "Deixar caer unha folla dende arriba",
+            "es": "Dejar caer una hoja desde arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s2.float-down",
+          "en": "Float down",
+          "gl": "Baixar flotando",
+          "es": "Bajar flotando",
+          "tprAction": {
+            "gl": "Baixar a man amodo coma unha folla",
+            "es": "Bajar la mano despacio como una hoja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s2.rustle",
+          "en": "Rustle",
+          "gl": "Facer ruxido",
+          "es": "Crujir",
+          "tprAction": {
+            "gl": "Mover as follas para que soen",
+            "es": "Mover las hojas para que suenen"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s2.kick-leaves",
+          "en": "Kick leaves",
+          "gl": "Patear follas",
+          "es": "Patear hojas",
+          "tprAction": {
+            "gl": "Mover os pés entre as follas",
+            "es": "Mover los pies entre las hojas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s2.gather",
+          "en": "Gather",
+          "gl": "Xuntar",
+          "es": "Juntar",
+          "tprAction": {
+            "gl": "Xuntar follas coas mans",
+            "es": "Juntar hojas con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s2.golden-brown",
+          "en": "Golden brown",
+          "gl": "Dourado",
+          "es": "Dorado",
+          "tprAction": {
+            "gl": "Amosar unha folla dourada á luz",
+            "es": "Enseñar una hoja dorada a la luz"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s2.crinkly",
+          "en": "Crinkly",
+          "gl": "Engurrado",
+          "es": "Arrugado",
+          "tprAction": {
+            "gl": "Engurrar unha folla seca",
+            "es": "Arrugar una hoja seca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s2.floaty",
+          "en": "Floaty",
+          "gl": "Lixeiriño",
+          "es": "Ligerito",
+          "tprAction": {
+            "gl": "Soprar unha folla para que voe",
+            "es": "Soplar una hoja para que vuele"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s2.chilly",
+          "en": "Chilly",
+          "gl": "Fresquiño",
+          "es": "Fresquito",
+          "tprAction": {
+            "gl": "Fregar os brazos coma con frío",
+            "es": "Frotar los brazos como con frío"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s2.leaves-are-falling",
+          "en": "Leaves are falling",
+          "gl": "Caen as follas",
+          "es": "Caen las hojas",
+          "tprAction": {
+            "gl": "Baixar os dedos coma follas",
+            "es": "Bajar los dedos como hojas"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.novembro.s2.whoosh",
+          "en": "Whoosh!",
+          "gl": "Fiuuu!",
+          "es": "¡Fiuuu!",
+          "tprAction": {
+            "gl": "Mover os brazos coma o vento",
+            "es": "Mover los brazos como el viento"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.novembro.s2.one-leaf-two-leaves",
+          "en": "One leaf, two leaves",
+          "gl": "Unha folla, dúas follas",
+          "es": "Una hoja, dos hojas",
+          "tprAction": {
+            "gl": "Amosar unha folla e logo dúas",
+            "es": "Enseñar una hoja y luego dos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.novembro.s2.down-to-the-ground",
+          "en": "Down to the ground",
+          "gl": "Ata o chan",
+          "es": "Hasta el suelo",
+          "tprAction": {
+            "gl": "Baixar a folla ata o chan",
+            "es": "Bajar la hoja hasta el suelo"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Magosto pequeno",
+        "es": "Magosto pequeño"
+      },
+      "palabras": [
+        {
+          "id": "0_2.novembro.s3.roasting-pan",
+          "en": "Roasting pan",
+          "gl": "Tixola de asar",
+          "es": "Sartén de asar",
+          "tprAction": {
+            "gl": "Amosar a tixola de lonxe",
+            "es": "Enseñar la sartén de lejos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s3.smoke",
+          "en": "Smoke",
+          "gl": "Fume",
+          "es": "Humo",
+          "tprAction": {
+            "gl": "Subir as mans coma o fume",
+            "es": "Subir las manos como el humo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s3.fire",
+          "en": "Fire",
+          "gl": "Lume",
+          "es": "Fuego",
+          "tprAction": {
+            "gl": "Sinalar o lume de lonxe",
+            "es": "Señalar el fuego de lejos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s3.paper-cone",
+          "en": "Paper cone",
+          "gl": "Cucurucho",
+          "es": "Cucurucho",
+          "tprAction": {
+            "gl": "Facer un cucurucho de papel",
+            "es": "Hacer un cucurucho de papel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s3.sweet-potato",
+          "en": "Sweet potato",
+          "gl": "Pataca doce",
+          "es": "Boniato",
+          "tprAction": {
+            "gl": "Tocar a pataca doce morna",
+            "es": "Tocar el boniato templado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s3.crumbs",
+          "en": "Crumbs",
+          "gl": "Miolos",
+          "es": "Migas",
+          "tprAction": {
+            "gl": "Recoller as migas cos dedos",
+            "es": "Recoger las migas con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s3.songbird",
+          "en": "Songbird",
+          "gl": "Paxaro cantor",
+          "es": "Pájaro cantor",
+          "tprAction": {
+            "gl": "Asubiar coma un paxaro",
+            "es": "Silbar como un pájaro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s3.blow-on-it",
+          "en": "Blow on it",
+          "gl": "Soprar",
+          "es": "Soplar",
+          "tprAction": {
+            "gl": "Soprar a comida antes de dala",
+            "es": "Soplar la comida antes de darla"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s3.share-out",
+          "en": "Share out",
+          "gl": "Repartir",
+          "es": "Repartir",
+          "tprAction": {
+            "gl": "Repartir castañas entre todos",
+            "es": "Repartir castañas entre todos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s3.taste-a-bit",
+          "en": "Taste a bit",
+          "gl": "Probar un pouco",
+          "es": "Probar un poco",
+          "tprAction": {
+            "gl": "Achegar un anaquiño á boca",
+            "es": "Acercar un trocito a la boca"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s3.clap-along",
+          "en": "Clap along",
+          "gl": "Acompañar con palmas",
+          "es": "Acompañar con palmas",
+          "tprAction": {
+            "gl": "Bater palmas co ritmo da canción",
+            "es": "Dar palmas al ritmo de la canción"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s3.sway",
+          "en": "Sway",
+          "gl": "Abanearse",
+          "es": "Balancearse",
+          "tprAction": {
+            "gl": "Abanear o bebé ao son da música",
+            "es": "Balancear al bebé al son de la música"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s3.toasty",
+          "en": "Toasty",
+          "gl": "Morniño",
+          "es": "Calentito",
+          "tprAction": {
+            "gl": "Achegar as mans ao quentiño",
+            "es": "Acercar las manos al calorcito"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s3.mushy",
+          "en": "Mushy",
+          "gl": "Esmagado",
+          "es": "Machacado",
+          "tprAction": {
+            "gl": "Esmagar a castaña cun garfo",
+            "es": "Machacar la castaña con un tenedor"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s3.smoky",
+          "en": "Smoky",
+          "gl": "Afumado",
+          "es": "Ahumado",
+          "tprAction": {
+            "gl": "Abanar coa man coma o fume",
+            "es": "Abanicar con la mano como el humo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s3.nutty",
+          "en": "Nutty",
+          "gl": "Con sabor a noz",
+          "es": "Con sabor a nuez",
+          "tprAction": {
+            "gl": "Cheirar unha noz aberta",
+            "es": "Oler una nuez abierta"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s3.mmm-chestnuts",
+          "en": "Mmm, chestnuts!",
+          "gl": "Mmm, castañas!",
+          "es": "¡Mmm, castañas!",
+          "tprAction": {
+            "gl": "Tocar a barriga contentos",
+            "es": "Tocar la barriga contentos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.novembro.s3.hot-hot-hot",
+          "en": "Hot, hot, hot!",
+          "gl": "Quente, quente, quente!",
+          "es": "¡Caliente, caliente, caliente!",
+          "tprAction": {
+            "gl": "Abanar a man coma se queimase",
+            "es": "Abanicar la mano como si quemara"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.novembro.s3.not-too-hot",
+          "en": "Not too hot",
+          "gl": "Non moi quente",
+          "es": "No muy caliente",
+          "tprAction": {
+            "gl": "Tocar e retirar o dedo amodo",
+            "es": "Tocar y retirar el dedo despacio"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.novembro.s3.around-the-fire",
+          "en": "Around the fire",
+          "gl": "Arredor do lume",
+          "es": "Alrededor del fuego",
+          "tprAction": {
+            "gl": "Camiñar en círculo co bebé",
+            "es": "Caminar en círculo con el bebé"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Mans que exploran",
+        "es": "Manos que exploran"
+      },
+      "palabras": [
+        {
+          "id": "0_2.novembro.s4.sensory-bag",
+          "en": "Sensory bag",
+          "gl": "Bolsa sensorial",
+          "es": "Bolsa sensorial",
+          "tprAction": {
+            "gl": "Premer a bolsa sensorial",
+            "es": "Apretar la bolsa sensorial"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s4.jelly",
+          "en": "Jelly",
+          "gl": "Xelatina",
+          "es": "Gelatina",
+          "tprAction": {
+            "gl": "Tocar a xelatina que treme",
+            "es": "Tocar la gelatina que tiembla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s4.dough",
+          "en": "Dough",
+          "gl": "Masa",
+          "es": "Masa",
+          "tprAction": {
+            "gl": "Esmagar a masa coa palma",
+            "es": "Aplastar la masa con la palma"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s4.sponge-ball",
+          "en": "Sponge ball",
+          "gl": "Pelota de esponxa",
+          "es": "Pelota de esponja",
+          "tprAction": {
+            "gl": "Apertar a pelota de esponxa",
+            "es": "Apretar la pelota de esponja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s4.silk-scarf",
+          "en": "Silk scarf",
+          "gl": "Pano de seda",
+          "es": "Pañuelo de seda",
+          "tprAction": {
+            "gl": "Deixar caer o pano sobre a man",
+            "es": "Dejar caer el pañuelo sobre la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s4.wooden-spoon",
+          "en": "Wooden spoon",
+          "gl": "Culler de madeira",
+          "es": "Cuchara de madera",
+          "tprAction": {
+            "gl": "Bater a culler de madeira nunha pota",
+            "es": "Golpear la cuchara de madera en una olla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s4.rattle-toy",
+          "en": "Rattle toy",
+          "gl": "Xoguete sonoro",
+          "es": "Juguete sonoro",
+          "tprAction": {
+            "gl": "Axitar o xoguete preto da orella",
+            "es": "Agitar el juguete cerca de la oreja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.novembro.s4.poke",
+          "en": "Poke",
+          "gl": "Tocar co dedo",
+          "es": "Tocar con el dedo",
+          "tprAction": {
+            "gl": "Tocar a masa co dedo índice",
+            "es": "Tocar la masa con el dedo índice"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s4.pat-down",
+          "en": "Pat down",
+          "gl": "Aplanar",
+          "es": "Aplanar",
+          "tprAction": {
+            "gl": "Aplanar a masa coa man",
+            "es": "Aplanar la masa con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s4.grab-and-shake",
+          "en": "Grab and shake",
+          "gl": "Coller e axitar",
+          "es": "Coger y agitar",
+          "tprAction": {
+            "gl": "Coller o xoguete e axitalo",
+            "es": "Coger el juguete y agitarlo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s4.chew-on",
+          "en": "Chew on",
+          "gl": "Morder",
+          "es": "Mordisquear",
+          "tprAction": {
+            "gl": "Deixar morder o mordedor limpo",
+            "es": "Dejar morder el mordedor limpio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s4.hand-over",
+          "en": "Hand over",
+          "gl": "Entregar",
+          "es": "Entregar",
+          "tprAction": {
+            "gl": "Dar o obxecto á outra man",
+            "es": "Dar el objeto a la otra mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.novembro.s4.squishy",
+          "en": "Squishy",
+          "gl": "Blandiño",
+          "es": "Blandito",
+          "tprAction": {
+            "gl": "Apertar algo branco e soltalo",
+            "es": "Apretar algo blando y soltarlo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s4.wobbly-jelly",
+          "en": "Wobbly jelly",
+          "gl": "Tremelicante",
+          "es": "Temblorosa",
+          "tprAction": {
+            "gl": "Mover o prato para que trema",
+            "es": "Mover el plato para que tiemble"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s4.crackly",
+          "en": "Crackly",
+          "gl": "Que estala",
+          "es": "Crujiente al tacto",
+          "tprAction": {
+            "gl": "Engurrar papel para que soe",
+            "es": "Arrugar papel para que suene"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s4.cool-to-touch",
+          "en": "Cool to touch",
+          "gl": "Fresco ao tacto",
+          "es": "Fresco al tacto",
+          "tprAction": {
+            "gl": "Pousar a man nunha pedra fresca",
+            "es": "Posar la mano en una piedra fresca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.novembro.s4.squeeze-and-let-go",
+          "en": "Squeeze and let go",
+          "gl": "Aperta e solta",
+          "es": "Aprieta y suelta",
+          "tprAction": {
+            "gl": "Apertar e abrir a man",
+            "es": "Apretar y abrir la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.novembro.s4.what-is-it",
+          "en": "What is it?",
+          "gl": "Que é?",
+          "es": "¿Qué es?",
+          "tprAction": {
+            "gl": "Amosar un obxecto e agardar",
+            "es": "Enseñar un objeto y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.novembro.s4.hands-in-the-dough",
+          "en": "Hands in the dough",
+          "gl": "As mans na masa",
+          "es": "Las manos en la masa",
+          "tprAction": {
+            "gl": "Meter as mans na masa",
+            "es": "Meter las manos en la masa"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.novembro.s4.from-hand-to-hand",
+          "en": "From hand to hand",
+          "gl": "De man en man",
+          "es": "De mano en mano",
+          "tprAction": {
+            "gl": "Pasar o obxecto entre as dúas mans",
+            "es": "Pasar el objeto entre las dos manos"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.4_5.xaneiro",
+  "curso": "curso_4_5",
+  "orden": 5,
+  "mesCalendario": 1,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Mapas da cidade",
+        "es": "Mapas de la ciudad"
+      },
+      "palabras": [
+        {
+          "id": "4_5.xaneiro.s1.map",
+          "en": "Map",
+          "gl": "Mapa",
+          "es": "Mapa",
+          "tprAction": {
+            "gl": "Abrir un mapa imaxinario",
+            "es": "Abrir un mapa imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s1.compass",
+          "en": "Compass",
+          "gl": "Compás de rumbos",
+          "es": "Brújula",
+          "tprAction": {
+            "gl": "Xirar sinalando o norte",
+            "es": "Girar señalando el norte"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s1.route",
+          "en": "Route",
+          "gl": "Ruta",
+          "es": "Ruta",
+          "tprAction": {
+            "gl": "Seguir unha liña co dedo",
+            "es": "Seguir una línea con el dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s1.landmark",
+          "en": "Landmark",
+          "gl": "Punto de referencia",
+          "es": "Punto de referencia",
+          "tprAction": {
+            "gl": "Sinalar algo grande e coñecido",
+            "es": "Señalar algo grande y conocido"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s1.street-sign",
+          "en": "Street sign",
+          "gl": "Placa da rúa",
+          "es": "Placa de la calle",
+          "tprAction": {
+            "gl": "Ler unha placa imaxinaria",
+            "es": "Leer una placa imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s1.town-square",
+          "en": "Town square",
+          "gl": "Praza",
+          "es": "Plaza",
+          "tprAction": {
+            "gl": "Debuxar unha praza no chan",
+            "es": "Dibujar una plaza en el suelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s1.town-hall",
+          "en": "Town hall",
+          "gl": "Concello",
+          "es": "Ayuntamiento",
+          "tprAction": {
+            "gl": "Facer unha torre coas mans",
+            "es": "Hacer una torre con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s1.follow-the-map",
+          "en": "Follow the map",
+          "gl": "Seguir o mapa",
+          "es": "Seguir el mapa",
+          "tprAction": {
+            "gl": "Camiñar sinalando o mapa",
+            "es": "Caminar señalando el mapa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s1.turn-left",
+          "en": "Turn left",
+          "gl": "Xirar á esquerda",
+          "es": "Girar a la izquierda",
+          "tprAction": {
+            "gl": "Xirar cara á esquerda",
+            "es": "Girar hacia la izquierda"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s1.turn-right",
+          "en": "Turn right",
+          "gl": "Xirar á dereita",
+          "es": "Girar a la derecha",
+          "tprAction": {
+            "gl": "Xirar cara á dereita",
+            "es": "Girar hacia la derecha"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s1.go-straight-on",
+          "en": "Go straight on",
+          "gl": "Seguir recto",
+          "es": "Seguir recto",
+          "tprAction": {
+            "gl": "Camiñar recto sen xirar",
+            "es": "Caminar recto sin girar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s1.find-the-way",
+          "en": "Find the way",
+          "gl": "Atopar o camiño",
+          "es": "Encontrar el camino",
+          "tprAction": {
+            "gl": "Mirar o mapa e sinalar",
+            "es": "Mirar el mapa y señalar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s1.left",
+          "en": "Left",
+          "gl": "Esquerdo",
+          "es": "Izquierdo",
+          "tprAction": {
+            "gl": "Levantar a man esquerda",
+            "es": "Levantar la mano izquierda"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s1.right-hand",
+          "en": "Right-hand",
+          "gl": "Dereito",
+          "es": "Derecho",
+          "tprAction": {
+            "gl": "Levantar a man dereita",
+            "es": "Levantar la mano derecha"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s1.opposite",
+          "en": "Opposite",
+          "gl": "De fronte",
+          "es": "Enfrente",
+          "tprAction": {
+            "gl": "Sinalar o outro lado",
+            "es": "Señalar el otro lado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s1.lost",
+          "en": "Lost",
+          "gl": "Perdido",
+          "es": "Perdido",
+          "tprAction": {
+            "gl": "Mirar arredor sen saber",
+            "es": "Mirar alrededor sin saber"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s1.where-are-we-on-the-map",
+          "en": "Where are we on the map?",
+          "gl": "Onde estamos no mapa?",
+          "es": "¿Dónde estamos en el mapa?",
+          "tprAction": {
+            "gl": "Sinalar o mapa",
+            "es": "Señalar el mapa"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xaneiro.s1.turn-left-at-the-square",
+          "en": "Turn left at the square",
+          "gl": "Xira á esquerda na praza",
+          "es": "Gira a la izquierda en la plaza",
+          "tprAction": {
+            "gl": "Camiñar e xirar á esquerda",
+            "es": "Caminar y girar a la izquierda"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xaneiro.s1.straight-on-then-right",
+          "en": "Straight on, then right",
+          "gl": "Recto e logo á dereita",
+          "es": "Recto y luego a la derecha",
+          "tprAction": {
+            "gl": "Camiñar recto e xirar",
+            "es": "Caminar recto y girar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xaneiro.s1.we-found-it",
+          "en": "We found it!",
+          "gl": "Atopámolo!",
+          "es": "¡Lo encontramos!",
+          "tprAction": {
+            "gl": "Bater palmas",
+            "es": "Dar palmas"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Arriba, abaixo, entre",
+        "es": "Arriba, abajo, entre"
+      },
+      "palabras": [
+        {
+          "id": "4_5.xaneiro.s2.tunnel-under",
+          "en": "Tunnel under",
+          "gl": "Paso inferior",
+          "es": "Paso inferior",
+          "tprAction": {
+            "gl": "Pasar agachado por debaixo",
+            "es": "Pasar agachado por debajo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s2.overpass",
+          "en": "Overpass",
+          "gl": "Paso superior",
+          "es": "Paso elevado",
+          "tprAction": {
+            "gl": "Pasar a man por riba",
+            "es": "Pasar la mano por encima"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s2.gap",
+          "en": "Gap",
+          "gl": "Oco",
+          "es": "Hueco",
+          "tprAction": {
+            "gl": "Pasar por un oco entre dúas cadeiras",
+            "es": "Pasar por un hueco entre dos sillas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s2.obstacle-course",
+          "en": "Obstacle course",
+          "gl": "Circuíto de obstáculos",
+          "es": "Circuito de obstáculos",
+          "tprAction": {
+            "gl": "Superar os obstáculos",
+            "es": "Superar los obstáculos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s2.hoop-tunnel",
+          "en": "Hoop tunnel",
+          "gl": "Túnel de aros",
+          "es": "Túnel de aros",
+          "tprAction": {
+            "gl": "Pasar polos aros",
+            "es": "Pasar por los aros"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s2.mat-path",
+          "en": "Mat path",
+          "gl": "Camiño de colchonetas",
+          "es": "Camino de colchonetas",
+          "tprAction": {
+            "gl": "Camiñar polas colchonetas",
+            "es": "Caminar por las colchonetas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s2.rope-bridge",
+          "en": "Rope bridge",
+          "gl": "Ponte de cordas",
+          "es": "Puente de cuerdas",
+          "tprAction": {
+            "gl": "Camiñar agarrándose",
+            "es": "Caminar agarrándose"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s2.walk-across",
+          "en": "Walk across",
+          "gl": "Cruzar camiñando",
+          "es": "Cruzar caminando",
+          "tprAction": {
+            "gl": "Camiñar dun lado ao outro",
+            "es": "Caminar de un lado al otro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s2.step-between",
+          "en": "Step between",
+          "gl": "Pisar entre",
+          "es": "Pisar entre",
+          "tprAction": {
+            "gl": "Pisar entre dous aros",
+            "es": "Pisar entre dos aros"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s2.crawl-under",
+          "en": "Crawl under",
+          "gl": "Gatear por debaixo",
+          "es": "Gatear por debajo",
+          "tprAction": {
+            "gl": "Gatear baixo a mesa",
+            "es": "Gatear bajo la mesa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s2.climb-over",
+          "en": "Climb over",
+          "gl": "Pasar por riba",
+          "es": "Pasar por encima",
+          "tprAction": {
+            "gl": "Pasar a perna por riba",
+            "es": "Pasar la pierna por encima"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s2.go-around",
+          "en": "Go around",
+          "gl": "Rodear",
+          "es": "Rodear",
+          "tprAction": {
+            "gl": "Camiñar arredor dun cono",
+            "es": "Caminar alrededor de un cono"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s2.between",
+          "en": "Between",
+          "gl": "Entre medias",
+          "es": "En medio",
+          "tprAction": {
+            "gl": "Poñerse entre dous amigos",
+            "es": "Ponerse entre dos amigos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s2.above",
+          "en": "Above",
+          "gl": "Por riba",
+          "es": "Por encima",
+          "tprAction": {
+            "gl": "Sinalar por riba da cabeza",
+            "es": "Señalar por encima de la cabeza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s2.below",
+          "en": "Below",
+          "gl": "Por debaixo",
+          "es": "Por debajo",
+          "tprAction": {
+            "gl": "Sinalar debaixo da mesa",
+            "es": "Señalar debajo de la mesa"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s2.beside",
+          "en": "Beside",
+          "gl": "Ao lado",
+          "es": "Al lado",
+          "tprAction": {
+            "gl": "Poñerse ao lado dun amigo",
+            "es": "Ponerse al lado de un amigo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s2.crawl-under-the-table",
+          "en": "Crawl under the table",
+          "gl": "Gatea debaixo da mesa",
+          "es": "Gatea debajo de la mesa",
+          "tprAction": {
+            "gl": "Gatear baixo a mesa",
+            "es": "Gatear bajo la mesa"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xaneiro.s2.step-between-the-hoops",
+          "en": "Step between the hoops",
+          "gl": "Pisa entre os aros",
+          "es": "Pisa entre los aros",
+          "tprAction": {
+            "gl": "Pisar entre os aros",
+            "es": "Pisar entre los aros"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xaneiro.s2.over-or-under",
+          "en": "Over or under?",
+          "gl": "Por riba ou por debaixo?",
+          "es": "¿Por encima o por debajo?",
+          "tprAction": {
+            "gl": "Sinalar arriba e abaixo",
+            "es": "Señalar arriba y abajo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xaneiro.s2.well-done-explorer",
+          "en": "Well done, explorer!",
+          "gl": "Moi ben, explorador!",
+          "es": "¡Muy bien, explorador!",
+          "tprAction": {
+            "gl": "Levantar o polgar",
+            "es": "Levantar el pulgar"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Transportes de Vigo",
+        "es": "Transportes de Vigo"
+      },
+      "palabras": [
+        {
+          "id": "4_5.xaneiro.s3.tram",
+          "en": "Tram",
+          "gl": "Tranvía",
+          "es": "Tranvía",
+          "tprAction": {
+            "gl": "Camiñar suave sobre unha liña",
+            "es": "Caminar suave sobre una línea"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s3.taxi",
+          "en": "Taxi",
+          "gl": "Taxi",
+          "es": "Taxi",
+          "tprAction": {
+            "gl": "Levantar a man para parar o taxi",
+            "es": "Levantar la mano para parar el taxi"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s3.ambulance",
+          "en": "Ambulance",
+          "gl": "Ambulancia",
+          "es": "Ambulancia",
+          "tprAction": {
+            "gl": "Facer a sirena coa voz",
+            "es": "Hacer la sirena con la voz"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s3.lorry",
+          "en": "Lorry",
+          "gl": "Camión",
+          "es": "Camión",
+          "tprAction": {
+            "gl": "Conducir un volante grande",
+            "es": "Conducir un volante grande"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s3.cable-car",
+          "en": "Cable car",
+          "gl": "Teleférico",
+          "es": "Teleférico",
+          "tprAction": {
+            "gl": "Subir a man amodo",
+            "es": "Subir la mano despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s3.escalator",
+          "en": "Escalator",
+          "gl": "Escaleira mecánica",
+          "es": "Escalera mecánica",
+          "tprAction": {
+            "gl": "Quedar quieto mentres sobe",
+            "es": "Quedarse quieto mientras sube"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s3.timetable",
+          "en": "Timetable",
+          "gl": "Horario",
+          "es": "Horario",
+          "tprAction": {
+            "gl": "Sinalar horas nun reloxo",
+            "es": "Señalar horas en un reloj"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s3.hail-a-taxi",
+          "en": "Hail a taxi",
+          "gl": "Parar un taxi",
+          "es": "Parar un taxi",
+          "tprAction": {
+            "gl": "Levantar a man na beirarrúa",
+            "es": "Levantar la mano en la acera"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s3.buckle-up",
+          "en": "Buckle up",
+          "gl": "Poñer o cinto",
+          "es": "Abrocharse el cinturón",
+          "tprAction": {
+            "gl": "Cruzar o cinto no peito",
+            "es": "Cruzar el cinturón en el pecho"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s3.arrive",
+          "en": "Arrive",
+          "gl": "Chegar",
+          "es": "Llegar",
+          "tprAction": {
+            "gl": "Parar e abrir os brazos",
+            "es": "Parar y abrir los brazos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s3.depart",
+          "en": "Depart",
+          "gl": "Saír",
+          "es": "Salir",
+          "tprAction": {
+            "gl": "Acenar e marchar",
+            "es": "Saludar e irse"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s3.transfer",
+          "en": "Transfer",
+          "gl": "Facer transbordo",
+          "es": "Hacer transbordo",
+          "tprAction": {
+            "gl": "Cambiar dun sitio a outro",
+            "es": "Cambiar de un sitio a otro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s3.on-time",
+          "en": "On time",
+          "gl": "Á hora",
+          "es": "A tiempo",
+          "tprAction": {
+            "gl": "Sinalar o reloxo e sorrir",
+            "es": "Señalar el reloj y sonreír"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s3.late",
+          "en": "Late",
+          "gl": "Tarde",
+          "es": "Tarde",
+          "tprAction": {
+            "gl": "Correr mirando o reloxo",
+            "es": "Correr mirando el reloj"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s3.electric",
+          "en": "Electric",
+          "gl": "Eléctrico",
+          "es": "Eléctrico",
+          "tprAction": {
+            "gl": "Facer «zzz» coa voz",
+            "es": "Hacer «zzz» con la voz"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s3.crowded-bus",
+          "en": "Crowded bus",
+          "gl": "Autobús cheo",
+          "es": "Autobús lleno",
+          "tprAction": {
+            "gl": "Apertarse xuntos",
+            "es": "Apretarse juntos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s3.which-bus-goes-to-the-beach",
+          "en": "Which bus goes to the beach?",
+          "gl": "Que autobús vai á praia?",
+          "es": "¿Qué autobús va a la playa?",
+          "tprAction": {
+            "gl": "Sinalar o horario",
+            "es": "Señalar el horario"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xaneiro.s3.seat-belts-on-please",
+          "en": "Seat belts on, please",
+          "gl": "Os cintos, por favor",
+          "es": "Los cinturones, por favor",
+          "tprAction": {
+            "gl": "Poñer o cinto",
+            "es": "Ponerse el cinturón"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xaneiro.s3.the-tram-is-faster-than-the-bus",
+          "en": "The tram is faster than the bus",
+          "gl": "O tranvía é máis rápido ca o autobús",
+          "es": "El tranvía es más rápido que el autobús",
+          "tprAction": {
+            "gl": "Mover as mans rápido e amodo",
+            "es": "Mover las manos rápido y despacio"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xaneiro.s3.next-stop-please",
+          "en": "Next stop, please",
+          "gl": "Na seguinte, por favor",
+          "es": "En la siguiente, por favor",
+          "tprAction": {
+            "gl": "Premer o botón",
+            "es": "Pulsar el botón"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Os oficios",
+        "es": "Los oficios"
+      },
+      "palabras": [
+        {
+          "id": "4_5.xaneiro.s4.firefighter",
+          "en": "Firefighter",
+          "gl": "Bombeiro",
+          "es": "Bombero",
+          "tprAction": {
+            "gl": "Apuntar unha mangueira",
+            "es": "Apuntar una manguera"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s4.police-officer",
+          "en": "Police officer",
+          "gl": "Policía",
+          "es": "Policía",
+          "tprAction": {
+            "gl": "Facer o xesto de parar",
+            "es": "Hacer el gesto de parar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s4.baker",
+          "en": "Baker",
+          "gl": "Panadeiro",
+          "es": "Panadero",
+          "tprAction": {
+            "gl": "Amasar pan no aire",
+            "es": "Amasar pan en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s4.postman",
+          "en": "Postman",
+          "gl": "Carteiro",
+          "es": "Cartero",
+          "tprAction": {
+            "gl": "Entregar unha carta",
+            "es": "Entregar una carta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s4.farmer",
+          "en": "Farmer",
+          "gl": "Labrego",
+          "es": "Granjero",
+          "tprAction": {
+            "gl": "Sementar coa man",
+            "es": "Sembrar con la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s4.vet",
+          "en": "Vet",
+          "gl": "Veterinario",
+          "es": "Veterinario",
+          "tprAction": {
+            "gl": "Acariñar un animal de peluche",
+            "es": "Acariciar un animal de peluche"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s4.builder",
+          "en": "Builder",
+          "gl": "Albanel",
+          "es": "Albañil",
+          "tprAction": {
+            "gl": "Poñer ladrillos imaxinarios",
+            "es": "Poner ladrillos imaginarios"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xaneiro.s4.put-out-a-fire",
+          "en": "Put out a fire",
+          "gl": "Apagar un lume",
+          "es": "Apagar un fuego",
+          "tprAction": {
+            "gl": "Mover a mangueira",
+            "es": "Mover la manguera"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s4.deliver",
+          "en": "Deliver",
+          "gl": "Repartir",
+          "es": "Repartir",
+          "tprAction": {
+            "gl": "Entregar paquetes",
+            "es": "Entregar paquetes"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s4.knead",
+          "en": "Knead",
+          "gl": "Amasar",
+          "es": "Amasar",
+          "tprAction": {
+            "gl": "Amasar coas palmas",
+            "es": "Amasar con las palmas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s4.look-after-animals",
+          "en": "Look after animals",
+          "gl": "Coidar animais",
+          "es": "Cuidar animales",
+          "tprAction": {
+            "gl": "Acariñar e dar de comer",
+            "es": "Acariciar y dar de comer"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s4.direct-traffic",
+          "en": "Direct traffic",
+          "gl": "Dirixir o tráfico",
+          "es": "Dirigir el tráfico",
+          "tprAction": {
+            "gl": "Mover os brazos dando paso",
+            "es": "Mover los brazos dando paso"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xaneiro.s4.diligent",
+          "en": "Diligent",
+          "gl": "Traballador",
+          "es": "Trabajador",
+          "tprAction": {
+            "gl": "Secar a fronte co brazo",
+            "es": "Secarse la frente con el brazo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s4.useful",
+          "en": "Useful",
+          "gl": "Útil",
+          "es": "Útil",
+          "tprAction": {
+            "gl": "Levantar unha ferramenta",
+            "es": "Levantar una herramienta"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s4.uniformed",
+          "en": "Uniformed",
+          "gl": "De uniforme",
+          "es": "Con uniforme",
+          "tprAction": {
+            "gl": "Estirar a roupa",
+            "es": "Estirar la ropa"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s4.early-rising",
+          "en": "Early-rising",
+          "gl": "Madrugador",
+          "es": "Madrugador",
+          "tprAction": {
+            "gl": "Espreguizarse cedo",
+            "es": "Desperezarse temprano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xaneiro.s4.what-do-you-want-to-be",
+          "en": "What do you want to be?",
+          "gl": "Que queres ser?",
+          "es": "¿Qué quieres ser?",
+          "tprAction": {
+            "gl": "Sinalar varios oficios",
+            "es": "Señalar varios oficios"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xaneiro.s4.i-want-to-be-a-baker",
+          "en": "I want to be a baker",
+          "gl": "Quero ser panadeiro",
+          "es": "Quiero ser panadero",
+          "tprAction": {
+            "gl": "Amasar pan",
+            "es": "Amasar pan"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xaneiro.s4.the-vet-helps-animals-because-she-loves-them",
+          "en": "The vet helps animals because she loves them",
+          "gl": "A veterinaria axuda aos animais porque os quere",
+          "es": "La veterinaria ayuda a los animales porque los quiere",
+          "tprAction": {
+            "gl": "Acariñar un peluche",
+            "es": "Acariciar un peluche"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xaneiro.s4.thank-you-firefighter",
+          "en": "Thank you, firefighter!",
+          "gl": "Grazas, bombeiro!",
+          "es": "¡Gracias, bombero!",
+          "tprAction": {
+            "gl": "Acenar ao bombeiro",
+            "es": "Saludar al bombero"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

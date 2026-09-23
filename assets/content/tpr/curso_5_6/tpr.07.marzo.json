@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.5_6.marzo",
+  "curso": "curso_5_6",
+  "orden": 7,
+  "mesCalendario": 3,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Patróns",
+        "es": "Patrones"
+      },
+      "palabras": [
+        {
+          "id": "5_6.marzo.s1.pattern",
+          "en": "Pattern",
+          "gl": "Patrón",
+          "es": "Patrón",
+          "tprAction": {
+            "gl": "Bater palma, pé, palma, pé",
+            "es": "Dar palma, pie, palma, pie"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s1.repeat",
+          "en": "Repeat",
+          "gl": "Repetición",
+          "es": "Repetición",
+          "tprAction": {
+            "gl": "Facer o mesmo xesto dúas veces",
+            "es": "Hacer el mismo gesto dos veces"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s1.sequence-strip",
+          "en": "Sequence strip",
+          "gl": "Tira de secuencia",
+          "es": "Tira de secuencia",
+          "tprAction": {
+            "gl": "Sinalar de esquerda a dereita",
+            "es": "Señalar de izquierda a derecha"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s1.bead",
+          "en": "Bead",
+          "gl": "Conta",
+          "es": "Cuenta",
+          "tprAction": {
+            "gl": "Enfiar unha conta imaxinaria",
+            "es": "Ensartar una cuenta imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s1.necklace",
+          "en": "Necklace",
+          "gl": "Colar de contas",
+          "es": "Collar de cuentas",
+          "tprAction": {
+            "gl": "Debuxar un colar no pescozo",
+            "es": "Dibujar un collar en el cuello"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s1.stripes",
+          "en": "Stripes",
+          "gl": "Raias",
+          "es": "Rayas",
+          "tprAction": {
+            "gl": "Debuxar raias no aire",
+            "es": "Dibujar rayas en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s1.zigzag",
+          "en": "Zigzag",
+          "gl": "Zigzag",
+          "es": "Zigzag",
+          "tprAction": {
+            "gl": "Debuxar un zigzag",
+            "es": "Dibujar un zigzag"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s1.clap-a-pattern",
+          "en": "Clap a pattern",
+          "gl": "Bater un patrón",
+          "es": "Dar palmas en patrón",
+          "tprAction": {
+            "gl": "Palma, palma, pé",
+            "es": "Palma, palma, pie"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s1.predict-what-s-next",
+          "en": "Predict what's next",
+          "gl": "Adiviñar o seguinte",
+          "es": "Adivinar lo siguiente",
+          "tprAction": {
+            "gl": "Sinalar o que vén",
+            "es": "Señalar lo que viene"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s1.thread-beads",
+          "en": "Thread beads",
+          "gl": "Enfiar contas",
+          "es": "Ensartar cuentas",
+          "tprAction": {
+            "gl": "Pasar un fío imaxinario",
+            "es": "Pasar un hilo imaginario"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s1.continue",
+          "en": "Continue",
+          "gl": "Continuar",
+          "es": "Continuar",
+          "tprAction": {
+            "gl": "Seguir o movemento",
+            "es": "Seguir el movimiento"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s1.spot-the-mistake",
+          "en": "Spot the mistake",
+          "gl": "Atopar o erro",
+          "es": "Encontrar el error",
+          "tprAction": {
+            "gl": "Sinalar e dicir «aquí»",
+            "es": "Señalar y decir «aquí»"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s1.repeating",
+          "en": "Repeating",
+          "gl": "Que se repite",
+          "es": "Que se repite",
+          "tprAction": {
+            "gl": "Facer o mesmo xesto outra vez",
+            "es": "Hacer el mismo gesto otra vez"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s1.alternating",
+          "en": "Alternating",
+          "gl": "Alterno",
+          "es": "Alterno",
+          "tprAction": {
+            "gl": "Man arriba, man abaixo",
+            "es": "Mano arriba, mano abajo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s1.regular",
+          "en": "Regular",
+          "gl": "Regular",
+          "es": "Regular",
+          "tprAction": {
+            "gl": "Bater sempre igual",
+            "es": "Golpear siempre igual"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s1.next-in-line",
+          "en": "Next in line",
+          "gl": "O seguinte",
+          "es": "El siguiente",
+          "tprAction": {
+            "gl": "Sinalar adiante",
+            "es": "Señalar adelante"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s1.what-comes-next",
+          "en": "What comes next?",
+          "gl": "Que vén despois?",
+          "es": "¿Qué viene después?",
+          "tprAction": {
+            "gl": "Sinalar e agardar",
+            "es": "Señalar y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.marzo.s1.red-blue-red-blue",
+          "en": "Red, blue, red, blue",
+          "gl": "Vermello, azul, vermello, azul",
+          "es": "Rojo, azul, rojo, azul",
+          "tprAction": {
+            "gl": "Alternar mans",
+            "es": "Alternar manos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.marzo.s1.clap-stamp-clap-stamp-what-comes-next",
+          "en": "Clap, stamp, clap, stamp, what comes next?",
+          "gl": "Palma, pé, palma, pé, que vén agora?",
+          "es": "Palma, pie, palma, pie, ¿qué viene ahora?",
+          "tprAction": {
+            "gl": "Facer o patrón e parar",
+            "es": "Hacer el patrón y parar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.marzo.s1.the-pattern-repeats-again-and-again",
+          "en": "The pattern repeats again and again",
+          "gl": "O patrón repítese unha e outra vez",
+          "es": "El patrón se repite una y otra vez",
+          "tprAction": {
+            "gl": "Xirar a man en círculos",
+            "es": "Girar la mano en círculos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Simetría",
+        "es": "Simetría"
+      },
+      "palabras": [
+        {
+          "id": "5_6.marzo.s2.symmetry",
+          "en": "Symmetry",
+          "gl": "Simetría",
+          "es": "Simetría",
+          "tprAction": {
+            "gl": "Mover as dúas mans igual",
+            "es": "Mover las dos manos igual"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s2.mirror-line",
+          "en": "Mirror line",
+          "gl": "Eixe de simetría",
+          "es": "Eje de simetría",
+          "tprAction": {
+            "gl": "Trazar unha liña no medio",
+            "es": "Trazar una línea en el medio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s2.butterfly-print",
+          "en": "Butterfly print",
+          "gl": "Estampa de bolboreta",
+          "es": "Estampa de mariposa",
+          "tprAction": {
+            "gl": "Pintar e dobrar o papel",
+            "es": "Pintar y doblar el papel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s2.reflection-game",
+          "en": "Reflection game",
+          "gl": "Xogo do espello",
+          "es": "Juego del espejo",
+          "tprAction": {
+            "gl": "Copiar os movementos dun amigo",
+            "es": "Copiar los movimientos de un amigo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s2.left-side",
+          "en": "Left side",
+          "gl": "Lado esquerdo",
+          "es": "Lado izquierdo",
+          "tprAction": {
+            "gl": "Sinalar o lado esquerdo",
+            "es": "Señalar el lado izquierdo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s2.right-side",
+          "en": "Right side",
+          "gl": "Lado dereito",
+          "es": "Lado derecho",
+          "tprAction": {
+            "gl": "Sinalar o lado dereito",
+            "es": "Señalar el lado derecho"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s2.snowflake-cut",
+          "en": "Snowflake cut",
+          "gl": "Floco recortado",
+          "es": "Copo recortado",
+          "tprAction": {
+            "gl": "Dobrar e recortar no aire",
+            "es": "Doblar y recortar en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s2.fold-paper",
+          "en": "Fold paper",
+          "gl": "Dobrar papel",
+          "es": "Doblar papel",
+          "tprAction": {
+            "gl": "Dobrar unha folla pola metade",
+            "es": "Doblar una hoja por la mitad"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s2.mirror-a-friend",
+          "en": "Mirror a friend",
+          "gl": "Imitar a un amigo coma un espello",
+          "es": "Imitar a un amigo como un espejo",
+          "tprAction": {
+            "gl": "Copiar os xestos de fronte",
+            "es": "Copiar los gestos de frente"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s2.open-up-the-fold",
+          "en": "Open up the fold",
+          "gl": "Abrir o dobrez",
+          "es": "Abrir el doblez",
+          "tprAction": {
+            "gl": "Abrir a folla amodo",
+            "es": "Abrir la hoja despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s2.match-both-sides",
+          "en": "Match both sides",
+          "gl": "Igualar os dous lados",
+          "es": "Igualar los dos lados",
+          "tprAction": {
+            "gl": "Mover as dúas mans iguais",
+            "es": "Mover las dos manos iguales"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s2.cut-out",
+          "en": "Cut out",
+          "gl": "Recortar",
+          "es": "Recortar",
+          "tprAction": {
+            "gl": "Facer tesoiras cos dedos",
+            "es": "Hacer tijeras con los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s2.symmetrical",
+          "en": "Symmetrical",
+          "gl": "Simétrico",
+          "es": "Simétrico",
+          "tprAction": {
+            "gl": "Abrir os brazos iguais",
+            "es": "Abrir los brazos iguales"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s2.identical",
+          "en": "Identical",
+          "gl": "Idéntico",
+          "es": "Idéntico",
+          "tprAction": {
+            "gl": "Xuntar as palmas",
+            "es": "Juntar las palmas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s2.lopsided",
+          "en": "Lopsided",
+          "gl": "Torto",
+          "es": "Torcido",
+          "tprAction": {
+            "gl": "Inclinarse dun lado",
+            "es": "Inclinarse de un lado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s2.mirrored",
+          "en": "Mirrored",
+          "gl": "Reflectido",
+          "es": "Reflejado",
+          "tprAction": {
+            "gl": "Copiar un xesto ao revés",
+            "es": "Copiar un gesto al revés"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s2.copy-my-movements",
+          "en": "Copy my movements",
+          "gl": "Copia os meus movementos",
+          "es": "Copia mis movimientos",
+          "tprAction": {
+            "gl": "Moverse e agardar a copia",
+            "es": "Moverse y esperar la copia"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.marzo.s2.is-it-the-same-on-both-sides",
+          "en": "Is it the same on both sides?",
+          "gl": "É igual nos dous lados?",
+          "es": "¿Es igual en los dos lados?",
+          "tprAction": {
+            "gl": "Comparar as mans",
+            "es": "Comparar las manos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.marzo.s2.if-you-fold-it-both-halves-match",
+          "en": "If you fold it, both halves match",
+          "gl": "Se o dobras, as dúas metades coinciden",
+          "es": "Si lo doblas, las dos mitades coinciden",
+          "tprAction": {
+            "gl": "Dobrar e xuntar as mans",
+            "es": "Doblar y juntar las manos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.marzo.s2.the-left-side-is-the-same-as-the-right-side",
+          "en": "The left side is the same as the right side",
+          "gl": "O lado esquerdo é igual ca o dereito",
+          "es": "El lado izquierdo es igual que el derecho",
+          "tprAction": {
+            "gl": "Sinalar os dous lados",
+            "es": "Señalar los dos lados"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Números na natureza",
+        "es": "Números en la naturaleza"
+      },
+      "palabras": [
+        {
+          "id": "5_6.marzo.s3.petal-count",
+          "en": "Petal count",
+          "gl": "Conta de pétalos",
+          "es": "Cuenta de pétalos",
+          "tprAction": {
+            "gl": "Contar pétalos cos dedos",
+            "es": "Contar pétalos con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s3.spiral",
+          "en": "Spiral",
+          "gl": "Espiral",
+          "es": "Espiral",
+          "tprAction": {
+            "gl": "Debuxar unha espiral co dedo",
+            "es": "Dibujar una espiral con el dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s3.honeycomb",
+          "en": "Honeycomb",
+          "gl": "Panal",
+          "es": "Panal",
+          "tprAction": {
+            "gl": "Facer hexágonos coas mans",
+            "es": "Hacer hexágonos con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s3.hexagon",
+          "en": "Hexagon",
+          "gl": "Hexágono",
+          "es": "Hexágono",
+          "tprAction": {
+            "gl": "Contar seis lados",
+            "es": "Contar seis lados"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s3.snail-shell",
+          "en": "Snail shell",
+          "gl": "Cuncha de caracol",
+          "es": "Concha de caracol",
+          "tprAction": {
+            "gl": "Enrolar o dedo",
+            "es": "Enrollar el dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s3.pinecone-scales",
+          "en": "Pinecone scales",
+          "gl": "Escamas da piña",
+          "es": "Escamas de la piña",
+          "tprAction": {
+            "gl": "Tocar as escamas",
+            "es": "Tocar las escamas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s3.ladybird-spots",
+          "en": "Ladybird spots",
+          "gl": "Pintas da xoaniña",
+          "es": "Puntos de la mariquita",
+          "tprAction": {
+            "gl": "Contar pintas",
+            "es": "Contar puntos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s3.count-petals",
+          "en": "Count petals",
+          "gl": "Contar pétalos",
+          "es": "Contar pétalos",
+          "tprAction": {
+            "gl": "Contar ata cinco",
+            "es": "Contar hasta cinco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s3.trace-a-spiral",
+          "en": "Trace a spiral",
+          "gl": "Repasar unha espiral",
+          "es": "Repasar una espiral",
+          "tprAction": {
+            "gl": "Seguir a espiral co dedo",
+            "es": "Seguir la espiral con el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s3.look-for-patterns",
+          "en": "Look for patterns",
+          "gl": "Buscar patróns",
+          "es": "Buscar patrones",
+          "tprAction": {
+            "gl": "Mirar arredor coa lupa",
+            "es": "Mirar alrededor con la lupa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s3.sort-by-number",
+          "en": "Sort by number",
+          "gl": "Ordenar por número",
+          "es": "Ordenar por número",
+          "tprAction": {
+            "gl": "Poñer en fila de menos a máis",
+            "es": "Poner en fila de menos a más"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s3.measure-a-leaf",
+          "en": "Measure a leaf",
+          "gl": "Medir unha folla",
+          "es": "Medir una hoja",
+          "tprAction": {
+            "gl": "Medir con dedos",
+            "es": "Medir con dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s3.six-sided",
+          "en": "Six-sided",
+          "gl": "De seis lados",
+          "es": "De seis lados",
+          "tprAction": {
+            "gl": "Amosar seis dedos",
+            "es": "Enseñar seis dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s3.spiralling",
+          "en": "Spiralling",
+          "gl": "En espiral",
+          "es": "En espiral",
+          "tprAction": {
+            "gl": "Xirar o dedo",
+            "es": "Girar el dedo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s3.countless",
+          "en": "Countless",
+          "gl": "Incontable",
+          "es": "Incontable",
+          "tprAction": {
+            "gl": "Abrir as mans moitas veces",
+            "es": "Abrir las manos muchas veces"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s3.natural",
+          "en": "Natural",
+          "gl": "Natural",
+          "es": "Natural",
+          "tprAction": {
+            "gl": "Tocar unha folla",
+            "es": "Tocar una hoja"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s3.how-many-petals-does-it-have",
+          "en": "How many petals does it have?",
+          "gl": "Cantos pétalos ten?",
+          "es": "¿Cuántos pétalos tiene?",
+          "tprAction": {
+            "gl": "Contar cos dedos",
+            "es": "Contar con los dedos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.marzo.s3.look-a-spiral",
+          "en": "Look, a spiral!",
+          "gl": "Mira, unha espiral!",
+          "es": "¡Mira, una espiral!",
+          "tprAction": {
+            "gl": "Debuxar a espiral",
+            "es": "Dibujar la espiral"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.marzo.s3.bees-build-hexagons-because-they-fit-together",
+          "en": "Bees build hexagons because they fit together",
+          "gl": "As abellas fan hexágonos porque encaixan",
+          "es": "Las abejas hacen hexágonos porque encajan",
+          "tprAction": {
+            "gl": "Xuntar as mans en hexágono",
+            "es": "Juntar las manos en hexágono"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.marzo.s3.this-flower-has-more-petals-than-that-one",
+          "en": "This flower has more petals than that one",
+          "gl": "Esta flor ten máis pétalos ca esa",
+          "es": "Esta flor tiene más pétalos que esa",
+          "tprAction": {
+            "gl": "Sinalar e comparar",
+            "es": "Señalar y comparar"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Formas e cores",
+        "es": "Formas y colores"
+      },
+      "palabras": [
+        {
+          "id": "5_6.marzo.s4.mosaic",
+          "en": "Mosaic",
+          "gl": "Mosaico",
+          "es": "Mosaico",
+          "tprAction": {
+            "gl": "Poñer pezas unha ao lado doutra",
+            "es": "Poner piezas una al lado de otra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s4.tile",
+          "en": "Tile",
+          "gl": "Baldosa",
+          "es": "Azulejo",
+          "tprAction": {
+            "gl": "Pousar a man plana",
+            "es": "Posar la mano plana"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s4.tangram",
+          "en": "Tangram",
+          "gl": "Tangram",
+          "es": "Tangram",
+          "tprAction": {
+            "gl": "Encaixar pezas",
+            "es": "Encajar piezas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s4.colour-wheel",
+          "en": "Colour wheel",
+          "gl": "Roda de cores",
+          "es": "Rueda de colores",
+          "tprAction": {
+            "gl": "Xirar a man en círculo",
+            "es": "Girar la mano en círculo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s4.shade-card",
+          "en": "Shade card",
+          "gl": "Carta de tons",
+          "es": "Carta de tonos",
+          "tprAction": {
+            "gl": "Pasar de claro a escuro",
+            "es": "Pasar de claro a oscuro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s4.primary-colours",
+          "en": "Primary colours",
+          "gl": "Cores primarias",
+          "es": "Colores primarios",
+          "tprAction": {
+            "gl": "Amosar tres dedos",
+            "es": "Enseñar tres dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s4.palette",
+          "en": "Palette",
+          "gl": "Paleta de pintor",
+          "es": "Paleta de pintor",
+          "tprAction": {
+            "gl": "Suxeitar unha paleta",
+            "es": "Sostener una paleta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.marzo.s4.mix-colours",
+          "en": "Mix colours",
+          "gl": "Mesturar cores",
+          "es": "Mezclar colores",
+          "tprAction": {
+            "gl": "Remexer co dedo",
+            "es": "Remover con el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s4.arrange-tiles",
+          "en": "Arrange tiles",
+          "gl": "Colocar baldosas",
+          "es": "Colocar azulejos",
+          "tprAction": {
+            "gl": "Pousar pezas en fila",
+            "es": "Poner piezas en fila"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s4.create-a-picture",
+          "en": "Create a picture",
+          "gl": "Crear unha imaxe",
+          "es": "Crear una imagen",
+          "tprAction": {
+            "gl": "Debuxar un marco",
+            "es": "Dibujar un marco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s4.rotate-a-piece",
+          "en": "Rotate a piece",
+          "gl": "Xirar unha peza",
+          "es": "Girar una pieza",
+          "tprAction": {
+            "gl": "Xirar a man",
+            "es": "Girar la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s4.fill-a-space",
+          "en": "Fill a space",
+          "gl": "Encher un oco",
+          "es": "Llenar un hueco",
+          "tprAction": {
+            "gl": "Encaixar a man nun oco",
+            "es": "Encajar la mano en un hueco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.marzo.s4.pastel",
+          "en": "Pastel",
+          "gl": "Pastel",
+          "es": "Pastel",
+          "tprAction": {
+            "gl": "Mover as mans suave",
+            "es": "Mover las manos suave"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s4.vivid",
+          "en": "Vivid",
+          "gl": "Vivo",
+          "es": "Vivo",
+          "tprAction": {
+            "gl": "Abrir os ollos moito",
+            "es": "Abrir los ojos mucho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s4.geometric",
+          "en": "Geometric",
+          "gl": "Xeométrico",
+          "es": "Geométrico",
+          "tprAction": {
+            "gl": "Debuxar un triángulo",
+            "es": "Dibujar un triángulo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s4.darkest-shade",
+          "en": "Darkest shade",
+          "gl": "O ton máis escuro",
+          "es": "El tono más oscuro",
+          "tprAction": {
+            "gl": "Sinalar o máis escuro",
+            "es": "Señalar el más oscuro"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.marzo.s4.blue-and-yellow-make-green",
+          "en": "Blue and yellow make green",
+          "gl": "Azul e amarelo fan verde",
+          "es": "Azul y amarillo hacen verde",
+          "tprAction": {
+            "gl": "Xuntar dúas mans",
+            "es": "Juntar dos manos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.marzo.s4.which-piece-goes-here",
+          "en": "Which piece goes here?",
+          "gl": "Que peza vai aquí?",
+          "es": "¿Qué pieza va aquí?",
+          "tprAction": {
+            "gl": "Sinalar o oco",
+            "es": "Señalar el hueco"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.marzo.s4.turn-it-around-and-try-again",
+          "en": "Turn it around and try again",
+          "gl": "Dálle a volta e proba outra vez",
+          "es": "Dale la vuelta y prueba otra vez",
+          "tprAction": {
+            "gl": "Xirar e volver probar",
+            "es": "Girar y volver a probar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.marzo.s4.from-light-to-dark",
+          "en": "From light to dark",
+          "gl": "De claro a escuro",
+          "es": "De claro a oscuro",
+          "tprAction": {
+            "gl": "Mover a man de arriba abaixo",
+            "es": "Mover la mano de arriba abajo"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

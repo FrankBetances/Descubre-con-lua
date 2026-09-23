@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.3_4.setembro",
+  "curso": "curso_3_4",
+  "orden": 1,
+  "mesCalendario": 9,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Ola, escola!",
+        "es": "¡Hola, escuela!"
+      },
+      "palabras": [
+        {
+          "id": "hello",
+          "en": "Hello",
+          "gl": "Ola",
+          "es": "Hola",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Saudar coa man aberta ao entrar no círculo",
+            "es": "Saludar con la mano abierta al entrar en el círculo"
+          }
+        },
+        {
+          "id": "friend",
+          "en": "Friend",
+          "gl": "Amigo, amiga",
+          "es": "Amigo, amiga",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Dar a man á persoa que está ao lado",
+            "es": "Dar la mano a la persona que está al lado"
+          }
+        },
+        {
+          "id": "teacher",
+          "en": "Teacher",
+          "gl": "Mestra, mestre",
+          "es": "Maestra, maestro",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Sinalar con suavidade á persoa docente",
+            "es": "Señalar con suavidad a la persona docente"
+          }
+        },
+        {
+          "id": "school",
+          "en": "School",
+          "gl": "Escola",
+          "es": "Escuela",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Debuxar no aire o tellado da escola coas mans",
+            "es": "Dibujar en el aire el tejado de la escuela con las manos"
+          }
+        },
+        {
+          "id": "door",
+          "en": "Door",
+          "gl": "Porta",
+          "es": "Puerta",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir e pechar unha porta imaxinaria",
+            "es": "Abrir y cerrar una puerta imaginaria"
+          }
+        },
+        {
+          "id": "chair",
+          "en": "Chair",
+          "gl": "Cadeira",
+          "es": "Silla",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Tocar a cadeira e sentar nela amodo",
+            "es": "Tocar la silla y sentarse en ella despacio"
+          }
+        },
+        {
+          "id": "rug",
+          "en": "Rug",
+          "gl": "Alfombra",
+          "es": "Alfombra",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pousar as dúas mans na alfombra do círculo",
+            "es": "Apoyar las dos manos en la alfombra del círculo"
+          }
+        },
+        {
+          "id": "name",
+          "en": "Name",
+          "gl": "Nome",
+          "es": "Nombre",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pousar a man no peito ao dicir o propio nome",
+            "es": "Poner la mano en el pecho al decir el propio nombre"
+          }
+        },
+        {
+          "id": "wave",
+          "en": "Wave",
+          "gl": "Acenar",
+          "es": "Saludar con la mano",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Mover a man dun lado a outro para saudar",
+            "es": "Mover la mano de un lado a otro para saludar"
+          }
+        },
+        {
+          "id": "smile",
+          "en": "Smile",
+          "gl": "Sorrir",
+          "es": "Sonreír",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Sorrir amplamente mirando ao grupo",
+            "es": "Sonreír ampliamente mirando al grupo"
+          }
+        },
+        {
+          "id": "sit",
+          "en": "Sit",
+          "gl": "Sentar",
+          "es": "Sentarse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Baixar amodo ata sentar no chan",
+            "es": "Bajar despacio hasta sentarse en el suelo"
+          }
+        },
+        {
+          "id": "come",
+          "en": "Come",
+          "gl": "Vir",
+          "es": "Venir",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Chamar co brazo para que se acheguen",
+            "es": "Llamar con el brazo para que se acerquen"
+          }
+        },
+        {
+          "id": "listen",
+          "en": "Listen",
+          "gl": "Escoitar",
+          "es": "Escuchar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Levar a man á orella e quedar en silencio",
+            "es": "Llevarse la mano a la oreja y quedarse en silencio"
+          }
+        },
+        {
+          "id": "happy",
+          "en": "Happy",
+          "gl": "Contento, contenta",
+          "es": "Contento, contenta",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Abrir os brazos cun sorriso grande",
+            "es": "Abrir los brazos con una sonrisa grande"
+          }
+        },
+        {
+          "id": "new",
+          "en": "New",
+          "gl": "Novo, nova",
+          "es": "Nuevo, nueva",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Amosar algo coas mans como se fose un agasallo",
+            "es": "Mostrar algo con las manos como si fuera un regalo"
+          }
+        },
+        {
+          "id": "quiet",
+          "en": "Quiet",
+          "gl": "Calado, calada",
+          "es": "Callado, callada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Levar o dedo aos beizos e baixar a voz",
+            "es": "Llevarse el dedo a los labios y bajar la voz"
+          }
+        },
+        {
+          "id": "loud",
+          "en": "Loud",
+          "gl": "Forte (son)",
+          "es": "Fuerte (sonido)",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Bater as palmas con forza e logo parar",
+            "es": "Dar palmadas con fuerza y luego parar"
+          }
+        },
+        {
+          "id": "good-morning",
+          "en": "Good morning!",
+          "gl": "Bos días!",
+          "es": "¡Buenos días!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Estirar os brazos cara ao ceo como ao espertar",
+            "es": "Estirar los brazos hacia el cielo como al despertar"
+          }
+        },
+        {
+          "id": "bye-bye",
+          "en": "Bye-bye",
+          "gl": "Adeus, adeus",
+          "es": "Adiós, adiós",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Acenar coa man e lanzar un bico ao aire",
+            "es": "Decir adiós con la mano y lanzar un beso al aire"
+          }
+        },
+        {
+          "id": "hand-in-hand",
+          "en": "Hand in hand",
+          "gl": "Da man",
+          "es": "De la mano",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Coller a man do compañeiro e camiñar xuntos",
+            "es": "Coger la mano del compañero y caminar juntos"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "A miña aula",
+        "es": "Mi aula"
+      },
+      "palabras": [
+        {
+          "id": "table",
+          "en": "Table",
+          "gl": "Mesa",
+          "es": "Mesa",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pousar as palmas das mans enriba da mesa",
+            "es": "Apoyar las palmas de las manos encima de la mesa"
+          }
+        },
+        {
+          "id": "window",
+          "en": "Window",
+          "gl": "Fiestra",
+          "es": "Ventana",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Debuxar un cadrado no aire e mirar a través",
+            "es": "Dibujar un cuadrado en el aire y mirar a través"
+          }
+        },
+        {
+          "id": "ball",
+          "en": "Ball",
+          "gl": "Pelota",
+          "es": "Pelota",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer unha bóla grande coas mans e rodala",
+            "es": "Hacer una pelota grande con las manos y hacerla rodar"
+          }
+        },
+        {
+          "id": "book",
+          "en": "Book",
+          "gl": "Libro",
+          "es": "Libro",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Xuntar as palmas e abrilas como un libro",
+            "es": "Juntar las palmas y abrirlas como un libro"
+          }
+        },
+        {
+          "id": "crayon",
+          "en": "Crayon",
+          "gl": "Cera de cor",
+          "es": "Cera de colores",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Coller unha cera imaxinaria e pintar no aire",
+            "es": "Coger una cera imaginaria y pintar en el aire"
+          }
+        },
+        {
+          "id": "backpack",
+          "en": "Backpack",
+          "gl": "Mochila",
+          "es": "Mochila",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Poñer unha mochila imaxinaria ás costas",
+            "es": "Ponerse una mochila imaginaria a la espalda"
+          }
+        },
+        {
+          "id": "box",
+          "en": "Box",
+          "gl": "Caixa",
+          "es": "Caja",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Debuxar unha caixa no aire e abrir a tapa",
+            "es": "Dibujar una caja en el aire y abrir la tapa"
+          }
+        },
+        {
+          "id": "look",
+          "en": "Look",
+          "gl": "Mirar",
+          "es": "Mirar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Facer anteollos cos dedos e mirar arredor",
+            "es": "Hacer gafas con los dedos y mirar alrededor"
+          }
+        },
+        {
+          "id": "point",
+          "en": "Point",
+          "gl": "Sinalar",
+          "es": "Señalar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Sinalar co dedo algo que está preto",
+            "es": "Señalar con el dedo algo que está cerca"
+          }
+        },
+        {
+          "id": "give",
+          "en": "Give",
+          "gl": "Dar",
+          "es": "Dar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Estender a man aberta cara a outra persoa",
+            "es": "Extender la mano abierta hacia otra persona"
+          }
+        },
+        {
+          "id": "share",
+          "en": "Share",
+          "gl": "Compartir",
+          "es": "Compartir",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Partir un obxecto imaxinario e dar a metade",
+            "es": "Partir un objeto imaginario y dar la mitad"
+          }
+        },
+        {
+          "id": "help",
+          "en": "Help",
+          "gl": "Axudar",
+          "es": "Ayudar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Levantar entre dous un obxecto imaxinario pesado",
+            "es": "Levantar entre dos un objeto imaginario pesado"
+          }
+        },
+        {
+          "id": "little",
+          "en": "Little",
+          "gl": "Pequeniño, pequeniña",
+          "es": "Pequeñito, pequeñita",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Xuntar o polgar e o índice deixando un oco pequeno",
+            "es": "Juntar el pulgar y el índice dejando un hueco pequeño"
+          }
+        },
+        {
+          "id": "ready",
+          "en": "Ready",
+          "gl": "Preparado, preparada",
+          "es": "Listo, lista",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Pousar as mans nos xeonllos e mirar á persoa docente",
+            "es": "Poner las manos en las rodillas y mirar a la persona docente"
+          }
+        },
+        {
+          "id": "empty",
+          "en": "Empty",
+          "gl": "Baleiro, baleira",
+          "es": "Vacío, vacía",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Virar unha cunca imaxinaria e mirar dentro",
+            "es": "Dar la vuelta a un cuenco imaginario y mirar dentro"
+          }
+        },
+        {
+          "id": "full",
+          "en": "Full",
+          "gl": "Cheo, chea",
+          "es": "Lleno, llena",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Encher as meixelas de aire e abrir os brazos",
+            "es": "Hinchar los mofletes de aire y abrir los brazos"
+          }
+        },
+        {
+          "id": "tidy-up",
+          "en": "Tidy up!",
+          "gl": "A recoller!",
+          "es": "¡A recoger!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Recoller xoguetes imaxinarios e gardalos nunha caixa",
+            "es": "Recoger juguetes imaginarios y guardarlos en una caja"
+          }
+        },
+        {
+          "id": "your-turn",
+          "en": "Your turn!",
+          "gl": "A túa vez!",
+          "es": "¡Te toca!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Sinalar con amabilidade a quen lle toca",
+            "es": "Señalar con amabilidad a quien le toca"
+          }
+        },
+        {
+          "id": "one-by-one",
+          "en": "One by one",
+          "gl": "Un a un",
+          "es": "Uno a uno",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Tocar o ombro de cada criatura, dunha en unha",
+            "es": "Tocar el hombro de cada criatura, de una en una"
+          }
+        },
+        {
+          "id": "all-together",
+          "en": "All together",
+          "gl": "Todos xuntos",
+          "es": "Todos juntos",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Dar as mans en círculo e subilas á vez",
+            "es": "Darse las manos en círculo y subirlas a la vez"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "A miña familia",
+        "es": "Mi familia"
+      },
+      "palabras": [
+        {
+          "id": "family",
+          "en": "Family",
+          "gl": "Familia",
+          "es": "Familia",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir os brazos e pechalos nunha aperta grande",
+            "es": "Abrir los brazos y cerrarlos en un gran abrazo"
+          }
+        },
+        {
+          "id": "home",
+          "en": "Home",
+          "gl": "Casa",
+          "es": "Casa",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Xuntar as mans por riba da cabeza como un tellado",
+            "es": "Juntar las manos por encima de la cabeza como un tejado"
+          }
+        },
+        {
+          "id": "mummy",
+          "en": "Mummy",
+          "gl": "Mamá",
+          "es": "Mamá",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pousar a man no corazón ao dicir mamá",
+            "es": "Poner la mano en el corazón al decir mamá"
+          }
+        },
+        {
+          "id": "daddy",
+          "en": "Daddy",
+          "gl": "Papá",
+          "es": "Papá",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Dar dúas palmadiñas suaves no peito ao dicir papá",
+            "es": "Darse dos palmaditas suaves en el pecho al decir papá"
+          }
+        },
+        {
+          "id": "baby",
+          "en": "Baby",
+          "gl": "Bebé",
+          "es": "Bebé",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Arrolar un bebé imaxinario nos brazos",
+            "es": "Acunar un bebé imaginario en los brazos"
+          }
+        },
+        {
+          "id": "grandma",
+          "en": "Grandma",
+          "gl": "Avoa",
+          "es": "Abuela",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pousar as mans nas meixelas con agarimo",
+            "es": "Poner las manos en las mejillas con cariño"
+          }
+        },
+        {
+          "id": "grandpa",
+          "en": "Grandpa",
+          "gl": "Avó",
+          "es": "Abuelo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Acenar lonxe coma se chegase o avó",
+            "es": "Saludar a lo lejos como si llegara el abuelo"
+          }
+        },
+        {
+          "id": "hug",
+          "en": "Hug",
+          "gl": "Abrazar",
+          "es": "Abrazar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Rodearse cos propios brazos nunha aperta",
+            "es": "Rodearse con los propios brazos en un abrazo"
+          }
+        },
+        {
+          "id": "kiss",
+          "en": "Kiss",
+          "gl": "Bicar",
+          "es": "Besar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Levar os dedos aos beizos e soltar un bico",
+            "es": "Llevarse los dedos a los labios y soltar un beso"
+          }
+        },
+        {
+          "id": "hold",
+          "en": "Hold",
+          "gl": "Suxeitar",
+          "es": "Sostener",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Suxeitar unha pelota imaxinaria coas dúas mans sen deixala caer",
+            "es": "Sostener una pelota imaginaria con las dos manos sin dejarla caer"
+          }
+        },
+        {
+          "id": "rock",
+          "en": "Rock",
+          "gl": "Arrolar",
+          "es": "Mecer",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Balancearse amodo dun lado a outro",
+            "es": "Balancearse despacio de un lado a otro"
+          }
+        },
+        {
+          "id": "wait",
+          "en": "Wait",
+          "gl": "Agardar",
+          "es": "Esperar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Cruzar as mans no colo e contar ata tres en silencio",
+            "es": "Cruzar las manos en el regazo y contar hasta tres en silencio"
+          }
+        },
+        {
+          "id": "soft",
+          "en": "Soft",
+          "gl": "Suave",
+          "es": "Suave",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Acariñar o propio brazo moi amodo",
+            "es": "Acariciarse el brazo muy despacio"
+          }
+        },
+        {
+          "id": "gentle",
+          "en": "Gentle",
+          "gl": "Agarimoso, agarimosa",
+          "es": "Cariñoso, cariñosa",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Pasar a man con agarimo polo ombro do compañeiro",
+            "es": "Pasar la mano con cariño por el hombro del compañero"
+          }
+        },
+        {
+          "id": "calm",
+          "en": "Calm",
+          "gl": "Tranquilo, tranquila",
+          "es": "Tranquilo, tranquila",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Respirar fondo e deixar caer os ombros",
+            "es": "Respirar hondo y dejar caer los hombros"
+          }
+        },
+        {
+          "id": "shy",
+          "en": "Shy",
+          "gl": "Tímido, tímida",
+          "es": "Tímido, tímida",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Tapar a cara coas mans e asomar un ollo",
+            "es": "Taparse la cara con las manos y asomar un ojo"
+          }
+        },
+        {
+          "id": "what-s-your-name",
+          "en": "What's your name?",
+          "gl": "Como te chamas?",
+          "es": "¿Cómo te llamas?",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Pousar a man no peito e logo sinalar a outra persoa",
+            "es": "Poner la mano en el pecho y luego señalar a otra persona"
+          }
+        },
+        {
+          "id": "i-love-you",
+          "en": "I love you",
+          "gl": "Quérote",
+          "es": "Te quiero",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Facer un corazón coas mans",
+            "es": "Hacer un corazón con las manos"
+          }
+        },
+        {
+          "id": "thank-you",
+          "en": "Thank you",
+          "gl": "Grazas",
+          "es": "Gracias",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Pousar a man no peito e inclinar a cabeza",
+            "es": "Poner la mano en el pecho e inclinar la cabeza"
+          }
+        },
+        {
+          "id": "next-to-me",
+          "en": "Next to me",
+          "gl": "Ao meu carón",
+          "es": "A mi lado",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Dar unhas palmadiñas no chan ao lado dun mesmo",
+            "es": "Dar unas palmaditas en el suelo al lado de uno mismo"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Xogamos xuntos",
+        "es": "Jugamos juntos"
+      },
+      "palabras": [
+        {
+          "id": "toy",
+          "en": "Toy",
+          "gl": "Xoguete",
+          "es": "Juguete",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Coller un xoguete imaxinario e amosalo ao grupo",
+            "es": "Coger un juguete imaginario y enseñarlo al grupo"
+          }
+        },
+        {
+          "id": "doll",
+          "en": "Doll",
+          "gl": "Boneca",
+          "es": "Muñeca",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Peitear con agarimo unha boneca imaxinaria",
+            "es": "Peinar con cariño una muñeca imaginaria"
+          }
+        },
+        {
+          "id": "teddy",
+          "en": "Teddy",
+          "gl": "Osiño de peluche",
+          "es": "Osito de peluche",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrazar un osiño imaxinario contra o peito",
+            "es": "Abrazar un osito imaginario contra el pecho"
+          }
+        },
+        {
+          "id": "blocks",
+          "en": "Blocks",
+          "gl": "Bloques",
+          "es": "Bloques",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Poñer unha man enriba da outra como bloques",
+            "es": "Poner una mano encima de la otra como bloques"
+          }
+        },
+        {
+          "id": "song",
+          "en": "Song",
+          "gl": "Canción",
+          "es": "Canción",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mover as mans coma se dirixise unha canción",
+            "es": "Mover las manos como si dirigiera una canción"
+          }
+        },
+        {
+          "id": "cup",
+          "en": "Cup",
+          "gl": "Vaso",
+          "es": "Vaso",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Beber dun vaso imaxinario a pequenos grolos",
+            "es": "Beber de un vaso imaginario a pequeños sorbos"
+          }
+        },
+        {
+          "id": "snack",
+          "en": "Snack",
+          "gl": "Merenda",
+          "es": "Merienda",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Levar á boca un anaco de froita imaxinaria",
+            "es": "Llevarse a la boca un trozo de fruta imaginaria"
+          }
+        },
+        {
+          "id": "play",
+          "en": "Play",
+          "gl": "Xogar",
+          "es": "Jugar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Mover o corpo con ledicia no sitio",
+            "es": "Mover el cuerpo con alegría en el sitio"
+          }
+        },
+        {
+          "id": "sing",
+          "en": "Sing",
+          "gl": "Cantar",
+          "es": "Cantar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Abrir a boca e cantar un «la, la, la» suave",
+            "es": "Abrir la boca y cantar un «la, la, la» suave"
+          }
+        },
+        {
+          "id": "push",
+          "en": "Push",
+          "gl": "Empurrar",
+          "es": "Empujar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Empurrar coas dúas mans unha parede imaxinaria",
+            "es": "Empujar con las dos manos una pared imaginaria"
+          }
+        },
+        {
+          "id": "pull",
+          "en": "Pull",
+          "gl": "Tirar de",
+          "es": "Tirar de",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tirar dunha corda imaxinaria cara a un mesmo",
+            "es": "Tirar de una cuerda imaginaria hacia uno mismo"
+          }
+        },
+        {
+          "id": "build",
+          "en": "Build",
+          "gl": "Construír",
+          "es": "Construir",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Amoreirar bloques imaxinarios cada vez máis altos",
+            "es": "Apilar bloques imaginarios cada vez más altos"
+          }
+        },
+        {
+          "id": "funny",
+          "en": "Funny",
+          "gl": "Divertido, divertida",
+          "es": "Divertido, divertida",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Facer unha cara divertida e rir",
+            "es": "Poner una cara divertida y reír"
+          }
+        },
+        {
+          "id": "friendly",
+          "en": "Friendly",
+          "gl": "Simpático, simpática",
+          "es": "Simpático, simpática",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Ofrecer a man aberta a quen está ao lado",
+            "es": "Ofrecer la mano abierta a quien está al lado"
+          }
+        },
+        {
+          "id": "hungry",
+          "en": "Hungry",
+          "gl": "Con fame",
+          "es": "Con hambre",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Frotar a barriga en círculos",
+            "es": "Frotarse la barriga en círculos"
+          }
+        },
+        {
+          "id": "thirsty",
+          "en": "Thirsty",
+          "gl": "Con sede",
+          "es": "Con sed",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Facer o xesto de beber coa man en forma de vaso",
+            "es": "Hacer el gesto de beber con la mano en forma de vaso"
+          }
+        },
+        {
+          "id": "give-me-five",
+          "en": "Give me five!",
+          "gl": "Choca esa!",
+          "es": "¡Choca esos cinco!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Chocar a palma da man coa dunha compañeira",
+            "es": "Chocar la palma de la mano con la de una compañera"
+          }
+        },
+        {
+          "id": "let-s-play",
+          "en": "Let's play!",
+          "gl": "Imos xogar!",
+          "es": "¡Vamos a jugar!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Levantar os brazos e botar a andar xuntos",
+            "es": "Levantar los brazos y echar a andar juntos"
+          }
+        },
+        {
+          "id": "wave-and-smile",
+          "en": "Wave and smile",
+          "gl": "Acenar e sorrir",
+          "es": "Saludar y sonreír",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Acenar coa man e sorrir ao mesmo tempo",
+            "es": "Saludar con la mano y sonreír a la vez"
+          }
+        },
+        {
+          "id": "you-and-me",
+          "en": "You and me",
+          "gl": "Ti e mais eu",
+          "es": "Tú y yo",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Sinalar a outra persoa e logo a un mesmo",
+            "es": "Señalar a otra persona y luego a uno mismo"
+          }
+        }
+      ]
+    }
+  ]
+}

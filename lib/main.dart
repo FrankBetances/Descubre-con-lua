@@ -39,7 +39,7 @@ void main() async {
   await repository.initialize();
   // El inglés del curso —cinco palabras al día— lo usan el portal, el
   // calendario y la asamblea: se lee una vez aquí y lo encuentran ya leído.
-  await repository.loadCursoTpr();
+  await repository.loadProgramaTpr();
   runApp(DescubreConLuaApp(contentRepository: repository));
 }
 

@@ -26,7 +26,9 @@ class AulaPrimeiroCicloPanel extends StatefulWidget {
 
   /// El calendario del curso. Volvió por el mismo motivo: un aula sin el mes a
   /// la vista obliga a salir de la pantalla para saber por dónde va el curso.
-  final Widget? calendario;
+  ///
+  /// Recibe el curso del grupo elegido, para enseñar SUS meses.
+  final Widget Function(String cursoId)? calendario;
 
   /// Las fichas de contenido que van debajo de la tarjeta del día.
   final Widget? pe;
@@ -220,7 +222,8 @@ class _AulaPrimeiroCicloPanelState extends State<AulaPrimeiroCicloPanel> {
                     onComezar: () => widget.onComezar(_tramo, _mes, _diaActual),
                   ),
           ),
-          if (widget.calendario != null) widget.calendario!,
+          if (widget.calendario case final calendario?)
+            calendario('curso_${_tramo.clave}'),
           if (widget.pe != null) widget.pe!,
         ],
       ),

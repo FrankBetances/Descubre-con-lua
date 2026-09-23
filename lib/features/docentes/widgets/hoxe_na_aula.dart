@@ -15,26 +15,34 @@ import '../../juega/widgets/aula_ciclo_panel.dart';
   return (dia: (mesCalendario: 9, semana: 1, dia: 1), prevista: true);
 }
 
-/// «Hoxe na aula»: las palabras inglesas del día que toca, sacadas del curso.
+/// «Hoxe na aula»: las palabras inglesas del día que toca, en el curso del
+/// grupo que se elige arriba.
 ///
 /// Antes esta tarjeta llevaba las palabras escritas en el widget, las mismas
-/// veinte todas las semanas del año, y el viernes enseñaba cinco cuando el
-/// plan dice veinte. Ahora el día sale de la fecha —con la misma regla que la
-/// asamblea del día— y las palabras, de `assets/content/tpr/`.
+/// veinte todas las semanas del año y para todas las edades. Ahora el día sale
+/// de la fecha —con la misma regla que la asamblea del día— y las palabras, del
+/// curso del grupo en `assets/content/tpr/`: las de 0-2 no son las de 5-6.
 class TarxetaHoxeNaAula extends StatelessWidget {
-  final CursoTpr curso;
+  final ProgramaTpr programa;
+
+  /// El curso del grupo elegido (`curso_0_2` … `curso_5_6`).
+  final String cursoId;
+  final ValueChanged<String> onCambiarCurso;
   final AppLanguage language;
   final OfflineAudioService? audioService;
 
   /// Para los tests: el día que se quiere ver. Por defecto, hoy.
   final DateTime? agora;
 
-  final ValueChanged<DiaDoCursoTpr> onIniciarAsemblea;
+  /// Abre la asamblea de ESE día para el grupo de ESE curso.
+  final void Function(DiaDoCursoTpr dia, String cursoId) onIniciarAsemblea;
   final VoidCallback onVerPalabras;
 
   const TarxetaHoxeNaAula({
     super.key,
-    required this.curso,
+    required this.programa,
+    required this.cursoId,
+    required this.onCambiarCurso,
     required this.language,
     required this.onIniciarAsemblea,
     required this.onVerPalabras,
@@ -47,8 +55,9 @@ class TarxetaHoxeNaAula extends StatelessWidget {
     final isGl = language == AppLanguage.gl;
     final hoxe = diaDoCursoParaHoxe(agora: agora);
     final d = hoxe.dia;
-    final plan = curso.planDoDia(d.mesCalendario, d.semana, d.dia);
-    if (plan == null) return const SizedBox.shrink();
+    final curso = programa.curso(cursoId);
+    final plan = curso?.planDoDia(d.mesCalendario, d.semana, d.dia);
+    if (curso == null || plan == null) return const SizedBox.shrink();
     final mes = nomeDoMes[d.mesCalendario]!.resolve(language);
 
     return Card(
@@ -95,7 +104,8 @@ class TarxetaHoxeNaAula extends StatelessWidget {
                       ),
                       const SizedBox(height: 1),
                       Text(
-                        '$mes · ${isGl ? 'semana' : 'semana'} ${d.semana}',
+                        '$mes · semana ${d.semana} · '
+                        '${curso.etiqueta.resolve(language)}',
                         style: const TextStyle(
                           fontSize: 14.5,
                           fontWeight: FontWeight.bold,
@@ -106,6 +116,14 @@ class TarxetaHoxeNaAula extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            const SizedBox(height: 10),
+            SelectorDeCursoTpr(
+              programa: programa,
+              seleccionado: cursoId,
+              language: language,
+              prefixoClave: 'hoxe_curso',
+              onCambiar: onCambiarCurso,
             ),
             const SizedBox(height: 10),
             PalabrasDoDia(
@@ -125,7 +143,7 @@ class TarxetaHoxeNaAula extends StatelessWidget {
               children: [
                 ElevatedButton.icon(
                   key: const Key('boton_asemblea_de_hoxe'),
-                  onPressed: () => onIniciarAsemblea(d),
+                  onPressed: () => onIniciarAsemblea(d, cursoId),
                   icon: const Icon(Icons.play_arrow_rounded, size: 18),
                   label: Text(
                     isGl
@@ -155,8 +173,8 @@ class TarxetaHoxeNaAula extends StatelessWidget {
                   ),
                   child: Text(
                     isGl
-                        ? 'Ver as ${curso.totalPalabras} palabras'
-                        : 'Ver las ${curso.totalPalabras} palabras',
+                        ? 'Ver as ${_miles(programa.totalPalabras)} palabras'
+                        : 'Ver las ${_miles(programa.totalPalabras)} palabras',
                     style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -169,8 +187,19 @@ class TarxetaHoxeNaAula extends StatelessWidget {
   }
 }
 
-/// Los números del curso, CONTADOS en el contenido: si alguien añade o quita
-/// una palabra, esta hoja lo dice sin que nadie la toque.
+/// 4000 → «4.000», como se escriben los miles en gallego y en castellano.
+String _miles(int n) {
+  final s = '$n';
+  final out = StringBuffer();
+  for (var i = 0; i < s.length; i++) {
+    if (i > 0 && (s.length - i) % 3 == 0) out.write('.');
+    out.write(s[i]);
+  }
+  return out.toString();
+}
+
+/// Los números del trayecto, CONTADOS en el contenido: si alguien añade o
+/// quita una palabra, esta hoja lo dice sin que nadie la toque.
 ///
 /// Sustituye a una hoja con los números escritos a mano —800, 280, 200…— y con
 /// la distribución atribuida al CDI MacArthur-Bates y a Rescorla. El orden de
@@ -178,14 +207,14 @@ class TarxetaHoxeNaAula extends StatelessWidget {
 /// inventarios; los porcentajes y el ritmo son del programa, y la nota de
 /// fuentes, que sale del contenido, lo dice así.
 class ProxeccionDoCurso extends StatelessWidget {
-  final CursoTpr curso;
+  final ProgramaTpr programa;
   final AppLanguage language;
   final ScrollController? scrollController;
   final VoidCallback onPechar;
 
   const ProxeccionDoCurso({
     super.key,
-    required this.curso,
+    required this.programa,
     required this.language,
     required this.onPechar,
     this.scrollController,
@@ -202,14 +231,17 @@ class ProxeccionDoCurso extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
-    final total = curso.totalPalabras;
-    final porCategoria = curso.porCategoria;
-    final ritmo = curso.modelo.ritmoDiario;
+    final total = programa.totalPalabras;
+    final porCategoria = programa.porCategoria;
+    final ritmo = programa.modelo.ritmoDiario;
     const dias = WeeklyTprScheduler.diasConPalabrasNovas;
     final porSemana = ritmo * dias;
-    final semanasPorMes = curso.meses.first.semanas.length;
-    final porMes = curso.meses.first.totalPalabras;
-    final meses = curso.meses.length;
+    final primeiro = programa.cursos.first;
+    final semanasPorMes = primeiro.meses.first.semanas.length;
+    final porMes = primeiro.meses.first.totalPalabras;
+    final meses = primeiro.meses.length;
+    final porCurso = primeiro.totalPalabras;
+    final cursos = programa.cursos.length;
 
     return ListView(
       controller: scrollController,
@@ -228,8 +260,8 @@ class ProxeccionDoCurso extends StatelessWidget {
         const SizedBox(height: 16),
         Text(
           isGl
-              ? 'PROXECCIÓN LÉXICA ANUAL · $total PALABRAS'
-              : 'PROYECCIÓN LÉXICA ANUAL · $total PALABRAS',
+              ? 'PROXECCIÓN LÉXICA · ${_miles(total)} PALABRAS DE 0 A 6 ANOS'
+              : 'PROYECCIÓN LÉXICA · ${_miles(total)} PALABRAS DE 0 A 6 AÑOS',
           style: const TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w800,
@@ -240,8 +272,8 @@ class ProxeccionDoCurso extends StatelessWidget {
         const SizedBox(height: 2),
         Text(
           isGl
-              ? 'Cinco palabras novas cada día, $meses meses'
-              : 'Cinco palabras nuevas cada día, $meses meses',
+              ? 'Cinco palabras novas cada día, $cursos cursos'
+              : 'Cinco palabras nuevas cada día, $cursos cursos',
           style: const TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.bold,
@@ -260,7 +292,7 @@ class ProxeccionDoCurso extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                isGl ? 'O curso en números' : 'El curso en números',
+                isGl ? 'O traxecto en números' : 'El trayecto en números',
                 style: const TextStyle(
                   fontSize: 13.5,
                   fontWeight: FontWeight.bold,
@@ -285,19 +317,43 @@ class ProxeccionDoCurso extends StatelessWidget {
                 '$porSemana × $semanasPorMes semanas = $porMes',
               ),
               _Fila(
-                isGl ? 'O curso:' : 'El curso:',
-                '$porMes × $meses meses = $total palabras',
-                destacado: true,
+                isGl ? 'Cada curso:' : 'Cada curso:',
+                '$porMes × $meses meses = $porCurso palabras',
               ),
               _Fila(
-                'Trimestres:',
-                '${curso.palabrasEnMeses(const [9, 10, 11, 12])} · '
-                    '${curso.palabrasEnMeses(const [1, 2, 3])} · '
-                    '${curso.palabrasEnMeses(const [4, 5, 6])}',
+                isGl ? 'De 0 a 6 anos:' : 'De 0 a 6 años:',
+                isGl
+                    ? '$porCurso × $cursos cursos = ${_miles(total)} palabras, sen repetir ningunha'
+                    : '$porCurso × $cursos cursos = ${_miles(total)} palabras, sin repetir ninguna',
+                destacado: true,
               ),
             ],
           ),
         ),
+        const SizedBox(height: 18),
+        Text(
+          isGl ? 'OS CINCO CURSOS' : 'LOS CINCO CURSOS',
+          style: const TextStyle(
+            fontSize: 11,
+            fontWeight: FontWeight.w800,
+            color: AppTheme.textSecondary,
+            letterSpacing: 0.8,
+          ),
+        ),
+        const SizedBox(height: 8),
+        for (final c in programa.cursos)
+          _Fila(
+            c.etiqueta.resolve(language),
+            isGl
+                ? '${c.totalPalabras} palabras · trimestres '
+                    '${c.palabrasEnMeses(const [9, 10, 11, 12])} · '
+                    '${c.palabrasEnMeses(const [1, 2, 3])} · '
+                    '${c.palabrasEnMeses(const [4, 5, 6])}'
+                : '${c.totalPalabras} palabras · trimestres '
+                    '${c.palabrasEnMeses(const [9, 10, 11, 12])} · '
+                    '${c.palabrasEnMeses(const [1, 2, 3])} · '
+                    '${c.palabrasEnMeses(const [4, 5, 6])}',
+          ),
         const SizedBox(height: 18),
         const Text(
           'REPARTO POR CATEGORÍAS',
@@ -309,10 +365,10 @@ class ProxeccionDoCurso extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 12),
-        for (final (i, c) in curso.modelo.categorias.indexed) ...[
+        for (final (i, c) in programa.modelo.categorias.indexed) ...[
           _Categoria(
             titulo: c.nome.resolve(language),
-            detalle: '${porCategoria[c.clave] ?? 0} palabras · '
+            detalle: '${_miles(porCategoria[c.clave] ?? 0)} palabras · '
                 '${c.descricion.resolve(language)}',
             cor: _cores[i % _cores.length],
             porcentaxe: total == 0 ? 0 : (porCategoria[c.clave] ?? 0) / total,
@@ -321,7 +377,7 @@ class ProxeccionDoCurso extends StatelessWidget {
         ],
         const SizedBox(height: 6),
         Text(
-          curso.modelo.fontes.resolve(language),
+          programa.modelo.fontes.resolve(language),
           key: const Key('proxeccion_fontes'),
           style: const TextStyle(
             fontSize: 11.5,

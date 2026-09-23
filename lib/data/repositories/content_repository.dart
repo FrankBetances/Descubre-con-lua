@@ -878,33 +878,36 @@ class ContentRepository {
     return List.unmodifiable(_curriculo50Meses);
   }
 
-  // --- INGLÉS DO CURSO: CINCO PALABRAS DIARIAS ---
+  // --- INGLÉS: CINCO PALABRAS DIARIAS, CINCO CURSOS ---
 
-  CursoTpr? _cursoTpr;
-  Future<CursoTpr?>? _cargandoCursoTpr;
+  ProgramaTpr? _programaTpr;
+  Future<ProgramaTpr?>? _cargandoProgramaTpr;
 
-  /// El inglés del curso —diez meses de cuatro semanas de veinte palabras—, o
-  /// `null` si no se pudo leer. Se lee una vez y se recuerda.
+  /// El inglés del trayecto —cinco cursos de diez meses de cuatro semanas de
+  /// veinte palabras—, o `null` si no se pudo leer. Se lee una vez.
   ///
   /// Si falla, el fallo queda en [loadErrors] y las tarjetas que lo usan no se
   /// pintan: una tarjeta de «cinco palabras hoy» sin palabras mentiría.
-  Future<CursoTpr?> loadCursoTpr() {
-    final ya = _cursoTpr;
+  Future<ProgramaTpr?> loadProgramaTpr() {
+    final ya = _programaTpr;
     if (ya != null) return Future.value(ya);
-    return _cargandoCursoTpr ??= CursoTpr.cargar(
+    return _cargandoProgramaTpr ??= ProgramaTpr.cargar(
       stringLoader: _loader.loadRawString,
-    ).then<CursoTpr?>((curso) {
-      _cursoTpr = curso;
-      return curso;
+    ).then<ProgramaTpr?>((programa) {
+      _programaTpr = programa;
+      return programa;
     }).catchError((Object e) {
       _loadErrors.add(ContentLoadFailure(CursoTpr.modeloAsset, e.toString()));
-      _cargandoCursoTpr = null;
+      _cargandoProgramaTpr = null;
       return null;
     });
   }
 
-  /// El inglés del curso si ya está leído; `null` si todavía no.
-  CursoTpr? get cursoTprSync => _cursoTpr;
+  /// El trayecto si ya está leído; `null` si todavía no.
+  ProgramaTpr? get programaTprSync => _programaTpr;
+
+  /// El curso de inglés con ese id (`curso_0_2` … `curso_5_6`), si ya está.
+  CursoTpr? cursoTprSync(String cursoId) => _programaTpr?.curso(cursoId);
 
   // --- IN-MEMORY & TEST HELPER METHODS ---
 
@@ -914,9 +917,9 @@ class ContentRepository {
     _isInitialized = true;
   }
 
-  /// Deja el inglés del curso ya leído (para tests).
-  void addCursoTpr(CursoTpr curso) {
-    _cursoTpr = curso;
+  /// Deja el inglés del trayecto ya leído (para tests).
+  void addProgramaTpr(ProgramaTpr programa) {
+    _programaTpr = programa;
   }
 
   /// Adds or updates a [Capsula] directly in memory (for tests and mocking).
@@ -1006,8 +1009,8 @@ class ContentRepository {
     _estrategias.clear();
     _dinamicas.clear();
     _curriculo50Meses.clear();
-    _cursoTpr = null;
-    _cargandoCursoTpr = null;
+    _programaTpr = null;
+    _cargandoProgramaTpr = null;
     _loadErrors.clear();
     _isInitialized = false;
   }

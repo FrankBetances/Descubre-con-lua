@@ -21,7 +21,8 @@ import '../widgets/palabras_do_dia.dart';
 ///
 /// Ofrece ás familias unha experiencia curricular análoga e simétrica á do profesorado:
 /// - 5 cursos escolares diferenciados (0-2, 2-3, 3-4, 4-5, 5-6 anos).
-/// - 10 meses escolares (Setembro a Xuño).
+/// - Seis anos de traxecto: cada curso cos seus dez meses (Setembro a Xuño),
+///   co tema, a rutina e o inglés DESE curso.
 /// - Reixa de calendario escolar mensual de 20 días lectivos (4 semanas x 5 días).
 /// - Selección directa por día, con rutina de 3 min, momento do día, frase de conexión
 ///   coa asemblea de aula e reto TPR oral en inglés con reprodución de son nativo.
@@ -121,8 +122,8 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
 
     // El inglés del curso: las palabras de cada día y los totales de cada
     // trimestre. Aparte y sin esperar: la rutina de casa se pinta igual.
-    if (widget.repository.cursoTprSync == null) {
-      widget.repository.loadCursoTpr().then((_) {
+    if (widget.repository.programaTprSync == null) {
+      widget.repository.loadProgramaTpr().then((_) {
         if (mounted) setState(() {});
       });
     }
@@ -153,10 +154,18 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
     return _diasDoMes.isNotEmpty ? _diasDoMes.first : null;
   }
 
+  /// O mes do curso elixido: o seu tema, a súa rutina e o seu inglés. Antes
+  /// era o mesmo mes xenérico para as cinco idades.
   MesCurricular? get _mesCurricularActual {
-    final meses = _contenido?.meses;
-    if (meses == null || _mesIndex >= meses.length) return null;
-    return meses[_mesIndex];
+    final contenido = _contenido;
+    if (contenido == null) return null;
+    for (final m in contenido.trayecto) {
+      if (m.cursoId == _cursoSeleccionado && m.mesDoCurso == _mesIndex + 1) {
+        return m;
+      }
+    }
+    final meses = contenido.meses;
+    return _mesIndex < meses.length ? meses[_mesIndex] : null;
   }
 
   @override
@@ -258,7 +267,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   _buildTrimesterBar(isGl),
                   const SizedBox(height: 8),
 
-                  // 3. Selector Horizontal dos 10 Meses Lectivos
+                  // 3. Os dez meses do curso elixido
                   SizedBox(
                     height: 38,
                     child: ListView.separated(
@@ -1050,7 +1059,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
 
   Widget _buildTrimesterBar(bool isGl) {
     final trimestreActual = _trimestreActual;
-    final curso = widget.repository.cursoTprSync;
+    final curso = widget.repository.cursoTprSync(_cursoSeleccionado);
 
     return Container(
       padding: const EdgeInsets.all(3),
@@ -1137,7 +1146,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
 
   /// Las palabras inglesas del día elegido, o nada si el curso no está leído.
   List<Widget> _buildPalabrasDoDia(DiaCalendarioDual dia, bool isGl) {
-    final curso = widget.repository.cursoTprSync;
+    final curso = widget.repository.cursoTprSync(_cursoSeleccionado);
     if (curso == null) return const [];
     MesTpr? mes;
     for (final m in curso.meses) {

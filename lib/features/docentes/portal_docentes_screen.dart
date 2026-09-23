@@ -12,11 +12,9 @@ import '../../../data/repositories/content_repository.dart';
 import '../academy/widgets/selector_idioma_widget.dart';
 import '../calendario/views/calendario_screen.dart';
 import '../calendario/widgets/asemblea_do_dia.dart';
-import '../calendario/widgets/palabras_do_dia.dart';
 import '../english/views/english_hub_screen.dart';
 import '../formacion/views/formacion_screen.dart';
 import '../juega/views/unidades_list_screen.dart';
-import '../juega/widgets/aula_ciclo_panel.dart';
 import '../palabras/views/vocabulario_ingles_screen.dart';
 import '../planificador/views/dinamicas_screen.dart';
 import '../planificador/views/estrategias_screen.dart';
@@ -30,7 +28,7 @@ import 'widgets/hoxe_na_aula.dart';
 /// - Cockpit pedagóxico de traballo diario para o profesorado.
 /// - Ritmo de adquisición natural: 5 palabras novas/día e matriz de reforzo acumulativo.
 /// - Asambleas guiadas a 72 bpm, canción a pulso visual, matemáticas temperás.
-/// - Planificador de 10 meses / 50 meses baixo o Decreto 150/2022 e inmersión en inglés L3.
+/// - Planificador curricular baixo o Decreto 150/2022 e inmersión en inglés L3.
 class PortalDocentesScreen extends StatefulWidget {
   final ContentRepository repository;
   final PremiosRepository? premios;
@@ -68,16 +66,20 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     es: 'Recursos pedagógicos para las escuelas infantiles municipales de Vigo. Asambleas de aula a 72 bpm, planificador curricular y estrategias educativas.',
   );
 
-  /// El inglés del curso. La tarjeta de hoy no se pinta hasta que está: una
+  /// El inglés del trayecto. La tarjeta de hoy no se pinta hasta que está: una
   /// tarjeta de «cinco palabras hoy» sin palabras diría algo que no enseña.
-  CursoTpr? get _curso => widget.repository.cursoTprSync;
+  ProgramaTpr? get _programa => widget.repository.programaTprSync;
+
+  /// El grupo cuyas palabras enseña la tarjeta de hoy. Solo mientras la
+  /// pantalla está abierta: la app no guarda nada de un aula.
+  String _cursoHoxe = 'curso_0_2';
 
   @override
   void initState() {
     super.initState();
     _language = widget.currentLanguage;
-    if (widget.repository.cursoTprSync == null) {
-      widget.repository.loadCursoTpr().then((_) {
+    if (widget.repository.programaTprSync == null) {
+      widget.repository.loadProgramaTpr().then((_) {
         if (mounted) setState(() {});
       });
     }
@@ -96,83 +98,29 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     widget.onLanguageChanged?.call(newLang);
   }
 
-  /// «Iniciar asemblea de hoxe»: el día ya está decidido; falta el grupo, que
-  /// el portal no puede saber. Se elige aquí y se abre la asamblea de ESE día
-  /// por el mismo camino que el calendario.
-  void _iniciarAsembleaDeHoxe(BuildContext context, DiaDoCursoTpr hoxe) {
-    final isGl = _language == AppLanguage.gl;
-    final grupos = gruposDaAsembleaDoDia(widget.repository, hoxe.mesCalendario);
-    showModalBottomSheet<void>(
-      context: context,
-      backgroundColor: Colors.white,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-      ),
-      builder: (sheetContext) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                isGl ? 'Para que grupo?' : '¿Para qué grupo?',
-                style: const TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.bold,
-                  color: AppTheme.primaryInk,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                '${nomeDoMes[hoxe.mesCalendario]!.resolve(_language)} · '
-                '${isGl ? 'Semana' : 'Semana'} ${hoxe.semana} · '
-                '${PalabrasDoDia.nomesDosDias[hoxe.dia - 1].resolve(_language)}',
-                style: const TextStyle(
-                  fontSize: 13,
-                  color: AppTheme.textSecondary,
-                ),
-              ),
-              const SizedBox(height: 14),
-              Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: [
-                  for (final g in grupos)
-                    OutlinedButton(
-                      key: ValueKey('hoxe_grupo_${g.clave}'),
-                      onPressed: g.disponible
-                          ? () {
-                              Navigator.of(sheetContext).pop();
-                              abrirAsembleaDoDia(
-                                context,
-                                repo: widget.repository,
-                                grupo: g,
-                                mesCalendario: hoxe.mesCalendario,
-                                semana: hoxe.semana,
-                                dia: hoxe.dia,
-                                language: _language,
-                                audioService: widget.audioService,
-                              );
-                            }
-                          : null,
-                      style: OutlinedButton.styleFrom(
-                        minimumSize: const Size(0, AppTheme.touchMin),
-                        foregroundColor: AppTheme.primaryInk,
-                      ),
-                      child: Text(g.etiqueta.resolve(_language)),
-                    ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+  /// «Iniciar asemblea de hoxe»: la asamblea de ESE día para el grupo del
+  /// curso elegido en la tarjeta, por el mismo camino que el calendario.
+  void _iniciarAsembleaDeHoxe(
+      BuildContext context, DiaDoCursoTpr hoxe, String cursoId) {
+    for (final g
+        in gruposDaAsembleaDoDia(widget.repository, hoxe.mesCalendario)) {
+      if (cursoTprDoGrupo[g.clave] != cursoId || !g.disponible) continue;
+      abrirAsembleaDoDia(
+        context,
+        repo: widget.repository,
+        grupo: g,
+        mesCalendario: hoxe.mesCalendario,
+        semana: hoxe.semana,
+        dia: hoxe.dia,
+        language: _language,
+        audioService: widget.audioService,
+      );
+      return;
+    }
   }
 
-  /// «Ver as 800 palabras»: los números del curso, contados en el contenido.
-  void _mostrarProxeccionAnual(BuildContext context, CursoTpr curso) {
+  /// «Ver as 4.000 palabras»: los números del trayecto, contados.
+  void _mostrarProxeccionAnual(BuildContext context, ProgramaTpr programa) {
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
@@ -186,7 +134,7 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
         maxChildSize: 0.95,
         minChildSize: 0.5,
         builder: (context, scrollController) => ProxeccionDoCurso(
-          curso: curso,
+          programa: programa,
           language: _language,
           scrollController: scrollController,
           onPechar: () => Navigator.of(sheetContext).pop(),
@@ -199,7 +147,7 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isGl = _language == AppLanguage.gl;
-    final curso = _curso;
+    final programa = _programa;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -329,13 +277,16 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
             const SizedBox(height: 16.0),
 
             // Hoxe na aula: las cinco palabras del día que toca, del curso.
-            if (curso != null) ...[
+            if (programa != null) ...[
               TarxetaHoxeNaAula(
-                curso: curso,
+                programa: programa,
+                cursoId: _cursoHoxe,
+                onCambiarCurso: (c) => setState(() => _cursoHoxe = c),
                 language: _language,
                 audioService: widget.audioService,
-                onIniciarAsemblea: (d) => _iniciarAsembleaDeHoxe(context, d),
-                onVerPalabras: () => _mostrarProxeccionAnual(context, curso),
+                onIniciarAsemblea: (d, c) =>
+                    _iniciarAsembleaDeHoxe(context, d, c),
+                onVerPalabras: () => _mostrarProxeccionAnual(context, programa),
               ),
               const SizedBox(height: 18.0),
             ],
@@ -436,19 +387,21 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
             ),
             const SizedBox(height: 10.0),
 
-            // 3. Calendario Curricular de Aula (10 Meses Estruturados)
+            // 3. Calendario Curricular de Aula: os seis anos, curso a curso
             _buildDocenteModuleCard(
               context: context,
               title: isGl
                   ? 'Calendario Escola · Fogar'
                   : 'Calendario Escuela · Hogar',
               description: isGl
-                  ? 'Sincronización curricular dos 10 meses lectivos estructurados por trimestres (Outono, Inverno e Primavera): asambleas na aula e notas de conexión para as familias.'
-                  : 'Sincronización curricular de los 10 meses lectivos estructurados por trimestres (Otoño, Invierno y Primavera): asambleas en el aula y notas de conexión para las familias.',
+                  ? 'O traxecto de 0 a 6 anos, curso a curso: cada curso cos seus meses por trimestres (Outono, Inverno e Primavera), asembleas na aula e notas de conexión para as familias.'
+                  : 'El trayecto de 0 a 6 años, curso a curso: cada curso con sus meses por trimestres (Otoño, Invierno y Primavera), asambleas en el aula y notas de conexión para las familias.',
               icon: Icons.calendar_month_rounded,
               iconColor: const Color(0xFF319795),
               iconBg: const Color(0xFFE6FFFA),
-              badge: isGl ? '10 Meses Lectivos' : '10 Meses Lectivos',
+              badge: isGl
+                  ? 'De 0 a 6 anos · 5 cursos'
+                  : 'De 0 a 6 años · 5 cursos',
               buttonText: isGl ? 'Ver Calendario' : 'Ver Calendario',
               onTap: () {
                 Navigator.of(context).push(
@@ -468,19 +421,17 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
             ),
             const SizedBox(height: 12.0),
 
-            // 4. Planificador Curricular (50 Meses)
+            // 4. Planificador curricular
             _buildDocenteModuleCard(
               context: context,
-              title: isGl
-                  ? 'Planificador Curricular (50 Meses)'
-                  : 'Planificador Curricular (50 Meses)',
+              title: 'Planificador curricular',
               description: isGl
                   ? 'Programación curricular completa dos 5 cursos de Educación Infantil (0 a 6 anos) con obxectivos e actividades baixo o Decreto 150/2022.'
                   : 'Programación curricular completa de los 5 cursos de Educación Infantil (0 a 6 años) con objetivos y actividades bajo el Decreto 150/2022.',
               icon: Icons.calendar_view_month_rounded,
               iconColor: const Color(0xFF2B6CB0),
               iconBg: const Color(0xFFEBF8FF),
-              badge: isGl ? '50 Meses Curriculares' : '50 Meses Curriculares',
+              badge: isGl ? '0-6 anos' : '0-6 años',
               buttonText: isGl ? 'Abrir Planificador' : 'Abrir Planificador',
               onTap: () {
                 Navigator.of(context).push(

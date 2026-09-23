@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.4_5.outubro",
+  "curso": "curso_4_5",
+  "orden": 2,
+  "mesCalendario": 10,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Reflexos rápidos",
+        "es": "Reflejos rápidos"
+      },
+      "palabras": [
+        {
+          "id": "4_5.outubro.s1.signal",
+          "en": "Signal",
+          "gl": "Sinal",
+          "es": "Señal",
+          "tprAction": {
+            "gl": "Levantar a man coma un sinal",
+            "es": "Levantar la mano como una señal"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s1.traffic-game",
+          "en": "Traffic game",
+          "gl": "Xogo do semáforo",
+          "es": "Juego del semáforo",
+          "tprAction": {
+            "gl": "Parar e correr segundo a cor",
+            "es": "Parar y correr según el color"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s1.statue",
+          "en": "Statue",
+          "gl": "Estatua",
+          "es": "Estatua",
+          "tprAction": {
+            "gl": "Quedar quieto coma unha estatua",
+            "es": "Quedarse quieto como una estatua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s1.reaction",
+          "en": "Reaction",
+          "gl": "Reacción",
+          "es": "Reacción",
+          "tprAction": {
+            "gl": "Moverse ao oír unha palmada",
+            "es": "Moverse al oír una palmada"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s1.drumbeat",
+          "en": "Drumbeat",
+          "gl": "Golpe de tambor",
+          "es": "Golpe de tambor",
+          "tprAction": {
+            "gl": "Parar co golpe de tambor",
+            "es": "Parar con el golpe de tambor"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s1.command",
+          "en": "Command",
+          "gl": "Orde",
+          "es": "Orden",
+          "tprAction": {
+            "gl": "Levantar un dedo antes da orde",
+            "es": "Levantar un dedo antes de la orden"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s1.target",
+          "en": "Target",
+          "gl": "Diana",
+          "es": "Diana",
+          "tprAction": {
+            "gl": "Apuntar á diana",
+            "es": "Apuntar a la diana"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s1.freeze-immediately",
+          "en": "Freeze immediately",
+          "gl": "Conxelarse ao momento",
+          "es": "Congelarse al momento",
+          "tprAction": {
+            "gl": "Parar no instante",
+            "es": "Pararse al instante"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s1.react",
+          "en": "React",
+          "gl": "Reaccionar",
+          "es": "Reaccionar",
+          "tprAction": {
+            "gl": "Moverse rápido ao sinal",
+            "es": "Moverse rápido a la señal"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s1.clap-twice",
+          "en": "Clap twice",
+          "gl": "Bater palmas dúas veces",
+          "es": "Dar dos palmadas",
+          "tprAction": {
+            "gl": "Bater dúas palmas",
+            "es": "Dar dos palmadas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s1.switch",
+          "en": "Switch",
+          "gl": "Cambiar de súpeto",
+          "es": "Cambiar de golpe",
+          "tprAction": {
+            "gl": "Cambiar de dirección",
+            "es": "Cambiar de dirección"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s1.dodge",
+          "en": "Dodge",
+          "gl": "Esquivar",
+          "es": "Esquivar",
+          "tprAction": {
+            "gl": "Apartarse dunha pelota branda",
+            "es": "Apartarse de una pelota blanda"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s1.quick-thinking",
+          "en": "Quick-thinking",
+          "gl": "Rápido de mente",
+          "es": "Rápido de mente",
+          "tprAction": {
+            "gl": "Tocar a cabeza e sorrir",
+            "es": "Tocar la cabeza y sonreír"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s1.alert",
+          "en": "Alert",
+          "gl": "Atento",
+          "es": "Alerta",
+          "tprAction": {
+            "gl": "Abrir moito os ollos",
+            "es": "Abrir mucho los ojos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s1.motionless",
+          "en": "Motionless",
+          "gl": "Inmóbil",
+          "es": "Inmóvil",
+          "tprAction": {
+            "gl": "Quedar sen moverse",
+            "es": "Quedarse sin moverse"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s1.sudden",
+          "en": "Sudden",
+          "gl": "Repentino",
+          "es": "Repentino",
+          "tprAction": {
+            "gl": "Parar de súpeto",
+            "es": "Parar de golpe"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s1.when-the-drum-stops-freeze",
+          "en": "When the drum stops, freeze",
+          "gl": "Cando pare o tambor, conxélate",
+          "es": "Cuando pare el tambor, congélate",
+          "tprAction": {
+            "gl": "Bailar e parar co silencio",
+            "es": "Bailar y parar con el silencio"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.outubro.s1.ready-steady-stop",
+          "en": "Ready, steady, stop!",
+          "gl": "Preparados, listos, para!",
+          "es": "¡Preparados, listos, para!",
+          "tprAction": {
+            "gl": "Parar no «para»",
+            "es": "Parar en el «para»"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.outubro.s1.don-t-move-a-muscle",
+          "en": "Don't move a muscle!",
+          "gl": "Non te movas nada!",
+          "es": "¡No te muevas nada!",
+          "tprAction": {
+            "gl": "Quedar coma estatua",
+            "es": "Quedarse como estatua"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.outubro.s1.simon-says-touch-your-nose",
+          "en": "Simon says touch your nose",
+          "gl": "Simón di: toca o nariz",
+          "es": "Simón dice: tócate la nariz",
+          "tprAction": {
+            "gl": "Tocar o nariz só se o di Simón",
+            "es": "Tocar la nariz solo si lo dice Simón"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Corre coma un raposo",
+        "es": "Corre como un zorro"
+      },
+      "palabras": [
+        {
+          "id": "4_5.outubro.s2.fox-cub",
+          "en": "Fox cub",
+          "gl": "Raposiño",
+          "es": "Cachorro de zorro",
+          "tprAction": {
+            "gl": "Correr lixeiro de puntas",
+            "es": "Correr ligero de puntillas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s2.hare",
+          "en": "Hare",
+          "gl": "Lebre",
+          "es": "Liebre",
+          "tprAction": {
+            "gl": "Saltar longo coma unha lebre",
+            "es": "Saltar largo como una liebre"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s2.den",
+          "en": "Den",
+          "gl": "Tobo",
+          "es": "Madriguera",
+          "tprAction": {
+            "gl": "Agacharse nun recuncho",
+            "es": "Agacharse en un rincón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s2.trail",
+          "en": "Trail",
+          "gl": "Pista",
+          "es": "Rastro",
+          "tprAction": {
+            "gl": "Seguir unha liña no chan",
+            "es": "Seguir una línea en el suelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s2.tag-game",
+          "en": "Tag game",
+          "gl": "Xogo de pillar",
+          "es": "Juego de pillar",
+          "tprAction": {
+            "gl": "Tocar un ombro e fuxir",
+            "es": "Tocar un hombro y huir"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s2.hiding-spot",
+          "en": "Hiding spot",
+          "gl": "Agocho",
+          "es": "Escondrijo",
+          "tprAction": {
+            "gl": "Esconderse detrás dunha cadeira",
+            "es": "Esconderse detrás de una silla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s2.relay-race",
+          "en": "Relay race",
+          "gl": "Carreira de relevos",
+          "es": "Carrera de relevos",
+          "tprAction": {
+            "gl": "Pasar o testemuño",
+            "es": "Pasar el testigo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s2.run-like-a-fox",
+          "en": "Run like a fox",
+          "gl": "Correr coma un raposo",
+          "es": "Correr como un zorro",
+          "tprAction": {
+            "gl": "Correr lixeiro e agachado",
+            "es": "Correr ligero y agachado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s2.sneak",
+          "en": "Sneak",
+          "gl": "Andar ás agachadas",
+          "es": "Andar a hurtadillas",
+          "tprAction": {
+            "gl": "Camiñar en silencio agachado",
+            "es": "Caminar en silencio agachado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s2.tag",
+          "en": "Tag",
+          "gl": "Pillar",
+          "es": "Pillar",
+          "tprAction": {
+            "gl": "Tocar o ombro dun amigo",
+            "es": "Tocar el hombro de un amigo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s2.escape",
+          "en": "Escape",
+          "gl": "Fuxir",
+          "es": "Escapar",
+          "tprAction": {
+            "gl": "Correr ao refuxio",
+            "es": "Correr al refugio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s2.pass-the-baton",
+          "en": "Pass the baton",
+          "gl": "Pasar o testemuño",
+          "es": "Pasar el testigo",
+          "tprAction": {
+            "gl": "Dar o pau ao seguinte",
+            "es": "Dar el palo al siguiente"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s2.sly",
+          "en": "Sly",
+          "gl": "Espelido",
+          "es": "Astuto",
+          "tprAction": {
+            "gl": "Poñer cara de pillo",
+            "es": "Poner cara de pillo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s2.nimble-footed",
+          "en": "Nimble-footed",
+          "gl": "De pés áxiles",
+          "es": "De pies ágiles",
+          "tprAction": {
+            "gl": "Mover os pés moi rápido",
+            "es": "Mover los pies muy rápido"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s2.out-of-sight",
+          "en": "Out of sight",
+          "gl": "Fóra da vista",
+          "es": "Fuera de la vista",
+          "tprAction": {
+            "gl": "Taparse detrás das mans",
+            "es": "Taparse detrás de las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s2.fastest",
+          "en": "Fastest",
+          "gl": "O máis rápido",
+          "es": "El más rápido",
+          "tprAction": {
+            "gl": "Correr a toda velocidade",
+            "es": "Correr a toda velocidad"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s2.you-re-it",
+          "en": "You're it!",
+          "gl": "Pílloche!",
+          "es": "¡Te pillé!",
+          "tprAction": {
+            "gl": "Tocar un ombro",
+            "es": "Tocar un hombro"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.outubro.s2.can-you-catch-me",
+          "en": "Can you catch me?",
+          "gl": "Pódesme pillar?",
+          "es": "¿Puedes pillarme?",
+          "tprAction": {
+            "gl": "Correr rindo",
+            "es": "Correr riendo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.outubro.s2.run-to-the-den",
+          "en": "Run to the den!",
+          "gl": "Corre ao tobo!",
+          "es": "¡Corre a la madriguera!",
+          "tprAction": {
+            "gl": "Correr ao recuncho",
+            "es": "Correr al rincón"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.outubro.s2.if-i-touch-you-you-re-it",
+          "en": "If I touch you, you're it",
+          "gl": "Se te toco, pillas ti",
+          "es": "Si te toco, pillas tú",
+          "tprAction": {
+            "gl": "Tocar e cambiar o papel",
+            "es": "Tocar y cambiar el papel"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Equilibrio",
+        "es": "Equilibrio"
+      },
+      "palabras": [
+        {
+          "id": "4_5.outubro.s3.balance-beam",
+          "en": "Balance beam",
+          "gl": "Barra de equilibrio",
+          "es": "Barra de equilibrio",
+          "tprAction": {
+            "gl": "Camiñar pola barra cos brazos abertos",
+            "es": "Caminar por la barra con los brazos abiertos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s3.stepping-stones",
+          "en": "Stepping stones",
+          "gl": "Pedras de paso",
+          "es": "Piedras de paso",
+          "tprAction": {
+            "gl": "Saltar de pedra en pedra",
+            "es": "Saltar de piedra en piedra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s3.tightrope",
+          "en": "Tightrope",
+          "gl": "Corda floxa",
+          "es": "Cuerda floja",
+          "tprAction": {
+            "gl": "Camiñar pola liña cos brazos en cruz",
+            "es": "Caminar por la línea con los brazos en cruz"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s3.beanbag-balance",
+          "en": "Beanbag balance",
+          "gl": "Saquiño na cabeza",
+          "es": "Saquito en la cabeza",
+          "tprAction": {
+            "gl": "Camiñar co saquiño na cabeza",
+            "es": "Caminar con el saquito en la cabeza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s3.flamingo-pose",
+          "en": "Flamingo pose",
+          "gl": "Postura de flamenco",
+          "es": "Postura de flamenco",
+          "tprAction": {
+            "gl": "Suxeitarse nun pé",
+            "es": "Sostenerse en un pie"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s3.wobble-board",
+          "en": "Wobble board",
+          "gl": "Táboa de equilibrio",
+          "es": "Tabla de equilibrio",
+          "tprAction": {
+            "gl": "Balancearse enriba da táboa",
+            "es": "Balancearse encima de la tabla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s3.centre",
+          "en": "Centre",
+          "gl": "Centro",
+          "es": "Centro",
+          "tprAction": {
+            "gl": "Sinalar o centro do corpo",
+            "es": "Señalar el centro del cuerpo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s3.stand-on-one-leg",
+          "en": "Stand on one leg",
+          "gl": "Suxeitarse nun pé",
+          "es": "Sostenerse en un pie",
+          "tprAction": {
+            "gl": "Levantar un pé e contar",
+            "es": "Levantar un pie y contar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s3.wobble-and-hold",
+          "en": "Wobble and hold",
+          "gl": "Bambear e aguantar",
+          "es": "Tambalearse y aguantar",
+          "tprAction": {
+            "gl": "Bambear sen caer",
+            "es": "Tambalearse sin caer"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s3.step-across",
+          "en": "Step across",
+          "gl": "Pasar por riba",
+          "es": "Pasar por encima",
+          "tprAction": {
+            "gl": "Dar un paso longo",
+            "es": "Dar un paso largo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s3.lean-forward",
+          "en": "Lean forward",
+          "gl": "Inclinarse adiante",
+          "es": "Inclinarse hacia delante",
+          "tprAction": {
+            "gl": "Inclinarse coas mans estiradas",
+            "es": "Inclinarse con las manos estiradas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s3.stretch-out-arms",
+          "en": "Stretch out arms",
+          "gl": "Estirar os brazos",
+          "es": "Estirar los brazos",
+          "tprAction": {
+            "gl": "Estirar os brazos en cruz",
+            "es": "Estirar los brazos en cruz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s3.balanced",
+          "en": "Balanced",
+          "gl": "Equilibrado",
+          "es": "Equilibrado",
+          "tprAction": {
+            "gl": "Quedar quieto nun pé",
+            "es": "Quedarse quieto en un pie"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s3.unsteady",
+          "en": "Unsteady",
+          "gl": "Inestable",
+          "es": "Inestable",
+          "tprAction": {
+            "gl": "Bambear e recuperarse",
+            "es": "Tambalearse y recuperarse"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s3.focused",
+          "en": "Focused",
+          "gl": "Concentrado",
+          "es": "Concentrado",
+          "tprAction": {
+            "gl": "Mirar un punto fixo",
+            "es": "Mirar un punto fijo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s3.level",
+          "en": "Level",
+          "gl": "Nivelado",
+          "es": "Nivelado",
+          "tprAction": {
+            "gl": "Poñer os brazos á mesma altura",
+            "es": "Poner los brazos a la misma altura"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s3.look-at-one-spot",
+          "en": "Look at one spot",
+          "gl": "Mira un punto",
+          "es": "Mira un punto",
+          "tprAction": {
+            "gl": "Mirar un punto fixo",
+            "es": "Mirar un punto fijo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.outubro.s3.how-long-can-you-stand",
+          "en": "How long can you stand?",
+          "gl": "Canto aguantas?",
+          "es": "¿Cuánto aguantas?",
+          "tprAction": {
+            "gl": "Contar nun pé",
+            "es": "Contar en un pie"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.outubro.s3.arms-out-like-a-plane",
+          "en": "Arms out like a plane",
+          "gl": "Brazos abertos coma un avión",
+          "es": "Brazos abiertos como un avión",
+          "tprAction": {
+            "gl": "Abrir os brazos",
+            "es": "Abrir los brazos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.outubro.s3.stone-to-stone",
+          "en": "Stone to stone",
+          "gl": "De pedra en pedra",
+          "es": "De piedra en piedra",
+          "tprAction": {
+            "gl": "Saltar dunha a outra",
+            "es": "Saltar de una a otra"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Tempo e ritmo",
+        "es": "Tiempo y ritmo"
+      },
+      "palabras": [
+        {
+          "id": "4_5.outubro.s4.stopwatch",
+          "en": "Stopwatch",
+          "gl": "Cronómetro",
+          "es": "Cronómetro",
+          "tprAction": {
+            "gl": "Premer o botón do cronómetro",
+            "es": "Pulsar el botón del cronómetro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s4.metronome",
+          "en": "Metronome",
+          "gl": "Metrónomo",
+          "es": "Metrónomo",
+          "tprAction": {
+            "gl": "Mover o brazo coma un metrónomo",
+            "es": "Mover el brazo como un metrónomo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s4.clap-pattern",
+          "en": "Clap pattern",
+          "gl": "Serie de palmas",
+          "es": "Serie de palmas",
+          "tprAction": {
+            "gl": "Bater unha serie de palmas",
+            "es": "Dar una serie de palmas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s4.echo-game",
+          "en": "Echo game",
+          "gl": "Xogo do eco",
+          "es": "Juego del eco",
+          "tprAction": {
+            "gl": "Repetir as palmas que se oen",
+            "es": "Repetir las palmas que se oyen"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s4.tempo",
+          "en": "Tempo",
+          "gl": "Tempo musical",
+          "es": "Tempo musical",
+          "tprAction": {
+            "gl": "Bater rápido e despois amodo",
+            "es": "Golpear rápido y luego despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s4.pause",
+          "en": "Pause",
+          "gl": "Pausa",
+          "es": "Pausa",
+          "tprAction": {
+            "gl": "Parar coas mans abertas",
+            "es": "Parar con las manos abiertas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s4.countdown",
+          "en": "Countdown",
+          "gl": "Conta atrás",
+          "es": "Cuenta atrás",
+          "tprAction": {
+            "gl": "Baixar os dedos de cinco a cero",
+            "es": "Bajar los dedos de cinco a cero"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.outubro.s4.keep-the-beat",
+          "en": "Keep the beat",
+          "gl": "Levar o ritmo",
+          "es": "Llevar el ritmo",
+          "tprAction": {
+            "gl": "Bater nas pernas ao ritmo",
+            "es": "Golpear las piernas al ritmo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s4.echo",
+          "en": "Echo",
+          "gl": "Repetir coma o eco",
+          "es": "Repetir como el eco",
+          "tprAction": {
+            "gl": "Repetir o son que se oe",
+            "es": "Repetir el sonido que se oye"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s4.speed-up-and-slow-down",
+          "en": "Speed up and slow down",
+          "gl": "Acelerar e frear",
+          "es": "Acelerar y frenar",
+          "tprAction": {
+            "gl": "Bater máis rápido e máis amodo",
+            "es": "Golpear más rápido y más despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s4.count-down",
+          "en": "Count down",
+          "gl": "Contar cara atrás",
+          "es": "Contar hacia atrás",
+          "tprAction": {
+            "gl": "Contar de cinco a un cos dedos",
+            "es": "Contar de cinco a uno con los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s4.tap-the-rhythm",
+          "en": "Tap the rhythm",
+          "gl": "Marcar o ritmo",
+          "es": "Marcar el ritmo",
+          "tprAction": {
+            "gl": "Dar golpiños coa man",
+            "es": "Dar golpecitos con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.outubro.s4.rhythmic",
+          "en": "Rhythmic",
+          "gl": "Rítmico",
+          "es": "Rítmico",
+          "tprAction": {
+            "gl": "Mover a cabeza ao ritmo",
+            "es": "Mover la cabeza al ritmo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s4.steady-beat",
+          "en": "Steady beat",
+          "gl": "Pulso constante",
+          "es": "Pulso constante",
+          "tprAction": {
+            "gl": "Bater igual todo o tempo",
+            "es": "Golpear igual todo el tiempo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s4.faster",
+          "en": "Faster",
+          "gl": "Máis rápido",
+          "es": "Más rápido",
+          "tprAction": {
+            "gl": "Bater máis rápido",
+            "es": "Golpear más rápido"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s4.slower",
+          "en": "Slower",
+          "gl": "Máis amodo",
+          "es": "Más despacio",
+          "tprAction": {
+            "gl": "Bater máis amodo",
+            "es": "Golpear más despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.outubro.s4.clap-after-me",
+          "en": "Clap after me",
+          "gl": "Bate palmas despois de min",
+          "es": "Da palmas después de mí",
+          "tprAction": {
+            "gl": "Repetir as palmas",
+            "es": "Repetir las palmas"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.outubro.s4.five-four-three-two-one",
+          "en": "Five, four, three, two, one!",
+          "gl": "Cinco, catro, tres, dous, un!",
+          "es": "¡Cinco, cuatro, tres, dos, uno!",
+          "tprAction": {
+            "gl": "Baixar os dedos",
+            "es": "Bajar los dedos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.outubro.s4.first-slow-then-fast",
+          "en": "First slow, then fast",
+          "gl": "Primeiro amodo, despois rápido",
+          "es": "Primero despacio, luego rápido",
+          "tprAction": {
+            "gl": "Bater amodo e logo rápido",
+            "es": "Golpear despacio y luego rápido"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.outubro.s4.clap-clap-stamp",
+          "en": "Clap, clap, stamp!",
+          "gl": "Palma, palma, pisada!",
+          "es": "¡Palma, palma, pisada!",
+          "tprAction": {
+            "gl": "Bater dúas palmas e pisar",
+            "es": "Dar dos palmas y pisar"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

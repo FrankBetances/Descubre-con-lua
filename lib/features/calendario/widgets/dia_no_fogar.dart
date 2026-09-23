@@ -85,8 +85,8 @@ class _DiaNoFogarState extends State<DiaNoFogar> {
     // Las palabras inglesas del día —las mismas que ve la docente ese día—
     // se leen APARTE y sin esperar: la rutina de casa no puede quedarse sin
     // pintar porque el inglés tarde o falle.
-    if (widget.repository.cursoTprSync == null) {
-      widget.repository.loadCursoTpr().then((_) {
+    if (widget.repository.programaTprSync == null) {
+      widget.repository.loadProgramaTpr().then((_) {
         if (mounted) setState(() {});
       });
     }
@@ -100,7 +100,8 @@ class _DiaNoFogarState extends State<DiaNoFogar> {
   /// El plan de palabras del día elegido, o `null` si el curso no se leyó.
   ({DailyTprPlan plan, DiaDoModeloTpr? modelo, SemanaTpr semana})?
       get _palabras {
-    final curso = widget.repository.cursoTprSync;
+    // As palabras do curso DESTA crianza: as de 0-2 non son as de 5-6.
+    final curso = widget.repository.cursoTprSync(widget.cursoId);
     if (curso == null) return null;
     MesTpr? mes;
     for (final m in curso.meses) {

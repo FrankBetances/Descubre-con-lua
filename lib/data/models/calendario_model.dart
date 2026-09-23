@@ -87,11 +87,17 @@ class MesCurricular {
 
   final InglesDelMes ingles;
 
+  /// El curso de este mes en el trayecto 0-6 (`curso_0_2` … `curso_5_6`), o
+  /// `null` en el catálogo de diez meses de `meses.json`, que no es de ningún
+  /// curso en concreto.
+  final String? cursoId;
+
   const MesCurricular({
     required this.orden,
     required this.mesCalendario,
     required this.icono,
     this.unidadId,
+    this.cursoId,
     required this.nombreMes,
     required this.centroInteres,
     required this.objetivoPedagogico,
@@ -114,6 +120,56 @@ class MesCurricular {
       unidadId: (json['unidad'] as String?)?.trim().isEmpty ?? true
           ? null
           : (json['unidad'] as String).trim(),
+      nombreMes: texto('nombreMes'),
+      centroInteres: texto('centroInteres'),
+      objetivoPedagogico: texto('objetivoPedagogico'),
+      actividadAula: texto('actividadAula'),
+      actividadHogar: texto('actividadHogar'),
+      rutinaRecomendadaHogar: texto('rutinaRecomendadaHogar'),
+      minutosSugeridos: (json['minutosSugeridos'] as num).toInt(),
+      ingles: InglesDelMes.fromJson(
+        Map<String, dynamic>.from(json['ingles'] as Map),
+      ),
+    );
+  }
+
+  /// El mes dentro de su curso, de 1 (septiembre) a 10 (junio). En el
+  /// trayecto el [orden] va de 1 a 50; la tarjeta, sus colores y su dibujo son
+  /// los del mes, no los del puesto en el trayecto.
+  int get mesDoCurso => cursoId == null ? orden : ((orden - 1) % 10) + 1;
+
+  /// La edad del curso de este mes, para la tarjeta; `null` fuera del trayecto.
+  LocalizedString? get etiquetaCurso => etiquetasDosCursos[cursoId];
+
+  /// Las edades de los cinco cursos del trayecto.
+  static const Map<String, LocalizedString> etiquetasDosCursos = {
+    'curso_0_2': LocalizedString(gl: '0-2 anos', es: '0-2 años'),
+    'curso_2_3': LocalizedString(gl: '2-3 anos', es: '2-3 años'),
+    'curso_3_4': LocalizedString(gl: '3-4 anos', es: '3-4 años'),
+    'curso_4_5': LocalizedString(gl: '4-5 anos', es: '4-5 años'),
+    'curso_5_6': LocalizedString(gl: '5-6 anos', es: '5-6 años'),
+  };
+
+  /// Un mes del currículo de un curso, vestido de mes del calendario.
+  ///
+  /// El tema, las actividades, la rutina y el inglés son los de ESE curso; el
+  /// icono y la unidad de aula, los del mes de [base], que sí están en el set
+  /// propio de iconos. [orden] es la posición en el trayecto: 1 es septiembre
+  /// de 0-2 años y 50 es junio de 5-6.
+  factory MesCurricular.doCurriculo(
+    Map<String, dynamic> json, {
+    required MesCurricular base,
+    required int orden,
+  }) {
+    LocalizedString texto(String clave) => LocalizedString.fromJson(
+          Map<String, dynamic>.from(json[clave] as Map),
+        );
+    return MesCurricular(
+      orden: orden,
+      mesCalendario: base.mesCalendario,
+      icono: base.icono,
+      unidadId: base.unidadId,
+      cursoId: json['cursoId'] as String,
       nombreMes: texto('nombreMes'),
       centroInteres: texto('centroInteres'),
       objetivoPedagogico: texto('objetivoPedagogico'),

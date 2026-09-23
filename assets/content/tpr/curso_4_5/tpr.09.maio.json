@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.4_5.maio",
+  "curso": "curso_4_5",
+  "orden": 9,
+  "mesCalendario": 5,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Flota ou afunde?",
+        "es": "¿Flota o se hunde?"
+      },
+      "palabras": [
+        {
+          "id": "4_5.maio.s1.cork",
+          "en": "Cork",
+          "gl": "Cortiza",
+          "es": "Corcho",
+          "tprAction": {
+            "gl": "Botar unha cortiza e mirala flotar",
+            "es": "Echar un corcho y mirarlo flotar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s1.marble",
+          "en": "Marble",
+          "gl": "Canica",
+          "es": "Canica",
+          "tprAction": {
+            "gl": "Deixar caer unha canica",
+            "es": "Dejar caer una canica"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s1.feather-boat",
+          "en": "Feather boat",
+          "gl": "Barco de papel",
+          "es": "Barco de papel",
+          "tprAction": {
+            "gl": "Dobrar un barco de papel",
+            "es": "Doblar un barco de papel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s1.tank",
+          "en": "Tank",
+          "gl": "Tanque de auga",
+          "es": "Tanque de agua",
+          "tprAction": {
+            "gl": "Sinalar o tanque",
+            "es": "Señalar el tanque"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s1.prediction",
+          "en": "Prediction",
+          "gl": "Predición",
+          "es": "Predicción",
+          "tprAction": {
+            "gl": "Tocar a cabeza pensando",
+            "es": "Tocar la cabeza pensando"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s1.result",
+          "en": "Result",
+          "gl": "Resultado",
+          "es": "Resultado",
+          "tprAction": {
+            "gl": "Amosar o resultado cos dedos",
+            "es": "Enseñar el resultado con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s1.chart",
+          "en": "Chart",
+          "gl": "Táboa",
+          "es": "Tabla",
+          "tprAction": {
+            "gl": "Marcar un sinal nunha táboa",
+            "es": "Marcar una señal en una tabla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s1.sink-down",
+          "en": "Sink down",
+          "gl": "Afundirse",
+          "es": "Hundirse",
+          "tprAction": {
+            "gl": "Baixar amodo ata o chan",
+            "es": "Bajar despacio hasta el suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s1.float-on-top",
+          "en": "Float on top",
+          "gl": "Flotar enriba",
+          "es": "Flotar arriba",
+          "tprAction": {
+            "gl": "Quedar arriba cos brazos abertos",
+            "es": "Quedarse arriba con los brazos abiertos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s1.drop-a-stone",
+          "en": "Drop a stone",
+          "gl": "Deixar caer unha pedra",
+          "es": "Dejar caer una piedra",
+          "tprAction": {
+            "gl": "Soltar a pedra e mirar",
+            "es": "Soltar la piedra y mirar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s1.test",
+          "en": "Test",
+          "gl": "Probar",
+          "es": "Probar",
+          "tprAction": {
+            "gl": "Probar un obxecto na auga",
+            "es": "Probar un objeto en el agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s1.record",
+          "en": "Record",
+          "gl": "Anotar",
+          "es": "Anotar",
+          "tprAction": {
+            "gl": "Facer unha marca na táboa",
+            "es": "Hacer una marca en la tabla"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s1.buoyant",
+          "en": "Buoyant",
+          "gl": "Que flota",
+          "es": "Que flota",
+          "tprAction": {
+            "gl": "Subir as mans amodo",
+            "es": "Subir las manos despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s1.waterlogged",
+          "en": "Waterlogged",
+          "gl": "Empapado",
+          "es": "Empapado",
+          "tprAction": {
+            "gl": "Baixar o corpo pesado",
+            "es": "Bajar el cuerpo pesado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s1.heavier-than-water",
+          "en": "Heavier than water",
+          "gl": "Máis pesado ca a auga",
+          "es": "Más pesado que el agua",
+          "tprAction": {
+            "gl": "Baixar a man",
+            "es": "Bajar la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s1.lighter-than-water",
+          "en": "Lighter than water",
+          "gl": "Máis lixeiro ca a auga",
+          "es": "Más ligero que el agua",
+          "tprAction": {
+            "gl": "Subir a man",
+            "es": "Subir la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s1.does-it-float-or-sink",
+          "en": "Does it float or sink?",
+          "gl": "Flota ou afunde?",
+          "es": "¿Flota o se hunde?",
+          "tprAction": {
+            "gl": "Sinalar arriba ou abaixo",
+            "es": "Señalar arriba o abajo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.maio.s1.i-think-it-will-sink",
+          "en": "I think it will sink",
+          "gl": "Creo que se afundirá",
+          "es": "Creo que se hundirá",
+          "tprAction": {
+            "gl": "Baixar a man pensando",
+            "es": "Bajar la mano pensando"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.maio.s1.it-floats-because-it-s-light",
+          "en": "It floats because it's light",
+          "gl": "Flota porque é lixeiro",
+          "es": "Flota porque es ligero",
+          "tprAction": {
+            "gl": "Subir as mans",
+            "es": "Subir las manos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.maio.s1.the-stone-sinks-but-the-cork-floats",
+          "en": "The stone sinks, but the cork floats",
+          "gl": "A pedra afúndese, pero a cortiza flota",
+          "es": "La piedra se hunde, pero el corcho flota",
+          "tprAction": {
+            "gl": "Baixar unha man e subir a outra",
+            "es": "Bajar una mano y subir la otra"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Auga en movemento",
+        "es": "Agua en movimiento"
+      },
+      "palabras": [
+        {
+          "id": "4_5.maio.s2.stream",
+          "en": "Stream",
+          "gl": "Regato",
+          "es": "Arroyo",
+          "tprAction": {
+            "gl": "Mover a man en ondas pequenas",
+            "es": "Mover la mano en olas pequeñas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s2.waterfall",
+          "en": "Waterfall",
+          "gl": "Fervenza",
+          "es": "Cascada",
+          "tprAction": {
+            "gl": "Baixar os brazos de golpe",
+            "es": "Bajar los brazos de golpe"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s2.dam",
+          "en": "Dam",
+          "gl": "Presa",
+          "es": "Presa",
+          "tprAction": {
+            "gl": "Poñer as mans coma un muro",
+            "es": "Poner las manos como un muro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s2.channel",
+          "en": "Channel",
+          "gl": "Canle",
+          "es": "Canal",
+          "tprAction": {
+            "gl": "Facer unha canle coas mans",
+            "es": "Hacer un canal con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s2.current",
+          "en": "Current",
+          "gl": "Corrente",
+          "es": "Corriente",
+          "tprAction": {
+            "gl": "Moverse levado polo aire",
+            "es": "Moverse llevado por el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s2.paper-boat-race",
+          "en": "Paper boat race",
+          "gl": "Carreira de barcos de papel",
+          "es": "Carrera de barcos de papel",
+          "tprAction": {
+            "gl": "Soprar un barco de papel",
+            "es": "Soplar un barco de papel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s2.water-pipe",
+          "en": "Water pipe",
+          "gl": "Cano",
+          "es": "Tubería",
+          "tprAction": {
+            "gl": "Facer un tubo cos brazos",
+            "es": "Hacer un tubo con los brazos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s2.flow",
+          "en": "Flow",
+          "gl": "Fluír",
+          "es": "Fluir",
+          "tprAction": {
+            "gl": "Mover as mans suaves",
+            "es": "Mover las manos suaves"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s2.block-the-water",
+          "en": "Block the water",
+          "gl": "Parar a auga",
+          "es": "Parar el agua",
+          "tprAction": {
+            "gl": "Poñer as mans diante",
+            "es": "Poner las manos delante"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s2.splash-down",
+          "en": "Splash down",
+          "gl": "Caer salpicando",
+          "es": "Caer salpicando",
+          "tprAction": {
+            "gl": "Baixar as mans e abrilas",
+            "es": "Bajar las manos y abrirlas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s2.blow-the-boat",
+          "en": "Blow the boat",
+          "gl": "Soprar o barco",
+          "es": "Soplar el barco",
+          "tprAction": {
+            "gl": "Soprar forte",
+            "es": "Soplar fuerte"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s2.drain-away",
+          "en": "Drain away",
+          "gl": "Escorrer",
+          "es": "Escurrirse",
+          "tprAction": {
+            "gl": "Abrir as mans cara abaixo",
+            "es": "Abrir las manos hacia abajo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s2.rushing",
+          "en": "Rushing",
+          "gl": "Rápido e forte",
+          "es": "Rápido y fuerte",
+          "tprAction": {
+            "gl": "Mover as mans moi rápido",
+            "es": "Mover las manos muy rápido"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s2.trickling",
+          "en": "Trickling",
+          "gl": "Pingando",
+          "es": "Goteando",
+          "tprAction": {
+            "gl": "Mover un dedo amodo",
+            "es": "Mover un dedo despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s2.downstream",
+          "en": "Downstream",
+          "gl": "Río abaixo",
+          "es": "Río abajo",
+          "tprAction": {
+            "gl": "Mover a man cara abaixo",
+            "es": "Mover la mano hacia abajo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s2.upstream",
+          "en": "Upstream",
+          "gl": "Río arriba",
+          "es": "Río arriba",
+          "tprAction": {
+            "gl": "Mover a man cara arriba con esforzo",
+            "es": "Mover la mano hacia arriba con esfuerzo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s2.which-boat-is-faster",
+          "en": "Which boat is faster?",
+          "gl": "Que barco é máis rápido?",
+          "es": "¿Qué barco es más rápido?",
+          "tprAction": {
+            "gl": "Soprar e comparar",
+            "es": "Soplar y comparar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.maio.s2.blow-harder",
+          "en": "Blow harder!",
+          "gl": "Sopra máis forte!",
+          "es": "¡Sopla más fuerte!",
+          "tprAction": {
+            "gl": "Soprar con forza",
+            "es": "Soplar con fuerza"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.maio.s2.water-always-flows-downhill",
+          "en": "Water always flows downhill",
+          "gl": "A auga sempre baixa",
+          "es": "El agua siempre baja",
+          "tprAction": {
+            "gl": "Mover as mans de arriba abaixo",
+            "es": "Mover las manos de arriba abajo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.maio.s2.ready-set-blow",
+          "en": "Ready, set, blow!",
+          "gl": "Preparados, listos, sopra!",
+          "es": "¡Preparados, listos, sopla!",
+          "tprAction": {
+            "gl": "Soprar ao sinal",
+            "es": "Soplar a la señal"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Choiva e sol, arco da vella",
+        "es": "Lluvia y sol, arcoíris"
+      },
+      "palabras": [
+        {
+          "id": "4_5.maio.s3.water-cycle",
+          "en": "Water cycle",
+          "gl": "Ciclo da auga",
+          "es": "Ciclo del agua",
+          "tprAction": {
+            "gl": "Facer un círculo co dedo",
+            "es": "Hacer un círculo con el dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s3.steam",
+          "en": "Steam",
+          "gl": "Vapor",
+          "es": "Vapor",
+          "tprAction": {
+            "gl": "Subir os dedos coma vapor",
+            "es": "Subir los dedos como vapor"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s3.evaporation",
+          "en": "Evaporation",
+          "gl": "Evaporación",
+          "es": "Evaporación",
+          "tprAction": {
+            "gl": "Subir amodo as mans",
+            "es": "Subir despacio las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s3.rain-gauge",
+          "en": "Rain gauge",
+          "gl": "Pluviómetro",
+          "es": "Pluviómetro",
+          "tprAction": {
+            "gl": "Encher un vaso de choiva",
+            "es": "Llenar un vaso de lluvia"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s3.prism",
+          "en": "Prism",
+          "gl": "Prisma",
+          "es": "Prisma",
+          "tprAction": {
+            "gl": "Mirar a luz nun cristal",
+            "es": "Mirar la luz en un cristal"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s3.weather-station",
+          "en": "Weather station",
+          "gl": "Estación do tempo",
+          "es": "Estación meteorológica",
+          "tprAction": {
+            "gl": "Sinalar o sol, a choiva e o vento",
+            "es": "Señalar el sol, la lluvia y el viento"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s3.droplet",
+          "en": "Droplet",
+          "gl": "Pinguiña",
+          "es": "Gotita",
+          "tprAction": {
+            "gl": "Tocar a man cun dedo",
+            "es": "Tocar la mano con un dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s3.evaporate",
+          "en": "Evaporate",
+          "gl": "Evaporarse",
+          "es": "Evaporarse",
+          "tprAction": {
+            "gl": "Subir amodo coma vapor",
+            "es": "Subir despacio como vapor"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s3.condense",
+          "en": "Condense",
+          "gl": "Condensarse",
+          "es": "Condensarse",
+          "tprAction": {
+            "gl": "Xuntar as mans en nube",
+            "es": "Juntar las manos en nube"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s3.fall-as-rain",
+          "en": "Fall as rain",
+          "gl": "Caer en choiva",
+          "es": "Caer en lluvia",
+          "tprAction": {
+            "gl": "Baixar os dedos",
+            "es": "Bajar los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s3.collect-rain",
+          "en": "Collect rain",
+          "gl": "Recoller choiva",
+          "es": "Recoger lluvia",
+          "tprAction": {
+            "gl": "Poñer un vaso fóra",
+            "es": "Poner un vaso fuera"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s3.refract",
+          "en": "Refract",
+          "gl": "Separar a luz",
+          "es": "Separar la luz",
+          "tprAction": {
+            "gl": "Abrir a man en abano",
+            "es": "Abrir la mano en abanico"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s3.rainy-season",
+          "en": "Rainy season",
+          "gl": "De choivas",
+          "es": "Lluvioso",
+          "tprAction": {
+            "gl": "Mover os dedos coma choiva",
+            "es": "Mover los dedos como lluvia"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s3.humid",
+          "en": "Humid",
+          "gl": "Húmido",
+          "es": "Húmedo",
+          "tprAction": {
+            "gl": "Abanarse",
+            "es": "Abanicarse"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s3.colour-striped",
+          "en": "Colour-striped",
+          "gl": "De raias de cores",
+          "es": "De rayas de colores",
+          "tprAction": {
+            "gl": "Debuxar un arco de cores",
+            "es": "Dibujar un arco de colores"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s3.sun-and-rain-together",
+          "en": "Sun and rain together",
+          "gl": "Sol e choiva á vez",
+          "es": "Sol y lluvia a la vez",
+          "tprAction": {
+            "gl": "Abrir unha man e mover a outra",
+            "es": "Abrir una mano y mover la otra"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s3.where-does-rain-come-from",
+          "en": "Where does rain come from?",
+          "gl": "De onde vén a choiva?",
+          "es": "¿De dónde viene la lluvia?",
+          "tprAction": {
+            "gl": "Sinalar as nubes",
+            "es": "Señalar las nubes"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.maio.s3.when-the-sun-shines-through-the-rain-we-see-a-rainbow",
+          "en": "When the sun shines through the rain, we see a rainbow",
+          "gl": "Cando o sol brilla na choiva, vemos o arco da vella",
+          "es": "Cuando el sol brilla en la lluvia, vemos el arcoíris",
+          "tprAction": {
+            "gl": "Debuxar un arco",
+            "es": "Dibujar un arco"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.maio.s3.up-as-steam-down-as-rain",
+          "en": "Up as steam, down as rain",
+          "gl": "Sobe como vapor, baixa como choiva",
+          "es": "Sube como vapor, baja como lluvia",
+          "tprAction": {
+            "gl": "Subir e baixar as mans",
+            "es": "Subir y bajar las manos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.maio.s3.look-a-rainbow",
+          "en": "Look, a rainbow!",
+          "gl": "Mira, un arco da vella!",
+          "es": "¡Mira, un arcoíris!",
+          "tprAction": {
+            "gl": "Sinalar o ceo",
+            "es": "Señalar el cielo"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Río e mar",
+        "es": "Río y mar"
+      },
+      "palabras": [
+        {
+          "id": "4_5.maio.s4.river-mouth",
+          "en": "River mouth",
+          "gl": "Desembocadura",
+          "es": "Desembocadura",
+          "tprAction": {
+            "gl": "Abrir as mans ao chegar ao mar",
+            "es": "Abrir las manos al llegar al mar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s4.estuary",
+          "en": "Estuary",
+          "gl": "Ría",
+          "es": "Ría",
+          "tprAction": {
+            "gl": "Debuxar a ría co dedo",
+            "es": "Dibujar la ría con el dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s4.riverbank",
+          "en": "Riverbank",
+          "gl": "Beira do río",
+          "es": "Orilla del río",
+          "tprAction": {
+            "gl": "Sentarse na beira",
+            "es": "Sentarse en la orilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s4.fresh-water",
+          "en": "Fresh water",
+          "gl": "Auga doce",
+          "es": "Agua dulce",
+          "tprAction": {
+            "gl": "Beber de mentira",
+            "es": "Beber de mentira"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s4.salt-water",
+          "en": "Salt water",
+          "gl": "Auga salgada",
+          "es": "Agua salada",
+          "tprAction": {
+            "gl": "Poñer cara de salgado",
+            "es": "Poner cara de salado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s4.otter",
+          "en": "Otter",
+          "gl": "Lontra",
+          "es": "Nutria",
+          "tprAction": {
+            "gl": "Nadar de costas coas mans na barriga",
+            "es": "Nadar de espaldas con las manos en la barriga"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s4.heron",
+          "en": "Heron",
+          "gl": "Garza",
+          "es": "Garza",
+          "tprAction": {
+            "gl": "Suxeitarse nun pé quieto",
+            "es": "Sostenerse en un pie quieto"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.maio.s4.paddle-across",
+          "en": "Paddle across",
+          "gl": "Remar ao outro lado",
+          "es": "Remar al otro lado",
+          "tprAction": {
+            "gl": "Remar cara adiante",
+            "es": "Remar hacia delante"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s4.meet-the-sea",
+          "en": "Meet the sea",
+          "gl": "Chegar ao mar",
+          "es": "Llegar al mar",
+          "tprAction": {
+            "gl": "Xuntar as mans",
+            "es": "Juntar las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s4.wade-in",
+          "en": "Wade in",
+          "gl": "Entrar camiñando na auga",
+          "es": "Entrar caminando en el agua",
+          "tprAction": {
+            "gl": "Levantar os xeonllos",
+            "es": "Levantar las rodillas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s4.stand-like-a-heron",
+          "en": "Stand like a heron",
+          "gl": "Quedar coma unha garza",
+          "es": "Quedarse como una garza",
+          "tprAction": {
+            "gl": "Suxeitarse nun pé",
+            "es": "Sostenerse en un pie"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s4.float-on-your-back",
+          "en": "Float on your back",
+          "gl": "Flotar de costas",
+          "es": "Flotar boca arriba",
+          "tprAction": {
+            "gl": "Deitarse cos brazos abertos",
+            "es": "Tumbarse con los brazos abiertos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.maio.s4.brackish",
+          "en": "Brackish",
+          "gl": "Salobre",
+          "es": "Salobre",
+          "tprAction": {
+            "gl": "Probar e dubidar",
+            "es": "Probar y dudar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s4.winding",
+          "en": "Winding",
+          "gl": "Serpenteante",
+          "es": "Serpenteante",
+          "tprAction": {
+            "gl": "Mover a man en zigzag",
+            "es": "Mover la mano en zigzag"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s4.muddy-bank",
+          "en": "Muddy bank",
+          "gl": "Beira lamacenta",
+          "es": "Orilla embarrada",
+          "tprAction": {
+            "gl": "Pisar con coidado",
+            "es": "Pisar con cuidado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s4.tidal",
+          "en": "Tidal",
+          "gl": "De marea",
+          "es": "De marea",
+          "tprAction": {
+            "gl": "Mover a man adiante e atrás",
+            "es": "Mover la mano adelante y atrás"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.maio.s4.where-does-the-river-go",
+          "en": "Where does the river go?",
+          "gl": "Onde vai o río?",
+          "es": "¿Adónde va el río?",
+          "tprAction": {
+            "gl": "Seguir co dedo",
+            "es": "Seguir con el dedo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.maio.s4.the-river-runs-into-the-sea",
+          "en": "The river runs into the sea",
+          "gl": "O río desemboca no mar",
+          "es": "El río desemboca en el mar",
+          "tprAction": {
+            "gl": "Mover a man ata abrila",
+            "es": "Mover la mano hasta abrirla"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.maio.s4.shh-a-heron",
+          "en": "Shh, a heron!",
+          "gl": "Shh, unha garza!",
+          "es": "¡Shh, una garza!",
+          "tprAction": {
+            "gl": "Poñer o dedo nos beizos",
+            "es": "Poner el dedo en los labios"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.maio.s4.float-like-an-otter",
+          "en": "Float like an otter",
+          "gl": "Flota coma unha lontra",
+          "es": "Flota como una nutria",
+          "tprAction": {
+            "gl": "Deitarse e flotar",
+            "es": "Tumbarse y flotar"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

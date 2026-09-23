@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.5_6.maio",
+  "curso": "curso_5_6",
+  "orden": 9,
+  "mesCalendario": 5,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Sentimentos",
+        "es": "Sentimientos"
+      },
+      "palabras": [
+        {
+          "id": "5_6.maio.s1.emotion",
+          "en": "Emotion",
+          "gl": "Emoción",
+          "es": "Emoción",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s1.mood",
+          "en": "Mood",
+          "gl": "Estado de ánimo",
+          "es": "Estado de ánimo",
+          "tprAction": {
+            "gl": "Mover a man arriba e abaixo",
+            "es": "Mover la mano arriba y abajo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s1.mood-meter",
+          "en": "Mood meter",
+          "gl": "Termómetro das emocións",
+          "es": "Termómetro de las emociones",
+          "tprAction": {
+            "gl": "Subir e baixar o brazo",
+            "es": "Subir y bajar el brazo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s1.face-card",
+          "en": "Face card",
+          "gl": "Tarxeta de caras",
+          "es": "Tarjeta de caras",
+          "tprAction": {
+            "gl": "Amosar unha cara",
+            "es": "Enseñar una cara"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s1.worry-doll",
+          "en": "Worry doll",
+          "gl": "Boneca quitapesares",
+          "es": "Muñeca quitapenas",
+          "tprAction": {
+            "gl": "Susurrar a unha boneca",
+            "es": "Susurrar a una muñeca"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s1.calm-jar",
+          "en": "Calm jar",
+          "gl": "Bote da calma",
+          "es": "Bote de la calma",
+          "tprAction": {
+            "gl": "Axitar e mirar como baixa",
+            "es": "Agitar y mirar cómo baja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s1.breathing-buddy",
+          "en": "Breathing buddy",
+          "gl": "Compañeiro de respiración",
+          "es": "Compañero de respiración",
+          "tprAction": {
+            "gl": "Poñer un peluche na barriga",
+            "es": "Poner un peluche en la barriga"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s1.name-a-feeling",
+          "en": "Name a feeling",
+          "gl": "Nomear un sentimento",
+          "es": "Nombrar un sentimiento",
+          "tprAction": {
+            "gl": "Sinalar unha cara",
+            "es": "Señalar una cara"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s1.breathe-calmly",
+          "en": "Breathe calmly",
+          "gl": "Respirar tranquilo",
+          "es": "Respirar tranquilo",
+          "tprAction": {
+            "gl": "Inspirar e expirar amodo",
+            "es": "Inspirar y espirar despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s1.talk-it-through",
+          "en": "Talk it through",
+          "gl": "Falalo",
+          "es": "Hablarlo",
+          "tprAction": {
+            "gl": "Falar cun amigo",
+            "es": "Hablar con un amigo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s1.show-you-care",
+          "en": "Show you care",
+          "gl": "Amosar que che importa",
+          "es": "Mostrar que te importa",
+          "tprAction": {
+            "gl": "Abrazar suave",
+            "es": "Abrazar suave"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s1.watch-the-glitter-settle",
+          "en": "Watch the glitter settle",
+          "gl": "Ver baixar a purpurina",
+          "es": "Ver bajar la purpurina",
+          "tprAction": {
+            "gl": "Axitar e agardar",
+            "es": "Agitar y esperar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s1.content-feeling",
+          "en": "Content feeling",
+          "gl": "Satisfeito",
+          "es": "Satisfecho",
+          "tprAction": {
+            "gl": "Sorrir tranquilo",
+            "es": "Sonreír tranquilo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s1.overwhelmed",
+          "en": "Overwhelmed",
+          "gl": "Desbordado",
+          "es": "Abrumado",
+          "tprAction": {
+            "gl": "Pousar as mans na cabeza e respirar",
+            "es": "Poner las manos en la cabeza y respirar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s1.hopeful",
+          "en": "Hopeful",
+          "gl": "Esperanzado",
+          "es": "Esperanzado",
+          "tprAction": {
+            "gl": "Mirar cara arriba sorrindo",
+            "es": "Mirar hacia arriba sonriendo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s1.calmer",
+          "en": "Calmer",
+          "gl": "Máis tranquilo",
+          "es": "Más tranquilo",
+          "tprAction": {
+            "gl": "Baixar os ombros",
+            "es": "Bajar los hombros"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s1.how-are-you-feeling-today",
+          "en": "How are you feeling today?",
+          "gl": "Como te sentes hoxe?",
+          "es": "¿Cómo te sientes hoy?",
+          "tprAction": {
+            "gl": "Sinalar o termómetro",
+            "es": "Señalar el termómetro"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.maio.s1.let-s-breathe-together",
+          "en": "Let's breathe together",
+          "gl": "Respiremos xuntos",
+          "es": "Respiremos juntos",
+          "tprAction": {
+            "gl": "Inspirar xuntos",
+            "es": "Inspirar juntos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.maio.s1.when-i-feel-angry-i-breathe-slowly",
+          "en": "When I feel angry, I breathe slowly",
+          "gl": "Cando me enfado, respiro amodo",
+          "es": "Cuando me enfado, respiro despacio",
+          "tprAction": {
+            "gl": "Apertar os puños e respirar",
+            "es": "Apretar los puños y respirar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.maio.s1.i-feel-better-after-a-hug",
+          "en": "I feel better after a hug",
+          "gl": "Sinto mellor despois dunha aperta",
+          "es": "Me siento mejor después de un abrazo",
+          "tprAction": {
+            "gl": "Abrazarse",
+            "es": "Abrazarse"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Desacordos",
+        "es": "Desacuerdos"
+      },
+      "palabras": [
+        {
+          "id": "5_6.maio.s2.disagreement",
+          "en": "Disagreement",
+          "gl": "Desacordo",
+          "es": "Desacuerdo",
+          "tprAction": {
+            "gl": "Negar coa cabeza",
+            "es": "Negar con la cabeza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s2.point-of-view",
+          "en": "Point of view",
+          "gl": "Punto de vista",
+          "es": "Punto de vista",
+          "tprAction": {
+            "gl": "Mirar dende outro lado",
+            "es": "Mirar desde otro lado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s2.peace-table",
+          "en": "Peace table",
+          "gl": "Mesa da paz",
+          "es": "Mesa de la paz",
+          "tprAction": {
+            "gl": "Sentarse fronte a fronte",
+            "es": "Sentarse frente a frente"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s2.fair-solution",
+          "en": "Fair solution",
+          "gl": "Solución xusta",
+          "es": "Solución justa",
+          "tprAction": {
+            "gl": "Poñer as mans iguais",
+            "es": "Poner las manos iguales"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s2.both-sides",
+          "en": "Both sides",
+          "gl": "As dúas partes",
+          "es": "Las dos partes",
+          "tprAction": {
+            "gl": "Sinalar a un e a outro",
+            "es": "Señalar a uno y a otro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s2.feelings-words",
+          "en": "Feelings words",
+          "gl": "Palabras dos sentimentos",
+          "es": "Palabras de los sentimientos",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s2.calm-voice",
+          "en": "Calm voice",
+          "gl": "Voz tranquila",
+          "es": "Voz tranquila",
+          "tprAction": {
+            "gl": "Falar amodo",
+            "es": "Hablar despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s2.disagree-kindly",
+          "en": "Disagree kindly",
+          "gl": "Discrepar con amabilidade",
+          "es": "Discrepar con amabilidad",
+          "tprAction": {
+            "gl": "Negar sorrindo",
+            "es": "Negar sonriendo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s2.take-turns-talking",
+          "en": "Take turns talking",
+          "gl": "Falar por quendas",
+          "es": "Hablar por turnos",
+          "tprAction": {
+            "gl": "Pasar o pau da palabra",
+            "es": "Pasar el palo de la palabra"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s2.see-both-sides",
+          "en": "See both sides",
+          "gl": "Ver as dúas partes",
+          "es": "Ver las dos partes",
+          "tprAction": {
+            "gl": "Mirar a un lado e ao outro",
+            "es": "Mirar a un lado y al otro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s2.make-up",
+          "en": "Make up",
+          "gl": "Facer as paces",
+          "es": "Hacer las paces",
+          "tprAction": {
+            "gl": "Darse a man",
+            "es": "Darse la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s2.open-hands-to-agree",
+          "en": "Open hands to agree",
+          "gl": "Abrir as mans para acordar",
+          "es": "Abrir las manos para acordar",
+          "tprAction": {
+            "gl": "Abrir as mans",
+            "es": "Abrir las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s2.understanding",
+          "en": "Understanding",
+          "gl": "Comprensivo",
+          "es": "Comprensivo",
+          "tprAction": {
+            "gl": "Asentir amodo",
+            "es": "Asentir despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s2.calm-and-clear",
+          "en": "Calm and clear",
+          "gl": "Tranquilo e claro",
+          "es": "Tranquilo y claro",
+          "tprAction": {
+            "gl": "Falar amodo",
+            "es": "Hablar despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s2.different-opinions",
+          "en": "Different opinions",
+          "gl": "Opinións distintas",
+          "es": "Opiniones distintas",
+          "tprAction": {
+            "gl": "Sinalar dous lados",
+            "es": "Señalar dos lados"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s2.open-minded",
+          "en": "Open-minded",
+          "gl": "De mente aberta",
+          "es": "De mente abierta",
+          "tprAction": {
+            "gl": "Abrir as mans dende a cabeza",
+            "es": "Abrir las manos desde la cabeza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s2.i-see-it-differently",
+          "en": "I see it differently",
+          "gl": "Eu véxoo doutro xeito",
+          "es": "Yo lo veo de otra manera",
+          "tprAction": {
+            "gl": "Xirar a man",
+            "es": "Girar la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.maio.s2.let-s-find-a-fair-solution",
+          "en": "Let's find a fair solution",
+          "gl": "Busquemos unha solución xusta",
+          "es": "Busquemos una solución justa",
+          "tprAction": {
+            "gl": "Xuntar as mans",
+            "es": "Juntar las manos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.maio.s2.you-think-this-but-i-think-that",
+          "en": "You think this, but I think that",
+          "gl": "Ti pensas isto, pero eu penso aquilo",
+          "es": "Tú piensas esto, pero yo pienso aquello",
+          "tprAction": {
+            "gl": "Sinalar a un e a si",
+            "es": "Señalar a uno y a sí"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.maio.s2.we-can-both-be-right",
+          "en": "We can both be right",
+          "gl": "Podemos ter razón os dous",
+          "es": "Podemos tener razón los dos",
+          "tprAction": {
+            "gl": "Darse a man",
+            "es": "Darse la mano"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Empatía",
+        "es": "Empatía"
+      },
+      "palabras": [
+        {
+          "id": "5_6.maio.s3.empathy",
+          "en": "Empathy",
+          "gl": "Empatía",
+          "es": "Empatía",
+          "tprAction": {
+            "gl": "Pousar a man no ombro dun amigo",
+            "es": "Poner la mano en el hombro de un amigo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s3.kindness-jar",
+          "en": "Kindness jar",
+          "gl": "Bote da bondade",
+          "es": "Bote de la bondad",
+          "tprAction": {
+            "gl": "Meter un papel no bote",
+            "es": "Meter un papel en el bote"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s3.compliment",
+          "en": "Compliment",
+          "gl": "Eloxio",
+          "es": "Cumplido",
+          "tprAction": {
+            "gl": "Dicir algo bonito sorrindo",
+            "es": "Decir algo bonito sonriendo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s3.buddy-bench",
+          "en": "Buddy bench",
+          "gl": "Banco dos amigos",
+          "es": "Banco de los amigos",
+          "tprAction": {
+            "gl": "Sentarse e facer sitio",
+            "es": "Sentarse y hacer sitio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s3.helping-hand",
+          "en": "Helping hand",
+          "gl": "Man amiga",
+          "es": "Mano amiga",
+          "tprAction": {
+            "gl": "Estender a man",
+            "es": "Extender la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s3.smile-of-thanks",
+          "en": "Smile of thanks",
+          "gl": "Sorriso de agradecemento",
+          "es": "Sonrisa de agradecimiento",
+          "tprAction": {
+            "gl": "Sorrir a alguén",
+            "es": "Sonreír a alguien"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s3.good-deed",
+          "en": "Good deed",
+          "gl": "Boa acción",
+          "es": "Buena acción",
+          "tprAction": {
+            "gl": "Levantar o polgar",
+            "es": "Levantar el pulgar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s3.put-yourself-in-their-shoes",
+          "en": "Put yourself in their shoes",
+          "gl": "Poñerse no seu lugar",
+          "es": "Ponerse en su lugar",
+          "tprAction": {
+            "gl": "Cambiar de sitio cun amigo",
+            "es": "Cambiar de sitio con un amigo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s3.give-a-compliment",
+          "en": "Give a compliment",
+          "gl": "Dicir un eloxio",
+          "es": "Decir un cumplido",
+          "tprAction": {
+            "gl": "Falar mirando aos ollos",
+            "es": "Hablar mirando a los ojos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s3.include-someone",
+          "en": "Include someone",
+          "gl": "Incluír a alguén",
+          "es": "Incluir a alguien",
+          "tprAction": {
+            "gl": "Abrir o círculo",
+            "es": "Abrir el círculo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s3.shake-hands-kindly",
+          "en": "Shake hands kindly",
+          "gl": "Darse a man con agarimo",
+          "es": "Darse la mano con cariño",
+          "tprAction": {
+            "gl": "Darse a man sorrindo",
+            "es": "Darse la mano sonriendo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s3.notice-feelings",
+          "en": "Notice feelings",
+          "gl": "Fixarse nos sentimentos",
+          "es": "Fijarse en los sentimientos",
+          "tprAction": {
+            "gl": "Mirar a cara dun amigo",
+            "es": "Mirar la cara de un amigo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s3.compassionate",
+          "en": "Compassionate",
+          "gl": "Compasivo",
+          "es": "Compasivo",
+          "tprAction": {
+            "gl": "Pousar as mans no peito",
+            "es": "Poner las manos en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s3.welcoming",
+          "en": "Welcoming",
+          "gl": "Acolledor",
+          "es": "Acogedor",
+          "tprAction": {
+            "gl": "Abrir os brazos",
+            "es": "Abrir los brazos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s3.gentle-hearted",
+          "en": "Gentle-hearted",
+          "gl": "De corazón doce",
+          "es": "De corazón dulce",
+          "tprAction": {
+            "gl": "Facer un corazón coas mans",
+            "es": "Hacer un corazón con las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s3.kindest",
+          "en": "Kindest",
+          "gl": "O máis amable",
+          "es": "El más amable",
+          "tprAction": {
+            "gl": "Sorrir moi grande",
+            "es": "Sonreír muy grande"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s3.do-you-want-to-play-with-us",
+          "en": "Do you want to play with us?",
+          "gl": "Queres xogar connosco?",
+          "es": "¿Quieres jugar con nosotros?",
+          "tprAction": {
+            "gl": "Abrir o círculo",
+            "es": "Abrir el círculo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.maio.s3.you-re-a-great-friend",
+          "en": "You're a great friend",
+          "gl": "Es un gran amigo",
+          "es": "Eres un gran amigo",
+          "tprAction": {
+            "gl": "Levantar o polgar",
+            "es": "Levantar el pulgar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.maio.s3.how-would-you-feel-if",
+          "en": "How would you feel if...?",
+          "gl": "Como te sentirías se...?",
+          "es": "¿Cómo te sentirías si...?",
+          "tprAction": {
+            "gl": "Tocar o peito preguntando",
+            "es": "Tocar el pecho preguntando"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.maio.s3.kind-words-make-people-smile",
+          "en": "Kind words make people smile",
+          "gl": "As palabras amables fan sorrir",
+          "es": "Las palabras amables hacen sonreír",
+          "tprAction": {
+            "gl": "Sorrir e sinalar a boca",
+            "es": "Sonreír y señalar la boca"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Coidarse e coidar",
+        "es": "Cuidarse y cuidar"
+      },
+      "palabras": [
+        {
+          "id": "5_6.maio.s4.self-care",
+          "en": "Self-care",
+          "gl": "Autocoidado",
+          "es": "Autocuidado",
+          "tprAction": {
+            "gl": "Abrazarse a si mesmo",
+            "es": "Abrazarse a sí mismo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s4.quiet-time",
+          "en": "Quiet time",
+          "gl": "Tempo tranquilo",
+          "es": "Tiempo tranquilo",
+          "tprAction": {
+            "gl": "Sentarse en silencio",
+            "es": "Sentarse en silencio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s4.hobby",
+          "en": "Hobby",
+          "gl": "Afección",
+          "es": "Afición",
+          "tprAction": {
+            "gl": "Facer o xesto dunha afección",
+            "es": "Hacer el gesto de una afición"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s4.garden-plot",
+          "en": "Garden plot",
+          "gl": "Parcela da horta",
+          "es": "Parcela del huerto",
+          "tprAction": {
+            "gl": "Cavar no aire",
+            "es": "Cavar en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s4.pet-care",
+          "en": "Pet care",
+          "gl": "Coidado da mascota",
+          "es": "Cuidado de la mascota",
+          "tprAction": {
+            "gl": "Acariñar e dar de comer",
+            "es": "Acariciar y dar de comer"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s4.chore",
+          "en": "Chore",
+          "gl": "Tarefa da casa",
+          "es": "Tarea de casa",
+          "tprAction": {
+            "gl": "Varrer no aire",
+            "es": "Barrer en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s4.thank-you-note",
+          "en": "Thank-you note",
+          "gl": "Nota de agradecemento",
+          "es": "Nota de agradecimiento",
+          "tprAction": {
+            "gl": "Entregar un papel",
+            "es": "Entregar un papel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.maio.s4.take-a-break",
+          "en": "Take a break",
+          "gl": "Facer unha pausa",
+          "es": "Hacer una pausa",
+          "tprAction": {
+            "gl": "Parar e respirar",
+            "es": "Parar y respirar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s4.look-after",
+          "en": "Look after",
+          "gl": "Coidar de",
+          "es": "Cuidar de",
+          "tprAction": {
+            "gl": "Tapar algo coas mans",
+            "es": "Tapar algo con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s4.tidy-your-room",
+          "en": "Tidy your room",
+          "gl": "Ordenar o cuarto",
+          "es": "Ordenar el cuarto",
+          "tprAction": {
+            "gl": "Recoller xoguetes",
+            "es": "Recoger juguetes"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s4.water-the-plants",
+          "en": "Water the plants",
+          "gl": "Regar as plantas",
+          "es": "Regar las plantas",
+          "tprAction": {
+            "gl": "Inclinar un regador",
+            "es": "Inclinar una regadera"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s4.write-a-thank-you-note",
+          "en": "Write a thank-you note",
+          "gl": "Escribir unha nota de grazas",
+          "es": "Escribir una nota de agradecimiento",
+          "tprAction": {
+            "gl": "Escribir no aire",
+            "es": "Escribir en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.maio.s4.caring-for-others",
+          "en": "Caring for others",
+          "gl": "Coidador",
+          "es": "Cuidador",
+          "tprAction": {
+            "gl": "Abrazar un peluche",
+            "es": "Abrazar un peluche"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s4.well-cared-for",
+          "en": "Well-cared-for",
+          "gl": "Ben coidado",
+          "es": "Bien cuidado",
+          "tprAction": {
+            "gl": "Acariñar unha planta",
+            "es": "Acariciar una planta"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s4.useful-helper",
+          "en": "Useful helper",
+          "gl": "Axudante útil",
+          "es": "Ayudante útil",
+          "tprAction": {
+            "gl": "Levar unha caixa",
+            "es": "Llevar una caja"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s4.relaxing",
+          "en": "Relaxing",
+          "gl": "Relaxante",
+          "es": "Relajante",
+          "tprAction": {
+            "gl": "Soltar os ombros",
+            "es": "Soltar los hombros"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.maio.s4.what-do-you-do-to-feel-calm",
+          "en": "What do you do to feel calm?",
+          "gl": "Que fas para estar tranquilo?",
+          "es": "¿Qué haces para estar tranquilo?",
+          "tprAction": {
+            "gl": "Respirar fondo",
+            "es": "Respirar hondo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.maio.s4.i-help-at-home-by-setting-the-table",
+          "en": "I help at home by setting the table",
+          "gl": "Axudo na casa poñendo a mesa",
+          "es": "Ayudo en casa poniendo la mesa",
+          "tprAction": {
+            "gl": "Poñer pratos imaxinarios",
+            "es": "Poner platos imaginarios"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.maio.s4.when-i-look-after-my-plant-it-grows",
+          "en": "When I look after my plant, it grows",
+          "gl": "Cando coido a miña planta, medra",
+          "es": "Cuando cuido mi planta, crece",
+          "tprAction": {
+            "gl": "Regar e subir a man",
+            "es": "Regar y subir la mano"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.maio.s4.thank-you-for-helping-me",
+          "en": "Thank you for helping me",
+          "gl": "Grazas por axudarme",
+          "es": "Gracias por ayudarme",
+          "tprAction": {
+            "gl": "Xuntar as mans",
+            "es": "Juntar las manos"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}
