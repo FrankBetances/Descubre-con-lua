@@ -30,10 +30,11 @@ class ContadoresCalendario {
 /// `assets/voice/`: la docente que no domina el inglés oye la pronunciación
 /// antes de llevarla a la asamblea. Si cambia una cadena de aquí, su grabación
 /// deja de existir y `tools/check_voice_coverage.py` lo dice.
+///
+/// Aquí no hay léxico. El inglés del curso son cinco palabras nuevas cada día
+/// y viven en `assets/content/tpr/` (ver `CursoTpr`); un léxico de seis
+/// palabras por mes al lado era un segundo plan que contradecía al primero.
 class InglesDelMes {
-  /// Palabras sueltas. Se graban despacio, porque existen para imitarse.
-  final List<String> lexico;
-
   /// Órdenes de respuesta física (TPR): lo que se pide con el cuerpo.
   final List<String> tpr;
 
@@ -41,21 +42,18 @@ class InglesDelMes {
   final String frase;
 
   const InglesDelMes({
-    required this.lexico,
     required this.tpr,
     required this.frase,
   });
 
   factory InglesDelMes.fromJson(Map<String, dynamic> json) => InglesDelMes(
-        lexico: List<String>.from(
-            (json['lexico'] as List? ?? const []).map((e) => e.toString())),
         tpr: List<String>.from(
             (json['tpr'] as List? ?? const []).map((e) => e.toString())),
         frase: json['frase']?.toString() ?? '',
       );
 
   /// Todo lo que se puede escuchar de este mes, en el orden en que se pinta.
-  List<String> get todo => [...lexico, ...tpr, if (frase.isNotEmpty) frase];
+  List<String> get todo => [...tpr, if (frase.isNotEmpty) frase];
 }
 
 /// Una unidad mensual del calendario escolar (septiembre a junio).

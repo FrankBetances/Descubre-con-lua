@@ -878,29 +878,33 @@ class ContentRepository {
     return List.unmodifiable(_curriculo50Meses);
   }
 
-  // --- TPR CURRICULUM SEMANA (5 PALABRAS DIARIAS) ---
-  static const String tprSemana01AssetPath = 'assets/content/semana_01.json';
-  TprSemanaContenido? _tprSemana01;
+  // --- INGLÉS DO CURSO: CINCO PALABRAS DIARIAS ---
 
-  /// Loads the TPR weekly schedule with 5 daily words and cumulative reinforcement.
-  Future<TprSemanaContenido?> loadTprSemana([int semanaNum = 1]) async {
-    if (_tprSemana01 == null) {
-      try {
-        final raw = await _loader.loadRawString(tprSemana01AssetPath);
-        final dynamic decoded = jsonDecode(raw);
-        if (decoded is Map<String, dynamic>) {
-          _tprSemana01 = TprSemanaContenido.fromJson(decoded);
-        } else if (decoded is Map) {
-          _tprSemana01 = TprSemanaContenido.fromJson(
-            Map<String, dynamic>.from(decoded),
-          );
-        }
-      } catch (e) {
-        _loadErrors.add(ContentLoadFailure(tprSemana01AssetPath, e.toString()));
-      }
-    }
-    return _tprSemana01;
+  CursoTpr? _cursoTpr;
+  Future<CursoTpr?>? _cargandoCursoTpr;
+
+  /// El inglés del curso —diez meses de cuatro semanas de veinte palabras—, o
+  /// `null` si no se pudo leer. Se lee una vez y se recuerda.
+  ///
+  /// Si falla, el fallo queda en [loadErrors] y las tarjetas que lo usan no se
+  /// pintan: una tarjeta de «cinco palabras hoy» sin palabras mentiría.
+  Future<CursoTpr?> loadCursoTpr() {
+    final ya = _cursoTpr;
+    if (ya != null) return Future.value(ya);
+    return _cargandoCursoTpr ??= CursoTpr.cargar(
+      stringLoader: _loader.loadRawString,
+    ).then<CursoTpr?>((curso) {
+      _cursoTpr = curso;
+      return curso;
+    }).catchError((Object e) {
+      _loadErrors.add(ContentLoadFailure(CursoTpr.modeloAsset, e.toString()));
+      _cargandoCursoTpr = null;
+      return null;
+    });
   }
+
+  /// El inglés del curso si ya está leído; `null` si todavía no.
+  CursoTpr? get cursoTprSync => _cursoTpr;
 
   // --- IN-MEMORY & TEST HELPER METHODS ---
 
@@ -910,15 +914,27 @@ class ContentRepository {
     _isInitialized = true;
   }
 
-  /// Sets [TprSemanaContenido] directly in memory (for tests and mocking).
-  void addTprSemana(TprSemanaContenido semana) {
-    _tprSemana01 = semana;
+  /// Deja el inglés del curso ya leído (para tests).
+  void addCursoTpr(CursoTpr curso) {
+    _cursoTpr = curso;
   }
 
   /// Adds or updates a [Capsula] directly in memory (for tests and mocking).
   void addCapsula(Capsula capsula) {
     _capsulasById[capsula.id] = capsula;
     _isInitialized = true;
+  }
+
+  /// Añade una microcápsula del 1.º ciclo (para tests). En la app llegan por
+  /// descubrimiento del paquete, que en un test no existe.
+  void addAsambleaPrimeiroCiclo(AsambleaPrimeiroCiclo asamblea) {
+    _asambleasPrimeiroCicloById[asamblea.id] = asamblea;
+    _isInitialized = true;
+  }
+
+  /// Añade la progresión diaria de un tramo (para tests), por el mismo motivo.
+  void addProgresion(ProgresionDoMes progresion) {
+    _progresionsPorClave[progresion.clave] = progresion;
   }
 
   /// Adds or updates an [AsambleaSegundoCiclo] directly in memory (for tests and mocking).
@@ -990,6 +1006,8 @@ class ContentRepository {
     _estrategias.clear();
     _dinamicas.clear();
     _curriculo50Meses.clear();
+    _cursoTpr = null;
+    _cargandoCursoTpr = null;
     _loadErrors.clear();
     _isInitialized = false;
   }

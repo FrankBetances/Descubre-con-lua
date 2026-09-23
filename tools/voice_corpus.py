@@ -285,25 +285,48 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     # Es la razón de ser de la voz inglesa: una maestra de una escuela infantil
     # de Vigo no tiene por qué pronunciar «Crunch leaves», y aquí lo oye antes
     # de llevarlo a la asamblea. Solo entra lo que una pantalla puede
-    # reproducir: el léxico, las órdenes y la frase del mes se pintan como
-    # pastillas con altavoz, y la frase de cada tramo, en la guía de la
-    # familia. Nada que no se pueda pulsar viaja en el APK.
+    # reproducir: las órdenes y la frase del mes, y la frase de cada tramo en
+    # la guía de la familia. Nada que no se pueda pulsar viaja en el APK.
+    #
+    # El léxico de seis palabras por mes que vivía aquí se retiró: el inglés
+    # del curso son cinco palabras NUEVAS cada día, y viven en assets/content/tpr/
+    # (ver más abajo). Las sesenta de antes siguen todas, cada una en su mes.
     meses_json = content_dir / "calendario" / "meses.json"
     if meses_json.exists():
         data = json.loads(meses_json.read_text(encoding="utf-8"))
         for mes in data.get("meses") or []:
             orden = mes.get("orden", "?")
             ingles = mes.get("ingles") or {}
-            for palabra in ingles.get("lexico") or []:
-                # Despacio: las palabras sueltas existen para imitarse.
-                _one(str(palabra), "en", "slow",
-                     f"calendario/mes/{orden}/ingles/lexico", seen)
             for comando in ingles.get("tpr") or []:
                 _one(str(comando), "en", "tutor",
                      f"calendario/mes/{orden}/ingles/tpr", seen)
             if ingles.get("frase"):
                 _one(str(ingles["frase"]), "en", "tutor",
                      f"calendario/mes/{orden}/ingles/frase", seen)
+
+    # ── Las cinco palabras diarias ──────────────────────────────────────────
+    # Diez meses, cuatro semanas, veinte palabras: las 800 del curso. Cada una
+    # se pinta como pastilla con altavoz en «Hoxe na aula», en el calendario y
+    # en la casa, así que cada una tiene que estar grabada. El estilo lo decide
+    # `estilo_ingles`, igual que en la pantalla: la palabra suelta despacio,
+    # porque existe para imitarse; la frase a ritmo de tutor.
+    #
+    # El gesto (`tprAction`) NO entra: es una acotación de lo que se hace con
+    # el cuerpo, como los materiales, y no lleva altavoz.
+    tpr_dir = content_dir / "tpr"
+    if tpr_dir.exists():
+        for path in sorted(tpr_dir.glob("tpr.*.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            tid = data.get("id", path.stem)
+            for semana in data.get("semanas") or []:
+                if not isinstance(semana, dict):
+                    continue
+                numero = semana.get("semana", "?")
+                for palabra in semana.get("palabras") or []:
+                    if isinstance(palabra, dict) and palabra.get("en"):
+                        texto = str(palabra["en"])
+                        _one(texto, "en", estilo_ingles(texto),
+                             f"{tid}/s{numero}/{palabra.get('id', '?')}", seen)
 
     atencion_json = content_dir / "calendario" / "atencion.json"
     if atencion_json.exists():

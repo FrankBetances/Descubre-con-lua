@@ -76,7 +76,6 @@ void main() {
         expect(mes.actividadHogar.hasParity, isTrue);
         expect(mes.rutinaRecomendadaHogar.hasParity, isTrue);
 
-        expect(mes.ingles.lexico, isNotEmpty);
         expect(mes.ingles.tpr, isNotEmpty);
         expect(mes.ingles.frase, isNotEmpty);
         expect(mes.minutosSugeridos, inInclusiveRange(2, 8));

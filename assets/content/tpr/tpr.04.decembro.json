@@ -1,0 +1,924 @@
+{
+  "version": 1,
+  "id": "tpr.decembro",
+  "orden": 4,
+  "mesCalendario": 12,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Que frío!",
+        "es": "¡Qué frío!"
+      },
+      "palabras": [
+        {
+          "id": "snow",
+          "en": "Snow",
+          "gl": "Neve",
+          "es": "Nieve",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Baixar os dedos amodo coma neve que cae",
+            "es": "Bajar los dedos despacio como nieve que cae"
+          }
+        },
+        {
+          "id": "ice",
+          "en": "Ice",
+          "gl": "Xeo",
+          "es": "Hielo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Quedar ríxidos coma o xeo",
+            "es": "Quedarse rígidos como el hielo"
+          }
+        },
+        {
+          "id": "snowman",
+          "en": "Snowman",
+          "gl": "Boneco de neve",
+          "es": "Muñeco de nieve",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer tres bólas no aire, unha enriba doutra",
+            "es": "Hacer tres bolas en el aire, una encima de otra"
+          }
+        },
+        {
+          "id": "snowflake",
+          "en": "Snowflake",
+          "gl": "Folerpa",
+          "es": "Copo de nieve",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Xirar un dedo no aire mentres baixa",
+            "es": "Girar un dedo en el aire mientras baja"
+          }
+        },
+        {
+          "id": "winter",
+          "en": "Winter",
+          "gl": "Inverno",
+          "es": "Invierno",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrazarse a un mesmo con frío",
+            "es": "Abrazarse a uno mismo con frío"
+          }
+        },
+        {
+          "id": "mountain",
+          "en": "Mountain",
+          "gl": "Montaña",
+          "es": "Montaña",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Debuxar unha montaña grande no aire cos brazos",
+            "es": "Dibujar una montaña grande en el aire con los brazos"
+          }
+        },
+        {
+          "id": "sledge",
+          "en": "Sledge",
+          "gl": "Trineo",
+          "es": "Trineo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Sentar e baixar un monte imaxinario cos brazos arriba",
+            "es": "Sentarse y bajar una montaña imaginaria con los brazos arriba"
+          }
+        },
+        {
+          "id": "shiver",
+          "en": "Shiver",
+          "gl": "Tremer",
+          "es": "Temblar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tremer todo o corpo coma se fixese moito frío",
+            "es": "Temblar todo el cuerpo como si hiciera mucho frío"
+          }
+        },
+        {
+          "id": "slide",
+          "en": "Slide",
+          "gl": "Esvarar",
+          "es": "Deslizarse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Esvarar amodo polo chan sen levantar os pés",
+            "es": "Deslizarse despacio por el suelo sin levantar los pies"
+          }
+        },
+        {
+          "id": "melt",
+          "en": "Melt",
+          "gl": "Derreterse",
+          "es": "Derretirse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Derreterse amodo ata quedar tombados",
+            "es": "Derretirse despacio hasta quedar tumbados"
+          }
+        },
+        {
+          "id": "throw",
+          "en": "Throw",
+          "gl": "Lanzar",
+          "es": "Lanzar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Lanzar unha bóla de neve imaxinaria moi suave",
+            "es": "Lanzar una bola de nieve imaginaria muy suave"
+          }
+        },
+        {
+          "id": "catch",
+          "en": "Catch",
+          "gl": "Atrapar",
+          "es": "Atrapar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pechar as mans no aire coma se atrapásemos algo",
+            "es": "Cerrar las manos en el aire como si atrapáramos algo"
+          }
+        },
+        {
+          "id": "cold",
+          "en": "Cold",
+          "gl": "Frío, fría",
+          "es": "Frío, fría",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Frotar os brazos coas mans cruzadas",
+            "es": "Frotarse los brazos con las manos cruzadas"
+          }
+        },
+        {
+          "id": "warm",
+          "en": "Warm",
+          "gl": "Quentiño, quentiña",
+          "es": "Calentito, calentita",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Soprar nas mans e pousalas nas meixelas",
+            "es": "Soplarse en las manos y ponerlas en las mejillas"
+          }
+        },
+        {
+          "id": "white",
+          "en": "White",
+          "gl": "Branco, branca",
+          "es": "Blanco, blanca",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Sinalar algo branco na aula",
+            "es": "Señalar algo blanco en el aula"
+          }
+        },
+        {
+          "id": "slippery",
+          "en": "Slippery",
+          "gl": "Esvaradío, esvaradía",
+          "es": "Resbaladizo, resbaladiza",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Mover os pés coma se esvarasen, sen caer",
+            "es": "Mover los pies como si resbalaran, sin caerse"
+          }
+        },
+        {
+          "id": "brrr-it-s-cold",
+          "en": "Brrr, it's cold!",
+          "gl": "Brrr, que frío!",
+          "es": "¡Brrr, qué frío!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Encoller os ombros e tremer dicindo «brrr»",
+            "es": "Encoger los hombros y temblar diciendo «brrr»"
+          }
+        },
+        {
+          "id": "let-s-build-a-snowman",
+          "en": "Let's build a snowman",
+          "gl": "Imos facer un boneco de neve",
+          "es": "Vamos a hacer un muñeco de nieve",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Amasar bólas de neve imaxinarias entre todos",
+            "es": "Amasar bolas de nieve imaginarias entre todos"
+          }
+        },
+        {
+          "id": "catch-the-snowflake",
+          "en": "Catch the snowflake",
+          "gl": "Atrapa a folerpa",
+          "es": "Atrapa el copo",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Estirar a man e pechala suave sobre unha folerpa",
+            "es": "Estirar la mano y cerrarla suave sobre un copo"
+          }
+        },
+        {
+          "id": "in-the-snow",
+          "en": "In the snow",
+          "gl": "Na neve",
+          "es": "En la nieve",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Camiñar levantando moito os pés coma na neve",
+            "es": "Caminar levantando mucho los pies como en la nieve"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Campás e luces",
+        "es": "Campanas y luces"
+      },
+      "palabras": [
+        {
+          "id": "bell",
+          "en": "Bell",
+          "gl": "Campá",
+          "es": "Campana",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mover o puño dun lado a outro coma unha campá",
+            "es": "Mover el puño de un lado a otro como una campana"
+          }
+        },
+        {
+          "id": "light",
+          "en": "Light",
+          "gl": "Luz",
+          "es": "Luz",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir de golpe as mans coma unha luz que se acende",
+            "es": "Abrir de golpe las manos como una luz que se enciende"
+          }
+        },
+        {
+          "id": "star",
+          "en": "Star",
+          "gl": "Estrela",
+          "es": "Estrella",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir brazos e pernas en forma de estrela",
+            "es": "Abrir brazos y piernas en forma de estrella"
+          }
+        },
+        {
+          "id": "gift",
+          "en": "Gift",
+          "gl": "Agasallo",
+          "es": "Regalo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Entregar unha caixa imaxinaria coas dúas mans",
+            "es": "Entregar una caja imaginaria con las dos manos"
+          }
+        },
+        {
+          "id": "candle",
+          "en": "Candle",
+          "gl": "Vela",
+          "es": "Vela",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Soprar amodo unha vela imaxinaria",
+            "es": "Soplar despacio una vela imaginaria"
+          }
+        },
+        {
+          "id": "ribbon",
+          "en": "Ribbon",
+          "gl": "Lazo",
+          "es": "Lazo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer un lazo no aire cos dedos",
+            "es": "Hacer un lazo en el aire con los dedos"
+          }
+        },
+        {
+          "id": "tambourine",
+          "en": "Tambourine",
+          "gl": "Pandeireta",
+          "es": "Pandereta",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Tocar unha pandeireta imaxinaria ao pulso",
+            "es": "Tocar una pandereta imaginaria al pulso"
+          }
+        },
+        {
+          "id": "ring",
+          "en": "Ring",
+          "gl": "Soar",
+          "es": "Sonar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Facer soar unha campá imaxinaria: din, don",
+            "es": "Hacer sonar una campana imaginaria: din, don"
+          }
+        },
+        {
+          "id": "twinkle",
+          "en": "Twinkle",
+          "gl": "Escintilar",
+          "es": "Titilar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Abrir e pechar os dedos moi rápido por riba da cabeza",
+            "es": "Abrir y cerrar los dedos muy rápido por encima de la cabeza"
+          }
+        },
+        {
+          "id": "wrap",
+          "en": "Wrap",
+          "gl": "Embrullar",
+          "es": "Envolver",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Embrullar un agasallo imaxinario con papel",
+            "es": "Envolver un regalo imaginario con papel"
+          }
+        },
+        {
+          "id": "unwrap",
+          "en": "Unwrap",
+          "gl": "Desembrullar",
+          "es": "Desenvolver",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Desembrullar amodo un agasallo imaxinario",
+            "es": "Desenvolver despacio un regalo imaginario"
+          }
+        },
+        {
+          "id": "hang",
+          "en": "Hang",
+          "gl": "Pendurar",
+          "es": "Colgar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pendurar unha estrela imaxinaria no alto",
+            "es": "Colgar una estrella imaginaria en lo alto"
+          }
+        },
+        {
+          "id": "golden",
+          "en": "Golden",
+          "gl": "Dourado, dourada",
+          "es": "Dorado, dorada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Sinalar algo dourado ou amarelo brillante",
+            "es": "Señalar algo dorado o amarillo brillante"
+          }
+        },
+        {
+          "id": "silver",
+          "en": "Silver",
+          "gl": "Prateado, prateada",
+          "es": "Plateado, plateada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Sinalar algo prateado que reluza",
+            "es": "Señalar algo plateado que reluzca"
+          }
+        },
+        {
+          "id": "beautiful",
+          "en": "Beautiful",
+          "gl": "Bonito, bonita",
+          "es": "Bonito, bonita",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Mirar algo con cara de admiración: oooh!",
+            "es": "Mirar algo con cara de admiración: ¡oooh!"
+          }
+        },
+        {
+          "id": "surprised",
+          "en": "Surprised",
+          "gl": "Sorprendido, sorprendida",
+          "es": "Sorprendido, sorprendida",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Abrir moito os ollos e a boca con sorpresa",
+            "es": "Abrir mucho los ojos y la boca con sorpresa"
+          }
+        },
+        {
+          "id": "merry-christmas",
+          "en": "Merry Christmas!",
+          "gl": "Bo Nadal!",
+          "es": "¡Feliz Navidad!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Abrir os brazos e desexar bo Nadal ao grupo",
+            "es": "Abrir los brazos y desear feliz Navidad al grupo"
+          }
+        },
+        {
+          "id": "ring-bells",
+          "en": "Ring bells",
+          "gl": "Toca as campás",
+          "es": "Toca las campanas",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Facer soar campás imaxinarias coas dúas mans",
+            "es": "Hacer sonar campanas imaginarias con las dos manos"
+          }
+        },
+        {
+          "id": "on-the-tree",
+          "en": "On the tree",
+          "gl": "Na árbore",
+          "es": "En el árbol",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Pendurar adornos nunha árbore que fai unha compañeira",
+            "es": "Colgar adornos en un árbol que hace una compañera"
+          }
+        },
+        {
+          "id": "up-to-the-star",
+          "en": "Up to the star",
+          "gl": "Ata a estrela",
+          "es": "Hasta la estrella",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Estirarse de puntas ata tocar unha estrela imaxinaria",
+            "es": "Estirarse de puntillas hasta tocar una estrella imaginaria"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Boas noites",
+        "es": "Buenas noches"
+      },
+      "palabras": [
+        {
+          "id": "night",
+          "en": "Night",
+          "gl": "Noite",
+          "es": "Noche",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pechar as mans diante dos ollos coma cortinas",
+            "es": "Cerrar las manos delante de los ojos como cortinas"
+          }
+        },
+        {
+          "id": "moon",
+          "en": "Moon",
+          "gl": "Lúa",
+          "es": "Luna",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Debuxar unha lúa redonda no aire",
+            "es": "Dibujar una luna redonda en el aire"
+          }
+        },
+        {
+          "id": "bed",
+          "en": "Bed",
+          "gl": "Cama",
+          "es": "Cama",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Xuntar as mans baixo a meixela coma unha cama",
+            "es": "Juntar las manos bajo la mejilla como una cama"
+          }
+        },
+        {
+          "id": "pillow",
+          "en": "Pillow",
+          "gl": "Almofada",
+          "es": "Almohada",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Afundir a cabeza nunha almofada imaxinaria",
+            "es": "Hundir la cabeza en una almohada imaginaria"
+          }
+        },
+        {
+          "id": "blanket",
+          "en": "Blanket",
+          "gl": "Manta",
+          "es": "Manta",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Taparse cunha manta imaxinaria ata o queixo",
+            "es": "Taparse con una manta imaginaria hasta la barbilla"
+          }
+        },
+        {
+          "id": "pyjamas",
+          "en": "Pyjamas",
+          "gl": "Pixama",
+          "es": "Pijama",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Meter un brazo e logo o outro nun pixama imaxinario",
+            "es": "Meter un brazo y luego el otro en un pijama imaginario"
+          }
+        },
+        {
+          "id": "dream",
+          "en": "Dream",
+          "gl": "Soño",
+          "es": "Sueño",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pousar a cabeza nas mans e sorrir cos ollos pechados",
+            "es": "Apoyar la cabeza en las manos y sonreír con los ojos cerrados"
+          }
+        },
+        {
+          "id": "sleep",
+          "en": "Sleep",
+          "gl": "Durmir",
+          "es": "Dormir",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tombar no chan e pechar os ollos",
+            "es": "Tumbarse en el suelo y cerrar los ojos"
+          }
+        },
+        {
+          "id": "yawn",
+          "en": "Yawn",
+          "gl": "Bocexar",
+          "es": "Bostezar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Abrir moito a boca e estirar os brazos",
+            "es": "Abrir mucho la boca y estirar los brazos"
+          }
+        },
+        {
+          "id": "snore",
+          "en": "Snore",
+          "gl": "Roncar",
+          "es": "Roncar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Facer «rrr» moi suave cos ollos pechados",
+            "es": "Hacer «rrr» muy suave con los ojos cerrados"
+          }
+        },
+        {
+          "id": "wake-up",
+          "en": "Wake up",
+          "gl": "Espertar",
+          "es": "Despertar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Abrir os ollos de golpe e sentar",
+            "es": "Abrir los ojos de golpe y sentarse"
+          }
+        },
+        {
+          "id": "cuddle",
+          "en": "Cuddle",
+          "gl": "Aconchegarse",
+          "es": "Acurrucarse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Encollerse e aconchegarse no propio colo",
+            "es": "Encogerse y acurrucarse en el propio regazo"
+          }
+        },
+        {
+          "id": "sleepy",
+          "en": "Sleepy",
+          "gl": "Con sono",
+          "es": "Con sueño",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Deixar caer a cabeza amodo cara a un lado",
+            "es": "Dejar caer la cabeza despacio hacia un lado"
+          }
+        },
+        {
+          "id": "tired",
+          "en": "Tired",
+          "gl": "Canso, cansa",
+          "es": "Cansado, cansada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Deixar caer os brazos e soltar o aire",
+            "es": "Dejar caer los brazos y soltar el aire"
+          }
+        },
+        {
+          "id": "cosy",
+          "en": "Cosy",
+          "gl": "Acolledor, acolledora",
+          "es": "Acogedor, acogedora",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Abrazar unha manta imaxinaria con cara de gusto",
+            "es": "Abrazar una manta imaginaria con cara de gusto"
+          }
+        },
+        {
+          "id": "awake",
+          "en": "Awake",
+          "gl": "Esperto, esperta",
+          "es": "Despierto, despierta",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Abrir moito os ollos e mirar arredor",
+            "es": "Abrir mucho los ojos y mirar alrededor"
+          }
+        },
+        {
+          "id": "good-night",
+          "en": "Good night!",
+          "gl": "Boas noites!",
+          "es": "¡Buenas noches!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Acenar amodo e xuntar as mans baixo a meixela",
+            "es": "Decir adiós despacio y juntar las manos bajo la mejilla"
+          }
+        },
+        {
+          "id": "sweet-dreams",
+          "en": "Sweet dreams",
+          "gl": "Felices soños",
+          "es": "Dulces sueños",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Lanzar un bico ao aire cos ollos pechados",
+            "es": "Lanzar un beso al aire con los ojos cerrados"
+          }
+        },
+        {
+          "id": "sleep-tight",
+          "en": "Sleep tight",
+          "gl": "Durme ben",
+          "es": "Que duermas bien",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Abrazarse forte e quedar quietos",
+            "es": "Abrazarse fuerte y quedarse quietos"
+          }
+        },
+        {
+          "id": "under-the-blanket",
+          "en": "Under the blanket",
+          "gl": "Debaixo da manta",
+          "es": "Debajo de la manta",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Agocharse debaixo dunha manta imaxinaria",
+            "es": "Esconderse debajo de una manta imaginaria"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Festa de inverno",
+        "es": "Fiesta de invierno"
+      },
+      "palabras": [
+        {
+          "id": "party",
+          "en": "Party",
+          "gl": "Festa",
+          "es": "Fiesta",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Dar voltas no sitio movendo as mans",
+            "es": "Dar vueltas en el sitio moviendo las manos"
+          }
+        },
+        {
+          "id": "cake",
+          "en": "Cake",
+          "gl": "Bolo",
+          "es": "Tarta",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Debuxar un bolo redondo e soprar as velas",
+            "es": "Dibujar una tarta redonda y soplar las velas"
+          }
+        },
+        {
+          "id": "balloon",
+          "en": "Balloon",
+          "gl": "Globo",
+          "es": "Globo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Inflar un globo imaxinario coas meixelas",
+            "es": "Inflar un globo imaginario con los mofletes"
+          }
+        },
+        {
+          "id": "crown",
+          "en": "Crown",
+          "gl": "Coroa",
+          "es": "Corona",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Poñer unha coroa imaxinaria na cabeza",
+            "es": "Ponerse una corona imaginaria en la cabeza"
+          }
+        },
+        {
+          "id": "king",
+          "en": "King",
+          "gl": "Rei",
+          "es": "Rey",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Camiñar dereitos e solemnes coma un rei",
+            "es": "Caminar erguidos y solemnes como un rey"
+          }
+        },
+        {
+          "id": "music",
+          "en": "Music",
+          "gl": "Música",
+          "es": "Música",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mover a cabeza ao pulso da música",
+            "es": "Mover la cabeza al pulso de la música"
+          }
+        },
+        {
+          "id": "chocolate",
+          "en": "Chocolate",
+          "gl": "Chocolate",
+          "es": "Chocolate",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Beber dunha cunca quente con coidado",
+            "es": "Beber de una taza caliente con cuidado"
+          }
+        },
+        {
+          "id": "pop",
+          "en": "Pop",
+          "gl": "Estourar",
+          "es": "Explotar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Xuntar as mans de golpe: pum!",
+            "es": "Juntar las manos de golpe: ¡pum!"
+          }
+        },
+        {
+          "id": "wish",
+          "en": "Wish",
+          "gl": "Desexar",
+          "es": "Desear",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pechar os ollos e cruzar os dedos",
+            "es": "Cerrar los ojos y cruzar los dedos"
+          }
+        },
+        {
+          "id": "bow",
+          "en": "Bow",
+          "gl": "Facer unha reverencia",
+          "es": "Hacer una reverencia",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Inclinar o corpo cara adiante cunha man no peito",
+            "es": "Inclinar el cuerpo hacia delante con una mano en el pecho"
+          }
+        },
+        {
+          "id": "count",
+          "en": "Count",
+          "gl": "Contar",
+          "es": "Contar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Contar cos dedos ata cinco",
+            "es": "Contar con los dedos hasta cinco"
+          }
+        },
+        {
+          "id": "cheer",
+          "en": "Cheer",
+          "gl": "Animar",
+          "es": "Animar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Levantar os brazos e dicir «bravo!»",
+            "es": "Levantar los brazos y decir «¡bravo!»"
+          }
+        },
+        {
+          "id": "excited",
+          "en": "Excited",
+          "gl": "Emocionado, emocionada",
+          "es": "Emocionado, emocionada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Dar pequenos saltos no sitio con ledicia",
+            "es": "Dar saltitos en el sitio con alegría"
+          }
+        },
+        {
+          "id": "noisy",
+          "en": "Noisy",
+          "gl": "Ruidoso, ruidosa",
+          "es": "Ruidoso, ruidosa",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Bater os pés no chan e logo parar",
+            "es": "Golpear el suelo con los pies y luego parar"
+          }
+        },
+        {
+          "id": "colourful",
+          "en": "Colourful",
+          "gl": "De cores",
+          "es": "De colores",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Sinalar cousas de moitas cores na aula",
+            "es": "Señalar cosas de muchos colores en el aula"
+          }
+        },
+        {
+          "id": "delicious",
+          "en": "Delicious",
+          "gl": "Delicioso, deliciosa",
+          "es": "Delicioso, deliciosa",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Bicar as puntas dos dedos con cara de gusto",
+            "es": "Besarse las puntas de los dedos con cara de gusto"
+          }
+        },
+        {
+          "id": "happy-new-year",
+          "en": "Happy New Year!",
+          "gl": "Feliz aninovo!",
+          "es": "¡Feliz Año Nuevo!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Abrazar a quen está ao lado e sorrir",
+            "es": "Abrazar a quien está al lado y sonreír"
+          }
+        },
+        {
+          "id": "happy-birthday",
+          "en": "Happy birthday!",
+          "gl": "Feliz aniversario!",
+          "es": "¡Feliz cumpleaños!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Dar palmas suaves e soprar unha vela imaxinaria",
+            "es": "Dar palmas suaves y soplar una vela imaginaria"
+          }
+        },
+        {
+          "id": "with-music",
+          "en": "With music",
+          "gl": "Con música",
+          "es": "Con música",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Bailar só mentres soa a música",
+            "es": "Bailar únicamente mientras suena la música"
+          }
+        },
+        {
+          "id": "hands-up-and-cheer",
+          "en": "Hands up and cheer",
+          "gl": "Mans arriba e a animar",
+          "es": "Manos arriba y a animar",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Subir as mans e animar todos á vez",
+            "es": "Subir las manos y animar todos a la vez"
+          }
+        }
+      ]
+    }
+  ]
+}

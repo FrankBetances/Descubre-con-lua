@@ -36,6 +36,16 @@ siempre asociado al movimiento y sin pedir que nadie lo produzca: la orden se
 dice y se hace, y la criatura responde con el cuerpo. El gallego y el castellano
 siguen siendo las lenguas del aula y de la casa.
 
+**Cinco palabras nuevas al día.** De lunes a jueves entran cinco palabras o
+frases inglesas nuevas (bloques A, B, C y D), y cada día se repasan las de los
+días anteriores de esa semana; el viernes no entra ninguna y se juega un reto
+con las veinte. Son 20 por semana, 80 por mes y **800 en los diez meses del
+curso**: sustantivos, verbos, adjetivos, oraciones y preguntas, y estructuras
+con conectores. Cada una trae lo que significa en gallego y en castellano y el
+gesto que la acompaña. La docente las ve en «Hoxe na aula» y en el día del
+Calendario, junto a la asamblea de ese día; la familia ve **las mismas** ese
+día, con una dinámica pensada para casa.
+
 **Finalidad exclusivamente educativa.** No es un producto sanitario: no evalúa,
 no diagnostica y no trata nada. La criatura no usa la pantalla; la app es para
 la persona adulta que acompaña.
@@ -122,8 +132,11 @@ manda el script:
 | `check_contact_email.py` | Que no aparezca ningún correo distinto del fijo del proyecto |
 | `check_bundled_assets.py` | Que todo activo que el código pide exista y viaje dentro del paquete |
 | `check_laminas.py` | Que cada forma de cada lámina se pinte de verdad, y no salga una lámina en blanco |
+| `draw_flashcards.py --check` | Que cada lámina del banco apunte a un dibujo |
 | `check_no_emoji.py` | Que no se use emoji del sistema como iconografía (regla 5) |
 | `build_corpus_ingles.py --check` | Que cada palabra del vocabulario inglés traiga categoría gramatical y una frase entera, y que no entre ninguna de las excluidas |
+| `humaniza_rutinas_fogar.py --check` | Que las rutinas de casa no vuelvan a ser un mismo texto repetido |
+| `planificador_5_palabras.py --check` | Que el inglés del curso sea el del modelo: 20 palabras por semana, 800 en total, sin repetidas, con significado y gesto en gl y es, y con el reparto 280/200/160/96/64 **contado** en el contenido |
 | `export_voice_corpus.py --check` | Que el corpus de voz siga sincronizado con los textos |
 | `check_pulse_bpm.py` | Que el tempo mostrado sea el que suena, **medido del audio** |
 | `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |
@@ -136,7 +149,7 @@ manda el script:
 | Permisos del APK | Que el **binario** no declare más permiso que el que inyecta AndroidX |
 
 Los dos últimos solo corren sin `--fast`: son los que necesitan el SDK de
-Android. Por eso `--fast` da **14 de 14** y el run completo, **16 de 16**.
+Android. Por eso `--fast` da **19 de 19** y el run completo, **21 de 21**.
 
 ## Publicar
 
@@ -225,9 +238,10 @@ apagado ni con aviso—: un altavoz que no suena promete algo que no cumple.
 - castellano → **Sharvard** (rhasspy/piper-voices)
 - inglés → **LJSpeech** (rhasspy/piper-voices)
 
-**El inglés es un caso aparte.** No hay pantallas en inglés: lo que se graba es
-el léxico, las órdenes TPR, la frase de cada mes del calendario y **las 4.000
-palabras de uso habitual del inglés con su frase completa**. Cada una suena dos
+**El inglés es un caso aparte.** No hay pantallas en inglés: lo que se graba son
+las 800 palabras del curso, las órdenes TPR, la frase de cada mes del
+calendario y **las 4.000 palabras de uso habitual del inglés con su frase
+completa**. Cada una suena dos
 veces: la palabra sola, despacio, que es la que se imita, y su frase entera, a
 ritmo de tutor, que es la que se entiende. La persona adulta pulsa la pastilla y
 oye cómo se dice antes de decírselo a la criatura. Una pastilla sin grabación se
@@ -343,6 +357,7 @@ lib/features/   juega/ (aula, asamblea de 6 fases, metrónomo, formación docent
                 premios/ (insignias y medallas) · bienvenida/ · creditos/
 assets/content/ unidades, cápsulas, asamblea y premios en JSON, bilingües
                 calendario/ (10 meses + guía de inglés en casa)
+                tpr/ (el inglés del curso: 800 palabras, cinco al día)
 assets/voice/   grabaciones neuronales (generadas en CI)
 assets/brand/   rejilla de píxeles de Lúa: de aquí salen icono y splash
                 awards/ (los 10 glifos de insignia) · logos/ (marcas)

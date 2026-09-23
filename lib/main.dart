@@ -37,6 +37,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final repository = ContentRepository();
   await repository.initialize();
+  // El inglés del curso —cinco palabras al día— lo usan el portal, el
+  // calendario y la asamblea: se lee una vez aquí y lo encuentran ya leído.
+  await repository.loadCursoTpr();
   runApp(DescubreConLuaApp(contentRepository: repository));
 }
 

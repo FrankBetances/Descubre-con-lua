@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
+import 'palabras_do_dia.dart';
 
 /// La semana, el día y la rutina de casa: el espejo exacto del Modo Aula, con
 /// la familia en el sitio de la docente.
@@ -37,12 +40,16 @@ class DiaNoFogar extends StatefulWidget {
 
   final AppLanguage language;
 
+  /// Para que las palabras inglesas del día suenen. Sin él se leen igual.
+  final OfflineAudioService? audioService;
+
   const DiaNoFogar({
     super.key,
     required this.repository,
     required this.cursoId,
     required this.mes,
     required this.language,
+    this.audioService,
   });
 
   @override
@@ -75,11 +82,37 @@ class _DiaNoFogarState extends State<DiaNoFogar> {
       cursoId: widget.cursoId,
       mes: widget.mes,
     );
+    // Las palabras inglesas del día —las mismas que ve la docente ese día—
+    // se leen APARTE y sin esperar: la rutina de casa no puede quedarse sin
+    // pintar porque el inglés tarde o falle.
+    if (widget.repository.cursoTprSync == null) {
+      widget.repository.loadCursoTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
     if (!mounted) return;
     setState(() {
       _dias = dias;
       _cargado = true;
     });
+  }
+
+  /// El plan de palabras del día elegido, o `null` si el curso no se leyó.
+  ({DailyTprPlan plan, DiaDoModeloTpr? modelo, SemanaTpr semana})?
+      get _palabras {
+    final curso = widget.repository.cursoTprSync;
+    if (curso == null) return null;
+    MesTpr? mes;
+    for (final m in curso.meses) {
+      if (m.orden == widget.mes) mes = m;
+    }
+    final semana = mes?.semana(_semana);
+    if (semana == null) return null;
+    return (
+      plan: semana.planDoDia(_dia),
+      modelo: curso.modelo.dia(_dia),
+      semana: semana,
+    );
   }
 
   DiaCalendarioDual? get _actual {
@@ -147,6 +180,21 @@ class _DiaNoFogarState extends State<DiaNoFogar> {
         ),
         const SizedBox(height: AppTheme.spaceMd),
         _TarxetaDoDiaNoFogar(dia: dia, language: widget.language),
+        if (_palabras case final palabras?) ...[
+          const SizedBox(height: AppTheme.spaceMd),
+          BloqueInglesDoDia(
+            key: const Key('palabras_do_dia_fogar'),
+            rotulo: isGl
+                ? 'O INGLÉS DESTE DÍA NA CASA'
+                : 'EL INGLÉS DE ESTE DÍA EN CASA',
+            plan: palabras.plan,
+            modeloDoDia: palabras.modelo,
+            semana: palabras.semana,
+            language: widget.language,
+            audioService: widget.audioService,
+            paraFogar: true,
+          ),
+        ],
       ],
     );
   }

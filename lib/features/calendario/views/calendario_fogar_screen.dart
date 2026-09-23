@@ -11,9 +11,11 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
+import '../widgets/palabras_do_dia.dart';
 
 /// Calendario Escolar Completo para o Fogar (Familias).
 ///
@@ -116,6 +118,14 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
         setState(() => _contenido = c);
       }
     });
+
+    // El inglés del curso: las palabras de cada día y los totales de cada
+    // trimestre. Aparte y sin esperar: la rutina de casa se pinta igual.
+    if (widget.repository.cursoTprSync == null) {
+      widget.repository.loadCursoTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
 
     _cargarDias();
   }
@@ -556,74 +566,74 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                             scrollDirection: Axis.horizontal,
                             child: Row(
                               children: List.generate(4, (index) {
-                              final s = index + 1;
-                              final isSel = _semana == s;
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 8.0),
-                                child: ChoiceChip(
-                                  label: FittedBox(
-                                    fit: BoxFit.scaleDown,
-                                    child: Text(
-                                        '${isGl ? "Semana" : "Semana"} $s'),
+                                final s = index + 1;
+                                final isSel = _semana == s;
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 8.0),
+                                  child: ChoiceChip(
+                                    label: FittedBox(
+                                      fit: BoxFit.scaleDown,
+                                      child: Text(
+                                          '${isGl ? "Semana" : "Semana"} $s'),
+                                    ),
+                                    selected: isSel,
+                                    onSelected: (selected) {
+                                      if (selected) setState(() => _semana = s);
+                                    },
+                                    selectedColor: AppTheme.primaryVigoBlue,
+                                    labelStyle: TextStyle(
+                                      color: isSel
+                                          ? Colors.white
+                                          : AppTheme.textPrimary,
+                                      fontWeight: isSel
+                                          ? FontWeight.bold
+                                          : FontWeight.normal,
+                                      fontSize: 12,
+                                    ),
                                   ),
-                                  selected: isSel,
-                                  onSelected: (selected) {
-                                    if (selected) setState(() => _semana = s);
-                                  },
-                                  selectedColor: AppTheme.primaryVigoBlue,
-                                  labelStyle: TextStyle(
-                                    color: isSel
-                                        ? Colors.white
-                                        : AppTheme.textPrimary,
-                                    fontWeight: isSel
-                                        ? FontWeight.bold
-                                        : FontWeight.normal,
-                                    fontSize: 12,
-                                  ),
-                                ),
-                               );
-                            }),
+                                );
+                              }),
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 8),
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: List.generate(5, (index) {
-                              final d = index + 1;
-                              final isSel = _diaSemana == d;
-                              final diaNome = isGl
-                                  ? _diasSemanaNomes[index]['gl']!
-                                  : _diasSemanaNomes[index]['es']!;
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 8.0),
-                                child: ChoiceChip(
-                                  label: FittedBox(
-                                    fit: BoxFit.scaleDown,
-                                    child: Text(diaNome),
+                          const SizedBox(height: 8),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: List.generate(5, (index) {
+                                final d = index + 1;
+                                final isSel = _diaSemana == d;
+                                final diaNome = isGl
+                                    ? _diasSemanaNomes[index]['gl']!
+                                    : _diasSemanaNomes[index]['es']!;
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 8.0),
+                                  child: ChoiceChip(
+                                    label: FittedBox(
+                                      fit: BoxFit.scaleDown,
+                                      child: Text(diaNome),
+                                    ),
+                                    selected: isSel,
+                                    onSelected: (selected) {
+                                      if (selected) {
+                                        setState(() => _diaSemana = d);
+                                      }
+                                    },
+                                    selectedColor: AppTheme.primaryVigoBlue,
+                                    labelStyle: TextStyle(
+                                      color: isSel
+                                          ? Colors.white
+                                          : AppTheme.textPrimary,
+                                      fontWeight: isSel
+                                          ? FontWeight.bold
+                                          : FontWeight.normal,
+                                      fontSize: 12,
+                                    ),
                                   ),
-                                  selected: isSel,
-                                  onSelected: (selected) {
-                                    if (selected) {
-                                      setState(() => _diaSemana = d);
-                                    }
-                                  },
-                                  selectedColor: AppTheme.primaryVigoBlue,
-                                  labelStyle: TextStyle(
-                                    color: isSel
-                                        ? Colors.white
-                                        : AppTheme.textPrimary,
-                                    fontWeight: isSel
-                                        ? FontWeight.bold
-                                        : FontWeight.normal,
-                                    fontSize: 12,
-                                  ),
-                                ),
-                              );
-                            }),
+                                );
+                              }),
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
                       ),
                     ),
                     const SizedBox(height: 14),
@@ -868,9 +878,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
               const SizedBox(height: 14),
             ],
 
-            // Ritmo Acumulativo 5 Palabras / Día (CDI MacArthur-Bates & Rescorla)
-            _buildTprRhythmCard(dia, isGl),
-            const SizedBox(height: 14),
+            // Las palabras inglesas de ESTE día: las mismas que la docente ve
+            // en el aula el mismo día de la misma semana.
+            ..._buildPalabrasDoDia(dia, isGl),
 
             // Conexión coa Escola Infantil
             Container(
@@ -995,31 +1005,52 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
     );
   }
 
+  /// Los tres trimestres por meses del calendario, como en el aula.
+  static const List<
+      ({
+        String gl,
+        String es,
+        String mesesGl,
+        String mesesEs,
+        List<int> meses
+      })> _trimestres = [
+    (
+      gl: '1.º Outono',
+      es: '1.º Otoño',
+      mesesGl: 'Set - Dec',
+      mesesEs: 'Sep - Dic',
+      meses: [9, 10, 11, 12]
+    ),
+    (
+      gl: '2.º Inverno',
+      es: '2.º Invierno',
+      mesesGl: 'Xan - Mar',
+      mesesEs: 'Ene - Mar',
+      meses: [1, 2, 3]
+    ),
+    (
+      gl: '3.º Primavera',
+      es: '3.º Primavera',
+      mesesGl: 'Abr - Xuñ',
+      mesesEs: 'Abr - Jun',
+      meses: [4, 5, 6]
+    ),
+  ];
+
+  /// El índice 0..9 del curso (septiembre es 0) de cada mes del calendario.
+  static int _indiceDoMes(int mesCalendario) =>
+      mesCalendario >= 9 ? mesCalendario - 9 : mesCalendario + 3;
+
   int get _trimestreActual {
-    if (_mesIndex <= 3) return 0;
-    if (_mesIndex <= 6) return 1;
-    return 2;
+    for (var i = 0; i < _trimestres.length; i++) {
+      if (_trimestres[i].meses.map(_indiceDoMes).contains(_mesIndex)) return i;
+    }
+    return 0;
   }
 
   Widget _buildTrimesterBar(bool isGl) {
     final trimestreActual = _trimestreActual;
-    final trimestres = [
-      (
-        nome: isGl ? '1.º Outono' : '1.º Otoño',
-        meses: isGl ? 'Set - Dec (320 p.)' : 'Sep - Dic (320 p.)',
-        inicioMes: 0,
-      ),
-      (
-        nome: isGl ? '2.º Inverno' : '2.º Invierno',
-        meses: isGl ? 'Xan - Mar (240 p.)' : 'Ene - Mar (240 p.)',
-        inicioMes: 4,
-      ),
-      (
-        nome: isGl ? '3.º Primavera' : '3.º Primavera',
-        meses: isGl ? 'Abr - Xuñ (240 p.)' : 'Abr - Jun (240 p.)',
-        inicioMes: 7,
-      ),
-    ];
+    final curso = widget.repository.cursoTprSync;
 
     return Container(
       padding: const EdgeInsets.all(3),
@@ -1029,20 +1060,26 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
       ),
       child: Row(
         children: List.generate(3, (i) {
-          final t = trimestres[i];
+          final t = _trimestres[i];
           final isActivo = trimestreActual == i;
+          final inicio = _indiceDoMes(t.meses.first);
+          // Las palabras del trimestre se cuentan en el curso; sin él, el
+          // trimestre va sin número antes que con uno escrito a mano.
+          final meses = isGl ? t.mesesGl : t.mesesEs;
+          final sub = curso == null
+              ? meses
+              : '$meses (${curso.palabrasEnMeses(t.meses)} p.)';
           return Expanded(
             child: InkWell(
               onTap: () {
-                if (_mesIndex != t.inicioMes) {
-                  setState(() => _mesIndex = t.inicioMes);
+                if (_mesIndex != inicio) {
+                  setState(() => _mesIndex = inicio);
                   _cargarDias();
                 }
               },
               borderRadius: BorderRadius.circular(9),
               child: Container(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
+                padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
                 decoration: BoxDecoration(
                   color: isActivo ? Colors.white : Colors.transparent,
                   borderRadius: BorderRadius.circular(9),
@@ -1062,7 +1099,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                     FittedBox(
                       fit: BoxFit.scaleDown,
                       child: Text(
-                        t.nome,
+                        isGl ? t.gl : t.es,
                         style: TextStyle(
                           fontSize: 11,
                           fontWeight:
@@ -1077,7 +1114,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                     FittedBox(
                       fit: BoxFit.scaleDown,
                       child: Text(
-                        t.meses,
+                        sub,
                         style: TextStyle(
                           fontSize: 9,
                           color: isActivo
@@ -1098,119 +1135,30 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
     );
   }
 
-  Widget _buildTprRhythmCard(DiaCalendarioDual dia, bool isGl) {
-    final dNum = dia.diaSemanaNumero;
-    final String bloque;
-    final String carga;
-    final String detalle;
-    final Color cor;
-
-    switch (dNum) {
-      case 1:
-        bloque = isGl
-            ? 'Bloque A · 5 Palabras Novas'
-            : 'Bloque A · 5 Palabras Nuevas';
-        carga = isGl ? 'Carga: 5 palabras' : 'Carga: 5 palabras';
-        detalle = isGl
-            ? 'Introdución das primeiras 5 accións/termos da semana con modelado motor.'
-            : 'Introducción de las primeras 5 acciones/términos de la semana con modelado motor.';
-        cor = const Color(0xFF3182CE);
-        break;
-      case 2:
-        bloque = isGl
-            ? 'Bloque B · 5 Novas + Repaso A'
-            : 'Bloque B · 5 Nuevas + Repaso A';
-        carga = isGl ? 'Carga: 10 palabras' : 'Carga: 10 palabras';
-        detalle = isGl
-            ? '5 palabras novas e repaso das 5 de onte. Doble asociación auditiva e táctil.'
-            : '5 palabras nuevas y repaso de las 5 de ayer. Doble asociación auditiva y táctil.';
-        cor = const Color(0xFF2B6CB0);
-        break;
-      case 3:
-        bloque = isGl
-            ? 'Bloque C · 5 Novas + Repaso A-B'
-            : 'Bloque C · 5 Nuevas + Repaso A-B';
-        carga = isGl ? 'Carga: 15 palabras' : 'Carga: 15 palabras';
-        detalle = isGl
-            ? '5 palabras novas e repaso en cadea de A e B. Fortalecemento da memoria léxica.'
-            : '5 palabras nuevas y repaso en cadena de A y B. Fortalecimiento de la memoria léxica.';
-        cor = const Color(0xFF2C5282);
-        break;
-      case 4:
-        bloque = isGl
-            ? 'Bloque D · 5 Novas + Repaso A-C'
-            : 'Bloque D · 5 Nuevas + Repaso A-C';
-        carga = isGl ? 'Carga: 20 palabras' : 'Carga: 20 palabras';
-        detalle = isGl
-            ? 'Carga acumulativa completa (20 termos). O adulto lidera a acción sen presión de emitir voz.'
-            : 'Carga acumulativa completa (20 términos). El adulto lidera la acción sin presión de emitir voz.';
-        cor = const Color(0xFF1A365D);
-        break;
-      default:
-        bloque = isGl
-            ? 'Gran Reto Semanal «Freeze»'
-            : 'Gran Reto Semanal «Freeze»';
-        carga =
-            isGl ? 'Repaso Activo: 20 palabras' : 'Repaso Activo: 20 palabras';
-        detalle = isGl
-            ? '0 palabras novas. Xogo de conxelación e reto corporal coas 20 palabras da semana.'
-            : '0 palabras nuevas. Juego de congelación y reto corporal con las 20 palabras de la semana.';
-        cor = const Color(0xFF805AD5);
+  /// Las palabras inglesas del día elegido, o nada si el curso no está leído.
+  List<Widget> _buildPalabrasDoDia(DiaCalendarioDual dia, bool isGl) {
+    final curso = widget.repository.cursoTprSync;
+    if (curso == null) return const [];
+    MesTpr? mes;
+    for (final m in curso.meses) {
+      if (m.orden == _mesIndex + 1) mes = m;
     }
-
-    return Container(
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(
-        color: const Color(0xFFF7FAFC),
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: const Color(0xFFE2E8F0)),
+    final plan = mes?.semana(dia.semanaNumero)?.planDoDia(dia.diaSemanaNumero);
+    if (plan == null) return const [];
+    return [
+      BloqueInglesDoDia(
+        key: const Key('palabras_do_dia_calendario_fogar'),
+        rotulo: isGl
+            ? 'O INGLÉS DESTE DÍA NA CASA'
+            : 'EL INGLÉS DE ESTE DÍA EN CASA',
+        plan: plan,
+        modeloDoDia: curso.modelo.dia(dia.diaSemanaNumero),
+        semana: mes!.semana(dia.semanaNumero),
+        language: _language,
+        audioService: widget.audioService,
+        paraFogar: true,
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Icon(Icons.directions_run_rounded, size: 16, color: cor),
-              const SizedBox(width: 6),
-              Expanded(
-                child: Text(
-                  bloque,
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    color: cor,
-                  ),
-                ),
-              ),
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                decoration: BoxDecoration(
-                  color: cor.withValues(alpha: 0.12),
-                  borderRadius: BorderRadius.circular(6),
-                ),
-                child: Text(
-                  carga,
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w700,
-                    color: cor,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 4),
-          Text(
-            detalle,
-            style: const TextStyle(
-              fontSize: 11,
-              color: AppTheme.textSecondary,
-              height: 1.3,
-            ),
-          ),
-        ],
-      ),
-    );
+      const SizedBox(height: 14),
+    ];
   }
 }

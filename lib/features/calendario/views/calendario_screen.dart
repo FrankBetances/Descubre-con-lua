@@ -10,15 +10,14 @@ import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/unidad_model.dart';
-import '../../../data/models/asamblea_segundo_ciclo_model.dart';
-import '../../juega/views/asamblea_player_screen.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
-import '../../juega/widgets/aula_segundo_ciclo_panel.dart';
-import '../../../data/models/asamblea_primeiro_ciclo_model.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../juega/widgets/barra_ingles_widget.dart';
+import '../widgets/asemblea_do_dia.dart';
 import '../widgets/dia_no_fogar.dart';
+import '../widgets/palabras_do_dia.dart';
 import '../../academy/views/guia_atencion_screen.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../juega/views/asamblea_guiada_screen.dart';
@@ -239,11 +238,22 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         'pronunciación de cada frase.',
   );
 
+  /// El inglés del curso: las cinco palabras de cada día y los totales del
+  /// trimestre salen de aquí. Mientras no esté leído, no se pinta ninguno de
+  /// los dos: un «320 p.» escrito a mano podría no ser lo que el curso trae.
+  CursoTpr? get _curso => widget.repository?.cursoTprSync;
+
   @override
   void initState() {
     super.initState();
     _language = widget.initialLanguage;
     _esDocente = widget.esDocenteInicial;
+    final repo = widget.repository;
+    if (repo != null && repo.cursoTprSync == null) {
+      repo.loadCursoTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
 
     final yaCargado = widget.contenido;
     if (yaCargado != null) {
@@ -684,31 +694,55 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     );
   }
 
+  /// Los tres trimestres del curso, por meses del CALENDARIO: así el
+  /// trimestre activo no depende de que la lista de meses empiece en septiembre.
+  static const List<
+      ({
+        LocalizedString nome,
+        LocalizedString meses,
+        List<int> mesesCalendario
+      })> _trimestres = [
+    (
+      nome: LocalizedString(gl: '1.º Outono', es: '1.º Otoño'),
+      meses: LocalizedString(gl: 'Set - Dec', es: 'Sep - Dic'),
+      mesesCalendario: [9, 10, 11, 12],
+    ),
+    (
+      nome: LocalizedString(gl: '2.º Inverno', es: '2.º Invierno'),
+      meses: LocalizedString(gl: 'Xan - Mar', es: 'Ene - Mar'),
+      mesesCalendario: [1, 2, 3],
+    ),
+    (
+      nome: LocalizedString(gl: '3.º Primavera', es: '3.º Primavera'),
+      meses: LocalizedString(gl: 'Abr - Xuñ', es: 'Abr - Jun'),
+      mesesCalendario: [4, 5, 6],
+    ),
+  ];
+
   int get _trimestreActual {
-    if (_mesSeleccionadoIndex <= 3) return 0;
-    if (_mesSeleccionadoIndex <= 6) return 1;
-    return 2;
+    if (_meses.isEmpty) return 0;
+    final mes = _meses[_mesSeleccionadoIndex].mesCalendario;
+    for (var i = 0; i < _trimestres.length; i++) {
+      if (_trimestres[i].mesesCalendario.contains(mes)) return i;
+    }
+    return 0;
   }
 
   Widget _buildTrimesterSelector(ThemeData theme) {
-    final isGl = _language == AppLanguage.gl;
     final trimestreActual = _trimestreActual;
+    final curso = _curso;
+    // Las palabras de cada trimestre se CUENTAN en el curso. Sin el curso
+    // leído, el trimestre se enseña sin número antes que con uno inventado.
     final trimestres = [
-      (
-        nome: isGl ? '1.º Outono' : '1.º Otoño',
-        sub: isGl ? 'Set - Dec (320 p.)' : 'Sep - Dic (320 p.)',
-        inicioMes: 0,
-      ),
-      (
-        nome: isGl ? '2.º Inverno' : '2.º Invierno',
-        sub: isGl ? 'Xan - Mar (240 p.)' : 'Ene - Mar (240 p.)',
-        inicioMes: 4,
-      ),
-      (
-        nome: isGl ? '3.º Primavera' : '3.º Primavera',
-        sub: isGl ? 'Abr - Xuñ (240 p.)' : 'Abr - Jun (240 p.)',
-        inicioMes: 7,
-      ),
+      for (final t in _trimestres)
+        (
+          nome: t.nome.resolve(_language),
+          sub: curso == null
+              ? t.meses.resolve(_language)
+              : '${t.meses.resolve(_language)} (${curso.palabrasEnMeses(t.mesesCalendario)} p.)',
+          inicioMes: _meses
+              .indexWhere((m) => m.mesCalendario == t.mesesCalendario.first),
+        ),
     ];
 
     return Container(
@@ -725,6 +759,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             child: InkWell(
               onTap: () {
                 final targetMes = t.inicioMes;
+                if (targetMes < 0) return;
                 _paginas?.animateToPage(
                   targetMes,
                   duration: const Duration(milliseconds: 260),
@@ -1065,8 +1100,6 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 color: AppTheme.primaryDark,
                 theme: theme,
               ),
-              const SizedBox(height: 14),
-              _buildMatrizSemanalDocente(mes, theme),
             ] else ...[
               TemporizadorSutilWidget(
                 minutosMin: 3,
@@ -1101,10 +1134,9 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   // setembro es 1. Es el mismo número que usa el banco de días.
                   mes: _mesSeleccionadoIndex + 1,
                   language: _language,
+                  audioService: widget.audioService,
                 ),
               ],
-              const SizedBox(height: 14),
-              _buildMatrizSemanalFogar(mes, theme),
               const SizedBox(height: 12),
               InkWell(
                 key: const Key('boton_guia_atencion'),
@@ -1172,213 +1204,6 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     );
   }
 
-  Widget _buildMatrizSemanalDocente(MesCurricular mes, ThemeData theme) {
-    final isGl = _language == AppLanguage.gl;
-    final diasMatriz = [
-      (
-        dia: isGl ? 'Luns' : 'Lunes',
-        blq: isGl ? 'Bloque A (5 novas)' : 'Bloque A (5 nuevas)',
-        carga: '5 p.',
-        cor: const Color(0xFF3182CE),
-      ),
-      (
-        dia: isGl ? 'Martes' : 'Martes',
-        blq: isGl ? 'Bloque B (5 n.) + Repaso A' : 'Bloque B (5 n.) + Repaso A',
-        carga: '10 p.',
-        cor: const Color(0xFF2B6CB0),
-      ),
-      (
-        dia: isGl ? 'Mércores' : 'Miércoles',
-        blq: isGl ? 'Bloque C (5 n.) + Repaso A-B' : 'Bloque C (5 n.) + Repaso A-B',
-        carga: '15 p.',
-        cor: const Color(0xFF2C5282),
-      ),
-      (
-        dia: isGl ? 'Xoves' : 'Jueves',
-        blq: isGl ? 'Bloque D (5 n.) + Repaso A-C' : 'Bloque D (5 n.) + Repaso A-C',
-        carga: '20 p.',
-        cor: const Color(0xFF1A365D),
-      ),
-      (
-        dia: isGl ? 'Venres' : 'Viernes',
-        blq: isGl ? 'Reto Semanal «Freeze» (20 p.)' : 'Reto Semanal «Freeze» (20 p.)',
-        carga: '20 p.',
-        cor: const Color(0xFF805AD5),
-      ),
-    ];
-
-    return Container(
-      padding: const EdgeInsets.all(AppTheme.spaceMd),
-      decoration: BoxDecoration(
-        color: const Color(0xFFF7FAFC),
-        borderRadius: BorderRadius.circular(AppTheme.radiusField),
-        border: Border.all(color: const Color(0xFFE2E8F0)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.psychology_outlined,
-                  size: 20, color: AppTheme.primaryDark),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  isGl
-                      ? 'RITMO SEMANAL TPR · 5 PALABRAS/DÍA'
-                      : 'RITMO SEMANAL TPR · 5 PALABRAS/DÍA',
-                  style: theme.textTheme.labelSmall?.copyWith(
-                    fontWeight: FontWeight.w800,
-                    color: AppTheme.primaryDark,
-                    letterSpacing: 0.8,
-                  ),
-                ),
-              ),
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                decoration: BoxDecoration(
-                  color: AppTheme.primaryTint,
-                  borderRadius: BorderRadius.circular(10),
-                  border:
-                      Border.all(color: AppTheme.primary.withValues(alpha: 0.3)),
-                ),
-                child: Text(
-                  isGl ? '80 p./mes' : '80 p./mes',
-                  style: const TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.bold,
-                    color: AppTheme.primaryDark,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 6),
-          Text(
-            isGl
-                ? 'Distribución acumulativa segundo MacArthur-Bates & Rescorla. O venres consolida o léxico semanal con xogo sensoriomotriz.'
-                : 'Distribución acumulativa según MacArthur-Bates & Rescorla. El viernes consolida el léxico semanal con juego sensoriomotriz.',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: AppTheme.textSecondary,
-              height: 1.3,
-            ),
-          ),
-          const SizedBox(height: 10),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: diasMatriz.map((d) {
-                return Container(
-                  width: 115,
-                  margin: const EdgeInsets.only(right: 8),
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: AppTheme.border),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            d.dia,
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.bold,
-                              color: d.cor,
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 4, vertical: 1),
-                            decoration: BoxDecoration(
-                              color: d.cor.withValues(alpha: 0.12),
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                            child: Text(
-                              d.carga,
-                              style: TextStyle(
-                                fontSize: 9.5,
-                                fontWeight: FontWeight.w700,
-                                color: d.cor,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        d.blq,
-                        style: const TextStyle(
-                          fontSize: 10,
-                          color: AppTheme.textSecondary,
-                          height: 1.2,
-                        ),
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ],
-                  ),
-                );
-              }).toList(),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildMatrizSemanalFogar(MesCurricular mes, ThemeData theme) {
-    final isGl = _language == AppLanguage.gl;
-
-    return Container(
-      padding: const EdgeInsets.all(AppTheme.spaceMd),
-      decoration: BoxDecoration(
-        color: const Color(0xFFFFFBEB),
-        borderRadius: BorderRadius.circular(AppTheme.radiusField),
-        border: Border.all(color: const Color(0xFFFDE68A)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.volunteer_activism_rounded,
-                  size: 20, color: Color(0xFFD97706)),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  isGl
-                      ? 'MICRO-RUTINA FAMILIAR · 3 MINUTOS SEN PANTALLAS'
-                      : 'MICRO-RUTINA FAMILIAR · 3 MINUTOS SIN PANTALLAS',
-                  style: theme.textTheme.labelSmall?.copyWith(
-                    fontWeight: FontWeight.w800,
-                    color: const Color(0xFFB45309),
-                    letterSpacing: 0.8,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 6),
-          Text(
-            isGl
-                ? 'O adulto sostén o dispositivo como partitura. Luns a xoves: modelado motor da orde en inglés. Venres: Gran reto «Freeze» bailando e conxelando o corpo.'
-                : 'El adulto sostiene el dispositivo como partitura. Lunes a jueves: modelado motor de la orden en inglés. Viernes: Gran reto «Freeze» bailando y congelando el cuerpo.',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: const Color(0xFF92400E),
-              height: 1.35,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
   /// La asamblea del DÍA desde la ficha del mes: semana, día y un botón por
   /// grupo (0-2, 2-3, 4.º, 5.º, 6.º). Antes aquí había un botón por nivel de
   /// 2.º ciclo que abría la asamblea del mes entero; el calendario decía «una
@@ -1392,42 +1217,9 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     if (progresions.isEmpty) return const [];
     final referencia = progresions.first;
     final isGl = _language == AppLanguage.gl;
-
-    final grupos = <({String etiqueta, String clave, VoidCallback? abrir})>[];
-    for (final tramo in TramoPrimeiroCiclo.values) {
-      final a = repo.getAsambleaPrimeiroCicloSync(mes.mesCalendario, tramo);
-      grupos.add((
-        etiqueta: tramo.etiquetaCorta.resolve(_language),
-        clave: '1c_${tramo.clave}',
-        abrir: a == null
-            ? null
-            : () => _abrirDia(
-                  clave: 'primeiro_ciclo.${tramo.clave}',
-                  fases: a.fases,
-                  subtitulo:
-                      '${mes.nombreMes.resolve(_language)} · ${tramo.etiquetaCorta.resolve(_language)}',
-                  material: a.materialDoMes.resolve(_language),
-                  cancion: a.cancionDoMes,
-                  centroInteres: a.centroInteres.resolve(_language),
-                ),
-      ));
-    }
-    for (final nivel in NivelEducativoSegundoCiclo.values) {
-      final a = repo.getAsambleaByMesYNivelSync(mes.mesCalendario, nivel);
-      grupos.add((
-        etiqueta: nivel.etiquetaCorta.resolve(_language),
-        clave: '2c_${nivel.clave}',
-        abrir: a == null
-            ? null
-            : () => _abrirDia(
-                  clave: AulaSegundoCicloPanel.claveProgresion(nivel),
-                  fases: a.fases,
-                  subtitulo:
-                      '${mes.nombreMes.resolve(_language)} · ${nivel.etiquetaCorta.resolve(_language)}',
-                  centroInteres: a.centroInteres.resolve(_language),
-                ),
-      ));
-    }
+    final grupos = gruposDaAsembleaDoDia(repo, mes.mesCalendario);
+    final curso = _curso;
+    final plan = curso?.planDoDia(mes.mesCalendario, _semana, _dia);
 
     return [
       const SizedBox(height: 16),
@@ -1445,8 +1237,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       const SizedBox(height: 4),
       Text(
         isGl
-            ? 'Cada día do mes ten a súa asemblea: elixe semana, día e grupo.'
-            : 'Cada día del mes tiene su asamblea: elige semana, día y grupo.',
+            ? 'Cada día do mes ten a súa asemblea e as súas palabras en inglés: elixe semana, día e grupo.'
+            : 'Cada día del mes tiene su asamblea y sus palabras en inglés: elige semana, día y grupo.',
         style: const TextStyle(
           fontSize: 12.5,
           color: AppTheme.textSecondary,
@@ -1465,6 +1257,24 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           _dia = d;
         }),
       ),
+      // Las palabras del MISMO día que la tira: la semana y el día que abren la
+      // asamblea son los que eligen las palabras. Antes había aquí una matriz
+      // aparte, con sus propios días y sin palabras, al lado de esta tira: dos
+      // planes semanales en la misma ficha.
+      if (curso != null && plan != null) ...[
+        const SizedBox(height: 12),
+        BloqueInglesDoDia(
+          key: ValueKey('palabras_do_dia_aula_${mes.mesCalendario}'),
+          rotulo: isGl
+              ? 'INGLÉS DO DÍA · ${curso.modelo.ritmoDiario} PALABRAS NOVAS DE LUNS A XOVES'
+              : 'INGLÉS DEL DÍA · ${curso.modelo.ritmoDiario} PALABRAS NUEVAS DE LUNES A JUEVES',
+          plan: plan,
+          modeloDoDia: curso.modelo.dia(_dia),
+          semana: curso.semana(mes.mesCalendario, _semana),
+          language: _language,
+          audioService: widget.audioService,
+        ),
+      ],
       const SizedBox(height: 10),
       Wrap(
         spacing: 8,
@@ -1473,44 +1283,27 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           for (final g in grupos)
             OutlinedButton(
               key: ValueKey('calendario_dia_${mes.mesCalendario}_${g.clave}'),
-              onPressed: g.abrir,
+              onPressed: g.disponible
+                  ? () => abrirAsembleaDoDia(
+                        context,
+                        repo: repo,
+                        grupo: g,
+                        mesCalendario: mes.mesCalendario,
+                        semana: _semana,
+                        dia: _dia,
+                        language: _language,
+                        audioService: widget.audioService,
+                      )
+                  : null,
               style: OutlinedButton.styleFrom(
                 minimumSize: const Size(0, AppTheme.touchMin),
                 foregroundColor: AppTheme.primaryInk,
               ),
-              child: Text(g.etiqueta),
+              child: Text(g.etiqueta.resolve(_language)),
             ),
         ],
       ),
     ];
-  }
-
-  void _abrirDia({
-    required String clave,
-    required List<FaseAsamblea> fases,
-    required String subtitulo,
-    String? material,
-    String? cancion,
-    String? centroInteres,
-  }) {
-    final progresion = widget.repository?.getProgresionSync(clave);
-    final dia = progresion?.dia(_semana, _dia);
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => AsambleaPlayerScreen(
-          fases: dia?.aplicarA(fases) ?? fases,
-          subtitulo:
-              '$subtitulo${dia != null ? ' · S${dia.semana} ${dia.nomeDia.resolve(_language)}' : ''}',
-          material: material,
-          cancion: cancion,
-          centroInteres: centroInteres,
-          audioService: widget.audioService,
-          language: _language,
-          dia: dia,
-          semana: progresion?.semana(_semana),
-        ),
-      ),
-    );
   }
 
   Widget _buildRoleSection({

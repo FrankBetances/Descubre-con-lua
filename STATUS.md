@@ -9,6 +9,42 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Cinco palabras inglesas al día: el curso de 800 · **en la rama `claude/tender-hamilton-mzhnxj`, pendiente de mergear** (23/9/2026)
+
+Orden de Frank: «elimina eso de 6 palabras por mes, lo correcto es 5 palabras
+diarias», con el documento «Modelo de Adquisición Natural y Proyección Anual».
+La rama lleva además el commit de la rama `UI` de Frank (`0964f40`), corregido.
+
+- El léxico mensual de `meses.json` (6 palabras × 10 meses) ya no existe. Sus
+  60 palabras están dentro del curso nuevo.
+- `assets/content/tpr/`: 10 meses × 4 semanas × 20 palabras = 800, cada una con
+  significado gl/es, gesto gl/es y categoría. Reparto 280/200/160/96/64.
+- Donde se ve: tarjeta «Hoxe na aula» del Portal Docentes, hoja «Ver as 800
+  palabras», bloque del día en el Calendario (aula y casa), calendario de casa y
+  tarjeta del Portal Familias. Todo lee el mismo día que la asamblea.
+- Las palabras NO van dentro del reproductor de la asamblea: su fase núcleo ya
+  desborda a 360×640 en 43 de 50 asambleas antes de este cambio.
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| `flutter test` (suite entera) | 526/526 |
+| `test/features/tpr_pantallas_test.dart` | 76/76; incluye los 200 días del curso a 360 de ancho, gl/es, escala 1,0 y 1,8. Que el arnés caza un desborde se comprobó metiendo uno a propósito |
+| `tools/planificador_5_palabras.py --check` | OK; con cuatro defectos metidos en una copia, los cuatro salen |
+| `dart format`, `flutter analyze` y el resto de gates de contenido | OK, incluido `check_voice_levels.py` (10.991 grabaciones, ninguna por encima de −1 dBFS) |
+| Manual: PDF y Word regenerados | 20 páginas (antes 19), mirados página a página; ninguna figura sale de la hoja (medido con PyMuPDF) |
+| Capturas `calendario-*` | regeneradas; en `main` ya no coincidían `bienvenida-*`, `aula-unidades-*` y `aula-lista-2ciclo-*`, que no se han tocado |
+| App de escritorio Linux (Xvfb 460×1000) | Portal Docentes → «Hoxe na aula» y «Ver as 800 palabras» vistos en gallego |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato.** Tampoco con texto grande del sistema.
+- `every locution has a recording`: faltan 629 grabaciones inglesas; las
+  sintetiza el workflow de voz al empujar.
+
+---
+
 ## El inglés que la app enseña: 4.000 palabras que suenan, con su frase · **en main, grabado y con los gates en verde** (21/9/2026)
 
 Tres órdenes de Frank, en este orden:

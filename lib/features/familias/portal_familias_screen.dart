@@ -20,6 +20,7 @@ import '../lectura/views/aprender_a_ler_screen.dart';
 import '../premios/premios_repository.dart';
 import '../premios/premios_screen.dart';
 import 'views/xogos_fogar_screen.dart';
+import 'widgets/tarxeta_ingles_de_hoxe_fogar.dart';
 
 /// Pantalla independente do Portal Familias.
 ///
@@ -111,6 +112,11 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   void initState() {
     super.initState();
     _language = widget.currentLanguage;
+    if (widget.repository.cursoTprSync == null) {
+      widget.repository.loadCursoTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
   }
 
   @override
@@ -359,108 +365,28 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 14.0),
 
-            // Card Destacada: Ritmo de 5 Palabras Diarias e Reto TPR (Zero-Screen)
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: const Color(0xFFFAF5FF),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: const Color(0xFFE9D8FD), width: 1.5),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 8, vertical: 3),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF805AD5),
-                          borderRadius: BorderRadius.circular(6),
-                        ),
-                        child: Text(
-                          isGl ? 'RITMO DIARIO TPR' : 'RITMO DIARIO TPR',
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w800,
-                            letterSpacing: 0.6,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: Text(
-                          isGl
-                              ? '5 palabras novas / día · 20 / semana'
-                              : '5 palabras nuevas / día · 20 / semana',
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF553C9A),
-                          ),
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    isGl
-                        ? 'Modelo de adquisición natural (CDI MacArthur-Bates & Rescorla): luns a xoves 5 palabras con modelado motriz corporal; venres, Gran Reto Freeze acumulativo sen pantallas.'
-                        : 'Modelo de adquisición natural (CDI MacArthur-Bates & Rescorla): lunes a jueves 5 palabras con modelado motriz corporal; viernes, Gran Reto Freeze acumulativo sin pantallas.',
-                    style: const TextStyle(
-                      fontSize: 12.5,
-                      color: Color(0xFF4A5568),
-                      height: 1.35,
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: OutlinedButton.icon(
-                      onPressed: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (_) => XogosFogarScreen(
-                              initialLanguage: _language,
-                              audioService: widget.audioService,
-                            ),
-                          ),
-                        );
-                      },
-                      icon: const Icon(Icons.sports_gymnastics_rounded,
-                          size: 16, color: Color(0xFF6B46C1)),
-                      label: FittedBox(
-                        fit: BoxFit.scaleDown,
-                        child: Text(
-                          isGl
-                              ? 'Ver xogos e dinámicas de 3 min'
-                              : 'Ver juegos y dinámicas de 3 min',
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF6B46C1),
-                          ),
-                        ),
-                      ),
-                      style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: Color(0xFFD6BCFA)),
-                        backgroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 12, vertical: 8),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
+            // O inglés de hoxe na casa: as MESMAS palabras que a escola ese
+            // día. Sen o curso lido, non hai tarxeta: «cinco palabras hoxe»
+            // sen as palabras non axuda.
+            if (widget.repository.cursoTprSync case final curso?) ...[
+              const SizedBox(height: 14.0),
+              TarxetaInglesDeHoxeFogar(
+                curso: curso,
+                language: _language,
+                audioService: widget.audioService,
+                onVerXogos: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => XogosFogarScreen(
+                        initialLanguage: _language,
+                        audioService: widget.audioService,
                       ),
                     ),
-                  ),
-                ],
+                  );
+                },
               ),
-            ),
+            ],
             const SizedBox(height: 18.0),
 
             // Selector e Filtros de Dinámicas e Exercicios

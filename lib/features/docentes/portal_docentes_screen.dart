@@ -7,17 +7,22 @@ import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/formacion_model.dart';
+import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../academy/widgets/selector_idioma_widget.dart';
 import '../calendario/views/calendario_screen.dart';
+import '../calendario/widgets/asemblea_do_dia.dart';
+import '../calendario/widgets/palabras_do_dia.dart';
 import '../english/views/english_hub_screen.dart';
 import '../formacion/views/formacion_screen.dart';
 import '../juega/views/unidades_list_screen.dart';
+import '../juega/widgets/aula_ciclo_panel.dart';
 import '../palabras/views/vocabulario_ingles_screen.dart';
 import '../planificador/views/dinamicas_screen.dart';
 import '../planificador/views/estrategias_screen.dart';
 import '../planificador/views/planificador_screen.dart';
 import '../premios/premios_repository.dart';
+import 'widgets/hoxe_na_aula.dart';
 
 /// Pantalla independente do Portal Docentes.
 ///
@@ -63,10 +68,19 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     es: 'Recursos pedagógicos para las escuelas infantiles municipales de Vigo. Asambleas de aula a 72 bpm, planificador curricular y estrategias educativas.',
   );
 
+  /// El inglés del curso. La tarjeta de hoy no se pinta hasta que está: una
+  /// tarjeta de «cinco palabras hoy» sin palabras diría algo que no enseña.
+  CursoTpr? get _curso => widget.repository.cursoTprSync;
+
   @override
   void initState() {
     super.initState();
     _language = widget.currentLanguage;
+    if (widget.repository.cursoTprSync == null) {
+      widget.repository.loadCursoTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
   }
 
   @override
@@ -82,338 +96,102 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     widget.onLanguageChanged?.call(newLang);
   }
 
-  String _obtenerPlanDoDia(bool isGl) {
-    final weekday = DateTime.now().weekday; // 1 = Luns .. 5 = Venres
-    switch (weekday) {
-      case 1:
-        return isGl
-            ? 'Luns · Bloque A (5 palabras novas) · Modelado motriz directo e pulso a 72 bpm.'
-            : 'Lunes · Bloque A (5 palabras nuevas) · Modelado motriz directo y pulso a 72 bpm.';
-      case 2:
-        return isGl
-            ? 'Martes · Bloque B (5 novas) + Repaso Bloque A (10 palabras) · Contraste motriz e velocidade.'
-            : 'Martes · Bloque B (5 nuevas) + Repaso Bloque A (10 palabras) · Contraste motriz y velocidad.';
-      case 3:
-        return isGl
-            ? 'Mércores · Bloque C (5 novas) + Repaso A e B (15 palabras) · Circuíto TPR con comandos encadeados.'
-            : 'Miércoles · Bloque C (5 nuevas) + Repaso A y B (15 palabras) · Circuito TPR con comandos encadenados.';
-      case 4:
-        return isGl
-            ? 'Xoves · Bloque D (5 novas) + Repaso A, B e C (20 palabras) · Conto motor integrado das 20 palabras.'
-            : 'Jueves · Bloque D (5 nuevas) + Repaso A, B y C (20 palabras) · Cuento motor integrado de las 20 palabras.';
-      case 5:
-        return isGl
-            ? 'Venres · 0 novas + Consolidación total (20 palabras) · ¡Gran Reto TPR Acumulativo e Freeze!'
-            : 'Viernes · 0 nuevas + Consolidación total (20 palabras) · ¡Gran Reto TPR Acumulativo y Freeze!';
-      default:
-        return isGl
-            ? 'Fin de semana · Planificación: 20 palabras preparadas para a vindeira semana.'
-            : 'Fin de semana · Planificación: 20 palabras preparadas para la próxima semana.';
-    }
+  /// «Iniciar asemblea de hoxe»: el día ya está decidido; falta el grupo, que
+  /// el portal no puede saber. Se elige aquí y se abre la asamblea de ESE día
+  /// por el mismo camino que el calendario.
+  void _iniciarAsembleaDeHoxe(BuildContext context, DiaDoCursoTpr hoxe) {
+    final isGl = _language == AppLanguage.gl;
+    final grupos = gruposDaAsembleaDoDia(widget.repository, hoxe.mesCalendario);
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: Colors.white,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+      ),
+      builder: (sheetContext) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                isGl ? 'Para que grupo?' : '¿Para qué grupo?',
+                style: const TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                  color: AppTheme.primaryInk,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                '${nomeDoMes[hoxe.mesCalendario]!.resolve(_language)} · '
+                '${isGl ? 'Semana' : 'Semana'} ${hoxe.semana} · '
+                '${PalabrasDoDia.nomesDosDias[hoxe.dia - 1].resolve(_language)}',
+                style: const TextStyle(
+                  fontSize: 13,
+                  color: AppTheme.textSecondary,
+                ),
+              ),
+              const SizedBox(height: 14),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final g in grupos)
+                    OutlinedButton(
+                      key: ValueKey('hoxe_grupo_${g.clave}'),
+                      onPressed: g.disponible
+                          ? () {
+                              Navigator.of(sheetContext).pop();
+                              abrirAsembleaDoDia(
+                                context,
+                                repo: widget.repository,
+                                grupo: g,
+                                mesCalendario: hoxe.mesCalendario,
+                                semana: hoxe.semana,
+                                dia: hoxe.dia,
+                                language: _language,
+                                audioService: widget.audioService,
+                              );
+                            }
+                          : null,
+                      style: OutlinedButton.styleFrom(
+                        minimumSize: const Size(0, AppTheme.touchMin),
+                        foregroundColor: AppTheme.primaryInk,
+                      ),
+                      child: Text(g.etiqueta.resolve(_language)),
+                    ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
-  List<String> _obtenerPalabrasDoDia() {
-    final weekday = DateTime.now().weekday;
-    switch (weekday) {
-      case 1:
-        return const ['Head', 'Shoulders', 'Knees', 'Toes', 'Freeze'];
-      case 2:
-        return const ['Eyes', 'Ears', 'Mouth', 'Nose', 'Jump'];
-      case 3:
-        return const ['Hands', 'Feet', 'Walk', 'Stop', 'Turn'];
-      case 4:
-        return const ['Big', 'Small', 'Up', 'Down', 'Clap'];
-      case 5:
-        return const ['Freeze', 'Head', 'Eyes', 'Hands', 'Big'];
-      default:
-        return const ['Head', 'Shoulders', 'Knees', 'Toes', 'Freeze'];
-    }
-  }
-
-  void _mostrarProxeccionAnual(BuildContext context, bool isGl) {
-    showModalBottomSheet(
+  /// «Ver as 800 palabras»: los números del curso, contados en el contenido.
+  void _mostrarProxeccionAnual(BuildContext context, CursoTpr curso) {
+    showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
       backgroundColor: Colors.white,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
-      builder: (context) {
-        return DraggableScrollableSheet(
-          expand: false,
-          initialChildSize: 0.85,
-          maxChildSize: 0.95,
-          minChildSize: 0.5,
-          builder: (context, scrollController) {
-            return ListView(
-              controller: scrollController,
-              padding: const EdgeInsets.all(20),
-              children: [
-                Center(
-                  child: Container(
-                    width: 40,
-                    height: 4,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFCBD5E0),
-                      borderRadius: BorderRadius.circular(2),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Row(
-                  children: [
-                    const CircleAvatar(
-                      backgroundColor: Color(0xFFEBF8FF),
-                      radius: 20,
-                      child: Icon(Icons.bar_chart_rounded,
-                          color: AppTheme.primaryVigoBlue, size: 24),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            isGl
-                                ? 'PROXECCIÓN LÉXICA ANUAL (800 PALABRAS)'
-                                : 'PROYECCIÓN LÉXICA ANUAL (800 PALABRAS)',
-                            style: const TextStyle(
-                              fontSize: 10.5,
-                              fontWeight: FontWeight.w800,
-                              color: AppTheme.primaryVigoBlue,
-                              letterSpacing: 0.8,
-                            ),
-                          ),
-                          const SizedBox(height: 2),
-                          Text(
-                            isGl
-                                ? 'Adquisición Natural · 10 Meses'
-                                : 'Adquisición Natural · 10 Meses',
-                            style: const TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.bold,
-                              color: AppTheme.primaryInk,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                Container(
-                  padding: const EdgeInsets.all(14),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFF7FAFC),
-                    borderRadius: BorderRadius.circular(14),
-                    border: Border.all(color: AppTheme.border),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        isGl
-                            ? 'Rendemento Matemático do Curso Escolar'
-                            : 'Rendimiento Matemático del Curso Escolar',
-                        style: const TextStyle(
-                          fontSize: 13.5,
-                          fontWeight: FontWeight.bold,
-                          color: AppTheme.primaryInk,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      _buildMatematicaRow(
-                        isGl ? 'Luns a Xoves:' : 'Lunes a Jueves:',
-                        isGl
-                            ? '5 palabras novas/día × 4 días = 20 / semana'
-                            : '5 palabras nuevas/día × 4 días = 20 / semana',
-                      ),
-                      const SizedBox(height: 4),
-                      _buildMatematicaRow(
-                        isGl ? 'Venres:' : 'Viernes:',
-                        isGl
-                            ? '0 novas + Gran Reto TPR das 20 da semana'
-                            : '0 nuevas + Gran Reto TPR de las 20 de la semana',
-                      ),
-                      const SizedBox(height: 4),
-                      _buildMatematicaRow(
-                        isGl ? 'Rendemento Mensual:' : 'Rendimiento Mensual:',
-                        isGl
-                            ? '20 palabras/semana × 4 semanas = 80 / mes'
-                            : '20 palabras/semana × 4 semanas = 80 / mes',
-                      ),
-                      const SizedBox(height: 4),
-                      _buildMatematicaRow(
-                        isGl ? 'Rendemento Anual:' : 'Rendimiento Anual:',
-                        isGl
-                            ? '80 palabras/mes × 10 meses = 800 palabras / curso'
-                            : '80 palabras/mes × 10 meses = 800 palabras / curso',
-                        destacado: true,
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 18),
-                Text(
-                  isGl
-                      ? 'DISTRIBUCIÓN POR CATEGORÍAS (CDI MacArthur-Bates & Rescorla)'
-                      : 'DISTRIBUCIÓN POR CATEGORÍAS (CDI MacArthur-Bates & Rescorla)',
-                  style: const TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w800,
-                    color: AppTheme.textSecondary,
-                    letterSpacing: 0.8,
-                  ),
-                ),
-                const SizedBox(height: 12),
-                _buildCategoriaItem(
-                  titulo: isGl ? 'Sustantivos (Nouns) ~35%' : 'Sustantivos (Nouns) ~35%',
-                  detalle: isGl
-                      ? '280 palabras · Etiquetas concretas (corpo, animais, obxectos)'
-                      : '280 palabras · Etiquetas concretas (cuerpo, animales, objetos)',
-                  cor: const Color(0xFF3182CE),
-                  porcentaxe: 0.35,
-                ),
-                const SizedBox(height: 10),
-                _buildCategoriaItem(
-                  titulo: isGl ? 'Verbos de Acción (Verbs) ~25%' : 'Verbos de Acción (Verbs) ~25%',
-                  detalle: isGl
-                      ? '200 palabras · Comandos motrices TPR (jump, freeze, walk, stop)'
-                      : '200 palabras · Comandos motrices TPR (jump, freeze, walk, stop)',
-                  cor: const Color(0xFF38A169),
-                  porcentaxe: 0.25,
-                ),
-                const SizedBox(height: 10),
-                _buildCategoriaItem(
-                  titulo: isGl ? 'Adxectivos / Sensorial ~20%' : 'Adjetivos / Sensorial ~20%',
-                  detalle: isGl
-                      ? '160 palabras · Atributos e cualidades perceptivas (big, soft, cold)'
-                      : '160 palabras · Atributos y cualidades perceptivas (big, soft, cold)',
-                  cor: const Color(0xFFDD6B20),
-                  porcentaxe: 0.20,
-                ),
-                const SizedBox(height: 10),
-                _buildCategoriaItem(
-                  titulo: isGl ? 'Oracións e Preguntas ~12%' : 'Oraciones y Preguntas ~12%',
-                  detalle: isGl
-                      ? '96 palabras · Sintaxe básica e interacción comunicativa'
-                      : '96 palabras · Sintaxis básica e interacción comunicativa',
-                  cor: const Color(0xFF805AD5),
-                  porcentaxe: 0.12,
-                ),
-                const SizedBox(height: 10),
-                _buildCategoriaItem(
-                  titulo: isGl ? 'Complexas e Conectores ~8%' : 'Complejas y Conectores ~8%',
-                  detalle: isGl
-                      ? '64 palabras · Fluidez natural, conectores e matices'
-                      : '64 palabras · Fluidez natural, conectores y matices',
-                  cor: const Color(0xFFD69E2E),
-                  porcentaxe: 0.08,
-                ),
-                const SizedBox(height: 24),
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () => Navigator.of(context).pop(),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.primaryVigoBlue,
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 12),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                    ),
-                    child: Text(
-                      isGl ? 'Pechar Proxección' : 'Cerrar Proyección',
-                      style: const TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
-              ],
-            );
-          },
-        );
-      },
-    );
-  }
-
-  Widget _buildMatematicaRow(String label, String valor,
-      {bool destacado = false}) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          label,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: destacado ? FontWeight.w800 : FontWeight.bold,
-            color: destacado ? AppTheme.primaryDark : AppTheme.textPrimary,
-          ),
+      builder: (sheetContext) => DraggableScrollableSheet(
+        expand: false,
+        initialChildSize: 0.85,
+        maxChildSize: 0.95,
+        minChildSize: 0.5,
+        builder: (context, scrollController) => ProxeccionDoCurso(
+          curso: curso,
+          language: _language,
+          scrollController: scrollController,
+          onPechar: () => Navigator.of(sheetContext).pop(),
         ),
-        const SizedBox(width: 6),
-        Expanded(
-          child: Text(
-            valor,
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: destacado ? FontWeight.w800 : FontWeight.w500,
-              color: destacado ? AppTheme.primaryDark : const Color(0xFF4A5568),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildCategoriaItem({
-    required String titulo,
-    required String detalle,
-    required Color cor,
-    required double porcentaxe,
-  }) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              titulo,
-              style: TextStyle(
-                fontSize: 12.5,
-                fontWeight: FontWeight.bold,
-                color: cor,
-              ),
-            ),
-            Text(
-              '${(porcentaxe * 100).toInt()}%',
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.bold,
-                color: cor,
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 4),
-        ClipRRect(
-          borderRadius: BorderRadius.circular(4),
-          child: LinearProgressIndicator(
-            value: porcentaxe,
-            backgroundColor: cor.withValues(alpha: 0.15),
-            valueColor: AlwaysStoppedAnimation<Color>(cor),
-            minHeight: 6,
-          ),
-        ),
-        const SizedBox(height: 3),
-        Text(
-          detalle,
-          style: const TextStyle(
-            fontSize: 11,
-            color: AppTheme.textSecondary,
-          ),
-        ),
-      ],
+      ),
     );
   }
 
@@ -421,8 +199,7 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isGl = _language == AppLanguage.gl;
-    final planDoDia = _obtenerPlanDoDia(isGl);
-    final palabrasDoDia = _obtenerPalabrasDoDia();
+    final curso = _curso;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -551,163 +328,17 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
             ),
             const SizedBox(height: 16.0),
 
-            // Card Destacada: Hoxe na Aula (Asamblea & Dinámica TPR das 5 Palabras)
-            Card(
-              elevation: 1,
-              clipBehavior: Clip.antiAlias,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-                side: const BorderSide(
-                    color: AppTheme.primaryVigoBlue, width: 1.5),
+            // Hoxe na aula: las cinco palabras del día que toca, del curso.
+            if (curso != null) ...[
+              TarxetaHoxeNaAula(
+                curso: curso,
+                language: _language,
+                audioService: widget.audioService,
+                onIniciarAsemblea: (d) => _iniciarAsembleaDeHoxe(context, d),
+                onVerPalabras: () => _mostrarProxeccionAnual(context, curso),
               ),
-              color: const Color(0xFFF0F7FF),
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        const CircleAvatar(
-                          radius: 18,
-                          backgroundColor: AppTheme.primaryTint,
-                          child: Icon(Icons.bolt_rounded,
-                              color: AppTheme.primaryVigoBlue, size: 22),
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                isGl
-                                    ? 'HOXE NA AULA · RITMO TPR'
-                                    : 'HOY EN EL AULA · RITMO TPR',
-                                style: const TextStyle(
-                                  fontSize: 10.5,
-                                  fontWeight: FontWeight.w800,
-                                  color: AppTheme.primaryVigoBlue,
-                                  letterSpacing: 0.6,
-                                ),
-                              ),
-                              const SizedBox(height: 1),
-                              Text(
-                                isGl
-                                    ? 'Matriz de Reforzo Acumulativo'
-                                    : 'Matriz de Refuerzo Acumulativo',
-                                style: const TextStyle(
-                                  fontSize: 14.5,
-                                  fontWeight: FontWeight.bold,
-                                  color: AppTheme.primaryInk,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      planDoDia,
-                      style: const TextStyle(
-                        fontSize: 12.5,
-                        color: Color(0xFF2D3748),
-                        height: 1.35,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Wrap(
-                      spacing: 6,
-                      runSpacing: 6,
-                      children: palabrasDoDia.map((palabra) {
-                        return Container(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 8, vertical: 3),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(8),
-                            border: Border.all(color: const Color(0xFFBEE3F8)),
-                          ),
-                          child: Text(
-                            palabra,
-                            style: const TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFF2B6CB0),
-                            ),
-                          ),
-                        );
-                      }).toList(),
-                    ),
-                    const SizedBox(height: 12),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: ElevatedButton.icon(
-                            onPressed: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (_) => UnidadesListScreen(
-                                    repository: widget.repository,
-                                    premios: widget.premios,
-                                    calendario: widget.calendario,
-                                    audioService: widget.audioService,
-                                    initialLanguage: _language,
-                                    onLanguageChanged: _handleLanguageChanged,
-                                  ),
-                                ),
-                              );
-                            },
-                            icon: const Icon(Icons.play_arrow_rounded,
-                                size: 18),
-                            label: FittedBox(
-                              fit: BoxFit.scaleDown,
-                              child: Text(
-                                isGl
-                                    ? 'Iniciar Asemblea de Hoxe'
-                                    : 'Iniciar Asamblea de Hoy',
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 12),
-                              ),
-                            ),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: AppTheme.primaryVigoBlue,
-                              foregroundColor: Colors.white,
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 12, vertical: 10),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        OutlinedButton(
-                          onPressed: () =>
-                              _mostrarProxeccionAnual(context, isGl),
-                          style: OutlinedButton.styleFrom(
-                            side: const BorderSide(
-                                color: AppTheme.primaryVigoBlue),
-                            foregroundColor: AppTheme.primaryVigoBlue,
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 12, vertical: 10),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                          child: Text(
-                            isGl ? 'Ver 800 Palabras' : 'Ver 800 Palabras',
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 11.5),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            const SizedBox(height: 18.0),
+              const SizedBox(height: 18.0),
+            ],
 
             // ==========================================
             // SECCIÓN 1: ASEMBLEA E AULA ACTIVA

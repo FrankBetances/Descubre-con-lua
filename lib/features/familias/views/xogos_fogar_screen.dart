@@ -224,10 +224,12 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       tituloEs: 'El Circuito de las 5 Palabras Diarias',
       idade: '2-6 anos',
       duracionMin: 4,
-      materiaisGl: '5 cartolinas ou obxectos no chan: Head, Knees, Toes, Jump, Freeze',
-      materiaisEs: '5 cartulinas u objetos en el suelo: Head, Knees, Toes, Jump, Freeze',
-      obxectivoGl: 'Ritmo neurocognitivo natural: 5 palabras novas con modelado motriz',
-      obxectivoEs: 'Ritmo neurocognitivo natural: 5 palabras nuevas con modelado motriz',
+      materiaisGl:
+          'Cinco cartolinas no chan, unha por cada palabra nova de hoxe (están no calendario da casa)',
+      materiaisEs:
+          'Cinco cartulinas en el suelo, una por cada palabra nueva de hoy (están en el calendario de casa)',
+      obxectivoGl: 'As cinco palabras novas do día, cada unha co seu xesto',
+      obxectivoEs: 'Las cinco palabras nuevas del día, cada una con su gesto',
       fraseEn: 'Touch your head, touch your knees, freeze!',
       guionAdultoGl:
           'Marca as estacións no chan. Modela o movemento primeiro e convida a saltar á seguinte cando escoite o comando.',
@@ -249,9 +251,12 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       idade: '2-6 anos',
       duracionMin: 5,
       materiaisGl: 'Música a 72 bpm, voz viva da persoa adulta e espazo aberto',
-      materiaisEs: 'Música a 72 bpm, voz viva de la persona adulta y espacio abierto',
-      obxectivoGl: 'Inhibición motriz, discriminación auditiva e reforzo acumulativo (20 palabras)',
-      obxectivoEs: 'Inhibición motriz, discriminación auditiva y refuerzo acumulativo (20 palabras)',
+      materiaisEs:
+          'Música a 72 bpm, voz viva de la persona adulta y espacio abierto',
+      obxectivoGl:
+          'Inhibición motriz, discriminación auditiva e reforzo acumulativo (20 palabras)',
+      obxectivoEs:
+          'Inhibición motriz, discriminación auditiva y refuerzo acumulativo (20 palabras)',
       fraseEn: 'Dance, dance, jump... Freeze like a statue!',
       guionAdultoGl:
           'Bate palmas a compás mentres bailades. De súpeto, di en voz clara: «Freeze!». Agarda 5 segundos en silencio.',
@@ -268,27 +273,31 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
     ),
     XogoFogarItem(
       id: 'xogo_09_caixa_sons_texturas',
-      tituloGl: 'A Caixa dos Sons e Texturas Reais',
-      tituloEs: 'La Caja de Sonidos y Texturas Reales',
+      tituloGl: 'A Caixa das Texturas',
+      tituloEs: 'La Caja de las Texturas',
       idade: '1-5 anos',
       duracionMin: 4,
-      materiaisGl: 'Caixa con orificio e 4 texturas: algodón suave, piña, cuncha e madeira',
-      materiaisEs: 'Caja con orificio y 4 texturas: algodón suave, piña, concha y madera',
-      obxectivoGl: 'Discriminación fónica de pares mínimos (/b/ vs /p/) e discriminación háptica',
-      obxectivoEs: 'Discriminación fónica de pares mínimos (/b/ vs /p/) y discriminación háptica',
-      fraseEn: 'Soft like a bear, smooth like a pear!',
+      materiaisGl:
+          'Caixa con orificio e catro texturas grandes: algodón, piña, cuncha grande e madeira',
+      materiaisEs:
+          'Caja con orificio y cuatro texturas grandes: algodón, piña, concha grande y madera',
+      obxectivoGl:
+          'Discriminación táctil e as palabras soft, spiky, smooth e hard',
+      obxectivoEs:
+          'Discriminación táctil y las palabras soft, spiky, smooth y hard',
+      fraseEn: 'Find something soft!',
       guionAdultoGl:
-          'Mete a man na caixa sen mirar. Pide á crianza: «Find the soft bear!». Deixa que explore co tacto antes de sacar.',
+          'Mete as catro texturas na caixa. Pide á crianza: «Find something soft!». Deixa que explore co tacto antes de sacar.',
       guionAdultoEs:
-          'Mete la mano en la caja sin mirar. Pide a la criatura: «Find the soft bear!». Deja que explore con el tacto antes de sacar.',
+          'Mete las cuatro texturas en la caja. Pide a la criatura: «Find something soft!». Deja que explore con el tacto antes de sacar.',
       accionKinestesicaGl:
-          'Introduce a man na caixa, palpa as texturas e extrae o elemento correspondente.',
+          'Introduce a man na caixa, palpa as texturas e saca a que se pediu.',
       accionKinestesicaEs:
-          'Introduce la mano en la caja, palpa las texturas y extrae el elemento correspondiente.',
+          'Introduce la mano en la caja, palpa las texturas y saca la que se ha pedido.',
       criterioExitoGl:
-          'Diferencia o elemento polo tacto antes de miralo e sorrí ao acertar.',
+          'Diferencia a textura polo tacto antes de mirala e sorrí ao acertar.',
       criterioExitoEs:
-          'Diferencia el elemento por el tacto antes de mirarlo y sonríe al acertar.',
+          'Diferencia la textura por el tacto antes de mirarla y sonríe al acertar.',
     ),
     XogoFogarItem(
       id: 'xogo_10_eco_pes_mans',
@@ -298,8 +307,10 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       duracionMin: 3,
       materiaisGl: 'Chan de madeira ou alfombra e o propio corpo',
       materiaisEs: 'Suelo de madera o alfombra y el propio cuerpo',
-      obxectivoGl: 'Sincronización rítmica bilateral, propiocepción e resposta fónica de eco',
-      obxectivoEs: 'Sincronización rítmica bilateral, propiocepción y respuesta fónica de eco',
+      obxectivoGl:
+          'Sincronización rítmica bilateral, propiocepción e resposta fónica de eco',
+      obxectivoEs:
+          'Sincronización rítmica bilateral, propiocepción y respuesta fónica de eco',
       fraseEn: 'Clap your hands, stomp your feet!',
       guionAdultoGl:
           'Bate dúas palmas e logo bate dous pés no chan a compás de corazón (72 bpm). Pide que faga o eco.',

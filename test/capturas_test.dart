@@ -14,6 +14,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
+import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
@@ -145,6 +146,20 @@ void main() {
       );
     });
     return contenido;
+  }
+
+  /// El inglés del curso, ya leído, como lo deja `main.dart` antes de la
+  /// primera pantalla. Sin esto el calendario lo pide por su cuenta y, bajo el
+  /// reloj falso, unas veces llega antes de la foto y otras no: el trimestre
+  /// salía con «(320 p.)» en una imagen y sin él en la de al lado.
+  Future<void> cursoTprLeido(WidgetTester tester) async {
+    await tester.runAsync(() async {
+      contenido.addCursoTpr(await CursoTpr.cargar(
+        stringLoader: (path) => File(path).readAsString(),
+      ));
+    });
+    expect(contenido.cursoTprSync?.totalPalabras, 800,
+        reason: 'O inglés do curso non chegou a lerse.');
   }
 
   /// Un calendario con días ya enlazados: sin esto la imagen enseñaría el
@@ -600,6 +615,7 @@ void main() {
     });
 
     testWidgets('calendario · lado familia · $l', (tester) async {
+      await cursoTprLeido(tester);
       final calendario = await calendarioConProgreso(tester);
       final cal = await contenidoCalendario(tester);
       await capturar(
@@ -618,6 +634,7 @@ void main() {
     });
 
     testWidgets('calendario escola-fogar · $l', (tester) async {
+      await cursoTprLeido(tester);
       final premios = await premiosConProgreso(tester);
       final calendario = await calendarioConProgreso(tester);
       final contenidoCal = await contenidoCalendario(tester);
