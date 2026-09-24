@@ -406,7 +406,12 @@ void main() {
       expect(tira.childrenDelegate.estimatedChildCount, 10 + 9,
           reason: 'dez pastillas e nove separadores');
       final primeira = find.descendant(
-          of: find.byType(ChoiceChip).first, matching: find.byType(Text));
+          of: find
+              .descendant(
+                  of: find.byKey(const Key('selector_meses')),
+                  matching: find.byType(ChoiceChip))
+              .first,
+          matching: find.byType(Text));
       expect(
           tester.widget<Text>(primeira).data,
           contenido
