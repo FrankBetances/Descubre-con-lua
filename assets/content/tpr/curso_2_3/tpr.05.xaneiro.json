@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.2_3.xaneiro",
+  "curso": "curso_2_3",
+  "orden": 5,
+  "mesCalendario": 1,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Imos no autobús",
+        "es": "Vamos en autobús"
+      },
+      "palabras": [
+        {
+          "id": "2_3.xaneiro.s1.bus-stop",
+          "en": "Bus stop",
+          "gl": "Parada do autobús",
+          "es": "Parada del autobús",
+          "tprAction": {
+            "gl": "Esperar de pé na parada",
+            "es": "Esperar de pie en la parada"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s1.driver",
+          "en": "Driver",
+          "gl": "Condutor",
+          "es": "Conductor",
+          "tprAction": {
+            "gl": "Xirar o volante imaxinario",
+            "es": "Girar el volante imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s1.ticket",
+          "en": "Ticket",
+          "gl": "Billete",
+          "es": "Billete",
+          "tprAction": {
+            "gl": "Dar o billete ao condutor",
+            "es": "Dar el billete al conductor"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s1.handle",
+          "en": "Handle",
+          "gl": "Asa",
+          "es": "Asidero",
+          "tprAction": {
+            "gl": "Agarrarse á asa",
+            "es": "Agarrarse al asidero"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s1.window-seat",
+          "en": "Window seat",
+          "gl": "Asento da xanela",
+          "es": "Asiento de la ventanilla",
+          "tprAction": {
+            "gl": "Sentarse e mirar pola xanela",
+            "es": "Sentarse y mirar por la ventanilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s1.bell-button",
+          "en": "Bell button",
+          "gl": "Botón de parada",
+          "es": "Botón de parada",
+          "tprAction": {
+            "gl": "Premer o botón de parada",
+            "es": "Pulsar el botón de parada"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s1.wipers",
+          "en": "Wipers",
+          "gl": "Limpaparabrisas",
+          "es": "Limpiaparabrisas",
+          "tprAction": {
+            "gl": "Mover os brazos coma limpaparabrisas",
+            "es": "Mover los brazos como limpiaparabrisas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s1.get-on",
+          "en": "Get on",
+          "gl": "Subir",
+          "es": "Subir",
+          "tprAction": {
+            "gl": "Dar un paso cara arriba",
+            "es": "Dar un paso hacia arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s1.get-off",
+          "en": "Get off",
+          "gl": "Baixar",
+          "es": "Bajar",
+          "tprAction": {
+            "gl": "Dar un paso cara abaixo",
+            "es": "Dar un paso hacia abajo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s1.wait-in-line",
+          "en": "Wait in line",
+          "gl": "Agardar na fila",
+          "es": "Esperar en la fila",
+          "tprAction": {
+            "gl": "Agardar un detrás doutro",
+            "es": "Esperar uno detrás de otro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s1.press-the-bell",
+          "en": "Press the bell",
+          "gl": "Premer o timbre",
+          "es": "Pulsar el timbre",
+          "tprAction": {
+            "gl": "Premer un botón no aire",
+            "es": "Pulsar un botón en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s1.look-out",
+          "en": "Look out",
+          "gl": "Mirar fóra",
+          "es": "Mirar afuera",
+          "tprAction": {
+            "gl": "Mirar pola xanela co dedo",
+            "es": "Mirar por la ventanilla con el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s1.bumpy-ride",
+          "en": "Bumpy ride",
+          "gl": "Viaxe con saltos",
+          "es": "Viaje con baches",
+          "tprAction": {
+            "gl": "Brincar na cadeira",
+            "es": "Botar en la silla"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s1.crowded",
+          "en": "Crowded",
+          "gl": "Cheo de xente",
+          "es": "Lleno de gente",
+          "tprAction": {
+            "gl": "Apertarse todos xuntos",
+            "es": "Apretarse todos juntos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s1.next-stop",
+          "en": "Next stop",
+          "gl": "Seguinte parada",
+          "es": "Siguiente parada",
+          "tprAction": {
+            "gl": "Sinalar adiante",
+            "es": "Señalar adelante"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s1.rumbly-bus",
+          "en": "Rumbly bus",
+          "gl": "Autobús que retumba",
+          "es": "Autobús que retumba",
+          "tprAction": {
+            "gl": "Facer «brrrr» coa boca",
+            "es": "Hacer «brrrr» con la boca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s1.the-wheels-go-round",
+          "en": "The wheels go round",
+          "gl": "As rodas xiran",
+          "es": "Las ruedas giran",
+          "tprAction": {
+            "gl": "Xirar os brazos coma rodas",
+            "es": "Girar los brazos como ruedas"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s1.beep-beep-bus",
+          "en": "Beep, beep, bus!",
+          "gl": "Pi, pi, autobús!",
+          "es": "¡Pi, pi, autobús!",
+          "tprAction": {
+            "gl": "Premer unha bucina imaxinaria",
+            "es": "Pulsar una bocina imaginaria"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s1.on-the-bus",
+          "en": "On the bus",
+          "gl": "No autobús",
+          "es": "En el autobús",
+          "tprAction": {
+            "gl": "Sentarse coma no autobús",
+            "es": "Sentarse como en el autobús"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.xaneiro.s1.up-and-down-the-city",
+          "en": "Up and down the city",
+          "gl": "Arriba e abaixo pola cidade",
+          "es": "Arriba y abajo por la ciudad",
+          "tprAction": {
+            "gl": "Mover o volante e inclinarse",
+            "es": "Mover el volante e inclinarse"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Rápido e amodo",
+        "es": "Rápido y despacio"
+      },
+      "palabras": [
+        {
+          "id": "2_3.xaneiro.s2.motorbike",
+          "en": "Motorbike",
+          "gl": "Moto",
+          "es": "Moto",
+          "tprAction": {
+            "gl": "Xirar o puño coma unha moto",
+            "es": "Girar el puño como una moto"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s2.fire-engine",
+          "en": "Fire engine",
+          "gl": "Camión de bombeiros",
+          "es": "Camión de bomberos",
+          "tprAction": {
+            "gl": "Facer «nii-noo» coa voz",
+            "es": "Hacer «nii-noo» con la voz"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s2.scooter",
+          "en": "Scooter",
+          "gl": "Patinete",
+          "es": "Patinete",
+          "tprAction": {
+            "gl": "Empurrar co pé coma nun patinete",
+            "es": "Empujar con el pie como en un patinete"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s2.tricycle",
+          "en": "Tricycle",
+          "gl": "Triciclo",
+          "es": "Triciclo",
+          "tprAction": {
+            "gl": "Pedalear no aire",
+            "es": "Pedalear en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s2.horn",
+          "en": "Horn",
+          "gl": "Bucina",
+          "es": "Bocina",
+          "tprAction": {
+            "gl": "Premer a bucina",
+            "es": "Tocar la bocina"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s2.speed-bump",
+          "en": "Speed bump",
+          "gl": "Lombo de burro",
+          "es": "Resalto",
+          "tprAction": {
+            "gl": "Saltar un pouco no sitio",
+            "es": "Saltar un poco en el sitio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s2.crossing",
+          "en": "Crossing",
+          "gl": "Paso de peóns",
+          "es": "Paso de peatones",
+          "tprAction": {
+            "gl": "Camiñar polas raias",
+            "es": "Caminar por las rayas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s2.speed-up",
+          "en": "Speed up",
+          "gl": "Acelerar",
+          "es": "Acelerar",
+          "tprAction": {
+            "gl": "Mover os brazos cada vez máis rápido",
+            "es": "Mover los brazos cada vez más rápido"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s2.slow-down",
+          "en": "Slow down",
+          "gl": "Frear",
+          "es": "Frenar",
+          "tprAction": {
+            "gl": "Mover os brazos cada vez máis amodo",
+            "es": "Mover los brazos cada vez más despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s2.brake",
+          "en": "Brake",
+          "gl": "Frear de golpe",
+          "es": "Frenar en seco",
+          "tprAction": {
+            "gl": "Parar e botar o corpo atrás",
+            "es": "Parar y echar el cuerpo atrás"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s2.steer",
+          "en": "Steer",
+          "gl": "Conducir o volante",
+          "es": "Girar el volante",
+          "tprAction": {
+            "gl": "Xirar o volante á dereita e á esquerda",
+            "es": "Girar el volante a derecha e izquierda"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s2.honk",
+          "en": "Honk",
+          "gl": "Tocar a bucina",
+          "es": "Pitar",
+          "tprAction": {
+            "gl": "Facer «mec mec»",
+            "es": "Hacer «mec mec»"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s2.zippy",
+          "en": "Zippy",
+          "gl": "Rapidísimo",
+          "es": "Rapidísimo",
+          "tprAction": {
+            "gl": "Pasar a man moi rápido",
+            "es": "Pasar la mano muy rápido"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s2.sluggish",
+          "en": "Sluggish",
+          "gl": "Lentísimo",
+          "es": "Lentísimo",
+          "tprAction": {
+            "gl": "Mover a man moi amodo",
+            "es": "Mover la mano muy despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s2.noisy-engine",
+          "en": "Noisy engine",
+          "gl": "Motor ruidoso",
+          "es": "Motor ruidoso",
+          "tprAction": {
+            "gl": "Facer «brum» moi alto",
+            "es": "Hacer «brum» muy alto"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s2.quiet-car",
+          "en": "Quiet car",
+          "gl": "Coche silencioso",
+          "es": "Coche silencioso",
+          "tprAction": {
+            "gl": "Mover a man sen facer ruído",
+            "es": "Mover la mano sin hacer ruido"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s2.go-fast",
+          "en": "Go fast!",
+          "gl": "Vai rápido!",
+          "es": "¡Ve rápido!",
+          "tprAction": {
+            "gl": "Correr no sitio",
+            "es": "Correr en el sitio"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s2.go-slow",
+          "en": "Go slow",
+          "gl": "Vai amodo",
+          "es": "Ve despacio",
+          "tprAction": {
+            "gl": "Camiñar moi amodo",
+            "es": "Caminar muy despacio"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s2.nee-naw-nee-naw",
+          "en": "Nee-naw, nee-naw!",
+          "gl": "Ni-no, ni-no!",
+          "es": "¡Ni-no, ni-no!",
+          "tprAction": {
+            "gl": "Facer a sirena e correr",
+            "es": "Hacer la sirena y correr"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s2.faster-and-faster",
+          "en": "Faster and faster",
+          "gl": "Cada vez máis rápido",
+          "es": "Cada vez más rápido",
+          "tprAction": {
+            "gl": "Acelerar os pasos",
+            "es": "Acelerar los pasos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Pola cidade",
+        "es": "Por la ciudad"
+      },
+      "palabras": [
+        {
+          "id": "2_3.xaneiro.s3.pavement",
+          "en": "Pavement",
+          "gl": "Beirarrúa",
+          "es": "Acera",
+          "tprAction": {
+            "gl": "Camiñar pola beirarrúa",
+            "es": "Caminar por la acera"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s3.shop",
+          "en": "Shop",
+          "gl": "Tenda",
+          "es": "Tienda",
+          "tprAction": {
+            "gl": "Facer que se abre a porta da tenda",
+            "es": "Hacer que se abre la puerta de la tienda"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s3.market",
+          "en": "Market",
+          "gl": "Mercado",
+          "es": "Mercado",
+          "tprAction": {
+            "gl": "Coller froita imaxinaria",
+            "es": "Coger fruta imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s3.bakery",
+          "en": "Bakery",
+          "gl": "Panadaría",
+          "es": "Panadería",
+          "tprAction": {
+            "gl": "Cheirar o pan quente",
+            "es": "Oler el pan caliente"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s3.postbox",
+          "en": "Postbox",
+          "gl": "Caixa do correo",
+          "es": "Buzón",
+          "tprAction": {
+            "gl": "Meter unha carta no buzón",
+            "es": "Meter una carta en el buzón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s3.lamp-post",
+          "en": "Lamp post",
+          "gl": "Farola",
+          "es": "Farola",
+          "tprAction": {
+            "gl": "Estirarse alto coma unha farola",
+            "es": "Estirarse alto como una farola"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s3.roundabout",
+          "en": "Roundabout",
+          "gl": "Rotonda",
+          "es": "Rotonda",
+          "tprAction": {
+            "gl": "Camiñar en círculo",
+            "es": "Caminar en círculo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s3.cross-the-road",
+          "en": "Cross the road",
+          "gl": "Cruzar a rúa",
+          "es": "Cruzar la calle",
+          "tprAction": {
+            "gl": "Mirar aos lados e camiñar",
+            "es": "Mirar a los lados y caminar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s3.hold-my-hand",
+          "en": "Hold my hand",
+          "gl": "Darme a man",
+          "es": "Darme la mano",
+          "tprAction": {
+            "gl": "Coller a man da persoa adulta",
+            "es": "Coger la mano de la persona adulta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s3.post-a-letter",
+          "en": "Post a letter",
+          "gl": "Botar unha carta",
+          "es": "Echar una carta",
+          "tprAction": {
+            "gl": "Meter unha folla por unha raña",
+            "es": "Meter una hoja por una ranura"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s3.buy-bread",
+          "en": "Buy bread",
+          "gl": "Mercar pan",
+          "es": "Comprar pan",
+          "tprAction": {
+            "gl": "Dar unha moeda imaxinaria",
+            "es": "Dar una moneda imaginaria"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s3.walk-along",
+          "en": "Walk along",
+          "gl": "Camiñar ao longo",
+          "es": "Caminar a lo largo",
+          "tprAction": {
+            "gl": "Camiñar en fila",
+            "es": "Caminar en fila"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s3.busy-street",
+          "en": "Busy street",
+          "gl": "Rúa con xente",
+          "es": "Calle con gente",
+          "tprAction": {
+            "gl": "Mirar a un lado e a outro",
+            "es": "Mirar a un lado y a otro"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s3.tall-buildings",
+          "en": "Tall buildings",
+          "gl": "Edificios altos",
+          "es": "Edificios altos",
+          "tprAction": {
+            "gl": "Mirar cara arriba moi alto",
+            "es": "Mirar hacia arriba muy alto"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s3.narrow-street",
+          "en": "Narrow street",
+          "gl": "Rúa estreita",
+          "es": "Calle estrecha",
+          "tprAction": {
+            "gl": "Xuntar as mans preto",
+            "es": "Juntar las manos cerca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s3.nearby-shop",
+          "en": "Nearby shop",
+          "gl": "Tenda próxima",
+          "es": "Tienda cercana",
+          "tprAction": {
+            "gl": "Sinalar preto",
+            "es": "Señalar cerca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s3.look-left-look-right",
+          "en": "Look left, look right",
+          "gl": "Mira á esquerda, mira á dereita",
+          "es": "Mira a la izquierda, mira a la derecha",
+          "tprAction": {
+            "gl": "Mirar aos dous lados",
+            "es": "Mirar a los dos lados"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s3.wait-for-green",
+          "en": "Wait for green",
+          "gl": "Agarda polo verde",
+          "es": "Espera al verde",
+          "tprAction": {
+            "gl": "Parar e agardar",
+            "es": "Parar y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s3.here-s-the-shop",
+          "en": "Here's the shop",
+          "gl": "Aquí está a tenda",
+          "es": "Aquí está la tienda",
+          "tprAction": {
+            "gl": "Sinalar a tenda",
+            "es": "Señalar la tienda"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s3.across-the-road",
+          "en": "Across the road",
+          "gl": "Ao outro lado da rúa",
+          "es": "Al otro lado de la calle",
+          "tprAction": {
+            "gl": "Camiñar dun lado ao outro",
+            "es": "Caminar de un lado al otro"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "No porto",
+        "es": "En el puerto"
+      },
+      "palabras": [
+        {
+          "id": "2_3.xaneiro.s4.harbour",
+          "en": "Harbour",
+          "gl": "Porto",
+          "es": "Puerto",
+          "tprAction": {
+            "gl": "Sinalar os barcos do porto",
+            "es": "Señalar los barcos del puerto"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s4.ferry",
+          "en": "Ferry",
+          "gl": "Barco de pasaxe",
+          "es": "Ferry",
+          "tprAction": {
+            "gl": "Balancearse coma no barco",
+            "es": "Balancearse como en el barco"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s4.crane",
+          "en": "Crane",
+          "gl": "Guindastre",
+          "es": "Grúa",
+          "tprAction": {
+            "gl": "Levantar o brazo coma unha grúa",
+            "es": "Levantar el brazo como una grúa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s4.anchor",
+          "en": "Anchor",
+          "gl": "Áncora",
+          "es": "Ancla",
+          "tprAction": {
+            "gl": "Baixar os brazos coma unha áncora",
+            "es": "Bajar los brazos como un ancla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s4.rope",
+          "en": "Rope",
+          "gl": "Corda",
+          "es": "Cuerda",
+          "tprAction": {
+            "gl": "Tirar dunha corda imaxinaria",
+            "es": "Tirar de una cuerda imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s4.sailor",
+          "en": "Sailor",
+          "gl": "Mariñeiro",
+          "es": "Marinero",
+          "tprAction": {
+            "gl": "Facer o saúdo de mariñeiro",
+            "es": "Hacer el saludo de marinero"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s4.pier",
+          "en": "Pier",
+          "gl": "Peirao",
+          "es": "Muelle",
+          "tprAction": {
+            "gl": "Camiñar ata o final do peirao",
+            "es": "Caminar hasta el final del muelle"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xaneiro.s4.tie-up",
+          "en": "Tie up",
+          "gl": "Amarrar",
+          "es": "Amarrar",
+          "tprAction": {
+            "gl": "Facer un nó no aire",
+            "es": "Hacer un nudo en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s4.lift-up",
+          "en": "Lift up",
+          "gl": "Levantar",
+          "es": "Levantar",
+          "tprAction": {
+            "gl": "Levantar unha caixa coma a grúa",
+            "es": "Levantar una caja como la grúa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s4.wave-to-the-boat",
+          "en": "Wave to the boat",
+          "gl": "Acenar ao barco",
+          "es": "Saludar al barco",
+          "tprAction": {
+            "gl": "Acenar cara ao mar",
+            "es": "Saludar hacia el mar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s4.toot-the-horn",
+          "en": "Toot the horn",
+          "gl": "Tocar a serea",
+          "es": "Tocar la sirena",
+          "tprAction": {
+            "gl": "Facer «tuuu» coma o barco",
+            "es": "Hacer «tuuu» como el barco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s4.load",
+          "en": "Load",
+          "gl": "Cargar",
+          "es": "Cargar",
+          "tprAction": {
+            "gl": "Meter caixas imaxinarias",
+            "es": "Meter cajas imaginarias"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xaneiro.s4.salty-wind",
+          "en": "Salty wind",
+          "gl": "Vento salgado",
+          "es": "Viento salado",
+          "tprAction": {
+            "gl": "Respirar o aire do mar",
+            "es": "Respirar el aire del mar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s4.floating-boat",
+          "en": "Floating boat",
+          "gl": "Barco flotante",
+          "es": "Barco flotante",
+          "tprAction": {
+            "gl": "Mover a man coma un barco",
+            "es": "Mover la mano como un barco"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s4.rusty",
+          "en": "Rusty",
+          "gl": "Ferruxento",
+          "es": "Oxidado",
+          "tprAction": {
+            "gl": "Tocar unha cadea vella",
+            "es": "Tocar una cadena vieja"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s4.busy-port",
+          "en": "Busy port",
+          "gl": "Porto con traballo",
+          "es": "Puerto con trabajo",
+          "tprAction": {
+            "gl": "Mover os brazos traballando",
+            "es": "Mover los brazos trabajando"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xaneiro.s4.toot-toot",
+          "en": "Toot, toot!",
+          "gl": "Tuu, tuu!",
+          "es": "¡Tuu, tuu!",
+          "tprAction": {
+            "gl": "Facer a serea do barco",
+            "es": "Hacer la sirena del barco"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s4.bye-bye-boat",
+          "en": "Bye-bye, boat!",
+          "gl": "Adeus, barco!",
+          "es": "¡Adiós, barco!",
+          "tprAction": {
+            "gl": "Acenar ao barco",
+            "es": "Saludar al barco"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s4.hello-sailor",
+          "en": "Hello, sailor!",
+          "gl": "Ola, mariñeiro!",
+          "es": "¡Hola, marinero!",
+          "tprAction": {
+            "gl": "Facer o saúdo de mariñeiro",
+            "es": "Hacer el saludo de marinero"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xaneiro.s4.up-with-the-crane",
+          "en": "Up with the crane",
+          "gl": "Arriba coa grúa",
+          "es": "Arriba con la grúa",
+          "tprAction": {
+            "gl": "Levantar o brazo amodo",
+            "es": "Levantar el brazo despacio"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

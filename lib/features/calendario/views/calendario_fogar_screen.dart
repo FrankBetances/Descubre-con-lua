@@ -11,15 +11,18 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
+import '../widgets/palabras_do_dia.dart';
 
 /// Calendario Escolar Completo para o Fogar (Familias).
 ///
 /// Ofrece ás familias unha experiencia curricular análoga e simétrica á do profesorado:
 /// - 5 cursos escolares diferenciados (0-2, 2-3, 3-4, 4-5, 5-6 anos).
-/// - 10 meses escolares (Setembro a Xuño).
+/// - Seis anos de traxecto: cada curso cos seus dez meses (Setembro a Xuño),
+///   co tema, a rutina e o inglés DESE curso.
 /// - Reixa de calendario escolar mensual de 20 días lectivos (4 semanas x 5 días).
 /// - Selección directa por día, con rutina de 3 min, momento do día, frase de conexión
 ///   coa asemblea de aula e reto TPR oral en inglés con reprodución de son nativo.
@@ -117,6 +120,14 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
       }
     });
 
+    // El inglés del curso: las palabras de cada día y los totales de cada
+    // trimestre. Aparte y sin esperar: la rutina de casa se pinta igual.
+    if (widget.repository.programaTprSync == null) {
+      widget.repository.loadProgramaTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
+
     _cargarDias();
   }
 
@@ -143,10 +154,18 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
     return _diasDoMes.isNotEmpty ? _diasDoMes.first : null;
   }
 
+  /// O mes do curso elixido: o seu tema, a súa rutina e o seu inglés. Antes
+  /// era o mesmo mes xenérico para as cinco idades.
   MesCurricular? get _mesCurricularActual {
-    final meses = _contenido?.meses;
-    if (meses == null || _mesIndex >= meses.length) return null;
-    return meses[_mesIndex];
+    final contenido = _contenido;
+    if (contenido == null) return null;
+    for (final m in contenido.trayecto) {
+      if (m.cursoId == _cursoSeleccionado && m.mesDoCurso == _mesIndex + 1) {
+        return m;
+      }
+    }
+    final meses = contenido.meses;
+    return _mesIndex < meses.length ? meses[_mesIndex] : null;
   }
 
   @override
@@ -218,7 +237,10 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                         return Padding(
                           padding: const EdgeInsets.only(right: 8),
                           child: ChoiceChip(
-                            label: Text(isGl ? c['gl']! : c['es']!),
+                            label: FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(isGl ? c['gl']! : c['es']!),
+                            ),
                             selected: isSel,
                             onSelected: (selected) {
                               if (selected && _cursoSeleccionado != c['id']) {
@@ -241,7 +263,11 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   ),
                   const SizedBox(height: 10),
 
-                  // 2. Selector Horizontal dos 10 Meses Lectivos
+                  // 2. Selector de Trimestres Curriculares (Estruturación das 3 Etapas)
+                  _buildTrimesterBar(isGl),
+                  const SizedBox(height: 8),
+
+                  // 3. Os dez meses do curso elixido
                   SizedBox(
                     height: 38,
                     child: ListView.separated(
@@ -254,7 +280,10 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                             ? _mesesNomes[index]['gl']!
                             : _mesesNomes[index]['es']!;
                         return ChoiceChip(
-                          label: Text(mesNome),
+                          label: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(mesNome),
+                          ),
                           selected: isSel,
                           onSelected: (selected) {
                             if (selected && _mesIndex != index) {
@@ -497,14 +526,17 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                           ),
                                           child: Column(
                                             children: [
-                                              Text(
-                                                '${diaGlobalIdx + 1}',
-                                                style: TextStyle(
-                                                  fontSize: 12,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: isSelected
-                                                      ? Colors.white
-                                                      : AppTheme.textPrimary,
+                                              FittedBox(
+                                                fit: BoxFit.scaleDown,
+                                                child: Text(
+                                                  '${diaGlobalIdx + 1}',
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: isSelected
+                                                        ? Colors.white
+                                                        : AppTheme.textPrimary,
+                                                  ),
                                                 ),
                                               ),
                                               const SizedBox(height: 2),
@@ -537,18 +569,22 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                       color: Colors.white,
                       padding: const EdgeInsets.all(12),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
-                            children: List.generate(4, (index) {
-                              final s = index + 1;
-                              final isSel = _semana == s;
-                              return Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.only(
-                                      right: index < 3 ? 6.0 : 0.0),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: List.generate(4, (index) {
+                                final s = index + 1;
+                                final isSel = _semana == s;
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 8.0),
                                   child: ChoiceChip(
-                                    label: Text(
-                                        '${isGl ? "Semana" : "Semana"} $s'),
+                                    label: FittedBox(
+                                      fit: BoxFit.scaleDown,
+                                      child: Text(
+                                          '${isGl ? "Semana" : "Semana"} $s'),
+                                    ),
                                     selected: isSel,
                                     onSelected: (selected) {
                                       if (selected) setState(() => _semana = s);
@@ -558,27 +594,33 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                       color: isSel
                                           ? Colors.white
                                           : AppTheme.textPrimary,
-                                      fontSize: 11,
+                                      fontWeight: isSel
+                                          ? FontWeight.bold
+                                          : FontWeight.normal,
+                                      fontSize: 12,
                                     ),
                                   ),
-                                ),
-                              );
-                            }),
+                                );
+                              }),
+                            ),
                           ),
                           const SizedBox(height: 8),
-                          Row(
-                            children: List.generate(5, (index) {
-                              final d = index + 1;
-                              final isSel = _diaSemana == d;
-                              final diaNome = isGl
-                                  ? _diasSemanaNomes[index]['gl']!
-                                  : _diasSemanaNomes[index]['es']!;
-                              return Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.only(
-                                      right: index < 4 ? 6.0 : 0.0),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: List.generate(5, (index) {
+                                final d = index + 1;
+                                final isSel = _diaSemana == d;
+                                final diaNome = isGl
+                                    ? _diasSemanaNomes[index]['gl']!
+                                    : _diasSemanaNomes[index]['es']!;
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 8.0),
                                   child: ChoiceChip(
-                                    label: Text(diaNome.substring(0, 3)),
+                                    label: FittedBox(
+                                      fit: BoxFit.scaleDown,
+                                      child: Text(diaNome),
+                                    ),
                                     selected: isSel,
                                     onSelected: (selected) {
                                       if (selected) {
@@ -590,12 +632,15 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                       color: isSel
                                           ? Colors.white
                                           : AppTheme.textPrimary,
-                                      fontSize: 11,
+                                      fontWeight: isSel
+                                          ? FontWeight.bold
+                                          : FontWeight.normal,
+                                      fontSize: 12,
                                     ),
                                   ),
-                                ),
-                              );
-                            }),
+                                );
+                              }),
+                            ),
                           ),
                         ],
                       ),
@@ -842,6 +887,10 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
               const SizedBox(height: 14),
             ],
 
+            // Las palabras inglesas de ESTE día: las mismas que la docente ve
+            // en el aula el mismo día de la misma semana.
+            ..._buildPalabrasDoDia(dia, isGl),
+
             // Conexión coa Escola Infantil
             Container(
               padding: const EdgeInsets.all(12),
@@ -909,9 +958,11 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
             const SizedBox(height: 18),
 
             // Botón 1-Tap para Marcar como Feito Hoxe
-            SizedBox(
-              width: double.infinity,
-              height: AppTheme.touchMin,
+            ConstrainedBox(
+              constraints: const BoxConstraints(
+                minWidth: double.infinity,
+                minHeight: AppTheme.touchMin,
+              ),
               child: ElevatedButton.icon(
                 onPressed: () {
                   widget.store.registrarHogar(DateTime.now());
@@ -931,21 +982,26 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   feitoHoxe ? Icons.check_circle : Icons.check_circle_outline,
                   size: 20,
                 ),
-                label: Text(
-                  feitoHoxe
-                      ? (isGl
-                          ? 'Xogo Feito Hoxe no Fogar'
-                          : 'Juego Hecho Hoy en el Hogar')
-                      : (isGl
-                          ? 'Marcar como Feito Hoxe'
-                          : 'Marcar como Hecho Hoy'),
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                label: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    feitoHoxe
+                        ? (isGl
+                            ? 'Xogo Feito Hoxe no Fogar'
+                            : 'Juego Hecho Hoy en el Hogar')
+                        : (isGl
+                            ? 'Marcar como Feito Hoxe'
+                            : 'Marcar como Hecho Hoy'),
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: feitoHoxe
                       ? const Color(0xFF2F855A)
                       : AppTheme.primaryVigoBlue,
                   foregroundColor: Colors.white,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
@@ -956,5 +1012,162 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
         ),
       ),
     );
+  }
+
+  /// Los tres trimestres por meses del calendario, como en el aula.
+  static const List<
+      ({
+        String gl,
+        String es,
+        String mesesGl,
+        String mesesEs,
+        List<int> meses
+      })> _trimestres = [
+    (
+      gl: '1.º Outono',
+      es: '1.º Otoño',
+      mesesGl: 'Set - Dec',
+      mesesEs: 'Sep - Dic',
+      meses: [9, 10, 11, 12]
+    ),
+    (
+      gl: '2.º Inverno',
+      es: '2.º Invierno',
+      mesesGl: 'Xan - Mar',
+      mesesEs: 'Ene - Mar',
+      meses: [1, 2, 3]
+    ),
+    (
+      gl: '3.º Primavera',
+      es: '3.º Primavera',
+      mesesGl: 'Abr - Xuñ',
+      mesesEs: 'Abr - Jun',
+      meses: [4, 5, 6]
+    ),
+  ];
+
+  /// El índice 0..9 del curso (septiembre es 0) de cada mes del calendario.
+  static int _indiceDoMes(int mesCalendario) =>
+      mesCalendario >= 9 ? mesCalendario - 9 : mesCalendario + 3;
+
+  int get _trimestreActual {
+    for (var i = 0; i < _trimestres.length; i++) {
+      if (_trimestres[i].meses.map(_indiceDoMes).contains(_mesIndex)) return i;
+    }
+    return 0;
+  }
+
+  Widget _buildTrimesterBar(bool isGl) {
+    final trimestreActual = _trimestreActual;
+    final curso = widget.repository.cursoTprSync(_cursoSeleccionado);
+
+    return Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+        color: const Color(0xFFEDF2F7),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Row(
+        children: List.generate(3, (i) {
+          final t = _trimestres[i];
+          final isActivo = trimestreActual == i;
+          final inicio = _indiceDoMes(t.meses.first);
+          // Las palabras del trimestre se cuentan en el curso; sin él, el
+          // trimestre va sin número antes que con uno escrito a mano.
+          final meses = isGl ? t.mesesGl : t.mesesEs;
+          final sub = curso == null
+              ? meses
+              : '$meses (${curso.palabrasEnMeses(t.meses)} p.)';
+          return Expanded(
+            child: InkWell(
+              onTap: () {
+                if (_mesIndex != inicio) {
+                  setState(() => _mesIndex = inicio);
+                  _cargarDias();
+                }
+              },
+              borderRadius: BorderRadius.circular(9),
+              child: Container(
+                padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
+                decoration: BoxDecoration(
+                  color: isActivo ? Colors.white : Colors.transparent,
+                  borderRadius: BorderRadius.circular(9),
+                  boxShadow: isActivo
+                      ? const [
+                          BoxShadow(
+                            color: Color(0x14000000),
+                            blurRadius: 3,
+                            offset: Offset(0, 1),
+                          )
+                        ]
+                      : null,
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        isGl ? t.gl : t.es,
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight:
+                              isActivo ? FontWeight.bold : FontWeight.w600,
+                          color: isActivo
+                              ? AppTheme.primaryInk
+                              : AppTheme.textSecondary,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 1),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        sub,
+                        style: TextStyle(
+                          fontSize: 9,
+                          color: isActivo
+                              ? AppTheme.primaryVigoBlue
+                              : AppTheme.textMuted,
+                          fontWeight:
+                              isActivo ? FontWeight.w700 : FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        }),
+      ),
+    );
+  }
+
+  /// Las palabras inglesas del día elegido, o nada si el curso no está leído.
+  List<Widget> _buildPalabrasDoDia(DiaCalendarioDual dia, bool isGl) {
+    final curso = widget.repository.cursoTprSync(_cursoSeleccionado);
+    if (curso == null) return const [];
+    MesTpr? mes;
+    for (final m in curso.meses) {
+      if (m.orden == _mesIndex + 1) mes = m;
+    }
+    final plan = mes?.semana(dia.semanaNumero)?.planDoDia(dia.diaSemanaNumero);
+    if (plan == null) return const [];
+    return [
+      BloqueInglesDoDia(
+        key: const Key('palabras_do_dia_calendario_fogar'),
+        rotulo: isGl
+            ? 'O INGLÉS DESTE DÍA NA CASA'
+            : 'EL INGLÉS DE ESTE DÍA EN CASA',
+        plan: plan,
+        modeloDoDia: curso.modelo.dia(dia.diaSemanaNumero),
+        semana: mes!.semana(dia.semanaNumero),
+        language: _language,
+        audioService: widget.audioService,
+        paraFogar: true,
+      ),
+      const SizedBox(height: 14),
+    ];
   }
 }

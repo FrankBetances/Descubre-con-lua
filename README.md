@@ -17,10 +17,13 @@ etapas de educación infantil: **primer ciclo (0-3 años)** y **segundo ciclo
   **micro-rutina del mes** para segundo ciclo: tres minutos en un momento
   concreto del día, con ejemplos de cómo devolver la frase bien dicha sin pedir
   que la criatura la repita.
-- **Calendario Escola · Fogar** — los diez meses del curso, de septiembre a
-  junio, uno por tarjeta y se pasa deslizando de lado. La docente registra la
-  asamblea, la familia registra el juego de tres minutos en casa, y el día que
-  coinciden las dos cosas queda enlazado.
+- **Calendario Escola · Fogar** — los seis años del trayecto, de 0-2 a 5-6:
+  cinco cursos de diez meses, de septiembre a junio, uno por tarjeta. Se pasa
+  deslizando de lado, y de junio de un curso se llega a septiembre del
+  siguiente. Arriba se elige el curso —el del grupo en el aula, el de la
+  criatura en casa— y el calendario salta al mismo mes de ese curso. La docente
+  registra la asamblea, la familia registra el juego de tres minutos en casa, y
+  el día que coinciden las dos cosas queda enlazado.
 - **Los premios de Lúa** — nivel, XP, racha, insignias y las medallas del
   calendario. Premian **a la persona adulta** que usa la app, nunca a la
   criatura.
@@ -35,6 +38,25 @@ En segundo ciclo el inglés entra como **tercera lengua dentro de la asamblea**,
 siempre asociado al movimiento y sin pedir que nadie lo produzca: la orden se
 dice y se hace, y la criatura responde con el cuerpo. El gallego y el castellano
 siguen siendo las lenguas del aula y de la casa.
+
+**Cinco palabras nuevas al día.** De lunes a jueves entran cinco palabras o
+frases inglesas nuevas (bloques A, B, C y D), y cada día se repasan las de los
+días anteriores de esa semana; el viernes no entra ninguna y se juega un reto
+con las veinte. Son 20 por semana, 80 por mes, 800 por curso y **4.000 en los
+cinco cursos, de 0 a 6 años**, sin que ninguna sea nueva dos veces en todo el
+trayecto: sustantivos, verbos, adjetivos, oraciones y preguntas, y estructuras
+con conectores. Cada una trae lo que significa en gallego y en castellano y el
+gesto que la acompaña. Cada grupo del aula tiene su curso. La docente las ve en
+«Hoxe na aula», en el día del Modo Aula y en el día del Calendario, junto a la
+asamblea de ese día; la familia ve **las mismas** ese día, con una dinámica
+pensada para casa.
+
+**Inmersión en inglés** trabaja esas mismas palabras: se consultan por curso,
+mes, semana y día, con buscador; se repasan con repaso espaciado —las de hoy y
+las que ya salieron en el curso, cada una cuando le toca—; se escuchan las
+frases y órdenes de cada mes antes de leerlas; y se completan con 63
+colocaciones (*wash your hands*, *put on your coat*…) y los 44 fonemas del
+inglés, cada uno con su palabra de ejemplo.
 
 **Finalidad exclusivamente educativa.** No es un producto sanitario: no evalúa,
 no diagnostica y no trata nada. La criatura no usa la pantalla; la app es para
@@ -87,7 +109,8 @@ comprobado y nombra el comando que lo comprobó.
 
 | | |
 | --- | --- |
-| Contenido · primer ciclo | 10 unidades de aula, una por mes del curso · 10 meses de calendario · 6 fases de asamblea |
+| Contenido · primer ciclo | 10 unidades de aula, una por mes del curso · 6 fases de asamblea |
+| Calendario e inglés | 50 meses de calendario (5 cursos × 10, de 0-2 a 5-6 años) · 4.000 palabras inglesas, 800 por curso, cinco nuevas al día · 63 colocaciones · 44 fonemas |
 | Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
 | Voz | 1135 locuciones (494 gl + 494 es + 147 en) grabadas dentro del paquete |
@@ -122,8 +145,11 @@ manda el script:
 | `check_contact_email.py` | Que no aparezca ningún correo distinto del fijo del proyecto |
 | `check_bundled_assets.py` | Que todo activo que el código pide exista y viaje dentro del paquete |
 | `check_laminas.py` | Que cada forma de cada lámina se pinte de verdad, y no salga una lámina en blanco |
+| `draw_flashcards.py --check` | Que cada lámina del banco apunte a un dibujo |
 | `check_no_emoji.py` | Que no se use emoji del sistema como iconografía (regla 5) |
 | `build_corpus_ingles.py --check` | Que cada palabra del vocabulario inglés traiga categoría gramatical y una frase entera, y que no entre ninguna de las excluidas |
+| `humaniza_rutinas_fogar.py --check` | Que las rutinas de casa no vuelvan a ser un mismo texto repetido |
+| `planificador_5_palabras.py --check` | Que el inglés sea el del modelo en cada uno de los cinco cursos: 20 palabras por semana, 800 por curso, 4.000 sin que ninguna se repita entre cursos, con significado y gesto en gl y es, y con el reparto 280/200/160/96/64 **contado** en el contenido |
 | `export_voice_corpus.py --check` | Que el corpus de voz siga sincronizado con los textos |
 | `check_pulse_bpm.py` | Que el tempo mostrado sea el que suena, **medido del audio** |
 | `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |
@@ -136,7 +162,7 @@ manda el script:
 | Permisos del APK | Que el **binario** no declare más permiso que el que inyecta AndroidX |
 
 Los dos últimos solo corren sin `--fast`: son los que necesitan el SDK de
-Android. Por eso `--fast` da **14 de 14** y el run completo, **16 de 16**.
+Android. Por eso `--fast` da **19 de 19** y el run completo, **21 de 21**.
 
 ## Publicar
 
@@ -225,9 +251,11 @@ apagado ni con aviso—: un altavoz que no suena promete algo que no cumple.
 - castellano → **Sharvard** (rhasspy/piper-voices)
 - inglés → **LJSpeech** (rhasspy/piper-voices)
 
-**El inglés es un caso aparte.** No hay pantallas en inglés: lo que se graba es
-el léxico, las órdenes TPR, la frase de cada mes del calendario y **las 4.000
-palabras de uso habitual del inglés con su frase completa**. Cada una suena dos
+**El inglés es un caso aparte.** No hay pantallas en inglés: lo que se graba son
+las 4.000 palabras de los cinco cursos, las órdenes TPR, la frase de cada mes
+del calendario y de cada uno de los 50 meses del trayecto, las colocaciones,
+las palabras de ejemplo de los fonemas y, aparte, **las 4.000 palabras de uso
+habitual del inglés con su frase completa**. Cada una suena dos
 veces: la palabra sola, despacio, que es la que se imita, y su frase entera, a
 ritmo de tutor, que es la que se entiende. La persona adulta pulsa la pastilla y
 oye cómo se dice antes de decírselo a la criatura. Una pastilla sin grabación se
@@ -252,10 +280,13 @@ audio va por un `MethodChannel` contra el `MediaPlayer` de Android.
 **Lo único que la app guarda**, en el almacenamiento privado del aparato: los
 contadores de los premios **de la persona adulta** —asambleas dirigidas,
 cápsulas leídas, racha actual y mejor racha, la fecha del último día *sin hora*
-e identificadores de insignias—. No identifica a nadie, no contiene nada de
-ninguna criatura y no puede salir del aparato. Lo guarda un gate:
-`test/features/premios_test.dart` falla si aparece una clave nueva en ese
-fichero.
+e identificadores de insignias— y, si la persona adulta usa el repaso de
+inglés, **una ficha de repaso por palabra del catálogo**: la palabra, los
+números del repaso espaciado y dos fechas *sin hora*. No identifica a nadie, no
+contiene nada de ninguna criatura y no puede salir del aparato. Lo guardan dos
+gates: `test/features/premios_test.dart` y
+`test/core/progreso_privacidad_test.dart` fallan si aparece una clave nueva en
+el fichero que vigila cada uno.
 
 La comprobación que cuenta se hace sobre el **APK compilado** con `aapt2`, no
 sobre el manifiesto fuente.
@@ -339,10 +370,12 @@ El texto que manda es [LICENSE.md](LICENSE.md).
 lib/core/       tema, idiomas, audio (servicio, reproductor nativo, ids de voz)
 lib/data/       modelos, cargador, repositorio, validador de contenido
 lib/features/   juega/ (aula, asamblea de 6 fases, metrónomo, formación docente)
-                academy/ (familias) · calendario/ (escola·fogar, 10 meses)
+                academy/ (familias) · calendario/ (escola·fogar, 0-6 anos)
+                english/ (palabras, repaso, escoita, colocacións, fonemas)
                 premios/ (insignias y medallas) · bienvenida/ · creditos/
 assets/content/ unidades, cápsulas, asamblea y premios en JSON, bilingües
-                calendario/ (10 meses + guía de inglés en casa)
+                calendario/ (10 meses, los 50 del trayecto y la guía de inglés en casa)
+                tpr/ (el inglés: 5 cursos de 800 palabras, cinco al día)
 assets/voice/   grabaciones neuronales (generadas en CI)
 assets/brand/   rejilla de píxeles de Lúa: de aquí salen icono y splash
                 awards/ (los 10 glifos de insignia) · logos/ (marcas)

@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.5_6.outubro",
+  "curso": "curso_5_6",
+  "orden": 2,
+  "mesCalendario": 10,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Os cinco sentidos",
+        "es": "Los cinco sentidos"
+      },
+      "palabras": [
+        {
+          "id": "5_6.outubro.s1.sense",
+          "en": "Sense",
+          "gl": "Sentido",
+          "es": "Sentido",
+          "tprAction": {
+            "gl": "Tocar ollos, orellas, nariz, boca e man",
+            "es": "Tocar ojos, orejas, nariz, boca y mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s1.sight",
+          "en": "Sight",
+          "gl": "Vista",
+          "es": "Vista",
+          "tprAction": {
+            "gl": "Sinalar os ollos",
+            "es": "Señalar los ojos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s1.hearing",
+          "en": "Hearing",
+          "gl": "Oído",
+          "es": "Oído",
+          "tprAction": {
+            "gl": "Sinalar as orellas",
+            "es": "Señalar las orejas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s1.smell-sense",
+          "en": "Smell sense",
+          "gl": "Olfacto",
+          "es": "Olfato",
+          "tprAction": {
+            "gl": "Sinalar o nariz",
+            "es": "Señalar la nariz"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s1.taste-sense",
+          "en": "Taste sense",
+          "gl": "Gusto",
+          "es": "Gusto",
+          "tprAction": {
+            "gl": "Sinalar a lingua",
+            "es": "Señalar la lengua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s1.touch-sense",
+          "en": "Touch sense",
+          "gl": "Tacto",
+          "es": "Tacto",
+          "tprAction": {
+            "gl": "Amosar as mans abertas",
+            "es": "Enseñar las manos abiertas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s1.mystery-bag",
+          "en": "Mystery bag",
+          "gl": "Bolsa misteriosa",
+          "es": "Bolsa misteriosa",
+          "tprAction": {
+            "gl": "Meter a man sen mirar",
+            "es": "Meter la mano sin mirar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s1.notice",
+          "en": "Notice",
+          "gl": "Darse conta",
+          "es": "Darse cuenta",
+          "tprAction": {
+            "gl": "Parar e sinalar",
+            "es": "Parar y señalar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s1.identify",
+          "en": "Identify",
+          "gl": "Identificar",
+          "es": "Identificar",
+          "tprAction": {
+            "gl": "Nomear algo tocándoo",
+            "es": "Nombrar algo tocándolo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s1.sniff-out",
+          "en": "Sniff out",
+          "gl": "Descubrir polo cheiro",
+          "es": "Descubrir por el olor",
+          "tprAction": {
+            "gl": "Cheirar e sinalar",
+            "es": "Oler y señalar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s1.feel-without-looking",
+          "en": "Feel without looking",
+          "gl": "Tocar sen mirar",
+          "es": "Tocar sin mirar",
+          "tprAction": {
+            "gl": "Tocar cos ollos pechados",
+            "es": "Tocar con los ojos cerrados"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s1.tune-in",
+          "en": "Tune in",
+          "gl": "Prestar atención",
+          "es": "Prestar atención",
+          "tprAction": {
+            "gl": "Levar a man á orella",
+            "es": "Llevar la mano a la oreja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s1.sensory",
+          "en": "Sensory",
+          "gl": "Sensorial",
+          "es": "Sensorial",
+          "tprAction": {
+            "gl": "Tocar varias texturas",
+            "es": "Tocar varias texturas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s1.aromatic",
+          "en": "Aromatic",
+          "gl": "Aromático",
+          "es": "Aromático",
+          "tprAction": {
+            "gl": "Cheirar e suspirar",
+            "es": "Oler y suspirar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s1.silent-room",
+          "en": "Silent room",
+          "gl": "Sala en silencio",
+          "es": "Sala en silencio",
+          "tprAction": {
+            "gl": "Poñer o dedo nos beizos",
+            "es": "Poner el dedo en los labios"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s1.sharp-eyed",
+          "en": "Sharp-eyed",
+          "gl": "De vista aguda",
+          "es": "De vista aguda",
+          "tprAction": {
+            "gl": "Mirar moi atento",
+            "es": "Mirar muy atento"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s1.which-sense-do-we-use",
+          "en": "Which sense do we use?",
+          "gl": "Que sentido usamos?",
+          "es": "¿Qué sentido usamos?",
+          "tprAction": {
+            "gl": "Sinalar un sentido",
+            "es": "Señalar un sentido"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.outubro.s1.what-s-in-the-bag",
+          "en": "What's in the bag?",
+          "gl": "Que hai na bolsa?",
+          "es": "¿Qué hay en la bolsa?",
+          "tprAction": {
+            "gl": "Meter a man e adiviñar",
+            "es": "Meter la mano y adivinar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.outubro.s1.we-smell-with-our-nose-and-taste-with-our-tongue",
+          "en": "We smell with our nose and taste with our tongue",
+          "gl": "Cheiramos co nariz e saboreamos coa lingua",
+          "es": "Olemos con la nariz y saboreamos con la lengua",
+          "tprAction": {
+            "gl": "Sinalar nariz e lingua",
+            "es": "Señalar nariz y lengua"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.outubro.s1.listen-with-your-eyes-closed",
+          "en": "Listen with your eyes closed",
+          "gl": "Pecha os ollos e escoita",
+          "es": "Cierra los ojos y escucha",
+          "tprAction": {
+            "gl": "Pechar os ollos",
+            "es": "Cerrar los ojos"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "O latexo",
+        "es": "El latido"
+      },
+      "palabras": [
+        {
+          "id": "5_6.outubro.s2.pulse",
+          "en": "Pulse",
+          "gl": "Pulso",
+          "es": "Pulso",
+          "tprAction": {
+            "gl": "Pousar dous dedos na boneca",
+            "es": "Poner dos dedos en la muñeca"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s2.chest",
+          "en": "Chest",
+          "gl": "Peito",
+          "es": "Pecho",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s2.lungs",
+          "en": "Lungs",
+          "gl": "Pulmóns",
+          "es": "Pulmones",
+          "tprAction": {
+            "gl": "Inchar o peito de aire",
+            "es": "Inflar el pecho de aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s2.muscles",
+          "en": "Muscles",
+          "gl": "Músculos",
+          "es": "Músculos",
+          "tprAction": {
+            "gl": "Amosar o brazo forte",
+            "es": "Enseñar el brazo fuerte"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s2.bones",
+          "en": "Bones",
+          "gl": "Ósos",
+          "es": "Huesos",
+          "tprAction": {
+            "gl": "Tocar os ósos do brazo",
+            "es": "Tocar los huesos del brazo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s2.skeleton",
+          "en": "Skeleton",
+          "gl": "Esqueleto",
+          "es": "Esqueleto",
+          "tprAction": {
+            "gl": "Moverse coma un esqueleto de conto",
+            "es": "Moverse como un esqueleto de cuento"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s2.listening-tube",
+          "en": "Listening tube",
+          "gl": "Tubo para escoitar",
+          "es": "Tubo para escuchar",
+          "tprAction": {
+            "gl": "Escoitar o peito dun amigo cun tubo de cartón",
+            "es": "Escuchar el pecho de un amigo con un tubo de cartón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s2.feel-your-heartbeat",
+          "en": "Feel your heartbeat",
+          "gl": "Sentir o latexo",
+          "es": "Sentir el latido",
+          "tprAction": {
+            "gl": "Pousar a man no peito e esperar",
+            "es": "Poner la mano en el pecho y esperar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s2.sprint-fast",
+          "en": "Sprint fast",
+          "gl": "Esprintar",
+          "es": "Esprintar",
+          "tprAction": {
+            "gl": "Correr moi rápido no sitio",
+            "es": "Correr muy rápido en el sitio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s2.breathe-slow",
+          "en": "Breathe slow",
+          "gl": "Respirar lento",
+          "es": "Respirar lento",
+          "tprAction": {
+            "gl": "Inspirar e expirar moi amodo",
+            "es": "Inspirar y espirar muy despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s2.flex",
+          "en": "Flex",
+          "gl": "Tensar",
+          "es": "Tensar",
+          "tprAction": {
+            "gl": "Tensar o brazo",
+            "es": "Tensar el brazo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s2.relax",
+          "en": "Relax",
+          "gl": "Relaxarse",
+          "es": "Relajarse",
+          "tprAction": {
+            "gl": "Soltar os brazos",
+            "es": "Soltar los brazos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s2.racing-heart",
+          "en": "Racing heart",
+          "gl": "Corazón acelerado",
+          "es": "Corazón acelerado",
+          "tprAction": {
+            "gl": "Bater rápido no peito",
+            "es": "Golpear rápido en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s2.resting",
+          "en": "Resting",
+          "gl": "En repouso",
+          "es": "En reposo",
+          "tprAction": {
+            "gl": "Deitarse tranquilos",
+            "es": "Tumbarse tranquilos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s2.strong-muscled",
+          "en": "Strong-muscled",
+          "gl": "Musculado",
+          "es": "Musculoso",
+          "tprAction": {
+            "gl": "Amosar os dous brazos fortes",
+            "es": "Enseñar los dos brazos fuertes"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s2.bony",
+          "en": "Bony",
+          "gl": "Ósea",
+          "es": "Huesudo",
+          "tprAction": {
+            "gl": "Tocar o nocello",
+            "es": "Tocar el tobillo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s2.can-you-feel-your-heart",
+          "en": "Can you feel your heart?",
+          "gl": "Sentes o corazón?",
+          "es": "¿Sientes el corazón?",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.outubro.s2.boom-boom-boom-boom",
+          "en": "Boom-boom, boom-boom",
+          "gl": "Pum-pum, pum-pum",
+          "es": "Pum-pum, pum-pum",
+          "tprAction": {
+            "gl": "Bater suave no peito",
+            "es": "Golpear suave en el pecho"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.outubro.s2.after-running-the-heart-beats-faster",
+          "en": "After running, the heart beats faster",
+          "gl": "Despois de correr, o corazón latexa máis rápido",
+          "es": "Después de correr, el corazón late más rápido",
+          "tprAction": {
+            "gl": "Correr e pousar a man no peito",
+            "es": "Correr y poner la mano en el pecho"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.outubro.s2.breathe-in-breathe-out",
+          "en": "Breathe in, breathe out",
+          "gl": "Colle aire, bota aire",
+          "es": "Coge aire, echa aire",
+          "tprAction": {
+            "gl": "Inchar e desinchar o peito",
+            "es": "Inflar y desinflar el pecho"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Mover o corpo",
+        "es": "Mover el cuerpo"
+      },
+      "palabras": [
+        {
+          "id": "5_6.outubro.s3.joint",
+          "en": "Joint",
+          "gl": "Articulación",
+          "es": "Articulación",
+          "tprAction": {
+            "gl": "Dobrar o cóbado",
+            "es": "Doblar el codo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s3.spine",
+          "en": "Spine",
+          "gl": "Columna",
+          "es": "Columna",
+          "tprAction": {
+            "gl": "Pasar a man polas costas",
+            "es": "Pasar la mano por la espalda"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s3.posture",
+          "en": "Posture",
+          "gl": "Postura",
+          "es": "Postura",
+          "tprAction": {
+            "gl": "Sentarse ben dereito",
+            "es": "Sentarse bien recto"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s3.warm-up-exercise",
+          "en": "Warm-up exercise",
+          "gl": "Quecemento",
+          "es": "Calentamiento",
+          "tprAction": {
+            "gl": "Mover os brazos en círculos",
+            "es": "Mover los brazos en círculos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s3.stretch-time",
+          "en": "Stretch time",
+          "gl": "Volta á calma",
+          "es": "Vuelta a la calma",
+          "tprAction": {
+            "gl": "Estirar amodo",
+            "es": "Estirar despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s3.yoga-mat",
+          "en": "Yoga mat",
+          "gl": "Esteira de ioga",
+          "es": "Esterilla de yoga",
+          "tprAction": {
+            "gl": "Estender a esteira",
+            "es": "Extender la esterilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s3.tree-pose",
+          "en": "Tree pose",
+          "gl": "Postura da árbore",
+          "es": "Postura del árbol",
+          "tprAction": {
+            "gl": "Poñer un pé no xeonllo",
+            "es": "Poner un pie en la rodilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s3.rotate-arms",
+          "en": "Rotate arms",
+          "gl": "Xirar os brazos",
+          "es": "Girar los brazos",
+          "tprAction": {
+            "gl": "Facer círculos cos brazos",
+            "es": "Hacer círculos con los brazos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s3.touch-toes",
+          "en": "Touch toes",
+          "gl": "Tocar os pés",
+          "es": "Tocar los pies",
+          "tprAction": {
+            "gl": "Baixar as mans ata os pés",
+            "es": "Bajar las manos hasta los pies"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s3.arch-back",
+          "en": "Arch back",
+          "gl": "Arquear as costas",
+          "es": "Arquear la espalda",
+          "tprAction": {
+            "gl": "Facer un gato coas costas",
+            "es": "Hacer un gato con la espalda"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s3.lunge",
+          "en": "Lunge",
+          "gl": "Dar unha zancada",
+          "es": "Dar una zancada",
+          "tprAction": {
+            "gl": "Avanzar unha perna e dobrala",
+            "es": "Avanzar una pierna y doblarla"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s3.shake-out",
+          "en": "Shake out",
+          "gl": "Sacudir",
+          "es": "Sacudir",
+          "tprAction": {
+            "gl": "Sacudir todo o corpo",
+            "es": "Sacudir todo el cuerpo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s3.flexible-body",
+          "en": "Flexible body",
+          "gl": "Corpo flexible",
+          "es": "Cuerpo flexible",
+          "tprAction": {
+            "gl": "Dobrarse amodo",
+            "es": "Doblarse despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s3.upright-posture",
+          "en": "Upright posture",
+          "gl": "Postura dereita",
+          "es": "Postura recta",
+          "tprAction": {
+            "gl": "Sentarse recto",
+            "es": "Sentarse recto"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s3.loose",
+          "en": "Loose",
+          "gl": "Solto",
+          "es": "Suelto",
+          "tprAction": {
+            "gl": "Soltar os brazos",
+            "es": "Soltar los brazos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s3.stretchy",
+          "en": "Stretchy",
+          "gl": "Elástico",
+          "es": "Elástico",
+          "tprAction": {
+            "gl": "Estirar moito os brazos",
+            "es": "Estirar mucho los brazos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s3.warm-up-your-body",
+          "en": "Warm up your body",
+          "gl": "Quenta o corpo",
+          "es": "Calienta el cuerpo",
+          "tprAction": {
+            "gl": "Mover todo o corpo",
+            "es": "Mover todo el cuerpo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.outubro.s3.stand-like-a-tree",
+          "en": "Stand like a tree",
+          "gl": "Ponte coma unha árbore",
+          "es": "Ponte como un árbol",
+          "tprAction": {
+            "gl": "Facer a postura da árbore",
+            "es": "Hacer la postura del árbol"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.outubro.s3.stretch-as-high-as-you-can",
+          "en": "Stretch as high as you can",
+          "gl": "Estírate tan alto como poidas",
+          "es": "Estírate tan alto como puedas",
+          "tprAction": {
+            "gl": "Estirarse ao máximo",
+            "es": "Estirarse al máximo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.outubro.s3.shake-it-all-out",
+          "en": "Shake it all out!",
+          "gl": "Sacúdeo todo!",
+          "es": "¡Sacúdelo todo!",
+          "tprAction": {
+            "gl": "Sacudir o corpo",
+            "es": "Sacudir el cuerpo"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Descanso e soño",
+        "es": "Descanso y sueño"
+      },
+      "palabras": [
+        {
+          "id": "5_6.outubro.s4.rest-time",
+          "en": "Rest time",
+          "gl": "Descanso",
+          "es": "Descanso",
+          "tprAction": {
+            "gl": "Pousar a cabeza nas mans",
+            "es": "Apoyar la cabeza en las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s4.energy",
+          "en": "Energy",
+          "gl": "Enerxía",
+          "es": "Energía",
+          "tprAction": {
+            "gl": "Saltar con forza",
+            "es": "Saltar con fuerza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s4.bedtime-routine",
+          "en": "Bedtime routine",
+          "gl": "Rutina de noite",
+          "es": "Rutina de noche",
+          "tprAction": {
+            "gl": "Facer os xestos da noite en orde",
+            "es": "Hacer los gestos de la noche en orden"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s4.alarm-clock",
+          "en": "Alarm clock",
+          "gl": "Espertador",
+          "es": "Despertador",
+          "tprAction": {
+            "gl": "Facer «ring ring»",
+            "es": "Hacer «ring ring»"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s4.night-light",
+          "en": "Night light",
+          "gl": "Luz de noite",
+          "es": "Luz de noche",
+          "tprAction": {
+            "gl": "Facer unha luz pequena coas mans",
+            "es": "Hacer una luz pequeña con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s4.dream-journal",
+          "en": "Dream journal",
+          "gl": "Caderno de soños",
+          "es": "Cuaderno de sueños",
+          "tprAction": {
+            "gl": "Debuxar no aire",
+            "es": "Dibujar en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s4.hours-of-sleep",
+          "en": "Hours of sleep",
+          "gl": "Horas de soño",
+          "es": "Horas de sueño",
+          "tprAction": {
+            "gl": "Contar horas cos dedos",
+            "es": "Contar horas con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.outubro.s4.recharge",
+          "en": "Recharge",
+          "gl": "Recargar",
+          "es": "Recargar",
+          "tprAction": {
+            "gl": "Encollerse e despois estirarse",
+            "es": "Encogerse y luego estirarse"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s4.unwind",
+          "en": "Unwind",
+          "gl": "Desconectar",
+          "es": "Desconectar",
+          "tprAction": {
+            "gl": "Soltar os ombros",
+            "es": "Soltar los hombros"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s4.get-ready-for-bed",
+          "en": "Get ready for bed",
+          "gl": "Prepararse para durmir",
+          "es": "Prepararse para dormir",
+          "tprAction": {
+            "gl": "Poñer o pixama imaxinario",
+            "es": "Ponerse el pijama imaginario"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s4.wake-up-early",
+          "en": "Wake up early",
+          "gl": "Espertar cedo",
+          "es": "Despertar temprano",
+          "tprAction": {
+            "gl": "Espreguizarse e sentarse",
+            "es": "Desperezarse y sentarse"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s4.tell-a-dream",
+          "en": "Tell a dream",
+          "gl": "Contar un soño",
+          "es": "Contar un sueño",
+          "tprAction": {
+            "gl": "Mover as mans lembrando",
+            "es": "Mover las manos recordando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.outubro.s4.refreshed",
+          "en": "Refreshed",
+          "gl": "Descansado e fresco",
+          "es": "Descansado y fresco",
+          "tprAction": {
+            "gl": "Espreguizarse sorrindo",
+            "es": "Desperezarse sonriendo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s4.drowsy",
+          "en": "Drowsy",
+          "gl": "Adormecido",
+          "es": "Adormilado",
+          "tprAction": {
+            "gl": "Inclinar a cabeza",
+            "es": "Inclinar la cabeza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s4.wide-awake",
+          "en": "Wide awake",
+          "gl": "Ben esperto",
+          "es": "Bien despierto",
+          "tprAction": {
+            "gl": "Abrir moito os ollos",
+            "es": "Abrir mucho los ojos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s4.well-slept",
+          "en": "Well-slept",
+          "gl": "Ben durmido",
+          "es": "Bien dormido",
+          "tprAction": {
+            "gl": "Estirar os brazos contentos",
+            "es": "Estirar los brazos contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.outubro.s4.what-did-you-dream-about",
+          "en": "What did you dream about?",
+          "gl": "Que soñaches?",
+          "es": "¿Qué soñaste?",
+          "tprAction": {
+            "gl": "Tocar a cabeza",
+            "es": "Tocar la cabeza"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.outubro.s4.first-pyjamas-then-teeth-then-a-story",
+          "en": "First pyjamas, then teeth, then a story",
+          "gl": "Primeiro o pixama, despois os dentes, despois un conto",
+          "es": "Primero el pijama, luego los dientes, luego un cuento",
+          "tprAction": {
+            "gl": "Facer os tres xestos en orde",
+            "es": "Hacer los tres gestos en orden"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.outubro.s4.rise-and-shine",
+          "en": "Rise and shine!",
+          "gl": "Arriba, que sae o sol!",
+          "es": "¡Arriba, que sale el sol!",
+          "tprAction": {
+            "gl": "Estirarse cara arriba",
+            "es": "Estirarse hacia arriba"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.outubro.s4.lights-out-eyes-closed",
+          "en": "Lights out, eyes closed",
+          "gl": "Luz apagada, ollos pechados",
+          "es": "Luz apagada, ojos cerrados",
+          "tprAction": {
+            "gl": "Apagar e pechar os ollos",
+            "es": "Apagar y cerrar los ojos"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

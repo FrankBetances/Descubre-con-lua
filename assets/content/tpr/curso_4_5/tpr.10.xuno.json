@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.4_5.xuno",
+  "curso": "curso_4_5",
+  "orden": 10,
+  "mesCalendario": 6,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "As bateas",
+        "es": "Las bateas"
+      },
+      "palabras": [
+        {
+          "id": "4_5.xuno.s1.mussel-raft",
+          "en": "Mussel raft",
+          "gl": "Batea",
+          "es": "Batea",
+          "tprAction": {
+            "gl": "Facer un cadrado plano coas mans",
+            "es": "Hacer un cuadrado plano con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s1.rope-line",
+          "en": "Rope line",
+          "gl": "Corda de cultivo",
+          "es": "Cuerda de cultivo",
+          "tprAction": {
+            "gl": "Baixar unha corda imaxinaria",
+            "es": "Bajar una cuerda imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s1.fishing-boat",
+          "en": "Fishing boat",
+          "gl": "Barco pesqueiro",
+          "es": "Barco pesquero",
+          "tprAction": {
+            "gl": "Remar con forza",
+            "es": "Remar con fuerza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s1.harbour-wall",
+          "en": "Harbour wall",
+          "gl": "Espigón",
+          "es": "Espigón",
+          "tprAction": {
+            "gl": "Estirar o brazo longo",
+            "es": "Estirar el brazo largo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s1.buoy",
+          "en": "Buoy",
+          "gl": "Boia",
+          "es": "Boya",
+          "tprAction": {
+            "gl": "Subir e baixar coma unha boia",
+            "es": "Subir y bajar como una boya"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s1.fisherman",
+          "en": "Fisherman",
+          "gl": "Pescador",
+          "es": "Pescador",
+          "tprAction": {
+            "gl": "Lanzar unha rede",
+            "es": "Lanzar una red"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s1.fish-market",
+          "en": "Fish market",
+          "gl": "Lonxa",
+          "es": "Lonja",
+          "tprAction": {
+            "gl": "Sinalar caixas de peixe",
+            "es": "Señalar cajas de pescado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s1.climb-aboard",
+          "en": "Climb aboard",
+          "gl": "Subir a bordo",
+          "es": "Subir a bordo",
+          "tprAction": {
+            "gl": "Dar un paso grande",
+            "es": "Dar un paso grande"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s1.pull-up-the-rope",
+          "en": "Pull up the rope",
+          "gl": "Tirar da corda",
+          "es": "Tirar de la cuerda",
+          "tprAction": {
+            "gl": "Tirar da corda cara arriba",
+            "es": "Tirar de la cuerda hacia arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s1.cast-a-net",
+          "en": "Cast a net",
+          "gl": "Lanzar a rede",
+          "es": "Lanzar la red",
+          "tprAction": {
+            "gl": "Abrir os brazos lanzando",
+            "es": "Abrir los brazos lanzando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s1.bob-on-the-water",
+          "en": "Bob on the water",
+          "gl": "Flotar subindo e baixando",
+          "es": "Flotar subiendo y bajando",
+          "tprAction": {
+            "gl": "Subir e baixar amodo",
+            "es": "Subir y bajar despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s1.look-through-binoculars",
+          "en": "Look through binoculars",
+          "gl": "Mirar cos prismáticos",
+          "es": "Mirar con los prismáticos",
+          "tprAction": {
+            "gl": "Facer prismáticos coas mans",
+            "es": "Hacer prismáticos con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s1.wooden",
+          "en": "Wooden",
+          "gl": "De madeira",
+          "es": "De madera",
+          "tprAction": {
+            "gl": "Bater na mesa",
+            "es": "Golpear la mesa"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s1.floating-raft",
+          "en": "Floating raft",
+          "gl": "Batea flotante",
+          "es": "Batea flotante",
+          "tprAction": {
+            "gl": "Balancearse",
+            "es": "Balancearse"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s1.busy-harbour",
+          "en": "Busy harbour",
+          "gl": "Porto activo",
+          "es": "Puerto activo",
+          "tprAction": {
+            "gl": "Moverse traballando",
+            "es": "Moverse trabajando"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s1.seafaring",
+          "en": "Seafaring",
+          "gl": "Mariñeiro",
+          "es": "Marinero",
+          "tprAction": {
+            "gl": "Facer o saúdo mariñeiro",
+            "es": "Hacer el saludo marinero"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s1.what-grows-on-the-ropes",
+          "en": "What grows on the ropes?",
+          "gl": "Que medra nas cordas?",
+          "es": "¿Qué crece en las cuerdas?",
+          "tprAction": {
+            "gl": "Sinalar abaixo",
+            "es": "Señalar abajo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xuno.s1.mussels-grow-on-ropes-under-the-raft",
+          "en": "Mussels grow on ropes under the raft",
+          "gl": "Os mexillóns medran nas cordas baixo a batea",
+          "es": "Los mejillones crecen en las cuerdas bajo la batea",
+          "tprAction": {
+            "gl": "Baixar os dedos",
+            "es": "Bajar los dedos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xuno.s1.pull-pull-pull",
+          "en": "Pull, pull, pull!",
+          "gl": "Tira, tira, tira!",
+          "es": "¡Tira, tira, tira!",
+          "tprAction": {
+            "gl": "Tirar da corda",
+            "es": "Tirar de la cuerda"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xuno.s1.all-hands-on-deck",
+          "en": "All hands on deck!",
+          "gl": "Todos a cuberta!",
+          "es": "¡Todos a cubierta!",
+          "tprAction": {
+            "gl": "Correr ao barco",
+            "es": "Correr al barco"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Lembramos o curso",
+        "es": "Recordamos el curso"
+      },
+      "palabras": [
+        {
+          "id": "4_5.xuno.s2.photo-book",
+          "en": "Photo book",
+          "gl": "Libro de fotos",
+          "es": "Libro de fotos",
+          "tprAction": {
+            "gl": "Pasar as páxinas",
+            "es": "Pasar las páginas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s2.memory",
+          "en": "Memory",
+          "gl": "Recordo",
+          "es": "Recuerdo",
+          "tprAction": {
+            "gl": "Tocar a cabeza sorrindo",
+            "es": "Tocar la cabeza sonriendo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s2.drawing-folder",
+          "en": "Drawing folder",
+          "gl": "Carpeta de debuxos",
+          "es": "Carpeta de dibujos",
+          "tprAction": {
+            "gl": "Abrir a carpeta",
+            "es": "Abrir la carpeta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s2.timeline",
+          "en": "Timeline",
+          "gl": "Liña do tempo",
+          "es": "Línea del tiempo",
+          "tprAction": {
+            "gl": "Sinalar dunha punta a outra",
+            "es": "Señalar de una punta a otra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s2.favourite-day",
+          "en": "Favourite day",
+          "gl": "Día favorito",
+          "es": "Día favorito",
+          "tprAction": {
+            "gl": "Sinalar un día no calendario",
+            "es": "Señalar un día en el calendario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s2.growth-chart",
+          "en": "Growth chart",
+          "gl": "Táboa de altura",
+          "es": "Tabla de altura",
+          "tprAction": {
+            "gl": "Medirse na parede",
+            "es": "Medirse en la pared"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s2.achievement",
+          "en": "Achievement",
+          "gl": "Logro",
+          "es": "Logro",
+          "tprAction": {
+            "gl": "Levantar os brazos",
+            "es": "Levantar los brazos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s2.remember-when",
+          "en": "Remember when",
+          "gl": "Lembrar cando",
+          "es": "Recordar cuando",
+          "tprAction": {
+            "gl": "Tocar a cabeza e sinalar atrás",
+            "es": "Tocar la cabeza y señalar atrás"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s2.browse",
+          "en": "Browse",
+          "gl": "Ollar",
+          "es": "Hojear",
+          "tprAction": {
+            "gl": "Pasar follas amodo",
+            "es": "Pasar hojas despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s2.measure-height",
+          "en": "Measure height",
+          "gl": "Medir a altura",
+          "es": "Medir la altura",
+          "tprAction": {
+            "gl": "Poñerse contra a parede",
+            "es": "Ponerse contra la pared"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s2.tell-a-story",
+          "en": "Tell a story",
+          "gl": "Contar unha historia",
+          "es": "Contar una historia",
+          "tprAction": {
+            "gl": "Mover as mans explicando",
+            "es": "Mover las manos explicando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s2.celebrate-high",
+          "en": "Celebrate high",
+          "gl": "Celebrar alto",
+          "es": "Celebrar en alto",
+          "tprAction": {
+            "gl": "Saltar cos brazos arriba",
+            "es": "Saltar con los brazos arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s2.proud-of-myself",
+          "en": "Proud of myself",
+          "gl": "Orgulloso de min",
+          "es": "Orgulloso de mí",
+          "tprAction": {
+            "gl": "Pousar as mans no peito",
+            "es": "Poner las manos en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s2.memorable",
+          "en": "Memorable",
+          "gl": "Memorable",
+          "es": "Memorable",
+          "tprAction": {
+            "gl": "Abrir moito os ollos",
+            "es": "Abrir mucho los ojos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s2.much-taller",
+          "en": "Much taller",
+          "gl": "Moito máis alto",
+          "es": "Mucho más alto",
+          "tprAction": {
+            "gl": "Estirarse moito",
+            "es": "Estirarse mucho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s2.grown-up-now",
+          "en": "Grown-up now",
+          "gl": "Maior agora",
+          "es": "Mayor ahora",
+          "tprAction": {
+            "gl": "Poñerse de puntas",
+            "es": "Ponerse de puntillas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s2.do-you-remember",
+          "en": "Do you remember?",
+          "gl": "Lémbraste?",
+          "es": "¿Te acuerdas?",
+          "tprAction": {
+            "gl": "Tocar a cabeza",
+            "es": "Tocar la cabeza"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xuno.s2.i-m-taller-now-than-in-september",
+          "en": "I'm taller now than in September",
+          "gl": "Agora son máis alto ca en setembro",
+          "es": "Ahora soy más alto que en septiembre",
+          "tprAction": {
+            "gl": "Medir coa man",
+            "es": "Medir con la mano"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xuno.s2.my-favourite-day-was-the-beach",
+          "en": "My favourite day was the beach",
+          "gl": "O meu día favorito foi a praia",
+          "es": "Mi día favorito fue la playa",
+          "tprAction": {
+            "gl": "Sinalar o mar",
+            "es": "Señalar el mar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xuno.s2.we-did-it",
+          "en": "We did it!",
+          "gl": "Conseguímolo!",
+          "es": "¡Lo conseguimos!",
+          "tprAction": {
+            "gl": "Levantar os brazos todos",
+            "es": "Levantar los brazos todos"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Xa somos maiores",
+        "es": "Ya somos mayores"
+      },
+      "palabras": [
+        {
+          "id": "4_5.xuno.s3.big-school",
+          "en": "Big school",
+          "gl": "Escola dos maiores",
+          "es": "Escuela de los mayores",
+          "tprAction": {
+            "gl": "Sinalar lonxe",
+            "es": "Señalar lejos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s3.next-year",
+          "en": "Next year",
+          "gl": "O ano que vén",
+          "es": "El año que viene",
+          "tprAction": {
+            "gl": "Sinalar adiante",
+            "es": "Señalar adelante"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s3.goal",
+          "en": "Goal",
+          "gl": "Meta",
+          "es": "Meta",
+          "tprAction": {
+            "gl": "Sinalar un punto lonxe",
+            "es": "Señalar un punto lejos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s3.diploma",
+          "en": "Diploma",
+          "gl": "Diploma",
+          "es": "Diploma",
+          "tprAction": {
+            "gl": "Recibir un papel coas dúas mans",
+            "es": "Recibir un papel con las dos manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s3.ceremony",
+          "en": "Ceremony",
+          "gl": "Cerimonia",
+          "es": "Ceremonia",
+          "tprAction": {
+            "gl": "Camiñar amodo e erguido",
+            "es": "Caminar despacio y erguido"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s3.cheering-crowd",
+          "en": "Cheering crowd",
+          "gl": "Público aplaudindo",
+          "es": "Público aplaudiendo",
+          "tprAction": {
+            "gl": "Aplaudir forte",
+            "es": "Aplaudir fuerte"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s3.farewell-hug",
+          "en": "Farewell hug",
+          "gl": "Aperta de despedida",
+          "es": "Abrazo de despedida",
+          "tprAction": {
+            "gl": "Abrazar a un amigo",
+            "es": "Abrazar a un amigo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s3.receive",
+          "en": "Receive",
+          "gl": "Recibir",
+          "es": "Recibir",
+          "tprAction": {
+            "gl": "Estender as mans e coller",
+            "es": "Extender las manos y coger"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s3.cheer-hooray",
+          "en": "Cheer hooray",
+          "gl": "Berrar hurra",
+          "es": "Gritar hurra",
+          "tprAction": {
+            "gl": "Levantar os brazos e berrar",
+            "es": "Levantar los brazos y gritar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s3.look-forward",
+          "en": "Look forward",
+          "gl": "Ter ganas",
+          "es": "Tener ganas",
+          "tprAction": {
+            "gl": "Mirar adiante sorrindo",
+            "es": "Mirar adelante sonriendo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s3.stand-tall",
+          "en": "Stand tall",
+          "gl": "Estar erguido",
+          "es": "Estar erguido",
+          "tprAction": {
+            "gl": "Estirarse dereito",
+            "es": "Estirarse recto"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s3.wave-to-families",
+          "en": "Wave to families",
+          "gl": "Acenar ás familias",
+          "es": "Saludar a las familias",
+          "tprAction": {
+            "gl": "Acenar ao público",
+            "es": "Saludar al público"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s3.ready-for-more",
+          "en": "Ready for more",
+          "gl": "Listo para máis",
+          "es": "Listo para más",
+          "tprAction": {
+            "gl": "Dar un paso adiante",
+            "es": "Dar un paso adelante"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s3.confident",
+          "en": "Confident",
+          "gl": "Seguro",
+          "es": "Seguro",
+          "tprAction": {
+            "gl": "Levantar a cabeza",
+            "es": "Levantar la cabeza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s3.brave-and-kind",
+          "en": "Brave and kind",
+          "gl": "Valente e amable",
+          "es": "Valiente y amable",
+          "tprAction": {
+            "gl": "Poñer o puño e despois a man aberta",
+            "es": "Poner el puño y luego la mano abierta"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s3.excited-for-next-year",
+          "en": "Excited for next year",
+          "gl": "Con ganas do ano que vén",
+          "es": "Con ganas del año que viene",
+          "tprAction": {
+            "gl": "Saltar contentos",
+            "es": "Saltar contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s3.hooray-for-us",
+          "en": "Hooray for us!",
+          "gl": "Hurra por nós!",
+          "es": "¡Hurra por nosotros!",
+          "tprAction": {
+            "gl": "Levantar os brazos",
+            "es": "Levantar los brazos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xuno.s3.see-you-next-year",
+          "en": "See you next year!",
+          "gl": "Vémonos o ano que vén!",
+          "es": "¡Nos vemos el año que viene!",
+          "tprAction": {
+            "gl": "Acenar a todos",
+            "es": "Saludar a todos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xuno.s3.next-year-we-will-be-the-oldest",
+          "en": "Next year we will be the oldest",
+          "gl": "O ano que vén seremos os maiores",
+          "es": "El año que viene seremos los mayores",
+          "tprAction": {
+            "gl": "Estirarse de puntas",
+            "es": "Estirarse de puntillas"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xuno.s3.thank-you-for-everything",
+          "en": "Thank you for everything",
+          "gl": "Grazas por todo",
+          "es": "Gracias por todo",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Xogos de verán",
+        "es": "Juegos de verano"
+      },
+      "palabras": [
+        {
+          "id": "4_5.xuno.s4.frisbee",
+          "en": "Frisbee",
+          "gl": "Disco voador",
+          "es": "Disco volador",
+          "tprAction": {
+            "gl": "Lanzar un disco imaxinario",
+            "es": "Lanzar un disco imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s4.water-balloon",
+          "en": "Water balloon",
+          "gl": "Globo de auga",
+          "es": "Globo de agua",
+          "tprAction": {
+            "gl": "Pasar un globo con coidado",
+            "es": "Pasar un globo con cuidado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s4.hopscotch",
+          "en": "Hopscotch",
+          "gl": "Mariola",
+          "es": "Rayuela",
+          "tprAction": {
+            "gl": "Saltar a pata coxa nos cadros",
+            "es": "Saltar a la pata coja en los cuadros"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s4.skipping-rope",
+          "en": "Skipping rope",
+          "gl": "Corda de saltar longa",
+          "es": "Comba larga",
+          "tprAction": {
+            "gl": "Saltar cos pés xuntos",
+            "es": "Saltar con los pies juntos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s4.chalk",
+          "en": "Chalk",
+          "gl": "Xiz",
+          "es": "Tiza",
+          "tprAction": {
+            "gl": "Debuxar no chan co xiz",
+            "es": "Dibujar en el suelo con la tiza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s4.garden-hose",
+          "en": "Garden hose",
+          "gl": "Mangueira",
+          "es": "Manguera",
+          "tprAction": {
+            "gl": "Apuntar e mollar as plantas",
+            "es": "Apuntar y mojar las plantas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s4.sprinkler",
+          "en": "Sprinkler",
+          "gl": "Aspersor",
+          "es": "Aspersor",
+          "tprAction": {
+            "gl": "Xirar botando auga",
+            "es": "Girar echando agua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.xuno.s4.hop-on-one-foot",
+          "en": "Hop on one foot",
+          "gl": "Saltar a pata coxa",
+          "es": "Saltar a la pata coja",
+          "tprAction": {
+            "gl": "Saltar nun pé",
+            "es": "Saltar en un pie"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s4.skip",
+          "en": "Skip",
+          "gl": "Saltar á corda",
+          "es": "Saltar a la comba",
+          "tprAction": {
+            "gl": "Saltar a corda imaxinaria",
+            "es": "Saltar la comba imaginaria"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s4.throw-and-catch",
+          "en": "Throw and catch",
+          "gl": "Lanzar e coller",
+          "es": "Lanzar y coger",
+          "tprAction": {
+            "gl": "Lanzar e coller unha pelota",
+            "es": "Lanzar y coger una pelota"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s4.run-through-the-sprinkler",
+          "en": "Run through the sprinkler",
+          "gl": "Correr polo aspersor",
+          "es": "Correr por el aspersor",
+          "tprAction": {
+            "gl": "Correr rindo",
+            "es": "Correr riendo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s4.draw-with-chalk",
+          "en": "Draw with chalk",
+          "gl": "Debuxar con xiz",
+          "es": "Dibujar con tiza",
+          "tprAction": {
+            "gl": "Debuxar no chan",
+            "es": "Dibujar en el suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.xuno.s4.refreshing-splash",
+          "en": "Refreshing splash",
+          "gl": "Salpicón refrescante",
+          "es": "Salpicón refrescante",
+          "tprAction": {
+            "gl": "Sacudir as mans molladas",
+            "es": "Sacudir las manos mojadas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s4.playful-summer",
+          "en": "Playful summer",
+          "gl": "Verán xoguetón",
+          "es": "Verano juguetón",
+          "tprAction": {
+            "gl": "Bailar contentos",
+            "es": "Bailar contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s4.chalky",
+          "en": "Chalky",
+          "gl": "De xiz",
+          "es": "De tiza",
+          "tprAction": {
+            "gl": "Soprar o po das mans",
+            "es": "Soplar el polvo de las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s4.breezy-evening",
+          "en": "Breezy evening",
+          "gl": "Tarde fresca",
+          "es": "Tarde fresca",
+          "tprAction": {
+            "gl": "Abanarse amodo",
+            "es": "Abanicarse despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.xuno.s4.catch-the-frisbee",
+          "en": "Catch the frisbee!",
+          "gl": "Colle o disco!",
+          "es": "¡Coge el disco!",
+          "tprAction": {
+            "gl": "Estender as mans",
+            "es": "Extender las manos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.xuno.s4.hop-to-number-three-then-turn-around",
+          "en": "Hop to number three, then turn around",
+          "gl": "Salta ata o tres e dá a volta",
+          "es": "Salta hasta el tres y date la vuelta",
+          "tprAction": {
+            "gl": "Saltar e xirar",
+            "es": "Saltar y girar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xuno.s4.if-it-s-hot-we-play-with-water",
+          "en": "If it's hot, we play with water",
+          "gl": "Se vai calor, xogamos con auga",
+          "es": "Si hace calor, jugamos con agua",
+          "tprAction": {
+            "gl": "Abanarse e salpicar",
+            "es": "Abanicarse y salpicar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.xuno.s4.throw-it-higher-than-the-tree",
+          "en": "Throw it higher than the tree",
+          "gl": "Lánzao máis alto ca a árbore",
+          "es": "Lánzalo más alto que el árbol",
+          "tprAction": {
+            "gl": "Lanzar moi alto",
+            "es": "Lanzar muy alto"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

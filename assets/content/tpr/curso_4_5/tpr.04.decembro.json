@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.4_5.decembro",
+  "curso": "curso_4_5",
+  "orden": 4,
+  "mesCalendario": 12,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Xeo e frío",
+        "es": "Hielo y frío"
+      },
+      "palabras": [
+        {
+          "id": "4_5.decembro.s1.ice-cube",
+          "en": "Ice cube",
+          "gl": "Cubo de xeo",
+          "es": "Cubito de hielo",
+          "tprAction": {
+            "gl": "Suxeitar un cubo de xeo imaxinario",
+            "es": "Sostener un cubito de hielo imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s1.freezer",
+          "en": "Freezer",
+          "gl": "Conxelador",
+          "es": "Congelador",
+          "tprAction": {
+            "gl": "Abrir unha porta fría",
+            "es": "Abrir una puerta fría"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s1.icicle",
+          "en": "Icicle",
+          "gl": "Carámbano",
+          "es": "Carámbano",
+          "tprAction": {
+            "gl": "Baixar un dedo coma un carámbano",
+            "es": "Bajar un dedo como un carámbano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s1.thermometer",
+          "en": "Thermometer",
+          "gl": "Termómetro",
+          "es": "Termómetro",
+          "tprAction": {
+            "gl": "Subir e baixar un dedo",
+            "es": "Subir y bajar un dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s1.puddle-ice",
+          "en": "Puddle ice",
+          "gl": "Xeo na poza",
+          "es": "Hielo en el charco",
+          "tprAction": {
+            "gl": "Pisar amodo coma sobre xeo",
+            "es": "Pisar despacio como sobre hielo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s1.melted-water",
+          "en": "Melted water",
+          "gl": "Auga derretida",
+          "es": "Agua derretida",
+          "tprAction": {
+            "gl": "Abrir as mans coma auga que escorre",
+            "es": "Abrir las manos como agua que escurre"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s1.experiment",
+          "en": "Experiment",
+          "gl": "Experimento",
+          "es": "Experimento",
+          "tprAction": {
+            "gl": "Mirar con atención coa lupa",
+            "es": "Mirar con atención con la lupa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s1.hold-ice",
+          "en": "Hold ice",
+          "gl": "Suxeitar xeo",
+          "es": "Sostener hielo",
+          "tprAction": {
+            "gl": "Tremer suxeitando algo frío",
+            "es": "Temblar sosteniendo algo frío"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s1.freeze-water",
+          "en": "Freeze water",
+          "gl": "Conxelar auga",
+          "es": "Congelar agua",
+          "tprAction": {
+            "gl": "Poñer o corpo ríxido",
+            "es": "Poner el cuerpo rígido"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s1.warm-with-breath",
+          "en": "Warm with breath",
+          "gl": "Quentar co alento",
+          "es": "Calentar con el aliento",
+          "tprAction": {
+            "gl": "Soprar nas mans",
+            "es": "Soplar en las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s1.predict",
+          "en": "Predict",
+          "gl": "Predicir",
+          "es": "Predecir",
+          "tprAction": {
+            "gl": "Tocar a cabeza pensando",
+            "es": "Tocar la cabeza pensando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s1.observe",
+          "en": "Observe",
+          "gl": "Observar",
+          "es": "Observar",
+          "tprAction": {
+            "gl": "Mirar sen tocar",
+            "es": "Mirar sin tocar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s1.colder",
+          "en": "Colder",
+          "gl": "Máis frío",
+          "es": "Más frío",
+          "tprAction": {
+            "gl": "Tremer máis",
+            "es": "Temblar más"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s1.warmer",
+          "en": "Warmer",
+          "gl": "Máis quente",
+          "es": "Más caliente",
+          "tprAction": {
+            "gl": "Fregar as mans",
+            "es": "Frotar las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s1.frozen-solid",
+          "en": "Frozen solid",
+          "gl": "Conxelado de todo",
+          "es": "Congelado del todo",
+          "tprAction": {
+            "gl": "Quedar ríxido",
+            "es": "Quedarse rígido"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s1.melty",
+          "en": "Melty",
+          "gl": "Derretido",
+          "es": "Derretido",
+          "tprAction": {
+            "gl": "Deixarse caer amodo",
+            "es": "Dejarse caer despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s1.what-will-happen-if-it-gets-warm",
+          "en": "What will happen if it gets warm?",
+          "gl": "Que pasará se vai calor?",
+          "es": "¿Qué pasará si hace calor?",
+          "tprAction": {
+            "gl": "Encoller os ombros",
+            "es": "Encoger los hombros"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.decembro.s1.it-melts-because-it-s-warm",
+          "en": "It melts because it's warm",
+          "gl": "Derrétese porque vai calor",
+          "es": "Se derrite porque hace calor",
+          "tprAction": {
+            "gl": "Baixar o corpo amodo",
+            "es": "Bajar el cuerpo despacio"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.decembro.s1.is-ice-hot-or-cold",
+          "en": "Is ice hot or cold?",
+          "gl": "O xeo é quente ou frío?",
+          "es": "¿El hielo es caliente o frío?",
+          "tprAction": {
+            "gl": "Tremer respondendo",
+            "es": "Temblar respondiendo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.decembro.s1.brr-freezing-hands",
+          "en": "Brr, freezing hands!",
+          "gl": "Brr, mans xeadas!",
+          "es": "¡Brr, manos heladas!",
+          "tprAction": {
+            "gl": "Soprar nas mans",
+            "es": "Soplar en las manos"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Máis e menos",
+        "es": "Más y menos"
+      },
+      "palabras": [
+        {
+          "id": "4_5.decembro.s2.scale",
+          "en": "Scale",
+          "gl": "Balanza",
+          "es": "Balanza",
+          "tprAction": {
+            "gl": "Poñer os brazos coma unha balanza",
+            "es": "Poner los brazos como una balanza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s2.ruler",
+          "en": "Ruler",
+          "gl": "Regra",
+          "es": "Regla",
+          "tprAction": {
+            "gl": "Medir cunha regra",
+            "es": "Medir con una regla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s2.tape-measure",
+          "en": "Tape measure",
+          "gl": "Cinta métrica",
+          "es": "Cinta métrica",
+          "tprAction": {
+            "gl": "Estirar unha cinta imaxinaria",
+            "es": "Estirar una cinta imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s2.handspan",
+          "en": "Handspan",
+          "gl": "Palmo",
+          "es": "Palmo",
+          "tprAction": {
+            "gl": "Medir a mesa a palmos",
+            "es": "Medir la mesa a palmos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s2.pair-of-socks",
+          "en": "Pair of socks",
+          "gl": "Par de calcetíns",
+          "es": "Par de calcetines",
+          "tprAction": {
+            "gl": "Xuntar dous calcetíns",
+            "es": "Juntar dos calcetines"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s2.half",
+          "en": "Half",
+          "gl": "Metade",
+          "es": "Mitad",
+          "tprAction": {
+            "gl": "Partir algo pola metade",
+            "es": "Partir algo por la mitad"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s2.whole",
+          "en": "Whole",
+          "gl": "Enteiro",
+          "es": "Entero",
+          "tprAction": {
+            "gl": "Xuntar as dúas metades",
+            "es": "Juntar las dos mitades"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s2.weigh",
+          "en": "Weigh",
+          "gl": "Pesar",
+          "es": "Pesar",
+          "tprAction": {
+            "gl": "Levantar dous obxectos e comparar",
+            "es": "Levantar dos objetos y comparar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s2.measure-with-hands",
+          "en": "Measure with hands",
+          "gl": "Medir coas mans",
+          "es": "Medir con las manos",
+          "tprAction": {
+            "gl": "Medir a palmos",
+            "es": "Medir a palmos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s2.split-in-half",
+          "en": "Split in half",
+          "gl": "Partir pola metade",
+          "es": "Partir por la mitad",
+          "tprAction": {
+            "gl": "Separar as mans",
+            "es": "Separar las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s2.add-one-more",
+          "en": "Add one more",
+          "gl": "Engadir un máis",
+          "es": "Añadir uno más",
+          "tprAction": {
+            "gl": "Poñer outro bloque",
+            "es": "Poner otro bloque"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s2.take-one-away",
+          "en": "Take one away",
+          "gl": "Quitar un",
+          "es": "Quitar uno",
+          "tprAction": {
+            "gl": "Retirar un bloque",
+            "es": "Retirar un bloque"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s2.heavier",
+          "en": "Heavier",
+          "gl": "Máis pesado",
+          "es": "Más pesado",
+          "tprAction": {
+            "gl": "Baixar a man que pesa máis",
+            "es": "Bajar la mano que pesa más"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s2.lighter-in-weight",
+          "en": "Lighter in weight",
+          "gl": "Máis lixeiro",
+          "es": "Más ligero",
+          "tprAction": {
+            "gl": "Subir a man que pesa menos",
+            "es": "Subir la mano que pesa menos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s2.longer",
+          "en": "Longer",
+          "gl": "Máis longo",
+          "es": "Más largo",
+          "tprAction": {
+            "gl": "Separar moito as mans",
+            "es": "Separar mucho las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s2.shorter",
+          "en": "Shorter",
+          "gl": "Máis curto",
+          "es": "Más corto",
+          "tprAction": {
+            "gl": "Xuntar as mans",
+            "es": "Juntar las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s2.which-one-is-heavier",
+          "en": "Which one is heavier?",
+          "gl": "Cal pesa máis?",
+          "es": "¿Cuál pesa más?",
+          "tprAction": {
+            "gl": "Levantar un en cada man",
+            "es": "Levantar uno en cada mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.decembro.s2.more-than-five",
+          "en": "More than five",
+          "gl": "Máis de cinco",
+          "es": "Más de cinco",
+          "tprAction": {
+            "gl": "Amosar cinco dedos e un máis",
+            "es": "Enseñar cinco dedos y uno más"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.decembro.s2.less-than-three",
+          "en": "Less than three",
+          "gl": "Menos de tres",
+          "es": "Menos de tres",
+          "tprAction": {
+            "gl": "Amosar dous dedos",
+            "es": "Enseñar dos dedos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.decembro.s2.this-one-is-longer",
+          "en": "This one is longer",
+          "gl": "Este é máis longo",
+          "es": "Este es más largo",
+          "tprAction": {
+            "gl": "Sinalar o máis longo",
+            "es": "Señalar el más largo"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Luces de Vigo",
+        "es": "Luces de Vigo"
+      },
+      "palabras": [
+        {
+          "id": "4_5.decembro.s3.city-lights",
+          "en": "City lights",
+          "gl": "Luces da cidade",
+          "es": "Luces de la ciudad",
+          "tprAction": {
+            "gl": "Abrir e pechar as mans no aire",
+            "es": "Abrir y cerrar las manos en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s3.big-wheel",
+          "en": "Big wheel",
+          "gl": "Noria",
+          "es": "Noria",
+          "tprAction": {
+            "gl": "Xirar os brazos coma unha noria",
+            "es": "Girar los brazos como una noria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s3.light-bulb",
+          "en": "Light bulb",
+          "gl": "Bombilla",
+          "es": "Bombilla",
+          "tprAction": {
+            "gl": "Facer unha bóla coas mans",
+            "es": "Hacer una bola con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s3.decoration",
+          "en": "Decoration",
+          "gl": "Adorno",
+          "es": "Adorno",
+          "tprAction": {
+            "gl": "Colgar un adorno imaxinario",
+            "es": "Colgar un adorno imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s3.shop-window",
+          "en": "Shop window",
+          "gl": "Escaparate",
+          "es": "Escaparate",
+          "tprAction": {
+            "gl": "Mirar a través dun cristal",
+            "es": "Mirar a través de un cristal"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s3.street-lamp",
+          "en": "Street lamp",
+          "gl": "Farol da rúa",
+          "es": "Farol de la calle",
+          "tprAction": {
+            "gl": "Estirarse coma un farol",
+            "es": "Estirarse como un farol"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s3.light-show",
+          "en": "Light show",
+          "gl": "Espectáculo de luces",
+          "es": "Espectáculo de luces",
+          "tprAction": {
+            "gl": "Mover as mans cambiando de cor",
+            "es": "Mover las manos cambiando de color"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s3.light-up",
+          "en": "Light up",
+          "gl": "Iluminar",
+          "es": "Iluminar",
+          "tprAction": {
+            "gl": "Abrir as mans de súpeto",
+            "es": "Abrir las manos de golpe"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s3.flicker",
+          "en": "Flicker",
+          "gl": "Pestanexar",
+          "es": "Parpadear",
+          "tprAction": {
+            "gl": "Abrir e pechar as mans rápido",
+            "es": "Abrir y cerrar las manos rápido"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s3.decorate",
+          "en": "Decorate",
+          "gl": "Decorar",
+          "es": "Decorar",
+          "tprAction": {
+            "gl": "Colgar adornos no aire",
+            "es": "Colgar adornos en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s3.admire",
+          "en": "Admire",
+          "gl": "Admirar",
+          "es": "Admirar",
+          "tprAction": {
+            "gl": "Mirar con boca aberta",
+            "es": "Mirar con la boca abierta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s3.walk-through",
+          "en": "Walk through",
+          "gl": "Pasear entre",
+          "es": "Pasear entre",
+          "tprAction": {
+            "gl": "Camiñar mirando arriba",
+            "es": "Caminar mirando arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s3.dazzling",
+          "en": "Dazzling",
+          "gl": "Deslumbrante",
+          "es": "Deslumbrante",
+          "tprAction": {
+            "gl": "Taparse un pouco os ollos",
+            "es": "Taparse un poco los ojos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s3.festive",
+          "en": "Festive",
+          "gl": "Festivo",
+          "es": "Festivo",
+          "tprAction": {
+            "gl": "Bailar contentos",
+            "es": "Bailar contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s3.multicoloured",
+          "en": "Multicoloured",
+          "gl": "Multicolor",
+          "es": "Multicolor",
+          "tprAction": {
+            "gl": "Sinalar moitas cores",
+            "es": "Señalar muchos colores"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s3.brightest",
+          "en": "Brightest",
+          "gl": "O máis brillante",
+          "es": "El más brillante",
+          "tprAction": {
+            "gl": "Sinalar a luz máis brillante",
+            "es": "Señalar la luz más brillante"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s3.look-at-all-the-lights",
+          "en": "Look at all the lights!",
+          "gl": "Mira cantas luces!",
+          "es": "¡Mira cuántas luces!",
+          "tprAction": {
+            "gl": "Abrir os brazos admirados",
+            "es": "Abrir los brazos admirados"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.decembro.s3.which-light-is-the-brightest",
+          "en": "Which light is the brightest?",
+          "gl": "Cal é a luz máis brillante?",
+          "es": "¿Cuál es la luz más brillante?",
+          "tprAction": {
+            "gl": "Sinalar e comparar",
+            "es": "Señalar y comparar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.decembro.s3.the-big-wheel-goes-round-and-round",
+          "en": "The big wheel goes round and round",
+          "gl": "A noria dá voltas e voltas",
+          "es": "La noria da vueltas y vueltas",
+          "tprAction": {
+            "gl": "Xirar os brazos",
+            "es": "Girar los brazos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.decembro.s3.lights-in-the-dark",
+          "en": "Lights in the dark",
+          "gl": "Luces na escuridade",
+          "es": "Luces en la oscuridad",
+          "tprAction": {
+            "gl": "Abrir as mans nunha sala escura",
+            "es": "Abrir las manos en una sala oscura"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Compartimos o abrigo",
+        "es": "Compartimos el abrigo"
+      },
+      "palabras": [
+        {
+          "id": "4_5.decembro.s4.donation-box",
+          "en": "Donation box",
+          "gl": "Caixa de doazóns",
+          "es": "Caja de donaciones",
+          "tprAction": {
+            "gl": "Meter unha peza de roupa na caixa",
+            "es": "Meter una prenda en la caja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s4.warm-clothes",
+          "en": "Warm clothes",
+          "gl": "Roupa de abrigo",
+          "es": "Ropa de abrigo",
+          "tprAction": {
+            "gl": "Abrazar unha chaqueta",
+            "es": "Abrazar una chaqueta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s4.neighbour",
+          "en": "Neighbour",
+          "gl": "Veciño",
+          "es": "Vecino",
+          "tprAction": {
+            "gl": "Acenar ao veciño",
+            "es": "Saludar al vecino"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s4.blanket-share",
+          "en": "Blanket share",
+          "gl": "Manta compartida",
+          "es": "Manta compartida",
+          "tprAction": {
+            "gl": "Taparse dous coa mesma manta",
+            "es": "Taparse dos con la misma manta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s4.kindness",
+          "en": "Kindness",
+          "gl": "Bondade",
+          "es": "Bondad",
+          "tprAction": {
+            "gl": "Facer un corazón coas mans",
+            "es": "Hacer un corazón con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s4.card",
+          "en": "Card",
+          "gl": "Postal",
+          "es": "Postal",
+          "tprAction": {
+            "gl": "Entregar unha postal",
+            "es": "Entregar una postal"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s4.community",
+          "en": "Community",
+          "gl": "Comunidade",
+          "es": "Comunidad",
+          "tprAction": {
+            "gl": "Collerse todos das mans",
+            "es": "Cogerse todos de las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.decembro.s4.donate",
+          "en": "Donate",
+          "gl": "Doar",
+          "es": "Donar",
+          "tprAction": {
+            "gl": "Meter algo na caixa",
+            "es": "Meter algo en la caja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s4.give-away",
+          "en": "Give away",
+          "gl": "Regalar",
+          "es": "Regalar",
+          "tprAction": {
+            "gl": "Estender un obxecto a outra persoa",
+            "es": "Extender un objeto a otra persona"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s4.help-others",
+          "en": "Help others",
+          "gl": "Axudar aos demais",
+          "es": "Ayudar a los demás",
+          "tprAction": {
+            "gl": "Dar a man a alguén",
+            "es": "Dar la mano a alguien"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s4.keep-warm-together",
+          "en": "Keep warm together",
+          "gl": "Quentarse xuntos",
+          "es": "Calentarse juntos",
+          "tprAction": {
+            "gl": "Apertarse todos",
+            "es": "Apretarse todos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s4.write-a-card",
+          "en": "Write a card",
+          "gl": "Escribir unha postal",
+          "es": "Escribir una postal",
+          "tprAction": {
+            "gl": "Facer que se escribe",
+            "es": "Hacer que se escribe"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.decembro.s4.generous",
+          "en": "Generous",
+          "gl": "Xeneroso",
+          "es": "Generoso",
+          "tprAction": {
+            "gl": "Abrir os brazos para dar",
+            "es": "Abrir los brazos para dar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s4.grateful-heart",
+          "en": "Grateful heart",
+          "gl": "Corazón agradecido",
+          "es": "Corazón agradecido",
+          "tprAction": {
+            "gl": "Pousar as mans no peito",
+            "es": "Poner las manos en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s4.thoughtful",
+          "en": "Thoughtful",
+          "gl": "Considerado",
+          "es": "Atento",
+          "tprAction": {
+            "gl": "Tocar a cabeza e o peito",
+            "es": "Tocar la cabeza y el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s4.warm-hearted",
+          "en": "Warm-hearted",
+          "gl": "De corazón quente",
+          "es": "De buen corazón",
+          "tprAction": {
+            "gl": "Abrazarse a si mesmo",
+            "es": "Abrazarse a sí mismo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.decembro.s4.this-is-for-you",
+          "en": "This is for you",
+          "gl": "Isto é para ti",
+          "es": "Esto es para ti",
+          "tprAction": {
+            "gl": "Estender unha postal",
+            "es": "Extender una postal"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.decembro.s4.we-share-because-we-care",
+          "en": "We share because we care",
+          "gl": "Compartimos porque nos importa",
+          "es": "Compartimos porque nos importa",
+          "tprAction": {
+            "gl": "Repartir e sorrir",
+            "es": "Repartir y sonreír"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.decembro.s4.thank-you-so-much",
+          "en": "Thank you so much!",
+          "gl": "Moitísimas grazas!",
+          "es": "¡Muchísimas gracias!",
+          "tprAction": {
+            "gl": "Xuntar as mans e sorrir",
+            "es": "Juntar las manos y sonreír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.decembro.s4.warm-hands-warm-heart",
+          "en": "Warm hands, warm heart",
+          "gl": "Mans quentes, corazón quente",
+          "es": "Manos calientes, corazón caliente",
+          "tprAction": {
+            "gl": "Fregar as mans e pousalas no peito",
+            "es": "Frotar las manos y posarlas en el pecho"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

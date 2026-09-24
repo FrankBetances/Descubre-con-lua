@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.0_2.setembro",
+  "curso": "curso_0_2",
+  "orden": 1,
+  "mesCalendario": 9,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Ola, pequeno!",
+        "es": "¡Hola, pequeño!"
+      },
+      "palabras": [
+        {
+          "id": "0_2.setembro.s1.nursery",
+          "en": "Nursery",
+          "gl": "Escola infantil",
+          "es": "Escuela infantil",
+          "tprAction": {
+            "gl": "Sinalar a porta da escola ao chegar",
+            "es": "Señalar la puerta de la escuela al llegar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s1.cot",
+          "en": "Cot",
+          "gl": "Berce",
+          "es": "Cuna",
+          "tprAction": {
+            "gl": "Pousar o bebé no berce con coidado",
+            "es": "Dejar al bebé en la cuna con cuidado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s1.nappy",
+          "en": "Nappy",
+          "gl": "Cueiro",
+          "es": "Pañal",
+          "tprAction": {
+            "gl": "Palmear suave o cueiro ao cambialo",
+            "es": "Dar palmaditas suaves al pañal al cambiarlo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s1.bib",
+          "en": "Bib",
+          "gl": "Babeiro",
+          "es": "Babero",
+          "tprAction": {
+            "gl": "Atar o babeiro ao pescozo amodo",
+            "es": "Atar el babero al cuello despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s1.dummy",
+          "en": "Dummy",
+          "gl": "Chupete",
+          "es": "Chupete",
+          "tprAction": {
+            "gl": "Achegar o chupete e retiralo xogando",
+            "es": "Acercar el chupete y retirarlo jugando"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s1.lap",
+          "en": "Lap",
+          "gl": "Colo",
+          "es": "Regazo",
+          "tprAction": {
+            "gl": "Sentar o bebé no colo",
+            "es": "Sentar al bebé en el regazo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s1.coat-hook",
+          "en": "Coat hook",
+          "gl": "Colgadoiro",
+          "es": "Perchero",
+          "tprAction": {
+            "gl": "Colgar a chaqueta no colgadoiro xuntos",
+            "es": "Colgar la chaqueta en el perchero juntos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s1.greet",
+          "en": "Greet",
+          "gl": "Saudar",
+          "es": "Saludar",
+          "tprAction": {
+            "gl": "Inclinar a cabeza e sorrir ao bebé",
+            "es": "Inclinar la cabeza y sonreír al bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s1.cradle",
+          "en": "Cradle",
+          "gl": "Arrolar",
+          "es": "Acunar",
+          "tprAction": {
+            "gl": "Arrolar o bebé nos brazos",
+            "es": "Acunar al bebé en los brazos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s1.nod",
+          "en": "Nod",
+          "gl": "Asentir",
+          "es": "Asentir",
+          "tprAction": {
+            "gl": "Mover a cabeza arriba e abaixo amodo",
+            "es": "Mover la cabeza arriba y abajo despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s1.snuggle",
+          "en": "Snuggle",
+          "gl": "Aconchegarse",
+          "es": "Acurrucarse",
+          "tprAction": {
+            "gl": "Aconchegar o bebé contra o peito",
+            "es": "Acurrucar al bebé contra el pecho"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s1.coo",
+          "en": "Coo",
+          "gl": "Facer gorgoritos",
+          "es": "Hacer gorgoritos",
+          "tprAction": {
+            "gl": "Responder aos sons do bebé con sons suaves",
+            "es": "Responder a los sonidos del bebé con sonidos suaves"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s1.snug",
+          "en": "Snug",
+          "gl": "Abrigadiño",
+          "es": "Arropadito",
+          "tprAction": {
+            "gl": "Arroupar o bebé coa manta",
+            "es": "Arropar al bebé con la manta"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s1.cheerful",
+          "en": "Cheerful",
+          "gl": "Alegre",
+          "es": "Alegre",
+          "tprAction": {
+            "gl": "Abrir os ollos e sorrir moito",
+            "es": "Abrir los ojos y sonreír mucho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s1.peaceful",
+          "en": "Peaceful",
+          "gl": "Tranquilo",
+          "es": "Sereno",
+          "tprAction": {
+            "gl": "Respirar amodo co bebé no peito",
+            "es": "Respirar despacio con el bebé en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s1.precious",
+          "en": "Precious",
+          "gl": "Precioso",
+          "es": "Precioso",
+          "tprAction": {
+            "gl": "Acariñar a man do bebé",
+            "es": "Acariciar la mano del bebé"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s1.hello-little-one",
+          "en": "Hello, little one!",
+          "gl": "Ola, pequeno!",
+          "es": "¡Hola, pequeño!",
+          "tprAction": {
+            "gl": "Acenar preto da cara do bebé",
+            "es": "Saludar cerca de la cara del bebé"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s1.welcome",
+          "en": "Welcome!",
+          "gl": "Benvido!",
+          "es": "¡Bienvenido!",
+          "tprAction": {
+            "gl": "Abrir os brazos ao recibilo",
+            "es": "Abrir los brazos al recibirlo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s1.mummy-and-me",
+          "en": "Mummy and me",
+          "gl": "A mamá e mais eu",
+          "es": "Mamá y yo",
+          "tprAction": {
+            "gl": "Sinalar a mamá e despois o bebé",
+            "es": "Señalar a mamá y luego al bebé"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.setembro.s1.in-my-arms",
+          "en": "In my arms",
+          "gl": "Nos meus brazos",
+          "es": "En mis brazos",
+          "tprAction": {
+            "gl": "Coller o bebé en brazos",
+            "es": "Coger al bebé en brazos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "A miña xente",
+        "es": "Mi gente"
+      },
+      "palabras": [
+        {
+          "id": "0_2.setembro.s2.grandad",
+          "en": "Grandad",
+          "gl": "Avó",
+          "es": "Abuelo",
+          "tprAction": {
+            "gl": "Sinalar a foto do avó",
+            "es": "Señalar la foto del abuelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s2.nanny",
+          "en": "Nanny",
+          "gl": "Coidadora",
+          "es": "Cuidadora",
+          "tprAction": {
+            "gl": "Sinalar á persoa que coida",
+            "es": "Señalar a la persona que cuida"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s2.brother",
+          "en": "Brother",
+          "gl": "Irmán",
+          "es": "Hermano",
+          "tprAction": {
+            "gl": "Sinalar ao irmán e sorrir",
+            "es": "Señalar al hermano y sonreír"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s2.sister",
+          "en": "Sister",
+          "gl": "Irmá",
+          "es": "Hermana",
+          "tprAction": {
+            "gl": "Sinalar á irmá e sorrir",
+            "es": "Señalar a la hermana y sonreír"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s2.aunt",
+          "en": "Aunt",
+          "gl": "Tía",
+          "es": "Tía",
+          "tprAction": {
+            "gl": "Sinalar a foto da tía",
+            "es": "Señalar la foto de la tía"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s2.uncle",
+          "en": "Uncle",
+          "gl": "Tío",
+          "es": "Tío",
+          "tprAction": {
+            "gl": "Sinalar a foto do tío",
+            "es": "Señalar la foto del tío"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s2.photo-album",
+          "en": "Photo album",
+          "gl": "Álbum de fotos",
+          "es": "Álbum de fotos",
+          "tprAction": {
+            "gl": "Pasar as follas do álbum xuntos",
+            "es": "Pasar las hojas del álbum juntos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s2.kiss-goodbye",
+          "en": "Kiss goodbye",
+          "gl": "Bicar ao despedirse",
+          "es": "Besar al despedirse",
+          "tprAction": {
+            "gl": "Mandar un bico coa man",
+            "es": "Mandar un beso con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s2.pick-up-baby",
+          "en": "Pick up baby",
+          "gl": "Coller o bebé",
+          "es": "Coger al bebé",
+          "tprAction": {
+            "gl": "Levantar o bebé do chan amodo",
+            "es": "Levantar al bebé del suelo despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s2.settle",
+          "en": "Settle",
+          "gl": "Acougar",
+          "es": "Calmarse",
+          "tprAction": {
+            "gl": "Pasar a man polas costas en círculos",
+            "es": "Pasar la mano por la espalda en círculos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s2.stroke",
+          "en": "Stroke",
+          "gl": "Acariñar",
+          "es": "Acariciar",
+          "tprAction": {
+            "gl": "Acariñar o pelo do bebé",
+            "es": "Acariciar el pelo del bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s2.babble",
+          "en": "Babble",
+          "gl": "Balbucir",
+          "es": "Balbucear",
+          "tprAction": {
+            "gl": "Repetir «ba-ba» co bebé",
+            "es": "Repetir «ba-ba» con el bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s2.loving",
+          "en": "Loving",
+          "gl": "Agarimoso",
+          "es": "Cariñoso",
+          "tprAction": {
+            "gl": "Apertar suave o bebé contra o peito",
+            "es": "Apretar suave al bebé contra el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s2.familiar",
+          "en": "Familiar",
+          "gl": "Coñecido",
+          "es": "Conocido",
+          "tprAction": {
+            "gl": "Sinalar unha cara coñecida",
+            "es": "Señalar una cara conocida"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s2.glad",
+          "en": "Glad",
+          "gl": "Contento",
+          "es": "Contento",
+          "tprAction": {
+            "gl": "Bater as palmas amodo",
+            "es": "Dar palmas despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s2.safe-and-sound",
+          "en": "Safe and sound",
+          "gl": "Sán e salvo",
+          "es": "Sano y salvo",
+          "tprAction": {
+            "gl": "Abrazar o bebé ao volver",
+            "es": "Abrazar al bebé al volver"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s2.who-s-this",
+          "en": "Who's this?",
+          "gl": "Quen é este?",
+          "es": "¿Quién es este?",
+          "tprAction": {
+            "gl": "Sinalar unha foto e agardar",
+            "es": "Señalar una foto y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s2.here-s-grandad",
+          "en": "Here's Grandad!",
+          "gl": "Aquí está o avó!",
+          "es": "¡Aquí está el abuelo!",
+          "tprAction": {
+            "gl": "Descubrir a foto do avó",
+            "es": "Descubrir la foto del abuelo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s2.bye-for-now",
+          "en": "Bye for now!",
+          "gl": "Ata logo!",
+          "es": "¡Hasta luego!",
+          "tprAction": {
+            "gl": "Acenar dende a porta",
+            "es": "Saludar desde la puerta"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s2.with-grandma",
+          "en": "With Grandma",
+          "gl": "Coa avoa",
+          "es": "Con la abuela",
+          "tprAction": {
+            "gl": "Coller a man da avoa",
+            "es": "Coger la mano de la abuela"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Os primeiros sorrisos",
+        "es": "Las primeras sonrisas"
+      },
+      "palabras": [
+        {
+          "id": "0_2.setembro.s3.smile-face",
+          "en": "Smile face",
+          "gl": "Cara sorrinte",
+          "es": "Cara sonriente",
+          "tprAction": {
+            "gl": "Debuxar un sorriso no aire",
+            "es": "Dibujar una sonrisa en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s3.giggle",
+          "en": "Giggle",
+          "gl": "Risiña",
+          "es": "Risita",
+          "tprAction": {
+            "gl": "Facer unha risiña ao bebé",
+            "es": "Hacer una risita al bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s3.eyelashes",
+          "en": "Eyelashes",
+          "gl": "Pestanas",
+          "es": "Pestañas",
+          "tprAction": {
+            "gl": "Pestanexar amodo preto do bebé",
+            "es": "Parpadear despacio cerca del bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s3.dimple",
+          "en": "Dimple",
+          "gl": "Coviña",
+          "es": "Hoyuelo",
+          "tprAction": {
+            "gl": "Tocar a coviña da meixela",
+            "es": "Tocar el hoyuelo de la mejilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s3.coo-coo",
+          "en": "Coo coo",
+          "gl": "Arrulo",
+          "es": "Arrullo",
+          "tprAction": {
+            "gl": "Arrular coma unha pomba",
+            "es": "Arrullar como una paloma"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s3.mobile",
+          "en": "Mobile",
+          "gl": "Móbil de berce",
+          "es": "Móvil de cuna",
+          "tprAction": {
+            "gl": "Facer xirar o móbil do berce",
+            "es": "Hacer girar el móvil de la cuna"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s3.rocking-chair",
+          "en": "Rocking chair",
+          "gl": "Randeeira",
+          "es": "Mecedora",
+          "tprAction": {
+            "gl": "Randear na cadeira co bebé",
+            "es": "Mecerse en la silla con el bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s3.beam",
+          "en": "Beam",
+          "gl": "Sorrir de orella a orella",
+          "es": "Sonreír de oreja a oreja",
+          "tprAction": {
+            "gl": "Sorrir moi grande ao bebé",
+            "es": "Sonreír muy grande al bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s3.gaze",
+          "en": "Gaze",
+          "gl": "Mirar fixamente",
+          "es": "Mirar fijamente",
+          "tprAction": {
+            "gl": "Mirar aos ollos do bebé en silencio",
+            "es": "Mirar a los ojos del bebé en silencio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s3.chuckle",
+          "en": "Chuckle",
+          "gl": "Rir baixiño",
+          "es": "Reír bajito",
+          "tprAction": {
+            "gl": "Rir baixiño preto da orella",
+            "es": "Reír bajito cerca de la oreja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s3.nuzzle",
+          "en": "Nuzzle",
+          "gl": "Fociñar",
+          "es": "Hocicar",
+          "tprAction": {
+            "gl": "Tocar o nariz do bebé co nariz",
+            "es": "Tocar la nariz del bebé con la nariz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s3.coax",
+          "en": "Coax",
+          "gl": "Animar con agarimo",
+          "es": "Animar con cariño",
+          "tprAction": {
+            "gl": "Chamar ao bebé con voz doce",
+            "es": "Llamar al bebé con voz dulce"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s3.joyful",
+          "en": "Joyful",
+          "gl": "Ledo",
+          "es": "Gozoso",
+          "tprAction": {
+            "gl": "Levantar os brazos contentos",
+            "es": "Levantar los brazos contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s3.bubbly-baby",
+          "en": "Bubbly baby",
+          "gl": "Risoño",
+          "es": "Risueño",
+          "tprAction": {
+            "gl": "Facer cóxegas e sorrir",
+            "es": "Hacer cosquillas y sonreír"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s3.content",
+          "en": "Content",
+          "gl": "Satisfeito",
+          "es": "Satisfecho",
+          "tprAction": {
+            "gl": "Deixar o bebé tranquilo no colo",
+            "es": "Dejar al bebé tranquilo en el regazo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s3.chubby",
+          "en": "Chubby",
+          "gl": "Gordiño",
+          "es": "Regordete",
+          "tprAction": {
+            "gl": "Apertar suave as pernas gordiñas",
+            "es": "Apretar suave las piernas regordetas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s3.where-s-the-smile",
+          "en": "Where's the smile?",
+          "gl": "Onde está o sorriso?",
+          "es": "¿Dónde está la sonrisa?",
+          "tprAction": {
+            "gl": "Tapar e destapar a boca sorrindo",
+            "es": "Tapar y destapar la boca sonriendo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s3.there-it-is",
+          "en": "There it is!",
+          "gl": "Aí está!",
+          "es": "¡Ahí está!",
+          "tprAction": {
+            "gl": "Sinalar o sorriso do bebé",
+            "es": "Señalar la sonrisa del bebé"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s3.smile-at-me",
+          "en": "Smile at me",
+          "gl": "Sorrí para min",
+          "es": "Sonríeme",
+          "tprAction": {
+            "gl": "Achegar a cara e sorrir",
+            "es": "Acercar la cara y sonreír"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.setembro.s3.eye-to-eye",
+          "en": "Eye to eye",
+          "gl": "Ollo con ollo",
+          "es": "Ojo con ojo",
+          "tprAction": {
+            "gl": "Poñerse á altura dos ollos do bebé",
+            "es": "Ponerse a la altura de los ojos del bebé"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Día a día na escola",
+        "es": "Día a día en la escuela"
+      },
+      "palabras": [
+        {
+          "id": "0_2.setembro.s4.changing-mat",
+          "en": "Changing mat",
+          "gl": "Cambiador",
+          "es": "Cambiador",
+          "tprAction": {
+            "gl": "Tender o bebé no cambiador",
+            "es": "Tumbar al bebé en el cambiador"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s4.high-chair",
+          "en": "High chair",
+          "gl": "Trona",
+          "es": "Trona",
+          "tprAction": {
+            "gl": "Sentar o bebé na trona",
+            "es": "Sentar al bebé en la trona"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s4.pram",
+          "en": "Pram",
+          "gl": "Carriño",
+          "es": "Cochecito",
+          "tprAction": {
+            "gl": "Empurrar o carriño amodo",
+            "es": "Empujar el cochecito despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s4.sippy-cup",
+          "en": "Sippy cup",
+          "gl": "Vaso de aprendizaxe",
+          "es": "Vaso de aprendizaje",
+          "tprAction": {
+            "gl": "Achegar o vaso aos beizos",
+            "es": "Acercar el vaso a los labios"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s4.soft-toy",
+          "en": "Soft toy",
+          "gl": "Peluche",
+          "es": "Peluche",
+          "tprAction": {
+            "gl": "Dar o peluche ao bebé",
+            "es": "Dar el peluche al bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s4.playmat",
+          "en": "Playmat",
+          "gl": "Alfombra de xogo",
+          "es": "Alfombra de juego",
+          "tprAction": {
+            "gl": "Tender o bebé na alfombra de xogo",
+            "es": "Tumbar al bebé en la alfombra de juego"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s4.routine",
+          "en": "Routine",
+          "gl": "Rutina",
+          "es": "Rutina",
+          "tprAction": {
+            "gl": "Tocar o reloxo e facer o mesmo cada día",
+            "es": "Tocar el reloj y hacer lo mismo cada día"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.setembro.s4.change",
+          "en": "Change",
+          "gl": "Cambiar",
+          "es": "Cambiar",
+          "tprAction": {
+            "gl": "Cambiar o cueiro contando «un, dous»",
+            "es": "Cambiar el pañal contando «uno, dos»"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s4.lift",
+          "en": "Lift",
+          "gl": "Erguer",
+          "es": "Alzar",
+          "tprAction": {
+            "gl": "Erguer o bebé por riba da cabeza",
+            "es": "Alzar al bebé por encima de la cabeza"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s4.lay-down",
+          "en": "Lay down",
+          "gl": "Deitar",
+          "es": "Acostar",
+          "tprAction": {
+            "gl": "Deitar o bebé de costas amodo",
+            "es": "Acostar al bebé boca arriba despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s4.sip",
+          "en": "Sip",
+          "gl": "Beber a grolos",
+          "es": "Beber a sorbos",
+          "tprAction": {
+            "gl": "Facer un grolo pequeno do vaso",
+            "es": "Dar un sorbo pequeño del vaso"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s4.burp",
+          "en": "Burp",
+          "gl": "Arrotar",
+          "es": "Eructar",
+          "tprAction": {
+            "gl": "Palmear as costas despois de comer",
+            "es": "Dar palmaditas en la espalda después de comer"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.setembro.s4.fresh-and-clean",
+          "en": "Fresh and clean",
+          "gl": "Limpo e fresco",
+          "es": "Limpio y fresco",
+          "tprAction": {
+            "gl": "Cheirar o bebé despois do cambio",
+            "es": "Oler al bebé después del cambio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s4.comfortable",
+          "en": "Comfortable",
+          "gl": "Cómodo",
+          "es": "Cómodo",
+          "tprAction": {
+            "gl": "Colocar un coxín detrás das costas",
+            "es": "Colocar un cojín detrás de la espalda"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s4.full-up",
+          "en": "Full up",
+          "gl": "Farto",
+          "es": "Lleno",
+          "tprAction": {
+            "gl": "Tocar a barriga despois de comer",
+            "es": "Tocar la barriga después de comer"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s4.cuddly",
+          "en": "Cuddly",
+          "gl": "Apertable",
+          "es": "Achuchable",
+          "tprAction": {
+            "gl": "Apertar o peluche contra o peito",
+            "es": "Apretar el peluche contra el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.setembro.s4.nappy-time",
+          "en": "Nappy time!",
+          "gl": "Hora do cueiro!",
+          "es": "¡Hora del pañal!",
+          "tprAction": {
+            "gl": "Coller o cueiro e amosalo",
+            "es": "Coger el pañal y enseñarlo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s4.up-you-come",
+          "en": "Up you come!",
+          "gl": "Arriba!",
+          "es": "¡Arriba!",
+          "tprAction": {
+            "gl": "Levantar o bebé do chan",
+            "es": "Levantar al bebé del suelo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s4.all-done",
+          "en": "All done!",
+          "gl": "Xa está!",
+          "es": "¡Ya está!",
+          "tprAction": {
+            "gl": "Abrir as mans ao rematar",
+            "es": "Abrir las manos al terminar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.setembro.s4.before-and-after",
+          "en": "Before and after",
+          "gl": "Antes e despois",
+          "es": "Antes y después",
+          "tprAction": {
+            "gl": "Sinalar o cueiro sucio e despois o limpo",
+            "es": "Señalar el pañal sucio y luego el limpio"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

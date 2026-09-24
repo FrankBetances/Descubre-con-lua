@@ -1,4 +1,190 @@
 {
+  "inventario": {
+    "nota": {
+      "gl": "Os 44 son o inventario habitual dos fonemas do inglés: 24 consoantes e 20 vogais. A voz da app é americana: nela /ɪə/, /eə/ e /ʊə/ soan cun r, e /oʊ/ é o que no inglés británico se escribe /əʊ/. Hai 47 fichas porque tres grafías levan un son que xa ten a súa: ck (/k/), oa/ow (/oʊ/) e u_e (/j/ + /uː/).",
+      "es": "Los 44 son el inventario habitual de los fonemas del inglés: 24 consonantes y 20 vocales. La voz de la app es americana: en ella /ɪə/, /eə/ y /ʊə/ suenan con r, y /oʊ/ es lo que en el inglés británico se escribe /əʊ/. Hay 47 fichas porque tres grafías llevan un sonido que ya tiene la suya: ck (/k/), oa/ow (/oʊ/) y u_e (/j/ + /uː/)."
+    },
+    "consoantes": [
+      {
+        "ipa": "/p/",
+        "fonema": "ph_p"
+      },
+      {
+        "ipa": "/b/",
+        "fonema": "ph_b"
+      },
+      {
+        "ipa": "/t/",
+        "fonema": "ph_t"
+      },
+      {
+        "ipa": "/d/",
+        "fonema": "ph_d"
+      },
+      {
+        "ipa": "/k/",
+        "fonema": "ph_c_k"
+      },
+      {
+        "ipa": "/g/",
+        "fonema": "ph_g"
+      },
+      {
+        "ipa": "/f/",
+        "fonema": "ph_f"
+      },
+      {
+        "ipa": "/v/",
+        "fonema": "ph_v"
+      },
+      {
+        "ipa": "/θ/",
+        "fonema": "ph_th_unvoiced"
+      },
+      {
+        "ipa": "/ð/",
+        "fonema": "ph_th_voiced"
+      },
+      {
+        "ipa": "/s/",
+        "fonema": "ph_s"
+      },
+      {
+        "ipa": "/z/",
+        "fonema": "ph_z"
+      },
+      {
+        "ipa": "/ʃ/",
+        "fonema": "ph_sh"
+      },
+      {
+        "ipa": "/ʒ/",
+        "fonema": "ph_zh"
+      },
+      {
+        "ipa": "/h/",
+        "fonema": "ph_h"
+      },
+      {
+        "ipa": "/tʃ/",
+        "fonema": "ph_ch"
+      },
+      {
+        "ipa": "/dʒ/",
+        "fonema": "ph_j"
+      },
+      {
+        "ipa": "/m/",
+        "fonema": "ph_m"
+      },
+      {
+        "ipa": "/n/",
+        "fonema": "ph_n"
+      },
+      {
+        "ipa": "/ŋ/",
+        "fonema": "ph_ng"
+      },
+      {
+        "ipa": "/l/",
+        "fonema": "ph_l"
+      },
+      {
+        "ipa": "/r/",
+        "fonema": "ph_r"
+      },
+      {
+        "ipa": "/w/",
+        "fonema": "ph_w"
+      },
+      {
+        "ipa": "/j/",
+        "fonema": "ph_y"
+      }
+    ],
+    "vogais": [
+      {
+        "ipa": "/ɪ/",
+        "fonema": "ph_short_i"
+      },
+      {
+        "ipa": "/ɛ/",
+        "fonema": "ph_short_e"
+      },
+      {
+        "ipa": "/æ/",
+        "fonema": "ph_short_a"
+      },
+      {
+        "ipa": "/ʌ/",
+        "fonema": "ph_short_u"
+      },
+      {
+        "ipa": "/ɒ/",
+        "fonema": "ph_short_o"
+      },
+      {
+        "ipa": "/ʊ/",
+        "fonema": "ph_oo_short"
+      },
+      {
+        "ipa": "/ə/",
+        "fonema": "ph_schwa"
+      },
+      {
+        "ipa": "/iː/",
+        "fonema": "ph_ee_ea"
+      },
+      {
+        "ipa": "/ɑː/",
+        "fonema": "ph_r_ar"
+      },
+      {
+        "ipa": "/ɔː/",
+        "fonema": "ph_or"
+      },
+      {
+        "ipa": "/ɜː/",
+        "fonema": "ph_er"
+      },
+      {
+        "ipa": "/uː/",
+        "fonema": "ph_oo_long"
+      },
+      {
+        "ipa": "/eɪ/",
+        "fonema": "ph_magic_a"
+      },
+      {
+        "ipa": "/aɪ/",
+        "fonema": "ph_magic_i"
+      },
+      {
+        "ipa": "/ɔɪ/",
+        "fonema": "ph_oy"
+      },
+      {
+        "ipa": "/oʊ/",
+        "fonema": "ph_magic_o"
+      },
+      {
+        "ipa": "/aʊ/",
+        "fonema": "ph_ow_ou"
+      },
+      {
+        "ipa": "/ɪə/",
+        "fonema": "ph_eer"
+      },
+      {
+        "ipa": "/eə/",
+        "fonema": "ph_air"
+      },
+      {
+        "ipa": "/ʊə/",
+        "fonema": "ph_ure"
+      }
+    ]
+  },
   "phonemes": [
     {
       "id": "ph_short_a",
@@ -781,6 +967,292 @@
       "frequencyRank": 34,
       "readingLevel": 5,
       "nfcUid": "04:A1:7E:61"
+    },
+    {
+      "id": "ph_zh",
+      "symbolIpa": "/ʒ/",
+      "grapheme": "s",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /ʒ/ (measure)",
+        "es": "Sonido /ʒ/ (measure)"
+      },
+      "exampleWord": {
+        "en": "measure",
+        "gl": "Medir",
+        "es": "Medir"
+      },
+      "audioCue": "/ʒ/ como en measure e treasure",
+      "articulationGuide": {
+        "gl": "Coma o /ʃ/ de ship, pero coa voz acendida: toca a gorxa e nota como vibra.",
+        "es": "Como la /ʃ/ de ship, pero con la voz encendida: toca la garganta y nota cómo vibra."
+      },
+      "frequencyRank": 35,
+      "readingLevel": 5
+    },
+    {
+      "id": "ph_j",
+      "symbolIpa": "/dʒ/",
+      "grapheme": "j",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /dʒ/ (jump)",
+        "es": "Sonido /dʒ/ (jump)"
+      },
+      "exampleWord": {
+        "en": "jump",
+        "gl": "Chimpar",
+        "es": "Saltar"
+      },
+      "audioCue": "/dʒ/ como en jump e jelly",
+      "articulationGuide": {
+        "gl": "A punta da lingua detrás dos dentes de arriba; solta o aire dun golpe e coa voz acendida: d-ʒ.",
+        "es": "La punta de la lengua detrás de los dientes de arriba; suelta el aire de golpe y con la voz encendida: d-ʒ."
+      },
+      "frequencyRank": 36,
+      "readingLevel": 2
+    },
+    {
+      "id": "ph_ng",
+      "symbolIpa": "/ŋ/",
+      "grapheme": "ng",
+      "category": "digraph",
+      "name": {
+        "gl": "Dígrafo /ng/",
+        "es": "Dígrafo /ng/"
+      },
+      "exampleWord": {
+        "en": "sing",
+        "gl": "Cantar",
+        "es": "Cantar"
+      },
+      "audioCue": "/ŋ/ ao final de sing e king",
+      "articulationGuide": {
+        "gl": "A parte de atrás da lingua sobe ao padal brando e o aire sae polo nariz. Ao final non soa ningún /g/.",
+        "es": "La parte de atrás de la lengua sube al paladar blando y el aire sale por la nariz. Al final no suena ninguna /g/."
+      },
+      "frequencyRank": 37,
+      "readingLevel": 2
+    },
+    {
+      "id": "ph_y",
+      "symbolIpa": "/j/",
+      "grapheme": "y",
+      "category": "consonant",
+      "name": {
+        "gl": "Son /j/ (yellow)",
+        "es": "Sonido /j/ (yellow)"
+      },
+      "exampleWord": {
+        "en": "yellow",
+        "gl": "Amarelo, amarela",
+        "es": "Amarillo, amarilla"
+      },
+      "audioCue": "/j/ como en yellow e yes",
+      "articulationGuide": {
+        "gl": "Coma un i moi curto que escorrega cara á vogal seguinte: y-ellow.",
+        "es": "Como una i muy corta que resbala hacia la vocal siguiente: y-ellow."
+      },
+      "frequencyRank": 38,
+      "readingLevel": 2
+    },
+    {
+      "id": "ph_oo_short",
+      "symbolIpa": "/ʊ/",
+      "grapheme": "oo",
+      "category": "vowel_team",
+      "name": {
+        "gl": "OO curta (/ʊ/)",
+        "es": "OO corta (/ʊ/)"
+      },
+      "exampleWord": {
+        "en": "book",
+        "gl": "Libro",
+        "es": "Libro"
+      },
+      "audioCue": "/ʊ/ curta como en book e foot",
+      "articulationGuide": {
+        "gl": "Beizos un pouco redondeados e relaxados: máis curta e máis aberta que o /uː/ de moon.",
+        "es": "Labios un poco redondeados y relajados: más corta y más abierta que la /uː/ de moon."
+      },
+      "frequencyRank": 39,
+      "readingLevel": 4
+    },
+    {
+      "id": "ph_schwa",
+      "symbolIpa": "/ə/",
+      "grapheme": "a",
+      "category": "schwa",
+      "name": {
+        "gl": "Vogal neutra (/ə/, schwa)",
+        "es": "Vocal neutra (/ə/, schwa)"
+      },
+      "exampleWord": {
+        "en": "banana",
+        "gl": "Plátano",
+        "es": "Plátano"
+      },
+      "audioCue": "/ə/ na primeira e na última sílaba de banana",
+      "articulationGuide": {
+        "gl": "A vogal máis frecuente do inglés: boca e lingua en repouso, un son breve e sen forza. Vai nas sílabas sen acento.",
+        "es": "La vocal más frecuente del inglés: boca y lengua en reposo, un sonido breve y sin fuerza. Va en las sílabas sin acento."
+      },
+      "frequencyRank": 40,
+      "readingLevel": 5
+    },
+    {
+      "id": "ph_or",
+      "symbolIpa": "/ɔː/",
+      "grapheme": "or",
+      "category": "r_controlled",
+      "name": {
+        "gl": "O longa (or)",
+        "es": "O larga (or)"
+      },
+      "exampleWord": {
+        "en": "horse",
+        "gl": "Cabalo",
+        "es": "Caballo"
+      },
+      "audioCue": "/ɔː/ como en horse e ball",
+      "articulationGuide": {
+        "gl": "Beizos redondeados e boca medio aberta, un son longo. En horse, a voz americana da app engade un r suave.",
+        "es": "Labios redondeados y boca medio abierta, un sonido largo. En horse, la voz americana de la app añade una r suave."
+      },
+      "frequencyRank": 41,
+      "readingLevel": 5
+    },
+    {
+      "id": "ph_er",
+      "symbolIpa": "/ɜː/",
+      "grapheme": "ir/er/ur",
+      "category": "r_controlled",
+      "name": {
+        "gl": "Son /ɜː/ (bird)",
+        "es": "Sonido /ɜː/ (bird)"
+      },
+      "exampleWord": {
+        "en": "bird",
+        "gl": "Paxaro",
+        "es": "Pájaro"
+      },
+      "audioCue": "/ɜː/ como en bird, her e turn",
+      "articulationGuide": {
+        "gl": "Boca entreaberta e lingua no medio, sen redondear os beizos. Na voz americana da app soa cun r.",
+        "es": "Boca entreabierta y lengua en medio, sin redondear los labios. En la voz americana de la app suena con r."
+      },
+      "frequencyRank": 42,
+      "readingLevel": 5
+    },
+    {
+      "id": "ph_oy",
+      "symbolIpa": "/ɔɪ/",
+      "grapheme": "oy/oi",
+      "category": "vowel_team",
+      "name": {
+        "gl": "Parella oy/oi (/ɔɪ/)",
+        "es": "Pareja oy/oi (/ɔɪ/)"
+      },
+      "exampleWord": {
+        "en": "toy",
+        "gl": "Xoguete",
+        "es": "Juguete"
+      },
+      "audioCue": "/ɔɪ/ como en toy e coin",
+      "articulationGuide": {
+        "gl": "Empeza nun o aberto e escorrega cara a un i curto, nun só golpe de voz: o-i.",
+        "es": "Empieza en una o abierta y resbala hacia una i corta, en un solo golpe de voz: o-i."
+      },
+      "frequencyRank": 43,
+      "readingLevel": 4
+    },
+    {
+      "id": "ph_ow_ou",
+      "symbolIpa": "/aʊ/",
+      "grapheme": "ow/ou",
+      "category": "vowel_team",
+      "name": {
+        "gl": "Parella ow/ou (/aʊ/)",
+        "es": "Pareja ow/ou (/aʊ/)"
+      },
+      "exampleWord": {
+        "en": "cow",
+        "gl": "Vaca",
+        "es": "Vaca"
+      },
+      "audioCue": "/aʊ/ como en cow e mouse",
+      "articulationGuide": {
+        "gl": "Coma o «au» de «auga»: empeza nun a moi aberto e pecha os beizos cara a un u curto.",
+        "es": "Como el «au» de «causa»: empieza en una a muy abierta y cierra los labios hacia una u corta."
+      },
+      "frequencyRank": 44,
+      "readingLevel": 4
+    },
+    {
+      "id": "ph_eer",
+      "symbolIpa": "/ɪə/",
+      "grapheme": "eer/ear",
+      "category": "r_controlled",
+      "name": {
+        "gl": "Son /ɪə/ (deer)",
+        "es": "Sonido /ɪə/ (deer)"
+      },
+      "exampleWord": {
+        "en": "deer",
+        "gl": "Cervo",
+        "es": "Ciervo"
+      },
+      "audioCue": "/ɪə/ como en deer e ear",
+      "articulationGuide": {
+        "gl": "Empeza nun i curto e remata na vogal neutra. Na voz americana da app soa /ɪr/, cun r.",
+        "es": "Empieza en una i corta y termina en la vocal neutra. En la voz americana de la app suena /ɪr/, con r."
+      },
+      "frequencyRank": 45,
+      "readingLevel": 5
+    },
+    {
+      "id": "ph_air",
+      "symbolIpa": "/eə/",
+      "grapheme": "air/ear",
+      "category": "r_controlled",
+      "name": {
+        "gl": "Son /eə/ (chair)",
+        "es": "Sonido /eə/ (chair)"
+      },
+      "exampleWord": {
+        "en": "chair",
+        "gl": "Cadeira",
+        "es": "Silla"
+      },
+      "audioCue": "/eə/ como en chair e bear",
+      "articulationGuide": {
+        "gl": "Empeza nun e aberto e remata na vogal neutra. Na voz americana da app soa cun r.",
+        "es": "Empieza en una e abierta y termina en la vocal neutra. En la voz americana de la app suena con r."
+      },
+      "frequencyRank": 46,
+      "readingLevel": 5
+    },
+    {
+      "id": "ph_ure",
+      "symbolIpa": "/ʊə/",
+      "grapheme": "our/ure",
+      "category": "r_controlled",
+      "name": {
+        "gl": "Son /ʊə/ (tour)",
+        "es": "Sonido /ʊə/ (tour)"
+      },
+      "exampleWord": {
+        "en": "tour",
+        "gl": "Visita guiada",
+        "es": "Visita guiada"
+      },
+      "audioCue": "/ʊə/ como en tour e cure",
+      "articulationGuide": {
+        "gl": "Empeza nun u curto e remata na vogal neutra. É o menos frecuente dos 44: moitos falantes, e a voz americana da app, dino con r.",
+        "es": "Empieza en una u corta y termina en la vocal neutra. Es el menos frecuente de los 44: muchos hablantes, y la voz americana de la app, lo dicen con r."
+      },
+      "frequencyRank": 47,
+      "readingLevel": 5
     }
   ],
   "decodableWords": [

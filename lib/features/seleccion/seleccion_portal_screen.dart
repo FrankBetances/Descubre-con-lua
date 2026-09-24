@@ -153,8 +153,8 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                 illustration: const IlustracionFamilia(height: 145),
                 puntosClave: [
                   isGl
-                      ? 'Calendario escolar de casa: 10 meses e actividades diarias de 3 min'
-                      : 'Calendario escolar de casa: 10 meses y actividades diarias de 3 min',
+                      ? 'Calendario escolar de casa: de 0 a 6 anos, curso a curso, e actividades diarias de 3 min'
+                      : 'Calendario escolar de casa: de 0 a 6 años, curso a curso, y actividades diarias de 3 min',
                   isGl
                       ? 'Biblioteca de contos dialóxicos con preguntas graduadas'
                       : 'Biblioteca de cuentos dialógicos con preguntas graduadas',
@@ -220,15 +220,13 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                   isGl
                       ? 'Juega con Lúa: asambleas guiadas (1.º e 2.º ciclo) e canción a pulso'
                       : 'Juega con Lúa: asambleas guiadas (1.º y 2.º ciclo) y canción a pulso',
-                  isGl
-                      ? 'Planificador curricular de 50 meses (0 a 6 anos · Decreto 150/2022)'
-                      : 'Planificador curricular de 50 meses (0 a 6 años · Decreto 150/2022)',
+                  'Planificador curricular',
                   isGl
                       ? 'Calendario escolar de aula sincronizado co fogar'
                       : 'Calendario escolar de aula sincronizado con el hogar',
                   isGl
-                      ? 'Inmersión en inglés L3: 44 fonemas, colocacións e FSRS'
-                      : 'Inmersión en inglés L3: 44 fonemas, colocaciones y FSRS',
+                      ? 'Inglés L3: 5 palabras ao día, 4.000 de 0 a 6 anos, con repaso, escoita e os 44 fonemas'
+                      : 'Inglés L3: 5 palabras al día, 4.000 de 0 a 6 años, con repaso, escucha y los 44 fonemas',
                 ],
                 buttonText: isGl
                     ? 'Entrar no Portal Docentes'

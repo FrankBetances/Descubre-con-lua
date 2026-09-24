@@ -9,6 +9,140 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Los cuentos son historias, no microrrelatos · **en la rama `claude/tender-hamilton-mzhnxj`, pendiente de mergear** (24/9/2026)
+
+Orden de Frank: «un cuento no es un microrrelato, un cuento es una historia con
+objetivos y personajes, arregla los cuentos».
+
+Antes (medido sobre los dos JSON de `main`): 302 cuentos visibles, de tres
+páginas o menos y 67 palabras de media; en 298 páginas el texto llevaba
+instrucciones de aula («compás de 72 bpm»); los títulos se repetían de curso en
+curso y 200 de los 206 de `historias_progresivas.json` tenían las mismas tres
+preguntas.
+
+- Los 303 cuentos visibles están reescritos: cada uno tiene protagonista, un deseo,
+  un problema, intentos que fallan, una idea o una ayuda y un final, y tres
+  preguntas propias (literal, inferencia, creativa).
+- La extensión crece con la edad. Es un listón propio, no sale de ningún
+  documento de referencia:
+
+  | Curso | Páginas | Palabras por cuento (media gl/es) |
+  | --- | --- | --- |
+  | 0-2 | 5 | ≥ 60 |
+  | 2-3 | 6 | ≥ 85 |
+  | 3-4 | 6-7 | ≥ 130 |
+  | 4-5 | 8 | ≥ 200 |
+  | 5-6 | 8 | ≥ 260 |
+
+- Se conservan id, curso, mes, semana, nivel y reto TPR de cada cuento: el reto
+  TPR es lo único con voz, así que no hace falta ninguna grabación nueva.
+- `conto_040_s4` (0-2, junio, semana 4) repetía el título de otro cuento y la app
+  no lo enseñaba nunca: ahora tiene historia propia y se ve. Tres duplicados del
+  banco que nunca se enseñaban (`conto_001_l_a…`, `conto_002_mans…`,
+  `conto_005_o_magosto…`) salen del JSON.
+- Las palabras clave de cada página son las del propio cuento, en las dos lenguas
+  a la vez. Antes la etiqueta de las preguntas salía «Nivel 1: Nivel 1: …».
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| Validador de los textos, script de esta sesión que no queda en el repositorio (páginas y palabras por edad, títulos únicos por curso, sin letras cirílicas coladas) | 303/303 |
+| `flutter test --exclude-tags capturas` | todo en verde; `portales_seleccion_ux_test.dart` ahora exige las páginas de cada edad, ningún texto de página repetido y el vocabulario en las dos lenguas |
+| `tools/gates.sh --fast` | todos los gates en verde; el corpus de voz sigue en 14.962 locuciones |
+| App en escritorio Linux: Inicio → Portal Docentes → Modo Aula → 2.º Ciclo → 6.º (5-6) → semana 1 → el cuento de hoy | 8 páginas, miradas la 1, la 6 y la 8 en gallego |
+| App: Portal Familias → Biblioteca de Cuentos, en castellano | «303 cuentos disponibles»; el cuento recuperado de 0-2 aparece; página 5 y preguntas de un cuento de 5-6 miradas |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato**, ni con la escala de texto grande del
+  sistema: el visor desplaza el texto, pero las páginas ahora llegan a ~115
+  palabras.
+- El gallego lo ha revisado Claude Code, no una persona nativa.
+- La pregunta de cada lámina es por etapa del cuento (presentación, problema,
+  idea…), no escrita a mano para cada página: en algunas encaja peor.
+
+---
+
+## De 0 a 6 años: cinco cursos de inglés, calendario de 50 meses e Inmersión ampliada · **en la rama `claude/tender-hamilton-mzhnxj`, pendiente de mergear** (24/9/2026)
+
+Órdenes de Frank: el calendario no puede quedarse en los diez primeros meses
+«cuando hablamos de seis años de trabajo»; fuera «50 meses» del planificador;
+los 44 fonemas «son una miseria así no van a aprender las cinco palabras
+diarias».
+
+- Inglés: 5 cursos × 800 = 4.000 palabras, ninguna repetida entre cursos; cada
+  grupo del aula usa las de su curso. Los 800 anteriores pasan a ser 3-4 años.
+- Calendario (aula y casa): los 50 meses del trayecto, selector de curso, la
+  pastilla del curso en cada tarjeta, y de junio se pasa a septiembre del curso
+  siguiente. Desde el Modo Aula abre en el curso del grupo y en el lado del aula.
+- Modo Aula: las palabras del día debajo del círculo del día.
+- Inmersión en inglés: consulta de las 4.000 con buscador; repaso espaciado con
+  las palabras del curso, que ahora sí se guarda en `user_progress.json` (lo que
+  la política ya declaraba); escucha de las 16 frases de cada mes; 63
+  colocaciones leídas del JSON (antes 13 escritas en el widget); 44 fonemas de
+  verdad (antes 34 fichas y 31 sonidos distintos).
+- `pubspec.yaml`: faltaban los cinco directorios de curso; sin ellos el APK
+  viajaba sin palabras. Lo detectaba `check_bundled_assets.py`.
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| `flutter test --exclude-tags capturas` | 737/737 |
+| `test/features/ingles_inmersion_test.dart` | 32/32: rondas de repaso, persistencia, cambio de curso, escucha, buscador, fonemas y colocaciones, gl/es y escala 1,0/1,8 |
+| `test/features/calendario/calendario_test.dart` | 38/38, con el trayecto: 50 tarjetas, salto de curso al mismo mes, de junio a septiembre del curso siguiente |
+| `planificador_5_palabras.py --check` | OK; con una palabra de 4-5 metida también en 0-2, falla y dice dónde |
+| Gates de contenido, activos, manual y URLs legales | OK |
+| Capturas `calendario-*`, `aula-unidades-*`, `aula-lista-2ciclo-*`, `academy-bloques-*` | regeneradas y miradas en gl y es |
+| Manual PDF y Word | regenerados; PDF de 20 páginas, ninguna imagen fuera de la hoja (medido con PyMuPDF), secciones 5 y 7 miradas |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato.**
+- ~~`every locution has a recording`: faltan 3.344 grabaciones inglesas~~.
+  Las sintetizó el workflow de voz en el commit `5e65947a`; comprobado después
+  con `check_voice_coverage.py`: 14.962 locuciones, todas con grabación.
+- `bienvenida-*` y `laminas-hoja` no coinciden con la app; no se han tocado.
+
+---
+
+## Cinco palabras inglesas al día: el curso de 800 · **en la rama `claude/tender-hamilton-mzhnxj`, pendiente de mergear** (23/9/2026)
+
+Orden de Frank: «elimina eso de 6 palabras por mes, lo correcto es 5 palabras
+diarias», con el documento «Modelo de Adquisición Natural y Proyección Anual».
+La rama lleva además el commit de la rama `UI` de Frank (`0964f40`), corregido.
+
+- El léxico mensual de `meses.json` (6 palabras × 10 meses) ya no existe. Sus
+  60 palabras están dentro del curso nuevo.
+- `assets/content/tpr/`: 10 meses × 4 semanas × 20 palabras = 800, cada una con
+  significado gl/es, gesto gl/es y categoría. Reparto 280/200/160/96/64.
+- Donde se ve: tarjeta «Hoxe na aula» del Portal Docentes, hoja «Ver as 800
+  palabras», bloque del día en el Calendario (aula y casa), calendario de casa y
+  tarjeta del Portal Familias. Todo lee el mismo día que la asamblea.
+- Las palabras NO van dentro del reproductor de la asamblea: su fase núcleo ya
+  desborda a 360×640 en 43 de 50 asambleas antes de este cambio.
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| `flutter test` (suite entera) | 526/526 |
+| `test/features/tpr_pantallas_test.dart` | 76/76; incluye los 200 días del curso a 360 de ancho, gl/es, escala 1,0 y 1,8. Que el arnés caza un desborde se comprobó metiendo uno a propósito |
+| `tools/planificador_5_palabras.py --check` | OK; con cuatro defectos metidos en una copia, los cuatro salen |
+| `dart format`, `flutter analyze` y el resto de gates de contenido | OK, incluido `check_voice_levels.py` (10.991 grabaciones, ninguna por encima de −1 dBFS) |
+| Manual: PDF y Word regenerados | 20 páginas (antes 19), mirados página a página; ninguna figura sale de la hoja (medido con PyMuPDF) |
+| Capturas `calendario-*` | regeneradas; en `main` ya no coincidían `bienvenida-*`, `aula-unidades-*` y `aula-lista-2ciclo-*`, que no se han tocado |
+| App de escritorio Linux (Xvfb 460×1000) | Portal Docentes → «Hoxe na aula» y «Ver as 800 palabras» vistos en gallego |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato.** Tampoco con texto grande del sistema.
+- `every locution has a recording`: faltan 629 grabaciones inglesas; las
+  sintetiza el workflow de voz al empujar.
+
+---
+
 ## El inglés que la app enseña: 4.000 palabras que suenan, con su frase · **en main, grabado y con los gates en verde** (21/9/2026)
 
 Tres órdenes de Frank, en este orden:

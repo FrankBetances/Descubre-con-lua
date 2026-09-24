@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.5_6.decembro",
+  "curso": "curso_5_6",
+  "orden": 4,
+  "mesCalendario": 12,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Sol, Terra e Lúa",
+        "es": "Sol, Tierra y Luna"
+      },
+      "palabras": [
+        {
+          "id": "5_6.decembro.s1.planet-earth",
+          "en": "Planet Earth",
+          "gl": "Terra",
+          "es": "Tierra",
+          "tprAction": {
+            "gl": "Facer unha bóla coas mans",
+            "es": "Hacer una bola con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s1.planet",
+          "en": "Planet",
+          "gl": "Planeta",
+          "es": "Planeta",
+          "tprAction": {
+            "gl": "Xirar arredor dun amigo",
+            "es": "Girar alrededor de un amigo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s1.orbit",
+          "en": "Orbit",
+          "gl": "Órbita",
+          "es": "Órbita",
+          "tprAction": {
+            "gl": "Camiñar en círculo arredor",
+            "es": "Caminar en círculo alrededor"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s1.solar-system",
+          "en": "Solar system",
+          "gl": "Sistema solar",
+          "es": "Sistema solar",
+          "tprAction": {
+            "gl": "Xirar todos arredor do centro",
+            "es": "Girar todos alrededor del centro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s1.sunlight",
+          "en": "Sunlight",
+          "gl": "Luz do sol",
+          "es": "Luz del sol",
+          "tprAction": {
+            "gl": "Abrir as mans coma raios",
+            "es": "Abrir las manos como rayos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s1.moonlight",
+          "en": "Moonlight",
+          "gl": "Luz da lúa",
+          "es": "Luz de la luna",
+          "tprAction": {
+            "gl": "Mover as mans amodo e suave",
+            "es": "Mover las manos despacio y suave"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s1.globe",
+          "en": "Globe",
+          "gl": "Globo terráqueo",
+          "es": "Globo terráqueo",
+          "tprAction": {
+            "gl": "Xirar unha bóla imaxinaria",
+            "es": "Girar una bola imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s1.spin-like-the-earth",
+          "en": "Spin like the Earth",
+          "gl": "Xirar coma a Terra",
+          "es": "Girar como la Tierra",
+          "tprAction": {
+            "gl": "Xirar amodo sobre si",
+            "es": "Girar despacio sobre sí mismo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s1.shine-like-the-sun",
+          "en": "Shine like the Sun",
+          "gl": "Brillar coma o Sol",
+          "es": "Brillar como el Sol",
+          "tprAction": {
+            "gl": "Abrir os brazos de golpe",
+            "es": "Abrir los brazos de golpe"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s1.sleep-like-the-moon",
+          "en": "Sleep like the Moon",
+          "gl": "Durmir coma a Lúa",
+          "es": "Dormir como la Luna",
+          "tprAction": {
+            "gl": "Pousar a cabeza e pechar os ollos",
+            "es": "Apoyar la cabeza y cerrar los ojos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s1.circle-around",
+          "en": "Circle around",
+          "gl": "Dar voltas arredor",
+          "es": "Dar vueltas alrededor",
+          "tprAction": {
+            "gl": "Camiñar arredor dun amigo",
+            "es": "Caminar alrededor de un amigo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s1.point-to-the-sky",
+          "en": "Point to the sky",
+          "gl": "Sinalar o ceo",
+          "es": "Señalar el cielo",
+          "tprAction": {
+            "gl": "Sinalar arriba",
+            "es": "Señalar arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s1.round-like-a-ball",
+          "en": "Round like a ball",
+          "gl": "Redondo coma unha bóla",
+          "es": "Redondo como una bola",
+          "tprAction": {
+            "gl": "Facer unha bóla coas mans",
+            "es": "Hacer una bola con las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s1.faraway",
+          "en": "Faraway",
+          "gl": "Moi afastado",
+          "es": "Muy lejano",
+          "tprAction": {
+            "gl": "Sinalar moi lonxe",
+            "es": "Señalar muy lejos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s1.glowing-moon",
+          "en": "Glowing moon",
+          "gl": "Lúa brillante",
+          "es": "Luna brillante",
+          "tprAction": {
+            "gl": "Facer un círculo luminoso",
+            "es": "Hacer un círculo luminoso"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s1.spinning-earth",
+          "en": "Spinning Earth",
+          "gl": "Terra que xira",
+          "es": "Tierra que gira",
+          "tprAction": {
+            "gl": "Xirar amodo",
+            "es": "Girar despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s1.the-earth-goes-around-the-sun",
+          "en": "The Earth goes around the Sun",
+          "gl": "A Terra xira arredor do Sol",
+          "es": "La Tierra gira alrededor del Sol",
+          "tprAction": {
+            "gl": "Camiñar arredor dun amigo",
+            "es": "Caminar alrededor de un amigo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.decembro.s1.day-and-night",
+          "en": "Day and night",
+          "gl": "Día e noite",
+          "es": "Día y noche",
+          "tprAction": {
+            "gl": "Abrir os ollos e pechalos",
+            "es": "Abrir los ojos y cerrarlos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.decembro.s1.good-morning-sun",
+          "en": "Good morning, Sun!",
+          "gl": "Bos días, Sol!",
+          "es": "¡Buenos días, Sol!",
+          "tprAction": {
+            "gl": "Abrir os brazos",
+            "es": "Abrir los brazos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.decembro.s1.good-night-moon",
+          "en": "Good night, Moon",
+          "gl": "Boas noites, Lúa",
+          "es": "Buenas noches, Luna",
+          "tprAction": {
+            "gl": "Pechar os ollos",
+            "es": "Cerrar los ojos"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Estrelas e constelacións",
+        "es": "Estrellas y constelaciones"
+      },
+      "palabras": [
+        {
+          "id": "5_6.decembro.s2.constellation",
+          "en": "Constellation",
+          "gl": "Constelación",
+          "es": "Constelación",
+          "tprAction": {
+            "gl": "Unir puntos no aire",
+            "es": "Unir puntos en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s2.telescope",
+          "en": "Telescope",
+          "gl": "Telescopio",
+          "es": "Telescopio",
+          "tprAction": {
+            "gl": "Mirar por un tubo imaxinario",
+            "es": "Mirar por un tubo imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s2.comet",
+          "en": "Comet",
+          "gl": "Cometa",
+          "es": "Cometa",
+          "tprAction": {
+            "gl": "Correr cun brazo detrás",
+            "es": "Correr con un brazo detrás"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s2.shooting-star",
+          "en": "Shooting star",
+          "gl": "Estrela fugaz",
+          "es": "Estrella fugaz",
+          "tprAction": {
+            "gl": "Cruzar o brazo rápido",
+            "es": "Cruzar el brazo rápido"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s2.astronaut",
+          "en": "Astronaut",
+          "gl": "Astronauta",
+          "es": "Astronauta",
+          "tprAction": {
+            "gl": "Camiñar amodo coma sen gravidade",
+            "es": "Caminar despacio como sin gravedad"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s2.rocket",
+          "en": "Rocket",
+          "gl": "Foguete",
+          "es": "Cohete",
+          "tprAction": {
+            "gl": "Xuntar as mans en punta e saltar",
+            "es": "Juntar las manos en punta y saltar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s2.space",
+          "en": "Space",
+          "gl": "Espazo",
+          "es": "Espacio",
+          "tprAction": {
+            "gl": "Flotar cos brazos abertos",
+            "es": "Flotar con los brazos abiertos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s2.stargaze",
+          "en": "Stargaze",
+          "gl": "Mirar as estrelas",
+          "es": "Mirar las estrellas",
+          "tprAction": {
+            "gl": "Deitarse e mirar arriba",
+            "es": "Tumbarse y mirar arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s2.connect-the-dots",
+          "en": "Connect the dots",
+          "gl": "Unir os puntos",
+          "es": "Unir los puntos",
+          "tprAction": {
+            "gl": "Unir puntos co dedo",
+            "es": "Unir puntos con el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s2.blast-off",
+          "en": "Blast off",
+          "gl": "Despegar",
+          "es": "Despegar",
+          "tprAction": {
+            "gl": "Saltar cos brazos arriba",
+            "es": "Saltar con los brazos arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s2.float-in-space",
+          "en": "Float in space",
+          "gl": "Flotar no espazo",
+          "es": "Flotar en el espacio",
+          "tprAction": {
+            "gl": "Moverse moi amodo",
+            "es": "Moverse muy despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s2.zoom-through-space",
+          "en": "Zoom through space",
+          "gl": "Voar polo espazo",
+          "es": "Volar por el espacio",
+          "tprAction": {
+            "gl": "Correr cos brazos estirados",
+            "es": "Correr con los brazos estirados"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s2.starry",
+          "en": "Starry",
+          "gl": "Estrelado",
+          "es": "Estrellado",
+          "tprAction": {
+            "gl": "Abrir e pechar os dedos",
+            "es": "Abrir y cerrar los dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s2.weightless",
+          "en": "Weightless",
+          "gl": "Sen peso",
+          "es": "Ingrávido",
+          "tprAction": {
+            "gl": "Moverse flotando",
+            "es": "Moverse flotando"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s2.distant",
+          "en": "Distant",
+          "gl": "Afastado",
+          "es": "Distante",
+          "tprAction": {
+            "gl": "Sinalar lonxe",
+            "es": "Señalar lejos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s2.brightest-star",
+          "en": "Brightest star",
+          "gl": "A estrela máis brillante",
+          "es": "La estrella más brillante",
+          "tprAction": {
+            "gl": "Sinalar unha estrela",
+            "es": "Señalar una estrella"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s2.ten-nine-eight-blast-off",
+          "en": "Ten, nine, eight... blast off!",
+          "gl": "Dez, nove, oito... despegamos!",
+          "es": "¡Diez, nueve, ocho... despegamos!",
+          "tprAction": {
+            "gl": "Contar e saltar",
+            "es": "Contar y saltar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.decembro.s2.make-a-wish-on-a-star",
+          "en": "Make a wish on a star",
+          "gl": "Pide un desexo a unha estrela",
+          "es": "Pide un deseo a una estrella",
+          "tprAction": {
+            "gl": "Pechar os ollos e sorrir",
+            "es": "Cerrar los ojos y sonreír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.decembro.s2.can-you-see-the-plough",
+          "en": "Can you see the Plough?",
+          "gl": "Ves o Carro?",
+          "es": "¿Ves el Carro?",
+          "tprAction": {
+            "gl": "Unir puntos no aire",
+            "es": "Unir puntos en el aire"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.decembro.s2.stars-are-further-away-than-the-moon",
+          "en": "Stars are further away than the Moon",
+          "gl": "As estrelas están máis lonxe ca a Lúa",
+          "es": "Las estrellas están más lejos que la Luna",
+          "tprAction": {
+            "gl": "Sinalar preto e lonxe",
+            "es": "Señalar cerca y lejos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "O paso dos meses",
+        "es": "El paso de los meses"
+      },
+      "palabras": [
+        {
+          "id": "5_6.decembro.s3.calendar",
+          "en": "Calendar",
+          "gl": "Calendario",
+          "es": "Calendario",
+          "tprAction": {
+            "gl": "Pasar follas dun calendario",
+            "es": "Pasar hojas de un calendario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s3.month",
+          "en": "Month",
+          "gl": "Mes",
+          "es": "Mes",
+          "tprAction": {
+            "gl": "Sinalar un mes",
+            "es": "Señalar un mes"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s3.week",
+          "en": "Week",
+          "gl": "Semana",
+          "es": "Semana",
+          "tprAction": {
+            "gl": "Contar sete dedos",
+            "es": "Contar siete dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s3.yesterday",
+          "en": "Yesterday",
+          "gl": "Onte",
+          "es": "Ayer",
+          "tprAction": {
+            "gl": "Sinalar cara atrás",
+            "es": "Señalar hacia atrás"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s3.tomorrow",
+          "en": "Tomorrow",
+          "gl": "Mañá",
+          "es": "Mañana",
+          "tprAction": {
+            "gl": "Sinalar cara adiante",
+            "es": "Señalar hacia delante"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s3.today",
+          "en": "Today",
+          "gl": "Hoxe",
+          "es": "Hoy",
+          "tprAction": {
+            "gl": "Sinalar o chan",
+            "es": "Señalar el suelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s3.solstice",
+          "en": "Solstice",
+          "gl": "Solsticio",
+          "es": "Solsticio",
+          "tprAction": {
+            "gl": "Estirar os brazos ao máximo",
+            "es": "Estirar los brazos al máximo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s3.count-the-days",
+          "en": "Count the days",
+          "gl": "Contar os días",
+          "es": "Contar los días",
+          "tprAction": {
+            "gl": "Contar cos dedos",
+            "es": "Contar con los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s3.turn-the-page-of-the-calendar",
+          "en": "Turn the page of the calendar",
+          "gl": "Pasar a folla do calendario",
+          "es": "Pasar la hoja del calendario",
+          "tprAction": {
+            "gl": "Pasar unha folla",
+            "es": "Pasar una hoja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s3.mark-the-date",
+          "en": "Mark the date",
+          "gl": "Marcar a data",
+          "es": "Marcar la fecha",
+          "tprAction": {
+            "gl": "Facer un círculo co dedo",
+            "es": "Hacer un círculo con el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s3.wait-for",
+          "en": "Wait for",
+          "gl": "Agardar por",
+          "es": "Esperar a",
+          "tprAction": {
+            "gl": "Mirar o reloxo",
+            "es": "Mirar el reloj"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s3.plan-ahead",
+          "en": "Plan ahead",
+          "gl": "Planificar",
+          "es": "Planificar",
+          "tprAction": {
+            "gl": "Sinalar adiante no calendario",
+            "es": "Señalar adelante en el calendario"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s3.shortest-day",
+          "en": "Shortest day",
+          "gl": "O día máis curto",
+          "es": "El día más corto",
+          "tprAction": {
+            "gl": "Xuntar as mans",
+            "es": "Juntar las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s3.longest-night",
+          "en": "Longest night",
+          "gl": "A noite máis longa",
+          "es": "La noche más larga",
+          "tprAction": {
+            "gl": "Separar moito as mans",
+            "es": "Separar mucho las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s3.next-month",
+          "en": "Next month",
+          "gl": "O mes que vén",
+          "es": "El mes que viene",
+          "tprAction": {
+            "gl": "Sinalar adiante",
+            "es": "Señalar adelante"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s3.last-week",
+          "en": "Last week",
+          "gl": "A semana pasada",
+          "es": "La semana pasada",
+          "tprAction": {
+            "gl": "Sinalar atrás",
+            "es": "Señalar atrás"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s3.what-day-is-it-today",
+          "en": "What day is it today?",
+          "gl": "Que día é hoxe?",
+          "es": "¿Qué día es hoy?",
+          "tprAction": {
+            "gl": "Sinalar o calendario",
+            "es": "Señalar el calendario"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.decembro.s3.yesterday-was-monday-today-is-tuesday",
+          "en": "Yesterday was Monday, today is Tuesday",
+          "gl": "Onte foi luns, hoxe é martes",
+          "es": "Ayer fue lunes, hoy es martes",
+          "tprAction": {
+            "gl": "Sinalar atrás e ao chan",
+            "es": "Señalar atrás y al suelo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.decembro.s3.how-many-days-until-the-party",
+          "en": "How many days until the party?",
+          "gl": "Cantos días faltan para a festa?",
+          "es": "¿Cuántos días faltan para la fiesta?",
+          "tprAction": {
+            "gl": "Contar cos dedos",
+            "es": "Contar con los dedos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.decembro.s3.one-more-sleep",
+          "en": "One more sleep!",
+          "gl": "Só unha noite máis!",
+          "es": "¡Solo una noche más!",
+          "tprAction": {
+            "gl": "Amosar un dedo",
+            "es": "Enseñar un dedo"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Festas de inverno",
+        "es": "Fiestas de invierno"
+      },
+      "palabras": [
+        {
+          "id": "5_6.decembro.s4.tradition",
+          "en": "Tradition",
+          "gl": "Tradición",
+          "es": "Tradición",
+          "tprAction": {
+            "gl": "Xuntar as mans en círculo",
+            "es": "Juntar las manos en círculo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s4.celebration",
+          "en": "Celebration",
+          "gl": "Celebración",
+          "es": "Celebración",
+          "tprAction": {
+            "gl": "Bater palmas contentos",
+            "es": "Dar palmas contentos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s4.card-making",
+          "en": "Card making",
+          "gl": "Facer postais",
+          "es": "Hacer postales",
+          "tprAction": {
+            "gl": "Dobrar e pintar no aire",
+            "es": "Doblar y pintar en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s4.wreath",
+          "en": "Wreath",
+          "gl": "Coroa de flores",
+          "es": "Corona de flores",
+          "tprAction": {
+            "gl": "Facer un círculo coas mans",
+            "es": "Hacer un círculo con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s4.carol-singers",
+          "en": "Carol singers",
+          "gl": "Cantores de panxoliñas",
+          "es": "Cantantes de villancicos",
+          "tprAction": {
+            "gl": "Cantar en grupo",
+            "es": "Cantar en grupo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s4.ornament",
+          "en": "Ornament",
+          "gl": "Adorno",
+          "es": "Adorno",
+          "tprAction": {
+            "gl": "Colgar un adorno",
+            "es": "Colgar un adorno"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s4.new-year",
+          "en": "New year",
+          "gl": "Ano novo",
+          "es": "Año nuevo",
+          "tprAction": {
+            "gl": "Saltar ao dicir «ano novo»",
+            "es": "Saltar al decir «año nuevo»"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.decembro.s4.countdown-to-midnight",
+          "en": "Countdown to midnight",
+          "gl": "Contar ata a medianoite",
+          "es": "Contar hasta la medianoche",
+          "tprAction": {
+            "gl": "Baixar os dedos",
+            "es": "Bajar los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s4.exchange-gifts",
+          "en": "Exchange gifts",
+          "gl": "Intercambiar agasallos",
+          "es": "Intercambiar regalos",
+          "tprAction": {
+            "gl": "Dar e recibir un paquete",
+            "es": "Dar y recibir un paquete"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s4.make-a-card",
+          "en": "Make a card",
+          "gl": "Facer unha postal",
+          "es": "Hacer una postal",
+          "tprAction": {
+            "gl": "Dobrar un papel",
+            "es": "Doblar un papel"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s4.hang-ornaments",
+          "en": "Hang ornaments",
+          "gl": "Colgar adornos",
+          "es": "Colgar adornos",
+          "tprAction": {
+            "gl": "Estirarse a colgar",
+            "es": "Estirarse a colgar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s4.make-a-resolution",
+          "en": "Make a resolution",
+          "gl": "Facer un propósito",
+          "es": "Hacer un propósito",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.decembro.s4.traditional",
+          "en": "Traditional",
+          "gl": "Tradicional",
+          "es": "Tradicional",
+          "tprAction": {
+            "gl": "Bailar coma antes",
+            "es": "Bailar como antes"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s4.joyous",
+          "en": "Joyous",
+          "gl": "Alegre",
+          "es": "Gozoso",
+          "tprAction": {
+            "gl": "Saltar contentos",
+            "es": "Saltar contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s4.handwritten",
+          "en": "Handwritten",
+          "gl": "Escrito a man",
+          "es": "Escrito a mano",
+          "tprAction": {
+            "gl": "Escribir no aire",
+            "es": "Escribir en el aire"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s4.glittering",
+          "en": "Glittering",
+          "gl": "Resplandecente",
+          "es": "Resplandeciente",
+          "tprAction": {
+            "gl": "Mover os dedos brillando",
+            "es": "Mover los dedos brillando"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.decembro.s4.happy-holidays",
+          "en": "Happy holidays!",
+          "gl": "Boas festas!",
+          "es": "¡Felices fiestas!",
+          "tprAction": {
+            "gl": "Acenar a todos",
+            "es": "Saludar a todos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.decembro.s4.this-card-is-for-my-grandma",
+          "en": "This card is for my grandma",
+          "gl": "Esta postal é para a miña avoa",
+          "es": "Esta postal es para mi abuela",
+          "tprAction": {
+            "gl": "Amosar a postal",
+            "es": "Enseñar la postal"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.decembro.s4.next-year-i-will-read-more-books",
+          "en": "Next year I will read more books",
+          "gl": "O ano que vén lerei máis libros",
+          "es": "El año que viene leeré más libros",
+          "tprAction": {
+            "gl": "Abrir un libro imaxinario",
+            "es": "Abrir un libro imaginario"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.decembro.s4.three-two-one-happy-new-year",
+          "en": "Three, two, one, happy new year!",
+          "gl": "Tres, dous, un, feliz ano novo!",
+          "es": "¡Tres, dos, uno, feliz año nuevo!",
+          "tprAction": {
+            "gl": "Contar e saltar",
+            "es": "Contar y saltar"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

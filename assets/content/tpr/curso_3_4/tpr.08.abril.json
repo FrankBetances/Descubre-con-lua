@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.3_4.abril",
+  "curso": "curso_3_4",
+  "orden": 8,
+  "mesCalendario": 4,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Chove e fai sol",
+        "es": "Llueve y hace sol"
+      },
+      "palabras": [
+        {
+          "id": "rain",
+          "en": "Rain",
+          "gl": "Chuvia",
+          "es": "Lluvia",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mover os dedos por riba da cabeza coma chuvia miúda",
+            "es": "Mover los dedos por encima de la cabeza como lluvia fina"
+          }
+        },
+        {
+          "id": "sun",
+          "en": "Sun",
+          "gl": "Sol",
+          "es": "Sol",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir os dedos das mans coma raios de sol",
+            "es": "Abrir los dedos de las manos como rayos de sol"
+          }
+        },
+        {
+          "id": "spring",
+          "en": "Spring",
+          "gl": "Primavera",
+          "es": "Primavera",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Respirar fondo e sorrir co sol na cara",
+            "es": "Respirar hondo y sonreír con el sol en la cara"
+          }
+        },
+        {
+          "id": "weather",
+          "en": "Weather",
+          "gl": "Tempo",
+          "es": "Tiempo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mirar pola fiestra e sinalar o ceo",
+            "es": "Mirar por la ventana y señalar el cielo"
+          }
+        },
+        {
+          "id": "sunshine",
+          "en": "Sunshine",
+          "gl": "Raiola",
+          "es": "Luz del sol",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pousar as mans nas meixelas coma se quentasen",
+            "es": "Poner las manos en las mejillas como si calentaran"
+          }
+        },
+        {
+          "id": "kite",
+          "en": "Kite",
+          "gl": "Papaventos",
+          "es": "Cometa",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Suxeitar un fío imaxinario e mirar arriba",
+            "es": "Sujetar un hilo imaginario y mirar arriba"
+          }
+        },
+        {
+          "id": "morning",
+          "en": "Morning",
+          "gl": "Mañá",
+          "es": "Mañana",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Espreguizarse e abrir os ollos amodo",
+            "es": "Desperezarse y abrir los ojos despacio"
+          }
+        },
+        {
+          "id": "shine",
+          "en": "Shine",
+          "gl": "Brillar",
+          "es": "Brillar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Abrir os brazos de golpe coma un sol que sae",
+            "es": "Abrir los brazos de golpe como un sol que sale"
+          }
+        },
+        {
+          "id": "open",
+          "en": "Open",
+          "gl": "Abrir",
+          "es": "Abrir",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Abrir as mans amodo coma unha flor",
+            "es": "Abrir las manos despacio como una flor"
+          }
+        },
+        {
+          "id": "look-up",
+          "en": "Look up",
+          "gl": "Mirar arriba",
+          "es": "Mirar arriba",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Levantar a cabeza e mirar ao ceo",
+            "es": "Levantar la cabeza y mirar al cielo"
+          }
+        },
+        {
+          "id": "warm-up",
+          "en": "Warm up",
+          "gl": "Quentar",
+          "es": "Calentarse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Frotar as mans e o corpo para quentar",
+            "es": "Frotarse las manos y el cuerpo para entrar en calor"
+          }
+        },
+        {
+          "id": "peek",
+          "en": "Peek",
+          "gl": "Espreitar",
+          "es": "Asomarse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Espreitar por un burato feito cos dedos",
+            "es": "Asomarse por un agujero hecho con los dedos"
+          }
+        },
+        {
+          "id": "sunny",
+          "en": "Sunny",
+          "gl": "Soleado, soleada",
+          "es": "Soleado, soleada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Sorrir cos brazos abertos cara ao sol",
+            "es": "Sonreír con los brazos abiertos hacia el sol"
+          }
+        },
+        {
+          "id": "cloudy",
+          "en": "Cloudy",
+          "gl": "Nubrado, nubrada",
+          "es": "Nublado, nublada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Tapar o sol cunha man e poñer cara seria",
+            "es": "Tapar el sol con una mano y poner cara seria"
+          }
+        },
+        {
+          "id": "foggy",
+          "en": "Foggy",
+          "gl": "Con néboa",
+          "es": "Con niebla",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Camiñar amodo coas mans diante coma entre néboa",
+            "es": "Caminar despacio con las manos delante como entre niebla"
+          }
+        },
+        {
+          "id": "clear",
+          "en": "Clear",
+          "gl": "Despexado, despexada",
+          "es": "Despejado, despejada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Abrir as mans coma se apartasen as nubes",
+            "es": "Abrir las manos como si apartaran las nubes"
+          }
+        },
+        {
+          "id": "tap-tap",
+          "en": "Tap-tap",
+          "gl": "Plic, plic",
+          "es": "Plic, plic",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Petar co dedo na palma ao pulso da chuvia",
+            "es": "Tocar con el dedo en la palma al pulso de la lluvia"
+          }
+        },
+        {
+          "id": "hello-sun",
+          "en": "Hello, sun!",
+          "gl": "Ola, sol!",
+          "es": "¡Hola, sol!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Acenar cara arriba e sorrir",
+            "es": "Saludar hacia arriba y sonreír"
+          }
+        },
+        {
+          "id": "rain-then-sun",
+          "en": "Rain, then sun",
+          "gl": "Chuvia e logo sol",
+          "es": "Lluvia y luego sol",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Facer chuvia cos dedos e logo abrir as mans coma o sol",
+            "es": "Hacer lluvia con los dedos y luego abrir las manos como el sol"
+          }
+        },
+        {
+          "id": "behind-the-clouds",
+          "en": "Behind the clouds",
+          "gl": "Detrás das nubes",
+          "es": "Detrás de las nubes",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Agocharse detrás dos brazos e asomar de novo",
+            "es": "Esconderse detrás de los brazos y asomarse de nuevo"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Sementes e flores",
+        "es": "Semillas y flores"
+      },
+      "palabras": [
+        {
+          "id": "seed",
+          "en": "Seed",
+          "gl": "Semente",
+          "es": "Semilla",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pechar o puño coma unha semente pechada",
+            "es": "Cerrar el puño como una semilla cerrada"
+          }
+        },
+        {
+          "id": "soil",
+          "en": "Soil",
+          "gl": "Terra",
+          "es": "Tierra",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Tocar o chan e esfregar as mans coma con terra",
+            "es": "Tocar el suelo y frotar las manos como con tierra"
+          }
+        },
+        {
+          "id": "flower",
+          "en": "Flower",
+          "gl": "Flor",
+          "es": "Flor",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Xuntar os pulsos e abrir os dedos coma pétalos",
+            "es": "Juntar las muñecas y abrir los dedos como pétalos"
+          }
+        },
+        {
+          "id": "plant",
+          "en": "Plant",
+          "gl": "Planta",
+          "es": "Planta",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Poñerse de pé amodo cos brazos arriba coma unha planta",
+            "es": "Ponerse de pie despacio con los brazos arriba como una planta"
+          }
+        },
+        {
+          "id": "flowerpot",
+          "en": "Flowerpot",
+          "gl": "Testo",
+          "es": "Maceta",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pousar unha planta imaxinaria nun testo",
+            "es": "Poner una planta imaginaria en una maceta"
+          }
+        },
+        {
+          "id": "watering-can",
+          "en": "Watering can",
+          "gl": "Regadeira",
+          "es": "Regadera",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Inclinar unha regadeira imaxinaria",
+            "es": "Inclinar una regadera imaginaria"
+          }
+        },
+        {
+          "id": "stem",
+          "en": "Stem",
+          "gl": "Talo",
+          "es": "Tallo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Estirar o brazo moi dereito coma un talo",
+            "es": "Estirar el brazo muy recto como un tallo"
+          }
+        },
+        {
+          "id": "grow",
+          "en": "Grow",
+          "gl": "Medrar",
+          "es": "Crecer",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pasar de agachados a estirados moi amodo",
+            "es": "Pasar de agachados a estirados muy despacio"
+          }
+        },
+        {
+          "id": "sow",
+          "en": "Sow",
+          "gl": "Sementar",
+          "es": "Sembrar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Botar sementes imaxinarias ao chan",
+            "es": "Echar semillas imaginarias al suelo"
+          }
+        },
+        {
+          "id": "sprinkle",
+          "en": "Sprinkle",
+          "gl": "Regar",
+          "es": "Regar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Regar unha planta imaxinaria cos dedos",
+            "es": "Regar una planta imaginaria con los dedos"
+          }
+        },
+        {
+          "id": "bloom",
+          "en": "Bloom",
+          "gl": "Florecer",
+          "es": "Florecer",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Abrir os brazos de golpe coma unha flor que se abre",
+            "es": "Abrir los brazos de golpe como una flor que se abre"
+          }
+        },
+        {
+          "id": "sprout",
+          "en": "Sprout",
+          "gl": "Agromar",
+          "es": "Brotar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Sacar un dedo do puño pechado",
+            "es": "Sacar un dedo del puño cerrado"
+          }
+        },
+        {
+          "id": "pretty",
+          "en": "Pretty",
+          "gl": "Lindo, linda",
+          "es": "Lindo, linda",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Mirar unha flor imaxinaria e sorrir",
+            "es": "Mirar una flor imaginaria y sonreír"
+          }
+        },
+        {
+          "id": "fragrant",
+          "en": "Fragrant",
+          "gl": "Recendente",
+          "es": "Perfumado, perfumada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Cheirar unha flor e suspirar de gusto",
+            "es": "Oler una flor y suspirar de gusto"
+          }
+        },
+        {
+          "id": "alive",
+          "en": "Alive",
+          "gl": "Vivo, viva",
+          "es": "Vivo, viva",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Moverse con enerxía dos pés á cabeza",
+            "es": "Moverse con energía de los pies a la cabeza"
+          }
+        },
+        {
+          "id": "thin",
+          "en": "Thin",
+          "gl": "Delgado, delgada",
+          "es": "Delgado, delgada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Xuntar as palmas moi estiradas cara arriba",
+            "es": "Juntar las palmas muy estiradas hacia arriba"
+          }
+        },
+        {
+          "id": "be-a-little-seed",
+          "en": "Be a little seed",
+          "gl": "Sé unha semente pequena",
+          "es": "Sé una semillita",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Encollerse no chan coma unha semente",
+            "es": "Encogerse en el suelo como una semilla"
+          }
+        },
+        {
+          "id": "open-your-flower",
+          "en": "Open your flower",
+          "gl": "Abre a túa flor",
+          "es": "Abre tu flor",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Desde agachados, abrir brazos e mans amodo",
+            "es": "Desde agachados, abrir brazos y manos despacio"
+          }
+        },
+        {
+          "id": "from-seed-to-flower",
+          "en": "From seed to flower",
+          "gl": "De semente a flor",
+          "es": "De semilla a flor",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Pasar de bóla no chan a flor aberta",
+            "es": "Pasar de bola en el suelo a flor abierta"
+          }
+        },
+        {
+          "id": "slowly-slowly",
+          "en": "Slowly, slowly",
+          "gl": "Amodiño, amodiño",
+          "es": "Despacito, despacito",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Facer calquera movemento moi, moi amodo",
+            "es": "Hacer cualquier movimiento muy, muy despacio"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Bichiños do xardín",
+        "es": "Bichitos del jardín"
+      },
+      "palabras": [
+        {
+          "id": "bee",
+          "en": "Bee",
+          "gl": "Abella",
+          "es": "Abeja",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mover os brazos pegados ao corpo moi rápido",
+            "es": "Mover los brazos pegados al cuerpo muy rápido"
+          }
+        },
+        {
+          "id": "butterfly",
+          "en": "Butterfly",
+          "gl": "Bolboreta",
+          "es": "Mariposa",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Enganchar os polgares e mover as mans coma ás",
+            "es": "Enganchar los pulgares y mover las manos como alas"
+          }
+        },
+        {
+          "id": "ladybird",
+          "en": "Ladybird",
+          "gl": "Xoaniña",
+          "es": "Mariquita",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer puntiños no dorso da man cun dedo",
+            "es": "Hacer puntitos en el dorso de la mano con un dedo"
+          }
+        },
+        {
+          "id": "worm",
+          "en": "Worm",
+          "gl": "Miñoca",
+          "es": "Lombriz",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mover un dedo en ondas coma unha miñoca",
+            "es": "Mover un dedo en ondas como una lombriz"
+          }
+        },
+        {
+          "id": "snail",
+          "en": "Snail",
+          "gl": "Caracol",
+          "es": "Caracol",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer unha espiral no aire co dedo",
+            "es": "Hacer una espiral en el aire con el dedo"
+          }
+        },
+        {
+          "id": "ant",
+          "en": "Ant",
+          "gl": "Formiga",
+          "es": "Hormiga",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Camiñar en fila moi pequeniños",
+            "es": "Caminar en fila muy pequeñitos"
+          }
+        },
+        {
+          "id": "spider",
+          "en": "Spider",
+          "gl": "Araña",
+          "es": "Araña",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mover os dedos coma patas de araña",
+            "es": "Mover los dedos como patas de araña"
+          }
+        },
+        {
+          "id": "buzz",
+          "en": "Buzz",
+          "gl": "Zumbar",
+          "es": "Zumbar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Facer «bzzz» cos beizos",
+            "es": "Hacer «bzzz» con los labios"
+          }
+        },
+        {
+          "id": "crawl",
+          "en": "Crawl",
+          "gl": "Gatear",
+          "es": "Gatear",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Gatear polo chan un anaco",
+            "es": "Gatear por el suelo un rato"
+          }
+        },
+        {
+          "id": "land",
+          "en": "Land",
+          "gl": "Pousarse",
+          "es": "Posarse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Baixar os brazos amodo e pousarse no chan",
+            "es": "Bajar los brazos despacio y posarse en el suelo"
+          }
+        },
+        {
+          "id": "tickle",
+          "en": "Tickle",
+          "gl": "Facer cóxegas",
+          "es": "Hacer cosquillas",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Camiñar cos dedos polo brazo facendo cóxegas",
+            "es": "Caminar con los dedos por el brazo haciendo cosquillas"
+          }
+        },
+        {
+          "id": "search",
+          "en": "Search",
+          "gl": "Buscar",
+          "es": "Buscar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Buscar debaixo de follas imaxinarias",
+            "es": "Buscar debajo de hojas imaginarias"
+          }
+        },
+        {
+          "id": "slimy",
+          "en": "Slimy",
+          "gl": "Baboso, babosa",
+          "es": "Viscoso, viscosa",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Tocar algo imaxinario e sacudir a man",
+            "es": "Tocar algo imaginario y sacudir la mano"
+          }
+        },
+        {
+          "id": "delicate",
+          "en": "Delicate",
+          "gl": "Delicado, delicada",
+          "es": "Delicado, delicada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Coller algo moi fráxil coa punta dos dedos",
+            "es": "Coger algo muy frágil con la punta de los dedos"
+          }
+        },
+        {
+          "id": "hard-working",
+          "en": "Hard-working",
+          "gl": "Traballador, traballadora",
+          "es": "Trabajador, trabajadora",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Levar cargas imaxinarias dun lado a outro",
+            "es": "Llevar cargas imaginarias de un lado a otro"
+          }
+        },
+        {
+          "id": "curious",
+          "en": "Curious",
+          "gl": "Curioso, curiosa",
+          "es": "Curioso, curiosa",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Mirar de preto cunha lupa imaxinaria",
+            "es": "Mirar de cerca con una lupa imaginaria"
+          }
+        },
+        {
+          "id": "buzz-buzz",
+          "en": "Buzz, buzz!",
+          "gl": "Bzzz, bzzz!",
+          "es": "¡Bzzz, bzzz!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Voar coma unha abella dicindo «bzzz»",
+            "es": "Volar como una abeja diciendo «bzzz»"
+          }
+        },
+        {
+          "id": "look-a-butterfly",
+          "en": "Look, a butterfly!",
+          "gl": "Mira, unha bolboreta!",
+          "es": "¡Mira, una mariposa!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Sinalar arriba con sorpresa e seguir o voo",
+            "es": "Señalar arriba con sorpresa y seguir el vuelo"
+          }
+        },
+        {
+          "id": "where-are-you-going",
+          "en": "Where are you going?",
+          "gl": "Onde vas?",
+          "es": "¿Adónde vas?",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Abrir as mans e encoller os ombros",
+            "es": "Abrir las manos y encoger los hombros"
+          }
+        },
+        {
+          "id": "slow-like-a-snail",
+          "en": "Slow like a snail",
+          "gl": "Lento coma un caracol",
+          "es": "Lento como un caracol",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Avanzar moi, moi amodo polo chan",
+            "es": "Avanzar muy, muy despacio por el suelo"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "No parque",
+        "es": "En el parque"
+      },
+      "palabras": [
+        {
+          "id": "grass",
+          "en": "Grass",
+          "gl": "Herba",
+          "es": "Hierba",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pasar as mans polo chan coma se acariñasemos herba",
+            "es": "Pasar las manos por el suelo como si acariciáramos hierba"
+          }
+        },
+        {
+          "id": "nest",
+          "en": "Nest",
+          "gl": "Niño",
+          "es": "Nido",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer un niño coas mans en forma de cunca",
+            "es": "Hacer un nido con las manos en forma de cuenco"
+          }
+        },
+        {
+          "id": "egg",
+          "en": "Egg",
+          "gl": "Ovo",
+          "es": "Huevo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Suxeitar un ovo imaxinario con moito coidado",
+            "es": "Sostener un huevo imaginario con mucho cuidado"
+          }
+        },
+        {
+          "id": "park",
+          "en": "Park",
+          "gl": "Parque",
+          "es": "Parque",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir os brazos e mirar arredor contentos",
+            "es": "Abrir los brazos y mirar alrededor contentos"
+          }
+        },
+        {
+          "id": "bench",
+          "en": "Bench",
+          "gl": "Banco",
+          "es": "Banco",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Sentar nun banco imaxinario e descansar",
+            "es": "Sentarse en un banco imaginario y descansar"
+          }
+        },
+        {
+          "id": "pond",
+          "en": "Pond",
+          "gl": "Charca",
+          "es": "Estanque",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mirar ao chan coma se nos vísemos reflectidos",
+            "es": "Mirar al suelo como si nos viéramos reflejados"
+          }
+        },
+        {
+          "id": "stone",
+          "en": "Stone",
+          "gl": "Pedra",
+          "es": "Piedra",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Coller unha pedra imaxinaria e pousala amodo",
+            "es": "Coger una piedra imaginaria y dejarla despacio"
+          }
+        },
+        {
+          "id": "chase",
+          "en": "Chase",
+          "gl": "Perseguir",
+          "es": "Perseguir",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Camiñar rápido detrás dunha compañeira sen tocala",
+            "es": "Caminar rápido detrás de una compañera sin tocarla"
+          }
+        },
+        {
+          "id": "balance",
+          "en": "Balance",
+          "gl": "Manter o equilibrio",
+          "es": "Mantener el equilibrio",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Manterse nun pé cos brazos abertos e a man dunha persoa adulta preto",
+            "es": "Mantenerse en un pie con los brazos abiertos y la mano de una persona adulta cerca"
+          }
+        },
+        {
+          "id": "hatch",
+          "en": "Hatch",
+          "gl": "Saír do ovo",
+          "es": "Salir del cascarón",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Saír amodo dun ovo imaxinario rompendo a casca",
+            "es": "Salir despacio de un huevo imaginario rompiendo la cáscara"
+          }
+        },
+        {
+          "id": "explore",
+          "en": "Explore",
+          "gl": "Explorar",
+          "es": "Explorar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Camiñar amodo mirándoo todo con curiosidade",
+            "es": "Caminar despacio mirándolo todo con curiosidad"
+          }
+        },
+        {
+          "id": "race",
+          "en": "Race",
+          "gl": "Botar unha carreira",
+          "es": "Echar una carrera",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Poñerse na liña de saída e contar ata tres",
+            "es": "Ponerse en la línea de salida y contar hasta tres"
+          }
+        },
+        {
+          "id": "wide",
+          "en": "Wide",
+          "gl": "Ancho, ancha",
+          "es": "Ancho, ancha",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Abrir moito as pernas e os brazos",
+            "es": "Abrir mucho las piernas y los brazos"
+          }
+        },
+        {
+          "id": "free",
+          "en": "Free",
+          "gl": "Libre",
+          "es": "Libre",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Moverse libres pola aula cos brazos soltos",
+            "es": "Moverse libres por el aula con los brazos sueltos"
+          }
+        },
+        {
+          "id": "first",
+          "en": "First",
+          "gl": "Primeiro, primeira",
+          "es": "Primero, primera",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Levantar un dedo e dar un paso adiante",
+            "es": "Levantar un dedo y dar un paso adelante"
+          }
+        },
+        {
+          "id": "last",
+          "en": "Last",
+          "gl": "Último, última",
+          "es": "Último, última",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Poñerse ao final da fila e sorrir",
+            "es": "Ponerse al final de la fila y sonreír"
+          }
+        },
+        {
+          "id": "catch-me",
+          "en": "Catch me!",
+          "gl": "Atrápame!",
+          "es": "¡Atrápame!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Afastarse amodo e deixarse atrapar",
+            "es": "Alejarse despacio y dejarse atrapar"
+          }
+        },
+        {
+          "id": "ready-steady-go",
+          "en": "Ready, steady, go!",
+          "gl": "Preparados, listos, xa!",
+          "es": "¡Preparados, listos, ya!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Agacharse, prepararse e saír ao dicir «go»",
+            "es": "Agacharse, prepararse y salir al decir «go»"
+          }
+        },
+        {
+          "id": "over-the-stone",
+          "en": "Over the stone",
+          "gl": "Por riba da pedra",
+          "es": "Por encima de la piedra",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Pasar por riba dunha pedra imaxinaria cun paso longo",
+            "es": "Pasar por encima de una piedra imaginaria con un paso largo"
+          }
+        },
+        {
+          "id": "through-the-grass",
+          "en": "Through the grass",
+          "gl": "Pola herba",
+          "es": "Por la hierba",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Abrir paso coas mans entre herba alta",
+            "es": "Abrirse paso con las manos entre hierba alta"
+          }
+        }
+      ]
+    }
+  ]
+}

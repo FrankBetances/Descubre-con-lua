@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.5_6.setembro",
+  "curso": "curso_5_6",
+  "orden": 1,
+  "mesCalendario": 9,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "A nosa asemblea",
+        "es": "Nuestra asamblea"
+      },
+      "palabras": [
+        {
+          "id": "5_6.setembro.s1.vote",
+          "en": "Vote",
+          "gl": "Voto",
+          "es": "Voto",
+          "tprAction": {
+            "gl": "Levantar a man para votar",
+            "es": "Levantar la mano para votar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s1.ballot-box",
+          "en": "Ballot box",
+          "gl": "Urna",
+          "es": "Urna",
+          "tprAction": {
+            "gl": "Meter un papel na urna",
+            "es": "Meter un papel en la urna"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s1.leader",
+          "en": "Leader",
+          "gl": "Líder",
+          "es": "Líder",
+          "tprAction": {
+            "gl": "Poñerse diante e sinalar o camiño",
+            "es": "Ponerse delante y señalar el camino"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s1.idea",
+          "en": "Idea",
+          "gl": "Idea",
+          "es": "Idea",
+          "tprAction": {
+            "gl": "Tocar a cabeza e abrir a man",
+            "es": "Tocar la cabeza y abrir la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s1.opinion",
+          "en": "Opinion",
+          "gl": "Opinión",
+          "es": "Opinión",
+          "tprAction": {
+            "gl": "Pousar a man no peito e falar",
+            "es": "Poner la mano en el pecho y hablar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s1.majority",
+          "en": "Majority",
+          "gl": "Maioría",
+          "es": "Mayoría",
+          "tprAction": {
+            "gl": "Contar mans levantadas",
+            "es": "Contar manos levantadas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s1.speaking-turn",
+          "en": "Speaking turn",
+          "gl": "Quenda de palabra",
+          "es": "Turno de palabra",
+          "tprAction": {
+            "gl": "Pasar o micrófono imaxinario",
+            "es": "Pasar el micrófono imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s1.choose-together",
+          "en": "Choose together",
+          "gl": "Escoller xuntos",
+          "es": "Elegir juntos",
+          "tprAction": {
+            "gl": "Levantar as mans todos",
+            "es": "Levantar las manos todos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s1.suggest",
+          "en": "Suggest",
+          "gl": "Suxerir",
+          "es": "Sugerir",
+          "tprAction": {
+            "gl": "Abrir a man cara adiante",
+            "es": "Abrir la mano hacia delante"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s1.listen-with-a-hand-to-the-ear",
+          "en": "Listen with a hand to the ear",
+          "gl": "Escoitar coa man na orella",
+          "es": "Escuchar con la mano en la oreja",
+          "tprAction": {
+            "gl": "Levar a man á orella",
+            "es": "Llevar la mano a la oreja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s1.shake-on-it",
+          "en": "Shake on it",
+          "gl": "Darse a man",
+          "es": "Estrecharse la mano",
+          "tprAction": {
+            "gl": "Darse a man co compañeiro",
+            "es": "Estrecharse la mano con el compañero"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s1.count-votes",
+          "en": "Count votes",
+          "gl": "Contar votos",
+          "es": "Contar votos",
+          "tprAction": {
+            "gl": "Contar mans cos dedos",
+            "es": "Contar manos con los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s1.democratic",
+          "en": "Democratic",
+          "gl": "Democrático",
+          "es": "Democrático",
+          "tprAction": {
+            "gl": "Levantar a man e agardar",
+            "es": "Levantar la mano y esperar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s1.thoughtful-idea",
+          "en": "Thoughtful idea",
+          "gl": "Idea pensada",
+          "es": "Idea pensada",
+          "tprAction": {
+            "gl": "Tocar a fronte amodo",
+            "es": "Tocar la frente despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s1.unanimous",
+          "en": "Unanimous",
+          "gl": "Por unanimidade",
+          "es": "Por unanimidad",
+          "tprAction": {
+            "gl": "Levantar todos a man",
+            "es": "Levantar todos la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s1.fairest",
+          "en": "Fairest",
+          "gl": "O máis xusto",
+          "es": "El más justo",
+          "tprAction": {
+            "gl": "Poñer as mans iguais",
+            "es": "Poner las manos iguales"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s1.who-agrees",
+          "en": "Who agrees?",
+          "gl": "Quen está de acordo?",
+          "es": "¿Quién está de acuerdo?",
+          "tprAction": {
+            "gl": "Levantar a man",
+            "es": "Levantar la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s1.let-s-vote",
+          "en": "Let's vote!",
+          "gl": "Imos votar!",
+          "es": "¡Vamos a votar!",
+          "tprAction": {
+            "gl": "Meter un papel na urna",
+            "es": "Meter un papel en la urna"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s1.most-of-us-chose-the-park",
+          "en": "Most of us chose the park",
+          "gl": "A maioría escollemos o parque",
+          "es": "La mayoría elegimos el parque",
+          "tprAction": {
+            "gl": "Contar mans e sinalar",
+            "es": "Contar manos y señalar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.setembro.s1.i-think-that-because",
+          "en": "I think that because",
+          "gl": "Penso iso porque",
+          "es": "Pienso eso porque",
+          "tprAction": {
+            "gl": "Tocar a cabeza e explicar",
+            "es": "Tocar la cabeza y explicar"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Líderes e equipos",
+        "es": "Líderes y equipos"
+      },
+      "palabras": [
+        {
+          "id": "5_6.setembro.s2.team-leader",
+          "en": "Team leader",
+          "gl": "Xefe de equipo",
+          "es": "Jefe de equipo",
+          "tprAction": {
+            "gl": "Poñer unha banda imaxinaria",
+            "es": "Ponerse una banda imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s2.mission",
+          "en": "Mission",
+          "gl": "Misión",
+          "es": "Misión",
+          "tprAction": {
+            "gl": "Sinalar un obxectivo",
+            "es": "Señalar un objetivo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s2.challenge",
+          "en": "Challenge",
+          "gl": "Desafío",
+          "es": "Desafío",
+          "tprAction": {
+            "gl": "Poñer os puños fortes",
+            "es": "Poner los puños fuertes"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s2.teamwork",
+          "en": "Teamwork",
+          "gl": "Traballo en equipo",
+          "es": "Trabajo en equipo",
+          "tprAction": {
+            "gl": "Xuntar as mans no centro",
+            "es": "Juntar las manos en el centro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s2.role",
+          "en": "Role",
+          "gl": "Papel",
+          "es": "Papel",
+          "tprAction": {
+            "gl": "Sinalar a tarxeta do papel",
+            "es": "Señalar la tarjeta del papel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s2.badge",
+          "en": "Badge",
+          "gl": "Insignia",
+          "es": "Insignia",
+          "tprAction": {
+            "gl": "Pousar unha insignia no peito",
+            "es": "Poner una insignia en el pecho"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s2.team-circle",
+          "en": "Team circle",
+          "gl": "Corro do equipo",
+          "es": "Corrillo del equipo",
+          "tprAction": {
+            "gl": "Xuntarse en círculo",
+            "es": "Juntarse en círculo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s2.lead-the-way",
+          "en": "Lead the way",
+          "gl": "Guiar",
+          "es": "Guiar",
+          "tprAction": {
+            "gl": "Camiñar diante sinalando",
+            "es": "Caminar delante señalando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s2.encourage",
+          "en": "Encourage",
+          "gl": "Animar",
+          "es": "Animar",
+          "tprAction": {
+            "gl": "Bater palmas a un compañeiro",
+            "es": "Dar palmas a un compañero"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s2.solve",
+          "en": "Solve",
+          "gl": "Resolver",
+          "es": "Resolver",
+          "tprAction": {
+            "gl": "Xuntar dúas pezas",
+            "es": "Juntar dos piezas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s2.decide",
+          "en": "Decide",
+          "gl": "Decidir",
+          "es": "Decidir",
+          "tprAction": {
+            "gl": "Pensar e asentir",
+            "es": "Pensar y asentir"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s2.celebrate-as-a-team",
+          "en": "Celebrate as a team",
+          "gl": "Celebrar en equipo",
+          "es": "Celebrar en equipo",
+          "tprAction": {
+            "gl": "Chocar as mans todos",
+            "es": "Chocar las manos todos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s2.supportive",
+          "en": "Supportive",
+          "gl": "Que apoia",
+          "es": "Que apoya",
+          "tprAction": {
+            "gl": "Pousar a man no ombro",
+            "es": "Poner la mano en el hombro"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s2.determined",
+          "en": "Determined",
+          "gl": "Decidido",
+          "es": "Decidido",
+          "tprAction": {
+            "gl": "Apertar os puños con forza",
+            "es": "Apretar los puños con fuerza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s2.organised",
+          "en": "Organised",
+          "gl": "Organizado",
+          "es": "Organizado",
+          "tprAction": {
+            "gl": "Poñer as cousas en fila",
+            "es": "Poner las cosas en fila"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s2.inclusive",
+          "en": "Inclusive",
+          "gl": "Que inclúe a todos",
+          "es": "Que incluye a todos",
+          "tprAction": {
+            "gl": "Abrir o círculo a outro",
+            "es": "Abrir el círculo a otro"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s2.everyone-can-play",
+          "en": "Everyone can play",
+          "gl": "Todos poden xogar",
+          "es": "Todos pueden jugar",
+          "tprAction": {
+            "gl": "Abrir os brazos a todos",
+            "es": "Abrir los brazos a todos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s2.team-huddle-up",
+          "en": "Team, huddle up!",
+          "gl": "Equipo, en corro!",
+          "es": "¡Equipo, en corro!",
+          "tprAction": {
+            "gl": "Xuntarse en círculo",
+            "es": "Juntarse en círculo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s2.you-can-do-it",
+          "en": "You can do it!",
+          "gl": "Ti podes!",
+          "es": "¡Tú puedes!",
+          "tprAction": {
+            "gl": "Levantar o polgar",
+            "es": "Levantar el pulgar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s2.together-we-are-stronger",
+          "en": "Together we are stronger",
+          "gl": "Xuntos somos máis fortes",
+          "es": "Juntos somos más fuertes",
+          "tprAction": {
+            "gl": "Xuntar as mans e levantalas",
+            "es": "Juntar las manos y levantarlas"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Resolvemos problemas",
+        "es": "Resolvemos problemas"
+      },
+      "palabras": [
+        {
+          "id": "5_6.setembro.s3.problem",
+          "en": "Problem",
+          "gl": "Problema",
+          "es": "Problema",
+          "tprAction": {
+            "gl": "Rascar a cabeza pensando",
+            "es": "Rascarse la cabeza pensando"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s3.solution",
+          "en": "Solution",
+          "gl": "Solución",
+          "es": "Solución",
+          "tprAction": {
+            "gl": "Chiscar os dedos",
+            "es": "Chasquear los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s3.clue",
+          "en": "Clue",
+          "gl": "Pista",
+          "es": "Pista",
+          "tprAction": {
+            "gl": "Sinalar algo cunha lupa",
+            "es": "Señalar algo con una lupa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s3.puzzle-piece",
+          "en": "Puzzle piece",
+          "gl": "Peza do crebacabezas",
+          "es": "Pieza del puzle",
+          "tprAction": {
+            "gl": "Encaixar unha peza",
+            "es": "Encajar una pieza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s3.plan-b",
+          "en": "Plan B",
+          "gl": "Plan B",
+          "es": "Plan B",
+          "tprAction": {
+            "gl": "Levantar dous dedos",
+            "es": "Levantar dos dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s3.question-mark",
+          "en": "Question mark",
+          "gl": "Signo de interrogación",
+          "es": "Signo de interrogación",
+          "tprAction": {
+            "gl": "Debuxar un signo no aire",
+            "es": "Dibujar un signo en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s3.answer",
+          "en": "Answer",
+          "gl": "Resposta",
+          "es": "Respuesta",
+          "tprAction": {
+            "gl": "Levantar a man e responder",
+            "es": "Levantar la mano y responder"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s3.think-hard",
+          "en": "Think hard",
+          "gl": "Pensar moito",
+          "es": "Pensar mucho",
+          "tprAction": {
+            "gl": "Pousar o dedo na fronte",
+            "es": "Poner el dedo en la frente"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s3.try-again",
+          "en": "Try again",
+          "gl": "Intentalo de novo",
+          "es": "Intentarlo de nuevo",
+          "tprAction": {
+            "gl": "Volver ao principio",
+            "es": "Volver al principio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s3.figure-out",
+          "en": "Figure out",
+          "gl": "Descubrir",
+          "es": "Averiguar",
+          "tprAction": {
+            "gl": "Abrir os ollos de súpeto",
+            "es": "Abrir los ojos de golpe"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s3.test-an-idea",
+          "en": "Test an idea",
+          "gl": "Probar unha idea",
+          "es": "Probar una idea",
+          "tprAction": {
+            "gl": "Probar un xesto",
+            "es": "Probar un gesto"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s3.ask-for-help",
+          "en": "Ask for help",
+          "gl": "Pedir axuda",
+          "es": "Pedir ayuda",
+          "tprAction": {
+            "gl": "Levantar a man",
+            "es": "Levantar la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s3.tricky",
+          "en": "Tricky",
+          "gl": "Complicado",
+          "es": "Complicado",
+          "tprAction": {
+            "gl": "Rascar a cabeza",
+            "es": "Rascarse la cabeza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s3.clever-idea",
+          "en": "Clever idea",
+          "gl": "Idea intelixente",
+          "es": "Idea inteligente",
+          "tprAction": {
+            "gl": "Sinalar a cabeza sorrindo",
+            "es": "Señalar la cabeza sonriendo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s3.stuck",
+          "en": "Stuck",
+          "gl": "Atascado",
+          "es": "Atascado",
+          "tprAction": {
+            "gl": "Parar e encoller os ombros",
+            "es": "Parar y encoger los hombros"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s3.solved",
+          "en": "Solved",
+          "gl": "Resolto",
+          "es": "Resuelto",
+          "tprAction": {
+            "gl": "Bater palmas",
+            "es": "Dar palmas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s3.what-can-we-do",
+          "en": "What can we do?",
+          "gl": "Que podemos facer?",
+          "es": "¿Qué podemos hacer?",
+          "tprAction": {
+            "gl": "Abrir as mans preguntando",
+            "es": "Abrir las manos preguntando"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s3.let-s-try-another-way",
+          "en": "Let's try another way",
+          "gl": "Probemos doutro xeito",
+          "es": "Probemos de otra manera",
+          "tprAction": {
+            "gl": "Xirar e empezar de novo",
+            "es": "Girar y empezar de nuevo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s3.if-it-doesn-t-work-we-try-again",
+          "en": "If it doesn't work, we try again",
+          "gl": "Se non funciona, volvemos probar",
+          "es": "Si no funciona, volvemos a probar",
+          "tprAction": {
+            "gl": "Facer e repetir",
+            "es": "Hacer y repetir"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.setembro.s3.we-solved-it-together",
+          "en": "We solved it together!",
+          "gl": "Resolvémolo xuntos!",
+          "es": "¡Lo resolvimos juntos!",
+          "tprAction": {
+            "gl": "Chocar as mans",
+            "es": "Chocar las manos"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Acordos",
+        "es": "Acuerdos"
+      },
+      "palabras": [
+        {
+          "id": "5_6.setembro.s4.deal",
+          "en": "Deal",
+          "gl": "Trato",
+          "es": "Trato",
+          "tprAction": {
+            "gl": "Darse a man",
+            "es": "Darse la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s4.compromise",
+          "en": "Compromise",
+          "gl": "Termo medio",
+          "es": "Término medio",
+          "tprAction": {
+            "gl": "Xuntar as mans no medio",
+            "es": "Juntar las manos en el medio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s4.pinky-promise",
+          "en": "Pinky promise",
+          "gl": "Promesa co dedo miñeiro",
+          "es": "Promesa de meñiques",
+          "tprAction": {
+            "gl": "Enganchar os miñeiros",
+            "es": "Enganchar los meñiques"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s4.timer",
+          "en": "Timer",
+          "gl": "Temporizador",
+          "es": "Temporizador",
+          "tprAction": {
+            "gl": "Xirar un reloxo imaxinario",
+            "es": "Girar un reloj imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s4.swap",
+          "en": "Swap",
+          "gl": "Intercambio",
+          "es": "Intercambio",
+          "tprAction": {
+            "gl": "Cambiar un obxecto cun amigo",
+            "es": "Cambiar un objeto con un amigo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s4.class-charter",
+          "en": "Class charter",
+          "gl": "Carta da clase",
+          "es": "Carta de la clase",
+          "tprAction": {
+            "gl": "Asinar un papel imaxinario",
+            "es": "Firmar un papel imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s4.signature",
+          "en": "Signature",
+          "gl": "Sinatura",
+          "es": "Firma",
+          "tprAction": {
+            "gl": "Asinar no aire",
+            "es": "Firmar en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.setembro.s4.make-a-deal",
+          "en": "Make a deal",
+          "gl": "Facer un trato",
+          "es": "Hacer un trato",
+          "tprAction": {
+            "gl": "Darse a man e asentir",
+            "es": "Darse la mano y asentir"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s4.keep-a-promise",
+          "en": "Keep a promise",
+          "gl": "Cumprir unha promesa",
+          "es": "Cumplir una promesa",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s4.swap-toys",
+          "en": "Swap toys",
+          "gl": "Intercambiar xoguetes",
+          "es": "Intercambiar juguetes",
+          "tprAction": {
+            "gl": "Cambiar un xoguete",
+            "es": "Cambiar un juguete"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s4.sign",
+          "en": "Sign",
+          "gl": "Asinar",
+          "es": "Firmar",
+          "tprAction": {
+            "gl": "Escribir o nome no aire",
+            "es": "Escribir el nombre en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s4.set-a-timer",
+          "en": "Set a timer",
+          "gl": "Poñer o temporizador",
+          "es": "Poner el temporizador",
+          "tprAction": {
+            "gl": "Premer un botón imaxinario",
+            "es": "Pulsar un botón imaginario"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.setembro.s4.agreed",
+          "en": "Agreed",
+          "gl": "Acordado",
+          "es": "Acordado",
+          "tprAction": {
+            "gl": "Asentir coa cabeza",
+            "es": "Asentir con la cabeza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s4.trustworthy",
+          "en": "Trustworthy",
+          "gl": "De confianza",
+          "es": "De confianza",
+          "tprAction": {
+            "gl": "Pousar a man no ombro",
+            "es": "Poner la mano en el hombro"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s4.even",
+          "en": "Even",
+          "gl": "Igualado",
+          "es": "Igualado",
+          "tprAction": {
+            "gl": "Poñer as mans á mesma altura",
+            "es": "Poner las manos a la misma altura"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s4.peaceful-solution",
+          "en": "Peaceful solution",
+          "gl": "Solución pacífica",
+          "es": "Solución pacífica",
+          "tprAction": {
+            "gl": "Darse a man sorrindo",
+            "es": "Darse la mano sonriendo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.setembro.s4.it-s-a-deal",
+          "en": "It's a deal!",
+          "gl": "Trato feito!",
+          "es": "¡Trato hecho!",
+          "tprAction": {
+            "gl": "Darse a man",
+            "es": "Darse la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s4.you-first-then-me",
+          "en": "You first, then me",
+          "gl": "Ti primeiro, despois eu",
+          "es": "Tú primero, luego yo",
+          "tprAction": {
+            "gl": "Sinalar ao amigo e a si",
+            "es": "Señalar al amigo y a sí mismo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s4.five-minutes-each",
+          "en": "Five minutes each",
+          "gl": "Cinco minutos cada un",
+          "es": "Cinco minutos cada uno",
+          "tprAction": {
+            "gl": "Amosar cinco dedos",
+            "es": "Enseñar cinco dedos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.setembro.s4.when-the-timer-rings-we-swap",
+          "en": "When the timer rings, we swap",
+          "gl": "Cando soe o temporizador, cambiamos",
+          "es": "Cuando suene el temporizador, cambiamos",
+          "tprAction": {
+            "gl": "Cambiar ao sinal",
+            "es": "Cambiar a la señal"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

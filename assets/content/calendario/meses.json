@@ -1,7 +1,7 @@
 {
   "version": 1,
   "id": "calendario.meses.01",
-  "nota": "Los diez meses del curso (septiembre a junio) del Calendario Escola·Fogar. Contenido, no código: la pantalla lo lee de aquí. El bloque `ingles` es la capa L3 y es LA FUENTE de las grabaciones en inglés: cada palabra de `lexico`, cada orden de `tpr` y la `frase` tienen una grabación en assets/voice/, generada por tools/generate_voice_assets.py. Si cambias una cadena inglesa aquí, su grabación deja de existir y el gate check_voice_coverage.py lo dice. El inglés NO es lengua de interfaz: la app se lee en gallego o castellano y el inglés solo se escucha, para que la persona adulta lo pronuncie antes de decirselo a la criatura. El campo `unidad` dice QUÉ unidad de aula se dirige ese mes, por su id. Antes se emparejaba por `orden`, y el `orden` de una unidad es su sitio en el catálogo, no el mes del curso: la unidad del mar acababa cayendo en septiembre. Un mes sin `unidad` se ve «en preparación» y no abre nada.",
+  "nota": "Los diez meses del curso (septiembre a junio) del Calendario Escola·Fogar. Contenido, no código: la pantalla lo lee de aquí. El bloque `ingles` es la capa L3 del mes: cada orden de `tpr` y la `frase` tienen una grabación en assets/voice/, generada por tools/generate_voice_assets.py. Aquí ya NO hay léxico: el inglés del curso son cinco palabras nuevas cada día —veinte por semana, ochenta por mes— y viven en assets/content/tpr/, una semana por bloque. Las seis palabras por mes que había aquí siguen todas allí, cada una en su mes. Si cambias una cadena inglesa aquí, su grabación deja de existir y el gate check_voice_coverage.py lo dice. El inglés NO es lengua de interfaz: la app se lee en gallego o castellano y el inglés solo se escucha, para que la persona adulta lo pronuncie antes de decirselo a la criatura. El campo `unidad` dice QUÉ unidad de aula se dirige ese mes, por su id. Antes se emparejaba por `orden`, y el `orden` de una unidad es su sitio en el catálogo, no el mes del curso: la unidad del mar acababa cayendo en septiembre. Un mes sin `unidad` se ve «en preparación» y no abre nada.",
   "meses": [
     {
       "orden": 1,
@@ -34,14 +34,6 @@
       "minutosSugeridos": 3,
       "unidad": "juega.benvida.01",
       "ingles": {
-        "lexico": [
-          "Hello",
-          "Bye-bye",
-          "Up",
-          "Down",
-          "Clap",
-          "Gentle"
-        ],
         "tpr": [
           "Stand up",
           "Sit down",
@@ -81,14 +73,6 @@
       "minutosSugeridos": 4,
       "unidad": "juega.corpo.01",
       "ingles": {
-        "lexico": [
-          "Head",
-          "Tummy",
-          "Toes",
-          "Eyes",
-          "Nose",
-          "Freeze"
-        ],
         "tpr": [
           "Touch your head",
           "Shake hands",
@@ -128,14 +112,6 @@
       "minutosSugeridos": 4,
       "unidad": "juega.follas.01",
       "ingles": {
-        "lexico": [
-          "Leaf",
-          "Falling",
-          "Wind",
-          "Crunch",
-          "Brown",
-          "Orange"
-        ],
         "tpr": [
           "Fall down",
           "Walk softly",
@@ -175,14 +151,6 @@
       "minutosSugeridos": 3,
       "unidad": "juega.inverno.01",
       "ingles": {
-        "lexico": [
-          "Cold",
-          "Warm",
-          "Bell",
-          "Ring",
-          "Sleep",
-          "Wake up"
-        ],
         "tpr": [
           "Ring bells",
           "Sleep tight",
@@ -222,14 +190,6 @@
       "minutosSugeridos": 4,
       "unidad": "juega.choiva.01",
       "ingles": {
-        "lexico": [
-          "Coat",
-          "Boots",
-          "Hat",
-          "Put on",
-          "Take off",
-          "Big"
-        ],
         "tpr": [
           "Put on your hat",
           "Zip your coat",
@@ -269,14 +229,6 @@
       "minutosSugeridos": 5,
       "unidad": "juega.animais.01",
       "ingles": {
-        "lexico": [
-          "Frog",
-          "Bird",
-          "Bear",
-          "Cat",
-          "Jump",
-          "Fly"
-        ],
         "tpr": [
           "Jump like a frog",
           "Fly like a bird",
@@ -316,14 +268,6 @@
       "minutosSugeridos": 4,
       "unidad": "juega.cores.01",
       "ingles": {
-        "lexico": [
-          "Red",
-          "Yellow",
-          "Circle",
-          "Sweet",
-          "Roll",
-          "Shake"
-        ],
         "tpr": [
           "Find something red",
           "Roll the circle",
@@ -363,14 +307,6 @@
       "minutosSugeridos": 4,
       "unidad": "juega.primavera.01",
       "ingles": {
-        "lexico": [
-          "Rain",
-          "Sun",
-          "Flower",
-          "Grow",
-          "Tap-tap",
-          "Open"
-        ],
         "tpr": [
           "Be a little seed",
           "Grow up",
@@ -410,14 +346,6 @@
       "minutosSugeridos": 4,
       "unidad": "juega.auga.01",
       "ingles": {
-        "lexico": [
-          "Wash",
-          "Water",
-          "Soap",
-          "Clean",
-          "Splash",
-          "Rub"
-        ],
         "tpr": [
           "Wash your face",
           "Rub your hands",
@@ -457,14 +385,6 @@
       "minutosSugeridos": 5,
       "unidad": "juega.mar.01",
       "ingles": {
-        "lexico": [
-          "Sea",
-          "Waves",
-          "Swim",
-          "Fish",
-          "Blue",
-          "Goodbye"
-        ],
         "tpr": [
           "Gentle waves",
           "Big waves!",

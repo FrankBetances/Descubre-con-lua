@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.5_6.xuno",
+  "curso": "curso_5_6",
+  "orden": 10,
+  "mesCalendario": 6,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Cinco anos con Lúa",
+        "es": "Cinco años con Lúa"
+      },
+      "palabras": [
+        {
+          "id": "5_6.xuno.s1.memory-lane",
+          "en": "Memory lane",
+          "gl": "Camiño dos recordos",
+          "es": "Camino de los recuerdos",
+          "tprAction": {
+            "gl": "Camiñar mirando atrás",
+            "es": "Caminar mirando atrás"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s1.scrapbook",
+          "en": "Scrapbook",
+          "gl": "Álbum de recortes",
+          "es": "Álbum de recortes",
+          "tprAction": {
+            "gl": "Pegar un recorte",
+            "es": "Pegar un recorte"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s1.best-moment",
+          "en": "Best moment",
+          "gl": "Mellor momento",
+          "es": "Mejor momento",
+          "tprAction": {
+            "gl": "Levantar un dedo sorrindo",
+            "es": "Levantar un dedo sonriendo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s1.milestone",
+          "en": "Milestone",
+          "gl": "Fito",
+          "es": "Hito",
+          "tprAction": {
+            "gl": "Poñer unha pedra no camiño",
+            "es": "Poner una piedra en el camino"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s1.five-years",
+          "en": "Five years",
+          "gl": "Cinco anos",
+          "es": "Cinco años",
+          "tprAction": {
+            "gl": "Amosar cinco dedos",
+            "es": "Enseñar cinco dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s1.first-day",
+          "en": "First day",
+          "gl": "Primeiro día",
+          "es": "Primer día",
+          "tprAction": {
+            "gl": "Levantar un dedo",
+            "es": "Levantar un dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s1.farewell-party",
+          "en": "Farewell party",
+          "gl": "Festa de despedida",
+          "es": "Fiesta de despedida",
+          "tprAction": {
+            "gl": "Bailar e acenar",
+            "es": "Bailar y saludar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s1.look-back-on",
+          "en": "Look back on",
+          "gl": "Lembrar",
+          "es": "Recordar",
+          "tprAction": {
+            "gl": "Mirar atrás sorrindo",
+            "es": "Mirar atrás sonriendo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s1.stick-in-photos",
+          "en": "Stick in photos",
+          "gl": "Pegar fotos",
+          "es": "Pegar fotos",
+          "tprAction": {
+            "gl": "Pegar no aire",
+            "es": "Pegar en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s1.thank-the-teachers",
+          "en": "Thank the teachers",
+          "gl": "Agradecer ás mestras",
+          "es": "Agradecer a las maestras",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s1.hug-goodbye-to-l-a",
+          "en": "Hug goodbye to Lúa",
+          "gl": "Despedirse de Lúa cunha aperta",
+          "es": "Despedirse de Lúa con un abrazo",
+          "tprAction": {
+            "gl": "Abrazar un peluche",
+            "es": "Abrazar un peluche"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s1.laugh-together",
+          "en": "Laugh together",
+          "gl": "Rir xuntos",
+          "es": "Reír juntos",
+          "tprAction": {
+            "gl": "Rir todos",
+            "es": "Reír todos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s1.unforgettable",
+          "en": "Unforgettable",
+          "gl": "Inesquecible",
+          "es": "Inolvidable",
+          "tprAction": {
+            "gl": "Pousar as mans no peito",
+            "es": "Poner las manos en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s1.grown-so-much",
+          "en": "Grown so much",
+          "gl": "Moi medrado",
+          "es": "Muy crecido",
+          "tprAction": {
+            "gl": "Estirarse ata arriba",
+            "es": "Estirarse hasta arriba"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s1.nostalgic",
+          "en": "Nostalgic",
+          "gl": "Nostálxico",
+          "es": "Nostálgico",
+          "tprAction": {
+            "gl": "Sorrir mirando atrás",
+            "es": "Sonreír mirando atrás"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s1.happiest",
+          "en": "Happiest",
+          "gl": "O máis feliz",
+          "es": "El más feliz",
+          "tprAction": {
+            "gl": "Saltar de alegría",
+            "es": "Saltar de alegría"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s1.do-you-remember-our-first-day",
+          "en": "Do you remember our first day?",
+          "gl": "Lembras o noso primeiro día?",
+          "es": "¿Recuerdas nuestro primer día?",
+          "tprAction": {
+            "gl": "Levantar un dedo",
+            "es": "Levantar un dedo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xuno.s1.thank-you-l-a",
+          "en": "Thank you, Lúa!",
+          "gl": "Grazas, Lúa!",
+          "es": "¡Gracias, Lúa!",
+          "tprAction": {
+            "gl": "Acenar a Lúa",
+            "es": "Saludar a Lúa"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xuno.s1.when-i-was-two-i-couldn-t-write-my-name-but-now-i-can",
+          "en": "When I was two, I couldn't write my name, but now I can",
+          "gl": "Cando tiña dous anos non sabía escribir o nome, pero agora si",
+          "es": "Cuando tenía dos años no sabía escribir mi nombre, pero ahora sí",
+          "tprAction": {
+            "gl": "Escribir no aire",
+            "es": "Escribir en el aire"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.xuno.s1.we-have-grown-so-much-in-five-years",
+          "en": "We have grown so much in five years",
+          "gl": "Medramos moito en cinco anos",
+          "es": "Hemos crecido mucho en cinco años",
+          "tprAction": {
+            "gl": "Estirarse ata arriba",
+            "es": "Estirarse hasta arriba"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Preparados para Primaria",
+        "es": "Listos para Primaria"
+      },
+      "palabras": [
+        {
+          "id": "5_6.xuno.s2.primary-school",
+          "en": "Primary school",
+          "gl": "Escola de Primaria",
+          "es": "Colegio de Primaria",
+          "tprAction": {
+            "gl": "Sinalar un edificio grande",
+            "es": "Señalar un edificio grande"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s2.desk",
+          "en": "Desk",
+          "gl": "Pupitre",
+          "es": "Pupitre",
+          "tprAction": {
+            "gl": "Sentarse ben na mesa",
+            "es": "Sentarse bien en la mesa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s2.timetable-board",
+          "en": "Timetable board",
+          "gl": "Horario da clase",
+          "es": "Horario de la clase",
+          "tprAction": {
+            "gl": "Sinalar horas",
+            "es": "Señalar horas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s2.pencil-case",
+          "en": "Pencil case",
+          "gl": "Estoxo",
+          "es": "Estuche",
+          "tprAction": {
+            "gl": "Abrir e pechar o estoxo",
+            "es": "Abrir y cerrar el estuche"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s2.exercise-book",
+          "en": "Exercise book",
+          "gl": "Caderno de exercicios",
+          "es": "Cuaderno de ejercicios",
+          "tprAction": {
+            "gl": "Escribir nun caderno",
+            "es": "Escribir en un cuaderno"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s2.playtime-bell",
+          "en": "Playtime bell",
+          "gl": "Timbre do recreo",
+          "es": "Timbre del recreo",
+          "tprAction": {
+            "gl": "Facer «riiing»",
+            "es": "Hacer «riiing»"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s2.letters-and-numbers",
+          "en": "Letters and numbers",
+          "gl": "Letras e números",
+          "es": "Letras y números",
+          "tprAction": {
+            "gl": "Debuxar un A e un 1",
+            "es": "Dibujar una A y un 1"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s2.stand-tall-and-proud",
+          "en": "Stand tall and proud",
+          "gl": "Erguerse orgulloso",
+          "es": "Ponerse erguido y orgulloso",
+          "tprAction": {
+            "gl": "Estirarse dereito",
+            "es": "Estirarse recto"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s2.write-your-name",
+          "en": "Write your name",
+          "gl": "Escribir o nome",
+          "es": "Escribir tu nombre",
+          "tprAction": {
+            "gl": "Escribir no aire",
+            "es": "Escribir en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s2.pack-your-pencil-case",
+          "en": "Pack your pencil case",
+          "gl": "Preparar o estoxo",
+          "es": "Preparar el estuche",
+          "tprAction": {
+            "gl": "Meter lapis no estoxo",
+            "es": "Meter lápices en el estuche"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s2.line-up-at-the-bell",
+          "en": "Line up at the bell",
+          "gl": "Poñerse en fila ao timbre",
+          "es": "Ponerse en fila al timbre",
+          "tprAction": {
+            "gl": "Poñerse en fila",
+            "es": "Ponerse en fila"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s2.try-your-best",
+          "en": "Try your best",
+          "gl": "Facelo o mellor posible",
+          "es": "Hacerlo lo mejor posible",
+          "tprAction": {
+            "gl": "Apertar os puños con ánimo",
+            "es": "Apretar los puños con ánimo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s2.ready-for-primary",
+          "en": "Ready for Primary",
+          "gl": "Listo para Primaria",
+          "es": "Listo para Primaria",
+          "tprAction": {
+            "gl": "Levantar o polgar",
+            "es": "Levantar el pulgar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s2.independent-learner",
+          "en": "Independent learner",
+          "gl": "Aprendiz autónomo",
+          "es": "Aprendiz autónomo",
+          "tprAction": {
+            "gl": "Abrir un libro só",
+            "es": "Abrir un libro solo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s2.eager",
+          "en": "Eager",
+          "gl": "Con ganas",
+          "es": "Con ganas",
+          "tprAction": {
+            "gl": "Saltar no sitio",
+            "es": "Saltar en el sitio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s2.bigger-school",
+          "en": "Bigger school",
+          "gl": "Escola máis grande",
+          "es": "Colegio más grande",
+          "tprAction": {
+            "gl": "Abrir os brazos",
+            "es": "Abrir los brazos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s2.can-you-write-your-name",
+          "en": "Can you write your name?",
+          "gl": "Sabes escribir o teu nome?",
+          "es": "¿Sabes escribir tu nombre?",
+          "tprAction": {
+            "gl": "Escribir no aire",
+            "es": "Escribir en el aire"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xuno.s2.i-m-ready-for-primary",
+          "en": "I'm ready for Primary!",
+          "gl": "Estou listo para Primaria!",
+          "es": "¡Estoy listo para Primaria!",
+          "tprAction": {
+            "gl": "Levantar os brazos",
+            "es": "Levantar los brazos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xuno.s2.next-year-i-will-learn-to-read-books-by-myself",
+          "en": "Next year I will learn to read books by myself",
+          "gl": "O ano que vén aprenderei a ler libros eu só",
+          "es": "El año que viene aprenderé a leer libros yo solo",
+          "tprAction": {
+            "gl": "Abrir un libro imaxinario",
+            "es": "Abrir un libro imaginario"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.xuno.s2.when-the-bell-rings-we-line-up",
+          "en": "When the bell rings, we line up",
+          "gl": "Cando soa o timbre, poñémonos en fila",
+          "es": "Cuando suena el timbre, nos ponemos en fila",
+          "tprAction": {
+            "gl": "Poñerse en fila",
+            "es": "Ponerse en fila"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Graduación",
+        "es": "Graduación"
+      },
+      "palabras": [
+        {
+          "id": "5_6.xuno.s3.graduation",
+          "en": "Graduation",
+          "gl": "Graduación",
+          "es": "Graduación",
+          "tprAction": {
+            "gl": "Lanzar un birrete ao aire",
+            "es": "Lanzar un birrete al aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s3.graduate-cap",
+          "en": "Graduate cap",
+          "gl": "Birrete",
+          "es": "Birrete",
+          "tprAction": {
+            "gl": "Poñer un birrete imaxinario",
+            "es": "Ponerse un birrete imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s3.certificate",
+          "en": "Certificate",
+          "gl": "Certificado",
+          "es": "Certificado",
+          "tprAction": {
+            "gl": "Recibir un papel coas dúas mans",
+            "es": "Recibir un papel con las dos manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s3.speech",
+          "en": "Speech",
+          "gl": "Discurso",
+          "es": "Discurso",
+          "tprAction": {
+            "gl": "Falar diante de todos",
+            "es": "Hablar delante de todos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s3.family-audience",
+          "en": "Family audience",
+          "gl": "Familias no público",
+          "es": "Familias en el público",
+          "tprAction": {
+            "gl": "Acenar ás familias",
+            "es": "Saludar a las familias"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s3.proud-parents",
+          "en": "Proud parents",
+          "gl": "Familias orgullosas",
+          "es": "Familias orgullosas",
+          "tprAction": {
+            "gl": "Aplaudir forte",
+            "es": "Aplaudir fuerte"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s3.class-song",
+          "en": "Class song",
+          "gl": "Canción da clase",
+          "es": "Canción de la clase",
+          "tprAction": {
+            "gl": "Cantar todos xuntos",
+            "es": "Cantar todos juntos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s3.wave-a-graduate-cap",
+          "en": "Wave a graduate cap",
+          "gl": "Axitar o birrete",
+          "es": "Agitar el birrete",
+          "tprAction": {
+            "gl": "Axitar a man no aire",
+            "es": "Agitar la mano en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s3.cheer-hurray",
+          "en": "Cheer hurray",
+          "gl": "Berrar hurra",
+          "es": "Gritar hurra",
+          "tprAction": {
+            "gl": "Levantar os brazos e berrar",
+            "es": "Levantar los brazos y gritar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s3.walk-on-stage",
+          "en": "Walk on stage",
+          "gl": "Subir ao escenario",
+          "es": "Subir al escenario",
+          "tprAction": {
+            "gl": "Camiñar erguido",
+            "es": "Caminar erguido"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s3.give-a-speech",
+          "en": "Give a speech",
+          "gl": "Dar un discurso",
+          "es": "Dar un discurso",
+          "tprAction": {
+            "gl": "Falar alto e claro",
+            "es": "Hablar alto y claro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s3.throw-caps-in-the-air",
+          "en": "Throw caps in the air",
+          "gl": "Lanzar os birretes",
+          "es": "Lanzar los birretes",
+          "tprAction": {
+            "gl": "Lanzar ao aire",
+            "es": "Lanzar al aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s3.graduated",
+          "en": "Graduated",
+          "gl": "Graduado",
+          "es": "Graduado",
+          "tprAction": {
+            "gl": "Levantar o certificado",
+            "es": "Levantar el certificado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s3.accomplished",
+          "en": "Accomplished",
+          "gl": "Conseguido",
+          "es": "Logrado",
+          "tprAction": {
+            "gl": "Levantar os brazos",
+            "es": "Levantar los brazos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s3.emotional",
+          "en": "Emotional",
+          "gl": "Emocionado",
+          "es": "Emocionado",
+          "tprAction": {
+            "gl": "Pousar as mans no peito",
+            "es": "Poner las manos en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s3.unstoppable",
+          "en": "Unstoppable",
+          "gl": "Imparable",
+          "es": "Imparable",
+          "tprAction": {
+            "gl": "Correr no sitio",
+            "es": "Correr en el sitio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s3.congratulations-class",
+          "en": "Congratulations, class!",
+          "gl": "Parabéns, clase!",
+          "es": "¡Enhorabuena, clase!",
+          "tprAction": {
+            "gl": "Aplaudir",
+            "es": "Aplaudir"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xuno.s3.hip-hip-hooray",
+          "en": "Hip, hip, hooray!",
+          "gl": "Hip, hip, hurra!",
+          "es": "¡Hip, hip, hurra!",
+          "tprAction": {
+            "gl": "Levantar os brazos tres veces",
+            "es": "Levantar los brazos tres veces"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xuno.s3.first-we-sing-then-we-get-our-certificates-and-finally-we-celebrate",
+          "en": "First we sing, then we get our certificates, and finally we celebrate",
+          "gl": "Primeiro cantamos, despois recollemos os certificados e por último celebramos",
+          "es": "Primero cantamos, luego recogemos los certificados y por último celebramos",
+          "tprAction": {
+            "gl": "Facer os tres xestos",
+            "es": "Hacer los tres gestos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.xuno.s3.we-did-it-together",
+          "en": "We did it together",
+          "gl": "Fixémolo xuntos",
+          "es": "Lo hicimos juntos",
+          "tprAction": {
+            "gl": "Xuntar as mans e levantalas",
+            "es": "Juntar las manos y levantarlas"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Ola, verán!",
+        "es": "¡Hola, verano!"
+      },
+      "palabras": [
+        {
+          "id": "5_6.xuno.s4.summer-holidays",
+          "en": "Summer holidays",
+          "gl": "Vacacións de verán",
+          "es": "Vacaciones de verano",
+          "tprAction": {
+            "gl": "Abanarse contentos",
+            "es": "Abanicarse contentos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s4.travel-map",
+          "en": "Travel map",
+          "gl": "Mapa de viaxe",
+          "es": "Mapa de viaje",
+          "tprAction": {
+            "gl": "Sinalar un sitio no mapa",
+            "es": "Señalar un sitio en el mapa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s4.suncream-bottle",
+          "en": "Suncream bottle",
+          "gl": "Bote de crema solar",
+          "es": "Bote de crema solar",
+          "tprAction": {
+            "gl": "Estender crema",
+            "es": "Extender crema"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s4.summer-reading",
+          "en": "Summer reading",
+          "gl": "Lectura de verán",
+          "es": "Lectura de verano",
+          "tprAction": {
+            "gl": "Abrir un libro á sombra",
+            "es": "Abrir un libro a la sombra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s4.postcard",
+          "en": "Postcard",
+          "gl": "Postal de viaxe",
+          "es": "Postal de viaje",
+          "tprAction": {
+            "gl": "Escribir unha postal",
+            "es": "Escribir una postal"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s4.campfire",
+          "en": "Campfire",
+          "gl": "Fogueira de campamento",
+          "es": "Hoguera de campamento",
+          "tprAction": {
+            "gl": "Sentarse arredor",
+            "es": "Sentarse alrededor"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s4.starry-night",
+          "en": "Starry night",
+          "gl": "Noite estrelada",
+          "es": "Noche estrellada",
+          "tprAction": {
+            "gl": "Mirar arriba abrindo os dedos",
+            "es": "Mirar arriba abriendo los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xuno.s4.go-on-holiday",
+          "en": "Go on holiday",
+          "gl": "Ir de vacacións",
+          "es": "Irse de vacaciones",
+          "tprAction": {
+            "gl": "Levar unha maleta imaxinaria",
+            "es": "Llevar una maleta imaginaria"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s4.send-a-postcard",
+          "en": "Send a postcard",
+          "gl": "Enviar unha postal",
+          "es": "Enviar una postal",
+          "tprAction": {
+            "gl": "Meter nun buzón",
+            "es": "Meter en un buzón"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s4.explore-new-places",
+          "en": "Explore new places",
+          "gl": "Explorar sitios novos",
+          "es": "Explorar sitios nuevos",
+          "tprAction": {
+            "gl": "Mirar arredor cun mapa",
+            "es": "Mirar alrededor con un mapa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s4.read-in-the-shade",
+          "en": "Read in the shade",
+          "gl": "Ler á sombra",
+          "es": "Leer a la sombra",
+          "tprAction": {
+            "gl": "Sentarse e abrir un libro",
+            "es": "Sentarse y abrir un libro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s4.keep-in-touch",
+          "en": "Keep in touch",
+          "gl": "Seguir en contacto",
+          "es": "Seguir en contacto",
+          "tprAction": {
+            "gl": "Facer un teléfono coa man",
+            "es": "Hacer un teléfono con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xuno.s4.adventurous",
+          "en": "Adventurous",
+          "gl": "Aventureiro",
+          "es": "Aventurero",
+          "tprAction": {
+            "gl": "Camiñar con paso firme",
+            "es": "Caminar con paso firme"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s4.relaxed-summer",
+          "en": "Relaxed summer",
+          "gl": "Verán tranquilo",
+          "es": "Verano tranquilo",
+          "tprAction": {
+            "gl": "Deitarse a descansar",
+            "es": "Tumbarse a descansar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s4.sun-soaked",
+          "en": "Sun-soaked",
+          "gl": "Cheo de sol",
+          "es": "Lleno de sol",
+          "tprAction": {
+            "gl": "Abrir os brazos ao sol",
+            "es": "Abrir los brazos al sol"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s4.carefree",
+          "en": "Carefree",
+          "gl": "Despreocupado",
+          "es": "Despreocupado",
+          "tprAction": {
+            "gl": "Saltar libres",
+            "es": "Saltar libres"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xuno.s4.where-will-you-go-this-summer",
+          "en": "Where will you go this summer?",
+          "gl": "Onde irás este verán?",
+          "es": "¿Adónde irás este verano?",
+          "tprAction": {
+            "gl": "Sinalar o mapa",
+            "es": "Señalar el mapa"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xuno.s4.send-me-a-postcard",
+          "en": "Send me a postcard!",
+          "gl": "Mándame unha postal!",
+          "es": "¡Mándame una postal!",
+          "tprAction": {
+            "gl": "Facer que se escribe",
+            "es": "Hacer que se escribe"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xuno.s4.if-it-s-sunny-we-go-to-the-beach-if-it-rains-we-read",
+          "en": "If it's sunny, we go to the beach; if it rains, we read",
+          "gl": "Se vai sol, imos á praia; se chove, lemos",
+          "es": "Si hace sol, vamos a la playa; si llueve, leemos",
+          "tprAction": {
+            "gl": "Abrir as mans e logo abrir un libro",
+            "es": "Abrir las manos y luego abrir un libro"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.xuno.s4.see-you-in-primary",
+          "en": "See you in Primary!",
+          "gl": "Vémonos en Primaria!",
+          "es": "¡Nos vemos en Primaria!",
+          "tprAction": {
+            "gl": "Acenar a todos",
+            "es": "Saludar a todos"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

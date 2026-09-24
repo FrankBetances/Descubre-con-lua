@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "id": "tpr.modelo",
+  "nota": "El ritmo del inglés del curso: cinco palabras nuevas cada día de lunes a jueves, repaso acumulativo y el viernes sin palabras nuevas. Las palabras viven en tpr.NN.<mes>.json, una semana de veinte por bloque; aquí está lo que NO cambia de semana a semana: qué se hace cada día y cómo se llaman las categorías. La app no lleva ni una palabra escrita en los widgets: todo sale de este directorio, y los totales que se enseñan (20 por semana, 80 por mes, 800 por curso, el reparto por categorías) se CUENTAN aquí, no se escriben a mano, para que no puedan discrepar del contenido. Cada palabra inglesa tiene su grabación en assets/voice/ (tools/voice_corpus.py las recoge de este directorio).",
+  "ritmoDiario": 5,
+  "cursos": [
+    {
+      "id": "curso_0_2",
+      "etiqueta": {
+        "gl": "0-2 anos",
+        "es": "0-2 años"
+      },
+      "meses": [
+        "assets/content/tpr/curso_0_2/tpr.01.setembro.json",
+        "assets/content/tpr/curso_0_2/tpr.02.outubro.json",
+        "assets/content/tpr/curso_0_2/tpr.03.novembro.json",
+        "assets/content/tpr/curso_0_2/tpr.04.decembro.json",
+        "assets/content/tpr/curso_0_2/tpr.05.xaneiro.json",
+        "assets/content/tpr/curso_0_2/tpr.06.febreiro.json",
+        "assets/content/tpr/curso_0_2/tpr.07.marzo.json",
+        "assets/content/tpr/curso_0_2/tpr.08.abril.json",
+        "assets/content/tpr/curso_0_2/tpr.09.maio.json",
+        "assets/content/tpr/curso_0_2/tpr.10.xuno.json"
+      ]
+    },
+    {
+      "id": "curso_2_3",
+      "etiqueta": {
+        "gl": "2-3 anos",
+        "es": "2-3 años"
+      },
+      "meses": [
+        "assets/content/tpr/curso_2_3/tpr.01.setembro.json",
+        "assets/content/tpr/curso_2_3/tpr.02.outubro.json",
+        "assets/content/tpr/curso_2_3/tpr.03.novembro.json",
+        "assets/content/tpr/curso_2_3/tpr.04.decembro.json",
+        "assets/content/tpr/curso_2_3/tpr.05.xaneiro.json",
+        "assets/content/tpr/curso_2_3/tpr.06.febreiro.json",
+        "assets/content/tpr/curso_2_3/tpr.07.marzo.json",
+        "assets/content/tpr/curso_2_3/tpr.08.abril.json",
+        "assets/content/tpr/curso_2_3/tpr.09.maio.json",
+        "assets/content/tpr/curso_2_3/tpr.10.xuno.json"
+      ]
+    },
+    {
+      "id": "curso_3_4",
+      "etiqueta": {
+        "gl": "3-4 anos",
+        "es": "3-4 años"
+      },
+      "meses": [
+        "assets/content/tpr/curso_3_4/tpr.01.setembro.json",
+        "assets/content/tpr/curso_3_4/tpr.02.outubro.json",
+        "assets/content/tpr/curso_3_4/tpr.03.novembro.json",
+        "assets/content/tpr/curso_3_4/tpr.04.decembro.json",
+        "assets/content/tpr/curso_3_4/tpr.05.xaneiro.json",
+        "assets/content/tpr/curso_3_4/tpr.06.febreiro.json",
+        "assets/content/tpr/curso_3_4/tpr.07.marzo.json",
+        "assets/content/tpr/curso_3_4/tpr.08.abril.json",
+        "assets/content/tpr/curso_3_4/tpr.09.maio.json",
+        "assets/content/tpr/curso_3_4/tpr.10.xuno.json"
+      ]
+    },
+    {
+      "id": "curso_4_5",
+      "etiqueta": {
+        "gl": "4-5 anos",
+        "es": "4-5 años"
+      },
+      "meses": [
+        "assets/content/tpr/curso_4_5/tpr.01.setembro.json",
+        "assets/content/tpr/curso_4_5/tpr.02.outubro.json",
+        "assets/content/tpr/curso_4_5/tpr.03.novembro.json",
+        "assets/content/tpr/curso_4_5/tpr.04.decembro.json",
+        "assets/content/tpr/curso_4_5/tpr.05.xaneiro.json",
+        "assets/content/tpr/curso_4_5/tpr.06.febreiro.json",
+        "assets/content/tpr/curso_4_5/tpr.07.marzo.json",
+        "assets/content/tpr/curso_4_5/tpr.08.abril.json",
+        "assets/content/tpr/curso_4_5/tpr.09.maio.json",
+        "assets/content/tpr/curso_4_5/tpr.10.xuno.json"
+      ]
+    },
+    {
+      "id": "curso_5_6",
+      "etiqueta": {
+        "gl": "5-6 anos",
+        "es": "5-6 años"
+      },
+      "meses": [
+        "assets/content/tpr/curso_5_6/tpr.01.setembro.json",
+        "assets/content/tpr/curso_5_6/tpr.02.outubro.json",
+        "assets/content/tpr/curso_5_6/tpr.03.novembro.json",
+        "assets/content/tpr/curso_5_6/tpr.04.decembro.json",
+        "assets/content/tpr/curso_5_6/tpr.05.xaneiro.json",
+        "assets/content/tpr/curso_5_6/tpr.06.febreiro.json",
+        "assets/content/tpr/curso_5_6/tpr.07.marzo.json",
+        "assets/content/tpr/curso_5_6/tpr.08.abril.json",
+        "assets/content/tpr/curso_5_6/tpr.09.maio.json",
+        "assets/content/tpr/curso_5_6/tpr.10.xuno.json"
+      ]
+    }
+  ],
+  "dias": [
+    {
+      "dia": 1,
+      "bloque": "A",
+      "dinamica": {
+        "gl": "Presentación motriz directa: a persoa docente di cada palabra e fai o xesto; o grupo mira e imita.",
+        "es": "Presentación motriz directa: la persona docente dice cada palabra y hace el gesto; el grupo mira e imita."
+      },
+      "dinamicaFogar": {
+        "gl": "Presenta as cinco palabras novas: dío e faino ti. A criatura mira, e imita se quere.",
+        "es": "Presenta las cinco palabras nuevas: dilo y hazlo tú. La criatura mira, e imita si quiere."
+      }
+    },
+    {
+      "dia": 2,
+      "bloque": "B",
+      "dinamica": {
+        "gl": "Contraste motriz: as cinco novas e un xogo rápido coas de onte.",
+        "es": "Contraste motriz: las cinco nuevas y un juego rápido con las de ayer."
+      },
+      "dinamicaFogar": {
+        "gl": "Cinco palabras novas e repaso das cinco de onte. Dobre asociación: o son da palabra e o xesto.",
+        "es": "Cinco palabras nuevas y repaso de las cinco de ayer. Doble asociación: el sonido de la palabra y el gesto."
+      }
+    },
+    {
+      "dia": 3,
+      "bloque": "C",
+      "dinamica": {
+        "gl": "Circuíto TPR: encadea as novas coas ordes de luns e martes.",
+        "es": "Circuito TPR: encadena las nuevas con las órdenes del lunes y el martes."
+      },
+      "dinamicaFogar": {
+        "gl": "Cinco palabras novas e repaso en cadea das de luns e martes.",
+        "es": "Cinco palabras nuevas y repaso en cadena de las del lunes y el martes."
+      }
+    },
+    {
+      "dia": 4,
+      "bloque": "D",
+      "dinamica": {
+        "gl": "Conto motor: unha historia curta que usa as vinte palabras da semana.",
+        "es": "Cuento motor: una historia corta que usa las veinte palabras de la semana."
+      },
+      "dinamicaFogar": {
+        "gl": "Carga completa da semana. A persoa adulta dirixe a acción sen pedir que a criatura fale.",
+        "es": "Carga completa de la semana. La persona adulta dirige la acción sin pedir que la criatura hable."
+      }
+    },
+    {
+      "dia": 5,
+      "bloque": "",
+      "dinamica": {
+        "gl": "Gran reto TPR semanal: xogos de inhibición («Freeze»), de discriminación espacial e de parellas coas vinte palabras.",
+        "es": "Gran reto TPR semanal: juegos de inhibición («Freeze»), de discriminación espacial y de parejas con las veinte palabras."
+      },
+      "dinamicaFogar": {
+        "gl": "Sen palabras novas. Xogo de conxelarse («Freeze») e reto corporal coas vinte palabras da semana.",
+        "es": "Sin palabras nuevas. Juego de congelarse («Freeze») y reto corporal con las veinte palabras de la semana."
+      }
+    }
+  ],
+  "categorias": [
+    {
+      "clave": "noun",
+      "nome": {
+        "gl": "Substantivos",
+        "es": "Sustantivos"
+      },
+      "descricion": {
+        "gl": "Etiquetas concretas: corpo, animais, obxectos",
+        "es": "Etiquetas concretas: cuerpo, animales, objetos"
+      }
+    },
+    {
+      "clave": "verb",
+      "nome": {
+        "gl": "Verbos de acción",
+        "es": "Verbos de acción"
+      },
+      "descricion": {
+        "gl": "Ordes motrices TPR (jump, freeze, walk, stop)",
+        "es": "Órdenes motrices TPR (jump, freeze, walk, stop)"
+      }
+    },
+    {
+      "clave": "adjective",
+      "nome": {
+        "gl": "Adxectivos e sensorial",
+        "es": "Adjetivos y sensorial"
+      },
+      "descricion": {
+        "gl": "Atributos e calidades perceptivas (big, soft, cold)",
+        "es": "Atributos y cualidades perceptivas (big, soft, cold)"
+      }
+    },
+    {
+      "clave": "phrase",
+      "nome": {
+        "gl": "Oracións e preguntas",
+        "es": "Oraciones y preguntas"
+      },
+      "descricion": {
+        "gl": "Sintaxe básica e interacción comunicativa",
+        "es": "Sintaxis básica e interacción comunicativa"
+      }
+    },
+    {
+      "clave": "complex",
+      "nome": {
+        "gl": "Complexas e conectores",
+        "es": "Complejas y conectores"
+      },
+      "descricion": {
+        "gl": "Fluidez natural, conectores e matices",
+        "es": "Fluidez natural, conectores y matices"
+      }
+    }
+  ],
+  "fontes": {
+    "gl": "A orde das categorías —primeiro nomes; despois accións e calidades; ao final frases e conectores— inspírase no vocabulario temperán descrito cos inventarios MacArthur-Bates (CDI) e as normas de Rescorla. As porcentaxes e o ritmo de cinco palabras ao día son a distribución de deseño deste programa, non normas deses inventarios.",
+    "es": "El orden de las categorías —primero nombres; después acciones y cualidades; al final frases y conectores— se inspira en el vocabulario temprano descrito con los inventarios MacArthur-Bates (CDI) y las normas de Rescorla. Los porcentajes y el ritmo de cinco palabras al día son la distribución de diseño de este programa, no normas de esos inventarios."
+  }
+}

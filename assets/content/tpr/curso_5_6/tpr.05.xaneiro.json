@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.5_6.xaneiro",
+  "curso": "curso_5_6",
+  "orden": 5,
+  "mesCalendario": 1,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "A Olivera",
+        "es": "La Olivera"
+      },
+      "palabras": [
+        {
+          "id": "5_6.xaneiro.s1.olive-tree",
+          "en": "Olive tree",
+          "gl": "Oliveira",
+          "es": "Olivo",
+          "tprAction": {
+            "gl": "Estirar os brazos coma pólas vellas",
+            "es": "Estirar los brazos como ramas viejas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s1.symbol",
+          "en": "Symbol",
+          "gl": "Símbolo",
+          "es": "Símbolo",
+          "tprAction": {
+            "gl": "Debuxar un círculo e sinalalo",
+            "es": "Dibujar un círculo y señalarlo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s1.history",
+          "en": "History",
+          "gl": "Historia",
+          "es": "Historia",
+          "tprAction": {
+            "gl": "Sinalar cara atrás",
+            "es": "Señalar hacia atrás"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s1.old-town",
+          "en": "Old town",
+          "gl": "Casco vello",
+          "es": "Casco viejo",
+          "tprAction": {
+            "gl": "Camiñar por rúas estreitas",
+            "es": "Caminar por calles estrechas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s1.stone-wall",
+          "en": "Stone wall",
+          "gl": "Muro de pedra",
+          "es": "Muro de piedra",
+          "tprAction": {
+            "gl": "Poñer as mans coma un muro",
+            "es": "Poner las manos como un muro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s1.stone-statue",
+          "en": "Stone statue",
+          "gl": "Estatua de pedra",
+          "es": "Estatua de piedra",
+          "tprAction": {
+            "gl": "Quedar quieto coma unha estatua",
+            "es": "Quedarse quieto como una estatua"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s1.museum",
+          "en": "Museum",
+          "gl": "Museo",
+          "es": "Museo",
+          "tprAction": {
+            "gl": "Camiñar amodo mirando",
+            "es": "Caminar despacio mirando"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s1.hold-up-one-finger-for-first",
+          "en": "Hold up one finger for first",
+          "gl": "Levantar un dedo para «primeiro»",
+          "es": "Levantar un dedo para «primero»",
+          "tprAction": {
+            "gl": "Levantar un dedo",
+            "es": "Levantar un dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s1.visit",
+          "en": "Visit",
+          "gl": "Visitar",
+          "es": "Visitar",
+          "tprAction": {
+            "gl": "Camiñar e mirar arredor",
+            "es": "Caminar y mirar alrededor"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s1.remember-the-past",
+          "en": "Remember the past",
+          "gl": "Lembrar o pasado",
+          "es": "Recordar el pasado",
+          "tprAction": {
+            "gl": "Sinalar atrás",
+            "es": "Señalar atrás"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s1.tell-in-order",
+          "en": "Tell in order",
+          "gl": "Contar en orde",
+          "es": "Contar en orden",
+          "tprAction": {
+            "gl": "Levantar un, dous, tres dedos",
+            "es": "Levantar uno, dos, tres dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s1.imagine-long-ago",
+          "en": "Imagine long ago",
+          "gl": "Imaxinar hai moito",
+          "es": "Imaginar hace mucho",
+          "tprAction": {
+            "gl": "Pechar os ollos e pensar",
+            "es": "Cerrar los ojos y pensar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s1.historic",
+          "en": "Historic",
+          "gl": "Histórico",
+          "es": "Histórico",
+          "tprAction": {
+            "gl": "Tocar unha pedra vella",
+            "es": "Tocar una piedra vieja"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s1.very-old",
+          "en": "Very old",
+          "gl": "Moi vello",
+          "es": "Muy viejo",
+          "tprAction": {
+            "gl": "Camiñar amodo e encorvado",
+            "es": "Caminar despacio y encorvado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s1.famous",
+          "en": "Famous",
+          "gl": "Famoso",
+          "es": "Famoso",
+          "tprAction": {
+            "gl": "Sinalar orgullosos",
+            "es": "Señalar orgullosos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s1.stony",
+          "en": "Stony",
+          "gl": "De pedra",
+          "es": "De piedra",
+          "tprAction": {
+            "gl": "Bater nunha pedra",
+            "es": "Golpear una piedra"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s1.long-long-ago",
+          "en": "Long, long ago",
+          "gl": "Hai moito, moito tempo",
+          "es": "Hace mucho, mucho tiempo",
+          "tprAction": {
+            "gl": "Sinalar moi atrás",
+            "es": "Señalar muy atrás"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xaneiro.s1.this-tree-is-older-than-our-grandparents",
+          "en": "This tree is older than our grandparents",
+          "gl": "Esta árbore é máis vella ca os nosos avós",
+          "es": "Este árbol es más viejo que nuestros abuelos",
+          "tprAction": {
+            "gl": "Sinalar e comparar",
+            "es": "Señalar y comparar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.xaneiro.s1.first-then-finally",
+          "en": "First, then, finally",
+          "gl": "Primeiro, despois, por último",
+          "es": "Primero, luego, por último",
+          "tprAction": {
+            "gl": "Levantar un, dous e tres dedos",
+            "es": "Levantar uno, dos y tres dedos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.xaneiro.s1.what-happened-next",
+          "en": "What happened next?",
+          "gl": "Que pasou despois?",
+          "es": "¿Qué pasó después?",
+          "tprAction": {
+            "gl": "Sinalar adiante",
+            "es": "Señalar adelante"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Vigo antes",
+        "es": "Vigo antes"
+      },
+      "palabras": [
+        {
+          "id": "5_6.xaneiro.s2.fishing-village",
+          "en": "Fishing village",
+          "gl": "Aldea mariñeira",
+          "es": "Aldea marinera",
+          "tprAction": {
+            "gl": "Tirar dunha rede",
+            "es": "Tirar de una red"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s2.fortress",
+          "en": "Fortress",
+          "gl": "Fortaleza",
+          "es": "Fortaleza",
+          "tprAction": {
+            "gl": "Poñer os brazos coma murallas",
+            "es": "Poner los brazos como murallas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s2.castle-wall",
+          "en": "Castle wall",
+          "gl": "Muralla",
+          "es": "Muralla",
+          "tprAction": {
+            "gl": "Camiñar rozando unha parede",
+            "es": "Caminar rozando una pared"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s2.sailing-ship",
+          "en": "Sailing ship",
+          "gl": "Galeón",
+          "es": "Galeón",
+          "tprAction": {
+            "gl": "Balancearse coma un barco grande",
+            "es": "Balancearse como un barco grande"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s2.canon",
+          "en": "Canon",
+          "gl": "Canón",
+          "es": "Cañón",
+          "tprAction": {
+            "gl": "Facer un tubo cos brazos",
+            "es": "Hacer un tubo con los brazos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s2.cobbles",
+          "en": "Cobbles",
+          "gl": "Pedras da rúa",
+          "es": "Adoquines",
+          "tprAction": {
+            "gl": "Pisar con coidado",
+            "es": "Pisar con cuidado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s2.lantern-light",
+          "en": "Lantern light",
+          "gl": "Luz de candil",
+          "es": "Luz de candil",
+          "tprAction": {
+            "gl": "Suxeitar unha luz pequena",
+            "es": "Sostener una luz pequeña"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s2.sail-across-the-ocean",
+          "en": "Sail across the ocean",
+          "gl": "Cruzar o océano",
+          "es": "Cruzar el océano",
+          "tprAction": {
+            "gl": "Remar e mirar lonxe",
+            "es": "Remar y mirar lejos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s2.defend",
+          "en": "Defend",
+          "gl": "Defender",
+          "es": "Defender",
+          "tprAction": {
+            "gl": "Poñer un escudo imaxinario",
+            "es": "Ponerse un escudo imaginario"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s2.grow-bigger",
+          "en": "Grow bigger",
+          "gl": "Facerse máis grande",
+          "es": "Hacerse más grande",
+          "tprAction": {
+            "gl": "Abrir os brazos amodo",
+            "es": "Abrir los brazos despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s2.fish-for-a-living",
+          "en": "Fish for a living",
+          "gl": "Vivir da pesca",
+          "es": "Vivir de la pesca",
+          "tprAction": {
+            "gl": "Lanzar a rede",
+            "es": "Lanzar la red"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s2.travel-by-boat",
+          "en": "Travel by boat",
+          "gl": "Viaxar en barco",
+          "es": "Viajar en barco",
+          "tprAction": {
+            "gl": "Balancearse sentados",
+            "es": "Balancearse sentados"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s2.ancient-town",
+          "en": "Ancient town",
+          "gl": "Vila antiga",
+          "es": "Villa antigua",
+          "tprAction": {
+            "gl": "Camiñar amodo",
+            "es": "Caminar despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s2.tiny-village",
+          "en": "Tiny village",
+          "gl": "Aldea pequena",
+          "es": "Aldea pequeña",
+          "tprAction": {
+            "gl": "Xuntar as mans",
+            "es": "Juntar las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s2.busy-city",
+          "en": "Busy city",
+          "gl": "Cidade con vida",
+          "es": "Ciudad con vida",
+          "tprAction": {
+            "gl": "Moverse rápido",
+            "es": "Moverse rápido"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s2.modern",
+          "en": "Modern",
+          "gl": "Moderno",
+          "es": "Moderno",
+          "tprAction": {
+            "gl": "Estirarse alto coma un edificio",
+            "es": "Estirarse alto como un edificio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s2.was-vigo-always-big",
+          "en": "Was Vigo always big?",
+          "gl": "Vigo sempre foi grande?",
+          "es": "¿Vigo siempre fue grande?",
+          "tprAction": {
+            "gl": "Abrir e pechar as mans",
+            "es": "Abrir y cerrar las manos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xaneiro.s2.vigo-was-small-but-now-it-is-big",
+          "en": "Vigo was small, but now it is big",
+          "gl": "Vigo era pequeno, pero agora é grande",
+          "es": "Vigo era pequeño, pero ahora es grande",
+          "tprAction": {
+            "gl": "Xuntar as mans e abrilas",
+            "es": "Juntar las manos y abrirlas"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.xaneiro.s2.before-people-travelled-by-boat",
+          "en": "Before, people travelled by boat",
+          "gl": "Antes, a xente viaxaba en barco",
+          "es": "Antes, la gente viajaba en barco",
+          "tprAction": {
+            "gl": "Remar sentados",
+            "es": "Remar sentados"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.xaneiro.s2.imagine-the-old-ships",
+          "en": "Imagine the old ships",
+          "gl": "Imaxina os barcos antigos",
+          "es": "Imagina los barcos antiguos",
+          "tprAction": {
+            "gl": "Pechar os ollos",
+            "es": "Cerrar los ojos"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "A nosa historia",
+        "es": "Nuestra historia"
+      },
+      "palabras": [
+        {
+          "id": "5_6.xaneiro.s3.baby-photo",
+          "en": "Baby photo",
+          "gl": "Foto de bebé",
+          "es": "Foto de bebé",
+          "tprAction": {
+            "gl": "Acunar un bebé imaxinario",
+            "es": "Acunar un bebé imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s3.family-tree",
+          "en": "Family tree",
+          "gl": "Árbore xenealóxica",
+          "es": "Árbol genealógico",
+          "tprAction": {
+            "gl": "Debuxar pólas no aire",
+            "es": "Dibujar ramas en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s3.great-grandparents",
+          "en": "Great-grandparents",
+          "gl": "Bisavós",
+          "es": "Bisabuelos",
+          "tprAction": {
+            "gl": "Sinalar moi atrás",
+            "es": "Señalar muy atrás"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s3.birthday",
+          "en": "Birthday",
+          "gl": "Aniversario",
+          "es": "Cumpleaños",
+          "tprAction": {
+            "gl": "Soprar velas imaxinarias",
+            "es": "Soplar velas imaginarias"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s3.age",
+          "en": "Age",
+          "gl": "Idade",
+          "es": "Edad",
+          "tprAction": {
+            "gl": "Amosar os anos cos dedos",
+            "es": "Enseñar los años con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s3.childhood",
+          "en": "Childhood",
+          "gl": "Infancia",
+          "es": "Infancia",
+          "tprAction": {
+            "gl": "Encollerse pequeno",
+            "es": "Encogerse pequeño"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s3.life-story",
+          "en": "Life story",
+          "gl": "Historia de vida",
+          "es": "Historia de vida",
+          "tprAction": {
+            "gl": "Mover a man de atrás a adiante",
+            "es": "Mover la mano de atrás a adelante"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s3.grow-up",
+          "en": "Grow up",
+          "gl": "Medrar",
+          "es": "Crecer",
+          "tprAction": {
+            "gl": "Erguerse amodo",
+            "es": "Levantarse despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s3.learn-to-walk",
+          "en": "Learn to walk",
+          "gl": "Aprender a camiñar",
+          "es": "Aprender a caminar",
+          "tprAction": {
+            "gl": "Dar pasiños inseguros",
+            "es": "Dar pasitos inseguros"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s3.look-at-old-photos",
+          "en": "Look at old photos",
+          "gl": "Mirar fotos vellas",
+          "es": "Mirar fotos viejas",
+          "tprAction": {
+            "gl": "Pasar follas dun álbum",
+            "es": "Pasar hojas de un álbum"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s3.change-over-time",
+          "en": "Change over time",
+          "gl": "Cambiar co tempo",
+          "es": "Cambiar con el tiempo",
+          "tprAction": {
+            "gl": "Pasar dun xesto pequeno a un grande",
+            "es": "Pasar de un gesto pequeño a uno grande"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s3.share-memories",
+          "en": "Share memories",
+          "gl": "Compartir recordos",
+          "es": "Compartir recuerdos",
+          "tprAction": {
+            "gl": "Falar mirando a un amigo",
+            "es": "Hablar mirando a un amigo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s3.younger",
+          "en": "Younger",
+          "gl": "Máis novo",
+          "es": "Más joven",
+          "tprAction": {
+            "gl": "Encollerse",
+            "es": "Encogerse"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s3.oldest",
+          "en": "Oldest",
+          "gl": "O máis vello",
+          "es": "El más viejo",
+          "tprAction": {
+            "gl": "Sinalar arriba no álbum",
+            "es": "Señalar arriba en el álbum"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s3.first-ever",
+          "en": "First-ever",
+          "gl": "O primeiro de todos",
+          "es": "El primero de todos",
+          "tprAction": {
+            "gl": "Levantar un dedo",
+            "es": "Levantar un dedo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s3.newborn-baby",
+          "en": "Newborn baby",
+          "gl": "Bebé recén nado",
+          "es": "Bebé recién nacido",
+          "tprAction": {
+            "gl": "Acunar nos brazos",
+            "es": "Acunar en los brazos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s3.how-old-are-you",
+          "en": "How old are you?",
+          "gl": "Cantos anos tes?",
+          "es": "¿Cuántos años tienes?",
+          "tprAction": {
+            "gl": "Amosar os dedos",
+            "es": "Enseñar los dedos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xaneiro.s3.when-i-was-a-baby-i-couldn-t-walk",
+          "en": "When I was a baby, I couldn't walk",
+          "gl": "Cando era bebé, non sabía camiñar",
+          "es": "Cuando era bebé, no sabía caminar",
+          "tprAction": {
+            "gl": "Gatear e logo camiñar",
+            "es": "Gatear y luego caminar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "5_6.xaneiro.s3.i-m-five-and-a-half",
+          "en": "I'm five and a half!",
+          "gl": "Teño cinco anos e medio!",
+          "es": "¡Tengo cinco años y medio!",
+          "tprAction": {
+            "gl": "Amosar cinco dedos e medio",
+            "es": "Enseñar cinco dedos y medio"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xaneiro.s3.my-grandma-is-older-than-my-mum",
+          "en": "My grandma is older than my mum",
+          "gl": "A miña avoa é maior ca a miña nai",
+          "es": "Mi abuela es mayor que mi madre",
+          "tprAction": {
+            "gl": "Sinalar alto e menos alto",
+            "es": "Señalar alto y menos alto"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Contamos historias",
+        "es": "Contamos historias"
+      },
+      "palabras": [
+        {
+          "id": "5_6.xaneiro.s4.beginning",
+          "en": "Beginning",
+          "gl": "Comezo",
+          "es": "Comienzo",
+          "tprAction": {
+            "gl": "Levantar un dedo",
+            "es": "Levantar un dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s4.middle",
+          "en": "Middle",
+          "gl": "Medio",
+          "es": "Mitad",
+          "tprAction": {
+            "gl": "Sinalar o centro",
+            "es": "Señalar el centro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s4.ending",
+          "en": "Ending",
+          "gl": "Final",
+          "es": "Final",
+          "tprAction": {
+            "gl": "Pechar un libro",
+            "es": "Cerrar un libro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s4.hero",
+          "en": "Hero",
+          "gl": "Protagonista",
+          "es": "Protagonista",
+          "tprAction": {
+            "gl": "Poñer as mans na cadeira",
+            "es": "Poner las manos en la cadera"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s4.plot-twist",
+          "en": "Plot twist",
+          "gl": "Sorpresa na historia",
+          "es": "Giro en la historia",
+          "tprAction": {
+            "gl": "Xirar e abrir a boca",
+            "es": "Girar y abrir la boca"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s4.setting",
+          "en": "Setting",
+          "gl": "Lugar da historia",
+          "es": "Lugar de la historia",
+          "tprAction": {
+            "gl": "Abrir os brazos coma un escenario",
+            "es": "Abrir los brazos como un escenario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s4.storyboard",
+          "en": "Storyboard",
+          "gl": "Guión gráfico",
+          "es": "Guion gráfico",
+          "tprAction": {
+            "gl": "Debuxar tres cadros no aire",
+            "es": "Dibujar tres cuadros en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "5_6.xaneiro.s4.retell",
+          "en": "Retell",
+          "gl": "Volver contar",
+          "es": "Volver a contar",
+          "tprAction": {
+            "gl": "Contar cos dedos",
+            "es": "Contar con los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s4.sequence",
+          "en": "Sequence",
+          "gl": "Ordenar",
+          "es": "Ordenar",
+          "tprAction": {
+            "gl": "Poñer tarxetas en fila",
+            "es": "Poner tarjetas en fila"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s4.invent",
+          "en": "Invent",
+          "gl": "Inventar",
+          "es": "Inventar",
+          "tprAction": {
+            "gl": "Tocar a cabeza e abrir a man",
+            "es": "Tocar la cabeza y abrir la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s4.illustrate",
+          "en": "Illustrate",
+          "gl": "Ilustrar",
+          "es": "Ilustrar",
+          "tprAction": {
+            "gl": "Debuxar no aire",
+            "es": "Dibujar en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s4.act-it-out",
+          "en": "Act it out",
+          "gl": "Representalo",
+          "es": "Representarlo",
+          "tprAction": {
+            "gl": "Facer a historia co corpo",
+            "es": "Hacer la historia con el cuerpo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "5_6.xaneiro.s4.exciting",
+          "en": "Exciting",
+          "gl": "Emocionante",
+          "es": "Emocionante",
+          "tprAction": {
+            "gl": "Abrir moito os ollos",
+            "es": "Abrir mucho los ojos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s4.surprising-end",
+          "en": "Surprising end",
+          "gl": "Final sorprendente",
+          "es": "Final sorprendente",
+          "tprAction": {
+            "gl": "Abrir a boca",
+            "es": "Abrir la boca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s4.happy-ending",
+          "en": "Happy ending",
+          "gl": "Final feliz",
+          "es": "Final feliz",
+          "tprAction": {
+            "gl": "Sorrir e abrazar",
+            "es": "Sonreír y abrazar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s4.imaginary",
+          "en": "Imaginary",
+          "gl": "Imaxinario",
+          "es": "Imaginario",
+          "tprAction": {
+            "gl": "Mover os dedos máxicos",
+            "es": "Mover los dedos mágicos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "5_6.xaneiro.s4.how-does-the-story-begin",
+          "en": "How does the story begin?",
+          "gl": "Como comeza a historia?",
+          "es": "¿Cómo empieza la historia?",
+          "tprAction": {
+            "gl": "Levantar un dedo",
+            "es": "Levantar un dedo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xaneiro.s4.and-then-what-happened",
+          "en": "And then what happened?",
+          "gl": "E que pasou despois?",
+          "es": "¿Y qué pasó después?",
+          "tprAction": {
+            "gl": "Sinalar adiante",
+            "es": "Señalar adelante"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xaneiro.s4.they-lived-happily-ever-after",
+          "en": "They lived happily ever after",
+          "gl": "Viviron felices para sempre",
+          "es": "Vivieron felices para siempre",
+          "tprAction": {
+            "gl": "Abrazarse",
+            "es": "Abrazarse"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "5_6.xaneiro.s4.first-the-hero-was-lost-then-she-found-the-way-home",
+          "en": "First the hero was lost, then she found the way home",
+          "gl": "Primeiro a heroína perdeuse, despois atopou o camiño a casa",
+          "es": "Primero la heroína se perdió, luego encontró el camino a casa",
+          "tprAction": {
+            "gl": "Mirar arredor e logo camiñar",
+            "es": "Mirar alrededor y luego caminar"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

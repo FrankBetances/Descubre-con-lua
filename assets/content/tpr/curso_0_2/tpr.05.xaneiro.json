@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.0_2.xaneiro",
+  "curso": "curso_0_2",
+  "orden": 5,
+  "mesCalendario": 1,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Guau e miau",
+        "es": "Guau y miau"
+      },
+      "palabras": [
+        {
+          "id": "0_2.xaneiro.s1.kitten",
+          "en": "Kitten",
+          "gl": "Gatiño",
+          "es": "Gatito",
+          "tprAction": {
+            "gl": "Acariñar un gatiño de peluche",
+            "es": "Acariciar un gatito de peluche"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s1.puppy",
+          "en": "Puppy",
+          "gl": "Canciño",
+          "es": "Cachorro",
+          "tprAction": {
+            "gl": "Acariñar un canciño de peluche",
+            "es": "Acariciar un cachorro de peluche"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s1.paw",
+          "en": "Paw",
+          "gl": "Pata",
+          "es": "Pata",
+          "tprAction": {
+            "gl": "Amosar a man coma unha pata",
+            "es": "Enseñar la mano como una pata"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s1.whiskers",
+          "en": "Whiskers",
+          "gl": "Bigotes",
+          "es": "Bigotes",
+          "tprAction": {
+            "gl": "Debuxar bigotes na cara co dedo",
+            "es": "Dibujar bigotes en la cara con el dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s1.collar",
+          "en": "Collar",
+          "gl": "Colar",
+          "es": "Collar",
+          "tprAction": {
+            "gl": "Tocar o colar do peluche",
+            "es": "Tocar el collar del peluche"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s1.dog-bowl",
+          "en": "Dog bowl",
+          "gl": "Cunca do can",
+          "es": "Cuenco del perro",
+          "tprAction": {
+            "gl": "Amosar a cunca baleira",
+            "es": "Enseñar el cuenco vacío"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s1.kennel",
+          "en": "Kennel",
+          "gl": "Caseta",
+          "es": "Caseta",
+          "tprAction": {
+            "gl": "Facer un tellado coas mans",
+            "es": "Hacer un tejado con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s1.stroke-gently",
+          "en": "Stroke gently",
+          "gl": "Acariñar suave",
+          "es": "Acariciar suave",
+          "tprAction": {
+            "gl": "Acariñar o peluche dunha soa dirección",
+            "es": "Acariciar el peluche en una sola dirección"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s1.slurp",
+          "en": "Slurp",
+          "gl": "Sorber",
+          "es": "Sorber",
+          "tprAction": {
+            "gl": "Facer que o peluche bebe da cunca",
+            "es": "Hacer que el peluche bebe del cuenco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s1.curl-up",
+          "en": "Curl up",
+          "gl": "Enroscarse",
+          "es": "Hacerse un ovillo",
+          "tprAction": {
+            "gl": "Facerse un ovo coma un gato",
+            "es": "Hacerse un ovillo como un gato"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s1.mew",
+          "en": "Mew",
+          "gl": "Miañar",
+          "es": "Maullar",
+          "tprAction": {
+            "gl": "Facer «miau» baixiño",
+            "es": "Hacer «miau» bajito"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s1.woof",
+          "en": "Woof",
+          "gl": "Ladrar",
+          "es": "Ladrar",
+          "tprAction": {
+            "gl": "Facer «guau» con suavidade",
+            "es": "Hacer «guau» con suavidad"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s1.soft-furred",
+          "en": "Soft-furred",
+          "gl": "De pelo suave",
+          "es": "De pelo suave",
+          "tprAction": {
+            "gl": "Pasar a man polo pelo do peluche",
+            "es": "Pasar la mano por el pelo del peluche"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s1.waggy",
+          "en": "Waggy",
+          "gl": "Que move o rabo",
+          "es": "Que mueve el rabo",
+          "tprAction": {
+            "gl": "Menear a man coma un rabo",
+            "es": "Mover la mano como un rabo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s1.gentle-hands",
+          "en": "Gentle hands",
+          "gl": "Mans suaves",
+          "es": "Manos suaves",
+          "tprAction": {
+            "gl": "Acariñar moi amodo",
+            "es": "Acariciar muy despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s1.purry",
+          "en": "Purry",
+          "gl": "Ronroneante",
+          "es": "Ronroneador",
+          "tprAction": {
+            "gl": "Facer «rrrr» na barriga",
+            "es": "Hacer «rrrr» en la barriga"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s1.nice-kitty",
+          "en": "Nice kitty",
+          "gl": "Que gatiño tan bo",
+          "es": "Qué gatito tan bueno",
+          "tprAction": {
+            "gl": "Acariñar o gatiño e sorrir",
+            "es": "Acariciar al gatito y sonreír"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xaneiro.s1.here-doggy",
+          "en": "Here, doggy!",
+          "gl": "Ven, canciño!",
+          "es": "¡Ven, perrito!",
+          "tprAction": {
+            "gl": "Chamar co dedo e bater nos xeonllos",
+            "es": "Llamar con el dedo y golpear las rodillas"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xaneiro.s1.the-cat-says-meow",
+          "en": "The cat says meow",
+          "gl": "O gato di miau",
+          "es": "El gato dice miau",
+          "tprAction": {
+            "gl": "Sinalar o gato e facer «miau»",
+            "es": "Señalar al gato y hacer «miau»"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.xaneiro.s1.soft-like-a-cat",
+          "en": "Soft like a cat",
+          "gl": "Suave coma un gato",
+          "es": "Suave como un gato",
+          "tprAction": {
+            "gl": "Acariñar a propia meixela",
+            "es": "Acariciar la propia mejilla"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Na granxa",
+        "es": "En la granja"
+      },
+      "palabras": [
+        {
+          "id": "0_2.xaneiro.s2.lamb",
+          "en": "Lamb",
+          "gl": "Año",
+          "es": "Cordero",
+          "tprAction": {
+            "gl": "Facer «beee» baixiño",
+            "es": "Hacer «beee» bajito"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s2.chick",
+          "en": "Chick",
+          "gl": "Pitiño",
+          "es": "Pollito",
+          "tprAction": {
+            "gl": "Facer «pío pío» cos dedos",
+            "es": "Hacer «pío pío» con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s2.goat",
+          "en": "Goat",
+          "gl": "Cabra",
+          "es": "Cabra",
+          "tprAction": {
+            "gl": "Poñer os dedos coma cornos",
+            "es": "Poner los dedos como cuernos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s2.donkey",
+          "en": "Donkey",
+          "gl": "Burro",
+          "es": "Burro",
+          "tprAction": {
+            "gl": "Mover as mans coma orellas longas",
+            "es": "Mover las manos como orejas largas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s2.rooster",
+          "en": "Rooster",
+          "gl": "Galo",
+          "es": "Gallo",
+          "tprAction": {
+            "gl": "Estirar o pescozo e cantar",
+            "es": "Estirar el cuello y cantar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s2.barn",
+          "en": "Barn",
+          "gl": "Corte",
+          "es": "Establo",
+          "tprAction": {
+            "gl": "Facer un tellado coas mans",
+            "es": "Hacer un tejado con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s2.tractor",
+          "en": "Tractor",
+          "gl": "Tractor",
+          "es": "Tractor",
+          "tprAction": {
+            "gl": "Facer «brum brum» empurrando",
+            "es": "Hacer «brum brum» empujando"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s2.baa",
+          "en": "Baa",
+          "gl": "Balar",
+          "es": "Balar",
+          "tprAction": {
+            "gl": "Facer «beee» coma un año",
+            "es": "Hacer «beee» como un cordero"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s2.chomp",
+          "en": "Chomp",
+          "gl": "Mastigar",
+          "es": "Masticar",
+          "tprAction": {
+            "gl": "Mover a boca coma unha vaca comendo herba",
+            "es": "Mover la boca como una vaca comiendo hierba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s2.cluck",
+          "en": "Cluck",
+          "gl": "Cacarexar",
+          "es": "Cacarear",
+          "tprAction": {
+            "gl": "Facer «coc coc» movendo os cóbados",
+            "es": "Hacer «coc coc» moviendo los codos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s2.neigh",
+          "en": "Neigh",
+          "gl": "Rinchar",
+          "es": "Relinchar",
+          "tprAction": {
+            "gl": "Facer «hiii» e galopar sentados",
+            "es": "Hacer «hiii» y galopar sentados"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s2.trot",
+          "en": "Trot",
+          "gl": "Trotar",
+          "es": "Trotar",
+          "tprAction": {
+            "gl": "Brincar o bebé no xeonllo coma un cabalo",
+            "es": "Hacer trotar al bebé en la rodilla como un caballo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s2.woolly-lamb",
+          "en": "Woolly lamb",
+          "gl": "Año lanudo",
+          "es": "Cordero lanudo",
+          "tprAction": {
+            "gl": "Acariñar a la dun año de peluche",
+            "es": "Acariciar la lana de un cordero de peluche"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s2.fluffy-chick",
+          "en": "Fluffy chick",
+          "gl": "Pitiño esponxoso",
+          "es": "Pollito esponjoso",
+          "tprAction": {
+            "gl": "Acariñar unha pluma amarela",
+            "es": "Acariciar una pluma amarilla"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s2.noisy-farm",
+          "en": "Noisy farm",
+          "gl": "Granxa ruidosa",
+          "es": "Granja ruidosa",
+          "tprAction": {
+            "gl": "Facer moitos sons de animais",
+            "es": "Hacer muchos sonidos de animales"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s2.muddy-pig",
+          "en": "Muddy pig",
+          "gl": "Porco lamacento",
+          "es": "Cerdo embarrado",
+          "tprAction": {
+            "gl": "Palmear as mans coma no barro",
+            "es": "Palmear las manos como en el barro"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s2.old-macdonald-had-a-farm",
+          "en": "Old MacDonald had a farm",
+          "gl": "O vello MacDonald tiña unha granxa",
+          "es": "El viejo MacDonald tenía una granja",
+          "tprAction": {
+            "gl": "Cantar e facer os animais",
+            "es": "Cantar y hacer los animales"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xaneiro.s2.what-does-the-cow-say",
+          "en": "What does the cow say?",
+          "gl": "Que di a vaca?",
+          "es": "¿Qué dice la vaca?",
+          "tprAction": {
+            "gl": "Amosar a vaca e agardar",
+            "es": "Enseñar la vaca y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xaneiro.s2.here-a-moo-there-a-moo",
+          "en": "Here a moo, there a moo",
+          "gl": "Aquí un mu, alí un mu",
+          "es": "Aquí un mu, allí un mu",
+          "tprAction": {
+            "gl": "Sinalar a un lado e ao outro",
+            "es": "Señalar a un lado y al otro"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.xaneiro.s2.on-the-farm",
+          "en": "On the farm",
+          "gl": "Na granxa",
+          "es": "En la granja",
+          "tprAction": {
+            "gl": "Abrir os brazos coma a granxa",
+            "es": "Abrir los brazos como la granja"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Paxaros e bechos",
+        "es": "Pájaros y bichitos"
+      },
+      "palabras": [
+        {
+          "id": "0_2.xaneiro.s3.robin",
+          "en": "Robin",
+          "gl": "Paporroibo",
+          "es": "Petirrojo",
+          "tprAction": {
+            "gl": "Sinalar o peito vermello",
+            "es": "Señalar el pecho rojo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s3.pigeon",
+          "en": "Pigeon",
+          "gl": "Pomba",
+          "es": "Paloma",
+          "tprAction": {
+            "gl": "Arrular e mover a cabeza",
+            "es": "Arrullar y mover la cabeza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s3.sparrow",
+          "en": "Sparrow",
+          "gl": "Pardal",
+          "es": "Gorrión",
+          "tprAction": {
+            "gl": "Saltar cos dedos coma un pardal",
+            "es": "Saltar con los dedos como un gorrión"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s3.beak",
+          "en": "Beak",
+          "gl": "Bico",
+          "es": "Pico",
+          "tprAction": {
+            "gl": "Xuntar os dedos coma un bico",
+            "es": "Juntar los dedos como un pico"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s3.birdhouse",
+          "en": "Birdhouse",
+          "gl": "Casiña de paxaros",
+          "es": "Casita de pájaros",
+          "tprAction": {
+            "gl": "Facer unha casiña coas mans",
+            "es": "Hacer una casita con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s3.beetle",
+          "en": "Beetle",
+          "gl": "Escaravello",
+          "es": "Escarabajo",
+          "tprAction": {
+            "gl": "Camiñar cos dedos pola perna",
+            "es": "Caminar con los dedos por la pierna"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s3.caterpillar",
+          "en": "Caterpillar",
+          "gl": "Eiruga",
+          "es": "Oruga",
+          "tprAction": {
+            "gl": "Arrastrar o dedo amodo polo brazo",
+            "es": "Arrastrar el dedo despacio por el brazo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s3.tweet",
+          "en": "Tweet",
+          "gl": "Chiar",
+          "es": "Piar",
+          "tprAction": {
+            "gl": "Facer «pío pío» baixiño",
+            "es": "Hacer «pío pío» bajito"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s3.flutter",
+          "en": "Flutter",
+          "gl": "Revoar",
+          "es": "Revolotear",
+          "tprAction": {
+            "gl": "Mover os dedos coma ás",
+            "es": "Mover los dedos como alas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s3.nibble",
+          "en": "Nibble",
+          "gl": "Rillar",
+          "es": "Mordisquear",
+          "tprAction": {
+            "gl": "Facer que un peluche rilla a man",
+            "es": "Hacer que un peluche mordisquee la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s3.creep-up",
+          "en": "Creep up",
+          "gl": "Subir a modiño",
+          "es": "Subir despacito",
+          "tprAction": {
+            "gl": "Subir cos dedos polo brazo",
+            "es": "Subir con los dedos por el brazo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s3.hop-along",
+          "en": "Hop along",
+          "gl": "Ir a saltiños",
+          "es": "Ir a saltitos",
+          "tprAction": {
+            "gl": "Dar saltiños cos dedos",
+            "es": "Dar saltitos con los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s3.feathery",
+          "en": "Feathery",
+          "gl": "De plumas",
+          "es": "Con plumas",
+          "tprAction": {
+            "gl": "Pasar unha pluma pola man",
+            "es": "Pasar una pluma por la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s3.chirpy",
+          "en": "Chirpy",
+          "gl": "Cantareiro",
+          "es": "Cantarín",
+          "tprAction": {
+            "gl": "Asubiar e sorrir",
+            "es": "Silbar y sonreír"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s3.teeny",
+          "en": "Teeny",
+          "gl": "Pequerrecho",
+          "es": "Pequeñito",
+          "tprAction": {
+            "gl": "Amosar un espazo mínimo entre os dedos",
+            "es": "Enseñar un espacio mínimo entre los dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s3.speckled",
+          "en": "Speckled",
+          "gl": "Pintado",
+          "es": "Moteado",
+          "tprAction": {
+            "gl": "Tocar os puntos dun ovo de xoguete",
+            "es": "Tocar los puntos de un huevo de juguete"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s3.tweet-tweet",
+          "en": "Tweet, tweet!",
+          "gl": "Pío, pío!",
+          "es": "¡Pío, pío!",
+          "tprAction": {
+            "gl": "Abrir e pechar os dedos coma un bico",
+            "es": "Abrir y cerrar los dedos como un pico"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xaneiro.s3.where-s-the-birdie",
+          "en": "Where's the birdie?",
+          "gl": "Onde está o paxariño?",
+          "es": "¿Dónde está el pajarito?",
+          "tprAction": {
+            "gl": "Buscar o paxaro coa man na testa",
+            "es": "Buscar el pájaro con la mano en la frente"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xaneiro.s3.up-the-arm",
+          "en": "Up the arm",
+          "gl": "Polo brazo arriba",
+          "es": "Por el brazo arriba",
+          "tprAction": {
+            "gl": "Subir cos dedos ata o ombro",
+            "es": "Subir con los dedos hasta el hombro"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.xaneiro.s3.in-the-nest",
+          "en": "In the nest",
+          "gl": "No niño",
+          "es": "En el nido",
+          "tprAction": {
+            "gl": "Facer un niño coas mans",
+            "es": "Hacer un nido con las manos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Sons tranquilos",
+        "es": "Sonidos tranquilos"
+      },
+      "palabras": [
+        {
+          "id": "0_2.xaneiro.s4.lullaby",
+          "en": "Lullaby",
+          "gl": "Canción de berce",
+          "es": "Nana",
+          "tprAction": {
+            "gl": "Cantar unha nana baixiño",
+            "es": "Cantar una nana bajito"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s4.hush",
+          "en": "Hush",
+          "gl": "Silencio",
+          "es": "Silencio",
+          "tprAction": {
+            "gl": "Poñer o dedo nos beizos",
+            "es": "Poner el dedo en los labios"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s4.heartbeat",
+          "en": "Heartbeat",
+          "gl": "Latexo",
+          "es": "Latido",
+          "tprAction": {
+            "gl": "Pousar a orella do bebé no peito",
+            "es": "Posar la oreja del bebé en el pecho"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s4.rain-stick",
+          "en": "Rain stick",
+          "gl": "Pau de choiva",
+          "es": "Palo de lluvia",
+          "tprAction": {
+            "gl": "Virar o pau de choiva amodo",
+            "es": "Girar el palo de lluvia despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s4.music-box",
+          "en": "Music box",
+          "gl": "Caixa de música",
+          "es": "Caja de música",
+          "tprAction": {
+            "gl": "Darlle corda á caixa de música",
+            "es": "Dar cuerda a la caja de música"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s4.wind-chime",
+          "en": "Wind chime",
+          "gl": "Móbil de vento",
+          "es": "Campanita de viento",
+          "tprAction": {
+            "gl": "Mover as campaíñas amodo",
+            "es": "Mover las campanitas despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s4.owl-hoot",
+          "en": "Owl hoot",
+          "gl": "Ouveo do moucho",
+          "es": "Ululato del búho",
+          "tprAction": {
+            "gl": "Facer «uuu» baixiño",
+            "es": "Hacer «uuu» bajito"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.xaneiro.s4.shush",
+          "en": "Shush",
+          "gl": "Calar",
+          "es": "Chistar",
+          "tprAction": {
+            "gl": "Facer «shh» moi suave",
+            "es": "Hacer «shh» muy suave"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s4.hum-a-tune",
+          "en": "Hum a tune",
+          "gl": "Tararear",
+          "es": "Tararear",
+          "tprAction": {
+            "gl": "Tararear cos beizos pechados",
+            "es": "Tararear con los labios cerrados"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s4.listen-close",
+          "en": "Listen close",
+          "gl": "Escoitar de preto",
+          "es": "Escuchar de cerca",
+          "tprAction": {
+            "gl": "Levar a man á orella",
+            "es": "Llevar la mano a la oreja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s4.breathe-slowly",
+          "en": "Breathe slowly",
+          "gl": "Respirar amodo",
+          "es": "Respirar despacio",
+          "tprAction": {
+            "gl": "Inchar a barriga e soltala amodo",
+            "es": "Inflar la barriga y soltarla despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s4.drift-off",
+          "en": "Drift off",
+          "gl": "Quedar durmido",
+          "es": "Quedarse dormido",
+          "tprAction": {
+            "gl": "Pechar os ollos e inclinar a cabeza",
+            "es": "Cerrar los ojos e inclinar la cabeza"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.xaneiro.s4.hushed",
+          "en": "Hushed",
+          "gl": "Silencioso",
+          "es": "Silencioso",
+          "tprAction": {
+            "gl": "Falar moi baixiño",
+            "es": "Hablar muy bajito"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s4.soothing",
+          "en": "Soothing",
+          "gl": "Calmante",
+          "es": "Relajante",
+          "tprAction": {
+            "gl": "Acariñar as costas en círculos",
+            "es": "Acariciar la espalda en círculos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s4.faint",
+          "en": "Faint",
+          "gl": "Débil",
+          "es": "Suave",
+          "tprAction": {
+            "gl": "Tocar o tambor moi amodo",
+            "es": "Tocar el tambor muy despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s4.dreamy",
+          "en": "Dreamy",
+          "gl": "Soñador",
+          "es": "Soñador",
+          "tprAction": {
+            "gl": "Mirar ao teito sorrindo",
+            "es": "Mirar al techo sonriendo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.xaneiro.s4.listen-what-s-that",
+          "en": "Listen, what's that?",
+          "gl": "Escoita, que é iso?",
+          "es": "Escucha, ¿qué es eso?",
+          "tprAction": {
+            "gl": "Parar e levar a man á orella",
+            "es": "Parar y llevar la mano a la oreja"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xaneiro.s4.hush-little-baby",
+          "en": "Hush, little baby",
+          "gl": "Shh, bebé",
+          "es": "Shh, bebé",
+          "tprAction": {
+            "gl": "Randear e cantar baixiño",
+            "es": "Mecer y cantar bajito"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.xaneiro.s4.soft-and-slow",
+          "en": "Soft and slow",
+          "gl": "Suave e amodo",
+          "es": "Suave y despacio",
+          "tprAction": {
+            "gl": "Mover as mans moi amodo",
+            "es": "Mover las manos muy despacio"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.xaneiro.s4.sound-asleep",
+          "en": "Sound asleep",
+          "gl": "Durmido profundo",
+          "es": "Profundamente dormido",
+          "tprAction": {
+            "gl": "Pousar a cabeza nas mans xuntas",
+            "es": "Apoyar la cabeza en las manos juntas"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

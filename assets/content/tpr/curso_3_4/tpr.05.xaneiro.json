@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.3_4.xaneiro",
+  "curso": "curso_3_4",
+  "orden": 5,
+  "mesCalendario": 1,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Vístome",
+        "es": "Me visto"
+      },
+      "palabras": [
+        {
+          "id": "coat",
+          "en": "Coat",
+          "gl": "Abrigo",
+          "es": "Abrigo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Meter os brazos nun abrigo imaxinario",
+            "es": "Meter los brazos en un abrigo imaginario"
+          }
+        },
+        {
+          "id": "hat",
+          "en": "Hat",
+          "gl": "Gorro",
+          "es": "Gorro",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Poñer un gorro imaxinario ata as orellas",
+            "es": "Ponerse un gorro imaginario hasta las orejas"
+          }
+        },
+        {
+          "id": "boots",
+          "en": "Boots",
+          "gl": "Botas",
+          "es": "Botas",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Meter os pés en botas imaxinarias e pisar forte",
+            "es": "Meter los pies en botas imaginarias y pisar fuerte"
+          }
+        },
+        {
+          "id": "scarf",
+          "en": "Scarf",
+          "gl": "Bufanda",
+          "es": "Bufanda",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Enrolar unha bufanda imaxinaria no pescozo",
+            "es": "Enrollarse una bufanda imaginaria en el cuello"
+          }
+        },
+        {
+          "id": "gloves",
+          "en": "Gloves",
+          "gl": "Luvas",
+          "es": "Guantes",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Meter os dedos un a un nunhas luvas imaxinarias",
+            "es": "Meter los dedos uno a uno en unos guantes imaginarios"
+          }
+        },
+        {
+          "id": "socks",
+          "en": "Socks",
+          "gl": "Calcetíns",
+          "es": "Calcetines",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Tirar dos calcetíns imaxinarios cara arriba",
+            "es": "Subirse los calcetines imaginarios"
+          }
+        },
+        {
+          "id": "shoe",
+          "en": "Shoe",
+          "gl": "Zapato",
+          "es": "Zapato",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Sinalar un zapato e logo o outro",
+            "es": "Señalar un zapato y luego el otro"
+          }
+        },
+        {
+          "id": "put-on",
+          "en": "Put on",
+          "gl": "Poñer",
+          "es": "Ponerse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Poñer unha prenda imaxinaria pola cabeza",
+            "es": "Ponerse una prenda imaginaria por la cabeza"
+          }
+        },
+        {
+          "id": "take-off",
+          "en": "Take off",
+          "gl": "Quitar",
+          "es": "Quitarse",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Quitar unha prenda imaxinaria e sacudila",
+            "es": "Quitarse una prenda imaginaria y sacudirla"
+          }
+        },
+        {
+          "id": "zip",
+          "en": "Zip",
+          "gl": "Pechar a cremalleira",
+          "es": "Subir la cremallera",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Subir unha cremalleira imaxinaria de abaixo arriba",
+            "es": "Subir una cremallera imaginaria de abajo arriba"
+          }
+        },
+        {
+          "id": "button",
+          "en": "Button",
+          "gl": "Abotoar",
+          "es": "Abrochar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Abotoar botóns imaxinarios no peito",
+            "es": "Abrochar botones imaginarios en el pecho"
+          }
+        },
+        {
+          "id": "tie",
+          "en": "Tie",
+          "gl": "Atar",
+          "es": "Atar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Facer un lazo cos dedos coma nos cordóns",
+            "es": "Hacer un lazo con los dedos como en los cordones"
+          }
+        },
+        {
+          "id": "woolly",
+          "en": "Woolly",
+          "gl": "De la",
+          "es": "De lana",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Acariñar unha prenda de la imaxinaria",
+            "es": "Acariciar una prenda de lana imaginaria"
+          }
+        },
+        {
+          "id": "striped",
+          "en": "Striped",
+          "gl": "Raiado, raiada",
+          "es": "De rayas",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Debuxar raias no aire cun dedo",
+            "es": "Dibujar rayas en el aire con un dedo"
+          }
+        },
+        {
+          "id": "spotty",
+          "en": "Spotty",
+          "gl": "De lunares",
+          "es": "De lunares",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Tocar puntos por todo o corpo cun dedo",
+            "es": "Tocar puntos por todo el cuerpo con un dedo"
+          }
+        },
+        {
+          "id": "tight",
+          "en": "Tight",
+          "gl": "Apertado, apertada",
+          "es": "Apretado, apretada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Apertar os brazos contra o corpo",
+            "es": "Apretar los brazos contra el cuerpo"
+          }
+        },
+        {
+          "id": "put-on-your-hat",
+          "en": "Put on your hat!",
+          "gl": "Pon o gorro!",
+          "es": "¡Ponte el gorro!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Poñer un gorro imaxinario ao escoitar a orde",
+            "es": "Ponerse un gorro imaginario al oír la orden"
+          }
+        },
+        {
+          "id": "zip-your-coat",
+          "en": "Zip your coat",
+          "gl": "Pecha o abrigo",
+          "es": "Cierra el abrigo",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Subir a cremalleira do abrigo imaxinario",
+            "es": "Subir la cremallera del abrigo imaginario"
+          }
+        },
+        {
+          "id": "ready-to-go",
+          "en": "Ready to go!",
+          "gl": "Listos para saír!",
+          "es": "¡Listos para salir!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Poñerse de pé e colocar as mans nas correas da mochila",
+            "es": "Ponerse de pie y colocar las manos en las correas de la mochila"
+          }
+        },
+        {
+          "id": "inside-out",
+          "en": "Inside out",
+          "gl": "Do revés",
+          "es": "Del revés",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Dar a volta a unha prenda imaxinaria",
+            "es": "Dar la vuelta a una prenda imaginaria"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Chove!",
+        "es": "¡Llueve!"
+      },
+      "palabras": [
+        {
+          "id": "umbrella",
+          "en": "Umbrella",
+          "gl": "Paraugas",
+          "es": "Paraguas",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Suxeitar un paraugas imaxinario por riba da cabeza",
+            "es": "Sostener un paraguas imaginario por encima de la cabeza"
+          }
+        },
+        {
+          "id": "puddle",
+          "en": "Puddle",
+          "gl": "Poza",
+          "es": "Charco",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Debuxar unha poza redonda no chan co pé",
+            "es": "Dibujar un charco redondo en el suelo con el pie"
+          }
+        },
+        {
+          "id": "cloud",
+          "en": "Cloud",
+          "gl": "Nube",
+          "es": "Nube",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer unha nube grande e mol cos brazos",
+            "es": "Hacer una nube grande y blandita con los brazos"
+          }
+        },
+        {
+          "id": "raincoat",
+          "en": "Raincoat",
+          "gl": "Chuvasqueiro",
+          "es": "Chubasquero",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Poñer a carapucha dun chuvasqueiro imaxinario",
+            "es": "Ponerse la capucha de un chubasquero imaginario"
+          }
+        },
+        {
+          "id": "mud",
+          "en": "Mud",
+          "gl": "Lama",
+          "es": "Barro",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Pisar amodo coma se os pés se pegasen á lama",
+            "es": "Pisar despacio como si los pies se pegaran al barro"
+          }
+        },
+        {
+          "id": "drop",
+          "en": "Drop",
+          "gl": "Pinga",
+          "es": "Gota",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Deixar caer unha pinga desde a punta do dedo",
+            "es": "Dejar caer una gota desde la punta del dedo"
+          }
+        },
+        {
+          "id": "street",
+          "en": "Street",
+          "gl": "Rúa",
+          "es": "Calle",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Camiñar en fila coma pola rúa",
+            "es": "Caminar en fila como por la calle"
+          }
+        },
+        {
+          "id": "stomp",
+          "en": "Stomp",
+          "gl": "Patear",
+          "es": "Pisotear",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pisar forte cos dous pés no sitio",
+            "es": "Pisar fuerte con los dos pies en el sitio"
+          }
+        },
+        {
+          "id": "drip",
+          "en": "Drip",
+          "gl": "Pingar",
+          "es": "Gotear",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tocar o chan cos dedos: pin, pin, pin",
+            "es": "Tocar el suelo con los dedos: plin, plin, plin"
+          }
+        },
+        {
+          "id": "hurry",
+          "en": "Hurry",
+          "gl": "Apurarse",
+          "es": "Darse prisa",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Camiñar rápido no sitio coa cabeza tapada",
+            "es": "Caminar rápido en el sitio con la cabeza tapada"
+          }
+        },
+        {
+          "id": "close",
+          "en": "Close",
+          "gl": "Pechar",
+          "es": "Cerrar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pechar un paraugas imaxinario xuntando as mans",
+            "es": "Cerrar un paraguas imaginario juntando las manos"
+          }
+        },
+        {
+          "id": "wipe",
+          "en": "Wipe",
+          "gl": "Enxugar",
+          "es": "Secar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Enxugar a cara cunha toalla imaxinaria",
+            "es": "Secarse la cara con una toalla imaginaria"
+          }
+        },
+        {
+          "id": "wet",
+          "en": "Wet",
+          "gl": "Mollado, mollada",
+          "es": "Mojado, mojada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Sacudir as mans coma se estivesen molladas",
+            "es": "Sacudir las manos como si estuvieran mojadas"
+          }
+        },
+        {
+          "id": "rainy",
+          "en": "Rainy",
+          "gl": "Chuvioso, chuviosa",
+          "es": "Lluvioso, lluviosa",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Baixar os dedos coma chuvia e mirar arriba",
+            "es": "Bajar los dedos como lluvia y mirar arriba"
+          }
+        },
+        {
+          "id": "grey",
+          "en": "Grey",
+          "gl": "Gris",
+          "es": "Gris",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Sinalar algo gris na aula",
+            "es": "Señalar algo gris en el aula"
+          }
+        },
+        {
+          "id": "muddy",
+          "en": "Muddy",
+          "gl": "Enlamado, enlamada",
+          "es": "Embarrado, embarrada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Mirar as botas imaxinarias con cara de sorpresa",
+            "es": "Mirarse las botas imaginarias con cara de sorpresa"
+          }
+        },
+        {
+          "id": "put-up-the-umbrella",
+          "en": "Put up the umbrella",
+          "gl": "Abre o paraugas",
+          "es": "Abre el paraguas",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Abrir un paraugas imaxinario de golpe",
+            "es": "Abrir un paraguas imaginario de golpe"
+          }
+        },
+        {
+          "id": "stomp-your-boots",
+          "en": "Stomp your boots",
+          "gl": "Pisa forte coas botas",
+          "es": "Pisa fuerte con las botas",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Pisar forte coas botas imaxinarias: pum, pum",
+            "es": "Pisar fuerte con las botas imaginarias: pum, pum"
+          }
+        },
+        {
+          "id": "jump-in-the-puddle",
+          "en": "Jump in the puddle",
+          "gl": "Salta na poza",
+          "es": "Salta en el charco",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Saltar cos dous pés dentro dunha poza imaxinaria",
+            "es": "Saltar con los dos pies dentro de un charco imaginario"
+          }
+        },
+        {
+          "id": "under-the-umbrella",
+          "en": "Under the umbrella",
+          "gl": "Debaixo do paraugas",
+          "es": "Debajo del paraguas",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Xuntarse varias criaturas debaixo dun paraugas imaxinario",
+            "es": "Juntarse varias criaturas debajo de un paraguas imaginario"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Imos de paseo",
+        "es": "Vamos de paseo"
+      },
+      "palabras": [
+        {
+          "id": "car",
+          "en": "Car",
+          "gl": "Coche",
+          "es": "Coche",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer o ruído dun motor: brrrum",
+            "es": "Hacer el ruido de un motor: brrrum"
+          }
+        },
+        {
+          "id": "bus",
+          "en": "Bus",
+          "gl": "Autobús",
+          "es": "Autobús",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Sentar en fila coma nos asentos do autobús",
+            "es": "Sentarse en fila como en los asientos del autobús"
+          }
+        },
+        {
+          "id": "bike",
+          "en": "Bike",
+          "gl": "Bicicleta",
+          "es": "Bici",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Suxeitar un guiador imaxinario e tocar o timbre",
+            "es": "Sujetar un manillar imaginario y tocar el timbre"
+          }
+        },
+        {
+          "id": "train",
+          "en": "Train",
+          "gl": "Tren",
+          "es": "Tren",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Facer un tren poñendo as mans nos ombros de quen vai diante",
+            "es": "Hacer un tren poniendo las manos en los hombros de quien va delante"
+          }
+        },
+        {
+          "id": "plane",
+          "en": "Plane",
+          "gl": "Avión",
+          "es": "Avión",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Abrir os brazos coma ás e voar amodo",
+            "es": "Abrir los brazos como alas y volar despacio"
+          }
+        },
+        {
+          "id": "wheel",
+          "en": "Wheel",
+          "gl": "Roda",
+          "es": "Rueda",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Debuxar unha roda grande no aire",
+            "es": "Dibujar una rueda grande en el aire"
+          }
+        },
+        {
+          "id": "traffic-light",
+          "en": "Traffic light",
+          "gl": "Semáforo",
+          "es": "Semáforo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Levantar a man para parar e baixala para seguir",
+            "es": "Levantar la mano para parar y bajarla para seguir"
+          }
+        },
+        {
+          "id": "drive",
+          "en": "Drive",
+          "gl": "Conducir",
+          "es": "Conducir",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Xirar un volante imaxinario",
+            "es": "Girar un volante imaginario"
+          }
+        },
+        {
+          "id": "ride",
+          "en": "Ride",
+          "gl": "Montar",
+          "es": "Montar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Montar nunha bici imaxinaria no sitio",
+            "es": "Montar en una bici imaginaria en el sitio"
+          }
+        },
+        {
+          "id": "go",
+          "en": "Go",
+          "gl": "Ir",
+          "es": "Ir",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Dar un paso adiante ao escoitar a palabra",
+            "es": "Dar un paso adelante al oír la palabra"
+          }
+        },
+        {
+          "id": "beep",
+          "en": "Beep",
+          "gl": "Pitar",
+          "es": "Pitar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tocar unha bucina imaxinaria coa palma",
+            "es": "Tocar un claxon imaginario con la palma"
+          }
+        },
+        {
+          "id": "pedal",
+          "en": "Pedal",
+          "gl": "Pedalear",
+          "es": "Pedalear",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Tombar de costas e pedalear no aire",
+            "es": "Tumbarse boca arriba y pedalear en el aire"
+          }
+        },
+        {
+          "id": "near",
+          "en": "Near",
+          "gl": "Preto",
+          "es": "Cerca",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Achegar as mans ata case tocarse",
+            "es": "Acercar las manos hasta casi tocarse"
+          }
+        },
+        {
+          "id": "far",
+          "en": "Far",
+          "gl": "Lonxe",
+          "es": "Lejos",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Sinalar moi lonxe co brazo estirado",
+            "es": "Señalar muy lejos con el brazo estirado"
+          }
+        },
+        {
+          "id": "safe",
+          "en": "Safe",
+          "gl": "Seguro, segura",
+          "es": "Seguro, segura",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Abrazarse a un mesmo e sorrir tranquilos",
+            "es": "Abrazarse a uno mismo y sonreír tranquilos"
+          }
+        },
+        {
+          "id": "careful",
+          "en": "Careful",
+          "gl": "Con coidado",
+          "es": "Con cuidado",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Camiñar amodo mirando a un lado e ao outro",
+            "es": "Caminar despacio mirando a un lado y al otro"
+          }
+        },
+        {
+          "id": "beep-beep",
+          "en": "Beep, beep!",
+          "gl": "Pi, pi!",
+          "es": "¡Pi, pi!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Premer unha bucina imaxinaria dúas veces",
+            "es": "Apretar un claxon imaginario dos veces"
+          }
+        },
+        {
+          "id": "all-aboard",
+          "en": "All aboard!",
+          "gl": "Todos a bordo!",
+          "es": "¡Todos a bordo!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Subir a un tren imaxinario cun paso grande",
+            "es": "Subir a un tren imaginario con un paso grande"
+          }
+        },
+        {
+          "id": "seat-belt-on",
+          "en": "Seat belt on!",
+          "gl": "Cinto posto!",
+          "es": "¡Cinturón puesto!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Cruzar un cinto de seguridade imaxinario polo peito",
+            "es": "Cruzar un cinturón de seguridad imaginario por el pecho"
+          }
+        },
+        {
+          "id": "stop-look-and-listen",
+          "en": "Stop, look and listen",
+          "gl": "Para, mira e escoita",
+          "es": "Para, mira y escucha",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Parar, mirar a ambos lados e levar a man á orella",
+            "es": "Parar, mirar a ambos lados y llevarse la mano a la oreja"
+          }
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Na casa",
+        "es": "En casa"
+      },
+      "palabras": [
+        {
+          "id": "kitchen",
+          "en": "Kitchen",
+          "gl": "Cociña",
+          "es": "Cocina",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Poñer a mesa con pratos imaxinarios",
+            "es": "Poner la mesa con platos imaginarios"
+          }
+        },
+        {
+          "id": "sofa",
+          "en": "Sofa",
+          "gl": "Sofá",
+          "es": "Sofá",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Deixarse caer amodo sobre un sofá imaxinario",
+            "es": "Dejarse caer despacio sobre un sofá imaginario"
+          }
+        },
+        {
+          "id": "lamp",
+          "en": "Lamp",
+          "gl": "Lámpada",
+          "es": "Lámpara",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Premer un botón imaxinario e abrir as mans coma luz",
+            "es": "Pulsar un botón imaginario y abrir las manos como luz"
+          }
+        },
+        {
+          "id": "stairs",
+          "en": "Stairs",
+          "gl": "Escaleiras",
+          "es": "Escaleras",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Subir chanzos imaxinarios levantando os xeonllos",
+            "es": "Subir escalones imaginarios levantando las rodillas"
+          }
+        },
+        {
+          "id": "key",
+          "en": "Key",
+          "gl": "Chave",
+          "es": "Llave",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Meter unha chave imaxinaria na pechadura e xirala",
+            "es": "Meter una llave imaginaria en la cerradura y girarla"
+          }
+        },
+        {
+          "id": "clock",
+          "en": "Clock",
+          "gl": "Reloxo",
+          "es": "Reloj",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Mover un brazo coma a agulla dun reloxo",
+            "es": "Mover un brazo como la aguja de un reloj"
+          }
+        },
+        {
+          "id": "floor",
+          "en": "Floor",
+          "gl": "Chan",
+          "es": "Suelo",
+          "category": "noun",
+          "tprAction": {
+            "gl": "Tocar o chan coas palmas das mans",
+            "es": "Tocar el suelo con las palmas de las manos"
+          }
+        },
+        {
+          "id": "turn-on",
+          "en": "Turn on",
+          "gl": "Acender",
+          "es": "Encender",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Premer un interruptor imaxinario e abrir os ollos",
+            "es": "Pulsar un interruptor imaginario y abrir los ojos"
+          }
+        },
+        {
+          "id": "turn-off",
+          "en": "Turn off",
+          "gl": "Apagar",
+          "es": "Apagar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Premer o interruptor e pechar os ollos",
+            "es": "Pulsar el interruptor y cerrar los ojos"
+          }
+        },
+        {
+          "id": "rest",
+          "en": "Rest",
+          "gl": "Descansar",
+          "es": "Descansar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Pousar a cabeza nos brazos e respirar amodo",
+            "es": "Apoyar la cabeza en los brazos y respirar despacio"
+          }
+        },
+        {
+          "id": "draw",
+          "en": "Draw",
+          "gl": "Debuxar",
+          "es": "Dibujar",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Debuxar no aire unha casa co dedo",
+            "es": "Dibujar en el aire una casa con el dedo"
+          }
+        },
+        {
+          "id": "read",
+          "en": "Read",
+          "gl": "Ler",
+          "es": "Leer",
+          "category": "verb",
+          "tprAction": {
+            "gl": "Abrir un libro imaxinario e seguir as liñas co dedo",
+            "es": "Abrir un libro imaginario y seguir las líneas con el dedo"
+          }
+        },
+        {
+          "id": "tidy",
+          "en": "Tidy",
+          "gl": "Ordenado, ordenada",
+          "es": "Ordenado, ordenada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Aliñar xoguetes imaxinarios en fila",
+            "es": "Alinear juguetes imaginarios en fila"
+          }
+        },
+        {
+          "id": "messy",
+          "en": "Messy",
+          "gl": "Desordenado, desordenada",
+          "es": "Desordenado, desordenada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Mover as mans cara a todos os lados coma un remuíño",
+            "es": "Mover las manos hacia todos lados como un remolino"
+          }
+        },
+        {
+          "id": "comfy",
+          "en": "Comfy",
+          "gl": "Cómodo, cómoda",
+          "es": "Cómodo, cómoda",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Acomodarse no chan cun sorriso",
+            "es": "Acomodarse en el suelo con una sonrisa"
+          }
+        },
+        {
+          "id": "busy",
+          "en": "Busy",
+          "gl": "Ocupado, ocupada",
+          "es": "Ocupado, ocupada",
+          "category": "adjective",
+          "tprAction": {
+            "gl": "Mover as mans moi rápido coma quen traballa moito",
+            "es": "Mover las manos muy rápido como quien trabaja mucho"
+          }
+        },
+        {
+          "id": "tick-tock",
+          "en": "Tick, tock!",
+          "gl": "Tic, tac!",
+          "es": "¡Tic, tac!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Mover a cabeza dun lado a outro ao pulso",
+            "es": "Mover la cabeza de un lado a otro al pulso"
+          }
+        },
+        {
+          "id": "knock-knock",
+          "en": "Knock, knock!",
+          "gl": "Toc, toc!",
+          "es": "¡Toc, toc!",
+          "category": "phrase",
+          "tprAction": {
+            "gl": "Petar dúas veces no aire e agardar",
+            "es": "Llamar dos veces en el aire y esperar"
+          }
+        },
+        {
+          "id": "upstairs-and-downstairs",
+          "en": "Upstairs and downstairs",
+          "gl": "Escaleiras arriba e abaixo",
+          "es": "Escaleras arriba y abajo",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Subir e baixar chanzos imaxinarios no sitio",
+            "es": "Subir y bajar escalones imaginarios en el sitio"
+          }
+        },
+        {
+          "id": "on-the-sofa",
+          "en": "On the sofa",
+          "gl": "No sofá",
+          "es": "En el sofá",
+          "category": "complex",
+          "tprAction": {
+            "gl": "Sentar nun sofá imaxinario e estirar as pernas",
+            "es": "Sentarse en un sofá imaginario y estirar las piernas"
+          }
+        }
+      ]
+    }
+  ]
+}

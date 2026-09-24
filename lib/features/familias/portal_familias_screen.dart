@@ -20,6 +20,7 @@ import '../lectura/views/aprender_a_ler_screen.dart';
 import '../premios/premios_repository.dart';
 import '../premios/premios_screen.dart';
 import 'views/xogos_fogar_screen.dart';
+import 'widgets/tarxeta_ingles_de_hoxe_fogar.dart';
 
 /// Pantalla independente do Portal Familias.
 ///
@@ -107,10 +108,19 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     },
   ];
 
+  /// A crianza cuxas palabras de inglés se ven hoxe. Só mentres a pantalla
+  /// está aberta: a app non garda nada dunha crianza.
+  String _cursoIngles = 'curso_0_2';
+
   @override
   void initState() {
     super.initState();
     _language = widget.currentLanguage;
+    if (widget.repository.programaTprSync == null) {
+      widget.repository.loadProgramaTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
   }
 
   @override
@@ -359,6 +369,30 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 ),
               ),
             ),
+
+            // O inglés de hoxe na casa: as MESMAS palabras que a escola ese
+            // día. Sen o curso lido, non hai tarxeta: «cinco palabras hoxe»
+            // sen as palabras non axuda.
+            if (widget.repository.programaTprSync case final programa?) ...[
+              const SizedBox(height: 14.0),
+              TarxetaInglesDeHoxeFogar(
+                programa: programa,
+                cursoId: _cursoIngles,
+                onCambiarCurso: (c) => setState(() => _cursoIngles = c),
+                language: _language,
+                audioService: widget.audioService,
+                onVerXogos: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => XogosFogarScreen(
+                        initialLanguage: _language,
+                        audioService: widget.audioService,
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ],
             const SizedBox(height: 18.0),
 
             // Selector e Filtros de Dinámicas e Exercicios
@@ -442,12 +476,14 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ? 'Calendario Escolar no Fogar'
                     : 'Calendario Escolar en el Hogar',
                 description: isGl
-                    ? '10 meses escolares (Setembro a Xuño), 5 cursos diferenciados por semanas e días con actividades concretas de 3 min, momentos cotiáns e conexión coa escola.'
-                    : '10 meses escolares (Septiembre a Junio), 5 cursos diferenciados por semanas y días con actividades concretas de 3 min, momentos cotidianos y conexión con la escuela.',
+                    ? 'De 0 a 6 anos, curso a curso: os 5 cursos, cada un de Setembro a Xuño, por semanas e días con actividades concretas de 3 min, momentos cotiáns e conexión coa escola.'
+                    : 'De 0 a 6 años, curso a curso: los 5 cursos, cada uno de Septiembre a Junio, por semanas y días con actividades concretas de 3 min, momentos cotidianos y conexión con la escuela.',
                 icon: Icons.calendar_month_rounded,
                 iconColor: const Color(0xFFDD6B20),
                 iconBg: const Color(0xFFFFF9EE),
-                badge: isGl ? '10 Meses · 5 Cursos' : '10 Meses · 5 Cursos',
+                badge: isGl
+                    ? 'De 0 a 6 anos · 5 cursos'
+                    : 'De 0 a 6 años · 5 cursos',
                 buttonText: isGl ? 'Abrir Calendario' : 'Abrir Calendario',
                 onTap: () {
                   Navigator.of(context).push(
@@ -671,83 +707,95 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   }) {
     return Card(
       elevation: 0.5,
+      clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
         side: const BorderSide(color: AppTheme.border),
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  radius: 20,
-                  backgroundColor: iconBg,
-                  child: Icon(icon, color: iconColor, size: 22),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        badge.toUpperCase(),
-                        style: TextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.w800,
-                          color: iconColor,
-                          letterSpacing: 0.6,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        title,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: AppTheme.primaryInk,
-                        ),
-                      ),
-                    ],
+      child: InkWell(
+        borderRadius: BorderRadius.circular(16),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 20,
+                    backgroundColor: iconBg,
+                    child: Icon(icon, color: iconColor, size: 22),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            Text(
-              description,
-              style: const TextStyle(
-                fontSize: 13,
-                color: Color(0xFF4A5568),
-                height: 1.4,
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          badge.toUpperCase(),
+                          style: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w800,
+                            color: iconColor,
+                            letterSpacing: 0.6,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          title,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: AppTheme.primaryInk,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-            ),
-            const SizedBox(height: 14),
-            SizedBox(
-              width: double.infinity,
-              height: 42,
-              child: ElevatedButton(
-                onPressed: onTap,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: iconColor,
-                  foregroundColor: Colors.white,
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-                child: Text(
-                  buttonText,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.bold,
-                  ),
+              const SizedBox(height: 10),
+              Text(
+                description,
+                style: const TextStyle(
+                  fontSize: 13,
+                  color: Color(0xFF4A5568),
+                  height: 1.4,
                 ),
               ),
-            ),
-          ],
+              const SizedBox(height: 14),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: onTap,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: iconColor,
+                    foregroundColor: Colors.white,
+                    elevation: 0,
+                    minimumSize: const Size(double.infinity, 44),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 10,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      buttonText,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

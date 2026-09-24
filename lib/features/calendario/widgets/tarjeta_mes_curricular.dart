@@ -81,7 +81,7 @@ class _TarjetaMesCurricularState extends State<TarjetaMesCurricular>
     super.dispose();
   }
 
-  Color get _acento => _acentos[(widget.mes.orden - 1) % _acentos.length];
+  Color get _acento => _acentos[(widget.mes.mesDoCurso - 1) % _acentos.length];
 
   @override
   Widget build(BuildContext context) {
@@ -203,7 +203,8 @@ class _Cabecera extends StatelessWidget {
               child: SizedBox(
                 width: 80,
                 child: CustomPaint(
-                  painter: _IlustracionMesP(orden: mes.orden, acento: acento),
+                  painter:
+                      _IlustracionMesP(orden: mes.mesDoCurso, acento: acento),
                 ),
               ),
             ),
@@ -220,7 +221,7 @@ class _Cabecera extends StatelessWidget {
                 ),
                 alignment: Alignment.center,
                 child: Text(
-                  '${mes.orden}',
+                  '${mes.mesDoCurso}',
                   style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w900,
@@ -229,6 +230,30 @@ class _Cabecera extends StatelessWidget {
                 ),
               ),
             ),
+            // El curso del trayecto: la misma «Outubro» es otra en 0-2 y en
+            // 5-6, y sin esto la tarjeta no decía de qué curso era.
+            if (mes.etiquetaCurso case final curso?)
+              Positioned(
+                left: 46,
+                top: 13,
+                child: Container(
+                  key: const Key('tarxeta_mes_curso'),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withAlpha(50),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                    curso.resolve(lang),
+                    style: TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white.withAlpha(235),
+                    ),
+                  ),
+                ),
+              ),
             // Nombre del mes
             Positioned(
               left: 12,

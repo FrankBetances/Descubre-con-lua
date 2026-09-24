@@ -218,6 +218,113 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       criterioExitoEs:
           'Desaparece la tensión en los miembros y mantiene contacto visual placentero.',
     ),
+    XogoFogarItem(
+      id: 'xogo_07_circuito_5palabras',
+      tituloGl: 'O Circuíto das 5 Palabras Diarias',
+      tituloEs: 'El Circuito de las 5 Palabras Diarias',
+      idade: '2-6 anos',
+      duracionMin: 4,
+      materiaisGl:
+          'Cinco cartolinas no chan, unha por cada palabra nova de hoxe (están no calendario da casa)',
+      materiaisEs:
+          'Cinco cartulinas en el suelo, una por cada palabra nueva de hoy (están en el calendario de casa)',
+      obxectivoGl: 'As cinco palabras novas do día, cada unha co seu xesto',
+      obxectivoEs: 'Las cinco palabras nuevas del día, cada una con su gesto',
+      fraseEn: 'Touch your head, touch your knees, freeze!',
+      guionAdultoGl:
+          'Marca as estacións no chan. Modela o movemento primeiro e convida a saltar á seguinte cando escoite o comando.',
+      guionAdultoEs:
+          'Marca las estaciones en el suelo. Modela el movimiento primero e invita a saltar a la siguiente cuando escuche el comando.',
+      accionKinestesicaGl:
+          'Salta dun punto a outro tocando a parte do corpo indicada e remata en parada tónica.',
+      accionKinestesicaEs:
+          'Salta de un punto a otro tocando la parte del cuerpo indicada y termina en parada tónica.',
+      criterioExitoGl:
+          'Executa a secuencia de tres ordes encadeadas sen dubidar e rindo.',
+      criterioExitoEs:
+          'Ejecuta la secuencia de tres órdenes encadenadas sin dudar y riendo.',
+    ),
+    XogoFogarItem(
+      id: 'xogo_08_gran_reto_freeze',
+      tituloGl: 'O Gran Reto Freeze de Lúa',
+      tituloEs: 'El Gran Reto Freeze de Lúa',
+      idade: '2-6 anos',
+      duracionMin: 5,
+      materiaisGl: 'Música a 72 bpm, voz viva da persoa adulta e espazo aberto',
+      materiaisEs:
+          'Música a 72 bpm, voz viva de la persona adulta y espacio abierto',
+      obxectivoGl:
+          'Inhibición motriz, discriminación auditiva e reforzo acumulativo (20 palabras)',
+      obxectivoEs:
+          'Inhibición motriz, discriminación auditiva y refuerzo acumulativo (20 palabras)',
+      fraseEn: 'Dance, dance, jump... Freeze like a statue!',
+      guionAdultoGl:
+          'Bate palmas a compás mentres bailades. De súpeto, di en voz clara: «Freeze!». Agarda 5 segundos en silencio.',
+      guionAdultoEs:
+          'Bate palmas a compás mientras bailáis. De repente, di en voz clara: «Freeze!». Espera 5 segundos en silencio.',
+      accionKinestesicaGl:
+          'Movemento libre e parada instantánea mantendo o equilibrio nun pé ou cos brazos en alto.',
+      accionKinestesicaEs:
+          'Movimiento libre y parada instantánea manteniendo el equilibrio en un pie o con los brazos en alto.',
+      criterioExitoGl:
+          'Detén o movemento inmediatamente ao escoitar o comando sen caer nin falar durante 5 segundos.',
+      criterioExitoEs:
+          'Detiene el movimiento inmediatamente al escuchar el comando sin caer ni hablar durante 5 segundos.',
+    ),
+    XogoFogarItem(
+      id: 'xogo_09_caixa_sons_texturas',
+      tituloGl: 'A Caixa das Texturas',
+      tituloEs: 'La Caja de las Texturas',
+      idade: '1-5 anos',
+      duracionMin: 4,
+      materiaisGl:
+          'Caixa con orificio e catro texturas grandes: algodón, piña, cuncha grande e madeira',
+      materiaisEs:
+          'Caja con orificio y cuatro texturas grandes: algodón, piña, concha grande y madera',
+      obxectivoGl:
+          'Discriminación táctil e as palabras soft, spiky, smooth e hard',
+      obxectivoEs:
+          'Discriminación táctil y las palabras soft, spiky, smooth y hard',
+      fraseEn: 'Find something soft!',
+      guionAdultoGl:
+          'Mete as catro texturas na caixa. Pide á crianza: «Find something soft!». Deixa que explore co tacto antes de sacar.',
+      guionAdultoEs:
+          'Mete las cuatro texturas en la caja. Pide a la criatura: «Find something soft!». Deja que explore con el tacto antes de sacar.',
+      accionKinestesicaGl:
+          'Introduce a man na caixa, palpa as texturas e saca a que se pediu.',
+      accionKinestesicaEs:
+          'Introduce la mano en la caja, palpa las texturas y saca la que se ha pedido.',
+      criterioExitoGl:
+          'Diferencia a textura polo tacto antes de mirala e sorrí ao acertar.',
+      criterioExitoEs:
+          'Diferencia la textura por el tacto antes de mirarla y sonríe al acertar.',
+    ),
+    XogoFogarItem(
+      id: 'xogo_10_eco_pes_mans',
+      tituloGl: 'O Eco dos Pés e Mans a 72 bpm',
+      tituloEs: 'El Eco de Pies y Manos a 72 bpm',
+      idade: '0-4 anos',
+      duracionMin: 3,
+      materiaisGl: 'Chan de madeira ou alfombra e o propio corpo',
+      materiaisEs: 'Suelo de madera o alfombra y el propio cuerpo',
+      obxectivoGl:
+          'Sincronización rítmica bilateral, propiocepción e resposta fónica de eco',
+      obxectivoEs:
+          'Sincronización rítmica bilateral, propiocepción y respuesta fónica de eco',
+      fraseEn: 'Clap your hands, stomp your feet!',
+      guionAdultoGl:
+          'Bate dúas palmas e logo bate dous pés no chan a compás de corazón (72 bpm). Pide que faga o eco.',
+      guionAdultoEs:
+          'Bate dos palmas y luego bate dos pies en el suelo a compás de corazón (72 bpm). Pide que haga el eco.',
+      accionKinestesicaGl:
+          'Imita o patrón rítmico alternando mans e pés en sincronía co adulto.',
+      accionKinestesicaEs:
+          'Imita el patrón rítmico alternando manos y pies en sincronía con el adulto.',
+      criterioExitoGl:
+          'Mantén o pulso rítmico durante polo menos catro compases compartidos.',
+      criterioExitoEs:
+          'Mantiene el pulso rítmico durante al menos cuatro compases compartidos.',
+    ),
   ];
 
   @override
@@ -590,16 +697,21 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                                   ? const Color(0xFF38A169)
                                   : const Color(0xFFCBD5E0),
                             ),
-                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 4, vertical: 8),
+                            minimumSize: const Size(0, 36),
                           ),
-                          child: Text(
-                            isGl ? '[L] Logrado' : '[L] Logrado',
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.bold,
-                              color: estadoObservacional == 'L'
-                                  ? const Color(0xFF22543D)
-                                  : AppTheme.textPrimary,
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(
+                              isGl ? '[L] Logrado' : '[L] Logrado',
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold,
+                                color: estadoObservacional == 'L'
+                                    ? const Color(0xFF22543D)
+                                    : AppTheme.textPrimary,
+                              ),
                             ),
                           ),
                         ),
@@ -618,16 +730,21 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                                   ? const Color(0xFF3182CE)
                                   : const Color(0xFFCBD5E0),
                             ),
-                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 4, vertical: 8),
+                            minimumSize: const Size(0, 36),
                           ),
-                          child: Text(
-                            isGl ? '[A] Asistido' : '[A] Asistido',
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.bold,
-                              color: estadoObservacional == 'A'
-                                  ? const Color(0xFF2A4365)
-                                  : AppTheme.textPrimary,
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(
+                              isGl ? '[A] Asistido' : '[A] Asistido',
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold,
+                                color: estadoObservacional == 'A'
+                                    ? const Color(0xFF2A4365)
+                                    : AppTheme.textPrimary,
+                              ),
                             ),
                           ),
                         ),
@@ -646,16 +763,21 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                                   ? const Color(0xFFDD6B20)
                                   : const Color(0xFFCBD5E0),
                             ),
-                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 4, vertical: 8),
+                            minimumSize: const Size(0, 36),
                           ),
-                          child: Text(
-                            isGl ? '[E] Explorando' : '[E] Explorando',
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.bold,
-                              color: estadoObservacional == 'E'
-                                  ? const Color(0xFF7B341E)
-                                  : AppTheme.textPrimary,
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(
+                              isGl ? '[E] Explorando' : '[E] Explorando',
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold,
+                                color: estadoObservacional == 'E'
+                                    ? const Color(0xFF7B341E)
+                                    : AppTheme.textPrimary,
+                              ),
                             ),
                           ),
                         ),

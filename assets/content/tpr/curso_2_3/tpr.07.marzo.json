@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.2_3.marzo",
+  "curso": "curso_2_3",
+  "orden": 7,
+  "mesCalendario": 3,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Formas arredor",
+        "es": "Formas alrededor"
+      },
+      "palabras": [
+        {
+          "id": "2_3.marzo.s1.oval",
+          "en": "Oval",
+          "gl": "Óvalo",
+          "es": "Óvalo",
+          "tprAction": {
+            "gl": "Debuxar un óvalo no aire",
+            "es": "Dibujar un óvalo en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s1.rectangle",
+          "en": "Rectangle",
+          "gl": "Rectángulo",
+          "es": "Rectángulo",
+          "tprAction": {
+            "gl": "Facer un rectángulo cos dedos",
+            "es": "Hacer un rectángulo con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s1.diamond",
+          "en": "Diamond",
+          "gl": "Rombo",
+          "es": "Rombo",
+          "tprAction": {
+            "gl": "Facer un rombo coas mans",
+            "es": "Hacer un rombo con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s1.star-shape",
+          "en": "Star shape",
+          "gl": "Forma de estrela",
+          "es": "Forma de estrella",
+          "tprAction": {
+            "gl": "Abrir brazos e pernas coma unha estrela",
+            "es": "Abrir brazos y piernas como una estrella"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s1.heart-shape",
+          "en": "Heart shape",
+          "gl": "Forma de corazón",
+          "es": "Forma de corazón",
+          "tprAction": {
+            "gl": "Facer un corazón coas mans",
+            "es": "Hacer un corazón con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s1.shape-sorter",
+          "en": "Shape sorter",
+          "gl": "Encaixable de formas",
+          "es": "Encajable de formas",
+          "tprAction": {
+            "gl": "Meter a forma no seu oco",
+            "es": "Meter la forma en su hueco"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s1.corner-piece",
+          "en": "Corner piece",
+          "gl": "Peza da esquina",
+          "es": "Pieza de la esquina",
+          "tprAction": {
+            "gl": "Sinalar a esquina da peza",
+            "es": "Señalar la esquina de la pieza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s1.draw-a-shape",
+          "en": "Draw a shape",
+          "gl": "Debuxar unha forma",
+          "es": "Dibujar una forma",
+          "tprAction": {
+            "gl": "Debuxar unha forma no chan",
+            "es": "Dibujar una forma en el suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s1.find-the-shape",
+          "en": "Find the shape",
+          "gl": "Buscar a forma",
+          "es": "Buscar la forma",
+          "tprAction": {
+            "gl": "Buscar un círculo na sala",
+            "es": "Buscar un círculo en la sala"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s1.slot-in",
+          "en": "Slot in",
+          "gl": "Meter no oco",
+          "es": "Meter en el hueco",
+          "tprAction": {
+            "gl": "Meter a peza no oco",
+            "es": "Meter la pieza en el hueco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s1.trace-around",
+          "en": "Trace around",
+          "gl": "Repasar o bordo",
+          "es": "Repasar el borde",
+          "tprAction": {
+            "gl": "Seguir o bordo co dedo",
+            "es": "Seguir el borde con el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s1.make-a-shape",
+          "en": "Make a shape",
+          "gl": "Facer unha forma",
+          "es": "Hacer una forma",
+          "tprAction": {
+            "gl": "Facer unha forma co corpo",
+            "es": "Hacer una forma con el cuerpo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s1.pointed",
+          "en": "Pointed",
+          "gl": "Con punta",
+          "es": "Con punta",
+          "tprAction": {
+            "gl": "Tocar a punta dun triángulo",
+            "es": "Tocar la punta de un triángulo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s1.curved",
+          "en": "Curved",
+          "gl": "Curvo",
+          "es": "Curvo",
+          "tprAction": {
+            "gl": "Debuxar unha curva no aire",
+            "es": "Dibujar una curva en el aire"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s1.four-sided",
+          "en": "Four-sided",
+          "gl": "De catro lados",
+          "es": "De cuatro lados",
+          "tprAction": {
+            "gl": "Contar catro lados cos dedos",
+            "es": "Contar cuatro lados con los dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s1.egg-shaped",
+          "en": "Egg-shaped",
+          "gl": "Con forma de ovo",
+          "es": "Con forma de huevo",
+          "tprAction": {
+            "gl": "Facer un ovo coas mans",
+            "es": "Hacer un huevo con las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s1.what-shape-is-this",
+          "en": "What shape is this?",
+          "gl": "Que forma é?",
+          "es": "¿Qué forma es?",
+          "tprAction": {
+            "gl": "Amosar unha forma e agardar",
+            "es": "Enseñar una forma y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.marzo.s1.it-s-a-star",
+          "en": "It's a star!",
+          "gl": "É unha estrela!",
+          "es": "¡Es una estrella!",
+          "tprAction": {
+            "gl": "Abrirse coma unha estrela",
+            "es": "Abrirse como una estrella"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.marzo.s1.shapes-in-the-room",
+          "en": "Shapes in the room",
+          "gl": "Formas na sala",
+          "es": "Formas en la sala",
+          "tprAction": {
+            "gl": "Sinalar formas arredor",
+            "es": "Señalar formas alrededor"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.marzo.s1.a-heart-with-my-hands",
+          "en": "A heart with my hands",
+          "gl": "Un corazón coas mans",
+          "es": "Un corazón con las manos",
+          "tprAction": {
+            "gl": "Facer un corazón coas mans",
+            "es": "Hacer un corazón con las manos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Froitas da primavera",
+        "es": "Frutas de primavera"
+      },
+      "palabras": [
+        {
+          "id": "2_3.marzo.s2.pineapple",
+          "en": "Pineapple",
+          "gl": "Ananás",
+          "es": "Piña",
+          "tprAction": {
+            "gl": "Facer a coroa da piña coas mans",
+            "es": "Hacer la corona de la piña con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s2.mango",
+          "en": "Mango",
+          "gl": "Mango",
+          "es": "Mango",
+          "tprAction": {
+            "gl": "Coller un mango imaxinario",
+            "es": "Coger un mango imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s2.apricot",
+          "en": "Apricot",
+          "gl": "Albaricoque",
+          "es": "Albaricoque",
+          "tprAction": {
+            "gl": "Acariñar a pel do albaricoque",
+            "es": "Acariciar la piel del albaricoque"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s2.grape-bunch",
+          "en": "Grape bunch",
+          "gl": "Acio de uvas",
+          "es": "Racimo de uvas",
+          "tprAction": {
+            "gl": "Colgar a man coma un acio",
+            "es": "Colgar la mano como un racimo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s2.fruit-salad",
+          "en": "Fruit salad",
+          "gl": "Macedonia",
+          "es": "Macedonia",
+          "tprAction": {
+            "gl": "Mesturar froita nunha cunca",
+            "es": "Mezclar fruta en un cuenco"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s2.smoothie",
+          "en": "Smoothie",
+          "gl": "Batido",
+          "es": "Batido",
+          "tprAction": {
+            "gl": "Soprar pola palla",
+            "es": "Soplar por la pajita"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s2.fruit-peel",
+          "en": "Fruit peel",
+          "gl": "Pel da froita",
+          "es": "Piel de la fruta",
+          "tprAction": {
+            "gl": "Pelar unha froita imaxinaria",
+            "es": "Pelar una fruta imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s2.chop",
+          "en": "Chop",
+          "gl": "Picar",
+          "es": "Trocear",
+          "tprAction": {
+            "gl": "Picar coa man plana",
+            "es": "Trocear con la mano plana"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s2.blend",
+          "en": "Blend",
+          "gl": "Triturar",
+          "es": "Batir",
+          "tprAction": {
+            "gl": "Xirar as mans coma unha batedora",
+            "es": "Girar las manos como una batidora"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s2.slice",
+          "en": "Slice",
+          "gl": "Cortar en rodas",
+          "es": "Cortar en rodajas",
+          "tprAction": {
+            "gl": "Facer cortes coa man",
+            "es": "Hacer cortes con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s2.share-the-fruit",
+          "en": "Share the fruit",
+          "gl": "Repartir a froita",
+          "es": "Repartir la fruta",
+          "tprAction": {
+            "gl": "Dar unha froita a cada un",
+            "es": "Dar una fruta a cada uno"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s2.sniff-the-fruit",
+          "en": "Sniff the fruit",
+          "gl": "Cheirar a froita",
+          "es": "Oler la fruta",
+          "tprAction": {
+            "gl": "Achegar a froita ao nariz",
+            "es": "Acercar la fruta a la nariz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s2.fruity",
+          "en": "Fruity",
+          "gl": "Afroitado",
+          "es": "Afrutado",
+          "tprAction": {
+            "gl": "Cheirar e sorrir",
+            "es": "Oler y sonreír"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s2.refreshing",
+          "en": "Refreshing",
+          "gl": "Refrescante",
+          "es": "Refrescante",
+          "tprAction": {
+            "gl": "Beber e dicir «aaah»",
+            "es": "Beber y decir «aaah»"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s2.spiky-pineapple",
+          "en": "Spiky pineapple",
+          "gl": "Ananás espiñento",
+          "es": "Piña con pinchos",
+          "tprAction": {
+            "gl": "Tocar con coidado as follas",
+            "es": "Tocar con cuidado las hojas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s2.ripe-mango",
+          "en": "Ripe mango",
+          "gl": "Mango maduro",
+          "es": "Mango maduro",
+          "tprAction": {
+            "gl": "Premer suave o mango",
+            "es": "Apretar suave el mango"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s2.i-like-mango",
+          "en": "I like mango",
+          "gl": "Gústame o mango",
+          "es": "Me gusta el mango",
+          "tprAction": {
+            "gl": "Tocar a barriga contentos",
+            "es": "Tocar la barriga contentos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.marzo.s2.can-i-try-some",
+          "en": "Can I try some?",
+          "gl": "Podo probar?",
+          "es": "¿Puedo probar?",
+          "tprAction": {
+            "gl": "Estender a man",
+            "es": "Extender la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.marzo.s2.fruit-in-a-bowl",
+          "en": "Fruit in a bowl",
+          "gl": "Froita nunha cunca",
+          "es": "Fruta en un cuenco",
+          "tprAction": {
+            "gl": "Meter froita na cunca",
+            "es": "Meter fruta en el cuenco"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.marzo.s2.a-slice-for-each",
+          "en": "A slice for each",
+          "gl": "Unha roda para cada un",
+          "es": "Una rodaja para cada uno",
+          "tprAction": {
+            "gl": "Repartir rodas",
+            "es": "Repartir rodajas"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Cubos e bólas",
+        "es": "Cubos y bolas"
+      },
+      "palabras": [
+        {
+          "id": "2_3.marzo.s3.cube",
+          "en": "Cube",
+          "gl": "Cubo",
+          "es": "Cubo",
+          "tprAction": {
+            "gl": "Facer un cubo coas mans",
+            "es": "Hacer un cubo con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s3.sphere",
+          "en": "Sphere",
+          "gl": "Esfera",
+          "es": "Esfera",
+          "tprAction": {
+            "gl": "Rodar unha bóla imaxinaria",
+            "es": "Rodar una bola imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s3.pyramid",
+          "en": "Pyramid",
+          "gl": "Pirámide",
+          "es": "Pirámide",
+          "tprAction": {
+            "gl": "Xuntar as mans en punta",
+            "es": "Juntar las manos en punta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s3.cylinder",
+          "en": "Cylinder",
+          "gl": "Cilindro",
+          "es": "Cilindro",
+          "tprAction": {
+            "gl": "Rodar un tubo pola mesa",
+            "es": "Rodar un tubo por la mesa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s3.dice",
+          "en": "Dice",
+          "gl": "Dado",
+          "es": "Dado",
+          "tprAction": {
+            "gl": "Lanzar un dado grande",
+            "es": "Lanzar un dado grande"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s3.tube",
+          "en": "Tube",
+          "gl": "Tubo",
+          "es": "Tubo",
+          "tprAction": {
+            "gl": "Mirar a través dun tubo",
+            "es": "Mirar a través de un tubo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s3.building-shape",
+          "en": "Building shape",
+          "gl": "Peza de construción",
+          "es": "Pieza de construcción",
+          "tprAction": {
+            "gl": "Poñer unha peza enriba doutra",
+            "es": "Poner una pieza encima de otra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s3.throw-the-dice",
+          "en": "Throw the dice",
+          "gl": "Lanzar o dado",
+          "es": "Tirar el dado",
+          "tprAction": {
+            "gl": "Lanzar o dado e contar",
+            "es": "Tirar el dado y contar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s3.look-through",
+          "en": "Look through",
+          "gl": "Mirar a través",
+          "es": "Mirar a través",
+          "tprAction": {
+            "gl": "Mirar polo tubo",
+            "es": "Mirar por el tubo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s3.roll-along",
+          "en": "Roll along",
+          "gl": "Rodar ao longo",
+          "es": "Rodar a lo largo",
+          "tprAction": {
+            "gl": "Rodar o cilindro",
+            "es": "Rodar el cilindro"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s3.balance-on-top",
+          "en": "Balance on top",
+          "gl": "Equilibrar enriba",
+          "es": "Equilibrar encima",
+          "tprAction": {
+            "gl": "Pousar a pirámide enriba do cubo",
+            "es": "Poner la pirámide encima del cubo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s3.topple",
+          "en": "Topple",
+          "gl": "Caer abaixo",
+          "es": "Venirse abajo",
+          "tprAction": {
+            "gl": "Deixar caer a torre",
+            "es": "Dejar caer la torre"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s3.solid",
+          "en": "Solid",
+          "gl": "Macizo",
+          "es": "Macizo",
+          "tprAction": {
+            "gl": "Bater no cubo",
+            "es": "Golpear el cubo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s3.hollow",
+          "en": "Hollow",
+          "gl": "Oco",
+          "es": "Hueco",
+          "tprAction": {
+            "gl": "Mirar dentro do tubo",
+            "es": "Mirar dentro del tubo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s3.rolly",
+          "en": "Rolly",
+          "gl": "Que roda",
+          "es": "Que rueda",
+          "tprAction": {
+            "gl": "Rodar as mans",
+            "es": "Rodar las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s3.stackable",
+          "en": "Stackable",
+          "gl": "Apilable",
+          "es": "Apilable",
+          "tprAction": {
+            "gl": "Apilar dúas pezas",
+            "es": "Apilar dos piezas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s3.will-it-roll",
+          "en": "Will it roll?",
+          "gl": "Rodará?",
+          "es": "¿Rodará?",
+          "tprAction": {
+            "gl": "Empurrar e mirar",
+            "es": "Empujar y mirar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.marzo.s3.look-through-the-tube",
+          "en": "Look through the tube!",
+          "gl": "Mira polo tubo!",
+          "es": "¡Mira por el tubo!",
+          "tprAction": {
+            "gl": "Mirar polo tubo",
+            "es": "Mirar por el tubo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.marzo.s3.cube-on-the-cylinder",
+          "en": "Cube on the cylinder",
+          "gl": "Cubo no cilindro",
+          "es": "Cubo en el cilindro",
+          "tprAction": {
+            "gl": "Pousar o cubo enriba",
+            "es": "Poner el cubo encima"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.marzo.s3.round-and-flat",
+          "en": "Round and flat",
+          "gl": "Redondo e plano",
+          "es": "Redondo y plano",
+          "tprAction": {
+            "gl": "Amosar unha bóla e unha táboa",
+            "es": "Enseñar una bola y una tabla"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Merenda de cores",
+        "es": "Merienda de colores"
+      },
+      "palabras": [
+        {
+          "id": "2_3.marzo.s4.picnic-basket",
+          "en": "Picnic basket",
+          "gl": "Cesta de merenda",
+          "es": "Cesta de merienda",
+          "tprAction": {
+            "gl": "Abrir a cesta",
+            "es": "Abrir la cesta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s4.sandwich",
+          "en": "Sandwich",
+          "gl": "Bocadillo",
+          "es": "Sándwich",
+          "tprAction": {
+            "gl": "Partir un bocadillo en dous",
+            "es": "Partir un sándwich en dos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s4.carrot-stick",
+          "en": "Carrot stick",
+          "gl": "Pau de cenoria",
+          "es": "Palito de zanahoria",
+          "tprAction": {
+            "gl": "Mastigar un pau de cenoria",
+            "es": "Masticar un palito de zanahoria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s4.cucumber",
+          "en": "Cucumber",
+          "gl": "Cogombro",
+          "es": "Pepino",
+          "tprAction": {
+            "gl": "Cortar rodas de cogombro",
+            "es": "Cortar rodajas de pepino"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s4.tomato",
+          "en": "Tomato",
+          "gl": "Tomate",
+          "es": "Tomate",
+          "tprAction": {
+            "gl": "Amosar un tomate vermello",
+            "es": "Enseñar un tomate rojo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s4.juice-box",
+          "en": "Juice box",
+          "gl": "Zume en brik",
+          "es": "Zumo en brik",
+          "tprAction": {
+            "gl": "Suxeitar o brik con coidado",
+            "es": "Sujetar el brik con cuidado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s4.lunch-mat",
+          "en": "Lunch mat",
+          "gl": "Mantel individual",
+          "es": "Mantel individual",
+          "tprAction": {
+            "gl": "Estender o mantel",
+            "es": "Extender el mantel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.marzo.s4.unpack",
+          "en": "Unpack",
+          "gl": "Desempaquetar",
+          "es": "Desempaquetar",
+          "tprAction": {
+            "gl": "Sacar as cousas da cesta",
+            "es": "Sacar las cosas de la cesta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s4.pass-the-plate",
+          "en": "Pass the plate",
+          "gl": "Pasar o prato",
+          "es": "Pasar el plato",
+          "tprAction": {
+            "gl": "Pasar o prato ao seguinte",
+            "es": "Pasar el plato al siguiente"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s4.crunch-a-carrot",
+          "en": "Crunch a carrot",
+          "gl": "Mastigar unha cenoria",
+          "es": "Morder una zanahoria",
+          "tprAction": {
+            "gl": "Morder e facer «cranc»",
+            "es": "Morder y hacer «crac»"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s4.wipe-hands",
+          "en": "Wipe hands",
+          "gl": "Limpar as mans",
+          "es": "Limpiarse las manos",
+          "tprAction": {
+            "gl": "Limpar as mans cunha servilleta",
+            "es": "Limpiarse las manos con una servilleta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s4.say-please",
+          "en": "Say please",
+          "gl": "Dicir por favor",
+          "es": "Decir por favor",
+          "tprAction": {
+            "gl": "Xuntar as mans pedindo",
+            "es": "Juntar las manos pidiendo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.marzo.s4.colourful-plate",
+          "en": "Colourful plate",
+          "gl": "Prato de cores",
+          "es": "Plato de colores",
+          "tprAction": {
+            "gl": "Sinalar as cores do prato",
+            "es": "Señalar los colores del plato"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s4.crispy",
+          "en": "Crispy",
+          "gl": "Estaladizo",
+          "es": "Crujiente",
+          "tprAction": {
+            "gl": "Morder algo que cruxe",
+            "es": "Morder algo crujiente"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s4.healthy",
+          "en": "Healthy",
+          "gl": "San",
+          "es": "Sano",
+          "tprAction": {
+            "gl": "Tocar a barriga e sorrir",
+            "es": "Tocar la barriga y sonreír"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s4.leftover",
+          "en": "Leftover",
+          "gl": "Sobrante",
+          "es": "Sobrante",
+          "tprAction": {
+            "gl": "Sinalar o que queda no prato",
+            "es": "Señalar lo que queda en el plato"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.marzo.s4.what-s-in-the-basket",
+          "en": "What's in the basket?",
+          "gl": "Que hai na cesta?",
+          "es": "¿Qué hay en la cesta?",
+          "tprAction": {
+            "gl": "Espreitar dentro da cesta",
+            "es": "Asomarse dentro de la cesta"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.marzo.s4.pass-it-please",
+          "en": "Pass it, please",
+          "gl": "Pásamo, por favor",
+          "es": "Pásamelo, por favor",
+          "tprAction": {
+            "gl": "Estender a man",
+            "es": "Extender la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.marzo.s4.a-red-tomato",
+          "en": "A red tomato",
+          "gl": "Un tomate vermello",
+          "es": "Un tomate rojo",
+          "tprAction": {
+            "gl": "Amosar o tomate",
+            "es": "Enseñar el tomate"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.marzo.s4.carrots-and-cucumbers",
+          "en": "Carrots and cucumbers",
+          "gl": "Cenorias e cogombros",
+          "es": "Zanahorias y pepinos",
+          "tprAction": {
+            "gl": "Amosar un e despois o outro",
+            "es": "Enseñar uno y luego el otro"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

@@ -15,6 +15,8 @@ import '../widgets/fichas_de_unidades.dart';
 import 'asamblea_guiada_screen.dart';
 import '../widgets/aula_primeiro_ciclo_panel.dart';
 import '../widgets/circulo_do_dia.dart';
+import '../../calendario/widgets/palabras_do_dia.dart';
+import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../widgets/aula_segundo_ciclo_panel.dart';
 import 'asamblea_player_screen.dart';
 import '../../../core/storage/calendario_store.dart';
@@ -284,19 +286,26 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
   /// El calendario del curso, DENTRO del aula. Un botón que lleva al
   /// calendario no es el calendario: la docente tiene que ver el mes que le
   /// toca sin salir de donde está.
-  Widget _calendarioDoAula() {
+  ///
+  /// Es el curso del GRUPO elegido: la docente de 2-3 años ve los meses de 2-3,
+  /// no los mismos diez para todas las edades, y el calendario se abre por su
+  /// lado, el del aula.
+  Widget _calendarioDoAula(String cursoId) {
     return CalendarioDoCurso(
       lang: _language,
       esDocente: true,
       store: widget.calendario,
       contenido: widget.calendarioContenido,
-      onAbrirMes: (contenido, mesIndex) {
+      cursoId: cursoId,
+      onAbrirMes: (contenido, curso, mesIndex) {
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) => CalendarioScreen(
               store: widget.calendario ?? CalendarioStore(),
               contenido: contenido,
+              cursoInicial: curso,
               mesInicialIndex: mesIndex,
+              esDocenteInicial: true,
               initialLanguage: _language,
               onLanguageChanged: _onToggleLanguage,
               repository: widget.repository,
@@ -315,8 +324,11 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
   ///
   /// Vive aquí y no dentro del panel porque es esta pantalla la que tiene el
   /// repositorio y el navegador; el panel solo sabe qué hay seleccionado.
+  ///
+  /// Debajo, las palabras en inglés de ese mismo día y de ese curso: la docente
+  /// trabaja aquí, y aquí tienen que estar las cinco palabras que tocan hoy.
   Widget _circuloDoDia(String cursoId, int mes, int semana, int dia) {
-    return CirculoDoDia(
+    final circulo = CirculoDoDia(
       repository: widget.repository,
       cursoId: cursoId,
       mes: mes,
@@ -324,6 +336,32 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       dia: dia,
       language: _language,
       audioService: widget.audioService,
+    );
+    final curso = widget.repository.cursoTprSync(cursoId);
+    MesTpr? mesTpr;
+    for (final m in curso?.meses ?? const <MesTpr>[]) {
+      if (m.orden == mes) mesTpr = m;
+    }
+    final semanaTpr = mesTpr?.semana(semana);
+    if (curso == null || semanaTpr == null) return circulo;
+    final isGl = _language == AppLanguage.gl;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        circulo,
+        const SizedBox(height: 12),
+        BloqueInglesDoDia(
+          key: const Key('palabras_do_dia_modo_aula'),
+          rotulo: isGl
+              ? 'INGLÉS DO DÍA · ${curso.modelo.ritmoDiario} PALABRAS NOVAS DE LUNS A XOVES'
+              : 'INGLÉS DEL DÍA · ${curso.modelo.ritmoDiario} PALABRAS NUEVAS DE LUNES A JUEVES',
+          plan: semanaTpr.planDoDia(dia),
+          modeloDoDia: curso.modelo.dia(dia),
+          semana: semanaTpr,
+          language: _language,
+          audioService: widget.audioService,
+        ),
+      ],
     );
   }
 
@@ -353,7 +391,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       asambleas: widget.repository.getAllAsambleasPrimeiroCicloSync(),
       language: _language,
       cabeceira: _tiraDeLua(),
-      calendario: _calendarioDoAula(),
+      calendario: _calendarioDoAula,
       pe: _fichasDeUnidades(),
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,
@@ -396,7 +434,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       asambleas: widget.repository.getAllAsambleasSegundoCicloSync(),
       language: _language,
       cabeceira: _tiraDeLua(),
-      calendario: _calendarioDoAula(),
+      calendario: _calendarioDoAula,
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,
       onComezar: (nivel, mes, dia) {

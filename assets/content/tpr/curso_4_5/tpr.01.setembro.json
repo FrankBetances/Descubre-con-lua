@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.4_5.setembro",
+  "curso": "curso_4_5",
+  "orden": 1,
+  "mesCalendario": 9,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "As nosas normas",
+        "es": "Nuestras normas"
+      },
+      "palabras": [
+        {
+          "id": "4_5.setembro.s1.rule",
+          "en": "Rule",
+          "gl": "Norma",
+          "es": "Norma",
+          "tprAction": {
+            "gl": "Levantar un dedo coma unha norma",
+            "es": "Levantar un dedo como una norma"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s1.promise-card",
+          "en": "Promise card",
+          "gl": "Tarxeta do compromiso",
+          "es": "Tarjeta del compromiso",
+          "tprAction": {
+            "gl": "Pousar a man na tarxeta",
+            "es": "Posar la mano en la tarjeta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s1.team",
+          "en": "Team",
+          "gl": "Equipo",
+          "es": "Equipo",
+          "tprAction": {
+            "gl": "Xuntar as mans no centro",
+            "es": "Juntar las manos en el centro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s1.captain",
+          "en": "Captain",
+          "gl": "Capitán",
+          "es": "Capitán",
+          "tprAction": {
+            "gl": "Poñerse diante do grupo",
+            "es": "Ponerse delante del grupo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s1.agreement",
+          "en": "Agreement",
+          "gl": "Acordo",
+          "es": "Acuerdo",
+          "tprAction": {
+            "gl": "Darse a man co compañeiro",
+            "es": "Darse la mano con el compañero"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s1.talking-stick",
+          "en": "Talking stick",
+          "gl": "Pau da palabra",
+          "es": "Palo de la palabra",
+          "tprAction": {
+            "gl": "Pasar o pau a quen fala",
+            "es": "Pasar el palo a quien habla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s1.classroom-job",
+          "en": "Classroom job",
+          "gl": "Encargo da clase",
+          "es": "Encargo de la clase",
+          "tprAction": {
+            "gl": "Sinalar o propio encargo no panel",
+            "es": "Señalar el propio encargo en el panel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s1.agree",
+          "en": "Agree",
+          "gl": "Estar de acordo",
+          "es": "Estar de acuerdo",
+          "tprAction": {
+            "gl": "Asentir coa cabeza",
+            "es": "Asentir con la cabeza"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s1.raise-a-hand",
+          "en": "Raise a hand",
+          "gl": "Levantar a man",
+          "es": "Levantar la mano",
+          "tprAction": {
+            "gl": "Levantar a man e agardar",
+            "es": "Levantar la mano y esperar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s1.take-a-turn",
+          "en": "Take a turn",
+          "gl": "Coller a quenda",
+          "es": "Tomar el turno",
+          "tprAction": {
+            "gl": "Coller o pau da palabra",
+            "es": "Coger el palo de la palabra"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s1.follow-the-rules",
+          "en": "Follow the rules",
+          "gl": "Seguir as normas",
+          "es": "Seguir las normas",
+          "tprAction": {
+            "gl": "Camiñar pola liña marcada",
+            "es": "Caminar por la línea marcada"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s1.cooperate",
+          "en": "Cooperate",
+          "gl": "Colaborar",
+          "es": "Colaborar",
+          "tprAction": {
+            "gl": "Levar unha caixa entre dous",
+            "es": "Llevar una caja entre dos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s1.fair",
+          "en": "Fair",
+          "gl": "Xusto",
+          "es": "Justo",
+          "tprAction": {
+            "gl": "Repartir en partes iguais",
+            "es": "Repartir en partes iguales"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s1.responsible",
+          "en": "Responsible",
+          "gl": "Responsable",
+          "es": "Responsable",
+          "tprAction": {
+            "gl": "Coidar a planta da clase",
+            "es": "Cuidar la planta de la clase"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s1.honest",
+          "en": "Honest",
+          "gl": "Sincero",
+          "es": "Sincero",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s1.respectful",
+          "en": "Respectful",
+          "gl": "Respectuoso",
+          "es": "Respetuoso",
+          "tprAction": {
+            "gl": "Escoitar mirando a quen fala",
+            "es": "Escuchar mirando a quien habla"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s1.wait-your-turn-please",
+          "en": "Wait your turn, please",
+          "gl": "Agarda a túa quenda, por favor",
+          "es": "Espera tu turno, por favor",
+          "tprAction": {
+            "gl": "Pousar as mans no colo e agardar",
+            "es": "Poner las manos en el regazo y esperar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.setembro.s1.we-listen-because-we-care",
+          "en": "We listen because we care",
+          "gl": "Escoitamos porque nos importa",
+          "es": "Escuchamos porque nos importa",
+          "tprAction": {
+            "gl": "Levar a man á orella e ao peito",
+            "es": "Llevar la mano a la oreja y al pecho"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.setembro.s1.who-wants-to-be-captain",
+          "en": "Who wants to be captain?",
+          "gl": "Quen quere ser capitán?",
+          "es": "¿Quién quiere ser capitán?",
+          "tprAction": {
+            "gl": "Levantar a man",
+            "es": "Levantar la mano"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.setembro.s1.if-you-want-to-talk-raise-your-hand",
+          "en": "If you want to talk, raise your hand",
+          "gl": "Se queres falar, levanta a man",
+          "es": "Si quieres hablar, levanta la mano",
+          "tprAction": {
+            "gl": "Levantar a man antes de falar",
+            "es": "Levantar la mano antes de hablar"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Construímos xuntos",
+        "es": "Construimos juntos"
+      },
+      "palabras": [
+        {
+          "id": "4_5.setembro.s2.construction-site",
+          "en": "Construction site",
+          "gl": "Obra",
+          "es": "Obra",
+          "tprAction": {
+            "gl": "Poñer un casco imaxinario",
+            "es": "Ponerse un casco imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s2.wooden-plank",
+          "en": "Wooden plank",
+          "gl": "Táboa de madeira",
+          "es": "Tabla de madera",
+          "tprAction": {
+            "gl": "Levar unha táboa entre dous",
+            "es": "Llevar una tabla entre dos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s2.bridge",
+          "en": "Bridge",
+          "gl": "Ponte",
+          "es": "Puente",
+          "tprAction": {
+            "gl": "Facer unha ponte cos corpos",
+            "es": "Hacer un puente con los cuerpos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s2.plan",
+          "en": "Plan",
+          "gl": "Plano",
+          "es": "Plano",
+          "tprAction": {
+            "gl": "Sinalar un plano debuxado",
+            "es": "Señalar un plano dibujado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s2.hard-hat",
+          "en": "Hard hat",
+          "gl": "Casco de obra",
+          "es": "Casco de obra",
+          "tprAction": {
+            "gl": "Tocar o casco na cabeza",
+            "es": "Tocar el casco en la cabeza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s2.base",
+          "en": "Base",
+          "gl": "Base",
+          "es": "Base",
+          "tprAction": {
+            "gl": "Poñer as pezas grandes abaixo",
+            "es": "Poner las piezas grandes abajo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s2.blueprint",
+          "en": "Blueprint",
+          "gl": "Deseño",
+          "es": "Diseño",
+          "tprAction": {
+            "gl": "Debuxar un plano no aire",
+            "es": "Dibujar un plano en el aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s2.build-high",
+          "en": "Build high",
+          "gl": "Construír alto",
+          "es": "Construir alto",
+          "tprAction": {
+            "gl": "Poñer bloques ata arriba",
+            "es": "Poner bloques hasta arriba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s2.hold-steady",
+          "en": "Hold steady",
+          "gl": "Suxeitar firme",
+          "es": "Sujetar firme",
+          "tprAction": {
+            "gl": "Suxeitar a torre coas dúas mans",
+            "es": "Sujetar la torre con las dos manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s2.measure",
+          "en": "Measure",
+          "gl": "Medir",
+          "es": "Medir",
+          "tprAction": {
+            "gl": "Medir cos palmos",
+            "es": "Medir con los palmos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s2.connect",
+          "en": "Connect",
+          "gl": "Conectar",
+          "es": "Conectar",
+          "tprAction": {
+            "gl": "Unir dúas pezas",
+            "es": "Unir dos piezas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s2.share-blocks",
+          "en": "Share blocks",
+          "gl": "Compartir bloques",
+          "es": "Compartir bloques",
+          "tprAction": {
+            "gl": "Dar a metade dos bloques",
+            "es": "Dar la mitad de los bloques"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s2.sturdy",
+          "en": "Sturdy",
+          "gl": "Resistente",
+          "es": "Resistente",
+          "tprAction": {
+            "gl": "Empurrar a torre sen que caia",
+            "es": "Empujar la torre sin que caiga"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s2.taller",
+          "en": "Taller",
+          "gl": "Máis alto",
+          "es": "Más alto",
+          "tprAction": {
+            "gl": "Comparar dúas torres coa man",
+            "es": "Comparar dos torres con la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s2.wider",
+          "en": "Wider",
+          "gl": "Máis ancho",
+          "es": "Más ancho",
+          "tprAction": {
+            "gl": "Abrir os brazos máis",
+            "es": "Abrir los brazos más"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s2.wobbly-bridge",
+          "en": "Wobbly bridge",
+          "gl": "Ponte que bambea",
+          "es": "Puente que se tambalea",
+          "tprAction": {
+            "gl": "Camiñar con equilibrio",
+            "es": "Caminar con equilibrio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s2.can-you-help-me-build",
+          "en": "Can you help me build?",
+          "gl": "Axúdasme a construír?",
+          "es": "¿Me ayudas a construir?",
+          "tprAction": {
+            "gl": "Estender un bloque a un amigo",
+            "es": "Extender un bloque a un amigo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.setembro.s2.hold-it-please",
+          "en": "Hold it, please!",
+          "gl": "Suxéitao, por favor!",
+          "es": "¡Sujétalo, por favor!",
+          "tprAction": {
+            "gl": "Suxeitar coas dúas mans",
+            "es": "Sujetar con las dos manos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.setembro.s2.let-s-build-a-bridge",
+          "en": "Let's build a bridge!",
+          "gl": "Imos facer unha ponte!",
+          "es": "¡Vamos a hacer un puente!",
+          "tprAction": {
+            "gl": "Xuntar as mans en arco",
+            "es": "Juntar las manos en arco"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.setembro.s2.it-fell-down-because-it-was-too-high",
+          "en": "It fell down because it was too high",
+          "gl": "Caeu porque era moi alta",
+          "es": "Se cayó porque era muy alta",
+          "tprAction": {
+            "gl": "Deixar caer a torre e explicar coas mans",
+            "es": "Dejar caer la torre y explicar con las manos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Mans limpas, corpo san",
+        "es": "Manos limpias, cuerpo sano"
+      },
+      "palabras": [
+        {
+          "id": "4_5.setembro.s3.germs",
+          "en": "Germs",
+          "gl": "Xermes",
+          "es": "Gérmenes",
+          "tprAction": {
+            "gl": "Fregar as mans para quitalos",
+            "es": "Frotar las manos para quitarlos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s3.nail-brush",
+          "en": "Nail brush",
+          "gl": "Cepillo de uñas",
+          "es": "Cepillo de uñas",
+          "tprAction": {
+            "gl": "Fregar as uñas co cepillo",
+            "es": "Frotar las uñas con el cepillo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s3.hand-gel",
+          "en": "Hand gel",
+          "gl": "Xel de mans",
+          "es": "Gel de manos",
+          "tprAction": {
+            "gl": "Fregar as mans co xel",
+            "es": "Frotar las manos con el gel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s3.tissue-box",
+          "en": "Tissue box",
+          "gl": "Caixa de panos",
+          "es": "Caja de pañuelos",
+          "tprAction": {
+            "gl": "Coller un pano da caixa",
+            "es": "Coger un pañuelo de la caja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s3.healthy-snack",
+          "en": "Healthy snack",
+          "gl": "Merenda saudable",
+          "es": "Merienda saludable",
+          "tprAction": {
+            "gl": "Amosar unha froita",
+            "es": "Enseñar una fruta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s3.water-break",
+          "en": "Water break",
+          "gl": "Pausa para beber",
+          "es": "Pausa para beber",
+          "tprAction": {
+            "gl": "Beber un grolo",
+            "es": "Beber un sorbo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s3.lunch-time",
+          "en": "Lunch time",
+          "gl": "Hora de xantar",
+          "es": "Hora de comer",
+          "tprAction": {
+            "gl": "Sentarse á mesa",
+            "es": "Sentarse a la mesa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s3.wash-thoroughly",
+          "en": "Wash thoroughly",
+          "gl": "Lavar ben",
+          "es": "Lavar bien",
+          "tprAction": {
+            "gl": "Fregar entre os dedos",
+            "es": "Frotar entre los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s3.rinse-well",
+          "en": "Rinse well",
+          "gl": "Aclarar ben",
+          "es": "Aclarar bien",
+          "tprAction": {
+            "gl": "Pasar as mans baixo a auga",
+            "es": "Pasar las manos bajo el agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s3.count-to-twenty",
+          "en": "Count to twenty",
+          "gl": "Contar ata vinte",
+          "es": "Contar hasta veinte",
+          "tprAction": {
+            "gl": "Contar mentres se lavan as mans",
+            "es": "Contar mientras se lavan las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s3.queue-up",
+          "en": "Queue up",
+          "gl": "Facer cola",
+          "es": "Hacer cola",
+          "tprAction": {
+            "gl": "Poñerse en fila para o lavabo",
+            "es": "Ponerse en fila para el lavabo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s3.drink-water",
+          "en": "Drink water",
+          "gl": "Beber auga",
+          "es": "Beber agua",
+          "tprAction": {
+            "gl": "Levar o vaso á boca",
+            "es": "Llevar el vaso a la boca"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s3.germ-free",
+          "en": "Germ-free",
+          "gl": "Sen xermes",
+          "es": "Sin gérmenes",
+          "tprAction": {
+            "gl": "Amosar as mans limpas",
+            "es": "Enseñar las manos limpias"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s3.well-rested",
+          "en": "Well-rested",
+          "gl": "Descansado",
+          "es": "Descansado",
+          "tprAction": {
+            "gl": "Estirarse despois de descansar",
+            "es": "Estirarse después de descansar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s3.energetic",
+          "en": "Energetic",
+          "gl": "Con enerxía",
+          "es": "Con energía",
+          "tprAction": {
+            "gl": "Saltar no sitio",
+            "es": "Saltar en el sitio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s3.hydrated",
+          "en": "Hydrated",
+          "gl": "Ben hidratado",
+          "es": "Bien hidratado",
+          "tprAction": {
+            "gl": "Beber e sorrir",
+            "es": "Beber y sonreír"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s3.wash-your-hands-before-lunch",
+          "en": "Wash your hands before lunch",
+          "gl": "Lava as mans antes de xantar",
+          "es": "Lávate las manos antes de comer",
+          "tprAction": {
+            "gl": "Lavar as mans e sentarse",
+            "es": "Lavarse las manos y sentarse"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.setembro.s3.why-do-we-wash-our-hands",
+          "en": "Why do we wash our hands?",
+          "gl": "Por que lavamos as mans?",
+          "es": "¿Por qué nos lavamos las manos?",
+          "tprAction": {
+            "gl": "Encoller os ombros preguntando",
+            "es": "Encoger los hombros preguntando"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.setembro.s3.soap-first-then-water",
+          "en": "Soap first, then water",
+          "gl": "Primeiro xabón, despois auga",
+          "es": "Primero jabón, luego agua",
+          "tprAction": {
+            "gl": "Facer os dous xestos en orde",
+            "es": "Hacer los dos gestos en orden"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.setembro.s3.between-your-fingers-too",
+          "en": "Between your fingers too!",
+          "gl": "Tamén entre os dedos!",
+          "es": "¡También entre los dedos!",
+          "tprAction": {
+            "gl": "Fregar entre os dedos",
+            "es": "Frotar entre los dedos"
+          },
+          "category": "phrase"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Sentimentos e palabras",
+        "es": "Sentimientos y palabras"
+      },
+      "palabras": [
+        {
+          "id": "4_5.setembro.s4.feelings-chart",
+          "en": "Feelings chart",
+          "gl": "Panel das emocións",
+          "es": "Panel de las emociones",
+          "tprAction": {
+            "gl": "Sinalar unha cara no panel",
+            "es": "Señalar una cara en el panel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s4.calm-down-corner",
+          "en": "Calm-down corner",
+          "gl": "Recuncho da calma",
+          "es": "Rincón de la calma",
+          "tprAction": {
+            "gl": "Sentarse no recuncho",
+            "es": "Sentarse en el rincón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s4.deep-breath",
+          "en": "Deep breath",
+          "gl": "Respiración fonda",
+          "es": "Respiración profunda",
+          "tprAction": {
+            "gl": "Inchar a barriga de aire",
+            "es": "Inflar la barriga de aire"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s4.feeling",
+          "en": "Feeling",
+          "gl": "Sentimento",
+          "es": "Sentimiento",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s4.hug-buddy",
+          "en": "Hug buddy",
+          "gl": "Compañeiro de apertas",
+          "es": "Compañero de abrazos",
+          "tprAction": {
+            "gl": "Abrazar un peluche",
+            "es": "Abrazar un peluche"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s4.kind-words",
+          "en": "Kind words",
+          "gl": "Palabras amables",
+          "es": "Palabras amables",
+          "tprAction": {
+            "gl": "Sorrir e falar suave",
+            "es": "Sonreír y hablar suave"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s4.friendship",
+          "en": "Friendship",
+          "gl": "Amizade",
+          "es": "Amistad",
+          "tprAction": {
+            "gl": "Xuntar os dedos índices",
+            "es": "Juntar los dedos índices"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.setembro.s4.calm-down",
+          "en": "Calm down",
+          "gl": "Acougar",
+          "es": "Calmarse",
+          "tprAction": {
+            "gl": "Respirar amodo coas mans na barriga",
+            "es": "Respirar despacio con las manos en la barriga"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s4.express",
+          "en": "Express",
+          "gl": "Expresar",
+          "es": "Expresar",
+          "tprAction": {
+            "gl": "Abrir as mans dende o peito",
+            "es": "Abrir las manos desde el pecho"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s4.comfort",
+          "en": "Comfort",
+          "gl": "Consolar",
+          "es": "Consolar",
+          "tprAction": {
+            "gl": "Pousar a man no ombro dun amigo",
+            "es": "Poner la mano en el hombro de un amigo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s4.apologise",
+          "en": "Apologise",
+          "gl": "Pedir perdón",
+          "es": "Pedir perdón",
+          "tprAction": {
+            "gl": "Pousar a man no peito e baixar a cabeza",
+            "es": "Poner la mano en el pecho y bajar la cabeza"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s4.forgive",
+          "en": "Forgive",
+          "gl": "Perdoar",
+          "es": "Perdonar",
+          "tprAction": {
+            "gl": "Abrir os brazos a un amigo",
+            "es": "Abrir los brazos a un amigo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.setembro.s4.cheerful-face",
+          "en": "Cheerful face",
+          "gl": "Cara alegre",
+          "es": "Cara alegre",
+          "tprAction": {
+            "gl": "Sorrir moi grande",
+            "es": "Sonreír muy grande"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s4.grumpy",
+          "en": "Grumpy",
+          "gl": "Rosmón",
+          "es": "Gruñón",
+          "tprAction": {
+            "gl": "Cruzar os brazos e logo rir",
+            "es": "Cruzar los brazos y luego reír"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s4.frustrated",
+          "en": "Frustrated",
+          "gl": "Frustrado",
+          "es": "Frustrado",
+          "tprAction": {
+            "gl": "Apertar os puños e soltalos",
+            "es": "Apretar los puños y soltarlos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s4.peaceful-mind",
+          "en": "Peaceful mind",
+          "gl": "Mente tranquila",
+          "es": "Mente tranquila",
+          "tprAction": {
+            "gl": "Pechar os ollos e respirar",
+            "es": "Cerrar los ojos y respirar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.setembro.s4.how-do-you-feel",
+          "en": "How do you feel?",
+          "gl": "Como te sentes?",
+          "es": "¿Cómo te sientes?",
+          "tprAction": {
+            "gl": "Sinalar o panel das emocións",
+            "es": "Señalar el panel de las emociones"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.setembro.s4.i-feel-happy-because-we-play",
+          "en": "I feel happy because we play",
+          "gl": "Estou contento porque xogamos",
+          "es": "Estoy contento porque jugamos",
+          "tprAction": {
+            "gl": "Sorrir e bater palmas",
+            "es": "Sonreír y dar palmas"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.setembro.s4.i-m-sorry",
+          "en": "I'm sorry",
+          "gl": "Síntoo",
+          "es": "Lo siento",
+          "tprAction": {
+            "gl": "Pousar a man no peito",
+            "es": "Poner la mano en el pecho"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.setembro.s4.that-s-ok",
+          "en": "That's OK",
+          "gl": "Non pasa nada",
+          "es": "No pasa nada",
+          "tprAction": {
+            "gl": "Sorrir e abrir as mans",
+            "es": "Sonreír y abrir las manos"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

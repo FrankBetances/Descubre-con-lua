@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.2_3.abril",
+  "curso": "curso_2_3",
+  "orden": 8,
+  "mesCalendario": 4,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "A herba esperta",
+        "es": "La hierba despierta"
+      },
+      "palabras": [
+        {
+          "id": "2_3.abril.s1.meadow",
+          "en": "Meadow",
+          "gl": "Prado",
+          "es": "Prado",
+          "tprAction": {
+            "gl": "Abrir os brazos no prado",
+            "es": "Abrir los brazos en el prado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s1.dandelion",
+          "en": "Dandelion",
+          "gl": "Dente de león",
+          "es": "Diente de león",
+          "tprAction": {
+            "gl": "Soprar un dente de león",
+            "es": "Soplar un diente de león"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s1.clover",
+          "en": "Clover",
+          "gl": "Trevo",
+          "es": "Trébol",
+          "tprAction": {
+            "gl": "Amosar tres dedos coma un trevo",
+            "es": "Enseñar tres dedos como un trébol"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s1.blade-of-grass",
+          "en": "Blade of grass",
+          "gl": "Folla de herba",
+          "es": "Brizna de hierba",
+          "tprAction": {
+            "gl": "Coller unha folla de herba",
+            "es": "Coger una brizna de hierba"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s1.buttercup",
+          "en": "Buttercup",
+          "gl": "Botón de ouro",
+          "es": "Botón de oro",
+          "tprAction": {
+            "gl": "Pousar unha flor amarela no queixo",
+            "es": "Poner una flor amarilla en la barbilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s1.grasshopper",
+          "en": "Grasshopper",
+          "gl": "Saltón",
+          "es": "Saltamontes",
+          "tprAction": {
+            "gl": "Saltar coma un saltón",
+            "es": "Saltar como un saltamontes"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s1.picnic-spot",
+          "en": "Picnic spot",
+          "gl": "Sitio de merenda",
+          "es": "Sitio de merienda",
+          "tprAction": {
+            "gl": "Sinalar un bo sitio",
+            "es": "Señalar un buen sitio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s1.lie-on-the-grass",
+          "en": "Lie on the grass",
+          "gl": "Deitarse na herba",
+          "es": "Tumbarse en la hierba",
+          "tprAction": {
+            "gl": "Deitarse e mirar o ceo",
+            "es": "Tumbarse y mirar el cielo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s1.roll-down",
+          "en": "Roll down",
+          "gl": "Rodar cara abaixo",
+          "es": "Rodar hacia abajo",
+          "tprAction": {
+            "gl": "Rodar de lado",
+            "es": "Rodar de lado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s1.tiptoe-through",
+          "en": "Tiptoe through",
+          "gl": "Pasar de puntas",
+          "es": "Pasar de puntillas",
+          "tprAction": {
+            "gl": "Camiñar de puntas pola herba",
+            "es": "Caminar de puntillas por la hierba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s1.blow-seeds",
+          "en": "Blow seeds",
+          "gl": "Soprar sementes",
+          "es": "Soplar semillas",
+          "tprAction": {
+            "gl": "Soprar un dente de león",
+            "es": "Soplar un diente de león"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s1.tickle-toes",
+          "en": "Tickle toes",
+          "gl": "Facer cóxegas nos pés",
+          "es": "Hacer cosquillas en los pies",
+          "tprAction": {
+            "gl": "Pasar herba polos pés",
+            "es": "Pasar hierba por los pies"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s1.grassy",
+          "en": "Grassy",
+          "gl": "Herboso",
+          "es": "Herboso",
+          "tprAction": {
+            "gl": "Tocar a herba coa palma",
+            "es": "Tocar la hierba con la palma"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s1.tickly-grass",
+          "en": "Tickly grass",
+          "gl": "Herba que fai cóxegas",
+          "es": "Hierba que hace cosquillas",
+          "tprAction": {
+            "gl": "Rir ao tocar a herba",
+            "es": "Reír al tocar la hierba"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s1.fluffy-seeds",
+          "en": "Fluffy seeds",
+          "gl": "Sementes lanudas",
+          "es": "Semillas algodonosas",
+          "tprAction": {
+            "gl": "Soprar suave",
+            "es": "Soplar suave"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s1.fresh-green",
+          "en": "Fresh green",
+          "gl": "Verde fresco",
+          "es": "Verde fresco",
+          "tprAction": {
+            "gl": "Sinalar a herba nova",
+            "es": "Señalar la hierba nueva"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s1.make-a-wish",
+          "en": "Make a wish!",
+          "gl": "Pide un desexo!",
+          "es": "¡Pide un deseo!",
+          "tprAction": {
+            "gl": "Soprar o dente de león",
+            "es": "Soplar el diente de león"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.abril.s1.the-grass-tickles",
+          "en": "The grass tickles!",
+          "gl": "A herba fai cóxegas!",
+          "es": "¡La hierba hace cosquillas!",
+          "tprAction": {
+            "gl": "Rir tocando a herba",
+            "es": "Reír tocando la hierba"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.abril.s1.on-the-grass",
+          "en": "On the grass",
+          "gl": "Na herba",
+          "es": "En la hierba",
+          "tprAction": {
+            "gl": "Sentarse na herba",
+            "es": "Sentarse en la hierba"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.abril.s1.up-the-hill-and-down",
+          "en": "Up the hill and down",
+          "gl": "Outeiro arriba e abaixo",
+          "es": "Cuesta arriba y abajo",
+          "tprAction": {
+            "gl": "Subir e baixar coas mans",
+            "es": "Subir y bajar con las manos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Paxariños",
+        "es": "Pajaritos"
+      },
+      "palabras": [
+        {
+          "id": "2_3.abril.s2.blackbird",
+          "en": "Blackbird",
+          "gl": "Merlo",
+          "es": "Mirlo",
+          "tprAction": {
+            "gl": "Asubiar coma un merlo",
+            "es": "Silbar como un mirlo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s2.swallow",
+          "en": "Swallow",
+          "gl": "Anduriña",
+          "es": "Golondrina",
+          "tprAction": {
+            "gl": "Voar cos brazos en V",
+            "es": "Volar con los brazos en V"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s2.wing",
+          "en": "Wing",
+          "gl": "Á",
+          "es": "Ala",
+          "tprAction": {
+            "gl": "Abrir un brazo coma unha á",
+            "es": "Abrir un brazo como un ala"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s2.bird-song",
+          "en": "Bird song",
+          "gl": "Canto dos paxaros",
+          "es": "Canto de los pájaros",
+          "tprAction": {
+            "gl": "Escoitar coa man na orella",
+            "es": "Escuchar con la mano en la oreja"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s2.birdseed",
+          "en": "Birdseed",
+          "gl": "Alpiste",
+          "es": "Alpiste",
+          "tprAction": {
+            "gl": "Botar alpiste na man",
+            "es": "Echar alpiste en la mano"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s2.bird-bath",
+          "en": "Bird bath",
+          "gl": "Bebedoiro de paxaros",
+          "es": "Bebedero de pájaros",
+          "tprAction": {
+            "gl": "Mollar os dedos coma un paxaro",
+            "es": "Mojar los dedos como un pájaro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s2.branch-perch",
+          "en": "Branch perch",
+          "gl": "Pouso na póla",
+          "es": "Posadero en la rama",
+          "tprAction": {
+            "gl": "Pousarse coma un paxaro",
+            "es": "Posarse como un pájaro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s2.whistle-a-tune",
+          "en": "Whistle a tune",
+          "gl": "Asubiar unha melodía",
+          "es": "Silbar una melodía",
+          "tprAction": {
+            "gl": "Asubiar baixiño",
+            "es": "Silbar bajito"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s2.perch",
+          "en": "Perch",
+          "gl": "Pousarse",
+          "es": "Posarse",
+          "tprAction": {
+            "gl": "Agacharse coma un paxaro nunha póla",
+            "es": "Agacharse como un pájaro en una rama"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s2.fly-off",
+          "en": "Fly off",
+          "gl": "Levantar o voo",
+          "es": "Echar a volar",
+          "tprAction": {
+            "gl": "Estirar os brazos e correr",
+            "es": "Estirar los brazos y correr"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s2.peck-at-seeds",
+          "en": "Peck at seeds",
+          "gl": "Picar sementes",
+          "es": "Picotear semillas",
+          "tprAction": {
+            "gl": "Picar coa man coma un bico",
+            "es": "Picotear con la mano como un pico"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s2.swoop",
+          "en": "Swoop",
+          "gl": "Baixar en picado",
+          "es": "Bajar en picado",
+          "tprAction": {
+            "gl": "Baixar os brazos voando",
+            "es": "Bajar los brazos volando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s2.tuneful",
+          "en": "Tuneful",
+          "gl": "Melodioso",
+          "es": "Melodioso",
+          "tprAction": {
+            "gl": "Tararear bonito",
+            "es": "Tararear bonito"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s2.quick-little",
+          "en": "Quick little",
+          "gl": "Pequeno e rápido",
+          "es": "Pequeño y rápido",
+          "tprAction": {
+            "gl": "Mover os dedos rápido",
+            "es": "Mover los dedos rápido"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s2.feathered",
+          "en": "Feathered",
+          "gl": "Emplumado",
+          "es": "Emplumado",
+          "tprAction": {
+            "gl": "Acariñar unha pluma",
+            "es": "Acariciar una pluma"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s2.high-up",
+          "en": "High up",
+          "gl": "Moi alto",
+          "es": "Muy alto",
+          "tprAction": {
+            "gl": "Sinalar moi arriba",
+            "es": "Señalar muy arriba"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s2.listen-to-the-birds",
+          "en": "Listen to the birds",
+          "gl": "Escoita os paxaros",
+          "es": "Escucha a los pájaros",
+          "tprAction": {
+            "gl": "Levar a man á orella",
+            "es": "Llevar la mano a la oreja"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.abril.s2.fly-away-bird",
+          "en": "Fly away, bird!",
+          "gl": "Voa, paxaro!",
+          "es": "¡Vuela, pájaro!",
+          "tprAction": {
+            "gl": "Abrir as mans cara arriba",
+            "es": "Abrir las manos hacia arriba"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.abril.s2.in-the-tree",
+          "en": "In the tree",
+          "gl": "Na árbore",
+          "es": "En el árbol",
+          "tprAction": {
+            "gl": "Sinalar a árbore",
+            "es": "Señalar el árbol"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.abril.s2.wings-up-wings-down",
+          "en": "Wings up, wings down",
+          "gl": "Ás arriba, ás abaixo",
+          "es": "Alas arriba, alas abajo",
+          "tprAction": {
+            "gl": "Subir e baixar os brazos",
+            "es": "Subir y bajar los brazos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Falamos baixiño",
+        "es": "Hablamos bajito"
+      },
+      "palabras": [
+        {
+          "id": "2_3.abril.s3.whisper-game",
+          "en": "Whisper game",
+          "gl": "Xogo do segredo",
+          "es": "Juego del secreto",
+          "tprAction": {
+            "gl": "Dicir algo á orella",
+            "es": "Decir algo al oído"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s3.library",
+          "en": "Library",
+          "gl": "Biblioteca",
+          "es": "Biblioteca",
+          "tprAction": {
+            "gl": "Pasar un libro amodo",
+            "es": "Pasar un libro despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s3.quiet-corner",
+          "en": "Quiet corner",
+          "gl": "Recuncho tranquilo",
+          "es": "Rincón tranquilo",
+          "tprAction": {
+            "gl": "Sentarse no recuncho",
+            "es": "Sentarse en el rincón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s3.finger-on-lips",
+          "en": "Finger on lips",
+          "gl": "Dedo nos beizos",
+          "es": "Dedo en los labios",
+          "tprAction": {
+            "gl": "Pousar o dedo nos beizos",
+            "es": "Posar el dedo en los labios"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s3.sleeping-animal",
+          "en": "Sleeping animal",
+          "gl": "Animal durmido",
+          "es": "Animal dormido",
+          "tprAction": {
+            "gl": "Pousar a cabeza nas mans",
+            "es": "Apoyar la cabeza en las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s3.soft-voice",
+          "en": "Soft voice",
+          "gl": "Voz suave",
+          "es": "Voz suave",
+          "tprAction": {
+            "gl": "Falar moi suave",
+            "es": "Hablar muy suave"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s3.nap-time",
+          "en": "Nap time",
+          "gl": "Hora da sesta",
+          "es": "Hora de la siesta",
+          "tprAction": {
+            "gl": "Deitarse na esteira",
+            "es": "Tumbarse en la esterilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s3.speak-softly",
+          "en": "Speak softly",
+          "gl": "Falar suave",
+          "es": "Hablar suave",
+          "tprAction": {
+            "gl": "Dicir unha palabra moi baixo",
+            "es": "Decir una palabra muy bajo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s3.tiptoe-around",
+          "en": "Tiptoe around",
+          "gl": "Andar de puntas",
+          "es": "Andar de puntillas",
+          "tprAction": {
+            "gl": "Camiñar de puntas arredor",
+            "es": "Caminar de puntillas alrededor"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s3.close-the-book",
+          "en": "Close the book",
+          "gl": "Pechar o libro",
+          "es": "Cerrar el libro",
+          "tprAction": {
+            "gl": "Pechar o libro amodo",
+            "es": "Cerrar el libro despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s3.lie-still",
+          "en": "Lie still",
+          "gl": "Quedar quieto deitado",
+          "es": "Quedarse quieto tumbado",
+          "tprAction": {
+            "gl": "Deitarse sen moverse",
+            "es": "Tumbarse sin moverse"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s3.breathe-in-slowly",
+          "en": "Breathe in slowly",
+          "gl": "Coller aire amodo",
+          "es": "Coger aire despacio",
+          "tprAction": {
+            "gl": "Inspirar amodo polo nariz",
+            "es": "Inspirar despacio por la nariz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s3.whispery",
+          "en": "Whispery",
+          "gl": "Susurrante",
+          "es": "Susurrante",
+          "tprAction": {
+            "gl": "Falar coa voz moi baixiña",
+            "es": "Hablar con la voz muy bajita"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s3.silent",
+          "en": "Silent",
+          "gl": "En silencio",
+          "es": "En silencio",
+          "tprAction": {
+            "gl": "Pechar a boca coas mans",
+            "es": "Taparse la boca con las manos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s3.restful",
+          "en": "Restful",
+          "gl": "Descansado",
+          "es": "Descansado",
+          "tprAction": {
+            "gl": "Pechar os ollos amodo",
+            "es": "Cerrar los ojos despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s3.tiptoey",
+          "en": "Tiptoey",
+          "gl": "De puntiñas",
+          "es": "De puntillas",
+          "tprAction": {
+            "gl": "Camiñar de puntas",
+            "es": "Caminar de puntillas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s3.shh-baby-s-sleeping",
+          "en": "Shh, baby's sleeping",
+          "gl": "Shh, o bebé dorme",
+          "es": "Shh, el bebé duerme",
+          "tprAction": {
+            "gl": "Poñer o dedo nos beizos",
+            "es": "Poner el dedo en los labios"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.abril.s3.whisper-to-me",
+          "en": "Whisper to me",
+          "gl": "Dimo baixiño",
+          "es": "Dímelo bajito",
+          "tprAction": {
+            "gl": "Achegar a orella",
+            "es": "Acercar la oreja"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.abril.s3.quietly-quietly",
+          "en": "Quietly, quietly",
+          "gl": "Amodiño, amodiño",
+          "es": "Despacito, despacito",
+          "tprAction": {
+            "gl": "Camiñar moi amodo",
+            "es": "Caminar muy despacio"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.abril.s3.from-loud-to-quiet",
+          "en": "From loud to quiet",
+          "gl": "De forte a baixiño",
+          "es": "De fuerte a bajito",
+          "tprAction": {
+            "gl": "Falar forte e despois baixo",
+            "es": "Hablar fuerte y luego bajo"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Niños e ovos",
+        "es": "Nidos y huevos"
+      },
+      "palabras": [
+        {
+          "id": "2_3.abril.s4.robin-s-nest",
+          "en": "Robin's nest",
+          "gl": "Niño de paporroibo",
+          "es": "Nido de petirrojo",
+          "tprAction": {
+            "gl": "Facer un niño coas mans",
+            "es": "Hacer un nido con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s4.eggshell",
+          "en": "Eggshell",
+          "gl": "Casca de ovo",
+          "es": "Cáscara de huevo",
+          "tprAction": {
+            "gl": "Abrir as mans coma unha casca",
+            "es": "Abrir las manos como una cáscara"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s4.hatchling",
+          "en": "Hatchling",
+          "gl": "Pitiño recén nado",
+          "es": "Polluelo",
+          "tprAction": {
+            "gl": "Acurrucarse coma un pitiño",
+            "es": "Acurrucarse como un polluelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s4.straw",
+          "en": "Straw",
+          "gl": "Palla",
+          "es": "Paja",
+          "tprAction": {
+            "gl": "Tecer palla cos dedos",
+            "es": "Tejer paja con los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s4.mother-bird",
+          "en": "Mother bird",
+          "gl": "Mamá paxaro",
+          "es": "Mamá pájaro",
+          "tprAction": {
+            "gl": "Abrir os brazos coma ás que protexen",
+            "es": "Abrir los brazos como alas que protegen"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s4.feather-bed",
+          "en": "Feather bed",
+          "gl": "Cama de plumas",
+          "es": "Cama de plumas",
+          "tprAction": {
+            "gl": "Pousar a cabeza nunha almofada",
+            "es": "Apoyar la cabeza en una almohada"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s4.twigs",
+          "en": "Twigs",
+          "gl": "Pólas miúdas",
+          "es": "Ramitas",
+          "tprAction": {
+            "gl": "Xuntar ramiñas",
+            "es": "Juntar ramitas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.abril.s4.build-a-nest",
+          "en": "Build a nest",
+          "gl": "Facer un niño",
+          "es": "Hacer un nido",
+          "tprAction": {
+            "gl": "Entrelazar os dedos",
+            "es": "Entrelazar los dedos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s4.crack-out",
+          "en": "Crack out",
+          "gl": "Saír do ovo",
+          "es": "Salir del huevo",
+          "tprAction": {
+            "gl": "Saír dunha bóla co corpo",
+            "es": "Salir de una bola con el cuerpo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s4.keep-warm",
+          "en": "Keep warm",
+          "gl": "Manter quente",
+          "es": "Mantener caliente",
+          "tprAction": {
+            "gl": "Tapar o ovo coas mans",
+            "es": "Tapar el huevo con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s4.chirp",
+          "en": "Chirp",
+          "gl": "Piar",
+          "es": "Piar",
+          "tprAction": {
+            "gl": "Facer «pío» cos beizos",
+            "es": "Hacer «pío» con los labios"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s4.open-beak",
+          "en": "Open beak",
+          "gl": "Abrir o bico",
+          "es": "Abrir el pico",
+          "tprAction": {
+            "gl": "Abrir moito a boca",
+            "es": "Abrir mucho la boca"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.abril.s4.newborn",
+          "en": "Newborn",
+          "gl": "Recén nado",
+          "es": "Recién nacido",
+          "tprAction": {
+            "gl": "Acurrucarse moi pequeno",
+            "es": "Acurrucarse muy pequeño"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s4.fragile",
+          "en": "Fragile",
+          "gl": "Fráxil",
+          "es": "Frágil",
+          "tprAction": {
+            "gl": "Coller algo con moito coidado",
+            "es": "Coger algo con mucho cuidado"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s4.cosy-nest",
+          "en": "Cosy nest",
+          "gl": "Niño acolledor",
+          "es": "Nido acogedor",
+          "tprAction": {
+            "gl": "Abrazarse a si mesmo",
+            "es": "Abrazarse a sí mismo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s4.twiggy",
+          "en": "Twiggy",
+          "gl": "De pólas",
+          "es": "De ramitas",
+          "tprAction": {
+            "gl": "Tocar un niño de pólas",
+            "es": "Tocar un nido de ramitas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.abril.s4.crack-crack",
+          "en": "Crack, crack!",
+          "gl": "Crac, crac!",
+          "es": "¡Crac, crac!",
+          "tprAction": {
+            "gl": "Abrir as mans amodo",
+            "es": "Abrir las manos despacio"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.abril.s4.hello-little-chick",
+          "en": "Hello, little chick",
+          "gl": "Ola, pitiño",
+          "es": "Hola, pollito",
+          "tprAction": {
+            "gl": "Acariñar un pitiño imaxinario",
+            "es": "Acariciar un pollito imaginario"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.abril.s4.careful-with-the-egg",
+          "en": "Careful with the egg",
+          "gl": "Coidado co ovo",
+          "es": "Cuidado con el huevo",
+          "tprAction": {
+            "gl": "Coller o ovo con moito coidado",
+            "es": "Coger el huevo con mucho cuidado"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.abril.s4.out-of-the-egg",
+          "en": "Out of the egg",
+          "gl": "Fóra do ovo",
+          "es": "Fuera del huevo",
+          "tprAction": {
+            "gl": "Saír encollido e estirarse",
+            "es": "Salir encogido y estirarse"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

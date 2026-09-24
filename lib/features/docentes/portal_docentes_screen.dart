@@ -7,9 +7,11 @@ import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/formacion_model.dart';
+import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../academy/widgets/selector_idioma_widget.dart';
 import '../calendario/views/calendario_screen.dart';
+import '../calendario/widgets/asemblea_do_dia.dart';
 import '../english/views/english_hub_screen.dart';
 import '../formacion/views/formacion_screen.dart';
 import '../juega/views/unidades_list_screen.dart';
@@ -18,13 +20,15 @@ import '../planificador/views/dinamicas_screen.dart';
 import '../planificador/views/estrategias_screen.dart';
 import '../planificador/views/planificador_screen.dart';
 import '../premios/premios_repository.dart';
+import 'widgets/hoxe_na_aula.dart';
 
 /// Pantalla independente do Portal Docentes.
 ///
 /// Deseñada especificamente para as escolas infantís municipais de Vigo:
-/// - Programación de aula para os dous ciclos de Educación Infantil (0 a 6 anos).
+/// - Cockpit pedagóxico de traballo diario para o profesorado.
+/// - Ritmo de adquisición natural: 5 palabras novas/día e matriz de reforzo acumulativo.
 /// - Asambleas guiadas a 72 bpm, canción a pulso visual, matemáticas temperás.
-/// - Planificador de 50 meses baixo o Decreto 150/2022 e inmersión en inglés L3.
+/// - Planificador curricular baixo o Decreto 150/2022 e inmersión en inglés L3.
 class PortalDocentesScreen extends StatefulWidget {
   final ContentRepository repository;
   final PremiosRepository? premios;
@@ -62,10 +66,23 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     es: 'Recursos pedagógicos para las escuelas infantiles municipales de Vigo. Asambleas de aula a 72 bpm, planificador curricular y estrategias educativas.',
   );
 
+  /// El inglés del trayecto. La tarjeta de hoy no se pinta hasta que está: una
+  /// tarjeta de «cinco palabras hoy» sin palabras diría algo que no enseña.
+  ProgramaTpr? get _programa => widget.repository.programaTprSync;
+
+  /// El grupo cuyas palabras enseña la tarjeta de hoy. Solo mientras la
+  /// pantalla está abierta: la app no guarda nada de un aula.
+  String _cursoHoxe = 'curso_0_2';
+
   @override
   void initState() {
     super.initState();
     _language = widget.currentLanguage;
+    if (widget.repository.programaTprSync == null) {
+      widget.repository.loadProgramaTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
   }
 
   @override
@@ -81,10 +98,56 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     widget.onLanguageChanged?.call(newLang);
   }
 
+  /// «Iniciar asemblea de hoxe»: la asamblea de ESE día para el grupo del
+  /// curso elegido en la tarjeta, por el mismo camino que el calendario.
+  void _iniciarAsembleaDeHoxe(
+      BuildContext context, DiaDoCursoTpr hoxe, String cursoId) {
+    for (final g
+        in gruposDaAsembleaDoDia(widget.repository, hoxe.mesCalendario)) {
+      if (cursoTprDoGrupo[g.clave] != cursoId || !g.disponible) continue;
+      abrirAsembleaDoDia(
+        context,
+        repo: widget.repository,
+        grupo: g,
+        mesCalendario: hoxe.mesCalendario,
+        semana: hoxe.semana,
+        dia: hoxe.dia,
+        language: _language,
+        audioService: widget.audioService,
+      );
+      return;
+    }
+  }
+
+  /// «Ver as 4.000 palabras»: los números del trayecto, contados.
+  void _mostrarProxeccionAnual(BuildContext context, ProgramaTpr programa) {
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.white,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+      ),
+      builder: (sheetContext) => DraggableScrollableSheet(
+        expand: false,
+        initialChildSize: 0.85,
+        maxChildSize: 0.95,
+        minChildSize: 0.5,
+        builder: (context, scrollController) => ProxeccionDoCurso(
+          programa: programa,
+          language: _language,
+          scrollController: scrollController,
+          onPechar: () => Navigator.of(sheetContext).pop(),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isGl = _language == AppLanguage.gl;
+    final programa = _programa;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -211,17 +274,34 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                 ],
               ),
             ),
-            const SizedBox(height: 18.0),
+            const SizedBox(height: 16.0),
 
-            // Título de Sección
+            // Hoxe na aula: las cinco palabras del día que toca, del curso.
+            if (programa != null) ...[
+              TarxetaHoxeNaAula(
+                programa: programa,
+                cursoId: _cursoHoxe,
+                onCambiarCurso: (c) => setState(() => _cursoHoxe = c),
+                language: _language,
+                audioService: widget.audioService,
+                onIniciarAsemblea: (d, c) =>
+                    _iniciarAsembleaDeHoxe(context, d, c),
+                onVerPalabras: () => _mostrarProxeccionAnual(context, programa),
+              ),
+              const SizedBox(height: 18.0),
+            ],
+
+            // ==========================================
+            // SECCIÓN 1: ASEMBLEA E AULA ACTIVA
+            // ==========================================
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4.0),
               child: Text(
                 isGl
-                    ? 'PROGRAMACIÓN E AULA ACTIVA'
-                    : 'PROGRAMACIÓN Y AULA ACTIVA',
+                    ? '1. ASEMBLEA E AULA ACTIVA (72 BPM)'
+                    : '1. ASAMBLEA Y AULA ACTIVA (72 BPM)',
                 style: const TextStyle(
-                  fontSize: 12,
+                  fontSize: 11.5,
                   fontWeight: FontWeight.w800,
                   color: AppTheme.textSecondary,
                   letterSpacing: 1.0,
@@ -259,123 +339,9 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                 );
               },
             ),
-            const SizedBox(height: 14.0),
+            const SizedBox(height: 12.0),
 
-            // 2. Planificador Curricular (50 Meses)
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Planificador Curricular (50 Meses)'
-                  : 'Planificador Curricular (50 Meses)',
-              description: isGl
-                  ? 'Programación curricular completa dos 5 cursos de Educación Infantil (0 a 6 anos) con obxectivos e actividades baixo o Decreto 150/2022.'
-                  : 'Programación curricular completa de los 5 cursos de Educación Infantil (0 a 6 años) con objetivos y actividades bajo el Decreto 150/2022.',
-              icon: Icons.calendar_view_month_rounded,
-              iconColor: const Color(0xFF2B6CB0),
-              iconBg: const Color(0xFFEBF8FF),
-              badge: isGl ? '50 Meses Curriculares' : '50 Meses Curriculares',
-              buttonText: isGl ? 'Abrir Planificador' : 'Abrir Planificador',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => PlanificadorScreen(
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 14.0),
-
-            // 3. Calendario Curricular de Aula
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Calendario Escola · Fogar'
-                  : 'Calendario Escuela · Hogar',
-              description: isGl
-                  ? 'Sincronización curricular de 10 meses (Setembro a Xuño): asambleas na aula e notas de conexión para as familias.'
-                  : 'Sincronización curricular de 10 meses (Septiembre a Junio): asambleas en el aula y notas de conexión para las familias.',
-              icon: Icons.calendar_month_rounded,
-              iconColor: const Color(0xFF319795),
-              iconBg: const Color(0xFFE6FFFA),
-              badge: isGl ? '10 Meses Lectivos' : '10 Meses Lectivos',
-              buttonText: isGl ? 'Ver Calendario' : 'Ver Calendario',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => CalendarioScreen(
-                      store: widget.calendario ?? CalendarioStore(),
-                      initialLanguage: _language,
-                      onLanguageChanged: _handleLanguageChanged,
-                      repository: widget.repository,
-                      audioService: widget.audioService,
-                      premios: widget.premios,
-                      esDocenteInicial: true,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 14.0),
-
-            // 4. Inmersión en Inglés L3
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Inmersión en Inglés · L3'
-                  : 'Inmersión en Inglés · L3',
-              description: isGl
-                  ? 'Inventario dos 44 fonemas do inglés, adestrador de repetición espazada FSRS, colocacións gramaticais e comprensión auditiva.'
-                  : 'Inventario de los 44 fonemas del inglés, entrenador de repetición espaciada FSRS, colocaciones gramaticales y comprensión auditiva.',
-              icon: Icons.language_rounded,
-              iconColor: const Color(0xFF805AD5),
-              iconBg: const Color(0xFFFAF5FF),
-              badge: isGl ? 'Phonics & FSRS' : 'Phonics & FSRS',
-              buttonText: isGl ? 'Entrar en Inglés L3' : 'Entrar en Inglés L3',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => EnglishHubScreen(
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                      audioService: widget.audioService,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 14.0),
-
-            // 5. Estratexias Pedagóxicas
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Estratexias Pedagóxicas de Aula'
-                  : 'Estrategias Pedagógicas de Aula',
-              description: isGl
-                  ? '5 estratexias clave de aula: andamiaxe, modelado, tempo de espera de 5 segundos, expansión léxica e recast con diálogos reais.'
-                  : '5 estrategias clave de aula: andamiaje, modelado, tiempo de espera de 5 segundos, expansión léxica y recast con diálogos reales.',
-              icon: Icons.psychology_rounded,
-              iconColor: const Color(0xFFD69E2E),
-              iconBg: const Color(0xFFFEFCBF),
-              badge: isGl ? 'Metodoloxía' : 'Metodología',
-              buttonText: isGl ? 'Ver Estratexias' : 'Ver Estrategias',
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => EstrategiasScreen(
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 14.0),
-
-            // 6. Dinámicas de Aula Activa
+            // 2. Dinámicas de Aula Activa
             _buildDocenteModuleCard(
               context: context,
               title: isGl
@@ -400,7 +366,163 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                 );
               },
             ),
-            const SizedBox(height: 14.0),
+            const SizedBox(height: 20.0),
+
+            // ==========================================
+            // SECCIÓN 2: PLANIFICACIÓN CURRICULAR E CALENDARIO
+            // ==========================================
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4.0),
+              child: Text(
+                isGl
+                    ? '2. PLANIFICACIÓN CURRICULAR E CALENDARIO'
+                    : '2. PLANIFICACIÓN CURRICULAR Y CALENDARIO',
+                style: const TextStyle(
+                  fontSize: 11.5,
+                  fontWeight: FontWeight.w800,
+                  color: AppTheme.textSecondary,
+                  letterSpacing: 1.0,
+                ),
+              ),
+            ),
+            const SizedBox(height: 10.0),
+
+            // 3. Calendario Curricular de Aula: os seis anos, curso a curso
+            _buildDocenteModuleCard(
+              context: context,
+              title: isGl
+                  ? 'Calendario Escola · Fogar'
+                  : 'Calendario Escuela · Hogar',
+              description: isGl
+                  ? 'O traxecto de 0 a 6 anos, curso a curso: cada curso cos seus meses por trimestres (Outono, Inverno e Primavera), asembleas na aula e notas de conexión para as familias.'
+                  : 'El trayecto de 0 a 6 años, curso a curso: cada curso con sus meses por trimestres (Otoño, Invierno y Primavera), asambleas en el aula y notas de conexión para las familias.',
+              icon: Icons.calendar_month_rounded,
+              iconColor: const Color(0xFF319795),
+              iconBg: const Color(0xFFE6FFFA),
+              badge: isGl
+                  ? 'De 0 a 6 anos · 5 cursos'
+                  : 'De 0 a 6 años · 5 cursos',
+              buttonText: isGl ? 'Ver Calendario' : 'Ver Calendario',
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => CalendarioScreen(
+                      store: widget.calendario ?? CalendarioStore(),
+                      initialLanguage: _language,
+                      onLanguageChanged: _handleLanguageChanged,
+                      repository: widget.repository,
+                      audioService: widget.audioService,
+                      premios: widget.premios,
+                      esDocenteInicial: true,
+                    ),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 12.0),
+
+            // 4. Planificador curricular
+            _buildDocenteModuleCard(
+              context: context,
+              title: 'Planificador curricular',
+              description: isGl
+                  ? 'Programación curricular completa dos 5 cursos de Educación Infantil (0 a 6 anos) con obxectivos e actividades baixo o Decreto 150/2022.'
+                  : 'Programación curricular completa de los 5 cursos de Educación Infantil (0 a 6 años) con objetivos y actividades bajo el Decreto 150/2022.',
+              icon: Icons.calendar_view_month_rounded,
+              iconColor: const Color(0xFF2B6CB0),
+              iconBg: const Color(0xFFEBF8FF),
+              badge: isGl ? '0-6 anos' : '0-6 años',
+              buttonText: isGl ? 'Abrir Planificador' : 'Abrir Planificador',
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => PlanificadorScreen(
+                      repository: widget.repository,
+                      initialLanguage: _language,
+                    ),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 20.0),
+
+            // ==========================================
+            // SECCIÓN 3: INMERSIÓN L3 E ESTRATEXIAS DOCENTES
+            // ==========================================
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4.0),
+              child: Text(
+                isGl
+                    ? '3. INMERSIÓN L3 E ESTRATEXIAS DOCENTES'
+                    : '3. INMERSIÓN L3 Y ESTRATEGIAS DOCENTES',
+                style: const TextStyle(
+                  fontSize: 11.5,
+                  fontWeight: FontWeight.w800,
+                  color: AppTheme.textSecondary,
+                  letterSpacing: 1.0,
+                ),
+              ),
+            ),
+            const SizedBox(height: 10.0),
+
+            // 5. Inmersión en Inglés L3
+            _buildDocenteModuleCard(
+              context: context,
+              title: isGl
+                  ? 'Inmersión en Inglés · L3'
+                  : 'Inmersión en Inglés · L3',
+              description: isGl
+                  ? 'As 4.000 palabras do traxecto, cinco novas ao día: consulta por curso e día, repaso espazado que se garda, escoita das frases do mes, colocacións e os 44 fonemas.'
+                  : 'Las 4.000 palabras del trayecto, cinco nuevas al día: consulta por curso y día, repaso espaciado que se guarda, escucha de las frases del mes, colocaciones y los 44 fonemas.',
+              icon: Icons.language_rounded,
+              iconColor: const Color(0xFF805AD5),
+              iconBg: const Color(0xFFFAF5FF),
+              badge: isGl
+                  ? '5 ao día · 4.000 palabras'
+                  : '5 al día · 4.000 palabras',
+              buttonText: isGl ? 'Entrar en Inglés L3' : 'Entrar en Inglés L3',
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => EnglishHubScreen(
+                      repository: widget.repository,
+                      initialLanguage: _language,
+                      audioService: widget.audioService,
+                      // El curso que la docente ya eligió en «Hoxe na aula».
+                      cursoInicial: _cursoHoxe,
+                    ),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 12.0),
+
+            // 6. Estratexias Pedagóxicas
+            _buildDocenteModuleCard(
+              context: context,
+              title: isGl
+                  ? 'Estratexias Pedagóxicas de Aula'
+                  : 'Estrategias Pedagógicas de Aula',
+              description: isGl
+                  ? '5 estratexias clave de aula: andamiaxe, modelado, tempo de espera de 5 segundos, expansión léxica e recast con diálogos reais.'
+                  : '5 estrategias clave de aula: andamiaje, modelado, tiempo de espera de 5 segundos, expansión léxica y recast con diálogos reales.',
+              icon: Icons.psychology_rounded,
+              iconColor: const Color(0xFFD69E2E),
+              iconBg: const Color(0xFFFEFCBF),
+              badge: isGl ? 'Metodoloxía' : 'Metodología',
+              buttonText: isGl ? 'Ver Estratexias' : 'Ver Estrategias',
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => EstrategiasScreen(
+                      repository: widget.repository,
+                      initialLanguage: _language,
+                    ),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 12.0),
 
             // 7. Corpus 8.000 Palabras
             _buildDocenteModuleCard(
@@ -485,84 +607,96 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
 
     return Card(
       elevation: 0.5,
+      clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
         side: const BorderSide(color: AppTheme.border),
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(18.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  backgroundColor: iconBg,
-                  radius: 22,
-                  child: Icon(icon, color: iconColor, size: 24),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 7, vertical: 2),
-                        decoration: BoxDecoration(
-                          color: iconBg,
-                          borderRadius: BorderRadius.circular(6),
-                        ),
-                        child: Text(
-                          badge,
-                          style: TextStyle(
-                            color: iconColor,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 10,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(16),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  CircleAvatar(
+                    backgroundColor: iconBg,
+                    radius: 20,
+                    child: Icon(icon, color: iconColor, size: 22),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 7, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: iconBg,
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          child: Text(
+                            badge,
+                            style: TextStyle(
+                              color: iconColor,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 10,
+                            ),
                           ),
                         ),
-                      ),
-                      const SizedBox(height: 3),
-                      Text(
-                        title,
-                        style: theme.textTheme.titleMedium?.copyWith(
-                          color: AppTheme.textPrimary,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 15,
+                        const SizedBox(height: 3),
+                        Text(
+                          title,
+                          style: theme.textTheme.titleMedium?.copyWith(
+                            color: AppTheme.textPrimary,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Text(
+                description,
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: const Color(0xFF4A5568),
+                  fontSize: 13,
+                  height: 1.4,
+                ),
+              ),
+              const SizedBox(height: 14),
+              Align(
+                alignment: Alignment.centerRight,
+                child: ElevatedButton(
+                  onPressed: onTap,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppTheme.primaryVigoBlue,
+                    foregroundColor: Colors.white,
+                    minimumSize: const Size(0, 38),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  ),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      buttonText,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            Text(
-              description,
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: const Color(0xFF4A5568),
-                fontSize: 13,
-                height: 1.4,
               ),
-            ),
-            const SizedBox(height: 14),
-            Align(
-              alignment: Alignment.centerRight,
-              child: ElevatedButton(
-                onPressed: onTap,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.primaryVigoBlue,
-                  foregroundColor: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                ),
-                child: Text(buttonText),
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

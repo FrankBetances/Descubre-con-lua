@@ -8,7 +8,7 @@ import '../../../data/repositories/content_repository.dart';
 import 'dinamicas_screen.dart';
 import 'estrategias_screen.dart';
 
-/// Planificador Curricular Docente para os 50 meses dos 5 cursos de Educación Infantil.
+/// Planificador curricular docente dos cinco cursos de Educación Infantil (0-6 anos).
 class PlanificadorScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
@@ -87,8 +87,8 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
         leading: const BotonAtras(),
         title: Text(
           lang == AppLanguage.gl
-              ? 'Planificador Curricular'
-              : 'Planificador Curricular',
+              ? 'Planificador curricular'
+              : 'Planificador curricular',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,

@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.4_5.novembro",
+  "curso": "curso_4_5",
+  "orden": 3,
+  "mesCalendario": 11,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "O Monte da Guía",
+        "es": "El Monte de A Guía"
+      },
+      "palabras": [
+        {
+          "id": "4_5.novembro.s1.hilltop",
+          "en": "Hilltop",
+          "gl": "Cumio do monte",
+          "es": "Cima del monte",
+          "tprAction": {
+            "gl": "Estirar os brazos no alto",
+            "es": "Estirar los brazos en lo alto"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s1.chapel",
+          "en": "Chapel",
+          "gl": "Capela",
+          "es": "Capilla",
+          "tprAction": {
+            "gl": "Facer un tellado en punta coas mans",
+            "es": "Hacer un tejado en punta con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s1.viewpoint",
+          "en": "Viewpoint",
+          "gl": "Miradoiro",
+          "es": "Mirador",
+          "tprAction": {
+            "gl": "Mirar lonxe coa man na fronte",
+            "es": "Mirar lejos con la mano en la frente"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s1.slope",
+          "en": "Slope",
+          "gl": "Costa",
+          "es": "Cuesta",
+          "tprAction": {
+            "gl": "Inclinar a man coma unha costa",
+            "es": "Inclinar la mano como una cuesta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s1.steps",
+          "en": "Steps",
+          "gl": "Escaleiras",
+          "es": "Escalones",
+          "tprAction": {
+            "gl": "Subir chanzos no sitio",
+            "es": "Subir escalones en el sitio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s1.panorama",
+          "en": "Panorama",
+          "gl": "Panorámica",
+          "es": "Panorámica",
+          "tprAction": {
+            "gl": "Xirar mirando arredor",
+            "es": "Girar mirando alrededor"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s1.walking-stick",
+          "en": "Walking stick",
+          "gl": "Caxato",
+          "es": "Bastón",
+          "tprAction": {
+            "gl": "Camiñar apoiándose nun caxato",
+            "es": "Caminar apoyándose en un bastón"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s1.hike",
+          "en": "Hike",
+          "gl": "Facer andaina",
+          "es": "Hacer senderismo",
+          "tprAction": {
+            "gl": "Camiñar levantando os xeonllos",
+            "es": "Caminar levantando las rodillas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s1.climb-up-the-hill",
+          "en": "Climb up the hill",
+          "gl": "Subir o monte",
+          "es": "Subir el monte",
+          "tprAction": {
+            "gl": "Camiñar inclinado cara adiante",
+            "es": "Caminar inclinado hacia delante"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s1.walk-down",
+          "en": "Walk down",
+          "gl": "Baixar camiñando",
+          "es": "Bajar caminando",
+          "tprAction": {
+            "gl": "Camiñar inclinado cara atrás",
+            "es": "Caminar inclinado hacia atrás"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s1.rest-at-the-top",
+          "en": "Rest at the top",
+          "gl": "Descansar no alto",
+          "es": "Descansar arriba",
+          "tprAction": {
+            "gl": "Sentarse e respirar",
+            "es": "Sentarse y respirar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s1.look-into-the-distance",
+          "en": "Look into the distance",
+          "gl": "Mirar ao lonxe",
+          "es": "Mirar a lo lejos",
+          "tprAction": {
+            "gl": "Mirar coa man na fronte",
+            "es": "Mirar con la mano en la frente"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s1.steep",
+          "en": "Steep",
+          "gl": "Empinado",
+          "es": "Empinado",
+          "tprAction": {
+            "gl": "Inclinar moito a man",
+            "es": "Inclinar mucho la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s1.breathtaking",
+          "en": "Breathtaking",
+          "gl": "Impresionante",
+          "es": "Impresionante",
+          "tprAction": {
+            "gl": "Abrir a boca sorprendidos",
+            "es": "Abrir la boca sorprendidos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s1.uphill",
+          "en": "Uphill",
+          "gl": "Costa arriba",
+          "es": "Cuesta arriba",
+          "tprAction": {
+            "gl": "Camiñar con esforzo",
+            "es": "Caminar con esfuerzo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s1.downhill",
+          "en": "Downhill",
+          "gl": "Costa abaixo",
+          "es": "Cuesta abajo",
+          "tprAction": {
+            "gl": "Camiñar lixeiro cara abaixo",
+            "es": "Caminar ligero hacia abajo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s1.almost-at-the-top",
+          "en": "Almost at the top!",
+          "gl": "Xa case estamos arriba!",
+          "es": "¡Ya casi estamos arriba!",
+          "tprAction": {
+            "gl": "Estirar a man cara arriba",
+            "es": "Estirar la mano hacia arriba"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.novembro.s1.what-can-you-see-from-here",
+          "en": "What can you see from here?",
+          "gl": "Que ves dende aquí?",
+          "es": "¿Qué ves desde aquí?",
+          "tprAction": {
+            "gl": "Mirar arredor",
+            "es": "Mirar alrededor"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.novembro.s1.up-the-hill-and-down-again",
+          "en": "Up the hill and down again",
+          "gl": "Monte arriba e outra vez abaixo",
+          "es": "Monte arriba y otra vez abajo",
+          "tprAction": {
+            "gl": "Subir e baixar coas mans",
+            "es": "Subir y bajar con las manos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.novembro.s1.higher-than-the-houses",
+          "en": "Higher than the houses",
+          "gl": "Máis alto que as casas",
+          "es": "Más alto que las casas",
+          "tprAction": {
+            "gl": "Levantar a man por riba",
+            "es": "Levantar la mano por encima"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Carballos",
+        "es": "Robles"
+      },
+      "palabras": [
+        {
+          "id": "4_5.novembro.s2.oak-leaf",
+          "en": "Oak leaf",
+          "gl": "Folla de carballo",
+          "es": "Hoja de roble",
+          "tprAction": {
+            "gl": "Debuxar o bordo ondulado",
+            "es": "Dibujar el borde ondulado"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s2.acorn-cap",
+          "en": "Acorn cap",
+          "gl": "Carapucha da landra",
+          "es": "Capuchón de la bellota",
+          "tprAction": {
+            "gl": "Poñer un dedo coma un chapeu",
+            "es": "Poner un dedo como un sombrero"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s2.tree-rings",
+          "en": "Tree rings",
+          "gl": "Aneis da árbore",
+          "es": "Anillos del árbol",
+          "tprAction": {
+            "gl": "Debuxar círculos cada vez máis grandes",
+            "es": "Dibujar círculos cada vez más grandes"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s2.roots",
+          "en": "Roots",
+          "gl": "Raíces",
+          "es": "Raíces",
+          "tprAction": {
+            "gl": "Estender os dedos cara abaixo",
+            "es": "Extender los dedos hacia abajo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s2.canopy",
+          "en": "Canopy",
+          "gl": "Copa das árbores",
+          "es": "Copa de los árboles",
+          "tprAction": {
+            "gl": "Abrir os brazos por riba da cabeza",
+            "es": "Abrir los brazos por encima de la cabeza"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s2.woodpecker",
+          "en": "Woodpecker",
+          "gl": "Peto",
+          "es": "Pájaro carpintero",
+          "tprAction": {
+            "gl": "Bater co dedo coma un peto",
+            "es": "Golpear con el dedo como un pájaro carpintero"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s2.hollow-trunk",
+          "en": "Hollow trunk",
+          "gl": "Tronco oco",
+          "es": "Tronco hueco",
+          "tprAction": {
+            "gl": "Facer un oco coas mans",
+            "es": "Hacer un hueco con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s2.sway-like-an-oak",
+          "en": "Sway like an oak",
+          "gl": "Abanearse coma un carballo",
+          "es": "Mecerse como un roble",
+          "tprAction": {
+            "gl": "Abanear os brazos amodo",
+            "es": "Mecer los brazos despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s2.gather-acorns",
+          "en": "Gather acorns",
+          "gl": "Apañar landras",
+          "es": "Recoger bellotas",
+          "tprAction": {
+            "gl": "Coller landras do chan",
+            "es": "Coger bellotas del suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s2.count-rings",
+          "en": "Count rings",
+          "gl": "Contar os aneis",
+          "es": "Contar los anillos",
+          "tprAction": {
+            "gl": "Contar círculos co dedo",
+            "es": "Contar círculos con el dedo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s2.hug-a-tree",
+          "en": "Hug a tree",
+          "gl": "Abrazar unha árbore",
+          "es": "Abrazar un árbol",
+          "tprAction": {
+            "gl": "Abrazar un tronco",
+            "es": "Abrazar un tronco"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s2.tap-on-wood",
+          "en": "Tap on wood",
+          "gl": "Tocar a madeira",
+          "es": "Golpear la madera",
+          "tprAction": {
+            "gl": "Bater amodo na madeira",
+            "es": "Golpear despacio la madera"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s2.ancient",
+          "en": "Ancient",
+          "gl": "Moi vello",
+          "es": "Antiquísimo",
+          "tprAction": {
+            "gl": "Mover a man amodo coma o tempo",
+            "es": "Mover la mano despacio como el tiempo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s2.mighty",
+          "en": "Mighty",
+          "gl": "Poderoso",
+          "es": "Poderoso",
+          "tprAction": {
+            "gl": "Poñer os brazos fortes",
+            "es": "Poner los brazos fuertes"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s2.wavy-edged",
+          "en": "Wavy-edged",
+          "gl": "De bordo ondulado",
+          "es": "De borde ondulado",
+          "tprAction": {
+            "gl": "Debuxar ondas co dedo",
+            "es": "Dibujar ondas con el dedo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s2.knobbly",
+          "en": "Knobbly",
+          "gl": "Nodoso",
+          "es": "Nudoso",
+          "tprAction": {
+            "gl": "Tocar os nós da madeira",
+            "es": "Tocar los nudos de la madera"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s2.how-old-is-this-tree",
+          "en": "How old is this tree?",
+          "gl": "Cantos anos ten esta árbore?",
+          "es": "¿Cuántos años tiene este árbol?",
+          "tprAction": {
+            "gl": "Contar aneis co dedo",
+            "es": "Contar anillos con el dedo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.novembro.s2.listen-to-the-woodpecker",
+          "en": "Listen to the woodpecker",
+          "gl": "Escoita o peto",
+          "es": "Escucha al pájaro carpintero",
+          "tprAction": {
+            "gl": "Bater co dedo e escoitar",
+            "es": "Golpear con el dedo y escuchar"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.novembro.s2.an-oak-grows-from-an-acorn",
+          "en": "An oak grows from an acorn",
+          "gl": "Un carballo nace dunha landra",
+          "es": "Un roble nace de una bellota",
+          "tprAction": {
+            "gl": "Encoller e erguerse amodo",
+            "es": "Encogerse y levantarse despacio"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.novembro.s2.roots-under-the-ground",
+          "en": "Roots under the ground",
+          "gl": "Raíces baixo terra",
+          "es": "Raíces bajo tierra",
+          "tprAction": {
+            "gl": "Baixar os dedos cara ao chan",
+            "es": "Bajar los dedos hacia el suelo"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Bechos do bosque",
+        "es": "Bichos del bosque"
+      },
+      "palabras": [
+        {
+          "id": "4_5.novembro.s3.stag-beetle",
+          "en": "Stag beetle",
+          "gl": "Vacaloura",
+          "es": "Ciervo volante",
+          "tprAction": {
+            "gl": "Poñer os dedos coma cornos",
+            "es": "Poner los dedos como cuernos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s3.woodlouse",
+          "en": "Woodlouse",
+          "gl": "Porquiño da terra",
+          "es": "Cochinilla",
+          "tprAction": {
+            "gl": "Facer unha bóla co corpo",
+            "es": "Hacer una bola con el cuerpo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s3.centipede",
+          "en": "Centipede",
+          "gl": "Cempés",
+          "es": "Ciempiés",
+          "tprAction": {
+            "gl": "Mover moitos dedos amodo",
+            "es": "Mover muchos dedos despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s3.earthworm",
+          "en": "Earthworm",
+          "gl": "Miñoca",
+          "es": "Lombriz",
+          "tprAction": {
+            "gl": "Estirar e encoller o corpo",
+            "es": "Estirar y encoger el cuerpo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s3.magnifying-glass",
+          "en": "Magnifying glass",
+          "gl": "Lupa",
+          "es": "Lupa",
+          "tprAction": {
+            "gl": "Mirar a través dunha lupa",
+            "es": "Mirar a través de una lupa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s3.bug-hotel",
+          "en": "Bug hotel",
+          "gl": "Hotel de insectos",
+          "es": "Hotel de insectos",
+          "tprAction": {
+            "gl": "Construír un hotel con pólas",
+            "es": "Construir un hotel con ramas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s3.leaf-litter",
+          "en": "Leaf litter",
+          "gl": "Follaxe caída",
+          "es": "Hojarasca",
+          "tprAction": {
+            "gl": "Remexer as follas amodo",
+            "es": "Remover las hojas despacio"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s3.look-closely",
+          "en": "Look closely",
+          "gl": "Mirar de preto",
+          "es": "Mirar de cerca",
+          "tprAction": {
+            "gl": "Achegar a lupa",
+            "es": "Acercar la lupa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s3.curl-into-a-ball",
+          "en": "Curl into a ball",
+          "gl": "Facerse unha bóla",
+          "es": "Hacerse una bola",
+          "tprAction": {
+            "gl": "Enroscarse no chan",
+            "es": "Enroscarse en el suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s3.lift-a-log",
+          "en": "Lift a log",
+          "gl": "Levantar un tronco",
+          "es": "Levantar un tronco",
+          "tprAction": {
+            "gl": "Levantar un tronco con coidado",
+            "es": "Levantar un tronco con cuidado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s3.dig-tunnels",
+          "en": "Dig tunnels",
+          "gl": "Cavar túneles",
+          "es": "Cavar túneles",
+          "tprAction": {
+            "gl": "Mover as mans coma cavando",
+            "es": "Mover las manos como cavando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s3.put-it-back-gently",
+          "en": "Put it back gently",
+          "gl": "Devolvelo con coidado",
+          "es": "Devolverlo con cuidado",
+          "tprAction": {
+            "gl": "Pousar algo moi amodo",
+            "es": "Posar algo muy despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s3.many-legged",
+          "en": "Many-legged",
+          "gl": "De moitas patas",
+          "es": "De muchas patas",
+          "tprAction": {
+            "gl": "Mover todos os dedos",
+            "es": "Mover todos los dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s3.hard-shelled",
+          "en": "Hard-shelled",
+          "gl": "De casca dura",
+          "es": "De caparazón duro",
+          "tprAction": {
+            "gl": "Bater suave nas costas",
+            "es": "Golpear suave en la espalda"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s3.wriggly",
+          "en": "Wriggly",
+          "gl": "Retorcido",
+          "es": "Retorcido",
+          "tprAction": {
+            "gl": "Retorcer o corpo",
+            "es": "Retorcer el cuerpo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s3.hidden-under",
+          "en": "Hidden under",
+          "gl": "Escondido debaixo",
+          "es": "Escondido debajo",
+          "tprAction": {
+            "gl": "Levantar a man e mirar debaixo",
+            "es": "Levantar la mano y mirar debajo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s3.how-many-legs-has-it-got",
+          "en": "How many legs has it got?",
+          "gl": "Cantas patas ten?",
+          "es": "¿Cuántas patas tiene?",
+          "tprAction": {
+            "gl": "Contar dedos",
+            "es": "Contar dedos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.novembro.s3.be-gentle-with-bugs",
+          "en": "Be gentle with bugs",
+          "gl": "Coidado cos bechos",
+          "es": "Cuidado con los bichos",
+          "tprAction": {
+            "gl": "Pousar a man moi amodo",
+            "es": "Posar la mano muy despacio"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.novembro.s3.look-under-the-log",
+          "en": "Look under the log",
+          "gl": "Mira debaixo do tronco",
+          "es": "Mira debajo del tronco",
+          "tprAction": {
+            "gl": "Levantar e mirar",
+            "es": "Levantar y mirar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.novembro.s3.bigger-than-an-ant-smaller-than-a-mouse",
+          "en": "Bigger than an ant, smaller than a mouse",
+          "gl": "Maior ca unha formiga, menor ca un rato",
+          "es": "Más grande que una hormiga, más pequeño que un ratón",
+          "tprAction": {
+            "gl": "Abrir os dedos pouco e logo máis",
+            "es": "Abrir los dedos poco y luego más"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Cores do bosque",
+        "es": "Colores del bosque"
+      },
+      "palabras": [
+        {
+          "id": "4_5.novembro.s4.crimson-leaf",
+          "en": "Crimson leaf",
+          "gl": "Folla carmesí",
+          "es": "Hoja carmesí",
+          "tprAction": {
+            "gl": "Amosar unha folla vermella escura",
+            "es": "Enseñar una hoja rojo oscuro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s4.bracken",
+          "en": "Bracken",
+          "gl": "Fento",
+          "es": "Helecho",
+          "tprAction": {
+            "gl": "Estender a man coma un fento",
+            "es": "Extender la mano como un helecho"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s4.toadstool",
+          "en": "Toadstool",
+          "gl": "Cogomelo de conto",
+          "es": "Seta de cuento",
+          "tprAction": {
+            "gl": "Facer un chapeu de cogomelo coas mans",
+            "es": "Hacer un sombrero de seta con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s4.berry",
+          "en": "Berry",
+          "gl": "Baga",
+          "es": "Baya",
+          "tprAction": {
+            "gl": "Coller unha baga imaxinaria",
+            "es": "Coger una baya imaginaria"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s4.holly",
+          "en": "Holly",
+          "gl": "Acivro",
+          "es": "Acebo",
+          "tprAction": {
+            "gl": "Sinalar as bolas vermellas",
+            "es": "Señalar las bolas rojas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s4.colour-hunt",
+          "en": "Colour hunt",
+          "gl": "Busca de cores",
+          "es": "Búsqueda de colores",
+          "tprAction": {
+            "gl": "Buscar algo verde",
+            "es": "Buscar algo verde"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s4.leaf-rubbing",
+          "en": "Leaf rubbing",
+          "gl": "Frotado de follas",
+          "es": "Calco de hojas",
+          "tprAction": {
+            "gl": "Frotar unha cera sobre o papel",
+            "es": "Frotar una cera sobre el papel"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "4_5.novembro.s4.compare",
+          "en": "Compare",
+          "gl": "Comparar",
+          "es": "Comparar",
+          "tprAction": {
+            "gl": "Poñer dúas follas lado a lado",
+            "es": "Poner dos hojas lado a lado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s4.match-colours",
+          "en": "Match colours",
+          "gl": "Emparellar cores",
+          "es": "Emparejar colores",
+          "tprAction": {
+            "gl": "Xuntar dúas follas da mesma cor",
+            "es": "Juntar dos hojas del mismo color"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s4.rub-a-leaf",
+          "en": "Rub a leaf",
+          "gl": "Frotar unha folla",
+          "es": "Frotar una hoja",
+          "tprAction": {
+            "gl": "Frotar a cera sobre a folla",
+            "es": "Frotar la cera sobre la hoja"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s4.spot",
+          "en": "Spot",
+          "gl": "Descubrir",
+          "es": "Descubrir",
+          "tprAction": {
+            "gl": "Sinalar de súpeto",
+            "es": "Señalar de repente"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s4.collect-leaves",
+          "en": "Collect leaves",
+          "gl": "Coleccionar follas",
+          "es": "Coleccionar hojas",
+          "tprAction": {
+            "gl": "Meter follas nunha bolsa",
+            "es": "Meter hojas en una bolsa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "4_5.novembro.s4.darker",
+          "en": "Darker",
+          "gl": "Máis escuro",
+          "es": "Más oscuro",
+          "tprAction": {
+            "gl": "Sinalar a folla máis escura",
+            "es": "Señalar la hoja más oscura"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s4.lighter",
+          "en": "Lighter",
+          "gl": "Máis claro",
+          "es": "Más claro",
+          "tprAction": {
+            "gl": "Sinalar a folla máis clara",
+            "es": "Señalar la hoja más clara"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s4.reddish",
+          "en": "Reddish",
+          "gl": "Avermellado",
+          "es": "Rojizo",
+          "tprAction": {
+            "gl": "Amosar unha folla avermellada",
+            "es": "Enseñar una hoja rojiza"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s4.bright-orange",
+          "en": "Bright orange",
+          "gl": "Laranxa vivo",
+          "es": "Naranja vivo",
+          "tprAction": {
+            "gl": "Amosar algo laranxa",
+            "es": "Enseñar algo naranja"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "4_5.novembro.s4.this-one-is-darker-than-that-one",
+          "en": "This one is darker than that one",
+          "gl": "Esta é máis escura ca esa",
+          "es": "Esta es más oscura que esa",
+          "tprAction": {
+            "gl": "Comparar dúas follas",
+            "es": "Comparar dos hojas"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.novembro.s4.can-you-find-something-red",
+          "en": "Can you find something red?",
+          "gl": "Atopas algo vermello?",
+          "es": "¿Encuentras algo rojo?",
+          "tprAction": {
+            "gl": "Buscar arredor",
+            "es": "Buscar alrededor"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "4_5.novembro.s4.red-orange-and-brown",
+          "en": "Red, orange and brown",
+          "gl": "Vermello, laranxa e marrón",
+          "es": "Rojo, naranja y marrón",
+          "tprAction": {
+            "gl": "Amosar tres follas",
+            "es": "Enseñar tres hojas"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "4_5.novembro.s4.found-one",
+          "en": "Found one!",
+          "gl": "Atopei unha!",
+          "es": "¡Encontré una!",
+          "tprAction": {
+            "gl": "Levantar a folla",
+            "es": "Levantar la hoja"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

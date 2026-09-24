@@ -27,10 +27,15 @@ class CalendarioDoCurso extends StatefulWidget {
   /// que es lo correcto: no se inventa un progreso que nadie ha registrado.
   final CalendarioStore? store;
 
-  /// Qué hacer al tocar un mes. Recibe el contenido ya leído y el índice, para
-  /// que quien abra la pantalla completa la abra POR ESE MES y no por el de
-  /// hoy.
-  final void Function(CalendarioContenido contenido, int mesIndex) onAbrirMes;
+  /// Qué hacer al tocar un mes. Recibe el contenido ya leído, el curso y el mes
+  /// DENTRO de ese curso (0 es septiembre), para que quien abra la pantalla
+  /// completa la abra POR ESE MES y no por el de hoy.
+  final void Function(
+      CalendarioContenido contenido, String cursoId, int mesIndex) onAbrirMes;
+
+  /// El curso del grupo, si quien llama lo sabe (el aula). Con él se ven sus
+  /// diez meses; sin él, el trayecto entero de 0 a 6 años.
+  final String? cursoId;
 
   /// El contenido ya leído, si quien llama lo tiene. Si no, se lee aquí.
   final CalendarioContenido? contenido;
@@ -47,6 +52,7 @@ class CalendarioDoCurso extends StatefulWidget {
     required this.onAbrirMes,
     this.store,
     this.contenido,
+    this.cursoId,
     this.padding = const EdgeInsets.fromLTRB(
       AppTheme.spaceLg,
       AppTheme.spaceMd,
@@ -65,7 +71,19 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
   int _mesIndex = 0;
   bool _fallo = false;
 
-  List<MesCurricular> get _meses => _contenido?.meses ?? const [];
+  /// Los meses que se pasan: los diez del curso del grupo, o los cincuenta del
+  /// trayecto si no hay grupo. Los diez genéricos solo si el trayecto no se leyó.
+  List<MesCurricular> get _meses {
+    final c = _contenido;
+    if (c == null) return const [];
+    if (c.trayecto.isEmpty) return c.meses;
+    final curso = widget.cursoId;
+    if (curso == null) return c.trayecto;
+    return [
+      for (final m in c.trayecto)
+        if (m.cursoId == curso) m,
+    ];
+  }
 
   @override
   void initState() {
@@ -92,9 +110,21 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
     }
   }
 
+  @override
+  void didUpdateWidget(covariant CalendarioDoCurso old) {
+    super.didUpdateWidget(old);
+    // Otro grupo, otro curso: la tira vuelve al mes de hoy de ESE curso.
+    if (old.cursoId != widget.cursoId && _contenido != null) {
+      setState(_situar);
+    }
+  }
+
   /// Abre por el mes de curso que toca hoy, no por septiembre.
   void _situar() {
-    final indice = _contenido?.indiceParaFecha(DateTime.now()) ?? 0;
+    final hoxe = DateTime.now();
+    final mesDeHoxe = _contenido?.mesParaFecha(hoxe).mesCalendario;
+    final i = _meses.indexWhere((m) => m.mesCalendario == mesDeHoxe);
+    final indice = i < 0 ? 0 : i;
     _mesIndex = indice < 0 ? 0 : indice;
     _paginas?.dispose();
     _paginas = PageController(
@@ -110,6 +140,23 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
   void dispose() {
     _paginas?.dispose();
     super.dispose();
+  }
+
+  /// El curso que se ve en el rótulo: el del grupo, o los seis años enteros.
+  String _rotuloDoCurso(AppLanguage lang) {
+    final curso = MesCurricular.etiquetasDosCursos[widget.cursoId];
+    if (curso != null) return curso.resolve(lang).toUpperCase();
+    return lang == AppLanguage.gl ? '0-6 ANOS' : '0-6 AÑOS';
+  }
+
+  /// Abre el calendario completo por el mes [index] de la tira.
+  void _abrir(int index) {
+    final mes = _meses[index];
+    widget.onAbrirMes(
+      _contenido!,
+      mes.cursoId ?? widget.cursoId ?? 'curso_0_2',
+      mes.mesDoCurso - 1,
+    );
   }
 
   EstadoEstimulacion _estadoDe(MesCurricular mes) {
@@ -153,8 +200,8 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
               Expanded(
                 child: Text(
                   isGl
-                      ? 'CALENDARIO ESCOLA · FOGAR · 10 MESES'
-                      : 'CALENDARIO ESCUELA · HOGAR · 10 MESES',
+                      ? 'CALENDARIO ESCOLA · FOGAR · ${_rotuloDoCurso(widget.lang)}'
+                      : 'CALENDARIO ESCUELA · HOGAR · ${_rotuloDoCurso(widget.lang)}',
                   style: const TextStyle(
                     fontFamily: AppTheme.fontFamily,
                     fontSize: 11,
@@ -166,7 +213,7 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
               ),
               TextButton(
                 key: const Key('ver_calendario_completo'),
-                onPressed: () => widget.onAbrirMes(_contenido!, _mesIndex),
+                onPressed: () => _abrir(_mesIndex),
                 style: TextButton.styleFrom(
                   padding: const EdgeInsets.symmetric(horizontal: 8),
                   minimumSize: Size.zero,
@@ -215,7 +262,7 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
                       estado: _estadoDe(mes),
                       esDocente: widget.esDocente,
                       isSelected: index == _mesIndex,
-                      onTap: () => widget.onAbrirMes(_contenido!, index),
+                      onTap: () => _abrir(index),
                     ),
                   );
                 },

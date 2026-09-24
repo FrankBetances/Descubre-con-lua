@@ -14,6 +14,7 @@ import '../models/estrategia_model.dart';
 import '../models/lamina_model.dart';
 import '../models/phonics_model.dart';
 import '../models/progresion_model.dart';
+import '../models/tpr_curriculum_scheduler.dart';
 // `Cuento` y `CuentoPagina` existen DOS veces en el proyecto y no son la misma
 // cosa: en unidad_model.dart son el cuento que vive DENTRO de una unidad de la
 // asamblea (sin id, con páginas de la unidad), y en cuento_model.dart son el
@@ -877,6 +878,37 @@ class ContentRepository {
     return List.unmodifiable(_curriculo50Meses);
   }
 
+  // --- INGLÉS: CINCO PALABRAS DIARIAS, CINCO CURSOS ---
+
+  ProgramaTpr? _programaTpr;
+  Future<ProgramaTpr?>? _cargandoProgramaTpr;
+
+  /// El inglés del trayecto —cinco cursos de diez meses de cuatro semanas de
+  /// veinte palabras—, o `null` si no se pudo leer. Se lee una vez.
+  ///
+  /// Si falla, el fallo queda en [loadErrors] y las tarjetas que lo usan no se
+  /// pintan: una tarjeta de «cinco palabras hoy» sin palabras mentiría.
+  Future<ProgramaTpr?> loadProgramaTpr() {
+    final ya = _programaTpr;
+    if (ya != null) return Future.value(ya);
+    return _cargandoProgramaTpr ??= ProgramaTpr.cargar(
+      stringLoader: _loader.loadRawString,
+    ).then<ProgramaTpr?>((programa) {
+      _programaTpr = programa;
+      return programa;
+    }).catchError((Object e) {
+      _loadErrors.add(ContentLoadFailure(CursoTpr.modeloAsset, e.toString()));
+      _cargandoProgramaTpr = null;
+      return null;
+    });
+  }
+
+  /// El trayecto si ya está leído; `null` si todavía no.
+  ProgramaTpr? get programaTprSync => _programaTpr;
+
+  /// El curso de inglés con ese id (`curso_0_2` … `curso_5_6`), si ya está.
+  CursoTpr? cursoTprSync(String cursoId) => _programaTpr?.curso(cursoId);
+
   // --- IN-MEMORY & TEST HELPER METHODS ---
 
   /// Adds or updates an [Unidad] directly in memory (for tests and mocking).
@@ -885,10 +917,27 @@ class ContentRepository {
     _isInitialized = true;
   }
 
+  /// Deja el inglés del trayecto ya leído (para tests).
+  void addProgramaTpr(ProgramaTpr programa) {
+    _programaTpr = programa;
+  }
+
   /// Adds or updates a [Capsula] directly in memory (for tests and mocking).
   void addCapsula(Capsula capsula) {
     _capsulasById[capsula.id] = capsula;
     _isInitialized = true;
+  }
+
+  /// Añade una microcápsula del 1.º ciclo (para tests). En la app llegan por
+  /// descubrimiento del paquete, que en un test no existe.
+  void addAsambleaPrimeiroCiclo(AsambleaPrimeiroCiclo asamblea) {
+    _asambleasPrimeiroCicloById[asamblea.id] = asamblea;
+    _isInitialized = true;
+  }
+
+  /// Añade la progresión diaria de un tramo (para tests), por el mismo motivo.
+  void addProgresion(ProgresionDoMes progresion) {
+    _progresionsPorClave[progresion.clave] = progresion;
   }
 
   /// Adds or updates an [AsambleaSegundoCiclo] directly in memory (for tests and mocking).
@@ -960,6 +1009,8 @@ class ContentRepository {
     _estrategias.clear();
     _dinamicas.clear();
     _curriculo50Meses.clear();
+    _programaTpr = null;
+    _cargandoProgramaTpr = null;
     _loadErrors.clear();
     _isInitialized = false;
   }

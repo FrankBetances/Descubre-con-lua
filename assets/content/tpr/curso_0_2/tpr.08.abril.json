@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.0_2.abril",
+  "curso": "curso_0_2",
+  "orden": 8,
+  "mesCalendario": 4,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Chegou a primavera",
+        "es": "Llegó la primavera"
+      },
+      "palabras": [
+        {
+          "id": "0_2.abril.s1.daisy",
+          "en": "Daisy",
+          "gl": "Margarida",
+          "es": "Margarita",
+          "tprAction": {
+            "gl": "Amosar unha margarida",
+            "es": "Enseñar una margarita"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s1.tulip",
+          "en": "Tulip",
+          "gl": "Tulipán",
+          "es": "Tulipán",
+          "tprAction": {
+            "gl": "Abrir as mans coma un tulipán",
+            "es": "Abrir las manos como un tulipán"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s1.bud",
+          "en": "Bud",
+          "gl": "Botón de flor",
+          "es": "Capullo",
+          "tprAction": {
+            "gl": "Pechar a man coma un botón",
+            "es": "Cerrar la mano como un capullo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s1.petal",
+          "en": "Petal",
+          "gl": "Pétalo",
+          "es": "Pétalo",
+          "tprAction": {
+            "gl": "Pasar un pétalo pola meixela",
+            "es": "Pasar un pétalo por la mejilla"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s1.blossom",
+          "en": "Blossom",
+          "gl": "Flor de árbore",
+          "es": "Flor de árbol",
+          "tprAction": {
+            "gl": "Sinalar as flores da árbore",
+            "es": "Señalar las flores del árbol"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s1.sunbeam",
+          "en": "Sunbeam",
+          "gl": "Raio de sol",
+          "es": "Rayo de sol",
+          "tprAction": {
+            "gl": "Pousar a man no raio de sol",
+            "es": "Posar la mano en el rayo de sol"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s1.green-shoot",
+          "en": "Green shoot",
+          "gl": "Gromo",
+          "es": "Brote",
+          "tprAction": {
+            "gl": "Subir un dedo dende o puño",
+            "es": "Subir un dedo desde el puño"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s1.unfold",
+          "en": "Unfold",
+          "gl": "Despregar",
+          "es": "Desplegar",
+          "tprAction": {
+            "gl": "Abrir os dedos amodo coma unha flor",
+            "es": "Abrir los dedos despacio como una flor"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s1.wake",
+          "en": "Wake",
+          "gl": "Espertar",
+          "es": "Despertar",
+          "tprAction": {
+            "gl": "Espreguizarse co bebé",
+            "es": "Desperezarse con el bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s1.reach-up",
+          "en": "Reach up",
+          "gl": "Estirar cara arriba",
+          "es": "Estirarse hacia arriba",
+          "tprAction": {
+            "gl": "Levantar os brazos ao sol",
+            "es": "Levantar los brazos al sol"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s1.sniff-a-flower",
+          "en": "Sniff a flower",
+          "gl": "Cheirar unha flor",
+          "es": "Oler una flor",
+          "tprAction": {
+            "gl": "Achegar a flor ao nariz",
+            "es": "Acercar la flor a la nariz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s1.pick-a-daisy",
+          "en": "Pick a daisy",
+          "gl": "Coller unha margarida",
+          "es": "Coger una margarita",
+          "tprAction": {
+            "gl": "Coller unha flor con coidado",
+            "es": "Coger una flor con cuidado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s1.blooming",
+          "en": "Blooming",
+          "gl": "En flor",
+          "es": "En flor",
+          "tprAction": {
+            "gl": "Abrir os brazos grandes",
+            "es": "Abrir los brazos grandes"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s1.springy",
+          "en": "Springy",
+          "gl": "Primaveral",
+          "es": "Primaveral",
+          "tprAction": {
+            "gl": "Dar pasiños alegres",
+            "es": "Dar pasitos alegres"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s1.sweet-smelling",
+          "en": "Sweet-smelling",
+          "gl": "Recendente",
+          "es": "Oloroso",
+          "tprAction": {
+            "gl": "Cheirar e suspirar",
+            "es": "Oler y suspirar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s1.leafy",
+          "en": "Leafy",
+          "gl": "Frondoso",
+          "es": "Frondoso",
+          "tprAction": {
+            "gl": "Mover as mans coma follas verdes",
+            "es": "Mover las manos como hojas verdes"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s1.hello-flower",
+          "en": "Hello, flower!",
+          "gl": "Ola, flor!",
+          "es": "¡Hola, flor!",
+          "tprAction": {
+            "gl": "Saudar a unha flor",
+            "es": "Saludar a una flor"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.abril.s1.smell-the-flower",
+          "en": "Smell the flower",
+          "gl": "Cheira a flor",
+          "es": "Huele la flor",
+          "tprAction": {
+            "gl": "Inspirar polo nariz",
+            "es": "Inspirar por la nariz"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.abril.s1.the-sun-is-up",
+          "en": "The sun is up!",
+          "gl": "Saíu o sol!",
+          "es": "¡Salió el sol!",
+          "tprAction": {
+            "gl": "Levantar as mans coma o sol",
+            "es": "Levantar las manos como el sol"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.abril.s1.flower-in-my-hand",
+          "en": "Flower in my hand",
+          "gl": "Flor na miña man",
+          "es": "Flor en mi mano",
+          "tprAction": {
+            "gl": "Poñer a flor na palma",
+            "es": "Poner la flor en la palma"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "Orballo",
+        "es": "Llovizna"
+      },
+      "palabras": [
+        {
+          "id": "0_2.abril.s2.drizzle",
+          "en": "Drizzle",
+          "gl": "Orballo",
+          "es": "Llovizna",
+          "tprAction": {
+            "gl": "Mover os dedos coma pingas finas",
+            "es": "Mover los dedos como gotas finas"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s2.raindrop",
+          "en": "Raindrop",
+          "gl": "Pinga",
+          "es": "Gota",
+          "tprAction": {
+            "gl": "Tocar a man cun dedo coma unha pinga",
+            "es": "Tocar la mano con un dedo como una gota"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s2.window-pane",
+          "en": "Window pane",
+          "gl": "Cristal",
+          "es": "Cristal",
+          "tprAction": {
+            "gl": "Seguir unha pinga no cristal",
+            "es": "Seguir una gota en el cristal"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s2.wellies",
+          "en": "Wellies",
+          "gl": "Botas de auga",
+          "es": "Botas de agua",
+          "tprAction": {
+            "gl": "Poñer as botiñas ao bebé",
+            "es": "Poner las botitas al bebé"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s2.rain-cover",
+          "en": "Rain cover",
+          "gl": "Plástico do carriño",
+          "es": "Plástico del cochecito",
+          "tprAction": {
+            "gl": "Tapar o carriño co plástico",
+            "es": "Tapar el cochecito con el plástico"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s2.dewdrop",
+          "en": "Dewdrop",
+          "gl": "Pinga de orballo",
+          "es": "Gota de rocío",
+          "tprAction": {
+            "gl": "Tocar a herba mollada",
+            "es": "Tocar la hierba mojada"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s2.rain-boots",
+          "en": "Rain boots",
+          "gl": "Botas de choiva",
+          "es": "Botas de lluvia",
+          "tprAction": {
+            "gl": "Bater as botas no chan",
+            "es": "Golpear las botas en el suelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s2.pitter-patter",
+          "en": "Pitter-patter",
+          "gl": "Pingar",
+          "es": "Repiquetear",
+          "tprAction": {
+            "gl": "Bater cos dedos na mesa coma a choiva",
+            "es": "Golpear con los dedos en la mesa como la lluvia"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s2.trickle",
+          "en": "Trickle",
+          "gl": "Escorrer",
+          "es": "Escurrir",
+          "tprAction": {
+            "gl": "Baixar un dedo polo cristal",
+            "es": "Bajar un dedo por el cristal"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s2.watch-the-rain",
+          "en": "Watch the rain",
+          "gl": "Mirar a choiva",
+          "es": "Mirar la lluvia",
+          "tprAction": {
+            "gl": "Mirar pola fiestra co bebé",
+            "es": "Mirar por la ventana con el bebé"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s2.catch-drops",
+          "en": "Catch drops",
+          "gl": "Coller pingas",
+          "es": "Coger gotas",
+          "tprAction": {
+            "gl": "Abrir a man baixo a choiva fina",
+            "es": "Abrir la mano bajo la lluvia fina"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s2.shake-off",
+          "en": "Shake off",
+          "gl": "Sacudir",
+          "es": "Sacudir",
+          "tprAction": {
+            "gl": "Sacudir as mans molladas",
+            "es": "Sacudir las manos mojadas"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s2.drizzly",
+          "en": "Drizzly",
+          "gl": "Orballeiro",
+          "es": "Lloviznoso",
+          "tprAction": {
+            "gl": "Mover os dedos amodo",
+            "es": "Mover los dedos despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s2.damp",
+          "en": "Damp",
+          "gl": "Húmido",
+          "es": "Húmedo",
+          "tprAction": {
+            "gl": "Tocar a roupa húmida",
+            "es": "Tocar la ropa húmeda"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s2.dewy",
+          "en": "Dewy",
+          "gl": "Orballado",
+          "es": "Con rocío",
+          "tprAction": {
+            "gl": "Pasar a man pola herba",
+            "es": "Pasar la mano por la hierba"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s2.drippy",
+          "en": "Drippy",
+          "gl": "Pingón",
+          "es": "Goteante",
+          "tprAction": {
+            "gl": "Deixar pingar auga da esponxa",
+            "es": "Dejar gotear agua de la esponja"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s2.drip-drop",
+          "en": "Drip, drop!",
+          "gl": "Pinga, pinga!",
+          "es": "¡Gota, gota!",
+          "tprAction": {
+            "gl": "Tocar a man dúas veces",
+            "es": "Tocar la mano dos veces"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.abril.s2.it-s-raining",
+          "en": "It's raining",
+          "gl": "Chove",
+          "es": "Llueve",
+          "tprAction": {
+            "gl": "Mover os dedos de arriba abaixo",
+            "es": "Mover los dedos de arriba abajo"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.abril.s2.rain-on-the-window",
+          "en": "Rain on the window",
+          "gl": "Choiva no cristal",
+          "es": "Lluvia en el cristal",
+          "tprAction": {
+            "gl": "Bater amodo no cristal",
+            "es": "Golpear despacio en el cristal"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.abril.s2.drop-by-drop",
+          "en": "Drop by drop",
+          "gl": "Pinga a pinga",
+          "es": "Gota a gota",
+          "tprAction": {
+            "gl": "Deixar caer pingas unha a unha",
+            "es": "Dejar caer gotas una a una"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Sementes que medran",
+        "es": "Semillas que crecen"
+      },
+      "palabras": [
+        {
+          "id": "0_2.abril.s3.plant-pot",
+          "en": "Plant pot",
+          "gl": "Vaso de planta",
+          "es": "Maceta",
+          "tprAction": {
+            "gl": "Encher o vaso con terra",
+            "es": "Llenar la maceta con tierra"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s3.earth",
+          "en": "Earth",
+          "gl": "Terra",
+          "es": "Tierra",
+          "tprAction": {
+            "gl": "Tocar a terra coa punta dos dedos",
+            "es": "Tocar la tierra con la punta de los dedos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s3.bean",
+          "en": "Bean",
+          "gl": "Feixón",
+          "es": "Judía",
+          "tprAction": {
+            "gl": "Enterrar un feixón no vaso",
+            "es": "Enterrar una judía en la maceta"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s3.root",
+          "en": "Root",
+          "gl": "Raíz",
+          "es": "Raíz",
+          "tprAction": {
+            "gl": "Baixar os dedos coma raíces",
+            "es": "Bajar los dedos como raíces"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s3.sunflower",
+          "en": "Sunflower",
+          "gl": "Xirasol",
+          "es": "Girasol",
+          "tprAction": {
+            "gl": "Xirar a cara coma un xirasol",
+            "es": "Girar la cara como un girasol"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s3.garden-trowel",
+          "en": "Garden trowel",
+          "gl": "Pa de xardín",
+          "es": "Pala de jardín",
+          "tprAction": {
+            "gl": "Coller terra coa pa",
+            "es": "Coger tierra con la pala"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s3.sprout-bag",
+          "en": "Sprout bag",
+          "gl": "Bolsa de xerminar",
+          "es": "Bolsa de germinar",
+          "tprAction": {
+            "gl": "Mirar a semente dentro da bolsa",
+            "es": "Mirar la semilla dentro de la bolsa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s3.plant-a-seed",
+          "en": "Plant a seed",
+          "gl": "Plantar",
+          "es": "Plantar",
+          "tprAction": {
+            "gl": "Afundir un dedo na terra",
+            "es": "Hundir un dedo en la tierra"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s3.water-it",
+          "en": "Water it",
+          "gl": "Regala",
+          "es": "Regarla",
+          "tprAction": {
+            "gl": "Botar auga co regador",
+            "es": "Echar agua con la regadera"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s3.pop-out",
+          "en": "Pop out",
+          "gl": "Asomar",
+          "es": "Asomar",
+          "tprAction": {
+            "gl": "Sacar un dedo do puño",
+            "es": "Sacar un dedo del puño"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s3.cover-with-soil",
+          "en": "Cover with soil",
+          "gl": "Tapar con terra",
+          "es": "Tapar con tierra",
+          "tprAction": {
+            "gl": "Tapar a semente coas mans",
+            "es": "Tapar la semilla con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s3.watch-it-grow",
+          "en": "Watch it grow",
+          "gl": "Velo medrar",
+          "es": "Verlo crecer",
+          "tprAction": {
+            "gl": "Subir a man amodo",
+            "es": "Subir la mano despacio"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s3.earthy",
+          "en": "Earthy",
+          "gl": "Terroso",
+          "es": "Terroso",
+          "tprAction": {
+            "gl": "Cheirar a terra",
+            "es": "Oler la tierra"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s3.tall-and-green",
+          "en": "Tall and green",
+          "gl": "Alto e verde",
+          "es": "Alto y verde",
+          "tprAction": {
+            "gl": "Estirar o brazo coma un talo",
+            "es": "Estirar el brazo como un tallo"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s3.sprouting",
+          "en": "Sprouting",
+          "gl": "Brotando",
+          "es": "Brotando",
+          "tprAction": {
+            "gl": "Abrir un dedo e logo outro",
+            "es": "Abrir un dedo y luego otro"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s3.crumbly",
+          "en": "Crumbly",
+          "gl": "Esfarelado",
+          "es": "Desmenuzable",
+          "tprAction": {
+            "gl": "Esfarelar terra entre os dedos",
+            "es": "Desmenuzar tierra entre los dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s3.little-seed-sleep",
+          "en": "Little seed, sleep",
+          "gl": "Semente, durme",
+          "es": "Semillita, duerme",
+          "tprAction": {
+            "gl": "Encoller o corpo coma unha semente",
+            "es": "Encoger el cuerpo como una semilla"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.abril.s3.grow-grow-grow",
+          "en": "Grow, grow, grow!",
+          "gl": "Medra, medra!",
+          "es": "¡Crece, crece!",
+          "tprAction": {
+            "gl": "Erguerse amodo ata arriba",
+            "es": "Levantarse despacio hasta arriba"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.abril.s3.seed-in-the-soil",
+          "en": "Seed in the soil",
+          "gl": "Semente na terra",
+          "es": "Semilla en la tierra",
+          "tprAction": {
+            "gl": "Meter a semente e tapala",
+            "es": "Meter la semilla y taparla"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.abril.s3.bigger-and-bigger",
+          "en": "Bigger and bigger",
+          "gl": "Máis e máis grande",
+          "es": "Cada vez más grande",
+          "tprAction": {
+            "gl": "Abrir as mans cada vez máis",
+            "es": "Abrir las manos cada vez más"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Dedos que bailan",
+        "es": "Dedos que bailan"
+      },
+      "palabras": [
+        {
+          "id": "0_2.abril.s4.finger-puppet",
+          "en": "Finger puppet",
+          "gl": "Monicreque de dedo",
+          "es": "Títere de dedo",
+          "tprAction": {
+            "gl": "Mover un monicreque no dedo",
+            "es": "Mover un títere en el dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s4.fingers-and-thumbs",
+          "en": "Fingers and thumbs",
+          "gl": "Dedos e polgares",
+          "es": "Dedos y pulgares",
+          "tprAction": {
+            "gl": "Mover os dedos e despois os polgares",
+            "es": "Mover los dedos y luego los pulgares"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s4.knuckles",
+          "en": "Knuckles",
+          "gl": "Nudillos",
+          "es": "Nudillos",
+          "tprAction": {
+            "gl": "Bater amodo cos nudillos",
+            "es": "Golpear despacio con los nudillos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s4.fist",
+          "en": "Fist",
+          "gl": "Puño",
+          "es": "Puño",
+          "tprAction": {
+            "gl": "Pechar a man en puño",
+            "es": "Cerrar la mano en puño"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s4.glove-puppet",
+          "en": "Glove puppet",
+          "gl": "Monicreque de luva",
+          "es": "Títere de guante",
+          "tprAction": {
+            "gl": "Facer falar ao monicreque",
+            "es": "Hacer hablar al títere"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s4.thumbs-up",
+          "en": "Thumbs up",
+          "gl": "Polgar arriba",
+          "es": "Pulgar arriba",
+          "tprAction": {
+            "gl": "Levantar o polgar",
+            "es": "Levantar el pulgar"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s4.tapping-game",
+          "en": "Tapping game",
+          "gl": "Xogo de golpiños",
+          "es": "Juego de golpecitos",
+          "tprAction": {
+            "gl": "Dar golpiños por turnos",
+            "es": "Dar golpecitos por turnos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "0_2.abril.s4.drum-fingers",
+          "en": "Drum fingers",
+          "gl": "Tamborilar",
+          "es": "Tamborilear",
+          "tprAction": {
+            "gl": "Tamborilar na mesa",
+            "es": "Tamborilear en la mesa"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s4.open-and-shut",
+          "en": "Open and shut",
+          "gl": "Abrir e pechar",
+          "es": "Abrir y cerrar",
+          "tprAction": {
+            "gl": "Abrir e pechar as mans",
+            "es": "Abrir y cerrar las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s4.wave-fingers",
+          "en": "Wave fingers",
+          "gl": "Mover os dedos",
+          "es": "Mover los dedos",
+          "tprAction": {
+            "gl": "Mover os dedos coma herba",
+            "es": "Mover los dedos como hierba"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s4.walk-fingers",
+          "en": "Walk fingers",
+          "gl": "Camiñar cos dedos",
+          "es": "Caminar con los dedos",
+          "tprAction": {
+            "gl": "Camiñar cos dedos polo brazo",
+            "es": "Caminar con los dedos por el brazo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s4.hide-thumbs",
+          "en": "Hide thumbs",
+          "gl": "Esconder os polgares",
+          "es": "Esconder los pulgares",
+          "tprAction": {
+            "gl": "Esconder os polgares no puño",
+            "es": "Esconder los pulgares en el puño"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "0_2.abril.s4.fiddly",
+          "en": "Fiddly",
+          "gl": "Miúdo",
+          "es": "Menudo",
+          "tprAction": {
+            "gl": "Coller algo miúdo cos dedos",
+            "es": "Coger algo menudo con los dedos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s4.nimble",
+          "en": "Nimble",
+          "gl": "Áxil",
+          "es": "Ágil",
+          "tprAction": {
+            "gl": "Mover os dedos rápido",
+            "es": "Mover los dedos rápido"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s4.twinkling",
+          "en": "Twinkling",
+          "gl": "Titilante",
+          "es": "Titilante",
+          "tprAction": {
+            "gl": "Abrir e pechar os dedos amodo",
+            "es": "Abrir y cerrar los dedos despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s4.clappy",
+          "en": "Clappy",
+          "gl": "De palmas",
+          "es": "Palmero",
+          "tprAction": {
+            "gl": "Bater palmiñas",
+            "es": "Dar palmitas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "0_2.abril.s4.tap-tap-tap",
+          "en": "Tap, tap, tap",
+          "gl": "Toc, toc, toc",
+          "es": "Toc, toc, toc",
+          "tprAction": {
+            "gl": "Dar tres golpiños",
+            "es": "Dar tres golpecitos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.abril.s4.open-shut-them",
+          "en": "Open, shut them",
+          "gl": "Ábreas, péchaas",
+          "es": "Ábrelas, ciérralas",
+          "tprAction": {
+            "gl": "Abrir e pechar as mans cantando",
+            "es": "Abrir y cerrar las manos cantando"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "0_2.abril.s4.ten-little-fingers",
+          "en": "Ten little fingers",
+          "gl": "Dez deditos",
+          "es": "Diez deditos",
+          "tprAction": {
+            "gl": "Amosar os dez dedos",
+            "es": "Enseñar los diez dedos"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "0_2.abril.s4.finger-on-your-nose",
+          "en": "Finger on your nose",
+          "gl": "Dedo no nariz",
+          "es": "Dedo en la nariz",
+          "tprAction": {
+            "gl": "Pousar un dedo no nariz",
+            "es": "Posar un dedo en la nariz"
+          },
+          "category": "complex"
+        }
+      ]
+    }
+  ]
+}

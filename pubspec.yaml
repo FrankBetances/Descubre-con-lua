@@ -52,6 +52,18 @@ flutter:
     # regla de producto prohíbe: 165 cadenas que ningún gate de contenido podía
     # mirar y que no podían tener audio.
     - assets/content/lectura/
+    # El inglés del curso al ritmo de cinco palabras diarias: diez meses de
+    # cuatro semanas de veinte, y el modelo de cada día. Sin esta línea las
+    # tarjetas de «Hoxe na aula» y de la casa no tendrían de dónde leer.
+    - assets/content/tpr/
+    # Los cinco cursos del trayecto, uno por directorio: Flutter NO entra en
+    # los subdirectorios de una entrada, así que cada uno lleva la suya. Sin
+    # ellas el APK viajaría con el modelo y sin ninguna de las 4.000 palabras.
+    - assets/content/tpr/curso_0_2/
+    - assets/content/tpr/curso_2_3/
+    - assets/content/tpr/curso_3_4/
+    - assets/content/tpr/curso_4_5/
+    - assets/content/tpr/curso_5_6/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

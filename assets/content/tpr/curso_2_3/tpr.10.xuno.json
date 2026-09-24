@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "id": "tpr.2_3.xuno",
+  "curso": "curso_2_3",
+  "orden": 10,
+  "mesCalendario": 6,
+  "semanas": [
+    {
+      "semana": 1,
+      "tema": {
+        "gl": "Barcos na ría",
+        "es": "Barcos en la ría"
+      },
+      "palabras": [
+        {
+          "id": "2_3.xuno.s1.sailing-boat",
+          "en": "Sailing boat",
+          "gl": "Veleiro",
+          "es": "Velero",
+          "tprAction": {
+            "gl": "Facer unha vela coas mans",
+            "es": "Hacer una vela con las manos"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s1.rowing-boat",
+          "en": "Rowing boat",
+          "gl": "Bote de remos",
+          "es": "Barca de remos",
+          "tprAction": {
+            "gl": "Remar sentados no chan",
+            "es": "Remar sentados en el suelo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s1.paddle-boat",
+          "en": "Paddle boat",
+          "gl": "Pedaliño",
+          "es": "Hidropedal",
+          "tprAction": {
+            "gl": "Pedalear sentados",
+            "es": "Pedalear sentados"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s1.oar",
+          "en": "Oar",
+          "gl": "Remo",
+          "es": "Remo",
+          "tprAction": {
+            "gl": "Mover un remo imaxinario",
+            "es": "Mover un remo imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s1.boat-sail",
+          "en": "Boat sail",
+          "gl": "Vela",
+          "es": "Vela",
+          "tprAction": {
+            "gl": "Abrir os brazos coma unha vela",
+            "es": "Abrir los brazos como una vela"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s1.life-jacket",
+          "en": "Life jacket",
+          "gl": "Chaleco salvavidas",
+          "es": "Chaleco salvavidas",
+          "tprAction": {
+            "gl": "Poñer un chaleco imaxinario",
+            "es": "Ponerse un chaleco imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s1.mast",
+          "en": "Mast",
+          "gl": "Mastro",
+          "es": "Mástil",
+          "tprAction": {
+            "gl": "Estirarse moi dereito",
+            "es": "Estirarse muy recto"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s1.row-the-boat",
+          "en": "Row the boat",
+          "gl": "Remar o bote",
+          "es": "Remar la barca",
+          "tprAction": {
+            "gl": "Remar adiante e atrás",
+            "es": "Remar adelante y atrás"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s1.set-sail",
+          "en": "Set sail",
+          "gl": "Zarpar",
+          "es": "Zarpar",
+          "tprAction": {
+            "gl": "Empurrar e saír navegando",
+            "es": "Empujar y salir navegando"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s1.rock-the-boat",
+          "en": "Rock the boat",
+          "gl": "Abanear o bote",
+          "es": "Balancear la barca",
+          "tprAction": {
+            "gl": "Abanearse sentados",
+            "es": "Balancearse sentados"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s1.steer-the-boat",
+          "en": "Steer the boat",
+          "gl": "Guiar o barco",
+          "es": "Guiar el barco",
+          "tprAction": {
+            "gl": "Xirar un temón imaxinario",
+            "es": "Girar un timón imaginario"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s1.drift-along",
+          "en": "Drift along",
+          "gl": "Deixarse levar",
+          "es": "Dejarse llevar",
+          "tprAction": {
+            "gl": "Moverse amodo sen remar",
+            "es": "Moverse despacio sin remar"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s1.seaworthy",
+          "en": "Seaworthy",
+          "gl": "Preparado para o mar",
+          "es": "Listo para el mar",
+          "tprAction": {
+            "gl": "Levantar o polgar",
+            "es": "Levantar el pulgar"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s1.choppy",
+          "en": "Choppy",
+          "gl": "Picado",
+          "es": "Picado",
+          "tprAction": {
+            "gl": "Mover as mans en ondas pequenas",
+            "es": "Mover las manos en olas pequeñas"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s1.calm-sea",
+          "en": "Calm sea",
+          "gl": "Mar tranquilo",
+          "es": "Mar tranquilo",
+          "tprAction": {
+            "gl": "Pasar a man plana",
+            "es": "Pasar la mano plana"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s1.sailing-along",
+          "en": "Sailing along",
+          "gl": "Navegando",
+          "es": "Navegando",
+          "tprAction": {
+            "gl": "Balancearse amodo",
+            "es": "Balancearse despacio"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s1.row-row-row-your-boat",
+          "en": "Row, row, row your boat",
+          "gl": "Rema, rema o teu bote",
+          "es": "Rema, rema tu barca",
+          "tprAction": {
+            "gl": "Remar cantando",
+            "es": "Remar cantando"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xuno.s1.all-aboard-the-boat",
+          "en": "All aboard the boat!",
+          "gl": "Todos ao barco!",
+          "es": "¡Todos al barco!",
+          "tprAction": {
+            "gl": "Subir ao barco imaxinario",
+            "es": "Subir al barco imaginario"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xuno.s1.gently-down-the-river",
+          "en": "Gently down the river",
+          "gl": "Amodo polo río",
+          "es": "Despacio por el río",
+          "tprAction": {
+            "gl": "Remar amodo",
+            "es": "Remar despacio"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.xuno.s1.boats-on-the-water",
+          "en": "Boats on the water",
+          "gl": "Barcos na auga",
+          "es": "Barcos en el agua",
+          "tprAction": {
+            "gl": "Mover as mans coma barcos",
+            "es": "Mover las manos como barcos"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 2,
+      "tema": {
+        "gl": "A area de Samil",
+        "es": "La arena de Samil"
+      },
+      "palabras": [
+        {
+          "id": "2_3.xuno.s2.sandpit",
+          "en": "Sandpit",
+          "gl": "Areeiro",
+          "es": "Arenero",
+          "tprAction": {
+            "gl": "Sentarse no areeiro",
+            "es": "Sentarse en el arenero"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s2.mould",
+          "en": "Mould",
+          "gl": "Molde",
+          "es": "Molde",
+          "tprAction": {
+            "gl": "Encher un molde de area",
+            "es": "Llenar un molde de arena"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s2.sieve-toy",
+          "en": "Sieve toy",
+          "gl": "Peneira de xoguete",
+          "es": "Tamiz de juguete",
+          "tprAction": {
+            "gl": "Peneirar area",
+            "es": "Tamizar arena"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s2.sand-pie",
+          "en": "Sand pie",
+          "gl": "Flan de area",
+          "es": "Flan de arena",
+          "tprAction": {
+            "gl": "Virar o molde e levantalo",
+            "es": "Volcar el molde y levantarlo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s2.pebble-path",
+          "en": "Pebble path",
+          "gl": "Camiño de pedriñas",
+          "es": "Camino de piedrecitas",
+          "tprAction": {
+            "gl": "Poñer pedriñas en fila",
+            "es": "Poner piedrecitas en fila"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s2.beach-spade",
+          "en": "Beach spade",
+          "gl": "Pa de praia",
+          "es": "Pala de playa",
+          "tprAction": {
+            "gl": "Cavar coa pa",
+            "es": "Cavar con la pala"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s2.footprints-in-sand",
+          "en": "Footprints in sand",
+          "gl": "Pegadas na area",
+          "es": "Huellas en la arena",
+          "tprAction": {
+            "gl": "Pisar e mirar a pegada",
+            "es": "Pisar y mirar la huella"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s2.pat-the-sand",
+          "en": "Pat the sand",
+          "gl": "Palmear a area",
+          "es": "Palmear la arena",
+          "tprAction": {
+            "gl": "Palmear a area coa man",
+            "es": "Palmear la arena con la mano"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s2.turn-out",
+          "en": "Turn out",
+          "gl": "Desenformar",
+          "es": "Desmoldar",
+          "tprAction": {
+            "gl": "Virar o molde e levantalo",
+            "es": "Volcar el molde y levantarlo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s2.sift",
+          "en": "Sift",
+          "gl": "Peneirar",
+          "es": "Tamizar",
+          "tprAction": {
+            "gl": "Mover a peneira",
+            "es": "Mover el tamiz"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s2.dig-a-hole",
+          "en": "Dig a hole",
+          "gl": "Cavar un burato",
+          "es": "Cavar un agujero",
+          "tprAction": {
+            "gl": "Cavar coas mans",
+            "es": "Cavar con las manos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s2.fill-the-bucket",
+          "en": "Fill the bucket",
+          "gl": "Encher o balde",
+          "es": "Llenar el cubo",
+          "tprAction": {
+            "gl": "Encher o balde de area",
+            "es": "Llenar el cubo de arena"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s2.damp-sand",
+          "en": "Damp sand",
+          "gl": "Area húmida",
+          "es": "Arena húmeda",
+          "tprAction": {
+            "gl": "Apertar area húmida",
+            "es": "Apretar arena húmeda"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s2.dry-sand",
+          "en": "Dry sand",
+          "gl": "Area seca",
+          "es": "Arena seca",
+          "tprAction": {
+            "gl": "Deixar caer area seca",
+            "es": "Dejar caer arena seca"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s2.heaped",
+          "en": "Heaped",
+          "gl": "Amoreado",
+          "es": "Amontonado",
+          "tprAction": {
+            "gl": "Facer un monte de area",
+            "es": "Hacer un montón de arena"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s2.smooth-sand",
+          "en": "Smooth sand",
+          "gl": "Area lisa",
+          "es": "Arena lisa",
+          "tprAction": {
+            "gl": "Alisar a area coa man",
+            "es": "Alisar la arena con la mano"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s2.let-s-dig",
+          "en": "Let's dig!",
+          "gl": "Imos cavar!",
+          "es": "¡Vamos a cavar!",
+          "tprAction": {
+            "gl": "Cavar coa pa",
+            "es": "Cavar con la pala"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xuno.s2.look-a-sand-pie",
+          "en": "Look, a sand pie!",
+          "gl": "Mira, un flan de area!",
+          "es": "¡Mira, un flan de arena!",
+          "tprAction": {
+            "gl": "Sinalar o flan",
+            "es": "Señalar el flan"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xuno.s2.sand-in-the-bucket",
+          "en": "Sand in the bucket",
+          "gl": "Area no balde",
+          "es": "Arena en el cubo",
+          "tprAction": {
+            "gl": "Botar area no balde",
+            "es": "Echar arena en el cubo"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.xuno.s2.deeper-and-deeper",
+          "en": "Deeper and deeper",
+          "gl": "Cada vez máis fondo",
+          "es": "Cada vez más hondo",
+          "tprAction": {
+            "gl": "Cavar máis e máis",
+            "es": "Cavar más y más"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 3,
+      "tema": {
+        "gl": "Tesouros da praia",
+        "es": "Tesoros de la playa"
+      },
+      "palabras": [
+        {
+          "id": "2_3.xuno.s3.sea-glass",
+          "en": "Sea glass",
+          "gl": "Cristal de mar",
+          "es": "Cristal de mar",
+          "tprAction": {
+            "gl": "Mirar un cristal á luz",
+            "es": "Mirar un cristal a la luz"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s3.driftwood",
+          "en": "Driftwood",
+          "gl": "Madeira de deriva",
+          "es": "Madera a la deriva",
+          "tprAction": {
+            "gl": "Coller un pau da praia",
+            "es": "Coger un palo de la playa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s3.cockle",
+          "en": "Cockle",
+          "gl": "Berberecho",
+          "es": "Berberecho",
+          "tprAction": {
+            "gl": "Abrir e pechar as mans coma unha cuncha",
+            "es": "Abrir y cerrar las manos como una concha"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s3.razor-clam",
+          "en": "Razor clam",
+          "gl": "Navalla",
+          "es": "Navaja",
+          "tprAction": {
+            "gl": "Estirar a man longa e fina",
+            "es": "Estirar la mano larga y fina"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s3.beach-bag",
+          "en": "Beach bag",
+          "gl": "Bolsa de praia",
+          "es": "Bolsa de playa",
+          "tprAction": {
+            "gl": "Meter tesouros na bolsa",
+            "es": "Meter tesoros en la bolsa"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s3.rock-pool",
+          "en": "Rock pool",
+          "gl": "Poza entre rochas",
+          "es": "Charca entre rocas",
+          "tprAction": {
+            "gl": "Mirar dentro da poza",
+            "es": "Mirar dentro de la charca"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s3.periwinkle",
+          "en": "Periwinkle",
+          "gl": "Caramuxo",
+          "es": "Bígaro",
+          "tprAction": {
+            "gl": "Facer unha espiral co dedo",
+            "es": "Hacer una espiral con el dedo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s3.beachcomb",
+          "en": "Beachcomb",
+          "gl": "Buscar tesouros",
+          "es": "Buscar tesoros",
+          "tprAction": {
+            "gl": "Camiñar mirando o chan",
+            "es": "Caminar mirando el suelo"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s3.turn-over-a-stone",
+          "en": "Turn over a stone",
+          "gl": "Darlle a volta a unha pedra",
+          "es": "Dar la vuelta a una piedra",
+          "tprAction": {
+            "gl": "Virar unha pedra con coidado",
+            "es": "Voltear una piedra con cuidado"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s3.rinse-off-sand",
+          "en": "Rinse off sand",
+          "gl": "Quitar a area",
+          "es": "Quitar la arena",
+          "tprAction": {
+            "gl": "Aclarar a cuncha na auga",
+            "es": "Aclarar la concha en el agua"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s3.hold-up-high",
+          "en": "Hold up high",
+          "gl": "Levantar alto",
+          "es": "Levantar alto",
+          "tprAction": {
+            "gl": "Amosar o tesouro a todos",
+            "es": "Enseñar el tesoro a todos"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s3.line-them-up",
+          "en": "Line them up",
+          "gl": "Poñelos en fila",
+          "es": "Ponerlos en fila",
+          "tprAction": {
+            "gl": "Poñer os tesouros en fila",
+            "es": "Poner los tesoros en fila"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s3.glinting",
+          "en": "Glinting",
+          "gl": "Escintilante",
+          "es": "Reluciente",
+          "tprAction": {
+            "gl": "Mover o cristal ao sol",
+            "es": "Mover el cristal al sol"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s3.ridged",
+          "en": "Ridged",
+          "gl": "Con raias",
+          "es": "Con estrías",
+          "tprAction": {
+            "gl": "Pasar o dedo polas raias da cuncha",
+            "es": "Pasar el dedo por las estrías de la concha"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s3.smooth-pebble",
+          "en": "Smooth pebble",
+          "gl": "Pedra lisa",
+          "es": "Piedra lisa",
+          "tprAction": {
+            "gl": "Acariñar unha pedra lisa",
+            "es": "Acariciar una piedra lisa"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s3.salty-shell",
+          "en": "Salty shell",
+          "gl": "Cuncha salgada",
+          "es": "Concha salada",
+          "tprAction": {
+            "gl": "Cheirar a cuncha",
+            "es": "Oler la concha"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s3.look-what-i-found",
+          "en": "Look what I found!",
+          "gl": "Mira o que atopei!",
+          "es": "¡Mira lo que encontré!",
+          "tprAction": {
+            "gl": "Abrir a man co tesouro",
+            "es": "Abrir la mano con el tesoro"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xuno.s3.can-i-keep-it",
+          "en": "Can I keep it?",
+          "gl": "Podo gardalo?",
+          "es": "¿Puedo quedármelo?",
+          "tprAction": {
+            "gl": "Apertar o tesouro contra o peito",
+            "es": "Apretar el tesoro contra el pecho"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xuno.s3.under-the-stone",
+          "en": "Under the stone",
+          "gl": "Debaixo da pedra",
+          "es": "Debajo de la piedra",
+          "tprAction": {
+            "gl": "Levantar a pedra e mirar",
+            "es": "Levantar la piedra y mirar"
+          },
+          "category": "complex"
+        },
+        {
+          "id": "2_3.xuno.s3.shells-in-the-bag",
+          "en": "Shells in the bag",
+          "gl": "Cunchas na bolsa",
+          "es": "Conchas en la bolsa",
+          "tprAction": {
+            "gl": "Meter as cunchas na bolsa",
+            "es": "Meter las conchas en la bolsa"
+          },
+          "category": "complex"
+        }
+      ]
+    },
+    {
+      "semana": 4,
+      "tema": {
+        "gl": "Ata logo, verán",
+        "es": "Hasta luego, verano"
+      },
+      "palabras": [
+        {
+          "id": "2_3.xuno.s4.summer-hat",
+          "en": "Summer hat",
+          "gl": "Chapeu de verán",
+          "es": "Sombrero de verano",
+          "tprAction": {
+            "gl": "Poñer o chapeu e sorrir",
+            "es": "Ponerse el sombrero y sonreír"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s4.flip-flops",
+          "en": "Flip-flops",
+          "gl": "Chancletas",
+          "es": "Chanclas",
+          "tprAction": {
+            "gl": "Camiñar facendo «flip flop»",
+            "es": "Caminar haciendo «flip flop»"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s4.beach-ball-game",
+          "en": "Beach ball game",
+          "gl": "Xogo de pelota",
+          "es": "Juego de pelota",
+          "tprAction": {
+            "gl": "Pasar a pelota a un amigo",
+            "es": "Pasar la pelota a un amigo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s4.ice-lolly",
+          "en": "Ice lolly",
+          "gl": "Xeado de pau",
+          "es": "Polo",
+          "tprAction": {
+            "gl": "Lamber un xeado imaxinario",
+            "es": "Lamer un polo imaginario"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s4.goodbye-card",
+          "en": "Goodbye card",
+          "gl": "Tarxeta de despedida",
+          "es": "Tarjeta de despedida",
+          "tprAction": {
+            "gl": "Dar unha tarxeta a un amigo",
+            "es": "Dar una tarjeta a un amigo"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s4.school-bag",
+          "en": "School bag",
+          "gl": "Mochila da escola",
+          "es": "Mochila del colegio",
+          "tprAction": {
+            "gl": "Colgar a mochila ao ombro",
+            "es": "Colgar la mochila al hombro"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s4.class-photo",
+          "en": "Class photo",
+          "gl": "Foto da clase",
+          "es": "Foto de la clase",
+          "tprAction": {
+            "gl": "Xuntarse todos para a foto",
+            "es": "Juntarse todos para la foto"
+          },
+          "category": "noun"
+        },
+        {
+          "id": "2_3.xuno.s4.wave-goodbye",
+          "en": "Wave goodbye",
+          "gl": "Acenar para despedirse",
+          "es": "Decir adiós con la mano",
+          "tprAction": {
+            "gl": "Acenar dende a porta",
+            "es": "Saludar desde la puerta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s4.give-a-card",
+          "en": "Give a card",
+          "gl": "Dar unha tarxeta",
+          "es": "Dar una tarjeta",
+          "tprAction": {
+            "gl": "Estender a tarxeta",
+            "es": "Extender la tarjeta"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s4.pose",
+          "en": "Pose",
+          "gl": "Poñer para a foto",
+          "es": "Posar",
+          "tprAction": {
+            "gl": "Sorrir quietos para a foto",
+            "es": "Sonreír quietos para la foto"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s4.lick-a-lolly",
+          "en": "Lick a lolly",
+          "gl": "Lamber o xeado",
+          "es": "Lamer el helado",
+          "tprAction": {
+            "gl": "Lamber no aire",
+            "es": "Lamer en el aire"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s4.promise",
+          "en": "Promise",
+          "gl": "Prometer",
+          "es": "Prometer",
+          "tprAction": {
+            "gl": "Enganchar os dedos miñeiros",
+            "es": "Enganchar los meñiques"
+          },
+          "category": "verb"
+        },
+        {
+          "id": "2_3.xuno.s4.summertime",
+          "en": "Summertime",
+          "gl": "De verán",
+          "es": "Veraniego",
+          "tprAction": {
+            "gl": "Abanarse contentos",
+            "es": "Abanicarse contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s4.grown-bigger",
+          "en": "Grown bigger",
+          "gl": "Máis grande",
+          "es": "Más grande",
+          "tprAction": {
+            "gl": "Estirarse alto",
+            "es": "Estirarse alto"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s4.sunny-day",
+          "en": "Sunny day",
+          "gl": "Día de sol",
+          "es": "Día de sol",
+          "tprAction": {
+            "gl": "Abrir as mans coma o sol",
+            "es": "Abrir las manos como el sol"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s4.excited-for-summer",
+          "en": "Excited for summer",
+          "gl": "Con ganas de verán",
+          "es": "Con ganas de verano",
+          "tprAction": {
+            "gl": "Saltar contentos",
+            "es": "Saltar contentos"
+          },
+          "category": "adjective"
+        },
+        {
+          "id": "2_3.xuno.s4.say-cheese",
+          "en": "Say cheese!",
+          "gl": "Di patata!",
+          "es": "¡Di patata!",
+          "tprAction": {
+            "gl": "Sorrir para a foto",
+            "es": "Sonreír para la foto"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xuno.s4.have-fun",
+          "en": "Have fun!",
+          "gl": "Pásao ben!",
+          "es": "¡Pásalo bien!",
+          "tprAction": {
+            "gl": "Bater palmas",
+            "es": "Dar palmas"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xuno.s4.bye-bye-friends",
+          "en": "Bye-bye, friends!",
+          "gl": "Adeus, amigos!",
+          "es": "¡Adiós, amigos!",
+          "tprAction": {
+            "gl": "Acenar a todos",
+            "es": "Saludar a todos"
+          },
+          "category": "phrase"
+        },
+        {
+          "id": "2_3.xuno.s4.friends-forever",
+          "en": "Friends forever",
+          "gl": "Amigos para sempre",
+          "es": "Amigos para siempre",
+          "tprAction": {
+            "gl": "Enganchar os miñeiros",
+            "es": "Enganchar los meñiques"
+          },
+          "category": "phrase"
+        }
+      ]
+    }
+  ]
+}

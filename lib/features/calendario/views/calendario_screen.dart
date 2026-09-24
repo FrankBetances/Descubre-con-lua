@@ -10,15 +10,14 @@ import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/unidad_model.dart';
-import '../../../data/models/asamblea_segundo_ciclo_model.dart';
-import '../../juega/views/asamblea_player_screen.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
-import '../../juega/widgets/aula_segundo_ciclo_panel.dart';
-import '../../../data/models/asamblea_primeiro_ciclo_model.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../juega/widgets/barra_ingles_widget.dart';
+import '../widgets/asemblea_do_dia.dart';
 import '../widgets/dia_no_fogar.dart';
+import '../widgets/palabras_do_dia.dart';
 import '../../academy/views/guia_atencion_screen.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../juega/views/asamblea_guiada_screen.dart';
@@ -51,7 +50,12 @@ class CalendarioScreen extends StatefulWidget {
 
   /// Por qué mes abrir. Sin esto la pantalla abre siempre por el mes de hoy,
   /// y quien llega tocando la tarjeta de xaneiro en Modo Aula esperaba xaneiro.
+  /// El mes con que se abre, DENTRO del curso: 0 es septiembre y 9 junio.
   final int? mesInicialIndex;
+
+  /// El curso del trayecto con que se abre (`curso_0_2` … `curso_5_6`). Sin él,
+  /// el de 0-2 años, que es donde empieza el trayecto.
+  final String? cursoInicial;
   final IniciarSesionCallback? onIniciarSesion;
   final ContentRepository? repository;
   final OfflineAudioService? audioService;
@@ -69,6 +73,7 @@ class CalendarioScreen extends StatefulWidget {
     this.onLanguageChanged,
     this.esDocenteInicial = false,
     this.mesInicialIndex,
+    this.cursoInicial,
     this.onIniciarSesion,
     this.repository,
     this.audioService,
@@ -89,11 +94,13 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   int _semana = ProgresionDoMes.hoxe().semana;
   int _dia = ProgresionDoMes.hoxe().dia;
 
-  /// El curso de la crianza, para el lado de las familias. El aula elige
-  /// «O MEU GRUPO» y la familia elige lo mismo: la rutina de casa de un bebé
-  /// de dieciocho meses no es la de uno de cinco años, y el calendario de
-  /// familias no preguntaba.
-  String _cursoFogar = _cursosDaCrianza.first.valor;
+  /// El curso del trayecto que se está mirando: es el de la tarjeta abierta.
+  ///
+  /// Son seis años, de 0-2 a 5-6, y el calendario los recorre todos: al pasar
+  /// de junio se llega al septiembre del curso siguiente. Antes enseñaba los
+  /// mismos diez meses a todas las edades, como si el trabajo acabase en junio.
+  late String _cursoAberto =
+      widget.cursoInicial ?? _cursosDaCrianza.first.valor;
 
   /// El mes se cambia deslizando la tarjeta de lado, no bajando por la
   /// pantalla. Antes el mes se elegía de tres maneras apiladas en una sola
@@ -112,7 +119,25 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   /// una avería en vez de un disco girando.
   String? _fallo;
 
-  List<MesCurricular> get _meses => _contenido?.meses ?? const [];
+  /// Los cincuenta meses del trayecto; los diez de `meses.json` solo si el
+  /// trayecto no se pudo leer.
+  List<MesCurricular> get _meses {
+    final c = _contenido;
+    if (c == null) return const [];
+    return c.trayecto.isNotEmpty ? c.trayecto : c.meses;
+  }
+
+  /// El primer mes del curso abierto en [_meses].
+  int get _inicioDoCurso {
+    final i = _meses.indexWhere((m) => m.cursoId == _cursoAberto);
+    return i < 0 ? 0 : i;
+  }
+
+  /// Cuántos meses tiene el curso abierto en [_meses]: diez en el trayecto.
+  int get _mesesDoCurso {
+    final n = _meses.where((m) => m.cursoId == _cursoAberto).length;
+    return n == 0 ? _meses.length : n;
+  }
 
   static const _titulo = LocalizedString(
     gl: 'Calendario Escola · Fogar',
@@ -120,11 +145,12 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   );
 
   static const _subtitulo = LocalizedString(
-    gl: 'Os dez meses do curso. A docente dirixe a asemblea e entrega a nota; '
-        'a familia fai o xogo de tres minutos na casa. Cada lado marca o seu.',
-    es: 'Los diez meses del curso. La docente dirige la asamblea y entrega la '
-        'nota; la familia hace el juego de tres minutos en casa. Cada lado '
-        'marca lo suyo.',
+    gl: 'Seis anos, de 0-2 a 5-6: dez meses en cada curso. A docente dirixe a '
+        'asemblea e entrega a nota; a familia fai o xogo de tres minutos na '
+        'casa. Cada lado marca o seu.',
+    es: 'Seis años, de 0-2 a 5-6: diez meses en cada curso. La docente dirige '
+        'la asamblea y entrega la nota; la familia hace el juego de tres '
+        'minutos en casa. Cada lado marca lo suyo.',
   );
 
   static const List<OpcionDeIdade<String>> _cursosDaCrianza = [
@@ -239,11 +265,23 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         'pronunciación de cada frase.',
   );
 
+  /// El inglés de un curso: las cinco palabras de cada día y los totales del
+  /// trimestre salen de aquí. Mientras no esté leído, no se pinta ninguno de
+  /// los dos: un «320 p.» escrito a mano podría no ser lo que el curso trae.
+  CursoTpr? _inglesDo(String? cursoId) =>
+      widget.repository?.cursoTprSync(cursoId ?? _cursoAberto);
+
   @override
   void initState() {
     super.initState();
     _language = widget.initialLanguage;
     _esDocente = widget.esDocenteInicial;
+    final repo = widget.repository;
+    if (repo != null && repo.programaTprSync == null) {
+      repo.loadProgramaTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
 
     final yaCargado = widget.contenido;
     if (yaCargado != null) {
@@ -270,10 +308,15 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   /// Abre por el mes de curso que toca hoy, no por septiembre.
   void _situarEnElMesDeHoy() {
     final pedido = widget.mesInicialIndex;
-    final total = _contenido?.meses.length ?? 0;
-    final indice = (pedido != null && pedido >= 0 && pedido < total)
-        ? pedido
-        : (_contenido?.indiceParaFecha(DateTime.now()) ?? 0);
+    final contenido = _contenido;
+    final int indice;
+    if (pedido != null && pedido >= 0 && pedido < _mesesDoCurso) {
+      indice = _inicioDoCurso + pedido;
+    } else if (contenido != null && contenido.trayecto.isNotEmpty) {
+      indice = contenido.indiceNoTrayecto(_cursoAberto, DateTime.now());
+    } else {
+      indice = contenido?.indiceParaFecha(DateTime.now()) ?? 0;
+    }
     _mesSeleccionadoIndex = indice < 0 ? 0 : indice;
     // El controlador se crea AQUI y no en `initState`: hasta que el contenido
     // no esta leido no se sabe por que mes hay que abrir, y `initialPage` solo
@@ -297,6 +340,22 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   void dispose() {
     _paginas?.dispose();
     super.dispose();
+  }
+
+  /// Salta al MISMO mes en el curso elegido: si se miraba octubre de 2-3 años
+  /// y se elige 5-6, se abre octubre de 5-6.
+  void _irAoCurso(String curso) {
+    if (_meses.isEmpty) return;
+    final mesDoCurso = _meses[_mesSeleccionadoIndex].mesDoCurso;
+    final destino = _meses
+        .indexWhere((m) => m.cursoId == curso && m.mesDoCurso == mesDoCurso);
+    if (destino < 0) return;
+    setState(() {
+      _cursoAberto = curso;
+      _mesSeleccionadoIndex = destino;
+    });
+    _paginas?.jumpToPage(destino);
+    _traerPastillaALaVista(destino);
   }
 
   void _onToggleLanguage(AppLanguage newLang) {
@@ -437,22 +496,12 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                             const SizedBox(height: AppTheme.spaceMd),
                             _buildRoleSwitcher(theme),
                             const SizedBox(height: AppTheme.spaceMd),
-                            // El espejo del aula: allí se elige el grupo antes
-                            // que el mes, aquí también.
-                            if (!_esDocente && widget.repository != null) ...[
-                              RotuloSeccion(_language == AppLanguage.gl
-                                  ? 'A MIÑA CRIANZA'
-                                  : 'MI CRIATURA'),
+                            // Los seis años: el curso se elige antes que el mes,
+                            // como en el aula se elige el grupo. En los dos
+                            // lados, porque el trayecto es el mismo.
+                            if (_contenido?.trayecto.isNotEmpty ?? false) ...[
+                              _buildSelectorDeCurso(),
                               const SizedBox(height: AppTheme.spaceSm),
-                              SelectorDeIdade<String>(
-                                prefixoClave: 'curso_fogar',
-                                seleccionado: _cursoFogar,
-                                language: _language,
-                                opcions: _cursosDaCrianza,
-                                onCambiar: (c) =>
-                                    setState(() => _cursoFogar = c),
-                              ),
-                              const SizedBox(height: AppTheme.spaceMd),
                             ],
                             _buildMonthSelector(theme),
                           ],
@@ -511,7 +560,10 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         controller: paginas,
         itemCount: _meses.length,
         onPageChanged: (index) {
-          setState(() => _mesSeleccionadoIndex = index);
+          setState(() {
+            _mesSeleccionadoIndex = index;
+            _cursoAberto = _meses[index].cursoId ?? _cursoAberto;
+          });
           _traerPastillaALaVista(index);
         },
         itemBuilder: (context, index) =>
@@ -684,51 +736,245 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     );
   }
 
-  Widget _buildMonthSelector(ThemeData theme) {
-    return SizedBox(
-      height: 44,
-      child: ListView.separated(
-        key: const Key('selector_meses'),
-        scrollDirection: Axis.horizontal,
-        itemCount: _meses.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 8),
-        itemBuilder: (context, index) {
-          final mesItem = _meses[index];
-          final isSelected = index == _mesSeleccionadoIndex;
+  /// Los tres trimestres del curso, por meses del CALENDARIO: así el
+  /// trimestre activo no depende de que la lista de meses empiece en septiembre.
+  static const List<
+      ({
+        LocalizedString nome,
+        LocalizedString meses,
+        List<int> mesesCalendario
+      })> _trimestres = [
+    (
+      nome: LocalizedString(gl: '1.º Outono', es: '1.º Otoño'),
+      meses: LocalizedString(gl: 'Set - Dec', es: 'Sep - Dic'),
+      mesesCalendario: [9, 10, 11, 12],
+    ),
+    (
+      nome: LocalizedString(gl: '2.º Inverno', es: '2.º Invierno'),
+      meses: LocalizedString(gl: 'Xan - Mar', es: 'Ene - Mar'),
+      mesesCalendario: [1, 2, 3],
+    ),
+    (
+      nome: LocalizedString(gl: '3.º Primavera', es: '3.º Primavera'),
+      meses: LocalizedString(gl: 'Abr - Xuñ', es: 'Abr - Jun'),
+      mesesCalendario: [4, 5, 6],
+    ),
+  ];
 
-          return ChoiceChip(
-            key: _clavesPastilla[index],
-            label: Text(mesItem.nombreMes.resolve(_language)),
-            selected: isSelected,
-            onSelected: (selected) {
-              if (!selected) return;
-              // Las pastillas son el atajo para saltar a un mes lejano; el
-              // gesto normal es deslizar la tarjeta. Mueven LA PÁGINA, no un
-              // estado aparte: si cada una llevara su cuenta, la pastilla y la
-              // tarjeta acabarían enseñando meses distintos.
-              _paginas?.animateToPage(
-                index,
-                duration: const Duration(milliseconds: 260),
-                curve: Curves.easeOutCubic,
-              );
-              setState(() => _mesSeleccionadoIndex = index);
-              _traerPastillaALaVista(index);
-            },
-            selectedColor: AppTheme.primary,
-            backgroundColor: Colors.white,
-            labelStyle: TextStyle(
-              color: isSelected ? Colors.white : AppTheme.textPrimary,
-              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-            ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-              side: BorderSide(
-                color: isSelected ? AppTheme.primary : AppTheme.border,
+  int get _trimestreActual {
+    if (_meses.isEmpty) return 0;
+    final mes = _meses[_mesSeleccionadoIndex].mesCalendario;
+    for (var i = 0; i < _trimestres.length; i++) {
+      if (_trimestres[i].mesesCalendario.contains(mes)) return i;
+    }
+    return 0;
+  }
+
+  Widget _buildTrimesterSelector(ThemeData theme) {
+    final trimestreActual = _trimestreActual;
+    final curso = _inglesDo(_cursoAberto);
+    // Las palabras de cada trimestre se CUENTAN en el curso. Sin el curso
+    // leído, el trimestre se enseña sin número antes que con uno inventado.
+    final trimestres = [
+      for (final t in _trimestres)
+        (
+          nome: t.nome.resolve(_language),
+          sub: curso == null
+              ? t.meses.resolve(_language)
+              : '${t.meses.resolve(_language)} (${curso.palabrasEnMeses(t.mesesCalendario)} p.)',
+          inicioMes: _meses.indexWhere((m) =>
+              (m.cursoId == null || m.cursoId == _cursoAberto) &&
+              m.mesCalendario == t.mesesCalendario.first),
+        ),
+    ];
+
+    return Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+        color: const Color(0xFFEDF2F7),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Row(
+        children: List.generate(3, (i) {
+          final t = trimestres[i];
+          final isActivo = trimestreActual == i;
+          return Expanded(
+            child: InkWell(
+              onTap: () {
+                final targetMes = t.inicioMes;
+                if (targetMes < 0) return;
+                _paginas?.animateToPage(
+                  targetMes,
+                  duration: const Duration(milliseconds: 260),
+                  curve: Curves.easeOutCubic,
+                );
+                setState(() => _mesSeleccionadoIndex = targetMes);
+                _traerPastillaALaVista(targetMes);
+              },
+              borderRadius: BorderRadius.circular(9),
+              child: Container(
+                padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
+                decoration: BoxDecoration(
+                  color: isActivo ? Colors.white : Colors.transparent,
+                  borderRadius: BorderRadius.circular(9),
+                  boxShadow: isActivo
+                      ? const [
+                          BoxShadow(
+                            color: Color(0x14000000),
+                            blurRadius: 3,
+                            offset: Offset(0, 1),
+                          )
+                        ]
+                      : null,
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        t.nome,
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight:
+                              isActivo ? FontWeight.bold : FontWeight.w600,
+                          color: isActivo
+                              ? AppTheme.primaryInk
+                              : AppTheme.textSecondary,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 1),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        t.sub,
+                        style: TextStyle(
+                          fontSize: 9,
+                          color:
+                              isActivo ? AppTheme.primary : AppTheme.textMuted,
+                          fontWeight:
+                              isActivo ? FontWeight.w700 : FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           );
-        },
+        }),
       ),
+    );
+  }
+
+  /// El curso, en UNA fila de pastillas cortas. Con las tarjetas de dos
+  /// líneas —edad y matiz— el marco de arriba pasaba de su techo del 55 % y la
+  /// tira de meses quedaba escondida debajo: se veía el trimestre y no el mes.
+  Widget _buildSelectorDeCurso() {
+    final isGl = _language == AppLanguage.gl;
+    final rotulo = _esDocente
+        ? (isGl ? 'CURSO' : 'CURSO')
+        : (isGl ? 'A MIÑA CRIANZA' : 'MI CRIATURA');
+    return Column(
+      key: const Key('selector_curso_calendario'),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          '$rotulo · ${isGl ? 'ANOS' : 'AÑOS'}',
+          style: const TextStyle(
+            fontSize: 11,
+            fontWeight: FontWeight.w800,
+            letterSpacing: 0.8,
+            color: AppTheme.textSecondary,
+          ),
+        ),
+        const SizedBox(height: 4),
+        Wrap(
+          spacing: 6,
+          runSpacing: 4,
+          children: [
+            for (final op in _cursosDaCrianza)
+              ChoiceChip(
+                key: ValueKey('curso_fogar_${op.valor}'),
+                // «0-2», no «0-2 anos»: el rótulo ya dice que son años, y así las
+                // cinco caben en una fila de un teléfono de 360.
+                label: Text(op.etiqueta.resolve(_language).split(' ').first),
+                tooltip: op.etiqueta.resolve(_language),
+                selected: op.valor == _cursoAberto,
+                showCheckmark: false,
+                visualDensity: VisualDensity.compact,
+                selectedColor: AppTheme.primaryVigoBlue,
+                backgroundColor: Colors.white,
+                labelStyle: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: op.valor == _cursoAberto
+                      ? Colors.white
+                      : AppTheme.primaryInk,
+                ),
+                onSelected: (sel) {
+                  if (sel && op.valor != _cursoAberto) _irAoCurso(op.valor);
+                },
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  Widget _buildMonthSelector(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _buildTrimesterSelector(theme),
+        const SizedBox(height: 6),
+        SizedBox(
+          height: 44,
+          child: ListView.separated(
+            key: const Key('selector_meses'),
+            scrollDirection: Axis.horizontal,
+            itemCount: _mesesDoCurso,
+            separatorBuilder: (_, __) => const SizedBox(width: 8),
+            itemBuilder: (context, i) {
+              final index = _inicioDoCurso + i;
+              final mesItem = _meses[index];
+              final isSelected = index == _mesSeleccionadoIndex;
+
+              return ChoiceChip(
+                key: _clavesPastilla[index],
+                label: Text(mesItem.nombreMes.resolve(_language)),
+                selected: isSelected,
+                onSelected: (selected) {
+                  if (!selected) return;
+                  // Las pastillas son el atajo para saltar a un mes lejano; el
+                  // gesto normal es deslizar la tarjeta. Mueven LA PÁGINA, no un
+                  // estado aparte: si cada una llevara su cuenta, la pastilla y la
+                  // tarjeta acabarían enseñando meses distintos.
+                  _paginas?.animateToPage(
+                    index,
+                    duration: const Duration(milliseconds: 260),
+                    curve: Curves.easeOutCubic,
+                  );
+                  setState(() => _mesSeleccionadoIndex = index);
+                  _traerPastillaALaVista(index);
+                },
+                selectedColor: AppTheme.primary,
+                backgroundColor: Colors.white,
+                labelStyle: TextStyle(
+                  color: isSelected ? Colors.white : AppTheme.textPrimary,
+                  fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  side: BorderSide(
+                    color: isSelected ? AppTheme.primary : AppTheme.border,
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 
@@ -981,11 +1227,12 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 const SizedBox(height: 12),
                 DiaNoFogar(
                   repository: widget.repository!,
-                  cursoId: _cursoFogar,
-                  // El calendario numera los meses por el orden del CURSO:
-                  // setembro es 1. Es el mismo número que usa el banco de días.
-                  mes: _mesSeleccionadoIndex + 1,
+                  // El curso y el mes de ESTA tarjeta: setembro es 1, como en
+                  // el banco de días.
+                  cursoId: mes.cursoId ?? _cursoAberto,
+                  mes: mes.mesDoCurso,
                   language: _language,
+                  audioService: widget.audioService,
                 ),
               ],
               const SizedBox(height: 12),
@@ -1068,42 +1315,14 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     if (progresions.isEmpty) return const [];
     final referencia = progresions.first;
     final isGl = _language == AppLanguage.gl;
-
-    final grupos = <({String etiqueta, String clave, VoidCallback? abrir})>[];
-    for (final tramo in TramoPrimeiroCiclo.values) {
-      final a = repo.getAsambleaPrimeiroCicloSync(mes.mesCalendario, tramo);
-      grupos.add((
-        etiqueta: tramo.etiquetaCorta.resolve(_language),
-        clave: '1c_${tramo.clave}',
-        abrir: a == null
-            ? null
-            : () => _abrirDia(
-                  clave: 'primeiro_ciclo.${tramo.clave}',
-                  fases: a.fases,
-                  subtitulo:
-                      '${mes.nombreMes.resolve(_language)} · ${tramo.etiquetaCorta.resolve(_language)}',
-                  material: a.materialDoMes.resolve(_language),
-                  cancion: a.cancionDoMes,
-                  centroInteres: a.centroInteres.resolve(_language),
-                ),
-      ));
-    }
-    for (final nivel in NivelEducativoSegundoCiclo.values) {
-      final a = repo.getAsambleaByMesYNivelSync(mes.mesCalendario, nivel);
-      grupos.add((
-        etiqueta: nivel.etiquetaCorta.resolve(_language),
-        clave: '2c_${nivel.clave}',
-        abrir: a == null
-            ? null
-            : () => _abrirDia(
-                  clave: AulaSegundoCicloPanel.claveProgresion(nivel),
-                  fases: a.fases,
-                  subtitulo:
-                      '${mes.nombreMes.resolve(_language)} · ${nivel.etiquetaCorta.resolve(_language)}',
-                  centroInteres: a.centroInteres.resolve(_language),
-                ),
-      ));
-    }
+    // En el trayecto, la tarjeta es de UN curso: su grupo y sus palabras. Los
+    // cinco grupos juntos solo quedan en el catálogo de diez meses.
+    final grupos = [
+      for (final g in gruposDaAsembleaDoDia(repo, mes.mesCalendario))
+        if (mes.cursoId == null || cursoTprDoGrupo[g.clave] == mes.cursoId) g,
+    ];
+    final curso = _inglesDo(mes.cursoId);
+    final plan = curso?.planDoDia(mes.mesCalendario, _semana, _dia);
 
     return [
       const SizedBox(height: 16),
@@ -1121,8 +1340,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       const SizedBox(height: 4),
       Text(
         isGl
-            ? 'Cada día do mes ten a súa asemblea: elixe semana, día e grupo.'
-            : 'Cada día del mes tiene su asamblea: elige semana, día y grupo.',
+            ? 'Cada día do mes ten a súa asemblea e as súas palabras en inglés: elixe semana, día e grupo.'
+            : 'Cada día del mes tiene su asamblea y sus palabras en inglés: elige semana, día y grupo.',
         style: const TextStyle(
           fontSize: 12.5,
           color: AppTheme.textSecondary,
@@ -1141,6 +1360,24 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           _dia = d;
         }),
       ),
+      // Las palabras del MISMO día que la tira: la semana y el día que abren la
+      // asamblea son los que eligen las palabras. Antes había aquí una matriz
+      // aparte, con sus propios días y sin palabras, al lado de esta tira: dos
+      // planes semanales en la misma ficha.
+      if (curso != null && plan != null) ...[
+        const SizedBox(height: 12),
+        BloqueInglesDoDia(
+          key: ValueKey('palabras_do_dia_aula_${mes.mesCalendario}'),
+          rotulo: isGl
+              ? 'INGLÉS DO DÍA · ${curso.modelo.ritmoDiario} PALABRAS NOVAS DE LUNS A XOVES'
+              : 'INGLÉS DEL DÍA · ${curso.modelo.ritmoDiario} PALABRAS NUEVAS DE LUNES A JUEVES',
+          plan: plan,
+          modeloDoDia: curso.modelo.dia(_dia),
+          semana: curso.semana(mes.mesCalendario, _semana),
+          language: _language,
+          audioService: widget.audioService,
+        ),
+      ],
       const SizedBox(height: 10),
       Wrap(
         spacing: 8,
@@ -1149,44 +1386,27 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           for (final g in grupos)
             OutlinedButton(
               key: ValueKey('calendario_dia_${mes.mesCalendario}_${g.clave}'),
-              onPressed: g.abrir,
+              onPressed: g.disponible
+                  ? () => abrirAsembleaDoDia(
+                        context,
+                        repo: repo,
+                        grupo: g,
+                        mesCalendario: mes.mesCalendario,
+                        semana: _semana,
+                        dia: _dia,
+                        language: _language,
+                        audioService: widget.audioService,
+                      )
+                  : null,
               style: OutlinedButton.styleFrom(
                 minimumSize: const Size(0, AppTheme.touchMin),
                 foregroundColor: AppTheme.primaryInk,
               ),
-              child: Text(g.etiqueta),
+              child: Text(g.etiqueta.resolve(_language)),
             ),
         ],
       ),
     ];
-  }
-
-  void _abrirDia({
-    required String clave,
-    required List<FaseAsamblea> fases,
-    required String subtitulo,
-    String? material,
-    String? cancion,
-    String? centroInteres,
-  }) {
-    final progresion = widget.repository?.getProgresionSync(clave);
-    final dia = progresion?.dia(_semana, _dia);
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => AsambleaPlayerScreen(
-          fases: dia?.aplicarA(fases) ?? fases,
-          subtitulo:
-              '$subtitulo${dia != null ? ' · S${dia.semana} ${dia.nomeDia.resolve(_language)}' : ''}',
-          material: material,
-          cancion: cancion,
-          centroInteres: centroInteres,
-          audioService: widget.audioService,
-          language: _language,
-          dia: dia,
-          semana: progresion?.semana(_semana),
-        ),
-      ),
-    );
   }
 
   Widget _buildRoleSection({

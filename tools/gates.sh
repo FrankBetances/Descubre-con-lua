@@ -99,6 +99,12 @@ run_gate "every corpus word has a part of speech and a whole sentence" \
 # Esto comprueba que no vuelvan.
 run_gate "family routines sound like a home, not like a leaflet" \
   python3 tools/humaniza_rutinas_fogar.py --check
+# Nace del planificador de la rama UI, que multiplicaba 5 × 4 × 4 × 10 y
+# enseñaba «800» con veinte palabras de muestra escritas en él: el número salía
+# bueno aunque el curso no lo tuviera. Ahora se CUENTA en assets/content/tpr/,
+# curso a curso, y ninguna palabra puede ser nueva dos veces en los cinco.
+run_gate "English: 5 new words a day, 800 per course, 4,000 from 0 to 6" \
+  python3 tools/planificador_5_palabras.py --check
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py

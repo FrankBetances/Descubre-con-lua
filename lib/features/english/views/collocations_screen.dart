@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
@@ -9,17 +12,29 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/repositories/content_repository.dart';
 
 /// Explorador de colocaciones y patrones sintácticos de inglés.
+///
+/// Las colocaciones salen de `assets/content/english/collocations_grammar.json`.
+/// Antes eran trece escritas DENTRO de este widget —fuera del alcance de los
+/// gates de contenido y sin grabación— mientras el JSON, con otras diez, no lo
+/// leía ninguna pantalla.
 class CollocationsScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
   final OfflineAudioService? audioService;
+
+  /// Para los tests: lee el JSON del disco en vez del paquete.
+  final Future<String> Function(String path)? stringLoader;
 
   const CollocationsScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
     this.audioService,
+    this.stringLoader,
   });
+
+  static const String asset =
+      'assets/content/english/collocations_grammar.json';
 
   @override
   State<CollocationsScreen> createState() => _CollocationsScreenState();
@@ -27,112 +42,46 @@ class CollocationsScreen extends StatefulWidget {
 
 class _CollocationsScreenState extends State<CollocationsScreen> {
   late AppLanguage _language;
-
-  static const List<Map<String, dynamic>> _collocations = [
-    {
-      'pattern': 'Verb + Noun (Actions)',
-      'items': [
-        {
-          'en': 'wash hands',
-          'gl': 'lavar as mans',
-          'es': 'lavar las manos',
-          'ex': 'Wash your hands before eating.'
-        },
-        {
-          'en': 'brush teeth',
-          'gl': 'lavar os dentes',
-          'es': 'cepillarse los dientes',
-          'ex': 'Brush your teeth twice a day.'
-        },
-        {
-          'en': 'read a story',
-          'gl': 'ler un conto',
-          'es': 'leer un cuento',
-          'ex': 'Let\'s read a story together.'
-        },
-        {
-          'en': 'sing a song',
-          'gl': 'cantar unha canción',
-          'es': 'cantar una canción',
-          'ex': 'Sing a happy song.'
-        },
-        {
-          'en': 'open eyes',
-          'gl': 'abrir os ollos',
-          'es': 'abrir los ojos',
-          'ex': 'Open your eyes and look!'
-        },
-      ]
-    },
-    {
-      'pattern': 'Adjective + Noun (Sensory & Emotions)',
-      'items': [
-        {
-          'en': 'warm milk',
-          'gl': 'leite morno',
-          'es': 'leche tibia',
-          'ex': 'Drink warm milk at bedtime.'
-        },
-        {
-          'en': 'soft blanket',
-          'gl': 'manta suave',
-          'es': 'manta suave',
-          'ex': 'Sleep with a soft blanket.'
-        },
-        {
-          'en': 'big smile',
-          'gl': 'grande sorriso',
-          'es': 'gran sonrisa',
-          'ex': 'Give me a big smile!'
-        },
-        {
-          'en': 'loud sound',
-          'gl': 'son forte',
-          'es': 'sonido fuerte',
-          'ex': 'Listen to that loud sound.'
-        },
-      ]
-    },
-    {
-      'pattern': 'Preposition + Noun (Spatial & Routine)',
-      'items': [
-        {
-          'en': 'at school',
-          'gl': 'na escola',
-          'es': 'en la escuela',
-          'ex': 'We are happy at school.'
-        },
-        {
-          'en': 'at home',
-          'gl': 'na casa',
-          'es': 'en el hogar',
-          'ex': 'Rest and relax at home.'
-        },
-        {
-          'en': 'in the morning',
-          'gl': 'pola mañá',
-          'es': 'por la mañana',
-          'ex': 'Wake up in the morning.'
-        },
-        {
-          'en': 'at night',
-          'gl': 'pola noite',
-          'es': 'por la noche',
-          'ex': 'Go to sleep at night.'
-        },
-      ]
-    },
-  ];
+  List<Map<String, dynamic>>? _colocacions;
 
   @override
   void initState() {
     super.initState();
     _language = widget.initialLanguage;
+    _cargar();
+  }
+
+  Future<void> _cargar() async {
+    final ler = widget.stringLoader ?? rootBundle.loadString;
+    List<Map<String, dynamic>> lista;
+    try {
+      final data = jsonDecode(await ler(CollocationsScreen.asset)) as Map;
+      lista = [
+        for (final c in data['collocations'] as List? ?? const [])
+          if (c is Map) Map<String, dynamic>.from(c),
+      ];
+    } catch (_) {
+      lista = const [];
+    }
+    if (mounted) setState(() => _colocacions = lista);
+  }
+
+  String _txt(Object? m) {
+    if (m is! Map) return '';
+    return (_language == AppLanguage.gl ? m['gl'] : m['es'])?.toString() ?? '';
   }
 
   @override
   Widget build(BuildContext context) {
     final lang = _language;
+    final isGl = lang == AppLanguage.gl;
+    final colocacions = _colocacions;
+
+    // Por tipo, en el orden en que aparece cada tipo por primera vez.
+    final porTipo = <String, List<Map<String, dynamic>>>{};
+    for (final c in colocacions ?? const <Map<String, dynamic>>[]) {
+      porTipo.putIfAbsent(c['type']?.toString() ?? '', () => []).add(c);
+    }
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -141,9 +90,7 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
         elevation: 0,
         leading: const BotonAtras(),
         title: Text(
-          lang == AppLanguage.gl
-              ? 'Colocacións e Gramática'
-              : 'Colocaciones y Gramática',
+          isGl ? 'Colocacións e Gramática' : 'Colocaciones y Gramática',
           style: const TextStyle(
             color: AppTheme.textPrimary,
             fontWeight: FontWeight.bold,
@@ -151,105 +98,116 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
           ),
         ),
       ),
-      body: ListView.builder(
-        padding: const EdgeInsets.all(16),
-        itemCount: _collocations.length,
-        itemBuilder: (context, catIndex) {
-          final cat = _collocations[catIndex];
-          final items = cat['items'] as List<Map<String, String>>;
-
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
-                child: Text(
-                  cat['pattern'] as String,
+      body: colocacions == null
+          ? const Center(child: CircularProgressIndicator())
+          : ListView(
+              key: const Key('colocacions_lista'),
+              padding: const EdgeInsets.all(16),
+              children: [
+                Text(
+                  isGl
+                      ? '${colocacions.length} combinacións que o inglés di sempre xuntas: dilas enteiras, non palabra a palabra.'
+                      : '${colocacions.length} combinaciones que el inglés dice siempre juntas: dilas enteras, no palabra a palabra.',
+                  key: const Key('colocacions_total'),
                   style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    color: AppTheme.primaryInk,
+                    fontSize: 13,
+                    color: AppTheme.textSecondary,
+                    height: 1.35,
                   ),
                 ),
-              ),
-              ...items.map((item) {
-                return Card(
-                  margin: const EdgeInsets.only(bottom: 10),
-                  elevation: 0.5,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(14),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Flexible(
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Flexible(
-                                    child: Text(
-                                      item['en']!,
-                                      style: const TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold,
-                                        color: AppTheme.textPrimary,
-                                      ),
-                                    ),
-                                  ),
-                                  const SizedBox(width: 6),
-                                  BotonEscuchar(
-                                    audioService: widget.audioService,
-                                    texto: item['en']!,
-                                    language: AppLanguage.en,
-                                    style: estiloIngles(item['en']!),
-                                    compacto: true,
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 8, vertical: 2),
-                              decoration: BoxDecoration(
-                                color: AppTheme.primaryLight,
-                                borderRadius: BorderRadius.circular(6),
-                              ),
-                              child: Text(
-                                lang == AppLanguage.gl
-                                    ? item['gl']!
-                                    : item['es']!,
-                                style: const TextStyle(
-                                  fontSize: 12,
-                                  color: AppTheme.primaryInk,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          '"${item['ex']!}"',
-                          style: const TextStyle(
-                            fontSize: 13,
-                            fontStyle: FontStyle.italic,
-                            color: AppTheme.textSecondary,
-                          ),
-                        ),
-                      ],
+                const SizedBox(height: 8),
+                for (final entrada in porTipo.entries) ...[
+                  Padding(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                    child: Text(
+                      '${_txt(entrada.value.first['typeLabel'])} · ${entrada.value.length}',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                        color: AppTheme.primaryInk,
+                      ),
                     ),
                   ),
-                );
-              }),
-              const SizedBox(height: 12),
+                  for (final c in entrada.value) _tarxeta(c),
+                  const SizedBox(height: 8),
+                ],
+              ],
+            ),
+    );
+  }
+
+  Widget _tarxeta(Map<String, dynamic> c) {
+    final full = c['fullCollocation']?.toString() ?? '';
+    final contexto = c['naturalContext']?.toString() ?? '';
+    final consello = _txt(c['tip']);
+    return Card(
+      key: ValueKey('colocacion_${c['id']}'),
+      margin: const EdgeInsets.only(bottom: 10),
+      elevation: 0.5,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      child: Padding(
+        padding: const EdgeInsets.all(14),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // La colocación en pastilla: se ve lo que se va a decir y se oye
+            // en el mismo gesto. Sin grabación, queda el texto sin altavoz.
+            BotonEscuchar(
+              audioService: widget.audioService,
+              texto: full,
+              language: AppLanguage.en,
+              style: estiloIngles(full),
+              comoChip: true,
+              colorChip: AppTheme.primaryDark,
+              descripcion: full,
+            ),
+            const SizedBox(height: 6),
+            Text(
+              _txt(c['translation']),
+              style: const TextStyle(
+                fontSize: 13.5,
+                color: AppTheme.primaryInk,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            if (contexto.isNotEmpty) ...[
+              const SizedBox(height: 6),
+              Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      '"$contexto"',
+                      style: const TextStyle(
+                        fontSize: 13,
+                        fontStyle: FontStyle.italic,
+                        color: AppTheme.textSecondary,
+                      ),
+                    ),
+                  ),
+                  BotonEscuchar(
+                    audioService: widget.audioService,
+                    texto: contexto,
+                    language: AppLanguage.en,
+                    style: estiloIngles(contexto),
+                    compacto: true,
+                  ),
+                ],
+              ),
             ],
-          );
-        },
+            if (consello.isNotEmpty) ...[
+              const SizedBox(height: 6),
+              Text(
+                consello,
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: AppTheme.textSecondary,
+                  height: 1.35,
+                ),
+              ),
+            ],
+          ],
+        ),
       ),
     );
   }

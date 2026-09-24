@@ -76,7 +76,6 @@ void main() {
         expect(mes.actividadHogar.hasParity, isTrue);
         expect(mes.rutinaRecomendadaHogar.hasParity, isTrue);
 
-        expect(mes.ingles.lexico, isNotEmpty);
         expect(mes.ingles.tpr, isNotEmpty);
         expect(mes.ingles.frase, isNotEmpty);
         expect(mes.minutosSugeridos, inInclusiveRange(2, 8));
@@ -265,6 +264,161 @@ void main() {
     });
   });
 
+  group('O traxecto de 0 a 6 anos: cincuenta tarxetas, non dez', () {
+    const cursos = [
+      'curso_0_2',
+      'curso_2_3',
+      'curso_3_4',
+      'curso_4_5',
+      'curso_5_6',
+    ];
+
+    test('cinco cursos de dez meses, de setembro a xuño, en orde', () {
+      expect(contenido.trayecto, hasLength(50));
+      for (final (c, cursoId) in cursos.indexed) {
+        final meses = contenido.trayecto.sublist(c * 10, c * 10 + 10);
+        expect(meses.map((m) => m.cursoId).toSet(), {cursoId});
+        expect(meses.map((m) => m.mesCalendario),
+            [9, 10, 11, 12, 1, 2, 3, 4, 5, 6],
+            reason: cursoId);
+        expect(meses.map((m) => m.mesDoCurso), List.generate(10, (i) => i + 1),
+            reason: cursoId);
+        expect(contenido.inicioDoCurso(cursoId), c * 10);
+        expect(meses.first.etiquetaCurso?.hasParity, isTrue, reason: cursoId);
+      }
+    });
+
+    test('cada tarxeta ten os seus textos, sen repetir outra', () {
+      final centros = <String>{};
+      for (final m in contenido.trayecto) {
+        final onde = '${m.cursoId} mes ${m.mesCalendario}';
+        expect(m.nombreMes.hasParity, isTrue, reason: onde);
+        expect(m.centroInteres.hasParity, isTrue, reason: onde);
+        expect(m.objetivoPedagogico.hasParity, isTrue, reason: onde);
+        expect(m.actividadAula.hasParity, isTrue, reason: onde);
+        expect(m.actividadHogar.hasParity, isTrue, reason: onde);
+        expect(m.rutinaRecomendadaHogar.hasParity, isTrue, reason: onde);
+        expect(m.ingles.frase, isNotEmpty, reason: onde);
+        expect(m.unidadId, isNotNull, reason: onde);
+        expect(centros.add(m.centroInteres.gl), isTrue,
+            reason: '$onde repite «${m.centroInteres.gl}»');
+      }
+    });
+
+    test('o mes de hoxe búscase dentro do curso pedido', () {
+      final outubro = DateTime(2026, 10, 14);
+      for (final cursoId in cursos) {
+        final m =
+            contenido.trayecto[contenido.indiceNoTrayecto(cursoId, outubro)];
+        expect((m.cursoId, m.mesCalendario), (cursoId, 10));
+      }
+    });
+  });
+
+  group('O traxecto na pantalla', () {
+    late Directory tempDir;
+    late CalendarioStore store;
+
+    setUp(() async {
+      tempDir = await Directory.systemTemp.createTemp('cal_traxecto_');
+      store = CalendarioStore(overrideDirectory: tempDir.path);
+      await store.cargar();
+    });
+
+    tearDown(() async {
+      if (await tempDir.exists()) await tempDir.delete(recursive: true);
+    });
+
+    Future<void> abrir(WidgetTester tester,
+        {required bool docente, String? curso, int? mes}) async {
+      tester.view.physicalSize = const Size(600, 1600);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.resetPhysicalSize);
+      await tester.pumpWidget(_wrap(CalendarioScreen(
+        store: store,
+        contenido: contenido,
+        repository: repositorio,
+        initialLanguage: AppLanguage.gl,
+        esDocenteInicial: docente,
+        cursoInicial: curso,
+        mesInicialIndex: mes,
+      )));
+      await tester.pumpAndSettle();
+    }
+
+    MesCurricular mesDe(String curso, int mesDoCurso) =>
+        contenido.trayecto[contenido.inicioDoCurso(curso) + mesDoCurso - 1];
+
+    for (final docente in [true, false]) {
+      final lado = docente ? 'aula' : 'familia';
+
+      testWidgets('$lado: elixir o curso salta ao MESMO mes dese curso',
+          (tester) async {
+        await abrir(tester, docente: docente, curso: 'curso_0_2', mes: 1);
+        expect(find.text(mesDe('curso_0_2', 2).centroInteres.gl), findsWidgets);
+
+        for (final curso in ['curso_4_5', 'curso_2_3', 'curso_5_6']) {
+          final chip = find.byKey(ValueKey('curso_fogar_$curso'));
+          await tester.ensureVisible(chip);
+          await tester.pumpAndSettle();
+          await tester.tap(chip);
+          await tester.pumpAndSettle();
+          final oct = mesDe(curso, 2);
+          expect(oct.mesCalendario, 10);
+          expect(find.text(oct.centroInteres.gl), findsWidgets, reason: curso);
+          expect(
+              find.text(mesDe('curso_0_2', 2).centroInteres.gl), findsNothing,
+              reason: curso);
+          // A pastilla da tarxeta di de que curso é.
+          expect(
+              find.descendant(
+                  of: find.byKey(const Key('tarxeta_mes_curso')),
+                  matching: find.text(oct.etiquetaCurso!.gl)),
+              findsOneWidget,
+              reason: curso);
+        }
+      });
+    }
+
+    testWidgets('deslizando desde xuño de 0-2 chégase a setembro de 2-3',
+        (tester) async {
+      await abrir(tester, docente: false, curso: 'curso_0_2', mes: 9);
+      final xuno = mesDe('curso_0_2', 10);
+      expect(xuno.mesCalendario, 6);
+      expect(find.text(xuno.centroInteres.gl), findsWidgets);
+
+      await tester.drag(
+          find.byKey(const Key('paginas_meses')), const Offset(-500, 0));
+      await tester.pumpAndSettle();
+
+      final setembro = mesDe('curso_2_3', 1);
+      expect(setembro.mesCalendario, 9);
+      expect(find.text(setembro.centroInteres.gl), findsWidgets);
+      expect(find.text(xuno.centroInteres.gl), findsNothing);
+    });
+
+    testWidgets('as pastillas de mes son as dez do curso aberto, non 50',
+        (tester) async {
+      await abrir(tester, docente: true, curso: 'curso_3_4', mes: 0);
+      // A tira é perezosa: non se constrúen todas á vez. Cóntase o que ten.
+      final tira =
+          tester.widget<ListView>(find.byKey(const Key('selector_meses')));
+      expect(tira.childrenDelegate.estimatedChildCount, 10 + 9,
+          reason: 'dez pastillas e nove separadores');
+      final primeira = find.descendant(
+          of: find
+              .descendant(
+                  of: find.byKey(const Key('selector_meses')),
+                  matching: find.byType(ChoiceChip))
+              .first,
+          matching: find.byType(Text));
+      expect(
+          tester.widget<Text>(primeira).data,
+          contenido
+              .trayecto[contenido.inicioDoCurso('curso_3_4')].nombreMes.gl);
+    });
+  });
+
   group('CalendarioScreen UI Widget Tests — 1-Touch Launch & Dual Flow', () {
     late Directory tempDir;
     late CalendarioStore store;
@@ -348,10 +502,11 @@ void main() {
       )));
       await tester.pumpAndSettle();
 
-      // A pantalla abre polo mes que toca hoxe, non sempre por setembro.
-      final indice = contenido.indiceParaFecha(DateTime.now());
-      final aberto = contenido.meses[indice];
-      final seguinte = contenido.meses[(indice + 1) % contenido.meses.length];
+      // A pantalla abre polo mes que toca hoxe, non sempre por setembro, e
+      // no primeiro curso do traxecto.
+      final indice = contenido.indiceNoTrayecto('curso_0_2', DateTime.now());
+      final aberto = contenido.trayecto[indice];
+      final seguinte = contenido.trayecto[indice + 1];
       expect(find.text(aberto.centroInteres.gl), findsWidgets);
 
       await tester.drag(
@@ -536,7 +691,8 @@ void main() {
       expect(find.byKey(const Key('boton_iniciar_sesion_fogar')), findsNothing);
 
       // O que ten diante é a rutina DESE mes, coa súa frase en inglés.
-      final hoxe = contenido.mesParaFecha(DateTime.now());
+      final hoxe = contenido
+          .trayecto[contenido.indiceNoTrayecto('curso_0_2', DateTime.now())];
       await expectAfterScrolling(
         tester,
         find.textContaining(hoxe.actividadHogar.gl),
@@ -672,10 +828,14 @@ void main() {
       await tester.tap(tarxetaOutubro);
       await tester.pumpAndSettle();
 
-      // El centro de interés de octubre aparece en la ficha del mes.
+      // El centro de interés de octubre DEL CURSO ABIERTO (0-2) aparece en
+      // la ficha del mes.
+      final outubro =
+          contenido.trayecto[contenido.inicioDoCurso('curso_0_2') + 1];
+      expect(outubro.mesCalendario, 10);
       await expectAfterScrolling(
         tester,
-        find.textContaining('O meu pequeno corpo en movemento'),
+        find.textContaining(outubro.centroInteres.gl),
         matcher: findsWidgets,
       );
     });
