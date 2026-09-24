@@ -448,24 +448,36 @@ void main() {
 
   group('Banco de contos: narrativa propia no JSON, non xerada', () {
     // O que había aquí probaba un «motor de narrativa» que escribía tres
-    // parágrafos fixos en tempo de execución. Ese motor xa non existe: os cen
-    // contos levan a súa propia narrativa no JSON. Estes tests protexen
+    // parágrafos fixos en tempo de execución. Ese motor xa non existe: cada
+    // conto leva a súa propia historia no JSON. Estes tests protexen
     // precisamente iso, que é o que se podía volver perder.
 
     late List<Cuento> contos;
 
     setUpAll(() {
-      final raw = File('assets/content/cuentos/banco100_cuentos.json')
-          .readAsStringSync();
-      contos = (jsonDecode(raw) as List)
-          .map((e) => Cuento.fromJson(Map<String, dynamic>.from(e as Map)))
-          .toList();
+      contos = [
+        for (final f in ['historias_progresivas.json', 'banco100_cuentos.json'])
+          ...(jsonDecode(File('assets/content/cuentos/$f').readAsStringSync())
+                  as List)
+              .map((e) => Cuento.fromJson(Map<String, dynamic>.from(e as Map))),
+      ];
     });
 
-    test('os cen contos teñen tres páxinas e ningunha en branco', () {
-      expect(contos, hasLength(100));
+    // Un conto ten personaxes, un desexo, un problema, intentos e un final:
+    // iso non cabe en tres páxinas. E medra coa crianza.
+    const paxinasPorCurso = {
+      'curso_0_2': (5, 5),
+      'curso_2_3': (6, 6),
+      'curso_3_4': (6, 7),
+      'curso_4_5': (7, 8),
+      'curso_5_6': (8, 8),
+    };
+
+    test('cada conto ten as páxinas da súa idade e ningunha en branco', () {
+      expect(contos, hasLength(303));
       for (final c in contos) {
-        expect(c.paginas, hasLength(3), reason: c.id);
+        final (min, max) = paxinasPorCurso[c.cursoId]!;
+        expect(c.paginas.length, inInclusiveRange(min, max), reason: c.id);
         for (final pg in c.paginas) {
           expect(pg.texto.gl.trim(), isNotEmpty,
               reason: '${c.id}/${pg.numero}');
@@ -479,16 +491,13 @@ void main() {
       // Isto é o defecto que había: a páxina 2 e a 3 eran UN texto repetido
       // cen veces. Se alguén volve meter un xerador ou copiar e pegar, este
       // test cae.
-      for (final numero in [1, 2, 3]) {
-        for (final gl in [true, false]) {
-          final textos = contos
-              .map((c) => c.paginas.firstWhere((p) => p.numero == numero))
-              .map((p) => gl ? p.texto.gl : p.texto.es)
-              .toList();
-          expect(textos.toSet(), hasLength(100),
-              reason:
-                  'páxina $numero, ${gl ? "gl" : "es"}: hai textos repetidos');
-        }
+      for (final gl in [true, false]) {
+        final textos = [
+          for (final c in contos)
+            for (final p in c.paginas) gl ? p.texto.gl : p.texto.es,
+        ];
+        expect(textos.toSet(), hasLength(textos.length),
+            reason: '${gl ? "gl" : "es"}: hai textos de páxina repetidos');
       }
     });
 
@@ -514,19 +523,25 @@ void main() {
       }
     });
 
-    test('o vocabulario é propio de cada páxina e ten as dúas linguas', () {
-      for (final numero in [1, 2, 3]) {
-        final listas = contos
-            .map((c) => c.paginas.firstWhere((p) => p.numero == numero))
-            .map((p) => p.vocabularioClave.join('|'))
-            .toList();
-        expect(listas.toSet(), hasLength(100),
-            reason: 'páxina $numero: o vocabulario repítese entre contos');
-      }
+    test('o vocabulario é o de cada conto e vai nas dúas linguas á vez', () {
+      // As palabras clave saen do propio conto e só se ensinan na páxina
+      // onde aparecen. Se volve un xerador que pon as mesmas catro palabras
+      // en todos, a primeira comprobación cae.
+      final listas = contos
+          .map((c) => c.paginas.expand((p) => p.vocabularioClave).toSet())
+          .map((s) => (s.toList()..sort()).join('|'))
+          .toList();
+      expect(listas.toSet().length, greaterThan(contos.length * 9 ~/ 10));
       for (final c in contos) {
+        expect(c.paginas.any((p) => p.vocabularioClave.isNotEmpty), isTrue,
+            reason: c.id);
         for (final pg in c.paginas) {
-          expect(pg.vocabularioClave, hasLength(4), reason: c.id);
-          expect(pg.vocabularioClaveEs, hasLength(4), reason: c.id);
+          expect(pg.vocabularioClave.length, lessThanOrEqualTo(4),
+              reason: c.id);
+          // Mesmo número nas dúas linguas: se a lista castelá quedase
+          // baleira, o visor en castelán ensinaría as palabras en galego.
+          expect(pg.vocabularioClaveEs, hasLength(pg.vocabularioClave.length),
+              reason: '${c.id}/${pg.numero}');
           expect(
               pg.vocabularioPara(AppLanguage.es), equals(pg.vocabularioClaveEs),
               reason: c.id);

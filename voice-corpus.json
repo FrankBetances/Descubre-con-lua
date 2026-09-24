@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-23T20:24:07Z",
+ "generatedAt": "2026-09-24T06:11:46Z",
  "entries": 14962,
  "byStyle": {
   "slow": 6007,
@@ -50833,7 +50833,7 @@
    "style": "tutor",
    "text": "Giant waves, row your boat!",
    "speech": "Giant waves, row your boat!",
-   "source": "conto/conto_001_l_a_e_a_cuncha_m_gic/tpr"
+   "source": "conto/historia_mar_vigo/tpr"
   },
   {
    "id": "en_tutor_10d0faf9_17",
@@ -69825,7 +69825,7 @@
    "style": "tutor",
    "text": "Wave hello, open your palms!",
    "speech": "Wave hello, open your palms!",
-   "source": "conto/conto_002_mans_que_sa_dan_na_a/tpr"
+   "source": "conto/conto_001_s1/tpr"
   },
   {
    "id": "en_tutor_699d90c2_13",
@@ -99897,7 +99897,7 @@
    "style": "tutor",
    "text": "Blow the chestnut: cool it down!",
    "speech": "Blow the chestnut: cool it down!",
-   "source": "conto/conto_005_o_magosto_e_o_fume_d/tpr"
+   "source": "conto/conto_010_s2/tpr"
   },
   {
    "id": "en_tutor_f42ca564_60",

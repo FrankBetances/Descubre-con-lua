@@ -9,6 +9,61 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Los cuentos son historias, no microrrelatos · **en la rama `claude/tender-hamilton-mzhnxj`, pendiente de mergear** (24/9/2026)
+
+Orden de Frank: «un cuento no es un microrrelato, un cuento es una historia con
+objetivos y personajes, arregla los cuentos».
+
+Antes (medido sobre los dos JSON de `main`): 302 cuentos visibles, de tres
+páginas o menos y 67 palabras de media; en 298 páginas el texto llevaba
+instrucciones de aula («compás de 72 bpm»); los títulos se repetían de curso en
+curso y 200 de los 206 de `historias_progresivas.json` tenían las mismas tres
+preguntas.
+
+- Los 303 cuentos visibles están reescritos: cada uno tiene protagonista, un deseo,
+  un problema, intentos que fallan, una idea o una ayuda y un final, y tres
+  preguntas propias (literal, inferencia, creativa).
+- La extensión crece con la edad. Es un listón propio, no sale de ningún
+  documento de referencia:
+
+  | Curso | Páginas | Palabras por cuento (media gl/es) |
+  | --- | --- | --- |
+  | 0-2 | 5 | ≥ 60 |
+  | 2-3 | 6 | ≥ 85 |
+  | 3-4 | 6-7 | ≥ 130 |
+  | 4-5 | 8 | ≥ 200 |
+  | 5-6 | 8 | ≥ 260 |
+
+- Se conservan id, curso, mes, semana, nivel y reto TPR de cada cuento: el reto
+  TPR es lo único con voz, así que no hace falta ninguna grabación nueva.
+- `conto_040_s4` (0-2, junio, semana 4) repetía el título de otro cuento y la app
+  no lo enseñaba nunca: ahora tiene historia propia y se ve. Tres duplicados del
+  banco que nunca se enseñaban (`conto_001_l_a…`, `conto_002_mans…`,
+  `conto_005_o_magosto…`) salen del JSON.
+- Las palabras clave de cada página son las del propio cuento, en las dos lenguas
+  a la vez. Antes la etiqueta de las preguntas salía «Nivel 1: Nivel 1: …».
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| Validador de los textos, script de esta sesión que no queda en el repositorio (páginas y palabras por edad, títulos únicos por curso, sin letras cirílicas coladas) | 303/303 |
+| `flutter test --exclude-tags capturas` | todo en verde; `portales_seleccion_ux_test.dart` ahora exige las páginas de cada edad, ningún texto de página repetido y el vocabulario en las dos lenguas |
+| `tools/gates.sh --fast` | todos los gates en verde; el corpus de voz sigue en 14.962 locuciones |
+| App en escritorio Linux: Inicio → Portal Docentes → Modo Aula → 2.º Ciclo → 6.º (5-6) → semana 1 → el cuento de hoy | 8 páginas, miradas la 1, la 6 y la 8 en gallego |
+| App: Portal Familias → Biblioteca de Cuentos, en castellano | «303 cuentos disponibles»; el cuento recuperado de 0-2 aparece; página 5 y preguntas de un cuento de 5-6 miradas |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato**, ni con la escala de texto grande del
+  sistema: el visor desplaza el texto, pero las páginas ahora llegan a ~115
+  palabras.
+- El gallego lo ha revisado Claude Code, no una persona nativa.
+- La pregunta de cada lámina es por etapa del cuento (presentación, problema,
+  idea…), no escrita a mano para cada página: en algunas encaja peor.
+
+---
+
 ## De 0 a 6 años: cinco cursos de inglés, calendario de 50 meses e Inmersión ampliada · **en la rama `claude/tender-hamilton-mzhnxj`, pendiente de mergear** (24/9/2026)
 
 Órdenes de Frank: el calendario no puede quedarse en los diez primeros meses
@@ -45,8 +100,9 @@ diarias».
 ### NO comprobado
 
 - **Esto no lo he visto en un aparato.**
-- `every locution has a recording`: faltan 3.344 grabaciones inglesas; las
-  sintetiza el workflow de voz al empujar.
+- ~~`every locution has a recording`: faltan 3.344 grabaciones inglesas~~.
+  Las sintetizó el workflow de voz en el commit `5e65947a`; comprobado después
+  con `check_voice_coverage.py`: 14.962 locuciones, todas con grabación.
 - `bienvenida-*` y `laminas-hoja` no coinciden con la app; no se han tocado.
 
 ---
