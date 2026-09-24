@@ -173,8 +173,8 @@ class TarxetaHoxeNaAula extends StatelessWidget {
                   ),
                   child: Text(
                     isGl
-                        ? 'Ver as ${_miles(programa.totalPalabras)} palabras'
-                        : 'Ver las ${_miles(programa.totalPalabras)} palabras',
+                        ? 'Ver as ${formatarMiles(programa.totalPalabras)} palabras'
+                        : 'Ver las ${formatarMiles(programa.totalPalabras)} palabras',
                     style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -188,7 +188,7 @@ class TarxetaHoxeNaAula extends StatelessWidget {
 }
 
 /// 4000 → «4.000», como se escriben los miles en gallego y en castellano.
-String _miles(int n) {
+String formatarMiles(int n) {
   final s = '$n';
   final out = StringBuffer();
   for (var i = 0; i < s.length; i++) {
@@ -260,8 +260,8 @@ class ProxeccionDoCurso extends StatelessWidget {
         const SizedBox(height: 16),
         Text(
           isGl
-              ? 'PROXECCIÓN LÉXICA · ${_miles(total)} PALABRAS DE 0 A 6 ANOS'
-              : 'PROYECCIÓN LÉXICA · ${_miles(total)} PALABRAS DE 0 A 6 AÑOS',
+              ? 'PROXECCIÓN LÉXICA · ${formatarMiles(total)} PALABRAS DE 0 A 6 ANOS'
+              : 'PROYECCIÓN LÉXICA · ${formatarMiles(total)} PALABRAS DE 0 A 6 AÑOS',
           style: const TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w800,
@@ -323,8 +323,8 @@ class ProxeccionDoCurso extends StatelessWidget {
               _Fila(
                 isGl ? 'De 0 a 6 anos:' : 'De 0 a 6 años:',
                 isGl
-                    ? '$porCurso × $cursos cursos = ${_miles(total)} palabras, sen repetir ningunha'
-                    : '$porCurso × $cursos cursos = ${_miles(total)} palabras, sin repetir ninguna',
+                    ? '$porCurso × $cursos cursos = ${formatarMiles(total)} palabras, sen repetir ningunha'
+                    : '$porCurso × $cursos cursos = ${formatarMiles(total)} palabras, sin repetir ninguna',
                 destacado: true,
               ),
             ],
@@ -368,7 +368,7 @@ class ProxeccionDoCurso extends StatelessWidget {
         for (final (i, c) in programa.modelo.categorias.indexed) ...[
           _Categoria(
             titulo: c.nome.resolve(language),
-            detalle: '${_miles(porCategoria[c.clave] ?? 0)} palabras · '
+            detalle: '${formatarMiles(porCategoria[c.clave] ?? 0)} palabras · '
                 '${c.descricion.resolve(language)}',
             cor: _cores[i % _cores.length],
             porcentaxe: total == 0 ? 0 : (porCategoria[c.clave] ?? 0) / total,

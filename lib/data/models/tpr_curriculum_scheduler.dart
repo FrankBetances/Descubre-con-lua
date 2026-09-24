@@ -296,6 +296,29 @@ class ModeloTpr {
 /// El día del curso al que apunta una fecha: mes, semana (1-4) y día (1-5).
 typedef DiaDoCursoTpr = ({int mesCalendario, int semana, int dia});
 
+/// Una palabra del curso y el día en que es nueva. [orden] es el mes en el
+/// orden del CURSO (septiembre es 1), [dia] va de 1 (lunes) a 4 (jueves).
+typedef PalabraNoCurso = ({
+  TprWord palabra,
+  int orden,
+  int mesCalendario,
+  int semana,
+  int dia,
+});
+
+/// El número de la tarjeta de repaso de una palabra: el mismo en cada
+/// arranque y en cada aparato, porque sale del id de la palabra (FNV-1a de 32
+/// bits, sin el bit de signo). Un contador cambiaría si alguien reordena el
+/// JSON, y la tarjeta guardada acabaría apuntando a otra palabra.
+int idDaTarxetaDeRepaso(String idDaPalabra) {
+  var h = 0x811c9dc5;
+  for (final c in utf8.encode(idDaPalabra)) {
+    h ^= c;
+    h = (h * 0x01000193) & 0xffffffff;
+  }
+  return h & 0x7fffffff;
+}
+
 /// El inglés de UN curso: los diez meses de un grupo de edad.
 ///
 /// Aquí no hay ni una palabra: si algo de esta clase se puede leer en
@@ -346,6 +369,37 @@ class CursoTpr {
       }
     }
     return cuenta;
+  }
+
+  /// Cada palabra del curso con el día en que es nueva, en el orden en que se
+  /// dan: de septiembre a junio, semana a semana, de lunes a jueves.
+  List<PalabraNoCurso> get palabrasEnOrde => [
+        for (final m in meses)
+          for (final s in m.semanas)
+            for (var d = 1; d <= WeeklyTprScheduler.diasConPalabrasNovas; d++)
+              for (final p in s.planDoDia(d).newWords)
+                (
+                  palabra: p,
+                  orden: m.orden,
+                  mesCalendario: m.mesCalendario,
+                  semana: s.semana,
+                  dia: d,
+                ),
+      ];
+
+  /// Las palabras que ya salieron como nuevas hasta [hoxe], incluido: las que
+  /// se pueden repasar ese día. Ninguna del futuro, porque repasar una palabra
+  /// que la clase aún no ha visto no es repaso.
+  List<PalabraNoCurso> introducidasAta(DiaDoCursoTpr hoxe) {
+    final ordeHoxe = mes(hoxe.mesCalendario)?.orden;
+    if (ordeHoxe == null) return const [];
+    int chave(int orden, int semana, int dia) =>
+        orden * 100 + semana * 10 + dia;
+    final limite = chave(ordeHoxe, hoxe.semana, hoxe.dia);
+    return [
+      for (final p in palabrasEnOrde)
+        if (chave(p.orden, p.semana, p.dia) <= limite) p,
+    ];
   }
 
   /// Las palabras de los meses del calendario que se pidan (un trimestre).

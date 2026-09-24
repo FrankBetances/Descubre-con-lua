@@ -479,17 +479,59 @@ class PhonicsMission {
 
 /// Full Phonics Taxonomy container data model.
 @immutable
+
+/// Los 44 fonemas del inglés y la ficha que enseña cada uno.
+///
+/// Las fichas son GRAFÍAS, no fonemas: `ck` y `c/k` suenan igual. Contar
+/// fichas y llamarlo «44 fonemas» fue lo que dejó el número en la pantalla
+/// con 34 fichas y 31 sonidos. El número sale de aquí, contado.
+class InventarioFonemas {
+  final List<({String ipa, String fonema})> consoantes;
+  final List<({String ipa, String fonema})> vogais;
+  final LocalizedString nota;
+
+  const InventarioFonemas({
+    required this.consoantes,
+    required this.vogais,
+    required this.nota,
+  });
+
+  int get total => consoantes.length + vogais.length;
+
+  factory InventarioFonemas.fromJson(Map<String, dynamic> json) {
+    List<({String ipa, String fonema})> lista(Object? raw) => [
+          if (raw is List)
+            for (final e in raw)
+              if (e is Map)
+                (
+                  ipa: e['ipa']?.toString() ?? '',
+                  fonema: e['fonema']?.toString() ?? '',
+                ),
+        ];
+    return InventarioFonemas(
+      consoantes: List.unmodifiable(lista(json['consoantes'])),
+      vogais: List.unmodifiable(lista(json['vogais'])),
+      nota: LocalizedString.fromJson(
+          Map<String, dynamic>.from(json['nota'] as Map? ?? const {})),
+    );
+  }
+}
+
 class PhonicsTaxonomy {
   final List<PhonemeDef> phonemes;
   final List<DecodableWord> decodableWords;
   final List<WordFamily> wordFamilies;
   final List<PhonicsMission> missions;
 
+  /// `null` en taxonomías antiguas o de prueba que no lo traen.
+  final InventarioFonemas? inventario;
+
   const PhonicsTaxonomy({
     required this.phonemes,
     required this.decodableWords,
     required this.wordFamilies,
     required this.missions,
+    this.inventario,
   });
 
   factory PhonicsTaxonomy.fromJson(Map<String, dynamic> json) {
@@ -544,11 +586,15 @@ class PhonicsTaxonomy {
       }
     }
 
+    final rawInventario = json['inventario'];
     return PhonicsTaxonomy(
       phonemes: List.unmodifiable(phonemesList),
       decodableWords: List.unmodifiable(decodableList),
       wordFamilies: List.unmodifiable(familiesList),
       missions: List.unmodifiable(missionsList),
+      inventario: rawInventario is Map
+          ? InventarioFonemas.fromJson(Map<String, dynamic>.from(rawInventario))
+          : null,
     );
   }
 

@@ -196,18 +196,925 @@
         "gl": "Verbo + Substantivo",
         "es": "Verbo + Sustantivo"
       },
-      "headword": "catch",
-      "collocate": "cold",
-      "fullCollocation": "catch a cold",
-      "cefr": "A1",
-      "naturalContext": "Wear your coat so you do not catch a cold today.",
+      "headword": "wear",
+      "collocate": "a coat",
+      "fullCollocation": "wear a coat",
+      "naturalContext": "Wear a coat when it is cold outside.",
       "translation": {
-        "gl": "Coller un arrefriado",
-        "es": "Pescar un resfriado"
+        "gl": "Levar abrigo",
+        "es": "Llevar abrigo"
       },
       "tip": {
-        "gl": "Emprégase con \"catch\" (catch a cold).",
-        "es": "Se usa con \"catch\" (catch a cold)."
+        "gl": "En inglés a roupa «se leva» con wear; put on é o momento de poñela.",
+        "es": "En inglés la ropa «se lleva» con wear; put on es el momento de ponérsela."
+      }
+    },
+    {
+      "id": "col-11",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "wash",
+      "collocate": "hands",
+      "fullCollocation": "wash your hands",
+      "naturalContext": "Wash your hands before eating.",
+      "translation": {
+        "gl": "Lavar as mans",
+        "es": "Lavarse las manos"
+      },
+      "tip": {
+        "gl": "En inglés dise your hands, «as túas mans»: o posesivo non se omite.",
+        "es": "En inglés se dice your hands, «tus manos»: el posesivo no se omite."
+      }
+    },
+    {
+      "id": "col-12",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "brush",
+      "collocate": "teeth",
+      "fullCollocation": "brush your teeth",
+      "naturalContext": "Brush your teeth after dinner.",
+      "translation": {
+        "gl": "Lavar os dentes",
+        "es": "Lavarse los dientes"
+      }
+    },
+    {
+      "id": "col-13",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "read",
+      "collocate": "a story",
+      "fullCollocation": "read a story",
+      "naturalContext": "Let's read a story together.",
+      "translation": {
+        "gl": "Ler un conto",
+        "es": "Leer un cuento"
+      }
+    },
+    {
+      "id": "col-14",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "sing",
+      "collocate": "a song",
+      "fullCollocation": "sing a song",
+      "naturalContext": "Sing a happy song with me.",
+      "translation": {
+        "gl": "Cantar unha canción",
+        "es": "Cantar una canción"
+      }
+    },
+    {
+      "id": "col-15",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "open",
+      "collocate": "your eyes",
+      "fullCollocation": "open your eyes",
+      "naturalContext": "Open your eyes and look!",
+      "translation": {
+        "gl": "Abrir os ollos",
+        "es": "Abrir los ojos"
+      }
+    },
+    {
+      "id": "col-16",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "warm",
+      "collocate": "milk",
+      "fullCollocation": "warm milk",
+      "naturalContext": "Drink some warm milk at bedtime.",
+      "translation": {
+        "gl": "Leite morno",
+        "es": "Leche tibia"
+      }
+    },
+    {
+      "id": "col-17",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "soft",
+      "collocate": "blanket",
+      "fullCollocation": "soft blanket",
+      "naturalContext": "Sleep with a soft blanket.",
+      "translation": {
+        "gl": "Manta suave",
+        "es": "Manta suave"
+      }
+    },
+    {
+      "id": "col-18",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "big",
+      "collocate": "smile",
+      "fullCollocation": "big smile",
+      "naturalContext": "Give me a big smile!",
+      "translation": {
+        "gl": "Un gran sorriso",
+        "es": "Una gran sonrisa"
+      }
+    },
+    {
+      "id": "col-19",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "loud",
+      "collocate": "sound",
+      "fullCollocation": "loud sound",
+      "naturalContext": "Listen to that loud sound.",
+      "translation": {
+        "gl": "Un son forte",
+        "es": "Un sonido fuerte"
+      }
+    },
+    {
+      "id": "col-20",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "at",
+      "collocate": "school",
+      "fullCollocation": "at school",
+      "naturalContext": "We are happy at school.",
+      "translation": {
+        "gl": "Na escola",
+        "es": "En la escuela"
+      },
+      "tip": {
+        "gl": "Con school e home úsase at, sen artigo.",
+        "es": "Con school y home se usa at, sin artículo."
+      }
+    },
+    {
+      "id": "col-21",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "at",
+      "collocate": "home",
+      "fullCollocation": "at home",
+      "naturalContext": "Rest and relax at home.",
+      "translation": {
+        "gl": "Na casa",
+        "es": "En casa"
+      }
+    },
+    {
+      "id": "col-22",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "in",
+      "collocate": "the morning",
+      "fullCollocation": "in the morning",
+      "naturalContext": "Wake up in the morning.",
+      "translation": {
+        "gl": "Pola mañá",
+        "es": "Por la mañana"
+      },
+      "tip": {
+        "gl": "Mañá e tarde levan in the; a noite, at night.",
+        "es": "Mañana y tarde llevan in the; la noche, at night."
+      }
+    },
+    {
+      "id": "col-23",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "at",
+      "collocate": "night",
+      "fullCollocation": "at night",
+      "naturalContext": "Go to sleep at night.",
+      "translation": {
+        "gl": "Pola noite",
+        "es": "Por la noche"
+      }
+    },
+    {
+      "id": "col-24",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "tie",
+      "collocate": "your shoes",
+      "fullCollocation": "tie your shoes",
+      "naturalContext": "Sit down and tie your shoes.",
+      "translation": {
+        "gl": "Atar os zapatos",
+        "es": "Atarse los zapatos"
+      }
+    },
+    {
+      "id": "col-25",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "comb",
+      "collocate": "your hair",
+      "fullCollocation": "comb your hair",
+      "naturalContext": "Comb your hair in the mirror.",
+      "translation": {
+        "gl": "Peitear o pelo",
+        "es": "Peinarse el pelo"
+      }
+    },
+    {
+      "id": "col-26",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "set",
+      "collocate": "the table",
+      "fullCollocation": "set the table",
+      "naturalContext": "Help me set the table for lunch.",
+      "translation": {
+        "gl": "Poñer a mesa",
+        "es": "Poner la mesa"
+      },
+      "tip": {
+        "gl": "Set e non put: set the table é unha colocación fixa.",
+        "es": "Set y no put: set the table es una colocación fija."
+      }
+    },
+    {
+      "id": "col-27",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "build",
+      "collocate": "a tower",
+      "fullCollocation": "build a tower",
+      "naturalContext": "Let's build a tall tower with the blocks.",
+      "translation": {
+        "gl": "Facer unha torre",
+        "es": "Hacer una torre"
+      },
+      "tip": {
+        "gl": "Para construír con pezas dise build, non make.",
+        "es": "Para construir con piezas se dice build, no make."
+      }
+    },
+    {
+      "id": "col-28",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "draw",
+      "collocate": "a picture",
+      "fullCollocation": "draw a picture",
+      "naturalContext": "Draw a picture of your family.",
+      "translation": {
+        "gl": "Facer un debuxo",
+        "es": "Hacer un dibujo"
+      },
+      "tip": {
+        "gl": "Un debuxo non se fai (make): draw a picture.",
+        "es": "Un dibujo no se hace (make): draw a picture."
+      }
+    },
+    {
+      "id": "col-29",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "ride",
+      "collocate": "a bike",
+      "fullCollocation": "ride a bike",
+      "naturalContext": "We ride a bike in the park.",
+      "translation": {
+        "gl": "Andar en bici",
+        "es": "Montar en bici"
+      },
+      "tip": {
+        "gl": "Bici e cabalo van con ride.",
+        "es": "Bici y caballo van con ride."
+      }
+    },
+    {
+      "id": "col-30",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "feed",
+      "collocate": "the cat",
+      "fullCollocation": "feed the cat",
+      "naturalContext": "It is time to feed the cat.",
+      "translation": {
+        "gl": "Dar de comer ao gato",
+        "es": "Dar de comer al gato"
+      }
+    },
+    {
+      "id": "col-31",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "water",
+      "collocate": "the plants",
+      "fullCollocation": "water the plants",
+      "naturalContext": "Water the plants with the little can.",
+      "translation": {
+        "gl": "Regar as plantas",
+        "es": "Regar las plantas"
+      },
+      "tip": {
+        "gl": "Water tamén é verbo: regar.",
+        "es": "Water también es verbo: regar."
+      }
+    },
+    {
+      "id": "col-32",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "take",
+      "collocate": "a bath",
+      "fullCollocation": "take a bath",
+      "naturalContext": "Take a warm bath before bed.",
+      "translation": {
+        "gl": "Bañarse",
+        "es": "Bañarse"
+      },
+      "tip": {
+        "gl": "Baño e ducha van con take: take a bath, take a shower.",
+        "es": "Baño y ducha van con take: take a bath, take a shower."
+      }
+    },
+    {
+      "id": "col-33",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "clap",
+      "collocate": "your hands",
+      "fullCollocation": "clap your hands",
+      "naturalContext": "Clap your hands to the beat.",
+      "translation": {
+        "gl": "Bater as palmas",
+        "es": "Dar palmas"
+      }
+    },
+    {
+      "id": "col-34",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "throw",
+      "collocate": "the ball",
+      "fullCollocation": "throw the ball",
+      "naturalContext": "Throw the ball to me, gently.",
+      "translation": {
+        "gl": "Lanzar a pelota",
+        "es": "Lanzar la pelota"
+      }
+    },
+    {
+      "id": "col-35",
+      "type": "verb_noun",
+      "typeLabel": {
+        "gl": "Verbo + Substantivo",
+        "es": "Verbo + Sustantivo"
+      },
+      "headword": "tell",
+      "collocate": "a story",
+      "fullCollocation": "tell a story",
+      "naturalContext": "Grandma, please tell us a story.",
+      "translation": {
+        "gl": "Contar un conto",
+        "es": "Contar un cuento"
+      },
+      "tip": {
+        "gl": "Un conto léase (read) ou cóntase (tell): nunca say a story.",
+        "es": "Un cuento se lee (read) o se cuenta (tell): nunca say a story."
+      }
+    },
+    {
+      "id": "col-36",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "stand",
+      "collocate": "up",
+      "fullCollocation": "stand up",
+      "naturalContext": "Stand up and stretch your arms.",
+      "translation": {
+        "gl": "Poñerse de pé",
+        "es": "Ponerse de pie"
+      },
+      "tip": {
+        "gl": "A partícula cambia o verbo: stand é estar de pé, stand up é erguerse.",
+        "es": "La partícula cambia el verbo: stand es estar de pie, stand up es levantarse."
+      }
+    },
+    {
+      "id": "col-37",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "sit",
+      "collocate": "down",
+      "fullCollocation": "sit down",
+      "naturalContext": "Sit down on the carpet, please.",
+      "translation": {
+        "gl": "Sentar",
+        "es": "Sentarse"
+      }
+    },
+    {
+      "id": "col-38",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "put",
+      "collocate": "on",
+      "fullCollocation": "put on your coat",
+      "naturalContext": "Put on your coat, it is cold outside.",
+      "translation": {
+        "gl": "Poñer o abrigo",
+        "es": "Ponerse el abrigo"
+      }
+    },
+    {
+      "id": "col-39",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "take",
+      "collocate": "off",
+      "fullCollocation": "take off your shoes",
+      "naturalContext": "Take off your shoes at the door.",
+      "translation": {
+        "gl": "Quitar os zapatos",
+        "es": "Quitarse los zapatos"
+      },
+      "tip": {
+        "gl": "Put on e take off son parella: poñer e quitar.",
+        "es": "Put on y take off son pareja: poner y quitar."
+      }
+    },
+    {
+      "id": "col-40",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "clean",
+      "collocate": "up",
+      "fullCollocation": "clean up the toys",
+      "naturalContext": "Let's clean up the toys together.",
+      "translation": {
+        "gl": "Recoller os xoguetes",
+        "es": "Recoger los juguetes"
+      }
+    },
+    {
+      "id": "col-41",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "line",
+      "collocate": "up",
+      "fullCollocation": "line up",
+      "naturalContext": "Line up at the door, one by one.",
+      "translation": {
+        "gl": "Poñerse en fila",
+        "es": "Ponerse en fila"
+      }
+    },
+    {
+      "id": "col-42",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "turn",
+      "collocate": "around",
+      "fullCollocation": "turn around",
+      "naturalContext": "Turn around and wave goodbye.",
+      "translation": {
+        "gl": "Dar a volta",
+        "es": "Darse la vuelta"
+      }
+    },
+    {
+      "id": "col-43",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "wake",
+      "collocate": "up",
+      "fullCollocation": "wake up",
+      "naturalContext": "Wake up, sleepyhead, the sun is up!",
+      "translation": {
+        "gl": "Espertar",
+        "es": "Despertarse"
+      }
+    },
+    {
+      "id": "col-44",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "come",
+      "collocate": "back",
+      "fullCollocation": "come back",
+      "naturalContext": "Come back to the circle, please.",
+      "translation": {
+        "gl": "Volver",
+        "es": "Volver"
+      }
+    },
+    {
+      "id": "col-45",
+      "type": "verb_particle",
+      "typeLabel": {
+        "gl": "Verbo + Partícula",
+        "es": "Verbo + Partícula"
+      },
+      "headword": "look",
+      "collocate": "for",
+      "fullCollocation": "look for the red ball",
+      "naturalContext": "Look for the red ball under the chair.",
+      "translation": {
+        "gl": "Buscar a pelota vermella",
+        "es": "Buscar la pelota roja"
+      },
+      "tip": {
+        "gl": "Look é mirar; look for é buscar.",
+        "es": "Look es mirar; look for es buscar."
+      }
+    },
+    {
+      "id": "col-46",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "sunny",
+      "collocate": "day",
+      "fullCollocation": "sunny day",
+      "naturalContext": "It is a sunny day at the beach.",
+      "translation": {
+        "gl": "Un día de sol",
+        "es": "Un día de sol"
+      }
+    },
+    {
+      "id": "col-47",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "cold",
+      "collocate": "hands",
+      "fullCollocation": "cold hands",
+      "naturalContext": "Rub your cold hands together.",
+      "translation": {
+        "gl": "Mans frías",
+        "es": "Manos frías"
+      }
+    },
+    {
+      "id": "col-48",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "tall",
+      "collocate": "tree",
+      "fullCollocation": "tall tree",
+      "naturalContext": "A bird sits in the tall tree.",
+      "translation": {
+        "gl": "Árbore alta",
+        "es": "Árbol alto"
+      },
+      "tip": {
+        "gl": "Para persoas e árbores dise tall, non high.",
+        "es": "Para personas y árboles se dice tall, no high."
+      }
+    },
+    {
+      "id": "col-49",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "quiet",
+      "collocate": "voice",
+      "fullCollocation": "quiet voice",
+      "naturalContext": "Use a quiet voice in the library.",
+      "translation": {
+        "gl": "Voz baixiña",
+        "es": "Voz bajita"
+      }
+    },
+    {
+      "id": "col-50",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "funny",
+      "collocate": "face",
+      "fullCollocation": "funny face",
+      "naturalContext": "Make a funny face in the mirror.",
+      "translation": {
+        "gl": "Cara divertida",
+        "es": "Cara divertida"
+      }
+    },
+    {
+      "id": "col-51",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "gentle",
+      "collocate": "touch",
+      "fullCollocation": "gentle touch",
+      "naturalContext": "Pet the cat with a gentle touch.",
+      "translation": {
+        "gl": "Caricia suave",
+        "es": "Caricia suave"
+      }
+    },
+    {
+      "id": "col-52",
+      "type": "adjective_noun",
+      "typeLabel": {
+        "gl": "Adxectivo + Substantivo",
+        "es": "Adjetivo + Sustantivo"
+      },
+      "headword": "best",
+      "collocate": "friend",
+      "fullCollocation": "best friend",
+      "naturalContext": "Play with your best friend.",
+      "translation": {
+        "gl": "Mellor amigo, mellor amiga",
+        "es": "Mejor amigo, mejor amiga"
+      }
+    },
+    {
+      "id": "col-53",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "on",
+      "collocate": "the table",
+      "fullCollocation": "on the table",
+      "naturalContext": "Put the cup on the table.",
+      "translation": {
+        "gl": "Enriba da mesa",
+        "es": "Encima de la mesa"
+      }
+    },
+    {
+      "id": "col-54",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "under",
+      "collocate": "the bed",
+      "fullCollocation": "under the bed",
+      "naturalContext": "The slipper is under the bed.",
+      "translation": {
+        "gl": "Debaixo da cama",
+        "es": "Debajo de la cama"
+      }
+    },
+    {
+      "id": "col-55",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "next to",
+      "collocate": "me",
+      "fullCollocation": "next to me",
+      "naturalContext": "Sit next to me, please.",
+      "translation": {
+        "gl": "Ao meu carón",
+        "es": "A mi lado"
+      }
+    },
+    {
+      "id": "col-56",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "in",
+      "collocate": "a circle",
+      "fullCollocation": "in a circle",
+      "naturalContext": "Let's sit in a circle.",
+      "translation": {
+        "gl": "En círculo",
+        "es": "En círculo"
+      }
+    },
+    {
+      "id": "col-57",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "after",
+      "collocate": "lunch",
+      "fullCollocation": "after lunch",
+      "naturalContext": "We go outside after lunch.",
+      "translation": {
+        "gl": "Despois de xantar",
+        "es": "Después de comer"
+      }
+    },
+    {
+      "id": "col-58",
+      "type": "preposition_phrase",
+      "typeLabel": {
+        "gl": "Frase Preposicional",
+        "es": "Frase Preposicional"
+      },
+      "headword": "by",
+      "collocate": "the sea",
+      "fullCollocation": "by the sea",
+      "naturalContext": "We walk by the sea in Vigo.",
+      "translation": {
+        "gl": "Á beira do mar",
+        "es": "A la orilla del mar"
+      }
+    },
+    {
+      "id": "col-59",
+      "type": "verb_adverb",
+      "typeLabel": {
+        "gl": "Verbo + Adverbio",
+        "es": "Verbo + Adverbio"
+      },
+      "headword": "walk",
+      "collocate": "slowly",
+      "fullCollocation": "walk slowly",
+      "naturalContext": "Walk slowly on the wet floor.",
+      "translation": {
+        "gl": "Camiñar amodo",
+        "es": "Caminar despacio"
+      },
+      "tip": {
+        "gl": "O adverbio vai despois do verbo: walk slowly.",
+        "es": "El adverbio va después del verbo: walk slowly."
+      }
+    },
+    {
+      "id": "col-60",
+      "type": "verb_adverb",
+      "typeLabel": {
+        "gl": "Verbo + Adverbio",
+        "es": "Verbo + Adverbio"
+      },
+      "headword": "listen",
+      "collocate": "carefully",
+      "fullCollocation": "listen carefully",
+      "naturalContext": "Listen carefully to the story.",
+      "translation": {
+        "gl": "Escoitar con atención",
+        "es": "Escuchar con atención"
+      }
+    },
+    {
+      "id": "col-61",
+      "type": "verb_adverb",
+      "typeLabel": {
+        "gl": "Verbo + Adverbio",
+        "es": "Verbo + Adverbio"
+      },
+      "headword": "play",
+      "collocate": "together",
+      "fullCollocation": "play together",
+      "naturalContext": "We play together in the sand.",
+      "translation": {
+        "gl": "Xogar xuntos",
+        "es": "Jugar juntos"
+      }
+    },
+    {
+      "id": "col-62",
+      "type": "verb_adverb",
+      "typeLabel": {
+        "gl": "Verbo + Adverbio",
+        "es": "Verbo + Adverbio"
+      },
+      "headword": "jump",
+      "collocate": "high",
+      "fullCollocation": "jump high",
+      "naturalContext": "Jump high like a kangaroo.",
+      "translation": {
+        "gl": "Saltar alto",
+        "es": "Saltar alto"
+      }
+    },
+    {
+      "id": "col-63",
+      "type": "verb_adverb",
+      "typeLabel": {
+        "gl": "Verbo + Adverbio",
+        "es": "Verbo + Adverbio"
+      },
+      "headword": "sleep",
+      "collocate": "well",
+      "fullCollocation": "sleep well",
+      "naturalContext": "Sleep well, see you tomorrow.",
+      "translation": {
+        "gl": "Durmir ben",
+        "es": "Dormir bien"
       }
     }
   ],

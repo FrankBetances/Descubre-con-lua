@@ -472,12 +472,14 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                   ? 'Inmersión en Inglés · L3'
                   : 'Inmersión en Inglés · L3',
               description: isGl
-                  ? 'Inventario dos 44 fonemas do inglés, adestrador de repetición espazada FSRS, colocacións gramaticais e comprensión auditiva.'
-                  : 'Inventario de los 44 fonemas del inglés, entrenador de repetición espaciada FSRS, colocaciones gramaticales y comprensión auditiva.',
+                  ? 'As 4.000 palabras do traxecto, cinco novas ao día: consulta por curso e día, repaso espazado que se garda, escoita das frases do mes, colocacións e os 44 fonemas.'
+                  : 'Las 4.000 palabras del trayecto, cinco nuevas al día: consulta por curso y día, repaso espaciado que se guarda, escucha de las frases del mes, colocaciones y los 44 fonemas.',
               icon: Icons.language_rounded,
               iconColor: const Color(0xFF805AD5),
               iconBg: const Color(0xFFFAF5FF),
-              badge: isGl ? 'Phonics & FSRS' : 'Phonics & FSRS',
+              badge: isGl
+                  ? '5 ao día · 4.000 palabras'
+                  : '5 al día · 4.000 palabras',
               buttonText: isGl ? 'Entrar en Inglés L3' : 'Entrar en Inglés L3',
               onTap: () {
                 Navigator.of(context).push(
@@ -486,6 +488,8 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                       repository: widget.repository,
                       initialLanguage: _language,
                       audioService: widget.audioService,
+                      // El curso que la docente ya eligió en «Hoxe na aula».
+                      cursoInicial: _cursoHoxe,
                     ),
                   ),
                 );

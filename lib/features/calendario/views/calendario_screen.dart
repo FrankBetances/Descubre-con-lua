@@ -500,22 +500,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                             // como en el aula se elige el grupo. En los dos
                             // lados, porque el trayecto es el mismo.
                             if (_contenido?.trayecto.isNotEmpty ?? false) ...[
-                              RotuloSeccion(_esDocente
-                                  ? (_language == AppLanguage.gl
-                                      ? 'O CURSO'
-                                      : 'EL CURSO')
-                                  : (_language == AppLanguage.gl
-                                      ? 'A MIÑA CRIANZA'
-                                      : 'MI CRIATURA')),
+                              _buildSelectorDeCurso(),
                               const SizedBox(height: AppTheme.spaceSm),
-                              SelectorDeIdade<String>(
-                                prefixoClave: 'curso_fogar',
-                                seleccionado: _cursoAberto,
-                                language: _language,
-                                opcions: _cursosDaCrianza,
-                                onCambiar: _irAoCurso,
-                              ),
-                              const SizedBox(height: AppTheme.spaceMd),
                             ],
                             _buildMonthSelector(theme),
                           ],
@@ -879,6 +865,60 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           );
         }),
       ),
+    );
+  }
+
+  /// El curso, en UNA fila de pastillas cortas. Con las tarjetas de dos
+  /// líneas —edad y matiz— el marco de arriba pasaba de su techo del 55 % y la
+  /// tira de meses quedaba escondida debajo: se veía el trimestre y no el mes.
+  Widget _buildSelectorDeCurso() {
+    final isGl = _language == AppLanguage.gl;
+    final rotulo = _esDocente
+        ? (isGl ? 'CURSO' : 'CURSO')
+        : (isGl ? 'A MIÑA CRIANZA' : 'MI CRIATURA');
+    return Column(
+      key: const Key('selector_curso_calendario'),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          '$rotulo · ${isGl ? 'ANOS' : 'AÑOS'}',
+          style: const TextStyle(
+            fontSize: 11,
+            fontWeight: FontWeight.w800,
+            letterSpacing: 0.8,
+            color: AppTheme.textSecondary,
+          ),
+        ),
+        const SizedBox(height: 4),
+        Wrap(
+          spacing: 6,
+          runSpacing: 4,
+          children: [
+            for (final op in _cursosDaCrianza)
+              ChoiceChip(
+                key: ValueKey('curso_fogar_${op.valor}'),
+                // «0-2», no «0-2 anos»: el rótulo ya dice que son años, y así las
+                // cinco caben en una fila de un teléfono de 360.
+                label: Text(op.etiqueta.resolve(_language).split(' ').first),
+                tooltip: op.etiqueta.resolve(_language),
+                selected: op.valor == _cursoAberto,
+                showCheckmark: false,
+                visualDensity: VisualDensity.compact,
+                selectedColor: AppTheme.primaryVigoBlue,
+                backgroundColor: Colors.white,
+                labelStyle: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: op.valor == _cursoAberto
+                      ? Colors.white
+                      : AppTheme.primaryInk,
+                ),
+                onSelected: (sel) {
+                  if (sel && op.valor != _cursoAberto) _irAoCurso(op.valor);
+                },
+              ),
+          ],
+        ),
+      ],
     );
   }
 

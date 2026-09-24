@@ -9,6 +9,48 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## De 0 a 6 años: cinco cursos de inglés, calendario de 50 meses e Inmersión ampliada · **en la rama `claude/tender-hamilton-mzhnxj`, pendiente de mergear** (24/9/2026)
+
+Órdenes de Frank: el calendario no puede quedarse en los diez primeros meses
+«cuando hablamos de seis años de trabajo»; fuera «50 meses» del planificador;
+los 44 fonemas «son una miseria así no van a aprender las cinco palabras
+diarias».
+
+- Inglés: 5 cursos × 800 = 4.000 palabras, ninguna repetida entre cursos; cada
+  grupo del aula usa las de su curso. Los 800 anteriores pasan a ser 3-4 años.
+- Calendario (aula y casa): los 50 meses del trayecto, selector de curso, la
+  pastilla del curso en cada tarjeta, y de junio se pasa a septiembre del curso
+  siguiente. Desde el Modo Aula abre en el curso del grupo y en el lado del aula.
+- Modo Aula: las palabras del día debajo del círculo del día.
+- Inmersión en inglés: consulta de las 4.000 con buscador; repaso espaciado con
+  las palabras del curso, que ahora sí se guarda en `user_progress.json` (lo que
+  la política ya declaraba); escucha de las 16 frases de cada mes; 63
+  colocaciones leídas del JSON (antes 13 escritas en el widget); 44 fonemas de
+  verdad (antes 34 fichas y 31 sonidos distintos).
+- `pubspec.yaml`: faltaban los cinco directorios de curso; sin ellos el APK
+  viajaba sin palabras. Lo detectaba `check_bundled_assets.py`.
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| `flutter test --exclude-tags capturas` | 737/737 |
+| `test/features/ingles_inmersion_test.dart` | 32/32: rondas de repaso, persistencia, cambio de curso, escucha, buscador, fonemas y colocaciones, gl/es y escala 1,0/1,8 |
+| `test/features/calendario/calendario_test.dart` | 38/38, con el trayecto: 50 tarjetas, salto de curso al mismo mes, de junio a septiembre del curso siguiente |
+| `planificador_5_palabras.py --check` | OK; con una palabra de 4-5 metida también en 0-2, falla y dice dónde |
+| Gates de contenido, activos, manual y URLs legales | OK |
+| Capturas `calendario-*`, `aula-unidades-*`, `aula-lista-2ciclo-*`, `academy-bloques-*` | regeneradas y miradas en gl y es |
+| Manual PDF y Word | regenerados; PDF de 20 páginas, ninguna imagen fuera de la hoja (medido con PyMuPDF), secciones 5 y 7 miradas |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato.**
+- `every locution has a recording`: faltan 3.344 grabaciones inglesas; las
+  sintetiza el workflow de voz al empujar.
+- `bienvenida-*` y `laminas-hoja` no coinciden con la app; no se han tocado.
+
+---
+
 ## Cinco palabras inglesas al día: el curso de 800 · **en la rama `claude/tender-hamilton-mzhnxj`, pendiente de mergear** (23/9/2026)
 
 Orden de Frank: «elimina eso de 6 palabras por mes, lo correcto es 5 palabras

@@ -313,9 +313,13 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     #
     # El gesto (`tprAction`) NO entra: es una acotación de lo que se hace con
     # el cuerpo, como los materiales, y no lleva altavoz.
+    #
+    # Son cinco cursos, uno por directorio (`curso_0_2` … `curso_5_6`): 4.000
+    # palabras. El glob mira DENTRO de cada curso; el de antes miraba la raíz
+    # de `tpr/`, que ahora solo tiene el modelo, y se habría quedado sin nada.
     tpr_dir = content_dir / "tpr"
     if tpr_dir.exists():
-        for path in sorted(tpr_dir.glob("tpr.*.json")):
+        for path in sorted(tpr_dir.glob("curso_*/tpr.*.json")):
             data = json.loads(path.read_text(encoding="utf-8"))
             tid = data.get("id", path.stem)
             for semana in data.get("semanas") or []:
@@ -327,6 +331,22 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                         texto = str(palabra["en"])
                         _one(texto, "en", estilo_ingles(texto),
                              f"{tid}/s{numero}/{palabra.get('id', '?')}", seen)
+
+    # ── Los 50 meses del trayecto, de 0-2 a 5-6 años ──────────────────────
+    # Cada tarjeta del calendario (aula y casa) enseña la frase inglesa de SU
+    # mes y de SU curso, con altavoz. Solo la frase: las órdenes de este
+    # fichero no se pintan con altavoz en ninguna pantalla.
+    curriculo_json = content_dir / "calendario" / "curriculo_50_meses.json"
+    if curriculo_json.exists():
+        for mes in json.loads(curriculo_json.read_text(encoding="utf-8")):
+            if not isinstance(mes, dict):
+                continue
+            ingles = mes.get("ingles") or {}
+            if ingles.get("frase"):
+                texto = str(ingles["frase"])
+                _one(texto, "en", estilo_ingles(texto),
+                     f"calendario/traxecto/{mes.get('cursoId', '?')}/"
+                     f"{mes.get('mesNumero', '?')}/frase", seen)
 
     atencion_json = content_dir / "calendario" / "atencion.json"
     if atencion_json.exists():
