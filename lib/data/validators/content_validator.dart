@@ -739,4 +739,195 @@ class ContentValidator {
       }
     }
   }
+
+  /// Validates a single [SteamUnit] JSON document.
+  ValidationResult validateSteamUnitJson(
+    Map<String, dynamic> json, {
+    String sourcePath = '',
+  }) {
+    final List<String> errors = [];
+    final List<String> warnings = [];
+    _validateSteamUnitFields(json, errors, warnings, sourcePath: sourcePath);
+    return errors.isEmpty
+        ? ValidationResult.success(warnings: warnings)
+        : ValidationResult.failure(errors, warnings: warnings);
+  }
+
+  /// Validates an entire STEAM bank (List of SteamUnit maps).
+  ValidationResult validateSteamBankJson(
+    dynamic json, {
+    String sourcePath = '',
+  }) {
+    final List<String> errors = [];
+    final List<String> warnings = [];
+
+    if (json is! List) {
+      return ValidationResult.failure(
+        ['Expected JSON array at root for STEAM curriculum bank'],
+      );
+    }
+
+    if (json.isEmpty) {
+      return ValidationResult.failure(
+        ['STEAM curriculum bank cannot be empty'],
+      );
+    }
+
+    for (var i = 0; i < json.length; i++) {
+      final unitMap = _asMap(json[i]);
+      if (unitMap == null) {
+        errors.add('steam_unit[$i] must be a JSON object');
+        continue;
+      }
+      _validateSteamUnitFields(unitMap, errors, warnings,
+          sourcePath: '$sourcePath[$i]');
+    }
+
+    return errors.isEmpty
+        ? ValidationResult.success(warnings: warnings)
+        : ValidationResult.failure(errors, warnings: warnings);
+  }
+
+  void _validateSteamUnitFields(
+    Map<String, dynamic> json,
+    List<String> errors,
+    List<String> warnings, {
+    String sourcePath = '',
+  }) {
+    final prefix = sourcePath.isNotEmpty ? '[$sourcePath] ' : '';
+
+    // 1. Mandatory top-level fields
+    for (final field in [
+      'id',
+      'estadio',
+      'nivelMadurativo',
+      'rangoEdad',
+      'fenomeno',
+      'titulo',
+      'tiempoEstimadoMin',
+      'materiales',
+      'dinamicaCooperativa',
+      'cicloDidactico',
+      'tprIngles',
+      'evaluacionObservacional'
+    ]) {
+      if (!json.containsKey(field) || json[field] == null) {
+        errors.add('${prefix}Missing required STEAM unit field: "$field"');
+      }
+    }
+
+    // 2. Bilingual parity & zero clinical terms
+    checkBilingualParity(json,
+        path: 'steam_unit', errors: errors, prefix: prefix);
+    checkClinicalTerms(json,
+        path: 'steam_unit', errors: errors, prefix: prefix);
+
+    // 3. Choking hazard prevention (< 3 years: I1, I2)
+    final estadio = json['estadio']?.toString().trim() ?? '';
+    final nivel = json['nivelMadurativo']?.toString().trim() ?? '';
+    final isUnder3 = estadio == 'curso_0_2' ||
+        estadio == 'curso_2_3' ||
+        nivel == 'I1' ||
+        nivel == 'I2';
+
+    final materiales = json['materiales'];
+    if (materiales is! List || materiales.isEmpty) {
+      errors.add('${prefix}STEAM unit must contain at least one material');
+    } else {
+      for (var mIdx = 0; mIdx < materiales.length; mIdx++) {
+        final mat = _asMap(materiales[mIdx]);
+        if (mat == null) {
+          errors.add('${prefix}materiales[$mIdx] must be a JSON object');
+          continue;
+        }
+        if (mat['item'] == null) {
+          errors.add('${prefix}materiales[$mIdx] missing "item"');
+        }
+        final seguridad = mat['seguridadMayor4cm'] as bool? ?? false;
+        if (isUnder3 && !seguridad) {
+          errors.add(
+            '${prefix}Choking hazard violation: Material at index $mIdx in under-3 unit ($nivel) must have "seguridadMayor4cm: true"',
+          );
+        }
+      }
+    }
+
+    // 4. Complementary physical roles
+    final dinamica = _asMap(json['dinamicaCooperativa']);
+    if (dinamica == null) {
+      errors.add('${prefix}dinamicaCooperativa must be a JSON object');
+    } else {
+      final roles = dinamica['roles'];
+      if (roles is! List || roles.length < 2) {
+        errors.add(
+            '${prefix}dinamicaCooperativa must contain at least 2 complementary physical roles');
+      } else {
+        for (var rIdx = 0; rIdx < roles.length; rIdx++) {
+          final r = _asMap(roles[rIdx]);
+          if (r == null ||
+              r['clave'] == null ||
+              r['nombre'] == null ||
+              r['mision'] == null) {
+            errors.add(
+                '${prefix}dinamicaCooperativa.roles[$rIdx] must have clave, nombre, and mision');
+          }
+        }
+      }
+    }
+
+    // 5. Oppia 3-step cycle
+    final ciclo = _asMap(json['cicloDidactico']);
+    if (ciclo == null) {
+      errors.add('${prefix}cicloDidactico must be a JSON object');
+    } else {
+      if (ciclo['observa'] == null) {
+        errors.add('${prefix}cicloDidactico missing "observa" step');
+      }
+      if (ciclo['experimenta'] == null) {
+        errors.add('${prefix}cicloDidactico missing "experimenta" step');
+      }
+      if (ciclo['construye'] == null) {
+        errors.add('${prefix}cicloDidactico missing "construye" step');
+      }
+    }
+
+    // 6. TPR English command and offline audio asset
+    final tpr = _asMap(json['tprIngles']);
+    if (tpr == null) {
+      errors.add('${prefix}tprIngles must be a JSON object');
+    } else {
+      final cmd = tpr['comando']?.toString().trim();
+      final audio = tpr['audioAsset']?.toString().trim();
+      if (cmd == null || cmd.isEmpty) {
+        errors.add('${prefix}tprIngles missing "comando"');
+      }
+      if (audio == null || audio.isEmpty) {
+        errors.add('${prefix}tprIngles missing "audioAsset"');
+      } else {
+        _checkAudioPath(audio,
+            path: 'tprIngles.audioAsset', errors: errors, prefix: prefix);
+      }
+    }
+
+    // 7. Obserfy 1-tap observational assessment
+    final eval = _asMap(json['evaluacionObservacional']);
+    if (eval == null) {
+      errors.add('${prefix}evaluacionObservacional must be a JSON object');
+    } else {
+      if (eval['criterioLogro'] == null) {
+        errors.add('${prefix}evaluacionObservacional missing "criterioLogro"');
+      }
+      final pauta = _asMap(eval['pauta1Tap']);
+      if (pauta == null) {
+        errors.add('${prefix}evaluacionObservacional missing "pauta1Tap"');
+      } else {
+        for (final state in ['logrado', 'asistido', 'explorando']) {
+          if (pauta[state] == null) {
+            errors.add(
+                '${prefix}evaluacionObservacional.pauta1Tap missing "$state"');
+          }
+        }
+      }
+    }
+  }
 }

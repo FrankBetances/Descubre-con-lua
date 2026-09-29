@@ -20,6 +20,7 @@ import '../planificador/views/dinamicas_screen.dart';
 import '../planificador/views/estrategias_screen.dart';
 import '../planificador/views/planificador_screen.dart';
 import '../premios/premios_repository.dart';
+import '../steam/views/steam_hub_screen.dart';
 import 'widgets/hoxe_na_aula.dart';
 
 /// Pantalla independente do Portal Docentes.
@@ -361,6 +362,35 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                     builder: (_) => DinamicasScreen(
                       repository: widget.repository,
                       initialLanguage: _language,
+                    ),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 12.0),
+
+            // 3. STEAM Cooperativo · Indagación e TPR
+            _buildDocenteModuleCard(
+              context: context,
+              title: isGl
+                  ? 'STEAM Cooperativo · Indagación e TPR'
+                  : 'STEAM Cooperativo · Indagación y TPR',
+              description: isGl
+                  ? 'As 5 unidades canónicas de descubrimento analóxico: materia, cinemática, acústica, óptica e lóxica en parellas sen pantallas.'
+                  : 'Las 5 unidades canónicas de descubrimiento analógico: materia, cinemática, acústica, óptica y lógica en parejas sin pantallas.',
+              icon: Icons.biotech_rounded,
+              iconColor: const Color(0xFFD69E2E),
+              iconBg: const Color(0xFFFEFCBF),
+              badge: isGl ? 'I1 a I5 · 0 a 6 anos' : 'I1 a I5 · 0 a 6 años',
+              buttonText: isGl ? 'Explorar STEAM' : 'Explorar STEAM',
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => SteamHubScreen(
+                      repository: widget.repository,
+                      audioService: widget.audioService,
+                      initialLanguage: _language,
+                      onLanguageChanged: _handleLanguageChanged,
                     ),
                   ),
                 );

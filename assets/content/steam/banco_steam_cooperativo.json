@@ -1,0 +1,731 @@
+[
+  {
+    "id": "I1-MATERIA-001",
+    "estadio": "curso_0_2",
+    "nivelMadurativo": "I1",
+    "rangoEdad": {
+      "gl": "12 a 24 meses",
+      "es": "12 a 24 meses"
+    },
+    "fenomeno": {
+      "gl": "Materia, densidade perceptible e contrastes táctiles",
+      "es": "Materia, densidad perceptible y contrastes táctiles"
+    },
+    "titulo": {
+      "gl": "O segredo da la suave e o cubo de madeira",
+      "es": "El secreto de la lana suave y el cubo de madera"
+    },
+    "tiempoEstimadoMin": 10,
+    "materiales": [
+      {
+        "item": {
+          "gl": "Pelota de la compacta (> 6 cm)",
+          "es": "Pelota de lana compacta (> 6 cm)"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Bloque de madeira maciza con cantos redondeados (> 5 cm)",
+          "es": "Bloque de madera maciza con bordes redondeados (> 5 cm)"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Cesta baixa de vimbio ou plástico resistente",
+          "es": "Cesta baja de mimbre o plástico resistente"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      }
+    ],
+    "dinamicaCooperativa": {
+      "modalidad": "parella_ou_pequeno_grupo",
+      "descripcion": {
+        "gl": "Xogo en parella de man a man: unha criatura sostén a la e a outra a madeira; cámbianse os obxectos para contrastar o peso e a resistencia antes de soltalos xuntas na cesta.",
+        "es": "Juego en pareja mano a mano: una criatura sostiene la lana y la otra la madera; se intercambian los objetos para contrastar el peso y la resistencia antes de soltarlos juntas en la cesta."
+      },
+      "roles": [
+        {
+          "clave": "explorador_suave",
+          "nombre": {
+            "gl": "Exploradora da la",
+            "es": "Exploradora de la lana"
+          },
+          "mision": {
+            "gl": "Aperta e comproba como se deforma o pompón",
+            "es": "Aprieta y comprueba cómo se deforma el pompón"
+          }
+        },
+        {
+          "clave": "explorador_firme",
+          "nombre": {
+            "gl": "Explorador da madeira",
+            "es": "Explorador de la madera"
+          },
+          "mision": {
+            "gl": "Nota a solidez e a firmeza do bloque",
+            "es": "Siente la solidez y la firmeza del bloque"
+          }
+        }
+      ]
+    },
+    "cicloDidactico": {
+      "observa": {
+        "planteamiento": {
+          "gl": "A persoa adulta sostén a pelota de la nunha man e o bloque de madeira na outra á altura dos ollos das criaturas.",
+          "es": "La persona adulta sostiene la pelota de lana en una mano y el bloque de madera en la otra a la altura de los ojos de las criaturas."
+        },
+        "preguntaIndagacion": {
+          "gl": "¿Cal se esconde se o apertamos forte coa man?",
+          "es": "¿Cuál se esconde si lo apretamos fuerte con la mano?"
+        },
+        "pausaSilencioSegundos": 5
+      },
+      "experimenta": {
+        "consignaAdulto": {
+          "gl": "Entrega a la a unha criatura e a madeira á outra. Modela a presión palmar. Emite os estímulos fónicos: «Soft...» e «Hard...». Convida a intercambiar os obxectos.",
+          "es": "Entrega la lana a una criatura y la madera a la otra. Modela la presión palmar. Emite los estímulos fónicos: «Soft...» y «Hard...». Invita a intercambiar los objetos."
+        },
+        "pistaN1": {
+          "gl": "Mira como se aplasta a pelota suave. ¿Pódese apertar o cubo de madeira igual?",
+          "es": "Mira cómo se aplasta la pelota suave. ¿Se puede apretar el cubo de madera igual?"
+        },
+        "pistaN2": {
+          "gl": "A persoa adulta coloca as súas mans sobre as das criaturas e modela o contraste de presión.",
+          "es": "La persona adulta coloca sus manos sobre las de las criaturas y modela el contraste de presión."
+        }
+      },
+      "construye": {
+        "retoTangible": {
+          "gl": "Á conta de tres, ambas criaturas deixan caer o seu obxecto dentro da cesta compartida ao escoitar a orde auditiva.",
+          "es": "A la de tres, ambas criaturas dejan caer su objeto dentro de la cesta compartida al escuchar la orden auditiva."
+        },
+        "sintesisCierre": {
+          "gl": "¿Cal fixo ruído ao caer na cesta? ¿O suave ou o duro?",
+          "es": "¿Cuál hizo ruido al caer en la cesta? ¿El suave o el duro?"
+        }
+      }
+    },
+    "tprIngles": {
+      "comando": "Drop",
+      "ipa": "/drɑːp/",
+      "audioAsset": "assets/voice/en_slow_a9a58d8c_4.m4a",
+      "accionCorporal": {
+        "gl": "Mans abertas soltando o obxecto cara á cesta ao unísono.",
+        "es": "Manos abiertas soltando el objeto hacia la cesta al unísono."
+      }
+    },
+    "evaluacionObservacional": {
+      "criterioLogro": {
+        "gl": "A criatura aperta os dous obxectos, discrimina a resistencia e participa no lanzamento coordinado cara á cesta.",
+        "es": "La criatura aprieta ambos objetos, discrimina la resistencia y participa en el lanzamiento coordinado hacia la cesta."
+      },
+      "pauta1Tap": {
+        "logrado": {
+          "gl": "Solta e discrimina a textura de forma autónoma",
+          "es": "Suelta y discrimina la textura de forma autónoma"
+        },
+        "asistido": {
+          "gl": "Precisa modelado físico da man adulta",
+          "es": "Requiere modelado físico de la mano adulta"
+        },
+        "explorando": {
+          "gl": "Explora sen discriminar resistencia aínda",
+          "es": "Explora sin discriminar resistencia todavía"
+        }
+      }
+    }
+  },
+  {
+    "id": "I2-CINEMATICA-001",
+    "estadio": "curso_2_3",
+    "nivelMadurativo": "I2",
+    "rangoEdad": {
+      "gl": "24 a 36 meses",
+      "es": "24 a 36 meses"
+    },
+    "fenomeno": {
+      "gl": "Cinemática básica, gravidade e rodar fronte a esvarar",
+      "es": "Cinemática básica, gravedad y rodar frente a deslizar"
+    },
+    "titulo": {
+      "gl": "A rampla de cartón e a carreira do cilindro",
+      "es": "La rampa de cartón y la carrera del cilindro"
+    },
+    "tiempoEstimadoMin": 15,
+    "materiales": [
+      {
+        "item": {
+          "gl": "Plancha ríxida de cartón groso (> 60x30 cm)",
+          "es": "Plancha rígida de cartón grueso (> 60x30 cm)"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Caixa de zapatos ou soporte elevado (> 10 cm)",
+          "es": "Caja de zapatos o soporte elevado (> 10 cm)"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Cilindro de cartón resistente (> 4.5 cm de diámetro)",
+          "es": "Cilindro de cartón resistente (> 4.5 cm de diámetro)"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Bloque rectangular de madeira ou esponxa densa (> 5 cm de base)",
+          "es": "Bloque rectangular de madera o esponja densa (> 5 cm de base)"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      }
+    ],
+    "dinamicaCooperativa": {
+      "modalidad": "parella",
+      "descripcion": {
+        "gl": "Unha criatura sitúase no alto da rampla co cilindro e o bloque, e a outra agarda ao final da pista cos brazos abertos para recoller o obxecto que gañe a carreira.",
+        "es": "Una criatura se sitúa en lo alto de la rampa con el cilindro y el bloque, y la otra espera al final de la pista con los brazos abiertos para recoger el objeto que gane la carrera."
+      },
+      "roles": [
+        {
+          "clave": "lanzador_rampla",
+          "nombre": {
+            "gl": "Lanzadora da rampla",
+            "es": "Lanzadora de la rampa"
+          },
+          "mision": {
+            "gl": "Coloca os dous corpos arriba e solta sen empurrar",
+            "es": "Coloca los dos cuerpos arriba y suelta sin empujar"
+          }
+        },
+        {
+          "clave": "gardian_meta",
+          "nombre": {
+            "gl": "Gardián da meta",
+            "es": "Guardián de la meta"
+          },
+          "mision": {
+            "gl": "Prepara as mans na liña de meta para frear o cilindro",
+            "es": "Prepara las manos en la línea de meta para frenar el cilindro"
+          }
+        }
+      ]
+    },
+    "cicloDidactico": {
+      "observa": {
+        "planteamiento": {
+          "gl": "A rampla de cartón apóiase sobre a caixa formando un plano inclinado de 30 graos. No cume repousan o cilindro e o bloque.",
+          "es": "La rampa de cartón se apoya sobre la caja formando un plano inclinado de 30 grados. En la cima reposan el cilindro y el bloque."
+        },
+        "preguntaIndagacion": {
+          "gl": "¿Cal chegará antes ao chan se os soltamos á vez sen empurrar?",
+          "es": "¿Cuál llegará antes al suelo si los soltamos a la vez sin empujar?"
+        },
+        "pausaSilencioSegundos": 5
+      },
+      "experimenta": {
+        "consignaAdulto": {
+          "gl": "A lanzadora coloca o cilindro arriba mentres o adulto emite a orde TPR: «Roll!». Ao soltar, o gardián recolle o cilindro. Despois repiten co bloque plano e a palabra «Slide...» comprobando a fricción.",
+          "es": "La lanzadora coloca el cilindro arriba mientras el adulto emite la orden TPR: «Roll!». Al soltar, el guardián recoge el cilindro. Después repiten con el bloque plano y la palabra «Slide...» comprobando la fricción."
+        },
+        "pistaN1": {
+          "gl": "Mira a forma redonda do tubo. ¿Por que o tubo segue rodando e a caixa queda parada?",
+          "es": "Mira la forma redonda del tubo. ¿Por qué el tubo sigue rodando y la caja se queda parada?"
+        },
+        "pistaN2": {
+          "gl": "A persoa adulta axuda a soster as mans de ambas criaturas para soltar á conta de tres sen empurrar cara a adiante.",
+          "es": "La persona adulta ayuda a sostener las manos de ambas criaturas para soltar a la de tres sin empujar hacia adelante."
+        }
+      },
+      "construye": {
+        "retoTangible": {
+          "gl": "Xuntas, as dúas criaturas colocan dous libros grosos debaixo da caixa para aumentar a pendente e comproban se o cilindro corre máis rápido.",
+          "es": "Juntas, las dos criaturas colocan dos libros gruesos debajo de la caja para aumentar la pendiente y comprueban si el cilindro corre más rápido."
+        },
+        "sintesisCierre": {
+          "gl": "Cando a rampla está máis empinada, ¿o cilindro corre máis rápido ou máis amodo?",
+          "es": "Cuando la rampa está más empinada, ¿el cilindro corre más rápido o más despacio?"
+        }
+      }
+    },
+    "tprIngles": {
+      "comando": "Roll",
+      "ipa": "/roʊl/",
+      "audioAsset": "assets/voice/en_slow_16ff3d1e_4.m4a",
+      "accionCorporal": {
+        "gl": "Movemento circular continuo dos dous antebrazos imitando as voltas da roda.",
+        "es": "Movimiento circular continuo de ambos antebrazos imitando las vueltas de la rueda."
+      }
+    },
+    "evaluacionObservacional": {
+      "criterioLogro": {
+        "gl": "As criaturas colaboran nos roles de lanzamento e recepción, anticipando o movemento acelerado do cilindro fronte ao bloque.",
+        "es": "Las criaturas colaboran en los roles de lanzamiento y recepción, anticipando el movimiento acelerado del cilindro frente al bloque."
+      },
+      "pauta1Tap": {
+        "logrado": {
+          "gl": "Anticipa a traxectoria e coloca na rampla respectando a quenda",
+          "es": "Anticipa la trayectoria y coloca en la rampa respetando el turno"
+        },
+        "asistido": {
+          "gl": "Precisa axuda para soltar sen empurrar ou para recoller",
+          "es": "Requiere ayuda para soltar sin empujar o para recoger"
+        },
+        "explorando": {
+          "gl": "Lanza con forza sen observar o efecto da gravidade",
+          "es": "Lanza con fuerza sin observar el efecto de la gravedad"
+        }
+      }
+    }
+  },
+  {
+    "id": "I3-ACUSTICA-001",
+    "estadio": "curso_3_4",
+    "nivelMadurativo": "I3",
+    "rangoEdad": {
+      "gl": "3 a 4 anos",
+      "es": "3 a 4 años"
+    },
+    "fenomeno": {
+      "gl": "Acústica física, propagación de ondas mecánicas e vibración de membranas",
+      "es": "Acústica física, propagación de ondas mecánicas y vibración de membranas"
+    },
+    "titulo": {
+      "gl": "O arroz saltarín e a membrana sonora",
+      "es": "El arroz saltarín y la membrana sonora"
+    },
+    "tiempoEstimadoMin": 18,
+    "materiales": [
+      {
+        "item": {
+          "gl": "Taza ou cunca pesada con membrana elástica de látex tensada",
+          "es": "Taza o cuenco pesado con membrana elástica de látex tensada"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": false
+      },
+      {
+        "item": {
+          "gl": "Grans de arroz seco cru (15 a 20 grans)",
+          "es": "Granos de arroz seco crudo (15 a 20 granos)"
+        },
+        "cantidad": 20,
+        "seguridadMayor4cm": false
+      },
+      {
+        "item": {
+          "gl": "Tubo de cartón ríxido (20 cm)",
+          "es": "Tubo de cartón rígido (20 cm)"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      }
+    ],
+    "dinamicaCooperativa": {
+      "modalidad": "parella",
+      "descripcion": {
+        "gl": "Unha criatura actúa como Voz Cantora sostendo o tubo de son cara á membrana, mentres a outra criatura é a Observadora do Salto tocando o bordo da cunca coas xemas dos dedos.",
+        "es": "Una criatura actúa como Voz Cantora sosteniendo el tubo de sonido hacia la membrana, mientras la otra criatura es la Observadora del Salto tocando el borde del cuenco con las yemas de los dedos."
+      },
+      "roles": [
+        {
+          "clave": "voz_cantora",
+          "nombre": {
+            "gl": "Voz Cantora",
+            "es": "Voz Cantora"
+          },
+          "mision": {
+            "gl": "Canta grave e sostido polo tubo cara á membrana sen tocala",
+            "es": "Canta grave y sostenido por el tubo hacia la membrana sin tocarla"
+          }
+        },
+        {
+          "clave": "observador_ondas",
+          "nombre": {
+            "gl": "Observadora das ondas",
+            "es": "Observadora de las ondas"
+          },
+          "mision": {
+            "gl": "Sente a vibración na cunca e avisa cando os grans salten",
+            "es": "Siente la vibración en el cuenco y avisa cuando los granos salten"
+          }
+        }
+      ]
+    },
+    "cicloDidactico": {
+      "observa": {
+        "planteamiento": {
+          "gl": "Sobre a membrana elástica tensa repousan os grans de arroz inmóbiles. A persoa adulta mostra que non hai vento nin movemento.",
+          "es": "Sobre la membrana elástica tensa reposan los granos de arroz inmóviles. La persona adulta muestra que no hay viento ni movimiento."
+        },
+        "preguntaIndagacion": {
+          "gl": "¿Como podemos facer bailar o arroz sen tocar a cunca nin soprar con vento?",
+          "es": "¿Cómo podemos hacer bailar el arroz sin tocar el cuenco ni soplar con viento?"
+        },
+        "pausaSilencioSegundos": 5
+      },
+      "experimenta": {
+        "consignaAdulto": {
+          "gl": "Achega o tubo a 2 cm da membrana. Pon a man na gorxa da criatura, emite a orde TPR: «Listen!» e convida a cantar unha nota moi grave: «Ooooommmm» sostida.",
+          "es": "Acerca el tubo a 2 cm de la membrana. Pon la mano en la garganta de la criatura, emite la orden TPR: «Listen!» e invita a cantar una nota muy grave: «Ooooommmm» sostenida."
+        },
+        "pistaN1": {
+          "gl": "Toca a miña gorxa mentres canto. ¿Notas como fai cóxegas? Agora proba ti con voz profunda.",
+          "es": "Toca mi garganta mientras canto. ¿Notas cómo hace cosquillas? Ahora prueba tú con voz profunda."
+        },
+        "pistaN2": {
+          "gl": "A persoa adulta sostén o tubo conxuntamente coa criatura para calibrar a distancia sen tocar a membrana elástica.",
+          "es": "La persona adulta sostiene el tubo conjuntamente con la criatura para calibrar la distancia sin tocar la membrana elástica."
+        }
+      },
+      "construye": {
+        "retoTangible": {
+          "gl": "Intercambiar os roles: quen cantaba agora apoia os dedos para sentir a vibración, e quen sentía agora canta alternando intensidades forte e suave.",
+          "es": "Intercambiar los roles: quien cantaba ahora apoya los dedos para sentir la vibración, y quien sentía ahora canta alternando intensidades fuerte y suave."
+        },
+        "sintesisCierre": {
+          "gl": "Se a nosa voz cala en seco, ¿por que o arroz para de bailar no mesmo instante?",
+          "es": "Si nuestra voz calla en seco, ¿por qué el arroz para de bailar en el mismo instante?"
+        }
+      }
+    },
+    "tprIngles": {
+      "comando": "Listen",
+      "ipa": "/ˈlɪs.ən/",
+      "audioAsset": "assets/voice/en_slow_3b3b76a6_6.m4a",
+      "accionCorporal": {
+        "gl": "Man en cuncha xunto á orella inclinando a cabeza con atención.",
+        "es": "Mano ahuecada junto a la oreja inclinando la cabeza con atención."
+      }
+    },
+    "evaluacionObservacional": {
+      "criterioLogro": {
+        "gl": "A criatura asocia a emisión vocal grave/potente co salto físico do arroz e a vibración táctil da cunca.",
+        "es": "La criatura asocia la emisión vocal grave/potente con el salto físico del arroz y la vibración táctil del cuenco."
+      },
+      "pauta1Tap": {
+        "logrado": {
+          "gl": "Fonoarticula con vibración sostida facendo saltar o arroz sen soprar",
+          "es": "Fonoarticula con vibración sostenida haciendo saltar el arroz sin soplar"
+        },
+        "asistido": {
+          "gl": "Tende a soplar aire en vez de cantar; precisa modelado fonador",
+          "es": "Tiende a soplar aire en vez de cantar; requiere modelado fonador"
+        },
+        "explorando": {
+          "gl": "Toca o arroz cos dedos ou xoga co tubo sen fonoarticular",
+          "es": "Toca el arroz con los dedos o juega con el tubo sin fonoarticular"
+        }
+      }
+    }
+  },
+  {
+    "id": "I4-OPTICA-001",
+    "estadio": "curso_4_5",
+    "nivelMadurativo": "I4",
+    "rangoEdad": {
+      "gl": "4 a 5 anos",
+      "es": "4 a 5 años"
+    },
+    "fenomeno": {
+      "gl": "Óptica xeométrica analóxica, propagación rectilínea da luz e sombras proxectadas",
+      "es": "Óptica geométrica analógica, propagación rectilínea de la luz y sombras proyectadas"
+    },
+    "titulo": {
+      "gl": "O misterio da sombra xigante de Lúa",
+      "es": "El misterio de la sombra gigante de Lúa"
+    },
+    "tiempoEstimadoMin": 20,
+    "materiales": [
+      {
+        "item": {
+          "gl": "Foco de luz puntual ou lanterna analóxica",
+          "es": "Foco de luz puntual o linterna analógica"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Silueta opaca de cartón da gata Lúa nunha variña",
+          "es": "Silueta opaca de cartón de la gata Lúa en una varilla"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Parede branca ou tea clara estirada",
+          "es": "Pared blanca o tela clara estirada"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Cinta de carrocero no chan a 1 m e 2 m",
+          "es": "Cinta de carrocero en el suelo a 1 m y 2 m"
+        },
+        "cantidad": 2,
+        "seguridadMayor4cm": true
+      }
+    ],
+    "dinamicaCooperativa": {
+      "modalidad": "parella",
+      "descripcion": {
+        "gl": "Unha criatura é a Titiriteira que move a silueta achegándoa e afastándoa da lanterna, e a outra é a Rastrexadora que marca no chan con cinta onde a sombra medra máis.",
+        "es": "Una criatura es la Titiritera que mueve la silueta acercándola y alejándola de la linterna, y la otra es la Rastreadora que marca en el suelo con cinta dónde la sombra crece más."
+      },
+      "roles": [
+        {
+          "clave": "titiriteiro_luz",
+          "nombre": {
+            "gl": "Titiriteira da luz",
+            "es": "Titiritera de la luz"
+          },
+          "mision": {
+            "gl": "Sostén a figura de Lúa e dá pasos adiante e atrás entre a luz e a parede",
+            "es": "Sostiene la figura de Lúa y da pasos adelante y atrás entre la luz y la pared"
+          }
+        },
+        {
+          "clave": "rastrexador_sombras",
+          "nombre": {
+            "gl": "Rastrexador de sombras",
+            "es": "Rastreador de sombras"
+          },
+          "mision": {
+            "gl": "Observa a parede e avisa cando a sombra sexa pequena coma un rato ou xigante",
+            "es": "Observa la pared y avisa cuando la sombra sea pequeña como un ratón o gigante"
+          }
+        }
+      ]
+    },
+    "cicloDidactico": {
+      "observa": {
+        "planteamiento": {
+          "gl": "A lanterna ilumina a parede branca. A persoa adulta sostén a silueta moi preto da lanterna producindo unha sombra enorme.",
+          "es": "La linterna ilumina la pared blanca. La persona adulta sostiene la silueta muy cerca de la linterna produciendo una sombra enorme."
+        },
+        "preguntaIndagacion": {
+          "gl": "¿Que temos que facer coa figura para que a sombra se faga pequena coma un rato?",
+          "es": "¿Qué tenemos que hacer con la figura para que la sombra se haga pequeña como un ratón?"
+        },
+        "pausaSilencioSegundos": 5
+      },
+      "experimenta": {
+        "consignaAdulto": {
+          "gl": "Di a orde TPR: «Look!». A titiriteira camiña cara á parede con «Step forward!» e a rastrexadora comproba como a sombra encolle. Logo volve cara á luz con «Step back!» e ven medrar a sombra xigante.",
+          "es": "Di la orden TPR: «Look!». La titiritera camina hacia la pared con «Step forward!» y la rastreadora comprueba cómo la sombra encoge. Luego vuelve hacia la luz con «Step back!» y ven crecer la gigante."
+        },
+        "pistaN1": {
+          "gl": "Mira a lanterna. Cando a figura tapa moita luz preto do foco, ¿a sombra na parede faise máis grande ou máis pequena?",
+          "es": "Mira la linterna. Cuando la figura tapa mucha luz cerca del foco, ¿la sombra en la pared se hace más grande o más pequeña?"
+        },
+        "pistaN2": {
+          "gl": "A persoa adulta guía con suavidade os ombreiros da criatura titiriteira marcando as dúas posicións clave.",
+          "es": "La persona adulta guía con suavidad los hombros de la criatura titiritera marcando las dos posiciones clave."
+        }
+      },
+      "construye": {
+        "retoTangible": {
+          "gl": "Marcar dúas liñas con cinta no chan: «Sombra Bebé» (preto da parede) e «Sombra Xigante» (preto do foco). As dúas criaturas saltan á posición correcta cando o adulto di o tamaño.",
+          "es": "Marcar dos líneas con cinta en el suelo: «Sombra Bebé» (cerca de la pared) y «Sombra Gigante» (cerca del foco). Las dos criaturas saltan a la posición correcta cuando el adulto dice el tamaño."
+        },
+        "sintesisCierre": {
+          "gl": "¿Pode a luz atravesar o cartón de Lúa ou ten que viaxar arredor del creando a sombra escura?",
+          "es": "¿Puede la luz atravesar el cartón de Lúa o tiene que viajar alrededor de él creando la sombra oscura?"
+        }
+      }
+    },
+    "tprIngles": {
+      "comando": "Look",
+      "ipa": "/lʊk/",
+      "audioAsset": "assets/voice/en_slow_e6ef5696_4.m4a",
+      "accionCorporal": {
+        "gl": "Mans simulando prismáticos sobre os ollos mirando fixamente cara á parede.",
+        "es": "Manos simulando prismáticos sobre los ojos mirando fijamente hacia la pared."
+      }
+    },
+    "evaluacionObservacional": {
+      "criterioLogro": {
+        "gl": "As criaturas coordinan os seus roles deducindo a relación xeométrica inversa entre a distancia á fonte de luz e a escala da sombra.",
+        "es": "Las criaturas coordinan sus roles deduciendo la relación geométrica inversa entre la distancia a la fuente de luz y la escala de la sombra."
+      },
+      "pauta1Tap": {
+        "logrado": {
+          "gl": "Axusta voluntariamente a distancia para acadar o tamaño de sombra solicitado",
+          "es": "Ajusta voluntariamente la distancia para lograr el tamaño de sombra solicitado"
+        },
+        "asistido": {
+          "gl": "Precisa axuda para lembrar se achegar amplía ou reduce a sombra",
+          "es": "Requiere ayuda para recordar si acercar amplía o reduce la sombra"
+        },
+        "explorando": {
+          "gl": "Xoga coa lanterna sen relacionar distancia con tamaño de sombra",
+          "es": "Juega con la linterna sin relacionar distancia con tamaño de sombra"
+        }
+      }
+    }
+  },
+  {
+    "id": "I5-LOGICA-001",
+    "estadio": "curso_5_6",
+    "nivelMadurativo": "I5",
+    "rangoEdad": {
+      "gl": "5 a 6 anos",
+      "es": "5 a 6 años"
+    },
+    "fenomeno": {
+      "gl": "Pensamento computacional sen pantallas, secuenciación algorítmica e depuración física",
+      "es": "Pensamiento computacional sin pantallas, secuenciación algorítmica y depuración física"
+    },
+    "titulo": {
+      "gl": "A cuadrícula de Lúa: programación física e retos cooperativos",
+      "es": "La cuadrícula de Lúa: programación física y retos cooperativos"
+    },
+    "tiempoEstimadoMin": 22,
+    "materiales": [
+      {
+        "item": {
+          "gl": "Cuadrícula de 3x3 baldosas trazada con cinta no chan",
+          "es": "Cuadrícula de 3x3 baldosas trazada con cinta en el suelo"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Tarxetas de cartón con frechas direccionais (Paso adiante, Xiro dereita, Xiro esquerda)",
+          "es": "Tarjetas de cartón con flechas direccionales (Paso adelante, Giro derecha, Giro izquierda)"
+        },
+        "cantidad": 6,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Cartolina vermella para casilla obstáculo",
+          "es": "Cartulina roja para casilla obstáculo"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      },
+      {
+        "item": {
+          "gl": "Obxecto meta (unha flor de papel ou elemento de Vigo)",
+          "es": "Objeto meta (una flor de papel o elemento de Vigo)"
+        },
+        "cantidad": 1,
+        "seguridadMayor4cm": true
+      }
+    ],
+    "dinamicaCooperativa": {
+      "modalidad": "parella",
+      "descripcion": {
+        "gl": "Unha criatura asume o rol de Programadora ordenando as tarxetas de código no chan, e a outra é o Robot Lúa que executa a secuencia paso a paso sen falar nin adiantarse.",
+        "es": "Una criatura asume el rol de Programadora ordenando las tarjetas de código en el suelo, y la otra es el Robot Lúa que ejecuta la secuencia paso a paso sin hablar ni adelantarse."
+      },
+      "roles": [
+        {
+          "clave": "programador_algoritmo",
+          "nombre": {
+            "gl": "Programadora do algoritmo",
+            "es": "Programadora del algoritmo"
+          },
+          "mision": {
+            "gl": "Elixe e coloca a liña de tarxetas de cartón indicando o camiño seguro cara á meta",
+            "es": "Elige y coloca la línea de tarjetas de cartón indicando el camino seguro hacia la meta"
+          }
+        },
+        {
+          "clave": "robot_lua",
+          "nombre": {
+            "gl": "Robot Lúa",
+            "es": "Robot Lúa"
+          },
+          "mision": {
+            "gl": "Avanza e xira unicamente ao ritmo das ordes do código sen saír da cuadrícula",
+            "es": "Avanza y gira únicamente al ritmo de las órdenes del código sin salir de la cuadrícula"
+          }
+        }
+      ]
+    },
+    "cicloDidactico": {
+      "observa": {
+        "planteamiento": {
+          "gl": "A cuadrícula no chan ten unha casa de saída e unha de meta. No medio hai unha casiña vermella de obstáculo.",
+          "es": "La cuadrícula en el suelo tiene una casilla de salida y una de meta. En el medio hay una casilla roja de obstáculo."
+        },
+        "preguntaIndagacion": {
+          "gl": "¿Cántos pasos rectos e cántos xiros precisa dar o robot para chegar á meta esquivando o obstáculo?",
+          "es": "¿Cuántos pasos rectos y cuántos giros necesita dar el robot para llegar a la meta esquivando el obstáculo?"
+        },
+        "pausaSilencioSegundos": 5
+      },
+      "experimenta": {
+        "consignaAdulto": {
+          "gl": "A programadora coloca 3 frechas no chan. Ao ritmo da orde TPR: «Step!», o robot pisa a seguinte baldosa. Se atopa a casilla vermella, o robot conxélase ata depurar o erro («Debug!»).",
+          "es": "La programadora coloca 3 flechas en el suelo. Al ritmo de la orden TPR: «Step!», el robot pisa la siguiente baldosa. Si encuentra la casilla roja, el robot se congela hasta depurar el error («Debug!»)."
+        },
+        "pistaN1": {
+          "gl": "O robot chegou a unha casiña onde non pode pasar. ¿Cal das tarxetas do chan temos que xirar ou cambiar para corrixir o camiño?",
+          "es": "El robot llegó a una casilla donde no puede pasar. ¿Cuál de las tarjetas del suelo tenemos que girar o cambiar para corregir el camino?"
+        },
+        "pistaN2": {
+          "gl": "A persoa adulta camiña detrás do robot colocando as mans nos seus ombreiros para modelar o xiro corporal de 90 graos.",
+          "es": "La persona adulta camina detrás del robot colocando las manos en sus hombros para modelar el giro corporal de 90 grados."
+        }
+      },
+      "construye": {
+        "retoTangible": {
+          "gl": "Intercambiar os papeis: crear un percorrido de 4 instrucións que inclúa recoller a flor de papel e levala ao punto de partida cooperando ambas criaturas.",
+          "es": "Intercambiar los papeles: crear un recorrido de 4 instrucciones que incluya recoger la flor de papel y llevarla al punto de partida cooperando ambas criaturas."
+        },
+        "sintesisCierre": {
+          "gl": "Se cambiamos a orde de dúas tarxetas no chan, ¿o robot chega ao mesmo lugar ou pérdese polo camiño?",
+          "es": "Si cambiamos el orden de dos tarjetas en el suelo, ¿el robot llega al mismo lugar o se pierde por el camino?"
+        }
+      }
+    },
+    "tprIngles": {
+      "comando": "Step",
+      "ipa": "/stɛp/",
+      "audioAsset": "assets/voice/en_slow_c7441a0f_4.m4a",
+      "accionCorporal": {
+        "gl": "Un paso firme cara a adiante marcando o pé no chan da cuadrícula.",
+        "es": "Un paso firme hacia adelante marcando el pie en el suelo de la cuadrícula."
+      }
+    },
+    "evaluacionObservacional": {
+      "criterioLogro": {
+        "gl": "As criaturas colaboran secuenciando instrucións motoras, respectando as regras de quenda e depurando erros sen frustración.",
+        "es": "Las criaturas colaboran secuenciando instrucciones motoras, respetando las reglas de turno y depurando errores sin frustración."
+      },
+      "pauta1Tap": {
+        "logrado": {
+          "gl": "Programa ou executa a secuencia completa e o condicional de xeito autónomo",
+          "es": "Programa o ejecuta la secuencia completa y el condicional de forma autónoma"
+        },
+        "asistido": {
+          "gl": "Precisa apoio corporal para non confundir dereita/esquerda no xiro",
+          "es": "Requiere apoyo corporal para no confundir derecha/izquierda en el giro"
+        },
+        "explorando": {
+          "gl": "Camiña libremente fóra da cuadrícula sen seguir a orde das tarxetas",
+          "es": "Camina libremente fuera de la cuadrícula sin seguir el orden de las tarjetas"
+        }
+      }
+    }
+  }
+]

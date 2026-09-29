@@ -19,6 +19,7 @@ import '../laminas/views/laminas_gallery_screen.dart';
 import '../lectura/views/aprender_a_ler_screen.dart';
 import '../premios/premios_repository.dart';
 import '../premios/premios_screen.dart';
+import '../steam/views/steam_hub_screen.dart';
 import 'views/xogos_fogar_screen.dart';
 import 'widgets/tarxeta_ingles_de_hoxe_fogar.dart';
 
@@ -84,6 +85,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
       'gl': 'Calendario Escolar',
       'es': 'Calendario Escolar'
     },
+    {'id': 'steam', 'gl': 'STEAM Cooperativo', 'es': 'STEAM Cooperativo'},
     {'id': 'academy', 'gl': 'Pautas de Crianza', 'es': 'Pautas de Crianza'},
   ];
 
@@ -644,6 +646,37 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                         repository: widget.repository,
                         premios: widget.premios,
                         calendario: widget.calendario,
+                        audioService: widget.audioService,
+                        initialLanguage: _language,
+                        onLanguageChanged: _handleLanguageChanged,
+                      ),
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+            ],
+
+            // 7. STEAM no Fogar · Xogo Cooperativo
+            if (_matchesFilter('steam')) ...[
+              _buildFamilyModuleCard(
+                context: context,
+                title: isGl
+                    ? 'STEAM no Fogar · Xogo Cooperativo'
+                    : 'STEAM en el Hogar · Juego Cooperativo',
+                description: isGl
+                    ? '5 unidades de descubrimento científico analóxico e manipulación física para explorar en familia: texturas, ramplas, acústica, sombras e lóxica con comandos TPR en inglés.'
+                    : '5 unidades de descubrimiento científico analógico y manipulación física para explorar en familia: texturas, rampas, acústica, sombras y lógica con comandos TPR en inglés.',
+                icon: Icons.biotech_rounded,
+                iconColor: const Color(0xFFD69E2E),
+                iconBg: const Color(0xFFFEFCBF),
+                badge: isGl ? 'Ciencia e TPR' : 'Ciencia y TPR',
+                buttonText: isGl ? 'Explorar STEAM' : 'Explorar STEAM',
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => SteamHubScreen(
+                        repository: widget.repository,
                         audioService: widget.audioService,
                         initialLanguage: _language,
                         onLanguageChanged: _handleLanguageChanged,

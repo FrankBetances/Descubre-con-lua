@@ -22,6 +22,7 @@ import '../models/tpr_curriculum_scheduler.dart';
 // Este fichero solo usa los del banco, así que se ocultan los de la unidad: sin
 // esto, los dos nombres chocan y el proyecto NO compila.
 import '../models/unidad_model.dart' hide Cuento, CuentoPagina;
+import '../models/steam_cooperativo_model.dart';
 
 /// A content file that could not be loaded, kept instead of being discarded.
 class ContentLoadFailure {
@@ -70,6 +71,7 @@ class ContentRepository {
   static const String dinamicasAssetPath = 'assets/content/dinamicas_aula.json';
   static const String curriculo50MesesAssetPath =
       'assets/content/calendario/curriculo_50_meses.json';
+  static const String steamAssetPath = ContentAssetLoader.steamAssetPath;
 
   final ContentAssetLoader _loader;
   final Map<String, Unidad> _unidadesById = {};
@@ -125,6 +127,14 @@ class ContentRepository {
   int get asambleaPrimeiroCicloCount => _asambleasPrimeiroCicloById.length;
 
   int get asambleaSegundoCicloCount => _asambleasSegundoCicloById.length;
+
+  final Map<String, SteamUnit> _steamUnitsById = {};
+
+  /// Total count of loaded STEAM units.
+  int get steamUnitCount => _steamUnitsById.length;
+
+  /// All loaded STEAM units.
+  List<SteamUnit> get steamUnits => List.unmodifiable(_steamUnitsById.values);
 
   /// Initializes the repository by loading assets from default or specified paths.
   ///
@@ -208,6 +218,7 @@ class ContentRepository {
     _asambleasPrimeiroCicloById.clear();
     _asambleasSegundoCicloById.clear();
     _progresionsPorClave.clear();
+    _steamUnitsById.clear();
     _loadErrors.clear();
 
     for (final path in effectiveUnidadPaths) {
@@ -266,6 +277,18 @@ class ContentRepository {
       } catch (e) {
         _loadErrors.add(ContentLoadFailure(path, e.toString()));
       }
+    }
+
+    if (generation != _initGeneration) return;
+    try {
+      final steamUnits = await _loader.loadSteamUnits();
+      if (generation != _initGeneration) return;
+      for (final u in steamUnits) {
+        _steamUnitsById[u.id] = u;
+      }
+    } catch (e) {
+      _loadErrors.add(
+          ContentLoadFailure(ContentAssetLoader.steamAssetPath, e.toString()));
     }
 
     if (generation == _initGeneration) {
@@ -991,6 +1014,47 @@ class ContentRepository {
     _curriculo50Meses.add(mes);
   }
 
+  // --- STEAM COOPERATIVO (Indagación, Roles e TPR) ---
+
+  /// Carga as unidades STEAM canónicas desde o banco de contido JSON.
+  Future<List<SteamUnit>> loadSteamUnits({bool forceReload = false}) async {
+    if (_steamUnitsById.isEmpty || forceReload) {
+      try {
+        final units = await _loader.loadSteamUnits();
+        if (forceReload) _steamUnitsById.clear();
+        for (final u in units) {
+          _steamUnitsById[u.id] = u;
+        }
+      } catch (e) {
+        _loadErrors.add(
+            ContentLoadFailure(ContentAssetLoader.steamAssetPath, e.toString()));
+      }
+    }
+    return List.unmodifiable(_steamUnitsById.values);
+  }
+
+  /// Retorna as unidades STEAM filtradas por estadio madurativo ('curso_0_2'...'curso_5_6')
+  List<SteamUnit> getSteamUnitsByEstadio(String estadio) {
+    return _steamUnitsById.values.where((u) => u.estadio == estadio).toList();
+  }
+
+  /// Retorna a unidade STEAM polo seu identificador ('I1-MATERIA-001'...)
+  SteamUnit? getSteamUnitById(String id) => _steamUnitsById[id.trim()];
+
+  /// Retorna a unidade STEAM por nivel madurativo ('I1'...'I5')
+  SteamUnit? getSteamUnitByNivel(String nivel) {
+    final clean = nivel.trim().toUpperCase();
+    for (final u in _steamUnitsById.values) {
+      if (u.nivelMadurativo.toUpperCase() == clean) return u;
+    }
+    return null;
+  }
+
+  /// Engade ou actualiza unha [SteamUnit] directamente en memoria (para tests e mocking).
+  void addSteamUnit(SteamUnit unit) {
+    _steamUnitsById[unit.id] = unit;
+  }
+
   /// Clears all cached content across all modules.
   void clear() {
     _initGeneration++;
@@ -1009,6 +1073,7 @@ class ContentRepository {
     _estrategias.clear();
     _dinamicas.clear();
     _curriculo50Meses.clear();
+    _steamUnitsById.clear();
     _programaTpr = null;
     _cargandoProgramaTpr = null;
     _loadErrors.clear();
