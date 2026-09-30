@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-09-30T16:35:14Z",
- "entries": 15158,
+ "generatedAt": "2026-09-30T21:03:17Z",
+ "entries": 15154,
  "byStyle": {
   "slow": 6002,
-  "tutor": 9156
+  "tutor": 9152
  },
  "byLang": {
-  "en": 12809,
+  "en": 12805,
   "es": 1174,
   "gl": 1175
  },
@@ -48708,14 +48708,6 @@
    "source": "corpus/14/frase"
   },
   {
-   "id": "en_tutor_0773fcb0_36",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Step on the grass, soft little feet!",
-   "speech": "Step on the grass, soft little feet!",
-   "source": "conto/conto_003_s3/tpr"
-  },
-  {
    "id": "en_tutor_077dc739_31",
    "lang": "en",
    "style": "tutor",
@@ -69700,14 +69692,6 @@
    "source": "tpr.3_4.novembro/s4/more-please"
   },
   {
-   "id": "en_tutor_698d97d5_28",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Wave hello, open your palms!",
-   "speech": "Wave hello, open your palms!",
-   "source": "conto/conto_001_s1/tpr"
-  },
-  {
    "id": "en_tutor_699d90c2_13",
    "lang": "en",
    "style": "tutor",
@@ -72500,14 +72484,6 @@
    "source": "corpus/894/frase"
   },
   {
-   "id": "en_tutor_7568c0cb_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Hug tight and feel the calm heartbeat!",
-   "speech": "Hug tight and feel the calm heartbeat!",
-   "source": "conto/conto_004_s4/tpr"
-  },
-  {
    "id": "en_tutor_7571a994_38",
    "lang": "en",
    "style": "tutor",
@@ -72794,14 +72770,6 @@
    "text": "Find the way",
    "speech": "Find the way",
    "source": "tpr.4_5.xaneiro/s1/4_5.xaneiro.s1.find-the-way"
-  },
-  {
-   "id": "en_tutor_767ecc7d_29",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Peek-a-boo, I see your smile!",
-   "speech": "Peek a boo, I see your smile!",
-   "source": "conto/conto_002_s2/tpr"
   },
   {
    "id": "en_tutor_76934acc_32",
@@ -81929,7 +81897,7 @@
    "style": "tutor",
    "text": "Jump like a frog, run and stop!",
    "speech": "Jump like a frog, run and stop!",
-   "source": "conto/conto_007_s3/tpr"
+   "source": "conto/conto_103_s3/tpr"
   },
   {
    "id": "en_tutor_9ff61439_42",
@@ -83545,7 +83513,7 @@
    "style": "tutor",
    "text": "Breathe in deeply and rest, soft and calm!",
    "speech": "Breathe in deeply and rest, soft and calm!",
-   "source": "conto/conto_008_s4/tpr"
+   "source": "conto/conto_104_s4/tpr"
   },
   {
    "id": "en_tutor_a75abb6b_7",
@@ -88441,7 +88409,7 @@
    "style": "tutor",
    "text": "Touch the soft leaf, listen to the sound!",
    "speech": "Touch the soft leaf, listen to the sound!",
-   "source": "conto/conto_006_s2/tpr"
+   "source": "conto/conto_106_s2/tpr"
   },
   {
    "id": "en_tutor_c0dbcf6d_30",
@@ -99417,7 +99385,7 @@
    "style": "tutor",
    "text": "Wave your hands, welcome to school!",
    "speech": "Wave your hands, welcome to school!",
-   "source": "conto/conto_005_s1/tpr"
+   "source": "conto/conto_101_s1/tpr"
   },
   {
    "id": "en_tutor_f1c05046_76",
@@ -99913,7 +99881,7 @@
    "style": "tutor",
    "text": "Blow the chestnut: cool it down!",
    "speech": "Blow the chestnut: cool it down!",
-   "source": "conto/conto_010_s2/tpr"
+   "source": "conto/conto_130_s2/tpr"
   },
   {
    "id": "en_tutor_f42ca564_60",
