@@ -879,6 +879,7 @@ class ContentValidator {
       'titulo',
       'fenomeno',
       'tiempoEstimadoMin',
+      'calendario',
       'curriculo',
       'seguridad',
       'ordenesIngles',
@@ -921,6 +922,26 @@ class ContentValidator {
     if (minutos is! int || minutos < 5 || minutos > 30) {
       errors.add('${prefix}tiempoEstimadoMin must be an integer between 5 and '
           '30 (got: $minutos)');
+    }
+
+    // El día del curso en que toca: lo que pone la sesión en «Hoxe na aula» y
+    // en el calendario. Un día que no existe dejaría la sesión sin aparecer
+    // nunca, y ningún otro gate lo diría.
+    final calendario = _asMap(json['calendario']);
+    if (calendario != null) {
+      for (final (campo, min, max) in const [
+        ('mes', 1, 10),
+        ('semana', 1, 4),
+        ('dia', 1, 5),
+      ]) {
+        final valor = calendario[campo];
+        if (valor is! int || valor < min || valor > max) {
+          errors.add('${prefix}calendario.$campo must be an integer between '
+              '$min and $max (got: $valor)');
+        }
+      }
+    } else if (json['calendario'] != null) {
+      errors.add('${prefix}calendario must be a JSON object');
     }
 
     // Currículo: el mismo anclaje que el resto del contenido.

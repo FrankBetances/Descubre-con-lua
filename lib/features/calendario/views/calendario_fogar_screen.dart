@@ -11,10 +11,13 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
+import '../../steam/widgets/steam_comun.dart';
+import '../../steam/widgets/steam_no_calendario.dart';
 import '../widgets/palabras_do_dia.dart';
 
 /// Calendario Escolar Completo para o Fogar (Familias).
@@ -167,6 +170,12 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
     final meses = contenido.meses;
     return _mesIndex < meses.length ? meses[_mesIndex] : null;
   }
+
+  /// A sesión STEAM que cae neste mes do curso elixido, se a hai.
+  List<SteamUnit> get _steamDoMes => widget.repository.getSteamUnitsDoMes(
+        cursoId: _cursoSeleccionado,
+        mes: _mesIndex + 1,
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -415,6 +424,13 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                     const SizedBox(height: 14),
                   ],
 
+                  // O día STEAM deste mes, se o hai: con el á vista non fai
+                  // falta abrir os vinte días para atopalo.
+                  if (_steamDoMes case final steam when steam.isNotEmpty) ...[
+                    AvisoSteamDoMes(unidades: steam, language: _language),
+                    const SizedBox(height: 14),
+                  ],
+
                   // 4. Reixa de Calendario Escolar Mensual (20 Días Lectivos: 4 Semanas x 5 Días)
                   if (_amosarReixaCompleta) ...[
                     Container(
@@ -495,6 +511,13 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                           : null;
                                   final isSelected = _semana == semanaNum &&
                                       _diaSemana == diaSemanaNum;
+                                  final esSteam = _steamDoMes.any((u) =>
+                                      u.diaNoCalendario?.coincide(
+                                        mes: _mesIndex + 1,
+                                        semana: semanaNum,
+                                        dia: diaSemanaNum,
+                                      ) ??
+                                      false);
 
                                   return Expanded(
                                     child: Padding(
@@ -540,14 +563,31 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                                 ),
                                               ),
                                               const SizedBox(height: 2),
-                                              Icon(
-                                                Icons.circle,
-                                                size: 5,
-                                                color: isSelected
-                                                    ? Colors.white
-                                                    : (diaItem != null
-                                                        ? AppTheme.primaryDark
-                                                        : Colors.transparent),
+                                              // O día STEAM leva o seu
+                                              // símbolo no sitio do punto.
+                                              SizedBox(
+                                                height: 10,
+                                                child: esSteam
+                                                    ? Icon(
+                                                        Icons.science_outlined,
+                                                        key: ValueKey(
+                                                            'reixa_steam_${semanaNum}_$diaSemanaNum'),
+                                                        size: 10,
+                                                        color: isSelected
+                                                            ? Colors.white
+                                                            : steamTinta,
+                                                      )
+                                                    : Icon(
+                                                        Icons.circle,
+                                                        size: 5,
+                                                        color: isSelected
+                                                            ? Colors.white
+                                                            : (diaItem != null
+                                                                ? AppTheme
+                                                                    .primaryDark
+                                                                : Colors
+                                                                    .transparent),
+                                                      ),
                                               ),
                                             ],
                                           ),
@@ -882,6 +922,28 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                       ],
                     ),
                   ],
+                ),
+              ),
+              const SizedBox(height: 14),
+            ],
+
+            // O xogo STEAM de casa, o mesmo día que o aula fai a súa sesión.
+            for (final u in widget.repository.getSteamUnitsDoDia(
+              cursoId: _cursoSeleccionado,
+              mes: _mesIndex + 1,
+              semana: dia.semanaNumero,
+              dia: dia.diaSemanaNumero,
+            )) ...[
+              FilaSteamDoDia(
+                unidade: u,
+                audiencia: SteamAudiencia.hogar,
+                language: _language,
+                onTap: () => abrirSesionSteam(
+                  context,
+                  unidade: u,
+                  audiencia: SteamAudiencia.hogar,
+                  language: _language,
+                  audioService: widget.audioService,
                 ),
               ),
               const SizedBox(height: 14),

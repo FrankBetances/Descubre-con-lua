@@ -12,9 +12,11 @@ import '../../../data/models/calendario_model.dart';
 import '../../../data/models/unidad_model.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../juega/widgets/barra_ingles_widget.dart';
+import '../../steam/widgets/steam_no_calendario.dart';
 import '../widgets/asemblea_do_dia.dart';
 import '../widgets/dia_no_fogar.dart';
 import '../widgets/palabras_do_dia.dart';
@@ -1110,6 +1112,16 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 ),
               ],
             ),
+            // El día STEAM de este mes, si lo hay: sin esto, para encontrar
+            // la sesión en el calendario había que abrir los veinte días.
+            if (_steamDoMes(mes) case final steam when steam.isNotEmpty) ...[
+              const SizedBox(height: AppTheme.spaceMd),
+              AvisoSteamDoMes(
+                unidades: steam,
+                language: _language,
+                conIdade: mes.cursoId == null,
+              ),
+            ],
             const Divider(height: 32),
 
             // La frase del mes, y solo la frase.
@@ -1302,6 +1314,15 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     );
   }
 
+  /// Las sesiones STEAM que caen en este mes: la del curso, o las de todos en
+  /// el catálogo de diez meses.
+  List<SteamUnit> _steamDoMes(MesCurricular mes) =>
+      widget.repository?.getSteamUnitsDoMes(
+        cursoId: mes.cursoId,
+        mes: mes.mesDoCurso,
+      ) ??
+      const [];
+
   /// La asamblea del DÍA desde la ficha del mes: semana, día y un botón por
   /// grupo (0-2, 2-3, 4.º, 5.º, 6.º). Antes aquí había un botón por nivel de
   /// 2.º ciclo que abría la asamblea del mes entero; el calendario decía «una
@@ -1360,6 +1381,30 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           _dia = d;
         }),
       ),
+      // La sesión STEAM del día, si ese día le toca al curso: la misma que
+      // sale en «Hoxe na aula» y en el día del Modo Aula.
+      for (final u in repo.getSteamUnitsDoDia(
+        cursoId: mes.cursoId,
+        mes: mes.mesDoCurso,
+        semana: _semana,
+        dia: _dia,
+      )) ...[
+        const SizedBox(height: 12),
+        FilaSteamDoDia(
+          unidade: u,
+          audiencia: SteamAudiencia.aula,
+          language: _language,
+          conIdade: mes.cursoId == null,
+          onTap: () => abrirSesionSteam(
+            context,
+            unidade: u,
+            audiencia: SteamAudiencia.aula,
+            language: _language,
+            audioService: widget.audioService,
+            onLanguageChanged: _onToggleLanguage,
+          ),
+        ),
+      ],
       // Las palabras del MISMO día que la tira: la semana y el día que abren la
       // asamblea son los que eligen las palabras. Antes había aquí una matriz
       // aparte, con sus propios días y sin palabras, al lado de esta tira: dos

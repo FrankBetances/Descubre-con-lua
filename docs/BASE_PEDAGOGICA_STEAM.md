@@ -93,6 +93,39 @@ Cada versión trae:
   silencio), **experimenta** (qué hacer y dos pistas, de menos a más ayuda) y
   **construye** (el reto y la pregunta de cierre).
 
+## El día que toca
+
+Cada sesión tiene su día del curso: el mes, la semana y el día de la semana
+(`calendario` en el JSON). Ese día sale sola, sin ir a buscarla al portal:
+
+- en **«Hoxe na aula»**, en el Portal Docentes, para el grupo de ese curso;
+- en el día del **Modo Aula** («O día de hoxe, enteiro»), en los dos ciclos,
+  junto al cuento y la dinámica del día;
+- en el **Calendario Escola · Fogar**: el mes avisa de qué día toca, y ese día
+  sale la versión del aula en el lado del aula y la de casa en el lado de casa;
+- en el **calendario de las familias** («Calendario Escolar no Fogar»),
+  marcada en la cuadrícula y con la versión de casa en el día.
+
+El día es el **miércoles de la semana 2**:
+
+- el miércoles, porque en la semana del aula es el día de «Caja de Tesoros de
+  la Ría y Matemáticas Tempranas», la dinámica de exploración y matemáticas;
+- la semana 2, porque es la del día 8 al 14 del mes: cae un solo miércoles y
+  la fecha no tiene dudas.
+
+El mes es el del curso cuyo centro de interés casa con la unidad:
+
+| Unidad | Curso | Mes | Centro de interés del mes |
+| --- | --- | --- | --- |
+| Blando y duro | 0-2 años | noviembre | El Magosto tradicional y texturas naturales |
+| La rampa | 2-3 años | marzo | Formas en el espacio y frutas de la primavera |
+| El sonido hace bailar el agua | 3-4 años | abril | El huerto escolar y el ciclo del agua |
+| Sombras grandes y pequeñas | 4-5 años | diciembre | Ciencia del invierno: el hielo y las comparaciones |
+| La cuadrícula | 5-6 años | marzo | Matemáticas en la naturaleza: patrones y simetrías |
+
+Es una decisión del contenido y no del código: se cambia en el JSON, y el
+validador comprueba que el día exista dentro del curso.
+
 ## Currículo
 
 Cada unidad declara su anclaje en el **Decreto 150/2022, do 8 de setembro**,
@@ -132,11 +165,16 @@ otra.
 - que cada orden en inglés se diga, entre comillas «», en las dos versiones y
   en las dos lenguas;
 - que no haya vocabulario clínico ni rutas de audio escritas a mano;
-- que cada unidad traiga aviso de seguridad y lo que conviene observar.
+- que cada unidad traiga aviso de seguridad y lo que conviene observar;
+- que cada unidad tenga su día del curso y que ese día exista: mes de 1 a 10,
+  semana de 1 a 4 y día de 1 a 5.
 
 `test/features/steam/steam_escala_test.dart` comprueba que el hub y las diez
 sesiones caben en un teléfono de 360 dp, en gallego y en castellano, con la
 letra normal y con la letra grande del sistema.
+`test/features/steam/steam_calendario_test.dart` comprueba que la sesión sale
+el día que toca en «Hoxe na aula», en el Modo Aula y en los dos calendarios, y
+que ahí también cabe.
 
 ## Referencias
 

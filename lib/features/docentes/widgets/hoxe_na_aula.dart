@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
+import '../../steam/widgets/steam_no_calendario.dart';
 
 /// El día del curso que toca: el de hoy, o el primero del curso en julio y
 /// agosto, que no son lectivos y en los que se prepara septiembre.
@@ -38,6 +40,13 @@ class TarxetaHoxeNaAula extends StatelessWidget {
   final void Function(DiaDoCursoTpr dia, String cursoId) onIniciarAsemblea;
   final VoidCallback onVerPalabras;
 
+  /// La sesión STEAM que le toca a ESE curso ESE día, si le toca alguna. Sin
+  /// esto la tarjeta no la busca: la sesión solo se veía en el portal.
+  final SteamUnit? Function(String cursoId, DiaDoCursoTpr dia)? steamDoDia;
+
+  /// Abre la sesión STEAM del día, en su versión del aula.
+  final ValueChanged<SteamUnit>? onAbrirSteam;
+
   const TarxetaHoxeNaAula({
     super.key,
     required this.programa,
@@ -48,6 +57,8 @@ class TarxetaHoxeNaAula extends StatelessWidget {
     required this.onVerPalabras,
     this.audioService,
     this.agora,
+    this.steamDoDia,
+    this.onAbrirSteam,
   });
 
   @override
@@ -59,6 +70,7 @@ class TarxetaHoxeNaAula extends StatelessWidget {
     final plan = curso?.planDoDia(d.mesCalendario, d.semana, d.dia);
     if (curso == null || plan == null) return const SizedBox.shrink();
     final mes = nomeDoMes[d.mesCalendario]!.resolve(language);
+    final steam = steamDoDia?.call(cursoId, d);
 
     return Card(
       key: const Key('tarxeta_hoxe_na_aula'),
@@ -134,6 +146,15 @@ class TarxetaHoxeNaAula extends StatelessWidget {
               audioService: audioService,
               detalle: false,
             ),
+            if (steam != null) ...[
+              const SizedBox(height: 12),
+              FilaSteamDoDia(
+                unidade: steam,
+                audiencia: SteamAudiencia.aula,
+                language: language,
+                onTap: onAbrirSteam == null ? null : () => onAbrirSteam!(steam),
+              ),
+            ],
             const SizedBox(height: 12),
             // Wrap y no Row: con el texto grande del sistema los dos botones no
             // caben en una fila y se parten en dos, en vez de encoger la letra.

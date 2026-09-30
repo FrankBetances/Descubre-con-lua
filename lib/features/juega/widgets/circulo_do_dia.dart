@@ -6,12 +6,15 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/models/dinamica_model.dart';
+import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../cuentos/views/cuento_viewer_screen.dart';
 import '../../planificador/views/dinamicas_screen.dart';
+import '../../steam/widgets/steam_no_calendario.dart';
 
 /// Lo que el día del aula tiene ADEMÁS de su asamblea: su cuento, con su
-/// lámina, y la dinámica que le toca a ese día de la semana.
+/// lámina, la dinámica que le toca a ese día de la semana y, el día que le
+/// toca al curso, su sesión STEAM.
 ///
 /// **Por qué existe.** El banco de cuentos, el de láminas y el de dinámicas
 /// llegaron como tres catálogos paralelos, cada uno con su pantalla y su
@@ -155,10 +158,16 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
     final isGl = widget.language == AppLanguage.gl;
     final cuento = _cuento;
     final dinamica = _dinamica;
+    final steam = widget.repository.getSteamUnitsDoDia(
+      cursoId: widget.cursoId,
+      mes: widget.mes,
+      semana: widget.semana,
+      dia: widget.dia,
+    );
 
     // Mientras carga no se reserva sitio: la tarjeta del día no puede dar un
     // salto delante de la docente en mitad de la asamblea.
-    if (!_cargado || (cuento == null && dinamica == null)) {
+    if (!_cargado || (cuento == null && dinamica == null && steam.isEmpty)) {
       return const SizedBox.shrink();
     }
 
@@ -208,6 +217,22 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
                   : '${dinamica.duracionMinutos} min · ${dinamica.ritmoBpm} bpm',
               onTap: _abrirDinamicas,
             ),
+          for (final u in steam) ...[
+            if (cuento != null || dinamica != null || u != steam.first)
+              const SizedBox(height: AppTheme.spaceSm),
+            FilaSteamDoDia(
+              unidade: u,
+              audiencia: SteamAudiencia.aula,
+              language: widget.language,
+              onTap: () => abrirSesionSteam(
+                context,
+                unidade: u,
+                audiencia: SteamAudiencia.aula,
+                language: widget.language,
+                audioService: widget.audioService,
+              ),
+            ),
+          ],
         ],
       ),
     );

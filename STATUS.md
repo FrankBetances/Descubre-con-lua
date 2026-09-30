@@ -9,6 +9,67 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## STEAM el día que toca: en «Hoxe na aula» y en el calendario (30/9/2026)
+
+Rama `claude/steam-integracion`, que sale de `main` y se integra en `main` por
+pull request.
+
+Orden de Frank: «que la sesión STEAM del curso aparezca en «Hoxe na aula» y en
+el calendario. Así la docente la encuentra el día que toca, sin ir a buscarla
+al portal».
+
+Qué cambia:
+
+- **Cada unidad trae su día del curso** (`calendario` en el JSON): el miércoles
+  de la semana 2 del mes cuyo centro de interés casa con la unidad. El porqué
+  y la tabla están en `docs/BASE_PEDAGOGICA_STEAM.md`. Es un supuesto del
+  contenido y se cambia en el JSON; el validador exige el día y comprueba que
+  exista.
+- **Ese día la sesión sale sola:**
+  - en «Hoxe na aula», del Portal Docentes, para el grupo de ese curso; abre la
+    versión del aula;
+  - en «O día de hoxe, enteiro» del Modo Aula, en los dos ciclos, junto al
+    cuento y la dinámica;
+  - en el Calendario Escola · Fogar: el mes avisa de qué día toca («STEAM este
+    mes»), y ese día sale la versión del aula en el lado del aula y la de casa
+    en el lado de casa;
+  - en el calendario del Portal Familias: la casilla del día lleva el símbolo
+    de STEAM, el mes lo avisa y el día trae la versión de casa.
+- La sesión se abre también sin servicio de audio: se lee igual y sin
+  altavoces.
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| `test/features/steam/steam_calendario_test.dart` | 33 tests en verde: el día de cada unidad; la cadena fecha → día del curso → sesión, con fechas reales del curso 2026-2027; el repositorio; el validador; «Hoxe na aula»; el día del Modo Aula; los dos lados del calendario y el calendario de las familias; y el encaje a 360 dp en gl y es, con letra 1,0 y 1,8. El medidor ve un desborde hecho a propósito |
+| `flutter test --exclude-tags capturas` | 818 tests en verde |
+| App en escritorio Linux, 360 px, con la fecha de hoy fijada al 9/12/2026 en la COPIA con `--dart-define` (con `faketime` la app arrancaba en negro) | Portal Docentes → «Hoxe na aula» → 4-5: «A sesión STEAM de hoxe · Sombras grandes e pequenas», en gl y en es; al tocarla se abre la sesión del aula |
+| App: Portal Docentes → Modo Aula → 2.º ciclo → 5.º → diciembre, semana 2, miércoles | «El día de hoy, entero» con la fila STEAM, en es |
+| App: Modo Aula → 1.º ciclo → 0-2 → noviembre, semana 2, miércoles | «Blando y duro» en el día, en es |
+| App: Modo Aula → calendario del curso → diciembre (4-5) | el aviso del mes y la fila del día, en el lado del aula y en el de casa, en gl |
+| App: Portal Familias → «O teu xogo de 3 min de hoxe» → 4-5 → diciembre | el aviso, el símbolo en la casilla del día 8 y la fila de casa en el día, en es; al tocarla se abre la sesión de casa |
+| Manual | 2 capturas nuevas («Hoxe na aula» el día STEAM, gl y es); PDF de 25 páginas y Word regenerados; de la página 18 a la 25 miradas una a una, ninguna figura sale de la hoja |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato Android.**
+- La fecha de hoy de verdad, la del reloj del aparato: en el escritorio se
+  fijó en la copia. La cuenta de la fecha al día del curso la comprueban los
+  tests con `CursoTpr.hoxe`.
+- **El APK de release no se ha compilado en este contenedor**: aquí no hay
+  Android SDK. Lo cubre CI.
+
+### Visto y no tocado
+
+- **El lado de casa del Calendario Escola · Fogar desborda a 360 dp**, también
+  en un día sin STEAM: 77 px con la fuente de test y la letra normal. A 420 px
+  el error señala el `Row` del rótulo de `_Bloque` (`dia_no_fogar.dart`), que no
+  tiene `Flexible`. El test de escala del calendario no lo ve porque pinta la
+  pantalla sin repositorio, y sin repositorio no hay día.
+- En el calendario del Portal Familias, con la app en castellano, el día dice
+  «Día 68 do curso», en gallego.
+
 ## STEAM · ciencia con las manos, en el aula y en casa (30/9/2026)
 
 Rama `claude/steam-integracion`, que sale de la rama `steam` y se integra en

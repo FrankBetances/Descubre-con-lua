@@ -25,7 +25,9 @@ import '../widgets/steam_comun.dart';
 class SteamSesionGuiadaScreen extends StatefulWidget {
   final SteamUnit unit;
   final SteamAudiencia audiencia;
-  final OfflineAudioService audioService;
+
+  /// Sin él la sesión se lee igual: los altavoces no se pintan.
+  final OfflineAudioService? audioService;
   final AppLanguage initialLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
 

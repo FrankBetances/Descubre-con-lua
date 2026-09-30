@@ -1038,6 +1038,34 @@ class ContentRepository {
     return _steamUnitsById.values.where((u) => u.estadio == estadio).toList();
   }
 
+  /// As unidades STEAM que tocan ese día do curso: o mes do curso (1 é
+  /// setembro), a semana (1-4) e o día (1 é luns). Sen [cursoId], as de
+  /// calquera curso, que é o que pide o catálogo de dez meses.
+  List<SteamUnit> getSteamUnitsDoDia({
+    String? cursoId,
+    required int mes,
+    required int semana,
+    required int dia,
+  }) {
+    return [
+      for (final u in _steamUnitsById.values)
+        if ((cursoId == null || u.estadio == cursoId) &&
+            (u.diaNoCalendario?.coincide(mes: mes, semana: semana, dia: dia) ??
+                false))
+          u,
+    ];
+  }
+
+  /// As unidades STEAM que caen nese mes do curso (1 é setembro).
+  List<SteamUnit> getSteamUnitsDoMes({String? cursoId, required int mes}) {
+    return [
+      for (final u in _steamUnitsById.values)
+        if ((cursoId == null || u.estadio == cursoId) &&
+            u.diaNoCalendario?.mes == mes)
+          u,
+    ];
+  }
+
   /// A unidade STEAM co identificador dado ('I1-MATERIA-001' …).
   SteamUnit? getSteamUnitById(String id) => _steamUnitsById[id.trim()];
 
