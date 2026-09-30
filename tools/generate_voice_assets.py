@@ -331,6 +331,70 @@ def make_coqui_synth(voice: dict):
     return synth
 
 
+# ------------------------------------------------------- mixed-language lines
+# Una frase gallega o castellana con inglés entre “…” se graba a trozos: cada
+# trozo con SU voz, y se unen con una respiración corta. Así «Di “roll” e
+# solta o tubo» suena con Celtia, luego LJSpeech, luego Celtia otra vez.
+MIXED_PAUSE_SEC = 0.18
+MIXED_PAD_SEC = 0.05
+
+
+def _read_mono(path: Path) -> tuple[bytes, int]:
+    with wave.open(str(path), "rb") as reader:
+        params = reader.getparams()
+        if params.sampwidth != 2:
+            die(f"{path}: expected 16-bit PCM")
+        frames = reader.readframes(params.nframes)
+    if params.nchannels == 2:
+        frames = audioop.tomono(frames, 2, 0.5, 0.5)
+    return frames, params.framerate
+
+
+def _trim_silence(frames: bytes, rate: int) -> bytes:
+    """Cuts the dead air at both ends, keeping 40 ms so no consonant is lost."""
+    peak = audioop.max(frames, 2)
+    if peak == 0:
+        return frames
+    threshold = peak * (10 ** (-40 / 20))
+    step = max(1, int(rate * 0.005))  # 5 ms windows
+    windows = [audioop.max(frames[i * 2:(i + step) * 2], 2)
+               for i in range(0, len(frames) // 2, step)]
+    loud = [i for i, w in enumerate(windows) if w > threshold]
+    if not loud:
+        return frames
+    keep = int(rate * 0.04)
+    start = max(0, loud[0] * step - keep)
+    end = min(len(frames) // 2, (loud[-1] + 1) * step + keep)
+    return frames[start * 2:end * 2]
+
+
+def synth_mixed(entry: dict, synth_base, synth_en, work: Path, raw_wav: Path) -> None:
+    parts: list[bytes] = []
+    rate = None
+    for index, (lang, text) in enumerate(entry["segments"]):
+        piece = work / f"piece{index}.wav"
+        if lang == "en":
+            synth_en(text, "tutor", piece)
+        else:
+            atempo = synth_base(text, entry["style"], piece)
+            if atempo:
+                die(f"{entry['id']}: a mixed line cannot be slowed down afterwards")
+        frames, piece_rate = _read_mono(piece)
+        if rate is None:
+            rate = piece_rate
+        elif piece_rate != rate:
+            frames, _ = audioop.ratecv(frames, 2, 1, piece_rate, rate, None)
+        parts.append(_trim_silence(frames, rate))
+    assert rate is not None
+    pause = b"\x00\x00" * int(rate * MIXED_PAUSE_SEC)
+    pad = b"\x00\x00" * int(rate * MIXED_PAD_SEC)
+    with wave.open(str(raw_wav), "wb") as writer:
+        writer.setnchannels(1)
+        writer.setsampwidth(2)
+        writer.setframerate(rate)
+        writer.writeframes(pad + pause.join(parts) + pad)
+
+
 # ---------------------------------------------------------------------- main
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -372,6 +436,11 @@ def main() -> int:
     voice = VOICES[args.lang]
     synth = make_piper_synth(voice) if voice["engine"] == "piper" else make_coqui_synth(voice)
 
+    # La voz inglesa solo se carga si alguna frase de esta tanda la necesita.
+    synth_en = None
+    if args.lang != "en" and any(e.get("segments") for e in pending):
+        synth_en = make_piper_synth(VOICES["en"])
+
     work = ROOT / "build" / "voice-tmp"
     work.mkdir(parents=True, exist_ok=True)
 
@@ -389,7 +458,11 @@ def main() -> int:
 
         # `speech` is the text without the teacher's pulse markers and syllable
         # splits; `text` is what the screen shows and what the id hashes.
-        atempo = synth(entry.get("speech") or entry["text"], entry["style"], raw)
+        if entry.get("segments"):
+            synth_mixed(entry, synth, synth_en, work, raw)
+            atempo = None
+        else:
+            atempo = synth(entry.get("speech") or entry["text"], entry["style"], raw)
         seconds = normalize_peak(raw, mastered)
         encode_m4a(mastered, target, atempo)
         files.append({

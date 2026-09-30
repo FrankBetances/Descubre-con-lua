@@ -65,9 +65,9 @@
       "duracionSegundos": 270,
       "lamina": "cascabel",
       "consignaDocente": {
-        "gl": "Manipulación de pulseiras de cascabeis: axitación enérxica dos brazos en alto («loud») e detención brusca pegando as mans ao abdome ante o comando murmurado («quiet»).",
-        "es": "Manipulación de pulseras de cascabeles: agitación enérgica de los brazos en alto («loud») y detención brusca pegando las manos al abdomen ante el comando susurrado («quiet»).",
-        "en": "Bell bracelets: vigorous arm shaking overhead («loud») and a sharp stop with hands to the belly on the whispered command («quiet»)."
+        "gl": "Manipulación de pulseiras de cascabeis: axitación enérxica dos brazos en alto (“loud”) e detención brusca pegando as mans ao abdome ante o comando murmurado (“quiet”).",
+        "es": "Manipulación de pulseras de cascabeles: agitación enérgica de los brazos en alto (“loud”) y detención brusca pegando las manos al abdomen ante el comando susurrado (“quiet”).",
+        "en": "Bell bracelets: vigorous arm shaking overhead (“loud”) and a sharp stop with hands to the belly on the whispered command (“quiet”)."
       },
       "comandosL3": [
         {

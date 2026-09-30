@@ -11,8 +11,8 @@
     "es": "Unidad de esquema corporal, parada y arranque"
   },
   "descripcion": {
-    "gl": "Unidade de recoñecemento das partes do corpo e de control do movemento: mover moito, parar en seco e volver a empezar. A orde 'Freeze!' dá a parada, que é o máis difícil e o máis divertido.",
-    "es": "Unidad de reconocimiento de las partes del cuerpo y de control del movimiento: mover mucho, parar en seco y volver a empezar. La orden 'Freeze!' da la parada, que es lo más difícil y lo más divertido."
+    "gl": "Unidade de recoñecemento das partes do corpo e de control do movemento: mover moito, parar en seco e volver a empezar. A orde “Freeze!” dá a parada, que é o máis difícil e o máis divertido.",
+    "es": "Unidad de reconocimiento de las partes del cuerpo y de control del movimiento: mover mucho, parar en seco y volver a empezar. La orden “Freeze!” da la parada, que es lo más difícil y lo más divertido."
   },
   "cancionPulso": {
     "titulo": {
@@ -301,17 +301,17 @@
   },
   "puenteCasa": {
     "mensajeFamilias": {
-      "gl": "Hoxe movemos todo o corpo coa gata Lúa e aprendemos a parar en seco cando escoitamos 'Freeze!'. Tamén nomeamos a cabeza, a barriga e os pés.",
-      "es": "Hoy movimos todo el cuerpo con la gata Lúa y aprendimos a parar en seco cuando oímos 'Freeze!'. También nombramos la cabeza, la barriga y los pies."
+      "gl": "Hoxe movemos todo o corpo coa gata Lúa e aprendemos a parar en seco cando escoitamos “Freeze!”. Tamén nomeamos a cabeza, a barriga e os pés.",
+      "es": "Hoy movimos todo el cuerpo con la gata Lúa y aprendimos a parar en seco cuando oímos “Freeze!”. También nombramos la cabeza, la barriga y los pies."
     },
     "actividadesSugeridas": [
       {
-        "gl": "No cambio de cueiro ou na hora do baño, nomear a barriga e os dedos dos pés dicindo 'Soft tummy, tickle toes!'.",
-        "es": "En el cambio de pañal o en la hora del baño, nombrar la barriga y los dedos de los pies diciendo 'Soft tummy, tickle toes!'."
+        "gl": "No cambio de cueiro ou na hora do baño, nomear a barriga e os dedos dos pés dicindo “Soft tummy, tickle toes!”.",
+        "es": "En el cambio de pañal o en la hora del baño, nombrar la barriga y los dedos de los pies diciendo “Soft tummy, tickle toes!”."
       },
       {
-        "gl": "Xogar a parar de camiño ao parque: andar, dicir 'Freeze!' e quedar quietos tres segundos.",
-        "es": "Jugar a parar de camino al parque: andar, decir 'Freeze!' y quedarse quietos tres segundos."
+        "gl": "Xogar a parar de camiño ao parque: andar, dicir “Freeze!” e quedar quietos tres segundos.",
+        "es": "Jugar a parar de camino al parque: andar, decir “Freeze!” y quedarse quietos tres segundos."
       }
     ],
     "recomendacionConversacion": {

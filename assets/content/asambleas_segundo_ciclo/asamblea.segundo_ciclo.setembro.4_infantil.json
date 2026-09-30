@@ -45,9 +45,9 @@
       "duracionSegundos": 120,
       "lamina": "man",
       "consignaDocente": {
-        "gl": "Marcar o compás suave con palmas nas pernas a 72 BPM: 'Clap, tap, clap, tap'.",
-        "es": "Marcar el compás suave con palmas en las piernas a 72 BPM: 'Clap, tap, clap, tap'.",
-        "en": "Keep a gentle beat tapping knees at 72 BPM: 'Clap, tap, clap, tap'."
+        "gl": "Marcar o compás suave con palmas nas pernas a 72 BPM: “Clap, tap, clap, tap”.",
+        "es": "Marcar el compás suave con palmas en las piernas a 72 BPM: “Clap, tap, clap, tap”.",
+        "en": "Keep a gentle beat tapping knees at 72 BPM: “Clap, tap, clap, tap”."
       },
       "cueAcustica": "Pulse 72 BPM",
       "audioAsset": "assets/audio/mar_pulso_72bpm.wav",
@@ -65,9 +65,9 @@
       "duracionSegundos": 270,
       "lamina": "pes",
       "consignaDocente": {
-        "gl": "Comandos coordenados de dúas fases unidos pola conxunción 'and'.",
-        "es": "Comandos coordinados de dos fases unidos por la conjunción 'and'.",
-        "en": "Two-phase coordinated commands linked by 'and'."
+        "gl": "Comandos coordenados de dúas fases unidos pola conxunción “and”.",
+        "es": "Comandos coordinados de dos fases unidos por la conjunción “and”.",
+        "en": "Two-phase coordinated commands linked by “and”."
       },
       "comandosL3": [
         {
@@ -228,9 +228,9 @@
           "en": "Coat floor!"
         },
         "modeladoIndirecto": {
-          "gl": "Ai, o abrigo quere descansar na súa percha! Imos axudarlle xuntos: «Up on the hook, zip!». Mira que ben colgado quedou!",
-          "es": "¡Ay, el abrigo quiere descansar en su percha! Vamos a ayudarle juntos: «Up on the hook, zip!». ¡Mira qué bien colgado quedó!",
-          "en": "Oh, the coat wants to rest on its hook! Let's help it together: «Up on the hook, zip!». Look how nicely it hangs!"
+          "gl": "Ai, o abrigo quere descansar na súa percha! Imos axudarlle xuntos: “Up on the hook, zip!”. Mira que ben colgado quedou!",
+          "es": "¡Ay, el abrigo quiere descansar en su percha! Vamos a ayudarle juntos: “Up on the hook, zip!”. ¡Mira qué bien colgado quedó!",
+          "en": "Oh, the coat wants to rest on its hook! Let's help it together: “Up on the hook, zip!”. Look how nicely it hangs!"
         },
         "consejoEvitar": {
           "gl": "Evitar a corrección frontal negativa: non dicir «Mal, non tires o abrigo» nin esixir que repita a frase. Agardar 5 segundos de escoita activa.",

@@ -65,9 +65,9 @@
       "duracionSegundos": 270,
       "lamina": "semente",
       "consignaDocente": {
-        "gl": "Partindo de flexión completa no chan («tiny seed»), os nenos incorpóranse milimetricamente conforme a docente eleva as mans, culminando en extensión axial total («Grow!»).",
-        "es": "Partiendo de flexión completa en el suelo («tiny seed»), los niños se incorporan milimétricamente conforme la docente eleva las manos, culminando en extensión axial total («Grow!»).",
-        "en": "Starting from a full crouch on the floor («tiny seed»), children rise millimetre by millimetre as the teacher raises her hands, ending in full axial extension («Grow!»)."
+        "gl": "Partindo de flexión completa no chan (“tiny seed”), os nenos incorpóranse milimetricamente conforme a docente eleva as mans, culminando en extensión axial total (“Grow!”).",
+        "es": "Partiendo de flexión completa en el suelo (“tiny seed”), los niños se incorporan milimétricamente conforme la docente eleva las manos, culminando en extensión axial total (“Grow!”).",
+        "en": "Starting from a full crouch on the floor (“tiny seed”), children rise millimetre by millimetre as the teacher raises her hands, ending in full axial extension (“Grow!”)."
       },
       "comandosL3": [
         {
