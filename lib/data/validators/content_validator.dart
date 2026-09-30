@@ -740,52 +740,127 @@ class ContentValidator {
     }
   }
 
-  /// Validates a single [SteamUnit] JSON document.
-  ValidationResult validateSteamUnitJson(
-    Map<String, dynamic> json, {
-    String sourcePath = '',
-  }) {
-    final List<String> errors = [];
-    final List<String> warnings = [];
-    _validateSteamUnitFields(json, errors, warnings, sourcePath: sourcePath);
-    return errors.isEmpty
-        ? ValidationResult.success(warnings: warnings)
-        : ValidationResult.failure(errors, warnings: warnings);
-  }
+  // ───────────────────────────────────────────────────────────── STEAM ────
 
-  /// Validates an entire STEAM bank (List of SteamUnit maps).
+  /// Materiales que no pueden aparecer en ninguna unidad STEAM, a ninguna edad.
+  ///
+  /// Nace de la primera versión del módulo, que ponía un globo de látex tensado
+  /// y veinte granos de arroz crudo delante de criaturas de 3 a 4 años. Los
+  /// globos son la primera causa de muerte por atragantamiento no alimentario
+  /// en la infancia, y las legumbres y semillas están entre los cuerpos extraños
+  /// que más se sacan de la nariz y el oído entre el año y los cinco. Solo mira
+  /// la lista de materiales: un aviso que diga «nada de globos» es correcto.
+  static final RegExp steamMaterialProhibido = RegExp(
+    r'\b(globos?|l[áa]tex|arroz|grans|granos|gr[aá]os|legumes|legumbres|'
+    r'lentellas?|lentejas?|garavanzos?|garbanzos?|feix[óo]ns?|jud[ií]as?|'
+    r'alubias?|canicas?|im[áa]ns?|imanes|pilas? de bot[óo]n|moedas?|monedas?|'
+    r'sementes?|semillas?|pomp[óo]ns?|pompones|bot[óo]ns|botones)\b',
+    caseSensitive: false,
+  );
+
+  /// Vocabulario clínico o de evaluación del desarrollo que el filtro general
+  /// no caza. La primera versión describía a una criatura de 3 años que
+  /// «fonoarticula» o que «precisa modelado fonador»: eso es lenguaje de
+  /// consulta, y esta app no tiene finalidad sanitaria.
+  static final RegExp steamVocabularioClinico = RegExp(
+    r'(fonoarticul|fonador|cl[ií]nic|neuroevolutiv|neurodesarroll|'
+    r'neurodesenvolv|est[ií]mul)',
+    caseSensitive: false,
+  );
+
+  /// Las ocho competencias clave de la LOMLOE que recoge el Decreto 150/2022.
+  static const Set<String> competenciasClaveLomloe = {
+    'CCL',
+    'CP',
+    'STEM',
+    'CD',
+    'CPSAA',
+    'CC',
+    'CE',
+    'CCEC',
+  };
+
+  /// Cada nivel con su curso y, desde los 3 años, con su nivel de segundo ciclo.
+  static const Map<String, (String, String)> _steamNiveles = {
+    'I1': ('curso_0_2', ''),
+    'I2': ('curso_2_3', ''),
+    'I3': ('curso_3_4', '4_infantil'),
+    'I4': ('curso_4_5', '5_infantil'),
+    'I5': ('curso_5_6', '6_infantil'),
+  };
+
+  /// Valida el fichero entero de unidades STEAM.
   ValidationResult validateSteamBankJson(
     dynamic json, {
     String sourcePath = '',
   }) {
-    final List<String> errors = [];
-    final List<String> warnings = [];
+    final errors = <String>[];
+    final warnings = <String>[];
 
     if (json is! List) {
       return ValidationResult.failure(
-        ['Expected JSON array at root for STEAM curriculum bank'],
-      );
+          ['Expected JSON array at root for STEAM units']);
     }
-
     if (json.isEmpty) {
-      return ValidationResult.failure(
-        ['STEAM curriculum bank cannot be empty'],
-      );
+      return ValidationResult.failure(['STEAM units file cannot be empty']);
     }
 
+    final ids = <String>{};
     for (var i = 0; i < json.length; i++) {
-      final unitMap = _asMap(json[i]);
-      if (unitMap == null) {
-        errors.add('steam_unit[$i] must be a JSON object');
+      final unit = _asMap(json[i]);
+      if (unit == null) {
+        errors.add('steam[$i] must be a JSON object');
         continue;
       }
-      _validateSteamUnitFields(unitMap, errors, warnings,
+      final id = unit['id']?.toString().trim() ?? '';
+      if (id.isNotEmpty && !ids.add(id)) {
+        errors.add('steam[$i]: duplicated id "$id"');
+      }
+      _validateSteamUnitFields(unit, errors, warnings,
           sourcePath: '$sourcePath[$i]');
     }
 
     return errors.isEmpty
         ? ValidationResult.success(warnings: warnings)
         : ValidationResult.failure(errors, warnings: warnings);
+  }
+
+  /// Valida una sola unidad STEAM.
+  ValidationResult validateSteamUnitJson(
+    Map<String, dynamic> json, {
+    String sourcePath = '',
+  }) {
+    final errors = <String>[];
+    final warnings = <String>[];
+    _validateSteamUnitFields(json, errors, warnings, sourcePath: sourcePath);
+    return errors.isEmpty
+        ? ValidationResult.success(warnings: warnings)
+        : ValidationResult.failure(errors, warnings: warnings);
+  }
+
+  bool _esTextoBilingue(dynamic node) {
+    final m = _asMap(node);
+    if (m == null) return false;
+    final gl = m['gl'];
+    final es = m['es'];
+    return gl is String &&
+        gl.trim().isNotEmpty &&
+        es is String &&
+        es.trim().isNotEmpty;
+  }
+
+  void _steamTodasLasCadenas(dynamic node, void Function(String) f) {
+    if (node is String) {
+      f(node);
+    } else if (node is Map) {
+      for (final v in node.values) {
+        _steamTodasLasCadenas(v, f);
+      }
+    } else if (node is List) {
+      for (final v in node) {
+        _steamTodasLasCadenas(v, f);
+      }
+    }
   }
 
   void _validateSteamUnitFields(
@@ -796,137 +871,247 @@ class ContentValidator {
   }) {
     final prefix = sourcePath.isNotEmpty ? '[$sourcePath] ' : '';
 
-    // 1. Mandatory top-level fields
-    for (final field in [
+    for (final field in const [
       'id',
       'estadio',
       'nivelMadurativo',
       'rangoEdad',
-      'fenomeno',
       'titulo',
+      'fenomeno',
       'tiempoEstimadoMin',
-      'materiales',
-      'dinamicaCooperativa',
-      'cicloDidactico',
-      'tprIngles',
-      'evaluacionObservacional'
+      'curriculo',
+      'seguridad',
+      'ordenesIngles',
+      'queObservar',
+      'aula',
+      'hogar',
     ]) {
       if (!json.containsKey(field) || json[field] == null) {
-        errors.add('${prefix}Missing required STEAM unit field: "$field"');
+        errors.add('${prefix}Missing required STEAM field: "$field"');
       }
     }
 
-    // 2. Bilingual parity & zero clinical terms
-    checkBilingualParity(json,
-        path: 'steam_unit', errors: errors, prefix: prefix);
-    checkClinicalTerms(json,
-        path: 'steam_unit', errors: errors, prefix: prefix);
+    checkBilingualParity(json, path: 'steam', errors: errors, prefix: prefix);
+    checkClinicalTerms(json, path: 'steam', errors: errors, prefix: prefix);
+    _steamTodasLasCadenas(json, (texto) {
+      final m = steamVocabularioClinico.firstMatch(texto);
+      if (m != null) {
+        errors.add(
+            '${prefix}clinical or assessment vocabulary "${m.group(0)}" in: "$texto"');
+      }
+      if (texto.contains('assets/')) {
+        errors.add(
+            '${prefix}STEAM content must not hard-code asset paths (voice is derived from the text): "$texto"');
+      }
+    });
 
-    // 3. Choking hazard prevention (< 3 years: I1, I2)
-    final estadio = json['estadio']?.toString().trim() ?? '';
+    // Nivel, curso y ciclo tienen que contar la misma edad.
     final nivel = json['nivelMadurativo']?.toString().trim() ?? '';
-    final isUnder3 = estadio == 'curso_0_2' ||
-        estadio == 'curso_2_3' ||
-        nivel == 'I1' ||
-        nivel == 'I2';
+    final estadio = json['estadio']?.toString().trim() ?? '';
+    final esperado = _steamNiveles[nivel];
+    if (esperado == null) {
+      errors.add('${prefix}nivelMadurativo must be one of '
+          '${_steamNiveles.keys.toList()} (got: "$nivel")');
+    } else if (estadio != esperado.$1) {
+      errors.add('${prefix}estadio "$estadio" does not match nivel $nivel '
+          '(expected "${esperado.$1}")');
+    }
 
-    final materiales = json['materiales'];
-    if (materiales is! List || materiales.isEmpty) {
-      errors.add('${prefix}STEAM unit must contain at least one material');
+    final minutos = json['tiempoEstimadoMin'];
+    if (minutos is! int || minutos < 5 || minutos > 30) {
+      errors.add('${prefix}tiempoEstimadoMin must be an integer between 5 and '
+          '30 (got: $minutos)');
+    }
+
+    // Currículo: el mismo anclaje que el resto del contenido.
+    final curriculo = _asMap(json['curriculo']);
+    if (curriculo == null) {
+      errors.add('${prefix}curriculo must be a JSON object');
     } else {
-      for (var mIdx = 0; mIdx < materiales.length; mIdx++) {
-        final mat = _asMap(materiales[mIdx]);
-        if (mat == null) {
-          errors.add('${prefix}materiales[$mIdx] must be a JSON object');
+      checkCurricularAlignment(curriculo, errors: errors, prefix: prefix);
+      final ciclo = curriculo['ciclo']?.toString().trim() ?? '';
+      if (esperado != null) {
+        final cicloEsperado = esperado.$2.isEmpty
+            ? CurricularReference.ciclo03
+            : CurricularReferenceSegundoCiclo.cicloSegundo;
+        if (ciclo != cicloEsperado) {
+          errors.add('${prefix}curriculo.ciclo "$ciclo" does not match nivel '
+              '$nivel (expected "$cicloEsperado")');
+        }
+        final nivelCurricular = curriculo['nivel']?.toString().trim() ?? '';
+        if (nivelCurricular != esperado.$2) {
+          errors.add('${prefix}curriculo.nivel "$nivelCurricular" does not '
+              'match nivel $nivel (expected "${esperado.$2}")');
+        }
+      }
+      final competencias = curriculo['competenciasClave'];
+      if (competencias is List) {
+        for (final c in competencias) {
+          if (!competenciasClaveLomloe.contains(c.toString().trim())) {
+            errors.add('${prefix}curriculo.competenciasClave contains '
+                'unrecognized key competence "$c"');
+          }
+        }
+      }
+    }
+
+    // Seguridad: toda unidad trae su aviso, y la pantalla lo pinta arriba.
+    final seguridad = _asMap(json['seguridad']);
+    if (seguridad == null || !_esTextoBilingue(seguridad['aviso'])) {
+      errors.add('${prefix}seguridad.aviso must be a non-empty gl/es text');
+    }
+
+    // Lo que se observa, no lo que se evalúa.
+    final observar = json['queObservar'];
+    if (observar is! List || observar.length < 2 || observar.length > 4) {
+      errors.add('${prefix}queObservar must list between 2 and 4 observations');
+    } else {
+      for (var i = 0; i < observar.length; i++) {
+        if (!_esTextoBilingue(observar[i])) {
+          errors.add('${prefix}queObservar[$i] must be a non-empty gl/es text');
+        }
+      }
+    }
+
+    // Las dos versiones de la sesión.
+    final prosaPorVariante = <String, String>{};
+    for (final audiencia in const ['aula', 'hogar']) {
+      final variante = _asMap(json[audiencia]);
+      if (variante == null) {
+        errors.add('$prefix$audiencia must be a JSON object');
+        continue;
+      }
+      final p = '$prefix$audiencia.';
+      if (!_esTextoBilingue(variante['agrupamiento'])) {
+        errors.add('${p}agrupamiento must be a non-empty gl/es text');
+      }
+
+      final materiales = variante['materiales'];
+      if (materiales is! List || materiales.isEmpty) {
+        errors.add('${p}materiales must contain at least one material');
+      } else {
+        for (var m = 0; m < materiales.length; m++) {
+          final mat = _asMap(materiales[m]);
+          if (mat == null || !_esTextoBilingue(mat['item'])) {
+            errors.add('${p}materiales[$m] must have a gl/es "item"');
+            continue;
+          }
+          if (mat['seguridadMayor4cm'] != true) {
+            errors.add('${p}materiales[$m] must be larger than 4 cm '
+                '("seguridadMayor4cm": true) at every age');
+          }
+          final item = _asMap(mat['item'])!;
+          for (final lang in const ['gl', 'es']) {
+            final hit = steamMaterialProhibido.firstMatch('${item[lang]}');
+            if (hit != null) {
+              errors.add('${p}materiales[$m].$lang uses a forbidden material '
+                  '"${hit.group(0)}": ${item[lang]}');
+            }
+          }
+        }
+      }
+
+      // Papeles: nunca antes de los 3 años (el juego es en paralelo); siempre
+      // en el aula a partir de los 4, que es cuando el juego cooperativo tiene
+      // sentido.
+      final roles = variante['roles'];
+      final numRoles = roles is List ? roles.length : 0;
+      if (roles != null && roles is! List) {
+        errors.add('${p}roles must be a list');
+      }
+      if ((nivel == 'I1' || nivel == 'I2') && numRoles > 0) {
+        errors.add('${p}roles must be empty before 3 years: at $nivel play is '
+            'parallel, not cooperative');
+      }
+      if (audiencia == 'aula' &&
+          (nivel == 'I4' || nivel == 'I5') &&
+          numRoles < 2) {
+        errors.add('${p}roles: $nivel classroom sessions need at least two '
+            'complementary roles');
+      }
+      if (roles is List) {
+        for (var r = 0; r < roles.length; r++) {
+          final rol = _asMap(roles[r]);
+          if (rol == null ||
+              (rol['clave']?.toString().trim() ?? '').isEmpty ||
+              !_esTextoBilingue(rol['nombre']) ||
+              !_esTextoBilingue(rol['mision'])) {
+            errors.add('${p}roles[$r] must have clave, nombre and mision');
+          }
+        }
+      }
+
+      final ciclo = _asMap(variante['ciclo']);
+      if (ciclo == null) {
+        errors.add('${p}ciclo must be a JSON object');
+        continue;
+      }
+      const pasos = {
+        'observa': ['planteamiento', 'preguntaIndagacion'],
+        'experimenta': ['consignaAdulto', 'pistaN1', 'pistaN2'],
+        'construye': ['retoTangible', 'sintesisCierre'],
+      };
+      final prosa = StringBuffer();
+      pasos.forEach((paso, campos) {
+        final bloque = _asMap(ciclo[paso]);
+        if (bloque == null) {
+          errors.add('${p}ciclo is missing the "$paso" step');
+          return;
+        }
+        for (final campo in campos) {
+          if (!_esTextoBilingue(bloque[campo])) {
+            errors.add('${p}ciclo.$paso.$campo must be a non-empty gl/es text');
+          } else {
+            final t = _asMap(bloque[campo])!;
+            prosa
+              ..write(' ${t['gl']}')
+              ..write(' ${t['es']}');
+          }
+        }
+      });
+      final observa = _asMap(ciclo['observa']);
+      final pausa = observa?['pausaSilencioSegundos'];
+      if (pausa is! int || pausa < 3 || pausa > 10) {
+        errors.add('${p}ciclo.observa.pausaSilencioSegundos must be an integer '
+            'between 3 and 10 (got: $pausa)');
+      }
+      prosaPorVariante[audiencia] = prosa.toString().toLowerCase();
+    }
+
+    // Las órdenes en inglés: cada una tiene su gesto y cada una la dice la
+    // persona adulta en las dos versiones. Si una orden sale en la pastilla y
+    // no en el texto, o al revés, la sesión enseña una cosa y pide otra.
+    final ordenes = json['ordenesIngles'];
+    if (ordenes is! List || ordenes.isEmpty) {
+      errors.add('${prefix}ordenesIngles must contain at least one command');
+    } else {
+      for (var o = 0; o < ordenes.length; o++) {
+        final orden = _asMap(ordenes[o]);
+        final en = orden?['en']?.toString().trim() ?? '';
+        if (orden == null || en.isEmpty) {
+          errors.add('${prefix}ordenesIngles[$o] must have an "en" text');
           continue;
         }
-        if (mat['item'] == null) {
-          errors.add('${prefix}materiales[$mIdx] missing "item"');
+        if (!RegExp(r"^[A-Za-z][A-Za-z ']*$").hasMatch(en)) {
+          errors.add('${prefix}ordenesIngles[$o].en must be plain English '
+              'words (got: "$en")');
         }
-        final seguridad = mat['seguridadMayor4cm'] as bool? ?? false;
-        if (isUnder3 && !seguridad) {
-          errors.add(
-            '${prefix}Choking hazard violation: Material at index $mIdx in under-3 unit ($nivel) must have "seguridadMayor4cm: true"',
-          );
+        if (!_esTextoBilingue(orden['accion'])) {
+          errors.add('${prefix}ordenesIngles[$o].accion must be a non-empty '
+              'gl/es text');
         }
-      }
-    }
-
-    // 4. Complementary physical roles
-    final dinamica = _asMap(json['dinamicaCooperativa']);
-    if (dinamica == null) {
-      errors.add('${prefix}dinamicaCooperativa must be a JSON object');
-    } else {
-      final roles = dinamica['roles'];
-      if (roles is! List || roles.length < 2) {
-        errors.add(
-            '${prefix}dinamicaCooperativa must contain at least 2 complementary physical roles');
-      } else {
-        for (var rIdx = 0; rIdx < roles.length; rIdx++) {
-          final r = _asMap(roles[rIdx]);
-          if (r == null ||
-              r['clave'] == null ||
-              r['nombre'] == null ||
-              r['mision'] == null) {
-            errors.add(
-                '${prefix}dinamicaCooperativa.roles[$rIdx] must have clave, nombre, and mision');
+        final ipa = orden['ipa']?.toString().trim() ?? '';
+        if (ipa.isNotEmpty && !(ipa.startsWith('/') && ipa.endsWith('/'))) {
+          errors.add('${prefix}ordenesIngles[$o].ipa must be written between '
+              'slashes (got: "$ipa")');
+        }
+        final cita = '«${en.toLowerCase()}»';
+        prosaPorVariante.forEach((audiencia, prosa) {
+          if (!prosa.contains(cita)) {
+            errors.add('${prefix}ordenesIngles[$o] "$en" is never said in the '
+                '$audiencia session (expected $cita in its steps)');
           }
-        }
-      }
-    }
-
-    // 5. Oppia 3-step cycle
-    final ciclo = _asMap(json['cicloDidactico']);
-    if (ciclo == null) {
-      errors.add('${prefix}cicloDidactico must be a JSON object');
-    } else {
-      if (ciclo['observa'] == null) {
-        errors.add('${prefix}cicloDidactico missing "observa" step');
-      }
-      if (ciclo['experimenta'] == null) {
-        errors.add('${prefix}cicloDidactico missing "experimenta" step');
-      }
-      if (ciclo['construye'] == null) {
-        errors.add('${prefix}cicloDidactico missing "construye" step');
-      }
-    }
-
-    // 6. TPR English command and offline audio asset
-    final tpr = _asMap(json['tprIngles']);
-    if (tpr == null) {
-      errors.add('${prefix}tprIngles must be a JSON object');
-    } else {
-      final cmd = tpr['comando']?.toString().trim();
-      final audio = tpr['audioAsset']?.toString().trim();
-      if (cmd == null || cmd.isEmpty) {
-        errors.add('${prefix}tprIngles missing "comando"');
-      }
-      if (audio == null || audio.isEmpty) {
-        errors.add('${prefix}tprIngles missing "audioAsset"');
-      } else {
-        _checkAudioPath(audio,
-            path: 'tprIngles.audioAsset', errors: errors, prefix: prefix);
-      }
-    }
-
-    // 7. Obserfy 1-tap observational assessment
-    final eval = _asMap(json['evaluacionObservacional']);
-    if (eval == null) {
-      errors.add('${prefix}evaluacionObservacional must be a JSON object');
-    } else {
-      if (eval['criterioLogro'] == null) {
-        errors.add('${prefix}evaluacionObservacional missing "criterioLogro"');
-      }
-      final pauta = _asMap(eval['pauta1Tap']);
-      if (pauta == null) {
-        errors.add('${prefix}evaluacionObservacional missing "pauta1Tap"');
-      } else {
-        for (final state in ['logrado', 'asistido', 'explorando']) {
-          if (pauta[state] == null) {
-            errors.add(
-                '${prefix}evaluacionObservacional.pauta1Tap missing "$state"');
-          }
-        }
+        });
       }
     }
   }

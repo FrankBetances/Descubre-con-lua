@@ -286,7 +286,10 @@ void main() {
       await _ataVer(tester, find.text('2-3 anos (Maternal)'));
       expect(find.text('2-3 anos (Maternal)'), findsOneWidget);
 
-      // Filtrar por categoría 'Xogos Físicos (TPR)'
+      // Filtrar por categoría 'Xogos Físicos (TPR)'. Búscase antes de
+      // tocalo: ao baixar ata as idades, a lista pode desmontar a fila de
+      // áreas, que queda por riba.
+      await _ataVer(tester, find.text('Xogos Físicos (TPR)'));
       await tester.tap(find.text('Xogos Físicos (TPR)'));
       await tester.pumpAndSettle();
 
@@ -295,6 +298,7 @@ void main() {
       expect(find.text('Biblioteca de Contos Dialóxicos'), findsNothing);
 
       // Volver a Todas as Áreas
+      await _ataVer(tester, find.text('Todas as Áreas'));
       await tester.tap(find.text('Todas as Áreas'));
       await tester.pumpAndSettle();
 
@@ -333,6 +337,8 @@ void main() {
       expect(find.text('Estratexias Pedagóxicas de Aula'), findsOneWidget);
       await _ataVer(tester, find.text('Dinámicas de Aula Activa'));
       expect(find.text('Dinámicas de Aula Activa'), findsOneWidget);
+      await _ataVer(tester, find.text('STEAM · Ciencia coas mans'));
+      expect(find.text('STEAM · Ciencia coas mans'), findsOneWidget);
       await _ataVer(tester, find.text('Corpus 8.000 Palabras (BNC/COCA)'));
       expect(find.text('Corpus 8.000 Palabras (BNC/COCA)'), findsOneWidget);
     });

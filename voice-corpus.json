@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-09-24T06:11:46Z",
- "entries": 14962,
+ "generatedAt": "2026-09-30T07:43:56Z",
+ "entries": 15159,
  "byStyle": {
-  "slow": 6007,
-  "tutor": 8955
+  "slow": 6008,
+  "tutor": 9151
  },
  "byLang": {
-  "en": 12809,
-  "es": 1076,
-  "gl": 1077
+  "en": 12810,
+  "es": 1174,
+  "gl": 1175
  },
  "corpus": [
   {
@@ -13082,6 +13082,14 @@
    "text": "Mast",
    "speech": "Mast",
    "source": "tpr.2_3.xuno/s1/2_3.xuno.s1.mast"
+  },
+  {
+   "id": "en_slow_4771f92f_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Step",
+   "speech": "Step",
+   "source": "steam/I5-LOGICA-001/orden"
   },
   {
    "id": "en_slow_477cee6d_8",
@@ -102964,6 +102972,14 @@
    "source": "progresion.primeiro_ciclo.0_2/s4/d4/consigna"
   },
   {
+   "id": "es_tutor_00631f8a_53",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sigue con la mirada el objeto cuando cae en la cesta.",
+   "speech": "Sigue con la mirada el objeto cuando cae en la cesta.",
+   "source": "steam/I1-MATERIA-001/observar/1"
+  },
+  {
    "id": "es_tutor_007f67f9_58",
    "lang": "es",
    "style": "tutor",
@@ -103018,6 +103034,14 @@
    "text": "No: un sonido o un gesto SON su turno, y tratarlos como respuesta válida es lo que mantiene la conversación viva. Insistir lo convierte en un examen y el niño deja de iniciar.",
    "speech": "No: un sonido o un gesto SON su turno, y tratarlos como respuesta válida es lo que mantiene la conversación viva. Insistir lo convierte en un examen y el niño deja de iniciar.",
    "source": "academy.turnos_atencion_conjunta.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_0192c737_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cómo podemos hacer bailar el agua sin tocarla?",
+   "speech": "¿Cómo podemos hacer bailar el agua sin tocarla?",
+   "source": "steam/I3-ACUSTICA-001/aula/observa/preguntaIndagacion"
   },
   {
    "id": "es_tutor_01d47455_14",
@@ -103250,6 +103274,14 @@
    "text": "Un día de orballo, en la ventana, seguir una gota con el dedo diciendo 'Rain, rain, tap, tap, little drops!'.",
    "speech": "Un día de orballo, en la ventana, seguir una gota con el dedo diciendo 'Rain, rain, tap, tap, little drops!'.",
    "source": "juega.primavera.01/puenteCasa/act/0"
+  },
+  {
+   "id": "es_tutor_074cc881_111",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon la mano en la caja mientras tocamos. ¿Qué notas? ¿Y si cantamos «mmm», cada una con la mano en su garganta?",
+   "speech": "Pon la mano en la caja mientras tocamos. ¿Qué notas? ¿Y si cantamos «mmm», cada una con la mano en su garganta?",
+   "source": "steam/I3-ACUSTICA-001/aula/experimenta/pistaN1"
   },
   {
    "id": "es_tutor_07c9e452_189",
@@ -103620,6 +103652,14 @@
    "source": "progresion.segundo_ciclo.5/s3/d1/foco"
   },
   {
+   "id": "es_tutor_159b5a5a_106",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cambiad los papeles y haced un programa nuevo: la flor cambia de sitio y el robot tiene que ir a buscarla.",
+   "speech": "Cambiad los papeles y haced un programa nuevo: la flor cambia de sitio y el robot tiene que ir a buscarla.",
+   "source": "steam/I5-LOGICA-001/aula/construye/retoTangible"
+  },
+  {
    "id": "es_tutor_159cce3b_46",
    "lang": "es",
    "style": "tutor",
@@ -103730,6 +103770,14 @@
    "text": "Caminar de puntillas al ritmo de una marcha.",
    "speech": "Caminar de puntillas al ritmo de una marcha.",
    "source": "asamblea.primeiro_ciclo.novembro.2_3_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_195f2690_224",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di «look» y que todas miren la pared. Con la orden «step forward», la titiritera se acerca a la pared y la sombra encoge; con «step back» vuelve hacia la linterna y la sombra crece. La rastreadora marca cada sitio con cinta.",
+   "speech": "Di «look» y que todas miren la pared. Con la orden «step forward», la titiritera se acerca a la pared y la sombra encoge; con «step back» vuelve hacia la linterna y la sombra crece. La rastreadora marca cada sitio con cinta.",
+   "source": "steam/I4-OPTICA-001/aula/experimenta/consignaAdulto"
   },
   {
    "id": "es_tutor_1962ec88_58",
@@ -103908,6 +103956,14 @@
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/cmd/cmd.febreiro.6i.02/modeladoDocente"
   },
   {
+   "id": "es_tutor_1d8275f5_172",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La programadora pone las tarjetas en fila. Después lee cada tarjeta en voz alta y dice la orden en inglés: «step», «turn right» o «turn left». El robot hace solo esa orden.",
+   "speech": "La programadora pone las tarjetas en fila. Después lee cada tarjeta en voz alta y dice la orden en inglés: «step», «turn right» o «turn left». El robot hace solo esa orden.",
+   "source": "steam/I5-LOGICA-001/aula/experimenta/consignaAdulto"
+  },
+  {
    "id": "es_tutor_1e2b14c3_70",
    "lang": "es",
    "style": "tutor",
@@ -103938,6 +103994,14 @@
    "text": "Al salir a la calle, tocar juntos algo frío —la barandilla, el cristal del coche— y nombrar el frío antes de subir al carrito.",
    "speech": "Al salir a la calle, tocar juntos algo frío —la barandilla, el cristal del coche— y nombrar el frío antes de subir al carrito.",
    "source": "juega.inverno.01/puenteCasa/act/1"
+  },
+  {
+   "id": "es_tutor_1ea37edc_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuántos pasos y cuántos giros necesita el robot para llegar a la flor sin pisar la casilla roja?",
+   "speech": "¿Cuántos pasos y cuántos giros necesita el robot para llegar a la flor sin pisar la casilla roja?",
+   "source": "steam/I5-LOGICA-001/aula/observa/preguntaIndagacion"
   },
   {
    "id": "es_tutor_1f738e1d_47",
@@ -104052,6 +104116,14 @@
    "source": "asamblea.segundo_ciclo.abril.4_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "es_tutor_2165d588_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si los soltamos a la vez, ¿cuál bajará?",
+   "speech": "Si los soltamos a la vez, ¿cuál bajará?",
+   "source": "steam/I2-CINEMATICA-001/aula/observa/preguntaIndagacion"
+  },
+  {
    "id": "es_tutor_218104f8_126",
    "lang": "es",
    "style": "tutor",
@@ -104154,6 +104226,22 @@
    "text": "Desplazamiento por el suelo con brazada alternada de pecho.",
    "speech": "Desplazamiento por el suelo con brazada alternada de pecho.",
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/3/cmd/cmd.xuno.4i.02/accionFisica"
+  },
+  {
+   "id": "es_tutor_244b4d5f_85",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon la olla boca abajo y el cuenco con agua encima. Enséñale que el agua está quieta.",
+   "speech": "Pon la olla boca abajo y el cuenco con agua encima. Enséñale que el agua está quieta.",
+   "source": "steam/I3-ACUSTICA-001/hogar/observa/planteamiento"
+  },
+  {
+   "id": "es_tutor_244ba8d6_144",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di «listen» y da golpes suaves en la olla con la cuchara. Mirad juntos el agua. Después le toca a ella, y espera cinco segundos antes de ayudar.",
+   "speech": "Di «listen» y da golpes suaves en la olla con la cuchara. Mirad juntos el agua. Después le toca a ella, y espera cinco segundos antes de ayudar.",
+   "source": "steam/I3-ACUSTICA-001/hogar/experimenta/consignaAdulto"
   },
   {
    "id": "es_tutor_24790915_50",
@@ -104316,6 +104404,14 @@
    "source": "asamblea.segundo_ciclo.abril.5_infantil/microRutina/escenaCotidiana"
   },
   {
+   "id": "es_tutor_2942674c_145",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di «roll» y suelta la pelota sin empujarla. Después suelta el bloque. Deja que la criatura haga lo mismo y espera cinco segundos antes de ayudar.",
+   "speech": "Di «roll» y suelta la pelota sin empujarla. Después suelta el bloque. Deja que la criatura haga lo mismo y espera cinco segundos antes de ayudar.",
+   "source": "steam/I2-CINEMATICA-001/hogar/experimenta/consignaAdulto"
+  },
+  {
    "id": "es_tutor_29e4a397_89",
    "lang": "es",
    "style": "tutor",
@@ -104346,6 +104442,14 @@
    "text": "Reunir al grupo en la alfombra en círculo.",
    "speech": "Reunir al grupo en la alfombra en círculo.",
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/1/consigna"
+  },
+  {
+   "id": "es_tutor_2a423134_107",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Siéntate en el suelo frente a la criatura, con un objeto en cada mano. Apriétalos despacio delante de ella.",
+   "speech": "Siéntate en el suelo frente a la criatura, con un objeto en cada mano. Apriétalos despacio delante de ella.",
+   "source": "steam/I1-MATERIA-001/hogar/observa/planteamiento"
   },
   {
    "id": "es_tutor_2a885ae5_48",
@@ -104476,6 +104580,14 @@
    "source": "juega.corpo.01/exploracion/objetivoSensorial"
   },
   {
+   "id": "es_tutor_2e1b719e_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di «drop» y soltad los objetos en la cesta por turnos: primero tú, después la criatura. Escuchad lo que hace cada uno al caer.",
+   "speech": "Di «drop» y soltad los objetos en la cesta por turnos: primero tú, después la criatura. Escuchad lo que hace cada uno al caer.",
+   "source": "steam/I1-MATERIA-001/hogar/construye/retoTangible"
+  },
+  {
    "id": "es_tutor_2eda39ae_96",
    "lang": "es",
    "style": "tutor",
@@ -104492,6 +104604,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "es_tutor_3018d1f7_71",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira cómo se hunde la pelota cuando la aprieto. ¿Y el bloque, se hunde?",
+   "speech": "Mira cómo se hunde la pelota cuando la aprieto. ¿Y el bloque, se hunde?",
+   "source": "steam/I1-MATERIA-001/hogar/experimenta/pistaN1"
+  },
+  {
    "id": "es_tutor_3071e25c_188",
    "lang": "es",
    "style": "tutor",
@@ -104506,6 +104626,14 @@
    "text": "Reformular, no recriminar.",
    "speech": "Reformular, no recriminar.",
    "source": "formacion.familia/paso/3/clave"
+  },
+  {
+   "id": "es_tutor_3176b3dc_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Por qué se queda quieta el agua cuando dejamos de tocar?",
+   "speech": "¿Por qué se queda quieta el agua cuando dejamos de tocar?",
+   "source": "steam/I3-ACUSTICA-001/hogar/construye/sintesisCierre"
   },
   {
    "id": "es_tutor_31a10fc2_97",
@@ -104620,6 +104748,14 @@
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/cmd/cmd.novembro.6i.03/accionFisica"
   },
   {
+   "id": "es_tutor_3416c440_181",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Objetos grandes, enteros y sin piezas sueltas. Antes de empezar, revisa que la pelota no tenga hilos ni costuras abiertas. A esta edad todo va a la boca: no te alejes ni un momento.",
+   "speech": "Objetos grandes, enteros y sin piezas sueltas. Antes de empezar, revisa que la pelota no tenga hilos ni costuras abiertas. A esta edad todo va a la boca: no te alejes ni un momento.",
+   "source": "steam/I1-MATERIA-001/seguridad"
+  },
+  {
    "id": "es_tutor_341bb574_65",
    "lang": "es",
    "style": "tutor",
@@ -104642,6 +104778,14 @@
    "text": "Si nadie responde a la pregunta, conviene repetirla más alto y más despacio.",
    "speech": "Si nadie responde a la pregunta, conviene repetirla más alto y más despacio.",
    "source": "aula.preguntas.01/afirmaciones/afirmacion_01/enunciado"
+  },
+  {
+   "id": "es_tutor_356a5d55_99",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Coge la cuchara con la tamborilera y tocad juntas, primero suave y después fuerte, mirando el agua.",
+   "speech": "Coge la cuchara con la tamborilera y tocad juntas, primero suave y después fuerte, mirando el agua.",
+   "source": "steam/I3-ACUSTICA-001/aula/experimenta/pistaN2"
   },
   {
    "id": "es_tutor_35d72ced_75",
@@ -104764,6 +104908,14 @@
    "source": "asamblea.primeiro_ciclo.maio.0_2_anos/fase/3/cmd/cmd.maio.0_2.01/accionFisica"
   },
   {
+   "id": "es_tutor_38cf606a_87",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando digas «stop», la criatura posa la mano abierta en la olla. ¿Qué le pasa al agua?",
+   "speech": "Cuando digas «stop», la criatura posa la mano abierta en la olla. ¿Qué le pasa al agua?",
+   "source": "steam/I3-ACUSTICA-001/hogar/construye/retoTangible"
+  },
+  {
    "id": "es_tutor_38f6c516_97",
    "lang": "es",
    "style": "tutor",
@@ -104778,6 +104930,14 @@
    "text": "Sacudida de brazos y tronco como quien escurre el agua.",
    "speech": "Sacudida de brazos y tronco como quien escurre el agua.",
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/fase/3/cmd/cmd.xaneiro.5i.03/accionFisica"
+  },
+  {
+   "id": "es_tutor_3917094a_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Me paro aquí y no llego. ¿Qué flecha cambiamos?",
+   "speech": "Me paro aquí y no llego. ¿Qué flecha cambiamos?",
+   "source": "steam/I5-LOGICA-001/hogar/experimenta/pistaN1"
   },
   {
    "id": "es_tutor_3944d83d_63",
@@ -104804,12 +104964,36 @@
    "source": "asamblea.segundo_ciclo.novembro.6_infantil/fase/3/cmd/cmd.novembro.6i.02/modeladoDocente"
   },
   {
+   "id": "es_tutor_3a570bcd_100",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Camina tú detrás del robot, con las manos en sus hombros, y girad juntas hacia el lado de la flecha.",
+   "speech": "Camina tú detrás del robot, con las manos en sus hombros, y girad juntas hacia el lado de la flecha.",
+   "source": "steam/I5-LOGICA-001/aula/experimenta/pistaN2"
+  },
+  {
    "id": "es_tutor_3a7014eb_155",
    "lang": "es",
    "style": "tutor",
    "text": "* O-las * que vienen, * o-las * que van, * en el mar * de Vi-go * los pe-ces * es-tán. * Chof, * chof, * cae * el a-gua, * chas, * chas, * en la * a-re-na.",
    "speech": "Olas que vienen, olas que van, en el mar de Vigo los peces están. Chof, chof, cae el agua, chas, chas, en la arena.",
    "source": "juega.mar.01/cancionPulso"
+  },
+  {
+   "id": "es_tutor_3a7d8b1d_97",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La luz va en línea recta y no puede atravesar el cartón. Por eso, ¿qué queda detrás de la figura?",
+   "speech": "La luz va en línea recta y no puede atravesar el cartón. Por eso, ¿qué queda detrás de la figura?",
+   "source": "steam/I4-OPTICA-001/aula/construye/sintesisCierre"
+  },
+  {
+   "id": "es_tutor_3a94f3b0_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pone las tarjetas en orden antes de que el robot empiece.",
+   "speech": "Pone las tarjetas en orden antes de que el robot empiece.",
+   "source": "steam/I5-LOGICA-001/observar/0"
   },
   {
    "id": "es_tutor_3b137f3d_124",
@@ -104908,6 +105092,14 @@
    "source": "asamblea.segundo_ciclo.xaneiro.6_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "es_tutor_3e465cdb_128",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira dónde está la linterna, sin mirar la luz. Cuando la figura está cerca de ella, ¿la sombra se hace más grande o más pequeña?",
+   "speech": "Mira dónde está la linterna, sin mirar la luz. Cuando la figura está cerca de ella, ¿la sombra se hace más grande o más pequeña?",
+   "source": "steam/I4-OPTICA-001/aula/experimenta/pistaN1"
+  },
+  {
    "id": "es_tutor_3e853ee1_54",
    "lang": "es",
    "style": "tutor",
@@ -104930,6 +105122,14 @@
    "text": "Al arropar en la cama, pasar la manta por la cara y por las manos diciendo 'Warm, soft blanket. Sleep, sleep, wake up!'.",
    "speech": "Al arropar en la cama, pasar la manta por la cara y por las manos diciendo 'Warm, soft blanket. Sleep, sleep, wake up!'.",
    "source": "juega.inverno.01/puenteCasa/act/0"
+  },
+  {
+   "id": "es_tutor_3f1ffcc8_165",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Rampa baja y estable, apoyada en el suelo. Lo que ruede tiene que ser grande y estar entero: si el cartón se rompe o se moja, retíralo. Que nadie se suba a la rampa.",
+   "speech": "Rampa baja y estable, apoyada en el suelo. Lo que ruede tiene que ser grande y estar entero: si el cartón se rompe o se moja, retíralo. Que nadie se suba a la rampa.",
+   "source": "steam/I2-CINEMATICA-001/seguridad"
   },
   {
    "id": "es_tutor_3f314c91_46",
@@ -105010,6 +105210,14 @@
    "text": "Lúa coge su pulsera de cascabeles y la mueve muy rápido: ¡ring, ring, ring! Después para de golpe y todo se queda en silencio.",
    "speech": "Lúa coge su pulsera de cascabeles y la mueve muy rápido: ¡ring, ring, ring! Después para de golpe y todo se queda en silencio.",
    "source": "juega.inverno.01/cuento/1/texto"
+  },
+  {
+   "id": "es_tutor_4122d6f7_90",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El robot ha llegado a una casilla donde no puede seguir. ¿Qué tarjeta tenemos que cambiar?",
+   "speech": "El robot ha llegado a una casilla donde no puede seguir. ¿Qué tarjeta tenemos que cambiar?",
+   "source": "steam/I5-LOGICA-001/aula/experimenta/pistaN1"
   },
   {
    "id": "es_tutor_4146d15b_54",
@@ -105114,6 +105322,14 @@
    "text": "Lavar las manos en tres pasos guiados con la voz y el gesto.",
    "speech": "Lavar las manos en tres pasos guiados con la voz y el gesto.",
    "source": "asamblea.segundo_ciclo.xaneiro.5_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "es_tutor_43e602fe_98",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Apoya la rampa en la caja, con poca inclinación. Pon arriba el tubo tumbado y el bloque a su lado.",
+   "speech": "Apoya la rampa en la caja, con poca inclinación. Pon arriba el tubo tumbado y el bloque a su lado.",
+   "source": "steam/I2-CINEMATICA-001/aula/observa/planteamiento"
   },
   {
    "id": "es_tutor_43ee2865_75",
@@ -105228,6 +105444,14 @@
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.03/modeladoDocente"
   },
   {
+   "id": "es_tutor_469c6abd_60",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toca la pelota: es redonda. ¿Y el bloque? ¿Cuál puede rodar?",
+   "speech": "Toca la pelota: es redonda. ¿Y el bloque? ¿Cuál puede rodar?",
+   "source": "steam/I2-CINEMATICA-001/hogar/experimenta/pistaN1"
+  },
+  {
    "id": "es_tutor_46b7bb68_91",
    "lang": "es",
    "style": "tutor",
@@ -105266,6 +105490,14 @@
    "text": "La respuesta que importa es 'tiempo': la planta no crece hoy, y esperar también se aprende.",
    "speech": "La respuesta que importa es 'tiempo': la planta no crece hoy, y esperar también se aprende.",
    "source": "juega.primavera.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "es_tutor_472b8c2f_122",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Déjale los dos objetos. Aprieta tú primero y di «blando» y «duro». Espera cinco segundos antes de ayudar: que pruebe ella.",
+   "speech": "Déjale los dos objetos. Aprieta tú primero y di «blando» y «duro». Espera cinco segundos antes de ayudar: que pruebe ella.",
+   "source": "steam/I1-MATERIA-001/hogar/experimenta/consignaAdulto"
   },
   {
    "id": "es_tutor_4758df23_55",
@@ -105314,6 +105546,14 @@
    "text": "Al lado hay una naranja redonda. Lúa le da un toque y la naranja rueda, rueda y rueda hasta pararse.",
    "speech": "Al lado hay una naranja redonda. Lúa le da un toque y la naranja rueda, rueda y rueda hasta pararse.",
    "source": "juega.cores.01/cuento/1/texto"
+  },
+  {
+   "id": "es_tutor_48c53899_83",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué tenemos que hacer con el juguete para que la sombra sea pequeña como un ratón?",
+   "speech": "¿Qué tenemos que hacer con el juguete para que la sombra sea pequeña como un ratón?",
+   "source": "steam/I4-OPTICA-001/hogar/observa/preguntaIndagacion"
   },
   {
    "id": "es_tutor_48ede601_96",
@@ -105434,6 +105674,14 @@
    "text": "Flexiona las piernas del bebé de manera alterna al compás.",
    "speech": "Flexiona las piernas del bebé de manera alterna al compás.",
    "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/2/consigna"
+  },
+  {
+   "id": "es_tutor_4bbffd96_68",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira: la pelota se hace pequeña en mi mano. ¿Y el bloque? ¿Probamos?",
+   "speech": "Mira: la pelota se hace pequeña en mi mano. ¿Y el bloque? ¿Probamos?",
+   "source": "steam/I1-MATERIA-001/aula/experimenta/pistaN1"
   },
   {
    "id": "es_tutor_4bff95c1_54",
@@ -105580,6 +105828,14 @@
    "source": "formacion.docente/paso/1/corpo"
   },
   {
+   "id": "es_tutor_4fc4f9cc_76",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon tu mano sobre la de la criatura en el tubo y soltad juntas, sin empujar.",
+   "speech": "Pon tu mano sobre la de la criatura en el tubo y soltad juntas, sin empujar.",
+   "source": "steam/I2-CINEMATICA-001/aula/experimenta/pistaN2"
+  },
+  {
    "id": "es_tutor_501a79d6_44",
    "lang": "es",
    "style": "tutor",
@@ -105652,6 +105908,14 @@
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "es_tutor_531e1521_62",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando el robot no llega, busca qué tarjeta falla y la cambia.",
+   "speech": "Cuando el robot no llega, busca qué tarjeta falla y la cambia.",
+   "source": "steam/I5-LOGICA-001/observar/1"
+  },
+  {
    "id": "es_tutor_5361fa1f_121",
    "lang": "es",
    "style": "tutor",
@@ -105706,6 +105970,14 @@
    "text": "Clasificar juntos lo que se trajo del monte en una caja de madera.",
    "speech": "Clasificar juntos lo que se trajo del monte en una caja de madera.",
    "source": "asamblea.segundo_ciclo.outubro.5_infantil/microRutina/objetivoAutonomia"
+  },
+  {
+   "id": "es_tutor_545e3628_74",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toca el tubo: es redondo. ¿Y el bloque, tiene esquinas? ¿Cuál puede rodar?",
+   "speech": "Toca el tubo: es redondo. ¿Y el bloque, tiene esquinas? ¿Cuál puede rodar?",
+   "source": "steam/I2-CINEMATICA-001/aula/experimenta/pistaN1"
   },
   {
    "id": "es_tutor_55238632_45",
@@ -105852,6 +106124,14 @@
    "source": "progresion.primeiro_ciclo.2_3/s4/d5/consigna"
   },
   {
+   "id": "es_tutor_58da395d_70",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Poned un libro más debajo de la rampa y probad otra vez con la pelota.",
+   "speech": "Poned un libro más debajo de la rampa y probad otra vez con la pelota.",
+   "source": "steam/I2-CINEMATICA-001/hogar/construye/retoTangible"
+  },
+  {
    "id": "es_tutor_58db02aa_51",
    "lang": "es",
    "style": "tutor",
@@ -105988,6 +106268,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "es_tutor_5bf883d5_118",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Marca la cuadrícula en el suelo y pon el peluche en una esquina. Tú te colocas en la esquina contraria: eres el robot.",
+   "speech": "Marca la cuadrícula en el suelo y pon el peluche en una esquina. Tú te colocas en la esquina contraria: eres el robot.",
+   "source": "steam/I5-LOGICA-001/hogar/observa/planteamiento"
+  },
+  {
    "id": "es_tutor_5bfe65e7_76",
    "lang": "es",
    "style": "tutor",
@@ -106018,6 +106306,14 @@
    "text": "En la calle o el parque, sin material alguno.",
    "speech": "En la calle o el parque, sin material alguno.",
    "source": "asamblea.segundo_ciclo.abril.6_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_5cdcce7d_65",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Coge su mano y haced juntos el camino antes de poner las flechas.",
+   "speech": "Coge su mano y haced juntos el camino antes de poner las flechas.",
+   "source": "steam/I5-LOGICA-001/hogar/experimenta/pistaN2"
   },
   {
    "id": "es_tutor_5d4d3d46_43",
@@ -106220,6 +106516,14 @@
    "source": "juega.animais.01/cuento/2/pregunta"
   },
   {
+   "id": "es_tutor_63958d35_86",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cambiad: ahora la criatura es el robot y tú programas. Pon el peluche en otra casilla.",
+   "speech": "Cambiad: ahora la criatura es el robot y tú programas. Pon el peluche en otra casilla.",
+   "source": "steam/I5-LOGICA-001/hogar/construye/retoTangible"
+  },
+  {
    "id": "es_tutor_639dedc2_130",
    "lang": "es",
    "style": "tutor",
@@ -106388,6 +106692,14 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.02/accionFisica"
   },
   {
+   "id": "es_tutor_69a557e5_210",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Linterna LED que no se caliente, con la tapa de las pilas cerrada con tornillo. Que nadie mire directamente a la luz ni la apunte a los ojos. Deja libre el espacio entre la linterna y la pared para no tropezar.",
+   "speech": "Linterna LED que no se caliente, con la tapa de las pilas cerrada con tornillo. Que nadie mire directamente a la luz ni la apunte a los ojos. Deja libre el espacio entre la linterna y la pared para no tropezar.",
+   "source": "steam/I4-OPTICA-001/seguridad"
+  },
+  {
    "id": "es_tutor_69fb820e_27",
    "lang": "es",
    "style": "tutor",
@@ -106402,6 +106714,14 @@
    "text": "Entrega la primera clave y después solo observa.",
    "speech": "Entrega la primera clave y después solo observa.",
    "source": "asamblea.segundo_ciclo.maio.6_infantil/fase/3/cmd/cmd.maio.6i.03/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_6a74455e_66",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pone la mano en la oreja cuando oye «listen» y espera en silencio.",
+   "speech": "Pone la mano en la oreja cuando oye «listen» y espera en silencio.",
+   "source": "steam/I3-ACUSTICA-001/observar/2"
   },
   {
    "id": "es_tutor_6aab32df_216",
@@ -106764,6 +107084,14 @@
    "source": "academy.segundo_ciclo.setembro.01/luaDice"
   },
   {
+   "id": "es_tutor_75917085_108",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon la mano en la olla mientras toco. ¿Qué notas? Ahora cantamos «mmm», cada uno con la mano en su garganta.",
+   "speech": "Pon la mano en la olla mientras toco. ¿Qué notas? Ahora cantamos «mmm», cada uno con la mano en su garganta.",
+   "source": "steam/I3-ACUSTICA-001/hogar/experimenta/pistaN1"
+  },
+  {
    "id": "es_tutor_7627cae9_59",
    "lang": "es",
    "style": "tutor",
@@ -106812,6 +107140,14 @@
    "source": "asamblea.segundo_ciclo.xaneiro.6_infantil/fase/3/cmd/cmd.xaneiro.6i.03/modeladoDocente"
   },
   {
+   "id": "es_tutor_775fc954_107",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Parejas, con una persona adulta cerca: una criatura toca el tambor y la otra mira el agua. Después cambian.",
+   "speech": "Parejas, con una persona adulta cerca: una criatura toca el tambor y la otra mira el agua. Después cambian.",
+   "source": "steam/I3-ACUSTICA-001/aula/agrupamiento"
+  },
+  {
    "id": "es_tutor_776810d0_120",
    "lang": "es",
    "style": "tutor",
@@ -106858,6 +107194,14 @@
    "text": "Modela la marcha de puntillas y baja aún más la voz.",
    "speech": "Modela la marcha de puntillas y baja aún más la voz.",
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/cmd/cmd.abril.5i.03/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_78337670_46",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuál hizo ruido al caer: el blando o el duro?",
+   "speech": "¿Cuál hizo ruido al caer: el blando o el duro?",
+   "source": "steam/I1-MATERIA-001/aula/construye/sintesisCierre"
   },
   {
    "id": "es_tutor_7855b5e6_64",
@@ -107108,6 +107452,14 @@
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/fase/3/cmd/cmd.marzo.5i.03/modeladoDocente"
   },
   {
+   "id": "es_tutor_7de34136_73",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Se pone de acuerdo con la compañera: una mueve la figura y la otra marca.",
+   "speech": "Se pone de acuerdo con la compañera: una mueve la figura y la otra marca.",
+   "source": "steam/I4-OPTICA-001/observar/2"
+  },
+  {
    "id": "es_tutor_7e39c14b_57",
    "lang": "es",
    "style": "tutor",
@@ -107130,6 +107482,14 @@
    "text": "¿Qué parte del cuerpo mueve Lúa cuando le hacen cosquillas?",
    "speech": "¿Qué parte del cuerpo mueve Lúa cuando le hacen cosquillas?",
    "source": "juega.corpo.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_7fbc3cea_142",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Oscurece un poco el aula y enciende la linterna hacia la pared. Pon la figura muy cerca de la linterna: en la pared aparece una sombra enorme.",
+   "speech": "Oscurece un poco el aula y enciende la linterna hacia la pared. Pon la figura muy cerca de la linterna: en la pared aparece una sombra enorme.",
+   "source": "steam/I4-OPTICA-001/aula/observa/planteamiento"
   },
   {
    "id": "es_tutor_80397110_45",
@@ -107260,6 +107620,14 @@
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/fase/3/cmd/cmd.febreiro.5i.01/accionFisica"
   },
   {
+   "id": "es_tutor_84cc1555_96",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon la caja boca abajo y el cuenco con agua encima, en el medio. Enseña que el agua está quieta.",
+   "speech": "Pon la caja boca abajo y el cuenco con agua encima, en el medio. Enseña que el agua está quieta.",
+   "source": "steam/I3-ACUSTICA-001/aula/observa/planteamiento"
+  },
+  {
    "id": "es_tutor_850bee5d_73",
    "lang": "es",
    "style": "tutor",
@@ -107298,6 +107666,14 @@
    "text": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
    "speech": "La educadora hace el gesto mientras dice la orden, y espera sin exigir respuesta.",
    "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/cmd/cmd.abril.0_2.01/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_8701f269_123",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Con la luz de la habitación apagada, apoya la linterna en una mesa apuntando a la pared y pon el juguete muy cerca de ella.",
+   "speech": "Con la luz de la habitación apagada, apoya la linterna en una mesa apuntando a la pared y pon el juguete muy cerca de ella.",
+   "source": "steam/I4-OPTICA-001/hogar/observa/planteamiento"
   },
   {
    "id": "es_tutor_870fc709_63",
@@ -107452,6 +107828,14 @@
    "source": "juega.inverno.01/exploracion/paso/3"
   },
   {
+   "id": "es_tutor_8e8f5378_139",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di «roll» y suelta el tubo sin empujarlo: baja rodando. Después suelta el bloque: se queda quieto. Que cada criatura lo pruebe en su turno.",
+   "speech": "Di «roll» y suelta el tubo sin empujarlo: baja rodando. Después suelta el bloque: se queda quieto. Que cada criatura lo pruebe en su turno.",
+   "source": "steam/I2-CINEMATICA-001/aula/experimenta/consignaAdulto"
+  },
+  {
    "id": "es_tutor_8ebd554c_77",
    "lang": "es",
    "style": "tutor",
@@ -107482,6 +107866,14 @@
    "text": "Terminar mirándose en el espejo y diciendo adiós con la mano.",
    "speech": "Terminar mirándose en el espejo y diciendo adiós con la mano.",
    "source": "juega.benvida.01/exploracion/paso/3"
+  },
+  {
+   "id": "es_tutor_8fb8c139_83",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Nota la vibración con la mano en el tambor o en su propia garganta al cantar «mmm».",
+   "speech": "Nota la vibración con la mano en el tambor o en su propia garganta al cantar «mmm».",
+   "source": "steam/I3-ACUSTICA-001/observar/1"
   },
   {
    "id": "es_tutor_8fc5b7e9_120",
@@ -107636,6 +108028,14 @@
    "source": "juega.follas.01/preguntas/?/respuestaSugerida"
   },
   {
+   "id": "es_tutor_940004a1_65",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Acerca o aleja la figura para conseguir la sombra que se le pide.",
+   "speech": "Acerca o aleja la figura para conseguir la sombra que se le pide.",
+   "source": "steam/I4-OPTICA-001/observar/0"
+  },
+  {
    "id": "es_tutor_944da608_213",
    "lang": "es",
    "style": "tutor",
@@ -107716,12 +108116,28 @@
    "source": "juega.primavera.01/exploracion/paso/3"
   },
   {
+   "id": "es_tutor_973ec6ea_80",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Coge su mano con el juguete y movedlo juntos hacia la linterna y hacia la pared.",
+   "speech": "Coge su mano con el juguete y movedlo juntos hacia la linterna y hacia la pared.",
+   "source": "steam/I4-OPTICA-001/hogar/experimenta/pistaN2"
+  },
+  {
    "id": "es_tutor_974de13b_108",
    "lang": "es",
    "style": "tutor",
    "text": "Di la orden y empieza el gesto, pero no lo termines. La clase lo completa. Si no sale, termínalo tú y sigue.",
    "speech": "Di la orden y empieza el gesto, pero no lo termines. La clase lo completa. Si no sale, termínalo tú y sigue.",
    "source": "progresion.segundo_ciclo.5/s3/d4/consigna"
+  },
+  {
+   "id": "es_tutor_9785c822_70",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Se adelanta: va al final de la rampa antes de que llegue lo que rueda.",
+   "speech": "Se adelanta: va al final de la rampa antes de que llegue lo que rueda.",
+   "source": "steam/I2-CINEMATICA-001/observar/1"
   },
   {
    "id": "es_tutor_97b400c9_69",
@@ -107852,6 +108268,14 @@
    "source": "progresion.segundo_ciclo.6/s3/d4/consigna"
   },
   {
+   "id": "es_tutor_9a2c8941_155",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cinta bien pegada al suelo y sin pliegues, para no tropezar. El robot camina, no corre. Deja alrededor de la cuadrícula un espacio libre de mesas y sillas.",
+   "speech": "Cinta bien pegada al suelo y sin pliegues, para no tropezar. El robot camina, no corre. Deja alrededor de la cuadrícula un espacio libre de mesas y sillas.",
+   "source": "steam/I5-LOGICA-001/seguridad"
+  },
+  {
    "id": "es_tutor_9a69e05f_57",
    "lang": "es",
    "style": "tutor",
@@ -107916,6 +108340,14 @@
    "source": "juega.corpo.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "es_tutor_9c02b39e_189",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Poca agua, en un cuenco de plástico de base ancha y siempre a tu alcance. Sin objetos pequeños: nada que quepa en la boca, la nariz o las orejas. Cada criatura toca solo su propia garganta.",
+   "speech": "Poca agua, en un cuenco de plástico de base ancha y siempre a tu alcance. Sin objetos pequeños: nada que quepa en la boca, la nariz o las orejas. Cada criatura toca solo su propia garganta.",
+   "source": "steam/I3-ACUSTICA-001/seguridad"
+  },
+  {
    "id": "es_tutor_9c0f315e_61",
    "lang": "es",
    "style": "tutor",
@@ -107938,6 +108370,14 @@
    "text": "Frotar con suavidad mejillas y frente con la toalla.",
    "speech": "Frotar con suavidad mejillas y frente con la toalla.",
    "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.01/accionFisica"
+  },
+  {
+   "id": "es_tutor_9cae1345_62",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Con la rampa más alta, ¿el tubo fue más rápido o más despacio?",
+   "speech": "Con la rampa más alta, ¿el tubo fue más rápido o más despacio?",
+   "source": "steam/I2-CINEMATICA-001/aula/construye/sintesisCierre"
   },
   {
    "id": "es_tutor_9cc55706_97",
@@ -108220,6 +108660,14 @@
    "source": "juega.inverno.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "es_tutor_a24f4a0e_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué órdenes tienes que darme para que llegue al peluche?",
+   "speech": "¿Qué órdenes tienes que darme para que llegue al peluche?",
+   "source": "steam/I5-LOGICA-001/hogar/observa/preguntaIndagacion"
+  },
+  {
    "id": "es_tutor_a29eef68_71",
    "lang": "es",
    "style": "tutor",
@@ -108234,6 +108682,14 @@
    "text": "Junto a la ventana, con la maceta y un cuaderno de dibujo.",
    "speech": "Junto a la ventana, con la maceta y un cuaderno de dibujo.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_a2ef21d1_216",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di «look» y mirad la sombra. Con «step forward», lleva el juguete hacia la pared: la sombra encoge. Con «step back», vuélvelo hacia la linterna. Deja que la criatura lo pruebe y espera cinco segundos antes de ayudar.",
+   "speech": "Di «look» y mirad la sombra. Con «step forward», lleva el juguete hacia la pared: la sombra encoge. Con «step back», vuélvelo hacia la linterna. Deja que la criatura lo pruebe y espera cinco segundos antes de ayudar.",
+   "source": "steam/I4-OPTICA-001/hogar/experimenta/consignaAdulto"
   },
   {
    "id": "es_tutor_a319bdec_25",
@@ -108298,6 +108754,22 @@
    "text": "Galopa en círculo una vuelta completa antes de parar.",
    "speech": "Galopa en círculo una vuelta completa antes de parar.",
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/fase/3/cmd/cmd.febreiro.5i.01/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_a42a7f47_83",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon tu mano sobre la de la criatura y apretad juntas la pelota; después, el bloque.",
+   "speech": "Pon tu mano sobre la de la criatura y apretad juntas la pelota; después, el bloque.",
+   "source": "steam/I1-MATERIA-001/aula/experimenta/pistaN2"
+  },
+  {
+   "id": "es_tutor_a437d6e9_110",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En la cuadrícula hay una casilla de salida, una de meta con la flor y, en el medio, la casilla roja bloqueada.",
+   "speech": "En la cuadrícula hay una casilla de salida, una de meta con la flor y, en el medio, la casilla roja bloqueada.",
+   "source": "steam/I5-LOGICA-001/aula/observa/planteamiento"
   },
   {
    "id": "es_tutor_a43f7b81_120",
@@ -108484,6 +108956,14 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "es_tutor_ab83b4f6_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Jugad a las adivinanzas: tú dices «grande» o «pequeña» y la criatura busca el sitio. Después te lo pide ella a ti.",
+   "speech": "Jugad a las adivinanzas: tú dices «grande» o «pequeña» y la criatura busca el sitio. Después te lo pide ella a ti.",
+   "source": "steam/I4-OPTICA-001/hogar/construye/retoTangible"
+  },
+  {
    "id": "es_tutor_ab969414_55",
    "lang": "es",
    "style": "tutor",
@@ -108556,6 +109036,14 @@
    "source": "academy.juego_movimiento_sin_pantallas.01/luaDice"
   },
   {
+   "id": "es_tutor_add7f311_143",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Siéntate en el suelo a la altura de las criaturas. Enseña la pelota en una mano y el bloque en la otra, y apriétalos despacio delante de ellas.",
+   "speech": "Siéntate en el suelo a la altura de las criaturas. Enseña la pelota en una mano y el bloque en la otra, y apriétalos despacio delante de ellas.",
+   "source": "steam/I1-MATERIA-001/aula/observa/planteamiento"
+  },
+  {
    "id": "es_tutor_ae364521_119",
    "lang": "es",
    "style": "tutor",
@@ -108580,6 +109068,22 @@
    "source": "juega.choiva.01/exploracion/paso/0"
   },
   {
+   "id": "es_tutor_af5fa3a5_99",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tú y la criatura, en la mesa o en el suelo, con una toalla debajo. Primero tocas tú y después ella.",
+   "speech": "Tú y la criatura, en la mesa o en el suelo, con una toalla debajo. Primero tocas tú y después ella.",
+   "source": "steam/I3-ACUSTICA-001/hogar/agrupamiento"
+  },
+  {
+   "id": "es_tutor_af9d7aba_134",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando digas «drop», cada criatura suelta sus objetos en la cesta. Escuchad el sonido: el bloque hace «toc» y la pelota casi no suena.",
+   "speech": "Cuando digas «drop», cada criatura suelta sus objetos en la cesta. Escuchad el sonido: el bloque hace «toc» y la pelota casi no suena.",
+   "source": "steam/I1-MATERIA-001/aula/construye/retoTangible"
+  },
+  {
    "id": "es_tutor_afad7910_51",
    "lang": "es",
    "style": "tutor",
@@ -108602,6 +109106,14 @@
    "text": "Estirada explosiva y baile circular alrededor de un punto central.",
    "speech": "Estirada explosiva y baile circular alrededor de un punto central.",
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/fase/3/cmd/cmd.novembro.5i.03/accionFisica"
+  },
+  {
+   "id": "es_tutor_b01a0e34_82",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tú y la criatura, sentados en el suelo. Si hay hermanos, cada uno con sus objetos.",
+   "speech": "Tú y la criatura, sentados en el suelo. Si hay hermanos, cada uno con sus objetos.",
+   "source": "steam/I1-MATERIA-001/hogar/agrupamiento"
   },
   {
    "id": "es_tutor_b049a29d_84",
@@ -108804,6 +109316,14 @@
    "source": "academy.juego_movimiento_sin_pantallas.01/queHacerEnCasa"
   },
   {
+   "id": "es_tutor_b593960a_111",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Apoya la bandeja en el cojín para hacer una rampa baja. Pon arriba la pelota y el bloque, uno al lado del otro.",
+   "speech": "Apoya la bandeja en el cojín para hacer una rampa baja. Pon arriba la pelota y el bloque, uno al lado del otro.",
+   "source": "steam/I2-CINEMATICA-001/hogar/observa/planteamiento"
+  },
+  {
    "id": "es_tutor_b5d19aae_68",
    "lang": "es",
    "style": "tutor",
@@ -108964,6 +109484,14 @@
    "source": "formacion.familia/paso/0/corpo"
   },
   {
+   "id": "es_tutor_bb0e3527_106",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tú y la criatura, de noche o con la persiana bajada. Uno mueve la figura y el otro mira; después cambiáis.",
+   "speech": "Tú y la criatura, de noche o con la persiana bajada. Uno mueve la figura y el otro mira; después cambiáis.",
+   "source": "steam/I4-OPTICA-001/hogar/agrupamiento"
+  },
+  {
    "id": "es_tutor_bb95dbd7_40",
    "lang": "es",
    "style": "tutor",
@@ -109036,6 +109564,14 @@
    "source": "progresion.segundo_ciclo.4/s1/d1/foco"
   },
   {
+   "id": "es_tutor_bd0052e0_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Explica con sus palabras que la figura tapa la luz.",
+   "speech": "Explica con sus palabras que la figura tapa la luz.",
+   "source": "steam/I4-OPTICA-001/observar/1"
+  },
+  {
    "id": "es_tutor_bd562b1e_193",
    "lang": "es",
    "style": "tutor",
@@ -109050,6 +109586,22 @@
    "text": "Una instrucción en positivo se puede seguir tal cual esa misma noche. Una advertencia deja a la familia sabiendo lo que no, pero sin nada que poner en su lugar.",
    "speech": "Una instrucción en positivo se puede seguir tal cual esa misma noche. Una advertencia deja a la familia sabiendo lo que no, pero sin nada que poner en su lugar.",
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_bdba502d_52",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Respeta el turno y espera la orden antes de moverse.",
+   "speech": "Respeta el turno y espera la orden antes de moverse.",
+   "source": "steam/I5-LOGICA-001/observar/2"
+  },
+  {
+   "id": "es_tutor_bdd0d357_69",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si cambiamos el orden de dos flechas, ¿llega el robot al mismo sitio?",
+   "speech": "Si cambiamos el orden de dos flechas, ¿llega el robot al mismo sitio?",
+   "source": "steam/I5-LOGICA-001/hogar/construye/sintesisCierre"
   },
   {
    "id": "es_tutor_be08825a_229",
@@ -109140,6 +109692,14 @@
    "source": "juega.choiva.01/exploracion/avisoSeguridad"
   },
   {
+   "id": "es_tutor_c0fef4ff_110",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Grupos de dos o tres criaturas por rampa, por turnos. Cuida tú los turnos: a esta edad todavía cuesta esperar.",
+   "speech": "Grupos de dos o tres criaturas por rampa, por turnos. Cuida tú los turnos: a esta edad todavía cuesta esperar.",
+   "source": "steam/I2-CINEMATICA-001/aula/agrupamiento"
+  },
+  {
    "id": "es_tutor_c1405f91_268",
    "lang": "es",
    "style": "tutor",
@@ -109210,6 +109770,14 @@
    "text": "Coloca los dos tiestos y formula la condicional sin señalar.",
    "speech": "Coloca los dos tiestos y formula la condicional sin señalar.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.03/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_c2e4609a_110",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Coge la mano de la titiritera y dad juntas un paso hacia la linterna y otro hacia la pared, mirando la sombra.",
+   "speech": "Coge la mano de la titiritera y dad juntas un paso hacia la linterna y otro hacia la pared, mirando la sombra.",
+   "source": "steam/I4-OPTICA-001/aula/experimenta/pistaN2"
   },
   {
    "id": "es_tutor_c2f26f5f_29",
@@ -109604,6 +110172,14 @@
    "source": "asamblea.segundo_ciclo.abril.6_infantil/fase/3/cmd/cmd.abril.6i.01/modeladoDocente"
   },
   {
+   "id": "es_tutor_cdca57aa_82",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué tenemos que hacer con la figura para que la sombra sea pequeña como un ratón?",
+   "speech": "¿Qué tenemos que hacer con la figura para que la sombra sea pequeña como un ratón?",
+   "source": "steam/I4-OPTICA-001/aula/observa/preguntaIndagacion"
+  },
+  {
    "id": "es_tutor_cded1525_53",
    "lang": "es",
    "style": "tutor",
@@ -109628,6 +110204,22 @@
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "es_tutor_ce42b6ac_82",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon tu mano sobre la suya y apretad juntos, primero la pelota y después el bloque.",
+   "speech": "Pon tu mano sobre la suya y apretad juntos, primero la pelota y después el bloque.",
+   "source": "steam/I1-MATERIA-001/hogar/experimenta/pistaN2"
+  },
+  {
+   "id": "es_tutor_cea04015_64",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soltad la pelota juntos, con tu mano sobre la suya, sin empujar.",
+   "speech": "Soltad la pelota juntos, con tu mano sobre la suya, sin empujar.",
+   "source": "steam/I2-CINEMATICA-001/hogar/experimenta/pistaN2"
+  },
+  {
    "id": "es_tutor_cee7d236_86",
    "lang": "es",
    "style": "tutor",
@@ -109642,6 +110234,14 @@
    "text": "La docente facilita la tarjeta icónica de la percha al alumno guía y media discretamente sin interferir en el intercambio.",
    "speech": "La docente facilita la tarjeta icónica de la percha al alumno guía y media discretamente sin interferir en el intercambio.",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/3/cmd/cmd.setembro.6i.01/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_cf5df2e8_40",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hace girar los brazos cuando oye «roll».",
+   "speech": "Hace girar los brazos cuando oye «roll».",
+   "source": "steam/I2-CINEMATICA-001/observar/2"
   },
   {
    "id": "es_tutor_cf5e95dd_116",
@@ -109740,12 +110340,36 @@
    "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "es_tutor_d2dccb69_64",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Aprieta la pelota y el bloque, y nota que uno cede y el otro no.",
+   "speech": "Aprieta la pelota y el bloque, y nota que uno cede y el otro no.",
+   "source": "steam/I1-MATERIA-001/observar/0"
+  },
+  {
    "id": "es_tutor_d37e28ac_184",
    "lang": "es",
    "style": "tutor",
    "text": "* Me pon-go * el go-rro, * me pon-go * el a-bri-go, * zzzip * arri-ba, * ya * es-toy lis-to. * Bo-tas * pues-tas, * sa-li-mos * a la ca-lle, * chof * en el char-co, * chof * o-tra vez.",
    "speech": "Me pongo el gorro, me pongo el abrigo, zzzip arriba, ya estoy listo. Botas puestas, salimos a la calle, chof en el charco, chof otra vez.",
    "source": "juega.choiva.01/cancionPulso"
+  },
+  {
+   "id": "es_tutor_d3c5c1e7_96",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Poned un libro más debajo de la caja para que la rampa quede más alta y soltad otra vez el tubo.",
+   "speech": "Poned un libro más debajo de la caja para que la rampa quede más alta y soltad otra vez el tubo.",
+   "source": "steam/I2-CINEMATICA-001/aula/construye/retoTangible"
+  },
+  {
+   "id": "es_tutor_d4115174_64",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Con la rampa más alta, ¿la pelota fue más rápido o más despacio?",
+   "speech": "Con la rampa más alta, ¿la pelota fue más rápido o más despacio?",
+   "source": "steam/I2-CINEMATICA-001/hogar/construye/sintesisCierre"
   },
   {
    "id": "es_tutor_d46e22b3_74",
@@ -109796,6 +110420,22 @@
    "source": "juega.corpo.01/cuento/0/pregunta"
   },
   {
+   "id": "es_tutor_d52723cf_91",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La luz va en línea recta y no puede atravesar el juguete. Por eso, ¿qué queda detrás de él?",
+   "speech": "La luz va en línea recta y no puede atravesar el juguete. Por eso, ¿qué queda detrás de él?",
+   "source": "steam/I4-OPTICA-001/hogar/construye/sintesisCierre"
+  },
+  {
+   "id": "es_tutor_d53ac5d6_144",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Parejas: una criatura programa con las tarjetas y la otra hace de robot; después cambian. El resto del grupo puede ayudar a revisar el programa.",
+   "speech": "Parejas: una criatura programa con las tarjetas y la otra hace de robot; después cambian. El resto del grupo puede ayudar a revisar el programa.",
+   "source": "steam/I5-LOGICA-001/aula/agrupamiento"
+  },
+  {
    "id": "es_tutor_d5e0c864_113",
    "lang": "es",
    "style": "tutor",
@@ -109844,6 +110484,14 @@
    "source": "juega.choiva.01/preguntas/?/consejoDocente"
   },
   {
+   "id": "es_tutor_d73c7e15_111",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cambiad los papeles. Cuando digas «stop», la tamborilera posa la mano abierta en la caja. ¿Qué le pasa al agua?",
+   "speech": "Cambiad los papeles. Cuando digas «stop», la tamborilera posa la mano abierta en la caja. ¿Qué le pasa al agua?",
+   "source": "steam/I3-ACUSTICA-001/aula/construye/retoTangible"
+  },
+  {
    "id": "es_tutor_d7599181_129",
    "lang": "es",
    "style": "tutor",
@@ -109858,6 +110506,14 @@
    "text": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. Las telas deben superar los 20 cm por lado, sin hilos sueltos, botones ni lentejuelas, y se lavan después de cada sesión. Retírese cualquier pieza que se deshilache.",
    "speech": "Aviso de seguridad obligatorio: esta actividad requiere presencia y supervisión docente constante. Las telas deben superar los 20 cm por lado, sin hilos sueltos, botones ni lentejuelas, y se lavan después de cada sesión. Retírese cualquier pieza que se deshilache.",
    "source": "juega.benvida.01/exploracion/avisoSeguridad"
+  },
+  {
+   "id": "es_tutor_d796e405_70",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si cambiamos el orden de dos tarjetas, ¿llega el robot al mismo sitio?",
+   "speech": "Si cambiamos el orden de dos tarjetas, ¿llega el robot al mismo sitio?",
+   "source": "steam/I5-LOGICA-001/aula/construye/sintesisCierre"
   },
   {
    "id": "es_tutor_d7c0dbe7_49",
@@ -109922,6 +110578,14 @@
    "text": "Entrega del recipiente de tierra con la fórmula pragmática.",
    "speech": "Entrega del recipiente de tierra con la fórmula pragmática.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.02/accionFisica"
+  },
+  {
+   "id": "es_tutor_da5ebf52_107",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tú y la criatura, en el pasillo o en el salón. Primero tú eres el robot y ella programa; después, al revés.",
+   "speech": "Tú y la criatura, en el pasillo o en el salón. Primero tú eres el robot y ella programa; después, al revés.",
+   "source": "steam/I5-LOGICA-001/hogar/agrupamiento"
   },
   {
    "id": "es_tutor_da892a3e_48",
@@ -110020,6 +110684,14 @@
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/fase/3/cmd/cmd.outubro.6i.03/modeladoDocente"
   },
   {
+   "id": "es_tutor_dd3c9b1b_64",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tú y la criatura, por turnos: primero sueltas tú y después ella.",
+   "speech": "Tú y la criatura, por turnos: primero sueltas tú y después ella.",
+   "source": "steam/I2-CINEMATICA-001/hogar/agrupamiento"
+  },
+  {
    "id": "es_tutor_ddad55be_53",
    "lang": "es",
    "style": "tutor",
@@ -110050,6 +110722,22 @@
    "text": "Canción completa con las tres órdenes, al ritmo del mes. Hoy no paras entre estrofas: es la sesión entera seguida.",
    "speech": "Canción completa con las tres órdenes, al ritmo del mes. Hoy no paras entre estrofas: es la sesión entera seguida.",
    "source": "progresion.primeiro_ciclo.0_2/s4/d3/consigna"
+  },
+  {
+   "id": "es_tutor_def226ce_119",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Parejas. Una criatura mueve la figura y la otra marca en el suelo dónde la sombra es grande o pequeña. Después cambian.",
+   "speech": "Parejas. Una criatura mueve la figura y la otra marca en el suelo dónde la sombra es grande o pequeña. Después cambian.",
+   "source": "steam/I4-OPTICA-001/aula/agrupamiento"
+  },
+  {
+   "id": "es_tutor_df092104_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuál se hace pequeño cuando lo apretamos?",
+   "speech": "¿Cuál se hace pequeño cuando lo apretamos?",
+   "source": "steam/I1-MATERIA-001/hogar/observa/preguntaIndagacion"
   },
   {
    "id": "es_tutor_df36bd29_41",
@@ -110228,6 +110916,14 @@
    "source": "juega.mar.01/cancionPulso/consigna"
   },
   {
+   "id": "es_tutor_e55d4736_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Suelta el objeto sin empujarlo y mira cómo baja.",
+   "speech": "Suelta el objeto sin empujarlo y mira cómo baja.",
+   "source": "steam/I2-CINEMATICA-001/observar/0"
+  },
+  {
    "id": "es_tutor_e59d9e85_65",
    "lang": "es",
    "style": "tutor",
@@ -110340,6 +111036,14 @@
    "source": "juega.benvida.01/cuento/0/pregunta"
   },
   {
+   "id": "es_tutor_e8d3922d_157",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Di «listen» y da tres golpes suaves en la caja con la cuchara. Pide a la observadora que mire el agua. Después, la tamborilera prueba a tocar fuerte y suave.",
+   "speech": "Di «listen» y da tres golpes suaves en la caja con la cuchara. Pide a la observadora que mire el agua. Después, la tamborilera prueba a tocar fuerte y suave.",
+   "source": "steam/I3-ACUSTICA-001/aula/experimenta/consignaAdulto"
+  },
+  {
    "id": "es_tutor_e974086a_50",
    "lang": "es",
    "style": "tutor",
@@ -110372,6 +111076,14 @@
    "source": "juega.animais.01/preguntas/?/enunciado"
   },
   {
+   "id": "es_tutor_ea31e3cc_102",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira dónde está la linterna, sin mirar la luz. Si el juguete va hacia ella, ¿la sombra crece o encoge?",
+   "speech": "Mira dónde está la linterna, sin mirar la luz. Si el juguete va hacia ella, ¿la sombra crece o encoge?",
+   "source": "steam/I4-OPTICA-001/hogar/experimenta/pistaN1"
+  },
+  {
    "id": "es_tutor_ea43246c_58",
    "lang": "es",
    "style": "tutor",
@@ -110394,6 +111106,14 @@
    "text": "¿Qué pasa cuando metemos la concha dentro del agua tibia?",
    "speech": "¿Qué pasa cuando metemos la concha dentro del agua tibia?",
    "source": "juega.mar.01/preguntas/?/enunciado"
+  },
+  {
+   "id": "es_tutor_ea7a3929_157",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Marcad en el suelo la línea de la sombra gigante y la de la sombra pequeña. Cuando digas un tamaño, la titiritera va a su línea. Después cambian los papeles.",
+   "speech": "Marcad en el suelo la línea de la sombra gigante y la de la sombra pequeña. Cuando digas un tamaño, la titiritera va a su línea. Después cambian los papeles.",
+   "source": "steam/I4-OPTICA-001/aula/construye/retoTangible"
   },
   {
    "id": "es_tutor_ead419f7_142",
@@ -110482,6 +111202,14 @@
    "text": "Acomodar a los niños y niñas en círculo seguro alrededor de la bandeja de agua.",
    "speech": "Acomodar a los niños y niñas en círculo seguro alrededor de la bandeja de agua.",
    "source": "juega.mar.01/exploracion/paso/0"
+  },
+  {
+   "id": "es_tutor_ec7c8ea3_161",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pequeño grupo de tres o cuatro criaturas, cada una con sus objetos. A esta edad juegan unas al lado de las otras, no por parejas: no hace falta repartir papeles.",
+   "speech": "Pequeño grupo de tres o cuatro criaturas, cada una con sus objetos. A esta edad juegan unas al lado de las otras, no por parejas: no hace falta repartir papeles.",
+   "source": "steam/I1-MATERIA-001/aula/agrupamiento"
   },
   {
    "id": "es_tutor_ecbe6b6d_30",
@@ -110580,6 +111308,14 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/consigna"
   },
   {
+   "id": "es_tutor_f00b3100_180",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La criatura pone las flechas en fila. Tú lees cada flecha y haces solo esa orden: «step», «turn right» o «turn left». Si te equivocas a propósito, deja que ella encuentre el error.",
+   "speech": "La criatura pone las flechas en fila. Tú lees cada flecha y haces solo esa orden: «step», «turn right» o «turn left». Si te equivocas a propósito, deja que ella encuentre el error.",
+   "source": "steam/I5-LOGICA-001/hogar/experimenta/consignaAdulto"
+  },
+  {
    "id": "es_tutor_f02cedcb_268",
    "lang": "es",
    "style": "tutor",
@@ -110602,6 +111338,14 @@
    "text": "Giro modelado a media velocidad, con la gasa a la vista, y sentada final visible.",
    "speech": "Giro modelado a media velocidad, con la gasa a la vista, y sentada final visible.",
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/cmd/cmd.outubro.4i.02/modeladoDocente"
+  },
+  {
+   "id": "es_tutor_f0e8860a_56",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Suelta el objeto cuando oye «drop» o cuando ve tu gesto.",
+   "speech": "Suelta el objeto cuando oye «drop» o cuando ve tu gesto.",
+   "source": "steam/I1-MATERIA-001/observar/2"
   },
   {
    "id": "es_tutor_f1b24c60_328",
@@ -110674,6 +111418,14 @@
    "text": "No es conveniente: en los primeros 3 años, el mejor modelo es repetir nosotros la palabra de forma natural y afectuosa dentro de la conversación, sin correcciones forzadas.",
    "speech": "No es conveniente: en los primeros 3 años, el mejor modelo es repetir nosotros la palabra de forma natural y afectuosa dentro de la conversación, sin correcciones forzadas.",
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/explicacion"
+  },
+  {
+   "id": "es_tutor_f3821ffa_145",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dale a cada criatura su pelota y su bloque. Aprieta tú primero y di «blando» con la pelota y «duro» con el bloque. Deja que lo prueben sin prisa.",
+   "speech": "Dale a cada criatura su pelota y su bloque. Aprieta tú primero y di «blando» con la pelota y «duro» con el bloque. Deja que lo prueben sin prisa.",
+   "source": "steam/I1-MATERIA-001/aula/experimenta/consignaAdulto"
   },
   {
    "id": "es_tutor_f3ec7bc6_56",
@@ -110772,12 +111524,28 @@
    "source": "progresion.primeiro_ciclo.2_3/s3/d1/foco"
   },
   {
+   "id": "es_tutor_f6eb757c_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuál se hace pequeña cuando la apretamos?",
+   "speech": "¿Cuál se hace pequeña cuando la apretamos?",
+   "source": "steam/I1-MATERIA-001/aula/observa/preguntaIndagacion"
+  },
+  {
    "id": "es_tutor_f6f17229_114",
    "lang": "es",
    "style": "tutor",
    "text": "Repite la orden de ayer con el material del mes en la mano. El objeto atrae la mirada; la palabra va con el gesto.",
    "speech": "Repite la orden de ayer con el material del mes en la mano. El objeto atrae la mirada; la palabra va con el gesto.",
    "source": "progresion.primeiro_ciclo.0_2/s1/d2/consigna"
+  },
+  {
+   "id": "es_tutor_f731a55e_58",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando dejamos de tocar, ¿por qué el agua se queda quieta?",
+   "speech": "Cuando dejamos de tocar, ¿por qué el agua se queda quieta?",
+   "source": "steam/I3-ACUSTICA-001/aula/construye/sintesisCierre"
   },
   {
    "id": "es_tutor_f7920af2_62",
@@ -110858,6 +111626,14 @@
    "text": "En el cuarto, con la luz ya baja.",
    "speech": "En el cuarto, con la luz ya baja.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/microRutina/escenaCotidiana"
+  },
+  {
+   "id": "es_tutor_f94138e3_63",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Coged la cuchara juntos y tocad primero suave y después fuerte.",
+   "speech": "Coged la cuchara juntos y tocad primero suave y después fuerte.",
+   "source": "steam/I3-ACUSTICA-001/hogar/experimenta/pistaN2"
   },
   {
    "id": "es_tutor_f941e600_112",
@@ -111044,6 +111820,14 @@
    "source": "juega.mar.01/exploracion/paso/2"
   },
   {
+   "id": "es_tutor_fdd76ed0_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuál hizo «toc» al caer?",
+   "speech": "¿Cuál hizo «toc» al caer?",
+   "source": "steam/I1-MATERIA-001/hogar/construye/sintesisCierre"
+  },
+  {
    "id": "es_tutor_fddbeb4d_40",
    "lang": "es",
    "style": "tutor",
@@ -111082,6 +111866,14 @@
    "text": "Ajusta las muñequeras con cascabeles en los tobillos de los bebés.",
    "speech": "Ajusta las muñequeras con cascabeles en los tobillos de los bebés.",
    "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/1/consigna"
+  },
+  {
+   "id": "es_tutor_ff78198f_70",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Relaciona el golpe en el tambor con las ondas que aparecen en el agua.",
+   "speech": "Relaciona el golpe en el tambor con las ondas que aparecen en el agua.",
+   "source": "steam/I3-ACUSTICA-001/observar/0"
   },
   {
    "id": "es_tutor_fff070d3_21",
@@ -111924,6 +112716,14 @@
    "source": "juega.mar.01/exploracion/paso/2"
   },
   {
+   "id": "gl_tutor_0c083ef7_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Na cuadrícula hai unha casa de saída, unha de meta coa flor e, no medio, a casa vermella bloqueada.",
+   "speech": "Na cuadrícula hai unha casa de saída, unha de meta coa flor e, no medio, a casa vermella bloqueada.",
+   "source": "steam/I5-LOGICA-001/aula/observa/planteamiento"
+  },
+  {
    "id": "gl_tutor_0cc52d0d_41",
    "lang": "gl",
    "style": "tutor",
@@ -112004,12 +112804,28 @@
    "source": "asamblea.segundo_ciclo.maio.6_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "gl_tutor_0ee18217_72",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a túa man sobre a da criatura no tubo e soltade xuntas, sen empuxar.",
+   "speech": "Pon a túa man sobre a da criatura no tubo e soltade xuntas, sen empuxar.",
+   "source": "steam/I2-CINEMATICA-001/aula/experimenta/pistaN2"
+  },
+  {
    "id": "gl_tutor_0eedd5b7_51",
    "lang": "gl",
    "style": "tutor",
    "text": "Axita os seus cascabeis coa mesma enerxía que pide.",
    "speech": "Axita os seus cascabeis coa mesma enerxía que pide.",
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/fase/3/cmd/cmd.febreiro.4i.01/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_0f7d1581_136",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di «listen» e dá golpes suaves na pota coa culler. Mirade xuntos a auga. Despois tócalle a ela, e espera cinco segundos antes de axudar.",
+   "speech": "Di «listen» e dá golpes suaves na pota coa culler. Mirade xuntos a auga. Despois tócalle a ela, e espera cinco segundos antes de axudar.",
+   "source": "steam/I3-ACUSTICA-001/hogar/experimenta/consignaAdulto"
   },
   {
    "id": "gl_tutor_0f928501_38",
@@ -112108,6 +112924,14 @@
    "source": "juega.corpo.01/puenteCasa/act/1"
   },
   {
+   "id": "gl_tutor_124373af_63",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ti e a criatura, por quendas: primeiro soltas ti e despois ela.",
+   "speech": "Ti e a criatura, por quendas: primeiro soltas ti e despois ela.",
+   "source": "steam/I2-CINEMATICA-001/hogar/agrupamiento"
+  },
+  {
    "id": "gl_tutor_12842f46_114",
    "lang": "gl",
    "style": "tutor",
@@ -112146,6 +112970,14 @@
    "text": "Dúas ordes nun só xesto",
    "speech": "Dúas ordes nun só xesto",
    "source": "progresion.primeiro_ciclo.0_2/s3/d1/foco"
+  },
+  {
+   "id": "gl_tutor_13d49b94_51",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Explica coas súas palabras que a figura tapa a luz.",
+   "speech": "Explica coas súas palabras que a figura tapa a luz.",
+   "source": "steam/I4-OPTICA-001/observar/1"
   },
   {
    "id": "gl_tutor_13fb1ba4_43",
@@ -112372,6 +113204,14 @@
    "source": "progresion.segundo_ciclo.6/s3/d4/foco"
   },
   {
+   "id": "gl_tutor_1a18fe91_47",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Solta o obxecto sen empuxalo e mira como baixa.",
+   "speech": "Solta o obxecto sen empuxalo e mira como baixa.",
+   "source": "steam/I2-CINEMATICA-001/observar/0"
+  },
+  {
    "id": "gl_tutor_1a3d4a39_50",
    "lang": "gl",
    "style": "tutor",
@@ -112450,6 +113290,14 @@
    "text": "Repaso coa canción",
    "speech": "Repaso coa canción",
    "source": "progresion.primeiro_ciclo.0_2/s3/d5/foco"
+  },
+  {
+   "id": "gl_tutor_1c8ba906_79",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cambiade: agora a criatura é o robot e ti programas. Pon o peluche noutra casa.",
+   "speech": "Cambiade: agora a criatura é o robot e ti programas. Pon o peluche noutra casa.",
+   "source": "steam/I5-LOGICA-001/hogar/construye/retoTangible"
   },
   {
    "id": "gl_tutor_1c9f79e9_49",
@@ -112860,6 +113708,14 @@
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.03/accionFisica"
   },
   {
+   "id": "gl_tutor_2ade63cc_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Parellas, cunha persoa adulta preto: unha criatura toca o tambor e a outra mira a auga. Despois cambian.",
+   "speech": "Parellas, cunha persoa adulta preto: unha criatura toca o tambor e a outra mira a auga. Despois cambian.",
+   "source": "steam/I3-ACUSTICA-001/aula/agrupamiento"
+  },
+  {
    "id": "gl_tutor_2b370018_118",
    "lang": "gl",
    "style": "tutor",
@@ -113068,6 +113924,14 @@
    "source": "juega.cores.01/exploracion/objetivoSensorial"
   },
   {
+   "id": "gl_tutor_30039ca6_82",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a túa man sobre a súa e apertade xuntos, primeiro a pelota e despois o bloque.",
+   "speech": "Pon a túa man sobre a súa e apertade xuntos, primeiro a pelota e despois o bloque.",
+   "source": "steam/I1-MATERIA-001/hogar/experimenta/pistaN2"
+  },
+  {
    "id": "gl_tutor_306ddb6b_59",
    "lang": "gl",
    "style": "tutor",
@@ -113098,6 +113962,14 @@
    "text": "Os bebés deitados comodamente sobre unha colchoneta central.",
    "speech": "Os bebés deitados comodamente sobre unha colchoneta central.",
    "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/1/consigna"
+  },
+  {
+   "id": "gl_tutor_3132df76_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ti e a criatura, no corredor ou no salón. Primeiro ti es o robot e ela programa; despois, ao revés.",
+   "speech": "Ti e a criatura, no corredor ou no salón. Primeiro ti es o robot e ela programa; despois, ao revés.",
+   "source": "steam/I5-LOGICA-001/hogar/agrupamiento"
   },
   {
    "id": "gl_tutor_313462ce_46",
@@ -113146,6 +114018,14 @@
    "text": "Empezar todas enroscadas no chan e subir unha liña de cada vez. Non hai que chegar de pé: subir un pouco xa é medrar.",
    "speech": "Empezar todas enroscadas no chan e subir unha liña de cada vez. Non hai que chegar de pé: subir un pouco xa é medrar.",
    "source": "juega.primavera.01/cancionPulso/consigna"
+  },
+  {
+   "id": "gl_tutor_31e04172_148",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di «listen» e dá tres golpes suaves na caixa coa culler. Pídelle á observadora que mire a auga. Despois, a tamborileira proba a tocar forte e suave.",
+   "speech": "Di «listen» e dá tres golpes suaves na caixa coa culler. Pídelle á observadora que mire a auga. Despois, a tamborileira proba a tocar forte e suave.",
+   "source": "steam/I3-ACUSTICA-001/aula/experimenta/consignaAdulto"
   },
   {
    "id": "gl_tutor_31f3a103_64",
@@ -113292,6 +114172,14 @@
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/3/cmd/cmd.xuno.4i.01/modeladoDocente"
   },
   {
+   "id": "gl_tutor_36d21b32_94",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a man na pota mentres toco. Que notas? Agora cantamos «mmm», cada un coa man na súa gorxa.",
+   "speech": "Pon a man na pota mentres toco. Que notas? Agora cantamos «mmm», cada un coa man na súa gorxa.",
+   "source": "steam/I3-ACUSTICA-001/hogar/experimenta/pistaN1"
+  },
+  {
    "id": "gl_tutor_372a3798_194",
    "lang": "gl",
    "style": "tutor",
@@ -113338,6 +114226,22 @@
    "text": "Conxelación inmediata na postura en que se estaba.",
    "speech": "Conxelación inmediata na postura en que se estaba.",
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/cmd/cmd.abril.5i.02/accionFisica"
+  },
+  {
+   "id": "gl_tutor_3a62d27e_98",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cambiade os papeis e facede un programa novo: a flor cambia de sitio e o robot ten que ir buscala.",
+   "speech": "Cambiade os papeis e facede un programa novo: a flor cambia de sitio e o robot ten que ir buscala.",
+   "source": "steam/I5-LOGICA-001/aula/construye/retoTangible"
+  },
+  {
+   "id": "gl_tutor_3b10184b_119",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira onde está a lanterna, sen mirar a luz. Cando a figura está preto dela, a sombra faise máis grande ou máis pequena?",
+   "speech": "Mira onde está a lanterna, sen mirar a luz. Cando a figura está preto dela, a sombra faise máis grande ou máis pequena?",
+   "source": "steam/I4-OPTICA-001/aula/experimenta/pistaN1"
   },
   {
    "id": "gl_tutor_3b41299e_69",
@@ -113388,6 +114292,14 @@
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "gl_tutor_3d3610f9_197",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lanterna LED que non quente, coa tapa das pilas pechada con parafuso. Que ninguén mire directamente á luz nin a apunte aos ollos. Deixa libre o espazo entre a lanterna e a parede para non tropezar.",
+   "speech": "Lanterna LED que non quente, coa tapa das pilas pechada con parafuso. Que ninguén mire directamente á luz nin a apunte aos ollos. Deixa libre o espazo entre a lanterna e a parede para non tropezar.",
+   "source": "steam/I4-OPTICA-001/seguridad"
+  },
+  {
    "id": "gl_tutor_3d58e4c8_42",
    "lang": "gl",
    "style": "tutor",
@@ -113404,6 +114316,22 @@
    "source": "asamblea.segundo_ciclo.novembro.4_infantil/fase/3/cmd/cmd.novembro.4i.03/accionFisica"
   },
   {
+   "id": "gl_tutor_3e04aa4e_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a man na caixa mentres tocamos. Que notas? E se cantamos «mmm», cada unha coa man na súa gorxa?",
+   "speech": "Pon a man na caixa mentres tocamos. Que notas? E se cantamos «mmm», cada unha coa man na súa gorxa?",
+   "source": "steam/I3-ACUSTICA-001/aula/experimenta/pistaN1"
+  },
+  {
+   "id": "gl_tutor_3e380fc6_213",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di «look» e que todas miren a parede. Coa orde «step forward», a titiriteira achégase á parede e a sombra encolle; con «step back» volve cara á lanterna e a sombra medra. A rastrexadora marca cada sitio con cinta.",
+   "speech": "Di «look» e que todas miren a parede. Coa orde «step forward», a titiriteira achégase á parede e a sombra encolle; con «step back» volve cara á lanterna e a sombra medra. A rastrexadora marca cada sitio con cinta.",
+   "source": "steam/I4-OPTICA-001/aula/experimenta/consignaAdulto"
+  },
+  {
    "id": "gl_tutor_3e5a4f38_55",
    "lang": "gl",
    "style": "tutor",
@@ -113418,6 +114346,14 @@
    "text": "Non dirixas: segue. Mira o que el está a mirar, nómao, e cala cinco segundos contando na túa cabeza. Devolve o que faga —un son, un xesto, unha ollada— coma se fose unha resposta, porque o é.",
    "speech": "Non dirixas: segue. Mira o que el está a mirar, nómao, e cala cinco segundos contando na túa cabeza. Devolve o que faga —un son, un xesto, unha ollada— coma se fose unha resposta, porque o é.",
    "source": "academy.turnos_atencion_conjunta.01/queHacerEnCasa"
+  },
+  {
+   "id": "gl_tutor_3f0819ba_79",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando digas «stop», a criatura pousa a man aberta na pota. Que lle pasa á auga?",
+   "speech": "Cando digas «stop», a criatura pousa a man aberta na pota. Que lle pasa á auga?",
+   "source": "steam/I3-ACUSTICA-001/hogar/construye/retoTangible"
   },
   {
    "id": "gl_tutor_3f1b08dd_70",
@@ -113564,6 +114500,14 @@
    "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.02/accionFisica"
   },
   {
+   "id": "gl_tutor_43025278_160",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A programadora pon as tarxetas en fila. Despois le cada tarxeta en voz alta e di a orde en inglés: «step», «turn right» ou «turn left». O robot fai só esa orde.",
+   "speech": "A programadora pon as tarxetas en fila. Despois le cada tarxeta en voz alta e di a orde en inglés: «step», «turn right» ou «turn left». O robot fai só esa orde.",
+   "source": "steam/I5-LOGICA-001/aula/experimenta/consignaAdulto"
+  },
+  {
    "id": "gl_tutor_439a62ee_48",
    "lang": "gl",
    "style": "tutor",
@@ -113618,6 +114562,14 @@
    "text": "Deixar que unha crianza marque o ritmo e que as demais a sigan.",
    "speech": "Deixar que unha crianza marque o ritmo e que as demais a sigan.",
    "source": "juega.inverno.01/matematicas/accion/1"
+  },
+  {
+   "id": "gl_tutor_444586e9_90",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ti e a criatura, á mesa ou no chan, cunha toalla debaixo. Primeiro tocas ti e despois ela.",
+   "speech": "Ti e a criatura, á mesa ou no chan, cunha toalla debaixo. Primeiro tocas ti e despois ela.",
+   "source": "steam/I3-ACUSTICA-001/hogar/agrupamiento"
   },
   {
    "id": "gl_tutor_444b91a0_75",
@@ -113676,6 +114628,14 @@
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/cmd/cmd.decembro.6i.02/modeladoDocente"
   },
   {
+   "id": "gl_tutor_45f2710d_75",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que temos que facer co xoguete para que a sombra sexa pequena coma un rato?",
+   "speech": "Que temos que facer co xoguete para que a sombra sexa pequena coma un rato?",
+   "source": "steam/I4-OPTICA-001/hogar/observa/preguntaIndagacion"
+  },
+  {
    "id": "gl_tutor_46191138_71",
    "lang": "gl",
    "style": "tutor",
@@ -113732,6 +114692,14 @@
    "source": "juega.benvida.01/puenteCasa/act/0"
   },
   {
+   "id": "gl_tutor_482cc808_109",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Coa luz da habitación apagada, pousa a lanterna nunha mesa apuntando á parede e pon o xoguete moi preto dela.",
+   "speech": "Coa luz da habitación apagada, pousa a lanterna nunha mesa apuntando á parede e pon o xoguete moi preto dela.",
+   "source": "steam/I4-OPTICA-001/hogar/observa/planteamiento"
+  },
+  {
    "id": "gl_tutor_490d0a85_142",
    "lang": "gl",
    "style": "tutor",
@@ -113770,6 +114738,14 @@
    "text": "Dar tempo a que o intente antes de axudar. Vestirse mal e só ensina máis ca vestirse ben e rápido de mans doutra persoa.",
    "speech": "Dar tempo a que o intente antes de axudar. Vestirse mal e só ensina máis ca vestirse ben e rápido de mans doutra persoa.",
    "source": "juega.choiva.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "gl_tutor_4a61d430_149",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cinta ben pegada ao chan e sen dobras, para non tropezar. O robot camiña, non corre. Deixa arredor da cuadrícula un espazo libre de mesas e cadeiras.",
+   "speech": "Cinta ben pegada ao chan e sen dobras, para non tropezar. O robot camiña, non corre. Deixa arredor da cuadrícula un espazo libre de mesas e cadeiras.",
+   "source": "steam/I5-LOGICA-001/seguridad"
   },
   {
    "id": "gl_tutor_4aabc901_59",
@@ -113860,6 +114836,14 @@
    "source": "juega.cores.01/exploracion/avisoSeguridad"
   },
   {
+   "id": "gl_tutor_4edbc663_61",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Coa rampla máis alta, a pelota foi máis rápido ou máis amodo?",
+   "speech": "Coa rampla máis alta, a pelota foi máis rápido ou máis amodo?",
+   "source": "steam/I2-CINEMATICA-001/hogar/construye/sintesisCierre"
+  },
+  {
    "id": "gl_tutor_4ef4d6e2_40",
    "lang": "gl",
    "style": "tutor",
@@ -113908,6 +114892,14 @@
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "gl_tutor_4fd5c262_70",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Poñede un libro máis debaixo da rampla e probade outra vez coa pelota.",
+   "speech": "Poñede un libro máis debaixo da rampla e probade outra vez coa pelota.",
+   "source": "steam/I2-CINEMATICA-001/hogar/construye/retoTangible"
+  },
+  {
    "id": "gl_tutor_4ff463b9_90",
    "lang": "gl",
    "style": "tutor",
@@ -113946,6 +114938,14 @@
    "text": "Ter na man o obxecto da cor que se canta. A palabra soa sen obxecto diante non ensina a cor a esta idade.",
    "speech": "Ter na man o obxecto da cor que se canta. A palabra soa sen obxecto diante non ensina a cor a esta idade.",
    "source": "juega.cores.01/cancionPulso/consigna"
+  },
+  {
+   "id": "gl_tutor_5111862d_65",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca o tubo: é redondo. E o bloque, ten esquinas? Cal pode rodar?",
+   "speech": "Toca o tubo: é redondo. E o bloque, ten esquinas? Cal pode rodar?",
+   "source": "steam/I2-CINEMATICA-001/aula/experimenta/pistaN1"
   },
   {
    "id": "gl_tutor_512d2e14_158",
@@ -114260,6 +115260,14 @@
    "source": "asamblea.segundo_ciclo.maio.6_infantil/fase/3/cmd/cmd.maio.6i.03/modeladoDocente"
   },
   {
+   "id": "gl_tutor_572603b8_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Paro aquí e non chego. Que frecha cambiamos?",
+   "speech": "Paro aquí e non chego. Que frecha cambiamos?",
+   "source": "steam/I5-LOGICA-001/hogar/experimenta/pistaN1"
+  },
+  {
    "id": "gl_tutor_57406a94_27",
    "lang": "gl",
    "style": "tutor",
@@ -114444,6 +115452,14 @@
    "source": "progresion.primeiro_ciclo.2_3/s2/d2/consigna"
   },
   {
+   "id": "gl_tutor_5b82259e_139",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di «roll» e solta a pelota sen empuxala. Despois solta o bloque. Deixa que a criatura faga o mesmo e espera cinco segundos antes de axudar.",
+   "speech": "Di «roll» e solta a pelota sen empuxala. Despois solta o bloque. Deixa que a criatura faga o mesmo e espera cinco segundos antes de axudar.",
+   "source": "steam/I2-CINEMATICA-001/hogar/experimenta/consignaAdulto"
+  },
+  {
    "id": "gl_tutor_5c03a323_64",
    "lang": "gl",
    "style": "tutor",
@@ -114474,6 +115490,14 @@
    "text": "Circuíto en parellas: un neno guía o compañeiro cos ollos pechados por un camiño delimitado con cordas, transportando unha vela LED apagada.",
    "speech": "Circuíto en parellas: un neno guía o compañeiro cos ollos pechados por un camiño delimitado con cordas, transportando unha vela LED apagada.",
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/consigna"
+  },
+  {
+   "id": "gl_tutor_5c67c14c_127",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando digas «drop», cada criatura solta os seus obxectos na cesta. Escoitade o son: o bloque fai «toc» e a pelota case non soa.",
+   "speech": "Cando digas «drop», cada criatura solta os seus obxectos na cesta. Escoitade o son: o bloque fai «toc» e a pelota case non soa.",
+   "source": "steam/I1-MATERIA-001/aula/construye/retoTangible"
   },
   {
    "id": "gl_tutor_5c9bcc9e_68",
@@ -114514,6 +115538,14 @@
    "text": "Porque unha é redonda e a outra ten esquinas.",
    "speech": "Porque unha é redonda e a outra ten esquinas.",
    "source": "juega.cores.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_5dbc858e_59",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Coa rampla máis alta, o tubo foi máis rápido ou máis amodo?",
+   "speech": "Coa rampla máis alta, o tubo foi máis rápido ou máis amodo?",
+   "source": "steam/I2-CINEMATICA-001/aula/construye/sintesisCierre"
   },
   {
    "id": "gl_tutor_5e5c2682_106",
@@ -114564,6 +115596,14 @@
    "source": "progresion.primeiro_ciclo.0_2/s2/d1/foco"
   },
   {
+   "id": "gl_tutor_5f929d0d_102",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ti e a criatura, de noite ou coa persiana baixada. Un move a figura e o outro mira; despois cambiades.",
+   "speech": "Ti e a criatura, de noite ou coa persiana baixada. Un move a figura e o outro mira; despois cambiades.",
+   "source": "steam/I4-OPTICA-001/hogar/agrupamiento"
+  },
+  {
    "id": "gl_tutor_5fd8ad44_165",
    "lang": "gl",
    "style": "tutor",
@@ -114578,6 +115618,14 @@
    "text": "Pulso constante a 72 BPM con palmadas cruzadas entre parellas (man dereita con dereita, esquerda con esquerda) marcando tempos fortes e débiles sen esixir verbalización.",
    "speech": "Pulso constante a 72 BPM con palmadas cruzadas entre parellas (man dereita con dereita, esquerda con esquerda) marcando tempos fortes e débiles sen esixir verbalización.",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/fase/2/consigna"
+  },
+  {
+   "id": "gl_tutor_6056b9dd_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira onde está a lanterna, sen mirar a luz. Se o xoguete vai cara a ela, a sombra medra ou encolle?",
+   "speech": "Mira onde está a lanterna, sen mirar a luz. Se o xoguete vai cara a ela, a sombra medra ou encolle?",
+   "source": "steam/I4-OPTICA-001/hogar/experimenta/pistaN1"
   },
   {
    "id": "gl_tutor_607017e3_68",
@@ -114690,6 +115738,14 @@
    "text": "Manipulación de pulseiras de cascabeis: axitación enérxica dos brazos en alto («loud») e detención brusca pegando as mans ao abdome ante o comando murmurado («quiet»).",
    "speech": "Manipulación de pulseiras de cascabeis: axitación enérxica dos brazos en alto («loud») e detención brusca pegando as mans ao abdome ante o comando murmurado («quiet»).",
    "source": "asamblea.segundo_ciclo.febreiro.4_infantil/fase/3/consigna"
+  },
+  {
+   "id": "gl_tutor_63c284cb_102",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xogade ás adiviñas: ti dis «grande» ou «pequena» e a criatura busca o sitio. Despois pídecho ela a ti.",
+   "speech": "Xogade ás adiviñas: ti dis «grande» ou «pequena» e a criatura busca o sitio. Despois pídecho ela a ti.",
+   "source": "steam/I4-OPTICA-001/hogar/construye/retoTangible"
   },
   {
    "id": "gl_tutor_63f32abb_31",
@@ -114980,6 +116036,14 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "gl_tutor_6a9c5135_64",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a man na orella cando escoita «listen» e agarda en silencio.",
+   "speech": "Pon a man na orella cando escoita «listen» e agarda en silencio.",
+   "source": "steam/I3-ACUSTICA-001/observar/2"
+  },
+  {
    "id": "gl_tutor_6aad63c0_74",
    "lang": "gl",
    "style": "tutor",
@@ -115188,6 +116252,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/enunciado"
   },
   {
+   "id": "gl_tutor_70d43482_91",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a caixa boca abaixo e a cunca con auga enriba, no medio. Ensina que a auga está quieta.",
+   "speech": "Pon a caixa boca abaixo e a cunca con auga enriba, no medio. Ensina que a auga está quieta.",
+   "source": "steam/I3-ACUSTICA-001/aula/observa/planteamiento"
+  },
+  {
    "id": "gl_tutor_70daa0e8_44",
    "lang": "gl",
    "style": "tutor",
@@ -115202,6 +116274,14 @@
    "text": "Pulverizar sobre o calcetín e comprobar que queda mollado.",
    "speech": "Pulverizar sobre o calcetín e comprobar que queda mollado.",
    "source": "juega.choiva.01/exploracion/paso/2"
+  },
+  {
+   "id": "gl_tutor_711d9b41_60",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Relaciona o golpe no tambor coas ondas que aparecen na auga.",
+   "speech": "Relaciona o golpe no tambor coas ondas que aparecen na auga.",
+   "source": "steam/I3-ACUSTICA-001/observar/0"
   },
   {
    "id": "gl_tutor_713915f5_160",
@@ -115226,6 +116306,14 @@
    "text": "Facelo soar detrás dun ombreiro e despois do outro: buscar o son coa cabeza xa é responder.",
    "speech": "Facelo soar detrás dun ombreiro e despois do outro: buscar o son coa cabeza xa é responder.",
    "source": "juega.inverno.01/preguntas/?/consejoDocente"
+  },
+  {
+   "id": "gl_tutor_722bfb9e_76",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Colle a súa man co xoguete e movédeo xuntos cara á lanterna e cara á parede.",
+   "speech": "Colle a súa man co xoguete e movédeo xuntos cara á lanterna e cara á parede.",
+   "source": "steam/I4-OPTICA-001/hogar/experimenta/pistaN2"
   },
   {
    "id": "gl_tutor_72334cf5_114",
@@ -115524,6 +116612,14 @@
    "source": "juega.corpo.01/cuento/1/texto"
   },
   {
+   "id": "gl_tutor_7aaaa575_144",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dálle a cada criatura a súa pelota e o seu bloque. Aperta ti primeiro e di «brando» coa pelota e «duro» co bloque. Deixa que o proben sen présa.",
+   "speech": "Dálle a cada criatura a súa pelota e o seu bloque. Aperta ti primeiro e di «brando» coa pelota e «duro» co bloque. Deixa que o proben sen présa.",
+   "source": "steam/I1-MATERIA-001/aula/experimenta/consignaAdulto"
+  },
+  {
    "id": "gl_tutor_7abe5829_58",
    "lang": "gl",
    "style": "tutor",
@@ -115570,6 +116666,14 @@
    "text": "Non converter a saída nunha présa con exame. Primeiro o xesto, logo a frase.",
    "speech": "Non converter a saída nunha présa con exame. Primeiro o xesto, logo a frase.",
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
+   "id": "gl_tutor_7ca645e2_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Marca a cuadrícula no chan e pon o peluche nunha esquina. Ti colócaste na esquina contraria: es o robot.",
+   "speech": "Marca a cuadrícula no chan e pon o peluche nunha esquina. Ti colócaste na esquina contraria: es o robot.",
+   "source": "steam/I5-LOGICA-001/hogar/observa/planteamiento"
   },
   {
    "id": "gl_tutor_7cea2352_199",
@@ -115634,6 +116738,14 @@
    "text": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
    "speech": "Sentados, brazos arriba ao inspirar e abaixo cun «sss» longo. Pecha e cala.",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/4/consigna"
+  },
+  {
+   "id": "gl_tutor_7fe13597_123",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Déixalle os dous obxectos. Aperta ti primeiro e di «brando» e «duro». Espera cinco segundos antes de axudar: que probe ela.",
+   "speech": "Déixalle os dous obxectos. Aperta ti primeiro e di «brando» e «duro». Espera cinco segundos antes de axudar: que probe ela.",
+   "source": "steam/I1-MATERIA-001/hogar/experimenta/consignaAdulto"
   },
   {
    "id": "gl_tutor_7ff0a56b_50",
@@ -115740,6 +116852,14 @@
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/explicacion"
   },
   {
+   "id": "gl_tutor_83ba3936_67",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se cambiamos a orde de dúas tarxetas, chega o robot ao mesmo sitio?",
+   "speech": "Se cambiamos a orde de dúas tarxetas, chega o robot ao mesmo sitio?",
+   "source": "steam/I5-LOGICA-001/aula/construye/sintesisCierre"
+  },
+  {
    "id": "gl_tutor_841686f3_52",
    "lang": "gl",
    "style": "tutor",
@@ -115754,6 +116874,14 @@
    "text": "Ensaio para as casas",
    "speech": "Ensaio para as casas",
    "source": "progresion.primeiro_ciclo.0_2/s4/d4/foco"
+  },
+  {
+   "id": "gl_tutor_8453f3b6_113",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Parellas. Unha criatura move a figura e a outra marca no chan onde a sombra é grande ou pequena. Despois cambian.",
+   "speech": "Parellas. Unha criatura move a figura e a outra marca no chan onde a sombra é grande ou pequena. Despois cambian.",
+   "source": "steam/I4-OPTICA-001/aula/agrupamiento"
   },
   {
    "id": "gl_tutor_84b8cf5b_48",
@@ -115996,6 +117124,22 @@
    "source": "progresion.primeiro_ciclo.0_2/s2/d5/consigna"
   },
   {
+   "id": "gl_tutor_8b94fd35_52",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon as tarxetas en orde antes de que o robot comece.",
+   "speech": "Pon as tarxetas en orde antes de que o robot comece.",
+   "source": "steam/I5-LOGICA-001/observar/0"
+  },
+  {
+   "id": "gl_tutor_8bc34b5d_67",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Colle a súa man e facede xuntos o camiño antes de poñer as frechas.",
+   "speech": "Colle a súa man e facede xuntos o camiño antes de poñer as frechas.",
+   "source": "steam/I5-LOGICA-001/hogar/experimenta/pistaN2"
+  },
+  {
    "id": "gl_tutor_8bc89836_70",
    "lang": "gl",
    "style": "tutor",
@@ -116028,6 +117172,14 @@
    "source": "progresion.primeiro_ciclo.0_2/s1/d1/consigna"
   },
   {
+   "id": "gl_tutor_8c75eee6_51",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que ordes tes que darme para que chegue ao peluche?",
+   "speech": "Que ordes tes que darme para que chegue ao peluche?",
+   "source": "steam/I5-LOGICA-001/hogar/observa/preguntaIndagacion"
+  },
+  {
    "id": "gl_tutor_8c875113_38",
    "lang": "gl",
    "style": "tutor",
@@ -116044,6 +117196,22 @@
    "source": "juega.mar.01/exploracion/paso/3"
   },
   {
+   "id": "gl_tutor_8cdf18b2_51",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Respecta a quenda e agarda a orde antes de moverse.",
+   "speech": "Respecta a quenda e agarda a orde antes de moverse.",
+   "source": "steam/I5-LOGICA-001/observar/2"
+  },
+  {
+   "id": "gl_tutor_8ce97f26_96",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Colle a culler coa tamborileira e tocade xuntas, primeiro suave e despois forte, mirando a auga.",
+   "speech": "Colle a culler coa tamborileira e tocade xuntas, primeiro suave e despois forte, mirando a auga.",
+   "source": "steam/I3-ACUSTICA-001/aula/experimenta/pistaN2"
+  },
+  {
    "id": "gl_tutor_8d013253_58",
    "lang": "gl",
    "style": "tutor",
@@ -116058,6 +117226,14 @@
    "text": "Validar a intención e devolver a forma; nunca esixir a repetición.",
    "speech": "Validar a intención e devolver a forma; nunca esixir a repetición.",
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
+   "id": "gl_tutor_8d75bddc_61",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Aperta a pelota e o bloque, e nota que un cede e o outro non.",
+   "speech": "Aperta a pelota e o bloque, e nota que un cede e o outro non.",
+   "source": "steam/I1-MATERIA-001/observar/0"
   },
   {
    "id": "gl_tutor_8d882cc8_117",
@@ -116260,6 +117436,14 @@
    "source": "juega.follas.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "gl_tutor_9231958b_61",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Solta o obxecto cando escoita «drop» ou cando ve o teu xesto.",
+   "speech": "Solta o obxecto cando escoita «drop» ou cando ve o teu xesto.",
+   "source": "steam/I1-MATERIA-001/observar/2"
+  },
+  {
    "id": "gl_tutor_924b6585_112",
    "lang": "gl",
    "style": "tutor",
@@ -116298,6 +117482,14 @@
    "text": "Non hai exame: describir en voz alta xa é o modelado.",
    "speech": "Non hai exame: describir en voz alta xa é o modelado.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/microRutina/pauta/0/consejoEvitar"
+  },
+  {
+   "id": "gl_tutor_93360dce_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cambiade os papeis. Cando digas «stop», a tamborileira pousa a man aberta na caixa. Que lle pasa á auga?",
+   "speech": "Cambiade os papeis. Cando digas «stop», a tamborileira pousa a man aberta na caixa. Que lle pasa á auga?",
+   "source": "steam/I3-ACUSTICA-001/aula/construye/retoTangible"
   },
   {
    "id": "gl_tutor_9348554c_33",
@@ -116370,6 +117562,22 @@
    "text": "Retira a pluma e deixa a man aberta e quieta sobre a barriga.",
    "speech": "Retira a pluma e deixa a man aberta e quieta sobre a barriga.",
    "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/4/consigna"
+  },
+  {
+   "id": "gl_tutor_9557cb1b_164",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pequeno grupo de tres ou catro criaturas, cada unha cos seus obxectos. A esta idade xogan unhas á beira das outras, non por parellas: non fai falta repartir papeis.",
+   "speech": "Pequeno grupo de tres ou catro criaturas, cada unha cos seus obxectos. A esta idade xogan unhas á beira das outras, non por parellas: non fai falta repartir papeis.",
+   "source": "steam/I1-MATERIA-001/aula/agrupamiento"
+  },
+  {
+   "id": "gl_tutor_95dac75f_46",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segue coa mirada o obxecto cando cae na cesta.",
+   "speech": "Segue coa mirada o obxecto cando cae na cesta.",
+   "source": "steam/I1-MATERIA-001/observar/1"
   },
   {
    "id": "gl_tutor_95e5a961_64",
@@ -116468,12 +117676,28 @@
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_990830b3_157",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Rampla baixa e estable, apoiada no chan. O que rode ten que ser grande e estar enteiro: se o cartón se rompe ou se molla, retírao. Que ninguén suba á rampla.",
+   "speech": "Rampla baixa e estable, apoiada no chan. O que rode ten que ser grande e estar enteiro: se o cartón se rompe ou se molla, retírao. Que ninguén suba á rampla.",
+   "source": "steam/I2-CINEMATICA-001/seguridad"
+  },
+  {
    "id": "gl_tutor_990c4042_41",
    "lang": "gl",
    "style": "tutor",
    "text": "Circuito de emulación corporal polo aula.",
    "speech": "Circuito de emulación corporal polo aula.",
    "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/2/consigna"
+  },
+  {
+   "id": "gl_tutor_9978a901_66",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Achega ou afasta a figura para conseguir a sombra que se lle pide.",
+   "speech": "Achega ou afasta a figura para conseguir a sombra que se lle pide.",
+   "source": "steam/I4-OPTICA-001/observar/0"
   },
   {
    "id": "gl_tutor_9997137d_73",
@@ -116490,6 +117714,22 @@
    "text": "Repite a orde de onte co material do mes na man. O obxecto atrae a mirada; a palabra vai co xesto.",
    "speech": "Repite a orde de onte co material do mes na man. O obxecto atrae a mirada; a palabra vai co xesto.",
    "source": "progresion.primeiro_ciclo.0_2/s1/d2/consigna"
+  },
+  {
+   "id": "gl_tutor_9a1d60db_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Colle a man da titiriteira e dade xuntas un paso cara á lanterna e outro cara á parede, mirando a sombra.",
+   "speech": "Colle a man da titiriteira e dade xuntas un paso cara á lanterna e outro cara á parede, mirando a sombra.",
+   "source": "steam/I4-OPTICA-001/aula/experimenta/pistaN2"
+  },
+  {
+   "id": "gl_tutor_9a21c3da_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai xirar os brazos cando escoita «roll».",
+   "speech": "Fai xirar os brazos cando escoita «roll».",
+   "source": "steam/I2-CINEMATICA-001/observar/2"
   },
   {
    "id": "gl_tutor_9a4b921e_108",
@@ -116570,6 +117810,14 @@
    "text": "Modular a intensidade da ondada segundo a orde.",
    "speech": "Modular a intensidade da ondada segundo a orde.",
    "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/2/consigna"
+  },
+  {
+   "id": "gl_tutor_9c7815d3_79",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O robot chegou a unha casa onde non pode seguir. Que tarxeta temos que cambiar?",
+   "speech": "O robot chegou a unha casa onde non pode seguir. Que tarxeta temos que cambiar?",
+   "source": "steam/I5-LOGICA-001/aula/experimenta/pistaN1"
   },
   {
    "id": "gl_tutor_9c8e02d2_67",
@@ -116700,12 +117948,28 @@
    "source": "juega.follas.01/exploracion/paso/0"
   },
   {
+   "id": "gl_tutor_a0205d0f_74",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Nota a vibración coa man no tambor ou na súa propia gorxa ao cantar «mmm».",
+   "speech": "Nota a vibración coa man no tambor ou na súa propia gorxa ao cantar «mmm».",
+   "source": "steam/I3-ACUSTICA-001/observar/1"
+  },
+  {
    "id": "gl_tutor_a039f4e1_46",
    "lang": "gl",
    "style": "tutor",
    "text": "Ovillados no chan en posición fetal encollida.",
    "speech": "Ovillados no chan en posición fetal encollida.",
    "source": "asamblea.primeiro_ciclo.abril.2_3_anos/fase/1/consigna"
+  },
+  {
+   "id": "gl_tutor_a03c9ffa_83",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a pota boca abaixo e a cunca con auga enriba. Ensínalle que a auga está quieta.",
+   "speech": "Pon a pota boca abaixo e a cunca con auga enriba. Ensínalle que a auga está quieta.",
+   "source": "steam/I3-ACUSTICA-001/hogar/observa/planteamiento"
   },
   {
    "id": "gl_tutor_a073a52c_26",
@@ -116876,6 +118140,30 @@
    "source": "juega.inverno.01/preguntas/?/enunciado"
   },
   {
+   "id": "gl_tutor_a520cdcc_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cal fixo ruído ao caer: o brando ou o duro?",
+   "speech": "Cal fixo ruído ao caer: o brando ou o duro?",
+   "source": "steam/I1-MATERIA-001/aula/construye/sintesisCierre"
+  },
+  {
+   "id": "gl_tutor_a551c563_59",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando o robot non chega, busca que tarxeta falla e cámbiaa.",
+   "speech": "Cando o robot non chega, busca que tarxeta falla e cámbiaa.",
+   "source": "steam/I5-LOGICA-001/observar/1"
+  },
+  {
+   "id": "gl_tutor_a55eb0c0_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se os soltamos á vez, cal baixará?",
+   "speech": "Se os soltamos á vez, cal baixará?",
+   "source": "steam/I2-CINEMATICA-001/aula/observa/preguntaIndagacion"
+  },
+  {
    "id": "gl_tutor_a57f4a69_237",
    "lang": "gl",
    "style": "tutor",
@@ -116996,12 +118284,28 @@
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "gl_tutor_a8aced71_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cal fixo «toc» ao caer?",
+   "speech": "Cal fixo «toc» ao caer?",
+   "source": "steam/I1-MATERIA-001/hogar/construye/sintesisCierre"
+  },
+  {
    "id": "gl_tutor_a8f4b407_51",
    "lang": "gl",
    "style": "tutor",
    "text": "Modela a marcha en puntas e baixa aínda máis a voz.",
    "speech": "Modela a marcha en puntas e baixa aínda máis a voz.",
    "source": "asamblea.segundo_ciclo.abril.5_infantil/fase/3/cmd/cmd.abril.5i.03/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_a92d3e01_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Camiña ti detrás do robot, coas mans nos seus ombros, e xirade xuntas cara ao lado da frecha.",
+   "speech": "Camiña ti detrás do robot, coas mans nos seus ombros, e xirade xuntas cara ao lado da frecha.",
+   "source": "steam/I5-LOGICA-001/aula/experimenta/pistaN2"
   },
   {
    "id": "gl_tutor_a932a857_53",
@@ -117124,6 +118428,14 @@
    "source": "juega.mar.01/cuento/2/texto"
   },
   {
+   "id": "gl_tutor_ac34dddd_97",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Apoia a rampla na caixa, con pouca inclinación. Pon arriba o tubo deitado e o bloque ao seu lado.",
+   "speech": "Apoia a rampla na caixa, con pouca inclinación. Pon arriba o tubo deitado e o bloque ao seu lado.",
+   "source": "steam/I2-CINEMATICA-001/aula/observa/planteamiento"
+  },
+  {
    "id": "gl_tutor_ac39347b_55",
    "lang": "gl",
    "style": "tutor",
@@ -117146,6 +118458,14 @@
    "text": "Modelado sincrónico total: a docente ergue o corpo e dá palmas simultaneamente co comando en L3.",
    "speech": "Modelado sincrónico total: a docente ergue o corpo e dá palmas simultaneamente co comando en L3.",
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/3/cmd/cmd.setembro.4i.01/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_acfc248f_85",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Senta no chan fronte á criatura, cun obxecto en cada man. Apértaos amodo diante dela.",
+   "speech": "Senta no chan fronte á criatura, cun obxecto en cada man. Apértaos amodo diante dela.",
+   "source": "steam/I1-MATERIA-001/hogar/observa/planteamiento"
   },
   {
    "id": "gl_tutor_ad06987b_53",
@@ -117290,6 +118610,14 @@
    "text": "Traballar a propiocepción, o equilibrio e a inhibición do movemento.",
    "speech": "Traballar a propiocepción, o equilibrio e a inhibición do movemento.",
    "source": "juega.corpo.01/exploracion/objetivoSensorial"
+  },
+  {
+   "id": "gl_tutor_b10de955_67",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ponse de acordo coa compañeira: unha move a figura e a outra marca.",
+   "speech": "Ponse de acordo coa compañeira: unha move a figura e a outra marca.",
+   "source": "steam/I4-OPTICA-001/observar/2"
   },
   {
    "id": "gl_tutor_b113d011_83",
@@ -117716,6 +119044,22 @@
    "source": "progresion.segundo_ciclo.6/s3/d1/foco"
   },
   {
+   "id": "gl_tutor_bbcdd4ed_123",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di «drop» e soltade os obxectos na cesta por quendas: primeiro ti, despois a criatura. Escoitade o que fai cada un ao caer.",
+   "speech": "Di «drop» e soltade os obxectos na cesta por quendas: primeiro ti, despois a criatura. Escoitade o que fai cada un ao caer.",
+   "source": "steam/I1-MATERIA-001/hogar/construye/retoTangible"
+  },
+  {
+   "id": "gl_tutor_bc572294_143",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Marcade no chan a liña da sombra xigante e a da sombra pequena. Cando digas un tamaño, a titiriteira vai á súa liña. Despois cambian os papeis.",
+   "speech": "Marcade no chan a liña da sombra xigante e a da sombra pequena. Cando digas un tamaño, a titiriteira vai á súa liña. Despois cambian os papeis.",
+   "source": "steam/I4-OPTICA-001/aula/construye/retoTangible"
+  },
+  {
    "id": "gl_tutor_bcac3d05_107",
    "lang": "gl",
    "style": "tutor",
@@ -117900,6 +119244,14 @@
    "source": "asamblea.segundo_ciclo.setembro.5_infantil/fase/3/cmd/cmd.setembro.5i.03/modeladoDocente"
   },
   {
+   "id": "gl_tutor_c32fdf65_80",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a túa man sobre a da criatura e apertade xuntas a pelota; despois, o bloque.",
+   "speech": "Pon a túa man sobre a da criatura e apertade xuntas a pelota; despois, o bloque.",
+   "source": "steam/I1-MATERIA-001/aula/experimenta/pistaN2"
+  },
+  {
    "id": "gl_tutor_c33d20a7_66",
    "lang": "gl",
    "style": "tutor",
@@ -117964,6 +119316,14 @@
    "source": "juega.choiva.01/exploracion/paso/0"
   },
   {
+   "id": "gl_tutor_c59de6f0_62",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Soltade a pelota xuntos, coa túa man sobre a súa, sen empuxar.",
+   "speech": "Soltade a pelota xuntos, coa túa man sobre a súa, sen empuxar.",
+   "source": "steam/I2-CINEMATICA-001/hogar/experimenta/pistaN2"
+  },
+  {
    "id": "gl_tutor_c65c2c13_93",
    "lang": "gl",
    "style": "tutor",
@@ -117980,12 +119340,28 @@
    "source": "juega.primavera.01/cuento/2/pregunta"
   },
   {
+   "id": "gl_tutor_c715fab4_138",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Parellas: unha criatura programa coas tarxetas e a outra fai de robot; despois cambian. O resto do grupo pode axudar a revisar o programa.",
+   "speech": "Parellas: unha criatura programa coas tarxetas e a outra fai de robot; despois cambian. O resto do grupo pode axudar a revisar o programa.",
+   "source": "steam/I5-LOGICA-001/aula/agrupamiento"
+  },
+  {
    "id": "gl_tutor_c7788712_42",
    "lang": "gl",
    "style": "tutor",
    "text": "Levar a man á cabeza ou mirar cara arriba.",
    "speech": "Levar a man á cabeza ou mirar cara arriba.",
    "source": "juega.corpo.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_c779dfc8_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Grupos de dúas ou tres criaturas por rampla, por quendas. Coida ti as quendas: a esta idade aínda custa esperar.",
+   "speech": "Grupos de dúas ou tres criaturas por rampla, por quendas. Coida ti as quendas: a esta idade aínda custa esperar.",
+   "source": "steam/I2-CINEMATICA-001/aula/agrupamiento"
   },
   {
    "id": "gl_tutor_c78a9d2b_62",
@@ -118012,6 +119388,14 @@
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "gl_tutor_c8251e4e_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Poñede un libro máis debaixo da caixa para que a rampla quede máis alta e soltade outra vez o tubo.",
+   "speech": "Poñede un libro máis debaixo da caixa para que a rampla quede máis alta e soltade outra vez o tubo.",
+   "source": "steam/I2-CINEMATICA-001/aula/construye/retoTangible"
+  },
+  {
    "id": "gl_tutor_c87e4f9e_245",
    "lang": "gl",
    "style": "tutor",
@@ -118028,12 +119412,28 @@
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "gl_tutor_c8ccd1a3_65",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Adiántase: vai ao final da rampla antes de que chegue o que roda.",
+   "speech": "Adiántase: vai ao final da rampla antes de que chegue o que roda.",
+   "source": "steam/I2-CINEMATICA-001/observar/1"
+  },
+  {
    "id": "gl_tutor_c8db8dbc_27",
    "lang": "gl",
    "style": "tutor",
    "text": "Unha crianza modela contigo",
    "speech": "Unha crianza modela contigo",
    "source": "progresion.segundo_ciclo.4/s3/d4/foco"
+  },
+  {
+   "id": "gl_tutor_c9327282_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Como podemos facer bailar a auga sen tocala?",
+   "speech": "Como podemos facer bailar a auga sen tocala?",
+   "source": "steam/I3-ACUSTICA-001/aula/observa/preguntaIndagacion"
   },
   {
    "id": "gl_tutor_c93c11e6_13",
@@ -118076,12 +119476,28 @@
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/fase/3/cmd/cmd.xuno.6i.02/modeladoDocente"
   },
   {
+   "id": "gl_tutor_ca5b72df_75",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que temos que facer coa figura para que a sombra sexa pequena coma un rato?",
+   "speech": "Que temos que facer coa figura para que a sombra sexa pequena coma un rato?",
+   "source": "steam/I4-OPTICA-001/aula/observa/preguntaIndagacion"
+  },
+  {
    "id": "gl_tutor_ca68469d_76",
    "lang": "gl",
    "style": "tutor",
    "text": "Xiro modelado a media velocidade, coa gasa á vista, e sentada final visible.",
    "speech": "Xiro modelado a media velocidade, coa gasa á vista, e sentada final visible.",
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/cmd/cmd.outubro.4i.02/modeladoDocente"
+  },
+  {
+   "id": "gl_tutor_ca9d13cc_166",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A criatura pon as frechas en fila. Ti les cada frecha e fas só esa orde: «step», «turn right» ou «turn left». Se te equivocas a propósito, deixa que ela atope o erro.",
+   "speech": "A criatura pon as frechas en fila. Ti les cada frecha e fas só esa orde: «step», «turn right» ou «turn left». Se te equivocas a propósito, deixa que ela atope o erro.",
+   "source": "steam/I5-LOGICA-001/hogar/experimenta/consignaAdulto"
   },
   {
    "id": "gl_tutor_cad5b3f5_100",
@@ -118130,6 +119546,14 @@
    "text": "A terceira orde, con modelado",
    "speech": "A terceira orde, con modelado",
    "source": "progresion.segundo_ciclo.4/s2/d1/foco"
+  },
+  {
+   "id": "gl_tutor_ce612dee_132",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di «roll» e solta o tubo sen empuxalo: baixa rodando. Despois solta o bloque: queda quieto. Que cada criatura o probe na súa quenda.",
+   "speech": "Di «roll» e solta o tubo sen empuxalo: baixa rodando. Despois solta o bloque: queda quieto. Que cada criatura o probe na súa quenda.",
+   "source": "steam/I2-CINEMATICA-001/aula/experimenta/consignaAdulto"
   },
   {
    "id": "gl_tutor_ce658a82_85",
@@ -118276,12 +119700,28 @@
    "source": "juega.mar.01/cuento/1/texto"
   },
   {
+   "id": "gl_tutor_d1697010_53",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca a pelota: é redonda. E o bloque? Cal pode rodar?",
+   "speech": "Toca a pelota: é redonda. E o bloque? Cal pode rodar?",
+   "source": "steam/I2-CINEMATICA-001/hogar/experimenta/pistaN1"
+  },
+  {
    "id": "gl_tutor_d169d64e_122",
    "lang": "gl",
    "style": "tutor",
    "text": "Nomear o que está a pasar mentres pasa, e agardar cinco segundos coa mirada posta. O silencio non é un oco: é o seu turno.",
    "speech": "Nomear o que está a pasar mentres pasa, e agardar cinco segundos coa mirada posta. O silencio non é un oco: é o seu turno.",
    "source": "juega.benvida.01/puenteCasa/recomendacionConversacion"
+  },
+  {
+   "id": "gl_tutor_d1923d83_63",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira: a pelota faise pequena na miña man. E o bloque? Probamos?",
+   "speech": "Mira: a pelota faise pequena na miña man. E o bloque? Probamos?",
+   "source": "steam/I1-MATERIA-001/aula/experimenta/pistaN1"
   },
   {
    "id": "gl_tutor_d194820d_111",
@@ -118316,6 +119756,14 @@
    "source": "asamblea.segundo_ciclo.maio.6_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_d1f16eff_91",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A luz vai en liña recta e non pode atravesar o cartón. Por iso, que queda detrás da figura?",
+   "speech": "A luz vai en liña recta e non pode atravesar o cartón. Por iso, que queda detrás da figura?",
+   "source": "steam/I4-OPTICA-001/aula/construye/sintesisCierre"
+  },
+  {
    "id": "gl_tutor_d1f20542_62",
    "lang": "gl",
    "style": "tutor",
@@ -118346,6 +119794,14 @@
    "text": "Repartir os aros e facelos rolar polo chan con axuda.",
    "speech": "Repartir os aros e facelos rolar polo chan con axuda.",
    "source": "juega.cores.01/exploracion/paso/2"
+  },
+  {
+   "id": "gl_tutor_d315cee1_188",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pouca auga, nunha cunca de plástico de base ancha e sempre ao teu alcance. Sen obxectos pequenos: nada que caiba na boca, no nariz ou nas orellas. Cada criatura toca só a súa propia gorxa.",
+   "speech": "Pouca auga, nunha cunca de plástico de base ancha e sempre ao teu alcance. Sen obxectos pequenos: nada que caiba na boca, no nariz ou nas orellas. Cada criatura toca só a súa propia gorxa.",
+   "source": "steam/I3-ACUSTICA-001/seguridad"
   },
   {
    "id": "gl_tutor_d411a2eb_64",
@@ -118394,6 +119850,14 @@
    "text": "Sinalar o colgadoiro ou ir collela.",
    "speech": "Sinalar o colgadoiro ou ir collela.",
    "source": "juega.auga.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "gl_tutor_d5874ba3_86",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A luz vai en liña recta e non pode atravesar o xoguete. Por iso, que queda detrás del?",
+   "speech": "A luz vai en liña recta e non pode atravesar o xoguete. Por iso, que queda detrás del?",
+   "source": "steam/I4-OPTICA-001/hogar/construye/sintesisCierre"
   },
   {
    "id": "gl_tutor_d5a9a9fd_78",
@@ -118554,6 +120018,14 @@
    "text": "Cruzar de puntillas sen facer ruído ningún, e comparar.",
    "speech": "Cruzar de puntillas sen facer ruído ningún, e comparar.",
    "source": "juega.animais.01/matematicas/accion/1"
+  },
+  {
+   "id": "gl_tutor_d9cb70da_207",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Di «look» e mirade a sombra. Con «step forward», leva o xoguete cara á parede: a sombra encolle. Con «step back», vólveo cara á lanterna. Deixa que a criatura o probe e espera cinco segundos antes de axudar.",
+   "speech": "Di «look» e mirade a sombra. Con «step forward», leva o xoguete cara á parede: a sombra encolle. Con «step back», vólveo cara á lanterna. Deixa que a criatura o probe e espera cinco segundos antes de axudar.",
+   "source": "steam/I4-OPTICA-001/hogar/experimenta/consignaAdulto"
   },
   {
    "id": "gl_tutor_d9d76993_49",
@@ -118748,6 +120220,14 @@
    "source": "formacion.docente/paso/4/clave"
   },
   {
+   "id": "gl_tutor_df5670ba_64",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Collede a culler xuntos e tocade primeiro suave e despois forte.",
+   "speech": "Collede a culler xuntos e tocade primeiro suave e despois forte.",
+   "source": "steam/I3-ACUSTICA-001/hogar/experimenta/pistaN2"
+  },
+  {
    "id": "gl_tutor_df717a7b_101",
    "lang": "gl",
    "style": "tutor",
@@ -118762,6 +120242,14 @@
    "text": "Eleva as mans do bebé cara arriba.",
    "speech": "Eleva as mans do bebé cara arriba.",
    "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/3/cmd/cmd.setembro.0_2.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_df9cfff7_181",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Obxectos grandes, enteiros e sen pezas soltas. Antes de empezar, revisa que a pelota non teña fíos nin costuras abertas. A esta idade todo vai á boca: non te afastes nin un momento.",
+   "speech": "Obxectos grandes, enteiros e sen pezas soltas. Antes de empezar, revisa que a pelota non teña fíos nin costuras abertas. A esta idade todo vai á boca: non te afastes nin un momento.",
+   "source": "steam/I1-MATERIA-001/seguridad"
   },
   {
    "id": "gl_tutor_dffaeeab_85",
@@ -118828,6 +120316,14 @@
    "source": "juega.primavera.01/cuento/1/pregunta"
   },
   {
+   "id": "gl_tutor_e26bddbc_89",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cantos pasos e cantos xiros precisa o robot para chegar á flor sen pisar a casa vermella?",
+   "speech": "Cantos pasos e cantos xiros precisa o robot para chegar á flor sen pisar a casa vermella?",
+   "source": "steam/I5-LOGICA-001/aula/observa/preguntaIndagacion"
+  },
+  {
    "id": "gl_tutor_e281648b_264",
    "lang": "gl",
    "style": "tutor",
@@ -118858,6 +120354,14 @@
    "text": "Baixa as mans e apóiaas nos seus muslos.",
    "speech": "Baixa as mans e apóiaas nos seus muslos.",
    "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/3/cmd/cmd.setembro.0_2.02/accionFisica"
+  },
+  {
+   "id": "gl_tutor_e39e7700_66",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se cambiamos a orde de dúas frechas, chega o robot ao mesmo sitio?",
+   "speech": "Se cambiamos a orde de dúas frechas, chega o robot ao mesmo sitio?",
+   "source": "steam/I5-LOGICA-001/hogar/construye/sintesisCierre"
   },
   {
    "id": "gl_tutor_e3aeaad7_171",
@@ -119204,6 +120708,14 @@
    "source": "progresion.primeiro_ciclo.0_2/s2/d2/consigna"
   },
   {
+   "id": "gl_tutor_ed55d2b5_66",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira como se afunde a pelota cando a aperto. E o bloque, afúndese?",
+   "speech": "Mira como se afunde a pelota cando a aperto. E o bloque, afúndese?",
+   "source": "steam/I1-MATERIA-001/hogar/experimenta/pistaN1"
+  },
+  {
    "id": "gl_tutor_ed5e04c5_53",
    "lang": "gl",
    "style": "tutor",
@@ -119276,6 +120788,14 @@
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/microRutina/pauta/0/consejoEvitar"
   },
   {
+   "id": "gl_tutor_eff04dbb_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cal se fai pequeno cando o apertamos?",
+   "speech": "Cal se fai pequeno cando o apertamos?",
+   "source": "steam/I1-MATERIA-001/hogar/observa/preguntaIndagacion"
+  },
+  {
    "id": "gl_tutor_f0a55000_94",
    "lang": "gl",
    "style": "tutor",
@@ -119290,6 +120810,14 @@
    "text": "Non se examina. Acompáñase.",
    "speech": "Non se examina. Acompáñase.",
    "source": "formacion.familia/paso/2/clave"
+  },
+  {
+   "id": "gl_tutor_f10af24b_115",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Senta no chan á altura das criaturas. Ensina a pelota nunha man e o bloque na outra, e apértaos amodo diante delas.",
+   "speech": "Senta no chan á altura das criaturas. Ensina a pelota nunha man e o bloque na outra, e apértaos amodo diante delas.",
+   "source": "steam/I1-MATERIA-001/aula/observa/planteamiento"
   },
   {
    "id": "gl_tutor_f10bac0d_53",
@@ -119452,6 +120980,22 @@
    "source": "progresion.primeiro_ciclo.2_3/s1/d1/foco"
   },
   {
+   "id": "gl_tutor_f657e043_76",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ti e a criatura, sentados no chan. Se hai irmáns, cada un cos seus obxectos.",
+   "speech": "Ti e a criatura, sentados no chan. Se hai irmáns, cada un cos seus obxectos.",
+   "source": "steam/I1-MATERIA-001/hogar/agrupamiento"
+  },
+  {
+   "id": "gl_tutor_f661a037_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Por que se queda quieta a auga cando deixamos de tocar?",
+   "speech": "Por que se queda quieta a auga cando deixamos de tocar?",
+   "source": "steam/I3-ACUSTICA-001/hogar/construye/sintesisCierre"
+  },
+  {
    "id": "gl_tutor_f664c883_118",
    "lang": "gl",
    "style": "tutor",
@@ -119548,6 +121092,14 @@
    "source": "juega.inverno.01/puenteCasa/mensajeFamilias"
   },
   {
+   "id": "gl_tutor_f8a32c0f_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cal se fai pequena cando a apertamos?",
+   "speech": "Cal se fai pequena cando a apertamos?",
+   "source": "steam/I1-MATERIA-001/aula/observa/preguntaIndagacion"
+  },
+  {
    "id": "gl_tutor_f9364d65_61",
    "lang": "gl",
    "style": "tutor",
@@ -119620,6 +121172,14 @@
    "source": "progresion.primeiro_ciclo.2_3/s3/d4/foco"
   },
   {
+   "id": "gl_tutor_fc2f2249_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Apoia a bandexa no coxín para facer unha rampla baixa. Pon arriba a pelota e o bloque, un á beira do outro.",
+   "speech": "Apoia a bandexa no coxín para facer unha rampla baixa. Pon arriba a pelota e o bloque, un á beira do outro.",
+   "source": "steam/I2-CINEMATICA-001/hogar/observa/planteamiento"
+  },
+  {
    "id": "gl_tutor_fc4e120b_54",
    "lang": "gl",
    "style": "tutor",
@@ -119652,6 +121212,14 @@
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/microRutina/objetivoAutonomia"
   },
   {
+   "id": "gl_tutor_fcd09627_56",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando deixamos de tocar, por que a auga se queda quieta?",
+   "speech": "Cando deixamos de tocar, por que a auga se queda quieta?",
+   "source": "steam/I3-ACUSTICA-001/aula/construye/sintesisCierre"
+  },
+  {
    "id": "gl_tutor_fd4f0e0a_48",
    "lang": "gl",
    "style": "tutor",
@@ -119666,6 +121234,14 @@
    "text": "Guiar a presión coas dúas mans para que sacuda o recipiente.",
    "speech": "Guiar a presión coas dúas mans para que sacuda o recipiente.",
    "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/3/cmd/cmd.marzo.0_2.01/accionFisica"
+  },
+  {
+   "id": "gl_tutor_fdd60e93_133",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escurece un pouco a aula e acende a lanterna cara á parede. Pon a figura moi preto da lanterna: na parede aparece unha sombra enorme.",
+   "speech": "Escurece un pouco a aula e acende a lanterna cara á parede. Pon a figura moi preto da lanterna: na parede aparece unha sombra enorme.",
+   "source": "steam/I4-OPTICA-001/aula/observa/planteamiento"
   },
   {
    "id": "gl_tutor_fe574264_88",

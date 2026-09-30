@@ -1,0 +1,1149 @@
+[
+  {
+    "id": "I1-MATERIA-001",
+    "estadio": "curso_0_2",
+    "nivelMadurativo": "I1",
+    "rangoEdad": {
+      "gl": "12 a 24 meses",
+      "es": "12 a 24 meses"
+    },
+    "titulo": {
+      "gl": "Brando e duro",
+      "es": "Blando y duro"
+    },
+    "fenomeno": {
+      "gl": "As cousas son distintas ao tacto: hai cousas brandas, que se apertan, e cousas duras, que non ceden.",
+      "es": "Las cosas son distintas al tacto: hay cosas blandas, que se aprietan, y cosas duras, que no ceden."
+    },
+    "tiempoEstimadoMin": 10,
+    "curriculo": {
+      "normativa": "Decreto 150/2022",
+      "etapa": "educacion_infantil",
+      "ciclo": "primeiro_ciclo_0_3",
+      "areas": [
+        "area_2_descubrimento_contorna",
+        "area_1_crecemento_harmonia"
+      ],
+      "criteriosEvaluacion": [
+        "CA2.1",
+        "CA1.1"
+      ]
+    },
+    "seguridad": {
+      "aviso": {
+        "gl": "Obxectos grandes, enteiros e sen pezas soltas. Antes de empezar, revisa que a pelota non teña fíos nin costuras abertas. A esta idade todo vai á boca: non te afastes nin un momento.",
+        "es": "Objetos grandes, enteros y sin piezas sueltas. Antes de empezar, revisa que la pelota no tenga hilos ni costuras abiertas. A esta edad todo va a la boca: no te alejes ni un momento."
+      }
+    },
+    "ordenesIngles": [
+      {
+        "en": "Drop",
+        "ipa": "/drɑp/",
+        "accion": {
+          "gl": "Abrir as mans e deixar caer o obxecto na cesta.",
+          "es": "Abrir las manos y dejar caer el objeto en la cesta."
+        }
+      }
+    ],
+    "queObservar": [
+      {
+        "gl": "Aperta a pelota e o bloque, e nota que un cede e o outro non.",
+        "es": "Aprieta la pelota y el bloque, y nota que uno cede y el otro no."
+      },
+      {
+        "gl": "Segue coa mirada o obxecto cando cae na cesta.",
+        "es": "Sigue con la mirada el objeto cuando cae en la cesta."
+      },
+      {
+        "gl": "Solta o obxecto cando escoita «drop» ou cando ve o teu xesto.",
+        "es": "Suelta el objeto cuando oye «drop» o cuando ve tu gesto."
+      }
+    ],
+    "aula": {
+      "agrupamiento": {
+        "gl": "Pequeno grupo de tres ou catro criaturas, cada unha cos seus obxectos. A esta idade xogan unhas á beira das outras, non por parellas: non fai falta repartir papeis.",
+        "es": "Pequeño grupo de tres o cuatro criaturas, cada una con sus objetos. A esta edad juegan unas al lado de las otras, no por parejas: no hace falta repartir papeles."
+      },
+      "roles": [],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Unha pelota de tea acolchada, de máis de 6 cm, por criatura",
+            "es": "Una pelota de tela acolchada, de más de 6 cm, por criatura"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Un bloque de madeira maciza con cantos redondeados, de máis de 5 cm, por criatura",
+            "es": "Un bloque de madera maciza con cantos redondeados, de más de 5 cm, por criatura"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha cesta baixa e resistente para o grupo",
+            "es": "Una cesta baja y resistente para el grupo"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Senta no chan á altura das criaturas. Ensina a pelota nunha man e o bloque na outra, e apértaos amodo diante delas.",
+            "es": "Siéntate en el suelo a la altura de las criaturas. Enseña la pelota en una mano y el bloque en la otra, y apriétalos despacio delante de ellas."
+          },
+          "preguntaIndagacion": {
+            "gl": "Cal se fai pequena cando a apertamos?",
+            "es": "¿Cuál se hace pequeña cuando la apretamos?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "Dálle a cada criatura a súa pelota e o seu bloque. Aperta ti primeiro e di «brando» coa pelota e «duro» co bloque. Deixa que o proben sen présa.",
+            "es": "Dale a cada criatura su pelota y su bloque. Aprieta tú primero y di «blando» con la pelota y «duro» con el bloque. Deja que lo prueben sin prisa."
+          },
+          "pistaN1": {
+            "gl": "Mira: a pelota faise pequena na miña man. E o bloque? Probamos?",
+            "es": "Mira: la pelota se hace pequeña en mi mano. ¿Y el bloque? ¿Probamos?"
+          },
+          "pistaN2": {
+            "gl": "Pon a túa man sobre a da criatura e apertade xuntas a pelota; despois, o bloque.",
+            "es": "Pon tu mano sobre la de la criatura y apretad juntas la pelota; después, el bloque."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Cando digas «drop», cada criatura solta os seus obxectos na cesta. Escoitade o son: o bloque fai «toc» e a pelota case non soa.",
+            "es": "Cuando digas «drop», cada criatura suelta sus objetos en la cesta. Escuchad el sonido: el bloque hace «toc» y la pelota casi no suena."
+          },
+          "sintesisCierre": {
+            "gl": "Cal fixo ruído ao caer: o brando ou o duro?",
+            "es": "¿Cuál hizo ruido al caer: el blando o el duro?"
+          }
+        }
+      }
+    },
+    "hogar": {
+      "agrupamiento": {
+        "gl": "Ti e a criatura, sentados no chan. Se hai irmáns, cada un cos seus obxectos.",
+        "es": "Tú y la criatura, sentados en el suelo. Si hay hermanos, cada uno con sus objetos."
+      },
+      "roles": [],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Unha pelota de tea ou un peluche enteiro, sen pezas soltas, de máis de 6 cm",
+            "es": "Una pelota de tela o un peluche entero, sin piezas sueltas, de más de 6 cm"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Un bloque de madeira ou un xoguete duro, de máis de 5 cm",
+            "es": "Un bloque de madera o un juguete duro, de más de 5 cm"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha cesta ou unha caixa de zapatos",
+            "es": "Una cesta o una caja de zapatos"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Senta no chan fronte á criatura, cun obxecto en cada man. Apértaos amodo diante dela.",
+            "es": "Siéntate en el suelo frente a la criatura, con un objeto en cada mano. Apriétalos despacio delante de ella."
+          },
+          "preguntaIndagacion": {
+            "gl": "Cal se fai pequeno cando o apertamos?",
+            "es": "¿Cuál se hace pequeño cuando lo apretamos?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "Déixalle os dous obxectos. Aperta ti primeiro e di «brando» e «duro». Espera cinco segundos antes de axudar: que probe ela.",
+            "es": "Déjale los dos objetos. Aprieta tú primero y di «blando» y «duro». Espera cinco segundos antes de ayudar: que pruebe ella."
+          },
+          "pistaN1": {
+            "gl": "Mira como se afunde a pelota cando a aperto. E o bloque, afúndese?",
+            "es": "Mira cómo se hunde la pelota cuando la aprieto. ¿Y el bloque, se hunde?"
+          },
+          "pistaN2": {
+            "gl": "Pon a túa man sobre a súa e apertade xuntos, primeiro a pelota e despois o bloque.",
+            "es": "Pon tu mano sobre la suya y apretad juntos, primero la pelota y después el bloque."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Di «drop» e soltade os obxectos na cesta por quendas: primeiro ti, despois a criatura. Escoitade o que fai cada un ao caer.",
+            "es": "Di «drop» y soltad los objetos en la cesta por turnos: primero tú, después la criatura. Escuchad lo que hace cada uno al caer."
+          },
+          "sintesisCierre": {
+            "gl": "Cal fixo «toc» ao caer?",
+            "es": "¿Cuál hizo «toc» al caer?"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "I2-CINEMATICA-001",
+    "estadio": "curso_2_3",
+    "nivelMadurativo": "I2",
+    "rangoEdad": {
+      "gl": "24 a 36 meses",
+      "es": "24 a 36 meses"
+    },
+    "titulo": {
+      "gl": "A rampla: que roda e que non?",
+      "es": "La rampa: ¿qué rueda y qué no?"
+    },
+    "fenomeno": {
+      "gl": "As cousas redondas rodan pola rampla e as que teñen esquinas quedan quietas. Canto máis inclinada está a rampla, máis rápido baixan.",
+      "es": "Las cosas redondas ruedan por la rampa y las que tienen esquinas se quedan quietas. Cuanto más inclinada está la rampa, más rápido bajan."
+    },
+    "tiempoEstimadoMin": 15,
+    "curriculo": {
+      "normativa": "Decreto 150/2022",
+      "etapa": "educacion_infantil",
+      "ciclo": "primeiro_ciclo_0_3",
+      "areas": [
+        "area_2_descubrimento_contorna",
+        "area_1_crecemento_harmonia"
+      ],
+      "criteriosEvaluacion": [
+        "CA2.1",
+        "CA2.2"
+      ]
+    },
+    "seguridad": {
+      "aviso": {
+        "gl": "Rampla baixa e estable, apoiada no chan. O que rode ten que ser grande e estar enteiro: se o cartón se rompe ou se molla, retírao. Que ninguén suba á rampla.",
+        "es": "Rampa baja y estable, apoyada en el suelo. Lo que ruede tiene que ser grande y estar entero: si el cartón se rompe o se moja, retíralo. Que nadie se suba a la rampa."
+      }
+    },
+    "ordenesIngles": [
+      {
+        "en": "Roll",
+        "ipa": "/roʊl/",
+        "accion": {
+          "gl": "Facer xirar os brazos un arredor do outro.",
+          "es": "Hacer girar los brazos uno alrededor del otro."
+        }
+      }
+    ],
+    "queObservar": [
+      {
+        "gl": "Solta o obxecto sen empuxalo e mira como baixa.",
+        "es": "Suelta el objeto sin empujarlo y mira cómo baja."
+      },
+      {
+        "gl": "Adiántase: vai ao final da rampla antes de que chegue o que roda.",
+        "es": "Se adelanta: va al final de la rampa antes de que llegue lo que rueda."
+      },
+      {
+        "gl": "Fai xirar os brazos cando escoita «roll».",
+        "es": "Hace girar los brazos cuando oye «roll»."
+      }
+    ],
+    "aula": {
+      "agrupamiento": {
+        "gl": "Grupos de dúas ou tres criaturas por rampla, por quendas. Coida ti as quendas: a esta idade aínda custa esperar.",
+        "es": "Grupos de dos o tres criaturas por rampa, por turnos. Cuida tú los turnos: a esta edad todavía cuesta esperar."
+      },
+      "roles": [],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Unha prancha de cartón groso ou unha táboa lixeira, duns 60 × 30 cm, por grupo",
+            "es": "Una plancha de cartón grueso o una tabla ligera, de unos 60 × 30 cm, por grupo"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha caixa de zapatos ou un coxín para apoiala",
+            "es": "Una caja de zapatos o un cojín para apoyarla"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Un tubo de cartón grande e ríxido, de máis de 4,5 cm de diámetro",
+            "es": "Un tubo de cartón grande y rígido, de más de 4,5 cm de diámetro"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Un bloque de madeira de máis de 5 cm",
+            "es": "Un bloque de madera de más de 5 cm"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Apoia a rampla na caixa, con pouca inclinación. Pon arriba o tubo deitado e o bloque ao seu lado.",
+            "es": "Apoya la rampa en la caja, con poca inclinación. Pon arriba el tubo tumbado y el bloque a su lado."
+          },
+          "preguntaIndagacion": {
+            "gl": "Se os soltamos á vez, cal baixará?",
+            "es": "Si los soltamos a la vez, ¿cuál bajará?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "Di «roll» e solta o tubo sen empuxalo: baixa rodando. Despois solta o bloque: queda quieto. Que cada criatura o probe na súa quenda.",
+            "es": "Di «roll» y suelta el tubo sin empujarlo: baja rodando. Después suelta el bloque: se queda quieto. Que cada criatura lo pruebe en su turno."
+          },
+          "pistaN1": {
+            "gl": "Toca o tubo: é redondo. E o bloque, ten esquinas? Cal pode rodar?",
+            "es": "Toca el tubo: es redondo. ¿Y el bloque, tiene esquinas? ¿Cuál puede rodar?"
+          },
+          "pistaN2": {
+            "gl": "Pon a túa man sobre a da criatura no tubo e soltade xuntas, sen empuxar.",
+            "es": "Pon tu mano sobre la de la criatura en el tubo y soltad juntas, sin empujar."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Poñede un libro máis debaixo da caixa para que a rampla quede máis alta e soltade outra vez o tubo.",
+            "es": "Poned un libro más debajo de la caja para que la rampa quede más alta y soltad otra vez el tubo."
+          },
+          "sintesisCierre": {
+            "gl": "Coa rampla máis alta, o tubo foi máis rápido ou máis amodo?",
+            "es": "Con la rampa más alta, ¿el tubo fue más rápido o más despacio?"
+          }
+        }
+      }
+    },
+    "hogar": {
+      "agrupamiento": {
+        "gl": "Ti e a criatura, por quendas: primeiro soltas ti e despois ela.",
+        "es": "Tú y la criatura, por turnos: primero sueltas tú y después ella."
+      },
+      "roles": [],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Unha bandexa ou a tapa dunha caixa grande",
+            "es": "Una bandeja o la tapa de una caja grande"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Un coxín ou uns libros para apoiala",
+            "es": "Un cojín o unos libros para apoyarla"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha pelota de máis de 6 cm",
+            "es": "Una pelota de más de 6 cm"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Un bloque ou unha caixa pequena de cartón, de máis de 5 cm",
+            "es": "Un bloque o una caja pequeña de cartón, de más de 5 cm"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Apoia a bandexa no coxín para facer unha rampla baixa. Pon arriba a pelota e o bloque, un á beira do outro.",
+            "es": "Apoya la bandeja en el cojín para hacer una rampa baja. Pon arriba la pelota y el bloque, uno al lado del otro."
+          },
+          "preguntaIndagacion": {
+            "gl": "Se os soltamos á vez, cal baixará?",
+            "es": "Si los soltamos a la vez, ¿cuál bajará?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "Di «roll» e solta a pelota sen empuxala. Despois solta o bloque. Deixa que a criatura faga o mesmo e espera cinco segundos antes de axudar.",
+            "es": "Di «roll» y suelta la pelota sin empujarla. Después suelta el bloque. Deja que la criatura haga lo mismo y espera cinco segundos antes de ayudar."
+          },
+          "pistaN1": {
+            "gl": "Toca a pelota: é redonda. E o bloque? Cal pode rodar?",
+            "es": "Toca la pelota: es redonda. ¿Y el bloque? ¿Cuál puede rodar?"
+          },
+          "pistaN2": {
+            "gl": "Soltade a pelota xuntos, coa túa man sobre a súa, sen empuxar.",
+            "es": "Soltad la pelota juntos, con tu mano sobre la suya, sin empujar."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Poñede un libro máis debaixo da rampla e probade outra vez coa pelota.",
+            "es": "Poned un libro más debajo de la rampa y probad otra vez con la pelota."
+          },
+          "sintesisCierre": {
+            "gl": "Coa rampla máis alta, a pelota foi máis rápido ou máis amodo?",
+            "es": "Con la rampa más alta, ¿la pelota fue más rápido o más despacio?"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "I3-ACUSTICA-001",
+    "estadio": "curso_3_4",
+    "nivelMadurativo": "I3",
+    "rangoEdad": {
+      "gl": "3 a 4 anos",
+      "es": "3 a 4 años"
+    },
+    "titulo": {
+      "gl": "O son fai bailar a auga",
+      "es": "El sonido hace bailar el agua"
+    },
+    "fenomeno": {
+      "gl": "O son é vibración: cando tocamos un tambor, treme. Ese tremor vese na auga e nótase coa man no tambor ou na propia gorxa ao cantar.",
+      "es": "El sonido es vibración: cuando tocamos un tambor, tiembla. Ese temblor se ve en el agua y se nota con la mano en el tambor o en la propia garganta al cantar."
+    },
+    "tiempoEstimadoMin": 15,
+    "curriculo": {
+      "normativa": "Decreto 150/2022",
+      "etapa": "educacion_infantil",
+      "ciclo": "segundo_ciclo_3_6",
+      "nivel": "4_infantil",
+      "areas": [
+        "area_2_descubrimento_contorna",
+        "area_3_comunicacion_representacion"
+      ],
+      "competenciasClave": [
+        "CCL",
+        "STEM",
+        "CPSAA"
+      ],
+      "criteriosEvaluacion": [
+        "CA2.1",
+        "CA3.1",
+        "CA1.4"
+      ]
+    },
+    "seguridad": {
+      "aviso": {
+        "gl": "Pouca auga, nunha cunca de plástico de base ancha e sempre ao teu alcance. Sen obxectos pequenos: nada que caiba na boca, no nariz ou nas orellas. Cada criatura toca só a súa propia gorxa.",
+        "es": "Poca agua, en un cuenco de plástico de base ancha y siempre a tu alcance. Sin objetos pequeños: nada que quepa en la boca, la nariz o las orejas. Cada criatura toca solo su propia garganta."
+      }
+    },
+    "ordenesIngles": [
+      {
+        "en": "Listen",
+        "ipa": "/ˈlɪsən/",
+        "accion": {
+          "gl": "Poñer a man en cunca detrás da orella e quedar en silencio.",
+          "es": "Poner la mano en forma de cuenco detrás de la oreja y quedarse en silencio."
+        }
+      },
+      {
+        "en": "Stop",
+        "ipa": "/stɑp/",
+        "accion": {
+          "gl": "Pousar a man aberta sobre o tambor para calalo.",
+          "es": "Posar la mano abierta sobre el tambor para callarlo."
+        }
+      }
+    ],
+    "queObservar": [
+      {
+        "gl": "Relaciona o golpe no tambor coas ondas que aparecen na auga.",
+        "es": "Relaciona el golpe en el tambor con las ondas que aparecen en el agua."
+      },
+      {
+        "gl": "Nota a vibración coa man no tambor ou na súa propia gorxa ao cantar «mmm».",
+        "es": "Nota la vibración con la mano en el tambor o en su propia garganta al cantar «mmm»."
+      },
+      {
+        "gl": "Pon a man na orella cando escoita «listen» e agarda en silencio.",
+        "es": "Pone la mano en la oreja cuando oye «listen» y espera en silencio."
+      }
+    ],
+    "aula": {
+      "agrupamiento": {
+        "gl": "Parellas, cunha persoa adulta preto: unha criatura toca o tambor e a outra mira a auga. Despois cambian.",
+        "es": "Parejas, con una persona adulta cerca: una criatura toca el tambor y la otra mira el agua. Después cambian."
+      },
+      "roles": [
+        {
+          "clave": "tamborileira",
+          "nombre": {
+            "gl": "Tamborileira",
+            "es": "Tamborilera"
+          },
+          "mision": {
+            "gl": "Toca o tambor coa culler, primeiro suave e despois forte.",
+            "es": "Toca el tambor con la cuchara, primero suave y después fuerte."
+          }
+        },
+        {
+          "clave": "observadora_auga",
+          "nombre": {
+            "gl": "Observadora da auga",
+            "es": "Observadora del agua"
+          },
+          "mision": {
+            "gl": "Mira a auga e avisa cando treme.",
+            "es": "Mira el agua y avisa cuando tiembla."
+          }
+        }
+      ],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Unha caixa de cartón resistente, boca abaixo, que fai de tambor",
+            "es": "Una caja de cartón resistente, boca abajo, que hace de tambor"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha cunca de plástico de base ancha con dous dedos de auga",
+            "es": "Un cuenco de plástico de base ancha con dos dedos de agua"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha culler de pau grande para tocar",
+            "es": "Una cuchara de madera grande para tocar"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Un pano para secar o que se verta",
+            "es": "Un trapo para secar lo que se derrame"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Pon a caixa boca abaixo e a cunca con auga enriba, no medio. Ensina que a auga está quieta.",
+            "es": "Pon la caja boca abajo y el cuenco con agua encima, en el medio. Enseña que el agua está quieta."
+          },
+          "preguntaIndagacion": {
+            "gl": "Como podemos facer bailar a auga sen tocala?",
+            "es": "¿Cómo podemos hacer bailar el agua sin tocarla?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "Di «listen» e dá tres golpes suaves na caixa coa culler. Pídelle á observadora que mire a auga. Despois, a tamborileira proba a tocar forte e suave.",
+            "es": "Di «listen» y da tres golpes suaves en la caja con la cuchara. Pide a la observadora que mire el agua. Después, la tamborilera prueba a tocar fuerte y suave."
+          },
+          "pistaN1": {
+            "gl": "Pon a man na caixa mentres tocamos. Que notas? E se cantamos «mmm», cada unha coa man na súa gorxa?",
+            "es": "Pon la mano en la caja mientras tocamos. ¿Qué notas? ¿Y si cantamos «mmm», cada una con la mano en su garganta?"
+          },
+          "pistaN2": {
+            "gl": "Colle a culler coa tamborileira e tocade xuntas, primeiro suave e despois forte, mirando a auga.",
+            "es": "Coge la cuchara con la tamborilera y tocad juntas, primero suave y después fuerte, mirando el agua."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Cambiade os papeis. Cando digas «stop», a tamborileira pousa a man aberta na caixa. Que lle pasa á auga?",
+            "es": "Cambiad los papeles. Cuando digas «stop», la tamborilera posa la mano abierta en la caja. ¿Qué le pasa al agua?"
+          },
+          "sintesisCierre": {
+            "gl": "Cando deixamos de tocar, por que a auga se queda quieta?",
+            "es": "Cuando dejamos de tocar, ¿por qué el agua se queda quieta?"
+          }
+        }
+      }
+    },
+    "hogar": {
+      "agrupamiento": {
+        "gl": "Ti e a criatura, á mesa ou no chan, cunha toalla debaixo. Primeiro tocas ti e despois ela.",
+        "es": "Tú y la criatura, en la mesa o en el suelo, con una toalla debajo. Primero tocas tú y después ella."
+      },
+      "roles": [],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Unha pota baleira boca abaixo ou unha caixa de cartón resistente",
+            "es": "Una olla vacía boca abajo o una caja de cartón resistente"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha cunca de plástico con dous dedos de auga",
+            "es": "Un cuenco de plástico con dos dedos de agua"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha culler de pau grande",
+            "es": "Una cuchara de madera grande"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha toalla para pór debaixo",
+            "es": "Una toalla para poner debajo"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Pon a pota boca abaixo e a cunca con auga enriba. Ensínalle que a auga está quieta.",
+            "es": "Pon la olla boca abajo y el cuenco con agua encima. Enséñale que el agua está quieta."
+          },
+          "preguntaIndagacion": {
+            "gl": "Como podemos facer bailar a auga sen tocala?",
+            "es": "¿Cómo podemos hacer bailar el agua sin tocarla?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "Di «listen» e dá golpes suaves na pota coa culler. Mirade xuntos a auga. Despois tócalle a ela, e espera cinco segundos antes de axudar.",
+            "es": "Di «listen» y da golpes suaves en la olla con la cuchara. Mirad juntos el agua. Después le toca a ella, y espera cinco segundos antes de ayudar."
+          },
+          "pistaN1": {
+            "gl": "Pon a man na pota mentres toco. Que notas? Agora cantamos «mmm», cada un coa man na súa gorxa.",
+            "es": "Pon la mano en la olla mientras toco. ¿Qué notas? Ahora cantamos «mmm», cada uno con la mano en su garganta."
+          },
+          "pistaN2": {
+            "gl": "Collede a culler xuntos e tocade primeiro suave e despois forte.",
+            "es": "Coged la cuchara juntos y tocad primero suave y después fuerte."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Cando digas «stop», a criatura pousa a man aberta na pota. Que lle pasa á auga?",
+            "es": "Cuando digas «stop», la criatura posa la mano abierta en la olla. ¿Qué le pasa al agua?"
+          },
+          "sintesisCierre": {
+            "gl": "Por que se queda quieta a auga cando deixamos de tocar?",
+            "es": "¿Por qué se queda quieta el agua cuando dejamos de tocar?"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "I4-OPTICA-001",
+    "estadio": "curso_4_5",
+    "nivelMadurativo": "I4",
+    "rangoEdad": {
+      "gl": "4 a 5 anos",
+      "es": "4 a 5 años"
+    },
+    "titulo": {
+      "gl": "Sombras grandes e pequenas",
+      "es": "Sombras grandes y pequeñas"
+    },
+    "fenomeno": {
+      "gl": "A luz viaxa en liña recta. Un obxecto que non a deixa pasar fai sombra, e a sombra medra canto máis preto está o obxecto da lanterna.",
+      "es": "La luz viaja en línea recta. Un objeto que no la deja pasar hace sombra, y la sombra crece cuanto más cerca está el objeto de la linterna."
+    },
+    "tiempoEstimadoMin": 20,
+    "curriculo": {
+      "normativa": "Decreto 150/2022",
+      "etapa": "educacion_infantil",
+      "ciclo": "segundo_ciclo_3_6",
+      "nivel": "5_infantil",
+      "areas": [
+        "area_2_descubrimento_contorna",
+        "area_1_crecemento_harmonia"
+      ],
+      "competenciasClave": [
+        "STEM",
+        "CPSAA",
+        "CCL"
+      ],
+      "criteriosEvaluacion": [
+        "CA2.1",
+        "CA2.2",
+        "CA1.4"
+      ]
+    },
+    "seguridad": {
+      "aviso": {
+        "gl": "Lanterna LED que non quente, coa tapa das pilas pechada con parafuso. Que ninguén mire directamente á luz nin a apunte aos ollos. Deixa libre o espazo entre a lanterna e a parede para non tropezar.",
+        "es": "Linterna LED que no se caliente, con la tapa de las pilas cerrada con tornillo. Que nadie mire directamente a la luz ni la apunte a los ojos. Deja libre el espacio entre la linterna y la pared para no tropezar."
+      }
+    },
+    "ordenesIngles": [
+      {
+        "en": "Look",
+        "ipa": "/lʊk/",
+        "accion": {
+          "gl": "Facer uns prismáticos coas mans e mirar a parede.",
+          "es": "Hacer unos prismáticos con las manos y mirar la pared."
+        }
+      },
+      {
+        "en": "Step forward",
+        "ipa": "",
+        "accion": {
+          "gl": "Dar un paso cara adiante, cara á parede.",
+          "es": "Dar un paso hacia delante, hacia la pared."
+        }
+      },
+      {
+        "en": "Step back",
+        "ipa": "",
+        "accion": {
+          "gl": "Dar un paso cara atrás, cara á lanterna.",
+          "es": "Dar un paso hacia atrás, hacia la linterna."
+        }
+      }
+    ],
+    "queObservar": [
+      {
+        "gl": "Achega ou afasta a figura para conseguir a sombra que se lle pide.",
+        "es": "Acerca o aleja la figura para conseguir la sombra que se le pide."
+      },
+      {
+        "gl": "Explica coas súas palabras que a figura tapa a luz.",
+        "es": "Explica con sus palabras que la figura tapa la luz."
+      },
+      {
+        "gl": "Ponse de acordo coa compañeira: unha move a figura e a outra marca.",
+        "es": "Se pone de acuerdo con la compañera: una mueve la figura y la otra marca."
+      }
+    ],
+    "aula": {
+      "agrupamiento": {
+        "gl": "Parellas. Unha criatura move a figura e a outra marca no chan onde a sombra é grande ou pequena. Despois cambian.",
+        "es": "Parejas. Una criatura mueve la figura y la otra marca en el suelo dónde la sombra es grande o pequeña. Después cambian."
+      },
+      "roles": [
+        {
+          "clave": "titiriteira",
+          "nombre": {
+            "gl": "Titiriteira",
+            "es": "Titiritera"
+          },
+          "mision": {
+            "gl": "Leva a figura cara á parede ou cara á lanterna.",
+            "es": "Lleva la figura hacia la pared o hacia la linterna."
+          }
+        },
+        {
+          "clave": "rastrexadora",
+          "nombre": {
+            "gl": "Rastrexadora de sombras",
+            "es": "Rastreadora de sombras"
+          },
+          "mision": {
+            "gl": "Mira a parede e marca con cinta onde a sombra é grande e onde é pequena.",
+            "es": "Mira la pared y marca con cinta dónde la sombra es grande y dónde es pequeña."
+          }
+        }
+      ],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Unha lanterna LED ou un flexo, fixo sobre unha mesa baixa",
+            "es": "Una linterna LED o un flexo, fijo sobre una mesa baja"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Siluetas de animais en cartolina opaca, pegadas a un tubo de cartón que fai de mango",
+            "es": "Siluetas de animales en cartulina opaca, pegadas a un tubo de cartón que hace de mango"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha parede clara ou unha saba estirada",
+            "es": "Una pared clara o una sábana estirada"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Cinta adhesiva de papel para marcar o chan",
+            "es": "Cinta de carrocero para marcar el suelo"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Escurece un pouco a aula e acende a lanterna cara á parede. Pon a figura moi preto da lanterna: na parede aparece unha sombra enorme.",
+            "es": "Oscurece un poco el aula y enciende la linterna hacia la pared. Pon la figura muy cerca de la linterna: en la pared aparece una sombra enorme."
+          },
+          "preguntaIndagacion": {
+            "gl": "Que temos que facer coa figura para que a sombra sexa pequena coma un rato?",
+            "es": "¿Qué tenemos que hacer con la figura para que la sombra sea pequeña como un ratón?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "Di «look» e que todas miren a parede. Coa orde «step forward», a titiriteira achégase á parede e a sombra encolle; con «step back» volve cara á lanterna e a sombra medra. A rastrexadora marca cada sitio con cinta.",
+            "es": "Di «look» y que todas miren la pared. Con la orden «step forward», la titiritera se acerca a la pared y la sombra encoge; con «step back» vuelve hacia la linterna y la sombra crece. La rastreadora marca cada sitio con cinta."
+          },
+          "pistaN1": {
+            "gl": "Mira onde está a lanterna, sen mirar a luz. Cando a figura está preto dela, a sombra faise máis grande ou máis pequena?",
+            "es": "Mira dónde está la linterna, sin mirar la luz. Cuando la figura está cerca de ella, ¿la sombra se hace más grande o más pequeña?"
+          },
+          "pistaN2": {
+            "gl": "Colle a man da titiriteira e dade xuntas un paso cara á lanterna e outro cara á parede, mirando a sombra.",
+            "es": "Coge la mano de la titiritera y dad juntas un paso hacia la linterna y otro hacia la pared, mirando la sombra."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Marcade no chan a liña da sombra xigante e a da sombra pequena. Cando digas un tamaño, a titiriteira vai á súa liña. Despois cambian os papeis.",
+            "es": "Marcad en el suelo la línea de la sombra gigante y la de la sombra pequeña. Cuando digas un tamaño, la titiritera va a su línea. Después cambian los papeles."
+          },
+          "sintesisCierre": {
+            "gl": "A luz vai en liña recta e non pode atravesar o cartón. Por iso, que queda detrás da figura?",
+            "es": "La luz va en línea recta y no puede atravesar el cartón. Por eso, ¿qué queda detrás de la figura?"
+          }
+        }
+      }
+    },
+    "hogar": {
+      "agrupamiento": {
+        "gl": "Ti e a criatura, de noite ou coa persiana baixada. Un move a figura e o outro mira; despois cambiades.",
+        "es": "Tú y la criatura, de noche o con la persiana bajada. Uno mueve la figura y el otro mira; después cambiáis."
+      },
+      "roles": [],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Unha lanterna LED ou un flexo. O móbil non: ese queda para ti",
+            "es": "Una linterna LED o un flexo. El móvil no: ese se queda para ti"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Un xoguete grande ou as propias mans para facer sombras",
+            "es": "Un juguete grande o las propias manos para hacer sombras"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha parede clara",
+            "es": "Una pared clara"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Coa luz da habitación apagada, pousa a lanterna nunha mesa apuntando á parede e pon o xoguete moi preto dela.",
+            "es": "Con la luz de la habitación apagada, apoya la linterna en una mesa apuntando a la pared y pon el juguete muy cerca de ella."
+          },
+          "preguntaIndagacion": {
+            "gl": "Que temos que facer co xoguete para que a sombra sexa pequena coma un rato?",
+            "es": "¿Qué tenemos que hacer con el juguete para que la sombra sea pequeña como un ratón?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "Di «look» e mirade a sombra. Con «step forward», leva o xoguete cara á parede: a sombra encolle. Con «step back», vólveo cara á lanterna. Deixa que a criatura o probe e espera cinco segundos antes de axudar.",
+            "es": "Di «look» y mirad la sombra. Con «step forward», lleva el juguete hacia la pared: la sombra encoge. Con «step back», vuélvelo hacia la linterna. Deja que la criatura lo pruebe y espera cinco segundos antes de ayudar."
+          },
+          "pistaN1": {
+            "gl": "Mira onde está a lanterna, sen mirar a luz. Se o xoguete vai cara a ela, a sombra medra ou encolle?",
+            "es": "Mira dónde está la linterna, sin mirar la luz. Si el juguete va hacia ella, ¿la sombra crece o encoge?"
+          },
+          "pistaN2": {
+            "gl": "Colle a súa man co xoguete e movédeo xuntos cara á lanterna e cara á parede.",
+            "es": "Coge su mano con el juguete y movedlo juntos hacia la linterna y hacia la pared."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Xogade ás adiviñas: ti dis «grande» ou «pequena» e a criatura busca o sitio. Despois pídecho ela a ti.",
+            "es": "Jugad a las adivinanzas: tú dices «grande» o «pequeña» y la criatura busca el sitio. Después te lo pide ella a ti."
+          },
+          "sintesisCierre": {
+            "gl": "A luz vai en liña recta e non pode atravesar o xoguete. Por iso, que queda detrás del?",
+            "es": "La luz va en línea recta y no puede atravesar el juguete. Por eso, ¿qué queda detrás de él?"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "I5-LOGICA-001",
+    "estadio": "curso_5_6",
+    "nivelMadurativo": "I5",
+    "rangoEdad": {
+      "gl": "5 a 6 anos",
+      "es": "5 a 6 años"
+    },
+    "titulo": {
+      "gl": "A cuadrícula: programamos un robot",
+      "es": "La cuadrícula: programamos un robot"
+    },
+    "fenomeno": {
+      "gl": "Unha orde tras outra forman un programa. Se unha orde está mal, o robot non chega, e hai que buscar o erro e arranxalo.",
+      "es": "Una orden tras otra forman un programa. Si una orden está mal, el robot no llega, y hay que buscar el error y arreglarlo."
+    },
+    "tiempoEstimadoMin": 20,
+    "curriculo": {
+      "normativa": "Decreto 150/2022",
+      "etapa": "educacion_infantil",
+      "ciclo": "segundo_ciclo_3_6",
+      "nivel": "6_infantil",
+      "areas": [
+        "area_2_descubrimento_contorna",
+        "area_3_comunicacion_representacion"
+      ],
+      "competenciasClave": [
+        "STEM",
+        "CD",
+        "CPSAA"
+      ],
+      "criteriosEvaluacion": [
+        "CA2.2",
+        "CA3.1",
+        "CA1.4"
+      ]
+    },
+    "seguridad": {
+      "aviso": {
+        "gl": "Cinta ben pegada ao chan e sen dobras, para non tropezar. O robot camiña, non corre. Deixa arredor da cuadrícula un espazo libre de mesas e cadeiras.",
+        "es": "Cinta bien pegada al suelo y sin pliegues, para no tropezar. El robot camina, no corre. Deja alrededor de la cuadrícula un espacio libre de mesas y sillas."
+      }
+    },
+    "ordenesIngles": [
+      {
+        "en": "Step",
+        "ipa": "/stɛp/",
+        "accion": {
+          "gl": "Un paso firme cara adiante, dentro da cuadrícula.",
+          "es": "Un paso firme hacia delante, dentro de la cuadrícula."
+        }
+      },
+      {
+        "en": "Turn right",
+        "ipa": "",
+        "accion": {
+          "gl": "Xirar un cuarto de volta cara á man dereita.",
+          "es": "Girar un cuarto de vuelta hacia la mano derecha."
+        }
+      },
+      {
+        "en": "Turn left",
+        "ipa": "",
+        "accion": {
+          "gl": "Xirar un cuarto de volta cara á man esquerda.",
+          "es": "Girar un cuarto de vuelta hacia la mano izquierda."
+        }
+      }
+    ],
+    "queObservar": [
+      {
+        "gl": "Pon as tarxetas en orde antes de que o robot comece.",
+        "es": "Pone las tarjetas en orden antes de que el robot empiece."
+      },
+      {
+        "gl": "Cando o robot non chega, busca que tarxeta falla e cámbiaa.",
+        "es": "Cuando el robot no llega, busca qué tarjeta falla y la cambia."
+      },
+      {
+        "gl": "Respecta a quenda e agarda a orde antes de moverse.",
+        "es": "Respeta el turno y espera la orden antes de moverse."
+      }
+    ],
+    "aula": {
+      "agrupamiento": {
+        "gl": "Parellas: unha criatura programa coas tarxetas e a outra fai de robot; despois cambian. O resto do grupo pode axudar a revisar o programa.",
+        "es": "Parejas: una criatura programa con las tarjetas y la otra hace de robot; después cambian. El resto del grupo puede ayudar a revisar el programa."
+      },
+      "roles": [
+        {
+          "clave": "programadora",
+          "nombre": {
+            "gl": "Programadora",
+            "es": "Programadora"
+          },
+          "mision": {
+            "gl": "Coloca as tarxetas de frechas en fila para levar o robot ata a meta.",
+            "es": "Coloca las tarjetas de flechas en fila para llevar al robot hasta la meta."
+          }
+        },
+        {
+          "clave": "robot",
+          "nombre": {
+            "gl": "Robot",
+            "es": "Robot"
+          },
+          "mision": {
+            "gl": "Fai só o que din as tarxetas, unha a unha, sen adiantarse.",
+            "es": "Hace solo lo que dicen las tarjetas, una a una, sin adelantarse."
+          }
+        }
+      ],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Cinta adhesiva de papel para trazar no chan unha cuadrícula de 3 × 3 casas de 40 cm",
+            "es": "Cinta de carrocero para trazar en el suelo una cuadrícula de 3 × 3 casillas de 40 cm"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Tarxetas grandes de cartolina con frechas: seguir, xirar á dereita e xirar á esquerda",
+            "es": "Tarjetas grandes de cartulina con flechas: seguir, girar a la derecha y girar a la izquierda"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha cartolina vermella para marcar a casa bloqueada",
+            "es": "Una cartulina roja para marcar la casilla bloqueada"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Unha meta grande: unha flor de papel ou un peluche",
+            "es": "Una meta grande: una flor de papel o un peluche"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Na cuadrícula hai unha casa de saída, unha de meta coa flor e, no medio, a casa vermella bloqueada.",
+            "es": "En la cuadrícula hay una casilla de salida, una de meta con la flor y, en el medio, la casilla roja bloqueada."
+          },
+          "preguntaIndagacion": {
+            "gl": "Cantos pasos e cantos xiros precisa o robot para chegar á flor sen pisar a casa vermella?",
+            "es": "¿Cuántos pasos y cuántos giros necesita el robot para llegar a la flor sin pisar la casilla roja?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "A programadora pon as tarxetas en fila. Despois le cada tarxeta en voz alta e di a orde en inglés: «step», «turn right» ou «turn left». O robot fai só esa orde.",
+            "es": "La programadora pone las tarjetas en fila. Después lee cada tarjeta en voz alta y dice la orden en inglés: «step», «turn right» o «turn left». El robot hace solo esa orden."
+          },
+          "pistaN1": {
+            "gl": "O robot chegou a unha casa onde non pode seguir. Que tarxeta temos que cambiar?",
+            "es": "El robot ha llegado a una casilla donde no puede seguir. ¿Qué tarjeta tenemos que cambiar?"
+          },
+          "pistaN2": {
+            "gl": "Camiña ti detrás do robot, coas mans nos seus ombros, e xirade xuntas cara ao lado da frecha.",
+            "es": "Camina tú detrás del robot, con las manos en sus hombros, y girad juntas hacia el lado de la flecha."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Cambiade os papeis e facede un programa novo: a flor cambia de sitio e o robot ten que ir buscala.",
+            "es": "Cambiad los papeles y haced un programa nuevo: la flor cambia de sitio y el robot tiene que ir a buscarla."
+          },
+          "sintesisCierre": {
+            "gl": "Se cambiamos a orde de dúas tarxetas, chega o robot ao mesmo sitio?",
+            "es": "Si cambiamos el orden de dos tarjetas, ¿llega el robot al mismo sitio?"
+          }
+        }
+      }
+    },
+    "hogar": {
+      "agrupamiento": {
+        "gl": "Ti e a criatura, no corredor ou no salón. Primeiro ti es o robot e ela programa; despois, ao revés.",
+        "es": "Tú y la criatura, en el pasillo o en el salón. Primero tú eres el robot y ella programa; después, al revés."
+      },
+      "roles": [],
+      "materiales": [
+        {
+          "item": {
+            "gl": "Cinta adhesiva de papel ou coxíns para marcar unha cuadrícula de 3 × 3 casas",
+            "es": "Cinta de carrocero o cojines para marcar una cuadrícula de 3 × 3 casillas"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Follas de papel con frechas debuxadas: seguir, xirar á dereita e xirar á esquerda",
+            "es": "Hojas de papel con flechas dibujadas: seguir, girar a la derecha y girar a la izquierda"
+          },
+          "seguridadMayor4cm": true
+        },
+        {
+          "item": {
+            "gl": "Un peluche que fai de meta",
+            "es": "Un peluche que hace de meta"
+          },
+          "seguridadMayor4cm": true
+        }
+      ],
+      "ciclo": {
+        "observa": {
+          "planteamiento": {
+            "gl": "Marca a cuadrícula no chan e pon o peluche nunha esquina. Ti colócaste na esquina contraria: es o robot.",
+            "es": "Marca la cuadrícula en el suelo y pon el peluche en una esquina. Tú te colocas en la esquina contraria: eres el robot."
+          },
+          "preguntaIndagacion": {
+            "gl": "Que ordes tes que darme para que chegue ao peluche?",
+            "es": "¿Qué órdenes tienes que darme para que llegue al peluche?"
+          },
+          "pausaSilencioSegundos": 5
+        },
+        "experimenta": {
+          "consignaAdulto": {
+            "gl": "A criatura pon as frechas en fila. Ti les cada frecha e fas só esa orde: «step», «turn right» ou «turn left». Se te equivocas a propósito, deixa que ela atope o erro.",
+            "es": "La criatura pone las flechas en fila. Tú lees cada flecha y haces solo esa orden: «step», «turn right» o «turn left». Si te equivocas a propósito, deja que ella encuentre el error."
+          },
+          "pistaN1": {
+            "gl": "Paro aquí e non chego. Que frecha cambiamos?",
+            "es": "Me paro aquí y no llego. ¿Qué flecha cambiamos?"
+          },
+          "pistaN2": {
+            "gl": "Colle a súa man e facede xuntos o camiño antes de poñer as frechas.",
+            "es": "Coge su mano y haced juntos el camino antes de poner las flechas."
+          }
+        },
+        "construye": {
+          "retoTangible": {
+            "gl": "Cambiade: agora a criatura é o robot e ti programas. Pon o peluche noutra casa.",
+            "es": "Cambiad: ahora la criatura es el robot y tú programas. Pon el peluche en otra casilla."
+          },
+          "sintesisCierre": {
+            "gl": "Se cambiamos a orde de dúas frechas, chega o robot ao mesmo sitio?",
+            "es": "Si cambiamos el orden de dos flechas, ¿llega el robot al mismo sitio?"
+          }
+        }
+      }
+    }
+  }
+]

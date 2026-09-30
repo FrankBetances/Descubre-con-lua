@@ -22,7 +22,7 @@ import '../models/tpr_curriculum_scheduler.dart';
 // Este fichero solo usa los del banco, así que se ocultan los de la unidad: sin
 // esto, los dos nombres chocan y el proyecto NO compila.
 import '../models/unidad_model.dart' hide Cuento, CuentoPagina;
-import '../models/steam_cooperativo_model.dart';
+import '../models/steam_model.dart';
 
 /// A content file that could not be loaded, kept instead of being discarded.
 class ContentLoadFailure {
@@ -1014,9 +1014,9 @@ class ContentRepository {
     _curriculo50Meses.add(mes);
   }
 
-  // --- STEAM COOPERATIVO (Indagación, Roles e TPR) ---
+  // --- STEAM · ciencia coas mans (aula e fogar) ---
 
-  /// Carga as unidades STEAM canónicas desde o banco de contido JSON.
+  /// Carga as cinco unidades STEAM do seu JSON.
   Future<List<SteamUnit>> loadSteamUnits({bool forceReload = false}) async {
     if (_steamUnitsById.isEmpty || forceReload) {
       try {
@@ -1026,22 +1026,22 @@ class ContentRepository {
           _steamUnitsById[u.id] = u;
         }
       } catch (e) {
-        _loadErrors.add(
-            ContentLoadFailure(ContentAssetLoader.steamAssetPath, e.toString()));
+        _loadErrors.add(ContentLoadFailure(
+            ContentAssetLoader.steamAssetPath, e.toString()));
       }
     }
     return List.unmodifiable(_steamUnitsById.values);
   }
 
-  /// Retorna as unidades STEAM filtradas por estadio madurativo ('curso_0_2'...'curso_5_6')
+  /// As unidades STEAM dun curso ('curso_0_2' … 'curso_5_6').
   List<SteamUnit> getSteamUnitsByEstadio(String estadio) {
     return _steamUnitsById.values.where((u) => u.estadio == estadio).toList();
   }
 
-  /// Retorna a unidade STEAM polo seu identificador ('I1-MATERIA-001'...)
+  /// A unidade STEAM co identificador dado ('I1-MATERIA-001' …).
   SteamUnit? getSteamUnitById(String id) => _steamUnitsById[id.trim()];
 
-  /// Retorna a unidade STEAM por nivel madurativo ('I1'...'I5')
+  /// A unidade STEAM dun nivel ('I1' … 'I5').
   SteamUnit? getSteamUnitByNivel(String nivel) {
     final clean = nivel.trim().toUpperCase();
     for (final u in _steamUnitsById.values) {

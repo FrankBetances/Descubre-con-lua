@@ -556,38 +556,54 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                     ),
                   ],
                 ),
+                // Cada botón cede o seu ancho e a etiqueta encolle só cando
+                // non cabe: coa letra grande do sistema, «Seguinte» e
+                // «Anterior» saían pola dereita dun teléfono de 360 dp.
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    ElevatedButton.icon(
-                      onPressed: _currentPageIndex > 0
-                          ? () => setState(() => _currentPageIndex--)
-                          : null,
-                      icon: const Icon(Icons.arrow_back, size: 16),
-                      label: Text(isGl ? 'Anterior' : 'Anterior'),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppTheme.pageBg,
-                        foregroundColor: AppTheme.textPrimary,
-                        elevation: 0,
+                    Flexible(
+                      child: ElevatedButton.icon(
+                        onPressed: _currentPageIndex > 0
+                            ? () => setState(() => _currentPageIndex--)
+                            : null,
+                        icon: const Icon(Icons.arrow_back, size: 16),
+                        label: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: Text(isGl ? 'Anterior' : 'Anterior'),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppTheme.pageBg,
+                          foregroundColor: AppTheme.textPrimary,
+                          elevation: 0,
+                        ),
                       ),
                     ),
-                    Text(
-                      '${_currentPageIndex + 1} / ${paginas.length}',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: AppTheme.textSecondary,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Text(
+                        '${_currentPageIndex + 1} / ${paginas.length}',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: AppTheme.textSecondary,
+                        ),
                       ),
                     ),
-                    ElevatedButton.icon(
-                      onPressed: _currentPageIndex < paginas.length - 1
-                          ? () => setState(() => _currentPageIndex++)
-                          : null,
-                      label: Text(isGl ? 'Seguinte' : 'Siguiente'),
-                      icon: const Icon(Icons.arrow_forward, size: 16),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppTheme.primaryVigoBlue,
-                        foregroundColor: Colors.white,
-                        elevation: 0,
+                    Flexible(
+                      child: ElevatedButton.icon(
+                        onPressed: _currentPageIndex < paginas.length - 1
+                            ? () => setState(() => _currentPageIndex++)
+                            : null,
+                        label: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: Text(isGl ? 'Seguinte' : 'Siguiente'),
+                        ),
+                        icon: const Icon(Icons.arrow_forward, size: 16),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppTheme.primaryVigoBlue,
+                          foregroundColor: Colors.white,
+                          elevation: 0,
+                        ),
                       ),
                     ),
                   ],
