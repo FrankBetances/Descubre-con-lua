@@ -845,10 +845,10 @@
         {
           "id": "2_3.marzo.s4.crispy",
           "en": "Crispy",
-          "gl": "Estaladizo",
+          "gl": "Crocante",
           "es": "Crujiente",
           "tprAction": {
-            "gl": "Morder algo que cruxe",
+            "gl": "Morder algo crocante",
             "es": "Morder algo crujiente"
           },
           "category": "adjective"

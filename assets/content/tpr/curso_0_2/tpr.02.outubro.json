@@ -59,10 +59,10 @@
         {
           "id": "0_2.outubro.s1.toenails",
           "en": "Toenails",
-          "gl": "Uñas dos pés",
+          "gl": "Unllas dos pés",
           "es": "Uñas de los pies",
           "tprAction": {
-            "gl": "Contar as uñas dos pés",
+            "gl": "Contar as unllas dos pés",
             "es": "Contar las uñas de los pies"
           },
           "category": "noun"
@@ -746,10 +746,10 @@
         {
           "id": "0_2.outubro.s4.little-finger",
           "en": "Little finger",
-          "gl": "Dedo miñeiro",
+          "gl": "Dedo meniñeiro",
           "es": "Meñique",
           "tprAction": {
-            "gl": "Enganchar o dedo miñeiro",
+            "gl": "Enganchar o dedo meniñeiro",
             "es": "Enganchar el meñique"
           },
           "category": "noun"

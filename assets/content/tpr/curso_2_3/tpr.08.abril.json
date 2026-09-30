@@ -169,7 +169,7 @@
         {
           "id": "2_3.abril.s1.fluffy-seeds",
           "en": "Fluffy seeds",
-          "gl": "Sementes lanudas",
+          "gl": "Sementes peludas",
           "es": "Semillas algodonosas",
           "tprAction": {
             "gl": "Soprar suave",
@@ -255,7 +255,7 @@
         {
           "id": "2_3.abril.s2.swallow",
           "en": "Swallow",
-          "gl": "Anduriña",
+          "gl": "Andoriña",
           "es": "Golondrina",
           "tprAction": {
             "gl": "Voar cos brazos en V",
@@ -605,7 +605,7 @@
         {
           "id": "2_3.abril.s3.whispery",
           "en": "Whispery",
-          "gl": "Susurrante",
+          "gl": "Bisbado",
           "es": "Susurrante",
           "tprAction": {
             "gl": "Falar coa voz moi baixiña",
