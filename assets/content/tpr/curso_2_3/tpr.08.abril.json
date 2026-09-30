@@ -309,12 +309,12 @@
         },
         {
           "id": "2_3.abril.s2.branch-perch",
-          "en": "Branch perch",
-          "gl": "Pouso na póla",
-          "es": "Posadero en la rama",
+          "en": "Bird feeder",
+          "gl": "Comedeiro de paxaros",
+          "es": "Comedero de pájaros",
           "tprAction": {
-            "gl": "Pousarse coma un paxaro",
-            "es": "Posarse como un pájaro"
+            "gl": "Encher o comedeiro con sementes",
+            "es": "Llenar el comedero con semillas"
           },
           "category": "noun"
         },
@@ -379,14 +379,14 @@
           "gl": "Melodioso",
           "es": "Melodioso",
           "tprAction": {
-            "gl": "Tararear bonito",
+            "gl": "Cantaruxar bonito",
             "es": "Tararear bonito"
           },
           "category": "adjective"
         },
         {
           "id": "2_3.abril.s2.quick-little",
-          "en": "Quick little",
+          "en": "Small and quick",
           "gl": "Pequeno e rápido",
           "es": "Pequeño y rápido",
           "tprAction": {
@@ -627,8 +627,8 @@
         {
           "id": "2_3.abril.s3.restful",
           "en": "Restful",
-          "gl": "Descansado",
-          "es": "Descansado",
+          "gl": "Relaxante",
+          "es": "Relajante",
           "tprAction": {
             "gl": "Pechar os ollos amodo",
             "es": "Cerrar los ojos despacio"
@@ -637,7 +637,7 @@
         },
         {
           "id": "2_3.abril.s3.tiptoey",
-          "en": "Tiptoey",
+          "en": "On tiptoe",
           "gl": "De puntiñas",
           "es": "De puntillas",
           "tprAction": {
@@ -671,8 +671,8 @@
         {
           "id": "2_3.abril.s3.quietly-quietly",
           "en": "Quietly, quietly",
-          "gl": "Amodiño, amodiño",
-          "es": "Despacito, despacito",
+          "gl": "Baixiño, baixiño",
+          "es": "Bajito, bajito",
           "tprAction": {
             "gl": "Camiñar moi amodo",
             "es": "Caminar muy despacio"
@@ -727,7 +727,7 @@
           "gl": "Pitiño recén nado",
           "es": "Polluelo",
           "tprAction": {
-            "gl": "Acurrucarse coma un pitiño",
+            "gl": "Encollerse coma un pitiño",
             "es": "Acurrucarse como un polluelo"
           },
           "category": "noun"
@@ -789,7 +789,7 @@
         },
         {
           "id": "2_3.abril.s4.crack-out",
-          "en": "Crack out",
+          "en": "Come out of the egg",
           "gl": "Saír do ovo",
           "es": "Salir del huevo",
           "tprAction": {
@@ -822,7 +822,7 @@
         },
         {
           "id": "2_3.abril.s4.open-beak",
-          "en": "Open beak",
+          "en": "Open your beak",
           "gl": "Abrir o bico",
           "es": "Abrir el pico",
           "tprAction": {
@@ -837,7 +837,7 @@
           "gl": "Recén nado",
           "es": "Recién nacido",
           "tprAction": {
-            "gl": "Acurrucarse moi pequeno",
+            "gl": "Encollerse moi pequeno",
             "es": "Acurrucarse muy pequeño"
           },
           "category": "adjective"

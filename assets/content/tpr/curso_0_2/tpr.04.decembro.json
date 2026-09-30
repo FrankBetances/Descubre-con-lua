@@ -15,7 +15,7 @@
         {
           "id": "0_2.decembro.s1.mittens",
           "en": "Mittens",
-          "gl": "Luvas sen dedos",
+          "gl": "Manoplas",
           "es": "Manoplas",
           "tprAction": {
             "gl": "Poñer as luvas ao bebé",
@@ -213,7 +213,7 @@
         {
           "id": "0_2.decembro.s1.hat-and-mittens",
           "en": "Hat and mittens",
-          "gl": "Gorro e luvas",
+          "gl": "Gorro e manoplas",
           "es": "Gorro y manoplas",
           "tprAction": {
             "gl": "Tocar o gorro e despois as luvas",
@@ -310,8 +310,8 @@
         {
           "id": "0_2.decembro.s2.heater",
           "en": "Heater",
-          "gl": "Calefacción",
-          "es": "Calefacción",
+          "gl": "Radiador",
+          "es": "Radiador",
           "tprAction": {
             "gl": "Sinalar o radiador quente",
             "es": "Señalar el radiador caliente"
@@ -538,7 +538,7 @@
         },
         {
           "id": "0_2.decembro.s3.star-light",
-          "en": "Star light",
+          "en": "Starlight",
           "gl": "Luz de estrela",
           "es": "Luz de estrella",
           "tprAction": {
@@ -571,9 +571,9 @@
         },
         {
           "id": "0_2.decembro.s3.glitter-and-shake",
-          "en": "Glitter and shake",
-          "gl": "Axitar",
-          "es": "Agitar",
+          "en": "Shake the glitter",
+          "gl": "Axitar a purpurina",
+          "es": "Agitar la purpurina",
           "tprAction": {
             "gl": "Axitar a botella de purpurina",
             "es": "Agitar la botella de purpurina"
@@ -889,7 +889,7 @@
         {
           "id": "0_2.decembro.s4.ho-ho-ho",
           "en": "Ho, ho, ho!",
-          "gl": "Jo, jo, jo!",
+          "gl": "Ho, ho, ho!",
           "es": "¡Jo, jo, jo!",
           "tprAction": {
             "gl": "Palmear a barriga rindo",

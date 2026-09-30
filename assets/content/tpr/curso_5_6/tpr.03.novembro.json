@@ -47,7 +47,7 @@
         },
         {
           "id": "5_6.novembro.s1.pan",
-          "en": "Pan",
+          "en": "Scale pan",
           "gl": "Prato da balanza",
           "es": "Platillo",
           "tprAction": {
@@ -69,7 +69,7 @@
         },
         {
           "id": "5_6.novembro.s1.weights-set",
-          "en": "Weights set",
+          "en": "Set of weights",
           "gl": "Xogo de pesas",
           "es": "Juego de pesas",
           "tprAction": {
@@ -538,7 +538,7 @@
         },
         {
           "id": "5_6.novembro.s3.steam-puff",
-          "en": "Steam puff",
+          "en": "Puff of steam",
           "gl": "Bafarada de vapor",
           "es": "Bocanada de vapor",
           "tprAction": {

@@ -85,7 +85,7 @@
         "ingles": [
           "Sun",
           "Flower",
-          "Open your flower"
+          "Open like a flower"
         ],
         "lamina": "conto_primavera_3"
       }
@@ -310,8 +310,8 @@
         "es": "Un día de orballo, en la ventana, seguir una gota con el dedo diciendo 'Rain, rain, tap, tap, little drops!'."
       },
       {
-        "gl": "Ao espertar, facer xuntos o estirón: enroscarse na cama e abrirse dicindo 'Grow up!'.",
-        "es": "Al despertar, hacer juntos el estirón: enroscarse en la cama y abrirse diciendo 'Grow up!'."
+        "gl": "Ao espertar, facer xuntos o estirón: enroscarse na cama e abrirse dicindo 'Grow tall!'.",
+        "es": "Al despertar, hacer juntos el estirón: enroscarse en la cama y abrirse diciendo 'Grow tall!'."
       }
     ],
     "recomendacionConversacion": {
@@ -338,7 +338,7 @@
     "porFase": {
       "pulso": [
         "Grow",
-        "Grow up",
+        "Grow tall",
         "Be a little seed"
       ],
       "conto": [
@@ -353,10 +353,10 @@
       ],
       "exploracion": [
         "Open",
-        "Open your flower"
+        "Open like a flower"
       ],
       "matematicas": [
-        "Grow up",
+        "Grow tall",
         "Open"
       ],
       "ponteCasa": [

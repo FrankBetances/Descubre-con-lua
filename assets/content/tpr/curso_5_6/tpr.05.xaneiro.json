@@ -8,7 +8,7 @@
     {
       "semana": 1,
       "tema": {
-        "gl": "A Olivera",
+        "gl": "A Oliveira",
         "es": "La Olivera"
       },
       "palabras": [
@@ -287,7 +287,7 @@
         },
         {
           "id": "5_6.xaneiro.s2.canon",
-          "en": "Canon",
+          "en": "Cannon",
           "gl": "Canón",
           "es": "Cañón",
           "tprAction": {
@@ -441,7 +441,7 @@
         },
         {
           "id": "5_6.xaneiro.s2.before-people-travelled-by-boat",
-          "en": "Before, people travelled by boat",
+          "en": "In the past, people travelled by boat",
           "gl": "Antes, a xente viaxaba en barco",
           "es": "Antes, la gente viajaba en barco",
           "tprAction": {
@@ -476,7 +476,7 @@
           "gl": "Foto de bebé",
           "es": "Foto de bebé",
           "tprAction": {
-            "gl": "Acunar un bebé imaxinario",
+            "gl": "Arrolar un bebé imaxinario",
             "es": "Acunar un bebé imaginario"
           },
           "category": "noun"
@@ -641,7 +641,7 @@
           "gl": "Bebé recén nado",
           "es": "Bebé recién nacido",
           "tprAction": {
-            "gl": "Acunar nos brazos",
+            "gl": "Arrolar nos brazos",
             "es": "Acunar en los brazos"
           },
           "category": "adjective"
@@ -844,7 +844,7 @@
         },
         {
           "id": "5_6.xaneiro.s4.surprising-end",
-          "en": "Surprising end",
+          "en": "Surprise ending",
           "gl": "Final sorprendente",
           "es": "Final sorprendente",
           "tprAction": {
@@ -910,7 +910,7 @@
         },
         {
           "id": "5_6.xaneiro.s4.first-the-hero-was-lost-then-she-found-the-way-home",
-          "en": "First the hero was lost, then she found the way home",
+          "en": "First the hero was lost, then she found her way home",
           "gl": "Primeiro a heroína perdeuse, despois atopou o camiño a casa",
           "es": "Primero la heroína se perdió, luego encontró el camino a casa",
           "tprAction": {

@@ -26,7 +26,7 @@
         {
           "id": "4_5.xaneiro.s1.compass",
           "en": "Compass",
-          "gl": "Compás de rumbos",
+          "gl": "Compás",
           "es": "Brújula",
           "tprAction": {
             "gl": "Xirar sinalando o norte",
@@ -243,7 +243,7 @@
       "palabras": [
         {
           "id": "4_5.xaneiro.s2.tunnel-under",
-          "en": "Tunnel under",
+          "en": "Underpass",
           "gl": "Paso inferior",
           "es": "Paso inferior",
           "tprAction": {

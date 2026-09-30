@@ -26,17 +26,17 @@
         {
           "id": "4_5.maio.s1.marble",
           "en": "Marble",
-          "gl": "Canica",
+          "gl": "Bóla de vidro",
           "es": "Canica",
           "tprAction": {
-            "gl": "Deixar caer unha canica",
+            "gl": "Deixar caer unha bóla de vidro",
             "es": "Dejar caer una canica"
           },
           "category": "noun"
         },
         {
           "id": "4_5.maio.s1.feather-boat",
-          "en": "Feather boat",
+          "en": "Paper boat",
           "gl": "Barco de papel",
           "es": "Barco de papel",
           "tprAction": {
@@ -291,8 +291,8 @@
           "gl": "Corrente",
           "es": "Corriente",
           "tprAction": {
-            "gl": "Moverse levado polo aire",
-            "es": "Moverse llevado por el aire"
+            "gl": "Moverse levado pola auga",
+            "es": "Moverse llevado por el agua"
           },
           "category": "noun"
         },
@@ -604,9 +604,9 @@
         },
         {
           "id": "4_5.maio.s3.rainy-season",
-          "en": "Rainy season",
-          "gl": "De choivas",
-          "es": "Lluvioso",
+          "en": "Showery",
+          "gl": "De chuvascos",
+          "es": "De chubascos",
           "tprAction": {
             "gl": "Mover os dedos coma choiva",
             "es": "Mover los dedos como lluvia"
@@ -626,7 +626,7 @@
         },
         {
           "id": "4_5.maio.s3.colour-striped",
-          "en": "Colour-striped",
+          "en": "Rainbow-striped",
           "gl": "De raias de cores",
           "es": "De rayas de colores",
           "tprAction": {

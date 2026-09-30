@@ -627,8 +627,8 @@
         {
           "id": "4_5.novembro.s3.wriggly",
           "en": "Wriggly",
-          "gl": "Retorcido",
-          "es": "Retorcido",
+          "gl": "Que se retorce",
+          "es": "Que se retuerce",
           "tprAction": {
             "gl": "Retorcer o corpo",
             "es": "Retorcer el cuerpo"
@@ -768,10 +768,10 @@
         {
           "id": "4_5.novembro.s4.leaf-rubbing",
           "en": "Leaf rubbing",
-          "gl": "Frotado de follas",
+          "gl": "Calco de follas",
           "es": "Calco de hojas",
           "tprAction": {
-            "gl": "Frotar unha cera sobre o papel",
+            "gl": "Fregar unha cera sobre o papel",
             "es": "Frotar una cera sobre el papel"
           },
           "category": "noun"
@@ -801,10 +801,10 @@
         {
           "id": "4_5.novembro.s4.rub-a-leaf",
           "en": "Rub a leaf",
-          "gl": "Frotar unha folla",
+          "gl": "Fregar unha folla",
           "es": "Frotar una hoja",
           "tprAction": {
-            "gl": "Frotar a cera sobre a folla",
+            "gl": "Fregar a cera sobre a folla",
             "es": "Frotar la cera sobre la hoja"
           },
           "category": "verb"

@@ -276,7 +276,7 @@
         },
         {
           "id": "2_3.marzo.s2.grape-bunch",
-          "en": "Grape bunch",
+          "en": "Bunch of grapes",
           "gl": "Acio de uvas",
           "es": "Racimo de uvas",
           "tprAction": {
@@ -538,9 +538,9 @@
         },
         {
           "id": "2_3.marzo.s3.building-shape",
-          "en": "Building shape",
-          "gl": "Peza de construción",
-          "es": "Pieza de construcción",
+          "en": "Wooden block",
+          "gl": "Bloque de madeira",
+          "es": "Bloque de madera",
           "tprAction": {
             "gl": "Poñer unha peza enriba doutra",
             "es": "Poner una pieza encima de otra"
@@ -549,7 +549,7 @@
         },
         {
           "id": "2_3.marzo.s3.throw-the-dice",
-          "en": "Throw the dice",
+          "en": "Roll the dice",
           "gl": "Lanzar o dado",
           "es": "Tirar el dado",
           "tprAction": {
@@ -626,9 +626,9 @@
         },
         {
           "id": "2_3.marzo.s3.rolly",
-          "en": "Rolly",
-          "gl": "Que roda",
-          "es": "Que rueda",
+          "en": "Easy to roll",
+          "gl": "Fácil de rodar",
+          "es": "Fácil de rodar",
           "tprAction": {
             "gl": "Rodar as mans",
             "es": "Rodar las manos"
@@ -638,10 +638,10 @@
         {
           "id": "2_3.marzo.s3.stackable",
           "en": "Stackable",
-          "gl": "Apilable",
+          "gl": "Para empillar",
           "es": "Apilable",
           "tprAction": {
-            "gl": "Apilar dúas pezas",
+            "gl": "Empillar dúas pezas",
             "es": "Apilar dos piezas"
           },
           "category": "adjective"
@@ -727,8 +727,8 @@
           "gl": "Pau de cenoria",
           "es": "Palito de zanahoria",
           "tprAction": {
-            "gl": "Mastigar un pau de cenoria",
-            "es": "Masticar un palito de zanahoria"
+            "gl": "Facer que se mastiga un pau de cenoria",
+            "es": "Hacer como que se mastica un palito de zanahoria"
           },
           "category": "noun"
         },
@@ -804,8 +804,8 @@
           "gl": "Mastigar unha cenoria",
           "es": "Morder una zanahoria",
           "tprAction": {
-            "gl": "Morder e facer «cranc»",
-            "es": "Morder y hacer «crac»"
+            "gl": "Facer que se morde e dicir «cranc»",
+            "es": "Hacer como que se muerde y decir «crac»"
           },
           "category": "verb"
         },

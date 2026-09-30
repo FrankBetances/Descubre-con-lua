@@ -445,7 +445,7 @@
           "gl": "Onde está o sol?",
           "es": "¿Dónde está el sol?",
           "tprAction": {
-            "gl": "Buscar co man na fronte",
+            "gl": "Buscar coa man na fronte",
             "es": "Buscar con la mano en la frente"
           },
           "category": "phrase"
@@ -616,8 +616,8 @@
         {
           "id": "2_3.decembro.s3.chunky",
           "en": "Chunky",
-          "gl": "Grosiño",
-          "es": "Gordito",
+          "gl": "Groso",
+          "es": "Grueso",
           "tprAction": {
             "gl": "Tocar un xersei groso",
             "es": "Tocar un jersey grueso"
@@ -889,7 +889,7 @@
         {
           "id": "2_3.decembro.s4.read-me-a-story",
           "en": "Read me a story",
-          "gl": "Léme un conto",
+          "gl": "Leme un conto",
           "es": "Léeme un cuento",
           "tprAction": {
             "gl": "Traer un libro",

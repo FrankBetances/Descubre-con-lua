@@ -125,11 +125,11 @@
         {
           "id": "warm-up",
           "en": "Warm up",
-          "gl": "Quentar",
+          "gl": "Quentarse",
           "es": "Calentarse",
           "category": "verb",
           "tprAction": {
-            "gl": "Frotar as mans e o corpo para quentar",
+            "gl": "Fregar as mans e o corpo para quentarse",
             "es": "Frotarse las manos y el cuerpo para entrar en calor"
           }
         },
@@ -137,7 +137,7 @@
           "id": "peek",
           "en": "Peek",
           "gl": "Espreitar",
-          "es": "Asomarse",
+          "es": "Espiar",
           "category": "verb",
           "tprAction": {
             "gl": "Espreitar por un burato feito cos dedos",
@@ -430,9 +430,9 @@
         },
         {
           "id": "open-your-flower",
-          "en": "Open your flower",
-          "gl": "Abre a túa flor",
-          "es": "Abre tu flor",
+          "en": "Open like a flower",
+          "gl": "Ábrete coma unha flor",
+          "es": "Ábrete como una flor",
           "category": "phrase",
           "tprAction": {
             "gl": "Desde agachados, abrir brazos e mans amodo",

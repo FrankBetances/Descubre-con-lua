@@ -81,7 +81,7 @@
         {
           "id": "2_3.novembro.s1.gate",
           "en": "Gate",
-          "gl": "Portal",
+          "gl": "Cancela",
           "es": "Verja",
           "tprAction": {
             "gl": "Abrir o portal do parque",
@@ -106,8 +106,8 @@
           "gl": "Dar de comer aos patos",
           "es": "Dar de comer a los patos",
           "tprAction": {
-            "gl": "Estender a man con miolos",
-            "es": "Extender la mano con migas"
+            "gl": "Estender a man con comida para patos",
+            "es": "Extender la mano con comida para patos"
           },
           "category": "verb"
         },
@@ -582,9 +582,9 @@
         },
         {
           "id": "2_3.novembro.s3.walk-heavy",
-          "en": "Walk heavy",
-          "gl": "Camiñar pesado",
-          "es": "Caminar pesado",
+          "en": "Walk like an elephant",
+          "gl": "Camiñar coma un elefante",
+          "es": "Caminar como un elefante",
           "tprAction": {
             "gl": "Camiñar coma un elefante",
             "es": "Caminar como un elefante"
@@ -593,7 +593,7 @@
         },
         {
           "id": "2_3.novembro.s3.walk-light",
-          "en": "Walk light",
+          "en": "Walk lightly",
           "gl": "Camiñar lixeiro",
           "es": "Caminar ligero",
           "tprAction": {

@@ -539,7 +539,7 @@
         {
           "id": "0_2.outubro.s3.tummy-time",
           "en": "Tummy time",
-          "gl": "Tempo de barriga",
+          "gl": "Tempo boca abaixo",
           "es": "Tiempo boca abajo",
           "tprAction": {
             "gl": "Poñer o bebé boca abaixo na alfombra",
@@ -571,7 +571,7 @@
         },
         {
           "id": "0_2.outubro.s3.stick-out",
-          "en": "Stick out",
+          "en": "Stick out your tongue",
           "gl": "Sacar a lingua",
           "es": "Sacar la lengua",
           "tprAction": {
@@ -605,7 +605,7 @@
         {
           "id": "0_2.outubro.s3.silly-face",
           "en": "Silly face",
-          "gl": "Cara parva",
+          "gl": "Cara divertida",
           "es": "Cara graciosa",
           "tprAction": {
             "gl": "Poñer unha cara graciosa",
@@ -626,9 +626,9 @@
         },
         {
           "id": "0_2.outubro.s3.mirror-bright",
-          "en": "Mirror-bright",
-          "gl": "Brillante coma un espello",
-          "es": "Brillante como un espejo",
+          "en": "Clean and shiny",
+          "gl": "Limpo e brillante",
+          "es": "Limpio y brillante",
           "tprAction": {
             "gl": "Facer brillar o espello co pano",
             "es": "Hacer brillar el espejo con el paño"
@@ -802,7 +802,7 @@
           "id": "0_2.outubro.s4.bounce-on-knee",
           "en": "Bounce on knee",
           "gl": "Brincar no xeonllo",
-          "es": "Botar en la rodilla",
+          "es": "Saltar en la rodilla",
           "tprAction": {
             "gl": "Brincar o bebé no xeonllo",
             "es": "Hacer botar al bebé en la rodilla"

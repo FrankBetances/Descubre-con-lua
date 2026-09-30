@@ -135,9 +135,9 @@
         },
         {
           "id": "2_3.xaneiro.s1.look-out",
-          "en": "Look out",
-          "gl": "Mirar fóra",
-          "es": "Mirar afuera",
+          "en": "Look out of the window",
+          "gl": "Mirar pola xanela",
+          "es": "Mirar por la ventanilla",
           "tprAction": {
             "gl": "Mirar pola xanela co dedo",
             "es": "Mirar por la ventanilla con el dedo"
@@ -299,7 +299,7 @@
         {
           "id": "2_3.xaneiro.s2.speed-bump",
           "en": "Speed bump",
-          "gl": "Lombo de burro",
+          "gl": "Resalte",
           "es": "Resalto",
           "tprAction": {
             "gl": "Saltar un pouco no sitio",
@@ -332,8 +332,8 @@
         {
           "id": "2_3.xaneiro.s2.slow-down",
           "en": "Slow down",
-          "gl": "Frear",
-          "es": "Frenar",
+          "gl": "Ir máis amodo",
+          "es": "Ir más despacio",
           "tprAction": {
             "gl": "Mover os brazos cada vez máis amodo",
             "es": "Mover los brazos cada vez más despacio"
@@ -343,8 +343,8 @@
         {
           "id": "2_3.xaneiro.s2.brake",
           "en": "Brake",
-          "gl": "Frear de golpe",
-          "es": "Frenar en seco",
+          "gl": "Frear",
+          "es": "Frenar",
           "tprAction": {
             "gl": "Parar e botar o corpo atrás",
             "es": "Parar y echar el cuerpo atrás"
@@ -354,7 +354,7 @@
         {
           "id": "2_3.xaneiro.s2.steer",
           "en": "Steer",
-          "gl": "Conducir o volante",
+          "gl": "Xirar o volante",
           "es": "Girar el volante",
           "tprAction": {
             "gl": "Xirar o volante á dereita e á esquerda",
@@ -528,10 +528,10 @@
         {
           "id": "2_3.xaneiro.s3.lamp-post",
           "en": "Lamp post",
-          "gl": "Farola",
+          "gl": "Farol",
           "es": "Farola",
           "tprAction": {
-            "gl": "Estirarse alto coma unha farola",
+            "gl": "Estirarse alto coma un farol",
             "es": "Estirarse alto como una farola"
           },
           "category": "noun"
@@ -561,8 +561,8 @@
         {
           "id": "2_3.xaneiro.s3.hold-my-hand",
           "en": "Hold my hand",
-          "gl": "Darme a man",
-          "es": "Darme la mano",
+          "gl": "Dáme a man",
+          "es": "Dame la mano",
           "tprAction": {
             "gl": "Coller a man da persoa adulta",
             "es": "Coger la mano de la persona adulta"

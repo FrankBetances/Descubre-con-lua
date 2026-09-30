@@ -68,7 +68,7 @@
         "ingles": [
           "Bell",
           "Ring",
-          "Ring bells"
+          "Ring the bells"
         ],
         "lamina": "conto_inverno_2"
       },
@@ -339,7 +339,7 @@
       "pulso": [
         "Bell",
         "Ring",
-        "Ring bells"
+        "Ring the bells"
       ],
       "conto": [
         "Cold",
@@ -352,7 +352,7 @@
         "Warm"
       ],
       "exploracion": [
-        "Ring bells",
+        "Ring the bells",
         "Sleep tight"
       ],
       "matematicas": [

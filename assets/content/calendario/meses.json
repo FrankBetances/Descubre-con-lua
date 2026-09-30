@@ -37,7 +37,7 @@
         "tpr": [
           "Stand up",
           "Sit down",
-          "Clap hands"
+          "Clap your hands"
         ],
         "frase": "One shoe, two shoes, up! Push, push!"
       }
@@ -115,7 +115,7 @@
         "tpr": [
           "Fall down",
           "Walk softly",
-          "Crunch leaves"
+          "Crunch the leaves"
         ],
         "frase": "Crunch, crunch, crunch!"
       }
@@ -152,7 +152,7 @@
       "unidad": "juega.inverno.01",
       "ingles": {
         "tpr": [
-          "Ring bells",
+          "Ring the bells",
           "Sleep tight",
           "Wake up!"
         ],
@@ -270,7 +270,7 @@
       "ingles": {
         "tpr": [
           "Find something red",
-          "Roll the circle",
+          "Roll the hoop",
           "Shake the bottle"
         ],
         "frase": "Red apple, sweet and yummy!"
@@ -309,8 +309,8 @@
       "ingles": {
         "tpr": [
           "Be a little seed",
-          "Grow up",
-          "Open your flower"
+          "Grow tall",
+          "Open like a flower"
         ],
         "frase": "Rain, rain, tap, tap, little drops!"
       }

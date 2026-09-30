@@ -30,7 +30,7 @@
         "es": "Reunir al grupo en el círculo.",
         "en": "Gather the group in the circle."
       },
-      "cueAcustica": "Good morning partners! Hands together!",
+      "cueAcustica": "Good morning, partners! Hands together!",
       "comandosL3": [],
       "repertorioMateriales": []
     },
@@ -72,7 +72,7 @@
       "comandosL3": [
         {
           "id": "cmd.setembro.6i.01",
-          "textoIngles": "Walk to the hook and hang your coat",
+          "textoIngles": "Walk to the hook and hang up your coat",
           "accionFisica": {
             "gl": "Camiñar con paso firme cara á percha baixa asignada e colgar o abrigo pola presilla.",
             "es": "Caminar con paso firme hacia la percha baja asignada y colgar el abrigo por la presilla.",

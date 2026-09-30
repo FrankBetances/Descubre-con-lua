@@ -567,7 +567,7 @@
       "headword": "water",
       "collocate": "the plants",
       "fullCollocation": "water the plants",
-      "naturalContext": "Water the plants with the little can.",
+      "naturalContext": "Water the plants with the little watering can.",
       "translation": {
         "gl": "Regar as plantas",
         "es": "Regar las plantas"
@@ -695,7 +695,7 @@
       "headword": "put",
       "collocate": "on",
       "fullCollocation": "put on your coat",
-      "naturalContext": "Put on your coat, it is cold outside.",
+      "naturalContext": "Put on your coat: it is cold outside.",
       "translation": {
         "gl": "Poñer o abrigo",
         "es": "Ponerse el abrigo"

@@ -114,7 +114,7 @@
         {
           "id": "2_3.febreiro.s1.growl",
           "en": "Growl",
-          "gl": "Grunhir",
+          "gl": "Rosmar",
           "es": "Gruñir",
           "tprAction": {
             "gl": "Facer «grrr» baixiño",
@@ -124,7 +124,7 @@
         },
         {
           "id": "2_3.febreiro.s1.stripe",
-          "en": "Stripe",
+          "en": "Paint stripes",
           "gl": "Pintar raias",
           "es": "Pintar rayas",
           "tprAction": {
@@ -168,7 +168,7 @@
         },
         {
           "id": "2_3.febreiro.s1.waddly",
-          "en": "Waddly",
+          "en": "Waddling",
           "gl": "Bambeante",
           "es": "Bamboleante",
           "tprAction": {
@@ -179,9 +179,9 @@
         },
         {
           "id": "2_3.febreiro.s1.hoppy",
-          "en": "Hoppy",
-          "gl": "Saltarín",
-          "es": "Brincador",
+          "en": "Hopping",
+          "gl": "Dando brincos",
+          "es": "Dando brincos",
           "tprAction": {
             "gl": "Brincar sen parar",
             "es": "Brincar sin parar"
@@ -205,7 +205,7 @@
           "gl": "Grrr, grrr!",
           "es": "¡Grrr, grrr!",
           "tprAction": {
-            "gl": "Grunhir e sorrir",
+            "gl": "Rosmar e sorrir",
             "es": "Gruñir y sonreír"
           },
           "category": "phrase"
@@ -313,16 +313,16 @@
           "gl": "Tigriño",
           "es": "Cachorro de tigre",
           "tprAction": {
-            "gl": "Acurrucarse coma un tigriño",
+            "gl": "Encollerse coma un tigriño",
             "es": "Acurrucarse como un cachorro de tigre"
           },
           "category": "noun"
         },
         {
           "id": "2_3.febreiro.s2.swing-from",
-          "en": "Swing from",
-          "gl": "Colgar de",
-          "es": "Colgarse de",
+          "en": "Swing from a vine",
+          "gl": "Colgarse dunha liana",
+          "es": "Colgarse de una liana",
           "tprAction": {
             "gl": "Balancear os brazos coma un mono",
             "es": "Balancear los brazos como un mono"
@@ -331,7 +331,7 @@
         },
         {
           "id": "2_3.febreiro.s2.beat-chest",
-          "en": "Beat chest",
+          "en": "Beat your chest",
           "gl": "Bater no peito",
           "es": "Golpear el pecho",
           "tprAction": {
@@ -375,9 +375,9 @@
         },
         {
           "id": "2_3.febreiro.s2.jungly",
-          "en": "Jungly",
-          "gl": "Selvático",
-          "es": "Selvático",
+          "en": "Tropical",
+          "gl": "Tropical",
+          "es": "Tropical",
           "tprAction": {
             "gl": "Mover as mans coma herba alta",
             "es": "Mover las manos como hierba alta"
@@ -822,7 +822,7 @@
         },
         {
           "id": "2_3.febreiro.s4.wiggle-a-tail",
-          "en": "Wiggle a tail",
+          "en": "Wiggle your tail",
           "gl": "Menear o rabo",
           "es": "Menear la cola",
           "tprAction": {

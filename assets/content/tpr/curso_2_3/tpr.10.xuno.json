@@ -37,7 +37,7 @@
         {
           "id": "2_3.xuno.s1.paddle-boat",
           "en": "Paddle boat",
-          "gl": "Pedaliño",
+          "gl": "Barco de pedais",
           "es": "Hidropedal",
           "tprAction": {
             "gl": "Pedalear sentados",
@@ -58,9 +58,9 @@
         },
         {
           "id": "2_3.xuno.s1.boat-sail",
-          "en": "Boat sail",
-          "gl": "Vela",
-          "es": "Vela",
+          "en": "White sail",
+          "gl": "Vela branca",
+          "es": "Vela blanca",
           "tprAction": {
             "gl": "Abrir os brazos coma unha vela",
             "es": "Abrir los brazos como una vela"
@@ -191,8 +191,8 @@
         {
           "id": "2_3.xuno.s1.row-row-row-your-boat",
           "en": "Row, row, row your boat",
-          "gl": "Rema, rema o teu bote",
-          "es": "Rema, rema tu barca",
+          "gl": "Rema, rema, rema o teu bote",
+          "es": "Rema, rema, rema tu barca",
           "tprAction": {
             "gl": "Remar cantando",
             "es": "Remar cantando"
@@ -212,7 +212,7 @@
         },
         {
           "id": "2_3.xuno.s1.gently-down-the-river",
-          "en": "Gently down the river",
+          "en": "Gently down the stream",
           "gl": "Amodo polo río",
           "es": "Despacio por el río",
           "tprAction": {
@@ -801,7 +801,7 @@
         {
           "id": "2_3.xuno.s4.pose",
           "en": "Pose",
-          "gl": "Poñer para a foto",
+          "gl": "Posar",
           "es": "Posar",
           "tprAction": {
             "gl": "Sorrir quietos para a foto",
@@ -878,7 +878,7 @@
         {
           "id": "2_3.xuno.s4.say-cheese",
           "en": "Say cheese!",
-          "gl": "Di patata!",
+          "gl": "Di pataca!",
           "es": "¡Di patata!",
           "tprAction": {
             "gl": "Sorrir para a foto",

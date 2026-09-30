@@ -151,7 +151,7 @@
           "es": "Frío, fría",
           "category": "adjective",
           "tprAction": {
-            "gl": "Frotar os brazos coas mans cruzadas",
+            "gl": "Fregar os brazos coas mans cruzadas",
             "es": "Frotarse los brazos con las manos cruzadas"
           }
         },
@@ -299,8 +299,8 @@
         {
           "id": "ribbon",
           "en": "Ribbon",
-          "gl": "Lazo",
-          "es": "Lazo",
+          "gl": "Cinta",
+          "es": "Cinta",
           "category": "noun",
           "tprAction": {
             "gl": "Facer un lazo no aire cos dedos",

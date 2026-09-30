@@ -72,7 +72,7 @@
       "comandosL3": [
         {
           "id": "cmd.setembro.4i.01",
-          "textoIngles": "Stand up and clap hands",
+          "textoIngles": "Stand up and clap your hands",
           "accionFisica": {
             "gl": "Erguerse amodo da alfombra e bater as palmas dúas veces.",
             "es": "Levantarse despacio de la alfombra y dar dos palmadas.",

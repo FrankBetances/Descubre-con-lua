@@ -73,8 +73,8 @@
           "gl": "Confeti",
           "es": "Confeti",
           "tprAction": {
-            "gl": "Deixar caer confeti sobre a man",
-            "es": "Dejar caer confeti sobre la mano"
+            "gl": "Axitar un bote pechado con confeti",
+            "es": "Agitar un bote cerrado con confeti"
           },
           "category": "noun"
         },
@@ -180,8 +180,8 @@
         {
           "id": "0_2.febreiro.s1.feathered-hat",
           "en": "Feathered hat",
-          "gl": "Con plumas",
-          "es": "Con plumas",
+          "gl": "Gorro con plumas",
+          "es": "Gorro con plumas",
           "tprAction": {
             "gl": "Pasar unha pluma do gorro pola cara",
             "es": "Pasar una pluma del gorro por la cara"
@@ -213,8 +213,8 @@
         {
           "id": "0_2.febreiro.s1.where-did-i-go",
           "en": "Where did I go?",
-          "gl": "Onde fun?",
-          "es": "¿Dónde me fui?",
+          "gl": "Onde estou?",
+          "es": "¿Dónde estoy?",
           "tprAction": {
             "gl": "Esconderse detrás dunha almofada",
             "es": "Esconderse detrás de una almohada"
@@ -266,7 +266,7 @@
         {
           "id": "0_2.febreiro.s2.seesaw",
           "en": "Seesaw",
-          "gl": "Bambán",
+          "gl": "Balancín",
           "es": "Balancín",
           "tprAction": {
             "gl": "Subir e baixar coas mans",
@@ -335,7 +335,7 @@
           "gl": "Bambear",
           "es": "Tambalearse",
           "tprAction": {
-            "gl": "Bambear coma unha gelatina",
+            "gl": "Bambear coma unha xelatina",
             "es": "Tambalearse como una gelatina"
           },
           "category": "verb"
@@ -398,7 +398,7 @@
         {
           "id": "0_2.febreiro.s2.bouncy",
           "en": "Bouncy",
-          "gl": "Saltarín",
+          "gl": "Saltarico",
           "es": "Saltarín",
           "tprAction": {
             "gl": "Brincar no pufe",
@@ -539,7 +539,7 @@
         {
           "id": "0_2.febreiro.s3.hiding-place",
           "en": "Hiding place",
-          "gl": "Escondite",
+          "gl": "Agocho",
           "es": "Escondite",
           "tprAction": {
             "gl": "Sinalar onde está escondido",
@@ -723,9 +723,9 @@
         },
         {
           "id": "0_2.febreiro.s4.tambourine-bells",
-          "en": "Tambourine bells",
-          "gl": "Pandeireta",
-          "es": "Pandereta",
+          "en": "Toy tambourine",
+          "gl": "Pandeireta de xoguete",
+          "es": "Pandereta de juguete",
           "tprAction": {
             "gl": "Bater na pandeireta coa palma",
             "es": "Golpear la pandereta con la palma"
@@ -823,7 +823,7 @@
         {
           "id": "0_2.febreiro.s4.jingle-jangle",
           "en": "Jingle-jangle",
-          "gl": "Tintinear",
+          "gl": "Tintinar",
           "es": "Tintinear",
           "tprAction": {
             "gl": "Axitar unhas chaves de xoguete",
@@ -870,7 +870,7 @@
           "gl": "Melodía alegre",
           "es": "Melodía alegre",
           "tprAction": {
-            "gl": "Tararear unha melodía alegre",
+            "gl": "Cantaruxar unha melodía alegre",
             "es": "Tararear una melodía alegre"
           },
           "category": "adjective"

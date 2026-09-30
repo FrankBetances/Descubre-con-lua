@@ -39,11 +39,11 @@
         "Clap"
       ],
       "tpr": [
-        "Clap hands",
+        "Clap your hands",
         "Wave hello",
         "Smile"
       ],
-      "frase": "Hello, baby! Clap, clap, clap hands!",
+      "frase": "Hello, baby! Clap, clap, clap your hands!",
       "audio_id": "en_c1_m1_hello"
     },
     "dinamicaEvolutiva": {
@@ -134,8 +134,8 @@
       "es": "Cesta de los tesoros con castañas grandes y hojas secas para apretar con manos abiertas."
     },
     "actividadHogar": {
-      "gl": "Ao preparar a comida, amosar unha castaña no puño: \"Open hand! Big chestnut, pick it up!\".",
-      "es": "Al preparar la comida, mostrar una castaña en el puño: \"Open hand! Big chestnut, pick it up!\"."
+      "gl": "Ao preparar a comida, amosar unha castaña no puño: \"Open your hand! Big chestnut, pick it up!\".",
+      "es": "Al preparar la comida, mostrar una castaña en el puño: \"Open your hand! Big chestnut, pick it up!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Cociña ou momento da merenda",
@@ -410,8 +410,8 @@
       "es": "Sensibilización ante el crecimiento de la naturaleza y el tacto suave de la lluvia fina."
     },
     "actividadAula": {
-      "gl": "Deitarse como sementes no chan e medrar a modo erguendo os brazos ao escoitar \"Grow up!\".",
-      "es": "Tumbarse como semillas en el suelo y crecer despacio levantando los brazos al escuchar \"Grow up!\"."
+      "gl": "Deitarse como sementes no chan e medrar a modo erguendo os brazos ao escoitar \"Grow tall!\".",
+      "es": "Tumbarse como semillas en el suelo y crecer despacio levantando los brazos al escuchar \"Grow tall!\"."
     },
     "actividadHogar": {
       "gl": "Xunto á fiestra tocando o cristal cunha pinga de auga: \"Rain, rain, tap, tap, little drops!\".",
@@ -432,7 +432,7 @@
       ],
       "tpr": [
         "Be a seed",
-        "Grow up",
+        "Grow tall",
         "Tap fingers"
       ],
       "frase": "Rain, rain, tap, tap! Little flower, grow!",
@@ -690,8 +690,8 @@
       "es": "Experimentación cinestésica con el viento y el sonido de las hojas secas al pisar."
     },
     "actividadAula": {
-      "gl": "Soplar con forza coma o vento e pisar papel crujiente: \"Wind blows! Crunch the leaves!\".",
-      "es": "Soplar con fuerza como el viento y pisar papel crujiente: \"Wind blows! Crunch the leaves!\"."
+      "gl": "Soplar con forza coma o vento e pisar papel crujiente: \"The wind blows! Crunch the leaves!\".",
+      "es": "Soplar con fuerza como el viento y pisar papel crujiente: \"The wind blows! Crunch the leaves!\"."
     },
     "actividadHogar": {
       "gl": "Paseando por Castrelos: \"Stomp, stomp on the dry leaves! Hear the crunch!\".",
@@ -802,8 +802,8 @@
       "es": "Modulación de la velocidad motriz: rápido, lento y detención total."
     },
     "actividadAula": {
-      "gl": "O tren da clase en fila guiada: \"Chugga-chugga, train goes fast, train goes slow, STOP!\".",
-      "es": "El tren de la clase en fila guiada: \"Chugga-chugga, train goes fast, train goes slow, ¡STOP!\"."
+      "gl": "O tren da clase en fila guiada: \"Chugga-chugga, the train goes fast, the train goes slow, STOP!\".",
+      "es": "El tren de la clase en fila guiada: \"Chugga-chugga, the train goes fast, the train goes slow, STOP!\"."
     },
     "actividadHogar": {
       "gl": "Empurrando un carriño pola alfombra: \"The red car goes fast, fast, fast... and stops!\".",
@@ -827,7 +827,7 @@
         "Go fast",
         "Go slow"
       ],
-      "frase": "The train goes fast, now goes slow... and STOP!",
+      "frase": "The train goes fast, now it goes slow... and STOP!",
       "audio_id": "en_c2_m5_train"
     },
     "dinamicaEvolutiva": {
@@ -914,12 +914,12 @@
       "es": "Identificación de formas geométricas básicas (círculo, cuadrado) y colores secundarios."
     },
     "actividadAula": {
-      "gl": "Rodar un aro grande e perseguilo: \"Roll the circle! Touch the square box!\".",
-      "es": "Rodar un aro grande y perseguirlo: \"Roll the circle! Touch the square box!\"."
+      "gl": "Rodar un aro grande e perseguilo: \"Roll the hoop! Touch the square box!\".",
+      "es": "Rodar un aro grande y perseguirlo: \"Roll the hoop! Touch the square box!\"."
     },
     "actividadHogar": {
-      "gl": "Na mesa da merenda cortando unha laranxa en rodajas: \"Look, round circle! Sweet orange, take one!\".",
-      "es": "En la mesa de la merienda cortando una naranja en rodajas: \"Look, round circle! Sweet orange, take one!\"."
+      "gl": "Na mesa da merenda cortando unha laranxa en rodajas: \"Look, a round circle! Sweet orange, take one!\".",
+      "es": "En la mesa de la merienda cortando una naranja en rodajas: \"Look, a round circle! Sweet orange, take one!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Momento da froita na merenda",
@@ -939,7 +939,7 @@
         "Make a square",
         "Eat orange"
       ],
-      "frase": "Roll the round circle! Eat the sweet orange!",
+      "frase": "Roll the round hoop! Eat the sweet orange!",
       "audio_id": "en_c2_m7_circle"
     },
     "dinamicaEvolutiva": {
@@ -1030,8 +1030,8 @@
       "es": "Rincón de higiene: frotar manos con espuma suave cantando y secando los dedos uno a uno."
     },
     "actividadHogar": {
-      "gl": "Antes de xantar: \"Soap on your hands! Rub, rub, rub, wash away the bubbles, dry with towel!\".",
-      "es": "Antes de comer: \"Soap on your hands! Rub, rub, rub, wash away the bubbles, dry with towel!\"."
+      "gl": "Antes de xantar: \"Soap on your hands! Rub, rub, rub, wash away the bubbles, dry with the towel!\".",
+      "es": "Antes de comer: \"Soap on your hands! Rub, rub, rub, wash away the bubbles, dry with the towel!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Lavado de mans antes das comidas",
@@ -1051,7 +1051,7 @@
         "Blow bubbles",
         "Dry towel"
       ],
-      "frase": "Rub the soap, wash the bubbles! Dry with towel!",
+      "frase": "Rub the soap, make bubbles! Dry with the towel!",
       "audio_id": "en_c2_m9_bubbles"
     },
     "dinamicaEvolutiva": {
@@ -1273,7 +1273,7 @@
       "tpr": [
         "Pick up acorn",
         "Put in basket",
-        "Count three"
+        "Count to three"
       ],
       "frase": "Pick up the chestnut AND put it in the basket!",
       "audio_id": "en_c3_m3_basket"
@@ -1474,8 +1474,8 @@
       "es": "Discriminación de triángulos y cuadrados en el espacio del aula mediante desplazamientos."
     },
     "actividadAula": {
-      "gl": "Buscar formas debuxadas con cinta no chan: \"Find the green triangle AND touch it with two feet!\".",
-      "es": "Buscar formas dibujadas con cinta en el suelo: \"Find the green triangle AND touch it with two feet!\"."
+      "gl": "Buscar formas debuxadas con cinta no chan: \"Find the green triangle AND touch it with both feet!\".",
+      "es": "Buscar formas dibujadas con cinta en el suelo: \"Find the green triangle AND touch it with both feet!\"."
     },
     "actividadHogar": {
       "gl": "Buscando formas pola casa: \"Find something square in the room AND bring it to me!\".",
@@ -1586,8 +1586,8 @@
       "es": "Control de la respiración diafragmática y reconocimiento de las pulsaciones cardíacas."
     },
     "actividadAula": {
-      "gl": "Transición á calma: \"Breathe in like smelling a flower AND blow out like the soft wind!\".",
-      "es": "Transición a la calma: \"Breathe in like smelling a flower AND blow out like the soft wind!\"."
+      "gl": "Transición á calma: \"Breathe in like you're smelling a flower AND blow out like the soft wind!\".",
+      "es": "Transición a la calma: \"Breathe in like you're smelling a flower AND blow out like the soft wind!\"."
     },
     "actividadHogar": {
       "gl": "Antes de deitarse na cama: \"Breathe in deeply AND close your eyes in peace, sweet dreams!\".",
@@ -1611,7 +1611,7 @@
         "Blow out",
         "Close eyes"
       ],
-      "frase": "Breathe in like a flower AND blow out like the wind!",
+      "frase": "Breathe in like you're smelling a flower AND blow out like the wind!",
       "audio_id": "en_c3_m9_breathe"
     },
     "dinamicaEvolutiva": {
@@ -1698,8 +1698,8 @@
       "es": "Empleo de conectores causales (because) y negociación pacífica de conflictos."
     },
     "actividadAula": {
-      "gl": "Construción cooperativa con bloques: \"We share the big blocks BECAUSE we build a tall tower together!\".",
-      "es": "Construcción cooperativa con bloques: \"We share the big blocks BECAUSE we build a tall tower together!\"."
+      "gl": "Construción cooperativa con bloques: \"We share the big blocks BECAUSE we are building a tall tower together!\".",
+      "es": "Construcción cooperativa con bloques: \"We share the big blocks BECAUSE we are building a tall tower together!\"."
     },
     "actividadHogar": {
       "gl": "Na cociña axudando a pór a mesa: \"We wash our hands BECAUSE we are going to eat together!\".",
@@ -1723,7 +1723,7 @@
         "Build high",
         "Wash hands"
       ],
-      "frase": "We share the blocks BECAUSE we build a tower together!",
+      "frase": "We share the blocks BECAUSE we are building a tower together!",
       "audio_id": "en_c4_m1_because"
     },
     "dinamicaEvolutiva": {
@@ -1754,8 +1754,8 @@
       "es": "Inhibición tónica motriz ante señales acústicas y visuales imprevistas."
     },
     "actividadAula": {
-      "gl": "O xogo do raposo e a curuxa: \"Run fast like a hungry fox... and FREEZE when the owl sings!\".",
-      "es": "El juego del zorro y la lechuza: \"Run fast like a hungry fox... and FREEZE when the owl sings!\"."
+      "gl": "O xogo do raposo e a curuxa: \"Run fast like a hungry fox... and FREEZE when the owl hoots!\".",
+      "es": "El juego del zorro y la lechuza: \"Run fast like a hungry fox... and FREEZE when the owl hoots!\"."
     },
     "actividadHogar": {
       "gl": "No salón antes da cea: \"Walk fast like a bear... and FREEZE when I clap two times!\".",
@@ -1779,7 +1779,7 @@
         "Freeze immediately",
         "Clap twice"
       ],
-      "frase": "Run very fast like a fox... and FREEZE when the owl sings!",
+      "frase": "Run very fast like a fox... and FREEZE when the owl hoots!",
       "audio_id": "en_c4_m2_fox"
     },
     "dinamicaEvolutiva": {
@@ -1810,8 +1810,8 @@
       "es": "Comprensión de los ecosistemas gallegos y subordinación: causa de la caída de las hojas."
     },
     "actividadAula": {
-      "gl": "Dramatización do bosque: \"The dry leaves fall down from the tall oak tree BECAUSE the autumn wind blows strong!\".",
-      "es": "Dramatización del bosque: \"The dry leaves fall down from the tall oak tree BECAUSE the autumn wind blows strong!\"."
+      "gl": "Dramatización do bosque: \"The dry leaves fall down from the tall oak tree BECAUSE the autumn wind blows hard!\".",
+      "es": "Dramatización del bosque: \"The dry leaves fall down from the tall oak tree BECAUSE the autumn wind blows hard!\"."
     },
     "actividadHogar": {
       "gl": "No monte da Guía ou parque: \"Pick up the brown acorn BECAUSE the hungry squirrel needs food!\".",
@@ -1835,7 +1835,7 @@
         "Fall down",
         "Gather acorns"
       ],
-      "frase": "Leaves fall down BECAUSE the autumn wind blows very strong!",
+      "frase": "Leaves fall down BECAUSE the autumn wind blows very hard!",
       "audio_id": "en_c4_m3_oak"
     },
     "dinamicaEvolutiva": {
@@ -1866,8 +1866,8 @@
       "es": "Estructuras comparativas (colder than, warmer than) y cambios de estado de la materia."
     },
     "actividadAula": {
-      "gl": "Experimento con cubos de xeo en cuncas: \"Ice is colder than water, but it melts into your warm hands!\".",
-      "es": "Experimento con cubos de hielo en cuencos: \"Ice is colder than water, but it melts into your warm hands!\"."
+      "gl": "Experimento con cubos de xeo en cuncas: \"Ice is colder than water, but it melts in your warm hands!\".",
+      "es": "Experimento con cubos de hielo en cuencos: \"Ice is colder than water, but it melts in your warm hands!\"."
     },
     "actividadHogar": {
       "gl": "Tocando a fiestra fría da cociña: \"This glass is colder than my cheek! Warm it with soft breath!\".",
@@ -1978,12 +1978,12 @@
       "es": "Representación simbólica de personajes con cambios bruscos de velocidad y actitud."
     },
     "actividadAula": {
-      "gl": "Xogo dos xigantes e ananos: \"Walk heavy like a giant, but hide quietly when I count to three!\".",
-      "es": "Juego de los gigantes y enanos: \"Walk heavy like a giant, but hide quietly when I count to three!\"."
+      "gl": "Xogo dos xigantes e ananos: \"Walk heavily like a giant, but hide quietly when I count to three!\".",
+      "es": "Juego de los gigantes y enanos: \"Walk heavily like a giant, but hide quietly when I count to three!\"."
     },
     "actividadHogar": {
-      "gl": "Improvisando un conto na casa: \"You are the brave knight AND I am the friendly dragon, let us talk!\".",
-      "es": "Improvisando un cuento en casa: \"You are the brave knight AND I am the friendly dragon, let us talk!\"."
+      "gl": "Improvisando un conto na casa: \"You are the brave knight AND I am the friendly dragon: let's talk!\".",
+      "es": "Improvisando un cuento en casa: \"You are the brave knight AND I am the friendly dragon: let's talk!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Representación teatral en familia antes de durmir",
@@ -1999,11 +1999,11 @@
         "Count"
       ],
       "tpr": [
-        "Walk heavy",
+        "Walk heavily",
         "Hide quietly",
-        "Count three"
+        "Count to three"
       ],
-      "frase": "Walk heavy like a giant, but hide quietly when I count three!",
+      "frase": "Walk heavily like a giant, but hide quietly when I count to three!",
       "audio_id": "en_c4_m6_giant"
     },
     "dinamicaEvolutiva": {
@@ -2168,7 +2168,7 @@
       ],
       "tpr": [
         "Sink down",
-        "Float top",
+        "Float on top",
         "Drop stone"
       ],
       "frase": "The heavy stone sinks, but the wooden stick floats on top!",
@@ -2225,7 +2225,7 @@
       "tpr": [
         "Climb up",
         "Look through binoculars",
-        "Celebrate high"
+        "Jump for joy"
       ],
       "frase": "We climbed the hill AND now we see the wide blue bay!",
       "audio_id": "en_c4_m10_bay"
@@ -2258,8 +2258,8 @@
       "es": "Construcción de reglas comunes, turnos conducidos por niños y primer condicional."
     },
     "actividadAula": {
-      "gl": "Asemblea guiada por parellas infantís: \"IF we listen carefully to each other, our classroom will be a peaceful team!\".",
-      "es": "Asamblea guiada por parejas infantiles: \"IF we listen carefully to each other, our classroom will be a peaceful team!\"."
+      "gl": "Asemblea guiada por parellas infantís: \"IF we listen carefully to each other, our class will be a peaceful team!\".",
+      "es": "Asamblea guiada por parejas infantiles: \"IF we listen carefully to each other, our class will be a peaceful team!\"."
     },
     "actividadHogar": {
       "gl": "Establecendo acordos da semana en familia: \"IF we help each other, we will have more time to play in the park!\".",
@@ -2283,7 +2283,7 @@
         "Shake hands",
         "Celebrate team"
       ],
-      "frase": "IF we listen to each other, our classroom will be a happy team!",
+      "frase": "IF we listen to each other, our class will be a happy team!",
       "audio_id": "en_c5_m1_team"
     },
     "dinamicaEvolutiva": {
@@ -2337,7 +2337,7 @@
       "tpr": [
         "Feel heartbeat",
         "Sprint fast",
-        "Breathe slow"
+        "Breathe slowly"
       ],
       "frase": "Touch your chest to feel your heart beating fast!",
       "audio_id": "en_c5_m2_heart"
@@ -2370,8 +2370,8 @@
       "es": "Uso de instrumentos de medida analógicos (balanza de platos) y superlativos."
     },
     "actividadAula": {
-      "gl": "Pesar froitas do outono con balanza: \"Compare the weights: the basket of acorns is HEAVIER than the dry leaves!\".",
-      "es": "Pesar frutas del otoño con balanza: \"Compare the weights: the basket of acorns is HEAVIER than the dry leaves!\"."
+      "gl": "Pesar froitas do outono con balanza: \"Compare the weights: the basket of acorns is HEAVIER than the basket of dry leaves!\".",
+      "es": "Pesar frutas del otoño con balanza: \"Compare the weights: the basket of acorns is HEAVIER than the basket of dry leaves!\"."
     },
     "actividadHogar": {
       "gl": "Na cociña sostendo dous obxectos nas mans: \"Which one is heavier? The heavy cast-iron pan or the light wooden spoon?\".",
@@ -2384,7 +2384,7 @@
     "minutosSugeridos": 8,
     "ingles": {
       "lexico": [
-        "Balanza",
+        "Scale",
         "Heavier",
         "Lightest",
         "Weight",
@@ -2395,7 +2395,7 @@
         "Show heavy side",
         "Drop light feather"
       ],
-      "frase": "Compare the weights: the basket of acorns is heavier than leaves!",
+      "frase": "Compare the weights: the basket of acorns is heavier than the basket of leaves!",
       "audio_id": "en_c5_m3_weight"
     },
     "dinamicaEvolutiva": {
@@ -2426,8 +2426,8 @@
       "es": "Nociones temporales de ciclo solar, rotación de la Tierra y el calendario anual."
     },
     "actividadAula": {
-      "gl": "Un neno fai de Sol no centro e outros xiran: \"The Earth spins around the Sun while we count the twelve months!\".",
-      "es": "Un niño hace de Sol en el centro y otros giran: \"The Earth spins around the Sun while we count the twelve months!\"."
+      "gl": "Un neno fai de Sol no centro e outros xiran: \"The Earth goes around the Sun while we count the twelve months!\".",
+      "es": "Un niño hace de Sol en el centro y otros giran: \"The Earth goes around the Sun while we count the twelve months!\"."
     },
     "actividadHogar": {
       "gl": "Mirando as estrelas ou a Lúa pola noite: \"Look at the Moon! The Earth is spinning while we sleep peacefully!\".",
@@ -2451,7 +2451,7 @@
         "Shine like Sun",
         "Sleep like Moon"
       ],
-      "frase": "The Earth spins around the Sun while we count the months!",
+      "frase": "The Earth goes around the Sun while we count the months!",
       "audio_id": "en_c5_m4_earth"
     },
     "dinamicaEvolutiva": {
@@ -2482,8 +2482,8 @@
       "es": "Discurso narrativo estructurado en tres tiempos: First, Then, Finally."
     },
     "actividadAula": {
-      "gl": "Narración colectiva do escudo e a árbore da Oliveira: \"FIRST we planted the seed, THEN it grew strong, FINALLY it gave peace to Vigo!\".",
-      "es": "Narración colectiva del escudo y el árbol de la Olivera: \"FIRST we planted the seed, THEN it grew strong, FINALLY it gave peace to Vigo!\"."
+      "gl": "Narración colectiva do escudo e a árbore da Oliveira: \"FIRST we planted the seed, THEN it grew strong, FINALLY it became the symbol of Vigo!\".",
+      "es": "Narración colectiva del escudo y el árbol de la Olivera: \"FIRST we planted the seed, THEN it grew strong, FINALLY it became the symbol of Vigo!\"."
     },
     "actividadHogar": {
       "gl": "Ao lembrar o día antes de durmir: \"FIRST we had breakfast, THEN we walked in the park, FINALLY we read this story!\".",
@@ -2507,7 +2507,7 @@
         "Two fingers (Then)",
         "Open arms (Finally)"
       ],
-      "frase": "FIRST the seed, THEN it grew strong, FINALLY peace for all!",
+      "frase": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Vigo!",
       "audio_id": "en_c5_m5_first"
     },
     "dinamicaEvolutiva": {
@@ -2559,7 +2559,7 @@
         "Obey"
       ],
       "tpr": [
-        "Take mask",
+        "Put on the mask",
         "Walk backwards",
         "Freeze command"
       ],
@@ -2595,7 +2595,7 @@
     },
     "actividadAula": {
       "gl": "Cadea de movemento con patrón: \"Circle, square, triangle... PREDICT what shape comes next!\".",
-      "es": "Cadena de movimiento con patrón: \"Circle, square, triangle... ¡PREDICT what shape comes next!\"."
+      "es": "Cadena de movimiento con patrón: \"Circle, square, triangle... PREDICT what shape comes next!\"."
     },
     "actividadHogar": {
       "gl": "Dobrando unha folla pola metade: \"Fold the paper in half, look at the mirror symmetry on both sides!\".",
@@ -2650,8 +2650,8 @@
       "es": "Argumentación ética básica, primer condicional y responsabilidad ecológica."
     },
     "actividadAula": {
-      "gl": "Debate en asemblea: \"IF we protect the clean ocean, THEN the white dolphins will swim near our beaches!\".",
-      "es": "Debate en asamblea: \"IF we protect the clean ocean, THEN the white dolphins will swim near our beaches!\"."
+      "gl": "Debate en asemblea: \"IF we protect the clean ocean, THEN the dolphins will swim near our beaches!\".",
+      "es": "Debate en asamblea: \"IF we protect the clean ocean, THEN the dolphins will swim near our beaches!\"."
     },
     "actividadHogar": {
       "gl": "Recollendo o lixo na praia de Samil: \"IF we pick up this plastic, THEN the sea turtles will stay safe!\".",
@@ -2706,8 +2706,8 @@
       "es": "Expresión de desacuerdo no violento (\"I disagree because...\") y búsqueda de acuerdos."
     },
     "actividadAula": {
-      "gl": "Rolda de acordos con obxecto parlante: \"I understand your idea, but I suggest we take turns with the game!\".",
-      "es": "Ronda de acuerdos con objeto parlante: \"I understand your idea, but I suggest we take turns with the game!\"."
+      "gl": "Rolda de acordos con obxecto parlante: \"I understand your idea, but let's take turns with the game!\".",
+      "es": "Ronda de acuerdos con objeto parlante: \"I understand your idea, but let's take turns with the game!\"."
     },
     "actividadHogar": {
       "gl": "Nun conflito entre irmáns ou amigos: \"Let us stop, take a deep breath, and negotiate fairly!\".",
@@ -2731,7 +2731,7 @@
         "Breathe calm",
         "Shake hands kindly"
       ],
-      "frase": "I understand you, let us negotiate AND share fairly!",
+      "frase": "I understand you. Let's work it out AND share fairly!",
       "audio_id": "en_c5_m9_negotiate"
     },
     "dinamicaEvolutiva": {
@@ -2763,7 +2763,7 @@
     },
     "actividadAula": {
       "gl": "Gran asemblea de graduación: \"We are brave explorers! We are ready for Primary School, hurray!\".",
-      "es": "Gran asamblea de graduación: \"We are brave explorers! We are ready for Primary School, ¡hurray!\"."
+      "es": "Gran asamblea de graduación: \"We are brave explorers! We are ready for Primary School, hurray!\"."
     },
     "actividadHogar": {
       "gl": "Revisando as fotos de bebé: \"Look how tall you are now! You are ready for the big school, so proud!\".",
@@ -2784,8 +2784,8 @@
       ],
       "tpr": [
         "Stand tall",
-        "Wave graduate cap",
-        "Cheer hurray"
+        "Wave your graduation cap",
+        "Shout hooray"
       ],
       "frase": "We are brave explorers ready for Primary School, hurray!",
       "audio_id": "en_c5_m10_graduate"

@@ -25,7 +25,7 @@
         },
         {
           "id": "4_5.outubro.s1.traffic-game",
-          "en": "Traffic game",
+          "en": "Traffic light game",
           "gl": "Xogo do semáforo",
           "es": "Juego del semáforo",
           "tprAction": {
@@ -147,8 +147,8 @@
         {
           "id": "4_5.outubro.s1.quick-thinking",
           "en": "Quick-thinking",
-          "gl": "Rápido de mente",
-          "es": "Rápido de mente",
+          "gl": "Espelido",
+          "es": "Espabilado",
           "tprAction": {
             "gl": "Tocar a cabeza e sorrir",
             "es": "Tocar la cabeza y sonreír"
@@ -376,7 +376,7 @@
         {
           "id": "4_5.outubro.s2.sly",
           "en": "Sly",
-          "gl": "Espelido",
+          "gl": "Astuto",
           "es": "Astuto",
           "tprAction": {
             "gl": "Poñer cara de pillo",
@@ -593,7 +593,7 @@
         },
         {
           "id": "4_5.outubro.s3.stretch-out-arms",
-          "en": "Stretch out arms",
+          "en": "Stretch out your arms",
           "gl": "Estirar os brazos",
           "es": "Estirar los brazos",
           "tprAction": {
@@ -659,9 +659,9 @@
         },
         {
           "id": "4_5.outubro.s3.how-long-can-you-stand",
-          "en": "How long can you stand?",
-          "gl": "Canto aguantas?",
-          "es": "¿Cuánto aguantas?",
+          "en": "How long can you stand on one leg?",
+          "gl": "Canto aguantas nun pé?",
+          "es": "¿Cuánto aguantas a la pata coja?",
           "tprAction": {
             "gl": "Contar nun pé",
             "es": "Contar en un pie"

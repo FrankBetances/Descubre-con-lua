@@ -70,7 +70,7 @@
         {
           "id": "0_2.xuno.s1.parasol",
           "en": "Parasol",
-          "gl": "Sombrilla",
+          "gl": "Parasol",
           "es": "Sombrilla",
           "tprAction": {
             "gl": "Facer sombra coa man",
@@ -147,8 +147,8 @@
         {
           "id": "0_2.xuno.s1.salty-lips",
           "en": "Salty lips",
-          "gl": "Salgado",
-          "es": "Salado",
+          "gl": "Beizos salgados",
+          "es": "Labios salados",
           "tprAction": {
             "gl": "Tocar os beizos despois do mar",
             "es": "Tocar los labios después del mar"
@@ -321,8 +321,8 @@
         {
           "id": "0_2.xuno.s2.swim-along",
           "en": "Swim along",
-          "gl": "Nadar xunto",
-          "es": "Nadar junto",
+          "gl": "Nadar xuntos",
+          "es": "Nadar juntos",
           "tprAction": {
             "gl": "Mover as dúas mans coma peixes",
             "es": "Mover las dos manos como peces"
@@ -386,7 +386,7 @@
         },
         {
           "id": "0_2.xuno.s2.swishy",
-          "en": "Swishy",
+          "en": "Swishing",
           "gl": "Axitado",
           "es": "Ondulante",
           "tprAction": {
@@ -616,7 +616,7 @@
         {
           "id": "0_2.xuno.s3.summery",
           "en": "Summery",
-          "gl": "Veraniego",
+          "gl": "De verán",
           "es": "Veraniego",
           "tprAction": {
             "gl": "Abanarse sorrindo",
