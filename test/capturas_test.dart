@@ -35,8 +35,10 @@ import 'package:descubre_con_lua/features/premios/premios_model.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/premios/premios_screen.dart';
 import 'package:descubre_con_lua/data/models/steam_model.dart';
+import 'package:descubre_con_lua/features/docentes/widgets/hoxe_na_aula.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_hub_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
+import 'package:descubre_con_lua/features/steam/widgets/steam_no_calendario.dart';
 
 /// Genera las imágenes de pantalla del manual.
 ///
@@ -697,6 +699,37 @@ void main() {
           initialLanguage: lang,
         ),
         tamano: const Size(412, 1500),
+      );
+    });
+
+    // STEAM el día que le toca: «Hoxe na aula» el miércoles 9 de diciembre de
+    // 2026, con el grupo de 4-5 años. Es la fila que sale sola ese día.
+    testWidgets('steam · hoxe na aula · $l', (tester) async {
+      await cursoTprLeido(tester);
+      await capturar(
+        tester,
+        'steam-hoxe-na-aula-$l',
+        Scaffold(
+          backgroundColor: AppTheme.pageBg,
+          body: ListView(
+            padding: const EdgeInsets.all(16),
+            children: [
+              TarxetaHoxeNaAula(
+                programa: contenido.programaTprSync!,
+                cursoId: 'curso_4_5',
+                onCambiarCurso: (_) {},
+                language: lang,
+                audioService: MockOfflineAudioService(),
+                agora: DateTime(2026, 12, 9),
+                onIniciarAsemblea: (_, __) {},
+                onVerPalabras: () {},
+                steamDoDia: (c, d) => steamDoDiaDoCurso(contenido, c, d),
+                onAbrirSteam: (_) {},
+              ),
+            ],
+          ),
+        ),
+        tamano: const Size(412, 780),
       );
     });
 

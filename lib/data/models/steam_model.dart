@@ -217,6 +217,50 @@ class SteamOrdenIngles {
       };
 }
 
+/// El día del curso en que toca la sesión: el mes del curso (1 es septiembre),
+/// la semana del mes (1-4) y el día de la semana (1 es lunes).
+///
+/// Es lo que pone la sesión en «Hoxe na aula» y en el calendario el día que
+/// toca, en vez de dejarla esperando en el portal. Por qué ese día y no otro
+/// está en `docs/BASE_PEDAGOGICA_STEAM.md`.
+@immutable
+class SteamDiaNoCalendario {
+  /// 1..10: el orden del CURSO, como en el banco de días del calendario.
+  final int mes;
+
+  /// 1..4.
+  final int semana;
+
+  /// 1..5, de lunes a viernes.
+  final int dia;
+
+  const SteamDiaNoCalendario({
+    required this.mes,
+    required this.semana,
+    required this.dia,
+  });
+
+  factory SteamDiaNoCalendario.fromJson(Map<String, dynamic> json) =>
+      SteamDiaNoCalendario(
+        mes: (json['mes'] as num?)?.toInt() ?? 0,
+        semana: (json['semana'] as num?)?.toInt() ?? 0,
+        dia: (json['dia'] as num?)?.toInt() ?? 0,
+      );
+
+  Map<String, dynamic> toJson() => {'mes': mes, 'semana': semana, 'dia': dia};
+
+  bool coincide({required int mes, required int semana, required int dia}) =>
+      this.mes == mes && this.semana == semana && this.dia == dia;
+
+  /// El mes del curso (1 es septiembre, 10 es junio) de un mes del calendario
+  /// (9 es septiembre). Julio y agosto no son del curso: 0.
+  static int mesDoCursoDe(int mesCalendario) {
+    if (mesCalendario >= 9 && mesCalendario <= 12) return mesCalendario - 8;
+    if (mesCalendario >= 1 && mesCalendario <= 6) return mesCalendario + 4;
+    return 0;
+  }
+}
+
 /// El anclaje curricular de la unidad en el Decreto 150/2022.
 @immutable
 class SteamCurriculo {
@@ -274,6 +318,9 @@ class SteamUnit {
   final LocalizedString titulo;
   final LocalizedString fenomeno;
   final int tiempoEstimadoMin;
+
+  /// El día del curso en que toca, o `null` si la unidad no tiene día.
+  final SteamDiaNoCalendario? diaNoCalendario;
   final SteamCurriculo curriculo;
   final LocalizedString avisoSeguridad;
   final List<SteamOrdenIngles> ordenesIngles;
@@ -292,6 +339,7 @@ class SteamUnit {
     required this.titulo,
     required this.fenomeno,
     required this.tiempoEstimadoMin,
+    this.diaNoCalendario,
     required this.curriculo,
     required this.avisoSeguridad,
     required this.ordenesIngles,
@@ -308,6 +356,9 @@ class SteamUnit {
         titulo: _texto(json['titulo']),
         fenomeno: _texto(json['fenomeno']),
         tiempoEstimadoMin: (json['tiempoEstimadoMin'] as num?)?.toInt() ?? 0,
+        diaNoCalendario: json['calendario'] is Map
+            ? SteamDiaNoCalendario.fromJson(_mapa(json['calendario']))
+            : null,
         curriculo: SteamCurriculo.fromJson(_mapa(json['curriculo'])),
         avisoSeguridad: _texto(_mapa(json['seguridad'])['aviso']),
         ordenesIngles: _lista(json['ordenesIngles'])
@@ -332,6 +383,7 @@ class SteamUnit {
         'titulo': titulo.toJson(),
         'fenomeno': fenomeno.toJson(),
         'tiempoEstimadoMin': tiempoEstimadoMin,
+        if (diaNoCalendario != null) 'calendario': diaNoCalendario!.toJson(),
         'curriculo': curriculo.toJson(),
         'seguridad': {'aviso': avisoSeguridad.toJson()},
         'ordenesIngles': ordenesIngles.map((o) => o.toJson()).toList(),

@@ -16,6 +16,11 @@
       "es": "Las cosas son distintas al tacto: hay cosas blandas, que se aprietan, y cosas duras, que no ceden."
     },
     "tiempoEstimadoMin": 10,
+    "calendario": {
+      "mes": 3,
+      "semana": 2,
+      "dia": 3
+    },
     "curriculo": {
       "normativa": "Decreto 150/2022",
       "etapa": "educacion_infantil",
@@ -211,6 +216,11 @@
       "es": "Las cosas redondas ruedan por la rampa y las que tienen esquinas se quedan quietas. Cuanto más inclinada está la rampa, más rápido bajan."
     },
     "tiempoEstimadoMin": 15,
+    "calendario": {
+      "mes": 7,
+      "semana": 2,
+      "dia": 3
+    },
     "curriculo": {
       "normativa": "Decreto 150/2022",
       "etapa": "educacion_infantil",
@@ -420,6 +430,11 @@
       "es": "El sonido es vibración: cuando tocamos un tambor, tiembla. Ese temblor se ve en el agua y se nota con la mano en el tambor o en la propia garganta al cantar."
     },
     "tiempoEstimadoMin": 15,
+    "calendario": {
+      "mes": 8,
+      "semana": 2,
+      "dia": 3
+    },
     "curriculo": {
       "normativa": "Decreto 150/2022",
       "etapa": "educacion_infantil",
@@ -667,6 +682,11 @@
       "es": "La luz viaja en línea recta. Un objeto que no la deja pasar hace sombra, y la sombra crece cuanto más cerca está el objeto de la linterna."
     },
     "tiempoEstimadoMin": 20,
+    "calendario": {
+      "mes": 4,
+      "semana": 2,
+      "dia": 3
+    },
     "curriculo": {
       "normativa": "Decreto 150/2022",
       "etapa": "educacion_infantil",
@@ -915,6 +935,11 @@
       "es": "Una orden tras otra forman un programa. Si una orden está mal, el robot no llega, y hay que buscar el error y arreglarlo."
     },
     "tiempoEstimadoMin": 20,
+    "calendario": {
+      "mes": 7,
+      "semana": 2,
+      "dia": 3
+    },
     "curriculo": {
       "normativa": "Decreto 150/2022",
       "etapa": "educacion_infantil",

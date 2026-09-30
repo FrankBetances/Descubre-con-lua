@@ -6,9 +6,11 @@ import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
+import '../../steam/widgets/steam_no_calendario.dart';
 import 'palabras_do_dia.dart';
 
 /// La semana, el día y la rutina de casa: el espejo exacto del Modo Aula, con
@@ -43,6 +45,10 @@ class DiaNoFogar extends StatefulWidget {
   /// Para que las palabras inglesas del día suenen. Sin él se leen igual.
   final OfflineAudioService? audioService;
 
+  /// Quien cambia de lengua dentro de la sesión STEAM vuelve al calendario en
+  /// esa lengua, como desde el lado del aula.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
+
   const DiaNoFogar({
     super.key,
     required this.repository,
@@ -50,6 +56,7 @@ class DiaNoFogar extends StatefulWidget {
     required this.mes,
     required this.language,
     this.audioService,
+    this.onLanguageChanged,
   });
 
   @override
@@ -181,6 +188,29 @@ class _DiaNoFogarState extends State<DiaNoFogar> {
         ),
         const SizedBox(height: AppTheme.spaceMd),
         _TarxetaDoDiaNoFogar(dia: dia, language: widget.language),
+        // El día que el aula hace su sesión STEAM, la casa tiene la suya: la
+        // versión de casa, con cosas que hay en cualquier cocina.
+        for (final u in widget.repository.getSteamUnitsDoDia(
+          cursoId: widget.cursoId,
+          mes: widget.mes,
+          semana: _semana,
+          dia: _dia,
+        )) ...[
+          const SizedBox(height: AppTheme.spaceMd),
+          FilaSteamDoDia(
+            unidade: u,
+            audiencia: SteamAudiencia.hogar,
+            language: widget.language,
+            onTap: () => abrirSesionSteam(
+              context,
+              unidade: u,
+              audiencia: SteamAudiencia.hogar,
+              language: widget.language,
+              audioService: widget.audioService,
+              onLanguageChanged: widget.onLanguageChanged,
+            ),
+          ),
+        ],
         if (_palabras case final palabras?) ...[
           const SizedBox(height: AppTheme.spaceMd),
           BloqueInglesDoDia(

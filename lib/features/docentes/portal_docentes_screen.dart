@@ -23,6 +23,7 @@ import '../planificador/views/planificador_screen.dart';
 import '../premios/premios_repository.dart';
 import '../steam/views/steam_hub_screen.dart';
 import '../steam/widgets/steam_comun.dart';
+import '../steam/widgets/steam_no_calendario.dart';
 import 'widgets/hoxe_na_aula.dart';
 
 /// Pantalla independente do Portal Docentes.
@@ -297,6 +298,18 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                 onIniciarAsemblea: (d, c) =>
                     _iniciarAsembleaDeHoxe(context, d, c),
                 onVerPalabras: () => _mostrarProxeccionAnual(context, programa),
+                // A sesión STEAM do curso, o día que lle toca: a docente
+                // atópaa aquí sen ir buscala ao portal.
+                steamDoDia: (curso, dia) =>
+                    steamDoDiaDoCurso(widget.repository, curso, dia),
+                onAbrirSteam: (unidade) => abrirSesionSteam(
+                  context,
+                  unidade: unidade,
+                  audiencia: SteamAudiencia.aula,
+                  language: _language,
+                  audioService: widget.audioService,
+                  onLanguageChanged: _handleLanguageChanged,
+                ),
               ),
               const SizedBox(height: 18.0),
             ],

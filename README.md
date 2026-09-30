@@ -23,7 +23,10 @@ etapas de educación infantil: **primer ciclo (0-3 años)** y **segundo ciclo
   **versión para el aula**, que abre el Portal Docentes con el curso de «Hoxe na
   aula», y su **versión para casa**, que abre el Portal Familias con la edad
   elegida. Empiezan por su aviso de seguridad y traen las órdenes en inglés con
-  su grabación. No evalúan ni registran nada: dicen qué observar.
+  su grabación. No evalúan ni registran nada: dicen qué observar. El día que le
+  toca a cada curso, la sesión sale sola en «Hoxe na aula», en el día del Modo
+  Aula y en el Calendario Escola · Fogar, con la versión de casa del lado de
+  las familias.
 - **Calendario Escola · Fogar** — los seis años del trayecto, de 0-2 a 5-6:
   cinco cursos de diez meses, de septiembre a junio, uno por tarjeta. Se pasa
   deslizando de lado, y de junio de un curso se llega a septiembre del
@@ -103,7 +106,7 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 
 | | |
 | --- | --- |
-| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el aula de los dos ciclos, el calendario, Academy, STEAM, las lenguas y la voz, los premios y la privacidad—. Lleva 28 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el aula de los dos ciclos, el calendario, Academy, STEAM, las lenguas y la voz, los premios y la privacidad—. Lleva 30 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
 | [**Base pedagógica de STEAM**](docs/BASE_PEDAGOGICA_STEAM.md) | Qué hay en las cinco sesiones STEAM y por qué, sus criterios de seguridad y sus fuentes |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |

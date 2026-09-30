@@ -9,6 +9,88 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## STEAM el día que toca: en «Hoxe na aula» y en el calendario (30/9/2026)
+
+Rama `claude/steam-integracion`, que sale de `main` y se integra en `main` por
+pull request.
+
+Orden de Frank: «que la sesión STEAM del curso aparezca en «Hoxe na aula» y en
+el calendario. Así la docente la encuentra el día que toca, sin ir a buscarla
+al portal».
+
+Qué cambia:
+
+- **Cada unidad trae su día del curso** (`calendario` en el JSON): el miércoles
+  de la semana 2 del mes cuyo centro de interés casa con la unidad. El porqué
+  y la tabla están en `docs/BASE_PEDAGOGICA_STEAM.md`. Es un supuesto del
+  contenido y se cambia en el JSON; el validador exige el día y comprueba que
+  exista.
+- **Ese día la sesión sale sola:**
+  - en «Hoxe na aula», del Portal Docentes, para el grupo de ese curso; abre la
+    versión del aula;
+  - en «O día de hoxe, enteiro» del Modo Aula, en los dos ciclos, junto al
+    cuento y la dinámica;
+  - en el Calendario Escola · Fogar: el mes avisa de qué día toca («STEAM este
+    mes»), y ese día sale la versión del aula en el lado del aula y la de casa
+    en el lado de casa;
+  - en el calendario del Portal Familias: la casilla del día lleva el símbolo
+    de STEAM, el mes lo avisa y el día trae la versión de casa.
+- La sesión se abre también sin servicio de audio: se lee igual y sin
+  altavoces.
+- **Quien cambia de lengua dentro de la sesión vuelve al calendario en esa
+  lengua**, también desde el lado de casa y desde el calendario del Portal
+  Familias. Hasta ahora solo lo hacía el lado del aula: el lado de casa abría
+  la sesión sin avisar del cambio, y al volver el calendario seguía en la
+  lengua de antes. En el día del Modo Aula no se toca: el cuento de al lado
+  tampoco devuelve la lengua.
+- **El Word del manual numeraba los pasos de STEAM del 6 al 12.** El estilo
+  de lista numerada del Word lleva una sola numeración para todo el
+  documento, y la lista de STEAM seguía la de las cápsulas. La segunda lista
+  numerada entró con la sección de STEAM, así que el fallo era de ese cambio.
+  `docs/build-docx.py` abre ahora una numeración por lista, que empieza en 1.
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| `test/features/steam/steam_calendario_test.dart` | 36 tests en verde: el día de cada unidad; la cadena fecha → día del curso → sesión, con fechas reales del curso 2026-2027; el repositorio; el validador; «Hoxe na aula»; el día del Modo Aula; los dos lados del calendario y el calendario de las familias; el encaje a 360 dp en gl y es, con letra 1,0 y 1,8; y la vuelta de la sesión en la otra lengua, desde los dos lados y desde el calendario de las familias. El medidor ve un desborde hecho a propósito. Sin el arreglo de la lengua, dos de los tres tests de la vuelta fallan (el del aula ya pasaba) |
+| `tools/gates.sh --fast` | 19 de 19 en verde; `flutter test`, 821 tests en verde |
+| App en escritorio Linux, 360 px, con la fecha de hoy fijada al 9/12/2026 en la COPIA con `--dart-define` (con `faketime` la app arrancaba en negro) | Portal Docentes → «Hoxe na aula» → 4-5: «A sesión STEAM de hoxe · Sombras grandes e pequenas», en gl y en es; al tocarla se abre la sesión del aula |
+| App: Portal Docentes → Modo Aula → 2.º ciclo → 5.º → diciembre, semana 2, miércoles | «El día de hoy, entero» con la fila STEAM, en es |
+| App: Modo Aula → 1.º ciclo → 0-2 → noviembre, semana 2, miércoles | «Blando y duro» en el día, en es |
+| App: Modo Aula → calendario del curso → diciembre (4-5) | el aviso del mes y la fila del día, en el lado del aula y en el de casa, en gl |
+| App: Portal Familias → «Tu juego de 3 min de hoy» → 4-5 → diciembre | el aviso, el símbolo en la casilla del día 8 y la fila de casa en el día, en es; al tocarla se abre la sesión de casa |
+| App: Portal Familias → «Entrar en Academy» → calendario del curso → diciembre → 4-5, lado de casa | el aviso del mes y «O xogo STEAM de hoxe · Sombras grandes e pequenas» en el día, en gl; al tocarla se abre la sesión de casa. Tras cambiar a ES dentro de la sesión, el calendario vuelve en castellano: «El juego STEAM de hoy», con la app ya recompilada con el arreglo |
+| Sonda en las pantallas de verdad a 360 dp, gl y letra normal | lo que le queda de ancho a la fila STEAM: 264 px en «Hoxe na aula» del Portal Docentes y 267 en el día del Modo Aula, en 1.º y en 2.º ciclo, medidos en la columna de la tarjeta y en las filas del cuento y la dinámica, que comparten columna con ella (con el reloj de hoy no es día STEAM); 280 en los dos lados del Calendario Escola · Fogar y 260 en el calendario del Portal Familias, medidos en la fila misma. El test la mide además suelta a 260, la más estrecha. El test del día del Modo Aula la pinta suelta a 302: no mide el ancho de la pantalla de verdad |
+| Manual | 2 capturas nuevas («Hoxe na aula» el día STEAM, gl y es). PDF de 25 páginas: la 18 a la 25 miradas una a una; tras añadir al párrafo el calendario del Portal Familias, el texto de las páginas 1-17 y 19-25 es idéntico al anterior y la 18 se volvió a mirar. Word: convertido a PDF con LibreOffice 24.2, 25 páginas; las dos listas numeradas empiezan en 1 y es el único cambio de texto respecto al Word anterior. En el PDF y en el Word, ninguna página tiene nada a menos de 7 mm del borde, medido con un script sobre las 25 páginas |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato Android.**
+- La fecha de hoy de verdad, la del reloj del aparato: en el escritorio se
+  fijó en la copia. La cuenta de la fecha al día del curso la comprueban los
+  tests con `CursoTpr.hoxe`.
+- **El APK de release no se ha compilado en este contenedor**: aquí no hay
+  Android SDK. Lo cubre CI.
+
+### Visto y no tocado
+
+- **El lado de casa del Calendario Escola · Fogar desborda a 360 dp**, también
+  en un día sin STEAM: 77 px con la fuente de test y la letra normal. A 420 px
+  el error señala el `Row` del rótulo de `_Bloque` (`dia_no_fogar.dart`), que no
+  tiene `Flexible`. El test de escala del calendario no lo ve porque pinta la
+  pantalla sin repositorio, y sin repositorio no hay día.
+- En el calendario del Portal Familias, con la app en castellano, el día dice
+  «Día 68 do curso», en gallego.
+- **En castellano, a 360 px, la cabecera fija del Calendario Escuela · Hogar
+  recorta la fila de los meses** («Noviembre · Diciembre · Enero» sale medio
+  tapada), también sin haber bajado: el texto de presentación ocupa una línea
+  más que en gallego. Visto en el escritorio, llegando por Academy. Este
+  cambio no toca la cabecera; no lo he comprobado en `main`.
+- La página 5 del manual lleva solo una línea («En cada pareja de imágenes,
+  gallego a la izquierda…»), en el PDF y en el Word. Ya era así antes de
+  STEAM.
+
 ## STEAM · ciencia con las manos, en el aula y en casa (30/9/2026)
 
 Rama `claude/steam-integracion`, que sale de la rama `steam` y se integra en
