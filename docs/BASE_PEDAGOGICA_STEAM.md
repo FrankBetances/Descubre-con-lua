@@ -174,7 +174,8 @@ sesiones caben en un teléfono de 360 dp, en gallego y en castellano, con la
 letra normal y con la letra grande del sistema.
 `test/features/steam/steam_calendario_test.dart` comprueba que la sesión sale
 el día que toca en «Hoxe na aula», en el Modo Aula y en los dos calendarios, y
-que ahí también cabe.
+que la fila de la sesión y el aviso del mes caben a 360 dp, en gallego y en
+castellano, con la letra normal y con la grande.
 
 ## Referencias
 
