@@ -34,6 +34,9 @@ import 'package:descubre_con_lua/features/academy/views/micro_rutina_setembro_sc
 import 'package:descubre_con_lua/features/premios/premios_model.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/premios/premios_screen.dart';
+import 'package:descubre_con_lua/data/models/steam_model.dart';
+import 'package:descubre_con_lua/features/steam/views/steam_hub_screen.dart';
+import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
 
 /// Genera las imágenes de pantalla del manual.
 ///
@@ -651,6 +654,49 @@ void main() {
         ),
         // Un móvil de verdad, no un lienzo de 2000 px: esa altura era la
         // prueba de que la pantalla medía 2,2 pantallas de alto.
+      );
+    });
+
+    // STEAM: el hub como lo abre el Portal Docentes, una sesión del aula y
+    // una de casa. La de casa existe para enseñar que NO es la del aula.
+    testWidgets('steam · hub · $l', (tester) async {
+      await capturar(
+        tester,
+        'steam-hub-$l',
+        SteamHubScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          initialLanguage: lang,
+          audiencia: SteamAudiencia.aula,
+        ),
+      );
+    });
+
+    testWidgets('steam · sesión do aula · $l', (tester) async {
+      await capturar(
+        tester,
+        'steam-sesion-aula-$l',
+        SteamSesionGuiadaScreen(
+          unit: contenido.getSteamUnitByNivel('I3')!,
+          audiencia: SteamAudiencia.aula,
+          audioService: MockOfflineAudioService(),
+          initialLanguage: lang,
+        ),
+        tamano: const Size(412, 1500),
+      );
+    });
+
+    testWidgets('steam · sesión da casa · $l', (tester) async {
+      await capturar(
+        tester,
+        'steam-sesion-casa-$l',
+        SteamSesionGuiadaScreen(
+          unit: contenido.getSteamUnitByNivel('I4')!,
+          audiencia: SteamAudiencia.hogar,
+          audioService: MockOfflineAudioService(),
+          initialLanguage: lang,
+        ),
+        tamano: const Size(412, 1500),
       );
     });
 

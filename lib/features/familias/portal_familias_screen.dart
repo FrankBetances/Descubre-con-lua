@@ -9,6 +9,7 @@ import '../../../data/models/calendario_model.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/formacion_model.dart';
+import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../academy/views/bloques_list_screen.dart';
 import '../academy/widgets/selector_idioma_widget.dart';
@@ -19,6 +20,8 @@ import '../laminas/views/laminas_gallery_screen.dart';
 import '../lectura/views/aprender_a_ler_screen.dart';
 import '../premios/premios_repository.dart';
 import '../premios/premios_screen.dart';
+import '../steam/views/steam_hub_screen.dart';
+import '../steam/widgets/steam_comun.dart';
 import 'views/xogos_fogar_screen.dart';
 import 'widgets/tarxeta_ingles_de_hoxe_fogar.dart';
 
@@ -84,6 +87,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
       'gl': 'Calendario Escolar',
       'es': 'Calendario Escolar'
     },
+    {'id': 'steam', 'gl': 'STEAM', 'es': 'STEAM'},
     {'id': 'academy', 'gl': 'Pautas de Crianza', 'es': 'Pautas de Crianza'},
   ];
 
@@ -197,26 +201,33 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 children: [
                   Row(
                     children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFDD6B20),
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: Text(
-                          isGl
-                              ? 'CERO PANTALLAS INFANTÍS'
-                              : 'CERO PANTALLAS INFANTILES',
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w800,
-                            letterSpacing: 0.8,
+                      // A pastilla pártese en dúas liñas se non cabe: coa letra
+                      // grande do sistema saía da cabeceira.
+                      Expanded(
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFDD6B20),
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Text(
+                              isGl
+                                  ? 'CERO PANTALLAS INFANTÍS'
+                                  : 'CERO PANTALLAS INFANTILES',
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.w800,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                      const Spacer(),
+                      const SizedBox(width: 8),
                       const LuaPixel(size: 32),
                     ],
                   ),
@@ -655,7 +666,40 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
               const SizedBox(height: 14.0),
             ],
 
-            // 7. Premios e Insignias do Mediador
+            // 7. STEAM · ciencia coas mans, na versión de casa
+            if (_matchesFilter('steam')) ...[
+              _buildFamilyModuleCard(
+                context: context,
+                title: isGl
+                    ? 'STEAM na casa · Ciencia coas mans'
+                    : 'STEAM en casa · Ciencia con las manos',
+                description: isGl
+                    ? 'Cinco xogos de ciencia con cousas da casa, un para cada idade de 12 meses a 6 anos: brando e duro, ramplas, son, sombras e un robot que es ti. Con ordes en inglés para responder co corpo.'
+                    : 'Cinco juegos de ciencia con cosas de casa, uno para cada edad de 12 meses a 6 años: blando y duro, rampas, sonido, sombras y un robot que eres tú. Con órdenes en inglés para responder con el cuerpo.',
+                icon: Icons.science_outlined,
+                iconColor: steamTinta,
+                iconBg: steamFondo,
+                badge: isGl ? 'Ciencia e inglés' : 'Ciencia e inglés',
+                buttonText: isGl ? 'Abrir STEAM' : 'Abrir STEAM',
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => SteamHubScreen(
+                        repository: widget.repository,
+                        audioService: widget.audioService,
+                        initialLanguage: _language,
+                        onLanguageChanged: _handleLanguageChanged,
+                        audiencia: SteamAudiencia.hogar,
+                        initialCursoId: _cursoIdActual,
+                      ),
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+            ],
+
+            // 8. Premios e Insignias do Mediador
             if (widget.premios != null) ...[
               const SizedBox(height: 14.0),
               OutlinedButton.icon(

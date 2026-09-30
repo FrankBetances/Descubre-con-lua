@@ -52,6 +52,9 @@ flutter:
     # regla de producto prohíbe: 165 cadenas que ningún gate de contenido podía
     # mirar y que no podían tener audio.
     - assets/content/lectura/
+    # STEAM · ciencia con las manos: cinco sesiones, de 12 meses a 6 años, cada
+    # una en versión de aula y de casa.
+    - assets/content/steam/
     # El inglés del curso al ritmo de cinco palabras diarias: diez meses de
     # cuatro semanas de veinte, y el modelo de cada día. Sin esta línea las
     # tarjetas de «Hoxe na aula» y de la casa no tendrían de dónde leer.

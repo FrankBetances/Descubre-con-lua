@@ -669,6 +669,49 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                 if par.get(campo):
                     _one(str(par[campo]), "en", "slow", f"{ref}/{campo}", seen)
 
+    # STEAM · ciencia con las manos. Nació MUDO —la quinta vez: contenido nuevo
+    # en un directorio que esta función no miraba— y con las rutas de audio
+    # escritas a mano en el JSON, prestadas de otras palabras del corpus.
+    #
+    # Entra exactamente lo que la sesión pinta con altavoz, en las dos
+    # versiones (aula y casa): el aviso de seguridad, cómo se organizan, los
+    # siete textos del ciclo, lo que conviene observar y las órdenes en inglés.
+    # No entran el título, el fenómeno, los papeles, los materiales ni el gesto
+    # de cada orden: se leen, pero no se pulsan.
+    steam_json = content_dir / "steam" / "unidades_steam.json"
+    if steam_json.exists():
+        for unidad in json.loads(steam_json.read_text(encoding="utf-8")):
+            if not isinstance(unidad, dict):
+                continue
+            uid = unidad.get("id", "?")
+            aviso = (unidad.get("seguridad") or {}).get("aviso")
+            if aviso:
+                _add(_localized(aviso), "tutor", f"steam/{uid}/seguridad", seen)
+            for i, obs in enumerate(unidad.get("queObservar") or []):
+                _add(_localized(obs), "tutor", f"steam/{uid}/observar/{i}", seen)
+            for orden in unidad.get("ordenesIngles") or []:
+                if isinstance(orden, dict) and orden.get("en"):
+                    texto = str(orden["en"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"steam/{uid}/orden", seen)
+            for audiencia in ("aula", "hogar"):
+                variante = unidad.get(audiencia) or {}
+                if variante.get("agrupamiento"):
+                    _add(_localized(variante["agrupamiento"]), "tutor",
+                         f"steam/{uid}/{audiencia}/agrupamiento", seen)
+                ciclo = variante.get("ciclo") or {}
+                for paso, campos in (
+                    ("observa", ("planteamiento", "preguntaIndagacion")),
+                    ("experimenta", ("consignaAdulto", "pistaN1", "pistaN2")),
+                    ("construye", ("retoTangible", "sintesisCierre")),
+                ):
+                    bloque = ciclo.get(paso) or {}
+                    for campo in campos:
+                        if bloque.get(campo):
+                            _add(_localized(bloque[campo]), "tutor",
+                                 f"steam/{uid}/{audiencia}/{paso}/{campo}",
+                                 seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

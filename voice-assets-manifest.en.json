@@ -2,9 +2,9 @@
  "lang": "en",
  "voice": "LJSpeech (en-US) · rhasspy/piper-voices",
  "peakDbfs": -3.0,
- "entries": 9262,
- "totalBytes": 103220206,
- "totalSeconds": 17976.36,
+ "entries": 9263,
+ "totalBytes": 103225274,
+ "totalSeconds": 17977.1,
  "files": [
   {
    "id": "en_slow_000840c5_4",
@@ -3719,6 +3719,12 @@
    "file": "en_slow_47586484_4.m4a",
    "seconds": 0.94,
    "bytes": 6175
+  },
+  {
+   "id": "en_slow_4771f92f_4",
+   "file": "en_slow_4771f92f_4.m4a",
+   "seconds": 0.74,
+   "bytes": 5068
   },
   {
    "id": "en_slow_4796f5b3_10",

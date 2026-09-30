@@ -9,6 +9,114 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## STEAM · ciencia con las manos, en el aula y en casa (30/9/2026)
+
+Rama `claude/steam-integracion`, que sale de la rama `steam` y se integra en
+`main` por pull request.
+
+Orden de Frank: «Arréglalo todo e intégralo tanto para docentes como para
+familias. El objetivo es que esté totalmente integrable dentro de la aplicación
+y sea funcional».
+
+Lo que traía la rama `steam`, medido sobre ella con `tools/gates.sh --fast`, y
+cómo se ha resuelto:
+
+- **Tres gates en rojo** (formato, análisis y tests). El test STEAM no compilaba
+  y el cambio del Portal Familias rompía `portales_seleccion_ux_test`. Ahora los
+  tres están en verde.
+- **La unidad de 3 a 4 años ponía un globo de látex y 20 granos de arroz crudo**
+  delante de las criaturas, sin ningún aviso, y una consigna ponía la mano de la
+  persona adulta en la garganta de la criatura. Las cinco unidades están
+  reescritas: todo el material mide más de 4 cm y está entero, y ninguna trae
+  globos, granos ni piezas pequeñas. Cada una empieza por su aviso de seguridad
+  y cada criatura toca solo su propia garganta. El validador rechaza la lista de
+  materiales prohibidos a cualquier edad.
+- **«Sin riesgo de asfixia»** se cortaba en la pantalla y era una promesa que la
+  app no puede sostener. Ya no está.
+- **Las familias veían la sesión del aula.** Ahora cada unidad trae dos
+  versiones completas:
+  - el Portal Docentes abre la del aula, filtrada por el curso de «Hoxe na
+    aula»;
+  - el Portal Familias abre la de casa, filtrada por la edad del portal.
+- **Papeles cooperativos desde los 12 meses.** Ahora no hay papeles antes de los
+  3 años (juego en paralelo) y los hay en el aula de 4 a 6. Lo comprueba el
+  validador.
+- **Un registro de un toque que no registraba nada** y evaluaba a una criatura
+  en un juego de pareja, con vocabulario de logopedia. Ahora hay una lista de
+  qué observar, que se lee y no se registra. El validador rechaza ese
+  vocabulario.
+- **Errores de ciencia e idioma.** La luz que «viaja alrededor» de la figura,
+  «Slide» con un bloque que no se desliza y «Debug» como orden corporal están
+  corregidos, igual que los castellanismos del gallego y una palabra que faltaba
+  en castellano.
+- **Voz.** El texto con altavoz de STEAM entra en el corpus: 98 locuciones en
+  gallego, 98 en castellano y 1 en inglés. Las demás órdenes en inglés ya tenían
+  grabación.
+- **Documento.** `docs/BASE_PEDAGOGICA_STEAM.md` atribuía la base pedagógica a
+  repositorios de GitHub, describía audios con duraciones que no tienen (la voz
+  real dura 0,64-0,87 s; lo midió `ffprobe`) y llevaba un plan de trabajo
+  interno. Está reescrito con fuentes reales.
+- **`portales_escala_test.dart` no veía ningún desborde.** Recogía los errores
+  con un manejador puesto en `setUp`, que `testWidgets` sustituye. Un desborde
+  de 300 px hecho a propósito pasaba en verde. Al arreglarlo aparecieron tres
+  desbordes que ya estaban en `main`, y los tres están corregidos:
+  - la pastilla de cabecera del Portal Familias (10-232 px);
+  - la del Portal Docentes (134 px con la letra grande);
+  - la barra «Anterior / Seguinte» del visor de cuentos (188-509 px).
+
+### Corregido en la revisión, antes de mergear
+
+Al releer lo ya empujado a la rama aparecieron tres fallos míos:
+
+- **Tres observaciones no valían para casa.** «Qué observar» es común a las dos
+  versiones de cada unidad. En «Sombras grandes y pequeñas», una decía que la
+  criatura se pone de acuerdo con su compañera y que la otra marca en el suelo:
+  en casa no hay compañera ni se marca nada. En «La cuadrícula», dos hablaban de
+  «tarjetas», y en casa son folios. Las tres están reescritas para valer en las
+  dos versiones, con grabación nueva en gallego y en castellano.
+- **El hub hacía un chip de edad por unidad.** Con dos unidades del mismo curso
+  salían dos chips con la misma clave y la fila fallaba («Duplicate keys
+  found»). Hoy hay una unidad por curso y no pasaba, pero un test lo reprodujo
+  antes del arreglo y ahora pasa.
+- **El validador juntaba el gallego y el castellano** al buscar cada orden en
+  inglés, y una orden dicha solo en gallego pasaba por buena. Ahora mira cada
+  lengua por separado. Lo comprueba un caso roto a propósito; con el validador
+  anterior, ese banco pasaba por bueno.
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| `test/features/steam/steam_test.dart` | 30 tests en verde: el fichero real pasa el validador, y 12 casos rotos a propósito (látex, arroz, material pequeño, papeles antes de los 3 años, vocabulario de consulta, orden no dicha, orden dicha solo en gallego…) se rechazan |
+| `test/features/steam/steam_escala_test.dart` | hub y las 10 sesiones a 360 dp, gl y es, escala 1,0 y 1,8: sin desbordes. El medidor ve un desborde hecho a propósito |
+| `test/features/portales_escala_test.dart` | 29 en verde, con la comprobación del desborde a propósito |
+| `flutter test --exclude-tags capturas` | 785 tests en verde |
+| `tools/gates.sh --fast` sobre `4e10b86a` | 19 de 19 en verde, con las grabaciones que sintetizó el workflow de voz |
+| App en escritorio Linux, 360 px: Inicio → Portal Docentes → «Hoxe na aula» en 3-4 → STEAM | el hub abre en «Para a aula» con 3 a 4 años elegido; sesión entera vista en gallego y en castellano |
+| App: Inicio → Portal Familias → 4-5 en la fila de edades del portal → chip STEAM → STEAM | el hub abre en «Para casa» con 4 a 5 años elegido; sesión de casa vista en castellano |
+| App, tras la revisión: Portal Familias → STEAM → «4 a 5» y «5 a 6» | «Qué observar» de las dos sesiones de casa con los textos nuevos, vistos en gallego y en castellano |
+
+### Comprobado en CI (GitHub Actions)
+
+| Con qué | Resultado |
+| --- | --- |
+| Workflow `voice-assets`: [run #44](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/36689354166) sobre `1696422f` y [run #45](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/36693483242) sobre `1755232d` | sintetizaron las 197 locuciones nuevas (`411a9368` y `d588594d`) y las 6 de las observaciones reescritas (`4e10b86a`) |
+| Workflow `Gates` sobre `a8dc69ac`: [run #179](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/36691891063) (push) y [run #180](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/36691898030) (PR) | los 21 gates en verde, también los dos que `--fast` salta aquí: el **APK de release** se compila y no declara ningún permiso salvo el interno que añade AndroidX: ni INTERNET ni ningún otro. Es anterior a los arreglos de la revisión |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato Android**, ni con la escala de texto
+  grande de un teléfono real. La escala grande sí está medida en los tests.
+- **El APK de release no se ha compilado en este contenedor**: aquí no hay
+  Android SDK. Lo cubre CI.
+- El audio no lo he escuchado. Los tests comprueban que el botón pide la
+  grabación correcta, pero el escritorio Linux no tiene el canal de audio de
+  Android.
+- El gallego y el castellano de las cinco unidades no los ha revisado una
+  persona nativa ni una educadora de infantil.
+- El criterio de 4 cm es una regla del contenido, no una certificación de
+  seguridad de producto.
+
 ## Los cuentos son historias, no microrrelatos · **en la rama `claude/tender-hamilton-mzhnxj`, pendiente de mergear** (24/9/2026)
 
 Orden de Frank: «un cuento no es un microrrelato, un cuento es una historia con

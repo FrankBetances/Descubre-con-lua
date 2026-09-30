@@ -120,32 +120,20 @@ void main() {
     if (await dir.exists()) await dir.delete(recursive: true);
   });
 
-  // Os detalles completos, non só a excepción: `takeException()` devolve
-  // «A RenderFlex overflowed by 509 pixels» e nada máis, e con iso non se sabe
-  // QUE fila desborda. Recollendo os FlutterErrorDetails queda o ficheiro e a
-  // liña no propio fallo do test.
-  final detalles = <FlutterErrorDetails>[];
-
-  setUp(() {
-    detalles.clear();
-    final anterior = FlutterError.onError;
-    FlutterError.onError = (d) {
-      detalles.add(d);
-      anterior?.call(d);
-    };
-    addTearDown(() => FlutterError.onError = anterior);
-  });
-
+  // Os erros saen de `takeException()`, que é o que o binding garda. Esta
+  // lista recollíase antes cun `FlutterError.onError` posto en `setUp`, e iso
+  // NON serve: `testWidgets` substitúe ese manexador mentres corre o test, a
+  // lista saía sempre baleira e `takeException()` tragábase o desborde. Así
+  // pasaban en verde os portais con 10, 134 e 232 px de desborde. O test do
+  // final deste ficheiro comproba que agora si se ve un. O ficheiro e a liña
+  // do desborde imprímeos o propio binding na consola.
   List<String> erroresDe(WidgetTester tester) {
-    while (tester.takeException() != null) {}
-    final fuera = detalles
-        .map((d) {
-          final onde = d.context?.toDescription() ?? '';
-          return '${d.exceptionAsString()} [$onde]';
-        })
-        .toSet()
-        .toList();
-    detalles.clear();
+    final fuera = <String>[];
+    for (var e = tester.takeException();
+        e != null;
+        e = tester.takeException()) {
+      fuera.add(e.toString().split('\n').first);
+    }
     return fuera;
   }
 
@@ -329,4 +317,15 @@ void main() {
       });
     }
   }
+
+  // Se isto non ve un desborde feito a propósito, todo o de arriba sae verde
+  // sen comprobar nada. Pasou.
+  testWidgets('o medidor ve un desborde feito a propósito', (tester) async {
+    await pintar(
+      tester,
+      const Scaffold(body: Row(children: [SizedBox(width: 500, height: 10)])),
+      1.0,
+    );
+    expect(erroresDe(tester), isNotEmpty);
+  });
 }

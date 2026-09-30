@@ -17,6 +17,13 @@ etapas de educación infantil: **primer ciclo (0-3 años)** y **segundo ciclo
   **micro-rutina del mes** para segundo ciclo: tres minutos en un momento
   concreto del día, con ejemplos de cómo devolver la frase bien dicha sin pedir
   que la criatura la repita.
+- **STEAM · Ciencia con las manos** — cinco sesiones de ciencia con materiales
+  reales, una por curso de 12 meses a 6 años: blando y duro, la rampa, el
+  sonido, las sombras y un robot que programan las criaturas. Cada una tiene su
+  **versión para el aula**, que abre el Portal Docentes con el curso de «Hoxe na
+  aula», y su **versión para casa**, que abre el Portal Familias con la edad
+  elegida. Empiezan por su aviso de seguridad y traen las órdenes en inglés con
+  su grabación. No evalúan ni registran nada: dicen qué observar.
 - **Calendario Escola · Fogar** — los seis años del trayecto, de 0-2 a 5-6:
   cinco cursos de diez meses, de septiembre a junio, uno por tarjeta. Se pasa
   deslizando de lado, y de junio de un curso se llega a septiembre del
@@ -96,7 +103,8 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 
 | | |
 | --- | --- |
-| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el aula de los dos ciclos, el calendario, Academy, las lenguas y la voz, los premios y la privacidad—. Lleva 22 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el aula de los dos ciclos, el calendario, Academy, STEAM, las lenguas y la voz, los premios y la privacidad—. Lleva 28 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Base pedagógica de STEAM**](docs/BASE_PEDAGOGICA_STEAM.md) | Qué hay en las cinco sesiones STEAM y por qué, sus criterios de seguridad y sus fuentes |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
 | [**CLAUDE.md**](CLAUDE.md) | Reglas de trabajo del proyecto |
@@ -113,6 +121,7 @@ comprobado y nombra el comando que lo comprobó.
 | Calendario e inglés | 50 meses de calendario (5 cursos × 10, de 0-2 a 5-6 años) · 4.000 palabras inglesas, 800 por curso, cinco nuevas al día · 63 colocaciones · 44 fonemas |
 | Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
+| STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, cada una en versión de aula y de casa |
 | Voz | 1135 locuciones (494 gl + 494 es + 147 en) grabadas dentro del paquete |
 | Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 | Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |

@@ -4,6 +4,7 @@ import '../models/asamblea_primeiro_ciclo_model.dart';
 import '../models/progresion_model.dart';
 import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
+import '../models/steam_model.dart';
 import '../models/unidad_model.dart';
 
 /// Function signature for asset string loader. Enables headless testing without Flutter engine.
@@ -54,6 +55,10 @@ class ContentAssetLoader {
       'assets/content/asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.5_infantil.json';
   static const String baseAsambleaSetembro6 =
       'assets/content/asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.6_infantil.json';
+
+  /// Las cinco unidades STEAM, cada una con su versión de aula y de casa.
+  static const String steamAssetPath =
+      'assets/content/steam/unidades_steam.json';
 
   /// Loads and parses an [Unidad] from an asset path.
   Future<Unidad> loadUnidadFromAsset(String assetPath) async {
@@ -153,6 +158,25 @@ class ContentAssetLoader {
       list.add(asamblea);
     }
     return List.unmodifiable(list);
+  }
+
+  /// Loads and parses a list of [SteamUnit] from an asset path.
+  Future<List<SteamUnit>> loadSteamUnits([String path = steamAssetPath]) async {
+    final rawJson = await _stringLoader(path);
+    return parseSteamUnits(rawJson);
+  }
+
+  /// Parses a list of [SteamUnit] from a raw JSON string.
+  List<SteamUnit> parseSteamUnits(String rawJson) {
+    final dynamic decoded = jsonDecode(rawJson);
+    if (decoded is! List) {
+      throw const FormatException('Expected JSON array at root for SteamUnits');
+    }
+    return decoded
+        .map((e) => SteamUnit.fromJson(e is Map<String, dynamic>
+            ? e
+            : Map<String, dynamic>.from(e as Map)))
+        .toList(growable: false);
   }
 
   /// Decodes raw JSON string safely into a Map.

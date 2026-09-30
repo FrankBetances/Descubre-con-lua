@@ -8,6 +8,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/formacion_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
+import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../academy/widgets/selector_idioma_widget.dart';
 import '../calendario/views/calendario_screen.dart';
@@ -20,6 +21,8 @@ import '../planificador/views/dinamicas_screen.dart';
 import '../planificador/views/estrategias_screen.dart';
 import '../planificador/views/planificador_screen.dart';
 import '../premios/premios_repository.dart';
+import '../steam/views/steam_hub_screen.dart';
+import '../steam/widgets/steam_comun.dart';
 import 'widgets/hoxe_na_aula.dart';
 
 /// Pantalla independente do Portal Docentes.
@@ -192,26 +195,33 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                 children: [
                   Row(
                     children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: AppTheme.primaryVigoBlue,
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: Text(
-                          isGl
-                              ? 'MODO AULA · DOCENTES'
-                              : 'MODO AULA · DOCENTES',
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w800,
-                            letterSpacing: 0.8,
+                      // A pastilla pártese en dúas liñas se non cabe: coa letra
+                      // grande do sistema saía da cabeceira.
+                      Expanded(
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: AppTheme.primaryVigoBlue,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Text(
+                              isGl
+                                  ? 'MODO AULA · DOCENTES'
+                                  : 'MODO AULA · DOCENTES',
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.w800,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                      const Spacer(),
+                      const SizedBox(width: 8),
                       const Icon(
                         Icons.school_rounded,
                         color: AppTheme.primaryVigoBlue,
@@ -361,6 +371,35 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                     builder: (_) => DinamicasScreen(
                       repository: widget.repository,
                       initialLanguage: _language,
+                    ),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 12.0),
+
+            // 3. STEAM · ciencia coas mans, na versión da aula
+            _buildDocenteModuleCard(
+              context: context,
+              title: SteamTextos.titulo.resolve(_language),
+              description: isGl
+                  ? 'Cinco sesións de ciencia con materiais reais, unha por curso: brando e duro, ramplas, son, sombras e un robot que programan as criaturas. Sen pantallas para elas.'
+                  : 'Cinco sesiones de ciencia con materiales reales, una por curso: blando y duro, rampas, sonido, sombras y un robot que programan las criaturas. Sin pantallas para ellas.',
+              icon: Icons.science_outlined,
+              iconColor: steamTinta,
+              iconBg: steamFondo,
+              badge: isGl ? '12 meses a 6 anos' : '12 meses a 6 años',
+              buttonText: isGl ? 'Abrir STEAM' : 'Abrir STEAM',
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => SteamHubScreen(
+                      repository: widget.repository,
+                      audioService: widget.audioService,
+                      initialLanguage: _language,
+                      onLanguageChanged: _handleLanguageChanged,
+                      audiencia: SteamAudiencia.aula,
+                      initialCursoId: _cursoHoxe,
                     ),
                   ),
                 );
