@@ -182,7 +182,7 @@ void main() {
       });
       for (final v in ['aula', 'hogar']) {
         final t = i2[v]['ciclo']['experimenta']['consignaAdulto'];
-        t['gl'] = '${t['gl']} Di «Jump».';
+        t['gl'] = '${t['gl']} Di “Jump”.';
       }
       final errores = validar(b).errors.join('\n');
       expect(errores, contains('is never said in the aula session in es'));

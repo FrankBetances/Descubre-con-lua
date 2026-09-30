@@ -1130,7 +1130,9 @@ class ContentValidator {
           errors.add('${prefix}ordenesIngles[$o].ipa must be written between '
               'slashes (got: "$ipa")');
         }
-        final cita = '«${en.toLowerCase()}»';
+        // Entre comiñas inglesas “…”, non entre «…»: é a marca coa que a voz
+        // le ese anaco coa voz inglesa e non coa galega ou a castelá.
+        final cita = '“${en.toLowerCase()}”';
         prosaPorVariante.forEach((donde, prosa) {
           if (!prosa.contains(cita)) {
             errors.add('${prefix}ordenesIngles[$o] "$en" is never said in the '
