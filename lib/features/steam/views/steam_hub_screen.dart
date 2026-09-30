@@ -231,7 +231,15 @@ class _SteamHubScreenState extends State<SteamHubScreen> {
 
   /// El filtro por edad, en varias filas cuando no cabe en una. Una fila con
   /// scroll horizontal escondía los tramos de 3 a 6 años fuera de la pantalla.
+  ///
+  /// Un chip por curso, no por unidad: si un curso trae dos unidades, dos chips
+  /// con la misma clave rompen la fila entera.
   Widget _filtro(List<SteamUnit> todas) {
+    final cursos = <String, LocalizedString>{};
+    for (final u in todas) {
+      cursos.putIfAbsent(u.estadio, () => u.rangoEdad);
+    }
+
     Widget chip(String? curso, String texto) {
       final sel = _curso == curso;
       return ChoiceChip(
@@ -266,8 +274,8 @@ class _SteamHubScreenState extends State<SteamHubScreen> {
           runSpacing: 8,
           children: [
             chip(null, SteamTextos.todas.resolve(_language)),
-            for (final u in todas)
-              chip(u.estadio, u.rangoEdad.resolve(_language)),
+            for (final c in cursos.entries)
+              chip(c.key, c.value.resolve(_language)),
           ],
         ),
       ],

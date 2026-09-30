@@ -729,8 +729,8 @@
         "es": "Explica con sus palabras que la figura tapa la luz."
       },
       {
-        "gl": "Ponse de acordo coa compañeira: unha move a figura e a outra marca.",
-        "es": "Se pone de acuerdo con la compañera: una mueve la figura y la otra marca."
+        "gl": "Respecta a quenda: move a figura cando lle toca e, cando lle toca mirar, di se a sombra medra ou encolle.",
+        "es": "Respeta el turno: mueve la figura cuando le toca y, cuando le toca mirar, dice si la sombra crece o encoge."
       }
     ],
     "aula": {
@@ -969,12 +969,12 @@
     ],
     "queObservar": [
       {
-        "gl": "Pon as tarxetas en orde antes de que o robot comece.",
-        "es": "Pone las tarjetas en orden antes de que el robot empiece."
+        "gl": "Pon as frechas en orde antes de que o robot comece.",
+        "es": "Pone las flechas en orden antes de que el robot empiece."
       },
       {
-        "gl": "Cando o robot non chega, busca que tarxeta falla e cámbiaa.",
-        "es": "Cuando el robot no llega, busca qué tarjeta falla y la cambia."
+        "gl": "Cando o robot non chega, busca que frecha falla e cámbiaa.",
+        "es": "Cuando el robot no llega, busca qué flecha falla y la cambia."
       },
       {
         "gl": "Respecta a quenda e agarda a orde antes de moverse.",

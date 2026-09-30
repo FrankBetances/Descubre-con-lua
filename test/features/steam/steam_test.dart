@@ -172,6 +172,24 @@ void main() {
       rechaza(b, 'is never said');
     });
 
+    test('una orden que se dice en gallego y no en castellano', () {
+      final b = copia();
+      final i2 = unidad(b, 'I2');
+      (i2['ordenesIngles'] as List).add({
+        'en': 'Jump',
+        'ipa': '/dʒʌmp/',
+        'accion': {'gl': 'Saltar', 'es': 'Saltar'},
+      });
+      for (final v in ['aula', 'hogar']) {
+        final t = i2[v]['ciclo']['experimenta']['consignaAdulto'];
+        t['gl'] = '${t['gl']} Di «Jump».';
+      }
+      final errores = validar(b).errors.join('\n');
+      expect(errores, contains('is never said in the aula session in es'));
+      expect(errores, contains('is never said in the hogar session in es'));
+      expect(errores, isNot(contains('session in gl')));
+    });
+
     test('una unidad sin la versión de casa', () {
       final b = copia();
       unidad(b, 'I1').remove('hogar');
@@ -351,6 +369,35 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.byType(SteamSesionGuiadaScreen), findsOneWidget);
       await verTexto(tester, 'Una cesta o una caja de zapatos');
+    });
+
+    // Hoy hay una unidad por curso, pero nada impide añadir otra: el filtro
+    // hacía un chip por unidad, y dos chips con la misma clave rompen la fila.
+    testWidgets('un curso con dos unidades sigue teniendo un solo chip',
+        (tester) async {
+      final i3 = repo.getSteamUnitByNivel('I3')!;
+      repo.addSteamUnit(
+          SteamUnit.fromJson({...i3.toJson(), 'id': 'I3-ACUSTICA-002'}));
+      await pintar(
+        tester,
+        SteamHubScreen(
+          repository: repo,
+          audioService: audio,
+          initialLanguage: AppLanguage.gl,
+          audiencia: SteamAudiencia.aula,
+          initialCursoId: 'curso_3_4',
+        ),
+      );
+      expect(tester.takeException(), isNull);
+      expect(
+          find.byKey(const ValueKey('steam_filtro_curso_3_4')), findsOneWidget);
+      await tester.scrollUntilVisible(
+          find.byKey(const ValueKey('abrir_steam_I3-ACUSTICA-002')), 250,
+          scrollable: find.descendant(
+              of: enLaLista('steam_hub_lista'),
+              matching: find.byType(Scrollable)));
+      expect(find.byKey(const ValueKey('abrir_steam_I3-ACUSTICA-002')),
+          findsOneWidget);
     });
 
     testWidgets('la sesión del aula: seguridad, papeles, pasos, pausa y pistas',

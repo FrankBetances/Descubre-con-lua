@@ -129,7 +129,8 @@ otra.
 - que nivel, curso y ciclo curricular cuenten la misma edad;
 - que todo material mida más de 4 cm y no sea de la lista prohibida;
 - que no haya papeles antes de los 3 años y sí en el aula de 4 a 6;
-- que cada orden en inglés se diga, entre comillas «», en las dos versiones;
+- que cada orden en inglés se diga, entre comillas «», en las dos versiones y
+  en las dos lenguas;
 - que no haya vocabulario clínico ni rutas de audio escritas a mano;
 - que cada unidad traiga aviso de seguridad y lo que conviene observar.
 

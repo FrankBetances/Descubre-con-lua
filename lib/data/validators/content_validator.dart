@@ -1051,7 +1051,9 @@ class ContentValidator {
         'experimenta': ['consignaAdulto', 'pistaN1', 'pistaN2'],
         'construye': ['retoTangible', 'sintesisCierre'],
       };
-      final prosa = StringBuffer();
+      // Una prosa por lengua: juntas, una orden dicha solo en gallego pasaba
+      // por buena y la sesión en castellano no la pedía nunca.
+      final prosa = {'gl': StringBuffer(), 'es': StringBuffer()};
       pasos.forEach((paso, campos) {
         final bloque = _asMap(ciclo[paso]);
         if (bloque == null) {
@@ -1063,9 +1065,7 @@ class ContentValidator {
             errors.add('${p}ciclo.$paso.$campo must be a non-empty gl/es text');
           } else {
             final t = _asMap(bloque[campo])!;
-            prosa
-              ..write(' ${t['gl']}')
-              ..write(' ${t['es']}');
+            prosa.forEach((lang, b) => b.write(' ${t[lang]}'));
           }
         }
       });
@@ -1075,12 +1075,16 @@ class ContentValidator {
         errors.add('${p}ciclo.observa.pausaSilencioSegundos must be an integer '
             'between 3 and 10 (got: $pausa)');
       }
-      prosaPorVariante[audiencia] = prosa.toString().toLowerCase();
+      prosa.forEach((lang, b) {
+        prosaPorVariante['$audiencia session in $lang'] =
+            b.toString().toLowerCase();
+      });
     }
 
     // Las órdenes en inglés: cada una tiene su gesto y cada una la dice la
-    // persona adulta en las dos versiones. Si una orden sale en la pastilla y
-    // no en el texto, o al revés, la sesión enseña una cosa y pide otra.
+    // persona adulta en las dos versiones y en las dos lenguas. Si una orden
+    // sale en la pastilla y no en el texto, o al revés, la sesión enseña una
+    // cosa y pide otra.
     final ordenes = json['ordenesIngles'];
     if (ordenes is! List || ordenes.isEmpty) {
       errors.add('${prefix}ordenesIngles must contain at least one command');
@@ -1106,10 +1110,10 @@ class ContentValidator {
               'slashes (got: "$ipa")');
         }
         final cita = '«${en.toLowerCase()}»';
-        prosaPorVariante.forEach((audiencia, prosa) {
+        prosaPorVariante.forEach((donde, prosa) {
           if (!prosa.contains(cita)) {
             errors.add('${prefix}ordenesIngles[$o] "$en" is never said in the '
-                '$audiencia session (expected $cita in its steps)');
+                '$donde (expected $cita in its steps)');
           }
         });
       }

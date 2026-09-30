@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-30T07:43:56Z",
+ "generatedAt": "2026-09-30T08:58:43Z",
  "entries": 15159,
  "byStyle": {
   "slow": 6008,
@@ -104988,14 +104988,6 @@
    "source": "steam/I4-OPTICA-001/aula/construye/sintesisCierre"
   },
   {
-   "id": "es_tutor_3a94f3b0_57",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Pone las tarjetas en orden antes de que el robot empiece.",
-   "speech": "Pone las tarjetas en orden antes de que el robot empiece.",
-   "source": "steam/I5-LOGICA-001/observar/0"
-  },
-  {
    "id": "es_tutor_3b137f3d_124",
    "lang": "es",
    "style": "tutor",
@@ -105906,14 +105898,6 @@
    "text": "Cuanta más información se le dé a la familia en la puerta, mejor aprovecha el día en casa.",
    "speech": "Cuanta más información se le dé a la familia en la puerta, mejor aprovecha el día en casa.",
    "source": "aula.ponte_casa.01/afirmaciones/afirmacion_01/enunciado"
-  },
-  {
-   "id": "es_tutor_531e1521_62",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Cuando el robot no llega, busca qué tarjeta falla y la cambia.",
-   "speech": "Cuando el robot no llega, busca qué tarjeta falla y la cambia.",
-   "source": "steam/I5-LOGICA-001/observar/1"
   },
   {
    "id": "es_tutor_5361fa1f_121",
@@ -107452,14 +107436,6 @@
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/fase/3/cmd/cmd.marzo.5i.03/modeladoDocente"
   },
   {
-   "id": "es_tutor_7de34136_73",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Se pone de acuerdo con la compañera: una mueve la figura y la otra marca.",
-   "speech": "Se pone de acuerdo con la compañera: una mueve la figura y la otra marca.",
-   "source": "steam/I4-OPTICA-001/observar/2"
-  },
-  {
    "id": "es_tutor_7e39c14b_57",
    "lang": "es",
    "style": "tutor",
@@ -108948,6 +108924,14 @@
    "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/4/consigna"
   },
   {
+   "id": "es_tutor_ab4c96b2_56",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pone las flechas en orden antes de que el robot empiece.",
+   "speech": "Pone las flechas en orden antes de que el robot empiece.",
+   "source": "steam/I5-LOGICA-001/observar/0"
+  },
+  {
    "id": "es_tutor_ab78cb02_77",
    "lang": "es",
    "style": "tutor",
@@ -109034,6 +109018,14 @@
    "text": "Soy Lúa. Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
    "speech": "Soy Lúa. Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
    "source": "academy.juego_movimiento_sin_pantallas.01/luaDice"
+  },
+  {
+   "id": "es_tutor_ad2b9333_61",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando el robot no llega, busca qué flecha falla y la cambia.",
+   "speech": "Cuando el robot no llega, busca qué flecha falla y la cambia.",
+   "source": "steam/I5-LOGICA-001/observar/1"
   },
   {
    "id": "es_tutor_add7f311_143",
@@ -110994,6 +110986,14 @@
    "text": "Señalar con el dedo la imagen del barco o coger el juguete.",
    "speech": "Señalar con el dedo la imagen del barco o coger el juguete.",
    "source": "juega.mar.01/preguntas/?/respuestaSugerida"
+  },
+  {
+   "id": "es_tutor_e787b531_107",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Respeta el turno: mueve la figura cuando le toca y, cuando le toca mirar, dice si la sombra crece o encoge.",
+   "speech": "Respeta el turno: mueve la figura cuando le toca y, cuando le toca mirar, dice si la sombra crece o encoge.",
+   "source": "steam/I4-OPTICA-001/observar/2"
   },
   {
    "id": "es_tutor_e7c4ac78_94",
@@ -115724,6 +115724,14 @@
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/fase/3/consigna"
   },
   {
+   "id": "gl_tutor_62fae21d_58",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando o robot non chega, busca que frecha falla e cámbiaa.",
+   "speech": "Cando o robot non chega, busca que frecha falla e cámbiaa.",
+   "source": "steam/I5-LOGICA-001/observar/1"
+  },
+  {
    "id": "gl_tutor_6334102e_92",
    "lang": "gl",
    "style": "tutor",
@@ -117124,14 +117132,6 @@
    "source": "progresion.primeiro_ciclo.0_2/s2/d5/consigna"
   },
   {
-   "id": "gl_tutor_8b94fd35_52",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Pon as tarxetas en orde antes de que o robot comece.",
-   "speech": "Pon as tarxetas en orde antes de que o robot comece.",
-   "source": "steam/I5-LOGICA-001/observar/0"
-  },
-  {
    "id": "gl_tutor_8bc34b5d_67",
    "lang": "gl",
    "style": "tutor",
@@ -118148,14 +118148,6 @@
    "source": "steam/I1-MATERIA-001/aula/construye/sintesisCierre"
   },
   {
-   "id": "gl_tutor_a551c563_59",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Cando o robot non chega, busca que tarxeta falla e cámbiaa.",
-   "speech": "Cando o robot non chega, busca que tarxeta falla e cámbiaa.",
-   "source": "steam/I5-LOGICA-001/observar/1"
-  },
-  {
    "id": "gl_tutor_a55eb0c0_34",
    "lang": "gl",
    "style": "tutor",
@@ -118610,14 +118602,6 @@
    "text": "Traballar a propiocepción, o equilibrio e a inhibición do movemento.",
    "speech": "Traballar a propiocepción, o equilibrio e a inhibición do movemento.",
    "source": "juega.corpo.01/exploracion/objetivoSensorial"
-  },
-  {
-   "id": "gl_tutor_b10de955_67",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Ponse de acordo coa compañeira: unha move a figura e a outra marca.",
-   "speech": "Ponse de acordo coa compañeira: unha move a figura e a outra marca.",
-   "source": "steam/I4-OPTICA-001/observar/2"
   },
   {
    "id": "gl_tutor_b113d011_83",
@@ -119924,6 +119908,14 @@
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.03/accionFisica"
   },
   {
+   "id": "gl_tutor_d7503071_51",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon as frechas en orde antes de que o robot comece.",
+   "speech": "Pon as frechas en orde antes de que o robot comece.",
+   "source": "steam/I5-LOGICA-001/observar/0"
+  },
+  {
    "id": "gl_tutor_d776caea_38",
    "lang": "gl",
    "style": "tutor",
@@ -120626,6 +120618,14 @@
    "text": "Quietude total sobre a marca ata escoitar a orde de espertar.",
    "speech": "Quietude total sobre a marca ata escoitar a orde de espertar.",
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/fase/3/cmd/cmd.marzo.5i.03/accionFisica"
+  },
+  {
+   "id": "gl_tutor_ea969d1c_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Respecta a quenda: move a figura cando lle toca e, cando lle toca mirar, di se a sombra medra ou encolle.",
+   "speech": "Respecta a quenda: move a figura cando lle toca e, cando lle toca mirar, di se a sombra medra ou encolle.",
+   "source": "steam/I4-OPTICA-001/observar/2"
   },
   {
    "id": "gl_tutor_eb98fc0b_76",
