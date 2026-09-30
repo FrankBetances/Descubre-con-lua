@@ -55,6 +55,28 @@ def shade(cell_or_par, hexcolor):
     target.append(el)
 
 
+def numeracion_nueva(doc):
+    """Una numeración propia para una lista numerada, que empieza en 1.
+
+    El estilo 'List Number' lleva UNA sola numeración para todo el documento:
+    sin esto, la segunda lista numerada seguía contando donde acabó la primera,
+    y los pasos de la sesión STEAM salían del 6 al 12. Cada <ol> abre la suya,
+    sobre la misma lista abstracta del estilo, con el primer nivel en 1.
+    """
+    numbering = doc.part.numbering_part.element
+    del_estilo = doc.styles['List Number'].element.pPr.numPr.numId.val
+    abstracta = numbering.num_having_numId(del_estilo).abstractNumId.val
+    num = numbering.add_num(abstracta)
+    num.add_lvlOverride(ilvl=0).add_startOverride(1)
+    return num.numId
+
+
+def numerar(par, num_id):
+    num_pr = par._p.get_or_add_pPr().get_or_add_numPr()
+    num_pr.get_or_add_ilvl().val = 0
+    num_pr.get_or_add_numId().val = num_id
+
+
 def no_borders(table):
     borders = OxmlElement('w:tblBorders')
     for edge in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
@@ -390,17 +412,22 @@ class Builder:
                           color=MUTED if 'muted' in cls else None)
             elif tag in ('ul', 'ol'):
                 style = 'List Number' if tag == 'ol' else 'List Bullet'
+                num_id = numeracion_nueva(self.doc) if tag == 'ol' else None
                 for li in el:
                     if not isinstance(li.tag, str):
                         continue
                     nested = [c for c in li if isinstance(c.tag, str)
                               and c.tag in ('ul', 'ol')]
                     p = self.doc.add_paragraph(style=style)
+                    if num_id is not None:
+                        numerar(p, num_id)
                     p.paragraph_format.space_after = Pt(2)
                     self.runs(p, li)
                     for sub in nested:
                         for subli in sub:
                             sp = self.doc.add_paragraph(style=style)
+                            if num_id is not None:
+                                numerar(sp, num_id)
                             sp.paragraph_format.left_indent = Cm(1.6)
                             sp.paragraph_format.space_after = Pt(1)
                             self.runs(sp, subli)

@@ -275,8 +275,7 @@ void main() {
 
     // El calendario del Modo Aula: el mes de diciembre de 4-5 años. Estos
     // tests miden QUÉ sale, a 520 de ancho como los demás de estas pantallas:
-    // el encaje de la fila se mide a 360 y con letra grande en
-    // `steam_escala_test.dart`.
+    // el encaje a 360 y con letra grande se mide más abajo, en «Cabe a 360 dp».
     Widget calendario({required bool docente}) => CalendarioScreen(
           store: store,
           contenido: contenido,
@@ -365,11 +364,14 @@ void main() {
     });
   });
 
-  // Que QUEPA: 360 dp, gallego y castellano, letra normal y grande. La fila
-  // mide 264 px en «Hoxe na aula», 280 en el calendario, 302 en el día del
-  // Modo Aula y 260 en el calendario de las familias; por eso se mide suelta
-  // a 260. El lado de casa del calendario NO se mide entero aquí: desborda
-  // también en un día sin STEAM, y eso no es de este cambio (ver STATUS.md).
+  // Que QUEPA: 360 dp, gallego y castellano, letra normal y grande. En las
+  // pantallas de verdad, a 360 dp, la fila tiene 264 px de ancho en «Hoxe na
+  // aula», 267 en el día del Modo Aula, 280 en el calendario y 260 en el
+  // calendario de las familias (cómo se midió, en STATUS.md). El día del Modo
+  // Aula se pinta aquí suelto, con 302: por eso la fila se mide además sola a
+  // 260, la más estrecha de las cuatro. El lado de casa del calendario NO se
+  // mide entero aquí: desborda también en un día sin STEAM, y eso no es de
+  // este cambio (ver STATUS.md).
   group('Cabe a 360 dp', () {
     // `takeException()` y no un `FlutterError.onError` puesto en `setUp`:
     // `testWidgets` cambia ese manejador y la lista salía siempre vacía.

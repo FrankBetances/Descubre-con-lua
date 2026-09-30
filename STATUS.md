@@ -37,6 +37,11 @@ Qué cambia:
     de STEAM, el mes lo avisa y el día trae la versión de casa.
 - La sesión se abre también sin servicio de audio: se lee igual y sin
   altavoces.
+- **El Word del manual numeraba los pasos de STEAM del 6 al 12.** El estilo
+  de lista numerada del Word lleva una sola numeración para todo el
+  documento, y la lista de STEAM seguía la de las cápsulas. La segunda lista
+  numerada entró con la sección de STEAM, así que el fallo era de ese cambio.
+  `docs/build-docx.py` abre ahora una numeración por lista, que empieza en 1.
 
 ### Comprobado en este contenedor, con Flutter 3.47.5
 
@@ -48,8 +53,9 @@ Qué cambia:
 | App: Portal Docentes → Modo Aula → 2.º ciclo → 5.º → diciembre, semana 2, miércoles | «El día de hoy, entero» con la fila STEAM, en es |
 | App: Modo Aula → 1.º ciclo → 0-2 → noviembre, semana 2, miércoles | «Blando y duro» en el día, en es |
 | App: Modo Aula → calendario del curso → diciembre (4-5) | el aviso del mes y la fila del día, en el lado del aula y en el de casa, en gl |
-| App: Portal Familias → «O teu xogo de 3 min de hoxe» → 4-5 → diciembre | el aviso, el símbolo en la casilla del día 8 y la fila de casa en el día, en es; al tocarla se abre la sesión de casa |
-| Manual | 2 capturas nuevas («Hoxe na aula» el día STEAM, gl y es); PDF de 25 páginas y Word regenerados; de la página 18 a la 25 miradas una a una, ninguna figura sale de la hoja |
+| App: Portal Familias → «Tu juego de 3 min de hoy» → 4-5 → diciembre | el aviso, el símbolo en la casilla del día 8 y la fila de casa en el día, en es; al tocarla se abre la sesión de casa |
+| Sonda en las pantallas de verdad a 360 dp, gl y letra normal | lo que le queda de ancho a la fila STEAM: 264 px en «Hoxe na aula» del Portal Docentes y 267 en el día del Modo Aula, en 1.º y en 2.º ciclo, medidos en la columna de la tarjeta y en las filas del cuento y la dinámica, que comparten columna con ella (con el reloj de hoy no es día STEAM); 280 en los dos lados del Calendario Escola · Fogar y 260 en el calendario del Portal Familias, medidos en la fila misma. El test la mide además suelta a 260, la más estrecha. El test del día del Modo Aula la pinta suelta a 302: no mide el ancho de la pantalla de verdad |
+| Manual | 2 capturas nuevas («Hoxe na aula» el día STEAM, gl y es). PDF de 25 páginas: la 18 a la 25 miradas una a una; tras añadir al párrafo el calendario del Portal Familias, el texto de las páginas 1-17 y 19-25 es idéntico al anterior y la 18 se volvió a mirar. Word: convertido a PDF con LibreOffice 24.2, 25 páginas; las dos listas numeradas empiezan en 1 y es el único cambio de texto respecto al Word anterior. En el PDF y en el Word, ninguna página tiene nada a menos de 7 mm del borde, medido con un script sobre las 25 páginas |
 
 ### NO comprobado
 
@@ -69,6 +75,9 @@ Qué cambia:
   pantalla sin repositorio, y sin repositorio no hay día.
 - En el calendario del Portal Familias, con la app en castellano, el día dice
   «Día 68 do curso», en gallego.
+- La página 5 del manual lleva solo una línea («En cada pareja de imágenes,
+  gallego a la izquierda…»), en el PDF y en el Word. Ya era así antes de
+  STEAM.
 
 ## STEAM · ciencia con las manos, en el aula y en casa (30/9/2026)
 
