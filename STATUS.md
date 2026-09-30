@@ -64,22 +64,51 @@ cómo se ha resuelto:
   - la del Portal Docentes (134 px con la letra grande);
   - la barra «Anterior / Seguinte» del visor de cuentos (188-509 px).
 
+### Corregido en la revisión, antes de mergear
+
+Al releer lo ya empujado a la rama aparecieron tres fallos míos:
+
+- **Tres observaciones no valían para casa.** «Qué observar» es común a las dos
+  versiones de cada unidad. En «Sombras grandes y pequeñas», una decía que la
+  criatura se pone de acuerdo con su compañera y que la otra marca en el suelo:
+  en casa no hay compañera ni se marca nada. En «La cuadrícula», dos hablaban de
+  «tarjetas», y en casa son folios. Las tres están reescritas para valer en las
+  dos versiones, con grabación nueva en gallego y en castellano.
+- **El hub hacía un chip de edad por unidad.** Con dos unidades del mismo curso
+  salían dos chips con la misma clave y la fila fallaba («Duplicate keys
+  found»). Hoy hay una unidad por curso y no pasaba, pero un test lo reprodujo
+  antes del arreglo y ahora pasa.
+- **El validador juntaba el gallego y el castellano** al buscar cada orden en
+  inglés, y una orden dicha solo en gallego pasaba por buena. Ahora mira cada
+  lengua por separado. Lo comprueba un caso roto a propósito; con el validador
+  anterior, ese banco pasaba por bueno.
+
 ### Comprobado en este contenedor, con Flutter 3.47.5
 
 | Con qué | Resultado |
 | --- | --- |
-| `test/features/steam/steam_test.dart` | 28 tests en verde: el fichero real pasa el validador, y 11 casos rotos a propósito (látex, arroz, material pequeño, papeles antes de los 3 años, vocabulario de consulta, orden no dicha…) se rechazan |
+| `test/features/steam/steam_test.dart` | 30 tests en verde: el fichero real pasa el validador, y 12 casos rotos a propósito (látex, arroz, material pequeño, papeles antes de los 3 años, vocabulario de consulta, orden no dicha, orden dicha solo en gallego…) se rechazan |
 | `test/features/steam/steam_escala_test.dart` | hub y las 10 sesiones a 360 dp, gl y es, escala 1,0 y 1,8: sin desbordes. El medidor ve un desborde hecho a propósito |
 | `test/features/portales_escala_test.dart` | 29 en verde, con la comprobación del desborde a propósito |
-| `flutter test --exclude-tags capturas` | 783 tests en verde |
-| `tools/gates.sh --fast` | 18 de 19 en verde. «every locution has a recording» en rojo hasta que el workflow de voz sintetice las 197 locuciones nuevas |
+| `flutter test --exclude-tags capturas` | 785 tests en verde |
+| `tools/gates.sh --fast` sobre `4e10b86a` | 19 de 19 en verde, con las grabaciones que sintetizó el workflow de voz |
 | App en escritorio Linux, 360 px: Inicio → Portal Docentes → «Hoxe na aula» en 3-4 → STEAM | el hub abre en «Para a aula» con 3 a 4 años elegido; sesión entera vista en gallego y en castellano |
-| App: Inicio → Portal Familias → edad 4-5 → chip STEAM → STEAM | el hub abre en «Para casa» con 4 a 5 años elegido; sesión de casa vista en castellano |
+| App: Inicio → Portal Familias → 4-5 en la fila de edades del portal → chip STEAM → STEAM | el hub abre en «Para casa» con 4 a 5 años elegido; sesión de casa vista en castellano |
+| App, tras la revisión: Portal Familias → STEAM → «4 a 5» y «5 a 6» | «Qué observar» de las dos sesiones de casa con los textos nuevos, vistos en gallego y en castellano |
+
+### Comprobado en CI (GitHub Actions)
+
+| Con qué | Resultado |
+| --- | --- |
+| Workflow `voice-assets`: [run #44](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/36689354166) sobre `1696422f` y [run #45](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/36693483242) sobre `1755232d` | sintetizaron las 197 locuciones nuevas (`411a9368` y `d588594d`) y las 6 de las observaciones reescritas (`4e10b86a`) |
+| Workflow `Gates` sobre `a8dc69ac`: [run #179](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/36691891063) (push) y [run #180](https://github.com/FrankBetances/Descubre-con-lua/actions/runs/36691898030) (PR) | los 21 gates en verde, también los dos que `--fast` salta aquí: el **APK de release** se compila y no declara ningún permiso salvo el interno que añade AndroidX: ni INTERNET ni ningún otro. Es anterior a los arreglos de la revisión |
 
 ### NO comprobado
 
 - **Esto no lo he visto en un aparato Android**, ni con la escala de texto
   grande de un teléfono real. La escala grande sí está medida en los tests.
+- **El APK de release no se ha compilado en este contenedor**: aquí no hay
+  Android SDK. Lo cubre CI.
 - El audio no lo he escuchado. Los tests comprueban que el botón pide la
   grabación correcta, pero el escritorio Linux no tiene el canal de audio de
   Android.
