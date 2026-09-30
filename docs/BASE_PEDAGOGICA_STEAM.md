@@ -101,8 +101,9 @@ Cada sesión tiene su día del curso: el mes, la semana y el día de la semana
 - en **«Hoxe na aula»**, en el Portal Docentes, para el grupo de ese curso;
 - en el día del **Modo Aula** («O día de hoxe, enteiro»), en los dos ciclos,
   junto al cuento y la dinámica del día;
-- en el **Calendario Escola · Fogar**: el mes avisa de qué día toca, y ese día
-  sale la versión del aula en el lado del aula y la de casa en el lado de casa;
+- en el **Calendario Escola · Fogar**, al que se llega desde el Modo Aula, el
+  Portal Docentes y Academy: el mes avisa de qué día toca, y ese día sale la
+  versión del aula en el lado del aula y la de casa en el lado de casa;
 - en el **calendario de las familias** («Calendario Escolar no Fogar»),
   marcada en la cuadrícula y con la versión de casa en el día.
 

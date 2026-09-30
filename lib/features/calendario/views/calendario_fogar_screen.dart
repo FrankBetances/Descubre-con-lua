@@ -944,6 +944,12 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   audiencia: SteamAudiencia.hogar,
                   language: _language,
                   audioService: widget.audioService,
+                  // Si cambia de lengua en la sesión, el calendario vuelve en
+                  // esa lengua: lo mismo que hace el selector de arriba.
+                  onLanguageChanged: (newLang) {
+                    setState(() => _language = newLang);
+                    widget.onLanguageChanged?.call(newLang);
+                  },
                 ),
               ),
               const SizedBox(height: 14),

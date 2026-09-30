@@ -45,6 +45,10 @@ class DiaNoFogar extends StatefulWidget {
   /// Para que las palabras inglesas del día suenen. Sin él se leen igual.
   final OfflineAudioService? audioService;
 
+  /// Quien cambia de lengua dentro de la sesión STEAM vuelve al calendario en
+  /// esa lengua, como desde el lado del aula.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
+
   const DiaNoFogar({
     super.key,
     required this.repository,
@@ -52,6 +56,7 @@ class DiaNoFogar extends StatefulWidget {
     required this.mes,
     required this.language,
     this.audioService,
+    this.onLanguageChanged,
   });
 
   @override
@@ -202,6 +207,7 @@ class _DiaNoFogarState extends State<DiaNoFogar> {
               audiencia: SteamAudiencia.hogar,
               language: widget.language,
               audioService: widget.audioService,
+              onLanguageChanged: widget.onLanguageChanged,
             ),
           ),
         ],

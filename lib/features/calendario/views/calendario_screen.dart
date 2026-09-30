@@ -1245,6 +1245,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   mes: mes.mesDoCurso,
                   language: _language,
                   audioService: widget.audioService,
+                  onLanguageChanged: _onToggleLanguage,
                 ),
               ],
               const SizedBox(height: 12),

@@ -276,13 +276,18 @@ void main() {
     // El calendario del Modo Aula: el mes de diciembre de 4-5 años. Estos
     // tests miden QUÉ sale, a 520 de ancho como los demás de estas pantallas:
     // el encaje a 360 y con letra grande se mide más abajo, en «Cabe a 360 dp».
-    Widget calendario({required bool docente}) => CalendarioScreen(
+    Widget calendario({
+      required bool docente,
+      ValueChanged<AppLanguage>? onLanguageChanged,
+    }) =>
+        CalendarioScreen(
           store: store,
           contenido: contenido,
           cursoInicial: 'curso_4_5',
           mesInicialIndex: 3,
           esDocenteInicial: docente,
           initialLanguage: AppLanguage.gl,
+          onLanguageChanged: onLanguageChanged,
           repository: repo,
           audioService: MockOfflineAudioService(),
         );
@@ -361,6 +366,77 @@ void main() {
           find.byType(SteamSesionGuiadaScreen));
       expect(sesion.audiencia, SteamAudiencia.hogar);
       expect(find.text('Sombras grandes y pequeñas'), findsWidgets);
+    });
+
+    // Quien cambia de lengua dentro de la sesión vuelve al calendario en esa
+    // lengua, desde los dos lados y desde el calendario de las familias; y el
+    // cambio sigue hacia arriba, hasta la pantalla que abrió el calendario.
+    Future<void> alCastellanoYVolver(WidgetTester tester) async {
+      await tester.tap(find.descendant(
+          of: find.byType(SteamSesionGuiadaScreen), matching: find.text('ES')));
+      await tester.pumpAndSettle();
+      tester.state<NavigatorState>(find.byType(Navigator)).pop();
+      await tester.pumpAndSettle();
+      expect(find.byType(SteamSesionGuiadaScreen), findsNothing);
+    }
+
+    for (final docente in [true, false]) {
+      final lado = docente ? 'del aula' : 'de casa';
+      testWidgets('El calendario, lado $lado: se vuelve en la otra lengua',
+          (tester) async {
+        final cambios = <AppLanguage>[];
+        await pintar(tester,
+            calendario(docente: docente, onLanguageChanged: cambios.add),
+            tamano: const Size(520, 2600));
+        final p = docente ? 'cal' : 'fogar';
+        await verYTocar(tester, find.byKey(ValueKey('${p}_semana_2')));
+        await verYTocar(tester, find.byKey(ValueKey('${p}_dia_3')));
+        expect(
+            find.text(
+                docente ? 'A sesión STEAM de hoxe' : 'O xogo STEAM de hoxe'),
+            findsOneWidget);
+        await verYTocar(
+            tester, find.byKey(const ValueKey('fila_steam_I4-OPTICA-001')));
+        await alCastellanoYVolver(tester);
+        expect(
+            find.text(
+                docente ? 'La sesión STEAM de hoy' : 'El juego STEAM de hoy'),
+            findsOneWidget);
+        expect(cambios, [AppLanguage.es]);
+      });
+    }
+
+    testWidgets('El calendario de las familias: se vuelve en la otra lengua',
+        (tester) async {
+      final cambios = <AppLanguage>[];
+      await pintar(
+        tester,
+        CalendarioFogarScreen(
+          repository: repo,
+          store: store,
+          initialLanguage: AppLanguage.gl,
+          onLanguageChanged: cambios.add,
+          initialCursoId: 'curso_4_5',
+          audioService: MockOfflineAudioService(),
+        ),
+        tamano: const Size(520, 2600),
+      );
+      final meses = find
+          .ancestor(
+              of: find.text('Novembro'), matching: find.byType(Scrollable))
+          .first;
+      await tester.scrollUntilVisible(find.text('Decembro'), 100,
+          scrollable: meses);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Decembro'));
+      await tester.pumpAndSettle();
+      await verYTocar(tester, find.byKey(const ValueKey('reixa_steam_2_3')));
+      expect(find.text('O xogo STEAM de hoxe'), findsOneWidget);
+      await verYTocar(
+          tester, find.byKey(const ValueKey('fila_steam_I4-OPTICA-001')));
+      await alCastellanoYVolver(tester);
+      expect(find.text('El juego STEAM de hoy'), findsOneWidget);
+      expect(cambios, [AppLanguage.es]);
     });
   });
 
