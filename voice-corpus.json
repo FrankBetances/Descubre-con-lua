@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-30T21:03:17Z",
+ "generatedAt": "2026-10-01T05:17:40Z",
  "entries": 15154,
  "byStyle": {
   "slow": 6002,
@@ -49540,6 +49540,14 @@
    "source": "corpus/1813/frase"
   },
   {
+   "id": "en_tutor_0aa9e672_60",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Most crabs walk sideways, but the spider crab walks forwards",
+   "speech": "Most crabs walk sideways, but the spider crab walks forwards",
+   "source": "tpr.5_6.abril/s2/5_6.abril.s2.the-spider-crab-walks-sideways-not-forwards"
+  },
+  {
    "id": "en_tutor_0ab2bb95_16",
    "lang": "en",
    "style": "tutor",
@@ -52282,14 +52290,6 @@
    "text": "I urged him to finish his studies.",
    "speech": "I urged him to finish his studies.",
    "source": "corpus/2965/frase"
-  },
-  {
-   "id": "en_tutor_17758ed7_44",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The spider crab walks sideways, not forwards",
-   "speech": "The spider crab walks sideways, not forwards",
-   "source": "tpr.5_6.abril/s2/5_6.abril.s2.the-spider-crab-walks-sideways-not-forwards"
   },
   {
    "id": "en_tutor_177d194f_10",

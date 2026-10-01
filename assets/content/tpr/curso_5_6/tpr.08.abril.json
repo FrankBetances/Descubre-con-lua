@@ -441,12 +441,12 @@
         },
         {
           "id": "5_6.abril.s2.the-spider-crab-walks-sideways-not-forwards",
-          "en": "The spider crab walks sideways, not forwards",
-          "gl": "A centola camiña de lado, non cara adiante",
-          "es": "La centolla camina de lado, no hacia delante",
+          "en": "Most crabs walk sideways, but the spider crab walks forwards",
+          "gl": "A maioría dos cangrexos camiña de lado, pero a centola camiña cara adiante",
+          "es": "La mayoría de los cangrejos camina de lado, pero la centolla camina hacia delante",
           "tprAction": {
-            "gl": "Camiñar de lado",
-            "es": "Caminar de lado"
+            "gl": "Camiñar de lado e despois cara adiante",
+            "es": "Caminar de lado y después hacia delante"
           },
           "category": "complex"
         },
