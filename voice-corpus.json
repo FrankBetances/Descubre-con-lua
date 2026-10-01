@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-01T05:17:40Z",
- "entries": 15154,
+ "generatedAt": "2026-10-01T05:19:20Z",
+ "entries": 15149,
  "byStyle": {
   "slow": 6002,
-  "tutor": 9152
+  "tutor": 9147
  },
  "byLang": {
-  "en": 12805,
+  "en": 12800,
   "es": 1174,
   "gl": 1175
  },
@@ -81892,14 +81892,6 @@
    "source": "corpus/1464/frase"
   },
   {
-   "id": "en_tutor_9ff2a73a_31",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Jump like a frog, run and stop!",
-   "speech": "Jump like a frog, run and stop!",
-   "source": "conto/conto_103_s3/tpr"
-  },
-  {
    "id": "en_tutor_9ff61439_42",
    "lang": "en",
    "style": "tutor",
@@ -83506,14 +83498,6 @@
    "text": "Land softly like a light feather",
    "speech": "Land softly like a light feather",
    "source": "lamina/escola_rut_135/tpr"
-  },
-  {
-   "id": "en_tutor_a75546a8_42",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Breathe in deeply and rest, soft and calm!",
-   "speech": "Breathe in deeply and rest, soft and calm!",
-   "source": "conto/conto_104_s4/tpr"
   },
   {
    "id": "en_tutor_a75abb6b_7",
@@ -88402,14 +88386,6 @@
    "text": "This blender can't handle nuts.",
    "speech": "This blender can't handle nuts.",
    "source": "corpus/372/frase"
-  },
-  {
-   "id": "en_tutor_c0d9507c_41",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Touch the soft leaf, listen to the sound!",
-   "speech": "Touch the soft leaf, listen to the sound!",
-   "source": "conto/conto_106_s2/tpr"
   },
   {
    "id": "en_tutor_c0dbcf6d_30",
@@ -99380,14 +99356,6 @@
    "source": "tpr.4_5.xuno/s4/4_5.xuno.s4.breezy-evening"
   },
   {
-   "id": "en_tutor_f1b548a7_35",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Wave your hands, welcome to school!",
-   "speech": "Wave your hands, welcome to school!",
-   "source": "conto/conto_101_s1/tpr"
-  },
-  {
    "id": "en_tutor_f1c05046_76",
    "lang": "en",
    "style": "tutor",
@@ -99874,14 +99842,6 @@
    "text": "A skirt is cloth covering that forms the part of a garment below the waist.",
    "speech": "A skirt is cloth covering that forms the part of a garment below the waist.",
    "source": "corpus/1834/frase"
-  },
-  {
-   "id": "en_tutor_f42a53c5_32",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Blow the chestnut: cool it down!",
-   "speech": "Blow the chestnut: cool it down!",
-   "source": "conto/conto_130_s2/tpr"
   },
   {
    "id": "en_tutor_f42ca564_60",
