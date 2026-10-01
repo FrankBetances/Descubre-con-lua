@@ -140,25 +140,31 @@ void main() {
             findsOneWidget);
       }
 
-      // Tocar a última leva á páxina onde está.
-      final ultima = deHoxe.last;
-      final chip = find.byKey(ValueKey('ir_a_paxina_${ultima.palabra.en}'));
-      await tester.ensureVisible(chip);
+      // Tocar unha leva á páxina onde está, e a vista vai con ela. A
+      // primeira pastilla vese sen desprazar nada: se a vista non se move ao
+      // tocala, a cabeceira segue á vista e o texto da páxina, fóra.
+      final escollida = deHoxe.first;
+      final chip = find.byKey(ValueKey('ir_a_paxina_${escollida.palabra.en}'));
+      final cabeceira = find.byKey(const Key('palabras_do_conto'));
+      expect(tester.getTopLeft(cabeceira).dy, greaterThan(0));
       await tester.tap(chip);
       await tester.pumpAndSettle();
-      expect(
-          find.text('${ultima.paxina} / ${c.paginas.length}'), findsOneWidget);
+      expect(find.text('${escollida.paxina} / ${c.paginas.length}'),
+          findsOneWidget);
+      expect(tester.getTopLeft(cabeceira).dy, lessThan(0),
+          reason: 'despois do salto vese a páxina, non a cabeceira');
 
       // Na páxina: a palabra coa súa voz, o seu significado e a marca de hoxe.
       final daPaxina = find.byKey(const Key('palabras_da_paxina'));
       await tester.ensureVisible(daPaxina);
       expect(
-          find.descendant(of: daPaxina, matching: find.text(ultima.palabra.en)),
+          find.descendant(
+              of: daPaxina, matching: find.text(escollida.palabra.en)),
           findsOneWidget);
       expect(
           find.descendant(
               of: daPaxina,
-              matching: find.textContaining(ultima.palabra.significado(lang),
+              matching: find.textContaining(escollida.palabra.significado(lang),
                   findRichText: true)),
           findsWidgets);
       expect(

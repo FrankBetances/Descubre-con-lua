@@ -50,6 +50,10 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
   bool _mostrarPautas = false;
   double _fontSizeDelta = 0.0; // -2, 0, +3
 
+  /// La tarjeta de la página: tocar una palabra de la cabecera lleva hasta
+  /// ella, no solo cambia el número de abajo.
+  final GlobalKey _claveDaPaxina = GlobalKey();
+
   late final PalabrasNoConto _palabras = PalabrasNoConto(
     cuento: widget.cuento,
     semana: widget.semanaTpr,
@@ -246,13 +250,21 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                         palabras: _palabras,
                         language: lang,
                         onIrAPaxina: (i) {
-                          if (i >= 0 && i < paginas.length) {
-                            setState(() => _currentPageIndex = i);
-                          }
+                          if (i < 0 || i >= paginas.length) return;
+                          setState(() => _currentPageIndex = i);
+                          // Sin esto la página cambiaba debajo y la docente
+                          // seguía viendo la cabecera.
+                          WidgetsBinding.instance.addPostFrameCallback((_) {
+                            final ctx = _claveDaPaxina.currentContext;
+                            if (ctx != null && ctx.mounted) {
+                              Scrollable.ensureVisible(ctx);
+                            }
+                          });
                         },
                       ),
                     if (paginaActual != null) ...[
                       Card(
+                        key: _claveDaPaxina,
                         elevation: 1,
                         shape: RoundedRectangleBorder(
                           borderRadius:
