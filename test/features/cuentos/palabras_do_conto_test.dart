@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
@@ -94,6 +95,12 @@ void main() {
       }
     }
   });
+
+  // As pastillas da cabeceira, unha por palabra: levan a chave
+  // «ir_a_paxina_<palabra>».
+  final pastillas = find.byWidgetPredicate((w) =>
+      w.key is ValueKey<String> &&
+      (w.key as ValueKey<String>).value.startsWith('ir_a_paxina_'));
 
   Future<void> abrir(WidgetTester tester, Widget pantalla) async {
     tester.view.physicalSize = const Size(400, 900);
@@ -194,12 +201,58 @@ void main() {
               : 'LAS 20 PALABRAS DE LA SEMANA ESTÁN EN ESTE CUENTO'),
           findsOneWidget);
       // Vinte pastillas taparían o conto: empezan pechadas.
-      expect(find.byType(ActionChip), findsNothing);
+      expect(pastillas, findsNothing);
       await tester.tap(find.byKey(const Key('palabras_do_conto_abrir')));
       await tester.pumpAndSettle();
-      expect(find.byType(ActionChip), findsNWidgets(20));
+      expect(pastillas, findsNWidgets(20));
       // Sen día non hai «hoxe».
       expect(find.text(isGl ? 'Hoxe' : 'Hoy'), findsNothing);
+    });
+  }
+
+  for (final escala in [1.0, 1.8]) {
+    testWidgets(
+        'a cabeceira non corta unha frase longa (5-6, a escala $escala)',
+        (tester) async {
+      // «We smell with our nose and taste with our tongue»: nove palabras. Un
+      // ActionChip pintábaa nunha liña e cortábaa na app.
+      final c = semanais.firstWhere((c) =>
+          c.cursoId == 'curso_5_6' &&
+          c.mesNumero == 2 &&
+          c.semanaSugerida == 1);
+      final semana = semanaDe(c);
+      tester.view.physicalSize = const Size(360, 780);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.lightTheme,
+        builder: (context, child) => MediaQuery(
+          data: MediaQuery.of(context)
+              .copyWith(textScaler: TextScaler.linear(escala)),
+          child: child!,
+        ),
+        home: CuentoViewerScreen(
+          cuento: c,
+          language: AppLanguage.es,
+          audioService: MockOfflineAudioService(),
+          semanaTpr: semana,
+          dia: 4,
+        ),
+      ));
+      await tester.pumpAndSettle();
+
+      final longa = PalabrasNoConto(cuento: c, semana: semana, dia: 4)
+          .conPaxina()
+          .firstWhere((i) => i.palabra.en.startsWith('We smell'));
+      final etiqueta = find.text('${longa.palabra.en} · pág. ${longa.paxina}');
+      expect(etiqueta, findsOneWidget);
+      final paragrafo = tester.renderObject<RenderParagraph>(etiqueta);
+      // O chip difuminaba o final nunha soa liña: iso é o «overflow shader».
+      expect(paragrafo.debugHasOverflowShader, isFalse,
+          reason: 'a etiqueta vese enteira, sen cortar');
+      expect(paragrafo.didExceedMaxLines, isFalse,
+          reason: 'a etiqueta vese enteira, sen cortar');
+      expect(tester.takeException(), isNull);
     });
   }
 

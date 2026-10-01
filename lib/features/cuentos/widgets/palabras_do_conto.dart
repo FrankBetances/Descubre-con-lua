@@ -280,20 +280,11 @@ class _CabeceiraPalabrasDoContoState extends State<CabeceiraPalabrasDoConto> {
               runSpacing: 6,
               children: [
                 for (final item in lista)
-                  ActionChip(
+                  _PastillaDePaxina(
                     key: ValueKey('ir_a_paxina_${item.palabra.en}'),
-                    label: Text(
-                      '${item.palabra.en} · ${isGl ? 'páx.' : 'pág.'} ${item.paxina}',
-                    ),
-                    labelStyle: const TextStyle(
-                      fontWeight: FontWeight.w700,
-                      color: AppTheme.primaryInk,
-                    ),
-                    backgroundColor: Colors.white,
-                    side:
-                        BorderSide(color: BarraInglesFase.acento.withAlpha(90)),
-                    materialTapTargetSize: MaterialTapTargetSize.padded,
-                    onPressed: () => widget.onIrAPaxina(item.paxina - 1),
+                    texto:
+                        '${item.palabra.en} · ${isGl ? 'páx.' : 'pág.'} ${item.paxina}',
+                    onTap: () => widget.onIrAPaxina(item.paxina - 1),
                   ),
               ],
             ),
@@ -348,6 +339,50 @@ class PalabrasDaPaxina extends StatelessWidget {
             marca: palabras.eDeHoxe(en) ? (isGl ? 'Hoxe' : 'Hoy') : null,
           ),
       ],
+    );
+  }
+}
+
+/// Una palabra de la cabecera con su página. No es un `ActionChip`: el chip
+/// pinta su texto en una sola línea y lo corta, y en 5-6 años hay frases de
+/// nueve palabras («We smell with our nose and taste with our tongue»). Aquí
+/// el texto baja de línea.
+class _PastillaDePaxina extends StatelessWidget {
+  final String texto;
+  final VoidCallback onTap;
+
+  const _PastillaDePaxina({
+    super.key,
+    required this.texto,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final forma = RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(8),
+      side: BorderSide(color: BarraInglesFase.acento.withAlpha(90)),
+    );
+    return Material(
+      color: Colors.white,
+      shape: forma,
+      child: InkWell(
+        customBorder: forma,
+        onTap: onTap,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+            child: Text(
+              texto,
+              style: const TextStyle(
+                fontWeight: FontWeight.w700,
+                color: AppTheme.primaryInk,
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
