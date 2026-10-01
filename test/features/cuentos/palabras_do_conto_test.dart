@@ -212,14 +212,27 @@ void main() {
 
   for (final escala in [1.0, 1.8]) {
     testWidgets(
-        'a cabeceira non corta unha frase longa (5-6, a escala $escala)',
+        'a cabeceira non corta a frase máis longa das 4.000 (a escala $escala)',
         (tester) async {
-      // «We smell with our nose and taste with our tongue»: nove palabras. Un
-      // ActionChip pintábaa nunha liña e cortábaa na app.
-      final c = semanais.firstWhere((c) =>
-          c.cursoId == 'curso_5_6' &&
-          c.mesNumero == 2 &&
-          c.semanaSugerida == 1);
+      // Un ActionChip pintaba nunha liña «We smell with our nose and taste
+      // with our tongue» e cortábaa na app. Aquí mídese a máis longa de
+      // todas, buscada no curso e non escrita a man: se mañá entra outra
+      // máis longa, o test mídea a ela.
+      Cuento? achado;
+      var dia = 0;
+      var longa = '';
+      for (final conto in semanais) {
+        for (var d = 1; d <= 4; d++) {
+          for (final w in semanaDe(conto).planDoDia(d).newWords) {
+            if (w.en.length > longa.length) {
+              achado = conto;
+              dia = d;
+              longa = w.en;
+            }
+          }
+        }
+      }
+      final c = achado!;
       final semana = semanaDe(c);
       tester.view.physicalSize = const Size(360, 780);
       tester.view.devicePixelRatio = 1.0;
@@ -236,15 +249,15 @@ void main() {
           language: AppLanguage.es,
           audioService: MockOfflineAudioService(),
           semanaTpr: semana,
-          dia: 4,
+          dia: dia,
         ),
       ));
       await tester.pumpAndSettle();
 
-      final longa = PalabrasNoConto(cuento: c, semana: semana, dia: 4)
+      final item = PalabrasNoConto(cuento: c, semana: semana, dia: dia)
           .conPaxina()
-          .firstWhere((i) => i.palabra.en.startsWith('We smell'));
-      final etiqueta = find.text('${longa.palabra.en} · pág. ${longa.paxina}');
+          .firstWhere((i) => i.palabra.en == longa);
+      final etiqueta = find.text('$longa · pág. ${item.paxina}');
       expect(etiqueta, findsOneWidget);
       final paragrafo = tester.renderObject<RenderParagraph>(etiqueta);
       // O chip difuminaba o final nunha soa liña: iso é o «overflow shader».
