@@ -125,10 +125,10 @@
         {
           "id": "0_2.xuno.s1.wriggle-toes",
           "en": "Wriggle toes",
-          "gl": "Menear os deditos",
+          "gl": "Menear os dedos dos pés",
           "es": "Mover los deditos",
           "tprAction": {
-            "gl": "Menear os deditos na area",
+            "gl": "Menear os dedos dos pés na area",
             "es": "Mover los deditos en la arena"
           },
           "category": "verb"

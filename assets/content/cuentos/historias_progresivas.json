@@ -1772,7 +1772,7 @@
         },
         "lamina": "conto_benvida_3",
         "texto": {
-          "gl": "A mestra colle a Uxía e arrólaa: “Cradle”. Uxía fai gorgoritos, “Coo”, e aconchégase —“Snuggle”— no seu peito. Ao lado, o berce, o “Cot”, agarda por ela.",
+          "gl": "A mestra colle a Uxía e arrólaa: “Cradle”. Uxía fai sons suaves, “Coo”, e aconchégase —“Snuggle”— no seu peito. Ao lado, o berce, o “Cot”, agarda por ela.",
           "es": "La maestra coge a Uxía y la acuna: “Cradle”. Uxía hace gorgoritos, “Coo”, y se acurruca —“Snuggle”— en su pecho. Al lado, la cuna, la “Cot”, la espera."
         },
         "preguntaImaxe": {
@@ -1785,7 +1785,7 @@
         },
         "vocabularioClave": [
           "Arrolar",
-          "Facer gorgoritos",
+          "Facer sons suaves",
           "Aconchegarse",
           "Berce"
         ],
@@ -2976,7 +2976,7 @@
         },
         "lamina": "conto_corpo_3",
         "texto": {
-          "gl": "A mamá toca lixeiro —“Tap lightly”— a boneca, a “Wrist”, e belisca amodo —“Pinch softly”— os deditos dos pés, os “Tiny toes”. Martiño ri detrás das mans.",
+          "gl": "A mamá toca lixeiro —“Tap lightly”— a boneca, a “Wrist”, e belisca amodo —“Pinch softly”— os dedos pequenos dos pés, os “Tiny toes”. Martiño ri detrás das mans.",
           "es": "Mamá toca suave —“Tap lightly”— la muñeca, la “Wrist”, y pellizca suave —“Pinch softly”— los deditos de los pies, los “Tiny toes”. Martiño se ríe detrás de las manos."
         },
         "preguntaImaxe": {
@@ -2991,7 +2991,7 @@
           "Tocar lixeiro",
           "Boneca",
           "Beliscar amodo",
-          "Deditos pequenos"
+          "Dedos pequenos dos pés"
         ],
         "vocabularioClaveEs": [
           "Tocar suave",
@@ -3027,7 +3027,7 @@
         },
         "vocabularioClave": [
           "Patexar",
-          "Un, dous, deditos",
+          "Un, dous, dedos dos pés",
           "Orellas e nariz",
           "Pi pi, nariz!"
         ],
@@ -11027,7 +11027,7 @@
         },
         "lamina": "conto_corpo_1",
         "texto": {
-          "gl": "Na asemblea, a mestra canta: “Open, shut them”. Todos abren e pechan as mans, “Open and shut”, e dez deditos, “Ten little fingers”, bailan no aire. Todos rematan batendo palmas: “Clapping”.",
+          "gl": "Na asemblea, a mestra canta: “Open, shut them”. Todos abren e pechan as mans, “Open and shut”, e dez dedos pequenos, “Ten little fingers”, bailan no aire. Todos rematan batendo palmas: “Clapping”.",
           "es": "En la asamblea, la maestra canta: “Open, shut them”. Todos abren y cierran las manos, “Open and shut”, y diez deditos, “Ten little fingers”, bailan en el aire. Todos terminan dando palmas: “Clapping”."
         },
         "preguntaImaxe": {
@@ -11041,7 +11041,7 @@
         "vocabularioClave": [
           "Ábreas, péchaas",
           "Abrir e pechar",
-          "Dez deditos",
+          "Dez dedos pequenos",
           "Batendo palmas"
         ],
         "vocabularioClaveEs": [
@@ -11480,7 +11480,7 @@
         },
         "lamina": "conto_auga_2",
         "texto": {
-          "gl": "Auga nos deditos: “Water on my toes”! Cibrán ri e entra na piscina co seu xoguete de baño, o “Bath toy”. Ao final está enchoupado, “Dripping wet”: “All wet!”.",
+          "gl": "Auga nos dedos dos pés: “Water on my toes”! Cibrán ri e entra na piscina co seu xoguete de baño, o “Bath toy”. Ao final está enchoupado, “Dripping wet”: “All wet!”.",
           "es": "Agua en los deditos: ¡“Water on my toes”! Cibrán ríe y entra en la piscina con su juguete de baño, el “Bath toy”. Al final está empapado, “Dripping wet”: “All wet!”."
         },
         "preguntaImaxe": {
@@ -11492,7 +11492,7 @@
           "es": "Cierra el cuento y espera 5 segundos: muchas veces la criatura habla ahora."
         },
         "vocabularioClave": [
-          "Auga nos meus deditos",
+          "Auga nos dedos dos meus pés",
           "Xoguete de baño",
           "Enchoupado",
           "Todo mollado!"
@@ -11717,7 +11717,7 @@
           "es": "Antes de pasar página, pregunta: ¿y ahora qué hará?"
         },
         "vocabularioClave": [
-          "Onde están os teus deditos?",
+          "Onde están os dedos dos teus pés?",
           "Algodón",
           "Limpísimo",
           "Fóra da auga"
@@ -11853,7 +11853,7 @@
           "es": "Explicar por qué pasó algo y cómo se sentía el personaje."
         },
         "respostaModelo": {
-          "gl": "Xogou a buscar os deditos e aclarou o pelo sen mollarlle a cara.",
+          "gl": "Xogou a buscar os dedos dos pés e aclarou o pelo sen mollarlle a cara.",
           "es": "Jugó a buscar los deditos y aclaró el pelo sin mojarle la cara."
         },
         "pistaEducadora": {
@@ -12623,7 +12623,7 @@
           "Area morna",
           "Coller area",
           "Deixar caer area",
-          "Menear os deditos"
+          "Menear os dedos dos pés"
         ],
         "vocabularioClaveEs": [
           "Arena templada",
@@ -47954,7 +47954,7 @@
         },
         "lamina": "conto_cores_1",
         "texto": {
-          "gl": "Martiño disfrázase de robot, o “Robot”, para que ninguén ría. Móvese coma un robot —“Move like a robot”— e fala robótico, “Robotic”… pero non está contento.",
+          "gl": "Martiño disfrázase de robot, o “Robot”, para que ninguén ría. Móvese coma un robot —“Move like a robot”— e fala con voz de robot, “Robotic”… pero non está contento.",
           "es": "Martiño se disfraza de robot, el “Robot”, para que nadie se ría. Se mueve como un robot —“Move like a robot”— y habla robótico, “Robotic”… pero no está contento."
         },
         "preguntaImaxe": {
@@ -47968,7 +47968,7 @@
         "vocabularioClave": [
           "Robot",
           "Moverse coma un robot",
-          "Robótico"
+          "Coma un robot"
         ],
         "vocabularioClaveEs": [
           "Robot",
