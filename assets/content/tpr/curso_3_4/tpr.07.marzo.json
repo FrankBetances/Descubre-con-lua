@@ -398,7 +398,7 @@
         {
           "id": "pointy",
           "en": "Pointy",
-          "gl": "Puntiagudo, puntiaguda",
+          "gl": "Aguzado, aguzada",
           "es": "Puntiagudo, puntiaguda",
           "category": "adjective",
           "tprAction": {
@@ -801,7 +801,7 @@
         {
           "id": "strum",
           "en": "Strum",
-          "gl": "Rasguear",
+          "gl": "Tocar as cordas",
           "es": "Rasguear",
           "category": "verb",
           "tprAction": {

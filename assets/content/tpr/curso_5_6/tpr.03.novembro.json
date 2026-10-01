@@ -663,7 +663,7 @@
           "gl": "Imos descubrilo!",
           "es": "¡Vamos a descubrirlo!",
           "tprAction": {
-            "gl": "Esfregar as mans",
+            "gl": "Refregar as mans",
             "es": "Frotarse las manos"
           },
           "category": "phrase"
@@ -779,7 +779,7 @@
         {
           "id": "5_6.novembro.s4.harvest-fruit",
           "en": "Harvest fruit",
-          "gl": "Colleitar froita",
+          "gl": "Apañar froita",
           "es": "Cosechar fruta",
           "tprAction": {
             "gl": "Coller froita imaxinaria",
@@ -856,7 +856,7 @@
         {
           "id": "5_6.novembro.s4.freshly-picked",
           "en": "Freshly picked",
-          "gl": "Recén collido",
+          "gl": "Acabado de coller",
           "es": "Recién cogido",
           "tprAction": {
             "gl": "Cheirar a froita",

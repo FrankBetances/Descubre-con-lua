@@ -136,11 +136,11 @@
         {
           "id": "scrub",
           "en": "Scrub",
-          "gl": "Esfregar",
+          "gl": "Refregar",
           "es": "Restregar",
           "category": "verb",
           "tprAction": {
-            "gl": "Esfregar o dorso das mans con forza",
+            "gl": "Refregar o dorso das mans con forza",
             "es": "Restregar el dorso de las manos con fuerza"
           }
         },
