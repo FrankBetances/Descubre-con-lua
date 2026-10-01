@@ -737,7 +737,11 @@ void main() {
       // En modo Fogar: vese a micro-rutina, o temporizador sutil de fogar e a ligazón á guía
       expect(find.textContaining('MICRO-RUTINA NO FOGAR'), findsOneWidget);
       expect(find.textContaining('ACTIVIDADE NA AULA'), findsNothing);
-      final mesDeHoxe = contenido.mesParaFecha(DateTime.now());
+      // O mes que abre a pantalla: o do trayecto de 0-2, o curso por defecto,
+      // e non o mes xenérico do calendario escolar. En setembro os dous
+      // coincidían e o test pasaba por casualidade; dende outubro, non.
+      final mesDeHoxe = contenido
+          .trayecto[contenido.indiceNoTrayecto('curso_0_2', DateTime.now())];
       final esperado = mesDeHoxe.minutosSugeridos == 3
           ? 'Temporizador sutil: 3 min'
           : 'Temporizador sutil: 3-${mesDeHoxe.minutosSugeridos} min';
