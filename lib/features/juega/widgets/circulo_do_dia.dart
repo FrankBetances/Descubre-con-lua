@@ -131,12 +131,20 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
   }
 
   void _abrirCuento(Cuento cuento) {
+    // El cuento de la semana lleva las veinte palabras de su semana; si es el
+    // de HOY, el visor marca además las cinco del día.
+    final eDeHoxe = cuento.mesNumero == widget.mes &&
+        cuento.semanaSugerida == widget.semana;
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => CuentoViewerScreen(
           cuento: cuento,
           language: widget.language,
           audioService: widget.audioService,
+          semanaTpr: widget.repository
+              .cursoTprSync(cuento.cursoId)
+              ?.semanaPorOrden(cuento.mesNumero, cuento.semanaSugerida),
+          dia: eDeHoxe ? widget.dia : null,
         ),
       ),
     );
