@@ -506,7 +506,7 @@
         {
           "id": "5_6.febreiro.s3.chorus",
           "en": "Chorus",
-          "gl": "Estribillo",
+          "gl": "Retrouso",
           "es": "Estribillo",
           "tprAction": {
             "gl": "Cantar todos á vez",
@@ -572,10 +572,10 @@
         {
           "id": "5_6.febreiro.s3.hum-along",
           "en": "Hum along",
-          "gl": "Tararear xuntos",
+          "gl": "Cantaruxar xuntos",
           "es": "Tararear juntos",
           "tprAction": {
-            "gl": "Tararear coa boca pechada",
+            "gl": "Cantaruxar coa boca pechada",
             "es": "Tararear con la boca cerrada"
           },
           "category": "verb"
@@ -649,7 +649,7 @@
         {
           "id": "5_6.febreiro.s3.everybody-sing-the-chorus",
           "en": "Everybody, sing the chorus!",
-          "gl": "Todos, cantade o estribillo!",
+          "gl": "Todos, cantade o retrouso!",
           "es": "¡Todos, cantad el estribillo!",
           "tprAction": {
             "gl": "Abrir os brazos",
@@ -723,7 +723,7 @@
         },
         {
           "id": "5_6.febreiro.s4.three-pigs",
-          "en": "Three pigs",
+          "en": "Three little pigs",
           "gl": "Tres porquiños",
           "es": "Tres cerditos",
           "tprAction": {

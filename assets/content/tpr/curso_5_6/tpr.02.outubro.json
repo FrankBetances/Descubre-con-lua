@@ -47,7 +47,7 @@
         },
         {
           "id": "5_6.outubro.s1.smell-sense",
-          "en": "Smell sense",
+          "en": "Sense of smell",
           "gl": "Olfacto",
           "es": "Olfato",
           "tprAction": {
@@ -58,7 +58,7 @@
         },
         {
           "id": "5_6.outubro.s1.taste-sense",
-          "en": "Taste sense",
+          "en": "Sense of taste",
           "gl": "Gusto",
           "es": "Gusto",
           "tprAction": {
@@ -69,7 +69,7 @@
         },
         {
           "id": "5_6.outubro.s1.touch-sense",
-          "en": "Touch sense",
+          "en": "Sense of touch",
           "gl": "Tacto",
           "es": "Tacto",
           "tprAction": {
@@ -342,9 +342,9 @@
         },
         {
           "id": "5_6.outubro.s2.breathe-slow",
-          "en": "Breathe slow",
-          "gl": "Respirar lento",
-          "es": "Respirar lento",
+          "en": "Slow down your breathing",
+          "gl": "Respirar máis amodo",
+          "es": "Respirar más despacio",
           "tprAction": {
             "gl": "Inspirar e expirar moi amodo",
             "es": "Inspirar y espirar muy despacio"
@@ -397,7 +397,7 @@
         },
         {
           "id": "5_6.outubro.s2.strong-muscled",
-          "en": "Strong-muscled",
+          "en": "Muscular",
           "gl": "Musculado",
           "es": "Musculoso",
           "tprAction": {
@@ -409,7 +409,7 @@
         {
           "id": "5_6.outubro.s2.bony",
           "en": "Bony",
-          "gl": "Ósea",
+          "gl": "Osudo",
           "es": "Huesudo",
           "tprAction": {
             "gl": "Tocar o nocello",
@@ -560,7 +560,7 @@
         },
         {
           "id": "5_6.outubro.s3.touch-toes",
-          "en": "Touch toes",
+          "en": "Touch your toes",
           "gl": "Tocar os pés",
           "es": "Tocar los pies",
           "tprAction": {
@@ -571,7 +571,7 @@
         },
         {
           "id": "5_6.outubro.s3.arch-back",
-          "en": "Arch back",
+          "en": "Arch your back",
           "gl": "Arquear as costas",
           "es": "Arquear la espalda",
           "tprAction": {
@@ -866,9 +866,9 @@
         },
         {
           "id": "5_6.outubro.s4.well-slept",
-          "en": "Well-slept",
-          "gl": "Ben durmido",
-          "es": "Bien dormido",
+          "en": "Rested and happy",
+          "gl": "Descansado e contento",
+          "es": "Descansado y contento",
           "tprAction": {
             "gl": "Estirar os brazos contentos",
             "es": "Estirar los brazos contentos"

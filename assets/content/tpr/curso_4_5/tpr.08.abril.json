@@ -135,7 +135,7 @@
         },
         {
           "id": "4_5.abril.s1.keep-the-path",
-          "en": "Keep the path",
+          "en": "Keep to the path",
           "gl": "Seguir o camiño",
           "es": "Seguir el camino",
           "tprAction": {
@@ -247,7 +247,7 @@
           "gl": "Pito de gaivota",
           "es": "Pollo de gaviota",
           "tprAction": {
-            "gl": "Acurrucarse pequeno",
+            "gl": "Encollerse pequeno",
             "es": "Acurrucarse pequeño"
           },
           "category": "noun"
@@ -833,7 +833,7 @@
         },
         {
           "id": "4_5.abril.s4.tidy-beach",
-          "en": "Tidy beach",
+          "en": "Clean beach",
           "gl": "Praia limpa",
           "es": "Playa limpia",
           "tprAction": {

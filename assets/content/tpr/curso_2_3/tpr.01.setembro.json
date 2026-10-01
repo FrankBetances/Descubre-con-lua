@@ -277,10 +277,10 @@
         {
           "id": "2_3.setembro.s2.toy-car",
           "en": "Toy car",
-          "gl": "Cochiño",
+          "gl": "Coche de xoguete",
           "es": "Cochecito",
           "tprAction": {
-            "gl": "Rodar o cochiño pola mesa",
+            "gl": "Rodar o coche pola mesa",
             "es": "Rodar el cochecito por la mesa"
           },
           "category": "noun"
@@ -627,7 +627,7 @@
         {
           "id": "2_3.setembro.s3.helpful",
           "en": "Helpful",
-          "gl": "Axudante",
+          "gl": "Servizal",
           "es": "Servicial",
           "tprAction": {
             "gl": "Axudar a un amigo a recoller",
@@ -649,7 +649,7 @@
         {
           "id": "2_3.setembro.s3.clean-up-clean-up",
           "en": "Clean up, clean up",
-          "gl": "Recoller, recoller",
+          "gl": "A recoller, a recoller",
           "es": "A recoger, a recoger",
           "tprAction": {
             "gl": "Cantar e recoller",

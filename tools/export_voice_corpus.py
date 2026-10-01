@@ -101,7 +101,13 @@ def main() -> int:
         "entries": len(locutions),
         "byStyle": by_style,
         "byLang": by_lang,
-        "corpus": [entry._asdict() for entry in locutions],
+        # `segments` solo aparece en las frases gl/es que llevan inglés entre
+        # “…”; en las demás no se escribe, para no llenar el fichero de nulls.
+        "corpus": [
+            {k: v for k, v in entry._asdict().items()
+             if not (k == "segments" and v is None)}
+            for entry in locutions
+        ],
     }
 
     if args.check:

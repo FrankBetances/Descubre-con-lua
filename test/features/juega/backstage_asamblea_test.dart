@@ -656,6 +656,15 @@ void main() {
       await tester.tap(find.byKey(const ValueKey('tab_segundo_ciclo')));
       await tester.pumpAndSettle();
 
+      // O panel abre polo mes de hoxe, e a asemblea de proba é de setembro:
+      // escóllese setembro para que o test non dependa do día en que corre.
+      // Antes pasaba só en setembro.
+      final setembro = find.byKey(const ValueKey('mes_2c_9'));
+      await tester.ensureVisible(setembro);
+      await tester.pumpAndSettle();
+      await tester.tap(setembro);
+      await tester.pumpAndSettle();
+
       // 2.º ciclo: o selector é por CLASE, e tamén hai unha soa tarxeta.
       expect(find.text('A MIÑA CLASE'), findsOneWidget);
       expect(

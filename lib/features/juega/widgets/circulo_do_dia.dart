@@ -60,6 +60,28 @@ class CirculoDoDia extends StatefulWidget {
 
   @override
   State<CirculoDoDia> createState() => _CirculoDoDiaState();
+
+  /// El cuento de la [semana] entre los cuentos de un curso y un mes.
+  ///
+  /// Primero, el cuento DE LA SEMANA: el que lleva sus palabras inglesas, que
+  /// son las del día. Los del banco no son de ninguna semana —el modelo les
+  /// pone la 1 por defecto— y, ordenados por id, iban delante: la primera
+  /// semana de cada mes «O conto de hoxe» abría un cuento del banco sin
+  /// ninguna de las palabras del día.
+  ///
+  /// Si esa semana no tiene cuento propio, el del mes sirve: es el mismo
+  /// centro de interés. Lo que no vale es dejar la fila vacía teniendo
+  /// material del mes a mano.
+  static Cuento? contoDaSemana(List<Cuento> cuentos, int semana) {
+    bool levaPalabras(Cuento c) => c.paginas.any((p) => p.palabras.isNotEmpty);
+    for (final c in cuentos) {
+      if (c.semanaSugerida == semana && levaPalabras(c)) return c;
+    }
+    for (final c in cuentos) {
+      if (c.semanaSugerida == semana) return c;
+    }
+    return cuentos.isNotEmpty ? cuentos.first : null;
+  }
 }
 
 class _CirculoDoDiaState extends State<CirculoDoDia> {
@@ -100,17 +122,7 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
     final dinamicas = await widget.repository.loadDinamicas();
     if (!mounted) return;
 
-    Cuento? cuento;
-    for (final c in cuentos) {
-      if (c.semanaSugerida == widget.semana) {
-        cuento = c;
-        break;
-      }
-    }
-    // Si esa semana no tiene cuento propio, el del mes sirve: es el mismo
-    // centro de interés. Lo que no vale es dejar la fila vacía teniendo
-    // material del mes a mano.
-    cuento ??= cuentos.isNotEmpty ? cuentos.first : null;
+    final cuento = CirculoDoDia.contoDaSemana(cuentos, widget.semana);
 
     final claveDia = widget.dia >= 1 && widget.dia <= _diasDaSemana.length
         ? _diasDaSemana[widget.dia - 1]
@@ -131,12 +143,20 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
   }
 
   void _abrirCuento(Cuento cuento) {
+    // El cuento de la semana lleva las veinte palabras de su semana; si es el
+    // de HOY, el visor marca además las cinco del día.
+    final eDeHoxe = cuento.mesNumero == widget.mes &&
+        cuento.semanaSugerida == widget.semana;
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => CuentoViewerScreen(
           cuento: cuento,
           language: widget.language,
           audioService: widget.audioService,
+          semanaTpr: widget.repository
+              .cursoTprSync(cuento.cursoId)
+              ?.semanaPorOrden(cuento.mesNumero, cuento.semanaSugerida),
+          dia: eDeHoxe ? widget.dia : null,
         ),
       ),
     );

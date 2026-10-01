@@ -332,7 +332,7 @@
         {
           "id": "4_5.xuno.s2.browse",
           "en": "Browse",
-          "gl": "Ollar",
+          "gl": "Follear",
           "es": "Hojear",
           "tprAction": {
             "gl": "Pasar follas amodo",
@@ -364,9 +364,9 @@
         },
         {
           "id": "4_5.xuno.s2.celebrate-high",
-          "en": "Celebrate high",
-          "gl": "Celebrar alto",
-          "es": "Celebrar en alto",
+          "en": "Jump for joy",
+          "gl": "Saltar de ledicia",
+          "es": "Saltar de alegría",
           "tprAction": {
             "gl": "Saltar cos brazos arriba",
             "es": "Saltar con los brazos arriba"
@@ -560,7 +560,7 @@
         },
         {
           "id": "4_5.xuno.s3.cheer-hooray",
-          "en": "Cheer hooray",
+          "en": "Shout hooray",
           "gl": "Berrar hurra",
           "es": "Gritar hurra",
           "tprAction": {
@@ -727,7 +727,7 @@
           "gl": "Mariola",
           "es": "Rayuela",
           "tprAction": {
-            "gl": "Saltar a pata coxa nos cadros",
+            "gl": "Saltar a pé coxo nos cadros",
             "es": "Saltar a la pata coja en los cuadros"
           },
           "category": "noun"
@@ -779,7 +779,7 @@
         {
           "id": "4_5.xuno.s4.hop-on-one-foot",
           "en": "Hop on one foot",
-          "gl": "Saltar a pata coxa",
+          "gl": "Saltar a pé coxo",
           "es": "Saltar a la pata coja",
           "tprAction": {
             "gl": "Saltar nun pé",

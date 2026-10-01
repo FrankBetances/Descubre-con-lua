@@ -14,7 +14,7 @@
       "palabras": [
         {
           "id": "0_2.novembro.s1.chestnut-shell",
-          "en": "Chestnut shell",
+          "en": "Chestnut husk",
           "gl": "Ourizo",
           "es": "Erizo de castaña",
           "tprAction": {
@@ -139,7 +139,7 @@
           "gl": "Amosar",
           "es": "Mostrar",
           "tprAction": {
-            "gl": "Levantar a castaña para velo",
+            "gl": "Levantar a castaña para vela",
             "es": "Levantar la castaña para verla"
           },
           "category": "verb"
@@ -161,15 +161,15 @@
           "gl": "Peludiño",
           "es": "Peludito",
           "tprAction": {
-            "gl": "Acariñar un pompón peludo",
-            "es": "Acariciar un pompón peludo"
+            "gl": "Acariñar unha manta peluda",
+            "es": "Acariciar una manta peluda"
           },
           "category": "adjective"
         },
         {
           "id": "0_2.novembro.s1.prickly",
           "en": "Prickly",
-          "gl": "Picante ao tacto",
+          "gl": "Espiñento",
           "es": "Pinchudo",
           "tprAction": {
             "gl": "Achegar e afastar a man do ourizo",
@@ -343,7 +343,7 @@
         {
           "id": "0_2.novembro.s2.rustle",
           "en": "Rustle",
-          "gl": "Facer ruxido",
+          "gl": "Renxer",
           "es": "Crujir",
           "tprAction": {
             "gl": "Mover as follas para que soen",
@@ -528,7 +528,7 @@
         {
           "id": "0_2.novembro.s3.crumbs",
           "en": "Crumbs",
-          "gl": "Miolos",
+          "gl": "Migallas",
           "es": "Migas",
           "tprAction": {
             "gl": "Recoller as migas cos dedos",
@@ -837,7 +837,7 @@
           "gl": "Blandiño",
           "es": "Blandito",
           "tprAction": {
-            "gl": "Apertar algo branco e soltalo",
+            "gl": "Apertar algo brando e soltalo",
             "es": "Apretar algo blando y soltarlo"
           },
           "category": "adjective"
@@ -845,8 +845,8 @@
         {
           "id": "0_2.novembro.s4.wobbly-jelly",
           "en": "Wobbly jelly",
-          "gl": "Tremelicante",
-          "es": "Temblorosa",
+          "gl": "Xelatina que treme",
+          "es": "Gelatina temblorosa",
           "tprAction": {
             "gl": "Mover o prato para que trema",
             "es": "Mover el plato para que tiemble"

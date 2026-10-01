@@ -484,10 +484,10 @@
         {
           "id": "4_5.setembro.s3.nail-brush",
           "en": "Nail brush",
-          "gl": "Cepillo de uñas",
+          "gl": "Cepillo de unllas",
           "es": "Cepillo de uñas",
           "tprAction": {
-            "gl": "Fregar as uñas co cepillo",
+            "gl": "Fregar as unllas co cepillo",
             "es": "Frotar las uñas con el cepillo"
           },
           "category": "noun"
@@ -670,9 +670,9 @@
         },
         {
           "id": "4_5.setembro.s3.soap-first-then-water",
-          "en": "Soap first, then water",
-          "gl": "Primeiro xabón, despois auga",
-          "es": "Primero jabón, luego agua",
+          "en": "Water first, then soap",
+          "gl": "Primeiro auga, despois xabón",
+          "es": "Primero agua, luego jabón",
           "tprAction": {
             "gl": "Facer os dous xestos en orde",
             "es": "Hacer los dos gestos en orden"

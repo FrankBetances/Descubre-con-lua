@@ -81,11 +81,11 @@
         {
           "id": "sticker",
           "en": "Sticker",
-          "gl": "Pegatina",
+          "gl": "Adhesivo",
           "es": "Pegatina",
           "category": "noun",
           "tprAction": {
-            "gl": "Pegar unha pegatina imaxinaria no dorso da man",
+            "gl": "Pegar un adhesivo imaxinario no dorso da man",
             "es": "Pegar una pegatina imaginaria en el dorso de la mano"
           }
         },
@@ -398,7 +398,7 @@
         {
           "id": "pointy",
           "en": "Pointy",
-          "gl": "Puntiagudo, puntiaguda",
+          "gl": "Aguzado, aguzada",
           "es": "Puntiagudo, puntiaguda",
           "category": "adjective",
           "tprAction": {
@@ -419,9 +419,9 @@
         },
         {
           "id": "roll-the-circle",
-          "en": "Roll the circle",
-          "gl": "Fai rodar o círculo",
-          "es": "Haz rodar el círculo",
+          "en": "Roll the hoop",
+          "gl": "Fai rodar o aro",
+          "es": "Haz rodar el aro",
           "category": "phrase",
           "tprAction": {
             "gl": "Facer rodar un aro imaxinario polo chan",
@@ -801,7 +801,7 @@
         {
           "id": "strum",
           "en": "Strum",
-          "gl": "Rasguear",
+          "gl": "Tocar as cordas",
           "es": "Rasguear",
           "category": "verb",
           "tprAction": {

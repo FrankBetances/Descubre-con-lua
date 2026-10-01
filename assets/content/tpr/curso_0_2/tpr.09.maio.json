@@ -25,7 +25,7 @@
         },
         {
           "id": "0_2.maio.s1.watering-pot",
-          "en": "Watering pot",
+          "en": "Toy watering can",
           "gl": "Regadeira de xoguete",
           "es": "Regadera de juguete",
           "tprAction": {
@@ -147,8 +147,8 @@
         {
           "id": "0_2.maio.s1.splashy",
           "en": "Splashy",
-          "gl": "Salpicón",
-          "es": "Salpicón",
+          "gl": "Que salpica",
+          "es": "Que salpica",
           "tprAction": {
             "gl": "Salpicar un pouco de auga",
             "es": "Salpicar un poco de agua"
@@ -224,7 +224,7 @@
         {
           "id": "0_2.maio.s1.water-on-my-toes",
           "en": "Water on my toes",
-          "gl": "Auga nos meus deditos",
+          "gl": "Auga nos dedos dos meus pés",
           "es": "Agua en mis deditos",
           "tprAction": {
             "gl": "Botar auga nos pés",
@@ -379,7 +379,7 @@
           "gl": "Limpísimo",
           "es": "Limpísimo",
           "tprAction": {
-            "gl": "Frotar a man ata que «chía»",
+            "gl": "Fregar a man ata que «chía»",
             "es": "Frotar la mano hasta que «chirría»"
           },
           "category": "adjective"
@@ -431,7 +431,7 @@
         {
           "id": "0_2.maio.s2.where-are-your-toes",
           "en": "Where are your toes?",
-          "gl": "Onde están os teus deditos?",
+          "gl": "Onde están os dedos dos teus pés?",
           "es": "¿Dónde están tus deditos?",
           "tprAction": {
             "gl": "Buscar os pés na auga",
@@ -549,12 +549,12 @@
         },
         {
           "id": "0_2.maio.s3.wash-up",
-          "en": "Wash up",
-          "gl": "Lavarse",
-          "es": "Lavarse",
+          "en": "Rinse your hands",
+          "gl": "Enxaugar as mans",
+          "es": "Enjuagarse las manos",
           "tprAction": {
-            "gl": "Lavar as mans xuntos",
-            "es": "Lavarse las manos juntos"
+            "gl": "Enxaugar as mans baixo a billa",
+            "es": "Enjuagarse las manos bajo el grifo"
           },
           "category": "verb"
         },
@@ -582,7 +582,7 @@
         },
         {
           "id": "0_2.maio.s3.blow-nose",
-          "en": "Blow nose",
+          "en": "Blow your nose",
           "gl": "Soarse",
           "es": "Sonarse",
           "tprAction": {
@@ -615,7 +615,7 @@
         },
         {
           "id": "0_2.maio.s3.tidy-face",
-          "en": "Tidy face",
+          "en": "Clean face",
           "gl": "Cara limpa",
           "es": "Cara limpia",
           "tprAction": {
@@ -627,7 +627,7 @@
         {
           "id": "0_2.maio.s3.fresh-smelling",
           "en": "Fresh-smelling",
-          "gl": "Recendo a limpo",
+          "gl": "Que cheira a limpo",
           "es": "Con olor a limpio",
           "tprAction": {
             "gl": "Cheirar as mans limpas",
@@ -637,9 +637,9 @@
         },
         {
           "id": "0_2.maio.s3.drip-dry",
-          "en": "Drip-dry",
-          "gl": "Escorrido",
-          "es": "Escurrido",
+          "en": "Nearly dry",
+          "gl": "Case seco",
+          "es": "Casi seco",
           "tprAction": {
             "gl": "Sacudir as mans sobre o lavabo",
             "es": "Sacudir las manos sobre el lavabo"

@@ -62,7 +62,7 @@
           "gl": "Especia",
           "es": "Especia",
           "tprAction": {
-            "gl": "Espolvorear algo cos dedos",
+            "gl": "Botar un pouco de especia cos dedos",
             "es": "Espolvorear algo con los dedos"
           },
           "category": "noun"
@@ -125,7 +125,7 @@
         {
           "id": "4_5.marzo.s1.sprinkle-spice",
           "en": "Sprinkle spice",
-          "gl": "Espolvorear",
+          "gl": "Botar especias por riba",
           "es": "Espolvorear",
           "tprAction": {
             "gl": "Mover os dedos por riba do prato",

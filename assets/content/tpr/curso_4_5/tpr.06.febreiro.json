@@ -398,7 +398,7 @@
         {
           "id": "4_5.febreiro.s2.robotic",
           "en": "Robotic",
-          "gl": "Robótico",
+          "gl": "Coma un robot",
           "es": "Robótico",
           "tprAction": {
             "gl": "Falar coma un robot",
@@ -494,12 +494,12 @@
         },
         {
           "id": "4_5.febreiro.s3.score-point",
-          "en": "Score point",
-          "gl": "Punto",
-          "es": "Punto",
+          "en": "Scoreboard",
+          "gl": "Marcador",
+          "es": "Marcador",
           "tprAction": {
-            "gl": "Levantar un dedo por cada punto",
-            "es": "Levantar un dedo por cada punto"
+            "gl": "Levantar un dedo por cada punto do marcador",
+            "es": "Levantar un dedo por cada punto del marcador"
           },
           "category": "noun"
         },
@@ -735,7 +735,7 @@
         {
           "id": "4_5.febreiro.s4.puppeteer",
           "en": "Puppeteer",
-          "gl": "Titiriteiro",
+          "gl": "Monicrequeiro",
           "es": "Titiritero",
           "tprAction": {
             "gl": "Mover un monicreque dende arriba",
@@ -789,11 +789,11 @@
         },
         {
           "id": "4_5.febreiro.s4.talk-back",
-          "en": "Talk back",
+          "en": "Reply",
           "gl": "Responder",
           "es": "Responder",
           "tprAction": {
-            "gl": "Facer que o monicreque responde",
+            "gl": "Facer que o monicreque responda",
             "es": "Hacer que el títere responde"
           },
           "category": "verb"

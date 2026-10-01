@@ -47,12 +47,50 @@ _WHITESPACE = re.compile(r"\s+")
 _PULSE_MARKER = re.compile(r"[*]")
 _SYLLABLE_SPLIT = re.compile(r"(?<=[^\W\d_])-(?=[^\W\d_])")
 
+# El inglés que vive DENTRO de una frase gallega o castellana va entre comillas
+# inglesas: «Di “roll” e solta o tubo». Es la única marca que dice qué trozo
+# se lee con la voz inglesa. Sin ella, Celtia o Sharvard leían «roll» con
+# fonética gallega o castellana, que es enseñar mal la palabra que la persona
+# adulta tiene que repetir.
+_ENGLISH_SPAN = re.compile(r"“([^”]*)”")
 
-def speech_text(text: str) -> str:
-    """The text as the voice should say it, without the teacher's notation."""
+
+def speech_text(text: str, lang: str = "gl") -> str:
+    """The text as the voice should say it, without the teacher's notation.
+
+    In gl and es a hyphen between letters is a syllable split («On-das») and
+    the voice says the word whole. In English it separates words
+    («Tail-wagging», «Peek-a-boo»): joining them made the voice say
+    «Tailwagging», so there it becomes a space.
+    """
     without_markers = _PULSE_MARKER.sub(" ", text)
-    joined = _SYLLABLE_SPLIT.sub("", without_markers)
+    joined = _SYLLABLE_SPLIT.sub(" " if lang == "en" else "", without_markers)
     return normalize(joined)
+
+
+def speech_segments(text: str, lang: str) -> list[list[str]] | None:
+    """The pieces of a gl/es locution and the voice that reads each one.
+
+    `None` when the whole text is read by the voice of `lang`, which is almost
+    always. Otherwise a list of `[lang, speech]`, in order: the English between
+    “…” goes to the English voice and the rest stays with gl or es. A piece
+    without a single letter («. », «: ») is dropped: there is nothing to say.
+    """
+    if lang == "en" or "“" not in text:
+        return None
+    pieces: list[list[str]] = []
+    cursor = 0
+    for match in _ENGLISH_SPAN.finditer(text):
+        before, english = text[cursor:match.start()], match.group(1)
+        if re.search(r"[^\W\d_]", before):
+            pieces.append([lang, speech_text(before, lang)])
+        if re.search(r"[^\W\d_]", english):
+            pieces.append(["en", speech_text(english, "en")])
+        cursor = match.end()
+    rest = text[cursor:]
+    if re.search(r"[^\W\d_]", rest):
+        pieces.append([lang, speech_text(rest, lang)])
+    return pieces if any(p[0] == "en" for p in pieces) else None
 
 
 class Locution(NamedTuple):
@@ -62,6 +100,9 @@ class Locution(NamedTuple):
     text: str
     speech: str
     source: str
+    # Solo cuando una frase gl/es lleva inglés entre “…”: los trozos y la voz
+    # de cada uno. `None` en todas las demás.
+    segments: list[list[str]] | None = None
 
     @property
     def filename(self) -> str:
@@ -115,8 +156,9 @@ def _one(text: str, lang: str, style: str, source: str,
         lang=lang,
         style=style,
         text=value,
-        speech=speech_text(value),
+        speech=speech_text(value.replace("“", "").replace("”", ""), lang),
         source=source,
+        segments=speech_segments(value, lang),
     )
     seen.setdefault(entry.id, entry)
 
@@ -495,8 +537,13 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                     continue
                 wid = palabra.get("id", "?")
                 for campo in ("word", "naturalPhrase"):
-                    if palabra.get(campo):
-                        texto = str(palabra[campo])
+                    valor = palabra.get(campo)
+                    # Diez frases llegan como {en, translation}: con str()
+                    # se grababa el diccionario entero, llaves incluidas.
+                    if isinstance(valor, dict):
+                        valor = valor.get("en")
+                    if valor:
+                        texto = str(valor)
                         _one(texto, "en", estilo_ingles(texto),
                              f"english/word/{wid}/{campo}", seen)
                 tpr = palabra.get("tprAction")

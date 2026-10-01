@@ -60,8 +60,8 @@
         "es": "Sigue con la mirada el objeto cuando cae en la cesta."
       },
       {
-        "gl": "Solta o obxecto cando escoita «drop» ou cando ve o teu xesto.",
-        "es": "Suelta el objeto cuando oye «drop» o cuando ve tu gesto."
+        "gl": "Solta o obxecto cando escoita “drop” ou cando ve o teu xesto.",
+        "es": "Suelta el objeto cuando oye “drop” o cuando ve tu gesto."
       }
     ],
     "aula": {
@@ -121,8 +121,8 @@
         },
         "construye": {
           "retoTangible": {
-            "gl": "Cando digas «drop», cada criatura solta os seus obxectos na cesta. Escoitade o son: o bloque fai «toc» e a pelota case non soa.",
-            "es": "Cuando digas «drop», cada criatura suelta sus objetos en la cesta. Escuchad el sonido: el bloque hace «toc» y la pelota casi no suena."
+            "gl": "Cando digas “drop”, cada criatura solta os seus obxectos na cesta. Escoitade o son: o bloque fai «toc» e a pelota case non soa.",
+            "es": "Cuando digas “drop”, cada criatura suelta sus objetos en la cesta. Escuchad el sonido: el bloque hace «toc» y la pelota casi no suena."
           },
           "sintesisCierre": {
             "gl": "Cal fixo ruído ao caer: o brando ou o duro?",
@@ -188,8 +188,8 @@
         },
         "construye": {
           "retoTangible": {
-            "gl": "Di «drop» e soltade os obxectos na cesta por quendas: primeiro ti, despois a criatura. Escoitade o que fai cada un ao caer.",
-            "es": "Di «drop» y soltad los objetos en la cesta por turnos: primero tú, después la criatura. Escuchad lo que hace cada uno al caer."
+            "gl": "Di “drop” e soltade os obxectos na cesta por quendas: primeiro ti, despois a criatura. Escoitade o que fai cada un ao caer.",
+            "es": "Di “drop” y soltad los objetos en la cesta por turnos: primero tú, después la criatura. Escuchad lo que hace cada uno al caer."
           },
           "sintesisCierre": {
             "gl": "Cal fixo «toc» ao caer?",
@@ -260,8 +260,8 @@
         "es": "Se adelanta: va al final de la rampa antes de que llegue lo que rueda."
       },
       {
-        "gl": "Fai xirar os brazos cando escoita «roll».",
-        "es": "Hace girar los brazos cuando oye «roll»."
+        "gl": "Fai xirar os brazos cando escoita “roll”.",
+        "es": "Hace girar los brazos cuando oye “roll”."
       }
     ],
     "aula": {
@@ -314,8 +314,8 @@
         },
         "experimenta": {
           "consignaAdulto": {
-            "gl": "Di «roll» e solta o tubo sen empuxalo: baixa rodando. Despois solta o bloque: queda quieto. Que cada criatura o probe na súa quenda.",
-            "es": "Di «roll» y suelta el tubo sin empujarlo: baja rodando. Después suelta el bloque: se queda quieto. Que cada criatura lo pruebe en su turno."
+            "gl": "Di “roll” e solta o tubo sen empuxalo: baixa rodando. Despois solta o bloque: queda quieto. Que cada criatura o probe na súa quenda.",
+            "es": "Di “roll” y suelta el tubo sin empujarlo: baja rodando. Después suelta el bloque: se queda quieto. Que cada criatura lo pruebe en su turno."
           },
           "pistaN1": {
             "gl": "Toca o tubo: é redondo. E o bloque, ten esquinas? Cal pode rodar?",
@@ -388,8 +388,8 @@
         },
         "experimenta": {
           "consignaAdulto": {
-            "gl": "Di «roll» e solta a pelota sen empuxala. Despois solta o bloque. Deixa que a criatura faga o mesmo e espera cinco segundos antes de axudar.",
-            "es": "Di «roll» y suelta la pelota sin empujarla. Después suelta el bloque. Deja que la criatura haga lo mismo y espera cinco segundos antes de ayudar."
+            "gl": "Di “roll” e solta a pelota sen empuxala. Despois solta o bloque. Deixa que a criatura faga o mesmo e espera cinco segundos antes de axudar.",
+            "es": "Di “roll” y suelta la pelota sin empujarla. Después suelta el bloque. Deja que la criatura haga lo mismo y espera cinco segundos antes de ayudar."
           },
           "pistaN1": {
             "gl": "Toca a pelota: é redonda. E o bloque? Cal pode rodar?",
@@ -489,8 +489,8 @@
         "es": "Nota la vibración con la mano en el tambor o en su propia garganta al cantar «mmm»."
       },
       {
-        "gl": "Pon a man na orella cando escoita «listen» e agarda en silencio.",
-        "es": "Pone la mano en la oreja cuando oye «listen» y espera en silencio."
+        "gl": "Pon a man na orella cando escoita “listen” e agarda en silencio.",
+        "es": "Pone la mano en la oreja cuando oye “listen” y espera en silencio."
       }
     ],
     "aula": {
@@ -566,8 +566,8 @@
         },
         "experimenta": {
           "consignaAdulto": {
-            "gl": "Di «listen» e dá tres golpes suaves na caixa coa culler. Pídelle á observadora que mire a auga. Despois, a tamborileira proba a tocar forte e suave.",
-            "es": "Di «listen» y da tres golpes suaves en la caja con la cuchara. Pide a la observadora que mire el agua. Después, la tamborilera prueba a tocar fuerte y suave."
+            "gl": "Di “listen” e dá tres golpes suaves na caixa coa culler. Pídelle á observadora que mire a auga. Despois, a tamborileira proba a tocar forte e suave.",
+            "es": "Di “listen” y da tres golpes suaves en la caja con la cuchara. Pide a la observadora que mire el agua. Después, la tamborilera prueba a tocar fuerte y suave."
           },
           "pistaN1": {
             "gl": "Pon a man na caixa mentres tocamos. Que notas? E se cantamos «mmm», cada unha coa man na súa gorxa?",
@@ -580,8 +580,8 @@
         },
         "construye": {
           "retoTangible": {
-            "gl": "Cambiade os papeis. Cando digas «stop», a tamborileira pousa a man aberta na caixa. Que lle pasa á auga?",
-            "es": "Cambiad los papeles. Cuando digas «stop», la tamborilera posa la mano abierta en la caja. ¿Qué le pasa al agua?"
+            "gl": "Cambiade os papeis. Cando digas “stop”, a tamborileira pousa a man aberta na caixa. Que lle pasa á auga?",
+            "es": "Cambiad los papeles. Cuando digas “stop”, la tamborilera posa la mano abierta en la caja. ¿Qué le pasa al agua?"
           },
           "sintesisCierre": {
             "gl": "Cando deixamos de tocar, por que a auga se queda quieta?",
@@ -640,8 +640,8 @@
         },
         "experimenta": {
           "consignaAdulto": {
-            "gl": "Di «listen» e dá golpes suaves na pota coa culler. Mirade xuntos a auga. Despois tócalle a ela, e espera cinco segundos antes de axudar.",
-            "es": "Di «listen» y da golpes suaves en la olla con la cuchara. Mirad juntos el agua. Después le toca a ella, y espera cinco segundos antes de ayudar."
+            "gl": "Di “listen” e dá golpes suaves na pota coa culler. Mirade xuntos a auga. Despois tócalle a ela, e espera cinco segundos antes de axudar.",
+            "es": "Di “listen” y da golpes suaves en la olla con la cuchara. Mirad juntos el agua. Después le toca a ella, y espera cinco segundos antes de ayudar."
           },
           "pistaN1": {
             "gl": "Pon a man na pota mentres toco. Que notas? Agora cantamos «mmm», cada un coa man na súa gorxa.",
@@ -654,8 +654,8 @@
         },
         "construye": {
           "retoTangible": {
-            "gl": "Cando digas «stop», a criatura pousa a man aberta na pota. Que lle pasa á auga?",
-            "es": "Cuando digas «stop», la criatura posa la mano abierta en la olla. ¿Qué le pasa al agua?"
+            "gl": "Cando digas “stop”, a criatura pousa a man aberta na pota. Que lle pasa á auga?",
+            "es": "Cuando digas “stop”, la criatura posa la mano abierta en la olla. ¿Qué le pasa al agua?"
           },
           "sintesisCierre": {
             "gl": "Por que se queda quieta a auga cando deixamos de tocar?",
@@ -826,8 +826,8 @@
         },
         "experimenta": {
           "consignaAdulto": {
-            "gl": "Di «look» e que todas miren a parede. Coa orde «step forward», a titiriteira achégase á parede e a sombra encolle; con «step back» volve cara á lanterna e a sombra medra. A rastrexadora marca cada sitio con cinta.",
-            "es": "Di «look» y que todas miren la pared. Con la orden «step forward», la titiritera se acerca a la pared y la sombra encoge; con «step back» vuelve hacia la linterna y la sombra crece. La rastreadora marca cada sitio con cinta."
+            "gl": "Di “look” e que todas miren a parede. Coa orde “step forward”, a titiriteira achégase á parede e a sombra encolle; con “step back” volve cara á lanterna e a sombra medra. A rastrexadora marca cada sitio con cinta.",
+            "es": "Di “look” y que todas miren la pared. Con la orden “step forward”, la titiritera se acerca a la pared y la sombra encoge; con “step back” vuelve hacia la linterna y la sombra crece. La rastreadora marca cada sitio con cinta."
           },
           "pistaN1": {
             "gl": "Mira onde está a lanterna, sen mirar a luz. Cando a figura está preto dela, a sombra faise máis grande ou máis pequena?",
@@ -893,8 +893,8 @@
         },
         "experimenta": {
           "consignaAdulto": {
-            "gl": "Di «look» e mirade a sombra. Con «step forward», leva o xoguete cara á parede: a sombra encolle. Con «step back», vólveo cara á lanterna. Deixa que a criatura o probe e espera cinco segundos antes de axudar.",
-            "es": "Di «look» y mirad la sombra. Con «step forward», lleva el juguete hacia la pared: la sombra encoge. Con «step back», vuélvelo hacia la linterna. Deja que la criatura lo pruebe y espera cinco segundos antes de ayudar."
+            "gl": "Di “look” e mirade a sombra. Con “step forward”, leva o xoguete cara á parede: a sombra encolle. Con “step back”, vólveo cara á lanterna. Deixa que a criatura o probe e espera cinco segundos antes de axudar.",
+            "es": "Di “look” y mirad la sombra. Con “step forward”, lleva el juguete hacia la pared: la sombra encoge. Con “step back”, vuélvelo hacia la linterna. Deja que la criatura lo pruebe y espera cinco segundos antes de ayudar."
           },
           "pistaN1": {
             "gl": "Mira onde está a lanterna, sen mirar a luz. Se o xoguete vai cara a ela, a sombra medra ou encolle?",
@@ -1079,8 +1079,8 @@
         },
         "experimenta": {
           "consignaAdulto": {
-            "gl": "A programadora pon as tarxetas en fila. Despois le cada tarxeta en voz alta e di a orde en inglés: «step», «turn right» ou «turn left». O robot fai só esa orde.",
-            "es": "La programadora pone las tarjetas en fila. Después lee cada tarjeta en voz alta y dice la orden en inglés: «step», «turn right» o «turn left». El robot hace solo esa orden."
+            "gl": "A programadora pon as tarxetas en fila. Despois le cada tarxeta en voz alta e di a orde en inglés: “step”, “turn right” ou “turn left”. O robot fai só esa orde.",
+            "es": "La programadora pone las tarjetas en fila. Después lee cada tarjeta en voz alta y dice la orden en inglés: “step”, “turn right” o “turn left”. El robot hace solo esa orden."
           },
           "pistaN1": {
             "gl": "O robot chegou a unha casa onde non pode seguir. Que tarxeta temos que cambiar?",
@@ -1146,8 +1146,8 @@
         },
         "experimenta": {
           "consignaAdulto": {
-            "gl": "A criatura pon as frechas en fila. Ti les cada frecha e fas só esa orde: «step», «turn right» ou «turn left». Se te equivocas a propósito, deixa que ela atope o erro.",
-            "es": "La criatura pone las flechas en fila. Tú lees cada flecha y haces solo esa orden: «step», «turn right» o «turn left». Si te equivocas a propósito, deja que ella encuentre el error."
+            "gl": "A criatura pon as frechas en fila. Ti les cada frecha e fas só esa orde: “step”, “turn right” ou “turn left”. Se te equivocas a propósito, deixa que ela atope o erro.",
+            "es": "La criatura pone las flechas en fila. Tú lees cada flecha y haces solo esa orden: “step”, “turn right” o “turn left”. Si te equivocas a propósito, deja que ella encuentre el error."
           },
           "pistaN1": {
             "gl": "Paro aquí e non chego. Que frecha cambiamos?",

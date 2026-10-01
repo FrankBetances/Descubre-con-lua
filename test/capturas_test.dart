@@ -16,7 +16,7 @@ import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
-import 'package:descubre_con_lua/data/models/unidad_model.dart';
+import 'package:descubre_con_lua/data/models/unidad_model.dart' hide Cuento;
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/data/repositories/ritual_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
@@ -39,6 +39,9 @@ import 'package:descubre_con_lua/features/docentes/widgets/hoxe_na_aula.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_hub_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
 import 'package:descubre_con_lua/features/steam/widgets/steam_no_calendario.dart';
+import 'package:descubre_con_lua/data/models/cuento_model.dart';
+import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dart';
+import 'package:descubre_con_lua/features/juega/widgets/circulo_do_dia.dart';
 
 /// Genera las imágenes de pantalla del manual.
 ///
@@ -730,6 +733,31 @@ void main() {
           ),
         ),
         tamano: const Size(412, 780),
+      );
+    });
+
+    // El cuento de la semana abierto desde «O día de hoxe»: octubre, semana
+    // 1, jueves, 0-2 años. Arriba, las cinco palabras de hoy y su página;
+    // en el texto, el inglés resaltado; debajo, las palabras de la página.
+    testWidgets('conto da semana · palabras de hoxe · $l', (tester) async {
+      await cursoTprLeido(tester);
+      late Cuento conto;
+      await tester.runAsync(() async {
+        final contos =
+            await contenido.loadCuentos(cursoId: 'curso_0_2', mesNumero: 2);
+        conto = CirculoDoDia.contoDaSemana(contos, 1)!;
+      });
+      await capturar(
+        tester,
+        'conto-palabras-$l',
+        CuentoViewerScreen(
+          cuento: conto,
+          language: lang,
+          audioService: MockOfflineAudioService(),
+          semanaTpr: contenido.cursoTprSync('curso_0_2')!.semanaPorOrden(2, 1),
+          dia: 4,
+        ),
+        tamano: const Size(412, 1500),
       );
     });
 

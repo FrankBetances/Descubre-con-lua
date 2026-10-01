@@ -123,9 +123,10 @@ comprobado y nombra el comando que lo comprobó.
 | Contenido · primer ciclo | 10 unidades de aula, una por mes del curso · 6 fases de asamblea |
 | Calendario e inglés | 50 meses de calendario (5 cursos × 10, de 0-2 a 5-6 años) · 4.000 palabras inglesas, 800 por curso, cinco nuevas al día · 63 colocaciones · 44 fonemas |
 | Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
+| Cuentos | 303: 200 de la semana —uno por semana de cada curso, de septiembre a junio—, cada uno con las 20 palabras inglesas de su semana dentro del texto, y 103 más que no son de ninguna semana |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
 | STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, cada una en versión de aula y de casa |
-| Voz | 1135 locuciones (494 gl + 494 es + 147 en) grabadas dentro del paquete |
+| Voz | 15.149 locuciones (1.175 gl + 1.174 es + 12.800 en) grabadas dentro del paquete |
 | Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 | Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |
 | Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |
@@ -162,6 +163,7 @@ manda el script:
 | `build_corpus_ingles.py --check` | Que cada palabra del vocabulario inglés traiga categoría gramatical y una frase entera, y que no entre ninguna de las excluidas |
 | `humaniza_rutinas_fogar.py --check` | Que las rutinas de casa no vuelvan a ser un mismo texto repetido |
 | `planificador_5_palabras.py --check` | Que el inglés sea el del modelo en cada uno de los cinco cursos: 20 palabras por semana, 800 por curso, 4.000 sin que ninguna se repita entre cursos, con significado y gesto en gl y es, y con el reparto 280/200/160/96/64 **contado** en el contenido |
+| `check_contos_palabras.py` | Que el cuento de cada semana lleve las 20 palabras inglesas de su semana: entre “…” en gallego y en castellano, de 1 a 4 por página y con su significado |
 | `export_voice_corpus.py --check` | Que el corpus de voz siga sincronizado con los textos |
 | `check_pulse_bpm.py` | Que el tempo mostrado sea el que suena, **medido del audio** |
 | `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |

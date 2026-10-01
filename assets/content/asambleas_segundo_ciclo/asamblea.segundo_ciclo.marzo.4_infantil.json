@@ -30,7 +30,7 @@
         "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
         "en": "Circle up, cross your arms and turn gently to greet Lúa."
       },
-      "cueAcustica": "Good morning sun! Grow up tall!",
+      "cueAcustica": "Good morning, sun! Grow tall!",
       "comandosL3": [],
       "repertorioMateriales": []
     },
@@ -65,14 +65,14 @@
       "duracionSegundos": 270,
       "lamina": "semente",
       "consignaDocente": {
-        "gl": "Partindo de flexión completa no chan («tiny seed»), os nenos incorpóranse milimetricamente conforme a docente eleva as mans, culminando en extensión axial total («Grow!»).",
-        "es": "Partiendo de flexión completa en el suelo («tiny seed»), los niños se incorporan milimétricamente conforme la docente eleva las manos, culminando en extensión axial total («Grow!»).",
-        "en": "Starting from a full crouch on the floor («tiny seed»), children rise millimetre by millimetre as the teacher raises her hands, ending in full axial extension («Grow!»)."
+        "gl": "Partindo de flexión completa no chan (“tiny seed”), os nenos incorpóranse milimetricamente conforme a docente eleva as mans, culminando en extensión axial total (“Grow!”).",
+        "es": "Partiendo de flexión completa en el suelo (“tiny seed”), los niños se incorporan milimétricamente conforme la docente eleva las manos, culminando en extensión axial total (“Grow!”).",
+        "en": "Starting from a full crouch on the floor (“tiny seed”), children rise millimetre by millimetre as the teacher raises her hands, ending in full axial extension (“Grow!”)."
       },
       "comandosL3": [
         {
           "id": "cmd.marzo.4i.01",
-          "textoIngles": "Curl small like a tiny seed",
+          "textoIngles": "Curl up small like a tiny seed",
           "accionFisica": {
             "gl": "Flexión completa no chan, cabeza recollida entre os xeonllos.",
             "es": "Flexión completa en el suelo, cabeza recogida entre las rodillas.",
@@ -130,7 +130,7 @@
         "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
         "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
       },
-      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "cueAcustica": "English time is over. The circle is quiet. Let's open our hands.",
       "comandosL3": [],
       "repertorioMateriales": []
     }

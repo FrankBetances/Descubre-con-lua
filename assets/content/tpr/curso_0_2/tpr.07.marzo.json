@@ -81,10 +81,10 @@
         {
           "id": "0_2.marzo.s1.stacking-cups",
           "en": "Stacking cups",
-          "gl": "Vasos apilables",
+          "gl": "Vasos para empillar",
           "es": "Vasos apilables",
           "tprAction": {
-            "gl": "Apilar os vasos de cores",
+            "gl": "Empillar os vasos de cores",
             "es": "Apilar los vasos de colores"
           },
           "category": "noun"
@@ -92,7 +92,7 @@
         {
           "id": "0_2.marzo.s1.stack",
           "en": "Stack",
-          "gl": "Apilar",
+          "gl": "Empillar",
           "es": "Apilar",
           "tprAction": {
             "gl": "Poñer un vaso enriba doutro",
@@ -191,8 +191,8 @@
         {
           "id": "0_2.marzo.s1.red-red-red",
           "en": "Red, red, red!",
-          "gl": "Vermello, vermello!",
-          "es": "¡Rojo, rojo!",
+          "gl": "Vermello, vermello, vermello!",
+          "es": "¡Rojo, rojo, rojo!",
           "tprAction": {
             "gl": "Tocar tres cousas vermellas",
             "es": "Tocar tres cosas rojas"
@@ -247,8 +247,8 @@
           "gl": "Mel",
           "es": "Miel",
           "tprAction": {
-            "gl": "Mollar o dedo en mel e probar",
-            "es": "Mojar el dedo en miel y probar"
+            "gl": "Amosar o bote de mel e cheiralo",
+            "es": "Mostrar el bote de miel y olerlo"
           },
           "category": "noun"
         },
@@ -302,8 +302,8 @@
           "gl": "Pasa",
           "es": "Pasa",
           "tprAction": {
-            "gl": "Coller unha pasa coa pinza dos dedos",
-            "es": "Coger una pasa con la pinza de los dedos"
+            "gl": "Amosar unha pasa na palma da man",
+            "es": "Mostrar una pasa en la palma de la mano"
           },
           "category": "noun"
         },
@@ -538,9 +538,9 @@
         },
         {
           "id": "0_2.marzo.s3.marble-run",
-          "en": "Marble run",
+          "en": "Ball run",
           "gl": "Circuíto de bólas",
-          "es": "Circuito de canicas",
+          "es": "Circuito de bolas",
           "tprAction": {
             "gl": "Seguir a bóla co dedo",
             "es": "Seguir la bola con el dedo"
@@ -626,7 +626,7 @@
         },
         {
           "id": "0_2.marzo.s3.spinny",
-          "en": "Spinny",
+          "en": "Spinning",
           "gl": "Xiratorio",
           "es": "Giratorio",
           "tprAction": {
@@ -649,7 +649,7 @@
         {
           "id": "0_2.marzo.s3.roll-it-to-me",
           "en": "Roll it to me",
-          "gl": "Rodaa cara a min",
+          "gl": "Ródaa cara a min",
           "es": "Ruédala hacia mí",
           "tprAction": {
             "gl": "Abrir as mans para recibila",
@@ -716,8 +716,8 @@
           "gl": "Arando",
           "es": "Arándano",
           "tprAction": {
-            "gl": "Coller un arando cos dedos",
-            "es": "Coger un arándano con los dedos"
+            "gl": "Esmagar un arando e amosalo",
+            "es": "Aplastar un arándano y mostrarlo"
           },
           "category": "noun"
         },
@@ -855,7 +855,7 @@
         },
         {
           "id": "0_2.marzo.s4.pippy",
-          "en": "Pippy",
+          "en": "Full of pips",
           "gl": "Con pebidas",
           "es": "Con pepitas",
           "tprAction": {

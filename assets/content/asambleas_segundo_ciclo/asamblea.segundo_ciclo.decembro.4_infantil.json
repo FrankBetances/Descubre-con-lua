@@ -30,7 +30,7 @@
         "es": "Círculo, brazos cruzados sobre el pecho y un giro suave para saludar a Lúa.",
         "en": "Circle up, cross your arms and turn gently to greet Lúa."
       },
-      "cueAcustica": "Good morning winter! Warm your hands!",
+      "cueAcustica": "Good morning, winter! Warm your hands!",
       "comandosL3": [],
       "repertorioMateriales": []
     },
@@ -65,9 +65,9 @@
       "duracionSegundos": 270,
       "lamina": "botas",
       "consignaDocente": {
-        "gl": "Flexión de pernas para calzar botas pesadas imaxinarias e camiñada con pasos lentos e firmes sobre a alfombra («Stomp, stomp»).",
-        "es": "Flexión de piernas para calzar botas pesadas imaginarias y caminata con pasos lentos y firmes sobre la alfombra («Stomp, stomp»).",
-        "en": "Bend the legs to pull on imaginary heavy boots and walk with slow firm steps on the rug («Stomp, stomp»)."
+        "gl": "Flexión de pernas para calzar botas pesadas imaxinarias e camiñada con pasos lentos e firmes sobre a alfombra (“Stomp, stomp”).",
+        "es": "Flexión de piernas para calzar botas pesadas imaginarias y caminata con pasos lentos y firmes sobre la alfombra (“Stomp, stomp”).",
+        "en": "Bend the legs to pull on imaginary heavy boots and walk with slow firm steps on the rug (“Stomp, stomp”)."
       },
       "comandosL3": [
         {
@@ -130,7 +130,7 @@
         "es": "Sentados, brazos arriba al inspirar y abajo con un «sss» largo. Cierra y calla.",
         "en": "Sit, arms up on the in-breath and down with a long «sss». Close and stay quiet."
       },
-      "cueAcustica": "English rests, morning circle is quiet, we open our hands",
+      "cueAcustica": "English time is over. The circle is quiet. Let's open our hands.",
       "comandosL3": [],
       "repertorioMateriales": []
     }

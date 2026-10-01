@@ -128,7 +128,7 @@ class PalabrasDoDia extends StatelessWidget {
           const SizedBox(height: AppTheme.spaceSm),
           if (detalle)
             for (final p in plan.newWords)
-              _PalabraConXesto(
+              PalabraConXesto(
                   palabra: p, language: language, audioService: audioService)
           else
             Wrap(
@@ -280,25 +280,62 @@ class _Pastilla extends StatelessWidget {
 }
 
 /// La palabra, lo que significa y lo que se hace con el cuerpo.
-class _PalabraConXesto extends StatelessWidget {
+///
+/// Pública porque el cuento de la semana pinta sus palabras con esta MISMA
+/// pieza: la docente ve igual la palabra en el día y dentro del cuento.
+class PalabraConXesto extends StatelessWidget {
   final TprWord palabra;
   final AppLanguage language;
   final OfflineAudioService? audioService;
 
-  const _PalabraConXesto({
+  /// Una marca corta junto a la palabra («Hoxe»). Sin ella no se pinta nada.
+  final String? marca;
+
+  const PalabraConXesto({
+    super.key,
     required this.palabra,
     required this.language,
     required this.audioService,
+    this.marca,
   });
 
   @override
   Widget build(BuildContext context) {
+    final xesto = palabra.tprAction.resolve(language).trim();
     return Padding(
       padding: const EdgeInsets.only(bottom: AppTheme.spaceSm),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          _Pastilla(palabra: palabra, audioService: audioService),
+          if (marca == null)
+            _Pastilla(palabra: palabra, audioService: audioService)
+          else
+            // Wrap y no fila: con letra grande la marca baja de línea en vez
+            // de empujar la pastilla fuera de la pantalla.
+            Wrap(
+              spacing: 6,
+              runSpacing: 4,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                _Pastilla(palabra: palabra, audioService: audioService),
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                  decoration: BoxDecoration(
+                    color: BarraInglesFase.acento,
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  child: Text(
+                    marca!,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 11,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           const SizedBox(height: 3),
           Text.rich(
             TextSpan(
@@ -307,7 +344,7 @@ class _PalabraConXesto extends StatelessWidget {
                   text: palabra.significado(language),
                   style: const TextStyle(fontWeight: FontWeight.w700),
                 ),
-                TextSpan(text: ' · ${palabra.tprAction.resolve(language)}'),
+                if (xesto.isNotEmpty) TextSpan(text: ' · $xesto'),
               ],
             ),
             style: const TextStyle(

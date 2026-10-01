@@ -59,10 +59,10 @@
         {
           "id": "0_2.outubro.s1.toenails",
           "en": "Toenails",
-          "gl": "Uñas dos pés",
+          "gl": "Unllas dos pés",
           "es": "Uñas de los pies",
           "tprAction": {
-            "gl": "Contar as uñas dos pés",
+            "gl": "Contar as unllas dos pés",
             "es": "Contar las uñas de los pies"
           },
           "category": "noun"
@@ -158,10 +158,10 @@
         {
           "id": "0_2.outubro.s1.tiny-toes",
           "en": "Tiny toes",
-          "gl": "Deditos pequenos",
+          "gl": "Dedos pequenos dos pés",
           "es": "Deditos pequeños",
           "tprAction": {
-            "gl": "Contar os deditos dos pés",
+            "gl": "Contar os dedos dos pés",
             "es": "Contar los deditos de los pies"
           },
           "category": "adjective"
@@ -213,10 +213,10 @@
         {
           "id": "0_2.outubro.s1.one-two-toes",
           "en": "One, two, toes",
-          "gl": "Un, dous, deditos",
+          "gl": "Un, dous, dedos dos pés",
           "es": "Uno, dos, deditos",
           "tprAction": {
-            "gl": "Contar dous deditos dos pés",
+            "gl": "Contar dous dedos dos pés",
             "es": "Contar dos deditos de los pies"
           },
           "category": "complex"
@@ -539,7 +539,7 @@
         {
           "id": "0_2.outubro.s3.tummy-time",
           "en": "Tummy time",
-          "gl": "Tempo de barriga",
+          "gl": "Tempo boca abaixo",
           "es": "Tiempo boca abajo",
           "tprAction": {
             "gl": "Poñer o bebé boca abaixo na alfombra",
@@ -571,7 +571,7 @@
         },
         {
           "id": "0_2.outubro.s3.stick-out",
-          "en": "Stick out",
+          "en": "Stick out your tongue",
           "gl": "Sacar a lingua",
           "es": "Sacar la lengua",
           "tprAction": {
@@ -605,7 +605,7 @@
         {
           "id": "0_2.outubro.s3.silly-face",
           "en": "Silly face",
-          "gl": "Cara parva",
+          "gl": "Cara divertida",
           "es": "Cara graciosa",
           "tprAction": {
             "gl": "Poñer unha cara graciosa",
@@ -626,9 +626,9 @@
         },
         {
           "id": "0_2.outubro.s3.mirror-bright",
-          "en": "Mirror-bright",
-          "gl": "Brillante coma un espello",
-          "es": "Brillante como un espejo",
+          "en": "Clean and shiny",
+          "gl": "Limpo e brillante",
+          "es": "Limpio y brillante",
           "tprAction": {
             "gl": "Facer brillar o espello co pano",
             "es": "Hacer brillar el espejo con el paño"
@@ -746,10 +746,10 @@
         {
           "id": "0_2.outubro.s4.little-finger",
           "en": "Little finger",
-          "gl": "Dedo miñeiro",
+          "gl": "Dedo meniñeiro",
           "es": "Meñique",
           "tprAction": {
-            "gl": "Enganchar o dedo miñeiro",
+            "gl": "Enganchar o dedo meniñeiro",
             "es": "Enganchar el meñique"
           },
           "category": "noun"
@@ -802,7 +802,7 @@
           "id": "0_2.outubro.s4.bounce-on-knee",
           "en": "Bounce on knee",
           "gl": "Brincar no xeonllo",
-          "es": "Botar en la rodilla",
+          "es": "Saltar en la rodilla",
           "tprAction": {
             "gl": "Brincar o bebé no xeonllo",
             "es": "Hacer botar al bebé en la rodilla"

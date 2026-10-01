@@ -12,6 +12,7 @@ import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
 import 'package:descubre_con_lua/data/models/dia_calendario_dual_model.dart';
 import 'package:descubre_con_lua/data/models/lectura_model.dart';
+import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_fogar_screen.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dart';
@@ -46,8 +47,22 @@ void main() {
   late Directory dir;
 
   late ContidoLectura contidoLectura;
+  late ProgramaTpr programaTpr;
+  late List<Cuento> contosDaSemana;
 
   setUpAll(() async {
+    // O inglés do traxecto e os contos da semana, do disco e AQUÍ, polo mesmo
+    // motivo ca «Aprender a Ler».
+    programaTpr = await ProgramaTpr.cargar(
+      stringLoader: (path) => File(path).readAsString(),
+    );
+    contosDaSemana = (jsonDecode(
+            File('assets/content/cuentos/historias_progresivas.json')
+                .readAsStringSync()) as List)
+        .map((e) => Cuento.fromJson(Map<String, dynamic>.from(e as Map)))
+        .where((c) => c.paginas.any((p) => p.palabras.isNotEmpty))
+        .toList();
+
     // O contido de «Aprender a Ler» lese do disco AQUÍ e non dentro de
     // `testWidgets`: alí o reloxo é falso e unha lectura de disco de verdade
     // non remata nunca. Pásaselle feito á pantalla, igual que fai
@@ -313,6 +328,52 @@ void main() {
           await recorrer(tester);
           expect(erroresDe(tester), isEmpty,
               reason: 'O visor desborda con ${conto.id}, $etiqueta.');
+        }
+      });
+
+      testWidgets('un conto da semana aberto dende o día cabe en $etiqueta',
+          (tester) async {
+        // Coas palabras do día dentro: a cabeceira coas cinco de hoxe e, en
+        // cada páxina, as súas palabras co significado, o xesto e a voz. O
+        // conto de cada curso coa páxina máis longa, que é o peor caso, e
+        // TODAS as súas páxinas, porque cada unha trae palabras distintas.
+        int longo(Cuento c) => c.paginas
+            .map((p) => p.texto.resolve(lang).length)
+            .reduce((a, b) => a > b ? a : b);
+        for (final curso in [
+          'curso_0_2',
+          'curso_2_3',
+          'curso_3_4',
+          'curso_4_5',
+          'curso_5_6',
+        ]) {
+          final conto = contosDaSemana
+              .where((c) => c.cursoId == curso)
+              .reduce((a, b) => longo(a) >= longo(b) ? a : b);
+          await pintar(
+            tester,
+            CuentoViewerScreen(
+              cuento: conto,
+              language: lang,
+              audioService: audioService,
+              semanaTpr: programaTpr
+                  .curso(curso)!
+                  .semanaPorOrden(conto.mesNumero, conto.semanaSugerida),
+              dia: 1,
+            ),
+            escala,
+          );
+          for (var i = 0; i < conto.paginas.length; i++) {
+            await recorrer(tester);
+            expect(erroresDe(tester), isEmpty,
+                reason: 'O visor desborda con ${conto.id}, páxina ${i + 1}, '
+                    '$etiqueta.');
+            if (i < conto.paginas.length - 1) {
+              await tester.tap(
+                  find.text(lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente'));
+              await tester.pumpAndSettle();
+            }
+          }
         }
       });
     }

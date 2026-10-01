@@ -228,6 +228,12 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                       cuento: cuento,
                                       language: _language,
                                       audioService: widget.audioService,
+                                      // Desde la biblioteca no hay «hoy»:
+                                      // van las veinte de la semana.
+                                      semanaTpr: widget.repository
+                                          .cursoTprSync(cuento.cursoId)
+                                          ?.semanaPorOrden(cuento.mesNumero,
+                                              cuento.semanaSugerida),
                                     ),
                                   ),
                                 );

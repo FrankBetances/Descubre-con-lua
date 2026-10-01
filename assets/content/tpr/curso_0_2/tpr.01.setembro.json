@@ -136,7 +136,7 @@
         {
           "id": "0_2.setembro.s1.coo",
           "en": "Coo",
-          "gl": "Facer gorgoritos",
+          "gl": "Facer sons suaves",
           "es": "Hacer gorgoritos",
           "tprAction": {
             "gl": "Responder aos sons do bebé con sons suaves",
@@ -409,7 +409,7 @@
         {
           "id": "0_2.setembro.s2.safe-and-sound",
           "en": "Safe and sound",
-          "gl": "Sán e salvo",
+          "gl": "San e salvo",
           "es": "Sano y salvo",
           "tprAction": {
             "gl": "Abrazar o bebé ao volver",
@@ -472,7 +472,7 @@
       "palabras": [
         {
           "id": "0_2.setembro.s3.smile-face",
-          "en": "Smile face",
+          "en": "Smiley face",
           "gl": "Cara sorrinte",
           "es": "Cara sonriente",
           "tprAction": {
@@ -539,7 +539,7 @@
         {
           "id": "0_2.setembro.s3.rocking-chair",
           "en": "Rocking chair",
-          "gl": "Randeeira",
+          "gl": "Cadeira de balance",
           "es": "Mecedora",
           "tprAction": {
             "gl": "Randear na cadeira co bebé",
@@ -583,8 +583,8 @@
         {
           "id": "0_2.setembro.s3.nuzzle",
           "en": "Nuzzle",
-          "gl": "Fociñar",
-          "es": "Hocicar",
+          "gl": "Aloumiñar co nariz",
+          "es": "Acariciar con la nariz",
           "tprAction": {
             "gl": "Tocar o nariz do bebé co nariz",
             "es": "Tocar la nariz del bebé con la nariz"
@@ -616,8 +616,8 @@
         {
           "id": "0_2.setembro.s3.bubbly-baby",
           "en": "Bubbly baby",
-          "gl": "Risoño",
-          "es": "Risueño",
+          "gl": "Bebé risoño",
+          "es": "Bebé risueño",
           "tprAction": {
             "gl": "Facer cóxegas e sorrir",
             "es": "Hacer cosquillas y sonreír"

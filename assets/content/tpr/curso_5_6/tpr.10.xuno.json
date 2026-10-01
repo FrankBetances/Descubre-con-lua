@@ -124,7 +124,7 @@
         },
         {
           "id": "5_6.xuno.s1.hug-goodbye-to-l-a",
-          "en": "Hug goodbye to Lúa",
+          "en": "Hug Lúa goodbye",
           "gl": "Despedirse de Lúa cunha aperta",
           "es": "Despedirse de Lúa con un abrazo",
           "tprAction": {
@@ -483,7 +483,7 @@
         },
         {
           "id": "5_6.xuno.s3.graduate-cap",
-          "en": "Graduate cap",
+          "en": "Graduation cap",
           "gl": "Birrete",
           "es": "Birrete",
           "tprAction": {
@@ -549,7 +549,7 @@
         },
         {
           "id": "5_6.xuno.s3.wave-a-graduate-cap",
-          "en": "Wave a graduate cap",
+          "en": "Wave your graduation cap",
           "gl": "Axitar o birrete",
           "es": "Agitar el birrete",
           "tprAction": {
@@ -560,9 +560,9 @@
         },
         {
           "id": "5_6.xuno.s3.cheer-hurray",
-          "en": "Cheer hurray",
-          "gl": "Berrar hurra",
-          "es": "Gritar hurra",
+          "en": "Shout for joy",
+          "gl": "Berrar de ledicia",
+          "es": "Gritar de alegría",
           "tprAction": {
             "gl": "Levantar os brazos e berrar",
             "es": "Levantar los brazos y gritar"

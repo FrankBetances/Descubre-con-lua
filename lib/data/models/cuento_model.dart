@@ -69,6 +69,15 @@ class CuentoPagina {
   /// lista en los cien cuentos.
   final List<String> vocabularioClaveEs;
 
+  /// Las palabras inglesas de la semana que salen en ESTA página, tal y como
+  /// están en el curso TPR (`assets/content/tpr/`). En el texto van entre
+  /// “…”, que es la marca con la que la voz las lee en inglés.
+  ///
+  /// Es lo que ata el cuento a las palabras del día: la semana trae veinte
+  /// palabras y su cuento las lleva todas, repartidas por las páginas. Vacía
+  /// en los cuentos del banco, que no son de ninguna semana.
+  final List<String> palabras;
+
   const CuentoPagina({
     required this.numero,
     this.tituloPagina,
@@ -78,6 +87,7 @@ class CuentoPagina {
     this.guiaAtencion,
     required this.vocabularioClave,
     this.vocabularioClaveEs = const [],
+    this.palabras = const [],
   });
 
   /// El vocabulario en la lengua activa. Si el castellano no viniera en el
@@ -132,6 +142,7 @@ class CuentoPagina {
       vocabularioClave: List.unmodifiable(vocabList),
       vocabularioClaveEs: List.unmodifiable(_listaDeTexto(
           json['vocabularioClaveEs'] ?? json['vocabulario_clave_es'])),
+      palabras: List.unmodifiable(_listaDeTexto(json['palabras'])),
     );
   }
 
@@ -144,6 +155,7 @@ class CuentoPagina {
         if (guiaAtencion != null) 'guiaAtencion': guiaAtencion!.toJson(),
         'vocabularioClave': vocabularioClave,
         'vocabularioClaveEs': vocabularioClaveEs,
+        if (palabras.isNotEmpty) 'palabras': palabras,
       };
 
   @override
@@ -157,7 +169,8 @@ class CuentoPagina {
           texto == other.texto &&
           preguntaImaxe == other.preguntaImaxe &&
           guiaAtencion == other.guiaAtencion &&
-          listEquals(vocabularioClave, other.vocabularioClave);
+          listEquals(vocabularioClave, other.vocabularioClave) &&
+          listEquals(palabras, other.palabras);
 
   @override
   int get hashCode => Object.hash(
@@ -168,6 +181,7 @@ class CuentoPagina {
         preguntaImaxe,
         guiaAtencion,
         Object.hashAll(vocabularioClave),
+        Object.hashAll(palabras),
       );
 
   @override

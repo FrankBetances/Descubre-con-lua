@@ -81,7 +81,7 @@
         {
           "id": "2_3.novembro.s1.gate",
           "en": "Gate",
-          "gl": "Portal",
+          "gl": "Cancela",
           "es": "Verja",
           "tprAction": {
             "gl": "Abrir o portal do parque",
@@ -106,8 +106,8 @@
           "gl": "Dar de comer aos patos",
           "es": "Dar de comer a los patos",
           "tprAction": {
-            "gl": "Estender a man con miolos",
-            "es": "Extender la mano con migas"
+            "gl": "Estender a man con comida para patos",
+            "es": "Extender la mano con comida para patos"
           },
           "category": "verb"
         },
@@ -506,7 +506,7 @@
         {
           "id": "2_3.novembro.s3.crunchy-path",
           "en": "Crunchy path",
-          "gl": "Carreiro que cruxe",
+          "gl": "Carreiro que renxe",
           "es": "Camino que cruje",
           "tprAction": {
             "gl": "Pisar sobre follas secas",
@@ -582,9 +582,9 @@
         },
         {
           "id": "2_3.novembro.s3.walk-heavy",
-          "en": "Walk heavy",
-          "gl": "Camiñar pesado",
-          "es": "Caminar pesado",
+          "en": "Walk like an elephant",
+          "gl": "Camiñar coma un elefante",
+          "es": "Caminar como un elefante",
           "tprAction": {
             "gl": "Camiñar coma un elefante",
             "es": "Caminar como un elefante"
@@ -593,7 +593,7 @@
         },
         {
           "id": "2_3.novembro.s3.walk-light",
-          "en": "Walk light",
+          "en": "Walk lightly",
           "gl": "Camiñar lixeiro",
           "es": "Caminar ligero",
           "tprAction": {
@@ -605,7 +605,7 @@
         {
           "id": "2_3.novembro.s3.crunchy-leaves",
           "en": "Crunchy leaves",
-          "gl": "Follas que cruxen",
+          "gl": "Follas que renxen",
           "es": "Hojas crujientes",
           "tprAction": {
             "gl": "Esmagar follas na man",
@@ -660,7 +660,7 @@
         {
           "id": "2_3.novembro.s3.listen-to-the-crunch",
           "en": "Listen to the crunch",
-          "gl": "Escoita como cruxe",
+          "gl": "Escoita como renxe",
           "es": "Escucha cómo cruje",
           "tprAction": {
             "gl": "Pisar e levar a man á orella",
@@ -713,7 +713,7 @@
         {
           "id": "2_3.novembro.s4.picnic-blanket",
           "en": "Picnic blanket",
-          "gl": "Manta de picnic",
+          "gl": "Manta de pícnic",
           "es": "Manta de pícnic",
           "tprAction": {
             "gl": "Estender a manta na herba",

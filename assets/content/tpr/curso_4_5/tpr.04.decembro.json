@@ -37,10 +37,10 @@
         {
           "id": "4_5.decembro.s1.icicle",
           "en": "Icicle",
-          "gl": "Carámbano",
+          "gl": "Carambelo",
           "es": "Carámbano",
           "tprAction": {
-            "gl": "Baixar un dedo coma un carámbano",
+            "gl": "Baixar un dedo coma un carambelo",
             "es": "Bajar un dedo como un carámbano"
           },
           "category": "noun"
@@ -605,7 +605,7 @@
         {
           "id": "4_5.decembro.s3.dazzling",
           "en": "Dazzling",
-          "gl": "Deslumbrante",
+          "gl": "Cegador",
           "es": "Deslumbrante",
           "tprAction": {
             "gl": "Taparse un pouco os ollos",
@@ -734,7 +734,7 @@
         },
         {
           "id": "4_5.decembro.s4.blanket-share",
-          "en": "Blanket share",
+          "en": "Shared blanket",
           "gl": "Manta compartida",
           "es": "Manta compartida",
           "tprAction": {

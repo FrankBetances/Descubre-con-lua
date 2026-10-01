@@ -105,6 +105,12 @@ run_gate "family routines sound like a home, not like a leaflet" \
 # curso a curso, y ninguna palabra puede ser nueva dos veces en los cinco.
 run_gate "English: 5 new words a day, 800 per course, 4,000 from 0 to 6" \
   python3 tools/planificador_5_palabras.py --check
+# Nace de un encargo de Frank: «no tiene sentido un cuento que no tenga las
+# palabras del día». El cuento de cada semana se lee los mismos días que sus
+# palabras, y no traía ninguna. Ahora trae las veinte, entre “…” y declaradas
+# en su página, y esto comprueba que siga siendo así.
+run_gate "every weekly story carries its week's 20 English words" \
+  python3 tools/check_contos_palabras.py
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py

@@ -47,9 +47,9 @@
         },
         {
           "id": "5_6.maio.s1.face-card",
-          "en": "Face card",
-          "gl": "Tarxeta de caras",
-          "es": "Tarjeta de caras",
+          "en": "Emotion card",
+          "gl": "Tarxeta de emocións",
+          "es": "Tarjeta de emociones",
           "tprAction": {
             "gl": "Amosar unha cara",
             "es": "Enseñar una cara"
@@ -146,7 +146,7 @@
         },
         {
           "id": "5_6.maio.s1.content-feeling",
-          "en": "Content feeling",
+          "en": "Satisfied",
           "gl": "Satisfeito",
           "es": "Satisfecho",
           "tprAction": {
@@ -224,7 +224,7 @@
         {
           "id": "5_6.maio.s1.i-feel-better-after-a-hug",
           "en": "I feel better after a hug",
-          "gl": "Sinto mellor despois dunha aperta",
+          "gl": "Síntome mellor despois dunha aperta",
           "es": "Me siento mejor después de un abrazo",
           "tprAction": {
             "gl": "Abrazarse",

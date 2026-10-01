@@ -80,9 +80,9 @@
         },
         {
           "id": "5_6.abril.s1.gloves-for-picking",
-          "en": "Gloves for picking",
-          "gl": "Luvas de recoller",
-          "es": "Guantes de recoger",
+          "en": "Rubber gloves",
+          "gl": "Luvas de goma",
+          "es": "Guantes de goma",
           "tprAction": {
             "gl": "Poñer luvas imaxinarias",
             "es": "Ponerse guantes imaginarios"
@@ -441,12 +441,12 @@
         },
         {
           "id": "5_6.abril.s2.the-spider-crab-walks-sideways-not-forwards",
-          "en": "The spider crab walks sideways, not forwards",
-          "gl": "A centola camiña de lado, non cara adiante",
-          "es": "La centolla camina de lado, no hacia delante",
+          "en": "Most crabs walk sideways, but the spider crab walks forwards",
+          "gl": "A maioría dos cangrexos camiña de lado, pero a centola camiña cara adiante",
+          "es": "La mayoría de los cangrejos camina de lado, pero la centolla camina hacia delante",
           "tprAction": {
-            "gl": "Camiñar de lado",
-            "es": "Caminar de lado"
+            "gl": "Camiñar de lado e despois cara adiante",
+            "es": "Caminar de lado y después hacia delante"
           },
           "category": "complex"
         },
@@ -756,9 +756,9 @@
         },
         {
           "id": "5_6.abril.s4.boat-watch",
-          "en": "Boat watch",
-          "gl": "Observación dende barco",
-          "es": "Observación desde barco",
+          "en": "Dolphin watching",
+          "gl": "Observación de golfiños",
+          "es": "Observación de delfines",
           "tprAction": {
             "gl": "Mirar cos prismáticos",
             "es": "Mirar con los prismáticos"
@@ -771,7 +771,7 @@
           "gl": "Cría",
           "es": "Cría",
           "tprAction": {
-            "gl": "Acurrucarse xunto a un amigo",
+            "gl": "Aconchegarse xunto a un amigo",
             "es": "Acurrucarse junto a un amigo"
           },
           "category": "noun"

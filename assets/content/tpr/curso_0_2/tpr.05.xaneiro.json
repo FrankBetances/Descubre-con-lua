@@ -106,7 +106,7 @@
           "gl": "Sorber",
           "es": "Sorber",
           "tprAction": {
-            "gl": "Facer que o peluche bebe da cunca",
+            "gl": "Facer que o peluche beba da cunca",
             "es": "Hacer que el peluche bebe del cuenco"
           },
           "category": "verb"
@@ -117,7 +117,7 @@
           "gl": "Enroscarse",
           "es": "Hacerse un ovillo",
           "tprAction": {
-            "gl": "Facerse un ovo coma un gato",
+            "gl": "Facerse un novelo coma un gato",
             "es": "Hacerse un ovillo como un gato"
           },
           "category": "verb"
@@ -157,7 +157,7 @@
         },
         {
           "id": "0_2.xaneiro.s1.waggy",
-          "en": "Waggy",
+          "en": "Tail-wagging",
           "gl": "Que move o rabo",
           "es": "Que mueve el rabo",
           "tprAction": {
@@ -179,9 +179,9 @@
         },
         {
           "id": "0_2.xaneiro.s1.purry",
-          "en": "Purry",
-          "gl": "Ronroneante",
-          "es": "Ronroneador",
+          "en": "Purring",
+          "gl": "Que ronrona",
+          "es": "Que ronronea",
           "tprAction": {
             "gl": "Facer «rrrr» na barriga",
             "es": "Hacer «rrrr» en la barriga"
@@ -583,7 +583,7 @@
         {
           "id": "0_2.xaneiro.s3.creep-up",
           "en": "Creep up",
-          "gl": "Subir a modiño",
+          "gl": "Subir amodiño",
           "es": "Subir despacito",
           "tprAction": {
             "gl": "Subir cos dedos polo brazo",
@@ -757,8 +757,8 @@
         {
           "id": "0_2.xaneiro.s4.wind-chime",
           "en": "Wind chime",
-          "gl": "Móbil de vento",
-          "es": "Campanita de viento",
+          "gl": "Campaíñas de vento",
+          "es": "Campanillas de viento",
           "tprAction": {
             "gl": "Mover as campaíñas amodo",
             "es": "Mover las campanitas despacio"
@@ -768,7 +768,7 @@
         {
           "id": "0_2.xaneiro.s4.owl-hoot",
           "en": "Owl hoot",
-          "gl": "Ouveo do moucho",
+          "gl": "Canto do moucho",
           "es": "Ululato del búho",
           "tprAction": {
             "gl": "Facer «uuu» baixiño",
@@ -779,7 +779,7 @@
         {
           "id": "0_2.xaneiro.s4.shush",
           "en": "Shush",
-          "gl": "Calar",
+          "gl": "Mandar calar",
           "es": "Chistar",
           "tprAction": {
             "gl": "Facer «shh» moi suave",
@@ -790,10 +790,10 @@
         {
           "id": "0_2.xaneiro.s4.hum-a-tune",
           "en": "Hum a tune",
-          "gl": "Tararear",
+          "gl": "Cantaruxar",
           "es": "Tararear",
           "tprAction": {
-            "gl": "Tararear cos beizos pechados",
+            "gl": "Cantaruxar cos beizos pechados",
             "es": "Tararear con los labios cerrados"
           },
           "category": "verb"
@@ -911,7 +911,7 @@
         {
           "id": "0_2.xaneiro.s4.sound-asleep",
           "en": "Sound asleep",
-          "gl": "Durmido profundo",
+          "gl": "Profundamente durmido",
           "es": "Profundamente dormido",
           "tprAction": {
             "gl": "Pousar a cabeza nas mans xuntas",

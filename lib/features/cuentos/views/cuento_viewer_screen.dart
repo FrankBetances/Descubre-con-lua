@@ -7,6 +7,8 @@ import '../../../core/localization/vocabulario_contos.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/cuento_model.dart';
+import '../../../data/models/tpr_curriculum_scheduler.dart';
+import '../widgets/palabras_do_conto.dart';
 
 import '../../../core/audio/widgets/boton_escuchar.dart';
 
@@ -20,11 +22,22 @@ class CuentoViewerScreen extends StatefulWidget {
   final AppLanguage language;
   final OfflineAudioService? audioService;
 
+  /// La semana del curso de inglés a la que pertenece el cuento: sus veinte
+  /// palabras están en el texto. Sin ella el cuento se lee igual, y sus
+  /// palabras se pintan con lo que trae la propia página.
+  final SemanaTpr? semanaTpr;
+
+  /// 1 (lunes) a 5 (viernes) cuando se abre desde el día del aula: entonces
+  /// se marcan las palabras de HOY. `null` desde la biblioteca.
+  final int? dia;
+
   const CuentoViewerScreen({
     super.key,
     required this.cuento,
     this.language = AppLanguage.gl,
     this.audioService,
+    this.semanaTpr,
+    this.dia,
   });
 
   @override
@@ -36,6 +49,16 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
   bool _mostrarPreguntas = false;
   bool _mostrarPautas = false;
   double _fontSizeDelta = 0.0; // -2, 0, +3
+
+  /// La tarjeta de la página: tocar una palabra de la cabecera lleva hasta
+  /// ella, no solo cambia el número de abajo.
+  final GlobalKey _claveDaPaxina = GlobalKey();
+
+  late final PalabrasNoConto _palabras = PalabrasNoConto(
+    cuento: widget.cuento,
+    semana: widget.semanaTpr,
+    dia: widget.dia,
+  );
 
   @override
   void initState() {
@@ -220,8 +243,28 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    // Las palabras del día, dentro del cuento que se va a
+                    // leer: cuáles son y en qué página están.
+                    if (widget.semanaTpr != null && _palabras.levaPalabras)
+                      CabeceiraPalabrasDoConto(
+                        palabras: _palabras,
+                        language: lang,
+                        onIrAPaxina: (i) {
+                          if (i < 0 || i >= paginas.length) return;
+                          setState(() => _currentPageIndex = i);
+                          // Sin esto la página cambiaba debajo y la docente
+                          // seguía viendo la cabecera.
+                          WidgetsBinding.instance.addPostFrameCallback((_) {
+                            final ctx = _claveDaPaxina.currentContext;
+                            if (ctx != null && ctx.mounted) {
+                              Scrollable.ensureVisible(ctx);
+                            }
+                          });
+                        },
+                      ),
                     if (paginaActual != null) ...[
                       Card(
+                        key: _claveDaPaxina,
                         elevation: 1,
                         shape: RoundedRectangleBorder(
                           borderRadius:
@@ -274,11 +317,14 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                           ),
                                         ),
                                       ),
-                                      if (VocabularioContos.lista(
-                                              paginaActual
-                                                  .vocabularioPara(lang),
-                                              lang)
-                                          .isNotEmpty)
+                                      // Con palabras de la semana, su
+                                      // significado va debajo, con su voz.
+                                      if (paginaActual.palabras.isEmpty &&
+                                          VocabularioContos.lista(
+                                                  paginaActual
+                                                      .vocabularioPara(lang),
+                                                  lang)
+                                              .isNotEmpty)
                                         Container(
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 8, vertical: 3),
@@ -304,15 +350,28 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                   ),
                                   const SizedBox(height: 16),
 
-                                  // Texto do conto con narrativa rica e tipografía adaptada
-                                  Text(
-                                    textoNarrativo,
-                                    style: TextStyle(
-                                      color: AppTheme.textPrimary,
-                                      fontSize: 16.5 + _fontSizeDelta,
-                                      height: 1.55,
-                                      fontWeight: FontWeight.w500,
+                                  // O texto do conto, co inglés resaltado:
+                                  // o que vai entre “…” son as palabras da
+                                  // semana, e as de hoxe levan fondo.
+                                  Text.rich(
+                                    key: const Key('texto_do_conto'),
+                                    textoConPalabras(
+                                      texto: textoNarrativo,
+                                      palabras: _palabras,
+                                      estilo: TextStyle(
+                                        color: AppTheme.textPrimary,
+                                        fontSize: 16.5 + _fontSizeDelta,
+                                        height: 1.55,
+                                        fontWeight: FontWeight.w500,
+                                      ),
                                     ),
+                                  ),
+
+                                  PalabrasDaPaxina(
+                                    pagina: paginaActual,
+                                    palabras: _palabras,
+                                    language: lang,
+                                    audioService: widget.audioService,
                                   ),
 
                                   // Pregunta sobre a imaxe / Guía de atención

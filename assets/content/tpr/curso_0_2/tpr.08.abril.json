@@ -157,7 +157,7 @@
         },
         {
           "id": "0_2.abril.s1.springy",
-          "en": "Springy",
+          "en": "Spring-like",
           "gl": "Primaveral",
           "es": "Primaveral",
           "tprAction": {
@@ -321,7 +321,7 @@
         {
           "id": "0_2.abril.s2.pitter-patter",
           "en": "Pitter-patter",
-          "gl": "Pingar",
+          "gl": "Tamborilar",
           "es": "Repiquetear",
           "tprAction": {
             "gl": "Bater cos dedos na mesa coma a choiva",
@@ -376,7 +376,7 @@
         {
           "id": "0_2.abril.s2.drizzly",
           "en": "Drizzly",
-          "gl": "Orballeiro",
+          "gl": "De orballo",
           "es": "Lloviznoso",
           "tprAction": {
             "gl": "Mover os dedos amodo",
@@ -473,7 +473,7 @@
         {
           "id": "0_2.abril.s3.plant-pot",
           "en": "Plant pot",
-          "gl": "Vaso de planta",
+          "gl": "Testo",
           "es": "Maceta",
           "tprAction": {
             "gl": "Encher o vaso con terra",
@@ -538,9 +538,9 @@
         },
         {
           "id": "0_2.abril.s3.sprout-bag",
-          "en": "Sprout bag",
-          "gl": "Bolsa de xerminar",
-          "es": "Bolsa de germinar",
+          "en": "Seed bag",
+          "gl": "Bolsa de sementes",
+          "es": "Bolsa de semillas",
           "tprAction": {
             "gl": "Mirar a semente dentro da bolsa",
             "es": "Mirar la semilla dentro de la bolsa"
@@ -660,8 +660,8 @@
         {
           "id": "0_2.abril.s3.grow-grow-grow",
           "en": "Grow, grow, grow!",
-          "gl": "Medra, medra!",
-          "es": "¡Crece, crece!",
+          "gl": "Medra, medra, medra!",
+          "es": "¡Crece, crece, crece!",
           "tprAction": {
             "gl": "Erguerse amodo ata arriba",
             "es": "Levantarse despacio hasta arriba"
@@ -682,7 +682,7 @@
         {
           "id": "0_2.abril.s3.bigger-and-bigger",
           "en": "Bigger and bigger",
-          "gl": "Máis e máis grande",
+          "gl": "Cada vez máis grande",
           "es": "Cada vez más grande",
           "tprAction": {
             "gl": "Abrir as mans cada vez máis",
@@ -724,10 +724,10 @@
         {
           "id": "0_2.abril.s4.knuckles",
           "en": "Knuckles",
-          "gl": "Nudillos",
+          "gl": "Artellos",
           "es": "Nudillos",
           "tprAction": {
-            "gl": "Bater amodo cos nudillos",
+            "gl": "Bater amodo cos artellos",
             "es": "Golpear despacio con los nudillos"
           },
           "category": "noun"
@@ -833,12 +833,12 @@
         },
         {
           "id": "0_2.abril.s4.fiddly",
-          "en": "Fiddly",
-          "gl": "Miúdo",
-          "es": "Menudo",
+          "en": "Busy fingers",
+          "gl": "Dedos inquedos",
+          "es": "Dedos inquietos",
           "tprAction": {
-            "gl": "Coller algo miúdo cos dedos",
-            "es": "Coger algo menudo con los dedos"
+            "gl": "Mover os dedos sen parar",
+            "es": "Mover los dedos sin parar"
           },
           "category": "adjective"
         },
@@ -866,9 +866,9 @@
         },
         {
           "id": "0_2.abril.s4.clappy",
-          "en": "Clappy",
-          "gl": "De palmas",
-          "es": "Palmero",
+          "en": "Clapping",
+          "gl": "Batendo palmas",
+          "es": "Dando palmas",
           "tprAction": {
             "gl": "Bater palmiñas",
             "es": "Dar palmitas"
@@ -900,7 +900,7 @@
         {
           "id": "0_2.abril.s4.ten-little-fingers",
           "en": "Ten little fingers",
-          "gl": "Dez deditos",
+          "gl": "Dez dedos pequenos",
           "es": "Diez deditos",
           "tprAction": {
             "gl": "Amosar os dez dedos",

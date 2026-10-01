@@ -80,7 +80,7 @@
         },
         {
           "id": "2_3.maio.s1.hairband",
-          "en": "Hairband",
+          "en": "Hair tie",
           "gl": "Goma do pelo",
           "es": "Goma del pelo",
           "tprAction": {
@@ -114,7 +114,7 @@
         {
           "id": "2_3.maio.s1.scrub-nails",
           "en": "Scrub nails",
-          "gl": "Fregar as uñas",
+          "gl": "Fregar as unllas",
           "es": "Frotar las uñas",
           "tprAction": {
             "gl": "Fregar as puntas dos dedos",
@@ -265,9 +265,9 @@
         },
         {
           "id": "2_3.maio.s2.smile-teeth",
-          "en": "Smile teeth",
-          "gl": "Dentes ao sorrir",
-          "es": "Dientes al sonreír",
+          "en": "Big smile",
+          "gl": "Sorriso grande",
+          "es": "Sonrisa grande",
           "tprAction": {
             "gl": "Sorrir amosando os dentes",
             "es": "Sonreír enseñando los dientes"
@@ -364,7 +364,7 @@
         },
         {
           "id": "2_3.maio.s2.open-the-mouth-wide",
-          "en": "Open the mouth wide",
+          "en": "Open your mouth wide",
           "gl": "Abrir moito a boca",
           "es": "Abrir mucho la boca",
           "tprAction": {
@@ -420,8 +420,8 @@
         {
           "id": "2_3.maio.s2.brush-brush-brush",
           "en": "Brush, brush, brush",
-          "gl": "Cepilla, cepilla",
-          "es": "Cepilla, cepilla",
+          "gl": "Cepilla, cepilla, cepilla",
+          "es": "Cepilla, cepilla, cepilla",
           "tprAction": {
             "gl": "Mover o cepillo no aire",
             "es": "Mover el cepillo en el aire"
@@ -520,14 +520,14 @@
           "gl": "Pipeta",
           "es": "Pipeta",
           "tprAction": {
-            "gl": "Collar auga coa pipeta",
+            "gl": "Coller auga coa pipeta",
             "es": "Coger agua con la pipeta"
           },
           "category": "noun"
         },
         {
           "id": "2_3.maio.s3.squirter",
-          "en": "Squirter",
+          "en": "Water pistol",
           "gl": "Pistola de auga",
           "es": "Pistola de agua",
           "tprAction": {
@@ -538,7 +538,7 @@
         },
         {
           "id": "2_3.maio.s3.sponge-squeeze",
-          "en": "Sponge squeeze",
+          "en": "Wet sponge",
           "gl": "Esponxa mollada",
           "es": "Esponja mojada",
           "tprAction": {
@@ -604,9 +604,9 @@
         },
         {
           "id": "2_3.maio.s3.sploshy",
-          "en": "Sploshy",
-          "gl": "Chapoteante",
-          "es": "Chapoteante",
+          "en": "Splashing",
+          "gl": "Salpicando",
+          "es": "Chapoteando",
           "tprAction": {
             "gl": "Chapotear coas mans",
             "es": "Chapotear con las manos"

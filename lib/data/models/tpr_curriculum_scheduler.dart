@@ -356,6 +356,16 @@ class CursoTpr {
   DailyTprPlan? planDoDia(int mesCalendario, int semana, int dia) =>
       this.semana(mesCalendario, semana)?.planDoDia(dia);
 
+  /// La semana [semana] del mes [orden] del CURSO (1 es septiembre), que es
+  /// como numeran el mes los cuentos y el aula. El mismo mes que
+  /// [semana], contado de otra manera.
+  SemanaTpr? semanaPorOrden(int orden, int semana) {
+    for (final m in meses) {
+      if (m.orden == orden) return m.semana(semana);
+    }
+    return null;
+  }
+
   int get totalPalabras => meses.fold(0, (t, m) => t + m.totalPalabras);
 
   /// Cuántas palabras hay de cada categoría, contadas en el contenido.

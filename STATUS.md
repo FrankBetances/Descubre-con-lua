@@ -9,6 +9,131 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## El inglés, revisado, y el cuento de la semana con las palabras del día (1/10/2026)
+
+Rama `claude/ingles-e-contos`, que sale de `main` y se integra en `main` por
+pull request.
+
+Orden de Frank: «hay errores como flower en ingles que esta mal en la app, y
+hay que revisar otras palabras, y me han recomendado que conectemos los cuentos
+con las palabras diarias, deberían ir de la mano para facilitar la retención,
+no tiene sentido un cuento que no tenga las palabras del dia, hay que mejorar
+ambas cosas».
+
+Qué cambia en el inglés:
+
+- **El inglés que va dentro de una frase gallega o castellana ya no lo lee la
+  voz gallega ni la castellana.** «Now smell the flower!» se grababa con la voz
+  gallega. Ahora ese inglés va entre “…” y se graba con la voz inglesa, y el
+  resto de la frase con la suya: 86 locuciones de STEAM, asambleas, unidades,
+  progresión, formación y cápsulas.
+- **Un guion ya no junta dos palabras inglesas**: «Tail-wagging» se leía
+  «Tailwagging». Se regeneraron las 150 grabaciones afectadas.
+- **La frase del diccionario de inglés se grababa como texto de programa**:
+  `naturalPhrase` entraba en el corpus de voz como un diccionario de Python.
+- **Las 4.000 palabras diarias, leídas curso a curso.** Cambian 257: el inglés
+  de 100 (palabras que no existen, con otro significado o forzadas, como «Open
+  your flower», que ahora es «Open like a flower»), el gallego de 155, el
+  castellano de 67 y el gesto de 69. Contado con un script que compara cada
+  palabra con la de `main`.
+- **El resto del inglés**: calendario, asambleas de los dos ciclos, unidades,
+  láminas, cuentos del banco y colocaciones. Por ejemplo, «Breathe in like
+  smelling a flower» es ahora «Breathe in like you're smelling a flower»;
+  «Good morning sun! Grow up tall!», «Good morning, sun! Grow tall!»; «Walk
+  heavy like a big cow», «Walk heavily like a big cow»; «Fly above the fjord»,
+  «Fly above the ría»; y «Flutter wings and land on flower!», «Flutter your
+  wings and land on a flower!».
+- **La centolla camina sobre todo hacia delante, no de lado** (5-6 años,
+  abril, semana 2). La frase decía lo contrario.
+
+Qué cambia en los cuentos:
+
+- **Los 200 cuentos de la semana** —uno por semana de cada curso, de
+  septiembre a junio— **llevan dentro las 20 palabras inglesas de su semana**,
+  en gallego y en castellano, entre “…” y de 1 a 4 por página. Cada página
+  declara sus palabras, y el reto TPR del cuento es una de las veinte. La gata
+  Lúa no es personaje de ninguno: donde sale «Lúa» es la luna o el nombre del
+  centro de interés del mes.
+- **El visor, abierto desde «O día de hoxe» del Modo Aula**: arriba, «As 5
+  palabras de hoxe están neste conto», cada una con su página. Al tocar una,
+  el cuento va a esa página y la vista baja con él. El viernes salen las
+  veinte. En el texto, el inglés va resaltado y las palabras de hoy, además,
+  con fondo. Debajo de cada página, «En inglés nesta páxina»: cada palabra con
+  su grabación, su significado, su gesto y la marca «Hoxe».
+- **Desde la Biblioteca de Cuentos Dialógicos** del Portal Familias, las
+  veinte de la semana, plegadas hasta que se piden y sin «hoxe».
+- **«O conto de hoxe» abría un cuento del banco la primera semana de cada
+  mes**: en octubre de 0-2, «Onde están as cóxegas de Lúa?», sin ninguna de
+  las palabras del día. Los cuentos del banco no son de ninguna semana, el
+  modelo les da la 1 y, ordenados por id, iban delante. Ahora abre siempre el
+  cuento de la semana.
+- Un gate nuevo, `tools/check_contos_palabras.py`, comprueba que cada cuento
+  semanal siga llevando sus 20 palabras.
+
+Y dos tests de `main` que fallaban desde el 1 de octubre, los dos escritos por
+Claude Code: el del temporizador del calendario y el del selector de ciclo solo
+pasaban en septiembre. Ahora el primero espera el mes que abre la pantalla, y
+el segundo elige septiembre, que es el mes de la asamblea de prueba.
+
+### Comprobado en este contenedor, con Flutter 3.47.5
+
+| Con qué | Resultado |
+| --- | --- |
+| `tools/gates.sh --fast` | 20 de 20 en verde; `flutter test`, 836 tests en verde |
+| `tools/check_contos_palabras.py` | los 200 cuentos semanales llevan las 20 palabras de su semana, entre “…” en gl y en es, de 1 a 4 por página y con el significado del curso |
+| `test/features/cuentos/palabras_do_conto_test.dart` | 9 tests en verde. Con los 200 cuentos y los cinco días de cada semana: el visor encuentra las 5 de cada día (las 20 el viernes) y el inglés de cada página es el declarado. Abierto desde el día, en gl y en es: la cabecera, el salto a la página con la vista bajando y la marca de hoy. Desde la biblioteca, las 20 plegadas. La más larga de las 4.000, «First we sing, then we get our certificates, and finally we celebrate», entera en la cabecera a 360 dp con letra 1,0 y 1,8. Un cuento del banco se lee como siempre. Sin el arreglo del salto fallan 2 tests; con la pastilla de antes, fallan los 2 de la frase larga, uno por escala |
+| `test/features/cuentos/conto_de_hoxe_test.dart` | 2 tests en verde: las 200 semanas abren su cuento, y lleva las palabras de cada día; en 0-2, el jueves de la semana 1 de octubre, sale «Martiño e o nariz escondido», no un cuento del banco |
+| `test/features/portales_escala_test.dart` | el cuento semanal más largo de cada curso, página a página, a 360×640, en gl y en es, con letra 1,0 y 1,8, sin desbordes |
+| App en escritorio Linux, 360 px, con la fecha real (jueves, 1/10/2026) | Portal Docentes → Entrar en Modo Aula → 1.º Ciclo → 0-2 años: «O conto de hoxe» es «Martiño e o nariz escondido». Abierto: las cinco de hoy con su página; al tocar «Beep beep, nose! · páx. 4» sale la página 4 con la vista en ella; la marca «Hoxe». En gl y en es |
+| App: Portal Docentes → Entrar en Modo Aula → 2.º Ciclo → 6.º (5-6 años) | «El cuento de hoy» es «Duarte y la bolsa misteriosa»; en la cabecera, «We smell with our nose and taste with our tongue» baja de línea, cuando antes se cortaba. En es |
+| App: Portal Familias → Biblioteca de Cuentos Dialógicos → Explorar Cuentos | el cuento de la semana con las 20 palabras plegadas y sin marca de hoy. En es |
+| Gallego y castellano de los cuentos | cada palabra gallega, contra el diccionario morfológico de LanguageTool y contra hunspell gl_ES; cada palabra castellana, contra hunspell es_ES; y una búsqueda de inglés fuera de “…”. Son scripts de trabajo y no viajan en el repositorio |
+| Gallego de las palabras diarias que cambian | las mismas dos fuentes. El diccionario de la RAG no se pudo consultar: la red de este entorno lo bloquea |
+| Manual | apartado 4.4 nuevo con dos capturas (gl y es). PDF de 26 páginas, miradas una a una; el Word, convertido a PDF con LibreOffice, también 26, miradas una a una. Ninguna página tiene nada a menos de 15 mm del borde, medido con un script sobre las 52 |
+| Centolla | dos búsquedas web cuyos resúmenes coinciden en que un estudio de eLife sobre 50 especies sitúa a los cangrejos araña entre los que caminan hacia delante. **Los artículos originales no los he leído**: la red de este entorno bloquea esos dominios |
+
+### NO comprobado
+
+- **Esto no lo he visto en un aparato Android.**
+- **Las grabaciones nuevas no las he oído.** El gate de cobertura dice que
+  cada locución tiene su fichero; no dice cómo suena.
+- **El APK de release no se ha compilado en este contenedor**: aquí no hay
+  Android SDK. Lo cubre CI.
+- **Formas gallegas que no recoge ninguno de los dos diccionarios y se han
+  dejado**, porque no encontré otra que sí recojan y diga lo mismo: xoguetón,
+  aletexar, marchoso, ronronar, trautear, chapotear, afroitado, encaixable,
+  desenformar, bambeante, retumbante, achocolatado, recén nado, medidor,
+  fiambreira, pegamento, reutilizable, laminaria, microplástico, canón de
+  confeti, atrezo, conta de pauciños, quitapesares, autocoidado, pedorretas,
+  porquiños, Olívica y tangram. Hay que mirarlas en el diccionario de la RAG.
+- La calidad de los 200 cuentos como cuentos no la ha revisado ninguna
+  persona.
+- **El vocabulario inglés de uso habitual** (la pantalla «Vocabulario
+  inglés», 3.995 palabras) **no se ha corregido todavía**: la definición sale
+  de WordNet y la frase es un ejemplo de WordNet o una frase hecha con esa
+  definición. *flower* dice «A flower is a plant cultivated for
+  its blooms or blossoms.», y en muchas la frase usa otra acepción que la de
+  la definición: *access*, «the right to enter», con «He took a wrong turn on
+  the access to the bridge.». Va en el siguiente cambio.
+
+### Visto y no tocado
+
+- **41 de los 103 cuentos que no son de ninguna semana nombran a Lúa**, y en
+  algunos es la protagonista: «Onde están as cóxegas de Lúa?», «Lúa e o
+  barquiño de Samil», «O primeiro día de Lúa na escola», «As botas vermellas
+  de Lúa». El `CLAUDE.md` dice que Lúa aparece para la docente y la familia,
+  nunca para captar la atención infantil.
+- **Dos palabras diarias de 5-6 años nombran a Lúa**: «Hug Lúa goodbye» y
+  «Thank you, Lúa!» (junio, semana 1). El cuento de esa semana las usa con una
+  luna de cartón que da nombre a la clase.
+- `xogos_fogar_screen.dart` lleva el contenido de los juegos de casa escrito
+  en el widget («O Gran Reto Freeze de Lúa», «Freeze like a statue!»), y no en
+  JSON.
+- `assets/content/calendario/calendario_3_6_anos.json` no lo lee la app.
+- STEAM usa «titiriteira», que tampoco recoge ninguno de los dos diccionarios.
+- Puede haber más tests que dependan de la fecha de hoy; solo se han mirado
+  los dos que fallaron.
+
 ## STEAM el día que toca: en «Hoxe na aula» y en el calendario (30/9/2026)
 
 Rama `claude/steam-integracion`, que sale de `main` y se integra en `main` por

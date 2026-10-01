@@ -128,7 +128,7 @@
           "gl": "Agacharse",
           "es": "Ponerse en cuclillas",
           "tprAction": {
-            "gl": "Baixar en cuclillas",
+            "gl": "Baixar en crequenas",
             "es": "Bajar en cuclillas"
           },
           "category": "verb"
@@ -168,9 +168,9 @@
         },
         {
           "id": "2_3.outubro.s1.jumpy",
-          "en": "Jumpy",
-          "gl": "Saltón",
-          "es": "Saltarín",
+          "en": "Jumping",
+          "gl": "Saltando",
+          "es": "Saltando",
           "tprAction": {
             "gl": "Dar saltiños rápidos",
             "es": "Dar saltitos rápidos"
@@ -180,7 +180,7 @@
         {
           "id": "2_3.outubro.s1.wobbly-legs",
           "en": "Wobbly legs",
-          "gl": "Pernas tremendo",
+          "gl": "Pernas que tremen",
           "es": "Piernas temblorosas",
           "tprAction": {
             "gl": "Tremer as pernas",
@@ -254,9 +254,9 @@
         },
         {
           "id": "2_3.outubro.s2.spin-top",
-          "en": "Spin top",
-          "gl": "Trompo",
-          "es": "Trompo",
+          "en": "Wooden top",
+          "gl": "Trompo de madeira",
+          "es": "Trompo de madera",
           "tprAction": {
             "gl": "Facer xirar o trompo",
             "es": "Hacer girar el trompo"
@@ -354,7 +354,7 @@
         {
           "id": "2_3.outubro.s2.swirl",
           "en": "Swirl",
-          "gl": "Remuíñar",
+          "gl": "Facer remuíños",
           "es": "Arremolinar",
           "tprAction": {
             "gl": "Facer remuíños cos brazos",
@@ -375,9 +375,9 @@
         },
         {
           "id": "2_3.outubro.s2.dizzy-dizzy",
-          "en": "Dizzy-dizzy",
-          "gl": "Mareadísimo",
-          "es": "Mareadísimo",
+          "en": "Very dizzy",
+          "gl": "Moi mareado",
+          "es": "Muy mareado",
           "tprAction": {
             "gl": "Parar e bambear rindo",
             "es": "Parar y tambalearse riendo"
@@ -386,9 +386,9 @@
         },
         {
           "id": "2_3.outubro.s2.whirly",
-          "en": "Whirly",
-          "gl": "Remuíñante",
-          "es": "Giratorio",
+          "en": "Whirling",
+          "gl": "Que xira",
+          "es": "Que gira",
           "tprAction": {
             "gl": "Xirar un dedo no aire",
             "es": "Girar un dedo en el aire"
@@ -494,9 +494,9 @@
         },
         {
           "id": "2_3.outubro.s3.whistle-blow",
-          "en": "Whistle blow",
-          "gl": "Asubío",
-          "es": "Pitido",
+          "en": "Referee's whistle",
+          "gl": "Asubío do árbitro",
+          "es": "Silbato del árbitro",
           "tprAction": {
             "gl": "Parar ao oír o asubío",
             "es": "Parar al oír el pitido"
@@ -671,8 +671,8 @@
         {
           "id": "2_3.outubro.s3.run-run-run",
           "en": "Run, run, run!",
-          "gl": "Corre, corre!",
-          "es": "¡Corre, corre!",
+          "gl": "Corre, corre, corre!",
+          "es": "¡Corre, corre, corre!",
           "tprAction": {
             "gl": "Correr no sitio",
             "es": "Correr en el sitio"
@@ -855,9 +855,9 @@
         },
         {
           "id": "2_3.outubro.s4.stompy",
-          "en": "Stompy",
-          "gl": "Pisón",
-          "es": "Pisón",
+          "en": "Stomping",
+          "gl": "Pisando forte",
+          "es": "Pisando fuerte",
           "tprAction": {
             "gl": "Pisar forte ao ritmo",
             "es": "Pisar fuerte al ritmo"
