@@ -160,7 +160,7 @@ manda el script:
 | `check_laminas.py` | Que cada forma de cada lámina se pinte de verdad, y no salga una lámina en blanco |
 | `draw_flashcards.py --check` | Que cada lámina del banco apunte a un dibujo |
 | `check_no_emoji.py` | Que no se use emoji del sistema como iconografía (regla 5) |
-| `build_corpus_ingles.py --check` | Que cada palabra del vocabulario inglés traiga categoría gramatical y una frase entera, y que no entre ninguna de las excluidas |
+| `build_corpus_ingles.py --check` | Que cada palabra del vocabulario inglés traiga categoría, definición y una frase entera escritas a mano; que la frase use la palabra sin ser una definición disfrazada ni repetirse; y que no entre ninguna de las excluidas |
 | `humaniza_rutinas_fogar.py --check` | Que las rutinas de casa no vuelvan a ser un mismo texto repetido |
 | `planificador_5_palabras.py --check` | Que el inglés sea el del modelo en cada uno de los cinco cursos: 20 palabras por semana, 800 por curso, 4.000 sin que ninguna se repita entre cursos, con significado y gesto en gl y es, y con el reparto 280/200/160/96/64 **contado** en el contenido |
 | `check_contos_palabras.py` | Que el cuento de cada semana lleve las 20 palabras inglesas de su semana: entre “…” en gallego y en castellano, de 1 a 4 por página y con su significado |

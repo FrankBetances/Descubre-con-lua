@@ -9,6 +9,82 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## El vocabulario inglés de uso habitual, escrito a mano (3/10/2026)
+
+Rama `claude/ingles-e-contos`, que vuelve a salir de `main` y se integra en
+`main` por pull request.
+
+Es la parte que quedaba de la orden del 1/10 («hay errores como flower en
+ingles que esta mal en la app, y hay que revisar otras palabras»): la pantalla
+«4.000 palabras de uso habitual» enseñaba la definición de WordNet y, en 1.604
+palabras, una frase hecha con esa definición.
+
+Qué cambia en pantalla:
+
+- **Las 3.995 palabras traen definición y frase nuevas, escritas a mano para
+  esta app.** *flower* pasa de «A flower is a plant cultivated for its blooms
+  or blossoms.» a «She picked a yellow flower for her mum.». Comprobado
+  abriendo la app de escritorio y buscando *flower*, en gallego y en
+  castellano: `docs/capturas/vocabulario-flower-gl.png` y
+  `docs/capturas/vocabulario-flower-es.png`.
+- **Las 65 palabras de clase cerrada que no tenían definición ya la tienen**
+  («a», «the», «of»…). Comprobado comparando el JSON de antes y el de ahora:
+  65 sin definición antes, 0 ahora.
+- **89 palabras cambian de categoría gramatical**, siempre hacia su uso más
+  común: *butterfly*, de verbo a sustantivo; *about*, de adverbio a
+  preposición; *thou*, de sustantivo a pronombre. Comprobado con la misma
+  comparación: 89 cambios de `pos`, 3.966 de definición y 3.933 de frase; la
+  frecuencia (`zipf`) no cambia en ninguna.
+- **La nota de la pantalla ya no dice que la categoría sale de WordNet**: dice
+  que la categoría, la definición y la frase están escritas a mano. Vista en
+  las mismas dos capturas.
+
+De dónde sale ahora cada palabra: de `tools/datos/vocabulario_ingles.tsv`, una
+fuente escrita a mano que `tools/build_corpus_ingles.py` convierte en el JSON
+de la app. Vive en `tools/` y no en `assets/` porque todo lo que hay en
+`assets/content/corpus/` se empaqueta en el APK.
+
+Cómo se comprobó el contenido:
+
+- **El gate `build_corpus_ingles.py --check`**, reescrito: que el JSON diga lo
+  mismo que la fuente, que cada frase contenga su palabra, empiece en
+  mayúscula, acabe en punto y quepa en 80 caracteres, que no sea una
+  definición disfrazada («A flower is…», «To run is to…», «Above means…»), que
+  no se repita y que ni la frase ni la definición traigan nada de la lista de
+  veto. Sale OK con las 3.995.
+- **Durante la escritura**, un validador de trabajo que no está en el
+  repositorio pasó además hunspell `en_GB` a todas las palabras de las
+  definiciones y las frases —ortografía británica: *colour*, *favourite*,
+  *organise*— y el etiquetador de nltk a cada frase, para revisar a mano las
+  que no casaban con su categoría. Encontró cuatro frases repetidas entre
+  lotes, ya corregidas.
+
+Voz:
+
+- **3.925 grabaciones de las frases viejas se han borrado** (61,2 MB):
+  `prune_voice_assets.py --check` sale OK.
+- **Faltan 3.930 grabaciones inglesas de las frases nuevas.** Las sintetiza el
+  workflow «Generate Voice Assets» cuando la rama llega a GitHub. Hasta que
+  termine, el gate «every locution has a recording» sale rojo y la frase de
+  esas palabras no suena: esto no lo he verificado todavía en CI.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android.**
+- **Ninguna persona nativa ni docente de inglés ha revisado las 3.995
+  definiciones y frases.** Las escribió Claude Code, lote a lote, con los
+  controles de arriba.
+- Las frases nombran a veces lugares de aquí —Vigo, las Cíes, Santiago,
+  Balaídos— y la voz inglesa los leerá a la inglesa. No lo he oído.
+
+### Visto y no tocado
+
+- **La tarjeta del vocabulario en el Portal Docentes sigue diciendo «Corpus
+  8.000 Palabras (BNC/COCA)… bandas de frecuencia 1k-8k e clasificación
+  curricular CEFR (A1-C2)»**, y las tres cosas son falsas: son 3.995, de la 1k
+  a la 4k, y el nivel no es del MCER. Cambiarla no estaba en la orden y queda
+  propuesto en la revisión de interfaz, a la espera de que Frank lo apruebe.
+
 ## El inglés, revisado, y el cuento de la semana con las palabras del día (1/10/2026)
 
 Rama `claude/ingles-e-contos`, que sale de `main` y se integra en `main` por
