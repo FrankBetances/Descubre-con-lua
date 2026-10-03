@@ -11,8 +11,9 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ## El vocabulario inglés de uso habitual, escrito a mano (3/10/2026)
 
-Rama `claude/ingles-e-contos`, que vuelve a salir de `main` y se integra en
-`main` por pull request.
+**En `main`**, por la pull request #8 (merge `fa36eb78`). Comprobado con el run
+217 de `Gates` sobre ese merge: `tools/gates.sh` entero en verde, con el APK de
+release.
 
 Es la parte que quedaba de la orden del 1/10 («hay errores como flower en
 ingles que esta mal en la app, y hay que revisar otras palabras»): la pantalla
@@ -63,10 +64,14 @@ Voz:
 
 - **3.925 grabaciones de las frases viejas se han borrado** (61,2 MB):
   `prune_voice_assets.py --check` sale OK.
-- **Faltan 3.930 grabaciones inglesas de las frases nuevas.** Las sintetiza el
-  workflow «Generate Voice Assets» cuando la rama llega a GitHub. Hasta que
-  termine, el gate «every locution has a recording» sale rojo y la frase de
-  esas palabras no suena: esto no lo he verificado todavía en CI.
+- **Las 3.930 grabaciones inglesas de las frases nuevas ya están.** Las
+  sintetizó el workflow «Generate Voice Assets» (run 54) con la voz LJSpeech y
+  las commiteó a la rama en 02c87f14, que solo trae `assets/voice/en_tutor_*.m4a`
+  y su manifiesto. Comprobado en local con `check_voice_coverage.py` (15.154
+  locuciones, todas con grabación) y en CI con `tools/gates.sh` entero en verde
+  sobre ese commit (run 216 de `Gates`, que lanza la propia síntesis y hace
+  checkout de la rama después de ese push). La de *flower* existe y tiene señal:
+  AAC, 2,1 s, pico a −3,1 dB, medido con `ffprobe` y `volumedetect`.
 
 Lo que no se ha comprobado:
 
@@ -74,6 +79,8 @@ Lo que no se ha comprobado:
 - **Ninguna persona nativa ni docente de inglés ha revisado las 3.995
   definiciones y frases.** Las escribió Claude Code, lote a lote, con los
   controles de arriba.
+- **No he escuchado ninguna de las 3.930 grabaciones nuevas.** Está comprobado
+  que existen y que la de *flower* no es silencio, no que digan bien la frase.
 - Las frases nombran a veces lugares de aquí —Vigo, las Cíes, Santiago,
   Balaídos— y la voz inglesa los leerá a la inglesa. No lo he oído.
 
