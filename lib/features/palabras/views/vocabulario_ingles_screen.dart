@@ -25,8 +25,9 @@ import '../../../data/repositories/content_repository.dart';
 /// mitad de la lista.
 ///
 /// **De dónde salen los datos.** De `assets/content/corpus/`, que escribe
-/// `tools/build_corpus_ingles.py` con WordNet y wordfreq. El nivel se deriva
-/// de la banda de frecuencia y la pantalla lo dice: no es MCER oficial.
+/// `tools/build_corpus_ingles.py`: la categoría, la definición y la frase,
+/// de una fuente escrita a mano; la frecuencia, de wordfreq. El nivel se
+/// deriva de la banda de frecuencia y la pantalla lo dice: no es MCER oficial.
 class VocabularioInglesScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
@@ -254,12 +255,14 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
               isGl
                   ? 'O nivel oriéntase pola banda de frecuencia (as mil primeiras '
                       'palabras, A1/A2; as mil seguintes, A2/B1…). Non é unha '
-                      'clasificación oficial do MCER. A categoría gramatical sae '
-                      'de WordNet e a frecuencia, de wordfreq.'
+                      'clasificación oficial do MCER. A categoría, a definición '
+                      'e a frase están escritas a man; a frecuencia sae de '
+                      'wordfreq.'
                   : 'El nivel se orienta por la banda de frecuencia (las mil primeras '
                       'palabras, A1/A2; las mil siguientes, A2/B1…). No es una '
-                      'clasificación oficial del MCER. La categoría gramatical sale '
-                      'de WordNet y la frecuencia, de wordfreq.',
+                      'clasificación oficial del MCER. La categoría, la definición '
+                      'y la frase están escritas a mano; la frecuencia sale de '
+                      'wordfreq.',
               style: const TextStyle(
                 fontSize: 11,
                 color: AppTheme.textMuted,

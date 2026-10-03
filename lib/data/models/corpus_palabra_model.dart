@@ -6,9 +6,9 @@ import 'package:flutter/foundation.dart';
 /// `tools/build_corpus_ingles.py`, y ahí está dicho con detalle. En corto: la
 /// banda de frecuencia (1k…8k) la trae la lista de origen; el nivel se DERIVA
 /// de la banda y la pantalla dice que no es una clasificación oficial del
-/// MCER; la categoría gramatical sale de WordNet por la cuenta real de SemCor;
-/// el `zipf` lo mide `wordfreq`; y la frase es una oración entera, de WordNet
-/// o construida con su definición.
+/// MCER; la categoría gramatical, la definición y la frase están escritas a
+/// mano en `tools/datos/vocabulario_ingles.tsv`; y el `zipf` lo mide
+/// `wordfreq`.
 ///
 /// **Lo que se quitó en su día, y por qué volvió.** El fichero traía `pos` y
 /// `zipf_score` inventados: 6.206 de las 8.000 venían etiquetadas `NOUN`
@@ -33,7 +33,7 @@ class CorpusPalabra {
   /// Frecuencia Zipf real (`wordfreq`). 0 cuando no hay medida.
   final double zipf;
 
-  /// La glosa de WordNet del sentido más usado. Puede estar vacía.
+  /// Qué significa, en el inglés con que se explica a quien aprende.
   final String definicion;
 
   /// Una oración ENTERA que usa la palabra. Es lo que se escucha.
