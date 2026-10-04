@@ -144,11 +144,12 @@ void main() {
     await Pasarela.asentar(tester);
     expect(cabecera(), AppTheme.familias);
 
-    // Portal Familias → Contos: sigue naranja aunque Contos no sepa de quién es.
-    final abrir = find.text('Abrir Contos');
-    await tester.scrollUntilVisible(abrir, 300,
-        scrollable: find.byType(Scrollable).first);
-    await tester.tap(abrir);
+    // Portal Familias → Explorar → Contos: sigue naranja aunque Contos no
+    // sepa de quién es.
+    await tester.tap(find.byKey(const Key('pestana_explorar')));
+    await Pasarela.asentar(tester);
+    expect(cabecera(), AppTheme.familias);
+    await tester.tap(find.byKey(const ValueKey('explorar_contos')));
     await Pasarela.asentar(tester);
     expect(find.text('Contos'), findsWidgets);
     expect(cabecera(), AppTheme.familias);

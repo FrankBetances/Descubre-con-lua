@@ -144,6 +144,16 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
   }
 
   /// Leva á vista, na tira, a pastilla do mes elixido.
+  // En el Portal Familias el calendario es una pestaña: si la lengua cambia
+  // en otra, al volver aquí tiene que estar en la nueva.
+  @override
+  void didUpdateWidget(covariant CalendarioFogarScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.initialLanguage != widget.initialLanguage) {
+      _language = widget.initialLanguage;
+    }
+  }
+
   void _amosarMesElixido() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final ctx = _chavesMeses[_mesIndex].currentContext;

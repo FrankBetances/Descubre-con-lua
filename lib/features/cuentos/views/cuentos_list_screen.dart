@@ -21,12 +21,21 @@ class CuentosListScreen extends StatefulWidget {
   final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
+  /// La edad con la que se abre (`curso_0_2`…). Sin ella, todas.
+  final String? initialCursoId;
+
+  /// El cuento de esta semana va el primero: la biblioteca se abre por él.
+  /// [mes] es el del curso (1 es septiembre).
+  final ({int mes, int semana})? semanaDestacada;
+
   const CuentosListScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.audioService,
+    this.initialCursoId,
+    this.semanaDestacada,
   });
 
   @override
@@ -43,7 +52,7 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
   List<Cuento> _allCuentos = [];
   List<Cuento> _filteredCuentos = [];
   bool _isLoading = true;
-  String _selectedCurso = 'todos';
+  late String _selectedCurso = widget.initialCursoId ?? 'todos';
   String _searchQuery = '';
 
   static const List<Map<String, String>> _cursosFiltro = [
@@ -89,6 +98,13 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
               .contains(_searchQuery.toLowerCase());
       return matchesCurso && matchesSearch;
     }).toList();
+    // El de esta semana, delante; el resto, en su orden.
+    final d = widget.semanaDestacada;
+    if (d != null) {
+      final i = _filteredCuentos.indexWhere(
+          (c) => c.mesNumero == d.mes && c.semanaSugerida == d.semana);
+      if (i > 0) _filteredCuentos.insert(0, _filteredCuentos.removeAt(i));
+    }
   }
 
   @override

@@ -308,15 +308,45 @@ CONEXION = {
 
 _TITULO = re.compile(r'"([^"]+)"')
 
+HISTORIAS = ROOT / "assets" / "content" / "cuentos" / "historias_progresivas.json"
+
+
+def _contos_da_semana() -> dict[tuple[str, int, int], dict[str, str]]:
+    """El cuento de cada semana del curso: (curso, mes, semana) → título."""
+    datos = json.loads(HISTORIAS.read_text(encoding="utf-8"))
+    contos = datos if isinstance(datos, list) else (
+        datos.get("cuentos") or datos.get("contos") or [])
+    saida = {}
+    for c in contos:
+        semana = c.get("semanaSugerida")
+        if not semana:
+            continue
+        clave = (c.get("cursoId"), int(c.get("mesNumero", 0)), int(semana))
+        saida.setdefault(clave, c.get("titulo") or {})
+    return saida
+
+
+_CONTOS_DA_SEMANA = _contos_da_semana()
+
 
 def titulo_do_conto(dia: dict, lingua: str) -> str:
-    """El título del cuento del día, EN SU LENGUA.
+    """El título del cuento de esa semana, EN SU LENGUA.
 
-    Sale de `profesorado.actividadAula`, que es el campo que lo trae entre
-    comillas en gallego y en castellano. Leerlo siempre del castellano dejaba
-    la rutina gallega citando un título en castellano, que es justo el tipo de
-    mezcla que una familia de Vigo nota a la primera.
+    Es el cuento de la semana de la biblioteca: el que la familia abre desde
+    «Hoxe» y el que la escuela lee con las palabras de la semana. Antes salía
+    de `profesorado.actividadAula`, que trae el nombre interno de la asamblea,
+    y una familia leía «repite o saúdo de "Asemblea de Outubro: O Círculo dos
+    Amigos de Lúa"» sin saber qué era eso (A6 de la revisión de interfaz).
+
+    Si una semana no tuviera cuento, se queda el de la asamblea, en su lengua:
+    leerlo siempre del castellano dejaba la rutina gallega citando un título
+    en castellano.
     """
+    clave = (curso_do_dia(dia), int(dia.get("mesNumero", 0)),
+             int(dia.get("semanaNumero", 0)))
+    titulo = (_CONTOS_DA_SEMANA.get(clave) or {}).get(lingua, "").strip()
+    if titulo:
+        return titulo
     for lado, campo in (("profesorado", "actividadAula"),
                         ("familias", "rutinaFogar")):
         texto = ((dia.get(lado) or {}).get(campo) or {}).get(lingua, "")

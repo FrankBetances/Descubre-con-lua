@@ -38,6 +38,11 @@ import 'package:descubre_con_lua/features/english/views/fsrs_trainer_screen.dart
 import 'package:descubre_con_lua/features/english/views/listening_screen.dart';
 import 'package:descubre_con_lua/features/english/views/palabras_do_traxecto_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
+import 'package:descubre_con_lua/core/localization/localized_string.dart';
+import 'package:descubre_con_lua/data/models/dia_calendario_dual_model.dart';
+import 'package:descubre_con_lua/features/familias/views/guias_familias_screen.dart';
+import 'package:descubre_con_lua/features/familias/views/explorar_familias_screen.dart';
+import 'package:descubre_con_lua/features/familias/views/xogo_de_hoxe_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart';
 import 'package:descubre_con_lua/features/formacion/views/formacion_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
@@ -103,6 +108,7 @@ class Pasarela {
   late Unidad unidade;
   late AsambleaSegundoCiclo asamblea;
   late SteamUnit steam;
+  late DiaCalendarioDual diaDeCasa;
   late ProgressService progreso;
   late String colocacions;
   late Directory _tmp;
@@ -113,7 +119,7 @@ class Pasarela {
 
   Future<void> cargar() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    await _cargarFontes();
+    await cargarFontes();
     Future<String> ler(String p) => File(p).readAsString();
 
     _tmp = Directory.systemTemp.createTempSync('pasarela_');
@@ -166,6 +172,10 @@ class Pasarela {
     asamblea = contenido.getAsambleaByMesYNivelSync(
         10, NivelEducativoSegundoCiclo.infantil4)!;
     steam = contenido.steamUnits.first;
+    // O venres 2 de outubro de 0-2 anos: o do exemplo da revisión (A6).
+    diaDeCasa =
+        (await contenido.loadCalendarioDias(cursoId: 'curso_0_2', mes: 2))
+            .firstWhere((d) => d.semanaNumero == 1 && d.diaSemanaNumero == 5);
   }
 
   void limpar() {
@@ -174,7 +184,7 @@ class Pasarela {
 
   /// Nunito e as iconas de Material. Sen elas o test pinta coa fonte de
   /// recheo, máis ancha, e mide outra app (regra 1c).
-  static Future<void> _cargarFontes() async {
+  static Future<void> cargarFontes() async {
     File? iconas;
     var dir = File(Platform.resolvedExecutable).parent;
     for (var i = 0; i < 8 && iconas == null; i++) {
@@ -261,6 +271,43 @@ class Pasarela {
                   onToggleLanguage: () {},
                   premios: premios,
                   calendario: store,
+                  agora: agora,
+                )),
+        PantallaDaApp(
+            'xogo_de_hoxe',
+            Portal.familias,
+            (l) => XogoDeHoxeScreen(
+                  dia: diaDeCasa,
+                  eHoxe: true,
+                  nomeDoDia: const LocalizedString(gl: 'Venres', es: 'Viernes'),
+                  language: l,
+                  store: store,
+                  audioService: audio,
+                  plan: programa.curso('curso_0_2')!.planDoDia(10, 1, 5),
+                  agora: agora,
+                )),
+        PantallaDaApp(
+            'explorar_familias',
+            Portal.familias,
+            (l) => ExplorarFamiliasScreen(
+                  repository: contenido,
+                  language: l,
+                  onLanguageChanged: (_) {},
+                  cursoId: 'curso_0_2',
+                  onCambiarCurso: (_) {},
+                  audioService: audio,
+                  agora: agora,
+                )),
+        PantallaDaApp(
+            'guias_familias',
+            Portal.familias,
+            (l) => GuiasFamiliasScreen(
+                  repository: contenido,
+                  language: l,
+                  onLanguageChanged: (_) {},
+                  premios: premios,
+                  calendario: store,
+                  audioService: audio,
                 )),
         PantallaDaApp(
             'calendario_casa',

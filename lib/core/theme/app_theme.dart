@@ -407,6 +407,35 @@ class AppTheme {
         linearTrackColor: border,
         linearMinHeight: 10,
       ),
+      // Las pestañas de abajo de cada portal: Hoxe, Calendario, Explorar,
+      // Guías. La elegida, con el acento en el icono, la letra y la píldora;
+      // las demás, en gris de texto, que pasa AA sobre blanco.
+      navigationBarTheme: NavigationBarThemeData(
+        backgroundColor: card,
+        surfaceTintColor: Colors.transparent,
+        indicatorColor: tinte,
+        height: 68,
+        elevation: 0,
+        labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
+        iconTheme: WidgetStateProperty.resolveWith(
+          (estados) => IconThemeData(
+            size: 24,
+            color:
+                estados.contains(WidgetState.selected) ? acento : textSecondary,
+          ),
+        ),
+        labelTextStyle: WidgetStateProperty.resolveWith(
+          (estados) => TextStyle(
+            fontFamily: fontFamily,
+            fontSize: 12.5,
+            fontWeight: estados.contains(WidgetState.selected)
+                ? FontWeight.w800
+                : FontWeight.w700,
+            color:
+                estados.contains(WidgetState.selected) ? acento : textSecondary,
+          ),
+        ),
+      ),
     );
   }
 
