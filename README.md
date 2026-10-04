@@ -106,7 +106,7 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 
 | | |
 | --- | --- |
-| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el aula de los dos ciclos, el calendario, Academy, STEAM, las lenguas y la voz, los premios y la privacidad—. Lleva 30 imágenes de pantalla, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el aula de los dos ciclos, el calendario, Academy, STEAM, las lenguas y la voz, los premios y la privacidad—. Lleva 32 imágenes de pantalla: 16 pantallas, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
 | [**Base pedagógica de STEAM**](docs/BASE_PEDAGOGICA_STEAM.md) | Qué hay en las cinco sesiones STEAM y por qué, sus criterios de seguridad y sus fuentes |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
@@ -339,9 +339,10 @@ El texto vive en un solo sitio a propósito: cuando el constructor lleva su
 propia copia, la fuente avanza y el documento generado se queda describiendo una
 versión anterior sin que nada avise.
 
-Las 24 imágenes que el manual incrusta viven en `docs/capturas/` —que guarda 36
-PNG en total, porque también están las de las láminas y las que aún no entran en
-el manual— y se regeneran con:
+Las 32 imágenes que el manual incrusta viven en `docs/capturas/`, que guarda
+además las hojas de las láminas, las capturas que aún no entran en el manual y
+las de la app de escritorio que acompañan a cada cambio de pantalla. Las del
+manual se regeneran con:
 
 ```bash
 flutter test --tags capturas --update-goldens test/capturas_test.dart
@@ -393,7 +394,7 @@ assets/content/ unidades, cápsulas, asamblea y premios en JSON, bilingües
 assets/voice/   grabaciones neuronales (generadas en CI)
 assets/brand/   rejilla de píxeles de Lúa: de aquí salen icono y splash
                 awards/ (los 10 glifos de insignia) · logos/ (marcas)
-docs/capturas/  32 PNG del motor de Flutter; 20 los incrusta el manual
+docs/capturas/  imágenes de la app; 32 las incrusta el manual
 tools/          gates y tubería de voz
 LICENSE.md      condiciones de uso: familias gratis, instituciones con licencia
 ```

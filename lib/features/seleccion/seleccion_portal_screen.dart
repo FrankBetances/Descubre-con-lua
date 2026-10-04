@@ -155,6 +155,11 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                   isGl
                       ? 'Calendario escolar de casa: de 0 a 6 anos, curso a curso, e actividades diarias de 3 min'
                       : 'Calendario escolar de casa: de 0 a 6 años, curso a curso, y actividades diarias de 3 min',
+                  // STEAM nomeado na porta: antes só se sabía del baixando ata
+                  // o final do portal.
+                  isGl
+                      ? 'Ciencia coas mans (STEAM): un xogo de ciencia por idade, con cousas da casa'
+                      : 'Ciencia con las manos (STEAM): un juego de ciencia por edad, con cosas de casa',
                   isGl
                       ? 'Biblioteca de contos dialóxicos con preguntas graduadas'
                       : 'Biblioteca de cuentos dialógicos con preguntas graduadas',
