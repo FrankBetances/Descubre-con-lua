@@ -10,7 +10,15 @@ class EstrategiaPedagogica {
   final String clave;
   final LocalizedString nome;
   final LocalizedString subtitulo;
-  final LocalizedString baseNeurobioloxica;
+
+  /// Por qué funciona, dicho en lenguaje de aula. Antes era una «base
+  /// neurobiolóxica» sin fuente (el hipocampo, la amígdala, la dopamina…), que
+  /// rozaba la finalidad sanitaria que la app excluye.
+  final LocalizedString porQueFunciona;
+
+  /// De dónde sale la evidencia, donde la hay. Nulo si no hay una fuente
+  /// comprobada: mejor sin fuente que con una inventada.
+  final LocalizedString? fonte;
   final LocalizedString comoAplicarNaAula;
   final LocalizedString exemploDialogoAula;
   final LocalizedString erroComunAEvitar;
@@ -21,7 +29,8 @@ class EstrategiaPedagogica {
     required this.clave,
     required this.nome,
     required this.subtitulo,
-    required this.baseNeurobioloxica,
+    required this.porQueFunciona,
+    this.fonte,
     required this.comoAplicarNaAula,
     required this.exemploDialogoAula,
     required this.erroComunAEvitar,
@@ -41,12 +50,17 @@ class EstrategiaPedagogica {
       subtitulo: LocalizedString.fromJson(
         json['subtitulo'] as Map<String, dynamic>? ?? const {},
       ),
-      baseNeurobioloxica: LocalizedString.fromJson(
-        json['baseNeurobioloxica'] as Map<String, dynamic>? ??
+      porQueFunciona: LocalizedString.fromJson(
+        json['porQueFunciona'] as Map<String, dynamic>? ??
+            json['baseNeurobioloxica'] as Map<String, dynamic>? ??
             json['base_neurobioloxica'] as Map<String, dynamic>? ??
             json['base_neurobiologica'] as Map<String, dynamic>? ??
             const {},
       ),
+      fonte: json['fonte'] is Map
+          ? LocalizedString.fromJson(
+              Map<String, dynamic>.from(json['fonte'] as Map))
+          : null,
       comoAplicarNaAula: LocalizedString.fromJson(
         json['comoAplicarNaAula'] as Map<String, dynamic>? ??
             json['como_aplicar_na_aula'] as Map<String, dynamic>? ??
@@ -77,7 +91,8 @@ class EstrategiaPedagogica {
         'clave': clave,
         'nome': nome.toJson(),
         'subtitulo': subtitulo.toJson(),
-        'baseNeurobioloxica': baseNeurobioloxica.toJson(),
+        'porQueFunciona': porQueFunciona.toJson(),
+        if (fonte != null) 'fonte': fonte!.toJson(),
         'comoAplicarNaAula': comoAplicarNaAula.toJson(),
         'exemploDialogoAula': exemploDialogoAula.toJson(),
         'erroComunAEvitar': erroComunAEvitar.toJson(),
@@ -93,7 +108,8 @@ class EstrategiaPedagogica {
           clave == other.clave &&
           nome == other.nome &&
           subtitulo == other.subtitulo &&
-          baseNeurobioloxica == other.baseNeurobioloxica &&
+          porQueFunciona == other.porQueFunciona &&
+          fonte == other.fonte &&
           comoAplicarNaAula == other.comoAplicarNaAula &&
           exemploDialogoAula == other.exemploDialogoAula &&
           erroComunAEvitar == other.erroComunAEvitar &&
@@ -105,7 +121,8 @@ class EstrategiaPedagogica {
         clave,
         nome,
         subtitulo,
-        baseNeurobioloxica,
+        porQueFunciona,
+        fonte,
         comoAplicarNaAula,
         exemploDialogoAula,
         erroComunAEvitar,

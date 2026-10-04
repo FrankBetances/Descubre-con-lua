@@ -197,7 +197,7 @@ void main() {
 
       // O aula xa non lista unidades: ensina UNHA microcápsula, a do grupo e
       // o mes escollidos. A unidade segue no repositorio, pero non é a porta.
-      expect(find.text('Juega con Lúa · Aula'), findsOneWidget);
+      expect(find.text('Xoga con Lúa · Aula'), findsOneWidget);
       expect(find.text('O MEU GRUPO'), findsOneWidget);
       expect(find.text('MES DO CURSO'), findsOneWidget);
       expect(find.byKey(const ValueKey('tarxeta_fluxo_1c')), findsOneWidget);

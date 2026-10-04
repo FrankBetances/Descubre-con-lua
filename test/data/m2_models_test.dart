@@ -415,10 +415,11 @@ void main() {
           'gl': 'Tempo de procesamento',
           'es': 'Tiempo de procesamiento'
         },
-        'baseNeurobioloxica': {
-          'gl': 'Córtex prefrontal',
-          'es': 'Corteza prefrontal'
+        'porQueFunciona': {
+          'gl': 'Dar tempo para pensar',
+          'es': 'Dar tiempo para pensar'
         },
+        'fonte': {'gl': 'Rowe (1986)', 'es': 'Rowe (1986)'},
         'comoAplicarNaAula': {
           'gl': 'Gardar silencio',
           'es': 'Guardar silencio'
@@ -432,6 +433,14 @@ void main() {
       expect(est.id, equals('est-espera-5s'));
       expect(est.clave, equals('espera_5s'));
       expect(est.nome.gl, equals('Regra dos 5 Segundos'));
+      expect(est.porQueFunciona.gl, equals('Dar tempo para pensar'));
+      expect(est.fonte?.es, equals('Rowe (1986)'));
+      // A clave vella aínda se le: un JSON de antes non queda baleiro.
+      expect(
+          EstrategiaPedagogica.fromJson({
+            'baseNeurobioloxica': {'gl': 'Vella', 'es': 'Vieja'},
+          }).porQueFunciona.es,
+          equals('Vieja'));
 
       final jsonDin = {
         'id': 'din-luns-pulso',

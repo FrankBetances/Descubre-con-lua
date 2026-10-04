@@ -1,0 +1,146 @@
+{
+  "id": "xogos_fogar_observar",
+  "nota": "«Que observar» de cada xogo de «Xogos e Dinámicas no Fogar». Substitúe os botóns «Logrado · Asistido · Explorando», que pedían á familia avaliar a súa criatura. Non se marca nin se garda nada.",
+  "xogos": {
+    "xogo_01_caza_tesouro": [
+      {
+        "gl": "Busca coa mirada antes de moverse.",
+        "es": "Busca con la mirada antes de moverse."
+      },
+      {
+        "gl": "Vai cara á mazá ao escoitar «apple».",
+        "es": "Va hacia la manzana al oír «apple»."
+      },
+      {
+        "gl": "Tráecha e mírate para compartilo.",
+        "es": "Te la trae y te mira para compartirlo."
+      }
+    ],
+    "xogo_02_barco_samil": [
+      {
+        "gl": "Busca a túa mirada mentres vos movedes.",
+        "es": "Busca tu mirada mientras os movéis."
+      },
+      {
+        "gl": "Prepárase cando vai chegar a parada.",
+        "es": "Se prepara cuando va a llegar la parada."
+      },
+      {
+        "gl": "Pide máis cun xesto, un son ou un sorriso.",
+        "es": "Pide más con un gesto, un sonido o una sonrisa."
+      }
+    ],
+    "xogo_03_xigante_formiga": [
+      {
+        "gl": "Pisa forte co xigante e suave coa formiga.",
+        "es": "Pisa fuerte con el gigante y suave con la hormiga."
+      },
+      {
+        "gl": "Cambia o paso cando cambias a voz.",
+        "es": "Cambia el paso cuando cambias la voz."
+      },
+      {
+        "gl": "Repite «stomp» ou «tiptoe» contigo.",
+        "es": "Repite «stomp» o «tiptoe» contigo."
+      }
+    ],
+    "xogo_04_cuncha_escoita": [
+      {
+        "gl": "Achega a orella á cuncha e escoita un momento sen moverse.",
+        "es": "Acerca la oreja a la concha y escucha un momento sin moverse."
+      },
+      {
+        "gl": "Pecha os ollos ou pousa a man na cuncha.",
+        "es": "Cierra los ojos o apoya la mano en la concha."
+      },
+      {
+        "gl": "Cóntache o que escoitou, con palabras ou con xestos.",
+        "es": "Te cuenta lo que ha oído, con palabras o con gestos."
+      }
+    ],
+    "xogo_05_espello_corpo": [
+      {
+        "gl": "Mira primeiro o que fas ti e despois faino.",
+        "es": "Mira primero lo que haces tú y después lo hace."
+      },
+      {
+        "gl": "Toca no seu corpo a parte que nomeas.",
+        "es": "Toca en su cuerpo la parte que nombras."
+      },
+      {
+        "gl": "Nomea unha parte do corpo para que a toques ti.",
+        "es": "Nombra una parte del cuerpo para que la toques tú."
+      }
+    ],
+    "xogo_06_masaxe_72bpm": [
+      {
+        "gl": "Abre as mans e estira as pernas.",
+        "es": "Abre las manos y estira las piernas."
+      },
+      {
+        "gl": "Busca a túa cara e a túa voz.",
+        "es": "Busca tu cara y tu voz."
+      },
+      {
+        "gl": "Avisa cando quere parar: xira, chora ou axítase.",
+        "es": "Avisa cuando quiere parar: se gira, llora o se agita."
+      }
+    ],
+    "xogo_07_circuito_5palabras": [
+      {
+        "gl": "Salta á seguinte cartolina ao escoitar a palabra.",
+        "es": "Salta a la siguiente cartulina al oír la palabra."
+      },
+      {
+        "gl": "Fai o xesto de cada palabra, aínda que non a diga.",
+        "es": "Hace el gesto de cada palabra, aunque no la diga."
+      },
+      {
+        "gl": "Para ao escoitar «freeze».",
+        "es": "Se para al oír «freeze»."
+      }
+    ],
+    "xogo_08_gran_reto_freeze": [
+      {
+        "gl": "Para ao escoitar «Freeze!», aínda que sexa un pouco tarde.",
+        "es": "Se para al oír «Freeze!», aunque sea un poco tarde."
+      },
+      {
+        "gl": "Aguanta a postura uns segundos.",
+        "es": "Aguanta la postura unos segundos."
+      },
+      {
+        "gl": "Ri ou pide outra rolda.",
+        "es": "Se ríe o pide otra ronda."
+      }
+    ],
+    "xogo_09_caixa_sons_texturas": [
+      {
+        "gl": "Toca todo antes de escoller.",
+        "es": "Lo toca todo antes de elegir."
+      },
+      {
+        "gl": "Saca a textura que pediches: soft, spiky, smooth ou hard.",
+        "es": "Saca la textura que pediste: soft, spiky, smooth o hard."
+      },
+      {
+        "gl": "Pon cara de sorpresa ou di como é ao tacto.",
+        "es": "Pone cara de sorpresa o dice cómo es al tacto."
+      }
+    ],
+    "xogo_10_eco_pes_mans": [
+      {
+        "gl": "Repite as palmadas despois de ti.",
+        "es": "Repite las palmadas después de ti."
+      },
+      {
+        "gl": "Alterna mans e pés, aínda que non vaia ao compás.",
+        "es": "Alterna manos y pies, aunque no vaya al compás."
+      },
+      {
+        "gl": "Inventa un ritmo para que o repitas ti.",
+        "es": "Inventa un ritmo para que lo repitas tú."
+      }
+    ]
+  }
+}

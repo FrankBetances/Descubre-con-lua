@@ -66,3 +66,29 @@ de `test/laminas_hoja_test.dart` y se rehacen con:
 ```bash
 flutter test --tags capturas --update-goldens test/laminas_hoja_test.dart
 ```
+
+## Las capturas de la app de escritorio
+
+Las que empiezan por `l0-` y las de `vocabulario-flower-` son otra cosa: la app
+**compilada para escritorio** (Linux), abierta en una pantalla virtual de
+360 × 780 px y recorrida a mano por el mismo camino que usa quien la maneja
+(Inicio → Comezar → portal → módulo). Son la prueba de que un cambio se ve donde
+se dijo, no ilustraciones del manual, y el manual no las usa.
+
+Tampoco son capturas de un aparato: la app de escritorio comparte la interfaz con
+la de Android, pero no sus barras del sistema, su densidad ni su escala de texto.
+
+| Fichero | Qué enseña |
+| --- | --- |
+| `vocabulario-flower-{gl,es}.png` | El vocabulario de uso habitual buscando *flower*: definición y frase escritas a mano |
+| `l0-c1-calendario-casa-{gl,es}.png` | El calendario de casa abierto en el mes de hoy (3/10: octubre, lunes de la semana 1) |
+| `l0-c2-vocabulario-{gl,es}.png` | La tarjeta «Vocabulario de uso habitual» del Portal Docentes, con sus números reales |
+| `l0-c3-aprender-a-ler-{gl,es}.png` | «Que observar» en lugar de los botones de calificar, en Aprender a Ler |
+| `l0-c3-xogos-casa-{gl,es}.png` | «Que observar» en los Xogos e Dinámicas no Fogar |
+| `l0-c4-laminas-{gl,es}.png` | Una lámina de título largo, entero en tres líneas y sin desborde |
+| `l0-c5-biblioteca-{gl,es}.png` | La biblioteca: el mes por su nombre y la semana solo en el cuento de la semana |
+| `l0-c5-visor-{gl,es}.png` | La cabecera del visor: la edad y el mes, sin «CURSO_0_2» ni «Semana 1» |
+| `l0-a5-estratexias-{gl,es}.png` | «Por que funciona» en lenguaje de aula, con su fuente |
+| `l0-a5-dinamicas-{gl,es}.png` | La dinámica del viernes sin «ton vagal» ni «regulación parasimpática» |
+| `l0-m2-xoga-con-lua-gl.png` | «Xoga con Lúa» en la interfaz gallega, en la elección de portal |
+| `l0-m7-reprodutor-{gl,es}.png` | El reproductor de la asamblea: volver es una flecha visible y «Seguinte fase» cabe |

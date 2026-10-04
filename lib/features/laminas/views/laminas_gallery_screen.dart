@@ -181,23 +181,22 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
             ),
           ),
 
-          // Count
+          // Cuántas hay. Sin Row: un Row con un solo texto no lo deja bajar de
+          // línea, y con la letra grande del sistema desbordaba 168 px.
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  lang == AppLanguage.gl
-                      ? '${_filteredLaminas.length} láminas dispoñibles'
-                      : '${_filteredLaminas.length} láminas disponibles',
-                  style: const TextStyle(
-                    color: AppTheme.textSecondary,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                  ),
+            child: Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: Text(
+                lang == AppLanguage.gl
+                    ? '${_filteredLaminas.length} láminas dispoñibles'
+                    : '${_filteredLaminas.length} láminas disponibles',
+                style: const TextStyle(
+                  color: AppTheme.textSecondary,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600,
                 ),
-              ],
+              ),
             ),
           ),
 
@@ -214,100 +213,36 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                           style: const TextStyle(color: AppTheme.textSecondary),
                         ),
                       )
-                    : GridView.builder(
+                    // Filas de dos y no una rejilla de proporción fija: con la
+                    // proporción fija cada tarjeta desbordaba 22 px por abajo
+                    // y, en un APK de producción, el texto simplemente se
+                    // cortaba. Así cada fila mide lo que pide su tarjeta más
+                    // alta.
+                    : ListView.builder(
                         padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          childAspectRatio: 0.85,
-                          crossAxisSpacing: 12,
-                          mainAxisSpacing: 12,
-                        ),
-                        itemCount: _filteredLaminas.length,
-                        itemBuilder: (context, index) {
-                          final lamina = _filteredLaminas[index];
-                          return Card(
-                            elevation: 0.5,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(16),
-                            ),
-                            child: InkWell(
-                              borderRadius: BorderRadius.circular(16),
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (_) => LaminaDetailScreen(
-                                      lamina: lamina,
-                                      language: _language,
-                                      audioService: widget.audioService,
-                                    ),
+                        itemCount: (_filteredLaminas.length + 1) ~/ 2,
+                        itemBuilder: (context, fila) {
+                          final i = fila * 2;
+                          final segunda = i + 1 < _filteredLaminas.length
+                              ? _filteredLaminas[i + 1]
+                              : null;
+                          return Padding(
+                            padding: const EdgeInsets.only(bottom: 12),
+                            child: IntrinsicHeight(
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  Expanded(
+                                    child: _tarxeta(
+                                        context, _filteredLaminas[i], lang),
                                   ),
-                                );
-                              },
-                              child: Padding(
-                                padding: const EdgeInsets.all(12),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    // La lámina, dibujada. Las 205 tienen una:
-                                    // 88 reutilizan un dibujo del repositorio y
-                                    // el resto son tarjeta tipográfica, todas
-                                    // en el mismo formato vectorial.
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(10),
-                                      child: LaminaEscena(
-                                        clave: lamina.lamina,
-                                        ancho: 92,
-                                        mentres: const Icon(
-                                          Icons.photo_library,
-                                          size: 36,
-                                          color: AppTheme.primaryDark,
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Text(
-                                      lang == AppLanguage.gl
-                                          ? lamina.gl
-                                          : lamina.es,
-                                      style: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 14,
-                                        color: AppTheme.textPrimary,
-                                      ),
-                                      textAlign: TextAlign.center,
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                    const SizedBox(height: 2),
-                                    Text(
-                                      lamina.en,
-                                      style: const TextStyle(
-                                        fontSize: 12,
-                                        color: AppTheme.primaryInk,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 8),
-                                    Container(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 6, vertical: 2),
-                                      decoration: BoxDecoration(
-                                        color: AppTheme.primaryLight,
-                                        borderRadius: BorderRadius.circular(6),
-                                      ),
-                                      child: Text(
-                                        lamina.cefr,
-                                        style: const TextStyle(
-                                          color: AppTheme.primaryInk,
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
+                                  const SizedBox(width: 12),
+                                  Expanded(
+                                    child: segunda == null
+                                        ? const SizedBox.shrink()
+                                        : _tarxeta(context, segunda, lang),
+                                  ),
+                                ],
                               ),
                             ),
                           );
@@ -315,6 +250,94 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                       ),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _tarxeta(BuildContext context, Lamina lamina, AppLanguage lang) {
+    return Card(
+      elevation: 0.5,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(16),
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => LaminaDetailScreen(
+                lamina: lamina,
+                language: _language,
+                audioService: widget.audioService,
+              ),
+            ),
+          );
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // La lámina, dibujada. Las 205 tienen una:
+              // 88 reutilizan un dibujo del repositorio y
+              // el resto son tarjeta tipográfica, todas
+              // en el mismo formato vectorial.
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: LaminaEscena(
+                  clave: lamina.lamina,
+                  ancho: 92,
+                  mentres: const Icon(
+                    Icons.photo_library,
+                    size: 36,
+                    color: AppTheme.primaryDark,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                lang == AppLanguage.gl ? lamina.gl : lamina.es,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                  color: AppTheme.textPrimary,
+                ),
+                textAlign: TextAlign.center,
+                // Hasta tres líneas: títulos como «O conto da lúa chea que
+                // vixía o sono» no caben en una, y antes se cortaban.
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+              ),
+              const SizedBox(height: 2),
+              Text(
+                lamina.en,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: AppTheme.primaryInk,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                decoration: BoxDecoration(
+                  color: AppTheme.primaryLight,
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: Text(
+                  lamina.cefr,
+                  style: const TextStyle(
+                    color: AppTheme.primaryInk,
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

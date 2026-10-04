@@ -730,13 +730,23 @@ class _BarraInferior extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
       child: Row(
         children: [
-          Expanded(
-            child: SizedBox(
-              height: AppTheme.backstageTouchMin,
+          // Volver es la acción secundaria: un botón cuadrado con la flecha y
+          // su nombre para TalkBack. Con un tercio de la fila, a 360 px
+          // «Anterior» se partía en dos líneas («Anteri / or»); a partes
+          // iguales se cortaría «Seguinte fase», que es la acción principal.
+          Tooltip(
+            message: isGl ? 'Fase anterior' : 'Fase anterior',
+            child: SizedBox.square(
+              dimension: AppTheme.backstageTouchMin,
               child: OutlinedButton(
                 key: const ValueKey('player_fase_anterior'),
                 onPressed: indice > 0 ? onAnterior : null,
                 style: OutlinedButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  // El tema da fondo blanco a los OutlinedButton: sin esto la
+                  // flecha clara quedaba casi invisible sobre blanco.
+                  backgroundColor: _AsambleaPlayerScreenState._superficie,
+                  disabledBackgroundColor: _AsambleaPlayerScreenState._fondo,
                   foregroundColor: _AsambleaPlayerScreenState._textoPrincipal,
                   disabledForegroundColor: _AsambleaPlayerScreenState._borde,
                   side: const BorderSide(
@@ -745,20 +755,12 @@ class _BarraInferior extends StatelessWidget {
                     borderRadius: BorderRadius.circular(AppTheme.radiusButton),
                   ),
                 ),
-                child: Text(
-                  isGl ? 'Anterior' : 'Anterior',
-                  style: const TextStyle(
-                    fontFamily: AppTheme.fontFamily,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
+                child: const Icon(Icons.arrow_back_rounded, size: 28),
               ),
             ),
           ),
           const SizedBox(width: 12),
           Expanded(
-            flex: 2,
             child: SizedBox(
               height: AppTheme.backstageTouchMin,
               child: ElevatedButton(

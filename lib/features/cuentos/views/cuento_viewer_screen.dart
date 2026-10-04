@@ -11,6 +11,7 @@ import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../widgets/palabras_do_conto.dart';
 
 import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../juega/widgets/aula_ciclo_panel.dart';
 
 /// Visor interactivo e guiado do conto para docentes e familias.
 ///
@@ -45,6 +46,13 @@ class CuentoViewerScreen extends StatefulWidget {
 }
 
 class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
+  /// «0-2 anos» e non «CURSO_0_2», que é o identificador interno.
+  static String _idadeDoCurso(String cursoId, bool isGl) {
+    final m = RegExp(r'^curso_(\d)_(\d)$').firstMatch(cursoId);
+    if (m == null) return cursoId;
+    return '${m[1]}-${m[2]} ${isGl ? 'anos' : 'años'}';
+  }
+
   int _currentPageIndex = 0;
   bool _mostrarPreguntas = false;
   bool _mostrarPautas = false;
@@ -112,7 +120,12 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
               overflow: TextOverflow.ellipsis,
             ),
             Text(
-              '${cuento.cursoId.toUpperCase()} · Mes ${cuento.mesNumero} · ${isGl ? "Semana" : "Semana"} ${cuento.semanaSugerida}',
+              [
+                _idadeDoCurso(cuento.cursoId, isGl),
+                nomeDoMes[cuento.mesCalendario]?.resolve(lang) ?? '',
+                if (cuento.semanaSugerida case final semana?)
+                  '${isGl ? "semana" : "semana"} $semana',
+              ].join(' · '),
               style: const TextStyle(
                 color: AppTheme.textSecondary,
                 fontSize: 11,

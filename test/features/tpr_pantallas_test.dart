@@ -639,6 +639,7 @@ void main() {
           store: store,
           initialLanguage: lang,
           audioService: MockOfflineAudioService(),
+          agora: DateTime(2026, 10, 2),
         ),
         tamano: const Size(400, 2600),
       );
@@ -647,10 +648,9 @@ void main() {
       await tester.scrollUntilVisible(bloque, 200, scrollable: lista);
       await tester.pumpAndSettle();
       expect(bloque, findsOneWidget);
-      // O calendario da casa abre por setembro e polo día de hoxe.
-      final hoxe = ProgresionDoMes.hoxe();
-      compruebaPalabras(
-          bloque, curso.planDoDia(9, hoxe.semana, hoxe.dia)!, lang);
+      // O calendario da casa abre no día que toca: o venres 2/10 é outubro,
+      // semana 1, día 5. Antes abría sempre en setembro.
+      compruebaPalabras(bloque, curso.planDoDia(10, 1, 5)!, lang);
       expect(erroresDe(tester), isEmpty);
     });
 

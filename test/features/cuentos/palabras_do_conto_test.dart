@@ -40,8 +40,9 @@ void main() {
     banco = ler('assets/content/cuentos/banco100_cuentos.json');
   });
 
-  SemanaTpr semanaDe(Cuento c) =>
-      programa.curso(c.cursoId)!.semanaPorOrden(c.mesNumero, c.semanaSugerida)!;
+  SemanaTpr semanaDe(Cuento c) => programa
+      .curso(c.cursoId)!
+      .semanaPorOrden(c.mesNumero, c.semanaSugerida!)!;
 
   test('o texto pártese polas comiñas inglesas, coas comiñas dentro', () {
     final t = PalabrasNoConto.trozos('Di “Hello!” e “Bye”.');

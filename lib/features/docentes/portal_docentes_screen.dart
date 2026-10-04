@@ -337,7 +337,7 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
             _buildDocenteModuleCard(
               context: context,
               title: isGl
-                  ? 'Juega con Lúa · Modo Aula'
+                  ? 'Xoga con Lúa · Modo Aula'
                   : 'Juega con Lúa · Modo Aula',
               description: isGl
                   ? 'Asambleas guiadas para 1.º Ciclo (0-2 e 2-3 anos) e 2.º Ciclo (4, 5 e 6 de Infantil), canción a pulso visual a 72 bpm, exploración sensorial e matemáticas temperás.'
@@ -576,20 +576,22 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
             ),
             const SizedBox(height: 12.0),
 
-            // 7. Corpus 8.000 Palabras
+            // 7. Vocabulario de uso habitual. Antes prometía «8.000 palabras»,
+            // «bandas 1k-8k» y «CEFR (A1-C2)»: son 3.995, de la banda 1k a la
+            // 4k, y el nivel no es del MCER (la propia pantalla lo dice).
             _buildDocenteModuleCard(
               context: context,
               title: isGl
-                  ? 'Corpus 8.000 Palabras (BNC/COCA)'
-                  : 'Corpus 8.000 Palabras (BNC/COCA)',
+                  ? 'Vocabulario de uso habitual'
+                  : 'Vocabulario de uso habitual',
               description: isGl
-                  ? 'Explorador léxico con bandas de frecuencia 1k-8k e clasificación curricular CEFR (A1-C2).'
-                  : 'Explorador léxico con bandas de frecuencia 1k-8k y clasificación curricular CEFR (A1-C2).',
+                  ? '3.995 palabras das máis frecuentes do inglés (bandas 1k-4k), con definición, frase e son.'
+                  : '3.995 palabras de las más frecuentes del inglés (bandas 1k-4k), con definición, frase y sonido.',
               icon: Icons.format_list_numbered_rounded,
               iconColor: const Color(0xFF4A5568),
               iconBg: const Color(0xFFEDF2F7),
-              badge: isGl ? 'Corpus Léxico' : 'Corpus Léxico',
-              buttonText: isGl ? 'Abrir Corpus' : 'Abrir Corpus',
+              badge: isGl ? 'Inglés' : 'Inglés',
+              buttonText: isGl ? 'Abrir o vocabulario' : 'Abrir el vocabulario',
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(

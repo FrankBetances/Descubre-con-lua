@@ -218,7 +218,7 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                 illustration: const IlustracionEscola(height: 145),
                 puntosClave: [
                   isGl
-                      ? 'Juega con Lúa: asambleas guiadas (1.º e 2.º ciclo) e canción a pulso'
+                      ? 'Xoga con Lúa: asembleas guiadas (1.º e 2.º ciclo) e canción a pulso'
                       : 'Juega con Lúa: asambleas guiadas (1.º y 2.º ciclo) y canción a pulso',
                   'Planificador curricular',
                   isGl

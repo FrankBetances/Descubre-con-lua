@@ -22,7 +22,21 @@
       "tpr": {
         "gl": "1 golpe de palma por cada sílaba clara",
         "es": "1 golpe de palma por cada sílaba clara"
-      }
+      },
+      "queObservar": [
+        {
+          "gl": "Bate unha palmada por cada anaco, ou ao seu propio ritmo.",
+          "es": "Da una palmada por cada trozo, o a su propio ritmo."
+        },
+        {
+          "gl": "Repite a palabra contigo mentres move as mans.",
+          "es": "Repite la palabra contigo mientras mueve las manos."
+        },
+        {
+          "gl": "Propón unha palabra súa para partila en anacos.",
+          "es": "Propone una palabra suya para partirla en trozos."
+        }
+      ]
     },
     {
       "id": "cf_02",
@@ -41,7 +55,21 @@
       "tpr": {
         "gl": "Salto con xiro cando escoita a rima",
         "es": "Salto con giro cuando escucha la rima"
-      }
+      },
+      "queObservar": [
+        {
+          "gl": "Mira ou sorrí cando dúas palabras soan igual ao final.",
+          "es": "Mira o sonríe cuando dos palabras suenan igual al final."
+        },
+        {
+          "gl": "Salta ou xira ao escoitar a rima.",
+          "es": "Salta o gira al oír la rima."
+        },
+        {
+          "gl": "Inventa unha rima, aínda que a palabra non exista.",
+          "es": "Inventa una rima, aunque la palabra no exista."
+        }
+      ]
     },
     {
       "id": "cf_03",
@@ -60,7 +88,21 @@
       "tpr": {
         "gl": "Sinalar o obxecto e imitar o son /m/",
         "es": "Señalar el objeto e imitar el sonido /m/"
-      }
+      },
+      "queObservar": [
+        {
+          "gl": "Sinala o obxecto que empeza polo son que dis.",
+          "es": "Señala el objeto que empieza por el sonido que dices."
+        },
+        {
+          "gl": "Imita o son e toca a gorxa para sentilo.",
+          "es": "Imita el sonido y se toca la garganta para sentirlo."
+        },
+        {
+          "gl": "Busca na casa outra cousa que empece igual.",
+          "es": "Busca en casa otra cosa que empiece igual."
+        }
+      ]
     }
   ],
   "categoriasAlphabot": [
@@ -770,6 +812,20 @@
       ]
     }
   ],
+  "queObservarAlphabot": [
+    {
+      "gl": "Colle a letra cando dis o seu son.",
+      "es": "Coge la letra cuando dices su sonido."
+    },
+    {
+      "gl": "Pon as letras en fila, aínda que non sexa na orde.",
+      "es": "Pone las letras en fila, aunque no sea en orden."
+    },
+    {
+      "gl": "Di a palabra contigo ao rematar.",
+      "es": "Dice la palabra contigo al terminar."
+    }
+  ],
   "cubosCvc": [
     {
       "id": "cvc_cat",
@@ -898,6 +954,20 @@
       }
     }
   ],
+  "queObservarCvc": [
+    {
+      "gl": "Xunta os tres cubos mentres dis cada son.",
+      "es": "Junta los tres cubos mientras dices cada sonido."
+    },
+    {
+      "gl": "Repite a palabra enteira despois de oíla.",
+      "es": "Repite la palabra entera después de oírla."
+    },
+    {
+      "gl": "Cambia un cubo e escoita como cambia a palabra.",
+      "es": "Cambia un cubo y escucha cómo cambia la palabra."
+    }
+  ],
   "paresMinimos": [
     {
       "id": "par_b_p",
@@ -964,6 +1034,20 @@
         "gl": "Coloca a man diante da boca: con /t/ sinto aire; con /d/ sinto voz.",
         "es": "Coloca la mano delante de la boca: con /t/ siento aire; con /d/ siento voz."
       }
+    }
+  ],
+  "queObservarPares": [
+    {
+      "gl": "Sinala o debuxo da palabra que escoita.",
+      "es": "Señala el dibujo de la palabra que oye."
+    },
+    {
+      "gl": "Nota coa man o aire ou a vibración de cada son.",
+      "es": "Nota con la mano el aire o la vibración de cada sonido."
+    },
+    {
+      "gl": "Pide oír as dúas palabras outra vez.",
+      "es": "Pide oír las dos palabras otra vez."
     }
   ]
 }

@@ -65,7 +65,7 @@ class CirculoDoDia extends StatefulWidget {
   ///
   /// Primero, el cuento DE LA SEMANA: el que lleva sus palabras inglesas, que
   /// son las del día. Los del banco no son de ninguna semana —el modelo les
-  /// pone la 1 por defecto— y, ordenados por id, iban delante: la primera
+  /// ponía la 1 por defecto— y, ordenados por id, iban delante: la primera
   /// semana de cada mes «O conto de hoxe» abría un cuento del banco sin
   /// ninguna de las palabras del día.
   ///
@@ -73,9 +73,8 @@ class CirculoDoDia extends StatefulWidget {
   /// centro de interés. Lo que no vale es dejar la fila vacía teniendo
   /// material del mes a mano.
   static Cuento? contoDaSemana(List<Cuento> cuentos, int semana) {
-    bool levaPalabras(Cuento c) => c.paginas.any((p) => p.palabras.isNotEmpty);
     for (final c in cuentos) {
-      if (c.semanaSugerida == semana && levaPalabras(c)) return c;
+      if (c.semanaSugerida == semana && c.levaPalabras) return c;
     }
     for (final c in cuentos) {
       if (c.semanaSugerida == semana) return c;
@@ -153,9 +152,12 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
           cuento: cuento,
           language: widget.language,
           audioService: widget.audioService,
-          semanaTpr: widget.repository
-              .cursoTprSync(cuento.cursoId)
-              ?.semanaPorOrden(cuento.mesNumero, cuento.semanaSugerida),
+          semanaTpr: switch (cuento.semanaSugerida) {
+            final semana? => widget.repository
+                .cursoTprSync(cuento.cursoId)
+                ?.semanaPorOrden(cuento.mesNumero, semana),
+            null => null,
+          },
           dia: eDeHoxe ? widget.dia : null,
         ),
       ),
