@@ -74,6 +74,9 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
 
   static const List<Map<String, String>> _categories = [
     {'id': 'todas', 'gl': 'Todas as Áreas', 'es': 'Todas las Áreas'},
+    // STEAM, segundo, como o seu módulo: era a penúltima e non se vía sen
+    // desprazar a fila.
+    {'id': 'steam', 'gl': 'STEAM', 'es': 'STEAM'},
     {'id': 'xogos', 'gl': 'Xogos Físicos (TPR)', 'es': 'Juegos Físicos (TPR)'},
     {'id': 'contos', 'gl': 'Contos Dialogados', 'es': 'Cuentos Dialogados'},
     {'id': 'lectura', 'gl': 'Aprender a Ler', 'es': 'Aprender a Leer'},
@@ -87,7 +90,6 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
       'gl': 'Calendario Escolar',
       'es': 'Calendario Escolar'
     },
-    {'id': 'steam', 'gl': 'STEAM', 'es': 'STEAM'},
     {'id': 'academy', 'gl': 'Pautas de Crianza', 'es': 'Pautas de Crianza'},
   ];
 
@@ -514,7 +516,42 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
               const SizedBox(height: 14.0),
             ],
 
-            // 2. Biblioteca de Contos Ilustrados
+            // 2. STEAM · ciencia coas mans, na versión de casa. Segundo e non
+            // sétimo: era o último dos sete módulos, na cuarta pantalla dun
+            // teléfono, e quen non baixaba ata o final non sabía que existía.
+            if (_matchesFilter('steam')) ...[
+              _buildFamilyModuleCard(
+                context: context,
+                title: isGl
+                    ? 'STEAM na casa · Ciencia coas mans'
+                    : 'STEAM en casa · Ciencia con las manos',
+                description: isGl
+                    ? 'Cinco xogos de ciencia con cousas da casa, un para cada idade de 12 meses a 6 anos: brando e duro, ramplas, son, sombras e un robot que es ti. Con ordes en inglés para responder co corpo.'
+                    : 'Cinco juegos de ciencia con cosas de casa, uno para cada edad de 12 meses a 6 años: blando y duro, rampas, sonido, sombras y un robot que eres tú. Con órdenes en inglés para responder con el cuerpo.',
+                icon: Icons.science_outlined,
+                iconColor: steamTinta,
+                iconBg: steamFondo,
+                badge: isGl ? 'Ciencia e inglés' : 'Ciencia e inglés',
+                buttonText: isGl ? 'Abrir STEAM' : 'Abrir STEAM',
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => SteamHubScreen(
+                        repository: widget.repository,
+                        audioService: widget.audioService,
+                        initialLanguage: _language,
+                        onLanguageChanged: _handleLanguageChanged,
+                        audiencia: SteamAudiencia.hogar,
+                        initialCursoId: _cursoIdActual,
+                      ),
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 14.0),
+            ],
+
+            // 3. Biblioteca de Contos Ilustrados
             if (_matchesFilter('contos')) ...[
               _buildFamilyModuleCard(
                 context: context,
@@ -544,7 +581,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
               const SizedBox(height: 14.0),
             ],
 
-            // 3. Aprender a Ler · Fónica Manipulativa
+            // 4. Aprender a Ler · Fónica Manipulativa
             if (_matchesFilter('lectura')) ...[
               _buildFamilyModuleCard(
                 context: context,
@@ -574,7 +611,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
               const SizedBox(height: 14.0),
             ],
 
-            // 4. Banco de Láminas Didácticas
+            // 5. Banco de Láminas Didácticas
             if (_matchesFilter('laminas')) ...[
               _buildFamilyModuleCard(
                 context: context,
@@ -604,7 +641,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
               const SizedBox(height: 14.0),
             ],
 
-            // 5. Xogos e Dinámicas Físicas no Fogar (TPR)
+            // 6. Xogos e Dinámicas Físicas no Fogar (TPR)
             if (_matchesFilter('xogos')) ...[
               _buildFamilyModuleCard(
                 context: context,
@@ -633,7 +670,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
               const SizedBox(height: 14.0),
             ],
 
-            // 6. Academy · Cápsulas de Crianza
+            // 7. Academy · Cápsulas de Crianza
             if (_matchesFilter('academy')) ...[
               _buildFamilyModuleCard(
                 context: context,
@@ -658,39 +695,6 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                         audioService: widget.audioService,
                         initialLanguage: _language,
                         onLanguageChanged: _handleLanguageChanged,
-                      ),
-                    ),
-                  );
-                },
-              ),
-              const SizedBox(height: 14.0),
-            ],
-
-            // 7. STEAM · ciencia coas mans, na versión de casa
-            if (_matchesFilter('steam')) ...[
-              _buildFamilyModuleCard(
-                context: context,
-                title: isGl
-                    ? 'STEAM na casa · Ciencia coas mans'
-                    : 'STEAM en casa · Ciencia con las manos',
-                description: isGl
-                    ? 'Cinco xogos de ciencia con cousas da casa, un para cada idade de 12 meses a 6 anos: brando e duro, ramplas, son, sombras e un robot que es ti. Con ordes en inglés para responder co corpo.'
-                    : 'Cinco juegos de ciencia con cosas de casa, uno para cada edad de 12 meses a 6 años: blando y duro, rampas, sonido, sombras y un robot que eres tú. Con órdenes en inglés para responder con el cuerpo.',
-                icon: Icons.science_outlined,
-                iconColor: steamTinta,
-                iconBg: steamFondo,
-                badge: isGl ? 'Ciencia e inglés' : 'Ciencia e inglés',
-                buttonText: isGl ? 'Abrir STEAM' : 'Abrir STEAM',
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => SteamHubScreen(
-                        repository: widget.repository,
-                        audioService: widget.audioService,
-                        initialLanguage: _language,
-                        onLanguageChanged: _handleLanguageChanged,
-                        audiencia: SteamAudiencia.hogar,
-                        initialCursoId: _cursoIdActual,
                       ),
                     ),
                   );

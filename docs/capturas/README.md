@@ -69,11 +69,11 @@ flutter test --tags capturas --update-goldens test/laminas_hoja_test.dart
 
 ## Las capturas de la app de escritorio
 
-Las que empiezan por `l0-` y las de `vocabulario-flower-` son otra cosa: la app
-**compilada para escritorio** (Linux), abierta en una pantalla virtual de
-360 × 780 px y recorrida a mano por el mismo camino que usa quien la maneja
-(Inicio → Comezar → portal → módulo). Son la prueba de que un cambio se ve donde
-se dijo, no ilustraciones del manual, y el manual no las usa.
+Las que empiezan por `l0-` y `l1-`, y las de `vocabulario-flower-`, son otra
+cosa: la app **compilada para escritorio** (Linux), abierta en una pantalla
+virtual de 360 × 780 px y recorrida a mano por el mismo camino que usa quien la
+maneja (Inicio → Comezar → portal → módulo). Son la prueba de que un cambio se
+ve donde se dijo, no ilustraciones del manual, y el manual no las usa.
 
 Tampoco son capturas de un aparato: la app de escritorio comparte la interfaz con
 la de Android, pero no sus barras del sistema, su densidad ni su escala de texto.
@@ -92,3 +92,5 @@ la de Android, pero no sus barras del sistema, su densidad ni su escala de texto
 | `l0-a5-dinamicas-{gl,es}.png` | La dinámica del viernes sin «ton vagal» ni «regulación parasimpática» |
 | `l0-m2-xoga-con-lua-gl.png` | «Xoga con Lúa» en la interfaz gallega, en la elección de portal |
 | `l0-m7-reprodutor-{gl,es}.png` | El reproductor de la asamblea: volver es una flecha visible y «Seguinte fase» cabe |
+| `l1-familias-steam-{gl,es}.png` | El Portal Familias: STEAM es el segundo módulo, justo después del calendario, y el segundo chip de la fila de áreas |
+| `l1-inicio-familias-{gl,es}.png` | La tarjeta del Portal Familias en el inicio: STEAM nombrado entre lo que hay dentro |
