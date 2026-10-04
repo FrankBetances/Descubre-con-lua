@@ -4,6 +4,7 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
+import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
@@ -29,6 +30,10 @@ class PalabrasDoTraxectoScreen extends StatefulWidget {
   /// Para los tests: el día que se quiere ver. Por defecto, hoy.
   final DateTime? agora;
 
+  /// El nombre en la cabecera. Desde casa es «Palabras en inglés»; desde el
+  /// aula, «O traxecto».
+  final LocalizedString? titulo;
+
   const PalabrasDoTraxectoScreen({
     super.key,
     required this.programa,
@@ -37,6 +42,7 @@ class PalabrasDoTraxectoScreen extends StatefulWidget {
     this.onLanguageChanged,
     this.audioService,
     this.agora,
+    this.titulo,
   });
 
   /// Cuántos resultados enseña el buscador como mucho.
@@ -107,7 +113,8 @@ class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: isGl ? 'O traxecto' : 'El trayecto',
+        titulo: widget.titulo?.resolve(lang) ??
+            (isGl ? 'O traxecto' : 'El trayecto'),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),

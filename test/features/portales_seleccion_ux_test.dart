@@ -24,6 +24,8 @@ import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/seleccion/seleccion_portal_screen.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 
+import '../helpers/pasarela.dart';
+
 Widget _wrap(Widget child) =>
     MaterialApp(theme: AppTheme.lightTheme, home: child);
 
@@ -211,11 +213,18 @@ void main() {
       await tester.tap(boton);
       await tester.pumpAndSettle();
 
+      // Ábrese por Hoxe: o que toca hoxe, co xogo diante, e as catro
+      // pestanas abaixo. O día lese do paquete: E/S de verdade.
+      await Pasarela.asentar(tester);
       expect(find.byType(PortalFamiliasScreen), findsOneWidget);
-      await _ataVer(tester, find.text('Benvida ao fogar de Lúa'));
-      expect(find.text('Benvida ao fogar de Lúa'), findsOneWidget);
-      await _ataVer(tester, find.text('CERO PANTALLAS INFANTÍS'));
-      expect(find.text('CERO PANTALLAS INFANTÍS'), findsOneWidget);
+      expect(find.byKey(const Key('hoxe_titulo')), findsOneWidget);
+      for (final p in ['Hoxe', 'Calendario', 'Explorar', 'Guías']) {
+        expect(
+            find.descendant(
+                of: find.byType(NavigationBar), matching: find.text(p)),
+            findsOneWidget,
+            reason: p);
+      }
     });
 
     testWidgets('navega á pantalla independente do Portal Docentes',
@@ -249,8 +258,7 @@ void main() {
   });
 
   group('Portal Familias Independente (Filtros, Chips e Selección)', () {
-    testWidgets(
-        'amosa módulos de estimulación familiar e permite filtrar por área e idade',
+    testWidgets('catro pestanas, cada módulo nunha soa e co seu nome de casa',
         (tester) async {
       _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
@@ -265,46 +273,40 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
-      // Módulos visibles por defecto
-      await _ataVer(tester, find.text('Calendario Escolar no Fogar'));
-      expect(find.text('Calendario Escolar no Fogar'), findsOneWidget);
-      await _ataVer(tester, find.text('Biblioteca de Contos Dialóxicos'));
-      expect(find.text('Biblioteca de Contos Dialóxicos'), findsOneWidget);
-      await _ataVer(tester, find.text('Aprender a Ler · Fónica Manipulativa'));
-      expect(find.text('Aprender a Ler · Fónica Manipulativa'), findsOneWidget);
-      await _ataVer(tester, find.text('Banco de Láminas e Vocabulario'));
-      expect(find.text('Banco de Láminas e Vocabulario'), findsOneWidget);
-      await _ataVer(tester, find.text('Xogos e Dinámicas Corporais (TPR)'));
-      expect(find.text('Xogos e Dinámicas Corporais (TPR)'), findsOneWidget);
-      await _ataVer(tester, find.text('Academy · Pautas de Crianza'));
-      expect(find.text('Academy · Pautas de Crianza'), findsOneWidget);
-
-      // Chips de idades dispoñibles
-      await _ataVer(tester, find.text('Todas as idades'));
-      expect(find.text('Todas as idades'), findsOneWidget);
-      await _ataVer(tester, find.text('0-2 anos (Nido)'));
-      expect(find.text('0-2 anos (Nido)'), findsOneWidget);
-      await _ataVer(tester, find.text('2-3 anos (Maternal)'));
-      expect(find.text('2-3 anos (Maternal)'), findsOneWidget);
-
-      // Filtrar por categoría 'Xogos Físicos (TPR)'. Búscase antes de
-      // tocalo: ao baixar ata as idades, a lista pode desmontar a fila de
-      // áreas, que queda por riba.
-      await _ataVer(tester, find.text('Xogos Físicos (TPR)'));
-      await tester.tap(find.text('Xogos Físicos (TPR)'));
+      // Explorar: os seis módulos de casa, sen filtros diante.
+      await tester.tap(find.byKey(const Key('pestana_explorar')));
       await tester.pumpAndSettle();
-
-      await _ataVer(tester, find.text('Xogos e Dinámicas Corporais (TPR)'));
-      expect(find.text('Xogos e Dinámicas Corporais (TPR)'), findsOneWidget);
+      for (final m in [
+        'Contos',
+        'Palabras en inglés',
+        'Xogos de movemento',
+        'Ler xogando',
+        'Láminas',
+        'Ciencia coas mans',
+      ]) {
+        expect(find.text(m), findsOneWidget, reason: m);
+      }
+      // Os nomes de manual xa non están.
       expect(find.text('Biblioteca de Contos Dialóxicos'), findsNothing);
+      expect(find.text('Aprender a Ler · Fónica Manipulativa'), findsNothing);
 
-      // Volver a Todas as Áreas
-      await _ataVer(tester, find.text('Todas as Áreas'));
-      await tester.tap(find.text('Todas as Áreas'));
+      // Guías: o que é para a persoa adulta.
+      await tester.tap(find.byKey(const Key('pestana_guias')));
       await tester.pumpAndSettle();
+      for (final g in [
+        'Antes de empezar',
+        'Guías para a familia',
+        'O inglés na casa',
+        'Os teus premios',
+      ]) {
+        expect(find.text(g), findsOneWidget, reason: g);
+      }
+      expect(find.text('Academy · Pautas de Crianza'), findsNothing);
 
-      await _ataVer(tester, find.text('Biblioteca de Contos Dialóxicos'));
-      expect(find.text('Biblioteca de Contos Dialóxicos'), findsOneWidget);
+      // Calendario: o curso mes a mes, nunha pestana.
+      await tester.tap(find.byKey(const Key('pestana_calendario')));
+      await tester.pumpAndSettle();
+      expect(find.byType(CalendarioFogarScreen), findsOneWidget);
     });
   });
 

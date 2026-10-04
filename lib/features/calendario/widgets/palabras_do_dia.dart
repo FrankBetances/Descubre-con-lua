@@ -144,7 +144,14 @@ class PalabrasDoDia extends StatelessWidget {
         ],
         if (plan.reviewWords.isNotEmpty) ...[
           const SizedBox(height: AppTheme.spaceSm),
-          _Repaso(plan: plan, language: language),
+          _Repaso(
+            plan: plan,
+            language: language,
+            // En casa, el viernes, las veinte del reto también suenan: antes
+            // salían como texto y había que saber pronunciarlas de oído.
+            audioService: !detalle ? audioService : null,
+            conVoz: !detalle,
+          ),
         ],
       ],
     );
@@ -372,8 +379,17 @@ class PalabraConXesto extends StatelessWidget {
 class _Repaso extends StatelessWidget {
   final DailyTprPlan plan;
   final AppLanguage language;
+  final OfflineAudioService? audioService;
 
-  const _Repaso({required this.plan, required this.language});
+  /// El reto del viernes en pastillas con voz, por bloques.
+  final bool conVoz;
+
+  const _Repaso({
+    required this.plan,
+    required this.language,
+    this.audioService,
+    this.conVoz = false,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -391,6 +407,42 @@ class _Repaso extends StatelessWidget {
       );
     }
     const n = WeeklyTprScheduler.palabrasPorDia;
+    if (conVoz) {
+      return Column(
+        key: const Key('reto_con_voz'),
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          for (var i = 0; i * n < plan.reviewWords.length; i++) ...[
+            if (i > 0) const SizedBox(height: AppTheme.spaceSm),
+            Text(
+              '${isGl ? 'Bloque' : 'Bloque'} ${WeeklyTprScheduler.bloques[i]}',
+              style: TextStyle(
+                fontSize: 12.5,
+                fontWeight: FontWeight.w800,
+                color: context.acento,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Wrap(
+              spacing: 6,
+              runSpacing: 6,
+              children: [
+                for (final p in plan.reviewWords.sublist(
+                    i * n,
+                    (i + 1) * n > plan.reviewWords.length
+                        ? plan.reviewWords.length
+                        : (i + 1) * n))
+                  _Pastilla(
+                    palabra: p,
+                    audioService: audioService,
+                    language: language,
+                  ),
+              ],
+            ),
+          ],
+        ],
+      );
+    }
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

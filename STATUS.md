@@ -9,6 +9,90 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L3 de la revisión de interfaz: «Hoxe», la portada de casa (4/10/2026)
+
+Rama `claude/ux-l3`, que se integra en `main` por pull request después de L2.
+
+Qué cambia en pantalla:
+
+- **El Portal Familias va por pestañas: Hoxe · Calendario · Explorar ·
+  Guías.** Antes era una sola lista de cuatro pantallas y media: una
+  bienvenida, una tarjeta que llevaba al calendario, la tarjeta del inglés,
+  dos filas de filtros y siete módulos.
+- **«Hoxe» abre por lo que toca hoy.** Lleva la fecha y «Os tres minutos de
+  hoxe», y debajo:
+  - el juego de casa, con el momento del día como título («Antes de durmir»)
+    y un solo botón, «Comezar»;
+  - las palabras en inglés del día, con su voz;
+  - el cuento de la semana.
+
+  El fin de semana enseña el juego del lunes y lo dice («Os tres minutos do
+  luns»). En julio y agosto enseña el primero del curso.
+- **El juego del día, en palabras de casa.** Se ve el momento, el texto
+  entero y la frase en inglés con sus palabras. «Por que funciona» va
+  plegado. El único botón es «Xa o fixemos», que suma a la racha de la
+  persona adulta como antes. Un juego de lunes visto en domingo no se puede
+  marcar como hecho.
+- **El texto de casa cita el cuento de la semana, no la asamblea (A6).** Las
+  1.000 rutinas decían «repite o saúdo de "Asemblea de Outubro: O Círculo dos
+  Amigos de Lúa"», con el nombre interno de la asamblea. Ahora citan el cuento
+  de esa semana, el que la familia abre desde la misma pantalla: «…remata
+  nomeando o de "Martiño e o nariz escondido"». Lo escribe
+  `tools/humaniza_rutinas_fogar.py`, que ahora toma el título de
+  `historias_progresivas.json`. Su gate (`--check`) sigue vigilando el fichero.
+- **El viernes suenan las 20 palabras del reto.** Antes salían como texto.
+- **La edad se elige una vez**, en un chip arriba, y vale para Hoxe, el
+  calendario y Explorar. No se guarda: dura mientras la app está abierta.
+- **Explorar: seis módulos con su nombre de casa, sin bajar.** Son Contos,
+  Palabras en inglés, Xogos de movemento, Ler xogando, Láminas y Ciencia coas
+  mans. Contos se abre en la edad elegida y con el cuento de la semana
+  delante.
+- **Guías: lo que es para la persona adulta.** La guía de dos minutos, las
+  lecturas de Academy («Guías para a familia»), la guía de inglés en casa y
+  los premios. Antes Academy era el sexto de siete módulos y la guía de inglés
+  vivía dentro de Academy.
+
+Cómo se comprobó:
+
+- `test/features/ux_l3_test.dart`, con el viernes 2/10 de 0-2 años, el
+  ejemplo de la revisión, y el domingo 4/10, en gallego y en castellano:
+  - el título del juego es el momento y el texto cita el cuento de la semana,
+    no la asamblea;
+  - las 20 palabras del viernes llevan voz;
+  - el fin de semana enseña el lunes y no deja marcarlo;
+  - «Xa o fixemos» apunta el día y la portada lo refleja al volver;
+  - la edad cambia el juego y viaja hasta Contos.
+
+  Un test más lee las 1.000 rutinas del JSON y comprueba que cada una cita el
+  cuento de su semana y ninguna la asamblea.
+- La auditoría de L2 incluye las pantallas nuevas: Hoxe, el juego, Explorar y
+  Guías. Comprueba contraste AA medido en la imagen, un solo principal en una
+  línea, cabecera común con GL/ES y Nunito, bajando hasta el final.
+- Los tests de L1 y de STEAM se rehicieron sobre el portal nuevo. STEAM se ve
+  sin bajar en Explorar, medido con la tipografía real; con la de relleno,
+  más ancha, no cabía.
+- La app de escritorio, por el camino de Frank (Inicio → Comezar → Entrar no
+  Portal Familias), en gallego y en castellano. Las capturas están en
+  `docs/capturas/l3-*.png`.
+
+Las capas:
+
+- La interfaz cambia.
+- El JSON de contenido cambia: el texto de casa y la frase de conexión de los
+  1.000 días, en gl y es, regenerados con la herramienta.
+- Esos textos no tienen voz: `tools/voice_corpus.py` no lee
+  `calendario_dias.json`.
+- No hay imprimible afectado.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android.**
+- Que el cuento de la semana sea el que la escuela lee ese día depende de que
+  la docente lo abra desde «Hoxe na aula». **Esto no lo he verificado** en un
+  aula.
+- **Las capturas del manual siguen enseñando el portal de antes.** Se rehacen
+  al terminar L4, como se dijo en L2.
+
 ## Lote L2 de la revisión de interfaz: un sistema visual (4/10/2026)
 
 Rama `claude/ux-l2`, que se integra en `main` por pull request después de L1.

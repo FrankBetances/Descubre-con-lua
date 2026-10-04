@@ -531,7 +531,7 @@ void main() {
       expect(find.text('Brando e duro'), findsOneWidget);
     });
 
-    testWidgets('Portal Familias: el chip, la edad y la versión de casa',
+    testWidgets('Portal Familias: la edad y la versión de casa',
         (tester) async {
       await pintar(
         tester,
@@ -542,29 +542,17 @@ void main() {
           onToggleLanguage: () {},
         ),
       );
-      // El chip STEAM deja solo su tarjeta.
-      final chip = find.text('STEAM');
-      await tester.ensureVisible(chip);
+      // La edad se elige una vez, arriba, en el chip de la portada…
+      await tester.tap(find.byKey(const ValueKey('selector_idade')));
       await tester.pumpAndSettle();
-      await tester.tap(chip);
-      await tester.pumpAndSettle();
-      expect(
-          find.text('STEAM en casa · Ciencia con las manos'), findsOneWidget);
-      expect(find.text('Academy · Pautas de Crianza'), findsNothing);
-
-      // La edad elegida en el portal viaja hasta el hub.
-      final edad = find.text('3-4 años (4.º Infantil)');
-      await tester.ensureVisible(edad);
-      await tester.pumpAndSettle();
-      await tester.tap(edad);
+      await tester.tap(find.byKey(const ValueKey('idade_curso_3_4')));
       await tester.pumpAndSettle();
 
-      final boton = find.text('Abrir STEAM');
-      await tester.scrollUntilVisible(boton, 250,
-          scrollable: find.byType(Scrollable).first);
-      await tester.ensureVisible(boton);
+      // …y viaja hasta «Ciencia con las manos», en Explorar.
+      await tester.tap(find.byKey(const Key('pestana_explorar')));
       await tester.pumpAndSettle();
-      await tester.tap(boton);
+      expect(find.text('Ciencia con las manos'), findsOneWidget);
+      await tester.tap(find.byKey(const ValueKey('explorar_ciencia')));
       await tester.pumpAndSettle();
       final hub = tester.widget<SteamHubScreen>(find.byType(SteamHubScreen));
       expect(hub.audiencia, SteamAudiencia.hogar);

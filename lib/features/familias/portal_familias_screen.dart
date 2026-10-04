@@ -1,37 +1,29 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
-import '../../../core/brand/lua_pixel.dart';
 import '../../../core/localization/app_language.dart';
-import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
-import '../../../data/models/calendario_model.dart';
-import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/cabecera.dart';
-import '../../../data/models/formacion_model.dart';
-import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../academy/views/bloques_list_screen.dart';
 import '../calendario/views/calendario_fogar_screen.dart';
-import '../cuentos/views/cuentos_list_screen.dart';
-import '../formacion/views/formacion_screen.dart';
-import '../laminas/views/laminas_gallery_screen.dart';
-import '../lectura/views/aprender_a_ler_screen.dart';
 import '../premios/premios_repository.dart';
-import '../premios/premios_screen.dart';
-import '../steam/views/steam_hub_screen.dart';
-import 'views/xogos_fogar_screen.dart';
-import 'widgets/tarxeta_ingles_de_hoxe_fogar.dart';
-import '../../core/navigation/ruta_lua.dart';
+import 'nomes_familias.dart';
+import 'views/explorar_familias_screen.dart';
+import 'views/guias_familias_screen.dart';
+import 'views/hoxe_familias_screen.dart';
 
-/// Pantalla independente do Portal Familias.
+/// O Portal Familias: catro pestanas, e cada cousa vive nunha soa.
 ///
-/// Deseñada especificamente para a persoa adulta no fogar baixo o principio
-/// de Cero Pantallas para a Crianza (/tangible-l2-parent-orchestrator):
-/// - A crianza non toca o teléfono nin a tablet.
-/// - O adulto consulta a partitura de xogo, a rutina diaria ou o conto,
-///   e media a experiencia física, fónica e manipulativa no mundo real.
-/// - Sistema intuitivo de selección e filtrado de exercicios por área e tramo de idade.
+/// - **Hoxe**: o xogo de tres minutos, as súas palabras en inglés e o conto
+///   da semana.
+/// - **Calendario**: o curso mes a mes, aberto no día de hoxe.
+/// - **Explorar**: os seis módulos de casa, cos seus nomes de casa.
+/// - **Guías**: o que é para a persoa adulta: a guía de dous minutos, as
+///   lecturas, a guía de inglés e os premios.
+///
+/// Antes era unha soa lista de catro pantallas e media: unha benvida, unha
+/// tarxeta que levaba ao calendario, a tarxeta do inglés, dúas filas de
+/// filtros e sete módulos. A crianza non toca o teléfono: quen o mira é a
+/// persoa adulta, de esguello e con dous segundos.
 class PortalFamiliasScreen extends StatefulWidget {
   final ContentRepository repository;
   final PremiosRepository? premios;
@@ -40,6 +32,9 @@ class PortalFamiliasScreen extends StatefulWidget {
   final AppLanguage currentLanguage;
   final VoidCallback onToggleLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
+
+  /// Para os tests: o día que se quere ver. Por defecto, hoxe.
+  final DateTime? agora;
 
   const PortalFamiliasScreen({
     super.key,
@@ -50,6 +45,7 @@ class PortalFamiliasScreen extends StatefulWidget {
     this.onLanguageChanged,
     this.premios,
     this.calendario,
+    this.agora,
   });
 
   @override
@@ -57,77 +53,18 @@ class PortalFamiliasScreen extends StatefulWidget {
 }
 
 class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
-  late AppLanguage _language;
-  String _selectedCategory = 'todas';
-  String _selectedAge = 'todas';
+  late AppLanguage _language = widget.currentLanguage;
+  late final CalendarioStore _store = widget.calendario ?? CalendarioStore();
+  int _pestana = 0;
 
-  // Cabe entero en la cabecera a 360 px; « · Fogar» lo cortaba.
-  static const _appBarTitle = LocalizedString(
-    gl: 'Portal Familias',
-    es: 'Portal Familias',
-  );
+  /// Las pestañas ya abiertas. Una pestaña se construye la primera vez que
+  /// se visita, no al entrar en el portal: el calendario y Explorar leen
+  /// mucho contenido, y la portada no tiene por qué esperarlos.
+  final Set<int> _visitadas = {0};
 
-  static const _subtitulo = LocalizedString(
-    gl: 'Espazo de estimulación familiar sen pantallas para a infancia. Recursos guiados para o desenvolvemento da linguaxe e o vínculo afectivo.',
-    es: 'Espacio de estimulación familiar sin pantallas para la infancia. Recursos guiados para el desarrollo del lenguaje y el vínculo afectivo.',
-  );
-
-  static const List<Map<String, String>> _categories = [
-    {'id': 'todas', 'gl': 'Todas as Áreas', 'es': 'Todas las Áreas'},
-    // STEAM, segundo, como o seu módulo: era a penúltima e non se vía sen
-    // desprazar a fila.
-    {'id': 'steam', 'gl': 'STEAM', 'es': 'STEAM'},
-    {'id': 'xogos', 'gl': 'Xogos Físicos (TPR)', 'es': 'Juegos Físicos (TPR)'},
-    {'id': 'contos', 'gl': 'Contos Dialogados', 'es': 'Cuentos Dialogados'},
-    {'id': 'lectura', 'gl': 'Aprender a Ler', 'es': 'Aprender a Leer'},
-    {
-      'id': 'laminas',
-      'gl': 'Láminas e Vocabulario',
-      'es': 'Láminas y Vocabulario'
-    },
-    {
-      'id': 'calendario',
-      'gl': 'Calendario Escolar',
-      'es': 'Calendario Escolar'
-    },
-    {'id': 'academy', 'gl': 'Pautas de Crianza', 'es': 'Pautas de Crianza'},
-  ];
-
-  static const List<Map<String, String>> _ages = [
-    {'id': 'todas', 'gl': 'Todas as idades', 'es': 'Todas las edades'},
-    {'id': '0_2', 'gl': '0-2 anos (Nido)', 'es': '0-2 años (Nido)'},
-    {'id': '2_3', 'gl': '2-3 anos (Maternal)', 'es': '2-3 años (Maternal)'},
-    {
-      'id': '3_4',
-      'gl': '3-4 anos (4.º Infantil)',
-      'es': '3-4 años (4.º Infantil)'
-    },
-    {
-      'id': '4_5',
-      'gl': '4-5 anos (5.º Infantil)',
-      'es': '4-5 años (5.º Infantil)'
-    },
-    {
-      'id': '5_6',
-      'gl': '5-6 anos (6.º Infantil)',
-      'es': '5-6 años (6.º Infantil)'
-    },
-  ];
-
-  /// A crianza cuxas palabras de inglés se ven hoxe. Só mentres a pantalla
-  /// está aberta: a app non garda nada dunha crianza.
-  String _cursoIngles = 'curso_0_2';
-
-  @override
-  void initState() {
-    super.initState();
-    _language = widget.currentLanguage;
-    if (widget.repository.programaTprSync == null) {
-      widget.repository.loadProgramaTpr().then((_) {
-        if (mounted) setState(() {});
-      });
-    }
-  }
+  /// A idade da crianza. Só mentres a app está aberta: non se garda nada
+  /// dunha crianza.
+  String _curso = NomesFamilias.idades.first.$1;
 
   @override
   void didUpdateWidget(covariant PortalFamiliasScreen oldWidget) {
@@ -137,668 +74,104 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     }
   }
 
-  void _handleLanguageChanged(AppLanguage newLang) {
-    setState(() => _language = newLang);
-    widget.onLanguageChanged?.call(newLang);
+  void _cambiarLingua(AppLanguage lingua) {
+    setState(() => _language = lingua);
+    widget.onLanguageChanged?.call(lingua);
   }
 
-  String? get _cursoIdActual {
-    if (_selectedAge == 'todas') return null;
-    return 'curso_$_selectedAge';
-  }
+  void _cambiarCurso(String curso) => setState(() => _curso = curso);
 
-  bool _matchesFilter(String categoryId) {
-    return _selectedCategory == 'todas' || _selectedCategory == categoryId;
-  }
+  List<Widget> _pestanas(AppLanguage lang) => [
+        HoxeFamiliasScreen(
+          repository: widget.repository,
+          store: _store,
+          language: lang,
+          onLanguageChanged: _cambiarLingua,
+          cursoId: _curso,
+          onCambiarCurso: _cambiarCurso,
+          audioService: widget.audioService,
+          agora: widget.agora,
+        ),
+        // Con clave: cambiar a idade en Hoxe abre o calendario desa idade.
+        CalendarioFogarScreen(
+          key: ValueKey('calendario_$_curso'),
+          repository: widget.repository,
+          store: _store,
+          initialLanguage: lang,
+          onLanguageChanged: _cambiarLingua,
+          audioService: widget.audioService,
+          initialCursoId: _curso,
+          agora: widget.agora,
+        ),
+        ExplorarFamiliasScreen(
+          repository: widget.repository,
+          language: lang,
+          onLanguageChanged: _cambiarLingua,
+          cursoId: _curso,
+          onCambiarCurso: _cambiarCurso,
+          audioService: widget.audioService,
+          agora: widget.agora,
+        ),
+        GuiasFamiliasScreen(
+          repository: widget.repository,
+          language: lang,
+          onLanguageChanged: _cambiarLingua,
+          premios: widget.premios,
+          calendario: _store,
+          audioService: widget.audioService,
+        ),
+      ];
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final isGl = _language == AppLanguage.gl;
-    final store = widget.calendario ?? CalendarioStore();
-    final estadoHoy = store.estadoParaFecha(DateTime.now());
-    final bool feitoHoxe = estadoHoy == EstadoEstimulacion.soloHogar ||
-        estadoHoy == EstadoEstimulacion.dobleEstimulacion;
-
+    final lang = _language;
     return Scaffold(
-      backgroundColor: AppTheme.pageBg,
-      appBar: Cabecera(
-        titulo: _appBarTitle.resolve(_language),
-        language: _language,
-        onLanguageChanged: _handleLanguageChanged,
+      body: IndexedStack(
+        index: _pestana,
+        children: [
+          for (final (i, pestana) in _pestanas(lang).indexed)
+            // Las que no se ven, paradas: sin animaciones gastando batería.
+            TickerMode(
+              enabled: i == _pestana,
+              child: _visitadas.contains(i) ? pestana : const SizedBox.shrink(),
+            ),
+        ],
       ),
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(16.0),
-          children: [
-            // Cabecera Acolledora de Familia
-            Container(
-              padding: const EdgeInsets.all(18),
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [
-                    Color(0xFFFFF9EE),
-                    Color(0xFFFDE8CF),
-                  ],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-                borderRadius: BorderRadius.circular(18),
-                border: Border.all(color: const Color(0xFFF6D4A0)),
+      // Las etiquetas crecen con la letra del sistema hasta 1,3: más, y
+      // «Calendario» no cabe en un cuarto de 360 px y se corta.
+      bottomNavigationBar: MediaQuery.withClampedTextScaling(
+        maxScaleFactor: 1.3,
+        child: DecoratedBox(
+          decoration: const BoxDecoration(
+            border: Border(top: BorderSide(color: Color(0xFFE9EEEE))),
+          ),
+          child: NavigationBar(
+            key: const Key('pestanas_familias'),
+            selectedIndex: _pestana,
+            onDestinationSelected: (i) => setState(() {
+              _pestana = i;
+              _visitadas.add(i);
+            }),
+            destinations: [
+              NavigationDestination(
+                key: const Key('pestana_hoxe'),
+                icon: const Icon(Icons.wb_sunny_rounded),
+                label: NomesFamilias.hoxe.resolve(lang),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      // A pastilla pártese en dúas liñas se non cabe: coa letra
-                      // grande do sistema saía da cabeceira.
-                      Expanded(
-                        child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 10, vertical: 4),
-                            decoration: BoxDecoration(
-                              color: AppTheme.familias,
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Text(
-                              isGl
-                                  ? 'CERO PANTALLAS INFANTÍS'
-                                  : 'CERO PANTALLAS INFANTILES',
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 10,
-                                fontWeight: FontWeight.w800,
-                                letterSpacing: 0.8,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      const LuaPixel(size: 32),
-                    ],
-                  ),
-                  const SizedBox(height: 10),
-                  Text(
-                    isGl
-                        ? 'Benvida ao fogar de Lúa'
-                        : 'Bienvenida al hogar de Lúa',
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF7B341E),
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    _subtitulo.resolve(_language),
-                    style: const TextStyle(
-                      fontSize: 13,
-                      color: Color(0xFF4A5568),
-                      height: 1.4,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  TextButton.icon(
-                    key: const ValueKey('formacion_familia_portal'),
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        RutaLua(
-                          de: context,
-                          builder: (_) => FormacionScreen(
-                            perfil: PerfilFormacion.familia,
-                            language: _language,
-                            onLanguageChanged: _handleLanguageChanged,
-                          ),
-                        ),
-                      );
-                    },
-                    icon: const Icon(Icons.school_rounded,
-                        size: 18, color: Color(0xFF9C4221)),
-                    label: Text(
-                      isGl
-                          ? 'Antes de empezar na casa · Guía de 2 min'
-                          : 'Antes de empezar en casa · Guía de 2 min',
-                      style: const TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF9C4221),
-                      ),
-                    ),
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.zero,
-                      minimumSize: const Size(0, 36),
-                      alignment: Alignment.centerLeft,
-                    ),
-                  ),
-                ],
+              NavigationDestination(
+                key: const Key('pestana_calendario'),
+                icon: const Icon(Icons.calendar_month_rounded),
+                label: NomesFamilias.calendario.resolve(lang),
               ),
-            ),
-            const SizedBox(height: 16.0),
-
-            // Card de Rutina de Hoxe no Fogar (Destaque Principal)
-            Card(
-              elevation: 1,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-                side: BorderSide(
-                  color: feitoHoxe ? AppTheme.success : context.acento,
-                  width: 1.5,
-                ),
+              NavigationDestination(
+                key: const Key('pestana_explorar'),
+                icon: const Icon(Icons.grid_view_rounded),
+                label: NomesFamilias.explorar.resolve(lang),
               ),
-              color: feitoHoxe ? const Color(0xFFF0FDF4) : Colors.white,
-              child: InkWell(
-                borderRadius: BorderRadius.circular(16),
-                onTap: () {
-                  Navigator.of(context).push(
-                    RutaLua(
-                      de: context,
-                      builder: (_) => CalendarioFogarScreen(
-                        repository: widget.repository,
-                        store: store,
-                        initialLanguage: _language,
-                        audioService: widget.audioService,
-                        onLanguageChanged: _handleLanguageChanged,
-                        initialCursoId: _cursoIdActual,
-                      ),
-                    ),
-                  );
-                },
-                child: Padding(
-                  padding: const EdgeInsets.all(18),
-                  child: Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 24,
-                        backgroundColor: feitoHoxe
-                            ? const Color(0xFFC6F6D5)
-                            : context.acentoTint,
-                        child: Icon(
-                          feitoHoxe
-                              ? Icons.check_circle_rounded
-                              : Icons.calendar_today_rounded,
-                          color: feitoHoxe
-                              ? const Color(0xFF22543D)
-                              : context.acento,
-                          size: 26,
-                        ),
-                      ),
-                      const SizedBox(width: 14),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              feitoHoxe
-                                  ? (isGl
-                                      ? 'Xogo de hoxe completado!'
-                                      : '¡Juego de hoy completado!')
-                                  : (isGl
-                                      ? 'O teu xogo de 3 min de hoxe'
-                                      : 'Tu juego de 3 min de hoy'),
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: feitoHoxe
-                                    ? const Color(0xFF22543D)
-                                    : context.acento,
-                              ),
-                            ),
-                            const SizedBox(height: 3),
-                            Text(
-                              feitoHoxe
-                                  ? (isGl
-                                      ? 'Racha: ${store.rachaActual} días de xogo compartido'
-                                      : 'Racha: ${store.rachaActual} días de juego compartido')
-                                  : (isGl
-                                      ? 'Toca para abrir a rutina do día no calendario escolar'
-                                      : 'Toca para abrir la rutina del día en el calendario escolar'),
-                              style: const TextStyle(
-                                fontSize: 12,
-                                color: AppTheme.textSecondary,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Icon(Icons.chevron_right_rounded,
-                          color: AppTheme.textMuted),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-
-            // O inglés de hoxe na casa: as MESMAS palabras que a escola ese
-            // día. Sen o curso lido, non hai tarxeta: «cinco palabras hoxe»
-            // sen as palabras non axuda.
-            if (widget.repository.programaTprSync case final programa?) ...[
-              const SizedBox(height: 14.0),
-              TarxetaInglesDeHoxeFogar(
-                programa: programa,
-                cursoId: _cursoIngles,
-                onCambiarCurso: (c) => setState(() => _cursoIngles = c),
-                language: _language,
-                audioService: widget.audioService,
-                onVerXogos: () {
-                  Navigator.of(context).push(
-                    RutaLua(
-                      de: context,
-                      builder: (_) => XogosFogarScreen(
-                        onLanguageChanged: _handleLanguageChanged,
-                        initialLanguage: _language,
-                        audioService: widget.audioService,
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ],
-            const SizedBox(height: 18.0),
-
-            // Selector e Filtros de Dinámicas e Exercicios
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 4.0),
-              child: Text(
-                isGl
-                    ? 'EXPLORAR DINÁMICAS POR ÁREA'
-                    : 'EXPLORAR DINÁMICAS POR ÁREA',
-                style: const TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w800,
-                  color: AppTheme.textSecondary,
-                  letterSpacing: 1.0,
-                ),
-              ),
-            ),
-            const SizedBox(height: 8.0),
-
-            // Chips de filtro de categorías
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: _categories.map((cat) {
-                  final isSel = _selectedCategory == cat['id'];
-                  return Padding(
-                    padding: const EdgeInsets.only(right: 8),
-                    child: ChoiceChip(
-                      label: Text(isGl ? cat['gl']! : cat['es']!),
-                      selected: isSel,
-                      onSelected: (selected) {
-                        if (selected) {
-                          setState(() => _selectedCategory = cat['id']!);
-                        }
-                      },
-                    ),
-                  );
-                }).toList(),
-              ),
-            ),
-            const SizedBox(height: 8.0),
-
-            // Chips de filtro por idade / etapa
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: _ages.map((age) {
-                  final isSel = _selectedAge == age['id'];
-                  return Padding(
-                    padding: const EdgeInsets.only(right: 8),
-                    child: ChoiceChip(
-                      label: Text(isGl ? age['gl']! : age['es']!),
-                      selected: isSel,
-                      onSelected: (selected) {
-                        if (selected) setState(() => _selectedAge = age['id']!);
-                      },
-                    ),
-                  );
-                }).toList(),
-              ),
-            ),
-            const SizedBox(height: 16.0),
-
-            // 1. Calendario Escolar no Fogar
-            if (_matchesFilter('calendario')) ...[
-              _buildFamilyModuleCard(
-                context: context,
-                title: isGl
-                    ? 'Calendario Escolar no Fogar'
-                    : 'Calendario Escolar en el Hogar',
-                description: isGl
-                    ? 'De 0 a 6 anos, curso a curso: os 5 cursos, cada un de Setembro a Xuño, por semanas e días con actividades concretas de 3 min, momentos cotiáns e conexión coa escola.'
-                    : 'De 0 a 6 años, curso a curso: los 5 cursos, cada uno de Septiembre a Junio, por semanas y días con actividades concretas de 3 min, momentos cotidianos y conexión con la escuela.',
-                icon: Icons.calendar_month_rounded,
-                badge: isGl
-                    ? 'De 0 a 6 anos · 5 cursos'
-                    : 'De 0 a 6 años · 5 cursos',
-                buttonText: isGl ? 'Abrir Calendario' : 'Abrir Calendario',
-                onTap: () {
-                  Navigator.of(context).push(
-                    RutaLua(
-                      de: context,
-                      builder: (_) => CalendarioFogarScreen(
-                        repository: widget.repository,
-                        store: store,
-                        initialLanguage: _language,
-                        audioService: widget.audioService,
-                        onLanguageChanged: _handleLanguageChanged,
-                        initialCursoId: _cursoIdActual,
-                      ),
-                    ),
-                  );
-                },
-              ),
-              const SizedBox(height: 14.0),
-            ],
-
-            // 2. STEAM · ciencia coas mans, na versión de casa. Segundo e non
-            // sétimo: era o último dos sete módulos, na cuarta pantalla dun
-            // teléfono, e quen non baixaba ata o final non sabía que existía.
-            if (_matchesFilter('steam')) ...[
-              _buildFamilyModuleCard(
-                context: context,
-                title: isGl
-                    ? 'STEAM na casa · Ciencia coas mans'
-                    : 'STEAM en casa · Ciencia con las manos',
-                description: isGl
-                    ? 'Cinco xogos de ciencia con cousas da casa, un para cada idade de 12 meses a 6 anos: brando e duro, ramplas, son, sombras e un robot que es ti. Con ordes en inglés para responder co corpo.'
-                    : 'Cinco juegos de ciencia con cosas de casa, uno para cada edad de 12 meses a 6 años: blando y duro, rampas, sonido, sombras y un robot que eres tú. Con órdenes en inglés para responder con el cuerpo.',
-                icon: Icons.science_rounded,
-                badge: isGl ? 'Ciencia e inglés' : 'Ciencia e inglés',
-                buttonText: isGl ? 'Abrir STEAM' : 'Abrir STEAM',
-                onTap: () {
-                  Navigator.of(context).push(
-                    RutaLua(
-                      de: context,
-                      builder: (_) => SteamHubScreen(
-                        repository: widget.repository,
-                        audioService: widget.audioService,
-                        initialLanguage: _language,
-                        onLanguageChanged: _handleLanguageChanged,
-                        audiencia: SteamAudiencia.hogar,
-                        initialCursoId: _cursoIdActual,
-                      ),
-                    ),
-                  );
-                },
-              ),
-              const SizedBox(height: 14.0),
-            ],
-
-            // 3. Biblioteca de Contos Ilustrados
-            if (_matchesFilter('contos')) ...[
-              _buildFamilyModuleCard(
-                context: context,
-                title: isGl
-                    ? 'Biblioteca de Contos Dialóxicos'
-                    : 'Biblioteca de Cuentos Dialógicos',
-                description: isGl
-                    ? 'Contos ilustrados con desenvolvemento narrativo por curso e mes, preguntas graduadas en 3 niveis de comprensión e reto físico TPR oral en inglés.'
-                    : 'Cuentos ilustrados con desarrollo narrativo por curso y mes, preguntas graduadas en 3 niveles de comprensión y reto físico TPR oral en inglés.',
-                icon: Icons.auto_stories_rounded,
-                badge: isGl ? 'Lectura Dialóxica' : 'Lectura Dialógica',
-                buttonText: isGl ? 'Abrir Contos' : 'Abrir Cuentos',
-                onTap: () {
-                  Navigator.of(context).push(
-                    RutaLua(
-                      de: context,
-                      builder: (_) => CuentosListScreen(
-                        onLanguageChanged: _handleLanguageChanged,
-                        repository: widget.repository,
-                        initialLanguage: _language,
-                        audioService: widget.audioService,
-                      ),
-                    ),
-                  );
-                },
-              ),
-              const SizedBox(height: 14.0),
-            ],
-
-            // 4. Aprender a Ler · Fónica Manipulativa
-            if (_matchesFilter('lectura')) ...[
-              _buildFamilyModuleCard(
-                context: context,
-                title: isGl
-                    ? 'Aprender a Ler · Fónica Manipulativa'
-                    : 'Aprender a Leer · Fonética Manipulativa',
-                description: isGl
-                    ? 'Conciencia fonolóxica, mesa Alphabot expandida con letras reais de madeira/imáns, cubos CVC combinatorios (Phonicubes) e discriminación de pares mínimos.'
-                    : 'Conciencia fonológica, mesa Alphabot expandida con letras reales de madera/imanes, cubos CVC combinatorios (Phonicubes) y discriminación de pares mínimos.',
-                icon: Icons.spellcheck_rounded,
-                badge: isGl ? 'Alfabetización Táctil' : 'Alfabetización Táctil',
-                buttonText:
-                    isGl ? 'Abrir Aprender a Ler' : 'Abrir Aprender a Leer',
-                onTap: () {
-                  Navigator.of(context).push(
-                    RutaLua(
-                      de: context,
-                      builder: (_) => AprenderALerScreen(
-                        onLanguageChanged: _handleLanguageChanged,
-                        repository: widget.repository,
-                        initialLanguage: _language,
-                        audioService: widget.audioService,
-                      ),
-                    ),
-                  );
-                },
-              ),
-              const SizedBox(height: 14.0),
-            ],
-
-            // 5. Banco de Láminas Didácticas
-            if (_matchesFilter('laminas')) ...[
-              _buildFamilyModuleCard(
-                context: context,
-                title: isGl
-                    ? 'Banco de Láminas e Vocabulario'
-                    : 'Banco de Láminas y Vocabulario',
-                description: isGl
-                    ? '200+ láminas ilustradas por categorías (animais, ría de Vigo, emocións, alimentos), con preguntas de diálogo, retos de sinalamento táctil e pronunciación.'
-                    : '200+ láminas ilustradas por categorías (animales, ría de Vigo, emociones, alimentos), con preguntas de diálogo, retos de señalamiento táctil y pronunciación.',
-                icon: Icons.photo_library_rounded,
-                badge: isGl ? '200+ Tarxetas' : '200+ Tarjetas',
-                buttonText: isGl ? 'Abrir Láminas' : 'Abrir Láminas',
-                onTap: () {
-                  Navigator.of(context).push(
-                    RutaLua(
-                      de: context,
-                      builder: (_) => LaminasGalleryScreen(
-                        onLanguageChanged: _handleLanguageChanged,
-                        repository: widget.repository,
-                        initialLanguage: _language,
-                        audioService: widget.audioService,
-                      ),
-                    ),
-                  );
-                },
-              ),
-              const SizedBox(height: 14.0),
-            ],
-
-            // 6. Xogos e Dinámicas Físicas no Fogar (TPR)
-            if (_matchesFilter('xogos')) ...[
-              _buildFamilyModuleCard(
-                context: context,
-                title: isGl
-                    ? 'Xogos e Dinámicas Corporais (TPR)'
-                    : 'Juegos y Dinámicas Corporales (TPR)',
-                description: isGl
-                    ? 'Repertorio de xogos de movemento físico sen pantallas: Caza do tesouro dos sons, O barquiño de Samil, O xigante e a formiga, e masaxe a 72 bpm.'
-                    : 'Repertorio de juegos de movimiento físico sin pantallas: Caza del tesoro de los sonidos, El barquito de Samil, El gigante y la hormiguita, y masaje a 72 bpm.',
-                icon: Icons.sports_gymnastics_rounded,
-                badge: isGl ? 'Xogos Físicos' : 'Juegos Físicos',
-                buttonText: isGl ? 'Abrir Xogos' : 'Abrir Juegos',
-                onTap: () {
-                  Navigator.of(context).push(
-                    RutaLua(
-                      de: context,
-                      builder: (_) => XogosFogarScreen(
-                        onLanguageChanged: _handleLanguageChanged,
-                        initialLanguage: _language,
-                        audioService: widget.audioService,
-                      ),
-                    ),
-                  );
-                },
-              ),
-              const SizedBox(height: 14.0),
-            ],
-
-            // 7. Academy · Cápsulas de Crianza
-            if (_matchesFilter('academy')) ...[
-              _buildFamilyModuleCard(
-                context: context,
-                title: isGl
-                    ? 'Academy · Pautas de Crianza'
-                    : 'Academy · Pautas de Crianza',
-                description: isGl
-                    ? '5 bloques de desenvolvemento da comunicación para a persoa adulta: quendas de conversa, baño de linguaxe, bilingüismo aditivo e xogo motor sen pantallas.'
-                    : '5 bloques de desarrollo de la comunicación para la persona adulta: turnos de conversación, baño de lenguaje, bilingüismo aditivo y juego motor sin pantallas.',
-                icon: Icons.family_restroom_rounded,
-                badge: isGl ? 'Formación Familiar' : 'Formación Familiar',
-                buttonText: isGl ? 'Abrir Academy' : 'Abrir Academy',
-                onTap: () {
-                  Navigator.of(context).push(
-                    RutaLua(
-                      de: context,
-                      builder: (_) => BloquesListScreen(
-                        repository: widget.repository,
-                        premios: widget.premios,
-                        calendario: widget.calendario,
-                        audioService: widget.audioService,
-                        initialLanguage: _language,
-                        onLanguageChanged: _handleLanguageChanged,
-                      ),
-                    ),
-                  );
-                },
-              ),
-              const SizedBox(height: 14.0),
-            ],
-
-            // 8. Premios e Insignias do Mediador
-            if (widget.premios != null) ...[
-              const SizedBox(height: 14.0),
-              OutlinedButton.icon(
-                onPressed: () => Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => PremiosScreen(
-                      onLanguageChanged: _handleLanguageChanged,
-                      repository: widget.premios!,
-                      currentLanguage: _language,
-                      contadores: widget.calendario?.contadores,
-                    ),
-                  ),
-                ),
-                icon: const Icon(Icons.military_tech_rounded),
-                label: Text(PremiosScreen.titulo.resolve(_language)),
-                style: OutlinedButton.styleFrom(
-                  minimumSize: const Size(double.infinity, AppTheme.touchMin),
-                  side: const BorderSide(color: AppTheme.border),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 6.0),
-              Text(
-                isGl
-                    ? 'Nivel, racha e insignias da persoa adulta que dedica tempo á crianza.'
-                    : 'Nivel, racha e insignias de la persona adulta que dedica tiempo a la criatura.',
-                textAlign: TextAlign.center,
-                style: theme.textTheme.bodySmall
-                    ?.copyWith(color: AppTheme.textMuted),
-              ),
-            ],
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildFamilyModuleCard({
-    required BuildContext context,
-    required String title,
-    required String description,
-    required IconData icon,
-    required String badge,
-    required String buttonText,
-    required VoidCallback onTap,
-  }) {
-    // La tarjeta del tema: plana, borde de 1 px y radio 16.
-    return Card(
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  CircleAvatar(
-                    radius: 20,
-                    backgroundColor: context.acentoTint,
-                    child: Icon(icon, color: context.acento, size: 22),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          badge.toUpperCase(),
-                          style: TextStyle(
-                            fontSize: 10,
-                            fontWeight: FontWeight.w800,
-                            color: context.acento,
-                            letterSpacing: 0.6,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          title,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: AppTheme.textPrimary,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 10),
-              Text(
-                description,
-                style: const TextStyle(
-                  fontSize: 13,
-                  color: Color(0xFF4A5568),
-                  height: 1.4,
-                ),
-              ),
-              const SizedBox(height: 14),
-              // Secundario, con borde: el portal no tiene un único botón
-              // principal entre siete módulos iguales. Antes eran siete
-              // botones rellenos de siete colores, y cinco no pasaban AA.
-              SizedBox(
-                width: double.infinity,
-                child: OutlinedButton(
-                  onPressed: onTap,
-                  child: Text(
-                    buttonText,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ),
+              NavigationDestination(
+                key: const Key('pestana_guias'),
+                icon: const Icon(Icons.menu_book_rounded),
+                label: NomesFamilias.guias.resolve(lang),
               ),
             ],
           ),

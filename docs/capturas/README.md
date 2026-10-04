@@ -69,7 +69,7 @@ flutter test --tags capturas --update-goldens test/laminas_hoja_test.dart
 
 ## Las capturas de la app de escritorio
 
-Las que empiezan por `l0-`, `l1-` y `l2-`, y las de `vocabulario-flower-`, son otra
+Las que empiezan por `l0-`, `l1-`, `l2-` y `l3-`, y las de `vocabulario-flower-`, son otra
 cosa: la app **compilada para escritorio** (Linux), abierta en una pantalla
 virtual de 360 × 780 px y recorrida a mano por el mismo camino que usa quien la
 maneja (Inicio → Comezar → portal → módulo). Son la prueba de que un cambio se
@@ -97,3 +97,8 @@ la de Android, pero no sus barras del sistema, su densidad ni su escala de texto
 | `l2-calendario-casa-{gl,es}.png` | El calendario de casa en el naranja de familias, con un solo botón principal: «Xa o fixemos» / «Ya lo hicimos» |
 | `l2-conto-{gl,es}.png` | El visor de cuentos: la edad, el mes y la semana encima del título, y la barra de pasos común (flecha, «1 / 5», «Seguinte») |
 | `l2-portal-docentes-{gl,es}.png` | El Portal Docentes en su verde azulado: un solo principal, «Comezar a asemblea», y las tarjetas de módulo con botón de borde |
+| `l3-hoxe-{gl,es}.png` | «Hoxe», la portada de casa, un domingo: el juego del lunes con el momento como título, un solo botón y el cuento de la semana citado en el texto |
+| `l3-xogo-{gl,es}.png` | El juego del día: el momento, el texto entero, el inglés con el cuerpo y sus palabras con voz, y el porqué plegado |
+| `l3-explorar-{gl,es}.png` | Explorar: los seis módulos de casa con su nombre de casa, Ciencia coas mans entre ellos, sin bajar |
+| `l3-guias-{gl,es}.png` | Guías: la guía de dos minutos, las lecturas para la familia, el inglés en casa y los premios |
+| `l3-idade-es.png` | La edad se elige una vez, en un chip arriba; la hoja recuerda que no se guarda |
