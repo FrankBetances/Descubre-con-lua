@@ -9,6 +9,45 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L1 de la revisión de interfaz: STEAM a la vista en el Portal Familias (4/10/2026)
+
+Rama `claude/ux-l1`, que se integra en `main` por pull request después de L0.
+
+Frank pidió que el Portal Familias tuviera el módulo STEAM. Ya lo tenía, pero
+nadie lo veía. Lo comprobé recorriendo la app antes de tocar nada: era el último
+de los siete módulos, su chip era el penúltimo de la fila de áreas y no se veía
+sin deslizarla, y la tarjeta del portal en el inicio no lo nombraba.
+
+Qué cambia en pantalla:
+
+- **STEAM es el segundo módulo**, justo después del Calendario Escolar en el
+  Hogar y antes de la Biblioteca de Cuentos. En un teléfono de 360 × 780, con la
+  tipografía real (Nunito), su título estaba a 2.780 px del comienzo de la
+  lista, en la cuarta pantalla; ahora está a 1.389 px, en la segunda. Lo medí
+  con un test de usar y tirar que no queda en el repositorio.
+- **Su chip es el segundo** de la fila de áreas, después de «Todas as Áreas», y
+  se ve sin deslizar la fila.
+- **La tarjeta del Portal Familias en el inicio lo nombra**: «Ciencia coas mans
+  (STEAM): un xogo de ciencia por idade, con cousas da casa», en segundo lugar.
+
+Cómo se comprobó:
+
+- `test/features/ux_l1_test.dart`, seis tests, tres por lengua: STEAM en la
+  primera mitad del portal; el orden calendario → STEAM → cuentos, con el chip
+  segundo; y la viñeta de la tarjeta de inicio. Los seis fallan con el código
+  de L0 y pasan con el de L1.
+- La app de escritorio, por el camino de Frank (Inicio → Comezar → Portal
+  Familias), en gallego y en castellano: `docs/capturas/l1-familias-steam-{gl,es}.png`
+  y `l1-inicio-familias-{gl,es}.png`.
+- Las capas: el cambio es solo de interfaz. Ningún JSON de contenido cambia,
+  estos textos no tienen voz y no hay imprimible. El manual y el README no
+  describen el orden de los módulos del Portal Familias ni tienen captura suya
+  (buscado con `grep`), así que no cambian.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android.**
+
 ## Lote L0 de la revisión de interfaz: los errores que se ven hoy (4/10/2026)
 
 Rama `claude/ux-l0`, que sale de `main` y se integra en `main` por pull request.
