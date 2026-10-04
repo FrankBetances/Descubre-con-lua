@@ -84,12 +84,12 @@ class SelectorDeIdade<T> extends StatelessWidget {
                     ),
                     decoration: BoxDecoration(
                       color: op.valor == seleccionado
-                          ? AppTheme.primaryInk
+                          ? context.acento
                           : AppTheme.card,
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                       border: Border.all(
                         color: op.valor == seleccionado
-                            ? AppTheme.primaryInk
+                            ? context.acento
                             : AppTheme.border,
                         width: 1.5,
                       ),
@@ -122,7 +122,7 @@ class SelectorDeIdade<T> extends StatelessWidget {
                             fontSize: 11,
                             fontWeight: FontWeight.w600,
                             color: op.valor == seleccionado
-                                ? Colors.white.withValues(alpha: 0.85)
+                                ? Colors.white
                                 : AppTheme.textMuted,
                           ),
                         ),
@@ -179,10 +179,10 @@ class TiraDeMeses extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: AppTheme.spaceLg),
                 decoration: BoxDecoration(
-                  color: activo ? AppTheme.primary : AppTheme.card,
+                  color: activo ? context.acento : AppTheme.card,
                   borderRadius: BorderRadius.circular(AppTheme.radiusField),
                   border: Border.all(
-                    color: activo ? AppTheme.primary : AppTheme.border,
+                    color: activo ? context.acento : AppTheme.border,
                     width: 1.5,
                   ),
                 ),
@@ -252,17 +252,17 @@ class FilaDeFase extends StatelessWidget {
           width: compacto ? 22 : 26,
           height: compacto ? 22 : 26,
           alignment: Alignment.center,
-          decoration: const BoxDecoration(
-            color: AppTheme.primaryLight,
+          decoration: BoxDecoration(
+            color: context.acentoTint,
             shape: BoxShape.circle,
           ),
           child: Text(
             '$orden',
-            style: const TextStyle(
+            style: TextStyle(
               fontFamily: AppTheme.fontFamily,
               fontSize: 13,
               fontWeight: FontWeight.w800,
-              color: AppTheme.primaryInk,
+              color: context.acento,
             ),
           ),
         ),
@@ -469,10 +469,10 @@ class _Pastilla extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: activa ? AppTheme.primary : AppTheme.card,
+            color: activa ? context.acento : AppTheme.card,
             borderRadius: BorderRadius.circular(AppTheme.radiusField),
             border: Border.all(
-              color: activa ? AppTheme.primary : AppTheme.border,
+              color: activa ? context.acento : AppTheme.border,
               width: 1.5,
             ),
           ),
@@ -533,7 +533,7 @@ class BloqueDoDia extends StatelessWidget {
       key: const ValueKey('bloque_do_dia'),
       padding: const EdgeInsets.all(AppTheme.spaceMd),
       decoration: BoxDecoration(
-        color: AppTheme.primaryTint,
+        color: context.acentoTint,
         borderRadius: BorderRadius.circular(AppTheme.radiusField),
       ),
       child: Column(
@@ -543,11 +543,11 @@ class BloqueDoDia extends StatelessWidget {
             '${isGl ? 'HOXE' : 'HOY'} · ${isGl ? 'SEMANA' : 'SEMANA'} ${dia.semana}'
             '${semana != null ? ' · ${semana!.nome.resolve(language).toUpperCase()}' : ''}'
             ' · ${dia.nomeDia.resolve(language).toUpperCase()}',
-            style: const TextStyle(
+            style: TextStyle(
               fontFamily: AppTheme.fontFamily,
               fontSize: 11,
               fontWeight: FontWeight.w800,
-              color: AppTheme.primaryInk,
+              color: context.acento,
               letterSpacing: 0.8,
             ),
           ),
@@ -589,11 +589,11 @@ class BloqueDoDia extends StatelessWidget {
                     ),
                     child: Text(
                       o,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 13,
                         fontWeight: FontWeight.w700,
-                        color: AppTheme.primaryInk,
+                        color: context.acento,
                       ),
                     ),
                   ),

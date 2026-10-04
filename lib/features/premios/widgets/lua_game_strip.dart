@@ -9,6 +9,7 @@ import '../../../data/models/calendario_model.dart';
 import '../premios_model.dart';
 import '../premios_repository.dart';
 import '../premios_screen.dart';
+import '../../../core/navigation/ruta_lua.dart';
 
 /// La tira de juego: Lúa, el nivel con su barra, la racha con su metal y la
 /// puerta a los premios. Portada de la tira equivalente del proyecto anterior de la casa.
@@ -26,6 +27,9 @@ class LuaGameStrip extends StatelessWidget {
   final Perfil perfil;
   final AppLanguage language;
 
+  /// Avisa de que se cambió de lengua en una pantalla abierta desde aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
+
   /// Compacta: sin la línea de «faltan N XP». Para meterla dentro de una
   /// pantalla que ya va llena, como la asamblea.
   final bool compacta;
@@ -39,6 +43,7 @@ class LuaGameStrip extends StatelessWidget {
     required this.repository,
     required this.perfil,
     required this.language,
+    this.onLanguageChanged,
     this.compacta = false,
     this.contadores,
   });
@@ -85,8 +90,10 @@ class LuaGameStrip extends StatelessWidget {
             child: InkWell(
               borderRadius: BorderRadius.circular(AppTheme.radiusCard),
               onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(
+                RutaLua(
+                  de: context,
                   builder: (context) => PremiosScreen(
+                    onLanguageChanged: onLanguageChanged,
                     repository: repository,
                     currentLanguage: language,
                     perfilInicial: perfil,
@@ -109,7 +116,7 @@ class LuaGameStrip extends StatelessWidget {
                       width: 56,
                       height: 56,
                       decoration: BoxDecoration(
-                        color: AppTheme.primaryLight,
+                        color: context.acentoTint,
                         borderRadius:
                             BorderRadius.circular(AppTheme.radiusField),
                       ),
@@ -152,8 +159,8 @@ class LuaGameStrip extends StatelessWidget {
                                   : progreso.avanceDeNivel(catalogo),
                               minHeight: 8,
                               backgroundColor: AppTheme.border,
-                              valueColor: const AlwaysStoppedAnimation<Color>(
-                                AppTheme.primary,
+                              valueColor: AlwaysStoppedAnimation<Color>(
+                                context.acento,
                               ),
                             ),
                           ),
@@ -194,16 +201,16 @@ class LuaGameStrip extends StatelessWidget {
                             Text(
                               '$racha',
                               style: text.titleSmall?.copyWith(
-                                color: AppTheme.primaryDark,
+                                color: context.acento,
                               ),
                             ),
                           ],
                         ),
                         const SizedBox(height: 2),
-                        const Icon(
+                        Icon(
                           Icons.chevron_right_rounded,
                           size: 20,
-                          color: AppTheme.primaryInk,
+                          color: context.acento,
                         ),
                       ],
                     ),

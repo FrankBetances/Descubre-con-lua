@@ -9,6 +9,7 @@ import '../../../data/repositories/content_repository.dart';
 import '../../juega/views/asamblea_player_screen.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
 import '../../juega/widgets/aula_segundo_ciclo_panel.dart';
+import '../../../core/navigation/ruta_lua.dart';
 
 /// Un grupo de la asamblea del día: 0-2, 2-3, 4.º, 5.º o 6.º.
 class GrupoDaAsemblea {
@@ -78,7 +79,8 @@ Future<void> abrirAsembleaDoDia(
   final diaDaProgresion = progresion?.dia(semana, dia);
   final mes = nomeDoMes[mesCalendario]?.resolve(language) ?? '';
   return Navigator.of(context).push(
-    MaterialPageRoute(
+    RutaLua(
+      de: context,
       builder: (context) => AsambleaPlayerScreen(
         fases: diaDaProgresion?.aplicarA(fases) ?? fases,
         subtitulo: '$mes · ${grupo.etiqueta.resolve(language)}'

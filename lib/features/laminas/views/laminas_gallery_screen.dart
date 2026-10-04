@@ -4,21 +4,27 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/lamina_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import 'lamina_detail_screen.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../nome_categoria.dart';
 
 /// Galería y catálogo de las 200+ Láminas Didácticas Ilustradas.
 class LaminasGalleryScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   const LaminasGalleryScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
   });
 
@@ -27,6 +33,11 @@ class LaminasGalleryScreen extends StatefulWidget {
 }
 
 class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
   late AppLanguage _language;
   List<Lamina> _allLaminas = [];
   List<Lamina> _filteredLaminas = [];
@@ -69,22 +80,6 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
   /// El nombre de la categoría en la lengua de la interfaz. La clave que trae
   /// el banco —`vigo_natureza`, `escola_rutinas`— es de máquina y se enseñaba
   /// tal cual, con guion bajo y en gallego para los dos idiomas.
-  String _nomeCategoria(String clave, AppLanguage lang) {
-    const nombres = <String, List<String>>{
-      'todas': ['Todas', 'Todas'],
-      'alfabeto': ['Alfabeto', 'Alfabeto'],
-      'vocabulario': ['Vocabulario', 'Vocabulario'],
-      'animais': ['Animais', 'Animales'],
-      'vigo_natureza': ['Vigo e natureza', 'Vigo y naturaleza'],
-      'escola_rutinas': ['Escola e rutinas', 'Escuela y rutinas'],
-      'emocions_corpo': ['Emocións e corpo', 'Emociones y cuerpo'],
-      'cuento_ilustrado': ['Contos ilustrados', 'Cuentos ilustrados'],
-    };
-    final par = nombres[clave];
-    if (par == null) return clave.replaceAll('_', ' ');
-    return lang == AppLanguage.gl ? par[0] : par[1];
-  }
-
   List<String> get _categoriasDisponibles {
     final set = <String>{'todas'};
     for (final l in _allLaminas) {
@@ -99,18 +94,10 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          lang == AppLanguage.gl ? 'Banco de Láminas' : 'Banco de Láminas',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: 'Banco de Láminas',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: Column(
         children: [
@@ -126,7 +113,7 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                         ? 'Buscar lámina...'
                         : 'Buscar lámina...',
                     prefixIcon:
-                        const Icon(Icons.search, color: AppTheme.primaryDark),
+                        Icon(Icons.search_rounded, color: context.acento),
                     filled: true,
                     fillColor: AppTheme.pageBg,
                     contentPadding:
@@ -152,7 +139,7 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                       return Padding(
                         padding: const EdgeInsets.only(right: 8),
                         child: ChoiceChip(
-                          label: Text(_nomeCategoria(cat, lang).toUpperCase()),
+                          label: Text(nomeCategoria(cat, lang).toUpperCase()),
                           selected: isSelected,
                           onSelected: (selected) {
                             if (selected) {
@@ -162,16 +149,6 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                               });
                             }
                           },
-                          selectedColor: AppTheme.primary,
-                          labelStyle: TextStyle(
-                            color: isSelected
-                                ? Colors.white
-                                : AppTheme.textPrimary,
-                            fontWeight: isSelected
-                                ? FontWeight.bold
-                                : FontWeight.normal,
-                            fontSize: 11,
-                          ),
                         ),
                       );
                     }).toList(),
@@ -265,8 +242,10 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
+            RutaLua(
+              de: context,
               builder: (_) => LaminaDetailScreen(
+                onLanguageChanged: _cambiarLingua,
                 lamina: lamina,
                 language: _language,
                 audioService: widget.audioService,
@@ -288,10 +267,10 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                 child: LaminaEscena(
                   clave: lamina.lamina,
                   ancho: 92,
-                  mentres: const Icon(
-                    Icons.photo_library,
+                  mentres: Icon(
+                    Icons.photo_library_rounded,
                     size: 36,
-                    color: AppTheme.primaryDark,
+                    color: context.acento,
                   ),
                 ),
               ),
@@ -313,9 +292,9 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
               Text(
                 lamina.en,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 12,
-                  color: AppTheme.primaryInk,
+                  color: context.acento,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -323,13 +302,13 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                 decoration: BoxDecoration(
-                  color: AppTheme.primaryLight,
+                  color: context.acentoTint,
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Text(
                   lamina.cefr,
-                  style: const TextStyle(
-                    color: AppTheme.primaryInk,
+                  style: TextStyle(
+                    color: context.acento,
                     fontSize: 10,
                     fontWeight: FontWeight.bold,
                   ),

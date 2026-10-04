@@ -23,9 +23,9 @@ class TemporizadorSutilWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
-    final badgeColor =
-        esDocente ? AppTheme.primaryDark : const Color(0xFFD97706);
-    final bgColor = esDocente ? AppTheme.primaryLight : const Color(0xFFFFF4E5);
+    // El ámbar de la casa y no #D97706, que como letra daba 2,9:1.
+    final badgeColor = esDocente ? context.acento : AppTheme.warning;
+    final bgColor = esDocente ? context.acentoTint : const Color(0xFFFFF4E5);
 
     final duracionTexto = minutosMin == minutosMax
         ? '$minutosMax min'
@@ -49,7 +49,7 @@ class TemporizadorSutilWidget extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.timer_outlined, size: 20, color: badgeColor),
+          Icon(Icons.timer_rounded, size: 20, color: badgeColor),
           const SizedBox(width: 8),
           Flexible(
             child: Column(
@@ -66,9 +66,9 @@ class TemporizadorSutilWidget extends StatelessWidget {
                 ),
                 Text(
                   subtitulo,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 11,
-                    color: badgeColor.withValues(alpha: 0.85),
+                    color: AppTheme.textSecondary,
                   ),
                 ),
               ],

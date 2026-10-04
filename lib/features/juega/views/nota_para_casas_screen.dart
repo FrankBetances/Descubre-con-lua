@@ -9,8 +9,8 @@ import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/models/unidad_model.dart';
-import '../widgets/barra_ingles_widget.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/con_lingua.dart';
 
 /// La nota que la escuela manda a las casas al terminar la asamblea.
 ///
@@ -28,18 +28,23 @@ import '../../../core/widgets/boton_atras.dart';
 class NotaParaCasasScreen extends StatelessWidget {
   final Unidad unidad;
   final AppLanguage language;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   const NotaParaCasasScreen({
     super.key,
     required this.unidad,
     required this.language,
+    this.onLanguageChanged,
     this.audioService,
   });
 
+  // Cabe entero en la cabecera a 360 px; «… para as casas» se cortaba.
   static const titulo = LocalizedString(
-    gl: 'A nota de hoxe para as casas',
-    es: 'La nota de hoy para las casas',
+    gl: 'A nota de hoxe',
+    es: 'La nota de hoy',
   );
 
   static const _comoUsala = LocalizedString(
@@ -70,19 +75,29 @@ class NotaParaCasasScreen extends StatelessWidget {
   );
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) => ConLingua(
+        inicial: language,
+        aoCambiar: onLanguageChanged,
+        builder: _construir,
+      );
+
+  /// A pantalla, na lingua que ten agora: [language] tapa o campo co mesmo
+  /// nome, que é só a lingua coa que se abriu.
+  Widget _construir(
+    BuildContext context,
+    AppLanguage language,
+    ValueChanged<AppLanguage> cambiarLingua,
+  ) {
     final theme = Theme.of(context);
     final ponte = unidad.puenteCasa;
     final frase = unidad.ingles.frase;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          titulo.resolve(language),
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
+      appBar: Cabecera(
+        titulo: titulo.resolve(language),
+        language: language,
+        onLanguageChanged: cambiarLingua,
       ),
       body: SafeArea(
         child: PaxinaSenScroll(
@@ -163,7 +178,7 @@ class NotaParaCasasScreen extends StatelessWidget {
                   const SizedBox(height: AppTheme.spaceMd),
                   _Bloque(
                     kicker: _laFrase.resolve(language),
-                    acento: BarraInglesFase.acento,
+                    acento: context.acento,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -173,7 +188,7 @@ class NotaParaCasasScreen extends StatelessWidget {
                           frase,
                           style: theme.textTheme.titleLarge?.copyWith(
                             fontWeight: FontWeight.bold,
-                            color: BarraInglesFase.acento,
+                            color: context.acento,
                             height: 1.35,
                           ),
                         ),
@@ -182,9 +197,10 @@ class NotaParaCasasScreen extends StatelessWidget {
                           audioService: audioService,
                           texto: frase,
                           language: AppLanguage.en,
+                          interfaz: language,
                           style: estiloIngles(frase),
                           comoChip: true,
-                          colorChip: BarraInglesFase.acento,
+                          colorChip: context.acento,
                         ),
                       ],
                     ),
@@ -194,12 +210,10 @@ class NotaParaCasasScreen extends StatelessWidget {
                 ElevatedButton.icon(
                   key: const Key('boton_cerrar_nota'),
                   onPressed: () => Navigator.of(context).pop(),
-                  icon: const Icon(Icons.check),
+                  icon: const Icon(Icons.check_rounded),
                   label: Text(_cerrar.resolve(language)),
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size.fromHeight(AppTheme.touchMin),
-                    backgroundColor: AppTheme.primaryVigoBlue,
-                    foregroundColor: Colors.white,
                   ),
                 ),
                 const SizedBox(height: AppTheme.spaceXl),
@@ -213,12 +227,14 @@ class NotaParaCasasScreen extends StatelessWidget {
 class _Bloque extends StatelessWidget {
   final String kicker;
   final Widget child;
-  final Color acento;
+
+  /// Sin color, el acento del portal.
+  final Color? acento;
 
   const _Bloque({
     required this.kicker,
     required this.child,
-    this.acento = AppTheme.primaryDark,
+    this.acento,
   });
 
   @override
@@ -238,7 +254,7 @@ class _Bloque extends StatelessWidget {
           Text(
             kicker,
             style: theme.textTheme.labelSmall?.copyWith(
-              color: acento,
+              color: acento ?? context.acento,
               fontWeight: FontWeight.w800,
               letterSpacing: 1.0,
             ),

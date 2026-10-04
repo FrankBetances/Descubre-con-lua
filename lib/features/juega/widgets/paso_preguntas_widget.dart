@@ -49,19 +49,6 @@ class PasoPreguntasWidget extends StatelessWidget {
     }
   }
 
-  Color _levelColor(int nivel) {
-    switch (nivel) {
-      case 1:
-        return AppTheme.primaryVigoBlue;
-      case 2:
-        return AppTheme.secondarySeaGlass;
-      case 3:
-        return AppTheme.accentTerracotta;
-      default:
-        return AppTheme.primaryVigoBlue;
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -81,7 +68,7 @@ class PasoPreguntasWidget extends StatelessWidget {
               : 'Preguntas graduadas para la asamblea',
           style: theme.textTheme.headlineSmall?.copyWith(
             fontWeight: FontWeight.bold,
-            color: AppTheme.primaryVigoBlue,
+            color: context.acento,
             fontSize: 22.0,
           ),
         ),
@@ -99,7 +86,9 @@ class PasoPreguntasWidget extends StatelessWidget {
 
         // Cards for each level
         ...sortedPreguntas.map((p) {
-          final levelColor = _levelColor(p.nivel);
+          // Os tres niveis co acento do portal: o número xa os distingue,
+          // e o turquesa e o amarelo de antes non pasaban AA.
+          final levelColor = context.acento;
           final levelTitle = _levelTitle(p.nivel, isGl);
 
           return Card(
@@ -137,9 +126,7 @@ class PasoPreguntasWidget extends StatelessWidget {
                             levelTitle,
                             maxLines: 2,
                             style: TextStyle(
-                              color: levelColor == AppTheme.secondarySeaGlass
-                                  ? const Color(0xFF1B6A7F)
-                                  : levelColor,
+                              color: levelColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 13.5,
                             ),
@@ -188,14 +175,14 @@ class PasoPreguntasWidget extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Icon(
-                            Icons.subdirectory_arrow_right,
+                            Icons.subdirectory_arrow_right_rounded,
                             color: Color(0xFF475569),
                             size: 18,
                           ),
                           const SizedBox(width: 8),
                           Expanded(
-                            child: RichText(
-                              text: TextSpan(
+                            child: Text.rich(
+                              TextSpan(
                                 style: theme.textTheme.bodyMedium?.copyWith(
                                   fontSize: 16.0,
                                   color: AppTheme.textSlate,
@@ -243,15 +230,15 @@ class PasoPreguntasWidget extends StatelessWidget {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Icon(
-                            Icons.lightbulb_outline,
-                            color: AppTheme.primaryVigoBlue,
+                          Icon(
+                            Icons.lightbulb_rounded,
+                            color: context.acento,
                             size: 18,
                           ),
                           const SizedBox(width: 8),
                           Expanded(
-                            child: RichText(
-                              text: TextSpan(
+                            child: Text.rich(
+                              TextSpan(
                                 style: theme.textTheme.bodyMedium?.copyWith(
                                   fontSize: 16.0,
                                   color: AppTheme.textSlate,
@@ -261,9 +248,9 @@ class PasoPreguntasWidget extends StatelessWidget {
                                     text: isGl
                                         ? 'Consello docente: '
                                         : 'Consejo docente: ',
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      color: AppTheme.primaryVigoBlue,
+                                      color: context.acento,
                                     ),
                                   ),
                                   TextSpan(

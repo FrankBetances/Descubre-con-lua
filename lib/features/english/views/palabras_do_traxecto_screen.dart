@@ -5,10 +5,10 @@ import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
+import '../../../core/widgets/cabecera.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 
 /// Las 4.000 palabras del trayecto, por curso, mes, semana y día, con su
@@ -21,6 +21,9 @@ class PalabrasDoTraxectoScreen extends StatefulWidget {
   final ProgramaTpr? programa;
   final String cursoInicial;
   final AppLanguage language;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   /// Para los tests: el día que se quiere ver. Por defecto, hoy.
@@ -31,6 +34,7 @@ class PalabrasDoTraxectoScreen extends StatefulWidget {
     required this.programa,
     this.cursoInicial = 'curso_0_2',
     this.language = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
     this.agora,
   });
@@ -44,6 +48,21 @@ class PalabrasDoTraxectoScreen extends StatefulWidget {
 }
 
 class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
+  late AppLanguage _language = widget.language;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant PalabrasDoTraxectoScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.language != widget.language) _language = widget.language;
+  }
+
   late String _curso = widget.cursoInicial;
   late int _mes = diaDoCursoParaHoxe(agora: widget.agora).dia.mesCalendario;
   late int _semana = diaDoCursoParaHoxe(agora: widget.agora).dia.semana;
@@ -80,25 +99,17 @@ class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.language;
+    final lang = _language;
     final isGl = lang == AppLanguage.gl;
     final programa = widget.programa;
     final curso = programa?.curso(_curso);
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          isGl ? 'As palabras do traxecto' : 'Las palabras del trayecto',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 17,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: isGl ? 'O traxecto' : 'El trayecto',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: SafeArea(
         child: programa == null || curso == null
@@ -122,7 +133,7 @@ class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
                     key: const Key('traxecto_busca'),
                     onChanged: (v) => setState(() => _busca = v),
                     decoration: InputDecoration(
-                      prefixIcon: const Icon(Icons.search),
+                      prefixIcon: const Icon(Icons.search_rounded),
                       hintText: isGl
                           ? 'Buscar en inglés, galego ou castelán'
                           : 'Buscar en inglés, gallego o castellano',
@@ -238,11 +249,11 @@ class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
             child: Text(
               '${PalabrasDoDia.nomesDosDias[d - 1].resolve(lang).toUpperCase()}'
               ' · ${isGl ? 'BLOQUE' : 'BLOQUE'} ${semana.planDoDia(d).bloque}',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 11,
                 fontWeight: FontWeight.w800,
                 letterSpacing: 0.8,
-                color: AppTheme.primaryInk,
+                color: context.acento,
               ),
             ),
           ),
@@ -258,11 +269,11 @@ class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
           isGl
               ? 'VENRES · RETO: as ${semana.palabras.length} da semana, sen novas.'
               : 'VIERNES · RETO: las ${semana.palabras.length} de la semana, sin nuevas.',
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w800,
             letterSpacing: 0.6,
-            color: AppTheme.primaryInk,
+            color: context.acento,
           ),
         ),
       ],
@@ -301,12 +312,12 @@ class _Fila extends StatelessWidget {
           BotonEscuchar(
             audioService: audioService,
             texto: palabra.en,
-            language: AppLanguage.en,
+            language: AppLanguage.en, interfaz: language,
             // La misma regla que el corpus de voz: con otro estilo el botón
             // buscaría una grabación que no existe.
             style: estiloIngles(palabra.en),
             comoChip: true,
-            colorChip: AppTheme.primaryDark,
+            colorChip: context.acento,
             descripcion: palabra.en,
           ),
           const SizedBox(height: 4),
@@ -331,9 +342,9 @@ class _Fila extends StatelessWidget {
             const SizedBox(height: 3),
             Text(
               onde!,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 11.5,
-                color: AppTheme.primaryInk,
+                color: context.acento,
                 fontWeight: FontWeight.w600,
               ),
             ),

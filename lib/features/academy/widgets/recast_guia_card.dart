@@ -79,12 +79,12 @@ class RecastGuiaCard extends StatelessWidget {
                   width: 44,
                   height: 44,
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryLight,
+                    color: context.acentoTint,
                     borderRadius: BorderRadius.circular(AppTheme.radiusField),
                   ),
-                  child: const Icon(
+                  child: Icon(
                     Icons.compare_arrows_rounded,
-                    color: AppTheme.primaryInk,
+                    color: context.acento,
                     size: 24,
                   ),
                 ),
@@ -97,11 +97,11 @@ class RecastGuiaCard extends StatelessWidget {
                         isGl
                             ? 'MODELADO INDIRECTO (RECAST)'
                             : 'MODELADO INDIRECTO (RECAST)',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 12,
                           fontWeight: FontWeight.w800,
-                          color: AppTheme.primaryInk,
+                          color: context.acento,
                           letterSpacing: 1.0,
                         ),
                       ),
@@ -128,15 +128,15 @@ class RecastGuiaCard extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                color: AppTheme.primaryTint,
+                color: context.acentoTint,
                 borderRadius: BorderRadius.circular(AppTheme.radiusField),
                 border: Border.all(color: AppTheme.borderActive),
               ),
               child: Row(
                 children: [
-                  const Icon(
-                    Icons.timer_outlined,
-                    color: AppTheme.primaryDark,
+                  Icon(
+                    Icons.timer_rounded,
+                    color: context.acento,
                     size: 22,
                   ),
                   const SizedBox(width: 10),
@@ -221,8 +221,8 @@ class RecastGuiaCard extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Icon(
-                            Icons.cancel_outlined,
-                            color: AppTheme.error,
+                            Icons.cancel_rounded,
+                            color: AppTheme.errorInk,
                             size: 18,
                           ),
                           const SizedBox(width: 8),
@@ -238,7 +238,8 @@ class RecastGuiaCard extends StatelessWidget {
                                     fontFamily: AppTheme.fontFamily,
                                     fontSize: 12,
                                     fontWeight: FontWeight.w800,
-                                    color: AppTheme.error,
+                                    // El rojo de la casa daba 3,43:1 aquí.
+                                    color: AppTheme.errorInk,
                                   ),
                                 ),
                                 const SizedBox(height: 2),
@@ -276,7 +277,7 @@ class RecastGuiaCard extends StatelessWidget {
                         children: [
                           const Icon(
                             Icons.check_circle_outline_rounded,
-                            color: AppTheme.success,
+                            color: AppTheme.successInk,
                             size: 18,
                           ),
                           const SizedBox(width: 8),
@@ -327,9 +328,9 @@ class RecastGuiaCard extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  const Icon(
-                    Icons.home_outlined,
-                    color: AppTheme.primaryDark,
+                  Icon(
+                    Icons.home_rounded,
+                    color: context.acento,
                     size: 20,
                   ),
                   const SizedBox(width: 10),

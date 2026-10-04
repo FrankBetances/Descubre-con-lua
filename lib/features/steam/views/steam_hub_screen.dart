@@ -5,13 +5,13 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/loaders/content_asset_loader.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../academy/widgets/selector_idioma_widget.dart';
 import '../widgets/steam_comun.dart';
 import 'steam_sesion_guiada_screen.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Las cinco unidades STEAM, una por curso.
 ///
@@ -46,6 +46,16 @@ class SteamHubScreen extends StatefulWidget {
 
 class _SteamHubScreenState extends State<SteamHubScreen> {
   late AppLanguage _language;
+
+  /// «STEAM · Ciencia coas mans» no cabe en la cabecera a 360 px; el título
+  /// corto dice además para quién es.
+  String get _tituloCabecera {
+    final gl = _language == AppLanguage.gl;
+    return widget.audiencia == SteamAudiencia.hogar
+        ? (gl ? 'STEAM na casa' : 'STEAM en casa')
+        : (gl ? 'STEAM na aula' : 'STEAM en el aula');
+  }
+
   String? _curso;
   bool _cargando = false;
 
@@ -94,7 +104,8 @@ class _SteamHubScreenState extends State<SteamHubScreen> {
 
   void _abrir(SteamUnit unidad) {
     Navigator.of(context).push(
-      MaterialPageRoute(
+      RutaLua(
+        de: context,
         builder: (_) => SteamSesionGuiadaScreen(
           unit: unidad,
           audiencia: widget.audiencia,
@@ -115,24 +126,10 @@ class _SteamHubScreenState extends State<SteamHubScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          SteamTextos.titulo.resolve(_language),
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _cambiarLingua,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: _tituloCabecera,
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: SafeArea(
         child: _cargando
@@ -205,19 +202,19 @@ class _SteamHubScreenState extends State<SteamHubScreen> {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Padding(
-                padding: EdgeInsets.only(top: 2),
+              Padding(
+                padding: const EdgeInsets.only(top: 2),
                 child: Icon(Icons.phonelink_lock_rounded,
-                    size: 18, color: AppTheme.primaryInk),
+                    size: 18, color: context.acento),
               ),
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
                   SteamTextos.senPantallas.resolve(_language),
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w600,
-                    color: AppTheme.primaryInk,
+                    color: context.acento,
                     height: 1.4,
                   ),
                 ),
@@ -247,12 +244,6 @@ class _SteamHubScreenState extends State<SteamHubScreen> {
         label: Text(texto),
         selected: sel,
         onSelected: (_) => setState(() => _curso = curso),
-        selectedColor: AppTheme.primaryInk,
-        labelStyle: TextStyle(
-          color: sel ? Colors.white : AppTheme.textPrimary,
-          fontWeight: sel ? FontWeight.bold : FontWeight.w600,
-          fontSize: 13,
-        ),
       );
     }
 
@@ -338,10 +329,10 @@ class _TarxetaUnidade extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.only(top: 2),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 2),
                     child: Icon(Icons.groups_rounded,
-                        size: 16, color: AppTheme.primaryDark),
+                        size: 16, color: context.acento),
                   ),
                   const SizedBox(width: 6),
                   Expanded(
@@ -371,14 +362,13 @@ class _TarxetaUnidade extends StatelessWidget {
               const SizedBox(height: AppTheme.spaceMd),
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton.icon(
+                // Secundario: hay cinco sesiones iguales en la lista y ninguna
+                // es «la» principal. Rellenos, se veían dos o tres a la vez.
+                child: OutlinedButton.icon(
                   key: ValueKey('abrir_steam_${unidad.id}'),
                   onPressed: onAbrir,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.primaryInk,
-                    foregroundColor: Colors.white,
+                  style: OutlinedButton.styleFrom(
                     minimumSize: const Size.fromHeight(AppTheme.touchMin),
-                    elevation: 0,
                     shape: RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.circular(AppTheme.radiusButton),

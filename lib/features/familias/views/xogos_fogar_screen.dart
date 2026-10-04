@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../core/widgets/que_observar.dart';
 import '../../../data/models/xogos_fogar_observar_model.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Modelo dun xogo ou dinámica física no fogar sen pantallas infantís.
 class XogoFogarItem {
@@ -53,6 +53,9 @@ class XogoFogarItem {
 /// 2. Espazo Dixital do Adulto: partitura de facilitación, comando TPR e «Que observar».
 class XogosFogarScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   /// O «Que observar» de cada xogo, se quen abre a pantalla xa o leu. Existe
@@ -62,6 +65,7 @@ class XogosFogarScreen extends StatefulWidget {
   const XogosFogarScreen({
     super.key,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
     this.observacions,
   });
@@ -71,6 +75,11 @@ class XogosFogarScreen extends StatefulWidget {
 }
 
 class _XogosFogarScreenState extends State<XogosFogarScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
   late AppLanguage _language;
   String _filtroIdade = 'todas';
   ObservacionsXogosFogar? _observacions;
@@ -354,14 +363,10 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          isGl
-              ? 'Xogos e Dinámicas no Fogar'
-              : 'Juegos y Dinámicas en el Hogar',
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
-        ),
+      appBar: Cabecera(
+        titulo: isGl ? 'Xogos na casa' : 'Juegos en casa',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: SafeArea(
         child: ListView(
@@ -378,9 +383,9 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.volunteer_activism_rounded,
-                    color: Color(0xFFDD6B20),
+                    color: context.acento,
                     size: 26,
                   ),
                   const SizedBox(width: 12),
@@ -392,10 +397,10 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                           isGl
                               ? 'XOGO 100% CORPORAL E FÍSICO'
                               : 'JUEGO 100% CORPORAL Y FÍSICO',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.w800,
-                            color: Color(0xFFDD6B20),
+                            color: context.acento,
                             letterSpacing: 0.8,
                           ),
                         ),
@@ -450,12 +455,6 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       label: Text(label),
       selected: isSelected,
       onSelected: (_) => setState(() => _filtroIdade = id),
-      selectedColor: AppTheme.primaryVigoBlue,
-      labelStyle: TextStyle(
-        color: isSelected ? Colors.white : AppTheme.textPrimary,
-        fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-        fontSize: 12,
-      ),
     );
   }
 
@@ -483,9 +482,9 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                     color: const Color(0xFFEDF2F7),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: const Icon(
+                  child: Icon(
                     Icons.sports_gymnastics_rounded,
-                    color: AppTheme.primaryVigoBlue,
+                    color: context.acento,
                     size: 24,
                   ),
                 ),
@@ -509,15 +508,15 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 8, vertical: 2),
                             decoration: BoxDecoration(
-                              color: AppTheme.primaryTint,
+                              color: context.acentoTint,
                               borderRadius: BorderRadius.circular(6),
                             ),
                             child: Text(
                               xogo.idade,
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 11,
                                 fontWeight: FontWeight.bold,
-                                color: AppTheme.primaryDark,
+                                color: context.acento,
                               ),
                             ),
                           ),
@@ -551,7 +550,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.inventory_2_outlined,
+                  const Icon(Icons.inventory_2_rounded,
                       size: 16, color: Color(0xFF4A5568)),
                   const SizedBox(width: 8),
                   Expanded(
@@ -582,7 +581,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                 children: [
                   const Row(
                     children: [
-                      Icon(Icons.record_voice_over_outlined,
+                      Icon(Icons.record_voice_over_rounded,
                           size: 16, color: Color(0xFF2B6CB0)),
                       SizedBox(width: 6),
                       Expanded(

@@ -5,13 +5,14 @@ import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/vocabulario_contos.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../widgets/palabras_do_conto.dart';
 
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/pasos_navegacion.dart';
 
 /// Visor interactivo e guiado do conto para docentes e familias.
 ///
@@ -21,6 +22,9 @@ import '../../juega/widgets/aula_ciclo_panel.dart';
 class CuentoViewerScreen extends StatefulWidget {
   final Cuento cuento;
   final AppLanguage language;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   /// La semana del curso de inglés a la que pertenece el cuento: sus veinte
@@ -36,6 +40,7 @@ class CuentoViewerScreen extends StatefulWidget {
     super.key,
     required this.cuento,
     this.language = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
     this.semanaTpr,
     this.dia,
@@ -46,6 +51,21 @@ class CuentoViewerScreen extends StatefulWidget {
 }
 
 class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
+  late AppLanguage _language = widget.language;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant CuentoViewerScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.language != widget.language) _language = widget.language;
+  }
+
   /// «0-2 anos» e non «CURSO_0_2», que é o identificador interno.
   static String _idadeDoCurso(String cursoId, bool isGl) {
     final m = RegExp(r'^curso_(\d)_(\d)$').firstMatch(cursoId);
@@ -78,7 +98,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.language;
+    final lang = _language;
     final isGl = lang == AppLanguage.gl;
     final cuento = widget.cuento;
     final paginas = cuento.paginas;
@@ -102,41 +122,15 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              cuento.titulo.resolve(lang),
-              style: const TextStyle(
-                color: AppTheme.textPrimary,
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
-            Text(
-              [
-                _idadeDoCurso(cuento.cursoId, isGl),
-                nomeDoMes[cuento.mesCalendario]?.resolve(lang) ?? '',
-                if (cuento.semanaSugerida case final semana?)
-                  '${isGl ? "semana" : "semana"} $semana',
-              ].join(' · '),
-              style: const TextStyle(
-                color: AppTheme.textSecondary,
-                fontSize: 11,
-              ),
-            ),
-          ],
-        ),
-        actions: [
+      appBar: Cabecera(
+        titulo: isGl ? 'Conto' : 'Cuento',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
+        accions: [
           // Control de tamaño de letra para lectura cómoda da persoa adulta
           IconButton(
-            icon: const Icon(Icons.text_fields_rounded, size: 20),
+            icon: const Icon(Icons.text_fields_rounded,
+                size: 22, color: Colors.white),
             tooltip: isGl ? 'Axustar letra' : 'Ajustar letra',
             onPressed: () {
               setState(() {
@@ -153,26 +147,66 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            // Sinopse e Centro de Interese
+            // O título do conto e a súa sinopse. O título vivía na cabeceira,
+            // pero alí non cabe enteiro: hai contos de máis de trinta letras.
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-              color: AppTheme.primaryLight,
+              color: context.acentoTint,
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.auto_stories,
-                      color: AppTheme.primaryDark, size: 20),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 2),
+                    child: Icon(Icons.auto_stories_rounded,
+                        color: context.acento, size: 20),
+                  ),
                   const SizedBox(width: 8),
                   Expanded(
-                    child: Text(
-                      cuento.sinopse.resolve(lang),
-                      style: const TextStyle(
-                        color: AppTheme.primaryInk,
-                        fontSize: 12,
-                        fontStyle: FontStyle.italic,
-                      ),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // Para quién y cuándo, encima del título. En la
+                        // cabecera, al lado del selector de lengua, se cortaba.
+                        Text(
+                          [
+                            _idadeDoCurso(cuento.cursoId, isGl),
+                            nomeDoMes[cuento.mesCalendario]?.resolve(lang) ??
+                                '',
+                            if (cuento.semanaSugerida case final semana?)
+                              'semana $semana',
+                          ].where((t) => t.isNotEmpty).join(' · '),
+                          key: const ValueKey('conto_meta'),
+                          style: const TextStyle(
+                            color: AppTheme.textSecondary,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 0.2,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          cuento.titulo.resolve(lang),
+                          key: const ValueKey('conto_titulo'),
+                          style: const TextStyle(
+                            color: AppTheme.textPrimary,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w800,
+                            height: 1.25,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          cuento.sinopse.resolve(lang),
+                          style: TextStyle(
+                            color: context.acento,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic,
+                          ),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -185,11 +219,11 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
               child: Container(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                color: const Color(0xFFFFF9EE),
+                color: AppTheme.warningBg,
                 child: Row(
                   children: [
-                    const Icon(Icons.tips_and_updates_outlined,
-                        size: 16, color: Color(0xFFC05621)),
+                    const Icon(Icons.tips_and_updates_rounded,
+                        size: 16, color: AppTheme.warning),
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
@@ -199,7 +233,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                         style: const TextStyle(
                           fontSize: 11,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFFC05621),
+                          color: AppTheme.warning,
                         ),
                       ),
                     ),
@@ -208,7 +242,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           ? Icons.keyboard_arrow_up_rounded
                           : Icons.keyboard_arrow_down_rounded,
                       size: 18,
-                      color: const Color(0xFFC05621),
+                      color: AppTheme.warning,
                     ),
                   ],
                 ),
@@ -278,7 +312,6 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                     if (paginaActual != null) ...[
                       Card(
                         key: _claveDaPaxina,
-                        elevation: 1,
                         shape: RoundedRectangleBorder(
                           borderRadius:
                               BorderRadius.circular(AppTheme.radiusCard),
@@ -315,7 +348,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 8, vertical: 3),
                                         decoration: BoxDecoration(
-                                          color: AppTheme.primaryTint,
+                                          color: context.acentoTint,
                                           borderRadius:
                                               BorderRadius.circular(6),
                                         ),
@@ -323,8 +356,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                           isGl
                                               ? 'Escena ${paginaActual.numero} de ${paginas.length}'
                                               : 'Escena ${paginaActual.numero} de ${paginas.length}',
-                                          style: const TextStyle(
-                                            color: AppTheme.primaryDark,
+                                          style: TextStyle(
+                                            color: context.acento,
                                             fontSize: 11,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -369,6 +402,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                   Text.rich(
                                     key: const Key('texto_do_conto'),
                                     textoConPalabras(
+                                      acento: context.acento,
                                       texto: textoNarrativo,
                                       palabras: _palabras,
                                       estilo: TextStyle(
@@ -510,6 +544,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                     audioService: widget.audioService,
                                     texto: cuento.tprOral!.fraseEn,
                                     language: AppLanguage.en,
+                                    interfaz: lang,
                                     compacto: true,
                                   ),
                                 ],
@@ -540,8 +575,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           });
                         },
                         icon: Icon(_mostrarPreguntas
-                            ? Icons.expand_less
-                            : Icons.expand_more),
+                            ? Icons.expand_less_rounded
+                            : Icons.expand_more_rounded),
                         label: Text(
                           isGl
                               ? 'Preguntas graduadas (${cuento.preguntasGraduadas.length} niveis)'
@@ -549,8 +584,8 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                         style: OutlinedButton.styleFrom(
-                          foregroundColor: AppTheme.primaryDark,
-                          side: const BorderSide(color: AppTheme.primaryDark),
+                          foregroundColor: context.acento,
+                          side: BorderSide(color: context.acento),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -577,10 +612,10 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                       preg.tipo != null
                                           ? 'Nivel ${preg.nivel}: ${preg.tipo!.resolve(lang)}'
                                           : 'Nivel ${preg.nivel}',
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 12,
-                                        color: AppTheme.primaryInk,
+                                        color: context.acento,
                                       ),
                                     ),
                                     const SizedBox(height: 4),
@@ -597,7 +632,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                         style: const TextStyle(
                                           fontSize: 11,
                                           fontStyle: FontStyle.italic,
-                                          color: Color(0xFF718096),
+                                          color: AppTheme.textMuted,
                                         ),
                                       ),
                                     ],
@@ -613,7 +648,9 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
               ),
             ),
 
-            // Barra Inferior de Navegación entre Páxinas
+            // Pasar páxina: a frecha volve, o botón principal avanza e, na
+            // última, pecha o conto. Antes eran dous botóns iguais e a última
+            // páxina deixaba o principal apagado, sen saída.
             if (hasPaginas && paginas.length > 1)
               Container(
                 padding:
@@ -628,57 +665,36 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                     ),
                   ],
                 ),
-                // Cada botón cede o seu ancho e a etiqueta encolle só cando
-                // non cabe: coa letra grande do sistema, «Seguinte» e
-                // «Anterior» saían pola dereita dun teléfono de 360 dp.
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Flexible(
-                      child: ElevatedButton.icon(
-                        onPressed: _currentPageIndex > 0
-                            ? () => setState(() => _currentPageIndex--)
-                            : null,
-                        icon: const Icon(Icons.arrow_back, size: 16),
-                        label: FittedBox(
-                          fit: BoxFit.scaleDown,
-                          child: Text(isGl ? 'Anterior' : 'Anterior'),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: AppTheme.pageBg,
-                          foregroundColor: AppTheme.textPrimary,
-                          elevation: 0,
-                        ),
-                      ),
+                child: PasosNavegacion(
+                  chaveAnterior: const ValueKey('conto_anterior'),
+                  chaveSeguinte: const ValueKey('conto_seguinte'),
+                  anterior: _currentPageIndex > 0
+                      ? () => setState(() => _currentPageIndex--)
+                      : null,
+                  etiquetaAnterior:
+                      isGl ? 'Páxina anterior' : 'Página anterior',
+                  centro: Text(
+                    '${_currentPageIndex + 1} / ${paginas.length}',
+                    key: const ValueKey('conto_paxina'),
+                    style: const TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 15,
+                      color: AppTheme.textSecondary,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                      child: Text(
-                        '${_currentPageIndex + 1} / ${paginas.length}',
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: AppTheme.textSecondary,
-                        ),
-                      ),
-                    ),
-                    Flexible(
-                      child: ElevatedButton.icon(
-                        onPressed: _currentPageIndex < paginas.length - 1
-                            ? () => setState(() => _currentPageIndex++)
-                            : null,
-                        label: FittedBox(
-                          fit: BoxFit.scaleDown,
-                          child: Text(isGl ? 'Seguinte' : 'Siguiente'),
-                        ),
-                        icon: const Icon(Icons.arrow_forward, size: 16),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: AppTheme.primaryVigoBlue,
-                          foregroundColor: Colors.white,
-                          elevation: 0,
-                        ),
-                      ),
-                    ),
-                  ],
+                  ),
+                  etiquetaSeguinte: _currentPageIndex < paginas.length - 1
+                      ? (isGl ? 'Seguinte' : 'Siguiente')
+                      : (isGl ? 'Rematar' : 'Terminar'),
+                  iconaSeguinte: _currentPageIndex < paginas.length - 1
+                      ? Icons.arrow_forward_rounded
+                      : Icons.check_rounded,
+                  seguinte: () {
+                    if (_currentPageIndex < paginas.length - 1) {
+                      setState(() => _currentPageIndex++);
+                    } else {
+                      Navigator.of(context).maybePop();
+                    }
+                  },
                 ),
               ),
           ],

@@ -76,24 +76,24 @@ class PasoCoreTprWidget extends StatelessWidget {
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                      color: AppTheme.backstageAccent.withValues(alpha: 0.2),
+                      color: context.acentoTint,
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
                     child: Text(
                       'FASE ${fase.orden} · ${fase.duracionSegundos}s',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 13,
                         fontWeight: FontWeight.w800,
-                        color: AppTheme.backstageAccent,
+                        color: context.acento,
                         letterSpacing: 1,
                       ),
                     ),
                   ),
                   const Spacer(),
-                  const Icon(
+                  Icon(
                     Icons.directions_run_rounded,
-                    color: AppTheme.backstageAccent,
+                    color: context.acento,
                     size: 26,
                   ),
                 ],
@@ -121,7 +121,7 @@ class PasoCoreTprWidget extends StatelessWidget {
             color: AppTheme.backstageSurfaceElevated,
             borderRadius: BorderRadius.circular(AppTheme.radiusCard),
             border: Border.all(
-              color: AppTheme.backstageAccent.withValues(alpha: 0.4),
+              color: context.acento.withValues(alpha: 0.4),
               width: 1.0,
             ),
           ),
@@ -130,20 +130,20 @@ class PasoCoreTprWidget extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.psychology_rounded,
-                    color: AppTheme.backstageAccent,
+                    color: context.acento,
                     size: 22,
                   ),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
                       metodologia.nombre.resolve(language),
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
-                        color: AppTheme.backstageAccent,
+                        color: context.acento,
                       ),
                     ),
                   ),
@@ -229,18 +229,18 @@ class PasoCoreTprWidget extends StatelessWidget {
             key: const ValueKey('cue_cards_indicator'),
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: AppTheme.backstageAccent.withValues(alpha: 0.15),
+              color: context.acentoTint,
               borderRadius: BorderRadius.circular(AppTheme.radiusCard),
               border: Border.all(
-                color: AppTheme.backstageAccent,
+                color: context.acento,
                 width: 1.5,
               ),
             ),
             child: Row(
               children: [
-                const Icon(
+                Icon(
                   Icons.style_rounded,
-                  color: AppTheme.backstageAccent,
+                  color: context.acento,
                   size: 32,
                 ),
                 const SizedBox(width: 14),
@@ -252,11 +252,11 @@ class PasoCoreTprWidget extends StatelessWidget {
                         isGl
                             ? 'Tarxetas Icónicas Cue Cards (Sen Texto)'
                             : 'Tarjetas Icónicas Cue Cards (Sin Texto)',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 17,
                           fontWeight: FontWeight.w800,
-                          color: AppTheme.backstageAccent,
+                          color: context.acento,
                         ),
                       ),
                       const SizedBox(height: 4),
@@ -287,9 +287,9 @@ class PasoCoreTprWidget extends StatelessWidget {
         // Título de Comandos L3
         Row(
           children: [
-            const Icon(
+            Icon(
               Icons.record_voice_over_rounded,
-              color: AppTheme.backstageAccent,
+              color: context.acento,
               size: 22,
             ),
             const SizedBox(width: 8),
@@ -330,9 +330,8 @@ class PasoCoreTprWidget extends StatelessWidget {
               color: AppTheme.backstageSurfaceElevated,
               borderRadius: BorderRadius.circular(AppTheme.radiusCard),
               border: Border.all(
-                color: isPlayingThis
-                    ? AppTheme.backstageAccent
-                    : AppTheme.backstageBorder,
+                color:
+                    isPlayingThis ? context.acento : AppTheme.backstageBorder,
                 width: isPlayingThis ? 2.0 : 1.0,
               ),
             ),
@@ -349,17 +348,17 @@ class PasoCoreTprWidget extends StatelessWidget {
                         vertical: 4,
                       ),
                       decoration: BoxDecoration(
-                        color: AppTheme.backstageAccent.withValues(alpha: 0.2),
+                        color: context.acentoTint,
                         borderRadius:
                             BorderRadius.circular(AppTheme.radiusField),
                       ),
                       child: Text(
                         'COMANDO ${index + 1}',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 12,
                           fontWeight: FontWeight.w800,
-                          color: AppTheme.backstageAccent,
+                          color: context.acento,
                           letterSpacing: 0.8,
                         ),
                       ),
@@ -370,7 +369,7 @@ class PasoCoreTprWidget extends StatelessWidget {
                         onPlayCommandAudio != null)
                       SizedBox(
                         height: 48,
-                        child: ElevatedButton.icon(
+                        child: OutlinedButton.icon(
                           key: ValueKey('play_tpr_audio_${cmd.id}'),
                           onPressed: () {
                             if (isPlayingThis) {
@@ -379,11 +378,7 @@ class PasoCoreTprWidget extends StatelessWidget {
                               onPlayCommandAudio!(cmd.audioAsset!);
                             }
                           },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: isPlayingThis
-                                ? AppTheme.backstageWarning
-                                : AppTheme.backstageAccent,
-                            foregroundColor: AppTheme.backstageBg,
+                          style: OutlinedButton.styleFrom(
                             padding: const EdgeInsets.symmetric(
                               horizontal: 16,
                               vertical: 8,
@@ -428,19 +423,19 @@ class PasoCoreTprWidget extends StatelessWidget {
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Icon(
+                            Icon(
                               Icons.record_voice_over_rounded,
                               size: 16,
-                              color: AppTheme.backstageAccent,
+                              color: context.acento,
                             ),
                             const SizedBox(width: 6),
                             Text(
                               isGl ? 'Voz docente' : 'Voz docente',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontFamily: AppTheme.fontFamily,
                                 fontSize: 12,
                                 fontWeight: FontWeight.w700,
-                                color: AppTheme.backstageAccent,
+                                color: context.acento,
                               ),
                             ),
                           ],
@@ -471,6 +466,7 @@ class PasoCoreTprWidget extends StatelessWidget {
                     audioService: audioService,
                     texto: cmd.textoIngles,
                     language: AppLanguage.en,
+                    interfaz: language,
                     style: estiloIngles(cmd.textoIngles),
                     compacto: true,
                     descripcion:
@@ -489,9 +485,9 @@ class PasoCoreTprWidget extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Icon(
+                      Icon(
                         Icons.accessibility_new_rounded,
-                        color: AppTheme.backstageAccent,
+                        color: context.acento,
                         size: 20,
                       ),
                       const SizedBox(width: 10),
@@ -503,11 +499,11 @@ class PasoCoreTprWidget extends StatelessWidget {
                               isGl
                                   ? 'Acción motriz esperada:'
                                   : 'Acción motriz esperada:',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontFamily: AppTheme.fontFamily,
                                 fontSize: 13,
                                 fontWeight: FontWeight.w700,
-                                color: AppTheme.backstageAccent,
+                                color: context.acento,
                               ),
                             ),
                             const SizedBox(height: 2),
@@ -541,7 +537,7 @@ class PasoCoreTprWidget extends StatelessWidget {
                     children: [
                       const Icon(
                         Icons.model_training_rounded,
-                        color: AppTheme.star,
+                        color: AppTheme.warning,
                         size: 20,
                       ),
                       const SizedBox(width: 10),
@@ -557,7 +553,9 @@ class PasoCoreTprWidget extends StatelessWidget {
                                 fontFamily: AppTheme.fontFamily,
                                 fontSize: 13,
                                 fontWeight: FontWeight.w700,
-                                color: AppTheme.star,
+                                // El amarillo de la estrella daba 1,53:1
+                                // sobre blanco: no se leía.
+                                color: AppTheme.warning,
                               ),
                             ),
                             const SizedBox(height: 2),

@@ -3,7 +3,6 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../premios/premios_repository.dart';
 import '../../calendario/views/calendario_screen.dart';
 import '../../calendario/widgets/calendario_do_curso.dart';
@@ -21,7 +20,8 @@ import '../widgets/aula_segundo_ciclo_panel.dart';
 import 'asamblea_player_screen.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../data/repositories/calendario_repository.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Ciclos educativos de Educación Infantil (Decreto 150/2022).
 enum CicloEducativo {
@@ -103,22 +103,10 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
     final isGl = _language == AppLanguage.gl;
 
     return Scaffold(
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          isGl ? 'Xoga con Lúa · Aula' : 'Juega con Lúa · Aula',
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12.0),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: isGl ? 'Xoga con Lúa' : 'Juega con Lúa',
+        language: _language,
+        onLanguageChanged: _onToggleLanguage,
       ),
       body: SafeArea(
         child: Column(
@@ -183,7 +171,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                                       : FontWeight.w600,
                               color:
                                   _selectedCiclo == CicloEducativo.primerCiclo
-                                      ? AppTheme.primaryInk
+                                      ? context.acento
                                       : AppTheme.textSecondary,
                             ),
                           ),
@@ -236,7 +224,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                                       : FontWeight.w600,
                               color:
                                   _selectedCiclo == CicloEducativo.segundoCiclo
-                                      ? AppTheme.backstageAccent
+                                      ? context.acento
                                       : AppTheme.textSecondary,
                             ),
                           ),
@@ -275,6 +263,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
         0,
       ),
       child: LuaGameStrip(
+        onLanguageChanged: _onToggleLanguage,
         repository: premios,
         perfil: Perfil.docente,
         language: _language,
@@ -299,7 +288,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       cursoId: cursoId,
       onAbrirMes: (contenido, curso, mesIndex) {
         Navigator.of(context).push(
-          MaterialPageRoute(
+          RutaLua(
+            de: context,
             builder: (context) => CalendarioScreen(
               store: widget.calendario ?? CalendarioStore(),
               contenido: contenido,
@@ -329,6 +319,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
   /// trabaja aquí, y aquí tienen que estar las cinco palabras que tocan hoy.
   Widget _circuloDoDia(String cursoId, int mes, int semana, int dia) {
     final circulo = CirculoDoDia(
+      onLanguageChanged: _onToggleLanguage,
       repository: widget.repository,
       cursoId: cursoId,
       mes: mes,
@@ -371,7 +362,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       language: _language,
       onAbrir: (Unidad unidad) {
         Navigator.of(context).push(
-          MaterialPageRoute(
+          RutaLua(
+            de: context,
             builder: (context) => AsambleaGuiadaScreen(
               unidad: unidad,
               premios: widget.premios,
@@ -403,7 +395,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
             .getProgresionSync('primeiro_ciclo.${tramo.clave}')
             ?.semana(dia?.semana ?? 0);
         Navigator.of(context).push(
-          MaterialPageRoute(
+          RutaLua(
+            de: context,
             builder: (context) => AsambleaPlayerScreen(
               // El día se aplica a las fases ANTES de entrar: el reproductor
               // no sabe de progresiones, solo enseña lo que le dan.
@@ -445,7 +438,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
             .getProgresionSync(AulaSegundoCicloPanel.claveProgresion(nivel))
             ?.semana(dia?.semana ?? 0);
         Navigator.of(context).push(
-          MaterialPageRoute(
+          RutaLua(
+            de: context,
             builder: (context) => AsambleaPlayerScreen(
               fases: dia?.aplicarA(asamblea.fases) ?? asamblea.fases,
               subtitulo:

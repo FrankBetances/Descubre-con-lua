@@ -78,9 +78,9 @@ class TarxetaHoxeNaAula extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
-        side: const BorderSide(color: AppTheme.primaryVigoBlue, width: 1.5),
+        side: BorderSide(color: context.acento, width: 1.5),
       ),
-      color: AppTheme.primaryTint,
+      color: context.acentoTint,
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -88,11 +88,11 @@ class TarxetaHoxeNaAula extends StatelessWidget {
           children: [
             Row(
               children: [
-                const CircleAvatar(
+                CircleAvatar(
                   radius: 18,
-                  backgroundColor: AppTheme.primaryLight,
-                  child: Icon(Icons.bolt_rounded,
-                      color: AppTheme.primaryInk, size: 22),
+                  backgroundColor: context.acentoTint,
+                  child:
+                      Icon(Icons.bolt_rounded, color: context.acento, size: 22),
                 ),
                 const SizedBox(width: 10),
                 Expanded(
@@ -107,10 +107,10 @@ class TarxetaHoxeNaAula extends StatelessWidget {
                             : (isGl
                                 ? 'HOXE NA AULA · RITMO TPR'
                                 : 'HOY EN EL AULA · RITMO TPR'),
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 10.5,
                           fontWeight: FontWeight.w800,
-                          color: AppTheme.primaryInk,
+                          color: context.acento,
                           letterSpacing: 0.6,
                         ),
                       ),
@@ -156,40 +156,46 @@ class TarxetaHoxeNaAula extends StatelessWidget {
               ),
             ],
             const SizedBox(height: 12),
-            // Wrap y no Row: con el texto grande del sistema los dos botones no
-            // caben en una fila y se parten en dos, en vez de encoger la letra.
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
+            // Uno debajo del otro y a lo ancho: el principal arriba. En una
+            // fila, «Comenzar la asamblea» no cabía a 360 px y el botón
+            // principal se partía en dos líneas.
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 ElevatedButton.icon(
                   key: const Key('boton_asemblea_de_hoxe'),
                   onPressed: () => onIniciarAsemblea(d, cursoId),
-                  icon: const Icon(Icons.play_arrow_rounded, size: 18),
+                  icon: const Icon(Icons.play_arrow_rounded, size: 20),
+                  // 16 px y márgenes de 16: con los 18 px y los 32 del tema
+                  // «Comenzar la asamblea» no cabía en una línea en 360 px.
                   label: Text(
-                    isGl
-                        ? 'Iniciar asemblea de hoxe'
-                        : 'Iniciar asamblea de hoy',
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    isGl ? 'Comezar a asemblea' : 'Comenzar la asamblea',
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.primaryVigoBlue,
-                    foregroundColor: Colors.white,
-                    minimumSize: const Size(0, AppTheme.touchMin),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 12,
+                    ),
+                    minimumSize: const Size(0, 52),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius:
+                          BorderRadius.circular(AppTheme.radiusButton),
                     ),
                   ),
                 ),
+                const SizedBox(height: 8),
                 OutlinedButton(
                   key: const Key('boton_ver_palabras_do_curso'),
                   onPressed: onVerPalabras,
                   style: OutlinedButton.styleFrom(
-                    side: const BorderSide(color: AppTheme.primaryVigoBlue),
-                    foregroundColor: AppTheme.primaryInk,
                     minimumSize: const Size(0, AppTheme.touchMin),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius:
+                          BorderRadius.circular(AppTheme.radiusButton),
                     ),
                   ),
                   child: Text(
@@ -241,12 +247,15 @@ class ProxeccionDoCurso extends StatelessWidget {
     this.scrollController,
   });
 
+  // Cada categoría lleva su color también en la letra, así que tienen que
+  // pasar AA sobre blanco: 5,17, 5,02, 5,18, 7,10 y 4,92:1. Los de antes
+  // —verde, naranja y mostaza claros— se quedaban entre 2,4 y 3,4:1.
   static const List<Color> _cores = [
-    Color(0xFF3182CE),
-    Color(0xFF38A169),
-    Color(0xFFDD6B20),
-    Color(0xFF805AD5),
-    Color(0xFFD69E2E),
+    Color(0xFF2563EB),
+    Color(0xFF15803D),
+    Color(0xFFC2410C),
+    Color(0xFF6D28D9),
+    Color(0xFFA16207),
   ];
 
   @override
@@ -283,10 +292,10 @@ class ProxeccionDoCurso extends StatelessWidget {
           isGl
               ? 'PROXECCIÓN LÉXICA · ${formatarMiles(total)} PALABRAS DE 0 A 6 ANOS'
               : 'PROYECCIÓN LÉXICA · ${formatarMiles(total)} PALABRAS DE 0 A 6 AÑOS',
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w800,
-            color: AppTheme.primaryInk,
+            color: context.acento,
             letterSpacing: 0.8,
           ),
         ),
@@ -314,10 +323,10 @@ class ProxeccionDoCurso extends StatelessWidget {
             children: [
               Text(
                 isGl ? 'O traxecto en números' : 'El trayecto en números',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 13.5,
                   fontWeight: FontWeight.bold,
-                  color: AppTheme.primaryInk,
+                  color: context.acento,
                 ),
               ),
               const SizedBox(height: 8),
@@ -413,8 +422,6 @@ class ProxeccionDoCurso extends StatelessWidget {
           child: ElevatedButton(
             onPressed: onPechar,
             style: ElevatedButton.styleFrom(
-              backgroundColor: AppTheme.primaryVigoBlue,
-              foregroundColor: Colors.white,
               minimumSize: const Size(0, AppTheme.touchMin),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -440,7 +447,7 @@ class _Fila extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cor = destacado ? AppTheme.primaryInk : AppTheme.textSecondary;
+    final cor = destacado ? context.acento : AppTheme.textSecondary;
     // Un solo texto con el rótulo en negrita, no una fila de dos: a escala de
     // texto grande el rótulo y el valor no caben lado a lado.
     return Padding(
@@ -451,7 +458,7 @@ class _Fila extends StatelessWidget {
             text: '$rotulo ',
             style: TextStyle(
               fontWeight: FontWeight.w800,
-              color: destacado ? AppTheme.primaryInk : AppTheme.textPrimary,
+              color: destacado ? context.acento : AppTheme.textPrimary,
             ),
           ),
           TextSpan(text: valor),

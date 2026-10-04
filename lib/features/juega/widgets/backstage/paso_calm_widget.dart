@@ -68,24 +68,24 @@ class PasoCalmWidget extends StatelessWidget {
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                      color: AppTheme.backstageAccent.withValues(alpha: 0.2),
+                      color: context.acentoTint,
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
                     child: Text(
                       'FASE ${fase.orden} · ${fase.duracionSegundos}s',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 13,
                         fontWeight: FontWeight.w800,
-                        color: AppTheme.backstageAccent,
+                        color: context.acento,
                         letterSpacing: 1,
                       ),
                     ),
                   ),
                   const Spacer(),
-                  const Icon(
+                  Icon(
                     Icons.spa_rounded,
-                    color: AppTheme.backstageAccent,
+                    color: context.acento,
                     size: 26,
                   ),
                 ],
@@ -114,7 +114,7 @@ class PasoCalmWidget extends StatelessWidget {
             color: AppTheme.backstageSurface,
             borderRadius: BorderRadius.circular(AppTheme.radiusCard),
             border: Border.all(
-              color: AppTheme.backstageAccent.withValues(alpha: 0.3),
+              color: context.acento.withValues(alpha: 0.3),
               width: 1.0,
             ),
           ),
@@ -124,12 +124,12 @@ class PasoCalmWidget extends StatelessWidget {
                 width: 44,
                 height: 44,
                 decoration: BoxDecoration(
-                  color: AppTheme.backstageAccent.withValues(alpha: 0.15),
+                  color: context.acentoTint,
                   shape: BoxShape.circle,
                 ),
-                child: const Icon(
+                child: Icon(
                   Icons.air_rounded,
-                  color: AppTheme.backstageAccent,
+                  color: context.acento,
                   size: 24,
                 ),
               ),
@@ -173,9 +173,9 @@ class PasoCalmWidget extends StatelessWidget {
         if (hasMaterials) ...[
           Row(
             children: [
-              const Icon(
+              Icon(
                 Icons.forest_rounded,
-                color: AppTheme.backstageAccent,
+                color: context.acento,
                 size: 22,
               ),
               const SizedBox(width: 8),
@@ -209,9 +209,9 @@ class PasoCalmWidget extends StatelessWidget {
                   // Nome do material
                   Row(
                     children: [
-                      const Icon(
+                      Icon(
                         Icons.eco_rounded,
-                        color: AppTheme.backstageAccent,
+                        color: context.acento,
                         size: 22,
                       ),
                       const SizedBox(width: 8),
@@ -235,7 +235,7 @@ class PasoCalmWidget extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Icon(
-                        Icons.place_outlined,
+                        Icons.place_rounded,
                         size: 16,
                         color: AppTheme.backstageTextSecondary,
                       ),
@@ -265,9 +265,9 @@ class PasoCalmWidget extends StatelessWidget {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Icon(
+                        Icon(
                           Icons.touch_app_rounded,
-                          color: AppTheme.backstageAccent,
+                          color: context.acento,
                           size: 18,
                         ),
                         const SizedBox(width: 8),
@@ -357,17 +357,10 @@ class PasoCalmWidget extends StatelessWidget {
           const SizedBox(height: 8),
           SizedBox(
             width: double.infinity,
-            child: ElevatedButton.icon(
+            child: OutlinedButton.icon(
               key: const ValueKey('play_calm_audio_button'),
               onPressed: onPlayCalmAudio,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: isPlayingCalmAudio
-                    ? AppTheme.backstageWarning
-                    : AppTheme.backstageSurfaceElevated,
-                foregroundColor: isPlayingCalmAudio
-                    ? AppTheme.backstageBg
-                    : AppTheme.backstageTextPrimary,
-                side: const BorderSide(color: AppTheme.backstageBorder),
+              style: OutlinedButton.styleFrom(
                 minimumSize: const Size.fromHeight(52),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(AppTheme.radiusButton),

@@ -45,7 +45,7 @@ class PasoExploracionWidget extends StatelessWidget {
           exploracion.titulo.resolve(language),
           style: theme.textTheme.headlineSmall?.copyWith(
             fontWeight: FontWeight.bold,
-            color: AppTheme.primaryVigoBlue,
+            color: context.acento,
             fontSize: 22.0,
           ),
         ),
@@ -76,7 +76,7 @@ class PasoExploracionWidget extends StatelessWidget {
                 children: [
                   const Icon(
                     Icons.warning_amber_rounded,
-                    color: AppTheme.accentTerracotta,
+                    color: AppTheme.warning,
                     size: 28,
                   ),
                   const SizedBox(width: 10),
@@ -92,8 +92,10 @@ class PasoExploracionWidget extends StatelessWidget {
                       isGl
                           ? 'PROTOCOLO DE SEGURIDADE NA AULA'
                           : 'PROTOCOLO DE SEGURIDAD EN EL AULA',
+                      // En ámbar y no en el amarillo de la estrella, que como
+                      // letra daba 1,53:1: el aviso de seguridad no se leía.
                       style: const TextStyle(
-                        color: AppTheme.accentTerracotta,
+                        color: AppTheme.warning,
                         fontWeight: FontWeight.bold,
                         fontSize: 16.0,
                         letterSpacing: 0.5,
@@ -145,7 +147,7 @@ class PasoExploracionWidget extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 12.5,
                     fontWeight: FontWeight.bold,
-                    color: AppTheme.accentTerracotta,
+                    color: AppTheme.warning,
                   ),
                 ),
               ),
@@ -166,9 +168,9 @@ class PasoExploracionWidget extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(
-                  Icons.center_focus_strong_outlined,
-                  color: AppTheme.primaryVigoBlue,
+                Icon(
+                  Icons.center_focus_strong_rounded,
+                  color: context.acento,
                   size: 22,
                 ),
                 const SizedBox(width: 12),
@@ -178,9 +180,9 @@ class PasoExploracionWidget extends StatelessWidget {
                     children: [
                       Text(
                         isGl ? 'Obxectivo sensorial:' : 'Objetivo sensorial:',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: AppTheme.primaryVigoBlue,
+                          color: context.acento,
                           fontSize: 16.0,
                         ),
                       ),
@@ -220,7 +222,7 @@ class PasoExploracionWidget extends StatelessWidget {
             isGl ? 'Materiais necesarios:' : 'Materiales necesarios:',
             style: theme.textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.bold,
-              color: AppTheme.primaryVigoBlue,
+              color: context.acento,
             ),
           ),
         if (!soloEsencial) const SizedBox(height: 10.0),
@@ -241,7 +243,7 @@ class PasoExploracionWidget extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Icon(
-                          Icons.check_box_outlined,
+                          Icons.check_box_rounded,
                           size: 20,
                           color: AppTheme.calmSage,
                         ),
@@ -269,7 +271,7 @@ class PasoExploracionWidget extends StatelessWidget {
           isGl ? 'Pasos da proposta:' : 'Pasos de la propuesta:',
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
-            color: AppTheme.primaryVigoBlue,
+            color: context.acento,
           ),
         ),
         const SizedBox(height: 10.0),
@@ -291,14 +293,13 @@ class PasoExploracionWidget extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 14,
-                    backgroundColor:
-                        AppTheme.primaryVigoBlue.withValues(alpha: 0.12),
+                    backgroundColor: context.acentoTint,
                     child: Text(
                       '${idx + 1}',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 13.0,
-                        color: AppTheme.primaryVigoBlue,
+                        color: context.acento,
                       ),
                     ),
                   ),

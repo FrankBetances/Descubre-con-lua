@@ -6,11 +6,11 @@ import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/progress_service.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/fsrs_card_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
+import '../../../core/widgets/cabecera.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 
 /// Repaso espaciado de las palabras del CURSO: las cinco de hoy y todas las
@@ -35,6 +35,9 @@ class FsrsTrainerScreen extends StatefulWidget {
   final ProgressService? progreso;
   final String cursoInicial;
   final AppLanguage language;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   /// Para los tests: el día que se quiere ver. Por defecto, hoy.
@@ -46,6 +49,7 @@ class FsrsTrainerScreen extends StatefulWidget {
     this.progreso,
     this.cursoInicial = 'curso_0_2',
     this.language = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
     this.agora,
   });
@@ -71,6 +75,21 @@ class _TarxetaDaRolda {
 }
 
 class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
+  late AppLanguage _language = widget.language;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant FsrsTrainerScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.language != widget.language) _language = widget.language;
+  }
+
   late final ProgressService _progreso = widget.progreso ?? ProgressService();
   late String _curso = widget.cursoInicial;
   bool _listo = false;
@@ -190,23 +209,15 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.language;
+    final lang = _language;
     final isGl = lang == AppLanguage.gl;
     final programa = widget.programa;
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          isGl ? 'Repaso espazado' : 'Repaso espaciado',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: isGl ? 'Repaso espazado' : 'Repaso espaciado',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: SafeArea(
         child: programa == null || !_listo
@@ -238,8 +249,8 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
   Widget _resumo(bool isGl) {
     final hoxe = diaDoCursoParaHoxe(agora: _agora);
     final d = hoxe.dia;
-    final mes = nomeDoMes[d.mesCalendario]?.resolve(widget.language) ?? '';
-    final dia = PalabrasDoDia.nomesDosDias[d.dia - 1].resolve(widget.language);
+    final mes = nomeDoMes[d.mesCalendario]?.resolve(_language) ?? '';
+    final dia = PalabrasDoDia.nomesDosDias[d.dia - 1].resolve(_language);
     final quedan = (_rolda.length - _indice).clamp(0, 999);
     return Container(
       key: const Key('fsrs_resumo'),
@@ -260,10 +271,10 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                 : (isGl
                     ? 'Hoxe: $dia, semana ${d.semana} de $mes'
                     : 'Hoy: $dia, semana ${d.semana} de $mes'),
-            style: const TextStyle(
+            style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 13.5,
-              color: AppTheme.primaryInk,
+              color: context.acento,
             ),
           ),
           const SizedBox(height: 4),
@@ -300,12 +311,11 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
             : (isGl ? 'TOCA REPASALA' : 'TOCA REPASARLA');
 
     return [
+      // La tarjeta del tema: plana, con borde y radio 16, como todas.
       Card(
         key: const Key('fsrs_tarxeta'),
-        elevation: 2,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         child: InkWell(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(AppTheme.radiusCard),
           onTap: () => setState(() => _revelada = !_revelada),
           child: Padding(
             padding: const EdgeInsets.all(20),
@@ -313,11 +323,11 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
               children: [
                 Text(
                   '$motivo · ${_indice + 1}/${_rolda.length}',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 11,
                     fontWeight: FontWeight.w800,
                     letterSpacing: 0.8,
-                    color: AppTheme.primaryInk,
+                    color: context.acento,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -340,6 +350,7 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                   audioService: widget.audioService,
                   texto: p.en,
                   language: AppLanguage.en,
+                  interfaz: lang,
                   style: estiloIngles(p.en),
                 ),
                 const SizedBox(height: 8),
@@ -359,10 +370,10 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                     p.significado(lang),
                     key: const Key('fsrs_significado'),
                     textAlign: TextAlign.center,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: AppTheme.primaryDark,
+                      color: context.acento,
                     ),
                   ),
                   const SizedBox(height: 10),
@@ -370,14 +381,14 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                     width: double.infinity,
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      color: AppTheme.primaryLight,
+                      color: context.acentoTint,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
                       '${isGl ? 'Xesto' : 'Gesto'}: ${p.tprAction.resolve(lang)}',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 14,
-                        color: AppTheme.primaryInk,
+                        color: context.acento,
                         height: 1.35,
                       ),
                     ),
@@ -417,10 +428,10 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
           runSpacing: 8,
           alignment: WrapAlignment.center,
           children: [
-            _nota(1, isGl ? 'Outra vez' : 'Otra vez', AppTheme.error),
+            _nota(1, isGl ? 'Outra vez' : 'Otra vez', AppTheme.errorInk),
             _nota(2, isGl ? 'Custoume' : 'Me costó', AppTheme.warning),
-            _nota(3, isGl ? 'Ben' : 'Bien', AppTheme.primary),
-            _nota(4, isGl ? 'Doado' : 'Fácil', AppTheme.success),
+            _nota(3, isGl ? 'Ben' : 'Bien', AppTheme.info),
+            _nota(4, isGl ? 'Doado' : 'Fácil', AppTheme.successInk),
           ],
         )
       else
@@ -428,7 +439,6 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
           key: const Key('fsrs_amosar'),
           onPressed: () => setState(() => _revelada = true),
           style: ElevatedButton.styleFrom(
-            backgroundColor: AppTheme.primary,
             minimumSize: const Size(0, AppTheme.touchMin),
             padding: const EdgeInsets.symmetric(vertical: 12),
             shape: RoundedRectangleBorder(
@@ -501,23 +511,23 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
     );
   }
 
+  /// Cuatro respuestas del mismo peso, cada una con su color en el borde y
+  /// la letra. Eran cuatro botones principales iguales, rellenos del acento,
+  /// y el color de cada una se recibía y no se usaba.
   Widget _nota(int nota, String rotulo, Color cor) {
-    return ElevatedButton(
+    return OutlinedButton(
       key: ValueKey('fsrs_nota_$nota'),
       onPressed: () => _puntuar(nota),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: cor,
+      style: OutlinedButton.styleFrom(
+        foregroundColor: cor,
+        backgroundColor: Colors.white,
+        side: BorderSide(color: cor, width: 1.5),
         minimumSize: const Size(120, AppTheme.touchMin),
-        elevation: 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
       child: Text(
         rotulo,
-        style: const TextStyle(
-          color: Colors.white,
-          fontWeight: FontWeight.bold,
-          fontSize: 14,
-        ),
+        style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14),
       ),
     );
   }

@@ -308,6 +308,36 @@ void main() {
     }
   }
 
+  // Lote L2: catro respostas do mesmo peso, non catro botóns principais. Cada
+  // unha leva a súa cor no bordo e na letra, e todas pasan AA sobre branco.
+  testWidgets('Repaso: as catro respostas son secundarias e de cor distinta',
+      (tester) async {
+    final progreso = await progresoBaleiro();
+    await pintar(
+      tester,
+      FsrsTrainerScreen(
+        programa: programa,
+        progreso: progreso,
+        agora: miercoles,
+      ),
+      tamano: const Size(400, 1400),
+    );
+    await tocar(tester, find.byKey(const Key('fsrs_amosar')));
+    expect(find.byWidgetPredicate((w) => w is ElevatedButton && w.enabled),
+        findsNothing);
+    final cores = <Color>{};
+    for (var nota = 1; nota <= 4; nota++) {
+      final boton = tester
+          .widget<OutlinedButton>(find.byKey(ValueKey('fsrs_nota_$nota')));
+      final cor = boton.style!.foregroundColor!.resolve({})!;
+      cores.add(cor);
+      final luz = (cor.computeLuminance() + 0.05);
+      expect(1.05 / luz, greaterThanOrEqualTo(4.5),
+          reason: 'fsrs_nota_$nota: $cor sobre branco');
+    }
+    expect(cores, hasLength(4));
+  });
+
   testWidgets('Repaso: «Outra vez» vólvea ensinar ao final, unha vez',
       (tester) async {
     final progreso = await progresoBaleiro();

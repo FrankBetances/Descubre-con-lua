@@ -25,11 +25,22 @@ class AppTheme {
   static const Color borderActive = Color(0xFFCDEEEC);
   static const Color textPrimary = Color(0xFF1F2937);
   static const Color textSecondary = Color(0xFF4B5563);
-  static const Color textMuted = Color(0xFF9AA6A5);
+
+  /// Texto atenuado. Era #9AA6A5, que sobre blanco da 2,51:1 y no se leía;
+  /// este da 5,53:1 sobre blanco y 5,26:1 sobre el fondo de página.
+  static const Color textMuted = Color(0xFF5F6B6A);
   static const Color error = Color(0xFFEF4444);
   static const Color errorBg = Color(0xFFFFF1F2);
   static const Color success = Color(0xFF10B981);
   static const Color successBg = Color(0xFFEAFAF2);
+
+  /// [error] y [success] son para iconos y fondos: como letra sobre blanco se
+  /// quedan en 3,76:1 y 2,54:1. Para texto, estos tres, que pasan AA sobre
+  /// blanco y sobre los dos fondos claros de los portales: 6,06:1, 5,14:1 y
+  /// 4,84:1 en el peor caso. El azul es el de la paleta de los meses.
+  static const Color errorInk = Color(0xFFB91C1C);
+  static const Color successInk = Color(0xFF047857);
+  static const Color info = Color(0xFF2563EB);
   static const Color star = Color(0xFFFACC15);
 
   /// Aviso: ni error ni éxito. Es el ámbar de la casa, y existe porque las
@@ -78,6 +89,27 @@ class AppTheme {
   /// más ya no pasa —#158C85 se queda en 4,10— así que aquí no hay margen sin
   /// perder legibilidad.
   static const Color primaryInk = Color(0xFF127A75);
+
+  // ------------------------------------------------ acentos de los portales
+  /// Cada portal tiene un acento: el de su cabecera, su botón principal, sus
+  /// chips elegidos y sus enlaces. Dice en qué parte de la app está una sin
+  /// tener que leer nada, y los dos pasan AA con texto blanco encima.
+  ///
+  /// El turquesa de marca ([primary]) se queda para fondos, ilustración y
+  /// detalles: nunca con texto blanco encima, que da 2,18:1.
+
+  /// Familias: el naranja de la casa, oscurecido hasta pasar AA (5,02:1 con
+  /// blanco). El de antes, #DD6B20, se quedaba en 3,39:1.
+  static const Color familias = Color(0xFFB4530F);
+
+  /// Fondo claro de familias, para chips y avisos. El acento encima da 4,70:1.
+  static const Color familiasTint = Color(0xFFFFF6EF);
+
+  /// Docentes: el turquesa oscuro de la barra (5,16:1 con blanco).
+  static const Color docentes = primaryInk;
+
+  /// Fondo claro de docentes. El acento encima da 4,74:1.
+  static const Color docentesTint = primaryLight;
 
   // Nombres de la paleta anterior («Maritime Vigo»). Se conservan porque los
   // usan 147 sitios del código y romperlos no aportaba nada; apuntan ya a los
@@ -130,26 +162,55 @@ class AppTheme {
     ),
   ];
 
-  /// Tema claro. Los adultos son los únicos que miran esta pantalla, así que el
-  /// cuerpo de texto no baja de 16sp.
-  static ThemeData get lightTheme {
-    const colorScheme = ColorScheme(
+  /// Tema claro de la app: el de las docentes y el de las pantallas comunes.
+  /// Los adultos son los únicos que miran esta pantalla, así que el cuerpo de
+  /// texto no baja de 16sp.
+  static ThemeData get lightTheme => temaDe(docentes, docentesTint);
+
+  /// Tema del Portal Familias y de todo lo que se abre desde él.
+  static ThemeData get temaFamilias => temaDe(familias, familiasTint);
+
+  /// Tema del Portal Docentes. Es el de la app: se nombra para que quien abre
+  /// el portal diga qué tema quiere y no dependa de cuál sea el de serie.
+  static ThemeData get temaDocentes => lightTheme;
+
+  /// El tema de un portal a partir de su [acento] y su fondo claro [tinte].
+  ///
+  /// Todo lo que lleva el color del portal sale de aquí: la cabecera, el botón
+  /// principal, los enlaces, el chip elegido, la pestaña activa. Por eso una
+  /// pantalla no escribe colores de botón ni de chip: si lo hace, se sale del
+  /// sistema y, casi siempre, del contraste AA. Lo vigila `ux_l2_test.dart`.
+  static ThemeData temaDe(Color acento, Color tinte) {
+    final colorScheme = ColorScheme(
       brightness: Brightness.light,
-      primary: primary,
-      // Tinta oscura, no blanco: 8,59:1 frente a 2,18:1. Ver `primaryInk`.
-      onPrimary: dark,
-      secondary: primaryInk,
+      primary: acento,
+      onPrimary: Colors.white,
+      primaryContainer: tinte,
+      onPrimaryContainer: acento,
+      secondary: acento,
       onSecondary: Colors.white,
+      secondaryContainer: acento,
+      onSecondaryContainer: Colors.white,
       tertiary: star,
       onTertiary: dark,
       error: error,
       onError: Colors.white,
       surface: pageBg,
       onSurface: textPrimary,
-      surfaceContainerHighest: primaryLight,
+      surfaceContainerHighest: tinte,
       onSurfaceVariant: textSecondary,
       outline: border,
     );
+
+    // El chip elegido va relleno del acento y con la letra en blanco; el
+    // resto, en blanco con letra oscura. Antes cada pantalla ponía el suyo:
+    // turquesa con blanco encima (2,18:1) o turquesa sobre turquesa oscuro.
+    final letraDoChip = WidgetStateColor.resolveWith((estados) =>
+        estados.contains(WidgetState.selected) ? Colors.white : textPrimary);
+    final bordeDoChip = WidgetStateBorderSide.resolveWith((estados) =>
+        estados.contains(WidgetState.selected)
+            ? BorderSide(color: acento)
+            : const BorderSide(color: border));
 
     return ThemeData(
       useMaterial3: true,
@@ -218,17 +279,21 @@ class AppTheme {
           letterSpacing: 0.1,
         ),
       ),
-      appBarTheme: const AppBarTheme(
-        backgroundColor: primaryInk,
+      appBarTheme: AppBarTheme(
+        backgroundColor: acento,
         foregroundColor: Colors.white,
         elevation: 0,
-        centerTitle: true,
-        titleTextStyle: TextStyle(
+        scrolledUnderElevation: 0,
+        // A la izquierda, como en Android: deja más sitio al título entre la
+        // flecha de volver y el selector de lengua.
+        centerTitle: false,
+        titleSpacing: 4,
+        titleTextStyle: const TextStyle(
           fontFamily: fontFamily,
           fontSize: 20.0,
           fontWeight: FontWeight.w800,
           color: Colors.white,
-          letterSpacing: 0.2,
+          letterSpacing: 0.1,
         ),
       ),
       cardTheme: CardThemeData(
@@ -244,10 +309,13 @@ class AppTheme {
           vertical: spaceSm,
         ),
       ),
+      // Botón principal: uno por pantalla, relleno del acento.
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: primary,
-          foregroundColor: dark,
+          backgroundColor: acento,
+          foregroundColor: Colors.white,
+          disabledBackgroundColor: border,
+          disabledForegroundColor: textMuted,
           elevation: 0,
           minimumSize: const Size(0, touchMin),
           padding: const EdgeInsets.symmetric(
@@ -265,11 +333,13 @@ class AppTheme {
           ),
         ),
       ),
+      // Secundario: con borde, mismo radio, nunca otro relleno.
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          foregroundColor: primaryDark,
+          foregroundColor: acento,
           backgroundColor: card,
-          side: const BorderSide(color: borderActive, width: 1.5),
+          disabledForegroundColor: textMuted,
+          side: BorderSide(color: acento.withValues(alpha: 0.45), width: 1.5),
           minimumSize: const Size(0, touchMin),
           padding: const EdgeInsets.symmetric(
             horizontal: spaceXl,
@@ -287,7 +357,7 @@ class AppTheme {
       ),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-          foregroundColor: primaryDark,
+          foregroundColor: acento,
           minimumSize: const Size(0, touchMin),
           textStyle: const TextStyle(
             fontFamily: fontFamily,
@@ -302,20 +372,38 @@ class AppTheme {
         space: spaceXl,
       ),
       chipTheme: ChipThemeData(
-        backgroundColor: primaryLight,
-        side: const BorderSide(color: borderActive),
-        labelStyle: const TextStyle(
+        backgroundColor: card,
+        selectedColor: acento,
+        disabledColor: border,
+        checkmarkColor: Colors.white,
+        side: bordeDoChip,
+        labelStyle: TextStyle(
           fontFamily: fontFamily,
           fontSize: 14.0,
           fontWeight: FontWeight.w700,
-          color: primaryDark,
+          color: letraDoChip,
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(radiusField),
         ),
       ),
-      progressIndicatorTheme: const ProgressIndicatorThemeData(
-        color: primary,
+      tabBarTheme: TabBarThemeData(
+        labelColor: acento,
+        unselectedLabelColor: textSecondary,
+        indicatorColor: acento,
+        labelStyle: const TextStyle(
+          fontFamily: fontFamily,
+          fontSize: 15.0,
+          fontWeight: FontWeight.w800,
+        ),
+        unselectedLabelStyle: const TextStyle(
+          fontFamily: fontFamily,
+          fontSize: 15.0,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+      progressIndicatorTheme: ProgressIndicatorThemeData(
+        color: acento,
         linearTrackColor: border,
         linearMinHeight: 10,
       ),
@@ -372,4 +460,17 @@ class AppTheme {
       ),
     );
   }
+}
+
+/// El acento del portal en el que está una pantalla, sacado del tema.
+///
+/// Una pantalla que se abre desde los dos portales —la formación, una cápsula,
+/// el calendario— no puede escribir su color: con `context.acento` sale
+/// naranja si se abrió desde Familias y turquesa oscuro desde Docentes.
+extension AcentoDoPortal on BuildContext {
+  /// Para texto, iconos y bordes: pasa AA sobre blanco y sobre [acentoTint].
+  Color get acento => Theme.of(this).colorScheme.primary;
+
+  /// El fondo claro del acento.
+  Color get acentoTint => Theme.of(this).colorScheme.primaryContainer;
 }

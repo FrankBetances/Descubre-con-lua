@@ -5,7 +5,6 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/models/unidad_model.dart';
-import '../../academy/widgets/selector_idioma_widget.dart';
 import '../widgets/paso_cancion_widget.dart';
 import '../widgets/paso_conto_widget.dart';
 import '../widgets/paso_exploracion_widget.dart';
@@ -20,7 +19,9 @@ import '../widgets/paso_preguntas_widget.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../../../core/storage/calendario_store.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/pasos_navegacion.dart';
 
 /// Screen orchestrating the 6 canonical assembly phases for early childhood teachers.
 ///
@@ -202,8 +203,10 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
         .trim()
         .isNotEmpty) {
       await Navigator.of(context).push(
-        MaterialPageRoute(
+        RutaLua(
+          de: context,
           builder: (context) => NotaParaCasasScreen(
+            onLanguageChanged: _onToggleLanguage,
             unidad: widget.unidad,
             language: _language,
             audioService: _audioService,
@@ -299,11 +302,12 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
           soloEsencial: _modoAsamblea,
         );
       case 5:
+        // Sin botón propio de terminar: lo hace «Finalizar» en la barra de
+        // abajo. Había los dos a la vez, iguales y con la misma acción.
         return PasoPonteCasaWidget(
           ponteCasa: unidad.puenteCasa,
           language: _language,
           audioService: _audioService,
-          onFinalizar: _finalizarAsamblea,
           soloEsencial: _modoAsamblea,
         );
       default:
@@ -317,22 +321,10 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
     final titulosPasos = isGl ? _titulosPasosGl : _titulosPasosEs;
 
     return Scaffold(
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          isGl ? 'Modo Asemblea · Aula' : 'Modo Asamblea · Aula',
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12.0),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: isGl ? 'Modo Asemblea' : 'Modo Asamblea',
+        language: _language,
+        onLanguageChanged: _onToggleLanguage,
       ),
       body: SafeArea(
         child: Column(
@@ -363,8 +355,8 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                             'Fase ${_currentPaso + 1} de 6',
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                              color: AppTheme.primaryVigoBlue,
+                            style: TextStyle(
+                              color: context.acento,
                               fontWeight: FontWeight.bold,
                               fontSize: 14.0,
                             ),
@@ -390,8 +382,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                   LinearProgressIndicator(
                     value: (_currentPaso + 1) / 6.0,
                     backgroundColor: const Color(0xFFE2DDD0),
-                    valueColor: const AlwaysStoppedAnimation<Color>(
-                        AppTheme.primaryVigoBlue),
+                    valueColor: AlwaysStoppedAnimation<Color>(context.acento),
                     minHeight: 6.0,
                     borderRadius: BorderRadius.circular(3.0),
                   ),
@@ -412,21 +403,21 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
               Container(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                color: AppTheme.primaryLight,
+                color: context.acentoTint,
                 child: Row(
                   children: [
-                    const Icon(Icons.phonelink_erase_rounded,
-                        size: 18, color: AppTheme.primaryDark),
+                    Icon(Icons.phonelink_erase_rounded,
+                        size: 18, color: context.acento),
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
                         isGl
                             ? 'Asistente docente · Móbil fóra da vista$_duracionTotal'
                             : 'Asistente docente · Móvil fuera de la vista$_duracionTotal',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 12.0,
                           fontWeight: FontWeight.bold,
-                          color: AppTheme.primaryDark,
+                          color: context.acento,
                         ),
                       ),
                     ),
@@ -507,67 +498,24 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                 border: Border(
                     top: BorderSide(color: Color(0xFFE2DDD0), width: 1.0)),
               ),
-              // Expanded en los dos botones y un hueco fijo en medio, en vez
-              // de `Spacer` con botones a su tamaño natural: con el texto
-              // grande del sistema esa fila desbordaba 289 px por la derecha,
-              // y en release eso no se ve: el botón de «Seguinte» se queda a
-              // medias fuera de la pantalla.
-              child: Row(
-                children: [
-                  Expanded(
-                    child: OutlinedButton.icon(
-                      onPressed: _currentPaso > 0 ? _previousPaso : null,
-                      icon: const Icon(Icons.arrow_back),
-                      label: Text(
-                        isGl ? 'Anterior' : 'Anterior',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      style: OutlinedButton.styleFrom(
-                        minimumSize: const Size(0, 48),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 16.0, vertical: 12.0),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: _currentPaso < 5
-                        ? ElevatedButton.icon(
-                            key: const Key('boton_seguinte_fase'),
-                            onPressed: _nextPaso,
-                            icon: const Icon(Icons.arrow_forward),
-                            label: Text(
-                              isGl ? 'Seguinte' : 'Siguiente',
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            style: ElevatedButton.styleFrom(
-                              minimumSize: const Size(0, 48),
-                              backgroundColor: AppTheme.primaryVigoBlue,
-                              foregroundColor: Colors.white,
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 12.0, vertical: 12.0),
-                            ),
-                          )
-                        : ElevatedButton.icon(
-                            onPressed: _finalizarAsamblea,
-                            icon: const Icon(Icons.check),
-                            label: Text(
-                              isGl ? 'Finalizar' : 'Finalizar',
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            style: ElevatedButton.styleFrom(
-                              minimumSize: const Size(0, 48),
-                              backgroundColor: AppTheme.primaryVigoBlue,
-                              foregroundColor: Colors.white,
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 12.0, vertical: 12.0),
-                            ),
-                          ),
-                  ),
-                ],
+              // El mismo par que en todo lo que va paso a paso: volver es una
+              // flecha y avanzar el botón principal, a lo ancho. Eran dos
+              // botones de media fila, y con el texto grande del sistema
+              // cada etiqueta se quedaba en media fila.
+              child: PasosNavegacion(
+                chaveAnterior: const Key('boton_fase_anterior'),
+                chaveSeguinte: _currentPaso < 5
+                    ? const Key('boton_seguinte_fase')
+                    : const Key('boton_finalizar_asemblea'),
+                anterior: _currentPaso > 0 ? _previousPaso : null,
+                etiquetaAnterior: isGl ? 'Fase anterior' : 'Fase anterior',
+                etiquetaSeguinte: _currentPaso < 5
+                    ? (isGl ? 'Seguinte' : 'Siguiente')
+                    : (isGl ? 'Rematar' : 'Terminar'),
+                iconaSeguinte: _currentPaso < 5
+                    ? Icons.arrow_forward_rounded
+                    : Icons.check_rounded,
+                seguinte: _currentPaso < 5 ? _nextPaso : _finalizarAsamblea,
               ),
             ),
           ],

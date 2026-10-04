@@ -35,34 +35,26 @@ class SeccionCapsulaWidget extends StatelessWidget {
   IconData get _defaultIcon {
     switch (tipo) {
       case TipoSeccionCapsula.ideaClave:
-        return Icons.lightbulb_outline;
+        return Icons.lightbulb_rounded;
       case TipoSeccionCapsula.porQueImporta:
-        return Icons.psychology_outlined;
+        return Icons.psychology_rounded;
       case TipoSeccionCapsula.queHacerEnCasa:
-        return Icons.home_outlined;
+        return Icons.home_rounded;
       case TipoSeccionCapsula.ejemploCotidiano:
-        return Icons.forum_outlined;
+        return Icons.forum_rounded;
     }
   }
 
-  Color get _effectiveAccentColor {
-    if (accentColor != null) return accentColor!;
-    switch (tipo) {
-      case TipoSeccionCapsula.ideaClave:
-        return AppTheme.primaryVigoBlue;
-      case TipoSeccionCapsula.porQueImporta:
-        return const Color(0xFF2C5E7A);
-      case TipoSeccionCapsula.queHacerEnCasa:
-        return AppTheme.calmSage;
-      case TipoSeccionCapsula.ejemploCotidiano:
-        return AppTheme.accentTerracotta;
-    }
-  }
+  /// Las cuatro secciones con el acento del portal: las distinguen su icono y
+  /// su título. Antes llevaban verde y amarillo, que como letra sobre blanco
+  /// se quedaban en 2,5:1 y 1,5:1.
+  Color _effectiveAccentColor(BuildContext context) =>
+      accentColor ?? context.acento;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final accent = _effectiveAccentColor;
+    final accent = _effectiveAccentColor(context);
     final icon = iconOverride ?? _defaultIcon;
 
     return Container(

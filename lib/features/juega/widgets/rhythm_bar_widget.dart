@@ -60,7 +60,7 @@ class RhythmBarWidget extends StatelessWidget {
                 painter: _BeatPainter(
                   strong: index % accentEvery == 0,
                   active: current == index,
-                  colour: AppTheme.primaryVigoBlue,
+                  colour: context.acento,
                 ),
               );
             }),

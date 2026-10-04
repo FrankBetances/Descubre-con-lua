@@ -192,7 +192,7 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
                 width: 4,
                 height: 18,
                 decoration: BoxDecoration(
-                  color: AppTheme.primaryDark,
+                  color: context.acento,
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
@@ -202,11 +202,11 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
                   isGl
                       ? 'CALENDARIO ESCOLA · FOGAR · ${_rotuloDoCurso(widget.lang)}'
                       : 'CALENDARIO ESCUELA · HOGAR · ${_rotuloDoCurso(widget.lang)}',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontFamily: AppTheme.fontFamily,
                     fontSize: 11,
                     fontWeight: FontWeight.w800,
-                    color: AppTheme.primaryDark,
+                    color: context.acento,
                     letterSpacing: 1.2,
                   ),
                 ),
@@ -221,11 +221,11 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
                 ),
                 child: Text(
                   isGl ? 'Ver todo' : 'Ver todo',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontFamily: AppTheme.fontFamily,
                     fontSize: 12.5,
                     fontWeight: FontWeight.w700,
-                    color: AppTheme.primaryDark,
+                    color: context.acento,
                   ),
                 ),
               ),

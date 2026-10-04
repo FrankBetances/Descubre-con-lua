@@ -303,10 +303,10 @@ class _SelectorDeClase extends StatelessWidget {
                     horizontal: AppTheme.spaceSm,
                   ),
                   decoration: BoxDecoration(
-                    color: activo ? AppTheme.primaryInk : AppTheme.card,
+                    color: activo ? context.acento : AppTheme.card,
                     borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     border: Border.all(
-                      color: activo ? AppTheme.primaryInk : AppTheme.border,
+                      color: activo ? context.acento : AppTheme.border,
                       width: 1.5,
                     ),
                   ),
@@ -336,9 +336,7 @@ class _SelectorDeClase extends StatelessWidget {
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 11,
                           fontWeight: FontWeight.w600,
-                          color: activo
-                              ? Colors.white.withValues(alpha: 0.85)
-                              : AppTheme.textMuted,
+                          color: activo ? Colors.white : AppTheme.textMuted,
                         ),
                       ),
                     ],
@@ -396,10 +394,10 @@ class _SelectorDeMes extends StatelessWidget {
                   horizontal: AppTheme.spaceLg,
                 ),
                 decoration: BoxDecoration(
-                  color: activo ? AppTheme.primary : AppTheme.card,
+                  color: activo ? context.acento : AppTheme.card,
                   borderRadius: BorderRadius.circular(AppTheme.radiusField),
                   border: Border.all(
-                    color: activo ? AppTheme.primary : AppTheme.border,
+                    color: activo ? context.acento : AppTheme.border,
                     width: 1.5,
                   ),
                 ),
@@ -481,7 +479,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
         children: [
           Container(
             height: 120,
-            color: AppTheme.primaryTint,
+            color: context.acentoTint,
             alignment: Alignment.center,
             child: LaminaEscena(clave: _lamina, ancho: 96),
           ),
@@ -492,11 +490,11 @@ class _TarxetaDeFluxo extends StatelessWidget {
               children: [
                 Text(
                   '${nomeMes.resolve(language)} · ${asamblea.nivel.etiquetaCorta.resolve(language)}',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontFamily: AppTheme.fontFamily,
                     fontSize: 12,
                     fontWeight: FontWeight.w800,
-                    color: AppTheme.primaryInk,
+                    color: context.acento,
                     letterSpacing: 0.8,
                   ),
                 ),
@@ -541,8 +539,6 @@ class _TarxetaDeFluxo extends StatelessWidget {
                     key: const ValueKey('comezar_asemblea_2c'),
                     onPressed: onComezar,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.primaryInk,
-                      foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius:
                             BorderRadius.circular(AppTheme.radiusButton),

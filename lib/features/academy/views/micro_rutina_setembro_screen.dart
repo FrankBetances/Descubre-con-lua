@@ -6,9 +6,8 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../widgets/academy_header.dart';
 import '../widgets/recast_guia_card.dart';
-import '../widgets/selector_idioma_widget.dart';
 import '../../../data/models/curricular_model.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Pantalla da Micro-Rutina do Fogar de Setembro para o Segundo Ciclo (3-6 anos).
 ///
@@ -105,21 +104,10 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
     final isGl = _language == AppLanguage.gl;
 
     return Scaffold(
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          isGl ? 'Micro-Rutina · Setembro' : 'Micro-Rutina · Septiembre',
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: AppTheme.spaceMd),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: 'Micro-rutina',
+        language: _language,
+        onLanguageChanged: _onToggleLanguage,
       ),
       body: PaxinaSenScroll(
           desprazarSeNonCabe: true,
@@ -163,26 +151,26 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
                                   vertical: 4,
                                 ),
                                 decoration: BoxDecoration(
-                                  color: AppTheme.primaryLight,
+                                  color: context.acentoTint,
                                   borderRadius: BorderRadius.circular(
                                     AppTheme.radiusField,
                                   ),
                                 ),
-                                child: const Row(
+                                child: Row(
                                   children: [
                                     Icon(
                                       Icons.hourglass_top_rounded,
                                       size: 16,
-                                      color: AppTheme.primaryInk,
+                                      color: context.acento,
                                     ),
-                                    SizedBox(width: 4),
+                                    const SizedBox(width: 4),
                                     Text(
                                       '3-5 MINUTOS',
                                       style: TextStyle(
                                         fontFamily: AppTheme.fontFamily,
                                         fontSize: 12,
                                         fontWeight: FontWeight.w800,
-                                        color: AppTheme.primaryInk,
+                                        color: context.acento,
                                         letterSpacing: 0.8,
                                       ),
                                     ),
@@ -269,9 +257,9 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
                           children: [
                             Row(
                               children: [
-                                const Icon(
-                                  Icons.school_outlined,
-                                  color: AppTheme.primaryInk,
+                                Icon(
+                                  Icons.school_rounded,
+                                  color: context.acento,
                                   size: 20,
                                 ),
                                 const SizedBox(width: 8),
@@ -280,11 +268,11 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
                                   isGl
                                       ? 'Aliñamento Curricular (Decreto 150/2022)'
                                       : 'Alineamiento Curricular (Decreto 150/2022)',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontFamily: AppTheme.fontFamily,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w800,
-                                    color: AppTheme.primaryInk,
+                                    color: context.acento,
                                   ),
                                 )),
                               ],

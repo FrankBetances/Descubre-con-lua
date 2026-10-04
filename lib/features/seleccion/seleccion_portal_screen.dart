@@ -4,12 +4,13 @@ import '../../core/audio/offline_audio_service.dart';
 import '../../core/brand/ilustracion_portal.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
+import '../../core/navigation/ruta_lua.dart';
 import '../../core/storage/calendario_store.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/widgets/cabecera.dart';
 import '../../core/widgets/paxina_sen_scroll.dart';
 import '../../data/models/formacion_model.dart';
 import '../../data/repositories/content_repository.dart';
-import '../academy/widgets/selector_idioma_widget.dart';
 import '../docentes/portal_docentes_screen.dart';
 import '../familias/portal_familias_screen.dart';
 import '../formacion/views/formacion_screen.dart';
@@ -49,9 +50,11 @@ class SeleccionPortalScreen extends StatefulWidget {
 class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
   late AppLanguage _language;
 
+  // Cabe entero en la cabecera a 360 px; con « · Vigo» se cortaba. Vigo ya
+  // lo dice el subtítulo de la página.
   static const _appBarTitle = LocalizedString(
-    gl: 'Descubre con Lúa · Vigo',
-    es: 'Descubre con Lúa · Vigo',
+    gl: 'Descubre con Lúa',
+    es: 'Descubre con Lúa',
   );
 
   static const _subtitulo = LocalizedString(
@@ -95,18 +98,11 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        title: Text(_appBarTitle.resolve(_language)),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12.0),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _handleLanguageChanged,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: _appBarTitle.resolve(_language),
+        atras: false,
+        language: _language,
+        onLanguageChanged: _handleLanguageChanged,
       ),
       body: SafeArea(
         child: PaxinaSenScroll(
@@ -144,8 +140,8 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                 badge: isGl
                     ? 'HOGAR E CRIANZA · CERO PANTALLAS'
                     : 'HOGAR Y CRIANZA · CERO PANTALLAS',
-                badgeColor: const Color(0xFFDD6B20),
-                badgeBg: const Color(0xFFFFF9EE),
+                acento: AppTheme.familias,
+                acentoTint: AppTheme.familiasTint,
                 title: isGl ? 'Portal Familias' : 'Portal Familias',
                 subtitle: isGl
                     ? 'Para nais, pais e familias. Estimulación sensorial, fonolóxica e comunicativa no fogar sen pantallas para os nenos.'
@@ -173,31 +169,42 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                 buttonText: isGl
                     ? 'Entrar no Portal Familias'
                     : 'Entrar en el Portal Familias',
-                buttonColor: const Color(0xFFDD6B20),
                 formacionTexto: isGl
                     ? 'Antes de empezar na casa · Guía de 2 min'
                     : 'Antes de empezar en casa · Guía de 2 min',
                 onFormacion: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => FormacionScreen(
-                        perfil: PerfilFormacion.familia,
-                        language: _language,
+                    RutaLua(
+                      de: context,
+                      builder: (_) => Theme(
+                        data: AppTheme.temaFamilias,
+                        child: FormacionScreen(
+                          perfil: PerfilFormacion.familia,
+                          language: _language,
+                          onLanguageChanged: _handleLanguageChanged,
+                        ),
                       ),
                     ),
                   );
                 },
                 onTap: () {
+                  // El portal y todo lo que se abra desde él, con el acento
+                  // de las familias: `RutaLua` lo lleva de pantalla en
+                  // pantalla.
                   Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => PortalFamiliasScreen(
-                        repository: widget.repository,
-                        audioService: widget.audioService,
-                        currentLanguage: _language,
-                        onToggleLanguage: widget.onToggleLanguage,
-                        onLanguageChanged: _handleLanguageChanged,
-                        premios: widget.premios,
-                        calendario: widget.calendario,
+                    RutaLua(
+                      de: context,
+                      builder: (_) => Theme(
+                        data: AppTheme.temaFamilias,
+                        child: PortalFamiliasScreen(
+                          repository: widget.repository,
+                          audioService: widget.audioService,
+                          currentLanguage: _language,
+                          onToggleLanguage: widget.onToggleLanguage,
+                          onLanguageChanged: _handleLanguageChanged,
+                          premios: widget.premios,
+                          calendario: widget.calendario,
+                        ),
                       ),
                     ),
                   );
@@ -214,8 +221,8 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                 badge: isGl
                     ? 'ESCOLA INFANTIL · MODO AULA'
                     : 'ESCUELA INFANTIL · MODO AULA',
-                badgeColor: AppTheme.primaryVigoBlue,
-                badgeBg: const Color(0xFFEFF6FC),
+                acento: AppTheme.docentes,
+                acentoTint: AppTheme.docentesTint,
                 title: isGl ? 'Portal Docentes' : 'Portal Docentes',
                 subtitle: isGl
                     ? 'Para o profesorado das escolas municipais de Vigo. Programación de aula a 72 bpm, planificador curricular e recursos pedagóxicos.'
@@ -236,31 +243,39 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                 buttonText: isGl
                     ? 'Entrar no Portal Docentes'
                     : 'Entrar en el Portal Docentes',
-                buttonColor: AppTheme.primaryVigoBlue,
                 formacionTexto: isGl
                     ? 'Antes de entrar na aula · Guía de 2 min'
                     : 'Antes de entrar en el aula · Guía de 2 min',
                 onFormacion: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => FormacionScreen(
-                        perfil: PerfilFormacion.docente,
-                        language: _language,
+                    RutaLua(
+                      de: context,
+                      builder: (_) => Theme(
+                        data: AppTheme.temaDocentes,
+                        child: FormacionScreen(
+                          perfil: PerfilFormacion.docente,
+                          language: _language,
+                          onLanguageChanged: _handleLanguageChanged,
+                        ),
                       ),
                     ),
                   );
                 },
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => PortalDocentesScreen(
-                        repository: widget.repository,
-                        audioService: widget.audioService,
-                        currentLanguage: _language,
-                        onToggleLanguage: widget.onToggleLanguage,
-                        onLanguageChanged: _handleLanguageChanged,
-                        premios: widget.premios,
-                        calendario: widget.calendario,
+                    RutaLua(
+                      de: context,
+                      builder: (_) => Theme(
+                        data: AppTheme.temaDocentes,
+                        child: PortalDocentesScreen(
+                          repository: widget.repository,
+                          audioService: widget.audioService,
+                          currentLanguage: _language,
+                          onToggleLanguage: widget.onToggleLanguage,
+                          onLanguageChanged: _handleLanguageChanged,
+                          premios: widget.premios,
+                          calendario: widget.calendario,
+                        ),
                       ),
                     ),
                   );
@@ -281,9 +296,9 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                   padding: const EdgeInsets.all(12.0),
                   child: Row(
                     children: [
-                      const Icon(
-                        Icons.shield_outlined,
-                        color: AppTheme.primaryVigoBlue,
+                      Icon(
+                        Icons.shield_rounded,
+                        color: context.acento,
                         size: 24,
                       ),
                       const SizedBox(width: 12),
@@ -310,14 +325,13 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
   Widget _buildPortalCard({
     required BuildContext context,
     required String badge,
-    required Color badgeColor,
-    required Color badgeBg,
+    required Color acento,
+    required Color acentoTint,
     required String title,
     required String subtitle,
     required Widget illustration,
     required List<String> puntosClave,
     required String buttonText,
-    required Color buttonColor,
     required VoidCallback onTap,
     String? formacionTexto,
     VoidCallback? onFormacion,
@@ -350,15 +364,14 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
                     decoration: BoxDecoration(
-                      color: badgeBg,
+                      color: acentoTint,
                       borderRadius: BorderRadius.circular(6),
-                      border:
-                          Border.all(color: badgeColor.withValues(alpha: 0.3)),
+                      border: Border.all(color: acento.withValues(alpha: 0.3)),
                     ),
                     child: Text(
                       badge,
                       style: TextStyle(
-                        color: badgeColor,
+                        color: acento,
                         fontWeight: FontWeight.w800,
                         fontSize: 10.5,
                         letterSpacing: 0.6,
@@ -399,7 +412,7 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                           Icon(
                             Icons.check_circle_rounded,
                             size: 16,
-                            color: badgeColor,
+                            color: acento,
                           ),
                           const SizedBox(width: 8),
                           Expanded(
@@ -435,7 +448,7 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                       alignment: Alignment.centerLeft,
                       child: TextButton.icon(
                         onPressed: onFormacion,
-                        icon: const Icon(Icons.school_outlined, size: 16),
+                        icon: const Icon(Icons.school_rounded, size: 16),
                         label: Text(
                           formacionTexto,
                           style: const TextStyle(
@@ -444,19 +457,22 @@ class _SeleccionPortalScreenState extends State<SeleccionPortalScreen> {
                           ),
                         ),
                         style: TextButton.styleFrom(
-                          foregroundColor: AppTheme.primaryInk,
+                          foregroundColor: acento,
                           padding: EdgeInsets.zero,
                           minimumSize: const Size(0, 36),
                         ),
                       ),
                     ),
                   const SizedBox(height: 8),
+                  // Las dos puertas llevan botón relleno, cada una con el
+                  // acento de su portal: esta pantalla ES la elección, y
+                  // dejar una en borde la haría parecer secundaria.
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: onTap,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: buttonColor,
+                        backgroundColor: acento,
                         foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),

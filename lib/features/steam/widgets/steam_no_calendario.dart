@@ -9,6 +9,7 @@ import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../views/steam_sesion_guiada_screen.dart';
 import 'steam_comun.dart';
+import '../../../core/navigation/ruta_lua.dart';
 
 /// Los días de la semana, del 1 (lunes) al 5 (viernes).
 const List<LocalizedString> _diasDaSemana = [
@@ -57,7 +58,8 @@ void abrirSesionSteam(
   ValueChanged<AppLanguage>? onLanguageChanged,
 }) {
   Navigator.of(context).push(
-    MaterialPageRoute(
+    RutaLua(
+      de: context,
       builder: (_) => SteamSesionGuiadaScreen(
         unit: unidade,
         audiencia: audiencia,
@@ -137,7 +139,7 @@ class FilaSteamDoDia extends StatelessWidget {
                   color: steamFondo,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Icon(Icons.science_outlined,
+                child: const Icon(Icons.science_rounded,
                     size: 24, color: steamTinta),
               ),
               const SizedBox(width: AppTheme.spaceSm),
@@ -232,7 +234,7 @@ class AvisoSteamDoMes extends StatelessWidget {
         children: [
           const Padding(
             padding: EdgeInsets.only(top: 1),
-            child: Icon(Icons.science_outlined, size: 18, color: steamTinta),
+            child: Icon(Icons.science_rounded, size: 18, color: steamTinta),
           ),
           const SizedBox(width: 8),
           Expanded(

@@ -5,9 +5,9 @@ import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/corpus_palabra_model.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// El vocabulario inglés de la app: las 4.000 palabras de uso habitual.
 ///
@@ -31,12 +31,16 @@ import '../../../data/repositories/content_repository.dart';
 class VocabularioInglesScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   const VocabularioInglesScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
   });
 
@@ -56,6 +60,11 @@ class _FiltroPos {
 }
 
 class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
   late AppLanguage _language;
   List<CorpusPalabra> _palabras = [];
   bool _isLoading = true;
@@ -131,20 +140,10 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          isGl
-              ? '4.000 palabras de uso habitual'
-              : '4.000 palabras de uso habitual',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 16,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: 'Vocabulario',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: Column(
         children: [
@@ -160,7 +159,7 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
                         ? 'Buscar na palabra ou na frase…'
                         : 'Buscar en la palabra o en la frase…',
                     prefixIcon:
-                        const Icon(Icons.search, color: AppTheme.primaryDark),
+                        Icon(Icons.search_rounded, color: context.acento),
                     filled: true,
                     fillColor: AppTheme.pageBg,
                     contentPadding:
@@ -182,7 +181,7 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
                       _Pastilla(
                         etiqueta: isGl ? _filtrosPos[i].gl : _filtrosPos[i].es,
                         activa: _filtroPos == i,
-                        color: AppTheme.primaryDark,
+                        color: context.acento,
                         onTap: () {
                           setState(() => _filtroPos = i);
                           _fetchPalabras();
@@ -197,7 +196,7 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
                     _Pastilla(
                       etiqueta: isGl ? 'Todas as bandas' : 'Todas las bandas',
                       activa: _selectedBanda == null,
-                      color: AppTheme.primary,
+                      color: context.acento,
                       onTap: () {
                         setState(() => _selectedBanda = null);
                         _fetchPalabras();
@@ -207,7 +206,7 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
                       _Pastilla(
                         etiqueta: '${b}k',
                         activa: _selectedBanda == b,
-                        color: AppTheme.primary,
+                        color: context.acento,
                         onTap: () {
                           setState(() =>
                               _selectedBanda = _selectedBanda == b ? null : b);
@@ -223,7 +222,7 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
                     _Pastilla(
                       etiqueta: isGl ? 'Todos os niveis' : 'Todos los niveles',
                       activa: _selectedCefr == null,
-                      color: AppTheme.primaryDark,
+                      color: context.acento,
                       onTap: () {
                         setState(() => _selectedCefr = null);
                         _fetchPalabras();
@@ -233,7 +232,7 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
                       _Pastilla(
                         etiqueta: c,
                         activa: _selectedCefr == c,
-                        color: AppTheme.primaryDark,
+                        color: context.acento,
                         onTap: () {
                           setState(() =>
                               _selectedCefr = _selectedCefr == c ? null : c);
@@ -354,12 +353,6 @@ class _Pastilla extends StatelessWidget {
       label: Text(etiqueta),
       selected: activa,
       onSelected: (_) => onTap(),
-      selectedColor: color,
-      labelStyle: TextStyle(
-        color: activa ? Colors.white : AppTheme.textPrimary,
-        fontSize: 11,
-        fontWeight: activa ? FontWeight.bold : FontWeight.normal,
-      ),
     );
   }
 }
@@ -398,14 +391,14 @@ class _TarxetaDePalabra extends StatelessWidget {
                   width: 38,
                   height: 38,
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryLight,
+                    color: context.acentoTint,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
                     child: Text(
                       palabra.banda,
-                      style: const TextStyle(
-                        color: AppTheme.primaryInk,
+                      style: TextStyle(
+                        color: context.acento,
                         fontWeight: FontWeight.bold,
                         fontSize: 12,
                       ),
@@ -434,14 +427,14 @@ class _TarxetaDePalabra extends StatelessWidget {
                           if (palabra.pos.isNotEmpty)
                             _Etiqueta(
                               texto: palabra.posEtiqueta(galego: isGl),
-                              fondo: AppTheme.primaryTint,
-                              tinta: AppTheme.primaryDark,
+                              fondo: context.acentoTint,
+                              tinta: context.acento,
                             ),
                           if (palabra.onomatopeya)
                             _Etiqueta(
                               texto: isGl ? 'Onomatopea' : 'Onomatopeya',
                               fondo: AppTheme.successBg,
-                              tinta: AppTheme.primaryInk,
+                              tinta: context.acento,
                             ),
                           _Etiqueta(
                             texto: palabra.nivelCefr,
@@ -464,6 +457,7 @@ class _TarxetaDePalabra extends StatelessWidget {
                   audioService: audioService,
                   texto: palabra.lemma,
                   language: AppLanguage.en,
+                  interfaz: language,
                   style: estiloIngles(palabra.lemma),
                   compacto: true,
                   descripcion: palabra.lemma,
@@ -511,6 +505,7 @@ class _TarxetaDePalabra extends StatelessWidget {
                       audioService: audioService,
                       texto: palabra.frase,
                       language: AppLanguage.en,
+                      interfaz: language,
                       style: VoiceStyle.tutor,
                       compacto: true,
                       descripcion: palabra.frase,

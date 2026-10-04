@@ -47,7 +47,7 @@ class PasoMatematicasWidget extends StatelessWidget {
           isGl ? 'Matemáticas temperás (0-3)' : 'Matemáticas tempranas (0-3)',
           style: theme.textTheme.headlineSmall?.copyWith(
             fontWeight: FontWeight.bold,
-            color: AppTheme.primaryVigoBlue,
+            color: context.acento,
             fontSize: 22.0,
           ),
         ),
@@ -85,9 +85,9 @@ class PasoMatematicasWidget extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    const Icon(
-                      Icons.calculate_outlined,
-                      color: AppTheme.primaryVigoBlue,
+                    Icon(
+                      Icons.calculate_rounded,
+                      color: context.acento,
                       size: 24,
                     ),
                     const SizedBox(width: 10),
@@ -98,7 +98,7 @@ class PasoMatematicasWidget extends StatelessWidget {
                             : 'Enfoque de la actividad:',
                         style: theme.textTheme.titleSmall?.copyWith(
                           fontWeight: FontWeight.bold,
-                          color: AppTheme.primaryVigoBlue,
+                          color: context.acento,
                         ),
                       ),
                     ),
@@ -144,7 +144,7 @@ class PasoMatematicasWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Icon(
-                  Icons.translate_outlined,
+                  Icons.translate_rounded,
                   color: Color(0xFF15803D),
                   size: 22,
                 ),
@@ -187,7 +187,7 @@ class PasoMatematicasWidget extends StatelessWidget {
               : 'Acciones manipulativas sugeridas:',
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
-            color: AppTheme.primaryVigoBlue,
+            color: context.acento,
           ),
         ),
         const SizedBox(height: 10.0),
@@ -205,7 +205,7 @@ class PasoMatematicasWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Icon(
-                    Icons.touch_app_outlined,
+                    Icons.touch_app_rounded,
                     color: AppTheme.calmSage,
                     size: 22,
                   ),

@@ -23,10 +23,10 @@ class BackstagePhaseStepper extends StatelessWidget {
   });
 
   static const _iconosFases = [
-    Icons.wb_sunny_outlined,
-    Icons.music_note_outlined,
-    Icons.directions_run_outlined,
-    Icons.spa_outlined,
+    Icons.wb_sunny_rounded,
+    Icons.music_note_rounded,
+    Icons.directions_run_rounded,
+    Icons.spa_rounded,
   ];
 
   /// Rótulo corto de la fase. Sale del modelo; si todavía no hay asamblea
@@ -61,19 +61,19 @@ class BackstagePhaseStepper extends StatelessWidget {
           final isDone = index < faseActivaIndex;
 
           final Color bgColor = isCurrent
-              ? AppTheme.backstageAccent.withValues(alpha: 0.15)
+              ? context.acentoTint
               : (isDone
                   ? AppTheme.backstageSurfaceElevated
                   : AppTheme.backstageSurface);
 
           final Color borderColor = isCurrent
-              ? AppTheme.backstageAccent
+              ? context.acento
               : (isDone
-                  ? AppTheme.backstageAccent.withValues(alpha: 0.4)
+                  ? context.acento.withValues(alpha: 0.4)
                   : AppTheme.backstageBorder);
 
           final Color textColor = isCurrent
-              ? AppTheme.backstageAccent
+              ? context.acento
               : (isDone
                   ? AppTheme.backstageTextPrimary
                   : AppTheme.backstageTextSecondary);
@@ -100,11 +100,13 @@ class BackstagePhaseStepper extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
-                        isDone ? Icons.check_circle : _iconosFases[index],
+                        isDone
+                            ? Icons.check_circle_rounded
+                            : _iconosFases[index],
                         color: isCurrent
-                            ? AppTheme.backstageAccent
+                            ? context.acento
                             : (isDone
-                                ? AppTheme.backstageAccent
+                                ? context.acento
                                 : AppTheme.backstageTextMuted),
                         size: 20,
                       ),

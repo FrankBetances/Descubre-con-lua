@@ -63,7 +63,7 @@ class AvisoContenidoIlegible extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Icon(
-              Icons.report_problem_outlined,
+              Icons.report_problem_rounded,
               size: 40,
               color: AppTheme.textMuted,
             ),

@@ -5,20 +5,24 @@ import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/phonics_model.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Motor de misións fonémicas e conciencia fonolóxica (Phonix Quest).
 class PhonixQuestScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   const PhonixQuestScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
   });
 
@@ -27,6 +31,23 @@ class PhonixQuestScreen extends StatefulWidget {
 }
 
 class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
+  late AppLanguage _language = widget.initialLanguage;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant PhonixQuestScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.initialLanguage != widget.initialLanguage) {
+      _language = widget.initialLanguage;
+    }
+  }
+
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
   PhonicsTaxonomy? _taxonomy;
   bool _isLoading = true;
 
@@ -67,7 +88,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.initialLanguage;
+    final lang = _language;
     final phonemes = _taxonomy?.phonemes ?? [];
     final inventario = _taxonomy?.inventario;
     final porId = {for (final p in phonemes) p.id: p};
@@ -111,20 +132,10 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          lang == AppLanguage.gl
-              ? 'Phonix Quest · Fonemas'
-              : 'Phonix Quest · Fonemas',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: 'Phonix Quest',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -135,14 +146,13 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryLight,
+                    color: context.acentoTint,
                     borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: AppTheme.primaryLight),
+                    border: Border.all(color: context.acentoTint),
                   ),
                   child: Row(
                     children: [
-                      const Icon(Icons.mic,
-                          color: AppTheme.primaryInk, size: 28),
+                      Icon(Icons.mic_rounded, color: context.acento, size: 28),
                       const SizedBox(width: 12),
                       Expanded(
                         child: Column(
@@ -152,8 +162,8 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                               lang == AppLanguage.gl
                                   ? 'Guía de Articulación para Docentes e Nais/Pais'
                                   : 'Guía de Articulación para Docentes y Madres/Padres',
-                              style: const TextStyle(
-                                color: AppTheme.primaryInk,
+                              style: TextStyle(
+                                color: context.acento,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13,
                               ),
@@ -163,8 +173,8 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                               lang == AppLanguage.gl
                                   ? 'Conciencia fonolóxica sintética: o adulto pronuncia o son e o neno imita sen pantallas.'
                                   : 'Conciencia fonológica sintética: el adulto pronuncia el sonido y el niño imita sin pantallas.',
-                              style: const TextStyle(
-                                color: AppTheme.primaryInk,
+                              style: TextStyle(
+                                color: context.acento,
                                 fontSize: 11,
                               ),
                             ),
@@ -212,11 +222,11 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
         padding: const EdgeInsets.only(top: 8, bottom: 8),
         child: Text(
           texto,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w800,
             letterSpacing: 0.8,
-            color: AppTheme.primaryInk,
+            color: context.acento,
           ),
         ),
       );
@@ -237,16 +247,16 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
               width: 52,
               height: 52,
               decoration: BoxDecoration(
-                color: AppTheme.primaryLight,
+                color: context.acentoTint,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(
                 child: Text(
                   ph.symbolIpa,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: AppTheme.primaryInk,
+                    color: context.acento,
                   ),
                 ),
               ),
@@ -296,9 +306,9 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                           '${lang == AppLanguage.gl ? "Exemplo" : "Ejemplo"}: '
                           '${ph.exampleWord.en} '
                           '(${lang == AppLanguage.gl ? ph.exampleWord.gl : ph.exampleWord.es})',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 13,
-                            color: AppTheme.primaryInk,
+                            color: context.acento,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
@@ -310,6 +320,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                         audioService: widget.audioService,
                         texto: ph.exampleWord.en,
                         language: AppLanguage.en,
+                        interfaz: lang,
                         style: estiloIngles(ph.exampleWord.en),
                         compacto: true,
                       ),

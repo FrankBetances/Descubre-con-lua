@@ -15,13 +15,11 @@ import '../../../data/models/progresion_model.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../juega/widgets/barra_ingles_widget.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../widgets/asemblea_do_dia.dart';
 import '../widgets/dia_no_fogar.dart';
 import '../widgets/palabras_do_dia.dart';
 import '../../academy/views/guia_atencion_screen.dart';
-import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../juega/views/asamblea_guiada_screen.dart';
 import '../../premios/premios_repository.dart';
 import '../widgets/boton_lanzar_sesion.dart';
@@ -31,7 +29,8 @@ import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/brand/iconos_contenido.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../widgets/temporizador_sutil_widget.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Contrato de callback para o lanzamento a un toque da sesión
 typedef IniciarSesionCallback = void Function(
@@ -141,9 +140,10 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     return n == 0 ? _meses.length : n;
   }
 
-  static const _titulo = LocalizedString(
-    gl: 'Calendario Escola · Fogar',
-    es: 'Calendario Escuela · Hogar',
+  /// El de la cabecera: el largo no cabe a 360 px junto al selector.
+  static const _tituloCurto = LocalizedString(
+    gl: 'Calendario',
+    es: 'Calendario',
   );
 
   static const _subtitulo = LocalizedString(
@@ -198,14 +198,16 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     es: 'Hoy, en casa',
   );
 
+  // Confirmar que algo ya se hizo se dice igual en toda la app: «Xa o
+  // fixemos».
   static const _marcarAula = LocalizedString(
-    gl: 'Rexistrar asemblea de hoxe na aula',
-    es: 'Registrar asamblea de hoy en el aula',
+    gl: 'Xa fixemos a asemblea',
+    es: 'Ya hicimos la asamblea',
   );
 
   static const _marcarHogar = LocalizedString(
-    gl: 'Rexistrar micro-rutina de hoxe na casa',
-    es: 'Registrar micro-rutina de hoy en casa',
+    gl: 'Xa fixemos a rutina na casa',
+    es: 'Ya hicimos la rutina en casa',
   );
 
   static const _hogarHecho = LocalizedString(
@@ -234,8 +236,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   );
 
   static const _iniciarAula = LocalizedString(
-    gl: 'Iniciar asemblea guiada',
-    es: 'Iniciar asamblea guiada',
+    gl: 'Comezar a asemblea',
+    es: 'Comenzar la asamblea',
   );
 
   static const _instruccionsBrevesTitulo = LocalizedString(
@@ -389,7 +391,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     if (unidad == null) return;
 
     Navigator.of(context).push(
-      MaterialPageRoute(
+      RutaLua(
+        de: context,
         builder: (context) => AsambleaGuiadaScreen(
           unidad: unidad,
           calendario: widget.store,
@@ -409,9 +412,11 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     if (fallo != null) {
       return Scaffold(
         backgroundColor: AppTheme.pageBg,
-        appBar: AppBar(
-            leading: const BotonAtras(),
-            title: Text(_titulo.resolve(_language))),
+        appBar: Cabecera(
+          titulo: _tituloCurto.resolve(_language),
+          language: _language,
+          onLanguageChanged: _onToggleLanguage,
+        ),
         body: AvisoContenidoIlegible(asset: fallo, language: _language),
       );
     }
@@ -420,33 +425,20 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       // un aparato real; una pantalla a medias se vería peor que esto.
       return Scaffold(
         backgroundColor: AppTheme.pageBg,
-        appBar: AppBar(
-            leading: const BotonAtras(),
-            title: Text(_titulo.resolve(_language))),
+        appBar: Cabecera(
+          titulo: _tituloCurto.resolve(_language),
+          language: _language,
+          onLanguageChanged: _onToggleLanguage,
+        ),
         body: const Center(child: CircularProgressIndicator()),
       );
     }
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          _titulo.resolve(_language),
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12.0),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-              // GL/ES, como el resto de la app: con el nombre entero
-              // («Galego», «Castellano») la barra desbordaba 119 px a escala
-              // de texto grande.
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: _tituloCurto.resolve(_language),
+        language: _language,
+        onLanguageChanged: _onToggleLanguage,
       ),
       // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
       // ya no reserva la barra de gestos y el final de esta pantalla
@@ -841,7 +833,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                           fontWeight:
                               isActivo ? FontWeight.bold : FontWeight.w600,
                           color: isActivo
-                              ? AppTheme.primaryInk
+                              ? context.acento
                               : AppTheme.textSecondary,
                         ),
                       ),
@@ -853,8 +845,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                         t.sub,
                         style: TextStyle(
                           fontSize: 9,
-                          color:
-                              isActivo ? AppTheme.primary : AppTheme.textMuted,
+                          color: isActivo ? context.acento : AppTheme.textMuted,
                           fontWeight:
                               isActivo ? FontWeight.w700 : FontWeight.normal,
                         ),
@@ -906,14 +897,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 selected: op.valor == _cursoAberto,
                 showCheckmark: false,
                 visualDensity: VisualDensity.compact,
-                selectedColor: AppTheme.primaryVigoBlue,
-                backgroundColor: Colors.white,
-                labelStyle: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: op.valor == _cursoAberto
-                      ? Colors.white
-                      : AppTheme.primaryInk,
-                ),
+
                 onSelected: (sel) {
                   if (sel && op.valor != _cursoAberto) _irAoCurso(op.valor);
                 },
@@ -960,17 +944,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   setState(() => _mesSeleccionadoIndex = index);
                   _traerPastillaALaVista(index);
                 },
-                selectedColor: AppTheme.primary,
-                backgroundColor: Colors.white,
-                labelStyle: TextStyle(
-                  color: isSelected ? Colors.white : AppTheme.textPrimary,
-                  fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
-                  side: BorderSide(
-                    color: isSelected ? AppTheme.primary : AppTheme.border,
-                  ),
                 ),
               );
             },
@@ -1049,7 +1024,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             Icon(
               icono,
               size: 20,
-              color: activo ? AppTheme.primaryInk : AppTheme.textMuted,
+              color: activo ? context.acento : AppTheme.textMuted,
             ),
             const SizedBox(width: 8),
             // Flexible: «Fogar (Familias)» con su icono no cabe en media
@@ -1064,7 +1039,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   fontFamily: AppTheme.fontFamily,
                   fontSize: 14.5,
                   fontWeight: activo ? FontWeight.w800 : FontWeight.w600,
-                  color: activo ? AppTheme.primaryInk : AppTheme.textSecondary,
+                  color: activo ? context.acento : AppTheme.textSecondary,
                 ),
               ),
             ),
@@ -1095,10 +1070,10 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CircleAvatar(
-                  backgroundColor: AppTheme.primaryLight,
+                  backgroundColor: context.acentoTint,
                   radius: 24,
                   child: Icon(iconoDeContenido(mes.icono),
-                      color: AppTheme.primaryDark, size: 28),
+                      color: context.acento, size: 28),
                 ),
                 const SizedBox(width: AppTheme.spaceMd),
                 Expanded(
@@ -1133,7 +1108,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             Text(
               _fraseKicker.resolve(_language),
               style: theme.textTheme.labelSmall?.copyWith(
-                color: BarraInglesFase.acento,
+                color: context.acento,
                 fontWeight: FontWeight.w800,
                 letterSpacing: 1.0,
               ),
@@ -1144,9 +1119,10 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 audioService: widget.audioService,
                 texto: mes.ingles.frase,
                 language: AppLanguage.en,
+                interfaz: _language,
                 style: estiloIngles(mes.ingles.frase),
                 comoChip: true,
-                colorChip: BarraInglesFase.acento,
+                colorChip: context.acento,
               ),
             const SizedBox(height: 20),
 
@@ -1163,26 +1139,26 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 decoration: BoxDecoration(
-                  color: AppTheme.primaryTint,
+                  color: context.acentoTint,
                   borderRadius: BorderRadius.circular(AppTheme.radiusField),
-                  border: Border.all(
-                      color: AppTheme.primary.withValues(alpha: 0.25)),
+                  border:
+                      Border.all(color: context.acento.withValues(alpha: 0.25)),
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
-                        const Icon(Icons.school_outlined,
-                            size: 18, color: AppTheme.primaryDark),
+                        Icon(Icons.school_rounded,
+                            size: 18, color: context.acento),
                         const SizedBox(width: 6),
                         Expanded(
                           child: Text(
                             _instruccionsBrevesTitulo.resolve(_language),
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.bold,
-                              color: AppTheme.primaryDark,
+                              color: context.acento,
                             ),
                           ),
                         ),
@@ -1207,7 +1183,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                     ? 'Asemblea (5-8 min)'
                     : 'Asamblea (5-8 min)',
                 icon: Icons.groups_rounded,
-                color: AppTheme.primaryDark,
+                color: context.acento,
                 theme: theme,
               ),
             ] else ...[
@@ -1252,7 +1228,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
               InkWell(
                 key: const Key('boton_guia_atencion'),
                 onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => GuiaAtencionScreen(
                       initialLanguage: _language,
                       onLanguageChanged: _onToggleLanguage,
@@ -1271,9 +1248,9 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   ),
                   child: Row(
                     children: [
-                      const Icon(
-                        Icons.psychology_outlined,
-                        color: AppTheme.primaryInk,
+                      Icon(
+                        Icons.psychology_rounded,
+                        color: context.acento,
                         size: 26,
                       ),
                       const SizedBox(width: AppTheme.spaceMd),
@@ -1352,11 +1329,11 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       const SizedBox(height: 12),
       Text(
         isGl ? 'A ASEMBLEA DE HOXE' : 'LA ASAMBLEA DE HOY',
-        style: const TextStyle(
+        style: TextStyle(
           fontSize: 11,
           fontWeight: FontWeight.w800,
           letterSpacing: 1.1,
-          color: AppTheme.primaryInk,
+          color: context.acento,
         ),
       ),
       const SizedBox(height: 4),
@@ -1446,7 +1423,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   : null,
               style: OutlinedButton.styleFrom(
                 minimumSize: const Size(0, AppTheme.touchMin),
-                foregroundColor: AppTheme.primaryInk,
+                foregroundColor: context.acento,
               ),
               child: Text(g.etiqueta.resolve(_language)),
             ),
@@ -1553,7 +1530,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
               key: const Key('boton_iniciar_sesion_aula'),
               label: _iniciarAula.resolve(_language),
               icon: Icons.play_circle_filled_rounded,
-              backgroundColor: AppTheme.primary,
+              backgroundColor: context.acento,
               foregroundColor: Colors.white,
               onPressed: () => _lanzarSesion(mes, true),
             )
@@ -1579,7 +1556,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 isAulaHecha
                     ? Icons.check_circle_rounded
                     : Icons.check_circle_outline_rounded,
-                color: isAulaHecha ? AppTheme.success : AppTheme.primaryDark,
+                color: isAulaHecha ? AppTheme.successInk : context.acento,
               ),
               label: Text(
                 isAulaHecha
@@ -1587,12 +1564,12 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                     : _marcarAula.resolve(_language),
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
-                  color: isAulaHecha ? AppTheme.success : AppTheme.primaryDark,
+                  color: isAulaHecha ? AppTheme.successInk : context.acento,
                 ),
               ),
               style: OutlinedButton.styleFrom(
                 side: BorderSide(
-                  color: isAulaHecha ? AppTheme.success : AppTheme.border,
+                  color: isAulaHecha ? AppTheme.successInk : AppTheme.border,
                 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(AppTheme.radiusButton),
@@ -1637,8 +1614,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 isHogarHecho
                     ? Icons.check_circle_rounded
                     : Icons.volunteer_activism_rounded,
-                color:
-                    isHogarHecho ? AppTheme.success : const Color(0xFFD97706),
+                color: isHogarHecho ? AppTheme.successInk : AppTheme.warning,
               ),
               label: Text(
                 isHogarHecho
@@ -1646,13 +1622,13 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                     : _marcarHogar.resolve(_language),
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
-                  color:
-                      isHogarHecho ? AppTheme.success : const Color(0xFFD97706),
+                  // El verde y el naranja de antes no pasaban AA como letra.
+                  color: isHogarHecho ? AppTheme.successInk : AppTheme.warning,
                 ),
               ),
               style: OutlinedButton.styleFrom(
                 side: BorderSide(
-                  color: isHogarHecho ? AppTheme.success : AppTheme.border,
+                  color: isHogarHecho ? AppTheme.successInk : AppTheme.border,
                 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(AppTheme.radiusButton),

@@ -144,8 +144,10 @@ class _BackstagePhaseTimerWidgetState extends State<BackstagePhaseTimerWidget> {
           IconButton(
             key: const ValueKey('timer_play_pause_button'),
             icon: Icon(
-              _isRunning ? Icons.pause_circle_filled : Icons.play_circle_filled,
-              color: AppTheme.backstageAccent,
+              _isRunning
+                  ? Icons.pause_circle_rounded
+                  : Icons.play_circle_rounded,
+              color: context.acento,
               size: 30,
             ),
             onPressed: _toggleRunning,

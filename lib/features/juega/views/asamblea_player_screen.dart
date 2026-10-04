@@ -451,7 +451,10 @@ class _PantallaDeFase extends StatelessWidget {
               onPulsar: () => onAlternarAudio(asset),
             )
           else if (fase.cueAcustica?.isNotEmpty == true)
-            _Cue(texto: fase.cueAcustica!, audioService: audioService),
+            _Cue(
+                texto: fase.cueAcustica!,
+                audioService: audioService,
+                isGl: isGl),
           const SizedBox(height: 14),
           // Los comandos en inglés, si esta fase los tiene. Máximo tres, que
           // es lo que dicen los documentos: tres órdenes por sesión.
@@ -548,6 +551,7 @@ class _Comando extends StatelessWidget {
             audioService: audioService,
             texto: textoIngles,
             language: AppLanguage.en,
+            interfaz: isGl ? AppLanguage.gl : AppLanguage.es,
             style: estiloIngles(textoIngles),
             compacto: true,
             descripcion: isGl ? 'a orde en inglés' : 'la orden en inglés',
@@ -606,8 +610,13 @@ class _BotonDeSon extends StatelessWidget {
 class _Cue extends StatelessWidget {
   final String texto;
   final OfflineAudioService? audioService;
+  final bool isGl;
 
-  const _Cue({required this.texto, required this.audioService});
+  const _Cue({
+    required this.texto,
+    required this.audioService,
+    required this.isGl,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -641,6 +650,7 @@ class _Cue extends StatelessWidget {
             audioService: audioService,
             texto: texto,
             language: AppLanguage.en,
+            interfaz: isGl ? AppLanguage.gl : AppLanguage.es,
             style: estiloIngles(texto),
             compacto: true,
           ),
@@ -667,13 +677,13 @@ class _Apoios extends StatelessWidget {
   Widget build(BuildContext context) {
     final filas = <Widget>[];
     if (centroInteres != null && centroInteres!.isNotEmpty) {
-      filas.add(_fila(Icons.explore_outlined, centroInteres!));
+      filas.add(_fila(Icons.explore_rounded, centroInteres!));
     }
     if (material != null && material!.isNotEmpty) {
-      filas.add(_fila(Icons.pan_tool_outlined, material!));
+      filas.add(_fila(Icons.pan_tool_rounded, material!));
     }
     if (cancion != null && cancion!.isNotEmpty) {
-      filas.add(_fila(Icons.music_note_outlined, cancion!));
+      filas.add(_fila(Icons.music_note_rounded, cancion!));
     }
     if (filas.isEmpty) return const SizedBox.shrink();
     return Column(
@@ -775,7 +785,7 @@ class _BarraInferior extends StatelessWidget {
                 ),
                 child: Text(
                   ultima
-                      ? (isGl ? 'Rematar' : 'Finalizar')
+                      ? (isGl ? 'Rematar' : 'Terminar')
                       : (isGl ? 'Seguinte fase' : 'Siguiente fase'),
                   style: const TextStyle(
                     fontFamily: AppTheme.fontFamily,

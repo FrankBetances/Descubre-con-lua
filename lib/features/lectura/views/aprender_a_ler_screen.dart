@@ -5,11 +5,11 @@ import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/lectura_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../../core/widgets/que_observar.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Hub Integral de Aprender a Ler, Fónica e Alfabetización Temperá Manipulativa.
 ///
@@ -23,6 +23,9 @@ import '../../../core/widgets/que_observar.dart';
 class AprenderALerScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   /// El contenido ya leído, si quien abre la pantalla lo tiene.
@@ -37,6 +40,7 @@ class AprenderALerScreen extends StatefulWidget {
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
     this.contido,
   });
@@ -47,6 +51,11 @@ class AprenderALerScreen extends StatefulWidget {
 
 class _AprenderALerScreenState extends State<AprenderALerScreen>
     with SingleTickerProviderStateMixin {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
   late TabController _tabController;
   late AppLanguage _language;
 
@@ -94,26 +103,14 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          isGl
-              ? 'Aprender a Ler · Alfabetización'
-              : 'Aprender a Leer · Alfabetización',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 17,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: isGl ? 'Aprender a Ler' : 'Aprender a Leer',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
         bottom: TabBar(
           controller: _tabController,
           isScrollable: true,
-          labelColor: AppTheme.primaryVigoBlue,
-          unselectedLabelColor: AppTheme.textSecondary,
-          indicatorColor: AppTheme.primaryVigoBlue,
+          tabAlignment: TabAlignment.start,
           indicatorWeight: 3,
           tabs: [
             Tab(
@@ -178,8 +175,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
           children: [
             Row(
               children: [
-                const Icon(Icons.hearing_rounded,
-                    color: AppTheme.primaryVigoBlue, size: 22),
+                Icon(Icons.hearing_rounded, color: context.acento, size: 22),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
@@ -196,10 +192,10 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
             const SizedBox(height: 4),
             Text(
               act.subtitulo.resolve(_language),
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
-                color: AppTheme.primaryDark,
+                color: context.acento,
               ),
             ),
             const SizedBox(height: 8),
@@ -220,7 +216,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.touch_app_outlined,
+                  const Icon(Icons.touch_app_rounded,
                       size: 14, color: Color(0xFF4A5568)),
                   const SizedBox(width: 6),
                   Expanded(
@@ -285,12 +281,6 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                       });
                     }
                   },
-                  selectedColor: AppTheme.primaryVigoBlue,
-                  labelStyle: TextStyle(
-                    color: isSel ? Colors.white : AppTheme.textPrimary,
-                    fontWeight: isSel ? FontWeight.bold : FontWeight.normal,
-                    fontSize: 12,
-                  ),
                 ),
               );
             }),
@@ -341,10 +331,10 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   children: [
                     Text(
                       item.palabra.resolve(_language).toUpperCase(),
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 36,
                         fontWeight: FontWeight.w900,
-                        color: AppTheme.primaryInk,
+                        color: context.acento,
                         letterSpacing: 6,
                       ),
                     ),
@@ -440,8 +430,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(Icons.record_voice_over_rounded,
-                        size: 16, color: AppTheme.primaryVigoBlue),
+                    Icon(Icons.record_voice_over_rounded,
+                        size: 16, color: context.acento),
                     const SizedBox(width: 6),
                     // Flexible: cinco fonemas nunha palabra longa non caben
                     // nunha fila de 400 px, e un `Text` espido nun `Row` non
@@ -449,10 +439,10 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                     Flexible(
                       child: Text(
                         'Fonemas: ${phonemes.join("  +  ")}',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.bold,
-                          color: AppTheme.primaryVigoBlue,
+                          color: context.acento,
                         ),
                       ),
                     ),
@@ -471,7 +461,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                     children: [
                       Row(
                         children: [
-                          const Icon(Icons.extension_outlined,
+                          const Icon(Icons.extension_rounded,
                               size: 14, color: Color(0xFF4A5568)),
                           const SizedBox(width: 6),
                           Expanded(
@@ -619,7 +609,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   'Materiais suxeridos: ${item.material.resolve(_language)}',
                   textAlign: TextAlign.center,
                   style:
-                      const TextStyle(fontSize: 11, color: Color(0xFF718096)),
+                      const TextStyle(fontSize: 11, color: AppTheme.textMuted),
                 ),
                 const SizedBox(height: 16),
                 QueObservar(
@@ -693,10 +683,10 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   children: [
                     Text(
                       item.par,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: AppTheme.primaryVigoBlue,
+                        color: context.acento,
                       ),
                     ),
                     IconButton(
@@ -747,6 +737,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                                   audioService: widget.audioService,
                                   texto: item.palabra1En,
                                   language: AppLanguage.en,
+                                  interfaz: _language,
                                   style: VoiceStyle.slow,
                                   compacto: true,
                                 ),
@@ -794,6 +785,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                                   audioService: widget.audioService,
                                   texto: item.palabra2En,
                                   language: AppLanguage.en,
+                                  interfaz: _language,
                                   style: VoiceStyle.slow,
                                   compacto: true,
                                 ),
@@ -840,7 +832,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(Icons.shield_outlined, color: Color(0xFFDD6B20), size: 20),
+          Icon(Icons.shield_rounded, color: context.acento, size: 20),
           const SizedBox(width: 8),
           Expanded(
             child: Text(

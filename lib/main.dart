@@ -134,6 +134,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
             ),
         '/creditos': (context) => CreditsScreen(
               currentLanguage: _currentLanguage,
+              onLanguageChanged: _setLanguage,
             ),
         '/home': (context) => SeleccionPortalScreen(
               repository: _repository,
@@ -144,14 +145,17 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               onToggleLanguage: _toggleLanguage,
               onLanguageChanged: _setLanguage,
             ),
-        '/portal-familias': (context) => PortalFamiliasScreen(
-              repository: _repository,
-              premios: _premios,
-              calendario: _calendario,
-              audioService: _audioService,
-              currentLanguage: _currentLanguage,
-              onToggleLanguage: _toggleLanguage,
-              onLanguageChanged: _setLanguage,
+        '/portal-familias': (context) => Theme(
+              data: AppTheme.temaFamilias,
+              child: PortalFamiliasScreen(
+                repository: _repository,
+                premios: _premios,
+                calendario: _calendario,
+                audioService: _audioService,
+                currentLanguage: _currentLanguage,
+                onToggleLanguage: _toggleLanguage,
+                onLanguageChanged: _setLanguage,
+              ),
             ),
         '/portal-docentes': (context) => PortalDocentesScreen(
               repository: _repository,
@@ -162,24 +166,34 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               onToggleLanguage: _toggleLanguage,
               onLanguageChanged: _setLanguage,
             ),
-        '/calendario-fogar': (context) => CalendarioFogarScreen(
-              repository: _repository,
-              store: _calendario,
-              initialLanguage: _currentLanguage,
-              audioService: _audioService,
-              onLanguageChanged: _setLanguage,
+        '/calendario-fogar': (context) => Theme(
+              data: AppTheme.temaFamilias,
+              child: CalendarioFogarScreen(
+                repository: _repository,
+                store: _calendario,
+                initialLanguage: _currentLanguage,
+                audioService: _audioService,
+                onLanguageChanged: _setLanguage,
+              ),
             ),
-        '/xogos-fogar': (context) => XogosFogarScreen(
-              initialLanguage: _currentLanguage,
-              audioService: _audioService,
+        '/xogos-fogar': (context) => Theme(
+              data: AppTheme.temaFamilias,
+              child: XogosFogarScreen(
+                onLanguageChanged: _setLanguage,
+                initialLanguage: _currentLanguage,
+                audioService: _audioService,
+              ),
             ),
-        '/academy': (context) => BloquesListScreen(
-              repository: _repository,
-              premios: _premios,
-              calendario: _calendario,
-              audioService: _audioService,
-              initialLanguage: _currentLanguage,
-              onLanguageChanged: _setLanguage,
+        '/academy': (context) => Theme(
+              data: AppTheme.temaFamilias,
+              child: BloquesListScreen(
+                repository: _repository,
+                premios: _premios,
+                calendario: _calendario,
+                audioService: _audioService,
+                initialLanguage: _currentLanguage,
+                onLanguageChanged: _setLanguage,
+              ),
             ),
         '/juega': (context) => UnidadesListScreen(
               repository: _repository,
@@ -202,44 +216,63 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               onLanguageChanged: _setLanguage,
               audioService: _audioService,
             ),
-        '/academy/micro-rutina': (context) => MicroRutinaSetembroScreen(
-              initialLanguage: _currentLanguage,
-              onLanguageChanged: _setLanguage,
+        '/academy/micro-rutina': (context) => Theme(
+              data: AppTheme.temaFamilias,
+              child: MicroRutinaSetembroScreen(
+                initialLanguage: _currentLanguage,
+                onLanguageChanged: _setLanguage,
+              ),
             ),
-        '/cuentos': (context) => CuentosListScreen(
-              repository: _repository,
-              initialLanguage: _currentLanguage,
-              audioService: _audioService,
+        '/cuentos': (context) => Theme(
+              data: AppTheme.temaFamilias,
+              child: CuentosListScreen(
+                onLanguageChanged: _setLanguage,
+                repository: _repository,
+                initialLanguage: _currentLanguage,
+                audioService: _audioService,
+              ),
             ),
-        '/laminas': (context) => LaminasGalleryScreen(
-              repository: _repository,
-              initialLanguage: _currentLanguage,
-              audioService: _audioService,
+        '/laminas': (context) => Theme(
+              data: AppTheme.temaFamilias,
+              child: LaminasGalleryScreen(
+                onLanguageChanged: _setLanguage,
+                repository: _repository,
+                initialLanguage: _currentLanguage,
+                audioService: _audioService,
+              ),
             ),
         '/palabras': (context) => VocabularioInglesScreen(
+              onLanguageChanged: _setLanguage,
               repository: _repository,
               initialLanguage: _currentLanguage,
               audioService: _audioService,
             ),
         '/english': (context) => EnglishHubScreen(
+              onLanguageChanged: _setLanguage,
               repository: _repository,
               initialLanguage: _currentLanguage,
               audioService: _audioService,
             ),
-        '/lectura': (context) => AprenderALerScreen(
-              repository: _repository,
-              initialLanguage: _currentLanguage,
-              audioService: _audioService,
+        '/lectura': (context) => Theme(
+              data: AppTheme.temaFamilias,
+              child: AprenderALerScreen(
+                onLanguageChanged: _setLanguage,
+                repository: _repository,
+                initialLanguage: _currentLanguage,
+                audioService: _audioService,
+              ),
             ),
         '/planificador': (context) => PlanificadorScreen(
               repository: _repository,
               initialLanguage: _currentLanguage,
             ),
         '/estrategias': (context) => EstrategiasScreen(
+              onLanguageChanged: _setLanguage,
               repository: _repository,
               initialLanguage: _currentLanguage,
             ),
         '/dinamicas': (context) => DinamicasScreen(
+              onLanguageChanged: _setLanguage,
               repository: _repository,
               initialLanguage: _currentLanguage,
             ),

@@ -42,8 +42,8 @@ class QueObservar extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Icon(Icons.lightbulb_outline_rounded,
-                  size: 20, color: AppTheme.primaryDark),
+              Icon(Icons.lightbulb_outline_rounded,
+                  size: 20, color: context.acento),
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
@@ -64,10 +64,10 @@ class QueObservar extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.only(top: 7, right: 8),
-                    child: Icon(Icons.circle,
-                        size: 7, color: AppTheme.primaryDark),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 7, right: 8),
+                    child: Icon(Icons.circle_rounded,
+                        size: 7, color: context.acento),
                   ),
                   Expanded(
                     child: Text(

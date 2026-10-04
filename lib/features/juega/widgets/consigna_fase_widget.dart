@@ -129,9 +129,9 @@ class _ConsignaFaseWidgetState extends State<ConsignaFaseWidget> {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(16, 12, 12, 12),
-      decoration: const BoxDecoration(
-        color: AppTheme.primaryLight,
-        border: Border(
+      decoration: BoxDecoration(
+        color: context.acentoTint,
+        border: const Border(
           bottom: BorderSide(color: Color(0xFFE2DDD0)),
         ),
       ),
@@ -155,7 +155,7 @@ class _ConsignaFaseWidgetState extends State<ConsignaFaseWidget> {
                     fontSize: 19.0,
                     height: 1.3,
                     fontWeight: FontWeight.w700,
-                    color: AppTheme.primaryDark,
+                    color: context.acento,
                   ),
                 ),
                 if (widget.audioService != null)
@@ -179,9 +179,9 @@ class _ConsignaFaseWidgetState extends State<ConsignaFaseWidget> {
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.w800,
                   fontFeatures: const [FontFeature.tabularFigures()],
-                  color: pasado
-                      ? AppTheme.accentTerracotta
-                      : AppTheme.primaryVigoBlue,
+                  // Pasado de tiempo, en ámbar: el amarillo de la estrella
+                  // daba 1,53:1 y el aviso no se leía.
+                  color: pasado ? AppTheme.warning : context.acento,
                 ),
               ),
               const SizedBox(height: 2),

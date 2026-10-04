@@ -6,7 +6,7 @@ import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/paxina_sen_scroll.dart';
-import '../../core/widgets/boton_atras.dart';
+import '../../core/widgets/cabecera.dart';
 
 /// Créditos, con la estructura de los del proyecto anterior de la casa
 /// (`docs/screenshots/02-creditos.png`): la gata y el nombre arriba, un
@@ -28,10 +28,39 @@ import '../../core/widgets/boton_atras.dart';
 ///
 /// Lo que sí está aquí es obligado: las voces neuronales y la tipografía llevan
 /// licencia, y citarlas no es cortesía.
-class CreditsScreen extends StatelessWidget {
+class CreditsScreen extends StatefulWidget {
   final AppLanguage currentLanguage;
 
-  const CreditsScreen({super.key, required this.currentLanguage});
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
+
+  const CreditsScreen({
+    super.key,
+    required this.currentLanguage,
+    this.onLanguageChanged,
+  });
+
+  @override
+  State<CreditsScreen> createState() => _CreditsScreenState();
+}
+
+class _CreditsScreenState extends State<CreditsScreen> {
+  late AppLanguage _language = widget.currentLanguage;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant CreditsScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.currentLanguage != widget.currentLanguage) {
+      _language = widget.currentLanguage;
+    }
+  }
+
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
 
   static const _title = LocalizedString(gl: 'Créditos', es: 'Créditos');
 
@@ -126,12 +155,15 @@ class CreditsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = Theme.of(context).textTheme;
+    final currentLanguage = _language;
 
     return Scaffold(
       backgroundColor: AppTheme.primary,
-      appBar: AppBar(
-          leading: const BotonAtras(),
-          title: Text(_title.resolve(currentLanguage))),
+      appBar: Cabecera(
+        titulo: _title.resolve(currentLanguage),
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
+      ),
       body: Stack(
         children: [
           const Positioned(
@@ -177,15 +209,15 @@ class CreditsScreen extends StatelessWidget {
                         Text(
                           'Dr. Frank Alberto Betances Reinoso',
                           textAlign: TextAlign.center,
-                          style: text.titleMedium
-                              ?.copyWith(color: AppTheme.primaryInk),
+                          style:
+                              text.titleMedium?.copyWith(color: context.acento),
                         ),
                         const SizedBox(height: AppTheme.spaceXs),
                         Text(
                           _role.resolve(currentLanguage),
                           textAlign: TextAlign.center,
-                          style: text.bodySmall
-                              ?.copyWith(color: AppTheme.primaryInk),
+                          style:
+                              text.bodySmall?.copyWith(color: context.acento),
                         ),
                         const Divider(height: AppTheme.spaceXl),
                         // Casi cuadrado y con margen blanco propio: a la
@@ -199,15 +231,15 @@ class CreditsScreen extends StatelessWidget {
                         Text(
                           'Earlify Health S.L.',
                           textAlign: TextAlign.center,
-                          style: text.titleSmall
-                              ?.copyWith(color: AppTheme.primaryInk),
+                          style:
+                              text.titleSmall?.copyWith(color: context.acento),
                         ),
                         const SizedBox(height: AppTheme.spaceSm),
                         Text(
                           _forWhom.resolve(currentLanguage),
                           textAlign: TextAlign.center,
-                          style: text.bodySmall
-                              ?.copyWith(color: AppTheme.primaryInk),
+                          style:
+                              text.bodySmall?.copyWith(color: context.acento),
                         ),
                       ],
                     ),
@@ -279,8 +311,8 @@ class CreditsScreen extends StatelessWidget {
                         const SizedBox(height: AppTheme.spaceMd),
                         Text(
                           _voicesNote.resolve(currentLanguage),
-                          style: text.bodySmall
-                              ?.copyWith(color: AppTheme.primaryInk),
+                          style:
+                              text.bodySmall?.copyWith(color: context.acento),
                         ),
                       ],
                     ),
@@ -301,8 +333,7 @@ class CreditsScreen extends StatelessWidget {
                     child: SelectableText(
                       'frank.alberto.betances.reinoso@gmail.com',
                       textAlign: TextAlign.center,
-                      style:
-                          text.bodyMedium?.copyWith(color: AppTheme.primaryInk),
+                      style: text.bodyMedium?.copyWith(color: context.acento),
                     ),
                   ),
                 ],
@@ -326,7 +357,8 @@ class _Kicker extends StatelessWidget {
       label,
       textAlign: TextAlign.center,
       style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: AppTheme.primaryInk,
+            // Sobre la página turquesa de marca: tinta oscura, 8,59:1.
+            color: AppTheme.dark,
             fontWeight: FontWeight.w800,
             letterSpacing: 2.0,
           ),
@@ -345,7 +377,7 @@ class _GlassCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(AppTheme.spaceXl),
       decoration: BoxDecoration(
-        color: AppTheme.primaryLight,
+        color: context.acentoTint,
         borderRadius: BorderRadius.circular(AppTheme.radiusCard),
         border: Border.all(color: AppTheme.borderActive),
       ),
@@ -368,12 +400,12 @@ class _Entry extends StatelessWidget {
       children: [
         Text(
           name,
-          style: text.titleSmall?.copyWith(color: AppTheme.primaryInk),
+          style: text.titleSmall?.copyWith(color: context.acento),
         ),
         const SizedBox(height: AppTheme.spaceXs),
         Text(
           detail,
-          style: text.bodySmall?.copyWith(color: AppTheme.primaryInk),
+          style: text.bodySmall?.copyWith(color: context.acento),
         ),
       ],
     );

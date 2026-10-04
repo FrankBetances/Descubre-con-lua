@@ -45,9 +45,9 @@ class AcademyHeader extends StatelessWidget {
         AppTheme.spaceXl,
         AppTheme.spaceXl,
       ),
-      decoration: const BoxDecoration(
-        color: AppTheme.primaryInk,
-        borderRadius: BorderRadius.vertical(
+      decoration: BoxDecoration(
+        color: context.acento,
+        borderRadius: const BorderRadius.vertical(
           bottom: Radius.circular(AppTheme.spaceXxl),
         ),
       ),
@@ -57,7 +57,7 @@ class AcademyHeader extends StatelessWidget {
           Text(
             kicker.toUpperCase(),
             style: text.bodySmall?.copyWith(
-              color: Colors.white70,
+              color: Colors.white,
               fontWeight: FontWeight.w800,
               letterSpacing: 1.6,
             ),
@@ -71,7 +71,7 @@ class AcademyHeader extends StatelessWidget {
             const SizedBox(height: AppTheme.spaceSm),
             Text(
               subtitulo!,
-              style: text.bodyMedium?.copyWith(color: Colors.white70),
+              style: text.bodyMedium?.copyWith(color: Colors.white),
             ),
           ],
           if (pasos != null && pasos! > 1) ...[
@@ -171,13 +171,12 @@ class AcademyCard extends StatelessWidget {
                   width: 48,
                   height: 48,
                   decoration: BoxDecoration(
-                    color: habilitada ? AppTheme.primaryLight : AppTheme.border,
+                    color: habilitada ? context.acentoTint : AppTheme.border,
                     borderRadius: BorderRadius.circular(AppTheme.radiusField),
                   ),
                   child: Icon(
                     icono,
-                    color:
-                        habilitada ? AppTheme.primaryInk : AppTheme.textMuted,
+                    color: habilitada ? context.acento : AppTheme.textMuted,
                     size: 24,
                   ),
                 ),
@@ -189,9 +188,8 @@ class AcademyCard extends StatelessWidget {
                       Text(
                         kicker.toUpperCase(),
                         style: text.bodySmall?.copyWith(
-                          color: habilitada
-                              ? AppTheme.primaryDark
-                              : AppTheme.textMuted,
+                          color:
+                              habilitada ? context.acento : AppTheme.textMuted,
                           fontWeight: FontWeight.w800,
                           letterSpacing: 1.2,
                         ),
@@ -232,13 +230,13 @@ class AcademyCard extends StatelessWidget {
                   Container(
                     width: 32,
                     height: 32,
-                    decoration: const BoxDecoration(
-                      color: AppTheme.primaryLight,
+                    decoration: BoxDecoration(
+                      color: context.acentoTint,
                       shape: BoxShape.circle,
                     ),
-                    child: const Icon(
+                    child: Icon(
                       Icons.chevron_right_rounded,
-                      color: AppTheme.primaryInk,
+                      color: context.acento,
                       size: 20,
                     ),
                   ),
