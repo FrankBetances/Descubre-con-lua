@@ -449,7 +449,7 @@ void main() {
       )));
       await tester.pumpAndSettle();
 
-      expect(find.text('Calendario Escola · Fogar'), findsOneWidget);
+      expect(find.text('Calendario'), findsOneWidget);
       expect(find.text('Aula (Docentes)'), findsOneWidget);
       expect(find.text('Fogar (Familias)'), findsOneWidget);
     });
@@ -859,7 +859,7 @@ void main() {
       )));
       await tester.pumpAndSettle();
 
-      expect(find.text('Calendario Escola · Fogar'), findsOneWidget);
+      expect(find.text('Calendario'), findsOneWidget);
 
       // Cambiar idioma a castelán
       final botonEs = find.text('ES');
@@ -867,7 +867,7 @@ void main() {
         await tester.tap(botonEs);
         await tester.pumpAndSettle();
 
-        expect(find.text('Calendario Escuela · Hogar'), findsOneWidget);
+        expect(find.text('Calendario'), findsOneWidget);
         expect(find.text('Hogar (Familias)'), findsOneWidget);
         expect(
             find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
@@ -884,7 +884,7 @@ void main() {
       )));
       await tester.pumpAndSettle();
 
-      expect(find.text('Guía de inglés na casa'), findsOneWidget);
+      expect(find.text('Inglés na casa'), findsOneWidget);
       // Cada tramo sale dos veces cuando está elegido —en su pastilla y en la
       // cabecera de la ficha—, así que se comprueba que está, no cuántas.
       expect(find.text('0 a 6 meses'), findsWidgets);

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/estrategia_model.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Catálogo de estratexias pedagóxicas de aula.
 ///
@@ -18,10 +18,14 @@ class EstrategiasScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
 
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
+
   const EstrategiasScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
   });
 
   @override
@@ -29,6 +33,23 @@ class EstrategiasScreen extends StatefulWidget {
 }
 
 class _EstrategiasScreenState extends State<EstrategiasScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
+  late AppLanguage _language = widget.initialLanguage;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant EstrategiasScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.initialLanguage != widget.initialLanguage) {
+      _language = widget.initialLanguage;
+    }
+  }
+
   List<EstrategiaPedagogica> _estrategias = [];
   bool _isLoading = true;
 
@@ -51,24 +72,14 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.initialLanguage;
+    final lang = _language;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          lang == AppLanguage.gl
-              ? 'Estratexias Pedagóxicas'
-              : 'Estrategias Pedagógicas',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: lang == AppLanguage.gl ? 'Estratexias' : 'Estrategias',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -120,11 +131,11 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                             Container(
                               padding: const EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                color: AppTheme.primaryLight,
+                                color: context.acentoTint,
                                 borderRadius: BorderRadius.circular(10),
                               ),
-                              child: const Icon(Icons.psychology,
-                                  color: AppTheme.primaryDark, size: 24),
+                              child: Icon(Icons.psychology_rounded,
+                                  color: context.acento, size: 24),
                             ),
                             const SizedBox(width: 12),
                             Expanded(
@@ -155,12 +166,12 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
 
                         // El porqué de la estrategia
                         _buildSection(
-                          icon: Icons.biotech,
+                          icon: Icons.biotech_rounded,
                           title: lang == AppLanguage.gl
                               ? 'Por que funciona'
                               : 'Por qué funciona',
                           content: est.porQueFunciona.resolve(lang),
-                          color: AppTheme.primaryInk,
+                          color: context.acento,
                         ),
                         if (est.fonte case final fonte?) ...[
                           const SizedBox(height: 6),
@@ -179,12 +190,12 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
 
                         // Como aplicar na aula
                         _buildSection(
-                          icon: Icons.school,
+                          icon: Icons.school_rounded,
                           title: lang == AppLanguage.gl
                               ? 'Como Aplicar na Aula'
                               : 'Cómo Aplicar en el Aula',
                           content: est.comoAplicarNaAula.resolve(lang),
-                          color: AppTheme.primaryInk,
+                          color: context.acento,
                         ),
 
                         const SizedBox(height: 10),
@@ -200,7 +211,7 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Icon(Icons.forum,
+                              const Icon(Icons.forum_rounded,
                                   color: AppTheme.warning, size: 18),
                               const SizedBox(width: 8),
                               Expanded(
@@ -230,15 +241,15 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Icon(Icons.warning_amber,
-                                  color: AppTheme.error, size: 18),
+                              const Icon(Icons.warning_amber_rounded,
+                                  color: AppTheme.errorInk, size: 18),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
                                   'Evitar: ${est.erroComunAEvitar.resolve(lang)}',
                                   style: const TextStyle(
                                     fontSize: 12,
-                                    color: AppTheme.error,
+                                    color: AppTheme.errorInk,
                                   ),
                                 ),
                               ),

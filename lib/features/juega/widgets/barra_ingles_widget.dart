@@ -47,10 +47,6 @@ class BarraInglesFase extends StatelessWidget {
     es: 'Óyelo antes de decirlo',
   );
 
-  /// El acento del inglés en toda la app: el mismo en la asamblea, en la
-  /// cápsula de la familia y en la nota para casa.
-  static const acento = Color(0xFF00838F);
-
   @override
   Widget build(BuildContext context) {
     if (textos.isEmpty) return const SizedBox.shrink();
@@ -65,7 +61,7 @@ class BarraInglesFase extends StatelessWidget {
         AppTheme.spaceSm,
       ),
       decoration: BoxDecoration(
-        color: acento.withAlpha(16),
+        color: context.acentoTint,
         border: const Border(top: BorderSide(color: Color(0xFFE2DDD0))),
       ),
       child: Column(
@@ -74,7 +70,7 @@ class BarraInglesFase extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Icon(Icons.volume_up_rounded, size: 16, color: acento),
+              Icon(Icons.volume_up_rounded, size: 16, color: context.acento),
               const SizedBox(width: 6),
               Flexible(
                 child: Text(
@@ -82,7 +78,7 @@ class BarraInglesFase extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: theme.textTheme.labelSmall?.copyWith(
-                    color: acento,
+                    color: context.acento,
                     fontWeight: FontWeight.w800,
                     letterSpacing: 1.0,
                   ),
@@ -115,12 +111,12 @@ class BarraInglesFase extends StatelessWidget {
                   BotonEscuchar(
                     audioService: audioService,
                     texto: texto,
-                    language: AppLanguage.en,
+                    language: AppLanguage.en, interfaz: language,
                     // La regla vive en voice_id.dart y es la misma que usa el
                     // corpus: palabra suelta despacio, frase a ritmo de lectura.
                     style: estiloIngles(texto),
                     comoChip: true,
-                    colorChip: acento,
+                    colorChip: context.acento,
                   ),
                   const SizedBox(width: 8),
                 ],

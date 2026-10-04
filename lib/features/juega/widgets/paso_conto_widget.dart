@@ -74,7 +74,7 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                 widget.cuento.titulo.resolve(widget.language),
                 style: theme.textTheme.headlineSmall?.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: AppTheme.primaryVigoBlue,
+                  color: context.acento,
                   fontSize: 22.0,
                 ),
               ),
@@ -85,7 +85,7 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
                 decoration: BoxDecoration(
-                  color: AppTheme.secondarySeaGlass.withValues(alpha: 0.2),
+                  color: context.acentoTint,
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: Text(
@@ -94,8 +94,8 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                       : 'Página ${_currentPageIndex + 1} de ${pages.length}',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    color: AppTheme.primaryVigoBlue,
+                  style: TextStyle(
+                    color: context.acento,
                     fontWeight: FontWeight.bold,
                     fontSize: 13.0,
                   ),
@@ -238,7 +238,7 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                 onPressed: _currentPageIndex > 0
                     ? () => _irAPagina(_currentPageIndex - 1)
                     : null,
-                icon: const Icon(Icons.arrow_back),
+                icon: const Icon(Icons.arrow_back_rounded),
                 // Dos líneas, no puntos suspensivos: «Páxina anterior» es lo
                 // que distingue este botón del de cambiar de FASE, que también
                 // dice «Anterior». Cortarlo dejaba dos botones iguales.
@@ -259,7 +259,7 @@ class _PasoContoWidgetState extends State<PasoContoWidget> {
                 onPressed: _currentPageIndex < pages.length - 1
                     ? () => _irAPagina(_currentPageIndex + 1)
                     : null,
-                icon: const Icon(Icons.arrow_forward),
+                icon: const Icon(Icons.arrow_forward_rounded),
                 label: Text(
                   isGl ? 'Páxina\nseguinte' : 'Página\nsiguiente',
                   maxLines: 2,
@@ -297,10 +297,10 @@ class _Ilustracion extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(
+          Icon(
             Icons.auto_stories_rounded,
             size: 42,
-            color: AppTheme.primaryVigoBlue,
+            color: context.acento,
           ),
           const SizedBox(height: 8),
           // The asset path itself used to be printed here, so a teacher running

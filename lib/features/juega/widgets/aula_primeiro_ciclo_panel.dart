@@ -294,7 +294,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
           // cuando no estaba.
           Container(
             height: 120,
-            color: AppTheme.primaryTint,
+            color: context.acentoTint,
             alignment: Alignment.center,
             child: LaminaEscena(clave: _lamina, ancho: 96),
           ),
@@ -305,11 +305,11 @@ class _TarxetaDeFluxo extends StatelessWidget {
               children: [
                 Text(
                   '${nomeDoMes[asamblea.mes]!.resolve(language)} · ${asamblea.tramo.etiquetaCorta.resolve(language)}',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontFamily: AppTheme.fontFamily,
                     fontSize: 12,
                     fontWeight: FontWeight.w800,
-                    color: AppTheme.primaryInk,
+                    color: context.acento,
                     letterSpacing: 0.8,
                   ),
                 ),
@@ -326,13 +326,13 @@ class _TarxetaDeFluxo extends StatelessWidget {
                 ),
                 const SizedBox(height: AppTheme.spaceSm),
                 _LinaDeApoio(
-                  icona: Icons.pan_tool_outlined,
+                  icona: Icons.pan_tool_rounded,
                   texto: asamblea.materialDoMes.resolve(language),
                 ),
                 if (asamblea.cancionDoMes.isNotEmpty) ...[
                   const SizedBox(height: AppTheme.spaceXs),
                   _LinaDeApoio(
-                    icona: Icons.music_note_outlined,
+                    icona: Icons.music_note_rounded,
                     texto: asamblea.cancionDoMes,
                   ),
                 ],
@@ -366,8 +366,6 @@ class _TarxetaDeFluxo extends StatelessWidget {
                     key: const ValueKey('comezar_asemblea_1c'),
                     onPressed: onComezar,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.primaryInk,
-                      foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius:
                             BorderRadius.circular(AppTheme.radiusButton),

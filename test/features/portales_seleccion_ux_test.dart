@@ -379,14 +379,14 @@ void main() {
       await _ataVer(tester, find.textContaining('Clap hands, touch ground!'));
       expect(find.textContaining('Clap hands, touch ground!'), findsWidgets);
 
-      // Botón 1-tap para marcar como feito hoxe
-      await _ataVer(tester, find.text('Marcar como Feito Hoxe'));
-      expect(find.text('Marcar como Feito Hoxe'), findsOneWidget);
-      await tester.tap(find.text('Marcar como Feito Hoxe'));
+      // Un toque para dicir que o xogo de hoxe xa está feito
+      await _ataVer(tester, find.text('Xa o fixemos'));
+      expect(find.text('Xa o fixemos'), findsOneWidget);
+      await tester.tap(find.text('Xa o fixemos'));
       await tester.pumpAndSettle();
 
-      await _ataVer(tester, find.text('Xogo Feito Hoxe no Fogar'));
-      expect(find.text('Xogo Feito Hoxe no Fogar'), findsOneWidget);
+      await _ataVer(tester, find.text('Feito hoxe'));
+      expect(find.text('Feito hoxe'), findsOneWidget);
 
       // Alternar a vista de calendario para ver selector de semanas
       await tester.tap(find.byIcon(Icons.calendar_view_month_rounded));

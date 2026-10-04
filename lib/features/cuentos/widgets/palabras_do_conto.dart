@@ -7,7 +7,6 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
-import '../../juega/widgets/barra_ingles_widget.dart';
 
 /// Un trozo del texto de una página: o es texto de la lengua de la app, o es
 /// una palabra inglesa (lo que va entre “…”).
@@ -134,12 +133,13 @@ class PalabrasNoConto {
   }
 }
 
-/// El texto de la página con el inglés resaltado: en el color del inglés de
-/// toda la app, y además con fondo si es una palabra de hoy.
+/// El texto de la página con el inglés resaltado: en el acento del portal, y
+/// además con fondo si es una palabra de hoy.
 TextSpan textoConPalabras({
   required String texto,
   required TextStyle estilo,
   required PalabrasNoConto palabras,
+  required Color acento,
 }) {
   return TextSpan(
     style: estilo,
@@ -151,11 +151,11 @@ TextSpan textoConPalabras({
           TextSpan(
             text: t.texto,
             style: TextStyle(
-              color: BarraInglesFase.acento,
+              color: acento,
               fontWeight: FontWeight.w800,
               backgroundColor:
                   palabras.eDeHoxe(t.texto.substring(1, t.texto.length - 1))
-                      ? BarraInglesFase.acento.withAlpha(36)
+                      ? acento.withAlpha(36)
                       : null,
             ),
           ),
@@ -216,9 +216,9 @@ class _CabeceiraPalabrasDoContoState extends State<CabeceiraPalabrasDoConto> {
       margin: const EdgeInsets.only(bottom: AppTheme.spaceLg),
       padding: const EdgeInsets.all(AppTheme.spaceMd),
       decoration: BoxDecoration(
-        color: BarraInglesFase.acento.withAlpha(10),
+        color: context.acentoTint,
         borderRadius: BorderRadius.circular(AppTheme.radiusField),
-        border: Border.all(color: BarraInglesFase.acento.withAlpha(60)),
+        border: Border.all(color: context.acento.withAlpha(60)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -233,12 +233,12 @@ class _CabeceiraPalabrasDoContoState extends State<CabeceiraPalabrasDoConto> {
                   Expanded(
                     child: Text(
                       rotulo,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 11,
                         fontWeight: FontWeight.w800,
                         letterSpacing: 0.8,
-                        color: BarraInglesFase.acento,
+                        color: context.acento,
                       ),
                     ),
                   ),
@@ -246,7 +246,7 @@ class _CabeceiraPalabrasDoContoState extends State<CabeceiraPalabrasDoConto> {
                     _aberta
                         ? Icons.keyboard_arrow_up_rounded
                         : Icons.keyboard_arrow_down_rounded,
-                    color: BarraInglesFase.acento,
+                    color: context.acento,
                   ),
                 ],
               ),
@@ -255,10 +255,10 @@ class _CabeceiraPalabrasDoContoState extends State<CabeceiraPalabrasDoConto> {
           if (plan != null)
             Text(
               PalabrasDoDia.resumo(plan, lang),
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 12.5,
                 fontWeight: FontWeight.w700,
-                color: AppTheme.primaryInk,
+                color: context.acento,
                 height: 1.3,
               ),
             ),
@@ -322,12 +322,12 @@ class PalabrasDaPaxina extends StatelessWidget {
         const SizedBox(height: AppTheme.spaceLg),
         Text(
           isGl ? 'EN INGLÉS NESTA PÁXINA' : 'EN INGLÉS EN ESTA PÁGINA',
-          style: const TextStyle(
+          style: TextStyle(
             fontFamily: AppTheme.fontFamily,
             fontSize: 11,
             fontWeight: FontWeight.w800,
             letterSpacing: 0.8,
-            color: BarraInglesFase.acento,
+            color: context.acento,
           ),
         ),
         const SizedBox(height: AppTheme.spaceSm),
@@ -361,7 +361,7 @@ class _PastillaDePaxina extends StatelessWidget {
   Widget build(BuildContext context) {
     final forma = RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(8),
-      side: BorderSide(color: BarraInglesFase.acento.withAlpha(90)),
+      side: BorderSide(color: context.acento.withAlpha(90)),
     );
     return Material(
       color: Colors.white,
@@ -375,9 +375,9 @@ class _PastillaDePaxina extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             child: Text(
               texto,
-              style: const TextStyle(
+              style: TextStyle(
                 fontWeight: FontWeight.w700,
-                color: AppTheme.primaryInk,
+                color: context.acento,
               ),
             ),
           ),

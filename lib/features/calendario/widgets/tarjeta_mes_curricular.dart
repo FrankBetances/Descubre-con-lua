@@ -11,18 +11,26 @@ const _ambar = Color(0xFFFFB300);
 const _menta = Color(0xFFE0F2F1);
 
 /// Colores de acento por mes curricular (orden 1–10).
+///
+/// El nombre del mes y sus pastillas van en blanco encima, así que cada uno
+/// pasa AA con blanco (de 4,83 a 6,04:1). Los de antes —coral, ámbar, rosa,
+/// celeste— se quedaban entre 2,2 y 3,7:1.
 const _acentos = [
-  Color(0xFF00BFA5), // Setembro – turquesa acogedor
-  Color(0xFFFF7043), // Outubro  – coral cuerpo
-  Color(0xFFFF8F00), // Novembro – ámbar otoño
-  Color(0xFF1E88E5), // Decembro – azul frío
-  Color(0xFF5C6BC0), // Xaneiro  – índigo invierno
-  Color(0xFFEF5350), // Febreiro – rojo Entroido
-  Color(0xFF43A047), // Marzo    – verde alimentos
-  Color(0xFFF48FB1), // Abril    – rosa primavera
-  Color(0xFF29B6F6), // Maio     – azul agua
-  Color(0xFF00838F), // Xuño     – aguamarina mar
+  Color(0xFF00796B), // Setembro – verde mar
+  Color(0xFFC2410C), // Outubro  – laranxa corpo
+  Color(0xFFA16207), // Novembro – ámbar outono
+  Color(0xFF2563EB), // Decembro – azul frío
+  Color(0xFF5C6BC0), // Xaneiro  – índigo inverno
+  Color(0xFFDC2626), // Febreiro – vermello Entroido
+  Color(0xFF15803D), // Marzo    – verde alimentos
+  Color(0xFFBE185D), // Abril    – rosa primavera
+  Color(0xFF0369A1), // Maio     – azul auga
+  Color(0xFF0E7490), // Xuño     – augamariña
 ];
+
+/// El fondo de las pastillas sobre el color del mes: oscurece en vez de
+/// aclarar, para que el blanco gane contraste en lugar de perderlo.
+const _veloPastilla = Color(0x2E000000);
 
 /// Tarjeta visual curricular minimalista para un [MesCurricular].
 ///
@@ -215,17 +223,17 @@ class _Cabecera extends StatelessWidget {
               child: Container(
                 width: 28,
                 height: 28,
-                decoration: BoxDecoration(
-                  color: Colors.white.withAlpha(50),
+                decoration: const BoxDecoration(
+                  color: _veloPastilla,
                   shape: BoxShape.circle,
                 ),
                 alignment: Alignment.center,
                 child: Text(
                   '${mes.mesDoCurso}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w900,
-                    color: Colors.white.withAlpha(230),
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -241,15 +249,15 @@ class _Cabecera extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                   decoration: BoxDecoration(
-                    color: Colors.white.withAlpha(50),
+                    color: _veloPastilla,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
                     curso.resolve(lang),
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.w800,
-                      color: Colors.white.withAlpha(235),
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -770,7 +778,7 @@ class _EstadoBadge extends StatelessWidget {
           _menta,
         ),
       EstadoEstimulacion.sinRegistro => (
-          Icons.radio_button_unchecked,
+          Icons.radio_button_unchecked_rounded,
           isGl ? 'Sen rexistro' : 'Sin registro',
           Colors.white.withAlpha(100),
         ),
@@ -779,7 +787,7 @@ class _EstadoBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
       decoration: BoxDecoration(
-        color: color.withAlpha(45),
+        color: _veloPastilla,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: color.withAlpha(120), width: 1),
       ),

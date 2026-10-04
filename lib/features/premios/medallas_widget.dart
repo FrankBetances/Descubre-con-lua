@@ -105,7 +105,7 @@ class TarjetaMedalla extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(AppTheme.spaceLg),
         decoration: BoxDecoration(
-          color: ganada ? AppTheme.primaryTint : AppTheme.card,
+          color: ganada ? context.acentoTint : AppTheme.card,
           borderRadius: BorderRadius.circular(AppTheme.radiusCard),
           border: Border.all(
             color: ganada ? AppTheme.borderActive : AppTheme.border,
@@ -143,7 +143,7 @@ class TarjetaMedalla extends StatelessWidget {
                   Text(
                     '$hechos / ${medalla.valor}',
                     style: text.labelSmall?.copyWith(
-                      color: ganada ? AppTheme.primaryInk : AppTheme.textMuted,
+                      color: ganada ? context.acento : AppTheme.textMuted,
                       fontWeight: FontWeight.w700,
                     ),
                   ),

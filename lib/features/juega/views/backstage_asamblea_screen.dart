@@ -6,13 +6,14 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../academy/widgets/selector_idioma_widget.dart';
 import '../widgets/backstage/backstage_level_switcher.dart';
 import '../widgets/consigna_fase_widget.dart';
 import '../widgets/backstage/paso_calm_widget.dart';
 import '../widgets/backstage/paso_core_tpr_widget.dart';
 import '../widgets/backstage/paso_opening_widget.dart';
 import '../widgets/backstage/paso_rhythm_widget.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/pasos_navegacion.dart';
 
 /// Pantalla Backstage de Asemblea Matinal para o Segundo Ciclo (3-6 anos).
 ///
@@ -251,7 +252,9 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
           side: const BorderSide(color: AppTheme.backstageBorder, width: 1.5),
         ),
         title: Text(
-          isGl ? 'Rematar Asemblea Matinal?' : '¿Finalizar Asamblea Matinal?',
+          isGl
+              ? 'Rematar a asemblea matinal?'
+              : '¿Terminar la asamblea matinal?',
           style: const TextStyle(
             fontFamily: AppTheme.fontFamily,
             fontSize: 20,
@@ -285,14 +288,12 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
           ElevatedButton(
             onPressed: () => Navigator.of(context).pop(true),
             style: ElevatedButton.styleFrom(
-              backgroundColor: AppTheme.backstageAccent,
-              foregroundColor: AppTheme.backstageBg,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(AppTheme.radiusButton),
               ),
             ),
             child: Text(
-              isGl ? 'Rematar e Saír' : 'Finalizar y Salir',
+              isGl ? 'Rematar e saír' : 'Terminar y salir',
               style: const TextStyle(
                 fontFamily: AppTheme.fontFamily,
                 fontSize: 15,
@@ -345,19 +346,17 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
             onPressed: () => Navigator.of(context).pop(false),
             child: Text(
               isGl ? 'Continuar Asemblea' : 'Continuar Asamblea',
-              style: const TextStyle(
+              style: TextStyle(
                 fontFamily: AppTheme.fontFamily,
                 fontSize: 15,
                 fontWeight: FontWeight.w700,
-                color: AppTheme.backstageAccent,
+                color: context.acento,
               ),
             ),
           ),
           ElevatedButton(
             onPressed: () => Navigator.of(context).pop(true),
             style: ElevatedButton.styleFrom(
-              backgroundColor: AppTheme.error,
-              foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(AppTheme.radiusButton),
               ),
@@ -405,31 +404,10 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
       },
       child: Scaffold(
         backgroundColor: AppTheme.backstageBg,
-        appBar: AppBar(
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back_rounded, size: 26),
-            onPressed: () async {
-              final ok = await _confirmExit();
-              if (ok && context.mounted) {
-                Navigator.of(context).pop();
-              }
-            },
-            tooltip: 'Volver',
-          ),
-          title: Text(
-            isGl ? 'Modo Asemblea · 2.º Ciclo' : 'Modo Asamblea · 2.º Ciclo',
-            style: const TextStyle(fontWeight: FontWeight.bold),
-          ),
-          actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 12.0),
-              child: SelectorIdiomaWidget(
-                currentLanguage: _language,
-                onLanguageChanged: (l) => _toggleLanguage(),
-                compact: true,
-              ),
-            ),
-          ],
+        appBar: Cabecera(
+          titulo: isGl ? 'Modo Asemblea' : 'Modo Asamblea',
+          language: _language,
+          onLanguageChanged: (l) => _toggleLanguage(),
         ),
         body: asamblea == null
             ? Center(
@@ -483,8 +461,8 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                                         : 'Fase ${_faseIndex + 1} de 4',
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                      color: AppTheme.primaryVigoBlue,
+                                    style: TextStyle(
+                                      color: context.acento,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 14.0,
                                     ),
@@ -516,8 +494,8 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                           LinearProgressIndicator(
                             value: (_faseIndex + 1) / 4.0,
                             backgroundColor: const Color(0xFFE2DDD0),
-                            valueColor: const AlwaysStoppedAnimation<Color>(
-                                AppTheme.primaryVigoBlue),
+                            valueColor:
+                                AlwaysStoppedAnimation<Color>(context.acento),
                             minHeight: 6.0,
                             borderRadius: BorderRadius.circular(3.0),
                           ),
@@ -549,21 +527,21 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                       Container(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 16.0, vertical: 8.0),
-                        color: AppTheme.primaryLight,
+                        color: context.acentoTint,
                         child: Row(
                           children: [
-                            const Icon(Icons.phonelink_erase_rounded,
-                                size: 18, color: AppTheme.primaryDark),
+                            Icon(Icons.phonelink_erase_rounded,
+                                size: 18, color: context.acento),
                             const SizedBox(width: 8),
                             Expanded(
                               child: Text(
                                 isGl
                                     ? 'Asistente docente · Móbil fóra da vista'
                                     : 'Asistente docente · Móvil fuera de la vista',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontSize: 12.0,
                                   fontWeight: FontWeight.bold,
-                                  color: AppTheme.primaryDark,
+                                  color: context.acento,
                                 ),
                               ),
                             ),
@@ -598,95 +576,40 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                           ),
                         ),
                       ),
-                      child: Row(
-                        children: [
-                          // Botón Fase Anterior
-                          Expanded(
-                            child: OutlinedButton.icon(
-                              key:
-                                  const ValueKey('backstage_prev_phase_button'),
-                              onPressed: _faseIndex > 0
-                                  ? () => _onFaseSelected(_faseIndex - 1)
-                                  : null,
-                              style: OutlinedButton.styleFrom(
-                                foregroundColor: AppTheme.backstageTextPrimary,
-                                disabledForegroundColor:
-                                    AppTheme.backstageTextMuted,
-                                side: BorderSide(
-                                  color: _faseIndex > 0
-                                      ? AppTheme.backstageBorder
-                                      : AppTheme.backstageBorder
-                                          .withValues(alpha: 0.3),
-                                ),
-                                minimumSize: const Size(0, 52),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(
-                                    AppTheme.radiusButton,
-                                  ),
-                                ),
-                              ),
-                              icon: const Icon(Icons.chevron_left_rounded),
-                              label: Text(
-                                isGl ? 'Fase Anterior' : 'Fase Anterior',
-                                style: const TextStyle(
-                                  fontFamily: AppTheme.fontFamily,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 14),
-
-                          // Botón Seguinte Fase / Rematar
-                          Expanded(
-                            child: ElevatedButton.icon(
-                              key:
-                                  const ValueKey('backstage_next_phase_button'),
-                              onPressed: () async {
-                                if (_faseIndex < 3) {
-                                  _onFaseSelected(_faseIndex + 1);
-                                  return;
-                                }
-                                // Rematar asemblea
-                                final ok = await _confirmFinish();
-                                if (!context.mounted) return;
-                                if (ok) {
-                                  Navigator.of(context).pop();
-                                }
-                              },
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: AppTheme.backstageAccent,
-                                foregroundColor: AppTheme.backstageBg,
-                                minimumSize: const Size(0, 52),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(
-                                    AppTheme.radiusButton,
-                                  ),
-                                ),
-                              ),
-                              icon: Icon(
-                                _faseIndex < 3
-                                    ? Icons.arrow_forward_rounded
-                                    : Icons.check_circle_rounded,
-                              ),
-                              label: Text(
-                                _faseIndex < 3
-                                    ? (isGl
-                                        ? 'Seguinte Fase'
-                                        : 'Siguiente Fase')
-                                    : (isGl
-                                        ? 'Rematar Asemblea'
-                                        : 'Finalizar Asamblea'),
-                                style: const TextStyle(
-                                  fontFamily: AppTheme.fontFamily,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
+                      // Volver es la flecha y avanzar el botón principal,
+                      // como en el resto de la app. Con dos botones de media
+                      // fila, «Fase Anterior» y «Seguinte Fase» se partían en
+                      // dos líneas a 360 px.
+                      child: PasosNavegacion(
+                        chaveAnterior:
+                            const ValueKey('backstage_prev_phase_button'),
+                        chaveSeguinte:
+                            const ValueKey('backstage_next_phase_button'),
+                        anterior: _faseIndex > 0
+                            ? () => _onFaseSelected(_faseIndex - 1)
+                            : null,
+                        etiquetaAnterior:
+                            isGl ? 'Fase anterior' : 'Fase anterior',
+                        etiquetaSeguinte: _faseIndex < 3
+                            ? (isGl ? 'Seguinte Fase' : 'Siguiente Fase')
+                            : (isGl
+                                ? 'Rematar a asemblea'
+                                : 'Terminar la asamblea'),
+                        iconaSeguinte: _faseIndex < 3
+                            ? Icons.arrow_forward_rounded
+                            : Icons.check_circle_rounded,
+                        seguinte: () async {
+                          if (_faseIndex < 3) {
+                            _onFaseSelected(_faseIndex + 1);
+                            return;
+                          }
+                          // Rematar asemblea
+                          final ok = await _confirmFinish();
+                          if (!context.mounted) return;
+                          if (ok) {
+                            Navigator.of(context).pop();
+                          }
+                        },
                       ),
                     ),
                   ],

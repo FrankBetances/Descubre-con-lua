@@ -48,5 +48,5 @@ IconData iconoDeContenido(String token) {
     case 'sen_pantallas':
       return Icons.phonelink_erase_rounded;
   }
-  return Icons.circle_outlined;
+  return Icons.radio_button_unchecked_rounded;
 }

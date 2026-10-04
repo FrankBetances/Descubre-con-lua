@@ -8,7 +8,6 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/unidad_model.dart';
-import 'barra_ingles_widget.dart';
 
 /// Las cinco palabras de la unidad, en las tres lenguas y con altavoz.
 ///
@@ -65,7 +64,7 @@ class VocabularioDaUnidade extends StatelessWidget {
           Text(
             _titulo.resolve(language),
             style: theme.textTheme.labelSmall?.copyWith(
-              color: AppTheme.primaryDark,
+              color: context.acento,
               fontWeight: FontWeight.w800,
               letterSpacing: 1.0,
             ),
@@ -136,16 +135,17 @@ class _FilaPalabra extends StatelessWidget {
                     // Despacio: la palabra existe para que la imiten.
                     style: VoiceStyle.slow,
                     comoChip: true,
-                    colorChip: AppTheme.primaryVigoBlue,
+                    colorChip: context.acento,
                   ),
                   if (item.ingles.isNotEmpty)
                     BotonEscuchar(
                       audioService: audioService,
                       texto: item.ingles,
                       language: AppLanguage.en,
+                      interfaz: language,
                       style: estiloIngles(item.ingles),
                       comoChip: true,
-                      colorChip: BarraInglesFase.acento,
+                      colorChip: context.acento,
                     ),
                 ],
               ),

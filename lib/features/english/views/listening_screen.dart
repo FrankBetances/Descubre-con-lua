@@ -5,10 +5,11 @@ import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/pasos_navegacion.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 
 /// Escucha: las frases y las órdenes largas del curso, mes a mes.
@@ -22,6 +23,9 @@ class ListeningScreen extends StatefulWidget {
   final ProgramaTpr? programa;
   final String cursoInicial;
   final AppLanguage language;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   /// Para los tests: el día que se quiere ver. Por defecto, hoy.
@@ -32,6 +36,7 @@ class ListeningScreen extends StatefulWidget {
     required this.programa,
     this.cursoInicial = 'curso_0_2',
     this.language = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
     this.agora,
   });
@@ -44,6 +49,21 @@ class ListeningScreen extends StatefulWidget {
 }
 
 class _ListeningScreenState extends State<ListeningScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
+  late AppLanguage _language = widget.language;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant ListeningScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.language != widget.language) _language = widget.language;
+  }
+
   late String _curso = widget.cursoInicial;
   late int _mes = diaDoCursoParaHoxe(agora: widget.agora).dia.mesCalendario;
   int _indice = 0;
@@ -69,7 +89,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.language;
+    final lang = _language;
     final isGl = lang == AppLanguage.gl;
     final programa = widget.programa;
     final curso = programa?.curso(_curso);
@@ -78,18 +98,10 @@ class _ListeningScreenState extends State<ListeningScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          isGl ? 'Escoita as frases do curso' : 'Escucha las frases del curso',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 17,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: isGl ? 'Escoita as frases' : 'Escucha las frases',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: SafeArea(
         child: programa == null || curso == null
@@ -146,36 +158,18 @@ class _ListeningScreenState extends State<ListeningScreen> {
                     const SizedBox(height: 10),
                     _tarxeta(frases[indice], lang),
                     const SizedBox(height: 16),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: OutlinedButton(
-                            key: const Key('escoita_anterior'),
-                            onPressed: indice > 0
-                                ? () => _ir(() => _indice = indice - 1)
-                                : null,
-                            style: OutlinedButton.styleFrom(
-                              minimumSize: const Size(0, AppTheme.touchMin),
-                            ),
-                            child: Text(isGl ? 'Anterior' : 'Anterior'),
-                          ),
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: ElevatedButton(
-                            key: const Key('escoita_seguinte'),
-                            onPressed: indice < frases.length - 1
-                                ? () => _ir(() => _indice = indice + 1)
-                                : null,
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: AppTheme.primary,
-                              foregroundColor: Colors.white,
-                              minimumSize: const Size(0, AppTheme.touchMin),
-                            ),
-                            child: Text(isGl ? 'Seguinte' : 'Siguiente'),
-                          ),
-                        ),
-                      ],
+                    PasosNavegacion(
+                      chaveAnterior: const Key('escoita_anterior'),
+                      chaveSeguinte: const Key('escoita_seguinte'),
+                      anterior: indice > 0
+                          ? () => _ir(() => _indice = indice - 1)
+                          : null,
+                      etiquetaAnterior:
+                          isGl ? 'Frase anterior' : 'Frase anterior',
+                      etiquetaSeguinte: isGl ? 'Seguinte' : 'Siguiente',
+                      seguinte: indice < frases.length - 1
+                          ? () => _ir(() => _indice = indice + 1)
+                          : null,
                     ),
                   ],
                 ],
@@ -191,13 +185,11 @@ class _ListeningScreenState extends State<ListeningScreen> {
         '${PalabrasDoDia.nomesDosDias[f.dia - 1].resolve(lang)}, semana ${f.semana}';
     return Card(
       key: const Key('escoita_tarxeta'),
-      elevation: 1,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            const Icon(Icons.headphones, size: 40, color: AppTheme.primaryDark),
+            Icon(Icons.headphones_rounded, size: 40, color: context.acento),
             const SizedBox(height: 10),
             Text(
               isGl
@@ -217,6 +209,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
               audioService: widget.audioService,
               texto: p.en,
               language: AppLanguage.en,
+              interfaz: lang,
               style: estiloIngles(p.en),
             ),
             const SizedBox(height: 16),
@@ -236,9 +229,9 @@ class _ListeningScreenState extends State<ListeningScreen> {
               Text(
                 p.significado(lang),
                 textAlign: TextAlign.center,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 15,
-                  color: AppTheme.primaryInk,
+                  color: context.acento,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -272,7 +265,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
               TextButton.icon(
                 key: const Key('escoita_amosar'),
                 onPressed: () => setState(() => _revelada = true),
-                icon: const Icon(Icons.translate, size: 18),
+                icon: const Icon(Icons.translate_rounded, size: 18),
                 label: Text(isGl
                     ? 'Amosar o texto, o significado e o xesto'
                     : 'Mostrar el texto, el significado y el gesto'),

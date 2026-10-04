@@ -10,7 +10,7 @@ import '../../data/models/calendario_model.dart';
 import 'medallas_widget.dart';
 import 'premios_model.dart';
 import 'premios_repository.dart';
-import '../../core/widgets/boton_atras.dart';
+import '../../core/widgets/cabecera.dart';
 
 /// «Os premios de Lúa», con la estructura de la hoja de premios del proyecto anterior de la casa
 /// (`docs/screenshots/26-premios-insignias.png`): cabecera con la gata, nivel y
@@ -24,6 +24,9 @@ import '../../core/widgets/boton_atras.dart';
 class PremiosScreen extends StatefulWidget {
   final PremiosRepository repository;
   final AppLanguage currentLanguage;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final Perfil perfilInicial;
 
   /// Las tres cuentas del Calendario Escola·Fogar. Sin ellas no se pintan las
@@ -34,6 +37,7 @@ class PremiosScreen extends StatefulWidget {
     super.key,
     required this.repository,
     required this.currentLanguage,
+    this.onLanguageChanged,
     this.perfilInicial = Perfil.docente,
     this.contadores,
   });
@@ -48,6 +52,23 @@ class PremiosScreen extends StatefulWidget {
 }
 
 class _PremiosScreenState extends State<PremiosScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
+  late AppLanguage _language = widget.currentLanguage;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant PremiosScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.currentLanguage != widget.currentLanguage) {
+      _language = widget.currentLanguage;
+    }
+  }
+
   late Perfil _perfil = widget.perfilInicial;
 
   static const _medallas = LocalizedString(
@@ -107,13 +128,15 @@ class _PremiosScreenState extends State<PremiosScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.currentLanguage;
+    final lang = _language;
     final text = Theme.of(context).textTheme;
 
     return Scaffold(
-      appBar: AppBar(
-          leading: const BotonAtras(),
-          title: Text(PremiosScreen.titulo.resolve(lang))),
+      appBar: Cabecera(
+        titulo: 'Premios de Lúa',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
+      ),
       // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
       // ya no reserva la barra de gestos y el final de esta pantalla
       // quedaba por debajo. `top: false` porque el inset de arriba ya lo
@@ -277,7 +300,7 @@ class _Cabecera extends StatelessWidget {
       padding: const EdgeInsets.all(AppTheme.spaceLg),
       decoration: BoxDecoration(
         // Turquesa profundo: sobre el de marca el texto blanco daría 2,18:1.
-        color: AppTheme.primaryInk,
+        color: context.acento,
         borderRadius: BorderRadius.circular(AppTheme.radiusCard),
       ),
       child: Row(
@@ -286,7 +309,7 @@ class _Cabecera extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(AppTheme.spaceSm),
             decoration: BoxDecoration(
-              color: AppTheme.primaryLight,
+              color: context.acentoTint,
               borderRadius: BorderRadius.circular(AppTheme.radiusField),
             ),
             child: const LuaPixel(size: 56),
@@ -321,8 +344,7 @@ class _Cabecera extends StatelessWidget {
                     value: progreso.avanceDeNivel(catalogo),
                     minHeight: 10,
                     backgroundColor: Colors.white24,
-                    valueColor:
-                        const AlwaysStoppedAnimation<Color>(AppTheme.primary),
+                    valueColor: AlwaysStoppedAnimation<Color>(context.acento),
                   ),
                 ),
                 const SizedBox(height: AppTheme.spaceSm),
@@ -417,7 +439,7 @@ class _TarjetaInsignia extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(AppTheme.spaceLg),
         decoration: BoxDecoration(
-          color: ganada ? AppTheme.primaryTint : AppTheme.card,
+          color: ganada ? context.acentoTint : AppTheme.card,
           borderRadius: BorderRadius.circular(AppTheme.radiusCard),
           border: Border.all(
             color: ganada ? AppTheme.borderActive : AppTheme.border,
@@ -477,7 +499,7 @@ class _Aviso extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: AppTheme.spaceLg),
       padding: const EdgeInsets.all(AppTheme.spaceLg),
       decoration: BoxDecoration(
-        color: AppTheme.primaryTint,
+        color: context.acentoTint,
         borderRadius: BorderRadius.circular(AppTheme.radiusCard),
         border: Border.all(color: AppTheme.borderActive),
       ),
@@ -486,7 +508,7 @@ class _Aviso extends StatelessWidget {
         style: Theme.of(context)
             .textTheme
             .bodyMedium
-            ?.copyWith(color: AppTheme.primaryInk),
+            ?.copyWith(color: context.acento),
       ),
     );
   }

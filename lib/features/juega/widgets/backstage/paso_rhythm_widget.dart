@@ -66,24 +66,24 @@ class PasoRhythmWidget extends StatelessWidget {
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                      color: AppTheme.backstageAccent.withValues(alpha: 0.2),
+                      color: context.acentoTint,
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
                     child: Text(
                       'FASE ${fase.orden} · ${fase.duracionSegundos}s',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 13,
                         fontWeight: FontWeight.w800,
-                        color: AppTheme.backstageAccent,
+                        color: context.acento,
                         letterSpacing: 1,
                       ),
                     ),
                   ),
                   const Spacer(),
-                  const Icon(
+                  Icon(
                     Icons.music_note_rounded,
-                    color: AppTheme.backstageAccent,
+                    color: context.acento,
                     size: 26,
                   ),
                 ],
@@ -112,9 +112,7 @@ class PasoRhythmWidget extends StatelessWidget {
             color: AppTheme.backstageSurface,
             borderRadius: BorderRadius.circular(AppTheme.radiusCard),
             border: Border.all(
-              color: isPulsePlaying
-                  ? AppTheme.backstageAccent
-                  : AppTheme.backstageBorder,
+              color: isPulsePlaying ? context.acento : AppTheme.backstageBorder,
               width: 1.5,
             ),
           ),
@@ -128,7 +126,7 @@ class PasoRhythmWidget extends StatelessWidget {
                     height: 44,
                     decoration: BoxDecoration(
                       color: isPulsePlaying
-                          ? AppTheme.backstageAccent.withValues(alpha: 0.2)
+                          ? context.acentoTint
                           : AppTheme.backstageSurfaceElevated,
                       shape: BoxShape.circle,
                     ),
@@ -137,7 +135,7 @@ class PasoRhythmWidget extends StatelessWidget {
                           ? Icons.graphic_eq_rounded
                           : Icons.speed_rounded,
                       color: isPulsePlaying
-                          ? AppTheme.backstageAccent
+                          ? context.acento
                           : AppTheme.backstageTextSecondary,
                       size: 24,
                     ),
@@ -178,14 +176,10 @@ class PasoRhythmWidget extends StatelessWidget {
               const SizedBox(height: 16),
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton.icon(
+                child: OutlinedButton.icon(
                   key: const ValueKey('play_rhythm_pulse_button'),
                   onPressed: onTogglePulse,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: isPulsePlaying
-                        ? AppTheme.backstageWarning
-                        : AppTheme.backstageAccent,
-                    foregroundColor: AppTheme.backstageBg,
+                  style: OutlinedButton.styleFrom(
                     minimumSize: const Size.fromHeight(56),
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
@@ -236,9 +230,9 @@ class PasoRhythmWidget extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.face_retouching_natural_rounded,
-                    color: AppTheme.backstageAccent,
+                    color: context.acento,
                     size: 20,
                   ),
                   const SizedBox(width: 8),
@@ -247,11 +241,11 @@ class PasoRhythmWidget extends StatelessWidget {
                     isGl
                         ? 'Praxias Orofaciais e Rimas Dactilares'
                         : 'Praxias Orofaciales y Rimas Dactilares',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontFamily: AppTheme.fontFamily,
                       fontSize: 15,
                       fontWeight: FontWeight.w700,
-                      color: AppTheme.backstageAccent,
+                      color: context.acento,
                     ),
                   )),
                 ],

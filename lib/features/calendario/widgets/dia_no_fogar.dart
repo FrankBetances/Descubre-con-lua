@@ -259,12 +259,12 @@ class _TarxetaDoDiaNoFogar extends StatelessWidget {
                 child: Text(
                   '${dia.nombreDiaSemana.resolve(language)} · '
                   '${isGl ? "Semana" : "Semana"} ${dia.semanaNumero}',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontFamily: AppTheme.fontFamily,
                     fontSize: 12,
                     fontWeight: FontWeight.w800,
                     letterSpacing: 0.8,
-                    color: AppTheme.primaryInk,
+                    color: context.acento,
                   ),
                 ),
               ),
@@ -279,10 +279,10 @@ class _TarxetaDoDiaNoFogar extends StatelessWidget {
                   ),
                   child: Text(
                     isGl ? 'Sen pantallas' : 'Sin pantallas',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.bold,
-                      color: AppTheme.primaryInk,
+                      color: context.acento,
                     ),
                   ),
                 ),
@@ -355,16 +355,16 @@ class _Bloque extends StatelessWidget {
         children: [
           Row(
             children: [
-              Icon(icona, size: 16, color: AppTheme.primaryDark),
+              Icon(icona, size: 16, color: context.acento),
               const SizedBox(width: 6),
               Text(
                 rotulo,
-                style: const TextStyle(
+                style: TextStyle(
                   fontFamily: AppTheme.fontFamily,
                   fontSize: 11,
                   fontWeight: FontWeight.w800,
                   letterSpacing: 0.6,
-                  color: AppTheme.primaryDark,
+                  color: context.acento,
                 ),
               ),
             ],

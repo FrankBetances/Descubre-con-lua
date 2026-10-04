@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/pasos_navegacion.dart';
 import '../../../data/models/formacion_model.dart';
-import '../../../core/widgets/boton_atras.dart';
 
 /// La formación previa: lo que hay que saber ANTES de usar la app.
 ///
@@ -13,6 +14,9 @@ import '../../../core/widgets/boton_atras.dart';
 class FormacionScreen extends StatefulWidget {
   final PerfilFormacion perfil;
   final AppLanguage language;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
 
   /// Para las pruebas: permite inyectar la guía ya leída.
   final GuiaFormacion? guiaPrecargada;
@@ -24,6 +28,7 @@ class FormacionScreen extends StatefulWidget {
     super.key,
     required this.perfil,
     required this.language,
+    this.onLanguageChanged,
     this.guiaPrecargada,
     this.lector,
   });
@@ -37,10 +42,12 @@ class _FormacionScreenState extends State<FormacionScreen> {
   GuiaFormacion? _guia;
   bool _fallo = false;
   int _indice = 0;
+  late AppLanguage _language;
 
   @override
   void initState() {
     super.initState();
+    _language = widget.language;
     final precargada = widget.guiaPrecargada;
     if (precargada != null) {
       _guia = precargada;
@@ -53,6 +60,12 @@ class _FormacionScreenState extends State<FormacionScreen> {
       if (!mounted) return;
       setState(() => _fallo = true);
     });
+  }
+
+  @override
+  void didUpdateWidget(covariant FormacionScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.language != widget.language) _language = widget.language;
   }
 
   @override
@@ -73,21 +86,28 @@ class _FormacionScreenState extends State<FormacionScreen> {
     );
   }
 
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
   @override
   Widget build(BuildContext context) {
-    final isGl = widget.language == AppLanguage.gl;
+    final isGl = _language == AppLanguage.gl;
     final guia = _guia;
+    final naCasa = widget.perfil == PerfilFormacion.familia;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          guia?.titulo.resolve(widget.language) ??
-              (isGl ? 'Antes de empezar' : 'Antes de empezar'),
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-        ),
+      // «Antes de empezar na casa» no cabe en la cabecera a 360 px: el
+      // título dice qué es y la segunda línea, para quién.
+      appBar: Cabecera(
+        titulo: isGl ? 'Antes de empezar' : 'Antes de empezar',
+        subtitulo: naCasa
+            ? (isGl ? 'Na casa · 2 min' : 'En casa · 2 min')
+            : (isGl ? 'Na aula · 2 min' : 'En el aula · 2 min'),
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: SafeArea(
         child: _fallo
@@ -115,7 +135,7 @@ class _FormacionScreenState extends State<FormacionScreen> {
                         padding: const EdgeInsets.fromLTRB(
                             AppTheme.spaceLg, 0, AppTheme.spaceLg, 0),
                         child: Text(
-                          guia.subtitulo.resolve(widget.language),
+                          guia.subtitulo.resolve(_language),
                           style: const TextStyle(
                             fontFamily: AppTheme.fontFamily,
                             fontSize: 14,
@@ -133,22 +153,31 @@ class _FormacionScreenState extends State<FormacionScreen> {
                             numero: i + 1,
                             total: guia.pasos.length,
                             paso: guia.pasos[i],
-                            language: widget.language,
+                            language: _language,
                           ),
                         ),
                       ),
-                      _Pes(
-                        indice: _indice,
-                        total: guia.pasos.length,
-                        isGl: isGl,
-                        onAnterior: () => _ir(_indice - 1),
-                        onSeguinte: () {
-                          if (_indice < guia.pasos.length - 1) {
-                            _ir(_indice + 1);
-                          } else {
-                            Navigator.of(context).pop();
-                          }
-                        },
+                      Padding(
+                        padding: const EdgeInsets.all(AppTheme.spaceLg),
+                        child: PasosNavegacion(
+                          chaveAnterior: const ValueKey('formacion_anterior'),
+                          chaveSeguinte: const ValueKey('formacion_seguinte'),
+                          anterior: _indice > 0 ? () => _ir(_indice - 1) : null,
+                          etiquetaAnterior: isGl ? 'Anterior' : 'Anterior',
+                          etiquetaSeguinte: _indice >= guia.pasos.length - 1
+                              ? (isGl ? 'Xa o teño' : 'Ya lo tengo')
+                              : (isGl ? 'Seguinte' : 'Siguiente'),
+                          iconaSeguinte: _indice >= guia.pasos.length - 1
+                              ? Icons.check_rounded
+                              : Icons.arrow_forward_rounded,
+                          seguinte: () {
+                            if (_indice < guia.pasos.length - 1) {
+                              _ir(_indice + 1);
+                            } else {
+                              Navigator.of(context).pop();
+                            }
+                          },
+                        ),
                       ),
                     ],
                   ),
@@ -188,11 +217,11 @@ class _TarxetaDePaso extends StatelessWidget {
           children: [
             Text(
               '$numero / $total',
-              style: const TextStyle(
+              style: TextStyle(
                 fontFamily: AppTheme.fontFamily,
                 fontSize: 12,
                 fontWeight: FontWeight.w800,
-                color: AppTheme.primaryInk,
+                color: context.acento,
                 letterSpacing: 1.0,
               ),
             ),
@@ -229,83 +258,24 @@ class _TarxetaDePaso extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.all(AppTheme.spaceMd),
               decoration: BoxDecoration(
-                color: AppTheme.primaryLight,
+                color: context.acentoTint,
                 borderRadius: BorderRadius.circular(AppTheme.radiusField),
               ),
               child: Text(
                 paso.clave.resolve(language),
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
-                style: const TextStyle(
+                style: TextStyle(
                   fontFamily: AppTheme.fontFamily,
                   fontSize: 15.5,
                   height: 1.3,
                   fontWeight: FontWeight.w800,
-                  color: AppTheme.primaryInk,
+                  color: context.acento,
                 ),
               ),
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _Pes extends StatelessWidget {
-  final int indice;
-  final int total;
-  final bool isGl;
-  final VoidCallback onAnterior;
-  final VoidCallback onSeguinte;
-
-  const _Pes({
-    required this.indice,
-    required this.total,
-    required this.isGl,
-    required this.onAnterior,
-    required this.onSeguinte,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final ultimo = indice >= total - 1;
-    return Padding(
-      padding: const EdgeInsets.all(AppTheme.spaceLg),
-      child: Row(
-        children: [
-          Expanded(
-            child: SizedBox(
-              height: AppTheme.touchMin,
-              child: OutlinedButton(
-                key: const ValueKey('formacion_anterior'),
-                onPressed: indice > 0 ? onAnterior : null,
-                child: Text(isGl ? 'Anterior' : 'Anterior'),
-              ),
-            ),
-          ),
-          const SizedBox(width: AppTheme.spaceMd),
-          Expanded(
-            flex: 2,
-            child: SizedBox(
-              height: AppTheme.touchMin,
-              child: ElevatedButton(
-                key: const ValueKey('formacion_seguinte'),
-                onPressed: onSeguinte,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.primaryInk,
-                  foregroundColor: Colors.white,
-                ),
-                child: Text(
-                  ultimo
-                      ? (isGl ? 'Xa o teño' : 'Ya lo tengo')
-                      : (isGl ? 'Seguinte' : 'Siguiente'),
-                  style: const TextStyle(fontWeight: FontWeight.w800),
-                ),
-              ),
-            ),
-          ),
-        ],
       ),
     );
   }

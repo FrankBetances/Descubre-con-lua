@@ -11,6 +11,7 @@ import '../../../data/repositories/content_repository.dart';
 import '../../cuentos/views/cuento_viewer_screen.dart';
 import '../../planificador/views/dinamicas_screen.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
+import '../../../core/navigation/ruta_lua.dart';
 
 /// Lo que el día del aula tiene ADEMÁS de su asamblea: su cuento, con su
 /// lámina, la dinámica que le toca a ese día de la semana y, el día que le
@@ -45,6 +46,9 @@ class CirculoDoDia extends StatefulWidget {
   final int dia;
 
   final AppLanguage language;
+
+  /// Avisa de que se cambió de lengua en una pantalla abierta desde aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   const CirculoDoDia({
@@ -55,6 +59,7 @@ class CirculoDoDia extends StatefulWidget {
     required this.semana,
     required this.dia,
     required this.language,
+    this.onLanguageChanged,
     this.audioService,
   });
 
@@ -147,8 +152,10 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
     final eDeHoxe = cuento.mesNumero == widget.mes &&
         cuento.semanaSugerida == widget.semana;
     Navigator.of(context).push(
-      MaterialPageRoute(
+      RutaLua(
+        de: context,
         builder: (_) => CuentoViewerScreen(
+          onLanguageChanged: widget.onLanguageChanged,
           cuento: cuento,
           language: widget.language,
           audioService: widget.audioService,
@@ -166,8 +173,10 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
 
   void _abrirDinamicas() {
     Navigator.of(context).push(
-      MaterialPageRoute(
+      RutaLua(
+        de: context,
         builder: (_) => DinamicasScreen(
+          onLanguageChanged: widget.onLanguageChanged,
           repository: widget.repository,
           initialLanguage: widget.language,
         ),
@@ -196,7 +205,7 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
     return Container(
       padding: const EdgeInsets.all(AppTheme.spaceMd),
       decoration: BoxDecoration(
-        color: AppTheme.primaryTint,
+        color: context.acentoTint,
         borderRadius: BorderRadius.circular(AppTheme.radiusCard),
         border: Border.all(color: AppTheme.borderActive),
       ),
@@ -205,12 +214,12 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
         children: [
           Text(
             isGl ? 'O DÍA DE HOXE, ENTEIRO' : 'EL DÍA DE HOY, ENTERO',
-            style: const TextStyle(
+            style: TextStyle(
               fontFamily: AppTheme.fontFamily,
               fontSize: 11,
               fontWeight: FontWeight.w800,
               letterSpacing: 0.8,
-              color: AppTheme.primaryInk,
+              color: context.acento,
             ),
           ),
           const SizedBox(height: AppTheme.spaceSm),
@@ -298,17 +307,15 @@ class _FilaDoCirculo extends StatelessWidget {
                   height: 44,
                   child: lamina.isEmpty
                       ? Container(
-                          color: AppTheme.primaryLight,
-                          child: Icon(icona,
-                              size: 22, color: AppTheme.primaryDark),
+                          color: context.acentoTint,
+                          child: Icon(icona, size: 22, color: context.acento),
                         )
                       : LaminaEscena(
                           clave: lamina,
                           ancho: 56,
                           mentres: Container(
-                            color: AppTheme.primaryLight,
-                            child: Icon(icona,
-                                size: 22, color: AppTheme.primaryDark),
+                            color: context.acentoTint,
+                            child: Icon(icona, size: 22, color: context.acento),
                           ),
                         ),
                 ),
@@ -321,11 +328,11 @@ class _FilaDoCirculo extends StatelessWidget {
                   children: [
                     Text(
                       rotulo,
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 11,
                         fontWeight: FontWeight.w700,
-                        color: AppTheme.primaryDark,
+                        color: context.acento,
                       ),
                     ),
                     Text(

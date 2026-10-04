@@ -10,8 +10,9 @@ void main() {
       expect(theme.useMaterial3, isTrue);
 
       // Los tokens del tema del proyecto anterior. Si alguien vuelve al azul Vigo por
-      // error, esto lo dice.
-      expect(theme.colorScheme.primary, equals(const Color(0xFF00C4BE)));
+      // error, esto lo dice. El turquesa de marca sigue siendo el de la casa;
+      // lo que cambió en el lote L2 es que ya no es el color de los botones.
+      expect(AppTheme.primary, equals(const Color(0xFF00C4BE)));
       expect(theme.scaffoldBackgroundColor, equals(const Color(0xFFF6FAFA)));
       expect(theme.colorScheme.surface, equals(const Color(0xFFF6FAFA)));
     });
@@ -30,10 +31,52 @@ void main() {
 
     test('white is never put on the brand turquoise', () {
       // Blanco sobre #00C4BE da 2,18:1, por debajo incluso del umbral de texto
-      // grande. La barra usa `primaryInk` y el botón primario, tinta oscura.
-      expect(AppTheme.lightTheme.colorScheme.onPrimary, equals(AppTheme.dark));
-      expect(AppTheme.lightTheme.appBarTheme.backgroundColor,
-          equals(AppTheme.primaryInk));
+      // grande. Ningún portal usa el turquesa de marca como color primario:
+      // cada uno tiene su acento, y el blanco encima pasa AA.
+      for (final tema in [AppTheme.temaFamilias, AppTheme.temaDocentes]) {
+        expect(tema.colorScheme.primary, isNot(AppTheme.primary));
+      }
+    });
+
+    double contraste(Color a, Color b) {
+      final la = a.computeLuminance(), lb = b.computeLuminance();
+      final alto = la > lb ? la : lb, bajo = la > lb ? lb : la;
+      return (alto + 0.05) / (bajo + 0.05);
+    }
+
+    test('cada portal tiene su acento, y pasa AA (lote L2)', () {
+      final portales = {
+        AppTheme.familias: AppTheme.temaFamilias,
+        AppTheme.docentes: AppTheme.temaDocentes,
+      };
+      for (final MapEntry(key: acento, value: tema) in portales.entries) {
+        // La cabecera y el botón principal, del acento.
+        expect(tema.appBarTheme.backgroundColor, acento);
+        expect(tema.colorScheme.primary, acento);
+        // Blanco sobre el acento: la cabecera, el botón, el chip elegido.
+        expect(contraste(Colors.white, acento), greaterThanOrEqualTo(4.5));
+        // El acento como letra: sobre blanco, sobre el fondo de la página y
+        // sobre su fondo claro.
+        for (final fondo in [
+          AppTheme.card,
+          AppTheme.pageBg,
+          tema.colorScheme.primaryContainer,
+        ]) {
+          expect(contraste(acento, fondo), greaterThanOrEqualTo(4.5),
+              reason: '$acento sobre $fondo');
+        }
+      }
+      // El naranja de familias y el turquesa oscuro de docentes.
+      expect(AppTheme.familias, const Color(0xFFB4530F));
+      expect(AppTheme.docentes, AppTheme.primaryInk);
+    });
+
+    test('el texto atenuado se lee (lote L2)', () {
+      // Era #9AA6A5: 2,51:1 sobre blanco.
+      expect(contraste(AppTheme.textMuted, AppTheme.card),
+          greaterThanOrEqualTo(4.5));
+      expect(contraste(AppTheme.textMuted, AppTheme.pageBg),
+          greaterThanOrEqualTo(4.5));
     });
 
     test(

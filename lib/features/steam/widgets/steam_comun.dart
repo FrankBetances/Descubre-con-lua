@@ -42,19 +42,23 @@ class SteamTextos {
 class SteamPastilla extends StatelessWidget {
   final IconData icono;
   final String texto;
-  final Color tinta;
-  final Color fondo;
+
+  /// Sin color, el acento del portal y su fondo claro.
+  final Color? tinta;
+  final Color? fondo;
 
   const SteamPastilla({
     super.key,
     required this.icono,
     required this.texto,
-    this.tinta = AppTheme.primaryInk,
-    this.fondo = AppTheme.primaryLight,
+    this.tinta,
+    this.fondo,
   });
 
   @override
   Widget build(BuildContext context) {
+    final tinta = this.tinta ?? context.acento;
+    final fondo = this.fondo ?? context.acentoTint;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(

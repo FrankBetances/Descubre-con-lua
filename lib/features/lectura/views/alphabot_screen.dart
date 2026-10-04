@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/pasos_navegacion.dart';
 
 /// Alphabot: Mesa de Lectura con Letras Manipulativas.
 ///
@@ -11,11 +12,15 @@ import '../../../core/widgets/boton_atras.dart';
 /// en una mesa física, guiando la fonética articulada y la conciencia fonológica.
 class AlphabotScreen extends StatefulWidget {
   final AppLanguage language;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   const AlphabotScreen({
     super.key,
     this.language = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
   });
 
@@ -24,6 +29,21 @@ class AlphabotScreen extends StatefulWidget {
 }
 
 class _AlphabotScreenState extends State<AlphabotScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
+  late AppLanguage _language = widget.language;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant AlphabotScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.language != widget.language) _language = widget.language;
+  }
+
   int _currentWordIndex = 0;
   final Set<String> _placedLetters = {};
 
@@ -64,27 +84,17 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.language;
+    final lang = _language;
     final item = _manipulativeWords[_currentWordIndex];
     final letters = item['letters'] as List<String>;
     final isComplete = _placedLetters.length >= letters.length;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          lang == AppLanguage.gl
-              ? 'Alphabot · Mesa Manipulativa'
-              : 'Alphabot · Mesa Manipulativa',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: 'Alphabot',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: SafeArea(
         child: Padding(
@@ -102,7 +112,7 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                 ),
                 child: Row(
                   children: [
-                    const Icon(Icons.shield_outlined,
+                    const Icon(Icons.shield_rounded,
                         color: AppTheme.warning, size: 22),
                     const SizedBox(width: 10),
                     Expanded(
@@ -126,10 +136,6 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
               // Physical Table Simulation
               Expanded(
                 child: Card(
-                  elevation: 1,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
                   child: Padding(
                     padding: const EdgeInsets.all(24),
                     child: Column(
@@ -167,20 +173,19 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                                 margin:
                                     const EdgeInsets.symmetric(horizontal: 6),
                                 decoration: BoxDecoration(
-                                  color: placed
-                                      ? AppTheme.primary
-                                      : AppTheme.pageBg,
+                                  color:
+                                      placed ? context.acento : AppTheme.pageBg,
                                   borderRadius: BorderRadius.circular(14),
                                   border: Border.all(
                                     color: placed
-                                        ? AppTheme.primaryDark
+                                        ? context.acento
                                         : AppTheme.border,
                                     width: 2,
                                   ),
                                   boxShadow: placed
                                       ? [
                                           BoxShadow(
-                                            color: AppTheme.primary
+                                            color: context.acento
                                                 .withValues(alpha: 0.3),
                                             blurRadius: 6,
                                             offset: const Offset(0, 2),
@@ -238,15 +243,15 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                const Icon(Icons.check_circle,
+                                const Icon(Icons.check_circle_rounded,
                                     color: AppTheme.success, size: 20),
                                 const SizedBox(width: 8),
                                 Text(
                                   lang == AppLanguage.gl
                                       ? 'Mesa montada con éxito!'
                                       : '¡Mesa montada con éxito!',
-                                  style: const TextStyle(
-                                    color: AppTheme.primaryInk,
+                                  style: TextStyle(
+                                    color: context.acento,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -262,43 +267,39 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
 
               const SizedBox(height: 20),
 
-              // Navigation
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ElevatedButton(
-                    onPressed: _currentWordIndex > 0
-                        ? () {
-                            setState(() {
-                              _currentWordIndex--;
-                              _placedLetters.clear();
-                            });
-                          }
-                        : null,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.pageBg,
-                      foregroundColor: AppTheme.textPrimary,
-                    ),
-                    child:
-                        Text(lang == AppLanguage.gl ? 'Anterior' : 'Anterior'),
-                  ),
-                  ElevatedButton(
-                    onPressed: _currentWordIndex < _manipulativeWords.length - 1
-                        ? () {
-                            setState(() {
-                              _currentWordIndex++;
-                              _placedLetters.clear();
-                            });
-                          }
-                        : null,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.primary,
-                      foregroundColor: Colors.white,
-                    ),
-                    child:
-                        Text(lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente'),
-                  ),
-                ],
+              // A frecha volve á palabra anterior; o botón principal pasa á
+              // seguinte e, na última, pecha a mesa.
+              PasosNavegacion(
+                chaveAnterior: const ValueKey('alphabot_anterior'),
+                chaveSeguinte: const ValueKey('alphabot_seguinte'),
+                anterior: _currentWordIndex > 0
+                    ? () {
+                        setState(() {
+                          _currentWordIndex--;
+                          _placedLetters.clear();
+                        });
+                      }
+                    : null,
+                etiquetaAnterior: lang == AppLanguage.gl
+                    ? 'Palabra anterior'
+                    : 'Palabra anterior',
+                etiquetaSeguinte:
+                    _currentWordIndex < _manipulativeWords.length - 1
+                        ? (lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente')
+                        : (lang == AppLanguage.gl ? 'Rematar' : 'Terminar'),
+                iconaSeguinte: _currentWordIndex < _manipulativeWords.length - 1
+                    ? Icons.arrow_forward_rounded
+                    : Icons.check_rounded,
+                seguinte: () {
+                  if (_currentWordIndex < _manipulativeWords.length - 1) {
+                    setState(() {
+                      _currentWordIndex++;
+                      _placedLetters.clear();
+                    });
+                  } else {
+                    Navigator.of(context).maybePop();
+                  }
+                },
               ),
             ],
           ),

@@ -7,12 +7,11 @@ import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/widgets/cabecera.dart';
 import '../../../data/models/formacion_model.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../academy/views/bloques_list_screen.dart';
-import '../academy/widgets/selector_idioma_widget.dart';
 import '../calendario/views/calendario_fogar_screen.dart';
 import '../cuentos/views/cuentos_list_screen.dart';
 import '../formacion/views/formacion_screen.dart';
@@ -21,9 +20,9 @@ import '../lectura/views/aprender_a_ler_screen.dart';
 import '../premios/premios_repository.dart';
 import '../premios/premios_screen.dart';
 import '../steam/views/steam_hub_screen.dart';
-import '../steam/widgets/steam_comun.dart';
 import 'views/xogos_fogar_screen.dart';
 import 'widgets/tarxeta_ingles_de_hoxe_fogar.dart';
+import '../../core/navigation/ruta_lua.dart';
 
 /// Pantalla independente do Portal Familias.
 ///
@@ -62,9 +61,10 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   String _selectedCategory = 'todas';
   String _selectedAge = 'todas';
 
+  // Cabe entero en la cabecera a 360 px; « · Fogar» lo cortaba.
   static const _appBarTitle = LocalizedString(
-    gl: 'Portal Familias · Fogar',
-    es: 'Portal Familias · Hogar',
+    gl: 'Portal Familias',
+    es: 'Portal Familias',
   );
 
   static const _subtitulo = LocalizedString(
@@ -162,22 +162,10 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          _appBarTitle.resolve(_language),
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12.0),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _handleLanguageChanged,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: _appBarTitle.resolve(_language),
+        language: _language,
+        onLanguageChanged: _handleLanguageChanged,
       ),
       body: SafeArea(
         child: ListView(
@@ -212,7 +200,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 10, vertical: 4),
                             decoration: BoxDecoration(
-                              color: const Color(0xFFDD6B20),
+                              color: AppTheme.familias,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: Text(
@@ -258,15 +246,17 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     key: const ValueKey('formacion_familia_portal'),
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(
+                        RutaLua(
+                          de: context,
                           builder: (_) => FormacionScreen(
                             perfil: PerfilFormacion.familia,
                             language: _language,
+                            onLanguageChanged: _handleLanguageChanged,
                           ),
                         ),
                       );
                     },
-                    icon: const Icon(Icons.school_outlined,
+                    icon: const Icon(Icons.school_rounded,
                         size: 18, color: Color(0xFF9C4221)),
                     label: Text(
                       isGl
@@ -295,9 +285,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
                 side: BorderSide(
-                  color: feitoHoxe
-                      ? const Color(0xFF38A169)
-                      : AppTheme.primaryVigoBlue,
+                  color: feitoHoxe ? AppTheme.success : context.acento,
                   width: 1.5,
                 ),
               ),
@@ -306,7 +294,8 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 borderRadius: BorderRadius.circular(16),
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: (_) => CalendarioFogarScreen(
                         repository: widget.repository,
                         store: store,
@@ -326,14 +315,14 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                         radius: 24,
                         backgroundColor: feitoHoxe
                             ? const Color(0xFFC6F6D5)
-                            : AppTheme.primaryTint,
+                            : context.acentoTint,
                         child: Icon(
                           feitoHoxe
                               ? Icons.check_circle_rounded
                               : Icons.calendar_today_rounded,
                           color: feitoHoxe
                               ? const Color(0xFF22543D)
-                              : AppTheme.primaryVigoBlue,
+                              : context.acento,
                           size: 26,
                         ),
                       ),
@@ -355,7 +344,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                                 fontWeight: FontWeight.bold,
                                 color: feitoHoxe
                                     ? const Color(0xFF22543D)
-                                    : AppTheme.primaryInk,
+                                    : context.acento,
                               ),
                             ),
                             const SizedBox(height: 3),
@@ -396,8 +385,10 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 audioService: widget.audioService,
                 onVerXogos: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: (_) => XogosFogarScreen(
+                        onLanguageChanged: _handleLanguageChanged,
                         initialLanguage: _language,
                         audioService: widget.audioService,
                       ),
@@ -441,12 +432,6 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                           setState(() => _selectedCategory = cat['id']!);
                         }
                       },
-                      selectedColor: AppTheme.primaryVigoBlue,
-                      labelStyle: TextStyle(
-                        color: isSel ? Colors.white : AppTheme.textPrimary,
-                        fontWeight: isSel ? FontWeight.bold : FontWeight.w500,
-                        fontSize: 12,
-                      ),
                     ),
                   );
                 }).toList(),
@@ -468,12 +453,6 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                       onSelected: (selected) {
                         if (selected) setState(() => _selectedAge = age['id']!);
                       },
-                      selectedColor: const Color(0xFFDD6B20),
-                      labelStyle: TextStyle(
-                        color: isSel ? Colors.white : AppTheme.textPrimary,
-                        fontWeight: isSel ? FontWeight.bold : FontWeight.w500,
-                        fontSize: 11.5,
-                      ),
                     ),
                   );
                 }).toList(),
@@ -492,15 +471,14 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ? 'De 0 a 6 anos, curso a curso: os 5 cursos, cada un de Setembro a Xuño, por semanas e días con actividades concretas de 3 min, momentos cotiáns e conexión coa escola.'
                     : 'De 0 a 6 años, curso a curso: los 5 cursos, cada uno de Septiembre a Junio, por semanas y días con actividades concretas de 3 min, momentos cotidianos y conexión con la escuela.',
                 icon: Icons.calendar_month_rounded,
-                iconColor: const Color(0xFFDD6B20),
-                iconBg: const Color(0xFFFFF9EE),
                 badge: isGl
                     ? 'De 0 a 6 anos · 5 cursos'
                     : 'De 0 a 6 años · 5 cursos',
                 buttonText: isGl ? 'Abrir Calendario' : 'Abrir Calendario',
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: (_) => CalendarioFogarScreen(
                         repository: widget.repository,
                         store: store,
@@ -528,14 +506,13 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 description: isGl
                     ? 'Cinco xogos de ciencia con cousas da casa, un para cada idade de 12 meses a 6 anos: brando e duro, ramplas, son, sombras e un robot que es ti. Con ordes en inglés para responder co corpo.'
                     : 'Cinco juegos de ciencia con cosas de casa, uno para cada edad de 12 meses a 6 años: blando y duro, rampas, sonido, sombras y un robot que eres tú. Con órdenes en inglés para responder con el cuerpo.',
-                icon: Icons.science_outlined,
-                iconColor: steamTinta,
-                iconBg: steamFondo,
+                icon: Icons.science_rounded,
                 badge: isGl ? 'Ciencia e inglés' : 'Ciencia e inglés',
                 buttonText: isGl ? 'Abrir STEAM' : 'Abrir STEAM',
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: (_) => SteamHubScreen(
                         repository: widget.repository,
                         audioService: widget.audioService,
@@ -562,14 +539,14 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ? 'Contos ilustrados con desenvolvemento narrativo por curso e mes, preguntas graduadas en 3 niveis de comprensión e reto físico TPR oral en inglés.'
                     : 'Cuentos ilustrados con desarrollo narrativo por curso y mes, preguntas graduadas en 3 niveles de comprensión y reto físico TPR oral en inglés.',
                 icon: Icons.auto_stories_rounded,
-                iconColor: AppTheme.primaryVigoBlue,
-                iconBg: AppTheme.primaryTint,
                 badge: isGl ? 'Lectura Dialóxica' : 'Lectura Dialógica',
-                buttonText: isGl ? 'Explorar Contos' : 'Explorar Cuentos',
+                buttonText: isGl ? 'Abrir Contos' : 'Abrir Cuentos',
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: (_) => CuentosListScreen(
+                        onLanguageChanged: _handleLanguageChanged,
                         repository: widget.repository,
                         initialLanguage: _language,
                         audioService: widget.audioService,
@@ -592,14 +569,15 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ? 'Conciencia fonolóxica, mesa Alphabot expandida con letras reais de madeira/imáns, cubos CVC combinatorios (Phonicubes) e discriminación de pares mínimos.'
                     : 'Conciencia fonológica, mesa Alphabot expandida con letras reales de madera/imanes, cubos CVC combinatorios (Phonicubes) y discriminación de pares mínimos.',
                 icon: Icons.spellcheck_rounded,
-                iconColor: const Color(0xFFD69E2E),
-                iconBg: const Color(0xFFFEFCBF),
                 badge: isGl ? 'Alfabetización Táctil' : 'Alfabetización Táctil',
-                buttonText: isGl ? 'Entrar en Lectura' : 'Entrar en Lectura',
+                buttonText:
+                    isGl ? 'Abrir Aprender a Ler' : 'Abrir Aprender a Leer',
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: (_) => AprenderALerScreen(
+                        onLanguageChanged: _handleLanguageChanged,
                         repository: widget.repository,
                         initialLanguage: _language,
                         audioService: widget.audioService,
@@ -622,14 +600,14 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ? '200+ láminas ilustradas por categorías (animais, ría de Vigo, emocións, alimentos), con preguntas de diálogo, retos de sinalamento táctil e pronunciación.'
                     : '200+ láminas ilustradas por categorías (animales, ría de Vigo, emociones, alimentos), con preguntas de diálogo, retos de señalamiento táctil y pronunciación.',
                 icon: Icons.photo_library_rounded,
-                iconColor: const Color(0xFF38A169),
-                iconBg: const Color(0xFFC6F6D5),
                 badge: isGl ? '200+ Tarxetas' : '200+ Tarjetas',
-                buttonText: isGl ? 'Ver Láminas' : 'Ver Láminas',
+                buttonText: isGl ? 'Abrir Láminas' : 'Abrir Láminas',
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: (_) => LaminasGalleryScreen(
+                        onLanguageChanged: _handleLanguageChanged,
                         repository: widget.repository,
                         initialLanguage: _language,
                         audioService: widget.audioService,
@@ -652,14 +630,14 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ? 'Repertorio de xogos de movemento físico sen pantallas: Caza do tesouro dos sons, O barquiño de Samil, O xigante e a formiga, e masaxe a 72 bpm.'
                     : 'Repertorio de juegos de movimiento físico sin pantallas: Caza del tesoro de los sonidos, El barquito de Samil, El gigante y la hormiguita, y masaje a 72 bpm.',
                 icon: Icons.sports_gymnastics_rounded,
-                iconColor: const Color(0xFF805AD5),
-                iconBg: const Color(0xFFE9D8FD),
                 badge: isGl ? 'Xogos Físicos' : 'Juegos Físicos',
-                buttonText: isGl ? 'Ver Dinámicas' : 'Ver Dinámicas',
+                buttonText: isGl ? 'Abrir Xogos' : 'Abrir Juegos',
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: (_) => XogosFogarScreen(
+                        onLanguageChanged: _handleLanguageChanged,
                         initialLanguage: _language,
                         audioService: widget.audioService,
                       ),
@@ -681,13 +659,12 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                     ? '5 bloques de desenvolvemento da comunicación para a persoa adulta: quendas de conversa, baño de linguaxe, bilingüismo aditivo e xogo motor sen pantallas.'
                     : '5 bloques de desarrollo de la comunicación para la persona adulta: turnos de conversación, baño de lenguaje, bilingüismo aditivo y juego motor sin pantallas.',
                 icon: Icons.family_restroom_rounded,
-                iconColor: const Color(0xFF319795),
-                iconBg: const Color(0xFFB2F5EA),
                 badge: isGl ? 'Formación Familiar' : 'Formación Familiar',
-                buttonText: isGl ? 'Entrar en Academy' : 'Entrar en Academy',
+                buttonText: isGl ? 'Abrir Academy' : 'Abrir Academy',
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: (_) => BloquesListScreen(
                         repository: widget.repository,
                         premios: widget.premios,
@@ -708,15 +685,17 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
               const SizedBox(height: 14.0),
               OutlinedButton.icon(
                 onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => PremiosScreen(
+                      onLanguageChanged: _handleLanguageChanged,
                       repository: widget.premios!,
                       currentLanguage: _language,
                       contadores: widget.calendario?.contadores,
                     ),
                   ),
                 ),
-                icon: const Icon(Icons.military_tech_outlined),
+                icon: const Icon(Icons.military_tech_rounded),
                 label: Text(PremiosScreen.titulo.resolve(_language)),
                 style: OutlinedButton.styleFrom(
                   minimumSize: const Size(double.infinity, AppTheme.touchMin),
@@ -747,21 +726,15 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     required String title,
     required String description,
     required IconData icon,
-    required Color iconColor,
-    required Color iconBg,
     required String badge,
     required String buttonText,
     required VoidCallback onTap,
   }) {
+    // La tarjeta del tema: plana, borde de 1 px y radio 16.
     return Card(
-      elevation: 0.5,
       clipBehavior: Clip.antiAlias,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-        side: const BorderSide(color: AppTheme.border),
-      ),
       child: InkWell(
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(AppTheme.radiusCard),
         onTap: onTap,
         child: Padding(
           padding: const EdgeInsets.all(16),
@@ -772,8 +745,8 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 children: [
                   CircleAvatar(
                     radius: 20,
-                    backgroundColor: iconBg,
-                    child: Icon(icon, color: iconColor, size: 22),
+                    backgroundColor: context.acentoTint,
+                    child: Icon(icon, color: context.acento, size: 22),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -785,7 +758,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                           style: TextStyle(
                             fontSize: 10,
                             fontWeight: FontWeight.w800,
-                            color: iconColor,
+                            color: context.acento,
                             letterSpacing: 0.6,
                           ),
                         ),
@@ -795,7 +768,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: AppTheme.primaryInk,
+                            color: AppTheme.textPrimary,
                           ),
                         ),
                       ],
@@ -813,32 +786,17 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
                 ),
               ),
               const SizedBox(height: 14),
+              // Secundario, con borde: el portal no tiene un único botón
+              // principal entre siete módulos iguales. Antes eran siete
+              // botones rellenos de siete colores, y cinco no pasaban AA.
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(
+                child: OutlinedButton(
                   onPressed: onTap,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: iconColor,
-                    foregroundColor: Colors.white,
-                    elevation: 0,
-                    minimumSize: const Size(double.infinity, 44),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
-                      vertical: 10,
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      buttonText,
-                      style: const TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                  child: Text(
+                    buttonText,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ),

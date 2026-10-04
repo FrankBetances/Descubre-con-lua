@@ -6,19 +6,25 @@ import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/lamina_model.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/con_lingua.dart';
+import '../nome_categoria.dart';
 
 /// Visor interactivo individual de cada lámina didáctica.
 class LaminaDetailScreen extends StatelessWidget {
   final Lamina lamina;
   final AppLanguage language;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   const LaminaDetailScreen({
     super.key,
     required this.lamina,
     this.language = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
   });
 
@@ -49,7 +55,19 @@ class LaminaDetailScreen extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) => ConLingua(
+        inicial: language,
+        aoCambiar: onLanguageChanged,
+        builder: _construir,
+      );
+
+  /// A pantalla, na lingua que ten agora: [language] tapa o campo co mesmo
+  /// nome, que é só a lingua coa que se abriu.
+  Widget _construir(
+    BuildContext context,
+    AppLanguage language,
+    ValueChanged<AppLanguage> cambiarLingua,
+  ) {
     final lang = language;
     final isGl = lang == AppLanguage.gl;
 
@@ -61,7 +79,7 @@ class LaminaDetailScreen extends StatelessWidget {
       } catch (_) {}
     }
 
-    Color mainColor = AppTheme.primaryDark;
+    Color mainColor = context.acento;
     if (lamina.corHex != null && lamina.corHex!.startsWith('#')) {
       try {
         final hex = lamina.corHex!.replaceFirst('#', '');
@@ -71,18 +89,11 @@ class LaminaDetailScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          '${isGl ? "Lámina" : "Lámina"} #${lamina.numero} · ${lamina.categoria.toUpperCase()}',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: 'Lámina ${lamina.numero}',
+        subtitulo: nomeCategoria(lamina.categoria, language),
+        language: language,
+        onLanguageChanged: cambiarLingua,
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -91,8 +102,11 @@ class LaminaDetailScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               // Visual Card
+              // Mide lo que pide su contenido: con 240 px fijos, la lámina, la
+              // palabra y la fila del inglés desbordaban 14 px a 360 de ancho.
               Container(
-                height: 240,
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
                 decoration: BoxDecoration(
                   color: cardBg,
                   borderRadius: BorderRadius.circular(20),
@@ -108,7 +122,7 @@ class LaminaDetailScreen extends StatelessWidget {
                 ),
                 child: Center(
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       ClipRRect(
                         borderRadius: BorderRadius.circular(16),
@@ -116,7 +130,7 @@ class LaminaDetailScreen extends StatelessWidget {
                           clave: lamina.lamina,
                           ancho: 150,
                           mentres: Icon(
-                            Icons.image,
+                            Icons.image_rounded,
                             size: 64,
                             color: mainColor,
                           ),
@@ -138,10 +152,10 @@ class LaminaDetailScreen extends StatelessWidget {
                           Flexible(
                             child: Text(
                               'English: ${lamina.en}',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w600,
-                                color: AppTheme.primaryInk,
+                                color: context.acento,
                               ),
                             ),
                           ),
@@ -150,6 +164,7 @@ class LaminaDetailScreen extends StatelessWidget {
                             audioService: audioService,
                             texto: lamina.en,
                             language: AppLanguage.en,
+                            interfaz: lang,
                             style: estiloIngles(lamina.en),
                             compacto: true,
                           ),
@@ -167,14 +182,14 @@ class LaminaDetailScreen extends StatelessWidget {
                 children: [
                   _buildBadge(
                     'CEFR: ${lamina.cefr}',
-                    AppTheme.primaryLight,
-                    AppTheme.primaryInk,
+                    context.acentoTint,
+                    context.acento,
                   ),
                   const SizedBox(width: 8),
                   _buildBadge(
                     lamina.categoria,
-                    AppTheme.primaryLight,
-                    AppTheme.primaryInk,
+                    context.acentoTint,
+                    context.acento,
                   ),
                   const SizedBox(width: 8),
                   _buildBadge(
@@ -202,19 +217,20 @@ class LaminaDetailScreen extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          const Icon(Icons.touch_app_rounded,
-                              color: Color(0xFFDD6B20), size: 20),
+                          Icon(Icons.touch_app_rounded,
+                              color: context.acento, size: 20),
                           const SizedBox(width: 8),
-                          Text(
+                          Expanded(
+                              child: Text(
                             isGl
                                 ? 'Xogo Manipulativo Táctil (Fogar / Aula)'
                                 : 'Juego Manipulativo Táctil (Hogar / Aula)',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 13,
-                              color: Color(0xFFDD6B20),
+                              color: context.acento,
                             ),
-                          ),
+                          )),
                         ],
                       ),
                       const SizedBox(height: 8),
@@ -248,19 +264,20 @@ class LaminaDetailScreen extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            const Icon(Icons.help_outline,
-                                color: AppTheme.primaryDark, size: 20),
+                            Icon(Icons.help_rounded,
+                                color: context.acento, size: 20),
                             const SizedBox(width: 8),
-                            Text(
+                            Expanded(
+                                child: Text(
                               isGl
                                   ? 'Pregunta de estimulación dialóxica'
                                   : 'Pregunta de estimulación dialógica',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13,
-                                color: AppTheme.primaryInk,
+                                color: context.acento,
                               ),
-                            ),
+                            )),
                           ],
                         ),
                         const SizedBox(height: 8),
@@ -294,10 +311,11 @@ class LaminaDetailScreen extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            const Icon(Icons.track_changes,
+                            const Icon(Icons.track_changes_rounded,
                                 color: AppTheme.warning, size: 20),
                             const SizedBox(width: 8),
-                            Text(
+                            Expanded(
+                                child: Text(
                               isGl
                                   ? 'Que se busca con esta lámina'
                                   : 'Qué se busca con esta lámina',
@@ -306,7 +324,7 @@ class LaminaDetailScreen extends StatelessWidget {
                                 fontSize: 13,
                                 color: AppTheme.warning,
                               ),
-                            ),
+                            )),
                           ],
                         ),
                         const SizedBox(height: 8),
@@ -328,30 +346,31 @@ class LaminaDetailScreen extends StatelessWidget {
               // Reto TPR en inglés
               if (lamina.tprAccion != null)
                 Card(
-                  color: AppTheme.primaryLight,
+                  color: context.acentoTint,
                   elevation: 0,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
-                    side: const BorderSide(color: AppTheme.primaryLight),
+                    side: BorderSide(color: context.acentoTint),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Row(
+                        Row(
                           children: [
-                            Icon(Icons.directions_run,
-                                color: AppTheme.primaryDark, size: 20),
-                            SizedBox(width: 8),
-                            Text(
+                            Icon(Icons.directions_run_rounded,
+                                color: context.acento, size: 20),
+                            const SizedBox(width: 8),
+                            Expanded(
+                                child: Text(
                               'Acción TPR en Inglés (L3)',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13,
-                                color: AppTheme.primaryDark,
+                                color: context.acento,
                               ),
-                            ),
+                            )),
                           ],
                         ),
                         const SizedBox(height: 8),
@@ -371,6 +390,7 @@ class LaminaDetailScreen extends StatelessWidget {
                               audioService: audioService,
                               texto: lamina.tprAccion!.en,
                               language: AppLanguage.en,
+                              interfaz: lang,
                               style: estiloIngles(lamina.tprAccion!.en),
                               compacto: true,
                             ),
@@ -379,9 +399,9 @@ class LaminaDetailScreen extends StatelessWidget {
                         const SizedBox(height: 4),
                         Text(
                           isGl ? lamina.tprAccion!.gl : lamina.tprAccion!.es,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 13,
-                            color: AppTheme.primaryInk,
+                            color: context.acento,
                           ),
                         ),
                       ],

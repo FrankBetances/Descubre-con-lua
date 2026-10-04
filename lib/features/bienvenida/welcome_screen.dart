@@ -116,7 +116,7 @@ class WelcomeScreen extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.all(AppTheme.spaceLg),
                             decoration: BoxDecoration(
-                              color: AppTheme.primaryLight,
+                              color: context.acentoTint,
                               borderRadius: BorderRadius.circular(32),
                             ),
                             child: const LuaPixel(
@@ -140,7 +140,7 @@ class WelcomeScreen extends StatelessWidget {
                             style: Theme.of(context)
                                 .textTheme
                                 .titleMedium
-                                ?.copyWith(color: AppTheme.primaryInk),
+                                ?.copyWith(color: AppTheme.dark),
                           ),
                           const SizedBox(height: AppTheme.spaceXl),
                           Text(
@@ -158,7 +158,7 @@ class WelcomeScreen extends StatelessWidget {
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyMedium
-                                ?.copyWith(color: AppTheme.primaryInk),
+                                ?.copyWith(color: AppTheme.dark),
                           ),
                           const SizedBox(height: AppTheme.spaceXl),
                         ],
@@ -168,9 +168,12 @@ class WelcomeScreen extends StatelessWidget {
                         children: [
                           ElevatedButton(
                             onPressed: onStart,
+                            // Sobre la página turquesa de marca, todo en tinta
+                            // oscura: el turquesa oscuro encima se quedaba en
+                            // 2,37:1.
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,
-                              foregroundColor: AppTheme.primaryInk,
+                              foregroundColor: AppTheme.dark,
                             ),
                             child: Text(_start.resolve(currentLanguage)),
                           ),
@@ -178,7 +181,7 @@ class WelcomeScreen extends StatelessWidget {
                           TextButton(
                             onPressed: onShowCredits,
                             style: TextButton.styleFrom(
-                              foregroundColor: AppTheme.primaryInk,
+                              foregroundColor: AppTheme.dark,
                             ),
                             child: Text(_credits.resolve(currentLanguage)),
                           ),
@@ -187,9 +190,9 @@ class WelcomeScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Icon(
-                                Icons.lock_outline,
+                                Icons.lock_rounded,
                                 size: 16,
-                                color: AppTheme.primaryInk,
+                                color: AppTheme.dark,
                               ),
                               const SizedBox(width: AppTheme.spaceXs),
                               Flexible(
@@ -198,7 +201,7 @@ class WelcomeScreen extends StatelessWidget {
                                   style: Theme.of(context)
                                       .textTheme
                                       .bodySmall
-                                      ?.copyWith(color: AppTheme.primaryInk),
+                                      ?.copyWith(color: AppTheme.dark),
                                 ),
                               ),
                             ],
@@ -278,12 +281,12 @@ class _LanguageSelector extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Icon(
                 Icons.language_rounded,
                 size: 20.0,
-                color: AppTheme.primaryInk,
+                color: context.acento,
               ),
             ),
             Container(
@@ -351,7 +354,7 @@ class _LanguageSelector extends StatelessWidget {
               ),
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: isSelected ? AppTheme.primaryInk : Colors.transparent,
+                color: isSelected ? context.acento : Colors.transparent,
                 borderRadius: BorderRadius.circular(10.0),
               ),
               child: Text(

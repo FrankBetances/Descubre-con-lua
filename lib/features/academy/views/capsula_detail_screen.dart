@@ -11,8 +11,8 @@ import '../../../data/models/capsula_model.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../widgets/academy_header.dart';
-import '../widgets/selector_idioma_widget.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/pasos_navegacion.dart';
 
 /// El lector de una cápsula, portado del proyecto anterior de la casa
 /// (`docs/screenshots/29-academy-lector.png` y `30-academy-quiz.png`).
@@ -53,6 +53,13 @@ class CapsulaDetailScreen extends StatefulWidget {
 
 class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
   late AppLanguage _language;
+
+  /// Las cápsulas del aula son la formación de la docente; las demás, las
+  /// lecturas de Academy para la familia.
+  String get _tituloCabecera =>
+      Bloque.aula.any((b) => b.id == widget.capsula.bloqueId)
+          ? 'Formación'
+          : 'Academy';
   final Map<String, bool?> _userAnswers = {};
   final PageController _pages = PageController();
   int _pagina = 0;
@@ -90,7 +97,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
     final esDeAula = _esDeAula;
     return [
       _Seccion(
-        icono: Icons.lightbulb_outline,
+        icono: Icons.lightbulb_rounded,
         kicker: const LocalizedString(gl: 'A IDEA', es: 'LA IDEA'),
         titulo: const LocalizedString(
           gl: 'A idea clave',
@@ -99,7 +106,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
         cuerpo: c.ideaClave,
       ),
       _Seccion(
-        icono: Icons.psychology_outlined,
+        icono: Icons.psychology_rounded,
         kicker: const LocalizedString(gl: 'POR QUE', es: 'POR QUÉ'),
         titulo: const LocalizedString(
           gl: 'Por que importa',
@@ -113,7 +120,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
       // una del aula; el resto de la estructura es idéntico, y por eso no hay
       // dos modelos ni dos pantallas.
       _Seccion(
-        icono: esDeAula ? Icons.groups_outlined : Icons.home_outlined,
+        icono: esDeAula ? Icons.groups_rounded : Icons.home_rounded,
         kicker: esDeAula
             ? const LocalizedString(gl: 'NA ASEMBLEA', es: 'EN LA ASAMBLEA')
             : const LocalizedString(gl: 'NA CASA', es: 'EN CASA'),
@@ -129,7 +136,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
         cuerpo: c.queHacerEnCasa,
       ),
       _Seccion(
-        icono: Icons.wb_sunny_outlined,
+        icono: Icons.wb_sunny_rounded,
         kicker: const LocalizedString(gl: 'UN EXEMPLO', es: 'UN EJEMPLO'),
         titulo: esDeAula
             ? const LocalizedString(
@@ -240,18 +247,10 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
     final esUltima = _pagina >= _totalPaginas - 1;
 
     return Scaffold(
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: AppTheme.spaceMd),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: _tituloCabecera,
+        language: _language,
+        onLanguageChanged: _onToggleLanguage,
       ),
       body: Column(
         children: [
@@ -343,29 +342,26 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                             ?.copyWith(color: AppTheme.textMuted),
                       ),
                     ),
-                  Row(
-                    children: [
-                      if (_pagina > 0) ...[
-                        OutlinedButton(
-                          onPressed: () => _pages.previousPage(
-                            duration: const Duration(milliseconds: 240),
-                            curve: Curves.easeOut,
-                          ),
-                          child: Text(_atras.resolve(lang)),
-                        ),
-                        const SizedBox(width: AppTheme.spaceMd),
-                      ],
-                      Expanded(
-                        child: ElevatedButton(
-                          onPressed: _puedeAvanzar ? _avanzar : null,
-                          child: Text(
-                            esUltima
-                                ? _terminar.resolve(lang)
-                                : _siguiente.resolve(lang),
-                          ),
-                        ),
-                      ),
-                    ],
+                  // Volver es la flecha, apagada en la primera página;
+                  // avanzar, el botón principal. El mismo par que en la
+                  // formación, el cuento y la asamblea.
+                  PasosNavegacion(
+                    chaveAnterior: const ValueKey('capsula_anterior'),
+                    chaveSeguinte: const ValueKey('capsula_seguinte'),
+                    anterior: _pagina > 0
+                        ? () => _pages.previousPage(
+                              duration: const Duration(milliseconds: 240),
+                              curve: Curves.easeOut,
+                            )
+                        : null,
+                    etiquetaAnterior: _atras.resolve(lang),
+                    etiquetaSeguinte: esUltima
+                        ? _terminar.resolve(lang)
+                        : _siguiente.resolve(lang),
+                    iconaSeguinte: esUltima
+                        ? Icons.check_rounded
+                        : Icons.arrow_forward_rounded,
+                    seguinte: _puedeAvanzar ? _avanzar : null,
                   ),
                 ],
               ),
@@ -427,13 +423,13 @@ class _PaginaSeccion extends StatelessWidget {
                   Container(
                     width: 56,
                     height: 56,
-                    decoration: const BoxDecoration(
-                      color: AppTheme.primaryLight,
+                    decoration: BoxDecoration(
+                      color: context.acentoTint,
                       shape: BoxShape.circle,
                     ),
                     child: Icon(
                       seccion.icono,
-                      color: AppTheme.primaryInk,
+                      color: context.acento,
                       size: 28,
                     ),
                   ),
@@ -506,7 +502,7 @@ class _PaginaLua extends StatelessWidget {
               decoration: BoxDecoration(
                 // Fondo y borde distintos de las cuatro tarjetas blancas: esto
                 // no es una quinta sección, es quien te lo cuenta.
-                color: AppTheme.primaryTint,
+                color: context.acentoTint,
                 borderRadius: BorderRadius.circular(AppTheme.radiusCard),
                 border: Border.all(color: AppTheme.borderActive),
               ),
@@ -632,8 +628,7 @@ class _PaginaReflexion extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(AppTheme.spaceLg),
                     decoration: BoxDecoration(
-                      color:
-                          acertada ? AppTheme.successBg : AppTheme.primaryTint,
+                      color: acertada ? AppTheme.successBg : context.acentoTint,
                       borderRadius: BorderRadius.circular(AppTheme.radiusCard),
                       border: Border.all(
                         color:
@@ -645,10 +640,9 @@ class _PaginaReflexion extends StatelessWidget {
                       children: [
                         Icon(
                           acertada
-                              ? Icons.check_circle_outline
-                              : Icons.info_outline,
-                          color:
-                              acertada ? AppTheme.success : AppTheme.primaryInk,
+                              ? Icons.check_circle_outline_rounded
+                              : Icons.info_rounded,
+                          color: acertada ? AppTheme.success : context.acento,
                           size: 22,
                         ),
                         const SizedBox(width: AppTheme.spaceMd),
@@ -700,7 +694,7 @@ class _Opcion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: elegida ? AppTheme.primaryLight : AppTheme.card,
+      color: elegida ? context.acentoTint : AppTheme.card,
       borderRadius: BorderRadius.circular(AppTheme.radiusCard),
       child: InkWell(
         onTap: onTap,
@@ -715,7 +709,7 @@ class _Opcion extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppTheme.radiusCard),
             border: Border.all(
-              color: elegida ? AppTheme.primary : AppTheme.border,
+              color: elegida ? context.acento : AppTheme.border,
               width: elegida ? 2 : 1,
             ),
           ),

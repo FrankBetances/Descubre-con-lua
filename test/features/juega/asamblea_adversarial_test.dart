@@ -157,8 +157,8 @@ void main() {
       );
 
       expect(find.text('Fase 1 de 6'), findsOneWidget);
-      final prevBtn = tester.widget<OutlinedButton>(
-          find.widgetWithText(OutlinedButton, 'Anterior'));
+      final prevBtn = tester
+          .widget<OutlinedButton>(find.byKey(const Key('boton_fase_anterior')));
       expect(prevBtn.onPressed, isNull,
           reason: 'Previous button MUST be disabled on Phase 1');
     });
@@ -177,7 +177,7 @@ void main() {
       );
 
       final nextFinder = find.widgetWithText(ElevatedButton, 'Seguinte');
-      final prevFinder = find.widgetWithText(OutlinedButton, 'Anterior');
+      final prevFinder = find.byKey(const Key('boton_fase_anterior'));
 
       // Forward to Phase 4
       for (int i = 0; i < 3; i++) {
@@ -206,13 +206,18 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Fase 6 de 6'), findsOneWidget);
 
-      // Boundary at Step 6: Next is replaced with Finalizar
+      // Boundary at Step 6: Next is replaced with Rematar
       expect(find.widgetWithText(ElevatedButton, 'Seguinte'), findsNothing);
-      expect(find.widgetWithText(ElevatedButton, 'Finalizar'), findsOneWidget);
+      expect(find.widgetWithText(ElevatedButton, 'Rematar'), findsOneWidget);
+      // Lote L2: un solo botón principal. La fase 6 traía además su propio
+      // «Completar Asemblea», igual y con la misma acción.
+      expect(find.text('Completar Asemblea'), findsNothing);
+      expect(find.byWidgetPredicate((w) => w is ElevatedButton && w.enabled),
+          findsOneWidget);
     });
 
     testWidgets(
-        'Phase 6 Finalizar para o audio, ensina a nota para as casas e sae',
+        'Phase 6 Rematar para o audio, ensina a nota para as casas e sae',
         (tester) async {
       bool popped = false;
 
@@ -243,7 +248,7 @@ void main() {
       }
 
       expect(find.text('Fase 6 de 6'), findsOneWidget);
-      final finishFinder = find.widgetWithText(ElevatedButton, 'Finalizar');
+      final finishFinder = find.widgetWithText(ElevatedButton, 'Rematar');
       expect(finishFinder, findsOneWidget);
 
       await tester.tap(finishFinder);
@@ -299,7 +304,7 @@ void main() {
       expect(mockAudioService.callLog, contains('pause'));
 
       // Returning to Phase 1 does NOT auto-resume audio
-      final prevFinder = find.widgetWithText(OutlinedButton, 'Anterior');
+      final prevFinder = find.byKey(const Key('boton_fase_anterior'));
       await tester.tap(prevFinder);
       await tester.pumpAndSettle();
 

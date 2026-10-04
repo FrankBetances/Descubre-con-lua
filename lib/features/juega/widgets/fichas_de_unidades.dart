@@ -44,8 +44,7 @@ class FichasDeUnidades extends StatelessWidget {
           ),
           child: Row(
             children: [
-              const Icon(Icons.auto_stories_outlined,
-                  size: 18, color: AppTheme.primaryInk),
+              Icon(Icons.auto_stories_rounded, size: 18, color: context.acento),
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
@@ -148,7 +147,7 @@ class _Ficha extends StatelessWidget {
                 Container(
                   height: 96,
                   width: double.infinity,
-                  color: AppTheme.primaryTint,
+                  color: context.acentoTint,
                   alignment: Alignment.center,
                   child: LaminaEscena(
                     clave: _clave,
@@ -192,18 +191,18 @@ class _Ficha extends StatelessWidget {
                             vertical: 3,
                           ),
                           decoration: BoxDecoration(
-                            color: AppTheme.primaryLight,
+                            color: context.acentoTint,
                             borderRadius: BorderRadius.circular(999),
                           ),
                           child: Text(
                             language == AppLanguage.gl
                                 ? 'Tramo ${unidad.tramoEtario} anos'
                                 : 'Tramo ${unidad.tramoEtario} años',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontFamily: AppTheme.fontFamily,
                               fontSize: 11,
                               fontWeight: FontWeight.w700,
-                              color: AppTheme.primaryInk,
+                              color: context.acento,
                             ),
                           ),
                         ),

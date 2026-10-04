@@ -124,13 +124,13 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      expect(find.text('Micro-Rutina · Setembro'), findsOneWidget);
+      expect(find.text('Micro-rutina'), findsOneWidget);
 
       // El selector son dos pastillas, GL y ES: se pulsa ES directamente.
       await tester.tap(find.text('ES'));
       await tester.pumpAndSettle();
 
-      expect(find.text('Micro-Rutina · Septiembre'), findsOneWidget);
+      expect(find.text('Micro-rutina'), findsOneWidget);
       expect(find.text('La Escena Cotidiana: «The Magic Coat Hook»'),
           findsOneWidget);
     });

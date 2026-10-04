@@ -7,7 +7,6 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
-import '../../juega/widgets/barra_ingles_widget.dart';
 
 /// Las palabras inglesas de UN día del curso: las nuevas y las que se repasan.
 ///
@@ -93,11 +92,11 @@ class PalabrasDoDia extends StatelessWidget {
         Text(
           resumo(plan, language),
           key: const Key('palabras_do_dia_resumo'),
-          style: const TextStyle(
+          style: TextStyle(
             fontFamily: AppTheme.fontFamily,
             fontSize: 13.5,
             fontWeight: FontWeight.w800,
-            color: AppTheme.primaryInk,
+            color: context.acento,
             height: 1.3,
           ),
         ),
@@ -136,7 +135,10 @@ class PalabrasDoDia extends StatelessWidget {
               runSpacing: 6,
               children: [
                 for (final p in plan.newWords)
-                  _Pastilla(palabra: p, audioService: audioService),
+                  _Pastilla(
+                      palabra: p,
+                      audioService: audioService,
+                      language: language),
               ],
             ),
         ],
@@ -176,21 +178,21 @@ class BloqueInglesDoDia extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(AppTheme.spaceMd),
       decoration: BoxDecoration(
-        color: BarraInglesFase.acento.withAlpha(10),
+        color: context.acentoTint,
         borderRadius: BorderRadius.circular(AppTheme.radiusField),
-        border: Border.all(color: BarraInglesFase.acento.withAlpha(60)),
+        border: Border.all(color: context.acento.withAlpha(60)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
             rotulo,
-            style: const TextStyle(
+            style: TextStyle(
               fontFamily: AppTheme.fontFamily,
               fontSize: 11,
               fontWeight: FontWeight.w800,
               letterSpacing: 0.8,
-              color: BarraInglesFase.acento,
+              color: context.acento,
             ),
           ),
           const SizedBox(height: 6),
@@ -243,13 +245,7 @@ class SelectorDeCursoTpr extends StatelessWidget {
             onSelected: (sel) {
               if (sel && c.id != seleccionado) onCambiar(c.id);
             },
-            selectedColor: AppTheme.primaryVigoBlue,
-            backgroundColor: Colors.white,
             showCheckmark: false,
-            labelStyle: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: c.id == seleccionado ? Colors.white : AppTheme.primaryInk,
-            ),
             materialTapTargetSize: MaterialTapTargetSize.padded,
           ),
       ],
@@ -260,8 +256,13 @@ class SelectorDeCursoTpr extends StatelessWidget {
 class _Pastilla extends StatelessWidget {
   final TprWord palabra;
   final OfflineAudioService? audioService;
+  final AppLanguage language;
 
-  const _Pastilla({required this.palabra, required this.audioService});
+  const _Pastilla({
+    required this.palabra,
+    required this.audioService,
+    required this.language,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -269,11 +270,12 @@ class _Pastilla extends StatelessWidget {
       audioService: audioService,
       texto: palabra.en,
       language: AppLanguage.en,
+      interfaz: language,
       // La misma regla que el corpus de voz: si aquí se pidiera otro estilo,
       // el botón buscaría una grabación que no existe y no se pintaría.
       style: estiloIngles(palabra.en),
       comoChip: true,
-      colorChip: BarraInglesFase.acento,
+      colorChip: context.acento,
       descripcion: palabra.en,
     );
   }
@@ -308,7 +310,10 @@ class PalabraConXesto extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           if (marca == null)
-            _Pastilla(palabra: palabra, audioService: audioService)
+            _Pastilla(
+                palabra: palabra,
+                audioService: audioService,
+                language: language)
           else
             // Wrap y no fila: con letra grande la marca baja de línea en vez
             // de empujar la pastilla fuera de la pantalla.
@@ -317,12 +322,15 @@ class PalabraConXesto extends StatelessWidget {
               runSpacing: 4,
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
-                _Pastilla(palabra: palabra, audioService: audioService),
+                _Pastilla(
+                    palabra: palabra,
+                    audioService: audioService,
+                    language: language),
                 Container(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
                   decoration: BoxDecoration(
-                    color: BarraInglesFase.acento,
+                    color: context.acento,
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: Text(
@@ -393,9 +401,9 @@ class _Repaso extends StatelessWidget {
               TextSpan(children: [
                 TextSpan(
                   text: '${WeeklyTprScheduler.bloques[i]} · ',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.w800,
-                    color: AppTheme.primaryInk,
+                    color: context.acento,
                   ),
                 ),
                 TextSpan(

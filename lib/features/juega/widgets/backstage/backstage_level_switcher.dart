@@ -51,9 +51,7 @@ class BackstageLevelSwitcher extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
                     decoration: BoxDecoration(
-                      color: isSelected
-                          ? AppTheme.backstageAccent
-                          : Colors.transparent,
+                      color: isSelected ? context.acento : Colors.transparent,
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
                     child: Column(

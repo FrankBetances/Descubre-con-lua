@@ -5,12 +5,10 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/formacion_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../academy/widgets/selector_idioma_widget.dart';
 import '../calendario/views/calendario_screen.dart';
 import '../calendario/widgets/asemblea_do_dia.dart';
 import '../english/views/english_hub_screen.dart';
@@ -25,6 +23,8 @@ import '../steam/views/steam_hub_screen.dart';
 import '../steam/widgets/steam_comun.dart';
 import '../steam/widgets/steam_no_calendario.dart';
 import 'widgets/hoxe_na_aula.dart';
+import '../../core/navigation/ruta_lua.dart';
+import '../../core/widgets/cabecera.dart';
 
 /// Pantalla independente do Portal Docentes.
 ///
@@ -60,9 +60,10 @@ class PortalDocentesScreen extends StatefulWidget {
 class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
   late AppLanguage _language;
 
+  // Cabe entero en la cabecera a 360 px; « · Escola» lo cortaba.
   static const _appBarTitle = LocalizedString(
-    gl: 'Portal Docentes · Escola',
-    es: 'Portal Docentes · Escuela',
+    gl: 'Portal Docentes',
+    es: 'Portal Docentes',
   );
 
   static const _subtitulo = LocalizedString(
@@ -102,7 +103,7 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     widget.onLanguageChanged?.call(newLang);
   }
 
-  /// «Iniciar asemblea de hoxe»: la asamblea de ESE día para el grupo del
+  /// «Comezar a asemblea»: la asamblea de ESE día para el grupo del
   /// curso elegido en la tarjeta, por el mismo camino que el calendario.
   void _iniciarAsembleaDeHoxe(
       BuildContext context, DiaDoCursoTpr hoxe, String cursoId) {
@@ -155,22 +156,10 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          _appBarTitle.resolve(_language),
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12.0),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _handleLanguageChanged,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: _appBarTitle.resolve(_language),
+        language: _language,
+        onLanguageChanged: _handleLanguageChanged,
       ),
       body: SafeArea(
         child: ListView(
@@ -205,7 +194,7 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 10, vertical: 4),
                             decoration: BoxDecoration(
-                              color: AppTheme.primaryVigoBlue,
+                              color: context.acento,
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: Text(
@@ -223,9 +212,9 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                         ),
                       ),
                       const SizedBox(width: 8),
-                      const Icon(
+                      Icon(
                         Icons.school_rounded,
-                        color: AppTheme.primaryVigoBlue,
+                        color: context.acento,
                         size: 28,
                       ),
                     ],
@@ -235,10 +224,10 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                     isGl
                         ? 'Escolas infantís de Vigo'
                         : 'Escuelas infantiles de Vigo',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: AppTheme.primaryInk,
+                      color: context.acento,
                     ),
                   ),
                   const SizedBox(height: 6),
@@ -256,24 +245,26 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                     key: const ValueKey('formacion_docente_portal'),
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(
+                        RutaLua(
+                          de: context,
                           builder: (_) => FormacionScreen(
+                            onLanguageChanged: _handleLanguageChanged,
                             perfil: PerfilFormacion.docente,
                             language: _language,
                           ),
                         ),
                       );
                     },
-                    icon: const Icon(Icons.school_outlined,
-                        size: 18, color: AppTheme.primaryInk),
+                    icon: Icon(Icons.school_rounded,
+                        size: 18, color: context.acento),
                     label: Text(
                       isGl
                           ? 'Antes de entrar na aula · Guía de 2 min'
                           : 'Antes de entrar en el aula · Guía de 2 min',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
-                        color: AppTheme.primaryInk,
+                        color: context.acento,
                       ),
                     ),
                     style: TextButton.styleFrom(
@@ -343,13 +334,12 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                   ? 'Asambleas guiadas para 1.º Ciclo (0-2 e 2-3 anos) e 2.º Ciclo (4, 5 e 6 de Infantil), canción a pulso visual a 72 bpm, exploración sensorial e matemáticas temperás.'
                   : 'Asambleas guiadas para 1.º Ciclo (0-2 y 2-3 años) y 2.º Ciclo (4, 5 y 6 de Infantil), canción a pulso visual a 72 bpm, exploración sensorial y matemáticas tempranas.',
               icon: Icons.groups_rounded,
-              iconColor: AppTheme.primaryVigoBlue,
-              iconBg: AppTheme.primaryTint,
               badge: isGl ? '1.º e 2.º Ciclo' : '1.º y 2.º Ciclo',
               buttonText: isGl ? 'Entrar en Modo Aula' : 'Entrar en Modo Aula',
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => UnidadesListScreen(
                       repository: widget.repository,
                       premios: widget.premios,
@@ -374,14 +364,14 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                   ? 'Catálogo de dinámicas activas con roles, espazos, materiais e protocolo de avaliación cualitativa sen pantallas.'
                   : 'Catálogo de dinámicas activas con roles, espacios, materiales y protocolo de evaluación cualitativa sin pantallas.',
               icon: Icons.hub_rounded,
-              iconColor: const Color(0xFF38A169),
-              iconBg: const Color(0xFFC6F6D5),
               badge: isGl ? 'Aula Activa' : 'Aula Activa',
               buttonText: isGl ? 'Explorar Dinámicas' : 'Explorar Dinámicas',
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => DinamicasScreen(
+                      onLanguageChanged: _handleLanguageChanged,
                       repository: widget.repository,
                       initialLanguage: _language,
                     ),
@@ -398,14 +388,13 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
               description: isGl
                   ? 'Cinco sesións de ciencia con materiais reais, unha por curso: brando e duro, ramplas, son, sombras e un robot que programan as criaturas. Sen pantallas para elas.'
                   : 'Cinco sesiones de ciencia con materiales reales, una por curso: blando y duro, rampas, sonido, sombras y un robot que programan las criaturas. Sin pantallas para ellas.',
-              icon: Icons.science_outlined,
-              iconColor: steamTinta,
-              iconBg: steamFondo,
+              icon: Icons.science_rounded,
               badge: isGl ? '12 meses a 6 anos' : '12 meses a 6 años',
               buttonText: isGl ? 'Abrir STEAM' : 'Abrir STEAM',
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => SteamHubScreen(
                       repository: widget.repository,
                       audioService: widget.audioService,
@@ -449,15 +438,14 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                   ? 'O traxecto de 0 a 6 anos, curso a curso: cada curso cos seus meses por trimestres (Outono, Inverno e Primavera), asembleas na aula e notas de conexión para as familias.'
                   : 'El trayecto de 0 a 6 años, curso a curso: cada curso con sus meses por trimestres (Otoño, Invierno y Primavera), asambleas en el aula y notas de conexión para las familias.',
               icon: Icons.calendar_month_rounded,
-              iconColor: const Color(0xFF319795),
-              iconBg: const Color(0xFFE6FFFA),
               badge: isGl
                   ? 'De 0 a 6 anos · 5 cursos'
                   : 'De 0 a 6 años · 5 cursos',
               buttonText: isGl ? 'Ver Calendario' : 'Ver Calendario',
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => CalendarioScreen(
                       store: widget.calendario ?? CalendarioStore(),
                       initialLanguage: _language,
@@ -481,13 +469,12 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                   ? 'Programación curricular completa dos 5 cursos de Educación Infantil (0 a 6 anos) con obxectivos e actividades baixo o Decreto 150/2022.'
                   : 'Programación curricular completa de los 5 cursos de Educación Infantil (0 a 6 años) con objetivos y actividades bajo el Decreto 150/2022.',
               icon: Icons.calendar_view_month_rounded,
-              iconColor: const Color(0xFF2B6CB0),
-              iconBg: const Color(0xFFEBF8FF),
               badge: isGl ? '0-6 anos' : '0-6 años',
               buttonText: isGl ? 'Abrir Planificador' : 'Abrir Planificador',
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => PlanificadorScreen(
                       repository: widget.repository,
                       initialLanguage: _language,
@@ -527,16 +514,16 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                   ? 'As 4.000 palabras do traxecto, cinco novas ao día: consulta por curso e día, repaso espazado que se garda, escoita das frases do mes, colocacións e os 44 fonemas.'
                   : 'Las 4.000 palabras del trayecto, cinco nuevas al día: consulta por curso y día, repaso espaciado que se guarda, escucha de las frases del mes, colocaciones y los 44 fonemas.',
               icon: Icons.language_rounded,
-              iconColor: const Color(0xFF805AD5),
-              iconBg: const Color(0xFFFAF5FF),
               badge: isGl
                   ? '5 ao día · 4.000 palabras'
                   : '5 al día · 4.000 palabras',
               buttonText: isGl ? 'Entrar en Inglés L3' : 'Entrar en Inglés L3',
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => EnglishHubScreen(
+                      onLanguageChanged: _handleLanguageChanged,
                       repository: widget.repository,
                       initialLanguage: _language,
                       audioService: widget.audioService,
@@ -559,14 +546,14 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                   ? '5 estratexias clave de aula: andamiaxe, modelado, tempo de espera de 5 segundos, expansión léxica e recast con diálogos reais.'
                   : '5 estrategias clave de aula: andamiaje, modelado, tiempo de espera de 5 segundos, expansión léxica y recast con diálogos reales.',
               icon: Icons.psychology_rounded,
-              iconColor: const Color(0xFFD69E2E),
-              iconBg: const Color(0xFFFEFCBF),
               badge: isGl ? 'Metodoloxía' : 'Metodología',
               buttonText: isGl ? 'Ver Estratexias' : 'Ver Estrategias',
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => EstrategiasScreen(
+                      onLanguageChanged: _handleLanguageChanged,
                       repository: widget.repository,
                       initialLanguage: _language,
                     ),
@@ -588,14 +575,14 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                   ? '3.995 palabras das máis frecuentes do inglés (bandas 1k-4k), con definición, frase e son.'
                   : '3.995 palabras de las más frecuentes del inglés (bandas 1k-4k), con definición, frase y sonido.',
               icon: Icons.format_list_numbered_rounded,
-              iconColor: const Color(0xFF4A5568),
-              iconBg: const Color(0xFFEDF2F7),
               badge: isGl ? 'Inglés' : 'Inglés',
               buttonText: isGl ? 'Abrir o vocabulario' : 'Abrir el vocabulario',
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(
+                  RutaLua(
+                    de: context,
                     builder: (_) => VocabularioInglesScreen(
+                      onLanguageChanged: _handleLanguageChanged,
                       repository: widget.repository,
                       initialLanguage: _language,
                       audioService: widget.audioService,
@@ -619,9 +606,9 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
                 padding: const EdgeInsets.all(12.0),
                 child: Row(
                   children: [
-                    const Icon(
-                      Icons.shield_outlined,
-                      color: AppTheme.primaryVigoBlue,
+                    Icon(
+                      Icons.shield_rounded,
+                      color: context.acento,
                       size: 24,
                     ),
                     const SizedBox(width: 12),
@@ -646,28 +633,23 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     );
   }
 
+  /// La misma tarjeta de módulo que en el Portal Familias, con el acento de
+  /// este portal. Cada módulo traía su color —verde, mostaza, morado, azul—
+  /// y tres de esas etiquetas no pasaban AA; y el botón era relleno, así que
+  /// al bajar había dos principales a la vista.
   Widget _buildDocenteModuleCard({
     required BuildContext context,
     required String title,
     required String description,
     required IconData icon,
-    required Color iconColor,
-    required Color iconBg,
     required String badge,
     required String buttonText,
     required VoidCallback onTap,
   }) {
-    final theme = Theme.of(context);
-
     return Card(
-      elevation: 0.5,
       clipBehavior: Clip.antiAlias,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-        side: const BorderSide(color: AppTheme.border),
-      ),
       child: InkWell(
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(AppTheme.radiusCard),
         onTap: onTap,
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -677,38 +659,31 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
               Row(
                 children: [
                   CircleAvatar(
-                    backgroundColor: iconBg,
                     radius: 20,
-                    child: Icon(icon, color: iconColor, size: 22),
+                    backgroundColor: context.acentoTint,
+                    child: Icon(icon, color: context.acento, size: 22),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 7, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: iconBg,
-                            borderRadius: BorderRadius.circular(6),
-                          ),
-                          child: Text(
-                            badge,
-                            style: TextStyle(
-                              color: iconColor,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 10,
-                            ),
+                        Text(
+                          badge.toUpperCase(),
+                          style: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w800,
+                            color: context.acento,
+                            letterSpacing: 0.6,
                           ),
                         ),
-                        const SizedBox(height: 3),
+                        const SizedBox(height: 2),
                         Text(
                           title,
-                          style: theme.textTheme.titleMedium?.copyWith(
-                            color: AppTheme.textPrimary,
+                          style: const TextStyle(
+                            fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            fontSize: 15,
+                            color: AppTheme.textPrimary,
                           ),
                         ),
                       ],
@@ -719,33 +694,21 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
               const SizedBox(height: 10),
               Text(
                 description,
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: const Color(0xFF4A5568),
+                style: const TextStyle(
                   fontSize: 13,
+                  color: AppTheme.textSecondary,
                   height: 1.4,
                 ),
               ),
               const SizedBox(height: 14),
-              Align(
-                alignment: Alignment.centerRight,
-                child: ElevatedButton(
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton(
                   onPressed: onTap,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.primaryVigoBlue,
-                    foregroundColor: Colors.white,
-                    minimumSize: const Size(0, 38),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  ),
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      buttonText,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
-                    ),
+                  child: Text(
+                    buttonText,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ),

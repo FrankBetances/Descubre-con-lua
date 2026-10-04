@@ -30,7 +30,13 @@ class BotonEscuchar extends StatefulWidget {
   /// El texto tal y como se ve en la tarjeta.
   final String texto;
 
+  /// La lengua de la GRABACIÓN: `en` para el inglés.
   final AppLanguage language;
+
+  /// La lengua de la PANTALLA, para «Escoitar» y lo que lee TalkBack. Hace
+  /// falta cuando [language] es `en`: sin ella el rótulo salía «Escuchar»,
+  /// en castellano, dentro de la app en gallego.
+  final AppLanguage? interfaz;
 
   /// `slow` solo para palabras sueltas, que existen para ser imitadas.
   final VoiceStyle style;
@@ -55,6 +61,7 @@ class BotonEscuchar extends StatefulWidget {
     required this.audioService,
     required this.texto,
     required this.language,
+    this.interfaz,
     this.style = VoiceStyle.tutor,
     this.compacto = false,
     this.comoChip = false,
@@ -157,21 +164,25 @@ class _BotonEscucharState extends State<BotonEscuchar> {
   /// palabra entera por no tener todavía su grabación dejaba el apartado
   /// «Léxico e comandos TPR en inglés» con el rótulo puesto y nada debajo.
   Widget _chipMudo(BuildContext context) {
-    final color = widget.colorChip ?? AppTheme.primaryInk;
+    final color = widget.colorChip ?? context.acento;
     return Container(
       constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       decoration: BoxDecoration(
-        color: color.withAlpha(12),
+        // Opaco: sobre una tarjeta ya teñida, un fondo translúcido se oscurecía
+        // y el texto dejaba de pasar AA.
+        color: Color.alphaBlend(color.withAlpha(12), Colors.white),
         borderRadius: BorderRadius.circular(AppTheme.radiusField),
         border: Border.all(color: color.withAlpha(50)),
       ),
+      // Sin grabación, en gris de texto: se lee entero (7,56:1) y no parece
+      // que se pueda pulsar.
       child: Text(
         widget.texto,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.w700,
-          color: color.withAlpha(170),
+          color: AppTheme.textSecondary,
         ),
       ),
     );
@@ -186,16 +197,20 @@ class _BotonEscucharState extends State<BotonEscuchar> {
     }
 
     final etiqueta = (_sonando ? BotonEscuchar._parar : BotonEscuchar._escuchar)
-        .resolve(widget.language);
+        .resolve(widget.interfaz ?? widget.language);
     final icono = _sonando ? Icons.stop_rounded : Icons.volume_up_rounded;
 
     if (widget.comoChip) {
-      final color = widget.colorChip ?? AppTheme.primaryInk;
+      final color = widget.colorChip ?? context.acento;
       return Semantics(
         button: true,
         label: '$etiqueta: ${widget.descripcion ?? widget.texto}',
         child: Material(
-          color: _sonando ? color : color.withAlpha(20),
+          // Opaco por lo mismo que la pastilla muda: el acento encima da
+          // 4,75:1 en docentes y 4,62:1 en familias, esté donde esté.
+          color: _sonando
+              ? color
+              : Color.alphaBlend(color.withAlpha(20), Colors.white),
           borderRadius: BorderRadius.circular(AppTheme.radiusField),
           child: InkWell(
             onTap: _pulsar,
@@ -239,7 +254,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
             ? etiqueta
             : '$etiqueta: ${widget.descripcion}',
         child: Material(
-          color: _sonando ? AppTheme.primaryInk : AppTheme.primaryLight,
+          color: _sonando ? context.acento : context.acentoTint,
           shape: const CircleBorder(),
           child: InkWell(
             onTap: _pulsar,
@@ -252,7 +267,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
               child: Icon(
                 icono,
                 size: 22,
-                color: _sonando ? Colors.white : AppTheme.primaryInk,
+                color: _sonando ? Colors.white : context.acento,
               ),
             ),
           ),
@@ -270,8 +285,8 @@ class _BotonEscucharState extends State<BotonEscuchar> {
         icon: Icon(icono, size: 20),
         label: Text(etiqueta),
         style: TextButton.styleFrom(
-          foregroundColor: AppTheme.primaryInk,
-          backgroundColor: AppTheme.primaryLight,
+          foregroundColor: context.acento,
+          backgroundColor: context.acentoTint,
           minimumSize: const Size(0, AppTheme.touchMin),
           padding: const EdgeInsets.symmetric(horizontal: AppTheme.spaceLg),
           shape: RoundedRectangleBorder(

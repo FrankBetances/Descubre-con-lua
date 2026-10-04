@@ -2,21 +2,26 @@ import 'package:flutter/material.dart';
 
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import 'dinamicas_screen.dart';
 import 'estrategias_screen.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Planificador curricular docente dos cinco cursos de Educación Infantil (0-6 anos).
 class PlanificadorScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
 
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
+
   const PlanificadorScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
   });
 
   @override
@@ -24,6 +29,11 @@ class PlanificadorScreen extends StatefulWidget {
 }
 
 class _PlanificadorScreenState extends State<PlanificadorScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
   late AppLanguage _language;
   List<MesCurricular50> _meses = [];
   bool _isLoading = true;
@@ -81,59 +91,17 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          lang == AppLanguage.gl
-              ? 'Planificador curricular'
-              : 'Planificador curricular',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.psychology, color: AppTheme.primaryDark),
-            tooltip: 'Estratexias',
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => EstrategiasScreen(
-                    repository: widget.repository,
-                    initialLanguage: _language,
-                  ),
-                ),
-              );
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.alarm, color: AppTheme.primaryDark),
-            tooltip: 'Dinámicas',
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => DinamicasScreen(
-                    repository: widget.repository,
-                    initialLanguage: _language,
-                  ),
-                ),
-              );
-            },
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: 'Planificador',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: Column(
         children: [
           // Course Selector Bar
           Container(
             color: Colors.white,
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -149,17 +117,58 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                           setState(() => _selectedCurso = c['id']!);
                         }
                       },
-                      selectedColor: AppTheme.primary,
-                      labelStyle: TextStyle(
-                        color: isSelected ? Colors.white : AppTheme.textPrimary,
-                        fontWeight:
-                            isSelected ? FontWeight.bold : FontWeight.normal,
-                        fontSize: 12,
-                      ),
                     ),
                   );
                 }).toList(),
               ),
+            ),
+          ),
+          // Estratexias e Dinámicas: eran dous iconos sen texto na cabeceira
+          // e deixaban ao título 88 px. Aquí van co seu nome.
+          Container(
+            color: Colors.white,
+            padding: const EdgeInsets.fromLTRB(8, 0, 8, 4),
+            child: Row(
+              children: [
+                TextButton.icon(
+                  key: const ValueKey('planificador_estratexias'),
+                  icon: const Icon(Icons.psychology_rounded, size: 20),
+                  label: Text(
+                      lang == AppLanguage.gl ? 'Estratexias' : 'Estrategias'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      RutaLua(
+                        de: context,
+                        builder: (_) => EstrategiasScreen(
+                          repository: widget.repository,
+                          initialLanguage: _language,
+                          onLanguageChanged: _cambiarLingua,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                TextButton.icon(
+                  key: const ValueKey('planificador_dinamicas'),
+                  icon: const Icon(Icons.alarm_rounded, size: 20),
+                  label:
+                      Text(lang == AppLanguage.gl ? 'Dinámicas' : 'Dinámicas'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      RutaLua(
+                        de: context,
+                        builder: (_) => DinamicasScreen(
+                          repository: widget.repository,
+                          initialLanguage: _language,
+                          onLanguageChanged: _cambiarLingua,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ],
             ),
           ),
 
@@ -191,15 +200,15 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 10, vertical: 4),
                                     decoration: BoxDecoration(
-                                      color: AppTheme.primaryLight,
+                                      color: context.acentoTint,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Text(
                                       'MES ${mes.mesNumero} · ${mes.nombreMes.resolve(lang).toUpperCase()}',
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 12,
-                                        color: AppTheme.primaryDark,
+                                        color: context.acento,
                                       ),
                                     ),
                                   ),
@@ -233,18 +242,18 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
 
                               // Aula
                               _buildPill(
-                                icon: Icons.school,
+                                icon: Icons.school_rounded,
                                 title: lang == AppLanguage.gl
                                     ? 'Actividade de Aula'
                                     : 'Actividad de Aula',
                                 content: mes.actividadAula.resolve(lang),
-                                color: AppTheme.primaryInk,
+                                color: context.acento,
                               ),
                               const SizedBox(height: 8),
 
                               // Fogar
                               _buildPill(
-                                icon: Icons.home,
+                                icon: Icons.home_rounded,
                                 title: lang == AppLanguage.gl
                                     ? 'Rutina no Fogar'
                                     : 'Rutina en el Hogar',
@@ -257,19 +266,19 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                               Container(
                                 padding: const EdgeInsets.all(10),
                                 decoration: BoxDecoration(
-                                  color: AppTheme.primaryLight,
+                                  color: context.acentoTint,
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Row(
                                   children: [
-                                    const Icon(Icons.language,
-                                        color: AppTheme.primaryDark, size: 18),
+                                    Icon(Icons.language_rounded,
+                                        color: context.acento, size: 18),
                                     const SizedBox(width: 8),
                                     Expanded(
                                       child: Text(
                                         'L3: "${mes.ingles.frase}" (TPR: ${mes.ingles.tpr.join(", ")})',
-                                        style: const TextStyle(
-                                          color: AppTheme.primaryInk,
+                                        style: TextStyle(
+                                          color: context.acento,
                                           fontSize: 12,
                                           fontWeight: FontWeight.w600,
                                         ),
@@ -302,8 +311,8 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
         Icon(icon, size: 16, color: color),
         const SizedBox(width: 8),
         Expanded(
-          child: RichText(
-            text: TextSpan(
+          child: Text.rich(
+            TextSpan(
               style: const TextStyle(
                   fontSize: 13, color: AppTheme.textPrimary, height: 1.3),
               children: [

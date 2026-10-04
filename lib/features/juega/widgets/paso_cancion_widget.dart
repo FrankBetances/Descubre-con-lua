@@ -145,7 +145,7 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                 cancion.titulo.resolve(widget.language),
                 style: theme.textTheme.headlineSmall?.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: AppTheme.primaryVigoBlue,
+                  color: context.acento,
                   fontSize: 22.0,
                 ),
               ),
@@ -154,13 +154,14 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
               padding:
                   const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
               decoration: BoxDecoration(
-                color: AppTheme.primaryVigoBlue,
+                color: context.acento,
                 borderRadius: BorderRadius.circular(20.0),
               ),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Icon(Icons.speed, color: Colors.white, size: 18),
+                  const Icon(Icons.speed_rounded,
+                      color: Colors.white, size: 18),
                   const SizedBox(width: 6),
                   Text(
                     '${cancion.bpm} BPM',
@@ -268,7 +269,7 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Icon(Icons.info_outline,
+                      const Icon(Icons.info_rounded,
                           size: 20, color: Color(0xFF8A6D3B)),
                       const SizedBox(width: 8),
                       Expanded(
@@ -301,7 +302,7 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                           : Icons.play_arrow_rounded),
                       iconSize: 36,
                       style: IconButton.styleFrom(
-                        backgroundColor: AppTheme.primaryVigoBlue,
+                        backgroundColor: context.acento,
                         foregroundColor: Colors.white,
                         padding: const EdgeInsets.all(16.0),
                       ),
@@ -349,8 +350,8 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.record_voice_over_outlined,
-                    color: AppTheme.primaryVigoBlue, size: 24),
+                Icon(Icons.record_voice_over_rounded,
+                    color: context.acento, size: 24),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
@@ -360,9 +361,9 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                         isGl
                             ? 'Consigna para a docente:'
                             : 'Consigna para la docente:',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: AppTheme.primaryVigoBlue,
+                          color: context.acento,
                           fontSize: 16.0,
                         ),
                       ),
@@ -403,7 +404,7 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
               : 'Letra con pulsos rítmicos (*):',
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
-            color: AppTheme.primaryVigoBlue,
+            color: context.acento,
           ),
         ),
         const SizedBox(height: 10.0),

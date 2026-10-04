@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../palabras/views/vocabulario_ingles_screen.dart';
 import 'collocations_screen.dart';
@@ -11,6 +10,9 @@ import '../../lectura/views/phonix_quest_screen.dart';
 import 'fsrs_trainer_screen.dart';
 import 'listening_screen.dart';
 import 'palabras_do_traxecto_screen.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/con_lingua.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart' show formatarMiles;
 
 /// Hub central del módulo de Inmersión en Inglés (L3).
@@ -22,6 +24,9 @@ import '../../docentes/widgets/hoxe_na_aula.dart' show formatarMiles;
 class EnglishHubScreen extends StatelessWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   /// El curso con el que abren el repaso, la escucha y las palabras.
@@ -31,12 +36,25 @@ class EnglishHubScreen extends StatelessWidget {
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
     this.cursoInicial = 'curso_0_2',
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) => ConLingua(
+        inicial: initialLanguage,
+        aoCambiar: onLanguageChanged,
+        builder: _construir,
+      );
+
+  /// A pantalla, na lingua que ten agora: [initialLanguage] tapa o campo co mesmo
+  /// nome, que é só a lingua coa que se abriu.
+  Widget _construir(
+    BuildContext context,
+    AppLanguage initialLanguage,
+    ValueChanged<AppLanguage> cambiarLingua,
+  ) {
     final lang = initialLanguage;
     final isGl = lang == AppLanguage.gl;
     final programa = repository.programaTprSync;
@@ -53,9 +71,10 @@ class EnglishHubScreen extends StatelessWidget {
             ? 'As $milesTotal de 0 a 6 anos por curso, mes, semana e día, co seu son e o xesto. Con buscador.'
             : 'Las $milesTotal de 0 a 6 años por curso, mes, semana y día, con su sonido y el gesto. Con buscador.',
         'icon': Icons.view_week_rounded,
-        'color': AppTheme.primaryDark,
-        'bg': AppTheme.primaryLight,
+        'color': context.acento,
+        'bg': context.acentoTint,
         'builder': (BuildContext ctx) => PalabrasDoTraxectoScreen(
+              onLanguageChanged: cambiarLingua,
               programa: programa,
               cursoInicial: cursoInicial,
               language: lang,
@@ -73,10 +92,11 @@ class EnglishHubScreen extends StatelessWidget {
         'subtitle': isGl
             ? 'As $ritmo de hoxe e as que xa saíron no curso. Cada palabra volve cando toca, e o repaso gárdase no aparello.'
             : 'Las $ritmo de hoy y las que ya salieron en el curso. Cada palabra vuelve cuando toca, y el repaso se guarda en el aparato.',
-        'icon': Icons.bolt,
+        'icon': Icons.bolt_rounded,
         'color': AppTheme.warning,
         'bg': AppTheme.warningBg,
         'builder': (BuildContext ctx) => FsrsTrainerScreen(
+              onLanguageChanged: cambiarLingua,
               programa: programa,
               cursoInicial: cursoInicial,
               language: lang,
@@ -91,10 +111,11 @@ class EnglishHubScreen extends StatelessWidget {
         'subtitle': isGl
             ? 'As frases e ordes de cada mes: escoitar sen ler, entender e facer o xesto.'
             : 'Las frases y órdenes de cada mes: escuchar sin leer, entender y hacer el gesto.',
-        'icon': Icons.headphones,
-        'color': AppTheme.primaryDark,
-        'bg': AppTheme.primaryLight,
+        'icon': Icons.headphones_rounded,
+        'color': context.acento,
+        'bg': context.acentoTint,
         'builder': (BuildContext ctx) => ListeningScreen(
+              onLanguageChanged: cambiarLingua,
               programa: programa,
               cursoInicial: cursoInicial,
               language: lang,
@@ -109,10 +130,11 @@ class EnglishHubScreen extends StatelessWidget {
         'subtitle': lang == AppLanguage.gl
             ? 'Combinacións fixas do día a día —wash your hands, put on your coat…— co seu son, unha frase e un consello'
             : 'Combinaciones fijas del día a día —wash your hands, put on your coat…— con su sonido, una frase y un consejo',
-        'icon': Icons.menu_book,
-        'color': AppTheme.primaryDark,
-        'bg': AppTheme.primaryLight,
+        'icon': Icons.menu_book_rounded,
+        'color': context.acento,
+        'bg': context.acentoTint,
         'builder': (BuildContext ctx) => CollocationsScreen(
+              onLanguageChanged: cambiarLingua,
               repository: repository,
               initialLanguage: lang,
               audioService: audioService,
@@ -130,10 +152,11 @@ class EnglishHubScreen extends StatelessWidget {
         'subtitle': lang == AppLanguage.gl
             ? 'Os 44 fonemas do inglés, 24 consoantes e 20 vogais, con palabra de exemplo, son e como se articulan'
             : 'Los 44 fonemas del inglés, 24 consonantes y 20 vocales, con palabra de ejemplo, sonido y cómo se articulan',
-        'icon': Icons.graphic_eq,
-        'color': AppTheme.primaryDark,
-        'bg': AppTheme.primaryLight,
+        'icon': Icons.graphic_eq_rounded,
+        'color': context.acento,
+        'bg': context.acentoTint,
         'builder': (BuildContext ctx) => PhonixQuestScreen(
+              onLanguageChanged: cambiarLingua,
               repository: repository,
               initialLanguage: lang,
               audioService: audioService,
@@ -147,10 +170,11 @@ class EnglishHubScreen extends StatelessWidget {
         'subtitle': lang == AppLanguage.gl
             ? 'As máis usadas do inglés, con categoría, frase enteira e son'
             : 'Las más usadas del inglés, con categoría, frase entera y sonido',
-        'icon': Icons.search,
-        'color': AppTheme.primaryDark,
-        'bg': AppTheme.primaryLight,
+        'icon': Icons.search_rounded,
+        'color': context.acento,
+        'bg': context.acentoTint,
         'builder': (BuildContext ctx) => VocabularioInglesScreen(
+              onLanguageChanged: cambiarLingua,
               repository: repository,
               initialLanguage: lang,
               audioService: audioService,
@@ -160,20 +184,10 @@ class EnglishHubScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          lang == AppLanguage.gl
-              ? 'Inmersión en Inglés (L3)'
-              : 'Inmersión en Inglés (L3)',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: 'Inglés',
+        language: initialLanguage,
+        onLanguageChanged: cambiarLingua,
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
@@ -182,8 +196,8 @@ class EnglishHubScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                colors: [AppTheme.primaryDark, AppTheme.primaryInk],
+              gradient: LinearGradient(
+                colors: [context.acento, context.acento],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -196,13 +210,13 @@ class EnglishHubScreen extends StatelessWidget {
                 // en una fila y se cortaba 171 px por la derecha.
                 const Row(
                   children: [
-                    Icon(Icons.language, color: Colors.white, size: 24),
+                    Icon(Icons.language_rounded, color: Colors.white, size: 24),
                     SizedBox(width: 8),
                     Flexible(
                       child: Text(
                         'INMERSIÓN EN INGLÉS',
                         style: TextStyle(
-                          color: Colors.white70,
+                          color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: 12,
                           letterSpacing: 1.1,
@@ -228,7 +242,7 @@ class EnglishHubScreen extends StatelessWidget {
                       ? 'Metodoloxía comunicativa orientada ao adulto mediador con retos motores e sen exposición a pantallas infantís.'
                       : 'Metodología comunicativa orientada al adulto mediador con retos motores y sin exposición a pantallas infantiles.',
                   style: const TextStyle(
-                    color: Colors.white70,
+                    color: Colors.white,
                     fontSize: 13,
                     height: 1.4,
                   ),
@@ -266,7 +280,8 @@ class EnglishHubScreen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
+                    RutaLua(
+                      de: context,
                       builder: m['builder'] as WidgetBuilder,
                     ),
                   );
@@ -313,7 +328,7 @@ class EnglishHubScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Icon(Icons.chevron_right,
+                      const Icon(Icons.chevron_right_rounded,
                           color: AppTheme.textMuted),
                     ],
                   ),

@@ -2,13 +2,21 @@ import 'package:flutter/material.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 
-/// Bilingual language toggle widget (`GL` / `ES`) for pedagogical modules.
+/// El selector de lengua (`GL` / `ES`) de la cabecera de todas las pantallas.
 ///
-/// Designed with adult-focused, accessible Material 3 styling (high contrast,
-/// clear typography, zero distracting animations or child mechanics).
+/// Va siempre sobre el acento del portal, que pasa AA con blanco: la lengua sin
+/// elegir va en blanco sobre el acento (5,02:1 en familias y 5,16:1 en
+/// docentes) y la elegida en el acento sobre blanco. Antes la pastilla llevaba
+/// un velo blanco del 15 % que bajaba el blanco a 3,85:1, y en las cabeceras
+/// blancas la lengua sin elegir —blanca— no se veía.
+///
+/// Cada lengua se puede pulsar en 48 × 48 dp, aunque la pastilla que se ve
+/// mide 34 de alto: es el mínimo táctil de Android.
 class SelectorIdiomaWidget extends StatelessWidget {
   final AppLanguage currentLanguage;
   final ValueChanged<AppLanguage> onLanguageChanged;
+
+  /// `GL` / `ES` en vez de `Galego` / `Castellano`. En la cabecera, siempre.
   final bool compact;
 
   const SelectorIdiomaWidget({
@@ -20,74 +28,76 @@ class SelectorIdiomaWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.15),
-        borderRadius: BorderRadius.circular(20.0),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.3),
-          width: 1.0,
+    final tema = Theme.of(context);
+    final acento = tema.appBarTheme.backgroundColor ?? tema.colorScheme.primary;
+    final ancho = compact ? AppTheme.touchMin : 96.0;
+    // Dos letras en una pastilla de 34 px: con la letra del sistema muy
+    // grande se saldrían, y GL/ES se leen igual a 1,3.
+    return MediaQuery.withClampedTextScaling(
+      maxScaleFactor: 1.3,
+      child: SizedBox(
+        height: AppTheme.touchMin,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Container(
+              height: 34,
+              width: ancho * 2 + 4,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(17),
+                border: Border.all(
+                  color: Colors.white.withValues(alpha: 0.75),
+                ),
+              ),
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                for (final lang in AppLanguage.deInterfaz)
+                  _opcion(lang, acento, ancho),
+              ],
+            ),
+          ],
         ),
-      ),
-      padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 2.0),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          _buildLanguageOption(
-            context: context,
-            lang: AppLanguage.gl,
-            label: compact ? 'GL' : 'Galego',
-            isSelected: currentLanguage == AppLanguage.gl,
-          ),
-          const SizedBox(width: 2.0),
-          _buildLanguageOption(
-            context: context,
-            lang: AppLanguage.es,
-            label: compact ? 'ES' : 'Castellano',
-            isSelected: currentLanguage == AppLanguage.es,
-          ),
-        ],
       ),
     );
   }
 
-  Widget _buildLanguageOption({
-    required BuildContext context,
-    required AppLanguage lang,
-    required String label,
-    required bool isSelected,
-  }) {
-    return InkWell(
-      onTap: () {
-        if (!isSelected) {
-          onLanguageChanged(lang);
-        }
-      },
-      borderRadius: BorderRadius.circular(16.0),
-      child: Container(
-        padding: EdgeInsets.symmetric(
-          horizontal: compact ? 8.0 : 12.0,
-          vertical: 6.0,
-        ),
-        decoration: BoxDecoration(
-          color: isSelected ? Colors.white : Colors.transparent,
-          borderRadius: BorderRadius.circular(16.0),
-          boxShadow: isSelected
-              ? [
-                  BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.1),
-                    blurRadius: 4,
-                    offset: const Offset(0, 1),
-                  ),
-                ]
-              : null,
-        ),
-        child: Text(
-          label,
-          style: TextStyle(
-            color: isSelected ? AppTheme.primaryVigoBlue : Colors.white,
-            fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-            fontSize: compact ? 13.0 : 14.0,
+  Widget _opcion(AppLanguage lang, Color acento, double ancho) {
+    final elixida = currentLanguage == lang;
+    return Semantics(
+      button: true,
+      selected: elixida,
+      label: lang.displayName,
+      excludeSemantics: true,
+      child: InkWell(
+        key: ValueKey('lingua_${lang.code}'),
+        customBorder: const StadiumBorder(),
+        onTap: elixida ? null : () => onLanguageChanged(lang),
+        child: SizedBox(
+          width: ancho,
+          height: AppTheme.touchMin,
+          child: Center(
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 150),
+              width: ancho - 6,
+              height: 28,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: elixida ? Colors.white : Colors.transparent,
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: Text(
+                compact ? lang.flagLabel : lang.displayName,
+                maxLines: 1,
+                style: TextStyle(
+                  fontFamily: AppTheme.fontFamily,
+                  color: elixida ? acento : Colors.white,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 14.0,
+                ),
+              ),
+            ),
           ),
         ),
       ),

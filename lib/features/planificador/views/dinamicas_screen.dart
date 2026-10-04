@@ -2,19 +2,23 @@ import 'package:flutter/material.dart';
 
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/dinamica_model.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Catálogo de Dinámicas de Aula organizadas por día de la semana y pulso BPM.
 class DinamicasScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
 
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
+
   const DinamicasScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
   });
 
   @override
@@ -22,6 +26,23 @@ class DinamicasScreen extends StatefulWidget {
 }
 
 class _DinamicasScreenState extends State<DinamicasScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
+  late AppLanguage _language = widget.initialLanguage;
+
+  // Si quien la abrió la vuelve a pintar en otra lengua, se cambia; si no,
+  // se quedaba en la de la primera vez.
+  @override
+  void didUpdateWidget(covariant DinamicasScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.initialLanguage != widget.initialLanguage) {
+      _language = widget.initialLanguage;
+    }
+  }
+
   List<DinamicaPedagogica> _dinamicas = [];
   bool _isLoading = true;
 
@@ -44,22 +65,14 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.initialLanguage;
+    final lang = _language;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          lang == AppLanguage.gl ? 'Dinámicas de Aula' : 'Dinámicas de Aula',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: 'Dinámicas de Aula',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -86,15 +99,15 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 10, vertical: 4),
                               decoration: BoxDecoration(
-                                color: AppTheme.primaryLight,
+                                color: context.acentoTint,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
                                 din.diaSemana.toUpperCase(),
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 12,
-                                  color: AppTheme.primaryDark,
+                                  color: context.acento,
                                 ),
                               ),
                             ),
@@ -102,15 +115,15 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 10, vertical: 4),
                               decoration: BoxDecoration(
-                                color: AppTheme.primaryLight,
+                                color: context.acentoTint,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
                                 '${din.duracionMinutos} min · ${din.ritmoBpm} BPM',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 12,
-                                  color: AppTheme.primaryInk,
+                                  color: context.acento,
                                 ),
                               ),
                             ),
@@ -140,7 +153,7 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                           title:
                               lang == AppLanguage.gl ? 'Obxectivo' : 'Objetivo',
                           content: din.obxectivo.resolve(lang),
-                          color: AppTheme.primaryInk,
+                          color: context.acento,
                         ),
 
                         const SizedBox(height: 10),
@@ -151,7 +164,7 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                               ? 'Procedemento Paso a Paso'
                               : 'Procedimiento Paso a Paso',
                           content: din.procedementoPasoAPaso.resolve(lang),
-                          color: AppTheme.primaryInk,
+                          color: context.acento,
                         ),
 
                         const SizedBox(height: 10),
@@ -178,7 +191,7 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Icon(Icons.record_voice_over,
+                              const Icon(Icons.record_voice_over_rounded,
                                   color: AppTheme.warning, size: 18),
                               const SizedBox(width: 8),
                               Expanded(

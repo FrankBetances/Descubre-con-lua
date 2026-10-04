@@ -10,7 +10,6 @@ import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../../premios/widgets/lua_game_strip.dart';
 import '../widgets/academy_header.dart';
-import '../widgets/selector_idioma_widget.dart';
 import 'capsula_detail_screen.dart';
 import 'guia_atencion_screen.dart';
 import 'micro_rutina_setembro_screen.dart';
@@ -18,7 +17,8 @@ import '../../../core/storage/calendario_store.dart';
 import '../../calendario/views/calendario_screen.dart';
 import '../../calendario/widgets/calendario_do_curso.dart';
 import '../../../data/repositories/calendario_repository.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Los 5 bloques de desarrollo de «Academy · Familias».
 ///
@@ -118,17 +118,17 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
   IconData _iconForBloque(String iconKey) {
     switch (iconKey) {
       case 'ear_sparkles':
-        return Icons.hearing_outlined;
+        return Icons.hearing_rounded;
       case 'chat_bubble_heart':
-        return Icons.chat_bubble_outline;
+        return Icons.chat_bubble_rounded;
       case 'people_arrows':
-        return Icons.people_outline;
+        return Icons.people_rounded;
       case 'child_play':
-        return Icons.sports_baseball_outlined;
+        return Icons.sports_baseball_rounded;
       case 'home_globe':
-        return Icons.language_outlined;
+        return Icons.language_rounded;
       default:
-        return Icons.auto_stories_outlined;
+        return Icons.auto_stories_rounded;
     }
   }
 
@@ -138,19 +138,10 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
     final bloques = widget.repository.getAllBloques();
 
     return Scaffold(
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: const Text('Academy · Familias'),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: AppTheme.spaceMd),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: 'Academy',
+        language: _language,
+        onLanguageChanged: _onToggleLanguage,
       ),
       // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
       // ya no reserva la barra de gestos y el final de esta pantalla
@@ -183,6 +174,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                       // la gata, el nivel por cápsulas leídas y la racha.
                       if (widget.premios != null) ...[
                         LuaGameStrip(
+                          onLanguageChanged: _onToggleLanguage,
                           repository: widget.premios!,
                           perfil: Perfil.familia,
                           language: lang,
@@ -192,7 +184,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                       ],
                       // Acceso destacado a la Guía de Atención y al Calendario
                       AcademyCard(
-                        icono: Icons.record_voice_over_outlined,
+                        icono: Icons.record_voice_over_rounded,
                         kicker: lang == AppLanguage.gl
                             ? 'O INGLÉS NA CASA'
                             : 'EL INGLÉS EN CASA',
@@ -206,7 +198,8 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                             ? 'Guía interactiva'
                             : 'Guía interactiva',
                         onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(
+                          RutaLua(
+                            de: context,
                             builder: (context) => GuiaAtencionScreen(
                               initialLanguage: _language,
                               onLanguageChanged: _onToggleLanguage,
@@ -228,7 +221,8 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                         padding: EdgeInsets.zero,
                         onAbrirMes: (contenido, curso, mesIndex) =>
                             Navigator.of(context).push(
-                          MaterialPageRoute(
+                          RutaLua(
+                            de: context,
                             builder: (context) => CalendarioScreen(
                               store: widget.calendario ?? CalendarioStore(),
                               contenido: contenido,
@@ -246,7 +240,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                       ),
                       const SizedBox(height: AppTheme.spaceMd),
                       AcademyCard(
-                        icono: Icons.home_work_outlined,
+                        icono: Icons.home_work_rounded,
                         kicker: lang == AppLanguage.gl
                             ? 'SEGUNDO CICLO (3-6 ANOS) · NOVO'
                             : 'SEGUNDO CICLO (3-6 AÑOS) · NUEVO',
@@ -260,7 +254,8 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                             ? 'Micro-rutina · Fogar'
                             : 'Micro-rutina · Hogar',
                         onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(
+                          RutaLua(
+                            de: context,
                             builder: (context) => MicroRutinaSetembroScreen(
                               initialLanguage: _language,
                               onLanguageChanged: _onToggleLanguage,
@@ -307,7 +302,8 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                             onTap: primera == null
                                 ? null
                                 : () => Navigator.of(context).push(
-                                      MaterialPageRoute(
+                                      RutaLua(
+                                        de: context,
                                         builder: (context) =>
                                             CapsulaDetailScreen(
                                           capsula: primera,

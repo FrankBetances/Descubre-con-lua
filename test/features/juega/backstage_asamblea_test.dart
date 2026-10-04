@@ -264,6 +264,54 @@ void main() {
           findsOneWidget);
     });
 
+    // Lote L2: un solo botón principal por pantalla. Los botones de sonido
+    // de cada fase son secundarios; el principal es avanzar.
+    testWidgets('cada fase ten un só botón principal: o de avanzar',
+        (tester) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          home: BackstageAsambleaScreen(
+            repository: repository,
+            audioService: mockAudio,
+            initialNivel: NivelEducativoSegundoCiclo.infantil4,
+            initialLanguage: AppLanguage.gl,
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+
+      final seguinte =
+          find.byKey(const ValueKey('backstage_next_phase_button'));
+      final sons = [
+        const ValueKey('play_opening_cue_button'),
+        const ValueKey('play_rhythm_pulse_button'),
+        const ValueKey('play_tpr_audio_cmd.test.01'),
+        const ValueKey('play_calm_audio_button'),
+      ];
+      var sonsVistos = 0;
+      for (var fase = 0; fase < 4; fase++) {
+        final principais = find
+            .byWidgetPredicate((w) => w is ElevatedButton && w.enabled)
+            .evaluate()
+            .map((e) => e.widget.key)
+            .toList();
+        expect(principais, [const ValueKey('backstage_next_phase_button')],
+            reason: 'Fase ${fase + 1}: botóns principais $principais');
+        for (final son in sons) {
+          if (find.byKey(son).evaluate().isEmpty) continue;
+          sonsVistos++;
+          expect(tester.widget(find.byKey(son)), isA<OutlinedButton>(),
+              reason: 'Fase ${fase + 1}: $son debe ser secundario');
+        }
+        if (fase < 3) {
+          await tester.tap(seguinte);
+          await tester.pumpAndSettle();
+        }
+      }
+      // Sen botóns de son á vista, a proba de arriba non mira nada.
+      expect(sonsVistos, greaterThanOrEqualTo(2));
+    });
+
     testWidgets(
         'switches levels and updates methodology and indicators (freeze & cue cards)',
         (tester) async {
@@ -366,8 +414,9 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      // Tap back button
-      await tester.tap(find.byIcon(Icons.arrow_back_rounded).first);
+      // Tap back button (la flecha de la cabecera, no la de la barra de
+      // fases, que también es una flecha hacia atrás)
+      await tester.tap(find.byKey(const ValueKey('boton_atras')));
       await tester.pumpAndSettle();
 
       // Verify dialog is shown
@@ -433,16 +482,16 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('FASE 4 · 120s'), findsOneWidget);
 
-      // Next button now says "Rematar Asemblea"
-      expect(find.text('Rematar Asemblea'), findsOneWidget);
+      // Next button now says "Rematar a asemblea"
+      expect(find.text('Rematar a asemblea'), findsOneWidget);
 
       // Tap finish assembly
       await tester.tap(nextFinder);
       await tester.pumpAndSettle();
 
       // Verify dedicated finish dialog appears
-      expect(find.text('Rematar Asemblea Matinal?'), findsOneWidget);
-      expect(find.text('Rematar e Saír'), findsOneWidget);
+      expect(find.text('Rematar a asemblea matinal?'), findsOneWidget);
+      expect(find.text('Rematar e saír'), findsOneWidget);
       expect(find.text('Continuar na Asemblea'), findsOneWidget);
 
       // Cancel finish

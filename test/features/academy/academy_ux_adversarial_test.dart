@@ -233,7 +233,7 @@ void main() {
         find.text('Exacto: a pausa atenta é a invitación máis respectuosa.'),
         findsOneWidget,
       );
-      expect(find.byIcon(Icons.check_circle_outline), findsOneWidget);
+      expect(find.byIcon(Icons.check_circle_outline_rounded), findsOneWidget);
 
       // Volver a tocar lo mismo no cambia nada.
       await tester.tap(find.text('Verdadeiro'));
@@ -251,7 +251,7 @@ void main() {
         find.text('Exacto: a pausa atenta é a invitación máis respectuosa.'),
         findsOneWidget,
       );
-      expect(find.byIcon(Icons.info_outline), findsOneWidget);
+      expect(find.byIcon(Icons.info_rounded), findsOneWidget);
 
       // Afirmación 2, que es falsa: se responde «Falso» y sale el acierto.
       await tester.tap(find.text('Seguinte'));
@@ -263,7 +263,7 @@ void main() {
             'Non é conveniente: nos primeiros 3 anos o modelo natural é mellor.'),
         findsOneWidget,
       );
-      expect(find.byIcon(Icons.check_circle_outline), findsOneWidget);
+      expect(find.byIcon(Icons.check_circle_outline_rounded), findsOneWidget);
     });
   });
 

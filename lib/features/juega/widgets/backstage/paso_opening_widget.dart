@@ -61,16 +61,16 @@ class PasoOpeningWidget extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: AppTheme.backstageAccent.withValues(alpha: 0.2),
+                      color: context.acentoTint,
                       borderRadius: BorderRadius.circular(AppTheme.radiusField),
                     ),
                     child: Text(
                       'FASE ${fase.orden} · ${fase.duracionSegundos}s',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 13,
                         fontWeight: FontWeight.w800,
-                        color: AppTheme.backstageAccent,
+                        color: context.acento,
                         letterSpacing: 1,
                       ),
                     ),
@@ -104,8 +104,7 @@ class PasoOpeningWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color: AppTheme.backstageSurface,
               borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-              border: Border.all(
-                  color: AppTheme.backstageAccent.withValues(alpha: 0.5)),
+              border: Border.all(color: context.acento.withValues(alpha: 0.5)),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -144,6 +143,7 @@ class PasoOpeningWidget extends StatelessWidget {
                   audioService: audioService,
                   texto: fase.cueAcustica ?? '',
                   language: AppLanguage.en,
+                  interfaz: language,
                   style: estiloIngles(fase.cueAcustica ?? ''),
                   compacto: true,
                   descripcion:
@@ -151,14 +151,10 @@ class PasoOpeningWidget extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 if (hasAudio && onPlayCue != null)
-                  ElevatedButton.icon(
+                  OutlinedButton.icon(
                     key: const ValueKey('play_opening_cue_button'),
                     onPressed: onPlayCue,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: isPlayingCue
-                          ? AppTheme.backstageWarning
-                          : AppTheme.backstageAccent,
-                      foregroundColor: AppTheme.backstageBg,
+                    style: OutlinedButton.styleFrom(
                       minimumSize: const Size(120, 52),
                       shape: RoundedRectangleBorder(
                         borderRadius:
@@ -191,19 +187,19 @@ class PasoOpeningWidget extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(
+                        Icon(
                           Icons.record_voice_over_rounded,
                           size: 18,
-                          color: AppTheme.backstageAccent,
+                          color: context.acento,
                         ),
                         const SizedBox(width: 6),
                         Text(
                           isGl ? 'Voz docente' : 'Voz docente',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontFamily: AppTheme.fontFamily,
                             fontSize: 13,
                             fontWeight: FontWeight.w700,
-                            color: AppTheme.backstageAccent,
+                            color: context.acento,
                           ),
                         ),
                       ],

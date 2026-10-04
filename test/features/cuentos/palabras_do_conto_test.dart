@@ -270,6 +270,64 @@ void main() {
     });
   }
 
+  // Lote L2: a mesma barra de pasos que no resto da app. A frecha volve, o
+  // botón principal avanza e, na última páxina, pecha o conto: antes quedaba
+  // apagado, sen saída. A idade, o mes e a semana van enriba do título, que
+  // na cabeceira se cortaban.
+  for (final lang in [AppLanguage.gl, AppLanguage.es]) {
+    final isGl = lang == AppLanguage.gl;
+    testWidgets('pasar páxinas ata o final pecha o conto (${lang.code})',
+        (tester) async {
+      final c = semanais.firstWhere((c) => c.paginas.length > 2);
+      tester.view.physicalSize = const Size(360, 780);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.lightTheme,
+        home: Builder(
+          builder: (context) => Scaffold(
+            body: Center(
+              child: TextButton(
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (_) => CuentoViewerScreen(
+                    cuento: c,
+                    language: lang,
+                    audioService: MockOfflineAudioService(),
+                  ),
+                )),
+                child: const Text('abrir'),
+              ),
+            ),
+          ),
+        ),
+      ));
+      await tester.tap(find.text('abrir'));
+      await tester.pumpAndSettle();
+
+      final meta =
+          tester.widget<Text>(find.byKey(const ValueKey('conto_meta')));
+      expect(meta.data, contains(isGl ? 'anos' : 'años'));
+      expect(meta.data, contains('semana ${c.semanaSugerida}'));
+
+      final atras = find.byKey(const ValueKey('conto_anterior'));
+      final seguinte = find.byKey(const ValueKey('conto_seguinte'));
+      expect(tester.widget<OutlinedButton>(atras).onPressed, isNull);
+      for (var i = 1; i < c.paginas.length; i++) {
+        expect(find.text('$i / ${c.paginas.length}'), findsOneWidget);
+        expect(find.byWidgetPredicate((w) => w is ElevatedButton && w.enabled),
+            findsOneWidget);
+        await tester.tap(seguinte);
+        await tester.pumpAndSettle();
+      }
+      expect(tester.widget<OutlinedButton>(atras).onPressed, isNotNull);
+      expect(find.text(isGl ? 'Rematar' : 'Terminar'), findsOneWidget);
+      await tester.tap(seguinte);
+      await tester.pumpAndSettle();
+      expect(find.byType(CuentoViewerScreen), findsNothing);
+      expect(find.text('abrir'), findsOneWidget);
+    });
+  }
+
   testWidgets('un conto do banco, sen semana, lese coma sempre',
       (tester) async {
     final c = banco.first;

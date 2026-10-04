@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import 'cuento_viewer_screen.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Catálogo y biblioteca de los contos pedagóxicos (5 cursos × 10 meses × 4
 /// semanas). El número de contos NO se escribe en el rótulo: lo cuenta la
@@ -15,12 +16,16 @@ import '../../juega/widgets/aula_ciclo_panel.dart';
 class CuentosListScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   const CuentosListScreen({
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
   });
 
@@ -29,6 +34,11 @@ class CuentosListScreen extends StatefulWidget {
 }
 
 class _CuentosListScreenState extends State<CuentosListScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
   late AppLanguage _language;
   List<Cuento> _allCuentos = [];
   List<Cuento> _filteredCuentos = [];
@@ -87,20 +97,10 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          lang == AppLanguage.gl
-              ? 'Biblioteca de Contos'
-              : 'Biblioteca de Cuentos',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: lang == AppLanguage.gl ? 'Contos' : 'Cuentos',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: Column(
         children: [
@@ -117,7 +117,7 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                         ? 'Buscar conto...'
                         : 'Buscar cuento...',
                     prefixIcon:
-                        const Icon(Icons.search, color: AppTheme.primaryDark),
+                        Icon(Icons.search_rounded, color: context.acento),
                     filled: true,
                     fillColor: AppTheme.pageBg,
                     contentPadding:
@@ -156,16 +156,6 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                               });
                             }
                           },
-                          selectedColor: AppTheme.primary,
-                          labelStyle: TextStyle(
-                            color: isSelected
-                                ? Colors.white
-                                : AppTheme.textPrimary,
-                            fontWeight: isSelected
-                                ? FontWeight.bold
-                                : FontWeight.normal,
-                            fontSize: 12,
-                          ),
                         ),
                       );
                     }).toList(),
@@ -224,8 +214,10 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(
+                                  RutaLua(
+                                    de: context,
                                     builder: (_) => CuentoViewerScreen(
+                                      onLanguageChanged: _cambiarLingua,
                                       cuento: cuento,
                                       language: _language,
                                       audioService: widget.audioService,
@@ -251,12 +243,12 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                       width: 44,
                                       height: 44,
                                       decoration: BoxDecoration(
-                                        color: AppTheme.primaryLight,
+                                        color: context.acentoTint,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
-                                      child: const Icon(
-                                        Icons.auto_stories,
-                                        color: AppTheme.primaryDark,
+                                      child: Icon(
+                                        Icons.auto_stories_rounded,
+                                        color: context.acento,
                                         size: 24,
                                       ),
                                     ),
@@ -298,8 +290,8 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                               _buildBadge(
                                                 _etiquetaCurso(
                                                     cuento.cursoId, lang),
-                                                AppTheme.primaryLight,
-                                                AppTheme.primaryInk,
+                                                context.acentoTint,
+                                                context.acento,
                                               ),
                                               // El mes por su nombre: «Mes 2»
                                               // obligaba a contar.
@@ -307,8 +299,8 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                                 nomeDoMes[cuento.mesCalendario]
                                                         ?.resolve(lang) ??
                                                     '',
-                                                AppTheme.primaryTint,
-                                                AppTheme.primaryDark,
+                                                context.acentoTint,
+                                                context.acento,
                                               ),
                                               // La semana, solo en el cuento
                                               // DE la semana, y dicho así:
@@ -328,11 +320,11 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                                   // Blanco sobre primaryInk:
                                                   // 5,16:1 (AA).
                                                   cuento.levaPalabras
-                                                      ? AppTheme.primaryInk
-                                                      : AppTheme.primaryTint,
+                                                      ? context.acento
+                                                      : context.acentoTint,
                                                   cuento.levaPalabras
                                                       ? Colors.white
-                                                      : AppTheme.primaryDark,
+                                                      : context.acento,
                                                 ),
                                               if (cuento.paginas.isNotEmpty)
                                                 _buildBadge(
@@ -348,7 +340,7 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                       ),
                                     ),
                                     const Icon(
-                                      Icons.chevron_right,
+                                      Icons.chevron_right_rounded,
                                       color: AppTheme.textMuted,
                                     ),
                                   ],

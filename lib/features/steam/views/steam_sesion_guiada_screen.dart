@@ -8,10 +8,9 @@ import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/steam_model.dart';
-import '../../academy/widgets/selector_idioma_widget.dart';
 import '../widgets/steam_comun.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// La sesión de una unidad STEAM, para la persona adulta.
 ///
@@ -160,24 +159,10 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          unit.titulo.resolve(_language),
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _cambiarLingua,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: unit.titulo.resolve(_language),
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: SafeArea(
         child: ListView(
@@ -208,7 +193,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
             ),
             const SizedBox(height: AppTheme.spaceMd),
             _seccion(
-              icono: Icons.inventory_2_outlined,
+              icono: Icons.inventory_2_rounded,
               titulo: _materiais,
               children: [
                 for (final m in variante.materiales) _vinheta(m.item),
@@ -365,19 +350,19 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Padding(
-                padding: EdgeInsets.only(top: 2),
+              Padding(
+                padding: const EdgeInsets.only(top: 2),
                 child: Icon(Icons.phonelink_lock_rounded,
-                    size: 18, color: AppTheme.primaryInk),
+                    size: 18, color: context.acento),
               ),
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
                   SteamTextos.senPantallas.resolve(_language),
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w600,
-                    color: AppTheme.primaryInk,
+                    color: context.acento,
                     height: 1.4,
                   ),
                 ),
@@ -394,9 +379,10 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
     required IconData icono,
     required LocalizedString titulo,
     required List<Widget> children,
-    Color tinta = AppTheme.primaryInk,
+    Color? tinta,
     Color fondo = AppTheme.card,
   }) {
+    tinta ??= context.acento;
     return Container(
       key: key,
       padding: const EdgeInsets.all(AppTheme.spaceLg),
@@ -547,7 +533,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
               ? Icons.check_circle_outline_rounded
               : Icons.hourglass_top_rounded,
           size: 20,
-          color: _pausaFeita ? AppTheme.success : AppTheme.primaryInk,
+          color: _pausaFeita ? AppTheme.success : context.acento,
         ),
         label: Text(
           texto.resolve(_language),
@@ -591,10 +577,10 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
                     Expanded(
                       child: Text(
                         titulo.resolve(_language),
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
-                          color: AppTheme.primaryInk,
+                          color: context.acento,
                         ),
                       ),
                     ),
@@ -602,7 +588,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
                       aberta
                           ? Icons.expand_less_rounded
                           : Icons.expand_more_rounded,
-                      color: AppTheme.primaryInk,
+                      color: context.acento,
                     ),
                   ],
                 ),
@@ -630,7 +616,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(Icons.badge_outlined, size: 18, color: steamTinta),
+          const Icon(Icons.badge_rounded, size: 18, color: steamTinta),
           const SizedBox(width: 8),
           Expanded(
             child: Column(
@@ -667,9 +653,9 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Padding(
-            padding: EdgeInsets.only(top: 7, right: 8),
-            child: Icon(Icons.circle, size: 7, color: AppTheme.primaryDark),
+          Padding(
+            padding: const EdgeInsets.only(top: 7, right: 8),
+            child: Icon(Icons.circle_rounded, size: 7, color: context.acento),
           ),
           Expanded(
             child: Text(
@@ -710,6 +696,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
                 audioService: widget.audioService,
                 texto: orden.en,
                 language: AppLanguage.en,
+                interfaz: _language,
                 style: estiloIngles(orden.en),
                 comoChip: true,
                 colorChip: steamTinta,

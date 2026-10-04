@@ -99,7 +99,7 @@ void main() {
 
       expect(find.byType(CircularProgressIndicator), findsNothing);
       expect(find.byType(AvisoContenidoIlegible), findsNothing);
-      expect(find.text('Calendario Escola · Fogar'), findsOneWidget);
+      expect(find.text('Calendario'), findsOneWidget);
     });
 
     testWidgets('la Guía de inglés en casa', (tester) async {

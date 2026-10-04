@@ -360,7 +360,10 @@ void main() {
           final conto = contos.firstWhere((c) => c.cursoId == curso);
           await pintar(
             tester,
+            // Con clave: sin ella el visor reaprovecha el estado del conto
+            // anterior e abre na súa última páxina.
             CuentoViewerScreen(
+              key: ValueKey(conto.id),
               cuento: conto,
               language: lang,
               audioService: audioService,
@@ -394,7 +397,10 @@ void main() {
               .reduce((a, b) => longo(a) >= longo(b) ? a : b);
           await pintar(
             tester,
+            // Con clave, para que cada conto empece na páxina 1. Sen ela o
+            // segundo abría na última do primeiro e só se miraban dúas.
             CuentoViewerScreen(
+              key: ValueKey(conto.id),
               cuento: conto,
               language: lang,
               audioService: audioService,

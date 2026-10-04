@@ -17,7 +17,6 @@ class PasoPonteCasaWidget extends StatelessWidget {
 
   /// Sin él no hay botón de escuchar en el puente con la casa.
   final OfflineAudioService? audioService;
-  final VoidCallback? onFinalizar;
 
   /// Modo asamblea: el mensaje para las familias y las actividades. La
   /// recomendación de conversación es formación docente, y se lee otro día.
@@ -28,7 +27,6 @@ class PasoPonteCasaWidget extends StatelessWidget {
     required this.ponteCasa,
     required this.language,
     this.audioService,
-    this.onFinalizar,
     this.soloEsencial = false,
   });
 
@@ -47,7 +45,7 @@ class PasoPonteCasaWidget extends StatelessWidget {
               : 'Puente a casa: Comunicación con familias',
           style: theme.textTheme.headlineSmall?.copyWith(
             fontWeight: FontWeight.bold,
-            color: AppTheme.primaryVigoBlue,
+            color: context.acento,
             fontSize: 22.0,
           ),
         ),
@@ -77,9 +75,9 @@ class PasoPonteCasaWidget extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    const Icon(
-                      Icons.mark_email_read_outlined,
-                      color: AppTheme.primaryVigoBlue,
+                    Icon(
+                      Icons.mark_email_read_rounded,
+                      color: context.acento,
                       size: 22,
                     ),
                     const SizedBox(width: 10),
@@ -90,7 +88,7 @@ class PasoPonteCasaWidget extends StatelessWidget {
                             : 'Mensaje sugerido para el tablón o cuaderno:',
                         style: theme.textTheme.titleSmall?.copyWith(
                           fontWeight: FontWeight.bold,
-                          color: AppTheme.primaryVigoBlue,
+                          color: context.acento,
                         ),
                       ),
                     ),
@@ -147,7 +145,7 @@ class PasoPonteCasaWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Icon(
-                  Icons.chat_outlined,
+                  Icons.chat_rounded,
                   color: Color(0xFF1D4ED8),
                   size: 22,
                 ),
@@ -202,7 +200,7 @@ class PasoPonteCasaWidget extends StatelessWidget {
               : 'Actividades sugeridas para casa:',
           style: theme.textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.bold,
-            color: AppTheme.primaryVigoBlue,
+            color: context.acento,
           ),
         ),
         const SizedBox(height: 10.0),
@@ -220,7 +218,7 @@ class PasoPonteCasaWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Icon(
-                    Icons.home_outlined,
+                    Icons.home_rounded,
                     color: AppTheme.accentTerracotta,
                     size: 22,
                   ),
@@ -247,30 +245,6 @@ class PasoPonteCasaWidget extends StatelessWidget {
             ),
           );
         }),
-
-        if (onFinalizar != null) ...[
-          const SizedBox(height: 24.0),
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton.icon(
-              onPressed: onFinalizar,
-              icon: const Icon(Icons.check_circle_outline),
-              label: Text(
-                isGl ? 'Completar Asemblea' : 'Completar Asamblea',
-                style: const TextStyle(
-                    fontSize: 16.0, fontWeight: FontWeight.bold),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.primaryVigoBlue,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14.0),
-                ),
-              ),
-            ),
-          ),
-        ],
       ],
     );
   }

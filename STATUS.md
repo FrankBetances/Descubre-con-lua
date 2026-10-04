@@ -9,6 +9,152 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L2 de la revisión de interfaz: un sistema visual (4/10/2026)
+
+Rama `claude/ux-l2`, que se integra en `main` por pull request después de L1.
+
+La revisión lo resumía en tres puntos (A8, M4, M8): acentos con contraste AA,
+una cabecera con GL/ES en todas las pantallas, y un botón principal por
+pantalla con los mismos verbos y un solo estilo de icono. Su apartado «Sistema
+visual» fijaba además la tarjeta: plana, de radio 16 y con borde de 1 px.
+
+Qué cambia en pantalla:
+
+- **Un color por portal, y los dos pasan AA.** Familias, naranja #B4530F
+  (5,02:1 con letra blanca); docentes, verde azulado #127A75 (5,16:1). Llevan
+  ese color la cabecera, el botón principal, los chips elegidos y los enlaces,
+  y cada pantalla que se abre desde un portal hereda el suyo. El turquesa de
+  marca queda para fondos e ilustración, nunca con letra blanca encima (2,18:1).
+  El gris de texto atenuado pasa de #9AA6A5 (2,51:1) a #5F6B6A (5,53:1).
+- **La misma cabecera en las 43 pantallas.** Lleva un título corto que cabe
+  entero a 360 px con la tipografía real, la flecha de volver y GL/ES siempre
+  a la derecha. Las 38 barras distintas que había en `lib/` son ahora esa
+  cabecera. Cambiar de lengua en cualquier pantalla se mantiene al volver.
+- **Un botón principal por pantalla**, relleno del acento; los demás van con
+  borde. Pasan a secundarios las tarjetas de módulo de los dos portales (en
+  docentes eran botones rellenos de siete colores), las cinco sesiones STEAM,
+  los botones de sonido de cada fase de la asamblea de 2.º ciclo y las cuatro
+  respuestas del repaso de inglés. Estas últimas llevan ahora cada una su
+  color, en el borde y en la letra; antes el color se recibía y no se usaba.
+  En la fase 6 de la asamblea de 1.º ciclo había dos botones iguales para
+  terminar; queda uno. Y el principal cabe en una línea: «Comenzar la
+  asamblea» se partía en dos en el Portal Docentes en castellano.
+- **Los mismos verbos.** «Comezar / Comenzar» para empezar, «Seguinte /
+  Siguiente» para avanzar, «Rematar / Terminar» para acabar algo que va por
+  pasos, y «Xa o fixemos / Ya lo hicimos» para decir que algo ya se hizo. Así
+  cambian:
+  - «Iniciar asemblea de hoxe» e «Iniciar asemblea guiada» pasan a «Comezar a
+    asemblea»;
+  - «Finalizar» pasa a «Rematar / Terminar»;
+  - «Marcar como Feito Hoxe» pasa a «Xa o fixemos»;
+  - «Rexistrar asemblea de hoxe na aula» pasa a «Xa fixemos a asemblea».
+- **La misma barra de pasos** en todo lo que va paso a paso: el cuento, las
+  asambleas de 1.º y 2.º ciclo, las cápsulas de Academy, la escucha de frases,
+  la formación y Alphabot. Volver es una flecha en un cuadrado, con su nombre
+  para TalkBack, y avanzar es el botón principal, a lo ancho. En la última
+  página, el principal termina y cierra; en el cuento antes se quedaba apagado,
+  sin salida. «Fase Anterior» y «Seguinte Fase» ya no se parten en dos líneas
+  a 360 px.
+- **Un solo estilo de icono, el redondeado.** Había 134 usos de iconos
+  rellenos o de contorno (80 distintos), y los 134 pasan a su versión
+  redondeada.
+- **La tarjeta del tema** (plana, radio 16, borde de 1 px) en el visor de
+  cuentos, el repaso, la escucha, Alphabot y las tarjetas de módulo, que
+  traían sombra o radio 20 sin borde.
+- **El cuento** lleva la edad, el mes y la semana encima del título, en la
+  banda («0-2 anos · Setembro · semana 1»). En la cabecera se cortaban.
+- **«Escoitar» en la interfaz gallega.** En los 26 sitios que hacen sonar
+  inglés, el botón decía «Escuchar», porque tomaba la lengua del texto y no la
+  de la interfaz.
+- **Textos que no se leían**, todos medidos sobre su fondo:
+  - en el amarillo de la estrella, con 1,53:1: el aviso «PROTOCOLO DE
+    SEGURIDADE NA AULA» de la fase de exploración, la «Pauta de modelado
+    docente» y el reloj de fase cuando se pasa de tiempo;
+  - en el rojo de la casa, con 3,43 a 3,76:1: los «Evitar…» de Estratexias y
+    de la guía del recast;
+  - las etiquetas de colores de los módulos de docentes, con 2,26 a 3,35:1;
+  - las categorías de la proyección del curso, con 2,4 a 3,4:1;
+  - el registro del calendario de aula en verde o naranja claros;
+  - el gris #718096 (4,02:1) y el naranja #C05621 (4,49:1) del calendario de
+    casa.
+
+Cómo se comprobó:
+
+- `test/features/ux_l2_test.dart`. Recorre las 43 pantallas, en gallego y en
+  castellano, a 360 × 780 y con la tipografía real (Nunito), y en cada una baja
+  de pantalla en pantalla hasta el final. A cada altura comprueba:
+  - la cabecera común con GL/ES y el título entero;
+  - que la cabecera y el botón principal llevan el acento de su portal;
+  - que como mucho hay un botón principal a la vista, y en una sola línea;
+  - que cada texto pasa AA contra el color que tiene detrás, medido en la
+    imagen pintada;
+  - que todo va en Nunito.
+
+  La primera versión de esta auditoría solo miraba lo que se ve al abrir.
+  Bajando aparecieron catorce fallos que estaban debajo del pliegue: el
+  segundo botón relleno del Portal Docentes, los «Abrir a sesión» de STEAM, las
+  etiquetas de colores y los rojos de «Evitar».
+
+  El mismo fichero comprueba además:
+  - que el color del portal viaja con la navegación (Inicio → Portal Familias
+    → Contos → un cuento → volver → Portal Docentes);
+  - que solo hay iconos redondeados;
+  - que no vuelven «Iniciar», «Finalizar» ni «Marcar como feito»;
+  - que ningún color de letra escrito en el código baja de 4,5:1 sobre blanco
+    (3:1 si la letra es grande). Este último test mira lo que la auditoría de
+    la imagen no abre: fases de asamblea, desplegables y roles. De ahí salieron
+    los tres amarillos.
+- Cinco tests de estados que no se ven al abrir:
+  - las cuatro fases del 2.º ciclo con un solo principal;
+  - las cuatro respuestas del repaso;
+  - la fase 6 del 1.º ciclo;
+  - el cuento hasta su última página;
+  - los verbos.
+
+  Fallan con el código de antes, comprobado sobre una copia, y pasan con el
+  nuevo.
+- `test/features/portales_escala_test.dart` miraba menos de lo que decía. El
+  visor reaprovechaba el estado del cuento anterior, así que el segundo de
+  cada tanda abría en su última página y solo se medían dos de sus cinco
+  páginas. Con la barra nueva el test falló y lo destapó. Ahora cada cuento
+  empieza en la página 1 y se miden todas.
+
+Las capas:
+
+- La interfaz es lo único que cambia.
+- Ningún JSON de contenido cambia.
+- Ninguno de estos textos tiene voz: busqué los rótulos cambiados en `assets/`
+  y `tools/` y no están.
+- No hay imprimible afectado.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android.**
+- Las etiquetas de TalkBack de la flecha de volver están puestas, pero **esto
+  no lo he verificado** con TalkBack.
+- El test de colores lee el código, así que no ve un color que llega por una
+  variable. La auditoría de la imagen sí lo ve, pero solo en lo que se pinta
+  al abrir y al bajar.
+- **Las 32 capturas que incrusta el manual, y su PDF y su Word, siguen
+  enseñando la interfaz de antes de L2.** Se rehacen una sola vez al terminar
+  L3 y L4, que vuelven a cambiar esas mismas pantallas. Este lote entra antes
+  en `main` para que la app se pueda ver ya.
+
+### Visto y no tocado
+
+No estaba en el lote; queda dicho para que Frank decida:
+
+- La fase de ritmo de la asamblea de 2.º ciclo hace sonar un pulso a 72 BPM
+  («Activar Pulso 72 BPM»). Este repositorio dice que el pulso se ve y no se
+  oye, por las crianzas con audífono o implante. Lo dice de la canción a
+  pulso; esta fase es otra, pero el motivo es el mismo.
+- Muchos rótulos van con mayúscula en cada palabra («Seguinte Fase», «Saír da
+  Asemblea?»), y en gallego y en castellano no se escribe así. Solo los he
+  cambiado donde ya tocaba el texto por el verbo. Unificarlos entra en el
+  diccionario de nombres (L5).
+- Los avisos del reloj de fase del 2.º ciclo («Iniciar», «Pausar», «Reiniciar
+  tempo de fase») están solo en gallego, también con la interfaz en castellano.
+
 ## Lote L1 de la revisión de interfaz: STEAM a la vista en el Portal Familias (4/10/2026)
 
 Rama `claude/ux-l1`, que se integra en `main` por pull request después de L0.

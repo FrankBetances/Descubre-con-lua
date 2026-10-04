@@ -8,8 +8,8 @@ import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/boton_atras.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// Explorador de colocaciones y patrones sintácticos de inglés.
 ///
@@ -20,6 +20,9 @@ import '../../../data/repositories/content_repository.dart';
 class CollocationsScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
+
+  /// Avisa a quien la abrió de que se cambió de lengua aquí.
+  final ValueChanged<AppLanguage>? onLanguageChanged;
   final OfflineAudioService? audioService;
 
   /// Para los tests: lee el JSON del disco en vez del paquete.
@@ -29,6 +32,7 @@ class CollocationsScreen extends StatefulWidget {
     super.key,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
+    this.onLanguageChanged,
     this.audioService,
     this.stringLoader,
   });
@@ -41,6 +45,11 @@ class CollocationsScreen extends StatefulWidget {
 }
 
 class _CollocationsScreenState extends State<CollocationsScreen> {
+  void _cambiarLingua(AppLanguage lang) {
+    setState(() => _language = lang);
+    widget.onLanguageChanged?.call(lang);
+  }
+
   late AppLanguage _language;
   List<Map<String, dynamic>>? _colocacions;
 
@@ -85,18 +94,10 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: const BotonAtras(),
-        title: Text(
-          isGl ? 'Colocacións e Gramática' : 'Colocaciones y Gramática',
-          style: const TextStyle(
-            color: AppTheme.textPrimary,
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
+      appBar: Cabecera(
+        titulo: isGl ? 'Colocacións' : 'Colocaciones',
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
       ),
       body: colocacions == null
           ? const Center(child: CircularProgressIndicator())
@@ -122,10 +123,10 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
                         const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
                     child: Text(
                       '${_txt(entrada.value.first['typeLabel'])} · ${entrada.value.length}',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
-                        color: AppTheme.primaryInk,
+                        color: context.acento,
                       ),
                     ),
                   ),
@@ -157,17 +158,18 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
               audioService: widget.audioService,
               texto: full,
               language: AppLanguage.en,
+              interfaz: _language,
               style: estiloIngles(full),
               comoChip: true,
-              colorChip: AppTheme.primaryDark,
+              colorChip: context.acento,
               descripcion: full,
             ),
             const SizedBox(height: 6),
             Text(
               _txt(c['translation']),
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 13.5,
-                color: AppTheme.primaryInk,
+                color: context.acento,
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -189,6 +191,7 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
                     audioService: widget.audioService,
                     texto: contexto,
                     language: AppLanguage.en,
+                    interfaz: _language,
                     style: estiloIngles(contexto),
                     compacto: true,
                   ),

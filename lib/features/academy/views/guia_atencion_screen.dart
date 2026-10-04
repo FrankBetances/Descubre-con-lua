@@ -10,8 +10,7 @@ import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/repositories/calendario_repository.dart';
-import '../widgets/selector_idioma_widget.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// La guía de la familia: cómo meter el inglés en la casa sin saturar.
 ///
@@ -48,9 +47,10 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
   /// Lo que impidió leer la guía, si pasó.
   String? _fallo;
 
-  static const _titulo = LocalizedString(
-    gl: 'Guía de inglés na casa',
-    es: 'Guía de inglés en casa',
+  /// El de la cabecera: el largo no cabe a 360 px junto al selector.
+  static const _tituloCurto = LocalizedString(
+    gl: 'Inglés na casa',
+    es: 'Inglés en casa',
   );
 
   static const _subtitulo = LocalizedString(
@@ -137,25 +137,10 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(
-          _titulo.resolve(_language),
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12.0),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-              // GL/ES, como el resto de la app: con el nombre entero
-              // («Galego», «Castellano») la barra desbordaba 119 px a escala
-              // de texto grande.
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: _tituloCurto.resolve(_language),
+        language: _language,
+        onLanguageChanged: _onToggleLanguage,
       ),
       // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
       // ya no reserva la barra de gestos y el final de esta pantalla
@@ -237,7 +222,7 @@ class _Kicker extends StatelessWidget {
   Widget build(BuildContext context) => Text(
         texto,
         style: Theme.of(context).textTheme.labelSmall?.copyWith(
-              color: AppTheme.primaryDark,
+              color: context.acento,
               fontWeight: FontWeight.w800,
               letterSpacing: 1.0,
             ),
@@ -272,18 +257,8 @@ class _SelectorTramos extends StatelessWidget {
             onSelected: (val) {
               if (val) onSeleccionar(i);
             },
-            selectedColor: AppTheme.primary,
-            backgroundColor: Colors.white,
-            labelStyle: TextStyle(
-              color: i == seleccionado ? Colors.white : AppTheme.textPrimary,
-              fontWeight:
-                  i == seleccionado ? FontWeight.bold : FontWeight.normal,
-            ),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
-              side: BorderSide(
-                color: i == seleccionado ? AppTheme.primary : AppTheme.border,
-              ),
             ),
           ),
       ],
@@ -333,10 +308,10 @@ class _TarjetaTramo extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CircleAvatar(
-                  backgroundColor: AppTheme.primaryLight,
+                  backgroundColor: context.acentoTint,
                   radius: 22,
                   child: Icon(iconoDeContenido(tramo.icono),
-                      color: AppTheme.primaryDark, size: 24),
+                      color: context.acento, size: 24),
                 ),
                 const SizedBox(width: AppTheme.spaceMd),
                 Expanded(
@@ -355,7 +330,7 @@ class _TarjetaTramo extends StatelessWidget {
                       Text(
                         '$tiempoSugerido ${tramo.minutosSugeridos} $minutos',
                         style: theme.textTheme.bodySmall?.copyWith(
-                          color: AppTheme.primaryDark,
+                          color: context.acento,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -398,6 +373,7 @@ class _TarjetaTramo extends StatelessWidget {
                 audioService: audioService,
                 texto: tramo.fraseIngles,
                 language: AppLanguage.en,
+                interfaz: lang,
                 comoChip: true,
               ),
             ],
@@ -412,13 +388,15 @@ class _Fila extends StatelessWidget {
   final String label;
   final String contenido;
   final IconData icono;
-  final Color colorIcono;
+
+  /// Sin color, el acento del portal.
+  final Color? colorIcono;
 
   const _Fila({
     required this.label,
     required this.contenido,
     required this.icono,
-    this.colorIcono = AppTheme.primaryDark,
+    this.colorIcono,
   });
 
   @override
@@ -427,11 +405,11 @@ class _Fila extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Icon(icono, size: 18, color: colorIcono),
+        Icon(icono, size: 18, color: colorIcono ?? context.acento),
         const SizedBox(width: 8),
         Expanded(
-          child: RichText(
-            text: TextSpan(
+          child: Text.rich(
+            TextSpan(
               style: theme.textTheme.bodyMedium?.copyWith(
                 color: AppTheme.textPrimary,
                 height: 1.3,
@@ -476,7 +454,7 @@ class _TarjetaRegla extends StatelessWidget {
               backgroundColor: AppTheme.pageBg,
               radius: 18,
               child: Icon(iconoDeContenido(regla.icono),
-                  size: 20, color: AppTheme.primaryDark),
+                  size: 20, color: context.acento),
             ),
             const SizedBox(width: AppTheme.spaceMd),
             Expanded(

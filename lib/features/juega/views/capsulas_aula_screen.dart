@@ -8,11 +8,11 @@ import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/views/capsula_detail_screen.dart';
 import '../../academy/widgets/academy_header.dart';
-import '../../academy/widgets/selector_idioma_widget.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../../premios/widgets/lua_game_strip.dart';
-import '../../../core/widgets/boton_atras.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../core/widgets/cabecera.dart';
 
 /// «Formación · Aula»: las cápsulas que lee la maestra.
 ///
@@ -105,17 +105,17 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
   IconData _iconForBloque(String iconKey) {
     switch (iconKey) {
       case 'ear_sparkles':
-        return Icons.graphic_eq_outlined;
+        return Icons.graphic_eq_rounded;
       case 'chat_bubble_heart':
-        return Icons.chat_bubble_outline;
+        return Icons.chat_bubble_rounded;
       case 'people_arrows':
-        return Icons.help_outline;
+        return Icons.help_rounded;
       case 'child_play':
-        return Icons.back_hand_outlined;
+        return Icons.back_hand_rounded;
       case 'home_globe':
-        return Icons.straighten_outlined;
+        return Icons.straighten_rounded;
       default:
-        return Icons.auto_stories_outlined;
+        return Icons.auto_stories_rounded;
     }
   }
 
@@ -125,19 +125,10 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
     final bloques = widget.repository.getAllBloquesAula();
 
     return Scaffold(
-      appBar: AppBar(
-        leading: const BotonAtras(),
-        title: Text(CapsulasAulaScreen.titulo.resolve(lang)),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: AppTheme.spaceMd),
-            child: SelectorIdiomaWidget(
-              currentLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-              compact: true,
-            ),
-          ),
-        ],
+      appBar: Cabecera(
+        titulo: CapsulasAulaScreen.titulo.resolve(lang),
+        language: _language,
+        onLanguageChanged: _onToggleLanguage,
       ),
       // targetSdk 36 obliga al borde a borde en Android 15+: la ventana
       // ya no reserva la barra de gestos y el final de esta pantalla
@@ -168,6 +159,7 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
                     children: [
                       if (widget.premios != null) ...[
                         LuaGameStrip(
+                          onLanguageChanged: _onToggleLanguage,
                           repository: widget.premios!,
                           perfil: Perfil.docente,
                           language: lang,
@@ -208,7 +200,8 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
                             onTap: primera == null
                                 ? null
                                 : () => Navigator.of(context).push(
-                                      MaterialPageRoute(
+                                      RutaLua(
+                                        de: context,
                                         builder: (context) =>
                                             CapsulaDetailScreen(
                                           capsula: primera,
