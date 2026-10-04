@@ -555,7 +555,9 @@ class ContentRepository {
       if (cmpCurso != 0) return cmpCurso;
       final cmpMes = a.mesNumero.compareTo(b.mesNumero);
       if (cmpMes != 0) return cmpMes;
-      final cmpSem = a.semanaSugerida.compareTo(b.semanaSugerida);
+      // Los de la semana, primero y por su semana; los que no son de ninguna,
+      // después.
+      final cmpSem = (a.semanaSugerida ?? 99).compareTo(b.semanaSugerida ?? 99);
       if (cmpSem != 0) return cmpSem;
       return a.id.compareTo(b.id);
     });

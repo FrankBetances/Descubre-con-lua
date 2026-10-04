@@ -22,6 +22,9 @@ import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart
 import 'package:descubre_con_lua/features/lectura/views/aprender_a_ler_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/seleccion/seleccion_portal_screen.dart';
+import 'package:descubre_con_lua/core/brand/lamina_vector.dart';
+import 'package:descubre_con_lua/features/laminas/views/laminas_gallery_screen.dart';
+import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 
 /// Que as pantallas novas CAIBAN nun teléfono, nas dúas linguas e coa escala de
 /// texto grande do sistema.
@@ -70,6 +73,20 @@ void main() {
     contidoLectura = await ContidoLectura.cargar(
       stringLoader: (path) => File(path).readAsString(),
     );
+
+    // Os debuxos das láminas, AQUÍ e non dentro de `testWidgets`: alí a
+    // lectura do paquete non remata, a tarxeta pintábase co marcador —máis
+    // baixo ca o debuxo— e o desborde de 22 px da reixa vella non se vía.
+    TestWidgetsFlutterBinding.ensureInitialized();
+    final laminas = jsonDecode(
+        File('assets/content/laminas/banco200_laminas.json')
+            .readAsStringSync()) as List;
+    for (final l in laminas) {
+      final clave = (l as Map)['lamina'];
+      if (clave is String && clave.isNotEmpty) {
+        await LaminasVectoriales.cargar(clave);
+      }
+    }
   });
 
   setUp(() async {
@@ -79,6 +96,9 @@ void main() {
     dir = await Directory.systemTemp.createTemp('portais_escala_');
     store = CalendarioStore(overrideDirectory: dir.path);
     await store.cargar();
+    // O Banco de Láminas lee as súas 205 do repositorio; lidas aquí, dentro
+    // do test xa están.
+    await repository.loadLaminas();
 
     repository.addCalendarioDia(const DiaCalendarioDual(
       dia: 1,
@@ -252,6 +272,8 @@ void main() {
             store: store,
             initialLanguage: lang,
             audioService: audioService,
+            // Fixo: se non, o que se mide cambia co día no que corre o test.
+            agora: DateTime(2026, 9, 7),
           ),
           escala,
         );
@@ -260,10 +282,30 @@ void main() {
             reason: 'O Calendario no Fogar desborda en $etiqueta.');
       });
 
+      testWidgets('o Banco de Láminas cabe en $etiqueta', (tester) async {
+        await pintar(
+          tester,
+          LaminasGalleryScreen(
+            repository: repository,
+            initialLanguage: lang,
+            audioService: audioService,
+          ),
+          escala,
+        );
+        // Debuxadas de verdade, non co marcador: se non, a tarxeta mide menos
+        // ca na app.
+        expect(find.byType(CustomPaint), findsWidgets);
+        await recorrer(tester);
+        expect(erroresDe(tester), isEmpty,
+            reason: 'O Banco de Láminas desborda en $etiqueta.');
+      });
+
       testWidgets('os Xogos no Fogar caben en $etiqueta', (tester) async {
         await pintar(
           tester,
           XogosFogarScreen(
+            observacions: ObservacionsXogosFogar.fromRaw(
+                File(ObservacionsXogosFogar.assetPath).readAsStringSync()),
             initialLanguage: lang,
             audioService: audioService,
           ),
@@ -358,7 +400,7 @@ void main() {
               audioService: audioService,
               semanaTpr: programaTpr
                   .curso(curso)!
-                  .semanaPorOrden(conto.mesNumero, conto.semanaSugerida),
+                  .semanaPorOrden(conto.mesNumero, conto.semanaSugerida!),
               dia: 1,
             ),
             escala,

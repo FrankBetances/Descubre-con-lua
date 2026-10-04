@@ -302,7 +302,7 @@ void main() {
         clave: 'espera_5s',
         nome: LocalizedString(gl: '5s', es: '5s'),
         subtitulo: LocalizedString(gl: 'Sub', es: 'Sub'),
-        baseNeurobioloxica: LocalizedString(gl: 'Base', es: 'Base'),
+        porQueFunciona: LocalizedString(gl: 'Base', es: 'Base'),
         comoAplicarNaAula: LocalizedString(gl: 'Aula', es: 'Aula'),
         exemploDialogoAula: LocalizedString(gl: 'Dialogo', es: 'Diálogo'),
         erroComunAEvitar: LocalizedString(gl: 'Erro', es: 'Error'),

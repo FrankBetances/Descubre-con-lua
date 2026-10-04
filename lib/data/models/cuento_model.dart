@@ -293,7 +293,11 @@ class Cuento {
   final String
       cursoId; // 'curso_0_2', 'curso_2_3', 'curso_3_4', 'curso_4_5', 'curso_5_6'
   final int mesNumero; // 1..10
-  final int semanaSugerida; // 1..4
+  /// La semana del mes (1..4) del cuento DE ESA SEMANA, el que lleva sus
+  /// palabras inglesas. Nulo en los que no son de ninguna semana: antes el
+  /// modelo les ponía la 1 y la biblioteca enseñaba tres cuentos con
+  /// «Semana 1» de los que solo uno lo era.
+  final int? semanaSugerida;
   final LocalizedString? cursoEtiqueta;
   final LocalizedString? mesNome;
   final LocalizedString? centroInteres;
@@ -325,6 +329,15 @@ class Cuento {
     required this.paginas,
     required this.preguntasGraduadas,
   });
+
+  /// Lleva las palabras inglesas de una semana dentro del texto.
+  bool get levaPalabras => paginas.any((p) => p.palabras.isNotEmpty);
+
+  /// Es el cuento de una semana: tiene semana y lleva sus palabras.
+  bool get eDaSemana => semanaSugerida != null && levaPalabras;
+
+  /// El mes del calendario (9..12, 1..6) del mes del curso (1..10).
+  int get mesCalendario => mesNumero <= 4 ? mesNumero + 8 : mesNumero - 4;
 
   factory Cuento.fromJson(Map<String, dynamic> json) {
     final rawPaginas = json['paginas'];
@@ -386,8 +399,7 @@ class Cuento {
           (json['mes_numero'] as num?)?.toInt() ??
           1,
       semanaSugerida: (json['semanaSugerida'] as num?)?.toInt() ??
-          (json['semana_sugerida'] as num?)?.toInt() ??
-          1,
+          (json['semana_sugerida'] as num?)?.toInt(),
       cursoEtiqueta: cursoEtiqueta,
       mesNome: mesNome,
       centroInteres: centro,
@@ -420,7 +432,7 @@ class Cuento {
         'id': id,
         'cursoId': cursoId,
         'mesNumero': mesNumero,
-        'semanaSugerida': semanaSugerida,
+        if (semanaSugerida != null) 'semanaSugerida': semanaSugerida,
         if (cursoEtiqueta != null) 'cursoEtiqueta': cursoEtiqueta!.toJson(),
         if (mesNome != null) 'mesNome': mesNome!.toJson(),
         if (centroInteres != null) 'centroInteres': centroInteres!.toJson(),

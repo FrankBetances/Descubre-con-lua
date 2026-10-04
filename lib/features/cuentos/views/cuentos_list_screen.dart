@@ -7,6 +7,7 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import 'cuento_viewer_screen.dart';
+import '../../juega/widgets/aula_ciclo_panel.dart';
 
 /// Catálogo y biblioteca de los contos pedagóxicos (5 cursos × 10 meses × 4
 /// semanas). El número de contos NO se escribe en el rótulo: lo cuenta la
@@ -230,10 +231,14 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                       audioService: widget.audioService,
                                       // Desde la biblioteca no hay «hoy»:
                                       // van las veinte de la semana.
-                                      semanaTpr: widget.repository
-                                          .cursoTprSync(cuento.cursoId)
-                                          ?.semanaPorOrden(cuento.mesNumero,
-                                              cuento.semanaSugerida),
+                                      semanaTpr: switch (
+                                          cuento.semanaSugerida) {
+                                        final semana? => widget.repository
+                                            .cursoTprSync(cuento.cursoId)
+                                            ?.semanaPorOrden(
+                                                cuento.mesNumero, semana),
+                                        null => null,
+                                      },
                                     ),
                                   ),
                                 );
@@ -296,20 +301,39 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                                 AppTheme.primaryLight,
                                                 AppTheme.primaryInk,
                                               ),
+                                              // El mes por su nombre: «Mes 2»
+                                              // obligaba a contar.
                                               _buildBadge(
-                                                lang == AppLanguage.gl
-                                                    ? 'Mes ${cuento.mesNumero}'
-                                                    : 'Mes ${cuento.mesNumero}',
+                                                nomeDoMes[cuento.mesCalendario]
+                                                        ?.resolve(lang) ??
+                                                    '',
                                                 AppTheme.primaryTint,
                                                 AppTheme.primaryDark,
                                               ),
-                                              _buildBadge(
-                                                lang == AppLanguage.gl
-                                                    ? 'Semana ${cuento.semanaSugerida}'
-                                                    : 'Semana ${cuento.semanaSugerida}',
-                                                AppTheme.primaryTint,
-                                                AppTheme.primaryDark,
-                                              ),
+                                              // La semana, solo en el cuento
+                                              // DE la semana, y dicho así:
+                                              // antes los que no son de
+                                              // ninguna llevaban también
+                                              // «Semana 1».
+                                              if (cuento.semanaSugerida
+                                                  case final semana?)
+                                                _buildBadge(
+                                                  cuento.levaPalabras
+                                                      ? (lang == AppLanguage.gl
+                                                          ? 'Conto da semana $semana'
+                                                          : 'Cuento de la semana $semana')
+                                                      : (lang == AppLanguage.gl
+                                                          ? 'Semana $semana'
+                                                          : 'Semana $semana'),
+                                                  // Blanco sobre primaryInk:
+                                                  // 5,16:1 (AA).
+                                                  cuento.levaPalabras
+                                                      ? AppTheme.primaryInk
+                                                      : AppTheme.primaryTint,
+                                                  cuento.levaPalabras
+                                                      ? Colors.white
+                                                      : AppTheme.primaryDark,
+                                                ),
                                               if (cuento.paginas.isNotEmpty)
                                                 _buildBadge(
                                                   lang == AppLanguage.gl

@@ -7,12 +7,16 @@
       "es": "Regla de Oro de los 5 Segundos de Espera Activa"
     },
     "subtitulo": {
-      "gl": "Dar tempo ao córtex prefrontal e ás vías auditivas sen anticiparse",
-      "es": "Dar tiempo a la corteza prefrontal y vías auditivas sin anticiparse"
+      "gl": "Dar tempo para pensar e responder, sen adiantarse",
+      "es": "Dar tiempo para pensar y responder, sin adelantarse"
     },
-    "baseNeurobioloxica": {
-      "gl": "O cerebro da crianza de 0 a 6 anos require entre 3 e 5 segundos para procesar a fonoloxía, recuperar o significado do léxico no hipocampo e planificar a resposta motriz nos beizos e lingua. A présa adulta bloquea o proceso e xera ansiedade.",
-      "es": "El cerebro infantil de 0 a 6 años requiere entre 3 y 5 segundos para procesar la fonología, recuperar el significado léxico en el hipocampo y planificar la respuesta motriz en labios y lengua. La prisa adulta bloquea el proceso y genera ansiedad."
+    "porQueFunciona": {
+      "gl": "Para responder, a criatura ten que entender a pregunta, buscar a palabra e dicila, e iso leva tempo. Se a persoa adulta se adianta, a resposta xa non é súa. En estudos con alumnado escolar, esperar tres segundos ou máis despois de preguntar fixo que respondesen máis, con respostas máis longas e menos silencios sen resposta.",
+      "es": "Para responder, la criatura tiene que entender la pregunta, buscar la palabra y decirla, y eso lleva tiempo. Si la persona adulta se adelanta, la respuesta ya no es suya. En estudios con alumnado escolar, esperar tres segundos o más después de preguntar hizo que respondieran más, con respuestas más largas y menos silencios sin respuesta."
+    },
+    "fonte": {
+      "gl": "Rowe, M. B. (1986). Wait time: Slowing down may be a way of speeding up! Journal of Teacher Education, 37, 43-50.",
+      "es": "Rowe, M. B. (1986). Wait time: Slowing down may be a way of speeding up! Journal of Teacher Education, 37, 43-50."
     },
     "comoAplicarNaAula": {
       "gl": "Tras facer unha pregunta ou amosar unha páxina do conto, gardar silencio absoluto durante 5 segundos con mirada acolledora e sorriso calmo. Contar mentalmente: \"mil un, mil dous, mil tres, mil catro, mil cinco\".",
@@ -42,9 +46,13 @@
       "gl": "Do literal (sinalar) ao inferencial (emocións) e crítico (crear)",
       "es": "De lo literal (señalar) a lo inferencial (emociones) y crítico (crear)"
     },
-    "baseNeurobioloxica": {
-      "gl": "O desenvolvemento das funcións executivas constrúese dende o recoñecemento sensorial primario cara ao razoamento abstracto e a empatía social (teoría da mente no lóbulo frontal).",
-      "es": "El desarrollo de las funciones ejecutivas se construye desde el reconocimiento sensorial primario hacia el razonamiento abstracto y la empatía social (teoría de la mente en el lóbulo frontal)."
+    "porQueFunciona": {
+      "gl": "Unha pregunta que a criatura pode responder anímaa a seguir, e a seguinte pide un pouco máis. É a andamiaxe: a persoa adulta axuda no paso que aínda custa e retírase cando xa non fai falta. Ler un conto preguntando e ampliando o que di a criatura axuda a que fale máis e mellor: nun estudo, as criaturas das familias que aprenderon a ler así levaban varios meses de adianto na linguaxe.",
+      "es": "Una pregunta que la criatura puede responder la anima a seguir, y la siguiente pide un poco más. Es el andamiaje: la persona adulta ayuda en el paso que aún cuesta y se retira cuando ya no hace falta. Leer un cuento preguntando y ampliando lo que dice la criatura ayuda a que hable más y mejor: en un estudio, las criaturas de las familias que aprendieron a leer así llevaban varios meses de adelanto en el lenguaje."
+    },
+    "fonte": {
+      "gl": "Wood, D., Bruner, J. S. e Ross, G. (1976). The role of tutoring in problem solving. Journal of Child Psychology and Psychiatry. · Whitehurst, G. J. e outros (1988). Accelerating language development through picture book reading. Developmental Psychology, 24, 552-559.",
+      "es": "Wood, D., Bruner, J. S. y Ross, G. (1976). The role of tutoring in problem solving. Journal of Child Psychology and Psychiatry. · Whitehurst, G. J. y otros (1988). Accelerating language development through picture book reading. Developmental Psychology, 24, 552-559."
     },
     "comoAplicarNaAula": {
       "gl": "Empezar polo Nivel 1 (¿Que animal ves aquí?), avanzar ao Nivel 2 (¿Por que pensas que ten frío?) e culminar no Nivel 3 (¿Se ti foses a gaivota, que farías?).",
@@ -74,9 +82,9 @@
       "gl": "Modelado fonolóxico e morfosintáctico expansivo sen castigo nin \"non\"",
       "es": "Modelado fonológico y morfosintáctico expansivo sin castigo ni \"no\""
     },
-    "baseNeurobioloxica": {
-      "gl": "A corrección punitiva directa activa a amígdala e o medo ao erro, inhibindo a área de Broca. Pola contra, o eco afirmativo e enriquecido almacénase na memoria de traballo como patrón sonoro correcto.",
-      "es": "La corrección punitiva directa activa la amígdala y el miedo al error, inhibiendo el área de Broca. Por contra, el eco afirmativo y enriquecido se almacena en la memoria de trabajo como patrón sonoro correcto."
+    "porQueFunciona": {
+      "gl": "Cando a persoa adulta repite o que dixo a criatura, ben dito e un pouco máis longo, a criatura escoita a forma correcta xusto despois do seu intento, sen que se corte a conversa nin se sinta corrixida. É o que fan moitas familias sen pensalo; en investigación chámase reformulación (en inglés, «recast»).",
+      "es": "Cuando la persona adulta repite lo que dijo la criatura, bien dicho y un poco más largo, la criatura oye la forma correcta justo después de su intento, sin que se corte la conversación ni se sienta corregida. Es lo que hacen muchas familias sin pensarlo; en investigación se llama reformulación (en inglés, «recast»)."
     },
     "comoAplicarNaAula": {
       "gl": "Cando unha crianza diga unha palabra incompleta ou con erro gramatical, a docente repite a frase de xeito natural, correcto e ampliado, mantendo o entusiasmo da conversa.",
@@ -99,16 +107,20 @@
     "id": "est-cero-pantallas",
     "clave": "cero_pantallas",
     "nome": {
-      "gl": "Compromiso Neurobiolóxico Cero Pantallas (0 a 6 Anos)",
-      "es": "Compromiso Neurobiológico Cero Pantallas (0 a 6 Años)"
+      "gl": "Compromiso Cero Pantallas (0 a 6 Anos)",
+      "es": "Compromiso Cero Pantallas (0 a 6 Años)"
     },
     "subtitulo": {
       "gl": "Protexer a atención sostida, a mirada humana e o sono profundo",
       "es": "Proteger la atención sostenida, la mirada humana y el sueño profundo"
     },
-    "baseNeurobioloxica": {
-      "gl": "A luz azul e os cambios de plano hiperexcitantes das pantallas inundan o cerebro inmaturo de dopamina rápida, atrofian o tempo de atención sostida e impiden a maduración do córtex prefrontal dorsolateral.",
-      "es": "La luz azul y los cambios de plano hiperexcitantes de las pantallas inundan el cerebro inmaduro de dopamina rápida, atrofian el tiempo de atención sostenida e impiden la maduración de la corteza prefrontal dorsolateral."
+    "porQueFunciona": {
+      "gl": "As criaturas pequenas aprenden a falar conversando con persoas: miradas, quendas, voz e xestos. O tempo diante dunha pantalla é tempo sen esa conversa nin xogo activo. A OMS non recomenda pantallas para bebés e, cando a criatura está quieta, anima a ler e contar contos cunha persoa adulta.",
+      "es": "Las criaturas pequeñas aprenden a hablar conversando con personas: miradas, turnos, voz y gestos. El tiempo delante de una pantalla es tiempo sin esa conversación ni juego activo. La OMS no recomienda pantallas para bebés y, cuando la criatura está quieta, anima a leer y contar cuentos con una persona adulta."
+    },
+    "fonte": {
+      "gl": "Organización Mundial da Saúde (2019). Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age.",
+      "es": "Organización Mundial de la Salud (2019). Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age."
     },
     "comoAplicarNaAula": {
       "gl": "Todas as interaccións son con persoas de carne e óso, materiais manipulativos naturais (madeira, la, arxila, pedras) e voz viva con instrumentos acústicos reais.",
@@ -131,16 +143,20 @@
     "id": "est-bano-linguaxe",
     "clave": "bano_linguaxe",
     "nome": {
-      "gl": "Baño de Linguaxe Prosódica e Riqueza Léxica (BNC/COCA)",
-      "es": "Baño de Lenguaje Prosódico y Riqueza Léxica (BNC/COCA)"
+      "gl": "Baño de Linguaxe Prosódica e Riqueza Léxica",
+      "es": "Baño de Lenguaje Prosódico y Riqueza Léxica"
     },
     "subtitulo": {
       "gl": "Narración rica, sinónimos precisos e prosodia melódica constante",
       "es": "Narración rica, sinónimos precisos y prosodia melódica constante"
     },
-    "baseNeurobioloxica": {
-      "gl": "O córtex auditivo analiza a melodía e a frecuencia das palabras antes do significado estrito. Un vocabulario diverso e preciso estimula a sinaptoxénese nas áreas temporais e parietais.",
-      "es": "La corteza auditiva analiza la melodía y la frecuencia de las palabras antes del significado estricto. Un vocabulario diverso y preciso estimula la sinaptogénesis en las áreas temporales y parietales."
+    "porQueFunciona": {
+      "gl": "As criaturas aprenden as palabras que escoitan. Falarlles con palabras variadas e precisas, e non só con diminutivos, dálles máis palabras que aprender: o vocabulario variado que escoitan arredor dos dous anos e medio axuda a explicar o vocabulario que teñen un ano despois.",
+      "es": "Las criaturas aprenden las palabras que escuchan. Hablarles con palabras variadas y precisas, y no solo con diminutivos, les da más palabras que aprender: el vocabulario variado que escuchan alrededor de los dos años y medio ayuda a explicar el vocabulario que tienen un año después."
+    },
+    "fonte": {
+      "gl": "Rowe, M. L. (2012). A longitudinal investigation of the role of quantity and quality of child-directed speech in vocabulary development. Child Development, 83(5), 1762-1774.",
+      "es": "Rowe, M. L. (2012). A longitudinal investigation of the role of quantity and quality of child-directed speech in vocabulary development. Child Development, 83(5), 1762-1774."
     },
     "comoAplicarNaAula": {
       "gl": "Non empobrecer a linguaxe con diminutivos excesivos. Empregar palabras precisas (\"diminuto\", \"xigantesco\", \"brumoso\", \"cristalino\") e acompañalas de entoación expresiva.",

@@ -4,6 +4,8 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
+import '../../../core/widgets/que_observar.dart';
+import '../../../data/models/xogos_fogar_observar_model.dart';
 
 /// Modelo dun xogo ou dinámica física no fogar sen pantallas infantís.
 class XogoFogarItem {
@@ -48,15 +50,20 @@ class XogoFogarItem {
 ///
 /// Baseada en `/tangible-l2-parent-orchestrator`:
 /// 1. Espazo Físico do Neno: manipulativo, cinestésico e puramente acústico (Cero Pantallas).
-/// 2. Espazo Dixital do Adulto: partitura de facilitación, comando TPR e rexistro de 1 toque.
+/// 2. Espazo Dixital do Adulto: partitura de facilitación, comando TPR e «Que observar».
 class XogosFogarScreen extends StatefulWidget {
   final AppLanguage initialLanguage;
   final OfflineAudioService? audioService;
+
+  /// O «Que observar» de cada xogo, se quen abre a pantalla xa o leu. Existe
+  /// polo mesmo que en «Aprender a Ler»: un test ten que poder darllo feito.
+  final ObservacionsXogosFogar? observacions;
 
   const XogosFogarScreen({
     super.key,
     this.initialLanguage = AppLanguage.gl,
     this.audioService,
+    this.observacions,
   });
 
   @override
@@ -66,8 +73,7 @@ class XogosFogarScreen extends StatefulWidget {
 class _XogosFogarScreenState extends State<XogosFogarScreen> {
   late AppLanguage _language;
   String _filtroIdade = 'todas';
-  final Map<String, String> _rexistroObservacional =
-      {}; // id -> 'L' | 'A' | 'E'
+  ObservacionsXogosFogar? _observacions;
 
   static const List<XogoFogarItem> _xogos = [
     XogoFogarItem(
@@ -151,10 +157,8 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       duracionMin: 3,
       materiaisGl: 'Unha cuncha grande de Samil ou un vaso de plástico limpo',
       materiaisEs: 'Una concha grande de Samil o un vaso de plástico limpio',
-      obxectivoGl:
-          'Atención auditiva focalizada e silencio clínico tranquilizador',
-      obxectivoEs:
-          'Atención auditiva focalizada y silencio clínico tranquilizador',
+      obxectivoGl: 'Atención auditiva e un silencio tranquilo',
+      obxectivoEs: 'Atención auditiva y un silencio tranquilo',
       fraseEn: 'Listen close, hear the gentle sea!',
       guionAdultoGl:
           'Achega a cuncha á orella do neno/a. Respira amodiño: «Shhh... Escoitas o mar de Vigo?».',
@@ -201,9 +205,8 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
       duracionMin: 4,
       materiaisGl: 'Crema hidratante ou aceite suave, toalla tépeda',
       materiaisEs: 'Crema hidratante o aceite suave, toalla tibia',
-      obxectivoGl: 'Regulación do ton muscular, calma parasimpática e vínculo',
-      obxectivoEs:
-          'Regulación del tono muscular, calma parasimpática y vínculo',
+      obxectivoGl: 'Calma, contacto e vínculo',
+      obxectivoEs: 'Calma, contacto y vínculo',
       fraseEn: 'Soft and warm, gentle little arms!',
       guionAdultoGl:
           'Acaricia as costas ou as pernas ao compás dun pulso de corazón tranquilo (un toque por segundo).',
@@ -331,6 +334,12 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
   void initState() {
     super.initState();
     _language = widget.initialLanguage;
+    _observacions = widget.observacions;
+    if (_observacions == null) {
+      ObservacionsXogosFogar.cargar().then((o) {
+        if (mounted) setState(() => _observacions = o);
+      });
+    }
   }
 
   @override
@@ -451,8 +460,6 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
   }
 
   Widget _buildCardXogo(XogoFogarItem xogo, bool isGl) {
-    final estadoObservacional = _rexistroObservacional[xogo.id];
-
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
       shape: RoundedRectangleBorder(
@@ -638,154 +645,12 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
             ),
             const SizedBox(height: 14),
 
-            // Rexistro Observacional de 1 Toque (Pilar 5)
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-              decoration: BoxDecoration(
-                color: const Color(0xFFF7FAFC),
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFFE2E8F0)),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 2,
-                    crossAxisAlignment: WrapCrossAlignment.center,
-                    children: [
-                      const Text(
-                        'Observación 1-Toque:',
-                        style: TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.bold,
-                          color: AppTheme.textSecondary,
-                        ),
-                      ),
-                      if (estadoObservacional != null)
-                        Text(
-                          estadoObservacional == 'L'
-                              ? (isGl ? 'Logrado' : 'Logrado')
-                              : estadoObservacional == 'A'
-                                  ? (isGl ? 'Asistido' : 'Asistido')
-                                  : (isGl ? 'Explorando' : 'Explorando'),
-                          style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.bold,
-                            color: estadoObservacional == 'L'
-                                ? Colors.green[700]
-                                : estadoObservacional == 'A'
-                                    ? Colors.blue[700]
-                                    : Colors.orange[700],
-                          ),
-                        ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () => setState(
-                              () => _rexistroObservacional[xogo.id] = 'L'),
-                          style: OutlinedButton.styleFrom(
-                            backgroundColor: estadoObservacional == 'L'
-                                ? const Color(0xFFC6F6D5)
-                                : Colors.white,
-                            side: BorderSide(
-                              color: estadoObservacional == 'L'
-                                  ? const Color(0xFF38A169)
-                                  : const Color(0xFFCBD5E0),
-                            ),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 4, vertical: 8),
-                            minimumSize: const Size(0, 36),
-                          ),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(
-                              isGl ? '[L] Logrado' : '[L] Logrado',
-                              style: TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.bold,
-                                color: estadoObservacional == 'L'
-                                    ? const Color(0xFF22543D)
-                                    : AppTheme.textPrimary,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 6),
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () => setState(
-                              () => _rexistroObservacional[xogo.id] = 'A'),
-                          style: OutlinedButton.styleFrom(
-                            backgroundColor: estadoObservacional == 'A'
-                                ? const Color(0xFFBEE3F8)
-                                : Colors.white,
-                            side: BorderSide(
-                              color: estadoObservacional == 'A'
-                                  ? const Color(0xFF3182CE)
-                                  : const Color(0xFFCBD5E0),
-                            ),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 4, vertical: 8),
-                            minimumSize: const Size(0, 36),
-                          ),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(
-                              isGl ? '[A] Asistido' : '[A] Asistido',
-                              style: TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.bold,
-                                color: estadoObservacional == 'A'
-                                    ? const Color(0xFF2A4365)
-                                    : AppTheme.textPrimary,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 6),
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () => setState(
-                              () => _rexistroObservacional[xogo.id] = 'E'),
-                          style: OutlinedButton.styleFrom(
-                            backgroundColor: estadoObservacional == 'E'
-                                ? const Color(0xFFFEEBC8)
-                                : Colors.white,
-                            side: BorderSide(
-                              color: estadoObservacional == 'E'
-                                  ? const Color(0xFFDD6B20)
-                                  : const Color(0xFFCBD5E0),
-                            ),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 4, vertical: 8),
-                            minimumSize: const Size(0, 36),
-                          ),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(
-                              isGl ? '[E] Explorando' : '[E] Explorando',
-                              style: TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.bold,
-                                color: estadoObservacional == 'E'
-                                    ? const Color(0xFF7B341E)
-                                    : AppTheme.textPrimary,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+            // Que observar: pistas que se len e non se marcan. Antes era un
+            // rexistro «Logrado · Asistido · Explorando» que pedía á familia
+            // avaliar a súa criatura e non gardaba nada.
+            QueObservar(
+              pistas: _observacions?.de(xogo.id) ?? const [],
+              language: _language,
             ),
           ],
         ),

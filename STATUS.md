@@ -9,6 +9,119 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L0 de la revisión de interfaz: los errores que se ven hoy (4/10/2026)
+
+Rama `claude/ux-l0`, que sale de `main` y se integra en `main` por pull request.
+
+Es el primero de los lotes de la revisión de interfaz que Frank aprobó al decir
+«Continúa» a la recomendación (L0 → L1 → L2 → L3 → L4). Ocho arreglos, cada uno
+con un test en `test/features/ux_l0_test.dart` que falla con el código de antes.
+
+Qué cambia en pantalla:
+
+- **C1 · El calendario de casa abre en el día que toca.** «O teu xogo de 3 min
+  de hoxe» abría siempre en septiembre: el 2 de octubre una familia leía el
+  juego de la semana 1 de septiembre sin ningún aviso. Ahora sale el mes, la
+  semana y el día con la misma cuenta que «Hoxe na aula», y la tira de meses
+  lleva el de hoy a la vista. Comprobado con el test (2/10, 17/3 y 15/7, que
+  falla con el código de antes en los tres) y en la app de escritorio el 3/10:
+  octubre, lunes de la semana 1, en gallego y en castellano
+  (`docs/capturas/l0-c1-calendario-casa-{gl,es}.png`).
+- **C2 · La tarjeta del vocabulario dice lo que hay.** «Corpus 8.000 Palabras
+  (BNC/COCA)… CEFR (A1-C2)» pasa a «Vocabulario de uso habitual · 3.995
+  palabras de las más frecuentes del inglés (bandas 1k-4k), con definición,
+  frase y sonido». Test y capturas `l0-c2-vocabulario-{gl,es}.png`. El título de
+  la pantalla a la que lleva sigue siendo «4.000 palabras de uso habitual»:
+  unificar los nombres es el lote L5.
+- **C3 · Fuera los botones para calificar a la criatura.** «Logrado · Asistido ·
+  Explorando» pedía a la familia evaluar a su hija o hijo y no guardaba nada. En
+  su lugar, «Que observar», como en STEAM: tres pistas cortas por actividad que
+  se leen y no se marcan, en las cuatro pestañas de Aprender a Ler y en los diez
+  juegos de casa. Las pistas viven en `assets/content/lectura/aprender_a_ler.json`
+  y en `assets/content/xogos_fogar_observar.json`, en gallego y castellano; no
+  tienen voz. Test (contenido y pantallas) y capturas
+  `l0-c3-aprender-a-ler-{gl,es}.png` y `l0-c3-xogos-casa-{gl,es}.png`.
+- **C4 · Las láminas ya no se salen de su tarjeta.** La rejilla de proporción
+  fija desbordaba 22 px; ahora cada fila mide lo que pide su tarjeta más alta y
+  el título baja hasta tres líneas. El Banco de Láminas entra en
+  `portales_escala_test.dart`, en las dos lenguas y con letra grande; ahí
+  apareció además un desborde de 168 px del contador con letra grande, también
+  arreglado. Con la pantalla de antes el test falla en los cuatro casos.
+  Capturas `l0-c4-laminas-{gl,es}.png`.
+- **C5 · Los cuentos sin semana ya no dicen «Semana 1».** El modelo les ponía
+  la 1 cuando el JSON no traía semana; ahora la semana es nula. El mes va por su
+  nombre («Outubro», no «Mes 2»), el cuento de cada semana lleva «Conto da
+  semana N», va el primero dentro de su mes, y la cabecera del visor dice
+  «0-2 anos · Outubro» en vez de «CURSO_0_2 · Mes 2 · Semana 1». Test y
+  capturas `l0-c5-biblioteca-{gl,es}.png` y `l0-c5-visor-{gl,es}.png`.
+- **A5 · Fuera las afirmaciones cerebrales sin fuente.** «Sincronización
+  vagal», «baixar o cortisol», «ton vagal», «regulación parasimpática» en las
+  dinámicas; cuatro frases del calendario repetidas en 80 días («nervio vago»,
+  «córtex prefrontal», «inhibición motriz prefrontal», «relaxación muscular
+  parasimpática») y el currículo de donde salen; y en Estratexias, la «base
+  neurobiolóxica» entera (hipocampo, amígdala, dopamina, «teoría da mente no
+  lóbulo frontal»). Ahora cada estrategia dice «Por que funciona» en lenguaje de
+  aula, y cuatro de las cinco llevan su fuente: Rowe (1986), Wood, Bruner y Ross
+  (1976) con Whitehurst y otros (1988), la guía de la OMS de 2019 y Rowe (2012).
+  Cada una se comprobó antes de escribirla: Rowe (2012) en PubMed; Wood, Bruner
+  y Ross en Consensus; las demás con el buscador. La de la reformulación va sin
+  fuente porque no tengo una comprobada. En los juegos de casa, «silencio
+  clínico» y «calma parasimpática» también se van. Un test busca esos términos
+  en los cuatro ficheros y en la pantalla de juegos. Capturas
+  `l0-a5-estratexias-{gl,es}.png` y `l0-a5-dinamicas-{gl,es}.png`.
+- **M2 · «Xoga con Lúa» en la interfaz gallega**, en el título del Modo Aula,
+  su tarjeta del Portal Docentes y la elección de portal, donde además
+  «asambleas» pasa a «asembleas». Test y captura `l0-m2-xoga-con-lua-gl.png`.
+- **M7 · Volver, en el reproductor de la asamblea.** «Anterior» se partía en
+  dos líneas a 360 px. Ahora es un botón cuadrado de 64 dp con la flecha y su
+  nombre para TalkBack, y «Seguinte fase» ocupa el resto. Al mirarlo en la app
+  apareció otro fallo: el tema da fondo blanco a los botones de borde y la
+  flecha clara quedaba encima a 1,09:1, casi invisible; ahora va sobre la
+  superficie oscura del reproductor, a 14,65:1. El test mide con la tipografía
+  real (Nunito): con la de antes, «Anterior» ocupa dos líneas y falla. Capturas
+  `l0-m7-reprodutor-{gl,es}.png`.
+
+Cómo se comprobó todo:
+
+- `tools/gates.sh --fast` en local: los 20 gates en verde, con 859 tests.
+- La app de escritorio, recorrida por el camino de cada punto, en gallego y en
+  castellano. Las 21 capturas están en `docs/capturas/` y las explica su README.
+- Las 46 capturas del manual, regeneradas una a una con
+  `test/capturas_test.dart`: en una sola tanda la ejecución se queda parada en
+  la del cuento de la semana, que sola tarda diez segundos. Varias ya estaban
+  desfasadas antes de este lote —el selector de lengua de la bienvenida y las
+  comillas “” de las sesiones STEAM, un cambio de esta misma serie que no las
+  rehízo—; las del calendario y la asamblea enseñan ahora octubre, porque
+  pintan el día en que se generan.
+- El PDF y el Word del manual, reconstruidos con esas capturas y mirados página
+  a página: 26 páginas cada uno, el PDF pasado a imágenes con `pdftoppm` y el
+  Word convertido con LibreOffice. Ninguna figura se sale de la página.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android.**
+- Las pistas de «Que observar» las escribió Claude Code. Ninguna maestra ni
+  persona experta en atención temprana las ha revisado.
+
+### Visto y no tocado
+
+No estaba en el lote; queda dicho para que Frank decida:
+
+- En la interfaz castellana salen palabras gallegas: «Día 21 **do** curso» en el
+  calendario de casa y «VENRES» en la dinámica del viernes.
+- En el reproductor de la asamblea, la consigna larga de la fase TPR se corta
+  con puntos suspensivos («…Non pidas n…»).
+- La dinámica del viernes propone un «difusor de esencias naturais de lavanda ou
+  eucalipto» en un aula de 0 a 6 años. Conviene revisarlo con criterio de
+  seguridad infantil.
+- Los pares mínimos piden tapar la boca con un papel «para que a crianza non lea
+  os teus beizos». Para una criatura con audífono o implante, eso le quita el
+  apoyo de la lectura labial.
+- La cápsula de Academy «Como se aprende a falar» y la formación de familias
+  hablan de «circuítos neurais» y de que «o seu cerebro xa comprendeu», sin
+  fuente. No contienen los términos del lote A5.
+- «1 láminas dispoñibles», en plural.
+
 ## El vocabulario inglés de uso habitual, escrito a mano (3/10/2026)
 
 **En `main`**, por la pull request #8 (merge `fa36eb78`). Comprobado con el run

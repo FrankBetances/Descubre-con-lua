@@ -10,12 +10,12 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/boton_atras.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
-import '../../../data/models/progresion_model.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/widgets/selector_idioma_widget.dart';
+import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../steam/widgets/steam_comun.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../widgets/palabras_do_dia.dart';
@@ -38,6 +38,9 @@ class CalendarioFogarScreen extends StatefulWidget {
   final ValueChanged<AppLanguage>? onLanguageChanged;
   final String? initialCursoId;
 
+  /// Para los tests: el día que se quiere ver. Por defecto, hoy.
+  final DateTime? agora;
+
   const CalendarioFogarScreen({
     super.key,
     required this.repository,
@@ -46,6 +49,7 @@ class CalendarioFogarScreen extends StatefulWidget {
     this.audioService,
     this.onLanguageChanged,
     this.initialCursoId,
+    this.agora,
   });
 
   @override
@@ -55,13 +59,15 @@ class CalendarioFogarScreen extends StatefulWidget {
 class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
   late AppLanguage _language;
   late String _cursoSeleccionado;
-  int _mesIndex = 0; // 0..9 (Setembro=0..Xuño=9)
+  late int _mesIndex; // 0..9 (Setembro=0..Xuño=9)
   int _semana = 1; // 1..4
   int _diaSemana = 1; // 1..5 (Luns a Venres)
   List<DiaCalendarioDual> _diasDoMes = const [];
   CalendarioContenido? _contenido;
   bool _isLoading = true;
   bool _amosarReixaCompleta = true;
+  final List<GlobalKey> _chavesMeses =
+      List.generate(_mesesNomes.length, (_) => GlobalKey());
 
   static const List<Map<String, String>> _cursos = [
     {'id': 'curso_0_2', 'gl': '0-2 anos (Nido)', 'es': '0-2 años (Nido)'},
@@ -113,7 +119,11 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
     super.initState();
     _language = widget.initialLanguage;
     _cursoSeleccionado = widget.initialCursoId ?? _cursos.first['id']!;
-    final hoxe = ProgresionDoMes.hoxe();
+    // Abre no día que toca, coa MESMA conta que «Hoxe na aula»: antes abría
+    // sempre en setembro e, de outubro a xuño, a familia lía o xogo doutro mes
+    // sen aviso.
+    final hoxe = diaDoCursoParaHoxe(agora: widget.agora).dia;
+    _mesIndex = _indiceDoMes(hoxe.mesCalendario);
     _semana = hoxe.semana;
     _diaSemana = hoxe.dia;
 
@@ -134,6 +144,18 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
     _cargarDias();
   }
 
+  /// Leva á vista, na tira, a pastilla do mes elixido.
+  void _amosarMesElixido() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final ctx = _chavesMeses[_mesIndex].currentContext;
+      final pastilla = ctx?.findRenderObject();
+      if (!mounted || ctx == null || pastilla == null) return;
+      // Só a tira de meses: `Scrollable.ensureVisible` moveríaas todas, e a
+      // páxina saltaría ao cambiar de curso coa lista un pouco baixada.
+      Scrollable.of(ctx).position.ensureVisible(pastilla, alignment: 0.5);
+    });
+  }
+
   Future<void> _cargarDias() async {
     setState(() => _isLoading = true);
     final mesNumero = _mesIndex + 1;
@@ -146,6 +168,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
       _diasDoMes = dias;
       _isLoading = false;
     });
+    _amosarMesElixido();
   }
 
   DiaCalendarioDual? get _diaActual {
@@ -276,51 +299,26 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   _buildTrimesterBar(isGl),
                   const SizedBox(height: 8),
 
-                  // 3. Os dez meses do curso elixido
+                  // 3. Os dez meses do curso elixido. Todos construídos (son
+                  // dez) para poder levar á vista o do día: se abre en marzo,
+                  // a tira non pode quedar en setembro-decembro.
                   SizedBox(
                     height: 38,
-                    child: ListView.separated(
+                    child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
-                      itemCount: _mesesNomes.length,
-                      separatorBuilder: (_, __) => const SizedBox(width: 6),
-                      itemBuilder: (context, index) {
-                        final isSel = _mesIndex == index;
-                        final mesNome = isGl
-                            ? _mesesNomes[index]['gl']!
-                            : _mesesNomes[index]['es']!;
-                        return ChoiceChip(
-                          label: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(mesNome),
-                          ),
-                          selected: isSel,
-                          onSelected: (selected) {
-                            if (selected && _mesIndex != index) {
-                              setState(() => _mesIndex = index);
-                              _cargarDias();
-                            }
-                          },
-                          selectedColor: const Color(0xFFE2E8F0),
-                          backgroundColor: Colors.white,
-                          labelStyle: TextStyle(
-                            color: isSel
-                                ? AppTheme.primaryInk
-                                : AppTheme.textSecondary,
-                            fontWeight:
-                                isSel ? FontWeight.w800 : FontWeight.w500,
-                            fontSize: 12,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16),
-                            side: BorderSide(
-                              color: isSel
-                                  ? AppTheme.primaryVigoBlue
-                                  : const Color(0xFFCBD5E0),
-                              width: isSel ? 1.5 : 1.0,
+                      child: Row(
+                        children: [
+                          for (var index = 0;
+                              index < _mesesNomes.length;
+                              index++)
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  right:
+                                      index < _mesesNomes.length - 1 ? 6 : 0),
+                              child: _chipDoMes(index, isGl),
                             ),
-                          ),
-                        );
-                      },
+                        ],
+                      ),
                     ),
                   ),
                   const SizedBox(height: 14),
@@ -750,6 +748,41 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   ),
                 ],
               ),
+      ),
+    );
+  }
+
+  /// Unha pastilla da tira de meses, coa súa chave para levala á vista.
+  Widget _chipDoMes(int index, bool isGl) {
+    final isSel = _mesIndex == index;
+    final mesNome =
+        isGl ? _mesesNomes[index]['gl']! : _mesesNomes[index]['es']!;
+    return ChoiceChip(
+      key: _chavesMeses[index],
+      label: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(mesNome),
+      ),
+      selected: isSel,
+      onSelected: (selected) {
+        if (selected && _mesIndex != index) {
+          setState(() => _mesIndex = index);
+          _cargarDias();
+        }
+      },
+      selectedColor: const Color(0xFFE2E8F0),
+      backgroundColor: Colors.white,
+      labelStyle: TextStyle(
+        color: isSel ? AppTheme.primaryInk : AppTheme.textSecondary,
+        fontWeight: isSel ? FontWeight.w800 : FontWeight.w500,
+        fontSize: 12,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+        side: BorderSide(
+          color: isSel ? AppTheme.primaryVigoBlue : const Color(0xFFCBD5E0),
+          width: isSel ? 1.5 : 1.0,
+        ),
       ),
     );
   }

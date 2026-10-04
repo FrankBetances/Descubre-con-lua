@@ -10,10 +10,10 @@ import '../../../data/repositories/content_repository.dart';
 ///
 /// **Cuidado con la palabra «evidencia».** Este catálogo llegó rotulado como
 /// «baseadas en evidencia científica» y con un apartado titulado «Base
-/// Neurobiolóxica», y ni el modelo de datos ni el contenido traen UNA sola
-/// referencia que sostenga eso. Son buenas prácticas de aula, que es mucho, y
-/// se presentan como lo que son: sin cita no se dice «evidencia», y esta app
-/// declara que no tiene finalidad sanitaria.
+/// Neurobiolóxica» —el hipocampo, la amígdala, la dopamina— sin UNA sola
+/// referencia. Ahora «Por que funciona» dice lo que la docente hace y por qué,
+/// en lenguaje de aula, y lleva su fuente solo donde hay una comprobada. Sin
+/// cita no se dice «evidencia», y esta app no tiene finalidad sanitaria.
 class EstrategiasScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
@@ -159,9 +159,21 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                           title: lang == AppLanguage.gl
                               ? 'Por que funciona'
                               : 'Por qué funciona',
-                          content: est.baseNeurobioloxica.resolve(lang),
+                          content: est.porQueFunciona.resolve(lang),
                           color: AppTheme.primaryInk,
                         ),
+                        if (est.fonte case final fonte?) ...[
+                          const SizedBox(height: 6),
+                          Text(
+                            '${lang == AppLanguage.gl ? 'Fonte' : 'Fuente'}: ${fonte.resolve(lang)}',
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontStyle: FontStyle.italic,
+                              color: AppTheme.textSecondary,
+                              height: 1.35,
+                            ),
+                          ),
+                        ],
 
                         const SizedBox(height: 10),
 

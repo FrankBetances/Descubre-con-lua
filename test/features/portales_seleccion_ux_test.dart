@@ -22,6 +22,7 @@ import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart
 import 'package:descubre_con_lua/features/lectura/views/aprender_a_ler_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/seleccion/seleccion_portal_screen.dart';
+import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 
 Widget _wrap(Widget child) =>
     MaterialApp(theme: AppTheme.lightTheme, home: child);
@@ -324,8 +325,8 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
-      await _ataVer(tester, find.text('Juega con Lúa · Modo Aula'));
-      expect(find.text('Juega con Lúa · Modo Aula'), findsOneWidget);
+      await _ataVer(tester, find.text('Xoga con Lúa · Modo Aula'));
+      expect(find.text('Xoga con Lúa · Modo Aula'), findsOneWidget);
       await _ataVer(tester, find.text('Planificador curricular'));
       expect(find.text('Planificador curricular'), findsOneWidget);
       // Frank: «solo deja planificador curricular, elimina donde dice 50 meses».
@@ -339,8 +340,8 @@ void main() {
       expect(find.text('Dinámicas de Aula Activa'), findsOneWidget);
       await _ataVer(tester, find.text('STEAM · Ciencia coas mans'));
       expect(find.text('STEAM · Ciencia coas mans'), findsOneWidget);
-      await _ataVer(tester, find.text('Corpus 8.000 Palabras (BNC/COCA)'));
-      expect(find.text('Corpus 8.000 Palabras (BNC/COCA)'), findsOneWidget);
+      await _ataVer(tester, find.text('Vocabulario de uso habitual'));
+      expect(find.text('Vocabulario de uso habitual'), findsOneWidget);
     });
   });
 
@@ -355,6 +356,8 @@ void main() {
           store: calendarioStore,
           initialLanguage: AppLanguage.gl,
           audioService: audioService,
+          // Un luns de setembro: o test le o primeiro día do curso.
+          agora: DateTime(2026, 9, 7),
         ),
       ));
       await tester.pumpAndSettle();
@@ -619,12 +622,16 @@ void main() {
 
   group('Xogos Físicos e Dinámicas no Fogar (Zero-Screen TPR)', () {
     testWidgets(
-        'renderiza o catálogo de xogos corporais e rexistro observacional',
+        'renderiza o catálogo de xogos corporais e o «Que observar» de cada un',
         (tester) async {
       _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
-        const XogosFogarScreen(
+        XogosFogarScreen(
           initialLanguage: AppLanguage.gl,
+          // Lido de forma síncrona: dentro de `testWidgets` unha lectura
+          // asíncrona do disco non remata.
+          observacions: ObservacionsXogosFogar.fromRaw(
+              File(ObservacionsXogosFogar.assetPath).readAsStringSync()),
         ),
       ));
       await tester.pumpAndSettle();
@@ -636,10 +643,12 @@ void main() {
       await _ataVer(tester, find.text('XOGO 100% CORPORAL E FÍSICO'));
       expect(find.text('XOGO 100% CORPORAL E FÍSICO'), findsOneWidget);
 
-      // Rexistro 1-toque
-      expect(find.text('[L] Logrado'), findsWidgets);
-      await tester.tap(find.text('[L] Logrado').first);
-      await tester.pumpAndSettle();
+      // Que observar, que se le e non se marca: xa non hai botóns para
+      // avaliar a criatura.
+      expect(find.text('[L] Logrado'), findsNothing);
+      await _ataVer(tester, find.text('Que observar').first);
+      expect(find.text('Que observar'), findsWidgets);
+      expect(find.text('Busca coa mirada antes de moverse.'), findsOneWidget);
     });
   });
 }

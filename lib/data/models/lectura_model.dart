@@ -197,12 +197,16 @@ class ActividadeConciencia {
   final LocalizedString descricion;
   final LocalizedString tpr;
 
+  /// Qué puede notar la persona adulta mientras juegan. No se marca ni se guarda.
+  final List<LocalizedString> queObservar;
+
   const ActividadeConciencia({
     required this.id,
     required this.titulo,
     required this.subtitulo,
     required this.descricion,
     required this.tpr,
+    this.queObservar = const [],
   });
 
   factory ActividadeConciencia.fromJson(Map<String, dynamic> json) =>
@@ -212,8 +216,17 @@ class ActividadeConciencia {
         subtitulo: LocalizedString.fromJson(_mapa(json['subtitulo'])),
         descricion: LocalizedString.fromJson(_mapa(json['descricion'])),
         tpr: LocalizedString.fromJson(_mapa(json['tpr'])),
+        queObservar: observacionsDe(json['queObservar']),
       );
 }
+
+/// Las pistas de «Que observar»: una lista de textos en gallego y castellano.
+List<LocalizedString> observacionsDe(Object? raw) =>
+    List<LocalizedString>.unmodifiable(
+      (raw is List ? raw : const [])
+          .whereType<Map>()
+          .map((e) => LocalizedString.fromJson(Map<String, dynamic>.from(e))),
+    );
 
 /// Todo el contenido de «Aprender a Ler», que vive en
 /// `assets/content/lectura/aprender_a_ler.json` y no en el widget.
@@ -225,12 +238,22 @@ class ContidoLectura {
   final List<CuboCvc> cubosCvc;
   final List<ParMinimo> paresMinimos;
 
+  /// «Que observar» de cada pestaña que enseña una pieza cada vez: la mesa de
+  /// letras, los cubos y los pares. Sustituyen a los botones «Logrado ·
+  /// Asistido · Explorando», que pedían a la familia evaluar a su criatura.
+  final List<LocalizedString> queObservarAlphabot;
+  final List<LocalizedString> queObservarCvc;
+  final List<LocalizedString> queObservarPares;
+
   const ContidoLectura({
     required this.avisoZeroPantalla,
     required this.actividadesConciencia,
     required this.categoriasAlphabot,
     required this.cubosCvc,
     required this.paresMinimos,
+    this.queObservarAlphabot = const [],
+    this.queObservarCvc = const [],
+    this.queObservarPares = const [],
   });
 
   static const String assetPath = 'assets/content/lectura/aprender_a_ler.json';
@@ -260,6 +283,9 @@ class ContidoLectura {
               .whereType<Map>()
               .map((e) => ParMinimo.fromJson(Map<String, dynamic>.from(e))),
         ),
+        queObservarAlphabot: observacionsDe(json['queObservarAlphabot']),
+        queObservarCvc: observacionsDe(json['queObservarCvc']),
+        queObservarPares: observacionsDe(json['queObservarPares']),
       );
 
   factory ContidoLectura.fromRaw(String rawJson) {

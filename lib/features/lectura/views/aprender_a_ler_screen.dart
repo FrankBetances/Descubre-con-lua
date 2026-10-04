@@ -9,6 +9,7 @@ import '../../../core/widgets/boton_atras.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/lectura_model.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../../core/widgets/que_observar.dart';
 
 /// Hub Integral de Aprender a Ler, Fónica e Alfabetización Temperá Manipulativa.
 ///
@@ -17,7 +18,8 @@ import '../../../data/repositories/content_repository.dart';
 /// 2. Mesa Manipulativa Alphabot Expandida (Letras de madeira, imáns e fonemas).
 /// 3. Fónica Combinatoria e Cubos CVC (Phonicubes).
 /// 4. Pares Mínimos e Discriminación Auditiva (/b/ vs /p/, /m/ vs /n/).
-/// 5. Rexistro Observacional 1-Toque para a persoa adulta.
+/// 5. «Que observar»: pistas para a persoa adulta, que non se marcan nin se
+///    gardan. Antes era un rexistro «Logrado · Asistido · Explorando».
 class AprenderALerScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
@@ -58,9 +60,6 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
 
   // Estado de Pares Mínimos
   int _paresIndex = 0;
-
-  // Rexistro Observacional 1-Toque
-  final Map<String, String> _observacions = {}; // id -> 'L' | 'A' | 'E'
 
   // O contido vive en assets/content/lectura/aprender_a_ler.json, non aquí.
   ContidoLectura? _contido;
@@ -166,8 +165,6 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
   }
 
   Widget _buildCardActividadeFonoloxica(ActividadeConciencia act, bool isGl) {
-    final obs = _observacions[act.id];
-
     return Card(
       margin: const EdgeInsets.only(bottom: 14),
       shape: RoundedRectangleBorder(
@@ -240,7 +237,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
               ),
             ),
             const SizedBox(height: 12),
-            _buildSelector1Tap(act.id, obs, isGl),
+            QueObservar(pistas: act.queObservar, language: _language),
           ],
         ),
       ),
@@ -256,7 +253,6 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
     final letters = item.letras.resolve(_language);
     final phonemes = item.fonemas.resolve(_language);
     final isComplete = _placedLetters.length >= letters.length;
-    final obs = _observacions[item.id];
 
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -506,7 +502,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   ),
                 ),
                 const SizedBox(height: 14),
-                _buildSelector1Tap(item.id, obs, isGl),
+                QueObservar(
+                    pistas: _contido!.queObservarAlphabot, language: _language),
               ],
             ),
           ),
@@ -519,7 +516,6 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
   Widget _buildTabCubosCvc(bool isGl) {
     final cubos = _contido!.cubosCvc;
     final item = cubos[_cvcIndex % cubos.length];
-    final obs = _observacions[item.id];
 
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -626,7 +622,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                       const TextStyle(fontSize: 11, color: Color(0xFF718096)),
                 ),
                 const SizedBox(height: 16),
-                _buildSelector1Tap(item.id, obs, isGl),
+                QueObservar(
+                    pistas: _contido!.queObservarCvc, language: _language),
               ],
             ),
           ),
@@ -672,7 +669,6 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
   Widget _buildTabParesMinimos(bool isGl) {
     final pares = _contido!.paresMinimos;
     final item = pares[_paresIndex % pares.length];
-    final obs = _observacions[item.id];
 
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -823,7 +819,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                       fontSize: 13, color: Color(0xFF2D3748), height: 1.4),
                 ),
                 const SizedBox(height: 16),
-                _buildSelector1Tap(item.id, obs, isGl),
+                QueObservar(
+                    pistas: _contido!.queObservarPares, language: _language),
               ],
             ),
           ),
@@ -853,66 +850,6 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
             ),
           ),
         ],
-      ),
-    );
-  }
-
-  Widget _buildSelector1Tap(String id, String? estadoActual, bool isGl) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-      decoration: BoxDecoration(
-        color: const Color(0xFFF7FAFC),
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: const Color(0xFFE2E8F0)),
-      ),
-      // Wrap e non Row: a etiqueta máis os tres botóns desbordaban 273 px a
-      // 400 de ancho. Nun teléfono os tres estados baixan á liña seguinte en
-      // vez de saírse da tarxeta.
-      child: Wrap(
-        spacing: 6,
-        runSpacing: 6,
-        crossAxisAlignment: WrapCrossAlignment.center,
-        children: [
-          Text(
-            isGl ? 'Rexistro:' : 'Registro:',
-            style: const TextStyle(
-                fontSize: 11,
-                fontWeight: FontWeight.bold,
-                color: AppTheme.textSecondary),
-          ),
-          _buildTapButton(
-              id, 'L', '[L] Logrado', estadoActual == 'L', Colors.green, isGl),
-          _buildTapButton(
-              id, 'A', '[A] Asistido', estadoActual == 'A', Colors.blue, isGl),
-          _buildTapButton(id, 'E', '[E] Explorando', estadoActual == 'E',
-              Colors.orange, isGl),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildTapButton(String id, String val, String label, bool isSel,
-      MaterialColor color, bool isGl) {
-    return InkWell(
-      onTap: () => setState(() => _observacions[id] = val),
-      borderRadius: BorderRadius.circular(6),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-        decoration: BoxDecoration(
-          color: isSel ? color.shade100 : Colors.white,
-          borderRadius: BorderRadius.circular(6),
-          border: Border.all(
-            color: isSel ? color.shade700 : const Color(0xFFCBD5E0),
-          ),
-        ),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 10,
-            fontWeight: FontWeight.bold,
-            color: isSel ? color.shade900 : AppTheme.textPrimary,
-          ),
-        ),
       ),
     );
   }

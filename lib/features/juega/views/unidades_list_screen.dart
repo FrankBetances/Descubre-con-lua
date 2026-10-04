@@ -106,7 +106,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       appBar: AppBar(
         leading: const BotonAtras(),
         title: Text(
-          isGl ? 'Juega con Lúa · Aula' : 'Juega con Lúa · Aula',
+          isGl ? 'Xoga con Lúa · Aula' : 'Juega con Lúa · Aula',
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         actions: [
