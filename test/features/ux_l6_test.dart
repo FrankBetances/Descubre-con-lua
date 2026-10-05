@@ -28,16 +28,8 @@ import '../helpers/pasarela.dart';
 ///
 /// Cada fallo de letra dice qué línea de `lib/` pinta ese texto.
 ///
-/// Una pantalla de la pasarela no se audita: `BackstageAsambleaScreen`
-/// («asamblea_2ciclo»). Ningún botón de la app lleva a ella —«Comezar a
-/// asemblea» del 2.º ciclo abre el reproductor, el mismo que el 1.º— y su
-/// contenido no cabe a 360 × 780 ni encogido al 80 %. Si algún día se vuelve a
-/// enlazar, el último test de este fichero falla, y hay que rehacerla antes.
-///
 /// Lo que un test no puede decir —cómo suena con TalkBack de verdad, o cómo
 /// se ve con la letra del sistema de un móvil concreto— está en `STATUS.md`.
-const _inalcanzables = {'asamblea_2ciclo'};
-
 void main() {
   final p = Pasarela();
   setUpAll(p.cargar);
@@ -47,7 +39,6 @@ void main() {
       portal == Portal.familias ? AppTheme.temaFamilias : AppTheme.lightTheme;
 
   for (final def in p.pantallas) {
-    if (_inalcanzables.contains(def.nome)) continue;
     for (final lang in AppLanguage.deInterfaz) {
       testWidgets('${def.nome} · ${lang.code}', (tester) async {
         final semantica = tester.ensureSemantics();
@@ -111,25 +102,6 @@ void main() {
       }
     }
     expect(fallos, isEmpty, reason: fallos.join('\n'));
-  });
-
-  test('la pantalla que no se audita sigue sin abrirse desde ningún sitio', () {
-    final usos = <String>[];
-    final empuje = RegExp(r"Named\(\s*'/juega/backstage'");
-    for (final f in Directory('lib').listSync(recursive: true)) {
-      if (f is! File || !f.path.endsWith('.dart')) continue;
-      if (f.path.endsWith('backstage_asamblea_screen.dart')) continue;
-      final texto = f.readAsStringSync();
-      final enMain = f.path.endsWith('main.dart');
-      if (empuje.hasMatch(texto) ||
-          (!enMain && texto.contains("'/juega/backstage'")) ||
-          (!enMain && texto.contains('BackstageAsambleaScreen('))) {
-        usos.add(f.path);
-      }
-    }
-    expect(usos, isEmpty,
-        reason: 'BackstageAsambleaScreen vuelve a abrirse desde $usos: '
-            'antes hay que hacer que quepa y quitarla de _inalcanzables.');
   });
 }
 

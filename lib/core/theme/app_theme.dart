@@ -51,31 +51,10 @@ class AppTheme {
   static const Color warningBg = Color(0xFFFEF6E7);
   static const Color dark = Color(0xFF0B1220);
 
-  // ------------------------------------------- asamblea de segundo ciclo
-  /// La asamblea de 2.º ciclo NACIÓ con fondo casi negro, y Frank la rechazó:
-  /// «el color negro no ayuda». Tenía razón por dos motivos. Uno, el aula de
-  /// infantil se da con luz de ventana y una pantalla oscura se lee peor, no
-  /// mejor. Dos, y más importante: la app tiene UN lenguaje visual, el del
-  /// primer ciclo, y una segunda piel convierte dos partes del mismo producto
-  /// en dos productos.
-  ///
-  /// Los nombres se conservan porque los citan los widgets de `backstage/`;
-  /// lo que cambia es que ya NO son oscuros: son la misma paleta clara que
-  /// usa la asamblea de primer ciclo.
-  static const Color backstageBg = pageBg;
-  static const Color backstageSurface = card;
-  static const Color backstageSurfaceElevated = primaryLight;
-  static const Color backstageBorder = border;
-  static const Color backstageTextPrimary = textPrimary;
-  static const Color backstageTextSecondary = textSecondary;
-  static const Color backstageTextMuted = textMuted;
-
-  /// Turquesa OSCURO, no el de marca: este color se usa como texto sobre
-  /// blanco, y el turquesa de marca sobre blanco no llega al contraste
-  /// mínimo. Lo vigila `theme_test.dart`.
-  static const Color backstageAccent = primaryInk;
-  static const Color backstageWarning = Color(0xFFB45309);
-  static const double backstageTouchMin = 64.0;
+  // ------------------------------------------- reproductor de la asamblea
+  /// Los botones del reproductor de la asamblea miden 64 dp de alto, por
+  /// encima de los 48 de la diana mínima ([touchMin]).
+  static const double touchReprodutor = 64.0;
 
   /// Turquesa para barras y cabeceras CON texto blanco.
   ///
@@ -438,57 +417,6 @@ class AppTheme {
             color:
                 estados.contains(WidgetState.selected) ? acento : textSecondary,
           ),
-        ),
-      ),
-    );
-  }
-
-  /// Tema escuro de trasteira (Backstage) para a xestión da asemblea polo docente.
-  ///
-  /// Cero distraccións nin emisión lumínica cara aos nenos. Tipografías amplas (>= 26sp en títulos
-  /// e comandos), contraste AAA sobre fondo #0B1220 e botóns táctiles amplos (>= 64dp).
-  static ThemeData get backstageDarkTheme {
-    const colorScheme = ColorScheme(
-      brightness: Brightness.dark,
-      primary: backstageAccent,
-      onPrimary: backstageBg,
-      secondary: primaryLight,
-      onSecondary: backstageBg,
-      tertiary: backstageWarning,
-      onTertiary: backstageBg,
-      error: error,
-      onError: Colors.white,
-      surface: backstageBg,
-      onSurface: backstageTextPrimary,
-      surfaceContainerHighest: backstageSurface,
-      onSurfaceVariant: backstageTextSecondary,
-      outline: backstageBorder,
-    );
-
-    return ThemeData(
-      useMaterial3: true,
-      fontFamily: fontFamily,
-      colorScheme: colorScheme,
-      scaffoldBackgroundColor: backstageBg,
-      canvasColor: backstageBg,
-      cardTheme: CardThemeData(
-        color: backstageSurface,
-        elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(radiusCard),
-          side: const BorderSide(color: backstageBorder, width: 1.5),
-        ),
-      ),
-      appBarTheme: const AppBarTheme(
-        backgroundColor: backstageBg,
-        foregroundColor: backstageTextPrimary,
-        elevation: 0,
-        centerTitle: false,
-        titleTextStyle: TextStyle(
-          fontFamily: fontFamily,
-          fontSize: 22.0,
-          fontWeight: FontWeight.w800,
-          color: backstageTextPrimary,
         ),
       ),
     );

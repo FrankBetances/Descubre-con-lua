@@ -202,7 +202,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
                             color: _selectedCiclo == CicloEducativo.segundoCiclo
-                                ? AppTheme.backstageBg
+                                ? AppTheme.pageBg
                                 : Colors.transparent,
                             borderRadius:
                                 BorderRadius.circular(AppTheme.radiusField),

@@ -4,7 +4,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
-import 'package:descubre_con_lua/features/juega/views/backstage_asamblea_screen.dart';
+import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
+import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
 
 /// Lo que este fichero existe para impedir.
@@ -62,18 +63,25 @@ void main() {
         expect(tester.takeException(), isNull);
       });
 
-      testWidgets('a asemblea de 2.º ciclo non desborda en $l a $escala',
-          (tester) async {
-        await conEscala(
-          tester,
-          escala,
-          BackstageAsambleaScreen(
-            repository: contenido,
-            initialLanguage: lang,
-          ),
-        );
-        expect(tester.takeException(), isNull);
-      });
+      // A asemblea tal como a abre «Comezar a asemblea» na pestana de 2.º
+      // ciclo: o reprodutor, nas tres clases.
+      for (final nivel in NivelEducativoSegundoCiclo.values) {
+        testWidgets('a asemblea de ${nivel.clave} non desborda en $l a $escala',
+            (tester) async {
+          final asamblea = contenido.getAsambleaByMesYNivelSync(10, nivel)!;
+          await conEscala(
+            tester,
+            escala,
+            AsambleaPlayerScreen(
+              fases: asamblea.fases,
+              subtitulo: asamblea.titulo.resolve(lang),
+              centroInteres: asamblea.centroInteres.resolve(lang),
+              language: lang,
+            ),
+          );
+          expect(tester.takeException(), isNull);
+        });
+      }
     }
   }
 }

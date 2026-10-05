@@ -48,7 +48,6 @@ import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart
 import 'package:descubre_con_lua/features/formacion/views/formacion_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dart';
-import 'package:descubre_con_lua/features/juega/views/backstage_asamblea_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/capsulas_aula_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
@@ -519,14 +518,6 @@ class Pasarela {
                   initialLanguage: l,
                   premios: premios,
                   calendario: store,
-                )),
-        PantallaDaApp(
-            'asamblea_2ciclo',
-            Portal.docentes,
-            (l) => BackstageAsambleaScreen(
-                  repository: contenido,
-                  audioService: audio,
-                  initialLanguage: l,
                 )),
         PantallaDaApp(
             'reprodutor',

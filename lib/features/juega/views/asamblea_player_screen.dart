@@ -222,9 +222,9 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
                     _ir(_indice + 1);
                     return;
                   }
-                  final ok = await _confirmarSaida();
-                  if (!mounted) return;
-                  if (ok) Navigator.of(this.context).pop();
+                  // «Rematar» acaba la asamblea: no se abandona nada, así que
+                  // no pregunta. Solo pregunta salir a medias (la X o atrás).
+                  Navigator.of(context).pop();
                 },
               ),
             ],
@@ -576,7 +576,7 @@ class _BotonDeSon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: AppTheme.backstageTouchMin,
+      height: AppTheme.touchReprodutor,
       child: ElevatedButton.icon(
         onPressed: onPulsar,
         style: ElevatedButton.styleFrom(
@@ -747,7 +747,7 @@ class _BarraInferior extends StatelessWidget {
           Tooltip(
             message: isGl ? 'Fase anterior' : 'Fase anterior',
             child: SizedBox.square(
-              dimension: AppTheme.backstageTouchMin,
+              dimension: AppTheme.touchReprodutor,
               child: OutlinedButton(
                 key: const ValueKey('player_fase_anterior'),
                 onPressed: indice > 0 ? onAnterior : null,
@@ -772,7 +772,7 @@ class _BarraInferior extends StatelessWidget {
           const SizedBox(width: 12),
           Expanded(
             child: SizedBox(
-              height: AppTheme.backstageTouchMin,
+              height: AppTheme.touchReprodutor,
               child: ElevatedButton(
                 key: const ValueKey('player_fase_seguinte'),
                 onPressed: onSeguinte,
