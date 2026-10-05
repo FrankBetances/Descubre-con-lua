@@ -9,6 +9,139 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L7: lo que Frank decidió al probar la build de L6 (5/10/2026)
+
+Rama `claude/ux-l7`, que se integra en `main` por pull request después de L6.
+Son sus respuestas, punto por punto, a la lista de «visto y no tocado».
+
+Qué cambia en pantalla:
+
+- **«Rematar» cierra la asamblea sin preguntar.** En la última fase del
+  reproductor, «Rematar» («Terminar») vuelve a la pantalla de la que se vino.
+  Salir a medias —la X o atrás— sigue preguntando «¿Salir de la asamblea?».
+- **La dinámica del lunes** se titula «Asemblea de Benvida e Pulso Calmo»,
+  sin «a 72 bpm», en gl y es.
+- **Contenido retirado, en gl y es:**
+  - la dinámica del viernes ya no propone un difusor de esencias: el
+    material sensorial es luz cálida indirecta y el peluche de Lúa;
+  - los pares mínimos de «Ler xogando» ya no piden tapar la boca, ni en la
+    instrucción del par /b/-/p/ ni en el aviso de la pestaña. A quien lleva
+    audífono o implante le quitaba la lectura labial;
+  - la cápsula «Como se aprende a falar» ya no habla de «circuítos neurais»:
+    la frase acaba con lo que la propia cápsula dice en su idea clave, «a
+    conversa empeza antes da primeira palabra». Su grabación gl y es es nueva.
+- **En castellano**, el calendario de casa dice «Día N del curso» (decía
+  «do curso») y la galería de láminas, «1 lámina disponible» (decía
+  «1 láminas»).
+- **Xogos de movemento:** los diez títulos, con mayúscula solo al principio
+  («A caza do tesouro dos sons»).
+- **Ler xogando:** las pestañas dicen lo que se hace con las manos,
+  «2. Colocar letras» y «3. Xuntar cubos» («Juntar cubos»), en lugar de
+  «Mesa Alphabot» y «Cubos CVC».
+
+Lo que no se ve:
+
+- `BackstageAsambleaScreen` ya no existe: la pantalla, sus siete widgets de
+  `backstage/`, su test y su entrada en la pasarela. Ningún botón llevaba a
+  ella. El tema pierde los colores `backstage*` y un tema oscuro que nadie
+  usaba; los 64 dp de los botones del reproductor quedan como
+  `AppTheme.touchReprodutor`.
+- `lib/main.dart` declara las 4 rutas con nombre que se usan. Se quitan 17 a
+  las que nada navegaba: las 14 que contó L5, dos más de `onGenerateRoute`
+  (`/academy/capsula` y `/juega/asamblea`) que aquel recuento no miró, y
+  `/juega/backstage`, que se va con su pantalla.
+- Los diez juegos de «Xogos de movemento» viven en
+  `assets/content/xogos_fogar.json` y la pantalla ya no lleva contenido
+  escrito. Si el fichero no se puede leer, la pantalla lo dice en vez de
+  salir vacía. El campo «criterio de éxito» no pasa al JSON: no se pintaba en
+  ninguna parte y servía para evaluar a la criatura, lo que la app ya había
+  sustituido por «Que observar».
+- Las pestañas de «Ler xogando» salen del diccionario de nombres
+  (`nomes_portais.json`), como los demás nombres del portal.
+
+Corregido en la revisión:
+
+- **El commit 02314707 se llevó por error las eliminaciones de
+  `backstage/`**, que ya estaban en el índice: ese commit solo no compila y
+  su mensaje habla solo de contenido. El siguiente (ec238a92) lo completa. La
+  historia no se reescribió porque el workflow de voz ya trabajaba sobre ese
+  commit; su ejecución de Gates quedó cancelada por la siguiente.
+- **El aviso de la pestaña «Pares mínimos» seguía diciendo «el adulto oculta
+  la boca con una hoja».** Está escrito en la pantalla, no en el JSON, y la
+  primera búsqueda solo miró el JSON. Se vio al recorrer la app. Corregido, y
+  el test mira ahora también la pantalla.
+- **En el informe de L6 dije que el pulso sonoro a 72 BPM estaba dentro de
+  `BackstageAsambleaScreen`.** Era verdad a medias: el reproductor que sí se
+  usa lo tiene también, un botón «Pulse 72 BPM» en la fase de ritmo de las 30
+  asambleas de 2.º ciclo, con la misma pista. Quitar la pantalla no lo quita.
+
+Cómo se comprobó:
+
+- `test/features/ux_l7_test.dart`: 19 pruebas en gl y es (Rematar y la X,
+  «del curso», el singular, los juegos desde el JSON y en minúscula, las
+  rutas, las pestañas y el contenido retirado). Con el código de antes fallan
+  las dos de Rematar, la de «del curso» y las dos del singular.
+- El test de escala de 2.º ciclo mira ahora el reproductor en las tres
+  clases, a 1,0 y 1,3, en gl y es: 16 pruebas en verde.
+- `test/data/bundle_real_test.dart`: `xogos_fogar.json` se lee del paquete
+  de verdad (`rootBundle`) y trae los diez juegos; y si no se puede leer, la
+  pantalla lo dice con el aviso de contenido ilegible en lugar de quedarse
+  vacía. Sin ese aviso, el test falla.
+- `tools/gates.sh --fast` en local: los 21 gates en verde, con 1.149
+  tests. La build release y los permisos del APK los pasa CI: en el
+  contenedor no hay SDK de Android.
+- La app de escritorio en gl y es, por el camino de Frank: Explorar →
+  Xogos de movemento, Ler xogando (las cuatro pestañas y los pares mínimos),
+  Láminas (buscando «manzana roja»), el calendario de casa y Guías → la
+  cápsula; Hoxe, Recursos → Dinámicas de aula (lunes y viernes) y el Modo
+  Aula hasta «Rematar», que vuelve sin preguntar: `docs/capturas/l7-*.png`.
+- La voz: el workflow «Generate Voice Assets» sintetizó las dos grabaciones
+  nuevas de la cápsula (commit 83f32ba1, del bot) y se borraron las dos
+  viejas. Duran 12,0 s (gl) y 12,7 s (es) para 33 y 35 palabras. **No las he
+  escuchado.**
+- Las 54 capturas del manual, rehechas una a una: ninguna cambia un píxel,
+  porque lo que cambió no sale en sus encuadres. El manual, su PDF y su Word
+  no se tocan.
+
+Las capas:
+
+- La interfaz: el reproductor, el calendario de casa, la galería de láminas,
+  «Ler xogando» y «Xogos de movemento».
+- Los JSON gl y es: las dinámicas, la lectura, la cápsula, los juegos (nuevo)
+  y el diccionario de nombres.
+- La voz: dos grabaciones nuevas y dos borradas. La dinámica, los pares
+  mínimos y los juegos no tienen grabación.
+- Imprimibles: el repositorio no tiene ninguno. El manual y el README no
+  describían nada de esto y no cambian.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android.**
+- Las dos grabaciones nuevas no las he escuchado.
+
+### Visto y no tocado
+
+- El reproductor de 2.º ciclo hace sonar el pulso a 72 BPM (botón «Pulse 72
+  BPM», en inglés también con la interfaz en gl o es). Este repositorio dice
+  que el pulso se ve y no se oye.
+- «Xogos de movemento»: la edad sale en gallego también en castellano
+  («2-4 anos», filtros «0 a 2 anos») y el filtro compara texto: «0 a 2 anos»
+  no enseña los juegos de 0-3 ni de 0-4, y la pastilla «3 a 6 anos» filtra
+  los de «2-6».
+- Dos juegos llevan «a 72 bpm» en el título («A masaxe suave a 72 bpm», «O
+  eco dos pés e mans a 72 bpm»), y las tarjetas de dinámicas enseñan el tempo
+  en su pastilla («15 min · 72 BPM»).
+- En castellano siguen palabras gallegas: «LUNS» y «VENRES» en las
+  dinámicas, y «Materiais suxeridos» en «Juntar cubos».
+- Dentro de «Ler xogando» siguen «Cubo CVC 1 / 6» y «Phonicubes», y los
+  avisos de las cuatro pestañas están escritos en la pantalla, no en el JSON.
+- «Bear» se parte en dos líneas («Be / ar») en la tarjeta de pares mínimos a
+  360 px.
+- La misma cápsula y la formación de familias hacen otras afirmaciones sobre
+  el cerebro sin fuente: «O cerebro infantil constrúe a linguaxe…», «O
+  cerebro do bebé precisa escoitar miles de repeticións…» y «o seu cerebro
+  xa comprendeu». La orden era quitar los «circuítos neurais».
+
 ## Lote L6 de la revisión de interfaz: accesibilidad, hasta donde se puede medir sin aparato (5/10/2026)
 
 Rama `claude/ux-l6`, que se integra en `main` por pull request después de L5.

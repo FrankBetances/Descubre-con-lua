@@ -18,6 +18,7 @@ import 'package:descubre_con_lua/data/models/lectura_model.dart';
 import 'package:descubre_con_lua/data/models/steam_model.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart' hide Cuento;
+import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
@@ -48,7 +49,6 @@ import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart
 import 'package:descubre_con_lua/features/formacion/views/formacion_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dart';
-import 'package:descubre_con_lua/features/juega/views/backstage_asamblea_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/capsulas_aula_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
@@ -99,6 +99,7 @@ class Pasarela {
   late CalendarioContenido calendario;
   late ContidoLectura lectura;
   late ObservacionsXogosFogar observacions;
+  late XogosFogar xogosFogar;
   late CalendarioStore store;
   late PremiosRepository premios;
   late GuiaFormacion guiaFamilia;
@@ -132,6 +133,8 @@ class Pasarela {
         File(ContidoLectura.assetPath).readAsStringSync());
     observacions = ObservacionsXogosFogar.fromRaw(
         File(ObservacionsXogosFogar.assetPath).readAsStringSync());
+    xogosFogar =
+        XogosFogar.fromRaw(File(XogosFogar.assetPath).readAsStringSync());
     guiaFamilia =
         await GuiaFormacion.cargar(PerfilFormacion.familia, lector: ler);
     guiaDocente =
@@ -386,6 +389,7 @@ class Pasarela {
                   initialLanguage: l,
                   audioService: audio,
                   observacions: observacions,
+                  xogos: xogosFogar,
                 )),
         PantallaDaApp(
             'academy',
@@ -519,14 +523,6 @@ class Pasarela {
                   initialLanguage: l,
                   premios: premios,
                   calendario: store,
-                )),
-        PantallaDaApp(
-            'asamblea_2ciclo',
-            Portal.docentes,
-            (l) => BackstageAsambleaScreen(
-                  repository: contenido,
-                  audioService: audio,
-                  initialLanguage: l,
                 )),
         PantallaDaApp(
             'reprodutor',

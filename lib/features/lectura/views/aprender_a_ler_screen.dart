@@ -113,14 +113,13 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
           isScrollable: true,
           tabAlignment: TabAlignment.start,
           indicatorWeight: 3,
+          // Os nomes saen do diccionario (nomes_portais.json): din o que se
+          // fai coas mans, non o nome dun material.
           tabs: [
-            Tab(
-                text: isGl
-                    ? '1. Conciencia fonolóxica'
-                    : '1. Conciencia fonológica'),
-            Tab(text: isGl ? '2. Mesa Alphabot' : '2. Mesa Alphabot'),
-            Tab(text: isGl ? '3. Cubos CVC' : '3. Cubos CVC'),
-            Tab(text: isGl ? '4. Pares mínimos' : '4. Pares mínimos'),
+            Tab(text: NomesFamilias.lerPestanaSons.resolve(lang)),
+            Tab(text: NomesFamilias.lerPestanaLetras.resolve(lang)),
+            Tab(text: NomesFamilias.lerPestanaCubos.resolve(lang)),
+            Tab(text: NomesFamilias.lerPestanaPares.resolve(lang)),
           ],
         ),
       ),
@@ -666,8 +665,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
       children: [
         _buildGarantiaZeroScreen(
           isGl
-              ? 'Pares Mínimos: adestramento de discriminación auditiva fina. O adulto oculta a boca cunha folla para que a crianza distinga o son exclusivamente polo oído.'
-              : 'Pares Mínimos: entrenamiento de discriminación auditiva fina. El adulto oculta la boca con una hoja para que la criatura distinga el sonido exclusivamente por el oído.',
+              ? 'Pares Mínimos: adestramento de discriminación auditiva fina.'
+              : 'Pares Mínimos: entrenamiento de discriminación auditiva fina.',
         ),
         const SizedBox(height: 14),
         Card(

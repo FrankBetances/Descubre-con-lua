@@ -787,7 +787,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                 // Sen Flexible: dentro dun Wrap non vale, porque Wrap non é
                 // un Flex. O espazo poño o `spacing` do Wrap.
                 Text(
-                  'Día ${dia.diaCursoNumero} do curso',
+                  isGl
+                      ? 'Día ${dia.diaCursoNumero} do curso'
+                      : 'Día ${dia.diaCursoNumero} del curso',
                   style: const TextStyle(
                     fontSize: 12,
                     color: AppTheme.textMuted,

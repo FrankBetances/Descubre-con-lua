@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-03T17:31:46Z",
+ "generatedAt": "2026-10-05T20:24:18Z",
  "entries": 15154,
  "byStyle": {
   "slow": 6002,
@@ -103880,6 +103880,14 @@
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/microRutina/pauta/0/modeladoIndirecto"
   },
   {
+   "id": "es_tutor_1a7c5c1f_232",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El cerebro del bebé necesita escuchar miles de repeticiones significativas en un clima afectivo seguro. Cuando respondemos a sus balbuceos y gestos como si fuesen palabras reales, la conversación empieza antes de la primera palabra.",
+   "speech": "El cerebro del bebé necesita escuchar miles de repeticiones significativas en un clima afectivo seguro. Cuando respondemos a sus balbuceos y gestos como si fuesen palabras reales, la conversación empieza antes de la primera palabra.",
+   "source": "academy.como_se_aprende_a_hablar.01/porQueImporta"
+  },
+  {
    "id": "es_tutor_1aac75c9_56",
    "lang": "es",
    "style": "tutor",
@@ -107444,14 +107452,6 @@
    "text": "No preguntar «¿cómo se dice agua?». Decir la frase y seguir lavando.",
    "speech": "No preguntar «¿cómo se dice agua?». Decir la frase y seguir lavando.",
    "source": "asamblea.segundo_ciclo.xaneiro.4_infantil/microRutina/pauta/0/consejoEvitar"
-  },
-  {
-   "id": "es_tutor_786334e3_244",
-   "lang": "es",
-   "style": "tutor",
-   "text": "El cerebro del bebé necesita escuchar miles de repeticiones significativas en un clima afectivo seguro. Cuando respondemos a sus balbuceos y gestos como si fuesen palabras reales, fortalecemos los circuitos neuronales de la comunicación social.",
-   "speech": "El cerebro del bebé necesita escuchar miles de repeticiones significativas en un clima afectivo seguro. Cuando respondemos a sus balbuceos y gestos como si fuesen palabras reales, fortalecemos los circuitos neuronales de la comunicación social.",
-   "source": "academy.como_se_aprende_a_hablar.01/porQueImporta"
   },
   {
    "id": "es_tutor_78739584_58",
@@ -113722,6 +113722,14 @@
    "source": "aula.preguntas.01/afirmaciones/afirmacion_01/explicacion"
   },
   {
+   "id": "gl_tutor_183d73f4_218",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O cerebro do bebé precisa escoitar miles de repeticións significativas nun clima afectivo seguro. Cando respondemos aos seus balbuceos e xestos coma se fosen palabras reais, a conversa empeza antes da primeira palabra.",
+   "speech": "O cerebro do bebé precisa escoitar miles de repeticións significativas nun clima afectivo seguro. Cando respondemos aos seus balbuceos e xestos coma se fosen palabras reais, a conversa empeza antes da primeira palabra.",
+   "source": "academy.como_se_aprende_a_hablar.01/porQueImporta"
+  },
+  {
    "id": "gl_tutor_184af157_167",
    "lang": "gl",
    "style": "tutor",
@@ -114490,14 +114498,6 @@
    "text": "Toca o pandeiro a ritmo pausado e desprázase entre o grupo.",
    "speech": "Toca o pandeiro a ritmo pausado e desprázase entre o grupo.",
    "source": "asamblea.segundo_ciclo.decembro.5_infantil/fase/3/cmd/cmd.decembro.5i.01/modeladoDocente"
-  },
-  {
-   "id": "gl_tutor_2e575c8e_231",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "O cerebro do bebé precisa escoitar miles de repeticións significativas nun clima afectivo seguro. Cando respondemos aos seus balbuceos e xestos coma se fosen palabras reais, fortalecemos os circuítos neurais da comunicación social.",
-   "speech": "O cerebro do bebé precisa escoitar miles de repeticións significativas nun clima afectivo seguro. Cando respondemos aos seus balbuceos e xestos coma se fosen palabras reais, fortalecemos os circuítos neurais da comunicación social.",
-   "source": "academy.como_se_aprende_a_hablar.01/porQueImporta"
   },
   {
    "id": "gl_tutor_2e823612_83",

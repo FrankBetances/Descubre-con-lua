@@ -80,6 +80,16 @@ class NomesFamilias {
       gl: 'Lúa celebra a túa constancia: días seguidos e lecturas feitas.',
       es: 'Lúa celebra tu constancia: días seguidos y lecturas hechas.');
 
+  // ------------------------------------------------------------- ler xogando
+  static const lerPestanaSons = LocalizedString(
+      gl: '1. Conciencia fonolóxica', es: '1. Conciencia fonológica');
+  static const lerPestanaLetras =
+      LocalizedString(gl: '2. Colocar letras', es: '2. Colocar letras');
+  static const lerPestanaCubos =
+      LocalizedString(gl: '3. Xuntar cubos', es: '3. Juntar cubos');
+  static const lerPestanaPares =
+      LocalizedString(gl: '4. Pares mínimos', es: '4. Pares mínimos');
+
   // ------------------------------------------------------------------ idades
   /// Las cinco edades, con la clave de su curso. La elegida vive mientras la
   /// app está abierta: la app no guarda nada de ninguna criatura.
