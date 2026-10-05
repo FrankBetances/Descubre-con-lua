@@ -69,6 +69,8 @@ class SelectorIdiomaWidget extends StatelessWidget {
       button: true,
       selected: elixida,
       label: lang.displayName,
+      // Excluir a los hijos quita también la acción del InkWell.
+      onTap: elixida ? null : () => onLanguageChanged(lang),
       excludeSemantics: true,
       child: InkWell(
         key: ValueKey('lingua_${lang.code}'),

@@ -99,6 +99,11 @@ run_gate "every corpus word has a part of speech and a whole sentence" \
 # Esto comprueba que no vuelvan.
 run_gate "family routines sound like a home, not like a leaflet" \
   python3 tools/humaniza_rutinas_fogar.py --check
+
+# Los nombres del inicio y de los dos portales son contenido: viven en
+# assets/content/nomes/nomes_portais.json y el Dart sale de ahí. Un nombre
+# cambiado a mano en el Dart, o en el JSON sin volver a generar, pone esto rojo.
+run_gate "portal names come from their JSON" python3 tools/xera_nomes.py --check
 # Nace del planificador de la rama UI, que multiplicaba 5 × 4 × 4 × 10 y
 # enseñaba «800» con veinte palabras de muestra escritas en él: el número salía
 # bueno aunque el curso no lo tuviera. Ahora se CUENTA en assets/content/tpr/,

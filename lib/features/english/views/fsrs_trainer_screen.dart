@@ -12,6 +12,7 @@ import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
+import '../../docentes/nomes_docentes.dart';
 
 /// Repaso espaciado de las palabras del CURSO: las cinco de hoy y todas las
 /// que ya salieron antes, en el curso que se elija.
@@ -215,7 +216,7 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: isGl ? 'Repaso espazado' : 'Repaso espaciado',
+        titulo: NomesDocentes.repaso.resolve(lang),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),
@@ -249,8 +250,11 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
   Widget _resumo(bool isGl) {
     final hoxe = diaDoCursoParaHoxe(agora: _agora);
     final d = hoxe.dia;
-    final mes = nomeDoMes[d.mesCalendario]?.resolve(_language) ?? '';
-    final dia = PalabrasDoDia.nomesDosDias[d.dia - 1].resolve(_language);
+    // A media frase: «Hoxe: luns, semana 1 de outubro», en minúscula.
+    final mes =
+        (nomeDoMes[d.mesCalendario]?.resolve(_language) ?? '').toLowerCase();
+    final dia =
+        PalabrasDoDia.nomesDosDias[d.dia - 1].resolve(_language).toLowerCase();
     final quedan = (_rolda.length - _indice).clamp(0, 999);
     return Container(
       key: const Key('fsrs_resumo'),

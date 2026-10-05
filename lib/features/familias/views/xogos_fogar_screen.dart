@@ -6,6 +6,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/que_observar.dart';
 import '../../../data/models/xogos_fogar_observar_model.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../nomes_familias.dart';
 
 /// Modelo dun xogo ou dinámica física no fogar sen pantallas infantís.
 class XogoFogarItem {
@@ -364,7 +365,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: isGl ? 'Xogos na casa' : 'Juegos en casa',
+        titulo: NomesFamilias.movementoCabeceira.resolve(_language),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),
@@ -586,7 +587,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                       SizedBox(width: 6),
                       Expanded(
                         child: Text(
-                          'Comando Oral (Inglés L3)',
+                          'Comando oral (inglés L3)',
                           style: TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.bold,

@@ -13,8 +13,9 @@ import 'package:descubre_con_lua/data/models/phonics_model.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/data/validators/content_validator.dart';
+import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
+import 'package:descubre_con_lua/features/docentes/views/recursos_docentes_screen.dart';
 import 'package:descubre_con_lua/features/english/views/collocations_screen.dart';
-import 'package:descubre_con_lua/features/english/views/english_hub_screen.dart';
 import 'package:descubre_con_lua/features/english/views/fsrs_trainer_screen.dart';
 import 'package:descubre_con_lua/features/english/views/listening_screen.dart';
 import 'package:descubre_con_lua/features/english/views/palabras_do_traxecto_screen.dart';
@@ -584,26 +585,31 @@ void main() {
       expect(erroresDe(tester), isEmpty);
     });
 
-    testWidgets('O hub: os seis módulos e as cifras contadas, en ${lang.code}',
-        (tester) async {
+    // Con L5 o inglés da aula xa non vai detrás dun «hub»: as súas seis partes
+    // están en Recursos, unha porta para cada unha. O hub repetía as palabras
+    // do curso e o vocabulario, que tamén estaban en Recursos.
+    testWidgets(
+        'Recursos: as seis partes do inglés, unha porta cada unha, en '
+        '${lang.code}', (tester) async {
       await pintar(
         tester,
-        EnglishHubScreen(repository: repo, initialLanguage: lang),
+        RecursosDocentesScreen(
+          repository: repo,
+          language: lang,
+          onLanguageChanged: (_) {},
+          cursoId: 'curso_0_2',
+          audioService: MockOfflineAudioService(),
+        ),
         escala: 1.8,
       );
-      expect(
-          texto(tester, 'ingles_cifras').data,
-          lang == AppLanguage.gl
-              ? '5 palabras novas ao día · 800 por curso · 4.000 de 0 a 6 anos'
-              : '5 palabras nuevas al día · 800 por curso · 4.000 de 0 a 6 años');
       final lista = find.byType(Scrollable).first;
       for (final k in [
-        'ingles_modulo_palabras',
-        'ingles_modulo_repaso',
-        'ingles_modulo_escoita',
-        'ingles_modulo_colocacions',
-        'ingles_modulo_fonemas',
-        'ingles_modulo_frecuencia',
+        'recurso_palabras',
+        'recurso_repaso',
+        'recurso_escoita',
+        'recurso_colocacions',
+        'recurso_sons',
+        'recurso_vocabulario',
       ]) {
         final m = find.byKey(ValueKey(k), skipOffstage: false);
         await irA(tester, m);
@@ -611,9 +617,9 @@ void main() {
       }
       expect(erroresDe(tester), isEmpty);
 
-      // O módulo de escoita abre a pantalla nova, co programa.
-      final escoita = find.byKey(const ValueKey('ingles_modulo_escoita'),
-          skipOffstage: false);
+      // As frases do curso abren a escoita, co programa do curso.
+      final escoita =
+          find.byKey(const ValueKey('recurso_escoita'), skipOffstage: false);
       await tester.scrollUntilVisible(escoita, -150, scrollable: lista);
       await tocar(tester, escoita);
       expect(find.byType(ListeningScreen), findsOneWidget);

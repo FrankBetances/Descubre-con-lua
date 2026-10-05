@@ -276,7 +276,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
           TextButton(
             onPressed: () => Navigator.of(context).pop(false),
             child: Text(
-              isGl ? 'Continuar na Asemblea' : 'Continuar en la Asamblea',
+              isGl ? 'Continuar na asemblea' : 'Continuar en la asamblea',
               style: const TextStyle(
                 fontFamily: AppTheme.fontFamily,
                 fontSize: 15,
@@ -323,7 +323,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
           side: const BorderSide(color: AppTheme.backstageBorder, width: 1.5),
         ),
         title: Text(
-          isGl ? 'Saír da Asemblea?' : '¿Salir de la Asamblea?',
+          isGl ? 'Saír da asemblea?' : '¿Salir de la asamblea?',
           style: const TextStyle(
             fontFamily: AppTheme.fontFamily,
             fontSize: 20,
@@ -345,7 +345,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
           TextButton(
             onPressed: () => Navigator.of(context).pop(false),
             child: Text(
-              isGl ? 'Continuar Asemblea' : 'Continuar Asamblea',
+              isGl ? 'Continuar a asemblea' : 'Continuar la asamblea',
               style: TextStyle(
                 fontFamily: AppTheme.fontFamily,
                 fontSize: 15,
@@ -591,7 +591,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                         etiquetaAnterior:
                             isGl ? 'Fase anterior' : 'Fase anterior',
                         etiquetaSeguinte: _faseIndex < 3
-                            ? (isGl ? 'Seguinte Fase' : 'Siguiente Fase')
+                            ? (isGl ? 'Seguinte fase' : 'Siguiente fase')
                             : (isGl
                                 ? 'Rematar a asemblea'
                                 : 'Terminar la asamblea'),

@@ -45,6 +45,8 @@ class SelectorCompactoDoAula extends StatelessWidget {
             button: true,
             expanded: aberto,
             label: isGl ? 'Grupo e día: $resumo' : 'Grupo y día: $resumo',
+            // Excluir a los hijos quita también la acción del InkWell.
+            onTap: onAlternar,
             excludeSemantics: true,
             child: Material(
               color: Colors.white,

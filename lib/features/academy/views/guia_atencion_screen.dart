@@ -11,6 +11,7 @@ import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../familias/nomes_familias.dart';
 
 /// La guía de la familia: cómo meter el inglés en la casa sin saturar.
 ///
@@ -46,12 +47,6 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
 
   /// Lo que impidió leer la guía, si pasó.
   String? _fallo;
-
-  /// El de la cabecera: el largo no cabe a 360 px junto al selector.
-  static const _tituloCurto = LocalizedString(
-    gl: 'Inglés na casa',
-    es: 'Inglés en casa',
-  );
 
   static const _subtitulo = LocalizedString(
     gl: 'Aprender unha lingua nova sen saturar: rutinas curtas, respecto aos '
@@ -138,7 +133,7 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: _tituloCurto.resolve(_language),
+        titulo: NomesFamilias.inglesNaCasa.resolve(_language),
         language: _language,
         onLanguageChanged: _onToggleLanguage,
       ),

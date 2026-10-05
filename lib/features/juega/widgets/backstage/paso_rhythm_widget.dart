@@ -147,8 +147,8 @@ class PasoRhythmWidget extends StatelessWidget {
                       children: [
                         Text(
                           isGl
-                              ? 'Pulso Rítmico de Referencia: 72 BPM'
-                              : 'Pulso Rítmico de Referencia: 72 BPM',
+                              ? 'Pulso rítmico de referencia: 72 BPM'
+                              : 'Pulso rítmico de referencia: 72 BPM',
                           style: const TextStyle(
                             fontFamily: AppTheme.fontFamily,
                             fontSize: 17,
@@ -196,11 +196,11 @@ class PasoRhythmWidget extends StatelessWidget {
                   label: Text(
                     isPulsePlaying
                         ? (isGl
-                            ? 'Deter Pulso Rítmico'
-                            : 'Detener Pulso Rítmico')
+                            ? 'Deter pulso rítmico'
+                            : 'Detener pulso rítmico')
                         : (isGl
-                            ? 'Activar Pulso 72 BPM'
-                            : 'Activar Pulso 72 BPM'),
+                            ? 'Activar pulso 72 BPM'
+                            : 'Activar pulso 72 BPM'),
                     style: const TextStyle(
                       fontFamily: AppTheme.fontFamily,
                       fontSize: 17,
@@ -239,8 +239,8 @@ class PasoRhythmWidget extends StatelessWidget {
                   Expanded(
                       child: Text(
                     isGl
-                        ? 'Praxias Orofaciais e Rimas Dactilares'
-                        : 'Praxias Orofaciales y Rimas Dactilares',
+                        ? 'Praxias orofaciais e rimas dactilares'
+                        : 'Praxias orofaciales y rimas dactilares',
                     style: TextStyle(
                       fontFamily: AppTheme.fontFamily,
                       fontSize: 15,

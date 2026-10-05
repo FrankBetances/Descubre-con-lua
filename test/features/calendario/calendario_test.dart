@@ -884,7 +884,7 @@ void main() {
       )));
       await tester.pumpAndSettle();
 
-      expect(find.text('Inglés na casa'), findsOneWidget);
+      expect(find.text('O inglés na casa'), findsOneWidget);
       // Cada tramo sale dos veces cuando está elegido —en su pastilla y en la
       // cabecera de la ficha—, así que se comprueba que está, no cuántas.
       expect(find.text('0 a 6 meses'), findsWidgets);

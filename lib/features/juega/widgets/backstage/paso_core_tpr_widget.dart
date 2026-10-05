@@ -192,8 +192,8 @@ class PasoCoreTprWidget extends StatelessWidget {
                     children: [
                       Text(
                         isGl
-                            ? 'Sinal de Inhibición: FREEZE!'
-                            : 'Señal de Inhibición: ¡FREEZE!',
+                            ? 'Sinal de inhibición: FREEZE!'
+                            : 'Señal de inhibición: ¡FREEZE!',
                         style: const TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 17,
@@ -250,8 +250,8 @@ class PasoCoreTprWidget extends StatelessWidget {
                     children: [
                       Text(
                         isGl
-                            ? 'Tarxetas Icónicas Cue Cards (Sen Texto)'
-                            : 'Tarjetas Icónicas Cue Cards (Sin Texto)',
+                            ? 'Tarxetas icónicas (cue cards), sen texto'
+                            : 'Tarjetas icónicas (cue cards), sin texto',
                         style: TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 17,
@@ -295,7 +295,7 @@ class PasoCoreTprWidget extends StatelessWidget {
             const SizedBox(width: 8),
             Expanded(
                 child: Text(
-              isGl ? 'Comandos de Acción en L3' : 'Comandos de Acción en L3',
+              isGl ? 'Comandos de acción en L3' : 'Comandos de acción en L3',
               style: const TextStyle(
                 fontFamily: AppTheme.fontFamily,
                 fontSize: 18,

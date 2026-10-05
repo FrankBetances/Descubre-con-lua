@@ -11,6 +11,7 @@ import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../core/widgets/pasos_navegacion.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
+import '../../docentes/nomes_docentes.dart';
 
 /// Escucha: las frases y las órdenes largas del curso, mes a mes.
 ///
@@ -99,7 +100,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: isGl ? 'Escoita as frases' : 'Escucha las frases',
+        titulo: NomesDocentes.escoita.resolve(_language),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),

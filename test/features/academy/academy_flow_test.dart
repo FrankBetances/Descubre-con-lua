@@ -124,7 +124,10 @@ void main() {
         ),
       );
 
-      expect(find.text('Academy'), findsOneWidget);
+      // Se titula como la puerta por la que se llega, «Guías para a
+      // familia», en su forma corta.
+      expect(find.text('Guías'), findsOneWidget);
+      expect(find.text('Academy'), findsNothing);
       // The five blocks do not fit in one viewport: a family scrolls to reach
       // the last ones, so the test scrolls too instead of asserting on height.
       for (var i = 1; i <= 5; i++) {

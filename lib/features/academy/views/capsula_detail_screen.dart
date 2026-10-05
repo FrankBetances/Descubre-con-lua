@@ -13,6 +13,8 @@ import '../../premios/premios_repository.dart';
 import '../widgets/academy_header.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../core/widgets/pasos_navegacion.dart';
+import '../../docentes/nomes_docentes.dart';
+import '../../familias/nomes_familias.dart';
 
 /// El lector de una cápsula, portado del proyecto anterior de la casa
 /// (`docs/screenshots/29-academy-lector.png` y `30-academy-quiz.png`).
@@ -55,11 +57,13 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
   late AppLanguage _language;
 
   /// Las cápsulas del aula son la formación de la docente; las demás, las
-  /// lecturas de Academy para la familia.
+  /// guías para la familia. Cada una se titula como la puerta por la que se
+  /// llega.
   String get _tituloCabecera =>
-      Bloque.aula.any((b) => b.id == widget.capsula.bloqueId)
-          ? 'Formación'
-          : 'Academy';
+      (Bloque.aula.any((b) => b.id == widget.capsula.bloqueId)
+              ? NomesDocentes.formacionCabeceira
+              : NomesFamilias.guiasFamiliaCabeceira)
+          .resolve(_language);
   final Map<String, bool?> _userAnswers = {};
   final PageController _pages = PageController();
   int _pagina = 0;

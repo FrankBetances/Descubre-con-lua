@@ -47,10 +47,14 @@ compara el ancho pintado con el que el texto mide de verdad.
 
 | Fichero | Pantalla |
 | --- | --- |
-| `bienvenida-{gl,es}.png` | La pantalla con la que arranca la app |
-| `aula-unidades-{gl,es}.png` | Juega con Lúa · Aula: tira de Lúa, formación y unidades |
-| `aula-formacion-{gl,es}.png` | Formación · Aula: los seis pasos de la asamblea |
-| `academy-bloques-{gl,es}.png` | Academy · Familias: los cinco bloques |
+| `bienvenida-{gl,es}.png` | El inicio: «¿Dónde la vas a usar?» y las dos respuestas, En casa y En la escuela |
+| `hoxe-familias-{gl,es}.png` | Hoy, en el Portal Familias: el juego de tres minutos, sus palabras y el cuento de la semana |
+| `explorar-familias-{gl,es}.png` | Explorar: los seis módulos de casa |
+| `hoxe-docentes-{gl,es}.png` | Hoy, en el Portal Docentes: la asamblea del día, sus palabras, el cuento, la dinámica y la ciencia |
+| `recursos-docentes-{gl,es}.png` | Recursos: los módulos del aula en cuatro grupos |
+| `aula-unidades-{gl,es}.png` | Juega con Lúa · Modo Aula: el selector compacto, la sesión del día y las unidades |
+| `aula-formacion-{gl,es}.png` | Formación en el aula: los seis pasos de la asamblea |
+| `academy-bloques-{gl,es}.png` | Guías para la familia: los cinco bloques |
 | `academy-lector-{gl,es}.png` | El lector paginado de una cápsula |
 | `premios-{gl,es}.png` | Los premios de Lúa: nivel, racha e insignias |
 | `creditos-{gl,es}.png` | Créditos |
@@ -69,11 +73,12 @@ flutter test --tags capturas --update-goldens test/laminas_hoja_test.dart
 
 ## Las capturas de la app de escritorio
 
-Las que empiezan por `l0-`, `l1-`, `l2-`, `l3-` y `l4-`, y las de `vocabulario-flower-`, son otra
+Las que empiezan por `l0-`, `l1-`, `l2-`, `l3-`, `l4-` y `l5-`, y las de `vocabulario-flower-`, son otra
 cosa: la app **compilada para escritorio** (Linux), abierta en una pantalla
 virtual de 360 × 780 px y recorrida a mano por el mismo camino que usa quien la
-maneja (Inicio → Comezar → portal → módulo). Son la prueba de que un cambio se
-ve donde se dijo, no ilustraciones del manual, y el manual no las usa.
+maneja (hasta L4, Inicio → Comezar → portal → módulo; desde L5, Inicio → Na
+casa o Na escola → pestaña → módulo). Son la prueba de que un cambio se ve
+donde se dijo, no ilustraciones del manual, y el manual no las usa.
 
 Tampoco son capturas de un aparato: la app de escritorio comparte la interfaz con
 la de Android, pero no sus barras del sistema, su densidad ni su escala de texto.
@@ -110,3 +115,7 @@ la de Android, pero no sus barras del sistema, su densidad ni su escala de texto
 | `l4-modo-aula-selector-{gl,es}.png` | El mismo selector abierto: grupo, mes, semana y día, con la tira de meses dentro del margen |
 | `l4-eu-{gl,es}.png` | «Eu»: el nivel y la racha de la docente, la guía de dos minutos, la formación del aula y lo que se guarda |
 | `l4-explorar-familias-{gl,es}.png` | Explorar de familias: «Ciencia coas mans» dice debajo que es STEAM |
+| `l5-inicio-{gl,es}.png` | El inicio: una pregunta, «Onde vas usala?», y dos respuestas, «Na casa» y «Na escola», cada una con su dibujo |
+| `l5-recursos-ingles-{gl,es}.png` | Recursos de la escuela, en dos pantallas: el inglés por partes, una puerta para cada una (palabras del curso, repaso, frases, colocaciones, sonidos y vocabulario) |
+| `l5-portas-casa-{gl,es}.png` | La cabecera de cada pantalla a la que se llega desde Explorar y Guías: lleva el nombre de su puerta, o su comienzo si no cabe |
+| `l5-portas-escola-{gl,es}.png` | Lo mismo desde Recursos y Eu: las once puertas de Recursos, los premios de la docente y sus dos guías |

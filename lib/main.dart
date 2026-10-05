@@ -22,12 +22,10 @@ import 'data/models/asamblea_segundo_ciclo_model.dart';
 import 'features/cuentos/views/cuentos_list_screen.dart';
 import 'features/laminas/views/laminas_gallery_screen.dart';
 import 'features/palabras/views/vocabulario_ingles_screen.dart';
-import 'features/english/views/english_hub_screen.dart';
 import 'features/lectura/views/aprender_a_ler_screen.dart';
 import 'features/planificador/views/planificador_screen.dart';
 import 'features/planificador/views/estrategias_screen.dart';
 import 'features/planificador/views/dinamicas_screen.dart';
-import 'features/seleccion/seleccion_portal_screen.dart';
 import 'features/familias/portal_familias_screen.dart';
 import 'features/docentes/portal_docentes_screen.dart';
 import 'features/calendario/views/calendario_fogar_screen.dart';
@@ -128,21 +126,13 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               currentLanguage: _currentLanguage,
               onToggleLanguage: _toggleLanguage,
               onLanguageChanged: _setLanguage,
-              onStart: () =>
-                  Navigator.of(context).pushReplacementNamed('/home'),
+              onCasa: () => Navigator.of(context).pushNamed('/portal-familias'),
+              onEscola: () =>
+                  Navigator.of(context).pushNamed('/portal-docentes'),
               onShowCredits: () => Navigator.of(context).pushNamed('/creditos'),
             ),
         '/creditos': (context) => CreditsScreen(
               currentLanguage: _currentLanguage,
-              onLanguageChanged: _setLanguage,
-            ),
-        '/home': (context) => SeleccionPortalScreen(
-              repository: _repository,
-              premios: _premios,
-              calendario: _calendario,
-              audioService: _audioService,
-              currentLanguage: _currentLanguage,
-              onToggleLanguage: _toggleLanguage,
               onLanguageChanged: _setLanguage,
             ),
         '/portal-familias': (context) => Theme(
@@ -247,12 +237,6 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
               initialLanguage: _currentLanguage,
               audioService: _audioService,
             ),
-        '/english': (context) => EnglishHubScreen(
-              onLanguageChanged: _setLanguage,
-              repository: _repository,
-              initialLanguage: _currentLanguage,
-              audioService: _audioService,
-            ),
         '/lectura': (context) => Theme(
               data: AppTheme.temaFamilias,
               child: AprenderALerScreen(
@@ -319,48 +303,6 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
         }
         return null;
       },
-    );
-  }
-}
-
-enum PortalRole {
-  familias,
-  docentes,
-}
-
-/// Compatibility wrapper for HomeScreen that redirects to SeleccionPortalScreen.
-class HomeScreen extends StatelessWidget {
-  final ContentRepository repository;
-  final PremiosRepository? premios;
-  final CalendarioStore? calendario;
-  final OfflineAudioService audioService;
-  final AppLanguage currentLanguage;
-  final VoidCallback onToggleLanguage;
-  final ValueChanged<AppLanguage>? onLanguageChanged;
-  final PortalRole initialRole;
-
-  const HomeScreen({
-    super.key,
-    required this.repository,
-    required this.audioService,
-    required this.currentLanguage,
-    required this.onToggleLanguage,
-    this.onLanguageChanged,
-    this.premios,
-    this.calendario,
-    this.initialRole = PortalRole.familias,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return SeleccionPortalScreen(
-      repository: repository,
-      premios: premios,
-      calendario: calendario,
-      audioService: audioService,
-      currentLanguage: currentLanguage,
-      onToggleLanguage: onToggleLanguage,
-      onLanguageChanged: onLanguageChanged,
     );
   }
 }

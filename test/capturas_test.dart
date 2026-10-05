@@ -36,6 +36,8 @@ import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/premios/premios_screen.dart';
 import 'package:descubre_con_lua/data/models/steam_model.dart';
 import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.dart';
+import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
+import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_hub_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
@@ -299,6 +301,11 @@ void main() {
     /// pulsar hasta una página concreta, responder una reflexión. Sin esto,
     /// una pantalla paginada solo se puede retratar por su primera página.
     Future<void> Function(WidgetTester tester)? antesDeRetratar,
+
+    /// El tema del portal: naranja en casa, verde azulado en la escuela. Sin
+    /// él, una pantalla de casa sale en el verde de la escuela y el manual
+    /// enseña un color que la app no pinta.
+    ThemeData? tema,
   }) async {
     await calentarMascota(tester);
     await calentarLaminas(tester);
@@ -312,7 +319,7 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
-        theme: AppTheme.lightTheme,
+        theme: tema ?? AppTheme.lightTheme,
         debugShowCheckedModeBanner: false,
         home: pantalla,
       ),
@@ -350,9 +357,102 @@ void main() {
           WelcomeScreen(
             currentLanguage: lang,
             onToggleLanguage: () {},
-            onStart: () {},
+            onCasa: () {},
+            onEscola: () {},
             onShowCredits: () {},
           ));
+    });
+
+    // Lo que cada portal abre primero, el viernes 2 de octubre de 2026 (el
+    // día del ejemplo de la revisión) y con 0-2 años. Lo que la pantalla lee
+    // del disco se lee antes, dentro de `runAsync`: bajo el reloj falso una
+    // lectura no termina y la imagen saldría a medias.
+    Future<void> contidoDeHoxe(WidgetTester tester) async {
+      await cursoTprLeido(tester);
+      await tester.runAsync(() async {
+        await contenido.loadCalendarioDias(cursoId: 'curso_0_2');
+        await contenido.loadCuentos();
+        await contenido.loadDinamicas();
+        await contenido.loadSteamUnits();
+      });
+    }
+
+    final venres = DateTime(2026, 10, 2, 10);
+
+    testWidgets('na casa · hoxe · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      await capturar(
+        tester,
+        'hoxe-familias-$l',
+        PortalFamiliasScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          currentLanguage: lang,
+          onToggleLanguage: () {},
+          calendario: CalendarioStore(overrideDirectory: tmp.path),
+          agora: venres,
+        ),
+        tema: AppTheme.temaFamilias,
+      );
+    });
+
+    testWidgets('na casa · explorar · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      await capturar(
+        tester,
+        'explorar-familias-$l',
+        PortalFamiliasScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          currentLanguage: lang,
+          onToggleLanguage: () {},
+          calendario: CalendarioStore(overrideDirectory: tmp.path),
+          agora: venres,
+        ),
+        tema: AppTheme.temaFamilias,
+        antesDeRetratar: (tester) async {
+          await tester.tap(find.byKey(const Key('pestana_explorar')));
+          await tester.pumpAndSettle();
+        },
+      );
+    });
+
+    testWidgets('na escola · hoxe · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      await capturar(
+        tester,
+        'hoxe-docentes-$l',
+        PortalDocentesScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          currentLanguage: lang,
+          onToggleLanguage: () {},
+          calendario: CalendarioStore(overrideDirectory: tmp.path),
+          agora: venres,
+        ),
+        tamano: const Size(412, 1300),
+      );
+    });
+
+    testWidgets('na escola · recursos · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      await capturar(
+        tester,
+        'recursos-docentes-$l',
+        PortalDocentesScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          currentLanguage: lang,
+          onToggleLanguage: () {},
+          calendario: CalendarioStore(overrideDirectory: tmp.path),
+          agora: venres,
+        ),
+        tamano: const Size(412, 1500),
+        antesDeRetratar: (tester) async {
+          await tester.tap(find.byKey(const Key('pestana_recursos')));
+          await tester.pumpAndSettle();
+        },
+      );
     });
 
     testWidgets('creditos · $l', (tester) async {
@@ -442,6 +542,7 @@ void main() {
               ?.curriculo,
         ),
         tamano: const Size(412, 2000),
+        tema: AppTheme.temaFamilias,
       );
     });
 
@@ -458,6 +559,7 @@ void main() {
           calendarioContenido: cal,
         ),
         tamano: const Size(412, 1400),
+        tema: AppTheme.temaFamilias,
       );
     });
 
@@ -471,7 +573,8 @@ void main() {
             capsula: capsula,
             initialLanguage: lang,
             audioService: MockOfflineAudioService(),
-          ));
+          ),
+          tema: AppTheme.temaFamilias);
     });
 
     testWidgets('academy · o peche de Lúa · $l', (tester) async {
@@ -491,6 +594,7 @@ void main() {
           initialLanguage: lang,
           audioService: MockOfflineAudioService(),
         ),
+        tema: AppTheme.temaFamilias,
         antesDeRetratar: (t) async {
           final siguiente = lang == AppLanguage.gl ? 'Seguinte' : 'Siguiente';
           final verdadero = lang == AppLanguage.gl ? 'Verdadeiro' : 'Verdadero';
@@ -635,6 +739,9 @@ void main() {
           initialLanguage: lang,
           esDocenteInicial: false,
         ),
+        // El lado de la familia se abre desde «Guías para a familia»: va en
+        // el naranja de casa, como en la app.
+        tema: AppTheme.temaFamilias,
         // Un móvil de verdad, no un lienzo de 1800 px. El Calendario ya no es
         // una página larga: cabe en una pantalla y el mes se pasa de lado.
       );
@@ -701,6 +808,7 @@ void main() {
           initialLanguage: lang,
         ),
         tamano: const Size(412, 1500),
+        tema: AppTheme.temaFamilias,
       );
     });
 
@@ -765,6 +873,7 @@ void main() {
         'guia-ingles-$l',
         GuiaAtencionScreen(contenido: contenido, initialLanguage: lang),
         tamano: const Size(412, 1500),
+        tema: AppTheme.temaFamilias,
       );
     });
   }

@@ -5,6 +5,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/estrategia_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../docentes/nomes_docentes.dart';
 
 /// Catálogo de estratexias pedagóxicas de aula.
 ///
@@ -77,7 +78,7 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: lang == AppLanguage.gl ? 'Estratexias' : 'Estrategias',
+        titulo: NomesDocentes.estratexiasCabeceira.resolve(lang),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),
@@ -192,8 +193,8 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                         _buildSection(
                           icon: Icons.school_rounded,
                           title: lang == AppLanguage.gl
-                              ? 'Como Aplicar na Aula'
-                              : 'Cómo Aplicar en el Aula',
+                              ? 'Como aplicar na aula'
+                              : 'Cómo aplicar en el aula',
                           content: est.comoAplicarNaAula.resolve(lang),
                           color: context.acento,
                         ),

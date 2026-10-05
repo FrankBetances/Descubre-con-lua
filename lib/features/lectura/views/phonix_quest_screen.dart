@@ -8,6 +8,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/phonics_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../docentes/nomes_docentes.dart';
 
 /// Motor de misións fonémicas e conciencia fonolóxica (Phonix Quest).
 class PhonixQuestScreen extends StatefulWidget {
@@ -133,7 +134,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: 'Phonix Quest',
+        titulo: NomesDocentes.sons.resolve(_language),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),
@@ -160,8 +161,8 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                           children: [
                             Text(
                               lang == AppLanguage.gl
-                                  ? 'Guía de Articulación para Docentes e Nais/Pais'
-                                  : 'Guía de Articulación para Docentes y Madres/Padres',
+                                  ? 'Guía de articulación para docentes e nais/pais'
+                                  : 'Guía de articulación para docentes y madres/padres',
                               style: TextStyle(
                                 color: context.acento,
                                 fontWeight: FontWeight.bold,

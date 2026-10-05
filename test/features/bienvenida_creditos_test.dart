@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
+import 'package:descubre_con_lua/features/bienvenida/nomes_inicio.dart';
 import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
 import 'package:descubre_con_lua/features/creditos/credits_screen.dart';
 
@@ -31,12 +32,15 @@ List<Object> _drainExceptions(WidgetTester tester) {
 
 void main() {
   group('Pantalla de bienvenida', () {
-    testWidgets('dice qué es cada módulo, en las dos lenguas', (tester) async {
+    testWidgets(
+        'pregunta dónde se usa y responde con los dos sitios, en '
+        'las dos lenguas', (tester) async {
       for (final lang in AppLanguage.deInterfaz) {
         await tester.pumpWidget(_wrap(WelcomeScreen(
           currentLanguage: lang,
           onToggleLanguage: () {},
-          onStart: () {},
+          onCasa: () {},
+          onEscola: () {},
           onShowCredits: () {},
         )));
         await tester.pumpAndSettle();
@@ -44,30 +48,39 @@ void main() {
         expect(find.text('Descubre con Lúa'), findsOneWidget);
         expect(find.text('Edición Vigo'), findsOneWidget);
 
-        // El cuerpo nombra los dos módulos: quien abre esto por primera vez
-        // tiene que saber cuál es el suyo sin entrar a probar.
-        final body = tester
-            .widgetList<Text>(find.byType(Text))
-            .map((t) => t.data ?? '')
-            .join(' ');
-        expect(body, contains('Lúa'));
-        expect(body, contains('Academy'));
+        // Quien abre esto por primera vez sabe cuál es lo suyo sin entrar a
+        // probar: la pregunta y las dos respuestas, cada una con qué hay.
+        for (final t in [
+          NomesInicio.pregunta,
+          NomesInicio.casa,
+          NomesInicio.casaDi,
+          NomesInicio.escola,
+          NomesInicio.escolaDi,
+        ]) {
+          expect(find.text(t.resolve(lang)), findsOneWidget,
+              reason: t.resolve(lang));
+        }
       }
     });
 
-    testWidgets('el botón de empezar llama a su acción', (tester) async {
-      var started = 0;
+    testWidgets('cada respuesta abre su portal', (tester) async {
+      var casa = 0;
+      var escola = 0;
       await tester.pumpWidget(_wrap(WelcomeScreen(
         currentLanguage: AppLanguage.gl,
         onToggleLanguage: () {},
-        onStart: () => started++,
+        onCasa: () => casa++,
+        onEscola: () => escola++,
         onShowCredits: () {},
       )));
       await tester.pumpAndSettle();
 
-      await tester.tap(find.text('Comezar'));
+      await tester.tap(find.byKey(const ValueKey('inicio_na_casa')));
       await tester.pump();
-      expect(started, 1);
+      expect((casa, escola), (1, 0));
+      await tester.tap(find.byKey(const ValueKey('inicio_na_escola')));
+      await tester.pump();
+      expect((casa, escola), (1, 1));
     });
 
     testWidgets('el conmutador de lengua está y responde', (tester) async {
@@ -75,7 +88,8 @@ void main() {
       await tester.pumpWidget(_wrap(WelcomeScreen(
         currentLanguage: AppLanguage.gl,
         onToggleLanguage: () => toggles++,
-        onStart: () {},
+        onCasa: () {},
+        onEscola: () {},
         onShowCredits: () {},
       )));
       await tester.pumpAndSettle();
@@ -92,7 +106,8 @@ void main() {
         currentLanguage: AppLanguage.gl,
         onToggleLanguage: () {},
         onLanguageChanged: (lang) => changed = lang,
-        onStart: () {},
+        onCasa: () {},
+        onEscola: () {},
         onShowCredits: () {},
       )));
       await tester.pumpAndSettle();
@@ -121,7 +136,8 @@ void main() {
           child: WelcomeScreen(
             currentLanguage: AppLanguage.gl,
             onToggleLanguage: () {},
-            onStart: () {},
+            onCasa: () {},
+            onEscola: () {},
             onShowCredits: () {},
           ),
         ),
@@ -129,7 +145,7 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(_drainExceptions(tester), isEmpty,
-          reason: 'La bienvenida desborda con la escala de texto grande.');
+          reason: 'El inicio desborda con la escala de texto grande.');
     });
   });
 

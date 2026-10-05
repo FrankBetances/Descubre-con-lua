@@ -20,6 +20,7 @@ import '../../../core/storage/calendario_store.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../docentes/nomes_docentes.dart';
 
 /// Ciclos educativos de Educación Infantil (Decreto 150/2022).
 enum CicloEducativo {
@@ -102,7 +103,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
 
     return Scaffold(
       appBar: Cabecera(
-        titulo: isGl ? 'Xoga con Lúa' : 'Juega con Lúa',
+        titulo: NomesDocentes.asembleasCabeceira.resolve(_language),
         language: _language,
         onLanguageChanged: _onToggleLanguage,
       ),
@@ -157,8 +158,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                           ),
                           child: Text(
                             isGl
-                                ? '1.º Ciclo (0-3 anos)'
-                                : '1.er Ciclo (0-3 años)',
+                                ? '1.º ciclo (0-3 anos)'
+                                : '1.er ciclo (0-3 años)',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontFamily: AppTheme.fontFamily,
@@ -210,8 +211,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                           ),
                           child: Text(
                             isGl
-                                ? '2.º Ciclo (3-6 anos)'
-                                : '2.º Ciclo (3-6 años)',
+                                ? '2.º ciclo (3-6 anos)'
+                                : '2.º ciclo (3-6 años)',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontFamily: AppTheme.fontFamily,

@@ -5,28 +5,44 @@ municipales de Vigo, los colegios de la ciudad y sus familias. Cubre las dos
 etapas de educación infantil: **primer ciclo (0-3 años)** y **segundo ciclo
 (3-6 años)**. Todo el contenido existe en gallego y castellano.
 
-- **Juega con Lúa · Aula** — la usa la docente en la asamblea. Incluye
-  **Formación · Aula**: una cápsula de tres minutos por cada paso de la asamblea.
+Al abrirla hay una sola pregunta —**¿Dónde la vas a usar?**— y dos respuestas:
+**En casa**, que abre el Portal Familias, y **En la escuela**, que abre el
+Portal Docentes. Cada portal se abre por lo que toca hoy y tiene cuatro
+pestañas, siempre en el mismo sitio: *Hoy · Calendario · Explorar · Guías* en
+casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
+
+- **Hoy, en la escuela** — la asamblea del día del grupo, arriba, con sus cuatro
+  fases y un solo botón; debajo, las palabras en inglés de hoy, el cuento de la
+  semana, la dinámica y cuándo toca la ciencia del curso.
+- **Hoy, en casa** — el juego de tres minutos del día, con el momento como
+  título y un solo botón, sus palabras en inglés con voz y el cuento de la
+  semana.
+- **Juega con Lúa · Modo Aula** — todas las asambleas, de cualquier grupo, mes y
+  día; el grupo, el mes y el día van en una línea que se abre si hace falta.
+- **Yo, en la escuela** — el nivel y la racha de la docente, *Antes de entrar
+  en el aula* —la guía de dos minutos— y **Formación en el aula**: una lectura
+  corta por cada paso de la asamblea.
 - **Asamblea matinal de segundo ciclo** — para 4.º, 5.º y 6.º de Infantil, con
   el inglés como tercera lengua. Cuatro fases —apertura, foco rítmico, reto TPR
   y calma—, cada una con su consigna, su lámina, su cronómetro y su altavoz; el
   nivel se cambia sin salir de la pantalla. Es **la misma pantalla que la
   asamblea de primer ciclo**: el producto tiene un solo lenguaje visual. Se
   entra por la lista del aula o por la ficha del mes del Calendario.
-- **Academy · Familias** — la usan las familias en casa. Incluye la
+- **Guías para la familia** (Academy) — lecturas cortas para la persona adulta,
+  en la pestaña Guías del Portal Familias. Incluye la
   **micro-rutina del mes** para segundo ciclo: tres minutos en un momento
   concreto del día, con ejemplos de cómo devolver la frase bien dicha sin pedir
   que la criatura la repita.
 - **STEAM · Ciencia con las manos** — cinco sesiones de ciencia con materiales
   reales, una por curso de 12 meses a 6 años: blando y duro, la rampa, el
   sonido, las sombras y un robot que programan las criaturas. Cada una tiene su
-  **versión para el aula**, que abre el Portal Docentes con el curso de «Hoxe na
-  aula», y su **versión para casa**, que abre el Portal Familias con la edad
-  elegida. Empiezan por su aviso de seguridad y traen las órdenes en inglés con
+  **versión para el aula**, que se abre desde el Portal Docentes con el grupo
+  elegido en Hoy, y su **versión para casa**, que se abre desde Explorar con la
+  edad elegida. Empiezan por su aviso de seguridad y traen las órdenes en inglés con
   su grabación. No evalúan ni registran nada: dicen qué observar. El día que le
-  toca a cada curso, la sesión sale sola en «Hoxe na aula», en el día del Modo
-  Aula y en el Calendario Escola · Fogar, con la versión de casa del lado de
-  las familias.
+  toca a cada curso, la sesión sale sola en Hoy, en el día del Modo Aula y en
+  el Calendario Escola · Fogar, con la versión de casa del lado de las familias;
+  los demás días, Hoy de la docente dice cuándo toca.
 - **Calendario Escola · Fogar** — los seis años del trayecto, de 0-2 a 5-6:
   cinco cursos de diez meses, de septiembre a junio, uno por tarjeta. Se pasa
   deslizando de lado, y de junio de un curso se llega a septiembre del
@@ -34,9 +50,9 @@ etapas de educación infantil: **primer ciclo (0-3 años)** y **segundo ciclo
   criatura en casa— y el calendario salta al mismo mes de ese curso. La docente
   registra la asamblea, la familia registra el juego de tres minutos en casa, y
   el día que coinciden las dos cosas queda enlazado.
-- **Los premios de Lúa** — nivel, XP, racha, insignias y las medallas del
-  calendario. Premian **a la persona adulta** que usa la app, nunca a la
-  criatura.
+- **Tus premios** — los premios de Lúa: nivel, XP, racha, insignias y las
+  medallas del calendario. Premian **a la persona adulta** que usa la app,
+  nunca a la criatura.
 
 **El inglés no es una lengua de esta app: es contenido que se escucha.** Ninguna
 pantalla se lee en inglés. Lo que hay son las palabras, las órdenes de cuerpo
@@ -57,11 +73,12 @@ cinco cursos, de 0 a 6 años**, sin que ninguna sea nueva dos veces en todo el
 trayecto: sustantivos, verbos, adjetivos, oraciones y preguntas, y estructuras
 con conectores. Cada una trae lo que significa en gallego y en castellano y el
 gesto que la acompaña. Cada grupo del aula tiene su curso. La docente las ve en
-«Hoxe na aula», en el día del Modo Aula y en el día del Calendario, junto a la
-asamblea de ese día; la familia ve **las mismas** ese día, con una dinámica
+Hoy, en el día del Modo Aula y en el día del Calendario, junto a la asamblea de
+ese día; la familia ve **las mismas** ese día, con una dinámica
 pensada para casa.
 
-**Inmersión en inglés** trabaja esas mismas palabras: se consultan por curso,
+El grupo **Inglés** de Recursos, en el Portal Docentes, trabaja esas mismas
+palabras, una fila para cada parte: se consultan por curso,
 mes, semana y día, con buscador; se repasan con repaso espaciado —las de hoy y
 las que ya salieron en el curso, cada una cuando le toca—; se escuchan las
 frases y órdenes de cada mes antes de leerlas; y se completan con 63
@@ -106,7 +123,7 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 
 | | |
 | --- | --- |
-| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el aula de los dos ciclos, el calendario, Academy, STEAM, las lenguas y la voz, los premios y la privacidad—. Lleva 32 imágenes de pantalla: 16 pantallas, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el inicio, los dos portales con sus pestañas, el Modo Aula de los dos ciclos, el calendario, las guías para la familia, STEAM, las lenguas y la voz, los premios y la privacidad—. Lleva 40 imágenes de pantalla: 20 pantallas, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
 | [**Base pedagógica de STEAM**](docs/BASE_PEDAGOGICA_STEAM.md) | Qué hay en las cinco sesiones STEAM y por qué, sus criterios de seguridad y sus fuentes |
 | [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
 | [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
@@ -339,7 +356,7 @@ El texto vive en un solo sitio a propósito: cuando el constructor lleva su
 propia copia, la fuente avanza y el documento generado se queda describiendo una
 versión anterior sin que nada avise.
 
-Las 32 imágenes que el manual incrusta viven en `docs/capturas/`, que guarda
+Las 40 imágenes que el manual incrusta viven en `docs/capturas/`, que guarda
 además las hojas de las láminas, las capturas que aún no entran en el manual y
 las de la app de escritorio que acompañan a cada cambio de pantalla. Las del
 manual se regeneran con:

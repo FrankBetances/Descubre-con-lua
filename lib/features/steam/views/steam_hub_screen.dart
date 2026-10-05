@@ -12,6 +12,8 @@ import '../widgets/steam_comun.dart';
 import 'steam_sesion_guiada_screen.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../docentes/nomes_docentes.dart';
+import '../../familias/nomes_familias.dart';
 
 /// Las cinco unidades STEAM, una por curso.
 ///
@@ -47,14 +49,12 @@ class SteamHubScreen extends StatefulWidget {
 class _SteamHubScreenState extends State<SteamHubScreen> {
   late AppLanguage _language;
 
-  /// «STEAM · Ciencia coas mans» no cabe en la cabecera a 360 px; el título
-  /// corto dice además para quién es.
-  String get _tituloCabecera {
-    final gl = _language == AppLanguage.gl;
-    return widget.audiencia == SteamAudiencia.hogar
-        ? (gl ? 'STEAM na casa' : 'STEAM en casa')
-        : (gl ? 'STEAM na aula' : 'STEAM en el aula');
-  }
+  /// El nombre de la puerta, en su forma de cabecera: «Ciencia · STEAM». Para
+  /// quién es lo dice la pastilla de la primera tarjeta.
+  String get _tituloCabecera => (widget.audiencia == SteamAudiencia.hogar
+          ? NomesFamilias.cienciaCabeceira
+          : NomesDocentes.cienciaCabeceira)
+      .resolve(_language);
 
   String? _curso;
   bool _cargando = false;

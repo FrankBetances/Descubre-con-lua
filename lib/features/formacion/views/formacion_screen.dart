@@ -5,6 +5,8 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../core/widgets/pasos_navegacion.dart';
 import '../../../data/models/formacion_model.dart';
+import '../../docentes/nomes_docentes.dart';
+import '../../familias/nomes_familias.dart';
 
 /// La formación previa: lo que hay que saber ANTES de usar la app.
 ///
@@ -99,10 +101,14 @@ class _FormacionScreenState extends State<FormacionScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      // «Antes de empezar na casa» no cabe en la cabecera a 360 px: el
-      // título dice qué es y la segunda línea, para quién.
+      // El título es el de la puerta por la que se llega —«Antes de empezar»
+      // en casa, «Antes de entrar na aula» en la escuela, en su forma corta—
+      // y la segunda línea dice para quién.
       appBar: Cabecera(
-        titulo: isGl ? 'Antes de empezar' : 'Antes de empezar',
+        titulo: (naCasa
+                ? NomesFamilias.antesDeEmpezar
+                : NomesDocentes.antesDeEntrarCabeceira)
+            .resolve(_language),
         subtitulo: naCasa
             ? (isGl ? 'Na casa · 2 min' : 'En casa · 2 min')
             : (isGl ? 'Na aula · 2 min' : 'En el aula · 2 min'),

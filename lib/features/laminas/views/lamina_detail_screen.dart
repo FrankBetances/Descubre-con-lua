@@ -223,8 +223,8 @@ class LaminaDetailScreen extends StatelessWidget {
                           Expanded(
                               child: Text(
                             isGl
-                                ? 'Xogo Manipulativo Táctil (Fogar / Aula)'
-                                : 'Juego Manipulativo Táctil (Hogar / Aula)',
+                                ? 'Xogo manipulativo táctil (fogar / aula)'
+                                : 'Juego manipulativo táctil (hogar / aula)',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 13,
@@ -364,7 +364,7 @@ class LaminaDetailScreen extends StatelessWidget {
                             const SizedBox(width: 8),
                             Expanded(
                                 child: Text(
-                              'Acción TPR en Inglés (L3)',
+                              'Acción TPR en inglés (L3)',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13,

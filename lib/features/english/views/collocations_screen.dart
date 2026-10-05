@@ -10,6 +10,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../docentes/nomes_docentes.dart';
 
 /// Explorador de colocaciones y patrones sintácticos de inglés.
 ///
@@ -95,7 +96,7 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: isGl ? 'Colocacións' : 'Colocaciones',
+        titulo: NomesDocentes.colocacions.resolve(_language),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),

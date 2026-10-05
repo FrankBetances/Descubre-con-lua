@@ -11,9 +11,12 @@ import '../../../core/widgets/fila_portal.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../english/views/english_hub_screen.dart';
+import '../../english/views/collocations_screen.dart';
+import '../../english/views/fsrs_trainer_screen.dart';
+import '../../english/views/listening_screen.dart';
 import '../../english/views/palabras_do_traxecto_screen.dart';
 import '../../juega/views/unidades_list_screen.dart';
+import '../../lectura/views/phonix_quest_screen.dart';
 import '../../palabras/views/vocabulario_ingles_screen.dart';
 import '../../planificador/views/dinamicas_screen.dart';
 import '../../planificador/views/estrategias_screen.dart';
@@ -151,16 +154,55 @@ class RecursosDocentesScreen extends StatelessWidget {
                 ),
           ),
           (
-            'recurso_ingles_aula',
-            Icons.language_rounded,
-            NomesDocentes.inglesAula,
-            NomesDocentes.inglesAulaDi,
-            (_) => EnglishHubScreen(
+            'recurso_repaso',
+            Icons.bolt_rounded,
+            NomesDocentes.repaso,
+            NomesDocentes.repasoDi,
+            (_) => FsrsTrainerScreen(
+                  programa: repository.programaTprSync,
+                  cursoInicial: cursoId,
+                  language: language,
+                  onLanguageChanged: onLanguageChanged,
+                  audioService: audioService,
+                  agora: agora,
+                ),
+          ),
+          (
+            'recurso_escoita',
+            Icons.headphones_rounded,
+            NomesDocentes.escoita,
+            NomesDocentes.escoitaDi,
+            (_) => ListeningScreen(
+                  programa: repository.programaTprSync,
+                  cursoInicial: cursoId,
+                  language: language,
+                  onLanguageChanged: onLanguageChanged,
+                  audioService: audioService,
+                  agora: agora,
+                ),
+          ),
+          (
+            'recurso_colocacions',
+            Icons.menu_book_rounded,
+            NomesDocentes.colocacions,
+            NomesDocentes.colocacionsDi,
+            (_) => CollocationsScreen(
                   repository: repository,
                   initialLanguage: language,
                   onLanguageChanged: onLanguageChanged,
                   audioService: audioService,
-                  cursoInicial: cursoId,
+                ),
+          ),
+          (
+            'recurso_sons',
+            Icons.graphic_eq_rounded,
+            NomesDocentes.sons,
+            NomesDocentes.sonsDi,
+            (_) => PhonixQuestScreen(
+                  repository: repository,
+                  initialLanguage: language,
+                  onLanguageChanged: onLanguageChanged,
+                  audioService: audioService,
                 ),
           ),
           (
