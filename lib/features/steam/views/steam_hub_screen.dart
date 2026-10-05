@@ -212,7 +212,7 @@ class _SteamHubScreenState extends State<SteamHubScreen> {
                 child: Text(
                   SteamTextos.senPantallas.resolve(_language),
                   style: TextStyle(
-                    fontSize: 13,
+                    fontSize: 14,
                     fontWeight: FontWeight.w600,
                     color: context.acento,
                     height: 1.4,
@@ -253,7 +253,7 @@ class _SteamHubScreenState extends State<SteamHubScreen> {
         Text(
           _edad.resolve(_language).toUpperCase(),
           style: const TextStyle(
-            fontSize: 11,
+            fontSize: 12,
             fontWeight: FontWeight.w800,
             letterSpacing: 0.8,
             color: AppTheme.textSecondary,
@@ -320,7 +320,7 @@ class _TarxetaUnidade extends StatelessWidget {
               Text(
                 unidad.fenomeno.resolve(language),
                 style: const TextStyle(
-                  fontSize: 13.5,
+                  fontSize: 14,
                   color: AppTheme.textSecondary,
                   height: 1.4,
                 ),
@@ -339,7 +339,7 @@ class _TarxetaUnidade extends StatelessWidget {
                     child: Text(
                       variante.agrupamiento.resolve(language),
                       style: const TextStyle(
-                        fontSize: 13,
+                        fontSize: 14,
                         color: AppTheme.textPrimary,
                         height: 1.4,
                       ),

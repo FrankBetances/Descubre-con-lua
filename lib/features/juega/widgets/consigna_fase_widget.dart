@@ -188,10 +188,10 @@ class _ConsignaFaseWidgetState extends State<ConsignaFaseWidget> {
               TextButton(
                 key: const Key('boton_reloxo_fase'),
                 onPressed: _alternar,
+                // 48 dp de diana: con la densidad compacta se quedaba en 40.
                 style: TextButton.styleFrom(
                   minimumSize: const Size(0, 36),
                   padding: const EdgeInsets.symmetric(horizontal: 10),
-                  visualDensity: VisualDensity.compact,
                 ),
                 child: Text(
                   (corriendo ? _parar : _empezar).resolve(widget.language),

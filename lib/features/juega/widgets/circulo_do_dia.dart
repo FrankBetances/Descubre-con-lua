@@ -216,7 +216,7 @@ class _CirculoDoDiaState extends State<CirculoDoDia> {
             isGl ? 'O DÍA DE HOXE, ENTEIRO' : 'EL DÍA DE HOY, ENTERO',
             style: TextStyle(
               fontFamily: AppTheme.fontFamily,
-              fontSize: 11,
+              fontSize: 12,
               fontWeight: FontWeight.w800,
               letterSpacing: 0.8,
               color: context.acento,
@@ -330,7 +330,7 @@ class _FilaDoCirculo extends StatelessWidget {
                       rotulo,
                       style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
-                        fontSize: 11,
+                        fontSize: 12,
                         fontWeight: FontWeight.w700,
                         color: context.acento,
                       ),
@@ -351,7 +351,7 @@ class _FilaDoCirculo extends StatelessWidget {
                       detalle,
                       style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
-                        fontSize: 11,
+                        fontSize: 12,
                         color: AppTheme.textSecondary,
                       ),
                     ),

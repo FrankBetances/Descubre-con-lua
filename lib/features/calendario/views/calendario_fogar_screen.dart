@@ -346,7 +346,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                     Text(
                                       '${isGl ? _mesesNomes[_mesIndex]["gl"] : _mesesNomes[_mesIndex]["es"]} · ${mesCurricular.centroInteres.resolve(lang)}',
                                       style: TextStyle(
-                                        fontSize: 13,
+                                        fontSize: 14,
                                         fontWeight: FontWeight.bold,
                                         color: context.acento,
                                       ),
@@ -356,7 +356,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                       mesCurricular.objetivoPedagogico
                                           .resolve(lang),
                                       style: const TextStyle(
-                                        fontSize: 11,
+                                        fontSize: 14,
                                         color: AppTheme.textSecondary,
                                       ),
                                       maxLines: 2,
@@ -385,7 +385,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                     child: Text(
                                       'English (L3): «${mesCurricular.ingles.frase}»',
                                       style: const TextStyle(
-                                        fontSize: 12,
+                                        fontSize: 14,
                                         fontWeight: FontWeight.w600,
                                         color: Color(0xFF1A365D),
                                       ),
@@ -440,7 +440,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                     ? 'REIXA ESCOLAR · 20 DÍAS LECTIVOS'
                                     : 'CUADRÍCULA ESCOLAR · 20 DÍAS LECTIVOS',
                                 style: const TextStyle(
-                                  fontSize: 11,
+                                  fontSize: 12,
                                   fontWeight: FontWeight.w800,
                                   color: AppTheme.textSecondary,
                                   letterSpacing: 0.8,
@@ -451,7 +451,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                     ? 'Toca un día para abrilo'
                                     : 'Toca un día para abrirlo',
                                 style: const TextStyle(
-                                  fontSize: 10,
+                                  fontSize: 12,
                                   color: AppTheme.textMuted,
                                 ),
                               ),
@@ -468,7 +468,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                       .toUpperCase(),
                                   textAlign: TextAlign.center,
                                   style: const TextStyle(
-                                    fontSize: 11,
+                                    fontSize: 12,
                                     fontWeight: FontWeight.bold,
                                     color: AppTheme.textSecondary,
                                   ),
@@ -702,7 +702,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                     ? 'Total sesións na casa: ${widget.store.totalSesionesHogar} · Racha: ${widget.store.rachaActual} días'
                                     : 'Total sesiones en casa: ${widget.store.totalSesionesHogar} · Racha: ${widget.store.rachaActual} días',
                                 style: const TextStyle(
-                                  fontSize: 12,
+                                  fontSize: 14,
                                   color: AppTheme.textSecondary,
                                 ),
                               ),
@@ -779,7 +779,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                     '$diaSemanaNome · ${isGl ? "Semana" : "Semana"} ${dia.semanaNumero}',
                     style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 11,
+                      fontSize: 12,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -789,7 +789,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                 Text(
                   'Día ${dia.diaCursoNumero} do curso',
                   style: const TextStyle(
-                    fontSize: 11,
+                    fontSize: 12,
                     color: AppTheme.textMuted,
                   ),
                 ),
@@ -879,7 +879,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                           child: Text(
                             'Acción TPR en inglés',
                             style: TextStyle(
-                              fontSize: 11,
+                              fontSize: 12,
                               fontWeight: FontWeight.bold,
                               color: Color(0xFF2B6CB0),
                             ),
@@ -972,7 +972,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                           // #C05621 daba 4,49:1 sobre este fondo; el ámbar
                           // de la casa pasa AA.
                           style: const TextStyle(
-                            fontSize: 11,
+                            fontSize: 12,
                             fontWeight: FontWeight.bold,
                             color: AppTheme.warning,
                           ),
@@ -984,7 +984,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   Text(
                     fam.fraseConexion.resolve(_language),
                     style: const TextStyle(
-                      fontSize: 12,
+                      fontSize: 14,
                       color: Color(0xFF4A5568),
                       height: 1.35,
                     ),
@@ -1000,7 +1000,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                   ? 'Pauta para a persoa adulta:'
                   : 'Pauta para la persona adulta:',
               style: const TextStyle(
-                fontSize: 11,
+                fontSize: 12,
                 fontWeight: FontWeight.bold,
                 color: AppTheme.textSecondary,
               ),
@@ -1009,7 +1009,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
             Text(
               fam.consignaFamilia.resolve(_language),
               style: const TextStyle(
-                fontSize: 12,
+                fontSize: 14,
                 fontStyle: FontStyle.italic,
                 color: AppTheme.textMuted,
               ),
@@ -1080,22 +1080,22 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
     (
       gl: '1.º Outono',
       es: '1.º Otoño',
-      mesesGl: 'Set - Dec',
-      mesesEs: 'Sep - Dic',
+      mesesGl: 'Set-Dec',
+      mesesEs: 'Sep-Dic',
       meses: [9, 10, 11, 12]
     ),
     (
       gl: '2.º Inverno',
       es: '2.º Invierno',
-      mesesGl: 'Xan - Mar',
-      mesesEs: 'Ene - Mar',
+      mesesGl: 'Xan-Mar',
+      mesesEs: 'Ene-Mar',
       meses: [1, 2, 3]
     ),
     (
       gl: '3.º Primavera',
       es: '3.º Primavera',
-      mesesGl: 'Abr - Xuñ',
-      mesesEs: 'Abr - Jun',
+      mesesGl: 'Abr-Xuñ',
+      mesesEs: 'Abr-Jun',
       meses: [4, 5, 6]
     ),
   ];
@@ -1143,6 +1143,9 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
               borderRadius: BorderRadius.circular(9),
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
+                // 48 de alto como mínimo: la diana táctil de Android (L6).
+                constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: isActivo ? Colors.white : Colors.transparent,
                   borderRadius: BorderRadius.circular(9),
@@ -1164,7 +1167,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                       child: Text(
                         isGl ? t.gl : t.es,
                         style: TextStyle(
-                          fontSize: 11,
+                          fontSize: 12,
                           fontWeight:
                               isActivo ? FontWeight.bold : FontWeight.w600,
                           color: isActivo
@@ -1179,7 +1182,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                       child: Text(
                         sub,
                         style: TextStyle(
-                          fontSize: 9,
+                          fontSize: 12,
                           color: isActivo ? context.acento : AppTheme.textMuted,
                           fontWeight:
                               isActivo ? FontWeight.w700 : FontWeight.normal,

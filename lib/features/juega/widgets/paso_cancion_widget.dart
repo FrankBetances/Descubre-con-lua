@@ -292,6 +292,10 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                       onPressed: _handleStop,
                       icon: const Icon(Icons.stop_rounded),
                       iconSize: 28,
+                      style: IconButton.styleFrom(
+                        minimumSize:
+                            const Size(AppTheme.touchMin, AppTheme.touchMin),
+                      ),
                       tooltip: isGl ? 'Deter' : 'Detener',
                     ),
                     const SizedBox(width: 20),
@@ -315,6 +319,10 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                       onPressed: _handlePlay,
                       icon: const Icon(Icons.replay_rounded),
                       iconSize: 28,
+                      style: IconButton.styleFrom(
+                        minimumSize:
+                            const Size(AppTheme.touchMin, AppTheme.touchMin),
+                      ),
                       tooltip: isGl ? 'Reiniciar pulso' : 'Reiniciar pulso',
                     ),
                   ],

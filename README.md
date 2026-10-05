@@ -24,10 +24,11 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   corta por cada paso de la asamblea.
 - **Asamblea matinal de segundo ciclo** — para 4.º, 5.º y 6.º de Infantil, con
   el inglés como tercera lengua. Cuatro fases —apertura, foco rítmico, reto TPR
-  y calma—, cada una con su consigna, su lámina, su cronómetro y su altavoz; el
-  nivel se cambia sin salir de la pantalla. Es **la misma pantalla que la
-  asamblea de primer ciclo**: el producto tiene un solo lenguaje visual. Se
-  entra por la lista del aula o por la ficha del mes del Calendario.
+  y calma—; cada una ocupa la pantalla entera, con su consigna en letra grande,
+  su grabación y sus minutos. Es **la misma pantalla que la asamblea de primer
+  ciclo**: el producto tiene un solo lenguaje visual. Se abre desde Hoy, desde
+  «Comenzar la asamblea» en la pestaña 2.º ciclo del Modo Aula o desde el día
+  del Calendario.
 - **Guías para la familia** (Academy) — lecturas cortas para la persona adulta,
   en la pestaña Guías del Portal Familias. Incluye la
   **micro-rutina del mes** para segundo ciclo: tres minutos en un momento

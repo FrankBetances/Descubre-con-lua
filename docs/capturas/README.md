@@ -53,13 +53,27 @@ compara el ancho pintado con el que el texto mide de verdad.
 | `hoxe-docentes-{gl,es}.png` | Hoy, en el Portal Docentes: la asamblea del día, sus palabras, el cuento, la dinámica y la ciencia |
 | `recursos-docentes-{gl,es}.png` | Recursos: los módulos del aula en cuatro grupos |
 | `aula-unidades-{gl,es}.png` | Juega con Lúa · Modo Aula: el selector compacto, la sesión del día y las unidades |
+| `aula-lista-2ciclo-{gl,es}.png` | El Modo Aula en la pestaña 2.º ciclo: la clase, el mes y la sesión del día |
+| `aula-2ciclo-asemblea-{gl,es}.png` | La asamblea matinal de 2.º ciclo, fase 1: el reproductor que abre «Comenzar la asamblea» |
 | `aula-formacion-{gl,es}.png` | Formación en el aula: los seis pasos de la asamblea |
 | `academy-bloques-{gl,es}.png` | Guías para la familia: los cinco bloques |
 | `academy-lector-{gl,es}.png` | El lector paginado de una cápsula |
-| `premios-{gl,es}.png` | Los premios de Lúa: nivel, racha e insignias |
+| `academy-lua-peche-{gl,es}.png` | El cierre de una cápsula: la frase de Lúa, después de la reflexión |
+| `academy-micro-rutina-{gl,es}.png` | La micro-rutina de septiembre de segundo ciclo |
+| `guia-ingles-{gl,es}.png` | El inglés en casa: cuánto dura el juego según la edad |
+| `premios-{gl,es}.png` | Tus premios: nivel, racha e insignias |
 | `creditos-{gl,es}.png` | Créditos |
 | `asamblea-conto-{gl,es}.png` | Asamblea · fase 2: a lámina do conto, o texto e a pregunta |
 | `asamblea-seguridade-{gl,es}.png` | Asamblea · fase 4: o protocolo de seguridade que se le antes de sacar material |
+| `asamblea-ingles-{gl,es}.png` | Asamblea guiada: el inglés de la fase, con su grabación |
+| `nota-casas-{gl,es}.png` | La nota para las casas: lo que se hizo hoy, el juego de tres minutos y la frase en inglés |
+| `conto-palabras-{gl,es}.png` | El cuento de la semana con las palabras de hoy |
+| `calendario-{gl,es}.png` | El Calendario Escuela · Hogar, del lado del aula |
+| `calendario-familia-{gl,es}.png` | El mismo calendario, del lado de la familia |
+| `steam-hub-{gl,es}.png` | Ciencia con las manos, del lado del aula: las cinco sesiones |
+| `steam-sesion-aula-{gl,es}.png` | Una sesión de ciencia, versión del aula |
+| `steam-sesion-casa-{gl,es}.png` | Una sesión de ciencia, versión de casa |
+| `steam-hoxe-na-aula-{gl,es}.png` | Hoy de la docente el día que toca ciencia: la sesión, debajo de la asamblea |
 | `laminas-hoja.png` | Hoja de contacto de las láminas del **vocabulario** (cuadradas) |
 | `laminas-conto-hoja.png` | Hoja de contacto de las **escenas del cuento** (apaisadas) |
 
@@ -73,7 +87,7 @@ flutter test --tags capturas --update-goldens test/laminas_hoja_test.dart
 
 ## Las capturas de la app de escritorio
 
-Las que empiezan por `l0-`, `l1-`, `l2-`, `l3-`, `l4-` y `l5-`, y las de `vocabulario-flower-`, son otra
+Las que empiezan por `l0-` a `l6-`, y las de `vocabulario-flower-`, son otra
 cosa: la app **compilada para escritorio** (Linux), abierta en una pantalla
 virtual de 360 × 780 px y recorrida a mano por el mismo camino que usa quien la
 maneja (hasta L4, Inicio → Comezar → portal → módulo; desde L5, Inicio → Na
@@ -119,3 +133,5 @@ la de Android, pero no sus barras del sistema, su densidad ni su escala de texto
 | `l5-recursos-ingles-{gl,es}.png` | Recursos de la escuela, en dos pantallas: el inglés por partes, una puerta para cada una (palabras del curso, repaso, frases, colocaciones, sonidos y vocabulario) |
 | `l5-portas-casa-{gl,es}.png` | La cabecera de cada pantalla a la que se llega desde Explorar y Guías: lleva el nombre de su puerta, o su comienzo si no cabe |
 | `l5-portas-escola-{gl,es}.png` | Lo mismo desde Recursos y Eu: las once puertas de Recursos, los premios de la docente y sus dos guías |
+| `l6-casa-{gl,es}.png` | Casa con la letra de L6, en cuatro pantallas: el inicio (GL/ES de 48 dp), el calendario (trimestres de 48 dp), «Ler xogando» y Contos |
+| `l6-escola-{gl,es}.png` | La escuela con la letra de L6: el Modo Aula (pestañas de ciclo de 48 dp), el vocabulario, la ciencia y Hoy |

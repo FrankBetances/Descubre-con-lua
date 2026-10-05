@@ -235,7 +235,7 @@ class _CabeceiraPalabrasDoContoState extends State<CabeceiraPalabrasDoConto> {
                       rotulo,
                       style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
-                        fontSize: 11,
+                        fontSize: 12,
                         fontWeight: FontWeight.w800,
                         letterSpacing: 0.8,
                         color: context.acento,
@@ -324,7 +324,7 @@ class PalabrasDaPaxina extends StatelessWidget {
           isGl ? 'EN INGLÉS NESTA PÁXINA' : 'EN INGLÉS EN ESTA PÁGINA',
           style: TextStyle(
             fontFamily: AppTheme.fontFamily,
-            fontSize: 11,
+            fontSize: 12,
             fontWeight: FontWeight.w800,
             letterSpacing: 0.8,
             color: context.acento,

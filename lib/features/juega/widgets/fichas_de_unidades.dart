@@ -180,7 +180,7 @@ class _Ficha extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                             style: const TextStyle(
                               fontFamily: AppTheme.fontFamily,
-                              fontSize: 12,
+                              fontSize: 14,
                               color: AppTheme.textSecondary,
                             ),
                           ),
@@ -200,7 +200,7 @@ class _Ficha extends StatelessWidget {
                                 : 'Tramo ${unidad.tramoEtario} años',
                             style: TextStyle(
                               fontFamily: AppTheme.fontFamily,
-                              fontSize: 11,
+                              fontSize: 12,
                               fontWeight: FontWeight.w700,
                               color: context.acento,
                             ),

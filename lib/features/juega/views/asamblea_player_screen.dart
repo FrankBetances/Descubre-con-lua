@@ -267,7 +267,7 @@ class _Barra extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
                 fontFamily: AppTheme.fontFamily,
-                fontSize: 13,
+                fontSize: 14,
                 fontWeight: FontWeight.w700,
                 color: _AsambleaPlayerScreenState._textoSecundario,
                 letterSpacing: 0.5,

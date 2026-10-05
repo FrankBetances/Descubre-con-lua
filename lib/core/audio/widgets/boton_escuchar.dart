@@ -203,6 +203,9 @@ class _BotonEscucharState extends State<BotonEscuchar> {
     if (widget.comoChip) {
       final color = widget.colorChip ?? context.acento;
       return Semantics(
+        // Un nodo propio, con el tamaño del botón: sin él, la etiqueta se
+        // fundía con la del antecesor y TalkBack recibía otro rectángulo.
+        container: true,
         button: true,
         label: '$etiqueta: ${widget.descripcion ?? widget.texto}',
         child: Material(
@@ -249,6 +252,9 @@ class _BotonEscucharState extends State<BotonEscuchar> {
 
     if (widget.compacto) {
       return Semantics(
+        // Un nodo propio, con el tamaño del botón: sin él, la etiqueta se
+        // fundía con la del antecesor y TalkBack recibía otro rectángulo.
+        container: true,
         button: true,
         label: widget.descripcion == null
             ? etiqueta
@@ -276,6 +282,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
     }
 
     return Semantics(
+      container: true,
       button: true,
       label: widget.descripcion == null
           ? etiqueta

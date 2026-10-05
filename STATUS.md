@@ -9,6 +9,137 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L6 de la revisión de interfaz: accesibilidad, hasta donde se puede medir sin aparato (5/10/2026)
+
+Rama `claude/ux-l6`, que se integra en `main` por pull request después de L5.
+
+Qué cambia en pantalla:
+
+- **La letra (M6).** Ningún texto por debajo de 12 px, y el texto de lectura
+  —descripciones, consignas, definiciones, pistas— a 14 px como mínimo. Antes
+  había 79 tamaños escritos por debajo de 12 en `lib/`, el más pequeño a 9 px
+  (los meses de los trimestres del calendario), y la auditoría encontró texto
+  de lectura por debajo de 14 px en 72 líneas de 28 ficheros. Los
+  antetítulos en mayúsculas que salían del tema de Material a 11 px pasan a
+  12. Los meses de cada trimestre se escriben «Set-Dec» en vez de «Set -
+  Dec»: con los espacios no cabían y la caja los encogía a 11,6 px.
+- **Las dianas.** Todo lo que se pulsa mide 48 × 48 dp como mínimo, la
+  diana de Android. No llegaban: los chips de curso del calendario (40 de
+  alto), las pestañas de ciclo y de Aula/Familia (42), los trimestres (46 y 47),
+  «Ver todo» (17), el botón «Contar» del reloj de fase (40), los botones del
+  pulso (44) y el GL/ES del inicio (42 × 38).
+- **TalkBack.** El botón de escuchar ya es un nodo propio. Antes su etiqueta
+  se fundía con la del bloque que lo contenía y TalkBack recibía el
+  rectángulo del bloque: en el cuento, «Escoitar: Hello, little one!» medía
+  158 × 12. Los cuatro controles arreglados en L5 llevan también su nodo
+  propio.
+
+Lo que no se ve:
+
+- **`test/features/ux_l6_test.dart`** recorre las pantallas de la pasarela en
+  gl y es, a 360 × 780 y con la Nunito real, bajando de vista en vista, y en
+  cada una mide:
+  - la letra tal como se pinta, contando lo que la encoge (un `FittedBox`,
+    una página encogida): ningún texto por debajo de 12 px y ninguno de
+    lectura por debajo de 14. «De lectura» es lo que ocupa dos líneas o más,
+    o una frase de cuarenta letras; un antetítulo en mayúsculas, el texto de
+    un botón o de un chip son etiquetas. Cada fallo dice qué línea de `lib/`
+    pinta ese texto;
+  - las dianas, con la regla de 48 × 48 dp de `androidTapTargetGuideline`
+    sobre el mismo árbol de semántica, sin contar lo que una lista o un
+    carrusel recortan en esa vista (se mide cuando se ve entero);
+  - que todo lo que se pulsa tenga etiqueta (`labeledTapTargetGuideline`).
+  - Además, una revisión estática: ningún `fontSize` por debajo de 12 en
+    todo `lib/`, también en lo que la pasarela no abre.
+- Con el código de L5 —la auditoría final pasada sobre `main` en un árbol
+  aparte— fallan 68 de las 92 pruebas de pantalla y la revisión estática.
+- Una pantalla de la pasarela no se audita: `BackstageAsambleaScreen`.
+  Ningún botón de la app lleva a ella, y su contenido no cabe a 360 × 780 ni
+  encogido al 80 %: medido, cada fase ocupa entre 516 y 2.080 px en un hueco
+  de 293 a 318. Un test falla si alguien la vuelve a enlazar.
+
+Corregido en la revisión:
+
+- **El manual y el README describían una pantalla que la docente no ve.** La
+  sección 4.3 del manual ilustraba la asamblea de 2.º ciclo con
+  `BackstageAsambleaScreen`, y el README le atribuía cronómetro y cambio de
+  nivel. «Comezar a asemblea» del 2.º ciclo abre el reproductor, el mismo que
+  el 1.º ciclo, comprobado en la app de escritorio. Ahora la captura es el
+  reproductor (`aula-2ciclo-asemblea-*.png`) y el texto dice lo que hay: cada
+  fase a pantalla entera, con su consigna, su grabación y sus minutos. Las
+  capturas de la pantalla inalcanzable se retiran. El README nombra los tres
+  caminos que abren esa asamblea, recorridos en la app de escritorio en
+  gallego con el grupo de 3-4 años: «Comezar a asemblea» en Hoxe, el mismo
+  botón en la pestaña 2.º ciclo del Modo Aula y el botón «4.º (3-4 anos)» del
+  día en el Calendario. Los tres abren el reproductor.
+- La tabla de ficheros de `docs/capturas/README.md` listaba 13 de las 27
+  capturas del manual; ahora están todas.
+- **El manual, paginado.** Mirado otra vez hoja a hoja, ahora buscando cortes
+  y no solo desbordes:
+  - el PDF dejaba dos cosas solas al pie de una hoja, con lo suyo en la
+    siguiente: el título «4.2 · Las unidades temáticas, con cuento» y la
+    entrada «Las otras tres pestañas:». Dos reglas de impresión en el HTML
+    —un título va con su texto; el párrafo que presenta una tabla, con la
+    tabla— y el PDF pasa de 30 a 31 páginas. El texto no cambia;
+  - el Word dejaba la página 5 con una sola línea («En cada pareja de
+    imágenes…»), que este fichero anotaba desde STEAM sin arreglarla; dos
+    pies de foto separados de su captura; dos recuadros partidos entre hojas,
+    uno con el título solo al pie; una fila de tabla cortada, y el título de
+    la sección 2 al pie de la página 2 con su texto en la 3.
+    `docs/build-docx.py` no trasladaba al Word el «no partir» que el HTML ya
+    pide a recuadros, tablas y parejas de capturas; ahora sí.
+- **Fallo mío de L5: el Word se revisó con otra letra.** LibreOffice lo
+  pintaba con DejaVu Sans porque Calibri no está en el contenedor, y DejaVu
+  es más ancha: las «30 páginas A4» del Word y sus cortes no eran los del
+  documento (con la medida de Calibri eran 29). Ahora se mira con Carlito,
+  que tiene las medidas de Calibri. En el PR de L5 escribí «El Word dejaba la
+  página 5 en blanco y ya no»: quedó con una sola línea, como decía este
+  fichero.
+
+El manual: sus 54 capturas, rehechas una a una con la letra nueva; el PDF y
+el Word, reconstruidos desde el HTML y mirados hoja a hoja en hojas de
+contactos. El PDF, 31 páginas A4 (`pdftoppm`); el Word, 30, convertido a PDF
+con LibreOffice y Carlito. En ninguno se sale una figura de la hoja ni se
+separa de su pie, ni se parte un recuadro o una tabla, ni se queda un título
+o la entrada de una tabla solos al pie: se miró la primera y la última línea
+de cada página. Cómo pagina Microsoft Word no lo he verificado: no está en el
+contenedor.
+
+Cómo se comprobó:
+
+- `test/features/ux_l6_test.dart`: las 94 pruebas en verde (92 de pantalla,
+  la revisión estática y la guarda de la pantalla que no se audita).
+- La suite entera en local: 1.138 tests en verde, entre ellos los de escala
+  a 1,8 y la auditoría de L2, que siguen pasando con la letra más grande.
+- `tools/gates.sh --fast` en local: los 21 gates en verde, con 1.138
+  tests. La build release y los permisos del APK no corren aquí —no hay
+  SDK de Android en el contenedor—: los pasa CI.
+- La app de escritorio, en gl y es, el lunes 5/10 (la fecha del contenedor):
+  el inicio, el calendario de casa, «Ler xogando» y Contos; el Modo Aula, el
+  vocabulario, la ciencia y Hoy de la docente: `docs/capturas/l6-*.png`.
+
+Las capas:
+
+- La interfaz cambia: tamaños de letra, alturas mínimas y la semántica de
+  cinco widgets.
+- Ningún JSON de contenido cambia, ningún texto con voz y ningún imprimible.
+- El manual (sección 4.3, su figura, las 54 capturas y dos reglas de
+  impresión), su PDF, su Word y su constructor (`docs/build-docx.py`), el
+  README y el índice de capturas cambian.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android**, ni con TalkBack.
+- La letra del sistema a 200 %: la auditoría mide a escala 1,0. Los tests de
+  escala que ya había llegan a 1,8 en las pantallas que cubren.
+
+### Visto y no tocado
+
+- `BackstageAsambleaScreen` sigue en el código sin que nada la abra, con un
+  contenido que no cabe en un teléfono. Propuesta: quitarla, o rehacerla si
+  se quiere recuperar lo que tenía de más (el cambio de nivel sin salir).
+  Decide Frank.
+
 ## Lote L5 de la revisión de interfaz: un inicio, los nombres en JSON y una puerta por destino (5/10/2026)
 
 Rama `claude/ux-l5`, que se integra en `main` por pull request después de L4.

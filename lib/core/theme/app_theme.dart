@@ -278,6 +278,10 @@ class AppTheme {
           color: textPrimary,
           letterSpacing: 0.1,
         ),
+        // Los antetítulos en mayúsculas («LA FRASE EN INGLÉS DE ESTE MES»)
+        // salen de aquí. Material los trae a 11 px; la revisión fija 12 como
+        // mínimo para una etiqueta (M6).
+        labelSmall: TextStyle(fontSize: 12.0),
       ),
       appBarTheme: AppBarTheme(
         backgroundColor: acento,

@@ -94,6 +94,24 @@ def no_borders(table):
     )
 
 
+def sin_partir(table, entera=False):
+    """El `page-break-inside: avoid` del HTML, en Word.
+
+    Ninguna fila se parte entre dos páginas (w:cantSplit): así el pie no se
+    separa de su captura ni un recuadro deja el título en una hoja y el texto
+    en la otra. Con `entera`, además, cada fila sigue con la siguiente y la
+    tabla va junta, como en el PDF.
+    """
+    for i, row in enumerate(table.rows):
+        tr_pr = row._tr.get_or_add_trPr()
+        if tr_pr.find(qn('w:cantSplit')) is None:
+            tr_pr.append(OxmlElement('w:cantSplit'))
+        if entera and i < len(table.rows) - 1:
+            for cell in row.cells:
+                for par in cell.paragraphs:
+                    par.paragraph_format.keep_with_next = True
+
+
 def write_stamp(kind):
     """Deja constancia de QUÉ versión del HTML produjo este fichero.
 
@@ -112,6 +130,14 @@ def write_stamp(kind):
     with open(path, 'w', encoding='utf-8') as fh:
         json.dump(data, fh, indent=1, sort_keys=True)
         fh.write('\n')
+
+
+def siguiente(el):
+    """El elemento hermano que sigue a `el`, saltando comentarios."""
+    sig = el.getnext()
+    while sig is not None and not isinstance(sig.tag, str):
+        sig = sig.getnext()
+    return sig
 
 
 def classes(el):
@@ -209,6 +235,7 @@ class Builder:
                     shade(cell, FILL_HEAD)
                 elif i % 2 == 0:
                     shade(cell, FILL_ZEBRA)
+        sin_partir(t, entera=True)
         self.doc.add_paragraph().paragraph_format.space_after = Pt(4)
 
     def callout(self, el):
@@ -228,6 +255,7 @@ class Builder:
             else:
                 self.runs(p, child, size=10)
             first = False
+        sin_partir(t)
         self.doc.add_paragraph().paragraph_format.space_after = Pt(4)
 
     def uc(self, el):
@@ -280,6 +308,9 @@ class Builder:
     def flowmap(self, el):
         p = self.doc.add_paragraph()
         p.paragraph_format.space_after = Pt(8)
+        # El mapa va entre el título y el texto de su sección: si se quedaba
+        # al pie con el título, la sección empezaba de verdad en la otra hoja.
+        p.paragraph_format.keep_with_next = True
         parts = [clean(n.text_content()).strip() for n in el if 'node' in classes(n)]
         r = p.add_run('  →  '.join(parts))
         r.bold = True
@@ -334,10 +365,17 @@ class Builder:
         habría pasado el gate del manual describiendo un documento con
         capturas sin llevar ninguna.
         """
-        for pair in el.xpath('.//div[contains(@class, "pair")]'):
+        # La nota pequeña que sigue a las capturas habla de ellas («En cada
+        # pareja de imágenes…») y viaja con la última pareja. Sin esto, cuando
+        # la figura llenaba la hoja, la nota caía sola en la siguiente: una
+        # página con una línea.
+        sig = siguiente(el)
+        con_nota = (sig is not None and sig.tag == 'p'
+                    and 'small' in classes(sig))
+        parejas = [p for p in el.xpath('.//div[contains(@class, "pair")]')
+                   if p.xpath('./figure')]
+        for n, pair in enumerate(parejas):
             figuras = pair.xpath('./figure')
-            if not figuras:
-                continue
             table = self.doc.add_table(rows=1, cols=len(figuras))
             table.alignment = WD_TABLE_ALIGNMENT.CENTER
             no_borders(table)
@@ -370,7 +408,19 @@ class Builder:
                     run = par.add_run(clean(pie[0].text_content()).strip())
                     run.font.size = Pt(8.5)
                     run.font.color.rgb = MUTED
-            self.doc.add_paragraph().paragraph_format.space_after = Pt(4)
+            separador = self.doc.add_paragraph()
+            separador.paragraph_format.space_after = Pt(4)
+            if con_nota and n == len(parejas) - 1:
+                # Aquí se ata con «mantener con el siguiente» en cada párrafo
+                # y no con w:cantSplit: con los dos, LibreOffice deja de
+                # llevar la tabla con lo que sigue y la nota vuelve a caer
+                # sola en la hoja siguiente.
+                for celda in table.rows[0].cells:
+                    for par in celda.paragraphs:
+                        par.paragraph_format.keep_with_next = True
+                separador.paragraph_format.keep_with_next = True
+            else:
+                sin_partir(table)
 
     def walk(self, root):
         for el in root:
@@ -408,8 +458,15 @@ class Builder:
                 self.table(el)
             elif tag == 'p':
                 small = 'small' in cls
-                self.para(el, size=9 if small else None,
-                          color=MUTED if 'muted' in cls else None)
+                p = self.para(el, size=9 if small else None,
+                              color=MUTED if 'muted' in cls else None)
+                # El párrafo que presenta una tabla («Las otras tres
+                # pestañas:») va con ella. La tabla no se parte, y cuando
+                # pasa entera a la hoja siguiente su entrada no puede
+                # quedarse sola al pie de la anterior.
+                sig = siguiente(el)
+                if sig is not None and sig.tag == 'table':
+                    p.paragraph_format.keep_with_next = True
             elif tag in ('ul', 'ol'):
                 style = 'List Number' if tag == 'ol' else 'List Bullet'
                 num_id = numeracion_nueva(self.doc) if tag == 'ol' else None

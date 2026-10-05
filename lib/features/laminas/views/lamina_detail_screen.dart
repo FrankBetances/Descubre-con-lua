@@ -227,7 +227,7 @@ class LaminaDetailScreen extends StatelessWidget {
                                 : 'Juego manipulativo táctil (hogar / aula)',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 13,
+                              fontSize: 14,
                               color: context.acento,
                             ),
                           )),
@@ -237,7 +237,7 @@ class LaminaDetailScreen extends StatelessWidget {
                       Text(
                         _suxestionManipulativa(lamina, lang),
                         style: const TextStyle(
-                          fontSize: 13.5,
+                          fontSize: 14,
                           height: 1.4,
                           color: Color(0xFF4A5568),
                         ),
@@ -400,7 +400,7 @@ class LaminaDetailScreen extends StatelessWidget {
                         Text(
                           isGl ? lamina.tprAccion!.gl : lamina.tprAccion!.es,
                           style: TextStyle(
-                            fontSize: 13,
+                            fontSize: 14,
                             color: context.acento,
                           ),
                         ),

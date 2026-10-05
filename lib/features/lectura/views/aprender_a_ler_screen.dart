@@ -194,7 +194,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
             Text(
               act.subtitulo.resolve(_language),
               style: TextStyle(
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: FontWeight.w600,
                 color: context.acento,
               ),
@@ -203,7 +203,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
             Text(
               act.descricion.resolve(_language),
               style: const TextStyle(
-                fontSize: 13,
+                fontSize: 14,
                 color: Color(0xFF4A5568),
                 height: 1.4,
               ),
@@ -224,7 +224,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                     child: Text(
                       'Acción corporal: ${act.tpr.resolve(_language)}',
                       style: const TextStyle(
-                        fontSize: 11,
+                        fontSize: 14,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF2D3748),
                       ),
@@ -419,7 +419,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                           ? 'Toca as letras que a crianza coloque na mesa'
                           : 'Toca las letras que la criatura coloque en la mesa'),
                   style: TextStyle(
-                    fontSize: 11,
+                    fontSize: 12,
                     fontWeight: FontWeight.bold,
                     color:
                         isComplete ? Colors.green[700] : AppTheme.textSecondary,
@@ -469,7 +469,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                             child: Text(
                               'Material físico: ${item.material.resolve(_language)}',
                               style: const TextStyle(
-                                  fontSize: 11, color: Color(0xFF4A5568)),
+                                  fontSize: 12, color: Color(0xFF4A5568)),
                             ),
                           ),
                         ],
@@ -484,7 +484,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                             child: Text(
                               'Acción corporal: ${item.tpr.resolve(_language)}',
                               style: const TextStyle(
-                                  fontSize: 11, color: Color(0xFF4A5568)),
+                                  fontSize: 12, color: Color(0xFF4A5568)),
                             ),
                           ),
                         ],
@@ -610,7 +610,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                   'Materiais suxeridos: ${item.material.resolve(_language)}',
                   textAlign: TextAlign.center,
                   style:
-                      const TextStyle(fontSize: 11, color: AppTheme.textMuted),
+                      const TextStyle(fontSize: 12, color: AppTheme.textMuted),
                 ),
                 const SizedBox(height: 16),
                 QueObservar(
@@ -638,7 +638,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
           Text(
             role,
             style: TextStyle(
-              fontSize: 10,
+              fontSize: 12,
               fontWeight: FontWeight.w800,
               color: color,
             ),
@@ -747,7 +747,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                             Text(
                               item.palabra1.resolve(_language),
                               style: const TextStyle(
-                                  fontSize: 11, color: Color(0xFF4A5568)),
+                                  fontSize: 12, color: Color(0xFF4A5568)),
                             ),
                           ],
                         ),
@@ -795,7 +795,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                             Text(
                               item.palabra2.resolve(_language),
                               style: const TextStyle(
-                                  fontSize: 11, color: Color(0xFF4A5568)),
+                                  fontSize: 12, color: Color(0xFF4A5568)),
                             ),
                           ],
                         ),
@@ -839,7 +839,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
             child: Text(
               texto,
               style: const TextStyle(
-                  fontSize: 12, color: Color(0xFF7B341E), height: 1.35),
+                  fontSize: 14, color: Color(0xFF7B341E), height: 1.35),
             ),
           ),
         ],

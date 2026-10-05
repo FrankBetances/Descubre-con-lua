@@ -47,6 +47,12 @@
 
   section { page-break-inside: auto; }
   section.page-break { page-break-before: always; }
+  /* Un título no se queda solo al pie de una hoja, ni el párrafo que presenta
+     una tabla («Las otras tres pestañas:») se separa de ella: la tabla no se
+     parte, y cuando pasaba entera a la hoja siguiente, su entrada se quedaba
+     sola al pie de la anterior. */
+  h2, h3, h4 { break-after: avoid; page-break-after: avoid; }
+  p:has(+ table) { break-after: avoid; page-break-after: avoid; }
 
   .chapter-kicker { color: var(--primary); font-weight: 700; font-size: 8.5pt;
                     letter-spacing: .08em; text-transform: uppercase; margin: 0 0 2px; }
@@ -450,10 +456,12 @@
     </tbody>
   </table>
 
-  <p>Elegidos clase y mes, aparece la <strong>asamblea matinal</strong> de ese
-  mes: diez minutos en cuatro fases —apertura y saludo, foco rítmico, reto
-  temático en inglés, y calma y transición—. Cada fase trae su consigna escrita,
-  su grabación y su contador.</p>
+  <p>Elegidos clase y mes, <strong>Comenzar la asamblea</strong> abre la
+  <strong>asamblea matinal</strong> de ese mes en la misma pantalla que la de
+  primer ciclo: diez minutos en cuatro fases —apertura y saludo, foco rítmico,
+  reto temático en inglés, y calma y transición—. Cada fase ocupa la pantalla
+  entera, con su consigna en letra grande, su grabación y sus minutos, y se pasa
+  con <strong>Siguiente fase</strong>.</p>
 
   <div class="callout warn">
     <p class="lbl">El inglés no se pide: se hace</p>
@@ -470,9 +478,9 @@
         <figcaption>El Modo Aula, segundo ciclo · castellano</figcaption></figure>
     </div>
     <div class="pair">
-      <figure><img src="capturas/aula-backstage-gl.png" alt="La asamblea matinal de segundo ciclo en gallego">
+      <figure><img src="capturas/aula-2ciclo-asemblea-gl.png" alt="La asamblea matinal de segundo ciclo, fase 1, en gallego">
         <figcaption>La asamblea matinal, fase 1 · gallego</figcaption></figure>
-      <figure><img src="capturas/aula-backstage-es.png" alt="La asamblea matinal de segundo ciclo en castellano">
+      <figure><img src="capturas/aula-2ciclo-asemblea-es.png" alt="La asamblea matinal de segundo ciclo, fase 1, en castellano">
         <figcaption>La asamblea matinal, fase 1 · castellano</figcaption></figure>
     </div>
   </div>

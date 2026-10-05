@@ -67,7 +67,7 @@ class TemporizadorSutilWidget extends StatelessWidget {
                 Text(
                   subtitulo,
                   style: const TextStyle(
-                    fontSize: 11,
+                    fontSize: 14,
                     color: AppTheme.textSecondary,
                   ),
                 ),

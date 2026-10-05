@@ -112,7 +112,7 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
                       : '${colocacions.length} combinaciones que el inglés dice siempre juntas: dilas enteras, no palabra a palabra.',
                   key: const Key('colocacions_total'),
                   style: const TextStyle(
-                    fontSize: 13,
+                    fontSize: 14,
                     color: AppTheme.textSecondary,
                     height: 1.35,
                   ),
@@ -182,7 +182,7 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
                     child: Text(
                       '"$contexto"',
                       style: const TextStyle(
-                        fontSize: 13,
+                        fontSize: 14,
                         fontStyle: FontStyle.italic,
                         color: AppTheme.textSecondary,
                       ),
@@ -204,7 +204,7 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
               Text(
                 consello,
                 style: const TextStyle(
-                  fontSize: 12,
+                  fontSize: 14,
                   color: AppTheme.textSecondary,
                   height: 1.35,
                 ),

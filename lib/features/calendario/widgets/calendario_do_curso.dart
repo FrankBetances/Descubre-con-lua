@@ -204,7 +204,7 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
                       : 'CALENDARIO ESCUELA · HOGAR · ${_rotuloDoCurso(widget.lang)}',
                   style: TextStyle(
                     fontFamily: AppTheme.fontFamily,
-                    fontSize: 11,
+                    fontSize: 12,
                     fontWeight: FontWeight.w800,
                     color: context.acento,
                     letterSpacing: 1.2,
@@ -214,10 +214,10 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
               TextButton(
                 key: const Key('ver_calendario_completo'),
                 onPressed: () => _abrir(_mesIndex),
+                // La diana, de 48 dp aunque el botón se vea pequeño (L6).
                 style: TextButton.styleFrom(
                   padding: const EdgeInsets.symmetric(horizontal: 8),
-                  minimumSize: Size.zero,
-                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  minimumSize: const Size(AppTheme.touchMin, AppTheme.touchMin),
                 ),
                 child: Text(
                   isGl ? 'Ver todo' : 'Ver todo',
@@ -277,7 +277,7 @@ class _CalendarioDoCursoState extends State<CalendarioDoCurso> {
             textAlign: TextAlign.center,
             style: const TextStyle(
               fontFamily: AppTheme.fontFamily,
-              fontSize: 11.5,
+              fontSize: 14,
               color: AppTheme.textMuted,
             ),
           ),

@@ -119,7 +119,7 @@ class SelectorDeIdade<T> extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             fontFamily: AppTheme.fontFamily,
-                            fontSize: 11,
+                            fontSize: 12,
                             fontWeight: FontWeight.w600,
                             color: op.valor == seleccionado
                                 ? Colors.white
@@ -434,7 +434,7 @@ class TiraDeDias extends StatelessWidget {
             semanaActual.meta.resolve(language),
             style: const TextStyle(
               fontFamily: AppTheme.fontFamily,
-              fontSize: 12.5,
+              fontSize: 14,
               color: AppTheme.textSecondary,
             ),
           ),
@@ -498,7 +498,7 @@ class _Pastilla extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     fontFamily: AppTheme.fontFamily,
-                    fontSize: 10.5,
+                    fontSize: 12,
                     fontWeight: FontWeight.w600,
                     color: activa
                         ? Colors.white.withValues(alpha: 0.9)
@@ -548,7 +548,7 @@ class BloqueDoDia extends StatelessWidget {
             ' · ${dia.nomeDia.resolve(language).toUpperCase()}',
             style: TextStyle(
               fontFamily: AppTheme.fontFamily,
-              fontSize: 11,
+              fontSize: 12,
               fontWeight: FontWeight.w800,
               color: context.acento,
               letterSpacing: 0.8,
@@ -570,7 +570,7 @@ class BloqueDoDia extends StatelessWidget {
             dia.consigna.resolve(language),
             style: const TextStyle(
               fontFamily: AppTheme.fontFamily,
-              fontSize: 13.5,
+              fontSize: 14,
               color: AppTheme.textSecondary,
               height: 1.35,
             ),

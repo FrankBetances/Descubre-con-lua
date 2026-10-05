@@ -287,7 +287,7 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
                                           Text(
                                             cuento.sinopse.resolve(lang),
                                             style: const TextStyle(
-                                              fontSize: 12,
+                                              fontSize: 14,
                                               color: AppTheme.textSecondary,
                                             ),
                                             maxLines: 2,
@@ -395,7 +395,7 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
         text,
         style: TextStyle(
           color: textCol,
-          fontSize: 10,
+          fontSize: 12,
           fontWeight: FontWeight.bold,
         ),
       ),
