@@ -389,6 +389,9 @@ void main() {
 
       final tramo02 = textoDaTarxeta();
 
+      // Los filtros van plegados detrás del selector compacto: se abren.
+      await tester.tap(find.byKey(const ValueKey('selector_compacto_1c')));
+      await tester.pumpAndSettle();
       await tester.tap(find
           .byKey(ValueKey('tramo_1c_${TramoPrimeiroCiclo.deambulantes2a3}')));
       await tester.pumpAndSettle();
@@ -417,6 +420,10 @@ void main() {
       );
       await tester.pumpAndSettle();
 
+      expect(tester.takeException(), isNull);
+      // El selector compacto está, y abre los filtros con el grupo.
+      await tester.tap(find.byKey(const ValueKey('selector_compacto_1c')));
+      await tester.pumpAndSettle();
       expect(tester.takeException(), isNull);
       expect(find.text('O MEU GRUPO'), findsOneWidget);
     });

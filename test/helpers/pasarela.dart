@@ -32,6 +32,8 @@ import 'package:descubre_con_lua/features/creditos/credits_screen.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuentos_list_screen.dart';
 import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
+import 'package:descubre_con_lua/features/docentes/views/eu_docente_screen.dart';
+import 'package:descubre_con_lua/features/docentes/views/recursos_docentes_screen.dart';
 import 'package:descubre_con_lua/features/english/views/collocations_screen.dart';
 import 'package:descubre_con_lua/features/english/views/english_hub_screen.dart';
 import 'package:descubre_con_lua/features/english/views/fsrs_trainer_screen.dart';
@@ -454,6 +456,48 @@ class Pasarela {
                   onToggleLanguage: () {},
                   premios: premios,
                   calendario: store,
+                  agora: agora,
+                  calendarioContenido: calendario,
+                )),
+        // Las otras dos pestañas del portal, sueltas: la auditoría recorre la
+        // pantalla que se abre, y el portal abre en «Hoxe».
+        PantallaDaApp(
+            'recursos_docentes',
+            Portal.docentes,
+            (l) => RecursosDocentesScreen(
+                  repository: contenido,
+                  language: l,
+                  onLanguageChanged: (_) {},
+                  cursoId: 'curso_0_2',
+                  audioService: audio,
+                  premios: premios,
+                  calendario: store,
+                  agora: agora,
+                  calendarioContenido: calendario,
+                )),
+        PantallaDaApp(
+            'eu_docente',
+            Portal.docentes,
+            (l) => EuDocenteScreen(
+                  repository: contenido,
+                  language: l,
+                  onLanguageChanged: (_) {},
+                  premios: premios,
+                  calendario: store,
+                  audioService: audio,
+                )),
+        PantallaDaApp(
+            'calendario_aula_pestana',
+            Portal.docentes,
+            (l) => CalendarioScreen(
+                  store: store,
+                  contenido: calendario,
+                  initialLanguage: l,
+                  repository: contenido,
+                  audioService: audio,
+                  premios: premios,
+                  esDocenteInicial: true,
+                  conIntroducion: false,
                 )),
         PantallaDaApp(
             'aula_1ciclo',

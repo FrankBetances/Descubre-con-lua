@@ -506,7 +506,7 @@ void main() {
       expect(find.byKey(const ValueKey('steam_curriculo')), findsNothing);
     });
 
-    testWidgets('Portal Docentes: la tarjeta abre la versión del aula',
+    testWidgets('Portal Docentes: Recursos abre la versión del aula, del grupo',
         (tester) async {
       await pintar(
         tester,
@@ -517,18 +517,23 @@ void main() {
           onToggleLanguage: () {},
         ),
       );
-      final boton = find.text('Abrir STEAM');
-      await tester.scrollUntilVisible(boton, 250,
-          scrollable: find.byType(Scrollable).first);
-      await tester.ensureVisible(boton);
+      // El grupo se elige una vez, arriba de «Hoxe»…
+      await tester.tap(find.byKey(const ValueKey('selector_idade')));
       await tester.pumpAndSettle();
-      await tester.tap(boton);
+      await tester.tap(find.byKey(const ValueKey('idade_curso_2_3')));
+      await tester.pumpAndSettle();
+      // …y viaja a Recursos → Ciencia coas mans, que dice que es STEAM.
+      await tester.tap(find.byKey(const Key('pestana_recursos')));
+      await tester.pumpAndSettle();
+      final fila = find.byKey(const ValueKey('recurso_ciencia'));
+      expect(find.descendant(of: fila, matching: find.textContaining('STEAM')),
+          findsOneWidget);
+      await tester.tap(fila);
       await tester.pumpAndSettle();
       final hub = tester.widget<SteamHubScreen>(find.byType(SteamHubScreen));
       expect(hub.audiencia, SteamAudiencia.aula);
-      // El curso de «Hoxe na aula», que por defecto es el de 0 a 2 años.
-      expect(hub.initialCursoId, 'curso_0_2');
-      expect(find.text('Brando e duro'), findsOneWidget);
+      expect(hub.initialCursoId, 'curso_2_3');
+      expect(find.text('A rampla: que roda e que non?'), findsOneWidget);
     });
 
     testWidgets('Portal Familias: la edad y la versión de casa',

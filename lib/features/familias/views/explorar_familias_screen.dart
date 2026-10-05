@@ -9,13 +9,13 @@ import '../../../core/widgets/cabecera.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../cuentos/views/cuentos_list_screen.dart';
+import '../../docentes/widgets/hoxe_na_aula.dart' show DiaQueToca;
 import '../../english/views/palabras_do_traxecto_screen.dart';
 import '../../laminas/views/laminas_gallery_screen.dart';
 import '../../lectura/views/aprender_a_ler_screen.dart';
 import '../../steam/views/steam_hub_screen.dart';
 import '../nomes_familias.dart';
 import '../widgets/selector_idade.dart';
-import 'hoxe_familias_screen.dart';
 import 'xogos_fogar_screen.dart';
 
 /// «Explorar»: los seis módulos de casa de un vistazo, con su nombre de casa.

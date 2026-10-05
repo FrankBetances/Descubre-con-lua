@@ -15,11 +15,15 @@ class SelectorIdade extends StatelessWidget {
     required this.cursoId,
     required this.language,
     required this.onCambiar,
+    this.paraAula = false,
   });
 
   final String cursoId;
   final AppLanguage language;
   final ValueChanged<String> onCambiar;
+
+  /// En el aula se elige el grupo, no la edad de una criatura.
+  final bool paraAula;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +31,9 @@ class SelectorIdade extends StatelessWidget {
     final idade = NomesFamilias.idade(cursoId).resolve(language);
     return Semantics(
       button: true,
-      label: isGl ? 'Idade: $idade. Cambiar' : 'Edad: $idade. Cambiar',
+      label: paraAula
+          ? 'Grupo: $idade. Cambiar'
+          : (isGl ? 'Idade: $idade. Cambiar' : 'Edad: $idade. Cambiar'),
       excludeSemantics: true,
       child: Material(
         color: Colors.white,
@@ -85,7 +91,9 @@ class SelectorIdade extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
-                isGl ? 'Que idade ten?' : '¿Qué edad tiene?',
+                paraAula
+                    ? (isGl ? 'O teu grupo' : 'Tu grupo')
+                    : (isGl ? 'Que idade ten?' : '¿Qué edad tiene?'),
                 style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w800,
@@ -94,9 +102,13 @@ class SelectorIdade extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                isGl
-                    ? 'O xogo, as palabras e o conto cambian coa idade. Non se garda.'
-                    : 'El juego, las palabras y el cuento cambian con la edad. No se guarda.',
+                paraAula
+                    ? (isGl
+                        ? 'A asemblea, as palabras e o conto son os do teu grupo. Non se garda.'
+                        : 'La asamblea, las palabras y el cuento son los de tu grupo. No se guarda.')
+                    : (isGl
+                        ? 'O xogo, as palabras e o conto cambian coa idade. Non se garda.'
+                        : 'El juego, las palabras y el cuento cambian con la edad. No se guarda.'),
                 style: const TextStyle(
                   fontSize: 14,
                   color: AppTheme.textSecondary,

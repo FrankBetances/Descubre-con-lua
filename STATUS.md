@@ -9,6 +9,118 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L4 de la revisión de interfaz: «Hoxe» de la docente y el Modo Aula (5/10/2026)
+
+Rama `claude/ux-l4`, que se integra en `main` por pull request después de L3.
+
+Qué cambia en pantalla:
+
+- **El Portal Docentes va por pestañas: Hoxe · Calendario · Recursos · Eu.**
+  Antes era una sola lista: una cabecera, la tarjeta «Hoxe na aula» con cinco
+  pastillas de edad y siete módulos en tres secciones numeradas («1. ASEMBLEA
+  E AULA ACTIVA (72 BPM)», «3. INMERSIÓN L3…»). Para empezar la asamblea de
+  hoy había tres puertas con tres nombres.
+- **«Hoxe» abre por la asamblea del día del grupo, sin bajar.** Lleva el centro
+  de interés, las cuatro fases con sus minutos (Saúdo, Enfoque, TPR, Calma) y
+  un solo botón, «Comezar a asemblea». Debajo van:
+  - las palabras de hoy, con el tema de la semana y la hoja de las 4.000;
+  - el cuento de la semana;
+  - la dinámica del día;
+  - la ciencia, el día que le toca al curso.
+
+  El fin de semana enseña la asamblea del lunes («A asemblea do luns»). En
+  julio y agosto enseña la primera del curso.
+- **El grupo se elige en un chip arriba** («0-2 anos ▾»), como la edad en casa.
+  Vale para Hoxe, el calendario y Recursos. No se guarda.
+- **Calendario:** el del lado del aula, abierto en el curso del grupo elegido.
+  Como pestaña va sin el párrafo de entrada, que ocupaba cuatro líneas y
+  dejaba la tira de meses cortada por debajo.
+- **Recursos:** los módulos agrupados por lo que se va a hacer: Para a
+  asemblea, Para planificar, Inglés y Para saber máis. Cada uno lleva una línea
+  que dice qué hay dentro. Se quedan los nombres que Frank usa: «Xoga con Lúa ·
+  Modo Aula» y «Planificador curricular».
+- **Eu:** el nivel y la racha de la docente, en la tira de Lúa con su puerta a
+  los premios. Debajo, la guía de dos minutos, la formación del aula y lo que
+  la app guarda. La formación del aula son los seis pasos de la asamblea, que
+  no tenían ninguna puerta.
+- **El Modo Aula (A4).** El grupo, el mes y el día van en una línea, «0-2 anos ·
+  outubro · semana 1 · luns», que se abre solo si hace falta cambiar algo. La
+  tira de nivel ya no va encima: está en «Eu». «Comezar a asemblea» va justo
+  debajo del título y el material; estaba al final de la tarjeta, entre 1.755
+  y 2.035 px más abajo.
+- **STEAM se nombra en los dos portales.** La línea de «Ciencia coas mans»
+  empieza por «STEAM:». En L3 el mosaico de familias se había quedado sin la
+  palabra, que es como se pidió el módulo; se repone aquí.
+
+Cómo se comprobó:
+
+- `test/features/ux_l4_test.dart`, a 360 × 780 con la Nunito real, en gallego
+  y en castellano:
+  - el viernes 2/10: el título, la fecha, las cuatro fases y el botón entero
+    por encima de la barra de pestañas;
+  - las duraciones de la tarjeta son las que recibe el reproductor al pulsar
+    el botón, y el reproductor abre en la semana 1, viernes;
+  - el domingo enseña la asamblea del lunes;
+  - el grupo elegido en Hoxe abre el calendario de ese curso, con la tira de
+    meses por encima de la tarjeta del mes;
+  - Recursos abre el Modo Aula, ya sin la tira de nivel; Eu abre la formación
+    del aula y la guía;
+  - el Modo Aula en los diez meses y los cinco grupos: con el selector
+    plegado, «Comezar a asemblea» queda dentro de los 780 px.
+- La tarjeta «Hoxe na aula» se retira. Sus tests se rehicieron sobre la
+  pantalla nueva sin perder ninguna comprobación (`tpr_pantallas_test` y
+  `steam_calendario_test`), a 360 × 640 y con la letra a 1,8:
+  - las palabras del día exacto de la fecha;
+  - julio, que enseña el primer día;
+  - el viernes del reto, con las 20 palabras;
+  - el cambio de grupo;
+  - la sesión STEAM el miércoles que le toca, y nada al día siguiente.
+- La auditoría de L2 incluye el portal en «Hoxe», Recursos, Eu y el
+  calendario como pestaña.
+- La app de escritorio, por el camino de Frank, en gallego y en castellano, el
+  lunes 5/10 (la fecha del contenedor). Se recorrió la asamblea entera y el
+  resto de pestañas:
+  - Inicio → Comezar → Entrar no Portal Docentes → Hoxe → Comezar a asemblea
+    → las cuatro fases → Rematar;
+  - Calendario;
+  - Recursos → Xoga con Lúa · Modo Aula, con el selector cerrado y abierto;
+  - Eu → Formación na aula.
+
+  Las capturas están en `docs/capturas/l4-*.png`.
+- `tools/gates.sh --fast` en local: los 20 gates en verde, con 994 tests.
+
+Las capas:
+
+- La interfaz cambia.
+- El JSON de contenido no cambia. Los nombres y las líneas nuevas de las filas
+  viven en `nomes_docentes.dart` y `nomes_familias.dart`, no en JSON. Pasarlos
+  a JSON es parte de L5, con el resto de los textos de los módulos.
+- Ningún texto con voz cambia.
+- No hay imprimible afectado.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android.**
+- **Las capturas del manual siguen enseñando los portales de antes.** En L2 y
+  L3 se dijo que se rehacían al terminar L4. Se rehacen con L5, que cambia
+  los nombres y el manual entero: hacerlas ahora sería hacerlas dos veces.
+
+### Visto y no tocado
+
+- **«Rematar», en la última fase del reproductor, pregunta «Saír da
+  asemblea? Pérdese por onde ías»**, como si se abandonase. Viene de antes de
+  estos lotes. El arreglo sería que «Rematar» cierre sin preguntar.
+- Terminar una asamblea en el reproductor no suma a los premios de la
+  docente. Buscado en el código: el único sitio que apunta una asamblea en los
+  premios es la de las unidades temáticas (`asamblea_guiada_screen.dart`).
+- La regla del día cuenta las semanas por bloques de siete días del mes, no
+  por semanas de calendario. El viernes 2 y el lunes 5 de octubre caen los dos
+  en la «semana 1», y el lunes vuelve al bloque A.
+- El reproductor redondea los minutos de cada fase: 1:30 sale como «2 min».
+  La tarjeta de Hoxe los da exactos.
+- La dinámica del lunes se titula «Asemblea de Benvida e Pulso Calmo a 72
+  bpm». El «72 bpm» que L4 quita de los grupos sigue en ese título.
+
 ## Lote L3 de la revisión de interfaz: «Hoxe», la portada de casa (4/10/2026)
 
 Rama `claude/ux-l3`, que se integra en `main` por pull request después de L2.

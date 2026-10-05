@@ -50,9 +50,10 @@ class NomesFamilias {
 
   static const ciencia =
       LocalizedString(gl: 'Ciencia coas mans', es: 'Ciencia con las manos');
+  // «STEAM» a la vista: es el nombre con que se pidió el módulo.
   static const cienciaDi = LocalizedString(
-    gl: 'Un xogo por idade',
-    es: 'Un juego por edad',
+    gl: 'STEAM: un xogo por idade',
+    es: 'STEAM: un juego por edad',
   );
 
   // --------------------------------------------------------------- guías

@@ -198,10 +198,16 @@ void main() {
       // O aula xa non lista unidades: ensina UNHA microcápsula, a do grupo e
       // o mes escollidos. A unidade segue no repositorio, pero non é a porta.
       expect(find.text('Xoga con Lúa'), findsOneWidget);
-      expect(find.text('O MEU GRUPO'), findsOneWidget);
-      expect(find.text('MES DO CURSO'), findsOneWidget);
       expect(find.byKey(const ValueKey('tarxeta_fluxo_1c')), findsOneWidget);
       expect(find.byKey(const ValueKey('comezar_asemblea_1c')), findsOneWidget);
+      // Grupo, mes e día, nunha liña; os filtros ábrense se fai falta.
+      expect(
+          find.byKey(const ValueKey('selector_compacto_1c')), findsOneWidget);
+      expect(find.text('O MEU GRUPO'), findsNothing);
+      await tester.tap(find.byKey(const ValueKey('selector_compacto_1c')));
+      await tester.pumpAndSettle();
+      expect(find.text('O MEU GRUPO'), findsOneWidget);
+      expect(find.text('MES DO CURSO'), findsOneWidget);
     });
 
     testWidgets(

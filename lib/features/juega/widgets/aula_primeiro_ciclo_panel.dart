@@ -6,6 +6,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/asamblea_primeiro_ciclo_model.dart';
 import '../../../data/models/progresion_model.dart';
 import 'aula_ciclo_panel.dart';
+import 'selector_compacto_aula.dart';
 
 /// El aula de 1.º ciclo (0-3): se elige el TRAMO y el MES, y sale UNA tarjeta.
 ///
@@ -69,6 +70,9 @@ class _AulaPrimeiroCicloPanelState extends State<AulaPrimeiroCicloPanel> {
   late int _semana;
   late int _dia;
 
+  /// Los filtros, plegados: se ve lo elegido y se abren si hace falta.
+  bool _filtrosAbertos = false;
+
   @override
   void initState() {
     super.initState();
@@ -89,6 +93,16 @@ class _AulaPrimeiroCicloPanelState extends State<AulaPrimeiroCicloPanel> {
       widget.progresionDe?.call('primeiro_ciclo.${_tramo.clave}');
 
   DiaDeProgresion? get _diaActual => _progresion?.dia(_semana, _dia);
+
+  /// «0-2 anos · outubro · semana 1 · venres».
+  String _resumo(AppLanguage lang) => [
+        _tramo.etiquetaCorta.resolve(lang),
+        nomeDoMes[_mes]!.resolve(lang).toLowerCase(),
+        if (_diaActual case final d?) ...[
+          'semana ${d.semana}',
+          d.nomeDia.resolve(lang).toLowerCase(),
+        ],
+      ].join(' · ');
 
   AsambleaPrimeiroCiclo? get _actual {
     for (final a in widget.asambleas) {
@@ -114,74 +128,88 @@ class _AulaPrimeiroCicloPanelState extends State<AulaPrimeiroCicloPanel> {
         padding: const EdgeInsets.only(bottom: AppTheme.spaceXxl),
         children: [
           if (widget.cabeceira != null) widget.cabeceira!,
-          Padding(
-            padding: const EdgeInsets.fromLTRB(
-              AppTheme.spaceLg,
-              AppTheme.spaceMd,
-              AppTheme.spaceLg,
-              0,
-            ),
-            child: Column(
+          const SizedBox(height: AppTheme.spaceMd),
+          SelectorCompactoDoAula(
+            prefixoClave: '1c',
+            resumo: _resumo(lang),
+            aberto: _filtrosAbertos,
+            onAlternar: () =>
+                setState(() => _filtrosAbertos = !_filtrosAbertos),
+            language: lang,
+            selectores: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                RotuloSeccion(isGl ? 'O MEU GRUPO' : 'MI GRUPO'),
-                const SizedBox(height: AppTheme.spaceSm),
-                SelectorDeIdade<TramoPrimeiroCiclo>(
-                  prefixoClave: 'tramo_1c',
-                  seleccionado: _tramo,
-                  language: lang,
-                  onCambiar: (t) => setState(() => _tramo = t),
-                  opcions: [
-                    for (final t in TramoPrimeiroCiclo.values)
-                      OpcionDeIdade<TramoPrimeiroCiclo>(
-                        valor: t,
-                        etiqueta: t.etiquetaCorta,
-                        matiz: t.descricionCurta,
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(
+                    AppTheme.spaceLg,
+                    AppTheme.spaceMd,
+                    AppTheme.spaceLg,
+                    0,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      RotuloSeccion(isGl ? 'O MEU GRUPO' : 'MI GRUPO'),
+                      const SizedBox(height: AppTheme.spaceSm),
+                      SelectorDeIdade<TramoPrimeiroCiclo>(
+                        prefixoClave: 'tramo_1c',
+                        seleccionado: _tramo,
+                        language: lang,
+                        onCambiar: (t) => setState(() => _tramo = t),
+                        opcions: [
+                          for (final t in TramoPrimeiroCiclo.values)
+                            OpcionDeIdade<TramoPrimeiroCiclo>(
+                              valor: t,
+                              etiqueta: t.etiquetaCorta,
+                              matiz: t.descricionCurta,
+                            ),
+                        ],
                       ),
-                  ],
+                      const SizedBox(height: AppTheme.spaceLg),
+                      RotuloSeccion(isGl ? 'MES DO CURSO' : 'MES DEL CURSO'),
+                      const SizedBox(height: AppTheme.spaceSm),
+                    ],
+                  ),
                 ),
-                const SizedBox(height: AppTheme.spaceLg),
-                RotuloSeccion(isGl ? 'MES DO CURSO' : 'MES DEL CURSO'),
-                const SizedBox(height: AppTheme.spaceSm),
+                TiraDeMeses(
+                  prefixoClave: '1c',
+                  mesSeleccionado: _mes,
+                  language: lang,
+                  onCambiar: (m) => setState(() {
+                    _mes = m;
+                    _irAoDiaDeHoxe();
+                  }),
+                ),
+                if (_progresion != null)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppTheme.spaceLg,
+                      AppTheme.spaceLg,
+                      AppTheme.spaceLg,
+                      0,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        RotuloSeccion(isGl ? 'SEMANA E DÍA' : 'SEMANA Y DÍA'),
+                        const SizedBox(height: AppTheme.spaceSm),
+                        TiraDeDias(
+                          prefixoClave: '1c',
+                          progresion: _progresion!,
+                          semana: _semana,
+                          dia: _dia,
+                          language: lang,
+                          onCambiar: (s, d) => setState(() {
+                            _semana = s;
+                            _dia = d;
+                          }),
+                        ),
+                      ],
+                    ),
+                  ),
               ],
             ),
           ),
-          TiraDeMeses(
-            prefixoClave: '1c',
-            mesSeleccionado: _mes,
-            language: lang,
-            onCambiar: (m) => setState(() {
-              _mes = m;
-              _irAoDiaDeHoxe();
-            }),
-          ),
-          if (_progresion != null)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppTheme.spaceLg,
-                AppTheme.spaceLg,
-                AppTheme.spaceLg,
-                0,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  RotuloSeccion(isGl ? 'SEMANA E DÍA' : 'SEMANA Y DÍA'),
-                  const SizedBox(height: AppTheme.spaceSm),
-                  TiraDeDias(
-                    prefixoClave: '1c',
-                    progresion: _progresion!,
-                    semana: _semana,
-                    dia: _dia,
-                    language: lang,
-                    onCambiar: (s, d) => setState(() {
-                      _semana = s;
-                      _dia = d;
-                    }),
-                  ),
-                ],
-              ),
-            ),
           const SizedBox(height: AppTheme.spaceLg),
           Padding(
             padding: const EdgeInsets.symmetric(
@@ -337,29 +365,10 @@ class _TarxetaDeFluxo extends StatelessWidget {
                   ),
                 ],
                 const SizedBox(height: AppTheme.spaceMd),
-                if (dia != null) ...[
-                  BloqueDoDia(
-                    dia: dia!,
-                    semana: semana,
-                    ordes: _ordesDeHoxe,
-                    language: language,
-                  ),
-                  const SizedBox(height: AppTheme.spaceMd),
-                ],
-                for (final fase in asamblea.fases)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: AppTheme.spaceSm),
-                    child: FilaDeFase(
-                      orden: fase.orden,
-                      titulo: fase.titulo.resolve(language),
-                      minutos: (fase.duracionSegundos / 60).round(),
-                    ),
-                  ),
-                if (circulo != null) ...[
-                  const SizedBox(height: AppTheme.spaceSm),
-                  circulo!,
-                ],
-                const SizedBox(height: AppTheme.spaceSm),
+                // «Comezar a asemblea», justo debajo de qué asamblea es.
+                // Estaba al final de la tarjeta, debajo del día, las fases,
+                // el cuento, la dinámica y el inglés: entre 1.755 y 2.035 px
+                // más abajo. El detalle va después, para quien lo quiera.
                 SizedBox(
                   height: 52,
                   child: ElevatedButton.icon(
@@ -382,6 +391,29 @@ class _TarxetaDeFluxo extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(height: AppTheme.spaceLg),
+                if (dia != null) ...[
+                  BloqueDoDia(
+                    dia: dia!,
+                    semana: semana,
+                    ordes: _ordesDeHoxe,
+                    language: language,
+                  ),
+                  const SizedBox(height: AppTheme.spaceMd),
+                ],
+                for (final fase in asamblea.fases)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: AppTheme.spaceSm),
+                    child: FilaDeFase(
+                      orden: fase.orden,
+                      titulo: fase.titulo.resolve(language),
+                      minutos: (fase.duracionSegundos / 60).round(),
+                    ),
+                  ),
+                if (circulo != null) ...[
+                  const SizedBox(height: AppTheme.spaceLg),
+                  circulo!,
+                ],
               ],
             ),
           ),

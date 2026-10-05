@@ -16,7 +16,7 @@ import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/data/validators/content_validator.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_fogar_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
-import 'package:descubre_con_lua/features/docentes/widgets/hoxe_na_aula.dart';
+import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.dart';
 import 'package:descubre_con_lua/features/juega/widgets/circulo_do_dia.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
 import 'package:descubre_con_lua/features/steam/widgets/steam_no_calendario.dart';
@@ -187,41 +187,44 @@ void main() {
       await tester.pumpAndSettle();
     }
 
-    Widget hoxe(DateTime agora, List<SteamUnit> abertas) => Scaffold(
-          body: ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              TarxetaHoxeNaAula(
-                programa: programa,
-                cursoId: 'curso_4_5',
-                onCambiarCurso: (_) {},
-                language: AppLanguage.gl,
-                audioService: MockOfflineAudioService(),
-                agora: agora,
-                onIniciarAsemblea: (_, __) {},
-                onVerPalabras: () {},
-                steamDoDia: (c, d) => steamDoDiaDoCurso(repo, c, d),
-                onAbrirSteam: abertas.add,
-              ),
-            ],
-          ),
+    // «Hoxe», la portada de la docente: la sesión sale debajo de la asamblea
+    // el día que le toca al curso del grupo elegido.
+    Widget hoxe(DateTime agora) => HoxeDocentesScreen(
+          repository: repo,
+          language: AppLanguage.gl,
+          onLanguageChanged: (_) {},
+          cursoId: 'curso_4_5',
+          onCambiarCurso: (_) {},
+          audioService: MockOfflineAudioService(),
+          agora: agora,
         );
 
-    testWidgets('«Hoxe na aula» trae la sesión el día que le toca al curso',
+    testWidgets('«Hoxe» de la docente trae la sesión el día que le toca',
         (tester) async {
-      final abertas = <SteamUnit>[];
-      await pintar(tester, hoxe(DateTime(2026, 12, 9), abertas));
+      await pintar(tester, hoxe(DateTime(2026, 12, 9)));
       final fila = find.byKey(const ValueKey('fila_steam_I4-OPTICA-001'));
+      await tester.dragUntilVisible(
+          fila, find.byKey(const Key('hoxe_docentes')), const Offset(0, -200));
+      await tester.pumpAndSettle();
       expect(fila, findsOneWidget);
       expect(find.text('A sesión STEAM de hoxe'), findsOneWidget);
       expect(find.text('Sombras grandes e pequenas'), findsOneWidget);
-      await tester.tap(fila);
-      expect(abertas.map((u) => u.id), ['I4-OPTICA-001']);
+      await verYTocar(tester, fila);
+      final sesion = tester.widget<SteamSesionGuiadaScreen>(
+          find.byType(SteamSesionGuiadaScreen));
+      expect(sesion.unit.id, 'I4-OPTICA-001');
+      expect(sesion.audiencia, SteamAudiencia.aula);
     });
 
-    testWidgets('«Hoxe na aula» no la trae el día siguiente', (tester) async {
-      await pintar(tester, hoxe(DateTime(2026, 12, 10), []));
-      expect(find.byKey(const Key('tarxeta_hoxe_na_aula')), findsOneWidget);
+    testWidgets('«Hoxe» de la docente no la trae el día siguiente',
+        (tester) async {
+      await pintar(tester, hoxe(DateTime(2026, 12, 10)));
+      expect(find.byKey(const Key('hoxe_aula_asemblea')), findsOneWidget);
+      // Hasta el final de la lista: lo que no se ha construido no se busca.
+      await tester.drag(
+          find.byKey(const Key('hoxe_docentes')), const Offset(0, -3000));
+      await tester.pumpAndSettle();
+      expect(find.byType(FilaSteamDoDia), findsNothing);
       expect(find.textContaining('STEAM'), findsNothing);
     });
 
@@ -530,30 +533,25 @@ void main() {
           expect(errores(tester), isEmpty);
         });
 
-        testWidgets('«Hoxe na aula» el día STEAM ($etiqueta)', (tester) async {
+        testWidgets('«Hoxe» de la docente el día STEAM ($etiqueta)',
+            (tester) async {
           await pintar(
             tester,
-            Scaffold(
-              body: ListView(
-                padding: const EdgeInsets.all(16),
-                children: [
-                  TarxetaHoxeNaAula(
-                    programa: programa,
-                    cursoId: 'curso_4_5',
-                    onCambiarCurso: (_) {},
-                    language: lang,
-                    agora: DateTime(2026, 12, 9),
-                    onIniciarAsemblea: (_, __) {},
-                    onVerPalabras: () {},
-                    steamDoDia: (c, d) => steamDoDiaDoCurso(repo, c, d),
-                    onAbrirSteam: (_) {},
-                  ),
-                ],
-              ),
+            HoxeDocentesScreen(
+              repository: repo,
+              language: lang,
+              onLanguageChanged: (_) {},
+              cursoId: 'curso_4_5',
+              onCambiarCurso: (_) {},
+              agora: DateTime(2026, 12, 9),
             ),
             escala,
           );
-          expect(find.byType(FilaSteamDoDia), findsOneWidget);
+          final fila = find.byType(FilaSteamDoDia);
+          await tester.dragUntilVisible(fila,
+              find.byKey(const Key('hoxe_docentes')), const Offset(0, -200));
+          await tester.pumpAndSettle();
+          expect(fila, findsOneWidget);
           expect(errores(tester), isEmpty);
         });
 

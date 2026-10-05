@@ -18,6 +18,7 @@ import 'package:descubre_con_lua/features/calendario/views/calendario_fogar_scre
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
 import 'package:descubre_con_lua/features/calendario/widgets/palabras_do_dia.dart';
 import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
+import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.dart';
 import 'package:descubre_con_lua/features/docentes/widgets/hoxe_na_aula.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/familias/widgets/tarxeta_ingles_de_hoxe_fogar.dart';
@@ -218,155 +219,129 @@ void main() {
     for (final escala in [1.0, 1.8]) {
       final etiqueta = '${lang.code} a escala $escala';
 
-      group('A tarxeta «Hoxe na aula», en $etiqueta', () {
+      // «Hoxe», la portada de la docente, que sustituye a la tarjeta «Hoxe na
+      // aula»: las mismas comprobaciones, ahora sobre la pantalla entera.
+      group('«Hoxe» da docente, en $etiqueta', () {
+        final gl = lang == AppLanguage.gl;
+        final lista = find.byKey(const Key('hoxe_docentes'));
+        final palabras = find.byKey(const Key('hoxe_aula_palabras'));
+
+        Widget hoxeDocente(DateTime agora,
+                {String cursoId = 'curso_0_2',
+                ValueChanged<String>? onCambiarCurso}) =>
+            HoxeDocentesScreen(
+              repository: repo,
+              language: lang,
+              onLanguageChanged: (_) {},
+              cursoId: cursoId,
+              onCambiarCurso: onCambiarCurso ?? (_) {},
+              audioService: MockOfflineAudioService(),
+              agora: agora,
+            );
+
+        Future<void> baixarAsPalabras(WidgetTester tester) async {
+          await tester.dragUntilVisible(palabras, lista, const Offset(0, -150));
+          await tester.pumpAndSettle();
+        }
+
         testWidgets('as palabras son as do día da data, e cabe',
             (tester) async {
-          DiaDoCursoTpr? pedido;
-          String? cursoPedido;
-          var verPalabras = 0;
-          await pintar(
-            tester,
-            enLista(TarxetaHoxeNaAula(
-              programa: programa,
-              cursoId: 'curso_0_2',
-              onCambiarCurso: (_) {},
-              language: lang,
-              audioService: MockOfflineAudioService(),
-              agora: miercoles,
-              onIniciarAsemblea: (d, c) {
-                pedido = d;
-                cursoPedido = c;
-              },
-              onVerPalabras: () => verPalabras++,
-            )),
-            escala: escala,
-          );
-          final tarxeta = find.byKey(const Key('tarxeta_hoxe_na_aula'));
-          expect(tarxeta, findsOneWidget);
+          await pintar(tester, hoxeDocente(miercoles), escala: escala);
+          expect(erroresDe(tester), isEmpty,
+              reason: 'Hoxe desborda en $etiqueta.');
+          await baixarAsPalabras(tester);
           final plan = curso.planDoDia(9, 4, 3)!;
           expect(plan.newWords, hasLength(5));
           expect(plan.reviewWords, hasLength(10));
-          compruebaPalabras(tarxeta, plan, lang);
+          compruebaPalabras(palabras, plan, lang);
           expect(
-              find.text(lang == AppLanguage.gl
-                  ? 'HOXE NA AULA · RITMO TPR'
-                  : 'HOY EN EL AULA · RITMO TPR'),
+              find.descendant(
+                  of: palabras,
+                  matching:
+                      find.text(gl ? 'PALABRAS DE HOXE' : 'PALABRAS DE HOY')),
               findsOneWidget);
           expect(erroresDe(tester), isEmpty,
-              reason: 'A tarxeta de hoxe desborda en $etiqueta.');
+              reason: 'As palabras de hoxe desbordan en $etiqueta.');
 
-          // Os dous botóns chegan co día da tarxeta, non con outro.
-          final iniciar = find.byKey(const Key('boton_asemblea_de_hoxe'));
-          await tester.ensureVisible(iniciar);
-          await tester.pumpAndSettle();
-          await tester.tap(iniciar);
-          expect(pedido, (mesCalendario: 9, semana: 4, dia: 3));
-          expect(cursoPedido, 'curso_0_2');
+          // «Ver as 4.000 palabras» abre a folla cos números contados.
           final ver = find.byKey(const Key('boton_ver_palabras_do_curso'));
           await tester.ensureVisible(ver);
           await tester.pumpAndSettle();
           expect(
               find.descendant(
                   of: ver,
-                  matching: find.text(lang == AppLanguage.gl
-                      ? 'Ver as 4.000 palabras'
-                      : 'Ver las 4.000 palabras')),
+                  matching: find.text(
+                      gl ? 'Ver as 4.000 palabras' : 'Ver las 4.000 palabras')),
               findsOneWidget);
           await tester.tap(ver);
-          expect(verPalabras, 1);
+          await tester.pumpAndSettle();
+          expect(find.byType(ProxeccionDoCurso), findsOneWidget);
           expect(erroresDe(tester), isEmpty);
         });
 
         testWidgets('en xullo di que é o primeiro día, e ensina ese',
             (tester) async {
-          await pintar(
-            tester,
-            enLista(TarxetaHoxeNaAula(
-              programa: programa,
-              cursoId: 'curso_0_2',
-              onCambiarCurso: (_) {},
-              language: lang,
-              agora: DateTime(2026, 7, 15),
-              onIniciarAsemblea: (_, __) {},
-              onVerPalabras: () {},
-            )),
-            escala: escala,
-          );
+          await pintar(tester, hoxeDocente(DateTime(2026, 7, 15)),
+              escala: escala);
           expect(
-              find.text(lang == AppLanguage.gl
-                  ? 'O PRIMEIRO DÍA DO CURSO · RITMO TPR'
-                  : 'EL PRIMER DÍA DEL CURSO · RITMO TPR'),
+              find.text(gl
+                  ? 'Para empezar en setembro'
+                  : 'Para empezar en septiembre'),
               findsOneWidget);
-          compruebaPalabras(find.byKey(const Key('tarxeta_hoxe_na_aula')),
-              curso.planDoDia(9, 1, 1)!, lang);
+          await baixarAsPalabras(tester);
+          compruebaPalabras(palabras, curso.planDoDia(9, 1, 1)!, lang);
           expect(erroresDe(tester), isEmpty);
         });
 
         testWidgets('o venres: ningunha nova e as vinte en reto',
             (tester) async {
-          await pintar(
-            tester,
-            enLista(TarxetaHoxeNaAula(
-              programa: programa,
-              cursoId: 'curso_0_2',
-              onCambiarCurso: (_) {},
-              language: lang,
-              agora: DateTime(2026, 9, 25),
-              onIniciarAsemblea: (_, __) {},
-              onVerPalabras: () {},
-            )),
-            escala: escala,
-          );
+          await pintar(tester, hoxeDocente(DateTime(2026, 9, 25)),
+              escala: escala);
+          await baixarAsPalabras(tester);
           final plan = curso.planDoDia(9, 4, 5)!;
           expect(plan.newWords, isEmpty);
           expect(plan.reviewWords, hasLength(20));
-          final tarxeta = find.byKey(const Key('tarxeta_hoxe_na_aula'));
-          compruebaPalabras(tarxeta, plan, lang);
+          compruebaPalabras(palabras, plan, lang);
           // As vinte, por bloques: o reto xógase así.
           for (final p in plan.reviewWords) {
             expect(
                 find.descendant(
-                    of: tarxeta, matching: find.textContaining(p.en)),
+                    of: palabras, matching: find.textContaining(p.en)),
                 findsWidgets,
                 reason: p.en);
           }
           expect(erroresDe(tester), isEmpty);
         });
 
-        testWidgets('elixir outro curso trae as palabras DESE curso',
+        testWidgets('elixir outro grupo trae as palabras DESE curso',
             (tester) async {
           var seleccionado = 'curso_0_2';
-          String? cursoPedido;
           await pintar(
             tester,
             StatefulBuilder(
-              builder: (context, setState) => enLista(TarxetaHoxeNaAula(
-                programa: programa,
+              builder: (context, setState) => hoxeDocente(
+                miercoles,
                 cursoId: seleccionado,
                 onCambiarCurso: (c) => setState(() => seleccionado = c),
-                language: lang,
-                agora: miercoles,
-                onIniciarAsemblea: (_, c) => cursoPedido = c,
-                onVerPalabras: () {},
-              )),
+              ),
             ),
             escala: escala,
           );
-          final tarxeta = find.byKey(const Key('tarxeta_hoxe_na_aula'));
           for (final id in ['curso_4_5', 'curso_2_3', 'curso_5_6']) {
-            final chip = find.byKey(ValueKey('hoxe_curso_$id'));
-            await tester.ensureVisible(chip);
+            // O selector está arriba de todo: vólvese ao principio.
+            await tester.drag(lista, const Offset(0, 3000));
             await tester.pumpAndSettle();
-            await tester.tap(chip);
+            await tester.tap(find.byKey(const ValueKey('selector_idade')));
+            await tester.pumpAndSettle();
+            final opcion = find.byKey(ValueKey('idade_$id'));
+            await tester.ensureVisible(opcion);
+            await tester.pumpAndSettle();
+            await tester.tap(opcion);
             await tester.pumpAndSettle();
             expect(seleccionado, id);
+            await baixarAsPalabras(tester);
             compruebaPalabras(
-                tarxeta, programa.curso(id)!.planDoDia(9, 4, 3)!, lang);
-            final iniciar = find.byKey(const Key('boton_asemblea_de_hoxe'));
-            await tester.ensureVisible(iniciar);
-            await tester.pumpAndSettle();
-            await tester.tap(iniciar);
-            expect(cursoPedido, id);
+                palabras, programa.curso(id)!.planDoDia(9, 4, 3)!, lang);
             expect(erroresDe(tester), isEmpty, reason: id);
           }
         });
@@ -655,7 +630,7 @@ void main() {
     });
 
     testWidgets(
-        'O portal docente: «Iniciar asemblea de hoxe» abre a asemblea DE HOXE, en ${lang.code}',
+        'O portal docente: «Comezar a asemblea» abre a asemblea DE HOXE, en ${lang.code}',
         (tester) async {
       await pintar(
         tester,
@@ -666,13 +641,16 @@ void main() {
           audioService: MockOfflineAudioService(),
           currentLanguage: lang,
           onToggleLanguage: () {},
+          agora: miercoles,
         ),
         tamano: const Size(400, 900),
       );
-      final hoxe = diaDoCursoParaHoxe().dia;
-      final tarxeta = find.byKey(const Key('tarxeta_hoxe_na_aula'));
-      expect(tarxeta, findsOneWidget);
-      compruebaPalabras(tarxeta,
+      const hoxe = (mesCalendario: 9, semana: 4, dia: 3);
+      final lista = find.byKey(const Key('hoxe_docentes'));
+      final palabras = find.byKey(const Key('hoxe_aula_palabras'));
+      await tester.dragUntilVisible(palabras, lista, const Offset(0, -150));
+      await tester.pumpAndSettle();
+      compruebaPalabras(palabras,
           curso.planDoDia(hoxe.mesCalendario, hoxe.semana, hoxe.dia)!, lang);
 
       // «Ver as 4.000 palabras» abre a folla cos números contados.
@@ -683,7 +661,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.byType(ProxeccionDoCurso), findsOneWidget);
       expect(erroresDe(tester), isEmpty);
-      final lista = find
+      final folla = find
           .descendant(
               of: find.byType(ProxeccionDoCurso),
               matching: find.byType(Scrollable))
@@ -691,26 +669,29 @@ void main() {
       final pechar = find.descendant(
           of: find.byType(ProxeccionDoCurso),
           matching: find.text(lang == AppLanguage.gl ? 'Pechar' : 'Cerrar'));
-      await tester.scrollUntilVisible(pechar, 200, scrollable: lista);
+      await tester.scrollUntilVisible(pechar, 200, scrollable: folla);
       await tester.pumpAndSettle();
       await tester.tap(pechar);
       await tester.pumpAndSettle();
       expect(find.byType(ProxeccionDoCurso), findsNothing);
 
-      // «Iniciar asemblea de hoxe»: o curso elíxese na tarxeta e abre a
-      // asemblea DESE grupo, ese día. Un curso de cada ciclo: o de 1.º leva
-      // material e canción, o de 2.º non.
-      for (final (clave, cursoId) in [
-        ('1c_${TramoPrimeiroCiclo.lactantes0a2.clave}', 'curso_0_2'),
-        ('2c_${NivelEducativoSegundoCiclo.infantil4.clave}', 'curso_3_4'),
+      // «Comezar a asemblea»: o grupo elíxese arriba e abre a asemblea DESE
+      // grupo, ese día. Un curso de cada ciclo: o de 1.º leva material e
+      // canción, o de 2.º non.
+      for (final (grupo, cursoId) in [
+        (TramoPrimeiroCiclo.lactantes0a2.etiquetaCorta, 'curso_0_2'),
+        (NivelEducativoSegundoCiclo.infantil4.etiquetaCorta, 'curso_3_4'),
       ]) {
-        final chip = find.byKey(ValueKey('hoxe_curso_$cursoId'));
-        await tester.ensureVisible(chip);
+        await tester.drag(lista, const Offset(0, 3000));
         await tester.pumpAndSettle();
-        await tester.tap(chip);
+        await tester.tap(find.byKey(const ValueKey('selector_idade')));
+        await tester.pumpAndSettle();
+        await tester.tap(find.byKey(ValueKey('idade_$cursoId')));
+        await tester.pumpAndSettle();
+        await tester.dragUntilVisible(palabras, lista, const Offset(0, -150));
         await tester.pumpAndSettle();
         compruebaPalabras(
-            tarxeta,
+            palabras,
             programa
                 .curso(cursoId)!
                 .planDoDia(hoxe.mesCalendario, hoxe.semana, hoxe.dia)!,
@@ -720,18 +701,20 @@ void main() {
         await tester.pumpAndSettle();
         await tester.tap(iniciar);
         await tester.pumpAndSettle();
-        expect(erroresDe(tester), isEmpty, reason: clave);
+        expect(erroresDe(tester), isEmpty, reason: cursoId);
         expect(find.byType(AsambleaPlayerScreen), findsOneWidget);
         final player = tester
             .widget<AsambleaPlayerScreen>(find.byType(AsambleaPlayerScreen));
-        expect(player.dia?.semana, hoxe.semana, reason: clave);
-        expect(player.dia?.dia, hoxe.dia, reason: clave);
-        expect(player.semana?.numero, hoxe.semana, reason: clave);
+        expect(player.dia?.semana, hoxe.semana, reason: cursoId);
+        expect(player.dia?.dia, hoxe.dia, reason: cursoId);
+        expect(player.semana?.numero, hoxe.semana, reason: cursoId);
+        expect(player.subtitulo, contains(grupo.resolve(lang)),
+            reason: cursoId);
         expect(
             player.subtitulo,
             contains('S${hoxe.semana} '
                 '${PalabrasDoDia.nomesDosDias[hoxe.dia - 1].resolve(lang)}'),
-            reason: clave);
+            reason: cursoId);
         // O reprodutor leva o seu propio botón atrás: vólvese polo Navigator.
         tester.state<NavigatorState>(find.byType(Navigator).first).pop();
         await tester.pumpAndSettle();

@@ -69,7 +69,7 @@ flutter test --tags capturas --update-goldens test/laminas_hoja_test.dart
 
 ## Las capturas de la app de escritorio
 
-Las que empiezan por `l0-`, `l1-`, `l2-` y `l3-`, y las de `vocabulario-flower-`, son otra
+Las que empiezan por `l0-`, `l1-`, `l2-`, `l3-` y `l4-`, y las de `vocabulario-flower-`, son otra
 cosa: la app **compilada para escritorio** (Linux), abierta en una pantalla
 virtual de 360 × 780 px y recorrida a mano por el mismo camino que usa quien la
 maneja (Inicio → Comezar → portal → módulo). Son la prueba de que un cambio se
@@ -102,3 +102,10 @@ la de Android, pero no sus barras del sistema, su densidad ni su escala de texto
 | `l3-explorar-{gl,es}.png` | Explorar: los seis módulos de casa con su nombre de casa, Ciencia coas mans entre ellos, sin bajar |
 | `l3-guias-{gl,es}.png` | Guías: la guía de dos minutos, las lecturas para la familia, el inglés en casa y los premios |
 | `l3-idade-es.png` | La edad se elige una vez, en un chip arriba; la hoja recuerda que no se guarda |
+| `l4-hoxe-{gl,es}.png` | «Hoxe», la portada de la docente, un lunes: la asamblea del día arriba, con sus cuatro fases y sus minutos, y un solo botón; debajo, las palabras de hoy con el tema de la semana |
+| `l4-calendario-{gl,es}.png` | El calendario como pestaña del Portal Docentes, sin el párrafo de entrada: la tira de meses se ve entera |
+| `l4-recursos-{gl,es}.png` | Recursos: los módulos agrupados por lo que se va a hacer, con «Xoga con Lúa · Modo Aula» y «Planificador curricular» |
+| `l4-modo-aula-{gl,es}.png` | El Modo Aula: el grupo, el mes y el día en una línea, sin la tira de nivel encima, y «Comezar a asemblea» en la primera pantalla |
+| `l4-modo-aula-selector-{gl,es}.png` | El mismo selector abierto: grupo, mes, semana y día, con la tira de meses dentro del margen |
+| `l4-eu-{gl,es}.png` | «Eu»: el nivel y la racha de la docente, la guía de dos minutos, la formación del aula y lo que se guarda |
+| `l4-explorar-familias-{gl,es}.png` | Explorar de familias: «Ciencia coas mans» dice debajo que es STEAM |
