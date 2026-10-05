@@ -3,8 +3,8 @@
  "voice": "Celtia · Proxecto Nós (proxectonos)",
  "peakDbfs": -3.0,
  "entries": 1175,
- "totalBytes": 35295164,
- "totalSeconds": 5912.84,
+ "totalBytes": 35290630,
+ "totalSeconds": 5912.0,
  "files": [
   {
    "id": "gl_slow_00222185_5",
@@ -931,6 +931,12 @@
    "bytes": 60691
   },
   {
+   "id": "gl_tutor_183d73f4_218",
+   "file": "gl_tutor_183d73f4_218.m4a",
+   "seconds": 12.01,
+   "bytes": 68904
+  },
+  {
    "id": "gl_tutor_184af157_167",
    "file": "gl_tutor_184af157_167.m4a",
    "seconds": 10.14,
@@ -1493,12 +1499,6 @@
    "file": "gl_tutor_2e3450a5_59.m4a",
    "seconds": 3.24,
    "bytes": 19038
-  },
-  {
-   "id": "gl_tutor_2e575c8e_231",
-   "file": "gl_tutor_2e575c8e_231.m4a",
-   "seconds": 12.85,
-   "bytes": 73438
   },
   {
    "id": "gl_tutor_2e823612_83",
