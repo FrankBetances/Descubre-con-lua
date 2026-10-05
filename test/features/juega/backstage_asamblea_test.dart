@@ -695,7 +695,13 @@ void main() {
       expect(find.byKey(const ValueKey('tab_segundo_ciclo')), findsOneWidget);
 
       // 1.º ciclo: o selector é por TRAMO de idade, e a tarxeta do día está
-      // á vista sen desprazar nada.
+      // á vista sen desprazar nada. Os filtros van pregados detrás do
+      // selector compacto, que di o elixido nunha liña.
+      expect(
+          find.byKey(const ValueKey('selector_compacto_1c')), findsOneWidget);
+      expect(find.text('O MEU GRUPO'), findsNothing);
+      await tester.tap(find.byKey(const ValueKey('selector_compacto_1c')));
+      await tester.pumpAndSettle();
       expect(find.text('O MEU GRUPO'), findsOneWidget);
       expect(
         find.byKey(const ValueKey('tramo_1c_TramoPrimeiroCiclo.lactantes0a2')),
@@ -708,6 +714,8 @@ void main() {
       // O panel abre polo mes de hoxe, e a asemblea de proba é de setembro:
       // escóllese setembro para que o test non dependa do día en que corre.
       // Antes pasaba só en setembro.
+      await tester.tap(find.byKey(const ValueKey('selector_compacto_2c')));
+      await tester.pumpAndSettle();
       final setembro = find.byKey(const ValueKey('mes_2c_9'));
       await tester.ensureVisible(setembro);
       await tester.pumpAndSettle();
@@ -724,6 +732,8 @@ void main() {
       expect(find.byKey(const ValueKey('comezar_asemblea_2c')), findsOneWidget);
 
       await tester.tap(find.byKey(const ValueKey('tab_primer_ciclo')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('selector_compacto_1c')));
       await tester.pumpAndSettle();
       expect(find.text('O MEU GRUPO'), findsOneWidget);
     });
@@ -787,6 +797,8 @@ void main() {
       // puede ser usado para dejar leer la pantalla»—. O que non pode volver
       // é a lista vertical de todo: o contido vai en tiras que se pasan de
       // lado. Esta é a do mes, que é a que manda no que se ve.
+      await tester.tap(find.byKey(const ValueKey('selector_compacto_1c')));
+      await tester.pumpAndSettle();
       final tira =
           tester.widget<ListView>(find.byKey(const Key('tira_meses_1c')));
       expect(tira.scrollDirection, Axis.horizontal,

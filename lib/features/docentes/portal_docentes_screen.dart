@@ -2,37 +2,30 @@ import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
-import '../../../core/localization/localized_string.dart';
 import '../../../core/storage/calendario_store.dart';
-import '../../../core/theme/app_theme.dart';
-import '../../../data/models/formacion_model.dart';
-import '../../../data/models/tpr_curriculum_scheduler.dart';
-import '../../../data/models/steam_model.dart';
+import '../../../data/repositories/calendario_repository.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../calendario/views/calendario_screen.dart';
-import '../calendario/widgets/asemblea_do_dia.dart';
-import '../english/views/english_hub_screen.dart';
-import '../formacion/views/formacion_screen.dart';
-import '../juega/views/unidades_list_screen.dart';
-import '../palabras/views/vocabulario_ingles_screen.dart';
-import '../planificador/views/dinamicas_screen.dart';
-import '../planificador/views/estrategias_screen.dart';
-import '../planificador/views/planificador_screen.dart';
+import '../familias/nomes_familias.dart';
 import '../premios/premios_repository.dart';
-import '../steam/views/steam_hub_screen.dart';
-import '../steam/widgets/steam_comun.dart';
-import '../steam/widgets/steam_no_calendario.dart';
-import 'widgets/hoxe_na_aula.dart';
-import '../../core/navigation/ruta_lua.dart';
-import '../../core/widgets/cabecera.dart';
+import 'nomes_docentes.dart';
+import 'views/eu_docente_screen.dart';
+import 'views/hoxe_docentes_screen.dart';
+import 'views/recursos_docentes_screen.dart';
 
-/// Pantalla independente do Portal Docentes.
+/// O Portal Docentes: catro pestanas, e cada cousa vive nunha soa.
 ///
-/// Deseñada especificamente para as escolas infantís municipais de Vigo:
-/// - Cockpit pedagóxico de traballo diario para o profesorado.
-/// - Ritmo de adquisición natural: 5 palabras novas/día e matriz de reforzo acumulativo.
-/// - Asambleas guiadas a 72 bpm, canción a pulso visual, matemáticas temperás.
-/// - Planificador curricular baixo o Decreto 150/2022 e inmersión en inglés L3.
+/// - **Hoxe**: a asemblea do día do grupo, arriba e cun botón; debaixo, as
+///   palabras en inglés, o conto da semana, a dinámica e, se toca, a ciencia.
+/// - **Calendario**: o curso mes a mes, polo lado da aula.
+/// - **Recursos**: todas as asembleas, a programación, o inglés e as
+///   estratexias, agrupados polo que se vai facer.
+/// - **Eu**: o nivel e a racha da persoa docente, a guía de dous minutos e a
+///   formación.
+///
+/// Antes era unha soa lista: unha cabeceira, unha tarxeta con cinco pastillas
+/// de idade e sete módulos en tres seccións numeradas. Para comezar a
+/// asemblea de hoxe había tres portas con tres nomes distintos.
 class PortalDocentesScreen extends StatefulWidget {
   final ContentRepository repository;
   final PremiosRepository? premios;
@@ -41,6 +34,13 @@ class PortalDocentesScreen extends StatefulWidget {
   final AppLanguage currentLanguage;
   final VoidCallback onToggleLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
+
+  /// Para os tests: o día que se quere ver. Por defecto, hoxe.
+  final DateTime? agora;
+
+  /// Os dez meses, se quen abre o portal xa os ten lidos. Sen eles, o
+  /// calendario e o Modo Aula lenos sós, como fai a app.
+  final CalendarioContenido? calendarioContenido;
 
   const PortalDocentesScreen({
     super.key,
@@ -51,6 +51,8 @@ class PortalDocentesScreen extends StatefulWidget {
     this.onLanguageChanged,
     this.premios,
     this.calendario,
+    this.agora,
+    this.calendarioContenido,
   });
 
   @override
@@ -58,37 +60,18 @@ class PortalDocentesScreen extends StatefulWidget {
 }
 
 class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
-  late AppLanguage _language;
+  late AppLanguage _language = widget.currentLanguage;
+  late final CalendarioStore _store = widget.calendario ?? CalendarioStore();
+  int _pestana = 0;
 
-  // Cabe entero en la cabecera a 360 px; « · Escola» lo cortaba.
-  static const _appBarTitle = LocalizedString(
-    gl: 'Portal Docentes',
-    es: 'Portal Docentes',
-  );
+  /// Las pestañas ya abiertas: cada una se construye la primera vez que se
+  /// visita. El calendario lee mucho contenido y la asamblea de hoy no tiene
+  /// por qué esperarlo.
+  final Set<int> _visitadas = {0};
 
-  static const _subtitulo = LocalizedString(
-    gl: 'Recursos pedagóxicos para as escolas infantís municipais de Vigo. Asambleas de aula a 72 bpm, planificador curricular e estratexias educativas.',
-    es: 'Recursos pedagógicos para las escuelas infantiles municipales de Vigo. Asambleas de aula a 72 bpm, planificador curricular y estrategias educativas.',
-  );
-
-  /// El inglés del trayecto. La tarjeta de hoy no se pinta hasta que está: una
-  /// tarjeta de «cinco palabras hoy» sin palabras diría algo que no enseña.
-  ProgramaTpr? get _programa => widget.repository.programaTprSync;
-
-  /// El grupo cuyas palabras enseña la tarjeta de hoy. Solo mientras la
-  /// pantalla está abierta: la app no guarda nada de un aula.
-  String _cursoHoxe = 'curso_0_2';
-
-  @override
-  void initState() {
-    super.initState();
-    _language = widget.currentLanguage;
-    if (widget.repository.programaTprSync == null) {
-      widget.repository.loadProgramaTpr().then((_) {
-        if (mounted) setState(() {});
-      });
-    }
-  }
+  /// El grupo de la docente. Solo mientras la app está abierta: no se guarda
+  /// nada de un aula.
+  String _curso = NomesFamilias.idades.first.$1;
 
   @override
   void didUpdateWidget(covariant PortalDocentesScreen oldWidget) {
@@ -98,619 +81,108 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     }
   }
 
-  void _handleLanguageChanged(AppLanguage newLang) {
-    setState(() => _language = newLang);
-    widget.onLanguageChanged?.call(newLang);
+  void _cambiarLingua(AppLanguage lingua) {
+    setState(() => _language = lingua);
+    widget.onLanguageChanged?.call(lingua);
   }
 
-  /// «Comezar a asemblea»: la asamblea de ESE día para el grupo del
-  /// curso elegido en la tarjeta, por el mismo camino que el calendario.
-  void _iniciarAsembleaDeHoxe(
-      BuildContext context, DiaDoCursoTpr hoxe, String cursoId) {
-    for (final g
-        in gruposDaAsembleaDoDia(widget.repository, hoxe.mesCalendario)) {
-      if (cursoTprDoGrupo[g.clave] != cursoId || !g.disponible) continue;
-      abrirAsembleaDoDia(
-        context,
-        repo: widget.repository,
-        grupo: g,
-        mesCalendario: hoxe.mesCalendario,
-        semana: hoxe.semana,
-        dia: hoxe.dia,
-        language: _language,
-        audioService: widget.audioService,
-      );
-      return;
-    }
-  }
+  void _cambiarCurso(String curso) => setState(() => _curso = curso);
 
-  /// «Ver as 4.000 palabras»: los números del trayecto, contados.
-  void _mostrarProxeccionAnual(BuildContext context, ProgramaTpr programa) {
-    showModalBottomSheet<void>(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.white,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-      ),
-      builder: (sheetContext) => DraggableScrollableSheet(
-        expand: false,
-        initialChildSize: 0.85,
-        maxChildSize: 0.95,
-        minChildSize: 0.5,
-        builder: (context, scrollController) => ProxeccionDoCurso(
-          programa: programa,
-          language: _language,
-          scrollController: scrollController,
-          onPechar: () => Navigator.of(sheetContext).pop(),
+  List<Widget> _pestanas(AppLanguage lang) => [
+        HoxeDocentesScreen(
+          repository: widget.repository,
+          language: lang,
+          onLanguageChanged: _cambiarLingua,
+          cursoId: _curso,
+          onCambiarCurso: _cambiarCurso,
+          audioService: widget.audioService,
+          agora: widget.agora,
         ),
-      ),
-    );
-  }
+        // Con clave: cambiar el grupo en Hoxe abre el calendario de ese curso.
+        CalendarioScreen(
+          key: ValueKey('calendario_aula_$_curso'),
+          store: _store,
+          contenido: widget.calendarioContenido,
+          initialLanguage: lang,
+          onLanguageChanged: _cambiarLingua,
+          repository: widget.repository,
+          audioService: widget.audioService,
+          premios: widget.premios,
+          esDocenteInicial: true,
+          cursoInicial: _curso,
+          conIntroducion: false,
+        ),
+        RecursosDocentesScreen(
+          repository: widget.repository,
+          language: lang,
+          onLanguageChanged: _cambiarLingua,
+          cursoId: _curso,
+          audioService: widget.audioService,
+          premios: widget.premios,
+          calendario: _store,
+          calendarioContenido: widget.calendarioContenido,
+          agora: widget.agora,
+        ),
+        EuDocenteScreen(
+          repository: widget.repository,
+          language: lang,
+          onLanguageChanged: _cambiarLingua,
+          premios: widget.premios,
+          calendario: _store,
+          audioService: widget.audioService,
+        ),
+      ];
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final isGl = _language == AppLanguage.gl;
-    final programa = _programa;
-
+    final lang = _language;
     return Scaffold(
-      backgroundColor: AppTheme.pageBg,
-      appBar: Cabecera(
-        titulo: _appBarTitle.resolve(_language),
-        language: _language,
-        onLanguageChanged: _handleLanguageChanged,
+      body: IndexedStack(
+        index: _pestana,
+        children: [
+          for (final (i, pestana) in _pestanas(lang).indexed)
+            // Las que no se ven, paradas: sin animaciones gastando batería.
+            TickerMode(
+              enabled: i == _pestana,
+              child: _visitadas.contains(i) ? pestana : const SizedBox.shrink(),
+            ),
+        ],
       ),
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(16.0),
-          children: [
-            // Cabecera Pedagóxica Institucional
-            Container(
-              padding: const EdgeInsets.all(18),
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [
-                    Color(0xFFEFF6FC),
-                    Color(0xFFDCEBFA),
-                  ],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-                borderRadius: BorderRadius.circular(18),
-                border: Border.all(color: const Color(0xFFBBD7F5)),
+      // Las etiquetas crecen con la letra del sistema hasta 1,3: más, y
+      // «Calendario» no cabe en un cuarto de 360 px y se corta.
+      bottomNavigationBar: MediaQuery.withClampedTextScaling(
+        maxScaleFactor: 1.3,
+        child: DecoratedBox(
+          decoration: const BoxDecoration(
+            border: Border(top: BorderSide(color: Color(0xFFE9EEEE))),
+          ),
+          child: NavigationBar(
+            key: const Key('pestanas_docentes'),
+            selectedIndex: _pestana,
+            onDestinationSelected: (i) => setState(() {
+              _pestana = i;
+              _visitadas.add(i);
+            }),
+            destinations: [
+              NavigationDestination(
+                key: const Key('pestana_hoxe'),
+                icon: const Icon(Icons.wb_sunny_rounded),
+                label: NomesDocentes.hoxe.resolve(lang),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      // A pastilla pártese en dúas liñas se non cabe: coa letra
-                      // grande do sistema saía da cabeceira.
-                      Expanded(
-                        child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 10, vertical: 4),
-                            decoration: BoxDecoration(
-                              color: context.acento,
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Text(
-                              isGl
-                                  ? 'MODO AULA · DOCENTES'
-                                  : 'MODO AULA · DOCENTES',
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 10,
-                                fontWeight: FontWeight.w800,
-                                letterSpacing: 0.8,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      Icon(
-                        Icons.school_rounded,
-                        color: context.acento,
-                        size: 28,
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 10),
-                  Text(
-                    isGl
-                        ? 'Escolas infantís de Vigo'
-                        : 'Escuelas infantiles de Vigo',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: context.acento,
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    _subtitulo.resolve(_language),
-                    style: const TextStyle(
-                      fontSize: 13,
-                      color: Color(0xFF4A5568),
-                      height: 1.4,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  // Botón de Formación Docente
-                  TextButton.icon(
-                    key: const ValueKey('formacion_docente_portal'),
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        RutaLua(
-                          de: context,
-                          builder: (_) => FormacionScreen(
-                            onLanguageChanged: _handleLanguageChanged,
-                            perfil: PerfilFormacion.docente,
-                            language: _language,
-                          ),
-                        ),
-                      );
-                    },
-                    icon: Icon(Icons.school_rounded,
-                        size: 18, color: context.acento),
-                    label: Text(
-                      isGl
-                          ? 'Antes de entrar na aula · Guía de 2 min'
-                          : 'Antes de entrar en el aula · Guía de 2 min',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                        color: context.acento,
-                      ),
-                    ),
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.zero,
-                      minimumSize: const Size(0, 36),
-                      alignment: Alignment.centerLeft,
-                    ),
-                  ),
-                ],
+              NavigationDestination(
+                key: const Key('pestana_calendario'),
+                icon: const Icon(Icons.calendar_month_rounded),
+                label: NomesDocentes.calendario.resolve(lang),
               ),
-            ),
-            const SizedBox(height: 16.0),
-
-            // Hoxe na aula: las cinco palabras del día que toca, del curso.
-            if (programa != null) ...[
-              TarxetaHoxeNaAula(
-                programa: programa,
-                cursoId: _cursoHoxe,
-                onCambiarCurso: (c) => setState(() => _cursoHoxe = c),
-                language: _language,
-                audioService: widget.audioService,
-                onIniciarAsemblea: (d, c) =>
-                    _iniciarAsembleaDeHoxe(context, d, c),
-                onVerPalabras: () => _mostrarProxeccionAnual(context, programa),
-                // A sesión STEAM do curso, o día que lle toca: a docente
-                // atópaa aquí sen ir buscala ao portal.
-                steamDoDia: (curso, dia) =>
-                    steamDoDiaDoCurso(widget.repository, curso, dia),
-                onAbrirSteam: (unidade) => abrirSesionSteam(
-                  context,
-                  unidade: unidade,
-                  audiencia: SteamAudiencia.aula,
-                  language: _language,
-                  audioService: widget.audioService,
-                  onLanguageChanged: _handleLanguageChanged,
-                ),
+              NavigationDestination(
+                key: const Key('pestana_recursos'),
+                icon: const Icon(Icons.grid_view_rounded),
+                label: NomesDocentes.recursos.resolve(lang),
               ),
-              const SizedBox(height: 18.0),
-            ],
-
-            // ==========================================
-            // SECCIÓN 1: ASEMBLEA E AULA ACTIVA
-            // ==========================================
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 4.0),
-              child: Text(
-                isGl
-                    ? '1. ASEMBLEA E AULA ACTIVA (72 BPM)'
-                    : '1. ASAMBLEA Y AULA ACTIVA (72 BPM)',
-                style: const TextStyle(
-                  fontSize: 11.5,
-                  fontWeight: FontWeight.w800,
-                  color: AppTheme.textSecondary,
-                  letterSpacing: 1.0,
-                ),
-              ),
-            ),
-            const SizedBox(height: 10.0),
-
-            // 1. Juega con Lúa · Modo Aula
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Xoga con Lúa · Modo Aula'
-                  : 'Juega con Lúa · Modo Aula',
-              description: isGl
-                  ? 'Asambleas guiadas para 1.º Ciclo (0-2 e 2-3 anos) e 2.º Ciclo (4, 5 e 6 de Infantil), canción a pulso visual a 72 bpm, exploración sensorial e matemáticas temperás.'
-                  : 'Asambleas guiadas para 1.º Ciclo (0-2 y 2-3 años) y 2.º Ciclo (4, 5 y 6 de Infantil), canción a pulso visual a 72 bpm, exploración sensorial y matemáticas tempranas.',
-              icon: Icons.groups_rounded,
-              badge: isGl ? '1.º e 2.º Ciclo' : '1.º y 2.º Ciclo',
-              buttonText: isGl ? 'Entrar en Modo Aula' : 'Entrar en Modo Aula',
-              onTap: () {
-                Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => UnidadesListScreen(
-                      repository: widget.repository,
-                      premios: widget.premios,
-                      calendario: widget.calendario,
-                      audioService: widget.audioService,
-                      initialLanguage: _language,
-                      onLanguageChanged: _handleLanguageChanged,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 12.0),
-
-            // 2. Dinámicas de Aula Activa
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Dinámicas de Aula Activa'
-                  : 'Dinámicas de Aula Activa',
-              description: isGl
-                  ? 'Catálogo de dinámicas activas con roles, espazos, materiais e protocolo de avaliación cualitativa sen pantallas.'
-                  : 'Catálogo de dinámicas activas con roles, espacios, materiales y protocolo de evaluación cualitativa sin pantallas.',
-              icon: Icons.hub_rounded,
-              badge: isGl ? 'Aula Activa' : 'Aula Activa',
-              buttonText: isGl ? 'Explorar Dinámicas' : 'Explorar Dinámicas',
-              onTap: () {
-                Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => DinamicasScreen(
-                      onLanguageChanged: _handleLanguageChanged,
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 12.0),
-
-            // 3. STEAM · ciencia coas mans, na versión da aula
-            _buildDocenteModuleCard(
-              context: context,
-              title: SteamTextos.titulo.resolve(_language),
-              description: isGl
-                  ? 'Cinco sesións de ciencia con materiais reais, unha por curso: brando e duro, ramplas, son, sombras e un robot que programan as criaturas. Sen pantallas para elas.'
-                  : 'Cinco sesiones de ciencia con materiales reales, una por curso: blando y duro, rampas, sonido, sombras y un robot que programan las criaturas. Sin pantallas para ellas.',
-              icon: Icons.science_rounded,
-              badge: isGl ? '12 meses a 6 anos' : '12 meses a 6 años',
-              buttonText: isGl ? 'Abrir STEAM' : 'Abrir STEAM',
-              onTap: () {
-                Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => SteamHubScreen(
-                      repository: widget.repository,
-                      audioService: widget.audioService,
-                      initialLanguage: _language,
-                      onLanguageChanged: _handleLanguageChanged,
-                      audiencia: SteamAudiencia.aula,
-                      initialCursoId: _cursoHoxe,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 20.0),
-
-            // ==========================================
-            // SECCIÓN 2: PLANIFICACIÓN CURRICULAR E CALENDARIO
-            // ==========================================
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 4.0),
-              child: Text(
-                isGl
-                    ? '2. PLANIFICACIÓN CURRICULAR E CALENDARIO'
-                    : '2. PLANIFICACIÓN CURRICULAR Y CALENDARIO',
-                style: const TextStyle(
-                  fontSize: 11.5,
-                  fontWeight: FontWeight.w800,
-                  color: AppTheme.textSecondary,
-                  letterSpacing: 1.0,
-                ),
-              ),
-            ),
-            const SizedBox(height: 10.0),
-
-            // 3. Calendario Curricular de Aula: os seis anos, curso a curso
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Calendario Escola · Fogar'
-                  : 'Calendario Escuela · Hogar',
-              description: isGl
-                  ? 'O traxecto de 0 a 6 anos, curso a curso: cada curso cos seus meses por trimestres (Outono, Inverno e Primavera), asembleas na aula e notas de conexión para as familias.'
-                  : 'El trayecto de 0 a 6 años, curso a curso: cada curso con sus meses por trimestres (Otoño, Invierno y Primavera), asambleas en el aula y notas de conexión para las familias.',
-              icon: Icons.calendar_month_rounded,
-              badge: isGl
-                  ? 'De 0 a 6 anos · 5 cursos'
-                  : 'De 0 a 6 años · 5 cursos',
-              buttonText: isGl ? 'Ver Calendario' : 'Ver Calendario',
-              onTap: () {
-                Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => CalendarioScreen(
-                      store: widget.calendario ?? CalendarioStore(),
-                      initialLanguage: _language,
-                      onLanguageChanged: _handleLanguageChanged,
-                      repository: widget.repository,
-                      audioService: widget.audioService,
-                      premios: widget.premios,
-                      esDocenteInicial: true,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 12.0),
-
-            // 4. Planificador curricular
-            _buildDocenteModuleCard(
-              context: context,
-              title: 'Planificador curricular',
-              description: isGl
-                  ? 'Programación curricular completa dos 5 cursos de Educación Infantil (0 a 6 anos) con obxectivos e actividades baixo o Decreto 150/2022.'
-                  : 'Programación curricular completa de los 5 cursos de Educación Infantil (0 a 6 años) con objetivos y actividades bajo el Decreto 150/2022.',
-              icon: Icons.calendar_view_month_rounded,
-              badge: isGl ? '0-6 anos' : '0-6 años',
-              buttonText: isGl ? 'Abrir Planificador' : 'Abrir Planificador',
-              onTap: () {
-                Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => PlanificadorScreen(
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 20.0),
-
-            // ==========================================
-            // SECCIÓN 3: INMERSIÓN L3 E ESTRATEXIAS DOCENTES
-            // ==========================================
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 4.0),
-              child: Text(
-                isGl
-                    ? '3. INMERSIÓN L3 E ESTRATEXIAS DOCENTES'
-                    : '3. INMERSIÓN L3 Y ESTRATEGIAS DOCENTES',
-                style: const TextStyle(
-                  fontSize: 11.5,
-                  fontWeight: FontWeight.w800,
-                  color: AppTheme.textSecondary,
-                  letterSpacing: 1.0,
-                ),
-              ),
-            ),
-            const SizedBox(height: 10.0),
-
-            // 5. Inmersión en Inglés L3
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Inmersión en Inglés · L3'
-                  : 'Inmersión en Inglés · L3',
-              description: isGl
-                  ? 'As 4.000 palabras do traxecto, cinco novas ao día: consulta por curso e día, repaso espazado que se garda, escoita das frases do mes, colocacións e os 44 fonemas.'
-                  : 'Las 4.000 palabras del trayecto, cinco nuevas al día: consulta por curso y día, repaso espaciado que se guarda, escucha de las frases del mes, colocaciones y los 44 fonemas.',
-              icon: Icons.language_rounded,
-              badge: isGl
-                  ? '5 ao día · 4.000 palabras'
-                  : '5 al día · 4.000 palabras',
-              buttonText: isGl ? 'Entrar en Inglés L3' : 'Entrar en Inglés L3',
-              onTap: () {
-                Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => EnglishHubScreen(
-                      onLanguageChanged: _handleLanguageChanged,
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                      audioService: widget.audioService,
-                      // El curso que la docente ya eligió en «Hoxe na aula».
-                      cursoInicial: _cursoHoxe,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 12.0),
-
-            // 6. Estratexias Pedagóxicas
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Estratexias Pedagóxicas de Aula'
-                  : 'Estrategias Pedagógicas de Aula',
-              description: isGl
-                  ? '5 estratexias clave de aula: andamiaxe, modelado, tempo de espera de 5 segundos, expansión léxica e recast con diálogos reais.'
-                  : '5 estrategias clave de aula: andamiaje, modelado, tiempo de espera de 5 segundos, expansión léxica y recast con diálogos reales.',
-              icon: Icons.psychology_rounded,
-              badge: isGl ? 'Metodoloxía' : 'Metodología',
-              buttonText: isGl ? 'Ver Estratexias' : 'Ver Estrategias',
-              onTap: () {
-                Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => EstrategiasScreen(
-                      onLanguageChanged: _handleLanguageChanged,
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                    ),
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 12.0),
-
-            // 7. Vocabulario de uso habitual. Antes prometía «8.000 palabras»,
-            // «bandas 1k-8k» y «CEFR (A1-C2)»: son 3.995, de la banda 1k a la
-            // 4k, y el nivel no es del MCER (la propia pantalla lo dice).
-            _buildDocenteModuleCard(
-              context: context,
-              title: isGl
-                  ? 'Vocabulario de uso habitual'
-                  : 'Vocabulario de uso habitual',
-              description: isGl
-                  ? '3.995 palabras das máis frecuentes do inglés (bandas 1k-4k), con definición, frase e son.'
-                  : '3.995 palabras de las más frecuentes del inglés (bandas 1k-4k), con definición, frase y sonido.',
-              icon: Icons.format_list_numbered_rounded,
-              badge: isGl ? 'Inglés' : 'Inglés',
-              buttonText: isGl ? 'Abrir o vocabulario' : 'Abrir el vocabulario',
-              onTap: () {
-                Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => VocabularioInglesScreen(
-                      onLanguageChanged: _handleLanguageChanged,
-                      repository: widget.repository,
-                      initialLanguage: _language,
-                      audioService: widget.audioService,
-                    ),
-                  ),
-                );
-              },
-            ),
-
-            const SizedBox(height: 24.0),
-
-            // Garantía de Privacidade
-            Card(
-              color: const Color(0xFFEBE7D5),
-              elevation: 0,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12.0),
-                side: const BorderSide(color: Color(0xFFD3CEB8)),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.shield_rounded,
-                      color: context.acento,
-                      size: 24,
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        isGl
-                            ? 'Sen conexión e sen datos persoais. O único que se garda neste aparello é a túa propia conta de uso. Deseñado baixo o Decreto 150/2022.'
-                            : 'Sin conexión y sin datos personales. Lo único que se guarda en este aparato es tu propia cuenta de uso. Diseñado bajo el Decreto 150/2022.',
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: AppTheme.textSlate,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  /// La misma tarjeta de módulo que en el Portal Familias, con el acento de
-  /// este portal. Cada módulo traía su color —verde, mostaza, morado, azul—
-  /// y tres de esas etiquetas no pasaban AA; y el botón era relleno, así que
-  /// al bajar había dos principales a la vista.
-  Widget _buildDocenteModuleCard({
-    required BuildContext context,
-    required String title,
-    required String description,
-    required IconData icon,
-    required String badge,
-    required String buttonText,
-    required VoidCallback onTap,
-  }) {
-    return Card(
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  CircleAvatar(
-                    radius: 20,
-                    backgroundColor: context.acentoTint,
-                    child: Icon(icon, color: context.acento, size: 22),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          badge.toUpperCase(),
-                          style: TextStyle(
-                            fontSize: 10,
-                            fontWeight: FontWeight.w800,
-                            color: context.acento,
-                            letterSpacing: 0.6,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          title,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: AppTheme.textPrimary,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 10),
-              Text(
-                description,
-                style: const TextStyle(
-                  fontSize: 13,
-                  color: AppTheme.textSecondary,
-                  height: 1.4,
-                ),
-              ),
-              const SizedBox(height: 14),
-              SizedBox(
-                width: double.infinity,
-                child: OutlinedButton(
-                  onPressed: onTap,
-                  child: Text(
-                    buttonText,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ),
+              NavigationDestination(
+                key: const Key('pestana_eu'),
+                icon: const Icon(Icons.person_rounded),
+                label: NomesDocentes.eu.resolve(lang),
               ),
             ],
           ),

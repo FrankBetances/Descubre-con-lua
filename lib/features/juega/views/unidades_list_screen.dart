@@ -6,8 +6,6 @@ import '../../../data/repositories/content_repository.dart';
 import '../../premios/premios_repository.dart';
 import '../../calendario/views/calendario_screen.dart';
 import '../../calendario/widgets/calendario_do_curso.dart';
-import '../../premios/premios_model.dart';
-import '../../premios/widgets/lua_game_strip.dart';
 import '../../../data/models/unidad_model.dart';
 import '../widgets/aula_ciclo_panel.dart';
 import '../widgets/fichas_de_unidades.dart';
@@ -249,29 +247,6 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
     );
   }
 
-  /// O aula do 1.º ciclo: tramo de idade, mes, e a microcápsula do día.
-  /// La tira de Lúa: la mascota, el nivel de la maestra y su racha. Es el
-  /// núcleo del proyecto y se había perdido al rehacer esta pantalla.
-  Widget? _tiraDeLua() {
-    final premios = widget.premios;
-    if (premios == null) return null;
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(
-        AppTheme.spaceLg,
-        AppTheme.spaceMd,
-        AppTheme.spaceLg,
-        0,
-      ),
-      child: LuaGameStrip(
-        onLanguageChanged: _onToggleLanguage,
-        repository: premios,
-        perfil: Perfil.docente,
-        language: _language,
-        contadores: widget.calendario?.contadores,
-      ),
-    );
-  }
-
   /// El calendario del curso, DENTRO del aula. Un botón que lleva al
   /// calendario no es el calendario: la docente tiene que ver el mes que le
   /// toca sin salir de donde está.
@@ -382,7 +357,6 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
     return AulaPrimeiroCicloPanel(
       asambleas: widget.repository.getAllAsambleasPrimeiroCicloSync(),
       language: _language,
-      cabeceira: _tiraDeLua(),
       calendario: _calendarioDoAula,
       pe: _fichasDeUnidades(),
       progresionDe: widget.repository.getProgresionSync,
@@ -426,7 +400,6 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
     return AulaSegundoCicloPanel(
       asambleas: widget.repository.getAllAsambleasSegundoCicloSync(),
       language: _language,
-      cabeceira: _tiraDeLua(),
       calendario: _calendarioDoAula,
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,

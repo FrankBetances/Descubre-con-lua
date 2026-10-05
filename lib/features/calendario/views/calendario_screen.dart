@@ -66,6 +66,11 @@ class CalendarioScreen extends StatefulWidget {
   /// los diez meses y la guía viven en `assets/content/calendario/`, no aquí.
   final CalendarioContenido? contenido;
 
+  /// El párrafo que explica los dos lados. Como pestaña del Portal Docentes
+  /// va sin él: allí ocupaba cuatro líneas a 360 px y empujaba la tira de
+  /// meses por debajo del borde del marco.
+  final bool conIntroducion;
+
   const CalendarioScreen({
     super.key,
     required this.store,
@@ -79,6 +84,7 @@ class CalendarioScreen extends StatefulWidget {
     this.repository,
     this.audioService,
     this.premios,
+    this.conIntroducion = true,
   });
 
   @override
@@ -484,8 +490,10 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            _buildHeader(theme),
-                            const SizedBox(height: AppTheme.spaceMd),
+                            if (widget.conIntroducion) ...[
+                              _buildHeader(theme),
+                              const SizedBox(height: AppTheme.spaceMd),
+                            ],
                             _buildDobleEstimulacionCard(estadoHoy, theme),
                             const SizedBox(height: AppTheme.spaceMd),
                             _buildRoleSwitcher(theme),

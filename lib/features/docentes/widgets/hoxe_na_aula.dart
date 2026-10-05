@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
-import '../../calendario/widgets/palabras_do_dia.dart';
-import '../../juega/widgets/aula_ciclo_panel.dart';
-import '../../steam/widgets/steam_no_calendario.dart';
 
 /// El día del curso que toca: el de hoy, o el primero del curso en julio y
 /// agosto, que no son lectivos y en los que se prepara septiembre.
@@ -17,199 +13,37 @@ import '../../steam/widgets/steam_no_calendario.dart';
   return (dia: (mesCalendario: 9, semana: 1, dia: 1), prevista: true);
 }
 
-/// «Hoxe na aula»: las palabras inglesas del día que toca, en el curso del
-/// grupo que se elige arriba.
-///
-/// Antes esta tarjeta llevaba las palabras escritas en el widget, las mismas
-/// veinte todas las semanas del año y para todas las edades. Ahora el día sale
-/// de la fecha —con la misma regla que la asamblea del día— y las palabras, del
-/// curso del grupo en `assets/content/tpr/`: las de 0-2 no son las de 5-6.
-class TarxetaHoxeNaAula extends StatelessWidget {
-  final ProgramaTpr programa;
-
-  /// El curso del grupo elegido (`curso_0_2` … `curso_5_6`).
-  final String cursoId;
-  final ValueChanged<String> onCambiarCurso;
-  final AppLanguage language;
-  final OfflineAudioService? audioService;
-
-  /// Para los tests: el día que se quiere ver. Por defecto, hoy.
-  final DateTime? agora;
-
-  /// Abre la asamblea de ESE día para el grupo de ESE curso.
-  final void Function(DiaDoCursoTpr dia, String cursoId) onIniciarAsemblea;
-  final VoidCallback onVerPalabras;
-
-  /// La sesión STEAM que le toca a ESE curso ESE día, si le toca alguna. Sin
-  /// esto la tarjeta no la busca: la sesión solo se veía en el portal.
-  final SteamUnit? Function(String cursoId, DiaDoCursoTpr dia)? steamDoDia;
-
-  /// Abre la sesión STEAM del día, en su versión del aula.
-  final ValueChanged<SteamUnit>? onAbrirSteam;
-
-  const TarxetaHoxeNaAula({
-    super.key,
-    required this.programa,
-    required this.cursoId,
-    required this.onCambiarCurso,
-    required this.language,
-    required this.onIniciarAsemblea,
-    required this.onVerPalabras,
-    this.audioService,
-    this.agora,
-    this.steamDoDia,
-    this.onAbrirSteam,
+/// El día que toca, en casa y en el aula. De lunes a viernes, el de hoy; el
+/// fin de semana, el lunes; en julio y agosto, el primero de septiembre. Es la
+/// MISMA cuenta en los dos portales, para que casa y escuela hablen del mismo
+/// día.
+class DiaQueToca {
+  const DiaQueToca({
+    required this.dia,
+    required this.finDeSemana,
+    required this.prevista,
   });
 
-  @override
-  Widget build(BuildContext context) {
-    final isGl = language == AppLanguage.gl;
-    final hoxe = diaDoCursoParaHoxe(agora: agora);
-    final d = hoxe.dia;
-    final curso = programa.curso(cursoId);
-    final plan = curso?.planDoDia(d.mesCalendario, d.semana, d.dia);
-    if (curso == null || plan == null) return const SizedBox.shrink();
-    final mes = nomeDoMes[d.mesCalendario]!.resolve(language);
-    final steam = steamDoDia?.call(cursoId, d);
+  final DiaDoCursoTpr dia;
 
-    return Card(
-      key: const Key('tarxeta_hoxe_na_aula'),
-      elevation: 1,
-      clipBehavior: Clip.antiAlias,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-        side: BorderSide(color: context.acento, width: 1.5),
-      ),
-      color: context.acentoTint,
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  radius: 18,
-                  backgroundColor: context.acentoTint,
-                  child:
-                      Icon(Icons.bolt_rounded, color: context.acento, size: 22),
-                ),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        hoxe.prevista
-                            ? (isGl
-                                ? 'O PRIMEIRO DÍA DO CURSO · RITMO TPR'
-                                : 'EL PRIMER DÍA DEL CURSO · RITMO TPR')
-                            : (isGl
-                                ? 'HOXE NA AULA · RITMO TPR'
-                                : 'HOY EN EL AULA · RITMO TPR'),
-                        style: TextStyle(
-                          fontSize: 10.5,
-                          fontWeight: FontWeight.w800,
-                          color: context.acento,
-                          letterSpacing: 0.6,
-                        ),
-                      ),
-                      const SizedBox(height: 1),
-                      Text(
-                        '$mes · semana ${d.semana} · '
-                        '${curso.etiqueta.resolve(language)}',
-                        style: const TextStyle(
-                          fontSize: 14.5,
-                          fontWeight: FontWeight.bold,
-                          color: AppTheme.textPrimary,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            SelectorDeCursoTpr(
-              programa: programa,
-              seleccionado: cursoId,
-              language: language,
-              prefixoClave: 'hoxe_curso',
-              onCambiar: onCambiarCurso,
-            ),
-            const SizedBox(height: 10),
-            PalabrasDoDia(
-              plan: plan,
-              modeloDoDia: curso.modelo.dia(d.dia),
-              semana: curso.semana(d.mesCalendario, d.semana),
-              language: language,
-              audioService: audioService,
-              detalle: false,
-            ),
-            if (steam != null) ...[
-              const SizedBox(height: 12),
-              FilaSteamDoDia(
-                unidade: steam,
-                audiencia: SteamAudiencia.aula,
-                language: language,
-                onTap: onAbrirSteam == null ? null : () => onAbrirSteam!(steam),
-              ),
-            ],
-            const SizedBox(height: 12),
-            // Uno debajo del otro y a lo ancho: el principal arriba. En una
-            // fila, «Comenzar la asamblea» no cabía a 360 px y el botón
-            // principal se partía en dos líneas.
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                ElevatedButton.icon(
-                  key: const Key('boton_asemblea_de_hoxe'),
-                  onPressed: () => onIniciarAsemblea(d, cursoId),
-                  icon: const Icon(Icons.play_arrow_rounded, size: 20),
-                  // 16 px y márgenes de 16: con los 18 px y los 32 del tema
-                  // «Comenzar la asamblea» no cabía en una línea en 360 px.
-                  label: Text(
-                    isGl ? 'Comezar a asemblea' : 'Comenzar la asamblea',
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w800,
-                    ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
-                      vertical: 12,
-                    ),
-                    minimumSize: const Size(0, 52),
-                    shape: RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.circular(AppTheme.radiusButton),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 8),
-                OutlinedButton(
-                  key: const Key('boton_ver_palabras_do_curso'),
-                  onPressed: onVerPalabras,
-                  style: OutlinedButton.styleFrom(
-                    minimumSize: const Size(0, AppTheme.touchMin),
-                    shape: RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.circular(AppTheme.radiusButton),
-                    ),
-                  ),
-                  child: Text(
-                    isGl
-                        ? 'Ver as ${formatarMiles(programa.totalPalabras)} palabras'
-                        : 'Ver las ${formatarMiles(programa.totalPalabras)} palabras',
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
+  /// Hoy es sábado o domingo: lo que se enseña es el lunes.
+  final bool finDeSemana;
+
+  /// Julio o agosto: lo que se enseña es el primer día del curso.
+  final bool prevista;
+
+  bool get eHoxe => !finDeSemana && !prevista;
+
+  /// El mes del curso (1 es septiembre).
+  int get mesDoCurso => SteamDiaNoCalendario.mesDoCursoDe(dia.mesCalendario);
+
+  static DiaQueToca para({DateTime? agora}) {
+    final d = agora ?? DateTime.now();
+    final h = diaDoCursoParaHoxe(agora: d);
+    return DiaQueToca(
+      dia: h.dia,
+      finDeSemana: !h.prevista && d.weekday > 5,
+      prevista: h.prevista,
     );
   }
 }

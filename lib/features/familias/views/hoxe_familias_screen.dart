@@ -23,40 +23,6 @@ import '../nomes_familias.dart';
 import '../widgets/selector_idade.dart';
 import 'xogo_de_hoxe_screen.dart';
 
-/// El día de casa que toca. De lunes a viernes, el de hoy; el fin de semana,
-/// el lunes; en julio y agosto, el primero de septiembre. Es la MISMA cuenta
-/// que «Hoxe na aula», para que casa y escuela hablen del mismo día.
-class DiaQueToca {
-  const DiaQueToca({
-    required this.dia,
-    required this.finDeSemana,
-    required this.prevista,
-  });
-
-  final DiaDoCursoTpr dia;
-
-  /// Hoy es sábado o domingo: lo que se enseña es el lunes.
-  final bool finDeSemana;
-
-  /// Julio o agosto: lo que se enseña es el primer día del curso.
-  final bool prevista;
-
-  bool get eHoxe => !finDeSemana && !prevista;
-
-  /// El mes del curso (1 es septiembre).
-  int get mesDoCurso => SteamDiaNoCalendario.mesDoCursoDe(dia.mesCalendario);
-
-  static DiaQueToca para({DateTime? agora}) {
-    final d = agora ?? DateTime.now();
-    final h = diaDoCursoParaHoxe(agora: d);
-    return DiaQueToca(
-      dia: h.dia,
-      finDeSemana: !h.prevista && d.weekday > 5,
-      prevista: h.prevista,
-    );
-  }
-}
-
 /// «Hoxe», la portada de casa: lo que toca hoy, entero, en una pantalla.
 ///
 /// El juego de tres minutos con su título de casa y un solo botón, las

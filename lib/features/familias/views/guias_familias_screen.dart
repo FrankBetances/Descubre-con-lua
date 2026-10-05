@@ -7,6 +7,7 @@ import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../../core/widgets/fila_portal.dart';
 import '../../../data/models/formacion_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../academy/views/bloques_list_screen.dart';
@@ -125,7 +126,7 @@ class GuiasFamiliasScreen extends StatelessWidget {
             ),
             const SizedBox(height: 14),
             for (final (clave, icona, nome, di, abrir) in guias) ...[
-              _FilaGuia(
+              FilaPortal(
                 clave: clave,
                 icona: icona,
                 nome: nome.resolve(language),
@@ -135,81 +136,6 @@ class GuiasFamiliasScreen extends StatelessWidget {
               const SizedBox(height: 10),
             ],
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class _FilaGuia extends StatelessWidget {
-  const _FilaGuia({
-    required this.clave,
-    required this.icona,
-    required this.nome,
-    required this.di,
-    required this.onTap,
-  });
-
-  final String clave;
-  final IconData icona;
-  final String nome;
-  final String di;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-        side: const BorderSide(color: AppTheme.border),
-      ),
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        key: ValueKey(clave),
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(14),
-          child: Row(
-            children: [
-              Container(
-                width: 48,
-                height: 48,
-                decoration: BoxDecoration(
-                  color: context.acentoTint,
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                child: Icon(icona, color: context.acento, size: 26),
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      nome,
-                      style: const TextStyle(
-                        fontSize: 16.5,
-                        fontWeight: FontWeight.w800,
-                        color: AppTheme.textPrimary,
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      di,
-                      style: const TextStyle(
-                        fontSize: 14,
-                        color: AppTheme.textSecondary,
-                        height: 1.3,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const Icon(Icons.chevron_right_rounded,
-                  color: AppTheme.textSecondary),
-            ],
-          ),
         ),
       ),
     );

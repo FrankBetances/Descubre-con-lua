@@ -35,10 +35,9 @@ import 'package:descubre_con_lua/features/premios/premios_model.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/premios/premios_screen.dart';
 import 'package:descubre_con_lua/data/models/steam_model.dart';
-import 'package:descubre_con_lua/features/docentes/widgets/hoxe_na_aula.dart';
+import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_hub_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
-import 'package:descubre_con_lua/features/steam/widgets/steam_no_calendario.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dart';
 import 'package:descubre_con_lua/features/juega/widgets/circulo_do_dia.dart';
@@ -705,34 +704,32 @@ void main() {
       );
     });
 
-    // STEAM el día que le toca: «Hoxe na aula» el miércoles 9 de diciembre de
-    // 2026, con el grupo de 4-5 años. Es la fila que sale sola ese día.
+    // STEAM el día que le toca: «Hoxe», la portada de la docente, el
+    // miércoles 9 de diciembre de 2026, con el grupo de 4-5 años. La fila de
+    // ciencia sale sola ese día, debajo de la asamblea, las palabras, el
+    // cuento y la dinámica.
     testWidgets('steam · hoxe na aula · $l', (tester) async {
       await cursoTprLeido(tester);
+      // Lo que la pantalla lee de disco, leído antes: dentro del reloj falso
+      // una lectura no termina y la captura saldría sin cuento ni ciencia.
+      await tester.runAsync(() async {
+        await contenido.loadCuentos();
+        await contenido.loadDinamicas();
+        await contenido.loadSteamUnits();
+      });
       await capturar(
         tester,
         'steam-hoxe-na-aula-$l',
-        Scaffold(
-          backgroundColor: AppTheme.pageBg,
-          body: ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              TarxetaHoxeNaAula(
-                programa: contenido.programaTprSync!,
-                cursoId: 'curso_4_5',
-                onCambiarCurso: (_) {},
-                language: lang,
-                audioService: MockOfflineAudioService(),
-                agora: DateTime(2026, 12, 9),
-                onIniciarAsemblea: (_, __) {},
-                onVerPalabras: () {},
-                steamDoDia: (c, d) => steamDoDiaDoCurso(contenido, c, d),
-                onAbrirSteam: (_) {},
-              ),
-            ],
-          ),
+        HoxeDocentesScreen(
+          repository: contenido,
+          language: lang,
+          onLanguageChanged: (_) {},
+          cursoId: 'curso_4_5',
+          onCambiarCurso: (_) {},
+          audioService: MockOfflineAudioService(),
+          agora: DateTime(2026, 12, 9),
         ),
-        tamano: const Size(412, 780),
+        tamano: const Size(412, 1500),
       );
     });
 

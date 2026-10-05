@@ -250,10 +250,17 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.byType(PortalDocentesScreen), findsOneWidget);
-      await _ataVer(tester, find.text('Escolas infantís de Vigo'));
-      expect(find.text('Escolas infantís de Vigo'), findsOneWidget);
-      await _ataVer(tester, find.text('MODO AULA · DOCENTES'));
-      expect(find.text('MODO AULA · DOCENTES'), findsOneWidget);
+      // Abre en «Hoxe»: a asemblea do día, arriba e cun só botón.
+      expect(find.byKey(const Key('hoxe_aula_titulo')), findsOneWidget);
+      expect(find.byKey(const Key('pestanas_docentes')), findsOneWidget);
+      for (final p in ['Hoxe', 'Calendario', 'Recursos', 'Eu']) {
+        expect(
+            find.descendant(
+                of: find.byKey(const Key('pestanas_docentes')),
+                matching: find.text(p)),
+            findsOneWidget,
+            reason: p);
+      }
     });
   });
 
@@ -312,7 +319,7 @@ void main() {
 
   group('Portal Docentes Independente', () {
     testWidgets(
-        'amosa recursos de aula municipal a 72 bpm e planificador curricular',
+        'Recursos: os módulos agrupados polo que se vai facer, co planificador curricular',
         (tester) async {
       _pantallaDeTelefono(tester);
       await tester.pumpWidget(_wrap(
@@ -326,24 +333,39 @@ void main() {
         ),
       ));
       await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('pestana_recursos')));
+      await tester.pumpAndSettle();
 
-      await _ataVer(tester, find.text('Xoga con Lúa · Modo Aula'));
-      expect(find.text('Xoga con Lúa · Modo Aula'), findsOneWidget);
-      await _ataVer(tester, find.text('Planificador curricular'));
-      expect(find.text('Planificador curricular'), findsOneWidget);
+      // Os grupos din para que serven; antes eran «1. ASEMBLEA E AULA ACTIVA
+      // (72 BPM)», «3. INMERSIÓN L3…».
+      for (final g in [
+        'PARA A ASEMBLEA',
+        'PARA PLANIFICAR',
+        'INGLÉS',
+        'PARA SABER MÁIS',
+      ]) {
+        await _ataVer(tester, find.text(g));
+        expect(find.text(g), findsOneWidget, reason: g);
+      }
+      expect(find.textContaining('72 BPM'), findsNothing);
+      expect(find.textContaining('INMERSIÓN L3'), findsNothing);
+
+      for (final m in [
+        'Xoga con Lúa · Modo Aula',
+        'Dinámicas de aula',
+        'Ciencia coas mans',
+        'Planificador curricular',
+        'Palabras do curso',
+        'Inglés na aula',
+        'Vocabulario de uso habitual',
+        'Estratexias de aula',
+      ]) {
+        await _ataVer(tester, find.text(m));
+        expect(find.text(m), findsOneWidget, reason: m);
+      }
       // Frank: «solo deja planificador curricular, elimina donde dice 50 meses».
       expect(find.textContaining('50 Meses'), findsNothing);
       expect(find.textContaining('50 meses'), findsNothing);
-      await _ataVer(tester, find.text('Inmersión en Inglés · L3'));
-      expect(find.text('Inmersión en Inglés · L3'), findsOneWidget);
-      await _ataVer(tester, find.text('Estratexias Pedagóxicas de Aula'));
-      expect(find.text('Estratexias Pedagóxicas de Aula'), findsOneWidget);
-      await _ataVer(tester, find.text('Dinámicas de Aula Activa'));
-      expect(find.text('Dinámicas de Aula Activa'), findsOneWidget);
-      await _ataVer(tester, find.text('STEAM · Ciencia coas mans'));
-      expect(find.text('STEAM · Ciencia coas mans'), findsOneWidget);
-      await _ataVer(tester, find.text('Vocabulario de uso habitual'));
-      expect(find.text('Vocabulario de uso habitual'), findsOneWidget);
     });
   });
 

@@ -18,8 +18,8 @@ import '../../../core/navigation/ruta_lua.dart';
 /// se ganaban insignias que nadie veía. Una gamificación que no se ve no es
 /// gamificación, es un fichero JSON.
 ///
-/// Va en la lista de unidades (la maestra), en la lista de bloques (la familia)
-/// y dentro de la asamblea y del lector. Es la misma pieza en los cuatro
+/// Va en «Eu» (la maestra), en la lista de bloques (la familia) y dentro de la
+/// asamblea y del lector. Es la misma pieza en los cuatro
 /// sitios: si el nivel saliera distinto en dos pantallas, el número dejaría de
 /// significar nada.
 class LuaGameStrip extends StatelessWidget {

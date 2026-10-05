@@ -116,6 +116,9 @@ void main() {
     // (A1-C2)»: son 3.995, de la banda 1k a la 4k, y el nivel no es del MCER.
     testWidgets('sin 8.000, sin BNC/COCA y sin CEFR', (tester) async {
       await pintar(tester, portalDocentes(), tamano: const Size(400, 6000));
+      // Con L4 el vocabulario vive en la pestaña «Recursos».
+      await tester.tap(find.byKey(const Key('pestana_recursos')));
+      await tester.pumpAndSettle();
       expect(find.text('Vocabulario de uso habitual'), findsOneWidget);
       expect(find.textContaining('3.995 palabras'), findsOneWidget);
       for (final falso in ['8.000', 'BNC', 'CEFR']) {
@@ -127,6 +130,8 @@ void main() {
   group('M2 · «Xoga con Lúa» en la interfaz gallega', () {
     testWidgets('el Portal Docentes y la elección de portal', (tester) async {
       await pintar(tester, portalDocentes(), tamano: const Size(400, 6000));
+      await tester.tap(find.byKey(const Key('pestana_recursos')));
+      await tester.pumpAndSettle();
       expect(find.text('Xoga con Lúa · Modo Aula'), findsOneWidget);
       expect(find.textContaining('Juega con Lúa'), findsNothing);
 

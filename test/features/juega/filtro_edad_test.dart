@@ -64,6 +64,9 @@ void main() {
           ),
         );
         await tester.pumpAndSettle();
+        // Los filtros van plegados detrás del selector compacto: se abren.
+        await tester.tap(find.byKey(const ValueKey('selector_compacto_1c')));
+        await tester.pumpAndSettle();
 
         for (final tramo in TramoPrimeiroCiclo.values) {
           final clave = ValueKey('tramo_1c_$tramo');
@@ -114,9 +117,10 @@ void main() {
 
     // Arranca en 0-2, que es el primer tramo.
     expect(find.byKey(const ValueKey('tarxeta_fluxo_1c')), findsOneWidget);
+    // El selector compacto lo dice en su primera palabra.
     expect(
-      find.text(TramoPrimeiroCiclo.lactantes0a2.etiquetaCorta.gl),
-      findsWidgets,
+      tester.widget<Text>(find.byKey(const ValueKey('resumo_aula_1c'))).data,
+      startsWith(TramoPrimeiroCiclo.lactantes0a2.etiquetaCorta.gl),
     );
 
     // Al cambiar a 2-3, la tarjeta sigue siendo una sola y el material
@@ -130,6 +134,8 @@ void main() {
         .map((t) => t.data)
         .join('|');
 
+    await tester.tap(find.byKey(const ValueKey('selector_compacto_1c')));
+    await tester.pumpAndSettle();
     await tester.tap(
         find.byKey(ValueKey('tramo_1c_${TramoPrimeiroCiclo.deambulantes2a3}')));
     await tester.pumpAndSettle();

@@ -163,6 +163,9 @@ class TiraDeMeses extends StatelessWidget {
       child: ListView.separated(
         key: Key('tira_meses_$prefixoClave'),
         scrollDirection: Axis.horizontal,
+        // El mismo margen que el resto de la pantalla: sin él, la primera
+        // pastilla quedaba pegada al borde.
+        padding: const EdgeInsets.symmetric(horizontal: AppTheme.spaceLg),
         itemCount: mesesDoCurso.length,
         separatorBuilder: (_, __) => const SizedBox(width: AppTheme.spaceSm),
         itemBuilder: (context, i) {
