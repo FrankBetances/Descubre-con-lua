@@ -11,7 +11,6 @@ import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
-import 'package:descubre_con_lua/features/seleccion/seleccion_portal_screen.dart';
 
 import '../helpers/pasarela.dart';
 
@@ -91,22 +90,29 @@ void main() {
               '${barra.top}');
     });
 
-    testWidgets('la tarjeta de inicio nombra STEAM (${lang.code})',
+    // Con L5 el inicio ya no enumera módulos: son dos respuestas. STEAM se
+    // nombra donde vive, en Explorar, y en la línea de su fila.
+    testWidgets('Explorar dice que la ciencia es STEAM (${lang.code})',
         (tester) async {
       await pintar(
         tester,
-        SeleccionPortalScreen(
+        PortalFamiliasScreen(
           repository: repo,
           audioService: MockOfflineAudioService(),
           currentLanguage: lang,
           onToggleLanguage: () {},
+          calendario: store,
         ),
-        const Size(400, 4000),
+        const Size(360, 780),
       );
+      await tester.tap(find.byKey(const Key('pestana_explorar')));
+      await tester.pumpAndSettle();
       expect(
-          find.text(gl
-              ? 'Ciencia coas mans (STEAM): un xogo de ciencia por idade, con cousas da casa'
-              : 'Ciencia con las manos (STEAM): un juego de ciencia por edad, con cosas de casa'),
+          find.descendant(
+              of: find.byKey(const ValueKey('explorar_ciencia')),
+              matching: find.text(gl
+                  ? 'STEAM: un xogo por idade'
+                  : 'STEAM: un juego por edad')),
           findsOneWidget);
     });
   }

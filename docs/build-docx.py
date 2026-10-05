@@ -432,9 +432,15 @@ class Builder:
                             sp.paragraph_format.space_after = Pt(1)
                             self.runs(sp, subli)
             elif tag == 'section':
-                if 'page-break' in cls:
-                    self.doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
+                # El salto va como «salto antes» del primer párrafo de la
+                # sección, no como un párrafo con un salto dentro: cuando la
+                # sección anterior llena justo su página, ese párrafo caía
+                # solo en la siguiente y dejaba una página en blanco.
+                antes = len(self.doc.paragraphs)
                 self.walk(el)
+                if 'page-break' in cls and len(self.doc.paragraphs) > antes:
+                    primeiro = self.doc.paragraphs[antes]
+                    primeiro.paragraph_format.page_break_before = True
             elif tag in ('div', 'figure'):
                 self.walk(el)
 

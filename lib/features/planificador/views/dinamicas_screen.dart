@@ -5,6 +5,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/dinamica_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../docentes/nomes_docentes.dart';
 
 /// Catálogo de Dinámicas de Aula organizadas por día de la semana y pulso BPM.
 class DinamicasScreen extends StatefulWidget {
@@ -70,7 +71,7 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: 'Dinámicas de Aula',
+        titulo: NomesDocentes.dinamicas.resolve(lang),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),
@@ -161,8 +162,8 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                         // Procedemento
                         _buildSection(
                           title: lang == AppLanguage.gl
-                              ? 'Procedemento Paso a Paso'
-                              : 'Procedimiento Paso a Paso',
+                              ? 'Procedemento paso a paso'
+                              : 'Procedimiento paso a paso',
                           content: din.procedementoPasoAPaso.resolve(lang),
                           color: context.acento,
                         ),

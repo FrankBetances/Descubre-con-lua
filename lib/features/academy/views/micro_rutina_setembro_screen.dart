@@ -210,8 +210,8 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
                           const SizedBox(height: 10),
                           Text(
                             isGl
-                                ? 'A Escena Cotiá: «The Magic Coat Hook»'
-                                : 'La Escena Cotidiana: «The Magic Coat Hook»',
+                                ? 'A escena cotiá: «The Magic Coat Hook»'
+                                : 'La escena cotidiana: «The Magic Coat Hook»',
                             style: const TextStyle(
                               fontFamily: AppTheme.fontFamily,
                               fontSize: 18,
@@ -266,8 +266,8 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
                                 Expanded(
                                     child: Text(
                                   isGl
-                                      ? 'Aliñamento Curricular (Decreto 150/2022)'
-                                      : 'Alineamiento Curricular (Decreto 150/2022)',
+                                      ? 'Aliñamento curricular (Decreto 150/2022)'
+                                      : 'Alineamiento curricular (Decreto 150/2022)',
                                   style: TextStyle(
                                     fontFamily: AppTheme.fontFamily,
                                     fontSize: 14,

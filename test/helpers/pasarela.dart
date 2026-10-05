@@ -35,7 +35,6 @@ import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/docentes/views/eu_docente_screen.dart';
 import 'package:descubre_con_lua/features/docentes/views/recursos_docentes_screen.dart';
 import 'package:descubre_con_lua/features/english/views/collocations_screen.dart';
-import 'package:descubre_con_lua/features/english/views/english_hub_screen.dart';
 import 'package:descubre_con_lua/features/english/views/fsrs_trainer_screen.dart';
 import 'package:descubre_con_lua/features/english/views/listening_screen.dart';
 import 'package:descubre_con_lua/features/english/views/palabras_do_traxecto_screen.dart';
@@ -65,7 +64,6 @@ import 'package:descubre_con_lua/features/planificador/views/planificador_screen
 import 'package:descubre_con_lua/features/premios/premios_model.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/premios/premios_screen.dart';
-import 'package:descubre_con_lua/features/seleccion/seleccion_portal_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_hub_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
 
@@ -227,27 +225,17 @@ class Pasarela {
 
   List<PantallaDaApp> get pantallas => [
         // ------------------------------------------------------ común
-        // A primeira pantalla: leva a súa propia cabeceira de marca, co
-        // selector de lingua dentro.
+        // A primeira pantalla, o inicio: leva a súa propia cabeceira de
+        // marca, co selector de lingua dentro, e as dúas respostas.
         PantallaDaApp(
             'bienvenida',
             Portal.comun,
             (l) => WelcomeScreen(
                   currentLanguage: l,
                   onToggleLanguage: () {},
-                  onStart: () {},
+                  onCasa: () {},
+                  onEscola: () {},
                   onShowCredits: () {},
-                )),
-        PantallaDaApp(
-            'seleccion',
-            Portal.comun,
-            (l) => SeleccionPortalScreen(
-                  repository: contenido,
-                  audioService: audio,
-                  currentLanguage: l,
-                  onToggleLanguage: () {},
-                  premios: premios,
-                  calendario: store,
                 )),
         PantallaDaApp(
             'creditos', Portal.comun, (l) => CreditsScreen(currentLanguage: l)),
@@ -596,14 +584,6 @@ class Pasarela {
             Portal.docentes,
             (l) =>
                 PlanificadorScreen(repository: contenido, initialLanguage: l)),
-        PantallaDaApp(
-            'ingles',
-            Portal.docentes,
-            (l) => EnglishHubScreen(
-                  repository: contenido,
-                  initialLanguage: l,
-                  audioService: audio,
-                )),
         PantallaDaApp(
             'colocacions',
             Portal.docentes,

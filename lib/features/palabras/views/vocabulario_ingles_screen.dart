@@ -8,6 +8,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/corpus_palabra_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../docentes/nomes_docentes.dart';
 
 /// El vocabulario inglés de la app: las 4.000 palabras de uso habitual.
 ///
@@ -141,7 +142,7 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: 'Vocabulario',
+        titulo: NomesDocentes.vocabularioCabeceira.resolve(_language),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),

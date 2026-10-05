@@ -21,7 +21,7 @@ import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart';
 import 'package:descubre_con_lua/features/lectura/views/aprender_a_ler_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
-import 'package:descubre_con_lua/features/seleccion/seleccion_portal_screen.dart';
+import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
 import 'package:descubre_con_lua/core/brand/lamina_vector.dart';
 import 'package:descubre_con_lua/features/laminas/views/laminas_gallery_screen.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
@@ -210,22 +210,21 @@ void main() {
     for (final escala in [1.0, 1.8]) {
       final etiqueta = '${lang.code} a escala $escala';
 
-      testWidgets('a selección de portal cabe en $etiqueta', (tester) async {
+      testWidgets('o inicio cabe en $etiqueta', (tester) async {
         await pintar(
           tester,
-          SeleccionPortalScreen(
-            repository: repository,
-            premios: premios,
-            calendario: store,
-            audioService: audioService,
+          WelcomeScreen(
             currentLanguage: lang,
             onToggleLanguage: () {},
+            onCasa: () {},
+            onEscola: () {},
+            onShowCredits: () {},
           ),
           escala,
         );
         await recorrer(tester);
         expect(erroresDe(tester), isEmpty,
-            reason: 'A selección de portal desborda en $etiqueta.');
+            reason: 'O inicio desborda en $etiqueta.');
       });
 
       testWidgets('o Portal Familias cabe en $etiqueta', (tester) async {

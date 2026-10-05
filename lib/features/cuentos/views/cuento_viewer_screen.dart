@@ -516,7 +516,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                   SizedBox(width: 8),
                                   Expanded(
                                     child: Text(
-                                      'Reto Físico TPR (Inglés L3)',
+                                      'Reto físico TPR (inglés L3)',
                                       style: TextStyle(
                                         color: Color(0xFF2B6CB0),
                                         fontWeight: FontWeight.bold,

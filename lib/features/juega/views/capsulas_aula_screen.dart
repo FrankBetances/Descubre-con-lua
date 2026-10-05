@@ -13,6 +13,7 @@ import '../../premios/premios_repository.dart';
 import '../../premios/widgets/lua_game_strip.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../docentes/nomes_docentes.dart';
 
 /// «Formación · Aula»: las cápsulas que lee la maestra.
 ///
@@ -44,10 +45,7 @@ class CapsulasAulaScreen extends StatefulWidget {
     this.audioService,
   });
 
-  static const titulo = LocalizedString(
-    gl: 'Formación · Aula',
-    es: 'Formación · Aula',
-  );
+  static const titulo = NomesDocentes.formacionCabeceira;
 
   @override
   State<CapsulasAulaScreen> createState() => _CapsulasAulaScreenState();

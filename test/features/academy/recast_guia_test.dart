@@ -39,7 +39,7 @@ void main() {
       expect(find.textContaining('Convértese en exame'), findsOneWidget);
 
       // Positive indirect recast
-      expect(find.textContaining('Acompañar con Recast'), findsWidgets);
+      expect(find.textContaining('Acompañar con recast'), findsWidgets);
       expect(find.textContaining('Up on the hook, zip!'), findsOneWidget);
 
       // Time and place
@@ -101,14 +101,14 @@ void main() {
 
       // Everyday scene
       expect(
-          find.text('A Escena Cotiá: «The Magic Coat Hook»'), findsOneWidget);
+          find.text('A escena cotiá: «The Magic Coat Hook»'), findsOneWidget);
       expect(find.text('3-5 MINUTOS'), findsOneWidget);
 
       // Embedded RecastGuiaCard
       expect(find.byType(RecastGuiaCard), findsOneWidget);
 
       // Curricular alignment
-      expect(find.text('Aliñamento Curricular (Decreto 150/2022)'),
+      expect(find.text('Aliñamento curricular (Decreto 150/2022)'),
           findsOneWidget);
     });
 
@@ -131,7 +131,7 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('Micro-rutina'), findsOneWidget);
-      expect(find.text('La Escena Cotidiana: «The Magic Coat Hook»'),
+      expect(find.text('La escena cotidiana: «The Magic Coat Hook»'),
           findsOneWidget);
     });
   });

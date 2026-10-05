@@ -11,6 +11,8 @@ import 'medallas_widget.dart';
 import 'premios_model.dart';
 import 'premios_repository.dart';
 import '../../core/widgets/cabecera.dart';
+import '../docentes/nomes_docentes.dart';
+import '../familias/nomes_familias.dart';
 
 /// «Os premios de Lúa», con la estructura de la hoja de premios del proyecto anterior de la casa
 /// (`docs/screenshots/26-premios-insignias.png`): cabecera con la gata, nivel y
@@ -133,7 +135,10 @@ class _PremiosScreenState extends State<PremiosScreen> {
 
     return Scaffold(
       appBar: Cabecera(
-        titulo: 'Premios de Lúa',
+        titulo: (widget.perfilInicial == Perfil.familia
+                ? NomesFamilias.premios
+                : NomesDocentes.premios)
+            .resolve(lang),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),

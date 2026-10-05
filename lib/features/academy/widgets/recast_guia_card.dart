@@ -287,8 +287,8 @@ class RecastGuiaCard extends StatelessWidget {
                               children: [
                                 Text(
                                   isGl
-                                      ? 'Acompañar con Recast (Agarimo e movemento):'
-                                      : 'Acompañar con Recast (Afecto y movimiento):',
+                                      ? 'Acompañar con recast (agarimo e movemento):'
+                                      : 'Acompañar con recast (afecto y movimiento):',
                                   style: const TextStyle(
                                     fontFamily: AppTheme.fontFamily,
                                     fontSize: 12,

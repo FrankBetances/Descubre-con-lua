@@ -1,28 +1,39 @@
 import 'package:flutter/material.dart';
 
+import '../../core/brand/ilustracion_portal.dart';
 import '../../core/brand/lua_pixel.dart';
 import '../../core/localization/app_language.dart';
-import '../../core/localization/localized_string.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/paxina_sen_scroll.dart';
+import 'nomes_inicio.dart';
 
-/// Pantalla de bienvenida, con la estructura de la del proyecto anterior de la casa
-/// (`docs/screenshots/01-bienvenida.png`): fondo turquesa a sangre, círculos
-/// decorativos, la gata en una baldosa clara, el nombre, dos líneas de qué es
-/// esto, un botón grande y una línea de privacidad al pie.
+/// El inicio: la bienvenida y la elección de portal en una sola pantalla.
 ///
-/// El texto va en TINTA OSCURA, no en blanco como en el proyecto anterior de la casa: sobre el
-/// turquesa de marca el blanco da 2,18:1 y aquí esto se mira en un aula con
-/// ventanales. Ver `AppTheme.primaryInk`.
+/// Una pregunta, «Onde vas usala?», y dos respuestas grandes: «Na casa» y «Na
+/// escola». Dicen dónde se usa la app, no a quién pertenece. Antes había una
+/// bienvenida con un botón «Comezar» y, detrás, una elección de portal que
+/// ocupaba 2,4 pantallas: cada portal con su ilustración, cuatro viñetas y la
+/// guía de dos minutos, y el de la escuela por debajo del pliegue.
 ///
-/// No guarda que ya la viste, y es a propósito: guardar esa marca sería un
-/// campo persistido más que declarar en Play Console, y la app no guarda nada.
-/// Cuesta un toque por arranque.
+/// Conserva la estructura de la del proyecto anterior de la casa: fondo
+/// turquesa a sangre, círculos decorativos, la gata en una baldosa clara, el
+/// nombre y una línea de privacidad al pie. El texto va en TINTA OSCURA, no en
+/// blanco: sobre el turquesa de marca el blanco da 2,18:1 y aquí esto se mira
+/// en un aula con ventanales. Ver `AppTheme.primaryInk`.
+///
+/// No guarda la respuesta, y es a propósito: guardarla sería un dato más que
+/// declarar en Play Console, y la app no guarda nada de eso. Cuesta un toque
+/// por arranque.
 class WelcomeScreen extends StatelessWidget {
   final AppLanguage currentLanguage;
   final VoidCallback onToggleLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
-  final VoidCallback onStart;
+
+  /// «Na casa»: el Portal Familias.
+  final VoidCallback onCasa;
+
+  /// «Na escola»: el Portal Docentes.
+  final VoidCallback onEscola;
   final VoidCallback onShowCredits;
 
   const WelcomeScreen({
@@ -30,33 +41,10 @@ class WelcomeScreen extends StatelessWidget {
     required this.currentLanguage,
     required this.onToggleLanguage,
     this.onLanguageChanged,
-    required this.onStart,
+    required this.onCasa,
+    required this.onEscola,
     required this.onShowCredits,
   });
-
-  static const _claim = LocalizedString(
-    gl: 'A asemblea e a casa, na mesma lingua.',
-    es: 'La asamblea y la casa, en la misma lengua.',
-  );
-
-  static const _body = LocalizedString(
-    gl: 'Xoga con Lúa é para a mestra na asemblea. Academy é para as familias '
-        'na casa. Lúa acompaña ás dúas.',
-    es: 'Juega con Lúa es para la maestra en la asamblea. Academy es para las '
-        'familias en casa. Lúa acompaña a las dos.',
-  );
-
-  static const _start = LocalizedString(gl: 'Comezar', es: 'Comenzar');
-
-  static const _credits = LocalizedString(
-    gl: 'Quen fai isto',
-    es: 'Quién hace esto',
-  );
-
-  static const _privacy = LocalizedString(
-    gl: 'Sen datos, sen contas e sen conexión',
-    es: 'Sin datos, sin cuentas y sin conexión',
-  );
 
   @override
   Widget build(BuildContext context) {
@@ -112,19 +100,19 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          const SizedBox(height: AppTheme.spaceXl),
+                          const SizedBox(height: AppTheme.spaceMd),
                           Container(
-                            padding: const EdgeInsets.all(AppTheme.spaceLg),
+                            padding: const EdgeInsets.all(AppTheme.spaceMd),
                             decoration: BoxDecoration(
                               color: context.acentoTint,
-                              borderRadius: BorderRadius.circular(32),
+                              borderRadius: BorderRadius.circular(28),
                             ),
                             child: const LuaPixel(
                               pose: LuaPose.sit,
-                              size: 132,
+                              size: 96,
                             ),
                           ),
-                          const SizedBox(height: AppTheme.spaceXl),
+                          const SizedBox(height: AppTheme.spaceLg),
                           Text(
                             'Descubre con Lúa',
                             textAlign: TextAlign.center,
@@ -142,48 +130,59 @@ class WelcomeScreen extends StatelessWidget {
                                 .titleMedium
                                 ?.copyWith(color: AppTheme.dark),
                           ),
-                          const SizedBox(height: AppTheme.spaceXl),
-                          Text(
-                            _claim.resolve(currentLanguage),
-                            textAlign: TextAlign.center,
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleLarge
-                                ?.copyWith(color: AppTheme.dark),
-                          ),
-                          const SizedBox(height: AppTheme.spaceMd),
-                          Text(
-                            _body.resolve(currentLanguage),
-                            textAlign: TextAlign.center,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium
-                                ?.copyWith(color: AppTheme.dark),
-                          ),
-                          const SizedBox(height: AppTheme.spaceXl),
+                          const SizedBox(height: AppTheme.spaceLg),
                         ],
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          ElevatedButton(
-                            onPressed: onStart,
-                            // Sobre la página turquesa de marca, todo en tinta
-                            // oscura: el turquesa oscuro encima se quedaba en
-                            // 2,37:1.
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
-                              foregroundColor: AppTheme.dark,
+                          // La pregunta va pegada a sus respuestas.
+                          Semantics(
+                            header: true,
+                            child: Text(
+                              NomesInicio.pregunta.resolve(currentLanguage),
+                              key: const Key('inicio_pregunta'),
+                              textAlign: TextAlign.center,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleLarge
+                                  ?.copyWith(color: AppTheme.dark),
                             ),
-                            child: Text(_start.resolve(currentLanguage)),
                           ),
-                          const SizedBox(height: AppTheme.spaceSm),
+                          const SizedBox(height: AppTheme.spaceMd),
+                          // Dos respuestas del mismo peso: ninguna es la
+                          // principal, así que ninguna es un botón relleno.
+                          _Resposta(
+                            clave: 'inicio_na_casa',
+                            nome: NomesInicio.casa.resolve(currentLanguage),
+                            di: NomesInicio.casaDi.resolve(currentLanguage),
+                            acento: AppTheme.familias,
+                            ilustracion: const IlustracionFamilia(
+                              width: 226,
+                              height: 100,
+                            ),
+                            onTap: onCasa,
+                          ),
+                          const SizedBox(height: AppTheme.spaceMd),
+                          _Resposta(
+                            clave: 'inicio_na_escola',
+                            nome: NomesInicio.escola.resolve(currentLanguage),
+                            di: NomesInicio.escolaDi.resolve(currentLanguage),
+                            acento: AppTheme.docentes,
+                            ilustracion: const IlustracionEscola(
+                              width: 226,
+                              height: 100,
+                            ),
+                            onTap: onEscola,
+                          ),
+                          const SizedBox(height: AppTheme.spaceMd),
                           TextButton(
                             onPressed: onShowCredits,
                             style: TextButton.styleFrom(
                               foregroundColor: AppTheme.dark,
                             ),
-                            child: Text(_credits.resolve(currentLanguage)),
+                            child: Text(NomesInicio.quenFaiIsto
+                                .resolve(currentLanguage)),
                           ),
                           const SizedBox(height: AppTheme.spaceXs),
                           Row(
@@ -197,7 +196,8 @@ class WelcomeScreen extends StatelessWidget {
                               const SizedBox(width: AppTheme.spaceXs),
                               Flexible(
                                 child: Text(
-                                  _privacy.resolve(currentLanguage),
+                                  NomesInicio.privacidade
+                                      .resolve(currentLanguage),
                                   style: Theme.of(context)
                                       .textTheme
                                       .bodySmall
@@ -215,6 +215,101 @@ class WelcomeScreen extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Una de las dos respuestas del inicio: la ilustración de su sitio, el
+/// nombre en el color de su portal y una línea de qué hay dentro.
+class _Resposta extends StatelessWidget {
+  const _Resposta({
+    required this.clave,
+    required this.nome,
+    required this.di,
+    required this.acento,
+    required this.ilustracion,
+    required this.onTap,
+  });
+
+  final String clave;
+  final String nome;
+  final String di;
+  final Color acento;
+  final Widget ilustracion;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    // La etiqueta agrupa nombre y línea, y por eso excluye a los hijos: con
+    // ellos se iría también la acción de pulsar del InkWell. Va aquí, o
+    // TalkBack anuncia el botón y el doble toque no hace nada.
+    return Semantics(
+      button: true,
+      label: '$nome. $di',
+      onTap: onTap,
+      excludeSemantics: true,
+      child: Material(
+        color: Colors.white,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          key: ValueKey(clave),
+          onTap: onTap,
+          child: Padding(
+            padding: const EdgeInsets.all(AppTheme.spaceSm),
+            child: Row(
+              children: [
+                // La escena entera, a escala y recortada al centro: dibujada
+                // para el ancho de una tarjeta, aquí va en miniatura.
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                  child: SizedBox(
+                    width: 92,
+                    height: 76,
+                    child: FittedBox(
+                      fit: BoxFit.cover,
+                      child: ilustracion,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: AppTheme.spaceMd),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        nome,
+                        style: TextStyle(
+                          fontFamily: AppTheme.fontFamily,
+                          fontSize: 21,
+                          fontWeight: FontWeight.w800,
+                          color: acento,
+                          height: 1.15,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        di,
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontFamily,
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600,
+                          color: AppTheme.textPrimary,
+                          height: 1.3,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(Icons.chevron_right_rounded, color: acento, size: 28),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

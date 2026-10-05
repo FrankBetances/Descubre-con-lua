@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:descubre_con_lua/main.dart' show DescubreConLuaApp;
+
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/core/widgets/cabecera.dart';
@@ -89,7 +91,7 @@ void main() {
         // cerca de la vista, así que mirar solo al abrir dejaba sin revisar
         // todo lo que hay debajo del pliegue. Pasó: el Portal Docentes tenía
         // un segundo botón relleno tres pantallas más abajo.
-        final maximo = def.nome == 'seleccion' ? 2 : 1;
+        const maximo = 1;
         final principal = _principal(tester);
         var desprazado = 0.0;
         for (var paso = 0; paso < 40; paso++) {
@@ -121,10 +123,13 @@ void main() {
     tester.view.physicalSize = const Size(360, 780);
     tester.view.devicePixelRatio = 1.0;
     addTearDown(tester.view.reset);
-    final inicio = p.pantallas.firstWhere((e) => e.nome == 'seleccion');
-    await tester.pumpWidget(MaterialApp(
-      theme: AppTheme.lightTheme,
-      home: inicio.construir(AppLanguage.gl),
+    // La app de verdad, con sus rutas: el color de cada portal lo pone la
+    // ruta que lo abre, no la pantalla.
+    await tester.pumpWidget(DescubreConLuaApp(
+      contentRepository: p.contenido,
+      premiosRepository: p.premios,
+      calendarioStore: p.store,
+      audioService: p.audio,
     ));
     await Pasarela.asentar(tester);
 
@@ -138,9 +143,8 @@ void main() {
               .backgroundColor!;
     }
 
-    // Inicio → Portal Familias: naranja.
-    await tester.ensureVisible(find.text('Entrar no Portal Familias'));
-    await tester.tap(find.text('Entrar no Portal Familias'));
+    // Inicio → Na casa: naranja.
+    await tester.tap(find.byKey(const ValueKey('inicio_na_casa')));
     await Pasarela.asentar(tester);
     expect(cabecera(), AppTheme.familias);
 
@@ -165,8 +169,7 @@ void main() {
       await tester.tap(find.byKey(const ValueKey('boton_atras')).last);
       await Pasarela.asentar(tester);
     }
-    await tester.ensureVisible(find.text('Entrar no Portal Docentes'));
-    await tester.tap(find.text('Entrar no Portal Docentes'));
+    await tester.tap(find.byKey(const ValueKey('inicio_na_escola')));
     await Pasarela.asentar(tester);
     expect(cabecera(), AppTheme.docentes);
   });
@@ -366,11 +369,10 @@ Future<List<String>> _revisarVista(WidgetTester tester, String nome,
 
     e.renderObject?.visitChildren(mirar);
   }
-  // La elección de portal pinta cada puerta con su acento; el reproductor es
-  // la sesión a pantalla completa sobre fondo oscuro, con un turquesa claro
-  // que sí pasa ahí; y la bienvenida es la página de marca, turquesa, con el
-  // botón en blanco. El contraste se mide igual.
-  if (!{'seleccion', 'reprodutor', 'bienvenida'}.contains(nome)) {
+  // El reproductor es la sesión a pantalla completa sobre fondo oscuro, con
+  // un turquesa claro que sí pasa ahí; y el inicio es la página de marca,
+  // turquesa, con las dos respuestas en blanco. El contraste se mide igual.
+  if (!{'reprodutor', 'bienvenida'}.contains(nome)) {
     for (final e in principales) {
       final material = tester.widget<Material>(find
           .descendant(

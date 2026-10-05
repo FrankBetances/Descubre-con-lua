@@ -420,12 +420,12 @@ void main() {
       await tester.pumpAndSettle();
 
       // Verify dialog is shown
-      expect(find.text('Saír da Asemblea?'), findsOneWidget);
-      expect(find.text('Continuar Asemblea'), findsOneWidget);
+      expect(find.text('Saír da asemblea?'), findsOneWidget);
+      expect(find.text('Continuar a asemblea'), findsOneWidget);
       expect(find.text('Saír'), findsOneWidget);
 
       // Cancel exit
-      await tester.tap(find.text('Continuar Asemblea'));
+      await tester.tap(find.text('Continuar a asemblea'));
       await tester.pumpAndSettle();
 
       // Still on backstage screen
@@ -454,7 +454,7 @@ void main() {
           find.byKey(const ValueKey('backstage_next_phase_button'));
 
       expect(tester.widget<OutlinedButton>(prevFinder).onPressed, isNull);
-      expect(find.text('Seguinte Fase'), findsOneWidget);
+      expect(find.text('Seguinte fase'), findsOneWidget);
 
       // Advance to Phase 2 with next button
       await tester.tap(nextFinder);
@@ -492,10 +492,10 @@ void main() {
       // Verify dedicated finish dialog appears
       expect(find.text('Rematar a asemblea matinal?'), findsOneWidget);
       expect(find.text('Rematar e saír'), findsOneWidget);
-      expect(find.text('Continuar na Asemblea'), findsOneWidget);
+      expect(find.text('Continuar na asemblea'), findsOneWidget);
 
       // Cancel finish
-      await tester.tap(find.text('Continuar na Asemblea'));
+      await tester.tap(find.text('Continuar na asemblea'));
       await tester.pumpAndSettle();
 
       // Still on backstage screen

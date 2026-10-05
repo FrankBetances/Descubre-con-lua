@@ -34,6 +34,8 @@ class SelectorIdade extends StatelessWidget {
       label: paraAula
           ? 'Grupo: $idade. Cambiar'
           : (isGl ? 'Idade: $idade. Cambiar' : 'Edad: $idade. Cambiar'),
+      // Excluir a los hijos quita también la acción del InkWell.
+      onTap: () => _abrir(context),
       excludeSemantics: true,
       child: Material(
         color: Colors.white,

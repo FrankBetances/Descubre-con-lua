@@ -10,6 +10,7 @@ import 'lamina_detail_screen.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../nome_categoria.dart';
+import '../../familias/nomes_familias.dart';
 
 /// Galería y catálogo de las 200+ Láminas Didácticas Ilustradas.
 class LaminasGalleryScreen extends StatefulWidget {
@@ -95,7 +96,7 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: 'Banco de Láminas',
+        titulo: NomesFamilias.laminas.resolve(lang),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),

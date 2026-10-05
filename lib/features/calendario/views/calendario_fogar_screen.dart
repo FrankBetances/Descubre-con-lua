@@ -877,7 +877,7 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                         SizedBox(width: 6),
                         Expanded(
                           child: Text(
-                            'Acción TPR en Inglés',
+                            'Acción TPR en inglés',
                             style: TextStyle(
                               fontSize: 11,
                               fontWeight: FontWeight.bold,
@@ -967,8 +967,8 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                       Expanded(
                         child: Text(
                           isGl
-                              ? 'Conexión coa Escola Infantil'
-                              : 'Conexión con la Escuela Infantil',
+                              ? 'Conexión coa escola infantil'
+                              : 'Conexión con la escuela infantil',
                           // #C05621 daba 4,49:1 sobre este fondo; el ámbar
                           // de la casa pasa AA.
                           style: const TextStyle(

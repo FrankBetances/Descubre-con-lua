@@ -26,7 +26,7 @@ import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dart';
 import 'package:descubre_con_lua/features/lectura/views/aprender_a_ler_screen.dart';
-import 'package:descubre_con_lua/features/seleccion/seleccion_portal_screen.dart';
+import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
 
 /// Lote L0 de la revisión de interfaz: los errores que una familia o una
 /// docente ven hoy. Un test por error, que falla con el código de antes.
@@ -128,28 +128,28 @@ void main() {
   });
 
   group('M2 · «Xoga con Lúa» en la interfaz gallega', () {
-    testWidgets('el Portal Docentes y la elección de portal', (tester) async {
+    testWidgets('el Portal Docentes y el inicio', (tester) async {
       await pintar(tester, portalDocentes(), tamano: const Size(400, 6000));
       await tester.tap(find.byKey(const Key('pestana_recursos')));
       await tester.pumpAndSettle();
       expect(find.text('Xoga con Lúa · Modo Aula'), findsOneWidget);
       expect(find.textContaining('Juega con Lúa'), findsNothing);
 
+      // El inicio en gallego: ni «Juega con Lúa» ni «asambleas».
       await pintar(
         tester,
-        SeleccionPortalScreen(
-          repository: repo,
-          audioService: MockOfflineAudioService(),
+        WelcomeScreen(
           currentLanguage: AppLanguage.gl,
           onToggleLanguage: () {},
+          onCasa: () {},
+          onEscola: () {},
+          onShowCredits: () {},
         ),
-        tamano: const Size(400, 4000),
+        tamano: const Size(400, 900),
       );
       expect(find.textContaining('Juega con Lúa'), findsNothing);
-      // «asambleas» es castellano dentro de la frase gallega.
       expect(find.textContaining('asambleas'), findsNothing);
-      expect(find.textContaining('Xoga con Lúa: asembleas guiadas'),
-          findsOneWidget);
+      expect(find.text('A asemblea de cada día'), findsOneWidget);
     });
   });
 

@@ -116,8 +116,8 @@ class PasoOpeningWidget extends StatelessWidget {
                     children: [
                       Text(
                         isGl
-                            ? 'Sinal Sonoro de Transición (Cue)'
-                            : 'Señal Sonora de Transición (Cue)',
+                            ? 'Sinal sonoro de transición (cue)'
+                            : 'Señal sonora de transición (cue)',
                         style: const TextStyle(
                           fontFamily: AppTheme.fontFamily,
                           fontSize: 13,

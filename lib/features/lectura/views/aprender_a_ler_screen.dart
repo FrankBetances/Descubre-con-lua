@@ -10,6 +10,7 @@ import '../../../data/models/lectura_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../../core/widgets/que_observar.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../familias/nomes_familias.dart';
 
 /// Hub Integral de Aprender a Ler, Fónica e Alfabetización Temperá Manipulativa.
 ///
@@ -104,7 +105,7 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: isGl ? 'Aprender a Ler' : 'Aprender a Leer',
+        titulo: NomesFamilias.ler.resolve(lang),
         language: _language,
         onLanguageChanged: _cambiarLingua,
         bottom: TabBar(
@@ -115,11 +116,11 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
           tabs: [
             Tab(
                 text: isGl
-                    ? '1. Conciencia Fonolóxica'
-                    : '1. Conciencia Fonológica'),
+                    ? '1. Conciencia fonolóxica'
+                    : '1. Conciencia fonológica'),
             Tab(text: isGl ? '2. Mesa Alphabot' : '2. Mesa Alphabot'),
             Tab(text: isGl ? '3. Cubos CVC' : '3. Cubos CVC'),
-            Tab(text: isGl ? '4. Pares Mínimos' : '4. Pares Mínimos'),
+            Tab(text: isGl ? '4. Pares mínimos' : '4. Pares mínimos'),
           ],
         ),
       ),

@@ -11,7 +11,6 @@ import '../../premios/premios_repository.dart';
 import '../../premios/widgets/lua_game_strip.dart';
 import '../widgets/academy_header.dart';
 import 'capsula_detail_screen.dart';
-import 'guia_atencion_screen.dart';
 import 'micro_rutina_setembro_screen.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../calendario/views/calendario_screen.dart';
@@ -19,6 +18,7 @@ import '../../calendario/widgets/calendario_do_curso.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../familias/nomes_familias.dart';
 
 /// Los 5 bloques de desarrollo de «Academy · Familias».
 ///
@@ -66,8 +66,6 @@ class BloquesListScreen extends StatefulWidget {
 
 class _BloquesListScreenState extends State<BloquesListScreen> {
   late AppLanguage _language;
-
-  static const _kicker = LocalizedString(gl: 'ACADEMY', es: 'ACADEMY');
 
   static const _titulo = LocalizedString(
     gl: 'Os 5 bloques de desenvolvemento',
@@ -139,7 +137,7 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
 
     return Scaffold(
       appBar: Cabecera(
-        titulo: 'Academy',
+        titulo: NomesFamilias.guiasFamiliaCabeceira.resolve(_language),
         language: _language,
         onLanguageChanged: _onToggleLanguage,
       ),
@@ -156,7 +154,8 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 AcademyHeader(
-                  kicker: _kicker.resolve(lang),
+                  kicker:
+                      NomesFamilias.guiasFamilia.resolve(lang).toUpperCase(),
                   titulo: _titulo.resolve(lang),
                   subtitulo: _subtitulo.resolve(lang),
                 ),
@@ -182,33 +181,10 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
                         ),
                         const SizedBox(height: AppTheme.spaceXl),
                       ],
-                      // Acceso destacado a la Guía de Atención y al Calendario
-                      AcademyCard(
-                        icono: Icons.record_voice_over_rounded,
-                        kicker: lang == AppLanguage.gl
-                            ? 'O INGLÉS NA CASA'
-                            : 'EL INGLÉS EN CASA',
-                        titulo: lang == AppLanguage.gl
-                            ? 'Guía de inglés na casa'
-                            : 'Guía de inglés en casa',
-                        descripcion: lang == AppLanguage.gl
-                            ? 'Canto dura o xogo segundo a idade, tres regras para a casa e a pronuncia de cada frase.'
-                            : 'Cuánto dura el juego según la edad, tres reglas para casa y la pronunciación de cada frase.',
-                        meta: lang == AppLanguage.gl
-                            ? 'Guía interactiva'
-                            : 'Guía interactiva',
-                        onTap: () => Navigator.of(context).push(
-                          RutaLua(
-                            de: context,
-                            builder: (context) => GuiaAtencionScreen(
-                              initialLanguage: _language,
-                              onLanguageChanged: _onToggleLanguage,
-                              audioService: widget.audioService,
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: AppTheme.spaceMd),
+                      // La guía de inglés en casa ya no va aquí: tiene su fila
+                      // en Guías, justo al lado de esta lista. Dos puertas al
+                      // mismo sitio con dos nombres hacían dudar de si eran lo
+                      // mismo.
                       // El calendario, DENTRO de Academy. Era una tarjeta que
                       // llevaba a otra pantalla; una tarjeta que lleva al
                       // calendario no es el calendario. La familia ve aquí el mes

@@ -9,6 +9,153 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L5 de la revisión de interfaz: un inicio, los nombres en JSON y una puerta por destino (5/10/2026)
+
+Rama `claude/ux-l5`, que se integra en `main` por pull request después de L4.
+
+Qué cambia en pantalla:
+
+- **El inicio es una sola pantalla (M5).** Lleva una pregunta, «Onde vas
+  usala?», y dos respuestas grandes, cada una con su dibujo: «Na casa» abre el
+  Portal Familias y «Na escola», el Portal Docentes. Antes había una
+  bienvenida con «Comezar» y, detrás, una elección de portal de 2,4 pantallas.
+  De abrir la app a «Comezar a asemblea» hay dos toques. La respuesta no se
+  guarda.
+- **Una puerta por destino.**
+  - El inglés del aula va por partes en Recursos: Palabras do curso, O
+    repaso, Frases do curso, Colocacións, Sons do inglés y Vocabulario de uso
+    habitual. Antes estaban detrás de «Inglés na aula», que repetía dos de
+    ellas y decía «4.000 palabras de uso habitual» donde son 3.995.
+  - La guía de inglés en casa ya no se repite dentro de «Guías para a
+    familia»: tiene su fila en Guías, al lado.
+  - El calendario se queda dentro del Modo Aula y de «Guías para a familia».
+    Ahí fue una orden expresa («el calendario, DENTRO de los tres modos»), y
+    una orden pesa más que la regla general.
+- **Cada puerta abre una pantalla que se llama como ella.** La puerta ya
+  llevaba el nombre nuevo, pero la pantalla seguía con el viejo:
+  «Guías para a familia» abría «Academy»; «Sons do inglés», «Phonix Quest»;
+  «Láminas», «Banco de Láminas»; «Ler xogando», «Aprender a Ler»; «Xogos de
+  movemento», «Xogos na casa»; «O repaso», «Repaso espazado»; «Frases do
+  curso», «Escoita as frases»; «Os teus premios», «Premios de Lúa»;
+  «Formación na aula», «Formación · Aula». Ahora la cabecera lleva el nombre
+  de la puerta o, si no cabe entero a 360 px, su comienzo: «Guías», «Xogos»,
+  «Planificador», «Vocabulario», «Antes de entrar». «Ciencia coas mans» se
+  titula «Ciencia · STEAM»: en castellano no cabe entero, y así la cabecera
+  conserva la palabra con la que se pidió el módulo. El antetítulo de las
+  guías decía «ACADEMY» y ahora dice «GUÍAS PARA A FAMILIA».
+- **Rótulos con mayúscula solo al principio.** Son 56 cadenas de botones,
+  pestañas, diálogos y cabeceras de sección, en gl y es: «Seguinte fase»,
+  «Saír da asemblea?», «Continuar a asemblea», «Aliñamento curricular», «1.º
+  ciclo (0-3 anos)», «Todos os cursos», «Pares mínimos», «Guía de
+  articulación para docentes e nais/pais»… El recuento es el de las cadenas
+  de `lib/` que, frente a `main`, solo cambian de mayúsculas. Además, el
+  repaso decía «Hoxe: Luns, semana 1 de Outubro» y ahora dice «Hoxe: luns,
+  semana 1 de outubro». Los títulos de contenido no se tocan.
+
+Lo que no se ve, y por qué importa:
+
+- **Los nombres de los portales viven en JSON.** La fuente es
+  `assets/content/nomes/nomes_portais.json`: el inicio y los dos portales
+  —pestañas, grupos, módulos y su línea—, en gl y es. `tools/xera_nomes.py`
+  escribe con él los tres ficheros Dart de nombres. Un gate nuevo, «portal
+  names come from their JSON», falla si el Dart no sale del JSON. Así el texto
+  se cambia en un solo sitio y la app no lee nada del disco al abrir cada
+  pantalla. Cuando un nombre no cabe en la cabecera de su pantalla, la
+  entrada lleva también su forma corta (`cabeceira`), y sale del mismo JSON.
+- **TalkBack ya puede pulsar cuatro controles. Era un fallo mío, de L2 a
+  L5.** El selector GL/ES de todas las cabeceras (L2), el de la edad en casa
+  (L3), el selector del aula (L4) y las dos respuestas del inicio (L5)
+  agrupaban su etiqueta excluyendo a los hijos, y con los hijos se iba la
+  acción de pulsar: TalkBack decía «botón» y el doble toque no hacía nada.
+  Lo encontré al releer el diff de este lote. Ahora la acción va en la
+  etiqueta. El test hace lo mismo que TalkBack —pulsa por la acción del
+  nodo, no tocando la pantalla— y falla con el código de antes en los cuatro.
+
+El manual:
+
+- Reescritas las secciones 1, 3, 4, 5, 6, 7, 8 y 9 para la app de ahora: el
+  inicio, los dos portales con sus pestañas, el Modo Aula con su selector, las
+  guías para la familia y el inglés por partes.
+- Lleva 20 pantallas en gl y es, 40 imágenes. Se regeneraron con
+  `test/capturas_test.dart`, una a una, las 54 que escribe ese test, entre
+  ellas las 40 del manual. Cuatro pantallas son nuevas: Hoy y Explorar de
+  casa, y Hoy y Recursos de la escuela.
+- **Las pantallas de casa salían en el verde de la escuela. Fallo mío, de
+  L2.** L2 dio a cada portal su color, pero el test de capturas pintaba todas
+  las pantallas con el tema de la escuela: las guías para la familia, el
+  lector de cápsulas, la sesión STEAM de casa, la guía de inglés en casa y el
+  calendario del lado de la familia. Ahora cada captura lleva el tema de su
+  portal, como en la app.
+- El PDF y el Word se reconstruyen desde el HTML, y se miraron paginados:
+  las 30 páginas A4 de cada uno en hojas de contactos (el PDF con
+  `pdftoppm`; el Word, convertido a PDF con LibreOffice), y a tamaño de
+  lectura las del inicio, el Portal Docentes y el Modo Aula. Ninguna figura,
+  tabla ni recuadro se sale de la hoja.
+- El Word dejaba la página 5 en blanco: la sección 3 llenaba justo la página
+  4 y el salto de la sección 4 caía solo en la siguiente. Ahora
+  `docs/build-docx.py` pone el salto en el primer párrafo de cada sección y
+  no puede quedar una página vacía. La página 5 del Word lleva una sola
+  línea, la nota de las parejas de imágenes, como ya pasaba en `main`.
+- El README ya no habla de «Hoxe na aula», que se retiró en L4, ni de
+  «Inmersión en inglés», ni pone la formación del aula dentro del Modo Aula:
+  está en Eu. Era un fallo de L4: cambió la app y no el README.
+
+Cómo se comprobó:
+
+- `test/features/ux_l5_test.dart`, 52 tests:
+  - 4 hacen lo que hace TalkBack —pulsar por la acción del nodo, no tocando
+    la pantalla— sobre las dos respuestas del inicio, GL/ES, la edad y el
+    selector del aula. Los cuatro fallan con el código de antes;
+  - 48 abren las 24 puertas de Explorar, Guías, Recursos y Eu, en gl y es, a
+    360 × 780 y con la Nunito real, y miran que la cabecera de la pantalla
+    nueva sea el nombre de la puerta o su forma corta, y que quepa entera.
+    Con las cabeceras de antes fallan: se comprobó devolviendo a `main` tres
+    pantallas (Láminas, las guías y los sonidos del inglés).
+- Los tests que miraban el inicio viejo, el «hub» de inglés, los títulos de
+  antes o los rótulos con mayúsculas, rehechos sobre la app de ahora: doce
+  ficheros, entre ellos `portales_seleccion_ux_test`,
+  `bienvenida_creditos_test` e `ingles_inmersion_test`. La auditoría de L2
+  recorre el inicio nuevo y las cabeceras nuevas: título entero a 360 px,
+  color del portal y un solo principal.
+- `tools/gates.sh --fast` en local: los 21 gates en verde, con 1.044 tests,
+  entre ellos el nuevo «portal names come from their JSON».
+- La app de escritorio, en gallego y en castellano, el lunes 5/10 (la fecha
+  del contenedor): Inicio → Na casa → las seis puertas de Explorar y las
+  cuatro de Guías; Inicio → Na escola → las once de Recursos y las tres de
+  Eu. Cada cabecera, capturada y mirada: `docs/capturas/l5-*.png`. También
+  los rótulos que cambian: «Todos os cursos», «1. Conciencia fonolóxica»,
+  «1.º ciclo (0-3 anos)» y «Hoxe: luns, semana 1 de outubro».
+
+Las capas:
+
+- La interfaz cambia.
+- El JSON de contenido gana `nomes_portais.json`; no cambia ningún otro.
+- Ningún texto con voz cambia: los rótulos y los nombres no tienen grabación.
+  Lo dice el gate «voice corpus in sync».
+- No hay imprimible afectado.
+- El manual, su PDF, su Word y el README cambian.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android.**
+- Tampoco con TalkBack: la acción de pulsar se comprobó en el árbol de
+  semántica de Flutter, que es lo que lee TalkBack, pero no con el lector de
+  pantalla de un móvil.
+
+### Visto y no tocado
+
+- Los diez juegos de «Xogos de movemento» están escritos dentro de su
+  pantalla, no en JSON, y sus títulos llevan mayúscula en cada palabra («A
+  Caza do Tesouro dos Sons»). La revisión aprobada solo pasa a JSON la tabla
+  de nombres y frases.
+- `lib/main.dart` declara 14 rutas con nombre a las que nada navega
+  (`/academy`, `/juega`, `/calendario`, `/dinamicas`…). Son de antes de estos
+  lotes y no se ven.
+- Dentro de «Ler xogando» las pestañas siguen siendo «2. Mesa Alphabot» y
+  «3. Cubos CVC». La revisión citaba esos nombres (A3), pero el diccionario
+  aprobado nombra módulos, no las pestañas de dentro. Propuesta: nombrarlas
+  por lo que se hace con las manos, en el mismo JSON.
+
 ## Lote L4 de la revisión de interfaz: «Hoxe» de la docente y el Modo Aula (5/10/2026)
 
 Rama `claude/ux-l4`, que se integra en `main` por pull request después de L3.

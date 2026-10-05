@@ -9,6 +9,7 @@ import 'cuento_viewer_screen.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../familias/nomes_familias.dart';
 
 /// Catálogo y biblioteca de los contos pedagóxicos (5 cursos × 10 meses × 4
 /// semanas). El número de contos NO se escribe en el rótulo: lo cuenta la
@@ -56,7 +57,7 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
   String _searchQuery = '';
 
   static const List<Map<String, String>> _cursosFiltro = [
-    {'id': 'todos', 'gl': 'Todos os Cursos', 'es': 'Todos los Cursos'},
+    {'id': 'todos', 'gl': 'Todos os cursos', 'es': 'Todos los cursos'},
     {'id': 'curso_0_2', 'gl': '0 a 2 anos', 'es': '0 a 2 años'},
     {'id': 'curso_2_3', 'gl': '2 a 3 anos', 'es': '2 a 3 años'},
     {'id': 'curso_3_4', 'gl': '3 a 4 anos', 'es': '3 a 4 años'},
@@ -114,7 +115,7 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: lang == AppLanguage.gl ? 'Contos' : 'Cuentos',
+        titulo: NomesFamilias.contos.resolve(lang),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),

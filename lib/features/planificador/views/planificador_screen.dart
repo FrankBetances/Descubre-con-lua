@@ -8,6 +8,7 @@ import 'dinamicas_screen.dart';
 import 'estrategias_screen.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../docentes/nomes_docentes.dart';
 
 /// Planificador curricular docente dos cinco cursos de Educación Infantil (0-6 anos).
 class PlanificadorScreen extends StatefulWidget {
@@ -92,7 +93,7 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
-        titulo: 'Planificador',
+        titulo: NomesDocentes.programacionCabeceira.resolve(lang),
         language: _language,
         onLanguageChanged: _cambiarLingua,
       ),

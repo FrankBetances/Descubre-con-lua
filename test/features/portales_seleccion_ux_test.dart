@@ -21,7 +21,7 @@ import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart';
 import 'package:descubre_con_lua/features/lectura/views/aprender_a_ler_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
-import 'package:descubre_con_lua/features/seleccion/seleccion_portal_screen.dart';
+import 'package:descubre_con_lua/main.dart' show DescubreConLuaApp;
 import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 
 import '../helpers/pasarela.dart';
@@ -136,83 +136,58 @@ void main() {
     ));
   });
 
-  group('Pantalla de Selección de Portal Dual (Familias e Docentes)', () {
-    testWidgets(
-        'amosa dúas tarxetas destacadas con ilustracións propias debuxadas',
+  // L5: a benvida e a elección de portal son unha soa pantalla. Unha
+  // pregunta e dúas respostas grandes, cada unha co seu debuxo; antes eran
+  // dúas pantallas e a elección ocupaba 2,4.
+  group('O inicio: unha pregunta e dúas respostas', () {
+    Widget app(AppLanguage lang) => DescubreConLuaApp(
+          contentRepository: repository,
+          premiosRepository: premiosRepository,
+          calendarioStore: calendarioStore,
+          audioService: audioService,
+          initialLanguage: lang,
+        );
+
+    testWidgets('as dúas respostas, co seu debuxo e sen baixar',
         (tester) async {
       _pantallaDeTelefono(tester);
-      await tester.pumpWidget(_wrap(
-        SeleccionPortalScreen(
-          repository: repository,
-          audioService: audioService,
-          currentLanguage: AppLanguage.gl,
-          onToggleLanguage: () {},
-          premios: premiosRepository,
-          calendario: calendarioStore,
-        ),
-      ));
+      await tester.pumpWidget(app(AppLanguage.gl));
       await tester.pumpAndSettle();
 
-      // Debe amosar as dúas tarxetas con debuxos propios
-      await _ataVer(tester, find.text('Portal Familias'));
-      expect(find.text('Portal Familias'), findsOneWidget);
-      await _ataVer(tester, find.text('Portal Docentes'));
-      expect(find.text('Portal Docentes'), findsOneWidget);
-
+      expect(find.text('Onde vas usala?'), findsOneWidget);
+      expect(find.text('Na casa'), findsOneWidget);
+      expect(find.text('Na escola'), findsOneWidget);
       expect(find.byType(IlustracionFamilia), findsOneWidget);
       expect(find.byType(IlustracionEscola), findsOneWidget);
-
-      // Botóns de entrada independente
-      await _ataVer(tester, find.text('Entrar no Portal Familias'));
-      expect(find.text('Entrar no Portal Familias'), findsOneWidget);
-      await _ataVer(tester, find.text('Entrar no Portal Docentes'));
-      expect(find.text('Entrar no Portal Docentes'), findsOneWidget);
+      // As dúas enteiras na primeira pantalla.
+      final alto =
+          tester.view.physicalSize.height / tester.view.devicePixelRatio;
+      for (final k in ['inicio_na_casa', 'inicio_na_escola']) {
+        expect(tester.getRect(find.byKey(ValueKey(k))).bottom,
+            lessThanOrEqualTo(alto),
+            reason: k);
+      }
+      // Xa non hai pantalla intermedia nin botón «Comezar».
+      expect(find.text('Comezar'), findsNothing);
     });
 
-    testWidgets('paridade bilingüe galego e castelán na selección de portal',
+    testWidgets('paridade bilingüe galego e castelán no inicio',
         (tester) async {
       _pantallaDeTelefono(tester);
-      await tester.pumpWidget(_wrap(
-        SeleccionPortalScreen(
-          repository: repository,
-          audioService: audioService,
-          currentLanguage: AppLanguage.es,
-          onToggleLanguage: () {},
-          premios: premiosRepository,
-          calendario: calendarioStore,
-        ),
-      ));
+      await tester.pumpWidget(app(AppLanguage.es));
       await tester.pumpAndSettle();
-
-      await _ataVer(tester, find.text('Entrar en el Portal Familias'));
-      expect(find.text('Entrar en el Portal Familias'), findsOneWidget);
-      await _ataVer(tester, find.text('Entrar en el Portal Docentes'));
-      expect(find.text('Entrar en el Portal Docentes'), findsOneWidget);
-      expect(find.textContaining('CERO PANTALLAS'), findsOneWidget);
+      expect(find.text('¿Dónde la vas a usar?'), findsOneWidget);
+      expect(find.text('En casa'), findsOneWidget);
+      expect(find.text('Tres minutos al día con tu criatura'), findsOneWidget);
+      expect(find.text('En la escuela'), findsOneWidget);
+      expect(find.text('La asamblea de cada día'), findsOneWidget);
     });
 
-    testWidgets('navega á pantalla independente do Portal Familias',
-        (tester) async {
+    testWidgets('«Na casa» abre o Portal Familias por Hoxe', (tester) async {
       _pantallaDeTelefono(tester);
-      await tester.pumpWidget(MaterialApp(
-        theme: AppTheme.lightTheme,
-        home: SeleccionPortalScreen(
-          repository: repository,
-          audioService: audioService,
-          currentLanguage: AppLanguage.gl,
-          onToggleLanguage: () {},
-          premios: premiosRepository,
-          calendario: calendarioStore,
-        ),
-      ));
+      await tester.pumpWidget(app(AppLanguage.gl));
       await tester.pumpAndSettle();
-
-      final boton = find.text('Entrar no Portal Familias');
-      await tester.ensureVisible(boton);
-      await tester.pumpAndSettle();
-      await tester.tap(boton);
-      await tester.pumpAndSettle();
-
+      await tester.tap(find.byKey(const ValueKey('inicio_na_casa')));
       // Ábrese por Hoxe: o que toca hoxe, co xogo diante, e as catro
       // pestanas abaixo. O día lese do paquete: E/S de verdade.
       await Pasarela.asentar(tester);
@@ -227,32 +202,15 @@ void main() {
       }
     });
 
-    testWidgets('navega á pantalla independente do Portal Docentes',
-        (tester) async {
+    testWidgets('«Na escola» abre o Portal Docentes por Hoxe', (tester) async {
       _pantallaDeTelefono(tester);
-      await tester.pumpWidget(MaterialApp(
-        theme: AppTheme.lightTheme,
-        home: SeleccionPortalScreen(
-          repository: repository,
-          audioService: audioService,
-          currentLanguage: AppLanguage.gl,
-          onToggleLanguage: () {},
-          premios: premiosRepository,
-          calendario: calendarioStore,
-        ),
-      ));
+      await tester.pumpWidget(app(AppLanguage.gl));
       await tester.pumpAndSettle();
-
-      final boton = find.text('Entrar no Portal Docentes');
-      await tester.ensureVisible(boton);
-      await tester.pumpAndSettle();
-      await tester.tap(boton);
-      await tester.pumpAndSettle();
-
+      await tester.tap(find.byKey(const ValueKey('inicio_na_escola')));
+      await Pasarela.asentar(tester);
       expect(find.byType(PortalDocentesScreen), findsOneWidget);
       // Abre en «Hoxe»: a asemblea do día, arriba e cun só botón.
       expect(find.byKey(const Key('hoxe_aula_titulo')), findsOneWidget);
-      expect(find.byKey(const Key('pestanas_docentes')), findsOneWidget);
       for (final p in ['Hoxe', 'Calendario', 'Recursos', 'Eu']) {
         expect(
             find.descendant(
@@ -356,7 +314,10 @@ void main() {
         'Ciencia coas mans',
         'Planificador curricular',
         'Palabras do curso',
-        'Inglés na aula',
+        'O repaso',
+        'Frases do curso',
+        'Colocacións',
+        'Sons do inglés',
         'Vocabulario de uso habitual',
         'Estratexias de aula',
       ]) {
@@ -435,14 +396,14 @@ void main() {
       await tester.pumpAndSettle();
 
       // Pestanas
-      await _ataVer(tester, find.text('1. Conciencia Fonolóxica'));
-      expect(find.text('1. Conciencia Fonolóxica'), findsOneWidget);
+      await _ataVer(tester, find.text('1. Conciencia fonolóxica'));
+      expect(find.text('1. Conciencia fonolóxica'), findsOneWidget);
       await _ataVer(tester, find.text('2. Mesa Alphabot'));
       expect(find.text('2. Mesa Alphabot'), findsOneWidget);
       await _ataVer(tester, find.text('3. Cubos CVC'));
       expect(find.text('3. Cubos CVC'), findsOneWidget);
-      await _ataVer(tester, find.text('4. Pares Mínimos'));
-      expect(find.text('4. Pares Mínimos'), findsOneWidget);
+      await _ataVer(tester, find.text('4. Pares mínimos'));
+      expect(find.text('4. Pares mínimos'), findsOneWidget);
 
       // Tab 2: Mesa Alphabot
       await tester.tap(find.text('2. Mesa Alphabot'));
@@ -466,7 +427,7 @@ void main() {
       expect(find.byType(BotonEscuchar), findsWidgets);
 
       // Tab 4: Pares Mínimos
-      await tester.tap(find.text('4. Pares Mínimos'));
+      await tester.tap(find.text('4. Pares mínimos'));
       await tester.pumpAndSettle();
 
       await _ataVer(tester, find.text('/b/ vs /p/'));

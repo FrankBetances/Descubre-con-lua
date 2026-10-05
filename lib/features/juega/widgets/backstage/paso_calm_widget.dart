@@ -140,8 +140,8 @@ class PasoCalmWidget extends StatelessWidget {
                   children: [
                     Text(
                       isGl
-                          ? 'Desaceleración e Respiración Diafragmática'
-                          : 'Desaceleración y Respiración Diafragmática',
+                          ? 'Desaceleración e respiración diafragmática'
+                          : 'Desaceleración y respiración diafragmática',
                       style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
                         fontSize: 15,
@@ -182,8 +182,8 @@ class PasoCalmWidget extends StatelessWidget {
               Expanded(
                   child: Text(
                 isGl
-                    ? 'Materiais Naturais da Contorna'
-                    : 'Materiales Naturales del Entorno',
+                    ? 'Materiais naturais da contorna'
+                    : 'Materiales naturales del entorno',
                 style: const TextStyle(
                   fontFamily: AppTheme.fontFamily,
                   fontSize: 18,
@@ -317,8 +317,8 @@ class PasoCalmWidget extends StatelessWidget {
                               children: [
                                 Text(
                                   isGl
-                                      ? 'Aviso de Seguridade (>= 4 cm):'
-                                      : 'Aviso de Seguridad (>= 4 cm):',
+                                      ? 'Aviso de seguridade (>= 4 cm):'
+                                      : 'Aviso de seguridad (>= 4 cm):',
                                   style: const TextStyle(
                                     fontFamily: AppTheme.fontFamily,
                                     fontSize: 13,
@@ -373,10 +373,10 @@ class PasoCalmWidget extends StatelessWidget {
               ),
               label: Text(
                 isPlayingCalmAudio
-                    ? (isGl ? 'Deter Son de Calma' : 'Detener Sonido de Calma')
+                    ? (isGl ? 'Deter son de calma' : 'Detener sonido de calma')
                     : (isGl
-                        ? 'Reproducir Sons da Fraga / Calma'
-                        : 'Reproducir Sonidos del Bosque / Calma'),
+                        ? 'Reproducir sons da fraga / calma'
+                        : 'Reproducir sonidos del bosque / calma'),
                 style: const TextStyle(
                   fontFamily: AppTheme.fontFamily,
                   fontSize: 15,
