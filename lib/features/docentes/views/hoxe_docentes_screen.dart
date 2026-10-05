@@ -60,6 +60,10 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
   DinamicaPedagogica? _dinamica;
   SteamUnit? _steam;
 
+  /// La sesión de ciencia del curso, toque hoy o no: los demás días se dice
+  /// cuándo toca, para que la docente la prepare.
+  SteamUnit? _steamDoCurso;
+
   static const _diasClave = ['luns', 'martes', 'mercores', 'xoves', 'venres'];
 
   static const _semana = <LocalizedString>[
@@ -94,6 +98,7 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
     // casos el build viene detrás.
     _conto = null;
     _steam = null;
+    _steamDoCurso = null;
 
     repo.loadCuentos(cursoId: curso, mesNumero: _toca.mesDoCurso).then((cs) {
       if (!vixente()) return;
@@ -128,7 +133,12 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
     }
     repo.loadSteamUnits().then((_) {
       if (!vixente()) return;
-      setState(() => _steam = steamDoDiaDoCurso(repo, curso, _toca.dia));
+      setState(() {
+        _steam = steamDoDiaDoCurso(repo, curso, _toca.dia);
+        _steamDoCurso = repo.steamUnits
+            .where((u) => u.estadio == curso && u.diaNoCalendario != null)
+            .firstOrNull;
+      });
     });
   }
 
@@ -194,6 +204,32 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
         ),
       ),
     );
+  }
+
+  void _abrirSteam(SteamUnit unidade) => abrirSesionSteam(
+        context,
+        unidade: unidade,
+        audiencia: SteamAudiencia.aula,
+        language: widget.language,
+        audioService: widget.audioService,
+        onLanguageChanged: widget.onLanguageChanged,
+      );
+
+  /// «Toca o mércores da semana 2 de novembro», o «Foi…» si ya pasó este
+  /// curso. El día que toca no se llega aquí: sale la sesión entera.
+  String _candoToca(SteamDiaNoCalendario d, AppLanguage lang) {
+    final isGl = lang == AppLanguage.gl;
+    final hoxe = (_toca.mesDoCurso, _toca.dia.semana, _toca.dia.dia);
+    final pasou = hoxe.$1 > d.mes ||
+        (hoxe.$1 == d.mes &&
+            (hoxe.$2 > d.semana || (hoxe.$2 == d.semana && hoxe.$3 > d.dia)));
+    final dia = _semana[d.dia - 1].resolve(lang).toLowerCase();
+    final mesCalendario = d.mes <= 4 ? d.mes + 8 : d.mes - 4;
+    final mes = nomeDoMes[mesCalendario]?.resolve(lang).toLowerCase() ?? '';
+    if (isGl) {
+      return '${pasou ? 'Foi' : 'Toca'} o $dia da semana ${d.semana} de $mes';
+    }
+    return '${pasou ? 'Fue' : 'Toca'} el $dia de la semana ${d.semana} de $mes';
   }
 
   void _verPalabras(ProgramaTpr programa) {
@@ -382,14 +418,18 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                 unidade: steam,
                 audiencia: SteamAudiencia.aula,
                 language: lang,
-                onTap: () => abrirSesionSteam(
-                  context,
-                  unidade: steam,
-                  audiencia: SteamAudiencia.aula,
-                  language: lang,
-                  audioService: widget.audioService,
-                  onLanguageChanged: widget.onLanguageChanged,
-                ),
+                onTap: () => _abrirSteam(steam),
+              ),
+            ] else if (_steamDoCurso case final steam?) ...[
+              const SizedBox(height: 10),
+              _FilaRecurso(
+                clave: 'hoxe_aula_ciencia',
+                icona: Icons.science_rounded,
+                rotulo: isGl
+                    ? 'CIENCIA COAS MANS · STEAM'
+                    : 'CIENCIA CON LAS MANOS · STEAM',
+                titulo: _candoToca(steam.diaNoCalendario!, lang),
+                onTap: () => _abrirSteam(steam),
               ),
             ],
           ],

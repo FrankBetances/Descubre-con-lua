@@ -26,7 +26,9 @@ Qué cambia en pantalla:
   - las palabras de hoy, con el tema de la semana y la hoja de las 4.000;
   - el cuento de la semana;
   - la dinámica del día;
-  - la ciencia, el día que le toca al curso.
+  - la ciencia: el día que le toca al curso, la sesión entera; los demás
+    días, cuándo toca o cuándo fue («Toca o mércores da semana 2 de
+    novembro»), y se abre para prepararla.
 
   El fin de semana enseña la asamblea del lunes («A asemblea do luns»). En
   julio y agosto enseña la primera del curso.
@@ -61,6 +63,8 @@ Cómo se comprobó:
   - las duraciones de la tarjeta son las que recibe el reproductor al pulsar
     el botón, y el reproductor abre en la semana 1, viernes;
   - el domingo enseña la asamblea del lunes;
+  - un día sin ciencia dice cuándo toca la del curso y abre esa sesión, del
+    lado del aula;
   - el grupo elegido en Hoxe abre el calendario de ese curso, con la tira de
     meses por encima de la tarjeta del mes;
   - Recursos abre el Modo Aula, ya sin la tira de nivel; Eu abre la formación
@@ -87,7 +91,7 @@ Cómo se comprobó:
   - Eu → Formación na aula.
 
   Las capturas están en `docs/capturas/l4-*.png`.
-- `tools/gates.sh --fast` en local: los 20 gates en verde, con 994 tests.
+- `tools/gates.sh --fast` en local: los 20 gates en verde, con 996 tests.
 
 Las capas:
 

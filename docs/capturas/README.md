@@ -103,6 +103,7 @@ la de Android, pero no sus barras del sistema, su densidad ni su escala de texto
 | `l3-guias-{gl,es}.png` | Guías: la guía de dos minutos, las lecturas para la familia, el inglés en casa y los premios |
 | `l3-idade-es.png` | La edad se elige una vez, en un chip arriba; la hoja recuerda que no se guarda |
 | `l4-hoxe-{gl,es}.png` | «Hoxe», la portada de la docente, un lunes: la asamblea del día arriba, con sus cuatro fases y sus minutos, y un solo botón; debajo, las palabras de hoy con el tema de la semana |
+| `l4-hoxe-ciencia-{gl,es}.png` | El final de «Hoxe»: el cuento de la semana, la dinámica del día y cuándo toca la ciencia del curso |
 | `l4-calendario-{gl,es}.png` | El calendario como pestaña del Portal Docentes, sin el párrafo de entrada: la tira de meses se ve entera |
 | `l4-recursos-{gl,es}.png` | Recursos: los módulos agrupados por lo que se va a hacer, con «Xoga con Lúa · Modo Aula» y «Planificador curricular» |
 | `l4-modo-aula-{gl,es}.png` | El Modo Aula: el grupo, el mes y el día en una línea, sin la tira de nivel encima, y «Comezar a asemblea» en la primera pantalla |

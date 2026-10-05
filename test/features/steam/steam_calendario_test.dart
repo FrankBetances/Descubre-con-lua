@@ -225,7 +225,12 @@ void main() {
           find.byKey(const Key('hoxe_docentes')), const Offset(0, -3000));
       await tester.pumpAndSettle();
       expect(find.byType(FilaSteamDoDia), findsNothing);
-      expect(find.textContaining('STEAM'), findsNothing);
+      // En su lugar, cuándo fue: la docente sabe que ya pasó.
+      expect(
+          find.descendant(
+              of: find.byKey(const ValueKey('hoxe_aula_ciencia')),
+              matching: find.text('Foi o mércores da semana 2 de decembro')),
+          findsOneWidget);
     });
 
     testWidgets('El día del Modo Aula abre la versión del aula',

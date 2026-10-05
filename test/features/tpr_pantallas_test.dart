@@ -696,6 +696,10 @@ void main() {
                 .curso(cursoId)!
                 .planDoDia(hoxe.mesCalendario, hoxe.semana, hoxe.dia)!,
             lang);
+        // El botón está arriba: la lista solo mantiene lo que está cerca de
+        // la vista, así que se vuelve al principio antes de buscarlo.
+        await tester.drag(lista, const Offset(0, 3000));
+        await tester.pumpAndSettle();
         final iniciar = find.byKey(const Key('boton_asemblea_de_hoxe'));
         await tester.ensureVisible(iniciar);
         await tester.pumpAndSettle();

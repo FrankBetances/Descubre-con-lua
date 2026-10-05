@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
+import 'package:descubre_con_lua/data/models/steam_model.dart';
 import 'package:descubre_con_lua/data/models/asamblea_primeiro_ciclo_model.dart';
 import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
@@ -12,6 +13,7 @@ import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dar
 import 'package:descubre_con_lua/features/juega/views/capsulas_aula_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
 import 'package:descubre_con_lua/features/premios/widgets/lua_game_strip.dart';
+import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
 
 import '../helpers/pasarela.dart';
 
@@ -129,6 +131,29 @@ void main() {
           reason: 'Tarxeta: $chips · reprodutor: $duracions');
       expect(player.dia?.semana, 1);
       expect(player.dia?.dia, 5);
+    });
+
+    testWidgets('a ciencia: cando toca, os días que non toca (${lang.code})',
+        (tester) async {
+      await abrir(tester, portal(lang, venres));
+      final fila = find.byKey(const ValueKey('hoxe_aula_ciencia'));
+      await tester.dragUntilVisible(
+          fila, find.byKey(const Key('hoxe_docentes')), const Offset(0, -200));
+      await tester.pumpAndSettle();
+      // 0-2 años: «Brando e duro», el miércoles de la semana 2 de noviembre.
+      expect(
+          find.descendant(
+              of: fila,
+              matching: find.text(gl
+                  ? 'Toca o mércores da semana 2 de novembro'
+                  : 'Toca el miércoles de la semana 2 de noviembre')),
+          findsOneWidget);
+      await tester.tap(fila);
+      await Pasarela.asentar(tester);
+      final sesion = tester.widget<SteamSesionGuiadaScreen>(
+          find.byType(SteamSesionGuiadaScreen));
+      expect(sesion.unit.estadio, 'curso_0_2');
+      expect(sesion.audiencia, SteamAudiencia.aula);
     });
 
     testWidgets('fin de semana: a asemblea do luns (${lang.code})',
