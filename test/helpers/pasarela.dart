@@ -18,6 +18,7 @@ import 'package:descubre_con_lua/data/models/lectura_model.dart';
 import 'package:descubre_con_lua/data/models/steam_model.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/models/unidad_model.dart' hide Cuento;
+import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
@@ -98,6 +99,7 @@ class Pasarela {
   late CalendarioContenido calendario;
   late ContidoLectura lectura;
   late ObservacionsXogosFogar observacions;
+  late XogosFogar xogosFogar;
   late CalendarioStore store;
   late PremiosRepository premios;
   late GuiaFormacion guiaFamilia;
@@ -131,6 +133,8 @@ class Pasarela {
         File(ContidoLectura.assetPath).readAsStringSync());
     observacions = ObservacionsXogosFogar.fromRaw(
         File(ObservacionsXogosFogar.assetPath).readAsStringSync());
+    xogosFogar =
+        XogosFogar.fromRaw(File(XogosFogar.assetPath).readAsStringSync());
     guiaFamilia =
         await GuiaFormacion.cargar(PerfilFormacion.familia, lector: ler);
     guiaDocente =
@@ -385,6 +389,7 @@ class Pasarela {
                   initialLanguage: l,
                   audioService: audio,
                   observacions: observacions,
+                  xogos: xogosFogar,
                 )),
         PantallaDaApp(
             'academy',

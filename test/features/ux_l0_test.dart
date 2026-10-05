@@ -18,6 +18,7 @@ import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
 import 'package:descubre_con_lua/data/models/estrategia_model.dart';
 import 'package:descubre_con_lua/data/models/lectura_model.dart';
+import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_fogar_screen.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dart';
@@ -241,6 +242,8 @@ void main() {
         File(ContidoLectura.assetPath).readAsStringSync());
     final xogos = ObservacionsXogosFogar.fromRaw(
         File(ObservacionsXogosFogar.assetPath).readAsStringSync());
+    final xogosFogar =
+        XogosFogar.fromRaw(File(XogosFogar.assetPath).readAsStringSync());
     const calificar = ['[L] Logrado', '[A] Asistido', '[E] Explorando'];
 
     void comprobaPistas(List<dynamic> pistas, String onde) {
@@ -290,7 +293,10 @@ void main() {
     testWidgets('Xogos no Fogar: sin calificar', (tester) async {
       await pintar(
         tester,
-        XogosFogarScreen(initialLanguage: AppLanguage.gl, observacions: xogos),
+        XogosFogarScreen(
+            initialLanguage: AppLanguage.gl,
+            observacions: xogos,
+            xogos: xogosFogar),
         tamano: const Size(400, 12000),
       );
       expect(find.text('Que observar'), findsNWidgets(10));
@@ -418,7 +424,13 @@ void main() {
       for (final lang in AppLanguage.deInterfaz) {
         await pintar(
           tester,
-          XogosFogarScreen(initialLanguage: lang),
+          XogosFogarScreen(
+            initialLanguage: lang,
+            // Leídos aquí: sin ellos la pantalla sale vacía y el test
+            // pasaría sin mirar ningún juego.
+            xogos: XogosFogar.fromRaw(
+                File(XogosFogar.assetPath).readAsStringSync()),
+          ),
           tamano: const Size(400, 12000),
         );
         expect(find.textContaining(prohibido), findsNothing, reason: lang.code);

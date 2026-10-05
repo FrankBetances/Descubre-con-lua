@@ -4,48 +4,10 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/que_observar.dart';
+import '../../../data/models/xogos_fogar_model.dart';
 import '../../../data/models/xogos_fogar_observar_model.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../nomes_familias.dart';
-
-/// Modelo dun xogo ou dinámica física no fogar sen pantallas infantís.
-class XogoFogarItem {
-  final String id;
-  final String tituloGl;
-  final String tituloEs;
-  final String idade;
-  final int duracionMin;
-  final String materiaisGl;
-  final String materiaisEs;
-  final String obxectivoGl;
-  final String obxectivoEs;
-  final String fraseEn;
-  final String guionAdultoGl;
-  final String guionAdultoEs;
-  final String accionKinestesicaGl;
-  final String accionKinestesicaEs;
-  final String criterioExitoGl;
-  final String criterioExitoEs;
-
-  const XogoFogarItem({
-    required this.id,
-    required this.tituloGl,
-    required this.tituloEs,
-    required this.idade,
-    required this.duracionMin,
-    required this.materiaisGl,
-    required this.materiaisEs,
-    required this.obxectivoGl,
-    required this.obxectivoEs,
-    required this.fraseEn,
-    required this.guionAdultoGl,
-    required this.guionAdultoEs,
-    required this.accionKinestesicaGl,
-    required this.accionKinestesicaEs,
-    required this.criterioExitoGl,
-    required this.criterioExitoEs,
-  });
-}
 
 /// Pantalla de Dinámicas e Xogos Físicos no Fogar.
 ///
@@ -63,12 +25,17 @@ class XogosFogarScreen extends StatefulWidget {
   /// polo mesmo que en «Aprender a Ler»: un test ten que poder darllo feito.
   final ObservacionsXogosFogar? observacions;
 
+  /// Os xogos, se quen abre a pantalla xa os leu (un test). Se non, a
+  /// pantalla lé `assets/content/xogos_fogar.json`.
+  final XogosFogar? xogos;
+
   const XogosFogarScreen({
     super.key,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
     this.audioService,
     this.observacions,
+    this.xogos,
   });
 
   @override
@@ -84,266 +51,18 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
   late AppLanguage _language;
   String _filtroIdade = 'todas';
   ObservacionsXogosFogar? _observacions;
-
-  static const List<XogoFogarItem> _xogos = [
-    XogoFogarItem(
-      id: 'xogo_01_caza_tesouro',
-      tituloGl: 'A Caza do Tesouro dos Sons',
-      tituloEs: 'La Caza del Tesoro de los Sonidos',
-      idade: '2-4 anos',
-      duracionMin: 4,
-      materiaisGl: '3 obxectos da casa: culler, mazá e almofada',
-      materiaisEs: '3 objetos de la casa: cuchara, manzana y almohada',
-      obxectivoGl: 'Discriminación auditiva e discriminación do son inicial',
-      obxectivoEs:
-          'Discriminación auditiva y discriminación del sonido inicial',
-      fraseEn: 'Find the red apple, quick and gentle!',
-      guionAdultoGl:
-          'Esconde a mazá á vista. Di: «Onde está a mazá? Find the apple!». Agarda 5 segundos en silencio.',
-      guionAdultoEs:
-          'Esconde la manzana a la vista. Di: «¿Dónde está la manzana? Find the apple!». Espera 5 segundos en silencio.',
-      accionKinestesicaGl:
-          'A crianza camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.',
-      accionKinestesicaEs:
-          'La criatura camina o gatea por la habitación hasta coger el objeto y traerlo en las manos.',
-      criterioExitoGl:
-          'Localiza o obxecto e sorrí ao entregalo sen necesidade de indicacións adicionais.',
-      criterioExitoEs:
-          'Localiza el objeto y sonríe al entregarlo sin necesidad de indicaciones adicionales.',
-    ),
-    XogoFogarItem(
-      id: 'xogo_02_barco_samil',
-      tituloGl: 'O Barquiño de Samil na Ría',
-      tituloEs: 'El Barquito de Samil en la Ría',
-      idade: '0-3 anos',
-      duracionMin: 3,
-      materiaisGl: 'Colo da persoa adulta ou manta no chan',
-      materiaisEs: 'Regazo de la persona adulta o manta en el suelo',
-      obxectivoGl: 'Equilibrio vestibular, contacto afectivo e ritmo a 72 bpm',
-      obxectivoEs: 'Equilibrio vestibular, contacto afectivo y ritmo a 72 bpm',
-      fraseEn: 'Row, row your little boat!',
-      guionAdultoGl:
-          'Crianza sentada no teu colo mirando cara a ti. Vaivén suave de remo adiante e atrás entoando o ritmo.',
-      guionAdultoEs:
-          'Criatura sentada en tu regazo mirándote de frente. Vaivén suave de remo adelante y atrás entonando el ritmo.',
-      accionKinestesicaGl:
-          'Balanzo do torso sincronizado co adulto e parada na calma mariña.',
-      accionKinestesicaEs:
-          'Balanceo del torso sincronizado con el adulto y parada en la calma marina.',
-      criterioExitoGl:
-          'Anticipa a parada do movemento mantendo a mirada e o riso compartido.',
-      criterioExitoEs:
-          'Anticipa la parada del movimiento manteniendo la mirada y la risa compartida.',
-    ),
-    XogoFogarItem(
-      id: 'xogo_03_xigante_formiga',
-      tituloGl: 'O Xigante e a Formiguiña',
-      tituloEs: 'El Gigante y la Hormiguita',
-      idade: '2-5 anos',
-      duracionMin: 4,
-      materiaisGl: 'Espazo despexado na sala ou corredor',
-      materiaisEs: 'Espacio despejado en el salón o pasillo',
-      obxectivoGl: 'Contraste acústico forte/feble e inhibición motriz',
-      obxectivoEs: 'Contraste acústico fuerte/débil e inhibición motriz',
-      fraseEn: 'Big giant stomps! Tiny ant tiptoes!',
-      guionAdultoGl:
-          'Di con voz grosa: «Stomp like a giant!», pisando forte. Logo susurra: «Tiptoe like an ant», de puntillas.',
-      guionAdultoEs:
-          'Di con voz grave: «Stomp like a giant!», pisando fuerte. Luego susurra: «Tiptoe like an ant», de puntillas.',
-      accionKinestesicaGl:
-          'Pisa con forza no chan con todo o corpo e logo camiña en silencio absoluto de puntillas.',
-      accionKinestesicaEs:
-          'Pisa con fuerza en el suelo con todo el cuerpo y luego camina en silencio absoluto de puntillas.',
-      criterioExitoGl:
-          'Modula o volume do paso adaptándose ao comando sen precipitación.',
-      criterioExitoEs:
-          'Modula el volumen del paso adaptándose al comando sin precipitación.',
-    ),
-    XogoFogarItem(
-      id: 'xogo_04_cuncha_escoita',
-      tituloGl: 'A Cuncha que Escoita o Mar',
-      tituloEs: 'La Concha que Escucha el Mar',
-      idade: '1-4 anos',
-      duracionMin: 3,
-      materiaisGl: 'Unha cuncha grande de Samil ou un vaso de plástico limpo',
-      materiaisEs: 'Una concha grande de Samil o un vaso de plástico limpio',
-      obxectivoGl: 'Atención auditiva e un silencio tranquilo',
-      obxectivoEs: 'Atención auditiva y un silencio tranquilo',
-      fraseEn: 'Listen close, hear the gentle sea!',
-      guionAdultoGl:
-          'Achega a cuncha á orella do neno/a. Respira amodiño: «Shhh... Escoitas o mar de Vigo?».',
-      guionAdultoEs:
-          'Acerca la concha a la oreja del niño/a. Respira despacio: «Shhh... ¿Escuchas el mar de Vigo?».',
-      accionKinestesicaGl:
-          'Inclina a cabeza, pecha os ollos ou pousa a man sobre a cuncha con curiosidade.',
-      accionKinestesicaEs:
-          'Inclina la cabeza, cierra los ojos o posa la mano sobre la concha con curiosidad.',
-      criterioExitoGl:
-          'Permanece en escoita tranquila polo menos 5 segundos sen retirar a cabeza.',
-      criterioExitoEs:
-          'Permanece en escucha tranquila al menos 5 segundos sin retirar la cabeza.',
-    ),
-    XogoFogarItem(
-      id: 'xogo_05_espello_corpo',
-      tituloGl: 'O Espello do Corpo e as Emocións',
-      tituloEs: 'El Espejo del Cuerpo y las Emociones',
-      idade: '2-6 anos',
-      duracionMin: 5,
-      materiaisGl: 'Espello da casa ou xogo de fronte cara a cara',
-      materiaisEs: 'Espejo de la casa o juego de frente cara a cara',
-      obxectivoGl: 'Esquema corporal, propiocepción e denominación anatómica',
-      obxectivoEs: 'Esquema corporal, propiocepción y denominación anatómica',
-      fraseEn: 'Touch your nose, touch your toes!',
-      guionAdultoGl:
-          'Pon as mans no teu propio nariz e canta a orde en inglés. Despois agarda sen tocar para que o faga el/ela.',
-      guionAdultoEs:
-          'Pon las manos en tu propia nariz y canta la orden en inglés. Después espera sin tocar para que lo haga él/ella.',
-      accionKinestesicaGl:
-          'Localiza as partes do corpo nomeadas (nariz, orellas, xeonllos, pés) no seu propio corpo.',
-      accionKinestesicaEs:
-          'Localiza las partes del cuerpo nombradas (nariz, orejas, rodillas, pies) en su propio cuerpo.',
-      criterioExitoGl:
-          'Toca a parte correcta sen espello tras o modelado inicial do adulto.',
-      criterioExitoEs:
-          'Toca la parte correcta sin espejo tras el modelado inicial del adulto.',
-    ),
-    XogoFogarItem(
-      id: 'xogo_06_masaxe_72bpm',
-      tituloGl: 'A Masaxe Suave a 72 bpm',
-      tituloEs: 'El Masaje Suave a 72 bpm',
-      idade: '0-2 anos',
-      duracionMin: 4,
-      materiaisGl: 'Crema hidratante ou aceite suave, toalla tépeda',
-      materiaisEs: 'Crema hidratante o aceite suave, toalla tibia',
-      obxectivoGl: 'Calma, contacto e vínculo',
-      obxectivoEs: 'Calma, contacto y vínculo',
-      fraseEn: 'Soft and warm, gentle little arms!',
-      guionAdultoGl:
-          'Acaricia as costas ou as pernas ao compás dun pulso de corazón tranquilo (un toque por segundo).',
-      guionAdultoEs:
-          'Acaricia la espalda o las piernas al compás de un pulso de corazón tranquilo (un toque por segundo).',
-      accionKinestesicaGl:
-          'O bebé relaxa os puños, estira as pernas e sorrí relaxado.',
-      accionKinestesicaEs:
-          'El bebé relaja los puños, estira las piernas y sonríe relajado.',
-      criterioExitoGl:
-          'Desaparece a tensión nos membros e mantén contacto visual pracenteiro.',
-      criterioExitoEs:
-          'Desaparece la tensión en los miembros y mantiene contacto visual placentero.',
-    ),
-    XogoFogarItem(
-      id: 'xogo_07_circuito_5palabras',
-      tituloGl: 'O Circuíto das 5 Palabras Diarias',
-      tituloEs: 'El Circuito de las 5 Palabras Diarias',
-      idade: '2-6 anos',
-      duracionMin: 4,
-      materiaisGl:
-          'Cinco cartolinas no chan, unha por cada palabra nova de hoxe (están no calendario da casa)',
-      materiaisEs:
-          'Cinco cartulinas en el suelo, una por cada palabra nueva de hoy (están en el calendario de casa)',
-      obxectivoGl: 'As cinco palabras novas do día, cada unha co seu xesto',
-      obxectivoEs: 'Las cinco palabras nuevas del día, cada una con su gesto',
-      fraseEn: 'Touch your head, touch your knees, freeze!',
-      guionAdultoGl:
-          'Marca as estacións no chan. Modela o movemento primeiro e convida a saltar á seguinte cando escoite o comando.',
-      guionAdultoEs:
-          'Marca las estaciones en el suelo. Modela el movimiento primero e invita a saltar a la siguiente cuando escuche el comando.',
-      accionKinestesicaGl:
-          'Salta dun punto a outro tocando a parte do corpo indicada e remata en parada tónica.',
-      accionKinestesicaEs:
-          'Salta de un punto a otro tocando la parte del cuerpo indicada y termina en parada tónica.',
-      criterioExitoGl:
-          'Executa a secuencia de tres ordes encadeadas sen dubidar e rindo.',
-      criterioExitoEs:
-          'Ejecuta la secuencia de tres órdenes encadenadas sin dudar y riendo.',
-    ),
-    XogoFogarItem(
-      id: 'xogo_08_gran_reto_freeze',
-      tituloGl: 'O Gran Reto Freeze de Lúa',
-      tituloEs: 'El Gran Reto Freeze de Lúa',
-      idade: '2-6 anos',
-      duracionMin: 5,
-      materiaisGl: 'Música a 72 bpm, voz viva da persoa adulta e espazo aberto',
-      materiaisEs:
-          'Música a 72 bpm, voz viva de la persona adulta y espacio abierto',
-      obxectivoGl:
-          'Inhibición motriz, discriminación auditiva e reforzo acumulativo (20 palabras)',
-      obxectivoEs:
-          'Inhibición motriz, discriminación auditiva y refuerzo acumulativo (20 palabras)',
-      fraseEn: 'Dance, dance, jump... Freeze like a statue!',
-      guionAdultoGl:
-          'Bate palmas a compás mentres bailades. De súpeto, di en voz clara: «Freeze!». Agarda 5 segundos en silencio.',
-      guionAdultoEs:
-          'Bate palmas a compás mientras bailáis. De repente, di en voz clara: «Freeze!». Espera 5 segundos en silencio.',
-      accionKinestesicaGl:
-          'Movemento libre e parada instantánea mantendo o equilibrio nun pé ou cos brazos en alto.',
-      accionKinestesicaEs:
-          'Movimiento libre y parada instantánea manteniendo el equilibrio en un pie o con los brazos en alto.',
-      criterioExitoGl:
-          'Detén o movemento inmediatamente ao escoitar o comando sen caer nin falar durante 5 segundos.',
-      criterioExitoEs:
-          'Detiene el movimiento inmediatamente al escuchar el comando sin caer ni hablar durante 5 segundos.',
-    ),
-    XogoFogarItem(
-      id: 'xogo_09_caixa_sons_texturas',
-      tituloGl: 'A Caixa das Texturas',
-      tituloEs: 'La Caja de las Texturas',
-      idade: '1-5 anos',
-      duracionMin: 4,
-      materiaisGl:
-          'Caixa con orificio e catro texturas grandes: algodón, piña, cuncha grande e madeira',
-      materiaisEs:
-          'Caja con orificio y cuatro texturas grandes: algodón, piña, concha grande y madera',
-      obxectivoGl:
-          'Discriminación táctil e as palabras soft, spiky, smooth e hard',
-      obxectivoEs:
-          'Discriminación táctil y las palabras soft, spiky, smooth y hard',
-      fraseEn: 'Find something soft!',
-      guionAdultoGl:
-          'Mete as catro texturas na caixa. Pide á crianza: «Find something soft!». Deixa que explore co tacto antes de sacar.',
-      guionAdultoEs:
-          'Mete las cuatro texturas en la caja. Pide a la criatura: «Find something soft!». Deja que explore con el tacto antes de sacar.',
-      accionKinestesicaGl:
-          'Introduce a man na caixa, palpa as texturas e saca a que se pediu.',
-      accionKinestesicaEs:
-          'Introduce la mano en la caja, palpa las texturas y saca la que se ha pedido.',
-      criterioExitoGl:
-          'Diferencia a textura polo tacto antes de mirala e sorrí ao acertar.',
-      criterioExitoEs:
-          'Diferencia la textura por el tacto antes de mirarla y sonríe al acertar.',
-    ),
-    XogoFogarItem(
-      id: 'xogo_10_eco_pes_mans',
-      tituloGl: 'O Eco dos Pés e Mans a 72 bpm',
-      tituloEs: 'El Eco de Pies y Manos a 72 bpm',
-      idade: '0-4 anos',
-      duracionMin: 3,
-      materiaisGl: 'Chan de madeira ou alfombra e o propio corpo',
-      materiaisEs: 'Suelo de madera o alfombra y el propio cuerpo',
-      obxectivoGl:
-          'Sincronización rítmica bilateral, propiocepción e resposta fónica de eco',
-      obxectivoEs:
-          'Sincronización rítmica bilateral, propiocepción y respuesta fónica de eco',
-      fraseEn: 'Clap your hands, stomp your feet!',
-      guionAdultoGl:
-          'Bate dúas palmas e logo bate dous pés no chan a compás de corazón (72 bpm). Pide que faga o eco.',
-      guionAdultoEs:
-          'Bate dos palmas y luego bate dos pies en el suelo a compás de corazón (72 bpm). Pide que haga el eco.',
-      accionKinestesicaGl:
-          'Imita o patrón rítmico alternando mans e pés en sincronía co adulto.',
-      accionKinestesicaEs:
-          'Imita el patrón rítmico alternando manos y pies en sincronía con el adulto.',
-      criterioExitoGl:
-          'Mantén o pulso rítmico durante polo menos catro compases compartidos.',
-      criterioExitoEs:
-          'Mantiene el pulso rítmico durante al menos cuatro compases compartidos.',
-    ),
-  ];
+  XogosFogar? _xogos;
 
   @override
   void initState() {
     super.initState();
     _language = widget.initialLanguage;
+    _xogos = widget.xogos;
+    if (_xogos == null) {
+      XogosFogar.cargar().then((x) {
+        if (mounted) setState(() => _xogos = x);
+      });
+    }
     _observacions = widget.observacions;
     if (_observacions == null) {
       ObservacionsXogosFogar.cargar().then((o) {
@@ -357,7 +76,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
     final lang = _language;
     final isGl = lang == AppLanguage.gl;
 
-    final xogosFiltrados = _xogos.where((x) {
+    final xogosFiltrados = (_xogos?.xogos ?? const <XogoFogar>[]).where((x) {
       if (_filtroIdade == 'todas') return true;
       return x.idade.contains(_filtroIdade);
     }).toList();
@@ -459,7 +178,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
     );
   }
 
-  Widget _buildCardXogo(XogoFogarItem xogo, bool isGl) {
+  Widget _buildCardXogo(XogoFogar xogo, bool isGl) {
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
       shape: RoundedRectangleBorder(
@@ -495,7 +214,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        isGl ? xogo.tituloGl : xogo.tituloEs,
+                        xogo.titulo.resolve(_language),
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -556,7 +275,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      '${isGl ? "Materiais" : "Materiales"}: ${isGl ? xogo.materiaisGl : xogo.materiaisEs}',
+                      '${isGl ? "Materiais" : "Materiales"}: ${xogo.materiais.resolve(_language)}',
                       style: const TextStyle(
                         fontSize: 14,
                         color: Color(0xFF4A5568),
@@ -622,7 +341,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
             ),
             const SizedBox(height: 2),
             Text(
-              isGl ? xogo.guionAdultoGl : xogo.guionAdultoEs,
+              xogo.guionAdulto.resolve(_language),
               style: const TextStyle(
                   fontSize: 14, color: Color(0xFF2D3748), height: 1.35),
             ),
@@ -639,7 +358,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
             ),
             const SizedBox(height: 2),
             Text(
-              isGl ? xogo.accionKinestesicaGl : xogo.accionKinestesicaEs,
+              xogo.accionKinestesica.resolve(_language),
               style: const TextStyle(
                   fontSize: 14, color: Color(0xFF4A5568), height: 1.35),
             ),

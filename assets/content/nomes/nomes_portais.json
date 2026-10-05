@@ -214,6 +214,31 @@
               "es": "Lúa celebra tu constancia: días seguidos y lecturas hechas."
             }
           ]
+        },
+        {
+          "titulo": "ler xogando",
+          "entradas": [
+            {
+              "id": "lerPestanaSons",
+              "gl": "1. Conciencia fonolóxica",
+              "es": "1. Conciencia fonológica"
+            },
+            {
+              "id": "lerPestanaLetras",
+              "gl": "2. Colocar letras",
+              "es": "2. Colocar letras"
+            },
+            {
+              "id": "lerPestanaCubos",
+              "gl": "3. Xuntar cubos",
+              "es": "3. Juntar cubos"
+            },
+            {
+              "id": "lerPestanaPares",
+              "gl": "4. Pares mínimos",
+              "es": "4. Pares mínimos"
+            }
+          ]
         }
       ],
       "idades": {

@@ -22,6 +22,7 @@ import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart
 import 'package:descubre_con_lua/features/lectura/views/aprender_a_ler_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/main.dart' show DescubreConLuaApp;
+import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 
 import '../helpers/pasarela.dart';
@@ -398,15 +399,15 @@ void main() {
       // Pestanas
       await _ataVer(tester, find.text('1. Conciencia fonolóxica'));
       expect(find.text('1. Conciencia fonolóxica'), findsOneWidget);
-      await _ataVer(tester, find.text('2. Mesa Alphabot'));
-      expect(find.text('2. Mesa Alphabot'), findsOneWidget);
-      await _ataVer(tester, find.text('3. Cubos CVC'));
-      expect(find.text('3. Cubos CVC'), findsOneWidget);
+      await _ataVer(tester, find.text('2. Colocar letras'));
+      expect(find.text('2. Colocar letras'), findsOneWidget);
+      await _ataVer(tester, find.text('3. Xuntar cubos'));
+      expect(find.text('3. Xuntar cubos'), findsOneWidget);
       await _ataVer(tester, find.text('4. Pares mínimos'));
       expect(find.text('4. Pares mínimos'), findsOneWidget);
 
       // Tab 2: Mesa Alphabot
-      await tester.tap(find.text('2. Mesa Alphabot'));
+      await tester.tap(find.text('2. Colocar letras'));
       await tester.pumpAndSettle();
 
       await _ataVer(tester, find.text('LÚA'));
@@ -419,7 +420,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Tab 3: Cubos CVC
-      await tester.tap(find.text('3. Cubos CVC'));
+      await tester.tap(find.text('3. Xuntar cubos'));
       await tester.pumpAndSettle();
 
       await _ataVer(tester, find.text('CAT · /kæt/'));
@@ -617,14 +618,16 @@ void main() {
           // asíncrona do disco non remata.
           observacions: ObservacionsXogosFogar.fromRaw(
               File(ObservacionsXogosFogar.assetPath).readAsStringSync()),
+          xogos:
+              XogosFogar.fromRaw(File(XogosFogar.assetPath).readAsStringSync()),
         ),
       ));
       await tester.pumpAndSettle();
 
-      await _ataVer(tester, find.text('A Caza do Tesouro dos Sons'));
-      expect(find.text('A Caza do Tesouro dos Sons'), findsOneWidget);
-      await _ataVer(tester, find.text('O Barquiño de Samil na Ría'));
-      expect(find.text('O Barquiño de Samil na Ría'), findsOneWidget);
+      await _ataVer(tester, find.text('A caza do tesouro dos sons'));
+      expect(find.text('A caza do tesouro dos sons'), findsOneWidget);
+      await _ataVer(tester, find.text('O barquiño de Samil na ría'));
+      expect(find.text('O barquiño de Samil na ría'), findsOneWidget);
       await _ataVer(tester, find.text('XOGO 100% CORPORAL E FÍSICO'));
       expect(find.text('XOGO 100% CORPORAL E FÍSICO'), findsOneWidget);
 

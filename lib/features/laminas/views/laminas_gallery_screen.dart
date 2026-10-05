@@ -166,9 +166,7 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
             child: Align(
               alignment: AlignmentDirectional.centerStart,
               child: Text(
-                lang == AppLanguage.gl
-                    ? '${_filteredLaminas.length} láminas dispoñibles'
-                    : '${_filteredLaminas.length} láminas disponibles',
+                _contaLaminas(_filteredLaminas.length, lang),
                 style: const TextStyle(
                   color: AppTheme.textSecondary,
                   fontSize: 13,
@@ -322,3 +320,8 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
     );
   }
 }
+
+/// «1 lámina dispoñible», no «1 láminas»: el singular también existe.
+String _contaLaminas(int n, AppLanguage lang) => lang == AppLanguage.gl
+    ? (n == 1 ? '1 lámina dispoñible' : '$n láminas dispoñibles')
+    : (n == 1 ? '1 lámina disponible' : '$n láminas disponibles');

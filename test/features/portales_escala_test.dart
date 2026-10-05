@@ -24,6 +24,7 @@ import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
 import 'package:descubre_con_lua/core/brand/lamina_vector.dart';
 import 'package:descubre_con_lua/features/laminas/views/laminas_gallery_screen.dart';
+import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 
 /// Que as pantallas novas CAIBAN nun teléfono, nas dúas linguas e coa escala de
@@ -305,6 +306,8 @@ void main() {
           XogosFogarScreen(
             observacions: ObservacionsXogosFogar.fromRaw(
                 File(ObservacionsXogosFogar.assetPath).readAsStringSync()),
+            xogos: XogosFogar.fromRaw(
+                File(XogosFogar.assetPath).readAsStringSync()),
             initialLanguage: lang,
             audioService: audioService,
           ),
