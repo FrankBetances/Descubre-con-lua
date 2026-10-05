@@ -665,8 +665,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
       children: [
         _buildGarantiaZeroScreen(
           isGl
-              ? 'Pares Mínimos: adestramento de discriminación auditiva fina. O adulto oculta a boca cunha folla para que a crianza distinga o son exclusivamente polo oído.'
-              : 'Pares Mínimos: entrenamiento de discriminación auditiva fina. El adulto oculta la boca con una hoja para que la criatura distinga el sonido exclusivamente por el oído.',
+              ? 'Pares Mínimos: adestramento de discriminación auditiva fina.'
+              : 'Pares Mínimos: entrenamiento de discriminación auditiva fina.',
         ),
         const SizedBox(height: 14),
         Card(

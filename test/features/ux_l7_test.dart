@@ -272,8 +272,13 @@ void main() {
         ]) {
           expect(find.widgetWithText(Tab, nome.resolve(lang)), findsOneWidget);
         }
-        expect(find.textContaining('Alphabot'), findsNothing);
-        expect(find.textContaining('CVC'), findsNothing);
+        final barra = find.byType(TabBar);
+        expect(
+            find.descendant(
+                of: barra, matching: find.textContaining('Alphabot')),
+            findsNothing);
+        expect(find.descendant(of: barra, matching: find.textContaining('CVC')),
+            findsNothing);
       });
 
       testWidgets('os xogos de movemento pintan o seu título (${lang.code})',
@@ -318,6 +323,12 @@ void main() {
       // Lo que se quitó: tapar la boca para que la criatura no lea los
       // labios. Poner la mano delante de la boca para notar el aire de /t/
       // es otra cosa, una pista táctil, y se queda.
+      // El aviso de la pestaña está escrito en la pantalla, no en el JSON.
+      final pantalla =
+          ler('lib/features/lectura/views/aprender_a_ler_screen.dart')
+              .toLowerCase();
+      expect(pantalla.contains('oculta a boca'), isFalse);
+      expect(pantalla.contains('oculta la boca'), isFalse);
       final lectura = jsonDecode(ler(ContidoLectura.assetPath)) as Map;
       for (final par in lectura['paresMinimos'] as List) {
         for (final t in ((par as Map)['instrucion'] as Map).values) {

@@ -87,7 +87,7 @@ flutter test --tags capturas --update-goldens test/laminas_hoja_test.dart
 
 ## Las capturas de la app de escritorio
 
-Las que empiezan por `l0-` a `l6-`, y las de `vocabulario-flower-`, son otra
+Las que empiezan por `l0-` a `l7-`, y las de `vocabulario-flower-`, son otra
 cosa: la app **compilada para escritorio** (Linux), abierta en una pantalla
 virtual de 360 × 780 px y recorrida a mano por el mismo camino que usa quien la
 maneja (hasta L4, Inicio → Comezar → portal → módulo; desde L5, Inicio → Na
@@ -135,3 +135,5 @@ la de Android, pero no sus barras del sistema, su densidad ni su escala de texto
 | `l5-portas-escola-{gl,es}.png` | Lo mismo desde Recursos y Eu: las once puertas de Recursos, los premios de la docente y sus dos guías |
 | `l6-casa-{gl,es}.png` | Casa con la letra de L6, en cuatro pantallas: el inicio (GL/ES de 48 dp), el calendario (trimestres de 48 dp), «Ler xogando» y Contos |
 | `l6-escola-{gl,es}.png` | La escuela con la letra de L6: el Modo Aula (pestañas de ciclo de 48 dp), el vocabulario, la ciencia y Hoy |
+| `l7-casa-{gl,es}.png` | Casa tras L7: los juegos de movimiento con minúscula, «Ler xogando» con sus pestañas nuevas y los pares mínimos sin tapar la boca, «1 lámina disponible», «Día 21 del curso» y la cápsula sin «circuítos neurais» |
+| `l7-escola-{gl,es}.png` | La escuela tras L7: la dinámica del lunes sin «72 bpm», la del viernes sin difusor, y la última fase de la asamblea, de la que «Rematar» vuelve sin preguntar |

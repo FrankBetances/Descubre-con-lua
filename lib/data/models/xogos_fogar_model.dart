@@ -90,4 +90,15 @@ class XogosFogar {
     return _enCurso ??=
         rootBundle.loadString(assetPath).then(XogosFogar.fromRaw);
   }
+
+  /// Solo para los tests: olvida lo cargado.
+  @visibleForTesting
+  static void olvidar() => _enCurso = null;
+
+  /// Solo para los tests: deja la carga en avería, para comprobar sobre la
+  /// pantalla de verdad que el fallo se enseña.
+  @visibleForTesting
+  static void sembrarFallo(Object error) {
+    _enCurso = Future<XogosFogar>.error(error)..ignore();
+  }
 }

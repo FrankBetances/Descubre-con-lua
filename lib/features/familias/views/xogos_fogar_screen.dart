@@ -6,6 +6,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/que_observar.dart';
 import '../../../data/models/xogos_fogar_model.dart';
 import '../../../data/models/xogos_fogar_observar_model.dart';
+import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../nomes_familias.dart';
 
@@ -52,6 +53,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
   String _filtroIdade = 'todas';
   ObservacionsXogosFogar? _observacions;
   XogosFogar? _xogos;
+  Object? _erroXogos;
 
   @override
   void initState() {
@@ -61,6 +63,10 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
     if (_xogos == null) {
       XogosFogar.cargar().then((x) {
         if (mounted) setState(() => _xogos = x);
+      }).catchError((Object e) {
+        // Un fallo de lectura se enseña: sin esto la pantalla saldría vacía
+        // sin decir por qué.
+        if (mounted) setState(() => _erroXogos = e);
       });
     }
     _observacions = widget.observacions;
@@ -89,82 +95,87 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
         onLanguageChanged: _cambiarLingua,
       ),
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(16),
-          children: [
-            // Banner de Garantía Zero-Screen
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: const Color(0xFFFFF9EE),
-                borderRadius: BorderRadius.circular(14),
-                border: Border.all(color: const Color(0xFFF6D4A0)),
-              ),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+        child: _erroXogos != null
+            ? AvisoContenidoIlegible(
+                asset: XogosFogar.assetPath,
+                language: lang,
+              )
+            : ListView(
+                padding: const EdgeInsets.all(16),
                 children: [
-                  Icon(
-                    Icons.volunteer_activism_rounded,
-                    color: context.acento,
-                    size: 26,
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
+                  // Banner de Garantía Zero-Screen
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFFFF9EE),
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: const Color(0xFFF6D4A0)),
+                    ),
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          isGl
-                              ? 'XOGO 100% CORPORAL E FÍSICO'
-                              : 'JUEGO 100% CORPORAL Y FÍSICO',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                            color: context.acento,
-                            letterSpacing: 0.8,
-                          ),
+                        Icon(
+                          Icons.volunteer_activism_rounded,
+                          color: context.acento,
+                          size: 26,
                         ),
-                        const SizedBox(height: 4),
-                        Text(
-                          isGl
-                              ? 'A pantalla é a túa partitura. A crianza xoga con obxectos reais da casa, movemento corporal e a túa voz viva.'
-                              : 'La pantalla es tu partitura. La criatura juega con objetos reales de la casa, movimiento corporal y tu voz viva.',
-                          style: const TextStyle(
-                            fontSize: 14,
-                            color: AppTheme.textPrimary,
-                            height: 1.35,
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                isGl
+                                    ? 'XOGO 100% CORPORAL E FÍSICO'
+                                    : 'JUEGO 100% CORPORAL Y FÍSICO',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w800,
+                                  color: context.acento,
+                                  letterSpacing: 0.8,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                isGl
+                                    ? 'A pantalla é a túa partitura. A crianza xoga con obxectos reais da casa, movemento corporal e a túa voz viva.'
+                                    : 'La pantalla es tu partitura. La criatura juega con objetos reales de la casa, movimiento corporal y tu voz viva.',
+                                style: const TextStyle(
+                                  fontSize: 14,
+                                  color: AppTheme.textPrimary,
+                                  height: 1.35,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
                     ),
                   ),
+                  const SizedBox(height: 14),
+
+                  // Filtro por idades
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        _buildFiltroChip('todas',
+                            isGl ? 'Todas as idades' : 'Todas las edades'),
+                        const SizedBox(width: 8),
+                        _buildFiltroChip('0-2', '0 a 2 anos'),
+                        const SizedBox(width: 8),
+                        _buildFiltroChip('2-4', '2 a 4 anos'),
+                        const SizedBox(width: 8),
+                        _buildFiltroChip('2-6', '3 a 6 anos'),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 14),
+
+                  // Lista de Xogos
+                  ...xogosFiltrados.map((xogo) => _buildCardXogo(xogo, isGl)),
                 ],
               ),
-            ),
-            const SizedBox(height: 14),
-
-            // Filtro por idades
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  _buildFiltroChip(
-                      'todas', isGl ? 'Todas as idades' : 'Todas las edades'),
-                  const SizedBox(width: 8),
-                  _buildFiltroChip('0-2', '0 a 2 anos'),
-                  const SizedBox(width: 8),
-                  _buildFiltroChip('2-4', '2 a 4 anos'),
-                  const SizedBox(width: 8),
-                  _buildFiltroChip('2-6', '3 a 6 anos'),
-                ],
-              ),
-            ),
-            const SizedBox(height: 14),
-
-            // Lista de Xogos
-            ...xogosFiltrados.map((xogo) => _buildCardXogo(xogo, isGl)),
-          ],
-        ),
       ),
     );
   }

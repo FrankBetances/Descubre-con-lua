@@ -5,10 +5,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/widgets/aviso_contenido_ilegible.dart';
+import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
 import 'package:descubre_con_lua/data/repositories/ritual_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
+import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart';
 
 /// Lo que la app le pide al PAQUETE, pedido al paquete.
 ///
@@ -143,6 +145,27 @@ void main() {
 
       expect(find.byType(AvisoContenidoIlegible), findsOneWidget);
       expect(find.byType(CircularProgressIndicator), findsNothing);
+    });
+  });
+
+  // Los diez juegos de movimiento salieron del widget a un JSON en L7. Ahora
+  // pueden faltar en el paquete o no leerse, como el calendario.
+  group('los juegos de movimiento', () {
+    tearDown(XogosFogar.olvidar);
+
+    test('xogos_fogar.json se lee del bundle y trae los diez', () async {
+      final raw = await rootBundle.loadString(XogosFogar.assetPath);
+      expect(XogosFogar.fromRaw(raw).xogos, hasLength(10));
+    });
+
+    testWidgets('si no se pueden leer, la pantalla lo dice', (tester) async {
+      XogosFogar.sembrarFallo(Exception('asset ausente'));
+      await tester.pumpWidget(const MaterialApp(
+        home: XogosFogarScreen(initialLanguage: AppLanguage.gl),
+      ));
+      await tester.pump();
+
+      expect(find.byType(AvisoContenidoIlegible), findsOneWidget);
     });
   });
 }
