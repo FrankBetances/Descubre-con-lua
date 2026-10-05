@@ -42,6 +42,7 @@ class SelectorCompactoDoAula extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: AppTheme.spaceLg),
           child: Semantics(
+            container: true,
             button: true,
             expanded: aberto,
             label: isGl ? 'Grupo e día: $resumo' : 'Grupo y día: $resumo',

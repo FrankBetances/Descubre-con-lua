@@ -280,7 +280,7 @@ class _TarxetaDoDiaNoFogar extends StatelessWidget {
                   child: Text(
                     isGl ? 'Sen pantallas' : 'Sin pantallas',
                     style: TextStyle(
-                      fontSize: 11,
+                      fontSize: 12,
                       fontWeight: FontWeight.bold,
                       color: context.acento,
                     ),
@@ -361,7 +361,7 @@ class _Bloque extends StatelessWidget {
                 rotulo,
                 style: TextStyle(
                   fontFamily: AppTheme.fontFamily,
-                  fontSize: 11,
+                  fontSize: 12,
                   fontWeight: FontWeight.w800,
                   letterSpacing: 0.6,
                   color: context.acento,

@@ -362,7 +362,7 @@ class _SelectorDeClase extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                           fontFamily: AppTheme.fontFamily,
-                          fontSize: 11,
+                          fontSize: 12,
                           fontWeight: FontWeight.w600,
                           color: activo ? Colors.white : AppTheme.textMuted,
                         ),

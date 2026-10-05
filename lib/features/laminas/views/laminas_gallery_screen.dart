@@ -294,7 +294,7 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                 lamina.en,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 14,
                   color: context.acento,
                   fontWeight: FontWeight.w500,
                 ),
@@ -310,7 +310,7 @@ class _LaminasGalleryScreenState extends State<LaminasGalleryScreen> {
                   lamina.cefr,
                   style: TextStyle(
                     color: context.acento,
-                    fontSize: 10,
+                    fontSize: 12,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

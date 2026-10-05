@@ -748,17 +748,17 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       })> _trimestres = [
     (
       nome: LocalizedString(gl: '1.º Outono', es: '1.º Otoño'),
-      meses: LocalizedString(gl: 'Set - Dec', es: 'Sep - Dic'),
+      meses: LocalizedString(gl: 'Set-Dec', es: 'Sep-Dic'),
       mesesCalendario: [9, 10, 11, 12],
     ),
     (
       nome: LocalizedString(gl: '2.º Inverno', es: '2.º Invierno'),
-      meses: LocalizedString(gl: 'Xan - Mar', es: 'Ene - Mar'),
+      meses: LocalizedString(gl: 'Xan-Mar', es: 'Ene-Mar'),
       mesesCalendario: [1, 2, 3],
     ),
     (
       nome: LocalizedString(gl: '3.º Primavera', es: '3.º Primavera'),
-      meses: LocalizedString(gl: 'Abr - Xuñ', es: 'Abr - Jun'),
+      meses: LocalizedString(gl: 'Abr-Xuñ', es: 'Abr-Jun'),
       mesesCalendario: [4, 5, 6],
     ),
   ];
@@ -816,6 +816,9 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
               borderRadius: BorderRadius.circular(9),
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
+                // 48 de alto como mínimo: la diana táctil de Android (L6).
+                constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: isActivo ? Colors.white : Colors.transparent,
                   borderRadius: BorderRadius.circular(9),
@@ -837,7 +840,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                       child: Text(
                         t.nome,
                         style: TextStyle(
-                          fontSize: 11,
+                          fontSize: 12,
                           fontWeight:
                               isActivo ? FontWeight.bold : FontWeight.w600,
                           color: isActivo
@@ -852,7 +855,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                       child: Text(
                         t.sub,
                         style: TextStyle(
-                          fontSize: 9,
+                          fontSize: 12,
                           color: isActivo ? context.acento : AppTheme.textMuted,
                           fontWeight:
                               isActivo ? FontWeight.w700 : FontWeight.normal,
@@ -884,7 +887,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         Text(
           '$rotulo · ${isGl ? 'ANOS' : 'AÑOS'}',
           style: const TextStyle(
-            fontSize: 11,
+            fontSize: 12,
             fontWeight: FontWeight.w800,
             letterSpacing: 0.8,
             color: AppTheme.textSecondary,
@@ -904,8 +907,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 tooltip: op.etiqueta.resolve(_language),
                 selected: op.valor == _cursoAberto,
                 showCheckmark: false,
-                visualDensity: VisualDensity.compact,
-
+                // Sin densidad compacta: con ella la diana se quedaba en
+                // 40 dp, por debajo de los 48 de Android (L6).
                 onSelected: (sel) {
                   if (sel && op.valor != _cursoAberto) _irAoCurso(op.valor);
                 },
@@ -1013,6 +1016,9 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       borderRadius: BorderRadius.circular(AppTheme.radiusField),
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 10),
+        // 48 de alto como mínimo: la diana táctil de Android (L6).
+        constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           color: activo ? AppTheme.card : Colors.transparent,
           borderRadius: BorderRadius.circular(AppTheme.radiusField),
@@ -1279,7 +1285,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                               _guiaAtencionSubtitulo.resolve(_language),
                               style: const TextStyle(
                                 color: AppTheme.textSecondary,
-                                fontSize: 11,
+                                fontSize: 12,
                                 height: 1.3,
                               ),
                             ),
@@ -1338,7 +1344,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       Text(
         isGl ? 'A ASEMBLEA DE HOXE' : 'LA ASAMBLEA DE HOY',
         style: TextStyle(
-          fontSize: 11,
+          fontSize: 12,
           fontWeight: FontWeight.w800,
           letterSpacing: 1.1,
           color: context.acento,
@@ -1350,7 +1356,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             ? 'Cada día do mes ten a súa asemblea e as súas palabras en inglés: elixe semana, día e grupo.'
             : 'Cada día del mes tiene su asamblea y sus palabras en inglés: elige semana, día y grupo.',
         style: const TextStyle(
-          fontSize: 12.5,
+          fontSize: 14,
           color: AppTheme.textSecondary,
           height: 1.35,
         ),
@@ -1488,7 +1494,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   child: Text(
                     badge,
                     style: TextStyle(
-                      fontSize: 12,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                       color: color,
                     ),

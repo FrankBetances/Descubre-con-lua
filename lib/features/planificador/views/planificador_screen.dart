@@ -235,7 +235,7 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                               Text(
                                 mes.objetivoPedagogico.resolve(lang),
                                 style: const TextStyle(
-                                  fontSize: 13,
+                                  fontSize: 14,
                                   color: AppTheme.textSecondary,
                                 ),
                               ),
@@ -280,7 +280,7 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
                                         'L3: "${mes.ingles.frase}" (TPR: ${mes.ingles.tpr.join(", ")})',
                                         style: TextStyle(
                                           color: context.acento,
-                                          fontSize: 12,
+                                          fontSize: 14,
                                           fontWeight: FontWeight.w600,
                                         ),
                                       ),
@@ -315,7 +315,7 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
           child: Text.rich(
             TextSpan(
               style: const TextStyle(
-                  fontSize: 13, color: AppTheme.textPrimary, height: 1.3),
+                  fontSize: 14, color: AppTheme.textPrimary, height: 1.3),
               children: [
                 TextSpan(
                   text: '$title: ',

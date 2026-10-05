@@ -107,7 +107,7 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                                 'la persona adulta. No son un protocolo clínico ni '
                                 'sustituyen la valoración de un profesional.',
                         style: const TextStyle(
-                          fontSize: 12,
+                          fontSize: 14,
                           height: 1.4,
                           color: AppTheme.warning,
                         ),
@@ -154,7 +154,7 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                                   Text(
                                     est.subtitulo.resolve(lang),
                                     style: const TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 14,
                                       color: AppTheme.textSecondary,
                                     ),
                                   ),
@@ -179,7 +179,7 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                           Text(
                             '${lang == AppLanguage.gl ? 'Fonte' : 'Fuente'}: ${fonte.resolve(lang)}',
                             style: const TextStyle(
-                              fontSize: 12,
+                              fontSize: 14,
                               fontStyle: FontStyle.italic,
                               color: AppTheme.textSecondary,
                               height: 1.35,
@@ -219,7 +219,7 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                                 child: Text(
                                   est.exemploDialogoAula.resolve(lang),
                                   style: const TextStyle(
-                                    fontSize: 13,
+                                    fontSize: 14,
                                     fontStyle: FontStyle.italic,
                                     color: AppTheme.warning,
                                   ),
@@ -249,7 +249,7 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
                                 child: Text(
                                   'Evitar: ${est.erroComunAEvitar.resolve(lang)}',
                                   style: const TextStyle(
-                                    fontSize: 12,
+                                    fontSize: 14,
                                     color: AppTheme.errorInk,
                                   ),
                                 ),
@@ -293,7 +293,7 @@ class _EstrategiasScreenState extends State<EstrategiasScreen> {
         Text(
           content,
           style: const TextStyle(
-            fontSize: 13,
+            fontSize: 14,
             color: AppTheme.textPrimary,
             height: 1.35,
           ),

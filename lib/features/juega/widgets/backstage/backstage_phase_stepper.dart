@@ -116,7 +116,7 @@ class BackstagePhaseStepper extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontFamily: AppTheme.fontFamily,
-                          fontSize: 11.5,
+                          fontSize: 12,
                           fontWeight:
                               isCurrent ? FontWeight.w800 : FontWeight.w600,
                           color: textColor,

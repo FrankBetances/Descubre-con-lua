@@ -139,6 +139,10 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                             BorderRadius.circular(AppTheme.radiusField),
                         child: Container(
                           padding: const EdgeInsets.symmetric(vertical: 10),
+                          // 48 de alto como mínimo: la diana táctil de Android (L6).
+                          constraints: const BoxConstraints(
+                              minHeight: AppTheme.touchMin),
+                          alignment: Alignment.center,
                           decoration: BoxDecoration(
                             color: _selectedCiclo == CicloEducativo.primerCiclo
                                 ? AppTheme.card
@@ -192,6 +196,10 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
                             BorderRadius.circular(AppTheme.radiusField),
                         child: Container(
                           padding: const EdgeInsets.symmetric(vertical: 10),
+                          // 48 de alto como mínimo: la diana táctil de Android (L6).
+                          constraints: const BoxConstraints(
+                              minHeight: AppTheme.touchMin),
+                          alignment: Alignment.center,
                           decoration: BoxDecoration(
                             color: _selectedCiclo == CicloEducativo.segundoCiclo
                                 ? AppTheme.backstageBg

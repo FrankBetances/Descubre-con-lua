@@ -143,7 +143,7 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                         Text(
                           din.subtitulo.resolve(lang),
                           style: const TextStyle(
-                            fontSize: 13,
+                            fontSize: 14,
                             color: AppTheme.textSecondary,
                           ),
                         ),
@@ -199,7 +199,7 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                                 child: Text(
                                   din.fraseDocente.resolve(lang),
                                   style: const TextStyle(
-                                    fontSize: 13,
+                                    fontSize: 14,
                                     fontStyle: FontStyle.italic,
                                     color: AppTheme.warning,
                                   ),
@@ -237,7 +237,7 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
         Text(
           content,
           style: const TextStyle(
-            fontSize: 13,
+            fontSize: 14,
             color: AppTheme.textPrimary,
             height: 1.35,
           ),

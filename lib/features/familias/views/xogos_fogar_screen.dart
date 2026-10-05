@@ -399,7 +399,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                               ? 'XOGO 100% CORPORAL E FÍSICO'
                               : 'JUEGO 100% CORPORAL Y FÍSICO',
                           style: TextStyle(
-                            fontSize: 11,
+                            fontSize: 12,
                             fontWeight: FontWeight.w800,
                             color: context.acento,
                             letterSpacing: 0.8,
@@ -411,7 +411,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                               ? 'A pantalla é a túa partitura. A crianza xoga con obxectos reais da casa, movemento corporal e a túa voz viva.'
                               : 'La pantalla es tu partitura. La criatura juega con objetos reales de la casa, movimiento corporal y tu voz viva.',
                           style: const TextStyle(
-                            fontSize: 12,
+                            fontSize: 14,
                             color: AppTheme.textPrimary,
                             height: 1.35,
                           ),
@@ -515,7 +515,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                             child: Text(
                               xogo.idade,
                               style: TextStyle(
-                                fontSize: 11,
+                                fontSize: 12,
                                 fontWeight: FontWeight.bold,
                                 color: context.acento,
                               ),
@@ -526,7 +526,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                             child: Text(
                               '${xogo.duracionMin} min',
                               style: const TextStyle(
-                                fontSize: 11,
+                                fontSize: 12,
                                 color: AppTheme.textSecondary,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -558,7 +558,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                     child: Text(
                       '${isGl ? "Materiais" : "Materiales"}: ${isGl ? xogo.materiaisGl : xogo.materiaisEs}',
                       style: const TextStyle(
-                        fontSize: 12,
+                        fontSize: 14,
                         color: Color(0xFF4A5568),
                         fontWeight: FontWeight.w500,
                       ),
@@ -589,7 +589,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                         child: Text(
                           'Comando oral (inglés L3)',
                           style: TextStyle(
-                            fontSize: 11,
+                            fontSize: 12,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFF2B6CB0),
                           ),
@@ -624,7 +624,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
             Text(
               isGl ? xogo.guionAdultoGl : xogo.guionAdultoEs,
               style: const TextStyle(
-                  fontSize: 13, color: Color(0xFF2D3748), height: 1.35),
+                  fontSize: 14, color: Color(0xFF2D3748), height: 1.35),
             ),
             const SizedBox(height: 10),
 
@@ -641,7 +641,7 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
             Text(
               isGl ? xogo.accionKinestesicaGl : xogo.accionKinestesicaEs,
               style: const TextStyle(
-                  fontSize: 13, color: Color(0xFF4A5568), height: 1.35),
+                  fontSize: 14, color: Color(0xFF4A5568), height: 1.35),
             ),
             const SizedBox(height: 14),
 

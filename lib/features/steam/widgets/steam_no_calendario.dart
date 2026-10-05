@@ -152,7 +152,7 @@ class FilaSteamDoDia extends StatelessWidget {
                       rotulo,
                       style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
-                        fontSize: 11,
+                        fontSize: 12,
                         fontWeight: FontWeight.w700,
                         color: steamTinta,
                       ),
@@ -173,7 +173,7 @@ class FilaSteamDoDia extends StatelessWidget {
                       detalle,
                       style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
-                        fontSize: 11,
+                        fontSize: 12,
                         color: AppTheme.textSecondary,
                       ),
                     ),
@@ -244,7 +244,7 @@ class AvisoSteamDoMes extends StatelessWidget {
                 Text(
                   _este.resolve(language),
                   style: const TextStyle(
-                    fontSize: 11,
+                    fontSize: 12,
                     fontWeight: FontWeight.w800,
                     letterSpacing: 0.6,
                     color: steamTinta,

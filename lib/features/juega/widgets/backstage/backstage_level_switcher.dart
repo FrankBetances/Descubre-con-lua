@@ -75,7 +75,7 @@ class BackstageLevelSwitcher extends StatelessWidget {
                           sub,
                           style: TextStyle(
                             fontFamily: AppTheme.fontFamily,
-                            fontSize: 11.0,
+                            fontSize: 12,
                             fontWeight: FontWeight.w500,
                             color: isSelected
                                 ? AppTheme.backstageBg

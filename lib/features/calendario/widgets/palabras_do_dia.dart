@@ -94,7 +94,7 @@ class PalabrasDoDia extends StatelessWidget {
           key: const Key('palabras_do_dia_resumo'),
           style: TextStyle(
             fontFamily: AppTheme.fontFamily,
-            fontSize: 13.5,
+            fontSize: 14,
             fontWeight: FontWeight.w800,
             color: context.acento,
             height: 1.3,
@@ -106,7 +106,7 @@ class PalabrasDoDia extends StatelessWidget {
             '${isGl ? 'Semana' : 'Semana'} ${semana!.semana} · '
             '${semana!.tema.resolve(language)}',
             style: const TextStyle(
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: FontWeight.w600,
               color: AppTheme.textSecondary,
             ),
@@ -117,7 +117,7 @@ class PalabrasDoDia extends StatelessWidget {
           Text(
             dinamica,
             style: const TextStyle(
-              fontSize: 13,
+              fontSize: 14,
               color: AppTheme.textPrimary,
               height: 1.4,
             ),
@@ -196,7 +196,7 @@ class BloqueInglesDoDia extends StatelessWidget {
             rotulo,
             style: TextStyle(
               fontFamily: AppTheme.fontFamily,
-              fontSize: 11,
+              fontSize: 12,
               fontWeight: FontWeight.w800,
               letterSpacing: 0.8,
               color: context.acento,
@@ -344,7 +344,7 @@ class PalabraConXesto extends StatelessWidget {
                     marca!,
                     style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 11,
+                      fontSize: 12,
                       fontWeight: FontWeight.w800,
                     ),
                   ),
@@ -363,7 +363,7 @@ class PalabraConXesto extends StatelessWidget {
               ],
             ),
             style: const TextStyle(
-              fontSize: 12.5,
+              fontSize: 14,
               color: AppTheme.textSecondary,
               height: 1.35,
             ),
@@ -394,8 +394,9 @@ class _Repaso extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
+    // Las palabras del repaso se leen: 14 px, el mínimo de lectura (M6).
     const estilo = TextStyle(
-      fontSize: 12.5,
+      fontSize: 14,
       color: AppTheme.textSecondary,
       height: 1.4,
     );

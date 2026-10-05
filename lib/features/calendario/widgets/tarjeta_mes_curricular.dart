@@ -255,7 +255,7 @@ class _Cabecera extends StatelessWidget {
                   child: Text(
                     curso.resolve(lang),
                     style: const TextStyle(
-                      fontSize: 11,
+                      fontSize: 12,
                       fontWeight: FontWeight.w800,
                       color: Colors.white,
                     ),
@@ -799,7 +799,7 @@ class _EstadoBadge extends StatelessWidget {
           Text(
             label,
             style: const TextStyle(
-              fontSize: 10,
+              fontSize: 12,
               fontWeight: FontWeight.w700,
               color: Colors.white,
             ),

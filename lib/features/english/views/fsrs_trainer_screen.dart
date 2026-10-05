@@ -287,7 +287,7 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                 ? '$_introducidas palabras xa saíron neste curso · $_xaVistas xa repasadas · $quedan nesta rolda · $_repasosFeitos repasos feitos'
                 : '$_introducidas palabras ya salieron en este curso · $_xaVistas ya repasadas · $quedan en esta ronda · $_repasosFeitos repasos hechos',
             style: const TextStyle(
-              fontSize: 12,
+              fontSize: 14,
               color: AppTheme.textSecondary,
               height: 1.35,
             ),
@@ -328,7 +328,7 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                 Text(
                   '$motivo · ${_indice + 1}/${_rolda.length}',
                   style: TextStyle(
-                    fontSize: 11,
+                    fontSize: 12,
                     fontWeight: FontWeight.w800,
                     letterSpacing: 0.8,
                     color: context.acento,
@@ -415,7 +415,7 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                       color: AppTheme.textSecondary,
-                      fontSize: 13.5,
+                      fontSize: 14,
                     ),
                   ),
               ],

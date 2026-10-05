@@ -130,7 +130,7 @@ class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
                         ? '${formatarMiles(programa.totalPalabras)} palabras en ${programa.cursos.length} cursos, ${programa.modelo.ritmoDiario} novas cada día de luns a xoves.'
                         : '${formatarMiles(programa.totalPalabras)} palabras en ${programa.cursos.length} cursos, ${programa.modelo.ritmoDiario} nuevas cada día de lunes a jueves.',
                     style: const TextStyle(
-                      fontSize: 13,
+                      fontSize: 14,
                       color: AppTheme.textSecondary,
                       height: 1.35,
                     ),
@@ -257,7 +257,7 @@ class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
               '${PalabrasDoDia.nomesDosDias[d - 1].resolve(lang).toUpperCase()}'
               ' · ${isGl ? 'BLOQUE' : 'BLOQUE'} ${semana.planDoDia(d).bloque}',
               style: TextStyle(
-                fontSize: 11,
+                fontSize: 12,
                 fontWeight: FontWeight.w800,
                 letterSpacing: 0.8,
                 color: context.acento,
@@ -277,7 +277,7 @@ class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
               ? 'VENRES · RETO: as ${semana.palabras.length} da semana, sen novas.'
               : 'VIERNES · RETO: las ${semana.palabras.length} de la semana, sin nuevas.',
           style: TextStyle(
-            fontSize: 11,
+            fontSize: 14,
             fontWeight: FontWeight.w800,
             letterSpacing: 0.6,
             color: context.acento,
@@ -340,7 +340,7 @@ class _Fila extends StatelessWidget {
               TextSpan(text: ' · ${palabra.tprAction.resolve(language)}'),
             ]),
             style: const TextStyle(
-              fontSize: 12.5,
+              fontSize: 14,
               color: AppTheme.textSecondary,
               height: 1.35,
             ),
@@ -350,7 +350,7 @@ class _Fila extends StatelessWidget {
             Text(
               onde!,
               style: TextStyle(
-                fontSize: 11.5,
+                fontSize: 12,
                 color: context.acento,
                 fontWeight: FontWeight.w600,
               ),

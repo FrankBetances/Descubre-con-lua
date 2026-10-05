@@ -264,7 +264,7 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
                       'y la frase están escritas a mano; la frecuencia sale de '
                       'wordfreq.',
               style: const TextStyle(
-                fontSize: 11,
+                fontSize: 14,
                 color: AppTheme.textMuted,
                 height: 1.35,
               ),
@@ -470,7 +470,7 @@ class _TarxetaDePalabra extends StatelessWidget {
               Text(
                 palabra.definicion,
                 style: const TextStyle(
-                  fontSize: 12.5,
+                  fontSize: 14,
                   color: AppTheme.textSecondary,
                   height: 1.35,
                 ),
@@ -546,7 +546,7 @@ class _Etiqueta extends StatelessWidget {
         style: TextStyle(
           color: tinta,
           fontWeight: FontWeight.w700,
-          fontSize: 11,
+          fontSize: 12,
         ),
       ),
     );

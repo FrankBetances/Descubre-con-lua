@@ -122,7 +122,7 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                             : 'Juego 100% físico para la infancia. Usa letras reales de madera o imanes en la nevera.',
                         style: const TextStyle(
                           color: AppTheme.warning,
-                          fontSize: 12,
+                          fontSize: 14,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -225,7 +225,7 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                         Text(
                           'Suxestión de material: ${item['material']}',
                           style: const TextStyle(
-                            fontSize: 12,
+                            fontSize: 14,
                             color: AppTheme.textSecondary,
                             fontStyle: FontStyle.italic,
                           ),

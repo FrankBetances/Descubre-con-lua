@@ -257,7 +257,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
                 Text(
                   _ordesAxuda.resolve(_language),
                   style: const TextStyle(
-                    fontSize: 13,
+                    fontSize: 14,
                     color: AppTheme.textSecondary,
                     height: 1.4,
                   ),
@@ -279,7 +279,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
                 Text(
                   _observarNota.resolve(_language),
                   style: const TextStyle(
-                    fontSize: 12.5,
+                    fontSize: 14,
                     fontStyle: FontStyle.italic,
                     color: AppTheme.textSecondary,
                     height: 1.4,
@@ -360,7 +360,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
                 child: Text(
                   SteamTextos.senPantallas.resolve(_language),
                   style: TextStyle(
-                    fontSize: 13,
+                    fontSize: 14,
                     fontWeight: FontWeight.w600,
                     color: context.acento,
                     height: 1.4,
@@ -468,7 +468,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
                 Text(
                   rotulo.resolve(_language).toUpperCase(),
                   style: const TextStyle(
-                    fontSize: 11,
+                    fontSize: 12,
                     fontWeight: FontWeight.w800,
                     letterSpacing: 0.6,
                     color: steamTinta,
@@ -716,7 +716,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
           Text(
             orden.accion.resolve(_language),
             style: const TextStyle(
-              fontSize: 13.5,
+              fontSize: 14,
               color: AppTheme.textPrimary,
               height: 1.4,
             ),
@@ -747,7 +747,7 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
             child: Text(
               l,
               style: const TextStyle(
-                fontSize: 13.5,
+                fontSize: 14,
                 color: AppTheme.textPrimary,
                 height: 1.4,
               ),

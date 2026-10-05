@@ -86,7 +86,7 @@ class QueObservar extends StatelessWidget {
           Text(
             _nota.resolve(language),
             style: const TextStyle(
-              fontSize: 12.5,
+              fontSize: 14,
               fontStyle: FontStyle.italic,
               color: AppTheme.textSecondary,
               height: 1.4,

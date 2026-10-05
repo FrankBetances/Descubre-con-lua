@@ -198,7 +198,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
                   : 'Escucha primero, sin leer. Después haz el gesto.',
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 13.5,
+                fontSize: 14,
                 color: AppTheme.textSecondary,
               ),
             ),

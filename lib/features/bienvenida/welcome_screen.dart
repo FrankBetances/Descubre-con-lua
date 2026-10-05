@@ -245,6 +245,7 @@ class _Resposta extends StatelessWidget {
     // ellos se iría también la acción de pulsar del InkWell. Va aquí, o
     // TalkBack anuncia el botón y el doble toque no hace nada.
     return Semantics(
+      container: true,
       button: true,
       label: '$nome. $di',
       onTap: onTap,
@@ -439,9 +440,10 @@ class _LanguageSelector extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.0),
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 150),
+              // 48 × 48: la diana mínima de Android (L6).
               constraints: const BoxConstraints(
-                minHeight: 38.0,
-                minWidth: 42.0,
+                minHeight: AppTheme.touchMin,
+                minWidth: AppTheme.touchMin,
               ),
               padding: const EdgeInsets.symmetric(
                 horizontal: 10.0,

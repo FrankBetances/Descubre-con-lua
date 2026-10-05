@@ -66,6 +66,7 @@ class SelectorIdiomaWidget extends StatelessWidget {
   Widget _opcion(AppLanguage lang, Color acento, double ancho) {
     final elixida = currentLanguage == lang;
     return Semantics(
+      container: true,
       button: true,
       selected: elixida,
       label: lang.displayName,

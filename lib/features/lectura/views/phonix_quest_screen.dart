@@ -166,7 +166,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                               style: TextStyle(
                                 color: context.acento,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 13,
+                                fontSize: 14,
                               ),
                             ),
                             const SizedBox(height: 2),
@@ -176,7 +176,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                                   : 'Conciencia fonológica sintética: el adulto pronuncia el sonido y el niño imita sin pantallas.',
                               style: TextStyle(
                                 color: context.acento,
-                                fontSize: 11,
+                                fontSize: 14,
                               ),
                             ),
                           ],
@@ -205,7 +205,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                     inventario.nota.resolve(lang),
                     key: const Key('fonemas_nota'),
                     style: const TextStyle(
-                      fontSize: 12,
+                      fontSize: 14,
                       color: AppTheme.textSecondary,
                       height: 1.35,
                     ),
@@ -224,7 +224,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
         child: Text(
           texto,
           style: TextStyle(
-            fontSize: 11,
+            fontSize: 12,
             fontWeight: FontWeight.w800,
             letterSpacing: 0.8,
             color: context.acento,
@@ -293,7 +293,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                           _categoria(ph.category, lang),
                           style: const TextStyle(
                             color: AppTheme.textSecondary,
-                            fontSize: 10,
+                            fontSize: 12,
                           ),
                         ),
                       ),
@@ -308,7 +308,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                           '${ph.exampleWord.en} '
                           '(${lang == AppLanguage.gl ? ph.exampleWord.gl : ph.exampleWord.es})',
                           style: TextStyle(
-                            fontSize: 13,
+                            fontSize: 14,
                             color: context.acento,
                             fontWeight: FontWeight.w500,
                           ),
@@ -331,7 +331,7 @@ class _PhonixQuestScreenState extends State<PhonixQuestScreen> {
                   Text(
                     ph.articulationGuide.resolve(lang),
                     style: const TextStyle(
-                      fontSize: 12,
+                      fontSize: 14,
                       color: AppTheme.textSecondary,
                     ),
                   ),

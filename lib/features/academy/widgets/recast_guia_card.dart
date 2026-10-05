@@ -247,7 +247,7 @@ class RecastGuiaCard extends StatelessWidget {
                                   pauta.consejoEvitar.resolve(language),
                                   style: const TextStyle(
                                     fontFamily: AppTheme.fontFamily,
-                                    fontSize: 13.5,
+                                    fontSize: 14,
                                     fontWeight: FontWeight.w500,
                                     color: AppTheme.textPrimary,
                                     height: 1.3,
@@ -291,7 +291,7 @@ class RecastGuiaCard extends StatelessWidget {
                                       : 'Acompañar con recast (afecto y movimiento):',
                                   style: const TextStyle(
                                     fontFamily: AppTheme.fontFamily,
-                                    fontSize: 12,
+                                    fontSize: 14,
                                     fontWeight: FontWeight.w800,
                                     color: Color(0xFF0D7E57),
                                   ),
@@ -341,7 +341,7 @@ class RecastGuiaCard extends StatelessWidget {
                           : 'Principio «Time and Place» (3 a 5 min): Establecer un momento concreto y acogedor del día (ej: colgar el abrigo en el recibidor) sin convertir el hogar en un aula de examen.',
                       style: const TextStyle(
                         fontFamily: AppTheme.fontFamily,
-                        fontSize: 13,
+                        fontSize: 14,
                         fontWeight: FontWeight.w500,
                         color: AppTheme.textSecondary,
                         height: 1.35,

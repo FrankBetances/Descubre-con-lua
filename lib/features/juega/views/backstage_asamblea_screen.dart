@@ -539,7 +539,7 @@ class _BackstageAsambleaScreenState extends State<BackstageAsambleaScreen> {
                                     ? 'Asistente docente · Móbil fóra da vista'
                                     : 'Asistente docente · Móvil fuera de la vista',
                                 style: TextStyle(
-                                  fontSize: 12.0,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                   color: context.acento,
                                 ),

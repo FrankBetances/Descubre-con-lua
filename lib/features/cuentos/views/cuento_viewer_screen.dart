@@ -200,7 +200,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           cuento.sinopse.resolve(lang),
                           style: TextStyle(
                             color: context.acento,
-                            fontSize: 12,
+                            fontSize: 14,
                             fontStyle: FontStyle.italic,
                           ),
                           maxLines: 2,
@@ -231,7 +231,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                             ? 'Pautas de lectura dialóxica compartida'
                             : 'Pautas de lectura dialógica compartida',
                         style: const TextStyle(
-                          fontSize: 11,
+                          fontSize: 12,
                           fontWeight: FontWeight.bold,
                           color: AppTheme.warning,
                         ),
@@ -261,7 +261,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           ? '1. Sinala o debuxo co dedo e agarda 5 segundos antes de intervir.'
                           : '1. Señala el dibujo con el dedo y espera 5 segundos antes de intervenir.',
                       style: const TextStyle(
-                          fontSize: 11, color: Color(0xFF4A5568)),
+                          fontSize: 12, color: Color(0xFF4A5568)),
                     ),
                     const SizedBox(height: 2),
                     Text(
@@ -269,7 +269,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           ? '2. Escoita a resposta do neno/a sen corrixir; expande a súa frase con agarimo.'
                           : '2. Escucha la respuesta de la criatura sin corregir; expande su frase con cariño.',
                       style: const TextStyle(
-                          fontSize: 11, color: Color(0xFF4A5568)),
+                          fontSize: 12, color: Color(0xFF4A5568)),
                     ),
                     const SizedBox(height: 2),
                     Text(
@@ -277,7 +277,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                           ? '3. Acompaña o reto TPR oral con movemento físico conxunto.'
                           : '3. Acompaña el reto TPR oral con movimiento físico conjunto.',
                       style: const TextStyle(
-                          fontSize: 11, color: Color(0xFF4A5568)),
+                          fontSize: 12, color: Color(0xFF4A5568)),
                     ),
                   ],
                 ),
@@ -358,7 +358,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                               : 'Escena ${paginaActual.numero} de ${paginas.length}',
                                           style: TextStyle(
                                             color: context.acento,
-                                            fontSize: 11,
+                                            fontSize: 12,
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
@@ -387,7 +387,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                                 .join(' · '),
                                             style: const TextStyle(
                                               color: Color(0xFF4A5568),
-                                              fontSize: 11,
+                                              fontSize: 12,
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
@@ -454,7 +454,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                                       ? 'Pregunta para compartir:'
                                                       : 'Pregunta para compartir:',
                                                   style: const TextStyle(
-                                                    fontSize: 11,
+                                                    fontSize: 12,
                                                     fontWeight: FontWeight.bold,
                                                     color: AppTheme.warning,
                                                   ),
@@ -465,7 +465,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                                       .resolve(lang),
                                                   style: const TextStyle(
                                                     color: Color(0xFF2D3748),
-                                                    fontSize: 13,
+                                                    fontSize: 14,
                                                     fontWeight: FontWeight.w600,
                                                   ),
                                                 ),
@@ -556,7 +556,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                     : cuento.tprOral!.comandoEs,
                                 style: const TextStyle(
                                   color: Color(0xFF4A5568),
-                                  fontSize: 12,
+                                  fontSize: 14,
                                 ),
                               ),
                             ],
@@ -630,7 +630,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                       Text(
                                         '${isGl ? "Resposta orientativa" : "Respuesta orientativa"}: ${preg.respostaModelo!.resolve(lang)}',
                                         style: const TextStyle(
-                                          fontSize: 11,
+                                          fontSize: 12,
                                           fontStyle: FontStyle.italic,
                                           color: AppTheme.textMuted,
                                         ),

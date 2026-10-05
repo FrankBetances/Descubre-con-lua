@@ -78,7 +78,7 @@ class TarxetaInglesDeHoxeFogar extends StatelessWidget {
                   'RITMO DIARIO TPR',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 10,
+                    fontSize: 12,
                     fontWeight: FontWeight.w800,
                     letterSpacing: 0.6,
                   ),

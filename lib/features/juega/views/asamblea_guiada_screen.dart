@@ -415,7 +415,7 @@ class _AsambleaGuiadaScreenState extends State<AsambleaGuiadaScreen> {
                             ? 'Asistente docente · Móbil fóra da vista$_duracionTotal'
                             : 'Asistente docente · Móvil fuera de la vista$_duracionTotal',
                         style: TextStyle(
-                          fontSize: 12.0,
+                          fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: context.acento,
                         ),

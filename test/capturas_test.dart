@@ -28,7 +28,10 @@ import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.da
 import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
 import 'package:descubre_con_lua/features/creditos/credits_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/capsulas_aula_screen.dart';
-import 'package:descubre_con_lua/features/juega/views/backstage_asamblea_screen.dart';
+import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
+import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dart';
+import 'package:descubre_con_lua/features/juega/widgets/aula_ciclo_panel.dart'
+    show nomeDoMes;
 import 'package:descubre_con_lua/features/juega/views/unidades_list_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/micro_rutina_setembro_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_model.dart';
@@ -517,17 +520,24 @@ void main() {
       );
     });
 
-    testWidgets('aula · backstage da asemblea de 2.º ciclo · $l',
-        (tester) async {
+    // La asamblea de 2.º ciclo como la abre «Comezar a asemblea» en la
+    // pestaña 2.º ciclo del Modo Aula: el reproductor, el mismo que en 1.º
+    // ciclo. Antes se retrataba BackstageAsambleaScreen, a la que ya no lleva
+    // ningún botón, y el manual enseñaba una pantalla que la docente no ve.
+    testWidgets('aula · asemblea de 2.º ciclo · $l', (tester) async {
+      final asamblea = contenido.getAsambleaByMesYNivelSync(
+          10, NivelEducativoSegundoCiclo.infantil4)!;
       await capturar(
         tester,
-        'aula-backstage-$l',
-        BackstageAsambleaScreen(
-          repository: contenido,
+        'aula-2ciclo-asemblea-$l',
+        AsambleaPlayerScreen(
+          fases: asamblea.fases,
+          subtitulo: '${nomeDoMes[asamblea.mes]!.resolve(lang)} · '
+              '${asamblea.nivel.etiquetaCorta.resolve(lang)}',
+          centroInteres: asamblea.centroInteres.resolve(lang),
           audioService: MockOfflineAudioService(),
-          initialLanguage: lang,
+          language: lang,
         ),
-        tamano: const Size(412, 1200),
       );
     });
 

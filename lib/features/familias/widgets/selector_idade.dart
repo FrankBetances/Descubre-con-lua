@@ -30,6 +30,7 @@ class SelectorIdade extends StatelessWidget {
     final isGl = language == AppLanguage.gl;
     final idade = NomesFamilias.idade(cursoId).resolve(language);
     return Semantics(
+      container: true,
       button: true,
       label: paraAula
           ? 'Grupo: $idade. Cambiar'

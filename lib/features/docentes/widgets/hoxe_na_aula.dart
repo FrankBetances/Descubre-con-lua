@@ -127,7 +127,7 @@ class ProxeccionDoCurso extends StatelessWidget {
               ? 'PROXECCIÓN LÉXICA · ${formatarMiles(total)} PALABRAS DE 0 A 6 ANOS'
               : 'PROYECCIÓN LÉXICA · ${formatarMiles(total)} PALABRAS DE 0 A 6 AÑOS',
           style: TextStyle(
-            fontSize: 11,
+            fontSize: 12,
             fontWeight: FontWeight.w800,
             color: context.acento,
             letterSpacing: 0.8,
@@ -198,7 +198,7 @@ class ProxeccionDoCurso extends StatelessWidget {
         Text(
           isGl ? 'OS CINCO CURSOS' : 'LOS CINCO CURSOS',
           style: const TextStyle(
-            fontSize: 11,
+            fontSize: 12,
             fontWeight: FontWeight.w800,
             color: AppTheme.textSecondary,
             letterSpacing: 0.8,
@@ -222,7 +222,7 @@ class ProxeccionDoCurso extends StatelessWidget {
         const Text(
           'REPARTO POR CATEGORÍAS',
           style: TextStyle(
-            fontSize: 11,
+            fontSize: 12,
             fontWeight: FontWeight.w800,
             color: AppTheme.textSecondary,
             letterSpacing: 0.8,
@@ -244,7 +244,7 @@ class ProxeccionDoCurso extends StatelessWidget {
           programa.modelo.fontes.resolve(language),
           key: const Key('proxeccion_fontes'),
           style: const TextStyle(
-            fontSize: 11.5,
+            fontSize: 12,
             color: AppTheme.textSecondary,
             fontStyle: FontStyle.italic,
             height: 1.4,
@@ -362,7 +362,7 @@ class _Categoria extends StatelessWidget {
         Text(
           detalle,
           style: const TextStyle(
-            fontSize: 11,
+            fontSize: 12,
             color: AppTheme.textSecondary,
           ),
         ),
