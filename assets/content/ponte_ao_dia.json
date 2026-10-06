@@ -1,0 +1,2521 @@
+{
+  "_doc": "Ponte ao día: o que cada orde da asemblea dá por sabido. Unha palabra dáse por sabida se o traxecto TPR a ensinou antes do mes da asemblea, nun curso anterior ou nun mes anterior do mesmo curso. «textos» e «revision» escríbense a man; «palabras», «ordes» e «meses» xéraos tools/xera_ponte_ao_dia.py desde o curso TPR e as asembleas, e o gate comproba que coinciden. Despois de tocar este ficheiro, vólvese xerar.",
+  "version": 1,
+  "textos": {
+    "reprodutor": {
+      "titulo": {
+        "gl": "Antes da orde",
+        "es": "Antes de la orden"
+      },
+      "duracion": {
+        "gl": "1 min",
+        "es": "1 min"
+      },
+      "consigna": {
+        "gl": "Di cada palabra e fai o seu xesto.",
+        "es": "Di cada palabra y haz su gesto."
+      },
+      "porque": {
+        "gl": "A orde de hoxe dá por sabidas estas palabras: o curso ensinounas antes deste mes. O grupo responde co corpo, sen repetilas.",
+        "es": "La orden de hoy da por sabidas estas palabras: el curso las enseñó antes de este mes. El grupo responde con el cuerpo, sin repetirlas."
+      },
+      "guia": {
+        "gl": "Se hai crianzas novas no grupo: un padriño ou unha madriña da clase ao seu carón, e fai ti o xesto as primeiras semanas, aínda que a orde diga que non.",
+        "es": "Si hay criaturas nuevas en el grupo: un padrino o una madrina de la clase a su lado, y haz tú el gesto las primeras semanas, aunque la orden diga que no."
+      },
+      "xesto": {
+        "gl": "Xesto",
+        "es": "Gesto"
+      },
+      "anterior": {
+        "gl": "Palabra anterior",
+        "es": "Palabra anterior"
+      },
+      "seguinte": {
+        "gl": "Seguinte palabra",
+        "es": "Siguiente palabra"
+      }
+    },
+    "casa": {
+      "titulo": {
+        "gl": "Ponte ao día",
+        "es": "Ponte al día"
+      },
+      "entrada": {
+        "gl": "Se chegou nova ao curso: as {n} palabras de antes que as asembleas de {mes} dan por sabidas.",
+        "es": "Si ha llegado nueva al curso: las {n} palabras de antes que las asambleas de {mes} dan por sabidas."
+      },
+      "intro": {
+        "gl": "Se a crianza chegou nova á escola, estas son as palabras que as asembleas do mes dan por sabidas: o curso ensinounas antes. Dúas ou tres ao día, co seu xesto, abondan para chegar a tempo.",
+        "es": "Si la criatura ha llegado nueva a la escuela, estas son las palabras que las asambleas del mes dan por sabidas: el curso las enseñó antes. Dos o tres al día, con su gesto, bastan para llegar a tiempo."
+      },
+      "naoSeGarda": {
+        "gl": "Non se garda.",
+        "es": "No se guarda."
+      },
+      "dia": {
+        "gl": "Día {n}",
+        "es": "Día {n}"
+      },
+      "baleiro": {
+        "gl": "En {mes}, as asembleas de {idade} non dan por sabida ningunha palabra de antes: a crianza nova vai ao mesmo paso que o grupo.",
+        "es": "En {mes}, las asambleas de {idade} no dan por sabida ninguna palabra de antes: la criatura nueva va al mismo paso que el grupo."
+      }
+    }
+  },
+  "revision": {
+    "excluir": [
+      {
+        "orde": "cmd.maio.4i.03",
+        "palabra": "high",
+        "motivo": "No curso, «high» é a nota aguda; na orde, «clap high» é bater palmas arriba."
+      },
+      {
+        "orde": "cmd.maio.4i.03",
+        "palabra": "low",
+        "motivo": "No curso, «low» é a nota grave; na orde, «clap low» é bater palmas abaixo."
+      },
+      {
+        "orde": "cmd.xaneiro.5i.03",
+        "palabra": "back",
+        "motivo": "No curso, «back» son as costas; na orde, «comes back» é volver."
+      },
+      {
+        "orde": "cmd.outubro.6i.01",
+        "palabra": "rough",
+        "motivo": "No curso, «rough» é o mar bravo; na orde, é unha folla rugosa."
+      },
+      {
+        "orde": "cmd.outubro.6i.01",
+        "palabra": "ring",
+        "motivo": "No curso, «ring» é facer soar unha campá; na orde, «the brown ring» é un aro."
+      },
+      {
+        "orde": "cmd.outubro.6i.03",
+        "palabra": "ring",
+        "motivo": "No curso, «ring» é facer soar unha campá; na orde, «jump over the ring» é un aro."
+      },
+      {
+        "orde": "cmd.novembro.6i.02",
+        "palabra": "rough",
+        "motivo": "No curso, «rough» é o mar bravo; na orde, é a folla rugosa."
+      },
+      {
+        "orde": "cmd.marzo.6i.01",
+        "palabra": "plant",
+        "motivo": "No curso, «plant» é a planta; na orde, «plant the seed» é plantar."
+      },
+      {
+        "orde": "cmd.maio.6i.01",
+        "palabra": "tap",
+        "motivo": "No curso, «tap» é a billa; na orde, é dar un toque."
+      },
+      {
+        "orde": "cmd.maio.6i.02",
+        "palabra": "5_6.novembro.s2.group",
+        "motivo": "No curso, «group» é agrupar de cinco en cinco; na orde, «the group» é o grupo da clase."
+      },
+      {
+        "orde": "cmd.maio.6i.03",
+        "palabra": "stick",
+        "motivo": "No curso, «stick» é pegar; na orde, «rhythm stick» é a baqueta."
+      },
+      {
+        "orde": "cmd.decembro.6i.02",
+        "palabra": "4_5.novembro.s1.steps",
+        "motivo": "No curso, «steps» son as escaleiras; na orde, «step over» é pasar por riba."
+      },
+      {
+        "orde": "cmd.xaneiro.6i.01",
+        "palabra": "4_5.novembro.s1.steps",
+        "motivo": "No curso, «steps» son as escaleiras; na orde, «step slowly» é dar pasos amodo."
+      },
+      {
+        "orde": "cmd.xuno.6i.01",
+        "palabra": "4_5.novembro.s1.steps",
+        "motivo": "No curso, «steps» son as escaleiras; na orde, «five steps» son cinco pasos."
+      }
+    ],
+    "engadir": [],
+    "adaptar": [
+      {
+        "palabra": "0_2.outubro.s3.copy",
+        "xesto": {
+          "gl": "Repetir o xesto que fai outra persoa",
+          "es": "Repetir el gesto que hace otra persona"
+        },
+        "motivo": "O xesto do curso de 0-2 faise co bebé; en 5-6 imítase a outra persoa."
+      },
+      {
+        "palabra": "0_2.novembro.s3.around-the-fire",
+        "xesto": {
+          "gl": "Camiñar en círculo arredor dun lume imaxinario",
+          "es": "Caminar en círculo alrededor de un fuego imaginario"
+        },
+        "motivo": "O xesto do curso de 0-2 faise co bebé; en 4-5 camíñase arredor do lume."
+      }
+    ]
+  },
+  "palabras": {
+    "0_2.outubro.s2.belly": {
+      "curso": "curso_0_2",
+      "mes": 10,
+      "en": "Belly",
+      "gl": "Barriga",
+      "es": "Barriga",
+      "xesto": {
+        "gl": "Facer círculos na barriga",
+        "es": "Hacer círculos en la barriga"
+      }
+    },
+    "0_2.outubro.s3.copy": {
+      "curso": "curso_0_2",
+      "mes": 10,
+      "en": "Copy",
+      "gl": "Imitar",
+      "es": "Imitar",
+      "xesto": {
+        "gl": "Repetir o xesto que fai outra persoa",
+        "es": "Repetir el gesto que hace otra persona"
+      }
+    },
+    "0_2.outubro.s4.foot": {
+      "curso": "curso_0_2",
+      "mes": 10,
+      "en": "Foot",
+      "gl": "Pé",
+      "es": "Pie",
+      "xesto": {
+        "gl": "Coller un pé coa man",
+        "es": "Coger un pie con la mano"
+      }
+    },
+    "0_2.novembro.s2.whoosh": {
+      "curso": "curso_0_2",
+      "mes": 11,
+      "en": "Whoosh!",
+      "gl": "Fiuuu!",
+      "es": "¡Fiuuu!",
+      "xesto": {
+        "gl": "Mover os brazos coma o vento",
+        "es": "Mover los brazos como el viento"
+      }
+    },
+    "0_2.novembro.s3.around-the-fire": {
+      "curso": "curso_0_2",
+      "mes": 11,
+      "en": "Around the fire",
+      "gl": "Arredor do lume",
+      "es": "Alrededor del fuego",
+      "xesto": {
+        "gl": "Camiñar en círculo arredor dun lume imaxinario",
+        "es": "Caminar en círculo alrededor de un fuego imaginario"
+      }
+    },
+    "0_2.novembro.s3.fire": {
+      "curso": "curso_0_2",
+      "mes": 11,
+      "en": "Fire",
+      "gl": "Lume",
+      "es": "Fuego",
+      "xesto": {
+        "gl": "Sinalar o lume de lonxe",
+        "es": "Señalar el fuego de lejos"
+      }
+    },
+    "0_2.xaneiro.s1.curl-up": {
+      "curso": "curso_0_2",
+      "mes": 1,
+      "en": "Curl up",
+      "gl": "Enroscarse",
+      "es": "Hacerse un ovillo",
+      "xesto": {
+        "gl": "Facerse un novelo coma un gato",
+        "es": "Hacerse un ovillo como un gato"
+      }
+    },
+    "0_2.febreiro.s4.rhythm": {
+      "curso": "curso_0_2",
+      "mes": 2,
+      "en": "Rhythm",
+      "gl": "Ritmo",
+      "es": "Ritmo",
+      "xesto": {
+        "gl": "Bater nas pernas ao ritmo",
+        "es": "Golpear en las piernas al ritmo"
+      }
+    },
+    "0_2.abril.s3.pop-out": {
+      "curso": "curso_0_2",
+      "mes": 4,
+      "en": "Pop out",
+      "gl": "Asomar",
+      "es": "Asomar",
+      "xesto": {
+        "gl": "Sacar un dedo do puño",
+        "es": "Sacar un dedo del puño"
+      }
+    },
+    "0_2.abril.s3.sunflower": {
+      "curso": "curso_0_2",
+      "mes": 4,
+      "en": "Sunflower",
+      "gl": "Xirasol",
+      "es": "Girasol",
+      "xesto": {
+        "gl": "Xirar a cara coma un xirasol",
+        "es": "Girar la cara como un girasol"
+      }
+    },
+    "0_2.abril.s3.water-it": {
+      "curso": "curso_0_2",
+      "mes": 4,
+      "en": "Water it",
+      "gl": "Regala",
+      "es": "Regarla",
+      "xesto": {
+        "gl": "Botar auga co regador",
+        "es": "Echar agua con la regadera"
+      }
+    },
+    "0_2.xuno.s2.little-fish": {
+      "curso": "curso_0_2",
+      "mes": 6,
+      "en": "Little fish",
+      "gl": "Peixiño",
+      "es": "Pececito",
+      "xesto": {
+        "gl": "Mover a man coma un peixiño",
+        "es": "Mover la mano como un pececito"
+      }
+    },
+    "2_3.setembro.s1.hang-up": {
+      "curso": "curso_2_3",
+      "mes": 9,
+      "en": "Hang up",
+      "gl": "Colgar",
+      "es": "Colgar",
+      "xesto": {
+        "gl": "Colgar o abrigo na percha",
+        "es": "Colgar el abrigo en la percha"
+      }
+    },
+    "2_3.setembro.s2.here-you-go": {
+      "curso": "curso_2_3",
+      "mes": 9,
+      "en": "Here you go",
+      "gl": "Toma",
+      "es": "Toma",
+      "xesto": {
+        "gl": "Dar o xoguete a un amigo",
+        "es": "Dar el juguete a un amigo"
+      }
+    },
+    "2_3.setembro.s3.mat": {
+      "curso": "curso_2_3",
+      "mes": 9,
+      "en": "Mat",
+      "gl": "Esteira",
+      "es": "Esterilla",
+      "xesto": {
+        "gl": "Enrolar a esteira",
+        "es": "Enrollar la esterilla"
+      }
+    },
+    "2_3.setembro.s3.tray": {
+      "curso": "curso_2_3",
+      "mes": 9,
+      "en": "Tray",
+      "gl": "Bandexa",
+      "es": "Bandeja",
+      "xesto": {
+        "gl": "Levar a bandexa coas dúas mans",
+        "es": "Llevar la bandeja con las dos manos"
+      }
+    },
+    "2_3.setembro.s4.together": {
+      "curso": "curso_2_3",
+      "mes": 9,
+      "en": "Together",
+      "gl": "Xuntos",
+      "es": "Juntos",
+      "xesto": {
+        "gl": "Xuntar as mans de todos",
+        "es": "Juntar las manos de todos"
+      }
+    },
+    "2_3.outubro.s1.land-softly": {
+      "curso": "curso_2_3",
+      "mes": 10,
+      "en": "Land softly",
+      "gl": "Caer suave",
+      "es": "Caer suave",
+      "xesto": {
+        "gl": "Caer dobrando os xeonllos",
+        "es": "Caer doblando las rodillas"
+      }
+    },
+    "2_3.outubro.s1.touch-your-knees": {
+      "curso": "curso_2_3",
+      "mes": 10,
+      "en": "Touch your knees",
+      "gl": "Toca os xeonllos",
+      "es": "Tócate las rodillas",
+      "xesto": {
+        "gl": "Tocar os xeonllos",
+        "es": "Tocar las rodillas"
+      }
+    },
+    "2_3.outubro.s2.spin-around": {
+      "curso": "curso_2_3",
+      "mes": 10,
+      "en": "Spin around",
+      "gl": "Dar a volta",
+      "es": "Darse la vuelta",
+      "xesto": {
+        "gl": "Xirar sobre un pé",
+        "es": "Girar sobre un pie"
+      }
+    },
+    "2_3.novembro.s1.oak-tree": {
+      "curso": "curso_2_3",
+      "mes": 11,
+      "en": "Oak tree",
+      "gl": "Carballo",
+      "es": "Roble",
+      "xesto": {
+        "gl": "Estirar os brazos coma un carballo",
+        "es": "Estirar los brazos como un roble"
+      }
+    },
+    "2_3.decembro.s1.in-the-puddle": {
+      "curso": "curso_2_3",
+      "mes": 12,
+      "en": "In the puddle",
+      "gl": "Na poza",
+      "es": "En el charco",
+      "xesto": {
+        "gl": "Saltar e quedar dentro",
+        "es": "Saltar y quedarse dentro"
+      }
+    },
+    "2_3.decembro.s2.storm": {
+      "curso": "curso_2_3",
+      "mes": 12,
+      "en": "Storm",
+      "gl": "Treboada",
+      "es": "Tormenta",
+      "xesto": {
+        "gl": "Mover todo o corpo forte",
+        "es": "Mover todo el cuerpo fuerte"
+      }
+    },
+    "2_3.xaneiro.s4.rope": {
+      "curso": "curso_2_3",
+      "mes": 1,
+      "en": "Rope",
+      "gl": "Corda",
+      "es": "Cuerda",
+      "xesto": {
+        "gl": "Tirar dunha corda imaxinaria",
+        "es": "Tirar de una cuerda imaginaria"
+      }
+    },
+    "2_3.abril.s1.meadow": {
+      "curso": "curso_2_3",
+      "mes": 4,
+      "en": "Meadow",
+      "gl": "Prado",
+      "es": "Prado",
+      "xesto": {
+        "gl": "Abrir os brazos no prado",
+        "es": "Abrir los brazos en el prado"
+      }
+    },
+    "2_3.abril.s1.roll-down": {
+      "curso": "curso_2_3",
+      "mes": 4,
+      "en": "Roll down",
+      "gl": "Rodar cara abaixo",
+      "es": "Rodar hacia abajo",
+      "xesto": {
+        "gl": "Rodar de lado",
+        "es": "Rodar de lado"
+      }
+    },
+    "2_3.abril.s3.lie-still": {
+      "curso": "curso_2_3",
+      "mes": 4,
+      "en": "Lie still",
+      "gl": "Quedar quieto deitado",
+      "es": "Quedarse quieto tumbado",
+      "xesto": {
+        "gl": "Deitarse sen moverse",
+        "es": "Tumbarse sin moverse"
+      }
+    },
+    "2_3.xuno.s1.calm-sea": {
+      "curso": "curso_2_3",
+      "mes": 6,
+      "en": "Calm sea",
+      "gl": "Mar tranquilo",
+      "es": "Mar tranquilo",
+      "xesto": {
+        "gl": "Pasar a man plana",
+        "es": "Pasar la mano plana"
+      }
+    },
+    "2_3.xuno.s3.under-the-stone": {
+      "curso": "curso_2_3",
+      "mes": 6,
+      "en": "Under the stone",
+      "gl": "Debaixo da pedra",
+      "es": "Debajo de la piedra",
+      "xesto": {
+        "gl": "Levantar a pedra e mirar",
+        "es": "Levantar la piedra y mirar"
+      }
+    },
+    "come": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Come",
+      "gl": "Vir",
+      "es": "Venir",
+      "xesto": {
+        "gl": "Chamar co brazo para que se acheguen",
+        "es": "Llamar con el brazo para que se acerquen"
+      }
+    },
+    "friend": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Friend",
+      "gl": "Amigo, amiga",
+      "es": "Amigo, amiga",
+      "xesto": {
+        "gl": "Dar a man á persoa que está ao lado",
+        "es": "Dar la mano a la persona que está al lado"
+      }
+    },
+    "loud": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Loud",
+      "gl": "Forte (son)",
+      "es": "Fuerte (sonido)",
+      "xesto": {
+        "gl": "Bater as palmas con forza e logo parar",
+        "es": "Dar palmadas con fuerza y luego parar"
+      }
+    },
+    "quiet": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Quiet",
+      "gl": "Calado, calada",
+      "es": "Callado, callada",
+      "xesto": {
+        "gl": "Levar o dedo aos beizos e baixar a voz",
+        "es": "Llevarse el dedo a los labios y bajar la voz"
+      }
+    },
+    "sit": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Sit",
+      "gl": "Sentar",
+      "es": "Sentarse",
+      "xesto": {
+        "gl": "Baixar amodo ata sentar no chan",
+        "es": "Bajar despacio hasta sentarse en el suelo"
+      }
+    },
+    "smile": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Smile",
+      "gl": "Sorrir",
+      "es": "Sonreír",
+      "xesto": {
+        "gl": "Sorrir amplamente mirando ao grupo",
+        "es": "Sonreír ampliamente mirando al grupo"
+      }
+    },
+    "give": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Give",
+      "gl": "Dar",
+      "es": "Dar",
+      "xesto": {
+        "gl": "Estender a man aberta cara a outra persoa",
+        "es": "Extender la mano abierta hacia otra persona"
+      }
+    },
+    "help": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Help",
+      "gl": "Axudar",
+      "es": "Ayudar",
+      "xesto": {
+        "gl": "Levantar entre dous un obxecto imaxinario pesado",
+        "es": "Levantar entre dos un objeto imaginario pesado"
+      }
+    },
+    "look": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Look",
+      "gl": "Mirar",
+      "es": "Mirar",
+      "xesto": {
+        "gl": "Facer anteollos cos dedos e mirar arredor",
+        "es": "Hacer gafas con los dedos y mirar alrededor"
+      }
+    },
+    "point": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Point",
+      "gl": "Sinalar",
+      "es": "Señalar",
+      "xesto": {
+        "gl": "Sinalar co dedo algo que está preto",
+        "es": "Señalar con el dedo algo que está cerca"
+      }
+    },
+    "your-turn": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Your turn!",
+      "gl": "A túa vez!",
+      "es": "¡Te toca!",
+      "xesto": {
+        "gl": "Sinalar con amabilidade a quen lle toca",
+        "es": "Señalar con amabilidad a quien le toca"
+      }
+    },
+    "calm": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Calm",
+      "gl": "Tranquilo, tranquila",
+      "es": "Tranquilo, tranquila",
+      "xesto": {
+        "gl": "Respirar fondo e deixar caer os ombros",
+        "es": "Respirar hondo y dejar caer los hombros"
+      }
+    },
+    "gentle": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Gentle",
+      "gl": "Agarimoso, agarimosa",
+      "es": "Cariñoso, cariñosa",
+      "xesto": {
+        "gl": "Pasar a man con agarimo polo ombro do compañeiro",
+        "es": "Pasar la mano con cariño por el hombro del compañero"
+      }
+    },
+    "hold": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Hold",
+      "gl": "Suxeitar",
+      "es": "Sostener",
+      "xesto": {
+        "gl": "Suxeitar unha pelota imaxinaria coas dúas mans sen deixala caer",
+        "es": "Sostener una pelota imaginaria con las dos manos sin dejarla caer"
+      }
+    },
+    "thank-you": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Thank you",
+      "gl": "Grazas",
+      "es": "Gracias",
+      "xesto": {
+        "gl": "Pousar a man no peito e inclinar a cabeza",
+        "es": "Poner la mano en el pecho e inclinar la cabeza"
+      }
+    },
+    "hungry": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Hungry",
+      "gl": "Con fame",
+      "es": "Con hambre",
+      "xesto": {
+        "gl": "Fregar a barriga en círculos",
+        "es": "Frotarse la barriga en círculos"
+      }
+    },
+    "pull": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Pull",
+      "gl": "Tirar de",
+      "es": "Tirar de",
+      "xesto": {
+        "gl": "Tirar dunha corda imaxinaria cara a un mesmo",
+        "es": "Tirar de una cuerda imaginaria hacia uno mismo"
+      }
+    },
+    "sing": {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "en": "Sing",
+      "gl": "Cantar",
+      "es": "Cantar",
+      "xesto": {
+        "gl": "Abrir a boca e cantar un «la, la, la» suave",
+        "es": "Abrir la boca y cantar un «la, la, la» suave"
+      }
+    },
+    "big": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Big",
+      "gl": "Grande",
+      "es": "Grande",
+      "xesto": {
+        "gl": "Abrir os brazos facéndose xigantes",
+        "es": "Abrir los brazos haciéndose gigantes"
+      }
+    },
+    "clap": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Clap",
+      "gl": "Bater palmas",
+      "es": "Aplaudir",
+      "xesto": {
+        "gl": "Bater as palmas ao pulso da asemblea",
+        "es": "Dar palmadas al pulso de la asamblea"
+      }
+    },
+    "down": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Down",
+      "gl": "Abaixo",
+      "es": "Abajo",
+      "xesto": {
+        "gl": "Agacharse ata tocar o chan",
+        "es": "Agacharse hasta tocar el suelo"
+      }
+    },
+    "freeze": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Freeze",
+      "gl": "Conxelarse",
+      "es": "Congelarse",
+      "xesto": {
+        "gl": "Parar en seco e quedar inmóbiles coma estatuas",
+        "es": "Parar en seco y quedarse inmóviles como estatuas"
+      }
+    },
+    "hands": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Hands",
+      "gl": "Mans",
+      "es": "Manos",
+      "xesto": {
+        "gl": "Abrir e xirar as dúas mans",
+        "es": "Abrir y girar las dos manos"
+      }
+    },
+    "jump": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Jump",
+      "gl": "Chimpar",
+      "es": "Saltar",
+      "xesto": {
+        "gl": "Saltar cos dous pés á vez",
+        "es": "Saltar con los dos pies a la vez"
+      }
+    },
+    "knees": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Knees",
+      "gl": "Xeonllos",
+      "es": "Rodillas",
+      "xesto": {
+        "gl": "Tocar os xeonllos",
+        "es": "Tocar las rodillas"
+      }
+    },
+    "small": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Small",
+      "gl": "Pequeno, pequena",
+      "es": "Pequeño, pequeña",
+      "xesto": {
+        "gl": "Encollerse coma unha formiguiña",
+        "es": "Encogerse como una hormiguita"
+      }
+    },
+    "walk": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Walk",
+      "gl": "Camiñar",
+      "es": "Caminar",
+      "xesto": {
+        "gl": "Camiñar amodo en círculo",
+        "es": "Caminar despacio en círculo"
+      }
+    },
+    "hands-on-your-tummy": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Hands on your tummy",
+      "gl": "Mans na barriga",
+      "es": "Manos en la barriga",
+      "xesto": {
+        "gl": "Pousar as mans na barriga e notar como sobe e baixa",
+        "es": "Poner las manos en la barriga y notar cómo sube y baja"
+      }
+    },
+    "arms-up": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Arms up!",
+      "gl": "Brazos arriba!",
+      "es": "¡Brazos arriba!",
+      "xesto": {
+        "gl": "Subir os dous brazos de golpe",
+        "es": "Subir los dos brazos de golpe"
+      }
+    },
+    "elbow": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Elbow",
+      "gl": "Cóbado",
+      "es": "Codo",
+      "xesto": {
+        "gl": "Tocar un cóbado coa man contraria",
+        "es": "Tocarse un codo con la mano contraria"
+      }
+    },
+    "fast": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Fast",
+      "gl": "Rápido, rápida",
+      "es": "Rápido, rápida",
+      "xesto": {
+        "gl": "Mover as mans moi rápido",
+        "es": "Mover las manos muy rápido"
+      }
+    },
+    "slow": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Slow",
+      "gl": "Lento, lenta",
+      "es": "Lento, lenta",
+      "xesto": {
+        "gl": "Mover as mans moi amodo",
+        "es": "Mover las manos muy despacio"
+      }
+    },
+    "stand-up": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Stand up",
+      "gl": "Ponte de pé",
+      "es": "Ponte de pie",
+      "xesto": {
+        "gl": "Poñerse de pé amodo desde o chan",
+        "es": "Ponerse de pie despacio desde el suelo"
+      }
+    },
+    "stretch": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Stretch",
+      "gl": "Estirar",
+      "es": "Estirar",
+      "xesto": {
+        "gl": "Estirar todo o corpo cara ao teito",
+        "es": "Estirar todo el cuerpo hacia el techo"
+      }
+    },
+    "dance": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Dance",
+      "gl": "Bailar",
+      "es": "Bailar",
+      "xesto": {
+        "gl": "Bailar libremente no sitio",
+        "es": "Bailar libremente en el sitio"
+      }
+    },
+    "hop": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Hop",
+      "gl": "Saltar a pé coxo",
+      "es": "Saltar a la pata coja",
+      "xesto": {
+        "gl": "Saltar a pé coxo agarrados da man",
+        "es": "Saltar a la pata coja cogidos de la mano"
+      }
+    },
+    "tall": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Tall",
+      "gl": "Alto, alta",
+      "es": "Alto, alta",
+      "xesto": {
+        "gl": "Estirarse todo o posible cos brazos arriba",
+        "es": "Estirarse todo lo posible con los brazos arriba"
+      }
+    },
+    "tiptoe": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Tiptoe",
+      "gl": "Andar de puntas",
+      "es": "Andar de puntillas",
+      "xesto": {
+        "gl": "Camiñar de puntas moi calados",
+        "es": "Caminar de puntillas muy callados"
+      }
+    },
+    "turn-around": {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "en": "Turn around",
+      "gl": "Dá a volta",
+      "es": "Date la vuelta",
+      "xesto": {
+        "gl": "Dar unha volta enteira e mirar ao grupo",
+        "es": "Dar una vuelta entera y mirar al grupo"
+      }
+    },
+    "blow": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Blow",
+      "gl": "Soprar",
+      "es": "Soplar",
+      "xesto": {
+        "gl": "Soprar forte unha folla imaxinaria",
+        "es": "Soplar fuerte una hoja imaginaria"
+      }
+    },
+    "brown": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Brown",
+      "gl": "Marrón",
+      "es": "Marrón",
+      "xesto": {
+        "gl": "Sinalar algo marrón na aula",
+        "es": "Señalar algo marrón en el aula"
+      }
+    },
+    "falling": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Falling",
+      "gl": "Caendo",
+      "es": "Cayendo",
+      "xesto": {
+        "gl": "Baixar amodo ata o chan coma unha folla que cae",
+        "es": "Bajar despacio hasta el suelo como una hoja que cae"
+      }
+    },
+    "leaf": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Leaf",
+      "gl": "Folla",
+      "es": "Hoja",
+      "xesto": {
+        "gl": "Baixar as mans abaneando coma unha folla",
+        "es": "Bajar las manos balanceándolas como una hoja"
+      }
+    },
+    "basket": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Basket",
+      "gl": "Cesto",
+      "es": "Cesta",
+      "xesto": {
+        "gl": "Facer un cesto cos brazos diante do corpo",
+        "es": "Hacer una cesta con los brazos delante del cuerpo"
+      }
+    },
+    "chestnut": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Chestnut",
+      "gl": "Castaña",
+      "es": "Castaña",
+      "xesto": {
+        "gl": "Facer unha castaña coas mans pechadas",
+        "es": "Hacer una castaña con las manos cerradas"
+      }
+    },
+    "climb": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Climb",
+      "gl": "Rubir",
+      "es": "Trepar",
+      "xesto": {
+        "gl": "Mover brazos e pernas coma se rubísemos a unha árbore",
+        "es": "Mover brazos y piernas como si trepáramos a un árbol"
+      }
+    },
+    "find": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Find",
+      "gl": "Atopar",
+      "es": "Encontrar",
+      "xesto": {
+        "gl": "Buscar coa man sobre os ollos e sinalar ao atopar",
+        "es": "Buscar con la mano sobre los ojos y señalar al encontrar"
+      }
+    },
+    "hide": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Hide",
+      "gl": "Agochar",
+      "es": "Esconder",
+      "xesto": {
+        "gl": "Agochar algo imaxinario detrás das costas",
+        "es": "Esconder algo imaginario detrás de la espalda"
+      }
+    },
+    "squirrel": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Squirrel",
+      "gl": "Esquío",
+      "es": "Ardilla",
+      "xesto": {
+        "gl": "Encoller as mans diante do peito e dar pequenos brincos",
+        "es": "Encoger las manos delante del pecho y dar saltitos"
+      }
+    },
+    "boar": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Boar",
+      "gl": "Xabarín",
+      "es": "Jabalí",
+      "xesto": {
+        "gl": "Facer un fociño co nariz e fozar no chan",
+        "es": "Hacer un hocico con la nariz y hozar en el suelo"
+      }
+    },
+    "dig": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Dig",
+      "gl": "Cavar",
+      "es": "Cavar",
+      "xesto": {
+        "gl": "Cavar no chan coas mans",
+        "es": "Cavar en el suelo con las manos"
+      }
+    },
+    "fox": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Fox",
+      "gl": "Raposo",
+      "es": "Zorro",
+      "xesto": {
+        "gl": "Poñer as mans sobre a cabeza coma orellas en punta",
+        "es": "Poner las manos sobre la cabeza como orejas en punta"
+      }
+    },
+    "hedgehog": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Hedgehog",
+      "gl": "Ourizo cacho",
+      "es": "Erizo",
+      "xesto": {
+        "gl": "Facerse unha bóla no chan",
+        "es": "Hacerse una bola en el suelo"
+      }
+    },
+    "run": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Run",
+      "gl": "Correr",
+      "es": "Correr",
+      "xesto": {
+        "gl": "Correr no sitio moi rápido",
+        "es": "Correr en el sitio muy rápido"
+      }
+    },
+    "tiny": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Tiny",
+      "gl": "Diminuto, diminuta",
+      "es": "Diminuto, diminuta",
+      "xesto": {
+        "gl": "Amosar algo diminuto entre dous dedos",
+        "es": "Mostrar algo diminuto entre dos dedos"
+      }
+    },
+    "wild": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Wild",
+      "gl": "Salvaxe",
+      "es": "Salvaje",
+      "xesto": {
+        "gl": "Moverse con forza coma un animal do monte",
+        "es": "Moverse con fuerza como un animal del monte"
+      }
+    },
+    "wolf": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Wolf",
+      "gl": "Lobo",
+      "es": "Lobo",
+      "xesto": {
+        "gl": "Camiñar a catro patas amodo",
+        "es": "Caminar a cuatro patas despacio"
+      }
+    },
+    "fill": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Fill",
+      "gl": "Encher",
+      "es": "Llenar",
+      "xesto": {
+        "gl": "Encher un cesto imaxinario ata arriba",
+        "es": "Llenar una cesta imaginaria hasta arriba"
+      }
+    },
+    "pot": {
+      "curso": "curso_3_4",
+      "mes": 11,
+      "en": "Pot",
+      "gl": "Pota",
+      "es": "Olla",
+      "xesto": {
+        "gl": "Facer unha pota grande coas mans e mirar dentro",
+        "es": "Hacer una olla grande con las manos y mirar dentro"
+      }
+    },
+    "cold": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Cold",
+      "gl": "Frío, fría",
+      "es": "Frío, fría",
+      "xesto": {
+        "gl": "Fregar os brazos coas mans cruzadas",
+        "es": "Frotarse los brazos con las manos cruzadas"
+      }
+    },
+    "white": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "White",
+      "gl": "Branco, branca",
+      "es": "Blanco, blanca",
+      "xesto": {
+        "gl": "Sinalar algo branco na aula",
+        "es": "Señalar algo blanco en el aula"
+      }
+    },
+    "winter": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Winter",
+      "gl": "Inverno",
+      "es": "Invierno",
+      "xesto": {
+        "gl": "Abrazarse a un mesmo con frío",
+        "es": "Abrazarse a uno mismo con frío"
+      }
+    },
+    "bell": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Bell",
+      "gl": "Campá",
+      "es": "Campana",
+      "xesto": {
+        "gl": "Mover o puño dun lado a outro coma unha campá",
+        "es": "Mover el puño de un lado a otro como una campana"
+      }
+    },
+    "light": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Light",
+      "gl": "Luz",
+      "es": "Luz",
+      "xesto": {
+        "gl": "Abrir de golpe as mans coma unha luz que se acende",
+        "es": "Abrir de golpe las manos como una luz que se enciende"
+      }
+    },
+    "ring": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Ring",
+      "gl": "Soar",
+      "es": "Sonar",
+      "xesto": {
+        "gl": "Facer soar unha campá imaxinaria: din, don",
+        "es": "Hacer sonar una campana imaginaria: din, don"
+      }
+    },
+    "night": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Night",
+      "gl": "Noite",
+      "es": "Noche",
+      "xesto": {
+        "gl": "Pechar as mans diante dos ollos coma cortinas",
+        "es": "Cerrar las manos delante de los ojos como cortinas"
+      }
+    },
+    "sleep": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Sleep",
+      "gl": "Durmir",
+      "es": "Dormir",
+      "xesto": {
+        "gl": "Tombar no chan e pechar os ollos",
+        "es": "Tumbarse en el suelo y cerrar los ojos"
+      }
+    },
+    "sleepy": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Sleepy",
+      "gl": "Con sono",
+      "es": "Con sueño",
+      "xesto": {
+        "gl": "Deixar caer a cabeza amodo cara a un lado",
+        "es": "Dejar caer la cabeza despacio hacia un lado"
+      }
+    },
+    "wake-up": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Wake up",
+      "gl": "Espertar",
+      "es": "Despertar",
+      "xesto": {
+        "gl": "Abrir os ollos de golpe e sentar",
+        "es": "Abrir los ojos de golpe y sentarse"
+      }
+    },
+    "count": {
+      "curso": "curso_3_4",
+      "mes": 12,
+      "en": "Count",
+      "gl": "Contar",
+      "es": "Contar",
+      "xesto": {
+        "gl": "Contar cos dedos ata cinco",
+        "es": "Contar con los dedos hasta cinco"
+      }
+    },
+    "coat": {
+      "curso": "curso_3_4",
+      "mes": 1,
+      "en": "Coat",
+      "gl": "Abrigo",
+      "es": "Abrigo",
+      "xesto": {
+        "gl": "Meter os brazos nun abrigo imaxinario",
+        "es": "Meter los brazos en un abrigo imaginario"
+      }
+    },
+    "put-on": {
+      "curso": "curso_3_4",
+      "mes": 1,
+      "en": "Put on",
+      "gl": "Poñer",
+      "es": "Ponerse",
+      "xesto": {
+        "gl": "Poñer unha prenda imaxinaria pola cabeza",
+        "es": "Ponerse una prenda imaginaria por la cabeza"
+      }
+    },
+    "cloud": {
+      "curso": "curso_3_4",
+      "mes": 1,
+      "en": "Cloud",
+      "gl": "Nube",
+      "es": "Nube",
+      "xesto": {
+        "gl": "Facer unha nube grande e mol cos brazos",
+        "es": "Hacer una nube grande y blandita con los brazos"
+      }
+    },
+    "under-the-umbrella": {
+      "curso": "curso_3_4",
+      "mes": 1,
+      "en": "Under the umbrella",
+      "gl": "Debaixo do paraugas",
+      "es": "Debajo del paraguas",
+      "xesto": {
+        "gl": "Xuntarse varias criaturas debaixo dun paraugas imaxinario",
+        "es": "Juntarse varias criaturas debajo de un paraguas imaginario"
+      }
+    },
+    "busy": {
+      "curso": "curso_3_4",
+      "mes": 1,
+      "en": "Busy",
+      "gl": "Ocupado, ocupada",
+      "es": "Ocupado, ocupada",
+      "xesto": {
+        "gl": "Mover as mans moi rápido coma quen traballa moito",
+        "es": "Mover las manos muy rápido como quien trabaja mucho"
+      }
+    },
+    "cow": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Cow",
+      "gl": "Vaca",
+      "es": "Vaca",
+      "xesto": {
+        "gl": "Facer cornos pequenos cos índices e camiñar amodo",
+        "es": "Hacer cuernos pequeños con los índices y caminar despacio"
+      }
+    },
+    "gallop": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Gallop",
+      "gl": "Galopar",
+      "es": "Galopar",
+      "xesto": {
+        "gl": "Galopar no sitio cunha perna diante",
+        "es": "Galopar en el sitio con una pierna delante"
+      }
+    },
+    "graze": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Graze",
+      "gl": "Pacer",
+      "es": "Pastar",
+      "xesto": {
+        "gl": "Baixar a cabeza e mover a boca coma quen come herba",
+        "es": "Bajar la cabeza y mover la boca como quien come hierba"
+      }
+    },
+    "horse": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Horse",
+      "gl": "Cabalo",
+      "es": "Caballo",
+      "xesto": {
+        "gl": "Trotar no sitio suxeitando unhas rendas imaxinarias",
+        "es": "Trotar en el sitio sujetando unas riendas imaginarias"
+      }
+    },
+    "sheep": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Sheep",
+      "gl": "Ovella",
+      "es": "Oveja",
+      "xesto": {
+        "gl": "Facer rizos no aire arredor da cabeza",
+        "es": "Hacer rizos en el aire alrededor de la cabeza"
+      }
+    },
+    "bear": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Bear",
+      "gl": "Oso",
+      "es": "Oso",
+      "xesto": {
+        "gl": "Camiñar pesado a catro patas",
+        "es": "Caminar pesado a cuatro patas"
+      }
+    },
+    "green": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Green",
+      "gl": "Verde",
+      "es": "Verde",
+      "xesto": {
+        "gl": "Sinalar algo verde na aula",
+        "es": "Señalar algo verde en el aula"
+      }
+    },
+    "slither": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Slither",
+      "gl": "Arrastrarse",
+      "es": "Reptar",
+      "xesto": {
+        "gl": "Arrastrarse polo chan coma unha serpe",
+        "es": "Arrastrarse por el suelo como una serpiente"
+      }
+    },
+    "snake": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Snake",
+      "gl": "Serpe",
+      "es": "Serpiente",
+      "xesto": {
+        "gl": "Mover un brazo en zigzag coma unha serpe",
+        "es": "Mover un brazo en zigzag como una serpiente"
+      }
+    },
+    "fly": {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "en": "Fly",
+      "gl": "Voar",
+      "es": "Volar",
+      "xesto": {
+        "gl": "Voar pola aula cos brazos abertos, amodo",
+        "es": "Volar por el aula con los brazos abiertos, despacio"
+      }
+    },
+    "red": {
+      "curso": "curso_3_4",
+      "mes": 3,
+      "en": "Red",
+      "gl": "Vermello, vermella",
+      "es": "Rojo, roja",
+      "xesto": {
+        "gl": "Sinalar algo vermello na aula",
+        "es": "Señalar algo rojo en el aula"
+      }
+    },
+    "circle": {
+      "curso": "curso_3_4",
+      "mes": 3,
+      "en": "Circle",
+      "gl": "Círculo",
+      "es": "Círculo",
+      "xesto": {
+        "gl": "Debuxar un círculo grande co dedo",
+        "es": "Dibujar un círculo grande con el dedo"
+      }
+    },
+    "round": {
+      "curso": "curso_3_4",
+      "mes": 3,
+      "en": "Round",
+      "gl": "Redondo, redonda",
+      "es": "Redondo, redonda",
+      "xesto": {
+        "gl": "Mover a man facendo círculos pequenos",
+        "es": "Mover la mano haciendo círculos pequeños"
+      }
+    },
+    "shape": {
+      "curso": "curso_3_4",
+      "mes": 3,
+      "en": "Shape",
+      "gl": "Forma",
+      "es": "Forma",
+      "xesto": {
+        "gl": "Facer unha forma co corpo e quedar quietos",
+        "es": "Hacer una forma con el cuerpo y quedarse quietos"
+      }
+    },
+    "smooth": {
+      "curso": "curso_3_4",
+      "mes": 3,
+      "en": "Smooth",
+      "gl": "Liso, lisa",
+      "es": "Liso, lisa",
+      "xesto": {
+        "gl": "Pasar a man moi suave por unha mazá imaxinaria",
+        "es": "Pasar la mano muy suave por una manzana imaginaria"
+      }
+    },
+    "drum": {
+      "curso": "curso_3_4",
+      "mes": 3,
+      "en": "Drum",
+      "gl": "Tambor",
+      "es": "Tambor",
+      "xesto": {
+        "gl": "Tocar un tambor imaxinario nas pernas",
+        "es": "Tocar un tambor imaginario en las piernas"
+      }
+    },
+    "shake": {
+      "curso": "curso_3_4",
+      "mes": 3,
+      "en": "Shake",
+      "gl": "Axitar",
+      "es": "Agitar",
+      "xesto": {
+        "gl": "Axitar todo o corpo coma unha maraca",
+        "es": "Agitar todo el cuerpo como una maraca"
+      }
+    },
+    "open": {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "en": "Open",
+      "gl": "Abrir",
+      "es": "Abrir",
+      "xesto": {
+        "gl": "Abrir as mans amodo coma unha flor",
+        "es": "Abrir las manos despacio como una flor"
+      }
+    },
+    "sun": {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "en": "Sun",
+      "gl": "Sol",
+      "es": "Sol",
+      "xesto": {
+        "gl": "Abrir os dedos das mans coma raios de sol",
+        "es": "Abrir los dedos de las manos como rayos de sol"
+      }
+    },
+    "flower": {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "en": "Flower",
+      "gl": "Flor",
+      "es": "Flor",
+      "xesto": {
+        "gl": "Xuntar os pulsos e abrir os dedos coma pétalos",
+        "es": "Juntar las muñecas y abrir los dedos como pétalos"
+      }
+    },
+    "seed": {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "en": "Seed",
+      "gl": "Semente",
+      "es": "Semilla",
+      "xesto": {
+        "gl": "Pechar o puño coma unha semente pechada",
+        "es": "Cerrar el puño como una semilla cerrada"
+      }
+    },
+    "soil": {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "en": "Soil",
+      "gl": "Terra",
+      "es": "Tierra",
+      "xesto": {
+        "gl": "Tocar o chan e refregar as mans coma con terra",
+        "es": "Tocar el suelo y frotar las manos como con tierra"
+      }
+    },
+    "bee": {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "en": "Bee",
+      "gl": "Abella",
+      "es": "Abeja",
+      "xesto": {
+        "gl": "Mover os brazos pegados ao corpo moi rápido",
+        "es": "Mover los brazos pegados al cuerpo muy rápido"
+      }
+    },
+    "crawl": {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "en": "Crawl",
+      "gl": "Gatear",
+      "es": "Gatear",
+      "xesto": {
+        "gl": "Gatear polo chan un anaco",
+        "es": "Gatear por el suelo un rato"
+      }
+    },
+    "free": {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "en": "Free",
+      "gl": "Libre",
+      "es": "Libre",
+      "xesto": {
+        "gl": "Moverse libres pola aula cos brazos soltos",
+        "es": "Moverse libres por el aula con los brazos sueltos"
+      }
+    },
+    "ready-steady-go": {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "en": "Ready, steady, go!",
+      "gl": "Preparados, listos, xa!",
+      "es": "¡Preparados, listos, ya!",
+      "xesto": {
+        "gl": "Agacharse, prepararse e saír ao dicir «go»",
+        "es": "Agacharse, prepararse y salir al decir «go»"
+      }
+    },
+    "water": {
+      "curso": "curso_3_4",
+      "mes": 5,
+      "en": "Water",
+      "gl": "Auga",
+      "es": "Agua",
+      "xesto": {
+        "gl": "Mover as mans coma se tocasen auga",
+        "es": "Mover las manos como si tocaran agua"
+      }
+    },
+    "pass": {
+      "curso": "curso_3_4",
+      "mes": 5,
+      "en": "Pass",
+      "gl": "Pasar",
+      "es": "Pasar",
+      "xesto": {
+        "gl": "Pasar un prato imaxinario a quen está ao lado",
+        "es": "Pasar un plato imaginario a quien está al lado"
+      }
+    },
+    "secret": {
+      "curso": "curso_3_4",
+      "mes": 5,
+      "en": "Secret",
+      "gl": "Secreto, secreta",
+      "es": "Secreto, secreta",
+      "xesto": {
+        "gl": "Levar o dedo aos beizos e chiscar un ollo",
+        "es": "Llevarse el dedo a los labios y guiñar un ojo"
+      }
+    },
+    "whisper": {
+      "curso": "curso_3_4",
+      "mes": 5,
+      "en": "Whisper",
+      "gl": "Musitar",
+      "es": "Susurrar",
+      "xesto": {
+        "gl": "Tapar a boca coa man e falar moi baixiño",
+        "es": "Taparse la boca con la mano y hablar muy bajito"
+      }
+    },
+    "word": {
+      "curso": "curso_3_4",
+      "mes": 5,
+      "en": "Word",
+      "gl": "Palabra",
+      "es": "Palabra",
+      "xesto": {
+        "gl": "Levar a man da boca cara adiante ao dicir unha palabra",
+        "es": "Llevar la mano de la boca hacia delante al decir una palabra"
+      }
+    },
+    "blue": {
+      "curso": "curso_3_4",
+      "mes": 6,
+      "en": "Blue",
+      "gl": "Azul",
+      "es": "Azul",
+      "xesto": {
+        "gl": "Sinalar algo azul na aula",
+        "es": "Señalar algo azul en el aula"
+      }
+    },
+    "sea": {
+      "curso": "curso_3_4",
+      "mes": 6,
+      "en": "Sea",
+      "gl": "Mar",
+      "es": "Mar",
+      "xesto": {
+        "gl": "Mover os brazos en ondas longas diante do corpo",
+        "es": "Mover los brazos en ondas largas delante del cuerpo"
+      }
+    },
+    "collect": {
+      "curso": "curso_3_4",
+      "mes": 6,
+      "en": "Collect",
+      "gl": "Xuntar",
+      "es": "Juntar",
+      "xesto": {
+        "gl": "Apañar cunchas imaxinarias e gardalas na man",
+        "es": "Recoger conchas imaginarias y guardarlas en la mano"
+      }
+    },
+    "shell": {
+      "curso": "curso_3_4",
+      "mes": 6,
+      "en": "Shell",
+      "gl": "Cuncha",
+      "es": "Concha",
+      "xesto": {
+        "gl": "Pousar unha cuncha imaxinaria na orella e escoitar",
+        "es": "Poner una concha imaginaria en la oreja y escuchar"
+      }
+    },
+    "4_5.outubro.s1.command": {
+      "curso": "curso_4_5",
+      "mes": 10,
+      "en": "Command",
+      "gl": "Orde",
+      "es": "Orden",
+      "xesto": {
+        "gl": "Levantar un dedo antes da orde",
+        "es": "Levantar un dedo antes de la orden"
+      }
+    },
+    "4_5.outubro.s2.sneak": {
+      "curso": "curso_4_5",
+      "mes": 10,
+      "en": "Sneak",
+      "gl": "Andar ás agachadas",
+      "es": "Andar a hurtadillas",
+      "xesto": {
+        "gl": "Camiñar en silencio agachado",
+        "es": "Caminar en silencio agachado"
+      }
+    },
+    "4_5.decembro.s4.card": {
+      "curso": "curso_4_5",
+      "mes": 12,
+      "en": "Card",
+      "gl": "Postal",
+      "es": "Postal",
+      "xesto": {
+        "gl": "Entregar unha postal",
+        "es": "Entregar una postal"
+      }
+    },
+    "4_5.xaneiro.s1.left": {
+      "curso": "curso_4_5",
+      "mes": 1,
+      "en": "Left",
+      "gl": "Esquerdo",
+      "es": "Izquierdo",
+      "xesto": {
+        "gl": "Levantar a man esquerda",
+        "es": "Levantar la mano izquierda"
+      }
+    },
+    "4_5.xaneiro.s1.turn-left": {
+      "curso": "curso_4_5",
+      "mes": 1,
+      "en": "Turn left",
+      "gl": "Xirar á esquerda",
+      "es": "Girar a la izquierda",
+      "xesto": {
+        "gl": "Xirar cara á esquerda",
+        "es": "Girar hacia la izquierda"
+      }
+    },
+    "5_6.novembro.s2.pair": {
+      "curso": "curso_5_6",
+      "mes": 11,
+      "en": "Pair",
+      "gl": "Parella",
+      "es": "Pareja",
+      "xesto": {
+        "gl": "Xuntar dous dedos",
+        "es": "Juntar dos dedos"
+      }
+    },
+    "5_6.novembro.s4.chestnut-tree": {
+      "curso": "curso_5_6",
+      "mes": 11,
+      "en": "Chestnut tree",
+      "gl": "Castiñeiro",
+      "es": "Castaño",
+      "xesto": {
+        "gl": "Estirar os brazos coma pólas",
+        "es": "Estirar los brazos como ramas"
+      }
+    },
+    "5_6.marzo.s1.pattern": {
+      "curso": "curso_5_6",
+      "mes": 3,
+      "en": "Pattern",
+      "gl": "Patrón",
+      "es": "Patrón",
+      "xesto": {
+        "gl": "Bater palma, pé, palma, pé",
+        "es": "Dar palma, pie, palma, pie"
+      }
+    }
+  },
+  "ordes": {
+    "cmd.novembro.2_3.01": [
+      "0_2.novembro.s2.whoosh"
+    ],
+    "cmd.xaneiro.2_3.02": [
+      "2_3.decembro.s1.in-the-puddle"
+    ],
+    "cmd.marzo.2_3.01": [
+      "0_2.outubro.s4.foot"
+    ],
+    "cmd.maio.2_3.02": [
+      "0_2.outubro.s2.belly"
+    ],
+    "cmd.xuno.2_3.03": [
+      "0_2.xuno.s2.little-fish"
+    ],
+    "cmd.setembro.4i.03": [
+      "2_3.outubro.s1.touch-your-knees"
+    ],
+    "cmd.outubro.4i.02": [
+      "2_3.outubro.s2.spin-around"
+    ],
+    "cmd.novembro.4i.01": [
+      "0_2.novembro.s3.fire",
+      "jump"
+    ],
+    "cmd.novembro.4i.03": [
+      "hands",
+      "fast"
+    ],
+    "cmd.decembro.4i.03": [
+      "tiptoe",
+      "quiet",
+      "blow"
+    ],
+    "cmd.xaneiro.4i.01": [
+      "knees",
+      "falling",
+      "fast"
+    ],
+    "cmd.xaneiro.4i.02": [
+      "jump",
+      "big"
+    ],
+    "cmd.febreiro.4i.01": [
+      "bell",
+      "loud"
+    ],
+    "cmd.febreiro.4i.02": [
+      "quiet",
+      "hands-on-your-tummy"
+    ],
+    "cmd.febreiro.4i.03": [
+      "put-on"
+    ],
+    "cmd.marzo.4i.01": [
+      "0_2.xaneiro.s1.curl-up",
+      "small",
+      "tiny"
+    ],
+    "cmd.marzo.4i.02": [
+      "tall",
+      "0_2.abril.s3.sunflower"
+    ],
+    "cmd.marzo.4i.03": [
+      "dig",
+      "hands"
+    ],
+    "cmd.abril.4i.01": [
+      "gallop",
+      "horse",
+      "2_3.abril.s1.meadow"
+    ],
+    "cmd.abril.4i.02": [
+      "big",
+      "cow"
+    ],
+    "cmd.abril.4i.03": [
+      "graze",
+      "gentle",
+      "sheep"
+    ],
+    "cmd.maio.4i.01": [
+      "clap",
+      "0_2.febreiro.s4.rhythm"
+    ],
+    "cmd.maio.4i.02": [
+      "hands",
+      "clap",
+      "friend"
+    ],
+    "cmd.maio.4i.03": [
+      "clap"
+    ],
+    "cmd.xuno.4i.02": [
+      "fast"
+    ],
+    "cmd.xuno.4i.03": [
+      "find",
+      "white"
+    ],
+    "cmd.setembro.5i.01": [
+      "walk",
+      "sleepy",
+      "bear"
+    ],
+    "cmd.setembro.5i.02": [
+      "bell",
+      "ring",
+      "run",
+      "circle",
+      "freeze"
+    ],
+    "cmd.setembro.5i.03": [
+      "open",
+      "smile"
+    ],
+    "cmd.outubro.5i.01": [
+      "hop",
+      "squirrel",
+      "collect",
+      "chestnut"
+    ],
+    "cmd.outubro.5i.02": [
+      "wild",
+      "boar",
+      "come",
+      "freeze"
+    ],
+    "cmd.outubro.5i.03": [
+      "climb",
+      "2_3.novembro.s1.oak-tree",
+      "hide"
+    ],
+    "cmd.novembro.5i.01": [
+      "2_3.abril.s1.roll-down",
+      "chestnut"
+    ],
+    "cmd.novembro.5i.02": [
+      "hedgehog",
+      "wake-up",
+      "freeze",
+      "0_2.xaneiro.s1.curl-up",
+      "small"
+    ],
+    "cmd.novembro.5i.03": [
+      "0_2.abril.s3.pop-out",
+      "dance",
+      "0_2.novembro.s3.around-the-fire"
+    ],
+    "cmd.decembro.5i.01": [
+      "dance",
+      "free",
+      "drum",
+      "sing"
+    ],
+    "cmd.decembro.5i.02": [
+      "cold",
+      "winter",
+      "night",
+      "0_2.xaneiro.s1.curl-up"
+    ],
+    "cmd.decembro.5i.03": [
+      "stand-up",
+      "stretch",
+      "tall"
+    ],
+    "cmd.xaneiro.5i.01": [
+      "walk",
+      "2_3.setembro.s4.together",
+      "big",
+      "cloud"
+    ],
+    "cmd.xaneiro.5i.02": [
+      "2_3.decembro.s2.storm",
+      "run",
+      "hide",
+      "under-the-umbrella"
+    ],
+    "cmd.xaneiro.5i.03": [
+      "sun",
+      "come",
+      "shake",
+      "water"
+    ],
+    "cmd.febreiro.5i.01": [
+      "gallop",
+      "wild",
+      "horse"
+    ],
+    "cmd.febreiro.5i.02": [
+      "wolf",
+      "freeze"
+    ],
+    "cmd.febreiro.5i.03": [
+      "4_5.outubro.s2.sneak",
+      "quiet",
+      "fox"
+    ],
+    "cmd.marzo.5i.01": [
+      "fly",
+      "busy",
+      "bee"
+    ],
+    "cmd.marzo.5i.02": [
+      "find",
+      "red",
+      "flower",
+      "2_3.outubro.s1.land-softly"
+    ],
+    "cmd.marzo.5i.03": [
+      "sleep",
+      "flower",
+      "sun",
+      "wake-up"
+    ],
+    "cmd.abril.5i.01": [
+      "walk",
+      "calm",
+      "sheep"
+    ],
+    "cmd.abril.5i.02": [
+      "hungry",
+      "wolf",
+      "wake-up",
+      "freeze"
+    ],
+    "cmd.abril.5i.03": [
+      "wolf",
+      "sleep",
+      "tiptoe"
+    ],
+    "cmd.maio.5i.01": [
+      "pull",
+      "2_3.xaneiro.s4.rope",
+      "2_3.setembro.s4.together"
+    ],
+    "cmd.maio.5i.02": [
+      "friend",
+      "come",
+      "help"
+    ],
+    "cmd.maio.5i.03": [
+      "whisper",
+      "secret",
+      "word",
+      "friend"
+    ],
+    "cmd.xuno.5i.01": [
+      "2_3.xuno.s1.calm-sea",
+      "slow"
+    ],
+    "cmd.xuno.5i.02": [
+      "2_3.decembro.s2.storm",
+      "shake",
+      "sea"
+    ],
+    "cmd.xuno.5i.03": [
+      "sea",
+      "sleep",
+      "down",
+      "2_3.abril.s3.lie-still"
+    ],
+    "cmd.setembro.6i.01": [
+      "walk",
+      "2_3.setembro.s1.hang-up",
+      "coat"
+    ],
+    "cmd.setembro.6i.02": [
+      "turn-around",
+      "give"
+    ],
+    "cmd.setembro.6i.03": [
+      "sit",
+      "green",
+      "2_3.setembro.s3.mat",
+      "freeze"
+    ],
+    "cmd.outubro.6i.01": [
+      "leaf",
+      "brown"
+    ],
+    "cmd.outubro.6i.02": [
+      "walk",
+      "slow",
+      "give",
+      "smooth",
+      "leaf",
+      "friend"
+    ],
+    "cmd.outubro.6i.03": [
+      "count",
+      "leaf",
+      "jump"
+    ],
+    "cmd.novembro.6i.01": [
+      "find",
+      "round",
+      "cold",
+      "chestnut"
+    ],
+    "cmd.novembro.6i.02": [
+      "smooth"
+    ],
+    "cmd.novembro.6i.03": [
+      "your-turn",
+      "give",
+      "4_5.outubro.s1.command",
+      "friend"
+    ],
+    "cmd.decembro.6i.01": [
+      "walk",
+      "slow",
+      "hold",
+      "friend",
+      "hands"
+    ],
+    "cmd.decembro.6i.02": [
+      "4_5.xaneiro.s1.turn-left",
+      "2_3.xaneiro.s4.rope"
+    ],
+    "cmd.decembro.6i.03": [
+      "2_3.setembro.s2.here-you-go",
+      "give",
+      "light",
+      "5_6.novembro.s2.pair"
+    ],
+    "cmd.xaneiro.6i.01": [
+      "slow",
+      "water"
+    ],
+    "cmd.xaneiro.6i.02": [
+      "ready-steady-go",
+      "pass",
+      "2_3.setembro.s3.tray",
+      "friend"
+    ],
+    "cmd.xaneiro.6i.03": [
+      "water",
+      "cold",
+      "walk",
+      "blue",
+      "2_3.setembro.s3.mat"
+    ],
+    "cmd.febreiro.6i.01": [
+      "arms-up",
+      "4_5.xaneiro.s1.left",
+      "0_2.outubro.s4.foot"
+    ],
+    "cmd.febreiro.6i.02": [
+      "your-turn"
+    ],
+    "cmd.febreiro.6i.03": [
+      "look",
+      "4_5.decembro.s4.card",
+      "0_2.outubro.s3.copy",
+      "shape"
+    ],
+    "cmd.marzo.6i.01": [
+      "fill",
+      "pot",
+      "seed",
+      "0_2.abril.s3.water-it"
+    ],
+    "cmd.marzo.6i.02": [
+      "2_3.setembro.s2.here-you-go",
+      "pass",
+      "soil",
+      "friend"
+    ],
+    "cmd.marzo.6i.03": [
+      "seed",
+      "big",
+      "brown",
+      "pot"
+    ],
+    "cmd.abril.6i.01": [
+      "fox",
+      "hide",
+      "point",
+      "elbow"
+    ],
+    "cmd.abril.6i.02": [
+      "2_3.xuno.s3.under-the-stone",
+      "slither",
+      "snake"
+    ],
+    "cmd.abril.6i.03": [
+      "climb",
+      "5_6.novembro.s4.chestnut-tree",
+      "crawl",
+      "green",
+      "2_3.setembro.s3.mat"
+    ],
+    "cmd.maio.6i.01": [
+      "5_6.marzo.s1.pattern",
+      "clap",
+      "jump"
+    ],
+    "cmd.maio.6i.02": [
+      "0_2.outubro.s3.copy",
+      "5_6.marzo.s1.pattern"
+    ],
+    "cmd.maio.6i.03": [
+      "pass",
+      "0_2.febreiro.s4.rhythm",
+      "circle"
+    ],
+    "cmd.xuno.6i.01": [
+      "walk",
+      "white",
+      "shell"
+    ],
+    "cmd.xuno.6i.02": [
+      "shell",
+      "smooth",
+      "blue",
+      "basket"
+    ],
+    "cmd.xuno.6i.03": [
+      "2_3.setembro.s2.here-you-go",
+      "thank-you",
+      "your-turn"
+    ]
+  },
+  "meses": {
+    "curso_2_3": {
+      "11": [
+        "0_2.novembro.s2.whoosh"
+      ],
+      "1": [
+        "2_3.decembro.s1.in-the-puddle"
+      ],
+      "3": [
+        "0_2.outubro.s4.foot"
+      ],
+      "5": [
+        "0_2.outubro.s2.belly"
+      ],
+      "6": [
+        "0_2.xuno.s2.little-fish"
+      ]
+    },
+    "curso_3_4": {
+      "9": [
+        "2_3.outubro.s1.touch-your-knees"
+      ],
+      "10": [
+        "2_3.outubro.s2.spin-around"
+      ],
+      "11": [
+        "0_2.novembro.s3.fire",
+        "jump",
+        "hands",
+        "fast"
+      ],
+      "12": [
+        "tiptoe",
+        "quiet",
+        "blow"
+      ],
+      "1": [
+        "knees",
+        "falling",
+        "fast",
+        "jump",
+        "big"
+      ],
+      "2": [
+        "bell",
+        "loud",
+        "quiet",
+        "hands-on-your-tummy",
+        "put-on"
+      ],
+      "3": [
+        "0_2.xaneiro.s1.curl-up",
+        "small",
+        "tiny",
+        "tall",
+        "0_2.abril.s3.sunflower",
+        "dig",
+        "hands"
+      ],
+      "4": [
+        "gallop",
+        "horse",
+        "2_3.abril.s1.meadow",
+        "big",
+        "cow",
+        "graze",
+        "gentle",
+        "sheep"
+      ],
+      "5": [
+        "clap",
+        "0_2.febreiro.s4.rhythm",
+        "hands",
+        "friend"
+      ],
+      "6": [
+        "fast",
+        "find",
+        "white"
+      ]
+    },
+    "curso_4_5": {
+      "9": [
+        "walk",
+        "sleepy",
+        "bear",
+        "bell",
+        "ring",
+        "run",
+        "circle",
+        "freeze",
+        "open",
+        "smile"
+      ],
+      "10": [
+        "hop",
+        "squirrel",
+        "collect",
+        "chestnut",
+        "wild",
+        "boar",
+        "come",
+        "freeze",
+        "climb",
+        "2_3.novembro.s1.oak-tree",
+        "hide"
+      ],
+      "11": [
+        "2_3.abril.s1.roll-down",
+        "chestnut",
+        "hedgehog",
+        "wake-up",
+        "freeze",
+        "0_2.xaneiro.s1.curl-up",
+        "small",
+        "0_2.abril.s3.pop-out",
+        "dance",
+        "0_2.novembro.s3.around-the-fire"
+      ],
+      "12": [
+        "dance",
+        "free",
+        "drum",
+        "sing",
+        "cold",
+        "winter",
+        "night",
+        "0_2.xaneiro.s1.curl-up",
+        "stand-up",
+        "stretch",
+        "tall"
+      ],
+      "1": [
+        "walk",
+        "2_3.setembro.s4.together",
+        "big",
+        "cloud",
+        "2_3.decembro.s2.storm",
+        "run",
+        "hide",
+        "under-the-umbrella",
+        "sun",
+        "come",
+        "shake",
+        "water"
+      ],
+      "2": [
+        "gallop",
+        "wild",
+        "horse",
+        "wolf",
+        "freeze",
+        "4_5.outubro.s2.sneak",
+        "quiet",
+        "fox"
+      ],
+      "3": [
+        "fly",
+        "busy",
+        "bee",
+        "find",
+        "red",
+        "flower",
+        "2_3.outubro.s1.land-softly",
+        "sleep",
+        "sun",
+        "wake-up"
+      ],
+      "4": [
+        "walk",
+        "calm",
+        "sheep",
+        "hungry",
+        "wolf",
+        "wake-up",
+        "freeze",
+        "sleep",
+        "tiptoe"
+      ],
+      "5": [
+        "pull",
+        "2_3.xaneiro.s4.rope",
+        "2_3.setembro.s4.together",
+        "friend",
+        "come",
+        "help",
+        "whisper",
+        "secret",
+        "word"
+      ],
+      "6": [
+        "2_3.xuno.s1.calm-sea",
+        "slow",
+        "2_3.decembro.s2.storm",
+        "shake",
+        "sea",
+        "sleep",
+        "down",
+        "2_3.abril.s3.lie-still"
+      ]
+    },
+    "curso_5_6": {
+      "9": [
+        "walk",
+        "2_3.setembro.s1.hang-up",
+        "coat",
+        "turn-around",
+        "give",
+        "sit",
+        "green",
+        "2_3.setembro.s3.mat",
+        "freeze"
+      ],
+      "10": [
+        "leaf",
+        "brown",
+        "walk",
+        "slow",
+        "give",
+        "smooth",
+        "friend",
+        "count",
+        "jump"
+      ],
+      "11": [
+        "find",
+        "round",
+        "cold",
+        "chestnut",
+        "smooth",
+        "your-turn",
+        "give",
+        "4_5.outubro.s1.command",
+        "friend"
+      ],
+      "12": [
+        "walk",
+        "slow",
+        "hold",
+        "friend",
+        "hands",
+        "4_5.xaneiro.s1.turn-left",
+        "2_3.xaneiro.s4.rope",
+        "2_3.setembro.s2.here-you-go",
+        "give",
+        "light",
+        "5_6.novembro.s2.pair"
+      ],
+      "1": [
+        "slow",
+        "water",
+        "ready-steady-go",
+        "pass",
+        "2_3.setembro.s3.tray",
+        "friend",
+        "cold",
+        "walk",
+        "blue",
+        "2_3.setembro.s3.mat"
+      ],
+      "2": [
+        "arms-up",
+        "4_5.xaneiro.s1.left",
+        "0_2.outubro.s4.foot",
+        "your-turn",
+        "look",
+        "4_5.decembro.s4.card",
+        "0_2.outubro.s3.copy",
+        "shape"
+      ],
+      "3": [
+        "fill",
+        "pot",
+        "seed",
+        "0_2.abril.s3.water-it",
+        "2_3.setembro.s2.here-you-go",
+        "pass",
+        "soil",
+        "friend",
+        "big",
+        "brown"
+      ],
+      "4": [
+        "fox",
+        "hide",
+        "point",
+        "elbow",
+        "2_3.xuno.s3.under-the-stone",
+        "slither",
+        "snake",
+        "climb",
+        "5_6.novembro.s4.chestnut-tree",
+        "crawl",
+        "green",
+        "2_3.setembro.s3.mat"
+      ],
+      "5": [
+        "5_6.marzo.s1.pattern",
+        "clap",
+        "jump",
+        "0_2.outubro.s3.copy",
+        "pass",
+        "0_2.febreiro.s4.rhythm",
+        "circle"
+      ],
+      "6": [
+        "walk",
+        "white",
+        "shell",
+        "smooth",
+        "blue",
+        "basket",
+        "2_3.setembro.s2.here-you-go",
+        "thank-you",
+        "your-turn"
+      ]
+    }
+  }
+}
