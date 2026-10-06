@@ -11,6 +11,7 @@ import '../../../core/widgets/cabecera.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
+import '../../../data/models/ponte_ao_dia_model.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
@@ -21,6 +22,7 @@ import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_familias.dart';
 import '../widgets/selector_idade.dart';
+import 'ponte_ao_dia_screen.dart';
 import 'xogo_de_hoxe_screen.dart';
 
 /// «Hoxe», la portada de casa: lo que toca hoy, entero, en una pantalla.
@@ -224,6 +226,23 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
     );
   }
 
+  void _abrirPonteAoDia(PonteAoDia ponte) {
+    Navigator.of(context).push(
+      RutaLua(
+        de: context,
+        builder: (_) => PonteAoDiaScreen(
+          ponte: ponte,
+          cursoId: widget.cursoId,
+          mes: _toca.dia.mesCalendario,
+          language: widget.language,
+          onLanguageChanged: widget.onLanguageChanged,
+          onCambiarCurso: widget.onCambiarCurso,
+          audioService: widget.audioService,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final lang = widget.language;
@@ -231,6 +250,10 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
     final curso = programa?.curso(widget.cursoId);
     final plan = curso?.planDoDia(
         _toca.dia.mesCalendario, _toca.dia.semana, _toca.dia.dia);
+    // Para quen chega novo: o que dan por sabido as asembleas deste mes.
+    final ponte = widget.repository.ponteAoDiaSync;
+    final dadasPorSabidas =
+        ponte?.doMes(widget.cursoId, _toca.dia.mesCalendario) ?? const [];
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -349,6 +372,16 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                   modeloDoDia: curso.modelo.dia(_toca.dia.dia),
                   language: lang,
                   audioService: widget.audioService,
+                ),
+              ],
+              if (ponte != null && dadasPorSabidas.isNotEmpty) ...[
+                const SizedBox(height: 14),
+                _FilaPonteAoDia(
+                  ponte: ponte,
+                  cantas: dadasPorSabidas.length,
+                  mes: _toca.dia.mesCalendario,
+                  language: lang,
+                  onTap: () => _abrirPonteAoDia(ponte),
                 ),
               ],
               if (_conto case final conto?) ...[
@@ -569,6 +602,91 @@ class _TarxetaPalabras extends StatelessWidget {
               detalle: false,
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+/// La puerta de «Ponte ao día»: para quien llega nuevo al curso, cuántas
+/// palabras de antes dan por sabidas las asambleas de este mes.
+class _FilaPonteAoDia extends StatelessWidget {
+  const _FilaPonteAoDia({
+    required this.ponte,
+    required this.cantas,
+    required this.mes,
+    required this.language,
+    required this.onTap,
+  });
+
+  final PonteAoDia ponte;
+  final int cantas;
+  final int mes;
+  final AppLanguage language;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final nomeMes = nomeDoMes[mes]?.resolve(language).toLowerCase() ?? '';
+    final entrada = ponte
+        .texto('casa', 'entrada')
+        .resolve(language)
+        .replaceAll('{n}', '$cantas')
+        .replaceAll('{mes}', nomeMes);
+    return Card(
+      margin: EdgeInsets.zero,
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        key: const Key('hoxe_ponte_ao_dia'),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Row(
+            children: [
+              Container(
+                width: 48,
+                height: 48,
+                decoration: BoxDecoration(
+                  color: context.acentoTint,
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                child:
+                    Icon(Icons.update_rounded, color: context.acento, size: 26),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      ponte
+                          .texto('casa', 'titulo')
+                          .resolve(language)
+                          .toUpperCase(),
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w800,
+                        letterSpacing: 0.8,
+                        color: AppTheme.textSecondary,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      entrada,
+                      style: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w600,
+                        color: AppTheme.textPrimary,
+                        height: 1.3,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded,
+                  color: AppTheme.textSecondary),
+            ],
+          ),
         ),
       ),
     );
