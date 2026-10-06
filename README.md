@@ -16,7 +16,10 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   semana, la dinámica y cuándo toca la ciencia del curso.
 - **Hoy, en casa** — el juego de tres minutos del día, con el momento como
   título y un solo botón, sus palabras en inglés con voz y el cuento de la
-  semana.
+  semana. Si la criatura llega nueva a un curso empezado, **Ponte al día**
+  enseña las palabras de antes que dan por sabidas las asambleas del mes, dos
+  o tres al día, con su gesto y su voz. Se elige la edad y el mes; no se guarda
+  nada.
 - **Juega con Lúa · Modo Aula** — todas las asambleas, de cualquier grupo, mes y
   día; el grupo, el mes y el día van en una línea que se abre si hace falta.
 - **Yo, en la escuela** — el nivel y la racha de la docente, *Antes de entrar
@@ -28,7 +31,11 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   su grabación y sus minutos. Es **la misma pantalla que la asamblea de primer
   ciclo**: el producto tiene un solo lenguaje visual. Se abre desde Hoy, desde
   «Comenzar la asamblea» en la pestaña 2.º ciclo del Modo Aula o desde el día
-  del Calendario.
+  del Calendario. Si la orden del día usa palabras que el curso enseñó antes,
+  justo antes del reto TPR va **Antes de la orden**: esas palabras, una a una,
+  con su voz y su gesto, para que quien llega nuevo al grupo pueda seguirla, y
+  una nota para la docente. En primer ciclo sale en cinco órdenes de 2-3 años;
+  en 0-2, nunca.
 - **Guías para la familia** (Academy) — lecturas cortas para la persona adulta,
   en la pestaña Guías del Portal Familias. Incluye la
   **micro-rutina del mes** para segundo ciclo: tres minutos en un momento
@@ -77,6 +84,12 @@ gesto que la acompaña. Cada grupo del aula tiene su curso. La docente las ve en
 Hoy, en el día del Modo Aula y en el día del Calendario, junto a la asamblea de
 ese día; la familia ve **las mismas** ese día, con una dinámica
 pensada para casa.
+
+**El cuento de la semana** lleva dentro esas veinte palabras, entre comillas y
+resaltadas, con su gesto y su voz debajo de cada página; abierto desde Hoy, se
+marcan las del día. Cada vez que se abre la app, el primer cuento empieza por
+**Cómo funciona el cuento**: unas pocas frases que dicen qué es cada cosa y qué
+se hace con ella. Después queda en una línea que se abre al tocarla.
 
 El grupo **Inglés** de Recursos, en el Portal Docentes, trabaja esas mismas
 palabras, una fila para cada parte: se consultan por curso,
@@ -142,9 +155,10 @@ comprobado y nombra el comando que lo comprobó.
 | Calendario e inglés | 50 meses de calendario (5 cursos × 10, de 0-2 a 5-6 años) · 4.000 palabras inglesas, 800 por curso, cinco nuevas al día · 63 colocaciones · 44 fonemas |
 | Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
 | Cuentos | 303: 200 de la semana —uno por semana de cada curso, de septiembre a junio—, cada uno con las 20 palabras inglesas de su semana dentro del texto, y 103 más que no son de ninguna semana |
+| Ponte al día | 147 palabras de cursos o meses anteriores que dan por sabidas 86 de las 133 órdenes de las asambleas, revisadas a mano, cada una con su gesto y su voz |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
 | STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, cada una en versión de aula y de casa |
-| Voz | 15.149 locuciones (1.175 gl + 1.174 es + 12.800 en) grabadas dentro del paquete |
+| Voz | 15.154 locuciones (1.175 gl + 1.174 es + 12.805 en) grabadas dentro del paquete |
 | Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 | Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |
 | Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |
@@ -180,8 +194,10 @@ manda el script:
 | `check_no_emoji.py` | Que no se use emoji del sistema como iconografía (regla 5) |
 | `build_corpus_ingles.py --check` | Que cada palabra del vocabulario inglés traiga categoría, definición y una frase entera escritas a mano; que la frase use la palabra sin ser una definición disfrazada ni repetirse; y que no entre ninguna de las excluidas |
 | `humaniza_rutinas_fogar.py --check` | Que las rutinas de casa no vuelvan a ser un mismo texto repetido |
+| `xera_nomes.py --check` | Que los nombres del inicio y de los dos portales salgan de su JSON |
 | `planificador_5_palabras.py --check` | Que el inglés sea el del modelo en cada uno de los cinco cursos: 20 palabras por semana, 800 por curso, 4.000 sin que ninguna se repita entre cursos, con significado y gesto en gl y es, y con el reparto 280/200/160/96/64 **contado** en el contenido |
 | `check_contos_palabras.py` | Que el cuento de cada semana lleve las 20 palabras inglesas de su semana: entre “…” en gallego y en castellano, de 1 a 4 por página y con su significado |
+| `xera_ponte_ao_dia.py --check` | Que lo que cada orden de la asamblea da por sabido salga del curso y de las asambleas actuales, con la revisión a mano aplicada y sin decisiones de revisión que ya no hagan falta |
 | `export_voice_corpus.py --check` | Que el corpus de voz siga sincronizado con los textos |
 | `check_pulse_bpm.py` | Que el tempo mostrado sea el que suena, **medido del audio** |
 | `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |
@@ -194,7 +210,7 @@ manda el script:
 | Permisos del APK | Que el **binario** no declare más permiso que el que inyecta AndroidX |
 
 Los dos últimos solo corren sin `--fast`: son los que necesitan el SDK de
-Android. Por eso `--fast` da **19 de 19** y el run completo, **21 de 21**.
+Android. Por eso `--fast` da **22 de 22** y el run completo, **24 de 24**.
 
 ## Publicar
 
