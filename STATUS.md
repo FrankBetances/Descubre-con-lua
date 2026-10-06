@@ -9,6 +9,53 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L9: el gesto de «Whisper», con la boca a la vista (6/10/2026)
+
+Rama `claude/ux-l9`. Frank probó la build de L8 y decidió sobre su «visto y no
+tocado»: el 1 se cambia siguiendo la decisión de L7, el 2 y el 3 se hacen y el
+4 no se toca. Pidió el menor gasto posible: ahora, lo imprescindible; el resto,
+la semana siguiente.
+
+Qué cambia en pantalla:
+
+- **El gesto de «Whisper» (3-4 años, mayo) ya no tapa la boca**, la misma razón
+  que en los pares mínimos: a quien lleva audífono o implante le quitaba la
+  lectura labial. Ahora es «Achegarse á orella de quen está ao lado e falar moi
+  baixiño, coa boca á vista» / «Acercarse a la oreja de quien está al lado y
+  hablar muy bajito, con la boca a la vista». Sale así en el curso de 3-4 y,
+  por la orden «Whisper the secret word to your friend», en «Antes da orde» y
+  «Ponte ao día» de 4-5 en mayo.
+
+Cómo se comprobó:
+
+- `test/features/ux_l9_test.dart`: el gesto, en el curso y en
+  `ponte_ao_dia.json`, en gl y es, no tapa la boca y la deja a la vista.
+- `tools/xera_ponte_ao_dia.py`, regenerado: siguen 86 órdenes y 147 palabras.
+- `tools/gates.sh --fast` en local: 21 de 22 a la primera, con 1.182 pruebas;
+  cayó `dart format` porque el test nuevo no tenía el formato. Formateado y
+  comprobado de nuevo con `dart format --set-exit-if-changed .`.
+
+Las capas: el JSON gl/es del curso y `ponte_ao_dia.json`. El gesto no tiene
+voz, así que no hay grabación que rehacer. Ni el README ni el manual lo
+mencionan, y ninguna captura enseña mayo. Sin cambios de código.
+
+Lo que no se ha comprobado: **esto no lo he visto en un aparato Android.**
+
+### Visto y no tocado
+
+- Otros tres gestos del curso tapan la boca y Frank no los ha decidido: en
+  0-2, «Where's the smile?» («Tapar e destapar a boca sorrindo», septiembre) y
+  «Lights off!» («Apagar a luz e tapar a boca», diciembre); en 2-3, «Silent»
+  («Pechar a boca coas mans» / «Taparse la boca con las manos», abril).
+
+### Decidido por Frank y pendiente para la semana siguiente
+
+- **El 2:** juntar las «Pautas de lectura dialóxica compartida» del visor con
+  «Como funciona o conto», sin el término técnico en el título y con su texto
+  en JSON, no en el widget.
+- **El 3:** extender la opción A a las frases TPR de los cuentos de 4-5 y 5-6:
+  lo que cada reto da por sabido, con su voz y su gesto.
+
 ## Lote L8: quien llega nuevo al curso, y cómo funciona el cuento (6/10/2026)
 
 Rama `claude/ux-l8`, que se integra en `main` por pull request después de L7.
