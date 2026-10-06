@@ -100,6 +100,10 @@ Corregido en la revisión:
 - **El «1 min» de esa pantalla estaba escrito en el widget**, contra la regla
   de que el contenido vive en JSON: salió al releer el diff. Ahora es un texto
   más de `ponte_ao_dia.json`; las capturas salen idénticas.
+- **Ni el README ni el manual decían que «Antes da orde» sale también en
+  cinco órdenes de 2-3 años**, y ningún test lo miraba en pantalla: también
+  salió al releer. Ahora lo dicen los dos, y el test de tamaño recorre
+  también esas cinco órdenes.
 - **El README decía que `--fast` da 19 de 19 gates y el completo 21 de 21**, y
   a su tabla le faltaba el de los nombres. Son 22 y 24 con el nuevo. Y contaba
   15.149 locuciones de voz; son 15.154 (12.805 en inglés): lo escribió Claude
