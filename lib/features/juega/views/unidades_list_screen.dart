@@ -394,6 +394,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               language: _language,
               dia: dia,
               semana: semana,
+              ponteAoDia: widget.repository.ponteAoDiaSync,
             ),
           ),
         );
@@ -432,6 +433,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               language: _language,
               dia: dia,
               semana: semana,
+              ponteAoDia: widget.repository.ponteAoDiaSync,
             ),
           ),
         );
