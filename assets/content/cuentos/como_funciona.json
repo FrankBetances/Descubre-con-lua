@@ -1,0 +1,55 @@
+{
+  "_doc": "Como funciona o conto: a explicación breve que ve quen o abre por primeira vez, arriba da primeira páxina do visor, nas catro portas (Hoxe das familias, Explorar → Contos, Hoxe das docentes e o círculo do día no Modo Aula). Cada paso sae só se o conto ten iso: «cando» é sempre, conPalabras (leva palabras da semana), conDia (abriuse desde un día e hai palabras de hoxe), senDia (leva palabras pero abriuse sen día), conPregunta (algunha páxina trae pregunta) ou conReto (trae reto en inglés). Describe o que fai o visor: se o visor cambia, cámbiase isto.",
+  "titulo": {
+    "gl": "Como funciona o conto",
+    "es": "Cómo funciona el cuento"
+  },
+  "ocultar": {
+    "gl": "Ocultar",
+    "es": "Ocultar"
+  },
+  "pasos": [
+    {
+      "cando": "sempre",
+      "texto": {
+        "gl": "Le ti o conto en voz alta. A crianza escoita e mira a lámina: a pantalla é para ti.",
+        "es": "Lee tú el cuento en voz alta. La criatura escucha y mira la lámina: la pantalla es para ti."
+      }
+    },
+    {
+      "cando": "conPalabras",
+      "texto": {
+        "gl": "As palabras en inglés van entre comiñas. Ao chegar a unha, dia en inglés e fai o xesto: o xesto e a voz están debaixo do texto.",
+        "es": "Las palabras en inglés van entre comillas. Al llegar a una, dila en inglés y haz el gesto: el gesto y la voz están debajo del texto."
+      }
+    },
+    {
+      "cando": "conDia",
+      "texto": {
+        "gl": "As de hoxe levan fondo e a marca «Hoxe»: cinco de luns a xoves, as vinte o venres. O conto é o mesmo toda a semana.",
+        "es": "Las de hoy llevan fondo y la marca «Hoy»: cinco de lunes a jueves, las veinte el viernes. El cuento es el mismo toda la semana."
+      }
+    },
+    {
+      "cando": "senDia",
+      "texto": {
+        "gl": "Aquí resáltanse as vinte palabras da semana; desde Hoxe márcanse só as do día.",
+        "es": "Aquí se resaltan las veinte palabras de la semana; desde Hoy se marcan solo las del día."
+      }
+    },
+    {
+      "cando": "conPregunta",
+      "texto": {
+        "gl": "Cada páxina trae unha pregunta para falar xuntos: faina e agarda a resposta.",
+        "es": "Cada página trae una pregunta para hablar juntos: hazla y espera la respuesta."
+      }
+    },
+    {
+      "cando": "conReto",
+      "texto": {
+        "gl": "O reto en inglés, debaixo da páxina, faise co corpo.",
+        "es": "El reto en inglés, debajo de la página, se hace con el cuerpo."
+      }
+    }
+  ]
+}

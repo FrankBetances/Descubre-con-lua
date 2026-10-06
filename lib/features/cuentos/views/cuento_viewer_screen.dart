@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
+import '../../../core/localization/localized_string.dart';
 import '../../../core/localization/vocabulario_contos.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/aviso_contenido_ilegible.dart';
+import '../../../data/models/como_funciona_o_conto_model.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../widgets/palabras_do_conto.dart';
@@ -36,6 +39,9 @@ class CuentoViewerScreen extends StatefulWidget {
   /// se marcan las palabras de HOY. `null` desde la biblioteca.
   final int? dia;
 
+  /// «Como funciona o conto». Sin él se lee del paquete; los tests lo pasan.
+  final ComoFuncionaOConto? comoFunciona;
+
   const CuentoViewerScreen({
     super.key,
     required this.cuento,
@@ -44,7 +50,24 @@ class CuentoViewerScreen extends StatefulWidget {
     this.audioService,
     this.semanaTpr,
     this.dia,
+    this.comoFunciona,
   });
+
+  /// «Como funciona», plegado. Sale desplegado la primera vez que se abre un
+  /// cuento en cada sesión de la app, que es cuando hace falta; al cerrar ese
+  /// cuento, o al tocar «Ocultar», queda en una línea que se abre tocándola,
+  /// para no empujar la primera página a quien ya lo conoce. Vive mientras la
+  /// app está abierta y no se guarda en ningún sitio: la app solo guarda la
+  /// cuenta de la persona adulta.
+  static bool _explicacionPlegada = false;
+
+  /// Solo para los tests: desplegada, como al abrir la app.
+  @visibleForTesting
+  static void despregarExplicacion() => _explicacionPlegada = false;
+
+  /// Solo para los tests: plegada, como después del primer cuento.
+  @visibleForTesting
+  static void pregarExplicacion() => _explicacionPlegada = true;
 
   @override
   State<CuentoViewerScreen> createState() => _CuentoViewerScreenState();
@@ -88,12 +111,64 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
     dia: widget.dia,
   );
 
+  late ComoFuncionaOConto? _comoFunciona = widget.comoFunciona;
+  Object? _erroComoFunciona;
+
   @override
   void initState() {
     super.initState();
     VocabularioContos.cargar().then((_) {
       if (mounted) setState(() {});
     });
+    if (_comoFunciona == null) {
+      ComoFuncionaOConto.cargar().then<void>(
+        (c) {
+          if (mounted) setState(() => _comoFunciona = c);
+        },
+        onError: (Object e) {
+          if (mounted) setState(() => _erroComoFunciona = e);
+        },
+      );
+    }
+  }
+
+  @override
+  void dispose() {
+    // Ya se vio una vez en esta sesión: la próxima, plegada.
+    if (_comoFunciona != null) CuentoViewerScreen._explicacionPlegada = true;
+    super.dispose();
+  }
+
+  /// La explicación, solo en la primera página: es donde empieza quien abre
+  /// el cuento por primera vez, por cualquiera de sus cuatro puertas.
+  Widget? _explicacion(AppLanguage lang) {
+    if (_currentPageIndex != 0) return null;
+    if (_erroComoFunciona != null) {
+      return Padding(
+        padding: const EdgeInsets.only(bottom: AppTheme.spaceLg),
+        child: AvisoContenidoIlegible(
+          asset: ComoFuncionaOConto.assetPath,
+          language: lang,
+        ),
+      );
+    }
+    final como = _comoFunciona;
+    if (como == null) return null;
+    final cuento = widget.cuento;
+    return _ComoFunciona(
+      como: como,
+      pasos: como.pasosPara(
+        conPalabras: _palabras.levaPalabras,
+        conDia: _palabras.plan != null,
+        conPregunta: cuento.paginas.any(
+            (p) => (p.preguntaImaxe?.resolve(lang) ?? '').trim().isNotEmpty),
+        conReto: cuento.tprOral != null,
+      ),
+      language: lang,
+      aberta: !CuentoViewerScreen._explicacionPlegada,
+      onAlternar: () => setState(() => CuentoViewerScreen._explicacionPlegada =
+          !CuentoViewerScreen._explicacionPlegada),
+    );
   }
 
   @override
@@ -290,6 +365,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    if (_explicacion(lang) case final explicacion?) explicacion,
                     // Las palabras del día, dentro del cuento que se va a
                     // leer: cuáles son y en qué página están.
                     if (widget.semanaTpr != null && _palabras.levaPalabras)
@@ -700,6 +776,123 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// «Como funciona o conto»: cuatro o cinco frases, numeradas, que dicen qué
+/// es cada cosa de la página y qué se hace con ella. Desplegada, se pliega con
+/// «Ocultar»; plegada, es una línea que se vuelve a abrir tocándola.
+class _ComoFunciona extends StatelessWidget {
+  final ComoFuncionaOConto como;
+  final List<LocalizedString> pasos;
+  final AppLanguage language;
+  final bool aberta;
+  final VoidCallback onAlternar;
+
+  const _ComoFunciona({
+    required this.como,
+    required this.pasos,
+    required this.language,
+    required this.aberta,
+    required this.onAlternar,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final titulo = Row(
+      children: [
+        Icon(Icons.lightbulb_rounded, size: 20, color: context.acento),
+        const SizedBox(width: 8),
+        Expanded(
+          child: Text(
+            como.titulo.resolve(language),
+            style: const TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w800,
+              color: AppTheme.textPrimary,
+            ),
+          ),
+        ),
+        if (aberta)
+          TextButton(
+            key: const ValueKey('como_funciona_ocultar'),
+            onPressed: onAlternar,
+            style: TextButton.styleFrom(
+              foregroundColor: context.acento,
+              minimumSize: const Size(AppTheme.touchMin, AppTheme.touchMin),
+            ),
+            child: Text(
+              como.ocultar.resolve(language),
+              style: const TextStyle(fontWeight: FontWeight.w700),
+            ),
+          )
+        else
+          Icon(Icons.keyboard_arrow_down_rounded, color: context.acento),
+      ],
+    );
+
+    return Container(
+      key: const ValueKey('como_funciona_o_conto'),
+      margin: const EdgeInsets.only(bottom: AppTheme.spaceLg),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: aberta
+          ? Padding(
+              padding: const EdgeInsets.fromLTRB(14, 4, 6, 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  titulo,
+                  for (final (i, paso) in pasos.indexed)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 6, right: 8),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            width: 22,
+                            child: Text(
+                              '${i + 1}.',
+                              style: TextStyle(
+                                fontSize: 14.5,
+                                fontWeight: FontWeight.w800,
+                                color: context.acento,
+                                height: 1.4,
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Text(
+                              paso.resolve(language),
+                              style: const TextStyle(
+                                fontSize: 14.5,
+                                color: AppTheme.textPrimary,
+                                height: 1.4,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                ],
+              ),
+            )
+          : InkWell(
+              key: const ValueKey('como_funciona_abrir'),
+              onTap: onAlternar,
+              borderRadius: BorderRadius.circular(AppTheme.radiusField),
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  child: titulo,
+                ),
+              ),
+            ),
     );
   }
 }
