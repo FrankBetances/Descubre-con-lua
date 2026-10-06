@@ -9,6 +9,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart'
     show FaseAsamblea, TipoFaseAsamblea;
+import '../../../data/models/ponte_ao_dia_model.dart';
 import '../../../data/models/progresion_model.dart';
 
 /// El reproductor de la asamblea, el mismo para los dos ciclos.
@@ -51,6 +52,13 @@ class AsambleaPlayerScreen extends StatefulWidget {
   final DiaDeProgresion? dia;
   final SemanaDeProgresion? semana;
 
+  /// Lo que dan por sabido las órdenes de hoy. Si alguna usa palabras que el
+  /// curso enseñó antes de este mes, va una pantalla «Antes da orde» justo
+  /// antes del núcleo: palabra a palabra, con su voz y su gesto, para quien
+  /// llega nuevo al grupo. No es una fase del documento curricular y no cuenta
+  /// en sus minutos; sin palabras, no aparece.
+  final PonteAoDia? ponteAoDia;
+
   const AsambleaPlayerScreen({
     super.key,
     required this.fases,
@@ -62,6 +70,7 @@ class AsambleaPlayerScreen extends StatefulWidget {
     this.audioService,
     this.dia,
     this.semana,
+    this.ponteAoDia,
   });
 
   @override
@@ -78,6 +87,24 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
 
   late final PageController _paxinas;
   int _indice = 0;
+
+  /// Lo que dan por sabido las órdenes que se van a dar, ya con el día
+  /// aplicado a las fases.
+  late final List<PalabraDadaPorSabida> _dadasPorSabidas =
+      widget.ponteAoDia?.dasFases(widget.fases) ?? const [];
+
+  /// Las pantallas, en orden: las fases y, si hay palabras que la orden da
+  /// por sabidas, «Antes da orde» (`null`) justo antes del núcleo.
+  late final List<FaseAsamblea?> _pantallas = () {
+    final nucleo = widget.fases
+        .indexWhere((f) => f.tipo == TipoFaseAsamblea.coreTprChallenge);
+    if (_dadasPorSabidas.isEmpty || nucleo < 0) return [...widget.fases];
+    return [
+      ...widget.fases.sublist(0, nucleo),
+      null,
+      ...widget.fases.sublist(nucleo),
+    ];
+  }();
   FadeAudioCoordinator? _audio;
   String? _soando;
 
@@ -119,7 +146,7 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
   }
 
   void _ir(int i) {
-    final destino = i.clamp(0, widget.fases.length - 1);
+    final destino = i.clamp(0, _pantallas.length - 1);
     if (destino == _indice) return;
     _parar();
     _paxinas.animateToPage(
@@ -165,7 +192,7 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
   @override
   Widget build(BuildContext context) {
     final isGl = widget.language == AppLanguage.gl;
-    final total = widget.fases.length;
+    final total = _pantallas.length;
 
     return PopScope(
       canPop: false,
@@ -198,18 +225,26 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
                     _parar();
                     setState(() => _indice = i);
                   },
-                  itemBuilder: (context, i) => _PantallaDeFase(
-                    fase: widget.fases[i],
-                    language: widget.language,
-                    material: widget.material,
-                    cancion: widget.cancion,
-                    centroInteres: widget.centroInteres,
-                    soando: _soando,
-                    onAlternarAudio: _alternar,
-                    audioService: widget.audioService,
-                    dia: widget.dia,
-                    semana: widget.semana,
-                  ),
+                  itemBuilder: (context, i) => switch (_pantallas[i]) {
+                    final fase? => _PantallaDeFase(
+                        fase: fase,
+                        language: widget.language,
+                        material: widget.material,
+                        cancion: widget.cancion,
+                        centroInteres: widget.centroInteres,
+                        soando: _soando,
+                        onAlternarAudio: _alternar,
+                        audioService: widget.audioService,
+                        dia: widget.dia,
+                        semana: widget.semana,
+                      ),
+                    null => _PantallaAntesDaOrde(
+                        palabras: _dadasPorSabidas,
+                        ponte: widget.ponteAoDia!,
+                        language: widget.language,
+                        audioService: widget.audioService,
+                      ),
+                  },
                 ),
               ),
               _BarraInferior(
@@ -482,6 +517,268 @@ class _PantallaDeFase extends StatelessWidget {
                   ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// «Antes da orde»: las palabras que la orden de hoy da por sabidas, una cada
+/// vez, en grande, con su voz y su gesto.
+///
+/// Una cada vez y no en lista: es como se enseñan en el círculo —se dice, se
+/// hace el gesto, el grupo responde con el cuerpo— y así cabe en la pantalla
+/// sean dos o doce. Para pasar de palabra hay flechas y no deslizamiento: de
+/// lado se pasa de fase.
+///
+/// La pantalla entera escala hacia abajo si no cabe (letra del sistema muy
+/// grande en un móvil pequeño): en el reproductor no hay desplazamiento
+/// vertical, y cortar la palabra o su gesto sería peor que encogerlos.
+class _PantallaAntesDaOrde extends StatefulWidget {
+  final List<PalabraDadaPorSabida> palabras;
+  final PonteAoDia ponte;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  const _PantallaAntesDaOrde({
+    required this.palabras,
+    required this.ponte,
+    required this.language,
+    required this.audioService,
+  });
+
+  @override
+  State<_PantallaAntesDaOrde> createState() => _PantallaAntesDaOrdeState();
+}
+
+class _PantallaAntesDaOrdeState extends State<_PantallaAntesDaOrde> {
+  int _i = 0;
+
+  String _texto(String clave) =>
+      widget.ponte.texto('reprodutor', clave).resolve(widget.language);
+
+  @override
+  Widget build(BuildContext context) {
+    final lang = widget.language;
+    final palabra = widget.palabras[_i];
+    final total = widget.palabras.length;
+    final xesto = palabra.xesto.resolve(lang);
+
+    return LayoutBuilder(
+      builder: (context, limites) => FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: Alignment.topCenter,
+        child: SizedBox(
+          width: limites.maxWidth,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+            child: Column(
+              key: const ValueKey('antes_da_orde'),
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      width: 56,
+                      height: 56,
+                      decoration: BoxDecoration(
+                        color: _AsambleaPlayerScreenState._superficie,
+                        borderRadius:
+                            BorderRadius.circular(AppTheme.radiusField),
+                        border: Border.all(
+                            color: _AsambleaPlayerScreenState._borde),
+                      ),
+                      alignment: Alignment.center,
+                      child: const Icon(Icons.record_voice_over_rounded,
+                          size: 30, color: _AsambleaPlayerScreenState._acento),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Text(
+                        _texto('titulo'),
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontFamily,
+                          fontSize: 15,
+                          fontWeight: FontWeight.w700,
+                          color: _AsambleaPlayerScreenState._acento,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Text(
+                      _texto('duracion'),
+                      style: const TextStyle(
+                        fontFamily: AppTheme.fontFamily,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                        color: _AsambleaPlayerScreenState._textoSecundario,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  _texto('consigna'),
+                  style: const TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 24,
+                    height: 1.25,
+                    fontWeight: FontWeight.w800,
+                    color: _AsambleaPlayerScreenState._textoPrincipal,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  _texto('porque'),
+                  style: const TextStyle(
+                    fontFamily: AppTheme.fontFamily,
+                    fontSize: 15,
+                    height: 1.35,
+                    color: _AsambleaPlayerScreenState._textoSecundario,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Container(
+                  key: const ValueKey('antes_da_orde_palabra'),
+                  padding: const EdgeInsets.fromLTRB(16, 12, 10, 4),
+                  decoration: BoxDecoration(
+                    color: _AsambleaPlayerScreenState._superficie,
+                    borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                    border:
+                        Border.all(color: _AsambleaPlayerScreenState._borde),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              palabra.en,
+                              style: const TextStyle(
+                                fontFamily: AppTheme.fontFamily,
+                                fontSize: 30,
+                                height: 1.12,
+                                fontWeight: FontWeight.w800,
+                                color:
+                                    _AsambleaPlayerScreenState._textoPrincipal,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          BotonEscuchar(
+                            key: ValueKey('antes_da_orde_voz_${palabra.id}'),
+                            audioService: widget.audioService,
+                            texto: palabra.en,
+                            language: AppLanguage.en,
+                            interfaz: lang,
+                            style: estiloIngles(palabra.en),
+                            compacto: true,
+                            descripcion: palabra.en,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        palabra.comoPalabraTpr.significado(lang),
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontFamily,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w700,
+                          color: _AsambleaPlayerScreenState._acento,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text.rich(
+                        TextSpan(
+                          children: [
+                            TextSpan(
+                              text: '${_texto('xesto')}: ',
+                              style:
+                                  const TextStyle(fontWeight: FontWeight.w800),
+                            ),
+                            TextSpan(text: xesto),
+                          ],
+                        ),
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontFamily,
+                          fontSize: 16,
+                          height: 1.3,
+                          color: _AsambleaPlayerScreenState._textoPrincipal,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            key: const ValueKey('antes_da_orde_anterior'),
+                            tooltip: _texto('anterior'),
+                            onPressed:
+                                _i > 0 ? () => setState(() => _i--) : null,
+                            iconSize: 30,
+                            color: _AsambleaPlayerScreenState._textoPrincipal,
+                            disabledColor: _AsambleaPlayerScreenState._borde,
+                            icon: const Icon(Icons.chevron_left_rounded),
+                          ),
+                          const SizedBox(width: 8),
+                          Text(
+                            '${_i + 1} / $total',
+                            key: const ValueKey('antes_da_orde_conta'),
+                            style: const TextStyle(
+                              fontFamily: AppTheme.fontFamily,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                              color:
+                                  _AsambleaPlayerScreenState._textoSecundario,
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          IconButton(
+                            key: const ValueKey('antes_da_orde_seguinte'),
+                            tooltip: _texto('seguinte'),
+                            onPressed: _i < total - 1
+                                ? () => setState(() => _i++)
+                                : null,
+                            iconSize: 30,
+                            color: _AsambleaPlayerScreenState._textoPrincipal,
+                            disabledColor: _AsambleaPlayerScreenState._borde,
+                            icon: const Icon(Icons.chevron_right_rounded),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.only(top: 1),
+                      child: Icon(Icons.group_rounded,
+                          size: 18,
+                          color: _AsambleaPlayerScreenState._textoSecundario),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        _texto('guia'),
+                        key: const ValueKey('antes_da_orde_guia'),
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontFamily,
+                          fontSize: 14.5,
+                          height: 1.35,
+                          color: _AsambleaPlayerScreenState._textoSecundario,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

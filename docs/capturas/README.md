@@ -55,6 +55,7 @@ compara el ancho pintado con el que el texto mide de verdad.
 | `aula-unidades-{gl,es}.png` | Juega con Lúa · Modo Aula: el selector compacto, la sesión del día y las unidades |
 | `aula-lista-2ciclo-{gl,es}.png` | El Modo Aula en la pestaña 2.º ciclo: la clase, el mes y la sesión del día |
 | `aula-2ciclo-asemblea-{gl,es}.png` | La asamblea matinal de 2.º ciclo, fase 1: el reproductor que abre «Comenzar la asamblea» |
+| `aula-antes-da-orde-{gl,es}.png` | «Antes de la orden», en la asamblea de 5.º un martes de octubre: la primera de las palabras que la orden da por sabidas, con su significado, su gesto y la nota para la docente |
 | `aula-formacion-{gl,es}.png` | Formación en el aula: los seis pasos de la asamblea |
 | `academy-bloques-{gl,es}.png` | Guías para la familia: los cinco bloques |
 | `academy-lector-{gl,es}.png` | El lector paginado de una cápsula |
@@ -67,7 +68,8 @@ compara el ancho pintado con el que el texto mide de verdad.
 | `asamblea-seguridade-{gl,es}.png` | Asamblea · fase 4: o protocolo de seguridade que se le antes de sacar material |
 | `asamblea-ingles-{gl,es}.png` | Asamblea guiada: el inglés de la fase, con su grabación |
 | `nota-casas-{gl,es}.png` | La nota para las casas: lo que se hizo hoy, el juego de tres minutos y la frase en inglés |
-| `conto-palabras-{gl,es}.png` | El cuento de la semana con las palabras de hoy |
+| `conto-palabras-{gl,es}.png` | El cuento de la semana con las palabras de hoy, la primera vez que se abre: «Cómo funciona el cuento» arriba |
+| `casa-ponte-ao-dia-{gl,es}.png` | «Ponte al día», 4-5 años en octubre: las palabras de antes que dan por sabidas las asambleas del mes, en días de dos o tres |
 | `calendario-{gl,es}.png` | El Calendario Escuela · Hogar, del lado del aula |
 | `calendario-familia-{gl,es}.png` | El mismo calendario, del lado de la familia |
 | `steam-hub-{gl,es}.png` | Ciencia con las manos, del lado del aula: las cinco sesiones |
@@ -87,7 +89,7 @@ flutter test --tags capturas --update-goldens test/laminas_hoja_test.dart
 
 ## Las capturas de la app de escritorio
 
-Las que empiezan por `l0-` a `l7-`, y las de `vocabulario-flower-`, son otra
+Las que empiezan por `l0-` a `l8-`, y las de `vocabulario-flower-`, son otra
 cosa: la app **compilada para escritorio** (Linux), abierta en una pantalla
 virtual de 360 × 780 px y recorrida a mano por el mismo camino que usa quien la
 maneja (hasta L4, Inicio → Comezar → portal → módulo; desde L5, Inicio → Na
@@ -137,3 +139,5 @@ la de Android, pero no sus barras del sistema, su densidad ni su escala de texto
 | `l6-escola-{gl,es}.png` | La escuela con la letra de L6: el Modo Aula (pestañas de ciclo de 48 dp), el vocabulario, la ciencia y Hoy |
 | `l7-casa-{gl,es}.png` | Casa tras L7: los juegos de movimiento con minúscula, «Ler xogando» con sus pestañas nuevas y los pares mínimos sin tapar la boca, «1 lámina disponible», «Día 21 del curso» y la cápsula sin «circuítos neurais» |
 | `l7-escola-{gl,es}.png` | La escuela tras L7: la dinámica del lunes sin «72 bpm», la del viernes sin difusor, y la última fase de la asamblea, de la que «Rematar» vuelve sin preguntar |
+| `l8-escola-{gl,es}.png` | La escuela tras L8, con 4-5 años un martes de octubre: «Antes da orde» en la asamblea, justo antes del reto, y el cuento de la semana abierto desde Hoy con «Como funciona o conto» |
+| `l8-casa-{gl,es}.png` | Casa tras L8, con 4-5 años un martes de octubre: la puerta «Ponte ao día» en Hoy, la pantalla con la edad, el mes y los días, y el cuento con «Como funciona o conto» |

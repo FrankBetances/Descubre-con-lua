@@ -11,6 +11,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
+import 'package:descubre_con_lua/data/models/como_funciona_o_conto_model.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
 import 'package:descubre_con_lua/data/models/formacion_model.dart';
 import 'package:descubre_con_lua/data/models/lamina_model.dart';
@@ -44,6 +45,7 @@ import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/data/models/dia_calendario_dual_model.dart';
 import 'package:descubre_con_lua/features/familias/views/guias_familias_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/explorar_familias_screen.dart';
+import 'package:descubre_con_lua/features/familias/views/ponte_ao_dia_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogo_de_hoxe_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart';
 import 'package:descubre_con_lua/features/formacion/views/formacion_screen.dart';
@@ -100,6 +102,7 @@ class Pasarela {
   late ContidoLectura lectura;
   late ObservacionsXogosFogar observacions;
   late XogosFogar xogosFogar;
+  late ComoFuncionaOConto comoFunciona;
   late CalendarioStore store;
   late PremiosRepository premios;
   late GuiaFormacion guiaFamilia;
@@ -135,6 +138,8 @@ class Pasarela {
         File(ObservacionsXogosFogar.assetPath).readAsStringSync());
     xogosFogar =
         XogosFogar.fromRaw(File(XogosFogar.assetPath).readAsStringSync());
+    comoFunciona = ComoFuncionaOConto.fromRaw(
+        File(ComoFuncionaOConto.assetPath).readAsStringSync());
     guiaFamilia =
         await GuiaFormacion.cargar(PerfilFormacion.familia, lector: ler);
     guiaDocente =
@@ -345,6 +350,19 @@ class Pasarela {
                   cuento: contoDaSemana,
                   language: l,
                   audioService: audio,
+                  comoFunciona: comoFunciona,
+                )),
+        // Para quen chega novo a 4-5: as palabras que as asembleas de
+        // outubro dan por sabidas.
+        PantallaDaApp(
+            'ponte_ao_dia',
+            Portal.familias,
+            (l) => PonteAoDiaScreen(
+                  ponte: contenido.ponteAoDiaSync!,
+                  cursoId: 'curso_4_5',
+                  mes: 10,
+                  language: l,
+                  audioService: audio,
                 )),
         PantallaDaApp(
             'aprender_a_ler',
@@ -532,6 +550,7 @@ class Pasarela {
                   subtitulo: asamblea.titulo.resolve(l),
                   language: l,
                   audioService: audio,
+                  ponteAoDia: contenido.ponteAoDiaSync,
                 )),
         PantallaDaApp(
             'capsulas_aula',

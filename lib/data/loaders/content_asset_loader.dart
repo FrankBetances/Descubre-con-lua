@@ -4,6 +4,7 @@ import '../models/asamblea_primeiro_ciclo_model.dart';
 import '../models/progresion_model.dart';
 import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
+import '../models/ponte_ao_dia_model.dart';
 import '../models/steam_model.dart';
 import '../models/unidad_model.dart';
 
@@ -158,6 +159,12 @@ class ContentAssetLoader {
       list.add(asamblea);
     }
     return List.unmodifiable(list);
+  }
+
+  /// Lo que cada orden de la asamblea da por sabido. Ver [PonteAoDia].
+  Future<PonteAoDia> loadPonteAoDia(
+      [String path = PonteAoDia.assetPath]) async {
+    return PonteAoDia.fromRaw(await _stringLoader(path));
   }
 
   /// Loads and parses a list of [SteamUnit] from an asset path.

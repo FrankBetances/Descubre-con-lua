@@ -44,6 +44,8 @@ import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_hub_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
+import 'package:descubre_con_lua/data/models/como_funciona_o_conto_model.dart';
+import 'package:descubre_con_lua/features/familias/views/ponte_ao_dia_screen.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dart';
 import 'package:descubre_con_lua/features/juega/widgets/circulo_do_dia.dart';
 
@@ -537,7 +539,39 @@ void main() {
           centroInteres: asamblea.centroInteres.resolve(lang),
           audioService: MockOfflineAudioService(),
           language: lang,
+          ponteAoDia: contenido.ponteAoDiaSync,
         ),
+      );
+    });
+
+    // Para quen chega novo ao grupo: o que a orde do día dá por sabido,
+    // xusto antes do núcleo. O martes da primeira semana de outubro de 5.º,
+    // coa orde do esquío.
+    testWidgets('aula · antes da orde · $l', (tester) async {
+      final asamblea = contenido.getAsambleaByMesYNivelSync(
+          10, NivelEducativoSegundoCiclo.infantil5)!;
+      final dia = contenido.getProgresionSync('segundo_ciclo.5')!.dia(1, 2)!;
+      await capturar(
+        tester,
+        'aula-antes-da-orde-$l',
+        AsambleaPlayerScreen(
+          fases: dia.aplicarA(asamblea.fases),
+          subtitulo: '${nomeDoMes[asamblea.mes]!.resolve(lang)} · '
+              '${asamblea.nivel.etiquetaCorta.resolve(lang)} · '
+              'S${dia.semana} ${dia.nomeDia.resolve(lang)}',
+          centroInteres: asamblea.centroInteres.resolve(lang),
+          audioService: MockOfflineAudioService(),
+          language: lang,
+          dia: dia,
+          ponteAoDia: contenido.ponteAoDiaSync,
+        ),
+        antesDeRetratar: (tester) async {
+          for (var i = 0; i < 2; i++) {
+            await tester
+                .tap(find.byKey(const ValueKey('player_fase_seguinte')));
+            await tester.pumpAndSettle();
+          }
+        },
       );
     });
 
@@ -862,6 +896,10 @@ void main() {
             await contenido.loadCuentos(cursoId: 'curso_0_2', mesNumero: 2);
         conto = CirculoDoDia.contoDaSemana(contos, 1)!;
       });
+      // Como a primeira vez que se abre un conto: con «Como funciona o
+      // conto» despregado, igual nas dúas linguas.
+      CuentoViewerScreen.despregarExplicacion();
+      addTearDown(CuentoViewerScreen.despregarExplicacion);
       await capturar(
         tester,
         'conto-palabras-$l',
@@ -871,8 +909,28 @@ void main() {
           audioService: MockOfflineAudioService(),
           semanaTpr: contenido.cursoTprSync('curso_0_2')!.semanaPorOrden(2, 1),
           dia: 4,
+          comoFunciona: ComoFuncionaOConto.fromRaw(
+              File(ComoFuncionaOConto.assetPath).readAsStringSync()),
         ),
         tamano: const Size(412, 1500),
+      );
+    });
+
+    // Para a crianza que chega nova a 4-5: as palabras de antes que dan por
+    // sabidas as asembleas de outubro, en días de dúas ou tres.
+    testWidgets('na casa · ponte ao día · $l', (tester) async {
+      await capturar(
+        tester,
+        'casa-ponte-ao-dia-$l',
+        PonteAoDiaScreen(
+          ponte: contenido.ponteAoDiaSync!,
+          cursoId: 'curso_4_5',
+          mes: 10,
+          language: lang,
+          audioService: MockOfflineAudioService(),
+        ),
+        tamano: const Size(412, 1500),
+        tema: AppTheme.temaFamilias,
       );
     });
 

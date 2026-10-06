@@ -9,6 +9,170 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L8: quien llega nuevo al curso, y cómo funciona el cuento (6/10/2026)
+
+Rama `claude/ux-l8`, que se integra en `main` por pull request después de L7.
+Frank eligió la opción A de la propuesta para las criaturas que llegan con el
+curso empezado («Me quedo con A»), y dijo cuál era el segundo problema de la
+build: el cuento confunde a quien lo usa por primera vez.
+
+Qué cambia en pantalla:
+
+- **«Antes da orde» / «Antes de la orden», en la asamblea.** Si la orden del
+  día usa palabras que el curso enseñó antes de ese mes, el reproductor pone
+  una pantalla entre el foco rítmico y el reto TPR: esas palabras, una cada
+  vez, en grande, con su voz, su significado y su gesto, y flechas para pasar.
+  Debajo, la nota para la docente: un padriño o madriña al lado de la criatura
+  nueva y el gesto las primeras semanas, aunque la orden diga que no. Sale por
+  las tres puertas del reproductor (Hoxe, Modo Aula y el día del Calendario),
+  en las tres clases de 2.º ciclo y en cinco órdenes de 2-3 años, de una
+  palabra cada una; en 0-2, nunca. Sin palabras, la asamblea sigue con sus cuatro
+  pantallas.
+- **«Ponte ao día» / «Ponte al día», en casa.** En Hoxe, debajo de «Palabras
+  en inglés», una puerta que dice cuántas palabras de antes dan por sabidas las
+  asambleas del mes en esa edad («as 11 palabras de antes que as asembleas de
+  outubro dan por sabidas»). Solo sale si hay alguna. Dentro: la edad (el
+  mismo selector de Hoxe), el mes, y las palabras en días de dos o tres, cada
+  una con su voz, su significado y su gesto. No guarda nada.
+- **«Como funciona o conto» / «Cómo funciona el cuento».** Arriba de la
+  primera página del visor, por sus cuatro puertas (Hoxe de familias, Explorar
+  → Contos, Hoxe de docentes y el círculo del día del Modo Aula). Sale
+  desplegado la primera vez que se abre un cuento en cada sesión de la app;
+  «Ocultar» lo pliega en una línea, y así sale en los siguientes. Los pasos
+  dependen del cuento: las palabras en inglés solo si las lleva, las de hoy
+  solo si se abrió desde un día, la pregunta y el reto solo si los tiene.
+
+Lo que no se ve:
+
+- `assets/content/ponte_ao_dia.json`: los textos de las dos pantallas en gl y
+  es, la revisión a mano y las listas, que escribe
+  `tools/xera_ponte_ao_dia.py` cruzando las 133 órdenes en inglés de las
+  asambleas con las 4.000 palabras del curso. Una palabra se da por sabida si
+  el curso la enseñó antes del mes de la asamblea: en un curso anterior o en
+  un mes anterior del mismo. La propuesta decía «de cursos anteriores»; con
+  meses anteriores también, una criatura que llega en enero no se queda sin
+  las de octubre. Resultado: 86 órdenes dan algo por sabido, con 147 palabras
+  distintas.
+- Gate nuevo, «what each order takes as known comes from the course»: si cambia
+  una orden, una palabra o su gesto y no se vuelve a generar, o si una decisión
+  de la revisión ya no hace falta, rojo.
+- `assets/content/cuentos/como_funciona.json`: la explicación, cada paso con su
+  condición.
+- El repositorio de contenido carga `ponte_ao_dia.json` con el resto al
+  arrancar; si no se puede leer, el fallo queda en sus errores de carga y la
+  pantalla «Antes da orde» no aparece.
+
+La revisión a mano de las listas:
+
+- Los 265 pares orden-palabra que saca el cruce, mirados uno a uno contra la
+  orden y contra el significado y el gesto del curso.
+- **14 fuera**, porque coinciden en la letra y no en el sentido: «ring» (en el
+  curso, hacer sonar una campana; en 5-6, un aro, dos órdenes), «rough» (el mar
+  bravo; una hoja rugosa, dos órdenes), «back» (la espalda; «comes back»),
+  «high» y «low» (la nota aguda y la grave; arriba y abajo), «tap» (el grifo),
+  «stick» (pegar; la baqueta), «steps» (las escaleras; los pasos, tres
+  órdenes), «plant» (la planta; plantar) y «group» (agrupar; el grupo).
+- **2 gestos adaptados** solo en este fichero, porque los de 0-2 se hacen con
+  el bebé: «Copy» («Repetir o xesto que fai outra persoa») y «Around the fire»
+  («Camiñar en círculo arredor dun lume imaxinario»). El curso no cambia. Los
+  escribió Claude Code: **no los ha revisado ninguna docente.**
+- Mantenidos después de mirarlos: «gentle» («agarimoso» en el curso; «a gentle
+  sheep»), «sing» («the drum sings»), «card» («postal»; la tarjeta), «pot»
+  («pota»; la maceta), «hop» («pé coxo»; el salto de la ardilla) y «down»
+  («put the cloth down»).
+- Cada palabra de las 147 tiene gesto en gl y es y grabación en inglés en el
+  paquete: comprobado con el mismo identificador de voz que usa la app, contra
+  `assets/voice/`. No hizo falta grabar nada.
+
+Corregido en la revisión:
+
+- **El cruce casaba «to» con «Toes»** al probar plurales («to» + «es»): salió
+  en el listado de revisión, en doce órdenes. Ahora el plural solo se prueba
+  en palabras de cuatro letras o más y con su terminación correcta.
+- **«Como funciona o conto», desplegado cada vez, empujaba la primera página**
+  a quien ya lo conoce: lo cazó `palabras_do_conto_test`, que espera ver la
+  cabecera de las palabras sin desplazar. Ahora se despliega solo la primera
+  vez de cada sesión.
+- **La pantalla nueva encogía la letra a 11,2-11,9 px** en un móvil de
+  360 × 640 con las frases más largas («Hands on your tummy», «Ready, steady,
+  go!»): lo cazó su test de tamaño. Ajustados los tamaños; ahora ninguna baja
+  de 12.
+- **El «1 min» de esa pantalla estaba escrito en el widget**, contra la regla
+  de que el contenido vive en JSON: salió al releer el diff. Ahora es un texto
+  más de `ponte_ao_dia.json`; las capturas salen idénticas.
+- **Ni el README ni el manual decían que «Antes da orde» sale también en
+  cinco órdenes de 2-3 años**, y ningún test lo miraba en pantalla: también
+  salió al releer. Ahora lo dicen los dos, y el test de tamaño recorre
+  también esas cinco órdenes.
+- **El README decía que `--fast` da 19 de 19 gates y el completo 21 de 21**, y
+  a su tabla le faltaba el de los nombres. Son 22 y 24 con el nuevo. Y contaba
+  15.149 locuciones de voz; son 15.154 (12.805 en inglés): lo escribió Claude
+  Code el 1/10.
+
+Cómo se comprobó:
+
+- `test/features/ux_l8_test.dart`: 28 pruebas en gl y es. Los datos (ninguna
+  orden da por sabida una palabra de su mes o posterior; la revisión aplicada;
+  ningún gesto con «bebé»), la pantalla del reproductor (va justo antes del
+  núcleo, palabra a palabra, y no sale sin palabras), su tamaño (cada palabra
+  de cada asamblea que da algo por sabido, las de 2.º ciclo y las cinco
+  órdenes de 2-3 años, a 360 × 640, a escala 1,0 y 1,3: sin desborde y ninguna
+  letra por debajo de 12), la puerta y la pantalla de casa, y la
+  explicación del cuento (por contexto, plegada, en la segunda página, después
+  del primer cuento y si no se puede leer).
+- `tools/gates.sh --fast` en local: los 22 gates en verde, con 1.181 pruebas,
+  y el gate nuevo dice «ponte_ao_dia.json ao día: 86 ordes, 147 palabras». La
+  build release y los permisos del APK los pasa CI, no se han corrido aquí.
+- La app de escritorio en gl y es, por el camino de Frank, con la app recién
+  abierta en cada recorrido: Na escola → Hoxe (4-5) → Comezar a asemblea →
+  «Antes da orde» y el cuento desde Hoxe; Na casa → Hoxe (4-5) → «Ponte ao
+  día» y el cuento: `docs/capturas/l8-*.png`.
+- Las capturas del manual: las 58, rehechas una a una con
+  `test/capturas_test.dart`. Cambian `aula-2ciclo-asemblea-*` (cinco puntos de
+  fase en vez de cuatro) y `conto-palabras-*` (la explicación arriba); son
+  nuevas `aula-antes-da-orde-*` y `casa-ponte-ao-dia-*`. Las que solo cambiaban
+  por la fecha, descartadas (abajo). El PDF (33 páginas) y el Word (31, pasado
+  a PDF con LibreOffice) mirados página a página: ninguna captura se sale de
+  la hoja.
+
+Las capas:
+
+- La interfaz: el reproductor, Hoxe de familias, «Ponte ao día» (nueva) y el
+  visor del cuento.
+- Los JSON gl y es: `ponte_ao_dia.json` y `cuentos/como_funciona.json`, nuevos.
+- La voz: ninguna grabación nueva. Las 147 palabras inglesas ya la tenían, y
+  los textos gl y es nuevos son de interfaz y no tienen voz, como el resto.
+- Imprimibles: el repositorio no tiene ninguno.
+- El README, el manual (4.3, 4.4 y 6, con dos pares de capturas nuevos) y
+  `docs/capturas/README.md`.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android.**
+- La voz de las palabras en la pantalla nueva no la he oído: en los tests y en
+  el escritorio el audio no suena. Usa el mismo botón y las mismas grabaciones
+  que el resto de la app.
+- Que un minuto antes de la orden baste a quien llega nuevo es una hipótesis:
+  no hay ninguna prueba de aula.
+
+### Visto y no tocado
+
+- El gesto de «Whisper» en el curso de 3-4 (mayo) es «Tapar a boca coa man e
+  falar moi baixiño»: el mismo tapar la boca que Frank quitó de los pares
+  mínimos. Ahora sale también en «Ponte ao día» de 4-5 en mayo, porque la orden
+  «Whisper the secret word to your friend» lo da por sabido.
+- Las «Pautas de lectura dialóxica compartida» del visor siguen siendo una
+  barra aparte, con el término técnico en el título y su texto escrito en el
+  widget, no en JSON. Juntarlas con «Como funciona o conto» sería más claro.
+- Las frases TPR de los cuentos de 4-5 y 5-6 también usan palabras de antes;
+  la opción A, como se aprobó, cubre las órdenes de las asambleas, no esas
+  frases.
+- Las capturas del manual del Modo Aula (`aula-unidades-*`, y las que abren en
+  el día de hoy) se pintan con la fecha real del sistema: rehechas hoy, martes,
+  dicen «martes» donde ayer decían «luns». Ese cambio se ha descartado, porque
+  no es de este lote; para que no dependan del día, el test tendría que fijar
+  la fecha.
+
 ## Lote L7: lo que Frank decidió al probar la build de L6 (5/10/2026)
 
 Rama `claude/ux-l7`, que se integra en `main` por pull request después de L6.

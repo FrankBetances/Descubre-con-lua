@@ -62,7 +62,8 @@ List<GrupoDaAsemblea> gruposDaAsembleaDoDia(
 /// Las palabras inglesas del día NO van dentro del reproductor: su fase núcleo
 /// ya no cabe en un teléfono de 360×640 en 43 de las 50 asambleas, y una fila
 /// más la empeoraba. Se ven en la tarjeta de hoy y en el calendario, justo
-/// antes de entrar.
+/// antes de entrar. Las que la orden da por sabidas sí van, pero en su propia
+/// pantalla, «Antes da orde», sin tocar el núcleo.
 Future<void> abrirAsembleaDoDia(
   BuildContext context, {
   required ContentRepository repo,
@@ -94,6 +95,7 @@ Future<void> abrirAsembleaDoDia(
         language: language,
         dia: diaDaProgresion,
         semana: progresion?.semana(semana),
+        ponteAoDia: repo.ponteAoDiaSync,
       ),
     ),
   );

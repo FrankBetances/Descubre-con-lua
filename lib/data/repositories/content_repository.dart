@@ -13,6 +13,7 @@ import '../models/english_corpus_model.dart';
 import '../models/estrategia_model.dart';
 import '../models/lamina_model.dart';
 import '../models/phonics_model.dart';
+import '../models/ponte_ao_dia_model.dart';
 import '../models/progresion_model.dart';
 import '../models/tpr_curriculum_scheduler.dart';
 // `Cuento` y `CuentoPagina` existen DOS veces en el proyecto y no son la misma
@@ -130,6 +131,11 @@ class ContentRepository {
 
   final Map<String, SteamUnit> _steamUnitsById = {};
 
+  /// Lo que cada orden de la asamblea da por sabido, para quien llega nuevo.
+  /// `null` si el fichero no se pudo leer: el fallo queda en [loadErrors].
+  PonteAoDia? _ponteAoDia;
+  PonteAoDia? get ponteAoDiaSync => _ponteAoDia;
+
   /// Total count of loaded STEAM units.
   int get steamUnitCount => _steamUnitsById.length;
 
@@ -219,6 +225,7 @@ class ContentRepository {
     _asambleasSegundoCicloById.clear();
     _progresionsPorClave.clear();
     _steamUnitsById.clear();
+    _ponteAoDia = null;
     _loadErrors.clear();
 
     for (final path in effectiveUnidadPaths) {
@@ -289,6 +296,15 @@ class ContentRepository {
     } catch (e) {
       _loadErrors.add(
           ContentLoadFailure(ContentAssetLoader.steamAssetPath, e.toString()));
+    }
+
+    if (generation != _initGeneration) return;
+    try {
+      final ponte = await _loader.loadPonteAoDia();
+      if (generation != _initGeneration) return;
+      _ponteAoDia = ponte;
+    } catch (e) {
+      _loadErrors.add(ContentLoadFailure(PonteAoDia.assetPath, e.toString()));
     }
 
     if (generation == _initGeneration) {
@@ -1104,6 +1120,7 @@ class ContentRepository {
     _dinamicas.clear();
     _curriculo50Meses.clear();
     _steamUnitsById.clear();
+    _ponteAoDia = null;
     _programaTpr = null;
     _cargandoProgramaTpr = null;
     _loadErrors.clear();

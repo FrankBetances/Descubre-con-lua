@@ -103,6 +103,11 @@ void main() {
       w.key is ValueKey<String> &&
       (w.key as ValueKey<String>).value.startsWith('ir_a_paxina_'));
 
+  // Quen abre estes contos xa viu «Como funciona» unha vez: aquí mírase a
+  // cabeceira das palabras, que coa explicación aberta queda máis abaixo.
+  setUp(CuentoViewerScreen.pregarExplicacion);
+  tearDown(CuentoViewerScreen.despregarExplicacion);
+
   Future<void> abrir(WidgetTester tester, Widget pantalla) async {
     tester.view.physicalSize = const Size(400, 900);
     tester.view.devicePixelRatio = 1.0;

@@ -116,6 +116,13 @@ run_gate "English: 5 new words a day, 800 per course, 4,000 from 0 to 6" \
 # en su página, y esto comprueba que siga siendo así.
 run_gate "every weekly story carries its week's 20 English words" \
   python3 tools/check_contos_palabras.py
+# Nace de otro: una criatura que llega nueva a 4-5 o 5-6 no puede seguir
+# órdenes hechas con palabras que el curso dio antes. Lo que cada orden da por
+# sabido sale del curso y de las asambleas, con la revisión a mano escrita en
+# el mismo JSON. Si cambia una orden, una palabra o su gesto y no se vuelve a
+# generar, o si queda una decisión de la revisión que ya no hace falta, rojo.
+run_gate "what each order takes as known comes from the course" \
+  python3 tools/xera_ponte_ao_dia.py --check
 run_gate "voice corpus in sync" python3 tools/export_voice_corpus.py --check
 run_gate "declared tempo matches the pulse track" python3 tools/check_pulse_bpm.py
 run_gate "one steady pulse per bar, in both languages" python3 tools/check_pulse_markers.py
