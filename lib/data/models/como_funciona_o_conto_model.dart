@@ -23,11 +23,15 @@ class PasoDoConto {
 class ComoFuncionaOConto {
   final LocalizedString titulo;
   final LocalizedString ocultar;
+
+  /// O rótulo da sinopse enteira, arriba da primeira páxina.
+  final LocalizedString deQueVai;
   final List<PasoDoConto> pasos;
 
   const ComoFuncionaOConto({
     required this.titulo,
     required this.ocultar,
+    required this.deQueVai,
     required this.pasos,
   });
 
@@ -74,6 +78,7 @@ class ComoFuncionaOConto {
     return ComoFuncionaOConto(
       titulo: texto(json['titulo'], 'o título'),
       ocultar: texto(json['ocultar'], '«ocultar»'),
+      deQueVai: texto(json['deQueVai'], '«deQueVai»'),
       pasos: List.unmodifiable([
         for (final (i, p) in pasos.indexed)
           PasoDoConto(

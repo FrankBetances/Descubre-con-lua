@@ -8,6 +8,10 @@
     "gl": "Ocultar",
     "es": "Ocultar"
   },
+  "deQueVai": {
+    "gl": "De que vai o conto",
+    "es": "De qué va el cuento"
+  },
   "pasos": [
     {
       "cando": "sempre",

@@ -9,6 +9,35 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L11: el cuento se entiende desde arriba (12/10/2026)
+
+Rama `claude/ux-l11`. Frank: «arriba hay una pequeña descripción que se
+corta… el cuento se tiene que entender bien».
+
+Qué cambia en pantalla:
+
+- **La descripción del cuento ya no se corta.** Iba en la cabecera fija con
+  dos líneas como máximo y puntos suspensivos. La cabecera se queda con para
+  quién es, el mes y el título; la descripción va entera arriba de la primera
+  página, en «De que vai o conto» / «De qué va el cuento». El rótulo está en
+  `cuentos/como_funciona.json`.
+
+Cómo se comprobó:
+
+- `test/features/ux_l11_test.dart`: el cuento con la descripción más larga de
+  los 303 sale entera en gl y es, sin límite de líneas, y no vuelve en la
+  página 2.
+- Capturas `conto-palabras-*` y `conto-reto-*` rehechas y miradas. Manual 4.4
+  al día.
+- `tools/gates.sh --fast` en local: los 22 gates en verde, con 1.193 pruebas.
+- **Esto no lo he visto en un aparato Android.**
+
+Pendiente de Frank (lo otro que pidió en el mismo mensaje): un toque en una
+palabra inglesa la dice en inglés; dos toques, su significado en gallego o
+castellano. Hacen falta unas 7.700 grabaciones nuevas (3.865 en gallego y
+3.867 en castellano) y el paquete ya va muy cargado de voz. Está planteado
+con opciones; no se ha hecho.
+
 ## Lote L10: las pautas dentro del cuento y la opción A en los retos (12/10/2026)
 
 Rama `claude/ux-l10`. Los puntos 2 y 3 que Frank decidió al probar la build de

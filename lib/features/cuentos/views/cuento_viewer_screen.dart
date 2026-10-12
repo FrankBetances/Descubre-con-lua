@@ -351,17 +351,6 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                             height: 1.25,
                           ),
                         ),
-                        const SizedBox(height: 2),
-                        Text(
-                          cuento.sinopse.resolve(lang),
-                          style: TextStyle(
-                            color: context.acento,
-                            fontSize: 14,
-                            fontStyle: FontStyle.italic,
-                          ),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
                       ],
                     ),
                   ),
@@ -376,6 +365,14 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    // De que vai, enteiro e na primeira páxina: na cabeceira
+                    // fixa cortábase en dúas liñas.
+                    if (_currentPageIndex == 0 &&
+                        cuento.sinopse.resolve(lang).trim().isNotEmpty)
+                      _DeQueVai(
+                        rotulo: _comoFunciona?.deQueVai.resolve(lang),
+                        sinopse: cuento.sinopse.resolve(lang),
+                      ),
                     if (_explicacion(lang) case final explicacion?) explicacion,
                     // Las palabras del día, dentro del cuento que se va a
                     // leer: cuáles son y en qué página están.
@@ -905,6 +902,54 @@ class _ComoFunciona extends StatelessWidget {
                 ),
               ),
             ),
+    );
+  }
+}
+
+/// A sinopse do conto, enteira, sen cortar: é o que di de que vai a quen o
+/// abre sen coñecelo.
+class _DeQueVai extends StatelessWidget {
+  final String? rotulo;
+  final String sinopse;
+
+  const _DeQueVai({required this.rotulo, required this.sinopse});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      key: const ValueKey('conto_de_que_vai'),
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: AppTheme.spaceLg),
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+      decoration: BoxDecoration(
+        color: context.acentoTint,
+        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (rotulo != null) ...[
+            Text(
+              rotulo!.toUpperCase(),
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w800,
+                letterSpacing: 0.8,
+                color: context.acento,
+              ),
+            ),
+            const SizedBox(height: 4),
+          ],
+          Text(
+            sinopse,
+            style: const TextStyle(
+              fontSize: 15.5,
+              height: 1.4,
+              color: AppTheme.textPrimary,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
