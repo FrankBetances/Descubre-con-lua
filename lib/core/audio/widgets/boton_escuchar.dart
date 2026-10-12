@@ -56,6 +56,12 @@ class BotonEscuchar extends StatefulWidget {
   /// Qué se está escuchando. Va al lector de pantalla, no a la vista.
   final String? descripcion;
 
+  /// Lo que quiere decir, en gallego y castellano. Si está, DOS TOQUES en la
+  /// pastilla lo dicen en la lengua de la pantalla: la familia o la docente
+  /// que no sabe la palabra la oye en inglés con un toque y entiende qué es
+  /// con dos. Además se ve escrito un momento, haya grabación o no.
+  final LocalizedString? significado;
+
   const BotonEscuchar({
     super.key,
     required this.audioService,
@@ -67,10 +73,14 @@ class BotonEscuchar extends StatefulWidget {
     this.comoChip = false,
     this.colorChip,
     this.descripcion,
+    this.significado,
   });
 
   static const _escuchar = LocalizedString(gl: 'Escoitar', es: 'Escuchar');
   static const _parar = LocalizedString(gl: 'Parar', es: 'Parar');
+
+  /// Qué grabaciones de significado existen: se pregunta una vez por ruta.
+  static final Map<String, bool> _existeSignificado = {};
 
   @override
   State<BotonEscuchar> createState() => _BotonEscucharState();
@@ -157,6 +167,47 @@ class _BotonEscucharState extends State<BotonEscuchar> {
     }
   }
 
+  /// Dos toques: el significado en la lengua de la pantalla. Primero se busca
+  /// en el paquete de recursos de voz (`assets/voice_pack/`, donde van los
+  /// significados de las palabras del curso) y, si no, en la voz de siempre.
+  Future<void> _significar() async {
+    final significado = widget.significado;
+    if (significado == null) return;
+    final lingua = widget.interfaz ??
+        (widget.language == AppLanguage.en ? AppLanguage.gl : widget.language);
+    final texto = significado.resolve(lingua);
+    if (texto.trim().isEmpty) return;
+    ScaffoldMessenger.maybeOf(context)
+      ?..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(
+        content: Text('${widget.texto}: $texto'),
+        duration: const Duration(seconds: 2),
+      ));
+    final servicio = widget.audioService;
+    if (servicio == null) return;
+    final base = voiceAssetPath(VoiceStyle.tutor, texto, lingua);
+    for (final ruta in [
+      base.replaceFirst('assets/voice/', 'assets/voice_pack/'),
+      base,
+    ]) {
+      var hay = BotonEscuchar._existeSignificado[ruta];
+      if (hay == null) {
+        try {
+          await rootBundle.load(ruta);
+          hay = true;
+        } catch (_) {
+          hay = false;
+        }
+        BotonEscuchar._existeSignificado[ruta] = hay;
+      }
+      if (hay) {
+        if (servicio.isPlaying) await servicio.stop();
+        await servicio.playAsset(ruta);
+        return;
+      }
+    }
+  }
+
   /// La pastilla sin altavoz: el texto en inglés se lee igual, pero no se
   /// puede pulsar. Es lo que se ve mientras una grabación todavía no existe.
   ///
@@ -217,6 +268,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
           borderRadius: BorderRadius.circular(AppTheme.radiusField),
           child: InkWell(
             onTap: _pulsar,
+            onDoubleTap: widget.significado == null ? null : _significar,
             borderRadius: BorderRadius.circular(AppTheme.radiusField),
             child: Container(
               constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
@@ -264,6 +316,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
           shape: const CircleBorder(),
           child: InkWell(
             onTap: _pulsar,
+            onDoubleTap: widget.significado == null ? null : _significar,
             customBorder: const CircleBorder(),
             // 48 dp: el mínimo que se puede pulsar con seguridad, y la mano de
             // una maestra en una asamblea no apunta fino.

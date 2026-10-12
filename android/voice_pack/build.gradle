@@ -1,0 +1,20 @@
+// Paquete de recursos de Play, de instalación: los significados gl/es de las
+// palabras inglesas del curso (dos toques en la pastilla). Van aquí y no en el
+// módulo base porque la voz ya ocupa casi todo lo que Play deja descargar al
+// módulo base. Se instala junto con la app, sin red y sin esperar: para el
+// AssetManager de Android es como si estuvieran en el APK.
+//
+// Los ficheros viven en assets/voice_pack/ en la raíz del repositorio (los
+// escribe tools/generate_voice_assets.py); src/main/assets/... es un enlace
+// simbólico a esa carpeta, con la misma ruta que tendrían dentro de
+// flutter_assets, para que el reproductor nativo los abra igual que el resto.
+plugins {
+    id 'com.android.asset-pack'
+}
+
+assetPack {
+    packName = "voice_pack"
+    dynamicDelivery {
+        deliveryType = "install-time"
+    }
+}

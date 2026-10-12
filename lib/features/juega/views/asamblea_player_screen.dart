@@ -6,6 +6,7 @@ import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
+import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart'
     show FaseAsamblea, TipoFaseAsamblea;
@@ -675,6 +676,8 @@ class _PantallaAntesDaOrdeState extends State<_PantallaAntesDaOrde> {
                             style: estiloIngles(palabra.en),
                             compacto: true,
                             descripcion: palabra.en,
+                            significado:
+                                LocalizedString(gl: palabra.gl, es: palabra.es),
                           ),
                         ],
                       ),

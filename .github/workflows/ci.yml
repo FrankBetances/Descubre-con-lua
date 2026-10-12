@@ -288,6 +288,56 @@ jobs:
       #
       # `retention-days` corto en rama: son builds de trabajo y no hacen falta
       # dos días después. El de main mantiene sus cinco.
+      # El paquete de voz (android/voice_pack) solo existe en el AAB. Esto lo
+      # comprueba en cada run, no solo en main: compila el AAB si no se
+      # compiló arriba, mira que el paquete lleve las mismas grabaciones que
+      # assets/voice_pack/ y mide con bundletool lo que descarga un móvil.
+      - name: Comprobar el paquete de voz y el tamaño de descarga
+        if: always()
+        run: |
+          set -euo pipefail
+          aab=build/app/outputs/bundle/release/app-release.aab
+          if [ ! -f "$aab" ]; then
+            flutter build appbundle --release --build-number=${{ github.run_number }}
+          fi
+          curl -sSL -o build/bundletool.jar \
+            https://github.com/google/bundletool/releases/download/1.17.2/bundletool-all-1.17.2.jar
+          enrepo=$(ls assets/voice_pack/*.m4a 2>/dev/null | wc -l)
+          enaab=$(unzip -l "$aab" | grep -c 'voice_pack/assets/flutter_assets/assets/voice_pack/.*\.m4a' || true)
+          echo "## Paquete de voz" >> "$GITHUB_STEP_SUMMARY"
+          echo "Grabaciones en assets/voice_pack: $enrepo · en el AAB: $enaab" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$enrepo" != "$enaab" ]; then
+            echo "::error::El AAB lleva $enaab grabaciones del paquete de voz y el repositorio tiene $enrepo."
+            exit 1
+          fi
+          java -jar build/bundletool.jar build-apks --bundle="$aab" \
+            --output=build/dispositivos.apks --overwrite
+          {
+            echo '## Descarga por móvil (bundletool get-size total, bytes)'
+            echo '```'
+            java -jar build/bundletool.jar get-size total --apks=build/dispositivos.apks
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # En main, el APK de pruebas sale del AAB, en modo universal: así lleva
+      # el paquete de voz, que `flutter build apk` no incluye.
+      - name: APK de pruebas universal, desde el AAB
+        if: env.HAS_SIGNING_SECRETS == 'true' && (env.TARGET_BRANCH == 'main' || github.event_name == 'workflow_dispatch')
+        run: |
+          set -euo pipefail
+          props=android/key.properties
+          valor() { grep "^$1=" "$props" | cut -d= -f2-; }
+          java -jar build/bundletool.jar build-apks --mode=universal --overwrite \
+            --bundle=build/app/outputs/bundle/release/app-release.aab \
+            --output=build/universal.apks \
+            --ks="android/app/$(valor storeFile)" \
+            --ks-pass="pass:$(valor storePassword)" \
+            --ks-key-alias="$(valor keyAlias)" \
+            --key-pass="pass:$(valor keyPassword)"
+          unzip -o -q build/universal.apks universal.apk -d build/
+          cp build/universal.apk build/app/outputs/flutter-apk/app-release.apk
+          echo 'APK de pruebas: universal, sacado del AAB, con el paquete de voz.' >> "$GITHUB_STEP_SUMMARY"
+
       - name: Subir el APK de release
         if: always()
         uses: actions/upload-artifact@v4

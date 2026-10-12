@@ -49,7 +49,10 @@ def peak_dbfs(path: Path) -> float | None:
 
 
 def main() -> int:
-    recordings = sorted(VOICE_DIR.glob("*.m4a")) if VOICE_DIR.exists() else []
+    pack = ROOT / "assets" / "voice_pack"
+    recordings = sorted(
+        [*VOICE_DIR.glob("*.m4a"), *(pack.glob("*.m4a") if pack.exists() else [])]
+    ) if VOICE_DIR.exists() else []
 
     if shutil.which("ffmpeg") is None:
         # Sin ffmpeg no se puede medir nada. Antes esto devolvía 0 y el gate

@@ -21,6 +21,10 @@ from typing import Iterator, NamedTuple
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT / "assets" / "content"
 VOICE_DIR = ROOT / "assets" / "voice"
+# Los significados gl/es de las palabras inglesas del curso (dos toques en la
+# pastilla). Van en un paquete de recursos de Play aparte, `voice_pack`, para
+# que no carguen el módulo base: ver android/voice_pack/.
+PACK_DIR = ROOT / "assets" / "voice_pack"
 CORPUS_JSON = ROOT / "voice-corpus.json"
 
 # Las dos lenguas en las que se LEE la app. Toda la prosa bilingüe va en estas.
@@ -103,14 +107,21 @@ class Locution(NamedTuple):
     # Solo cuando una frase gl/es lleva inglés entre “…”: los trozos y la voz
     # de cada uno. `None` en todas las demás.
     segments: list[list[str]] | None = None
+    # En el paquete de recursos `voice_pack` y no en el módulo base.
+    pack: bool = False
 
     @property
     def filename(self) -> str:
         return f"{self.id}.m4a"
 
     @property
+    def directory(self) -> Path:
+        return PACK_DIR if self.pack else VOICE_DIR
+
+    @property
     def asset_path(self) -> str:
-        return f"assets/voice/{self.filename}"
+        carpeta = "voice_pack" if self.pack else "voice"
+        return f"assets/{carpeta}/{self.filename}"
 
 
 def normalize(text: str) -> str:
@@ -146,7 +157,7 @@ def _localized(node: object) -> dict[str, str]:
 
 
 def _one(text: str, lang: str, style: str, source: str,
-         seen: dict[str, Locution]) -> None:
+         seen: dict[str, Locution], pack: bool = False) -> None:
     """Una locución suelta en una lengua concreta. La usa el inglés."""
     value = normalize(text)
     if not value:
@@ -159,7 +170,10 @@ def _one(text: str, lang: str, style: str, source: str,
         speech=speech_text(value.replace("“", "").replace("”", ""), lang),
         source=source,
         segments=speech_segments(value, lang),
+        pack=pack,
     )
+    # Si el mismo texto ya está en el módulo base, se queda allí: la app busca
+    # primero en el paquete y luego en la base.
     seen.setdefault(entry.id, entry)
 
 
@@ -373,6 +387,13 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                         texto = str(palabra["en"])
                         _one(texto, "en", estilo_ingles(texto),
                              f"{tid}/s{numero}/{palabra.get('id', '?')}", seen)
+                        # Dos toques en la pastilla: el significado, para la
+                        # familia o la docente que no sabe la palabra.
+                        for lang in ("gl", "es"):
+                            if palabra.get(lang):
+                                _one(str(palabra[lang]), lang, "tutor",
+                                     f"{tid}/s{numero}/{palabra.get('id', '?')}"
+                                     "/significado", seen, pack=True)
 
     # ── Los 50 meses del trayecto, de 0-2 a 5-6 años ──────────────────────
     # Cada tarjeta del calendario (aula y casa) enseña la frase inglesa de SU
@@ -764,5 +785,6 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
 
 def iter_missing(locutions: list[Locution], voice_dir: Path = VOICE_DIR) -> Iterator[Locution]:
     for entry in locutions:
-        if not (voice_dir / entry.filename).exists():
+        carpeta = PACK_DIR if entry.pack else voice_dir
+        if not (carpeta / entry.filename).exists():
             yield entry

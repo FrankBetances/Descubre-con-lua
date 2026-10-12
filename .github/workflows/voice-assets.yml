@@ -95,9 +95,24 @@ jobs:
         if: steps.plan.outputs.do_es == 'yes' || steps.plan.outputs.do_en == 'yes' || steps.plan.outputs.do_gl == 'yes'
         run: pip install piper-tts
 
-      - name: Synthesise es (Sharvard · piper)
+      # El castellano y el gallego, también por tandas: con los significados
+      # de las 4.000 palabras del curso (dos toques en la pastilla) son unas
+      # 3.900 locuciones nuevas en cada lengua, y van a assets/voice_pack/.
+      - name: Synthesise es (Sharvard · piper), tanda a tanda
         if: steps.plan.outputs.do_es == 'yes'
-        run: python3 tools/generate_voice_assets.py --lang es
+        timeout-minutes: 130
+        run: |
+          set -euo pipefail
+          for tanda in $(seq 1 3); do
+            echo "── tanda $tanda ──"
+            python3 tools/generate_voice_assets.py --lang es --minutes 40
+            tools/ci_push_voice.sh "${{ github.ref_name }}"
+            faltan=$(python3 tools/voice_missing.py --lang es)
+            echo "Quedan $faltan locuciones castellanas sin grabar."
+            if [ "$faltan" = "0" ]; then
+              break
+            fi
+          done
 
       # El inglés, POR TANDAS, empujando cada una.
       #
@@ -146,9 +161,21 @@ jobs:
         id: gl
         if: steps.plan.outputs.do_gl == 'yes'
         continue-on-error: true
+        timeout-minutes: 170
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: python3 tools/generate_voice_assets.py --lang gl
+        run: |
+          set -euo pipefail
+          for tanda in $(seq 1 4); do
+            echo "── tanda $tanda ──"
+            python3 tools/generate_voice_assets.py --lang gl --minutes 40
+            tools/ci_push_voice.sh "${{ github.ref_name }}"
+            faltan=$(python3 tools/voice_missing.py --lang gl)
+            echo "Quedan $faltan locucións galegas sen gravar."
+            if [ "$faltan" = "0" ]; then
+              break
+            fi
+          done
 
       - name: Commit whatever was synthesised
         if: always()

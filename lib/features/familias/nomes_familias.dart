@@ -27,6 +27,9 @@ class NomesFamilias {
       LocalizedString(gl: 'Palabras en inglés', es: 'Palabras en inglés');
   static const inglesDi = LocalizedString(
       gl: 'As de cada día, con voz', es: 'Las de cada día, con voz');
+  static const inglesToques = LocalizedString(
+      gl: 'Un toque: en inglés. Dous toques: o que quere dicir.',
+      es: 'Un toque: en inglés. Dos toques: lo que quiere decir.');
   static const movemento =
       LocalizedString(gl: 'Xogos de movemento', es: 'Juegos de movimiento');
 

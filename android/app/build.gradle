@@ -51,6 +51,18 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
+    // Los significados gl/es de las palabras inglesas van en un paquete de
+    // recursos aparte (ver ../voice_pack): no cuentan para el límite de
+    // descarga del módulo base. Solo entran en el AAB; el APK suelto de
+    // `flutter build apk` no los lleva, y el de pruebas de CI se saca del AAB.
+    assetPacks = [":voice_pack"]
+
+    // MediaPlayer abre las grabaciones con openFd, que solo funciona sobre
+    // ficheros sin comprimir dentro del paquete.
+    androidResources {
+        noCompress += 'm4a'
+    }
+
     defaultConfig {
         applicationId "com.earlify.descubreconlua"
         minSdk 24

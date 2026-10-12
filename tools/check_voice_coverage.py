@@ -13,7 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from voice_corpus import VOICE_DIR, collect_locutions, iter_missing  # noqa: E402
+from voice_corpus import PACK_DIR, VOICE_DIR, collect_locutions, iter_missing  # noqa: E402
 
 
 def main() -> int:
@@ -24,11 +24,13 @@ def main() -> int:
 
     missing = list(iter_missing(locutions))
 
+    esperadas = {(entry.directory, entry.filename) for entry in locutions}
     orphans = sorted(
-        path.name
-        for path in VOICE_DIR.glob("*.m4a")
-        if path.name not in {entry.filename for entry in locutions}
-    ) if VOICE_DIR.exists() else []
+        f"{carpeta.name}/{path.name}"
+        for carpeta in (VOICE_DIR, PACK_DIR) if carpeta.exists()
+        for path in carpeta.glob("*.m4a")
+        if (carpeta, path.name) not in esperadas
+    )
 
     for name in orphans:
         print(f"  note: {name} is no longer referenced by any text")
@@ -47,7 +49,7 @@ def main() -> int:
         )
         return 1
 
-    print(f"OK: {len(locutions)} locutions, every recording present in assets/voice/")
+    print(f"OK: {len(locutions)} locutions, every recording present in assets/voice/ and assets/voice_pack/")
     return 0
 
 

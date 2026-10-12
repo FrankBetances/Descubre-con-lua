@@ -284,6 +284,7 @@ class _Pastilla extends StatelessWidget {
       comoChip: true,
       colorChip: context.acento,
       descripcion: palabra.en,
+      significado: LocalizedString(gl: palabra.gl, es: palabra.es),
     );
   }
 }

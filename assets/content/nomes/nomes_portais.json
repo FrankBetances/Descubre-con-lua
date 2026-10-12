@@ -115,6 +115,11 @@
               "es": "Las de cada día, con voz"
             },
             {
+              "id": "inglesToques",
+              "gl": "Un toque: en inglés. Dous toques: o que quere dicir.",
+              "es": "Un toque: en inglés. Dos toques: lo que quiere decir."
+            },
+            {
               "id": "movemento",
               "gl": "Xogos de movemento",
               "es": "Juegos de movimiento",
