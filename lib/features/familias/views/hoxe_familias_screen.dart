@@ -599,7 +599,7 @@ class _TarxetaPalabras extends StatelessWidget {
               NomesFamilias.inglesToques.resolve(language),
               key: const Key('hoxe_ingles_toques'),
               style: const TextStyle(
-                fontSize: 13,
+                fontSize: 14,
                 color: AppTheme.textSecondary,
               ),
             ),

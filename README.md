@@ -162,7 +162,7 @@ comprobado y nombra el comando que lo comprobó.
 | Ponte al día | 250 palabras de cursos o meses anteriores que dan por sabidas 86 de las 133 órdenes de las asambleas y 68 de los 303 retos de los cuentos, revisadas a mano, cada una con su gesto y su voz |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
 | STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, cada una en versión de aula y de casa |
-| Voz | 15.154 locuciones (1.175 gl + 1.174 es + 12.805 en) grabadas dentro del paquete |
+| Voz | 22.886 locuciones grabadas dentro de la app: 15.154 en el módulo base (1.175 gl + 1.174 es + 12.805 en) y 7.732 en el paquete de voz de instalación, los significados en gallego (3.865) y castellano (3.867) de las palabras inglesas del curso |
 | Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 | Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |
 | Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |

@@ -9,6 +9,53 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L12: dos toques en la palabra inglesa, su significado (12/10/2026)
+
+Rama `claude/ux-l12`. Frank: «las palabras en inglés que tienen que aprender
+los niños tampoco las conocen los padres». Eligió la opción A: grabar los
+significados con las mismas voces y llevarlos en un paquete de recursos de
+Play, para que no carguen el módulo base.
+
+Qué cambia en pantalla:
+
+- **Un toque en la pastilla de una palabra del curso la dice en inglés;
+  dos toques, lo que quiere decir, en gallego o castellano según la app**, y
+  se ve escrito un momento («Hop: Pé coxo»). Va en las pastillas de Hoy (casa
+  y escuela), el calendario, el cuento, «Ponte ao día», Recursos → Inglés y
+  «Antes da orde». No en el repaso de tarjetas, que esconde el significado a
+  propósito.
+- Hoy de casa lo dice debajo de «Palabras en inglés», y «Como funciona o
+  conto» también.
+
+Lo que no se ve:
+
+- 7.732 grabaciones nuevas (3.865 gl + 3.867 es), los significados de las
+  4.000 palabras, en `assets/voice_pack/`. No van en `pubspec`: van en el
+  paquete de recursos de instalación `android/voice_pack`, cuyo
+  `src/main/assets/flutter_assets/assets/voice_pack` es un enlace a esa
+  carpeta. Para el reproductor nativo es la misma ruta que el resto.
+- El workflow de voz graba gl y es por tandas de 40 minutos, como el inglés.
+- CI compila el AAB en cada run, comprueba que el paquete lleva las mismas
+  grabaciones que el repositorio y publica en el resumen lo que descarga cada
+  móvil (`bundletool get-size total`). En `main`, el APK de pruebas sale del
+  AAB en modo universal, porque `flutter build apk` no lleva el paquete.
+- El gate de assets empaquetados acepta `assets/voice_pack/` solo si el
+  enlace del paquete existe y apunta allí.
+
+Cómo se comprobó:
+
+- `test/features/ux_l12_test.dart`: un toque suena en inglés; dos toques
+  enseñan el significado y no suenan en inglés, en gl y es.
+- `tools/gates.sh --fast` en local: 21 de 22, con 1.197 pruebas. Cae «every locution has a recording»: faltan las 7.732 grabaciones nuevas, que graba el workflow de voz en CI al empujar la rama.
+
+Lo que no se ha comprobado:
+
+- **Esto no lo he visto en un aparato Android**, y en este entorno no hay SDK
+  de Android: que Gradle acepte el paquete, que el AAB lo lleve y cuánto
+  descarga un móvil lo dice CI. Que el paquete se instale y suene desde Play
+  solo se verá subiendo el AAB a una pista de prueba.
+- La voz de los significados no la he oído.
+
 ## Lote L11: el cuento se entiende desde arriba (12/10/2026)
 
 Rama `claude/ux-l11`. Frank: «arriba hay una pequeña descripción que se
