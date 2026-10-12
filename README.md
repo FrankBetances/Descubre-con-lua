@@ -17,7 +17,8 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
 - **Hoy, en casa** — el juego de tres minutos del día, con el momento como
   título y un solo botón, sus palabras en inglés con voz y el cuento de la
   semana. Si la criatura llega nueva a un curso empezado, **Ponte al día**
-  enseña las palabras de antes que dan por sabidas las asambleas del mes, dos
+  enseña las palabras de antes que dan por sabidas las asambleas y los retos
+  de los cuentos del mes, dos
   o tres al día, con su gesto y su voz. Se elige la edad y el mes; no se guarda
   nada.
 - **Juega con Lúa · Modo Aula** — todas las asambleas, de cualquier grupo, mes y
@@ -88,8 +89,11 @@ pensada para casa.
 **El cuento de la semana** lleva dentro esas veinte palabras, entre comillas y
 resaltadas, con su gesto y su voz debajo de cada página; abierto desde Hoy, se
 marcan las del día. Cada vez que se abre la app, el primer cuento empieza por
-**Cómo funciona el cuento**: unas pocas frases que dicen qué es cada cosa y qué
-se hace con ella. Después queda en una línea que se abre al tocarla.
+**Cómo funciona el cuento**: unas pocas frases que dicen qué es cada cosa, qué
+se hace con ella y cómo leerlo con la criatura. Después queda en una línea que
+se abre al tocarla. Debajo de cada página va el reto en inglés; si da por
+sabidas palabras de antes, lo dice en una línea que, al tocarla, las enseña con
+su gesto y su voz.
 
 El grupo **Inglés** de Recursos, en el Portal Docentes, trabaja esas mismas
 palabras, una fila para cada parte: se consultan por curso,
@@ -155,7 +159,7 @@ comprobado y nombra el comando que lo comprobó.
 | Calendario e inglés | 50 meses de calendario (5 cursos × 10, de 0-2 a 5-6 años) · 4.000 palabras inglesas, 800 por curso, cinco nuevas al día · 63 colocaciones · 44 fonemas |
 | Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
 | Cuentos | 303: 200 de la semana —uno por semana de cada curso, de septiembre a junio—, cada uno con las 20 palabras inglesas de su semana dentro del texto, y 103 más que no son de ninguna semana |
-| Ponte al día | 147 palabras de cursos o meses anteriores que dan por sabidas 86 de las 133 órdenes de las asambleas, revisadas a mano, cada una con su gesto y su voz |
+| Ponte al día | 250 palabras de cursos o meses anteriores que dan por sabidas 86 de las 133 órdenes de las asambleas y 68 de los 303 retos de los cuentos, revisadas a mano, cada una con su gesto y su voz |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
 | STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, cada una en versión de aula y de casa |
 | Voz | 15.154 locuciones (1.175 gl + 1.174 es + 12.805 en) grabadas dentro del paquete |

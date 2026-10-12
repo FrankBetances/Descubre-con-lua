@@ -1,5 +1,5 @@
 {
-  "_doc": "Como funciona o conto: a explicación breve que ve quen o abre por primeira vez, arriba da primeira páxina do visor, nas catro portas (Hoxe das familias, Explorar → Contos, Hoxe das docentes e o círculo do día no Modo Aula). Cada paso sae só se o conto ten iso: «cando» é sempre, conPalabras (leva palabras da semana), conDia (abriuse desde un día e hai palabras de hoxe), senDia (leva palabras pero abriuse sen día), conPregunta (algunha páxina trae pregunta) ou conReto (trae reto en inglés). Describe o que fai o visor: se o visor cambia, cámbiase isto.",
+  "_doc": "Como funciona o conto: a explicación breve que ve quen o abre por primeira vez, arriba da primeira páxina do visor, nas catro portas (Hoxe das familias, Explorar → Contos, Hoxe das docentes e o círculo do día no Modo Aula). Cada paso sae só se o conto ten iso: «cando» é sempre, conPalabras (leva palabras da semana), conDia (abriuse desde un día e hai palabras de hoxe), senDia (leva palabras pero abriuse sen día), conPregunta (algunha páxina trae pregunta) ou conReto (trae reto en inglés). Recolle tamén as pautas de lectura que antes ían nunha barra aparte. Describe o que fai o visor: se o visor cambia, cámbiase isto.",
   "titulo": {
     "gl": "Como funciona o conto",
     "es": "Cómo funciona el cuento"
@@ -14,6 +14,13 @@
       "texto": {
         "gl": "Le ti o conto en voz alta. A crianza escoita e mira a lámina: a pantalla é para ti.",
         "es": "Lee tú el cuento en voz alta. La criatura escucha y mira la lámina: la pantalla es para ti."
+      }
+    },
+    {
+      "cando": "sempre",
+      "texto": {
+        "gl": "Sinala o debuxo co dedo e agarda uns cinco segundos antes de falar. Se a crianza di algo, non a corrixas: repíteo ampliado, con agarimo.",
+        "es": "Señala el dibujo con el dedo y espera unos cinco segundos antes de hablar. Si la criatura dice algo, no la corrijas: repítelo ampliado, con cariño."
       }
     },
     {
@@ -47,8 +54,8 @@
     {
       "cando": "conReto",
       "texto": {
-        "gl": "O reto en inglés, debaixo da páxina, faise co corpo.",
-        "es": "El reto en inglés, debajo de la página, se hace con el cuerpo."
+        "gl": "O reto en inglés, debaixo da páxina, faise co corpo e xuntos: ti tamén te moves. Se dá palabras de antes por sabidas, alí mesmo están, co seu xesto e a súa voz.",
+        "es": "El reto en inglés, debajo de la página, se hace con el cuerpo y juntos: tú también te mueves. Si da palabras de antes por sabidas, ahí mismo están, con su gesto y su voz."
       }
     }
   ]

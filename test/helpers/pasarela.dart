@@ -351,6 +351,7 @@ class Pasarela {
                   language: l,
                   audioService: audio,
                   comoFunciona: comoFunciona,
+                  ponteAoDia: contenido.ponteAoDiaSync,
                 )),
         // Para quen chega novo a 4-5: as palabras que as asembleas de
         // outubro dan por sabidas.

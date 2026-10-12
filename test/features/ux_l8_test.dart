@@ -353,7 +353,7 @@ void main() {
             find.descendant(
                 of: porta,
                 matching: find.textContaining(
-                    '$cantas palabras de antes que ${gl ? 'as asembleas de outubro' : 'las asambleas de octubre'}')),
+                    '$cantas palabras de antes que ${gl ? 'as asembleas e os contos de outubro' : 'las asambleas y los cuentos de octubre'}')),
             findsOneWidget);
 
         await tester.tap(porta);
@@ -413,8 +413,8 @@ void main() {
             find.byKey(const ValueKey('ponte_ao_dia_baleiro')), findsOneWidget);
         expect(
             find.textContaining(gl
-                ? 'En abril, as asembleas de 0-2 anos'
-                : 'En abril, las asambleas de 0-2 años'),
+                ? 'En abril, nin as asembleas nin os contos de 0-2 anos'
+                : 'En abril, ni las asambleas ni los cuentos de 0-2 años'),
             findsOneWidget);
       });
     }

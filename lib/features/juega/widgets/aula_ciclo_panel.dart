@@ -590,11 +590,12 @@ class BloqueDoDia extends StatelessWidget {
                       borderRadius: BorderRadius.circular(999),
                       border: Border.all(color: AppTheme.border),
                     ),
+                    // 14 y no 13: una orden larga ya es lectura (regla de L6).
                     child: Text(
                       o,
                       style: TextStyle(
                         fontFamily: AppTheme.fontFamily,
-                        fontSize: 13,
+                        fontSize: 14,
                         fontWeight: FontWeight.w700,
                         color: context.acento,
                       ),
