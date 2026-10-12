@@ -9,6 +9,77 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Lote L10: las pautas dentro del cuento y la opción A en los retos (12/10/2026)
+
+Rama `claude/ux-l10`. Los puntos 2 y 3 que Frank decidió al probar la build de
+L8 y que en L9 quedaron para después.
+
+Qué cambia en pantalla:
+
+- **Ya no está la barra «Pautas de lectura dialóxica compartida»** del visor.
+  Su contenido va dentro de «Como funciona o conto» como un paso más: señalar
+  el dibujo, esperar unos cinco segundos y, si la criatura dice algo, no
+  corregirla sino repetirlo ampliado. Lo de moverse con el reto va en el paso
+  del reto. El texto está en `cuentos/como_funciona.json`, ya no en el widget.
+- **El reto en inglés de cada cuento dice lo que da por sabido.** Si usa
+  palabras que el curso enseñó antes del mes del cuento, una línea dentro del
+  reto («O reto dá por sabidas 5 palabras») se abre y las enseña con su voz,
+  su significado y su gesto. Pasa en 68 de los 303 cuentos.
+- **«Ponte ao día» suma esas palabras** a las de las asambleas del mes, y sus
+  textos lo dicen. Ahora puede salir también en 0-2 (diciembre y junio).
+
+Lo que no se ve:
+
+- `tools/xera_ponte_ao_dia.py` cruza también la frase del reto de los 303
+  cuentos, con la misma regla y la misma revisión. Resultado: 86 órdenes,
+  68 retos y 250 palabras.
+- En los cuentos, `mesNumero` es el mes del curso (1 = septiembre). Al
+  principio lo leí como mes del calendario; lo vi en la primera revisión, antes
+  de usarlo.
+
+La revisión a mano:
+
+- 189 pares reto-palabra, uno a uno. 14 fuera por coincidir en la letra y no
+  en el sentido: «high» cuatro veces (en el curso, la nota aguda), «steps» dos
+  (escaleras), «bark», «water» y «dry» (verbos en el cuento), «round»
+  (canon), «square» (plaza), «tap» (golpear), «wave» (ola) y «Earth» (el
+  planeta).
+- 8 gestos adaptados solo en este fichero: siete de 0-2 que se hacen con el
+  bebé («Snug», «Lift», «Breeze», «Sway», «Laugh», «Steady», «Stamp») y
+  «Silent», que en el curso tapa la boca. **Los escribió Claude Code: no los
+  ha revisado ninguna docente.** El curso no cambia: «Silent» sigue a la
+  espera de Frank.
+
+Cómo se comprobó:
+
+- `test/features/ux_l10_test.dart`, 9 pruebas: ningún reto da por sabida una
+  palabra de su mes o posterior; la revisión aplicada; ningún gesto con el
+  bebé ni tapando la boca; sin la barra de pautas y con las pautas en la
+  explicación; la línea del reto, cerrada y abierta, en gl y es; sin línea
+  cuando no hay nada.
+- Las pruebas de L8 actualizadas a los textos nuevos.
+- Capturas: rehechas `conto-palabras-*` y `casa-ponte-ao-dia-*`; nueva
+  `conto-reto-*`, miradas en gl y es. El manual (4.4 y 6) y el README, al día;
+  el PDF (34 páginas) y el Word (32), mirados página a página.
+- `tools/gates.sh --fast` en local: 21 de 22, con 1.189 de 1.191 pruebas.
+  Las dos que caen, `ux_l6_test` «aula_2ciclo» en gl y es, caen igual en
+  `main` sin este lote: dependen de la fecha. Hoy toca «Pick up two acorns and
+  put them in the basket», y los chips de las órdenes del panel del Modo Aula
+  iban a 13 px, por debajo de los 14 que la regla de L6 pide para la lectura.
+  Arreglado aquí (14 px): la prueba pasa y `portales_escala_test`, también. El
+  resto de gates lo pasa CI.
+- Las capturas del Modo Aula (`aula-lista-2ciclo-*` y las que abren en el día
+  de hoy) no se han rehecho: cambian con la fecha, y Frank dijo que eso (el
+  punto 4) no se toca. No enseñan los chips a 14 px.
+- **Esto no lo he visto en un aparato Android**, y la voz no la he oído.
+
+### Visto y no tocado
+
+- La cabecera del reto, «Reto físico TPR (inglés L3)», está escrita en el
+  widget y sale en castellano también en gallego.
+- En los cuentos del banco, la línea de debajo del reto repite la frase
+  inglesa como «Acción física TPR guiada: …» en lugar de decir qué se hace.
+
 ## Lote L9: el gesto de «Whisper», con la boca a la vista (6/10/2026)
 
 Rama `claude/ux-l9`. Frank probó la build de L8 y decidió sobre su «visto y no

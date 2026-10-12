@@ -911,8 +911,44 @@ void main() {
           dia: 4,
           comoFunciona: ComoFuncionaOConto.fromRaw(
               File(ComoFuncionaOConto.assetPath).readAsStringSync()),
+          ponteAoDia: contenido.ponteAoDiaSync,
         ),
         tamano: const Size(412, 1500),
+      );
+    });
+
+    // O reto do conto e o que dá por sabido, aberto: «Lift the heavy branch
+    // together, team!», 4-5 anos en decembro.
+    testWidgets('conto · o reto dá por sabido · $l', (tester) async {
+      late Cuento conto;
+      await tester.runAsync(() async {
+        final contos =
+            await contenido.loadCuentos(cursoId: 'curso_4_5', mesNumero: 4);
+        conto = contos.firstWhere((c) => c.id.startsWith('conto_067_o_neno'));
+      });
+      CuentoViewerScreen.pregarExplicacion();
+      addTearDown(CuentoViewerScreen.despregarExplicacion);
+      await capturar(
+        tester,
+        'conto-reto-$l',
+        CuentoViewerScreen(
+          cuento: conto,
+          language: lang,
+          audioService: MockOfflineAudioService(),
+          comoFunciona: ComoFuncionaOConto.fromRaw(
+              File(ComoFuncionaOConto.assetPath).readAsStringSync()),
+          ponteAoDia: contenido.ponteAoDiaSync,
+        ),
+        tamano: const Size(412, 1500),
+        tema: AppTheme.temaFamilias,
+        antesDeRetratar: (tester) async {
+          final fila = find.byKey(const ValueKey('reto_dadas_por_sabidas'));
+          await tester.ensureVisible(fila);
+          await tester.tap(fila);
+          await tester.pumpAndSettle();
+          await tester.ensureVisible(fila);
+          await tester.pumpAndSettle();
+        },
       );
     });
 

@@ -26,7 +26,8 @@ para que non quede ningunha morta. O resto do ficheiro escríbeo este script:
       revision   ← a man: as decisións da revisión
       palabras   ← XERADO: cada palabra, copiada do curso TPR
       ordes      ← XERADO: o que dá por sabido cada orde, pola súa id
-      meses      ← XERADO: o de todas as ordes do mes, por curso
+      contos     ← XERADO: o que dá por sabido o reto TPR de cada conto
+      meses      ← XERADO: o de todas as ordes e retos do mes, por curso
 
     python3 tools/xera_ponte_ao_dia.py            # escribe o ficheiro
     python3 tools/xera_ponte_ao_dia.py --check    # gate: falla se non coincide
@@ -187,6 +188,7 @@ def cargar_asembleas():
         ordes = [c for f in a['fases'] for c in f.get('comandosL3', [])]
         saida.append({
             'id': a['id'],
+            'tipo': 'asemblea',
             'curso': curso,
             'orde_curso': CURSOS.index(curso),
             'mes': a['mes'],
@@ -194,6 +196,39 @@ def cargar_asembleas():
             'ordes': ordes,
         })
     saida.sort(key=lambda a: (a['orde_curso'], a['orde_mes']))
+    return saida
+
+
+def cargar_contos():
+    """Cada conto co seu curso, o seu mes e o seu reto en inglés.
+
+    O reto TPR do conto («Giant waves, row your boat!») é unha orde máis: o
+    que dá por sabido vai no visor, xunto ao reto, e na casa, en «Ponte ao
+    día». Frank estendeu a opción A ás frases TPR dos contos.
+    """
+    saida = []
+    for nome in ('historias_progresivas.json', 'banco100_cuentos.json'):
+        datos = le_json(CONTIDO / 'cuentos' / nome)
+        lista = datos if isinstance(datos, list) else next(
+            v for v in datos.values() if isinstance(v, list))
+        for c in lista:
+            reto = c.get('tprOral') or {}
+            frase = (reto.get('fraseEn') or '').strip()
+            if not frase or c.get('cursoId') not in CURSOS:
+                continue
+            # «mesNumero» é o mes do curso (1 = setembro … 10 = xuño), non
+            # o do calendario.
+            mes = MESES[int(c['mesNumero']) - 1]
+            saida.append({
+                'id': c['id'],
+                'tipo': 'conto',
+                'curso': c['cursoId'],
+                'orde_curso': CURSOS.index(c['cursoId']),
+                'mes': mes,
+                'orde_mes': MESES.index(mes),
+                'ordes': [{'id': c['id'], 'textoIngles': frase}],
+            })
+    saida.sort(key=lambda a: (a['orde_curso'], a['orde_mes'], a['id']))
     return saida
 
 
@@ -238,7 +273,7 @@ def antes(p, asemblea) -> bool:
 def xerar(fonte: dict):
     """O ficheiro enteiro: o escrito a man máis o xerado."""
     palabras, soltas, frases = cargar_traxecto()
-    asembleas = cargar_asembleas()
+    asembleas = cargar_asembleas() + cargar_contos()
     revision = fonte.get('revision', {})
     ids_das_ordes = {c['id'] for a in asembleas for c in a['ordes']}
 
@@ -282,7 +317,7 @@ def xerar(fonte: dict):
                                  'es': xesto.get('es', '')}
 
     usadas_excluir = set()
-    ordes, meses, usadas = {}, {}, set()
+    ordes, contos, meses, usadas = {}, {}, {}, set()
     for a in asembleas:
         do_mes = []
         for c in a['ordes']:
@@ -306,13 +341,17 @@ def xerar(fonte: dict):
                 if pid not in lista:
                     lista.append(pid)
             if lista:
-                ordes[c['id']] = lista
+                (contos if a['tipo'] == 'conto' else ordes)[c['id']] = lista
                 usadas.update(lista)
                 for pid in lista:
                     if pid not in do_mes:
                         do_mes.append(pid)
         if do_mes:
-            meses.setdefault(a['curso'], {})[str(a['mes'])] = do_mes
+            do_curso = meses.setdefault(a['curso'], {}).setdefault(
+                str(a['mes']), [])
+            for pid in do_mes:
+                if pid not in do_curso:
+                    do_curso.append(pid)
 
     for e in excluir - usadas_excluir:
         fallos.append(
@@ -341,8 +380,11 @@ def xerar(fonte: dict):
             palabras[i]['semana'], palabras[i]['en'].lower()))
     }
     saida['ordes'] = ordes
+    saida['contos'] = contos
     saida['meses'] = {
-        curso: meses[curso] for curso in CURSOS if curso in meses
+        curso: {str(m): meses[curso][str(m)] for m in MESES
+                if str(m) in meses[curso]}
+        for curso in CURSOS if curso in meses
     }
     return saida, fallos, (palabras, soltas, frases, asembleas)
 
@@ -388,10 +430,12 @@ def main(argv: list[str]) -> int:
                   file=sys.stderr)
             return 1
         print(f"ponte_ao_dia.json ao día: {len(saida['ordes'])} ordes, "
+              f"{len(saida['contos'])} contos, "
               f"{len(saida['palabras'])} palabras.")
         return 0
     DESTINO.write_text(novo, encoding='utf-8')
     print(f"Escrito: {len(saida['ordes'])} ordes, "
+          f"{len(saida['contos'])} contos, "
           f"{len(saida['palabras'])} palabras.")
     return 0
 

@@ -9,8 +9,10 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/como_funciona_o_conto_model.dart';
 import '../../../data/models/cuento_model.dart';
+import '../../../data/models/ponte_ao_dia_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../widgets/palabras_do_conto.dart';
+import '../../calendario/widgets/palabras_do_dia.dart' show PalabraConXesto;
 
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
@@ -42,6 +44,10 @@ class CuentoViewerScreen extends StatefulWidget {
   /// «Como funciona o conto». Sin él se lee del paquete; los tests lo pasan.
   final ComoFuncionaOConto? comoFunciona;
 
+  /// O que dá por sabido o reto TPR de cada conto. Sen el lese do paquete;
+  /// os tests pásano.
+  final PonteAoDia? ponteAoDia;
+
   const CuentoViewerScreen({
     super.key,
     required this.cuento,
@@ -51,6 +57,7 @@ class CuentoViewerScreen extends StatefulWidget {
     this.semanaTpr,
     this.dia,
     this.comoFunciona,
+    this.ponteAoDia,
   });
 
   /// «Como funciona», plegado. Sale desplegado la primera vez que se abre un
@@ -98,7 +105,6 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
 
   int _currentPageIndex = 0;
   bool _mostrarPreguntas = false;
-  bool _mostrarPautas = false;
   double _fontSizeDelta = 0.0; // -2, 0, +3
 
   /// La tarjeta de la página: tocar una palabra de la cabecera lleva hasta
@@ -114,12 +120,25 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
   late ComoFuncionaOConto? _comoFunciona = widget.comoFunciona;
   Object? _erroComoFunciona;
 
+  late PonteAoDia? _ponte = widget.ponteAoDia;
+  bool _retoAberto = false;
+
   @override
   void initState() {
     super.initState();
     VocabularioContos.cargar().then((_) {
       if (mounted) setState(() {});
     });
+    if (_ponte == null) {
+      // Se non se pode ler, o reto sae sen a súa lista: o fallo xa queda
+      // nos erros de carga do repositorio, que le o mesmo ficheiro.
+      PonteAoDia.cargar().then<void>(
+        (p) {
+          if (mounted) setState(() => _ponte = p);
+        },
+        onError: (Object _) {},
+      );
+    }
     if (_comoFunciona == null) {
       ComoFuncionaOConto.cargar().then<void>(
         (c) {
@@ -137,6 +156,68 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
     // Ya se vio una vez en esta sesión: la próxima, plegada.
     if (_comoFunciona != null) CuentoViewerScreen._explicacionPlegada = true;
     super.dispose();
+  }
+
+  /// O que o reto dá por sabido: unha liña que se abre, e dentro cada
+  /// palabra coa súa voz e o seu xesto. Sen palabras, nada.
+  List<Widget> _dadasPolReto(Cuento cuento, AppLanguage lang) {
+    final ponte = _ponte;
+    if (ponte == null) return const [];
+    final palabras = ponte.doConto(cuento.id);
+    if (palabras.isEmpty) return const [];
+    final titulo = palabras.length == 1
+        ? ponte.texto('conto', 'unha').resolve(lang)
+        : ponte
+            .texto('conto', 'titulo')
+            .resolve(lang)
+            .replaceAll('{n}', '${palabras.length}');
+    return [
+      const Divider(height: 20, color: Color(0xFFBEE3F8)),
+      InkWell(
+        key: const ValueKey('reto_dadas_por_sabidas'),
+        onTap: () => setState(() => _retoAberto = !_retoAberto),
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+          child: Row(
+            children: [
+              const Icon(Icons.history_edu_rounded,
+                  color: Color(0xFF2B6CB0), size: 18),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  titulo,
+                  style: const TextStyle(
+                    color: Color(0xFF1A365D),
+                    fontWeight: FontWeight.w700,
+                    fontSize: 14,
+                  ),
+                ),
+              ),
+              Icon(
+                _retoAberto
+                    ? Icons.keyboard_arrow_up_rounded
+                    : Icons.keyboard_arrow_down_rounded,
+                color: const Color(0xFF2B6CB0),
+              ),
+            ],
+          ),
+        ),
+      ),
+      if (_retoAberto) ...[
+        Text(
+          ponte.texto('conto', 'porque').resolve(lang),
+          style: const TextStyle(color: Color(0xFF4A5568), fontSize: 14),
+        ),
+        const SizedBox(height: 8),
+        for (final p in palabras)
+          PalabraConXesto(
+            key: ValueKey('reto_palabra_${p.id}'),
+            palabra: p.comoPalabraTpr,
+            language: lang,
+            audioService: widget.audioService,
+          ),
+      ],
+    ];
   }
 
   /// La explicación, solo en la primera página: es donde empieza quien abre
@@ -287,76 +368,6 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                 ],
               ),
             ),
-
-            // Pautas de Lectura Dialóxica Colapsables
-            InkWell(
-              onTap: () => setState(() => _mostrarPautas = !_mostrarPautas),
-              child: Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                color: AppTheme.warningBg,
-                child: Row(
-                  children: [
-                    const Icon(Icons.tips_and_updates_rounded,
-                        size: 16, color: AppTheme.warning),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        isGl
-                            ? 'Pautas de lectura dialóxica compartida'
-                            : 'Pautas de lectura dialógica compartida',
-                        style: const TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                          color: AppTheme.warning,
-                        ),
-                      ),
-                    ),
-                    Icon(
-                      _mostrarPautas
-                          ? Icons.keyboard_arrow_up_rounded
-                          : Icons.keyboard_arrow_down_rounded,
-                      size: 18,
-                      color: AppTheme.warning,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            if (_mostrarPautas)
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                color: const Color(0xFFFFFDF5),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      isGl
-                          ? '1. Sinala o debuxo co dedo e agarda 5 segundos antes de intervir.'
-                          : '1. Señala el dibujo con el dedo y espera 5 segundos antes de intervenir.',
-                      style: const TextStyle(
-                          fontSize: 12, color: Color(0xFF4A5568)),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      isGl
-                          ? '2. Escoita a resposta do neno/a sen corrixir; expande a súa frase con agarimo.'
-                          : '2. Escucha la respuesta de la criatura sin corregir; expande su frase con cariño.',
-                      style: const TextStyle(
-                          fontSize: 12, color: Color(0xFF4A5568)),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      isGl
-                          ? '3. Acompaña o reto TPR oral con movemento físico conxunto.'
-                          : '3. Acompaña el reto TPR oral con movimiento físico conjunto.',
-                      style: const TextStyle(
-                          fontSize: 12, color: Color(0xFF4A5568)),
-                    ),
-                  ],
-                ),
-              ),
 
             // Área Principal da Páxina
             Expanded(
@@ -635,6 +646,7 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                   fontSize: 14,
                                 ),
                               ),
+                              ..._dadasPolReto(cuento, lang),
                             ],
                           ),
                         ),

@@ -69,6 +69,7 @@ compara el ancho pintado con el que el texto mide de verdad.
 | `asamblea-ingles-{gl,es}.png` | Asamblea guiada: el inglés de la fase, con su grabación |
 | `nota-casas-{gl,es}.png` | La nota para las casas: lo que se hizo hoy, el juego de tres minutos y la frase en inglés |
 | `conto-palabras-{gl,es}.png` | El cuento de la semana con las palabras de hoy, la primera vez que se abre: «Cómo funciona el cuento» arriba |
+| `conto-reto-{gl,es}.png` | El reto de un cuento de 4-5 años en diciembre, con la línea de lo que da por sabido abierta: cada palabra con su voz y su gesto |
 | `casa-ponte-ao-dia-{gl,es}.png` | «Ponte al día», 4-5 años en octubre: las palabras de antes que dan por sabidas las asambleas del mes, en días de dos o tres |
 | `calendario-{gl,es}.png` | El Calendario Escuela · Hogar, del lado del aula |
 | `calendario-familia-{gl,es}.png` | El mismo calendario, del lado de la familia |

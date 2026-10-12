@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
 import '../../core/localization/localized_string.dart';
 import 'asamblea_segundo_ciclo_model.dart' show FaseAsamblea, TipoFaseAsamblea;
@@ -43,7 +44,8 @@ class PalabraDadaPorSabida {
       );
 }
 
-/// Ponte ao día: o que cada orde da asemblea dá por sabido.
+/// Ponte ao día: o que dan por sabido cada orde da asemblea e o reto TPR de
+/// cada conto.
 ///
 /// Vive en `assets/content/ponte_ao_dia.json`. As listas xéraas
 /// `tools/xera_ponte_ao_dia.py` desde o curso TPR e as asembleas, coa revisión
@@ -76,14 +78,17 @@ class PonteAoDia {
       'dia',
       'baleiro',
     ],
+    'conto': ['titulo', 'unha', 'porque'],
   };
 
   final Map<String, Map<String, LocalizedString>> _textos;
   final Map<String, PalabraDadaPorSabida> palabras;
   final Map<String, List<String>> _ordes;
+  final Map<String, List<String>> _contos;
   final Map<String, Map<int, List<String>>> _meses;
 
-  const PonteAoDia._(this._textos, this.palabras, this._ordes, this._meses);
+  const PonteAoDia._(
+      this._textos, this.palabras, this._ordes, this._contos, this._meses);
 
   /// Un texto da pantalla: `texto('reprodutor', 'titulo')`.
   LocalizedString texto(String grupo, String clave) => _textos[grupo]![clave]!;
@@ -91,6 +96,11 @@ class PonteAoDia {
   /// O que dá por sabido unha orde, na orde en que se di.
   List<PalabraDadaPorSabida> daOrde(String idOrde) => [
         for (final id in _ordes[idOrde] ?? const <String>[]) palabras[id]!,
+      ];
+
+  /// O que dá por sabido o reto TPR dun conto, pola id do conto.
+  List<PalabraDadaPorSabida> doConto(String idConto) => [
+        for (final id in _contos[idConto] ?? const <String>[]) palabras[id]!,
       ];
 
   /// O que dan por sabido as ordes que se van dar hoxe: as da fase núcleo,
@@ -109,11 +119,23 @@ class PonteAoDia {
     return saida;
   }
 
-  /// O que dan por sabido as asembleas dun mes nun curso (`curso_4_5`, 10).
+  /// O que dan por sabido as asembleas e os retos dos contos dun mes nun
+  /// curso (`curso_4_5`, 10).
   List<PalabraDadaPorSabida> doMes(String cursoId, int mes) => [
         for (final id in _meses[cursoId]?[mes] ?? const <String>[])
           palabras[id]!,
       ];
+
+  static Future<PonteAoDia>? _enCurso;
+
+  /// Unha soa carga por execución, para o visor do conto: o repositorio
+  /// cárgao tamén ao arrancar, pero o visor ábrese desde catro portas.
+  static Future<PonteAoDia> cargar() =>
+      _enCurso ??= rootBundle.loadString(assetPath).then(PonteAoDia.fromRaw);
+
+  /// Solo para los tests: olvida lo cargado.
+  @visibleForTesting
+  static void olvidar() => _enCurso = null;
 
   factory PonteAoDia.fromRaw(String raw) {
     final json = jsonDecode(raw);
@@ -181,10 +203,16 @@ class PonteAoDia {
     }
 
     final ordesJson = json['ordes'];
+    final contosJson = json['contos'];
     final mesesJson = json['meses'];
-    if (ordesJson is! Map || mesesJson is! Map) {
-      throw const FormatException('ponte_ao_dia: faltan «ordes» ou «meses»');
+    if (ordesJson is! Map || contosJson is! Map || mesesJson is! Map) {
+      throw const FormatException(
+          'ponte_ao_dia: faltan «ordes», «contos» ou «meses»');
     }
+    final contos = <String, List<String>>{
+      for (final e in contosJson.entries)
+        e.key as String: lista(e.value, 'o conto ${e.key}'),
+    };
     final ordes = <String, List<String>>{
       for (final e in ordesJson.entries)
         e.key as String: lista(e.value, 'a orde ${e.key}'),
@@ -204,6 +232,7 @@ class PonteAoDia {
       Map.unmodifiable(textos),
       Map.unmodifiable(palabras),
       Map.unmodifiable(ordes),
+      Map.unmodifiable(contos),
       Map.unmodifiable(meses),
     );
   }
