@@ -51,6 +51,7 @@ import os  # noqa: E402
 from voice_corpus import (  # noqa: E402
     CORPUS_JSON,
     LENGTH_SCALE,
+    PACK_DIR,
     VOICE_DIR,
     ROOT,
 )
@@ -419,9 +420,13 @@ def main() -> int:
     corpus = json.loads(CORPUS_JSON.read_text(encoding="utf-8"))["corpus"]
     entries = [e for e in corpus if e["lang"] == args.lang]
     VOICE_DIR.mkdir(parents=True, exist_ok=True)
+    PACK_DIR.mkdir(parents=True, exist_ok=True)
+
+    def carpeta(e: dict) -> Path:
+        return PACK_DIR if e.get("pack") else VOICE_DIR
 
     pending = [e for e in entries
-               if args.force or not (VOICE_DIR / f"{e['id']}.m4a").exists()]
+               if args.force or not (carpeta(e) / f"{e['id']}.m4a").exists()]
 
     total_pendentes = len(pending)
     if args.limit > 0:
@@ -454,7 +459,7 @@ def main() -> int:
             break
         raw = work / "raw.wav"
         mastered = work / "mastered.wav"
-        target = VOICE_DIR / f"{entry['id']}.m4a"
+        target = carpeta(entry) / f"{entry['id']}.m4a"
 
         # `speech` is the text without the teacher's pulse markers and syllable
         # splits; `text` is what the screen shows and what the id hashes.

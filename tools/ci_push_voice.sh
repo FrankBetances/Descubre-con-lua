@@ -16,7 +16,7 @@ RAMA="${1:?falta la rama}"
 
 git config user.name 'github-actions[bot]'
 git config user.email 'github-actions[bot]@users.noreply.github.com'
-git add assets/voice voice-corpus.json voice-assets-manifest.*.json assets/content
+git add assets/voice assets/voice_pack voice-corpus.json voice-assets-manifest.*.json assets/content
 
 if git diff --cached --quiet; then
   echo 'Nada que empujar: todas las grabaciones ya estaban.'

@@ -54,6 +54,13 @@ ASSET_LITERAL = re.compile(r"""['"](assets/[^'"\s]+)['"]""")
 # diagnóstico: nombra la locución que falta, no solo la ruta.
 VOICE_PREFIX = "assets/voice/"
 
+# Los significados gl/es de las palabras inglesas NO viajan por pubspec: van
+# en el paquete de recursos de Play `voice_pack` (android/voice_pack), cuyo
+# src/main/assets/flutter_assets/assets/voice_pack es un enlace a esta carpeta.
+# Aquí se exige que ese enlace exista y apunte aquí.
+PACK_PREFIX = "assets/voice_pack/"
+PACK_LINK = ROOT / "android" / "voice_pack" / "src" / "main" / "assets" / "flutter_assets" / "assets" / "voice_pack"
+
 
 def pubspec_asset_entries(pubspec: Path) -> list[str]:
     """The `assets:` entries under `flutter:`, verbatim.
@@ -173,6 +180,11 @@ def main() -> int:
     aplazadas: list[str] = []
 
     for path, origins in sorted(asked.items()):
+        if path.startswith(PACK_PREFIX):
+            if not (PACK_LINK.is_symlink()
+                    and PACK_LINK.resolve() == (ROOT / PACK_PREFIX).resolve()):
+                not_packaged.append((PACK_PREFIX + " (enlace de android/voice_pack)", origins))
+            continue
         if INTERPOLATED.search(path):
             # Only the directory can be checked for these.
             directory = path.rsplit("/", 1)[0] + "/"

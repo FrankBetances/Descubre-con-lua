@@ -592,6 +592,17 @@ class _TarxetaPalabras extends StatelessWidget {
                 color: AppTheme.textSecondary,
               ),
             ),
+            const SizedBox(height: 2),
+            // Las palabras son para la criatura y quien las dice no siempre
+            // las sabe: un toque las dice en inglés; dos, lo que quieren decir.
+            Text(
+              NomesFamilias.inglesToques.resolve(language),
+              key: const Key('hoxe_ingles_toques'),
+              style: const TextStyle(
+                fontSize: 14,
+                color: AppTheme.textSecondary,
+              ),
+            ),
             const SizedBox(height: 6),
             PalabrasDoDia(
               plan: plan,
