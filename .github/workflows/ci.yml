@@ -302,7 +302,7 @@ jobs:
           fi
           curl -sSL -o build/bundletool.jar \
             https://github.com/google/bundletool/releases/download/1.17.2/bundletool-all-1.17.2.jar
-          enrepo=$(ls assets/voice_pack/*.m4a 2>/dev/null | wc -l)
+          enrepo=$(find assets/voice_pack -name '*.m4a' | wc -l)
           enaab=$(unzip -l "$aab" | grep -c 'voice_pack/assets/flutter_assets/assets/voice_pack/.*\.m4a' || true)
           echo "## Paquete de voz" >> "$GITHUB_STEP_SUMMARY"
           echo "Grabaciones en assets/voice_pack: $enrepo · en el AAB: $enaab" >> "$GITHUB_STEP_SUMMARY"
