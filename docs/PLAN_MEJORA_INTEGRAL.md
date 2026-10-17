@@ -6,8 +6,8 @@ de mejora de todo el producto. El contrato de datos —qué JSON entra y con qu�
 campos— está en `docs/PLAN_ARQUITECTURA_PEDAGOGIA.md`. Aquí se dice qué ve la
 docente y qué ve la familia, y en qué orden se hace.
 
-Los cinco textos se leyeron enteros el 17 de octubre de 2026. No están
-copiados en el repositorio. El mapa de módulos de abajo se sacó del código de
+Los cinco textos se leyeron enteros el 17 de octubre de 2026. Están en
+`docs/base/`, copiados tal cual llegaron. El mapa de módulos de abajo se sacó del código de
 la rama `pedagogia` (las pantallas de `lib/features/` y el JSON de
 `assets/content/`). **Esto no lo he verificado** abriendo la app de nuevo en
 esta redacción: la última vez que se recorrió Inicio → Modo Aula y Inicio →

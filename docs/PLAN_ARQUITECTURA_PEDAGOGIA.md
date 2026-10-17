@@ -10,16 +10,16 @@ pantalla mejora, cuál no, y en qué ola— está en
 `docs/PLAN_MEJORA_INTEGRAL.md`. Si los dos no dicen lo mismo, se corrige el
 que se haya quedado atrás: no se elige uno en silencio.
 
-Los textos se leyeron enteros el 17 de octubre de 2026, desde los ficheros
-que llegaron a la sesión. No están copiados en el repositorio. Son estos:
+Los textos se leyeron enteros el 17 de octubre de 2026. Están en
+`docs/base/`, copiados tal cual llegaron. Son estos:
 
-| Texto | Qué aporta |
-| --- | --- |
-| Biblioteca de cuentos dialógicos bilingües | Microcuento de 3 o 4 láminas, pregunta en tres niveles, pausa y recast |
-| Currículo de inglés infantil de Galicia | El inglés no es asignatura: es aproximación dentro del Área de Comunicación |
-| Currículo de vocabulario, 2 a 6 años | Dosis léxica corta, anclada a objetos y al cuerpo, con un reto en casa |
-| Estrategias de apoyo lingüístico | Cuatro herramientas del adulto: recast, expansión, habla paralela, espera |
-| Manual de rutinas SparkLing (UW I-LABS) | Cómo habla el adulto en vivo: turno, espera, modelado, cierre predecible |
+| Texto | Fichero | Qué aporta |
+| --- | --- | --- |
+| Biblioteca de cuentos dialógicos bilingües | `docs/base/biblioteca-cuentos-dialogicos-bilingues.txt` | Microcuento de 3 o 4 láminas, pregunta en tres niveles, pausa y recast |
+| Currículo de inglés infantil de Galicia | `docs/base/curriculo-ingles-infantil-galicia.txt` | El inglés no es asignatura: es aproximación dentro del Área de Comunicación |
+| Currículo de vocabulario, 2 a 6 años | `docs/base/curriculo-vocabulario-infantil-2-6.txt` | Dosis léxica corta, anclada a objetos y al cuerpo, con un reto en casa |
+| Estrategias de apoyo lingüístico | `docs/base/estrategias-apoyo-linguistico.txt` | Cuatro herramientas del adulto: recast, expansión, habla paralela, espera |
+| Manual de rutinas SparkLing (UW I-LABS) | `docs/base/manual-rutinas-sparkling-uw-ilabs.txt` | Cómo habla el adulto en vivo: turno, espera, modelado, cierre predecible |
 
 El mapa de pantallas de abajo se comprobó en el código de la rama
 `pedagogia`, no en `PROJECT.md`. Ese fichero describe un esqueleto anterior

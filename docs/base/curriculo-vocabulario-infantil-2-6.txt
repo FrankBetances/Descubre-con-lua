@@ -1,0 +1,431 @@
+﻿Plan Curricular de Adquisición Léxica Basado en Neurobiología del Desarrollo (2 a 6 Años): Diseño Pedagógico, Unidades Temáticas, Dinámicas de Aula y Afirmación Familiar
+Fundamentos Neurobiológicos y Criterios Evolutivos de la Adquisición Léxica
+La delimitación de un currículo de adquisición léxica en la primera infancia exige superar los esquemas pedagógicos tradicionales basados en inventarios léxicos abstractos y arbitrarios, como la memorización descontextualizada de las gamas cromáticas o el conteo numérico mecánico. La evidencia neurobiológica contemporánea establece que el cerebro infantil no procesa el código lingüístico mediante acumulación cuantitativa pasiva, sino a través de adaptaciones ontogenéticas jerárquicas gobernadas por la maduración sináptica y la conectividad frontotemporal1. La introducción de unidades léxicas debe ajustarse a las posibilidades perceptivas, motoras y sociocognitivas reales del niño en cada ventana crítica del neurodesarrollo1.
+El marco de la «compuerta social» (social gating hypothesis) formulado por Patricia Kuhl demuestra que los mecanismos biológicos subyacentes al aprendizaje lingüístico requieren una contingencia interpersonal directa1. Los estímulos bidimensionales pasivos o las aplicaciones digitales resultan neurológicamente inertes para la fijación de representaciones fonológicas y semánticas estables en menores de tres años1. El cerebro infantil computa las propiedades estadísticas de la señal acústica prioritariamente cuando esta se encuentra imbricada en intercambios comunicativos contingentes mediados por el habla dirigida al infante o parentese1. Esta variedad acústica —caracterizada por un tono fundamental elevado, contornos melódicos hiperarticulados, cadencia ralentizada y la exageración de los formantes acústicos vocálicos— actúa como una lupa prosódica que optimiza la segmentación silábica y el reconocimiento de bordes de palabras en el córtex auditivo primario1. Dicha estimulación activa los bucles sensoriomotores del habla, incrementando la densidad de los turnos conversacionales diádicos, variable que predice de forma directa el grosor cortical, la mielinización de los fascículos del lenguaje y la complejidad morfosintáctica a largo plazo1.
+La integración de una lengua meta adicional dentro de la etapa de educación temprana se fundamenta en las conclusiones del metaanálisis de Thieme et al. (2022), donde se constata que los programas de adquisición bilingüe no perjudican el desarrollo de la lengua materna ni generan sobrecarga cognitiva, siempre y cuando se organicen en torno a ecologías de juego no estructurado y situaciones funcionalmente auténticas9. La imposición de una instrucción lingüística academicista o formal genera inhibición afectiva y bloquea la comunicación interactiva; por el contrario, los entornos inmersivos que respetan el bienestar socioemocional del menor propician un desarrollo equilibrado de los repertorios expresivos y receptivos9.
+En complementariedad con este enfoque, las investigaciones de Jannika Boese y colaboradoras (2023) sobre la cualificación docente y el soporte lingüístico integrado en la rutina diaria escolar (Alltagsintegrierte Sprachförderung) demuestran que los mecanismos de asignación rápida de significado (fast-mapping) florecen mediante estrategias dialógicas integradas en la cotidianidad13. Cuando el educador abandona el rol de instructor directivo y asume el de andamio conversacional adaptativo, el modelado lingüístico implícito consolida tanto la comprensión sintáctica como la expansión semántica de forma duradera y transferible a diversos contextos lúdicos13.
+Marco General de Objetivos Operativos por Etapas
+Para garantizar una aplicación pedagógica evaluable y medible, el plan curricular se organiza bajo objetivos didácticos observables formulados en términos de ejecución conductual, motriz y pragmática, evitando pruebas estandarizadas descontextualizadas13.
+Objetivos Operativos para el Tramo 2 (18 a 36 meses)
+1. Dimensión Receptivo-Motora: Ejecutar la orden motriz física (TPR) ante al menos el 80% de las instrucciones verbales nucleares emitidas por el docente (jump, splash, stop, wash, eat) sin requerir modelado gestual simultáneo al final del ciclo de la unidad17.
+2. Dimensión Sensorial y Manipulativa (Realia): Discriminar y emparejar objetos físicos reales tridimensionales con su etiqueta léxica diana (water, boat, leaf, apple, soap, box) en bandejas sensoriales entre un mínimo de tres distractores físicos conocidos8.
+3. Dimensión Fonológica Auditiva: Demostrar orientación y reconocimiento atencional frente a pares de contrastes fonológicos no existentes en español o gallego (diferenciando auditivamente vocales cortas/laxas frente a largas/tensas como /ɪ/ frente a /iː/) a través de respuestas corporales diferenciadas20.
+4. Dimensión Expresiva Emergente: Producir de forma voluntaria o por eco funcional holofrases y combinaciones telegráficas de dos términos ("more water", "big ball", "bye boat") en momentos de contingencia afectiva o demanda de necesidades durante las rutinas de aula1.
+Objetivos Operativos para el Tramo 3 (3 a 6 años)
+1. Dimensión Pragmático-Social: Utilizar de manera autónoma las fórmulas sociales de juego (my turn, your turn, help me, here you are) durante situaciones reales de alternancia y resolución de microconflictos en el juego sociodramático12.
+2. Dimensión Morfosintáctica y Espacial: Colocar objetos y orientar el propio cuerpo siguiendo instrucciones que contengan preposiciones de ubicación (in, on, under, behind, next to) y producir estructuras sintácticas coordinadas de tipo causal (because + acción)15.
+3. Dimensión de Conciencia Fonológica Lúdica: Identificar y reproducir aliteraciones iniciales y patrones de rima en canciones y rimas motoras acumulativas, discriminando el sonido de ataque (onset) y manipulando lúdicamente fonemas en palabras monosilábicas (CVC)21.
+4. Dimensión Discursiva y Dialógica: Participar en secuencias estructuradas de lectura dialógica (PEER y CROWD), respondiendo a preguntas de evocación (recall), formulando descripciones abiertas e integrando vocabulario de nivel intermedio (Tier 2) relativo a emociones, atributos y secuencias temporales14.
+Tramo 2: Unidades Temáticas Detalladas para Niños de 18 a 36 Meses
+Este tramo se estructura en 6 unidades didácticas bimestrales. Cada unidad concentra un núcleo estricto de 4 a 6 palabras diana para respetar la capacidad de la memoria de trabajo fonológica en esta franja de edad8.
+Unidad 1: El Rincón del Agua y Exploración Líquida
+* Temporalización: 6 semanas (septiembre - octubre).
+* Objetivos Específicos:
+   1. Reaccionar corporalmente mediante salto y chapoteo coordinado ante los comandos verbales splash y stop.
+   2. Identificar y tomar con las manos los elementos water y boat en cubetas de agua tras orden verbal directa.
+   3. Discriminar táctil y propioceptivamente la sensación de wet y dry utilizando toallas y esponjas.
+   4. Discriminar auditivamente el contraste vocálico entre la vocal laxa /ɪ/ (fish) y la vocal tensa prolongada /iː/ (sea).
+* Vocabulario Nuclear Diana (5 palabras):
+   1. Water /ˈwɔːtər/
+   2. Splash /splæʃ/
+   3. Boat /bəʊt/
+   4. Wet /wet/
+   5. Fish /fɪʃ/
+* Acciones TPR Vinculadas: Chapotear con manos abiertas en el agua (splash); congelar el movimiento motriz corporal con manos en alto (stop); nadar con los brazos extendidos imitando la trayectoria de un pez (fish).
+* Realia y Recursos Sensoriales: Cubetas traslúcidas de agua templada, barcos de madera y corcho flotante, esponjas vegetales naturales, peces tridimensionales sumergibles de goma suave, toallas de algodón secas y toallas empapadas.
+* Focalización Fonológica (vs. Gallego/Español): El fonema inglés /ɪ/ de fish es una vocal anterior semicerrada corta y laxa inexistente en los sistemas fonéticos de 5 vocales (español) o 7 vocales (gallego)21. El docente contrasta la brevedad relajada de fish /fɪʃ/ con la vocal larga tensa de sea /siː/, exagerando acústicamente la tensión labial en parentese1.
+* Dinámica de Aula (Paso a Paso):
+   * Inicio (Asamblea): Caja sorpresa húmeda. El docente extrae una esponja mojada, presiona unas gotas y modula en parentese: "Mmm, look! Water! Cold water!"1.
+   * Desarrollo (Rincón de Agua): Grupos de 3 niños manipulan las cubetas. El educador canta un patrón rítmico: "Splash, splash, splash in the water! And... stop!". Los infantes chapotean y se detienen al mandato auditivo8. Se introducen los barcos: "Push the boat!".
+   * Cierre: Momento de secado individual. El docente frota las manos del niño con la toalla: "Wet hands... now dry hands! Dry, dry, dry".
+* Afirmación en el Hogar (Micro-reto): En el momento del baño diario en casa, los progenitores omiten el uso de juguetes electrónicos y modelan la palabra water y el verbo splash acompañados de chapoteos suaves y la exclamación expresiva "All wet!"6.
+Unidad 2: Tesoros de la Naturaleza y el Suelo
+* Temporalización: 6 semanas (noviembre - diciembre).
+* Objetivos Específicos:
+   1. Ejecutar las acciones de agacharse a recoger (pick up) y soltar en caída libre (drop) ante la señal auditiva.
+   2. Manipular y clasificar hojas naturales secas (leaf) y piedras de río (stone).
+   3. Vivenciar y contrastar propioceptivamente las magnitudes físicas de tamaño (big y small).
+   4. Asimilar el contraste de duración vocálica entre la vocal larga /iː/ (leaf) y la vocal breve /ɪ/ (stick).
+* Vocabulario Nuclear Diana (5 palabras):
+   1. Leaf /liːf/
+   2. Stone /stəʊn/
+   3. Drop /drɒp/
+   4. Big /bɪɡ/
+   5. Small /smɔːl/
+* Acciones TPR Vinculadas: Agacharse a nivel de suelo para recoger objetos (pick up); abrir las manos a la altura de los hombros dejando caer el objeto con fuerza gravitacional al suelo (drop); extender los brazos formando un círculo amplio corporal (big); encogerse como una bola en el suelo (small).
+* Realia y Recursos Sensoriales: Hojas de castaño y roble secas y crujientes recolectadas del exterior, piedras redondas de río de diferentes pesos y diámetros, cestas de mimbre natural, piñas de pino.
+* Focalización Fonológica (vs. Gallego/Español): Asimilación de la vocal tensa y alargada /iː/ en leaf21. El docente prolonga el sonido estirando las comisuras de los labios ("L-ee-af") frente al movimiento seco y descendente de las manos al articular drop con la vocal redondeada abierta /ɒ/21.
+* Dinámica de Aula (Paso a Paso):
+   * Inicio: Cesto de tesoros naturales en la alfombra central. El docente saca una piedra grande: "Wow, a stone! A big, heavy stone".
+   * Desarrollo: Circuito psicomotor. Los niños transportan una hoja ligera hasta una cesta abierta: "Pick up the leaf. Walk, walk... now drop it! Drop!". El sonido de la hoja cayendo se compara con el sonido sordo del impacto de la piedra ("Drop the stone: Boom!").
+   * Cierre: Juego de contrastes dimensionales corporales. "Make your body big! Big like a tree! Now small, small like a stone".
+* Afirmación en el Hogar (Micro-reto): En paseos al parque o plazas, la familia invita al niño a buscar hojas en el suelo y repetir la acción motriz: "Pick up the leaf! Drop the leaf!", fomentando la atención conjunta diádica1.
+Unidad 3: Texturas, Sabores y Alimentación Saludable
+* Temporalización: 6 semanas (enero - febrero).
+* Objetivos Específicos:
+   1. Realizar gestos coordinados de masticación y deglución simulada al escuchar los comandos bite y eat.
+   2. Distinguir mediante el tacto y el gusto la fruta fresca (apple) del alimento horneado (bread).
+   3. Identificar sensaciones térmicas táctiles directas diferenciando entre warm y cold.
+   4. Discriminar auditivamente la vocal abierta anterior no redondeada /æ/ (apple) frente a las vocales centrales del español.
+* Vocabulario Nuclear Diana (5 palabras):
+   1. Apple /ˈæp.əl/
+   2. Bread /bred/
+   3. Eat /iːt/
+   4. Bite /baɪt/
+   5. Warm /wɔːm/
+* Acciones TPR Vinculadas: Llevarse las manos a la boca imitando comer con cuchara (eat); simular un mordisco frontal exagerado abriendo y cerrando la mandíbula con chasquido de dientes (bite); frotarse las manos en los brazos simulando frío (cold) o abrazarse el pecho simulando confort térmico (warm).
+* Realia y Recursos Sensoriales: Rodajas de manzana fresca ácida y dulce, trozos de pan artesanal crujiente con corteza rugosa y miga elástica, bolsas térmicas de semillas calentadas moderadamente (warm), bloques de hielo envueltos en gasas seguras (cold).
+* Focalización Fonológica (vs. Gallego/Español): La vocal /æ/ de apple requiere una apertura mandibular mayor que la vocal media /e/ del español y del gallego y una retracción lingual distinta a la /a/ española21. El educador muestra visiblemente el descenso mandibular y la apertura bucal al decir "Aa-pple".
+* Dinámica de Aula (Paso a Paso):
+   * Inicio: Preparación de la mesa de colación matinal. El educador corta una manzana frente a los niños: "Look, an apple! Red and crunchy apple".
+   * Desarrollo: Taller de cata sensorial. Cada niño recibe un trozo de pan tibio: "Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!". El docente refuerza contingente cada acción15.
+   * Cierre: Juego de bolsas térmicas. El docente coloca en el regazo de cada niño un saco tibio y exclama: "Mmm, warm and soft".
+* Afirmación en el Hogar (Micro-reto): En la hora de la merienda, ofrecer trozos de fruta o pan diciendo de forma pausada y cantarina: "Bite the apple! Mmm, yummy apple", esperando pacientemente la respuesta o mirada atenta del menor6.
+Unidad 4: Esquema Corporal, Jabón y Cuidado Personal
+* Temporalización: 6 semanas (marzo - abril).
+* Objetivos Específicos:
+   1. Seguir directrices motrices de frotado y lavado corporal ante wash y rub.
+   2. Manipular y asociar el objeto soap y la textura de towel a la rutina higiénica de aula.
+   3. Experimentar táctilmente la propiedad física de soft en contraste con superficies rugosas.
+   4. Percibir la vocal corta posterior laxada /ʊ/ (foot) diferenciándola de la vocal tensa /uː/ (boot).
+* Vocabulario Nuclear Diana (5 palabras):
+   1. Wash /wɒʃ/
+   2. Soap /səʊp/
+   3. Towel /ˈtaʊ.əl/
+   4. Rub /rʌb/
+   5. Soft /sɒft/
+* Acciones TPR Vinculadas: Frotarse las palmas de las manos en círculos continuos (wash); deslizar los dedos sobre los brazos o piernas con fricción táctil (rub); sacudirse las extremidades imitando el secado rápido corporal; tocarse suavemente las mejillas (soft).
+* Realia y Recursos Sensoriales: Pastillas de jabón de glicerina neutra con aroma suave, agua espumosa, toallas de rizo de algodón extra suave, cepillos de cerdas blandas, muñecos lavables de vinilo.
+* Focalización Fonológica (vs. Gallego/Español): La vocal /ʌ/ de rub es una vocal central abierta media corta que se tiende a confundir con la /a/ española21. El docente articula con la boca neutra y relajada, sin la excesiva apertura de la /a/ romance: "Rub, rub, rub your hands".
+* Dinámica de Aula (Paso a Paso):
+   * Inicio: Lavado del muñeco de clase en una palangana. El docente modela: "Baby is dirty! Let's get the soap. Smell the soap!".
+   * Desarrollo: Cada infante toma su pastilla de jabón entre las manos mojadas: "Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!".
+   * Cierre: Uso de toallas individuales: "Dry with the towel. Feel how soft it is. Soft towel on your nose!".
+* Afirmación en el Hogar (Micro-reto): Al lavarse las manos tras volver de la calle, cantar la fórmula interactiva "Rub the soap, wash, wash, wash!" mientras se produce espuma visible entre las manos del niño y el adulto6.
+Unidad 5: Cinética Animal, Carrera y Calma
+* Temporalización: 6 semanas (mayo - junio).
+* Objetivos Específicos:
+   1. Regular la actividad motriz gruesa alternando entre carrera explosiva (run) y quietud estática (sleep / stop).
+   2. Emparejar representaciones tridimensionales de animales cotidianos (cat, dog) con sus onomatopeyas y movimientos.
+   3. Interiorizar dinámicas temporales de velocidad contrastando fast y slow.
+   4. Asimilar el contraste de oclusión sonora al final de palabra (/ɡ/ en dog frente a la oclusiva sorda /k/ en duck).
+* Vocabulario Nuclear Diana (5 palabras):
+   1. Dog /dɒɡ/
+   2. Cat /kæt/
+   3. Run /rʌn/
+   4. Sleep /sliːp/
+   5. Stop /stɒp/
+* Acciones TPR Vinculadas: Correr levantando rodillas en el sitio o desplazándose en círculo (run); recostar la cabeza sobre las manos juntas cerrando los ojos con respiración profunda fingida (sleep); congelar el movimiento corporal inmediato (stop); estirarse en cuatro apoyos imitando a un gato arqueando el lomo (cat).
+* Realia y Recursos Sensoriales: Figuras grandes y pesadas de animales de plástico rígido y caucho natural, camas suaves de felpa para animales, correas de paseo textiles, mantas ligeras de apego.
+* Focalización Fonológica (vs. Gallego/Español): En español y gallego, las consonantes oclusivas sonoras finales (/b, d, ɡ/) prácticamente no existen en posición de coda final silábica y tienden a ensordecerse o elidirse25. El docente enfatiza la sonoridad de la oclusiva velar final sonora en dog /dɒɡ/ mediante la vibración laríngea perceptible al tacto, frente a la parada sorda de cat /kæt/.
+* Dinámica de Aula (Paso a Paso):
+   * Inicio: Animal dormido en su cesta. El maestro susurra en parentese: "Shh... the dog is sleeping! Sleep, little dog..."1.
+   * Desarrollo: Juego de vigilia y carrera en la sala de psicomotricidad: "Wake up, dog! Run, dog, run! Fast, fast, fast!". Los niños corren. El docente grita suavemente: "Night time! Sleep!". Los niños se tumban inmediatamente en el suelo en reposo absoluto8.
+   * Cierre: Acariciar las figuras de los animales con movimientos lentos: "Soft cat... nice cat".
+* Afirmación en el Hogar (Micro-reto): En el camino a casa o en el pasillo del hogar, jugar a "Run, run, run... and stop!" deteniéndose en seco y celebrando la contención física compartida con sonrisas y elogio natural1.
+Unidad 6: Espacios, Recipientes y Movimiento Rítmico
+* Temporalización: 6 semanas (junio - julio / inicio de curso).
+* Objetivos Específicos:
+   1. Seguir directrices de acción de desplazamiento y percusión rítmica corporal ante go, stop y clap.
+   2. Introducir y extraer elementos esféricos (ball) dentro de contenedores cúbicos cerrados (box).
+   3. Experimentar sensaciones de masa y gravedad manipulando cajas con cargas diferenciadas (heavy y light).
+   4. Discriminar auditivamente la redondez labial de la vocal abierta /ɒ/ en box frente a la vocal semiabierta larga posterior /ɔː/ en ball.
+* Vocabulario Nuclear Diana (5 palabras):
+   1. Ball /bɔːl/
+   2. Box /bɒks/
+   3. Clap /klæp/
+   4. Go /ɡəʊ/
+   5. Stop /stɒp/
+* Acciones TPR Vinculadas: Aplaudir rítmicamente con ambas palmas frente al pecho (clap); iniciar la marcha vigorosa con braceo (go); parálisis postural total (stop); hacer rodar un objeto con ambas manos por el piso (roll/ball).
+* Realia y Recursos Sensoriales: Cajas de cartón corrugado de diferentes tamaños, pelotas de diferentes densidades (fieltro, caucho con rebote, lana maciza, cuero relleno de arena), recipientes plásticos apilables.
+* Focalización Fonológica (vs. Gallego/Español): Diferenciación del diptongo cerrado /əʊ/ en go frente a la vocal pura media /o/ de las lenguas romances peninsulares21. El docente enfatiza el deslizamiento articulatorio y el redondeo labial final: "G-o-w!".
+* Dinámica de Aula (Paso a Paso):
+   * Inicio: Una caja cerrada con una pelota pesada dentro. El docente la sacude generando sonido sordo: "What is in the box? Listen! A box!".
+   * Desarrollo: Los niños reciben una pelota. A la señal de "Go!" caminan botando la pelota. Al escuchar "Clap!" sujetan la pelota entre las rodillas o la apoyan y aplauden tres veces con fuerza8. Al escuchar "In the box!" corren a encestarla.
+   * Cierre: Levantamiento de cajas: "This box is heavy! Oof! Lift the box".
+* Afirmación en el Hogar (Micro-reto): Al guardar los juguetes en sus contenedores o cestos en la habitación infantil, cantar "Put the ball in the box! Go, go, go!" transformando el orden en una actividad compartida y alegre6.
+Tramo 3: Unidades Temáticas Detalladas para Niños de 3 a 6 Años
+El tramo de 3 a 6 años se divide operativamente en tres subniveles evolutivos (3-4 años, 4-5 años y 5-6 años) con dos unidades modulares de profundización cada uno, centradas en la pragmasintaxis, las fórmulas de mediación en el juego cooperativo y la conciencia fonológica activa12.
+
+
+
+
+
+
+Evolución de Tramo 3:
+Subnivel 3-4 Años: Juego Paralelo a Asociativo -> Fórmulas de Turno + Preposiciones Básicas
+Subnivel 4-5 Años: Juego Simbólico y Roles -> Conectores Causales (Why/Because) + Topología
+Subnivel 5-6 Años: Negociación y Discurso Complejo -> Argumentación + Rimas/Manipulación Fonémica
+
+Subnivel 3 a 4 Años: Construcción y Colaboración Emergente
+Unidad 3.1: Constructores en Acción y Relaciones Espaciales
+* Temporalización: 8 semanas.
+* Objetivos Didácticos Operativos:
+   1. Utilizar de forma verbal espontánea las fórmulas de alternancia lúdica "My turn" y "Your turn" durante el apilamiento y traspaso de bloques de madera22.
+   2. Ejecutar instrucciones motrices complejas que involucren las preposiciones espaciales in, on, under colocando objetos en estructuras15.
+   3. Responder a preguntas de identificación causal primaria con formulación gestual o telegráfica ante el interrogante "Why did it fall?"22.
+   4. Discriminar auditivamente la aliteración con el fonema bilabial sonoro /b/ a través de la rima motriz "Big blue blocks build bridges".
+* Vocabulario Estructurado:
+   * Tier 1 (Básico): Block, train, cup, fall, make.
+   * Tier 2 (Descriptivo/Relacional): Tall, broken, steady, push, rebuild.
+* Fórmulas Sociales de Juego: "My turn", "Your turn", "Help me, please", "Look at this!"12.
+* Morfosintaxis y Estructuras Diana: Estructuras preposicionales directas ("The car is on the block"; "Put it under the bridge"); oraciones coordinadas de agente + acción + resultado ("I push and it falls").
+* Conciencia Fonológica: Aliteración de oclusivas bilabiales /b/: "Bouncing big blue balls build tall towers". Rimas monosilábicas encadenadas: Block - Lock - Rock.
+* Guion de Juego Sociodramático en Aula (Rincón de Construcción):
+   * Escenario: Obra de ingeniería en la alfombra con cascos de cartón y bloques de madera sin pintar.
+   * Intervención Docente: El docente retiene una pieza clave de madera y modela con pausa expectante: "Do you need this tall block? Say: 'Help me, please!'". Cuando el infante lo solicita, el adulto responde: "Here you are! Now it is your turn to build"12.
+   * Resolución de conflicto: Ante una disputa por el mismo bloque, el docente introduce físicamente la mano como separador amigable y guía: "Let's share! First my turn, then your turn".
+* Dinámica Dialógica en Casa (PEER/CROWD):
+   * Lectura de apoyo: Cuentos sobre construcciones o puentes.
+   * Secuencia PEER aplicada: Progenitor señala el dibujo del camión: "Look, what is on the bridge?" (Prompt). Niño: "Truck!". Progenitor: "Yes, a big red truck is on the bridge!" (Evaluate & Expand). "Can you say: on the bridge?" (Repeat)14.
+Unidad 3.2: El Restaurante del Aula y la Rutina de Servir
+* Temporalización: 8 semanas.
+* Objetivos Didácticos Operativos:
+   1. Producir la fórmula social de entrega "Here you are" y la fórmula de cortesía receptiva "Thank you" en intercambios reales de alimentos simulados12.
+   2. Utilizar adecuadamente las preposiciones in (para el contenido de jarras y platos hondos) y on (para la superficie de mesas y bandejas).
+   3. Estructurar enunciados declarativos de demanda con el modelo "I want [sustantivo], please".
+   4. Identificar la rima terminal simple en patrones silábicos CVC (Pan - Can - Man).
+* Vocabulario Estructurado:
+   * Tier 1: Plate, spoon, fork, juice, bread.
+   * Tier 2: Delicious, hungry, empty, full, pour.
+* Fórmulas Sociales de Juego: "What do you want?", "Here you are", "Thank you", "You are welcome", "Delicious!".
+* Morfosintaxis y Estructuras Diana: Uso de cuantificadores y modificadores ("More juice in my cup", "A full plate on the table").
+* Conciencia Fonológica: Segmentación mediante palmas de palabras bisilábicas (ap-ple, wa-ter, ta-ble) y discriminación de rima en canciones de cocina: "Stir the pot, nice and hot!".
+* Guion de Juego Sociodramático en Aula (Rincón del Hogar / Cocina):
+   * Escenario: Cocina infantil con platos de loza blanca irrompibles, jarras de metal y delantales de tela.
+   * Intervención Docente: El educador se sienta a la mesa como comensal: "Good morning! I am very hungry. Can I have some soup, please?". Guía al niño para que sirva con el cucharón: "Pour the soup in the plate. Here you are! Thank you!"12.
+* Dinámica Dialógica en Casa (PEER/CROWD):
+   * Alimentación real en familia: Al pasar la jarra de agua o la bandeja de pan en la mesa, el adulto modela: "Can you pass the bread? Here you are! Thank you!", incentivando la interacción sin coerción1.
+Subnivel 4 a 5 Años: Juego Simbólico y Complejidad Causal
+Unidad 4.1: La Clínica Veterinaria y la Causalidad Fisiológica
+* Temporalización: 8 semanas.
+* Objetivos Didácticos Operativos:
+   1. Formular explicaciones causales con conectores subordinados ("The puppy is crying because his leg is hurt")22.
+   2. Interpretar y aplicar preposiciones relativas de posición tridimensional: behind y in front of.
+   3. Negociar roles y coordinar acciones de ficción compartida utilizando "Let's pretend I am the vet and you are the puppy"12.
+   4. Identificar auditivamente la aliteración sibilante fricativa /s/ ("Seven sick snakes sleep softly").
+* Vocabulario Estructurado:
+   * Tier 1: Dog, cat, hurt, leg, doctor/vet.
+   * Tier 2: Gentle, bandage, examine, healthy, temperature.
+* Fórmulas Sociales de Juego: "Can I help you?", "Where does it hurt?", "Wait for me", "Do not worry, be gentle".
+* Morfosintaxis y Estructuras Diana: Oraciones complejas de causa y efecto: "Why are you putting the bandage? Because the cat is sick"22. Secuenciación: "First we check the heart, then we wrap the bandage".
+* Conciencia Fonológica: Aliteración de /s/: "Six sick cats sitting on the soft sofa". Aislamiento del ataque silábico (onset) en palabras médicas: /d/ in doctor, /b/ in bandage.
+* Guion de Juego Sociodramático en Aula (Rincón de Veterinaria):
+   * Escenario: Mesa de auscultación con estetoscopios reales, vendas elásticas de algodón, jeringas de plástico sin aguja y peluches de animales heridos.
+   * Intervención Docente: El educador acerca un peluche vendado: "Doctor! The dog is sad. Why is he sad?". Espera la formulación causal del infante: "Because his paw is broken!". El docente expande: "Yes! His paw is hurt because he fell down. Let's put a soft bandage on it"14.
+* Dinámica Dialógica en Casa (PEER/CROWD):
+   * Interrogante CROWD de distanciamiento (Distancing): Durante la lectura de un cuento sobre animales: "The little kitten is scared of the doctor. Do you remember when we went to the pediatrician? How did you feel?"14.
+Unidad 4.2: La Estación Meteorológica y la Ropa del Explorador
+* Temporalización: 8 semanas.
+* Objetivos Didácticos Operativos:
+   1. Justificar la elección de prendas de abrigo y calzado basándose en condiciones meteorológicas simuladas ("I put on my boots because it is raining outside")22.
+   2. Utilizar preposiciones espaciales dinámicas (into, out of, over).
+   3. Negociar el uso compartido de equipamiento exterior mediante fórmulas de colaboración ("Let's share the umbrella")12.
+   4. Discriminar auditivamente la aliteración con la vocal corta abierta /æ/ frente a consonantes en rimas climáticas.
+* Vocabulario Estructurado:
+   * Tier 1: Rain, sun, coat, boots, hat.
+   * Tier 2: Windy, stormy, muddy, splashy, protect.
+* Fórmulas Sociales de Juego: "Look outside!", "It is raining hard", "Come under my umbrella", "Are you ready?".
+* Morfosintaxis y Estructuras Diana: Construcciones condicionales y temporales básicas ("When it rains, we need boots"; "Put your feet into the boots").
+* Conciencia Fonológica: Rima acumulativa: "Rain, rain, go away, come again another day". Discriminación de rima CVC: Hat - Cat - Mat - Wet.
+* Guion de Juego Sociodramático en Aula (Rincón del Explorador del Tiempo):
+   * Escenario: Panel con proyecciones lumínicas de lluvia y viento simulado con ventiladores suaves; percheros con chubasqueros reales, botas de agua y paraguas pequeños.
+   * Intervención Docente: El profesor reproduce sonido de truenos: "Listen! A stormy day! Put on your yellow boots! Why do we need boots?". Alumno: "Because of the water!". Docente: "That's right, because the water is deep and wet! Let's jump over the puddle!"15.
+* Dinámica Dialógica en Casa (PEER/CROWD):
+   * Pregunta CROWD abierta (Open-ended): Mirando por la ventana antes de salir a la calle: "What is happening to the sky today? What clothes should we choose?"14.
+Subnivel 5 a 6 Años: Argumentación, Emociones y Negociación de Pares
+Unidad 5.1: El Estudio de Arte Cooperativo y la Resolución de Conflictos
+* Temporalización: 8 semanas.
+* Objetivos Didácticos Operativos:
+   1. Emplear lenguaje verbal argumentativo estructurado para resolver la posesión de materiales compartidos ("I was using the scissors first, but you can have them next")12.
+   2. Describir estados emocionales y atributos físicos usando preposiciones complejas: between, next to, across.
+   3. Construir oraciones coordinadas de contraste discursivo ("I like this painting, but it needs more red paint on top").
+   4. Manipular fonemas mediante omisión y sustitución lúdica de consonantes iniciales en palabras CVC (Change /p/ in pen to /t/ -> ten).
+* Vocabulario Estructurado:
+   * Tier 1: Paint, paper, scissors, cut, draw.
+   * Tier 2: Bright, sticky, creative, blend, careful, smooth.
+* Fórmulas Sociales de Negociación: "Can we trade?", "I am not finished yet", "It is fair to share", "I feel proud of our work".
+* Morfosintaxis y Estructuras Diana: Expresión de intencionalidad y justificación modal: "I am blending yellow and blue because I want to make green"22. Ubicación: "The brush is between the cup and the paper".
+* Conciencia Fonológica: Sustitución de ataques silábicos: Red - Bed - Fed; Pot - Dot - Hot. Discriminación sutil de pares mínimos vocálicos: Pen /pen/ frente a Pan /pæn/21.
+* Guion de Juego Sociodramático en Aula (Mesa de Arte y Creación):
+   * Escenario: Caballetes dobles donde dos infantes comparten una única paleta de témperas y tres pinceles.
+   * Intervención Docente: El docente observa una vacilación entre dos alumnos por el bote de pintura azul. Interviene suministrando la fórmula mediadora: "Daniel, ask Lucas: 'Can I use the blue paint next to you?'". Daniel formula la petición. Lucas responde: "Yes, here you are!". El educador refuerza: "Thank you for being generous and sharing"12.
+* Dinámica Dialógica en Casa (PEER/CROWD):
+   * Pregunta CROWD de compleción (Completion): Al observar dibujos familiares compartidos: "We mixed the red and the blue, so the new color is... [purple]"14.
+Unidad 5.2: La Agencia de Viajes y las Aventuras del Mapa
+* Temporalización: 8 semanas.
+* Objetivos Didácticos Operativos:
+   1. Planificar itinerarios ficticios utilizando conectores de secuencia temporal ("First we fly by plane, then we take a bus across the mountains").
+   2. Describir localizaciones geográficas relativas en mapas tridimensionales empleando across, through, behind, next to.
+   3. Formular preguntas complejas de indagación social ("Where would you like to travel and why?")22.
+   4. Identificar y segmentar auditivamente palabras polisilábicas aislando cada fonema en palabras monosilábicas (segmentación fonémica /b/-/oʊ/-/t/).
+* Vocabulario Estructurado:
+   * Tier 1: Plane, train, map, ticket, suitcase.
+   * Tier 2: Journey, destination, passport, dangerous, explore, arrive.
+* Fórmulas Sociales de Juego: "Welcome aboard!", "May I see your ticket?", "Fasten your seatbelts", "Have a safe trip!".
+* Morfosintaxis y Estructuras Diana: Cláusulas temporales y causales entrelazadas: "We have to hurry because the train is leaving in front of us"22.
+* Conciencia Fonológica: Descomposición fonémica y rimas con contrastes vocálicos tensos/laxos: Ship /ʃɪp/ frente a Sheep /ʃiːp/21. Juegos de conteo silábico con palmadas: Des-ti-na-tion (4), Ti-cket (2).
+* Guion de Juego Sociodramático en Aula (Rincón de la Agencia de Transporte):
+   * Escenario: Mostrador de facturación con billetes impresos, sellos de tinta, maletas pequeñas reales y filas de sillas simulando los asientos de un avión o tren.
+   * Intervención Docente: El educador entrega un billete: "Good morning, traveler! Where are you going today?". Alumno: "I am going across the sea by plane!". Docente: "Why by plane?". Alumno: "Because it is faster than a boat!". Docente: "Wonderful! Please show your ticket to the officer"15.
+* Dinámica Dialógica en Casa (PEER/CROWD):
+   * Pregunta CROWD de recuerdo (Recall): Tras leer un cuento de aventuras: "Do you remember which vehicle the explorers used when they crossed the wide river?"14.
+Plan de Implementación Metodológica en el Aula de Educación Infantil
+Inserción en Rutinas Diarias Mediante Microintervenciones Distribuidas
+La articulación práctica de este currículo en la jornada escolar no debe basarse en lecciones magistrales ni en bloques de instrucción artificiales que interrumpan la continuidad experiencial del infante. Siguiendo las directrices operativas del modelo SparkLing™ formulado por el equipo de Kuhl y Ferjan Ramírez, la adquisición de una lengua meta se estructura a través de microintervenciones breves (con una dedicación acumulada de 30 a 45 minutos diarios), caracterizadas por una interacción social intensiva, una ratio baja de niños por adulto y una cadencia rítmica distribuida a lo largo de las semanas8. De forma complementaria, el enfoque de estimulación integrada en la vida diaria de Boese et al. (2023) exige que la exposición lingüística emerja en el seno de las rutinas de aula previamente consolidadas13.
+El ciclo diario se organiza en una secuencia natural de momentos pedagógicos:
+* Asamblea Matinal: Se inicia con canciones prosódicas que favorecen la sincronización afectiva y motora. El docente emplea el modelado en parentese para dar la bienvenida, contrastando conceptos de estado corporal y ambiente mediante objetos concretos ocultos en cajas sensoriales1.
+* Higiene y Alimentación: Durante los episodios de aseo y colación, el adulto acompaña las acciones con verbalizaciones contextualizadas, eliminando la presión evaluativa directa y ofreciendo descripciones sensoriales continuas sobre el agua tibia, el jabón suave o el sabor de los alimentos.
+* Transiciones Motrices: Los traslados entre espacios escolares (del aula al patio o a los aseos) se gestionan mediante directrices cinéticas de respuesta física total, transformando el desplazamiento pasivo en una oportunidad de integración semántico-motora regulada por el lenguaje oral.
+* Juego Libre Guiado y Rincones: El educador actúa como mediador en pequeños grupos, suministrando las estructuras pragmáticas necesarias para la resolución cooperativa de disputas y el enriquecimiento de los libretos de ficción que construyen los propios niños.
+Técnicas de Andamiaje Verbal y Repetición Distribuida
+Para evitar la fatiga mental y maximizar la retención a largo plazo en los circuitos de la corteza temporal y frontal, el equipo educativo implementa tres técnicas estandarizadas de mediación verbal1:
+1. Expansión Sintáctico-Semántica Continua: Cuando un infante emite un término aislado de manera espontánea (por ejemplo, al señalar una piedra y decir "Stone"), el docente evita respuestas valorativas vacías y amplía inmediatamente el enunciado con un descriptor dimensional o de textura tangible: "Yes, a cold, hard stone! Feel how smooth it is".
+2. Reformulación Contingente sin Juicio Negativo: En situaciones donde el niño formule un error sintáctico o morfológico, el profesional no recurre a la corrección explícita, sino que ofrece un eco correctivo que valida el mensaje e inserta la forma estándar: ante la emisión "The cat runned under bed", el docente responde afirmativamente: "Oh, the fast cat ran under the soft bed! Look at him go".
+3. Práctica de Recuperación Distribuida (Distributed Retrieval Practice): Cada conjunto léxico diana es sometido a un régimen temporal cuidadosamente planificado. Durante la semana de introducción, el bloque recibe entre 15 y 20 activaciones contextualizadas por jornada escolar; en las dos semanas subsiguientes, se reincorpora como soporte dentro de otras actividades de aula; finalmente, se reactiva de manera incidental pero regular en las semanas seis y diez del calendario escolar, garantizando la consolidación de la huella amnésica semántica17.
+Ecología del Espacio y Materiales Sensoriales
+El aula debe alejarse de la saturación visual pasiva representada por paneles de pictogramas abstractos o decoraciones tipográficas inaccesibles para la escala atencional del niño pequeño. La configuración física del espacio privilegia la estimulación tridimensional funcional:
+* Bandejas de Exploración Háptica: Contenedores dispuestos con sustratos naturales contrastados (tierra húmeda, harina tamizada, cortezas de árbol, piedras pulidas, agua teñida con tintes vegetales inocuos) donde el léxico descriptivo se experimenta a través de los sentidos del tacto y la propiocepción.
+* Rincón de Construcción y Representación Realista: Estaciones de juego abastecidas con herramientas funcionales a escala infantil y materiales de peso y resistencia reales (madera maciza, piezas metálicas ligeras, tejidos naturales de lino o lana), descartando el predominio de sucedáneos plásticos que desvirtúan la experiencia física del peso y la textura.
+* Área de Lectura Dialógica Inclusiva: Un espacio de lectura acústicamente protegido del ruido ambiental general, provisto de asientos anatómicos y estanterías frontales que exhiben álbumes ilustrados de alta factura artística, caracterizados por textos con cadencias rimadas, estructuras acumulativas y un soporte visual nítido y coherente con el léxico diana.
+Franja Horaria Orientativa
+	Dinámica de Aula
+	Intervención Metodológica del Docente
+	Hito Lingüístico y Fonológico Asociado
+	09:00 - 09:30
+	Montaje de Asamblea y Bienvenida Afectiva
+	Saludo individualizado en habla parentese, contacto ocular directo, dinámicas de turno
+	Activación receptiva, fórmulas de saludo, prosodia y deícticos deícticos (up, down)
+	09:30 - 10:15
+	Rincones de Exploración Sensorial y TPR
+	Facilitación directa en bandejas de realia; modelado cinético simultáneo
+	Asimilación de verbos de acción y magnitudes físicas (wet/dry, hard/soft)
+	10:15 - 10:45
+	Protocolo de Higiene Personal y Colación
+	Verbalización narrativa continua; andamiaje de solicitudes mediante pausas expectantes
+	Léxico alimentario y de higiene; cortesía pragmática (please, thank you)
+	10:45 - 11:30
+	Dinámicas Motrices en Patio o Espacio Abierto
+	Conducción de juegos de persecución y locomoción mediante mandatos auditivos
+	Fórmulas operativas cinéticas (freeze, run, stop, fast, slow)
+	11:30 - 12:15
+	Juego Sociodramático en Pequeños Grupos
+	Intervención como copiloto del juego simbólico; suministro de fórmulas contextuales
+	Negociación y alternancia de turno (my turn), preposiciones de espacio
+	12:15 - 12:45
+	Sesión Estructurada de Lectura Dialógica
+	Conducción mediante matrices interactivas de diálogo compartido (secuencias PEER y CROWD)
+	Fijación léxica de nivel intermedio (Tier 2), comprensión de relaciones causales
+	12:45 - 13:00
+	Asamblea de Cierre y Despedida
+	Recapitulación narrativa dialogada, rimas fonológicas métricas de balanceo motor
+	Conciencia aliterativa y discriminación de rimas; despedida pragmática
+	Guía de Afirmación Léxica en el Entorno Familiar
+Principios del Acompañamiento Domiciliario sin Pantallas
+Las investigaciones lideradas por Kuhl y corroboradas en los análisis de exposición digital en la primera infancia evidencian que el uso de pantallas electrónicas (dispositivos móviles, tabletas, programas televisivos de consumo pasivo) resulta inoperante para el aprendizaje léxico real en edades tempranas1. El acceso lingüístico a través de soportes bidimensionales carece de la sincronía sociomotora y la contingencia reactiva que requiere el cerebro infantil en desarrollo; por consiguiente, el tiempo de exposición pasiva a pantallas desplaza de manera lesiva los intercambios comunicativos directos en el hogar1. La variable con mayor correlación empírica con el dominio gramatical y la riqueza de vocabulario a los cinco y seis años es el volumen de turnos conversacionales establecidos cara a cara entre el menor y sus cuidadores primarios1.
+Resulta indispensable asesorar a las familias para que eliminen las actitudes evaluativas artificiales, caracterizadas por requerimientos coercitivos como pedir traducciones mecánicas o interrogar al menor sobre listas léxicas aisladas. Estas dinámicas inducen ansiedad comunicativa, elevan el filtro afectivo y desvirtúan la funcionalidad instrumental del lenguaje. El acompañamiento familiar debe concentrarse en el enriquecimiento lingüístico de las rutinas ordinarias del hogar (los momentos de la higiene, el cocinado conjunto, el baño nocturno o los desplazamientos urbanos), mediante la utilización de un habla cálida, expresiva y modulada con los recursos prosódicos del parentese1.
+Protocolo de Lectura Dialógica en el Hogar: Aplicación de PEER y CROWD
+Para que la interacción con los libros se traduzca en una adquisición léxica sistemática, las familias adoptan el modelo de Lectura Dialógica, validado en programas de soporte comunicativo temprano por Boese et al. (2023)24. Este protocolo descarta la lectura pasiva unidireccional y convierte el acto lector en una conversación interactiva guiada por dos dinámicas operativas:
+Secuencia de Interacción Inmediata (PEER)
+La familia articula su intervención conversacional página a página mediante una progresión en cuatro momentos sucesivos24:
+* Incitación Inicial (Prompt): El adulto formula una invitación verbal directa relacionada con una imagen concreta: "Look at the garden! What is jumping on the grass?"14.
+* Evaluación Receptiva (Evaluate): El progenitor escucha la respuesta infantil. Si el niño ofrece un monosílabo elemental ("Frog") o una producción fonéticamente inexacta, la respuesta se acoge con validación positiva implícita, evitando juicios de valor demeritorios24.
+* Expansión Semántica (Expand): El adulto retoma la emisión del niño, enriqueciéndola con descriptores sensoriales o espaciales contextualizados: "Yes! A little green frog is jumping high onto the big stone!"14.
+* Repetición Guiada (Repeat): El adulto invita al niño a retomar la versión expandida o a enunciar el vocablo dentro de un patrón lúdico: "Can you say jumping frog? Jump like the green frog!"14.
+Tipología de Interrogantes Estratégicos (CROWD)
+Durante el desarrollo del diálogo sobre las imágenes, el adulto distribuye de forma equilibrada cinco categorías de preguntas que desafían paulatinamente la cognición del niño14:
+* Completar la Frase (Completion): El lector omite deliberadamente la palabra final de una frase métrica o rimada recurrente: "The brown bear is sleeping inside the dark... [cave]"14.
+* Evocación Episódica (Recall): Preguntas dirigidas a estimular la memoria de trabajo y la secuencialidad narrativa: "Who helped the little rabbit find the missing key?"14.
+* Preguntas Abiertas (Open-ended): Interpelaciones orientadas a favorecer el discurso descriptivo complejo: "What is happening to all the water in the street now?"14.
+* Identificación Fáctica (Wh-questions): Preguntas de localización o identificación sobre la morfología de la imagen (What, Where, Who): "Where is the small puppy sleeping? Under the wooden chair!"14.
+* Distanciamiento Experiencial (Distancing): Interpelaciones que establecen puentes cognitivos entre el relato ficticio y la vivencia personal del menor: "The little cat was scared of the loud thunderstorm. Do you remember when it rained a lot yesterday? How did you feel?"14.
+Alianza Escuela-Familia: Cuaderno de Experiencias Sensoriales y Desafíos Semanales
+Con el fin de evitar tareas escolares estandarizadas que provoquen rechazo en el ámbito doméstico, la convergencia formativa entre el centro escolar y la familia se vehicula a través de estrategias comunicativas tangibles y de baja intensidad burocrática:
+* El Cuaderno Viajero Sensorial: Cada fin de semana, el menor transporta al hogar un cuaderno de tapas rígidas. La consigna para la familia no consiste en transcribir oraciones formales en la lengua meta, sino en recolectar un elemento tangible representativo de las actividades compartidas (un fragmento de corteza vegetal, una pluma de ave recogida en una plaza, una hoja seca con textura peculiar, un retazo de tela). El lunes, en la asamblea de aula, dicho objeto actúa como catalizador de la evocación verbal y el modelado descriptivo guiado por el docente.
+* Microdesafíos Comunicativos Semanales: Cada comienzo de semana, la institución escolar entrega una cápsula informativa breve (a través de una tarjeta impresa o una nota breve en los canales habituales de comunicación) sugiriendo un único reto funcional. Por ejemplo: "Esta semana, practiquemos la fórmula de cortesía 'Here you are' al compartir los cubiertos o el agua en la mesa" o "Durante el baño nocturno, juguemos a anticipar la temperatura del agua modelando 'Warm water' y 'Splash!'". De este modo, la lengua meta se integra en actos afectivos cotidianos desprovistos de artificialidad.
+Sistema de Observación y Seguimiento Formativo Continuo
+Evaluación Formativa Dinámica frente a Baterías Estandarizadas
+La determinación del nivel de competencia y progresión léxica en la primera infancia resulta distorsionada cuando se aplican pruebas psicométricas formales en condiciones descontextualizadas. Dichos instrumentos provocan frecuentemente inhibición tímica o mutismo adaptativo, sesgando los resultados reales. Siguiendo el paradigma de evaluación dinámica de procesos de fast-mapping y tácticas de aprendizaje propuesto por Böse y Elstrodt-Wefing (2023), el progreso lingüístico debe documentarse a partir de la observación participante en las ecologías habituales del aula13.
+La atención evaluadora se orienta preferentemente a la comprensión auditiva operativa —reflejada en la ejecución física contingente de directrices TPR, la dirección del seguimiento ocular y la manipulación autónoma de los objetos designados— y a la emergencia del vocabulario espontáneo en los intercambios libres entre iguales15. Asimismo, los fenómenos de alternancia de códigos lingüísticos (code-switching) y las desviaciones articulatorias normativas no se interpretan como deficiencias de aprendizaje, sino como manifestaciones naturales de la plasticidad y la reorganización de los sistemas léxicos bilingües en consolidación9.
+Rúbrica Cualitativa de Progresión Léxica
+La valoración del desarrollo lingüístico se estructura a través de un continuum compuesto por cuatro estadios de dominio funcional:
+1. Nivel Receptivo Pasivo: El menor requiere andamiaje gestual o modelado físico directo para interpretar el mensaje auditivo y responder a la demanda del contexto.
+2. Nivel de Comprensión Operativa: El niño ejecuta mandatos y responde a estímulos auditivos de forma autónoma, sin necesidad de pistas gestuales simultáneas por parte del educador.
+3. Nivel de Producción Guiada e Imitativa: El infante repite estructuras y formula términos léxicos dentro de rutinas estructuradas, canciones grupales o patrones conversacionales con soporte del adulto.
+4. Nivel de Uso Espontáneo y Pragmático: El niño recurre de manera autónoma e intuitiva al vocabulario, a las fórmulas comunicativas y a las estructuras causales durante el juego sociodramático libre con sus pares.
+Ámbito de Competencia
+	Estadio 1: Receptivo Pasivo
+	Estadio 2: Comprensión Operativa
+	Estadio 3: Producción Guiada
+	Estadio 4: Uso Espontáneo
+	Respuesta Motora Total (TPR)
+	Requiere demostración física previa del adulto para realizar acciones como run, stop, sleep.
+	Ejecuta la orden motora inmediata al escuchar la directriz auditiva sin mediación gestual.
+	Sincroniza la acción corporal con la verbalización imitativa del verbo en actividades musicales.
+	Emplea los verbos motores de forma imperativa para regular el juego colectivo con compañeros.
+	Identificación de Realia y Propiedades
+	Señala el objeto concreto solo tras la insistencia gestual y visual directa del educador.
+	Selecciona y acerca con precisión el objeto o textura solicitada entre distractores contrastados.
+	Denomina el objeto manipulado al ser interpelado mediante una secuencia estructurada de diálogo.
+	Describe por iniciativa propia las propiedades físicas de los objetos manipulados en el aula.
+	Percepción Fonológica Contrastiva
+	No discrimina operativamente diferencias sutiles entre fonemas ajenos al sistema romance.
+	Asocia de forma sistemática la señal acústica de pares mínimos con su referente físico exacto.
+	Imita patrones de duración vocálica y entonación melódica en rimas y cantos organizados.
+	Percibe y corrige lúdicamente anomalías rítmicas o aliteraciones en secuencias de juego verbal.
+	Fórmulas Sociales en el Juego Libre
+	Presencia pasiva de las dinámicas lúdicas sin activar mediaciones orales en el idioma meta.
+	Tolera la cesión de turnos o coopera cuando el adulto introduce la fórmula pragmática mediadora.
+	Verbaliza fórmulas sociales apoyado en el modelado contingente inmediato del docente.
+	Produce autónomamente fórmulas de negociación comunicativa para autorregular los conflictos de juego.
+	Morfosintaxis y Causalidad Emergente
+	Posiciona objetos por tanteo ciego, ignorando las instrucciones preposicionales emitidas.
+	Ubica elementos tridimensionales respetando nociones topológicas (in, on, under, behind).
+	Contesta a interrogantes causales básicos mediante combinaciones telegráficas y deícticos.
+	Formula argumentos causales completos para justificar sus acciones o necesidades durante el juego.
+	Instrumentos de Registro Ecológico: Escala Frecuencial y Registro Anecdótico
+Para que la documentación del aprendizaje sea sostenible dentro de la jornada escolar sin generar una sobrecarga burocrática ineficaz, el equipo docente aplica un sistema de observación muestral rotativo, focalizando la atención en una muestra de cuatro a cinco alumnos por jornada:
+* Escala Frecuencial de Turnos Comunicativos: Registro de cotejo que contabiliza las iniciativas orales y respuestas emitidas en la lengua meta durante periodos estandarizados de juego libre de 20 minutos de duración, clasificando las interacciones como inexistentes, asistidas mediante andamiaje del docente o totalmente autónomas1.
+* Registros Anecdóticos Contextualizados: Cuaderno de anotaciones breves donde el educador describe episodios comunicativos concretos, anotando la situación física desencadenante, la producción oral o corporal exacta del menor (con aproximación fonética en caso de contrastes no nativos) y las estrategias de soporte activadas por el entorno. La lectura longitudinal de estos registros suministra una visión precisa sobre el ritmo madurativo individual, posibilitando ajustes pedagógicos respetuosos con las trayectorias de cada infante16.
+Síntesis de Directrices Pedagógicas para la Práctica Docente
+La articulación de un plan curricular de vocabulario para infantes de 2 a 6 años, fundamentado en los principios neurobiológicos de Patricia Kuhl, las revisiones ecológicas de Thieme et al. y las intervenciones integradas de Jannika Boese, reclama prescindir de planteamientos formales sustentados en memorizaciones abstractas o repeticiones mecánicas1. La adquisición temprana del lenguaje es una propiedad emergente de la interacción social contingente y la exploración física del mundo1.
+La garantía de una implementación exitosa radica en la coherencia de sus componentes pedagógicos:
+* La restricción cuantitativa a pequeños bloques léxicos de alta funcionalidad comunicativa por unidad didáctica.
+* El anclaje sensoriomotor innegociable a través de verbos de acción corporal y objetos tridimensionales reales (realia).
+* La hiperarticulación prosódica a través del habla dirigida al infante (parentese), que capacita al sistema auditivo para percibir contrastes fonológicos ausentes en las lenguas romances de origen1.
+* El acompañamiento dialógico compartido en el seno del hogar, desprovisto de pantallas artificiales y focalizado en los turnos conversacionales y la lectura compartida1.
+En lugar de presionar artificialmente al niño para lograr producciones orales prematuras, la acción educativa debe salvaguardar la calidad del input auditivo y el valor de la comprensión sensoriomotora, permitiendo que la palabra hablada y la organización sintáctica surjan como la culminación biológica natural de un vínculo humano significativo1.
+Obras citadas
+1. Parent coaching increases conversational turns and advances infant, https://www.pnas.org/doi/10.1073/pnas.1921653117
+2. Patricia K. Kuhl – Publications | I-LABS - University of Washington, https://ilabs.uw.edu/patricia-k-kuhl-publications/
+3. Parentese in infancy predicts 5-year language complexity and, https://www.cambridge.org/core/journals/journal-of-child-language/article/parentese-in-infancy-predicts-5year-language-complexity-and-conversational-turns/75CEAE6BCB20B2B8DB7930349840783D
+4. Foreign language provision in English primary schools - Frontiers, https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2023.1063863/pdf
+5. The Relationship between screen time and expressive language, https://psyjournals.ru/en/journals/pse/archive/2025_n2/Oshchepkova_Shatskaya_et_al
+6. 'Parentese' helps parents, babies make 'conversation' and boosts, https://www.sciencedaily.com/releases/2020/02/200203151158.htm
+7. Parent coaching increases conversational turns and advances infant, https://pubmed.ncbi.nlm.nih.gov/32015127/
+8. Early Second Language Learning through SparkLing - I-LABS, https://ilabs.uw.edu/sites/default/files/2020_ferjanramirez_kuhl_earlysecondlanguage.pdf
+9. (PDF) The effects of foreign language programmes in early, https://www.researchgate.net/publication/355006216_The_effects_of_foreign_language_programmes_in_early_childhood_education_and_care_a_systematic_review
+10. a systematic review - UvA-DARE (Digital Academic Repository), https://pure.uva.nl/ws/files/88585903/The_effects_of_foreign_language_programmes_in_early_childhood_education_and_care_a_systematic_review.pdf
+11. Approaches to Early Childhood Language Education in Authentic, https://sshrbjournal.org/articles/458
+12. Rosli et al.: Aligning preschool English teaching with CEFR Pre-A1, https://qjssh.com/index.php/qjssh/article/download/1274/931
+13. Jannika Böse - SK - TU Dortmund, https://sk.reha.tu-dortmund.de/fachgebiet-sk/team/jannika-boese/
+14. Supporting second language acquisition of bilingual preschool, https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1149447/full
+15. Supporting second language acquisition of bilingual preschool, https://pmc.ncbi.nlm.nih.gov/articles/PMC10327566/
+16. Unraveling Individual Second-Language Acquisition in Late, https://pubs.asha.org/doi/10.1044/2026_JSLHR-25-00352
+17. (PDF) Early Second Language Learning through SparkLing, https://www.researchgate.net/publication/338765999_Early_Second_Language_Learning_through_SparkLing_Scaling_up_a_Language_Intervention_in_Infant_Education_Centers
+18. Psychological Approaches in Teaching English in Preschool, https://maktabgacha-va-maktab-talimi-jurnal.uz/index.php/jurnal/article/view/6558
+19. 1 | Introduction to Curriculum for Early Childhood Education, https://childdevelopment.org/docs/default-source/pdfs/intro_curriculumece_104_english11-8-19.pdf?sfvrsn=bbbac3d8_2
+20. Vowel Land – Emo-pron Phonics, https://emopronstories.com.ar/emopron-story-books/welcome-to-vowel-land/
+21. (PDF) Production of English Vowel Contrasts in Spanish L1 Learners, https://www.researchgate.net/publication/377891182_Production_of_English_Vowel_Contrasts_in_Spanish_L1_Learners_A_Longitudinal_Study
+22. Decontextualized Language Input and Preschoolers' Vocabulary, https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0033-1353444?innerWidth=412&offsetWidth=412&lang=en&device=mobile&id=
+23. Mind the Gap: Teacher Knowledge, Classroom Reality, and Early, https://www.mdpi.com/2227-7102/16/6/843
+24. Dialogic Reading: Having a Conversation about Books, https://www.readingrockets.org/topics/comprehension/articles/dialogic-reading-having-conversation-about-books
+25. There are phonetic patterns in vowel substitution errors in texts, https://www.changedyslexia.org/publications/pdfs/2012-LDW-Phonetic%20patterns%20dyslexia.pdf?v1.5.16
+26. Talk Like Thissss: Parentese and the Language Young Children Love, https://blogs.ntu.edu.sg/reading/2026/04/04/talk-like-thissss-parentese-and-the-language-young-children-love/
+27. What are the phonemic and phonological differences between, https://www.quora.com/What-are-the-phonemic-and-phonological-differences-between-Spanish-and-English
+28. Improving Education for Multilingual and English Learner Students, https://www.cde.ca.gov/SP/ML/documents/mleleducationch4.pdf
+29. The L2 Perception of Word-Initial Voicing Stop Contrasts in Spanish1, https://www.swarthmore.edu/sites/default/files/assets/documents/linguistics/GuangboChen-Thesis.pdf
+30. Production of English Vowel Contrasts in Spanish L1 Learners, https://loquens.revistas.csic.es/index.php/loquens/article/download/119/333/1940
+31. Supporting second language acquisition of bilingual preschool, https://pubmed.ncbi.nlm.nih.gov/37425181/
+32. Making Dialogic Reading Support More Accessible for Families, https://pubs.asha.org/doi/10.1044/2026_AJSLP-25-00477
+33. Unraveling Individual Second-Language Acquisition in Late, https://www.researchgate.net/publication/415350434_Unraveling_Individual_Second-Language_Acquisition_in_Late_Bilingual_Children_With_and_Without_Suspected_Developmental_Language_Disorder_A_Longitudinal_Approach
