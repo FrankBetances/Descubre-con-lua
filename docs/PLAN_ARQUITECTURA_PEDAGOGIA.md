@@ -236,6 +236,20 @@ existe: momento del día, una frase, qué hacer con las manos, qué no pedir.
 El cuaderno viajero de objetos reales se queda fuera de la app: es un objeto
 físico, no un registro.
 
+**El modelo.** Un JSON de formación, con perfil docente y perfil familia, en
+gallego y en castellano. Tres bloques: cómo funciona, los objetivos del
+tramo (los cuatro de 18 a 36 meses y los cuatro de 3 a 6, tal como los
+escribe el currículo de vocabulario), y qué no es un objetivo. El 80 % de
+órdenes con el cuerpo se escribe como criterio del texto. No es un campo
+numérico y no se calcula.
+
+**Cumplimiento del adulto.** Una lista cerrada de identificadores, distinta
+por perfil, citada desde ese JSON. Al marcarla, el aparato guarda el día
+sin hora y esos identificadores. No guarda texto libre, ni un porcentaje, ni
+nada de una criatura. Si la clave es nueva, el mismo cambio toca la política
+de privacidad y los dos gates de los ficheros (`premios.json` y
+`user_progress.json`).
+
 ### Dónde se ve, en los tres modos
 
 | Qué | Aula, 1.º ciclo | Aula, 2.º ciclo | Casa |
@@ -243,7 +257,9 @@ físico, no un registro.
 | Asamblea de cuatro fases | La de su día, sin franja de inglés | Igual que ahora: saludo, pulso, reto, calma | No aplica |
 | Frase y gesto del día | Dentro del día, incidental | Dentro del reto TPR, el grupo corto de la dosis | Las mismas palabras, con el juego de tres minutos |
 | Cuento dialógico | 3 láminas, casi todo señalar e imitar | 4 láminas, entra el acercar a la vida | El mismo cuento, en PEER: una pregunta por lámina, no las tres a la vez |
-| Ficha LSS | Una línea en la guía de antes de entrar: espera y no corrijas | La ficha completa en Guías / Yo | La misma ficha, con el ejemplo de casa |
+| Ficha LSS | Una línea en la guía de antes de entrar: espera y no corrijas | La ficha completa en El modelo | La misma ficha, con el ejemplo de casa |
+| El modelo | El espacio entero. Los objetivos escritos del texto empiezan a los 18 meses | El espacio entero, con los objetivos de 3 a 6 | El mismo espacio, con el reto de casa |
+| Cumplimiento | La lista del adulto al cerrar el día, sin casilla de criatura | La misma lista | La lista del reto de casa |
 | Nota de observación | No se muestra como nota | Una frase de qué mirar (cuerpo, canción, fórmula), sin casilla | No se muestra |
 
 Un botón que lleve al cuento no cumple el cuento. La tríada y la espera van
@@ -319,16 +335,36 @@ comunicación, no una materia; en 0-3 no hay sesión propia; lo que se puede
 mirar es el cuerpo, la canción y la fórmula, y no se anota. Sin mención a
 plataformas de notas ni a calificaciones.
 
-Hecho cuando esa guía está en gl y es y no añade ningún campo guardado.
+Hecho cuando esa guía está en gl y es, dentro de El modelo, y no añade ningún
+campo guardado sobre una criatura.
+
+### Lote 7. El espacio «El modelo»
+
+La puerta nueva en Eu (aula) y en Guías (casa). Las tres partes. La guía de
+dos minutos no se sustituye: sigue siendo la entrada corta.
+
+Hecho cuando las dos puertas, en los dos idiomas, enseñan cómo funciona el
+modelo, los objetivos del tramo y la frase de que el 80 % no se guarda.
+
+### Lote 8. La lista de cumplimiento del adulto
+
+La lista cerrada al terminar Hoy, en los dos perfiles, solo con los
+identificadores del mes piloto. El día se guarda sin hora.
+
+Hecho cuando se marca, se cierra, se vuelve a abrir y se ve lo mismo, y los
+dos gates de privacidad siguen verdes con la clave nueva —o sin clave nueva,
+si cupo en las que ya existen.
 
 Los lotes 2 y 3 comparten pantalla. El 4 y el 5 comparten el mes piloto. El
-1 y el 6 pueden ir solos. El catálogo de cien cuentos y las otras once
-unidades de vocabulario esperan a que estos seis estén vistos: el molde ya
-queda en el lote 2 y en el lote 4.
+1, el 6 y el 7 pueden ir juntos: son el espacio de formación. El 8 espera al
+4, porque no se marca un objetivo de una dosis que aún no existe. El
+catálogo de cien cuentos y las otras once unidades de vocabulario esperan a
+que estos ocho estén vistos: el molde ya queda en el lote 2 y en el lote 4.
 
 ## Qué queda fuera, a propósito
 
-- Grabar turnos, anecdotarios o una escala por criatura.
+- Grabar turnos, anecdotarios, una escala por criatura o el 80 % de las
+  órdenes. Ese porcentaje se explica en El modelo y no se calcula.
 - Una sesión de 45 minutos con tres adultos.
 - Tratar el inglés como asignatura, ficha o nota.
 - Sustituir las cuatro mil palabras por las treinta del tramo de 18 a 36
