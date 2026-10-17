@@ -1,0 +1,454 @@
+﻿Arquitectura Modular de Cuentos Dialógicos para la Adquisición Temprana del Inglés (2-6 Años): Base de Datos Combinatoria y Protocolo de Facilitación LSS
+Fundamentación Psicolingüística del Cuento Dialógico Bilingüe
+El diseño de narraciones para la primera infancia orientadas a la adquisición del inglés como lengua extranjera o adicional exige superar los formatos expositivos basados en la recepción pasiva1. La convergencia teórica entre los principios de narrabilidad visual (tellability) sistematizados por Lado y Hauth (2022) y la investigación experimental sobre lectura dialógica (Dialogic Reading, DR) documentada por Boese et al. (2023) demuestra que el desarrollo léxico y gramatical temprano se maximiza cuando el soporte textual funciona como un guion estructurado para la interacción contingente entre adulto y aprendiz2.
+En los estadios evolutivos comprendidos entre los 2 y los 6 años, el lapso de atención focalizada oscila de forma típica entre dos y cinco minutos, lo que desaconseja narraciones lineales prolongadas5. Por consiguiente, el cuento dialógico adopta el formato de micro-relato en tres o cuatro láminas dinámicas, concebidas no para ser leídas de corrido, sino para detonar intercambios conversacionales guiados2.
+La interacción se articula a partir de un modelo bilingüe balanceado fundamentado en el concepto de translanguaging pedagógico2. La narración de anclaje contextual, emocional y situacional se formula en la lengua vehicular compartida en el entorno escolar o familiar (español o gallego), garantizando que el menor decodifique la trama, experimente empatía afectiva y mantenga la seguridad cognitiva sin experimentar sobrecarga o bloqueo comunicativo2. Por su parte, la mascota del aula, Lúa, interviene como interlocutora de transición hacia la segunda lengua (L2). En los momentos de mayor pregnancia emocional o tensión dramática de la lámina, Lúa formula expresiones funcionales y unidades léxicas clave en inglés acompañadas de estímulos multimodales: apoyos cinéticos mediante respuesta física total (Total Physical Response, TPR), gestualidad deíctica y marcadores acústico-onomatopéyicos1.
+Este andamiaje se operacionaliza a través de dos mecanismos complementarios:
+1. Secuenciación de Disparadores CROWD: En cada lámina se inserta una batería de preguntas escalonadas que gradúan la demanda cognitiva en tres niveles sucesivos: señalamiento sensorio-motor directo (Nivel 1), imitación física y fonética encarnada (Nivel 2), y distanciamiento reflexivo con el entorno personal del niño (Nivel 3).
+2. Protocolos de Estrategias de Apoyo Lingüístico (LSS - Language Support Strategies): En sintonía con las intervenciones validadas por Boese et al. (2023), el mediador aplica de forma sistemática la pausa de espera de 5 segundos (wait-time) para respetar la latencia neuromotora del procesamiento infantil, seguida de intervenciones de recasting (reformulación indirecta y expansión sintáctica) contingentes a la respuesta verbal, paraverbal o gestual del menor4.
+Arquitectura de la Base de Datos Modular
+Para posibilitar la redacción sistemática de más de 100 cuentos independientes sin caer en redundancias conceptuales, el sistema se vertebra en tres módulos paramétricos: escenarios cotidianos, unidades léxicas funcionales en inglés y repertorios enactivos (gestos y onomatopeyas).
+Módulo A: Escenarios y Contextos Cotidianos
+Los entornos seleccionados corresponden a macro-espacios ecológicos de alta significatividad para las edades de 2 a 6 años, caracterizados por una composición gráfica limpia que aísla visualmente la acción central de los distractores periféricos, en estricto cumplimiento del criterio de tellability2.
+ID Escenario
+	Macro-Contexto
+	Rango Etario Óptimo
+	Núcleo Afectivo / Narrativo
+	Puntos de Anclaje Visual (Tellability)
+	ESC-01
+	The Bathroom / Bath Time
+	2 - 4 años
+	Higiene, juego hidrostático, confort
+	Bañera blanca, burbujas de jabón, toalla esponjosa, patito de goma
+	ESC-02
+	The Kitchen / Snack Time
+	2 - 5 años
+	Alimentación, nutrición, texturas
+	Frutas contrastadas, cuchara ergonómica, vaso antivuelco, mesa baja
+	ESC-03
+	The Bedroom / Bedtime
+	2 - 4 años
+	Apego, transición al sueño, sosiego
+	Cuna/cama con mantas, ventana con luna/estrellas, peluche abrazable
+	ESC-04
+	The Green Park / Playground
+	2 - 6 años
+	Psicomotricidad gruesa, aire libre
+	Columpio oscilante, tobogán curvado, césped brillante, charco pluvial
+	ESC-05
+	The School Garden / Nature
+	3 - 6 años
+	Exploración científica infantil, asombro
+	Insectos sobre hojas, pétalos de colores, tierra fértil, caracol
+	ESC-06
+	The Deep Blue Sea
+	3 - 6 años
+	Aventura submarina, fantasía lúdica
+	Peces iridiscentes, algas ondulantes, fondo arenoso, pulpo sonriente
+	ESC-07
+	The Toy Corner / Playroom
+	2 - 5 años
+	Socialización, permanencia del objeto
+	Bloques de construcción, tren de madera, caja clasificadora, pelota
+	ESC-08
+	The Farm Meadow
+	2 - 6 años
+	Curiosidad zoológica, sonidos de campo
+	Animales de granja, vallas de madera rústica, gavilla de paja, barro
+	Módulo B: Vocabulario Núcleo y Chunks Funcionales en Inglés
+Las unidades de la L2 se articulan como paquetes léxico-sintácticos fijos (lexical chunks) vinculados a actos ilocutivos elementales. Se evita deliberadamente el vocabulario aislado para propiciar patrones sintácticos naturales desde la edad preescolar9.
+ID Léxico
+	Dominio Semántico
+	Target Words (L2)
+	Chunk Funcional de Lúa
+	Complejidad Gramatical
+	LEX-01
+	Animales Acuáticos
+	Fish / Octopus
+	"Look! A little fish!"
+	Nivel Inicial (Palabra + demostrativo)
+	LEX-02
+	Animales de Granja
+	Cow / Duck / Sheep
+	"Hello, sleepy duck!"
+	Nivel Inicial (Fórmulas sociales + adjetivo)
+	LEX-03
+	Frutas y Comida
+	Apple / Milk / Banana
+	"Yummy, sweet apple!"
+	Nivel Inicial (Sensorialidad + núcleo nominal)
+	LEX-04
+	Acciones Físicas Básicas
+	Jump / Run / Sleep
+	"Time to sleep now!"
+	Nivel Intermedio (Estructura temporal infinitiva)
+	LEX-05
+	Emociones Primarias
+	Happy / Sad / Scared
+	"I feel so happy!"
+	Nivel Intermedio (Sujeto + verbo de estado)
+	LEX-06
+	Preposiciones Espaciales
+	Up / Down / Under
+	"Way up in the sky!"
+	Nivel Avanzado (Locuciones adverbiales espaciales)
+	LEX-07
+	Clima y Entorno
+	Sun / Rain / Wind
+	"Oh, cold rain falling!"
+	Nivel Avanzado (Participio en función predicativa)
+	LEX-08
+	Ropa y Esquema Corporal
+	Shoes / Hat / Hands
+	"Put on your warm shoes!"
+	Nivel Avanzado (Imperativo compuesto frasal)
+	Módulo C: Anclajes Kinestésicos, Gestos TPR y Onomatopeyas Acústicas
+El principio de cognición encarnada sostiene que el procesamiento semántico infantil se optimiza cuando la señal acústica coocurre con una respuesta motora coordinada1. Cada emisión en L2 se empareja de modo indisoluble con un patrón kinestésico estandarizado.
+ID Acción
+	Tipología
+	Onomatopeya Fonética
+	Gesto TPR / Respuesta Kinestésica
+	Función de Aprendizaje Embodied
+	ACT-01
+	Hidrodinámica
+	"Splash, splash!"
+	Palmadas rítmicas y suaves sobre los muslos
+	Anclaje motor del sema acuático; fonación sibilante
+	ACT-02
+	Marcha Cautelosa
+	"Tiptoe, tiptoe!"
+	Caminata de dedos índice y corazón sobre la superficie
+	Conciencia temporal y modulación propioceptiva
+	ACT-03
+	Salto Discontinuo
+	"Hop, hop, stop!"
+	Botes rítmicos en el asiento y detención corporal súbita
+	Inhibición motora; fijación del imperativo de pausa
+	ACT-04
+	Ingesta Mecánica
+	"Munch, crunch!"
+	Movimiento exagerado de mandíbula frotando el vientre
+	Retroalimentación somatosensorial del campo de nutrición
+	ACT-05
+	Calma Somática
+	"Shhh... hush!"
+	Dedo índice alineado verticalmente a los labios
+	Reducción de la activación arousal; modulación prosódica
+	ACT-06
+	Turbulencia Aérea
+	"Whoosh, whoosh!"
+	Brazos estirados trazando trayectorias ondulatorias amplias
+	Articulación de fricativas; noción cinemática del viento
+	ACT-07
+	Elevación Espacial
+	"Stretch up high!"
+	Extensión axial superior de brazos con manos abiertas
+	Mapeo cinestésico de la deixis vertical (up)
+	ACT-08
+	Percusión Rítmica
+	"Knock, knock! Tap!"
+	Nudillo percutiendo suavemente sobre la lámina
+	Marcador auditivo de contacto y causalidad física
+	Modelo Combinatorio y Matriz de Ensamblaje Narrativo
+El ensamblaje sistemático de relatos no surge de la improvisación libre, sino de una formulación combinatoria exhaustiva. Cada cuento constituye una trayectoria formal a través del espacio de estados configurado por la arquitectura modular.
+Formulación Matemática del Espacio Narrativo
+Sea el espacio muestral de cuentos dialógicos    definido como el producto cartesiano de cuatro conjuntos formales:
+  
+
+Donde:
+*    representa el espacio de Escenarios Contextuales (  ).
+*    representa el conjunto de Desafíos o Conflictos Narrativos Inmediatos (  : Ocultamiento de objeto, Obstáculo de desplazamiento, Necesidad biológica/afectiva, Pérdida/Búsqueda, Descubrimiento inesperado).
+*    representa el conjunto de Anclajes Kinestésicos y Onomatopeyas (  ).
+*    representa el repertorio de Modos de Resolución Cooperativa (  : Abrazo/Contacto de apego, Celebración rítmica conjunta, Consumo placentero, Transición al reposo/calma).
+El número total de historias narrativas únicas que este núcleo genera es:
+  
+
+Incluso estratificando de manera estricta el universo narrativo en subconjuntos disjuntos para respetar los dos sub-ciclos evolutivos (2-3 años y 4-6 años), cada franja dispone de un potencial de 640 cuentos independientes, superando ampliamente el requerimiento de 100 narraciones plenamente operativas.
+Matriz Comparativa de Complejidad por Franja Etaria
+Las características neurolingüísticas divergentes entre los aprendices de 2 a 3 años (etapa de transición entre el habla holofrástica y las combinaciones de dos palabras) y los aprendices de 4 a 6 años (etapa de expansión morfosintáctica y comprensión de inferencias simples) demandan criterios compositivos rigurosamente diferenciados4.
+
+
+Criterio Pedagógico
+	Cohorte Temprana (2 a 3 Años)
+	Cohorte de Consolidación (4 a 6 Años)
+	Estructura y Extensión
+	Cuentos de 3 láminas. Causalidad directa e inmediata ligada a la permanencia del objeto.
+	Cuentos de 4 láminas. Secuencia temporal compleja: motivación, peripecia y desenlace.
+	Exposición Léxica en L2
+	1 o 2 unidades léxicas (target words) repetidas de forma circular en cada una de las láminas.
+	3 a 4 unidades léxicas y funcionales integradas en estructuras oracionales coordinadas.
+	Distribución Prompts CROWD
+	70% Nivel 1 (Señalamiento y rastreo visual), 30% Nivel 2 (Imitación motora). Nivel 3 residual.
+	30% Nivel 1 (Detalles visuales finos), 40% Nivel 2 (Acciones complejas), 30% Nivel 3 (Juicio y memoria).
+	Objetivo Lingüístico LSS
+	Etiquetado contingente y expansión de palabras aisladas a sintagmas nominales elementales.
+	Modelado morfosintáctico de oraciones completas y reformulación correctiva de concordancias4.
+	Matriz de Ejes Combinatorios Maestros (Muestra Representativa de Producción)
+La siguiente tabla ilustra la distribución paramétrica a lo largo de diez ejes de producción que alimentan el repositorio de 100 historias:
+ID Historia
+	Cohorte
+	Escenario (E)
+	Desafío Focal (C)
+	Anclaje Kinestésico (A)
+	Resolución Dialógica (R)
+	Target Chunk de Lúa (L2)
+	HIS-001
+	2-3
+	ESC-01 (Bath)
+	Objeto oculto bajo la espuma
+	ACT-01 (Splash, splash)
+	Hallazgo y abrazo afectivo
+	"Look! Yellow duck! Splash!"
+	HIS-002
+	2-3
+	ESC-02 (Kitchen)
+	Apetito y espera de la merienda
+	ACT-04 (Munch, crunch)
+	Degustación compartida
+	"Sweet apple! Munch, munch!"
+	HIS-003
+	2-3
+	ESC-03 (Bed)
+	Inseguridad ante la penumbra
+	ACT-05 (Shhh... hush)
+	Arropamiento y calma
+	"Sleepy bear! Good night!"
+	HIS-004
+	2-3
+	ESC-04 (Park)
+	Charco pluvial en el sendero
+	ACT-03 (Hop, hop, stop)
+	Salto exitoso conjunto
+	"Big puddle! Jump, jump!"
+	HIS-005
+	2-3
+	ESC-07 (Play)
+	Pérdida de la pelota rodante
+	ACT-02 (Tiptoe, tiptoe)
+	Recuperación y aplauso
+	"Red ball! Roll, roll!"
+	HIS-006
+	4-6
+	ESC-06 (Sea)
+	Búsqueda de una caracola brillante
+	ACT-01 (Swim fast! Splash)
+	Cooperación con un pulpo
+	"Look at the little sea fish!"
+	HIS-007
+	4-6
+	ESC-05 (Nature)
+	Hormiga portando una hoja pesada
+	ACT-07 (Stretch up high)
+	Ayuda instrumental mutua
+	"Tiny ant! Push, push up!"
+	HIS-008
+	4-6
+	ESC-04 (Park)
+	Ráfaga eólica arrebata una prenda
+	ACT-06 (Whoosh, whoosh)
+	Rescate ágil del sombrero
+	"Cold wind! Catch the red hat!"
+	HIS-009
+	4-6
+	ESC-08 (Farm)
+	Animal dormido que debe despertar
+	ACT-08 (Knock, knock! Tap)
+	Saludo matutino festivo
+	"Wake up, big cow! Moo!"
+	HIS-010
+	4-6
+	ESC-02 (Kitchen)
+	Elaboración de una sopa mágica
+	ACT-04 (Mix, munch, crunch)
+	Celebración de sabores
+	"Hot soup! Stir it slow!"
+	Banco Estructurado de Preguntas Dialógicas CROWD Adaptadas
+El dispositivo pedagógico CROWD (originalmente concebido para evaluar Completion, Recall, Open-ended, Wh-prompts, Distancing) se reconceptualiza en el cuento dialógico bilingüe en una gradación de tres estratos funcionales, eliminando el riesgo de que el niño sufra mutismo selectivo inducido por la imposibilidad de estructurar oraciones extensas en la lengua meta5.
+Taxonomía y Fórmulas Operativas CROWD
+La estructura dialógica distribuye la carga cognitiva en función de la capacidad de respuesta neuromotriz y lingüística infantil:
+Nivel CROWD
+	Función Psicolingüística Primaria
+	Estructura Sintáctica Canónica (L2)
+	Respuesta Infantil Esperada
+	Andamiaje Docente Previsto
+	Nivel 1: Deíctico / Sensorial
+	Enfoque de atención conjunta; asociación término-objeto sin carga fonatoria
+	"Where is the [Noun]? Touch the [Color/Size + Noun]!"
+	Contacto físico deíctico directo sobre la lámina
+	Señalamiento conjunto o aproximación visual del docente
+	Nivel 2: Imitativo / Kinestésico
+	Descarga motora lúdica; producción onomatopéyica libre de filtro afectivo
+	"Can you [Verb] like the [Noun]? [Onomatopoeia]!"
+	Ejecución psicomotora y eco fonético no formalizado
+	Dramatización cinemática con modelado enfático (Motherese)
+	Nivel 3: Distanciamiento Vital
+	Extensión mental; puente translingüístico entre la ficción y el contexto biográfico
+	"Do you like [Activity/Food] too?" / "Where is your [Item]?"
+	Respuesta mixta: mono-verbal en L1/L2 o gestual afirmativa
+	Validación en L1 acoplada a recasting inmediato en L2
+	Catálogo de Formulaciones Dialógicas en Inglés
+A fin de mantener la coherencia lingüística del mediador durante la interacción, las formulaciones en inglés para los tres niveles CROWD se estructuran en los siguientes patrones verbales:
+   * Formulaciones para Nivel 1 (Señalamiento y Exploración):
+   * Discriminación unívoca: "Where is the little duck? Point with your finger!"
+   * Focalización cromática: "Touch the yellow star! Right here or over there?"
+   * Discriminación dimensional: "Look closely! Where is the big tree? Touch it!"
+   * Conteo perceptivo elemental: "One and two shoes! Can you touch both shoes?"
+   * Formulaciones para Nivel 2 (Imitación Gestual y Acústica):
+   * Cinética de desplazamiento: "Can you hop like the rabbit? Hop, hop, and freeze!"
+   * Atenuación prosódica: "Let's whisper like the quiet mouse: Shhh... soft and quiet!"
+   * Aumento de volumen e ímpetu: "Make a loud sound like the cow: Moo, moo! Loud voice!"
+   * Sincronización rítmica: "Let's tap on the table! Tap, tap, tap! Fast hands!"
+   * Formulaciones para Nivel 3 (Distanciamiento y Experiencia Vital):
+   * Anclaje somático inmediato: "The bear has warm socks. Look at your feet! Do you have socks today?"
+   * Preferencia alimentaria: "The rabbit loves orange carrots. Do you like apples or carrots?"
+   * Reconocimiento emocional: "Lúa is smiling because she is happy. Show me your happy face!"
+   * Rutina doméstica compartida: "The sun is going down. Do you have a story before you sleep at home?"
+Protocolo de Facilitación Lingüística LSS y Pauta de Recasting
+La efectividad del cuento dialógico reside en la calidad de la respuesta del adulto ante la iniciativa comunicativa del niño, superando las correcciones evaluativas tradicionales que desmotivan al aprendiz bilingüe en etapas incipientes4.
+Mecanismos Neurocognitivos de la Pausa de 5 Segundos
+Tras emitir un estímulo léxico a través de Lúa o plantear una pregunta CROWD, el facilitador debe suspender cualquier producción verbal durante una ventana mínima de cinco segundos continuos6.
+En la primera infancia, la conversión del estímulo acústico en una representación léxica de la L2 y la subsiguiente activación del programa motor articulatorio o gestual requieren un lapso electrofisiológico superior al de un adulto competente5. Quebrantar este silencio antes del umbral de 5 segundos reconfigura la interacción en un monólogo expositivo adulto, extingue la oportunidad del ensayo verbal y genera frustración comunicativa en el menor5. Durante la pausa, el facilitador debe sostener el contacto ocular cálido, exhibir una expresión expectante y mantener la postura orientada al libro5.
+Protocolo de Actuación y Recasting ante Emisiones Infantiles
+El recasting se define como la reactivación pedagógica de la emisión infantil en la que el adulto devuelve la idea expresada por el menor, pero normalizando la articulación fonética, corrigiendo la morfología o expandiendo el sintagma a una oración gramaticalmente completa, sin emitir juicios sancionadores explícitos4.
+
+
+Emisión / Conducta Inicial del Aprendiz
+	Diagnóstico Lingüístico
+	Protocolo de Mediación Docente
+	Guion Específico de Recasting y Expansión
+	Silencio absoluto y mirada al vacío (tras 5s de pausa)
+	Bloqueo receptivo o vacilación ante la demanda comunicativa
+	Andamiaje físico descendente; modelado de la acción sin sobrecargar con habla nueva5.
+	Adulto toma suavemente la mano del niño: "Look, Lúa touches the water! Splash, splash! Now you touch the water!"
+	Contacto deíctico correcto con el dedo, sin fonación
+	Decodificación receptiva exitosa; latencia en el acceso léxico productivo
+	Validación quinésica inmediata emparejada con etiquetado contingente en L25.
+	Adulto asiente enfáticamente: "Yes! You found the yellow fish! A bright yellow fish swimming fast!"
+	Respuesta en lengua materna (e.g., "¡Mira, un perro!")
+	Comprensión pragmática plena; mediación comunicativa anclada en L1
+	Validación afectiva en L1 complementada con translanguaging modelador hacia la L2 sin penalización2.
+	Adulto sonríe: "¡Sí, que lindo can! A happy dog! Hello, dog! Say hello to the dog: Hello!"
+	Producción holofrástica aislada en L2 (e.g., "Duck!")
+	Acceso léxico activo consolidado; nivel de palabra aislada
+	Expansión sintáctica: inclusión de la palabra en un sintagma con atributos y acción4.
+	Adulto abre las manos: "Yes, duck! The little yellow duck is swimming in the water! Splash, splash!"
+	Error fonológico o flexivo (e.g., "Fish sleeped" o "Pish")
+	Sobre-generalización gramatical o ajuste motor inmaduro en la L211
+	Corrective recast conversacional con realce prosódico en el segmento diana4.
+	Adulto enfatiza la forma correcta sin censura: "Yes, the fish slept! The blue fish is sleeping now. Shhh!"
+	Plantilla Normalizada de Guion Narrativo
+Para posibilitar la interoperabilidad y asegurar que cualquier docente o investigador pueda componer nuevas historias para la base de datos, cada cuento debe ceñirse a las siguientes especificaciones estructurales fijas:
+Encabezado Técnico y Metadatos
+   * Identificador del Cuento: Código alfanumérico estandarizado (e.g., HIS-001 a HIS-100).
+   * Título Bilingüe: Título formulado en la lengua vehicular y su correlato en inglés.
+   * Segmento Etario: Clasificación en franja temprana (2-3 años) o franja de consolidación (4-6 años).
+   * Configuración Paramétrica: Detalle del Escenario (  ), Conflicto (  ), Acción TPR (  ) y Modo de Resolución (  ).
+   * Inventario Léxico Funcional: Listado explícito de las palabras objetivo (target words) y la locución matriz que emitirá Lúa.
+Desarrollo Secuencial por Láminas (Láminas 1 a 3 o 4)
+      * Composición Gráfica (Tellability): Descripción técnica de los elementos pictóricos de la lámina, estableciendo el contraste cromático de la figura principal, la eliminación de detalles distractores y la visibilidad de la acción corporal2.
+      * Narración de Base (Translanguaging): Párrafo redactado en la lengua de anclaje contextual (gallego o español) que ambienta la escena, seguido de la intervención climática de Lúa en inglés articulada con apoyo multimodal2.
+      * Tríada de Preguntas CROWD: Enunciados exactos en inglés para activar el Nivel 1 (Señalamiento físico), Nivel 2 (Imitación corporal y onomatopéyica) y Nivel 3 (Distanciamiento hacia la vivencia del niño).
+      * Pauta LSS para la Facilitación: Instrucciones operativas para el adulto que pautan el mantenimiento de la pausa de espera de 5 segundos y los guiones de recasting adaptados a respuestas no verbales, producciones en L1 o aproximaciones fonológicas4.
+Cuentos Canónicos Ensamblados de la Base de Datos
+Los siguientes dos cuentos han sido compilados aplicando rigurosamente los parámetros modulares y las matrices combinatorias previamente expuestas, sirviendo como arquetipos de producción para las dos cohortes de edad.
+Cuento Dialógico para Cohorte de 2 a 3 Años: Lúa e o peixiño azul / Lúa and the Little Blue Fish
+      * Identificador: HIS-001
+      * Cohorte: 2 a 3 años
+      * Parámetros: ESC-06 (Deep Blue Sea) + Pérdida/Hallazgo + ACT-01 (Splash, splash) + Abrazo de apego
+      * Foco Léxico: Fish, Blue sea, Swim
+      * Tiempo Estimado: 2 minutos
+Lámina 1: O mar fondo e azul / The Deep Blue Sea (Planteamiento)
+La ilustración exhibe un fondo marino en azul cobalto de textura uniforme, sin recargos ornamentales. En la zona central flotan grandes burbujas transparentes con reflejos de luz sencillos. En la esquina inferior derecha asoma tímidamente la aleta ondulante de un pez amarillo.
+Hoxe Lúa pon as súas gafas de mergullo e mergúllase ata o fondo do mar. A auga está fresquiña e moi limpa. Todo ao redor é dunha fermosa cor azul! De socato, entre dúas pedras moi grandes, algo se move producindo un brillo especial. Lúa abre moito os ollos, bate as mans con entusiasmo e exclama:"Look! The sea! The blue sea!"
+Preguntas CROWD:
+      * Nivel 1 (Señalamiento): "Where is the blue sea? Touch the water with your finger!"
+      * Nivel 2 (Imitación motriz): "Can you move your arms like the soft waves? Swish, swish!"
+      * Nivel 3 (Distanciamiento): "Do you like the water when you splash in the bath?"
+Pauta LSS para la Facilitación:
+      * Pausa de espera: Aplicar una latencia estricta de 5 segundos tras formular la petición de tocar el agua. Mantener la mano propia abierta a un costado de la lámina sin anticipar la respuesta del menor.
+      * Guion de recasting: Si el menor toca el agua sin vocalizar, expandir: "Yes, water! You are touching the blue sea! Soft and cool!" Si el menor dice en gallego "Auga", validar y modelar: "¡Si, a auga do mar! Blue water! Splashing water!"
+Lámina 2: Onde está o pequeno peixe? / Where is the Little Fish? (Nudo)
+En el centro del plano aparece un pez azul y amarillo con ojos grandes y circulares que nada en zigzag. De su boca asciende una línea diagonal y limpia de tres burbujas esféricas.
+Mirade con atención quen sae a saudar por entre as algas! É un animal moi pequeniño que move a súa cola sen parar a un lado e a outro. Glu, glu, glu! Lúa achégase con moita cautela para non asustalo e estende os brazos. Lúa dille cun sorriso moi doce:"Hello, little fish! Swim, swim, little fish!"
+Preguntas CROWD:
+      * Nivel 1 (Señalamiento): "Where is the fish? Touch the little fish's tail!"
+      * Nivel 2 (Imitación motriz): "Can you swim like the fish? Show me your hands! Splash, splash!"
+      * Nivel 3 (Distanciamiento): "Look at the little fish. Is it big like an elephant or small?"
+Pauta LSS para la Facilitación:
+      * Pausa de espera: Mantener una suspensión verbal de 5 segundos mientras se modela el aleteo manual en las rodillas.
+      * Guion de recasting: Si el niño ejecuta el aleteo de manos de forma silente, afirmar con entusiasmo prosódico: "You are swimming so fast! Splash, splash! A fast little fish!" Si el niño articula la aproximación en L1 "Peixe", aplicar recast expansivo: "¡Si, un peixe bonito! A little blue fish swimming in the water!"
+Lámina 3: Amigos na auga! / Splashing Friends! (Desenlace)
+Lúa y el pececillo aparecen frente a frente en el plano principal, rozando afectuosamente sus narices. Del punto de contacto emergen pequeñas burbujas decorativas que enmarcan la complicidad afectiva entre ambos.
+Que inmensa ledicia! O peixiño perdeu todo o medo e nada en círculos ao redor das mans de Lúa. Lúa dálle un biquiño suave na punta do nariz. Ambos fan pequenas ondas na auga e rin con moita forza antes de despedirse. Lúa move a man no aire e di feliz:"Bye-bye, sweet fish! Splash, splash! Happy fish!"
+Preguntas CROWD:
+      * Nivel 1 (Señalamiento): "Touch Lúa's nose! And now touch the fish's nose!"
+      * Nivel 2 (Imitación motriz): "Let's blow big round bubbles! Blow with your mouth: Pop, pop, pop!"
+      * Nivel 3 (Distanciamiento): "Lúa loves the fish. Can you give yourself a big, warm hug?"
+Pauta LSS para la Facilitación:
+      * Pausa de espera: Guardar 5 segundos de espera tras emitir el sonido explosivo "Pop, pop".
+      * Guion de recasting: Si el menor vocaliza "Burbulla", devolver: "¡Unha burbulla grande! A big bubble that goes pop! Pop, pop, pop!" Si el infante cruza los brazos para abrazarse, reforzar kinestésicamente: "What a wonderful hug! Lúa is so happy with her little friend!"
+Cuento Dialógico para Cohorte de 4 a 6 Años: Lúa y el Viento Travieso / Lúa and the Windy Day
+      * Identificador: HIS-008
+      * Cohorte: 4 a 6 años
+      * Parámetros: ESC-04 (Green Park) + Ráfaga eólica despoja una prenda + ACT-06 (Whoosh, whoosh) + Ayuda zoológica colaborativa
+      * Foco Léxico: Cold wind, Red hat, Reach up high, Squirrel
+      * Tiempo Estimado: 3 minutos
+Lámina 1: Una tarde fresca en el parque / A Cold Windy Day (Planteamiento)
+Parque de otoño estructurado mediante planos nítidos. En el suelo hay montones de hojas amarillas y anaranjadas agrupadas en el margen inferior. Lúa se ubica en el tercio central, vestida con un abrigo azul marino y un llamativo gorro de lana rojo. Los árboles del fondo presentan sus copas inclinadas en una misma dirección, señalizando visualmente el vector cinético del viento2.
+Es una tarde fresca y luminosa en el parque de la ciudad. El suelo está alfombrado por cientos de hojas doradas que crujen bajo las suelas de los zapatos. Lúa lleva puesto su gorro rojo favorito, ese que abriga con suavidad sus orejas para que el frío no le haga estornudar. De repente, una ráfaga helada agita las ramas más altas de los árboles y hace volar las hojas en espirales veloces. Lúa tiene que sujetarse el abrigo y grita sorprendida:"Oh! It is so cold! The wind is blowing: Whoosh, whoosh!"
+Preguntas CROWD:
+      * Nivel 1 (Señalamiento): "Where is Lúa's warm red hat? Point to the red hat!"
+      * Nivel 2 (Imitación motriz): "Can you blow like the strong cold wind? Blow hard: Whoosh, whoosh!"
+      * Nivel 3 (Distanciamiento): "Look through the window of our school. Is the wind blowing outside today?"
+Pauta LSS para la Facilitación:
+      * Pausa de espera: Pausa de 5 segundos de cronómetro tras ejecutar el soplido inicial con los brazos extendidos.
+      * Guion de recasting: Si el aprendiz señala el gorro y dice "Rojo", expandir gramaticalmente: "Yes! It is a red hat! Lúa is wearing a warm red hat!" Si el alumno comenta en español "Hace mucho frío", expandir con foco en la L2: "Yes, it is very cold today! The cold wind is blowing: Whoosh!"
+Lámina 2: ¡El sombrero vuela por el aire! / The Flying Hat (Nudo)
+Se observan líneas dinámicas blancas que cruzan el cielo de izquierda a derecha. El gorro rojo flota suspendido en el aire a medio metro de una rama robusta. Lúa aparece dibujada en perspectiva contrapicada, con el cuerpo erguido de puntillas y los brazos extendidos verticalmente al máximo en un esfuerzo por atraparlo.
+Una corriente de aire sumamente juguetona se cuela entre las ramas y levanta el gorro rojo de la cabeza de Lúa. La prenda vuela como si fuese un pájaro de lana roja ascendiendo hacia el cielo del parque. El sombrero se encamina directo a las ramas más altas del roble más viejo. Lúa corre sobre la hierba intentando alcanzarlo con la punta de los dedos, estira todo su cuerpo y pide ayuda con firmeza:"Stop, wind, stop! My red hat is way up high! Reach up high!"
+Preguntas CROWD:
+      * Nivel 1 (Señalamiento): "Where is the tall tree? Touch the wooden branch where the hat is flying!"
+      * Nivel 2 (Imitación motriz): "Can you stretch your body up high? Stand on your tiptoes and reach up high!"
+      * Nivel 3 (Distanciamiento): "Have you ever lost something in the playground? What did you lose?"
+Pauta LSS para la Facilitación:
+      * Pausa de espera: Suspender la verbalización durante 5 segundos exactos mientras los aprendices imitan el estiramiento corporal hacia el techo de la sala.
+      * Guion de recasting: Si el infante estira los brazos y vocaliza "No llego", reformular constructivamente: "It is too high! We are stretching up high, but the hat is way up in the tree!" Si un niño dice "Hat", modelar sintagma complejo: "The red hat is flying up high in the cold air!"
+Lámina 3: Una ardilla muy ágil / The Squirrel's Fast Jump (Clímax)
+Sobre la rama principal del roble, una ardilla marrón de cola tupida sostiene el gorro rojo con sus patas delanteras, evitando que caiga en una poza de lodo. Lúa la observa desde abajo con las manos juntas sobre el pecho en actitud de admiración.
+Entre las hojas del roble asoma un hocico húmedo y un par de ojos brillantes como botones. ¡Es una pequeña ardilla marrón! Con un movimiento extraordinariamente veloz y certero, la ardilla salta entre dos ramas, estira sus patitas y atrapa el gorro rojo justo un segundo antes de que caiga en el barro del camino. Lúa contiene la respiración, aplaude entusiasmada y le pide desde abajo con tono amistoso:"Thank you, friendly squirrel! Jump down, please! Jump, jump down!"
+Preguntas CROWD:
+      * Nivel 1 (Señalamiento): "Where is the squirrel's fluffy tail? Touch her brown tail!"
+      * Nivel 2 (Imitación motriz): "Can you jump quickly like the squirrel? Jump, jump, and stop!"
+      * Nivel 3 (Distanciamiento): "Look at the squirrel. Are squirrels fast animals or slow animals?"
+Pauta LSS para la Facilitación:
+      * Pausa de espera: Aguardar 5 segundos tras modular la orden lúdica de salto con congelación corporal ("Jump, jump, stop").
+      * Guion de recasting: Si el alumno salta y dice "Rápido", reestructurar la elocución: "Yes! The squirrel is jumping so fast! You are jumping fast like a brown squirrel!" Si el alumno señala la cola en silencio, validar: "That is the squirrel's tail! A long, brown, fluffy tail!"
+Lámina 4: ¡Orejas abrigadas y una nueva amiga! / Warm and Happy (Desenlace)
+Lúa está sentada sobre un banco de madera con su gorro rojo bien calzado protegiendo sus orejas. A su lado descansa la ardilla comiendo una bellota. Ambas presentan sonrisas tranquilas en una atmósfera que evoca gratitud y seguridad.
+La ardilla bajó por la corteza del árbol con suma destreza y depositó el gorro en las manos de Lúa. Ahora Lúa vuelve a sentir sus orejas calientes y protegidas del viento. Para agradecerle su gran ayuda, Lúa busca en su bolsillo una castaña fresca y se la regala a su pequeña salvadora, quien la roe felizmente sentada en el banco. Lúa acaricia con un dedo a su nueva compañera y se despide contenta:"I feel so warm and happy! Goodbye, clever squirrel! See you soon!"
+Preguntas CROWD:
+      * Nivel 1 (Señalamiento): "Touch the squirrel's little hands! What is she holding? Touch the nut!"
+      * Nivel 2 (Imitación motriz): "Can you nibble the nut like a squirrel? Move your mouth: Munch, munch, crunch!"
+      * Nivel 3 (Distanciamiento): "Lúa is very happy because the squirrel helped her. Who helps you at home when you lose a toy?"
+Pauta LSS para la Facilitación:
+      * Pausa de espera: Guardar 5 segundos de observación atenta mientras los niños dramatizan el movimiento masticatorio de la mandíbula.
+      * Guion de recasting: Si el aprendiz responde nombrando a un familiar en lengua materna (e.g., "Mi mamá"), validar la carga afectiva y proyectar en L2: "Your mom helps you! That is wonderful! Friends and moms help us, and we feel so happy!" Si el menor emite la onomatopeya "Crunch", expandir: "Munch, munch, crunch! The squirrel is eating a delicious brown nut!"
+Síntesis e Implicaciones para la Práctica Docente
+La viabilidad metodológica para producir un corpus de más de 100 cuentos dialógicos funcionales se consolida en la articulación simbiótica de la arquitectura paramétrica y el protocolo de interacción contingente2.
+Al transferir este diseño al aula de educación infantil, la práctica pedagógica debe regirse por tres pautas operativas fundamentales:
+      1. Garantía Incondicional del Tiempo de Espera: La pausa de 5 segundos tras cada detonante dialógico constituye el núcleo neuro-cognitivo de la metodología6. La precipitación del adulto clausura el procesamiento receptivo de la L2 y reduce la lectura a un formato monológico pasivo5.
+      2. Validación Sistemática Mediante Translanguaging: El empleo de la lengua vehicular del aula por parte del niño nunca debe interpretarse como un fallo instructivo, sino como una manifestación activa de competencia comunicativa que debe ser acogida afectivamente y devuelta en la lengua meta mediante recasting expansivo2.
+      3. Preservación de la Carga Perceptual Limpia (Tellability): Las ilustraciones deben preservar el principio de despojo visual, donde el objeto o acción verbalizado por Lúa concentre el contraste lumínico y cromático, evitando fondos abarrotados que dispersen la atención ejecutiva de los aprendices de 2 a 6 años2.
+La estandarización combinatoria de estos materiales asegura una base empírica uniforme para la adquisición temprana del inglés, aunando el rigor científico de la interacción dialógica con la calidez afectiva que demandan los primeros años escolares2.
+Obras citadas
+      1. A SYSTEMATIC REVIEW ON EFFECTIVE INSTRUCTIONAL, https://jurnalfkipuntad.com/index.php/elts/article/download/6899/3383
+      2. Revisión sistemática sobre las estrategias de enseñanza y, https://scielo.do/j/recie/a/nQrkxDsSj46GqzWHfw8XnHS/
+      3. Supporting second language acquisition of bilingual preschool, https://pubmed.ncbi.nlm.nih.gov/37425181/
+      4. Supporting second language acquisition of bilingual preschool, https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1149447/full
+      5. Teaching the Teachers About Language Support Strategies - Frontiers, https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.660750/full
+      6. Teaching the Teachers About Language Support Strategies - PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC8129529/
+      7. It takes two to tango - how teacher-child interactions help advance, https://pmc.ncbi.nlm.nih.gov/articles/PMC12533283/
+      8. validación de un instrumento para evaluar el desarrollo de, https://revista.redipe.org/index.php/1/article/download/2299/2295/3747
+      9. Supporting second language acquisition of bilingual preschool, https://pmc.ncbi.nlm.nih.gov/articles/PMC10327566/
+      10. Teaching Beginner ELLs Using Picture Books: Tellability - Ana Lado, https://books.google.com/books/about/Teaching_Beginner_ELLs_Using_Picture_Boo.html?id=jZhyAwAAQBAJ
+      11. Unraveling Individual Second-Language Acquisition in Late, https://www.researchgate.net/publication/415350434_Unraveling_Individual_Second-Language_Acquisition_in_Late_Bilingual_Children_With_and_Without_Suspected_Developmental_Language_Disorder_A_Longitudinal_Approach
