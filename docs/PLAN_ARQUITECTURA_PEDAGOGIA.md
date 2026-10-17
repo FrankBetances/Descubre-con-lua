@@ -5,6 +5,11 @@ textos de base. No cambia la app: dice qué pieza entra, en qué capa, y en qué
 orden. Lo que la app enseña sigue viviendo en JSON. Si este plan y el JSON no
 dicen lo mismo, manda el JSON.
 
+Este fichero es el contrato de datos. El recorrido de todo el producto —qué
+pantalla mejora, cuál no, y en qué ola— está en
+`docs/PLAN_MEJORA_INTEGRAL.md`. Si los dos no dicen lo mismo, se corrige el
+que se haya quedado atrás: no se elige uno en silencio.
+
 Los textos se leyeron enteros el 17 de octubre de 2026, desde los ficheros
 que llegaron a la sesión. No están copiados en el repositorio. Son estos:
 
