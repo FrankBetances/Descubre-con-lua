@@ -157,6 +157,14 @@ class Pasarela {
     await contenido.loadPhonicsTaxonomy();
     await contenido.loadCalendarioDias(cursoId: 'curso_0_2');
     await contenido.loadCurriculo50Meses();
+    // El núcleo del mes en Hoy (M3.10): las unidades y el registro que las
+    // resuelve, leídos aquí y no en la carrera de `asentar`.
+    await contenido.loadRexistroFrases();
+    for (final curso in CalendarioContenido.cursos) {
+      for (final mes in const [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]) {
+        await contenido.loadUnidadeDoMes(curso, mes);
+      }
+    }
     colocacions = File(CollocationsScreen.asset).readAsStringSync();
 
     store = CalendarioStore(overrideDirectory: _tmp.path);

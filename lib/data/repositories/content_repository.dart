@@ -991,6 +991,42 @@ class ContentRepository {
   PezaDaUnidade? pezaSync(String ref) =>
       resolverPeza(ref, programa: _programaTpr, rexistro: _rexistroFrases);
 
+  // --- LA UNIDAD DEL MES ---
+
+  final Map<String, UnidadeDoMes> _unidadesDoMes = {};
+
+  /// El mes del curso (1 es septiembre) de un mes del calendario, o `null` en
+  /// julio y agosto.
+  static int? ordenDoMes(int mesCalendario) {
+    final i = const [9, 10, 11, 12, 1, 2, 3, 4, 5, 6].indexOf(mesCalendario);
+    return i < 0 ? null : i + 1;
+  }
+
+  /// La unidad de [cursoId] en el mes del calendario [mesCalendario], leída una
+  /// vez. `null` en julio y agosto, o si no se pudo leer (queda en
+  /// [loadErrors]).
+  Future<UnidadeDoMes?> loadUnidadeDoMes(String cursoId, int mesCalendario) {
+    final orden = ordenDoMes(mesCalendario);
+    if (orden == null) return Future.value(null);
+    final clave = '$cursoId.$orden';
+    final ya = _unidadesDoMes[clave];
+    if (ya != null) return Future.value(ya);
+    return _loader.loadUnidadeDoMes(cursoId, orden).then<UnidadeDoMes?>((u) {
+      _unidadesDoMes[clave] = u;
+      return u;
+    }).catchError((Object e) {
+      _loadErrors.add(ContentLoadFailure(
+          ContentAssetLoader.unidadeDoMesPath(cursoId, orden), e.toString()));
+      return null;
+    });
+  }
+
+  /// La unidad si ya está leída.
+  UnidadeDoMes? unidadeDoMesSync(String cursoId, int mesCalendario) {
+    final orden = ordenDoMes(mesCalendario);
+    return orden == null ? null : _unidadesDoMes['$cursoId.$orden'];
+  }
+
   // --- IN-MEMORY & TEST HELPER METHODS ---
 
   /// Adds or updates an [Unidad] directly in memory (for tests and mocking).

@@ -9,10 +9,12 @@ import '../../../core/widgets/cabecera.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/models/dinamica_model.dart';
+import '../../../data/models/rexistro_frases_model.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../calendario/widgets/asemblea_do_dia.dart';
+import '../../calendario/widgets/nucleo_de_hoxe.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../cuentos/views/cuento_viewer_screen.dart';
 import '../../familias/widgets/selector_idade.dart';
@@ -128,6 +130,18 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
     });
     if (repo.programaTprSync == null) {
       repo.loadProgramaTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
+    // M3.10: el núcleo del mes va delante de las cinco del día. La unidad y
+    // el registro que lo resuelve, cada uno por su lado.
+    if (repo.unidadeDoMesSync(curso, _toca.dia.mesCalendario) == null) {
+      repo.loadUnidadeDoMes(curso, _toca.dia.mesCalendario).then((_) {
+        if (vixente()) setState(() {});
+      });
+    }
+    if (repo.rexistroFrasesSync == null) {
+      repo.loadRexistroFrases().then((_) {
         if (mounted) setState(() {});
       });
     }
@@ -264,6 +278,12 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
     final plan = curso?.planDoDia(
         _toca.dia.mesCalendario, _toca.dia.semana, _toca.dia.dia);
     final grupo = _grupo;
+    final unidade = widget.repository
+        .unidadeDoMesSync(widget.cursoId, _toca.dia.mesCalendario);
+    final nucleo = unidade == null
+        ? const <PezaDaUnidade>[]
+        : widget.repository.nucleoSync(unidade);
+    final tituloPalabras = isGl ? 'PALABRAS DE HOXE' : 'PALABRAS DE HOY';
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -349,25 +369,50 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Text(
-                        isGl ? 'PALABRAS DE HOXE' : 'PALABRAS DE HOY',
-                        style: const TextStyle(
-                          fontSize: 12.5,
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: 0.8,
-                          color: AppTheme.textSecondary,
+                      // M3.10 (D1): el núcleo del mes delante; las cinco
+                      // del día, plegadas debajo, para que la tarjeta no
+                      // crezca. Sin núcleo leído, la tarjeta de siempre.
+                      if (nucleo.isNotEmpty) ...[
+                        NucleoDeHoxe(
+                          nucleo: nucleo,
+                          language: lang,
+                          audioService: widget.audioService,
                         ),
-                      ),
-                      const SizedBox(height: 6),
-                      PalabrasDoDia(
-                        plan: plan,
-                        modeloDoDia: curso.modelo.dia(_toca.dia.dia),
-                        semana: curso.semana(
-                            _toca.dia.mesCalendario, _toca.dia.semana),
-                        language: lang,
-                        audioService: widget.audioService,
-                        detalle: false,
-                      ),
+                        const SizedBox(height: 10),
+                        PalabrasDoDiaPlegadas(
+                          titulo: tituloPalabras,
+                          language: lang,
+                          child: PalabrasDoDia(
+                            plan: plan,
+                            modeloDoDia: curso.modelo.dia(_toca.dia.dia),
+                            semana: curso.semana(
+                                _toca.dia.mesCalendario, _toca.dia.semana),
+                            language: lang,
+                            audioService: widget.audioService,
+                            detalle: false,
+                          ),
+                        ),
+                      ] else ...[
+                        Text(
+                          tituloPalabras,
+                          style: const TextStyle(
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 0.8,
+                            color: AppTheme.textSecondary,
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        PalabrasDoDia(
+                          plan: plan,
+                          modeloDoDia: curso.modelo.dia(_toca.dia.dia),
+                          semana: curso.semana(
+                              _toca.dia.mesCalendario, _toca.dia.semana),
+                          language: lang,
+                          audioService: widget.audioService,
+                          detalle: false,
+                        ),
+                      ],
                       Align(
                         alignment: Alignment.centerLeft,
                         child: TextButton(

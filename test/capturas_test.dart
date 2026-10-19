@@ -381,6 +381,8 @@ void main() {
         await contenido.loadCuentos();
         await contenido.loadDinamicas();
         await contenido.loadSteamUnits();
+        // La unidad de octubre: su núcleo va delante en las dos Hoy (M3.10).
+        await contenido.loadUnidadeDoMes('curso_0_2', 10);
       });
     }
 
