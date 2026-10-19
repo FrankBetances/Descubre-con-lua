@@ -95,6 +95,11 @@ run_gate "nothing asks the child to repeat, translate or say how it's said" \
 # 13 de las 133 órdenes estaban en el banco. Esto comprueba que lo que una
 # unidad cita existe, que su centro es el de la asamblea (D4) y que el núcleo
 # tiene el tamaño de su edad. Pasa a --estricto cuando estén las 50.
+# Nace del mismo módulo (M3.2): el inglés que no es palabra del banco vive en
+# un registro con id, gesto y voz. Se deriva de sus fuentes; si una orden
+# cambia en su asamblea y no se regenera, rojo.
+run_gate "phrase register in sync with its sources" \
+  python3 tools/xera_rexistro_frases.py --check
 run_gate "every month unit cites what exists and follows its assembly" \
   python3 tools/check_unidades.py
 # Nace del vocabulario inglés, que llegó del proyecto de origen con la

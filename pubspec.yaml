@@ -67,6 +67,10 @@ flutter:
     - assets/content/tpr/curso_3_4/
     - assets/content/tpr/curso_4_5/
     - assets/content/tpr/curso_5_6/
+    # El registro de frases (M3.2): todo el inglés que no es palabra del banco.
+    # Las unidades del mes lo citan por id, así que la app tiene que poder
+    # leerlo para enseñar la frase.
+    - assets/content/registro/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

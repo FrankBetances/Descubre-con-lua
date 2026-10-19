@@ -1,0 +1,1653 @@
+{
+  "_doc": "Generado por tools/xera_rexistro_frases.py; no se edita a mano. Las frases propias se escriben en registro/frases_propias.json.",
+  "frases": [
+    {
+      "id": "frase.formula.here-you-are",
+      "tipo": "formula",
+      "en": "Here you are!",
+      "accion": {
+        "gl": "Dar o obxecto coa man aberta",
+        "es": "Dar el objeto con la mano abierta"
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:184"
+    },
+    {
+      "id": "frase.formula.help-me-please",
+      "tipo": "formula",
+      "en": "Help me, please!",
+      "accion": {
+        "gl": "Estender as mans cara á persoa adulta",
+        "es": "Tender las manos hacia la persona adulta"
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:171"
+    },
+    {
+      "id": "frase.estructura.on-under",
+      "tipo": "estructura",
+      "en": "The car is on the block.",
+      "accion": {
+        "gl": "Pousar o coche enriba do bloque",
+        "es": "Poner el coche encima del bloque"
+      },
+      "nota": {
+        "gl": "In, on, under: dentro, enriba e debaixo. Primeiro o obxecto, despois a palabra.",
+        "es": "In, on, under: dentro, encima y debajo. Primero el objeto, después la palabra."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:172"
+    },
+    {
+      "id": "frase.estructura.behind",
+      "tipo": "estructura",
+      "en": "The dog is behind the tree.",
+      "accion": {
+        "gl": "Agochar o can detrás da árbore",
+        "es": "Esconder el perro detrás del árbol"
+      },
+      "nota": {
+        "gl": "Behind e in front of: detrás e diante. Vaise co corpo antes que coa palabra.",
+        "es": "Behind y in front of: detrás y delante. Se va con el cuerpo antes que con la palabra."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:204"
+    },
+    {
+      "id": "frase.estructura.into",
+      "tipo": "estructura",
+      "en": "Put your feet into the boots.",
+      "accion": {
+        "gl": "Meter os pés nas botas",
+        "es": "Meter los pies en las botas"
+      },
+      "nota": {
+        "gl": "Into, out of, over: cara a dentro, cara a fóra, por riba. Son movementos.",
+        "es": "Into, out of, over: hacia dentro, hacia fuera, por encima. Son movimientos."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:229"
+    },
+    {
+      "id": "frase.estructura.because",
+      "tipo": "estructura",
+      "en": "I put on my boots because it is raining.",
+      "accion": {
+        "gl": "Calzar as botas e sinalar a chuvia pola fiestra",
+        "es": "Calzarse las botas y señalar la lluvia por la ventana"
+      },
+      "nota": {
+        "gl": "Because: porque. A docente di a razón; a criatura responde co corpo ou cunha palabra.",
+        "es": "Because: porque. La docente dice la razón; la criatura responde con el cuerpo o con una palabra."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:221"
+    },
+    {
+      "id": "frase.estructura.first-then",
+      "tipo": "estructura",
+      "en": "First we wash, then we eat.",
+      "accion": {
+        "gl": "Fregar as mans e despois levar a culler á boca",
+        "es": "Frotarse las manos y después llevar la cuchara a la boca"
+      },
+      "nota": {
+        "gl": "First… then…: primeiro… despois… Dúas accións, unha detrás da outra.",
+        "es": "First… then…: primero… después… Dos acciones, una detrás de otra."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:211"
+    },
+    {
+      "id": "frase.estructura.between",
+      "tipo": "estructura",
+      "en": "The brush is between the cup and the paper.",
+      "accion": {
+        "gl": "Pousar o pincel entre o vaso e o papel",
+        "es": "Poner el pincel entre el vaso y el papel"
+      },
+      "nota": {
+        "gl": "Between e next to: entre e ao lado de. Con tres obxectos na mesa.",
+        "es": "Between y next to: entre y al lado de. Con tres objetos en la mesa."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:248"
+    },
+    {
+      "id": "frase.estructura.across",
+      "tipo": "estructura",
+      "en": "We walk across the bridge.",
+      "accion": {
+        "gl": "Camiñar dun lado ao outro dunha liña no chan",
+        "es": "Caminar de un lado al otro de una línea en el suelo"
+      },
+      "nota": {
+        "gl": "Across e through: dun lado ao outro, e a través. Cunha corda ou un túnel.",
+        "es": "Across y through: de un lado al otro, y a través. Con una cuerda o un túnel."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:259"
+    },
+    {
+      "id": "frase.cmd.abril.0_2.01",
+      "tipo": "orde",
+      "en": "Rain, rain, little drops, tap, tap, tap",
+      "accion": {
+        "gl": "Pulverizar auga morna sobre o dorso das mans.",
+        "es": "Pulverizar agua tibia sobre el dorso de las manos.",
+        "en": "Spray warm water over the backs of the hands."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.abril.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.abril.0_2.02",
+      "tipo": "orde",
+      "en": "The sun comes up!",
+      "accion": {
+        "gl": "Ondear o tul amarelo sobre os seus rostros.",
+        "es": "Ondear el tul amarillo sobre sus rostros.",
+        "en": "Wave the yellow tulle above their faces."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.abril.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.abril.2_3.01",
+      "tipo": "orde",
+      "en": "We are tiny seeds under the ground",
+      "accion": {
+        "gl": "Manterse encollidos e quietos no chan.",
+        "es": "Mantenerse encogidos y quietos en el suelo.",
+        "en": "Stay curled up and still on the floor."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.abril.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.abril.2_3.02",
+      "tipo": "orde",
+      "en": "Bloom! Big bright flowers!",
+      "accion": {
+        "gl": "Erguerse milímetro a milímetro ata as puntas dos pés cos brazos en abano.",
+        "es": "Erguirse milímetro a milímetro hasta las puntas de los pies con los brazos en abanico.",
+        "en": "Rise millimetre by millimetre onto tiptoe with the arms fanned open."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.abril.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.decembro.0_2.01",
+      "tipo": "orde",
+      "en": "Ring the bells",
+      "accion": {
+        "gl": "Patexo alterno que fai soar os axóuxeres.",
+        "es": "Pataleo alterno que hace sonar los cascabeles.",
+        "en": "Alternate kicking that rings the bells."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.decembro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.decembro.0_2.02",
+      "tipo": "orde",
+      "en": "Warm... soft and warm",
+      "accion": {
+        "gl": "Envolver os ombreiros na toalla morna.",
+        "es": "Envolver los hombros en la toalla cálida.",
+        "en": "Wrap the shoulders in the warm towel."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.decembro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.decembro.2_3.01",
+      "tipo": "orde",
+      "en": "Loud bells! Shake fast!",
+      "accion": {
+        "gl": "Correr no sitio facendo soar a campaíña.",
+        "es": "Correr en el sitio haciendo sonar la campanilla.",
+        "en": "Run on the spot ringing the bell."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.decembro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.decembro.2_3.02",
+      "tipo": "orde",
+      "en": "Quiet bells... sleep",
+      "accion": {
+        "gl": "Agochar a campaíña e deitarse en silencio.",
+        "es": "Esconder la campanilla y tumbarse en silencio.",
+        "en": "Hide the bell and lie down in silence."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.decembro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.0_2.01",
+      "tipo": "orde",
+      "en": "Jump, jump, green frog! Ribbit!",
+      "accion": {
+        "gl": "Apoiar as patiñas do títere nos xeonllos do neno para que flexione as pernas.",
+        "es": "Apoyar las patitas del títere en las rodillas del niño para que flexione las piernas.",
+        "en": "Rest the puppet's feet on the child's knees so the legs bend in response."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.febreiro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.2_3.02",
+      "tipo": "orde",
+      "en": "Big heavy bear! Stomp!",
+      "accion": {
+        "gl": "Cuadrupedia pesada con mans e pés no chan.",
+        "es": "Cuadrupedia pesada con manos y pies en el suelo.",
+        "en": "Heavy four-legged walk with hands and feet on the floor."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.febreiro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.2_3.03",
+      "tipo": "orde",
+      "en": "Carnival Freeze!",
+      "accion": {
+        "gl": "Conxelar a postura do animal predilecto en silencio.",
+        "es": "Congelar la postura del animal predilecto en silencio.",
+        "en": "Freeze in the favourite animal's pose, in silence."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.febreiro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.maio.0_2.01",
+      "tipo": "orde",
+      "en": "Wash, wash, clean hands!",
+      "accion": {
+        "gl": "Sostén as mans do bebé e frótaas unha contra a outra.",
+        "es": "Sostén las manos del bebé y frótalas una contra la otra.",
+        "en": "Hold the baby's hands and rub them together."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.maio.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.maio.2_3.02",
+      "tipo": "orde",
+      "en": "Wash your belly!",
+      "accion": {
+        "gl": "Describir círculos sobre a camiseta á altura do embigo.",
+        "es": "Describir círculos sobre la camiseta a la altura del ombligo.",
+        "en": "Draw circles on the shirt at tummy height."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.maio.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.maio.2_3.03",
+      "tipo": "orde",
+      "en": "Dry your toes!",
+      "accion": {
+        "gl": "Inclinar o tronco adiante para secar os zapatos sen dobrar os xeonllos.",
+        "es": "Inclinar el tronco adelante para secar los zapatos sin doblar las rodillas.",
+        "en": "Bend forward to dry the shoes without bending the knees."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.maio.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.marzo.0_2.01",
+      "tipo": "orde",
+      "en": "Roll, roll, yellow circle!",
+      "accion": {
+        "gl": "Guiar a presión coas dúas mans para que sacuda o recipiente.",
+        "es": "Guiar la prensión con las dos manos para que sacuda el recipiente.",
+        "en": "Guide a two-handed grip so they shake the bottle."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.marzo.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.marzo.2_3.01",
+      "tipo": "orde",
+      "en": "Find a red circle! Touch it with your foot!",
+      "accion": {
+        "gl": "Localizar a peza no chan e pousar a punta do zapato enriba.",
+        "es": "Localizar la pieza en el suelo y posar la punta del zapato encima.",
+        "en": "Spot the shape on the floor and place the toe of the shoe on it."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.marzo.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.novembro.0_2.01",
+      "tipo": "orde",
+      "en": "Falling, falling, falling down!",
+      "accion": {
+        "gl": "Deixar caer as follas en choiva lixeira diante deles.",
+        "es": "Dejar caer las hojas en lluvia ligera delante de ellos.",
+        "en": "Let the leaves fall like light rain in front of them."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.novembro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.novembro.0_2.02",
+      "tipo": "orde",
+      "en": "Crunch, crunch!",
+      "accion": {
+        "gl": "Apertar unha folla seca xunto ao oído do neno.",
+        "es": "Apretar una hoja seca junto al oído del niño.",
+        "en": "Squeeze a dry leaf next to the child's ear."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.novembro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.novembro.2_3.01",
+      "tipo": "orde",
+      "en": "The wind blows! Whoosh!",
+      "accion": {
+        "gl": "Bater os brazos camiñando de puntillas.",
+        "es": "Batir los brazos caminando de puntillas.",
+        "en": "Flap the arms while walking on tiptoe."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.novembro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.novembro.2_3.02",
+      "tipo": "orde",
+      "en": "Crunch your leaves!",
+      "accion": {
+        "gl": "Agacharse rápido e fregar as follas contra o chan.",
+        "es": "Agacharse rápido y frotar las hojas contra el suelo.",
+        "en": "Crouch quickly and rub the leaves against the floor."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.novembro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.outubro.2_3.01",
+      "tipo": "orde",
+      "en": "Head, shoulders, knees and toes",
+      "accion": {
+        "gl": "Tocar cada parte seguindo un compás que acelera.",
+        "es": "Tocar cada parte siguiendo un compás que acelera.",
+        "en": "Touch each part following a beat that speeds up."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.outubro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.outubro.2_3.02",
+      "tipo": "orde",
+      "en": "Shake your hands!",
+      "accion": {
+        "gl": "Sacudir os brazos con forza.",
+        "es": "Sacudir los brazos con fuerza.",
+        "en": "Shake the arms vigorously."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.outubro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.setembro.2_3.01",
+      "tipo": "orde",
+      "en": "Everybody stand up!",
+      "accion": {
+        "gl": "Tracción suave da cinta para erguerse á vez.",
+        "es": "Tracción suave de la cinta para levantarse a la vez.",
+        "en": "Gentle pull on the band so everyone stands up together."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.setembro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.setembro.2_3.03",
+      "tipo": "orde",
+      "en": "Everybody sit down!",
+      "accion": {
+        "gl": "Sentarse con coidado sobre a alfombra.",
+        "es": "Sentarse con cuidado sobre la alfombra.",
+        "en": "Sit down carefully on the rug."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.setembro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.0_2.02",
+      "tipo": "orde",
+      "en": "Take it off!",
+      "accion": {
+        "gl": "Retirar a prenda suavemente.",
+        "es": "Retirar la prenda suavemente.",
+        "en": "Take the garment off gently."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.xaneiro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.2_3.01",
+      "tipo": "orde",
+      "en": "Put on your coat!",
+      "accion": {
+        "gl": "Deslizar os brazos por mangas imaxinarias e facer «Zzzip!».",
+        "es": "Deslizar los brazos por mangas imaginarias y hacer «Zzzip!».",
+        "en": "Slide the arms into imaginary sleeves and go «Zzzip!»."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.xaneiro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.2_3.02",
+      "tipo": "orde",
+      "en": "Stomp your boots in the puddles!",
+      "accion": {
+        "gl": "Tres pisotóns contundentes contra o chan.",
+        "es": "Tres pisotones contundentes contra el suelo.",
+        "en": "Three firm stomps on the floor."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.xaneiro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.xuno.0_2.01",
+      "tipo": "orde",
+      "en": "Waves go up, waves go down, blue sea",
+      "accion": {
+        "gl": "Ondear a tea creando fluxo de aire e ondada visual.",
+        "es": "Ondear la tela creando flujo de aire y oleaje visual.",
+        "en": "Wave the sheet to create airflow and a visual swell."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.xuno.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.xuno.2_3.02",
+      "tipo": "orde",
+      "en": "Giant waves!",
+      "accion": {
+        "gl": "Bater os brazos enteiros desde os ombreiros.",
+        "es": "Batir los brazos enteros desde los hombros.",
+        "en": "Beat the whole arms from the shoulders."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.xuno.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.xuno.2_3.03",
+      "tipo": "orde",
+      "en": "Little fish swimming under the sea!",
+      "accion": {
+        "gl": "Dous nenos designados gatean rápido por debaixo da tea.",
+        "es": "Dos niños designados gatean rápido por debajo de la tela.",
+        "en": "Two chosen children crawl quickly under the sheet."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.xuno.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.abril.4i.01",
+      "tipo": "orde",
+      "en": "Gallop like a horse in the meadow",
+      "accion": {
+        "gl": "Galope rítmico con cambio de apoio e mans nas rendas imaxinarias.",
+        "es": "Galope rítmico con cambio de apoyo y manos en las riendas imaginarias.",
+        "en": "Rhythmic gallop with alternating support and hands on imaginary reins."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.abril.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.abril.4i.02",
+      "tipo": "orde",
+      "en": "Walk heavily like a big cow",
+      "accion": {
+        "gl": "Marcha cuadrúpeda lenta cos apoios ben marcados.",
+        "es": "Marcha cuadrúpeda lenta con los apoyos bien marcados.",
+        "en": "Slow four-legged walk with clearly marked supports."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.abril.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.abril.4i.03",
+      "tipo": "orde",
+      "en": "Graze like a gentle sheep",
+      "accion": {
+        "gl": "Agachada suave e xesto de pacer coa cabeza preto do chan.",
+        "es": "Agachada suave y gesto de pacer con la cabeza cerca del suelo.",
+        "en": "Gentle crouch and grazing gesture with the head near the floor."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.abril.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.abril.5i.01",
+      "tipo": "orde",
+      "en": "Walk calmly like a sheep in the field",
+      "accion": {
+        "gl": "Marcha tranquila e dispersa polo espazo, sen présa.",
+        "es": "Marcha tranquila y dispersa por el espacio, sin prisa.",
+        "en": "Calm scattered walk through the space, unhurried."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.abril.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.abril.5i.02",
+      "tipo": "orde",
+      "en": "The hungry wolf wakes up: FREEZE!",
+      "accion": {
+        "gl": "Conxelación inmediata na postura en que se estaba.",
+        "es": "Congelación inmediata en la postura en que se estaba.",
+        "en": "Immediate freeze in the position reached."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.abril.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.abril.5i.03",
+      "tipo": "orde",
+      "en": "The wolf sleeps again: tiptoe away",
+      "accion": {
+        "gl": "Marcha silenciosa en puntas afastándose do centro.",
+        "es": "Marcha silenciosa de puntillas alejándose del centro.",
+        "en": "Silent tiptoe walk away from the centre."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.abril.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.abril.6i.01",
+      "tipo": "orde",
+      "en": "Where does the fox hide? Point with your elbows",
+      "accion": {
+        "gl": "Sinalamento cos cóbados cara ao recuncho elixido do aula.",
+        "es": "Señalamiento con los codos hacia el rincón elegido del aula.",
+        "en": "Elbow-pointing towards the chosen corner of the room."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.abril.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.abril.6i.02",
+      "tipo": "orde",
+      "en": "Under the stones! Slither like a snake",
+      "accion": {
+        "gl": "Reptación no chan ata a zona marcada como pedregal.",
+        "es": "Reptación en el suelo hasta la zona marcada como pedregal.",
+        "en": "Slithering on the floor to the area marked as stones."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.abril.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.abril.6i.03",
+      "tipo": "orde",
+      "en": "If it climbs the chestnut tree, crawl to the green mat",
+      "accion": {
+        "gl": "Escoita condicional e gateo ata a alfombra verde ou a azul.",
+        "es": "Escucha condicional y gateo hasta la alfombra verde o la azul.",
+        "en": "Conditional listening and crawling to the green or blue mat."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.abril.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.decembro.4i.01",
+      "tipo": "orde",
+      "en": "Put on your winter boots",
+      "accion": {
+        "gl": "Sentarse, flexionar a perna e mímica de calzar unha bota pesada.",
+        "es": "Sentarse, flexionar la pierna y mímica de calzar una bota pesada.",
+        "en": "Sit, bend the leg and mime pulling on a heavy boot."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.decembro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.decembro.4i.02",
+      "tipo": "orde",
+      "en": "Stomp in the snow",
+      "accion": {
+        "gl": "Marcha con pisadas marcadas e sonoras sobre a alfombra.",
+        "es": "Marcha con pisadas marcadas y sonoras sobre la alfombra.",
+        "en": "March with strong audible steps on the rug."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.decembro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.decembro.4i.03",
+      "tipo": "orde",
+      "en": "Tiptoe quietly to blow out the light",
+      "accion": {
+        "gl": "Marcha en puntas ata unha vela LED e sopro suave final.",
+        "es": "Marcha de puntillas hasta una vela LED y soplo suave final.",
+        "en": "Tiptoe to an LED candle and a final soft blow."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.decembro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.decembro.5i.01",
+      "tipo": "orde",
+      "en": "Dance freely while the drum sings",
+      "accion": {
+        "gl": "Desprazamento libre polo espazo seguindo o pulso do pandeiro.",
+        "es": "Desplazamiento libre por el espacio siguiendo el pulso del pandero.",
+        "en": "Free movement through the space following the drum beat."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.decembro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.decembro.5i.02",
+      "tipo": "orde",
+      "en": "Cold winter night: curl up and do not move",
+      "accion": {
+        "gl": "Acurruchamento no chan, inmóbil, coas mans baixo a meixela.",
+        "es": "Acurrucamiento en el suelo, inmóvil, con las manos bajo la mejilla.",
+        "en": "Curl up on the floor, motionless, hands under the cheek."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.decembro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.decembro.5i.03",
+      "tipo": "orde",
+      "en": "Sunlight! Stand up and stretch tall",
+      "accion": {
+        "gl": "Incorporación lenta e extensión axial completa cos brazos arriba.",
+        "es": "Incorporación lenta y extensión axial completa con los brazos arriba.",
+        "en": "Slow rise and full axial stretch with arms overhead."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.decembro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.decembro.6i.01",
+      "tipo": "orde",
+      "en": "Walk slowly and hold your friend's hand",
+      "accion": {
+        "gl": "Marcha lenta en parella con contacto manual constante.",
+        "es": "Marcha lenta en pareja con contacto manual constante.",
+        "en": "Slow paired walk with constant hand contact."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.decembro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.decembro.6i.02",
+      "tipo": "orde",
+      "en": "Turn left and step over the rope",
+      "accion": {
+        "gl": "Xiro á esquerda e paso elevado por riba dunha corda no chan.",
+        "es": "Giro a la izquierda y paso elevado por encima de una cuerda en el suelo.",
+        "en": "Left turn and a raised step over a rope on the floor."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.decembro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.decembro.6i.03",
+      "tipo": "orde",
+      "en": "Here you go: give the light to the next pair",
+      "accion": {
+        "gl": "Entrega da vela á seguinte parella coa fórmula pragmática.",
+        "es": "Entrega de la vela a la siguiente pareja con la fórmula pragmática.",
+        "en": "Hand the candle to the next pair with the pragmatic formula."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.decembro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.4i.01",
+      "tipo": "orde",
+      "en": "Shake your bells loudly",
+      "accion": {
+        "gl": "Axitación enérxica dos brazos por riba da cabeza.",
+        "es": "Agitación enérgica de los brazos por encima de la cabeza.",
+        "en": "Vigorous arm shaking above the head."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.febreiro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.4i.02",
+      "tipo": "orde",
+      "en": "Quiet: hands on your tummy",
+      "accion": {
+        "gl": "Detención inmediata coas mans pegadas ao abdome.",
+        "es": "Detención inmediata con las manos pegadas al abdomen.",
+        "en": "Immediate stop with hands pressed to the belly."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.febreiro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.4i.03",
+      "tipo": "orde",
+      "en": "Put on your animal mask and roar",
+      "accion": {
+        "gl": "Colocación dunha careta de madeira e ruxido coas mans en garra.",
+        "es": "Colocación de una careta de madera y rugido con las manos en garra.",
+        "en": "Put on a wooden mask and roar with clawed hands."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.febreiro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.5i.01",
+      "tipo": "orde",
+      "en": "Gallop like a wild horse",
+      "accion": {
+        "gl": "Galope rítmico con cambio de apoio e brazos recollidos.",
+        "es": "Galope rítmico con cambio de apoyo y brazos recogidos.",
+        "en": "Rhythmic gallop with alternating support and arms tucked in."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.febreiro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.5i.02",
+      "tipo": "orde",
+      "en": "The wolf is watching: FREEZE!",
+      "accion": {
+        "gl": "Parada tónica inmediata mantendo a postura do animal.",
+        "es": "Parada tónica inmediata manteniendo la postura del animal.",
+        "en": "Immediate postural hold keeping the animal's shape."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.febreiro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.5i.03",
+      "tipo": "orde",
+      "en": "Sneak quietly like a fox in the woods",
+      "accion": {
+        "gl": "Marcha silenciosa sobre metatarsos co tronco lixeiramente baixo.",
+        "es": "Marcha silenciosa sobre metatarsos con el tronco ligeramente bajo.",
+        "en": "Silent walk on the balls of the feet with the torso slightly low."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.febreiro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.6i.01",
+      "tipo": "orde",
+      "en": "Put your arms up and your left foot forward",
+      "accion": {
+        "gl": "Colocación postural seguindo a indicación oral do compañeiro.",
+        "es": "Colocación postural siguiendo la indicación oral del compañero.",
+        "en": "Postural placement following a peer's spoken direction."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.febreiro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.6i.02",
+      "tipo": "orde",
+      "en": "Your turn: now you are the sculptor",
+      "accion": {
+        "gl": "Intercambio de rol entre os dous membros da parella.",
+        "es": "Intercambio de rol entre los dos miembros de la pareja.",
+        "en": "Role swap between the two members of the pair."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.febreiro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.6i.03",
+      "tipo": "orde",
+      "en": "Look at the card and copy the shape",
+      "accion": {
+        "gl": "Lectura da tarxeta icónica e reprodución corporal da postura.",
+        "es": "Lectura de la tarjeta icónica y reproducción corporal de la postura.",
+        "en": "Read the icon card and reproduce the posture with the body."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.febreiro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.maio.4i.01",
+      "tipo": "orde",
+      "en": "Clap the rhythm on your chest",
+      "accion": {
+        "gl": "Palmadas sobre o peito marcando o pulso regular.",
+        "es": "Palmadas sobre el pecho marcando el pulso regular.",
+        "en": "Chest claps marking the steady beat."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.maio.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.maio.4i.02",
+      "tipo": "orde",
+      "en": "Cross your hands and clap with your friend",
+      "accion": {
+        "gl": "Palmada cruzada coa man do compañeiro pasando a liña media.",
+        "es": "Palmada cruzada con la mano del compañero pasando la línea media.",
+        "en": "Crossed clap with a partner's hand, passing the midline."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.maio.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.maio.4i.03",
+      "tipo": "orde",
+      "en": "Clap high, clap low",
+      "accion": {
+        "gl": "Palmada arriba da cabeza e palmada abaixo preto do chan.",
+        "es": "Palmada encima de la cabeza y palmada abajo cerca del suelo.",
+        "en": "Clap above the head and clap low near the floor."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.maio.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.maio.5i.01",
+      "tipo": "orde",
+      "en": "Pull the rope together: one, two, three!",
+      "accion": {
+        "gl": "Tracción cooperativa da corda coordinada ao conteo.",
+        "es": "Tracción cooperativa de la cuerda coordinada al conteo.",
+        "en": "Cooperative rope pulling coordinated to the count."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.maio.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.maio.5i.02",
+      "tipo": "orde",
+      "en": "Call your friend: come and help us!",
+      "accion": {
+        "gl": "Xesto amplo de chamada e incorporación dun novo neno á corda.",
+        "es": "Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda.",
+        "en": "Wide calling gesture and a new child joining the rope."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.maio.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.maio.5i.03",
+      "tipo": "orde",
+      "en": "Whisper the secret word to your friend",
+      "accion": {
+        "gl": "Murmurio ao oído do compañeiro sen que o escoite o resto.",
+        "es": "Susurro al oído del compañero sin que lo escuche el resto.",
+        "en": "Whisper into a partner's ear, unheard by the rest."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.maio.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.maio.6i.01",
+      "tipo": "orde",
+      "en": "Make your pattern: clap, jump, tap",
+      "accion": {
+        "gl": "Creación e execución dunha secuencia propia de tres movementos.",
+        "es": "Creación y ejecución de una secuencia propia de tres movimientos.",
+        "en": "Creating and performing an own three-movement sequence."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.maio.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.maio.6i.02",
+      "tipo": "orde",
+      "en": "Now the group copies your pattern",
+      "accion": {
+        "gl": "Reprodución grupal exacta da secuencia creada por un compañeiro.",
+        "es": "Reproducción grupal exacta de la secuencia creada por un compañero.",
+        "en": "Exact group reproduction of a peer's sequence."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.maio.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.maio.6i.03",
+      "tipo": "orde",
+      "en": "Pass the rhythm stick around the circle",
+      "accion": {
+        "gl": "Entrega da clave de madeira ao seguinte coa fórmula de quenda.",
+        "es": "Entrega de la clave de madera al siguiente con la fórmula de turno.",
+        "en": "Pass the wooden clave to the next child with the turn formula."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.maio.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.marzo.4i.01",
+      "tipo": "orde",
+      "en": "Curl up small like a tiny seed",
+      "accion": {
+        "gl": "Flexión completa no chan, cabeza recollida entre os xeonllos.",
+        "es": "Flexión completa en el suelo, cabeza recogida entre las rodillas.",
+        "en": "Full crouch on the floor, head tucked between the knees."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.marzo.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.marzo.4i.02",
+      "tipo": "orde",
+      "en": "Grow tall into a sunflower",
+      "accion": {
+        "gl": "Extensión axial progresiva ata quedar de pé cos brazos arriba.",
+        "es": "Extensión axial progresiva hasta quedar de pie con los brazos arriba.",
+        "en": "Progressive axial extension to standing with arms overhead."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.marzo.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.marzo.4i.03",
+      "tipo": "orde",
+      "en": "Dig the soil with your hands",
+      "accion": {
+        "gl": "Mímica de cavar coas dúas mans sobre a alfombra ou a terra.",
+        "es": "Mímica de cavar con las dos manos sobre la alfombra o la tierra.",
+        "en": "Mime digging with both hands on the rug or the soil."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.marzo.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.marzo.5i.01",
+      "tipo": "orde",
+      "en": "Fly like a busy bee",
+      "accion": {
+        "gl": "Desprazamento rápido cos brazos en batido curto e continuo.",
+        "es": "Desplazamiento rápido con los brazos en batido corto y continuo.",
+        "en": "Fast movement with short continuous arm beats."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.marzo.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.marzo.5i.02",
+      "tipo": "orde",
+      "en": "Find the red flower and land softly",
+      "accion": {
+        "gl": "Aterraxe suave sobre a marca vermella, axeonllado.",
+        "es": "Aterrizaje suave sobre la marca roja, arrodillado.",
+        "en": "Soft landing on the red mark, kneeling."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.marzo.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.marzo.5i.03",
+      "tipo": "orde",
+      "en": "Sleep in the flower until the sun wakes up",
+      "accion": {
+        "gl": "Quietude total sobre a marca ata escoitar a orde de espertar.",
+        "es": "Quietud total sobre la marca hasta escuchar la orden de despertar.",
+        "en": "Complete stillness on the mark until the waking cue."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.marzo.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.marzo.6i.01",
+      "tipo": "orde",
+      "en": "Fill the pot, plant the seed and water it",
+      "accion": {
+        "gl": "Secuencia autónoma de tres pasos: encher, sementar e regar.",
+        "es": "Secuencia autónoma de tres pasos: llenar, sembrar y regar.",
+        "en": "Autonomous three-step sequence: fill, sow and water."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.marzo.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.marzo.6i.02",
+      "tipo": "orde",
+      "en": "Here you go: pass the soil to your friend",
+      "accion": {
+        "gl": "Entrega do recipiente de terra coa fórmula pragmática.",
+        "es": "Entrega del recipiente de tierra con la fórmula pragmática.",
+        "en": "Hand over the soil container with the pragmatic formula."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.marzo.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.marzo.6i.03",
+      "tipo": "orde",
+      "en": "If the seed is big, put it in the brown pot",
+      "accion": {
+        "gl": "Escoita condicional e clasificación da semente segundo o tamaño.",
+        "es": "Escucha condicional y clasificación de la semilla según el tamaño.",
+        "en": "Conditional listening and seed sorting by size."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.marzo.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.novembro.4i.01",
+      "tipo": "orde",
+      "en": "The chestnut pops in the fire: jump!",
+      "accion": {
+        "gl": "Salto vertical con pés xuntos e caída sentada na alfombra.",
+        "es": "Salto vertical con pies juntos y caída sentada en la alfombra.",
+        "en": "Two-footed vertical jump landing seated on the rug."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.novembro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.novembro.4i.02",
+      "tipo": "orde",
+      "en": "Roll the pumpkin on the floor",
+      "accion": {
+        "gl": "Empurrar unha cabaza pequena polo chan coas dúas mans.",
+        "es": "Empujar una calabaza pequeña por el suelo con las dos manos.",
+        "en": "Push a small pumpkin along the floor with both hands."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.novembro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.novembro.4i.03",
+      "tipo": "orde",
+      "en": "Warm your hands and rub them fast",
+      "accion": {
+        "gl": "Fretar as palmas rapidamente e achegalas á cara sentindo a calor.",
+        "es": "Frotar las palmas rápidamente y acercarlas a la cara sintiendo el calor.",
+        "en": "Rub palms quickly and bring them to the face feeling the warmth."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.novembro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.novembro.5i.01",
+      "tipo": "orde",
+      "en": "Roll down the hill like a chestnut",
+      "accion": {
+        "gl": "Rodadura lateral controlada sobre colchoneta cos brazos xunto ao corpo.",
+        "es": "Rodadura lateral controlada sobre colchoneta con los brazos junto al cuerpo.",
+        "en": "Controlled lateral roll on the mat with arms along the body."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.novembro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.novembro.5i.02",
+      "tipo": "orde",
+      "en": "The hedgehog wakes up: FREEZE and curl up small!",
+      "accion": {
+        "gl": "Parada inmediata e encollemento en ovelo protexendo a cabeza.",
+        "es": "Parada inmediata y encogimiento en ovillo protegiendo la cabeza.",
+        "en": "Immediate stop and curl into a ball protecting the head."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.novembro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.novembro.5i.03",
+      "tipo": "orde",
+      "en": "Pop out and dance around the fire",
+      "accion": {
+        "gl": "Estirada explosiva e baile circular arredor dun punto central.",
+        "es": "Estirada explosiva y baile circular alrededor de un punto central.",
+        "en": "Explosive stretch and circular dance around a central point."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.novembro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.novembro.6i.01",
+      "tipo": "orde",
+      "en": "Mateo, find a round cold chestnut",
+      "accion": {
+        "gl": "Busca táctil dentro da bolsa ata atopar unha castaña redonda e fría.",
+        "es": "Búsqueda táctil dentro de la bolsa hasta encontrar una castaña redonda y fría.",
+        "en": "Tactile search inside the bag until a round cold chestnut is found."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.novembro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.novembro.6i.02",
+      "tipo": "orde",
+      "en": "Put the rough one here and the smooth one there",
+      "accion": {
+        "gl": "Clasificación en dous aros segundo a textura percibida coa man.",
+        "es": "Clasificación en dos aros según la textura percibida con la mano.",
+        "en": "Sorting into two rings by the texture felt with the hand."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.novembro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.novembro.6i.03",
+      "tipo": "orde",
+      "en": "Your turn: give the command to your friend",
+      "accion": {
+        "gl": "Toma de quenda: o escolar enuncia a orde e o compañeiro execútaa.",
+        "es": "Toma de turno: el escolar enuncia la orden y el compañero la ejecuta.",
+        "en": "Turn-taking: the child states the command and a peer performs it."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.novembro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.outubro.4i.01",
+      "tipo": "orde",
+      "en": "Blow like the autumn wind",
+      "accion": {
+        "gl": "Sopro suave e continuo mentres se eleva a gasa por riba da cabeza.",
+        "es": "Soplo suave y continuo mientras se eleva la gasa por encima de la cabeza.",
+        "en": "Soft continuous blow while lifting the scarf overhead."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.outubro.4i.02",
+      "tipo": "orde",
+      "en": "Spin around and fall down like a leaf",
+      "accion": {
+        "gl": "Xiro lento sobre o propio eixe e caída controlada sentados na alfombra.",
+        "es": "Giro lento sobre el propio eje y caída controlada sentados en la alfombra.",
+        "en": "Slow turn on the axis and controlled fall to sitting on the rug."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.outubro.4i.03",
+      "tipo": "orde",
+      "en": "Pick up two acorns and put them in the basket",
+      "accion": {
+        "gl": "Recoller dúas landras do chan e depositalas nun cesto de vimbio.",
+        "es": "Recoger dos bellotas del suelo y depositarlas en un cesto de mimbre.",
+        "en": "Pick up two acorns from the floor and drop them into the wicker basket."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.outubro.5i.01",
+      "tipo": "orde",
+      "en": "Hop like a squirrel and collect the chestnuts",
+      "accion": {
+        "gl": "Saltos curtos con pés xuntos e recollida rápida de castañas do chan.",
+        "es": "Saltos cortos con pies juntos y recogida rápida de castañas del suelo.",
+        "en": "Short two-footed hops and quick chestnut gathering from the floor."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.outubro.5i.02",
+      "tipo": "orde",
+      "en": "The wild boar is coming: FREEZE!",
+      "accion": {
+        "gl": "Parada tónica inmediata na postura exacta en que se estaba.",
+        "es": "Parada tónica inmediata en la postura exacta en que se estaba.",
+        "en": "Immediate postural hold in the exact position reached."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.outubro.5i.03",
+      "tipo": "orde",
+      "en": "Climb the oak tree and hide your nuts",
+      "accion": {
+        "gl": "Trepa simulada con brazos alternos e agachada final agochando as mans.",
+        "es": "Trepa simulada con brazos alternos y agachada final escondiendo las manos.",
+        "en": "Mimed climbing with alternating arms and a final crouch hiding the hands."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.outubro.6i.01",
+      "tipo": "orde",
+      "en": "Take a rough leaf and put it in the brown ring",
+      "accion": {
+        "gl": "Elección táctil dunha folla rugosa e traslado ata o aro marrón.",
+        "es": "Elección táctil de una hoja rugosa y traslado hasta el aro marrón.",
+        "en": "Tactile choice of a rough leaf and transfer to the brown ring."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.outubro.6i.02",
+      "tipo": "orde",
+      "en": "Noa, walk slowly and give the smooth leaf to your friend",
+      "accion": {
+        "gl": "Marcha lenta e entrega en man a un compañeiro nomeado.",
+        "es": "Marcha lenta y entrega en mano a un compañero nombrado.",
+        "en": "Slow walk and hand-to-hand delivery to a named peer."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.outubro.6i.03",
+      "tipo": "orde",
+      "en": "Count three leaves and jump over the ring",
+      "accion": {
+        "gl": "Conteo motriz de tres follas e salto con pés xuntos por riba do aro.",
+        "es": "Conteo motriz de tres hojas y salto con pies juntos por encima del aro.",
+        "en": "Motor counting of three leaves and a two-footed jump over the ring."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.setembro.4i.01",
+      "tipo": "orde",
+      "en": "Stand up and clap your hands",
+      "accion": {
+        "gl": "Erguerse amodo da alfombra e bater as palmas dúas veces.",
+        "es": "Levantarse despacio de la alfombra y dar dos palmadas.",
+        "en": "Stand up slowly from the rug and clap hands twice."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.setembro.4i.02",
+      "tipo": "orde",
+      "en": "Walk to the circle and sit down",
+      "accion": {
+        "gl": "Dar tres pasos cara ao centro do círculo e sentar coas pernas cruzadas.",
+        "es": "Dar tres pasos hacia el centro del círculo y sentarse con las piernas cruzadas.",
+        "en": "Take three steps toward circle center and sit cross-legged."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.setembro.4i.03",
+      "tipo": "orde",
+      "en": "Touch your knees and freeze!",
+      "accion": {
+        "gl": "Pousar as dúas mans sobre os xeonllos e manter o corpo quedo coma unha estatua.",
+        "es": "Posar las dos manos sobre las rodillas y mantener el cuerpo quieto como una estatua.",
+        "en": "Place both hands on knees and stay completely still like a statue."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.setembro.5i.01",
+      "tipo": "orde",
+      "en": "Walk like a sleepy bear with your heavy bag",
+      "accion": {
+        "gl": "Camiñar con pasos lentos e balanceo de ombros imitando levar unha mochila moi pesada.",
+        "es": "Caminar con pasos lentos y balanceo de hombros imitando llevar una mochila muy pesada.",
+        "en": "Walk with slow heavy steps and swaying shoulders carrying an imaginary heavy bag."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.setembro.5i.02",
+      "tipo": "orde",
+      "en": "The bell rings: run to the circle and freeze!",
+      "accion": {
+        "gl": "Trote rápido cara ao centro da alfombra e parada instantánea inmóbil coma unha estatua.",
+        "es": "Trote rápido hacia el centro de la alfombra y parada instantánea inmóvil como una estatua.",
+        "en": "Quick jog to circle center and instant motionless freeze like a statue."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.setembro.5i.03",
+      "tipo": "orde",
+      "en": "Open your bag, take out your smock and smile",
+      "accion": {
+        "gl": "Mímica de abrir a cremalleira, sacar o babi e amosar un sorriso amplo aos compañeiros.",
+        "es": "Mímica de abrir la cremallera, sacar el babi y mostrar una amplia sonrisa a los compañeros.",
+        "en": "Pantomime unzipping the bag, lifting the smock and smiling warmly to peers."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.setembro.6i.01",
+      "tipo": "orde",
+      "en": "Walk to the hook and hang up your coat",
+      "accion": {
+        "gl": "Camiñar con paso firme cara á percha baixa asignada e colgar o abrigo pola presilla.",
+        "es": "Caminar con paso firme hacia la percha baja asignada y colgar el abrigo por la presilla.",
+        "en": "Walk steadily to the assigned low hook and hang the coat by its loop."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.setembro.6i.02",
+      "tipo": "orde",
+      "en": "Take the smock, turn around and give it to Noa",
+      "accion": {
+        "gl": "Recoller o babi do cesto, dar un xiro completo sobre un mesmo e entregarllo ao compañeiro con ambas mans.",
+        "es": "Recoger el babi del cesto, dar un giro completo sobre uno mismo y entregárselo al compañero con ambas manos.",
+        "en": "Pick up the smock from the basket, turn completely around, and hand it to a peer with both hands."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.setembro.6i.03",
+      "tipo": "orde",
+      "en": "Sit on the green mat and freeze!",
+      "accion": {
+        "gl": "Desprazarse amodo cara ao cadrante verde da alfombra e adoptar postura inmóbil de acougo.",
+        "es": "Desplazarse despacio hacia el cuadrante verde de la alfombra y adoptar postura inmóvil de calma.",
+        "en": "Move gently to the green rug section and hold a quiet motionless posture."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.setembro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.4i.01",
+      "tipo": "orde",
+      "en": "Tap your knees like rain falling fast",
+      "accion": {
+        "gl": "Repique rápido coas dúas mans sobre os xeonllos.",
+        "es": "Repiqueteo rápido con las dos manos sobre las rodillas.",
+        "en": "Fast tapping with both hands on the knees."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xaneiro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.4i.02",
+      "tipo": "orde",
+      "en": "Jump over the big puddle",
+      "accion": {
+        "gl": "Salto con pés xuntos por riba dun aro de madeira.",
+        "es": "Salto con pies juntos por encima de un aro de madera.",
+        "en": "Two-footed jump over a wooden ring."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xaneiro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.4i.03",
+      "tipo": "orde",
+      "en": "Open your umbrella",
+      "accion": {
+        "gl": "Apertura ampla dos brazos sobre a cabeza como un paraugas.",
+        "es": "Apertura amplia de los brazos sobre la cabeza como un paraguas.",
+        "en": "Wide opening of the arms overhead like an umbrella."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xaneiro.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.5i.01",
+      "tipo": "orde",
+      "en": "Walk together like one big cloud",
+      "accion": {
+        "gl": "Marcha en grupo compacto, ombro con ombro, a ritmo lento.",
+        "es": "Marcha en grupo compacto, hombro con hombro, a ritmo lento.",
+        "en": "Compact group walk, shoulder to shoulder, at a slow pace."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xaneiro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.5i.02",
+      "tipo": "orde",
+      "en": "The storm is here: run and hide under the umbrella!",
+      "accion": {
+        "gl": "Dispersión rápida e agachada baixo un paraugas imaxinario.",
+        "es": "Dispersión rápida y agachada bajo un paraguas imaginario.",
+        "en": "Quick scatter and crouch under an imaginary umbrella."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xaneiro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.5i.03",
+      "tipo": "orde",
+      "en": "The sun comes back: shake the water off",
+      "accion": {
+        "gl": "Sacudida de brazos e tronco como quen escorre a auga.",
+        "es": "Sacudida de brazos y tronco como quien escurre el agua.",
+        "en": "Shaking of arms and torso like wringing out water."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xaneiro.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.6i.01",
+      "tipo": "orde",
+      "en": "Step slowly and don't spill the water into the river",
+      "accion": {
+        "gl": "Marcha moi lenta sobre banco baixo sostendo unha bandexa con auga.",
+        "es": "Marcha muy lenta sobre banco bajo sosteniendo una bandeja con agua.",
+        "en": "Very slow walk on a low bench holding a tray of water."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xaneiro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.6i.02",
+      "tipo": "orde",
+      "en": "Ready, steady, go: pass the tray to your friend",
+      "accion": {
+        "gl": "Entrega coordinada da bandexa a un compañeiro sen derramar.",
+        "es": "Entrega coordinada de la bandeja a un compañero sin derramar.",
+        "en": "Coordinated tray handover to a peer without spilling."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xaneiro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.6i.03",
+      "tipo": "orde",
+      "en": "If the water is cold, walk to the blue mat",
+      "accion": {
+        "gl": "Escoita condicional e desprazamento á alfombra azul ou á verde.",
+        "es": "Escucha condicional y desplazamiento a la alfombra azul o a la verde.",
+        "en": "Conditional listening and movement to the blue or the green mat."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xaneiro.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xuno.4i.01",
+      "tipo": "orde",
+      "en": "Row your boat through the big waves",
+      "accion": {
+        "gl": "Flexo-extensión alternada do tronco en parella, collidos das mans.",
+        "es": "Flexo-extensión alternada del tronco en pareja, cogidos de las manos.",
+        "en": "Alternating torso bend and extension in pairs, holding hands."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xuno.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xuno.4i.02",
+      "tipo": "orde",
+      "en": "Swim like a fast fish in the ría",
+      "accion": {
+        "gl": "Desprazamento polo chan con brazada alternada de peito.",
+        "es": "Desplazamiento por el suelo con brazada alternada de pecho.",
+        "en": "Movement along the floor with alternating breaststroke arms."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xuno.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xuno.4i.03",
+      "tipo": "orde",
+      "en": "Dive deep and find a white shell",
+      "accion": {
+        "gl": "Inmersión simulada e recollida dunha cuncha do chan.",
+        "es": "Inmersión simulada y recogida de una concha del suelo.",
+        "en": "Mimed dive and pick-up of a shell from the floor."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xuno.4_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xuno.5i.01",
+      "tipo": "orde",
+      "en": "Calm sea: move the cloth very slowly",
+      "accion": {
+        "gl": "Ondulación lenta e sostida da tea azul con ambas as mans.",
+        "es": "Ondulación lenta y sostenida de la tela azul con ambas manos.",
+        "en": "Slow sustained rippling of the blue cloth with both hands."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xuno.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xuno.5i.02",
+      "tipo": "orde",
+      "en": "Storm! Shake the sea with all your strength",
+      "accion": {
+        "gl": "Axitación enérxica da tea con movemento amplo de brazos.",
+        "es": "Agitación enérgica de la tela con movimiento amplio de brazos.",
+        "en": "Energetic shaking of the cloth with wide arm movement."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xuno.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xuno.5i.03",
+      "tipo": "orde",
+      "en": "The sea sleeps: put the cloth down and lie still",
+      "accion": {
+        "gl": "Depositar a tea no chan e deitarse inmóbil debaixo ou ao lado.",
+        "es": "Depositar la tela en el suelo y tumbarse inmóvil debajo o al lado.",
+        "en": "Lay the cloth down and lie still beneath or beside it."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xuno.5_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xuno.6i.01",
+      "tipo": "orde",
+      "en": "Noa, walk five steps and take the white shell",
+      "accion": {
+        "gl": "Conteo motriz de cinco pasos e recollida da cuncha nomeada.",
+        "es": "Conteo motriz de cinco pasos y recogida de la concha nombrada.",
+        "en": "Motor counting of five steps and pick-up of the named shell."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xuno.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xuno.6i.02",
+      "tipo": "orde",
+      "en": "If the shell is smooth, put it in the blue basket",
+      "accion": {
+        "gl": "Escoita condicional e clasificación táctil en dous cestos.",
+        "es": "Escucha condicional y clasificación táctil en dos cestos.",
+        "en": "Conditional listening and tactile sorting into two baskets."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xuno.6_infantil.json"
+    },
+    {
+      "id": "frase.cmd.xuno.6i.03",
+      "tipo": "orde",
+      "en": "Here you go. Thank you! Your turn",
+      "accion": {
+        "gl": "Intercambio pragmático completo entre dous escolares.",
+        "es": "Intercambio pragmático completo entre dos escolares.",
+        "en": "Full pragmatic exchange between two children."
+      },
+      "fonte": "asambleas_segundo_ciclo/asamblea.segundo_ciclo.xuno.6_infantil.json"
+    },
+    {
+      "id": "frase.dinamica.asemblea_pulso",
+      "tipo": "dinamica",
+      "en": "Welcome friends, sit in circle!",
+      "accion": {
+        "gl": "Abrir brazos e sentar en calma marcando o círculo coas mans.",
+        "es": "Abrir brazos y sentarse en calma marcando el círculo con las manos."
+      },
+      "fonte": "dinamicas_aula.json"
+    },
+    {
+      "id": "frase.dinamica.fonica_kinestesica",
+      "tipo": "dinamica",
+      "en": "Touch the sound, make the wave!",
+      "accion": {
+        "gl": "Tocar a letra na man e facer co brazo a onda do mar.",
+        "es": "Tocar la letra en la mano y hacer con el brazo la ola del mar."
+      },
+      "fonte": "dinamicas_aula.json"
+    },
+    {
+      "id": "frase.dinamica.exploracion_sensorial",
+      "tipo": "dinamica",
+      "en": "Pick one shell, hide it behind your back!",
+      "accion": {
+        "gl": "Apañar unha cuncha coa man dereita e agondala ás costas rindo.",
+        "es": "Coger una concha con la mano derecha y esconderla a la espalda riendo."
+      },
+      "fonte": "dinamicas_aula.json"
+    },
+    {
+      "id": "frase.dinamica.inmersion_tpr",
+      "tipo": "dinamica",
+      "en": "Swim, swim, jump high, freeze!",
+      "accion": {
+        "gl": "Nadar cos brazos, chimpar cos dous pés e quedar conxelados coma estatuas.",
+        "es": "Nadar con los brazos, saltar con los dos pies y quedar congelados como estatuas."
+      },
+      "fonte": "dinamicas_aula.json"
+    },
+    {
+      "id": "frase.dinamica.circulo_calma",
+      "tipo": "dinamica",
+      "en": "Breathe in deep, hug your friend, goodbye!",
+      "accion": {
+        "gl": "Inspirar fondo inflando o peito, abrazarse con cariño e dicir adeus sorrindo.",
+        "es": "Inspirar profundo inflando el pecho, abrazarse con cariño y decir adiós sonriendo."
+      },
+      "fonte": "dinamicas_aula.json"
+    },
+    {
+      "id": "frase.xogo.xogo_01_caza_tesouro",
+      "tipo": "xogo",
+      "en": "Find the red apple, quick and gentle!",
+      "accion": {
+        "gl": "A crianza camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.",
+        "es": "La criatura camina o gatea por la habitación hasta coger el objeto y traerlo en las manos."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.xogo.xogo_02_barco_samil",
+      "tipo": "xogo",
+      "en": "Row, row your little boat!",
+      "accion": {
+        "gl": "Balanzo do torso sincronizado co adulto e parada na calma mariña.",
+        "es": "Balanceo del torso sincronizado con el adulto y parada en la calma marina."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.xogo.xogo_03_xigante_formiga",
+      "tipo": "xogo",
+      "en": "Big giant stomps! Tiny ant tiptoes!",
+      "accion": {
+        "gl": "Pisa con forza no chan con todo o corpo e logo camiña en silencio absoluto de puntillas.",
+        "es": "Pisa con fuerza en el suelo con todo el cuerpo y luego camina en silencio absoluto de puntillas."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.xogo.xogo_04_cuncha_escoita",
+      "tipo": "xogo",
+      "en": "Listen close, hear the gentle sea!",
+      "accion": {
+        "gl": "Inclina a cabeza, pecha os ollos ou pousa a man sobre a cuncha con curiosidade.",
+        "es": "Inclina la cabeza, cierra los ojos o posa la mano sobre la concha con curiosidad."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.xogo.xogo_05_espello_corpo",
+      "tipo": "xogo",
+      "en": "Touch your nose, touch your toes!",
+      "accion": {
+        "gl": "Localiza as partes do corpo nomeadas (nariz, orellas, xeonllos, pés) no seu propio corpo.",
+        "es": "Localiza las partes del cuerpo nombradas (nariz, orejas, rodillas, pies) en su propio cuerpo."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.xogo.xogo_06_masaxe_72bpm",
+      "tipo": "xogo",
+      "en": "Soft and warm, gentle little arms!",
+      "accion": {
+        "gl": "O bebé relaxa os puños, estira as pernas e sorrí relaxado.",
+        "es": "El bebé relaja los puños, estira las piernas y sonríe relajado."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.xogo.xogo_07_circuito_5palabras",
+      "tipo": "xogo",
+      "en": "Touch your head, touch your knees, freeze!",
+      "accion": {
+        "gl": "Salta dun punto a outro tocando a parte do corpo indicada e remata en parada tónica.",
+        "es": "Salta de un punto a otro tocando la parte del cuerpo indicada y termina en parada tónica."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.xogo.xogo_08_gran_reto_freeze",
+      "tipo": "xogo",
+      "en": "Dance, dance, jump... Freeze like a statue!",
+      "accion": {
+        "gl": "Movemento libre e parada instantánea mantendo o equilibrio nun pé ou cos brazos en alto.",
+        "es": "Movimiento libre y parada instantánea manteniendo el equilibrio en un pie o con los brazos en alto."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.xogo.xogo_09_caixa_sons_texturas",
+      "tipo": "xogo",
+      "en": "Find something soft!",
+      "accion": {
+        "gl": "Introduce a man na caixa, palpa as texturas e saca a que se pediu.",
+        "es": "Introduce la mano en la caja, palpa las texturas y saca la que se ha pedido."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.xogo.xogo_10_eco_pes_mans",
+      "tipo": "xogo",
+      "en": "Clap your hands, stomp your feet!",
+      "accion": {
+        "gl": "Imita o patrón rítmico alternando mans e pés en sincronía co adulto.",
+        "es": "Imita el patrón rítmico alternando manos y pies en sincronía con el adulto."
+      },
+      "fonte": "xogos_fogar.json"
+    },
+    {
+      "id": "frase.steam.I5-LOGICA-001.01",
+      "tipo": "steam",
+      "en": "Step",
+      "accion": {
+        "gl": "Un paso firme cara adiante, dentro da cuadrícula.",
+        "es": "Un paso firme hacia delante, dentro de la cuadrícula."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
+      "id": "frase.atencion.0_6",
+      "tipo": "atencion",
+      "en": "Gentle touch. Soft tummy, warm and sweet!",
+      "accion": {
+        "gl": "Contacto visual directo, entoación cantareira e caricias acompañando cada palabra.",
+        "es": "Contacto visual directo, entonación cantarina y caricias acompañando cada palabra."
+      },
+      "fonte": "calendario/atencion.json"
+    },
+    {
+      "id": "frase.atencion.6_12",
+      "tipo": "atencion",
+      "en": "Peek-a-boo! I see you! Happy baby, smile!",
+      "accion": {
+        "gl": "Agochar a cara tras un pano suave e reaparecer sorrindo.",
+        "es": "Esconder la cara tras un pañuelo suave y reaparecer sonriendo."
+      },
+      "fonte": "calendario/atencion.json"
+    },
+    {
+      "id": "frase.atencion.12_18",
+      "tipo": "atencion",
+      "en": "One foot, two feet. Push, push! Hands up! All done!",
+      "accion": {
+        "gl": "Mover as extremidades acompañando a palabra: subir mans en \"Up\" e pés en \"Push!\".",
+        "es": "Mover las extremidades acompañando la palabra: subir manos en \"Up\" y pies en \"Push!\"."
+      },
+      "fonte": "calendario/atencion.json"
+    },
+    {
+      "id": "frase.atencion.18_24",
+      "tipo": "atencion",
+      "en": "Warm and cold. Brrr! Wash, wash, clean hands!",
+      "accion": {
+        "gl": "Contraste sensorial: sentir a auga tépeda (\"Warm\") e fría (\"Cold, brrr!\").",
+        "es": "Contraste sensorial: sentir el agua templada (\"Warm\") y fría (\"Cold, brrr!\")."
+      },
+      "fonte": "calendario/atencion.json"
+    },
+    {
+      "id": "frase.atencion.24_36",
+      "tipo": "atencion",
+      "en": "Jump like a frog! Fly like a bird. Freeze!",
+      "accion": {
+        "gl": "Imitar animais (saltar como ras, voar como paxaros) e parar en seco en \"Freeze!\".",
+        "es": "Imitar animales (saltar como ranas, volar como pájaros) y parar en seco en \"Freeze!\"."
+      },
+      "fonte": "calendario/atencion.json"
+    }
+  ]
+}

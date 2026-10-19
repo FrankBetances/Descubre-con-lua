@@ -290,7 +290,7 @@ venga después)
 - **Alcance:**
   - formato de `assets/content/unidades_mes/<curso>/unidade.NN.json` (NN, el mes del curso), con los campos del
     apartado 3 de la arquitectura;
-  - modelo Dart y cargador;
+  - modelo Dart (el cargador entra en M3.4, con la primera unidad: una ruta de assets que no existe no pasa `check_bundled_assets`);
   - `tools/check_unidades.py`, que comprueba que el esquema se cumple, que
     cada identificador citado existe y que cada orden usa el núcleo o el
     registro de frases. Lista los meses que faltan y, en `--estricto`, exige

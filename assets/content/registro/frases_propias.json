@@ -1,0 +1,123 @@
+{
+  "_doc": "Frases inglesas del registro que no salen de ninguna otra fuente: las fórmulas de turno que el banco no trae y las estructuras de 4-5 y 5-6 años. Se escriben aquí a mano; tools/xera_rexistro_frases.py las junta con las que salen de las asambleas, las dinámicas, los juegos de casa, STEAM y la guía de atención, y escribe registro/frases.json. Ver docs/PLAN_ARQUITECTURA_PEDAGOGIA.md, apartado 6.",
+  "frases": [
+    {
+      "id": "frase.formula.here-you-are",
+      "tipo": "formula",
+      "en": "Here you are!",
+      "accion": {
+        "gl": "Dar o obxecto coa man aberta",
+        "es": "Dar el objeto con la mano abierta"
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:184"
+    },
+    {
+      "id": "frase.formula.help-me-please",
+      "tipo": "formula",
+      "en": "Help me, please!",
+      "accion": {
+        "gl": "Estender as mans cara á persoa adulta",
+        "es": "Tender las manos hacia la persona adulta"
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:171"
+    },
+    {
+      "id": "frase.estructura.on-under",
+      "tipo": "estructura",
+      "en": "The car is on the block.",
+      "accion": {
+        "gl": "Pousar o coche enriba do bloque",
+        "es": "Poner el coche encima del bloque"
+      },
+      "nota": {
+        "gl": "In, on, under: dentro, enriba e debaixo. Primeiro o obxecto, despois a palabra.",
+        "es": "In, on, under: dentro, encima y debajo. Primero el objeto, después la palabra."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:172"
+    },
+    {
+      "id": "frase.estructura.behind",
+      "tipo": "estructura",
+      "en": "The dog is behind the tree.",
+      "accion": {
+        "gl": "Agochar o can detrás da árbore",
+        "es": "Esconder el perro detrás del árbol"
+      },
+      "nota": {
+        "gl": "Behind e in front of: detrás e diante. Vaise co corpo antes que coa palabra.",
+        "es": "Behind y in front of: detrás y delante. Se va con el cuerpo antes que con la palabra."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:204"
+    },
+    {
+      "id": "frase.estructura.into",
+      "tipo": "estructura",
+      "en": "Put your feet into the boots.",
+      "accion": {
+        "gl": "Meter os pés nas botas",
+        "es": "Meter los pies en las botas"
+      },
+      "nota": {
+        "gl": "Into, out of, over: cara a dentro, cara a fóra, por riba. Son movementos.",
+        "es": "Into, out of, over: hacia dentro, hacia fuera, por encima. Son movimientos."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:229"
+    },
+    {
+      "id": "frase.estructura.because",
+      "tipo": "estructura",
+      "en": "I put on my boots because it is raining.",
+      "accion": {
+        "gl": "Calzar as botas e sinalar a chuvia pola fiestra",
+        "es": "Calzarse las botas y señalar la lluvia por la ventana"
+      },
+      "nota": {
+        "gl": "Because: porque. A docente di a razón; a criatura responde co corpo ou cunha palabra.",
+        "es": "Because: porque. La docente dice la razón; la criatura responde con el cuerpo o con una palabra."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:221"
+    },
+    {
+      "id": "frase.estructura.first-then",
+      "tipo": "estructura",
+      "en": "First we wash, then we eat.",
+      "accion": {
+        "gl": "Fregar as mans e despois levar a culler á boca",
+        "es": "Frotarse las manos y después llevar la cuchara a la boca"
+      },
+      "nota": {
+        "gl": "First… then…: primeiro… despois… Dúas accións, unha detrás da outra.",
+        "es": "First… then…: primero… después… Dos acciones, una detrás de otra."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:211"
+    },
+    {
+      "id": "frase.estructura.between",
+      "tipo": "estructura",
+      "en": "The brush is between the cup and the paper.",
+      "accion": {
+        "gl": "Pousar o pincel entre o vaso e o papel",
+        "es": "Poner el pincel entre el vaso y el papel"
+      },
+      "nota": {
+        "gl": "Between e next to: entre e ao lado de. Con tres obxectos na mesa.",
+        "es": "Between y next to: entre y al lado de. Con tres objetos en la mesa."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:248"
+    },
+    {
+      "id": "frase.estructura.across",
+      "tipo": "estructura",
+      "en": "We walk across the bridge.",
+      "accion": {
+        "gl": "Camiñar dun lado ao outro dunha liña no chan",
+        "es": "Caminar de un lado al otro de una línea en el suelo"
+      },
+      "nota": {
+        "gl": "Across e through: dun lado ao outro, e a través. Cunha corda ou un túnel.",
+        "es": "Across y through: de un lado al otro, y a través. Con una cuerda o un túnel."
+      },
+      "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:259"
+    }
+  ]
+}

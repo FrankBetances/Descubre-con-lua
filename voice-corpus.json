@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-19T15:45:00Z",
- "entries": 22886,
+ "generatedAt": "2026-10-19T15:54:46Z",
+ "entries": 22910,
  "byStyle": {
   "slow": 6002,
-  "tutor": 16884
+  "tutor": 16908
  },
  "byLang": {
-  "en": 12805,
+  "en": 12829,
   "es": 5041,
   "gl": 5040
  },
@@ -53121,6 +53121,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_00a594ed_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Row, row your little boat!",
+   "speech": "Row, row your little boat!",
+   "source": "registro/frase.xogo.xogo_02_barco_samil",
+   "pack": false
+  },
+  {
    "id": "en_tutor_00a708c3_35",
    "lang": "en",
    "style": "tutor",
@@ -63507,6 +63516,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_2c332fb3_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The dog is behind the tree.",
+   "speech": "The dog is behind the tree.",
+   "source": "registro/frase.estructura.behind",
+   "pack": false
+  },
+  {
    "id": "en_tutor_2c3333ff_51",
    "lang": "en",
    "style": "tutor",
@@ -66288,6 +66306,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_3782e408_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Listen close, hear the gentle sea!",
+   "speech": "Listen close, hear the gentle sea!",
+   "source": "registro/frase.xogo.xogo_04_cuncha_escoita",
+   "pack": false
+  },
+  {
    "id": "en_tutor_379890de_38",
    "lang": "en",
    "style": "tutor",
@@ -66474,6 +66501,15 @@
    "text": "Grapes can be green or purple.",
    "speech": "Grapes can be green or purple.",
    "source": "corpus/1710/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_382002f9_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Here you are!",
+   "speech": "Here you are!",
+   "source": "registro/frase.formula.here-you-are",
    "pack": false
   },
   {
@@ -71850,6 +71886,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_4ee98a05_43",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dance, dance, jump... Freeze like a statue!",
+   "speech": "Dance, dance, jump... Freeze like a statue!",
+   "source": "registro/frase.xogo.xogo_08_gran_reto_freeze",
+   "pack": false
+  },
+  {
    "id": "en_tutor_4ef51f7e_23",
    "lang": "en",
    "style": "tutor",
@@ -73269,6 +73314,15 @@
    "text": "The puzzle is complete at last!",
    "speech": "The puzzle is complete at last!",
    "source": "corpus/178/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_5532bc49_42",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch your head, touch your knees, freeze!",
+   "speech": "Touch your head, touch your knees, freeze!",
+   "source": "registro/frase.xogo.xogo_07_circuito_5palabras",
    "pack": false
   },
   {
@@ -75258,6 +75312,15 @@
    "text": "Open and close your shell hands",
    "speech": "Open and close your shell hands",
    "source": "lamina/animais_96/tpr",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_5d6f6673_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Clap your hands, stomp your feet!",
+   "speech": "Clap your hands, stomp your feet!",
+   "source": "registro/frase.xogo.xogo_10_eco_pes_mans",
    "pack": false
   },
   {
@@ -77517,6 +77580,15 @@
    "text": "The dog brought back the stick.",
    "speech": "The dog brought back the stick.",
    "source": "corpus/810/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_66256e85_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Help me, please!",
+   "speech": "Help me, please!",
+   "source": "registro/frase.formula.help-me-please",
    "pack": false
   },
   {
@@ -84306,6 +84378,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_80acdca5_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We walk across the bridge.",
+   "speech": "We walk across the bridge.",
+   "source": "registro/frase.estructura.across",
+   "pack": false
+  },
+  {
    "id": "en_tutor_80b583ce_14",
    "lang": "en",
    "style": "tutor",
@@ -90606,6 +90687,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_99ec2fa6_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Soft and warm, gentle little arms!",
+   "speech": "Soft and warm, gentle little arms!",
+   "source": "registro/frase.xogo.xogo_06_masaxe_72bpm",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9a043d4e_38",
    "lang": "en",
    "style": "tutor",
@@ -91602,6 +91692,15 @@
    "text": "Loud noise can impair your hearing.",
    "speech": "Loud noise can impair your hearing.",
    "source": "corpus/3496/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_9db0fee5_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "First we wash, then we eat.",
+   "speech": "First we wash, then we eat.",
+   "source": "registro/frase.estructura.first-then",
    "pack": false
   },
   {
@@ -92673,6 +92772,15 @@
    "text": "Pop up",
    "speech": "Pop up",
    "source": "tpr.0_2.febreiro/s3/0_2.febreiro.s3.pop-up",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_a2cd125a_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "I put on my boots because it is raining.",
+   "speech": "I put on my boots because it is raining.",
+   "source": "registro/frase.estructura.because",
    "pack": false
   },
   {
@@ -93816,6 +93924,15 @@
    "text": "The approximate time of arrival is ten o'clock.",
    "speech": "The approximate time of arrival is ten o'clock.",
    "source": "corpus/2061/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_a82f43b3_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Swim, swim, jump high, freeze!",
+   "speech": "Swim, swim, jump high, freeze!",
+   "source": "registro/frase.dinamica.inmersion_tpr",
    "pack": false
   },
   {
@@ -95115,6 +95232,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_ade52ccc_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Find the red apple, quick and gentle!",
+   "speech": "Find the red apple, quick and gentle!",
+   "source": "registro/frase.xogo.xogo_01_caza_tesouro",
+   "pack": false
+  },
+  {
    "id": "en_tutor_ade5c1a1_12",
    "lang": "en",
    "style": "tutor",
@@ -96264,6 +96390,15 @@
    "text": "She attempted to jump over the puddle.",
    "speech": "She attempted to jump over the puddle.",
    "source": "corpus/1053/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b2a5b41a_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pick one shell, hide it behind your back!",
+   "speech": "Pick one shell, hide it behind your back!",
+   "source": "registro/frase.dinamica.exploracion_sensorial",
    "pack": false
   },
   {
@@ -97797,6 +97932,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_ba259463_43",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The brush is between the cup and the paper.",
+   "speech": "The brush is between the cup and the paper.",
+   "source": "registro/frase.estructura.between",
+   "pack": false
+  },
+  {
    "id": "en_tutor_ba3dbb38_29",
    "lang": "en",
    "style": "tutor",
@@ -98733,6 +98877,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_bddae4b1_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put your feet into the boots.",
+   "speech": "Put your feet into the boots.",
+   "source": "registro/frase.estructura.into",
+   "pack": false
+  },
+  {
    "id": "en_tutor_bddeb13d_40",
    "lang": "en",
    "style": "tutor",
@@ -98919,6 +99072,15 @@
    "text": "It's a simple courtesy to say thank you.",
    "speech": "It's a simple courtesy to say thank you.",
    "source": "corpus/3233/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_be9cc923_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Big giant stomps! Tiny ant tiptoes!",
+   "speech": "Big giant stomps! Tiny ant tiptoes!",
+   "source": "registro/frase.xogo.xogo_03_xigante_formiga",
    "pack": false
   },
   {
@@ -103575,6 +103737,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_cfc5d8c8_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch your nose, touch your toes!",
+   "speech": "Touch your nose, touch your toes!",
+   "source": "registro/frase.xogo.xogo_05_espello_corpo",
+   "pack": false
+  },
+  {
    "id": "en_tutor_cfd22ba2_43",
    "lang": "en",
    "style": "tutor",
@@ -104328,6 +104499,15 @@
    "text": "Make a copy of the drawing for grandma.",
    "speech": "Make a copy of the drawing for grandma.",
    "source": "corpus/1220/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_d2f43878_42",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Breathe in deep, hug your friend, goodbye!",
+   "speech": "Breathe in deep, hug your friend, goodbye!",
+   "source": "registro/frase.dinamica.circulo_calma",
    "pack": false
   },
   {
@@ -108651,6 +108831,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_e4736021_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The car is on the block.",
+   "speech": "The car is on the block.",
+   "source": "registro/frase.estructura.on-under",
+   "pack": false
+  },
+  {
    "id": "en_tutor_e48396dd_32",
    "lang": "en",
    "style": "tutor",
@@ -109539,6 +109728,15 @@
    "text": "Lanterns illuminate the street at night.",
    "speech": "Lanterns illuminate the street at night.",
    "source": "corpus/3491/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_e872ba5a_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Welcome friends, sit in circle!",
+   "speech": "Welcome friends, sit in circle!",
+   "source": "registro/frase.dinamica.asemblea_pulso",
    "pack": false
   },
   {
@@ -110826,6 +111024,15 @@
    "text": "The cake has three layers of cream.",
    "speech": "The cake has three layers of cream.",
    "source": "corpus/2548/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_ed8c44ad_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Find something soft!",
+   "speech": "Find something soft!",
+   "source": "registro/frase.xogo.xogo_09_caixa_sons_texturas",
    "pack": false
   },
   {
@@ -112815,6 +113022,15 @@
    "text": "What is the price of this kite?",
    "speech": "What is the price of this kite?",
    "source": "corpus/650/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f60565a9_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch the sound, make the wave!",
+   "speech": "Touch the sound, make the wave!",
+   "source": "registro/frase.dinamica.fonica_kinestesica",
    "pack": false
   },
   {

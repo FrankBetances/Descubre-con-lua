@@ -1,8 +1,5 @@
-import 'dart:convert';
-
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/models/unidade_do_mes_model.dart';
 
 /// M3.1: la unidad del mes se lee entera, y lo que cita sigue siendo un id.
@@ -90,16 +87,5 @@ void main() {
         {...unidade, 'estructura': null, 'contraste': null});
     expect(u.estructura, isNull);
     expect(u.contraste, isNull);
-  });
-
-  test('o cargador le a unidade da súa ruta', () async {
-    String? pedida;
-    final loader = ContentAssetLoader(stringLoader: (path) async {
-      pedida = path;
-      return jsonEncode(unidade);
-    });
-    final u = await loader.loadUnidadeDoMes('curso_4_5', 3);
-    expect(pedida, 'assets/content/unidades_mes/curso_4_5/unidade.03.json');
-    expect(u.id, 'unidade.curso_4_5.03');
   });
 }

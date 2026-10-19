@@ -780,6 +780,18 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                                  f"steam/{uid}/{audiencia}/{paso}/{campo}",
                                  seen)
 
+    # El registro de frases (M3.2): las unidades del mes citan estas frases por
+    # id, así que todas tienen que sonar. Casi todas son el mismo texto que su
+    # fuente y comparten grabación con ella; las propias —fórmulas y
+    # estructuras que no estaban en ningún sitio— nacen aquí. La acción no
+    # entra: se lee, no se pulsa.
+    frases_json = content_dir / "registro" / "frases.json"
+    if frases_json.exists():
+        for frase in json.loads(frases_json.read_text(encoding="utf-8"))["frases"]:
+            texto = str(frase.get("en", ""))
+            _one(texto, "en", estilo_ingles(texto),
+                 f"registro/{frase.get('id', '?')}", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

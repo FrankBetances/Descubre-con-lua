@@ -7,7 +7,6 @@ import '../models/capsula_model.dart';
 import '../models/ponte_ao_dia_model.dart';
 import '../models/steam_model.dart';
 import '../models/unidad_model.dart';
-import '../models/unidade_do_mes_model.dart';
 
 /// Function signature for asset string loader. Enables headless testing without Flutter engine.
 typedef AssetBundleStringLoader = Future<String> Function(String path);
@@ -128,20 +127,6 @@ class ContentAssetLoader {
       throw FormatException('Root of $assetPath is not a JSON object');
     }
     return AsambleaPrimeiroCiclo.fromJson(Map<String, dynamic>.from(decoded));
-  }
-
-  /// Donde viven las unidades del mes: una carpeta por curso.
-  static const String unidadesMesAssetPrefix = 'assets/content/unidades_mes/';
-
-  /// La ruta de la unidad del mes [orden] (1 es septiembre) de [curso].
-  static String unidadeDoMesPath(String curso, int orden) =>
-      '$unidadesMesAssetPrefix$curso/unidade.${orden.toString().padLeft(2, '0')}.json';
-
-  /// Lee la unidad del mes [orden] de [curso].
-  Future<UnidadeDoMes> loadUnidadeDoMes(String curso, int orden) async {
-    final jsonString = await _stringLoader(unidadeDoMesPath(curso, orden));
-    return UnidadeDoMes.fromJson(
-        jsonDecode(jsonString) as Map<String, dynamic>);
   }
 
   /// Lee la progresión diaria de un tramo.
