@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.03",
+  "curso": "curso_0_2",
+  "orden": 3,
+  "mesCalendario": 11,
+  "asamblea": "asamblea.primeiro_ciclo.novembro.0_2_anos",
+  "centroInteres": {
+    "gl": "O outono galego e as texturas do bosque",
+    "es": "El otoño gallego y las texturas del bosque"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.novembro.0_2.01"
+    },
+    {
+      "ref": "frase.cmd.novembro.0_2.02",
+      "objeto": {
+        "gl": "Unha folla seca",
+        "es": "Una hoja seca"
+      }
+    },
+    {
+      "ref": "0_2.novembro.s2.leaves-are-falling"
+    },
+    {
+      "ref": "0_2.novembro.s1.feel-this",
+      "objeto": {
+        "gl": "Unha folla de carballo",
+        "es": "Una hoja de roble"
+      }
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.novembro.0_2.01",
+      "usa": [
+        "frase.cmd.novembro.0_2.01"
+      ]
+    },
+    {
+      "ref": "frase.cmd.novembro.0_2.02",
+      "usa": [
+        "frase.cmd.novembro.0_2.02"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Cesta de vimbio con follas de carballo e castiñeiro lavadas",
+      "es": "Cesta de mimbre con hojas de roble y castaño lavadas"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Segue coa mirada as follas que caen",
+      "es": "Sigue con la mirada las hojas que caen"
+    },
+    {
+      "gl": "Vira a cabeza cara ao son da folla seca",
+      "es": "Gira la cabeza hacia el sonido de la hoja seca"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.outubro.0_2.02"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

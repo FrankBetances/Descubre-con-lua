@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.05",
+  "curso": "curso_0_2",
+  "orden": 5,
+  "mesCalendario": 1,
+  "asamblea": "asamblea.primeiro_ciclo.xaneiro.0_2_anos",
+  "centroInteres": {
+    "gl": "As rutinas de abrigo e a autonomía ao vestirse",
+    "es": "Las rutinas de abrigo y la autonomía al vestirse"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.xaneiro.0_2.01",
+      "objeto": {
+        "gl": "Un gorro de la",
+        "es": "Un gorro de lana"
+      }
+    },
+    {
+      "ref": "frase.cmd.xaneiro.0_2.02"
+    },
+    {
+      "ref": "0_2.decembro.s1.mittens",
+      "objeto": {
+        "gl": "As manoplas de la",
+        "es": "Las manoplas de lana"
+      }
+    },
+    {
+      "ref": "0_2.febreiro.s1.hat-on-hat-off"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xaneiro.0_2.01",
+      "usa": [
+        "frase.cmd.xaneiro.0_2.01"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xaneiro.0_2.02",
+      "usa": [
+        "frase.cmd.xaneiro.0_2.02"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Gorros e luvas de la, e o espello da asemblea",
+      "es": "Gorros y manoplas de lana, y el espejo de la asamblea"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Mírase no espello co gorro posto",
+      "es": "Se mira en el espejo con el gorro puesto"
+    },
+    {
+      "gl": "Axuda a quitar a prenda tirando dela",
+      "es": "Ayuda a quitarse la prenda tirando de ella"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.decembro.0_2.02"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

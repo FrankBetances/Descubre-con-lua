@@ -19,8 +19,11 @@ De dónde sale cada frase:
 - las frases de las dinámicas de aula, de los juegos de casa, de STEAM y de la
   guía de atención por edad.
 
-Lo que ya es palabra del banco no entra: se cita por su id del banco. Lo que
-no entra todavía por otra razón (las palabras del calendario de 50 meses, que
+Una orden o una frase entra aunque su texto sea también palabra del banco:
+*Up* en la asamblea de 0-2 es «eleva las manos del bebé», y *Up* en el banco
+de 3-4 es la palabra con el gesto de 3-4. Lo que se lleva de su fuente es el
+gesto. El mismo texto con el mismo estilo comparte grabación, así que no
+cuesta audio nuevo. Lo que no entra todavía por otra razón (las palabras del calendario de 50 meses, que
 se retira en M3.9; la frase TPR de los cuentos, M5; las láminas, M7.2; la
 asamblea vieja, M4.3) queda en el inventario con su destino:
 `referencias/inventario_frases_ingles.md`.
@@ -168,7 +171,6 @@ def construir() -> tuple[dict, list[str], str]:
         if norm(frase["en"]) in do_banco:
             conta[1] += 1
             no_banco += 1
-            continue
         frases.append(frase)
 
     for frase in frases:
@@ -192,7 +194,7 @@ def construir() -> tuple[dict, list[str], str]:
     }
 
     filas = "\n".join(
-        f"| `{fonte}` | {total} | {enBanco} | {total - enBanco} |"
+        f"| `{fonte}` | {total} | {enBanco} | {total} |"
         for fonte, (total, enBanco) in sorted(por_fonte.items()))
     resto = "\n".join(f"| {nome} | {n} | {destino} |"
                       for nome, n, destino in pendentes())
@@ -204,10 +206,11 @@ del plan docente.
 ## Lo que entra en el registro de frases
 
 `assets/content/registro/frases.json`: {len(frases)} frases, de ellas
-{len(propias)} propias (`registro/frases_propias.json`). Lo que ya es palabra
-del banco no entra: se cita por su id del banco.
+{len(propias)} propias (`registro/frases_propias.json`). Una orden entra
+aunque su texto sea también palabra del banco: se lleva el gesto de su fuente,
+y comparte la grabación.
 
-| Fuente | Frases | Ya en el banco | En el registro |
+| Fuente | Frases | Mismo texto en el banco | En el registro |
 | --- | --- | --- | --- |
 {filas}
 | `registro/frases_propias.json` | {len(propias)} | 0 | {len(propias)} |

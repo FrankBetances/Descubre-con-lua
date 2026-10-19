@@ -64,7 +64,7 @@ Encajan 10, parcial 29, no encajan 11, de 50.
 ### Septiembre · no encaja
 
 - **Centro de interés (asamblea):** La acogida y el vínculo afectivo con el grupo
-- **Órdenes de la asamblea:** *Up* (`¿?`); *Down* (`¿?`); *Clap* (`¿?`)
+- **Órdenes de la asamblea:** *Up* (`frase.cmd.setembro.0_2.01`); *Down* (`frase.cmd.setembro.0_2.02`); *Clap* (`frase.cmd.setembro.0_2.03`)
 - **Temas del banco del mes:** ¡Hola, pequeño!; Mi gente; Las primeras sonrisas; Día a día en la escuela
 - **Candidatas del mismo mes:** ninguna
 - **Candidatas de otros meses:** *Clap along* (`0_2.novembro.s3.clap-along`, noviembre), *Clap and stop* (`0_2.febreiro.s4.clap-and-stop`, febrero)
@@ -72,7 +72,7 @@ Encajan 10, parcial 29, no encajan 11, de 50.
 ### Octubre · encaja
 
 - **Centro de interés (asamblea):** La conciencia del propio cuerpo y la propiocepción
-- **Órdenes de la asamblea:** *Head* (`¿?`); *Tummy* (`¿?`); *Toes* (`¿?`)
+- **Órdenes de la asamblea:** *Head* (`frase.cmd.outubro.0_2.01`); *Tummy* (`frase.cmd.outubro.0_2.02`); *Toes* (`frase.cmd.outubro.0_2.03`)
 - **Temas del banco del mes:** ¿Dónde está la nariz?; Caricias; Espejo, espejito; Mi cuerpo y el tuyo
 - **Candidatas del mismo mes:** *Tiny toes* (`0_2.outubro.s1.tiny-toes`), *One, two, toes* (`0_2.outubro.s1.one-two-toes`), *Head to toes* (`0_2.outubro.s2.head-to-toes`), *Tummy time* (`0_2.outubro.s3.tummy-time`), *Lift head* (`0_2.outubro.s3.lift-head`)
 - **Candidatas de otros meses:** *Tickle tummy* (`0_2.febreiro.s1.tickle-tummy`, febrero), *Water on my toes* (`0_2.maio.s1.water-on-my-toes`, mayo), *Where are your toes?* (`0_2.maio.s2.where-are-your-toes`, mayo), *Wriggle toes* (`0_2.xuno.s1.wriggle-toes`, junio)
@@ -96,7 +96,7 @@ Encajan 10, parcial 29, no encajan 11, de 50.
 ### Enero · parcial
 
 - **Centro de interés (asamblea):** Las rutinas de abrigo y la autonomía al vestirse
-- **Órdenes de la asamblea:** *Put on your hat!* (`¿?`); *Take it off!* (`frase.cmd.xaneiro.0_2.02`)
+- **Órdenes de la asamblea:** *Put on your hat!* (`frase.cmd.xaneiro.0_2.01`); *Take it off!* (`frase.cmd.xaneiro.0_2.02`)
 - **Temas del banco del mes:** Guau y miau; En la granja; Pájaros y bichitos; Sonidos tranquilos
 - **Candidatas del mismo mes:** *Drift off* (`0_2.xaneiro.s4.drift-off`)
 - **Candidatas de otros meses:** *Hat and mittens* (`0_2.decembro.s1.hat-and-mittens`, diciembre), *Woolly hat* (`0_2.decembro.s2.woolly-hat`, diciembre), *Switch off* (`0_2.decembro.s3.switch-off`, diciembre), *Lights off!* (`0_2.decembro.s3.lights-off`, diciembre), *On and off* (`0_2.decembro.s3.on-and-off`, diciembre), *Silly hat* (`0_2.febreiro.s1.silly-hat`, febrero), *Feathered hat* (`0_2.febreiro.s1.feathered-hat`, febrero), *Hat on, hat off* (`0_2.febreiro.s1.hat-on-hat-off`, febrero), *Shake off* (`0_2.abril.s2.shake-off`, abril), *Rinse off* (`0_2.maio.s2.rinse-off`, mayo), *Dry off* (`0_2.maio.s3.dry-off`, mayo), *Straw hat* (`0_2.xuno.s3.straw-hat`, junio) y 1 más
@@ -146,7 +146,7 @@ Encajan 10, parcial 29, no encajan 11, de 50.
 ### Septiembre · parcial
 
 - **Centro de interés (asamblea):** La acogida y el vínculo afectivo con el grupo
-- **Órdenes de la asamblea:** *Everybody stand up!* (`frase.cmd.setembro.2_3.01`); *Hello!* (`¿?`); *Everybody sit down!* (`frase.cmd.setembro.2_3.03`)
+- **Órdenes de la asamblea:** *Everybody stand up!* (`frase.cmd.setembro.2_3.01`); *Hello!* (`frase.cmd.setembro.2_3.02`); *Everybody sit down!* (`frase.cmd.setembro.2_3.03`)
 - **Temas del banco del mes:** Volvemos a la escuela; Jugamos juntos; Recogemos; Amigos de la clase
 - **Candidatas del mismo mes:** *Say hello* (`2_3.setembro.s1.say-hello`), *Hello, friend!* (`2_3.setembro.s4.hello-friend`), *Sit with me* (`2_3.setembro.s4.sit-with-me`)
 - **Candidatas de otros meses:** *Sit around* (`2_3.novembro.s4.sit-around`, noviembre), *Hello, sailor!* (`2_3.xaneiro.s4.hello-sailor`, enero), *Hello, little chick* (`2_3.abril.s4.hello-little-chick`, abril)
@@ -154,7 +154,7 @@ Encajan 10, parcial 29, no encajan 11, de 50.
 ### Octubre · parcial
 
 - **Centro de interés (asamblea):** La conciencia del propio cuerpo y la propiocepción
-- **Órdenes de la asamblea:** *Head, shoulders, knees and toes* (`frase.cmd.outubro.2_3.01`); *Shake your hands!* (`frase.cmd.outubro.2_3.02`); *FREEZE!* (`¿?`)
+- **Órdenes de la asamblea:** *Head, shoulders, knees and toes* (`frase.cmd.outubro.2_3.01`); *Shake your hands!* (`frase.cmd.outubro.2_3.02`); *FREEZE!* (`frase.cmd.outubro.2_3.03`)
 - **Temas del banco del mes:** Rodillas y saltos; Giramos; Correr y parar; Pies que bailan
 - **Candidatas del mismo mes:** *Bend knees* (`2_3.outubro.s1.bend-knees`), *Touch your knees* (`2_3.outubro.s1.touch-your-knees`), *Knees up, knees down* (`2_3.outubro.s1.knees-up-knees-down`), *Dance and freeze* (`2_3.outubro.s4.dance-and-freeze`)
 - **Candidatas de otros meses:** *Hold hands* (`2_3.setembro.s4.hold-hands`, septiembre), *Hands in pockets* (`2_3.decembro.s3.hands-in-pockets`, diciembre), *A heart with my hands* (`2_3.marzo.s1.a-heart-with-my-hands`, marzo), *Wipe hands* (`2_3.marzo.s4.wipe-hands`, marzo), *Tickle toes* (`2_3.abril.s1.tickle-toes`, abril), *Shake dry* (`2_3.maio.s1.shake-dry`, mayo), *Brush head* (`2_3.maio.s2.brush-head`, mayo)
@@ -170,7 +170,7 @@ Encajan 10, parcial 29, no encajan 11, de 50.
 ### Diciembre · no encaja
 
 - **Centro de interés (asamblea):** El contraste entre el frío de fuera y el calor del regazo
-- **Órdenes de la asamblea:** *Loud bells! Shake fast!* (`frase.cmd.decembro.2_3.01`); *Quiet bells... sleep* (`frase.cmd.decembro.2_3.02`); *Wake up!* (`¿?`)
+- **Órdenes de la asamblea:** *Loud bells! Shake fast!* (`frase.cmd.decembro.2_3.01`); *Quiet bells... sleep* (`frase.cmd.decembro.2_3.02`); *Wake up!* (`frase.cmd.decembro.2_3.03`)
 - **Temas del banco del mes:** ¡Charcos!; Nubes y lluvia; Ropa de invierno; Calentito en casa
 - **Candidatas del mismo mes:** ninguna
 - **Candidatas de otros meses:** *Quiet car* (`2_3.xaneiro.s2.quiet-car`, enero), *Go fast!* (`2_3.xaneiro.s2.go-fast`, enero), *Quiet corner* (`2_3.abril.s3.quiet-corner`, abril), *From loud to quiet* (`2_3.abril.s3.from-loud-to-quiet`, abril), *Shake dry* (`2_3.maio.s1.shake-dry`, mayo)
@@ -186,7 +186,7 @@ Encajan 10, parcial 29, no encajan 11, de 50.
 ### Febrero · parcial
 
 - **Centro de interés (asamblea):** La motricidad zoomorfa y las onomatopeyas
-- **Órdenes de la asamblea:** *Fly like a bird!* (`¿?`); *Big heavy bear! Stomp!* (`frase.cmd.febreiro.2_3.02`); *Carnival Freeze!* (`frase.cmd.febreiro.2_3.03`)
+- **Órdenes de la asamblea:** *Fly like a bird!* (`frase.cmd.febreiro.2_3.01`); *Big heavy bear! Stomp!* (`frase.cmd.febreiro.2_3.02`); *Carnival Freeze!* (`frase.cmd.febreiro.2_3.03`)
 - **Temas del banco del mes:** Disfraces de animales; En la selva; Animales del frío; El desfile de animales
 - **Candidatas del mismo mes:** *Big mouth, hippo!* (`2_3.febreiro.s2.big-mouth-hippo`), *Polar bear* (`2_3.febreiro.s3.polar-bear`), *Big drum* (`2_3.febreiro.s4.big-drum`)
 - **Candidatas de otros meses:** *Dance and freeze* (`2_3.outubro.s4.dance-and-freeze`, octubre), *Stomp around* (`2_3.novembro.s3.stomp-around`, noviembre), *Heavy steps* (`2_3.novembro.s3.heavy-steps`, noviembre), *Stomp, stomp, stomp!* (`2_3.novembro.s3.stomp-stomp-stomp`, noviembre), *Big steps and little steps* (`2_3.novembro.s3.big-steps-and-little-steps`, noviembre), *Bird song* (`2_3.abril.s2.bird-song`, abril), *Bird bath* (`2_3.abril.s2.bird-bath`, abril), *Bird feeder* (`2_3.abril.s2.branch-perch`, abril), *Fly off* (`2_3.abril.s2.fly-off`, abril), *Fly away, bird!* (`2_3.abril.s2.fly-away-bird`, abril), *Mother bird* (`2_3.abril.s4.mother-bird`, abril), *Big smile* (`2_3.maio.s2.smile-teeth`, mayo)
@@ -210,7 +210,7 @@ Encajan 10, parcial 29, no encajan 11, de 50.
 ### Mayo · parcial
 
 - **Centro de interés (asamblea):** Los hábitos de higiene y el placer de lavarse
-- **Órdenes de la asamblea:** *Wash your face!* (`¿?`); *Wash your belly!* (`frase.cmd.maio.2_3.02`); *Dry your toes!* (`frase.cmd.maio.2_3.03`)
+- **Órdenes de la asamblea:** *Wash your face!* (`frase.cmd.maio.2_3.01`); *Wash your belly!* (`frase.cmd.maio.2_3.02`); *Dry your toes!* (`frase.cmd.maio.2_3.03`)
 - **Temas del banco del mes:** Me lavo solo; Los dientes; Juegos con agua; Lavamos la ropa
 - **Candidatas del mismo mes:** *Shake dry* (`2_3.maio.s1.shake-dry`), *Wash, wash the socks* (`2_3.maio.s4.wash-wash-the-socks`)
 - **Candidatas de otros meses:** *Belly slide* (`2_3.febreiro.s3.belly-slide`, febrero), *Face mask* (`2_3.febreiro.s4.face-mask`, febrero), *Tickle toes* (`2_3.abril.s1.tickle-toes`, abril), *Dry sand* (`2_3.xuno.s2.dry-sand`, junio)
@@ -218,7 +218,7 @@ Encajan 10, parcial 29, no encajan 11, de 50.
 ### Junio · parcial
 
 - **Centro de interés (asamblea):** El Atlántico, las rías de Vigo y la despedida del curso
-- **Órdenes de la asamblea:** *Gentle waves* (`¿?`); *Giant waves!* (`frase.cmd.xuno.2_3.02`); *Little fish swimming under the sea!* (`frase.cmd.xuno.2_3.03`)
+- **Órdenes de la asamblea:** *Gentle waves* (`frase.cmd.xuno.2_3.01`); *Giant waves!* (`frase.cmd.xuno.2_3.02`); *Little fish swimming under the sea!* (`frase.cmd.xuno.2_3.03`)
 - **Temas del banco del mes:** Barcos en la ría; La arena de Samil; Tesoros de la playa; Hasta luego, verano
 - **Candidatas del mismo mes:** *Calm sea* (`2_3.xuno.s1.calm-sea`), *Sea glass* (`2_3.xuno.s3.sea-glass`), *Under the stone* (`2_3.xuno.s3.under-the-stone`)
 - **Candidatas de otros meses:** *Giant steps* (`2_3.novembro.s3.giant-steps`, noviembre), *Big steps and little steps* (`2_3.novembro.s3.big-steps-and-little-steps`, noviembre), *Under the table* (`2_3.decembro.s2.under-the-table`, diciembre), *Hello, little chick* (`2_3.abril.s4.hello-little-chick`, abril)

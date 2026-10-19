@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.07",
+  "curso": "curso_0_2",
+  "orden": 7,
+  "mesCalendario": 3,
+  "asamblea": "asamblea.primeiro_ciclo.marzo.0_2_anos",
+  "centroInteres": {
+    "gl": "A categorización sensorial e a discriminación de cor",
+    "es": "La categorización sensorial y la discriminación de color"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.marzo.0_2.01",
+      "objeto": {
+        "gl": "Un aro amarelo",
+        "es": "Un aro amarillo"
+      }
+    },
+    {
+      "ref": "0_2.marzo.s1.sunny-yellow"
+    },
+    {
+      "ref": "0_2.marzo.s3.roll-it-to-me"
+    },
+    {
+      "ref": "0_2.febreiro.s4.shake-shake-shake",
+      "objeto": {
+        "gl": "A botella sensorial",
+        "es": "La botella sensorial"
+      }
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.marzo.0_2.01",
+      "usa": [
+        "frase.cmd.marzo.0_2.01"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Botellas sensoriais seladas con auga tinguida e aros de silicona",
+      "es": "Botellas sensoriales selladas con agua teñida y aros de silicona"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Sacode a botella e mira como se move a cor",
+      "es": "Sacude la botella y mira cómo se mueve el color"
+    },
+    {
+      "gl": "Segue co ollo o aro que roda",
+      "es": "Sigue con la mirada el aro que rueda"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.febreiro.0_2.01"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

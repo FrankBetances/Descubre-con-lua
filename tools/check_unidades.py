@@ -15,7 +15,7 @@ Comprueba, por unidad:
 
 - que el esquema está completo y que todo texto va en gallego Y en castellano;
 - que el **centro de interés es el de su asamblea**, letra por letra (D4: manda
-  la asamblea), y que esa asamblea existe;
+  la asamblea), que esa asamblea existe y que la canción es la suya;
 - que todo lo que cita (núcleo, fórmulas, estructura, órdenes, contraste y
   reactivación) es un id del banco TPR o del registro de frases
   (`assets/content/registro/frases.json`, cuando exista). No se copia la
@@ -139,6 +139,13 @@ def revisar(curso: str, orden: int, u: dict, existentes: set[str],
                 fallos.append(
                     f"{donde}: el centro de interés en {lingua} no es el de la "
                     f"asamblea (D4): «{centro.get(lingua)}»")
+
+    # La canción es la de la asamblea, si la trae; si no, no hay canción.
+    cancion = (u.get("cancion") or {}).get("titulo")
+    da_asamblea = (asamblea or {}).get("cancionDoMes") or None
+    if cancion != da_asamblea:
+        fallos.append(f"{donde}: la canción debe ser la de la asamblea: "
+                      f"{da_asamblea!r}, no {cancion!r}")
 
     ensina: set[str] = set()
     for bloque, (minimo, maximo) in TAMANO[curso].items():

@@ -71,6 +71,11 @@ flutter:
     # Las unidades del mes lo citan por id, así que la app tiene que poder
     # leerlo para enseñar la frase.
     - assets/content/registro/
+    # Las unidades del mes (M3.x): la única fuente de cada mes. Una carpeta por
+    # curso, porque Flutter no entra en subdirectorios; cada curso se añade aquí
+    # cuando tiene su primera unidad (una carpeta vacía rompe la compilación).
+    - assets/content/unidades_mes/
+    - assets/content/unidades_mes/curso_0_2/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

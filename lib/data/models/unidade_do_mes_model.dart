@@ -25,6 +25,9 @@ class UnidadeDoMes {
   final String asamblea;
   final LocalizedString centroInteres;
 
+  /// La canción del mes, la de la asamblea. Nula si la asamblea no trae.
+  final String? cancion;
+
   /// Lo que se queda todo el mes: de 3 a 5 unidades léxicas según la edad.
   final List<RefNucleo> nucleo;
 
@@ -53,6 +56,7 @@ class UnidadeDoMes {
     required this.mesCalendario,
     required this.asamblea,
     required this.centroInteres,
+    this.cancion,
     required this.nucleo,
     this.descriptivas = const [],
     this.formulas = const [],
@@ -78,6 +82,7 @@ class UnidadeDoMes {
       mesCalendario: (json['mesCalendario'] as num?)?.toInt() ?? 0,
       asamblea: json['asamblea'] as String? ?? '',
       centroInteres: _texto(json['centroInteres']),
+      cancion: (json['cancion'] as Map?)?['titulo'] as String?,
       nucleo: [
         for (final e in (json['nucleo'] as List? ?? const []))
           if (e is Map) RefNucleo.fromJson(Map<String, dynamic>.from(e)),

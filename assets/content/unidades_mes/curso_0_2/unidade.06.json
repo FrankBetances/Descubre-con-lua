@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.06",
+  "curso": "curso_0_2",
+  "orden": 6,
+  "mesCalendario": 2,
+  "asamblea": "asamblea.primeiro_ciclo.febreiro.0_2_anos",
+  "centroInteres": {
+    "gl": "A motricidade zoomorfa e as onomatopeas",
+    "es": "La motricidad zoomorfa y las onomatopeyas"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.febreiro.0_2.01",
+      "objeto": {
+        "gl": "O títere da ra",
+        "es": "El títere de la rana"
+      }
+    },
+    {
+      "ref": "0_2.xaneiro.s1.the-cat-says-meow",
+      "objeto": {
+        "gl": "O títere do gato",
+        "es": "El títere del gato"
+      }
+    },
+    {
+      "ref": "0_2.xaneiro.s3.tweet-tweet",
+      "objeto": {
+        "gl": "O títere do paxaro",
+        "es": "El títere del pájaro"
+      }
+    },
+    {
+      "ref": "0_2.xaneiro.s3.hop-along"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.febreiro.0_2.01",
+      "usa": [
+        "frase.cmd.febreiro.0_2.01"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Títeres de man de tea branda: ra, paxaro e gato",
+      "es": "Títeres de mano de tela suave: rana, pájaro y gato"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Dobra as pernas cando a ra salta nos seus xeonllos",
+      "es": "Dobla las piernas cuando la rana salta en sus rodillas"
+    },
+    {
+      "gl": "Busca co ollo o títere que fai o son",
+      "es": "Busca con la mirada el títere que hace el sonido"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.xaneiro.0_2.01"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

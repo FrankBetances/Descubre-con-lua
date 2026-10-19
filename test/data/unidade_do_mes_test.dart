@@ -1,5 +1,9 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/models/unidade_do_mes_model.dart';
 
 /// M3.1: la unidad del mes se lee entera, y lo que cita sigue siendo un id.
@@ -14,6 +18,7 @@ void main() {
     'mesCalendario': 11,
     'asamblea': 'asamblea.segundo_ciclo.novembro.5_infantil',
     'centroInteres': {'gl': 'O magosto', 'es': 'El magosto'},
+    'cancion': {'titulo': 'Chestnuts, hot and sweet'},
     'nucleo': [
       {
         'ref': '4_5.novembro.s1.chestnut',
@@ -58,6 +63,7 @@ void main() {
     expect(u.orden, 3);
     expect(u.mesCalendario, 11);
     expect(u.centroInteres.es, 'El magosto');
+    expect(u.cancion, 'Chestnuts, hot and sweet');
     expect(u.nucleo.map((n) => n.ref),
         ['4_5.novembro.s1.chestnut', '4_5.novembro.s1.fire']);
     expect(u.nucleo.first.objeto?.gl, 'Unha castaña');
@@ -84,8 +90,43 @@ void main() {
 
   test('sen estrutura nin contraste, quedan en nulo', () {
     final u = UnidadeDoMes.fromJson(
-        {...unidade, 'estructura': null, 'contraste': null});
+        {...unidade, 'estructura': null, 'contraste': null, 'cancion': null});
+    expect(u.cancion, isNull);
     expect(u.estructura, isNull);
     expect(u.contraste, isNull);
+  });
+
+  test('o cargador le a unidade da súa ruta', () async {
+    String? pedida;
+    final loader = ContentAssetLoader(stringLoader: (path) async {
+      pedida = path;
+      return jsonEncode(unidade);
+    });
+    final u = await loader.loadUnidadeDoMes('curso_4_5', 3);
+    expect(pedida, 'assets/content/unidades_mes/curso_4_5/unidade.03.json');
+    expect(u.id, 'unidade.curso_4_5.03');
+  });
+
+  // Las del repositorio: que el modelo las lea sin perder el núcleo ni las
+  // órdenes. Lo demás —ids, centro, tamaños— lo mira tools/check_unidades.py.
+  test('as unidades do repositorio lense enteiras', () {
+    final ficheiros = Directory('assets/content/unidades_mes')
+        .listSync(recursive: true)
+        .whereType<File>()
+        .where((f) => f.path.endsWith('.json'))
+        .toList();
+    expect(ficheiros, isNotEmpty);
+    for (final f in ficheiros) {
+      final datos = jsonDecode(f.readAsStringSync()) as Map<String, dynamic>;
+      final u = UnidadeDoMes.fromJson(datos);
+      expect(u.id, datos['id'], reason: f.path);
+      expect(u.nucleo, hasLength((datos['nucleo'] as List).length),
+          reason: f.path);
+      expect(u.ordenes, isNotEmpty, reason: f.path);
+      for (final o in u.ordenes) {
+        expect(u.ensina.containsAll(o.usa), isTrue,
+            reason: '${f.path} ${o.ref}');
+      }
+    }
   });
 }

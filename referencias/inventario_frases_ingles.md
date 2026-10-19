@@ -5,17 +5,18 @@ del plan docente.
 
 ## Lo que entra en el registro de frases
 
-`assets/content/registro/frases.json`: 150 frases, de ellas
-9 propias (`registro/frases_propias.json`). Lo que ya es palabra
-del banco no entra: se cita por su id del banco.
+`assets/content/registro/frases.json`: 172 frases, de ellas
+9 propias (`registro/frases_propias.json`). Una orden entra
+aunque su texto sea también palabra del banco: se lleva el gesto de su fuente,
+y comparte la grabación.
 
-| Fuente | Frases | Ya en el banco | En el registro |
+| Fuente | Frases | Mismo texto en el banco | En el registro |
 | --- | --- | --- | --- |
-| `asambleas_primeiro_ciclo` | 43 | 13 | 30 |
+| `asambleas_primeiro_ciclo` | 43 | 13 | 43 |
 | `asambleas_segundo_ciclo` | 90 | 0 | 90 |
 | `calendario` | 5 | 0 | 5 |
 | `dinamicas_aula.json` | 5 | 0 | 5 |
-| `steam` | 10 | 9 | 1 |
+| `steam` | 10 | 9 | 10 |
 | `xogos_fogar.json` | 10 | 0 | 10 |
 | `registro/frases_propias.json` | 9 | 0 | 9 |
 

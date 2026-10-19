@@ -208,6 +208,17 @@
       "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.decembro.2_3_anos.json"
     },
     {
+      "id": "frase.cmd.decembro.2_3.03",
+      "tipo": "orde",
+      "en": "Wake up!",
+      "accion": {
+        "gl": "Incorporarse dun salto.",
+        "es": "Incorporarse de un salto.",
+        "en": "Spring back up."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.decembro.2_3_anos.json"
+    },
+    {
       "id": "frase.cmd.febreiro.0_2.01",
       "tipo": "orde",
       "en": "Jump, jump, green frog! Ribbit!",
@@ -217,6 +228,17 @@
         "en": "Rest the puppet's feet on the child's knees so the legs bend in response."
       },
       "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.febreiro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.febreiro.2_3.01",
+      "tipo": "orde",
+      "en": "Fly like a bird!",
+      "accion": {
+        "gl": "Desprazarse de puntillas cos brazos estendidos.",
+        "es": "Desplazarse de puntillas con los brazos extendidos.",
+        "en": "Move on tiptoe with the arms stretched out."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.febreiro.2_3_anos.json"
     },
     {
       "id": "frase.cmd.febreiro.2_3.02",
@@ -250,6 +272,17 @@
         "en": "Hold the baby's hands and rub them together."
       },
       "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.maio.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.maio.2_3.01",
+      "tipo": "orde",
+      "en": "Wash your face!",
+      "accion": {
+        "gl": "Fregar con suavidade meixelas e fronte coa toalla.",
+        "es": "Frotar con suavidad mejillas y frente con la toalla.",
+        "en": "Gently rub cheeks and forehead with the towel."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.maio.2_3_anos.json"
     },
     {
       "id": "frase.cmd.maio.2_3.02",
@@ -340,6 +373,39 @@
       "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.novembro.2_3_anos.json"
     },
     {
+      "id": "frase.cmd.outubro.0_2.01",
+      "tipo": "orde",
+      "en": "Head",
+      "accion": {
+        "gl": "Roza suavemente a coroniña.",
+        "es": "Roza suavemente la coronilla.",
+        "en": "Gently brush the top of the head."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.outubro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.outubro.0_2.02",
+      "tipo": "orde",
+      "en": "Tummy",
+      "accion": {
+        "gl": "Acaricia a barriga con movementos circulares.",
+        "es": "Acaricia la tripita con movimientos circulares.",
+        "en": "Stroke the tummy in circles."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.outubro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.outubro.0_2.03",
+      "tipo": "orde",
+      "en": "Toes",
+      "accion": {
+        "gl": "Lixeiro cóxegas nos dedos dos pés.",
+        "es": "Leve cosquilleo en los dedos de los pies.",
+        "en": "A light tickle on the toes."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.outubro.0_2_anos.json"
+    },
+    {
       "id": "frase.cmd.outubro.2_3.01",
       "tipo": "orde",
       "en": "Head, shoulders, knees and toes",
@@ -362,6 +428,50 @@
       "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.outubro.2_3_anos.json"
     },
     {
+      "id": "frase.cmd.outubro.2_3.03",
+      "tipo": "orde",
+      "en": "FREEZE!",
+      "accion": {
+        "gl": "Deter ao instante calquera oscilación.",
+        "es": "Detener al instante cualquier oscilación.",
+        "en": "Stop any movement instantly."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.outubro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.setembro.0_2.01",
+      "tipo": "orde",
+      "en": "Up",
+      "accion": {
+        "gl": "Eleva as mans do bebé cara arriba.",
+        "es": "Eleva las manos del bebé hacia arriba.",
+        "en": "Lift the baby's hands upwards."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.setembro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.setembro.0_2.02",
+      "tipo": "orde",
+      "en": "Down",
+      "accion": {
+        "gl": "Baixa as mans e apóiaas nos seus muslos.",
+        "es": "Baja las manos y apóyalas en sus muslos.",
+        "en": "Lower the hands and rest them on the thighs."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.setembro.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.setembro.0_2.03",
+      "tipo": "orde",
+      "en": "Clap",
+      "accion": {
+        "gl": "Guía dúas palmadas lentas.",
+        "es": "Guía dos palmadas lentas.",
+        "en": "Guide two slow claps."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.setembro.0_2_anos.json"
+    },
+    {
       "id": "frase.cmd.setembro.2_3.01",
       "tipo": "orde",
       "en": "Everybody stand up!",
@@ -369,6 +479,17 @@
         "gl": "Tracción suave da cinta para erguerse á vez.",
         "es": "Tracción suave de la cinta para levantarse a la vez.",
         "en": "Gentle pull on the band so everyone stands up together."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.setembro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.setembro.2_3.02",
+      "tipo": "orde",
+      "en": "Hello!",
+      "accion": {
+        "gl": "Traslado do peso dun pé ao outro.",
+        "es": "Traslado del peso de un pie al otro.",
+        "en": "Shift the body weight from one foot to the other."
       },
       "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.setembro.2_3_anos.json"
     },
@@ -382,6 +503,17 @@
         "en": "Sit down carefully on the rug."
       },
       "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.setembro.2_3_anos.json"
+    },
+    {
+      "id": "frase.cmd.xaneiro.0_2.01",
+      "tipo": "orde",
+      "en": "Put on your hat!",
+      "accion": {
+        "gl": "Colocar o gorro na cabeza mirando o espello.",
+        "es": "Colocar el gorro en la cabeza mirando el espejo.",
+        "en": "Place the hat on the head while looking in the mirror."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.xaneiro.0_2_anos.json"
     },
     {
       "id": "frase.cmd.xaneiro.0_2.02",
@@ -426,6 +558,17 @@
         "en": "Wave the sheet to create airflow and a visual swell."
       },
       "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.xuno.0_2_anos.json"
+    },
+    {
+      "id": "frase.cmd.xuno.2_3.01",
+      "tipo": "orde",
+      "en": "Gentle waves",
+      "accion": {
+        "gl": "Pequenos tremores de pulso.",
+        "es": "Pequeños temblores de muñeca.",
+        "en": "Small wrist tremors."
+      },
+      "fonte": "asambleas_primeiro_ciclo/asamblea.primeiro_ciclo.xuno.2_3_anos.json"
     },
     {
       "id": "frase.cmd.xuno.2_3.02",
@@ -1590,12 +1733,102 @@
       "fonte": "xogos_fogar.json"
     },
     {
+      "id": "frase.steam.I1-MATERIA-001.01",
+      "tipo": "steam",
+      "en": "Drop",
+      "accion": {
+        "gl": "Abrir as mans e deixar caer o obxecto na cesta.",
+        "es": "Abrir las manos y dejar caer el objeto en la cesta."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
+      "id": "frase.steam.I2-CINEMATICA-001.01",
+      "tipo": "steam",
+      "en": "Roll",
+      "accion": {
+        "gl": "Facer xirar os brazos un arredor do outro.",
+        "es": "Hacer girar los brazos uno alrededor del otro."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
+      "id": "frase.steam.I3-ACUSTICA-001.01",
+      "tipo": "steam",
+      "en": "Listen",
+      "accion": {
+        "gl": "Poñer a man en cunca detrás da orella e quedar en silencio.",
+        "es": "Poner la mano en forma de cuenco detrás de la oreja y quedarse en silencio."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
+      "id": "frase.steam.I3-ACUSTICA-001.02",
+      "tipo": "steam",
+      "en": "Stop",
+      "accion": {
+        "gl": "Pousar a man aberta sobre o tambor para calalo.",
+        "es": "Posar la mano abierta sobre el tambor para callarlo."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
+      "id": "frase.steam.I4-OPTICA-001.01",
+      "tipo": "steam",
+      "en": "Look",
+      "accion": {
+        "gl": "Facer uns prismáticos coas mans e mirar a parede.",
+        "es": "Hacer unos prismáticos con las manos y mirar la pared."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
+      "id": "frase.steam.I4-OPTICA-001.02",
+      "tipo": "steam",
+      "en": "Step forward",
+      "accion": {
+        "gl": "Dar un paso cara adiante, cara á parede.",
+        "es": "Dar un paso hacia delante, hacia la pared."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
+      "id": "frase.steam.I4-OPTICA-001.03",
+      "tipo": "steam",
+      "en": "Step back",
+      "accion": {
+        "gl": "Dar un paso cara atrás, cara á lanterna.",
+        "es": "Dar un paso hacia atrás, hacia la linterna."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
       "id": "frase.steam.I5-LOGICA-001.01",
       "tipo": "steam",
       "en": "Step",
       "accion": {
         "gl": "Un paso firme cara adiante, dentro da cuadrícula.",
         "es": "Un paso firme hacia delante, dentro de la cuadrícula."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
+      "id": "frase.steam.I5-LOGICA-001.02",
+      "tipo": "steam",
+      "en": "Turn right",
+      "accion": {
+        "gl": "Xirar un cuarto de volta cara á man dereita.",
+        "es": "Girar un cuarto de vuelta hacia la mano derecha."
+      },
+      "fonte": "steam/unidades_steam.json"
+    },
+    {
+      "id": "frase.steam.I5-LOGICA-001.03",
+      "tipo": "steam",
+      "en": "Turn left",
+      "accion": {
+        "gl": "Xirar un cuarto de volta cara á man esquerda.",
+        "es": "Girar un cuarto de vuelta hacia la mano izquierda."
       },
       "fonte": "steam/unidades_steam.json"
     },
