@@ -23,7 +23,7 @@ Pendientes: D1, D2, D5, D7, D8 y D9.
 | Módulo | Estado | Fecha | Evidencia | Notas / siguiente paso |
 | --- | --- | --- | --- | --- |
 | M1.1 | Bloqueado | 19/10/2026 | — | El DOG no responde desde el entorno de trabajo (el proxy rechaza `xunta.gal`). Hace falta permitir el host o que Frank aporte los PDF |
-| M1.2 | Pendiente | 19/10/2026 | — |  |
+| M1.2 | En rama | 19/10/2026 | `referencias/base/ERRATAS.md`: erratas por fichero y línea (líneas contrastadas con `grep`) y un aviso en `referencias/base/README.md`. Textos movidos de `docs/base/` a `referencias/base/` (opción de trabajo de D8) | Se cierra cuando Frank conteste D8. Siguiente: M1.3 |
 | M1.3 | Pendiente | 19/10/2026 | — |  |
 | M2.4 | En rama | 19/10/2026 | `tools/check_sin_repetir.py` en `tools/gates.sh`, verde en local sobre 151 ficheros; 24 casos probados a mano, los 24 bien; gates de voz (cobertura, corpus, niveles, sobrantes) verdes tras el workflow de voz (commit a5520652). Gates de Flutter y `xera_nomes` no corridos en local: no hay `dart` en el entorno; los corre el CI del PR | Cuatro textos corregidos (curriculo_50 3-4 enero, conto_021, historia 133, lámina escola_rut_123) y dos grabaciones en inglés regeneradas. Para Frank, fuera de este módulo: (1) 178 de las 205 láminas tenían `tprAccion.es` en gallego: Frank mandó corregirlas y están traducidas (el cambio es solo de texto: esa cadena no tiene voz). (2) Cuatro órdenes de 6.º (abril, diciembre, marzo y junio) esperan que la criatura diga la fórmula; salen de su documento curricular. Una (abril) está en las excepciones del gate; las otras tres el gate no las detecta porque no dicen «say» ni «repite». Frank decidió que se quedan. Siguiente: M1.2 |
 | M2.1 | Pendiente | 19/10/2026 | — | Usa la opción de trabajo de D2 |

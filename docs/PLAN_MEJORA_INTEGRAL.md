@@ -98,7 +98,7 @@ módulo que la usa no se cierra sin la respuesta.
 | D2 | Inmersión o lengua de casa | Translanguaging: trama en gl/es y frase de Lúa en inglés | M2.1 |
 | D5 | La asamblea de seis pasos | Se retira; el calendario abre la de cuatro fases | M4.3 |
 | D7 | Lista de práctica de la persona adulta | No entra hasta que Frank la apruebe (añade una clave guardada) | M8.2 |
-| D8 | `docs/base/` en el sitio público | Sale de `docs/` a una carpeta que Pages no publica | M1.2 |
+| D8 | Los textos de base en el sitio público | Aplicada la opción de trabajo: están en `referencias/base/`, fuera de lo que publica Pages. Se deshace con un `git mv` | M1.2 |
 | D9 | El banco de los meses cuyo tema no es el de la asamblea | **No se mueve.** Sigue como ampliación del día; el núcleo sale de la asamblea y del registro de frases. Moverlo obligaría a reescribir los cuentos semanales y a migrar el repaso guardado | M3.3 |
 
 ## 3. Cómo se ejecuta
@@ -219,8 +219,8 @@ por curso; el registro anota qué cursos están hechos.
   - lenguaje clínico;
   - las dos definiciones de CROWD y de expansión.
 
-  Además, la ubicación de `docs/base/` según D8.
-- **Entregable:** `ERRATAS.md` junto a los textos.
+  Además, la ubicación de los textos según D8: `referencias/base/`.
+- **Entregable:** `referencias/base/ERRATAS.md`, junto a los textos.
 - **Hecho cuando:** cada errata tiene fichero, línea y corrección.
 - **Sesiones:** 1.
 

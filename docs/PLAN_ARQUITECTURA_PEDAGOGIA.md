@@ -22,7 +22,7 @@ describe; no la duplica.
    Curricular Infantil Trilingüe Galicia* (2.º ciclo), *Planificación Inglés
    Escuelas Infantiles* (1.º ciclo) y *Modelo de Adquisición Natural y
    Proyección Anual* (banco de cinco palabras al día).
-4. **Los cinco textos de `docs/base/`**: currículo de inglés en Galicia,
+4. **Los cinco textos de `referencias/base/`**: currículo de inglés en Galicia,
    currículo de vocabulario de 2 a 6 años, cuentos dialógicos bilingües,
    estrategias de apoyo lingüístico y rutinas SparkLing.
 
