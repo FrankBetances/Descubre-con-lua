@@ -5,6 +5,7 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import '../loaders/content_asset_loader.dart';
 import '../models/calendario_model.dart';
+import '../models/unidade_do_mes_model.dart';
 
 /// El contenido del Calendario Escola·Fogar, leído del bundle.
 ///
@@ -17,8 +18,10 @@ class CalendarioContenido {
   final GuiaAtencion guia;
 
   /// Los seis años: los diez meses de cada curso, de 0-2 a 5-6, seguidos. Es
-  /// lo que recorre el calendario. Cada mes trae el tema, las actividades y el
-  /// inglés de SU curso, no los mismos diez para todas las edades.
+  /// lo que recorre el calendario. Cada mes es la unidad de SU curso
+  /// (`assets/content/unidades_mes/`): su centro, que es el de la asamblea, y
+  /// su núcleo. Antes salía de `curriculo_50_meses.json`, que contaba otro tema
+  /// distinto del de la asamblea en casi todos los meses.
   final List<MesCurricular> trayecto;
 
   const CalendarioContenido({
@@ -28,7 +31,11 @@ class CalendarioContenido {
   });
 
   static const String mesesAsset = 'assets/content/calendario/meses.json';
-  static const String curriculoAsset =
+
+  /// Solo para los minutos de casa de cada curso y mes, que crecen con la edad
+  /// (de 3 en 0-2 a 8 en 5-6). Su tema y sus actividades ya no se leen: el mes
+  /// es su unidad. Hasta que la unidad traiga `hogar` (M6).
+  static const String minutosAsset =
       'assets/content/calendario/curriculo_50_meses.json';
 
   /// Los cursos del trayecto, en orden.
@@ -76,38 +83,53 @@ class CalendarioContenido {
       AssetBundleStringLoader cargador) async {
     final meses = desdeJsonMeses(await cargador(mesesAsset));
     final guia = desdeJsonGuia(await cargador(atencionAsset));
-    final trayecto = desdeJsonCurriculo(await cargador(curriculoAsset), meses);
+    final unidades = [
+      for (final curso in cursos)
+        for (var orden = 1; orden <= 10; orden++)
+          UnidadeDoMes.fromJson(Map<String, dynamic>.from(json.decode(
+              await cargador(
+                  ContentAssetLoader.unidadeDoMesPath(curso, orden))) as Map)),
+    ];
+    final minutos = desdeJsonMinutos(await cargador(minutosAsset));
+    final trayecto = desdeUnidades(unidades, meses, minutos: minutos);
     return CalendarioContenido(meses: meses, guia: guia, trayecto: trayecto);
   }
 
-  /// Los 50 meses del currículo, en el orden del trayecto: curso a curso y,
-  /// dentro de cada curso, de septiembre a junio.
-  static List<MesCurricular> desdeJsonCurriculo(
-      String rawJson, List<MesCurricular> meses) {
+  /// Los 50 meses del trayecto, en su orden: curso a curso y, dentro de cada
+  /// curso, de septiembre a junio. El nombre y el icono del mes salen de
+  /// [meses]; el resto, de la unidad.
+  static List<MesCurricular> desdeUnidades(
+      List<UnidadeDoMes> unidades, List<MesCurricular> meses,
+      {Map<String, int> minutos = const {}}) {
+    final ordenadas = [...unidades]..sort((a, b) {
+        final c = cursos.indexOf(a.curso).compareTo(cursos.indexOf(b.curso));
+        return c != 0 ? c : a.orden.compareTo(b.orden);
+      });
+    final porOrden = {for (final m in meses) m.orden: m};
+    return List.unmodifiable([
+      for (final (i, u) in ordenadas.indexed)
+        MesCurricular.daUnidade(
+          u,
+          base: porOrden[u.orden]!,
+          orden: i + 1,
+          minutos: minutos['${u.curso}.${u.orden}'],
+        ),
+    ]);
+  }
+
+  /// Los minutos de casa por curso y mes, con clave `curso_0_2.1`.
+  static Map<String, int> desdeJsonMinutos(String rawJson) {
     final decoded = json.decode(rawJson);
     if (decoded is! List) {
       throw const FormatException(
           'curriculo_50_meses.json: se esperaba una lista');
     }
-    final entradas = [
-      for (final e in decoded) Map<String, dynamic>.from(e as Map),
-    ]..sort((a, b) {
-        final c = cursos
-            .indexOf(a['cursoId'] as String)
-            .compareTo(cursos.indexOf(b['cursoId'] as String));
-        return c != 0
-            ? c
-            : (a['mesNumero'] as num).compareTo(b['mesNumero'] as num);
-      });
-    final porOrden = {for (final m in meses) m.orden: m};
-    return List.unmodifiable([
-      for (final (i, e) in entradas.indexed)
-        MesCurricular.doCurriculo(
-          e,
-          base: porOrden[(e['mesNumero'] as num).toInt()]!,
-          orden: i + 1,
-        ),
-    ]);
+    return {
+      for (final e in decoded)
+        if (e is Map)
+          '${e['cursoId']}.${(e['mesNumero'] as num).toInt()}':
+              (e['minutosSugeridos'] as num).toInt(),
+    };
   }
 
   /// El índice en el [trayecto] del mes de [fecha] en el curso [cursoId].

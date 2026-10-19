@@ -45,7 +45,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BANDAS = ROOT / "assets" / "content" / "corpus" / "bnc_coca_8000.json"
+BANDAS = ROOT / "referencias" / "fuentes" / "bnc_coca_8000.json"
 DESTINO = (ROOT / "assets" / "content" / "corpus"
            / "ingles_4000_uso_habitual.json")
 # La fuente vive en tools/ y no en assets/: todo lo que hay en

@@ -56,6 +56,9 @@ void main() {
       unidadPaths: unidades,
       capsulaPaths: const [],
     );
+    // El banco y el registro, que resuelven el núcleo de cada unidad del mes.
+    await repositorio.loadProgramaTpr();
+    await repositorio.loadRexistroFrases();
   });
   group('CalendarioModel & 10 Meses Curriculares de Galicia', () {
     test('contén exactamente 10 meses de setembro a xunho', () {
@@ -288,21 +291,43 @@ void main() {
       }
     });
 
-    test('cada tarxeta ten os seus textos, sen repetir outra', () {
-      final centros = <String>{};
+    // M3.9: cada tarxeta é a unidade do seu mes, e o seu centro é o da
+    // asemblea (D4). 0-2 e 2-3 comparten asemblea de 1.º ciclo e por iso o
+    // centro: dentro dun curso non se repite ningún.
+    test('cada tarxeta é a súa unidade, sen repetir centro no curso', () {
+      final centros = <String, Set<String>>{};
       for (final m in contenido.trayecto) {
         final onde = '${m.cursoId} mes ${m.mesCalendario}';
+        final u = m.unidade;
+        expect(u, isNotNull, reason: onde);
+        expect((u!.curso, u.mesCalendario), (m.cursoId, m.mesCalendario),
+            reason: onde);
         expect(m.nombreMes.hasParity, isTrue, reason: onde);
-        expect(m.centroInteres.hasParity, isTrue, reason: onde);
-        expect(m.objetivoPedagogico.hasParity, isTrue, reason: onde);
-        expect(m.actividadAula.hasParity, isTrue, reason: onde);
-        expect(m.actividadHogar.hasParity, isTrue, reason: onde);
-        expect(m.rutinaRecomendadaHogar.hasParity, isTrue, reason: onde);
-        expect(m.ingles.frase, isNotEmpty, reason: onde);
+        expect(m.centroInteres.gl, u.centroInteres.gl, reason: onde);
+        expect(m.centroInteres.es, u.centroInteres.es, reason: onde);
+        expect(u.nucleo, isNotEmpty, reason: onde);
+        // O tema vello do currículo xa non se pinta.
+        expect(m.objetivoPedagogico.hasParity, isFalse, reason: onde);
+        expect(m.actividadAula.hasParity, isFalse, reason: onde);
+        expect(m.actividadHogar.hasParity, isFalse, reason: onde);
+        expect(m.ingles.frase, isEmpty, reason: onde);
         expect(m.unidadId, isNotNull, reason: onde);
-        expect(centros.add(m.centroInteres.gl), isTrue,
+        expect(
+            centros.putIfAbsent(m.cursoId!, () => {}).add(m.centroInteres.gl),
+            isTrue,
             reason: '$onde repite «${m.centroInteres.gl}»');
       }
+    });
+
+    test('os minutos de casa son os do curso, que medran coa idade', () {
+      expect(
+          contenido
+              .trayecto[contenido.inicioDoCurso('curso_0_2')].minutosSugeridos,
+          3);
+      expect(
+          contenido
+              .trayecto[contenido.inicioDoCurso('curso_5_6')].minutosSugeridos,
+          8);
     });
 
     test('o mes de hoxe búscase dentro do curso pedido', () {
@@ -366,9 +391,12 @@ void main() {
           final oct = mesDe(curso, 2);
           expect(oct.mesCalendario, 10);
           expect(find.text(oct.centroInteres.gl), findsWidgets, reason: curso);
-          expect(
-              find.text(mesDe('curso_0_2', 2).centroInteres.gl), findsNothing,
-              reason: curso);
+          // 2-3 comparte asemblea, e por iso centro, con 0-2 (D4).
+          if (oct.centroInteres.gl != mesDe('curso_0_2', 2).centroInteres.gl) {
+            expect(
+                find.text(mesDe('curso_0_2', 2).centroInteres.gl), findsNothing,
+                reason: curso);
+          }
           // A pastilla da tarxeta di de que curso é.
           expect(
               find.descendant(
@@ -690,19 +718,18 @@ void main() {
       // dese mes, que si existe para os dez.
       expect(find.byKey(const Key('boton_iniciar_sesion_fogar')), findsNothing);
 
-      // O que ten diante é a rutina DESE mes, coa súa frase en inglés.
+      // O que ten diante é o núcleo DESE mes, o mesmo que ve a docente, coa
+      // súa voz e sen o que é do aula.
       final hoxe = contenido
           .trayecto[contenido.indiceNoTrayecto('curso_0_2', DateTime.now())];
+      final nucleo = repositorio.nucleoSync(hoxe.unidade!);
+      expect(nucleo, hasLength(hoxe.unidade!.nucleo.length));
       await expectAfterScrolling(
         tester,
-        find.textContaining(hoxe.actividadHogar.gl),
+        find.text(nucleo.first.en),
         matcher: findsWidgets,
       );
-      await expectAfterScrolling(
-        tester,
-        find.text(hoxe.ingles.frase),
-        matcher: findsWidgets,
-      );
+      expect(find.text('QUE OBSERVAR'), findsNothing);
     });
 
     testWidgets(
@@ -720,8 +747,10 @@ void main() {
       )));
       await tester.pumpAndSettle();
 
-      // En modo Aula: vese o temporizador sutil da asemblea e as instrucións breves
-      expect(find.textContaining('ACTIVIDADE NA AULA'), findsOneWidget);
+      // En modo Aula: vese o núcleo do mes, o temporizador sutil da asemblea
+      // e as instrucións breves. A actividade do currículo vello xa non.
+      expect(find.text('O NÚCLEO DO MES'), findsOneWidget);
+      expect(find.textContaining('ACTIVIDADE NA AULA'), findsNothing);
       expect(
           find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
       expect(find.textContaining('Instrucións breves para a asemblea:'),
@@ -734,8 +763,11 @@ void main() {
       await tester.tap(tabFogar);
       await tester.pumpAndSettle();
 
-      // En modo Fogar: vese a micro-rutina, o temporizador sutil de fogar e a ligazón á guía
-      expect(find.textContaining('MICRO-RUTINA NO FOGAR'), findsOneWidget);
+      // En modo Fogar: o núcleo, o temporizador sutil de fogar e a ligazón á
+      // guía. A micro-rutina do currículo vello contaba outro tema: volve coa
+      // casa da unidade (M6).
+      expect(find.text('O NÚCLEO DO MES'), findsOneWidget);
+      expect(find.textContaining('MICRO-RUTINA NO FOGAR'), findsNothing);
       expect(find.textContaining('ACTIVIDADE NA AULA'), findsNothing);
       // O mes que abre a pantalla: o do trayecto de 0-2, o curso por defecto,
       // e non o mes xenérico do calendario escolar. En setembro os dous
@@ -755,7 +787,7 @@ void main() {
       await tester.tap(tabAula);
       await tester.pumpAndSettle();
 
-      expect(find.textContaining('ACTIVIDADE NA AULA'), findsOneWidget);
+      expect(find.text('O NÚCLEO DO MES'), findsOneWidget);
       expect(
           find.textContaining('Temporizador sutil: 5-8 min'), findsOneWidget);
     });

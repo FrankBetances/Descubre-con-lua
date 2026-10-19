@@ -24,7 +24,7 @@ Una orden o una frase entra aunque su texto sea también palabra del banco:
 de 3-4 es la palabra con el gesto de 3-4. Lo que se lleva de su fuente es el
 gesto. El mismo texto con el mismo estilo comparte grabación, así que no
 cuesta audio nuevo. Lo que no entra todavía por otra razón (las palabras del calendario de 50 meses, que
-se retira en M3.9; la frase TPR de los cuentos, M5; las láminas, M7.2; la
+solo lee ya el Planificador, hasta M7.3; la frase TPR de los cuentos, M5; las láminas, M7.2; la
 asamblea vieja, M4.3) queda en el inventario con su destino:
 `referencias/inventario_frases_ingles.md`.
 
@@ -136,7 +136,8 @@ def pendentes() -> list[tuple[str, int, str]]:
         ("calendario/curriculo_50_meses.json (léxico, órdenes y frase del mes)",
          sum(len(m["ingles"]["lexico"]) + len(m["ingles"]["tpr"]) + 1
              for m in calendario),
-         "Se retira como fuente en M3.9: el calendario pasa a leer la unidad"),
+         "Desde M3.9 el calendario lee la unidad; lo lee aún el Planificador, "
+         "hasta M7.3"),
         ("cuentos: frase TPR de los cuentos y de las historias",
          len(contos) + len(historias),
          "M5: el cuento de la semana conserva su frase; el microcuento cita el registro"),

@@ -80,7 +80,7 @@ async function main() {
     }
   }
   writeJson('assets/content/calendario/calendario_dias.json', todosLosDias);
-  copyFile('.studio_ref/calendario-3-6-anos.json', 'assets/content/calendario/calendario_3_6_anos.json');
+  copyFile('.studio_ref/calendario-3-6-anos.json', 'referencias/fuentes/calendario_3_6_anos.json');
 
   // 4. English Immersion & Phonics
   writeJson('assets/content/english/english_corpus.json', {
@@ -112,7 +112,7 @@ async function main() {
   });
 
   // 6. Corpus 8000 Palabras
-  copyFile('.studio_ref/src/data/bncCoca8000.json', 'assets/content/corpus/bnc_coca_8000.json');
+  copyFile('.studio_ref/src/data/bncCoca8000.json', 'referencias/fuentes/bnc_coca_8000.json');
   copyFile('.studio_ref/src/data/bncCoca8000Cefr.json', 'assets/content/corpus/bnc_coca_8000_cefr.json');
 
   console.log('\n=== ALL ASSETS EXTRACTED SUCCESSFULLY! ===');

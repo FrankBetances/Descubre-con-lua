@@ -15,6 +15,7 @@ import '../models/lamina_model.dart';
 import '../models/phonics_model.dart';
 import '../models/ponte_ao_dia_model.dart';
 import '../models/progresion_model.dart';
+import '../models/rexistro_frases_model.dart';
 import '../models/tpr_curriculum_scheduler.dart';
 // `Cuento` y `CuentoPagina` existen DOS veces en el proyecto y no son la misma
 // cosa: en unidad_model.dart son el cuento que vive DENTRO de una unidad de la
@@ -24,6 +25,7 @@ import '../models/tpr_curriculum_scheduler.dart';
 // esto, los dos nombres chocan y el proyecto NO compila.
 import '../models/unidad_model.dart' hide Cuento, CuentoPagina;
 import '../models/steam_model.dart';
+import '../models/unidade_do_mes_model.dart';
 
 /// A content file that could not be loaded, kept instead of being discarded.
 class ContentLoadFailure {
@@ -949,6 +951,45 @@ class ContentRepository {
 
   /// El curso de inglés con ese id (`curso_0_2` … `curso_5_6`), si ya está.
   CursoTpr? cursoTprSync(String cursoId) => _programaTpr?.curso(cursoId);
+
+  // --- EL REGISTRO DE FRASES ---
+
+  RexistroDeFrases? _rexistroFrases;
+  Future<RexistroDeFrases?>? _cargandoRexistroFrases;
+
+  /// El inglés que no es palabra del banco, o `null` si no se pudo leer. Con
+  /// el banco, es lo que resuelve los ids que cita una unidad del mes.
+  Future<RexistroDeFrases?> loadRexistroFrases() {
+    final ya = _rexistroFrases;
+    if (ya != null) return Future.value(ya);
+    return _cargandoRexistroFrases ??= _loader
+        .loadRawString(RexistroDeFrases.asset)
+        .then<RexistroDeFrases?>((raw) {
+      final rexistro = RexistroDeFrases.fromJson(
+          Map<String, dynamic>.from(jsonDecode(raw) as Map));
+      _rexistroFrases = rexistro;
+      return rexistro;
+    }).catchError((Object e) {
+      _loadErrors.add(ContentLoadFailure(RexistroDeFrases.asset, e.toString()));
+      _cargandoRexistroFrases = null;
+      return null;
+    });
+  }
+
+  RexistroDeFrases? get rexistroFrasesSync => _rexistroFrases;
+
+  /// El núcleo de [unidade] con su inglés y su gesto, con lo que ya esté
+  /// leído del banco y del registro.
+  List<PezaDaUnidade> nucleoSync(UnidadeDoMes unidade) => nucleoResolto(
+        unidade,
+        programa: _programaTpr,
+        rexistro: _rexistroFrases,
+      );
+
+  /// Una pieza que cita una unidad (una fórmula, una descriptiva, la
+  /// estructura), con su inglés y su gesto; `null` si aún no está leída.
+  PezaDaUnidade? pezaSync(String ref) =>
+      resolverPeza(ref, programa: _programaTpr, rexistro: _rexistroFrases);
 
   // --- IN-MEMORY & TEST HELPER METHODS ---
 

@@ -501,6 +501,23 @@ class ProgramaTpr {
 
   int get totalPalabras => cursos.fold(0, (t, c) => t + c.totalPalabras);
 
+  /// La palabra del banco con ese id (`3_4.maio.s4.whisper`), o `null`. El
+  /// prefijo del id dice el curso, así que solo se busca en ese.
+  TprWord? palabra(String id) {
+    final punto = id.indexOf('.');
+    if (punto < 0) return null;
+    final curso = this.curso('curso_${id.substring(0, punto)}');
+    if (curso == null) return null;
+    for (final m in curso.meses) {
+      for (final s in m.semanas) {
+        for (final p in s.palabras) {
+          if (p.id == id) return p;
+        }
+      }
+    }
+    return null;
+  }
+
   /// Cuántas palabras hay de cada categoría en todo el trayecto.
   Map<String, int> get porCategoria {
     final cuenta = <String, int>{};

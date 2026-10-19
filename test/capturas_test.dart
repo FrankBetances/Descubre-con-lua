@@ -171,6 +171,8 @@ void main() {
       contenido.addProgramaTpr(await ProgramaTpr.cargar(
         stringLoader: (path) => File(path).readAsString(),
       ));
+      // Con el banco, el registro de frases resuelve el núcleo del mes.
+      await contenido.loadRexistroFrases();
     });
     expect(contenido.programaTprSync?.totalPalabras, 4000,
         reason: 'O inglés dos cinco cursos non chegou a lerse.');

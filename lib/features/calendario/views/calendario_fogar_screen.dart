@@ -17,6 +17,7 @@ import '../../../data/repositories/content_repository.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../steam/widgets/steam_comun.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
+import '../widgets/nucleo_do_mes.dart';
 import '../widgets/palabras_do_dia.dart';
 
 /// Calendario Escolar Completo para o Fogar (Familias).
@@ -134,6 +135,11 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
 
     // El inglés del curso: las palabras de cada día y los totales de cada
     // trimestre. Aparte y sin esperar: la rutina de casa se pinta igual.
+    if (widget.repository.rexistroFrasesSync == null) {
+      widget.repository.loadRexistroFrases().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
     if (widget.repository.programaTprSync == null) {
       widget.repository.loadProgramaTpr().then((_) {
         if (mounted) setState(() {});
@@ -351,22 +357,37 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                         color: context.acento,
                                       ),
                                     ),
-                                    const SizedBox(height: 2),
-                                    Text(
-                                      mesCurricular.objetivoPedagogico
-                                          .resolve(lang),
-                                      style: const TextStyle(
-                                        fontSize: 14,
-                                        color: AppTheme.textSecondary,
+                                    if (mesCurricular
+                                        .objetivoPedagogico.hasParity) ...[
+                                      const SizedBox(height: 2),
+                                      Text(
+                                        mesCurricular.objetivoPedagogico
+                                            .resolve(lang),
+                                        style: const TextStyle(
+                                          fontSize: 14,
+                                          color: AppTheme.textSecondary,
+                                        ),
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
                                       ),
-                                      maxLines: 2,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
+                                    ],
                                   ],
                                 ),
                               ),
                             ],
                           ),
+                          // El mes es su unidad: lo mismo que ve la docente en
+                          // el calendario del aula, sin lo que es del aula.
+                          if (mesCurricular.unidade case final unidade?) ...[
+                            const SizedBox(height: 12),
+                            NucleoDoMes(
+                              unidade: unidade,
+                              nucleo: widget.repository.nucleoSync(unidade),
+                              language: lang,
+                              audioService: widget.audioService,
+                              enCasa: true,
+                            ),
+                          ],
                           if (mesCurricular.ingles.frase.isNotEmpty) ...[
                             const SizedBox(height: 10),
                             Container(

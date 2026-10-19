@@ -3,7 +3,11 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:descubre_con_lua/core/localization/localized_string.dart';
+
 import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
+import 'package:descubre_con_lua/data/models/rexistro_frases_model.dart';
+import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/models/unidade_do_mes_model.dart';
 
 /// M3.1: la unidad del mes se lee entera, y lo que cita sigue siendo un id.
@@ -128,5 +132,62 @@ void main() {
             reason: '${f.path} ${o.ref}');
       }
     }
+  });
+
+  // M3.9: el calendario pinta el núcleo resuelto. Si una pieza no se
+  // resolviera, la tarjeta del mes saldría con un hueco sin aviso.
+  group('o núcleo resólvese no banco e no rexistro', () {
+    late ProgramaTpr programa;
+    late RexistroDeFrases rexistro;
+
+    setUpAll(() async {
+      programa = await ProgramaTpr.cargar(
+          stringLoader: (path) => File(path).readAsString());
+      rexistro = RexistroDeFrases.fromJson(
+          jsonDecode(File(RexistroDeFrases.asset).readAsStringSync())
+              as Map<String, dynamic>);
+    });
+
+    test('unha orde do rexistro trae o seu xesto e o seu obxecto', () {
+      final peza = resolverPeza('frase.cmd.outubro.0_2.02',
+          programa: programa,
+          rexistro: rexistro,
+          objeto: const LocalizedString(gl: 'Unha pluma', es: 'Una pluma'));
+      expect(peza?.en, 'Tummy');
+      expect(peza?.significado, isNull);
+      expect(peza?.xesto.hasParity, isTrue);
+      expect(peza?.objeto?.gl, 'Unha pluma');
+    });
+
+    test('unha palabra do banco trae o que quere dicir e o seu xesto', () {
+      final peza = resolverPeza('0_2.outubro.s1.forehead',
+          programa: programa, rexistro: rexistro);
+      expect(peza?.en, 'Forehead');
+      expect(peza?.significado?.gl, 'Fronte');
+      expect(peza?.xesto.hasParity, isTrue);
+      expect(resolverPeza('non.existe', programa: programa, rexistro: rexistro),
+          isNull);
+    });
+
+    test('as 50 unidades resolven o núcleo enteiro', () {
+      final ficheiros = Directory('assets/content/unidades_mes')
+          .listSync(recursive: true)
+          .whereType<File>()
+          .where((f) => f.path.endsWith('.json'));
+      var vistas = 0;
+      for (final f in ficheiros) {
+        final u = UnidadeDoMes.fromJson(
+            jsonDecode(f.readAsStringSync()) as Map<String, dynamic>);
+        final nucleo = nucleoResolto(u, programa: programa, rexistro: rexistro);
+        expect(nucleo.map((p) => p.ref), u.nucleo.map((n) => n.ref),
+            reason: f.path);
+        for (final p in nucleo) {
+          expect(p.en.trim(), isNotEmpty, reason: '${f.path} ${p.ref}');
+          expect(p.xesto.hasParity, isTrue, reason: '${f.path} ${p.ref}');
+        }
+        vistas++;
+      }
+      expect(vistas, 50);
+    });
   });
 }
