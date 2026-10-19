@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "id": "unidade.curso_3_4.07",
+  "curso": "curso_3_4",
+  "orden": 7,
+  "mesCalendario": 3,
+  "asamblea": "asamblea.segundo_ciclo.marzo.4_infantil",
+  "centroInteres": {
+    "gl": "Da semente pequena á flor alta",
+    "es": "De la semilla pequeña a la flor alta"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.abril.s2.seed"
+    },
+    {
+      "ref": "3_4.outubro.s1.small"
+    },
+    {
+      "ref": "3_4.outubro.s4.tall"
+    },
+    {
+      "ref": "3_4.novembro.s3.dig"
+    },
+    {
+      "ref": "3_4.abril.s2.soil"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [
+    {
+      "ref": "3_4.marzo.s3.yes-please"
+    },
+    {
+      "ref": "3_4.marzo.s3.no-thank-you"
+    }
+  ],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.marzo.4i.01",
+      "usa": [
+        "3_4.outubro.s1.small",
+        "3_4.abril.s2.seed"
+      ]
+    },
+    {
+      "ref": "frase.cmd.marzo.4i.02",
+      "usa": [
+        "3_4.outubro.s4.tall"
+      ]
+    },
+    {
+      "ref": "frase.cmd.marzo.4i.03",
+      "usa": [
+        "3_4.novembro.s3.dig",
+        "3_4.abril.s2.soil"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Un pouco de terra",
+      "es": "Un poco de tierra"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Encóllese pequeno e medra amodo ata estar de pé",
+      "es": "Se encoge pequeño y crece despacio hasta estar de pie"
+    },
+    {
+      "gl": "Responde «Yes, please» ou «No, thank you» co corpo ou coa voz",
+      "es": "Responde «Yes, please» o «No, thank you» con el cuerpo o con la voz"
+    }
+  ],
+  "reactivar": [
+    "3_4.setembro.s1.quiet"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

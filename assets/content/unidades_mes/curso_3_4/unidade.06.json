@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "id": "unidade.curso_3_4.06",
+  "curso": "curso_3_4",
+  "orden": 6,
+  "mesCalendario": 2,
+  "asamblea": "asamblea.segundo_ciclo.febreiro.4_infantil",
+  "centroInteres": {
+    "gl": "As pulseiras de cascabeis: forte e baixo",
+    "es": "Las pulseras de cascabeles: fuerte y bajo"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.setembro.s1.loud"
+    },
+    {
+      "ref": "3_4.setembro.s1.quiet"
+    },
+    {
+      "ref": "3_4.outubro.s2.tummy"
+    },
+    {
+      "ref": "3_4.febreiro.s4.mask"
+    },
+    {
+      "ref": "3_4.febreiro.s3.roar"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [
+    {
+      "ref": "2_3.setembro.s2.my-turn"
+    },
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    }
+  ],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.febreiro.4i.01",
+      "usa": [
+        "3_4.setembro.s1.loud"
+      ]
+    },
+    {
+      "ref": "frase.cmd.febreiro.4i.02",
+      "usa": [
+        "3_4.setembro.s1.quiet",
+        "3_4.outubro.s2.tummy"
+      ]
+    },
+    {
+      "ref": "frase.cmd.febreiro.4i.03",
+      "usa": [
+        "3_4.febreiro.s4.mask",
+        "3_4.febreiro.s3.roar"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Pulseiras de cascabeis",
+      "es": "Pulseras de cascabeles"
+    },
+    {
+      "gl": "Unha careta de madeira",
+      "es": "Una careta de madera"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Para de golpe e pon as mans na barriga ao oír «Quiet»",
+      "es": "Para de golpe y pone las manos en la barriga al oír «Quiet»"
+    },
+    {
+      "gl": "Diferencia forte e baixo cos cascabeis",
+      "es": "Distingue fuerte y bajo con los cascabeles"
+    }
+  ],
+  "reactivar": [
+    "3_4.xaneiro.s2.umbrella"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "id": "unidade.curso_3_4.10",
+  "curso": "curso_3_4",
+  "orden": 10,
+  "mesCalendario": 6,
+  "asamblea": "asamblea.segundo_ciclo.xuno.4_infantil",
+  "centroInteres": {
+    "gl": "Remar en parellas planta con planta",
+    "es": "Remar en parejas planta con planta"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.xuno.s1.row"
+    },
+    {
+      "ref": "3_4.xuno.s1.boat"
+    },
+    {
+      "ref": "3_4.xuno.s1.waves"
+    },
+    {
+      "ref": "3_4.xuno.s1.fish"
+    },
+    {
+      "ref": "3_4.xuno.s3.shell"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [
+    {
+      "ref": "3_4.xuno.s4.goodbye"
+    },
+    {
+      "ref": "3_4.setembro.s3.thank-you"
+    }
+  ],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xuno.4i.01",
+      "usa": [
+        "3_4.xuno.s1.row",
+        "3_4.xuno.s1.boat",
+        "3_4.xuno.s1.waves"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xuno.4i.02",
+      "usa": [
+        "3_4.xuno.s1.fish"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xuno.4i.03",
+      "usa": [
+        "3_4.xuno.s3.shell"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha cuncha branca",
+      "es": "Una concha blanca"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Rema en parella ao mesmo pulso",
+      "es": "Rema en pareja al mismo pulso"
+    },
+    {
+      "gl": "Despídese con «Goodbye» ou coa man ao final",
+      "es": "Se despide con «Goodbye» o con la mano al final"
+    }
+  ],
+  "reactivar": [
+    "3_4.marzo.s4.high"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

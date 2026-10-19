@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "id": "unidade.curso_3_4.02",
+  "curso": "curso_3_4",
+  "orden": 2,
+  "mesCalendario": 10,
+  "asamblea": "asamblea.segundo_ciclo.outubro.4_infantil",
+  "centroInteres": {
+    "gl": "As gasas de seda e a caída da folla",
+    "es": "Las gasas de seda y la caída de la hoja"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.novembro.s1.blow"
+    },
+    {
+      "ref": "3_4.novembro.s1.leaf"
+    },
+    {
+      "ref": "3_4.outubro.s4.turn-around"
+    },
+    {
+      "ref": "3_4.novembro.s1.fall-down"
+    },
+    {
+      "ref": "3_4.novembro.s1.pick-up"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [
+    {
+      "ref": "2_3.setembro.s2.my-turn"
+    },
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    }
+  ],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.outubro.4i.01",
+      "usa": [
+        "3_4.novembro.s1.blow"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.4i.02",
+      "usa": [
+        "3_4.outubro.s4.turn-around",
+        "3_4.novembro.s1.fall-down",
+        "3_4.novembro.s1.leaf"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.4i.03",
+      "usa": [
+        "3_4.novembro.s1.pick-up"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Gasas de seda",
+      "es": "Gasas de seda"
+    },
+    {
+      "gl": "Landras",
+      "es": "Bellotas"
+    },
+    {
+      "gl": "Un cesto de vimbio",
+      "es": "Un cesto de mimbre"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Sopra amodo mentres ergue a gasa",
+      "es": "Sopla despacio mientras levanta la gasa"
+    },
+    {
+      "gl": "Xira e cae sentado sen golpearse",
+      "es": "Gira y cae sentado sin golpearse"
+    },
+    {
+      "gl": "Espera a súa quenda co cesto",
+      "es": "Espera su turno con el cesto"
+    }
+  ],
+  "reactivar": [
+    "3_4.outubro.s1.freeze"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

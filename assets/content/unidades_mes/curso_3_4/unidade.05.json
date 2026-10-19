@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "id": "unidade.curso_3_4.05",
+  "curso": "curso_3_4",
+  "orden": 5,
+  "mesCalendario": 1,
+  "asamblea": "asamblea.segundo_ciclo.xaneiro.4_infantil",
+  "centroInteres": {
+    "gl": "A percusión corporal da choiva",
+    "es": "La percusión corporal de la lluvia"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.abril.s1.rain"
+    },
+    {
+      "ref": "3_4.xaneiro.s2.puddle"
+    },
+    {
+      "ref": "3_4.xaneiro.s2.umbrella"
+    },
+    {
+      "ref": "3_4.outubro.s1.jump"
+    },
+    {
+      "ref": "3_4.xaneiro.s2.raincoat"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    },
+    {
+      "ref": "2_3.setembro.s2.here-you-go"
+    }
+  ],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xaneiro.4i.01",
+      "usa": [
+        "3_4.abril.s1.rain"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xaneiro.4i.02",
+      "usa": [
+        "3_4.outubro.s1.jump",
+        "3_4.xaneiro.s2.puddle"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xaneiro.4i.03",
+      "usa": [
+        "3_4.xaneiro.s2.umbrella"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Un aro de madeira",
+      "es": "Un aro de madera"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Repica nos xeonllos máis rápido ou máis amodo coa choiva",
+      "es": "Repiquetea en las rodillas más rápido o más despacio con la lluvia"
+    },
+    {
+      "gl": "Abre os brazos por riba da cabeza ao oír «umbrella»",
+      "es": "Abre los brazos por encima de la cabeza al oír «umbrella»"
+    }
+  ],
+  "reactivar": [
+    "3_4.decembro.s1.snow"
+  ],
+  "hogar": null,
+  "microcuento": null
+}
