@@ -319,6 +319,14 @@ int idDaTarxetaDeRepaso(String idDaPalabra) {
   return h & 0x7fffffff;
 }
 
+/// El id que tenía una palabra de 3-4 años antes de M1.3, cuando ese curso
+/// usaba la palabra pelada («hello») y no el esquema de los otros cuatro
+/// («3_4.setembro.s1.hello»). Las tarjetas de repaso guardadas antes del
+/// cambio llevan el número de ese id viejo: sin esto, la persona adulta
+/// perdería su repaso de 3-4 al actualizar. Nulo si el id no es de 3-4.
+String? idAntigoDaPalabra(String idDaPalabra) =>
+    RegExp(r'^3_4\.[a-z]+\.s[1-4]\.(.+)$').firstMatch(idDaPalabra)?.group(1);
+
 /// El inglés de UN curso: los diez meses de un grupo de edad.
 ///
 /// Aquí no hay ni una palabra: si algo de esta clase se puede leer en

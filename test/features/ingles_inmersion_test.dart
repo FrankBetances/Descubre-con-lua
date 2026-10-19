@@ -8,6 +8,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/progress_service.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
+import 'package:descubre_con_lua/data/models/fsrs_card_model.dart';
 import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/models/phonics_model.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
@@ -132,6 +133,22 @@ void main() {
   }
 
   group('Os datos do repaso', () {
+    // M1.3: 3-4 pasa ao esquema de id dos outros catro cursos.
+    test('as 800 de 3-4 levan o esquema dos outros cursos e o seu id vello',
+        () {
+      final curso = programa.curso('curso_3_4')!;
+      final vellos = <String>{};
+      for (final p in curso.palabrasEnOrde) {
+        expect(p.palabra.id, startsWith('3_4.'), reason: p.palabra.id);
+        final vello = idAntigoDaPalabra(p.palabra.id);
+        expect(vello, isNotNull, reason: p.palabra.id);
+        expect(vellos.add(vello!), isTrue, reason: vello);
+      }
+      expect(vellos, hasLength(800));
+      expect(idAntigoDaPalabra('2_3.setembro.s1.say-hello'), isNull);
+      expect(idAntigoDaPalabra('hello'), isNull);
+    });
+
     test('o número da tarxeta é FNV-1a de 32 bits sen signo, e estable', () {
       // FNV-1a("a") = 0xe40c292c; sen o bit de signo, 0x640c292c.
       expect(idDaTarxetaDeRepaso('a'), 0x640c292c);
@@ -308,6 +325,49 @@ void main() {
       });
     }
   }
+
+  // M1.3: quien ya repasaba 3-4 antes del cambio de id tiene sus tarjetas con
+  // el número del id viejo. Al abrir el repaso, pasan al número nuevo con su
+  // historia, y lo que se guarda ya no lleva el viejo.
+  testWidgets('Repaso: a tarxeta de 3-4 gardada co id vello non se perde',
+      (tester) async {
+    final curso = programa.curso('curso_3_4')!;
+    final palabra = curso.planDoDia(9, 4, 3)!.newWords.first;
+    final vello = idAntigoDaPalabra(palabra.id)!;
+    final tarxeta = FSRSCard.initial(
+      id: idDaTarxetaDeRepaso(vello),
+      lemma: palabra.en,
+      now: miercoles,
+    ).copyWith(reps: 4, lapses: 1);
+    final almacen = _AlmacenEnMemoria()
+      ..gardado = {
+        'fsrsCards': [tarxeta.toJson()],
+      };
+    final progreso = ProgressService(store: almacen);
+    await progreso.initialize();
+
+    await pintar(
+      tester,
+      FsrsTrainerScreen(
+        programa: programa,
+        progreso: progreso,
+        cursoInicial: 'curso_3_4',
+        agora: miercoles,
+      ),
+    );
+
+    final nova = progreso.getCard(idDaTarxetaDeRepaso(palabra.id));
+    expect(nova?.lemma, palabra.en);
+    expect(nova?.reps, 4);
+    expect(nova?.lapses, 1);
+    expect(progreso.getCard(idDaTarxetaDeRepaso(vello)), isNull);
+    final gardadas = (almacen.gardado!['fsrsCards'] as List)
+        .map((c) => (c as Map)['id'])
+        .toList();
+    expect(gardadas, contains(idDaTarxetaDeRepaso(palabra.id)));
+    expect(gardadas, isNot(contains(idDaTarxetaDeRepaso(vello))));
+    expect(erroresDe(tester), isEmpty);
+  });
 
   // Lote L2: catro respostas do mesmo peso, non catro botóns principais. Cada
   // unha leva a súa cor no bordo e na letra, e todas pasan AA sobre branco.

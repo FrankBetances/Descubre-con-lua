@@ -13,7 +13,7 @@
       },
       "palabras": [
         {
-          "id": "head",
+          "id": "3_4.outubro.s1.head",
           "en": "Head",
           "gl": "Cabeza",
           "es": "Cabeza",
@@ -24,7 +24,7 @@
           }
         },
         {
-          "id": "shoulders",
+          "id": "3_4.outubro.s1.shoulders",
           "en": "Shoulders",
           "gl": "Ombros",
           "es": "Hombros",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "knees",
+          "id": "3_4.outubro.s1.knees",
           "en": "Knees",
           "gl": "Xeonllos",
           "es": "Rodillas",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "id": "toes",
+          "id": "3_4.outubro.s1.toes",
           "en": "Toes",
           "gl": "Dedos dos pés",
           "es": "Dedos de los pies",
@@ -57,7 +57,7 @@
           }
         },
         {
-          "id": "freeze",
+          "id": "3_4.outubro.s1.freeze",
           "en": "Freeze",
           "gl": "Conxelarse",
           "es": "Congelarse",
@@ -68,7 +68,7 @@
           }
         },
         {
-          "id": "eyes",
+          "id": "3_4.outubro.s1.eyes",
           "en": "Eyes",
           "gl": "Ollos",
           "es": "Ojos",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "id": "ears",
+          "id": "3_4.outubro.s1.ears",
           "en": "Ears",
           "gl": "Orellas",
           "es": "Orejas",
@@ -90,7 +90,7 @@
           }
         },
         {
-          "id": "mouth",
+          "id": "3_4.outubro.s1.mouth",
           "en": "Mouth",
           "gl": "Boca",
           "es": "Boca",
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": "nose",
+          "id": "3_4.outubro.s1.nose",
           "en": "Nose",
           "gl": "Nariz",
           "es": "Nariz",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "jump",
+          "id": "3_4.outubro.s1.jump",
           "en": "Jump",
           "gl": "Chimpar",
           "es": "Saltar",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "id": "hands",
+          "id": "3_4.outubro.s1.hands",
           "en": "Hands",
           "gl": "Mans",
           "es": "Manos",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "id": "feet",
+          "id": "3_4.outubro.s1.feet",
           "en": "Feet",
           "gl": "Pés",
           "es": "Pies",
@@ -145,7 +145,7 @@
           }
         },
         {
-          "id": "walk",
+          "id": "3_4.outubro.s1.walk",
           "en": "Walk",
           "gl": "Camiñar",
           "es": "Caminar",
@@ -156,7 +156,7 @@
           }
         },
         {
-          "id": "stop",
+          "id": "3_4.outubro.s1.stop",
           "en": "Stop",
           "gl": "Parar",
           "es": "Parar",
@@ -167,7 +167,7 @@
           }
         },
         {
-          "id": "turn",
+          "id": "3_4.outubro.s1.turn",
           "en": "Turn",
           "gl": "Xirar",
           "es": "Girar",
@@ -178,7 +178,7 @@
           }
         },
         {
-          "id": "big",
+          "id": "3_4.outubro.s1.big",
           "en": "Big",
           "gl": "Grande",
           "es": "Grande",
@@ -189,7 +189,7 @@
           }
         },
         {
-          "id": "small",
+          "id": "3_4.outubro.s1.small",
           "en": "Small",
           "gl": "Pequeno, pequena",
           "es": "Pequeño, pequeña",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "id": "up",
+          "id": "3_4.outubro.s1.up",
           "en": "Up",
           "gl": "Arriba",
           "es": "Arriba",
@@ -211,7 +211,7 @@
           }
         },
         {
-          "id": "down",
+          "id": "3_4.outubro.s1.down",
           "en": "Down",
           "gl": "Abaixo",
           "es": "Abajo",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "id": "clap",
+          "id": "3_4.outubro.s1.clap",
           "en": "Clap",
           "gl": "Bater palmas",
           "es": "Aplaudir",
@@ -242,7 +242,7 @@
       },
       "palabras": [
         {
-          "id": "tummy",
+          "id": "3_4.outubro.s2.tummy",
           "en": "Tummy",
           "gl": "Barriga",
           "es": "Barriga",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "id": "cheeks",
+          "id": "3_4.outubro.s2.cheeks",
           "en": "Cheeks",
           "gl": "Meixelas",
           "es": "Mejillas",
@@ -264,7 +264,7 @@
           }
         },
         {
-          "id": "chin",
+          "id": "3_4.outubro.s2.chin",
           "en": "Chin",
           "gl": "Queixo",
           "es": "Barbilla",
@@ -275,7 +275,7 @@
           }
         },
         {
-          "id": "hair",
+          "id": "3_4.outubro.s2.hair",
           "en": "Hair",
           "gl": "Pelo",
           "es": "Pelo",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "id": "teeth",
+          "id": "3_4.outubro.s2.teeth",
           "en": "Teeth",
           "gl": "Dentes",
           "es": "Dientes",
@@ -297,7 +297,7 @@
           }
         },
         {
-          "id": "tongue",
+          "id": "3_4.outubro.s2.tongue",
           "en": "Tongue",
           "gl": "Lingua",
           "es": "Lengua",
@@ -308,7 +308,7 @@
           }
         },
         {
-          "id": "see",
+          "id": "3_4.outubro.s2.see",
           "en": "See",
           "gl": "Ver",
           "es": "Ver",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "id": "smell",
+          "id": "3_4.outubro.s2.smell",
           "en": "Smell",
           "gl": "Cheirar",
           "es": "Oler",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "id": "taste",
+          "id": "3_4.outubro.s2.taste",
           "en": "Taste",
           "gl": "Saborear",
           "es": "Saborear",
@@ -341,7 +341,7 @@
           }
         },
         {
-          "id": "touch",
+          "id": "3_4.outubro.s2.touch",
           "en": "Touch",
           "gl": "Tocar",
           "es": "Tocar",
@@ -352,7 +352,7 @@
           }
         },
         {
-          "id": "blink",
+          "id": "3_4.outubro.s2.blink",
           "en": "Blink",
           "gl": "Pestanexar",
           "es": "Parpadear",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "id": "bright",
+          "id": "3_4.outubro.s2.bright",
           "en": "Bright",
           "gl": "Luminoso, luminosa",
           "es": "Luminoso, luminosa",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "dark",
+          "id": "3_4.outubro.s2.dark",
           "en": "Dark",
           "gl": "Escuro, escura",
           "es": "Oscuro, oscura",
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": "yummy",
+          "id": "3_4.outubro.s2.yummy",
           "en": "Yummy",
           "gl": "Riquísimo, riquísima",
           "es": "Riquísimo, riquísima",
@@ -396,7 +396,7 @@
           }
         },
         {
-          "id": "sour",
+          "id": "3_4.outubro.s2.sour",
           "en": "Sour",
           "gl": "Acedo, aceda",
           "es": "Ácido, ácida",
@@ -407,7 +407,7 @@
           }
         },
         {
-          "id": "tickly",
+          "id": "3_4.outubro.s2.tickly",
           "en": "Tickly",
           "gl": "Que fai cóxegas",
           "es": "Que hace cosquillas",
@@ -418,7 +418,7 @@
           }
         },
         {
-          "id": "touch-your-head",
+          "id": "3_4.outubro.s2.touch-your-head",
           "en": "Touch your head",
           "gl": "Toca a cabeza",
           "es": "Tócate la cabeza",
@@ -429,7 +429,7 @@
           }
         },
         {
-          "id": "shake-hands",
+          "id": "3_4.outubro.s2.shake-hands",
           "en": "Shake hands",
           "gl": "Dar a man",
           "es": "Dar la mano",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "hands-on-your-tummy",
+          "id": "3_4.outubro.s2.hands-on-your-tummy",
           "en": "Hands on your tummy",
           "gl": "Mans na barriga",
           "es": "Manos en la barriga",
@@ -451,7 +451,7 @@
           }
         },
         {
-          "id": "close-your-eyes-and-listen",
+          "id": "3_4.outubro.s2.close-your-eyes-and-listen",
           "en": "Close your eyes and listen",
           "gl": "Pecha os ollos e escoita",
           "es": "Cierra los ojos y escucha",
@@ -471,7 +471,7 @@
       },
       "palabras": [
         {
-          "id": "arms",
+          "id": "3_4.outubro.s3.arms",
           "en": "Arms",
           "gl": "Brazos",
           "es": "Brazos",
@@ -482,7 +482,7 @@
           }
         },
         {
-          "id": "legs",
+          "id": "3_4.outubro.s3.legs",
           "en": "Legs",
           "gl": "Pernas",
           "es": "Piernas",
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "fingers",
+          "id": "3_4.outubro.s3.fingers",
           "en": "Fingers",
           "gl": "Dedos",
           "es": "Dedos",
@@ -504,7 +504,7 @@
           }
         },
         {
-          "id": "thumb",
+          "id": "3_4.outubro.s3.thumb",
           "en": "Thumb",
           "gl": "Polgar",
           "es": "Pulgar",
@@ -515,7 +515,7 @@
           }
         },
         {
-          "id": "elbow",
+          "id": "3_4.outubro.s3.elbow",
           "en": "Elbow",
           "gl": "Cóbado",
           "es": "Codo",
@@ -526,7 +526,7 @@
           }
         },
         {
-          "id": "back",
+          "id": "3_4.outubro.s3.back",
           "en": "Back",
           "gl": "Costas",
           "es": "Espalda",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "id": "stretch",
+          "id": "3_4.outubro.s3.stretch",
           "en": "Stretch",
           "gl": "Estirar",
           "es": "Estirar",
@@ -548,7 +548,7 @@
           }
         },
         {
-          "id": "bend",
+          "id": "3_4.outubro.s3.bend",
           "en": "Bend",
           "gl": "Dobrar",
           "es": "Flexionar",
@@ -559,7 +559,7 @@
           }
         },
         {
-          "id": "reach",
+          "id": "3_4.outubro.s3.reach",
           "en": "Reach",
           "gl": "Alcanzar",
           "es": "Alcanzar",
@@ -570,7 +570,7 @@
           }
         },
         {
-          "id": "wiggle",
+          "id": "3_4.outubro.s3.wiggle",
           "en": "Wiggle",
           "gl": "Menear",
           "es": "Menear",
@@ -581,7 +581,7 @@
           }
         },
         {
-          "id": "kick",
+          "id": "3_4.outubro.s3.kick",
           "en": "Kick",
           "gl": "Dar unha patada",
           "es": "Dar una patada",
@@ -592,7 +592,7 @@
           }
         },
         {
-          "id": "fast",
+          "id": "3_4.outubro.s3.fast",
           "en": "Fast",
           "gl": "Rápido, rápida",
           "es": "Rápido, rápida",
@@ -603,7 +603,7 @@
           }
         },
         {
-          "id": "slow",
+          "id": "3_4.outubro.s3.slow",
           "en": "Slow",
           "gl": "Lento, lenta",
           "es": "Lento, lenta",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "strong",
+          "id": "3_4.outubro.s3.strong",
           "en": "Strong",
           "gl": "Forte",
           "es": "Fuerte",
@@ -625,7 +625,7 @@
           }
         },
         {
-          "id": "long",
+          "id": "3_4.outubro.s3.long",
           "en": "Long",
           "gl": "Longo, longa",
           "es": "Largo, larga",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "id": "stand-up",
+          "id": "3_4.outubro.s3.stand-up",
           "en": "Stand up",
           "gl": "Ponte de pé",
           "es": "Ponte de pie",
@@ -647,7 +647,7 @@
           }
         },
         {
-          "id": "arms-up",
+          "id": "3_4.outubro.s3.arms-up",
           "en": "Arms up!",
           "gl": "Brazos arriba!",
           "es": "¡Brazos arriba!",
@@ -658,7 +658,7 @@
           }
         },
         {
-          "id": "wiggle-your-fingers",
+          "id": "3_4.outubro.s3.wiggle-your-fingers",
           "en": "Wiggle your fingers",
           "gl": "Move os dedos",
           "es": "Mueve los dedos",
@@ -669,7 +669,7 @@
           }
         },
         {
-          "id": "fast-and-slow",
+          "id": "3_4.outubro.s3.fast-and-slow",
           "en": "Fast and slow",
           "gl": "Rápido e lento",
           "es": "Rápido y lento",
@@ -680,7 +680,7 @@
           }
         },
         {
-          "id": "up-and-down",
+          "id": "3_4.outubro.s3.up-and-down",
           "en": "Up and down",
           "gl": "Arriba e abaixo",
           "es": "Arriba y abajo",
@@ -700,7 +700,7 @@
       },
       "palabras": [
         {
-          "id": "neck",
+          "id": "3_4.outubro.s4.neck",
           "en": "Neck",
           "gl": "Pescozo",
           "es": "Cuello",
@@ -711,7 +711,7 @@
           }
         },
         {
-          "id": "heart",
+          "id": "3_4.outubro.s4.heart",
           "en": "Heart",
           "gl": "Corazón",
           "es": "Corazón",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "body",
+          "id": "3_4.outubro.s4.body",
           "en": "Body",
           "gl": "Corpo",
           "es": "Cuerpo",
@@ -733,7 +733,7 @@
           }
         },
         {
-          "id": "face",
+          "id": "3_4.outubro.s4.face",
           "en": "Face",
           "gl": "Cara",
           "es": "Cara",
@@ -744,7 +744,7 @@
           }
         },
         {
-          "id": "belly-button",
+          "id": "3_4.outubro.s4.belly-button",
           "en": "Belly button",
           "gl": "Embigo",
           "es": "Ombligo",
@@ -755,7 +755,7 @@
           }
         },
         {
-          "id": "shadow",
+          "id": "3_4.outubro.s4.shadow",
           "en": "Shadow",
           "gl": "Sombra",
           "es": "Sombra",
@@ -766,7 +766,7 @@
           }
         },
         {
-          "id": "dance",
+          "id": "3_4.outubro.s4.dance",
           "en": "Dance",
           "gl": "Bailar",
           "es": "Bailar",
@@ -777,7 +777,7 @@
           }
         },
         {
-          "id": "hop",
+          "id": "3_4.outubro.s4.hop",
           "en": "Hop",
           "gl": "Saltar a pé coxo",
           "es": "Saltar a la pata coja",
@@ -788,7 +788,7 @@
           }
         },
         {
-          "id": "march",
+          "id": "3_4.outubro.s4.march",
           "en": "March",
           "gl": "Marchar",
           "es": "Marchar",
@@ -799,7 +799,7 @@
           }
         },
         {
-          "id": "tiptoe",
+          "id": "3_4.outubro.s4.tiptoe",
           "en": "Tiptoe",
           "gl": "Andar de puntas",
           "es": "Andar de puntillas",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "id": "tall",
+          "id": "3_4.outubro.s4.tall",
           "en": "Tall",
           "gl": "Alto, alta",
           "es": "Alto, alta",
@@ -821,7 +821,7 @@
           }
         },
         {
-          "id": "short",
+          "id": "3_4.outubro.s4.short",
           "en": "Short",
           "gl": "Baixo, baixa",
           "es": "Bajo, baja",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "heavy",
+          "id": "3_4.outubro.s4.heavy",
           "en": "Heavy",
           "gl": "Pesado, pesada",
           "es": "Pesado, pesada",
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "stiff",
+          "id": "3_4.outubro.s4.stiff",
           "en": "Stiff",
           "gl": "Teso, tesa",
           "es": "Tieso, tiesa",
@@ -854,7 +854,7 @@
           }
         },
         {
-          "id": "floppy",
+          "id": "3_4.outubro.s4.floppy",
           "en": "Floppy",
           "gl": "Frouxo, frouxa",
           "es": "Flojo, floja",
@@ -865,7 +865,7 @@
           }
         },
         {
-          "id": "look-at-me",
+          "id": "3_4.outubro.s4.look-at-me",
           "en": "Look at me!",
           "gl": "Mírame!",
           "es": "¡Mírame!",
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "turn-around",
+          "id": "3_4.outubro.s4.turn-around",
           "en": "Turn around",
           "gl": "Dá a volta",
           "es": "Date la vuelta",
@@ -887,7 +887,7 @@
           }
         },
         {
-          "id": "clap-your-hands",
+          "id": "3_4.outubro.s4.clap-your-hands",
           "en": "Clap your hands",
           "gl": "Bate as palmas",
           "es": "Da palmas",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "id": "round-and-round",
+          "id": "3_4.outubro.s4.round-and-round",
           "en": "Round and round",
           "gl": "Voltas e máis voltas",
           "es": "Vueltas y más vueltas",
@@ -909,7 +909,7 @@
           }
         },
         {
-          "id": "stop-and-go",
+          "id": "3_4.outubro.s4.stop-and-go",
           "en": "Stop and go",
           "gl": "Parar e seguir",
           "es": "Parar y seguir",

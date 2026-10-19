@@ -13,7 +13,7 @@
       },
       "palabras": [
         {
-          "id": "coat",
+          "id": "3_4.xaneiro.s1.coat",
           "en": "Coat",
           "gl": "Abrigo",
           "es": "Abrigo",
@@ -24,7 +24,7 @@
           }
         },
         {
-          "id": "hat",
+          "id": "3_4.xaneiro.s1.hat",
           "en": "Hat",
           "gl": "Gorro",
           "es": "Gorro",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "boots",
+          "id": "3_4.xaneiro.s1.boots",
           "en": "Boots",
           "gl": "Botas",
           "es": "Botas",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "id": "scarf",
+          "id": "3_4.xaneiro.s1.scarf",
           "en": "Scarf",
           "gl": "Bufanda",
           "es": "Bufanda",
@@ -57,7 +57,7 @@
           }
         },
         {
-          "id": "gloves",
+          "id": "3_4.xaneiro.s1.gloves",
           "en": "Gloves",
           "gl": "Luvas",
           "es": "Guantes",
@@ -68,7 +68,7 @@
           }
         },
         {
-          "id": "socks",
+          "id": "3_4.xaneiro.s1.socks",
           "en": "Socks",
           "gl": "Calcetíns",
           "es": "Calcetines",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "id": "shoe",
+          "id": "3_4.xaneiro.s1.shoe",
           "en": "Shoe",
           "gl": "Zapato",
           "es": "Zapato",
@@ -90,7 +90,7 @@
           }
         },
         {
-          "id": "put-on",
+          "id": "3_4.xaneiro.s1.put-on",
           "en": "Put on",
           "gl": "Poñer",
           "es": "Ponerse",
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": "take-off",
+          "id": "3_4.xaneiro.s1.take-off",
           "en": "Take off",
           "gl": "Quitar",
           "es": "Quitarse",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "zip",
+          "id": "3_4.xaneiro.s1.zip",
           "en": "Zip",
           "gl": "Pechar a cremalleira",
           "es": "Subir la cremallera",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "id": "button",
+          "id": "3_4.xaneiro.s1.button",
           "en": "Button",
           "gl": "Abotoar",
           "es": "Abrochar",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "id": "tie",
+          "id": "3_4.xaneiro.s1.tie",
           "en": "Tie",
           "gl": "Atar",
           "es": "Atar",
@@ -145,7 +145,7 @@
           }
         },
         {
-          "id": "woolly",
+          "id": "3_4.xaneiro.s1.woolly",
           "en": "Woolly",
           "gl": "De la",
           "es": "De lana",
@@ -156,7 +156,7 @@
           }
         },
         {
-          "id": "striped",
+          "id": "3_4.xaneiro.s1.striped",
           "en": "Striped",
           "gl": "Raiado, raiada",
           "es": "De rayas",
@@ -167,7 +167,7 @@
           }
         },
         {
-          "id": "spotty",
+          "id": "3_4.xaneiro.s1.spotty",
           "en": "Spotty",
           "gl": "De lunares",
           "es": "De lunares",
@@ -178,7 +178,7 @@
           }
         },
         {
-          "id": "tight",
+          "id": "3_4.xaneiro.s1.tight",
           "en": "Tight",
           "gl": "Apertado, apertada",
           "es": "Apretado, apretada",
@@ -189,7 +189,7 @@
           }
         },
         {
-          "id": "put-on-your-hat",
+          "id": "3_4.xaneiro.s1.put-on-your-hat",
           "en": "Put on your hat!",
           "gl": "Pon o gorro!",
           "es": "¡Ponte el gorro!",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "id": "zip-your-coat",
+          "id": "3_4.xaneiro.s1.zip-your-coat",
           "en": "Zip your coat",
           "gl": "Pecha o abrigo",
           "es": "Cierra el abrigo",
@@ -211,7 +211,7 @@
           }
         },
         {
-          "id": "ready-to-go",
+          "id": "3_4.xaneiro.s1.ready-to-go",
           "en": "Ready to go!",
           "gl": "Listos para saír!",
           "es": "¡Listos para salir!",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "id": "inside-out",
+          "id": "3_4.xaneiro.s1.inside-out",
           "en": "Inside out",
           "gl": "Do revés",
           "es": "Del revés",
@@ -242,7 +242,7 @@
       },
       "palabras": [
         {
-          "id": "umbrella",
+          "id": "3_4.xaneiro.s2.umbrella",
           "en": "Umbrella",
           "gl": "Paraugas",
           "es": "Paraguas",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "id": "puddle",
+          "id": "3_4.xaneiro.s2.puddle",
           "en": "Puddle",
           "gl": "Poza",
           "es": "Charco",
@@ -264,7 +264,7 @@
           }
         },
         {
-          "id": "cloud",
+          "id": "3_4.xaneiro.s2.cloud",
           "en": "Cloud",
           "gl": "Nube",
           "es": "Nube",
@@ -275,7 +275,7 @@
           }
         },
         {
-          "id": "raincoat",
+          "id": "3_4.xaneiro.s2.raincoat",
           "en": "Raincoat",
           "gl": "Chuvasqueiro",
           "es": "Chubasquero",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "id": "mud",
+          "id": "3_4.xaneiro.s2.mud",
           "en": "Mud",
           "gl": "Lama",
           "es": "Barro",
@@ -297,7 +297,7 @@
           }
         },
         {
-          "id": "drop",
+          "id": "3_4.xaneiro.s2.drop",
           "en": "Drop",
           "gl": "Pinga",
           "es": "Gota",
@@ -308,7 +308,7 @@
           }
         },
         {
-          "id": "street",
+          "id": "3_4.xaneiro.s2.street",
           "en": "Street",
           "gl": "Rúa",
           "es": "Calle",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "id": "stomp",
+          "id": "3_4.xaneiro.s2.stomp",
           "en": "Stomp",
           "gl": "Patear",
           "es": "Pisotear",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "id": "drip",
+          "id": "3_4.xaneiro.s2.drip",
           "en": "Drip",
           "gl": "Pingar",
           "es": "Gotear",
@@ -341,7 +341,7 @@
           }
         },
         {
-          "id": "hurry",
+          "id": "3_4.xaneiro.s2.hurry",
           "en": "Hurry",
           "gl": "Apurarse",
           "es": "Darse prisa",
@@ -352,7 +352,7 @@
           }
         },
         {
-          "id": "close",
+          "id": "3_4.xaneiro.s2.close",
           "en": "Close",
           "gl": "Pechar",
           "es": "Cerrar",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "id": "wipe",
+          "id": "3_4.xaneiro.s2.wipe",
           "en": "Wipe",
           "gl": "Enxugar",
           "es": "Secar",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "wet",
+          "id": "3_4.xaneiro.s2.wet",
           "en": "Wet",
           "gl": "Mollado, mollada",
           "es": "Mojado, mojada",
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": "rainy",
+          "id": "3_4.xaneiro.s2.rainy",
           "en": "Rainy",
           "gl": "Chuvioso, chuviosa",
           "es": "Lluvioso, lluviosa",
@@ -396,7 +396,7 @@
           }
         },
         {
-          "id": "grey",
+          "id": "3_4.xaneiro.s2.grey",
           "en": "Grey",
           "gl": "Gris",
           "es": "Gris",
@@ -407,7 +407,7 @@
           }
         },
         {
-          "id": "muddy",
+          "id": "3_4.xaneiro.s2.muddy",
           "en": "Muddy",
           "gl": "Enlamado, enlamada",
           "es": "Embarrado, embarrada",
@@ -418,7 +418,7 @@
           }
         },
         {
-          "id": "put-up-the-umbrella",
+          "id": "3_4.xaneiro.s2.put-up-the-umbrella",
           "en": "Put up the umbrella",
           "gl": "Abre o paraugas",
           "es": "Abre el paraguas",
@@ -429,7 +429,7 @@
           }
         },
         {
-          "id": "stomp-your-boots",
+          "id": "3_4.xaneiro.s2.stomp-your-boots",
           "en": "Stomp your boots",
           "gl": "Pisa forte coas botas",
           "es": "Pisa fuerte con las botas",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "jump-in-the-puddle",
+          "id": "3_4.xaneiro.s2.jump-in-the-puddle",
           "en": "Jump in the puddle",
           "gl": "Salta na poza",
           "es": "Salta en el charco",
@@ -451,7 +451,7 @@
           }
         },
         {
-          "id": "under-the-umbrella",
+          "id": "3_4.xaneiro.s2.under-the-umbrella",
           "en": "Under the umbrella",
           "gl": "Debaixo do paraugas",
           "es": "Debajo del paraguas",
@@ -471,7 +471,7 @@
       },
       "palabras": [
         {
-          "id": "car",
+          "id": "3_4.xaneiro.s3.car",
           "en": "Car",
           "gl": "Coche",
           "es": "Coche",
@@ -482,7 +482,7 @@
           }
         },
         {
-          "id": "bus",
+          "id": "3_4.xaneiro.s3.bus",
           "en": "Bus",
           "gl": "Autobús",
           "es": "Autobús",
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "bike",
+          "id": "3_4.xaneiro.s3.bike",
           "en": "Bike",
           "gl": "Bicicleta",
           "es": "Bici",
@@ -504,7 +504,7 @@
           }
         },
         {
-          "id": "train",
+          "id": "3_4.xaneiro.s3.train",
           "en": "Train",
           "gl": "Tren",
           "es": "Tren",
@@ -515,7 +515,7 @@
           }
         },
         {
-          "id": "plane",
+          "id": "3_4.xaneiro.s3.plane",
           "en": "Plane",
           "gl": "Avión",
           "es": "Avión",
@@ -526,7 +526,7 @@
           }
         },
         {
-          "id": "wheel",
+          "id": "3_4.xaneiro.s3.wheel",
           "en": "Wheel",
           "gl": "Roda",
           "es": "Rueda",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "id": "traffic-light",
+          "id": "3_4.xaneiro.s3.traffic-light",
           "en": "Traffic light",
           "gl": "Semáforo",
           "es": "Semáforo",
@@ -548,7 +548,7 @@
           }
         },
         {
-          "id": "drive",
+          "id": "3_4.xaneiro.s3.drive",
           "en": "Drive",
           "gl": "Conducir",
           "es": "Conducir",
@@ -559,7 +559,7 @@
           }
         },
         {
-          "id": "ride",
+          "id": "3_4.xaneiro.s3.ride",
           "en": "Ride",
           "gl": "Montar",
           "es": "Montar",
@@ -570,7 +570,7 @@
           }
         },
         {
-          "id": "go",
+          "id": "3_4.xaneiro.s3.go",
           "en": "Go",
           "gl": "Ir",
           "es": "Ir",
@@ -581,7 +581,7 @@
           }
         },
         {
-          "id": "beep",
+          "id": "3_4.xaneiro.s3.beep",
           "en": "Beep",
           "gl": "Pitar",
           "es": "Pitar",
@@ -592,7 +592,7 @@
           }
         },
         {
-          "id": "pedal",
+          "id": "3_4.xaneiro.s3.pedal",
           "en": "Pedal",
           "gl": "Pedalear",
           "es": "Pedalear",
@@ -603,7 +603,7 @@
           }
         },
         {
-          "id": "near",
+          "id": "3_4.xaneiro.s3.near",
           "en": "Near",
           "gl": "Preto",
           "es": "Cerca",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "far",
+          "id": "3_4.xaneiro.s3.far",
           "en": "Far",
           "gl": "Lonxe",
           "es": "Lejos",
@@ -625,7 +625,7 @@
           }
         },
         {
-          "id": "safe",
+          "id": "3_4.xaneiro.s3.safe",
           "en": "Safe",
           "gl": "Seguro, segura",
           "es": "Seguro, segura",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "id": "careful",
+          "id": "3_4.xaneiro.s3.careful",
           "en": "Careful",
           "gl": "Con coidado",
           "es": "Con cuidado",
@@ -647,7 +647,7 @@
           }
         },
         {
-          "id": "beep-beep",
+          "id": "3_4.xaneiro.s3.beep-beep",
           "en": "Beep, beep!",
           "gl": "Pi, pi!",
           "es": "¡Pi, pi!",
@@ -658,7 +658,7 @@
           }
         },
         {
-          "id": "all-aboard",
+          "id": "3_4.xaneiro.s3.all-aboard",
           "en": "All aboard!",
           "gl": "Todos a bordo!",
           "es": "¡Todos a bordo!",
@@ -669,7 +669,7 @@
           }
         },
         {
-          "id": "seat-belt-on",
+          "id": "3_4.xaneiro.s3.seat-belt-on",
           "en": "Seat belt on!",
           "gl": "Cinto posto!",
           "es": "¡Cinturón puesto!",
@@ -680,7 +680,7 @@
           }
         },
         {
-          "id": "stop-look-and-listen",
+          "id": "3_4.xaneiro.s3.stop-look-and-listen",
           "en": "Stop, look and listen",
           "gl": "Para, mira e escoita",
           "es": "Para, mira y escucha",
@@ -700,7 +700,7 @@
       },
       "palabras": [
         {
-          "id": "kitchen",
+          "id": "3_4.xaneiro.s4.kitchen",
           "en": "Kitchen",
           "gl": "Cociña",
           "es": "Cocina",
@@ -711,7 +711,7 @@
           }
         },
         {
-          "id": "sofa",
+          "id": "3_4.xaneiro.s4.sofa",
           "en": "Sofa",
           "gl": "Sofá",
           "es": "Sofá",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "lamp",
+          "id": "3_4.xaneiro.s4.lamp",
           "en": "Lamp",
           "gl": "Lámpada",
           "es": "Lámpara",
@@ -733,7 +733,7 @@
           }
         },
         {
-          "id": "stairs",
+          "id": "3_4.xaneiro.s4.stairs",
           "en": "Stairs",
           "gl": "Escaleiras",
           "es": "Escaleras",
@@ -744,7 +744,7 @@
           }
         },
         {
-          "id": "key",
+          "id": "3_4.xaneiro.s4.key",
           "en": "Key",
           "gl": "Chave",
           "es": "Llave",
@@ -755,7 +755,7 @@
           }
         },
         {
-          "id": "clock",
+          "id": "3_4.xaneiro.s4.clock",
           "en": "Clock",
           "gl": "Reloxo",
           "es": "Reloj",
@@ -766,7 +766,7 @@
           }
         },
         {
-          "id": "floor",
+          "id": "3_4.xaneiro.s4.floor",
           "en": "Floor",
           "gl": "Chan",
           "es": "Suelo",
@@ -777,7 +777,7 @@
           }
         },
         {
-          "id": "turn-on",
+          "id": "3_4.xaneiro.s4.turn-on",
           "en": "Turn on",
           "gl": "Acender",
           "es": "Encender",
@@ -788,7 +788,7 @@
           }
         },
         {
-          "id": "turn-off",
+          "id": "3_4.xaneiro.s4.turn-off",
           "en": "Turn off",
           "gl": "Apagar",
           "es": "Apagar",
@@ -799,7 +799,7 @@
           }
         },
         {
-          "id": "rest",
+          "id": "3_4.xaneiro.s4.rest",
           "en": "Rest",
           "gl": "Descansar",
           "es": "Descansar",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "id": "draw",
+          "id": "3_4.xaneiro.s4.draw",
           "en": "Draw",
           "gl": "Debuxar",
           "es": "Dibujar",
@@ -821,7 +821,7 @@
           }
         },
         {
-          "id": "read",
+          "id": "3_4.xaneiro.s4.read",
           "en": "Read",
           "gl": "Ler",
           "es": "Leer",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "tidy",
+          "id": "3_4.xaneiro.s4.tidy",
           "en": "Tidy",
           "gl": "Ordenado, ordenada",
           "es": "Ordenado, ordenada",
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "messy",
+          "id": "3_4.xaneiro.s4.messy",
           "en": "Messy",
           "gl": "Desordenado, desordenada",
           "es": "Desordenado, desordenada",
@@ -854,7 +854,7 @@
           }
         },
         {
-          "id": "comfy",
+          "id": "3_4.xaneiro.s4.comfy",
           "en": "Comfy",
           "gl": "Cómodo, cómoda",
           "es": "Cómodo, cómoda",
@@ -865,7 +865,7 @@
           }
         },
         {
-          "id": "busy",
+          "id": "3_4.xaneiro.s4.busy",
           "en": "Busy",
           "gl": "Ocupado, ocupada",
           "es": "Ocupado, ocupada",
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "tick-tock",
+          "id": "3_4.xaneiro.s4.tick-tock",
           "en": "Tick, tock!",
           "gl": "Tic, tac!",
           "es": "¡Tic, tac!",
@@ -887,7 +887,7 @@
           }
         },
         {
-          "id": "knock-knock",
+          "id": "3_4.xaneiro.s4.knock-knock",
           "en": "Knock, knock!",
           "gl": "Toc, toc!",
           "es": "¡Toc, toc!",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "id": "upstairs-and-downstairs",
+          "id": "3_4.xaneiro.s4.upstairs-and-downstairs",
           "en": "Upstairs and downstairs",
           "gl": "Escaleiras arriba e abaixo",
           "es": "Escaleras arriba y abajo",
@@ -909,7 +909,7 @@
           }
         },
         {
-          "id": "on-the-sofa",
+          "id": "3_4.xaneiro.s4.on-the-sofa",
           "en": "On the sofa",
           "gl": "No sofá",
           "es": "En el sofá",

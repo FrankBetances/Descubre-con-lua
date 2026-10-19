@@ -13,7 +13,7 @@
       },
       "palabras": [
         {
-          "id": "brush",
+          "id": "3_4.marzo.s1.brush",
           "en": "Brush",
           "gl": "Pincel",
           "es": "Pincel",
@@ -24,7 +24,7 @@
           }
         },
         {
-          "id": "rainbow",
+          "id": "3_4.marzo.s1.rainbow",
           "en": "Rainbow",
           "gl": "Arco da vella",
           "es": "Arcoíris",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "colour",
+          "id": "3_4.marzo.s1.colour",
           "en": "Colour",
           "gl": "Cor",
           "es": "Color",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "id": "picture",
+          "id": "3_4.marzo.s1.picture",
           "en": "Picture",
           "gl": "Debuxo",
           "es": "Dibujo",
@@ -57,7 +57,7 @@
           }
         },
         {
-          "id": "pencil",
+          "id": "3_4.marzo.s1.pencil",
           "en": "Pencil",
           "gl": "Lapis",
           "es": "Lápiz",
@@ -68,7 +68,7 @@
           }
         },
         {
-          "id": "glue",
+          "id": "3_4.marzo.s1.glue",
           "en": "Glue",
           "gl": "Pegamento",
           "es": "Pegamento",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "id": "sticker",
+          "id": "3_4.marzo.s1.sticker",
           "en": "Sticker",
           "gl": "Adhesivo",
           "es": "Pegatina",
@@ -90,7 +90,7 @@
           }
         },
         {
-          "id": "paint",
+          "id": "3_4.marzo.s1.paint",
           "en": "Paint",
           "gl": "Pintar",
           "es": "Pintar",
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": "mix",
+          "id": "3_4.marzo.s1.mix",
           "en": "Mix",
           "gl": "Mesturar",
           "es": "Mezclar",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "stick",
+          "id": "3_4.marzo.s1.stick",
           "en": "Stick",
           "gl": "Pegar",
           "es": "Pegar",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "id": "choose",
+          "id": "3_4.marzo.s1.choose",
           "en": "Choose",
           "gl": "Escoller",
           "es": "Elegir",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "id": "show",
+          "id": "3_4.marzo.s1.show",
           "en": "Show",
           "gl": "Amosar",
           "es": "Enseñar",
@@ -145,7 +145,7 @@
           }
         },
         {
-          "id": "red",
+          "id": "3_4.marzo.s1.red",
           "en": "Red",
           "gl": "Vermello, vermella",
           "es": "Rojo, roja",
@@ -156,7 +156,7 @@
           }
         },
         {
-          "id": "yellow",
+          "id": "3_4.marzo.s1.yellow",
           "en": "Yellow",
           "gl": "Amarelo, amarela",
           "es": "Amarillo, amarilla",
@@ -167,7 +167,7 @@
           }
         },
         {
-          "id": "purple",
+          "id": "3_4.marzo.s1.purple",
           "en": "Purple",
           "gl": "Morado, morada",
           "es": "Morado, morada",
@@ -178,7 +178,7 @@
           }
         },
         {
-          "id": "black",
+          "id": "3_4.marzo.s1.black",
           "en": "Black",
           "gl": "Negro, negra",
           "es": "Negro, negra",
@@ -189,7 +189,7 @@
           }
         },
         {
-          "id": "what-colour-is-it",
+          "id": "3_4.marzo.s1.what-colour-is-it",
           "en": "What colour is it?",
           "gl": "De que cor é?",
           "es": "¿De qué color es?",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "id": "find-something-red",
+          "id": "3_4.marzo.s1.find-something-red",
           "en": "Find something red",
           "gl": "Busca algo vermello",
           "es": "Busca algo rojo",
@@ -211,7 +211,7 @@
           }
         },
         {
-          "id": "red-and-yellow",
+          "id": "3_4.marzo.s1.red-and-yellow",
           "en": "Red and yellow",
           "gl": "Vermello e amarelo",
           "es": "Rojo y amarillo",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "id": "colour-by-colour",
+          "id": "3_4.marzo.s1.colour-by-colour",
           "en": "Colour by colour",
           "gl": "Cor a cor",
           "es": "Color a color",
@@ -242,7 +242,7 @@
       },
       "palabras": [
         {
-          "id": "circle",
+          "id": "3_4.marzo.s2.circle",
           "en": "Circle",
           "gl": "Círculo",
           "es": "Círculo",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "id": "square",
+          "id": "3_4.marzo.s2.square",
           "en": "Square",
           "gl": "Cadrado",
           "es": "Cuadrado",
@@ -264,7 +264,7 @@
           }
         },
         {
-          "id": "triangle",
+          "id": "3_4.marzo.s2.triangle",
           "en": "Triangle",
           "gl": "Triángulo",
           "es": "Triángulo",
@@ -275,7 +275,7 @@
           }
         },
         {
-          "id": "line",
+          "id": "3_4.marzo.s2.line",
           "en": "Line",
           "gl": "Liña",
           "es": "Línea",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "id": "hoop",
+          "id": "3_4.marzo.s2.hoop",
           "en": "Hoop",
           "gl": "Aro",
           "es": "Aro",
@@ -297,7 +297,7 @@
           }
         },
         {
-          "id": "shape",
+          "id": "3_4.marzo.s2.shape",
           "en": "Shape",
           "gl": "Forma",
           "es": "Forma",
@@ -308,7 +308,7 @@
           }
         },
         {
-          "id": "dot",
+          "id": "3_4.marzo.s2.dot",
           "en": "Dot",
           "gl": "Punto",
           "es": "Punto",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "id": "roll",
+          "id": "3_4.marzo.s2.roll",
           "en": "Roll",
           "gl": "Rodar",
           "es": "Rodar",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "id": "trace",
+          "id": "3_4.marzo.s2.trace",
           "en": "Trace",
           "gl": "Trazar",
           "es": "Trazar",
@@ -341,7 +341,7 @@
           }
         },
         {
-          "id": "bounce",
+          "id": "3_4.marzo.s2.bounce",
           "en": "Bounce",
           "gl": "Botar",
           "es": "Botar",
@@ -352,7 +352,7 @@
           }
         },
         {
-          "id": "fold",
+          "id": "3_4.marzo.s2.fold",
           "en": "Fold",
           "gl": "Pregar",
           "es": "Doblar",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "id": "spin",
+          "id": "3_4.marzo.s2.spin",
           "en": "Spin",
           "gl": "Facer xirar",
           "es": "Hacer girar",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "round",
+          "id": "3_4.marzo.s2.round",
           "en": "Round",
           "gl": "Redondo, redonda",
           "es": "Redondo, redonda",
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": "straight",
+          "id": "3_4.marzo.s2.straight",
           "en": "Straight",
           "gl": "Recto, recta",
           "es": "Recto, recta",
@@ -396,7 +396,7 @@
           }
         },
         {
-          "id": "pointy",
+          "id": "3_4.marzo.s2.pointy",
           "en": "Pointy",
           "gl": "Aguzado, aguzada",
           "es": "Puntiagudo, puntiaguda",
@@ -407,7 +407,7 @@
           }
         },
         {
-          "id": "flat",
+          "id": "3_4.marzo.s2.flat",
           "en": "Flat",
           "gl": "Plano, plana",
           "es": "Plano, plana",
@@ -418,7 +418,7 @@
           }
         },
         {
-          "id": "roll-the-circle",
+          "id": "3_4.marzo.s2.roll-the-circle",
           "en": "Roll the hoop",
           "gl": "Fai rodar o aro",
           "es": "Haz rodar el aro",
@@ -429,7 +429,7 @@
           }
         },
         {
-          "id": "make-a-circle",
+          "id": "3_4.marzo.s2.make-a-circle",
           "en": "Make a circle",
           "gl": "Facede un círculo",
           "es": "Haced un círculo",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "inside-the-hoop",
+          "id": "3_4.marzo.s2.inside-the-hoop",
           "en": "Inside the hoop",
           "gl": "Dentro do aro",
           "es": "Dentro del aro",
@@ -451,7 +451,7 @@
           }
         },
         {
-          "id": "around-the-square",
+          "id": "3_4.marzo.s2.around-the-square",
           "en": "Around the square",
           "gl": "Arredor do cadrado",
           "es": "Alrededor del cuadrado",
@@ -471,7 +471,7 @@
       },
       "palabras": [
         {
-          "id": "apple",
+          "id": "3_4.marzo.s3.apple",
           "en": "Apple",
           "gl": "Mazá",
           "es": "Manzana",
@@ -482,7 +482,7 @@
           }
         },
         {
-          "id": "banana",
+          "id": "3_4.marzo.s3.banana",
           "en": "Banana",
           "gl": "Plátano",
           "es": "Plátano",
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "pear",
+          "id": "3_4.marzo.s3.pear",
           "en": "Pear",
           "gl": "Pera",
           "es": "Pera",
@@ -504,7 +504,7 @@
           }
         },
         {
-          "id": "strawberry",
+          "id": "3_4.marzo.s3.strawberry",
           "en": "Strawberry",
           "gl": "Amorodo",
           "es": "Fresa",
@@ -515,7 +515,7 @@
           }
         },
         {
-          "id": "lemon",
+          "id": "3_4.marzo.s3.lemon",
           "en": "Lemon",
           "gl": "Limón",
           "es": "Limón",
@@ -526,7 +526,7 @@
           }
         },
         {
-          "id": "cherry",
+          "id": "3_4.marzo.s3.cherry",
           "en": "Cherry",
           "gl": "Cereixa",
           "es": "Cereza",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "id": "kiwi",
+          "id": "3_4.marzo.s3.kiwi",
           "en": "Kiwi",
           "gl": "Kiwi",
           "es": "Kiwi",
@@ -548,7 +548,7 @@
           }
         },
         {
-          "id": "bite",
+          "id": "3_4.marzo.s3.bite",
           "en": "Bite",
           "gl": "Trabar",
           "es": "Morder",
@@ -559,7 +559,7 @@
           }
         },
         {
-          "id": "squeeze",
+          "id": "3_4.marzo.s3.squeeze",
           "en": "Squeeze",
           "gl": "Espremer",
           "es": "Exprimir",
@@ -570,7 +570,7 @@
           }
         },
         {
-          "id": "pick",
+          "id": "3_4.marzo.s3.pick",
           "en": "Pick",
           "gl": "Coller",
           "es": "Coger",
@@ -581,7 +581,7 @@
           }
         },
         {
-          "id": "chew",
+          "id": "3_4.marzo.s3.chew",
           "en": "Chew",
           "gl": "Mastigar",
           "es": "Masticar",
@@ -592,7 +592,7 @@
           }
         },
         {
-          "id": "lick",
+          "id": "3_4.marzo.s3.lick",
           "en": "Lick",
           "gl": "Lamber",
           "es": "Lamer",
@@ -603,7 +603,7 @@
           }
         },
         {
-          "id": "sweet",
+          "id": "3_4.marzo.s3.sweet",
           "en": "Sweet",
           "gl": "Doce",
           "es": "Dulce",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "bitter",
+          "id": "3_4.marzo.s3.bitter",
           "en": "Bitter",
           "gl": "Amargo, amarga",
           "es": "Amargo, amarga",
@@ -625,7 +625,7 @@
           }
         },
         {
-          "id": "smooth",
+          "id": "3_4.marzo.s3.smooth",
           "en": "Smooth",
           "gl": "Liso, lisa",
           "es": "Liso, lisa",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "id": "tasty",
+          "id": "3_4.marzo.s3.tasty",
           "en": "Tasty",
           "gl": "Saboroso, saborosa",
           "es": "Sabroso, sabrosa",
@@ -647,7 +647,7 @@
           }
         },
         {
-          "id": "i-like-apples",
+          "id": "3_4.marzo.s3.i-like-apples",
           "en": "I like apples",
           "gl": "Gústanme as mazás",
           "es": "Me gustan las manzanas",
@@ -658,7 +658,7 @@
           }
         },
         {
-          "id": "yes-please",
+          "id": "3_4.marzo.s3.yes-please",
           "en": "Yes, please",
           "gl": "Si, por favor",
           "es": "Sí, por favor",
@@ -669,7 +669,7 @@
           }
         },
         {
-          "id": "no-thank-you",
+          "id": "3_4.marzo.s3.no-thank-you",
           "en": "No, thank you",
           "gl": "Non, grazas",
           "es": "No, gracias",
@@ -680,7 +680,7 @@
           }
         },
         {
-          "id": "apples-and-pears",
+          "id": "3_4.marzo.s3.apples-and-pears",
           "en": "Apples and pears",
           "gl": "Mazás e peras",
           "es": "Manzanas y peras",
@@ -700,7 +700,7 @@
       },
       "palabras": [
         {
-          "id": "drum",
+          "id": "3_4.marzo.s4.drum",
           "en": "Drum",
           "gl": "Tambor",
           "es": "Tambor",
@@ -711,7 +711,7 @@
           }
         },
         {
-          "id": "maraca",
+          "id": "3_4.marzo.s4.maraca",
           "en": "Maraca",
           "gl": "Maraca",
           "es": "Maraca",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "guitar",
+          "id": "3_4.marzo.s4.guitar",
           "en": "Guitar",
           "gl": "Guitarra",
           "es": "Guitarra",
@@ -733,7 +733,7 @@
           }
         },
         {
-          "id": "piano",
+          "id": "3_4.marzo.s4.piano",
           "en": "Piano",
           "gl": "Piano",
           "es": "Piano",
@@ -744,7 +744,7 @@
           }
         },
         {
-          "id": "bottle",
+          "id": "3_4.marzo.s4.bottle",
           "en": "Bottle",
           "gl": "Botella",
           "es": "Botella",
@@ -755,7 +755,7 @@
           }
         },
         {
-          "id": "bagpipes",
+          "id": "3_4.marzo.s4.bagpipes",
           "en": "Bagpipes",
           "gl": "Gaita",
           "es": "Gaita",
@@ -766,7 +766,7 @@
           }
         },
         {
-          "id": "rattle",
+          "id": "3_4.marzo.s4.rattle",
           "en": "Rattle",
           "gl": "Axóuxere",
           "es": "Sonajero",
@@ -777,7 +777,7 @@
           }
         },
         {
-          "id": "shake",
+          "id": "3_4.marzo.s4.shake",
           "en": "Shake",
           "gl": "Axitar",
           "es": "Agitar",
@@ -788,7 +788,7 @@
           }
         },
         {
-          "id": "bang",
+          "id": "3_4.marzo.s4.bang",
           "en": "Bang",
           "gl": "Bater",
           "es": "Golpear",
@@ -799,7 +799,7 @@
           }
         },
         {
-          "id": "strum",
+          "id": "3_4.marzo.s4.strum",
           "en": "Strum",
           "gl": "Tocar as cordas",
           "es": "Rasguear",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "id": "whistle",
+          "id": "3_4.marzo.s4.whistle",
           "en": "Whistle",
           "gl": "Asubiar",
           "es": "Silbar",
@@ -821,7 +821,7 @@
           }
         },
         {
-          "id": "hum",
+          "id": "3_4.marzo.s4.hum",
           "en": "Hum",
           "gl": "Trautear",
           "es": "Tararear",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "high",
+          "id": "3_4.marzo.s4.high",
           "en": "High",
           "gl": "Agudo, aguda",
           "es": "Agudo, aguda",
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "low",
+          "id": "3_4.marzo.s4.low",
           "en": "Low",
           "gl": "Grave",
           "es": "Grave",
@@ -854,7 +854,7 @@
           }
         },
         {
-          "id": "musical",
+          "id": "3_4.marzo.s4.musical",
           "en": "Musical",
           "gl": "Musical",
           "es": "Musical",
@@ -865,7 +865,7 @@
           }
         },
         {
-          "id": "shaky",
+          "id": "3_4.marzo.s4.shaky",
           "en": "Shaky",
           "gl": "Tremente",
           "es": "Tembloroso, temblorosa",
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "shake-the-bottle",
+          "id": "3_4.marzo.s4.shake-the-bottle",
           "en": "Shake the bottle",
           "gl": "Axita a botella",
           "es": "Agita la botella",
@@ -887,7 +887,7 @@
           }
         },
         {
-          "id": "let-s-sing",
+          "id": "3_4.marzo.s4.let-s-sing",
           "en": "Let's sing!",
           "gl": "Imos cantar!",
           "es": "¡Vamos a cantar!",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "id": "loud-then-quiet",
+          "id": "3_4.marzo.s4.loud-then-quiet",
           "en": "Loud, then quiet",
           "gl": "Forte e logo suave",
           "es": "Fuerte y luego suave",
@@ -909,7 +909,7 @@
           }
         },
         {
-          "id": "with-the-drum",
+          "id": "3_4.marzo.s4.with-the-drum",
           "en": "With the drum",
           "gl": "Co tambor",
           "es": "Con el tambor",

@@ -13,7 +13,7 @@
       },
       "palabras": [
         {
-          "id": "hello",
+          "id": "3_4.setembro.s1.hello",
           "en": "Hello",
           "gl": "Ola",
           "es": "Hola",
@@ -24,7 +24,7 @@
           }
         },
         {
-          "id": "friend",
+          "id": "3_4.setembro.s1.friend",
           "en": "Friend",
           "gl": "Amigo, amiga",
           "es": "Amigo, amiga",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "teacher",
+          "id": "3_4.setembro.s1.teacher",
           "en": "Teacher",
           "gl": "Mestra, mestre",
           "es": "Maestra, maestro",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "id": "school",
+          "id": "3_4.setembro.s1.school",
           "en": "School",
           "gl": "Escola",
           "es": "Escuela",
@@ -57,7 +57,7 @@
           }
         },
         {
-          "id": "door",
+          "id": "3_4.setembro.s1.door",
           "en": "Door",
           "gl": "Porta",
           "es": "Puerta",
@@ -68,7 +68,7 @@
           }
         },
         {
-          "id": "chair",
+          "id": "3_4.setembro.s1.chair",
           "en": "Chair",
           "gl": "Cadeira",
           "es": "Silla",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "id": "rug",
+          "id": "3_4.setembro.s1.rug",
           "en": "Rug",
           "gl": "Alfombra",
           "es": "Alfombra",
@@ -90,7 +90,7 @@
           }
         },
         {
-          "id": "name",
+          "id": "3_4.setembro.s1.name",
           "en": "Name",
           "gl": "Nome",
           "es": "Nombre",
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": "wave",
+          "id": "3_4.setembro.s1.wave",
           "en": "Wave",
           "gl": "Acenar",
           "es": "Saludar con la mano",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "smile",
+          "id": "3_4.setembro.s1.smile",
           "en": "Smile",
           "gl": "Sorrir",
           "es": "Sonreír",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "id": "sit",
+          "id": "3_4.setembro.s1.sit",
           "en": "Sit",
           "gl": "Sentar",
           "es": "Sentarse",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "id": "come",
+          "id": "3_4.setembro.s1.come",
           "en": "Come",
           "gl": "Vir",
           "es": "Venir",
@@ -145,7 +145,7 @@
           }
         },
         {
-          "id": "listen",
+          "id": "3_4.setembro.s1.listen",
           "en": "Listen",
           "gl": "Escoitar",
           "es": "Escuchar",
@@ -156,7 +156,7 @@
           }
         },
         {
-          "id": "happy",
+          "id": "3_4.setembro.s1.happy",
           "en": "Happy",
           "gl": "Contento, contenta",
           "es": "Contento, contenta",
@@ -167,7 +167,7 @@
           }
         },
         {
-          "id": "new",
+          "id": "3_4.setembro.s1.new",
           "en": "New",
           "gl": "Novo, nova",
           "es": "Nuevo, nueva",
@@ -178,7 +178,7 @@
           }
         },
         {
-          "id": "quiet",
+          "id": "3_4.setembro.s1.quiet",
           "en": "Quiet",
           "gl": "Calado, calada",
           "es": "Callado, callada",
@@ -189,7 +189,7 @@
           }
         },
         {
-          "id": "loud",
+          "id": "3_4.setembro.s1.loud",
           "en": "Loud",
           "gl": "Forte (son)",
           "es": "Fuerte (sonido)",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "id": "good-morning",
+          "id": "3_4.setembro.s1.good-morning",
           "en": "Good morning!",
           "gl": "Bos días!",
           "es": "¡Buenos días!",
@@ -211,7 +211,7 @@
           }
         },
         {
-          "id": "bye-bye",
+          "id": "3_4.setembro.s1.bye-bye",
           "en": "Bye-bye",
           "gl": "Adeus, adeus",
           "es": "Adiós, adiós",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "id": "hand-in-hand",
+          "id": "3_4.setembro.s1.hand-in-hand",
           "en": "Hand in hand",
           "gl": "Da man",
           "es": "De la mano",
@@ -242,7 +242,7 @@
       },
       "palabras": [
         {
-          "id": "table",
+          "id": "3_4.setembro.s2.table",
           "en": "Table",
           "gl": "Mesa",
           "es": "Mesa",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "id": "window",
+          "id": "3_4.setembro.s2.window",
           "en": "Window",
           "gl": "Fiestra",
           "es": "Ventana",
@@ -264,7 +264,7 @@
           }
         },
         {
-          "id": "ball",
+          "id": "3_4.setembro.s2.ball",
           "en": "Ball",
           "gl": "Pelota",
           "es": "Pelota",
@@ -275,7 +275,7 @@
           }
         },
         {
-          "id": "book",
+          "id": "3_4.setembro.s2.book",
           "en": "Book",
           "gl": "Libro",
           "es": "Libro",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "id": "crayon",
+          "id": "3_4.setembro.s2.crayon",
           "en": "Crayon",
           "gl": "Cera de cor",
           "es": "Cera de colores",
@@ -297,7 +297,7 @@
           }
         },
         {
-          "id": "backpack",
+          "id": "3_4.setembro.s2.backpack",
           "en": "Backpack",
           "gl": "Mochila",
           "es": "Mochila",
@@ -308,7 +308,7 @@
           }
         },
         {
-          "id": "box",
+          "id": "3_4.setembro.s2.box",
           "en": "Box",
           "gl": "Caixa",
           "es": "Caja",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "id": "look",
+          "id": "3_4.setembro.s2.look",
           "en": "Look",
           "gl": "Mirar",
           "es": "Mirar",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "id": "point",
+          "id": "3_4.setembro.s2.point",
           "en": "Point",
           "gl": "Sinalar",
           "es": "Señalar",
@@ -341,7 +341,7 @@
           }
         },
         {
-          "id": "give",
+          "id": "3_4.setembro.s2.give",
           "en": "Give",
           "gl": "Dar",
           "es": "Dar",
@@ -352,7 +352,7 @@
           }
         },
         {
-          "id": "share",
+          "id": "3_4.setembro.s2.share",
           "en": "Share",
           "gl": "Compartir",
           "es": "Compartir",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "id": "help",
+          "id": "3_4.setembro.s2.help",
           "en": "Help",
           "gl": "Axudar",
           "es": "Ayudar",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "little",
+          "id": "3_4.setembro.s2.little",
           "en": "Little",
           "gl": "Pequeniño, pequeniña",
           "es": "Pequeñito, pequeñita",
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": "ready",
+          "id": "3_4.setembro.s2.ready",
           "en": "Ready",
           "gl": "Preparado, preparada",
           "es": "Listo, lista",
@@ -396,7 +396,7 @@
           }
         },
         {
-          "id": "empty",
+          "id": "3_4.setembro.s2.empty",
           "en": "Empty",
           "gl": "Baleiro, baleira",
           "es": "Vacío, vacía",
@@ -407,7 +407,7 @@
           }
         },
         {
-          "id": "full",
+          "id": "3_4.setembro.s2.full",
           "en": "Full",
           "gl": "Cheo, chea",
           "es": "Lleno, llena",
@@ -418,7 +418,7 @@
           }
         },
         {
-          "id": "tidy-up",
+          "id": "3_4.setembro.s2.tidy-up",
           "en": "Tidy up!",
           "gl": "A recoller!",
           "es": "¡A recoger!",
@@ -429,7 +429,7 @@
           }
         },
         {
-          "id": "your-turn",
+          "id": "3_4.setembro.s2.your-turn",
           "en": "Your turn!",
           "gl": "A túa vez!",
           "es": "¡Te toca!",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "one-by-one",
+          "id": "3_4.setembro.s2.one-by-one",
           "en": "One by one",
           "gl": "Un a un",
           "es": "Uno a uno",
@@ -451,7 +451,7 @@
           }
         },
         {
-          "id": "all-together",
+          "id": "3_4.setembro.s2.all-together",
           "en": "All together",
           "gl": "Todos xuntos",
           "es": "Todos juntos",
@@ -471,7 +471,7 @@
       },
       "palabras": [
         {
-          "id": "family",
+          "id": "3_4.setembro.s3.family",
           "en": "Family",
           "gl": "Familia",
           "es": "Familia",
@@ -482,7 +482,7 @@
           }
         },
         {
-          "id": "home",
+          "id": "3_4.setembro.s3.home",
           "en": "Home",
           "gl": "Casa",
           "es": "Casa",
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "mummy",
+          "id": "3_4.setembro.s3.mummy",
           "en": "Mummy",
           "gl": "Mamá",
           "es": "Mamá",
@@ -504,7 +504,7 @@
           }
         },
         {
-          "id": "daddy",
+          "id": "3_4.setembro.s3.daddy",
           "en": "Daddy",
           "gl": "Papá",
           "es": "Papá",
@@ -515,7 +515,7 @@
           }
         },
         {
-          "id": "baby",
+          "id": "3_4.setembro.s3.baby",
           "en": "Baby",
           "gl": "Bebé",
           "es": "Bebé",
@@ -526,7 +526,7 @@
           }
         },
         {
-          "id": "grandma",
+          "id": "3_4.setembro.s3.grandma",
           "en": "Grandma",
           "gl": "Avoa",
           "es": "Abuela",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "id": "grandpa",
+          "id": "3_4.setembro.s3.grandpa",
           "en": "Grandpa",
           "gl": "Avó",
           "es": "Abuelo",
@@ -548,7 +548,7 @@
           }
         },
         {
-          "id": "hug",
+          "id": "3_4.setembro.s3.hug",
           "en": "Hug",
           "gl": "Abrazar",
           "es": "Abrazar",
@@ -559,7 +559,7 @@
           }
         },
         {
-          "id": "kiss",
+          "id": "3_4.setembro.s3.kiss",
           "en": "Kiss",
           "gl": "Bicar",
           "es": "Besar",
@@ -570,7 +570,7 @@
           }
         },
         {
-          "id": "hold",
+          "id": "3_4.setembro.s3.hold",
           "en": "Hold",
           "gl": "Suxeitar",
           "es": "Sostener",
@@ -581,7 +581,7 @@
           }
         },
         {
-          "id": "rock",
+          "id": "3_4.setembro.s3.rock",
           "en": "Rock",
           "gl": "Arrolar",
           "es": "Mecer",
@@ -592,7 +592,7 @@
           }
         },
         {
-          "id": "wait",
+          "id": "3_4.setembro.s3.wait",
           "en": "Wait",
           "gl": "Agardar",
           "es": "Esperar",
@@ -603,7 +603,7 @@
           }
         },
         {
-          "id": "soft",
+          "id": "3_4.setembro.s3.soft",
           "en": "Soft",
           "gl": "Suave",
           "es": "Suave",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "gentle",
+          "id": "3_4.setembro.s3.gentle",
           "en": "Gentle",
           "gl": "Agarimoso, agarimosa",
           "es": "Cariñoso, cariñosa",
@@ -625,7 +625,7 @@
           }
         },
         {
-          "id": "calm",
+          "id": "3_4.setembro.s3.calm",
           "en": "Calm",
           "gl": "Tranquilo, tranquila",
           "es": "Tranquilo, tranquila",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "id": "shy",
+          "id": "3_4.setembro.s3.shy",
           "en": "Shy",
           "gl": "Tímido, tímida",
           "es": "Tímido, tímida",
@@ -647,7 +647,7 @@
           }
         },
         {
-          "id": "what-s-your-name",
+          "id": "3_4.setembro.s3.what-s-your-name",
           "en": "What's your name?",
           "gl": "Como te chamas?",
           "es": "¿Cómo te llamas?",
@@ -658,7 +658,7 @@
           }
         },
         {
-          "id": "i-love-you",
+          "id": "3_4.setembro.s3.i-love-you",
           "en": "I love you",
           "gl": "Quérote",
           "es": "Te quiero",
@@ -669,7 +669,7 @@
           }
         },
         {
-          "id": "thank-you",
+          "id": "3_4.setembro.s3.thank-you",
           "en": "Thank you",
           "gl": "Grazas",
           "es": "Gracias",
@@ -680,7 +680,7 @@
           }
         },
         {
-          "id": "next-to-me",
+          "id": "3_4.setembro.s3.next-to-me",
           "en": "Next to me",
           "gl": "Ao meu carón",
           "es": "A mi lado",
@@ -700,7 +700,7 @@
       },
       "palabras": [
         {
-          "id": "toy",
+          "id": "3_4.setembro.s4.toy",
           "en": "Toy",
           "gl": "Xoguete",
           "es": "Juguete",
@@ -711,7 +711,7 @@
           }
         },
         {
-          "id": "doll",
+          "id": "3_4.setembro.s4.doll",
           "en": "Doll",
           "gl": "Boneca",
           "es": "Muñeca",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "teddy",
+          "id": "3_4.setembro.s4.teddy",
           "en": "Teddy",
           "gl": "Osiño de peluche",
           "es": "Osito de peluche",
@@ -733,7 +733,7 @@
           }
         },
         {
-          "id": "blocks",
+          "id": "3_4.setembro.s4.blocks",
           "en": "Blocks",
           "gl": "Bloques",
           "es": "Bloques",
@@ -744,7 +744,7 @@
           }
         },
         {
-          "id": "song",
+          "id": "3_4.setembro.s4.song",
           "en": "Song",
           "gl": "Canción",
           "es": "Canción",
@@ -755,7 +755,7 @@
           }
         },
         {
-          "id": "cup",
+          "id": "3_4.setembro.s4.cup",
           "en": "Cup",
           "gl": "Vaso",
           "es": "Vaso",
@@ -766,7 +766,7 @@
           }
         },
         {
-          "id": "snack",
+          "id": "3_4.setembro.s4.snack",
           "en": "Snack",
           "gl": "Merenda",
           "es": "Merienda",
@@ -777,7 +777,7 @@
           }
         },
         {
-          "id": "play",
+          "id": "3_4.setembro.s4.play",
           "en": "Play",
           "gl": "Xogar",
           "es": "Jugar",
@@ -788,7 +788,7 @@
           }
         },
         {
-          "id": "sing",
+          "id": "3_4.setembro.s4.sing",
           "en": "Sing",
           "gl": "Cantar",
           "es": "Cantar",
@@ -799,7 +799,7 @@
           }
         },
         {
-          "id": "push",
+          "id": "3_4.setembro.s4.push",
           "en": "Push",
           "gl": "Empurrar",
           "es": "Empujar",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "id": "pull",
+          "id": "3_4.setembro.s4.pull",
           "en": "Pull",
           "gl": "Tirar de",
           "es": "Tirar de",
@@ -821,7 +821,7 @@
           }
         },
         {
-          "id": "build",
+          "id": "3_4.setembro.s4.build",
           "en": "Build",
           "gl": "Construír",
           "es": "Construir",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "funny",
+          "id": "3_4.setembro.s4.funny",
           "en": "Funny",
           "gl": "Divertido, divertida",
           "es": "Divertido, divertida",
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "friendly",
+          "id": "3_4.setembro.s4.friendly",
           "en": "Friendly",
           "gl": "Simpático, simpática",
           "es": "Simpático, simpática",
@@ -854,7 +854,7 @@
           }
         },
         {
-          "id": "hungry",
+          "id": "3_4.setembro.s4.hungry",
           "en": "Hungry",
           "gl": "Con fame",
           "es": "Con hambre",
@@ -865,7 +865,7 @@
           }
         },
         {
-          "id": "thirsty",
+          "id": "3_4.setembro.s4.thirsty",
           "en": "Thirsty",
           "gl": "Con sede",
           "es": "Con sed",
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "give-me-five",
+          "id": "3_4.setembro.s4.give-me-five",
           "en": "Give me five!",
           "gl": "Choca esa!",
           "es": "¡Choca esos cinco!",
@@ -887,7 +887,7 @@
           }
         },
         {
-          "id": "let-s-play",
+          "id": "3_4.setembro.s4.let-s-play",
           "en": "Let's play!",
           "gl": "Imos xogar!",
           "es": "¡Vamos a jugar!",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "id": "wave-and-smile",
+          "id": "3_4.setembro.s4.wave-and-smile",
           "en": "Wave and smile",
           "gl": "Acenar e sorrir",
           "es": "Saludar y sonreír",
@@ -909,7 +909,7 @@
           }
         },
         {
-          "id": "you-and-me",
+          "id": "3_4.setembro.s4.you-and-me",
           "en": "You and me",
           "gl": "Ti e mais eu",
           "es": "Tú y yo",

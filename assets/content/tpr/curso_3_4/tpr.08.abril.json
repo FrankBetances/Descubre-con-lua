@@ -13,7 +13,7 @@
       },
       "palabras": [
         {
-          "id": "rain",
+          "id": "3_4.abril.s1.rain",
           "en": "Rain",
           "gl": "Chuvia",
           "es": "Lluvia",
@@ -24,7 +24,7 @@
           }
         },
         {
-          "id": "sun",
+          "id": "3_4.abril.s1.sun",
           "en": "Sun",
           "gl": "Sol",
           "es": "Sol",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "spring",
+          "id": "3_4.abril.s1.spring",
           "en": "Spring",
           "gl": "Primavera",
           "es": "Primavera",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "id": "weather",
+          "id": "3_4.abril.s1.weather",
           "en": "Weather",
           "gl": "Tempo",
           "es": "Tiempo",
@@ -57,7 +57,7 @@
           }
         },
         {
-          "id": "sunshine",
+          "id": "3_4.abril.s1.sunshine",
           "en": "Sunshine",
           "gl": "Raiola",
           "es": "Luz del sol",
@@ -68,7 +68,7 @@
           }
         },
         {
-          "id": "kite",
+          "id": "3_4.abril.s1.kite",
           "en": "Kite",
           "gl": "Papaventos",
           "es": "Cometa",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "id": "morning",
+          "id": "3_4.abril.s1.morning",
           "en": "Morning",
           "gl": "Mañá",
           "es": "Mañana",
@@ -90,7 +90,7 @@
           }
         },
         {
-          "id": "shine",
+          "id": "3_4.abril.s1.shine",
           "en": "Shine",
           "gl": "Brillar",
           "es": "Brillar",
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": "open",
+          "id": "3_4.abril.s1.open",
           "en": "Open",
           "gl": "Abrir",
           "es": "Abrir",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "look-up",
+          "id": "3_4.abril.s1.look-up",
           "en": "Look up",
           "gl": "Mirar arriba",
           "es": "Mirar arriba",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "id": "warm-up",
+          "id": "3_4.abril.s1.warm-up",
           "en": "Warm up",
           "gl": "Quentarse",
           "es": "Calentarse",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "id": "peek",
+          "id": "3_4.abril.s1.peek",
           "en": "Peek",
           "gl": "Espreitar",
           "es": "Espiar",
@@ -145,7 +145,7 @@
           }
         },
         {
-          "id": "sunny",
+          "id": "3_4.abril.s1.sunny",
           "en": "Sunny",
           "gl": "Soleado, soleada",
           "es": "Soleado, soleada",
@@ -156,7 +156,7 @@
           }
         },
         {
-          "id": "cloudy",
+          "id": "3_4.abril.s1.cloudy",
           "en": "Cloudy",
           "gl": "Nubrado, nubrada",
           "es": "Nublado, nublada",
@@ -167,7 +167,7 @@
           }
         },
         {
-          "id": "foggy",
+          "id": "3_4.abril.s1.foggy",
           "en": "Foggy",
           "gl": "Con néboa",
           "es": "Con niebla",
@@ -178,7 +178,7 @@
           }
         },
         {
-          "id": "clear",
+          "id": "3_4.abril.s1.clear",
           "en": "Clear",
           "gl": "Despexado, despexada",
           "es": "Despejado, despejada",
@@ -189,7 +189,7 @@
           }
         },
         {
-          "id": "tap-tap",
+          "id": "3_4.abril.s1.tap-tap",
           "en": "Tap-tap",
           "gl": "Plic, plic",
           "es": "Plic, plic",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "id": "hello-sun",
+          "id": "3_4.abril.s1.hello-sun",
           "en": "Hello, sun!",
           "gl": "Ola, sol!",
           "es": "¡Hola, sol!",
@@ -211,7 +211,7 @@
           }
         },
         {
-          "id": "rain-then-sun",
+          "id": "3_4.abril.s1.rain-then-sun",
           "en": "Rain, then sun",
           "gl": "Chuvia e logo sol",
           "es": "Lluvia y luego sol",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "id": "behind-the-clouds",
+          "id": "3_4.abril.s1.behind-the-clouds",
           "en": "Behind the clouds",
           "gl": "Detrás das nubes",
           "es": "Detrás de las nubes",
@@ -242,7 +242,7 @@
       },
       "palabras": [
         {
-          "id": "seed",
+          "id": "3_4.abril.s2.seed",
           "en": "Seed",
           "gl": "Semente",
           "es": "Semilla",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "id": "soil",
+          "id": "3_4.abril.s2.soil",
           "en": "Soil",
           "gl": "Terra",
           "es": "Tierra",
@@ -264,7 +264,7 @@
           }
         },
         {
-          "id": "flower",
+          "id": "3_4.abril.s2.flower",
           "en": "Flower",
           "gl": "Flor",
           "es": "Flor",
@@ -275,7 +275,7 @@
           }
         },
         {
-          "id": "plant",
+          "id": "3_4.abril.s2.plant",
           "en": "Plant",
           "gl": "Planta",
           "es": "Planta",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "id": "flowerpot",
+          "id": "3_4.abril.s2.flowerpot",
           "en": "Flowerpot",
           "gl": "Testo",
           "es": "Maceta",
@@ -297,7 +297,7 @@
           }
         },
         {
-          "id": "watering-can",
+          "id": "3_4.abril.s2.watering-can",
           "en": "Watering can",
           "gl": "Regadeira",
           "es": "Regadera",
@@ -308,7 +308,7 @@
           }
         },
         {
-          "id": "stem",
+          "id": "3_4.abril.s2.stem",
           "en": "Stem",
           "gl": "Talo",
           "es": "Tallo",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "id": "grow",
+          "id": "3_4.abril.s2.grow",
           "en": "Grow",
           "gl": "Medrar",
           "es": "Crecer",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "id": "sow",
+          "id": "3_4.abril.s2.sow",
           "en": "Sow",
           "gl": "Sementar",
           "es": "Sembrar",
@@ -341,7 +341,7 @@
           }
         },
         {
-          "id": "sprinkle",
+          "id": "3_4.abril.s2.sprinkle",
           "en": "Sprinkle",
           "gl": "Regar",
           "es": "Regar",
@@ -352,7 +352,7 @@
           }
         },
         {
-          "id": "bloom",
+          "id": "3_4.abril.s2.bloom",
           "en": "Bloom",
           "gl": "Florecer",
           "es": "Florecer",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "id": "sprout",
+          "id": "3_4.abril.s2.sprout",
           "en": "Sprout",
           "gl": "Agromar",
           "es": "Brotar",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "pretty",
+          "id": "3_4.abril.s2.pretty",
           "en": "Pretty",
           "gl": "Lindo, linda",
           "es": "Lindo, linda",
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": "fragrant",
+          "id": "3_4.abril.s2.fragrant",
           "en": "Fragrant",
           "gl": "Recendente",
           "es": "Perfumado, perfumada",
@@ -396,7 +396,7 @@
           }
         },
         {
-          "id": "alive",
+          "id": "3_4.abril.s2.alive",
           "en": "Alive",
           "gl": "Vivo, viva",
           "es": "Vivo, viva",
@@ -407,7 +407,7 @@
           }
         },
         {
-          "id": "thin",
+          "id": "3_4.abril.s2.thin",
           "en": "Thin",
           "gl": "Delgado, delgada",
           "es": "Delgado, delgada",
@@ -418,7 +418,7 @@
           }
         },
         {
-          "id": "be-a-little-seed",
+          "id": "3_4.abril.s2.be-a-little-seed",
           "en": "Be a little seed",
           "gl": "Sé unha semente pequena",
           "es": "Sé una semillita",
@@ -429,7 +429,7 @@
           }
         },
         {
-          "id": "open-your-flower",
+          "id": "3_4.abril.s2.open-your-flower",
           "en": "Open like a flower",
           "gl": "Ábrete coma unha flor",
           "es": "Ábrete como una flor",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "from-seed-to-flower",
+          "id": "3_4.abril.s2.from-seed-to-flower",
           "en": "From seed to flower",
           "gl": "De semente a flor",
           "es": "De semilla a flor",
@@ -451,7 +451,7 @@
           }
         },
         {
-          "id": "slowly-slowly",
+          "id": "3_4.abril.s2.slowly-slowly",
           "en": "Slowly, slowly",
           "gl": "Amodiño, amodiño",
           "es": "Despacito, despacito",
@@ -471,7 +471,7 @@
       },
       "palabras": [
         {
-          "id": "bee",
+          "id": "3_4.abril.s3.bee",
           "en": "Bee",
           "gl": "Abella",
           "es": "Abeja",
@@ -482,7 +482,7 @@
           }
         },
         {
-          "id": "butterfly",
+          "id": "3_4.abril.s3.butterfly",
           "en": "Butterfly",
           "gl": "Bolboreta",
           "es": "Mariposa",
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "ladybird",
+          "id": "3_4.abril.s3.ladybird",
           "en": "Ladybird",
           "gl": "Xoaniña",
           "es": "Mariquita",
@@ -504,7 +504,7 @@
           }
         },
         {
-          "id": "worm",
+          "id": "3_4.abril.s3.worm",
           "en": "Worm",
           "gl": "Miñoca",
           "es": "Lombriz",
@@ -515,7 +515,7 @@
           }
         },
         {
-          "id": "snail",
+          "id": "3_4.abril.s3.snail",
           "en": "Snail",
           "gl": "Caracol",
           "es": "Caracol",
@@ -526,7 +526,7 @@
           }
         },
         {
-          "id": "ant",
+          "id": "3_4.abril.s3.ant",
           "en": "Ant",
           "gl": "Formiga",
           "es": "Hormiga",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "id": "spider",
+          "id": "3_4.abril.s3.spider",
           "en": "Spider",
           "gl": "Araña",
           "es": "Araña",
@@ -548,7 +548,7 @@
           }
         },
         {
-          "id": "buzz",
+          "id": "3_4.abril.s3.buzz",
           "en": "Buzz",
           "gl": "Zumbar",
           "es": "Zumbar",
@@ -559,7 +559,7 @@
           }
         },
         {
-          "id": "crawl",
+          "id": "3_4.abril.s3.crawl",
           "en": "Crawl",
           "gl": "Gatear",
           "es": "Gatear",
@@ -570,7 +570,7 @@
           }
         },
         {
-          "id": "land",
+          "id": "3_4.abril.s3.land",
           "en": "Land",
           "gl": "Pousarse",
           "es": "Posarse",
@@ -581,7 +581,7 @@
           }
         },
         {
-          "id": "tickle",
+          "id": "3_4.abril.s3.tickle",
           "en": "Tickle",
           "gl": "Facer cóxegas",
           "es": "Hacer cosquillas",
@@ -592,7 +592,7 @@
           }
         },
         {
-          "id": "search",
+          "id": "3_4.abril.s3.search",
           "en": "Search",
           "gl": "Buscar",
           "es": "Buscar",
@@ -603,7 +603,7 @@
           }
         },
         {
-          "id": "slimy",
+          "id": "3_4.abril.s3.slimy",
           "en": "Slimy",
           "gl": "Baboso, babosa",
           "es": "Viscoso, viscosa",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "delicate",
+          "id": "3_4.abril.s3.delicate",
           "en": "Delicate",
           "gl": "Delicado, delicada",
           "es": "Delicado, delicada",
@@ -625,7 +625,7 @@
           }
         },
         {
-          "id": "hard-working",
+          "id": "3_4.abril.s3.hard-working",
           "en": "Hard-working",
           "gl": "Traballador, traballadora",
           "es": "Trabajador, trabajadora",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "id": "curious",
+          "id": "3_4.abril.s3.curious",
           "en": "Curious",
           "gl": "Curioso, curiosa",
           "es": "Curioso, curiosa",
@@ -647,7 +647,7 @@
           }
         },
         {
-          "id": "buzz-buzz",
+          "id": "3_4.abril.s3.buzz-buzz",
           "en": "Buzz, buzz!",
           "gl": "Bzzz, bzzz!",
           "es": "¡Bzzz, bzzz!",
@@ -658,7 +658,7 @@
           }
         },
         {
-          "id": "look-a-butterfly",
+          "id": "3_4.abril.s3.look-a-butterfly",
           "en": "Look, a butterfly!",
           "gl": "Mira, unha bolboreta!",
           "es": "¡Mira, una mariposa!",
@@ -669,7 +669,7 @@
           }
         },
         {
-          "id": "where-are-you-going",
+          "id": "3_4.abril.s3.where-are-you-going",
           "en": "Where are you going?",
           "gl": "Onde vas?",
           "es": "¿Adónde vas?",
@@ -680,7 +680,7 @@
           }
         },
         {
-          "id": "slow-like-a-snail",
+          "id": "3_4.abril.s3.slow-like-a-snail",
           "en": "Slow like a snail",
           "gl": "Lento coma un caracol",
           "es": "Lento como un caracol",
@@ -700,7 +700,7 @@
       },
       "palabras": [
         {
-          "id": "grass",
+          "id": "3_4.abril.s4.grass",
           "en": "Grass",
           "gl": "Herba",
           "es": "Hierba",
@@ -711,7 +711,7 @@
           }
         },
         {
-          "id": "nest",
+          "id": "3_4.abril.s4.nest",
           "en": "Nest",
           "gl": "Niño",
           "es": "Nido",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "egg",
+          "id": "3_4.abril.s4.egg",
           "en": "Egg",
           "gl": "Ovo",
           "es": "Huevo",
@@ -733,7 +733,7 @@
           }
         },
         {
-          "id": "park",
+          "id": "3_4.abril.s4.park",
           "en": "Park",
           "gl": "Parque",
           "es": "Parque",
@@ -744,7 +744,7 @@
           }
         },
         {
-          "id": "bench",
+          "id": "3_4.abril.s4.bench",
           "en": "Bench",
           "gl": "Banco",
           "es": "Banco",
@@ -755,7 +755,7 @@
           }
         },
         {
-          "id": "pond",
+          "id": "3_4.abril.s4.pond",
           "en": "Pond",
           "gl": "Charca",
           "es": "Estanque",
@@ -766,7 +766,7 @@
           }
         },
         {
-          "id": "stone",
+          "id": "3_4.abril.s4.stone",
           "en": "Stone",
           "gl": "Pedra",
           "es": "Piedra",
@@ -777,7 +777,7 @@
           }
         },
         {
-          "id": "chase",
+          "id": "3_4.abril.s4.chase",
           "en": "Chase",
           "gl": "Perseguir",
           "es": "Perseguir",
@@ -788,7 +788,7 @@
           }
         },
         {
-          "id": "balance",
+          "id": "3_4.abril.s4.balance",
           "en": "Balance",
           "gl": "Manter o equilibrio",
           "es": "Mantener el equilibrio",
@@ -799,7 +799,7 @@
           }
         },
         {
-          "id": "hatch",
+          "id": "3_4.abril.s4.hatch",
           "en": "Hatch",
           "gl": "Saír do ovo",
           "es": "Salir del cascarón",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "id": "explore",
+          "id": "3_4.abril.s4.explore",
           "en": "Explore",
           "gl": "Explorar",
           "es": "Explorar",
@@ -821,7 +821,7 @@
           }
         },
         {
-          "id": "race",
+          "id": "3_4.abril.s4.race",
           "en": "Race",
           "gl": "Botar unha carreira",
           "es": "Echar una carrera",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "wide",
+          "id": "3_4.abril.s4.wide",
           "en": "Wide",
           "gl": "Ancho, ancha",
           "es": "Ancho, ancha",
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "free",
+          "id": "3_4.abril.s4.free",
           "en": "Free",
           "gl": "Libre",
           "es": "Libre",
@@ -854,7 +854,7 @@
           }
         },
         {
-          "id": "first",
+          "id": "3_4.abril.s4.first",
           "en": "First",
           "gl": "Primeiro, primeira",
           "es": "Primero, primera",
@@ -865,7 +865,7 @@
           }
         },
         {
-          "id": "last",
+          "id": "3_4.abril.s4.last",
           "en": "Last",
           "gl": "Último, última",
           "es": "Último, última",
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "catch-me",
+          "id": "3_4.abril.s4.catch-me",
           "en": "Catch me!",
           "gl": "Atrápame!",
           "es": "¡Atrápame!",
@@ -887,7 +887,7 @@
           }
         },
         {
-          "id": "ready-steady-go",
+          "id": "3_4.abril.s4.ready-steady-go",
           "en": "Ready, steady, go!",
           "gl": "Preparados, listos, xa!",
           "es": "¡Preparados, listos, ya!",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "id": "over-the-stone",
+          "id": "3_4.abril.s4.over-the-stone",
           "en": "Over the stone",
           "gl": "Por riba da pedra",
           "es": "Por encima de la piedra",
@@ -909,7 +909,7 @@
           }
         },
         {
-          "id": "through-the-grass",
+          "id": "3_4.abril.s4.through-the-grass",
           "en": "Through the grass",
           "gl": "Pola herba",
           "es": "Por la hierba",

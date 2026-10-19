@@ -170,7 +170,19 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
   }
 
   FSRSCard? _gardadaDe(TprWord palabra) {
-    final c = _progreso.getCard(idDaTarxetaDeRepaso(palabra.id));
+    final numero = idDaTarxetaDeRepaso(palabra.id);
+    var c = _progreso.getCard(numero);
+    // Una tarjeta de 3-4 guardada antes de que ese curso tuviera el esquema de
+    // id de los otros cuatro lleva el número del id viejo. Se pasa al nuevo
+    // aquí, la primera vez que se busca, para que no se pierda el repaso.
+    final antigo = idAntigoDaPalabra(palabra.id);
+    if (c == null && antigo != null) {
+      final vella = _progreso.getCard(idDaTarxetaDeRepaso(antigo));
+      if (vella != null && vella.lemma == palabra.en) {
+        c = vella.copyWith(id: numero);
+        _progreso.moverTarxeta(vella.id, numero);
+      }
+    }
     // Si el número coincidiera con el de otra palabra, la tarjeta guardada no
     // es de esta: mejor empezarla de cero que repasar con números ajenos.
     if (c == null || c.lemma != palabra.en) return null;

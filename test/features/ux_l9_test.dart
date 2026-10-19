@@ -12,7 +12,7 @@ void main() {
       () {
     Map? buscar(Object? nodo) {
       if (nodo is Map) {
-        if (nodo['id'] == 'whisper') return nodo;
+        if (nodo['id'] == '3_4.maio.s4.whisper') return nodo;
         for (final v in nodo.values) {
           final r = buscar(v);
           if (r != null) return r;
@@ -34,7 +34,7 @@ void main() {
             as Map;
     for (final xesto in [
       curso['tprAction'] as Map,
-      (ponte['palabras'] as Map)['whisper']['xesto'] as Map,
+      (ponte['palabras'] as Map)['3_4.maio.s4.whisper']['xesto'] as Map,
     ]) {
       for (final (lingua, vista) in [
         ('gl', 'coa boca á vista'),
