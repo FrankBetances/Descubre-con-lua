@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.03",
+  "curso": "curso_2_3",
+  "orden": 3,
+  "mesCalendario": 11,
+  "asamblea": "asamblea.primeiro_ciclo.novembro.2_3_anos",
+  "centroInteres": {
+    "gl": "O outono galego e as texturas do bosque",
+    "es": "El otoño gallego y las texturas del bosque"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.novembro.2_3.01"
+    },
+    {
+      "ref": "frase.cmd.novembro.2_3.02"
+    },
+    {
+      "ref": "2_3.novembro.s2.the-wind-is-blowing"
+    },
+    {
+      "ref": "2_3.novembro.s3.crunchy-leaves",
+      "objeto": {
+        "gl": "As follas de cartolina",
+        "es": "Las hojas de cartulina"
+      }
+    },
+    {
+      "ref": "2_3.novembro.s1.kick-a-leaf"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.novembro.2_3.01",
+      "usa": [
+        "frase.cmd.novembro.2_3.01",
+        "2_3.novembro.s2.the-wind-is-blowing"
+      ]
+    },
+    {
+      "ref": "frase.cmd.novembro.2_3.02",
+      "usa": [
+        "frase.cmd.novembro.2_3.02",
+        "2_3.novembro.s3.crunchy-leaves"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Dúas follas de cartolina en tons ocres e marróns por neno",
+      "es": "Dos hojas de cartulina en tonos ocres y marrones por niño"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Bate os brazos e camiña de puntas co vento",
+      "es": "Bate los brazos y camina de puntillas con el viento"
+    },
+    {
+      "gl": "Frega as follas contra o chan ao oír «Crunch!»",
+      "es": "Frota las hojas contra el suelo al oír «Crunch!»"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.outubro.2_3.03"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

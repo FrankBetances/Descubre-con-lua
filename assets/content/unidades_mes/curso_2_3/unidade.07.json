@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.07",
+  "curso": "curso_2_3",
+  "orden": 7,
+  "mesCalendario": 3,
+  "asamblea": "asamblea.primeiro_ciclo.marzo.2_3_anos",
+  "centroInteres": {
+    "gl": "A categorización sensorial e a discriminación de cor",
+    "es": "La categorización sensorial y la discriminación de color"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.marzo.2_3.01",
+      "objeto": {
+        "gl": "Un círculo vermello de goma eva",
+        "es": "Un círculo rojo de goma eva"
+      }
+    },
+    {
+      "ref": "2_3.marzo.s1.find-the-shape"
+    },
+    {
+      "ref": "2_3.outubro.s3.red-card"
+    },
+    {
+      "ref": "2_3.marzo.s4.a-red-tomato",
+      "objeto": {
+        "gl": "Un tomate de verdade",
+        "es": "Un tomate de verdad"
+      }
+    },
+    {
+      "ref": "2_3.marzo.s3.round-and-flat"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.marzo.2_3.01",
+      "usa": [
+        "frase.cmd.marzo.2_3.01",
+        "2_3.marzo.s1.find-the-shape"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Siluetas circulares de goma eva vermellas e amarelas",
+      "es": "Siluetas circulares de goma eva rojas y amarillas"
+    },
+    {
+      "gl": "Un tomate de verdade",
+      "es": "Un tomate de verdad"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Busca o círculo vermello e pon o pé enriba",
+      "es": "Busca el círculo rojo y pone el pie encima"
+    },
+    {
+      "gl": "Separa o vermello do amarelo",
+      "es": "Separa el rojo del amarillo"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.febreiro.2_3.01"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

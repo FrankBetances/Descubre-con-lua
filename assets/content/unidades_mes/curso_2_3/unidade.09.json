@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.09",
+  "curso": "curso_2_3",
+  "orden": 9,
+  "mesCalendario": 5,
+  "asamblea": "asamblea.primeiro_ciclo.maio.2_3_anos",
+  "centroInteres": {
+    "gl": "Os hábitos de hixiene e o pracer de lavarse",
+    "es": "Los hábitos de higiene y el placer de lavarse"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.maio.2_3.01",
+      "objeto": {
+        "gl": "A toalla de microfibra",
+        "es": "La toalla de microfibra"
+      }
+    },
+    {
+      "ref": "frase.cmd.maio.2_3.02"
+    },
+    {
+      "ref": "frase.cmd.maio.2_3.03"
+    },
+    {
+      "ref": "2_3.maio.s1.soap-rub-rinse"
+    },
+    {
+      "ref": "2_3.maio.s1.shake-dry"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.maio.2_3.01",
+      "usa": [
+        "frase.cmd.maio.2_3.01"
+      ]
+    },
+    {
+      "ref": "frase.cmd.maio.2_3.02",
+      "usa": [
+        "frase.cmd.maio.2_3.02"
+      ]
+    },
+    {
+      "ref": "frase.cmd.maio.2_3.03",
+      "usa": [
+        "frase.cmd.maio.2_3.03"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha toalla pequena de microfibra seca por neno",
+      "es": "Una toalla pequeña de microfibra seca por niño"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Frega meixelas e fronte coa toalla",
+      "es": "Frota mejillas y frente con la toalla"
+    },
+    {
+      "gl": "Segue a orde da parte do corpo que nomeas",
+      "es": "Sigue la orden de la parte del cuerpo que nombras"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.abril.2_3.02"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

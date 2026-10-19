@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.06",
+  "curso": "curso_2_3",
+  "orden": 6,
+  "mesCalendario": 2,
+  "asamblea": "asamblea.primeiro_ciclo.febreiro.2_3_anos",
+  "centroInteres": {
+    "gl": "A motricidade zoomorfa e as onomatopeas",
+    "es": "La motricidad zoomorfa y las onomatopeyas"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.febreiro.2_3.01"
+    },
+    {
+      "ref": "frase.cmd.febreiro.2_3.02",
+      "objeto": {
+        "gl": "A tarxeta do oso",
+        "es": "La tarjeta del oso"
+      }
+    },
+    {
+      "ref": "frase.cmd.febreiro.2_3.03"
+    },
+    {
+      "ref": "2_3.febreiro.s4.flap-wings"
+    },
+    {
+      "ref": "2_3.febreiro.s3.polar-bear"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.febreiro.2_3.01",
+      "usa": [
+        "frase.cmd.febreiro.2_3.01",
+        "2_3.febreiro.s4.flap-wings"
+      ]
+    },
+    {
+      "ref": "frase.cmd.febreiro.2_3.02",
+      "usa": [
+        "frase.cmd.febreiro.2_3.02",
+        "2_3.febreiro.s3.polar-bear"
+      ]
+    },
+    {
+      "ref": "frase.cmd.febreiro.2_3.03",
+      "usa": [
+        "frase.cmd.febreiro.2_3.03"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Tarxetas de gran formato coas siluetas dos animais",
+      "es": "Tarjetas de gran formato con las siluetas de los animales"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Elixe un animal e móvese coma el",
+      "es": "Elige un animal y se mueve como él"
+    },
+    {
+      "gl": "Conxela a postura en silencio",
+      "es": "Congela la postura en silencio"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.xaneiro.2_3.02"
+  ],
+  "hogar": null,
+  "microcuento": null
+}
