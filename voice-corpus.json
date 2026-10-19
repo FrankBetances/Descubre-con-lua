@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T19:23:39Z",
+ "generatedAt": "2026-10-19T14:46:59Z",
  "entries": 22886,
  "byStyle": {
   "slow": 6002,
@@ -61554,6 +61554,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_23a611e2_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hello! Give me your hand!",
+   "speech": "Hello! Give me your hand!",
+   "source": "conto/conto_021_o_encontro_na_porta_/tpr",
+   "pack": false
+  },
+  {
    "id": "en_tutor_23a6710f_10",
    "lang": "en",
    "style": "tutor",
@@ -69366,6 +69375,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_43c4cab2_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open your arms: welcome!",
+   "speech": "Open your arms: welcome!",
+   "source": "lamina/escola_rut_123/tpr",
+   "pack": false
+  },
+  {
    "id": "en_tutor_43c5ecaa_47",
    "lang": "en",
    "style": "tutor",
@@ -76518,15 +76536,6 @@
    "text": "The bird's nest is a clever structure.",
    "speech": "The bird's nest is a clever structure.",
    "source": "corpus/2881/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_62af3e89_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Give a hand and say hello!",
-   "speech": "Give a hand and say hello!",
-   "source": "conto/conto_021_o_encontro_na_porta_/tpr",
    "pack": false
   },
   {
@@ -113166,15 +113175,6 @@
    "text": "Whales live in the ocean.",
    "speech": "Whales live in the ocean.",
    "source": "corpus/2637/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_f76f36c3_27",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Open arms and say: Welcome!",
-   "speech": "Open arms and say: Welcome!",
-   "source": "lamina/escola_rut_123/tpr",
    "pack": false
   },
   {
