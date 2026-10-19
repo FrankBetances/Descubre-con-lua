@@ -104,7 +104,11 @@ El banco de `assets/content/tpr/` (80 palabras al mes y cinco nuevas al día)
 lo pide el documento de Frank *Modelo de Adquisición Natural* y lo vigila un
 gate. En esta arquitectura **es la ampliación de la unidad, no su puerta**:
 
-- el núcleo sale del banco de ese mes, o se añade al banco en el mismo cambio;
+- el núcleo sale de las órdenes de la asamblea del mes y de las palabras del
+  banco que encajan con su centro de interés; lo que no está en el banco va al
+  registro de frases (apartado 6). El banco no se mueve: sus 800 palabras por
+  curso, sus identificadores y los cuentos semanales que las llevan siguen
+  como están;
 - Hoy enseña primero el núcleo y debajo las cinco del día;
 - el cuento de la semana sigue llevando las veinte de su semana.
 
@@ -173,12 +177,21 @@ del calendario, las órdenes de las asambleas, las dinámicas, los juegos de
 casa, STEAM, las láminas, el corpus de uso habitual y las colocaciones. En esta
 arquitectura:
 
-- **El banco TPR es el registro canónico.** Cada unidad léxica tiene un
-  identificador estable (`<curso>.<mes>.s<semana>.<clave>`). El curso 3-4 usa
-  hoy identificadores sin prefijo; se normalizan con su tabla de equivalencias.
+- **El registro tiene dos partes, y las dos tienen identificador estable.**
+  - **El banco TPR** (`assets/content/tpr/`): las palabras del trayecto, con
+    el esquema `<curso>.<mes>.s<semana>.<clave>`. El curso 3-4 usa hoy
+    identificadores sin prefijo; se normalizan con su tabla de equivalencias y
+    con la migración del repaso guardado, que usa un hash del identificador.
+    El banco está cerrado (800 por curso; cada cuento semanal lleva sus
+    veinte) y no recibe expresiones nuevas.
+  - **El registro de frases** (`assets/content/registro/frases.json`): todo lo
+    que no es palabra del banco, como órdenes de asamblea, fórmulas de turno,
+    frases de Lúa, retos y frases de juegos, dinámicas y STEAM. Cada frase
+    lleva su gesto en gl y es y su audio.
 - **Todo lo demás cita identificadores.** Núcleo, órdenes, frase de Lúa, retos
-  y frases de juegos citan el registro; no copian la palabra. Si falta una
-  expresión, se añade al banco en el mismo cambio, con su gesto y su audio.
+  y juegos citan una de las dos partes; no copian la palabra. Si falta una
+  expresión, se añade al registro de frases en el mismo cambio, con su gesto y
+  su audio.
 - **El corpus de 4.000 de uso habitual y las colocaciones son consulta de la
   adulta**, no currículo. No se cuentan como contenido de ninguna unidad.
 - **La fonética se escribe en inglés americano**, que es la voz de la app.

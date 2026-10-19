@@ -9,6 +9,65 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Plan docente · registro de módulos
+
+El plan está en `docs/PLAN_MEJORA_INTEGRAL.md` y la arquitectura de destino en
+`docs/PLAN_ARQUITECTURA_PEDAGOGIA.md`, los dos en la rama `pedagogia`,
+pendientes de mergear. Cada sesión que trabaje un módulo actualiza su fila:
+estado, fecha, evidencia (gate, captura o comando) y siguiente paso. Los
+estados están definidos en el apartado 3 del plan.
+
+Decididas por Frank: D4 (manda la asamblea) y D6 (los 40 microcuentos entran).
+Pendientes: D1, D2, D3, D5, D7, D8 y D9.
+
+| Módulo | Estado | Fecha | Evidencia | Notas / siguiente paso |
+| --- | --- | --- | --- | --- |
+| M1.1 | Bloqueado | 19/10/2026 | — | El DOG no responde desde el entorno de trabajo (el proxy rechaza `xunta.gal`). Hace falta permitir el host o que Frank aporte los PDF |
+| M1.2 | Pendiente | 19/10/2026 | — |  |
+| M1.3 | Pendiente | 19/10/2026 | — |  |
+| M2.4 | Pendiente | 19/10/2026 | — | Primero de la ruta |
+| M2.1 | Pendiente | 19/10/2026 | — | Usa la opción de trabajo de D2 |
+| M2.2 | Pendiente | 19/10/2026 | — |  |
+| M2.3 | Pendiente | 19/10/2026 | — |  |
+| M3.1 | Pendiente | 19/10/2026 | — |  |
+| M3.2 | Pendiente | 19/10/2026 | — |  |
+| M3.3 | Pendiente | 19/10/2026 | — | Usa la opción de trabajo de D9 |
+| M3.4 | Pendiente | 19/10/2026 | — | Curso 0-2 |
+| M3.5 | Pendiente | 19/10/2026 | — | Curso 2-3 |
+| M3.6 | Pendiente | 19/10/2026 | — | Curso 3-4 |
+| M3.7 | Pendiente | 19/10/2026 | — | Curso 4-5 |
+| M3.8 | Pendiente | 19/10/2026 | — | Curso 5-6 |
+| M3.9 | Pendiente | 19/10/2026 | — |  |
+| M3.10 | Pendiente | 19/10/2026 | — | Usa la opción de trabajo de D1 |
+| M4.1 | Pendiente | 19/10/2026 | — | Necesita M1.1 |
+| M4.2 | Pendiente | 19/10/2026 | — |  |
+| M4.3 | Pendiente | 19/10/2026 | — | Usa la opción de trabajo de D5 |
+| M4.4 | Pendiente | 19/10/2026 | — |  |
+| M5.1 | Pendiente | 19/10/2026 | — |  |
+| M5.2 | Pendiente | 19/10/2026 | — | Curso 2-3 |
+| M5.3 | Pendiente | 19/10/2026 | — | Curso 3-4 |
+| M5.4 | Pendiente | 19/10/2026 | — | Curso 4-5 |
+| M5.5 | Pendiente | 19/10/2026 | — | Curso 5-6 |
+| M5.6 | Pendiente | 19/10/2026 | — | Frank aprueba el estilo con tres láminas de muestra antes de la primera tanda |
+| M5.7 | Pendiente | 19/10/2026 | — |  |
+| M5.8 | Pendiente | 19/10/2026 | — |  |
+| M6.1 | Pendiente | 19/10/2026 | — |  |
+| M6.2 | Pendiente | 19/10/2026 | — |  |
+| M6.3 | Pendiente | 19/10/2026 | — | Curso 0-2 |
+| M6.4 | Pendiente | 19/10/2026 | — | Curso 2-3 |
+| M6.5 | Pendiente | 19/10/2026 | — | Curso 3-4 |
+| M6.6 | Pendiente | 19/10/2026 | — | Curso 4-5 |
+| M6.7 | Pendiente | 19/10/2026 | — | Curso 5-6 |
+| M6.8 | Pendiente | 19/10/2026 | — |  |
+| M7.1 | Pendiente | 19/10/2026 | — |  |
+| M7.2 | Pendiente | 19/10/2026 | — |  |
+| M7.3 | Pendiente | 19/10/2026 | — | Necesita M1.1 |
+| M8.1 | Pendiente | 19/10/2026 | — |  |
+| M8.2 | Pendiente | 19/10/2026 | — | No se abre sin aprobación de D7 |
+| M8.3 | Pendiente | 19/10/2026 | — | Al final |
+
+---
+
 ## Lote L12: dos toques en la palabra inglesa, su significado (12/10/2026)
 
 Rama `claude/ux-l12`. Frank: «las palabras en inglés que tienen que aprender
