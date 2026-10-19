@@ -1,366 +1,360 @@
-# Plan integral de mejora
+# Plan integral de mejora pedagógica
 
-Qué va a cambiar en la app, módulo a módulo, cuando se apliquen los cinco
-textos de base. **Este documento no cambia ninguna pantalla.** Es el encargo
-de mejora de todo el producto. El contrato de datos —qué JSON entra y con qué
-campos— está en `docs/PLAN_ARQUITECTURA_PEDAGOGIA.md`. Aquí se dice qué ve la
-docente y qué ve la familia, y en qué orden se hace.
+Qué cambia en **Descubre con Lúa · Edición Vigo** al aplicar los cinco textos
+de `docs/base/`, en qué orden y cuándo se da cada pieza por hecha. **Este
+documento no cambia ninguna pantalla.** Es el encargo. El contrato de datos
+campo a campo está en `docs/PLAN_ARQUITECTURA_PEDAGOGIA.md`; donde los dos no
+digan lo mismo, manda este hasta que la ola 0 los alinee.
 
-Los cinco textos se leyeron enteros el 17 de octubre de 2026. Están en
-`docs/base/`, copiados tal cual llegaron. El mapa de módulos de abajo se sacó del código de
-la rama `pedagogia` (las pantallas de `lib/features/` y el JSON de
-`assets/content/`). **Esto no lo he verificado** abriendo la app de nuevo en
-esta redacción: la última vez que se recorrió Inicio → Modo Aula y Inicio →
-Portal de familias fue el 17 de octubre de 2026, en escritorio Linux, y esas
-capturas están en `docs/capturas/verificacion-pedagogia/`.
+Si este plan y el JSON no dicen lo mismo, manda el JSON: es lo que la app
+enseña.
 
-## El criterio
+## 1. De dónde sale y qué manda
 
-Cada mejora tiene que poder señalarse en uno de estos cinco textos. Si no
-sale de ellos, no entra en este plan.
+### Los documentos, por orden
 
-| Texto | La mejora que pide |
+1. **Las reglas de producto.** La criatura no usa la pantalla; cero datos de
+   una crianza; sin red; nada sanitario; el contenido vive en JSON. El pulso
+   de la canción se ve, no se oye. Ningún texto pasa por encima de esto.
+2. **La normativa gallega**, leída en el DOG: Decreto 150/2022, Orden de 30 de
+   mayo de 2023 y Decreto 79/2010. Manda sobre cualquier resumen de ella,
+   incluido el de `docs/base/`.
+3. **Los documentos curriculares de Frank que ya construyen la app**: el
+   *Diseño Curricular Infantil Trilingüe Galicia* (2.º ciclo), la
+   *Planificación Inglés Escuelas Infantiles* (1.º ciclo) y el *Modelo de
+   Adquisición Natural y Proyección Anual* (el banco de cinco palabras al día,
+   vigilado por `tools/planificador_5_palabras.py`). De ellos salen la
+   asamblea de cuatro fases, las veinte microcápsulas del 1.º ciclo, la tarjeta
+   única sin desplazamiento y el banco de 4.000 palabras.
+4. **Los cinco textos de `docs/base/`.** Aportan lo que los anteriores no
+   tienen: **cómo habla la persona adulta** (espera, recast, expansión, habla
+   paralela), **una dosis corta y estable** dentro del banco, **el
+   microcuento dialógico** y **el reto de casa**.
+
+Los cinco textos son síntesis de trabajo, no normativa ni manuales oficiales.
+Ninguna cifra, código de criterio o cita de un estudio pasa de ellos a una
+pantalla sin contrastarla antes con su fuente primaria.
+
+### Lo que esto quiere decir en la práctica
+
+- **El banco y la dosis conviven.** Las cinco palabras nuevas al día siguen
+  (lo pide el documento 3 y lo vigila un gate). La dosis no las sustituye:
+  marca, dentro del banco de ese mes, el grupo corto que se queda varias
+  semanas, se dice con el objeto y vuelve en el cuento y en casa.
+- **Translanguaging, no inmersión total.** La trama y la interfaz van en
+  gallego y en castellano; Lúa pone la frase inglesa. La regla de SparkLing de
+  no pasar nunca a la lengua de casa no entra: choca con el Decreto 79/2010 y
+  con el cuento dialógico, que acoge la respuesta en la lengua de casa.
+- **Nunca se pide repetir, en ninguna lengua.** Tampoco con «Say…», «Can you
+  say…?», «Repeat», «Dime cómo se dice» ni «Di…». Los textos de base sí lo
+  piden en varios sitios (el cuarto paso de PEER, algún guion de recast). Aquí
+  ese paso se llama **retomar**: la persona adulta vuelve a decir la frase con
+  el gesto y deja el hueco abierto. Si la criatura la dice, bien; si no,
+  también.
+
+## 2. Lo que la app ya tiene y se respeta
+
+Comprobado en el contenido y en el código, no de memoria:
+
+- Cinco cursos (0-2, 2-3, 3-4, 4-5 y 5-6), diez meses cada uno. Cada mes del
+  banco (`assets/content/tpr/`) trae 80 palabras, 20 por semana, con su gesto
+  en gallego y en castellano.
+- Asamblea de cuatro fases: apertura, pulso, reto TPR y calma. Son 20 del
+  1.º ciclo (10 meses × 2 tramos, 9 minutos, unos 3,5 de inglés) y 30 del
+  2.º ciclo (10 meses × 3 niveles, 10 minutos, unos 4,5 de inglés). Las
+  órdenes del 1.º ciclo ya dicen «fai o xesto mentres di a orde, e agarda sen
+  esixir resposta».
+- Cuento de la semana con sus veinte palabras, una pregunta por página y
+  preguntas graduadas. El dato trae `tempoEsperaSegundos: 5`, pero el visor
+  no lo dibuja.
+- Cinco estrategias en `assets/content/estrategias_pedagogicas.json`: espera
+  de 5 segundos, andamiaje en tres niveles, eco correctivo, cero pantallas y
+  baño de lenguaje.
+- Formación de entrada: seis pasos para la docente y seis para la familia
+  (`assets/content/formacion/`).
+- Nota para las casas, sin botón de compartir; repaso espaciado de la persona
+  adulta; «qué observar» sin casilla.
+- Voz inglesa en inglés americano (`en_US-ljspeech-medium`).
+
+## 3. Lo que falta, en una línea cada cosa
+
+1. La persona adulta no tiene **una sola manera de hablar** escrita: faltan el
+   habla paralela y la expansión, y la espera no distingue sus dos tiempos.
+2. **No hay dosis**: Hoy enseña cinco palabras nuevas cada día y ninguna se
+   queda.
+3. **La espera no se ve** en ninguna pantalla.
+4. **No hay microcuento dialógico**: lámina corta, frase de Lúa, tres
+   preguntas en inglés y un guion para cada tipo de respuesta.
+5. **La nota para las casas no lleva reto**.
+6. **La formación no explica el modelo entero** ni nombra sus objetivos.
+7. **Lo que se cuenta no es el modelo**: los premios cuentan sesiones abiertas,
+   no si se esperó, se dijo la dosis o se hizo el reto.
+
+## 4. Decisiones que toma Frank
+
+El plan avanza con la opción marcada. Las cinco son reversibles hasta la ola
+en que se usan.
+
+| # | Decisión | Opción con la que avanza el plan | Se usa en |
+| --- | --- | --- | --- |
+| D1 | Qué documento manda | El orden del apartado 1 | Ola 0 |
+| D2 | Inmersión o translanguaging | Translanguaging: trama en gl/es y frase de Lúa en inglés | Ola 1 |
+| D3 | Pedir repetir | Prohibido en las tres lenguas; PEER termina en «retomar» | Ola 1 |
+| D4 | Mes piloto | Mayo, 1.º ciclo, los dos tramos (apartado 7) | Ola 2 |
+| D5 | Cuántos microcuentos | Los dos arquetipos ahora; la extensión, después del piloto | Ola 4 |
+
+## 5. El modelo, con una sola definición por pieza
+
+Este glosario es la fuente única. El JSON de formación y las fichas lo citan;
+no lo reescriben. Los cinco textos se contradicen en varias de estas piezas;
+la definición de aquí es la que vale.
+
+| Pieza | Definición que vale | Lo que se corrige de los textos |
+| --- | --- | --- |
+| **Dosis** | Cinco unidades de un mes ya existente del banco, citadas por su identificador, que se quedan todo el mes. Concretas, con objeto real y gesto, de una a tres palabras | El texto de vocabulario coloca seis unidades de seis semanas en un calendario que se solapa y se sale del curso. Aquí manda el calendario de diez meses de la app |
+| **Espera** | Tres tiempos fijos: (1) la adulta dice o pregunta y calla de 3 a 5 s; (2) si llega respuesta, recast o expansión **en el turno siguiente, sin pausa**; (3) después, otra espera de unos 3 s **antes del elogio** o de la pregunta siguiente | Un texto pide el recast en menos de 2 s y otro pide 3 s de silencio antes de cualquier comentario. La secuencia de tres tiempos resuelve el choque |
+| **Recast** | Devolver bien dicha la frase de la criatura, dentro de la conversación, sin «no», sin «se dice» y sin pedir que la diga | Fuera los ejemplos clínicos («tat → cat»), los modelos con un inglés poco natural y los que acaban pidiendo repetir |
+| **Expansión** | Devolver la palabra suelta dentro de una frase **uno o dos elementos más larga**, no más | Los ejemplos del catálogo rompen su propia regla. Se reescriben con +1/+2 |
+| **Habla paralela** | Decir en presente lo que la criatura está haciendo y mirando, con frases cortas y pausas, sin preguntas de examen | Los ejemplos del catálogo pasan de doce palabras. Se acortan |
+| **Tríada del microcuento** | Por lámina, tres preguntas en inglés: **señalar**, **imitar con el cuerpo**, **acercar a su vida** | No se llama CROWD: CROWD son los cinco tipos de pregunta de la lectura dialógica. En 2 de las 7 láminas, el «acercar» de los textos no acerca nada; se reescribe |
+| **PEER en casa** | Incitar, acoger, ampliar, **retomar** (sin pedir repetir) | El paso *Repeat* del texto pide repetir. Se cambia |
+| **CROWD en casa** | Completar, recordar, abrir, qué/dónde, acercar a la vida. **Una sola pregunta por lámina** | Nada |
+
+**En el aula hay un grupo; en casa, una criatura.** Las cuatro herramientas
+nacieron para una o dos criaturas. En la asamblea la espera es **para el
+grupo**, el recast se hace **sobre la respuesta que llegue** y la app no pide
+ni guarda nombres. En casa se aplican tal cual, con una sola criatura.
+
+**Fonética con la voz que suena.** La voz inglesa de la app es americana. Un
+contraste solo entra si esa voz lo produce: /ɪ/ frente a /iː/ (*fish*, *sea*)
+sí; /ɒ/ frente a /ɔː/ (*box*, *ball*) no, porque en inglés americano no existe
+así. Las transcripciones que entren se escriben en americano.
+
+## 6. Qué entra de cada texto
+
+| Texto | Entra | Se adapta | No entra |
+| --- | --- | --- | --- |
+| Currículo de inglés en Galicia | El inglés como aproximación dentro del Área de Comunicación y Representación de la Realidad. Sin asignatura, sin ficha, sin nota. En 0-3, incidental y dentro de la rutina | El código de criterio (CA2.7 en el texto, CA1.1/CA3.1 en las asambleas actuales) se contrasta con el DOG antes de pintarlo | La rúbrica por criatura; las afirmaciones sobre la Inspección que no tienen fuente primaria |
+| Currículo de vocabulario 2-6 | Dosis corta con objeto y gesto, objetivos del tramo como texto explicativo, el reto de casa por unidad, PEER y CROWD en casa | Calendario, fonética (al inglés americano y a los contrastes que la voz produce), PEER sin repetir | La rúbrica de cuatro estadios, la escala de turnos, el registro anecdótico, el horario de 09:00 a 13:00 en inglés, el 80 % como dato |
+| Cuentos dialógicos | Microcuento de 3 láminas (2-3 años) o de 4 (4-6), frase de Lúa, tríada, guion de recast por tipo de respuesta, lámina limpia | Identificadores únicos, escenario de la edad que toca, color del pez coherente, 1-2 palabras diana (2-3 años) y 3-4 (4-6), gallego del segundo cuento | La matriz combinatoria como promesa de calidad; «mutismo selectivo», «diagnóstico» y cualquier lenguaje clínico |
+| Estrategias de apoyo | Las cuatro herramientas y lo que hay que evitar con cada una | Ejemplos reescritos, espera en tres tiempos, versión para grupo | Dosis clínica, ejemplos de trastorno fonológico, «silencio clínico» como nombre |
+| Rutinas SparkLing | Persona delante y no grabación; bajar al suelo; cierre previsible con dos o tres objetos | La forma de cuatro fases ya existe en la asamblea; solo se le pone la manera de hablar | 45 minutos diarios, tres adultos, marioneta como reclamo, nombres, LENA, pruebas, inmersión sin L1, «Good job» inmediato |
+
+## 7. El piloto: mayo, primer ciclo
+
+**Por qué mayo y por qué el 1.º ciclo.** Es donde el texto de vocabulario
+escribe una unidad entera (agua, chapoteo, mojado, baño) y donde la app ya
+tiene ese mismo centro de interés:
+
+- la asamblea `asamblea.primeiro_ciclo.maio.0_2_anos` («auga, salpicaduras e
+  rutinas de aseo»), con la orden *Wash, wash, clean hands!*;
+- la de 2-3 del mismo mes, con *Wash your face!* y *Dry your toes!*;
+- el banco de 0-2, semana 1 («Chapoteo»), con *Splish, splash!*, *All wet!*,
+  *Splash about*, *Kick water* y *Water tray*;
+- el banco de 2-3, semanas 1 y 3, con *Tap water*, *Soap, rub, rinse*, *Wet
+  sponge*, *Splashing* y *Bubbly water*;
+- el reto de casa del texto, el baño con *All wet!*, que en 0-2 ya existe como
+  palabra del banco.
+
+El piloto que se propuso antes (curso 2-3 con *water*, *splash*, *boat*, *wet*
+y *fish*) no se puede hacer: esas cinco palabras no están en el banco de 2-3.
+
+**La dosis del piloto.** Cinco identificadores por tramo, todos de la lista de
+arriba. La lista definitiva la elige Frank. Si falta una palabra, se dice cuál
+falta; no se inventa un identificador.
+
+**El reto de casa del piloto.** El momento del baño: una frase (*All wet!* o
+*Splish, splash!*), el gesto de chapotear, esperar y no pedir que lo diga. En
+gallego y en castellano, con la frase inglesa grabada.
+
+## 8. Recorrido por la app
+
+Los caminos son los que usa quien abre la app, no los ficheros. Cada fila dice
+en cuál de los tres modos se ve: aula del 1.º ciclo, aula del 2.º ciclo y casa.
+
+**Restricción de disposición.** El aula funciona con una tarjeta única, sin
+desplazamiento vertical (hay un gate que lo vigila) y con la consigna a 26 pt.
+Todo lo que se añada ahí **sustituye o se pliega**; no se apila. Si no cabe,
+se rediseña la tarjeta entera y se mira en gallego, en castellano y con texto
+grande antes de darla por buena.
+
+| Camino | Qué cambia | 1.º ciclo | 2.º ciclo | Casa |
+| --- | --- | --- | --- | --- |
+| Inicio → Modo Aula → Hoy | Arriba, la dosis del mes con su objeto real; debajo sigue el día del banco | Sí | Sí | — |
+| Inicio → Portal de familias → Hoy | La dosis, la frase y el reto de tres minutos, no las 80 palabras del mes | — | — | Sí |
+| Asamblea, fase de reto TPR | Una línea para la adulta (qué decir, cuánto callar, que el silencio es normal) y la cuenta de espera visual | Sí | Sí | — |
+| Asamblea, cierre | La nota para las casas lleva el reto del mes. Sigue sin botón de compartir | Sí | Sí | — |
+| Cuento de la semana | La cuenta visual de espera que el dato ya anuncia. No gana preguntas nuevas | Sí | Sí | Sí |
+| Explorar → Cuentos | Los microcuentos, como cuentos de la lista y no como un modo aparte; lámina, frase de Lúa con altavoz, tríada, espera visual y guion de recast | 3 láminas | 4 láminas | Una pregunta por lámina (PEER) |
+| Eu → El modelo · Guías → El modelo | Espacio nuevo con tres partes: cómo funciona, objetivos del tramo y qué no es un objetivo | Sí | Sí | Sí |
+| Recursos → Estrategias | Se suman el habla paralela y la expansión con el molde de las cinco que hay; la espera pasa a tres tiempos | Sí | Sí | — |
+| Recursos → Programación | El área por su nombre oficial y la dosis del mes. Nunca «Área de Inglés» | Sí | Sí | — |
+| Recursos → inglés (palabras, repaso, colocaciones, sonidos) | Primero la dosis; las fórmulas de turno marcadas; los contrastes de sonido, solo los que la voz produce | Sí | Sí | Explorar → inglés |
+| Calendario | Ese día enseña la dosis. La casilla, si la hay, es de la persona adulta | Sí | Sí | Sí |
+| Premios | Siguen siendo de la persona adulta. Una insignia nueva solo puede contar semanas de la lista del adulto | Sí | Sí | Sí |
+
+## 9. Olas
+
+Cada ola se termina en todas las capas que toca antes de abrir la siguiente.
+Las capas son: JSON en gallego, JSON en castellano, audio inglés de cada frase
+que se oye, audio gl/es si esa cadena se reproduce, imprimible, textos de la
+interfaz, manual y, si cambia lo que se guarda, la política de privacidad y el
+formulario de Seguridad de los datos de Play Console.
+
+**Cada ola está hecha cuando:**
+
+1. el JSON gallego y el castellano dicen lo mismo;
+2. el audio está en el mismo cambio que el texto;
+3. `tools/gates.sh` sale verde y el APK de release sigue sin permiso de red;
+4. se abre la app, se llega por el camino de la tabla y se miran las capturas
+   en gallego y en castellano, también con texto grande.
+
+Hasta entonces, la ola está en la rama, pendiente de mergear.
+
+### Ola 0 · Alinear la base (solo documentos)
+
+- Alinear `docs/PLAN_ARQUITECTURA_PEDAGOGIA.md` con este plan: piloto, espera
+  en tres tiempos, «retomar», tríada sin la palabra CROWD, formulario de Play
+  Console y restricción de no desplazamiento.
+- Una **fe de erratas** de los cinco textos (identificadores repetidos,
+  fonética, ejemplos que piden repetir, lenguaje clínico), para que ningún
+  error pase al JSON.
+- Contrastar con el DOG el área, el bloque y el código de criterio (CA2.7
+  frente a CA1.1/CA3.1) y el horario del 2.º ciclo.
+- `docs/base/` sale del sitio público, o cada fichero se titula como síntesis
+  de trabajo y el nombre del texto de SparkLing deja de nombrar a I-LABS.
+
+**Hecho cuando** los dos planes dicen lo mismo, la fe de erratas existe y el
+código de criterio que vaya a pantalla lleva al lado su cita del DOG.
+
+### Ola 1 · El modelo en su espacio
+
+- El glosario del apartado 5, en JSON, en gallego y en castellano, con el
+  ejemplo del aula y el de casa.
+- El espacio «El modelo» en Eu y en Guías.
+- Las dos estrategias nuevas en Recursos → Estrategias y la espera en tres
+  tiempos.
+- **Gate nuevo**: falla si cualquier consigna, guion o pregunta, en gl, es o
+  en, pide repetir o corrige de forma explícita («say», «can you say»,
+  «repeat», «repite», «di», «dime cómo se dice», «no se dice así», «that's
+  wrong»).
+
+**Hecho cuando** las dos puertas abren el mismo esqueleto en las dos lenguas
+y el gate está en `tools/gates.sh`.
+
+### Ola 2 · El piloto del día (mayo, 1.º ciclo)
+
+- Un JSON de dosis por tramo que cita identificadores.
+- Hoy en el aula y Hoy en casa, la línea para la adulta de la asamblea de mayo
+  y el calendario de los dos portales.
+- La nota para las casas con el reto del baño.
+
+**Hecho cuando** el mismo identificador aparece en la dosis, en Hoy del aula,
+en Hoy de casa y en la nota, y el gate del banco sigue verde.
+
+### Ola 3 · La espera se ve
+
+Una cuenta visual y silenciosa, con los segundos del dato, en el cuento de la
+semana, en la fase de reto de la asamblea y en el visor del microcuento.
+
+**Hecho cuando** se ve en los tres sitios, en las dos lenguas, sin sonido.
+
+### Ola 4 · Los dos microcuentos
+
+*Lúa e o peixiño azul* (2-3 años, 3 láminas) y *Lúa y el viento travieso*
+(4-6 años, 4 láminas), con las correcciones de la fe de erratas. El gallego del
+segundo se escribe en esta ola, título incluido. Para cada lámina: dibujo
+propio de lámina limpia, frase de Lúa grabada, tríada grabada y guion de
+recast por tipo de respuesta (silencio, señala, contesta en la lengua de casa,
+una palabra, forma torcida).
+
+Volumen estimado de audio inglés: unas seis frases por lámina, unas 42 en
+total. Sin lámina dibujada, el cuento no entra en la lista.
+
+**Hecho cuando** cada microcuento se abre desde Explorar → Cuentos en los dos
+portales y en las dos lenguas, y cada lámina enseña su tríada, su guion y su
+espera.
+
+### Ola 5 · La dosis en todo el curso
+
+El piloto es una muestra, no el encargo. Esta ola lleva la dosis y el reto de
+casa a los **50 meses** del trayecto (5 cursos × 10 meses): 50 dosis y 50
+retos. Cada dosis cita cinco identificadores del banco de su mes, con las
+reglas del apartado 5. Donde un mes no tenga cinco candidatas que cumplan, se
+lista el mes y lo que falta, y lo decide Frank. No se rellena con palabras
+inventadas.
+
+**Hecho cuando** cada uno de los 50 meses tiene dosis y reto en las dos
+lenguas, o figura en la lista de meses pendientes con su motivo.
+
+### Ola 6 · El banco de inglés y el resto de la jornada
+
+- Palabras, repaso, colocaciones y sonidos abren por la dosis.
+- Las fórmulas de turno de 3 a 6 años (*my turn*, *your turn*, *here you
+  are*, *help me, please*) quedan marcadas.
+- Los contrastes de sonido se limitan a los que la voz produce.
+- En Dinámicas y en Ciencia, solo donde ya haya una frase inglesa, la línea de
+  espera y recast.
+- En Programación, el área por su nombre oficial.
+
+**Hecho cuando** ninguna de esas pantallas llama al inglés asignatura, ninguna
+pide un dato de una criatura y, en el mes de la dosis, lo primero que se ve es
+la dosis.
+
+### Ola 7 · La lista de la persona adulta
+
+Una lista cerrada que se marca al terminar Hoy y desde «El modelo»:
+
+- en el aula: dije la dosis con el objeto, esperé, hice la pausa del cuento,
+  copié la nota;
+- en casa: hice el momento de tres minutos, dije la frase con el gesto, no
+  pedí que lo dijera.
+
+Se guarda el día sin hora y los identificadores marcados. Nada de texto libre,
+porcentajes ni nombres.
+
+Es un apoyo para que la persona adulta mire su propia práctica, no una medida
+de lo que aprende la criatura.
+
+**Hecho cuando** un día marcado se cierra, se vuelve a abrir y se ve igual, y
+en el mismo cambio se han actualizado la política de privacidad, el formulario
+de Seguridad de los datos y los dos gates (`test/features/premios_test.dart` y
+`test/core/progreso_privacidad_test.dart`).
+
+### Ola 8 · El papel y la guía
+
+Manual, imprimibles y README, en cada página de lo que se haya tocado.
+
+**Hecho cuando** el manual, mirado página a página, y la pantalla dicen lo
+mismo.
+
+### Dependencias
+
+- La ola 0 va antes que todo.
+- La 1 va antes que la 2 y la 4, porque sin glosario no hay guion.
+- La 3 comparte pantalla con la 4.
+- La 5 espera a que el piloto se haya visto.
+- La 7 espera a la 2, porque no se marca una dosis que no existe.
+
+## 10. Riesgos y cómo se cubren
+
+| Riesgo | Cobertura |
 | --- | --- |
-| Currículo de inglés infantil de Galicia | Llamar al inglés por su nombre oficial: aproximación dentro del Área de Comunicación y Representación de la Realidad. Sin asignatura, sin ficha y sin nota. |
-| Currículo de vocabulario, 2 a 6 años | Una dosis corta, con objeto real y gesto, y un solo reto en casa. El banco grande se queda detrás. |
-| Estrategias de apoyo lingüístico | Cuatro herramientas del adulto, en la pantalla donde habla: reformular, ampliar, hablar en paralelo y esperar. |
-| Manual de rutinas SparkLing (UW I-LABS) | Turno, espera, modelado y cierre predecible. La voz grabada no sustituye a la persona que está delante. |
-| Biblioteca de cuentos dialógicos bilingües | Microcuento de tres o cuatro láminas, pregunta en tres peldaños, pausa y eco. |
-
-Cinco límites mandan sobre los cinco textos. Si un texto pide lo contrario,
-no entra:
-
-1. La criatura no usa la pantalla. La pantalla es el guion del adulto.
-2. Cero datos de una crianza. Ni nombres, ni escalas, ni recuento de turnos.
-3. Sin red. Una frase inglesa nueva lleva su grabación en el mismo cambio.
-4. Nada sanitario. La espera y el eco son la manera de hablar, no una terapia.
-5. El inglés se oye. El gallego y el castellano siguen siendo las dos lenguas
-   de la pantalla, con paridad.
-
-El pulso de la canción sigue siendo visual.
-
-## Qué ya está y no se reescribe
-
-Esto se comprobó leyendo el JSON y las pantallas que lo cargan, no de
-memoria:
-
-- El curso ya tiene diez meses por edad (0-2, 2-3, 3-4, 4-5, 5-6), asamblea
-  de cuatro fases, cuento de la semana, palabras del día y un banco de unas
-  cuatro mil palabras de uso habitual.
-- Las estrategias de `assets/content/estrategias_pedagogicas.json` ya traen
-  la espera de cinco segundos, el andamiaje en tres niveles, el eco, el cero
-  pantallas y el baño de lenguaje. Faltan, como piezas propias, el habla
-  paralela y la expansión: hoy viven dentro de otros textos, no como
-  herramienta que la docente abre.
-- La formación docente (`formacion.docente.json`) ya dice que el móvil es del
-  adulto, que la sesión son cuatro fases y que el cuerpo va antes que la voz.
-- La nota para las casas ya es de papel a propósito: se lee en alto y se
-  copia. No hay botón de compartir.
-- El repaso espaciado guarda la tarjeta de la persona adulta (la palabra y
-  unas fechas sin hora), nunca un dato de una crianza.
-- «Qué observar», en aprender a leer, ya es una pista que no se marca ni se
-  guarda.
-
-Reescribir eso para que «parezca» el texto nuevo sería tirar un curso entero.
-La mejora es poner la dosis y la manera de hablar **delante**, y dejar el
-banco donde está.
-
-## Qué se desvía de los cinco textos
-
-También comprobado en el código, y es lo que este plan corrige:
-
-- **Hoy** abre el mes del banco. Los cincuenta ficheros de
-  `assets/content/tpr/` (cinco cursos, diez meses) traen **ochenta** palabras
-  cada uno, veinte por semana. El día ya enseña cinco de esa semana, y el
-  viernes las veinte. Los textos piden otra cosa: cinco palabras estables
-  durante unas seis u ocho semanas, con objeto y gesto, no cinco nuevas cada
-  día.
-- **El cuento de la semana** ya lleva esas veinte palabras, una pregunta en
-  cada página, una guía que dice «espera cinco segundos» y, detrás de un
-  botón, las preguntas graduadas. El modelo guarda `tempoEsperaSegundos` y
-  el visor no lo dibuja: se buscó en `lib/features/cuentos/` y no hay un
-  contador. El cuento dialógico pide, además, tres o cuatro láminas, la
-  pregunta en inglés en tres peldaños y el eco escrito.
-- **Las estrategias** no nombran el habla paralela ni la expansión como
-  herramientas aparte, y el andamiaje de Bloom está escrito como preguntas
-  en gallego o castellano. El cuento bilingüe pide la pregunta en inglés, con
-  la ayuda del adulto en la lengua de la pantalla.
-- **El planificador y los recursos de inglés** presentan el banco (palabras
-  del curso, repaso, escucha, colocaciones, sonidos, lista de vocabulario)
-  sin decir que eso no es una asignatura ni una nota.
-- **La nota para las casas** cierra la asamblea. Todavía no lleva el micro-reto
-  de la casa: la frase de esta semana, el objeto de la cocina y la consigna
-  de no pedir que repita.
-- **La formación no es un espacio.** En el aula está en Eu → «Antes de entrar»:
-  seis pasos que se pasan de lado (`formacion.docente.json`). En casa está en
-  Guías → «Antes de empezar»: otros seis (`formacion.familia.json`). Al lado
-  hay lecturas sueltas. Ninguna de las dos puertas explica el modelo entero
-  ni los objetivos que hay que cumplir.
-- **Lo que se mide no es un objetivo.** Premios y `user_progress.json` cuentan
-  asambleas dirigidas, cápsulas leídas, racha y un sí/no por día (aula u
-  hogar). No saben si ese día se dijo la dosis, se esperó o se hizo el reto.
-  «Qué observar» son pistas que no se marcan: el widget lo dice en pantalla.
-
-## El producto, módulo a módulo
-
-Cada fila dice el camino, qué mejora y de qué texto sale. «Igual» significa
-que el módulo se queda y este plan no le cambia la disposición.
-
-### Entrada
-
-| Camino | Mejora |
-| --- | --- |
-| Inicio | Igual. Sigue habiendo dos puertas: Modo Aula y Portal de familias. |
-| Antes de entrar en el aula | Se queda como puerta de dos minutos. No es el espacio de formación. |
-| Guías de familias, «Antes de empezar» | Se queda como puerta de dos minutos, con sus seis pasos (entre ellos «nunca preguntes cómo se dice» y el eco). No es el espacio de formación. |
-| Eu → El modelo, y Guías → El modelo | Espacio nuevo, uno en cada portal. Abajo, qué tiene dentro. |
-
-### El día, en el aula
-
-Camino: Inicio → Entrar en Modo Aula → Hoy.
-
-| Pieza | Mejora |
-| --- | --- |
-| Hoy, aula | Arriba, el grupo estable de la dosis y el objeto real. Debajo sigue el día del banco, que ya muestra las cinco de hoy. La dosis no sustituye a esas cinco: dice cuáles se quedan varias semanas. |
-| Asamblea de primer ciclo | En cada fase, una línea de adulto: qué decir, cuánto callar, y que el silencio de la criatura es normal. No se alarga la sesión. |
-| Asamblea de segundo ciclo | La pausa, que hoy está escrita en la guía del cuento, pasa a ser un contador visual de cinco segundos en esa fase. El pulso de la canción no se toca. |
-| Cuento dentro de la asamblea | Se queda la pregunta de la página y las preguntas graduadas. Lo que se añade es el contador visual de cinco segundos, que el dato ya anuncia y la pantalla no enseña. El peldaño en inglés (señalar, imitar, acercar) es del microcuento, no una segunda pregunta del cuento semanal. |
-| Nota para las casas | Al texto que ya se copia se le añade el micro-reto: una frase, un objeto de casa y «no le pidas que repita». Sigue sin botón de compartir. |
-| Calendario del aula | El día enseña la dosis. Si hay una casilla, es la de la persona adulta: qué objetivos del modelo marcó ese día. No se marca a ninguna criatura. |
-
-### El día, en casa
-
-Camino: Inicio → Portal de familias → Hoy.
-
-| Pieza | Mejora |
-| --- | --- |
-| Hoy, familias | El mismo grupo de palabras que el aula, en corto: la frase, el gesto y el reto. No el banco del mes. |
-| Cápsulas Academy | La cápsula del mes del piloto dice cómo leer esa frase en casa (incitar, acoger, ampliar, retomar). El resto de cápsulas se queda. |
-| Ponte al día | Igual. Sigue siendo el sitio para recuperar una palabra ya vista, no la dosis nueva. |
-| Juego de hoy y juegos de casa | Donde ya hay una frase inglesa, se añade la espera y «no corrijas: di la frase bien y sigue». No se crean juegos nuevos. |
-| Calendario del hogar | La dosis del día, y la casilla de la persona adulta sobre el reto de casa. Sin casilla de la criatura. |
-
-### El cuento
-
-Camino de la familia: Portal de familias → Explorar → Cuentos.
-Camino del aula: el cuento sale dentro de la asamblea del día.
-
-| Pieza | Mejora |
-| --- | --- |
-| Lista de cuentos | El cuento de la semana sigue destacado. Los dos microcuentos dialógicos (uno de tres láminas, otro de cuatro) aparecen como cuentos, no como un modo aparte. |
-| Visor | En el microcuento: lámina, frase inglesa con altavoz, pregunta del peldaño, contador de cinco segundos, y el eco que dice el adulto si hace falta. En el cuento semanal: las preguntas que ya tiene, más el mismo contador, sin rehacer las veinte palabras. |
-| Láminas | Siguen siendo papel. El microcuento señala qué lámina se imprime; no se enseña la lámina en la pantalla a la criatura. |
-
-Los dos primeros microcuentos, y no más en esta mejora, son los que los
-textos traen escritos: *Lúa e o peixiño azul* (2-3 años) y *Lúa e o vento
-rebuldeiro* / *Lúa y el viento travieso* (4-6). Cada uno, en gallego y en
-castellano.
-
-### El inglés que ya existe
-
-Camino: Modo Aula → Recursos → grupo de inglés. En casa, Explorar → inglés
-abre solo las palabras del trayecto.
-
-| Pieza | Mejora |
-| --- | --- |
-| Palabras del curso | Al abrirlas, primero las de la dosis de esta semana. El resto del mes sigue ahí, una sección más abajo. |
-| Repaso espaciado | Sigue siendo el repaso **de la persona adulta**, para acordarse de cómo se dice antes de entrar. Las palabras de la dosis salen primero. No se convierte en un examen de la criatura. |
-| Escucha | Igual: la docente oye la frase antes de decirla. Si la dosis añade una frase, entra su audio en el mismo cambio. |
-| Colocaciones | Se marcan las fórmulas de turno que el currículo de 3 a 6 años pide (`my turn`, `here you are` y las que el texto nombre en esa unidad). No se añade una lección de gramática. |
-| Sonidos | El contraste que el currículo pide frente al gallego o al castellano (la vocal breve, la vocal larga, el cierre de la sílaba) apunta al sonido que ya está en este módulo. No se abre un juego de fonemas para la criatura. |
-| Lista de vocabulario (el banco de uso habitual) | Igual, y deja de ser la puerta. Se entra desde Recursos, nunca desde Hoy. |
-| Aprender a leer (casa) | Sigue siendo el guion del adulto con letras de madera y «qué observar» sin marcar. Los contrastes de sonido del currículo se enlazan aquí cuando coinciden. No vuelve el registro «logrado / asistido». |
-
-### El resto de la jornada
-
-| Camino | Mejora |
-| --- | --- |
-| Recursos → Dinámicas | Donde la dinámica ya trae una frase inglesa, se añade la espera y el eco. No se alarga el procedimiento ni se pide el nombre de una criatura a la app. El nombre, si se usa, se usa en la sala: la app no lo pregunta ni lo guarda. |
-| Recursos → Ciencia (STEAM) | La sesión sigue siendo de ciencia con las manos. Si ya hay una orden en inglés, esa orden usa la misma espera y el mismo eco. No se convierte la ciencia en clase de inglés. |
-| Recursos → Programación | El mes dice en qué área vive el inglés (Comunicación y Representación de la Realidad, objetivo OBX5, criterio CA2.7 en segundo ciclo) y cuál es la dosis. No aparece «Área de Inglés» ni una nota. |
-| Recursos → Estrategias | Se suman el habla paralela y la expansión, con el mismo molde que las cinco que ya hay: por qué, cómo, un ejemplo, el error a evitar. La espera que ya está se completa con las dos pausas: después de hablar el adulto, y después de hablar la criatura. |
-| Premios | Siguen siendo del adulto. Si más adelante una insignia cuenta semanas del modelo, cuenta las que marcó la persona adulta. Ninguna cuenta a una criatura. |
-| Créditos | Igual. |
-
-### Lo que se oye
-
-Toda frase inglesa nueva —de la dosis, del microcuento o del reto de casa—
-entra con su audio en el mismo cambio que el texto, en la voz que ya usa el
-inglés del proyecto. El gallego y el castellano de la interfaz, si cambian,
-entran también los dos, con su audio si esa cadena ya se oye.
-
-La persona adulta puede oír la frase para prepararse. Luego la dice ella, en
-la sala o en casa, con su gesto. La grabación no se pone delante del grupo
-como si fuera la maestra.
-
-## El espacio de formación
-
-Un sitio con nombre, en los dos portales, no dos frases metidas en la guía
-de dos minutos.
-
-- Aula: Inicio → Entrar en Modo Aula → Eu → **El modelo**.
-- Casa: Inicio → Portal de familias → Guías → **El modelo**.
-
-La guía de dos minutos se queda donde está. Este espacio se puede abrir
-cualquier día, no solo la primera vez. El contenido vive en JSON, en gallego
-y en castellano, con el mismo esqueleto y el ejemplo de cada perfil. Tres
-partes, y las tres se ven enteras:
-
-1. **Cómo funciona el modelo.** Quién habla (la persona adulta, no la
-   grabación). Qué hace la criatura (el cuerpo y el objeto, nunca la
-   pantalla). Las cuatro fases de la sesión. La dosis corta. El cuento con
-   su pausa. Las cuatro herramientas: reformular, ampliar, hablar en
-   paralelo y esperar. El reto de casa de unos tres minutos. La nota de
-   papel entre la escuela y la casa.
-2. **Los objetivos que hay que cumplir.** Los del texto de vocabulario, con
-   su nombre, para que la persona adulta sepa qué está mirando:
-   - de 18 a 36 meses: responder con el cuerpo a la orden, emparejar el
-     objeto real, orientar la atención ante un contraste de sonido que el
-     gallego o el castellano no tienen, y —si sale— una frase de dos
-     palabras en un momento de verdad;
-   - de 3 a 6 años: usar las fórmulas de turno en el juego, colocar el cuerpo
-     o el objeto con `in`, `on`, `under`, jugar con la rima, y sostener el
-     intercambio del cuento.
-   El mismo texto pide, en el tramo de 18 a 36 meses, la orden con el cuerpo
-   ante al menos el 80 % de las instrucciones al final de la unidad. Esa
-   cifra se explica aquí. **No se calcula en la app y no se guarda.**
-   Además están los objetivos de la persona adulta, que sí son los que la app
-   puede conocer porque es ella quien toca la pantalla: decir la dosis con
-   el objeto, esperar, no pedir que repita, hacer el cuento con su pausa, y
-   copiar la nota o hacer el reto de casa.
-3. **Qué no es un objetivo.** Una nota de inglés, un examen, una ficha de
-   una criatura, o que la criatura repita.
-
-El marco gallego va en la parte 2, en la versión de la docente: el inglés
-vive en el Área de Comunicación y Representación de la Realidad. No es
-asignatura. Lo que la docente puede mirar en la sala (el cuerpo, la canción,
-una fórmula en el juego) se nombra y no se anota.
-
-## Cómo se mide el cumplimiento
-
-Hoy el cumplimiento es un conteo: cuántas asambleas, cuántas cápsulas, cuántos
-días con una casilla. Eso dice que la persona adulta abrió la sesión. No dice
-si cumplió el modelo.
-
-La mejora mide **los objetivos de la persona adulta**, con una lista cerrada
-que sale del JSON del modelo. Al terminar Hoy, y también desde El modelo, se
-marcan los de ese día. Ejemplos, no la lista definitiva:
-
-- aula: dije la dosis con el objeto, esperé, hice la pausa del cuento, copié
-  la nota;
-- casa: hice el momento de tres minutos, dije la frase con el gesto, no pedí
-  que repitiera.
-
-Se guarda el día, sin hora, y los identificadores marcados. Nada de texto
-libre, porque un texto libre acaba siendo una anécdota de una criatura. Nada
-de porcentaje, nada de nombre, nada de «logrado / asistido / explorando».
-
-«Qué observar» sigue en la sesión, con las cuatro dimensiones del tramo, y
-sigue sin casilla. Sirve para mirar. No sirve para puntuar.
-
-Si entra una clave nueva en `user_progress.json` o en `premios.json`, el
-mismo cambio actualiza la política de privacidad y los dos gates que vigilan
-esas claves (`test/core/progreso_privacidad_test.dart` y
-`test/features/premios_test.dart`). Si no, no se guarda.
-
-Los premios no se convierten en el medidor. El medidor es esa lista. Un
-premio, si se añade, solo puede contar semanas en las que la persona adulta
-marcó la lista.
-
-## Olas
-
-Siete olas. Cada una se termina entera —gallego, castellano, audio si la
-frase se oye, y la pantalla— antes de abrir la siguiente. El detalle de los
-campos JSON está en el plan de arquitectura; aquí está el orden en el que
-Frank lo ve.
-
-El mes piloto de la dosis es el del agua, en el curso de 2 a 3 años: el
-texto de vocabulario lo escribe entero (`water`, `splash`, `boat`, `wet`,
-`fish`). En una redacción anterior este plan decía septiembre del curso de
-3 a 4 años. Eso era el mes de bienvenida del banco, no la dosis. Queda
-corregido para que los dos documentos nombren el mismo mes.
-
-### 1. El modelo, en su espacio
-
-El espacio «El modelo» en Eu y en Guías, con las tres partes. Las cuatro
-herramientas también quedan en Estrategias, como ficha de consulta.
-
-Hecho cuando, en gallego y en castellano, las dos puertas abren el mismo
-esqueleto, se leen los objetivos del tramo y se lee que el 80 % no se guarda.
-
-### 2. El día
-
-Hoy del aula, Hoy de casa, la asamblea de los dos ciclos, el calendario de
-los dos portales y la nota para las casas. Solo el mes piloto del agua.
-El contador de cinco segundos entra en la fase del cuento.
-
-Hecho cuando el día enseña la dosis y el reto, y la nota se puede copiar con
-la frase de casa.
-
-### 3. El cuento
-
-Los dos microcuentos, con su pregunta en tres peldaños, y el contador de
-cinco segundos en el visor. El cuento de la semana no gana otra pregunta:
-gana el contador que su guía ya pide por escrito.
-
-Hecho cuando cada microcuento se abre desde la lista, se oye la frase y se
-ve la pausa, en las dos lenguas, y el cuento de la semana enseña la misma
-pausa.
-
-### 4. El banco de inglés
-
-Palabras, repaso, colocaciones y sonidos pasan a abrir por la dosis y por la
-fórmula de turno. La lista grande y la escucha se quedan donde están.
-
-Hecho cuando, en el curso de 2 a 3 años y en el mes del agua, lo primero que
-se ve son las palabras de la dosis y no las ochenta del mes.
-
-### 5. El resto de la jornada
-
-Dinámicas, ciencia y aprender a leer: solo la línea de adulto donde ya hay
-inglés. Programación: el nombre del área y la dosis del mes piloto.
-
-Hecho cuando ninguna de esas pantallas pide un dato de una criatura ni llama
-al inglés asignatura.
-
-### 6. El cumplimiento
-
-La lista cerrada al terminar Hoy, en el aula y en casa, y el resumen de la
-semana de la persona adulta dentro de «El modelo». Solo los objetivos del
-modelo, solo el mes piloto.
-
-Hecho cuando un día marcado guarda la fecha sin hora y los identificadores,
-se vuelve a abrir y se ve igual, y no aparece una casilla de criatura ni un
-porcentaje.
-
-### 7. El papel y la guía
-
-El manual, en la página de cada pantalla tocada, incluidas «El modelo» y la
-lista de cumplimiento. La programación, si la ola 5 solo cubrió el mes
-piloto, se extiende al resto de meses **cuando exista la dosis de ese mes**.
-No se rellena un mes con una dosis inventada.
-
-Hecho cuando el manual y la pantalla dicen lo mismo.
-
-## Qué no entra
+| Llevar a una pantalla una cifra o un código que solo dice un resumen | Ola 0: todo dato normativo va con su cita del DOG; las cifras de estudios no se pintan |
+| Que un «repite» se cuele en una de las tres lenguas | Gate de la ola 1 |
+| Que la tarjeta del aula desborde en gallego o con texto grande | Se sustituye o se pliega, no se apila; captura con texto grande antes de dar algo por bueno |
+| Que la dosis se lea como «menos inglés» que el banco | El banco sigue intacto; la dosis solo dice cuáles se quedan |
+| Que la lista del adulto se lea como evaluación | No guarda nada de la criatura y lo dice en pantalla |
+| Que una frase inglesa no tenga audio | Texto y audio en el mismo cambio; sin grabación no hay botón de voz |
+| Que el lenguaje clínico de los textos llegue a la app | Fe de erratas y revisión de cada JSON nuevo con la regla «nada sanitario» |
+
+## 11. Qué no entra
 
 - Un área, una ficha o una nota de inglés.
-- Guardar qué dijo o qué hizo una criatura, ni el 80 % del texto de
-  vocabulario, ni una escala por niño.
-- Más de dos microcuentos en esta mejora.
-- Rehacer los cincuenta meses del banco, la ciencia o aprender a leer.
-- Voz en directo, red, o un metrónomo que suene.
+- Guardar qué dijo o qué hizo una criatura, el 80 %, una escala por niño,
+  turnos o grabaciones.
+- Sesiones diarias de 45 minutos, tres adultos o inmersión sin lengua de casa.
+- Pedir a la criatura que repita, traduzca o conteste en inglés.
+- Borrar o adelgazar el banco de 4.000 palabras sin un encargo aparte.
+- Voz en directo, red o un metrónomo que suene.
 - Traducir la interfaz al inglés.
-
-## Cómo se sabe que una ola está hecha
-
-En este orden, y se nombra con qué:
-
-1. El JSON gallego y el castellano dicen lo mismo.
-2. Si hay frase nueva que se oye, el audio está en el mismo cambio.
-3. Los gates del repositorio (`tools/gates.sh`) salen verdes, y el APK de
-   release sigue sin permiso de red.
-4. Se abre la app, se llega por el camino de la tabla (no por el fichero) y
-   se mira la captura en gallego y en castellano.
-
-Hasta entonces la ola está en la rama, pendiente de mergear. No está hecha.
