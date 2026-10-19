@@ -1,373 +1,279 @@
-# Plan de arquitectura pedagógica
+# Arquitectura docente
 
-Plan de trabajo para integrar en **Descubre con Lúa · Edición Vigo** cinco
-textos de base. No cambia la app: dice qué pieza entra, en qué capa, y en qué
-orden. Lo que la app enseña sigue viviendo en JSON. Si este plan y el JSON no
-dicen lo mismo, manda el JSON.
+Cómo se organiza lo que enseña **Descubre con Lúa · Edición Vigo**: de qué
+pieza sale cada cosa que ve la docente o la familia, cómo se reparte el curso
+y cómo habla la persona adulta. **Este documento no cambia ninguna pantalla.**
+Es el diseño de destino. El diagnóstico del estado actual y el orden de trabajo
+están en `docs/PLAN_MEJORA_INTEGRAL.md`. Los dos documentos dicen lo mismo; si
+uno se queda atrás, se corrige en el mismo cambio.
 
-Este fichero es el contrato de datos. El recorrido de todo el producto —qué
-pantalla mejora, cuál no, y en qué ola— está en
-`docs/PLAN_MEJORA_INTEGRAL.md`. Si los dos no dicen lo mismo, se corrige el
-que se haya quedado atrás: no se elige uno en silencio.
+Si este documento y el JSON no dicen lo mismo, manda el JSON: es lo que la app
+enseña. Cuando una pieza de este diseño ya esté en el JSON, este documento la
+describe; no la duplica.
 
-Los textos se leyeron enteros el 17 de octubre de 2026. Están en
-`docs/base/`, copiados tal cual llegaron. Son estos:
+## 1. Fuentes y orden de mando
 
-| Texto | Fichero | Qué aporta |
-| --- | --- | --- |
-| Biblioteca de cuentos dialógicos bilingües | `docs/base/biblioteca-cuentos-dialogicos-bilingues.txt` | Microcuento de 3 o 4 láminas, pregunta en tres niveles, pausa y recast |
-| Currículo de inglés infantil de Galicia | `docs/base/curriculo-ingles-infantil-galicia.txt` | El inglés no es asignatura: es aproximación dentro del Área de Comunicación |
-| Currículo de vocabulario, 2 a 6 años | `docs/base/curriculo-vocabulario-infantil-2-6.txt` | Dosis léxica corta, anclada a objetos y al cuerpo, con un reto en casa |
-| Estrategias de apoyo lingüístico | `docs/base/estrategias-apoyo-linguistico.txt` | Cuatro herramientas del adulto: recast, expansión, habla paralela, espera |
-| Manual de rutinas SparkLing (UW I-LABS) | `docs/base/manual-rutinas-sparkling-uw-ilabs.txt` | Cómo habla el adulto en vivo: turno, espera, modelado, cierre predecible |
+1. **Reglas de producto.** La criatura no usa la pantalla. Cero datos de una
+   crianza. Sin red. Nada sanitario. El contenido vive en JSON. El pulso se ve,
+   no se oye.
+2. **Normativa gallega, leída en el DOG**: Decreto 150/2022, Orden de 30 de
+   mayo de 2023 y Decreto 79/2010.
+3. **Los documentos curriculares de Frank** que ya construyen la app: *Diseño
+   Curricular Infantil Trilingüe Galicia* (2.º ciclo), *Planificación Inglés
+   Escuelas Infantiles* (1.º ciclo) y *Modelo de Adquisición Natural y
+   Proyección Anual* (banco de cinco palabras al día).
+4. **Los cinco textos de `docs/base/`**: currículo de inglés en Galicia,
+   currículo de vocabulario de 2 a 6 años, cuentos dialógicos bilingües,
+   estrategias de apoyo lingüístico y rutinas SparkLing.
 
-El mapa de pantallas de abajo se comprobó en el código de la rama
-`pedagogia`, no en `PROJECT.md`. Ese fichero describe un esqueleto anterior
-(una unidad y una cápsula) y no es el producto que se abre hoy.
+Los cinco textos son síntesis de trabajo, no normativa ni manuales oficiales.
+Ninguna cifra, código de criterio o cita de un estudio pasa de ellos a una
+pantalla sin contrastarla con su fuente primaria.
 
-## Lo que no se toca
+## 2. Principios del modelo
 
-Estas cinco reglas mandan sobre los cinco textos. Si un texto pide lo
-contrario, no entra.
+Salen de los cinco textos, filtrados por las fuentes 1 a 3.
 
-1. **La criatura no usa la pantalla.** La pantalla es el guion de la persona
-   adulta. La criatura oye, mira los materiales y responde con el cuerpo.
-2. **Cero datos de una crianza.** Nada de nombres, anecdotarios, escalas por
-   niño ni recuento de turnos. Los premios siguen siendo del adulto.
-3. **Sin red.** Una frase nueva en inglés lleva su grabación dentro del
-   paquete, en el mismo cambio que el texto. No hay voz en directo ni
-   descarga.
-4. **Nada sanitario.** No se observa para diagnosticar, no hay prueba, no hay
-   nota de inglés. La espera y el recast son la manera de hablar, no una
-   terapia.
-5. **El inglés no es una lengua de la interfaz.** Se oye. El gallego y el
-   castellano siguen siendo las lenguas de la pantalla, las dos, con paridad.
+1. **Habla una persona, no la app.** La grabación sirve para que la adulta se
+   prepare. La criatura la oye a ella, con su cara, su gesto y el objeto.
+2. **Primero se comprende, después se habla.** La respuesta esperada es el
+   cuerpo: señalar, hacer el gesto, coger el objeto. Que hable es un regalo, no
+   una meta del día.
+3. **Poco, estable y con las manos.** Un núcleo corto de palabras, el mismo
+   todo el mes, con objeto real y gesto, que vuelve en todas las piezas del
+   mes.
+4. **Una sola unidad por mes.** Todo lo del mes (asamblea, cuento, juego, casa)
+   sale del mismo centro de interés y del mismo núcleo.
+5. **La lengua de casa es bienvenida.** La trama y la interfaz van en gallego y
+   en castellano. Lúa pone el inglés. Si la criatura contesta en gallego o en
+   castellano, se acoge y se devuelve en inglés, sin corregir.
+6. **Nunca se pide repetir ni se corrige de forma explícita**, en ninguna
+   lengua.
+7. **El inglés no es asignatura.** Es aproximación dentro del Área de
+   Comunicación y Representación da Realidade. Sin ficha, sin nota y sin
+   evaluación propia.
 
-El pulso de la canción sigue siendo visual. Un metrónomo sonoro competiría
-con la voz que hay que seguir.
+## 3. La columna vertebral: 50 unidades mensuales
 
-## Qué pide cada texto, en una pieza
+El curso son **5 cursos × 10 meses = 50 unidades**. La unidad es la única
+fuente del mes: las pantallas leen la unidad y no guardan contenido propio.
 
-### Galicia: cuándo y con qué nombre
-
-El Decreto 150/2022 y la Orden de 30 de mayo de 2023, tal como los resume el
-currículo gallego:
-
-- El inglés vive en el **Área de Comunicación y Representación de la
-  Realidad**, bloque de las lenguas y sus hablantes. El objetivo de área es
-  OBX5. El criterio del segundo ciclo es CA2.7: participar en intercambios
-  sencillos ligados a rutinas.
-- **No es asignatura.** No hay «Área de Inglés», ni ficha, ni cuaderno, ni
-  nota aparte. En segundo ciclo cabe un período lectivo a la semana, mejor
-  en dos medias sesiones. En primer ciclo (0-3) no hay franja ni especialista:
-  es estímulo dentro de la rutina del tutor.
-- El gallego y el castellano no ceden su sitio. El inglés no se evalúa solo.
-  Lo que una docente puede mirar es si la criatura responde con el cuerpo,
-  sigue una canción o un cuento, y usa una fórmula en el juego. Eso no se
-  guarda en la app.
-
-### Vocabulario: cuánto y con qué
-
-De 18 a 36 meses, seis unidades de unas seis semanas, **cinco palabras** cada
-una, con objeto real, gesto y un contraste de sonido frente al gallego o al
-castellano. De 3 a 6 años, seis unidades de unas ocho semanas (construcción,
-restaurante, veterinaria, tiempo, arte, viajes): léxico básico y léxico de
-relación, fórmulas de turno (`my turn`, `here you are`), preposiciones y, más
-tarde, un `because`. Cada unidad trae un rincón de juego y **un micro-reto en
-casa**, y la lectura en casa sigue PEER (incitar, acoger, ampliar, retomar) y
-CROWD (completar, recordar, abrir, preguntar qué/dónde, acercar a la vida).
-
-La dosis es corta a propósito. El texto lo dice así: un bloque pequeño y
-funcional, no una lista para memorizar.
-
-### Cuentos dialógicos: la unidad narrativa
-
-Un cuento son **tres láminas** a los 2-3 años o **cuatro** a los 4-6. Dura
-dos o tres minutos. La trama va en gallego o en castellano. Lúa dice **una
-frase en inglés** en el momento de más carga, con gesto y onomatopeya. Cada
-lámina trae tres preguntas en inglés:
-
-1. señalar;
-2. imitar con el cuerpo;
-3. acercar la escena a la vida de la criatura.
-
-Después de cada pregunta, **cinco segundos** de espera. Si la criatura calla,
-señala, responde en gallego o castellano, dice una sola palabra o deforma la
-frase, el adulto tiene un guion de recast: acoge y devuelve la frase bien
-dicha, sin «mal» y sin «repite».
-
-El texto trae el molde (escenario, conflicto, gesto, desenlace) y dos cuentos
-ya escritos: *Lúa e o peixiño azul* (2-3) y *Lúa y el viento travieso* (4-6).
-Esos dos son el arquetipo. El catálogo de cien no se inventa en este plan.
-
-### Apoyo lingüístico: las cuatro herramientas
-
-Van siempre juntas, en este orden cuando la criatura está jugando:
-
-1. **Habla paralela.** El adulto dice lo que la criatura está haciendo, en
-   presente, sin examen (`You are putting the red block on top`).
-2. **Espera.** Un silencio de 3 a 5 segundos después de hablar, y otro
-   después de que la criatura responda, antes del elogio.
-3. **Expansión.** Una palabra suelta se devuelve dentro de una frase corta,
-   un escalón por encima, no un discurso.
-4. **Recast.** Si la forma falla, se devuelve la forma bien dicha dentro de
-   la conversación, en el turno siguiente, sin corrección explícita.
-
-Lo que el texto prohíbe: «no se dice así», la ráfaga de preguntas, el habla
-telegráfica del adulto y narrar un objeto que la criatura ya no está mirando.
-
-### SparkLing: cómo suena la sesión, no cuánto dura
-
-Lo que sí entra: la criatura aprende la lengua nueva con una persona delante,
-no con un vídeo; el adulto baja al suelo, espera el turno, modela con calma
-y cierra con un ritual. Las cuatro fases del manual (acogida con pulso,
-cuento, taller de gesto, despedida con dos o tres objetos) son la forma de
-una sesión **cuando hay equipo y cuarenta y cinco minutos**.
-
-Lo que no entra, porque choca con Galicia o con las reglas de arriba:
-
-- una sesión diaria de 45 minutos y tres adultos (el segundo ciclo tiene un
-  período a la semana; el primero no tiene franja);
-- registrar turnos o grabar al grupo;
-- una marioneta pensada para captar a la criatura (Lúa es la guía de quien
-  tiene la pantalla, no un reclamo);
-- sustituir la asamblea de diez minutos por ese protocolo.
-
-## Dónde está hoy la app
-
-Comprobado en el código de esta rama.
-
-| Pieza | Dónde está | Qué hace ya |
-| --- | --- | --- |
-| Dos portales | Inicio → Na casa / Na escola | Hoy, calendario, explorar o recursos, guías o yo |
-| Asamblea de 2.º ciclo | Cuatro fases, 10 minutos: saludo, pulso, reto TPR, calma | Una pantalla por fase, con consigna y minutos |
-| Asamblea de 1.º ciclo | La misma familia de pantalla, día a día | Sin bloque de inglés como materia |
-| Palabras del día | `assets/content/tpr/`, cinco cursos | Cinco palabras nuevas de lunes a jueves; el viernes repasa las veinte. 800 por curso, 4.000 en el trayecto, sin repetir una como nueva |
-| Cuento de la semana | `Cuento` en `lib/data/models/cuento_model.dart` | La trama en gl y es, las veinte palabras de la semana dentro del texto, gesto y voz |
-| Preguntas del cuento | `PreguntaGraduada`, niveles 1-3 | Están en el cuento entero, no en cada lámina. El comentario del modelo las llama literal, inferencial y crítica. No son las tres de señalar / imitar / acercar |
-| Espera de 5 segundos | Campo `tempoEsperaSegundos` del cuento, valor 5 | Está en el dato. No se pinta: el visor del cuento no lee ese campo |
-| Recast en casa | `PautaRecast` y la micro-rutina de 2.º ciclo; tarjeta en Academy | Expresión de la criatura, frase devuelta, y qué no decir. Tres a cinco minutos |
-| Inglés que se oye | `assets/voice/` | La persona adulta pulsa y oye antes de decir |
-
-La asamblea de segundo ciclo ya tiene la forma corta de una acogida, un
-pulso, un reto con el cuerpo y una calma. No hay que inventar otra sesión
-encima.
-
-## El conflicto de la dosis, dicho claro
-
-Hoy el curso mete **cinco palabras nuevas al día** y llega a cuatro mil en
-cinco cursos. El currículo de vocabulario pide **cinco palabras en seis
-semanas** entre los 18 y los 36 meses, y un puñado funcional en cada unidad
-de los 3 a los 6 años.
-
-Las dos cifras no describen la misma cosa. Una es el banco de todo el
-trayecto. La otra es lo que una sesión puede hacer vivir con las manos.
-
-**No se borra el banco en este plan.** Quitarlo sería otro encargo. Lo que
-se añade es una capa de dosis: cada mes señala, dentro de las palabras que
-ya existen, el grupo corto que esa semana se dice, se gesticula y se vuelve
-a encontrar en el cuento y en el reto de casa. El resto sigue en su día, con
-el repaso que ya tiene. Si más adelante se decide adelgazar el banco, se
-decide aparte y se recorren las capas (JSON gl, JSON es, audio gl, audio es,
-imprimible, pantalla, este documento).
-
-## Cómo se integra
-
-Una sola tubería. El adulto abre la pantalla; el JSON trae el guion; la voz
-ya está grabada.
-
-```text
-dosis del mes          cuento dialógico           ficha LSS
-(apunta a palabras     (3 o 4 láminas,            (cuatro herramientas,
- que ya existen)        frase de Lúa,              ejemplos, qué evitar)
-        \               CROWD, recast)                  /
-         \                    |                        /
-          +-------------------+-----------------------+
-                              |
-                    guion de la persona adulta
-                              |
-          +-------------------+-------------------+
-          |                   |                   |
-     Hoy, aula           Biblioteca          Hoy, casa
-     (la misma frase     (el cuento          (un reto de
-      y el mismo gesto)   largo)              3 minutos)
-```
-
-### Datos nuevos, no pantallas nuevas
-
-Todo en `assets/content/`, bilingüe, nunca escrito en el widget.
-
-**`lss.json`.** Las cuatro herramientas. Cada una: cuándo se usa, qué dice
-el adulto, qué no dice, y dos o tres ejemplos en inglés con la situación en
-gallego y en castellano. Sale de las tablas del catálogo de apoyo, no de un
-resumen. La tarjeta de recast que ya existe en Academy lee de aquí, en vez
-de quedarse como caso suelto.
-
-**Cuento dialógico.** Mismo `Cuento`, con campos opcionales para no romper
-el cuento de la semana:
-
-- en el cuento: cohorte (`2-3` o `4-6`), escenario, conflicto, gesto,
-  desenlace, palabras diana, frase de Lúa;
-- en cada lámina: la frase de Lúa de esa lámina, tres preguntas
-  (`senalar`, `imitar`, `acercar`) en inglés, con la pista para el adulto en
-  gl y es, y un recast por tipo de respuesta (silencio, señal, lengua de
-  casa, una palabra, forma torcida).
-
-`PreguntaGraduada` no se reutiliza tal cual: su nivel 1-3 es otra escala. El
-cuento de la semana la conserva. El dialógico lleva la tríada en la lámina.
-
-Los dos arquetipos del texto son el primer contenido: *Lúa e o peixiño azul*
-(el texto ya lo trae en gallego y en inglés) y *Lúa y el viento travieso*
-(en el texto, el cuerpo de varias láminas está solo en castellano). El
-gallego de ese segundo cuento se escribe en el lote, no se deja vacío ni se
-da aquí por traducido. El
-dibujo de cada lámina sigue la regla de lámina limpia: una acción, un
-contraste, sin fondo que compita. Si no hay lámina, el cuento no entra en la
-biblioteca.
-
-**Dosis.** Un JSON por curso y mes que **cita identificadores** de
-`assets/content/tpr/`. No copia la palabra. Ahí caben el gesto, el objeto de
-la mesa y el contraste de sonido que el adulto tiene que oír (por ejemplo
-`fish` frente a `sea`), como nota para quien habla, no como prueba para la
-criatura.
-
-**Reto de casa.** Una ficha por unidad, del estilo de la micro-rutina que ya
-existe: momento del día, una frase, qué hacer con las manos, qué no pedir.
-El cuaderno viajero de objetos reales se queda fuera de la app: es un objeto
-físico, no un registro.
-
-**El modelo.** Un JSON de formación, con perfil docente y perfil familia, en
-gallego y en castellano. Tres bloques: cómo funciona, los objetivos del
-tramo (los cuatro de 18 a 36 meses y los cuatro de 3 a 6, tal como los
-escribe el currículo de vocabulario), y qué no es un objetivo. El 80 % de
-órdenes con el cuerpo se escribe como criterio del texto. No es un campo
-numérico y no se calcula.
-
-**Cumplimiento del adulto.** Una lista cerrada de identificadores, distinta
-por perfil, citada desde ese JSON. Al marcarla, el aparato guarda el día
-sin hora y esos identificadores. No guarda texto libre, ni un porcentaje, ni
-nada de una criatura. Si la clave es nueva, el mismo cambio toca la política
-de privacidad y los dos gates de los ficheros (`premios.json` y
-`user_progress.json`).
-
-### Dónde se ve, en los tres modos
-
-| Qué | Aula, 1.º ciclo | Aula, 2.º ciclo | Casa |
+| Curso de la app | Etapa | Grupo en el aula | Quién la usa |
 | --- | --- | --- | --- |
-| Asamblea de cuatro fases | La de su día, sin franja de inglés | Igual que ahora: saludo, pulso, reto, calma | No aplica |
-| Frase y gesto del día | Dentro del día, incidental | Dentro del reto TPR, el grupo corto de la dosis | Las mismas palabras, con el juego de tres minutos |
-| Cuento dialógico | 3 láminas, casi todo señalar e imitar | 4 láminas, entra el acercar a la vida | El mismo cuento, en PEER: una pregunta por lámina, no las tres a la vez |
-| Ficha LSS | Una línea en la guía de antes de entrar: espera y no corrijas | La ficha completa en El modelo | La misma ficha, con el ejemplo de casa |
-| El modelo | El espacio entero. Los objetivos escritos del texto empiezan a los 18 meses | El espacio entero, con los objetivos de 3 a 6 | El mismo espacio, con el reto de casa |
-| Cumplimiento | La lista del adulto al cerrar el día, sin casilla de criatura | La misma lista | La lista del reto de casa |
-| Nota de observación | No se muestra como nota | Una frase de qué mirar (cuerpo, canción, fórmula), sin casilla | No se muestra |
+| 0-2 | 1.º ciclo | tramo 0-2 | educadora / familia |
+| 2-3 | 1.º ciclo | tramo 2-3 | educadora / familia |
+| 3-4 | 2.º ciclo | 4.º de Infantil | docente / familia |
+| 4-5 | 2.º ciclo | 5.º de Infantil | docente / familia |
+| 5-6 | 2.º ciclo | 6.º de Infantil | docente / familia |
 
-Un botón que lleve al cuento no cumple el cuento. La tríada y la espera van
-en la lámina que la persona adulta tiene abierta.
+### Qué tiene cada unidad
 
-La espera se dibuja: el campo `tempoEsperaSegundos` pasa a verse en esa
-lámina (una cuenta visual de cinco segundos, en silencio). Hoy el campo
-existe y el visor no lo usa.
+| Campo | Qué es | Regla |
+| --- | --- | --- |
+| `centroInteres` | Un tema del mes, igual en aula y en casa | Uno solo. Lo comparten asamblea, cuentos, juegos y reto |
+| `nucleo` | Unidades léxicas que se quedan todo el mes | Citadas por identificador del registro léxico (apartado 6). Tamaño por edad, abajo |
+| `formulas` | Fórmulas de turno y cortesía | Solo desde 3-4 años: *my turn*, *your turn*, *here you are*, *help me, please*, *thank you* y las de la unidad |
+| `estructura` | Una estructura del mes | Solo desde 4-5 años: *in / on / under*, *because…*, *first… then…* |
+| `ordenes` | Órdenes TPR del mes | Hechas **con palabras del núcleo**. Cada una con su gesto en gl y es |
+| `realia` | Objetos reales para la mesa o la casa | Seguros para la edad. Sin compra obligatoria |
+| `contraste` | Un contraste de sonido para el oído de la adulta | Solo si la voz inglesa de la app (inglés americano) lo produce. Desde 18 meses |
+| `cancion` | Canción con pulso | El pulso sale de las marcas `*` de la letra y se dibuja |
+| `microcuento` | Cuento dialógico de la unidad | Desde 2 años (apartado 5) |
+| `retosCasa` | Un reto por semana, cuatro por unidad | Un momento del día, una frase del núcleo, qué hacer con las manos, qué no pedir |
+| `queObservar` | Qué puede mirar la adulta | Cuerpo, objeto, sonido y fórmula. Sin casilla, sin guardado |
+| `reactivar` | Núcleos de unidades anteriores que vuelven | El del mes anterior, de forma incidental, en la fase de calma y en un reto |
 
-### Voz
+### Tamaño del núcleo por edad
 
-Cada frase nueva de Lúa, cada pregunta CROWD y cada modelo de recast que se
-vaya a oír llevan grabación en inglés. El texto de alrededor, en gallego y
-en castellano, lleva la suya si la pantalla lo reproduce. Texto y audio
-entran en el mismo cambio. Si no hay grabación, la pantalla enseña el texto
-y lo dice, y no finge un botón de voz.
+| Curso | Núcleo | Además | Preguntas en inglés |
+| --- | --- | --- | --- |
+| 0-2, hasta 18 meses | 3 palabras o expresiones de rutina | — | Ninguna. Habla paralela y espera |
+| 0-2, desde 18 meses | 4-5 | — | Señalar |
+| 2-3 | 5 | — | Señalar e imitar |
+| 3-4 | 5 | 2 fórmulas | Señalar, imitar y algo de acercar |
+| 4-5 | 5 + 3 descriptivas | 2 fórmulas, 1 estructura | Las tres |
+| 5-6 | 5 + 3 descriptivas | 2 fórmulas, 1 estructura, juego de rima | Las tres |
 
-## Plan de trabajo
+Los textos de base no escriben nada para menos de 18 meses. Para ese tramo, la
+arquitectura aplica lo que sí dicen los cinco: persona delante, parentese,
+habla paralela, espera y rutina. Sin preguntas.
 
-Cada lote se termina en las capas que toca, o se dice cuál falta. No se da
-por hecho un lote porque el JSON exista y la pantalla no.
+### El banco del mes
 
-### Lote 1. Las cuatro herramientas, visibles
+El banco de `assets/content/tpr/` (80 palabras al mes y cinco nuevas al día)
+lo pide el documento de Frank *Modelo de Adquisición Natural* y lo vigila un
+gate. En esta arquitectura **es la ampliación de la unidad, no su puerta**:
 
-`lss.json` en gl y es. La guía que ya explica el recast pasa a enseñar las
-cuatro, con el ejemplo y con lo que no hay que decir. Sin audio todavía: es
-texto para el adulto.
+- el núcleo sale del banco de ese mes, o se añade al banco en el mismo cambio;
+- Hoy enseña primero el núcleo y debajo las cinco del día;
+- el cuento de la semana sigue llevando las veinte de su semana.
 
-Hecho cuando, en los dos idiomas, la guía de casa y la de la escuela enseñan
-recast, expansión, habla paralela y espera, y un gate impide que falte una
-lengua o que vuelva un «repite» como consigna.
+Cambiar el tamaño del banco no forma parte de esta arquitectura; sería una
+decisión aparte.
 
-### Lote 2. Los dos cuentos arquetipo
+## 4. El ritmo: mes, semana y día
 
-Modelo de lámina con tríada y recast. *Lúa e o peixiño azul* y *Lúa y el
-viento travieso*, en gallego y en castellano, con la frase de Lúa en
-inglés. El gallego del segundo se redacta en este lote. Láminas propias, o el lote no se abre en la biblioteca.
+**El mes** es la unidad.
 
-Hecho cuando los dos se abren desde la biblioteca en los dos portales y en
-los dos idiomas, y cada lámina muestra sus tres preguntas y su pauta.
+**La semana** sigue la progresión que ya existe (`assets/content/progresion/`)
+y la repetición distribuida que pide el texto de vocabulario:
 
-### Lote 3. La espera, en la lámina
+| Semana | Nombre | Qué pasa con el núcleo |
+| --- | --- | --- |
+| 1 | Descubrir | Se presenta con el objeto, una unidad cada vez, con modelado completo |
+| 2 | Practicar | Vuelve dentro de otras actividades: rutinas, juego, transiciones |
+| 3 | Combinar | Se junta con las fórmulas y la estructura (desde 3-4 años) |
+| 4 | Consolidar | Microcuento y reto de cierre; reaparece el núcleo del mes anterior |
 
-La cuenta de cinco segundos en la lámina del cuento dialógico, en silencio.
-El cuento de la semana no cambia de layout en este lote.
+**El día** depende del ciclo:
 
-Hecho cuando se ve la cuenta en gallego y en castellano, en aula y en casa.
-Sin un aparato, se dice que no se ha visto en un aparato.
+- **1.º ciclo (0-3).** No hay franja de inglés. La asamblea de cuatro fases
+  (unos 9 minutos) y las rutinas del día (aseo, comida, cambios de espacio)
+  llevan el núcleo. Lo dice la educadora titular.
+- **2.º ciclo (3-6).** La asamblea diaria de cuatro fases (unos 10 minutos)
+  lleva las órdenes del núcleo. La aproximación al inglés vive dentro del
+  período semanal que fija la Orden de 30 de mayo de 2023, en una sesión o en
+  dos medias sesiones. Lo que esta app ofrezca para ese período se contrasta
+  antes con el DOG (horario y criterio).
 
-### Lote 4. La dosis, sin tocar el banco
+**La asamblea** mantiene sus cuatro fases: apertura, pulso, reto TPR y calma.
+Es la forma corta de las cuatro fases de SparkLing (acogida, cuento, taller y
+despedida), con una sola adulta y sin cambiar el horario del centro. **Es el
+único modelo de asamblea de la app.**
 
-Un mes piloto (el del agua, en el curso 2-3, porque el texto lo escribe
-entero: water, splash, boat, wet, fish). Esas cinco se citan si ya están en
-el TPR; si falta alguna, se dice cuál y no se inventa el identificador. Hoy
-de la escuela y Hoy de casa muestran ese grupo como «las que se viven esta
-semana», distinto de las cinco nuevas del día.
+## 5. El cuento
 
-Hecho cuando el mismo identificador sale en el JSON de dosis, en el día del
-aula y en el día de casa, y el banco de cuatro mil sigue pasando su gate.
+Hay dos piezas distintas, con funciones distintas.
 
-### Lote 5. Un reto de casa por ese mes
+| Pieza | Para qué | Forma |
+| --- | --- | --- |
+| **Cuento de la semana** | Baño de lenguaje con las veinte palabras de la semana | El que ya hay: páginas, pregunta por página, preguntas graduadas en gl/es y espera visible |
+| **Microcuento de la unidad** | Conversación en inglés sobre el núcleo | 3 láminas (2-3 y 3-4 años) o 4 (4-5 y 5-6). Trama en gl y es, una frase de Lúa por lámina, tríada en inglés, espera y guion de recast |
 
-La ficha del baño (`water`, `splash`, «All wet!»), en el momento del baño,
-con espera y sin pedir que repita. Misma ficha en los dos idiomas.
+Por cada lámina del microcuento:
 
-Hecho cuando Hoy de casa la enseña ese mes y no enseña una nota ni un
-cuaderno.
+- **Lámina limpia**: una acción, un contraste, sin fondo que compita. Sin
+  lámina dibujada, el microcuento no entra.
+- **Frase de Lúa** en inglés, en el momento de más carga, con gesto y
+  onomatopeya. Solo usa palabras del núcleo y, desde 4-5 años, la estructura.
+- **Tríada**: señalar, imitar con el cuerpo y acercar a su vida. El peso
+  cambia con la edad: en 2-3 y 3-4, sobre todo señalar e imitar; en 4-5 y 5-6,
+  las tres.
+- **Espera** en tres tiempos (apartado 7), visible y en silencio.
+- **Guion de recast** para cinco respuestas: silencio, señala, contesta en la
+  lengua de casa, dice una palabra, dice la forma torcida.
 
-### Lote 6. El marco gallego, en la guía de la docente
+**En casa, el mismo microcuento** se lee en PEER, con una sola pregunta por
+lámina y no las tres.
 
-Un texto corto en Guías / Yo: el inglés es aproximación dentro del área de
-comunicación, no una materia; en 0-3 no hay sesión propia; lo que se puede
-mirar es el cuerpo, la canción y la fórmula, y no se anota. Sin mención a
-plataformas de notas ni a calificaciones.
+## 6. El registro léxico
 
-Hecho cuando esa guía está en gl y es, dentro de El modelo, y no añade ningún
-campo guardado sobre una criatura.
+Hoy el inglés de la app sale de muchas fuentes: el banco, el léxico mensual
+del calendario, las órdenes de las asambleas, las dinámicas, los juegos de
+casa, STEAM, las láminas, el corpus de uso habitual y las colocaciones. En esta
+arquitectura:
 
-### Lote 7. El espacio «El modelo»
+- **El banco TPR es el registro canónico.** Cada unidad léxica tiene un
+  identificador estable (`<curso>.<mes>.s<semana>.<clave>`). El curso 3-4 usa
+  hoy identificadores sin prefijo; se normalizan con su tabla de equivalencias.
+- **Todo lo demás cita identificadores.** Núcleo, órdenes, frase de Lúa, retos
+  y frases de juegos citan el registro; no copian la palabra. Si falta una
+  expresión, se añade al banco en el mismo cambio, con su gesto y su audio.
+- **El corpus de 4.000 de uso habitual y las colocaciones son consulta de la
+  adulta**, no currículo. No se cuentan como contenido de ninguna unidad.
+- **La fonética se escribe en inglés americano**, que es la voz de la app.
 
-La puerta nueva en Eu (aula) y en Guías (casa). Las tres partes. La guía de
-dos minutos no se sustituye: sigue siendo la entrada corta.
+## 7. Cómo habla la persona adulta
 
-Hecho cuando las dos puertas, en los dos idiomas, enseñan cómo funciona el
-modelo, los objetivos del tramo y la frase de que el 80 % no se guarda.
+Una sola definición por herramienta. Los textos de base se contradicen en
+varias; vale esta.
 
-### Lote 8. La lista de cumplimiento del adulto
+| Herramienta | Qué hace | Lo que no hace |
+| --- | --- | --- |
+| **Habla paralela** | Dice en presente lo que la criatura hace y mira, con frases cortas y pausas | Preguntas de examen; narrar lo que la criatura ya no mira; monólogo sin pausas |
+| **Espera, en tres tiempos** | (1) Dice o pregunta y calla de 3 a 5 s. (2) Si llega respuesta, recast o expansión en el turno siguiente. (3) Otra espera de unos 3 s antes del elogio o de lo siguiente | Rellenar el silencio; preguntas en ráfaga; «Good job!» al instante |
+| **Expansión** | Devuelve la palabra suelta dentro de una frase uno o dos elementos más larga | Discursos; repetir en telegráfico |
+| **Recast** | Devuelve bien dicha la frase de la criatura, dentro de la conversación | «No», «se dice», «repite», «say», «can you say» |
+| **Acoger la lengua de casa** | Valida en gl o es y devuelve la idea en inglés | Pedir la traducción |
 
-La lista cerrada al terminar Hoy, en los dos perfiles, solo con los
-identificadores del mes piloto. El día se guarda sin hora.
+**Aula y casa no son lo mismo.** En el aula hay un grupo y una adulta: la
+espera es para el grupo, el recast se hace sobre la respuesta que llegue y la
+app no pide ni guarda nombres. En casa hay una criatura: las herramientas van
+tal cual, y en el cuento se lee con PEER (incitar, acoger, ampliar y retomar,
+sin pedir repetir) y CROWD (completar, recordar, abrir, qué/dónde y acercar),
+con una pregunta por lámina.
 
-Hecho cuando se marca, se cierra, se vuelve a abrir y se ve lo mismo, y los
-dos gates de privacidad siguen verdes con la clave nueva —o sin clave nueva,
-si cupo en las que ya existen.
+## 8. La casa
 
-Los lotes 2 y 3 comparten pantalla. El 4 y el 5 comparten el mes piloto. El
-1, el 6 y el 7 pueden ir juntos: son el espacio de formación. El 8 espera al
-4, porque no se marca un objetivo de una dosis que aún no existe. El
-catálogo de cien cuentos y las otras once unidades de vocabulario esperan a
-que estos ocho estén vistos: el molde ya queda en el lote 2 y en el lote 4.
+- **Hoy en casa**: el núcleo de la unidad, el reto de la semana (unos tres
+  minutos, en un momento del día) y el juego del día.
+- **La nota para las casas** cierra la asamblea con el reto de la semana. Es de
+  papel: se lee en alto y se copia, sin botón de compartir.
+- **Las guías de la familia** explican el modelo con ejemplos de casa.
+- **El tiempo** se ajusta al tramo de edad. Las indicaciones de
+  `assets/content/calendario/atencion.json` llegan hoy hasta los 36 meses; la
+  arquitectura las amplía a 3-6 años.
+- **El cuaderno viajero** de objetos reales se queda fuera de la app: es un
+  objeto físico, no un registro.
 
-## Qué queda fuera, a propósito
+## 9. La formación de la persona adulta
 
-- Grabar turnos, anecdotarios, una escala por criatura o el 80 % de las
-  órdenes. Ese porcentaje se explica en El modelo y no se calcula.
-- Una sesión de 45 minutos con tres adultos.
-- Tratar el inglés como asignatura, ficha o nota.
-- Sustituir las cuatro mil palabras por las treinta del tramo de 18 a 36
-  meses, mientras no haya un encargo distinto.
-- Fondos de lámina cargados, o una pregunta de examen en medio del juego.
-- Pedir a la criatura que repita, que traduzca o que conteste en inglés.
+- **Antes de entrar / Antes de empezar**: puerta de dos minutos, en cada
+  portal.
+- **El modelo**: un espacio en Eu (aula) y en Guías (casa), con tres partes:
+  1. cómo funciona: los apartados 2 a 8 de este documento, en lenguaje de aula
+     y de casa;
+  2. los objetivos del tramo, como texto que explica qué mirar;
+  3. qué no es un objetivo: una nota, un examen o que la criatura repita.
+- **Estrategias de aula**: siete fichas, las cinco que ya hay más el habla
+  paralela y la expansión, con el mismo molde (por qué, cómo, ejemplo, error
+  que evitar). La espera pasa a tres tiempos. El andamiaje en tres niveles
+  sigue siendo para las preguntas en gl/es del cuento de la semana; la tríada
+  es para el inglés del microcuento.
+- **Formación en el aula** pasa de seis pasos a las cuatro fases de la
+  asamblea, más las herramientas del apartado 7.
+
+## 10. Observación y registro
+
+- **De la criatura no se guarda nada.** «Qué observar» nombra lo que se puede
+  mirar (responde con el cuerpo, coge el objeto, se orienta al sonido, usa una
+  fórmula) y no se marca. Las rúbricas, las escalas, los recuentos de turnos y
+  los registros anecdóticos de los textos no entran.
+- **De la persona adulta**, si Frank lo decide: una lista cerrada de su propia
+  práctica (dije el núcleo con el objeto, esperé, hice el microcuento, copié la
+  nota, hice el reto). Se guarda el día sin hora y los identificadores. Una
+  clave nueva obliga, en el mismo cambio, a actualizar la política de
+  privacidad, el formulario de Seguridad de los datos de Play Console y los dos
+  gates de privacidad.
+- **Los premios** siguen siendo de la persona adulta.
+
+## 11. Reparto por pantallas
+
+Por camino de uso, en los tres modos.
+
+| Camino | Lee de | 1.º ciclo | 2.º ciclo | Casa |
+| --- | --- | --- | --- | --- |
+| Modo Aula → Hoy | unidad + banco del día | Núcleo con objeto, asamblea, cuento | Igual | — |
+| Modo Aula → asamblea | unidad (`ordenes`, `cancion`, `reactivar`) | 4 fases, órdenes del núcleo, espera visible | Igual, con fórmulas | — |
+| Modo Aula → Calendario | unidad | El día: núcleo, semana de la progresión y botón de la asamblea de **4 fases** | Igual | — |
+| Portal de familias → Hoy | unidad | — | — | Núcleo, reto de la semana, juego |
+| Explorar → Cuentos | cuentos + microcuento | — | — | El de la semana primero y el microcuento de la unidad |
+| Visor de cuento | cuento / microcuento | Microcuento desde 2-3 años | Microcuento de 3 o 4 láminas | PEER con una pregunta por lámina |
+| Eu → El modelo · Guías → El modelo | modelo | Sí | Sí | Sí |
+| Recursos → Estrategias | estrategias | 7 fichas | 7 fichas | — |
+| Recursos → Planificador | unidad | Área por su nombre oficial, centro, núcleo | Igual, con criterio contrastado | — |
+| Recursos → Inglés | registro léxico | Núcleo primero; banco del mes debajo | Igual, con fórmulas marcadas | Explorar → Palabras en inglés |
+| Dinámicas, Ciencia, Juegos de casa | su JSON + unidad | Sus frases inglesas citan el registro; espera y recast | Igual | Igual |
+| Calendario de casa | unidad | — | — | El día con el núcleo y el reto |
+
+## 12. Lo que no entra
+
+- Un área, una ficha, una nota o una evaluación de inglés.
+- Guardar nada de una criatura: nombres, turnos, escalas, porcentajes o
+  grabaciones.
+- Sesiones diarias de 45 minutos, tres adultos, marioneta como reclamo,
+  inmersión sin lengua de casa.
+- Pedir a la criatura que repita, traduzca o conteste en inglés.
+- Voz en directo, red o un metrónomo que suene.
+- Lenguaje clínico: diagnóstico, mutismo, intervención o silencio clínico.
+- Traducir la interfaz al inglés.
