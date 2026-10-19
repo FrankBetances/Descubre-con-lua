@@ -17,15 +17,15 @@ pendientes de mergear. Cada sesión que trabaje un módulo actualiza su fila:
 estado, fecha, evidencia (gate, captura o comando) y siguiente paso. Los
 estados están definidos en el apartado 3 del plan.
 
-Decididas por Frank: D4 (manda la asamblea) y D6 (los 40 microcuentos entran).
-Pendientes: D1, D2, D3, D5, D7, D8 y D9.
+Decididas por Frank: D3 (prohibido pedir repetir; las órdenes de 6.º con fórmula de turno se quedan), D4 (manda la asamblea) y D6 (los 40 microcuentos entran).
+Pendientes: D1, D2, D5, D7, D8 y D9.
 
 | Módulo | Estado | Fecha | Evidencia | Notas / siguiente paso |
 | --- | --- | --- | --- | --- |
 | M1.1 | Bloqueado | 19/10/2026 | — | El DOG no responde desde el entorno de trabajo (el proxy rechaza `xunta.gal`). Hace falta permitir el host o que Frank aporte los PDF |
 | M1.2 | Pendiente | 19/10/2026 | — |  |
 | M1.3 | Pendiente | 19/10/2026 | — |  |
-| M2.4 | En rama | 19/10/2026 | `tools/check_sin_repetir.py` en `tools/gates.sh`, verde en local sobre 151 ficheros; 24 casos probados a mano, los 24 bien; gates de voz (cobertura, corpus, niveles, sobrantes) verdes tras el workflow de voz (commit a5520652). Gates de Flutter y `xera_nomes` no corridos en local: no hay `dart` en el entorno; los corre el CI del PR | Cuatro textos corregidos (curriculo_50 3-4 enero, conto_021, historia 133, lámina escola_rut_123) y dos grabaciones en inglés regeneradas. Para Frank, fuera de este módulo: (1) 178 de las 205 láminas tienen `tprAccion.es` igual al gallego; no se ha tocado. (2) Cuatro órdenes de 6.º (abril, diciembre, marzo y junio) esperan que la criatura diga la fórmula; salen de su documento curricular. Una (abril) está en las excepciones del gate; las otras tres el gate no las detecta porque no dicen «say» ni «repite». Frank fija si D3 las alcanza. Siguiente: M1.2 |
+| M2.4 | En rama | 19/10/2026 | `tools/check_sin_repetir.py` en `tools/gates.sh`, verde en local sobre 151 ficheros; 24 casos probados a mano, los 24 bien; gates de voz (cobertura, corpus, niveles, sobrantes) verdes tras el workflow de voz (commit a5520652). Gates de Flutter y `xera_nomes` no corridos en local: no hay `dart` en el entorno; los corre el CI del PR | Cuatro textos corregidos (curriculo_50 3-4 enero, conto_021, historia 133, lámina escola_rut_123) y dos grabaciones en inglés regeneradas. Para Frank, fuera de este módulo: (1) 178 de las 205 láminas tenían `tprAccion.es` en gallego: Frank mandó corregirlas y están traducidas (el cambio es solo de texto: esa cadena no tiene voz). (2) Cuatro órdenes de 6.º (abril, diciembre, marzo y junio) esperan que la criatura diga la fórmula; salen de su documento curricular. Una (abril) está en las excepciones del gate; las otras tres el gate no las detecta porque no dicen «say» ni «repite». Frank decidió que se quedan. Siguiente: M1.2 |
 | M2.1 | Pendiente | 19/10/2026 | — | Usa la opción de trabajo de D2 |
 | M2.2 | Pendiente | 19/10/2026 | — |  |
 | M2.3 | Pendiente | 19/10/2026 | — |  |

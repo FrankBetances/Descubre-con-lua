@@ -87,6 +87,7 @@ documentos anteriores.
 | --- | --- | --- | --- |
 | D4 | Qué centro de interés manda | **La asamblea del mes.** El núcleo, los cuentos nuevos, los juegos y la casa siguen su centro de interés | M3.x, M5.x, M6.x |
 | D6 | Microcuentos | **Entran, y son esenciales.** Uno por unidad desde 2-3 años: 40 microcuentos y unas 140 láminas | O5 |
+| D3 | Pedir repetir | **Prohibido en gl, es y en**, vigilado por `tools/check_sin_repetir.py`. Las órdenes de 6.º que esperan que la criatura use una fórmula de turno (*Here you go*, *Your turn*) **se quedan**: no piden repetir un modelo | M2.4 |
 
 **Pendientes.** Se trabaja con la opción marcada mientras Frank no conteste. El
 módulo que la usa no se cierra sin la respuesta.
@@ -95,7 +96,6 @@ módulo que la usa no se cierra sin la respuesta.
 | --- | --- | --- | --- |
 | D1 | El banco de cinco palabras al día | Se queda como ampliación; el núcleo va delante | M3.10 |
 | D2 | Inmersión o lengua de casa | Translanguaging: trama en gl/es y frase de Lúa en inglés | M2.1 |
-| D3 | Pedir repetir | Prohibido en las tres lenguas | M2.4 |
 | D5 | La asamblea de seis pasos | Se retira; el calendario abre la de cuatro fases | M4.3 |
 | D7 | Lista de práctica de la persona adulta | No entra hasta que Frank la apruebe (añade una clave guardada) | M8.2 |
 | D8 | `docs/base/` en el sitio público | Sale de `docs/` a una carpeta que Pages no publica | M1.2 |

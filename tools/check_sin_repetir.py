@@ -142,8 +142,8 @@ EXCEPCIONES = [
      "The teacher describes an ecological shelter; children choose the motor "
      "response and say the matching chunk.",
      "Sale del documento curricular de Frank (6.º, fase transaccional): espera "
-     "que la criatura use la fórmula, no que repita un modelo. Si D3 alcanza "
-     "también esto, lo decide Frank."),
+     "que la criatura use la fórmula, no que repita un modelo. Frank decidió "
+     "el 19/10/2026 que estas órdenes se quedan (D3)."),
 ]
 
 def textos(valor, ruta):
