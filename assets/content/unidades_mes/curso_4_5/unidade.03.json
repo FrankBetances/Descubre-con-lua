@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.03",
+  "curso": "curso_4_5",
+  "orden": 3,
+  "mesCalendario": 11,
+  "asamblea": "asamblea.segundo_ciclo.novembro.5_infantil",
+  "centroInteres": {
+    "gl": "A viaxe da castaña ladeira abaixo",
+    "es": "El viaje de la castaña ladera abajo"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.marzo.s2.roll"
+    },
+    {
+      "ref": "3_4.novembro.s3.hedgehog"
+    },
+    {
+      "ref": "3_4.novembro.s2.chestnut"
+    },
+    {
+      "ref": "3_4.outubro.s4.dance"
+    },
+    {
+      "ref": "4_5.novembro.s3.curl-into-a-ball"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "4_5.novembro.s1.downhill"
+    },
+    {
+      "ref": "4_5.novembro.s1.steep"
+    },
+    {
+      "ref": "4_5.novembro.s4.bright-orange"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "3_4.novembro.s4.more-please"
+    },
+    {
+      "ref": "frase.formula.here-you-are"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.first-then",
+    "nota": {
+      "gl": "First… then…: dúas accións, unha detrás da outra.",
+      "es": "First… then…: dos acciones, una detrás de otra."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.novembro.5i.01",
+      "usa": [
+        "3_4.marzo.s2.roll",
+        "3_4.novembro.s2.chestnut",
+        "4_5.novembro.s1.downhill"
+      ]
+    },
+    {
+      "ref": "frase.cmd.novembro.5i.02",
+      "usa": [
+        "3_4.novembro.s3.hedgehog",
+        "4_5.novembro.s3.curl-into-a-ball"
+      ]
+    },
+    {
+      "ref": "frase.cmd.novembro.5i.03",
+      "usa": [
+        "3_4.outubro.s4.dance"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha colchoneta",
+      "es": "Una colchoneta"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Roda de lado cos brazos pegados ao corpo",
+      "es": "Rueda de lado con los brazos pegados al cuerpo"
+    },
+    {
+      "gl": "Pasa de rodar a facerse unha bóla seguindo «first… then…»",
+      "es": "Pasa de rodar a hacerse una bola siguiendo «first… then…»"
+    }
+  ],
+  "reactivar": [
+    "3_4.novembro.s2.squirrel"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

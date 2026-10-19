@@ -78,6 +78,7 @@ flutter:
     - assets/content/unidades_mes/curso_0_2/
     - assets/content/unidades_mes/curso_2_3/
     - assets/content/unidades_mes/curso_3_4/
+    - assets/content/unidades_mes/curso_4_5/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

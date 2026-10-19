@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.01",
+  "curso": "curso_4_5",
+  "orden": 1,
+  "mesCalendario": 9,
+  "asamblea": "asamblea.segundo_ciclo.setembro.5_infantil",
+  "centroInteres": {
+    "gl": "A narrativa da mochila escolar e o xogo de estatuas con freada motriz",
+    "es": "La narrativa de la mochila escolar y el juego de estatuas con frenada motriz"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.setembro.s2.backpack"
+    },
+    {
+      "ref": "3_4.decembro.s2.bell"
+    },
+    {
+      "ref": "3_4.febreiro.s3.bear"
+    },
+    {
+      "ref": "3_4.outubro.s1.freeze"
+    },
+    {
+      "ref": "3_4.setembro.s1.school"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "4_5.marzo.s4.heavy-bag"
+    },
+    {
+      "ref": "3_4.decembro.s3.sleepy"
+    },
+    {
+      "ref": "4_5.outubro.s1.motionless"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "3_4.setembro.s1.good-morning"
+    },
+    {
+      "ref": "4_5.setembro.s1.wait-your-turn-please"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.into",
+    "nota": {
+      "gl": "Into, out of: meter e sacar, cara a dentro e cara a fóra.",
+      "es": "Into, out of: meter y sacar, hacia dentro y hacia fuera."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.setembro.5i.01",
+      "usa": [
+        "3_4.febreiro.s3.bear",
+        "3_4.decembro.s3.sleepy",
+        "4_5.marzo.s4.heavy-bag"
+      ]
+    },
+    {
+      "ref": "frase.cmd.setembro.5i.02",
+      "usa": [
+        "3_4.decembro.s2.bell",
+        "3_4.outubro.s1.freeze",
+        "4_5.outubro.s1.motionless"
+      ]
+    },
+    {
+      "ref": "frase.cmd.setembro.5i.03",
+      "usa": [
+        "3_4.setembro.s2.backpack",
+        "frase.estructura.into"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Mochila escolar de lona natural",
+      "es": "Mochila escolar de lona natural"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Para coma unha estatua cando soa a campá",
+      "es": "Para como una estatua cuando suena la campana"
+    },
+    {
+      "gl": "Mete e saca as cousas da mochila seguindo a orde",
+      "es": "Mete y saca las cosas de la mochila siguiendo la orden"
+    },
+    {
+      "gl": "Agarda a súa quenda co «Wait your turn, please»",
+      "es": "Espera su turno con el «Wait your turn, please»"
+    }
+  ],
+  "reactivar": [],
+  "hogar": null,
+  "microcuento": null
+}

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.08",
+  "curso": "curso_4_5",
+  "orden": 8,
+  "mesCalendario": 4,
+  "asamblea": "asamblea.segundo_ciclo.abril.5_infantil",
+  "centroInteres": {
+    "gl": "O lobo esperta no bosque",
+    "es": "El lobo despierta en el bosque"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.febreiro.s2.sheep"
+    },
+    {
+      "ref": "3_4.novembro.s3.wolf"
+    },
+    {
+      "ref": "3_4.outubro.s4.tiptoe"
+    },
+    {
+      "ref": "3_4.outubro.s1.walk"
+    },
+    {
+      "ref": "3_4.decembro.s3.sleep"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.setembro.s3.calm"
+    },
+    {
+      "ref": "3_4.setembro.s4.hungry"
+    },
+    {
+      "ref": "4_5.outubro.s1.motionless"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "frase.formula.here-you-are"
+    },
+    {
+      "ref": "3_4.setembro.s3.thank-you"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.because",
+    "nota": {
+      "gl": "Because: a docente di a razón da orde; a criatura responde co corpo.",
+      "es": "Because: la docente dice la razón de la orden; la criatura responde con el cuerpo."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.abril.5i.01",
+      "usa": [
+        "3_4.outubro.s1.walk",
+        "3_4.febreiro.s2.sheep",
+        "3_4.setembro.s3.calm"
+      ]
+    },
+    {
+      "ref": "frase.cmd.abril.5i.02",
+      "usa": [
+        "3_4.setembro.s4.hungry",
+        "3_4.novembro.s3.wolf",
+        "4_5.outubro.s1.motionless"
+      ]
+    },
+    {
+      "ref": "frase.cmd.abril.5i.03",
+      "usa": [
+        "3_4.novembro.s3.wolf",
+        "3_4.decembro.s3.sleep",
+        "3_4.outubro.s4.tiptoe"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Sen material: o corpo",
+      "es": "Sin material: el cuerpo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Camiña tranquilo e espallado polo espazo",
+      "es": "Camina tranquilo y repartido por el espacio"
+    },
+    {
+      "gl": "Afástase de puntas sen facer ruído",
+      "es": "Se aleja de puntillas sin hacer ruido"
+    }
+  ],
+  "reactivar": [
+    "3_4.decembro.s3.sleep"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.02",
+  "curso": "curso_4_5",
+  "orden": 2,
+  "mesCalendario": 10,
+  "asamblea": "asamblea.segundo_ciclo.outubro.5_infantil",
+  "centroInteres": {
+    "gl": "O conto motor dos animais do bosque",
+    "es": "El cuento motor de los animales del bosque"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.novembro.s2.squirrel"
+    },
+    {
+      "ref": "3_4.novembro.s2.chestnut"
+    },
+    {
+      "ref": "3_4.novembro.s3.boar"
+    },
+    {
+      "ref": "3_4.novembro.s2.climb"
+    },
+    {
+      "ref": "3_4.novembro.s2.hide"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "4_5.outubro.s2.sly"
+    },
+    {
+      "ref": "4_5.outubro.s2.nimble-footed"
+    },
+    {
+      "ref": "4_5.outubro.s1.alert"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "2_3.setembro.s2.my-turn"
+    },
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.behind",
+    "nota": {
+      "gl": "Detrás: agocharse detrás dalgo, e saír.",
+      "es": "Detrás: esconderse detrás de algo, y salir."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.outubro.5i.01",
+      "usa": [
+        "3_4.novembro.s2.squirrel",
+        "3_4.novembro.s2.chestnut"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.5i.02",
+      "usa": [
+        "3_4.novembro.s3.boar",
+        "4_5.outubro.s1.alert"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.5i.03",
+      "usa": [
+        "3_4.novembro.s2.climb",
+        "3_4.novembro.s2.hide",
+        "frase.estructura.behind"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Castañas",
+      "es": "Castañas"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Salta curto cos pés xuntos e recolle as castañas",
+      "es": "Salta corto con los pies juntos y recoge las castañas"
+    },
+    {
+      "gl": "Conxélase na postura exacta ao oír «Freeze!»",
+      "es": "Se congela en la postura exacta al oír «Freeze!»"
+    }
+  ],
+  "reactivar": [
+    "3_4.outubro.s1.freeze"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

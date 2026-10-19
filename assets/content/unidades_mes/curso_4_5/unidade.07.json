@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.07",
+  "curso": "curso_4_5",
+  "orden": 7,
+  "mesCalendario": 3,
+  "asamblea": "asamblea.segundo_ciclo.marzo.5_infantil",
+  "centroInteres": {
+    "gl": "O voo polinizador das abellas",
+    "es": "El vuelo polinizador de las abejas"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.abril.s3.bee"
+    },
+    {
+      "ref": "3_4.febreiro.s4.fly"
+    },
+    {
+      "ref": "3_4.abril.s2.flower"
+    },
+    {
+      "ref": "3_4.abril.s3.land"
+    },
+    {
+      "ref": "3_4.decembro.s3.sleep"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.marzo.s1.red"
+    },
+    {
+      "ref": "4_5.marzo.s1.sweeter"
+    },
+    {
+      "ref": "3_4.decembro.s3.sleepy"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "3_4.marzo.s3.yes-please"
+    },
+    {
+      "ref": "3_4.marzo.s3.no-thank-you"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.on-under",
+    "nota": {
+      "gl": "Debaixo, enriba, dentro: co corpo antes que coa palabra.",
+      "es": "Debajo, encima, dentro: con el cuerpo antes que con la palabra."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.marzo.5i.01",
+      "usa": [
+        "3_4.febreiro.s4.fly",
+        "3_4.abril.s3.bee"
+      ]
+    },
+    {
+      "ref": "frase.cmd.marzo.5i.02",
+      "usa": [
+        "3_4.marzo.s1.red",
+        "3_4.abril.s2.flower",
+        "3_4.abril.s3.land"
+      ]
+    },
+    {
+      "ref": "frase.cmd.marzo.5i.03",
+      "usa": [
+        "3_4.decembro.s3.sleep",
+        "3_4.abril.s2.flower"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Marcas vermellas no chan",
+      "es": "Marcas rojas en el suelo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Busca a marca vermella e pousa de xeonllos, suave",
+      "es": "Busca la marca roja y se posa de rodillas, suave"
+    },
+    {
+      "gl": "Queda quieto na flor ata que o sol esperta",
+      "es": "Se queda quieto en la flor hasta que el sol despierta"
+    }
+  ],
+  "reactivar": [
+    "3_4.febreiro.s2.horse"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

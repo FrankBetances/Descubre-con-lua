@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.06",
+  "curso": "curso_4_5",
+  "orden": 6,
+  "mesCalendario": 2,
+  "asamblea": "asamblea.segundo_ciclo.febreiro.5_infantil",
+  "centroInteres": {
+    "gl": "A transformación cinestésica dos animais do monte",
+    "es": "La transformación cinestésica de los animales del monte"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.febreiro.s2.horse"
+    },
+    {
+      "ref": "3_4.febreiro.s2.gallop"
+    },
+    {
+      "ref": "3_4.novembro.s3.wolf"
+    },
+    {
+      "ref": "3_4.novembro.s3.fox"
+    },
+    {
+      "ref": "4_5.outubro.s2.sneak"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "4_5.outubro.s2.sly"
+    },
+    {
+      "ref": "4_5.febreiro.s1.mysterious"
+    },
+    {
+      "ref": "4_5.outubro.s1.motionless"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "4_5.febreiro.s3.whose-turn-is-it"
+    },
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.across",
+    "nota": {
+      "gl": "Across: dun lado ao outro do espazo, sen facer ruído.",
+      "es": "Across: de un lado al otro del espacio, sin hacer ruido."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.febreiro.5i.01",
+      "usa": [
+        "3_4.febreiro.s2.gallop",
+        "3_4.febreiro.s2.horse"
+      ]
+    },
+    {
+      "ref": "frase.cmd.febreiro.5i.02",
+      "usa": [
+        "3_4.novembro.s3.wolf",
+        "4_5.outubro.s1.motionless"
+      ]
+    },
+    {
+      "ref": "frase.cmd.febreiro.5i.03",
+      "usa": [
+        "4_5.outubro.s2.sneak",
+        "3_4.novembro.s3.fox",
+        "4_5.outubro.s2.sly"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Sen material: o corpo",
+      "es": "Sin material: el cuerpo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Cambia de galope a marcha silenciosa segundo o animal",
+      "es": "Cambia de galope a marcha silenciosa según el animal"
+    },
+    {
+      "gl": "Mantén a postura do animal ao oír «Freeze!»",
+      "es": "Mantiene la postura del animal al oír «Freeze!»"
+    }
+  ],
+  "reactivar": [
+    "3_4.xaneiro.s2.umbrella"
+  ],
+  "hogar": null,
+  "microcuento": null
+}
