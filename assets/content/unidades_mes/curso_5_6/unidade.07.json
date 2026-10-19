@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.07",
+  "curso": "curso_5_6",
+  "orden": 7,
+  "mesCalendario": 3,
+  "asamblea": "asamblea.segundo_ciclo.marzo.6_infantil",
+  "centroInteres": {
+    "gl": "A sementeira real en macetas biodegradables",
+    "es": "La siembra real en macetas biodegradables"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.novembro.s4.pot"
+    },
+    {
+      "ref": "3_4.abril.s2.seed"
+    },
+    {
+      "ref": "3_4.abril.s2.soil"
+    },
+    {
+      "ref": "3_4.novembro.s4.fill"
+    },
+    {
+      "ref": "5_6.maio.s4.water-the-plants"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.outubro.s1.big"
+    },
+    {
+      "ref": "3_4.outubro.s1.small"
+    },
+    {
+      "ref": "3_4.novembro.s1.brown"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "2_3.setembro.s2.here-you-go"
+    },
+    {
+      "ref": "3_4.setembro.s3.thank-you"
+    }
+  ],
+  "estructura": {
+    "ref": "4_5.xuno.s4.if-it-s-hot-we-play-with-water",
+    "nota": {
+      "gl": "If…: se pasa unha cousa, faise outra. A criatura escoita a condición e decide co corpo.",
+      "es": "If…: si pasa una cosa, se hace otra. La criatura escucha la condición y decide con el cuerpo."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.marzo.6i.01",
+      "usa": [
+        "3_4.novembro.s4.fill",
+        "3_4.novembro.s4.pot",
+        "3_4.abril.s2.seed",
+        "5_6.maio.s4.water-the-plants"
+      ]
+    },
+    {
+      "ref": "frase.cmd.marzo.6i.02",
+      "usa": [
+        "2_3.setembro.s2.here-you-go",
+        "3_4.abril.s2.soil"
+      ]
+    },
+    {
+      "ref": "frase.cmd.marzo.6i.03",
+      "usa": [
+        "3_4.abril.s2.seed",
+        "3_4.outubro.s1.big",
+        "3_4.novembro.s1.brown",
+        "3_4.novembro.s4.pot",
+        "4_5.xuno.s4.if-it-s-hot-we-play-with-water"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Testos biodegradables",
+      "es": "Macetas biodegradables"
+    },
+    {
+      "gl": "Terra e sementes",
+      "es": "Tierra y semillas"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Fai os tres pasos sen axuda: encher, sementar e regar",
+      "es": "Hace los tres pasos sin ayuda: llenar, sembrar y regar"
+    },
+    {
+      "gl": "Separa a semente grande da pequena segundo a orde",
+      "es": "Separa la semilla grande de la pequeña según la orden"
+    }
+  ],
+  "reactivar": [
+    "4_5.outubro.s1.statue"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

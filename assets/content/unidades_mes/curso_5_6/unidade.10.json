@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.10",
+  "curso": "curso_5_6",
+  "orden": 10,
+  "mesCalendario": 6,
+  "asamblea": "asamblea.segundo_ciclo.xuno.6_infantil",
+  "centroInteres": {
+    "gl": "A orientación mariña e a busca de recursos",
+    "es": "La orientación marina y la búsqueda de recursos"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.xuno.s3.shell"
+    },
+    {
+      "ref": "3_4.novembro.s2.basket"
+    },
+    {
+      "ref": "4_5.novembro.s1.steps"
+    },
+    {
+      "ref": "3_4.xuno.s1.sea"
+    },
+    {
+      "ref": "3_4.xuno.s3.look-a-shell"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.decembro.s1.white"
+    },
+    {
+      "ref": "3_4.marzo.s3.smooth"
+    },
+    {
+      "ref": "3_4.xuno.s1.blue"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "3_4.setembro.s3.thank-you"
+    },
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    }
+  ],
+  "estructura": {
+    "ref": "4_5.xuno.s4.if-it-s-hot-we-play-with-water",
+    "nota": {
+      "gl": "If…: se pasa unha cousa, faise outra. A criatura escoita a condición e decide co corpo.",
+      "es": "If…: si pasa una cosa, se hace otra. La criatura escucha la condición y decide con el cuerpo."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xuno.6i.01",
+      "usa": [
+        "4_5.novembro.s1.steps",
+        "3_4.decembro.s1.white",
+        "3_4.xuno.s3.shell"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xuno.6i.02",
+      "usa": [
+        "3_4.xuno.s3.shell",
+        "3_4.marzo.s3.smooth",
+        "3_4.xuno.s1.blue",
+        "3_4.novembro.s2.basket",
+        "4_5.xuno.s4.if-it-s-hot-we-play-with-water"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xuno.6i.03",
+      "usa": [
+        "3_4.setembro.s3.thank-you",
+        "3_4.setembro.s2.your-turn"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Cunchas",
+      "es": "Conchas"
+    },
+    {
+      "gl": "Dous cestos, un azul",
+      "es": "Dos cestos, uno azul"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Conta cinco pasos co corpo e colle a cuncha",
+      "es": "Cuenta cinco pasos con el cuerpo y coge la concha"
+    },
+    {
+      "gl": "Fai o intercambio enteiro: dar, agradecer e ceder a quenda",
+      "es": "Hace el intercambio entero: dar, agradecer y ceder el turno"
+    }
+  ],
+  "reactivar": [
+    "5_6.marzo.s1.pattern"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

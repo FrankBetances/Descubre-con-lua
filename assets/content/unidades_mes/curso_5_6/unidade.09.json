@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.09",
+  "curso": "curso_5_6",
+  "orden": 9,
+  "mesCalendario": 5,
+  "asamblea": "asamblea.segundo_ciclo.maio.6_infantil",
+  "centroInteres": {
+    "gl": "A creación de patróns rítmicos propios",
+    "es": "La creación de patrones rítmicos propios"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.outubro.s1.clap"
+    },
+    {
+      "ref": "3_4.outubro.s1.jump"
+    },
+    {
+      "ref": "3_4.abril.s1.tap-tap"
+    },
+    {
+      "ref": "5_6.marzo.s1.pattern"
+    },
+    {
+      "ref": "3_4.marzo.s2.circle"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "4_5.outubro.s4.rhythmic"
+    },
+    {
+      "ref": "4_5.outubro.s4.faster"
+    },
+    {
+      "ref": "4_5.outubro.s4.slower"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    },
+    {
+      "ref": "2_3.setembro.s2.here-you-go"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.first-then",
+    "nota": {
+      "gl": "First… then…: dúas ou tres accións en orde; a criatura móvese no orde que oe.",
+      "es": "First… then…: dos o tres acciones en orden; la criatura se mueve en el orden que oye."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.maio.6i.01",
+      "usa": [
+        "5_6.marzo.s1.pattern",
+        "3_4.outubro.s1.clap",
+        "3_4.outubro.s1.jump",
+        "3_4.abril.s1.tap-tap"
+      ]
+    },
+    {
+      "ref": "frase.cmd.maio.6i.02",
+      "usa": [
+        "5_6.marzo.s1.pattern"
+      ]
+    },
+    {
+      "ref": "frase.cmd.maio.6i.03",
+      "usa": [
+        "3_4.marzo.s2.circle",
+        "2_3.setembro.s2.here-you-go"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha clave de madeira",
+      "es": "Una clave de madera"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Inventa unha serie de tres movementos e faina igual cada vez",
+      "es": "Inventa una serie de tres movimientos y la hace igual cada vez"
+    },
+    {
+      "gl": "O grupo copia a súa serie sen axuda",
+      "es": "El grupo copia su serie sin ayuda"
+    }
+  ],
+  "reactivar": [
+    "3_4.novembro.s3.fox"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

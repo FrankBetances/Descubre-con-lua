@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.02",
+  "curso": "curso_5_6",
+  "orden": 2,
+  "mesCalendario": 10,
+  "asamblea": "asamblea.segundo_ciclo.outubro.6_infantil",
+  "centroInteres": {
+    "gl": "A clasificación activa con aros de vimbio",
+    "es": "La clasificación activa con aros de mimbre"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.novembro.s1.leaf"
+    },
+    {
+      "ref": "3_4.marzo.s2.hoop"
+    },
+    {
+      "ref": "3_4.decembro.s4.count"
+    },
+    {
+      "ref": "3_4.outubro.s1.jump"
+    },
+    {
+      "ref": "3_4.setembro.s1.friend"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.xuno.s1.rough"
+    },
+    {
+      "ref": "3_4.marzo.s3.smooth"
+    },
+    {
+      "ref": "3_4.novembro.s1.brown"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "frase.formula.here-you-are"
+    },
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.into",
+    "nota": {
+      "gl": "In, into: meter cada cousa no seu sitio segundo a orde.",
+      "es": "In, into: meter cada cosa en su sitio según la orden."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.outubro.6i.01",
+      "usa": [
+        "3_4.xuno.s1.rough",
+        "3_4.novembro.s1.leaf",
+        "3_4.novembro.s1.brown",
+        "3_4.marzo.s2.hoop",
+        "frase.estructura.into"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.6i.02",
+      "usa": [
+        "3_4.marzo.s3.smooth",
+        "3_4.novembro.s1.leaf",
+        "3_4.setembro.s1.friend"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.6i.03",
+      "usa": [
+        "3_4.decembro.s4.count",
+        "3_4.novembro.s1.leaf",
+        "3_4.outubro.s1.jump",
+        "3_4.marzo.s2.hoop"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Aros de vimbio",
+      "es": "Aros de mimbre"
+    },
+    {
+      "gl": "Follas ásperas e follas lisas",
+      "es": "Hojas ásperas y hojas lisas"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Distingue coa man a folla áspera da lisa",
+      "es": "Distingue con la mano la hoja áspera de la lisa"
+    },
+    {
+      "gl": "Conta tres follas co corpo antes de saltar",
+      "es": "Cuenta tres hojas con el cuerpo antes de saltar"
+    }
+  ],
+  "reactivar": [
+    "3_4.xaneiro.s1.coat"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

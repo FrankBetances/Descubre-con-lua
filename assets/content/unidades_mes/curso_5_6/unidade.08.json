@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.08",
+  "curso": "curso_5_6",
+  "orden": 8,
+  "mesCalendario": 4,
+  "asamblea": "asamblea.segundo_ciclo.abril.6_infantil",
+  "centroInteres": {
+    "gl": "A resolución pragmática dos refuxios",
+    "es": "La resolución pragmática de los refugios"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.novembro.s3.fox"
+    },
+    {
+      "ref": "3_4.novembro.s2.hide"
+    },
+    {
+      "ref": "3_4.febreiro.s3.snake"
+    },
+    {
+      "ref": "3_4.febreiro.s3.slither"
+    },
+    {
+      "ref": "3_4.abril.s3.crawl"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.febreiro.s3.green"
+    },
+    {
+      "ref": "3_4.marzo.s2.pointy"
+    },
+    {
+      "ref": "4_5.febreiro.s1.mysterious"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "2_3.setembro.s2.my-turn"
+    },
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.on-under",
+    "nota": {
+      "gl": "Under, on: debaixo, enriba. Co corpo, antes que coa palabra.",
+      "es": "Under, on: debajo, encima. Con el cuerpo, antes que con la palabra."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.abril.6i.01",
+      "usa": [
+        "3_4.novembro.s3.fox",
+        "3_4.novembro.s2.hide"
+      ]
+    },
+    {
+      "ref": "frase.cmd.abril.6i.02",
+      "usa": [
+        "frase.estructura.on-under",
+        "3_4.febreiro.s3.slither",
+        "3_4.febreiro.s3.snake"
+      ]
+    },
+    {
+      "ref": "frase.cmd.abril.6i.03",
+      "usa": [
+        "3_4.abril.s3.crawl",
+        "3_4.febreiro.s3.green"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Alfombras verde e azul",
+      "es": "Alfombras verde y azul"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Sinala cos cóbados o refuxio que elixe",
+      "es": "Señala con los codos el refugio que elige"
+    },
+    {
+      "gl": "Repta ata o pedregal e gatea á alfombra que lle toca",
+      "es": "Repta hasta el pedregal y gatea a la alfombra que le toca"
+    }
+  ],
+  "reactivar": [
+    "3_4.abril.s2.seed"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

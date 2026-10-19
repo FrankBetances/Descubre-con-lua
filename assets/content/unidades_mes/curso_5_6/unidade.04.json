@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.04",
+  "curso": "curso_5_6",
+  "orden": 4,
+  "mesCalendario": 12,
+  "asamblea": "asamblea.segundo_ciclo.decembro.6_infantil",
+  "centroInteres": {
+    "gl": "O circuíto cooperativo coa luz",
+    "es": "El circuito cooperativo con la luz"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.setembro.s1.hand-in-hand"
+    },
+    {
+      "ref": "4_5.xaneiro.s1.turn-left"
+    },
+    {
+      "ref": "3_4.decembro.s2.light"
+    },
+    {
+      "ref": "3_4.decembro.s2.candle"
+    },
+    {
+      "ref": "3_4.outubro.s1.walk"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.outubro.s3.slow"
+    },
+    {
+      "ref": "4_5.xaneiro.s1.left"
+    },
+    {
+      "ref": "4_5.decembro.s3.brightest"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "2_3.setembro.s2.here-you-go"
+    },
+    {
+      "ref": "4_5.decembro.s4.thank-you-so-much"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.across",
+    "nota": {
+      "gl": "Over, across: pasar por riba e dun lado ao outro.",
+      "es": "Over, across: pasar por encima y de un lado al otro."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.decembro.6i.01",
+      "usa": [
+        "3_4.outubro.s1.walk",
+        "3_4.outubro.s3.slow",
+        "3_4.setembro.s1.hand-in-hand"
+      ]
+    },
+    {
+      "ref": "frase.cmd.decembro.6i.02",
+      "usa": [
+        "4_5.xaneiro.s1.turn-left",
+        "4_5.xaneiro.s1.left",
+        "frase.estructura.across"
+      ]
+    },
+    {
+      "ref": "frase.cmd.decembro.6i.03",
+      "usa": [
+        "2_3.setembro.s2.here-you-go",
+        "3_4.decembro.s2.light",
+        "3_4.decembro.s2.candle"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha vela",
+      "es": "Una vela"
+    },
+    {
+      "gl": "Unha corda no chan",
+      "es": "Una cuerda en el suelo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Xira á esquerda sen soltar a man do compañeiro",
+      "es": "Gira a la izquierda sin soltar la mano del compañero"
+    },
+    {
+      "gl": "Pasa a luz á parella seguinte con «Here you go»",
+      "es": "Pasa la luz a la pareja siguiente con «Here you go»"
+    }
+  ],
+  "reactivar": [
+    "3_4.novembro.s2.chestnut"
+  ],
+  "hogar": null,
+  "microcuento": null
+}
