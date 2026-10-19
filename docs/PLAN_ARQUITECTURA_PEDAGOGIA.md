@@ -70,7 +70,7 @@ fuente del mes: las pantallas leen la unidad y no guardan contenido propio.
 
 | Campo | Qué es | Regla |
 | --- | --- | --- |
-| `centroInteres` | Un tema del mes, igual en aula y en casa | Uno solo. Lo comparten asamblea, cuentos, juegos y reto |
+| `centroInteres` | Un tema del mes, igual en aula y en casa | Uno solo: **el de la asamblea del mes**, que sale del documento curricular de Frank. Lo comparten el núcleo, los cuentos, los juegos y la casa |
 | `nucleo` | Unidades léxicas que se quedan todo el mes | Citadas por identificador del registro léxico (apartado 6). Tamaño por edad, abajo |
 | `formulas` | Fórmulas de turno y cortesía | Solo desde 3-4 años: *my turn*, *your turn*, *here you are*, *help me, please*, *thank you* y las de la unidad |
 | `estructura` | Una estructura del mes | Solo desde 4-5 años: *in / on / under*, *because…*, *first… then…* |
@@ -79,8 +79,8 @@ fuente del mes: las pantallas leen la unidad y no guardan contenido propio.
 | `contraste` | Un contraste de sonido para el oído de la adulta | Solo si la voz inglesa de la app (inglés americano) lo produce. Desde 18 meses |
 | `cancion` | Canción con pulso | El pulso sale de las marcas `*` de la letra y se dibuja |
 | `microcuento` | Cuento dialógico de la unidad | Desde 2 años (apartado 5) |
-| `retosCasa` | Un reto por semana, cuatro por unidad | Un momento del día, una frase del núcleo, qué hacer con las manos, qué no pedir |
-| `queObservar` | Qué puede mirar la adulta | Cuerpo, objeto, sonido y fórmula. Sin casilla, sin guardado |
+| `hogar` | La guía de la casa para ese mes: cuatro retos semanales, lectura del microcuento, juego, qué observar y reactivación | Ver el apartado 8.3 |
+| `queObservar` | Qué puede mirar la adulta en el aula | Cuerpo, objeto, sonido y fórmula. Sin casilla, sin guardado |
 | `reactivar` | Núcleos de unidades anteriores que vuelven | El del mes anterior, de forma incidental, en la fase de calma y en un reto |
 
 ### Tamaño del núcleo por edad
@@ -203,23 +203,111 @@ tal cual, y en el cuento se lee con PEER (incitar, acoger, ampliar y retomar,
 sin pedir repetir) y CROWD (completar, recordar, abrir, qué/dónde y acercar),
 con una pregunta por lámina.
 
-## 8. La casa
+## 8. Indicaciones pedagógicas para el hogar
 
-- **Hoy en casa**: el núcleo de la unidad, el reto de la semana (unos tres
-  minutos, en un momento del día) y el juego del día.
-- **La nota para las casas** cierra la asamblea con el reto de la semana. Es de
-  papel: se lee en alto y se copia, sin botón de compartir.
-- **Las guías de la familia** explican el modelo con ejemplos de casa.
-- **El tiempo** se ajusta al tramo de edad. Las indicaciones de
-  `assets/content/calendario/atencion.json` llegan hoy hasta los 36 meses; la
-  arquitectura las amplía a 3-6 años.
+La casa no es una versión reducida del aula. Allí hay **una persona adulta y
+una criatura**, sin grupo y sin horario lectivo, y las herramientas del
+apartado 7 se aplican tal cual. Las indicaciones para el hogar son una capa
+propia de la arquitectura, con tres niveles. Cada nivel vive en su JSON, en
+gallego y en castellano, y ninguno se escribe en un widget.
+
+### 8.1 La guía estable: lo que no cambia en todo el trayecto
+
+Fichero: `assets/content/hogar/guia_hogar.json`. Reúne y sustituye lo que hoy
+está repartido entre `formacion/formacion.familia.json`, las reglas de
+`calendario/atencion.json` y la tarjeta de recast de Academy.
+
+1. **La app es para ti, no para la criatura.** Escuchas la frase, la aprendes y
+   la dices tú, con tu cara y tu gesto. El audio no se le pone a la criatura.
+2. **La lengua de casa es la base.** Sea gallego, castellano u otra, la casa
+   sigue hablando su lengua. El inglés son unos minutos, nunca sustituye a
+   nada.
+3. **Una lengua, una rutina.** El inglés va ligado a un momento fijo del día
+   (el baño, la merienda, el paseo), siempre el mismo, para que la criatura
+   sepa cuándo llega.
+4. **Pocos minutos, el mismo momento.** Entre 2 y 8 minutos según la edad
+   (8.2). Mejor tres minutos cada día que media hora el sábado.
+5. **Cara a cara y cerca.** A su altura, de frente, con poco ruido de fondo y
+   sin pantallas encendidas alrededor.
+6. **Primero entender.** Que responda con el cuerpo (mirar, señalar, hacer el
+   gesto, coger el objeto) ya es la respuesta.
+7. **Nunca preguntes «¿cómo se dice?»**, no pidas que repita ni que traduzca, y
+   no hagas listas de palabras.
+8. **Si se equivoca o contesta en la lengua de casa**, acoges lo que dijo y le
+   devuelves la frase bien dicha, sin señalar el error.
+9. **Las cuatro herramientas en casa**: habla paralela, espera en tres tiempos,
+   expansión y recast. Cada una con un ejemplo doméstico.
+10. **No es una evaluación.** La app no guarda nada de tu criatura ni hace
+    informes. Lo que cuenta la escuela de su progreso lo cuenta la escuela.
+
+### 8.2 La guía por edad: cinco cursos
+
+Fichero: `assets/content/hogar/hogar_por_edad.json`. Amplía
+`calendario/atencion.json`, que hoy tiene cinco tramos hasta los 36 meses y
+ninguno de 3 a 6 años.
+
+| Edad | Minutos | Herramienta principal | Qué se le pide | Lectura |
+| --- | --- | --- | --- | --- |
+| 0-6 m | 2 | Parentese y habla paralela con contacto | Nada: mirar y sentir | Mirar una lámina juntos, sin preguntas |
+| 6-12 m | 3 | Habla paralela, juegos de cucú y turnos de sonido | Nada: sonreír, balbucear | Igual |
+| 12-18 m | 5 | Habla paralela y espera | Mirar y señalar, si sale | Una lámina, señalar |
+| 18-24 m | 6 | Espera, órdenes con gesto y objeto | Hacer el gesto, coger el objeto | Microcuento señalando |
+| 24-36 m | 8 | Órdenes, expansión y recast | Gesto, objeto, alguna palabra si sale | Microcuento de 3 láminas, PEER con una pregunta por lámina |
+| 3-4 a | 8 | Fórmulas de turno en el juego (*my turn*, *here you are*) | Turnarse, dar y recibir | Microcuento de 3 láminas, PEER y CROWD: completar y qué/dónde |
+| 4-5 a | 8-10 | Expansión, *because* en el juego | Colocar *in / on / under*, contar qué pasa | Microcuento de 4 láminas, CROWD: recordar y abrir |
+| 5-6 a | 10 | Conversación, rimas y juegos de sonidos | Jugar con la rima, contar con sus palabras | Microcuento de 4 láminas, CROWD: las cinco, una por lámina |
+
+Los minutos de 0 a 36 meses son los que ya tiene `atencion.json`; los de 3 a 6
+años son una propuesta de esta arquitectura. Para cada fila, el JSON trae
+además el momento del día recomendado, qué hacer, qué evitar y un ejemplo con
+una frase inglesa del registro.
+
+### 8.3 La guía de cada unidad: los 50 meses
+
+Va dentro de la unidad (apartado 3), en un bloque `hogar`, para que la casa
+cuente siempre lo mismo que el aula ese mes.
+
+| Campo | Qué es |
+| --- | --- |
+| `retosCasa` | **Cuatro retos, uno por semana**, siguiendo la progresión: descubrir, practicar, combinar y consolidar. Cada reto lleva el momento del día, una frase del núcleo, qué hacer con las manos, el objeto de casa, la espera, qué no pedir y un recast para tres respuestas (silencio, lengua de casa, una palabra) |
+| `lecturaCasa` | El microcuento de la unidad leído en casa: **una sola pregunta por lámina**, del tipo PEER o CROWD que toque por edad, con su ayuda en gl y es |
+| `juegoCasa` | Un juego del mes, citado de los juegos de casa o del apartado de casa de STEAM. Si ninguno encaja con el centro de interés o la edad, se lista y no se fuerza |
+| `queObservarCasa` | Dos o tres cosas que mirar (se gira al oír la frase, hace el gesto, coge el objeto, usa la frase en el juego). Sin casilla |
+| `reactivarCasa` | Una línea para volver a la frase del mes anterior en otro momento del día |
+
+Los retos del **2.º ciclo** parten de las micro-rutinas que ya traen las
+asambleas (`microRutinaHogar`, con su momento, su tiempo y sus pautas de
+recast): esa es la del primer reto, y las otras tres siguen su progresión. Los
+del **1.º ciclo** no tienen todavía ninguna rutina de casa por mes y se
+escriben enteros.
+
+### 8.4 Dónde lo ve la familia
+
+| Camino | Qué ve |
+| --- | --- |
+| Portal de familias → Hoy | El reto de esta semana, la frase con su audio (para la adulta), el núcleo del mes y el juego |
+| Portal de familias → Calendario | Cada día: el reto de la semana y el momento del día |
+| Explorar → Cuentos | El microcuento de la unidad, en modo casa: una pregunta por lámina |
+| Explorar → Palabras en inglés | El núcleo del mes primero; el banco debajo |
+| Guías → Antes de empezar | La versión de dos minutos de la guía estable |
+| Guías → El modelo | La guía estable entera, la guía de su edad y los porqués |
+| Guías → lecturas de Academy | Las cápsulas actuales, enlazadas al punto de la guía que desarrollan |
+
+### 8.5 El puente entre aula y casa
+
+- **La nota para las casas** cierra la asamblea con el reto de la semana. Es el
+  **mismo identificador** que enseña Hoy en casa. Es de papel: se lee en alto y
+  se copia, sin botón de compartir.
+- La frase del reto es una frase que la criatura ya ha oído esa semana en la
+  asamblea.
 - **El cuaderno viajero** de objetos reales se queda fuera de la app: es un
-  objeto físico, no un registro.
+  objeto físico y, si la escuela lo usa, es cosa suya. La app no lo registra.
 
 ## 9. La formación de la persona adulta
 
 - **Antes de entrar / Antes de empezar**: puerta de dos minutos, en cada
-  portal.
+  portal. La de la familia es el resumen de la guía estable del hogar
+  (apartado 8.1).
 - **El modelo**: un espacio en Eu (aula) y en Guías (casa), con tres partes:
   1. cómo funciona: los apartados 2 a 8 de este documento, en lenguaje de aula
      y de casa;
@@ -256,15 +344,16 @@ Por camino de uso, en los tres modos.
 | Modo Aula → Hoy | unidad + banco del día | Núcleo con objeto, asamblea, cuento | Igual | — |
 | Modo Aula → asamblea | unidad (`ordenes`, `cancion`, `reactivar`) | 4 fases, órdenes del núcleo, espera visible | Igual, con fórmulas | — |
 | Modo Aula → Calendario | unidad | El día: núcleo, semana de la progresión y botón de la asamblea de **4 fases** | Igual | — |
-| Portal de familias → Hoy | unidad | — | — | Núcleo, reto de la semana, juego |
-| Explorar → Cuentos | cuentos + microcuento | — | — | El de la semana primero y el microcuento de la unidad |
+| Portal de familias → Hoy | unidad (`hogar`) + guía por edad | — | — | Reto de la semana, frase con audio para la adulta, núcleo, juego |
+| Guías → El modelo | guía estable + guía por edad | — | — | La guía entera de la casa (apartado 8) |
+| Explorar → Cuentos | cuentos + microcuento (`lecturaCasa`) | — | — | El de la semana primero y el microcuento de la unidad, una pregunta por lámina |
 | Visor de cuento | cuento / microcuento | Microcuento desde 2-3 años | Microcuento de 3 o 4 láminas | PEER con una pregunta por lámina |
 | Eu → El modelo · Guías → El modelo | modelo | Sí | Sí | Sí |
 | Recursos → Estrategias | estrategias | 7 fichas | 7 fichas | — |
 | Recursos → Planificador | unidad | Área por su nombre oficial, centro, núcleo | Igual, con criterio contrastado | — |
 | Recursos → Inglés | registro léxico | Núcleo primero; banco del mes debajo | Igual, con fórmulas marcadas | Explorar → Palabras en inglés |
 | Dinámicas, Ciencia, Juegos de casa | su JSON + unidad | Sus frases inglesas citan el registro; espera y recast | Igual | Igual |
-| Calendario de casa | unidad | — | — | El día con el núcleo y el reto |
+| Calendario de casa | unidad (`hogar`) | — | — | El día con el reto de la semana y su momento |
 
 ## 12. Lo que no entra
 

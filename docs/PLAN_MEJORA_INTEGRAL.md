@@ -70,8 +70,20 @@ expansión. La espera no distingue sus tiempos. El visor del cuento no dibuja
 **7. No hay microcuento dialógico.** Falta la lámina corta con frase de Lúa,
 tríada en inglés y guion de recast.
 
-**8. Casa de 3 a 6 años.** Las indicaciones de tiempo por edad
-(`calendario/atencion.json`) llegan hasta los 36 meses.
+**8. Las indicaciones para el hogar están repartidas en ocho sitios que no se
+hablan:**
+- `formacion/formacion.familia.json` (seis pasos);
+- seis cápsulas de Academy;
+- `calendario/atencion.json` (tres reglas y cinco tramos, **solo hasta los 36
+  meses**);
+- las micro-rutinas de casa dentro de las 30 asambleas del **2.º ciclo**;
+- `actividadHogar` y `rutinaRecomendadaHogar` de `curriculo_50_meses.json`;
+- `actividadHogar` de `meses.json`;
+- diez juegos de casa con franjas de edad propias;
+- el apartado de casa de STEAM.
+
+**El 1.º ciclo no tiene ninguna rutina de casa por mes**, y ninguna pieza dice
+cómo se lee un cuento en casa lámina a lámina.
 
 **9. Identificadores.** El banco de 3-4 usa claves sin prefijo; los otros
 cuatro cursos usan `<curso>.<mes>.s<semana>.<clave>`.
@@ -82,17 +94,22 @@ proponen contrastes que esa voz no produce.
 
 ## 2. Decisiones que toma Frank
 
-Cada una dice con qué opción se trabaja mientras no conteste. Todas son
-reversibles hasta la fase en que se usan.
+**Decididas por Frank:**
+
+| # | Decisión | Qué se hace | Fase |
+| --- | --- | --- | --- |
+| D4 | Qué centro de interés manda cuando la asamblea y el banco no coinciden | **Manda la asamblea.** El núcleo, los cuentos, los juegos y la casa siguen al centro de interés de la asamblea del mes | 2 |
+| D6 | Microcuentos | **Entran, y son esenciales.** Uno por unidad desde 2-3 años: 40 microcuentos y unas 140 láminas | 5 |
+
+**Pendientes.** Cada una dice con qué opción se trabaja mientras Frank no
+conteste, y es reversible hasta la fase en que se usa.
 
 | # | Decisión | Opción de trabajo | Fase |
 | --- | --- | --- | --- |
 | D1 | El banco de cinco palabras al día | Se queda como ampliación; el núcleo va delante | 2 |
 | D2 | Inmersión o lengua de casa | Translanguaging: trama en gl/es y frase de Lúa en inglés | 1 |
 | D3 | Pedir repetir | Prohibido en las tres lenguas | 1 |
-| D4 | Qué centro de interés manda cuando la asamblea (*Planificación* / *Diseño Curricular*) y el banco (*Modelo de Adquisición*) no coinciden | El de la asamblea, por ser el documento curricular; el banco del mes se reordena por semanas sin borrar palabras | 2 |
 | D5 | La asamblea de seis pasos y sus unidades | Se retira; el calendario abre la de cuatro fases | 4 |
-| D6 | Microcuentos | Uno por unidad desde 2-3 años: 40 microcuentos y unas 140 láminas | 5 |
 | D7 | Lista de práctica de la persona adulta | No entra hasta que Frank la apruebe, porque añade una clave guardada | 8 |
 | D8 | `docs/base/` en el sitio público | Sale de `docs/` a una carpeta que Pages no publica | 0 |
 
@@ -161,7 +178,11 @@ las siete fichas se ven y el gate está en `tools/gates.sh`.
 Un JSON por unidad con los campos del apartado 3 de la arquitectura, para los
 **50 meses**:
 
-- centro de interés único (según D4);
+- centro de interés: el de la asamblea del mes (D4). Donde el banco de ese mes
+  cuenta otro tema, sus semanas se realinean al centro de la asamblea. Se
+  pueden mover palabras entre meses del mismo curso, pero no se borra
+  ninguna, y el gate del banco (800 por curso, ninguna nueva dos veces) sigue
+  verde;
 - núcleo citado por identificador, con el tamaño de su edad;
 - fórmulas y estructura donde toquen;
 - órdenes hechas con el núcleo;
@@ -172,7 +193,8 @@ Un JSON por unidad con los campos del apartado 3 de la arquitectura, para los
 - qué observar;
 - reactivación del núcleo del mes anterior.
 
-Volumen: 50 núcleos, 50 juegos de órdenes y 200 retos de casa. Las expresiones
+Volumen: 50 núcleos y 50 juegos de órdenes. Los retos de casa se escriben en
+la fase 6. Las expresiones
 que falten en el banco se añaden al banco con gesto y audio. Si un mes no tiene
 candidatas que cumplan las reglas, se lista con el motivo y lo decide Frank. No
 se inventa un identificador.
@@ -211,7 +233,8 @@ app ningún camino que abra la de seis pasos.
 
 - **Cuento de la semana**: espera visible con los segundos del dato. No gana
   preguntas.
-- **Microcuentos** (según D6): uno por unidad desde 2-3 años, **40 en total**:
+- **Microcuentos** (D6, decidido): uno por unidad desde 2-3 años, **40 en
+  total**. Son la pieza central del inglés de cada unidad, no un extra:
   - 3 láminas en 2-3 y 3-4 años, 4 en 4-5 y 5-6, unas 140 láminas;
   - trama en gl y es, frase de Lúa, tríada, espera y guion de recast por cinco
     respuestas;
@@ -226,17 +249,53 @@ Sin lámina dibujada, el microcuento no entra en la lista: se dice cuál falta.
 su unidad, en los dos portales y las dos lenguas, o figura en la lista de
 pendientes con su motivo.
 
-### Fase 6 · La casa
+### Fase 6 · Las indicaciones pedagógicas para el hogar
 
-- **Hoy en casa** con núcleo, reto de la semana y juego.
-- **Guías de la familia** con el modelo y ejemplos de casa, y PEER y CROWD con
-  una pregunta por lámina.
-- **Indicaciones de tiempo** ampliadas a 3-6 años.
-- **Juegos de casa** con sus frases inglesas citando el registro, espera y
-  recast.
+Los tres niveles del apartado 8 de la arquitectura, completos.
 
-**Hecho cuando** los cinco cursos tienen su Hoy de casa leído de la unidad y
-sus indicaciones de tiempo.
+**1. La guía estable** (`assets/content/hogar/guia_hogar.json`).
+- Diez principios, con las cuatro herramientas en versión de casa y un ejemplo
+  doméstico de cada una.
+- Absorbe `formacion.familia.json`, las tres reglas de `atencion.json` y la
+  tarjeta de recast de Academy. «Antes de empezar» pasa a ser su resumen de dos
+  minutos.
+
+**2. La guía por edad** (`assets/content/hogar/hogar_por_edad.json`).
+- Ocho filas: los cinco tramos de 0 a 36 meses que ya existen y tres nuevas (3-4,
+  4-5 y 5-6 años).
+- Cada fila: minutos, momento del día, herramienta principal, qué se le pide,
+  cómo se lee y qué evitar, con un ejemplo citado del registro.
+
+**3. La guía de cada unidad** (bloque `hogar` de las 50 unidades).
+- **200 retos de casa** (50 unidades × 4 semanas):
+  - en el 2.º ciclo, el primer reto de cada mes sale de la micro-rutina que ya
+    trae su asamblea (30) y los otros tres siguen la progresión (90);
+  - en el 1.º ciclo se escriben los 80, porque no hay ninguna rutina previa.
+- **40 lecturas en casa** del microcuento, con una pregunta por lámina.
+- **50 juegos del mes**, citados de los juegos de casa o de STEAM. Los meses
+  sin juego que encaje se listan.
+- **50 «qué observar en casa»** y 50 líneas de reactivación.
+- `actividadHogar` de `curriculo_50_meses.json` y de `meses.json` se vuelcan al
+  bloque `hogar` y dejan de ser una fuente aparte.
+- Cada frase inglesa cita el registro y lleva su audio para que la adulta la
+  oiga antes.
+
+**Pantallas** (apartado 8.4 de la arquitectura):
+- Hoy y Calendario del portal de familias;
+- Explorar → Cuentos y Palabras en inglés;
+- Guías → Antes de empezar, El modelo y las lecturas de Academy enlazadas.
+
+**Puente aula-casa:** la nota de cierre de la asamblea y Hoy en casa muestran el
+mismo reto, con el mismo identificador.
+
+**Gate nuevo:** falla si una unidad no tiene sus cuatro retos, si un reto cita
+una frase que no está en el registro o no tiene audio, o si un reto o una guía
+pide repetir, traducir o «decir cómo se dice».
+
+**Hecho cuando** los cinco cursos tienen su guía por edad, las 50 unidades
+tienen sus cuatro retos, su lectura (desde 2-3 años), su juego o su motivo de
+falta y su qué observar, en gl y es, y una familia llega a todo ello desde Hoy
+y desde Guías.
 
 ### Fase 7 · El inglés de recursos y el resto de la jornada
 
@@ -273,6 +332,8 @@ página.
 
 - La 0 va antes que todo.
 - La 1 y la 2 van antes de la 3, la 4, la 5 y la 6.
+- Las lecturas en casa de la 6 esperan a los microcuentos de la 5; la guía
+  estable y la guía por edad, no.
 - La 4 retira la asamblea de seis pasos solo cuando la 3 ya da el calendario
   único.
 - La 8 va al final.
