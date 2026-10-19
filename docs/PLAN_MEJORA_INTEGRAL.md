@@ -288,7 +288,7 @@ venga después)
 **M3.1 · Esquema de unidad y su gate**
 - **Dep.:** M1.3.
 - **Alcance:**
-  - formato de `assets/content/unidad/<curso>/<mes>.json`, con los campos del
+  - formato de `assets/content/unidades_mes/<curso>/unidade.NN.json` (NN, el mes del curso), con los campos del
     apartado 3 de la arquitectura;
   - modelo Dart y cargador;
   - `tools/check_unidades.py`, que comprueba que el esquema se cumple, que

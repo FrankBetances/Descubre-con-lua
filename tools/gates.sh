@@ -90,6 +90,13 @@ run_gate "no system emoji used as iconography" python3 tools/check_no_emoji.py
 # say…?», «Say: …»), y un «repite» escrito en una consigna no lo ve ningún test.
 run_gate "nothing asks the child to repeat, translate or say how it's said" \
   python3 tools/check_sin_repetir.py
+# Nace de la arquitectura docente (M3.1): una unidad por curso y mes como
+# única fuente del mes. Hoy cada pieza del mes contaba un tema distinto y solo
+# 13 de las 133 órdenes estaban en el banco. Esto comprueba que lo que una
+# unidad cita existe, que su centro es el de la asamblea (D4) y que el núcleo
+# tiene el tamaño de su edad. Pasa a --estricto cuando estén las 50.
+run_gate "every month unit cites what exists and follows its assembly" \
+  python3 tools/check_unidades.py
 # Nace del vocabulario inglés, que llegó del proyecto de origen con la
 # categoría gramatical y la frecuencia INVENTADAS y sin una sola frase. Ahora
 # las 3.995 traen categoría, frase entera y frecuencia medida, y esto comprueba

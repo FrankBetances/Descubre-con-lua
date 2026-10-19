@@ -13,7 +13,7 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 El plan está en `docs/PLAN_MEJORA_INTEGRAL.md` y la arquitectura de destino en
 `docs/PLAN_ARQUITECTURA_PEDAGOGIA.md`, los dos en la rama `pedagogia`,
-pendientes de mergear. Cada sesión que trabaje un módulo actualiza su fila:
+pendientes de mergear. Los módulos se apilan en esa misma rama hasta que Frank mergee el PR. Cada sesión que trabaje un módulo actualiza su fila:
 estado, fecha, evidencia (gate, captura o comando) y siguiente paso. Los
 estados están definidos en el apartado 3 del plan.
 
@@ -29,7 +29,7 @@ Pendientes: D1, D2, D5, D7, D8 y D9.
 | M2.1 | Pendiente | 19/10/2026 | — | Usa la opción de trabajo de D2 |
 | M2.2 | Pendiente | 19/10/2026 | — |  |
 | M2.3 | Pendiente | 19/10/2026 | — |  |
-| M3.1 | Pendiente | 19/10/2026 | — |  |
+| M3.1 | En rama | 19/10/2026 | `tools/check_unidades.py` en `tools/gates.sh` (no estricto: hoy 0 de 50). Probado sembrando una unidad válida (pasa) y otra con ocho fallos (los ocho detectados, tras añadir la comprobación de reactivación). Modelo `UnidadeDoMes` y `ContentAssetLoader.loadUnidadeDoMes`, con cuatro tests en `test/data/unidade_do_mes_test.dart`. `dart format` sin cambios en 222 ficheros. `flutter analyze` y tests: los corre el CI. La carpeta es `unidades_mes/`, no `unidad/`: `unidades/` ya es la asamblea vieja de seis pasos | `pubspec.yaml` registra cada carpeta de curso cuando tenga su primera unidad (M3.4…); una carpeta de assets vacía rompe la compilación. Siguiente: M3.2 |
 | M3.2 | Pendiente | 19/10/2026 | — |  |
 | M3.3 | Pendiente | 19/10/2026 | — | Usa la opción de trabajo de D9 |
 | M3.4 | Pendiente | 19/10/2026 | — | Curso 0-2 |
