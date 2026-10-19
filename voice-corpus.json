@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-19T15:54:46Z",
+ "generatedAt": "2026-10-19T20:46:58Z",
  "entries": 22910,
  "byStyle": {
   "slow": 6002,
@@ -164875,15 +164875,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_109a1c66_34",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Lixeiro cóxegas nos dedos dos pés.",
-   "speech": "Lixeiro cóxegas nos dedos dos pés.",
-   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/3/cmd/cmd.outubro.0_2.03/accionFisica",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_109b196b_74",
    "lang": "gl",
    "style": "tutor",
@@ -201541,6 +201532,15 @@
    "speech": "Landra",
    "source": "tpr.3_4.novembro/s2/3_4.novembro.s2.acorn/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_dc46a959_35",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cóxegas lixeiras nos dedos dos pés.",
+   "speech": "Cóxegas lixeiras nos dedos dos pés.",
+   "source": "asamblea.primeiro_ciclo.outubro.0_2_anos/fase/3/cmd/cmd.outubro.0_2.03/accionFisica",
+   "pack": false
   },
   {
    "id": "gl_tutor_dc7e4365_15",
