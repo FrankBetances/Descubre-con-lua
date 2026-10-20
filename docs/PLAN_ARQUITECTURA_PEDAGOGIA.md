@@ -373,8 +373,11 @@ Por camino de uso, en los tres modos.
 - Un área, una ficha, una nota o una evaluación de inglés.
 - Guardar nada de una criatura: nombres, turnos, escalas, porcentajes o
   grabaciones.
-- Sesiones diarias de 45 minutos, tres adultos, marioneta como reclamo,
-  inmersión sin lengua de casa.
+- ~~Sesiones diarias de 45 minutos, tres adultos, marioneta como reclamo,
+  inmersión sin lengua de casa.~~ Retirado el 20/10/2026: esta exclusión la
+  escribió Claude Code sin preguntar a Frank (R1 del `CLAUDE.md`). La sesión
+  de 45 minutos entra (`docs/PLAN_DE_TRABAJO.md`, F3); los tres adultos, la
+  marioneta y la inmersión son preguntas a Frank (P2-P4 de ese plan).
 - Pedir a la criatura que repita, traduzca o conteste en inglés.
 - Voz en directo, red o un metrónomo que suene.
 - Lenguaje clínico: diagnóstico, mutismo, intervención o silencio clínico.
