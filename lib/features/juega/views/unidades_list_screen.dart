@@ -10,6 +10,8 @@ import '../../calendario/widgets/asemblea_do_dia.dart';
 import '../widgets/aula_ciclo_panel.dart';
 import '../widgets/aula_primeiro_ciclo_panel.dart';
 import '../widgets/circulo_do_dia.dart';
+import '../../cuentos/views/microcuento_screen.dart';
+import '../../cuentos/widgets/boton_microcuento.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../widgets/aula_segundo_ciclo_panel.dart';
@@ -299,6 +301,16 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
   ///
   /// Debajo, las palabras en inglés de ese mismo día y de ese curso: la docente
   /// trabaja aquí, y aquí tienen que estar las cinco palabras que tocan hoy.
+  Widget _microcuento(String cursoId, int mesCalendario) => BotonMicrocuento(
+        repository: widget.repository,
+        cursoId: cursoId,
+        mesCalendario: mesCalendario,
+        modo: ModoMicrocuento.aula,
+        language: _language,
+        onLanguageChanged: _onToggleLanguage,
+        audioService: widget.audioService,
+      );
+
   Widget _circuloDoDia(String cursoId, int mes, int semana, int dia) {
     final circulo = CirculoDoDia(
       onLanguageChanged: _onToggleLanguage,
@@ -345,6 +357,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       calendario: _calendarioDoAula,
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,
+      microcuento: _microcuento,
       onComezar: (tramo, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaPrimeiroCicloSync(mes, tramo);
@@ -402,6 +415,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       calendario: _calendarioDoAula,
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,
+      microcuento: _microcuento,
       onComezar: (nivel, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaByMesYNivelSync(mes, nivel);

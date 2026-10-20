@@ -48,6 +48,10 @@ class AulaPrimeiroCicloPanel extends StatefulWidget {
   final void Function(TramoPrimeiroCiclo tramo, int mes, DiaDeProgresion? dia)
       onComezar;
 
+  /// La puerta al microcuento del mes en modo aula (M5.8): curso y mes del
+  /// calendario. La construye la pantalla, que tiene el repositorio.
+  final Widget Function(String cursoId, int mesCalendario)? microcuento;
+
   const AulaPrimeiroCicloPanel({
     super.key,
     required this.asambleas,
@@ -58,6 +62,7 @@ class AulaPrimeiroCicloPanel extends StatefulWidget {
     this.pe,
     this.progresionDe,
     this.circuloDoDia,
+    this.microcuento,
   });
 
   @override
@@ -247,6 +252,8 @@ class _AulaPrimeiroCicloPanelState extends State<AulaPrimeiroCicloPanel> {
                       _semana,
                       _dia,
                     ),
+                    microcuento:
+                        widget.microcuento?.call('curso_${_tramo.clave}', _mes),
                     onComezar: () => widget.onComezar(_tramo, _mes, _diaActual),
                   ),
           ),
@@ -267,6 +274,9 @@ class _TarxetaDeFluxo extends StatelessWidget {
 
   /// El cuento y la dinámica del día. Nulo si la pantalla no lo pasa.
   final Widget? circulo;
+
+  /// La puerta al microcuento del mes. Nula en 0-2, que no lo tiene.
+  final Widget? microcuento;
   final VoidCallback onComezar;
 
   const _TarxetaDeFluxo({
@@ -275,6 +285,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
     required this.dia,
     required this.semana,
     required this.circulo,
+    this.microcuento,
     required this.onComezar,
   });
 
@@ -391,6 +402,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
                     ),
                   ),
                 ),
+                if (microcuento case final mc?) mc,
                 const SizedBox(height: AppTheme.spaceLg),
                 if (dia != null) ...[
                   BloqueDoDia(

@@ -72,7 +72,7 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 - La asamblea corta de 4 fases se queda como opción diaria (P2). En 1.º
   ciclo es una sesión propuesta; en 2.º, el período semanal de inglés.
 - Hecho cuando: Modo Aula → la sesión de 45 min se recorre entera en gl y es,
-  en los cursos que Frank fije.
+  en los cinco cursos.
 
 **F4 · Unidades completas (M3.x ampliado)**
 - Objetivos operativos de cada unidad, sacados del currículo de vocabulario.

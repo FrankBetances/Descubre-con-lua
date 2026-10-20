@@ -1,0 +1,43 @@
+{
+  "_doc": "Las láminas de los microcuentos que no tienen función propia en tools/draw_microcuentos.py. Una por clave (microcuento_<curso>_<NN>_<lámina>): fondo (ceo, bosque, praia, interior, noite, neve, choiva, mar), chan (altura del suelo, 0-100) y elementos en orden de pintado. Cada una sale del encargo de su lámina en la unidad del mes.",
+  "microcuento_2_3_01_1": {
+    "fondo": "interior",
+    "chan": 60,
+    "nota": "Lúa saúda na alfombra verde; detrás dunha planta asoma un coelliño.",
+    "elementos": [
+      {
+        "alfombra": [
+          80,
+          84,
+          60,
+          13,
+          "#2ecc40"
+        ]
+      },
+      {
+        "o": "animais_85",
+        "x": 140,
+        "y": 58,
+        "h": 34,
+        "esp": true
+      },
+      {
+        "o": "flor",
+        "x": 128,
+        "y": 70,
+        "h": 46
+      },
+      {
+        "lua": {
+          "x": 50,
+          "chan": 90,
+          "alto": 66,
+          "pose": "de_pe",
+          "brazo_e": 10,
+          "brazo_d": -150,
+          "ollos": "contentos"
+        }
+      }
+    ]
+  }
+}
