@@ -97,5 +97,326 @@
     "3_4.outubro.s4.dance"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.04",
+    "titulo": {
+      "gl": "Lúa e o paporrubio da noite de inverno",
+      "es": "Lúa y el petirrojo de la noche de invierno"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Noche azul oscuro, lisa, con una sola ventana iluminada en amarillo. En el alféizar, un petirrojo MARRÓN con el pecho NARANJA, pequeño y tiritando (líneas de temblor). Detrás del cristal, Lúa con una bufanda MORADA abre la ventana despacio y lo mira con cariño.",
+        "trama": {
+          "gl": "É unha noite de inverno longa, longa. Na aldea todo está escuro e en silencio. No peitoril da xanela de Lúa, un paporrubio pequeniño treme de frío: brrr! Lúa abre a xanela amodo, para non asustalo.",
+          "es": "Es una noche de invierno larga, larga. En la aldea todo está oscuro y en silencio. En el alféizar de la ventana de Lúa, un petirrojo pequeñito tiembla de frío: ¡brrr! Lúa abre la ventana despacio, para no asustarlo."
+        },
+        "lua": {
+          "onomatopeia": "Brrr, brrr!",
+          "ref": "frase.lua.4_5.04.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little bird? Touch the robin!",
+            "axuda": {
+              "gl": "Sinala o paporrubio e agarda que o atope.",
+              "es": "Señala el petirrojo y espera a que lo encuentre."
+            }
+          },
+          "imitar": {
+            "en": "Brrr, it is cold! Can you shiver like the robin?",
+            "axuda": {
+              "gl": "Abrázate e treme un pouco, brrr, e agarda.",
+              "es": "Abrázate y tiembla un poco, brrr, y espera."
+            }
+          },
+          "achegar": {
+            "en": "What do you wear at night in winter?",
+            "axuda": {
+              "gl": "Fai coma se te tapases cunha manta e agarda. Acolle o que diga: «Your pyjamas!».",
+              "es": "Haz como si te taparas con una manta y espera. Acoge lo que diga: «Your pyjamas!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa shivers. Brrr! A cold winter night!",
+            "axuda": {
+              "gl": "Treme ti un pouco e sinala o paporrubio.",
+              "es": "Tiembla tú un poco y señala el petirrojo."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The robin! A little robin with an orange chest!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Ten frío!",
+              "es": "¡Tiene frío!"
+            },
+            "acolle": {
+              "gl": "Si, o paporrubio ten moito frío!",
+              "es": "¡Sí, el petirrojo tiene mucho frío!"
+            },
+            "en": "Yes! The robin is cold! Brrr, a winter night!"
+          },
+          "unhaPalabra": {
+            "di": "Night!",
+            "en": "Yes, a cold winter night!"
+          },
+          "formaTorcida": {
+            "di": "The bird is colding!",
+            "en": "Yes, the bird is cold!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What can you see in the winter night?",
+          "axuda": {
+            "gl": "Pregunta, agarda e acolle o que diga, na lingua que sexa: «A little robin at the window!».",
+            "es": "Pregunta, espera y acoge lo que diga, en la lengua que sea: «A little robin at the window!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Plaza de aldea de noche, fondo azul oscuro liso. En el centro, una fuente de piedra GRIS con el agua convertida en hielo BLANCO AZULADO. El petirrojo MARRÓN de pecho NARANJA, en el borde, mira el hielo con el pico abierto. Lúa, con la bufanda MORADA y unas botas de agua AMARILLAS, toca el hielo con un dedo.",
+        "trama": {
+          "gl": "O paporrubio ten sede, pero a fonte da praza está xeada, dura coma unha pedra. Cada vez fai máis frío! Lúa pon as botas e a bufanda e saen xuntos a ver. Toc, toc: o xeo non se move nin un pouquiño.",
+          "es": "El petirrojo tiene sed, pero la fuente de la plaza está helada, dura como una piedra. ¡Cada vez hace más frío! Lúa se pone las botas y la bufanda y salen juntos a ver. Toc, toc: el hielo no se mueve ni un poquito."
+        },
+        "lua": {
+          "onomatopeia": "Toc, toc, toc!",
+          "ref": "frase.lua.4_5.04.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the frozen water? Touch the ice!",
+            "axuda": {
+              "gl": "Sinala o xeo da fonte e agarda.",
+              "es": "Señala el hielo de la fuente y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be frozen solid? Stiff, stiff… no moving!",
+            "axuda": {
+              "gl": "Pon o corpo ríxido coma o xeo, cos brazos pegados.",
+              "es": "Pon el cuerpo rígido como el hielo, con los brazos pegados."
+            }
+          },
+          "achegar": {
+            "en": "When do you put on your boots? Why?",
+            "axuda": {
+              "gl": "Toca os teus pés e agarda. Acolle o que diga e devólvello: «Because it is raining!».",
+              "es": "Tócate los pies y espera. Acoge lo que diga y devuélveselo: «Because it is raining!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa touches the ice. Toc, toc! Frozen solid!",
+            "axuda": {
+              "gl": "Peta ti suave na lámina cun dedo, toc, toc.",
+              "es": "Golpea tú suave en la lámina con un dedo, toc, toc."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The ice! The water is frozen solid!",
+            "axuda": {
+              "gl": "Asente e peta ti tamén no xeo da lámina.",
+              "es": "Asiente y golpea tú también el hielo de la lámina."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Xeo!",
+              "es": "¡Hielo!"
+            },
+            "acolle": {
+              "gl": "Si, a auga é xeo!",
+              "es": "¡Sí, el agua es hielo!"
+            },
+            "en": "Ice! The water is frozen solid!"
+          },
+          "unhaPalabra": {
+            "di": "Frozen!",
+            "en": "Yes, frozen solid! The water is ice!"
+          },
+          "formaTorcida": {
+            "di": "Water is froze!",
+            "en": "Yes, the water is frozen!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "Why can't the robin drink?",
+          "axuda": {
+            "gl": "Se non se lembra, peta na mesa, toc, toc, e agarda: «Because the water is frozen!».",
+            "es": "Si no se acuerda, golpea la mesa, toc, toc, y espera: «Because the water is frozen!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "La misma plaza, de noche, con el cielo empezando a ponerse AZUL CLARO por un lado. Lúa, con la bufanda MORADA y las botas AMARILLAS, toca un pandero REDONDO de madera. El petirrojo MARRÓN de pecho NARANJA, en el suelo, con las alas abiertas, baila delante de ella. Notas de música dibujadas alrededor del pandero.",
+        "trama": {
+          "gl": "Para agardar o sol sen pasar frío, Lúa colle o pandeiro. Cando soa, o paporrubio bate as ás e baila; cando cala, queda quieto coma o xeo. Tum, tum, tum… silencio! E, pouco a pouco, o ceo empeza a clarear.",
+          "es": "Para esperar al sol sin pasar frío, Lúa coge el pandero. Cuando suena, el petirrojo bate las alas y baila; cuando calla, se queda quieto como el hielo. Tum, tum, tum… ¡silencio! Y, poco a poco, el cielo empieza a clarear."
+        },
+        "lua": {
+          "onomatopeia": "Tum, tum, tum!",
+          "ref": "frase.lua.4_5.04.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is Lúa's drum? Touch the drum!",
+            "axuda": {
+              "gl": "Sinala o pandeiro e agarda.",
+              "es": "Señala el pandero y espera."
+            }
+          },
+          "imitar": {
+            "en": "Play the drum on your legs! The drum stops… and you stop!",
+            "axuda": {
+              "gl": "Toca o pandeiro imaxinario nas pernas e para de súpeto, sen moverte.",
+              "es": "Toca el pandero imaginario en las piernas y para de golpe, sin moverte."
+            }
+          },
+          "achegar": {
+            "en": "Do you play music with your family? What do you play?",
+            "axuda": {
+              "gl": "Toca un pouco nas pernas e agarda. Acolle o que diga: «You play the drum!».",
+              "es": "Toca un poco en las piernas y espera. Acoge lo que diga: «You play the drum!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa plays the drum. Drum, drum, drum!",
+            "axuda": {
+              "gl": "Toca ti nas pernas amodo, sen dicir máis.",
+              "es": "Toca tú en las piernas despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The drum! A big round drum!",
+            "axuda": {
+              "gl": "Asente e debuxa no aire un pandeiro redondo.",
+              "es": "Asiente y dibuja en el aire un pandero redondo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Pandeiro!",
+              "es": "¡Pandero!"
+            },
+            "acolle": {
+              "gl": "Si, Lúa toca o pandeiro!",
+              "es": "¡Sí, Lúa toca el pandero!"
+            },
+            "en": "The drum! Lúa plays the drum!"
+          },
+          "unhaPalabra": {
+            "di": "Drum!",
+            "en": "Yes, Lúa plays the drum, drum, drum!"
+          },
+          "formaTorcida": {
+            "di": "Lúa drumming the drum!",
+            "en": "Yes, Lúa plays the drum!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did the robin do when the drum stopped?",
+          "axuda": {
+            "gl": "Se non se lembra, toca nas pernas e para de súpeto: «He stopped! Very still!».",
+            "es": "Si no se acuerda, toca en las piernas y para de golpe: «He stopped! Very still!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Amanecer: un sol AMARILLO grande y brillante asoma detrás de los tejados, con rayos largos. El hielo de la fuente GRIS se ha vuelto agua y el petirrojo MARRÓN de pecho NARANJA bebe. Lúa, con la bufanda MORADA y las botas AMARILLAS, se estira hacia el cielo con los brazos muy arriba.",
+        "trama": {
+          "gl": "Por fin sae o sol, o máis brillante de todo o inverno! A súa calor derrete o xeo e o paporrubio bebe a auga fresquiña. Lúa estírase ben alto cara ao sol. Despois o paporrubio acóchase quentiño na súa bufanda.",
+          "es": "¡Por fin sale el sol, el más brillante de todo el invierno! Su calor derrite el hielo y el petirrojo bebe el agua fresquita. Lúa se estira bien alto hacia el sol. Después el petirrojo se acurruca calentito en su bufanda."
+        },
+        "lua": {
+          "onomatopeia": "Aaaah, mmm!",
+          "ref": "frase.lua.4_5.04.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the sun? Touch the bright sun!",
+            "axuda": {
+              "gl": "Sinala o sol e os seus raios e agarda.",
+              "es": "Señala el sol y sus rayos y espera."
+            }
+          },
+          "imitar": {
+            "en": "Good morning, sun! Can you stretch up high, like Lúa?",
+            "axuda": {
+              "gl": "Estira todo o corpo cara ao teito, amodo.",
+              "es": "Estira todo el cuerpo hacia el techo, despacio."
+            }
+          },
+          "achegar": {
+            "en": "Who gives you a warm hug in the morning?",
+            "axuda": {
+              "gl": "Abrázate e agarda. Se nomea a alguén, devólvello en inglés: «Your mum gives you a hug!».",
+              "es": "Abrázate y espera. Si nombra a alguien, devuélveselo en inglés: «Your mum gives you a hug!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa stretches up to the sun. Stretch, stretch!",
+            "axuda": {
+              "gl": "Estírate ti amodo e sinala o sol.",
+              "es": "Estírate tú despacio y señala el sol."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The sun! The brightest sun in the sky!",
+            "axuda": {
+              "gl": "Asente e abre os dedos coma raios de sol.",
+              "es": "Asiente y abre los dedos como rayos de sol."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "O sol!",
+              "es": "¡El sol!"
+            },
+            "acolle": {
+              "gl": "Si, xa saíu o sol!",
+              "es": "¡Sí, ya ha salido el sol!"
+            },
+            "en": "The sun! The sun is up! Good morning, sun!"
+          },
+          "unhaPalabra": {
+            "di": "Sun!",
+            "en": "Yes, the bright morning sun!"
+          },
+          "formaTorcida": {
+            "di": "Sun is upping!",
+            "en": "Yes, the sun is coming up!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "How does the robin feel now?",
+          "axuda": {
+            "gl": "Agarda e acolle o que diga, na lingua que sexa, e devólvello nunha frase: «The robin is warm and happy!».",
+            "es": "Espera y acoge lo que diga, en la lengua que sea, y devuélveselo en una frase: «The robin is warm and happy!»."
+          }
+        }
+      }
+    ]
+  }
 }

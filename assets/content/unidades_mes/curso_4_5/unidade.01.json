@@ -101,5 +101,326 @@
   ],
   "reactivar": [],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.01",
+    "titulo": {
+      "gl": "Lúa e o osiño da mochila pesada",
+      "es": "Lúa y el osito de la mochila pesada"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Interior sencillo de una casita de madera por la mañana, con una ventana y sol a la izquierda. Un osito MARRÓN CLARO con bufanda VERDE, sentado en la cama, bostezando con los ojos medio cerrados. A su lado, una mochila AMARILLA enorme, llena hasta arriba. Lúa en la puerta, saludando con la mano.",
+        "trama": {
+          "gl": "Hoxe é o primeiro día de escola do osiño. Pero o osiño ten moito sono: bocexa, fala amodo e os ollos péchanselle. Lúa vén buscalo á porta da casa. Ao lado da cama agarda a súa mochila amarela, chea ata arriba.",
+          "es": "Hoy es el primer día de escuela del osito. Pero el osito tiene mucho sueño: bosteza, habla despacio y se le cierran los ojos. Lúa viene a buscarlo a la puerta de casa. Al lado de la cama espera su mochila amarilla, llena hasta arriba."
+        },
+        "lua": {
+          "onomatopeia": "Yaaawn!",
+          "ref": "frase.lua.4_5.01.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the bear's backpack? Touch the yellow backpack!",
+            "axuda": {
+              "gl": "Sinala a mochila e agarda que a busque.",
+              "es": "Señala la mochila y espera a que la busque."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a sleepy bear? Yawn and stretch your arms!",
+            "axuda": {
+              "gl": "Bocexa ben grande e deixa caer a cabeza cara a un lado.",
+              "es": "Bosteza bien grande y deja caer la cabeza hacia un lado."
+            }
+          },
+          "achegar": {
+            "en": "What do you bring to school in your backpack?",
+            "axuda": {
+              "gl": "Fai coma se abrises unha mochila e agarda. Acolle o que diga, na lingua que sexa.",
+              "es": "Haz como si abrieras una mochila y espera. Acoge lo que diga, en la lengua que sea."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa yawns like the bear. A sleepy bear!",
+            "axuda": {
+              "gl": "Bocexa ti amodo e sinala o osiño.",
+              "es": "Bosteza tú despacio y señala al osito."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bear! A sleepy brown bear!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Ten sono!",
+              "es": "¡Tiene sueño!"
+            },
+            "acolle": {
+              "gl": "Si, o osiño ten moito sono!",
+              "es": "¡Sí, el osito tiene mucho sueño!"
+            },
+            "en": "Yes! A sleepy bear! He is so sleepy!"
+          },
+          "unhaPalabra": {
+            "di": "Bear!",
+            "en": "Yes, a sleepy bear in bed!"
+          },
+          "formaTorcida": {
+            "di": "Bear is sleep!",
+            "en": "Yes, the bear is sleepy!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What is the little bear doing?",
+          "axuda": {
+            "gl": "Pregunta, agarda e acolle o que diga, na lingua que sexa: «The bear is sleepy! He yawns!».",
+            "es": "Pregunta, espera y acoge lo que diga, en la lengua que sea: «The bear is sleepy! He yawns!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Camino de tierra hacia la escuela, fondo liso. El osito MARRÓN CLARO con bufanda VERDE tira con las dos patas de la mochila AMARILLA, que casi no se levanta del suelo; gotitas de esfuerzo en la frente. Lúa a su lado, con las manos en las mejillas, sorprendida.",
+        "trama": {
+          "gl": "Saen camiño da escola. Pero a mochila pesa moitísimo! O osiño tira dela e tira dela, e case non a levanta do chan. Uf, que pesada! Que levará dentro?",
+          "es": "Salen camino de la escuela. ¡Pero la mochila pesa muchísimo! El osito tira de ella y tira de ella, y casi no la levanta del suelo. ¡Uf, qué pesada! ¿Qué llevará dentro?"
+        },
+        "lua": {
+          "onomatopeia": "Uff, uff!",
+          "ref": "frase.lua.4_5.01.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the heavy backpack? Touch it!",
+            "axuda": {
+              "gl": "Sinala a mochila amarela e agarda.",
+              "es": "Señala la mochila amarilla y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you carry a heavy bag? Uff, so heavy!",
+            "axuda": {
+              "gl": "Colle unha bolsa imaxinaria e camiña amodo, coma se pesase moito.",
+              "es": "Coge una bolsa imaginaria y camina despacio, como si pesara mucho."
+            }
+          },
+          "achegar": {
+            "en": "Who carries your backpack to school?",
+            "axuda": {
+              "gl": "Agarda. Se nomea a alguén na súa lingua, devólvello en inglés: «Your dad carries it!».",
+              "es": "Espera. Si nombra a alguien en su lengua, devuélveselo en inglés: «Your dad carries it!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa carries the bag. Uff, a heavy bag!",
+            "axuda": {
+              "gl": "Fai ti o xesto de levar algo moi pesado, sen dicir máis.",
+              "es": "Haz tú el gesto de llevar algo muy pesado, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The backpack! A big, heavy backpack!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén a mochila.",
+              "es": "Asiente y señala tú también la mochila."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Pesa moito!",
+              "es": "¡Pesa mucho!"
+            },
+            "acolle": {
+              "gl": "Si, pesa moitísimo!",
+              "es": "¡Sí, pesa muchísimo!"
+            },
+            "en": "Yes! It is so heavy! A heavy backpack!"
+          },
+          "unhaPalabra": {
+            "di": "Heavy!",
+            "en": "Yes, the backpack is so heavy!"
+          },
+          "formaTorcida": {
+            "di": "Backpack very heavies!",
+            "en": "Yes, the backpack is very heavy!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What is in the heavy backpack?",
+          "axuda": {
+            "gl": "Agarda e acolle calquera idea, tamén as de risa, e devólvea nunha frase: «A big stone? Maybe!».",
+            "es": "Espera y acoge cualquier idea, también las de risa, y devuélvela en una frase: «A big stone? Maybe!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "La mochila AMARILLA abierta en el suelo; de dentro asoman unas botas de agua AZULES enormes. El osito MARRÓN CLARO con bufanda VERDE, descalzo, mira las botas con la boca abierta. Lúa sostiene una bota y señala las patas del osito.",
+        "trama": {
+          "gl": "Lúa e o osiño abren a mochila e… sorpresa! Dentro van as botas de auga azuis do osiño. Por iso pesaba tanto! Lúa ri: as botas non van na mochila, van nos pés. O osiño mete un pé, despois o outro… e xa está!",
+          "es": "Lúa y el osito abren la mochila y… ¡sorpresa! Dentro van las botas de agua azules del osito. ¡Por eso pesaba tanto! Lúa se ríe: las botas no van en la mochila, van en los pies. El osito mete un pie, luego el otro… ¡y ya está!"
+        },
+        "lua": {
+          "onomatopeia": "Plof, plof!",
+          "ref": "frase.lua.4_5.01.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the blue boots? Touch the boots!",
+            "axuda": {
+              "gl": "Sinala as botas e agarda que as atope.",
+              "es": "Señala las botas y espera a que las encuentre."
+            }
+          },
+          "imitar": {
+            "en": "Can you put your feet into big boots? One, two!",
+            "axuda": {
+              "gl": "Levanta un pé e despois o outro, coma se os meteses nunhas botas.",
+              "es": "Levanta un pie y luego el otro, como si los metieras en unas botas."
+            }
+          },
+          "achegar": {
+            "en": "Do you have boots at home? What color are your boots?",
+            "axuda": {
+              "gl": "Toca os teus pés e agarda. Acolle a cor na lingua que sexa: «Red boots!».",
+              "es": "Tócate los pies y espera. Acoge el color en la lengua que sea: «Red boots!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa puts her feet into the boots. One, two!",
+            "axuda": {
+              "gl": "Fai ti o xesto de meter os pés nas botas, amodo.",
+              "es": "Haz tú el gesto de meter los pies en las botas, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The boots! Big blue boots!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo xunto ao seu.",
+              "es": "Asiente y pon tu dedo junto al suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "As botas!",
+              "es": "¡Las botas!"
+            },
+            "acolle": {
+              "gl": "Si, as botas estaban na mochila!",
+              "es": "¡Sí, las botas estaban en la mochila!"
+            },
+            "en": "The boots! The boots were in the backpack!"
+          },
+          "unhaPalabra": {
+            "di": "Boots!",
+            "en": "Yes, big blue boots for the bear!"
+          },
+          "formaTorcida": {
+            "di": "Feets in the boots!",
+            "en": "Yes, his feet into the boots!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What was in the backpack?",
+          "axuda": {
+            "gl": "Se non se lembra, sinala os teus pés e agarda: «The boots!».",
+            "es": "Si no se acuerda, señálate los pies y espera: «The boots!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Patio de la escuela con una campana DORADA colgada junto a la puerta. El osito MARRÓN CLARO con bufanda VERDE y botas AZULES, quieto como una estatua sobre un pie, con la mochila AMARILLA a la espalda. Lúa a su lado, también quieta, aguantando la risa. Al fondo, un pequeño grupo de criaturas sin nombre, quietas.",
+        "trama": {
+          "gl": "Coa mochila lixeira, chegan á escola nun momento. Na porta soa a campá: ding, dong! É o xogo das estatuas: cando soa a campá, todo o mundo queda quieto. O osiño queda nun pé, sen moverse… e despois dálle a Lúa unha aperta ben grande.",
+          "es": "Con la mochila ligera, llegan a la escuela en un momento. En la puerta suena la campana: ¡din, don! Es el juego de las estatuas: cuando suena la campana, todo el mundo se queda quieto. El osito se queda sobre un pie, sin moverse… y después le da a Lúa un abrazo bien grande."
+        },
+        "lua": {
+          "onomatopeia": "Ding, dong!",
+          "ref": "frase.lua.4_5.01.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the bell? Touch the bell!",
+            "axuda": {
+              "gl": "Sinala a campá da porta e agarda.",
+              "es": "Señala la campana de la puerta y espera."
+            }
+          },
+          "imitar": {
+            "en": "Ding, dong… freeze! Can you be a statue like the bear?",
+            "axuda": {
+              "gl": "Move o puño coma unha campá e para de súpeto, sen moverte.",
+              "es": "Mueve el puño como una campana y para de golpe, sin moverte."
+            }
+          },
+          "achegar": {
+            "en": "Who do you hug at school?",
+            "axuda": {
+              "gl": "Abre os brazos e agarda. Se nomea a alguén, devólvello en inglés: «You hug your friend!».",
+              "es": "Abre los brazos y espera. Si nombra a alguien, devuélveselo en inglés: «You hug your friend!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa freezes. Motionless, like a statue!",
+            "axuda": {
+              "gl": "Queda ti inmóbil coma unha estatua uns segundos.",
+              "es": "Quédate tú inmóvil como una estatua unos segundos."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bell! Ding, dong, freeze!",
+            "axuda": {
+              "gl": "Asente e fai soar unha campá imaxinaria co puño.",
+              "es": "Asiente y haz sonar una campana imaginaria con el puño."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Estatua!",
+              "es": "¡Estatua!"
+            },
+            "acolle": {
+              "gl": "Si, o osiño é unha estatua!",
+              "es": "¡Sí, el osito es una estatua!"
+            },
+            "en": "Freeze! The bear is motionless, like a statue!"
+          },
+          "unhaPalabra": {
+            "di": "Freeze!",
+            "en": "Yes, freeze! The bear is motionless!"
+          },
+          "formaTorcida": {
+            "di": "Bear freezed!",
+            "en": "Yes, the bear froze!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What happened when the bell rang?",
+          "axuda": {
+            "gl": "Se non se lembra, fai soar a campá co puño e queda inmóbil: «Freeze!».",
+            "es": "Si no se acuerda, haz sonar la campana con el puño y quédate inmóvil: «Freeze!»."
+          }
+        }
+      }
+    ]
+  }
 }

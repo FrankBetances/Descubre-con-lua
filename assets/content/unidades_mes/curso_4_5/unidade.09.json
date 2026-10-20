@@ -96,5 +96,326 @@
     "3_4.febreiro.s2.sheep"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.09",
+    "titulo": {
+      "gl": "Lúa e o nabo enorme",
+      "es": "Lúa y el nabo enorme"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Huerto sencillo con tierra marrón y cielo claro. En el centro, un nabo enorme BLANCO Y MORADO con hojas VERDES grandes, medio enterrado. Un abuelo con boina NEGRA y chaleco ROJO tira de las hojas con todas sus fuerzas, inclinado hacia atrás. Lúa, con un pañuelo AMARILLO en la cabeza, mira asomada a la valla.",
+        "trama": {
+          "gl": "Na horta do avó medrou un nabo enorme, enorme, máis grande ca unha cadeira! O avó cólleo polas follas e tira con todas as súas forzas: aaah! Pero o nabo nin se move.",
+          "es": "En el huerto del abuelo ha crecido un nabo enorme, enorme, ¡más grande que una silla! El abuelo lo coge por las hojas y tira con todas sus fuerzas: ¡aaah! Pero el nabo ni se mueve."
+        },
+        "lua": {
+          "onomatopeia": "Aaaah, uf!",
+          "ref": "frase.lua.4_5.09.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the giant turnip? Touch the turnip!",
+            "axuda": {
+              "gl": "Sinala o nabo e agarda que o atope.",
+              "es": "Señala el nabo y espera a que lo encuentre."
+            }
+          },
+          "imitar": {
+            "en": "Can you pull like grandpa? Pull, pull, pull!",
+            "axuda": {
+              "gl": "Tira dunha corda imaxinaria cara a ti, con moita forza.",
+              "es": "Tira de una cuerda imaginaria hacia ti, con mucha fuerza."
+            }
+          },
+          "achegar": {
+            "en": "What vegetables do you like to eat?",
+            "axuda": {
+              "gl": "Fai coma se comeses algo moi rico e agarda. Acolle o que diga: «You like carrots!».",
+              "es": "Haz como si comieras algo muy rico y espera. Acoge lo que diga: «You like carrots!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa pulls like grandpa. Pull, pull!",
+            "axuda": {
+              "gl": "Fai ti o xesto de tirar, amodo, sen dicir máis.",
+              "es": "Haz tú el gesto de tirar, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The turnip! A giant white and purple turnip!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un nabo!",
+              "es": "¡Un nabo!"
+            },
+            "acolle": {
+              "gl": "Si, un nabo enorme!",
+              "es": "¡Sí, un nabo enorme!"
+            },
+            "en": "A turnip! A giant turnip in the garden!"
+          },
+          "unhaPalabra": {
+            "di": "Pull!",
+            "en": "Yes, pull! Grandpa pulls the turnip!"
+          },
+          "formaTorcida": {
+            "di": "Grandpa pull it the turnip!",
+            "en": "Yes, grandpa pulls the turnip!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "How can grandpa get the turnip out?",
+          "axuda": {
+            "gl": "Agarda e acolle calquera idea, tamén as de risa, e devólvea nunha frase: «With a friend! Maybe!».",
+            "es": "Espera y acoge cualquier idea, también las de risa, y devuélvela en una frase: «With a friend! Maybe!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El mismo huerto. En fila, de derecha a izquierda: el nabo BLANCO Y MORADO, el abuelo de boina NEGRA y chaleco ROJO tirando de las hojas, Lúa con el pañuelo AMARILLO agarrada a su cintura, y un perro MARRÓN de orejas largas agarrado a Lúa. Los tres inclinados hacia atrás. El nabo sigue en la tierra.",
+        "trama": {
+          "gl": "Lúa vén axudar: agárrase ao avó e tiran os dous. Despois chega o can e agárrase a Lúa. Tiran, tiran e tiran… pero o nabo segue alí, ben metido na terra. Que fan agora?",
+          "es": "Lúa viene a ayudar: se agarra al abuelo y tiran los dos. Luego llega el perro y se agarra a Lúa. Tiran, tiran y tiran… pero el nabo sigue ahí, bien metido en la tierra. ¿Qué hacen ahora?"
+        },
+        "lua": {
+          "onomatopeia": "Hup, hup, hup!",
+          "ref": "frase.lua.4_5.09.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the dog? Touch the dog!",
+            "axuda": {
+              "gl": "Sinala o can e agarda.",
+              "es": "Señala el perro y espera."
+            }
+          },
+          "imitar": {
+            "en": "Hold my hands! Can we pull together? Pull!",
+            "axuda": {
+              "gl": "Dálle as túas mans e tirade xuntos, suave.",
+              "es": "Dale tus manos y tirad juntos, con suavidad."
+            }
+          },
+          "achegar": {
+            "en": "Who helps you when something is too hard?",
+            "axuda": {
+              "gl": "Tende as mans e agarda. Se nomea a alguén, devólvello en inglés: «Your sister helps you!».",
+              "es": "Tiende las manos y espera. Si nombra a alguien, devuélveselo en inglés: «Your sister helps you!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa helps grandpa. We help! Pull!",
+            "axuda": {
+              "gl": "Tende ti as mans e fai o xesto de tirar.",
+              "es": "Tiende tú las manos y haz el gesto de tirar."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The dog helps too! Grandpa, Lúa and the dog!",
+            "axuda": {
+              "gl": "Asente e sinala os tres, un a un.",
+              "es": "Asiente y señala a los tres, uno a uno."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Axudan!",
+              "es": "¡Ayudan!"
+            },
+            "acolle": {
+              "gl": "Si, todos axudan!",
+              "es": "¡Sí, todos ayudan!"
+            },
+            "en": "They help! Lúa and the dog help grandpa!"
+          },
+          "unhaPalabra": {
+            "di": "Help!",
+            "en": "Yes, help! Lúa and the dog help!"
+          },
+          "formaTorcida": {
+            "di": "Dog helps pulling!",
+            "en": "Yes, the dog helps to pull!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "Who came to help grandpa?",
+          "axuda": {
+            "gl": "Se non se lembra, sinala a lámina e agarda: «Lúa and the dog!».",
+            "es": "Si no se acuerda, señala la lámina y espera: «Lúa and the dog!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Un ratón GRIS pequeñito, subido al hombro de Lúa (pañuelo AMARILLO), le habla al oído con la pata delante de la boca. El abuelo de boina NEGRA y chaleco ROJO llega con una cuerda de cáñamo BEIS gruesa enrollada. El perro MARRÓN de orejas largas, sentado, escucha con la cabeza ladeada. El nabo BLANCO Y MORADO al fondo.",
+        "trama": {
+          "gl": "Entón chega un rato pequeniño, sobe ao ombro de Lúa e cóntalle un segredo moi baixiño: «Cunha corda forte, e todos á vez!». O avó trae a corda de cáñamo, ben resistente, e átaa ao nabo. Todos a collen en fila. Un, dous, tres…",
+          "es": "Entonces llega un ratón pequeñito, se sube al hombro de Lúa y le cuenta un secreto muy bajito: «¡Con una cuerda fuerte, y todos a la vez!». El abuelo trae la cuerda de cáñamo, bien resistente, y la ata al nabo. Todos la cogen en fila. Un, dos, tres…"
+        },
+        "lua": {
+          "onomatopeia": "Psss, psss…",
+          "ref": "frase.lua.4_5.09.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little mouse? Touch the mouse!",
+            "axuda": {
+              "gl": "Sinala o rato no ombro de Lúa e agarda.",
+              "es": "Señala el ratón en el hombro de Lúa y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you whisper like the mouse? Very, very quietly…",
+            "axuda": {
+              "gl": "Achégate á súa orella e fala moi baixiño, coa boca á vista.",
+              "es": "Acércate a su oreja y habla muy bajito, con la boca a la vista."
+            }
+          },
+          "achegar": {
+            "en": "Who do you tell your secrets to?",
+            "axuda": {
+              "gl": "Leva un dedo aos labios e agarda. Non fai falta que conte o segredo: «You tell your mum!».",
+              "es": "Llévate un dedo a los labios y espera. No hace falta que cuente el secreto: «You tell your mum!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa whispers. Shhh… a secret!",
+            "axuda": {
+              "gl": "Leva un dedo aos labios e chisca un ollo.",
+              "es": "Llévate un dedo a los labios y guiña un ojo."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The mouse! A tiny grey mouse with a big idea!",
+            "axuda": {
+              "gl": "Asente e chisca un ollo.",
+              "es": "Asiente y guiña un ojo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un segredo!",
+              "es": "¡Un secreto!"
+            },
+            "acolle": {
+              "gl": "Si, o rato conta un segredo!",
+              "es": "¡Sí, el ratón cuenta un secreto!"
+            },
+            "en": "A secret! The mouse whispers a secret!"
+          },
+          "unhaPalabra": {
+            "di": "Secret!",
+            "en": "Yes, a secret! All together!"
+          },
+          "formaTorcida": {
+            "di": "Mouse whisper Lúa!",
+            "en": "Yes, the mouse whispers to Lúa!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What was the mouse's secret?",
+          "axuda": {
+            "gl": "Se non se lembra, fai o xesto de tirar dunha corda e agarda: «A rope, and all together!».",
+            "es": "Si no se acuerda, haz el gesto de tirar de una cuerda y espera: «A rope, and all together!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El nabo BLANCO Y MORADO, ya fuera de la tierra, tumbado en la hierba. El abuelo de boina NEGRA y chaleco ROJO, Lúa con el pañuelo AMARILLO, el perro MARRÓN de orejas largas y el ratón GRIS, sentados en el suelo, riendo, con la cuerda de cáñamo BEIS suelta. A un lado, una olla con caldo humeante.",
+        "trama": {
+          "gl": "Todos á vez… e plof! O nabo sae da terra e todos caen enriba da herba, rindo. Que equipo! O avó lava o nabo na fonte e fai un caldo quentiño. O rato, tan pequeno e tan valente, toma o primeiro prato.",
+          "es": "Todos a la vez… ¡y plof! El nabo sale de la tierra y todos caen sobre la hierba, riendo. ¡Qué equipo! El abuelo lava el nabo en la fuente y hace un caldo calentito. El ratón, tan pequeño y tan valiente, toma el primer plato."
+        },
+        "lua": {
+          "onomatopeia": "Plof! Mmm!",
+          "ref": "frase.lua.4_5.09.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the turnip now? Touch the turnip!",
+            "axuda": {
+              "gl": "Sinala o nabo na herba e agarda.",
+              "es": "Señala el nabo en la hierba y espera."
+            }
+          },
+          "imitar": {
+            "en": "First we wash, then we eat! Can you wash and eat like Lúa?",
+            "axuda": {
+              "gl": "Fai coma se lavases algo coas mans e despois leva a man á boca.",
+              "es": "Haz como si lavaras algo con las manos y después llévate la mano a la boca."
+            }
+          },
+          "achegar": {
+            "en": "What do you like to eat with your family?",
+            "axuda": {
+              "gl": "Fai coma se tomases unha culler de caldo e agarda. Acolle o que diga: «You like soup!».",
+              "es": "Haz como si tomaras una cuchara de caldo y espera. Acoge lo que diga: «You like soup!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa washes the turnip. First we wash…",
+            "axuda": {
+              "gl": "Fai ti o xesto de lavar coas mans, amodo.",
+              "es": "Haz tú el gesto de lavar con las manos, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The turnip is out! Plop!",
+            "axuda": {
+              "gl": "Asente e dá unha palmada.",
+              "es": "Asiente y da una palmada."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Caldo!",
+              "es": "¡Caldo!"
+            },
+            "acolle": {
+              "gl": "Si, un caldo quentiño!",
+              "es": "¡Sí, un caldo calentito!"
+            },
+            "en": "Soup! A yummy hot soup for everyone!"
+          },
+          "unhaPalabra": {
+            "di": "Eat!",
+            "en": "Yes, first we wash, then we eat!"
+          },
+          "formaTorcida": {
+            "di": "We eated the soup!",
+            "en": "Yes, we ate the soup!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "Why was the little mouse important?",
+          "axuda": {
+            "gl": "Agarda moito. Diga o que diga, devólvello nunha frase: «He was brave and kind!».",
+            "es": "Espera mucho. Diga lo que diga, devuélveselo en una frase: «He was brave and kind!»."
+          }
+        }
+      }
+    ]
+  }
 }

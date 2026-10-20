@@ -5,8 +5,8 @@ del plan docente.
 
 ## Lo que entra en el registro de frases
 
-`assets/content/registro/frases.json`: 236 frases, de ellas
-9 propias (`registro/frases_propias.json`) y 64 de Lúa
+`assets/content/registro/frases.json`: 312 frases, de ellas
+9 propias (`registro/frases_propias.json`) y 140 de Lúa
 (`registro/frases_lua.json`). Una orden entra
 aunque su texto sea también palabra del banco: se lleva el gesto de su fuente,
 y comparte la grabación.
@@ -20,7 +20,7 @@ y comparte la grabación.
 | `steam` | 10 | 9 | 10 |
 | `xogos_fogar.json` | 10 | 0 | 10 |
 | `registro/frases_propias.json` | 9 | 0 | 9 |
-| `registro/frases_lua.json` | 64 | 0 | 64 |
+| `registro/frases_lua.json` | 140 | 0 | 140 |
 
 ## Lo que todavía no entra, y dónde se resuelve
 

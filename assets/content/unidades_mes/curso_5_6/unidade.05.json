@@ -104,5 +104,326 @@
     "3_4.decembro.s2.light"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.05",
+    "titulo": {
+      "gl": "Lúa e a auga dos paxariños",
+      "es": "Lúa y el agua de los pajaritos"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Jardín de invierno con escarcha BLANCA. Una fuente pequeña de piedra con el agua congelada (hielo AZUL CLARO). En el borde, tres gorriones MARRONES con bufandas AMARILLAS tiritan. Lúa, a la izquierda, con un plato AZUL en las manos.",
+        "trama": {
+          "gl": "Que mañá tan fría de xaneiro! No xardín, a fonte dos paxariños está xeada e eles non poden beber. Lúa ten unha idea: encher un prato azul con auga e levarllo.",
+          "es": "¡Qué mañana tan fría de enero! En el jardín, la fuente de los pajaritos está helada y no pueden beber. Lúa tiene una idea: llenar un plato azul de agua y llevárselo."
+        },
+        "lua": {
+          "onomatopeia": "Brrr, brrr!",
+          "ref": "frase.lua.5_6.05.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the ice? Touch the frozen fountain!",
+            "axuda": {
+              "gl": "Pasa o dedo polo xeo da fonte e agarda.",
+              "es": "Pasa el dedo por el hielo de la fuente y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you shiver like the little birds? Brrr!",
+            "axuda": {
+              "gl": "Encolle os ombreiros e treme un pouquiño.",
+              "es": "Encoge los hombros y tiembla un poquito."
+            }
+          },
+          "achegar": {
+            "en": "Do you see birds near your home?",
+            "axuda": {
+              "gl": "Pregunta e agarda. Se di que si, amplíao: «You see little birds! Tweet, tweet!».",
+              "es": "Pregunta y espera. Si dice que sí, amplíalo: «You see little birds! Tweet, tweet!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the water is ice. Cold, cold!",
+            "axuda": {
+              "gl": "Frega ti os brazos coma con frío e sinala a fonte.",
+              "es": "Frótate tú los brazos como con frío y señala la fuente."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The fountain! It's frozen and cold!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Xeo!",
+              "es": "¡Hielo!"
+            },
+            "acolle": {
+              "gl": "Si, a auga está xeada!",
+              "es": "¡Sí, el agua está helada!"
+            },
+            "en": "Ice! The water is cold ice!"
+          },
+          "unhaPalabra": {
+            "di": "Cold!",
+            "en": "Yes, so cold! Cold water!"
+          },
+          "formaTorcida": {
+            "di": "Birds is cold!",
+            "en": "Yes, the birds are cold!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What can Lúa do for the little birds?",
+          "axuda": {
+            "gl": "Pregunta e agarda moito: aquí todo serve. Acolle a idea e devólvella nunha frase: «Lúa can give them water!».",
+            "es": "Pregunta y espera mucho: aquí vale todo. Acoge la idea y devuélvesela en una frase: «Lúa can give them water!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa con el plato AZUL lleno de agua en las dos manos, mirando el suelo con atención. El camino del jardín brilla de escarcha BLANCA. Delante, un tronco bajo atravesado. Al fondo, los tres gorriones MARRONES con bufandas AMARILLAS esperan sobre la fuente helada.",
+        "trama": {
+          "gl": "Lúa enche o prato azul de auga. Pero o camiño do xardín está xeado e esvaradío, e no medio hai un tronco baixo. Se vai rápido, a auga vaise derramar! Fai frío, así que… con moito coidado.",
+          "es": "Lúa llena el plato azul de agua. Pero el camino del jardín está helado y resbaladizo, y en medio hay un tronco bajo. Si va rápido, ¡el agua se va a derramar! Hace frío, así que… con mucho cuidado."
+        },
+        "lua": {
+          "onomatopeia": "Wobble, wobble!",
+          "ref": "frase.lua.5_6.05.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the blue plate? Touch the water!",
+            "axuda": {
+              "gl": "Sinala o prato azul e agarda.",
+              "es": "Señala el plato azul y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you walk carefully like Lúa? Slow, slow…",
+            "axuda": {
+              "gl": "Leva un prato imaxinario coas dúas mans e camiña moi amodo.",
+              "es": "Lleva un plato imaginario con las dos manos y camina muy despacio."
+            }
+          },
+          "achegar": {
+            "en": "What do you carry carefully at home?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You carry your cup carefully!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You carry your cup carefully!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa walks carefully. Careful, careful!",
+            "axuda": {
+              "gl": "Fai ti que levas un prato e camiña cos dedos moi amodo.",
+              "es": "Haz tú como que llevas un plato y camina con los dedos muy despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The plate! A blue plate with water!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén a auga do prato.",
+              "es": "Asiente y señala tú también el agua del plato."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Con coidado!",
+              "es": "¡Con cuidado!"
+            },
+            "acolle": {
+              "gl": "Si, con moito coidado!",
+              "es": "¡Sí, con mucho cuidado!"
+            },
+            "en": "Careful! Lúa is careful with the water!"
+          },
+          "unhaPalabra": {
+            "di": "Careful!",
+            "en": "Yes, careful with the water!"
+          },
+          "formaTorcida": {
+            "di": "Lúa walk carefuls!",
+            "en": "Yes, Lúa walks carefully!"
+          }
+        },
+        "casa": {
+          "tipo": "achegar",
+          "en": "What do you do when it is very cold outside?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Acolle o que diga e devólvello nunha frase: «You wear your gloves!».",
+            "es": "Pregunta y espera. Acoge lo que diga y devuélveselo en una frase: «You wear your gloves!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano: Lúa de pie sobre el tronco bajo, un pie delante del otro, con los brazos estirados sosteniendo el plato AZUL; el agua forma una ola pequeña que no llega a salirse. Los tres gorriones MARRONES con bufandas AMARILLAS la miran con las alas en alto.",
+        "trama": {
+          "gl": "Lúa sobe ao tronco. Un pé, outro pé… A auga do prato móvese dun lado ao outro: plis, plas! Os paxariños nin respiran. Lúa respira fondo… e chega ao outro lado sen derramar nin unha pinga!",
+          "es": "Lúa se sube al tronco. Un pie, otro pie… El agua del plato se mueve de un lado a otro: ¡plis, plas! Los pajaritos ni respiran. Lúa respira hondo… ¡y llega al otro lado sin derramar ni una gota!"
+        },
+        "lua": {
+          "onomatopeia": "Splish… splosh!",
+          "ref": "frase.lua.5_6.05.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the log? Touch Lúa's balance beam!",
+            "axuda": {
+              "gl": "Pasa o dedo polo tronco e agarda.",
+              "es": "Pasa el dedo por el tronco y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you balance like Lúa? Arms out… balance!",
+            "axuda": {
+              "gl": "Abre os brazos e fai que te balanceas, sen levantar os pés do chan.",
+              "es": "Abre los brazos y haz como que te balanceas, sin levantar los pies del suelo."
+            }
+          },
+          "achegar": {
+            "en": "Where do you like to balance?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You balance on the line in the park!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You balance on the line in the park!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa balances. Step… step… balance!",
+            "axuda": {
+              "gl": "Abre ti os brazos e fai que camiñas por un tronco.",
+              "es": "Abre tú los brazos y haz como que caminas por un tronco."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The log! Lúa balances on the log!",
+            "axuda": {
+              "gl": "Asente e percorre o tronco co dedo.",
+              "es": "Asiente y recorre el tronco con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Equilibrio!",
+              "es": "¡Equilibrio!"
+            },
+            "acolle": {
+              "gl": "Si, que equilibrio!",
+              "es": "¡Sí, qué equilibrio!"
+            },
+            "en": "Balance! Lúa balances the plate on the log!"
+          },
+          "unhaPalabra": {
+            "di": "Balance!",
+            "en": "Yes, Lúa balances the plate!"
+          },
+          "formaTorcida": {
+            "di": "Step acrossed!",
+            "en": "Yes, she stepped across!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did Lúa carry across the log?",
+          "axuda": {
+            "gl": "Se non se lembra, fai o xesto de levar un prato coas dúas mans e agarda: «A plate of water!».",
+            "es": "Si no se acuerda, haz el gesto de llevar un plato con las dos manos y espera: «A plate of water!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa sentada en el suelo junto al plato AZUL, ya colocado al lado de la fuente helada. Los tres gorriones MARRONES con bufandas AMARILLAS beben del plato con el pico dentro del agua. Lúa sonríe con las manos en las rodillas.",
+        "trama": {
+          "gl": "Lúa pousa o prato ao lado da fonte. Os paxariños baixan voando e beben, glu, glu, glu. Que fresquiña está a auga! Despois cantan pío, pío, para darlle as grazas.",
+          "es": "Lúa deja el plato al lado de la fuente. Los pajaritos bajan volando y beben, glu, glu, glu. ¡Qué fresquita está el agua! Después cantan pío, pío, para darle las gracias."
+        },
+        "lua": {
+          "onomatopeia": "Glug, glug, tweet!",
+          "ref": "frase.lua.5_6.05.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the little birds? Touch a bird!",
+            "axuda": {
+              "gl": "Sinala un paxariño e agarda.",
+              "es": "Señala un pajarito y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you drink like the little birds? Peck, peck, glug!",
+            "axuda": {
+              "gl": "Fai un pico cos dedos e lévao á boca: glu, glu.",
+              "es": "Haz un pico con los dedos y llévatelo a la boca: glu, glu."
+            }
+          },
+          "achegar": {
+            "en": "What do you drink when you are thirsty?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You drink water!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You drink water!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the birds drink the water. Glug, glug!",
+            "axuda": {
+              "gl": "Fai ti o pico cos dedos e bebe coma os paxariños.",
+              "es": "Haz tú el pico con los dedos y bebe como los pajaritos."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The birds! Three little birds drink!",
+            "axuda": {
+              "gl": "Asente e conta ti os paxariños co dedo.",
+              "es": "Asiente y cuenta tú los pajaritos con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Beben!",
+              "es": "¡Beben!"
+            },
+            "acolle": {
+              "gl": "Si, beben auga!",
+              "es": "¡Sí, beben agua!"
+            },
+            "en": "They drink! The little birds drink the water!"
+          },
+          "unhaPalabra": {
+            "di": "Water!",
+            "en": "Yes, water for the birds!"
+          },
+          "formaTorcida": {
+            "di": "Birds drinked!",
+            "en": "Yes, the birds drank the water!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Here is your…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e move os dedos coma auga: «…water! Here is your water!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y mueve los dedos como agua: «…water! Here is your water!»."
+          }
+        }
+      }
+    ]
+  }
 }

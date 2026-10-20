@@ -104,5 +104,326 @@
     "3_4.novembro.s2.chestnut"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.04",
+    "titulo": {
+      "gl": "Lúa e a luz máis brillante",
+      "es": "Lúa y la luz más brillante"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Noche de invierno en azul oscuro, en planos limpios. Lúa sujeta un farol con una vela ENCENDIDA dentro, que da una luz amarilla. A su lado, un ratón GRIS con gorro AZUL mira la luz con la boca abierta. En el suelo, una cuerda ROJA que se aleja por el camino.",
+        "trama": {
+          "gl": "É a noite máis longa do inverno e escurece moi cedo. Lúa e o rato queren levarlle luz á avoa curuxa, que vive ao final do camiño. A vela xa está acesa dentro do farol: que luz tan bonita! Unha corda vermella no chan marca o camiño.",
+          "es": "Es la noche más larga del invierno y oscurece muy pronto. Lúa y el ratón quieren llevarle luz a la abuela lechuza, que vive al final del camino. La vela ya está encendida dentro del farol: ¡qué luz tan bonita! Una cuerda roja en el suelo marca el camino."
+        },
+        "lua": {
+          "onomatopeia": "Flicker, flicker!",
+          "ref": "frase.lua.5_6.04.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the candle? Touch the light!",
+            "axuda": {
+              "gl": "Sinala a vela do farol e agarda.",
+              "es": "Señala la vela del farol y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a candle light? Close your hands… and open! Light!",
+            "axuda": {
+              "gl": "Pecha as mans e ábreas de golpe, coma unha luz que se acende.",
+              "es": "Cierra las manos y ábrelas de golpe, como una luz que se enciende."
+            }
+          },
+          "achegar": {
+            "en": "Do you have a little light in your bedroom at night?",
+            "axuda": {
+              "gl": "Pregunta e agarda. Se di que si, amplíao: «You have a little light! A night light!».",
+              "es": "Pregunta y espera. Si dice que sí, amplíalo: «You have a little light! A night light!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa has a candle. A candle light!",
+            "axuda": {
+              "gl": "Abre ti as mans de golpe e sinala a vela.",
+              "es": "Abre tú las manos de golpe y señala la vela."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The candle! A yellow candle light!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha vela!",
+              "es": "¡Una vela!"
+            },
+            "acolle": {
+              "gl": "Si, unha vela acesa!",
+              "es": "¡Sí, una vela encendida!"
+            },
+            "en": "A candle! A candle in the lantern!"
+          },
+          "unhaPalabra": {
+            "di": "Light!",
+            "en": "Yes, a candle light!"
+          },
+          "formaTorcida": {
+            "di": "Candel!",
+            "en": "Yes, a candle! A candle light!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "What is in the lantern?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o di na súa lingua, devólvello nunha frase: «A candle! A candle light!».",
+            "es": "Pregunta y espera. Si lo dice en su lengua, devuélveselo en una frase: «A candle! A candle light!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Camino nocturno en azul oscuro. Lúa y el ratón GRIS con gorro AZUL caminan de la mano junto a la cuerda ROJA del suelo; Lúa lleva el farol con la vela ENCENDIDA en la otra mano. La llama se inclina un poco. Detrás de ellos, huellas pequeñas y muy juntas.",
+        "trama": {
+          "gl": "O rato corre e a chama da vela treme: fsss, case se apaga! Lúa para. Mellor amodo. Danse a man e camiñan devagar, paso a paso, xunto á corda vermella. Agora a luz vai tranquila.",
+          "es": "El ratón corre y la llama de la vela tiembla: ¡fsss, casi se apaga! Lúa se para. Mejor despacio. Se dan la mano y caminan despacito, paso a paso, junto a la cuerda roja. Ahora la luz va tranquila."
+        },
+        "lua": {
+          "onomatopeia": "Tip… tap… tip… tap…",
+          "ref": "frase.lua.5_6.04.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the red rope? Touch the rope!",
+            "axuda": {
+              "gl": "Pasa o dedo pola corda vermella e agarda.",
+              "es": "Pasa el dedo por la cuerda roja y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you walk slow like Lúa and the mouse? Slow… slow…",
+            "axuda": {
+              "gl": "Camiña cos dedos pola mesa, moi amodo.",
+              "es": "Camina con los dedos por la mesa, muy despacio."
+            }
+          },
+          "achegar": {
+            "en": "Who do you walk hand in hand with?",
+            "axuda": {
+              "gl": "Dálle a man e agarda. Se nomea a alguén, devólvello: «You walk hand in hand with Dad!».",
+              "es": "Dale la mano y espera. Si nombra a alguien, devuélveselo: «You walk hand in hand with Dad!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa walks slow. Hand in hand!",
+            "axuda": {
+              "gl": "Cóllelle a man con suavidade e camiñade cos dedos, amodo.",
+              "es": "Cógele la mano con suavidad y caminad con los dedos, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The rope! They walk by the red rope!",
+            "axuda": {
+              "gl": "Asente e segue ti tamén a corda co dedo.",
+              "es": "Asiente y sigue tú también la cuerda con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Da man!",
+              "es": "¡De la mano!"
+            },
+            "acolle": {
+              "gl": "Si, van da man!",
+              "es": "¡Sí, van de la mano!"
+            },
+            "en": "Hand in hand! Lúa and the mouse walk hand in hand!"
+          },
+          "unhaPalabra": {
+            "di": "Slow!",
+            "en": "Yes, they walk so slow!"
+          },
+          "formaTorcida": {
+            "di": "Walk hand to hand!",
+            "en": "Yes, they walk hand in hand!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Slow… walk slow, hand in…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e dálle a man: «…hand! Hand in hand!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y dale la mano: «…hand! Hand in hand!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Un puente pequeño de madera sobre un arroyo, en el centro. Lúa y el ratón GRIS con gorro AZUL, de la mano, están en mitad del puente; Lúa sostiene el farol con la vela ENCENDIDA. Al otro lado, la cuerda ROJA gira hacia la izquierda y señala una casita lejana con una ventana.",
+        "trama": {
+          "gl": "De súpeto, o camiño chega a un regato. Hai unha ponte pequena de madeira! Crúzana amodiño, dun lado ao outro. Ao final, a corda xira cara á esquerda… e alá lonxe vese unha xanela.",
+          "es": "De repente, el camino llega a un arroyo. ¡Hay un puente pequeño de madera! Lo cruzan despacito, de un lado al otro. Al final, la cuerda gira hacia la izquierda… y allá a lo lejos se ve una ventana."
+        },
+        "lua": {
+          "onomatopeia": "Creak, creak!",
+          "ref": "frase.lua.5_6.04.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little bridge? Touch the bridge!",
+            "axuda": {
+              "gl": "Pasa o dedo pola ponte, dun lado ao outro, e agarda.",
+              "es": "Pasa el dedo por el puente, de un lado al otro, y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you turn left like Lúa? Turn left… and walk!",
+            "axuda": {
+              "gl": "Ergue a man esquerda e xira cara a ese lado, amodo.",
+              "es": "Levanta la mano izquierda y gira hacia ese lado, despacio."
+            }
+          },
+          "achegar": {
+            "en": "What do you see on your way to school?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You see the sea!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You see the sea!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, they walk across the bridge. Creak, creak!",
+            "axuda": {
+              "gl": "Fai ti cos dedos o camiño pola ponte, amodo.",
+              "es": "Haz tú con los dedos el camino por el puente, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bridge! A little wooden bridge!",
+            "axuda": {
+              "gl": "Asente e cruza ti tamén a ponte co dedo.",
+              "es": "Asiente y cruza tú también el puente con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "A ponte!",
+              "es": "¡El puente!"
+            },
+            "acolle": {
+              "gl": "Si, cruzan a ponte!",
+              "es": "¡Sí, cruzan el puente!"
+            },
+            "en": "The bridge! They walk across the bridge!"
+          },
+          "unhaPalabra": {
+            "di": "Bridge!",
+            "en": "Yes, across the little bridge!"
+          },
+          "formaTorcida": {
+            "di": "Walk across of the bridge!",
+            "en": "Yes, they walk across the bridge!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did Lúa and the mouse walk across?",
+          "axuda": {
+            "gl": "Se non se lembra, fai cos dedos o xesto de cruzar unha ponte e agarda: «The bridge! They walked across the bridge!».",
+            "es": "Si no se acuerda, haz con los dedos el gesto de cruzar un puente y espera: «The bridge! They walked across the bridge!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Interior cálido de una casita: la abuela lechuza MARRÓN CLARO con gafas redondas abraza a la vez a Lúa y al ratón GRIS con gorro AZUL. En la ventana, el farol con la vela ENCENDIDA brilla más que las estrellas pequeñas del cielo de fuera.",
+        "trama": {
+          "gl": "A avoa curuxa abre a porta e dálles unha aperta moi grande. Poñen o farol na xanela e a vela brilla tanto que se ve desde todo o bosque. É a luz máis brillante da noite!",
+          "es": "La abuela lechuza abre la puerta y les da un abrazo muy grande. Ponen el farol en la ventana y la vela brilla tanto que se ve desde todo el bosque. ¡Es la luz más brillante de la noche!"
+        },
+        "lua": {
+          "onomatopeia": "Aww… hug!",
+          "ref": "frase.lua.5_6.04.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the brightest light? Touch it!",
+            "axuda": {
+              "gl": "Sinala o farol da xanela e agarda.",
+              "es": "Señala el farol de la ventana y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you give a big hug like Grandma Owl? Hug, hug!",
+            "axuda": {
+              "gl": "Abre os brazos e abrázate amodo.",
+              "es": "Abre los brazos y abrázate despacio."
+            }
+          },
+          "achegar": {
+            "en": "Who gives you big hugs?",
+            "axuda": {
+              "gl": "Agarda. Se nomea a alguén, devólvello: «Grandma gives you big hugs!».",
+              "es": "Espera. Si nombra a alguien, devuélveselo: «Grandma gives you big hugs!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the candle in the window. The brightest light!",
+            "axuda": {
+              "gl": "Sinala a xanela e abre ti as mans de golpe.",
+              "es": "Señala la ventana y abre tú las manos de golpe."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The window! The brightest light in the forest!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha aperta!",
+              "es": "¡Un abrazo!"
+            },
+            "acolle": {
+              "gl": "Si, unha aperta moi grande!",
+              "es": "¡Sí, un abrazo muy grande!"
+            },
+            "en": "A hug! A big hug from Grandma Owl!"
+          },
+          "unhaPalabra": {
+            "di": "Hug!",
+            "en": "Yes, a big warm hug!"
+          },
+          "formaTorcida": {
+            "di": "The more bright light!",
+            "en": "Yes, the brightest light!"
+          }
+        },
+        "casa": {
+          "tipo": "achegar",
+          "en": "Who would you like to give a big hug to tonight?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se nomea a alguén, devólvello: «You give a big hug to Grandpa!».",
+            "es": "Pregunta y espera. Si nombra a alguien, devuélveselo: «You give a big hug to Grandpa!»."
+          }
+        }
+      }
+    ]
+  }
 }

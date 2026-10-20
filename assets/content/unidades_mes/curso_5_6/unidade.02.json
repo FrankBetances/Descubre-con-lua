@@ -107,5 +107,326 @@
     "3_4.xaneiro.s1.coat"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.02",
+    "titulo": {
+      "gl": "Lúa e o coello saltón",
+      "es": "Lúa y el conejo saltarín"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Parque de otoño en planos limpios, con el suelo cubierto de hojas MARRONES. Dos aros de mimbre en el suelo, uno a cada lado. Lúa en el centro, con una hoja en cada mano. A su lado salta un conejo BLANCO con bufanda NARANJA.",
+        "trama": {
+          "gl": "Chegou o outono ao parque e o chan está cheo de follas marróns. Lúa e o seu amigo, o coello branco, traen dous aros de vimbio. O xogo é doado: as follas ásperas, a un aro; as follas lisas, ao outro.",
+          "es": "Ha llegado el otoño al parque y el suelo está lleno de hojas marrones. Lúa y su amigo, el conejo blanco, traen dos aros de mimbre. El juego es fácil: las hojas ásperas, a un aro; las hojas lisas, al otro."
+        },
+        "lua": {
+          "onomatopeia": "Rustle, rustle!",
+          "ref": "frase.lua.5_6.02.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the hoops? Touch a hoop!",
+            "axuda": {
+              "gl": "Debuxa co dedo a roda dun aro e agarda.",
+              "es": "Dibuja con el dedo el redondel de un aro y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you make a hoop with your arms? A big hoop!",
+            "axuda": {
+              "gl": "Xunta as mans por riba da cabeza facendo un aro grande.",
+              "es": "Junta las manos por encima de la cabeza haciendo un aro grande."
+            }
+          },
+          "achegar": {
+            "en": "Who is your friend at school?",
+            "axuda": {
+              "gl": "Agarda. Se nomea a alguén, devólvello en inglés: «Martín is your friend!».",
+              "es": "Espera. Si nombra a alguien, devuélveselo en inglés: «Martín is your friend!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa has a leaf. A brown leaf!",
+            "axuda": {
+              "gl": "Sinala unha folla e fai ti co brazo como cae, amodo.",
+              "es": "Señala una hoja y haz tú con el brazo cómo cae, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! A hoop! A big wicker hoop!",
+            "axuda": {
+              "gl": "Asente e pasa ti tamén o dedo polo aro.",
+              "es": "Asiente y pasa tú también el dedo por el aro."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha folla!",
+              "es": "¡Una hoja!"
+            },
+            "acolle": {
+              "gl": "Si, unha folla marrón!",
+              "es": "¡Sí, una hoja marrón!"
+            },
+            "en": "A leaf! A brown autumn leaf!"
+          },
+          "unhaPalabra": {
+            "di": "Leaf!",
+            "en": "Yes, a brown leaf!"
+          },
+          "formaTorcida": {
+            "di": "Leafs!",
+            "en": "Yes, lots of leaves!"
+          }
+        },
+        "casa": {
+          "tipo": "achegar",
+          "en": "Do you play with leaves in the park?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se di que si, amplíao: «You play with leaves! Crunch, crunch!».",
+            "es": "Pregunta y espera. Si dice que sí, amplíalo: «You play with leaves! Crunch, crunch!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano de un aro de mimbre lleno de hojas MARRONES mezcladas, unas arrugadas y otras lisas. El conejo BLANCO con bufanda NARANJA, en mitad de un salto, deja caer más hojas dentro. Lúa, a un lado, toca una hoja arrugada con la punta de los dedos. El otro aro, vacío.",
+        "trama": {
+          "gl": "O coello está tan contento que salta, salta… e bota todas as follas no mesmo aro! Agora están todas mesturadas. Lúa colle unha e pasa os dedos por riba: ui, que áspera! Esta non vai aquí.",
+          "es": "El conejo está tan contento que salta, salta… ¡y echa todas las hojas en el mismo aro! Ahora están todas mezcladas. Lúa coge una y pasa los dedos por encima: ¡uy, qué áspera! Esta no va aquí."
+        },
+        "lua": {
+          "onomatopeia": "Scritch, scratch!",
+          "ref": "frase.lua.5_6.02.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the empty hoop? Touch it!",
+            "axuda": {
+              "gl": "Sinala o aro baleiro e agarda.",
+              "es": "Señala el aro vacío y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you feel a rough leaf? Scratch, scratch!",
+            "axuda": {
+              "gl": "Pasa as unllas pola palma da man, amodo.",
+              "es": "Pasa las uñas por la palma de la mano, despacio."
+            }
+          },
+          "achegar": {
+            "en": "What is rough in your house?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «Your towel is rough!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «Your towel is rough!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa feels the leaf. Rough!",
+            "axuda": {
+              "gl": "Pasa ti os dedos pola folla da lámina, sen dicir máis.",
+              "es": "Pasa tú los dedos por la hoja de la lámina, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes, that hoop! Rough leaves into that hoop!",
+            "axuda": {
+              "gl": "Asente e leva ti o dedo desde a folla ata o aro.",
+              "es": "Asiente y lleva tú el dedo desde la hoja hasta el aro."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Áspera!",
+              "es": "¡Áspera!"
+            },
+            "acolle": {
+              "gl": "Si, moi áspera!",
+              "es": "¡Sí, muy áspera!"
+            },
+            "en": "Rough! A rough leaf into the hoop!"
+          },
+          "unhaPalabra": {
+            "di": "Rough!",
+            "en": "Yes, a rough brown leaf!"
+          },
+          "formaTorcida": {
+            "di": "Leaf in to hoop!",
+            "en": "Yes, the leaf goes into the hoop!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "Where does the rough leaf go?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala o aro, devólvello nunha frase: «Into this hoop!».",
+            "es": "Pregunta y espera. Si señala el aro, devuélveselo en una frase: «Into this hoop!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Los dos aros de mimbre, cada uno con cinco hojas MARRONES bien separadas: arrugadas en uno, lisas y brillantes en el otro. Lúa y el conejo BLANCO con bufanda NARANJA, agachados entre los dos aros, cuentan con los dedos levantados.",
+        "trama": {
+          "gl": "Xuntos, folla a folla, volven facer o xogo: ásperas aquí, lisas alí. Agora toca contar. Un, dous, tres, catro, cinco… e no outro aro, un, dous, tres, catro… cinco! Hai as mesmas!",
+          "es": "Juntos, hoja a hoja, vuelven a hacer el juego: ásperas aquí, lisas allí. Ahora toca contar. Uno, dos, tres, cuatro, cinco… y en el otro aro, uno, dos, tres, cuatro… ¡cinco! ¡Hay las mismas!"
+        },
+        "lua": {
+          "onomatopeia": "Tap, tap, tap!",
+          "ref": "frase.lua.5_6.02.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the smooth leaves? Touch a smooth leaf!",
+            "axuda": {
+              "gl": "Pasa o dedo moi suave polas follas lisas e agarda.",
+              "es": "Pasa el dedo muy suave por las hojas lisas y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you count like the rabbit? One, two, three, four, five!",
+            "axuda": {
+              "gl": "Conta cos dedos, un a un, e agarda que te siga.",
+              "es": "Cuenta con los dedos, uno a uno, y espera a que te siga."
+            }
+          },
+          "achegar": {
+            "en": "What can you count at home?",
+            "axuda": {
+              "gl": "Agarda. Se di algo, contade xuntos en inglés: «You count your toys! One, two, three!».",
+              "es": "Espera. Si dice algo, contad juntos en inglés: «You count your toys! One, two, three!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa counts the leaves. One, two, three…",
+            "axuda": {
+              "gl": "Conta ti as follas cos dedos, amodo, sen présa.",
+              "es": "Cuenta tú las hojas con los dedos, despacio, sin prisa."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Smooth leaves! Five smooth leaves!",
+            "axuda": {
+              "gl": "Asente e conta ti as follas que sinalou.",
+              "es": "Asiente y cuenta tú las hojas que ha señalado."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Cinco!",
+              "es": "¡Cinco!"
+            },
+            "acolle": {
+              "gl": "Si, cinco follas!",
+              "es": "¡Sí, cinco hojas!"
+            },
+            "en": "Five! Five smooth leaves and five rough leaves!"
+          },
+          "unhaPalabra": {
+            "di": "Five!",
+            "en": "Yes, five smooth leaves!"
+          },
+          "formaTorcida": {
+            "di": "Five leafs smooth!",
+            "en": "Yes, five smooth leaves!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Count, friend! Smooth and…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e, se fai falla, pasa as unllas pola man: «…rough! Smooth and rough!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y, si hace falta, pasa las uñas por la mano: «…rough! Smooth and rough!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa y el conejo BLANCO con bufanda NARANJA, en el aire, saltan con los dos pies juntos hacia dentro de un aro de mimbre, sonriendo. Hojas MARRONES vuelan alrededor de sus pies. El otro aro espera al lado.",
+        "trama": {
+          "gl": "Para celebralo, o coello ten unha idea: saltar dun aro ao outro, cos dous pés á vez! Hop, dentro; hop, fóra; hop, ao outro aro. Lúa e o coello saltan e rin ata que se cansan.",
+          "es": "Para celebrarlo, el conejo tiene una idea: ¡saltar de un aro al otro, con los dos pies a la vez! Hop, dentro; hop, fuera; hop, al otro aro. Lúa y el conejo saltan y se ríen hasta cansarse."
+        },
+        "lua": {
+          "onomatopeia": "Hop, hop, hooop!",
+          "ref": "frase.lua.5_6.02.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the white rabbit? Touch his feet!",
+            "axuda": {
+              "gl": "Sinala os pés do coello e agarda.",
+              "es": "Señala los pies del conejo y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you jump like the rabbit? Jump, jump… stop!",
+            "axuda": {
+              "gl": "Fai un saltiño cos pés xuntos e para de súpeto en «stop».",
+              "es": "Da un saltito con los pies juntos y para de golpe en «stop»."
+            }
+          },
+          "achegar": {
+            "en": "Where do you like to jump?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello: «You jump in the park!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo: «You jump in the park!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa jumps into the hoop. Hop!",
+            "axuda": {
+              "gl": "Fai ti un saltiño cos dedos pola mesa, ata dentro dun aro imaxinario.",
+              "es": "Haz tú un saltito con los dedos por la mesa, hasta dentro de un aro imaginario."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The rabbit! He jumps into the hoop!",
+            "axuda": {
+              "gl": "Asente e fai saltar o teu dedo ao lado do seu.",
+              "es": "Asiente y haz saltar tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Salta!",
+              "es": "¡Salta!"
+            },
+            "acolle": {
+              "gl": "Si, salta moi alto!",
+              "es": "¡Sí, salta muy alto!"
+            },
+            "en": "Jump! The rabbit jumps into the hoop!"
+          },
+          "unhaPalabra": {
+            "di": "Jump!",
+            "en": "Yes, jump into the hoop!"
+          },
+          "formaTorcida": {
+            "di": "Rabbit jumped in hoop!",
+            "en": "Yes, the rabbit jumped into the hoop!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did the rabbit do with the leaves?",
+          "axuda": {
+            "gl": "Se non se lembra, fai o xesto de botar follas nun aro e agarda: «He put all the leaves into one hoop!».",
+            "es": "Si no se acuerda, haz el gesto de echar hojas en un aro y espera: «He put all the leaves into one hoop!»."
+          }
+        }
+      }
+    ]
+  }
 }

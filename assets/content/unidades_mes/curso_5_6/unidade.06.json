@@ -101,5 +101,326 @@
     "3_4.abril.s4.balance"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.06",
+    "titulo": {
+      "gl": "Lúa, escultora no Entroido",
+      "es": "Lúa, escultora en Carnaval"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Sala con un baúl abierto lleno de telas de colores. Lúa con boina NEGRA de escultora y una espátula de madera en la mano. Un pingüino NEGRO Y BLANCO con pajarita ROJA, con las alas levantadas, tiene la cabeza metida en un disfraz de dragón VERDE que no le acaba de entrar.",
+        "trama": {
+          "gl": "Chega o Entroido! No baúl hai disfraces de todas as cores. O pingüín escolle un de dragón verde, pero non hai maneira de metelo: quedou atrapado coa cabeza dentro! Lúa ri e dálle unha pista.",
+          "es": "¡Llega el Carnaval! En el baúl hay disfraces de todos los colores. El pingüino elige uno de dragón verde, pero no hay manera de ponérselo: ¡se ha quedado atrapado con la cabeza dentro! Lúa se ríe y le da una pista."
+        },
+        "lua": {
+          "onomatopeia": "Swoosh!",
+          "ref": "frase.lua.5_6.06.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the green costume? Touch the dragon!",
+            "axuda": {
+              "gl": "Sinala o disfrace de dragón e agarda.",
+              "es": "Señala el disfraz de dragón y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you put on a costume? Arms up… and in!",
+            "axuda": {
+              "gl": "Sube os brazos de golpe e baixa as mans pola cabeza, coma metendo un disfrace.",
+              "es": "Sube los brazos de golpe y baja las manos por la cabeza, como metiéndote un disfraz."
+            }
+          },
+          "achegar": {
+            "en": "What costume do you want for Carnival?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You want a pirate costume!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You want a pirate costume!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, arms up! The costume goes on!",
+            "axuda": {
+              "gl": "Sube ti os brazos de golpe e agarda.",
+              "es": "Sube tú los brazos de golpe y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The costume! A green dragon costume!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un dragón!",
+              "es": "¡Un dragón!"
+            },
+            "acolle": {
+              "gl": "Si, un disfrace de dragón!",
+              "es": "¡Sí, un disfraz de dragón!"
+            },
+            "en": "A dragon! A green dragon costume!"
+          },
+          "unhaPalabra": {
+            "di": "Dragon!",
+            "en": "Yes, a green dragon costume!"
+          },
+          "formaTorcida": {
+            "di": "Arm ups!",
+            "en": "Yes, arms up!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "A costume! Arms…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e sube ti os brazos: «…up! Arms up!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y sube tú los brazos: «…up! Arms up!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa, con boina NEGRA, levanta el brazo izquierdo y dobla una pierna en una pose divertida. Enfrente, el pingüino NEGRO Y BLANCO con pajarita ROJA y el disfraz de dragón VERDE ya puesto intenta copiarla, pero levanta el ala derecha y se tambalea.",
+        "trama": {
+          "gl": "Lúa é a escultora e o pingüín, a súa estatua. «Copia os meus movementos», dille. Ela ergue o brazo esquerdo… e o pingüín, o dereito! E ademais non para de tremer coma unha vara verde.",
+          "es": "Lúa es la escultora y el pingüino, su estatua. «Copia mis movimientos», le dice. Ella levanta el brazo izquierdo… ¡y el pingüino, el derecho! Y además no para de temblar como un flan."
+        },
+        "lua": {
+          "onomatopeia": "Wibble, wobble!",
+          "ref": "frase.lua.5_6.06.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is Lúa's left arm? Touch it!",
+            "axuda": {
+              "gl": "Sinala o brazo esquerdo de Lúa e agarda.",
+              "es": "Señala el brazo izquierdo de Lúa y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you copy my movements? Left arm up!",
+            "axuda": {
+              "gl": "Ergue a man esquerda, amodo, e agarda a que te copie.",
+              "es": "Levanta la mano izquierda, despacio, y espera a que te copie."
+            }
+          },
+          "achegar": {
+            "en": "Who do you like to copy?",
+            "axuda": {
+              "gl": "Agarda. Se nomea a alguén, devólvello en inglés: «You copy your big sister!».",
+              "es": "Espera. Si nombra a alguien, devuélveselo en inglés: «You copy your big sister!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa moves. Copy my movements!",
+            "axuda": {
+              "gl": "Ergue ti o brazo esquerdo e queda agardando.",
+              "es": "Levanta tú el brazo izquierdo y quédate esperando."
+            }
+          },
+          "sinala": {
+            "en": "Yes! That arm! The left arm up!",
+            "axuda": {
+              "gl": "Asente e ergue ti tamén o brazo esquerdo.",
+              "es": "Asiente y levanta tú también el brazo izquierdo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Esquerdo!",
+              "es": "¡Izquierdo!"
+            },
+            "acolle": {
+              "gl": "Si, o brazo esquerdo!",
+              "es": "¡Sí, el brazo izquierdo!"
+            },
+            "en": "Left! Lúa puts her left arm up!"
+          },
+          "unhaPalabra": {
+            "di": "Left!",
+            "en": "Yes, left arm up!"
+          },
+          "formaTorcida": {
+            "di": "Copy my movings!",
+            "en": "Yes, copy my movements!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What shape can you make with your body?",
+          "axuda": {
+            "gl": "Pregunta e agarda moito: aquí todo serve. Copia ti a forma que faga e pona en palabras: «A big round shape!».",
+            "es": "Pregunta y espera mucho: aquí vale todo. Copia tú la forma que haga y ponla en palabras: «A big round shape!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El pingüino NEGRO Y BLANCO con pajarita ROJA y disfraz de dragón VERDE, completamente quieto sobre una caja de madera que hace de pedestal, con un ala en la frente en pose dramática. Lúa, con boina NEGRA, lo mira con las manos juntas y la boca abierta.",
+        "trama": {
+          "gl": "Lúa dá unha palmada: «Estatua!». E esta vez… o pingüín queda quieto, quietiño, cunha á na fronte, coma un actor de teatro. Nin pestanexa! Que estatua tan dramática!",
+          "es": "Lúa da una palmada: «¡Estatua!». Y esta vez… el pingüino se queda quieto, quietecito, con un ala en la frente, como un actor de teatro. ¡Ni parpadea! ¡Qué estatua tan dramática!"
+        },
+        "lua": {
+          "onomatopeia": "Shhh…",
+          "ref": "frase.lua.5_6.06.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the statue? Touch the penguin statue!",
+            "axuda": {
+              "gl": "Sinala o pingüín enriba da caixa e agarda.",
+              "es": "Señala al pingüino encima de la caja y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a dramatic statue? Hand on your head… freeze!",
+            "axuda": {
+              "gl": "Leva a man á fronte e queda inmóbil, sen pestanexar.",
+              "es": "Llévate la mano a la frente y quédate inmóvil, sin parpadear."
+            }
+          },
+          "achegar": {
+            "en": "Who at home can be a statue with you?",
+            "axuda": {
+              "gl": "Agarda. Se nomea a alguén, devólvello en inglés: «You and Mom are statues!».",
+              "es": "Espera. Si nombra a alguien, devuélveselo en inglés: «You and Mum are statues!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the penguin is a statue. Motionless!",
+            "axuda": {
+              "gl": "Queda ti inmóbil coa man na fronte, uns segundos.",
+              "es": "Quédate tú inmóvil con la mano en la frente, unos segundos."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The statue! A dramatic penguin statue!",
+            "axuda": {
+              "gl": "Asente e pon cara de sorpresa.",
+              "es": "Asiente y pon cara de sorpresa."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Quieto!",
+              "es": "¡Quieto!"
+            },
+            "acolle": {
+              "gl": "Si, quieto coma unha estatua!",
+              "es": "¡Sí, quieto como una estatua!"
+            },
+            "en": "Motionless! The penguin is a statue!"
+          },
+          "unhaPalabra": {
+            "di": "Statue!",
+            "en": "Yes, a dramatic statue!"
+          },
+          "formaTorcida": {
+            "di": "Penguin is motionlessing!",
+            "en": "Yes, the penguin is motionless!"
+          }
+        },
+        "casa": {
+          "tipo": "achegar",
+          "en": "Can you be a statue for your family? What statue are you?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Mira a estatua que fai e dilla en inglés: «You are a dramatic dragon statue!».",
+            "es": "Pregunta y espera. Mira la estatua que hace y dísela en inglés: «You are a dramatic dragon statue!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa, con boina NEGRA, y el pingüino NEGRO Y BLANCO con pajarita ROJA, todavía con el disfraz de dragón VERDE, sentados a una mesa con un plato de filloas dobladas. Los dos sonríen y comen. En la mesa, una claqueta de cine pequeña.",
+        "trama": {
+          "gl": "Agora tócalle ao pingüín dirixir! Lúa fai de estatua: un, dous, tres… quieta! O pingüín aplaude. E despois de tanto traballo artístico chega o mellor do Entroido: un prato de filloas quentiñas.",
+          "es": "¡Ahora le toca dirigir al pingüino! Lúa hace de estatua: uno, dos, tres… ¡quieta! El pingüino aplaude. Y después de tanto trabajo artístico llega lo mejor del Carnaval: un plato de filloas calentitas."
+        },
+        "lua": {
+          "onomatopeia": "Yum, yum!",
+          "ref": "frase.lua.5_6.06.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the filloas? Touch the plate!",
+            "axuda": {
+              "gl": "Sinala o prato de filloas e agarda.",
+              "es": "Señala el plato de filloas y espera."
+            }
+          },
+          "imitar": {
+            "en": "First be a statue… then eat a filloa! Can you do it?",
+            "axuda": {
+              "gl": "Queda inmóbil un momento e despois fai que comes.",
+              "es": "Quédate inmóvil un momento y después haz como que comes."
+            }
+          },
+          "achegar": {
+            "en": "What is your favorite food at a party?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «Your favorite food is cake!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «Your favorite food is cake!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, first a statue, then filloas! Yum!",
+            "axuda": {
+              "gl": "Fai ti os dous xestos, un detrás do outro, amodo.",
+              "es": "Haz tú los dos gestos, uno detrás del otro, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The plate! Yummy filloas!",
+            "axuda": {
+              "gl": "Asente e fai que comes unha filloa.",
+              "es": "Asiente y haz como que comes una filloa."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Filloas!",
+              "es": "¡Filloas!"
+            },
+            "acolle": {
+              "gl": "Si, filloas quentiñas!",
+              "es": "¡Sí, filloas calentitas!"
+            },
+            "en": "Filloas! Lúa and the penguin eat filloas!"
+          },
+          "unhaPalabra": {
+            "di": "Eat!",
+            "en": "Yes, now we eat filloas!"
+          },
+          "formaTorcida": {
+            "di": "Then we eated!",
+            "en": "Yes, then we eat!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "Who was the statue at the end?",
+          "axuda": {
+            "gl": "Se non se lembra, queda inmóbil e sinala a Lúa: «Lúa was the statue!».",
+            "es": "Si no se acuerda, quédate inmóvil y señala a Lúa: «Lúa was the statue!»."
+          }
+        }
+      }
+    ]
+  }
 }

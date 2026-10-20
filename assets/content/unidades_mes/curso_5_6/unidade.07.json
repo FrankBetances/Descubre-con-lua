@@ -106,5 +106,326 @@
     "4_5.outubro.s1.statue"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.07",
+    "titulo": {
+      "gl": "Lúa e a miñoca xardineira",
+      "es": "Lúa y la lombriz jardinera"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Mesa de jardín al aire libre, fondo liso con un sol pequeño. Lúa con delantal AMARILLO sostiene una maceta MARRÓN de cartón vacía y, en la otra mano, una semilla pequeña. Del saco de tierra asoma una lombriz ROSA con gafas redondas.",
+        "trama": {
+          "gl": "Chegou a primavera e Lúa quere sementar. Ten un testo marrón de cartón, deses que despois se plantan enteiros, e unha semente pequeniña. Do saco da terra sae unha miñoca rosa: «Podo axudar?»",
+          "es": "Ha llegado la primavera y Lúa quiere sembrar. Tiene una maceta marrón de cartón, de esas que luego se plantan enteras, y una semilla pequeñita. Del saco de tierra sale una lombriz rosa: «¿Puedo ayudar?»"
+        },
+        "lua": {
+          "onomatopeia": "Pop!",
+          "ref": "frase.lua.5_6.07.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the small seed? Touch the seed!",
+            "axuda": {
+              "gl": "Sinala a semente da man de Lúa e agarda.",
+              "es": "Señala la semilla de la mano de Lúa y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a small seed? Curl up small!",
+            "axuda": {
+              "gl": "Encóllete moito, coma unha semente, e agarda.",
+              "es": "Encógete mucho, como una semilla, y espera."
+            }
+          },
+          "achegar": {
+            "en": "Do you have plants at your house?",
+            "axuda": {
+              "gl": "Pregunta e agarda. Se di que si, amplíao: «You have plants! Green plants!».",
+              "es": "Pregunta y espera. Si dice que sí, amplíalo: «You have plants! Green plants!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, a small seed. So small!",
+            "axuda": {
+              "gl": "Pecha ti o puño coma unha semente e sinala a lámina.",
+              "es": "Cierra tú el puño como una semilla y señala la lámina."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The seed! A small brown seed!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha semente!",
+              "es": "¡Una semilla!"
+            },
+            "acolle": {
+              "gl": "Si, unha semente pequeniña!",
+              "es": "¡Sí, una semilla pequeñita!"
+            },
+            "en": "A seed! A small seed for the pot!"
+          },
+          "unhaPalabra": {
+            "di": "Seed!",
+            "en": "Yes, a small seed!"
+          },
+          "formaTorcida": {
+            "di": "A smalls seed!",
+            "en": "Yes, a small seed!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "What is in Lúa's hand?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o di na súa lingua, devólvello nunha frase: «A seed! A small seed!».",
+            "es": "Pregunta y espera. Si lo dice en su lengua, devuélveselo en una frase: «A seed! A small seed!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano de la maceta MARRÓN llena de tierra hasta arriba. Lúa con delantal AMARILLO echa el último puñado de tierra. La lombriz ROSA con gafas redondas asoma la cabeza por el centro de la tierra, haciendo un agujerito. Migas de tierra en la mesa.",
+        "trama": {
+          "gl": "Lúa enche o testo de terra, puñado a puñado, ata arriba. E agora, onde vai a semente? A miñoca métese na terra, fura que fura… e sae deixando un buraquiño perfecto no medio.",
+          "es": "Lúa llena la maceta de tierra, puñado a puñado, hasta arriba. Y ahora, ¿dónde va la semilla? La lombriz se mete en la tierra, excava que te excava… y sale dejando un agujerito perfecto en el medio."
+        },
+        "lua": {
+          "onomatopeia": "Scoop, scoop!",
+          "ref": "frase.lua.5_6.07.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little hole? Touch the soil!",
+            "axuda": {
+              "gl": "Sinala o buraquiño no medio da terra e agarda.",
+              "es": "Señala el agujerito en el medio de la tierra y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you dig like the worm? Wiggle, wiggle, dig!",
+            "axuda": {
+              "gl": "Move un dedo coma unha miñoca e fai que furas na mesa.",
+              "es": "Mueve un dedo como una lombriz y haz como que excavas en la mesa."
+            }
+          },
+          "achegar": {
+            "en": "Where do you play with soil?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You play with soil in the garden!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You play with soil in the garden!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa fills the pot. Soil, soil, soil!",
+            "axuda": {
+              "gl": "Fai ti o xesto de botar terra, puñado a puñado.",
+              "es": "Haz tú el gesto de echar tierra, puñado a puñado."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The soil! Brown soil in the pot!",
+            "axuda": {
+              "gl": "Asente e frega as mans coma con terra.",
+              "es": "Asiente y frótate las manos como con tierra."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Terra!",
+              "es": "¡Tierra!"
+            },
+            "acolle": {
+              "gl": "Si, terra marrón!",
+              "es": "¡Sí, tierra marrón!"
+            },
+            "en": "Soil! Lúa fills the pot with soil!"
+          },
+          "unhaPalabra": {
+            "di": "Soil!",
+            "en": "Yes, soil in the pot!"
+          },
+          "formaTorcida": {
+            "di": "Fill pot soiling!",
+            "en": "Yes, she fills the pot with soil!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "Who made the little hole for the seed?",
+          "axuda": {
+            "gl": "Se non se lembra, move un dedo coma unha miñoca e agarda: «The worm made the hole!».",
+            "es": "Si no se acuerda, mueve un dedo como una lombriz y espera: «The worm made the hole!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "La maceta MARRÓN en la ventana, con un brote VERDE pequeño y caído hacia un lado. Arriba brilla un sol grande y AMARILLO. Lúa con delantal AMARILLO inclina una regadera AZUL de la que caen gotas; la lombriz ROSA con gafas redondas asoma del borde de la maceta y abre la boca para beber una gota.",
+        "trama": {
+          "gl": "Pasan uns días e sae un gromo verde! Pero hoxe o sol aperta moito e o gromo está murcho, coa cabeciña caída. Lúa colle a regadeira: chis, chis, chis. Amodo, o gromo vólvese poñer dereito.",
+          "es": "Pasan unos días y ¡sale un brote verde! Pero hoy el sol aprieta mucho y el brote está mustio, con la cabecita caída. Lúa coge la regadera: chis, chis, chis. Poco a poco, el brote se vuelve a poner derecho."
+        },
+        "lua": {
+          "onomatopeia": "Sprinkle, sprinkle!",
+          "ref": "frase.lua.5_6.07.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the green sprout? Touch it!",
+            "axuda": {
+              "gl": "Sinala o gromo verde e agarda.",
+              "es": "Señala el brote verde y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you water the plants? Tip the watering can… sprinkle!",
+            "axuda": {
+              "gl": "Inclina unha regadeira imaxinaria, amodo, e fai chis, chis.",
+              "es": "Inclina una regadera imaginaria, despacio, y haz chis, chis."
+            }
+          },
+          "achegar": {
+            "en": "What do you do when it is hot?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You eat ice cream!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You eat ice cream!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa waters the plant. It's hot!",
+            "axuda": {
+              "gl": "Abánate coa man e despois inclina a regadeira, sen dicir máis.",
+              "es": "Abanícate con la mano y después inclina la regadera, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The sprout! A little green sprout!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Auga!",
+              "es": "¡Agua!"
+            },
+            "acolle": {
+              "gl": "Si, auga para a planta!",
+              "es": "¡Sí, agua para la planta!"
+            },
+            "en": "Water! Lúa waters the little plant!"
+          },
+          "unhaPalabra": {
+            "di": "Hot!",
+            "en": "Yes, it's hot! We water the plants!"
+          },
+          "formaTorcida": {
+            "di": "Plant drinking waters!",
+            "en": "Yes, the plant drinks water!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "If it's hot, we water the…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e fai co brazo unha regadeira: «…plants! We water the plants!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y haz con el brazo una regadera: «…plants! We water the plants!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Jardín con la planta ya crecida en la tierra: hojas VERDES anchas, más alta que Lúa, y una flor ROJA arriba. Lúa con delantal AMARILLO está tumbada a su sombra, con los ojos cerrados; la lombriz ROSA con gafas redondas duerme enroscada a su lado. Luz suave de tarde.",
+        "trama": {
+          "gl": "Lúa e a miñoca plantan o testo enteiro no xardín, porque o cartón tamén se desfai na terra. Semana a semana, a planta medra e medra… ata ser máis alta ca Lúa! Agora, á súa sombra, as dúas descansan tranquilas.",
+          "es": "Lúa y la lombriz plantan la maceta entera en el jardín, porque el cartón también se deshace en la tierra. Semana a semana, la planta crece y crece… ¡hasta ser más alta que Lúa! Ahora, a su sombra, las dos descansan tranquilas."
+        },
+        "lua": {
+          "onomatopeia": "Aaah… zzz.",
+          "ref": "frase.lua.5_6.07.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the big plant? Touch the red flower!",
+            "axuda": {
+              "gl": "Sinala a flor vermella e agarda.",
+              "es": "Señala la flor roja y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you grow like the plant? Small… small… BIG!",
+            "axuda": {
+              "gl": "Encóllete moito e érguete amodo ata abrir os brazos.",
+              "es": "Encógete mucho y levántate despacio hasta abrir los brazos."
+            }
+          },
+          "achegar": {
+            "en": "What would you like to plant at your house?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You would like to plant tomatoes!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You would like to plant tomatoes!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the plant is big now. So big!",
+            "axuda": {
+              "gl": "Abre ti os brazos moito, coma unha planta xigante.",
+              "es": "Abre tú mucho los brazos, como una planta gigante."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The flower! A big red flower!",
+            "axuda": {
+              "gl": "Asente e debuxa a flor no aire co dedo.",
+              "es": "Asiente y dibuja la flor en el aire con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "É grande!",
+              "es": "¡Es grande!"
+            },
+            "acolle": {
+              "gl": "Si, moi grande!",
+              "es": "¡Sí, muy grande!"
+            },
+            "en": "Big! The plant is big now!"
+          },
+          "unhaPalabra": {
+            "di": "Big!",
+            "en": "Yes, a big, big plant!"
+          },
+          "formaTorcida": {
+            "di": "The plant growed!",
+            "en": "Yes, the plant grew so big!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What do you think can grow from a seed?",
+          "axuda": {
+            "gl": "Pregunta e agarda moito: aquí todo serve. Acolle a idea e devólvella nunha frase: «A big tree from a small seed!».",
+            "es": "Pregunta y espera mucho: aquí vale todo. Acoge la idea y devuélvesela en una frase: «A big tree from a small seed!»."
+          }
+        }
+      }
+    ]
+  }
 }

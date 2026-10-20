@@ -98,5 +98,326 @@
     "3_4.xaneiro.s2.umbrella"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.06",
+    "titulo": {
+      "gl": "Lúa e o son misterioso do monte",
+      "es": "Lúa y el sonido misterioso del monte"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Monte al atardecer, cielo MALVA liso; un río azul cruza la lámina de lado a lado y, al fondo, se ve un puente de madera. Un zorro NARANJA con la punta de la cola BLANCA, de orejas en punta, mira hacia el otro lado del río. Lúa, con una mochilita AZUL, se lleva la mano a la oreja para escuchar.",
+        "trama": {
+          "gl": "Cae a tarde no monte. Lúa atopa un raposo de cola laranxa coa punta branca, que ten as orellas tesas. Desde o outro lado do río chega un son misterioso: tacatá, tacatá, tacatá… Que será?",
+          "es": "Cae la tarde en el monte. Lúa encuentra un zorro de cola naranja con la punta blanca, que tiene las orejas tiesas. Desde el otro lado del río llega un sonido misterioso: tacatá, tacatá, tacatá… ¿Qué será?"
+        },
+        "lua": {
+          "onomatopeia": "Psst… psst!",
+          "ref": "frase.lua.4_5.06.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the fox? Touch the fox's white tail!",
+            "axuda": {
+              "gl": "Sinala a cola do raposo e agarda que a atope.",
+              "es": "Señala la cola del zorro y espera a que la encuentre."
+            }
+          },
+          "imitar": {
+            "en": "Can you make fox ears? Ears up, and listen!",
+            "axuda": {
+              "gl": "Pon as mans enriba da cabeza coma orellas en punta e escoita.",
+              "es": "Pon las manos sobre la cabeza como orejas en punta y escucha."
+            }
+          },
+          "achegar": {
+            "en": "What sounds do you hear at night at home?",
+            "axuda": {
+              "gl": "Leva a man á orella e agarda. Acolle o que diga: «You hear a car!».",
+              "es": "Llévate la mano a la oreja y espera. Acoge lo que diga: «You hear a car!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa listens like the fox. Shhh… tacatá!",
+            "axuda": {
+              "gl": "Leva a man á orella e agarda en silencio.",
+              "es": "Llévate la mano a la oreja y espera en silencio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The fox! An orange fox with a white tail!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un raposo!",
+              "es": "¡Un zorro!"
+            },
+            "acolle": {
+              "gl": "Si, un raposo moi listo!",
+              "es": "¡Sí, un zorro muy listo!"
+            },
+            "en": "A fox! A sly orange fox!"
+          },
+          "unhaPalabra": {
+            "di": "Fox!",
+            "en": "Yes, a sly fox with big ears!"
+          },
+          "formaTorcida": {
+            "di": "The fox hear!",
+            "en": "Yes, the fox hears it!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What do you think the sound is?",
+          "axuda": {
+            "gl": "Agarda e acolle calquera idea, tamén as de risa, e devólvea nunha frase: «A train? Maybe!».",
+            "es": "Espera y acoge cualquier idea, también las de risa, y devuélvela en una frase: «A train? Maybe!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano del puente de madera MARRÓN, con barandillas, sobre el río azul. Lúa, con la mochilita AZUL, y el zorro NARANJA de cola con punta BLANCA lo cruzan agachados, uno detrás del otro, con pasos pequeños. Una luna blanca pequeña en el cielo MALVA.",
+        "trama": {
+          "gl": "Para descubrilo, teñen que pasar á outra beira pola vella ponte de madeira. Van agachados, a paso lento e sen facer ruído, para non espantar a ninguén. Cric… cric… Ata as táboas falan baixiño!",
+          "es": "Para descubrirlo, tienen que pasar a la otra orilla por el viejo puente de madera. Van agachados, a paso lento y sin hacer ruido, para no espantar a nadie. Cric… cric… ¡Hasta las tablas hablan bajito!"
+        },
+        "lua": {
+          "onomatopeia": "Cric… cric…",
+          "ref": "frase.lua.4_5.06.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the bridge? Touch the wooden bridge!",
+            "axuda": {
+              "gl": "Pasa o dedo pola ponte, dun lado ao outro, e agarda.",
+              "es": "Pasa el dedo por el puente, de un lado a otro, y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you sneak like the fox? Quiet, quiet… shhh!",
+            "axuda": {
+              "gl": "Camiña agachándote, amodo e en silencio, polo sitio.",
+              "es": "Camina agachándote, despacio y en silencio, por el sitio."
+            }
+          },
+          "achegar": {
+            "en": "Have you ever walked across a bridge? Where?",
+            "axuda": {
+              "gl": "Fai coa man unha ponte no aire e agarda. Acolle o sitio: «In Vigo!».",
+              "es": "Haz con la mano un puente en el aire y espera. Acoge el sitio: «In Vigo!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa sneaks across the bridge. Shhh!",
+            "axuda": {
+              "gl": "Fai ti pasos pequenos e silenciosos cos dedos pola ponte da lámina.",
+              "es": "Haz tú pasos pequeños y silenciosos con los dedos por el puente de la lámina."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bridge! A long wooden bridge!",
+            "axuda": {
+              "gl": "Asente e cruza ti tamén a ponte co dedo.",
+              "es": "Asiente y cruza tú también el puente con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "A ponte!",
+              "es": "¡El puente!"
+            },
+            "acolle": {
+              "gl": "Si, pasan pola ponte!",
+              "es": "¡Sí, pasan por el puente!"
+            },
+            "en": "The bridge! They walk across the bridge!"
+          },
+          "unhaPalabra": {
+            "di": "Bridge!",
+            "en": "Yes, we sneak across the bridge!"
+          },
+          "formaTorcida": {
+            "di": "We walk on across bridge!",
+            "en": "Yes, we walk across the bridge!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "How did Lúa and the fox cross the bridge?",
+          "axuda": {
+            "gl": "Se non se lembra, dá uns pasos agachados e silenciosos e agarda: «Very quietly! They sneak!».",
+            "es": "Si no se acuerda, da unos pasos agachados y silenciosos y espera: «Very quietly! They sneak!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "La otra orilla, con niebla BLANCA baja. Entre la niebla, tres caballos MARRÓN OSCURO de crin NEGRA, quietos: se ven sus siluetas y los ojos. Lúa, con la mochilita AZUL, y el zorro NARANJA de cola con punta BLANCA, también quietos, los miran con los ojos muy abiertos y cara de curiosidad, no de miedo.",
+        "trama": {
+          "gl": "Na outra beira hai moita néboa. Entre a néboa vense unhas sombras grandes, quietas, quietiñas… Lúa e o raposo tampouco se moven. E de súpeto, unha das sombras resopra: brrrf! Son cabalos salvaxes do monte!",
+          "es": "En la otra orilla hay mucha niebla. Entre la niebla se ven unas sombras grandes, quietas, quietecitas… Lúa y el zorro tampoco se mueven. Y de repente, una de las sombras resopla: ¡brrrf! ¡Son caballos salvajes del monte!"
+        },
+        "lua": {
+          "onomatopeia": "Brrrf!",
+          "ref": "frase.lua.4_5.06.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the horses? Touch the horses in the fog!",
+            "axuda": {
+              "gl": "Sinala as sombras da néboa e agarda.",
+              "es": "Señala las sombras de la niebla y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be motionless like the horses? Not a move!",
+            "axuda": {
+              "gl": "Non te movas nada uns segundos e agarda.",
+              "es": "No te muevas nada unos segundos y espera."
+            }
+          },
+          "achegar": {
+            "en": "Have you ever seen a horse? Where was it?",
+            "axuda": {
+              "gl": "Fai coma se suxeitases unhas rédeas e agarda. Acolle o sitio: «On a farm!».",
+              "es": "Haz como si sujetaras unas riendas y espera. Acoge el sitio: «On a farm!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa is motionless. Shhh… the horses!",
+            "axuda": {
+              "gl": "Non te movas e sinala amodo as sombras.",
+              "es": "No te muevas y señala despacio las sombras."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Horses! Big brown horses!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo xunto ao seu.",
+              "es": "Asiente y pon tu dedo junto al suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Cabalos!",
+              "es": "¡Caballos!"
+            },
+            "acolle": {
+              "gl": "Si, cabalos salvaxes!",
+              "es": "¡Sí, caballos salvajes!"
+            },
+            "en": "Horses! Mysterious horses in the fog!"
+          },
+          "unhaPalabra": {
+            "di": "Horse!",
+            "en": "Yes, three big horses in the fog!"
+          },
+          "formaTorcida": {
+            "di": "Horses is no move!",
+            "en": "Yes, the horses are not moving!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What was the mysterious sound?",
+          "axuda": {
+            "gl": "Se non se lembra, fai tacatá coas mans nas pernas e agarda: «The horses!».",
+            "es": "Si no se acuerda, haz tacatá con las manos en las piernas y espera: «The horses!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Prado verde abierto, cielo MALVA con la luna. Los tres caballos MARRÓN OSCURO de crin NEGRA galopan, y a su lado un potrillo pequeño del mismo color. Lúa, con la mochilita AZUL, y el zorro NARANJA de cola con punta BLANCA galopan con ellos, felices, con líneas de movimiento detrás.",
+        "trama": {
+          "gl": "Un poldro pequeniño achégase, cheira o raposo e… dálle un toque co fociño! Entón os cabalos botan a correr polo prado, e Lúa e o raposo galopan con eles. Tacatá, tacatá, tacatá! Que festa no monte!",
+          "es": "Un potrillo pequeñito se acerca, huele al zorro y… ¡le da un toque con el hocico! Entonces los caballos echan a correr por el prado, y Lúa y el zorro galopan con ellos. ¡Tacatá, tacatá, tacatá! ¡Qué fiesta en el monte!"
+        },
+        "lua": {
+          "onomatopeia": "Tacatá, tacatá, tacatá!",
+          "ref": "frase.lua.4_5.06.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the baby horse? Touch the little foal!",
+            "axuda": {
+              "gl": "Sinala o poldro pequeno e agarda.",
+              "es": "Señala el potrillo pequeño y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you gallop like a horse? Gallop, gallop… and stop!",
+            "axuda": {
+              "gl": "Galopa no sitio cunha perna diante e para en «stop».",
+              "es": "Galopa en el sitio con una pierna delante y para en «stop»."
+            }
+          },
+          "achegar": {
+            "en": "Where do you run and play with your friends?",
+            "axuda": {
+              "gl": "Move os brazos coma se correses e agarda. Acolle o sitio: «In the playground!».",
+              "es": "Mueve los brazos como si corrieras y espera. Acoge el sitio: «In the playground!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa gallops. Tacatá, tacatá!",
+            "axuda": {
+              "gl": "Galopa ti un pouco no sitio, sen dicir máis.",
+              "es": "Galopa tú un poco en el sitio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The little foal! A baby horse!",
+            "axuda": {
+              "gl": "Asente e fai coas mans un fociño que dá un toque.",
+              "es": "Asiente y haz con las manos un hocico que da un toque."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un poldriño!",
+              "es": "¡Un potrillo!"
+            },
+            "acolle": {
+              "gl": "Si, un poldriño pequeno!",
+              "es": "¡Sí, un potrillo pequeño!"
+            },
+            "en": "A foal! A baby horse! It gallops too!"
+          },
+          "unhaPalabra": {
+            "di": "Gallop!",
+            "en": "Yes, gallop! The horses gallop fast!"
+          },
+          "formaTorcida": {
+            "di": "Fox gallop with horse!",
+            "en": "Yes, the fox gallops with the horses!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did the little foal do?",
+          "axuda": {
+            "gl": "Se non se lembra, toca suave o seu nariz co teu e agarda: «He touched the fox with his nose!».",
+            "es": "Si no se acuerda, toca suave su nariz con la tuya y espera: «He touched the fox with his nose!»."
+          }
+        }
+      }
+    ]
+  }
 }

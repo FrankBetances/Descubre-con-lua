@@ -97,5 +97,326 @@
     "3_4.novembro.s2.squirrel"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.03",
+    "titulo": {
+      "gl": "Lúa e a castaña que rodaba",
+      "es": "Lúa y la castaña que rodaba"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Lo alto de una colina en otoño, con el suelo cubierto de hojas NARANJA VIVO. Un erizo MARRÓN con una hoja NARANJA pinchada en las púas sostiene con las patas una castaña MARRÓN BRILLANTE, grande. Lúa, con una cesta de MIMBRE en el brazo, se agacha a mirarla. Abajo, muy pequeña, se adivina una hoguera.",
+        "trama": {
+          "gl": "Chega o magosto! No alto dun outeiro moi empinado, un ourizo atopa a castaña máis grande e brillante do souto. Amósalla a Lúa, todo fachendoso: é para asala no magosto, alá abaixo, onde agardan os amigos.",
+          "es": "¡Llega el magosto! En lo alto de una colina muy empinada, un erizo encuentra la castaña más grande y brillante del castañar. Se la enseña a Lúa, muy orgulloso: es para asarla en el magosto, allá abajo, donde esperan los amigos."
+        },
+        "lua": {
+          "onomatopeia": "Sniff, sniff!",
+          "ref": "frase.lua.4_5.03.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the big chestnut? Touch the chestnut!",
+            "axuda": {
+              "gl": "Sinala a castaña e agarda que a busque.",
+              "es": "Señala la castaña y espera a que la busque."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a hedgehog? Sniff, sniff, sniff!",
+            "axuda": {
+              "gl": "Encolle os ombros e move o nariz coma un ourizo que cheira.",
+              "es": "Encoge los hombros y mueve la nariz como un erizo que olfatea."
+            }
+          },
+          "achegar": {
+            "en": "Have you ever found a chestnut? Where?",
+            "axuda": {
+              "gl": "Fai coma se colleses unha castaña do chan e agarda. Acolle o sitio: «In the park!».",
+              "es": "Haz como si cogieras una castaña del suelo y espera. Acoge el sitio: «In the park!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa shows the chestnut. A big brown chestnut!",
+            "axuda": {
+              "gl": "Fai ti a castaña coas mans pechadas e amósaa.",
+              "es": "Haz tú la castaña con las manos cerradas y enséñala."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The hedgehog! A little brown hedgehog!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un ourizo!",
+              "es": "¡Un erizo!"
+            },
+            "acolle": {
+              "gl": "Si, un ourizo cunha castaña!",
+              "es": "¡Sí, un erizo con una castaña!"
+            },
+            "en": "A hedgehog! A hedgehog and a big chestnut!"
+          },
+          "unhaPalabra": {
+            "di": "Chestnut!",
+            "en": "Yes, a big shiny chestnut!"
+          },
+          "formaTorcida": {
+            "di": "Hedgehog have chestnut!",
+            "en": "Yes, the hedgehog has a chestnut!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What can you see on the hill?",
+          "axuda": {
+            "gl": "Pregunta, agarda e acolle o que diga, na lingua que sexa: «A hedgehog and a chestnut!».",
+            "es": "Pregunta, espera y acoge lo que diga, en la lengua que sea: «A hedgehog and a chestnut!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Ladera muy inclinada en diagonal, de arriba a la izquierda hacia abajo a la derecha, con hojas NARANJA VIVO. La castaña MARRÓN BRILLANTE rueda cuesta abajo, con líneas de movimiento detrás. Arriba, el erizo MARRÓN con la hoja NARANJA en las púas y Lúa con su cesta de MIMBRE, los dos con las manos en la boca.",
+        "trama": {
+          "gl": "Pero, ai! A castaña escápaselle das patas e cae ao chan. Roda, roda, roda ladeira abaixo, entre follas dunha cor laranxa viva! Cada vez vai máis rápido. Como a imos coller?",
+          "es": "Pero, ¡ay! La castaña se le escapa de las patas y cae al suelo. ¡Rueda, rueda, rueda ladera abajo, entre hojas de un naranja vivo! Cada vez va más rápido. ¿Cómo la vamos a coger?"
+        },
+        "lua": {
+          "onomatopeia": "Bump, bump, bump!",
+          "ref": "frase.lua.4_5.03.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the chestnut going? Touch the steep hill!",
+            "axuda": {
+              "gl": "Pasa o dedo pola ladeira, de arriba abaixo, e agarda.",
+              "es": "Pasa el dedo por la ladera, de arriba abajo, y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you roll your hands like the chestnut? Roll, roll, roll!",
+            "axuda": {
+              "gl": "Fai rodar as mans unha arredor da outra, cada vez máis rápido.",
+              "es": "Haz rodar las manos una alrededor de la otra, cada vez más rápido."
+            }
+          },
+          "achegar": {
+            "en": "Do you like to walk downhill? Where do you go?",
+            "axuda": {
+              "gl": "Inclina moito a man coma unha costa e agarda. Acolle o sitio: «To the beach!».",
+              "es": "Inclina mucho la mano como una cuesta y espera. Acoge el sitio: «To the beach!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the chestnut rolls. Downhill, downhill!",
+            "axuda": {
+              "gl": "Baixa o dedo amodo pola ladeira da lámina.",
+              "es": "Baja el dedo despacio por la ladera de la lámina."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The chestnut! It rolls down the steep hill!",
+            "axuda": {
+              "gl": "Asente e segue a castaña co dedo.",
+              "es": "Asiente y sigue la castaña con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Cae!",
+              "es": "¡Se cae!"
+            },
+            "acolle": {
+              "gl": "Si, cae e roda ladeira abaixo!",
+              "es": "¡Sí, se cae y rueda ladera abajo!"
+            },
+            "en": "It rolls! The chestnut rolls downhill!"
+          },
+          "unhaPalabra": {
+            "di": "Roll!",
+            "en": "Yes, the chestnut rolls downhill!"
+          },
+          "formaTorcida": {
+            "di": "Chestnut go down roll!",
+            "en": "Yes, the chestnut rolls down!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What happened to the chestnut?",
+          "axuda": {
+            "gl": "Se non se lembra, fai rodar as mans cara abaixo e agarda: «It rolls downhill!».",
+            "es": "Si no se acuerda, haz rodar las manos hacia abajo y espera: «It rolls downhill!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "La misma ladera con hojas NARANJA VIVO. El erizo MARRÓN, hecho una bola, con la hoja NARANJA en las púas, rueda cuesta abajo detrás de la castaña MARRÓN BRILLANTE. Lúa baja detrás a pasitos, sujetando su cesta de MIMBRE.",
+        "trama": {
+          "gl": "O ourizo ten unha idea. Primeiro faise unha bóla, ben redonda… e despois roda detrás da castaña! Roda que te roda, as follas pegánselle ás púas. Lúa baixa detrás del, a paso miúdo.",
+          "es": "El erizo tiene una idea. Primero se hace una bola, bien redonda… ¡y luego rueda detrás de la castaña! Rodando y rodando, las hojas se le pegan a las púas. Lúa baja detrás de él, a pasitos."
+        },
+        "lua": {
+          "onomatopeia": "Tumble, tumble!",
+          "ref": "frase.lua.4_5.03.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the hedgehog? Touch the round ball!",
+            "axuda": {
+              "gl": "Sinala a bóla do ourizo e agarda.",
+              "es": "Señala la bola del erizo y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you curl into a ball like the hedgehog? First curl, then roll!",
+            "axuda": {
+              "gl": "Encóllete ti primeiro e despois fai rodar os brazos, amodo.",
+              "es": "Encógete tú primero y luego haz rodar los brazos, despacio."
+            }
+          },
+          "achegar": {
+            "en": "What do you do first in the morning? And then?",
+            "axuda": {
+              "gl": "Agarda moito. Acolle o que diga e devólvello: «First you wake up, then you eat!».",
+              "es": "Espera mucho. Acoge lo que diga y devuélveselo: «First you wake up, then you eat!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa curls into a ball. First curl, then roll!",
+            "axuda": {
+              "gl": "Encóllete ti un momento e despois fai rodar as mans.",
+              "es": "Encógete tú un momento y luego haz rodar las manos."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The hedgehog is a ball! A round, prickly ball!",
+            "axuda": {
+              "gl": "Asente e debuxa unha bóla no aire.",
+              "es": "Asiente y dibuja una bola en el aire."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha bóla!",
+              "es": "¡Una bola!"
+            },
+            "acolle": {
+              "gl": "Si, o ourizo faise unha bóla!",
+              "es": "¡Sí, el erizo se hace una bola!"
+            },
+            "en": "A ball! The hedgehog curls into a ball!"
+          },
+          "unhaPalabra": {
+            "di": "Ball!",
+            "en": "Yes, a ball! The hedgehog is a ball!"
+          },
+          "formaTorcida": {
+            "di": "Hedgehog rolling a ball!",
+            "en": "Yes, the hedgehog rolls like a ball!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did the hedgehog do first?",
+          "axuda": {
+            "gl": "Se non se lembra, encóllete coma unha bóla e agarda: «First he curls into a ball!».",
+            "es": "Si no se acuerda, encógete como una bola y espera: «First he curls into a ball!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Al pie de la ladera, una pequeña hoguera de magosto rodeada de piedras, con llamas NARANJA VIVO; a un lado, una abuela con delantal VERDE asa castañas en una sartén con agujeros. El erizo MARRÓN, ya sin hacer bola, con la hoja NARANJA en las púas, baila con Lúa; la cesta de MIMBRE, llena de castañas, en el suelo. Al fondo, unos animalitos bailan en corro, lejos del fuego.",
+        "trama": {
+          "gl": "Abaixo, onde remata a costa, a castaña párase xusto ao lado do magosto! A avoa do souto ásaa xunto con moitas máis, e os amigos bailan en roda. Cando as castañas están quentiñas, todos comen. Que boas!",
+          "es": "¡Abajo, donde termina la cuesta, la castaña se para justo al lado del magosto! La abuela del castañar la asa junto con muchas más, y los amigos bailan en corro. Cuando las castañas están calentitas, todos comen. ¡Qué ricas!"
+        },
+        "lua": {
+          "onomatopeia": "Crack, crack, yum!",
+          "ref": "frase.lua.4_5.03.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the hot chestnuts? Touch the chestnuts!",
+            "axuda": {
+              "gl": "Sinala as castañas da tixola e agarda.",
+              "es": "Señala las castañas de la sartén y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you dance like the hedgehog? Dance, dance, and stop!",
+            "axuda": {
+              "gl": "Baila no sitio e para de súpeto en «stop».",
+              "es": "Baila en el sitio y para de golpe en «stop»."
+            }
+          },
+          "achegar": {
+            "en": "Who dances with you at home?",
+            "axuda": {
+              "gl": "Baila un pouco coas mans e agarda. Se nomea a alguén, devólvello en inglés: «You dance with grandpa!».",
+              "es": "Baila un poco con las manos y espera. Si nombra a alguien, devuélveselo en inglés: «You dance with grandpa!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa dances with the hedgehog. Dance, dance!",
+            "axuda": {
+              "gl": "Baila ti un pouco no sitio, sen dicir máis.",
+              "es": "Baila tú un poco en el sitio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Chestnuts! Hot, yummy chestnuts!",
+            "axuda": {
+              "gl": "Asente e fai coma se soprases unha castaña quente.",
+              "es": "Asiente y haz como si soplaras una castaña caliente."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Castañas asadas!",
+              "es": "¡Castañas asadas!"
+            },
+            "acolle": {
+              "gl": "Si, castañas asadas, quentiñas!",
+              "es": "¡Sí, castañas asadas, calentitas!"
+            },
+            "en": "Hot chestnuts! Yummy hot chestnuts for everyone!"
+          },
+          "unhaPalabra": {
+            "di": "Dance!",
+            "en": "Yes, dance! Lúa and the hedgehog dance!"
+          },
+          "formaTorcida": {
+            "di": "Hedgehog dances Lúa!",
+            "en": "Yes, the hedgehog dances with Lúa!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What do the friends do at the end?",
+          "axuda": {
+            "gl": "Agarda moito. Diga o que diga, devólvello nunha frase: «They dance and eat chestnuts!».",
+            "es": "Espera mucho. Diga lo que diga, devuélveselo en una frase: «They dance and eat chestnuts!»."
+          }
+        }
+      }
+    ]
+  }
 }

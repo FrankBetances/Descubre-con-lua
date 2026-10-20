@@ -98,5 +98,326 @@
     "3_4.febreiro.s2.horse"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.07",
+    "titulo": {
+      "gl": "Lúa e a abella que buscaba a flor máis doce",
+      "es": "Lúa y la abeja que buscaba la flor más dulce"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Prado de primavera con hierba verde y unas pocas flores sueltas, sin fondo recargado. A la izquierda, una colmena de madera. Una abeja pequeña AMARILLA con rayas NEGRAS y alas BLANCAS sale volando de la colmena (línea de vuelo en espiral). Lúa, con una regadera AZUL en la mano, la sigue con la mirada.",
+        "trama": {
+          "gl": "Chegou a primavera e o prado énchese de flores. Dunha colmea sae unha abella pequena, de raias amarelas e negras. Bzzz! Hoxe quere atopar a flor máis doce de todas para levar o seu néctar á colmea. Lúa, coa regadeira azul, vai detrás dela.",
+          "es": "Ha llegado la primavera y el prado se llena de flores. De una colmena sale una abeja pequeña, de rayas amarillas y negras. ¡Bzzz! Hoy quiere encontrar la flor más dulce de todas para llevar su néctar a la colmena. Lúa, con la regadera azul, va detrás de ella."
+        },
+        "lua": {
+          "onomatopeia": "Bzzz, bzzz!",
+          "ref": "frase.lua.4_5.07.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little bee? Touch the bee!",
+            "axuda": {
+              "gl": "Sinala a abella e agarda que a atope.",
+              "es": "Señala la abeja y espera a que la encuentre."
+            }
+          },
+          "imitar": {
+            "en": "Can you fly like a bee? Fast, fast… bzzz!",
+            "axuda": {
+              "gl": "Move os brazos pegados ao corpo moi rápido e fai bzzz.",
+              "es": "Mueve los brazos pegados al cuerpo muy rápido y haz bzzz."
+            }
+          },
+          "achegar": {
+            "en": "Do you see bees in your garden or in the park?",
+            "axuda": {
+              "gl": "Fai bzzz coa boca e agarda. Se nomea un sitio, devólvello: «You see bees in the park!».",
+              "es": "Haz bzzz con la boca y espera. Si nombra un sitio, devuélveselo: «You see bees in the park!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa flies like a bee. Bzzz, bzzz!",
+            "axuda": {
+              "gl": "Fai ti as ás da abella cos brazos, amodo, e agarda.",
+              "es": "Haz tú las alas de la abeja con los brazos, despacio, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bee! A little yellow and black bee!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha abella!",
+              "es": "¡Una abeja!"
+            },
+            "acolle": {
+              "gl": "Si, unha abella pequeniña!",
+              "es": "¡Sí, una abeja pequeñita!"
+            },
+            "en": "A bee! A little bee flying in the sun!"
+          },
+          "unhaPalabra": {
+            "di": "Bee!",
+            "en": "Yes, a busy little bee!"
+          },
+          "formaTorcida": {
+            "di": "Bee flying the flowers!",
+            "en": "Yes, the bee flies to the flowers!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What can you see in the spring meadow?",
+          "axuda": {
+            "gl": "Pregunta, agarda e acolle o que diga, na lingua que sexa: «Flowers and a little bee!».",
+            "es": "Pregunta, espera y acoge lo que diga, en la lengua que sea: «Flowers and a little bee!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El mismo prado. En primer plano, una flor AMARILLA pequeña y una flor BLANCA cerrada; la abeja AMARILLA de rayas NEGRAS, con las alas caídas, descansa entre las dos. Al fondo, muy lejos, una flor ROJA enorme. Lúa, con su regadera AZUL, señala hacia la flor roja.",
+        "trama": {
+          "gl": "A abella proba unha flor amarela: hmm, pouquiña cousa. Proba unha flor branca: está pechada! Xa está cansa de tanto voar. Pero Lúa ve algo alá lonxe, ao final do prado: unha flor vermella, enorme!",
+          "es": "La abeja prueba una flor amarilla: hmm, poquita cosa. Prueba una flor blanca: ¡está cerrada! Ya está cansada de tanto volar. Pero Lúa ve algo allá lejos, al final del prado: ¡una flor roja, enorme!"
+        },
+        "lua": {
+          "onomatopeia": "Ooooh!",
+          "ref": "frase.lua.4_5.07.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the red flower? Touch the big red flower!",
+            "axuda": {
+              "gl": "Sinala a flor vermella do fondo e agarda.",
+              "es": "Señala la flor roja del fondo y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a closed flower? Now open… like a flower!",
+            "axuda": {
+              "gl": "Xunta as mans pechadas e despois abre os dedos amodo coma pétalos.",
+              "es": "Junta las manos cerradas y después abre los dedos despacio como pétalos."
+            }
+          },
+          "achegar": {
+            "en": "What red things do you have at home?",
+            "axuda": {
+              "gl": "Busca co dedo algo vermello arredor e agarda. Acolle o que diga: «Your red ball!».",
+              "es": "Busca con el dedo algo rojo alrededor y espera. Acoge lo que diga: «Your red ball!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa points to the flower. A red flower, there!",
+            "axuda": {
+              "gl": "Sinala ti a flor vermella, amodo, e volve agardar.",
+              "es": "Señala tú la flor roja, despacio, y vuelve a esperar."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The red flower! A big red flower!",
+            "axuda": {
+              "gl": "Asente e abre os dedos coma pétalos.",
+              "es": "Asiente y abre los dedos como pétalos."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Vermella!",
+              "es": "¡Roja!"
+            },
+            "acolle": {
+              "gl": "Si, unha flor vermella!",
+              "es": "¡Sí, una flor roja!"
+            },
+            "en": "Red! A big red flower, over there!"
+          },
+          "unhaPalabra": {
+            "di": "Flower!",
+            "en": "Yes, a big red flower!"
+          },
+          "formaTorcida": {
+            "di": "Red flower big!",
+            "en": "Yes, the red flower is big!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "Why is the bee tired?",
+          "axuda": {
+            "gl": "Se non se lembra, move os brazos rápido e despois déixaos caer: «She flew a lot!».",
+            "es": "Si no se acuerda, mueve los brazos rápido y después déjalos caer: «She flew a lot!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano de la flor ROJA enorme, abierta, con el centro AMARILLO. La abeja AMARILLA de rayas NEGRAS posada en el centro, con las alas levantadas de alegría. Lúa, al lado, con su regadera AZUL, sonríe con los ojos cerrados como si oliera la flor.",
+        "trama": {
+          "gl": "Lúa sinálalla e a abella voa ata alá, amodo, amodo… e pousa no medio da flor vermella. Proba o néctar: mmm, este é moito máis doce! A abella move as ás de contenta.",
+          "es": "Lúa se la señala y la abeja vuela hasta allí, despacio, despacio… y se posa en el centro de la flor roja. Prueba el néctar: mmm, ¡este es mucho más dulce! La abeja mueve las alas de contenta."
+        },
+        "lua": {
+          "onomatopeia": "Mmm, mmm!",
+          "ref": "frase.lua.4_5.07.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the bee now? Touch the bee on the flower!",
+            "axuda": {
+              "gl": "Sinala o centro da flor e agarda.",
+              "es": "Señala el centro de la flor y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you land like the bee? Down, down… softly!",
+            "axuda": {
+              "gl": "Baixa os brazos amodo e pousa as mans nas pernas, suave.",
+              "es": "Baja los brazos despacio y posa las manos en las piernas, suave."
+            }
+          },
+          "achegar": {
+            "en": "What sweet thing do you like to eat?",
+            "axuda": {
+              "gl": "Pon cara de algo moi rico e agarda. Acolle o que diga: «You like strawberries!».",
+              "es": "Pon cara de algo muy rico y espera. Acoge lo que diga: «You like strawberries!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa lands softly. On the red flower!",
+            "axuda": {
+              "gl": "Pousa ti a man, suave, enriba da flor da lámina.",
+              "es": "Posa tú la mano, suave, encima de la flor de la lámina."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bee is on the red flower!",
+            "axuda": {
+              "gl": "Asente e pousa o teu dedo xunto ao seu.",
+              "es": "Asiente y posa tu dedo junto al suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Está na flor!",
+              "es": "¡Está en la flor!"
+            },
+            "acolle": {
+              "gl": "Si, a abella pousou na flor!",
+              "es": "¡Sí, la abeja se ha posado en la flor!"
+            },
+            "en": "Yes! The bee lands on the flower!"
+          },
+          "unhaPalabra": {
+            "di": "Land!",
+            "en": "Yes, the bee lands on the red flower!"
+          },
+          "formaTorcida": {
+            "di": "Bee landed in flower!",
+            "en": "Yes, the bee landed on the flower!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "Where did the bee land?",
+          "axuda": {
+            "gl": "Se non se lembra, abre os dedos coma unha flor e agarda: «On the red flower!».",
+            "es": "Si no se acuerda, abre los dedos como una flor y espera: «On the red flower!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Atardecer en tonos NARANJA suaves, fondo liso. La flor ROJA enorme se cierra un poco y, entre sus pétalos, la abeja AMARILLA de rayas NEGRAS duerme con los ojos cerrados. Lúa, sentada en la hierba con su regadera AZUL al lado, apoya la cabeza en las manos, con sueño.",
+        "trama": {
+          "gl": "O sol vaise poñendo e a abella, coa barriga chea de néctar, ten moito sono. A flor vermella pecha os pétalos amodo, coma unha mantiña. A abella queda durmida dentro, quentiña. Lúa sorrí e dille baixiño: boas noites, abelliña.",
+          "es": "El sol se va poniendo y la abeja, con la tripa llena de néctar, tiene mucho sueño. La flor roja cierra los pétalos despacio, como una mantita. La abeja se queda dormida dentro, calentita. Lúa sonríe y le dice bajito: buenas noches, abejita."
+        },
+        "lua": {
+          "onomatopeia": "Shhh… zzz…",
+          "ref": "frase.lua.4_5.07.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the sleepy bee? Touch the petals!",
+            "axuda": {
+              "gl": "Sinala os pétalos da flor, amodo, e agarda.",
+              "es": "Señala los pétalos de la flor, despacio, y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you sleep like the bee? Close your eyes… shhh.",
+            "axuda": {
+              "gl": "Xunta as mans baixo a cara e pecha os ollos amodo.",
+              "es": "Junta las manos bajo la cara y cierra los ojos despacio."
+            }
+          },
+          "achegar": {
+            "en": "What do you hug when you go to sleep?",
+            "axuda": {
+              "gl": "Abraza algo imaxinario e agarda. Acolle o que diga: «Your teddy bear!».",
+              "es": "Abraza algo imaginario y espera. Acoge lo que diga: «Your teddy bear!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa is sleepy. Sleep, little bee…",
+            "axuda": {
+              "gl": "Deixa caer a cabeza cara a un lado e fala baixiño.",
+              "es": "Deja caer la cabeza hacia un lado y habla bajito."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bee is sleeping in the flower!",
+            "axuda": {
+              "gl": "Asente e pon un dedo diante da boca: shhh.",
+              "es": "Asiente y pon un dedo delante de la boca: shhh."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Durme!",
+              "es": "¡Duerme!"
+            },
+            "acolle": {
+              "gl": "Si, a abella durme na flor!",
+              "es": "¡Sí, la abeja duerme en la flor!"
+            },
+            "en": "She sleeps! The sleepy bee sleeps in the flower!"
+          },
+          "unhaPalabra": {
+            "di": "Sleep!",
+            "en": "Yes, the bee sleeps in the red flower."
+          },
+          "formaTorcida": {
+            "di": "Bee sleep flower!",
+            "en": "Yes, the bee sleeps in the flower!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What do you think the bee dreams about?",
+          "axuda": {
+            "gl": "Agarda moito e acolle calquera idea, na lingua que sexa: «About sweet flowers!».",
+            "es": "Espera mucho y acoge cualquier idea, en la lengua que sea: «About sweet flowers!»."
+          }
+        }
+      }
+    ]
+  }
 }

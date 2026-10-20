@@ -97,5 +97,326 @@
     "3_4.abril.s1.sun"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.05",
+    "titulo": {
+      "gl": "Lúa e a xoaniña mollada",
+      "es": "Lúa y la mariquita mojada"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Valle verde con un monte suave al fondo; por encima del monte asoma una nube GRIS grande. En primer plano, una margarita BLANCA con una mariquita ROJA de puntos NEGROS encima. Lúa camina a su lado con un paraguas VERDE cerrado en la mano y mira al cielo.",
+        "trama": {
+          "gl": "Lúa pasea polo val cun paraugas verde pechado. Nunha margarida descansa unha xoaniña vermella de puntos negros. De súpeto, por riba do monte chega unha nube grande e gris, e outra, e outra. O ceo ponse todo nubrado.",
+          "es": "Lúa pasea por el valle con un paraguas verde cerrado. En una margarita descansa una mariquita roja de puntos negros. De repente, por encima del monte llega una nube grande y gris, y otra, y otra. El cielo se pone todo nublado."
+        },
+        "lua": {
+          "onomatopeia": "Hmmm… hmmm!",
+          "ref": "frase.lua.4_5.05.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the ladybird? Touch the little red ladybird!",
+            "axuda": {
+              "gl": "Sinala a margarida e agarda que atope a xoaniña.",
+              "es": "Señala la margarita y espera a que encuentre la mariquita."
+            }
+          },
+          "imitar": {
+            "en": "Can you make a big cloud with your arms? A big, soft cloud!",
+            "axuda": {
+              "gl": "Fai unha nube grande e branda cos brazos por riba da cabeza.",
+              "es": "Haz una nube grande y blandita con los brazos por encima de la cabeza."
+            }
+          },
+          "achegar": {
+            "en": "What do you do on a cloudy day?",
+            "axuda": {
+              "gl": "Tapa un sol imaxinario coa man e agarda. Acolle o que diga: «You play at home!».",
+              "es": "Tapa un sol imaginario con la mano y espera. Acoge lo que diga: «You play at home!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa makes a cloud. A big grey cloud!",
+            "axuda": {
+              "gl": "Fai ti a nube cos brazos, amodo, e agarda.",
+              "es": "Haz tú la nube con los brazos, despacio, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The cloud! A big grey cloud!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha nube!",
+              "es": "¡Una nube!"
+            },
+            "acolle": {
+              "gl": "Si, unha nube moi grande!",
+              "es": "¡Sí, una nube muy grande!"
+            },
+            "en": "A cloud! A big grey cloud! It is cloudy!"
+          },
+          "unhaPalabra": {
+            "di": "Cloud!",
+            "en": "Yes, a big cloud over the hill!"
+          },
+          "formaTorcida": {
+            "di": "Many cloud!",
+            "en": "Yes, many clouds!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What can you see in the sky?",
+          "axuda": {
+            "gl": "Pregunta, agarda e acolle o que diga, na lingua que sexa: «Big grey clouds!».",
+            "es": "Pregunta, espera y acoge lo que diga, en la lengua que sea: «Big grey clouds!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El mismo valle, ahora con el cielo GRIS y gotas de lluvia en líneas finas. La mariquita ROJA de puntos NEGROS, sobre la margarita BLANCA, encoge las alas, llenas de gotitas. Lúa, con el paraguas VERDE todavía cerrado, la mira preocupada.",
+        "trama": {
+          "gl": "Comeza a chover: plic, plic, plic! As gotas caen enriba da margarida e a xoaniña móllase toda. Coas ás molladas non pode voar. Pobriña! Onde se pode protexer?",
+          "es": "Empieza a llover: ¡plic, plic, plic! Las gotas caen encima de la margarita y la mariquita se moja entera. Con las alas mojadas no puede volar. ¡Pobrecita! ¿Dónde se puede proteger?"
+        },
+        "lua": {
+          "onomatopeia": "Plic, plic, plic!",
+          "ref": "frase.lua.4_5.05.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the raindrops? Touch the rain!",
+            "axuda": {
+              "gl": "Pasa o dedo polas gotas da lámina e agarda.",
+              "es": "Pasa el dedo por las gotas de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you make rain with your fingers? Plic, plic, plic!",
+            "axuda": {
+              "gl": "Move os dedos por riba da cabeza coma choiva fina.",
+              "es": "Mueve los dedos por encima de la cabeza como lluvia fina."
+            }
+          },
+          "achegar": {
+            "en": "What do you wear when it rains?",
+            "axuda": {
+              "gl": "Fai coma se puxeses un chuvasqueiro e agarda. Acolle o que diga: «Your raincoat!».",
+              "es": "Haz como si te pusieras un impermeable y espera. Acoge lo que diga: «Your raincoat!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa makes rain. Plic, plic! Showery rain!",
+            "axuda": {
+              "gl": "Fai ti a choiva cos dedos, amodo, sen dicir máis.",
+              "es": "Haz tú la lluvia con los dedos, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The rain! The ladybird is wet!",
+            "axuda": {
+              "gl": "Asente e sacode as mans coma se estivesen molladas.",
+              "es": "Asiente y sacude las manos como si estuvieran mojadas."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Está mollada!",
+              "es": "¡Está mojada!"
+            },
+            "acolle": {
+              "gl": "Si, a xoaniña está mollada!",
+              "es": "¡Sí, la mariquita está mojada!"
+            },
+            "en": "Wet! The little ladybird is so wet!"
+          },
+          "unhaPalabra": {
+            "di": "Rain!",
+            "en": "Yes, rain! Showery rain on the flower!"
+          },
+          "formaTorcida": {
+            "di": "Ladybird is wetting!",
+            "en": "Yes, the ladybird is wet!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What happened to the ladybird's wings?",
+          "axuda": {
+            "gl": "Se non se lembra, sacode as mans coma se estivesen molladas e agarda: «They are wet!».",
+            "es": "Si no se acuerda, sacude las manos como si estuvieran mojadas y espera: «They are wet!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa, agachada, sostiene el paraguas VERDE abierto por encima de la margarita BLANCA. La lluvia rebota en la tela del paraguas (pequeñas salpicaduras). Debajo, la mariquita ROJA de puntos NEGROS, seca, junto a la pata de Lúa. Fondo gris liso.",
+        "trama": {
+          "gl": "Lúa abre o paraugas verde e colócao por riba da margarida. Agora a choiva cae enriba do paraugas, ploc, ploc, ploc, coma un tamboril! Debaixo, a xoaniña está sequiña e moi preto de Lúa.",
+          "es": "Lúa abre el paraguas verde y lo pone por encima de la margarita. ¡Ahora la lluvia cae encima del paraguas, ploc, ploc, ploc, como un tamborcito! Debajo, la mariquita está sequita y muy cerca de Lúa."
+        },
+        "lua": {
+          "onomatopeia": "Ploc, ploc, ploc!",
+          "ref": "frase.lua.4_5.05.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the green umbrella? Touch the umbrella!",
+            "axuda": {
+              "gl": "Sinala o paraugas e agarda.",
+              "es": "Señala el paraguas y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you hold an umbrella over your head? Ploc, ploc!",
+            "axuda": {
+              "gl": "Suxeita un paraugas imaxinario por riba da cabeza e agarda.",
+              "es": "Sostén un paraguas imaginario por encima de la cabeza y espera."
+            }
+          },
+          "achegar": {
+            "en": "Do you have an umbrella? What color is your umbrella?",
+            "axuda": {
+              "gl": "Fai coma se abrises un paraugas e agarda. Acolle a cor: «A blue umbrella!».",
+              "es": "Haz como si abrieras un paraguas y espera. Acoge el color: «A blue umbrella!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa holds the umbrella. Rain on the umbrella!",
+            "axuda": {
+              "gl": "Suxeita ti o paraugas imaxinario e peta enriba cos dedos.",
+              "es": "Sostén tú el paraguas imaginario y tamborilea encima con los dedos."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The umbrella! A big green umbrella!",
+            "axuda": {
+              "gl": "Asente e debuxa no aire a forma do paraugas.",
+              "es": "Asiente y dibuja en el aire la forma del paraguas."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "O paraugas!",
+              "es": "¡El paraguas!"
+            },
+            "acolle": {
+              "gl": "Si, a xoaniña está debaixo do paraugas!",
+              "es": "¡Sí, la mariquita está debajo del paraguas!"
+            },
+            "en": "The umbrella! The ladybird is under the umbrella!"
+          },
+          "unhaPalabra": {
+            "di": "Umbrella!",
+            "en": "Yes, a big green umbrella for the ladybird!"
+          },
+          "formaTorcida": {
+            "di": "Rain in umbrella!",
+            "en": "Yes, the rain is on the umbrella!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did Lúa do with the umbrella?",
+          "axuda": {
+            "gl": "Se non se lembra, fai coma se abrises un paraugas e agarda: «She opened the umbrella!».",
+            "es": "Si no se acuerda, haz como si abrieras un paraguas y espera: «She opened the umbrella!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El cielo AZUL con un sol AMARILLO grande y una nube GRIS pequeña que se aleja. Lúa sacude el paraguas VERDE y todo el cuerpo (líneas de movimiento y gotas que saltan). La mariquita ROJA de puntos NEGROS vuela y se posa en la nariz de Lúa. Las dos sonríen.",
+        "trama": {
+          "gl": "Pouco a pouco, a choiva para e sae o sol. Lúa sacode o paraugas e a xoaniña sacode as ás: chis, chas, chis, chas! Cando xa están secas, a xoaniña voa… e pousa no nariz de Lúa, coma un bico.",
+          "es": "Poco a poco, la lluvia para y sale el sol. Lúa sacude el paraguas y la mariquita sacude las alas: ¡chis, chas, chis, chas! Cuando ya están secas, la mariquita vuela… y se posa en la nariz de Lúa, como un beso."
+        },
+        "lua": {
+          "onomatopeia": "Chis, chas, chis, chas!",
+          "ref": "frase.lua.4_5.05.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the ladybird now? Touch Lúa's nose!",
+            "axuda": {
+              "gl": "Sinala o nariz de Lúa e agarda.",
+              "es": "Señala la nariz de Lúa y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you shake like Lúa? Shake, shake, shake… and stop!",
+            "axuda": {
+              "gl": "Axita todo o corpo coma unha maraca e para en «stop».",
+              "es": "Agita todo el cuerpo como una maraca y para en «stop»."
+            }
+          },
+          "achegar": {
+            "en": "Do you jump in puddles after the rain?",
+            "axuda": {
+              "gl": "Dá un saltiño no sitio e agarda. Se contesta que si, devólvello: «Yes! You jump in puddles!».",
+              "es": "Da un saltito en el sitio y espera. Si contesta que sí, devuélveselo: «Yes! You jump in puddles!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa shakes the umbrella. Shake, shake!",
+            "axuda": {
+              "gl": "Axita ti os brazos un pouco, sen dicir máis.",
+              "es": "Agita tú los brazos un poco, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The sun! The sun is back!",
+            "axuda": {
+              "gl": "Asente e abre os dedos coma raios de sol.",
+              "es": "Asiente y abre los dedos como rayos de sol."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Sae o sol!",
+              "es": "¡Sale el sol!"
+            },
+            "acolle": {
+              "gl": "Si, xa sae o sol!",
+              "es": "¡Sí, ya sale el sol!"
+            },
+            "en": "The sun! The sun is out again!"
+          },
+          "unhaPalabra": {
+            "di": "Shake!",
+            "en": "Yes, shake, shake! No more rain!"
+          },
+          "formaTorcida": {
+            "di": "Ladybird shaked!",
+            "en": "Yes, the ladybird shook her wings!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What do you like to do when the sun comes back?",
+          "axuda": {
+            "gl": "Agarda moito. Diga o que diga, devólvello nunha frase: «You play in the park!».",
+            "es": "Espera mucho. Diga lo que diga, devuélveselo en una frase: «You play in the park!»."
+          }
+        }
+      }
+    ]
+  }
 }

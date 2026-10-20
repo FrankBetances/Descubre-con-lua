@@ -100,5 +100,326 @@
     "3_4.decembro.s3.sleep"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.08",
+    "titulo": {
+      "gl": "Lúa, a ovella perdida e o lobo con fame",
+      "es": "Lúa, la oveja perdida y el lobo con hambre"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Bosque al atardecer, con pocos troncos y luz naranja suave. En el centro, una oveja pequeña BLANCA con un lazo AZUL al cuello, sola, balando con la boca abierta. Una mariposa amarilla se aleja volando. Lúa, con una bolsa de tela VERDE al hombro, se acerca con los brazos abiertos.",
+        "trama": {
+          "gl": "Unha ovella pequeniña ía detrás dunha bolboreta e perdeuse no bosque. Mee, mee! Onde está o rabaño? Lúa escóitaa e achégase amodo: «Eu lévote á casa». O prado das ovellas está ao outro lado do bosque.",
+          "es": "Una oveja pequeñita iba detrás de una mariposa y se ha perdido en el bosque. ¡Mee, mee! ¿Dónde está el rebaño? Lúa la oye y se acerca despacio: «Yo te llevo a casa». El prado de las ovejas está al otro lado del bosque."
+        },
+        "lua": {
+          "onomatopeia": "Mee, mee!",
+          "ref": "frase.lua.4_5.08.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little sheep? Touch the sheep!",
+            "axuda": {
+              "gl": "Sinala a ovella e agarda que a atope.",
+              "es": "Señala la oveja y espera a que la encuentre."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a little sheep? Mee, mee!",
+            "axuda": {
+              "gl": "Fai rizos no aire arredor da cabeza e fai mee, mee.",
+              "es": "Haz rizos en el aire alrededor de la cabeza y haz mee, mee."
+            }
+          },
+          "achegar": {
+            "en": "Who walks home with you?",
+            "axuda": {
+              "gl": "Camiña cos dedos pola mesa e agarda. Se nomea a alguén, devólvello en inglés: «Your grandma walks with you!».",
+              "es": "Camina con los dedos por la mesa y espera. Si nombra a alguien, devuélveselo en inglés: «Your grandma walks with you!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa walks to the sheep. Mee, mee!",
+            "axuda": {
+              "gl": "Fai ti os rizos da ovella, amodo, e sinálaa.",
+              "es": "Haz tú los rizos de la oveja, despacio, y señálala."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The sheep! A little white sheep!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha ovella!",
+              "es": "¡Una oveja!"
+            },
+            "acolle": {
+              "gl": "Si, unha ovella pequeniña!",
+              "es": "¡Sí, una oveja pequeñita!"
+            },
+            "en": "A sheep! A little white sheep in the forest!"
+          },
+          "unhaPalabra": {
+            "di": "Sheep!",
+            "en": "Yes, a little lost sheep!"
+          },
+          "formaTorcida": {
+            "di": "The sheep is lose!",
+            "en": "Yes, the sheep is lost!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What do you think the little sheep wants?",
+          "axuda": {
+            "gl": "Agarda e acolle o que diga, na lingua que sexa, e devólvello nunha frase: «She wants her mummy!».",
+            "es": "Espera y acoge lo que diga, en la lengua que sea, y devuélveselo en una frase: «She wants her mummy!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Camino del bosque. Debajo de un árbol, un lobo GRIS grande de hocico CLARO duerme enroscado, con los ojos cerrados y tres «z» saliendo de la boca. Por delante pasan de puntillas Lúa, con la bolsa VERDE, y la oveja BLANCA del lazo AZUL, con el dedo (o la pezuña) delante de la boca.",
+        "trama": {
+          "gl": "No medio do camiño, debaixo dunha árbore, dorme un lobo grande e gris. Rrrr… rrrr…, como ronca! Para non espertalo, Lúa e a ovella pasan de puntiñas, moi amodo, sen facer ningún ruído.",
+          "es": "En medio del camino, debajo de un árbol, duerme un lobo grande y gris. Rrrr… rrrr…, ¡cómo ronca! Para no despertarlo, Lúa y la oveja pasan de puntillas, muy despacio, sin hacer ningún ruido."
+        },
+        "lua": {
+          "onomatopeia": "Rrrr… rrrr…",
+          "ref": "frase.lua.4_5.08.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the sleeping wolf? Touch the wolf!",
+            "axuda": {
+              "gl": "Sinala o lobo, amodo, e agarda.",
+              "es": "Señala el lobo, despacio, y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you tiptoe like Lúa? Shhh… tiptoe, tiptoe!",
+            "axuda": {
+              "gl": "Camiña de puntas no sitio, moi amodo e en silencio.",
+              "es": "Camina de puntillas en el sitio, muy despacio y en silencio."
+            }
+          },
+          "achegar": {
+            "en": "Who sleeps in your house? Who snores?",
+            "axuda": {
+              "gl": "Fai rrrr coa boca e agarda. Acolle o que diga: «Your grandpa snores!».",
+              "es": "Haz rrrr con la boca y espera. Acoge lo que diga: «Your grandpa snores!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa tiptoes. Shhh, the wolf is sleeping.",
+            "axuda": {
+              "gl": "Fai ti pasos de puntas cos dedos pola lámina.",
+              "es": "Haz tú pasos de puntillas con los dedos por la lámina."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The wolf! A big grey wolf, sleeping!",
+            "axuda": {
+              "gl": "Asente e pon un dedo diante da boca: shhh.",
+              "es": "Asiente y pon un dedo delante de la boca: shhh."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Está durmindo!",
+              "es": "¡Está durmiendo!"
+            },
+            "acolle": {
+              "gl": "Si, o lobo está durmindo!",
+              "es": "¡Sí, el lobo está durmiendo!"
+            },
+            "en": "Yes! The wolf is sleeping! Shhh, tiptoe!"
+          },
+          "unhaPalabra": {
+            "di": "Wolf!",
+            "en": "Yes, the wolf is sleeping under the tree!"
+          },
+          "formaTorcida": {
+            "di": "Wolf is sleep!",
+            "en": "Yes, the wolf is sleeping!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "Why do Lúa and the sheep tiptoe?",
+          "axuda": {
+            "gl": "Se non se lembra, pon as mans baixo a cara coma quen dorme e agarda: «Because the wolf is sleeping!».",
+            "es": "Si no se acuerda, pon las manos bajo la cara como quien duerme y espera: «Because the wolf is sleeping!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El mismo árbol. El lobo GRIS de hocico CLARO, todavía tumbado, abre un solo ojo; de su barriga salen líneas de ruido («grrr»). Bajo la pata de la oveja BLANCA del lazo AZUL, una rama seca partida. Lúa, con la bolsa VERDE, y la oveja, quietas como estatuas. El lobo tiene cara de sueño, no de enfado.",
+        "trama": {
+          "gl": "Crac! A ovella pisa unha póla seca. O lobo abre un ollo… e a súa barriga fai grrr, grrr! Lúa e a ovella quedan quietas coma pedras. Pero o lobo só bocexa e quéixase: «Ai, que fame teño!».",
+          "es": "¡Crac! La oveja pisa una rama seca. El lobo abre un ojo… ¡y su tripa hace grrr, grrr! Lúa y la oveja se quedan quietas como piedras. Pero el lobo solo bosteza y se queja: «¡Ay, qué hambre tengo!»."
+        },
+        "lua": {
+          "onomatopeia": "Grrr, grrr!",
+          "ref": "frase.lua.4_5.08.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the wolf's tummy? Touch his tummy!",
+            "axuda": {
+              "gl": "Sinala a barriga do lobo e agarda.",
+              "es": "Señala la tripa del lobo y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be motionless like a stone? One, two, three… not a move!",
+            "axuda": {
+              "gl": "Queda coma unha pedra, sen moverte, e conta ata tres baixiño.",
+              "es": "Quédate como una piedra, sin moverte, y cuenta hasta tres bajito."
+            }
+          },
+          "achegar": {
+            "en": "What do you eat when you are hungry?",
+            "axuda": {
+              "gl": "Frota a barriga en círculos e agarda. Acolle o que diga: «You eat an apple!».",
+              "es": "Frótate la barriga en círculos y espera. Acoge lo que diga: «You eat an apple!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa rubs her tummy. A hungry wolf!",
+            "axuda": {
+              "gl": "Frota ti a barriga amodo e fai grrr baixiño.",
+              "es": "Frótate tú la barriga despacio y haz grrr bajito."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The wolf is awake! He is hungry!",
+            "axuda": {
+              "gl": "Asente e frota a barriga.",
+              "es": "Asiente y frótate la barriga."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Ten fame!",
+              "es": "¡Tiene hambre!"
+            },
+            "acolle": {
+              "gl": "Si, o lobo ten moita fame!",
+              "es": "¡Sí, el lobo tiene mucha hambre!"
+            },
+            "en": "Hungry! The wolf is so hungry!"
+          },
+          "unhaPalabra": {
+            "di": "Hungry!",
+            "en": "Yes, a hungry wolf! Grrr, grrr!"
+          },
+          "formaTorcida": {
+            "di": "Wolf belly is grrr!",
+            "en": "Yes, the wolf's tummy goes grrr!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did the wolf's tummy do?",
+          "axuda": {
+            "gl": "Se non se lembra, frota a barriga e agarda: «Grrr, grrr! He was hungry!».",
+            "es": "Si no se acuerda, frótate la barriga y espera: «Grrr, grrr! He was hungry!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Dos escenas en la misma lámina, separadas por un árbol. A la izquierda, el lobo GRIS de hocico CLARO, con la tripa llena, duerme sonriendo con un trozo de pan de maíz AMARILLO a medio comer; Lúa, con la bolsa VERDE abierta, lo mira tranquila. A la derecha, en un prado verde, la oveja BLANCA del lazo AZUL abraza a una oveja grande BLANCA, su madre.",
+        "trama": {
+          "gl": "Lúa saca da bolsa un bo anaco de broa e dállo ao lobo. Ñam, ñam! Coa barriga chea, o lobo sorrí, dá as grazas e volve durmir, tranquilo. E ao outro lado do bosque, a ovella pequeniña corre a abrazar a súa nai.",
+          "es": "Lúa saca de la bolsa un buen trozo de pan de maíz y se lo da al lobo. ¡Ñam, ñam! Con la tripa llena, el lobo sonríe, da las gracias y vuelve a dormirse, tranquilo. Y al otro lado del bosque, la oveja pequeñita corre a abrazar a su mamá."
+        },
+        "lua": {
+          "onomatopeia": "Ñam, ñam… zzz…",
+          "ref": "frase.lua.4_5.08.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the bread? Touch the yummy bread!",
+            "axuda": {
+              "gl": "Sinala o anaco de broa e agarda.",
+              "es": "Señala el trozo de pan y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a calm wolf? Breathe in… breathe out… and sleep.",
+            "axuda": {
+              "gl": "Respira fondo, deixa caer os ombros e pecha os ollos.",
+              "es": "Respira hondo, deja caer los hombros y cierra los ojos."
+            }
+          },
+          "achegar": {
+            "en": "Who do you share your food with?",
+            "axuda": {
+              "gl": "Fai coma se partises un pan e agarda. Acolle o que diga: «You share with your brother!».",
+              "es": "Haz como si partieras un pan y espera. Acoge lo que diga: «You share with your brother!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa gives the bread. Here you are, wolf!",
+            "axuda": {
+              "gl": "Fai ti o xesto de dar algo coa man aberta.",
+              "es": "Haz tú el gesto de dar algo con la mano abierta."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The sheep and her mummy! A big hug!",
+            "axuda": {
+              "gl": "Asente e abrázate ti tamén.",
+              "es": "Asiente y abrázate tú también."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "A súa mamá!",
+              "es": "¡Su mamá!"
+            },
+            "acolle": {
+              "gl": "Si, a ovella atopou a súa nai!",
+              "es": "¡Sí, la oveja ha encontrado a su mamá!"
+            },
+            "en": "Her mummy! The sheep and her mummy, together!"
+          },
+          "unhaPalabra": {
+            "di": "Calm!",
+            "en": "Yes, a calm wolf, sleeping again!"
+          },
+          "formaTorcida": {
+            "di": "Wolf eat the bread and sleeping!",
+            "en": "Yes, the wolf ate the bread and now he sleeps!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "How does the little sheep feel at the end?",
+          "axuda": {
+            "gl": "Agarda moito. Diga o que diga, devólvello nunha frase: «Happy! She is with her mummy!».",
+            "es": "Espera mucho. Diga lo que diga, devuélveselo en una frase: «Happy! She is with her mummy!»."
+          }
+        }
+      }
+    ]
+  }
 }

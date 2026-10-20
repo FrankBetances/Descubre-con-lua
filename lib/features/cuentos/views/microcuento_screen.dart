@@ -320,7 +320,7 @@ class _Lamina extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Icon(Icons.image_outlined, color: AppTheme.textSecondary),
+          const Icon(Icons.image_rounded, color: AppTheme.textSecondary),
           const SizedBox(width: 10),
           Expanded(
             child: Text(
