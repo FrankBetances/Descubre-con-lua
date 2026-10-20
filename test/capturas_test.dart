@@ -1,6 +1,7 @@
 @Tags(['capturas'])
 library;
 
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -21,6 +22,9 @@ import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dar
 import 'package:descubre_con_lua/features/calendario/widgets/asemblea_do_dia.dart';
 import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/cancions_con_pulso_screen.dart';
+import 'package:descubre_con_lua/features/cuentos/views/microcuento_screen.dart';
+import 'package:descubre_con_lua/data/models/rexistro_frases_model.dart';
+import 'package:descubre_con_lua/data/models/unidade_do_mes_model.dart';
 import 'package:descubre_con_lua/data/models/cancion_pulso_model.dart';
 import 'package:descubre_con_lua/features/academy/views/bloques_list_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.dart';
@@ -411,6 +415,43 @@ void main() {
         },
       );
     });
+
+    // M5.1: el visor del microcuento, con el de 2-3 de junio. En el aula, la
+    // primera lámina con la tríada y el guion de recast abierto; en casa, la
+    // pregunta de la lámina.
+    for (final modo in ModoMicrocuento.values) {
+      testWidgets('microcuento · ${modo.name} · $l', (tester) async {
+        late UnidadeDoMes unidade;
+        late RexistroDeFrases rexistro;
+        await tester.runAsync(() async {
+          unidade = UnidadeDoMes.fromJson(jsonDecode(await File(
+                  'assets/content/unidades_mes/curso_2_3/unidade.10.json')
+              .readAsString()) as Map<String, dynamic>);
+          rexistro = RexistroDeFrases.fromJson(
+              jsonDecode(await File(RexistroDeFrases.asset).readAsString())
+                  as Map<String, dynamic>);
+        });
+        await capturar(
+          tester,
+          'microcuento-${modo.name}-$l',
+          MicrocuentoScreen(
+            microcuento: unidade.microcuento!,
+            modo: modo,
+            rexistro: rexistro,
+            language: lang,
+            audioService: MockOfflineAudioService(),
+          ),
+          tamano: Size(412, modo == ModoMicrocuento.aula ? 1900 : 1150),
+          tema: modo == ModoMicrocuento.casa ? AppTheme.temaFamilias : null,
+          antesDeRetratar: modo == ModoMicrocuento.aula
+              ? (tester) async {
+                  await tester.tap(find.byKey(const ValueKey('abrir_recast')));
+                  await tester.pumpAndSettle();
+                }
+              : null,
+        );
+      });
+    }
 
     testWidgets('creditos · $l', (tester) async {
       await capturar(

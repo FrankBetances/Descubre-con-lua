@@ -106,5 +106,326 @@
     "3_4.setembro.s2.help"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.10",
+    "titulo": {
+      "gl": "Lúa e o peixiño da poza",
+      "es": "Lúa y el pececito de la charca"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Playa con marea baja: arena clara abajo, mar AZUL liso y tranquilo al fondo. Entre unas rocas GRISES, una charca pequeña de agua. Dentro, un pececito PLATEADO con la aleta NARANJA. Lúa, con una toalla AZUL grande sobre los hombros, se asoma a la charca sin tocar el agua.",
+        "trama": {
+          "gl": "Na praia de Samil, en Vigo, a marea está baixa e o mar, en calma. Entre as rochas quedaron pozas pequenas de auga. Nunha delas, Lúa ve un peixiño prateado de aleta laranxa. Cando o mar marchou, quedou alí soíño!",
+          "es": "En la playa de Samil, en Vigo, la marea está baja y el mar, en calma. Entre las rocas han quedado charcas pequeñas de agua. En una de ellas, Lúa ve un pececito plateado de aleta naranja. Cuando el mar se fue, ¡se quedó ahí solito!"
+        },
+        "lua": {
+          "onomatopeia": "Pop, pop, pop!",
+          "ref": "frase.lua.4_5.10.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little fish? Touch the fish in the pool!",
+            "axuda": {
+              "gl": "Sinala a poza e agarda que atope o peixe.",
+              "es": "Señala la charca y espera a que encuentre el pez."
+            }
+          },
+          "imitar": {
+            "en": "Can you open and close your mouth like a fish? Pop, pop!",
+            "axuda": {
+              "gl": "Abre e pecha a boca amodo, coma un peixe.",
+              "es": "Abre y cierra la boca despacio, como un pez."
+            }
+          },
+          "achegar": {
+            "en": "Do you go to the beach? Which beach do you go to?",
+            "axuda": {
+              "gl": "Move os brazos en ondas longas e agarda. Acolle o nome: «You go to Samil!».",
+              "es": "Mueve los brazos en ondas largas y espera. Acoge el nombre: «You go to Samil!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa is a fish. Pop, pop! A little fish!",
+            "axuda": {
+              "gl": "Fai ti a boca de peixe e sinala a poza.",
+              "es": "Haz tú la boca de pez y señala la charca."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The fish! A little silver fish!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un peixe!",
+              "es": "¡Un pez!"
+            },
+            "acolle": {
+              "gl": "Si, un peixiño na poza!",
+              "es": "¡Sí, un pececito en la charca!"
+            },
+            "en": "A fish! A little fish in the pool!"
+          },
+          "unhaPalabra": {
+            "di": "Fish!",
+            "en": "Yes, a little silver fish!"
+          },
+          "formaTorcida": {
+            "di": "Fishes is alone!",
+            "en": "Yes, the fish is alone!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What can you see at the beach?",
+          "axuda": {
+            "gl": "Pregunta, agarda e acolle o que diga, na lingua que sexa: «Rocks, water and a little fish!».",
+            "es": "Pregunta, espera y acoge lo que diga, en la lengua que sea: «Rocks, water and a little fish!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "La misma playa, con viento: olas AZULES con espuma BLANCA que avanzan desde el fondo hacia las rocas GRISES. El pececito PLATEADO de aleta NARANJA mira hacia el mar desde la charca. Lúa, sentada en la arena, lejos del agua, con la toalla AZUL sobre los hombros, señala las olas.",
+        "trama": {
+          "gl": "O peixiño quere volver ao mar fondo e azul, onde está a súa familia. Lúa non o pode levar: hai que agardar pola marea. Sopra o vento e chegan as ondas, cada vez máis preto, máis rápidas, máis fortes: xuáaa!",
+          "es": "El pececito quiere volver al mar profundo y azul, donde está su familia. Lúa no puede llevarlo: hay que esperar a la marea. Sopla el viento y llegan las olas, cada vez más cerca, más rápidas, más fuertes: ¡shuaaa!"
+        },
+        "lua": {
+          "onomatopeia": "Whoosh, whoosh!",
+          "ref": "frase.lua.4_5.10.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the waves? Touch the big waves!",
+            "axuda": {
+              "gl": "Pasa a man polas ondas da lámina e agarda.",
+              "es": "Pasa la mano por las olas de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you make rushing waves with your hands? Faster, faster!",
+            "axuda": {
+              "gl": "Sube e baixa as mans coma ondas, cada vez máis rápido.",
+              "es": "Sube y baja las manos como olas, cada vez más rápido."
+            }
+          },
+          "achegar": {
+            "en": "Do you jump the waves at the beach?",
+            "axuda": {
+              "gl": "Dá un saltiño no sitio e agarda. Se contesta que si, devólvello: «Yes! You jump the waves!».",
+              "es": "Da un saltito en el sitio y espera. Si contesta que sí, devuélveselo: «Yes! You jump the waves!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa makes waves. Whoosh, whoosh!",
+            "axuda": {
+              "gl": "Fai ti ondas coas mans, amodo e despois rápido.",
+              "es": "Haz tú olas con las manos, despacio y luego rápido."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The waves! Big rushing waves!",
+            "axuda": {
+              "gl": "Asente e debuxa unha onda no aire co brazo.",
+              "es": "Asiente y dibuja una ola en el aire con el brazo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "As ondas!",
+              "es": "¡Las olas!"
+            },
+            "acolle": {
+              "gl": "Si, xa chegan as ondas!",
+              "es": "¡Sí, ya llegan las olas!"
+            },
+            "en": "The waves! The waves are coming!"
+          },
+          "unhaPalabra": {
+            "di": "Waves!",
+            "en": "Yes, big rushing waves!"
+          },
+          "formaTorcida": {
+            "di": "Wave coming fastly!",
+            "en": "Yes, the waves come so fast!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What does the little fish want?",
+          "axuda": {
+            "gl": "Se non se lembra, fai ondas coas mans e agarda: «Back to the sea! Back to his family!».",
+            "es": "Si no se acuerda, haz olas con las manos y espera: «Back to the sea! Back to his family!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Una ola grande AZUL con espuma BLANCA entra en la charca entre las rocas GRISES; gotas saltando. El pececito PLATEADO de aleta NARANJA salta encima de la cresta de la ola, como en un tobogán. Lúa, en la arena y lejos del agua, con la toalla AZUL, levanta los brazos de alegría.",
+        "trama": {
+          "gl": "Unha onda grande entra na poza e axita toda a auga: splash! O peixiño dá un brinco… e vai enriba da onda, coma nun tobogán! Xa está de volta no mar.",
+          "es": "Una ola grande entra en la charca y agita toda el agua: ¡splash! El pececito da un salto… ¡y va encima de la ola, como en un tobogán! Ya está de vuelta en el mar."
+        },
+        "lua": {
+          "onomatopeia": "Splash, splash!",
+          "ref": "frase.lua.4_5.10.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the fish now? Touch the fish on the wave!",
+            "axuda": {
+              "gl": "Sinala a crista da onda e agarda.",
+              "es": "Señala la cresta de la ola y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you shake like the water? Shake, shake, splash!",
+            "axuda": {
+              "gl": "Axita todo o corpo coma a auga da poza e para.",
+              "es": "Agita todo el cuerpo como el agua de la charca y para."
+            }
+          },
+          "achegar": {
+            "en": "Have you ever been on a slide? Where?",
+            "axuda": {
+              "gl": "Baixa a man coma por un tobogán e agarda. Acolle o sitio: «At school!».",
+              "es": "Baja la mano como por un tobogán y espera. Acoge el sitio: «At school!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa jumps like the fish. On the wave!",
+            "axuda": {
+              "gl": "Fai cun brazo unha onda e salta por riba coa outra man.",
+              "es": "Haz con un brazo una ola y salta por encima con la otra mano."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The fish is on the wave! Splash!",
+            "axuda": {
+              "gl": "Asente e levanta os brazos de alegría.",
+              "es": "Asiente y levanta los brazos de alegría."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Salta!",
+              "es": "¡Salta!"
+            },
+            "acolle": {
+              "gl": "Si, o peixe salta á onda!",
+              "es": "¡Sí, el pez salta a la ola!"
+            },
+            "en": "It jumps! The fish jumps on the wave!"
+          },
+          "unhaPalabra": {
+            "di": "Jump!",
+            "en": "Yes, the fish jumps on the wave!"
+          },
+          "formaTorcida": {
+            "di": "Fish go in the wave!",
+            "en": "Yes, the fish goes on the wave!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "How did the fish go back to the sea?",
+          "axuda": {
+            "gl": "Se non se lembra, fai unha onda co brazo e agarda: «On a big wave!».",
+            "es": "Si no se acuerda, haz una ola con el brazo y espera: «On a big wave!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Atardecer: mar AZUL PROFUNDO y tranquilo, cielo rosa suave. Bajo la superficie, el pececito PLATEADO de aleta NARANJA nada junto a dos peces grandes PLATEADOS, su familia, y mueve la aleta. En la arena, Lúa tumbada sobre la toalla AZUL, con los ojos medio cerrados, dice adiós con la mano.",
+        "trama": {
+          "gl": "Cae a tarde e o mar volve estar en calma. No fondo azul, o peixiño nada coa súa familia e move a aleta: adeus, Lúa! Lúa déitase na súa toalla azul, escoita as ondas pequeniñas… e o mar, amodo, quédase durmido.",
+          "es": "Cae la tarde y el mar vuelve a estar en calma. En el fondo azul, el pececito nada con su familia y mueve la aleta: ¡adiós, Lúa! Lúa se tumba en su toalla azul, escucha las olas pequeñitas… y el mar, despacio, se queda dormido."
+        },
+        "lua": {
+          "onomatopeia": "Shhh… shhh…",
+          "ref": "frase.lua.4_5.10.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the fish's family? Touch the big fish!",
+            "axuda": {
+              "gl": "Sinala os peixes grandes e agarda.",
+              "es": "Señala los peces grandes y espera."
+            }
+          },
+          "imitar": {
+            "en": "The sea is sleeping… Can you lie down, calm and still?",
+            "axuda": {
+              "gl": "Respira fondo, deixa caer os ombros e pecha os ollos amodo.",
+              "es": "Respira hondo, deja caer los hombros y cierra los ojos despacio."
+            }
+          },
+          "achegar": {
+            "en": "Who tucks you into bed at night?",
+            "axuda": {
+              "gl": "Fai coma se tapases alguén cunha manta e agarda. Se nomea a alguén, devólvello: «Your dad tucks you in!».",
+              "es": "Haz como si taparas a alguien con una manta y espera. Si nombra a alguien, devuélveselo: «Your dad tucks you in!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa waves goodbye. Goodbye, little fish!",
+            "axuda": {
+              "gl": "Despídete ti coa man, amodo, e agarda.",
+              "es": "Despídete tú con la mano, despacio, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The fish family! The little fish is home!",
+            "axuda": {
+              "gl": "Asente e pon a man no peito.",
+              "es": "Asiente y ponte la mano en el pecho."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Adeus!",
+              "es": "¡Adiós!"
+            },
+            "acolle": {
+              "gl": "Si, adeus, peixiño!",
+              "es": "¡Sí, adiós, pececito!"
+            },
+            "en": "Goodbye, little fish! Thank you for everything!"
+          },
+          "unhaPalabra": {
+            "di": "Goodbye!",
+            "en": "Goodbye, little fish! Sleep well!"
+          },
+          "formaTorcida": {
+            "di": "The sea is sleep!",
+            "en": "Yes, the sea is sleeping!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What do you think the fish tells his family?",
+          "axuda": {
+            "gl": "Agarda moito e acolle calquera idea, na lingua que sexa: «I have a new friend: Lúa!».",
+            "es": "Espera mucho y acoge cualquier idea, en la lengua que sea: «I have a new friend: Lúa!»."
+          }
+        }
+      }
+    ]
+  }
 }

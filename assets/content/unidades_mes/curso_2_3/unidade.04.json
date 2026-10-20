@@ -76,5 +76,248 @@
     "frase.cmd.novembro.2_3.01"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.04",
+    "titulo": {
+      "gl": "Lúa e o gatiño durmido",
+      "es": "Lúa y el gatito dormido"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Calle de invierno muy simple: suelo blanco de nieve y una casa con la ventana iluminada al fondo. Lúa, con gorro AZUL y guantes AZULES, corre en el sitio y agita una campanilla de madera MARRÓN. Copos de nieve grandes y redondos. Nada más.",
+        "trama": {
+          "gl": "Que frío fai na rúa! Neva, e Lúa leva gorro e luvas azuis. Para quentarse, corre sen moverse do sitio e fai soar a súa campaíña de madeira: tilín, tilín! Forte, moi forte!",
+          "es": "¡Qué frío hace en la calle! Nieva, y Lúa lleva gorro y guantes azules. Para entrar en calor, corre sin moverse del sitio y hace sonar su campanilla de madera: ¡tilín, tilín! ¡Fuerte, muy fuerte!"
+        },
+        "lua": {
+          "onomatopeia": "Ding-ding-ding!",
+          "ref": "frase.lua.2_3.04.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the bell? Touch Lúa's bell!",
+            "axuda": {
+              "gl": "Sinala a campaíña e agarda.",
+              "es": "Señala la campanilla y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you shake the bell fast? Ding, ding, ding!",
+            "axuda": {
+              "gl": "Sacode a man moi rápido, coma se tiveses unha campaíña.",
+              "es": "Sacude la mano muy rápido, como si tuvieras una campanilla."
+            }
+          },
+          "achegar": {
+            "en": "Do you wear gloves in the cold?",
+            "axuda": {
+              "gl": "Fai coma se puxeses unhas luvas e agarda un xesto ou un si.",
+              "es": "Haz como si te pusieras unos guantes y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa shakes the bell. Loud bells!",
+            "axuda": {
+              "gl": "Sacode ti a man rápido e forte, sen dicir máis.",
+              "es": "Sacude tú la mano rápido y fuerte, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bell! A loud, loud bell!",
+            "axuda": {
+              "gl": "Asente e fai ti tamén: tilín, tilín.",
+              "es": "Asiente y haz tú también: tilín, tilín."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Campaíña!",
+              "es": "¡Campanilla!"
+            },
+            "acolle": {
+              "gl": "Si, a campaíña de Lúa!",
+              "es": "¡Sí, la campanilla de Lúa!"
+            },
+            "en": "A bell! Loud bells in the snow!"
+          },
+          "unhaPalabra": {
+            "di": "Bell!",
+            "en": "Yes, a loud bell!"
+          },
+          "formaTorcida": {
+            "di": "Bell loud!",
+            "en": "Yes, a loud bell!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the bell?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se a sinala, dille: «Yes, the bell! Loud bells!».",
+            "es": "Pregunta y espera. Si la señala, dile: «Yes, the bell! Loud bells!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Interior cálido: una chimenea con fuego NARANJA a la derecha. En un sillón, la abuela de Lúa, una gata BLANCA con gafas redondas, tiene en el regazo a un gatito GRIS envuelto en una manta AMARILLA, dormido. Lúa, con gorro AZUL, entra por la puerta con la campanilla en una mano y el dedo en los labios.",
+        "trama": {
+          "gl": "Lúa entra na casa, onde se está ben quentiño. Pero… shh! No colo da avoa dorme un gatiño gris, envolto nunha manta amarela. Lúa garda a campaíña e camiña amodo, amodo, sen facer ruído.",
+          "es": "Lúa entra en casa, donde se está calentito. Pero… ¡shh! En el regazo de la abuela duerme un gatito gris, envuelto en una manta amarilla. Lúa esconde la campanilla y camina despacio, despacio, sin hacer ruido."
+        },
+        "lua": {
+          "onomatopeia": "Shh, shh…",
+          "ref": "frase.lua.2_3.04.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the baby? Touch the little kitten, softly.",
+            "axuda": {
+              "gl": "Sinala o gatiño moi amodo e agarda.",
+              "es": "Señala el gatito muy despacio y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be quiet like Lúa? Shh!",
+            "axuda": {
+              "gl": "Pon o dedo nos beizos e baixa a voz ata case un sopro.",
+              "es": "Ponte el dedo en los labios y baja la voz hasta casi un soplo."
+            }
+          },
+          "achegar": {
+            "en": "Do you have a warm blanket at home?",
+            "axuda": {
+              "gl": "Abrázate coma se te tapases cunha manta e agarda.",
+              "es": "Abrázate como si te taparas con una manta y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa is quiet. Shh, baby's sleeping.",
+            "axuda": {
+              "gl": "Pon o dedo nos beizos e agarda en silencio.",
+              "es": "Ponte el dedo en los labios y espera en silencio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The baby! The baby is sleeping. Shh!",
+            "axuda": {
+              "gl": "Asente e fala moi baixiño.",
+              "es": "Asiente y habla muy bajito."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Está a durmir!",
+              "es": "¡Está durmiendo!"
+            },
+            "acolle": {
+              "gl": "Si, shh, que dorme!",
+              "es": "¡Sí, shh, que duerme!"
+            },
+            "en": "Shh… the baby's sleeping."
+          },
+          "unhaPalabra": {
+            "di": "Baby!",
+            "en": "Yes, the baby is sleeping!"
+          },
+          "formaTorcida": {
+            "di": "Baby sleep-sleep!",
+            "en": "Yes, the baby's sleeping. Shh!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the baby sleeping?",
+          "axuda": {
+            "gl": "Pregunta moi baixiño e agarda. Se o sinala, dille en voz baixa: «Yes, the baby's sleeping. Shh…».",
+            "es": "Pregunta muy bajito y espera. Si lo señala, dile en voz baja: «Yes, the baby's sleeping. Shh…»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El mismo sillón junto a la chimenea. El gatito GRIS, con la manta AMARILLA caída, abre los ojos y estira las patitas. Lúa, ya sin gorro, está sentada también en el regazo de la abuela, gata BLANCA con gafas redondas, que abraza a los dos. Las tres cabezas juntas, sonriendo.",
+        "trama": {
+          "gl": "O gatiño abre un ollo… e logo o outro. Bosteza: aaaah! Esperta e estira as patiñas cara a Lúa. Lúa achégase e a avoa abrázaos aos dous no seu colo, ao carón do lume. Que quentiño se está aquí!",
+          "es": "El gatito abre un ojo… y luego el otro. Bosteza: ¡aaaah! Se despierta y estira las patitas hacia Lúa. Lúa se acerca y la abuela los abraza a los dos en su regazo, junto al fuego. ¡Qué calentito se está aquí!"
+        },
+        "lua": {
+          "onomatopeia": "Aaaah… meow!",
+          "ref": "frase.lua.2_3.04.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the kitten's eyes? Touch the open eyes!",
+            "axuda": {
+              "gl": "Sinala os ollos abertos do gatiño e agarda.",
+              "es": "Señala los ojos abiertos del gatito y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you wake up like the kitten? Stretch, stretch!",
+            "axuda": {
+              "gl": "Estira os brazos por riba da cabeza e bosteza.",
+              "es": "Estira los brazos por encima de la cabeza y bosteza."
+            }
+          },
+          "achegar": {
+            "en": "Do you like a big hug when you wake up?",
+            "axuda": {
+              "gl": "Abre os brazos coma para dar unha aperta e agarda.",
+              "es": "Abre los brazos como para dar un abrazo y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa hugs the baby. A big hug!",
+            "axuda": {
+              "gl": "Abrázate ti forte, amodo, sen dicir máis.",
+              "es": "Abrázate tú fuerte, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The baby wakes up! Good morning, baby!",
+            "axuda": {
+              "gl": "Asente e estira ti tamén os brazos.",
+              "es": "Asiente y estira tú también los brazos."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Espertou!",
+              "es": "¡Se ha despertado!"
+            },
+            "acolle": {
+              "gl": "Si, xa espertou!",
+              "es": "¡Sí, ya se ha despertado!"
+            },
+            "en": "Wake up, baby! The baby wakes up!"
+          },
+          "unhaPalabra": {
+            "di": "Wake!",
+            "en": "Yes, wake up, baby!"
+          },
+          "formaTorcida": {
+            "di": "Baby wake upped!",
+            "en": "Yes, the baby woke up!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you give a big hug, like Lúa?",
+          "axuda": {
+            "gl": "Abre ti os brazos primeiro e agarda. Se se achega, dálle unha aperta e dille: «A big hug! Wake up, baby!».",
+            "es": "Abre tú los brazos primero y espera. Si se acerca, dale un abrazo y dile: «A big hug! Wake up, baby!»."
+          }
+        }
+      }
+    ]
+  }
 }

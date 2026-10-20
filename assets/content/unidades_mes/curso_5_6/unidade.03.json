@@ -103,5 +103,326 @@
     "3_4.novembro.s1.leaf"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.03",
+    "titulo": {
+      "gl": "Lúa e a bolsa misteriosa",
+      "es": "Lúa y la bolsa misteriosa"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Claro de bosque en otoño, en trazo simple y sin hoguera. Lúa en el centro, con los ojos muy abiertos. Frente a ella, un erizo GRIS con pañuelo ROJO sujeta una bolsa de lino BEIGE cerrada con un cordel. Dos signos de interrogación pequeños flotan sobre la bolsa.",
+        "trama": {
+          "gl": "Chega novembro e no bosque prepárase o magosto. O ourizo cacheiro trae unha bolsa de liño ben pechada. «Dentro hai unha castaña», dille a Lúa, «pero tamén outras cousas. Atópaa sen mirar!»",
+          "es": "Llega noviembre y en el bosque se prepara el magosto. El erizo trae una bolsa de lino bien cerrada. «Dentro hay una castaña», le dice a Lúa, «pero también otras cosas. ¡Encuéntrala sin mirar!»"
+        },
+        "lua": {
+          "onomatopeia": "Rattle, rattle!",
+          "ref": "frase.lua.5_6.03.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the mystery bag? Touch the bag!",
+            "axuda": {
+              "gl": "Sinala a bolsa de liño e agarda.",
+              "es": "Señala la bolsa de lino y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you shake the bag like the hedgehog? Rattle, rattle!",
+            "axuda": {
+              "gl": "Axita no aire unha bolsa imaxinaria, primeiro amodo e despois rápido.",
+              "es": "Agita en el aire una bolsa imaginaria, primero despacio y después rápido."
+            }
+          },
+          "achegar": {
+            "en": "What would you put in a mystery bag?",
+            "axuda": {
+              "gl": "Agarda moito. Se o di na súa lingua, devólvello en inglés: «You would put a car in the bag!».",
+              "es": "Espera mucho. Si lo dice en su lengua, devuélveselo en inglés: «You would put a car in the bag!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, a mystery bag. What is in the bag?",
+            "axuda": {
+              "gl": "Pon cara de sorpresa e pasa a man por riba da bolsa da lámina.",
+              "es": "Pon cara de sorpresa y pasa la mano por encima de la bolsa de la lámina."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bag! The hedgehog's mystery bag!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha bolsa!",
+              "es": "¡Una bolsa!"
+            },
+            "acolle": {
+              "gl": "Si, unha bolsa misteriosa!",
+              "es": "¡Sí, una bolsa misteriosa!"
+            },
+            "en": "A bag! A mystery bag from the hedgehog!"
+          },
+          "unhaPalabra": {
+            "di": "Bag!",
+            "en": "Yes, a mystery bag!"
+          },
+          "formaTorcida": {
+            "di": "Mistery bag!",
+            "en": "Yes, a mystery bag!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What is in the mystery bag?",
+          "axuda": {
+            "gl": "Pregunta e agarda moito: aquí todo serve. Acolle o que imaxine e devólvello nunha frase: «A chestnut in the bag!».",
+            "es": "Pregunta y espera mucho: aquí vale todo. Acoge lo que imagine y devuélveselo en una frase: «A chestnut in the bag!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa con los ojos cerrados muy apretados y la mano metida en la bolsa de lino BEIGE. El erizo GRIS con pañuelo ROJO levanta un dedo, como quien da una orden. De la bolsa asoma, en la mano de Lúa, una piedra GRIS redonda.",
+        "trama": {
+          "gl": "O ourizo ergue un dedo: é a orde! Lúa pecha os ollos e mete a man na bolsa. Toca algo redondo… e moi frío. Sácao: é unha pedra! Non é a castaña.",
+          "es": "El erizo levanta un dedo: ¡es la orden! Lúa cierra los ojos y mete la mano en la bolsa. Toca algo redondo… y muy frío. Lo saca: ¡es una piedra! No es la castaña."
+        },
+        "lua": {
+          "onomatopeia": "Brrr!",
+          "ref": "frase.lua.5_6.03.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the round stone? Touch the stone!",
+            "axuda": {
+              "gl": "Sinala a pedra gris e agarda.",
+              "es": "Señala la piedra gris y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you feel without looking? Close your eyes… touch!",
+            "axuda": {
+              "gl": "Pecha os ollos e toca a mesa amodo, coma se buscases algo.",
+              "es": "Cierra los ojos y toca la mesa despacio, como si buscaras algo."
+            }
+          },
+          "achegar": {
+            "en": "What feels cold in your house?",
+            "axuda": {
+              "gl": "Agarda. Se di algo na súa lingua, devólvello en inglés: «Your ice cream is cold!».",
+              "es": "Espera. Si dice algo en su lengua, devuélveselo en inglés: «Your ice cream is cold!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa feels without looking. Round and cold!",
+            "axuda": {
+              "gl": "Pecha ti os ollos e fai que tocas algo frío.",
+              "es": "Cierra tú los ojos y haz como que tocas algo frío."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The stone! A round, cold stone!",
+            "axuda": {
+              "gl": "Asente e frega os brazos coma con frío.",
+              "es": "Asiente y frótate los brazos como con frío."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha pedra!",
+              "es": "¡Una piedra!"
+            },
+            "acolle": {
+              "gl": "Si, unha pedra fría!",
+              "es": "¡Sí, una piedra fría!"
+            },
+            "en": "A stone! A round, cold stone in the bag!"
+          },
+          "unhaPalabra": {
+            "di": "Cold!",
+            "en": "Yes, the stone is cold!"
+          },
+          "formaTorcida": {
+            "di": "Is a cold!",
+            "en": "Yes, it is cold!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Round… cold… no…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e, se non sae, fai unha castaña coas mans pechadas: «…chestnut! No chestnut!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y, si no sale, haz una castaña con las manos cerradas: «…chestnut! No chestnut!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa, ya con los ojos abiertos, saca de la bolsa de lino BEIGE un erizo de castaña VERDE con púas, abierto, con una castaña MARRÓN brillante dentro. El erizo GRIS con pañuelo ROJO se ríe y se señala sus propias púas.",
+        "trama": {
+          "gl": "Outra vez a man na bolsa. Agora toca algo que pica un pouquiño, coma pelos tesos. Lúa abre os ollos: é un ourizo de castaña e, dentro, brillante, a castaña! O ourizo cacheiro ri: «Pica coma min!»",
+          "es": "Otra vez la mano en la bolsa. Ahora toca algo que pincha un poquito, como pelos tiesos. Lúa abre los ojos: ¡es un erizo de castaña y, dentro, brillante, la castaña! El erizo se ríe: «¡Pincha como yo!»"
+        },
+        "lua": {
+          "onomatopeia": "Ta-da!",
+          "ref": "frase.lua.5_6.03.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the chestnut? Touch the shiny chestnut!",
+            "axuda": {
+              "gl": "Sinala a castaña que brilla e agarda.",
+              "es": "Señala la castaña que brilla y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you open the chestnut like Lúa? Close… and open!",
+            "axuda": {
+              "gl": "Pecha as mans coma unha castaña e ábreas de golpe.",
+              "es": "Cierra las manos como una castaña y ábrelas de golpe."
+            }
+          },
+          "achegar": {
+            "en": "What do you find in the park in autumn?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You find leaves and chestnuts!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You find leaves and chestnuts!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa finds the chestnut. A chestnut!",
+            "axuda": {
+              "gl": "Abre ti as mans de golpe e sinala a castaña.",
+              "es": "Abre tú las manos de golpe y señala la castaña."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The chestnut! In the rough green shell!",
+            "axuda": {
+              "gl": "Asente e pasa o dedo polas púas do ourizo.",
+              "es": "Asiente y pasa el dedo por las púas del erizo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha castaña!",
+              "es": "¡Una castaña!"
+            },
+            "acolle": {
+              "gl": "Si, atopou a castaña!",
+              "es": "¡Sí, ha encontrado la castaña!"
+            },
+            "en": "A chestnut! Lúa finds the chestnut!"
+          },
+          "unhaPalabra": {
+            "di": "Chestnut!",
+            "en": "Yes, a round brown chestnut!"
+          },
+          "formaTorcida": {
+            "di": "Lúa finded it!",
+            "en": "Yes, Lúa found it!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "Where was the chestnut?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala ou o di na súa lingua, devólvello: «In the rough green shell!».",
+            "es": "Pregunta y espera. Si lo señala o lo dice en su lengua, devuélveselo: «In the rough green shell!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa y el erizo GRIS con pañuelo ROJO sentados juntos sobre un tronco, cada uno con un cucurucho de papel lleno de castañas MARRONES asadas que echan un poco de vapor. A sus pies, la bolsa de lino BEIGE abierta, llena de castañas. Fondo de bosque simple.",
+        "trama": {
+          "gl": "Chega a avoa do ourizo cun cucurucho de castañas asadas para cada un. Que quentiñas! Antes de comer, Lúa mete na bolsa as castañas que sobran, para xogar outro día. E despois, xuntos nun tronco, comen castañas, ñam, ñam.",
+          "es": "Llega la abuela del erizo con un cucurucho de castañas asadas para cada uno. ¡Qué calentitas! Antes de comer, Lúa mete en la bolsa las castañas que sobran, para jugar otro día. Y después, juntos en un tronco, comen castañas, ñam, ñam."
+        },
+        "lua": {
+          "onomatopeia": "Munch, munch!",
+          "ref": "frase.lua.5_6.03.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the warm chestnuts? Touch the paper cone!",
+            "axuda": {
+              "gl": "Sinala o cucurucho e agarda.",
+              "es": "Señala el cucurucho y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you eat a warm chestnut? Blow… munch, munch!",
+            "axuda": {
+              "gl": "Sopra amodo nunha castaña imaxinaria e lévaa á boca.",
+              "es": "Sopla despacio una castaña imaginaria y llévatela a la boca."
+            }
+          },
+          "achegar": {
+            "en": "What do you like to eat when it is cold?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You like soup!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You like soup!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa puts the chestnuts into the bag.",
+            "axuda": {
+              "gl": "Fai ti o xesto de meter castañas nunha bolsa, unha a unha.",
+              "es": "Haz tú el gesto de meter castañas en una bolsa, una a una."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Chestnuts! Warm, yummy chestnuts!",
+            "axuda": {
+              "gl": "Asente e fai que comes unha castaña.",
+              "es": "Asiente y haz como que comes una castaña."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Castañas asadas!",
+              "es": "¡Castañas asadas!"
+            },
+            "acolle": {
+              "gl": "Si, castañas asadas, que boas!",
+              "es": "¡Sí, castañas asadas, qué ricas!"
+            },
+            "en": "Roasted chestnuts! Yummy chestnuts for Lúa and the hedgehog!"
+          },
+          "unhaPalabra": {
+            "di": "Yummy!",
+            "en": "Yes, yummy warm chestnuts!"
+          },
+          "formaTorcida": {
+            "di": "Put into bag chestnuts!",
+            "en": "Yes, put the chestnuts into the bag!"
+          }
+        },
+        "casa": {
+          "tipo": "achegar",
+          "en": "Do you eat chestnuts with your family in autumn?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se di que si, amplíao: «You eat chestnuts with your family! Yummy!».",
+            "es": "Pregunta y espera. Si dice que sí, amplíalo: «You eat chestnuts with your family! Yummy!»."
+          }
+        }
+      }
+    ]
+  }
 }

@@ -105,5 +105,326 @@
     "5_6.marzo.s1.pattern"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.10",
+    "titulo": {
+      "gl": "Lúa e a cuncha branca",
+      "es": "Lúa y la concha blanca"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Escalera de piedra GRIS que baja hacia una playa de arena clara; al fondo, el mar AZUL en franjas lisas. Lúa baja los escalones con dos cestas: una AZUL y otra de mimbre natural. Abajo, un cangrejo ermitaño ROJO que lleva a cuestas una concha pequeña MARRÓN la saluda con una pinza.",
+        "trama": {
+          "gl": "Chegou o verán e Lúa baixa á praia polos chanzos de pedra, un, dous, tres… Leva dous cestos: un azul e outro de vimbio. Abaixo, o cangrexo ermitán xa a espera: hoxe toca buscar cunchas!",
+          "es": "Ha llegado el verano y Lúa baja a la playa por los escalones de piedra, uno, dos, tres… Lleva dos cestas: una azul y otra de mimbre. Abajo, el cangrejo ermitaño ya la espera: ¡hoy toca buscar conchas!"
+        },
+        "lua": {
+          "onomatopeia": "Swish, swash!",
+          "ref": "frase.lua.5_6.10.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the steps? Touch the steps!",
+            "axuda": {
+              "gl": "Baixa co dedo polos chanzos, un a un, e agarda.",
+              "es": "Baja con el dedo por los escalones, uno a uno, y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you go down the steps like Lúa? Step, step, step!",
+            "axuda": {
+              "gl": "Move os pés no sitio, amodo, coma baixando chanzos.",
+              "es": "Mueve los pies en el sitio, despacio, como bajando escalones."
+            }
+          },
+          "achegar": {
+            "en": "Do you go to the beach in summer? Which beach?",
+            "axuda": {
+              "gl": "Pregunta e agarda. Se di o nome dunha praia, devólvello: «You go to the beach! Splash!».",
+              "es": "Pregunta y espera. Si dice el nombre de una playa, devuélveselo: «You go to the beach! Splash!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa goes down the steps. Step, step!",
+            "axuda": {
+              "gl": "Baixa ti co dedo polos chanzos, sen dicir máis.",
+              "es": "Baja tú con el dedo por los escalones, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The sea! The big blue sea!",
+            "axuda": {
+              "gl": "Asente e move o brazo en ondas longas.",
+              "es": "Asiente y mueve el brazo en ondas largas."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "O mar!",
+              "es": "¡El mar!"
+            },
+            "acolle": {
+              "gl": "Si, o mar azul!",
+              "es": "¡Sí, el mar azul!"
+            },
+            "en": "The sea! The blue sea at the beach!"
+          },
+          "unhaPalabra": {
+            "di": "Sea!",
+            "en": "Yes, the big blue sea!"
+          },
+          "formaTorcida": {
+            "di": "Stepses!",
+            "en": "Yes, the steps! Down the steps!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Steps, steps… the blue…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e move os brazos en ondas: «…sea! The blue sea!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y mueve los brazos en ondas: «…sea! The blue sea!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa agachada en la arena, señalando con alegría una concha BLANCA lisa que brilla. El cangrejo ermitaño ROJO con su concha pequeña MARRÓN, a su lado, levanta las pinzas sorprendido. La cesta AZUL, vacía, en la arena; piedrecitas grises alrededor.",
+        "trama": {
+          "gl": "Buscan e buscan pola area, pero só aparecen pedriñas e algas. O cesto azul segue baleiro… De súpeto, algo brilla ao sol, branco e liso.",
+          "es": "Buscan y buscan por la arena, pero solo aparecen piedrecitas y algas. La cesta azul sigue vacía… De repente, algo brilla al sol, blanco y liso."
+        },
+        "lua": {
+          "onomatopeia": "Ting!",
+          "ref": "frase.lua.5_6.10.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the white shell? Touch the shell!",
+            "axuda": {
+              "gl": "Sinala a cuncha branca e agarda.",
+              "es": "Señala la concha blanca y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you listen to a shell? Put it to your ear… shhh!",
+            "axuda": {
+              "gl": "Pon unha cuncha imaxinaria na orella e escoita en silencio.",
+              "es": "Pon una concha imaginaria en la oreja y escucha en silencio."
+            }
+          },
+          "achegar": {
+            "en": "What do you look for at the beach?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You look for little crabs!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You look for little crabs!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa finds a shell. White and smooth!",
+            "axuda": {
+              "gl": "Agáchate un pouco e sinala ti a cuncha con alegría.",
+              "es": "Agáchate un poco y señala tú la concha con alegría."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The shell! A smooth white shell!",
+            "axuda": {
+              "gl": "Asente e pasa o dedo moi suave pola cuncha.",
+              "es": "Asiente y pasa el dedo muy suave por la concha."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha cuncha!",
+              "es": "¡Una concha!"
+            },
+            "acolle": {
+              "gl": "Si, unha cuncha branca!",
+              "es": "¡Sí, una concha blanca!"
+            },
+            "en": "A shell! A smooth white shell!"
+          },
+          "unhaPalabra": {
+            "di": "Shell!",
+            "en": "Yes, a white shell!"
+          },
+          "formaTorcida": {
+            "di": "Look, a sell!",
+            "en": "Yes, look, a shell!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "Where did Lúa find the shell?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala ou o di na súa lingua, devólvello: «In the sand!».",
+            "es": "Pregunta y espera. Si lo señala o lo dice en su lengua, devuélveselo: «In the sand!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano: el cangrejo ermitaño ROJO saca medio cuerpo de su concha pequeña MARRÓN, que le queda apretada. Lúa le ofrece con las dos manos la concha BLANCA más grande y lisa. A su lado, la cesta AZUL llena de conchas BLANCAS.",
+        "trama": {
+          "gl": "O cesto azul énchese de cunchas brancas. Pero o cangrexo está triste: a súa cuncha marrón quédalle pequena e apértalle! Lúa colle a cuncha máis grande e lisa do cesto e ofrécella.",
+          "es": "La cesta azul se llena de conchas blancas. Pero el cangrejo está triste: ¡su concha marrón se le ha quedado pequeña y le aprieta! Lúa coge la concha más grande y lisa de la cesta y se la ofrece."
+        },
+        "lua": {
+          "onomatopeia": "Squeeze… pop!",
+          "ref": "frase.lua.5_6.10.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the crab's little shell? Touch it!",
+            "axuda": {
+              "gl": "Sinala a cuncha marrón do cangrexo e agarda.",
+              "es": "Señala la concha marrón del cangrejo y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you walk like the crab? Sideways, sideways!",
+            "axuda": {
+              "gl": "Camiña cos dedos de lado pola mesa, coma un cangrexo.",
+              "es": "Camina con los dedos de lado por la mesa, como un cangrejo."
+            }
+          },
+          "achegar": {
+            "en": "What do you give to your friends?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You give your friends a hug!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You give your friends a hug!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa gives the shell. Here you are!",
+            "axuda": {
+              "gl": "Fai ti o xesto de dar algo coas dúas mans.",
+              "es": "Haz tú el gesto de dar algo con las dos manos."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The big shell! A new home for the crab!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén a cuncha branca.",
+              "es": "Asiente y señala tú también la concha blanca."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha casa nova!",
+              "es": "¡Una casa nueva!"
+            },
+            "acolle": {
+              "gl": "Si, unha casa nova para o cangrexo!",
+              "es": "¡Sí, una casa nueva para el cangrejo!"
+            },
+            "en": "A new home! A big white shell for the crab!"
+          },
+          "unhaPalabra": {
+            "di": "Crab!",
+            "en": "Yes, the crab gets a new shell!"
+          },
+          "formaTorcida": {
+            "di": "The shell too small!",
+            "en": "Yes, the shell is too small!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did Lúa give the crab?",
+          "axuda": {
+            "gl": "Se non se lembra, fai o xesto de dar algo coas dúas mans e agarda: «The big white shell!».",
+            "es": "Si no se acuerda, haz el gesto de dar algo con las dos manos y espera: «The big white shell!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Orilla del mar con olas pequeñas de espuma BLANCA. Lúa salpica agua con las manos y ríe. A su lado chapotea el cangrejo ermitaño ROJO, ya dentro de la concha BLANCA grande. Arriba, un sol AMARILLO grande; la cesta AZUL espera en la arena seca.",
+        "trama": {
+          "gl": "O cangrexo métese na cuncha branca: perfecta! Dá unha volta de contento. O sol quenta moito, así que corren á beira do mar e chapuzan, plas, plas, ata que a auga lles fai cóxegas nos pés.",
+          "es": "El cangrejo se mete en la concha blanca: ¡perfecta! Da una vuelta de contento. El sol calienta mucho, así que corren a la orilla del mar y chapotean, plas, plas, hasta que el agua les hace cosquillas en los pies."
+        },
+        "lua": {
+          "onomatopeia": "Splash, splash!",
+          "ref": "frase.lua.5_6.10.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the crab now? Touch the new white shell!",
+            "axuda": {
+              "gl": "Sinala o cangrexo na súa cuncha nova e agarda.",
+              "es": "Señala el cangrejo en su concha nueva y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you splash like Lúa? Splash, splash, splash!",
+            "axuda": {
+              "gl": "Bate as mans no aire coma se salpicases auga.",
+              "es": "Bate las manos en el aire como si salpicaras agua."
+            }
+          },
+          "achegar": {
+            "en": "When it is hot, what do you play?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You play with water!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You play with water!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, it's hot! Lúa plays with water!",
+            "axuda": {
+              "gl": "Abánate coa man e despois fai que salpicas.",
+              "es": "Abanícate con la mano y después haz como que salpicas."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The crab! In his new white shell!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Auga!",
+              "es": "¡Agua!"
+            },
+            "acolle": {
+              "gl": "Si, xogan coa auga!",
+              "es": "¡Sí, juegan con el agua!"
+            },
+            "en": "Water! They play with water in the sea!"
+          },
+          "unhaPalabra": {
+            "di": "Splash!",
+            "en": "Yes, splash in the water!"
+          },
+          "formaTorcida": {
+            "di": "It's hot, we plays water!",
+            "en": "Yes, it's hot, we play with water!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "Shell, shell… what rhymes with shell? A bell?",
+          "axuda": {
+            "gl": "Xoga coa rima, sen présa. Acolle o que diga, rime ou non, e engade outra: «Shell, bell… and smell!».",
+            "es": "Juega con la rima, sin prisa. Acoge lo que diga, rime o no, y añade otra: «Shell, bell… and smell!»."
+          }
+        }
+      }
+    ]
+  }
 }

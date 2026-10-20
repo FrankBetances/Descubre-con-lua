@@ -81,5 +81,248 @@
   ],
   "reactivar": [],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.01",
+    "titulo": {
+      "gl": "Lúa e o coelliño do cesto",
+      "es": "Lúa y el conejito del cesto"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Alfombra redonda de colores lisos en el suelo de un aula, vista desde arriba en ángulo suave. Lúa, con un jersey AMARILLO, de pie junto a la alfombra, saluda con la mano abierta a un pato, un ratón y una rana que entran sonriendo. A un lado, un cesto de mimbre MARRÓN con la tapa entreabierta y dos orejas GRISES asomando.",
+        "trama": {
+          "gl": "Bos días! Na escola, a alfombra da asemblea xa está lista. Lúa saúda a cada amigo que chega: o pato, o rato, a ra. Todos se sentan en círculo. Pero… quen se agochou no cesto de vimbio?",
+          "es": "¡Buenos días! En la escuela, la alfombra de la asamblea ya está lista. Lúa saluda a cada amigo que llega: el pato, el ratón, la rana. Todos se sientan en círculo. Pero… ¿quién se ha escondido en el cesto de mimbre?"
+        },
+        "lua": {
+          "onomatopeia": "Tap, tap, tap!",
+          "ref": "frase.lua.3_4.01.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the basket? Touch the basket!",
+            "axuda": {
+              "gl": "Pasa o dedo polo cesto da lámina e agarda.",
+              "es": "Pasa el dedo por el cesto de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you wave hello like Lúa? Hello, hello!",
+            "axuda": {
+              "gl": "Saúda coa man aberta, amodo, mirándoa aos ollos.",
+              "es": "Saluda con la mano abierta, despacio, mirándola a los ojos."
+            }
+          },
+          "achegar": {
+            "en": "Do you wave hello at school?",
+            "axuda": {
+              "gl": "Fai coma se entrases pola porta saudando e agarda un xesto ou un si.",
+              "es": "Haz como si entraras por la puerta saludando y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Good morning! Look, Lúa waves. Hello, hello!",
+            "axuda": {
+              "gl": "Saúda ti coa man, moi amodo, e volve agardar.",
+              "es": "Saluda tú con la mano, muy despacio, y vuelve a esperar."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The basket! A big brown basket!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo xunto ao seu.",
+              "es": "Asiente y pon tu dedo junto al suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Ola!",
+              "es": "¡Hola!"
+            },
+            "acolle": {
+              "gl": "Si, ola a todos!",
+              "es": "¡Sí, hola a todos!"
+            },
+            "en": "Hello! Hello, friends!"
+          },
+          "unhaPalabra": {
+            "di": "Hello!",
+            "en": "Hello, duck! Hello, mouse!"
+          },
+          "formaTorcida": {
+            "di": "Hewo!",
+            "en": "Hello! Hello, Lúa!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Hello! Hello…?",
+          "axuda": {
+            "gl": "Di «Hello! Hello…» saudando coa man e agarda, coa voz no aire. Se o completa, ou saúda, celébrao: «Hello! Hello, hello!».",
+            "es": "Di «Hello! Hello…» saludando con la mano y espera, con la voz en el aire. Si lo completa, o saluda, celébralo: «Hello! Hello, hello!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano del cesto de mimbre MARRÓN. De dentro asoma la cabeza de un conejito GRIS de orejas largas, con mirada tímida. Lúa, con su jersey AMARILLO, sentada en el suelo a su lado, con las manos sobre las rodillas, esperando. Fondo liso.",
+        "trama": {
+          "gl": "No cesto hai un coelliño gris. É novo na escola e dálle vergoña saír. Lúa non tira del: senta amodo ao seu carón, pon as mans nos xeonllos e agarda, tranquila.",
+          "es": "En el cesto hay un conejito gris. Es nuevo en la escuela y le da vergüenza salir. Lúa no tira de él: se sienta despacio a su lado, pone las manos en las rodillas y espera, tranquila."
+        },
+        "lua": {
+          "onomatopeia": "Pat, pat…",
+          "ref": "frase.lua.3_4.01.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little rabbit? Touch his ears!",
+            "axuda": {
+              "gl": "Sinala as orellas que asoman do cesto e agarda.",
+              "es": "Señala las orejas que asoman del cesto y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you sit like Lúa? Sit… and hands on your knees!",
+            "axuda": {
+              "gl": "Baixa amodo ata sentar no chan e pon as mans nos xeonllos.",
+              "es": "Baja despacio hasta sentarte en el suelo y pon las manos en las rodillas."
+            }
+          },
+          "achegar": {
+            "en": "Do you sit next to a friend at school?",
+            "axuda": {
+              "gl": "Dá unha palmadiña no chan ao teu carón e agarda un xesto ou un si.",
+              "es": "Da una palmadita en el suelo a tu lado y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa sits. Sit, sit… hands on knees.",
+            "axuda": {
+              "gl": "Senta ti a carón da lámina, amodo, sen dicir máis.",
+              "es": "Siéntate tú junto a la lámina, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes, the rabbit! A little gray rabbit!",
+            "axuda": {
+              "gl": "Asente e acariña co dedo as orellas da lámina.",
+              "es": "Asiente y acaricia con el dedo las orejas de la lámina."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Ten vergoña!",
+              "es": "¡Le da vergüenza!"
+            },
+            "acolle": {
+              "gl": "Si, dálle un pouco de vergoña.",
+              "es": "Sí, le da un poco de vergüenza."
+            },
+            "en": "Yes, he is shy. Lúa sits and waits."
+          },
+          "unhaPalabra": {
+            "di": "Rabbit!",
+            "en": "Yes, a shy little rabbit!"
+          },
+          "formaTorcida": {
+            "di": "Rabbit sit me!",
+            "en": "Yes! Sit with me, little rabbit!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "Where is the little rabbit?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala o cesto, dille: «Yes! In the basket! Hello, little rabbit!».",
+            "es": "Pregunta y espera. Si señala el cesto, dile: «Yes! In the basket! Hello, little rabbit!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Todos en círculo sobre la alfombra: Lúa con su jersey AMARILLO, el conejito GRIS ya fuera del cesto, el pato, el ratón y la rana, con las manos juntas en mitad de una palmada y caras de risa. El cesto de mimbre MARRÓN, vacío, detrás.",
+        "trama": {
+          "gl": "Lúa propón un xogo: palmas, palmas… e quietos coma estatuas! O coelliño espreita, ri… e sae do cesto dun brinco. Senta no círculo cos demais e todos aplauden xuntos, ao pulso da asemblea.",
+          "es": "Lúa propone un juego: palmas, palmas… ¡y quietos como estatuas! El conejito se asoma, se ríe… y sale del cesto de un brinco. Se sienta en el círculo con los demás y todos aplauden juntos, al pulso de la asamblea."
+        },
+        "lua": {
+          "onomatopeia": "Plas, plas, plas!",
+          "ref": "frase.lua.3_4.01.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the rabbit now? Touch the rabbit!",
+            "axuda": {
+              "gl": "Sinala o coelliño, xa fóra do cesto, e agarda.",
+              "es": "Señala el conejito, ya fuera del cesto, y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you clap and freeze? Clap, clap… freeze!",
+            "axuda": {
+              "gl": "Bate dúas palmas e para de súpeto, cos ollos moi abertos.",
+              "es": "Da dos palmadas y párate de golpe, con los ojos muy abiertos."
+            }
+          },
+          "achegar": {
+            "en": "Do you like to clap with your friends?",
+            "axuda": {
+              "gl": "Bate as palmas ao pulso e agarda un xesto ou un si.",
+              "es": "Da palmas al pulso y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa claps. Clap, clap… freeze!",
+            "axuda": {
+              "gl": "Fai ti o xogo, amodo, e para ao final coma unha estatua.",
+              "es": "Haz tú el juego, despacio, y párate al final como una estatua."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The rabbit is here! He sits with his friends!",
+            "axuda": {
+              "gl": "Asente e bate unha palmada suave.",
+              "es": "Asiente y da una palmada suave."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Estatua!",
+              "es": "¡Estatua!"
+            },
+            "acolle": {
+              "gl": "Si, quietos coma estatuas!",
+              "es": "¡Sí, quietos como estatuas!"
+            },
+            "en": "Freeze! Like a statue! Thank you, rabbit!"
+          },
+          "unhaPalabra": {
+            "di": "Freeze!",
+            "en": "Yes! Clap, clap, freeze!"
+          },
+          "formaTorcida": {
+            "di": "Fweeze!",
+            "en": "Freeze! Yes, we freeze!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you clap and freeze, like the rabbit?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Faga o que faga, devólvelle a frase enteira: «Clap, clap… freeze!».",
+            "es": "Pregunta y espera. Haga lo que haga, devuélvele la frase entera: «Clap, clap… freeze!»."
+          }
+        }
+      }
+    ]
+  }
 }

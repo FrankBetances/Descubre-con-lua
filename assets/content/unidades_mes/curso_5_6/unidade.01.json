@@ -103,5 +103,326 @@
   ],
   "reactivar": [],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.01",
+    "titulo": {
+      "gl": "Lúa e a percha da lúa",
+      "es": "Lúa y la percha de la luna"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Pasillo de escuela con una fila de perchas bajas en la pared; encima de cada una, una tarjeta de madera con un dibujo sencillo (sol, pez, flor). Lúa entra por la izquierda con un abrigo VERDE puesto, con gotitas de lluvia. A su lado, un osito MARRÓN con mochila AMARILLA la saluda. Fondo liso, sin más adornos.",
+        "trama": {
+          "gl": "É o primeiro día de escola despois do verán. Lúa chega co seu abrigo verde novo, aínda mollado de chuvia. No corredor hai unha fila de perchas e, enriba de cada unha, unha tarxeta de madeira cun debuxo. O osiño marrón xa colgou o seu abrigo na do sol.",
+          "es": "Es el primer día de escuela después del verano. Lúa llega con su abrigo verde nuevo, todavía mojado de lluvia. En el pasillo hay una fila de perchas y, encima de cada una, una tarjeta de madera con un dibujo. El osito marrón ya ha colgado su abrigo en la del sol."
+        },
+        "lua": {
+          "onomatopeia": "Drip, drop!",
+          "ref": "frase.lua.5_6.01.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is Lúa's green coat? Touch the coat!",
+            "axuda": {
+              "gl": "Pasa o dedo polo abrigo verde da lámina e agarda.",
+              "es": "Pasa el dedo por el abrigo verde de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you put on a coat like Lúa? One arm, two arms… zip!",
+            "axuda": {
+              "gl": "Mete un brazo e logo o outro nun abrigo imaxinario e sobe a cremalleira.",
+              "es": "Mete un brazo y luego el otro en un abrigo imaginario y sube la cremallera."
+            }
+          },
+          "achegar": {
+            "en": "What color is your coat?",
+            "axuda": {
+              "gl": "Toca a túa roupa e agarda. Se di a cor na súa lingua, devólvella en inglés: «Your coat is red!».",
+              "es": "Tócate la ropa y espera. Si dice el color en su lengua, devuélveselo en inglés: «Your coat is red!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa has a coat. A green coat!",
+            "axuda": {
+              "gl": "Sinala o abrigo e fai ti o xesto de poñelo, amodo.",
+              "es": "Señala el abrigo y haz tú el gesto de ponértelo, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The coat! A new green coat!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un abrigo!",
+              "es": "¡Un abrigo!"
+            },
+            "acolle": {
+              "gl": "Si, un abrigo verde!",
+              "es": "¡Sí, un abrigo verde!"
+            },
+            "en": "A coat! Lúa's new green coat!"
+          },
+          "unhaPalabra": {
+            "di": "Coat!",
+            "en": "Yes, a green coat!"
+          },
+          "formaTorcida": {
+            "di": "Coat green!",
+            "en": "Yes, a green coat!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "What color is Lúa's coat?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se di «verde», devólvello nunha frase: «Green! A green coat!».",
+            "es": "Pregunta y espera. Si dice «verde», devuélveselo en una frase: «Green! A green coat!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El mismo pasillo. Lúa, con el abrigo VERDE en los brazos, mira las perchas con cara de duda. El osito MARRÓN con mochila AMARILLA le enseña una tarjeta de madera con una flecha que da la vuelta. Detrás de Lúa, en la pared de enfrente, una percha libre con la tarjeta de la LUNA.",
+        "trama": {
+          "gl": "Lúa busca a súa tarxeta: a da lúa, coma o seu nome. Sol, peixe, flor… e a lúa non aparece! O osiño non di nada: só lle amosa unha tarxeta cunha frecha que dá a volta.",
+          "es": "Lúa busca su tarjeta: la de la luna, como su nombre en gallego. Sol, pez, flor… ¡y la luna no aparece! El osito no dice nada: solo le enseña una tarjeta con una flecha que da la vuelta."
+        },
+        "lua": {
+          "onomatopeia": "Swish!",
+          "ref": "frase.lua.5_6.01.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the moon card? Touch the moon!",
+            "axuda": {
+              "gl": "Sinala a tarxeta da lúa e agarda.",
+              "es": "Señala la tarjeta de la luna y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you turn around like Lúa? Turn around… and stop!",
+            "axuda": {
+              "gl": "Dá ti unha volta amodo e para de súpeto en «stop».",
+              "es": "Da tú una vuelta despacio y para de golpe en «stop»."
+            }
+          },
+          "achegar": {
+            "en": "Where do you hang your coat at home?",
+            "axuda": {
+              "gl": "Fai coma se colgases algo e agarda. Se o di na súa lingua, devólvello: «You hang your coat by the door!».",
+              "es": "Haz como si colgaras algo y espera. Si lo dice en su lengua, devuélveselo: «You hang your coat by the door!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa turns around. There is the moon!",
+            "axuda": {
+              "gl": "Dá ti a volta amodo e sinala a lúa.",
+              "es": "Da tú la vuelta despacio y señala la luna."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The moon card! It was behind Lúa!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén detrás de Lúa.",
+              "es": "Asiente y señala tú también detrás de Lúa."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Dá a volta!",
+              "es": "¡Date la vuelta!"
+            },
+            "acolle": {
+              "gl": "Si, dá a volta, Lúa!",
+              "es": "¡Sí, date la vuelta, Lúa!"
+            },
+            "en": "Turn around, Lúa! Your moon card is there!"
+          },
+          "unhaPalabra": {
+            "di": "Moon!",
+            "en": "Yes, the moon card! Lúa's card!"
+          },
+          "formaTorcida": {
+            "di": "Turn arounding!",
+            "en": "Yes, Lúa is turning around!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did the little bear show Lúa?",
+          "axuda": {
+            "gl": "Se non se lembra, fai o xesto de dar a volta e agarda: «A card! Turn around!».",
+            "es": "Si no se acuerda, haz el gesto de darse la vuelta y espera: «A card! Turn around!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano de la percha con la tarjeta de la LUNA, un poco alta. Lúa, de puntillas y con el brazo estirado, cuelga el abrigo VERDE. A su lado, el osito MARRÓN con mochila AMARILLA levanta una tarjeta con el dibujo de una percha y sonríe. Fondo liso.",
+        "trama": {
+          "gl": "A percha da lúa está un pouquiño alta. Lúa ponse de puntas, estira o brazo… un pouco máis… e xa está! O abrigo verde queda colgado, quietiño, no seu sitio. O osiño ergue outra tarxeta, a dunha percha. Ben feito!",
+          "es": "La percha de la luna está un poquito alta. Lúa se pone de puntillas, estira el brazo… un poco más… ¡y ya está! El abrigo verde queda colgado, quietecito, en su sitio. El osito levanta otra tarjeta, la de una percha. ¡Bien hecho!"
+        },
+        "lua": {
+          "onomatopeia": "Clack!",
+          "ref": "frase.lua.5_6.01.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the coat now? Touch the hook!",
+            "axuda": {
+              "gl": "Sinala a percha da lúa e agarda.",
+              "es": "Señala la percha de la luna y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you hang a coat up high? Stretch, stretch… hang!",
+            "axuda": {
+              "gl": "Ponte de puntas e estira o brazo cara arriba, amodo.",
+              "es": "Ponte de puntillas y estira el brazo hacia arriba, despacio."
+            }
+          },
+          "achegar": {
+            "en": "Who helps you with your coat?",
+            "axuda": {
+              "gl": "Agarda. Se nomea a alguén, devólvello en inglés: «Grandpa helps you!».",
+              "es": "Espera. Si nombra a alguien, devuélveselo en inglés: «Grandpa helps you!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa hangs her coat. Up, up… hang!",
+            "axuda": {
+              "gl": "Fai ti o xesto de colgar no alto, sen dicir máis.",
+              "es": "Haz tú el gesto de colgar en lo alto, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The hook! The coat is on the hook!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén a percha.",
+              "es": "Asiente y señala tú también la percha."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Colgado!",
+              "es": "¡Colgado!"
+            },
+            "acolle": {
+              "gl": "Si, xa está colgado!",
+              "es": "¡Sí, ya está colgado!"
+            },
+            "en": "Hanging! The green coat is hanging on the hook!"
+          },
+          "unhaPalabra": {
+            "di": "Hang!",
+            "en": "Yes, Lúa hangs the coat!"
+          },
+          "formaTorcida": {
+            "di": "Lúa hanged coat!",
+            "en": "Yes, Lúa hung her coat!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "Coat, coat… what rhymes with coat? A goat? A boat?",
+          "axuda": {
+            "gl": "Xoga coa rima, sen présa. Acolle o que diga, rime ou non, e engade outra: «Coat, goat… and boat!».",
+            "es": "Juega con la rima, sin prisa. Acoge lo que diga, rime o no, y añade otra: «Coat, goat… and boat!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa y el osito MARRÓN con mochila AMARILLA sentados juntos en una mesa baja, con las manos limpias y gotitas de agua. Delante, un plato con trozos de manzana. Sobre la mesa, dos tarjetas de madera: unas manos con jabón y una manzana. Al fondo se ve el abrigo VERDE colgado.",
+        "trama": {
+          "gl": "Agora o osiño amosa dúas tarxetas á vez: unhas mans con xabón e unha mazá. Lúa enténdeo á primeira! Primeiro lavan as mans, fsss, fsss, e despois séntanse xuntos a comer mazá. Que boa está!",
+          "es": "Ahora el osito enseña dos tarjetas a la vez: unas manos con jabón y una manzana. ¡Lúa lo entiende a la primera! Primero se lavan las manos, fsss, fsss, y después se sientan juntos a comer manzana. ¡Qué rica está!"
+        },
+        "lua": {
+          "onomatopeia": "Scrub, scrub… crunch!",
+          "ref": "frase.lua.5_6.01.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the two cards? Touch the apple card!",
+            "axuda": {
+              "gl": "Sinala as dúas tarxetas, unha e despois a outra, e agarda.",
+              "es": "Señala las dos tarjetas, una y después la otra, y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you wash your hands like Lúa? Scrub, scrub, scrub!",
+            "axuda": {
+              "gl": "Frega as mans coma con xabón e despois fai que comes.",
+              "es": "Frótate las manos como con jabón y después haz como que comes."
+            }
+          },
+          "achegar": {
+            "en": "What do you eat after school?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You eat a banana!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You eat a banana!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, first Lúa washes, then she eats. Yum!",
+            "axuda": {
+              "gl": "Fai ti os dous xestos, un detrás do outro, amodo.",
+              "es": "Haz tú los dos gestos, uno detrás del otro, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The apple! First wash, then eat the apple!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén a tarxeta da mazá.",
+              "es": "Asiente y señala tú también la tarjeta de la manzana."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Mazá!",
+              "es": "¡Manzana!"
+            },
+            "acolle": {
+              "gl": "Si, unha mazá moi boa!",
+              "es": "¡Sí, una manzana muy rica!"
+            },
+            "en": "An apple! Lúa and the bear eat an apple!"
+          },
+          "unhaPalabra": {
+            "di": "Wash!",
+            "en": "Yes, first we wash our hands!"
+          },
+          "formaTorcida": {
+            "di": "Then we eating!",
+            "en": "Yes, then we eat!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "First we wash, then we…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e, se non sae, fai o xesto de comer: «…eat! First we wash, then we eat!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y, si no sale, haz el gesto de comer: «…eat! First we wash, then we eat!»."
+          }
+        }
+      }
+    ]
+  }
 }

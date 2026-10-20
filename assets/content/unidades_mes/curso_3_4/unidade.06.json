@@ -84,5 +84,248 @@
     "3_4.xaneiro.s2.umbrella"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.06",
+    "titulo": {
+      "gl": "Lúa e o moucho durmiñento",
+      "es": "Lúa y el búho dormilón"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Plaza de pueblo sencilla con un árbol a la derecha. Lúa con pulseras de cascabeles DORADAS en las muñecas y un pañuelo MORADO, bailando con los brazos arriba. Detrás, en silueta, un pequeño desfile de máscaras. En una rama del árbol, una bola de plumas MARRÓN con los ojos cerrados (el búho).",
+        "trama": {
+          "gl": "É Entroido na praza! Lúa leva as súas pulseiras de cascabeis e baila coa xente do desfile. Cling, cling, cling! Os cascabeis soan fortes, moi fortes. Pero na árbore da praza alguén abre un ollo… e pon cara de sono.",
+          "es": "¡Es Carnaval en la plaza! Lúa lleva sus pulseras de cascabeles y baila con la gente del desfile. ¡Cling, cling, cling! Los cascabeles suenan fuerte, muy fuerte. Pero en el árbol de la plaza alguien abre un ojo… y pone cara de sueño."
+        },
+        "lua": {
+          "onomatopeia": "Cling, cling, cling!",
+          "ref": "frase.lua.3_4.06.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the bells? Touch Lúa's bells!",
+            "axuda": {
+              "gl": "Sinala as pulseiras de Lúa e agarda.",
+              "es": "Señala las pulseras de Lúa y espera."
+            }
+          },
+          "imitar": {
+            "en": "My turn… loud, loud! Your turn! Shake your bells!",
+            "axuda": {
+              "gl": "Toca o teu peito e abanea as mans con forza; despois sinala con cariño a criatura e agarda.",
+              "es": "Tócate el pecho y agita las manos con fuerza; luego señala con cariño a la criatura y espera."
+            }
+          },
+          "achegar": {
+            "en": "Do you like loud music?",
+            "axuda": {
+              "gl": "Bate as palmas forte un instante e agarda un xesto ou un si.",
+              "es": "Da palmas fuerte un momento y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa shakes the bells. Loud! So loud!",
+            "axuda": {
+              "gl": "Abanea ti as mans con forza e para de súpeto.",
+              "es": "Agita tú las manos con fuerza y para de golpe."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bells! Loud little bells!",
+            "axuda": {
+              "gl": "Asente e abanea un pouco as mans.",
+              "es": "Asiente y agita un poco las manos."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Fan moito ruído!",
+              "es": "¡Hacen mucho ruido!"
+            },
+            "acolle": {
+              "gl": "Si, soan moi fortes!",
+              "es": "¡Sí, suenan muy fuerte!"
+            },
+            "en": "Yes! The bells are loud! So loud!"
+          },
+          "unhaPalabra": {
+            "di": "Loud!",
+            "en": "Yes, loud bells! So loud!"
+          },
+          "formaTorcida": {
+            "di": "Bells is loud loud!",
+            "en": "Yes, the bells are so loud!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "What is so loud?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala os cascabeis ou abanea as mans, dille: «Yes, the bells! The bells are loud!».",
+            "es": "Pregunta y espera. Si señala los cascabeles o agita las manos, dile: «Yes, the bells! The bells are loud!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano del árbol: en la rama, un búho pequeño MARRÓN de ojos AMARILLOS, medio dormido, tapándose las orejas con las alas. Abajo, Lúa con sus pulseras DORADAS quietas y un dedo en los labios. Fondo liso.",
+        "trama": {
+          "gl": "Na póla hai un moucho pequeniño. Durme de día e esperta de noite, e tanto ruído non o deixa descansar! Tápase as orellas coas ás. Lúa decátase: para de bailar, suxeita os cascabeis e fala moi baixiño.",
+          "es": "En la rama hay un búho pequeñito. Duerme de día y se despierta de noche, ¡y tanto ruido no lo deja descansar! Se tapa las orejas con las alas. Lúa se da cuenta: deja de bailar, sujeta los cascabeles y habla muy bajito."
+        },
+        "lua": {
+          "onomatopeia": "Shhh…",
+          "ref": "frase.lua.3_4.06.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little owl? Touch the owl!",
+            "axuda": {
+              "gl": "Sinala o moucho na póla e agarda.",
+              "es": "Señala el búho en la rama y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be quiet like Lúa? Finger on your lips… quiet.",
+            "axuda": {
+              "gl": "Leva o dedo aos beizos e baixa a voz ata case un sopro.",
+              "es": "Llévate el dedo a los labios y baja la voz hasta casi un soplo."
+            }
+          },
+          "achegar": {
+            "en": "Are you quiet when you sleep?",
+            "axuda": {
+              "gl": "Pon as mans xuntas baixo a meixela, coma para durmir, e agarda un xesto ou un si.",
+              "es": "Pon las manos juntas bajo la mejilla, como para dormir, y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa is quiet. Shh… quiet, quiet.",
+            "axuda": {
+              "gl": "Leva ti o dedo aos beizos e agarda en silencio.",
+              "es": "Llévate tú el dedo a los labios y espera en silencio."
+            }
+          },
+          "sinala": {
+            "en": "Yes, the owl! A sleepy little owl!",
+            "axuda": {
+              "gl": "Asente amodo, co dedo nos beizos.",
+              "es": "Asiente despacio, con el dedo en los labios."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Ten sono!",
+              "es": "¡Tiene sueño!"
+            },
+            "acolle": {
+              "gl": "Si, o moucho ten moito sono.",
+              "es": "Sí, el búho tiene mucho sueño."
+            },
+            "en": "Yes, the owl is sleepy. Quiet, quiet."
+          },
+          "unhaPalabra": {
+            "di": "Owl!",
+            "en": "Yes, a quiet little owl!"
+          },
+          "formaTorcida": {
+            "di": "Kwiet!",
+            "en": "Yes, quiet! Quiet, quiet now."
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you be quiet, like Lúa?",
+          "axuda": {
+            "gl": "Pregunta moi baixiño e agarda, co dedo nos beizos. Se o fai, dille ao oído: «Quiet… quiet now.».",
+            "es": "Pregunta muy bajito y espera, con el dedo en los labios. Si lo hace, dile al oído: «Quiet… quiet now.»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Bajo el árbol, Lúa con sus pulseras DORADAS lleva puesta una careta de madera de león y ruge bajito con la boca redonda. El búho MARRÓN de ojos AMARILLOS, ya despierto, se ríe con las alas sobre la barriga. Los dos muy cerca, casi abrazados.",
+        "trama": {
+          "gl": "Cando cae a tarde, o moucho esperta con ganas de xogar. Lúa pon a súa careta de madeira de león e ruxe… moi baixiño: grrr. O moucho ri tanto que se agarra a barriga coas ás! Lúa dálle unha aperta e rin xuntos.",
+          "es": "Cuando cae la tarde, el búho se despierta con ganas de jugar. Lúa se pone su careta de madera de león y ruge… muy bajito: grrr. ¡El búho se ríe tanto que se agarra la barriga con las alas! Lúa le da un abrazo y se ríen juntos."
+        },
+        "lua": {
+          "onomatopeia": "Grrr…",
+          "ref": "frase.lua.3_4.06.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the mask? Touch the lion mask!",
+            "axuda": {
+              "gl": "Sinala a careta de Lúa e agarda.",
+              "es": "Señala la careta de Lúa y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you roar like a little lion? A quiet roar… grrr!",
+            "axuda": {
+              "gl": "Pon unha careta imaxinaria e ruxe moi suave: grrr.",
+              "es": "Ponte una careta imaginaria y ruge muy suave: grrr."
+            }
+          },
+          "achegar": {
+            "en": "Can you tickle your tummy? Tummy, tummy!",
+            "axuda": {
+              "gl": "Toca a túa barriga cun dedo, ri, e agarda o seu xesto.",
+              "es": "Tócate la barriga con un dedo, ríete, y espera su gesto."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa has a mask. Roar… a quiet roar!",
+            "axuda": {
+              "gl": "Pon ti a careta imaxinaria e ruxe baixiño.",
+              "es": "Ponte tú la careta imaginaria y ruge bajito."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The mask! A lion mask! Roar!",
+            "axuda": {
+              "gl": "Asente e fai a careta coas mans diante dos ollos.",
+              "es": "Asiente y haz la careta con las manos delante de los ojos."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un león!",
+              "es": "¡Un león!"
+            },
+            "acolle": {
+              "gl": "Si, un león moi bo!",
+              "es": "¡Sí, un león muy bueno!"
+            },
+            "en": "Yes, a lion! A quiet little roar!"
+          },
+          "unhaPalabra": {
+            "di": "Roar!",
+            "en": "Yes, a quiet roar! Grrr!"
+          },
+          "formaTorcida": {
+            "di": "Owl tummy laugh!",
+            "en": "Yes, the owl laughs! A big tummy laugh!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "A mask! Roar… a quiet…?",
+          "axuda": {
+            "gl": "Di «A mask! Roar… a quiet…» poñendo a careta imaxinaria e agarda. Se ruxe ou di «roar», celébrao baixiño: «A quiet roar! Grrr…».",
+            "es": "Di «A mask! Roar… a quiet…» poniéndote la careta imaginaria y espera. Si ruge o dice «roar», celébralo bajito: «A quiet roar! Grrr…»."
+          }
+        }
+      }
+    ]
+  }
 }

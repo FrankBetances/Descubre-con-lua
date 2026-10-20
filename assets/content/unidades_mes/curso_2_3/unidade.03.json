@@ -71,5 +71,248 @@
     "frase.cmd.outubro.2_3.03"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.03",
+    "titulo": {
+      "gl": "Lúa e a cama do ourizo",
+      "es": "Lúa y la cama del erizo"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Bosque de otoño en planos limpios: un castaño a la izquierda y el suelo marrón claro. En el centro, un montoncito de hojas OCRES y MARRONES. Al lado, un erizo MARRÓN con nariz NEGRA (el mismo de las láminas 2 y 3) lleva una hoja en la boca. Lúa, con bufanda VERDE, se agacha junto al montón.",
+        "trama": {
+          "gl": "No bosque xa é outono e o chan está cheo de follas. Un ourizo cacheiro está a facer a súa cama para durmir todo o inverno. Lúa axúdao: colle follas ocres e marróns, que renxen nas mans. Crac, crac!",
+          "es": "En el bosque ya es otoño y el suelo está lleno de hojas. Un erizo está haciendo su cama para dormir todo el invierno. Lúa le ayuda: coge hojas ocres y marrones, que crujen en las manos. ¡Crac, crac!"
+        },
+        "lua": {
+          "onomatopeia": "Crackle, crackle!",
+          "ref": "frase.lua.2_3.03.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the leaves? Touch the crunchy leaves!",
+            "axuda": {
+              "gl": "Pasa o dedo polo montón de follas e agarda.",
+              "es": "Pasa el dedo por el montón de hojas y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you crunch your leaves? Crunch, crunch!",
+            "axuda": {
+              "gl": "Frega as mans unha contra a outra coma se esmagases follas secas.",
+              "es": "Frota las manos una contra otra como si aplastaras hojas secas."
+            }
+          },
+          "achegar": {
+            "en": "Do you find leaves in the park?",
+            "axuda": {
+              "gl": "Fai coma se colleses unha folla do chan e agarda.",
+              "es": "Haz como si cogieras una hoja del suelo y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa crunches the leaves. Crunch!",
+            "axuda": {
+              "gl": "Esmaga ti unha folla imaxinaria entre as mans, amodo.",
+              "es": "Aplasta tú una hoja imaginaria entre las manos, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Leaves! Crunchy brown leaves!",
+            "axuda": {
+              "gl": "Asente e fai ti tamén o ruído: crac, crac.",
+              "es": "Asiente y haz tú también el ruido: crac, crac."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Follas!",
+              "es": "¡Hojas!"
+            },
+            "acolle": {
+              "gl": "Si, moitas follas!",
+              "es": "¡Sí, muchas hojas!"
+            },
+            "en": "Leaves! Crunchy leaves for the bed!"
+          },
+          "unhaPalabra": {
+            "di": "Leaf!",
+            "en": "Yes, a crunchy leaf!"
+          },
+          "formaTorcida": {
+            "di": "Leafs!",
+            "en": "Yes, leaves! Crunchy leaves!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where are the crunchy leaves?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se as sinala, dille: «Yes, crunchy leaves! Crunch, crunch!».",
+            "es": "Pregunta y espera. Si las señala, dile: «Yes, crunchy leaves! Crunch, crunch!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Líneas blancas de viento cruzan la escena de izquierda a derecha. Las hojas OCRES y MARRONES vuelan por el aire. El erizo MARRÓN de nariz NEGRA, sentado donde estaba el montón, mira hacia arriba con la boca abierta. Lúa, con la bufanda VERDE ondeando, estira los brazos hacia las hojas.",
+        "trama": {
+          "gl": "De súpeto sopra o vento: fiuuu! As follas voan por riba das árbores e o montón desaparece. O ourizo queda sen cama! Lúa corre detrás das follas, de puntas, cos brazos abertos.",
+          "es": "De repente sopla el viento: ¡fiuuu! Las hojas vuelan por encima de los árboles y el montón desaparece. ¡El erizo se queda sin cama! Lúa corre detrás de las hojas, de puntillas, con los brazos abiertos."
+        },
+        "lua": {
+          "onomatopeia": "Fiuuu, fiuuu!",
+          "ref": "frase.lua.2_3.03.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the leaves now? Touch the flying leaves!",
+            "axuda": {
+              "gl": "Sinala as follas que voan pola lámina e agarda.",
+              "es": "Señala las hojas que vuelan por la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you blow like the wind? Whoosh!",
+            "axuda": {
+              "gl": "Sopra forte e move os brazos dun lado a outro.",
+              "es": "Sopla fuerte y mueve los brazos de un lado a otro."
+            }
+          },
+          "achegar": {
+            "en": "Do you like the wind on your face?",
+            "axuda": {
+              "gl": "Abánate coa man e agarda un xesto ou un si.",
+              "es": "Abanícate con la mano y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa blows like the wind. Whoosh!",
+            "axuda": {
+              "gl": "Sopra ti forte e move os brazos, sen dicir máis.",
+              "es": "Sopla tú fuerte y mueve los brazos, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The wind blows the leaves! Whoosh!",
+            "axuda": {
+              "gl": "Asente e fai voar o dedo pola lámina coma unha folla.",
+              "es": "Asiente y haz volar el dedo por la lámina como una hoja."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Vento!",
+              "es": "¡Viento!"
+            },
+            "acolle": {
+              "gl": "Si, que vento máis forte!",
+              "es": "¡Sí, qué viento más fuerte!"
+            },
+            "en": "The wind! The wind is blowing!"
+          },
+          "unhaPalabra": {
+            "di": "Wind!",
+            "en": "Yes, the wind is blowing!"
+          },
+          "formaTorcida": {
+            "di": "Wind blowed!",
+            "en": "Yes, the wind blew! Whoosh!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the hedgehog?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o sinala, dille: «Yes, the hedgehog! The wind is blowing!».",
+            "es": "Pregunta y espera. Si lo señala, dile: «Yes, the hedgehog! The wind is blowing!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El erizo MARRÓN de nariz NEGRA, hecho una bolita, duerme sobre un montón nuevo y grande de hojas OCRES y MARRONES. Lúa, con bufanda VERDE, está a su lado con una pierna adelantada, como si acabara de chutar una hoja hacia el montón. Cielo de atardecer liso, sin viento.",
+        "trama": {
+          "gl": "Cando o vento para, Lúa e o ourizo dan patadiñas ás follas: unha, outra e outra máis… ata facer un montón novo, grande e fofo. O ourizo métese dentro, faise unha bóla e pecha os ollos. Durme, ourizo, durme.",
+          "es": "Cuando el viento para, Lúa y el erizo dan pataditas a las hojas: una, otra y otra más… hasta hacer un montón nuevo, grande y mullido. El erizo se mete dentro, se hace una bola y cierra los ojos. Duerme, erizo, duerme."
+        },
+        "lua": {
+          "onomatopeia": "Shhh… zzz.",
+          "ref": "frase.lua.2_3.03.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the hedgehog sleeping? Touch the hedgehog!",
+            "axuda": {
+              "gl": "Sinala a bóla do ourizo, amodo, e agarda.",
+              "es": "Señala la bola del erizo, despacio, y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you kick a leaf like Lúa? Kick, kick!",
+            "axuda": {
+              "gl": "Move un pé cara adiante, suave, coma quen lle dá unha patadiña a unha folla.",
+              "es": "Mueve un pie hacia delante, suave, como quien da una patadita a una hoja."
+            }
+          },
+          "achegar": {
+            "en": "Do you sleep with your blanket?",
+            "axuda": {
+              "gl": "Xunta as mans baixo a meixela, coma para durmir, e agarda.",
+              "es": "Junta las manos bajo la mejilla, como para dormir, y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa kicks a leaf. Kick!",
+            "axuda": {
+              "gl": "Fai ti o xesto co pé, amodo, sen dicir máis.",
+              "es": "Haz tú el gesto con el pie, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The hedgehog is sleeping in the leaves!",
+            "axuda": {
+              "gl": "Asente e baixa a voz, coma para non espertalo.",
+              "es": "Asiente y baja la voz, como para no despertarlo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Está durmindo!",
+              "es": "¡Está durmiendo!"
+            },
+            "acolle": {
+              "gl": "Si, durme na súa cama de follas!",
+              "es": "¡Sí, duerme en su cama de hojas!"
+            },
+            "en": "Sleeping! The hedgehog is sleeping in the leaves."
+          },
+          "unhaPalabra": {
+            "di": "Sleep!",
+            "en": "Yes, the hedgehog sleeps!"
+          },
+          "formaTorcida": {
+            "di": "Kick the leafs!",
+            "en": "Yes, kick the leaves!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the hedgehog sleeping?",
+          "axuda": {
+            "gl": "Pregunta en voz baixa e agarda. Se o sinala, dille amodo: «Yes, in the crunchy leaves! Shhh…».",
+            "es": "Pregunta en voz baja y espera. Si lo señala, dile despacio: «Yes, in the crunchy leaves! Shhh…»."
+          }
+        }
+      }
+    ]
+  }
 }

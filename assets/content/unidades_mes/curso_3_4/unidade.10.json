@@ -80,5 +80,248 @@
     "3_4.marzo.s4.high"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.10",
+    "titulo": {
+      "gl": "Lúa e a cuncha branca",
+      "es": "Lúa y la concha blanca"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Mar tranquilo de un solo azul y una isla pequeña con arena al fondo. Una barca ROJA con Lúa (camiseta de rayas AZULES y BLANCAS) y una nutria MARRÓN de pecho CLARO, sentadas frente a frente con las plantas de los pies juntas, remando a la vez. En el regazo de Lúa, una concha BLANCA.",
+        "trama": {
+          "gl": "Lúa e a súa amiga, a lontra, reman xuntas nunha barca vermella. Sentan cara a cara, planta con planta, e reman ao mesmo tempo: adiante e atrás. Lúa leva no colo o seu tesouro: unha cuncha branca que soa coma o mar.",
+          "es": "Lúa y su amiga, la nutria, reman juntas en una barca roja. Se sientan cara a cara, planta con planta, y reman a la vez: adelante y atrás. Lúa lleva en el regazo su tesoro: una concha blanca que suena como el mar."
+        },
+        "lua": {
+          "onomatopeia": "Chof, chof!",
+          "ref": "frase.lua.3_4.10.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the red boat? Touch the boat!",
+            "axuda": {
+              "gl": "Pasa o dedo pola barca vermella e agarda.",
+              "es": "Pasa el dedo por la barca roja y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you row the boat with me? Row, row, row!",
+            "axuda": {
+              "gl": "Sentade cara a cara, planta con planta, dádevos as mans e remade adiante e atrás.",
+              "es": "Sentaos cara a cara, planta con planta, daos las manos y remad adelante y atrás."
+            }
+          },
+          "achegar": {
+            "en": "Do you like boats?",
+            "axuda": {
+              "gl": "Abanéate amodo coma nunha barca e agarda un xesto ou un si.",
+              "es": "Balancéate despacio como en una barca y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa rows. Row, row, row the boat!",
+            "axuda": {
+              "gl": "Rema ti amodo, sen dicir máis, e agarda.",
+              "es": "Rema tú despacio, sin decir más, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The boat! A little red boat!",
+            "axuda": {
+              "gl": "Asente e abanéate un pouco, coma na barca.",
+              "es": "Asiente y balancéate un poco, como en la barca."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Barca!",
+              "es": "¡Barca!"
+            },
+            "acolle": {
+              "gl": "Si, unha barca vermella!",
+              "es": "¡Sí, una barca roja!"
+            },
+            "en": "A boat! A red boat! Row, row!"
+          },
+          "unhaPalabra": {
+            "di": "Boat!",
+            "en": "Yes, a little red boat!"
+          },
+          "formaTorcida": {
+            "di": "Row row boating!",
+            "en": "Yes, row, row, row the boat!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Row, row! Row the…?",
+          "axuda": {
+            "gl": "Di «Row, row! Row the…» remando e agarda. Se completa con «boat» ou sinala a barca, devólvelle: «Row, row! Row the boat!».",
+            "es": "Di «Row, row! Row the…» remando y espera. Si completa con «boat» o señala la barca, devuélvele: «Row, row! Row the boat!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "La barca ROJA sube sobre unas olas grandes de azul más oscuro. La concha BLANCA salta por el aire fuera de la barca. Lúa, con camiseta de rayas AZULES y BLANCAS, estira los brazos hacia ella; la nutria MARRÓN de pecho CLARO se agarra al borde.",
+        "trama": {
+          "gl": "De súpeto chegan unhas ondas grandes: a barca sobe… e baixa! Sobe… e baixa! Co balanceo, a cuncha branca salta do colo de Lúa e cae na auga: plof! Lúa mira o fondo. Onde estará agora?",
+          "es": "De repente llegan unas olas grandes: la barca sube… ¡y baja! Sube… ¡y baja! Con el vaivén, la concha blanca salta del regazo de Lúa y cae al agua: ¡plof! Lúa mira al fondo. ¿Dónde estará ahora?"
+        },
+        "lua": {
+          "onomatopeia": "Plof!",
+          "ref": "frase.lua.3_4.10.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the waves? Touch the big waves!",
+            "axuda": {
+              "gl": "Pasa a man polas ondas da lámina e agarda.",
+              "es": "Pasa la mano por las olas de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you make waves with your hands? Up… and down!",
+            "axuda": {
+              "gl": "Sube e baixa as mans amodo, coma ondas.",
+              "es": "Sube y baja las manos despacio, como olas."
+            }
+          },
+          "achegar": {
+            "en": "Do you have a shell at home?",
+            "axuda": {
+              "gl": "Fai unha cuncha coas mans e agarda un xesto ou un si.",
+              "es": "Haz una concha con las manos y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the waves! Up and down, up and down.",
+            "axuda": {
+              "gl": "Move ti as mans coma ondas, sen dicir máis.",
+              "es": "Mueve tú las manos como olas, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The shell! The white shell is in the water!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén a auga.",
+              "es": "Asiente y señala tú también el agua."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Caeu!",
+              "es": "¡Se ha caído!"
+            },
+            "acolle": {
+              "gl": "Si, a cuncha caeu á auga!",
+              "es": "¡Sí, la concha se ha caído al agua!"
+            },
+            "en": "Yes, the shell fell in the water! Plop!"
+          },
+          "unhaPalabra": {
+            "di": "Shell!",
+            "en": "Yes, the white shell! Splash!"
+          },
+          "formaTorcida": {
+            "di": "Shell falled!",
+            "en": "Yes, the shell fell! It fell in the water!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "Where is the white shell?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala a auga, dille: «Yes! In the water!».",
+            "es": "Pregunta y espera. Si señala el agua, dile: «Yes! In the water!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Mar en calma. Un pez AMARILLO con rayas NARANJAS asoma junto a la barca ROJA con la concha BLANCA en la boca. Lúa, con camiseta de rayas AZULES y BLANCAS, la recoge con las dos manos; la nutria MARRÓN de pecho CLARO, recostada, sonríe con los ojos medio cerrados.",
+        "trama": {
+          "gl": "Do fondo sobe un peixe amarelo… coa cuncha branca na boca! Lúa recóllea e dálle as grazas. O mar xa está en calma. Lúa pon a cuncha na orella e escoita: shhh, shhh… A lontra bocexa e as dúas descansan na barca, abaneándose amodo.",
+          "es": "Del fondo sube un pez amarillo… ¡con la concha blanca en la boca! Lúa la recoge y le da las gracias. El mar ya está en calma. Lúa se pone la concha en la oreja y escucha: shhh, shhh… La nutria bosteza y las dos descansan en la barca, meciéndose despacio."
+        },
+        "lua": {
+          "onomatopeia": "Glu, glu!",
+          "ref": "frase.lua.3_4.10.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the yellow fish? Touch the fish!",
+            "axuda": {
+              "gl": "Sinala o peixe amarelo e agarda.",
+              "es": "Señala el pez amarillo y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you listen to the shell? Shhh… thank you, fish!",
+            "axuda": {
+              "gl": "Pon unha cuncha imaxinaria na orella, pecha os ollos e agarda.",
+              "es": "Ponte una concha imaginaria en la oreja, cierra los ojos y espera."
+            }
+          },
+          "achegar": {
+            "en": "Do you go to the beach with your family?",
+            "axuda": {
+              "gl": "Fai coma se camiñases pola area e agarda un xesto ou un si.",
+              "es": "Haz como si caminaras por la arena y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa listens to the shell. Shhh…",
+            "axuda": {
+              "gl": "Pon ti a man na orella, coma unha cuncha, e agarda en silencio.",
+              "es": "Ponte tú la mano en la oreja, como una concha, y espera en silencio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The fish! A yellow fish with the shell!",
+            "axuda": {
+              "gl": "Asente e abre e pecha a boca coma un peixe.",
+              "es": "Asiente y abre y cierra la boca como un pez."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un peixe!",
+              "es": "¡Un pez!"
+            },
+            "acolle": {
+              "gl": "Si, un peixe amarelo!",
+              "es": "¡Sí, un pez amarillo!"
+            },
+            "en": "A fish! Thank you, little fish! Goodbye!"
+          },
+          "unhaPalabra": {
+            "di": "Fish!",
+            "en": "Yes, a yellow fish! Thank you, fish!"
+          },
+          "formaTorcida": {
+            "di": "Fishes give shell!",
+            "en": "Yes, the fish gives the shell!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you hold the shell, like Lúa?",
+          "axuda": {
+            "gl": "Fai coma se colleses unha cuncha coas dúas mans e agarda. Se o fai, dille: «Yes! The white shell! Thank you, little fish!».",
+            "es": "Haz como si cogieras una concha con las dos manos y espera. Si lo hace, dile: «Yes! The white shell! Thank you, little fish!»."
+          }
+        }
+      }
+    ]
+  }
 }

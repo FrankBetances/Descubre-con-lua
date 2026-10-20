@@ -92,5 +92,248 @@
     "3_4.outubro.s1.freeze"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.02",
+    "titulo": {
+      "gl": "Lúa e o caracol friorento",
+      "es": "Lúa y el caracol friolero"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Parque en otoño con planos limpios: un roble a la izquierda que suelta hojas. Lúa con una gasa de seda NARANJA en la mano, mirando hacia arriba. En el suelo, a la derecha, un caracol pequeño de concha VERDE, encogido. En el centro cae una hoja ROJA, muy grande.",
+        "trama": {
+          "gl": "Chega o outono ao parque. Lúa baila coa súa gasa laranxa e as follas caen, amodo, da árbore. No chan hai un caracol pequeniño que treme de frío: precisa un tellado para durmir! E mira: unha folla vermella, enorme, baixa xusto cara a el.",
+          "es": "Llega el otoño al parque. Lúa baila con su gasa naranja y las hojas caen, despacio, del árbol. En el suelo hay un caracol pequeñito que tiembla de frío: ¡necesita un tejado para dormir! Y mira: una hoja roja, enorme, baja justo hacia él."
+        },
+        "lua": {
+          "onomatopeia": "Swish, swish…",
+          "ref": "frase.lua.3_4.02.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the red leaf? Touch the big leaf!",
+            "axuda": {
+              "gl": "Pasa o dedo pola folla vermella e agarda.",
+              "es": "Pasa el dedo por la hoja roja y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you fall down like a leaf? Down, down… fall down!",
+            "axuda": {
+              "gl": "Baixa amodo, abaneando os brazos, ata sentar no chan.",
+              "es": "Baja despacio, balanceando los brazos, hasta sentarte en el suelo."
+            }
+          },
+          "achegar": {
+            "en": "Do you see leaves in your park?",
+            "axuda": {
+              "gl": "Fai co dedo coma se buscases follas no chan e agarda un xesto ou un si.",
+              "es": "Haz con el dedo como si buscaras hojas en el suelo y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the leaf falls down. Down, down, down!",
+            "axuda": {
+              "gl": "Baixa ti a man amodo, abaneándoa, sen dicir máis.",
+              "es": "Baja tú la mano despacio, balanceándola, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The leaf! A big red leaf!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén a folla.",
+              "es": "Asiente y señala tú también la hoja."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Folla!",
+              "es": "¡Hoja!"
+            },
+            "acolle": {
+              "gl": "Si, unha folla vermella!",
+              "es": "¡Sí, una hoja roja!"
+            },
+            "en": "A red leaf! The leaf falls down!"
+          },
+          "unhaPalabra": {
+            "di": "Leaf!",
+            "en": "Yes, a big red leaf!"
+          },
+          "formaTorcida": {
+            "di": "Leaf fall downed!",
+            "en": "Yes, the leaf fell down!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "A leaf! Fall down…?",
+          "axuda": {
+            "gl": "Di «A leaf! Fall down…» baixando a man e agarda. Se completa con «leaf» ou fai o xesto, devólvelle a frase enteira: «A leaf! Fall down, leaf!».",
+            "es": "Di «A leaf! Fall down…» bajando la mano y espera. Si completa con «leaf» o hace el gesto, devuélvele la frase entera: «A leaf! Fall down, leaf!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Líneas blancas de viento cruzan de izquierda a derecha. La hoja ROJA vuela por el aire dando vueltas (flecha en espiral). Lúa, con su gasa NARANJA, corre detrás con los brazos estirados. El caracol de concha VERDE mira desde el suelo con los cuernos muy estirados.",
+        "trama": {
+          "gl": "De súpeto sopra o vento: fiuuu! A folla vermella voa e dá voltas e máis voltas no aire. O caracol mírao todo cos corniños moi estirados. Lúa corre detrás da folla… e sopra ela tamén, para traela de volta.",
+          "es": "De repente sopla el viento: ¡fiuuu! La hoja roja vuela y da vueltas y más vueltas en el aire. El caracol lo mira todo con los cuernos muy estirados. Lúa corre detrás de la hoja… y sopla ella también, para traerla de vuelta."
+        },
+        "lua": {
+          "onomatopeia": "Fiuuu, fiuuu!",
+          "ref": "frase.lua.3_4.02.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the leaf now? Touch the leaf in the air!",
+            "axuda": {
+              "gl": "Sinala a folla no aire e agarda.",
+              "es": "Señala la hoja en el aire y espera."
+            }
+          },
+          "imitar": {
+            "en": "My turn… blow, blow! Your turn! And turn around!",
+            "axuda": {
+              "gl": "Toca o teu peito e sopra; despois sinala con cariño a criatura, agarda, e dade unha volta enteira.",
+              "es": "Tócate el pecho y sopla; luego señala con cariño a la criatura, espera, y dad una vuelta entera."
+            }
+          },
+          "achegar": {
+            "en": "Do you like the wind on your face?",
+            "axuda": {
+              "gl": "Abanea a man diante da túa cara coma se fose o vento e agarda un xesto ou un si.",
+              "es": "Mueve la mano delante de tu cara como si fuera el viento y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa blows. Blow, blow!",
+            "axuda": {
+              "gl": "Sopra ti amodo cara á lámina e agarda.",
+              "es": "Sopla tú despacio hacia la lámina y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes, the leaf! It turns around and around!",
+            "axuda": {
+              "gl": "Asente e debuxa unha espiral no aire co dedo.",
+              "es": "Asiente y dibuja una espiral en el aire con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Dá voltas!",
+              "es": "¡Da vueltas!"
+            },
+            "acolle": {
+              "gl": "Si, dá voltas e máis voltas!",
+              "es": "¡Sí, da vueltas y más vueltas!"
+            },
+            "en": "Turn around, leaf! Around and around!"
+          },
+          "unhaPalabra": {
+            "di": "Blow!",
+            "en": "Yes! Blow, blow the leaf!"
+          },
+          "formaTorcida": {
+            "di": "Turn arow!",
+            "en": "Yes, turn around! The leaf turns around!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "Where is the red leaf?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala arriba, dille: «Yes! The leaf is up in the air! It turns around!».",
+            "es": "Pregunta y espera. Si señala arriba, dile: «Yes! The leaf is up in the air! It turns around!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa, con su gasa NARANJA alrededor del cuello, agachada, coloca la hoja ROJA como un tejado sobre el caracol de concha VERDE, que duerme debajo con los ojos cerrados. Al lado, un cesto de mimbre con bellotas. Fondo liso, sin viento.",
+        "trama": {
+          "gl": "A folla cae por fin ao pé dunha landra. Lúa agáchase, recóllea con coidado e pona enriba do caracol, coma un tellado vermello. Que quentiño se está agora! O caracol pecha os ollos e durme, tranquilo.",
+          "es": "La hoja cae por fin junto a una bellota. Lúa se agacha, la recoge con cuidado y la pone encima del caracol, como un tejado rojo. ¡Qué calentito se está ahora! El caracol cierra los ojos y duerme, tranquilo."
+        },
+        "lua": {
+          "onomatopeia": "Mmm… shhh.",
+          "ref": "frase.lua.3_4.02.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little snail? Touch the snail!",
+            "axuda": {
+              "gl": "Sinala o caracol baixo a folla e agarda.",
+              "es": "Señala el caracol bajo la hoja y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you pick up the leaf? Pick it up… slowly!",
+            "axuda": {
+              "gl": "Agáchate, colle unha folla imaxinaria e lévaa ao colo, moi amodo.",
+              "es": "Agáchate, coge una hoja imaginaria y llévala al regazo, muy despacio."
+            }
+          },
+          "achegar": {
+            "en": "Do you have a warm blanket in your bed?",
+            "axuda": {
+              "gl": "Fai coma se te tapases cunha manta e agarda un xesto ou un si.",
+              "es": "Haz como si te taparas con una manta y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa picks up the leaf. Shh… the snail sleeps.",
+            "axuda": {
+              "gl": "Fai ti o xesto de recoller, amodo, e pousa a man enriba da lámina.",
+              "es": "Haz tú el gesto de recoger, despacio, y apoya la mano encima de la lámina."
+            }
+          },
+          "sinala": {
+            "en": "Yes, the snail! The snail sleeps under the leaf!",
+            "axuda": {
+              "gl": "Asente e acariña co dedo a folla da lámina.",
+              "es": "Asiente y acaricia con el dedo la hoja de la lámina."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Está durmindo!",
+              "es": "¡Está durmiendo!"
+            },
+            "acolle": {
+              "gl": "Si, durme baixo a folla.",
+              "es": "Sí, duerme bajo la hoja."
+            },
+            "en": "Yes! The snail sleeps under the red leaf."
+          },
+          "unhaPalabra": {
+            "di": "Snail!",
+            "en": "Yes, a sleepy little snail!"
+          },
+          "formaTorcida": {
+            "di": "Snail sleeped!",
+            "en": "Yes, the snail slept! Shh…"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you pick up a leaf for the snail?",
+          "axuda": {
+            "gl": "Fai ti primeiro o xesto de recoller e agarda. Se o fai, dille baixiño: «Pick it up! The leaf, here.».",
+            "es": "Haz tú primero el gesto de recoger y espera. Si lo hace, dile bajito: «Pick it up! The leaf, here.»."
+          }
+        }
+      }
+    ]
+  }
 }

@@ -98,5 +98,326 @@
     "3_4.abril.s2.seed"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.08",
+    "titulo": {
+      "gl": "Lúa, o raposo e a serpe",
+      "es": "Lúa, el zorro y la serpiente"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Prado de primavera con hierba VERDE y un arbusto redondo a la derecha. Un zorro NARANJA de orejas puntiagudas cuenta con las patas tapándose los ojos, apoyado en un árbol. Lúa, de puntillas y con un dedo en los labios, corre a esconderse detrás del arbusto.",
+        "trama": {
+          "gl": "Unha tarde de abril, Lúa e o raposo xogan ás agachadas no prado. O raposo tapa os ollos e conta: un, dous, tres… Lúa corre de puntas a esconderse detrás dun arbusto. Shhh!",
+          "es": "Una tarde de abril, Lúa y el zorro juegan al escondite en el prado. El zorro se tapa los ojos y cuenta: uno, dos, tres… Lúa corre de puntillas a esconderse detrás de un arbusto. ¡Shhh!"
+        },
+        "lua": {
+          "onomatopeia": "Shhh…",
+          "ref": "frase.lua.5_6.08.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the fox? Touch his pointy ears!",
+            "axuda": {
+              "gl": "Sinala as orellas do raposo e agarda.",
+              "es": "Señala las orejas del zorro y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you make pointy ears like the fox? Hands up… pointy!",
+            "axuda": {
+              "gl": "Pon as mans na cabeza coma orellas en punta.",
+              "es": "Pon las manos en la cabeza como orejas en punta."
+            }
+          },
+          "achegar": {
+            "en": "Where do you hide when you play?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You hide behind the sofa!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You hide behind the sofa!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa hides. Hide, hide!",
+            "axuda": {
+              "gl": "Esconde ti as mans detrás das costas e agarda.",
+              "es": "Esconde tú las manos detrás de la espalda y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The fox! An orange fox with pointy ears!",
+            "axuda": {
+              "gl": "Asente e pon as mans na cabeza coma orellas en punta.",
+              "es": "Asiente y ponte las manos en la cabeza como orejas en punta."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Escóndese!",
+              "es": "¡Se esconde!"
+            },
+            "acolle": {
+              "gl": "Si, escóndese detrás do arbusto!",
+              "es": "¡Sí, se esconde detrás del arbusto!"
+            },
+            "en": "She hides! Lúa hides behind the bush!"
+          },
+          "unhaPalabra": {
+            "di": "Fox!",
+            "en": "Yes, the fox with pointy ears!"
+          },
+          "formaTorcida": {
+            "di": "Lúa is hiding behind of bush!",
+            "en": "Yes, Lúa is hiding behind the bush!"
+          }
+        },
+        "casa": {
+          "tipo": "achegar",
+          "en": "Who plays hide-and-seek with you?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se nomea a alguén, devólvello: «You play hide-and-seek with Grandma!».",
+            "es": "Pregunta y espera. Si nombra a alguien, devuélveselo: «You play hide-and-seek with Grandma!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Detrás del arbusto, Lúa agachada mira con los ojos muy abiertos hacia la hierba. Entre la hierba VERDE asoma una serpiente VERDE CLARO con lunares AMARILLOS, sonriente, que avanza haciendo eses. Al fondo, el zorro NARANJA sigue contando.",
+        "trama": {
+          "gl": "Detrás do arbusto, a herba móvese soa… Que misterio! Sss, sss… É unha serpe verde con pintas amarelas, que se achega reptando e sorrí. «Podo xogar eu tamén?»",
+          "es": "Detrás del arbusto, la hierba se mueve sola… ¡Qué misterio! Sss, sss… Es una serpiente verde con lunares amarillos, que se acerca reptando y sonríe. «¿Puedo jugar yo también?»"
+        },
+        "lua": {
+          "onomatopeia": "Sss, sss, sss!",
+          "ref": "frase.lua.5_6.08.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the green snake? Touch the snake!",
+            "axuda": {
+              "gl": "Pasa o dedo en zigzag pola serpe e agarda.",
+              "es": "Pasa el dedo en zigzag por la serpiente y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you slither like the snake? Sss… zigzag!",
+            "axuda": {
+              "gl": "Move o brazo en zigzag pola mesa e fai sss.",
+              "es": "Mueve el brazo en zigzag por la mesa y haz sss."
+            }
+          },
+          "achegar": {
+            "en": "Have you ever seen a snake? Where?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You saw a snake in a book!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You saw a snake in a book!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, a snake. It slithers. Sss!",
+            "axuda": {
+              "gl": "Move ti o brazo en zigzag, amodo, sen dicir máis.",
+              "es": "Mueve tú el brazo en zigzag, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The snake! A green snake slithering!",
+            "axuda": {
+              "gl": "Asente e segue a serpe co dedo.",
+              "es": "Asiente y sigue la serpiente con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha serpe!",
+              "es": "¡Una serpiente!"
+            },
+            "acolle": {
+              "gl": "Si, unha serpe amiga!",
+              "es": "¡Sí, una serpiente amiga!"
+            },
+            "en": "A snake! A friendly green snake!"
+          },
+          "unhaPalabra": {
+            "di": "Snake!",
+            "en": "Yes, a green snake slithering!"
+          },
+          "formaTorcida": {
+            "di": "Snake slithers-ing!",
+            "en": "Yes, the snake is slithering!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "What is in the grass?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o di na súa lingua ou move o brazo en zigzag, devólvello: «A snake! A green snake!».",
+            "es": "Pregunta y espera. Si lo dice en su lengua o mueve el brazo en zigzag, devuélveselo: «A snake! A green snake!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Cielo GRIS con gotas grandes de lluvia. Una roca grande con un hueco bajo, como una cueva pequeña. El zorro NARANJA y Lúa entran a gatas en el hueco; la serpiente VERDE CLARO con lunares AMARILLOS ya se desliza dentro. La hierba VERDE brilla mojada.",
+        "trama": {
+          "gl": "De súpeto, plof, plof! Comeza a chover forte. Hai que buscar un refuxio! Xunto a unha rocha hai un oco baixiño. A serpe entra reptando, sss; Lúa e o raposo, a gatas. Xusto a tempo!",
+          "es": "De repente, ¡plof, plof! Empieza a llover fuerte. ¡Hay que buscar un refugio! Junto a una roca hay un hueco bajito. La serpiente entra reptando, sss; Lúa y el zorro, a gatas. ¡Justo a tiempo!"
+        },
+        "lua": {
+          "onomatopeia": "Plop, plop, plop!",
+          "ref": "frase.lua.5_6.08.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little cave? Touch the rock!",
+            "axuda": {
+              "gl": "Sinala o oco da rocha e agarda.",
+              "es": "Señala el hueco de la roca y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you crawl like Lúa and the fox? Crawl, crawl!",
+            "axuda": {
+              "gl": "Move as mans pola mesa coma se andases a gatas.",
+              "es": "Mueve las manos por la mesa como si gatearas."
+            }
+          },
+          "achegar": {
+            "en": "Where do you go when it rains?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You go under your umbrella!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You go under your umbrella!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the fox crawls in. Crawl, crawl!",
+            "axuda": {
+              "gl": "Fai ti cos dedos que andas a gatas ata a rocha.",
+              "es": "Haz tú con los dedos como que gateas hasta la roca."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The cave! They crawl into the cave!",
+            "axuda": {
+              "gl": "Asente e mete ti tamén o dedo no oco.",
+              "es": "Asiente y mete tú también el dedo en el hueco."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Chove!",
+              "es": "¡Llueve!"
+            },
+            "acolle": {
+              "gl": "Si, chove moito!",
+              "es": "¡Sí, llueve mucho!"
+            },
+            "en": "It rains! They crawl into the little cave!"
+          },
+          "unhaPalabra": {
+            "di": "Rain!",
+            "en": "Yes, rain! Big drops of rain!"
+          },
+          "formaTorcida": {
+            "di": "Fox crawl in the cave!",
+            "en": "Yes, the fox crawls into the cave!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "Snake, snake… what rhymes with snake? A cake? A lake?",
+          "axuda": {
+            "gl": "Xoga coa rima, sen présa. Acolle o que diga, rime ou non, e engade outra: «Snake, cake… and lake!».",
+            "es": "Juega con la rima, sin prisa. Acoge lo que diga, rime o no, y añade otra: «Snake, cake… and lake!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Dentro del hueco de la roca, en penumbra cálida. El zorro NARANJA tumbado con los ojos cerrados; sobre su lomo, la serpiente VERDE CLARO con lunares AMARILLOS enroscada; Lúa apoyada en su cola, sonriendo. Fuera, una cortina de lluvia.",
+        "trama": {
+          "gl": "Dentro do refuxio está seco e quentiño. A serpe enrólase enriba do raposo, coma unha bufanda verde. Lúa apóiase na súa cola tan suave. E alí, xuntos, escoitan a chuvia, plin, plin, ata que se lles pechan os ollos.",
+          "es": "Dentro del refugio está seco y calentito. La serpiente se enrosca encima del zorro, como una bufanda verde. Lúa se apoya en su cola tan suave. Y allí, juntos, escuchan la lluvia, plin, plin, hasta que se les cierran los ojos."
+        },
+        "lua": {
+          "onomatopeia": "Zzz… plink, plink.",
+          "ref": "frase.lua.5_6.08.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the snake now? Touch the snake on the fox!",
+            "axuda": {
+              "gl": "Sinala a serpe enriba do raposo e agarda.",
+              "es": "Señala la serpiente encima del zorro y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you curl up like the snake? Round and round… sleep.",
+            "axuda": {
+              "gl": "Enrola un brazo arredor do outro e pecha os ollos.",
+              "es": "Enrosca un brazo alrededor del otro y cierra los ojos."
+            }
+          },
+          "achegar": {
+            "en": "What do you sleep with at night?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You sleep with your teddy bear!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You sleep with your teddy bear!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the snake is on the fox. Shhh…",
+            "axuda": {
+              "gl": "Pousa ti unha man enriba da outra e fala baixiño.",
+              "es": "Posa tú una mano encima de la otra y habla bajito."
+            }
+          },
+          "sinala": {
+            "en": "Yes! On the fox! The snake is on the fox!",
+            "axuda": {
+              "gl": "Asente e pon a túa man enriba da súa, con suavidade.",
+              "es": "Asiente y pon tu mano encima de la suya, con suavidad."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Enriba!",
+              "es": "¡Encima!"
+            },
+            "acolle": {
+              "gl": "Si, enriba do raposo!",
+              "es": "¡Sí, encima del zorro!"
+            },
+            "en": "On the fox! The snake is on the fox!"
+          },
+          "unhaPalabra": {
+            "di": "On!",
+            "en": "Yes, the snake is on the fox!"
+          },
+          "formaTorcida": {
+            "di": "Snake is in on fox!",
+            "en": "Yes, the snake is on the fox!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Oh! The snake is on the…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e pon unha man enriba da outra: «…fox! The snake is on the fox!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y pon una mano encima de la otra: «…fox! The snake is on the fox!»."
+          }
+        }
+      }
+    ]
+  }
 }

@@ -102,6 +102,12 @@ run_gate "phrase register in sync with its sources" \
 # tamaño de su edad. En --estricto: las 50 tienen que estar.
 run_gate "every month unit cites what exists and follows its assembly" \
   python3 tools/check_unidades.py --estricto
+# Nace de O5 (M5.1): el microcuento es una conversación sobre el núcleo, no
+# otro vocabulario. Comprueba que lo que dice Lúa sale del núcleo, que hay
+# tríada, guion de recast para cinco respuestas y pregunta de casa por edad, y
+# que nada pide repetir. Sin --estricto hasta que estén las láminas (M5.8).
+run_gate "every microcuento talks about its unit's core words" \
+  python3 tools/check_microcuentos.py
 # Nace del vocabulario inglés, que llegó del proyecto de origen con la
 # categoría gramatical y la frecuencia INVENTADAS y sin una sola frase. Ahora
 # las 3.995 traen categoría, frase entera y frecuencia medida, y esto comprueba

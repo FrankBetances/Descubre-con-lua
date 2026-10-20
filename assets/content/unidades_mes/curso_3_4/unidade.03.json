@@ -88,5 +88,248 @@
     "3_4.novembro.s1.leaf"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.03",
+    "titulo": {
+      "gl": "Lúa e a castaña saltarina",
+      "es": "Lúa y la castaña saltarina"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Ladera suave de un castañar, en planos limpios. Lúa con bufanda AZUL y un topo pequeño NEGRO con gafas redondas miran un erizo de castaña VERDE abierto en el suelo. Del erizo sale saltando una castaña MARRÓN brillante (líneas de movimiento hacia arriba).",
+        "trama": {
+          "gl": "É tempo de magosto no souto. Lúa e a súa amiga, a toupa, atopan un ourizo aberto no chan. De súpeto, de dentro sae dun salto unha castaña brillante: boing! E vaise dando brincos ladeira abaixo.",
+          "es": "Es tiempo de magosto en el castañar. Lúa y su amigo, el topo, encuentran un erizo abierto en el suelo. De repente, de dentro sale de un salto una castaña brillante: ¡boing! Y se va dando brincos cuesta abajo."
+        },
+        "lua": {
+          "onomatopeia": "Boing, boing!",
+          "ref": "frase.lua.3_4.03.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the chestnut? Touch the shiny chestnut!",
+            "axuda": {
+              "gl": "Sinala a castaña no aire e agarda.",
+              "es": "Señala la castaña en el aire y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you jump like the chestnut? Jump, jump!",
+            "axuda": {
+              "gl": "Dá tres saltiños cos dous pés xuntos, sen présa.",
+              "es": "Da tres saltitos con los dos pies juntos, sin prisa."
+            }
+          },
+          "achegar": {
+            "en": "Do you like chestnuts?",
+            "axuda": {
+              "gl": "Fai coma se pelases unha castaña e agarda un xesto ou un si.",
+              "es": "Haz como si pelaras una castaña y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa jumps like the chestnut. Jump, jump!",
+            "axuda": {
+              "gl": "Fai ti os saltiños, amodo, e agarda.",
+              "es": "Haz tú los saltitos, despacio, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The chestnut! A shiny brown chestnut!",
+            "axuda": {
+              "gl": "Asente e fai a castaña coas mans pechadas.",
+              "es": "Asiente y haz la castaña con las manos cerradas."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha castaña!",
+              "es": "¡Una castaña!"
+            },
+            "acolle": {
+              "gl": "Si, unha castaña saltarina!",
+              "es": "¡Sí, una castaña saltarina!"
+            },
+            "en": "A chestnut! The chestnut jumps!"
+          },
+          "unhaPalabra": {
+            "di": "Chestnut!",
+            "en": "Yes, a jumping chestnut!"
+          },
+          "formaTorcida": {
+            "di": "Chessnut jumped up up!",
+            "en": "Yes, the chestnut jumped up!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "What is jumping?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se fai o xesto da castaña ou a sinala, dille: «Yes, the chestnut! Jump, jump!».",
+            "es": "Pregunta y espera. Si hace el gesto de la castaña o la señala, dile: «Yes, the chestnut! Jump, jump!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "La castaña MARRÓN rueda cuesta abajo (líneas curvas detrás) y se para contra una calabaza NARANJA grande y redonda. Lúa, con su bufanda AZUL, rueda por la hierba riéndose; el topo NEGRO con gafas baja corriendo detrás. Fondo liso.",
+        "trama": {
+          "gl": "A castaña rola, rola, rola… e para, poc!, contra unha cabaza laranxa enorme. A toupa baixa correndo e Lúa rola tamén pola herba para chegar antes, entre risas. Onde está a castaña? Ao pé da cabaza!",
+          "es": "La castaña rueda, rueda, rueda… y se para, ¡poc!, contra una calabaza naranja enorme. El topo baja corriendo y Lúa también rueda por la hierba para llegar antes, entre risas. ¿Dónde está la castaña? ¡Al pie de la calabaza!"
+        },
+        "lua": {
+          "onomatopeia": "Poc!",
+          "ref": "frase.lua.3_4.03.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the pumpkin? Touch the big orange pumpkin!",
+            "axuda": {
+              "gl": "Pasa a man arredor da cabaza e agarda.",
+              "es": "Pasa la mano alrededor de la calabaza y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you roll like Lúa? Roll, roll, roll!",
+            "axuda": {
+              "gl": "Xira os brazos un arredor do outro diante do peito; se hai sitio, rolade xuntos pola alfombra.",
+              "es": "Gira los brazos uno alrededor del otro delante del pecho; si hay sitio, rodad juntos por la alfombra."
+            }
+          },
+          "achegar": {
+            "en": "Do you have a pumpkin at home?",
+            "axuda": {
+              "gl": "Fai unha cabaza grande cos brazos e agarda un xesto ou un si.",
+              "es": "Haz una calabaza grande con los brazos y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa rolls. Roll, roll… stop!",
+            "axuda": {
+              "gl": "Xira ti os brazos amodo e para de súpeto.",
+              "es": "Gira tú los brazos despacio y para de golpe."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The pumpkin! A big orange pumpkin!",
+            "axuda": {
+              "gl": "Asente e fai a cabaza cos brazos en círculo.",
+              "es": "Asiente y haz la calabaza con los brazos en círculo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Cabaza!",
+              "es": "¡Calabaza!"
+            },
+            "acolle": {
+              "gl": "Si, unha cabaza ben grande!",
+              "es": "¡Sí, una calabaza muy grande!"
+            },
+            "en": "A pumpkin! A big pumpkin!"
+          },
+          "unhaPalabra": {
+            "di": "Pumpkin!",
+            "en": "Yes, a big orange pumpkin!"
+          },
+          "formaTorcida": {
+            "di": "Pumkin!",
+            "en": "Yes, a pumpkin! A big pumpkin!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Roll, roll… the…?",
+          "axuda": {
+            "gl": "Di «Roll, roll… the…» xirando os brazos e agarda. Se completa con «pumpkin» ou fai a cabaza cos brazos, celébrao: «Roll, roll… the pumpkin!».",
+            "es": "Di «Roll, roll… the…» girando los brazos y espera. Si completa con «pumpkin» o hace la calabaza con los brazos, celébralo: «Roll, roll… the pumpkin!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Junto a la calabaza NARANJA, Lúa con su bufanda AZUL y el topo NEGRO con gafas, sentados sobre una manta de cuadros. Lúa ofrece al topo, con la mano abierta, una castaña MARRÓN asada de la que sale un hilo de vapor. Entre los dos, un cucurucho de papel con más castañas.",
+        "trama": {
+          "gl": "Detrás da cabaza agarda unha sorpresa: o magosto! Un cucurucho cheo de castañas asadas. Lúa sopra unha, fu, fu, e dálla á toupa. Están quentiñas e saben de marabilla. Ñam, ñam!",
+          "es": "Detrás de la calabaza espera una sorpresa: ¡el magosto! Un cucurucho lleno de castañas asadas. Lúa sopla una, fu, fu, y se la da al topo. Están calentitas y saben de maravilla. ¡Ñam, ñam!"
+        },
+        "lua": {
+          "onomatopeia": "Ñam, ñam!",
+          "ref": "frase.lua.3_4.03.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the warm chestnuts? Touch the chestnuts!",
+            "axuda": {
+              "gl": "Sinala o cucurucho e agarda.",
+              "es": "Señala el cucurucho y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you blow on a warm chestnut? Blow, blow… here you are!",
+            "axuda": {
+              "gl": "Sopra nas mans pechadas e despois ofrece a castaña coa man aberta.",
+              "es": "Sopla en las manos cerradas y luego ofrece la castaña con la mano abierta."
+            }
+          },
+          "achegar": {
+            "en": "Do you eat chestnuts with your family?",
+            "axuda": {
+              "gl": "Fai coma se comeses unha castaña e agarda un xesto ou un si.",
+              "es": "Haz como si comieras una castaña y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa gives a chestnut. Here you are!",
+            "axuda": {
+              "gl": "Ofrécelle ti unha castaña imaxinaria coa man aberta e agarda.",
+              "es": "Ofrécele tú una castaña imaginaria con la mano abierta y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Warm chestnuts! Yummy warm chestnuts!",
+            "axuda": {
+              "gl": "Asente e pon as mans nas meixelas.",
+              "es": "Asiente y ponte las manos en las mejillas."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Quentiña!",
+              "es": "¡Calentita!"
+            },
+            "acolle": {
+              "gl": "Si, está quentiña!",
+              "es": "¡Sí, está calentita!"
+            },
+            "en": "Yes, warm! A warm chestnut!"
+          },
+          "unhaPalabra": {
+            "di": "More!",
+            "en": "More, please! More chestnuts, please!"
+          },
+          "formaTorcida": {
+            "di": "More chestnut, pease!",
+            "en": "More chestnuts, please! Here you are!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Do you want a warm chestnut?",
+          "axuda": {
+            "gl": "Ofrécelle unha castaña imaxinaria e agarda. Se a colle ou di algo, devólvelle: «Here you are! A warm chestnut!».",
+            "es": "Ofrécele una castaña imaginaria y espera. Si la coge o dice algo, devuélvele: «Here you are! A warm chestnut!»."
+          }
+        }
+      }
+    ]
+  }
 }

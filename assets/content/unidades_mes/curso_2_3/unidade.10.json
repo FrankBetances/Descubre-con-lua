@@ -78,5 +78,248 @@
     "2_3.maio.s1.soap-rub-rinse"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.10",
+    "titulo": {
+      "gl": "Lúa e o peixiño azul",
+      "es": "Lúa y el pececito azul"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": "microcuento_2_3_10_1",
+        "encargo": "Fondo de mar azul liso, sin adornos. Lúa con gafas de buceo flota tranquila en el centro. Abajo a la derecha, entre dos piedras grises, asoma la cola de un pez AZUL CLARO con contorno oscuro (el mismo pez de las láminas 2 y 3). Nada más en la escena.",
+        "trama": {
+          "gl": "Lúa pon as gafas de mergullo e baixa ao fondo do mar. A auga está fresquiña e todo arredor é azul. O mar está tranquilo, moi tranquilo. De súpeto, entre dúas pedras, algo se move…",
+          "es": "Lúa se pone las gafas de buceo y baja al fondo del mar. El agua está fresquita y todo alrededor es azul. El mar está tranquilo, muy tranquilo. De repente, entre dos piedras, algo se mueve…"
+        },
+        "lua": {
+          "onomatopeia": "Shhh, shhh…",
+          "ref": "frase.lua.2_3.10.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the sea? Touch the blue sea!",
+            "axuda": {
+              "gl": "Pasa o dedo pola auga da lámina e agarda.",
+              "es": "Pasa el dedo por el agua de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Calm sea… Move your hands slowly. Shhh!",
+            "axuda": {
+              "gl": "Move as mans planas, amodo, por riba das pernas.",
+              "es": "Mueve las manos planas, despacio, sobre las piernas."
+            }
+          },
+          "achegar": {
+            "en": "Do you like the water in your bath?",
+            "axuda": {
+              "gl": "Fai coma se te lavases os brazos e agarda o que saia: un xesto, un si, unha palabra.",
+              "es": "Haz como si te lavaras los brazos y espera lo que salga: un gesto, un sí, una palabra."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa touches the sea. Calm sea!",
+            "axuda": {
+              "gl": "Colle a súa man con suavidade e pasade xuntos o dedo pola auga.",
+              "es": "Coge su mano con suavidad y pasad juntos el dedo por el agua."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The sea! The calm blue sea!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén o mesmo sitio.",
+              "es": "Asiente y señala tú también el mismo sitio."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Auga!",
+              "es": "¡Agua!"
+            },
+            "acolle": {
+              "gl": "Si, a auga do mar!",
+              "es": "¡Sí, el agua del mar!"
+            },
+            "en": "Blue water! A calm sea!"
+          },
+          "unhaPalabra": {
+            "di": "Sea!",
+            "en": "Yes, the calm sea!"
+          },
+          "formaTorcida": {
+            "di": "Sea calm!",
+            "en": "Yes, a calm sea!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the sea?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Responda como responda, devólvelle a frase enteira: «Yes, the calm sea!».",
+            "es": "Pregunta y espera. Responda como responda, devuélvele la frase entera: «Yes, the calm sea!»."
+          }
+        }
+      },
+      {
+        "lamina": "microcuento_2_3_10_2",
+        "encargo": "Primer plano del mismo pez AZUL CLARO, grande, en el centro, nadando en zigzag (línea de movimiento detrás de la cola). De la boca suben tres burbujas redondas. Lúa a la izquierda, más pequeña, acercándose con los brazos abiertos. Fondo azul liso con dos algas verdes.",
+        "trama": {
+          "gl": "Mirade quen sae de entre as algas! É un peixiño azul que move a cola dun lado a outro. Glu, glu, glu! Lúa achégase amodo, amodo, para non asustalo.",
+          "es": "¡Mirad quién sale de entre las algas! Es un pececito azul que mueve la cola de un lado a otro. ¡Glu, glu, glu! Lúa se acerca despacio, despacio, para no asustarlo."
+        },
+        "lua": {
+          "onomatopeia": "Glu, glu, glu!",
+          "ref": "frase.lua.2_3.10.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little fish? Touch the fish!",
+            "axuda": {
+              "gl": "Sinala a cola do peixe e agarda.",
+              "es": "Señala la cola del pez y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you swim like the little fish? Swim, swim!",
+            "axuda": {
+              "gl": "Xunta as mans e móveas en zigzag diante do peito.",
+              "es": "Junta las manos y muévelas en zigzag delante del pecho."
+            }
+          },
+          "achegar": {
+            "en": "Do you splash in the bath, like the little fish?",
+            "axuda": {
+              "gl": "Fai coma se chapuzases na auga do baño e agarda.",
+              "es": "Haz como si chapotearas en el agua del baño y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa swims like the fish. Swim, swim!",
+            "axuda": {
+              "gl": "Fai ti o zigzag coas mans, amodo, sen dicir máis.",
+              "es": "Haz tú el zigzag con las manos, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes, the little fish! A little blue fish!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Peixe!",
+              "es": "¡Pez!"
+            },
+            "acolle": {
+              "gl": "Si, un peixe pequeniño!",
+              "es": "¡Sí, un pez pequeñito!"
+            },
+            "en": "A little fish! Swimming under the sea!"
+          },
+          "unhaPalabra": {
+            "di": "Fish!",
+            "en": "Yes, a little blue fish!"
+          },
+          "formaTorcida": {
+            "di": "Pish!",
+            "en": "Yes, a fish! A little fish!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the little fish?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o sinala, dille: «Yes, the little fish!».",
+            "es": "Pregunta y espera. Si lo señala, dile: «Yes, the little fish!»."
+          }
+        }
+      },
+      {
+        "lamina": "microcuento_2_3_10_3",
+        "encargo": "Lúa y el mismo pez AZUL CLARO frente a frente en el centro; alrededor, olas grandes en azul más oscuro con espuma blanca. Lúa levanta una mano para decir adiós y el pez mueve la cola. Sin más personajes ni objetos.",
+        "trama": {
+          "gl": "O peixiño perde o medo e nada arredor das mans de Lúa. Fan ondas pequenas… e despois ondas xigantes! Chega a hora de marchar: Lúa dille adeus coa man e o peixiño, coa cola.",
+          "es": "El pececito pierde el miedo y nada alrededor de las manos de Lúa. Hacen olas pequeñas… ¡y luego olas gigantes! Llega la hora de irse: Lúa le dice adiós con la mano y el pececito, con la cola."
+        },
+        "lua": {
+          "onomatopeia": "Splash, splash!",
+          "ref": "frase.lua.2_3.10.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the giant waves? Touch the waves!",
+            "axuda": {
+              "gl": "Pasa a man polas ondas grandes da lámina.",
+              "es": "Pasa la mano por las olas grandes de la lámina."
+            }
+          },
+          "imitar": {
+            "en": "Giant waves! Move your arms like the waves. Splash!",
+            "axuda": {
+              "gl": "Bate os brazos enteiros desde os ombreiros, grande e amodo.",
+              "es": "Bate los brazos enteros desde los hombros, grande y despacio."
+            }
+          },
+          "achegar": {
+            "en": "Who do you wave goodbye to at home?",
+            "axuda": {
+              "gl": "Despídete ti coa man. Se nomea a alguén, devólvello en inglés: «You wave goodbye to grandma!».",
+              "es": "Despídete tú con la mano. Si nombra a alguien, devuélveselo en inglés: «You wave goodbye to grandma!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa waves goodbye. Bye-bye, little fish!",
+            "axuda": {
+              "gl": "Despídete ti coa man, amodo, e agarda.",
+              "es": "Despídete tú con la mano, despacio, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Giant waves! Big, giant waves!",
+            "axuda": {
+              "gl": "Asente e debuxa unha onda grande no aire co teu brazo.",
+              "es": "Asiente y dibuja una ola grande en el aire con tu brazo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Adeus!",
+              "es": "¡Adiós!"
+            },
+            "acolle": {
+              "gl": "Si, adeus, peixiño!",
+              "es": "¡Sí, adiós, pececito!"
+            },
+            "en": "Wave goodbye, little fish!"
+          },
+          "unhaPalabra": {
+            "di": "Bye!",
+            "en": "Bye-bye, little fish!"
+          },
+          "formaTorcida": {
+            "di": "Goodbye fish waves!",
+            "en": "Yes, we wave goodbye to the fish!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you wave goodbye to the little fish?",
+          "axuda": {
+            "gl": "Despídete ti primeiro coa man e agarda. Se o fai, dille: «Wave goodbye! Bye-bye, little fish!».",
+            "es": "Despídete tú primero con la mano y espera. Si lo hace, dile: «Wave goodbye! Bye-bye, little fish!»."
+          }
+        }
+      }
+    ]
+  }
 }

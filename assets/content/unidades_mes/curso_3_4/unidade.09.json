@@ -81,5 +81,248 @@
     "3_4.febreiro.s2.horse"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.09",
+    "titulo": {
+      "gl": "Lúa e a ra que non chegaba",
+      "es": "Lúa y la rana que no llegaba"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Una manta de cuadros sobre la hierba. Lúa con camiseta ROJA, sentada con las piernas cruzadas, da palmas cantando (notas musicales en el aire). En el borde de la manta, una rana VERDE con lunares AMARILLOS mira sola, con las manos detrás.",
+        "trama": {
+          "gl": "Lúa senta na manta do parque e canta unha canción de palmas: plas, plas! Na beira da manta hai unha ra verde, soíña, que mira con moita atención. Gustaríalle xogar… pero non sabe como empezar.",
+          "es": "Lúa se sienta en la manta del parque y canta una canción de palmas: ¡plas, plas! En el borde de la manta hay una rana verde, solita, que mira con mucha atención. Le gustaría jugar… pero no sabe cómo empezar."
+        },
+        "lua": {
+          "onomatopeia": "Plas, plas, plas!",
+          "ref": "frase.lua.3_4.09.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the green frog? Touch the frog!",
+            "axuda": {
+              "gl": "Sinala a ra na beira da manta e agarda.",
+              "es": "Señala la rana en el borde de la manta y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you clap your hands? Clap, clap, clap!",
+            "axuda": {
+              "gl": "Bate tres palmadas ao pulso e agarda.",
+              "es": "Da tres palmadas al pulso y espera."
+            }
+          },
+          "achegar": {
+            "en": "Do you play clapping games at home?",
+            "axuda": {
+              "gl": "Bate as palmas contra as túas pernas e agarda un xesto ou un si.",
+              "es": "Da palmas sobre tus piernas y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "My turn! Look, Lúa claps her hands. Clap, clap, clap!",
+            "axuda": {
+              "gl": "Toca o teu peito e bate ti tres palmadas, amodo, sen dicir máis.",
+              "es": "Tócate el pecho y da tú tres palmadas, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The frog! A little green frog!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Está soa!",
+              "es": "¡Está sola!"
+            },
+            "acolle": {
+              "gl": "Si, a ra está soíña.",
+              "es": "Sí, la rana está solita."
+            },
+            "en": "Yes, the frog is alone. Clap, clap, little frog!"
+          },
+          "unhaPalabra": {
+            "di": "Clap!",
+            "en": "Yes, clap your hands!"
+          },
+          "formaTorcida": {
+            "di": "Clap my hands you!",
+            "en": "Yes, clap your hands! Clap, clap!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you clap your hands, like Lúa?",
+          "axuda": {
+            "gl": "Bate ti as palmas primeiro e agarda. Faga o que faga, devólvelle: «Clap, clap! Clap your hands!».",
+            "es": "Da tú palmas primero y espera. Haga lo que haga, devuélvele: «Clap, clap! Clap your hands!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa con camiseta ROJA y la rana VERDE con lunares AMARILLOS, sentadas frente a frente sobre la manta. Lúa tiene una mano arriba y otra abajo; la rana estira su brazo corto hacia arriba sin llegar. Flechas pequeñas arriba y abajo.",
+        "trama": {
+          "gl": "Lúa ensínalle o xogo: cando a voz sobe, fina, fina, palma arriba; cando a voz baixa, grosa, grosa, palma abaixo. Pero a ra ten os brazos curtiños e a palma de arriba non lle chega. Ups! Lúa baixa un pouco a man e proban outra vez.",
+          "es": "Lúa le enseña el juego: cuando la voz sube, fina, fina, palma arriba; cuando la voz baja, grave, grave, palma abajo. Pero la rana tiene los brazos cortitos y la palma de arriba no le llega. ¡Uy! Lúa baja un poco la mano y prueban otra vez."
+        },
+        "lua": {
+          "onomatopeia": "Iiii… oooo!",
+          "ref": "frase.lua.3_4.09.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is Lúa's high hand? Touch the high hand!",
+            "axuda": {
+              "gl": "Sinala a man de arriba de Lúa e agarda.",
+              "es": "Señala la mano de arriba de Lúa y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you sing high and low? High… iiii! Low… oooo!",
+            "axuda": {
+              "gl": "Sube a man cunha nota aguda e báixaa cunha nota grave, amodo.",
+              "es": "Sube la mano con una nota aguda y bájala con una nota grave, despacio."
+            }
+          },
+          "achegar": {
+            "en": "Do you sing songs with your family?",
+            "axuda": {
+              "gl": "Cantarola un anaco dunha canción e agarda un xesto ou un si.",
+              "es": "Canturrea un trocito de una canción y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa sings high… and low.",
+            "axuda": {
+              "gl": "Sube e baixa ti a man coa voz, sen dicir máis.",
+              "es": "Sube y baja tú la mano con la voz, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! High! The hand is up high!",
+            "axuda": {
+              "gl": "Asente e sube a man cunha nota aguda.",
+              "es": "Asiente y sube la mano con una nota aguda."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Non chega!",
+              "es": "¡No llega!"
+            },
+            "acolle": {
+              "gl": "Si, a ra non chega arriba.",
+              "es": "Sí, la rana no llega arriba."
+            },
+            "en": "Yes, too high for the frog! Help me, please!"
+          },
+          "unhaPalabra": {
+            "di": "Low!",
+            "en": "Yes, low! A low, low note!"
+          },
+          "formaTorcida": {
+            "di": "Highs and lows!",
+            "en": "Yes, high and low! High, low!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "Where is the high hand?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala ou sube a man, dille: «Yes! Up high! High, high!».",
+            "es": "Pregunta y espera. Si señala o sube la mano, dile: «Yes! Up high! High, high!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa con camiseta ROJA y la rana VERDE con lunares AMARILLOS, abrazadas sobre la manta, todavía con una mano cruzada chocando la de la otra. Caras de alegría. Fondo de hierba liso.",
+        "trama": {
+          "gl": "Agora si! Palma arriba, palma abaixo, e cruzar: man dereita coa man dereita, plas! A ra ri e non quere parar. Ao final da canción dálle unha aperta forte a Lúa: xa son amigas.",
+          "es": "¡Ahora sí! Palma arriba, palma abajo, y cruzar: mano derecha con mano derecha, ¡plas! La rana se ríe y no quiere parar. Al final de la canción le da un abrazo fuerte a Lúa: ya son amigas."
+        },
+        "lua": {
+          "onomatopeia": "Hurra!",
+          "ref": "frase.lua.3_4.09.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the two friends? Touch the friends!",
+            "axuda": {
+              "gl": "Sinala a Lúa e a ra e agarda.",
+              "es": "Señala a Lúa y a la rana y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you cross your hands and clap? Clap… and cross!",
+            "axuda": {
+              "gl": "Bate unha palmada e despois leva a man dereita cara ao lado contrario, amodo.",
+              "es": "Da una palmada y luego lleva la mano derecha hacia el lado contrario, despacio."
+            }
+          },
+          "achegar": {
+            "en": "Do you have a friend at school?",
+            "axuda": {
+              "gl": "Dálle a man con cariño e agarda un xesto ou un si.",
+              "es": "Dale la mano con cariño y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa hugs her friend. Friends!",
+            "axuda": {
+              "gl": "Dálle ti a man ou unha aperta suave e agarda.",
+              "es": "Dale tú la mano o un abrazo suave y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Two friends! Lúa and the frog are friends!",
+            "axuda": {
+              "gl": "Asente e xunta as dúas mans.",
+              "es": "Asiente y junta las dos manos."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Son amigas!",
+              "es": "¡Son amigas!"
+            },
+            "acolle": {
+              "gl": "Si, xa son amigas!",
+              "es": "¡Sí, ya son amigas!"
+            },
+            "en": "Yes! Friends! Lúa and the frog are friends!"
+          },
+          "unhaPalabra": {
+            "di": "Friend!",
+            "en": "Yes, a friend! A little green friend!"
+          },
+          "formaTorcida": {
+            "di": "Me friend you!",
+            "en": "Yes, you and me, friends!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Friends! You and me…?",
+          "axuda": {
+            "gl": "Di «Friends! You and me…» dándolle a man e agarda. Se completa con «friends» ou che aperta a man, devólvelle: «Friends! You and me, friends!».",
+            "es": "Di «Friends! You and me…» dándole la mano y espera. Si completa con «friends» o te aprieta la mano, devuélvele: «Friends! You and me, friends!»."
+          }
+        }
+      }
+    ]
+  }
 }

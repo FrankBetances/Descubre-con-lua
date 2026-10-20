@@ -98,5 +98,326 @@
     "3_4.novembro.s3.fox"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_5_6.09",
+    "titulo": {
+      "gl": "Lúa e os patiños da chuvia",
+      "es": "Lúa y los patitos de la lluvia"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Soportal de piedra con columnas, visto de frente; fuera, lluvia en líneas finas. Lúa sentada en el suelo con una clave de madera MARRÓN en cada mano. A su lado, tres patitos AMARILLOS con botas de agua AZULES miran la lluvia con cara de aburrimiento.",
+        "trama": {
+          "gl": "Chove nunha tarde de maio e os patiños non poden saír a chapuzar. Que aburrimento! Lúa escoita a chuvia no tellado: plic, plic, plic-plic. Iso é un ritmo! E colle a súa clave de madeira.",
+          "es": "Llueve una tarde de mayo y los patitos no pueden salir a chapotear. ¡Qué aburrimiento! Lúa escucha la lluvia en el tejado: plic, plic, plic-plic. ¡Eso es un ritmo! Y coge su clave de madera."
+        },
+        "lua": {
+          "onomatopeia": "Plink, plink, plink-plink!",
+          "ref": "frase.lua.5_6.09.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the wooden clave? Touch it!",
+            "axuda": {
+              "gl": "Sinala a clave de madeira e agarda.",
+              "es": "Señala la clave de madera y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you tap like the rain? Tap-tap, tap-tap!",
+            "axuda": {
+              "gl": "Toca co dedo na palma da man, amodo, ao pulso.",
+              "es": "Toca con el dedo en la palma de la mano, despacio, al pulso."
+            }
+          },
+          "achegar": {
+            "en": "What do you do at home when it rains?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You play with your blocks!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You play with your blocks!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa taps like the rain. Tap-tap!",
+            "axuda": {
+              "gl": "Toca ti co dedo na palma, ao pulso, sen dicir máis.",
+              "es": "Toca tú con el dedo en la palma, al pulso, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The clave! Lúa's wooden clave!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Plic, plic!",
+              "es": "¡Plic, plic!"
+            },
+            "acolle": {
+              "gl": "Si, plic, plic, coma a chuvia!",
+              "es": "¡Sí, plic, plic, como la lluvia!"
+            },
+            "en": "Tap-tap! The rain goes tap-tap!"
+          },
+          "unhaPalabra": {
+            "di": "Rain!",
+            "en": "Yes, the rain goes tap-tap!"
+          },
+          "formaTorcida": {
+            "di": "Tip-tap!",
+            "en": "Yes, tap-tap, tap-tap!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What sounds can you hear right now?",
+          "axuda": {
+            "gl": "Pregunta, quedade en silencio un momento e agarda. Acolle o que oia e devólvello nunha frase: «You can hear the rain!».",
+            "es": "Pregunta, quedaos en silencio un momento y espera. Acoge lo que oiga y devuélveselo en una frase: «You can hear the rain!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Los tres patitos AMARILLOS con botas AZULES sentados en un montón en el suelo del soportal, riéndose, con las patas enredadas. Lúa, de pie, con la clave de madera MARRÓN levantada, se tapa la boca para no reírse. Líneas de movimiento muy rápidas alrededor.",
+        "trama": {
+          "gl": "Lúa inventa o seu propio patrón: palmada, salto, palmada, salto. Os patiños cópiano… pero cada vez máis rápido, máis rápido, máis rápido… ata que se lles enlean as patas e acaban os tres sentados nun montón. Cuac, cuac!",
+          "es": "Lúa inventa su propio patrón: palmada, salto, palmada, salto. Los patitos lo copian… pero cada vez más rápido, más rápido, más rápido… hasta que se les enredan las patas y acaban los tres sentados en un montón. ¡Cuac, cuac!"
+        },
+        "lua": {
+          "onomatopeia": "Quack, quack, bump!",
+          "ref": "frase.lua.5_6.09.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the three little ducks? Touch the ducks!",
+            "axuda": {
+              "gl": "Sinala o montón de patiños e agarda.",
+              "es": "Señala el montón de patitos y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you clap faster and faster? Clap, clap, clap, clap!",
+            "axuda": {
+              "gl": "Dá palmadas cada vez máis rápido e para de súpeto.",
+              "es": "Da palmadas cada vez más rápido y para de golpe."
+            }
+          },
+          "achegar": {
+            "en": "What do you do really fast?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «You run really fast!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «You run really fast!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, faster and faster! Oh, no!",
+            "axuda": {
+              "gl": "Dá ti palmadas cada vez máis rápido e leva as mans á cabeza.",
+              "es": "Da tú palmadas cada vez más rápido y llévate las manos a la cabeza."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The ducks! Three little ducks in a pile!",
+            "axuda": {
+              "gl": "Asente e conta ti os patiños co dedo.",
+              "es": "Asiente y cuenta tú los patitos con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Caeron!",
+              "es": "¡Se han caído!"
+            },
+            "acolle": {
+              "gl": "Si, caeron os tres xuntos!",
+              "es": "¡Sí, se han caído los tres juntos!"
+            },
+            "en": "They fell! The ducks went too fast!"
+          },
+          "unhaPalabra": {
+            "di": "Fast!",
+            "en": "Yes, faster and faster!"
+          },
+          "formaTorcida": {
+            "di": "Ducks falled down!",
+            "en": "Yes, the ducks fell down!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What happened to the little ducks?",
+          "axuda": {
+            "gl": "Se non se lembra, dá palmadas moi rápido e agarda: «They went too fast and fell down!».",
+            "es": "Si no se acuerda, da palmadas muy rápido y espera: «They went too fast and fell down!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa y los tres patitos AMARILLOS con botas AZULES en fila, todos con las manos y las alas juntas a punto de dar una palmada. Lúa marca el ritmo con la clave de madera MARRÓN. Encima de ellos, dibujados en el aire, dos símbolos: unas manos que aplauden y unos pies que saltan.",
+        "trama": {
+          "gl": "Lúa ten unha idea: máis amodo e por orde. Primeiro, unha palmada; despois, un salto. Clap… hop! Clap… hop! Os catro á vez, sen présa. Agora si: o patrón sae perfecto!",
+          "es": "Lúa tiene una idea: más despacio y por orden. Primero, una palmada; después, un salto. ¡Clap… hop! ¡Clap… hop! Los cuatro a la vez, sin prisa. ¡Ahora sí: el patrón sale perfecto!"
+        },
+        "lua": {
+          "onomatopeia": "Clap… hop! Clap… hop!",
+          "ref": "frase.lua.5_6.09.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the clapping hands? Touch the hands!",
+            "axuda": {
+              "gl": "Sinala as mans debuxadas no aire e agarda.",
+              "es": "Señala las manos dibujadas en el aire y espera."
+            }
+          },
+          "imitar": {
+            "en": "First we clap, then we jump! Can you do it with Lúa?",
+            "axuda": {
+              "gl": "Dá unha palmada e despois un saltiño, amodo, e agarda.",
+              "es": "Da una palmada y después un saltito, despacio, y espera."
+            }
+          },
+          "achegar": {
+            "en": "What do you do first when you wake up?",
+            "axuda": {
+              "gl": "Agarda. Se o di na súa lingua, devólvello en inglés: «First you wash your face!».",
+              "es": "Espera. Si lo dice en su lengua, devuélveselo en inglés: «First you wash your face!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, first Lúa claps, then she jumps.",
+            "axuda": {
+              "gl": "Fai ti os dous xestos, un detrás do outro, amodo.",
+              "es": "Haz tú los dos gestos, uno detrás del otro, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The hands! First we clap!",
+            "axuda": {
+              "gl": "Asente e dá unha palmada suave.",
+              "es": "Asiente y da una palmada suave."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Palmada e salto!",
+              "es": "¡Palmada y salto!"
+            },
+            "acolle": {
+              "gl": "Si, primeiro palmada, despois salto!",
+              "es": "¡Sí, primero palmada, después salto!"
+            },
+            "en": "Clap and jump! First we clap, then we jump!"
+          },
+          "unhaPalabra": {
+            "di": "Clap!",
+            "en": "Yes, first we clap!"
+          },
+          "formaTorcida": {
+            "di": "First clap, then jumping!",
+            "en": "Yes, first we clap, then we jump!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "First we clap, then we…?",
+          "axuda": {
+            "gl": "Le a frase de Lúa e para antes da última palabra. Agarda e, se non sae, fai un saltiño: «…jump! First we clap, then we jump!».",
+            "es": "Lee la frase de Lúa y para antes de la última palabra. Espera y, si no sale, da un saltito: «…jump! First we clap, then we jump!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa y los tres patitos AMARILLOS con botas AZULES forman un círculo, cogidos de las manos y las alas, bailando. Ha dejado de llover: charcos que brillan y un sol pequeño entre nubes. La clave de madera MARRÓN en el suelo, en el centro del círculo.",
+        "trama": {
+          "gl": "Para de chover e sae o sol! Lúa e os patiños fan un círculo e bailan o seu patrón: clap, clap, tap! Clap, clap, tap! Ata as pingas dos charcos parecen bailar con eles.",
+          "es": "¡Deja de llover y sale el sol! Lúa y los patitos hacen un círculo y bailan su patrón: ¡clap, clap, tap! ¡Clap, clap, tap! Hasta las gotas de los charcos parecen bailar con ellos."
+        },
+        "lua": {
+          "onomatopeia": "Splash, splash, quack!",
+          "ref": "frase.lua.5_6.09.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the circle? Touch the ducks in the circle!",
+            "axuda": {
+              "gl": "Debuxa co dedo o círculo da lámina e agarda.",
+              "es": "Dibuja con el dedo el círculo de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you dance in a circle? Clap, clap, tap… and turn!",
+            "axuda": {
+              "gl": "Debuxa un círculo co dedo e dá palmadas ao ritmo.",
+              "es": "Dibuja un círculo con el dedo y da palmadas al ritmo."
+            }
+          },
+          "achegar": {
+            "en": "Who do you dance with at home?",
+            "axuda": {
+              "gl": "Agarda. Se nomea a alguén, devólvello en inglés: «You dance with your brother!».",
+              "es": "Espera. Si nombra a alguien, devuélveselo en inglés: «You dance with your brother!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, a circle! Clap, clap, tap!",
+            "axuda": {
+              "gl": "Fai ti o patrón coas mans, amodo e con ritmo.",
+              "es": "Haz tú el patrón con las manos, despacio y con ritmo."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The circle! A big rhythmic circle!",
+            "axuda": {
+              "gl": "Asente e debuxa ti tamén o círculo no aire.",
+              "es": "Asiente y dibuja tú también el círculo en el aire."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Bailan!",
+              "es": "¡Bailan!"
+            },
+            "acolle": {
+              "gl": "Si, bailan en círculo!",
+              "es": "¡Sí, bailan en círculo!"
+            },
+            "en": "They dance! They dance in a circle!"
+          },
+          "unhaPalabra": {
+            "di": "Circle!",
+            "en": "Yes, a big dancing circle!"
+          },
+          "formaTorcida": {
+            "di": "Clap, clap, tip!",
+            "en": "Yes, clap, clap, tap!"
+          }
+        },
+        "casa": {
+          "tipo": "achegar",
+          "en": "What pattern can you make with your family?",
+          "axuda": {
+            "gl": "Pregunta e probade xuntos: unha palmada, un pé… Acolle o que invente e devólvello: «Clap, stomp, clap! Your pattern!».",
+            "es": "Pregunta y probad juntos: una palmada, un pie… Acoge lo que invente y devuélveselo: «Clap, stomp, clap! Your pattern!»."
+          }
+        }
+      }
+    ]
+  }
 }

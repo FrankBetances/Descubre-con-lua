@@ -77,5 +77,248 @@
     "frase.cmd.decembro.2_3.03"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.05",
+    "titulo": {
+      "gl": "Lúa e a bota do patiño",
+      "es": "Lúa y la bota del patito"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Entrada de una casa muy simple: una fila de perchas en la pared, una de ellas vacía. Lúa, de pie, se pone un abrigo AZUL y sube la cremallera. Por la ventana se ven gotas de lluvia gruesas. Abajo, junto a la puerta, UNA sola bota de agua ROJA.",
+        "trama": {
+          "gl": "Chove moito e Lúa quere saír a xogar. Colle o abrigo azul do colgadoiro, mete un brazo, mete o outro… e sobe a cremalleira: zzzip! Xa está lista! Pero xunto á porta só hai unha bota vermella. Onde está a outra?",
+          "es": "Llueve mucho y Lúa quiere salir a jugar. Coge el abrigo azul de la percha, mete un brazo, mete el otro… y sube la cremallera: ¡zzzip! ¡Ya está lista! Pero junto a la puerta solo hay una bota roja. ¿Dónde está la otra?"
+        },
+        "lua": {
+          "onomatopeia": "Zzzip!",
+          "ref": "frase.lua.2_3.05.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is Lúa's coat? Touch the blue coat!",
+            "axuda": {
+              "gl": "Sinala o abrigo azul e agarda.",
+              "es": "Señala el abrigo azul y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you zip it up like Lúa? Zzzip!",
+            "axuda": {
+              "gl": "Sobe unha cremalleira imaxinaria amodo, do embigo ao queixo.",
+              "es": "Sube una cremallera imaginaria despacio, del ombligo a la barbilla."
+            }
+          },
+          "achegar": {
+            "en": "Do you put on your coat when it rains?",
+            "axuda": {
+              "gl": "Fai coma se meteses os brazos nun abrigo e agarda un xesto ou un si.",
+              "es": "Haz como si metieras los brazos en un abrigo y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa puts on her coat. Zip it up!",
+            "axuda": {
+              "gl": "Pon ti un abrigo imaxinario, amodo, sen dicir máis.",
+              "es": "Ponte tú un abrigo imaginario, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The coat! A blue coat for the rain!",
+            "axuda": {
+              "gl": "Asente e pasa o dedo pola cremalleira do debuxo.",
+              "es": "Asiente y pasa el dedo por la cremallera del dibujo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Abrigo!",
+              "es": "¡Abrigo!"
+            },
+            "acolle": {
+              "gl": "Si, o abrigo azul!",
+              "es": "¡Sí, el abrigo azul!"
+            },
+            "en": "The coat! Put on your coat!"
+          },
+          "unhaPalabra": {
+            "di": "Coat!",
+            "en": "Yes, a blue coat!"
+          },
+          "formaTorcida": {
+            "di": "Zip up it!",
+            "en": "Yes, zip it up! Zzzip!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the blue coat?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o sinala, dille: «Yes, the coat! Put on your coat!».",
+            "es": "Pregunta y espera. Si lo señala, dile: «Yes, the coat! Put on your coat!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano de la otra bota de agua ROJA, tumbada en el suelo bajo las perchas. De dentro asoma la cabeza de un patito AMARILLO de pico NARANJA (el mismo de la lámina 3). Lúa, con el abrigo AZUL, se agacha y lo mira con los ojos muy abiertos y las manos en las mejillas.",
+        "trama": {
+          "gl": "Lúa busca por toda a entrada. Debaixo dos colgadoiros hai unha bota deitada… e móvese! Cuac! Dentro hai un patiño amarelo, moi a gusto. El tamén quere saír á choiva!",
+          "es": "Lúa busca por toda la entrada. Debajo de las perchas hay una bota tumbada… ¡y se mueve! ¡Cuac! Dentro hay un patito amarillo, muy a gusto. ¡Él también quiere salir a la lluvia!"
+        },
+        "lua": {
+          "onomatopeia": "Quack, quack!",
+          "ref": "frase.lua.2_3.05.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little duck? Touch the duck in the boot!",
+            "axuda": {
+              "gl": "Sinala a cabeciña do patiño e agarda.",
+              "es": "Señala la cabecita del patito y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you quack like the little duck? Quack, quack!",
+            "axuda": {
+              "gl": "Abre e pecha as mans diante da boca coma un pico.",
+              "es": "Abre y cierra las manos delante de la boca como un pico."
+            }
+          },
+          "achegar": {
+            "en": "Do you have boots for the rain?",
+            "axuda": {
+              "gl": "Sinala os teus pés e agarda un xesto ou un si.",
+              "es": "Señala tus pies y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa finds the boot. A duck in the boot!",
+            "axuda": {
+              "gl": "Sinala ti a bota, amodo, e agarda.",
+              "es": "Señala tú la bota, despacio, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The duck! A little duck in the red boot!",
+            "axuda": {
+              "gl": "Asente e fai ti tamén: cuac, cuac.",
+              "es": "Asiente y haz tú también: cuac, cuac."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un pato!",
+              "es": "¡Un pato!"
+            },
+            "acolle": {
+              "gl": "Si, un patiño na bota!",
+              "es": "¡Sí, un patito en la bota!"
+            },
+            "en": "A duck! A little duck in the boot!"
+          },
+          "unhaPalabra": {
+            "di": "Duck!",
+            "en": "Yes, a little yellow duck!"
+          },
+          "formaTorcida": {
+            "di": "Duck in boots it!",
+            "en": "Yes, the duck is in the boot!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the little duck?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o sinala, dille: «Yes, the duck! In the red boot!».",
+            "es": "Pregunta y espera. Si lo señala, dile: «Yes, the duck! In the red boot!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Exterior bajo la lluvia: un camino gris con tres charcos redondos. Lúa, con el abrigo AZUL y las dos botas de agua ROJAS, pisa fuerte un charco y salpica. A su lado, el patito AMARILLO de pico NARANJA salta en otro charco. Gotas que saltan en forma de corona. Sin más elementos.",
+        "trama": {
+          "gl": "Lúa pon as dúas botas vermellas e saen á rúa. Hai charcos por todas partes! Lúa pisa forte: un, dous, tres! E o patiño salta con ela: chap, chap! Que ben se está na choiva cando vas ben abrigada!",
+          "es": "Lúa se pone las dos botas rojas y salen a la calle. ¡Hay charcos por todas partes! Lúa pisa fuerte: ¡uno, dos, tres! Y el patito salta con ella: ¡chap, chap! ¡Qué bien se está bajo la lluvia cuando vas bien abrigada!"
+        },
+        "lua": {
+          "onomatopeia": "Splish, splash!",
+          "ref": "frase.lua.2_3.05.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the puddles? Touch a big puddle!",
+            "axuda": {
+              "gl": "Pasa o dedo arredor dun charco e agarda.",
+              "es": "Pasa el dedo alrededor de un charco y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you stomp like Lúa? Stomp, stomp, stomp!",
+            "axuda": {
+              "gl": "Pisa forte tres veces no chan.",
+              "es": "Pisa fuerte tres veces en el suelo."
+            }
+          },
+          "achegar": {
+            "en": "Do you jump in puddles with your boots?",
+            "axuda": {
+              "gl": "Dá un saltiño no sitio e agarda un xesto ou un si.",
+              "es": "Da un saltito en el sitio y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa stomps in the puddle. Splash!",
+            "axuda": {
+              "gl": "Pisa ti forte no chan, sen dicir máis.",
+              "es": "Pisa tú fuerte en el suelo, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! A puddle! A big puddle! Splash!",
+            "axuda": {
+              "gl": "Asente e fai salpicar o dedo arredor do charco.",
+              "es": "Asiente y haz salpicar el dedo alrededor del charco."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Charco!",
+              "es": "¡Charco!"
+            },
+            "acolle": {
+              "gl": "Si, un charco grande!",
+              "es": "¡Sí, un charco grande!"
+            },
+            "en": "A puddle! Stomp your boots in the puddle!"
+          },
+          "unhaPalabra": {
+            "di": "Puddle!",
+            "en": "Yes, a big puddle! Splash!"
+          },
+          "formaTorcida": {
+            "di": "Stomp puddle boots!",
+            "en": "Yes, stomp your boots in the puddles!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you stomp your boots?",
+          "axuda": {
+            "gl": "Pisa ti primeiro tres veces e agarda. Se o fai, dille: «Stomp, stomp, stomp! Splash!».",
+            "es": "Pisa tú primero tres veces y espera. Si lo hace, dile: «Stomp, stomp, stomp! Splash!»."
+          }
+        }
+      }
+    ]
+  }
 }

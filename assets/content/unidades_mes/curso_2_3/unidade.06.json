@@ -77,5 +77,248 @@
     "frase.cmd.xaneiro.2_3.02"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.06",
+    "titulo": {
+      "gl": "O osiño polar quere voar",
+      "es": "El osito polar quiere volar"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Paisaje helado muy simple: suelo blanco y mar azul oscuro al fondo. Un osito polar BLANCO con bufanda ROJA (el mismo de las láminas 2 y 3), sentado, mira hacia arriba. En el cielo, dos gaviotas BLANCAS Y GRISES vuelan con las alas abiertas. Lúa, con abrigo MORADO, a su lado, extiende los brazos como alas.",
+        "trama": {
+          "gl": "No país do xeo vive un osiño polar branco cunha bufanda vermella. Todas as mañás mira as gaivotas voar por riba do mar. Que ben voan! Lúa abre os brazos coma ás e corre de puntas arredor del.",
+          "es": "En el país del hielo vive un osito polar blanco con una bufanda roja. Todas las mañanas mira a las gaviotas volar sobre el mar. ¡Qué bien vuelan! Lúa abre los brazos como alas y corre de puntillas a su alrededor."
+        },
+        "lua": {
+          "onomatopeia": "Kiaaa, kiaaa!",
+          "ref": "frase.lua.2_3.06.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the birds? Touch a bird in the sky!",
+            "axuda": {
+              "gl": "Sinala unha gaivota no ceo e agarda.",
+              "es": "Señala una gaviota en el cielo y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you fly like a bird? Flap your wings!",
+            "axuda": {
+              "gl": "Abre os brazos e móveos arriba e abaixo, amodo.",
+              "es": "Abre los brazos y muévelos arriba y abajo, despacio."
+            }
+          },
+          "achegar": {
+            "en": "Do you see seagulls at the beach?",
+            "axuda": {
+              "gl": "Fai cunha man unha gaivota que voa e agarda un xesto ou un si.",
+              "es": "Haz con una mano una gaviota que vuela y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa flies like a bird. Flap, flap!",
+            "axuda": {
+              "gl": "Move ti os brazos coma ás, sen dicir máis.",
+              "es": "Mueve tú los brazos como alas, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! A bird! A big white bird!",
+            "axuda": {
+              "gl": "Asente e fai voar o teu dedo polo ceo da lámina.",
+              "es": "Asiente y haz volar tu dedo por el cielo de la lámina."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Gaivota!",
+              "es": "¡Gaviota!"
+            },
+            "acolle": {
+              "gl": "Si, unha gaivota coma as de Vigo!",
+              "es": "¡Sí, una gaviota como las de Vigo!"
+            },
+            "en": "A bird! The bird flies!"
+          },
+          "unhaPalabra": {
+            "di": "Bird!",
+            "en": "Yes, a bird in the sky!"
+          },
+          "formaTorcida": {
+            "di": "Bird flyed!",
+            "en": "Yes, the bird flew! Flap, flap!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where are the birds?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se as sinala, dille: «Yes, the birds! Fly like a bird!».",
+            "es": "Pregunta y espera. Si las señala, dile: «Yes, the birds! Fly like a bird!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El osito polar BLANCO con bufanda ROJA cae sentado sobre la nieve con los brazos abiertos; alrededor, una nube de nieve que salta. Lúa, con abrigo MORADO, se ríe con las manos en la boca. Las dos gaviotas BLANCAS Y GRISES miran desde una roca.",
+        "trama": {
+          "gl": "O osiño tamén quere voar. Bate os brazos, corre, dá un salto… e pum! Cae sentado na neve. Pesa moito! Bate os pés no chan, pum, pum, e ri. Lúa ri con el.",
+          "es": "El osito también quiere volar. Bate los brazos, corre, da un salto… y ¡pum! Se cae sentado en la nieve. ¡Pesa mucho! Golpea el suelo con los pies, pum, pum, y se ríe. Lúa se ríe con él."
+        },
+        "lua": {
+          "onomatopeia": "Pum, pum!",
+          "ref": "frase.lua.2_3.06.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the polar bear? Touch the bear in the snow!",
+            "axuda": {
+              "gl": "Sinala o osiño sentado na neve e agarda.",
+              "es": "Señala el osito sentado en la nieve y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you stomp like a big heavy bear? Stomp, stomp!",
+            "axuda": {
+              "gl": "Pisa forte e amodo, cos brazos pesados.",
+              "es": "Pisa fuerte y despacio, con los brazos pesados."
+            }
+          },
+          "achegar": {
+            "en": "Do you have a teddy bear at home?",
+            "axuda": {
+              "gl": "Fai coma se abrazases un osiño de peluche e agarda.",
+              "es": "Haz como si abrazaras un osito de peluche y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa stomps like a bear. Stomp!",
+            "axuda": {
+              "gl": "Pisa ti forte no chan, amodo, sen dicir máis.",
+              "es": "Pisa tú fuerte en el suelo, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The polar bear! A big heavy bear!",
+            "axuda": {
+              "gl": "Asente e dá ti dúas pisadas fortes.",
+              "es": "Asiente y da tú dos pisotones fuertes."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Caeu!",
+              "es": "¡Se ha caído!"
+            },
+            "acolle": {
+              "gl": "Si, caeu na neve, pum!",
+              "es": "¡Sí, se ha caído en la nieve, pum!"
+            },
+            "en": "Oh! A big heavy bear in the snow!"
+          },
+          "unhaPalabra": {
+            "di": "Bear!",
+            "en": "Yes, a big polar bear!"
+          },
+          "formaTorcida": {
+            "di": "Bear fall downed!",
+            "en": "Yes, the bear fell down! Pum!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the polar bear?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o sinala, dille: «Yes, the polar bear! Big heavy bear!».",
+            "es": "Pregunta y espera. Si lo señala, dile: «Yes, the polar bear! Big heavy bear!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Fiesta de Carnaval sobre el hielo: guirnaldas de colores muy simples arriba. El osito polar BLANCO con bufanda ROJA lleva unas alas de papel AZULES atadas a los brazos y se queda quieto como una estatua, con los brazos abiertos. Lúa, con abrigo MORADO y antifaz, y las gaviotas BLANCAS Y GRISES, también quietas en su postura.",
+        "trama": {
+          "gl": "As gaivotas teñen unha idea: unha festa de Entroido! Danlle ao osiño unhas ás de papel azuis. El bate as ás, baila con todos… e cando para a música, todos quedan quietos coma estatuas. Que Entroido máis bonito!",
+          "es": "Las gaviotas tienen una idea: ¡una fiesta de Carnaval! Le dan al osito unas alas de papel azules. Él bate las alas, baila con todos… y cuando para la música, todos se quedan quietos como estatuas. ¡Qué Carnaval más bonito!"
+        },
+        "lua": {
+          "onomatopeia": "Tachán!",
+          "ref": "frase.lua.2_3.06.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the bear's wings? Touch the blue wings!",
+            "axuda": {
+              "gl": "Sinala as ás azuis do osiño e agarda.",
+              "es": "Señala las alas azules del osito y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you flap your wings and freeze? Flap, flap… freeze!",
+            "axuda": {
+              "gl": "Bate os brazos e para de súpeto, coma unha estatua.",
+              "es": "Bate los brazos y para de golpe, como una estatua."
+            }
+          },
+          "achegar": {
+            "en": "Do you dress up for Carnival?",
+            "axuda": {
+              "gl": "Pon as mans diante dos ollos coma unha máscara e agarda un xesto ou un si.",
+              "es": "Ponte las manos delante de los ojos como un antifaz y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa freezes. Carnival freeze!",
+            "axuda": {
+              "gl": "Para ti nunha postura divertida, sen dicir máis.",
+              "es": "Para tú en una postura divertida, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Blue wings! The polar bear has wings!",
+            "axuda": {
+              "gl": "Asente e bate os brazos un pouquiño.",
+              "es": "Asiente y bate los brazos un poquito."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Estatua!",
+              "es": "¡Estatua!"
+            },
+            "acolle": {
+              "gl": "Si, quietos coma estatuas!",
+              "es": "¡Sí, quietos como estatuas!"
+            },
+            "en": "Freeze! Carnival freeze!"
+          },
+          "unhaPalabra": {
+            "di": "Wings!",
+            "en": "Yes, blue wings! Flap wings!"
+          },
+          "formaTorcida": {
+            "di": "Bear flap wing!",
+            "en": "Yes, the bear flaps his wings!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you flap your wings like the polar bear?",
+          "axuda": {
+            "gl": "Bate ti os brazos primeiro e agarda. Se o fai, dille: «Flap, flap! Carnival freeze!».",
+            "es": "Bate tú los brazos primero y espera. Si lo hace, dile: «Flap, flap! Carnival freeze!»."
+          }
+        }
+      }
+    ]
+  }
 }

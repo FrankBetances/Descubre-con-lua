@@ -79,5 +79,248 @@
     "3_4.decembro.s1.snow"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.05",
+    "titulo": {
+      "gl": "Lúa e o cadeliño sen chubasqueiro",
+      "es": "Lúa y el perrito sin chubasquero"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Calle sencilla con lluvia en rayas finas. Lúa con chubasquero AMARILLO y la capucha puesta, mirando al cielo con las palmas hacia arriba; las gotas rebotan en la capucha. Cerca, un charco redondo. Nada más.",
+        "trama": {
+          "gl": "Plic, plic, plic… comeza a chover! Lúa pon o seu chubasqueiro amarelo e a carapucha. As pingas soan na carapucha coma un tambor: plic, plic, ploc! Lúa ri: gústalle moito a choiva.",
+          "es": "Plic, plic, plic… ¡empieza a llover! Lúa se pone su chubasquero amarillo y la capucha. Las gotas suenan en la capucha como un tambor: ¡plic, plic, ploc! Lúa se ríe: le gusta mucho la lluvia."
+        },
+        "lua": {
+          "onomatopeia": "Plic, plic, ploc!",
+          "ref": "frase.lua.3_4.05.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the rain? Touch the rain!",
+            "axuda": {
+              "gl": "Pasa os dedos polas raias da choiva e agarda.",
+              "es": "Pasa los dedos por las rayas de la lluvia y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you make rain with your fingers? Rain, rain, rain!",
+            "axuda": {
+              "gl": "Move os dedos por riba da cabeza e baixa amodo, coma choiva fina; logo tamborila nas pernas.",
+              "es": "Mueve los dedos por encima de la cabeza y baja despacio, como lluvia fina; luego tamborilea en las piernas."
+            }
+          },
+          "achegar": {
+            "en": "Do you have a raincoat?",
+            "axuda": {
+              "gl": "Fai coma se puxeses a carapucha e agarda un xesto ou un si.",
+              "es": "Haz como si te pusieras la capucha y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa puts on her raincoat. Rain, rain!",
+            "axuda": {
+              "gl": "Pon ti a carapucha imaxinaria e move os dedos coma choiva.",
+              "es": "Ponte tú la capucha imaginaria y mueve los dedos como lluvia."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The rain! Rain, rain, rain!",
+            "axuda": {
+              "gl": "Asente e tamborila cos dedos na lámina.",
+              "es": "Asiente y tamborilea con los dedos en la lámina."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Chove!",
+              "es": "¡Llueve!"
+            },
+            "acolle": {
+              "gl": "Si, chove moito!",
+              "es": "¡Sí, llueve mucho!"
+            },
+            "en": "Yes, it's raining! Rain, rain!"
+          },
+          "unhaPalabra": {
+            "di": "Raincoat!",
+            "en": "Yes, a yellow raincoat!"
+          },
+          "formaTorcida": {
+            "di": "Rain coat yellow!",
+            "en": "Yes, a yellow raincoat!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you make rain with your fingers?",
+          "axuda": {
+            "gl": "Fai ti primeiro a choiva cos dedos e agarda. Faga o que faga, devólvelle: «Rain! Rain, rain, rain!».",
+            "es": "Haz tú primero la lluvia con los dedos y espera. Haga lo que haga, devuélvele: «Rain! Rain, rain, rain!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Bajo un banco del parque, un perrito BLANCO con una oreja NEGRA, mojado y encogido, con gotas cayéndole. Lúa, con su chubasquero AMARILLO, inclina sobre él un paraguas AZUL abierto. Entre los dos, un charco.",
+        "trama": {
+          "gl": "Debaixo dun banco hai un cadeliño branco, mollado de todo. Non ten chubasqueiro e treme! Lúa abre o seu paraugas azul e pono enriba del. Xa non lle caen pingas: o cadeliño move o rabo.",
+          "es": "Debajo de un banco hay un perrito blanco, empapado. ¡No tiene chubasquero y tiembla! Lúa abre su paraguas azul y lo pone encima de él. Ya no le caen gotas: el perrito mueve la cola."
+        },
+        "lua": {
+          "onomatopeia": "Flap!",
+          "ref": "frase.lua.3_4.05.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little dog? Touch the dog!",
+            "axuda": {
+              "gl": "Sinala o cadeliño debaixo do banco e agarda.",
+              "es": "Señala al perrito debajo del banco y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you hold an umbrella? Here you go… your turn!",
+            "axuda": {
+              "gl": "Suxeita un paraugas imaxinario, pásallo á criatura coa man aberta e agarda.",
+              "es": "Sostén un paraguas imaginario, pásaselo a la criatura con la mano abierta y espera."
+            }
+          },
+          "achegar": {
+            "en": "Do you have an umbrella at home?",
+            "axuda": {
+              "gl": "Fai coma se abrises un paraugas e agarda un xesto ou un si.",
+              "es": "Haz como si abrieras un paraguas y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa opens the umbrella. Here you go, little dog!",
+            "axuda": {
+              "gl": "Fai ti o xesto de abrir o paraugas e inclínao cara á lámina.",
+              "es": "Haz tú el gesto de abrir el paraguas e inclínalo hacia la lámina."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The little dog! A wet little dog!",
+            "axuda": {
+              "gl": "Asente e acariña co dedo o cadeliño.",
+              "es": "Asiente y acaricia con el dedo al perrito."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Está mollado!",
+              "es": "¡Está mojado!"
+            },
+            "acolle": {
+              "gl": "Si, está moi mollado.",
+              "es": "Sí, está muy mojado."
+            },
+            "en": "Yes, the dog is wet! Here, an umbrella!"
+          },
+          "unhaPalabra": {
+            "di": "Umbrella!",
+            "en": "Yes, a big blue umbrella!"
+          },
+          "formaTorcida": {
+            "di": "Umbella!",
+            "en": "Yes, an umbrella! A blue umbrella!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "What does Lúa have?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala o paraugas ou fai o xesto, dille: «Yes, an umbrella! A blue umbrella!».",
+            "es": "Pregunta y espera. Si señala el paraguas o hace el gesto, dile: «Yes, an umbrella! A blue umbrella!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa con su chubasquero AMARILLO y el perrito BLANCO de oreja NEGRA saltan a la vez dentro de un charco grande; las salpicaduras forman una corona. El paraguas AZUL, abierto en el suelo a un lado. Sigue lloviendo un poco.",
+        "trama": {
+          "gl": "Xuntos chegan a unha poza enorme. Lúa mira o cadeliño… e o cadeliño mira a Lúa. Un, dous… e tres! Saltan á vez: chap, chap, chap! Saltan e saltan ao ritmo da choiva, mollados e moi contentos.",
+          "es": "Juntos llegan a un charco enorme. Lúa mira al perrito… y el perrito mira a Lúa. Un, dos… ¡y tres! Saltan a la vez: ¡chap, chap, chap! Saltan y saltan al ritmo de la lluvia, mojados y muy contentos."
+        },
+        "lua": {
+          "onomatopeia": "Chap, chap, chap!",
+          "ref": "frase.lua.3_4.05.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the big puddle? Touch the puddle!",
+            "axuda": {
+              "gl": "Debuxa co dedo a poza da lámina e agarda.",
+              "es": "Dibuja con el dedo el charco de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you jump in the puddle? One, two, three… jump!",
+            "axuda": {
+              "gl": "Debuxa unha poza no chan co pé e salta dentro cos dous pés.",
+              "es": "Dibuja un charco en el suelo con el pie y salta dentro con los dos pies."
+            }
+          },
+          "achegar": {
+            "en": "Do you jump in puddles?",
+            "axuda": {
+              "gl": "Dá un saltiño no sitio e agarda un xesto ou un si.",
+              "es": "Da un saltito en el sitio y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa jumps in the puddle. Jump! Splash!",
+            "axuda": {
+              "gl": "Dá ti un saltiño, sen dicir máis, e agarda.",
+              "es": "Da tú un saltito, sin decir más, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The puddle! A big, big puddle!",
+            "axuda": {
+              "gl": "Asente e debuxa unha poza grande no aire.",
+              "es": "Asiente y dibuja un charco grande en el aire."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Saltan!",
+              "es": "¡Saltan!"
+            },
+            "acolle": {
+              "gl": "Si, saltan na poza!",
+              "es": "¡Sí, saltan en el charco!"
+            },
+            "en": "Yes! They jump in the puddle!"
+          },
+          "unhaPalabra": {
+            "di": "Jump!",
+            "en": "Yes, jump in the puddle!"
+          },
+          "formaTorcida": {
+            "di": "Jumped puddle!",
+            "en": "Yes, they jumped in the puddle!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "A puddle! Jump…?",
+          "axuda": {
+            "gl": "Di «A puddle! Jump…» con cara de ir saltar e agarda. Se salta ou di «jump», celébrao: «A puddle! Jump, jump!».",
+            "es": "Di «A puddle! Jump…» con cara de ir a saltar y espera. Si salta o dice «jump», celébralo: «A puddle! Jump, jump!»."
+          }
+        }
+      }
+    ]
+  }
 }

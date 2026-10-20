@@ -69,5 +69,248 @@
     "frase.cmd.marzo.2_3.01"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.08",
+    "titulo": {
+      "gl": "Lúa e a sementiña",
+      "es": "Lúa y la semillita"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Corte del suelo como en un dibujo escolar: arriba, una franja de hierba verde; abajo, tierra marrón. Bajo la tierra, una semilla MARRÓN pequeña y redonda, encogida, y a su lado una lombriz ROSA (la misma de las láminas 2 y 3). Lúa, arriba en la hierba, pega la oreja al suelo.",
+        "trama": {
+          "gl": "Debaixo da terra está todo escuro e quentiño. Alí dorme unha sementiña pequena, encollida, moi quieta. Ao seu carón vive unha miñoca rosa. Lúa pega a orella ao chan e escoita: estará a espertar a sementiña?",
+          "es": "Debajo de la tierra todo está oscuro y calentito. Allí duerme una semillita pequeña, encogida, muy quieta. A su lado vive una lombriz rosa. Lúa pega la oreja al suelo y escucha: ¿se estará despertando la semillita?"
+        },
+        "lua": {
+          "onomatopeia": "Shhh… tic, tic.",
+          "ref": "frase.lua.2_3.08.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the tiny seed? Touch the seed!",
+            "axuda": {
+              "gl": "Sinala a sementiña baixo a terra e agarda.",
+              "es": "Señala la semillita bajo la tierra y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a tiny seed? Curl up small!",
+            "axuda": {
+              "gl": "Encóllete moito, abrazando os xeonllos, e non te movas.",
+              "es": "Encógete mucho, abrazando las rodillas, y no te muevas."
+            }
+          },
+          "achegar": {
+            "en": "Do you dig in the sand at the park?",
+            "axuda": {
+              "gl": "Fai coma se cavases coas mans e agarda un xesto ou un si.",
+              "es": "Haz como si cavaras con las manos y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa is a tiny seed. Shh!",
+            "axuda": {
+              "gl": "Encóllete ti, amodo, sen dicir máis.",
+              "es": "Encógete tú, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The seed! A tiny seed under the ground!",
+            "axuda": {
+              "gl": "Asente e pecha a man nun puño pequeno, coma unha semente.",
+              "es": "Asiente y cierra la mano en un puño pequeño, como una semilla."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Semente!",
+              "es": "¡Semilla!"
+            },
+            "acolle": {
+              "gl": "Si, unha sementiña!",
+              "es": "¡Sí, una semillita!"
+            },
+            "en": "A seed! A tiny seed!"
+          },
+          "unhaPalabra": {
+            "di": "Seed!",
+            "en": "Yes, a tiny seed!"
+          },
+          "formaTorcida": {
+            "di": "Tiny seedies!",
+            "en": "Yes, tiny seeds! Under the ground!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the tiny seed?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se a sinala, dille: «Yes, a tiny seed! Under the ground!».",
+            "es": "Pregunta y espera. Si la señala, dile: «Yes, a tiny seed! Under the ground!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Arriba, una nube GRIS grande con gotitas finas de llovizna cayendo; por un borde de la nube asoma un sol AMARILLO. Abajo, de la semilla MARRÓN sale un brote verde que asoma sobre la hierba. Lúa, con la mano en la frente, busca en el cielo; la lombriz ROSA asoma la cabeza junto al brote.",
+        "trama": {
+          "gl": "Cae o orballo, fino, fino, e a terra bebe a auga. Da sementiña sae un gromo verde que asoma por riba da herba. Pero o gromo quere sol para medrar… e unha nube gris tápao! Lúa busca no ceo, coa man na fronte.",
+          "es": "Cae el orballo, una lluvia finita, y la tierra bebe el agua. De la semillita sale un brote verde que asoma por encima de la hierba. Pero el brote quiere sol para crecer… ¡y una nube gris lo tapa! Lúa busca en el cielo, con la mano en la frente."
+        },
+        "lua": {
+          "onomatopeia": "Plic, plic, plic.",
+          "ref": "frase.lua.2_3.08.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the sun? Touch the yellow sun!",
+            "axuda": {
+              "gl": "Sinala o sol que asoma detrás da nube e agarda.",
+              "es": "Señala el sol que asoma detrás de la nube y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you look for the sun like Lúa? Where's the sun?",
+            "axuda": {
+              "gl": "Pon a man na fronte e mira arriba, amodo.",
+              "es": "Ponte la mano en la frente y mira arriba, despacio."
+            }
+          },
+          "achegar": {
+            "en": "Do you play outside when it rains?",
+            "axuda": {
+              "gl": "Fai chover cos dedos sobre as túas pernas e agarda un xesto ou un si.",
+              "es": "Haz llover con los dedos sobre tus piernas y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa looks for the sun. Where's the sun?",
+            "axuda": {
+              "gl": "Pon a man na fronte e busca ti no ceo, sen dicir máis.",
+              "es": "Ponte la mano en la frente y busca tú en el cielo, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! There is the sun! A little yellow sun!",
+            "axuda": {
+              "gl": "Asente e abre a man coma un sol.",
+              "es": "Asiente y abre la mano como un sol."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Alí, o sol!",
+              "es": "¡Allí, el sol!"
+            },
+            "acolle": {
+              "gl": "Si, alí está o sol!",
+              "es": "¡Sí, allí está el sol!"
+            },
+            "en": "There is the sun! The sun is here!"
+          },
+          "unhaPalabra": {
+            "di": "Sun!",
+            "en": "Yes, there's the sun!"
+          },
+          "formaTorcida": {
+            "di": "Where sun is?",
+            "en": "Where's the sun? There it is!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where's the sun?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o sinala, dille: «Yes, there's the sun!».",
+            "es": "Pregunta y espera. Si lo señala, dile: «Yes, there's the sun!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Cielo azul limpio con un sol AMARILLO grande. Donde estaba el brote, una flor de diente de león AMARILLA, grande y brillante, abierta. Lúa, de puntillas con los brazos abiertos en abanico, baila al lado de la flor. La lombriz ROSA, enroscada al pie de la flor, sonríe. Nada más.",
+        "trama": {
+          "gl": "A nube marcha e o sol quenta a terra. O gromo medra, medra, medra… e de súpeto ábrese unha flor amarela, grande e brillante! Lúa e a miñoca bailan arredor dela, de puntas, cos brazos abertos coma pétalos.",
+          "es": "La nube se va y el sol calienta la tierra. El brote crece, crece, crece… ¡y de repente se abre una flor amarilla, grande y brillante! Lúa y la lombriz bailan a su alrededor, de puntillas, con los brazos abiertos como pétalos."
+        },
+        "lua": {
+          "onomatopeia": "Pop!",
+          "ref": "frase.lua.2_3.08.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the flower? Touch the big bright flower!",
+            "axuda": {
+              "gl": "Pasa o dedo polos pétalos amarelos e agarda.",
+              "es": "Pasa el dedo por los pétalos amarillos y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you bloom like the flower? Up, up… bloom!",
+            "axuda": {
+              "gl": "Érguete amodo ata as puntas dos pés e abre os brazos.",
+              "es": "Levántate despacio hasta las puntas de los pies y abre los brazos."
+            }
+          },
+          "achegar": {
+            "en": "Do you smell the flowers in your park?",
+            "axuda": {
+              "gl": "Leva unha flor imaxinaria ao nariz, respira e agarda un xesto ou un si.",
+              "es": "Llévate una flor imaginaria a la nariz, respira y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa blooms like a flower. Bloom!",
+            "axuda": {
+              "gl": "Abre ti os brazos amodo, sen dicir máis.",
+              "es": "Abre tú los brazos despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! A flower! A big yellow flower!",
+            "axuda": {
+              "gl": "Asente e abre a man coma unha flor.",
+              "es": "Asiente y abre la mano como una flor."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha flor!",
+              "es": "¡Una flor!"
+            },
+            "acolle": {
+              "gl": "Si, unha flor amarela!",
+              "es": "¡Sí, una flor amarilla!"
+            },
+            "en": "A flower! A big bright flower!"
+          },
+          "unhaPalabra": {
+            "di": "Flower!",
+            "en": "Yes, a big bright flower!"
+          },
+          "formaTorcida": {
+            "di": "Flower bloomed big!",
+            "en": "Yes, the flower bloomed! A big flower!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you bloom like a flower?",
+          "axuda": {
+            "gl": "Abre ti os brazos primeiro, amodo, e agarda. Se o fai, dille: «Bloom! A big bright flower!».",
+            "es": "Abre tú los brazos primero, despacio, y espera. Si lo hace, dile: «Bloom! A big bright flower!»."
+          }
+        }
+      }
+    ]
+  }
 }

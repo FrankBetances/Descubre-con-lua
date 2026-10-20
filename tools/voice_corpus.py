@@ -693,6 +693,29 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                                  f"steam/{uid}/{audiencia}/{paso}/{campo}",
                                  seen)
 
+    # El microcuento de cada unidad (M5): lo que dice la adulta en inglés en
+    # cada lámina —la tríada, el guion de recast y la pregunta de casa— lleva
+    # su botón de voz en el visor. La frase de Lúa sale del registro, abajo. Lo
+    # que dice la criatura (`di`) se lee, no suena.
+    for unidade_json in sorted((content_dir / "unidades_mes").glob("curso_*/unidade.*.json")):
+        unidade = json.loads(unidade_json.read_text(encoding="utf-8"))
+        microcuento = unidade.get("microcuento")
+        if not isinstance(microcuento, dict):
+            continue
+        mid = microcuento.get("id", unidade_json.stem)
+        for n, lamina in enumerate(microcuento.get("laminas") or [], start=1):
+            triada = lamina.get("triada") or {}
+            recast = lamina.get("recast") or {}
+            textos = [(f"triada.{k}", (triada.get(k) or {}).get("en", ""))
+                      for k in ("sinalar", "imitar", "achegar")]
+            textos += [(f"recast.{k}", (recast.get(k) or {}).get("en", ""))
+                       for k in ("silencio", "sinala", "linguaCasa",
+                                 "unhaPalabra", "formaTorcida")]
+            textos.append(("casa", (lamina.get("casa") or {}).get("en", "")))
+            for campo, texto in textos:
+                _one(str(texto), "en", estilo_ingles(str(texto)),
+                     f"{mid}/{n}/{campo}", seen)
+
     # El registro de frases (M3.2): las unidades del mes citan estas frases por
     # id, así que todas tienen que sonar. Casi todas son el mismo texto que su
     # fuente y comparten grabación con ella; las propias —fórmulas y

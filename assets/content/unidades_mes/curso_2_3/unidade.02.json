@@ -75,5 +75,248 @@
     "frase.cmd.setembro.2_3.02"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.02",
+    "titulo": {
+      "gl": "Lúa e a xoaniña viaxeira",
+      "es": "Lúa y la mariquita viajera"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Jardín muy simple: césped verde liso y cielo claro. Lúa de pie en el centro, con camiseta NARANJA, mirando hacia arriba con los ojos muy abiertos. Sobre su cabeza, una mariquita ROJA con puntos negros (la misma de las láminas 2 y 3) y una línea de puntos que marca su camino desde la cabeza hasta el hombro.",
+        "trama": {
+          "gl": "Lúa xoga no xardín cando, de súpeto, algo lle pousa na cabeza. É unha xoaniña vermella con pintas negras! Camiña amodo, amodo, e baixa ata o ombreiro. Que cóxegas!",
+          "es": "Lúa juega en el jardín cuando, de repente, algo se le posa en la cabeza. ¡Es una mariquita roja con puntos negros! Camina despacio, despacio, y baja hasta el hombro. ¡Qué cosquillas!"
+        },
+        "lua": {
+          "onomatopeia": "Hee, hee, hee!",
+          "ref": "frase.lua.2_3.02.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the ladybug? Touch the little ladybug!",
+            "axuda": {
+              "gl": "Sinala a xoaniña na cabeza de Lúa e agarda.",
+              "es": "Señala la mariquita en la cabeza de Lúa y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you touch your head like Lúa? Head, shoulders!",
+            "axuda": {
+              "gl": "Toca a túa cabeza e despois os ombreiros, amodo.",
+              "es": "Tócate la cabeza y luego los hombros, despacio."
+            }
+          },
+          "achegar": {
+            "en": "Do you see ladybugs in the park?",
+            "axuda": {
+              "gl": "Fai coa man unha xoaniña que voa e agarda un xesto ou un si.",
+              "es": "Haz con la mano una mariquita que vuela y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa touches her head. Head!",
+            "axuda": {
+              "gl": "Toca ti a túa cabeza e o teu ombreiro, sen dicir máis.",
+              "es": "Tócate tú la cabeza y el hombro, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The ladybug! A little red ladybug!",
+            "axuda": {
+              "gl": "Asente e conta as pintas co dedo, amodo.",
+              "es": "Asiente y cuenta los puntos con el dedo, despacio."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Cabeza!",
+              "es": "¡Cabeza!"
+            },
+            "acolle": {
+              "gl": "Si, está na cabeza de Lúa!",
+              "es": "¡Sí, está en la cabeza de Lúa!"
+            },
+            "en": "On her head! The ladybug is on her head!"
+          },
+          "unhaPalabra": {
+            "di": "Head!",
+            "en": "Yes, Lúa's head! And shoulders!"
+          },
+          "formaTorcida": {
+            "di": "Ladybug on head Lúa!",
+            "en": "Yes, the ladybug is on Lúa's head!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the ladybug?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se a sinala, dille: «Yes, the ladybug! On Lúa's head!».",
+            "es": "Pregunta y espera. Si la señala, dile: «Yes, the ladybug! On Lúa's head!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa sentada en el césped con las piernas estiradas, mirando hacia abajo con cara de sorpresa, con la misma camiseta NARANJA. La mariquita ROJA con puntos negros está sobre una de sus rodillas, y la línea de puntos de su camino baja hacia los dedos de los pies. Sin más elementos.",
+        "trama": {
+          "gl": "Onde está a xoaniña? Lúa xa non a ve! Mira na cabeza, mira nos ombreiros… nada. Senta na herba e alí está: camiñando polos xeonllos, cara aos dedos dos pés!",
+          "es": "¿Dónde está la mariquita? ¡Lúa ya no la ve! Mira en la cabeza, mira en los hombros… nada. Se sienta en la hierba y allí está: ¡caminando por las rodillas, hacia los dedos de los pies!"
+        },
+        "lua": {
+          "onomatopeia": "Tap, tap, tap!",
+          "ref": "frase.lua.2_3.02.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are Lúa's knees? Touch her knees!",
+            "axuda": {
+              "gl": "Sinala os xeonllos de Lúa na lámina e agarda.",
+              "es": "Señala las rodillas de Lúa en la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you touch your knees softly? Tap, tap!",
+            "axuda": {
+              "gl": "Dálles golpiños suaves aos teus xeonllos cos dedos.",
+              "es": "Date golpecitos suaves en las rodillas con los dedos."
+            }
+          },
+          "achegar": {
+            "en": "Do you like tickles on your knees?",
+            "axuda": {
+              "gl": "Fai cóxegas suaves nos teus propios xeonllos e agarda.",
+              "es": "Hazte cosquillas suaves en tus propias rodillas y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa touches her knees. Knees and toes!",
+            "axuda": {
+              "gl": "Toca ti os teus xeonllos e os dedos dos pés, amodo.",
+              "es": "Tócate tú las rodillas y los dedos de los pies, despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Her knees! The ladybug walks to her toes!",
+            "axuda": {
+              "gl": "Asente e baixa o dedo do xeonllo aos dedos do pé, coma a xoaniña.",
+              "es": "Asiente y baja el dedo de la rodilla a los dedos del pie, como la mariquita."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Xeonllo!",
+              "es": "¡Rodilla!"
+            },
+            "acolle": {
+              "gl": "Si, no xeonllo!",
+              "es": "¡Sí, en la rodilla!"
+            },
+            "en": "On her knee! Knees and toes!"
+          },
+          "unhaPalabra": {
+            "di": "Toes!",
+            "en": "Yes, knees and toes!"
+          },
+          "formaTorcida": {
+            "di": "Knee and toeses!",
+            "en": "Yes, knees and toes!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where are your knees?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se se toca os xeonllos, dille: «Yes, your knees! Touch your knees!».",
+            "es": "Pregunta y espera. Si se toca las rodillas, dile: «Yes, your knees! Touch your knees!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa de pie, quieta como una estatua en mitad de un baile, con los brazos arriba y una pierna doblada, con la misma camiseta NARANJA. La mariquita ROJA con puntos negros posada en la punta de su nariz. Alrededor, tres notas musicales sencillas. Fondo de césped verde liso.",
+        "trama": {
+          "gl": "Lúa ten unha idea: se baila e logo queda moi quieta, a xoaniña poderá pousar. Baila, baila, sacode as mans… e queda coma unha estatua! A xoaniña voa e pousa na punta do seu nariz. Que festa!",
+          "es": "Lúa tiene una idea: si baila y luego se queda muy quieta, la mariquita podrá posarse. Baila, baila, sacude las manos… ¡y se queda como una estatua! La mariquita vuela y se posa en la punta de su nariz. ¡Qué fiesta!"
+        },
+        "lua": {
+          "onomatopeia": "Cha-cha-cha!",
+          "ref": "frase.lua.2_3.02.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the ladybug now? Touch Lúa's nose!",
+            "axuda": {
+              "gl": "Sinala o nariz de Lúa e agarda.",
+              "es": "Señala la nariz de Lúa y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you dance like Lúa? Shake your hands… freeze!",
+            "axuda": {
+              "gl": "Baila sacudindo as mans e para de súpeto en «freeze».",
+              "es": "Baila sacudiendo las manos y para de golpe en «freeze»."
+            }
+          },
+          "achegar": {
+            "en": "Do you dance at home?",
+            "axuda": {
+              "gl": "Move os ombreiros ao ritmo e agarda un xesto ou un si.",
+              "es": "Mueve los hombros al ritmo y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa dances and freezes. Freeze!",
+            "axuda": {
+              "gl": "Baila ti un pouco e para de súpeto, sen dicir máis.",
+              "es": "Baila tú un poco y para de golpe, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! On her nose! The ladybug is on Lúa's nose!",
+            "axuda": {
+              "gl": "Asente e toca suavemente o teu nariz.",
+              "es": "Asiente y tócate suavemente la nariz."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Quieta!",
+              "es": "¡Quieta!"
+            },
+            "acolle": {
+              "gl": "Si, quieta coma unha estatua!",
+              "es": "¡Sí, quieta como una estatua!"
+            },
+            "en": "Freeze! Dance and freeze!"
+          },
+          "unhaPalabra": {
+            "di": "Freeze!",
+            "en": "Yes, dance and freeze!"
+          },
+          "formaTorcida": {
+            "di": "Freezed!",
+            "en": "Yes, freeze! Lúa freezes!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you dance and freeze?",
+          "axuda": {
+            "gl": "Baila ti primeiro e para de súpeto; agarda. Se o fai, dille: «Yes! Dance, dance… freeze!».",
+            "es": "Baila tú primero y para de golpe; espera. Si lo hace, dile: «Yes! Dance, dance… freeze!»."
+          }
+        }
+      }
+    ]
+  }
 }

@@ -72,5 +72,248 @@
     "frase.cmd.febreiro.2_3.01"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.07",
+    "titulo": {
+      "gl": "Lúa e o tomate vermello",
+      "es": "Lúa y el tomate rojo"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Huerta muy simple: tierra marrón y plantas verdes en fila. En el centro, un mantel AMARILLO con círculos ROJOS estampados. Un ratoncito GRIS con orejas ROSAS (el mismo de las láminas 2 y 3) sujeta una cesta vacía. Lúa, con delantal VERDE, mira alrededor con la mano en la frente.",
+        "trama": {
+          "gl": "É hora de merendar na horta. O ratiño gris estende un mantel amarelo, cheo de círculos vermellos. Para a ensalada só falta unha cousa: un tomate vermello e redondo! Lúa e o ratiño póñense a buscar.",
+          "es": "Es hora de merendar en la huerta. El ratoncito gris extiende un mantel amarillo, lleno de círculos rojos. Para la ensalada solo falta una cosa: ¡un tomate rojo y redondo! Lúa y el ratoncito se ponen a buscar."
+        },
+        "lua": {
+          "onomatopeia": "Hmm, hmm?",
+          "ref": "frase.lua.2_3.07.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the red circles? Touch a red circle!",
+            "axuda": {
+              "gl": "Sinala un círculo vermello do mantel e agarda.",
+              "es": "Señala un círculo rojo del mantel y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you look for the tomato like Lúa? Where, where?",
+            "axuda": {
+              "gl": "Pon a man na fronte e mira a un lado e ao outro.",
+              "es": "Ponte la mano en la frente y mira a un lado y al otro."
+            }
+          },
+          "achegar": {
+            "en": "Do you like tomatoes?",
+            "axuda": {
+              "gl": "Fai coma se comeses algo rico e agarda un xesto ou un si.",
+              "es": "Haz como si comieras algo rico y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa finds a red circle. Red!",
+            "axuda": {
+              "gl": "Pon o dedo nun círculo vermello, amodo, sen dicir máis.",
+              "es": "Pon el dedo en un círculo rojo, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! A red circle! A red circle on the yellow cloth!",
+            "axuda": {
+              "gl": "Asente e busca co dedo outros círculos vermellos.",
+              "es": "Asiente y busca con el dedo otros círculos rojos."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Vermello!",
+              "es": "¡Rojo!"
+            },
+            "acolle": {
+              "gl": "Si, vermello coma un tomate!",
+              "es": "¡Sí, rojo como un tomate!"
+            },
+            "en": "Red! A red circle!"
+          },
+          "unhaPalabra": {
+            "di": "Red!",
+            "en": "Yes, a red circle!"
+          },
+          "formaTorcida": {
+            "di": "Red circo!",
+            "en": "Yes, a red circle!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is a red circle?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o sinala, dille: «Yes, a red circle! Red!».",
+            "es": "Pregunta y espera. Si lo señala, dile: «Yes, a red circle! Red!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano del suelo de la huerta: bajo una hoja verde grande asoma una tapa ROJA, redonda y plana. Lúa, con delantal VERDE, la toca con la punta del pie. El ratoncito GRIS de orejas ROSAS se ríe con las patitas en la barriga.",
+        "trama": {
+          "gl": "Debaixo dunha folla grande asoma algo vermello e redondo. Será o tomate? Lúa tócao coa punta do pé: plof! É plano, plano coma un prato. É a tapa vermella dun bote! O ratiño ri: iso non se come!",
+          "es": "Debajo de una hoja grande asoma algo rojo y redondo. ¿Será el tomate? Lúa lo toca con la punta del pie: ¡plof! Es plano, plano como un plato. ¡Es la tapa roja de un bote! El ratoncito se ríe: ¡eso no se come!"
+        },
+        "lua": {
+          "onomatopeia": "Plof!",
+          "ref": "frase.lua.2_3.07.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the red lid? Touch the red lid!",
+            "axuda": {
+              "gl": "Sinala a tapa vermella debaixo da folla e agarda.",
+              "es": "Señala la tapa roja debajo de la hoja y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you touch it with your foot? Tap!",
+            "axuda": {
+              "gl": "Toca o chan coa punta do pé, suave.",
+              "es": "Toca el suelo con la punta del pie, suave."
+            }
+          },
+          "achegar": {
+            "en": "Do you have red toys at home?",
+            "axuda": {
+              "gl": "Sinala algo vermello que teñas preto e agarda un xesto ou un si.",
+              "es": "Señala algo rojo que tengas cerca y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa touches it with her foot. Flat!",
+            "axuda": {
+              "gl": "Toca ti o chan coa punta do pé e pon a man plana.",
+              "es": "Toca tú el suelo con la punta del pie y pon la mano plana."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The lid! A red, flat lid!",
+            "axuda": {
+              "gl": "Asente e pasa a man plana pola mesa.",
+              "es": "Asiente y pasa la mano plana por la mesa."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Plano!",
+              "es": "¡Plano!"
+            },
+            "acolle": {
+              "gl": "Si, é plano coma un prato!",
+              "es": "¡Sí, es plano como un plato!"
+            },
+            "en": "Flat! Red and flat!"
+          },
+          "unhaPalabra": {
+            "di": "Flat!",
+            "en": "Yes, red and flat!"
+          },
+          "formaTorcida": {
+            "di": "Is flatty!",
+            "en": "Yes, it's flat! Red and flat!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the red lid?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se a sinala, dille: «Yes, the lid! Red and flat!».",
+            "es": "Pregunta y espera. Si la señala, dile: «Yes, the lid! Red and flat!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Una tomatera verde con un tomate ROJO grande y redondo colgando. El ratoncito GRIS de orejas ROSAS, de puntillas sobre la cesta, lo coge con las dos patas. Lúa, con delantal VERDE, sentada en el mantel AMARILLO con círculos ROJOS, sujeta un plato con rodajas de tomate. Fondo liso.",
+        "trama": {
+          "gl": "Alí, no alto da tomateira, hai un tomate vermello, grande e redondo coma unha bóla. Ese si! O ratiño cólleo, Lúa córtao en rodaxas e sentan no mantel a merendar. Ñam, ñam, que rico!",
+          "es": "Allí, en lo alto de la tomatera, hay un tomate rojo, grande y redondo como una bola. ¡Ese sí! El ratoncito lo coge, Lúa lo corta en rodajas y se sientan en el mantel a merendar. ¡Ñam, ñam, qué rico!"
+        },
+        "lua": {
+          "onomatopeia": "Yum, yum!",
+          "ref": "frase.lua.2_3.07.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the tomato? Touch the red tomato!",
+            "axuda": {
+              "gl": "Sinala o tomate da tomateira e agarda.",
+              "es": "Señala el tomate de la tomatera y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you eat like the little mouse? Yum, yum!",
+            "axuda": {
+              "gl": "Leva as mans á boca e mastiga amodo.",
+              "es": "Llévate las manos a la boca y mastica despacio."
+            }
+          },
+          "achegar": {
+            "en": "Do you eat tomatoes at home?",
+            "axuda": {
+              "gl": "Fai coma se mordeses un tomate e agarda un xesto ou un si.",
+              "es": "Haz como si mordieras un tomate y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa eats the tomato. Yum!",
+            "axuda": {
+              "gl": "Fai ti o xesto de comer, amodo, sen dicir máis.",
+              "es": "Haz tú el gesto de comer, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! A red tomato! Big and round!",
+            "axuda": {
+              "gl": "Asente e fai unha bóla redonda coas mans.",
+              "es": "Asiente y haz una bola redonda con las manos."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Tomate!",
+              "es": "¡Tomate!"
+            },
+            "acolle": {
+              "gl": "Si, un tomate redondo!",
+              "es": "¡Sí, un tomate redondo!"
+            },
+            "en": "A red tomato! Round and red!"
+          },
+          "unhaPalabra": {
+            "di": "Tomato!",
+            "en": "Yes, a red tomato!"
+          },
+          "formaTorcida": {
+            "di": "Tomatoes red round!",
+            "en": "Yes, a round red tomato!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the red tomato?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o sinala, dille: «Yes, a red tomato! Yum!».",
+            "es": "Pregunta y espera. Si lo señala, dile: «Yes, a red tomato! Yum!»."
+          }
+        }
+      }
+    ]
+  }
 }
