@@ -9,9 +9,9 @@ sin que Frank lo decida.
 
 ## 1. Cómo se ejecuta
 
-- **No se para hasta terminar.** Se trabaja fase tras fase. Solo se espera
-  cuando hay una pregunta abierta a Frank en la tabla del apartado 4, y
-  mientras tanto se sigue con lo que no depende de ella.
+- **No se para hasta terminar.** Se trabaja fase tras fase. Si surge una
+  pregunta nueva que solo Frank puede decidir, se le hace en ese momento y se
+  sigue con lo que no depende de ella.
 - **Cada fase acaba en `main`.** Con las capas completas, gates y CI en verde,
   y capturas gl/es mirando lo que Frank verá. Rama `pedagogia`, PR y merge.
 - **El informe de cada fase empieza por lo que se ve en la app**, por su
@@ -39,14 +39,14 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 | Unidades temáticas con objetivos y contraste fonético | vocabulario | 50 unidades; contraste en 2; objetivos en 0 | **F4** |
 | Guía de casa: estable, por edad y por mes | arquitectura 8 (sobre los cinco) | No existe (`hogar` vacío en las 50) | **F5** |
 | Marco normativo: OBX5, CA2.7 por nivel, un período semanal en 2.º ciclo, XADE | `curriculo-ingles-infantil-galicia.txt` | Citas del Decreto 150/2022; criterios de 1.º ciclo vacíos | **F6** |
-| Ratios de 3 adultos y subgrupos | sparkling | No está | **Pregunta P3** |
-| Marioneta-ancla de habla solo en L2 | sparkling | Lúa existe, pero no habla solo en inglés | **Pregunta P4** |
-| Registro objetivo (LENA, pruebas) | sparkling | No está; la app no guarda datos de criaturas | **Pregunta P5** |
+| Ratios de 3 adultos y subgrupos | sparkling | No está | P3: una adulta |
+| Marioneta-ancla de habla solo en L2 | sparkling | Lúa existe, pero en Academy habla en gl/es | P4: **F2** (Lúa solo en inglés) |
+| Registro objetivo (LENA, pruebas) | sparkling | No está; la app no guarda datos de criaturas | P5: **F2** (se explica) |
 
 ## 3. Fases, en orden de lo que Frank verá antes
 
 **F1 · Los microcuentos, abiertos (M5.6, M5.8)**
-- Láminas: las 137 que faltan, en el estilo que Frank elija (P1).
+- Láminas: las tres de muestra pasan a la Lúa B y se dibujan las 137 que faltan.
 - Caminos: Explorar → Cuentos (casa, una pregunta por lámina) y Modo Aula →
   tarjeta del mes (aula, tríada y recast), en los cinco cursos desde 2-3.
 - Hecho cuando: los 40 se abren por los dos caminos, en gl y es, con
@@ -69,8 +69,8 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
   dialógico (el microcuento), taller TPR (las órdenes y la realia de la
   unidad) y despedida (*Mystery Bag* con los objetos del mes y la canción de
   despedida). Cada fase con sus minutos, su espera y su recast.
-- La asamblea corta de 4 fases se queda como opción diaria, si Frank lo
-  confirma (P2).
+- La asamblea corta de 4 fases se queda como opción diaria (P2). En 1.º
+  ciclo es una sesión propuesta; en 2.º, el período semanal de inglés.
 - Hecho cuando: Modo Aula → la sesión de 45 min se recorre entera en gl y es,
   en los cursos que Frank fije.
 
@@ -87,27 +87,24 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 - La nota para las casas trae el reto de la semana (M4.4).
 
 **F6 · Normativa, inglés y papel (M1.1, O7, O8)**
-- Los criterios de cada unidad, con la normativa contrastada (P6).
+- Los criterios de cada unidad, del texto curricular de Frank y pendientes de contrastar con el DOG (P6).
 - O7: los recursos de inglés abren por el núcleo; las dinámicas, la ciencia,
   las láminas y los juegos citan el registro; el planificador muestra el área
   por su nombre oficial.
 - O8: qué observar sin casilla; manual, imprimibles y README al día, con el
   PDF mirado página a página.
 
-## 4. Preguntas abiertas a Frank
+## 4. Decisiones de Frank (20/10/2026)
 
-Hasta que conteste, no se decide por él; se trabaja en lo que no depende de
-ellas.
-
-| | Pregunta | Afecta a |
-| --- | --- | --- |
-| P1 | Lúa de las láminas: **A** (marrón, la de los cuentos) o **B** (la del icono) | F1 |
-| P2 | En **1.º ciclo (0-3)**, que no tiene franja de inglés: ¿también la sesión de 45 min, o la asamblea corta? En 2.º ciclo, ¿la sesión de 45 min es el período semanal de inglés? | F3 |
-| P3 | Ratio de 3 adultos y subgrupos de 4-6: ¿se propone en la app como organización recomendada, o se adapta a una adulta? | F3 |
-| P4 | ¿Lúa hace de marioneta-ancla que solo habla en inglés? Choca con la frase de Lúa dentro de una trama en gl/es (D2) | F1, F3 |
-| P5 | LENA y pruebas estandarizadas: la app no guarda datos de criaturas. ¿Se explican como referencia del modelo o no entran? | F2 |
-| P6 | Criterios de evaluación: el DOG no es accesible desde aquí. ¿Se toman del texto curricular de Frank (CA2.7 por nivel) mientras tanto? | F6 |
-| P7 | D7, la lista de práctica de la adulta: añade una clave guardada. ¿Entra? | F2 |
+| | Pregunta | Decisión de Frank | Afecta a |
+| --- | --- | --- | --- |
+| P1 | Lúa de las láminas | **B, la del icono** (`assets/brand/palette.json`) | F1 |
+| P2 | Dónde va la sesión de 45 min | **Ambos ciclos.** En 2.º ciclo es el período semanal de inglés; en 1.º ciclo, una sesión propuesta. La asamblea corta se queda como opción diaria | F3 |
+| P3 | Ratio de 3 adultos | **Solo una adulta**: la sesión se escribe para una adulta y no se mencionan ratios | F3 |
+| P4 | Lúa como marioneta-ancla | **Sí: Lúa solo habla en inglés**, en todas sus apariciones; la trama y las ayudas las dice la adulta en gl/es | F1, F2, F3 |
+| P5 | LENA y pruebas | **Se explican en «El modelo», no se usan**; la app no mide ni guarda nada | F2 |
+| P6 | Criterios de evaluación | **Del texto de Frank** (CA2.7 por nivel), marcados como pendientes de contrastar con el DOG | F6 |
+| P7 | Lista de práctica de la adulta | **Entra**, con la política de privacidad y los dos gates en el mismo cambio; Frank actualiza el formulario de Play Console | F2 |
 
 ## 5. Lo que ya está hecho y no se repite
 
