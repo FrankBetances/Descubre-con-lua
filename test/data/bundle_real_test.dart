@@ -7,7 +7,7 @@ import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/widgets/aviso_contenido_ilegible.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
-import 'package:descubre_con_lua/data/repositories/ritual_repository.dart';
+import 'package:descubre_con_lua/data/models/cancion_pulso_model.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart';
@@ -50,19 +50,14 @@ void main() {
       expect(meses.last.orden, 10);
     });
 
-    test('fases.json se lee del bundle y trae las seis fases', () async {
-      // Mismo riesgo que el calendario: `assets/content/asamblea/` es un
-      // directorio nuevo, y si se olvida en pubspec la consigna desaparece sin
-      // que nadie se entere. Aquí se entera este test.
-      final raw = await rootBundle.loadString(RitualAsamblea.asset);
-      final ritual = RitualAsamblea.desdeJson(raw);
-      expect(ritual.fases, hasLength(6));
-      expect(ritual.minutosTotales, greaterThan(0));
-      for (final fase in ritual.fases) {
-        expect(fase.consigna.gl, isNotEmpty,
-            reason: '${fase.clave} sen consigna en galego');
-        expect(fase.consigna.es, isNotEmpty,
-            reason: '${fase.clave} sin consigna en castellano');
+    test('as cancións con pulso lense do paquete', () async {
+      // `assets/content/cancions/` es un directorio nuevo (M4.3): si se olvida
+      // en pubspec, Recursos se queda sin canciones sin que nadie se entere.
+      final raw = await rootBundle.loadString(CancionsConPulso.asset);
+      final cancions = CancionsConPulso.desdeJson(raw);
+      expect(cancions, hasLength(10));
+      for (final c in cancions) {
+        expect(c.cancion.letraConPulsos.hasParity, isTrue, reason: c.id);
       }
     });
 

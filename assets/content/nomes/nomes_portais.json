@@ -363,6 +363,16 @@
               "es": "Una para cada día, de lunes a viernes."
             },
             {
+              "id": "cancions",
+              "gl": "Cancións con pulso",
+              "es": "Canciones con pulso"
+            },
+            {
+              "id": "cancionsDi",
+              "gl": "Dez cancións co pulso debuxado, para marcalo co corpo.",
+              "es": "Diez canciones con el pulso dibujado, para marcarlo con el cuerpo."
+            },
+            {
               "id": "ciencia",
               "gl": "Ciencia coas mans",
               "es": "Ciencia con las manos",

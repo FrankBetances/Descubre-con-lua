@@ -44,6 +44,11 @@ class NomesDocentes {
   static const dinamicasDi = LocalizedString(
       gl: 'Unha para cada día, de luns a venres.',
       es: 'Una para cada día, de lunes a viernes.');
+  static const cancions =
+      LocalizedString(gl: 'Cancións con pulso', es: 'Canciones con pulso');
+  static const cancionsDi = LocalizedString(
+      gl: 'Dez cancións co pulso debuxado, para marcalo co corpo.',
+      es: 'Diez canciones con el pulso dibujado, para marcarlo con el cuerpo.');
   static const ciencia =
       LocalizedString(gl: 'Ciencia coas mans', es: 'Ciencia con las manos');
 

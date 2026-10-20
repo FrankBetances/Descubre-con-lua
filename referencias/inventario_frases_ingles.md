@@ -27,7 +27,6 @@ y comparte la grabación.
 | calendario/curriculo_50_meses.json (léxico, órdenes y frase del mes) | 450 | Desde M3.9 el calendario lee la unidad; lo lee aún el Planificador, hasta M7.3 |
 | cuentos: frase TPR de los cuentos y de las historias | 303 | M5: el cuento de la semana conserva su frase; el microcuento cita el registro |
 | laminas/banco200_laminas.json (palabra y acción) | 410 | M7.2: las láminas pasan a citar el registro |
-| unidades/juega.* (asamblea de seis pasos) | 10 | Se retira en M4.3 |
 
 Fuera del registro, a propósito: el corpus de 4.000 palabras de uso habitual y
 las colocaciones son consulta de la persona adulta, no currículo.

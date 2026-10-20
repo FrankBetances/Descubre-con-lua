@@ -9,7 +9,6 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
-import '../../../data/models/unidad_model.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
 import '../../../data/models/progresion_model.dart';
 import '../../../data/models/steam_model.dart';
@@ -21,7 +20,6 @@ import '../widgets/asemblea_do_dia.dart';
 import '../widgets/dia_no_fogar.dart';
 import '../widgets/palabras_do_dia.dart';
 import '../../academy/views/guia_atencion_screen.dart';
-import '../../juega/views/asamblea_guiada_screen.dart';
 import '../../premios/premios_repository.dart';
 import '../widgets/boton_lanzar_sesion.dart';
 import '../widgets/tarjeta_mes_curricular.dart';
@@ -382,16 +380,21 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     widget.onLanguageChanged?.call(newLang);
   }
 
-  /// La unidad de aula de ese mes, o `null` si todavía no está escrita.
+  /// El grupo de la asamblea de cuatro fases de la tarjeta: el de su curso,
+  /// ese mes. `null` si no hay asamblea escrita para él.
   ///
-  /// Antes esto caía en `unidades.first` cuando no encontraba el mes, y como
-  /// solo existe UNA unidad, los diez meses abrían la misma asamblea del Mar
-  /// de Vigo. Un calendario de diez meses sobre contenido de uno. Ahora, si no
-  /// hay unidad, no hay botón: el mes se ve «en preparación» y no miente.
-  Unidad? _unidadDe(MesCurricular mes) {
-    final id = mes.unidadId;
-    if (id == null) return null;
-    return widget.repository?.getUnidadById(id);
+  /// Antes este botón abría la asamblea de seis pasos de `unidades/juega.*`,
+  /// un solo tramo 0-3 para todos los cursos; se retiró en M4.3 (D5).
+  GrupoDaAsemblea? _grupoDe(MesCurricular mes) {
+    final repo = widget.repository;
+    if (repo == null) return null;
+    for (final g in gruposDaAsembleaDoDia(repo, mes.mesCalendario)) {
+      if (cursoTprDoGrupo[g.clave] == (mes.cursoId ?? _cursoAberto) &&
+          g.disponible) {
+        return g;
+      }
+    }
+    return null;
   }
 
   void _lanzarSesion(MesCurricular mes, bool esDocente) {
@@ -399,22 +402,22 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       widget.onIniciarSesion!(mes, esDocente);
       return;
     }
-
-    final unidad = _unidadDe(mes);
-    if (unidad == null) return;
-
-    Navigator.of(context).push(
-      RutaLua(
-        de: context,
-        builder: (context) => AsambleaGuiadaScreen(
-          unidad: unidad,
-          calendario: widget.store,
-          audioService: widget.audioService,
-          premios: widget.premios,
-          initialLanguage: _language,
-          onLanguageChanged: _onToggleLanguage,
-        ),
-      ),
+    final repo = widget.repository;
+    final grupo = _grupoDe(mes);
+    if (repo == null || grupo == null) return;
+    // La misma puerta que el botón del grupo en la ficha del día: la
+    // asamblea de cuatro fases, en la semana y el día elegidos.
+    abrirAsembleaDoDia(
+      context,
+      repo: repo,
+      grupo: grupo,
+      mesCalendario: mes.mesCalendario,
+      semana: _semana,
+      dia: _dia,
+      language: _language,
+      audioService: widget.audioService,
+      premios: widget.premios,
+      calendario: widget.store,
     );
   }
 
@@ -1471,6 +1474,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                         dia: _dia,
                         language: _language,
                         audioService: widget.audioService,
+                        premios: widget.premios,
+                        calendario: widget.store,
                       )
                   : null,
               style: OutlinedButton.styleFrom(
@@ -1577,7 +1582,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (_unidadDe(mes) != null)
+          if (_grupoDe(mes) != null)
             BotonLanzarSesion(
               key: const Key('boton_iniciar_sesion_aula'),
               label: _iniciarAula.resolve(_language),

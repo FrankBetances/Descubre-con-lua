@@ -24,8 +24,7 @@ Una orden o una frase entra aunque su texto sea también palabra del banco:
 de 3-4 es la palabra con el gesto de 3-4. Lo que se lleva de su fuente es el
 gesto. El mismo texto con el mismo estilo comparte grabación, así que no
 cuesta audio nuevo. Lo que no entra todavía por otra razón (las palabras del calendario de 50 meses, que
-solo lee ya el Planificador, hasta M7.3; la frase TPR de los cuentos, M5; las láminas, M7.2; la
-asamblea vieja, M4.3) queda en el inventario con su destino:
+solo lee ya el Planificador, hasta M7.3; la frase TPR de los cuentos, M5; las láminas, M7.2) queda en el inventario con su destino:
 `referencias/inventario_frases_ingles.md`.
 
 Hasta M7.2 las fuentes siguen siendo la verdad y el registro se deriva de
@@ -131,7 +130,6 @@ def pendentes() -> list[tuple[str, int, str]]:
     contos = ler(CONTENIDO / "cuentos" / "banco100_cuentos.json")
     historias = ler(CONTENIDO / "cuentos" / "historias_progresivas.json")
     laminas = ler(CONTENIDO / "laminas" / "banco200_laminas.json")
-    vellas = sorted((CONTENIDO / "unidades").glob("juega.*.json"))
     return [
         ("calendario/curriculo_50_meses.json (léxico, órdenes y frase del mes)",
          sum(len(m["ingles"]["lexico"]) + len(m["ingles"]["tpr"]) + 1
@@ -143,8 +141,6 @@ def pendentes() -> list[tuple[str, int, str]]:
          "M5: el cuento de la semana conserva su frase; el microcuento cita el registro"),
         ("laminas/banco200_laminas.json (palabra y acción)", 2 * len(laminas),
          "M7.2: las láminas pasan a citar el registro"),
-        ("unidades/juega.* (asamblea de seis pasos)", len(vellas),
-         "Se retira en M4.3"),
     ]
 
 

@@ -33,9 +33,11 @@ def sync_content(check_only: bool) -> list[str]:
     """Rewrites every `audioAsset` block to the id derived from its own text."""
     stale: list[str] = []
 
-    for path in sorted((CONTENT_DIR / "unidades").glob("*.json")):
-        raw = path.read_text(encoding="utf-8")
-        data = json.loads(raw)
+    # Las canciones con pulso (M4.3): la voz de cada una es su letra recitada,
+    # así que su `audioAsset` sale del texto de la letra.
+    path = CONTENT_DIR / "cancions" / "cancions_con_pulso.json"
+    if path.exists():
+        data = json.loads(path.read_text(encoding="utf-8"))
         changed = False
 
         def derive(text_node: object, style: str) -> dict[str, str] | None:
@@ -49,24 +51,13 @@ def sync_content(check_only: bool) -> list[str]:
                 out[lang] = f"assets/voice/{voice_id(style, value, lang)}.m4a"
             return out
 
-        cancion = data.get("cancionPulso") or data.get("cancion")
-        if isinstance(cancion, dict):
-            derived = derive(
-                cancion.get("letraConPulsos") or cancion.get("letra_con_pulsos"),
-                "tutor",
-            )
-            if derived and cancion.get("audioAsset") != derived:
-                stale.append(f"{path.name}: cancionPulso.audioAsset")
-                cancion["audioAsset"] = derived
-                changed = True
-
-        for item in data.get("vocabulario") or []:
-            if not isinstance(item, dict):
+        for cancion in data.get("cancions") or []:
+            if not isinstance(cancion, dict):
                 continue
-            derived = derive(item.get("palabra"), "slow")
-            if derived and item.get("audioAsset") != derived:
-                stale.append(f"{path.name}: vocabulario/{item.get('id', '?')}.audioAsset")
-                item["audioAsset"] = derived
+            derived = derive(cancion.get("letraConPulsos"), "tutor")
+            if derived and cancion.get("audioAsset") != derived:
+                stale.append(f"{path.name}: {cancion.get('id', '?')}.audioAsset")
+                cancion["audioAsset"] = derived
                 changed = True
 
         if changed and not check_only:

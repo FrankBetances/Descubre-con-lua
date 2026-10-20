@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/fade_audio_coordinator.dart';
+import '../../../core/storage/calendario_store.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
@@ -14,6 +15,8 @@ import '../../../data/models/asamblea_segundo_ciclo_model.dart'
 import '../../../data/models/ponte_ao_dia_model.dart';
 import '../../../data/models/progresion_model.dart';
 import '../../../data/models/rexistro_frases_model.dart';
+import '../../premios/premios_model.dart';
+import '../../premios/premios_repository.dart';
 
 /// El reproductor de la asamblea, el mismo para los dos ciclos.
 ///
@@ -76,6 +79,17 @@ class AsambleaPlayerScreen extends StatefulWidget {
   /// Los segundos de la espera visible del reto (M4.2), de la progresión.
   final int esperaSegundos;
 
+  /// La nota para las casas, que se abre al rematar (M4.3). Sin ella,
+  /// «Rematar» solo cierra.
+  final WidgetBuilder? notaParaCasas;
+
+  /// Lo que cuenta la asamblea al rematarla: los premios de la docente y el
+  /// calendario del aula. Era la asamblea de seis pasos la que lo hacía; al
+  /// retirarla (M4.3) lo hace esta. Solo se guarda la cuenta y el día, nada
+  /// de ninguna crianza ni de la sesión.
+  final PremiosRepository? premios;
+  final CalendarioStore? calendario;
+
   /// Desde 3-4 años, las fórmulas del mes; van en la apertura.
   final List<PezaDaUnidade> formulas;
 
@@ -100,6 +114,9 @@ class AsambleaPlayerScreen extends StatefulWidget {
     this.ordenes = const {},
     this.formulas = const [],
     this.reactivar = const [],
+    this.notaParaCasas,
+    this.premios,
+    this.calendario,
   });
 
   @override
@@ -108,6 +125,8 @@ class AsambleaPlayerScreen extends StatefulWidget {
 
 class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
   static const Color _fondo = Color(0xFF10151C);
+
+  bool _rematando = false;
   static const Color _superficie = Color(0xFF1A222C);
   static const Color _borde = Color(0xFF2C3846);
   static const Color _textoPrincipal = Color(0xFFF2F5F7);
@@ -152,6 +171,30 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
     _audio?.stopImmediate();
     _audio?.dispose();
     super.dispose();
+  }
+
+  /// Suma la asamblea a los premios y al calendario del aula, y lo dice.
+  Future<void> _contar() async {
+    if (widget.premios == null && widget.calendario == null) return;
+    final nuevas = await widget.premios?.registrar(
+          Perfil.docente,
+          EventoPremio.asamblea,
+        ) ??
+        const <Insignia>[];
+    // Solo el lado del aula: lo que pase en cada casa lo marca cada casa.
+    await widget.calendario?.registrarAula();
+    if (!mounted) return;
+    final isGl = widget.language == AppLanguage.gl;
+    final mensaje = nuevas.isNotEmpty
+        ? (isGl
+            ? 'Asemblea completada. Gañaches: ${nuevas.first.titulo.gl}'
+            : 'Asamblea completada. Ganaste: ${nuevas.first.titulo.es}')
+        : (isGl
+            ? 'Asemblea completada. Só se garda a conta, nada da sesión.'
+            : 'Asamblea completada. Solo se guarda la cuenta, nada de la sesión.');
+    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+      SnackBar(content: Text(mensaje), backgroundColor: AppTheme.calmSage),
+    );
   }
 
   Future<void> _parar() async {
@@ -296,7 +339,21 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
                   }
                   // «Rematar» acaba la asamblea: no se abandona nada, así que
                   // no pregunta. Solo pregunta salir a medias (la X o atrás).
-                  Navigator.of(context).pop();
+                  // Con nota para las casas, la asamblea acaba en ella.
+                  // Un segundo toque mientras se guarda contaría dos veces.
+                  if (_rematando) return;
+                  _rematando = true;
+                  await _parar();
+                  await _contar();
+                  if (!context.mounted) return;
+                  final nota = widget.notaParaCasas;
+                  if (nota == null) {
+                    Navigator.of(context).pop();
+                    return;
+                  }
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: nota),
+                  );
                 },
               ),
             ],

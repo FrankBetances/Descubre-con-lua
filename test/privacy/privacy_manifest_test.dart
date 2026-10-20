@@ -134,8 +134,8 @@ void main() {
           reason: 'pubspec.yaml must declare flutter SDK dependency');
 
       // Verify offline asset paths are configured
-      expect(content, contains('assets/content/unidades/'),
-          reason: 'pubspec.yaml must declare assets/content/unidades/');
+      expect(content, contains('assets/content/unidades_mes/'),
+          reason: 'pubspec.yaml must declare assets/content/unidades_mes/');
       expect(content, contains('assets/content/capsulas/'),
           reason: 'pubspec.yaml must declare assets/content/capsulas/');
       expect(content, contains('assets/audio/'),

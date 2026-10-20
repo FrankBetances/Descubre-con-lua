@@ -155,14 +155,15 @@ comprobado y nombra el comando que lo comprobó.
 
 | | |
 | --- | --- |
-| Contenido · primer ciclo | 10 unidades de aula, una por mes del curso · 6 fases de asamblea |
+| Contenido · primer ciclo | 20 asambleas de 4 fases, una por mes del curso en cada tramo (0-2 y 2-3 años) |
+| Canciones con pulso | 10, una por mes del curso, en Recursos del Portal Docentes, con el pulso dibujado |
 | Calendario e inglés | 50 meses de calendario (5 cursos × 10, de 0-2 a 5-6 años) · 4.000 palabras inglesas, 800 por curso, cinco nuevas al día · 63 colocaciones · 44 fonemas |
 | Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
 | Cuentos | 303: 200 de la semana —uno por semana de cada curso, de septiembre a junio—, cada uno con las 20 palabras inglesas de su semana dentro del texto, y 103 más que no son de ninguna semana |
 | Ponte al día | 250 palabras de cursos o meses anteriores que dan por sabidas 86 de las 133 órdenes de las asambleas y 68 de los 303 retos de los cuentos, revisadas a mano, cada una con su gesto y su voz |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
 | STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, cada una en versión de aula y de casa |
-| Voz | 22.886 locuciones grabadas dentro de la app: 15.154 en el módulo base (1.175 gl + 1.174 es + 12.805 en) y 7.732 en el paquete de voz de instalación, los significados en gallego (3.865) y castellano (3.867) de las palabras inglesas del curso |
+| Voz | 22.263 locuciones grabadas dentro de la app: 14.531 en el módulo base (852 gl + 852 es + 12.827 en) y 7.732 en el paquete de voz de instalación, los significados en gallego (3.865) y castellano (3.867) de las palabras inglesas del curso |
 | Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 | Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |
 | Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |
@@ -273,11 +274,10 @@ y para la familia, nunca para captar la atención infantil**. Se pinta siempre
 desde la misma rejilla de caracteres que rinde el icono del lanzador y el
 splash (`assets/brand/lua_*.txt`), así que no puede separarse del icono.
 
-Dentro de una actividad sale en tres sitios, y en ninguno más:
+Dentro de una actividad sale en dos sitios:
 
 | Dónde | Qué hace |
 | --- | --- |
-| El cuento de la asamblea | Es la protagonista: las 30 láminas de escena la dibujan y el texto de las diez unidades la nombra |
 | El cierre de cada cápsula de Academy | Una frase —`luaDice` en el JSON— que convierte la idea de la cápsula en **un** gesto para hoy. Va la última, detrás de la reflexión: la cápsula se cuenta como leída al responderla, así que el premio cae primero y la gata cierra |
 | La nota para las casas | Encabeza la nota que cruza del aula al hogar, que es la única pantalla que habla de ella por su nombre |
 
@@ -422,11 +422,11 @@ El texto que manda es [LICENSE.md](LICENSE.md).
 ```
 lib/core/       tema, idiomas, audio (servicio, reproductor nativo, ids de voz)
 lib/data/       modelos, cargador, repositorio, validador de contenido
-lib/features/   juega/ (aula, asamblea de 6 fases, metrónomo, formación docente)
+lib/features/   juega/ (aula, asamblea de 4 fases, canciones con pulso, formación docente)
                 academy/ (familias) · calendario/ (escola·fogar, 0-6 anos)
                 english/ (palabras, repaso, escoita, colocacións, fonemas)
                 premios/ (insignias y medallas) · bienvenida/ · creditos/
-assets/content/ unidades, cápsulas, asamblea y premios en JSON, bilingües
+assets/content/ unidades del mes, cápsulas, asambleas, canciones y premios en JSON, bilingües
                 calendario/ (10 meses, los 50 del trayecto y la guía de inglés en casa)
                 tpr/ (el inglés: 5 cursos de 800 palabras, cinco al día)
 assets/voice/   grabaciones neuronales (generadas en CI)

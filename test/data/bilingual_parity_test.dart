@@ -3,27 +3,35 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/data/validators/content_validator.dart';
 
+/// Las canciones con pulso y las 50 unidades del mes.
+List<String> contidoDoAula() => [
+      'assets/content/cancions/cancions_con_pulso.json',
+      ...Directory('assets/content/unidades_mes')
+          .listSync(recursive: true)
+          .whereType<File>()
+          .map((f) => f.path)
+          .where((p) => p.endsWith('.json'))
+          .toList()
+        ..sort(),
+    ];
+
 void main() {
   final validator = ContentValidator();
 
   group('Bilingual Parity Tests (1:1 Galego / Castellano)', () {
-    test('verifies 100% 1:1 bilingual parity on juega.mar.01.json', () {
-      final file = File('assets/content/unidades/juega.mar.01.json');
-      expect(file.existsSync(), isTrue, reason: 'juega.mar.01.json must exist');
-
-      final jsonMap =
-          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
-      final List<String> errors = [];
-      validator.checkBilingualParity(jsonMap,
-          path: 'juega.mar.01', errors: errors);
-
-      expect(
-        errors,
-        isEmpty,
-        reason:
-            'juega.mar.01.json failed bilingual parity check:\n${errors.join("\n")}',
-      );
-    });
+    // Las diez unidades `juega.*` se retiraron en M4.3 con la asamblea de
+    // seis pasos. Lo que las sustituye —las canciones con pulso y las 50
+    // unidades del mes— pasa la misma criba.
+    for (final path in contidoDoAula()) {
+      test('verifies 100% 1:1 bilingual parity on $path', () {
+        final jsonMap = jsonDecode(File(path).readAsStringSync());
+        final List<String> errors = [];
+        validator.checkBilingualParity(jsonMap, path: path, errors: errors);
+        expect(errors, isEmpty,
+            reason:
+                '$path failed bilingual parity check:\n${errors.join("\n")}');
+      });
+    }
 
     test(
         'verifies 100% 1:1 bilingual parity on academy.como_se_aprende_a_hablar.01.json',
@@ -88,19 +96,6 @@ void main() {
       validator.checkBilingualParity(placeholderNode, errors: errors);
       expect(errors, isNotEmpty);
       expect(errors.first, contains('contains forbidden placeholder'));
-    });
-
-    test('certifies Galician linguistic quality according to RAG standard', () {
-      final unitFile = File('assets/content/unidades/juega.mar.01.json');
-      final content = unitFile.readAsStringSync();
-
-      // Official RAG maritime vocabulary checks
-      expect(content, contains('cuncha'));
-      expect(content, contains('gaivota'));
-      expect(content, anyOf(contains('mexillón'), contains('Mexillón')));
-      expect(content, anyOf(contains('peixe'), contains('Peixe')));
-      expect(content, contains('praia de Samil'));
-      expect(content, contains('agarimo'));
     });
   });
 }

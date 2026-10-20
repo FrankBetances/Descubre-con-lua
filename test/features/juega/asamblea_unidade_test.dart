@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:descubre_con_lua/core/localization/app_language.dart';
+import 'package:descubre_con_lua/core/storage/calendario_store.dart';
+import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/models/progresion_model.dart';
@@ -11,6 +13,8 @@ import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/calendario/widgets/asemblea_do_dia.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dart';
+import 'package:descubre_con_lua/features/premios/premios_model.dart';
+import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 
 /// M4.1: la asamblea lee su unidad. Canción, material, órdenes, fórmulas y
 /// reactivación salen de la unidad del mes, y el reto TPR lleva la línea
@@ -39,7 +43,6 @@ void main() {
         .toList()
       ..sort();
     await repo.initialize(
-      unidadPaths: const [],
       capsulaPaths: const [],
       asambleaSegundoCicloPaths:
           jsons('assets/content/asambleas_segundo_ciclo'),
@@ -111,7 +114,11 @@ void main() {
 
   Future<void> abrir(WidgetTester tester, String clave, AppLanguage lang,
       int semana, double escala,
-      {bool conUnidade = true, double alto = 780}) async {
+      {bool conUnidade = true,
+      double alto = 780,
+      bool conNota = false,
+      PremiosRepository? premios,
+      CalendarioStore? calendario}) async {
     final g = grupos[clave]!;
     final u = conUnidade ? daUnidade[clave]![lang] : null;
     final ProgresionDoMes p = repo.getProgresionSync(g.claveProgresion)!;
@@ -144,6 +151,10 @@ void main() {
           ordenes: u?.ordenes ?? const {},
           formulas: u?.formulas ?? const [],
           reactivar: u?.reactivar ?? const [],
+          notaParaCasas:
+              conNota ? notaDaAsemblea(u, g.segundo, lang, null) : null,
+          premios: premios,
+          calendario: calendario,
         ),
       ),
     ));
@@ -220,6 +231,90 @@ void main() {
         }
       });
     }
+
+    // M4.3: «Rematar» acaba en la nota para las casas, que sale de la unidad
+    // del mes. En 2.º ciclo lleva además la micro-rutina de casa.
+    for (final clave in ['1c_0_2.10', '2c_4_infantil.10']) {
+      testWidgets('Rematar abre a nota de $clave (${lang.code})',
+          (tester) async {
+        await abrir(tester, clave, lang, 1, 1.0, conNota: true);
+        for (var i = 0; i < 6; i++) {
+          if (find
+              .byKey(const ValueKey('nota_para_casas'))
+              .evaluate()
+              .isNotEmpty) {
+            break;
+          }
+          await seguinte(tester);
+        }
+        expect(find.byKey(const ValueKey('nota_para_casas')), findsOneWidget);
+        expect(find.byType(AsambleaPlayerScreen), findsNothing,
+            reason: 'a nota substitúe o reprodutor, non se apila');
+        final g = grupos[clave]!;
+        final u = daUnidade[clave]![lang]!;
+        expect(find.text(u.centroInteres.resolve(lang)), findsWidgets);
+        for (final peza in u.nucleo) {
+          expect(find.text(peza.en), findsWidgets, reason: peza.en);
+        }
+        final rutina = g.segundo?.microRutinaHogar;
+        if (rutina == null) {
+          expect(
+              find.textContaining(
+                  lang == AppLanguage.gl ? 'PARA FACER' : 'PARA HACER'),
+              findsNothing);
+        } else {
+          expect(find.text(rutina.titulo.resolve(lang)), findsOneWidget);
+        }
+      });
+    }
+
+    // M4.3: la de seis pasos era la única que contaba la asamblea. Al
+    // retirarla, «Rematar» de esta tiene que sumar a la docente, no a la
+    // familia, y marcar el día del aula.
+    testWidgets('Rematar conta a asemblea para a docente (${lang.code})',
+        (tester) async {
+      final dir = Directory.systemTemp.createTempSync('rematar_conta');
+      addTearDown(() => dir.deleteSync(recursive: true));
+      final premios = PremiosRepository(
+        store:
+            LocalStore(fileName: 'premios.json', overrideDirectory: dir.path),
+        ahora: () => DateTime(2026, 10, 20),
+      );
+      final calendario = CalendarioStore(overrideDirectory: dir.path);
+      await tester.runAsync(() async {
+        await premios.cargar();
+        await calendario.cargar();
+      });
+      await abrir(tester, '1c_0_2.10', lang, 1, 1.0,
+          conNota: true, premios: premios, calendario: calendario);
+      final rematar =
+          find.text(lang == AppLanguage.gl ? 'Rematar' : 'Terminar');
+      while (rematar.evaluate().isEmpty) {
+        await seguinte(tester);
+      }
+      // Dos toques seguidos: el segundo no puede contar otra vez.
+      await tester.tap(rematar);
+      await tester.tap(rematar, warnIfMissed: false);
+      // Lo que se guarda es E/S de verdad: necesita tiempo real.
+      for (var i = 0;
+          i < 20 &&
+              find.byKey(const ValueKey('nota_para_casas')).evaluate().isEmpty;
+          i++) {
+        await tester.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 50)));
+        await tester.pump();
+      }
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('nota_para_casas')), findsOneWidget);
+      expect(premios.progresoDe(Perfil.docente).asambleas, 1);
+      expect(premios.progresoDe(Perfil.familia).asambleas, 0);
+      expect(calendario.contadores.diasAula, 1);
+      expect(
+          find.textContaining(lang == AppLanguage.gl
+              ? 'Asemblea completada'
+              : 'Asamblea completada'),
+          findsOneWidget);
+    });
 
     testWidgets('na semana 3 non volve o mes pasado (${lang.code})',
         (tester) async {

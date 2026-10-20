@@ -6,7 +6,6 @@ import '../models/asamblea_segundo_ciclo_model.dart';
 import '../models/capsula_model.dart';
 import '../models/ponte_ao_dia_model.dart';
 import '../models/steam_model.dart';
-import '../models/unidad_model.dart';
 import '../models/unidade_do_mes_model.dart';
 
 /// Function signature for asset string loader. Enables headless testing without Flutter engine.
@@ -25,15 +24,8 @@ class ContentAssetLoader {
   /// Loads raw string content from an asset path using the configured string loader.
   Future<String> loadRawString(String assetPath) => _stringLoader(assetPath);
 
-  /// Default asset path prefix for thematic units.
-  static const String unidadesAssetPrefix = 'assets/content/unidades/';
-
   /// Default asset path prefix for Academy capsules.
   static const String capsulasAssetPrefix = 'assets/content/capsulas/';
-
-  /// Canonical base unit path.
-  static const String baseUnidadMar01 =
-      'assets/content/unidades/juega.mar.01.json';
 
   /// Canonical base capsule path.
   static const String baseCapsulaHablar01 =
@@ -62,25 +54,10 @@ class ContentAssetLoader {
   static const String steamAssetPath =
       'assets/content/steam/unidades_steam.json';
 
-  /// Loads and parses an [Unidad] from an asset path.
-  Future<Unidad> loadUnidadFromAsset(String assetPath) async {
-    final jsonString = await _stringLoader(assetPath);
-    return parseUnidad(jsonString);
-  }
-
   /// Loads and parses a [Capsula] from an asset path.
   Future<Capsula> loadCapsulaFromAsset(String assetPath) async {
     final jsonString = await _stringLoader(assetPath);
     return parseCapsula(jsonString);
-  }
-
-  /// Parses an [Unidad] from a raw JSON string.
-  Unidad parseUnidad(String rawJson) {
-    final dynamic decoded = jsonDecode(rawJson);
-    if (decoded is! Map<String, dynamic>) {
-      throw const FormatException('Expected JSON object at root for Unidad');
-    }
-    return Unidad.fromJson(decoded);
   }
 
   /// Parses a [Capsula] from a raw JSON string.
@@ -90,16 +67,6 @@ class ContentAssetLoader {
       throw const FormatException('Expected JSON object at root for Capsula');
     }
     return Capsula.fromJson(decoded);
-  }
-
-  /// Loads multiple [Unidad] instances from a list of asset paths.
-  Future<List<Unidad>> loadAllUnidades(List<String> assetPaths) async {
-    final List<Unidad> list = [];
-    for (final path in assetPaths) {
-      final unidad = await loadUnidadFromAsset(path);
-      list.add(unidad);
-    }
-    return List.unmodifiable(list);
   }
 
   /// Loads multiple [Capsula] instances from a list of asset paths.
@@ -150,7 +117,7 @@ class ContentAssetLoader {
     return ProgresionDoMes.fromRaw(jsonString);
   }
 
-  /// Alias for [loadAsambleaSegundoCiclo] matching [loadUnidadFromAsset] nomenclature.
+  /// Alias for [loadAsambleaSegundoCiclo].
   Future<AsambleaSegundoCiclo> loadAsambleaSegundoCicloFromAsset(
           String assetPath) =>
       loadAsambleaSegundoCiclo(assetPath);

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/storage/calendario_store.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../data/models/asamblea_primeiro_ciclo_model.dart';
@@ -9,8 +10,10 @@ import '../../../data/models/rexistro_frases_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../juega/views/asamblea_player_screen.dart';
+import '../../juega/views/nota_para_casas_screen.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
 import '../../juega/widgets/aula_segundo_ciclo_panel.dart';
+import '../../premios/premios_repository.dart';
 import '../../../core/navigation/ruta_lua.dart';
 
 /// Un grupo de la asamblea del día: 0-2, 2-3, 4.º, 5.º o 6.º.
@@ -58,6 +61,8 @@ List<GrupoDaAsemblea> gruposDaAsembleaDoDia(
 /// órdenes, fórmulas y reactivación. La unidad cita; esto lo deja resuelto en
 /// el banco y en el registro de frases para el reproductor.
 class AsembleaDaUnidade {
+  final LocalizedString centroInteres;
+  final List<PezaDaUnidade> nucleo;
   final String? cancion;
   final String? material;
   final Map<String, PezaDaUnidade> ordenes;
@@ -65,6 +70,8 @@ class AsembleaDaUnidade {
   final List<PezaDaUnidade> reactivar;
 
   const AsembleaDaUnidade({
+    required this.centroInteres,
+    this.nucleo = const [],
     this.cancion,
     this.material,
     this.ordenes = const {},
@@ -89,6 +96,8 @@ Future<AsembleaDaUnidade?> lerAsembleaDaUnidade(ContentRepository repo,
     for (final r in u.realia) r.resolve(language),
   ].where((m) => m.trim().isNotEmpty).join(' · ');
   return AsembleaDaUnidade(
+    centroInteres: u.centroInteres,
+    nucleo: repo.nucleoSync(u),
     cancion: u.cancion,
     material: material.isEmpty ? null : material,
     ordenes: {
@@ -127,6 +136,8 @@ Future<void> abrirAsembleaDoDia(
   required int dia,
   required AppLanguage language,
   OfflineAudioService? audioService,
+  PremiosRepository? premios,
+  CalendarioStore? calendario,
 }) async {
   final fases = grupo.primeiro?.fases ?? grupo.segundo?.fases;
   if (fases == null) return;
@@ -159,7 +170,30 @@ Future<void> abrirAsembleaDoDia(
         ordenes: daUnidade?.ordenes ?? const {},
         formulas: daUnidade?.formulas ?? const [],
         reactivar: daUnidade?.reactivar ?? const [],
+        notaParaCasas:
+            notaDaAsemblea(daUnidade, grupo.segundo, language, audioService),
+        premios: premios,
+        calendario: calendario,
       ),
     ),
   );
+}
+
+/// La nota para las casas que cierra la asamblea (M4.3): el centro y el
+/// núcleo de la unidad del mes y, en 2.º ciclo, la micro-rutina de casa de su
+/// asamblea. Sin unidad leída, no hay nota.
+WidgetBuilder? notaDaAsemblea(
+  AsembleaDaUnidade? daUnidade,
+  AsambleaSegundoCiclo? segundo,
+  AppLanguage language,
+  OfflineAudioService? audioService,
+) {
+  if (daUnidade == null) return null;
+  return (_) => NotaParaCasasScreen(
+        centroInteres: daUnidade.centroInteres,
+        nucleo: daUnidade.nucleo,
+        microRutina: segundo?.microRutinaHogar,
+        language: language,
+        audioService: audioService,
+      );
 }

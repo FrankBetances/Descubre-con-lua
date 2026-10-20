@@ -61,7 +61,6 @@ void main() {
         .toList()
       ..sort();
     await repo.initialize(
-      unidadPaths: jsons('assets/content/unidades'),
       capsulaPaths: const [],
       asambleaSegundoCicloPaths:
           jsons('assets/content/asambleas_segundo_ciclo'),

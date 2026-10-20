@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 
 import '../../core/localization/localized_string.dart';
 import 'asamblea_segundo_ciclo_model.dart' show FaseAsamblea;
-import 'unidad_model.dart' show Revision;
+import 'revision_model.dart';
 
 /// Os dous tramos do 1.º ciclo de educación infantil (0-3 anos).
 ///

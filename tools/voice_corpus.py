@@ -214,105 +214,18 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     """
     seen: dict[str, Locution] = {}
 
-    for path in sorted((content_dir / "unidades").glob("*.json")):
-        data = json.loads(path.read_text(encoding="utf-8"))
-        unit_id = data.get("id", path.stem)
-
-        # El inglés de la unidad, fase por fase: es lo que la barra de la
-        # asamblea pinta con altavoz, así que tiene que estar grabado.
-        ingles = data.get("ingles") or {}
-        for fase, textos in (ingles.get("porFase") or {}).items():
-            for texto in textos or []:
-                _one(str(texto), "en", estilo_ingles(str(texto)),
-                     f"{unit_id}/ingles/{fase}", seen)
-        if ingles.get("frase"):
-            _one(str(ingles["frase"]), "en", estilo_ingles(str(ingles["frase"])),
-                 f"{unit_id}/ingles/frase", seen)
-
-        cancion = data.get("cancionPulso") or data.get("cancion") or {}
-        letra = cancion.get("letraConPulsos") or cancion.get("letra_con_pulsos")
-        if letra:
-            # A neural TTS voice speaks; it does not sing. The recording for the
-            # pulse step is the lyrics chanted at a steady pace, which is how
-            # pulse work is done with 0-3 anyway. The instrumental pulse track
-            # stays available separately as the metronome.
-            _add(_localized(letra), "tutor", f"{unit_id}/cancionPulso", seen)
-        if cancion.get("consignaDocente"):
-            _add(
-                _localized(cancion["consignaDocente"]),
-                "tutor",
-                f"{unit_id}/cancionPulso/consigna",
-                seen,
-            )
-
-        cuento = data.get("cuento") or {}
-        for i, pagina in enumerate(cuento.get("paginas") or []):
-            if not isinstance(pagina, dict):
-                continue
-            if pagina.get("texto"):
-                _add(_localized(pagina["texto"]), "tutor",
-                     f"{unit_id}/cuento/{i}/texto", seen)
-            if pagina.get("preguntaComprension"):
-                _add(_localized(pagina["preguntaComprension"]), "tutor",
-                     f"{unit_id}/cuento/{i}/pregunta", seen)
-            # El inglés de ESA página: lo que la persona adulta dice mientras la
-            # lee. Va aquí y no en porFase porque la docente tiene delante la
-            # página, no la fase.
-            for texto in pagina.get("ingles") or []:
-                _one(str(texto), "en", estilo_ingles(str(texto)),
-                     f"{unit_id}/cuento/{i}/ingles", seen)
-
-        for pregunta in data.get("preguntas") or []:
-            if not isinstance(pregunta, dict):
-                continue
-            pid = pregunta.get("id", "?")
-            for campo in ("enunciado", "respuestaSugerida", "consejoDocente"):
-                if pregunta.get(campo):
-                    _add(_localized(pregunta[campo]), "tutor",
-                         f"{unit_id}/preguntas/{pid}/{campo}", seen)
-
-        for item in data.get("vocabulario") or []:
-            if not isinstance(item, dict):
-                continue
-            item_id = item.get("id", "?")
-            # La palabra va despacio: existe para que la imiten.
-            if item.get("palabra"):
-                _add(_localized(item["palabra"]), "slow",
-                     f"{unit_id}/vocabulario/{item_id}", seen)
-            # La palabra inglesa, al lado de la galega y la castellana: la
-            # tarjeta las enseña juntas y las tres se pueden oír.
-            if item.get("ingles"):
-                _one(str(item["ingles"]), "en", estilo_ingles(str(item["ingles"])),
-                     f"{unit_id}/vocabulario/{item_id}/ingles", seen)
-            # `definicionBreve` NO entra en el corpus: hoy no hay ninguna
-            # pantalla que pinte el vocabulario, así que esas grabaciones
-            # viajarían en el APK sin que nada pudiera reproducirlas. Entra el
-            # día que exista la tarjeta, no antes.
-
-        exploracion = data.get("exploracion") or {}
-        for campo in ("objetivoSensorial", "avisoSeguridad"):
-            if exploracion.get(campo):
-                _add(_localized(exploracion[campo]), "tutor",
-                     f"{unit_id}/exploracion/{campo}", seen)
-        for i, paso in enumerate(exploracion.get("pasos") or []):
-            _add(_localized(paso), "tutor", f"{unit_id}/exploracion/paso/{i}",
-                 seen)
-
-        matematicas = data.get("matematicas") or {}
-        if matematicas.get("descripcion"):
-            _add(_localized(matematicas["descripcion"]), "tutor",
-                 f"{unit_id}/matematicas/descripcion", seen)
-        for i, accion in enumerate(matematicas.get("accionesSugeridas") or []):
-            _add(_localized(accion), "tutor",
-                 f"{unit_id}/matematicas/accion/{i}", seen)
-
-        puente = data.get("puenteCasa") or {}
-        for campo in ("mensajeFamilias", "recomendacionConversacion"):
-            if puente.get(campo):
-                _add(_localized(puente[campo]), "tutor",
-                     f"{unit_id}/puenteCasa/{campo}", seen)
-        for i, act in enumerate(puente.get("actividadesSugeridas") or []):
-            _add(_localized(act), "tutor", f"{unit_id}/puenteCasa/act/{i}", seen)
+    # Las canciones con pulso, sueltas desde M4.3: la letra recitada a pulso
+    # (una voz neuronal no canta; el pulso se trabaja así con 0-3) y la
+    # consigna de la docente.
+    cancions = content_dir / "cancions" / "cancions_con_pulso.json"
+    if cancions.exists():
+        for cancion in json.loads(cancions.read_text(encoding="utf-8"))["cancions"]:
+            cid = cancion.get("id", "?")
+            if cancion.get("letraConPulsos"):
+                _add(_localized(cancion["letraConPulsos"]), "tutor", cid, seen)
+            if cancion.get("consignaDocente"):
+                _add(_localized(cancion["consignaDocente"]), "tutor",
+                     f"{cid}/consigna", seen)
 
     # Academy. Las cápsulas las lee una familia en casa, muchas veces con las
     # manos ocupadas; que se puedan escuchar no es un adorno.

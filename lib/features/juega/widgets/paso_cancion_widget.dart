@@ -5,7 +5,7 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../data/models/unidad_model.dart';
+import '../../../data/models/cancion_pulso_model.dart';
 import 'rhythm_bar_widget.dart';
 
 /// Phase 1: canción a pulso.
@@ -331,8 +331,8 @@ class _PasoCancionWidgetState extends State<PasoCancionWidget> {
                 if (!widget.soloEsencial)
                   Text(
                     isGl
-                        ? 'Audio 100% sen conexión (mar_pulso_72bpm.wav / local)'
-                        : 'Audio 100% sin conexión (mar_pulso_72bpm.wav / local)',
+                        ? 'Audio 100% sen conexión, gardado no aparello'
+                        : 'Audio 100% sin conexión, guardado en el aparato',
                     style: theme.textTheme.bodySmall?.copyWith(
                       color: const Color(0xFF64748B),
                       fontSize: 12.0,

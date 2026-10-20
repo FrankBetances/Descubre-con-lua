@@ -24,7 +24,7 @@ flutter:
     - assets/content/laminas/
     - assets/content/english/
     - assets/content/corpus/
-    - assets/content/unidades/
+    - assets/content/cancions/
     - assets/content/capsulas/
     - assets/content/premios/
 
@@ -34,7 +34,6 @@ flutter:
     # siempre. Lo vigila tools/check_bundled_assets.py.
     - assets/content/calendario/
     # El ritual de la asamblea: la consigna y los minutos de cada fase.
-    - assets/content/asamblea/
     # La formación previa: lo que docente y familia tienen que saber ANTES
     # de usar la app. Los dos documentos curriculares la piden.
     - assets/content/formacion/

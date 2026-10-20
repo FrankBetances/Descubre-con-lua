@@ -32,7 +32,6 @@
         "es": "Cambio de ropa o calzado de la mañana"
       },
       "minutosSugeridos": 3,
-      "unidad": "juega.benvida.01",
       "ingles": {
         "tpr": [
           "Stand up",
@@ -71,7 +70,6 @@
         "es": "Hora del baño o masaje antes de dormir"
       },
       "minutosSugeridos": 4,
-      "unidad": "juega.corpo.01",
       "ingles": {
         "tpr": [
           "Touch your head",
@@ -110,7 +108,6 @@
         "es": "Paseo por el parque o de camino a la escuela"
       },
       "minutosSugeridos": 4,
-      "unidad": "juega.follas.01",
       "ingles": {
         "tpr": [
           "Fall down",
@@ -149,7 +146,6 @@
         "es": "Al acostarse en la cama con la mantita"
       },
       "minutosSugeridos": 3,
-      "unidad": "juega.inverno.01",
       "ingles": {
         "tpr": [
           "Ring the bells",
@@ -188,7 +184,6 @@
         "es": "Preparación para salir de casa"
       },
       "minutosSugeridos": 4,
-      "unidad": "juega.choiva.01",
       "ingles": {
         "tpr": [
           "Put on your hat",
@@ -227,7 +222,6 @@
         "es": "Juego libre sobre la alfombra del salón"
       },
       "minutosSugeridos": 5,
-      "unidad": "juega.animais.01",
       "ingles": {
         "tpr": [
           "Jump like a frog",
@@ -266,7 +260,6 @@
         "es": "Hora de la merienda o preparación de la comida"
       },
       "minutosSugeridos": 4,
-      "unidad": "juega.cores.01",
       "ingles": {
         "tpr": [
           "Find something red",
@@ -305,7 +298,6 @@
         "es": "Junto a la ventana o en el lavado de manos"
       },
       "minutosSugeridos": 4,
-      "unidad": "juega.primavera.01",
       "ingles": {
         "tpr": [
           "Be a little seed",
@@ -344,7 +336,6 @@
         "es": "Lavado de manos antes de comer o en el baño"
       },
       "minutosSugeridos": 4,
-      "unidad": "juega.auga.01",
       "ingles": {
         "tpr": [
           "Wash your face",
@@ -383,7 +374,6 @@
         "es": "Juego de sábana o manta en la cama"
       },
       "minutosSugeridos": 5,
-      "unidad": "juega.mar.01",
       "ingles": {
         "tpr": [
           "Gentle waves",

@@ -34,7 +34,7 @@ void main() {
     await Pasarela.cargarFontes();
     Future<String> ler(String p) => File(p).readAsString();
     repo = ContentRepository(loader: ContentAssetLoader(stringLoader: ler));
-    await repo.initialize(unidadPaths: const [], capsulaPaths: const []);
+    await repo.initialize(capsulaPaths: const []);
     repo.addProgramaTpr(await ProgramaTpr.cargar(stringLoader: ler));
   });
 

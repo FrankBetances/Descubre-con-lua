@@ -17,7 +17,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-UNITS = ROOT / "assets" / "content" / "unidades"
+# Las canciones con pulso viven aquí desde M4.3 (antes, dentro de las
+# unidades de la asamblea de seis pasos, que se retiró).
+CANCIONS = ROOT / "assets" / "content" / "cancions" / "cancions_con_pulso.json"
 LANGS = ("gl", "es")
 
 
@@ -29,9 +31,8 @@ def main() -> int:
     failures: list[str] = []
     checked = 0
 
-    for path in sorted(UNITS.glob("*.json")):
-        data = json.loads(path.read_text(encoding="utf-8"))
-        cancion = data.get("cancionPulso") or data.get("cancion") or {}
+    for cancion in json.loads(CANCIONS.read_text(encoding="utf-8"))["cancions"]:
+        path = Path(cancion["id"])
         lyrics = cancion.get("letraConPulsos") or cancion.get("letra_con_pulsos")
         if not isinstance(lyrics, dict):
             continue

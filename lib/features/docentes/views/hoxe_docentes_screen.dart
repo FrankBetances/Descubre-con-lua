@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/storage/calendario_store.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/navigation/ruta_lua.dart';
@@ -19,6 +20,7 @@ import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../cuentos/views/cuento_viewer_screen.dart';
 import '../../familias/widgets/selector_idade.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
+import '../../premios/premios_repository.dart';
 import '../../planificador/views/dinamicas_screen.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_docentes.dart';
@@ -42,6 +44,8 @@ class HoxeDocentesScreen extends StatefulWidget {
     required this.onCambiarCurso,
     this.audioService,
     this.agora,
+    this.premios,
+    this.calendario,
   });
 
   final ContentRepository repository;
@@ -51,6 +55,11 @@ class HoxeDocentesScreen extends StatefulWidget {
   final ValueChanged<String> onCambiarCurso;
   final OfflineAudioService? audioService;
   final DateTime? agora;
+
+  /// Para que la asamblea, al rematarla, cuente en los premios y en el
+  /// calendario del aula (M4.3).
+  final PremiosRepository? premios;
+  final CalendarioStore? calendario;
 
   @override
   State<HoxeDocentesScreen> createState() => _HoxeDocentesScreenState();
@@ -196,6 +205,8 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
       dia: _toca.dia.dia,
       language: widget.language,
       audioService: widget.audioService,
+      premios: widget.premios,
+      calendario: widget.calendario,
     );
   }
 

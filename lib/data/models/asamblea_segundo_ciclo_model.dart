@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import '../../core/localization/localized_string.dart';
 import 'curricular_model.dart';
-import 'unidad_model.dart' show Revision;
+import 'revision_model.dart';
 
 /// Niveis educativos do Segundo Ciclo de Educación Infantil (3-6 anos).
 ///

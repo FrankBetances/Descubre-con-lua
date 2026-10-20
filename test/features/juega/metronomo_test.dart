@@ -1,7 +1,7 @@
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/localization/localized_string.dart';
-import 'package:descubre_con_lua/data/models/unidad_model.dart';
+import 'package:descubre_con_lua/data/models/cancion_pulso_model.dart';
 import 'package:descubre_con_lua/features/juega/widgets/paso_cancion_widget.dart';
 import 'package:descubre_con_lua/features/juega/widgets/rhythm_bar_widget.dart';
 import 'package:flutter/material.dart';

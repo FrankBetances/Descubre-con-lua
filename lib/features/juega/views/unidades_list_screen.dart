@@ -6,11 +6,8 @@ import '../../../data/repositories/content_repository.dart';
 import '../../premios/premios_repository.dart';
 import '../../calendario/views/calendario_screen.dart';
 import '../../calendario/widgets/calendario_do_curso.dart';
-import '../../../data/models/unidad_model.dart';
 import '../../calendario/widgets/asemblea_do_dia.dart';
 import '../widgets/aula_ciclo_panel.dart';
-import '../widgets/fichas_de_unidades.dart';
-import 'asamblea_guiada_screen.dart';
 import '../widgets/aula_primeiro_ciclo_panel.dart';
 import '../widgets/circulo_do_dia.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
@@ -341,34 +338,11 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
     );
   }
 
-  Widget _fichasDeUnidades() {
-    return FichasDeUnidades(
-      unidades: widget.repository.getAllUnidades(),
-      language: _language,
-      onAbrir: (Unidad unidad) {
-        Navigator.of(context).push(
-          RutaLua(
-            de: context,
-            builder: (context) => AsambleaGuiadaScreen(
-              unidad: unidad,
-              premios: widget.premios,
-              calendario: widget.calendario,
-              audioService: widget.audioService,
-              initialLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-            ),
-          ),
-        );
-      },
-    );
-  }
-
   Widget _buildPrimeiroCicloView(BuildContext context) {
     return AulaPrimeiroCicloPanel(
       asambleas: widget.repository.getAllAsambleasPrimeiroCicloSync(),
       language: _language,
       calendario: _calendarioDoAula,
-      pe: _fichasDeUnidades(),
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,
       onComezar: (tramo, mes, dia) async {
@@ -406,6 +380,10 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               ordenes: daUnidade?.ordenes ?? const {},
               formulas: daUnidade?.formulas ?? const [],
               reactivar: daUnidade?.reactivar ?? const [],
+              notaParaCasas: notaDaAsemblea(
+                  daUnidade, null, _language, widget.audioService),
+              premios: widget.premios,
+              calendario: widget.calendario,
             ),
           ),
         );
@@ -455,6 +433,10 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               ordenes: daUnidade?.ordenes ?? const {},
               formulas: daUnidade?.formulas ?? const [],
               reactivar: daUnidade?.reactivar ?? const [],
+              notaParaCasas: notaDaAsemblea(
+                  daUnidade, asamblea, _language, widget.audioService),
+              premios: widget.premios,
+              calendario: widget.calendario,
             ),
           ),
         );

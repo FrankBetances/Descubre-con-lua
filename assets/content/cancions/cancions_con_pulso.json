@@ -1,0 +1,205 @@
+{
+  "_doc": "Las diez canciones con pulso visual. Vinieron de la asamblea de seis pasos (assets/content/unidades/juega.*), que se retiró en M4.3; quedan como recurso suelto, fuera del mes: la canción del mes es la de su asamblea (D4). El pulso se dibuja con las marcas * de letraConPulsos; lo vigilan tools/check_pulse_markers.py y tools/check_pulse_bpm.py.",
+  "cancions": [
+    {
+      "id": "cancion.benvida",
+      "titulo": {
+        "gl": "Bos días, ola!",
+        "es": "¡Buenos días, hola!"
+      },
+      "letraConPulsos": {
+        "gl": "* Bos * días, * a-mi-ga, * ola!\n* Bos * días, * a-mi-go, * ola!\n* Pal-mas * arri-ba, * pal-mas * abai-xo,\n* to-dos * xun-tos * no * cír-cu-lo.",
+        "es": "* Bue-nos * días, * a-mi-ga, * ¡ho-la!\n* Bue-nos * días, * a-mi-go, * ¡ho-la!\n* Pal-mas * arri-ba, * pal-mas * aba-jo,\n* to-dos * jun-tos * en el * cír-cu-lo."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_a6da6d7e_142.m4a",
+        "es": "assets/voice/es_tutor_7248d6a6_158.m4a"
+      },
+      "consignaDocente": {
+        "gl": "Cantar mirando a cada crianza pola súa vez e agardar a súa resposta antes de seguir. O pulso márcase nas pernas, moi amodo.",
+        "es": "Cantar mirando a cada criatura por turno y esperar su respuesta antes de seguir. El pulso se marca en las piernas, muy despacio."
+      }
+    },
+    {
+      "id": "cancion.corpo",
+      "titulo": {
+        "gl": "Cabeza, ombreiros, xeonllos e pés",
+        "es": "Cabeza, hombros, rodillas y pies"
+      },
+      "letraConPulsos": {
+        "gl": "* Ca-be-za, * om-brei-ros, * xeon-llos * e pés,\n* xeon-llos * e pés, * xeon-llos * e pés.\n* Ollos * e o-re-llas, * boca * e na-riz,\n* to-do * o cor-po * se * move a-quí.",
+        "es": "* Ca-be-za, * hom-bros, * ro-di-llas * y pies,\n* ro-di-llas * y pies, * ro-di-llas * y pies.\n* Ojos * y o-re-jas, * boca * y na-riz,\n* to-do * el cuer-po * se * mue-ve a-quí."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_4ff54a8c_169.m4a",
+        "es": "assets/voice/es_tutor_c9a5356e_174.m4a"
+      },
+      "consignaDocente": {
+        "gl": "Tocar cada parte na propia mestra primeiro, non na crianza. Quen queira imitar, imita; quen queira só mirar, mira.",
+        "es": "Tocar cada parte en la propia maestra primero, no en la criatura. Quien quiera imitar, imita; quien quiera solo mirar, mira."
+      }
+    },
+    {
+      "id": "cancion.follas",
+      "titulo": {
+        "gl": "Follas que caen",
+        "es": "Hojas que caen"
+      },
+      "letraConPulsos": {
+        "gl": "* Fo-llas * que caen, * fo-llas * de cor,\n* o ven-to * as le-va * dun * lado ao ou-tro.\n* Cru-ac, * cru-ac, * pi-so * de-va-gar,\n* cru-ac, * cru-ac, * vol-vo * empe-zar.",
+        "es": "* Ho-jas * que caen, * ho-jas * de co-lor,\n* el vien-to * las lle-va * de un * lado a o-tro.\n* Cras, * cras, * pi-so * des-pa-cio,\n* cras, * cras, * vuel-vo a * em-pe-zar."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_e2e6d550_169.m4a",
+        "es": "assets/voice/es_tutor_79af1463_171.m4a"
+      },
+      "consignaDocente": {
+        "gl": "Deixar caer unha folla de verdade desde arriba en cada 'caen', para que sigan a caída coa mirada antes de pisar nada.",
+        "es": "Dejar caer una hoja de verdad desde arriba en cada 'caen', para que sigan la caída con la mirada antes de pisar nada."
+      }
+    },
+    {
+      "id": "cancion.inverno",
+      "titulo": {
+        "gl": "Soa o cascabel",
+        "es": "Suena el cascabel"
+      },
+      "letraConPulsos": {
+        "gl": "* Soa, * soa, * soa * o cas-ca-bel,\n* soa * for-te * e para * ou-tra vez.\n* Man-ta * quen-te, * ollos * pe-cha-dos,\n* dor-me, * dor-me, * e * es-per-ta.",
+        "es": "* Sue-na, * sue-na, * sue-na * el cas-ca-bel,\n* sue-na * fuer-te * y para * o-tra vez.\n* Man-ta * ca-lien-te, * ojos * ce-rra-dos,\n* duer-me, * duer-me, * y * des-pier-ta."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_0879c78d_152.m4a",
+        "es": "assets/voice/es_tutor_7912e922_171.m4a"
+      },
+      "consignaDocente": {
+        "gl": "As dúas primeiras liñas van con enerxía e as dúas últimas moi baixiño. O cambio de volume é o que se está a ensinar.",
+        "es": "Las dos primeras líneas van con energía y las dos últimas muy bajito. El cambio de volumen es lo que se está enseñando."
+      }
+    },
+    {
+      "id": "cancion.choiva",
+      "titulo": {
+        "gl": "Poño o gorro, poño as botas",
+        "es": "Me pongo el gorro, me pongo las botas"
+      },
+      "letraConPulsos": {
+        "gl": "* Po-ño * o go-rro, * po-ño * o a-bri-go,\n* zzzip * arri-ba, * xa * es-tou lis-to.\n* Bo-tas * pos-tas, * sai-mos * á rúa,\n* chof * no char-co, * chof * ou-tra vez.",
+        "es": "* Me pon-go * el go-rro, * me pon-go * el a-bri-go,\n* zzzip * arri-ba, * ya * es-toy lis-to.\n* Bo-tas * pues-tas, * sa-li-mos * a la ca-lle,\n* chof * en el char-co, * chof * o-tra vez."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_18661d93_163.m4a",
+        "es": "assets/voice/es_tutor_d37e28ac_184.m4a"
+      },
+      "consignaDocente": {
+        "gl": "Facer a mímica enteira aínda que non haxa roupa diante: o xesto de subir a cremalleira é o que se queda.",
+        "es": "Hacer la mímica entera aunque no haya ropa delante: el gesto de subir la cremallera es el que se queda."
+      }
+    },
+    {
+      "id": "cancion.animais",
+      "titulo": {
+        "gl": "Salta a ra, voa o paxaro",
+        "es": "Salta la rana, vuela el pájaro"
+      },
+      "letraConPulsos": {
+        "gl": "* Sal-ta * a ra, * sal-ta, * ri-bit!\n* Voa * o pa-xa-ro, * voa, * moi al-to!\n* An-da * o oso, * pum, * pum!\n* Dor-me * o ga-to, * miau, * e ca-la.",
+        "es": "* Sal-ta * la ra-na, * sal-ta, * ¡ri-bit!\n* Vue-la * el pá-ja-ro, * vue-la, * ¡muy al-to!\n* An-da * el o-so, * pum, * ¡pum!\n* Duer-me * el ga-to, * miau, * y ca-lla."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_db930d0a_146.m4a",
+        "es": "assets/voice/es_tutor_72c7916b_165.m4a"
+      },
+      "consignaDocente": {
+        "gl": "Cada liña cambia de altura: a ra no chan, o paxaro de pé, o oso pesado, o gato deitado. Acábase sempre abaixo.",
+        "es": "Cada línea cambia de altura: la rana en el suelo, el pájaro de pie, el oso pesado, el gato tumbado. Se acaba siempre abajo."
+      }
+    },
+    {
+      "id": "cancion.cores",
+      "titulo": {
+        "gl": "Busca a cor",
+        "es": "Busca el color"
+      },
+      "letraConPulsos": {
+        "gl": "* Ver-me-llo, * ver-me-llo, * on-de * es-tás?\n* A-ma-re-lo, * a-ma-re-lo, * ven * a-quí.\n* Rola * o aro, * rola * re-don-do,\n* to-ca, * to-ca, * e * gar-da.",
+        "es": "* Ro-jo, * ro-jo, * ¿dón-de * es-tás?\n* A-ma-ri-llo, * a-ma-ri-llo, * ven * a-quí.\n* Rue-da * el a-ro, * rue-da * re-don-do,\n* to-ca, * to-ca, * y * guar-da."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_04eef6c9_156.m4a",
+        "es": "assets/voice/es_tutor_ca8e09d2_157.m4a"
+      },
+      "consignaDocente": {
+        "gl": "Ter na man o obxecto da cor que se canta. A palabra soa sen obxecto diante non ensina a cor a esta idade.",
+        "es": "Tener en la mano el objeto del color que se canta. La palabra sola sin objeto delante no enseña el color a esta edad."
+      }
+    },
+    {
+      "id": "cancion.primavera",
+      "titulo": {
+        "gl": "Semente pequena",
+        "es": "Semilla pequeña"
+      },
+      "letraConPulsos": {
+        "gl": "* Se-men-te * pe-que-na * no * chan,\n* chove * un pou-co, * tap, * tap.\n* Me-dra, * me-dra, * xa * es-tou al-ta,\n* a-bro * os bra-zos, * son * unha flor.",
+        "es": "* Se-mi-lla * pe-que-ña * en el * sue-lo,\n* llue-ve * un po-co, * tap, * tap.\n* Cre-ce, * cre-ce, * ya * es-toy al-ta,\n* a-bro * los bra-zos, * soy * una flor."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_330b34d0_153.m4a",
+        "es": "assets/voice/es_tutor_d9cf4aab_159.m4a"
+      },
+      "consignaDocente": {
+        "gl": "Empezar todas enroscadas no chan e subir unha liña de cada vez. Non hai que chegar de pé: subir un pouco xa é medrar.",
+        "es": "Empezar todas enroscadas en el suelo y subir una línea cada vez. No hay que llegar de pie: subir un poco ya es crecer."
+      }
+    },
+    {
+      "id": "cancion.auga",
+      "titulo": {
+        "gl": "Lava, lava as mans",
+        "es": "Lava, lava las manos"
+      },
+      "letraConPulsos": {
+        "gl": "* La-va, * la-va * as * mans,\n* fre-ga * o xa-bón * entre * os de-dos.\n* Chas, * chas, * sal-pi-ca * a au-ga,\n* mans * lim-pas, * xa * es-tá.",
+        "es": "* La-va, * la-va * las * ma-nos,\n* fro-ta * el ja-bón * entre * los de-dos.\n* Chas, * chas, * sal-pi-ca * el a-gua,\n* ma-nos * lim-pias, * ya * es-tá."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_16b80370_141.m4a",
+        "es": "assets/voice/es_tutor_1a101f8f_150.m4a"
+      },
+      "consignaDocente": {
+        "gl": "Cantala sempre no lavabo, nunca na alfombra: a canción é o temporizador do lavado, non unha canción máis.",
+        "es": "Cantarla siempre en el lavabo, nunca en la alfombra: la canción es el temporizador del lavado, no una canción más."
+      }
+    },
+    {
+      "id": "cancion.mar",
+      "titulo": {
+        "gl": "As ondas da nosa ría",
+        "es": "Las olas de nuestra ría"
+      },
+      "letraConPulsos": {
+        "gl": "* On-das * que veñen, * on-das * que van,\n* no mar * de Vi-go * os pei-xes * es-tán.\n* Chof, * chof, * bate * a au-ga,\n* chas, * chas, * sobre * a a-rea.",
+        "es": "* O-las * que vienen, * o-las * que van,\n* en el mar * de Vi-go * los pe-ces * es-tán.\n* Chof, * chof, * cae * el a-gua,\n* chas, * chas, * en la * a-re-na."
+      },
+      "bpm": 72,
+      "audioAsset": {
+        "gl": "assets/voice/gl_tutor_07aaac78_153.m4a",
+        "es": "assets/voice/es_tutor_3a7014eb_155.m4a"
+      },
+      "consignaDocente": {
+        "gl": "Marcar o pulso amodo palmeando nas pernas ou movendo os brazos en compás suave coma se fósemos ondas.",
+        "es": "Marcar el pulso despacio palmeando en las piernas o balanceando los brazos al ritmo como olas suaves."
+      }
+    }
+  ]
+}

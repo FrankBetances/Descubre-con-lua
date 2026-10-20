@@ -7,11 +7,13 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/calendario_model.dart';
+import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
+import 'package:descubre_con_lua/features/calendario/widgets/asemblea_do_dia.dart';
 import 'package:descubre_con_lua/features/premios/premios_model.dart';
 
 import '../../helpers/scroll_helpers.dart';
@@ -41,25 +43,22 @@ void main() {
         stringLoader: (path) => File(path).readAsString(),
       ),
     );
-    // TODAS las unidades del disco, no una elegida a mano: el test hardcodeaba
-    // `juega.mar.01.json` y por eso siguió en verde mientras el calendario
-    // abría siempre la misma asamblea. Si alguien añade un mes sin unidad, o
-    // le cambia el id a una, esto se entera.
-    final unidades = Directory('assets/content/unidades')
-        .listSync()
-        .whereType<File>()
-        .map((f) => f.path)
-        .where((p) => p.endsWith('.json'))
-        .toList()
-      ..sort();
     await repositorio.initialize(
-      unidadPaths: unidades,
       capsulaPaths: const [],
     );
     // El banco y el registro, que resuelven el núcleo de cada unidad del mes.
     await repositorio.loadProgramaTpr();
     await repositorio.loadRexistroFrases();
   });
+  // O grupo da asemblea de catro fases que abre unha tarxeta: o do seu curso,
+  // ese mes. É o que mira o botón «Comezar a asemblea».
+  GrupoDaAsemblea? grupoDaTarxeta(MesCurricular m) {
+    for (final g in gruposDaAsembleaDoDia(repositorio, m.mesCalendario)) {
+      if (cursoTprDoGrupo[g.clave] == m.cursoId && g.disponible) return g;
+    }
+    return null;
+  }
+
   group('CalendarioModel & 10 Meses Curriculares de Galicia', () {
     test('contén exactamente 10 meses de setembro a xunho', () {
       expect(contenido.meses.length, 10);
@@ -311,7 +310,6 @@ void main() {
         expect(m.actividadAula.hasParity, isFalse, reason: onde);
         expect(m.actividadHogar.hasParity, isFalse, reason: onde);
         expect(m.ingles.frase, isEmpty, reason: onde);
-        expect(m.unidadId, isNotNull, reason: onde);
         expect(
             centros.putIfAbsent(m.cursoId!, () => {}).add(m.centroInteres.gl),
             isTrue,
@@ -489,13 +487,12 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
 
       // Isto é o que Frank pedía: que o calendario sirva en setembro, non só
-      // en xuño. Durante meses houbo UNHA unidade para dez meses.
-      for (final mes in contenido.meses) {
-        expect(mes.unidadId, isNotNull,
-            reason: '${mes.nombreMes.gl} quedou sen unidade');
-        expect(repositorio.getUnidadById(mes.unidadId!), isNotNull,
-            reason:
-                '${mes.nombreMes.gl} apunta a ${mes.unidadId}, que non existe');
+      // en xuño. Durante meses houbo UNHA unidade para dez meses. Agora o
+      // botón abre a asemblea de catro fases do curso da tarxeta (M4.3), así
+      // que as cincuenta tarxetas do traxecto teñen que ter a súa.
+      for (final m in contenido.trayecto) {
+        expect(grupoDaTarxeta(m), isNotNull,
+            reason: '${m.cursoId} ${m.nombreMes.gl} quedou sen asemblea');
       }
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
@@ -590,14 +587,19 @@ void main() {
           reason: '${destino.nombreMes.gl} quedou fóra pola dereita');
     });
 
-    testWidgets('cada mes leva á SÚA unidade, non todos á mesma',
+    testWidgets('cada mes leva á SÚA asemblea, non todos á mesma',
         (tester) async {
       // O defecto orixinal: `unidades.first` como rede de seguridade facía que
-      // os dez meses abrisen a asemblea do Mar de Vigo. Dez ids distintos é a
-      // proba de que iso xa non pode pasar.
-      final ids = contenido.meses.map((m) => m.unidadId).toSet();
-      expect(ids.length, contenido.meses.length,
-          reason: 'hai meses compartindo unidade: $ids');
+      // os dez meses abrisen a asemblea do Mar de Vigo. Dez asembleas
+      // distintas por curso é a proba de que iso xa non pode pasar.
+      for (final curso in CalendarioContenido.cursos) {
+        final ids = {
+          for (final m in contenido.trayecto.where((m) => m.cursoId == curso))
+            grupoDaTarxeta(m)?.primeiro?.id ?? grupoDaTarxeta(m)?.segundo?.id,
+        };
+        expect(ids.length, 10, reason: '$curso comparte asemblea: $ids');
+        expect(ids, isNot(contains(null)), reason: curso);
+      }
     });
 
     testWidgets('un mes sen unidade escrita non abre nada, e dío',
@@ -606,33 +608,19 @@ void main() {
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.resetPhysicalSize);
 
-      // Hoxe todos os meses teñen unidade, así que este caso hai que fabricalo:
-      // a rama segue viva e ten que seguir dicindo «en preparación» en vez de
-      // caer noutra unidade calquera, que é o que facía antes.
-      final senUnidade = CalendarioContenido(
-        meses: contenido.meses
-            .map((m) => MesCurricular(
-                  orden: m.orden,
-                  mesCalendario: m.mesCalendario,
-                  icono: m.icono,
-                  nombreMes: m.nombreMes,
-                  centroInteres: m.centroInteres,
-                  objetivoPedagogico: m.objetivoPedagogico,
-                  actividadAula: m.actividadAula,
-                  actividadHogar: m.actividadHogar,
-                  rutinaRecomendadaHogar: m.rutinaRecomendadaHogar,
-                  minutosSugeridos: m.minutosSugeridos,
-                  ingles: m.ingles,
-                  unidadId: null,
-                ))
-            .toList(),
-        guia: contenido.guia,
+      // Hoxe todos os meses teñen asemblea, así que este caso hai que
+      // fabricalo cun repositorio baleiro: a rama segue viva e ten que seguir
+      // dicindo «en preparación» en vez de caer noutra asemblea calquera.
+      final senAsembleas = ContentRepository(
+        loader: ContentAssetLoader(
+          stringLoader: (path) => File(path).readAsString(),
+        ),
       );
 
       await tester.pumpWidget(_wrap(CalendarioScreen(
         store: store,
-        contenido: senUnidade,
-        repository: repositorio,
+        contenido: contenido,
+        repository: senAsembleas,
         initialLanguage: AppLanguage.gl,
         esDocenteInicial: true,
       )));
@@ -694,7 +682,11 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(esDocenteRecibido, isTrue);
-      expect(sesionRecibida?.unidadId, mesConUnidade.unidadId);
+      expect(sesionRecibida?.mesCalendario, mesConUnidade.mesCalendario);
+      // A tarxeta é a do primeiro curso do traxecto, que é o que abre a
+      // pantalla, e o botón lanza a asemblea dese curso.
+      expect(sesionRecibida?.cursoId, 'curso_0_2');
+      expect(grupoDaTarxeta(sesionRecibida!), isNotNull);
     });
 
     testWidgets(

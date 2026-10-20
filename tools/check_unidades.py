@@ -8,8 +8,8 @@ Módulo M3.1 del plan docente (`docs/PLAN_MEJORA_INTEGRAL.md`). La unidad es la
 única fuente del mes (`docs/PLAN_ARQUITECTURA_PEDAGOGIA.md`, apartado 3): las
 pantallas leen la unidad y no guardan contenido propio. Vive en
 `assets/content/unidades_mes/<curso>/unidade.NN.json`, con NN el mes del curso
-(01 es septiembre). No confundir con `assets/content/unidades/`: esas son las
-diez unidades de la asamblea vieja de seis pasos, que se retiran en M4.3.
+(01 es septiembre). La carpeta se llama `unidades_mes/` porque `unidades/` era
+la de la asamblea de seis pasos, que se retiró en M4.3.
 
 Comprueba, por unidad:
 
