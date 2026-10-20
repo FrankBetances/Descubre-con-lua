@@ -466,6 +466,9 @@ def build(clave: str) -> dict:
         "nota": NOTA,
         "lineaAdulta": {"gl": LINEA_ADULTA[clave][0],
                         "es": LINEA_ADULTA[clave][1]},
+        # La espera visible del reto (M4.2): el primer tiempo del apartado 7,
+        # decir y callar de 3 a 5 segundos. Se cuenta el máximo.
+        "esperaSegundos": 5,
         "semanas": [
             {"numero": n, "nome": {"gl": gl, "es": es},
              "meta": {"gl": mgl, "es": mes}}

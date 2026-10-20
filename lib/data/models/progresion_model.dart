@@ -142,6 +142,9 @@ class ProgresionDoMes {
   /// La línea para la adulta en la fase de reto TPR (M4.1): cómo se dice la
   /// orden en este tramo. `null` si el fichero no la trae.
   final LocalizedString? lineaAdulta;
+
+  /// Los segundos de la espera visible del reto (M4.2). Sin el campo, 5.
+  final int esperaSegundos;
   final List<SemanaDeProgresion> semanas;
   final List<DiaDeProgresion> dias;
 
@@ -149,6 +152,7 @@ class ProgresionDoMes {
     required this.id,
     required this.nota,
     this.lineaAdulta,
+    this.esperaSegundos = 5,
     required this.semanas,
     required this.dias,
   });
@@ -177,6 +181,7 @@ class ProgresionDoMes {
           ? LocalizedString.fromJson(
               Map<String, dynamic>.from(json['lineaAdulta'] as Map))
           : null,
+      esperaSegundos: (json['esperaSegundos'] as num?)?.toInt() ?? 5,
       semanas: List.unmodifiable(semanas),
       dias: List.unmodifiable(dias),
     );

@@ -155,6 +155,7 @@ Future<void> abrirAsembleaDoDia(
         semana: progresion?.semana(semana),
         ponteAoDia: repo.ponteAoDiaSync,
         lineaAdulta: progresion?.lineaAdulta?.resolve(language),
+        esperaSegundos: progresion?.esperaSegundos ?? 5,
         ordenes: daUnidade?.ordenes ?? const {},
         formulas: daUnidade?.formulas ?? const [],
         reactivar: daUnidade?.reactivar ?? const [],

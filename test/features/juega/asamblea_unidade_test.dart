@@ -214,6 +214,9 @@ void main() {
           }
           expect(find.byKey(const ValueKey('linea_adulta')), findsOneWidget,
               reason: clave);
+          // M4.2: al lado de la línea, la espera visible.
+          expect(find.byKey(const ValueKey('espera_visible')), findsOneWidget,
+              reason: clave);
         }
       });
     }

@@ -8,6 +8,7 @@ import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/espera_visible.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart'
     show FaseAsamblea, TipoFaseAsamblea;
 import '../../../data/models/ponte_ao_dia_model.dart';
@@ -72,6 +73,9 @@ class AsambleaPlayerScreen extends StatefulWidget {
   /// `tools/check_unidades.py`); el reproductor enseña las de la unidad.
   final Map<String, PezaDaUnidade> ordenes;
 
+  /// Los segundos de la espera visible del reto (M4.2), de la progresión.
+  final int esperaSegundos;
+
   /// Desde 3-4 años, las fórmulas del mes; van en la apertura.
   final List<PezaDaUnidade> formulas;
 
@@ -92,6 +96,7 @@ class AsambleaPlayerScreen extends StatefulWidget {
     this.semana,
     this.ponteAoDia,
     this.lineaAdulta,
+    this.esperaSegundos = 5,
     this.ordenes = const {},
     this.formulas = const [],
     this.reactivar = const [],
@@ -262,6 +267,7 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
                         dia: widget.dia,
                         semana: widget.semana,
                         lineaAdulta: widget.lineaAdulta,
+                        esperaSegundos: widget.esperaSegundos,
                         ordenes: widget.ordenes,
                         formulas: widget.formulas,
                         // El núcleo del mes pasado vuelve en la semana 4.
@@ -380,6 +386,7 @@ class _PantallaDeFase extends StatelessWidget {
   final DiaDeProgresion? dia;
   final SemanaDeProgresion? semana;
   final String? lineaAdulta;
+  final int esperaSegundos;
   final Map<String, PezaDaUnidade> ordenes;
   final List<PezaDaUnidade> formulas;
   final List<PezaDaUnidade> reactivar;
@@ -396,6 +403,7 @@ class _PantallaDeFase extends StatelessWidget {
     this.cancion,
     this.centroInteres,
     this.lineaAdulta,
+    this.esperaSegundos = 5,
     this.ordenes = const {},
     this.formulas = const [],
     this.reactivar = const [],
@@ -549,18 +557,32 @@ class _PantallaDeFase extends StatelessWidget {
           const SizedBox(height: 14),
           // Cómo se dice la orden: una línea, para la adulta. Las tarjetas de
           // las órdenes son Expanded y ceden el sitio; la pantalla no crece.
-          if (eNucleo && (lineaAdulta?.trim().isNotEmpty ?? false)) ...[
-            Text(
-              lineaAdulta!,
-              key: const ValueKey('linea_adulta'),
-              maxLines: 3,
-              overflow: TextOverflow.ellipsis,
-              style: const TextStyle(
-                fontFamily: AppTheme.fontFamily,
-                fontSize: 14,
-                height: 1.3,
-                fontWeight: FontWeight.w600,
-                color: _AsambleaPlayerScreenState._textoSecundario,
+          if (eNucleo) ...[
+            // Cómo se dice la orden y, debajo, la espera: se toca tras
+            // decirla y el anillo se llena en silencio (M4.2).
+            if (lineaAdulta?.trim().isNotEmpty ?? false) ...[
+              Text(
+                lineaAdulta!,
+                key: const ValueKey('linea_adulta'),
+                maxLines: 4,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontFamily: AppTheme.fontFamily,
+                  fontSize: 14,
+                  height: 1.3,
+                  fontWeight: FontWeight.w600,
+                  color: _AsambleaPlayerScreenState._textoSecundario,
+                ),
+              ),
+              const SizedBox(height: 8),
+            ],
+            Align(
+              alignment: Alignment.centerLeft,
+              child: EsperaVisible(
+                segundos: esperaSegundos,
+                language: language,
+                color: _AsambleaPlayerScreenState._acento,
+                fondo: _AsambleaPlayerScreenState._superficie,
               ),
             ),
             const SizedBox(height: 10),

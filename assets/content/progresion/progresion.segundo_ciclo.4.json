@@ -9,6 +9,7 @@
     "gl": "Despois de cada orde, cala de 3 a 5 segundos: a espera é para o grupo. Á resposta que chegue, devólvea ben dita ou un pouco máis longa, sen corrixir.",
     "es": "Después de cada orden, calla de 3 a 5 segundos: la espera es para el grupo. A la respuesta que llegue, devuélvela bien dicha o un poco más larga, sin corregir."
   },
+  "esperaSegundos": 5,
   "semanas": [
     {
       "numero": 1,
