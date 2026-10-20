@@ -21,6 +21,7 @@ Comprueba, por unidad:
   (`assets/content/registro/frases.json`, cuando exista). No se copia la
   palabra: se cita;
 - que el núcleo tiene el tamaño de su edad (apartado 3 de la arquitectura);
+- que las órdenes son las de su asamblea, todas y en su orden (M4.1);
 - que cada orden usa solo lo que la unidad enseña;
 - que la reactivación sale del núcleo de la unidad del mes anterior.
 
@@ -139,6 +140,19 @@ def revisar(curso: str, orden: int, u: dict, existentes: set[str],
                 fallos.append(
                     f"{donde}: el centro de interés en {lingua} no es el de la "
                     f"asamblea (D4): «{centro.get(lingua)}»")
+
+    # Las órdenes son las de la asamblea, todas y en su orden (M4.1): el
+    # reproductor las lee de la unidad, y la progresión del día las elige por
+    # su posición. Si una sobrara, faltara o cambiara de sitio, el día daría
+    # otra orden que la que dice su consigna.
+    if asamblea is not None:
+        da_asamblea_ordes = [
+            f"frase.{o['id']}" for fase in asamblea.get("fases", [])
+            for o in (fase.get("comandosL3") or [])]
+        da_unidade = [o.get("ref") for o in (u.get("ordenes") or [])]
+        if da_unidade != da_asamblea_ordes:
+            fallos.append(f"{donde}: las órdenes no son las de su asamblea, "
+                          f"en su orden: {da_asamblea_ordes}")
 
     # La canción es la de la asamblea, si la trae; si no, no hay canción.
     cancion = (u.get("cancion") or {}).get("titulo")

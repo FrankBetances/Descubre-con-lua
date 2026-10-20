@@ -21,6 +21,7 @@ import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/data/repositories/ritual_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
+import 'package:descubre_con_lua/features/calendario/widgets/asemblea_do_dia.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/bloques_list_screen.dart';
@@ -533,6 +534,13 @@ void main() {
     testWidgets('aula · asemblea de 2.º ciclo · $l', (tester) async {
       final asamblea = contenido.getAsambleaByMesYNivelSync(
           10, NivelEducativoSegundoCiclo.infantil4)!;
+      // Como la abre la app (M4.1): material, órdenes y fórmulas de la unidad.
+      await cursoTprLeido(tester);
+      final daUnidade = (await tester.runAsync(() => lerAsembleaDaUnidade(
+          contenido,
+          cursoDoNivel(NivelEducativoSegundoCiclo.infantil4),
+          10,
+          lang)))!;
       await capturar(
         tester,
         'aula-2ciclo-asemblea-$l',
@@ -541,9 +549,12 @@ void main() {
           subtitulo: '${nomeDoMes[asamblea.mes]!.resolve(lang)} · '
               '${asamblea.nivel.etiquetaCorta.resolve(lang)}',
           centroInteres: asamblea.centroInteres.resolve(lang),
+          material: daUnidade.material,
           audioService: MockOfflineAudioService(),
           language: lang,
           ponteAoDia: contenido.ponteAoDiaSync,
+          ordenes: daUnidade.ordenes,
+          formulas: daUnidade.formulas,
         ),
       );
     });

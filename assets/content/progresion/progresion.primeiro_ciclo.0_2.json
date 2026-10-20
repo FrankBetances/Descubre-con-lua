@@ -5,6 +5,10 @@
     "gl": "A temática, o material, a canción e as ordes de cada mes saen do documento curricular. O reparto por semanas e días é unha proposta de escalonamento segundo o método TPR (descubrir, practicar, combinar, consolidar); non está no documento e pódese cambiar aquí.",
     "es": "La temática, el material, la canción y las órdenes de cada mes salen del documento curricular. El reparto por semanas y días es una propuesta de escalonamiento según el método TPR (descubrir, practicar, combinar, consolidar); no está en el documento y se puede cambiar aquí."
   },
+  "lineaAdulta": {
+    "gl": "Despois de cada orde, cala de 3 a 5 segundos e mira: a resposta do bebé é do corpo, non da voz.",
+    "es": "Después de cada orden, calla de 3 a 5 segundos y mira: la respuesta del bebé es del cuerpo, no de la voz."
+  },
   "semanas": [
     {
       "numero": 1,

@@ -138,12 +138,17 @@ class DiaDeProgresion {
 class ProgresionDoMes {
   final String id;
   final LocalizedString nota;
+
+  /// La línea para la adulta en la fase de reto TPR (M4.1): cómo se dice la
+  /// orden en este tramo. `null` si el fichero no la trae.
+  final LocalizedString? lineaAdulta;
   final List<SemanaDeProgresion> semanas;
   final List<DiaDeProgresion> dias;
 
   const ProgresionDoMes({
     required this.id,
     required this.nota,
+    this.lineaAdulta,
     required this.semanas,
     required this.dias,
   });
@@ -168,6 +173,10 @@ class ProgresionDoMes {
       id: (json['id'] as String?)?.trim() ?? '',
       nota: LocalizedString.fromJson(
           Map<String, dynamic>.from(json['nota'] as Map? ?? {})),
+      lineaAdulta: json['lineaAdulta'] is Map
+          ? LocalizedString.fromJson(
+              Map<String, dynamic>.from(json['lineaAdulta'] as Map))
+          : null,
       semanas: List.unmodifiable(semanas),
       dias: List.unmodifiable(dias),
     );
