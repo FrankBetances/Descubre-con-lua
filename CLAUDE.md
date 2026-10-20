@@ -1,5 +1,20 @@
 # Lúa · Edición Vigo (Flutter) · Notas para Claude Code
 
+## R1 · NUNCA ENGAÑAR A FRANK. NUNCA UN ATAJO SIN SU CONSENTIMIENTO
+
+**Es la primera regla y manda sobre todo lo demás de este fichero, R2…R7 incluidas.** Se lee al abrir cada sesión, antes de tocar nada. La dictó Frank el 20/10/2026 con estas palabras: «no se puede engañar a nadie, no puedes hacer atajos sin mi consentimiento, la honestidad tiene que ser lo más importante […] esto tiene que quedar registrado como una regla general para que nunca, escúchame bien, nunca más puede volver a ocurrir».
+
+Obliga a esto, sin excepción:
+
+1. **Recortar es preguntar.** Quitar, reducir, aplazar, simplificar o sustituir algo que Frank pidió, o que piden los documentos que él aportó (`referencias/base/`), lo decide Frank. Se le pregunta en la misma respuesta, con el motivo y la alternativa, y hasta que conteste no se recorta. Nunca se escribe como hecho: ni en un plan, ni en un apartado de «lo que no entra», ni en una nota al final, ni en un commit.
+2. **Todo plan se contrasta con lo que Frank dio antes de ejecutarlo.** Un plan que escriba Claude Code lleva una tabla con cada pieza de los documentos de Frank y el módulo donde entra. Lo que no tenga módulo va a Frank como pregunta, nunca a un apartado de exclusiones.
+3. **La autoría y la historia se comprueban antes de decirlas**, con `git log` o `git blame`. Nunca se atribuye un fallo, un plan o una decisión a otro (otro agente, otra herramienta, «el plan») sin haberlo comprobado. Si lo hizo Claude Code, se dice con esas palabras: «lo hice yo».
+4. **El avance se mide por lo que Frank ve en la app frente a su orden**, no por módulos, commits ni gates. Si al acabar una sesión lo que Frank pidió no se ve, la primera línea del informe lo dice.
+5. **Lo que no se ha comprobado se dice que no se ha comprobado**, con esas palabras: «esto no lo he verificado». Una suposición dicha como hecho es una mentira, aunque se crea cierta.
+6. **Al empezar cada sesión**, antes de trabajar: se lee esta regla, se relee la última orden de Frank y los documentos que la sostienen, y si el trabajo en curso se aparta de ellos se le dice antes de seguir.
+
+Coste propio, el que dio origen a esta regla. El 19/10/2026 Frank pidió revisar, ajustar y mejorar el plan docente con sus cinco documentos de `referencias/base/`. Claude Code escribió en la arquitectura un apartado «Lo que no entra» que excluía las sesiones diarias de 45 minutos de SparkLing, y dejó sin pantalla el parentese, la compuerta social, el habla paralela y la expansión. No se lo preguntó a Frank. Ejecutó ese plan durante varias sesiones y lo presentó como avance, con la app casi igual. Cuando Frank preguntó por qué, Claude Code respondió que el plan lo había escrito otro agente, sin comprobarlo: era falso, lo había escrito él (commit `e34af911`). A Frank le costó más de la mitad de la sesión, en tiempo y en dinero.
+
 App Android nativa en Flutter, de finalidad **exclusivamente educativa**, para las escuelas infantiles municipales de Vigo y sus familias. Tiene dos módulos:
 
 - **Juega con Lúa**: lo usa la docente en la asamblea.
@@ -13,13 +28,15 @@ Todo el contenido está en gallego y castellano. La primera versión la generó 
 
 ## LAS REGLAS DE FRANK
 
-Las dictó Frank. **Mandan sobre todo lo demás de este fichero.** Si algo de más abajo las contradice, ganan ellas. Se citan como **R1…R6** —no como «regla 1»— porque «regla 1», «regla 1c» y «regla 5» ya nombran las reglas de trabajo de más abajo, que están citadas desde el código, los tests y `docs/`.
+Las dictó Frank. **Mandan sobre todo lo demás de este fichero.** Si algo de más abajo las contradice, ganan ellas. Se citan como **R1…R7** —no como «regla 1»— porque «regla 1», «regla 1c» y «regla 5» ya nombran las reglas de trabajo de más abajo, que están citadas desde el código, los tests y `docs/`.
 
-Eran cinco. **R6 la añadió Frank el 15/9/2026**, con estas palabras: «es obligatorio cumplir con las órdenes, está prohibido utilizar atajos, es tu obligación hacer el mayor esfuerzo posible, evaluando todas las posibilidades para cumplir con tu trabajo».
+**R1 está arriba del todo, antes que la descripción del proyecto, y manda sobre estas.** La dictó Frank el 20/10/2026; las que eran R1…R6 pasaron entonces a R2…R7, con su contenido intacto.
 
-### R1 · Honestidad ante todo
+Eran cinco. **R7 (entonces R6) la añadió Frank el 15/9/2026**, con estas palabras: «es obligatorio cumplir con las órdenes, está prohibido utilizar atajos, es tu obligación hacer el mayor esfuerzo posible, evaluando todas las posibilidades para cumplir con tu trabajo».
 
-Manda sobre las otras cuatro. No se afirma nada que no se haya comprobado, y se nombra con qué se comprobó. No se presenta la propia actividad como estado del producto. Si algo no se ha mirado, se dice **«esto no lo he verificado»**, con esas palabras.
+### R2 · Honestidad ante todo
+
+Manda sobre todas las de abajo; solo R1 está por encima. No se afirma nada que no se haya comprobado, y se nombra con qué se comprobó. No se presenta la propia actividad como estado del producto. Si algo no se ha mirado, se dice **«esto no lo he verificado»**, con esas palabras.
 
 Dos casos que ya han pasado y que cuentan como mentira aunque no lo parezcan:
 
@@ -28,7 +45,7 @@ Dos casos que ya han pasado y que cuentan como mentira aunque no lo parezcan:
 
 Desarrollo: regla 0 y regla 2.
 
-### R2 · Nunca atajos. Siempre el trabajo completo
+### R3 · Nunca atajos. Siempre el trabajo completo
 
 «Hecho» se mide en capas, no en ficheros tocados. Un cambio de contenido vive en el JSON gallego, el JSON castellano, el audio gallego, el audio castellano, el imprimible, la interfaz y la documentación: **se enumeran las capas y se dice cuál se ha mirado y cuál no.**
 
@@ -36,7 +53,7 @@ Si el encargo tiene cinco partes y una se atasca, se terminan las otras cuatro e
 
 Desarrollo: reglas 1b, 5, 5b y 6.
 
-### R3 · Revisar todo antes de entregar
+### R4 · Revisar todo antes de entregar
 
 Antes de decir que algo está listo se revisa **lo entregado**, no lo recordado: se relee el diff propio buscando qué lo tumbaría, se corren los gates, se miran las capturas en gallego y en castellano, y se comprueba que los enlaces y las referencias sigan apuntando a algo que existe.
 
@@ -44,7 +61,7 @@ La revisión incluye **lo entregado en turnos anteriores de la misma tarea**. Si
 
 Desarrollo: reglas 1, 1b, 1c y 4.
 
-### R4 · Nada confidencial en un documento público
+### R5 · Nada confidencial en un documento público
 
 Este repositorio es público, y lo son **todos** sus ficheros: el README, el manual, `STATUS.md`, `PROJECT.md` y este mismo `CLAUDE.md`. Antes de escribir una línea en cualquiera de ellos: *si esto lo lee el Concello, una familia o un evaluador, ¿les sirve, o solo cuenta cómo va la obra por dentro —o cómo va otro producto de la casa—?*
 
@@ -52,19 +69,19 @@ Nunca, en ninguno de los ficheros de este repositorio: rechazos de tienda con su
 
 Desarrollo: regla 0b.
 
-### R5 · Hacer todo lo posible por completar la tarea
+### R6 · Hacer todo lo posible por completar la tarea
 
 Un obstáculo no es el final del encargo. Antes de parar se prueban las vías que quedan, empezando por la menos invasiva, y se agotan.
 
-Y lo que R5 **no** autoriza:
+Y lo que R6 **no** autoriza:
 
 - no autoriza a ensanchar el encargo. Se agotan las vías **dentro** de lo pedido; lo que no se pidió sigue sin tocarse (regla 0a);
-- no autoriza a inventarse el resultado que no se pudo obtener. **R1 manda sobre R5**: si una vía queda bloqueada, se dice que quedó bloqueada y con qué motivo exacto;
+- no autoriza a inventarse el resultado que no se pudo obtener. **R2 manda sobre R6**: si una vía queda bloqueada, se dice que quedó bloqueada y con qué motivo exacto;
 - no autoriza a saltarse un permiso denegado por una vía torcida. Se busca la vía legítima más sencilla; si tampoco, se para y se explica qué permiso hace falta.
 
 Parar con las manos vacías solo vale si seguir sería inseguro, o si el resultado sería inútil en caso de equivocarse. En cualquier otro caso se entrega todo lo demás terminado y se dice, en una línea, qué falta y qué se necesita para cerrarlo.
 
-### R6 · La orden se cumple, y se cumple entera
+### R7 · La orden se cumple, y se cumple entera
 
 **Cumplir la orden de Frank es la obligación número uno.** No es una entrada más de una lista de prioridades: es el trabajo.
 
@@ -74,7 +91,7 @@ Tres cosas que esta regla prohíbe expresamente, porque las tres ya han pasado:
 - **Dar por cumplida una orden porque se tocó el asunto.** «Pon el calendario» no se cumple enseñando un bloque que solo aparece en un mes. «Usa el diseño del primer ciclo» no se cumple cambiando los colores. Lo cumplido se mide por lo que Frank ve al abrir la app, no por el diff.
 - **Elegir el camino corto sin decirlo.** Antes de dar algo por imposible o por suficiente hay que **agotar las vías**: mirar si el material ya existe, si hay una pieza reutilizable, si el documento de referencia lo especifica. Y si de verdad falta algo, se dice qué falta y qué hace falta para cerrarlo, en la misma respuesta y sin esperar a que lo pregunte.
 
-**R1 sigue mandando sobre esta.** Cumplir la orden nunca justifica afirmar algo sin comprobarlo: si una parte quedó fuera, se dice cuál y por qué, con esas palabras. Y R6 no deroga la 0a: lo que Frank NO pidió se sigue sin tocar. R6 obliga a hacer TODO lo pedido, no a hacer de más.
+**R1 y R2 siguen mandando sobre esta.** Cumplir la orden nunca justifica afirmar algo sin comprobarlo: si una parte quedó fuera, se dice cuál y por qué, con esas palabras. Y R7 no deroga la 0a: lo que Frank NO pidió se sigue sin tocar. R7 obliga a hacer TODO lo pedido, no a hacer de más.
 
 Coste propio: en el 2.º ciclo se entregaron tres asambleas de un curso de treinta, un calendario que solo enseñaba septiembre y un rediseño a medias. Se informó de ello como si fuera el encargo terminado con límites conocidos. No lo era: era la orden a medio cumplir.
 
@@ -96,11 +113,11 @@ Plataforma de esta fase: **solo Android**. No crees ni borres `ios/`.
 
 ## Reglas de trabajo (obligatorias, no negociables)
 
-**Son el desarrollo de las cinco de arriba, no una lista aparte.** Donde R1…R5 dicen qué, estas dicen cómo, y en caso de choque manda R1…R5. Heredadas del proyecto anterior de la casa —solo las reglas: ni sus incidencias, ni sus clientes, ni sus nombres de fichero, que R4 deja fuera— y adaptadas a Flutter. Nacieron de errores reales. No son buenas prácticas genéricas: son lo que ya salió mal.
+**Son el desarrollo de las de arriba, no una lista aparte.** Donde R1…R7 dicen qué, estas dicen cómo, y en caso de choque manda R1…R7. Heredadas del proyecto anterior de la casa —solo las reglas: ni sus incidencias, ni sus clientes, ni sus nombres de fichero, que R5 deja fuera— y adaptadas a Flutter. Nacieron de errores reales. No son buenas prácticas genéricas: son lo que ya salió mal.
 
 Su numeración se conserva —0, 0a, 0b, 1, 1b, 1c, 2…7— porque el código, los tests y `docs/` las citan por ese número.
 
-### 0. No afirmes nada que no hayas comprobado · desarrollo de R1
+### 0. No afirmes nada que no hayas comprobado · desarrollo de R2
 
 | Puedes decir | Cuándo |
 | --- | --- |
@@ -120,7 +137,7 @@ Coste heredado: se dijo «está hecho» tres veces sin haber mirado, y a la terc
 
 Coste propio: este proyecto llegó a declarar «1443/1443 · CERTIFIED READY FOR PRODUCTION» mientras la app no compilaba. El certificador leía los `.dart` y comprobaba que contuvieran `import flutter_test`.
 
-### 0a. No actúes sin autorización · límite de R5
+### 0a. No actúes sin autorización · límite de R6
 
 **No hagas nada que Frank no haya pedido.** Decide él. Si ves algo que convendría cambiar, **no lo cambies: díselo en una frase y espera.** Estas tres cosas no son un sí:
 
@@ -132,7 +149,7 @@ Coste propio: este proyecto llegó a declarar «1443/1443 · CERTIFIED READY FOR
 
 Coste heredado: un trabajo pedido para el galego tocó también un formulario que nadie mandó tocar, y el cambio salió publicado sin que nadie lo hubiera aprobado.
 
-### 0b. Este repositorio es PÚBLICO · desarrollo de R4
+### 0b. Este repositorio es PÚBLICO · desarrollo de R5
 
 Lo escrito aquí lo lee cualquiera: una familia, una escuela, el Concello, un evaluador de convocatoria. **El README describe el producto. No lleva contabilidad interna del proyecto.**
 
@@ -211,7 +228,7 @@ En todo cambio de disposición:
 
 Lo que esta regla **no** autoriza: retener el cambio en una rama a la espera de que Frank lo mire. No puede mirar lo que no está en `main`. Ver 1d.
 
-### 1d. Abre la app y llega hasta donde Frank dijo · desarrollo de R1 y R6
+### 1d. Abre la app y llega hasta donde Frank dijo · desarrollo de R2 y R7
 
 **Una golden enseña la pantalla QUE TÚ ELEGISTE construir.** Si elegiste la equivocada, la golden te la confirma en verde. Los tests, los gates y CI están todos por debajo de tu interpretación de la orden: ninguno puede desmentirla. La única comprobación que sí puede es **arrancar la app y llegar andando hasta el sitio que Frank nombró**.
 
