@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/fade_audio_coordinator.dart';
+import '../../../core/storage/calendario_store.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
@@ -8,10 +9,14 @@ import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/espera_visible.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart'
     show FaseAsamblea, TipoFaseAsamblea;
 import '../../../data/models/ponte_ao_dia_model.dart';
 import '../../../data/models/progresion_model.dart';
+import '../../../data/models/rexistro_frases_model.dart';
+import '../../premios/premios_model.dart';
+import '../../premios/premios_repository.dart';
 
 /// El reproductor de la asamblea, el mismo para los dos ciclos.
 ///
@@ -60,6 +65,38 @@ class AsambleaPlayerScreen extends StatefulWidget {
   /// en sus minutos; sin palabras, no aparece.
   final PonteAoDia? ponteAoDia;
 
+  /// La línea para la adulta en la fase de reto TPR: cómo se dice la orden
+  /// (espera y recast, apartado 7 de la arquitectura). Sale de la progresión
+  /// del tramo.
+  final String? lineaAdulta;
+
+  /// Las órdenes de la unidad del mes, ya resueltas en el registro de frases,
+  /// por el id de la orden de la asamblea (`cmd.outubro.0_2.01`). La unidad
+  /// trae exactamente las de su asamblea (lo comprueba
+  /// `tools/check_unidades.py`); el reproductor enseña las de la unidad.
+  final Map<String, PezaDaUnidade> ordenes;
+
+  /// Los segundos de la espera visible del reto (M4.2), de la progresión.
+  final int esperaSegundos;
+
+  /// La nota para las casas, que se abre al rematar (M4.3). Sin ella,
+  /// «Rematar» solo cierra.
+  final WidgetBuilder? notaParaCasas;
+
+  /// Lo que cuenta la asamblea al rematarla: los premios de la docente y el
+  /// calendario del aula. Era la asamblea de seis pasos la que lo hacía; al
+  /// retirarla (M4.3) lo hace esta. Solo se guarda la cuenta y el día, nada
+  /// de ninguna crianza ni de la sesión.
+  final PremiosRepository? premios;
+  final CalendarioStore? calendario;
+
+  /// Desde 3-4 años, las fórmulas del mes; van en la apertura.
+  final List<PezaDaUnidade> formulas;
+
+  /// El núcleo del mes anterior, que vuelve en la apertura de la semana 4
+  /// (Consolidar, apartado 4 de la arquitectura).
+  final List<PezaDaUnidade> reactivar;
+
   const AsambleaPlayerScreen({
     super.key,
     required this.fases,
@@ -72,6 +109,14 @@ class AsambleaPlayerScreen extends StatefulWidget {
     this.dia,
     this.semana,
     this.ponteAoDia,
+    this.lineaAdulta,
+    this.esperaSegundos = 5,
+    this.ordenes = const {},
+    this.formulas = const [],
+    this.reactivar = const [],
+    this.notaParaCasas,
+    this.premios,
+    this.calendario,
   });
 
   @override
@@ -80,6 +125,8 @@ class AsambleaPlayerScreen extends StatefulWidget {
 
 class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
   static const Color _fondo = Color(0xFF10151C);
+
+  bool _rematando = false;
   static const Color _superficie = Color(0xFF1A222C);
   static const Color _borde = Color(0xFF2C3846);
   static const Color _textoPrincipal = Color(0xFFF2F5F7);
@@ -124,6 +171,30 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
     _audio?.stopImmediate();
     _audio?.dispose();
     super.dispose();
+  }
+
+  /// Suma la asamblea a los premios y al calendario del aula, y lo dice.
+  Future<void> _contar() async {
+    if (widget.premios == null && widget.calendario == null) return;
+    final nuevas = await widget.premios?.registrar(
+          Perfil.docente,
+          EventoPremio.asamblea,
+        ) ??
+        const <Insignia>[];
+    // Solo el lado del aula: lo que pase en cada casa lo marca cada casa.
+    await widget.calendario?.registrarAula();
+    if (!mounted) return;
+    final isGl = widget.language == AppLanguage.gl;
+    final mensaje = nuevas.isNotEmpty
+        ? (isGl
+            ? 'Asemblea completada. Gañaches: ${nuevas.first.titulo.gl}'
+            : 'Asamblea completada. Ganaste: ${nuevas.first.titulo.es}')
+        : (isGl
+            ? 'Asemblea completada. Só se garda a conta, nada da sesión.'
+            : 'Asamblea completada. Solo se guarda la cuenta, nada de la sesión.');
+    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+      SnackBar(content: Text(mensaje), backgroundColor: AppTheme.calmSage),
+    );
   }
 
   Future<void> _parar() async {
@@ -238,6 +309,14 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
                         audioService: widget.audioService,
                         dia: widget.dia,
                         semana: widget.semana,
+                        lineaAdulta: widget.lineaAdulta,
+                        esperaSegundos: widget.esperaSegundos,
+                        ordenes: widget.ordenes,
+                        formulas: widget.formulas,
+                        // El núcleo del mes pasado vuelve en la semana 4.
+                        reactivar: widget.dia?.semana == 4
+                            ? widget.reactivar
+                            : const [],
                       ),
                     null => _PantallaAntesDaOrde(
                         palabras: _dadasPorSabidas,
@@ -260,7 +339,21 @@ class _AsambleaPlayerScreenState extends State<AsambleaPlayerScreen> {
                   }
                   // «Rematar» acaba la asamblea: no se abandona nada, así que
                   // no pregunta. Solo pregunta salir a medias (la X o atrás).
-                  Navigator.of(context).pop();
+                  // Con nota para las casas, la asamblea acaba en ella.
+                  // Un segundo toque mientras se guarda contaría dos veces.
+                  if (_rematando) return;
+                  _rematando = true;
+                  await _parar();
+                  await _contar();
+                  if (!context.mounted) return;
+                  final nota = widget.notaParaCasas;
+                  if (nota == null) {
+                    Navigator.of(context).pop();
+                    return;
+                  }
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: nota),
+                  );
                 },
               ),
             ],
@@ -349,6 +442,11 @@ class _PantallaDeFase extends StatelessWidget {
   final OfflineAudioService? audioService;
   final DiaDeProgresion? dia;
   final SemanaDeProgresion? semana;
+  final String? lineaAdulta;
+  final int esperaSegundos;
+  final Map<String, PezaDaUnidade> ordenes;
+  final List<PezaDaUnidade> formulas;
+  final List<PezaDaUnidade> reactivar;
 
   const _PantallaDeFase({
     required this.fase,
@@ -361,6 +459,11 @@ class _PantallaDeFase extends StatelessWidget {
     this.material,
     this.cancion,
     this.centroInteres,
+    this.lineaAdulta,
+    this.esperaSegundos = 5,
+    this.ordenes = const {},
+    this.formulas = const [],
+    this.reactivar = const [],
   });
 
   @override
@@ -373,6 +476,23 @@ class _PantallaDeFase extends StatelessWidget {
     final eNucleo = fase.tipo == TipoFaseAsamblea.coreTprChallenge;
     final diaDeHoxe = dia;
 
+    // La fase llena la pantalla cuando cabe y, si no cabe (texto grande, una
+    // consigna larga, la línea de la adulta, las fórmulas), se desplaza en
+    // vez de cortarse: en release un desbordamiento no se ve, solo corta.
+    return LayoutBuilder(
+      builder: (context, alto) => SingleChildScrollView(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(minHeight: alto.maxHeight),
+          child: IntrinsicHeight(
+              child: _contido(
+                  context, isGl, minutos, asset, temAudio, eNucleo, diaDeHoxe)),
+        ),
+      ),
+    );
+  }
+
+  Widget _contido(BuildContext context, bool isGl, int minutos, String? asset,
+      bool temAudio, bool eNucleo, DiaDeProgresion? diaDeHoxe) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
       child: Column(
@@ -484,7 +604,7 @@ class _PantallaDeFase extends StatelessWidget {
               etiqueta: fase.cueAcustica?.isNotEmpty == true
                   ? fase.cueAcustica!
                   : (isGl ? 'Son da fase' : 'Sonido de la fase'),
-              onPulsar: () => onAlternarAudio(asset),
+              onPulsar: () => onAlternarAudio(asset!),
             )
           else if (fase.cueAcustica?.isNotEmpty == true)
             _Cue(
@@ -492,8 +612,41 @@ class _PantallaDeFase extends StatelessWidget {
                 audioService: audioService,
                 isGl: isGl),
           const SizedBox(height: 14),
+          // Cómo se dice la orden: una línea, para la adulta. Las tarjetas de
+          // las órdenes son Expanded y ceden el sitio; la pantalla no crece.
+          if (eNucleo) ...[
+            // Cómo se dice la orden y, debajo, la espera: se toca tras
+            // decirla y el anillo se llena en silencio (M4.2).
+            if (lineaAdulta?.trim().isNotEmpty ?? false) ...[
+              Text(
+                lineaAdulta!,
+                key: const ValueKey('linea_adulta'),
+                maxLines: 4,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontFamily: AppTheme.fontFamily,
+                  fontSize: 14,
+                  height: 1.3,
+                  fontWeight: FontWeight.w600,
+                  color: _AsambleaPlayerScreenState._textoSecundario,
+                ),
+              ),
+              const SizedBox(height: 8),
+            ],
+            Align(
+              alignment: Alignment.centerLeft,
+              child: EsperaVisible(
+                segundos: esperaSegundos,
+                language: language,
+                color: _AsambleaPlayerScreenState._acento,
+                fondo: _AsambleaPlayerScreenState._superficie,
+              ),
+            ),
+            const SizedBox(height: 10),
+          ],
           // Los comandos en inglés, si esta fase los tiene. Máximo tres, que
-          // es lo que dicen los documentos: tres órdenes por sesión.
+          // es lo que dicen los documentos: tres órdenes por sesión. Con la
+          // unidad leída, el inglés y el gesto son los suyos (del registro).
           Expanded(
             child: fase.comandosL3.isEmpty
                 ? _Apoios(
@@ -501,6 +654,14 @@ class _PantallaDeFase extends StatelessWidget {
                     cancion: cancion,
                     centroInteres: centroInteres,
                     isGl: isGl,
+                    language: language,
+                    audioService: audioService,
+                    formulas: fase.tipo == TipoFaseAsamblea.aperturaSaudo
+                        ? formulas
+                        : const [],
+                    reactivar: fase.tipo == TipoFaseAsamblea.aperturaSaudo
+                        ? reactivar
+                        : const [],
                   )
                 : Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -508,8 +669,9 @@ class _PantallaDeFase extends StatelessWidget {
                       for (final cmd in fase.comandosL3.take(3))
                         Expanded(
                           child: _Comando(
-                            textoIngles: cmd.textoIngles,
-                            accion: cmd.accionFisica.resolve(language),
+                            textoIngles: ordenes[cmd.id]?.en ?? cmd.textoIngles,
+                            accion: ordenes[cmd.id]?.xesto.resolve(language) ??
+                                cmd.accionFisica.resolve(language),
                             audioService: audioService,
                             isGl: isGl,
                           ),
@@ -965,17 +1127,78 @@ class _Apoios extends StatelessWidget {
   final String? cancion;
   final String? centroInteres;
   final bool isGl;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+  final List<PezaDaUnidade> formulas;
+  final List<PezaDaUnidade> reactivar;
 
   const _Apoios({
     this.material,
     this.cancion,
     this.centroInteres,
     required this.isGl,
+    required this.language,
+    this.audioService,
+    this.formulas = const [],
+    this.reactivar = const [],
   });
 
   @override
   Widget build(BuildContext context) {
     final filas = <Widget>[];
+    // Lo del mes que se dice en la apertura: las fórmulas (desde 3-4) y, la
+    // semana 4, el núcleo del mes pasado. En pastillas con su voz.
+    for (final (clave, rotulo, pezas) in [
+      (
+        'apertura_formulas',
+        isGl ? 'Fórmulas do mes' : 'Fórmulas del mes',
+        formulas
+      ),
+      (
+        'apertura_reactivar',
+        isGl ? 'Volve do mes pasado' : 'Vuelve del mes pasado',
+        reactivar
+      ),
+    ]) {
+      if (pezas.isEmpty) continue;
+      filas.add(Padding(
+        key: ValueKey(clave),
+        padding: const EdgeInsets.only(bottom: 12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              rotulo,
+              style: const TextStyle(
+                fontFamily: AppTheme.fontFamily,
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+                color: _AsambleaPlayerScreenState._acento,
+              ),
+            ),
+            const SizedBox(height: 6),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                for (final p in pezas)
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: p.en,
+                    language: AppLanguage.en,
+                    interfaz: language,
+                    style: estiloIngles(p.en),
+                    comoChip: true,
+                    colorChip: _AsambleaPlayerScreenState._acento,
+                    descripcion: p.en,
+                    significado: p.significado ?? p.xesto,
+                  ),
+              ],
+            ),
+          ],
+        ),
+      ));
+    }
     if (centroInteres != null && centroInteres!.isNotEmpty) {
       filas.add(_fila(Icons.explore_rounded, centroInteres!));
     }

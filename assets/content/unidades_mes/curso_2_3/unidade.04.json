@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.04",
+  "curso": "curso_2_3",
+  "orden": 4,
+  "mesCalendario": 12,
+  "asamblea": "asamblea.primeiro_ciclo.decembro.2_3_anos",
+  "centroInteres": {
+    "gl": "O contraste entre o frío de fóra e a calor do colo",
+    "es": "El contraste entre el frío de fuera y el calor del regazo"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.decembro.2_3.01",
+      "objeto": {
+        "gl": "A campaíña de madeira",
+        "es": "La campanilla de madera"
+      }
+    },
+    {
+      "ref": "frase.cmd.decembro.2_3.02"
+    },
+    {
+      "ref": "frase.cmd.decembro.2_3.03"
+    },
+    {
+      "ref": "2_3.abril.s3.from-loud-to-quiet"
+    },
+    {
+      "ref": "2_3.abril.s3.shh-baby-s-sleeping"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.decembro.2_3.01",
+      "usa": [
+        "frase.cmd.decembro.2_3.01"
+      ]
+    },
+    {
+      "ref": "frase.cmd.decembro.2_3.02",
+      "usa": [
+        "frase.cmd.decembro.2_3.02",
+        "2_3.abril.s3.from-loud-to-quiet"
+      ]
+    },
+    {
+      "ref": "frase.cmd.decembro.2_3.03",
+      "usa": [
+        "frase.cmd.decembro.2_3.03"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Campaíñas de madeira con badalo protexido",
+      "es": "Campanillas de madera con badajo protegido"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Pasa de forte a suave coa campaíña",
+      "es": "Pasa de fuerte a suave con la campanilla"
+    },
+    {
+      "gl": "Érguese dun salto ao oír «Wake up!»",
+      "es": "Se levanta de un salto al oír «Wake up!»"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.novembro.2_3.01"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

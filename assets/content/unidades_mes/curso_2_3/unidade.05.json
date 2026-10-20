@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.05",
+  "curso": "curso_2_3",
+  "orden": 5,
+  "mesCalendario": 1,
+  "asamblea": "asamblea.primeiro_ciclo.xaneiro.2_3_anos",
+  "centroInteres": {
+    "gl": "As rutinas de abrigo e a autonomía ao vestirse",
+    "es": "Las rutinas de abrigo y la autonomía al vestirse"
+  },
+  "cancion": {
+    "titulo": "Put on Your Shoes"
+  },
+  "nucleo": [
+    {
+      "ref": "frase.cmd.xaneiro.2_3.01"
+    },
+    {
+      "ref": "frase.cmd.xaneiro.2_3.02"
+    },
+    {
+      "ref": "2_3.decembro.s3.zip-it-up"
+    },
+    {
+      "ref": "2_3.decembro.s1.wellington-boots"
+    },
+    {
+      "ref": "2_3.setembro.s1.coat-on-the-peg",
+      "objeto": {
+        "gl": "O abrigo na percha",
+        "es": "El abrigo en la percha"
+      }
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xaneiro.2_3.01",
+      "usa": [
+        "frase.cmd.xaneiro.2_3.01",
+        "2_3.decembro.s3.zip-it-up"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xaneiro.2_3.02",
+      "usa": [
+        "frase.cmd.xaneiro.2_3.02",
+        "2_3.decembro.s1.wellington-boots"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Sen material: mimo da roupa",
+      "es": "Sin material: mimo de la ropa"
+    },
+    {
+      "gl": "O abrigo de cada quen, na súa percha",
+      "es": "El abrigo de cada uno, en su percha"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Mete os brazos en mangas imaxinarias e fai «Zzzip!»",
+      "es": "Mete los brazos en mangas imaginarias y hace «Zzzip!»"
+    },
+    {
+      "gl": "Pisa forte tres veces nos charcos",
+      "es": "Pisa fuerte tres veces en los charcos"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.decembro.2_3.03"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

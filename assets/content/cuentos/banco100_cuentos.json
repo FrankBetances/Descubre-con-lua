@@ -4184,9 +4184,9 @@
     "orixeOpenSource": "Patrimonio Vigo Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
-      "fraseEn": "Give a hand and say hello!",
-      "comandoGl": "Acción física TPR guiada: Give a hand and say hello!",
-      "comandoEs": "Acción física TPR guiada: Give a hand and say hello!"
+      "fraseEn": "Hello! Give me your hand!",
+      "comandoGl": "Acción física TPR guiada: Hello! Give me your hand!",
+      "comandoEs": "Acción física TPR guiada: Hello! Give me your hand!"
     },
     "paginas": [
       {

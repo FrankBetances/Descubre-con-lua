@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.02",
+  "curso": "curso_0_2",
+  "orden": 2,
+  "mesCalendario": 10,
+  "asamblea": "asamblea.primeiro_ciclo.outubro.0_2_anos",
+  "centroInteres": {
+    "gl": "A conciencia do propio corpo e a propiocepción",
+    "es": "La conciencia del propio cuerpo y la propiocepción"
+  },
+  "cancion": {
+    "titulo": "One Little Finger"
+  },
+  "nucleo": [
+    {
+      "ref": "frase.cmd.outubro.0_2.01"
+    },
+    {
+      "ref": "frase.cmd.outubro.0_2.02",
+      "objeto": {
+        "gl": "Unha pluma suave",
+        "es": "Una pluma suave"
+      }
+    },
+    {
+      "ref": "frase.cmd.outubro.0_2.03"
+    },
+    {
+      "ref": "0_2.outubro.s1.tiny-toes"
+    },
+    {
+      "ref": "0_2.outubro.s2.head-to-toes"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.outubro.0_2.01",
+      "usa": [
+        "frase.cmd.outubro.0_2.01"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.0_2.02",
+      "usa": [
+        "frase.cmd.outubro.0_2.02"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.0_2.03",
+      "usa": [
+        "frase.cmd.outubro.0_2.03"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Plumas de avestruz de cores claras",
+      "es": "Plumas de avestruz de colores claros"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Ri ou encóllese coa pluma na barriga",
+      "es": "Ríe o se encoge con la pluma en la barriga"
+    },
+    {
+      "gl": "Busca coa mirada a parte do corpo que nomeas",
+      "es": "Busca con la mirada la parte del cuerpo que nombras"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.setembro.0_2.01",
+    "frase.cmd.setembro.0_2.03"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

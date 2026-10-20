@@ -7,25 +7,33 @@ void main() {
   final validator = ContentValidator();
 
   group('Clinical Terms Blacklist Linter Tests', () {
-    test(
-        'confirms zero clinical terms in assets/content/unidades/juega.mar.01.json',
-        () {
-      final file = File('assets/content/unidades/juega.mar.01.json');
-      expect(file.existsSync(), isTrue);
-
-      final jsonMap =
-          jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
-      final List<String> errors = [];
-      validator.checkClinicalTerms(jsonMap,
-          path: 'juega.mar.01', errors: errors);
-
-      expect(
-        errors,
-        isEmpty,
-        reason:
-            'juega.mar.01.json contained prohibited clinical terms:\n${errors.join("\n")}',
-      );
-    });
+    // Las unidades `juega.*` se retiraron en M4.3. Lo que la docente lee hoy
+    // en la asamblea —las asambleas de los dos ciclos, sus unidades del mes y
+    // las canciones con pulso— pasa la misma criba.
+    for (final path in [
+      'assets/content/cancions/cancions_con_pulso.json',
+      for (final d in const [
+        'assets/content/unidades_mes',
+        'assets/content/asambleas_primeiro_ciclo',
+        'assets/content/asambleas_segundo_ciclo',
+      ])
+        ...(Directory(d)
+            .listSync(recursive: true)
+            .whereType<File>()
+            .map((f) => f.path)
+            .where((p) => p.endsWith('.json'))
+            .toList()
+          ..sort()),
+    ]) {
+      test('confirms zero clinical terms in $path', () {
+        final jsonMap = jsonDecode(File(path).readAsStringSync());
+        final List<String> errors = [];
+        validator.checkClinicalTerms(jsonMap, path: path, errors: errors);
+        expect(errors, isEmpty,
+            reason:
+                '$path contained prohibited clinical terms:\n${errors.join("\n")}');
+      });
+    }
 
     test(
         'confirms zero clinical terms in assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json',

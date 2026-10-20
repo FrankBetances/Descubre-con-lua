@@ -241,6 +241,20 @@ class ProgressService {
     return List.unmodifiable(due);
   }
 
+  /// Pasa la tarjeta guardada con el número [de] al número [a], con toda su
+  /// historia. Si ya hay una tarjeta en [a], no toca nada: manda la nueva.
+  /// Devuelve la tarjeta que queda en [a], o nulo si no había ninguna en [de].
+  Future<FSRSCard?> moverTarxeta(int de, int a) async {
+    final xa = _fsrsCards[a];
+    if (xa != null) return xa;
+    final vella = _fsrsCards.remove(de);
+    if (vella == null) return null;
+    final nova = vella.copyWith(id: a);
+    _fsrsCards[a] = nova;
+    await save();
+    return nova;
+  }
+
   /// Saves or updates a card directly.
   Future<void> saveCard(FSRSCard card) async {
     _fsrsCards[card.id] = card;

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.09",
+  "curso": "curso_4_5",
+  "orden": 9,
+  "mesCalendario": 5,
+  "asamblea": "asamblea.segundo_ciclo.maio.5_infantil",
+  "centroInteres": {
+    "gl": "O nabo enorme e a corda de cáñamo",
+    "es": "El nabo enorme y la cuerda de cáñamo"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.setembro.s4.pull"
+    },
+    {
+      "ref": "3_4.setembro.s2.help"
+    },
+    {
+      "ref": "3_4.maio.s4.whisper"
+    },
+    {
+      "ref": "3_4.maio.s4.secret"
+    },
+    {
+      "ref": "3_4.setembro.s2.all-together"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "4_5.setembro.s1.fair"
+    },
+    {
+      "ref": "4_5.setembro.s2.sturdy"
+    },
+    {
+      "ref": "4_5.xuno.s3.brave-and-kind"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "frase.formula.help-me-please"
+    },
+    {
+      "ref": "4_5.decembro.s4.thank-you-so-much"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.first-then",
+    "nota": {
+      "gl": "First… then…: dúas accións, unha detrás da outra.",
+      "es": "First… then…: dos acciones, una detrás de otra."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.maio.5i.01",
+      "usa": [
+        "3_4.setembro.s4.pull",
+        "3_4.setembro.s2.all-together"
+      ]
+    },
+    {
+      "ref": "frase.cmd.maio.5i.02",
+      "usa": [
+        "3_4.setembro.s2.help"
+      ]
+    },
+    {
+      "ref": "frase.cmd.maio.5i.03",
+      "usa": [
+        "3_4.maio.s4.whisper",
+        "3_4.maio.s4.secret"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha corda de cánabo",
+      "es": "Una cuerda de cáñamo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Tira da corda ao mesmo tempo que o grupo ao contar",
+      "es": "Tira de la cuerda a la vez que el grupo al contar"
+    },
+    {
+      "gl": "Chama a outro compañeiro co xesto para que axude",
+      "es": "Llama a otro compañero con el gesto para que ayude"
+    }
+  ],
+  "reactivar": [
+    "3_4.febreiro.s2.sheep"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

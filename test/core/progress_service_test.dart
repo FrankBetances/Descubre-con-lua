@@ -35,6 +35,47 @@ void main() {
       expect(service.soundEnabled, isTrue);
     });
 
+    // M1.3: el banco de 3-4 cambió de id, y con él el número de sus tarjetas.
+    // Mover una tarjeta tiene que llevarse toda su historia y sobrevivir a un
+    // reinicio, o la persona adulta pierde su repaso al actualizar.
+    test('moverTarxeta pasa a tarxeta ao número novo con toda a súa historia',
+        () async {
+      final vella =
+          FSRSCard.initial(id: 11, lemma: 'Hello', now: DateTime(2026))
+              .copyWith(reps: 4, lapses: 1, stability: 3.5);
+      await service.saveCard(vella);
+
+      final nova = await service.moverTarxeta(11, 22);
+      expect(nova?.id, 22);
+      expect(service.getCard(11), isNull);
+
+      final despois = ProgressService(overrideDirectory: tempDir.path);
+      await despois.initialize();
+      final gardada = despois.getCard(22);
+      expect(gardada?.lemma, 'Hello');
+      expect(gardada?.reps, 4);
+      expect(gardada?.lapses, 1);
+      expect(gardada?.stability, 3.5);
+      expect(despois.getCard(11), isNull);
+    });
+
+    test('moverTarxeta non pisa unha tarxeta que xa está no número novo',
+        () async {
+      await service
+          .saveCard(FSRSCard.initial(id: 11, lemma: 'Hello').copyWith(reps: 4));
+      await service
+          .saveCard(FSRSCard.initial(id: 22, lemma: 'Hello').copyWith(reps: 9));
+
+      final queda = await service.moverTarxeta(11, 22);
+      expect(queda?.reps, 9);
+      expect(service.getCard(22)?.reps, 9);
+    });
+
+    test('moverTarxeta sen tarxeta no número vello non crea nada', () async {
+      expect(await service.moverTarxeta(11, 22), isNull);
+      expect(service.fsrsCards, isEmpty);
+    });
+
     test('addXp increments XP and persists across service instances', () async {
       await service.addXp(150);
       expect(service.xp, equals(150));

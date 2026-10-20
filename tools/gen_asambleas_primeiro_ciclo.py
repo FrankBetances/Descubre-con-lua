@@ -149,7 +149,7 @@ CURSO = [
             "comandos": [
                 ("Head", t("Roza suavemente a coroniña.", "Roza suavemente la coronilla.", "Gently brush the top of the head.")),
                 ("Tummy", t("Acaricia a barriga con movementos circulares.", "Acaricia la tripita con movimientos circulares.", "Stroke the tummy in circles.")),
-                ("Toes", t("Lixeiro cóxegas nos dedos dos pés.", "Leve cosquilleo en los dedos de los pies.", "A light tickle on the toes.")),
+                ("Toes", t("Cóxegas lixeiras nos dedos dos pés.", "Leve cosquilleo en los dedos de los pies.", "A light tickle on the toes.")),
             ],
         },
         "2_3": {

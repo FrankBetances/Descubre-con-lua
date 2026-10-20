@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.05",
+  "curso": "curso_4_5",
+  "orden": 5,
+  "mesCalendario": 1,
+  "asamblea": "asamblea.segundo_ciclo.xaneiro.5_infantil",
+  "centroInteres": {
+    "gl": "A tormenta no val",
+    "es": "La tormenta en el valle"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.xaneiro.s2.cloud"
+    },
+    {
+      "ref": "3_4.xaneiro.s2.umbrella"
+    },
+    {
+      "ref": "3_4.abril.s1.rain"
+    },
+    {
+      "ref": "3_4.marzo.s4.shake"
+    },
+    {
+      "ref": "3_4.abril.s1.sun"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.xaneiro.s2.wet"
+    },
+    {
+      "ref": "4_5.maio.s3.rainy-season"
+    },
+    {
+      "ref": "3_4.abril.s1.cloudy"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    },
+    {
+      "ref": "2_3.setembro.s2.here-you-go"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.on-under",
+    "nota": {
+      "gl": "Debaixo, enriba, dentro: co corpo antes que coa palabra.",
+      "es": "Debajo, encima, dentro: con el cuerpo antes que con la palabra."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xaneiro.5i.01",
+      "usa": [
+        "3_4.xaneiro.s2.cloud"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xaneiro.5i.02",
+      "usa": [
+        "3_4.xaneiro.s2.umbrella",
+        "frase.estructura.on-under"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xaneiro.5i.03",
+      "usa": [
+        "3_4.abril.s1.sun",
+        "3_4.marzo.s4.shake",
+        "3_4.xaneiro.s2.wet"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Sen material: o corpo",
+      "es": "Sin material: el cuerpo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Camiña ombreiro con ombreiro co grupo, amodo",
+      "es": "Camina hombro con hombro con el grupo, despacio"
+    },
+    {
+      "gl": "Agáchase baixo o paraugas imaxinario ao oír «under»",
+      "es": "Se agacha bajo el paraguas imaginario al oír «under»"
+    }
+  ],
+  "reactivar": [
+    "3_4.abril.s1.sun"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

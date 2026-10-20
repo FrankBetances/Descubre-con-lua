@@ -15,6 +15,7 @@ import '../../english/views/collocations_screen.dart';
 import '../../english/views/fsrs_trainer_screen.dart';
 import '../../english/views/listening_screen.dart';
 import '../../english/views/palabras_do_traxecto_screen.dart';
+import '../../juega/views/cancions_con_pulso_screen.dart';
 import '../../juega/views/unidades_list_screen.dart';
 import '../../lectura/views/phonix_quest_screen.dart';
 import '../../palabras/views/vocabulario_ingles_screen.dart';
@@ -99,6 +100,18 @@ class RecursosDocentesScreen extends StatelessWidget {
             NomesDocentes.dinamicasDi,
             (_) => DinamicasScreen(
                   repository: repository,
+                  initialLanguage: language,
+                  onLanguageChanged: onLanguageChanged,
+                ),
+          ),
+          (
+            'recurso_cancions',
+            Icons.music_note_rounded,
+            NomesDocentes.cancions,
+            NomesDocentes.cancionsDi,
+            (_) => CancionsConPulsoScreen(
+                  repository: repository,
+                  audioService: audioService,
                   initialLanguage: language,
                   onLanguageChanged: onLanguageChanged,
                 ),

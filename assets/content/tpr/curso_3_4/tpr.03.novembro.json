@@ -13,7 +13,7 @@
       },
       "palabras": [
         {
-          "id": "leaf",
+          "id": "3_4.novembro.s1.leaf",
           "en": "Leaf",
           "gl": "Folla",
           "es": "Hoja",
@@ -24,7 +24,7 @@
           }
         },
         {
-          "id": "tree",
+          "id": "3_4.novembro.s1.tree",
           "en": "Tree",
           "gl": "Árbore",
           "es": "Árbol",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "wind",
+          "id": "3_4.novembro.s1.wind",
           "en": "Wind",
           "gl": "Vento",
           "es": "Viento",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "id": "branch",
+          "id": "3_4.novembro.s1.branch",
           "en": "Branch",
           "gl": "Póla",
           "es": "Rama",
@@ -57,7 +57,7 @@
           }
         },
         {
-          "id": "autumn",
+          "id": "3_4.novembro.s1.autumn",
           "en": "Autumn",
           "gl": "Outono",
           "es": "Otoño",
@@ -68,7 +68,7 @@
           }
         },
         {
-          "id": "sky",
+          "id": "3_4.novembro.s1.sky",
           "en": "Sky",
           "gl": "Ceo",
           "es": "Cielo",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "id": "forest",
+          "id": "3_4.novembro.s1.forest",
           "en": "Forest",
           "gl": "Bosque",
           "es": "Bosque",
@@ -90,7 +90,7 @@
           }
         },
         {
-          "id": "falling",
+          "id": "3_4.novembro.s1.falling",
           "en": "Falling",
           "gl": "Caendo",
           "es": "Cayendo",
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": "blow",
+          "id": "3_4.novembro.s1.blow",
           "en": "Blow",
           "gl": "Soprar",
           "es": "Soplar",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "crunch",
+          "id": "3_4.novembro.s1.crunch",
           "en": "Crunch",
           "gl": "Renxer",
           "es": "Crujir",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "id": "pick-up",
+          "id": "3_4.novembro.s1.pick-up",
           "en": "Pick up",
           "gl": "Apañar",
           "es": "Recoger",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "id": "sweep",
+          "id": "3_4.novembro.s1.sweep",
           "en": "Sweep",
           "gl": "Varrer",
           "es": "Barrer",
@@ -145,7 +145,7 @@
           }
         },
         {
-          "id": "brown",
+          "id": "3_4.novembro.s1.brown",
           "en": "Brown",
           "gl": "Marrón",
           "es": "Marrón",
@@ -156,7 +156,7 @@
           }
         },
         {
-          "id": "orange",
+          "id": "3_4.novembro.s1.orange",
           "en": "Orange",
           "gl": "Laranxa",
           "es": "Naranja",
@@ -167,7 +167,7 @@
           }
         },
         {
-          "id": "dry",
+          "id": "3_4.novembro.s1.dry",
           "en": "Dry",
           "gl": "Seco, seca",
           "es": "Seco, seca",
@@ -178,7 +178,7 @@
           }
         },
         {
-          "id": "windy",
+          "id": "3_4.novembro.s1.windy",
           "en": "Windy",
           "gl": "Con vento",
           "es": "Con viento",
@@ -189,7 +189,7 @@
           }
         },
         {
-          "id": "crunch-leaves",
+          "id": "3_4.novembro.s1.crunch-leaves",
           "en": "Crunch leaves",
           "gl": "Pisa as follas",
           "es": "Pisa las hojas",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "id": "fall-down",
+          "id": "3_4.novembro.s1.fall-down",
           "en": "Fall down",
           "gl": "Déixate caer",
           "es": "Déjate caer",
@@ -211,7 +211,7 @@
           }
         },
         {
-          "id": "walk-softly",
+          "id": "3_4.novembro.s1.walk-softly",
           "en": "Walk softly",
           "gl": "Camiña suave",
           "es": "Camina suave",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "id": "under-the-tree",
+          "id": "3_4.novembro.s1.under-the-tree",
           "en": "Under the tree",
           "gl": "Debaixo da árbore",
           "es": "Debajo del árbol",
@@ -242,7 +242,7 @@
       },
       "palabras": [
         {
-          "id": "chestnut",
+          "id": "3_4.novembro.s2.chestnut",
           "en": "Chestnut",
           "gl": "Castaña",
           "es": "Castaña",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "id": "basket",
+          "id": "3_4.novembro.s2.basket",
           "en": "Basket",
           "gl": "Cesto",
           "es": "Cesta",
@@ -264,7 +264,7 @@
           }
         },
         {
-          "id": "mushroom",
+          "id": "3_4.novembro.s2.mushroom",
           "en": "Mushroom",
           "gl": "Cogomelo",
           "es": "Seta",
@@ -275,7 +275,7 @@
           }
         },
         {
-          "id": "squirrel",
+          "id": "3_4.novembro.s2.squirrel",
           "en": "Squirrel",
           "gl": "Esquío",
           "es": "Ardilla",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "id": "acorn",
+          "id": "3_4.novembro.s2.acorn",
           "en": "Acorn",
           "gl": "Landra",
           "es": "Bellota",
@@ -297,7 +297,7 @@
           }
         },
         {
-          "id": "pinecone",
+          "id": "3_4.novembro.s2.pinecone",
           "en": "Pinecone",
           "gl": "Piña",
           "es": "Piña",
@@ -308,7 +308,7 @@
           }
         },
         {
-          "id": "path",
+          "id": "3_4.novembro.s2.path",
           "en": "Path",
           "gl": "Camiño",
           "es": "Camino",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "id": "peel",
+          "id": "3_4.novembro.s2.peel",
           "en": "Peel",
           "gl": "Pelar",
           "es": "Pelar",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "id": "carry",
+          "id": "3_4.novembro.s2.carry",
           "en": "Carry",
           "gl": "Levar",
           "es": "Llevar",
@@ -341,7 +341,7 @@
           }
         },
         {
-          "id": "hide",
+          "id": "3_4.novembro.s2.hide",
           "en": "Hide",
           "gl": "Agochar",
           "es": "Esconder",
@@ -352,7 +352,7 @@
           }
         },
         {
-          "id": "find",
+          "id": "3_4.novembro.s2.find",
           "en": "Find",
           "gl": "Atopar",
           "es": "Encontrar",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "id": "climb",
+          "id": "3_4.novembro.s2.climb",
           "en": "Climb",
           "gl": "Rubir",
           "es": "Trepar",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "hot",
+          "id": "3_4.novembro.s2.hot",
           "en": "Hot",
           "gl": "Quente",
           "es": "Caliente",
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": "spiky",
+          "id": "3_4.novembro.s2.spiky",
           "en": "Spiky",
           "gl": "Espiñento, espiñenta",
           "es": "Pinchudo, pinchuda",
@@ -396,7 +396,7 @@
           }
         },
         {
-          "id": "shiny",
+          "id": "3_4.novembro.s2.shiny",
           "en": "Shiny",
           "gl": "Relucente",
           "es": "Reluciente",
@@ -407,7 +407,7 @@
           }
         },
         {
-          "id": "hard",
+          "id": "3_4.novembro.s2.hard",
           "en": "Hard",
           "gl": "Duro, dura",
           "es": "Duro, dura",
@@ -418,7 +418,7 @@
           }
         },
         {
-          "id": "where-is-the-squirrel",
+          "id": "3_4.novembro.s2.where-is-the-squirrel",
           "en": "Where is the squirrel?",
           "gl": "Onde está o esquío?",
           "es": "¿Dónde está la ardilla?",
@@ -429,7 +429,7 @@
           }
         },
         {
-          "id": "here-it-is",
+          "id": "3_4.novembro.s2.here-it-is",
           "en": "Here it is!",
           "gl": "Aquí está!",
           "es": "¡Aquí está!",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "in-the-basket",
+          "id": "3_4.novembro.s2.in-the-basket",
           "en": "In the basket",
           "gl": "No cesto",
           "es": "En la cesta",
@@ -451,7 +451,7 @@
           }
         },
         {
-          "id": "behind-the-tree",
+          "id": "3_4.novembro.s2.behind-the-tree",
           "en": "Behind the tree",
           "gl": "Detrás da árbore",
           "es": "Detrás del árbol",
@@ -471,7 +471,7 @@
       },
       "palabras": [
         {
-          "id": "owl",
+          "id": "3_4.novembro.s3.owl",
           "en": "Owl",
           "gl": "Moucho",
           "es": "Búho",
@@ -482,7 +482,7 @@
           }
         },
         {
-          "id": "fox",
+          "id": "3_4.novembro.s3.fox",
           "en": "Fox",
           "gl": "Raposo",
           "es": "Zorro",
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "hedgehog",
+          "id": "3_4.novembro.s3.hedgehog",
           "en": "Hedgehog",
           "gl": "Ourizo cacho",
           "es": "Erizo",
@@ -504,7 +504,7 @@
           }
         },
         {
-          "id": "deer",
+          "id": "3_4.novembro.s3.deer",
           "en": "Deer",
           "gl": "Cervo",
           "es": "Ciervo",
@@ -515,7 +515,7 @@
           }
         },
         {
-          "id": "mouse",
+          "id": "3_4.novembro.s3.mouse",
           "en": "Mouse",
           "gl": "Rato",
           "es": "Ratón",
@@ -526,7 +526,7 @@
           }
         },
         {
-          "id": "wolf",
+          "id": "3_4.novembro.s3.wolf",
           "en": "Wolf",
           "gl": "Lobo",
           "es": "Lobo",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "id": "boar",
+          "id": "3_4.novembro.s3.boar",
           "en": "Boar",
           "gl": "Xabarín",
           "es": "Jabalí",
@@ -548,7 +548,7 @@
           }
         },
         {
-          "id": "sniff",
+          "id": "3_4.novembro.s3.sniff",
           "en": "Sniff",
           "gl": "Ulir",
           "es": "Olfatear",
@@ -559,7 +559,7 @@
           }
         },
         {
-          "id": "run",
+          "id": "3_4.novembro.s3.run",
           "en": "Run",
           "gl": "Correr",
           "es": "Correr",
@@ -570,7 +570,7 @@
           }
         },
         {
-          "id": "creep",
+          "id": "3_4.novembro.s3.creep",
           "en": "Creep",
           "gl": "Avanzar ás agachadas",
           "es": "Avanzar agachado",
@@ -581,7 +581,7 @@
           }
         },
         {
-          "id": "dig",
+          "id": "3_4.novembro.s3.dig",
           "en": "Dig",
           "gl": "Cavar",
           "es": "Cavar",
@@ -592,7 +592,7 @@
           }
         },
         {
-          "id": "howl",
+          "id": "3_4.novembro.s3.howl",
           "en": "Howl",
           "gl": "Ouvear",
           "es": "Aullar",
@@ -603,7 +603,7 @@
           }
         },
         {
-          "id": "furry",
+          "id": "3_4.novembro.s3.furry",
           "en": "Furry",
           "gl": "Peludo, peluda",
           "es": "Peludo, peluda",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "wild",
+          "id": "3_4.novembro.s3.wild",
           "en": "Wild",
           "gl": "Salvaxe",
           "es": "Salvaje",
@@ -625,7 +625,7 @@
           }
         },
         {
-          "id": "tiny",
+          "id": "3_4.novembro.s3.tiny",
           "en": "Tiny",
           "gl": "Diminuto, diminuta",
           "es": "Diminuto, diminuta",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "id": "brave",
+          "id": "3_4.novembro.s3.brave",
           "en": "Brave",
           "gl": "Valente",
           "es": "Valiente",
@@ -647,7 +647,7 @@
           }
         },
         {
-          "id": "who-s-there",
+          "id": "3_4.novembro.s3.who-s-there",
           "en": "Who's there?",
           "gl": "Quen anda aí?",
           "es": "¿Quién anda ahí?",
@@ -658,7 +658,7 @@
           }
         },
         {
-          "id": "hoot-hoot",
+          "id": "3_4.novembro.s3.hoot-hoot",
           "en": "Hoot, hoot!",
           "gl": "Hu, hu!",
           "es": "¡Uh, uh!",
@@ -669,7 +669,7 @@
           }
         },
         {
-          "id": "shh-listen",
+          "id": "3_4.novembro.s3.shh-listen",
           "en": "Shh, listen!",
           "gl": "Chis, escoita!",
           "es": "¡Chis, escucha!",
@@ -680,7 +680,7 @@
           }
         },
         {
-          "id": "quiet-as-a-mouse",
+          "id": "3_4.novembro.s3.quiet-as-a-mouse",
           "en": "Quiet as a mouse",
           "gl": "Calado coma un rato",
           "es": "Callado como un ratón",
@@ -700,7 +700,7 @@
       },
       "palabras": [
         {
-          "id": "pumpkin",
+          "id": "3_4.novembro.s4.pumpkin",
           "en": "Pumpkin",
           "gl": "Cabaza",
           "es": "Calabaza",
@@ -711,7 +711,7 @@
           }
         },
         {
-          "id": "grapes",
+          "id": "3_4.novembro.s4.grapes",
           "en": "Grapes",
           "gl": "Uvas",
           "es": "Uvas",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "walnut",
+          "id": "3_4.novembro.s4.walnut",
           "en": "Walnut",
           "gl": "Noz",
           "es": "Nuez",
@@ -733,7 +733,7 @@
           }
         },
         {
-          "id": "corn",
+          "id": "3_4.novembro.s4.corn",
           "en": "Corn",
           "gl": "Millo",
           "es": "Maíz",
@@ -744,7 +744,7 @@
           }
         },
         {
-          "id": "potato",
+          "id": "3_4.novembro.s4.potato",
           "en": "Potato",
           "gl": "Pataca",
           "es": "Patata",
@@ -755,7 +755,7 @@
           }
         },
         {
-          "id": "soup",
+          "id": "3_4.novembro.s4.soup",
           "en": "Soup",
           "gl": "Caldo",
           "es": "Caldo",
@@ -766,7 +766,7 @@
           }
         },
         {
-          "id": "pot",
+          "id": "3_4.novembro.s4.pot",
           "en": "Pot",
           "gl": "Pota",
           "es": "Olla",
@@ -777,7 +777,7 @@
           }
         },
         {
-          "id": "stir",
+          "id": "3_4.novembro.s4.stir",
           "en": "Stir",
           "gl": "Remexer",
           "es": "Remover",
@@ -788,7 +788,7 @@
           }
         },
         {
-          "id": "cook",
+          "id": "3_4.novembro.s4.cook",
           "en": "Cook",
           "gl": "Cociñar",
           "es": "Cocinar",
@@ -799,7 +799,7 @@
           }
         },
         {
-          "id": "squash",
+          "id": "3_4.novembro.s4.squash",
           "en": "Squash",
           "gl": "Esmagar",
           "es": "Aplastar",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "id": "fill",
+          "id": "3_4.novembro.s4.fill",
           "en": "Fill",
           "gl": "Encher",
           "es": "Llenar",
@@ -821,7 +821,7 @@
           }
         },
         {
-          "id": "knock",
+          "id": "3_4.novembro.s4.knock",
           "en": "Knock",
           "gl": "Petar",
           "es": "Llamar (a la puerta)",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "juicy",
+          "id": "3_4.novembro.s4.juicy",
           "en": "Juicy",
           "gl": "Zumarento, zumarenta",
           "es": "Jugoso, jugosa",
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "ripe",
+          "id": "3_4.novembro.s4.ripe",
           "en": "Ripe",
           "gl": "Maduro, madura",
           "es": "Maduro, madura",
@@ -854,7 +854,7 @@
           }
         },
         {
-          "id": "crunchy",
+          "id": "3_4.novembro.s4.crunchy",
           "en": "Crunchy",
           "gl": "Crocante",
           "es": "Crujiente",
@@ -865,7 +865,7 @@
           }
         },
         {
-          "id": "sticky",
+          "id": "3_4.novembro.s4.sticky",
           "en": "Sticky",
           "gl": "Pegañento, pegañenta",
           "es": "Pegajoso, pegajosa",
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "it-smells-good",
+          "id": "3_4.novembro.s4.it-smells-good",
           "en": "It smells good!",
           "gl": "Que ben cheira!",
           "es": "¡Qué bien huele!",
@@ -887,7 +887,7 @@
           }
         },
         {
-          "id": "more-please",
+          "id": "3_4.novembro.s4.more-please",
           "en": "More, please",
           "gl": "Máis, por favor",
           "es": "Más, por favor",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "id": "stir-then-taste",
+          "id": "3_4.novembro.s4.stir-then-taste",
           "en": "Stir, then taste",
           "gl": "Remexer e logo probar",
           "es": "Remover y luego probar",
@@ -909,7 +909,7 @@
           }
         },
         {
-          "id": "in-the-pot",
+          "id": "3_4.novembro.s4.in-the-pot",
           "en": "In the pot",
           "gl": "Na pota",
           "es": "En la olla",

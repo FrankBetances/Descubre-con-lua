@@ -96,6 +96,16 @@ void main() {
 
     testWidgets('o venres, as 20 do reto soan (${lang.code})', (tester) async {
       await abrirPortal(tester, lang, agora: venres);
+      // M3.10: las del día van plegadas bajo el núcleo del mes; el reto está
+      // dentro.
+      final abrir = find.byKey(const Key('abrir_palabras_do_dia'));
+      await tester.scrollUntilVisible(abrir, 200,
+          scrollable: find.byType(Scrollable).first);
+      // Que no quede debajo de la barra de abajo, donde el toque no llega.
+      await tester.ensureVisible(abrir);
+      await tester.pumpAndSettle();
+      await tester.tap(abrir);
+      await tester.pumpAndSettle();
       final reto = find.byKey(const Key('reto_con_voz'));
       await tester.scrollUntilVisible(reto, 200,
           scrollable: find.byType(Scrollable).first);

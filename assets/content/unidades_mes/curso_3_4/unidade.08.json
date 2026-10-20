@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "id": "unidade.curso_3_4.08",
+  "curso": "curso_3_4",
+  "orden": 8,
+  "mesCalendario": 4,
+  "asamblea": "asamblea.segundo_ciclo.abril.4_infantil",
+  "centroInteres": {
+    "gl": "A coordinación diferencial dos andares",
+    "es": "La coordinación diferencial de los andares"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.febreiro.s2.horse"
+    },
+    {
+      "ref": "3_4.febreiro.s2.cow"
+    },
+    {
+      "ref": "3_4.febreiro.s2.sheep"
+    },
+    {
+      "ref": "3_4.febreiro.s2.gallop"
+    },
+    {
+      "ref": "3_4.outubro.s1.walk"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [
+    {
+      "ref": "frase.formula.here-you-are"
+    },
+    {
+      "ref": "3_4.setembro.s3.thank-you"
+    }
+  ],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.abril.4i.01",
+      "usa": [
+        "3_4.febreiro.s2.gallop",
+        "3_4.febreiro.s2.horse"
+      ]
+    },
+    {
+      "ref": "frase.cmd.abril.4i.02",
+      "usa": [
+        "3_4.outubro.s1.walk",
+        "3_4.febreiro.s2.cow"
+      ]
+    },
+    {
+      "ref": "frase.cmd.abril.4i.03",
+      "usa": [
+        "3_4.febreiro.s2.sheep"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Sen material: o corpo",
+      "es": "Sin material: el cuerpo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Cambia o andar segundo o animal que nomeas",
+      "es": "Cambia el andar según el animal que nombras"
+    },
+    {
+      "gl": "Galopa ao pulso sen chocar",
+      "es": "Galopa al pulso sin chocar"
+    }
+  ],
+  "reactivar": [
+    "3_4.outubro.s4.tall"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

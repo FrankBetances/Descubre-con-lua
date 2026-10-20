@@ -319,6 +319,14 @@ int idDaTarxetaDeRepaso(String idDaPalabra) {
   return h & 0x7fffffff;
 }
 
+/// El id que tenía una palabra de 3-4 años antes de M1.3, cuando ese curso
+/// usaba la palabra pelada («hello») y no el esquema de los otros cuatro
+/// («3_4.setembro.s1.hello»). Las tarjetas de repaso guardadas antes del
+/// cambio llevan el número de ese id viejo: sin esto, la persona adulta
+/// perdería su repaso de 3-4 al actualizar. Nulo si el id no es de 3-4.
+String? idAntigoDaPalabra(String idDaPalabra) =>
+    RegExp(r'^3_4\.[a-z]+\.s[1-4]\.(.+)$').firstMatch(idDaPalabra)?.group(1);
+
 /// El inglés de UN curso: los diez meses de un grupo de edad.
 ///
 /// Aquí no hay ni una palabra: si algo de esta clase se puede leer en
@@ -492,6 +500,23 @@ class ProgramaTpr {
   }
 
   int get totalPalabras => cursos.fold(0, (t, c) => t + c.totalPalabras);
+
+  /// La palabra del banco con ese id (`3_4.maio.s4.whisper`), o `null`. El
+  /// prefijo del id dice el curso, así que solo se busca en ese.
+  TprWord? palabra(String id) {
+    final punto = id.indexOf('.');
+    if (punto < 0) return null;
+    final curso = this.curso('curso_${id.substring(0, punto)}');
+    if (curso == null) return null;
+    for (final m in curso.meses) {
+      for (final s in m.semanas) {
+        for (final p in s.palabras) {
+          if (p.id == id) return p;
+        }
+      }
+    }
+    return null;
+  }
 
   /// Cuántas palabras hay de cada categoría en todo el trayecto.
   Map<String, int> get porCategoria {

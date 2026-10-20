@@ -3,6 +3,11 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:descubre_con_lua/features/calendario/widgets/asemblea_do_dia.dart';
+import 'package:descubre_con_lua/data/repositories/content_repository.dart';
+import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
+import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
+import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 
 import 'package:descubre_con_lua/core/brand/lua_pixel.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
@@ -10,7 +15,7 @@ import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/capsula_model.dart';
 import 'package:descubre_con_lua/data/models/curricular_model.dart';
-import 'package:descubre_con_lua/data/models/unidad_model.dart';
+import 'package:descubre_con_lua/data/models/revision_model.dart';
 import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
 
@@ -140,29 +145,99 @@ void main() {
   });
 
   group('la nota que cruza a las casas', () {
-    /// Se lee del árbol de trabajo y no del paquete a propósito: aquí el
-    /// contenido es el decorado —hace falta una unidad válida para montar la
-    /// pantalla—, y quien comprueba que el contenido VIAJA en el APK es
-    /// `test/data/bundle_real_test.dart`.
-    Unidad unidadReal() => Unidad.fromJson(
-          jsonDecode(File('assets/content/unidades/juega.mar.01.json')
-              .readAsStringSync()) as Map<String, dynamic>,
-        );
+    // Desde M4.3 cierra la asamblea de cuatro fases y sale de la unidad del
+    // mes: centro, núcleo y, en 2.º ciclo, la micro-rutina de casa. Se lee del
+    // árbol de trabajo; quien comprueba que el contenido VIAJA en el APK es
+    // `test/data/bundle_real_test.dart`.
+    late ContentRepository repo;
+    late AsembleaDaUnidade da02;
+    late AsembleaDaUnidade da56;
+    late AsambleaSegundoCiclo asemblea6;
+
+    setUpAll(() async {
+      Future<String> ler(String p) => File(p).readAsString();
+      repo = ContentRepository(loader: ContentAssetLoader(stringLoader: ler));
+      repo.addProgramaTpr(await ProgramaTpr.cargar(stringLoader: ler));
+      da02 =
+          (await lerAsembleaDaUnidade(repo, 'curso_0_2', 10, AppLanguage.gl))!;
+      da56 =
+          (await lerAsembleaDaUnidade(repo, 'curso_5_6', 10, AppLanguage.gl))!;
+      asemblea6 = AsambleaSegundoCiclo.fromJson(jsonDecode(File(
+              'assets/content/asambleas_segundo_ciclo/asamblea.segundo_ciclo.outubro.6_infantil.json')
+          .readAsStringSync()) as Map<String, dynamic>);
+    });
+
+    Future<void> pintar(WidgetTester tester, Widget nota,
+        {double escala = 1.0}) async {
+      tester.view.physicalSize = const Size(360, 780);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.lightTheme,
+        builder: (context, child) => MediaQuery(
+          data: MediaQuery.of(context)
+              .copyWith(textScaler: TextScaler.linear(escala)),
+          child: child!,
+        ),
+        home: nota,
+      ));
+      await tester.pumpAndSettle();
+    }
 
     for (final lang in AppLanguage.deInterfaz) {
       testWidgets('Lúa encabeza la nota en ${lang.code}', (tester) async {
-        await tester.pumpWidget(MaterialApp(
-          theme: AppTheme.lightTheme,
-          home: NotaParaCasasScreen(unidad: unidadReal(), language: lang),
-        ));
-        await tester.pumpAndSettle();
-
+        await pintar(
+            tester,
+            NotaParaCasasScreen(
+              centroInteres: da02.centroInteres,
+              nucleo: da02.nucleo,
+              language: lang,
+            ));
         expect(find.byType(LuaPixel), findsOneWidget,
             reason: 'La nota nombra a la gata y tiene que enseñarla.');
-        // Y sigue siendo la nota: el mensaje para las familias manda.
         expect(find.text(NotaParaCasasScreen.titulo.resolve(lang)),
             findsOneWidget);
+        // Lo que se hizo hoy es el centro del mes, el de la asamblea.
+        expect(find.text(da02.centroInteres.resolve(lang)), findsOneWidget);
+        // El núcleo del mes, cada pieza con su voz.
+        for (final p in da02.nucleo) {
+          expect(find.text(p.en), findsOneWidget, reason: p.en);
+        }
+        // En 1.º ciclo no hay micro-rutina de casa.
+        expect(
+            find.text(lang == AppLanguage.gl
+                ? 'PARA FACER NA CASA, 3 MINUTOS'
+                : 'PARA HACER EN CASA, 3 MINUTOS'),
+            findsNothing);
       });
+
+      for (final escala in [1.0, 1.8]) {
+        testWidgets(
+            'en 2.º ciclo leva a micro-rutina da súa asemblea e cabe, '
+            '${lang.code} a escala $escala', (tester) async {
+          await pintar(
+              tester,
+              NotaParaCasasScreen(
+                centroInteres: da56.centroInteres,
+                nucleo: da56.nucleo,
+                microRutina: asemblea6.microRutinaHogar,
+                language: lang,
+              ),
+              escala: escala);
+          expect(tester.takeException(), isNull);
+          final scroll = find.byType(Scrollable);
+          final rutina = find
+              .text(asemblea6.microRutinaHogar.escenaCotidiana.resolve(lang));
+          if (scroll.evaluate().isNotEmpty) {
+            await tester.scrollUntilVisible(rutina, 200,
+                scrollable: scroll.first);
+          }
+          expect(rutina, findsOneWidget);
+          expect(find.text(asemblea6.microRutinaHogar.titulo.resolve(lang)),
+              findsOneWidget);
+          expect(tester.takeException(), isNull);
+        });
+      }
     }
   });
 }

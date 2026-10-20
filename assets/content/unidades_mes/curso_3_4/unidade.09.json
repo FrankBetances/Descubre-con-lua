@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "id": "unidade.curso_3_4.09",
+  "curso": "curso_3_4",
+  "orden": 9,
+  "mesCalendario": 5,
+  "asamblea": "asamblea.segundo_ciclo.maio.4_infantil",
+  "centroInteres": {
+    "gl": "Os xogos de falda cruzando a liña media",
+    "es": "Los juegos de falda cruzando la línea media"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.outubro.s1.clap"
+    },
+    {
+      "ref": "3_4.outubro.s4.clap-your-hands"
+    },
+    {
+      "ref": "3_4.marzo.s4.high"
+    },
+    {
+      "ref": "3_4.marzo.s4.low"
+    },
+    {
+      "ref": "3_4.setembro.s1.friend"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [
+    {
+      "ref": "2_3.setembro.s2.my-turn"
+    },
+    {
+      "ref": "frase.formula.help-me-please"
+    }
+  ],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.maio.4i.01",
+      "usa": [
+        "3_4.outubro.s1.clap"
+      ]
+    },
+    {
+      "ref": "frase.cmd.maio.4i.02",
+      "usa": [
+        "3_4.outubro.s4.clap-your-hands",
+        "3_4.setembro.s1.friend"
+      ]
+    },
+    {
+      "ref": "frase.cmd.maio.4i.03",
+      "usa": [
+        "3_4.marzo.s4.high",
+        "3_4.marzo.s4.low",
+        "3_4.outubro.s1.clap"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Sen material: o corpo",
+      "es": "Sin material: el cuerpo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Cruza as mans e bate coas do compañeiro",
+      "es": "Cruza las manos y da la palmada con las del compañero"
+    },
+    {
+      "gl": "Palmea arriba e abaixo ao oír «high» e «low»",
+      "es": "Da palmas arriba y abajo al oír «high» y «low»"
+    }
+  ],
+  "reactivar": [
+    "3_4.febreiro.s2.horse"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

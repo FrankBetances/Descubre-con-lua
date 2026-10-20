@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.05",
+  "curso": "curso_5_6",
+  "orden": 5,
+  "mesCalendario": 1,
+  "asamblea": "asamblea.segundo_ciclo.xaneiro.6_infantil",
+  "centroInteres": {
+    "gl": "O equilibrio e a auga que non se derrama",
+    "es": "El equilibrio y el agua que no se derrama"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.maio.s1.water"
+    },
+    {
+      "ref": "3_4.abril.s4.balance"
+    },
+    {
+      "ref": "4_5.outubro.s3.step-across"
+    },
+    {
+      "ref": "4_5.marzo.s3.balance-a-plate"
+    },
+    {
+      "ref": "4_5.outubro.s3.balance-beam"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.decembro.s1.cold"
+    },
+    {
+      "ref": "3_4.xuno.s1.blue"
+    },
+    {
+      "ref": "3_4.xaneiro.s3.careful"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "2_3.setembro.s2.here-you-go"
+    },
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    }
+  ],
+  "estructura": {
+    "ref": "4_5.xuno.s4.if-it-s-hot-we-play-with-water",
+    "nota": {
+      "gl": "If…: se pasa unha cousa, faise outra. A criatura escoita a condición e decide co corpo.",
+      "es": "If…: si pasa una cosa, se hace otra. La criatura escucha la condición y decide con el cuerpo."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xaneiro.6i.01",
+      "usa": [
+        "4_5.outubro.s3.step-across",
+        "3_4.maio.s1.water",
+        "3_4.xaneiro.s3.careful"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xaneiro.6i.02",
+      "usa": [
+        "4_5.marzo.s3.balance-a-plate",
+        "2_3.setembro.s2.here-you-go"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xaneiro.6i.03",
+      "usa": [
+        "3_4.maio.s1.water",
+        "3_4.decembro.s1.cold",
+        "3_4.xuno.s1.blue",
+        "4_5.xuno.s4.if-it-s-hot-we-play-with-water"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha bandexa con auga",
+      "es": "Una bandeja con agua"
+    },
+    {
+      "gl": "Un banco baixo",
+      "es": "Un banco bajo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Camiña amodo sobre o banco sen verter a auga",
+      "es": "Camina despacio sobre el banco sin derramar el agua"
+    },
+    {
+      "gl": "Escoita a condición e vai á alfombra que lle toca",
+      "es": "Escucha la condición y va a la alfombra que le toca"
+    }
+  ],
+  "reactivar": [
+    "3_4.decembro.s2.light"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

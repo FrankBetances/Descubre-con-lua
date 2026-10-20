@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.06",
+  "curso": "curso_5_6",
+  "orden": 6,
+  "mesCalendario": 2,
+  "asamblea": "asamblea.segundo_ciclo.febreiro.6_infantil",
+  "centroInteres": {
+    "gl": "O escultor de disfraces",
+    "es": "El escultor de disfraces"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.outubro.s3.arms-up"
+    },
+    {
+      "ref": "3_4.febreiro.s4.costume"
+    },
+    {
+      "ref": "3_4.marzo.s2.shape"
+    },
+    {
+      "ref": "4_5.outubro.s1.statue"
+    },
+    {
+      "ref": "5_6.marzo.s2.copy-my-movements"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "4_5.xaneiro.s1.left"
+    },
+    {
+      "ref": "4_5.outubro.s1.motionless"
+    },
+    {
+      "ref": "4_5.febreiro.s1.dramatic"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    },
+    {
+      "ref": "5_6.febreiro.s2.it-s-your-turn-to-direct"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.first-then",
+    "nota": {
+      "gl": "First… then…: dúas ou tres accións en orde; a criatura móvese no orde que oe.",
+      "es": "First… then…: dos o tres acciones en orden; la criatura se mueve en el orden que oye."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.febreiro.6i.01",
+      "usa": [
+        "3_4.outubro.s3.arms-up",
+        "4_5.xaneiro.s1.left"
+      ]
+    },
+    {
+      "ref": "frase.cmd.febreiro.6i.02",
+      "usa": [
+        "3_4.setembro.s2.your-turn",
+        "4_5.outubro.s1.statue"
+      ]
+    },
+    {
+      "ref": "frase.cmd.febreiro.6i.03",
+      "usa": [
+        "3_4.marzo.s2.shape",
+        "5_6.marzo.s2.copy-my-movements"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Tarxetas icónicas",
+      "es": "Tarjetas icónicas"
+    },
+    {
+      "gl": "Disfraces",
+      "es": "Disfraces"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Coloca o corpo do compañeiro seguindo a orde oral",
+      "es": "Coloca el cuerpo del compañero siguiendo la orden oral"
+    },
+    {
+      "gl": "Copia a postura da tarxeta",
+      "es": "Copia la postura de la tarjeta"
+    }
+  ],
+  "reactivar": [
+    "3_4.abril.s4.balance"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

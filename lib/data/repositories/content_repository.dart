@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 import '../loaders/content_asset_loader.dart';
 import '../models/asamblea_primeiro_ciclo_model.dart';
 import '../models/asamblea_segundo_ciclo_model.dart';
+import '../models/cancion_pulso_model.dart';
 import '../models/capsula_model.dart';
 import '../models/corpus_palabra_model.dart';
 import '../models/cuento_model.dart';
@@ -15,15 +16,10 @@ import '../models/lamina_model.dart';
 import '../models/phonics_model.dart';
 import '../models/ponte_ao_dia_model.dart';
 import '../models/progresion_model.dart';
+import '../models/rexistro_frases_model.dart';
 import '../models/tpr_curriculum_scheduler.dart';
-// `Cuento` y `CuentoPagina` existen DOS veces en el proyecto y no son la misma
-// cosa: en unidad_model.dart son el cuento que vive DENTRO de una unidad de la
-// asamblea (sin id, con páginas de la unidad), y en cuento_model.dart son el
-// cuento suelto del banco de 200 (con id, curso, mes y preguntas graduadas).
-// Este fichero solo usa los del banco, así que se ocultan los de la unidad: sin
-// esto, los dos nombres chocan y el proyecto NO compila.
-import '../models/unidad_model.dart' hide Cuento, CuentoPagina;
 import '../models/steam_model.dart';
+import '../models/unidade_do_mes_model.dart';
 
 /// A content file that could not be loaded, kept instead of being discarded.
 class ContentLoadFailure {
@@ -75,7 +71,6 @@ class ContentRepository {
   static const String steamAssetPath = ContentAssetLoader.steamAssetPath;
 
   final ContentAssetLoader _loader;
-  final Map<String, Unidad> _unidadesById = {};
   final Map<String, Capsula> _capsulasById = {};
   final Map<String, AsambleaPrimeiroCiclo> _asambleasPrimeiroCicloById = {};
   final Map<String, AsambleaSegundoCiclo> _asambleasSegundoCicloById = {};
@@ -118,9 +113,6 @@ class ContentRepository {
   /// Whether any content file failed to load.
   bool get hasLoadErrors => _loadErrors.isNotEmpty;
 
-  /// Total count of loaded units.
-  int get unitCount => _unidadesById.length;
-
   /// Total count of loaded capsules.
   int get capsuleCount => _capsulasById.length;
 
@@ -153,14 +145,12 @@ class ContentRepository {
   /// async queries share the exact same initialization process without duplicate
   /// file I/O or race conditions.
   Future<void> initialize({
-    List<String>? unidadPaths,
     List<String>? capsulaPaths,
     List<String>? asambleaSegundoCicloPaths,
     bool forceReload = false,
   }) {
     if (!forceReload) {
       if (_isInitialized &&
-          unidadPaths == null &&
           capsulaPaths == null &&
           asambleaSegundoCicloPaths == null) {
         return Future.value();
@@ -173,7 +163,6 @@ class ContentRepository {
     final generation = ++_initGeneration;
     final future = _loadContent(
       generation: generation,
-      unidadPaths: unidadPaths,
       capsulaPaths: capsulaPaths,
       asambleaSegundoCicloPaths: asambleaSegundoCicloPaths,
     );
@@ -190,22 +179,16 @@ class ContentRepository {
 
   Future<void> _loadContent({
     required int generation,
-    List<String>? unidadPaths,
     List<String>? capsulaPaths,
     List<String>? asambleaSegundoCicloPaths,
   }) async {
-    final discovered = (unidadPaths == null ||
-            capsulaPaths == null ||
-            asambleaSegundoCicloPaths == null)
-        ? await _discover()
-        : null;
+    final discovered =
+        (capsulaPaths == null || asambleaSegundoCicloPaths == null)
+            ? await _discover()
+            : null;
 
     if (generation != _initGeneration) return;
 
-    final effectiveUnidadPaths = unidadPaths ??
-        (discovered?.unidades.isNotEmpty ?? false
-            ? discovered!.unidades
-            : [ContentAssetLoader.baseUnidadMar01]);
     final effectiveCapsulaPaths = capsulaPaths ??
         (discovered?.capsulas.isNotEmpty ?? false
             ? discovered!.capsulas
@@ -219,7 +202,6 @@ class ContentRepository {
                 ContentAssetLoader.baseAsambleaSetembro6,
               ]);
 
-    _unidadesById.clear();
     _capsulasById.clear();
     _asambleasPrimeiroCicloById.clear();
     _asambleasSegundoCicloById.clear();
@@ -227,20 +209,6 @@ class ContentRepository {
     _steamUnitsById.clear();
     _ponteAoDia = null;
     _loadErrors.clear();
-
-    for (final path in effectiveUnidadPaths) {
-      if (generation != _initGeneration) return;
-      try {
-        final unidad = await _loader.loadUnidadFromAsset(path);
-        if (generation != _initGeneration) return;
-        _unidadesById[unidad.id] = unidad;
-      } catch (e) {
-        // A file that fails to load used to vanish without a trace, leaving an
-        // empty screen and no way to tell an empty catalogue from a broken
-        // one. The failure is kept so the screen can say which file it was.
-        _loadErrors.add(ContentLoadFailure(path, e.toString()));
-      }
-    }
 
     for (final path in effectiveCapsulaPaths) {
       if (generation != _initGeneration) return;
@@ -347,28 +315,6 @@ class ContentRepository {
       if (a.mes == mes && a.tramo == tramo) return a;
     }
     return null;
-  }
-
-  /// Returns all available pedagogical units sorted by their canonical order.
-  List<Unidad> getAllUnidades() {
-    final list = _unidadesById.values.toList();
-    list.sort((a, b) => a.orden.compareTo(b.orden));
-    return List.unmodifiable(list);
-  }
-
-  /// Finds a specific unit by its unique identifier (e.g., "juega.mar.01").
-  Unidad? getUnidadById(String id) {
-    return _unidadesById[id.trim()];
-  }
-
-  /// Filters units by age band ("0-2", "2-3", or "0-3" encompassing both).
-  List<Unidad> getUnidadesByTramoEtario(String tramoEtario) {
-    final cleanFilter = tramoEtario.trim();
-    final list = _unidadesById.values
-        .where((u) => u.matchesAgeBand(cleanFilter))
-        .toList();
-    list.sort((a, b) => a.orden.compareTo(b.orden));
-    return List.unmodifiable(list);
   }
 
   // --- CAPSULAS & BLOQUES (Academy · Familias) ---
@@ -950,13 +896,102 @@ class ContentRepository {
   /// El curso de inglés con ese id (`curso_0_2` … `curso_5_6`), si ya está.
   CursoTpr? cursoTprSync(String cursoId) => _programaTpr?.curso(cursoId);
 
-  // --- IN-MEMORY & TEST HELPER METHODS ---
+  // --- EL REGISTRO DE FRASES ---
 
-  /// Adds or updates an [Unidad] directly in memory (for tests and mocking).
-  void addUnidad(Unidad unidad) {
-    _unidadesById[unidad.id] = unidad;
-    _isInitialized = true;
+  RexistroDeFrases? _rexistroFrases;
+  Future<RexistroDeFrases?>? _cargandoRexistroFrases;
+
+  /// El inglés que no es palabra del banco, o `null` si no se pudo leer. Con
+  /// el banco, es lo que resuelve los ids que cita una unidad del mes.
+  Future<RexistroDeFrases?> loadRexistroFrases() {
+    final ya = _rexistroFrases;
+    if (ya != null) return Future.value(ya);
+    return _cargandoRexistroFrases ??= _loader
+        .loadRawString(RexistroDeFrases.asset)
+        .then<RexistroDeFrases?>((raw) {
+      final rexistro = RexistroDeFrases.fromJson(
+          Map<String, dynamic>.from(jsonDecode(raw) as Map));
+      _rexistroFrases = rexistro;
+      return rexistro;
+    }).catchError((Object e) {
+      _loadErrors.add(ContentLoadFailure(RexistroDeFrases.asset, e.toString()));
+      _cargandoRexistroFrases = null;
+      return null;
+    });
   }
+
+  RexistroDeFrases? get rexistroFrasesSync => _rexistroFrases;
+
+  /// El núcleo de [unidade] con su inglés y su gesto, con lo que ya esté
+  /// leído del banco y del registro.
+  List<PezaDaUnidade> nucleoSync(UnidadeDoMes unidade) => nucleoResolto(
+        unidade,
+        programa: _programaTpr,
+        rexistro: _rexistroFrases,
+      );
+
+  /// Una pieza que cita una unidad (una fórmula, una descriptiva, la
+  /// estructura), con su inglés y su gesto; `null` si aún no está leída.
+  PezaDaUnidade? pezaSync(String ref) =>
+      resolverPeza(ref, programa: _programaTpr, rexistro: _rexistroFrases);
+
+  // --- LAS CANCIONES CON PULSO ---
+
+  List<CancionConPulso>? _cancionsConPulso;
+
+  /// Las diez canciones con pulso (Recursos), leídas una vez. Lista vacía si
+  /// no se pudieron leer; el fallo queda en [loadErrors].
+  Future<List<CancionConPulso>> loadCancionsConPulso() async {
+    final ya = _cancionsConPulso;
+    if (ya != null) return ya;
+    try {
+      final cancions = CancionsConPulso.desdeJson(
+          await _loader.loadRawString(CancionsConPulso.asset));
+      _cancionsConPulso = cancions;
+      return cancions;
+    } catch (e) {
+      _loadErrors.add(ContentLoadFailure(CancionsConPulso.asset, e.toString()));
+      return const [];
+    }
+  }
+
+  // --- LA UNIDAD DEL MES ---
+
+  final Map<String, UnidadeDoMes> _unidadesDoMes = {};
+
+  /// El mes del curso (1 es septiembre) de un mes del calendario, o `null` en
+  /// julio y agosto.
+  static int? ordenDoMes(int mesCalendario) {
+    final i = const [9, 10, 11, 12, 1, 2, 3, 4, 5, 6].indexOf(mesCalendario);
+    return i < 0 ? null : i + 1;
+  }
+
+  /// La unidad de [cursoId] en el mes del calendario [mesCalendario], leída una
+  /// vez. `null` en julio y agosto, o si no se pudo leer (queda en
+  /// [loadErrors]).
+  Future<UnidadeDoMes?> loadUnidadeDoMes(String cursoId, int mesCalendario) {
+    final orden = ordenDoMes(mesCalendario);
+    if (orden == null) return Future.value(null);
+    final clave = '$cursoId.$orden';
+    final ya = _unidadesDoMes[clave];
+    if (ya != null) return Future.value(ya);
+    return _loader.loadUnidadeDoMes(cursoId, orden).then<UnidadeDoMes?>((u) {
+      _unidadesDoMes[clave] = u;
+      return u;
+    }).catchError((Object e) {
+      _loadErrors.add(ContentLoadFailure(
+          ContentAssetLoader.unidadeDoMesPath(cursoId, orden), e.toString()));
+      return null;
+    });
+  }
+
+  /// La unidad si ya está leída.
+  UnidadeDoMes? unidadeDoMesSync(String cursoId, int mesCalendario) {
+    final orden = ordenDoMes(mesCalendario);
+    return orden == null ? null : _unidadesDoMes['$cursoId.$orden'];
+  }
+
+  // --- IN-MEMORY & TEST HELPER METHODS ---
 
   /// Deja el inglés del trayecto ya leído (para tests).
   void addProgramaTpr(ProgramaTpr programa) {
@@ -1105,7 +1140,6 @@ class ContentRepository {
   void clear() {
     _initGeneration++;
     _initFuture = null;
-    _unidadesById.clear();
     _capsulasById.clear();
     _asambleasPrimeiroCicloById.clear();
     _asambleasSegundoCicloById.clear();
@@ -1138,11 +1172,6 @@ class ContentRepository {
       bool isJsonUnder(String asset, String prefix) =>
           asset.startsWith(prefix) && asset.endsWith('.json');
       return _DiscoveredContent(
-        unidades: (assets
-            .where(
-                (a) => isJsonUnder(a, ContentAssetLoader.unidadesAssetPrefix))
-            .toList()
-          ..sort()),
         capsulas: (assets
             .where(
                 (a) => isJsonUnder(a, ContentAssetLoader.capsulasAssetPrefix))
@@ -1166,7 +1195,6 @@ class ContentRepository {
       );
     } catch (_) {
       return const _DiscoveredContent(
-        unidades: [],
         capsulas: [],
         asambleasPrimeiroCiclo: [],
         asambleasSegundoCiclo: [],
@@ -1176,14 +1204,12 @@ class ContentRepository {
 }
 
 class _DiscoveredContent {
-  final List<String> unidades;
   final List<String> capsulas;
   final List<String> asambleasPrimeiroCiclo;
   final List<String> asambleasSegundoCiclo;
   final List<String> progresions;
 
   const _DiscoveredContent({
-    required this.unidades,
     required this.capsulas,
     this.asambleasPrimeiroCiclo = const [],
     this.asambleasSegundoCiclo = const [],

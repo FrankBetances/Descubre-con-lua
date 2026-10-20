@@ -1,0 +1,324 @@
+﻿Catálogo de Estrategias de Apoyo Lingüístico: Fundamentación Psicolingüística y Guía de Intervención Naturalista en el Aula de Inglés
+Las Estrategias de Apoyo Lingüístico (Language Support Strategies, LSS) constituyen un conjunto de prácticas de interacción comunicativa fundamentadas en el modelo transaccional del desarrollo del lenguaje, la estimulación focalizada y los marcos de intervención conductual del desarrollo naturalista (Naturalistic Developmental Behavioral Interventions, NDBI), tales como la enseñanza en el medio natural enriquecido (Enhanced Milieu Teaching, EMT)1. Estas estrategias operan bajo el principio de que la adquisición de la lengua meta se optimiza cuando la mediación del adulto es estrictamente contingente tanto a nivel semántico como temporal respecto a la actividad y el foco atencional del aprendiz3.
+A diferencia de los enfoques clínico-pedagógicos directivos fundamentados en el ensayo discreto, la corrección punitiva o la demanda de repetición forzada, las LSS proporcionan andamiaje al desarrollo fonológico, morfosintáctico y pragmático en el marco ecológico de las rutinas cotidianas, el juego y las interacciones de aula2. En este entorno natural, el docente o mediador no actúa como examinador formal, sino como un facilitador responsivo que reduce activamente la carga en la memoria de trabajo del menor, favoreciendo la reorganización endógena de las reglas gramaticales del inglés4. Este documento articula los fundamentos psicopedagógicos, las evidencias empíricas de eficacia y los modelos operativos orientados a la adquisición y consolidación de la lengua inglesa en torno a sus cuatro herramientas cardinales: la reformulación indirecta (recasting), el modelado sintáctico mediante expansión (syntactic modeling), el habla paralela (parallel talk) y la regla del silencio clínico (wait time).
+Estrategia 1: Reformulación Indirecta (Conversational Recasting)
+Fundamento Psicolingüístico y Evidencia Empírica
+La reformulación conversacional indirecta consiste en una emisión receptiva del adulto que retoma de manera inmediata el contenido semántico o la intención comunicativa manifestada por el niño, modificando o restituyendo aquellos componentes fonológicos, morfológicos o sintácticos que resultaron defectuosos o incompletos en la producción original6. Su mecanismo cognitivo subyacente se fundamenta en la hipótesis del contraste cognitivo o cognitive mismatch4. Cuando el niño formula un mensaje en inglés, sus recursos ejecutivos se encuentran comprometidos en la selección léxica y la codificación proposicional; al recibir una devolución inmediata en un intervalo inferior a dos segundos, la representación errónea generada por el aprendiz permanece activa en su bucle fonológico de la memoria de trabajo4. Al superponerse la forma canónica sobre el significado aún activo, el sistema cognitivo del menor percibe con claridad la discrepancia entre su producción y la forma diana sin que medie una sanción verbal explícita8.
+En el metaanálisis de Cleave y colaboradores sobre la eficacia de los recasts en la intervención del lenguaje infantil, se demostraron tamaños de efecto de gran magnitud (   en medidas de ganancia morfosintáctica proximales y    en medidas distales de generalización comunicativa), consolidando a la reformulación como una de las estrategias de mayor respaldo en la logopedia y la pedagogía basada en la evidencia6. Investigaciones en el marco de la reformulación conversacional enriquecida (Enhanced Conversational Recast) demuestran que la eficacia de la técnica se maximiza cuando el adulto precede la emisión de claves de atención visual y auditiva orientadas hacia morfemas de alta opacidad en inglés, tales como el sufijo de pasado regular -ed, la tercera persona del singular -s, los verbos copulativos/auxiliares (is/are), las formas negativas contraídas (doesn't) y los pronombres personales8.
+Desde una perspectiva funcional, la literatura clínica categoriza las reformulaciones en tres tipologías estructurales: las declarativas, en las que el adulto asevera el enunciado corrigiendo la flexión o el orden gramatical; las interrogativas no invertidas, producidas con prosodia ascendente de verificación que invitan a continuar el intercambio dialógico sin forzar la ejecución; y las de elección interrogativa, que ofrecen al niño dos alternativas léxicas o estructurales que incluyen el blanco pedagógico buscado7.
+Ejemplos Canónicos en Lengua Inglesa
+
+
+Contexto / Entorno
+	Emisión Infantil
+	Respuesta del Adulto (LSS - Recasting)
+	Foco y Tipología Lingüística
+	Aula (Rincón de plástica)
+	"The brush breaked."
+	"Oh, the brush broke; let's find another one in the box."
+	Declarativo. Corrección de regularización indebida en pasado irregular (breaked    broke).
+	Hogar (Alimentación)
+	"He like juice."
+	"That's right! He likes orange juice."
+	Declarativo. Marcación de concordancia de tercera persona del singular de presente (like    likes).8
+	Aula (Patio de recreo)
+	"The boy no can jump."
+	"Can the boy not jump over the bench?"
+	Interrogativo no invertido. Corrección de estructura negativa y orden de modal auxiliar (no can    cannot / can't).
+	Juego libre (Construcción)
+	"Look, this truck is more big."
+	"Yes, that truck is bigger, or is the blue one bigger?"
+	Elección interrogativa. Foco en morfología comparativa sintética (more big    bigger).7
+	Aula (Asamblea matutina)
+	"Yesterday I goed to the park."
+	"Yes! You went to the park with your boots."
+	Declarativo. Corrección de sobregeneralización verbal en pretérito supletivo (goed    went).8
+	Hogar (Juego simbólico)
+	"Look at the tat."
+	"Oh, look at the soft cat sleeping on the rug."
+	Declarativo. Foco fonológico: supresión de proceso fonológico sustitutorio de frontalización velar (/t/    /k/).
+	Juego de mesa
+	"She don't have cards."
+	"Right, she doesn't have any cards left."
+	Declarativo. Modelo de concordancia en auxiliar negativo contraído (don't    doesn't).8
+	Rincón de lectura
+	"Two dog playing."
+	"Yes, two dogs are playing outside."
+	Declarativo. Doble diana: flexión de plural regular (-s) y suministro de auxiliar copulativo copresente (are).8
+	Desviaciones de Implementación y Corrección Técnica
+
+
+Práctica Desviada / Error Común
+	Impacto Psicolingüístico Negativo
+	Ajuste Técnico Recomendado
+	Corrección explícita punitiva
+
+
+(e.g., "Don't say 'goed', say 'went'. Say it: 'went'")
+	Activa el filtro afectivo del estudiante, induce inhibición y rompe la intención comunicativa al centrar la atención en el fallo formal8.
+	Eliminar toda instrucción metalingüística correctiva; responder de forma natural integrando la forma canónica dentro de la conversación8.
+	Latencia temporal diferida
+
+
+(e.g., emitir la reformulación tres turnos después del error infantil)
+	La representación fonológica de la emisión infantil se disipa de la memoria operativa, perdiéndose la ventana de contraste cognitivo contingente4.
+	Emitir la reformulación de forma inmediata en el turno conversacional contiguo (dentro de los primeros dos segundos tras la emisión del niño)4.
+	Hipertrofia sintáctica del modelo
+
+
+(e.g., expandir el error añadiendo oraciones subordinadas complejas e inconnexas)
+	Sobrecarga la capacidad atencional del niño y reduce la saliencia acústica del morfema o término diana4.
+	Ajustar la intervención a la regla de desarrollo próximo (  ): reparar exclusivamente el segmento deficitario manteniendo transparente la estructura oracional3.
+	Estrategia 2: Modelado Sintáctico y Expansión (Syntactic Modeling)
+Fundamento Psicolingüístico y Evidencia Empírica
+El modelado sintáctico mediante expansión gramatical se define como la intervención adulta orientada a tomar una producción infantil aislada o telegráfica (habitualmente holofrases o combinaciones de dos palabras) y estructurarla en una frase o cláusula oracional completa, preservando la intención pragmática original del menor1. Durante las fases de adquisición del inglés como primera o segunda lengua, las producciones iniciales se concentran en palabras de contenido léxico abierto (nombres y verbos no flexionados), omitiendo sistemáticamente las palabras de clase cerrada o functores gramaticales (artículos definidos e indefinidos, auxiliares de tiempo/aspecto, preposiciones y pronombres personales)13. En inglés, estos functores suelen carecer de acento tonal y presentan formas reducidas o clíticas en el habla conectada, lo que entorpece su aislamiento perceptivo directo8.
+A través de la expansión sintáctica, el adulto actúa como un transductor que completa los nodos estructurales faltantes en el esquema sintáctico del aprendiz6. A diferencia de la extensión semántica —cuyo propósito principal reside en añadir nuevos conceptos o información atributiva no implicada directamente por el niño—, la expansión sintáctica se restringe deliberadamente a dotar a los términos emitidos del marco gramatical canónico exigido por la sintaxis inglesa1. En programas de intervención naturalista como Enhanced Milieu Teaching, la provisión sistemática de expansiones sintácticas acelera el crecimiento de la Longitud Media del Enunciado (LME / MLU - Mean Length of Utterance) y promueve la internalización de patrones oracionales transitivos e intransitivos que luego se generalizan de manera espontánea1.
+Ejemplos Canónicos en Lengua Inglesa
+Contexto / Situación
+	Emisión Infantil (1-2 palabras)
+	Modelado Sintáctico Adulto (Expansión)
+	Estructura Sintáctica Aportada
+	Aula (Momento de snack)
+	"Water."
+	"You want to drink some cold water."
+	Conversión de sustantivo simple en cláusula transitiva con infinitivo subordinado, cuantificador y adyacente adjetival.
+	Juego (Pista de coches)
+	"Truck go."
+	"The big truck is going very fast."
+	Constitución de oración simple: artículo definido, adjetivo, auxiliar copulativo de aspecto continuo (is going) y sintagma adverbial.
+	Hogar (Rutina de vestido)
+	"Shoe."
+	"You are putting on your left shoe."
+	Adición de pronombre sujeto, verbo frasal continuo (putting on), posesivo de segunda persona y modificador espacial.
+	Aula (Rincón de lectura)
+	"Bird."
+	"That little bird is singing in the tree."
+	Estructuración con determinante demostrativo, verbo en presente continuo y sintagma preposicional locativo.
+	Patio (Juego de pelotas)
+	"Ball."
+	"You throw the red ball up high."
+	Transformación a sintagma verbal transitivo: pronombre sujeto, verbo transitivo, objeto directo modificado y adverbio locativo.
+	Manipulación (Plastilina)
+	"More."
+	"We need more yellow playdough."
+	Transformación de adverbio cuantificador en oración completa con verbo modal de necesidad y sintagma nominal definido.
+	Juego simbólico (Animales)
+	"Horse run."
+	"The brown horse is running across the grass."
+	Incorporación de determinante, adjetivo de color, auxiliar de presente continuo y sintagma preposicional de trayectoria.
+	Desviaciones de Implementación y Corrección Técnica
+
+
+Práctica Desviada / Error Común
+	Impacto Psicolingüístico Negativo
+	Ajuste Técnico Recomendado
+	Imitación en habla telegráfica
+
+
+(e.g., ante "baby sleep", responder "yes, baby sleep shh")
+	Priva al aprendiz de los morfemas funcionales del inglés, reforzando la estructura agramatical y retrasando el dominio de las cópulas y determinantes3.
+	Responder siempre con enunciados plenamente gramaticalizados: "The baby is sleeping peacefully in the crib"3.
+	Sobreexpansión desbordante
+
+
+(e.g., ante "car", responder con un discurso narrativo complejo de múltiples cláusulas)
+	Genera una brecha cognitiva inasimilable respecto al nivel de comprensión del aprendiz, anulando el valor didáctico del modelo sintáctico7.
+	Restringir el andamiaje a la adición controlada de uno a dos elementos gramaticales por encima del nivel productivo del menor (  )7.
+	Disociación del acto ilocutivo
+
+
+(e.g., expandir gramaticalmente el término ignorando la función comunicativa inmediata de petición o queja)
+	Desdibuja la función instrumental del lenguaje en el aula, convirtiendo el intercambio en una práctica mecánica descontextualizada.
+	Leer la intención comunicativa subyacente (petición de objeto, señalamiento deíctico, rechazo) y moldear la oración en función de dicha meta real.
+	Estrategia 3: Habla Paralela (Parallel Talk)
+Fundamento Psicolingüístico y Diferenciación Teórica
+El habla paralela se define como la narración continua, descriptiva y no coercitiva que el adulto efectúa sobre los objetos, acciones, atributos sensoriales y relaciones causales que el niño experimenta o manipula directamente en tiempo real11. A través de esta estrategia, el mediador pone en palabras la experiencia perceptiva del menor sin requerir de él ninguna ejecución vocal forzada, estableciendo una correlación temporal milimétrica entre la experiencia sensoriomotora y las etiquetas léxico-semánticas del inglés3.
+En la adquisición de segundas lenguas y el desarrollo temprano, el aprendizaje léxico depende críticamente de la atención conjunta y del mapeo rápido (fast mapping)7. Cuando los educadores saturan el espacio interactivo mediante preguntas evaluativas cerradas (tales como "What is this?", "What color is it?", "Can you say apple?"), generan un corte en la actividad cognitiva infantil3. El menor se ve forzado a desviar sus recursos de atención ejecutiva desde la exploración del material hacia el procesamiento de una demanda social de examen, lo que comúnmente dispara la pasividad, el mutismo o la frustración7. El habla paralela suprime el requerimiento de desempeño vocal, permitiendo al aprendiz procesar la prosodia y el vocabulario en inglés sin ansiedad mientras atiende al objeto de su interés5.
+Resulta clínico-pedagógicamente indispensable distinguir el habla paralela del auto-habla (self-talk)1. Mientras que en el auto-habla el adulto verbaliza sus propias acciones y manipulaciones en primera persona para modelar estrategias reflexivas o léxico procedimental (por ejemplo: "I am mixing the yellow and blue paint with my big brush"), en el habla paralela el foco discursivo se sitúa exclusivamente en la perspectiva de la segunda o tercera persona, narrando la conducta y percepción infantil10. Ambas herramientas pertenecen a la familia de estimulación naturalista, pero el habla paralela es la que garantiza la sintonía absoluta con el foco atencional del aprendiz7.
+
+
+Dimensión de Contraste
+	Habla Paralela (Parallel Talk)
+	Auto-Habla (Self-Talk)
+	Foco del discurso
+	Centrado en la conducta, percepción, manipulaciones y elecciones del niño12.
+	Centrado en las acciones, decisiones, manipulaciones y pensamientos del propio docente10.
+	Perspectiva gramatical
+	Segunda persona ("You are...") o tercera descriptiva ("Pushing the block...")14.
+	Primera persona del singular o plural ("I am...", "Now I will...")10.
+	Momento interactivo
+	Durante el juego o actividad en que el niño lidera la acción exploratoria7.
+	Al modelar una tarea procedimental o cuando el aprendiz se muestra indeciso o inhibido10.
+	Propósito evolutivo
+	Mapeo léxico-semántico en tiempo real y validación de la experiencia atencional del menor7.
+	Modelado de funciones ejecutivas, habla interna autorregulatoria y vocabulario de planificación10.
+	Ejemplos Canónicos en Lengua Inglesa
+Contexto / Entorno
+	Acción y Conducta del Niño
+	Enunciado en Habla Paralela (Adulto)
+	Foco Léxico y Gramatical Modelado
+	Sector de bloques
+	El niño apila con cuidado tres cubos de madera hasta que la columna se ladea.
+	"You are putting the red block on top. Now the tall tower is wobbling."
+	Posición espacial (on top), presente continuo, adjetivos de dimensión (tall) y verbos dinámicos (wobbling).
+	Higiene en el aula
+	El niño frota sus manos enjabonadas bajo el chorro de agua tibia y mira la espuma.
+	"You are scrubbing your hands with warm water. Look at all the white, slippery soap bubbles."
+	Verbos de acción física, concordancia adjetival descriptiva de texturas sensoriales y partes del cuerpo.
+	Taller de plástica
+	El niño desliza un rodillo con pintura verde sobre una cartulina grande.
+	"You are rolling the dark green paint all the way down the wide paper."
+	Direccionalidad (down), adjetivos de color y tamaño (wide), y estructura predicativa continua.
+	Mesa de arena y agua
+	El niño llena un cubo con arena seca y lo invierte rápidamente sobre la bandeja.
+	"You are filling the blue bucket with dry sand and dumping it out fast onto the table."
+	Secuencia temporal de acciones, preposiciones instrumentales (with), partículas frasales (dumping out) y adverbios.
+	Rincón de la cocinita
+	El niño toma una sartén de metal y remueve trozos de madera con una cuchara.
+	"You are stirring the soup in the hot pan with the wooden spoon."
+	Campo semántico de cocina, preposiciones locativas (in) e instrumentales (with).
+	Juego de vehículos
+	El niño empuja un camión de bomberos por la alfombra haciendo sonidos de sirena.
+	"You are pushing the heavy fire truck along the road to put out the fire."
+	Verbos de desplazamiento, sintagmas preposicionales de meta y vocabulario específico de profesiones.
+	Desviaciones de Implementación y Corrección Técnica
+
+
+Práctica Desviada / Error Común
+	Impacto Psicolingüístico Negativo
+	Ajuste Técnico Recomendado
+	El "interrogatorio encubierto"
+
+
+(e.g., "You are cutting playdough... what shape is that? What color? Answer me")
+	Reintroduce la ansiedad evaluativa y fractura la atención conjunta, empujando al aprendiz a abandonar el intercambio comunicativo7.
+	Eliminar las preguntas evaluativas; mantener el discurso estrictamente en enunciados descriptivos y aseverativos sobre la acción7.
+	Inundación acústica verborreica
+
+
+(e.g., monólogo constante a alta velocidad sin pausas ni modulaciones prosódicas)
+	Sobrecarga el procesador auditivo infantil, convirtiendo el inglés en un ruido de fondo indiferenciado e inaccesible al análisis gramatical3.
+	Segmentar el habla en oraciones cortas con entonación marcada, dejando pausas entre una descripción y la siguiente7.
+	Desincronización atencional
+
+
+(e.g., narrar la trayectoria de un coche cuando la mirada del niño ya se ha fijado en el avión)
+	Impide el correcto emparejamiento referencial, induciendo errores de asignación léxica en la red semántica en construcción7.
+	Monitorizar visualmente las manos y la mirada del niño, haciendo coincidir la palabra en inglés exactamente con el objeto en foco7.
+	Estrategia 4: Regla del Silencio Clínico y Tiempo de Espera (Wait Time)
+Fundamento Psicolingüístico y Neurodinámica del Procesamiento
+La regla del silencio clínico o tiempo de espera deliberado (wait time) postula la interrupción consciente y programada de la emisión verbal del adulto durante una ventana temporal que oscila entre los 3 y 5 segundos (ampliándose hasta 10 segundos en niños con dificultades específicas del lenguaje, estudiantes de inglés como segunda lengua o usuarios de sistemas de comunicación aumentativa), tanto tras la emisión de una consigna inicial como inmediatamente después de que el alumno produce su primera respuesta16.
+El origen experimental de este principio se remonta a las investigaciones clásicas de Mary Budd Rowe, en las que documentó que el tiempo de espera promedio concedido por los profesores antes de intervenir situaba su media en tan solo 0.9 segundos16. Cuando los docentes fueron entrenados para superar el umbral neurofisiológico de 2.7 a 3 segundos de silencio sostenido, se registraron cambios estructurales en el aula: la longitud media de las producciones orales de los estudiantes aumentó sustantivamente, las respuestas evasivas ("I don't know") disminuyeron drásticamente, las contribuciones espontáneas pertinentes se incrementaron y se redujo la brecha de participación entre aprendices rápidos y aquellos con ritmos de procesamiento más pausados16.
+En el ámbito logopédico y de atención temprana, el programa de intervención responsiva Observe, Wait and Listen (OWL), desarrollado por The Hanen Centre, formalizó el uso del silencio clínico de 5 a 10 segundos para fomentar la iniciativa comunicativa espontánea (turn-taking genuino)17. La neurodinámica subyacente reside en la complejidad intrínseca de la cascada de procesamiento lingüístico en el cerebro en desarrollo15.
+Producir una respuesta en inglés implica etapas cognitivas sucesivas no simultáneas: primero, la discriminación fonológica y segmentación del mensaje en inglés; segundo, el acceso al léxico mental y la extracción del significado proposicional; tercero, la formulación de la respuesta pragmática y su ensamblaje sintáctico en la lengua meta; y cuarto, la programación y ejecución motora bucofonatoria o la selección física del pictograma en un comunicador aumentativo (SAAC)7.
+En estudiantes que están aprendiendo inglés como nuevo idioma (ELL) o que presentan dificultades en el desarrollo del lenguaje (TDL/DLD), la velocidad de conducción y acceso en estas redes es significativamente más lenta. Si el adulto rompe el silencio antes de transcurridos cinco segundos refraseando la frase o insistiendo con una nueva pregunta en inglés, interrumpe el bucle fonológico del niño16. El cerebro del menor se ve obligado a abortar el plan motor articulatorio que estaba a punto de verbalizar para reiniciar el análisis del nuevo estímulo entrante, induciendo sobrecarga cognitiva y mutismo inducido18.
+Rowe estableció dos dimensiones funcionales del tiempo de espera que operan en momentos distintos de la conversación pedagógica16:
+* Wait Time 1 (Tiempo de Espera 1): Es la pausa que sigue inmediatamente a la emisión de una pregunta, comentario o presentación de un estímulo en inglés por parte del docente, permitiendo al menor procesar el mensaje y organizar su primera respuesta17.
+* Wait Time 2 (Tiempo de Espera 2): Es la pausa sostenida por el mediador una vez que el niño ha concluido su primera manifestación verbal17. La función de este segundo intervalo de silencio —frecuentemente omitido en el aula— radica en inhibir la evaluación evaluativa inmediata del adulto (evitando exclamaciones automáticas como "Good job!" o "Yes, correct"), lo que abre un espacio reflexivo en el que el menor amplía su respuesta en inglés, formula una autocorrección fonológica o añade un nuevo sintagma de mayor elaboración17.
+Arquitectura Comparativa de las Fases del Silencio Clínico
+
+
+Fase del Silencio Clínico
+	Conducta Físico-Postural del Mediador
+	Fenomenología Cognitiva en el Alumno
+	Producción Comunicativa Esperada en Inglés
+	Wait Time 1
+
+
+(Pausa tras pregunta o estímulo inicial)
+	Aproximación postural a la altura de los ojos, contención verbal absoluta, mirada cálida y conteo mental inaudible de 3 a 5 segundos15.
+	Descarga de la memoria operativa, decodificación del input en inglés, selección léxica y planificación del programa articulatorio.
+	Iniciación del turno: contacto visual, gesto funcional, señalamiento o emisión léxica inicial ("The red one")9.
+	Wait Time 2
+
+
+(Pausa tras la primera emisión infantil)
+	Mantenimiento de la postura de escucha receptiva, asentimiento suave con la cabeza y contención del elogio o juicio inmediato17.
+	Constatación de que el turno sigue abierto; automonitorización del propio mensaje y ensamblaje de cláusulas adicionales17.
+	Elaboración secundaria espontánea: autocorrección morfológica o adición sintáctica ("...because it is faster")17.
+	Extended Latency Wait
+
+
+(5 a 10 segundos en perfiles ELL / DLD / AAC)
+	Retención física de un material motivador sin bloquear la visión del niño, en postura expectante de oferta pausada7.
+	Reconocimiento de la contingencia comunicativa; traducción interlingüística y programación neuromuscular o selección en panel AAC3.
+	Petición formalizada en inglés: activación de icono en SAAC, aproximación verbal o producción de frase completa funcional9.
+	Desviaciones de Implementación y Corrección Técnica
+
+
+Práctica Desviada / Error Común
+	Impacto Psicolingüístico Negativo
+	Ajuste Técnico Recomendado
+	Preguntas "en ráfaga" por intolerancia al silencio
+
+
+(e.g., "Where are you going? To the table? Do you want scissors? Take them!")
+	Inunda de estímulos auditivos la corteza temporal, colapsando el bucle fonológico y cancelando la respuesta que el menor preparaba en inglés18.
+	Emitir un único estímulo conciso y mantener internamente un conteo mental sereno: one thousand one, one thousand two, one thousand three, one thousand four, one thousand five15.
+	Clausura evaluativa precipitada
+
+
+(e.g., saltar con un "Awesome!" a los 0.5 segundos de la primera respuesta infantil)
+	Cierra de manera prematura el turno conversacional, impidiendo que el alumno desarrolle oraciones compuestas o complete su idea17.
+	Aplicar rigurosamente el Wait Time 2: mantener tres segundos de silencio atento tras la emisión del niño antes de cualquier comentario docente17.
+	Silencio punitivo o de confrontación
+
+
+(e.g., mirar fijamente al niño con el ceño fruncido exigiendo una respuesta verbal en inglés)
+	Provoca bloqueo emocional o conductas de evitación en estudiantes con mutismo selectivo o aprendices iniciales de inglés.
+	Acompañar el tiempo de espera con corporalidad relajada, sonrisa de apoyo y gestos abiertos que comuniquen disponibilidad14.
+	Ficha de Referencia Rápida para el Docente: Matriz Operativa LSS (Inglés)
+
+
+Estrategia
+	Momento de Activación (Disparador)
+	Comportamiento Técnico del Mediador
+	Dimensión Lingüística Optimizada en Inglés
+	Fallo Crítico a Evitar
+	Recasting (Reformulación)
+	Inmediatamente tras un error morfológico, fonológico o de orden sintáctico en la emisión infantil9.
+	Repetir el significado emitido por el niño integrando la forma morfosintáctica correcta en inglés sin exigir repetición obligada9.
+	Flexiones de pasado irregular (ran), tercera persona (-s), cópulas (is/are), negativas (doesn't) y supresión de PFS6.
+	Decir: "That's wrong. Say it like this: [...]"8.
+	Syntactic Modeling (Expansión)
+	Inmediatamente tras una producción infantil telegráfica o aislada de 1-2 palabras.
+	Tomar las palabras de contenido infantil e insertarlas en una oración gramaticalmente completa y funcional (  ).
+	Expansión del MLU, adquisición de palabras de función (artículos, preposiciones, pronombres) y estructuras oracionales canónicas1.
+	Responder con habla telegráfica mimética o sobreexpandir con estructuras ininteligibles3.
+	Parallel Talking (Habla Paralela)
+	Durante el juego o manipulación libre del alumno, sin demanda previa de emisión verbal10.
+	Describir en voz alta, en tiempo presente y desde la perspectiva infantil lo que el menor mira, toca o realiza en el aula10.
+	Mapeo léxico directo, adquisición de adjetivos, relaciones espaciales y verbos dinámicos en el medio natural7.
+	Interrumpir la acción con preguntas de examen ("What's this called?", "What color is it?")7.
+	Wait Time (5 Seconds) (Silencio)
+	Tras plantear una consigna/pregunta (Fase 1) o tras el cese de una emisión del menor (Fase 2)17.
+	Suspender toda intervención verbal de 3 a 5 segundos (hasta 10 s en ELL/TDL), sosteniendo disponibilidad visual receptiva16.
+	Decodificación auditiva del inglés, formulación morfosintáctica, programación motora del habla y consolidación del turn-taking.
+	Rellenar el silencio con repeticiones continuas antes de los 3 segundos o emitir elogios precipitados17.
+	Integración Sistémica y Pautas de Dosificación en el Aula de Inglés
+La aplicación pedagógica del Catálogo de Estrategias de Apoyo Lingüístico no debe fragmentarse en técnicas aisladas, sino operar como un ciclo continuo y sinérgico de andamiaje dentro de las rutinas de aula1. En una interacción naturalista estándar en el aula de inglés, el docente sintoniza con la actividad del menor iniciando con habla paralela ("You are building a tall bridge with the blue blocks") para consolidar la atención conjunta; acto seguido, el educador aplica la regla de los 5 segundos de silencio clínico para habilitar el espacio de turno conversacional14. Cuando el estudiante responde mediante una palabra aislada ("Car"), el mediador aplica el modelado sintáctico para expandir el enunciado ("The fast car is driving across the bridge"); si dicha emisión incluye además un error gramatical o morfológico ("Car runned"), la intervención adopta inmediatamente el formato de una reformulación conversacional indirecta ("Yes, the fast car ran right through!")6.
+La investigación sobre dosificación de la intervención lingüística (treatment dosage) subraya que la consolidación de estructuras morfosintácticas complejas en inglés no depende de una exposición difusa e indiscriminada, sino de densidades controladas de modelos enriquecidos de alta calidad10. Para aprendices de inglés o niños con dificultades de lenguaje, la evidencia establece como umbral de eficacia la administración de una tasa de una a dos reformulaciones o expansiones de calidad por minuto durante sesiones de interacción dialógica de 15 a 20 minutos. Esta frecuencia asegura que el input sea lo bastante prominente como para disparar los mecanismos de inducción gramatical del aprendiz sin interrumpir la espontaneidad del juego o la comunicación4.
+Finalmente, la integración metódica de las LSS en la enseñanza del inglés requiere transformar el patrón discursivo tradicional dominante en las aulas, centrado históricamente en el esquema Iniciación-Respuesta-Evaluación (IRE), en el cual el docente formula preguntas cerradas sobre respuestas preestablecidas, el alumno responde bajo presión evaluativa y el adulto sanciona formalmente el acierto o el error19. Al sustituir dicho esquema por una interacción responsiva gobernada por la narración paralela, la espera reflexiva y la reformulación sin sanción, el aula se transforma en un entorno lingüístico auténtico donde la competencia en inglés se adquiere de forma funcional, fluida y significativa5.
+Obras citadas
+1. Language Pathologists in Early Intervention: Guidelines, https://providerconnections.org/wp-content/uploads/2021/08/SpeechGuidelines.pdf
+2. Late Language Emergence - ASHA, https://apps.asha.org/EvidenceMaps/Maps/LandingPage/278c5022-32a7-4f3d-85ad-3ce292970cf5
+3. The Role of Naturalistic Developmental Behavioral Interventions in, https://pmc.ncbi.nlm.nih.gov/articles/PMC10171846/
+4. Comparison of Conversational-Recasting and Imitative Procedures, https://pubs.asha.org/doi/10.1044/jshr.3706.1414
+5. Neurodiversity : r/slp - Reddit, https://www.reddit.com/r/slp/comments/ohhksi/neurodiversity/
+6. The Efficacy of Recasts in Language Intervention: A Systematic, https://www.researchgate.net/publication/272080596_The_Efficacy_of_Recasts_in_Language_Intervention_A_Systematic_Review_and_Meta-Analysis
+7. Recast type, repair, and acquisition in AAC mediated interaction, https://www.cambridge.org/core/journals/journal-of-child-language/article/recast-type-repair-and-acquisition-in-aac-mediated-interaction/A1CB700517CAA5A43AD28F48C80167E1
+8. What Matters When Providing Conversational Recast Treatment? A, https://pmc.ncbi.nlm.nih.gov/articles/PMC11903015/
+9. The Efficacy of Recasts in Language Intervention - ASHA Journals, https://pubs.asha.org/doi/abs/10.1044/2015_AJSLP-14-0105
+10. Predictors of Treatment Response for Preschool Children With, https://pmc.ncbi.nlm.nih.gov/articles/PMC8740565/
+11. Índice del Plan Anual - Colegio San Francisco de Asís, https://colegiosanfranciscodeasis.com/wp-content/uploads/2024/04/Plan-Anual-de-Centro-2023-2024-Nuevo.pdf
+12. Cuadernillo de Actividades para estimular lenguaje y habla.pdf, https://es.slideshare.net/slideshow/cuadernillo-de-actividades-para-estimular-lenguaje-y-habla-pdf/268169518
+13. UNA GUÍA PARA LA COMUNIDAD EDUCATIVA - Familia y Salud, https://www.familiaysalud.es/sites/default/files/guia_dificultades_especificas_en_el_lenguaje_y_la_comunicacion_-_modif.pdf
+14. 12 Ways to Elicit Language Development in Children - Allison Fors, https://allisonfors.com/elicit-language-development/
+15. How Can the Power of the Pause Give Young Children Enough, https://www.childcareed.com/a/how-can-the-power-of-the-pause-give-young-children-enough-time-to-respond.html
+16. Wait Time in Education: 3 Seconds That Change the Answer, https://www.structural-learning.com/post/wait-time-a-teachers-guide
+17. Observe. Wait. Listen - Wee Speech, https://weespeech.com/observe-wait-listen/
+18. Observe - Wait - Listen (OWL) - Talk Time Speech Language Therapy, https://www.talktimenj.com/post/__owl
+19. Wait Time: Making Space for Authentic Learning, https://www.kent.edu/ctl/wait-time-making-space-authentic-learning
+20. Wait Time in Synchronous and Asynchronous Online Learning, https://elearnmag.acm.org/archive.cfm?aid=3702010
+21. Wait Time | Colorín Colorado, https://www.colorincolorado.org/teaching-ells/ell-classroom-strategy-library/wait-time
+22. Speech/Language Pathology Doctoral Capstones, https://lrc.rm.edu/home-page/books/speechlanguage-pathology-doctoral-capstones/

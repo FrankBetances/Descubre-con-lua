@@ -40,7 +40,7 @@ void main() {
     Future<String> ler(String p) => File(p).readAsString();
     final loader = ContentAssetLoader(stringLoader: ler);
     repo = ContentRepository(loader: loader);
-    await repo.initialize(unidadPaths: const [], capsulaPaths: const []);
+    await repo.initialize(capsulaPaths: const []);
     repo.addProgramaTpr(await ProgramaTpr.cargar(stringLoader: ler));
     // Todo lo que se lee de disco, aquí: dentro de un `testWidgets` el reloj
     // es falso y una lectura de disco no termina.

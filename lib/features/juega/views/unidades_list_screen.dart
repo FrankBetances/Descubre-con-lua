@@ -6,10 +6,8 @@ import '../../../data/repositories/content_repository.dart';
 import '../../premios/premios_repository.dart';
 import '../../calendario/views/calendario_screen.dart';
 import '../../calendario/widgets/calendario_do_curso.dart';
-import '../../../data/models/unidad_model.dart';
+import '../../calendario/widgets/asemblea_do_dia.dart';
 import '../widgets/aula_ciclo_panel.dart';
-import '../widgets/fichas_de_unidades.dart';
-import 'asamblea_guiada_screen.dart';
 import '../widgets/aula_primeiro_ciclo_panel.dart';
 import '../widgets/circulo_do_dia.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
@@ -340,43 +338,24 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
     );
   }
 
-  Widget _fichasDeUnidades() {
-    return FichasDeUnidades(
-      unidades: widget.repository.getAllUnidades(),
-      language: _language,
-      onAbrir: (Unidad unidad) {
-        Navigator.of(context).push(
-          RutaLua(
-            de: context,
-            builder: (context) => AsambleaGuiadaScreen(
-              unidad: unidad,
-              premios: widget.premios,
-              calendario: widget.calendario,
-              audioService: widget.audioService,
-              initialLanguage: _language,
-              onLanguageChanged: _onToggleLanguage,
-            ),
-          ),
-        );
-      },
-    );
-  }
-
   Widget _buildPrimeiroCicloView(BuildContext context) {
     return AulaPrimeiroCicloPanel(
       asambleas: widget.repository.getAllAsambleasPrimeiroCicloSync(),
       language: _language,
       calendario: _calendarioDoAula,
-      pe: _fichasDeUnidades(),
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,
-      onComezar: (tramo, mes, dia) {
+      onComezar: (tramo, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaPrimeiroCicloSync(mes, tramo);
         if (asamblea == null) return;
-        final semana = widget.repository
-            .getProgresionSync('primeiro_ciclo.${tramo.clave}')
-            ?.semana(dia?.semana ?? 0);
+        final progresion = widget.repository
+            .getProgresionSync('primeiro_ciclo.${tramo.clave}');
+        final semana = progresion?.semana(dia?.semana ?? 0);
+        // M4.1: canción, material y órdenes, de la unidad del mes.
+        final daUnidade = await lerAsembleaDaUnidade(
+            widget.repository, cursoDoTramo(tramo), mes, _language);
+        if (!context.mounted) return;
         Navigator.of(context).push(
           RutaLua(
             de: context,
@@ -387,14 +366,24 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               subtitulo:
                   '${nomeDoMes[asamblea.mes]!.resolve(_language)} · ${asamblea.tramo.etiquetaCorta.resolve(_language)}'
                   '${dia != null ? ' · S${dia.semana} ${dia.nomeDia.resolve(_language)}' : ''}',
-              material: asamblea.materialDoMes.resolve(_language),
-              cancion: asamblea.cancionDoMes,
+              material: daUnidade?.material ??
+                  asamblea.materialDoMes.resolve(_language),
+              cancion: daUnidade?.cancion ?? asamblea.cancionDoMes,
               centroInteres: asamblea.centroInteres.resolve(_language),
               audioService: widget.audioService,
               language: _language,
               dia: dia,
               semana: semana,
               ponteAoDia: widget.repository.ponteAoDiaSync,
+              lineaAdulta: progresion?.lineaAdulta?.resolve(_language),
+              esperaSegundos: progresion?.esperaSegundos ?? 5,
+              ordenes: daUnidade?.ordenes ?? const {},
+              formulas: daUnidade?.formulas ?? const [],
+              reactivar: daUnidade?.reactivar ?? const [],
+              notaParaCasas: notaDaAsemblea(
+                  daUnidade, null, _language, widget.audioService),
+              premios: widget.premios,
+              calendario: widget.calendario,
             ),
           ),
         );
@@ -413,13 +402,16 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       calendario: _calendarioDoAula,
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,
-      onComezar: (nivel, mes, dia) {
+      onComezar: (nivel, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaByMesYNivelSync(mes, nivel);
         if (asamblea == null) return;
-        final semana = widget.repository
-            .getProgresionSync(AulaSegundoCicloPanel.claveProgresion(nivel))
-            ?.semana(dia?.semana ?? 0);
+        final progresion = widget.repository
+            .getProgresionSync(AulaSegundoCicloPanel.claveProgresion(nivel));
+        final semana = progresion?.semana(dia?.semana ?? 0);
+        final daUnidade = await lerAsembleaDaUnidade(
+            widget.repository, cursoDoNivel(nivel), mes, _language);
+        if (!context.mounted) return;
         Navigator.of(context).push(
           RutaLua(
             de: context,
@@ -428,12 +420,23 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               subtitulo:
                   '${nomeDoMes[asamblea.mes]!.resolve(_language)} · ${asamblea.nivel.etiquetaCorta.resolve(_language)}'
                   '${dia != null ? ' · S${dia.semana} ${dia.nomeDia.resolve(_language)}' : ''}',
+              material: daUnidade?.material,
+              cancion: daUnidade?.cancion,
               centroInteres: asamblea.centroInteres.resolve(_language),
               audioService: widget.audioService,
               language: _language,
               dia: dia,
               semana: semana,
               ponteAoDia: widget.repository.ponteAoDiaSync,
+              lineaAdulta: progresion?.lineaAdulta?.resolve(_language),
+              esperaSegundos: progresion?.esperaSegundos ?? 5,
+              ordenes: daUnidade?.ordenes ?? const {},
+              formulas: daUnidade?.formulas ?? const [],
+              reactivar: daUnidade?.reactivar ?? const [],
+              notaParaCasas: notaDaAsemblea(
+                  daUnidade, asamblea, _language, widget.audioService),
+              premios: widget.premios,
+              calendario: widget.calendario,
             ),
           ),
         );

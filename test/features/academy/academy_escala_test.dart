@@ -6,7 +6,7 @@ import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/capsula_model.dart';
 import 'package:descubre_con_lua/data/models/curricular_model.dart';
-import 'package:descubre_con_lua/data/models/unidad_model.dart' show Revision;
+import 'package:descubre_con_lua/data/models/revision_model.dart';
 import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.dart';
 
 /// El defecto que no se ve: en release un desborde no pinta franjas amarillas,

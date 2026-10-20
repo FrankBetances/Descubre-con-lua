@@ -84,6 +84,24 @@ run_gate "every bank card has a drawing" python3 tools/draw_flashcards.py --chec
 # lado de un icono del set propio diciendo lo mismo: dos avisos y dos dibujos,
 # distintos en cada fabricante. Regla 5 del CLAUDE.md.
 run_gate "no system emoji used as iconography" python3 tools/check_no_emoji.py
+# Nace de la decisión D3 del plan docente (M2.4): ningún texto pide a la
+# criatura que repita, traduzca o diga «cómo se dice», en gl, es ni en. El
+# modelo es el recast. Los textos de base lo pedían en varios sitios («Can you
+# say…?», «Say: …»), y un «repite» escrito en una consigna no lo ve ningún test.
+run_gate "nothing asks the child to repeat, translate or say how it's said" \
+  python3 tools/check_sin_repetir.py
+# Nace de la arquitectura docente (M3.2): el inglés que no es palabra del
+# banco vive en un registro con id, gesto y voz. Se deriva de sus fuentes; si
+# una orden cambia en su asamblea y no se regenera, rojo.
+run_gate "phrase register in sync with its sources" \
+  python3 tools/xera_rexistro_frases.py --check
+# Nace del mismo plan (M3.1): una unidad por curso y mes como única fuente del
+# mes. Antes cada pieza del mes contaba un tema distinto y solo 13 de las 133
+# órdenes estaban en el banco. Esto comprueba que lo que una unidad cita
+# existe, que su centro es el de la asamblea (D4) y que el núcleo tiene el
+# tamaño de su edad. En --estricto: las 50 tienen que estar.
+run_gate "every month unit cites what exists and follows its assembly" \
+  python3 tools/check_unidades.py --estricto
 # Nace del vocabulario inglés, que llegó del proyecto de origen con la
 # categoría gramatical y la frecuencia INVENTADAS y sin una sola frase. Ahora
 # las 3.995 traen categoría, frase entera y frecuencia medida, y esto comprueba

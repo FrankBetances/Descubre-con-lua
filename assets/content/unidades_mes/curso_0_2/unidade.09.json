@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.09",
+  "curso": "curso_0_2",
+  "orden": 9,
+  "mesCalendario": 5,
+  "asamblea": "asamblea.primeiro_ciclo.maio.0_2_anos",
+  "centroInteres": {
+    "gl": "Os hábitos de hixiene e o pracer de lavarse",
+    "es": "Los hábitos de higiene y el placer de lavarse"
+  },
+  "cancion": {
+    "titulo": "This Is the Way We Wash Our Hands"
+  },
+  "nucleo": [
+    {
+      "ref": "frase.cmd.maio.0_2.01",
+      "objeto": {
+        "gl": "A toalliña de felpa",
+        "es": "La toallita de felpa"
+      }
+    },
+    {
+      "ref": "0_2.maio.s1.splish-splash",
+      "objeto": {
+        "gl": "Unha bandexa con auga morna",
+        "es": "Una bandeja con agua templada"
+      }
+    },
+    {
+      "ref": "0_2.maio.s1.all-wet"
+    },
+    {
+      "ref": "0_2.maio.s3.soap-and-water"
+    },
+    {
+      "ref": "0_2.maio.s2.bath-time"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.maio.0_2.01",
+      "usa": [
+        "frase.cmd.maio.0_2.01"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Toalliñas de felpa humedecidas en hidrolato de lavanda apto para bebés",
+      "es": "Toallitas de felpa humedecidas en hidrolato de lavanda apto para bebés"
+    },
+    {
+      "gl": "Unha bandexa con auga morna",
+      "es": "Una bandeja con agua templada"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Deixa que lle frotes as mans sen retiralas",
+      "es": "Deja que le frotes las manos sin retirarlas"
+    },
+    {
+      "gl": "Ri ou chapotea ao oír «Splish, splash!»",
+      "es": "Ríe o chapotea al oír «Splish, splash!»"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.abril.0_2.01"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

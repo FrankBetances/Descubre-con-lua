@@ -9,18 +9,17 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
-import '../../../data/models/unidad_model.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
 import '../../../data/models/progresion_model.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
+import '../widgets/nucleo_do_mes.dart';
 import '../widgets/asemblea_do_dia.dart';
 import '../widgets/dia_no_fogar.dart';
 import '../widgets/palabras_do_dia.dart';
 import '../../academy/views/guia_atencion_screen.dart';
-import '../../juega/views/asamblea_guiada_screen.dart';
 import '../../premios/premios_repository.dart';
 import '../widgets/boton_lanzar_sesion.dart';
 import '../widgets/tarjeta_mes_curricular.dart';
@@ -292,6 +291,12 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
         if (mounted) setState(() {});
       });
     }
+    // Con el banco, resuelve el núcleo de la unidad del mes.
+    if (repo != null && repo.rexistroFrasesSync == null) {
+      repo.loadRexistroFrases().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
 
     final yaCargado = widget.contenido;
     if (yaCargado != null) {
@@ -375,16 +380,21 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     widget.onLanguageChanged?.call(newLang);
   }
 
-  /// La unidad de aula de ese mes, o `null` si todavía no está escrita.
+  /// El grupo de la asamblea de cuatro fases de la tarjeta: el de su curso,
+  /// ese mes. `null` si no hay asamblea escrita para él.
   ///
-  /// Antes esto caía en `unidades.first` cuando no encontraba el mes, y como
-  /// solo existe UNA unidad, los diez meses abrían la misma asamblea del Mar
-  /// de Vigo. Un calendario de diez meses sobre contenido de uno. Ahora, si no
-  /// hay unidad, no hay botón: el mes se ve «en preparación» y no miente.
-  Unidad? _unidadDe(MesCurricular mes) {
-    final id = mes.unidadId;
-    if (id == null) return null;
-    return widget.repository?.getUnidadById(id);
+  /// Antes este botón abría la asamblea de seis pasos de `unidades/juega.*`,
+  /// un solo tramo 0-3 para todos los cursos; se retiró en M4.3 (D5).
+  GrupoDaAsemblea? _grupoDe(MesCurricular mes) {
+    final repo = widget.repository;
+    if (repo == null) return null;
+    for (final g in gruposDaAsembleaDoDia(repo, mes.mesCalendario)) {
+      if (cursoTprDoGrupo[g.clave] == (mes.cursoId ?? _cursoAberto) &&
+          g.disponible) {
+        return g;
+      }
+    }
+    return null;
   }
 
   void _lanzarSesion(MesCurricular mes, bool esDocente) {
@@ -392,22 +402,22 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       widget.onIniciarSesion!(mes, esDocente);
       return;
     }
-
-    final unidad = _unidadDe(mes);
-    if (unidad == null) return;
-
-    Navigator.of(context).push(
-      RutaLua(
-        de: context,
-        builder: (context) => AsambleaGuiadaScreen(
-          unidad: unidad,
-          calendario: widget.store,
-          audioService: widget.audioService,
-          premios: widget.premios,
-          initialLanguage: _language,
-          onLanguageChanged: _onToggleLanguage,
-        ),
-      ),
+    final repo = widget.repository;
+    final grupo = _grupoDe(mes);
+    if (repo == null || grupo == null) return;
+    // La misma puerta que el botón del grupo en la ficha del día: la
+    // asamblea de cuatro fases, en la semana y el día elegidos.
+    abrirAsembleaDoDia(
+      context,
+      repo: repo,
+      grupo: grupo,
+      mesCalendario: mes.mesCalendario,
+      semana: _semana,
+      dia: _dia,
+      language: _language,
+      audioService: widget.audioService,
+      premios: widget.premios,
+      calendario: widget.store,
     );
   }
 
@@ -1080,27 +1090,52 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             // están en la tarjeta que hay justo encima, en la misma página.
             // Salían dos veces con 210 px de por medio, que es la misma
             // duplicación que hacía larga esta pantalla.
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                CircleAvatar(
-                  backgroundColor: context.acentoTint,
-                  radius: 24,
-                  child: Icon(iconoDeContenido(mes.icono),
-                      color: context.acento, size: 28),
-                ),
-                const SizedBox(width: AppTheme.spaceMd),
-                Expanded(
-                  child: Text(
-                    mes.objetivoPedagogico.resolve(_language),
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      color: AppTheme.textSecondary,
-                      height: 1.4,
+            //
+            // En el trayecto, el mes es su unidad: el núcleo va primero. El
+            // objetivo y las actividades de `curriculo_50_meses.json` ya no se
+            // pintan, porque contaban otro tema que el de la asamblea.
+            if (mes.unidade case final unidade?)
+              NucleoDoMes(
+                unidade: unidade,
+                nucleo: widget.repository?.nucleoSync(unidade) ?? const [],
+                formulas: [
+                  for (final r in unidade.formulas)
+                    if (widget.repository?.pezaSync(r) case final p?) p,
+                ],
+                descriptivas: [
+                  for (final r in unidade.descriptivas)
+                    if (widget.repository?.pezaSync(r) case final p?) p,
+                ],
+                estructura: switch (unidade.estructura) {
+                  final e? => widget.repository?.pezaSync(e.ref),
+                  null => null,
+                },
+                language: _language,
+                audioService: widget.audioService,
+                enCasa: !_esDocente,
+              )
+            else
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: context.acentoTint,
+                    radius: 24,
+                    child: Icon(iconoDeContenido(mes.icono),
+                        color: context.acento, size: 28),
+                  ),
+                  const SizedBox(width: AppTheme.spaceMd),
+                  Expanded(
+                    child: Text(
+                      mes.objetivoPedagogico.resolve(_language),
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: AppTheme.textSecondary,
+                        height: 1.4,
+                      ),
                     ),
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
             // El día STEAM de este mes, si lo hay: sin esto, para encontrar
             // la sesión en el calendario había que abrir los veinte días.
             if (_steamDoMes(mes) case final steam when steam.isNotEmpty) ...[
@@ -1113,22 +1148,23 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             ],
             const Divider(height: 32),
 
-            // La frase del mes, y solo la frase.
+            // La frase del mes, y solo la frase. Solo en el catálogo de diez
+            // meses: en el trayecto, el inglés del mes es su núcleo.
             //
             // El léxico y las órdenes TPR vivían aquí como una pared de diez
             // pastillas. Eso no lo usa nadie: la docente las necesita DENTRO
             // de la asamblea, en la fase en la que se dicen, y ahí están
             // ahora. La familia necesita una sola frase, la de su rutina.
-            Text(
-              _fraseKicker.resolve(_language),
-              style: theme.textTheme.labelSmall?.copyWith(
-                color: context.acento,
-                fontWeight: FontWeight.w800,
-                letterSpacing: 1.0,
+            if (mes.ingles.frase.isNotEmpty) ...[
+              Text(
+                _fraseKicker.resolve(_language),
+                style: theme.textTheme.labelSmall?.copyWith(
+                  color: context.acento,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 1.0,
+                ),
               ),
-            ),
-            const SizedBox(height: 8),
-            if (mes.ingles.frase.isNotEmpty)
+              const SizedBox(height: 8),
               BotonEscuchar(
                 audioService: widget.audioService,
                 texto: mes.ingles.frase,
@@ -1138,7 +1174,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                 comoChip: true,
                 colorChip: context.acento,
               ),
-            const SizedBox(height: 20),
+              const SizedBox(height: 20),
+            ],
 
             // Actividad según rol seleccionado
             if (_esDocente) ...[
@@ -1189,17 +1226,19 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   ],
                 ),
               ),
-              const SizedBox(height: 12),
-              _buildRoleSection(
-                kicker: _aulaKicker.resolve(_language),
-                content: mes.actividadAula.resolve(_language),
-                badge: _language == AppLanguage.gl
-                    ? 'Asemblea (5-8 min)'
-                    : 'Asamblea (5-8 min)',
-                icon: Icons.groups_rounded,
-                color: context.acento,
-                theme: theme,
-              ),
+              if (mes.actividadAula.hasParity) ...[
+                const SizedBox(height: 12),
+                _buildRoleSection(
+                  kicker: _aulaKicker.resolve(_language),
+                  content: mes.actividadAula.resolve(_language),
+                  badge: _language == AppLanguage.gl
+                      ? 'Asemblea (5-8 min)'
+                      : 'Asamblea (5-8 min)',
+                  icon: Icons.groups_rounded,
+                  color: context.acento,
+                  theme: theme,
+                ),
+              ],
             ] else ...[
               TemporizadorSutilWidget(
                 minutosMin: 3,
@@ -1211,17 +1250,19 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
               // pedagógico dentro. Es EL MISMO TEXTO que abre esta ficha, dos
               // veces en la misma tarjeta. Se veía menos cuando había 400 px
               // de por medio; no por eso dejaba de estar duplicado.
-              const SizedBox(height: 12),
-              _buildRoleSection(
-                kicker: _hogarKicker.resolve(_language),
-                content: mes.actividadHogar.resolve(_language),
-                subcontent:
-                    '${_language == AppLanguage.gl ? "Momento suxerido" : "Momento sugerido"}: ${mes.rutinaRecomendadaHogar.resolve(_language)}',
-                badge: '${mes.minutosSugeridos} min',
-                icon: Icons.volunteer_activism_rounded,
-                color: AppTheme.warning,
-                theme: theme,
-              ),
+              if (mes.actividadHogar.hasParity) ...[
+                const SizedBox(height: 12),
+                _buildRoleSection(
+                  kicker: _hogarKicker.resolve(_language),
+                  content: mes.actividadHogar.resolve(_language),
+                  subcontent:
+                      '${_language == AppLanguage.gl ? "Momento suxerido" : "Momento sugerido"}: ${mes.rutinaRecomendadaHogar.resolve(_language)}',
+                  badge: '${mes.minutosSugeridos} min',
+                  icon: Icons.volunteer_activism_rounded,
+                  color: AppTheme.warning,
+                  theme: theme,
+                ),
+              ],
               // Y aquí baja el calendario de las familias hasta el DÍA, que es
               // donde llegaba el del aula y donde se quedaba el de casa: el mes
               // entero no dice qué hacer el martes de la semana 3.
@@ -1433,6 +1474,8 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                         dia: _dia,
                         language: _language,
                         audioService: widget.audioService,
+                        premios: widget.premios,
+                        calendario: widget.store,
                       )
                   : null,
               style: OutlinedButton.styleFrom(
@@ -1539,7 +1582,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (_unidadDe(mes) != null)
+          if (_grupoDe(mes) != null)
             BotonLanzarSesion(
               key: const Key('boton_iniciar_sesion_aula'),
               label: _iniciarAula.resolve(_language),

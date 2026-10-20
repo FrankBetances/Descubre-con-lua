@@ -6,6 +6,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/localization/vocabulario_contos.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/espera_visible.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/como_funciona_o_conto_model.dart';
 import '../../../data/models/cuento_model.dart';
@@ -552,6 +553,17 @@ class _CuentoViewerScreenState extends State<CuentoViewerScreen> {
                                                     fontSize: 14,
                                                     fontWeight: FontWeight.w600,
                                                   ),
+                                                ),
+                                                // Tras la pregunta, la espera
+                                                // del cuento: vista y en
+                                                // silencio (M4.2).
+                                                const SizedBox(height: 8),
+                                                EsperaVisible(
+                                                  segundos: cuento
+                                                      .tempoEsperaSegundos,
+                                                  language: lang,
+                                                  color: AppTheme.warning,
+                                                  fondo: Colors.white,
                                                 ),
                                               ],
                                             ),

@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.04",
+  "curso": "curso_4_5",
+  "orden": 4,
+  "mesCalendario": 12,
+  "asamblea": "asamblea.segundo_ciclo.decembro.5_infantil",
+  "centroInteres": {
+    "gl": "O control inhibitorio na noite de inverno",
+    "es": "El control inhibitorio en la noche de invierno"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.marzo.s4.drum"
+    },
+    {
+      "ref": "3_4.decembro.s3.night"
+    },
+    {
+      "ref": "3_4.decembro.s1.winter"
+    },
+    {
+      "ref": "3_4.abril.s1.sun"
+    },
+    {
+      "ref": "3_4.outubro.s3.stretch"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "4_5.decembro.s1.colder"
+    },
+    {
+      "ref": "4_5.decembro.s1.frozen-solid"
+    },
+    {
+      "ref": "4_5.decembro.s3.brightest"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "4_5.decembro.s4.thank-you-so-much"
+    },
+    {
+      "ref": "frase.formula.help-me-please"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.because",
+    "nota": {
+      "gl": "Because: a docente di a razón da orde; a criatura responde co corpo.",
+      "es": "Because: la docente dice la razón de la orden; la criatura responde con el cuerpo."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.decembro.5i.01",
+      "usa": [
+        "3_4.marzo.s4.drum"
+      ]
+    },
+    {
+      "ref": "frase.cmd.decembro.5i.02",
+      "usa": [
+        "3_4.decembro.s3.night",
+        "3_4.decembro.s1.winter",
+        "4_5.decembro.s1.colder"
+      ]
+    },
+    {
+      "ref": "frase.cmd.decembro.5i.03",
+      "usa": [
+        "3_4.abril.s1.sun",
+        "3_4.outubro.s3.stretch"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Un pandeiro",
+      "es": "Un pandero"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Baila libre e detense cando cala o pandeiro",
+      "es": "Baila libre y se detiene cuando calla el pandero"
+    },
+    {
+      "gl": "Queda quieto ata oír «Sunlight!»",
+      "es": "Se queda quieto hasta oír «Sunlight!»"
+    }
+  ],
+  "reactivar": [
+    "3_4.outubro.s4.dance"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

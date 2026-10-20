@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.01",
+  "curso": "curso_2_3",
+  "orden": 1,
+  "mesCalendario": 9,
+  "asamblea": "asamblea.primeiro_ciclo.setembro.2_3_anos",
+  "centroInteres": {
+    "gl": "A acollida e o vínculo afectivo co grupo",
+    "es": "La acogida y el vínculo afectivo con el grupo"
+  },
+  "cancion": {
+    "titulo": "Hello Hello, Hello to You!"
+  },
+  "nucleo": [
+    {
+      "ref": "frase.cmd.setembro.2_3.01",
+      "objeto": {
+        "gl": "A cinta elástica de veludo",
+        "es": "La cinta elástica de terciopelo"
+      }
+    },
+    {
+      "ref": "frase.cmd.setembro.2_3.02"
+    },
+    {
+      "ref": "frase.cmd.setembro.2_3.03"
+    },
+    {
+      "ref": "2_3.setembro.s4.hello-friend"
+    },
+    {
+      "ref": "2_3.setembro.s4.friends-in-a-circle"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.setembro.2_3.01",
+      "usa": [
+        "frase.cmd.setembro.2_3.01"
+      ]
+    },
+    {
+      "ref": "frase.cmd.setembro.2_3.02",
+      "usa": [
+        "frase.cmd.setembro.2_3.02",
+        "2_3.setembro.s4.hello-friend"
+      ]
+    },
+    {
+      "ref": "frase.cmd.setembro.2_3.03",
+      "usa": [
+        "frase.cmd.setembro.2_3.03"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Cinta elástica ancha forrada de veludo",
+      "es": "Cinta elástica ancha forrada de terciopelo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Ponse de pé co resto ao tirar da cinta",
+      "es": "Se pone de pie con el resto al tirar de la cinta"
+    },
+    {
+      "gl": "Saúda coa man ou co corpo cando dis «Hello!»",
+      "es": "Saluda con la mano o con el cuerpo cuando dices «Hello!»"
+    },
+    {
+      "gl": "Séntase na alfombra sen empurrar",
+      "es": "Se sienta en la alfombra sin empujar"
+    }
+  ],
+  "reactivar": [],
+  "hogar": null,
+  "microcuento": null
+}

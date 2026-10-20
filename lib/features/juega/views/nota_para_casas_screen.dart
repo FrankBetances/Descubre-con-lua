@@ -8,7 +8,9 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
-import '../../../data/models/unidad_model.dart';
+import '../../../data/models/asamblea_segundo_ciclo_model.dart'
+    show MicroRutinaHogarSegundoCiclo;
+import '../../../data/models/rexistro_frases_model.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../core/widgets/con_lingua.dart';
 
@@ -22,11 +24,22 @@ import '../../../core/widgets/con_lingua.dart';
 /// puerta. Lo que llega a casa es el mensaje, no un dato.
 ///
 /// Por eso la pantalla está hecha para LEERSE EN ALTO y para copiarse: letra
-/// grande, poco texto, la frase inglesa con su altavoz y nada más. No hay botón
+/// grande, poco texto, las palabras inglesas del mes con su altavoz y nada más.
+///
+/// Desde M4.3 cierra la asamblea de cuatro fases y sale de la unidad del mes:
+/// su centro de interés, su núcleo y, en 2.º ciclo, la micro-rutina de casa de
+/// su asamblea. M4.4 le añadirá el reto de la semana (llega con M6). No hay botón
 /// de compartir porque compartir necesitaría una dependencia y un permiso, y
 /// esta app no tiene ni una cosa ni la otra.
 class NotaParaCasasScreen extends StatelessWidget {
-  final Unidad unidad;
+  /// El centro de interés del mes: lo que se hizo hoy.
+  final LocalizedString centroInteres;
+
+  /// El núcleo del mes, ya resuelto: lo que la familia puede decir en casa.
+  final List<PezaDaUnidade> nucleo;
+
+  /// En 2.º ciclo, la micro-rutina de casa de la asamblea del mes.
+  final MicroRutinaHogarSegundoCiclo? microRutina;
   final AppLanguage language;
 
   /// Avisa a quien la abrió de que se cambió de lengua aquí.
@@ -35,7 +48,9 @@ class NotaParaCasasScreen extends StatelessWidget {
 
   const NotaParaCasasScreen({
     super.key,
-    required this.unidad,
+    required this.centroInteres,
+    required this.nucleo,
+    this.microRutina,
     required this.language,
     this.onLanguageChanged,
     this.audioService,
@@ -59,14 +74,21 @@ class NotaParaCasasScreen extends StatelessWidget {
     es: 'LO QUE HICIMOS HOY',
   );
 
-  static const _paraCasa = LocalizedString(
-    gl: 'PARA FACER NA CASA, TRES MINUTOS',
-    es: 'PARA HACER EN CASA, TRES MINUTOS',
+  static const _palabras = LocalizedString(
+    gl: 'AS PALABRAS EN INGLÉS DO MES',
+    es: 'LAS PALABRAS EN INGLÉS DEL MES',
   );
 
-  static const _laFrase = LocalizedString(
-    gl: 'A FRASE EN INGLÉS',
-    es: 'LA FRASE EN INGLÉS',
+  static const _palabrasCasa = LocalizedString(
+    gl: 'Na casa, dicide unha cando saia no día, co seu xesto. Sen pedir que '
+        'a repita: abonda con que a escoite.',
+    es: 'En casa, decid una cuando salga en el día, con su gesto. Sin pedir que '
+        'la repita: basta con que la escuche.',
+  );
+
+  static const _paraCasa = LocalizedString(
+    gl: 'PARA FACER NA CASA',
+    es: 'PARA HACER EN CASA',
   );
 
   static const _cerrar = LocalizedString(
@@ -89,8 +111,8 @@ class NotaParaCasasScreen extends StatelessWidget {
     ValueChanged<AppLanguage> cambiarLingua,
   ) {
     final theme = Theme.of(context);
-    final ponte = unidad.puenteCasa;
-    final frase = unidad.ingles.frase;
+    final rutina = microRutina;
+    final isGl = language == AppLanguage.gl;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -104,13 +126,11 @@ class NotaParaCasasScreen extends StatelessWidget {
             desprazarSeNonCabe: true,
             padding: const EdgeInsets.all(AppTheme.spaceLg),
             child: Column(
+              key: const Key('nota_para_casas'),
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                // Lúa encabeza la nota porque la nota HABLA de ella: el mensaje
-                // para las familias de cada unidad la nombra («hoxe navegamos coa
-                // gata Lúa»), y hasta ahora la familia oía el nombre en la puerta
-                // sin haberle visto la cara nunca. Es el único sitio donde la
-                // gata cruza del aula a la casa, que es de lo que va esta pantalla.
+                // Lúa encabeza la nota: es el único sitio donde la gata cruza
+                // del aula a la casa, que es de lo que va esta pantalla.
                 //
                 // Cuadrado de lado fijo y centrado, sin nada al lado: no puede
                 // desbordar a lo ancho por mucho que crezca la escala de texto.
@@ -126,81 +146,99 @@ class NotaParaCasasScreen extends StatelessWidget {
                 _Bloque(
                   kicker: _queDicimos.resolve(language),
                   child: Text(
-                    unidad.titulo.resolve(language),
+                    centroInteres.resolve(language),
                     style: theme.textTheme.titleLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: AppTheme.textPrimary,
                     ),
                   ),
                 ),
-                const SizedBox(height: AppTheme.spaceMd),
-                _Bloque(
-                  kicker: _paraCasa.resolve(language),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        ponte.mensajeFamilias.resolve(language),
-                        style: theme.textTheme.bodyLarge?.copyWith(
-                          color: AppTheme.textPrimary,
-                          height: 1.45,
+                if (nucleo.isNotEmpty) ...[
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _Bloque(
+                    kicker: _palabras.resolve(language),
+                    acento: context.acento,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          _palabrasCasa.resolve(language),
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: AppTheme.textSecondary,
+                            height: 1.4,
+                          ),
                         ),
-                      ),
-                      if (ponte.actividadesSugeridas.isNotEmpty) ...[
                         const SizedBox(height: AppTheme.spaceMd),
-                        for (final actividad in ponte.actividadesSugeridas)
+                        for (final peza in nucleo)
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 8),
-                            child: Row(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text('· ',
-                                    style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold)),
-                                Expanded(
-                                  child: Text(
-                                    actividad.resolve(language),
-                                    style: theme.textTheme.bodyMedium?.copyWith(
-                                      color: AppTheme.textSecondary,
-                                      height: 1.4,
-                                    ),
+                                // Grandes: es lo que se copia en la libreta.
+                                BotonEscuchar(
+                                  audioService: audioService,
+                                  texto: peza.en,
+                                  language: AppLanguage.en,
+                                  interfaz: language,
+                                  style: estiloIngles(peza.en),
+                                  comoChip: true,
+                                  colorChip: context.acento,
+                                  descripcion: peza.en,
+                                  significado: peza.significado,
+                                ),
+                                const SizedBox(height: 3),
+                                Text(
+                                  [
+                                    if (peza.significado != null)
+                                      peza.significado!.resolve(language),
+                                    peza.xesto.resolve(language),
+                                  ]
+                                      .where((s) => s.trim().isNotEmpty)
+                                      .join(' · '),
+                                  style: theme.textTheme.bodyMedium?.copyWith(
+                                    color: AppTheme.textSecondary,
+                                    height: 1.35,
                                   ),
                                 ),
                               ],
                             ),
                           ),
                       ],
-                    ],
+                    ),
                   ),
-                ),
-                if (frase.isNotEmpty) ...[
+                ],
+                if (rutina != null) ...[
                   const SizedBox(height: AppTheme.spaceMd),
                   _Bloque(
-                    kicker: _laFrase.resolve(language),
-                    acento: context.acento,
+                    kicker: '${_paraCasa.resolve(language)}, '
+                        '${rutina.nichoTiempoMinutos} '
+                        '${isGl ? 'MINUTOS' : 'MINUTOS'}',
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Grande, porque esta es la línea que se copia en la
-                        // libreta y la que la familia va a decir esta noche.
                         Text(
-                          frase,
-                          style: theme.textTheme.titleLarge?.copyWith(
+                          rutina.titulo.resolve(language),
+                          style: theme.textTheme.titleMedium?.copyWith(
                             fontWeight: FontWeight.bold,
-                            color: context.acento,
-                            height: 1.35,
+                            color: AppTheme.textPrimary,
                           ),
                         ),
-                        const SizedBox(height: AppTheme.spaceMd),
-                        BotonEscuchar(
-                          audioService: audioService,
-                          texto: frase,
-                          language: AppLanguage.en,
-                          interfaz: language,
-                          style: estiloIngles(frase),
-                          comoChip: true,
-                          colorChip: context.acento,
+                        const SizedBox(height: 4),
+                        Text(
+                          rutina.momentoDelDia.resolve(language),
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: AppTheme.textSecondary,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                        const SizedBox(height: AppTheme.spaceSm),
+                        Text(
+                          rutina.escenaCotidiana.resolve(language),
+                          style: theme.textTheme.bodyLarge?.copyWith(
+                            color: AppTheme.textPrimary,
+                            height: 1.45,
+                          ),
                         ),
                       ],
                     ),

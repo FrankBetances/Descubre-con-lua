@@ -13,7 +13,7 @@
       },
       "palabras": [
         {
-          "id": "snow",
+          "id": "3_4.decembro.s1.snow",
           "en": "Snow",
           "gl": "Neve",
           "es": "Nieve",
@@ -24,7 +24,7 @@
           }
         },
         {
-          "id": "ice",
+          "id": "3_4.decembro.s1.ice",
           "en": "Ice",
           "gl": "Xeo",
           "es": "Hielo",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "snowman",
+          "id": "3_4.decembro.s1.snowman",
           "en": "Snowman",
           "gl": "Boneco de neve",
           "es": "Muñeco de nieve",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "id": "snowflake",
+          "id": "3_4.decembro.s1.snowflake",
           "en": "Snowflake",
           "gl": "Folerpa",
           "es": "Copo de nieve",
@@ -57,7 +57,7 @@
           }
         },
         {
-          "id": "winter",
+          "id": "3_4.decembro.s1.winter",
           "en": "Winter",
           "gl": "Inverno",
           "es": "Invierno",
@@ -68,7 +68,7 @@
           }
         },
         {
-          "id": "mountain",
+          "id": "3_4.decembro.s1.mountain",
           "en": "Mountain",
           "gl": "Montaña",
           "es": "Montaña",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "id": "sledge",
+          "id": "3_4.decembro.s1.sledge",
           "en": "Sledge",
           "gl": "Trineo",
           "es": "Trineo",
@@ -90,7 +90,7 @@
           }
         },
         {
-          "id": "shiver",
+          "id": "3_4.decembro.s1.shiver",
           "en": "Shiver",
           "gl": "Tremer",
           "es": "Temblar",
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": "slide",
+          "id": "3_4.decembro.s1.slide",
           "en": "Slide",
           "gl": "Esvarar",
           "es": "Deslizarse",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "melt",
+          "id": "3_4.decembro.s1.melt",
           "en": "Melt",
           "gl": "Derreterse",
           "es": "Derretirse",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "id": "throw",
+          "id": "3_4.decembro.s1.throw",
           "en": "Throw",
           "gl": "Lanzar",
           "es": "Lanzar",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "id": "catch",
+          "id": "3_4.decembro.s1.catch",
           "en": "Catch",
           "gl": "Atrapar",
           "es": "Atrapar",
@@ -145,7 +145,7 @@
           }
         },
         {
-          "id": "cold",
+          "id": "3_4.decembro.s1.cold",
           "en": "Cold",
           "gl": "Frío, fría",
           "es": "Frío, fría",
@@ -156,7 +156,7 @@
           }
         },
         {
-          "id": "warm",
+          "id": "3_4.decembro.s1.warm",
           "en": "Warm",
           "gl": "Quentiño, quentiña",
           "es": "Calentito, calentita",
@@ -167,7 +167,7 @@
           }
         },
         {
-          "id": "white",
+          "id": "3_4.decembro.s1.white",
           "en": "White",
           "gl": "Branco, branca",
           "es": "Blanco, blanca",
@@ -178,7 +178,7 @@
           }
         },
         {
-          "id": "slippery",
+          "id": "3_4.decembro.s1.slippery",
           "en": "Slippery",
           "gl": "Esvaradío, esvaradía",
           "es": "Resbaladizo, resbaladiza",
@@ -189,7 +189,7 @@
           }
         },
         {
-          "id": "brrr-it-s-cold",
+          "id": "3_4.decembro.s1.brrr-it-s-cold",
           "en": "Brrr, it's cold!",
           "gl": "Brrr, que frío!",
           "es": "¡Brrr, qué frío!",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "id": "let-s-build-a-snowman",
+          "id": "3_4.decembro.s1.let-s-build-a-snowman",
           "en": "Let's build a snowman",
           "gl": "Imos facer un boneco de neve",
           "es": "Vamos a hacer un muñeco de nieve",
@@ -211,7 +211,7 @@
           }
         },
         {
-          "id": "catch-the-snowflake",
+          "id": "3_4.decembro.s1.catch-the-snowflake",
           "en": "Catch the snowflake",
           "gl": "Atrapa a folerpa",
           "es": "Atrapa el copo",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "id": "in-the-snow",
+          "id": "3_4.decembro.s1.in-the-snow",
           "en": "In the snow",
           "gl": "Na neve",
           "es": "En la nieve",
@@ -242,7 +242,7 @@
       },
       "palabras": [
         {
-          "id": "bell",
+          "id": "3_4.decembro.s2.bell",
           "en": "Bell",
           "gl": "Campá",
           "es": "Campana",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "id": "light",
+          "id": "3_4.decembro.s2.light",
           "en": "Light",
           "gl": "Luz",
           "es": "Luz",
@@ -264,7 +264,7 @@
           }
         },
         {
-          "id": "star",
+          "id": "3_4.decembro.s2.star",
           "en": "Star",
           "gl": "Estrela",
           "es": "Estrella",
@@ -275,7 +275,7 @@
           }
         },
         {
-          "id": "gift",
+          "id": "3_4.decembro.s2.gift",
           "en": "Gift",
           "gl": "Agasallo",
           "es": "Regalo",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "id": "candle",
+          "id": "3_4.decembro.s2.candle",
           "en": "Candle",
           "gl": "Vela",
           "es": "Vela",
@@ -297,7 +297,7 @@
           }
         },
         {
-          "id": "ribbon",
+          "id": "3_4.decembro.s2.ribbon",
           "en": "Ribbon",
           "gl": "Cinta",
           "es": "Cinta",
@@ -308,7 +308,7 @@
           }
         },
         {
-          "id": "tambourine",
+          "id": "3_4.decembro.s2.tambourine",
           "en": "Tambourine",
           "gl": "Pandeireta",
           "es": "Pandereta",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "id": "ring",
+          "id": "3_4.decembro.s2.ring",
           "en": "Ring",
           "gl": "Soar",
           "es": "Sonar",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "id": "twinkle",
+          "id": "3_4.decembro.s2.twinkle",
           "en": "Twinkle",
           "gl": "Escintilar",
           "es": "Titilar",
@@ -341,7 +341,7 @@
           }
         },
         {
-          "id": "wrap",
+          "id": "3_4.decembro.s2.wrap",
           "en": "Wrap",
           "gl": "Embrullar",
           "es": "Envolver",
@@ -352,7 +352,7 @@
           }
         },
         {
-          "id": "unwrap",
+          "id": "3_4.decembro.s2.unwrap",
           "en": "Unwrap",
           "gl": "Desembrullar",
           "es": "Desenvolver",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "id": "hang",
+          "id": "3_4.decembro.s2.hang",
           "en": "Hang",
           "gl": "Pendurar",
           "es": "Colgar",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "golden",
+          "id": "3_4.decembro.s2.golden",
           "en": "Golden",
           "gl": "Dourado, dourada",
           "es": "Dorado, dorada",
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": "silver",
+          "id": "3_4.decembro.s2.silver",
           "en": "Silver",
           "gl": "Prateado, prateada",
           "es": "Plateado, plateada",
@@ -396,7 +396,7 @@
           }
         },
         {
-          "id": "beautiful",
+          "id": "3_4.decembro.s2.beautiful",
           "en": "Beautiful",
           "gl": "Bonito, bonita",
           "es": "Bonito, bonita",
@@ -407,7 +407,7 @@
           }
         },
         {
-          "id": "surprised",
+          "id": "3_4.decembro.s2.surprised",
           "en": "Surprised",
           "gl": "Sorprendido, sorprendida",
           "es": "Sorprendido, sorprendida",
@@ -418,7 +418,7 @@
           }
         },
         {
-          "id": "merry-christmas",
+          "id": "3_4.decembro.s2.merry-christmas",
           "en": "Merry Christmas!",
           "gl": "Bo Nadal!",
           "es": "¡Feliz Navidad!",
@@ -429,7 +429,7 @@
           }
         },
         {
-          "id": "ring-bells",
+          "id": "3_4.decembro.s2.ring-bells",
           "en": "Ring bells",
           "gl": "Toca as campás",
           "es": "Toca las campanas",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "on-the-tree",
+          "id": "3_4.decembro.s2.on-the-tree",
           "en": "On the tree",
           "gl": "Na árbore",
           "es": "En el árbol",
@@ -451,7 +451,7 @@
           }
         },
         {
-          "id": "up-to-the-star",
+          "id": "3_4.decembro.s2.up-to-the-star",
           "en": "Up to the star",
           "gl": "Ata a estrela",
           "es": "Hasta la estrella",
@@ -471,7 +471,7 @@
       },
       "palabras": [
         {
-          "id": "night",
+          "id": "3_4.decembro.s3.night",
           "en": "Night",
           "gl": "Noite",
           "es": "Noche",
@@ -482,7 +482,7 @@
           }
         },
         {
-          "id": "moon",
+          "id": "3_4.decembro.s3.moon",
           "en": "Moon",
           "gl": "Lúa",
           "es": "Luna",
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "bed",
+          "id": "3_4.decembro.s3.bed",
           "en": "Bed",
           "gl": "Cama",
           "es": "Cama",
@@ -504,7 +504,7 @@
           }
         },
         {
-          "id": "pillow",
+          "id": "3_4.decembro.s3.pillow",
           "en": "Pillow",
           "gl": "Almofada",
           "es": "Almohada",
@@ -515,7 +515,7 @@
           }
         },
         {
-          "id": "blanket",
+          "id": "3_4.decembro.s3.blanket",
           "en": "Blanket",
           "gl": "Manta",
           "es": "Manta",
@@ -526,7 +526,7 @@
           }
         },
         {
-          "id": "pyjamas",
+          "id": "3_4.decembro.s3.pyjamas",
           "en": "Pyjamas",
           "gl": "Pixama",
           "es": "Pijama",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "id": "dream",
+          "id": "3_4.decembro.s3.dream",
           "en": "Dream",
           "gl": "Soño",
           "es": "Sueño",
@@ -548,7 +548,7 @@
           }
         },
         {
-          "id": "sleep",
+          "id": "3_4.decembro.s3.sleep",
           "en": "Sleep",
           "gl": "Durmir",
           "es": "Dormir",
@@ -559,7 +559,7 @@
           }
         },
         {
-          "id": "yawn",
+          "id": "3_4.decembro.s3.yawn",
           "en": "Yawn",
           "gl": "Bocexar",
           "es": "Bostezar",
@@ -570,7 +570,7 @@
           }
         },
         {
-          "id": "snore",
+          "id": "3_4.decembro.s3.snore",
           "en": "Snore",
           "gl": "Roncar",
           "es": "Roncar",
@@ -581,7 +581,7 @@
           }
         },
         {
-          "id": "wake-up",
+          "id": "3_4.decembro.s3.wake-up",
           "en": "Wake up",
           "gl": "Espertar",
           "es": "Despertar",
@@ -592,7 +592,7 @@
           }
         },
         {
-          "id": "cuddle",
+          "id": "3_4.decembro.s3.cuddle",
           "en": "Cuddle",
           "gl": "Aconchegarse",
           "es": "Acurrucarse",
@@ -603,7 +603,7 @@
           }
         },
         {
-          "id": "sleepy",
+          "id": "3_4.decembro.s3.sleepy",
           "en": "Sleepy",
           "gl": "Con sono",
           "es": "Con sueño",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "tired",
+          "id": "3_4.decembro.s3.tired",
           "en": "Tired",
           "gl": "Canso, cansa",
           "es": "Cansado, cansada",
@@ -625,7 +625,7 @@
           }
         },
         {
-          "id": "cosy",
+          "id": "3_4.decembro.s3.cosy",
           "en": "Cosy",
           "gl": "Acolledor, acolledora",
           "es": "Acogedor, acogedora",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "id": "awake",
+          "id": "3_4.decembro.s3.awake",
           "en": "Awake",
           "gl": "Esperto, esperta",
           "es": "Despierto, despierta",
@@ -647,7 +647,7 @@
           }
         },
         {
-          "id": "good-night",
+          "id": "3_4.decembro.s3.good-night",
           "en": "Good night!",
           "gl": "Boas noites!",
           "es": "¡Buenas noches!",
@@ -658,7 +658,7 @@
           }
         },
         {
-          "id": "sweet-dreams",
+          "id": "3_4.decembro.s3.sweet-dreams",
           "en": "Sweet dreams",
           "gl": "Felices soños",
           "es": "Dulces sueños",
@@ -669,7 +669,7 @@
           }
         },
         {
-          "id": "sleep-tight",
+          "id": "3_4.decembro.s3.sleep-tight",
           "en": "Sleep tight",
           "gl": "Durme ben",
           "es": "Que duermas bien",
@@ -680,7 +680,7 @@
           }
         },
         {
-          "id": "under-the-blanket",
+          "id": "3_4.decembro.s3.under-the-blanket",
           "en": "Under the blanket",
           "gl": "Debaixo da manta",
           "es": "Debajo de la manta",
@@ -700,7 +700,7 @@
       },
       "palabras": [
         {
-          "id": "party",
+          "id": "3_4.decembro.s4.party",
           "en": "Party",
           "gl": "Festa",
           "es": "Fiesta",
@@ -711,7 +711,7 @@
           }
         },
         {
-          "id": "cake",
+          "id": "3_4.decembro.s4.cake",
           "en": "Cake",
           "gl": "Bolo",
           "es": "Tarta",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "balloon",
+          "id": "3_4.decembro.s4.balloon",
           "en": "Balloon",
           "gl": "Globo",
           "es": "Globo",
@@ -733,7 +733,7 @@
           }
         },
         {
-          "id": "crown",
+          "id": "3_4.decembro.s4.crown",
           "en": "Crown",
           "gl": "Coroa",
           "es": "Corona",
@@ -744,7 +744,7 @@
           }
         },
         {
-          "id": "king",
+          "id": "3_4.decembro.s4.king",
           "en": "King",
           "gl": "Rei",
           "es": "Rey",
@@ -755,7 +755,7 @@
           }
         },
         {
-          "id": "music",
+          "id": "3_4.decembro.s4.music",
           "en": "Music",
           "gl": "Música",
           "es": "Música",
@@ -766,7 +766,7 @@
           }
         },
         {
-          "id": "chocolate",
+          "id": "3_4.decembro.s4.chocolate",
           "en": "Chocolate",
           "gl": "Chocolate",
           "es": "Chocolate",
@@ -777,7 +777,7 @@
           }
         },
         {
-          "id": "pop",
+          "id": "3_4.decembro.s4.pop",
           "en": "Pop",
           "gl": "Estourar",
           "es": "Explotar",
@@ -788,7 +788,7 @@
           }
         },
         {
-          "id": "wish",
+          "id": "3_4.decembro.s4.wish",
           "en": "Wish",
           "gl": "Desexar",
           "es": "Desear",
@@ -799,7 +799,7 @@
           }
         },
         {
-          "id": "bow",
+          "id": "3_4.decembro.s4.bow",
           "en": "Bow",
           "gl": "Facer unha reverencia",
           "es": "Hacer una reverencia",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "id": "count",
+          "id": "3_4.decembro.s4.count",
           "en": "Count",
           "gl": "Contar",
           "es": "Contar",
@@ -821,7 +821,7 @@
           }
         },
         {
-          "id": "cheer",
+          "id": "3_4.decembro.s4.cheer",
           "en": "Cheer",
           "gl": "Animar",
           "es": "Animar",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "excited",
+          "id": "3_4.decembro.s4.excited",
           "en": "Excited",
           "gl": "Emocionado, emocionada",
           "es": "Emocionado, emocionada",
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "noisy",
+          "id": "3_4.decembro.s4.noisy",
           "en": "Noisy",
           "gl": "Ruidoso, ruidosa",
           "es": "Ruidoso, ruidosa",
@@ -854,7 +854,7 @@
           }
         },
         {
-          "id": "colourful",
+          "id": "3_4.decembro.s4.colourful",
           "en": "Colourful",
           "gl": "De cores",
           "es": "De colores",
@@ -865,7 +865,7 @@
           }
         },
         {
-          "id": "delicious",
+          "id": "3_4.decembro.s4.delicious",
           "en": "Delicious",
           "gl": "Delicioso, deliciosa",
           "es": "Delicioso, deliciosa",
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "happy-new-year",
+          "id": "3_4.decembro.s4.happy-new-year",
           "en": "Happy New Year!",
           "gl": "Feliz aninovo!",
           "es": "¡Feliz Año Nuevo!",
@@ -887,7 +887,7 @@
           }
         },
         {
-          "id": "happy-birthday",
+          "id": "3_4.decembro.s4.happy-birthday",
           "en": "Happy birthday!",
           "gl": "Feliz aniversario!",
           "es": "¡Feliz cumpleaños!",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "id": "with-music",
+          "id": "3_4.decembro.s4.with-music",
           "en": "With music",
           "gl": "Con música",
           "es": "Con música",
@@ -909,7 +909,7 @@
           }
         },
         {
-          "id": "hands-up-and-cheer",
+          "id": "3_4.decembro.s4.hands-up-and-cheer",
           "en": "Hands up and cheer",
           "gl": "Mans arriba e a animar",
           "es": "Manos arriba y a animar",

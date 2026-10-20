@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.10",
+  "curso": "curso_0_2",
+  "orden": 10,
+  "mesCalendario": 6,
+  "asamblea": "asamblea.primeiro_ciclo.xuno.0_2_anos",
+  "centroInteres": {
+    "gl": "O Atlántico, as rías de Vigo e a despedida do curso",
+    "es": "El Atlántico, las rías de Vigo y la despedida del curso"
+  },
+  "cancion": {
+    "titulo": "Waves go up, waves go down, blue sea"
+  },
+  "nucleo": [
+    {
+      "ref": "frase.cmd.xuno.0_2.01",
+      "objeto": {
+        "gl": "A tea azul de licra",
+        "es": "La tela azul de licra"
+      }
+    },
+    {
+      "ref": "0_2.xuno.s1.here-comes-a-wave"
+    },
+    {
+      "ref": "0_2.xuno.s2.swim-little-fish"
+    },
+    {
+      "ref": "0_2.xuno.s1.hello-sea"
+    },
+    {
+      "ref": "0_2.xuno.s4.bye-bye-nursery"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xuno.0_2.01",
+      "usa": [
+        "frase.cmd.xuno.0_2.01",
+        "0_2.xuno.s1.here-comes-a-wave"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Tea extensa de lycra azul brillante",
+      "es": "Tela extensa de lycra azul brillante"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Estira as mans cara á tea que ondea",
+      "es": "Estira las manos hacia la tela que ondea"
+    },
+    {
+      "gl": "Sorrí co aire da tea na cara",
+      "es": "Sonríe con el aire de la tela en la cara"
+    }
+  ],
+  "reactivar": [
+    "0_2.maio.s1.splish-splash"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

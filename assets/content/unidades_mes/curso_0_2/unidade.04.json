@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.04",
+  "curso": "curso_0_2",
+  "orden": 4,
+  "mesCalendario": 12,
+  "asamblea": "asamblea.primeiro_ciclo.decembro.0_2_anos",
+  "centroInteres": {
+    "gl": "O contraste entre o frío de fóra e a calor do colo",
+    "es": "El contraste entre el frío de fuera y el calor del regazo"
+  },
+  "cancion": {
+    "titulo": "Ring the Bells"
+  },
+  "nucleo": [
+    {
+      "ref": "frase.cmd.decembro.0_2.01",
+      "objeto": {
+        "gl": "As munequeiras con cascabeis",
+        "es": "Las muñequeras con cascabeles"
+      }
+    },
+    {
+      "ref": "frase.cmd.decembro.0_2.02",
+      "objeto": {
+        "gl": "Unha toalla morna",
+        "es": "Una toalla tibia"
+      }
+    },
+    {
+      "ref": "0_2.decembro.s1.brr-so-cold"
+    },
+    {
+      "ref": "0_2.decembro.s4.jingle-bell"
+    },
+    {
+      "ref": "0_2.decembro.s2.big-hug"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.decembro.0_2.01",
+      "usa": [
+        "frase.cmd.decembro.0_2.01",
+        "0_2.decembro.s4.jingle-bell"
+      ]
+    },
+    {
+      "ref": "frase.cmd.decembro.0_2.02",
+      "usa": [
+        "frase.cmd.decembro.0_2.02"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Muñequeiras de feltro con axóuxeres inoxidables",
+      "es": "Muñequeras de fieltro con cascabeles inoxidables"
+    },
+    {
+      "gl": "Unha toalla morna",
+      "es": "Una toalla tibia"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Move as pernas para facer soar os cascabeis",
+      "es": "Mueve las piernas para hacer sonar los cascabeles"
+    },
+    {
+      "gl": "Acóugase cando o envolves na toalla morna",
+      "es": "Se calma cuando lo envuelves en la toalla tibia"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.novembro.0_2.02"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

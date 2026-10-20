@@ -13,7 +13,7 @@
       },
       "palabras": [
         {
-          "id": "cat",
+          "id": "3_4.febreiro.s1.cat",
           "en": "Cat",
           "gl": "Gato",
           "es": "Gato",
@@ -24,7 +24,7 @@
           }
         },
         {
-          "id": "dog",
+          "id": "3_4.febreiro.s1.dog",
           "en": "Dog",
           "gl": "Can",
           "es": "Perro",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "rabbit",
+          "id": "3_4.febreiro.s1.rabbit",
           "en": "Rabbit",
           "gl": "Coello",
           "es": "Conejo",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "id": "bird",
+          "id": "3_4.febreiro.s1.bird",
           "en": "Bird",
           "gl": "Paxaro",
           "es": "Pájaro",
@@ -57,7 +57,7 @@
           }
         },
         {
-          "id": "turtle",
+          "id": "3_4.febreiro.s1.turtle",
           "en": "Turtle",
           "gl": "Tartaruga",
           "es": "Tortuga",
@@ -68,7 +68,7 @@
           }
         },
         {
-          "id": "parrot",
+          "id": "3_4.febreiro.s1.parrot",
           "en": "Parrot",
           "gl": "Papagaio",
           "es": "Loro",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "id": "hamster",
+          "id": "3_4.febreiro.s1.hamster",
           "en": "Hamster",
           "gl": "Hámster",
           "es": "Hámster",
@@ -90,7 +90,7 @@
           }
         },
         {
-          "id": "pat",
+          "id": "3_4.febreiro.s1.pat",
           "en": "Pat",
           "gl": "Dar palmadiñas",
           "es": "Dar palmaditas",
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": "feed",
+          "id": "3_4.febreiro.s1.feed",
           "en": "Feed",
           "gl": "Dar de comer",
           "es": "Dar de comer",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "bark",
+          "id": "3_4.febreiro.s1.bark",
           "en": "Bark",
           "gl": "Ladrar",
           "es": "Ladrar",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "id": "purr",
+          "id": "3_4.febreiro.s1.purr",
           "en": "Purr",
           "gl": "Ronronar",
           "es": "Ronronear",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "id": "wag",
+          "id": "3_4.febreiro.s1.wag",
           "en": "Wag",
           "gl": "Abanar o rabo",
           "es": "Mover la cola",
@@ -145,7 +145,7 @@
           }
         },
         {
-          "id": "fluffy",
+          "id": "3_4.febreiro.s1.fluffy",
           "en": "Fluffy",
           "gl": "Fofo, fofa",
           "es": "Esponjoso, esponjosa",
@@ -156,7 +156,7 @@
           }
         },
         {
-          "id": "cute",
+          "id": "3_4.febreiro.s1.cute",
           "en": "Cute",
           "gl": "Riquiño, riquiña",
           "es": "Tierno, tierna",
@@ -167,7 +167,7 @@
           }
         },
         {
-          "id": "clever",
+          "id": "3_4.febreiro.s1.clever",
           "en": "Clever",
           "gl": "Listo, lista",
           "es": "Listo, lista",
@@ -178,7 +178,7 @@
           }
         },
         {
-          "id": "playful",
+          "id": "3_4.febreiro.s1.playful",
           "en": "Playful",
           "gl": "Xoguetón, xoguetona",
           "es": "Juguetón, juguetona",
@@ -189,7 +189,7 @@
           }
         },
         {
-          "id": "meow",
+          "id": "3_4.febreiro.s1.meow",
           "en": "Meow!",
           "gl": "Miau!",
           "es": "¡Miau!",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "id": "woof-woof",
+          "id": "3_4.febreiro.s1.woof-woof",
           "en": "Woof, woof!",
           "gl": "Guau, guau!",
           "es": "¡Guau, guau!",
@@ -211,7 +211,7 @@
           }
         },
         {
-          "id": "come-here-puppy",
+          "id": "3_4.febreiro.s1.come-here-puppy",
           "en": "Come here, puppy",
           "gl": "Ven aquí, cachorriño",
           "es": "Ven aquí, cachorrito",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "id": "like-a-cat",
+          "id": "3_4.febreiro.s1.like-a-cat",
           "en": "Like a cat",
           "gl": "Coma un gato",
           "es": "Como un gato",
@@ -242,7 +242,7 @@
       },
       "palabras": [
         {
-          "id": "cow",
+          "id": "3_4.febreiro.s2.cow",
           "en": "Cow",
           "gl": "Vaca",
           "es": "Vaca",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "id": "pig",
+          "id": "3_4.febreiro.s2.pig",
           "en": "Pig",
           "gl": "Porco",
           "es": "Cerdo",
@@ -264,7 +264,7 @@
           }
         },
         {
-          "id": "hen",
+          "id": "3_4.febreiro.s2.hen",
           "en": "Hen",
           "gl": "Galiña",
           "es": "Gallina",
@@ -275,7 +275,7 @@
           }
         },
         {
-          "id": "duck",
+          "id": "3_4.febreiro.s2.duck",
           "en": "Duck",
           "gl": "Pato",
           "es": "Pato",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "id": "horse",
+          "id": "3_4.febreiro.s2.horse",
           "en": "Horse",
           "gl": "Cabalo",
           "es": "Caballo",
@@ -297,7 +297,7 @@
           }
         },
         {
-          "id": "sheep",
+          "id": "3_4.febreiro.s2.sheep",
           "en": "Sheep",
           "gl": "Ovella",
           "es": "Oveja",
@@ -308,7 +308,7 @@
           }
         },
         {
-          "id": "farm",
+          "id": "3_4.febreiro.s2.farm",
           "en": "Farm",
           "gl": "Granxa",
           "es": "Granja",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "id": "gallop",
+          "id": "3_4.febreiro.s2.gallop",
           "en": "Gallop",
           "gl": "Galopar",
           "es": "Galopar",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "id": "waddle",
+          "id": "3_4.febreiro.s2.waddle",
           "en": "Waddle",
           "gl": "Bambearse",
           "es": "Anadear",
@@ -341,7 +341,7 @@
           }
         },
         {
-          "id": "peck",
+          "id": "3_4.febreiro.s2.peck",
           "en": "Peck",
           "gl": "Peteirar",
           "es": "Picotear",
@@ -352,7 +352,7 @@
           }
         },
         {
-          "id": "plough",
+          "id": "3_4.febreiro.s2.plough",
           "en": "Plough",
           "gl": "Arar",
           "es": "Arar",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "id": "graze",
+          "id": "3_4.febreiro.s2.graze",
           "en": "Graze",
           "gl": "Pacer",
           "es": "Pastar",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "pink",
+          "id": "3_4.febreiro.s2.pink",
           "en": "Pink",
           "gl": "Rosa",
           "es": "Rosa",
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": "dirty",
+          "id": "3_4.febreiro.s2.dirty",
           "en": "Dirty",
           "gl": "Sucio, sucia",
           "es": "Sucio, sucia",
@@ -396,7 +396,7 @@
           }
         },
         {
-          "id": "lazy",
+          "id": "3_4.febreiro.s2.lazy",
           "en": "Lazy",
           "gl": "Preguiceiro, preguiceira",
           "es": "Perezoso, perezosa",
@@ -407,7 +407,7 @@
           }
         },
         {
-          "id": "fresh",
+          "id": "3_4.febreiro.s2.fresh",
           "en": "Fresh",
           "gl": "Fresco, fresca",
           "es": "Fresco, fresca",
@@ -418,7 +418,7 @@
           }
         },
         {
-          "id": "moo",
+          "id": "3_4.febreiro.s2.moo",
           "en": "Moo!",
           "gl": "Muuu!",
           "es": "¡Muuu!",
@@ -429,7 +429,7 @@
           }
         },
         {
-          "id": "oink-oink",
+          "id": "3_4.febreiro.s2.oink-oink",
           "en": "Oink, oink!",
           "gl": "Oinc, oinc!",
           "es": "¡Oinc, oinc!",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "two-by-two",
+          "id": "3_4.febreiro.s2.two-by-two",
           "en": "Two by two",
           "gl": "De dous en dous",
           "es": "De dos en dos",
@@ -451,7 +451,7 @@
           }
         },
         {
-          "id": "in-the-barn",
+          "id": "3_4.febreiro.s2.in-the-barn",
           "en": "In the barn",
           "gl": "Na corte",
           "es": "En el establo",
@@ -471,7 +471,7 @@
       },
       "palabras": [
         {
-          "id": "bear",
+          "id": "3_4.febreiro.s3.bear",
           "en": "Bear",
           "gl": "Oso",
           "es": "Oso",
@@ -482,7 +482,7 @@
           }
         },
         {
-          "id": "lion",
+          "id": "3_4.febreiro.s3.lion",
           "en": "Lion",
           "gl": "León",
           "es": "León",
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "elephant",
+          "id": "3_4.febreiro.s3.elephant",
           "en": "Elephant",
           "gl": "Elefante",
           "es": "Elefante",
@@ -504,7 +504,7 @@
           }
         },
         {
-          "id": "monkey",
+          "id": "3_4.febreiro.s3.monkey",
           "en": "Monkey",
           "gl": "Mono",
           "es": "Mono",
@@ -515,7 +515,7 @@
           }
         },
         {
-          "id": "giraffe",
+          "id": "3_4.febreiro.s3.giraffe",
           "en": "Giraffe",
           "gl": "Xirafa",
           "es": "Jirafa",
@@ -526,7 +526,7 @@
           }
         },
         {
-          "id": "snake",
+          "id": "3_4.febreiro.s3.snake",
           "en": "Snake",
           "gl": "Serpe",
           "es": "Serpiente",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "id": "crocodile",
+          "id": "3_4.febreiro.s3.crocodile",
           "en": "Crocodile",
           "gl": "Crocodilo",
           "es": "Cocodrilo",
@@ -548,7 +548,7 @@
           }
         },
         {
-          "id": "roar",
+          "id": "3_4.febreiro.s3.roar",
           "en": "Roar",
           "gl": "Ruxir",
           "es": "Rugir",
@@ -559,7 +559,7 @@
           }
         },
         {
-          "id": "swing",
+          "id": "3_4.febreiro.s3.swing",
           "en": "Swing",
           "gl": "Randearse",
           "es": "Columpiarse",
@@ -570,7 +570,7 @@
           }
         },
         {
-          "id": "slither",
+          "id": "3_4.febreiro.s3.slither",
           "en": "Slither",
           "gl": "Arrastrarse",
           "es": "Reptar",
@@ -581,7 +581,7 @@
           }
         },
         {
-          "id": "snap",
+          "id": "3_4.febreiro.s3.snap",
           "en": "Snap",
           "gl": "Pechar de golpe",
           "es": "Cerrar de golpe",
@@ -592,7 +592,7 @@
           }
         },
         {
-          "id": "scratch",
+          "id": "3_4.febreiro.s3.scratch",
           "en": "Scratch",
           "gl": "Rañar",
           "es": "Rascar",
@@ -603,7 +603,7 @@
           }
         },
         {
-          "id": "huge",
+          "id": "3_4.febreiro.s3.huge",
           "en": "Huge",
           "gl": "Enorme",
           "es": "Enorme",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "green",
+          "id": "3_4.febreiro.s3.green",
           "en": "Green",
           "gl": "Verde",
           "es": "Verde",
@@ -625,7 +625,7 @@
           }
         },
         {
-          "id": "wrinkly",
+          "id": "3_4.febreiro.s3.wrinkly",
           "en": "Wrinkly",
           "gl": "Engurrado, engurrada",
           "es": "Arrugado, arrugada",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "id": "proud",
+          "id": "3_4.febreiro.s3.proud",
           "en": "Proud",
           "gl": "Orgulloso, orgullosa",
           "es": "Orgulloso, orgullosa",
@@ -647,7 +647,7 @@
           }
         },
         {
-          "id": "where-s-the-monkey",
+          "id": "3_4.febreiro.s3.where-s-the-monkey",
           "en": "Where's the monkey?",
           "gl": "Onde está o mono?",
           "es": "¿Dónde está el mono?",
@@ -658,7 +658,7 @@
           }
         },
         {
-          "id": "watch-out-crocodile",
+          "id": "3_4.febreiro.s3.watch-out-crocodile",
           "en": "Watch out, crocodile!",
           "gl": "Coidado, crocodilo!",
           "es": "¡Cuidado, cocodrilo!",
@@ -669,7 +669,7 @@
           }
         },
         {
-          "id": "stomp-like-a-bear",
+          "id": "3_4.febreiro.s3.stomp-like-a-bear",
           "en": "Stomp like a bear",
           "gl": "Pisa forte coma un oso",
           "es": "Pisa fuerte como un oso",
@@ -680,7 +680,7 @@
           }
         },
         {
-          "id": "tall-like-a-giraffe",
+          "id": "3_4.febreiro.s3.tall-like-a-giraffe",
           "en": "Tall like a giraffe",
           "gl": "Alto coma unha xirafa",
           "es": "Alto como una jirafa",
@@ -700,7 +700,7 @@
       },
       "palabras": [
         {
-          "id": "mask",
+          "id": "3_4.febreiro.s4.mask",
           "en": "Mask",
           "gl": "Máscara",
           "es": "Máscara",
@@ -711,7 +711,7 @@
           }
         },
         {
-          "id": "frog",
+          "id": "3_4.febreiro.s4.frog",
           "en": "Frog",
           "gl": "Ra",
           "es": "Rana",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "costume",
+          "id": "3_4.febreiro.s4.costume",
           "en": "Costume",
           "gl": "Disfrace",
           "es": "Disfraz",
@@ -733,7 +733,7 @@
           }
         },
         {
-          "id": "tail",
+          "id": "3_4.febreiro.s4.tail",
           "en": "Tail",
           "gl": "Rabo",
           "es": "Cola",
@@ -744,7 +744,7 @@
           }
         },
         {
-          "id": "wings",
+          "id": "3_4.febreiro.s4.wings",
           "en": "Wings",
           "gl": "Ás",
           "es": "Alas",
@@ -755,7 +755,7 @@
           }
         },
         {
-          "id": "feather",
+          "id": "3_4.febreiro.s4.feather",
           "en": "Feather",
           "gl": "Pluma",
           "es": "Pluma",
@@ -766,7 +766,7 @@
           }
         },
         {
-          "id": "parade",
+          "id": "3_4.febreiro.s4.parade",
           "en": "Parade",
           "gl": "Desfile",
           "es": "Desfile",
@@ -777,7 +777,7 @@
           }
         },
         {
-          "id": "fly",
+          "id": "3_4.febreiro.s4.fly",
           "en": "Fly",
           "gl": "Voar",
           "es": "Volar",
@@ -788,7 +788,7 @@
           }
         },
         {
-          "id": "flap",
+          "id": "3_4.febreiro.s4.flap",
           "en": "Flap",
           "gl": "Aletexar",
           "es": "Aletear",
@@ -799,7 +799,7 @@
           }
         },
         {
-          "id": "pretend",
+          "id": "3_4.febreiro.s4.pretend",
           "en": "Pretend",
           "gl": "Facer como que",
           "es": "Hacer como que",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "id": "croak",
+          "id": "3_4.febreiro.s4.croak",
           "en": "Croak",
           "gl": "Croar",
           "es": "Croar",
@@ -821,7 +821,7 @@
           }
         },
         {
-          "id": "leap",
+          "id": "3_4.febreiro.s4.leap",
           "en": "Leap",
           "gl": "Brincar",
           "es": "Brincar",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "magic",
+          "id": "3_4.febreiro.s4.magic",
           "en": "Magic",
           "gl": "Máxico, máxica",
           "es": "Mágico, mágica",
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "different",
+          "id": "3_4.febreiro.s4.different",
           "en": "Different",
           "gl": "Diferente",
           "es": "Diferente",
@@ -854,7 +854,7 @@
           }
         },
         {
-          "id": "same",
+          "id": "3_4.febreiro.s4.same",
           "en": "Same",
           "gl": "Igual",
           "es": "Igual",
@@ -865,7 +865,7 @@
           }
         },
         {
-          "id": "hidden",
+          "id": "3_4.febreiro.s4.hidden",
           "en": "Hidden",
           "gl": "Agochado, agochada",
           "es": "Escondido, escondida",
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "who-am-i",
+          "id": "3_4.febreiro.s4.who-am-i",
           "en": "Who am I?",
           "gl": "Quen son eu?",
           "es": "¿Quién soy yo?",
@@ -887,7 +887,7 @@
           }
         },
         {
-          "id": "take-off-your-mask",
+          "id": "3_4.febreiro.s4.take-off-your-mask",
           "en": "Take off your mask",
           "gl": "Quita a máscara",
           "es": "Quítate la máscara",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "id": "jump-like-a-frog",
+          "id": "3_4.febreiro.s4.jump-like-a-frog",
           "en": "Jump like a frog",
           "gl": "Salta coma unha ra",
           "es": "Salta como una rana",
@@ -909,7 +909,7 @@
           }
         },
         {
-          "id": "fly-like-a-bird",
+          "id": "3_4.febreiro.s4.fly-like-a-bird",
           "en": "Fly like a bird",
           "gl": "Voa coma un paxaro",
           "es": "Vuela como un pájaro",

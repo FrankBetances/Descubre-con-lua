@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "id": "unidade.curso_3_4.04",
+  "curso": "curso_3_4",
+  "orden": 4,
+  "mesCalendario": 12,
+  "asamblea": "asamblea.segundo_ciclo.decembro.4_infantil",
+  "centroInteres": {
+    "gl": "A colocación mimética do abrigo de inverno",
+    "es": "La colocación mimética del abrigo de invierno"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.xaneiro.s1.boots"
+    },
+    {
+      "ref": "3_4.decembro.s1.snow"
+    },
+    {
+      "ref": "3_4.xaneiro.s2.stomp"
+    },
+    {
+      "ref": "3_4.outubro.s4.tiptoe"
+    },
+    {
+      "ref": "3_4.decembro.s2.light"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [
+    {
+      "ref": "frase.formula.help-me-please"
+    },
+    {
+      "ref": "3_4.setembro.s3.thank-you"
+    }
+  ],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.decembro.4i.01",
+      "usa": [
+        "3_4.xaneiro.s1.boots"
+      ]
+    },
+    {
+      "ref": "frase.cmd.decembro.4i.02",
+      "usa": [
+        "3_4.xaneiro.s2.stomp",
+        "3_4.decembro.s1.snow"
+      ]
+    },
+    {
+      "ref": "frase.cmd.decembro.4i.03",
+      "usa": [
+        "3_4.outubro.s4.tiptoe",
+        "3_4.decembro.s2.light"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha vela LED",
+      "es": "Una vela LED"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Fai o xesto de calzar unha bota pesada",
+      "es": "Hace el gesto de calzarse una bota pesada"
+    },
+    {
+      "gl": "Pasa de pisar forte a camiñar de puntas",
+      "es": "Pasa de pisar fuerte a caminar de puntillas"
+    }
+  ],
+  "reactivar": [
+    "3_4.novembro.s2.chestnut"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

@@ -21,7 +21,6 @@ import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.dart';
 import 'package:descubre_con_lua/features/docentes/widgets/hoxe_na_aula.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
-import 'package:descubre_con_lua/features/familias/widgets/tarxeta_ingles_de_hoxe_fogar.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 
@@ -62,7 +61,6 @@ void main() {
         .toList()
       ..sort();
     await repo.initialize(
-      unidadPaths: jsons('assets/content/unidades'),
       capsulaPaths: const [],
       asambleaSegundoCicloPaths:
           jsons('assets/content/asambleas_segundo_ciclo'),
@@ -78,6 +76,13 @@ void main() {
     // El banco de días se lee aquí, con E/S de verdad: dentro de un
     // `testWidgets` el reloj es falso y una lectura de disco no termina.
     await repo.loadCalendarioDias(cursoId: '');
+    // M4.1: la asamblea lee su unidad y el registro antes de abrirse.
+    await repo.loadRexistroFrases();
+    for (final c in cursoTprDoGrupo.values) {
+      for (final mes in const [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]) {
+        await repo.loadUnidadeDoMes(c, mes);
+      }
+    }
   });
 
   setUp(() async {
@@ -123,13 +128,23 @@ void main() {
     await tester.pumpAndSettle();
   }
 
-  /// Como la tarjeta vive en el portal: en una lista con 16 de margen.
-  Widget enLista(Widget tarxeta) => Scaffold(
-        body: ListView(
-          padding: const EdgeInsets.all(16),
-          children: [tarxeta],
-        ),
-      );
+  /// M3.10: en Hoy, las palabras del día van plegadas bajo el núcleo del mes.
+  /// Si la tarjeta lleva el pliegue cerrado, se abre antes de mirarlas.
+  Future<void> abrirPliegue(WidgetTester tester, Finder dentro) async {
+    final abrir = find.descendant(
+        of: dentro, matching: find.byKey(const Key('abrir_palabras_do_dia')));
+    if (abrir.evaluate().isEmpty) return;
+    if (find
+        .descendant(of: dentro, matching: find.byType(PalabrasDoDia))
+        .evaluate()
+        .isNotEmpty) {
+      return;
+    }
+    await tester.ensureVisible(abrir);
+    await tester.pumpAndSettle();
+    await tester.tap(abrir);
+    await tester.pumpAndSettle();
+  }
 
   void compruebaPalabras(Finder dentro, DailyTprPlan plan, AppLanguage lang) {
     expect(
@@ -253,6 +268,7 @@ void main() {
           final plan = curso.planDoDia(9, 4, 3)!;
           expect(plan.newWords, hasLength(5));
           expect(plan.reviewWords, hasLength(10));
+          await abrirPliegue(tester, palabras);
           compruebaPalabras(palabras, plan, lang);
           expect(
               find.descendant(
@@ -289,6 +305,7 @@ void main() {
                   : 'Para empezar en septiembre'),
               findsOneWidget);
           await baixarAsPalabras(tester);
+          await abrirPliegue(tester, palabras);
           compruebaPalabras(palabras, curso.planDoDia(9, 1, 1)!, lang);
           expect(erroresDe(tester), isEmpty);
         });
@@ -301,6 +318,7 @@ void main() {
           final plan = curso.planDoDia(9, 4, 5)!;
           expect(plan.newWords, isEmpty);
           expect(plan.reviewWords, hasLength(20));
+          await abrirPliegue(tester, palabras);
           compruebaPalabras(palabras, plan, lang);
           // As vinte, por bloques: o reto xógase así.
           for (final p in plan.reviewWords) {
@@ -340,6 +358,7 @@ void main() {
             await tester.pumpAndSettle();
             expect(seleccionado, id);
             await baixarAsPalabras(tester);
+            await abrirPliegue(tester, palabras);
             compruebaPalabras(
                 palabras, programa.curso(id)!.planDoDia(9, 4, 3)!, lang);
             expect(erroresDe(tester), isEmpty, reason: id);
@@ -411,101 +430,6 @@ void main() {
         await tester.tap(pechar);
         expect(pechada, isTrue);
         expect(erroresDe(tester), isEmpty);
-      });
-
-      group('A tarxeta do inglés na casa, en $etiqueta', () {
-        testWidgets('as MESMAS palabras que a escola ese día, e cabe',
-            (tester) async {
-          var xogos = 0;
-          await pintar(
-            tester,
-            enLista(TarxetaInglesDeHoxeFogar(
-              programa: programa,
-              cursoId: 'curso_0_2',
-              onCambiarCurso: (_) {},
-              language: lang,
-              audioService: MockOfflineAudioService(),
-              agora: miercoles,
-              onVerXogos: () => xogos++,
-            )),
-            escala: escala,
-          );
-          final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
-          expect(tarxeta, findsOneWidget);
-          final plan = curso.planDoDia(9, 4, 3)!;
-          compruebaPalabras(tarxeta, plan, lang);
-          // A dinámica de CASA dese día, non a da aula.
-          expect(
-              find.descendant(
-                  of: tarxeta,
-                  matching: find
-                      .text(curso.modelo.dia(3)!.dinamicaFogar.resolve(lang))),
-              findsOneWidget);
-          expect(find.byKey(const Key('ingles_fogar_prevista')), findsNothing);
-          expect(erroresDe(tester), isEmpty,
-              reason: 'A tarxeta da casa desborda en $etiqueta.');
-
-          final boton = find.byKey(const Key('boton_xogos_fogar_desde_ingles'));
-          await tester.ensureVisible(boton);
-          await tester.pumpAndSettle();
-          await tester.tap(boton);
-          expect(xogos, 1);
-          expect(erroresDe(tester), isEmpty);
-        });
-
-        testWidgets('en agosto avisa de que son as do primeiro día',
-            (tester) async {
-          await pintar(
-            tester,
-            enLista(TarxetaInglesDeHoxeFogar(
-              programa: programa,
-              cursoId: 'curso_0_2',
-              onCambiarCurso: (_) {},
-              language: lang,
-              agora: DateTime(2026, 8, 3),
-              onVerXogos: () {},
-            )),
-            escala: escala,
-          );
-          expect(
-              find.byKey(const Key('ingles_fogar_prevista')), findsOneWidget);
-          compruebaPalabras(
-              find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar')),
-              curso.planDoDia(9, 1, 1)!,
-              lang);
-          expect(erroresDe(tester), isEmpty);
-        });
-
-        testWidgets('a crianza doutro curso ve as palabras DESE curso',
-            (tester) async {
-          var seleccionado = 'curso_0_2';
-          await pintar(
-            tester,
-            StatefulBuilder(
-              builder: (context, setState) => enLista(TarxetaInglesDeHoxeFogar(
-                programa: programa,
-                cursoId: seleccionado,
-                onCambiarCurso: (c) => setState(() => seleccionado = c),
-                language: lang,
-                agora: miercoles,
-                onVerXogos: () {},
-              )),
-            ),
-            escala: escala,
-          );
-          final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
-          for (final id in ['curso_5_6', 'curso_3_4']) {
-            final chip = find.byKey(ValueKey('fogar_curso_$id'));
-            await tester.ensureVisible(chip);
-            await tester.pumpAndSettle();
-            await tester.tap(chip);
-            await tester.pumpAndSettle();
-            expect(seleccionado, id);
-            compruebaPalabras(
-                tarxeta, programa.curso(id)!.planDoDia(9, 4, 3)!, lang);
-            expect(erroresDe(tester), isEmpty, reason: id);
-          }
-        });
       });
 
       testWidgets(
@@ -650,6 +574,7 @@ void main() {
       final palabras = find.byKey(const Key('hoxe_aula_palabras'));
       await tester.dragUntilVisible(palabras, lista, const Offset(0, -150));
       await tester.pumpAndSettle();
+      await abrirPliegue(tester, palabras);
       compruebaPalabras(palabras,
           curso.planDoDia(hoxe.mesCalendario, hoxe.semana, hoxe.dia)!, lang);
 
@@ -690,6 +615,7 @@ void main() {
         await tester.pumpAndSettle();
         await tester.dragUntilVisible(palabras, lista, const Offset(0, -150));
         await tester.pumpAndSettle();
+        await abrirPliegue(tester, palabras);
         compruebaPalabras(
             palabras,
             programa
@@ -747,6 +673,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(tarxeta, findsOneWidget);
       final hoxe = diaDoCursoParaHoxe().dia;
+      await abrirPliegue(tester, tarxeta);
       compruebaPalabras(tarxeta,
           curso.planDoDia(hoxe.mesCalendario, hoxe.semana, hoxe.dia)!, lang);
     });

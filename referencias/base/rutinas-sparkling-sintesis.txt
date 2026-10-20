@@ -1,0 +1,187 @@
+﻿Manual de Operaciones: Arquitectura Técnica y Desglose Operativo de las Sesiones Diarias de 45 Minutos en el Modelo SparkLing™ (UW I-LABS)
+Fundamentación Neurocognitiva y Marco de Intervención I-LABS
+El programa de intervención lingüística temprana SparkLing™, desarrollado en el Institute for Learning & Brain Sciences (I-LABS) de la University of Washington bajo la dirección científica de Patricia Kuhl y Naja Ferjan Ramírez, constituye una traslación directa de los descubrimientos de la neurociencia contemporánea a la praxis pedagógica en el primer ciclo de educación infantil1. Las investigaciones en neuroimagen funcional —particularmente los registros de magnetoencefalografía (MEG) en lactantes despiertos— han demostrado que durante la ventana sensible que abarca desde el nacimiento hasta los tres años, el cerebro humano posee una capacidad plástica excepcional para discriminar contrastes fonéticos universales y estructurar redes neuronales dedicadas a más de una lengua sin generar interferencias en el desarrollo de la lengua materna1.
+No obstante, esta receptividad neuronal depende de mediadores ambientales específicos. Los estudios experimentales de I-LABS han probado sistemáticamente la hipótesis del social gating o barrera social: la exposición pasiva a material grabado o emisiones audiovisuales resulta neurológicamente inerte para la adquisición de una segunda lengua (L2) en infantes, mientras que una exposición equivalente mediada por interlocutores humanos en vivo detona un aprendizaje fonético y léxico rápido y duradero4. La presencia social directa activa cascadas neuromoduladoras vinculadas a la atención sostenida y la dopamina, lo que permite a los circuitos cerebrales del infante registrar estadísticamente las regularidades fonotácticas del nuevo idioma4.
+Sobre esta base, el modelo SparkLing™ articula su diseño experimental en torno a seis principios rectores implementados en entornos reales de centros infantiles2:
+1. Volumen masivo de input acústico: Se garantiza una alta densidad cuantitativa de habla en la lengua extranjera durante cada sesión2.
+2. Uso sistemático del Parentese (habla dirigida al niño): Empleo de un registro caracterizado por un tono fundamental más agudo, contornos de entonación alargados y vocales hiperarticuladas acústicamente, facilitando que el analizador auditivo del niño segregue unidades fonémicas2.
+3. Contexto de interacción social cara a cara: Alineación de miradas, afectividad compartida y andamiaje lúdico en entornos estructurados2.
+4. Respuesta contingente e interactividad inmediata: Fomento constante de la alternancia de turnos conversacionales (serve-and-return), donde cada vocalización o gesto del menor es validado por el tutor2.
+5. Multiplicidad de interlocutores competentes: Exposición al input a través de diversos instructores para favorecer la abstracción fonológica por encima de las idiosincrasias de un único emisor2.
+6. Andamiaje lúdico y exposición distribuida: Estructuración del aprendizaje a través del juego guiado en bloques diarios distribuidos a lo largo del año académico2.
+
+
+Dimensión Pedagógica
+	Práctica Tradicional en Educación Temprana
+	Modelo Operativo SparkLing™ (UW I-LABS)
+	Modalidad de Exposición
+	Contenidos pregrabados, vídeos infantiles o instrucción frontal genérica.
+	Interacción social en vivo altamente contingente (social gating)2.
+	Calibración Fonética
+	Habla adulta convencional o patrones cantarines no sistemáticos.
+	Parentese acústicamente expandido (hiperarticulación de formantes)2.
+	Configuración de Ratios
+	Un docente a cargo de grupos completos (15 a 20 infantes).
+	Equipos de 3 tutores coordinados con ratios de 1:4 a 1:6 en subgrupos2.
+	Activación del Aprendiz
+	Escucha pasiva y repetición coral descontextualizada.
+	Generación de turnos conversacionales bidireccionales continuos2.
+	Monitorización del Impacto
+	Observación impresionista no cuantitativa.
+	Registro objetivo mediante tecnología LENA y pruebas CCT estandarizadas2.
+	Cronometría de Sesión y Logística Organizativa en el Aula
+La operacionalización del método en escuelas infantiles determinó que la sesión diaria debe tener una duración exacta de 45 minutos2. Esta franja horaria sustituyó a las intervenciones originales de 60 minutos tras evidenciarse que 45 minutos se ajustan a la perfección a la ventana de atención sostenida de lactantes y caminadores (entre 9 y 33 meses), al tiempo que previenen la sobrecarga cognitiva y facilitan que los equipos docentes roten de forma eficiente sin desorganizar las rutinas troncales de descanso y alimentación del centro2.
+Las sesiones se realizan dentro del aula habitual del grupo para minimizar el estrés asociado al cambio de entorno físico2. El equipo pedagógico está integrado por tres tutores debidamente certificados en el método SparkLing™ que trabajan simultáneamente2. Durante los momentos colectivos (apertura y cierre), los tres tutores modelan dinámicas coordinadas; durante el trabajo central (lectura y taller manipulativo), el grupo de 14 a 20 niños se fragmenta de modo natural en tres microestaciones de 4 a 6 participantes2. Esta logística permite que cada infante reciba un promedio sustancialmente mayor de interacciones directas cara a cara por minuto en comparación con esquemas pedagógicos de aula masiva2.
+La arquitectura temporal se divide en cuatro fases consecutivas:
+1. Fase 1: Acogida y Pulso Rítmico (7 a 10 minutos), orientada a la vinculación afectiva, la fijación de la atención conjunta y el arrastre sensoriomotor.
+2. Fase 2: Cuento Interactivo Dialógico (10 a 12 minutos), dedicada al mapeo fonético-semántico mediante lectura dialógica adaptada.
+3. Fase 3: Taller Manipulativo y Respuesta Física Total (15 a 18 minutos), centrada en el anclaje sensorio-motriz y la comprensión procedural.
+4. Fase 4: Despedida Afectiva y Cierre Consolidativo (5 a 7 minutos), focalizada en la integración de la memoria y la transición emocionalmente segura al aula ordinaria.
+Fase de la Rutina Diaria
+	Asignación Temporal
+	Objetivo Neuroevolutivo Central
+	Dispositivos y Materiales Clave
+	1. Acogida y Pulso
+	7–10 minutos
+	Regulación límbica, sintonía socioemocional y enganche rítmico premotor.
+	Marioneta-ancla de habla exclusiva en L2, alfombra circular, apoyos visuales.
+	2. Cuento Interactivo
+	10–12 minutos
+	Atención compartida, lectura dialógica (PEER/CROWD) y discriminación auditiva.
+	Libros ilustrados temáticos de gran formato, texturas hápticas y solapas.
+	3. Taller TPR
+	15–18 minutos
+	Integración cinestésica motriz, comando procedural y vocabulario receptivo.
+	Cestas sensoriales, objetos reales manipulables, tarjetas de acción motora.
+	4. Despedida Afectiva
+	5–7 minutos
+	Consolidación mnésica en memoria de trabajo y desactivación fisiológica.
+	Saco táctil de recapitulación ("Mystery Bag"), canción ritual de despedida.
+	Desglose Operacionalizado de las Cuatro Fases Diarias
+Fase 1: Acogida y Pulso Rítmico (7–10 Minutos)
+El objetivo primario de la fase de acogida radica en crear una atmósfera de seguridad afectiva y confort fisiológico que desactive las respuestas de estrés del sistema nervioso simpático, habilitando los circuitos cerebrales responsables del procesamiento lingüístico9. La neurociencia auditiva ha demostrado que la estimulación musical rítmica sincronizada optimiza el procesamiento temporal del habla al entrenar a las neuronas del córtex auditivo para predecir intervalos acústicos regulares, mecanismo indispensable para aislar morfemas y fonemas5.
+La secuencia operativa comienza en el instante en que los tutores ingresan al aula. Los instructores descienden inmediatamente al nivel físico del suelo, alineando su campo visual con el de los niños para erradicar cualquier asimetría postural dominante. Uno de los tutores asume el rol de mediador principal portando un títere de tela suave —la marioneta-ancla— que se utiliza exclusivamente en los contextos en los que se habla en inglés. Los otros dos tutores brindan soporte afectivo proximal, facilitando la incorporación de aquellos infantes que muestran titubeo inicial.
+Cada menor es recibido nominalmente mediante una vocalización afectiva en Parentese que involucra una marcada modulación tonal ascendente: "Heeello, Sofia! Good mooorning! Look who came to play with us today!"2. La marioneta establece una aproximación táctil no invasiva, ofreciendo un saludo de choque de manos o una suave caricia háptica, lo que cimenta la reactividad socioemocional positiva y dirige la mirada hacia el rostro del interlocutor.
+A continuación, el tutor principal introduce el pulso rítmico mediante palmadas lentas sobre los muslos, marcando una cadencia isométrica predecible de entre 80 y 100 pulsaciones por minuto. Este patrón rítmico es acompañado por la canción de bienvenida protocolizada:
+"Hello, hello, hello! How are you? / I’m good, I’m great, how are you today?"
+Los tres tutores ejecutan la melodía de manera síncrona hiperarticulando cada sílaba con gestos faciales expresivos2. Los co-tutores guían con calidez los brazos de los infantes más pequeños para que sigan el ritmo cinestésico. La rutina concluye con una activación física lúdica que enlaza el pulso acústico con el esquema corporal ("Put your hands up high! Touch your nose, soft, soft, touch!"), logrando un estado de alerta colectiva y atención conjunta hacia el equipo pedagógico.
+Fase 2: Cuento Interactivo y Lectura Dialógica (10–12 Minutos)
+La transición a la segunda fase canaliza la activación somatosensorial hacia el foco visual de un libro ilustrado de gran escala y alta carga cromática2. En esta etapa, el libro no opera como un texto de lectura lineal pasiva, sino como un andamiaje para la interacción dialógica estructurada12. En niños menores de tres años, la lectura dialógica acelera la adquisición de vocabulario mediante la coordinación de la mirada y la verbalización de preguntas altamente contextualizadas6.
+La técnica nuclear implementada es la secuencia PEER (Prompt, Evaluate, Expand, Repeat), reformulada específicamente para lactantes y niños preescolares en contextos de inmersión en una segunda lengua12. Los cuatro pasos de la secuencia se despliegan en el siguiente flujo interactivo:
+En primer lugar, el tutor emite el estímulo (Prompt), utilizando la entonación del Parentese y señalando una ilustración focalizada para dirigir la atención conjunta12: "Look at the tree! What is sleeping under the tree?". Si el menor es preverbal, el estímulo se simplifica acompañándolo de un modelado gestual inmediato: "Look, a little rabbit! Can you point to the bunny?".
+En segundo lugar, se ejecuta la evaluación (Evaluate), consistente en una validación contingente de la respuesta no verbal o aproximación fonética emitida por el niño12. Si el participante emite una aproximación como "ba", o sencillamente toca con el dedo la figura del animal, el tutor responde inmediatamente con afirmación facial cálida: "Yes! That’s it! Good pointing!".
+En tercer lugar, el tutor procede a la expansión (Expand), reformulando el concepto e insertándolo en un entorno sintáctico enriquecido pero asequible12: "Yes, it is a white bunny! A little, soft bunny hopping around!". Esta fase de expansión resulta neurobiológicamente decisiva, ya que proporciona el modelo léxico exacto en la lengua meta en sincronía milimétrica con la activación semántica en el cerebro del infante.
+Finalmente, se produce la reiteración (Repeat), donde se invita al niño o al microgrupo a consolidar el vocablo meta mediante una repetición lúdica y desprovista de presión evaluativa12: "Can we all say: bunny? Bunny! Soft, soft bunny!".
+Para estructurar los estímulos (Prompts), el equipo de tutores calibra las estrategias mnemotécnicas del sistema CROWD, adecuándolas de manera diferenciada según el nivel madurativo de la cohorte infantil12.
+
+
+Estrategia CROWD
+	Adaptación Metodológica (9 a 33 Meses)
+	Protocolo de Verbalización del Tutor
+	Patrón de Respuesta Infantil Requerido
+	Completion (Completar)
+	Pausa prosódica expectante al cierre de una frase rimada o repetitiva del texto.
+	"The brown horse says neigh, and the little yellow duck says... [silencio de 3 segundos]"12.
+	Emisión de la onomatopeya o vocalización de la palabra omitida ("quack")12.
+	Recall (Evocación)
+	Pregunta nemotécnica inmediata respecto a la página inmediatamente anterior.
+	"Who was hiding behind the big green door? Can you remember?"12.
+	Señalamiento hacia la página previa o vocalización rudimentaria del personaje12.
+	Open-ended (Abierta)
+	Invitación motriz o visual a explorar aspectos dinámicos de la ilustración.
+	"Look at all the water splashing! What is the happy frog doing here?"12.
+	Imitación motora de chapoteo, gestos corporales o emisión de balbuceo intencionado.
+	Wh- Prompts (Interrogativas)
+	Preguntas delimitadas primordialmente a pronombres deícticos (What y Where).
+	"Where is the shiny red apple? Touch the shiny apple!"12.
+	Coordinación visomotora directa tocando la superficie de la ilustración12.
+	Distancing (Distanciamiento)
+	Conexión del concepto visual con el cuerpo o el entorno inmediato de la sala.
+	"The teddy bear touches his tummy! Sofia, where is your tummy? Soft tummy!"12.
+	Traslación del término abstracto al plano propioceptivo tocándose el abdomen.
+	Fase 3: Taller Manipulativo y Respuesta Física Total (TPR) (15–18 Minutos)
+La tercera fase representa el núcleo de afianzamiento experiencial de la sesión. Fundamentada en la metodología de Total Physical Response (TPR) formulada por James Asher, postula que en las etapas iniciales de la adquisición lingüística la comprensión auditiva precede cronológicamente a la producción verbal, estructurándose de forma óptima cuando el input verbal se empareja indisolublemente con comandos corporales no verbales14. Al manipular elementos tridimensionales mientras se ejecutan órdenes de acción, el cerebro infantil activa de manera simultánea la corteza somatosensorial, las áreas premotoras y el giro temporal superior, forjando huellas de memoria procedimentales inmunes al olvido acelerado2.
+Para asegurar una inmersión personalizada, el aula de 14 a 20 infantes se divide de inmediato en tres estaciones de trabajo físico lideradas cada una por uno de los tres tutores2. En estos grupos de 4 a 6 niños, cada tutor despliega una cesta con materiales táctiles (frutas simuladas de silicona, réplicas realistas de fauna con texturas, esponjas, pelotas de fieltro o recipientes de apertura mecánica)2.
+El ciclo pedagógico de cada comando dentro del taller manipulativo TPR sigue una secuencia tripartita:
+1. Modelado y comando motor sincrónico: El tutor verbaliza la orden en un tono enfático y melodioso mientras ejecuta él mismo la acción con precisión exagerada: "Pick up the big green frog! Jump, jump! Put the frog IN the basket!".
+2. Acción guiada co-ejecutiva: El tutor toma la mano del infante o guía con suavidad su antebrazo para acompañar el acto motor, verbalizando la acción en presente continuo: "Let’s do it together, Mateo! The frog is jumping! Into the basket, splash!".
+3. Ejecución autónoma y retroalimentación contingente: El tutor pronuncia la instrucción dirigida a un niño concreto sin realizar la mímica previa, brindando el tiempo de procesamiento necesario para que el menor procese el comando auditivo y ejecute la acción motriz: "Elena, show me! Put the red apple ON your head!". Tan pronto como la acción tiene lugar, el tutor sella el circuito de aprendizaje con refuerzo positivo contingente: "YES! The apple is right ON your head! Wonderful job!"2.
+Unidad Temática Mensual
+	Léxico Nuclear Meta
+	Comandos Motores TPR
+	Recursos Físicos y Material Manipulativo
+	Alimentación y Rutina Sensorial
+	Apple, Banana, Eat, Big, Small, Inside
+	Agarrar, simular masticar ("Yum, eat!"), meter y sacar de recipientes cerrados.
+	Cestas de mimbre, frutas de silicona alimentaria con texturas y pesos diferenciados.
+	Locomoción y Fauna
+	Bird, Frog, Jump, Fly, Sleep, Fast, Slow
+	Saltar en cuclillas, batir brazos imitando vuelo, recostarse con manos en la mejilla.
+	Figuras animales blandas, alfombras con texturas de césped y agua artificial.
+	Higiene Corporal y Espacialidad
+	Hands, Water, Wash, Dry, Up, Down
+	Frotar enérgicamente las manos, secar muñecas imaginarias, estirar extremidades.
+	Esponjas suaves, toallas pequeñas de microfibra, recipientes de encaje apilables.
+	Fase 4: Despedida Afectiva y Cierre Consolidativo (5–7 Minutos)
+El segmento terminal de la sesión persigue dos metas neurobiológicas cruciales: la consolidación en la memoria de trabajo de las etiquetas léxicas procesadas y la transición fisiológica hacia un estado de calma antes de devolver al infante a la custodia de sus educadores habituales9. La interrupción abrupta de una actividad en lengua extranjera puede suscitar confusión o ansiedad por separación; por el contrario, un ritual de salida predecible proporciona coherencia estructural e incrementa el bienestar subjetivo del niño en el centro educativo9.
+La transición comienza cuando el tutor principal activa una señal auditiva relajante (por ejemplo, el tañido de un pequeño carrillón o un patrón descendente de chasquidos). Los tres tutores inician la tarea de recogida activa como una extensión natural del aprendizaje: "Clean up, clean up, everybody pick up the toys!", guiando a los infantes a guardar cada objeto en sus respectivas cajas y congregándose nuevamente en círculo sobre la alfombra principal.
+Una vez restablecido el círculo, se lleva a cabo la rutina de recapitulación mnésica mediante la bolsa táctil de los recuerdos ("The Mystery Bag"). El tutor sostiene una bolsa opaca de tela suave y convoca a un menor por su nombre: "Diego, reach inside! What can you feel?". El niño extrae a ciegas uno de los objetos representativos de la sesión (por ejemplo, el pato de juguete). En ese instante, los tres tutores modelan una despedida nominal del objeto en coro rítmico: "Look! It’s the yellow duck! Quack, quack! Bye-bye, duck!". El procedimiento se repite con un máximo de dos o tres objetos clave para no fatigar la memoria ejecutiva y reforzar el anclaje de los núcleos temáticos del día.
+Finalmente, el equipo entona la canción ritual de cierre acompañada de un balanceo corporal pausado:
+"Bye-bye, goodbye! Bye-bye, friends! / Wave your hands, stomp your feet, see you tomorrow again!"
+La sesión concluye con una interacción individualizada de despedida: cada tutor se acerca a los miembros de su estación asignada, establece contacto visual, sonríe y realiza un gesto afectivo acordado (un choque de palmas suave o un gesto de despedida con la mano diciendo "Goodbye, Lucas! You did great today!"). Los tutores traspasan con serenidad la atención de los niños a los maestros titulares de la escuela infantil, completando una experiencia pedagógica estructurada, segura y predecible.
+Directrices Pedagógicas Transversales y Dinámica Interaccional
+La efectividad documentada del modelo SparkLing™ no reposa en la ejecución mecánica de las actividades, sino en la fidelidad con que los instructores aplican un repertorio preciso de conductas sociocomunicativas basadas en la neurobiología infantil2.
+Estilo de Habla SparkLing™: Parámetros del Parentese
+A lo largo de los 45 minutos, los tutores emplean de manera continua el habla dirigida al niño (Parentese), un formato acústico universal que cataliza el procesamiento del habla temprana mediante tres alteraciones fónicas fundamentales2:
+* Elevación del tono fundamental (  ) y excursión de contornos: La frecuencia media se incrementa entre 100 y 150 Hz por encima del registro adulto ordinario, combinada con trayectorias melódicas onduladas que capturan selectivamente el sistema de atención fásica del lactante2.
+* Desaceleración del tempo articulatorio: La velocidad de emisión se reduce deliberadamente, prolongando la duración de las palabras clave y agregando pausas de 1 a 2 segundos entre sintagmas para facilitar la segmentación lingüística2.
+* Hiperarticulación de formantes vocálicos: El triángulo acústico definido por las vocales extremas (/i/, /u/, /ɑ/) se expande en el espacio articulatorio, facilitando al cerebro inmaduro la diferenciación perceptiva de categorías fonológicas contrastivas2.
+La Alternancia de Turnos (Serve-and-Return) y el Tiempo de Espera
+Las evaluaciones con tecnología LENA (procesadores digitales de lenguaje que registran variables como el recuento de turnos conversacionales o CTC) han revelado que el factor que mejor predice el crecimiento del vocabulario y la posterior mielinización de la sustancia blanca en las vías perisilvianas no es la cantidad bruta de palabras que el niño oye, sino el número de turnos conversacionales recíprocos en los que participa activamente2.
+Para maximizar estos turnos, el tutor debe dominar el principio del tiempo de espera (wait time): tras emitir una pregunta o estímulo, el adulto guarda un silencio riguroso de 3 a 5 segundos, manteniendo una postura corporal inclinada hacia adelante y una expresión facial expectante. Cualquier reacción emitida por el menor —sea un balbuceo, una risa, un señalamiento gestual o una mirada sostenida— es tratada como un turno conversacional legítimo y respondida de inmediato con contingencia semántica y afectiva2.
+Retroalimentación Positiva y Recasting frente a la Corrección Explícita
+El modelo prohíbe taxativamente la corrección explícita de errores fonéticos o el señalamiento punitivo del uso de la lengua materna del niño9. El empleo de expresiones restrictivas (como "No, not perro, say dog") activa respuestas de inhibición social e incrementa el filtro afectivo del infante9.
+En su lugar, el equipo aplica el recasting sistemático: si un menor señala una manzana y vocaliza en su lengua materna ("¡Mira, manzana!"), el tutor valida el acierto conceptual y modela la forma canónica en inglés de manera indirecta, diciendo: "Yes! You found the apple! That is a big, red apple! Good job!". De este modo, el menor recibe la confirmación positiva de su éxito comunicativo a la vez que su cerebro registra el contraste fonológico y léxico correcto en el idioma meta.
+
+
+Dimensión de Calidad Pedagógica
+	Práctica Óptima Requerida (Nivel 3)
+	Desviación Metodológica a Corregir (Nivel 1)
+	Registro Acústico (Parentese)
+	Tono melódico, entonación musical y vocales hiperarticuladas durante >80% de la sesión2.
+	Habla en registro adulto neutro, entonación plana, ritmo acelerado o susurros constantes.
+	Tiempo de Espera y Turnos
+	Concesión regular de 3 a 5 segundos de silencio expectante tras cada intervención directiva7.
+	Monólogos ininterrumpidos del tutor o precipitación para responder sin esperar al niño.
+	Gestión del Error (Recasting)
+	Reformulación conversacional indirecta sin invalidar la aportación o el uso de la L1.
+	Corrección verbal punitiva ("No, that’s wrong") o insistencia demandante de repetición forzada9.
+	Posicionamiento Espacial
+	Agachado a ras de suelo en semicírculo, manteniendo contacto visual a la altura de los ojos2.
+	Tutor situado de pie o sentado en sillas de adulto por encima del plano visual de los niños.
+	Consistencia de Inmersión L2
+	Mantenimiento ininterrumpido del inglés mediante soporte contextual no verbal2.
+	Alternancia a la lengua materna para impartir disciplina o impartir órdenes rutinarias de control.
+	Implicaciones Sistémicas y Proyección Metodológica
+Los ensayos controlados del modelo SparkLing™ desarrollados en escuelas infantiles públicas de Madrid demostraron que niños de diversos estratos socioeconómicos —incluidos aquellos de contextos desfavorecidos— superaron ampliamente a sus pares de programas bilingües convencionales tanto en comprensión receptiva (evaluada mediante tareas táctiles informatizadas CCT) como en producción expresiva (medida objetivamente vía LENA)2. La tasa de vocalizaciones en la lengua meta creció de forma exponencial a lo largo de las intervenciones de 18 y 36 semanas, sin que se observara detrimento alguno en el desarrollo fonológico o lexical del español como lengua materna2.
+La estandarización operativa en 4 fases temporales de 45 minutos aborda los principales desafíos de la educación temprana internacional: la escalabilidad curricular y la equidad formativa2. Al convertir el marco experimental de I-LABS en protocolos reproducibles —apoyados por la formación telemática de tutores y kits de materiales normalizados—, el manual de operaciones traslada la ciencia del cerebro infantil directamente a las salas de cunas y caminadores2. La interacción social afectiva, el modelado acústico del Parentese y la respuesta cinestésica guiada configuran así una metodología de intervención respetuosa con la biología evolutiva, que abre y expande el potencial bilingüe de la primera infancia2.
+Obras citadas
+   1. Our Story | SparkLing, https://sparklinglanguage.com/our-story
+   2. (PDF) Early Second Language Learning through SparkLing, https://www.researchgate.net/publication/338765999_Early_Second_Language_Learning_through_SparkLing_Scaling_up_a_Language_Intervention_in_Infant_Education_Centers
+   3. The Effects of Age, Dosage, and Poverty on Second Language, https://ilabs.uw.edu/wp-content/uploads/Ramirez_et_al_Successful_language_intervention_for_secondlanguage_learning.pdf
+   4. Early Second Language Learning through SparkLing - I-LABS, https://ilabs.uw.edu/sites/default/files/2020_ferjanramirez_kuhl_earlysecondlanguage.pdf
+   5. Infant Speech Perception - ResearchGate, https://www.researchgate.net/publication/353498733_Infant_Speech_Perception
+   6. Foreign language provision in English primary schools - Frontiers, https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2023.1063863/pdf
+   7. Naja FERJAN RAMIREZ | Doctor of Philosophy | UW | Research profile, https://www.researchgate.net/profile/Naja-Ferjan-Ramirez
+   8. Home language use with children, dialogue with multilingual, https://www.researchgate.net/publication/361151731_Home_language_use_with_children_dialogue_with_multilingual_parents_and_professional_development_in_ECEC
+   9. a systematic review - UvA-DARE (Digital Academic Repository), https://pure.uva.nl/ws/files/88585903/The_effects_of_foreign_language_programmes_in_early_childhood_education_and_care_a_systematic_review.pdf
+   10. Patricia K Kuhl University of Washington - ResearchGate, https://www.researchgate.net/profile/Patricia-Kuhl
+   11. The Effects of Age, Dosage, and Poverty on Second Language, https://www.mdpi.com/1660-4601/18/23/12758
+   12. Dialogic Reading: An Effective Way to Read Aloud with Young, https://www.readingrockets.org/topics/early-literacy-development/articles/dialogic-reading-effective-way-read-aloud-young-children
+   13. How to Read Dialogically With Your Child - Newcastle Speech, https://www.newcastlespeechpathology.com.au/how-to-read-dialogically-with-your-child/
+   14. What Is Total Physical Response (TPR)? Teacher Guide, https://teflinstitute.com/blog/what-is-tpr-total-physical-response/
+   15. An introduction to Total Physical Response (and four activities to try), https://teacherblog.ef.com/total-physical-response-efl-classroom/
+   16. Total physical response - TPR | TeachingEnglish | British Council, https://www.teachingenglish.org.uk/professional-development/teachers/managing-lesson/total-physical-response-tpr
+   17. Developing Minds in the Digital Age 9264697551, 9789264697553, https://dokumen.pub/developing-minds-in-the-digital-age-9264697551-9789264697553.html
+   18. (PDF) The effects of foreign language programmes in early, https://www.researchgate.net/publication/355006216_The_effects_of_foreign_language_programmes_in_early_childhood_education_and_care_a_systematic_review
+   19. SparkLing, https://sparklinglanguage.com/

@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.03",
+  "curso": "curso_5_6",
+  "orden": 3,
+  "mesCalendario": 11,
+  "asamblea": "asamblea.segundo_ciclo.novembro.6_infantil",
+  "centroInteres": {
+    "gl": "O reto sensorial da bolsa de liño",
+    "es": "El reto sensorial de la bolsa de lino"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.novembro.s2.chestnut"
+    },
+    {
+      "ref": "3_4.novembro.s2.find"
+    },
+    {
+      "ref": "5_6.outubro.s1.feel-without-looking"
+    },
+    {
+      "ref": "5_6.outubro.s1.mystery-bag"
+    },
+    {
+      "ref": "4_5.outubro.s1.command"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.marzo.s2.round"
+    },
+    {
+      "ref": "3_4.decembro.s1.cold"
+    },
+    {
+      "ref": "3_4.xuno.s1.rough"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "3_4.setembro.s2.your-turn"
+    },
+    {
+      "ref": "3_4.setembro.s3.thank-you"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.into",
+    "nota": {
+      "gl": "In, into: meter cada cousa no seu sitio segundo a orde.",
+      "es": "In, into: meter cada cosa en su sitio según la orden."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.novembro.6i.01",
+      "usa": [
+        "3_4.novembro.s2.find",
+        "3_4.marzo.s2.round",
+        "3_4.decembro.s1.cold",
+        "3_4.novembro.s2.chestnut"
+      ]
+    },
+    {
+      "ref": "frase.cmd.novembro.6i.02",
+      "usa": [
+        "3_4.xuno.s1.rough",
+        "frase.estructura.into"
+      ]
+    },
+    {
+      "ref": "frase.cmd.novembro.6i.03",
+      "usa": [
+        "3_4.setembro.s2.your-turn",
+        "4_5.outubro.s1.command"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha bolsa de liño",
+      "es": "Una bolsa de lino"
+    },
+    {
+      "gl": "Castañas",
+      "es": "Castañas"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Atopa a castaña só co tacto, sen mirar",
+      "es": "Encuentra la castaña solo con el tacto, sin mirar"
+    },
+    {
+      "gl": "Dálle unha orde a un compañeiro cando lle toca a quenda",
+      "es": "Da una orden a un compañero cuando le toca el turno"
+    }
+  ],
+  "reactivar": [
+    "3_4.novembro.s1.leaf"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

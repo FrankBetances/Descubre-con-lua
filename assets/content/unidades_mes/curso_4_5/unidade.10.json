@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "id": "unidade.curso_4_5.10",
+  "curso": "curso_4_5",
+  "orden": 10,
+  "mesCalendario": 6,
+  "asamblea": "asamblea.segundo_ciclo.xuno.5_infantil",
+  "centroInteres": {
+    "gl": "O mar en calma e a marea",
+    "es": "El mar en calma y la marea"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.xuno.s1.sea"
+    },
+    {
+      "ref": "3_4.xuno.s1.waves"
+    },
+    {
+      "ref": "3_4.marzo.s4.shake"
+    },
+    {
+      "ref": "3_4.decembro.s3.sleep"
+    },
+    {
+      "ref": "3_4.xuno.s1.fish"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.setembro.s3.calm"
+    },
+    {
+      "ref": "4_5.maio.s2.rushing"
+    },
+    {
+      "ref": "4_5.abril.s3.deep-blue"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "3_4.xuno.s4.goodbye"
+    },
+    {
+      "ref": "4_5.xuno.s3.thank-you-for-everything"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.on-under",
+    "nota": {
+      "gl": "Debaixo, enriba, dentro: co corpo antes que coa palabra.",
+      "es": "Debajo, encima, dentro: con el cuerpo antes que con la palabra."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xuno.5i.01",
+      "usa": [
+        "3_4.xuno.s1.sea",
+        "3_4.setembro.s3.calm"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xuno.5i.02",
+      "usa": [
+        "3_4.marzo.s4.shake",
+        "3_4.xuno.s1.sea",
+        "4_5.maio.s2.rushing"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xuno.5i.03",
+      "usa": [
+        "3_4.xuno.s1.sea",
+        "3_4.decembro.s3.sleep",
+        "frase.estructura.on-under"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Unha tea azul grande",
+      "es": "Una tela azul grande"
+    }
+  ],
+  "contraste": {
+    "a": "3_4.xuno.s1.fish",
+    "b": "3_4.xuno.s1.sea",
+    "nota": {
+      "gl": "A vogal curta e relaxada de «fish» fronte á longa e tensa de «sea»: dila ti exagerando a diferenza.",
+      "es": "La vocal corta y relajada de «fish» frente a la larga y tensa de «sea»: dila tú exagerando la diferencia."
+    }
+  },
+  "queObservar": [
+    {
+      "gl": "Move a tea amodo co mar en calma e forte coa tormenta",
+      "es": "Mueve la tela despacio con el mar en calma y fuerte con la tormenta"
+    },
+    {
+      "gl": "Déitase quieto debaixo da tea cando «the sea sleeps»",
+      "es": "Se tumba quieto debajo de la tela cuando «the sea sleeps»"
+    }
+  ],
+  "reactivar": [
+    "3_4.setembro.s2.help"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

@@ -12,9 +12,11 @@ import '../../../data/models/calendario_model.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/models/dia_calendario_dual_model.dart';
 import '../../../data/models/ponte_ao_dia_model.dart';
+import '../../../data/models/rexistro_frases_model.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../calendario/widgets/nucleo_de_hoxe.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../cuentos/views/cuento_viewer_screen.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
@@ -129,6 +131,17 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
 
     if (repo.programaTprSync == null) {
       repo.loadProgramaTpr().then((_) {
+        if (mounted) setState(() {});
+      });
+    }
+    // M3.10: el núcleo del mes, el mismo que ve la escuela, va delante.
+    if (repo.unidadeDoMesSync(curso, _toca.dia.mesCalendario) == null) {
+      repo.loadUnidadeDoMes(curso, _toca.dia.mesCalendario).then((_) {
+        if (vixente()) setState(() {});
+      });
+    }
+    if (repo.rexistroFrasesSync == null) {
+      repo.loadRexistroFrases().then((_) {
         if (mounted) setState(() {});
       });
     }
@@ -370,6 +383,11 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 _TarxetaPalabras(
                   plan: plan,
                   modeloDoDia: curso.modelo.dia(_toca.dia.dia),
+                  nucleo: switch (widget.repository.unidadeDoMesSync(
+                      widget.cursoId, _toca.dia.mesCalendario)) {
+                    final u? => widget.repository.nucleoSync(u),
+                    null => const <PezaDaUnidade>[],
+                  },
                   language: lang,
                   audioService: widget.audioService,
                 ),
@@ -559,22 +577,36 @@ class _TarxetaXogo extends StatelessWidget {
   }
 }
 
-/// Las palabras en inglés del día, con su voz. El viernes, las veinte del reto.
+/// El inglés de hoy: el núcleo del mes delante y, plegadas debajo, las
+/// palabras del día con su voz (el viernes, las veinte del reto).
 class _TarxetaPalabras extends StatelessWidget {
   const _TarxetaPalabras({
     required this.plan,
     required this.modeloDoDia,
+    required this.nucleo,
     required this.language,
     required this.audioService,
   });
 
   final DailyTprPlan plan;
+  final List<PezaDaUnidade> nucleo;
+
+  static const _tituloPalabras =
+      LocalizedString(gl: 'PALABRAS DE HOXE', es: 'PALABRAS DE HOY');
   final DiaDoModeloTpr? modeloDoDia;
   final AppLanguage language;
   final OfflineAudioService? audioService;
 
   @override
   Widget build(BuildContext context) {
+    final palabras = PalabrasDoDia(
+      plan: plan,
+      modeloDoDia: modeloDoDia,
+      language: language,
+      audioService: audioService,
+      paraFogar: true,
+      detalle: false,
+    );
     return Card(
       key: const Key('tarxeta_ingles_de_hoxe_fogar'),
       margin: EdgeInsets.zero,
@@ -604,14 +636,23 @@ class _TarxetaPalabras extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 6),
-            PalabrasDoDia(
-              plan: plan,
-              modeloDoDia: modeloDoDia,
-              language: language,
-              audioService: audioService,
-              paraFogar: true,
-              detalle: false,
-            ),
+            // M3.10 (D1): sin núcleo leído, la tarjeta de siempre.
+            if (nucleo.isEmpty)
+              palabras
+            else ...[
+              const SizedBox(height: 4),
+              NucleoDeHoxe(
+                nucleo: nucleo,
+                language: language,
+                audioService: audioService,
+              ),
+              const SizedBox(height: 10),
+              PalabrasDoDiaPlegadas(
+                titulo: _tituloPalabras.resolve(language),
+                language: language,
+                child: palabras,
+              ),
+            ],
           ],
         ),
       ),

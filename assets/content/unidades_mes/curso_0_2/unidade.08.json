@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.08",
+  "curso": "curso_0_2",
+  "orden": 8,
+  "mesCalendario": 4,
+  "asamblea": "asamblea.primeiro_ciclo.abril.0_2_anos",
+  "centroInteres": {
+    "gl": "O orballo e o espertar biolóxico da primavera",
+    "es": "El orballo y el despertar biológico de la primavera"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.abril.0_2.01",
+      "objeto": {
+        "gl": "O atomizador de auga morna",
+        "es": "El atomizador de agua tibia"
+      }
+    },
+    {
+      "ref": "frase.cmd.abril.0_2.02",
+      "objeto": {
+        "gl": "O tul amarelo",
+        "es": "El tul amarillo"
+      }
+    },
+    {
+      "ref": "0_2.abril.s2.drip-drop"
+    },
+    {
+      "ref": "0_2.abril.s2.pitter-patter"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.abril.0_2.01",
+      "usa": [
+        "frase.cmd.abril.0_2.01"
+      ]
+    },
+    {
+      "ref": "frase.cmd.abril.0_2.02",
+      "usa": [
+        "frase.cmd.abril.0_2.02"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Atomizador con auga morna e tea de tul translúcido amarelo",
+      "es": "Atomizador con agua tibia y tela de tul translúcido amarillo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Mira as pingas na man e queda quieto un momento",
+      "es": "Mira las gotas en la mano y se queda quieto un momento"
+    },
+    {
+      "gl": "Segue coa cara o tul amarelo",
+      "es": "Sigue con la cara el tul amarillo"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.marzo.0_2.01"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

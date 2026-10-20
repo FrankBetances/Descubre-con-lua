@@ -10,6 +10,8 @@ import 'package:descubre_con_lua/core/progress_service.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
+import 'package:descubre_con_lua/data/models/unidade_do_mes_model.dart';
+import 'package:descubre_con_lua/features/calendario/widgets/asemblea_do_dia.dart';
 import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
 import 'package:descubre_con_lua/data/models/como_funciona_o_conto_model.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
@@ -18,7 +20,6 @@ import 'package:descubre_con_lua/data/models/lamina_model.dart';
 import 'package:descubre_con_lua/data/models/lectura_model.dart';
 import 'package:descubre_con_lua/data/models/steam_model.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
-import 'package:descubre_con_lua/data/models/unidad_model.dart' hide Cuento;
 import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_observar_model.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
@@ -49,7 +50,6 @@ import 'package:descubre_con_lua/features/familias/views/ponte_ao_dia_screen.dar
 import 'package:descubre_con_lua/features/familias/views/xogo_de_hoxe_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart';
 import 'package:descubre_con_lua/features/formacion/views/formacion_screen.dart';
-import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/capsulas_aula_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
@@ -109,7 +109,7 @@ class Pasarela {
   late GuiaFormacion guiaDocente;
   late Cuento contoDaSemana;
   late Lamina lamina;
-  late Unidad unidade;
+  late UnidadeDoMes unidade;
   late AsambleaSegundoCiclo asamblea;
   late SteamUnit steam;
   late DiaCalendarioDual diaDeCasa;
@@ -157,6 +157,14 @@ class Pasarela {
     await contenido.loadPhonicsTaxonomy();
     await contenido.loadCalendarioDias(cursoId: 'curso_0_2');
     await contenido.loadCurriculo50Meses();
+    // El núcleo del mes en Hoy (M3.10): las unidades y el registro que las
+    // resuelve, leídos aquí y no en la carrera de `asentar`.
+    await contenido.loadRexistroFrases();
+    for (final curso in CalendarioContenido.cursos) {
+      for (final mes in const [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]) {
+        await contenido.loadUnidadeDoMes(curso, mes);
+      }
+    }
     colocacions = File(CollocationsScreen.asset).readAsStringSync();
 
     store = CalendarioStore(overrideDirectory: _tmp.path);
@@ -176,9 +184,10 @@ class Pasarela {
     contoDaSemana =
         contos.firstWhere((c) => c.paginas.any((p) => p.palabras.isNotEmpty));
     lamina = (await contenido.loadLaminas()).first;
-    unidade = contenido.getAllUnidades().first;
     asamblea = contenido.getAsambleaByMesYNivelSync(
         10, NivelEducativoSegundoCiclo.infantil4)!;
+    unidade = contenido.unidadeDoMesSync(
+        cursoDoNivel(NivelEducativoSegundoCiclo.infantil4)!, 10)!;
     steam = contenido.steamUnits.first;
     // O venres 2 de outubro de 0-2 anos: o do exemplo da revisión (A6).
     diaDeCasa =
@@ -534,16 +543,6 @@ class Pasarela {
                   initialCiclo: CicloEducativo.segundoCiclo,
                 )),
         PantallaDaApp(
-            'asamblea_1ciclo',
-            Portal.docentes,
-            (l) => AsambleaGuiadaScreen(
-                  unidad: unidade,
-                  audioService: audio,
-                  initialLanguage: l,
-                  premios: premios,
-                  calendario: store,
-                )),
-        PantallaDaApp(
             'reprodutor',
             Portal.docentes,
             (l) => AsambleaPlayerScreen(
@@ -566,7 +565,9 @@ class Pasarela {
             'nota_casas',
             Portal.docentes,
             (l) => NotaParaCasasScreen(
-                  unidad: unidade,
+                  centroInteres: unidade.centroInteres,
+                  nucleo: contenido.nucleoSync(unidade),
+                  microRutina: asamblea.microRutinaHogar,
                   language: l,
                   audioService: audio,
                 )),

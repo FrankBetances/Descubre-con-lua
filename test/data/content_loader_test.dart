@@ -1,6 +1,8 @@
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
+import 'package:descubre_con_lua/data/models/cancion_pulso_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 
 void main() {
@@ -21,25 +23,23 @@ void main() {
   });
 
   group('ContentAssetLoader Tests', () {
-    test('loads and parses base unit juega.mar.01.json from assets', () async {
-      final unidad = await fileLoader
-          .loadUnidadFromAsset('assets/content/unidades/juega.mar.01.json');
-
-      expect(unidad.id, equals('juega.mar.01'));
-      expect(unidad.tramoEtario, equals('0-3'));
-      expect(unidad.titulo.gl, contains('Mar de Vigo'));
-      expect(unidad.titulo.es, contains('Mar de Vigo'));
-      // The pulse track measures 72.3 BPM (tools/check_pulse_bpm.py reads it
-      // off the audio). The content used to declare 80, so the badge showed a
-      // tempo nobody was clapping to.
-      expect(unidad.cancionPulso.bpm, equals(72));
-      expect(unidad.cuento.paginas.length, equals(3));
-      expect(unidad.vocabulario.length, equals(5));
-      expect(unidad.preguntas.length, equals(3));
-      expect(unidad.exploracion.materiales.length, equals(4));
-      expect(unidad.exploracion.avisoSeguridad.gl, contains('5 cm'));
-      expect(unidad.curriculo.normativa, equals('Decreto 150/2022'));
-      expect(unidad.revision.aprobadoParaAula, isTrue);
+    test('as dez cancións con pulso lense enteiras', () async {
+      final cancions = CancionsConPulso.desdeJson(
+          await fileLoader.loadRawString(CancionsConPulso.asset));
+      expect(cancions, hasLength(10));
+      expect(cancions.map((c) => c.id).toSet(), hasLength(10));
+      for (final c in cancions) {
+        // The pulse track measures 72.3 BPM (tools/check_pulse_bpm.py reads it
+        // off the audio). The content used to declare 80.
+        expect(c.cancion.bpm, equals(72), reason: c.id);
+        expect(c.cancion.titulo.hasParity, isTrue, reason: c.id);
+        expect(c.cancion.versos(AppLanguage.gl), isNotEmpty, reason: c.id);
+        expect(c.cancion.beatsPerLine(AppLanguage.gl),
+            c.cancion.beatsPerLine(AppLanguage.es),
+            reason: c.id);
+        expect(c.cancion.resolveAudio(AppLanguage.gl), startsWith('assets/'),
+            reason: c.id);
+      }
     });
 
     test(
@@ -63,10 +63,6 @@ void main() {
 
     test('throws FormatException on malformed JSON string', () {
       expect(
-        () => fileLoader.parseUnidad('{"id": "broken", invalid}'),
-        throwsFormatException,
-      );
-      expect(
         () => fileLoader.parseCapsula('{"id": "broken", invalid}'),
         throwsFormatException,
       );
@@ -74,35 +70,15 @@ void main() {
   });
 
   group('ContentRepository Tests', () {
-    test('initializes and provides query methods for units and capsules',
-        () async {
+    test('initializes and provides query methods for capsules', () async {
       await repository.initialize(
-        unidadPaths: ['assets/content/unidades/juega.mar.01.json'],
         capsulaPaths: [
           'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json'
         ],
       );
 
       expect(repository.isInitialized, isTrue);
-      expect(repository.unitCount, equals(1));
       expect(repository.capsuleCount, equals(1));
-
-      // Unit queries
-      final unit = repository.getUnidadById('juega.mar.01');
-      expect(unit, isNotNull);
-      expect(unit!.id, equals('juega.mar.01'));
-
-      final nonExistentUnit = repository.getUnidadById('inexistente');
-      expect(nonExistentUnit, isNull);
-
-      final units02 = repository.getUnidadesByTramoEtario('0-2');
-      expect(units02.length, equals(1)); // '0-3' encompasses '0-2'
-
-      final units23 = repository.getUnidadesByTramoEtario('2-3');
-      expect(units23.length, equals(1)); // '0-3' encompasses '2-3'
-
-      final allUnits = repository.getAllUnidades();
-      expect(allUnits.length, equals(1));
 
       // Capsule queries
       final capsule =
@@ -135,18 +111,24 @@ void main() {
       expect(b1Num, equals(b1));
     });
 
+    test('as cancións con pulso cárganse unha vez', () async {
+      final primeira = await repository.loadCancionsConPulso();
+      expect(primeira, hasLength(10));
+      expect(
+          identical(await repository.loadCancionsConPulso(), primeira), isTrue);
+      expect(repository.hasLoadErrors, isFalse);
+    });
+
     test('clear resets repository state', () async {
       await repository.initialize(
-        unidadPaths: ['assets/content/unidades/juega.mar.01.json'],
         capsulaPaths: [
           'assets/content/capsulas/academy.como_se_aprende_a_hablar.01.json'
         ],
       );
-      expect(repository.unitCount, equals(1));
+      expect(repository.capsuleCount, equals(1));
 
       repository.clear();
       expect(repository.isInitialized, isFalse);
-      expect(repository.unitCount, equals(0));
       expect(repository.capsuleCount, equals(0));
     });
   });

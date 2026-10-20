@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "id": "unidade.curso_3_4.03",
+  "curso": "curso_3_4",
+  "orden": 3,
+  "mesCalendario": 11,
+  "asamblea": "asamblea.segundo_ciclo.novembro.4_infantil",
+  "centroInteres": {
+    "gl": "O magosto motor e o salto da castaña",
+    "es": "El magosto motor y el salto de la castaña"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.novembro.s2.chestnut"
+    },
+    {
+      "ref": "3_4.novembro.s4.pumpkin"
+    },
+    {
+      "ref": "3_4.outubro.s1.jump"
+    },
+    {
+      "ref": "3_4.marzo.s2.roll"
+    },
+    {
+      "ref": "3_4.decembro.s1.warm"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [
+    {
+      "ref": "3_4.novembro.s4.more-please"
+    },
+    {
+      "ref": "frase.formula.here-you-are"
+    }
+  ],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.novembro.4i.01",
+      "usa": [
+        "3_4.novembro.s2.chestnut",
+        "3_4.outubro.s1.jump"
+      ]
+    },
+    {
+      "ref": "frase.cmd.novembro.4i.02",
+      "usa": [
+        "3_4.marzo.s2.roll",
+        "3_4.novembro.s4.pumpkin"
+      ]
+    },
+    {
+      "ref": "frase.cmd.novembro.4i.03",
+      "usa": [
+        "3_4.decembro.s1.warm"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Castañas",
+      "es": "Castañas"
+    },
+    {
+      "gl": "Unha cabaza pequena",
+      "es": "Una calabaza pequeña"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Salta cos pés xuntos cando a castaña estoupa",
+      "es": "Salta con los pies juntos cuando la castaña estalla"
+    },
+    {
+      "gl": "Empurra a cabaza coas dúas mans",
+      "es": "Empuja la calabaza con las dos manos"
+    },
+    {
+      "gl": "Ofrece a castaña cun «Here you are!» ou cun xesto",
+      "es": "Ofrece la castaña con un «Here you are!» o con un gesto"
+    }
+  ],
+  "reactivar": [
+    "3_4.novembro.s1.leaf"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

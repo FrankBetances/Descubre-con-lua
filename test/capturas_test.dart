@@ -8,7 +8,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
-import 'package:descubre_con_lua/core/brand/lamina_pixel.dart';
 import 'package:descubre_con_lua/core/brand/lua_pixel.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
@@ -16,13 +15,13 @@ import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
-import 'package:descubre_con_lua/data/models/unidad_model.dart' hide Cuento;
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
-import 'package:descubre_con_lua/data/repositories/ritual_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
-import 'package:descubre_con_lua/features/juega/views/asamblea_guiada_screen.dart';
+import 'package:descubre_con_lua/features/calendario/widgets/asemblea_do_dia.dart';
 import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dart';
+import 'package:descubre_con_lua/features/juega/views/cancions_con_pulso_screen.dart';
+import 'package:descubre_con_lua/data/models/cancion_pulso_model.dart';
 import 'package:descubre_con_lua/features/academy/views/bloques_list_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.dart';
 import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
@@ -171,6 +170,8 @@ void main() {
       contenido.addProgramaTpr(await ProgramaTpr.cargar(
         stringLoader: (path) => File(path).readAsString(),
       ));
+      // Con el banco, el registro de frases resuelve el núcleo del mes.
+      await contenido.loadRexistroFrases();
     });
     expect(contenido.programaTprSync?.totalPalabras, 4000,
         reason: 'O inglés dos cinco cursos non chegou a lerse.');
@@ -226,76 +227,6 @@ void main() {
     }
   }
 
-  /// La unidad del mes en curso: la que una docente abriría hoy. Antes se
-  /// retrataba `getAllUnidades().first`, que con diez unidades es la primera
-  /// por orden alfabético y no tiene nada que ver con el mes.
-  Future<Unidad> unidadDeHoxe(WidgetTester tester) async {
-    final cal = await contenidoCalendario(tester);
-    final id = cal.mesParaFecha(DateTime.now()).unidadId;
-    return contenido.getUnidadById(id!)!;
-  }
-
-  /// Las láminas del vocabulario se leen del paquete, que es E/S real, y bajo
-  /// el reloj falso del test esa espera no avanza: en la primera tanda las
-  /// palabras salieron sin dibujo. Igual que la gata, hay que calentarlas
-  /// antes, y comprobar que de verdad llegaron.
-  Future<void> calentarLaminas(WidgetTester tester) async {
-    final claves = <String>{
-      for (final unidad in contenido.getAllUnidades()) ...[
-        for (final item in unidad.vocabulario)
-          if (item.lamina.isNotEmpty) item.lamina,
-        // También las escenas del cuento. Sin calentarlas, la captura de la
-        // fase 2 retrata el aviso de «lámina pendente» y no la ilustración:
-        // la lectura del paquete es E/S real y el reloj falso del test no la
-        // hace avanzar.
-        for (final pagina in unidad.cuento.paginas)
-          if (pagina.lamina.isNotEmpty) pagina.lamina,
-      ],
-    };
-    for (final clave in claves) {
-      await tester.pumpWidget(
-        MaterialApp(home: Center(child: LaminaPixel(clave: clave, size: 64))),
-      );
-      await tester.pumpAndSettle();
-      await tester.runAsync(
-        () => Future<void>.delayed(const Duration(milliseconds: 60)),
-      );
-      await tester.pumpAndSettle();
-      expect(
-        find.descendant(
-          of: find.byType(LaminaPixel),
-          matching: find.byType(CustomPaint),
-        ),
-        findsOneWidget,
-        reason: 'A lámina $clave non chegou a cargarse.',
-      );
-    }
-  }
-
-  /// El ritual de la asamblea —la consigna de cada fase y sus minutos— también
-  /// se lee del paquete, y también hay que calentarlo.
-  ///
-  /// Sin esto, las capturas de la asamblea en CASTELLANO salían SIN la caja de
-  /// la consigna y sin los minutos totales, que es justo lo que define el modo
-  /// asamblea. En gallego sí aparecían. No era el idioma: el ritual se cachea
-  /// en un `static`, y el futuro que quedaba guardado lo había creado el test
-  /// anterior, en SU zona de reloj falso. Un `.then` sobre ese futuro se
-  /// encola en una zona que ya está muerta y no se ejecuta nunca.
-  ///
-  /// Por eso se OLVIDA primero y se vuelve a cargar dentro de `runAsync`, que
-  /// es tiempo de verdad, y se comprueba que llegaron las seis fases. Sin la
-  /// comprobación esto sería otra espera que se salta en silencio.
-  Future<void> calentarRitual(WidgetTester tester) async {
-    RitualAsamblea.olvidar();
-    RitualAsamblea? cargado;
-    await tester.runAsync(() async {
-      cargado = await RitualAsamblea.cargar();
-    });
-    expect(cargado?.fases.length, 6,
-        reason: 'O ritual da asemblea non chegou a cargarse: as capturas '
-            'sairían sen a consigna de cada fase.');
-  }
-
   Future<void> capturar(
     WidgetTester tester,
     String nombre,
@@ -313,10 +244,6 @@ void main() {
     ThemeData? tema,
   }) async {
     await calentarMascota(tester);
-    await calentarLaminas(tester);
-    // También aquí: `asamblea-ingles-{gl,es}` pasa por este ayudante, y sin el
-    // ritual retrataba la asamblea sin su consigna.
-    await calentarRitual(tester);
 
     tester.view.physicalSize = tamano * 2;
     tester.view.devicePixelRatio = 2.0;
@@ -379,6 +306,8 @@ void main() {
         await contenido.loadCuentos();
         await contenido.loadDinamicas();
         await contenido.loadSteamUnits();
+        // La unidad de octubre: su núcleo va delante en las dos Hoy (M3.10).
+        await contenido.loadUnidadeDoMes('curso_0_2', 10);
       });
     }
 
@@ -460,6 +389,29 @@ void main() {
       );
     });
 
+    testWidgets('recursos · unha canción con pulso · $l', (tester) async {
+      // La de octubre, abierta desde la lista como la abre la docente. La
+      // lista se lee del paquete, que es E/S real: se lee antes.
+      late List<CancionConPulso> cancions;
+      await tester.runAsync(() async {
+        cancions = await contenido.loadCancionsConPulso();
+      });
+      await capturar(
+        tester,
+        'cancion-pulso-$l',
+        CancionsConPulsoScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          initialLanguage: lang,
+        ),
+        tamano: const Size(412, 1300),
+        antesDeRetratar: (tester) async {
+          await tester.tap(find.byKey(ValueKey(cancions[1].id)));
+          await tester.pumpAndSettle();
+        },
+      );
+    });
+
     testWidgets('creditos · $l', (tester) async {
       await capturar(
         tester,
@@ -484,7 +436,10 @@ void main() {
             audioService: MockOfflineAudioService(),
             initialLanguage: lang,
             calendarioContenido: cal,
-          ));
+          ),
+          // Alto suficiente para que salga el calendario del curso, que va
+          // debajo de la tarjeta de la sesión.
+          tamano: const Size(412, 1200));
     });
 
     testWidgets('aula · formación docente · $l', (tester) async {
@@ -529,6 +484,13 @@ void main() {
     testWidgets('aula · asemblea de 2.º ciclo · $l', (tester) async {
       final asamblea = contenido.getAsambleaByMesYNivelSync(
           10, NivelEducativoSegundoCiclo.infantil4)!;
+      // Como la abre la app (M4.1): material, órdenes y fórmulas de la unidad.
+      await cursoTprLeido(tester);
+      final daUnidade = (await tester.runAsync(() => lerAsembleaDaUnidade(
+          contenido,
+          cursoDoNivel(NivelEducativoSegundoCiclo.infantil4),
+          10,
+          lang)))!;
       await capturar(
         tester,
         'aula-2ciclo-asemblea-$l',
@@ -537,9 +499,12 @@ void main() {
           subtitulo: '${nomeDoMes[asamblea.mes]!.resolve(lang)} · '
               '${asamblea.nivel.etiquetaCorta.resolve(lang)}',
           centroInteres: asamblea.centroInteres.resolve(lang),
+          material: daUnidade.material,
           audioService: MockOfflineAudioService(),
           language: lang,
           ponteAoDia: contenido.ponteAoDiaSync,
+          ordenes: daUnidade.ordenes,
+          formulas: daUnidade.formulas,
         ),
       );
     });
@@ -675,97 +640,27 @@ void main() {
       );
     });
 
-    testWidgets('asamblea · o inglés na fase · $l', (tester) async {
-      await capturar(
-        tester,
-        'asamblea-ingles-$l',
-        AsambleaGuiadaScreen(
-          unidad: await unidadDeHoxe(tester),
-          initialLanguage: lang,
-          audioService: MockOfflineAudioService(),
-        ),
-        tamano: const Size(412, 1400),
-      );
-    });
-
-    testWidgets('asamblea · o conto e as palabras · $l', (tester) async {
-      // La fase 2, que es donde estrena la tarjeta del vocabulario con las
-      // tres lenguas. `capturar` monta la fase 1, así que hay que avanzar y
-      // volver a retratar: por eso esta no usa el ayudante tal cual.
-      final unidad = await unidadDeHoxe(tester);
-      await calentarMascota(tester);
-      await calentarLaminas(tester);
-      await calentarRitual(tester);
-      tester.view.physicalSize = const Size(412, 1800) * 2;
-      tester.view.devicePixelRatio = 2.0;
-      addTearDown(tester.view.reset);
-
-      await tester.pumpWidget(MaterialApp(
-        theme: AppTheme.lightTheme,
-        debugShowCheckedModeBanner: false,
-        home: AsambleaGuiadaScreen(
-          unidad: unidad,
-          initialLanguage: lang,
-          audioService: MockOfflineAudioService(),
-        ),
-      ));
-      await tester.pumpAndSettle();
-      await tester.tap(find.byKey(const Key('boton_seguinte_fase')));
-      await tester.pumpAndSettle();
-      await tester.runAsync(
-          () => Future<void>.delayed(const Duration(milliseconds: 120)));
-      await tester.pumpAndSettle();
-
-      await expectLater(find.byType(MaterialApp),
-          matchesGoldenFile('../docs/capturas/asamblea-conto-$l.png'));
-    });
-
-    testWidgets('asamblea · o protocolo de seguridade · $l', (tester) async {
-      // La fase 4, que es donde vive el AVISO DE SEGURIDAD. Ninguna captura
-      // llegaba hasta aquí, así que el aviso que la docente lee antes de sacar
-      // material —castañas, cascabeles, caretas— no estaba retratado en ningún
-      // sitio. Es justo la pantalla donde un fallo visual tiene consecuencias
-      // fuera de la pantalla.
-      final unidad = await unidadDeHoxe(tester);
-      await calentarMascota(tester);
-      await calentarLaminas(tester);
-      await calentarRitual(tester);
-      tester.view.physicalSize = const Size(412, 1500) * 2;
-      tester.view.devicePixelRatio = 2.0;
-      addTearDown(tester.view.reset);
-
-      await tester.pumpWidget(MaterialApp(
-        theme: AppTheme.lightTheme,
-        debugShowCheckedModeBanner: false,
-        home: AsambleaGuiadaScreen(
-          unidad: unidad,
-          initialLanguage: lang,
-          audioService: MockOfflineAudioService(),
-        ),
-      ));
-      await tester.pumpAndSettle();
-      for (var i = 0; i < 3; i++) {
-        await tester.tap(find.byKey(const Key('boton_seguinte_fase')));
-        await tester.pumpAndSettle();
-      }
-      await tester.runAsync(
-          () => Future<void>.delayed(const Duration(milliseconds: 120)));
-      await tester.pumpAndSettle();
-
-      await expectLater(find.byType(MaterialApp),
-          matchesGoldenFile('../docs/capturas/asamblea-seguridade-$l.png'));
-    });
-
     testWidgets('a nota para as casas · $l', (tester) async {
+      // La que cierra la asamblea de octubre de 4.º de infantil: centro y núcleo de su
+      // unidad del mes y la micro-rutina de casa de 2.º ciclo (M4.3).
+      await cursoTprLeido(tester);
+      await tester.runAsync(() async {
+        await contenido.loadUnidadeDoMes('curso_3_4', 10);
+      });
+      final unidade = contenido.unidadeDoMesSync('curso_3_4', 10)!;
+      final asamblea = contenido.getAsambleaByMesYNivelSync(
+          10, NivelEducativoSegundoCiclo.infantil4)!;
       await capturar(
         tester,
         'nota-casas-$l',
         NotaParaCasasScreen(
-          unidad: await unidadDeHoxe(tester),
+          centroInteres: unidade.centroInteres,
+          nucleo: contenido.nucleoSync(unidade),
+          microRutina: asamblea.microRutinaHogar,
           language: lang,
           audioService: MockOfflineAudioService(),
         ),
-        tamano: const Size(412, 1200),
+        tamano: const Size(412, 1400),
       );
     });
 

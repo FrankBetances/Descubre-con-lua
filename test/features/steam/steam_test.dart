@@ -275,7 +275,6 @@ void main() {
     test('initialize() también carga STEAM', () async {
       final r = repo();
       await r.initialize(
-        unidadPaths: const [],
         capsulaPaths: const [],
         asambleaSegundoCicloPaths: const [],
       );

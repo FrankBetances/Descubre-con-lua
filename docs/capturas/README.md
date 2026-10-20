@@ -52,7 +52,7 @@ compara el ancho pintado con el que el texto mide de verdad.
 | `explorar-familias-{gl,es}.png` | Explorar: los seis módulos de casa |
 | `hoxe-docentes-{gl,es}.png` | Hoy, en el Portal Docentes: la asamblea del día, sus palabras, el cuento, la dinámica y la ciencia |
 | `recursos-docentes-{gl,es}.png` | Recursos: los módulos del aula en cuatro grupos |
-| `aula-unidades-{gl,es}.png` | Juega con Lúa · Modo Aula: el selector compacto, la sesión del día y las unidades |
+| `aula-unidades-{gl,es}.png` | Juega con Lúa · Modo Aula: el selector compacto, la sesión del día y el calendario del curso |
 | `aula-lista-2ciclo-{gl,es}.png` | El Modo Aula en la pestaña 2.º ciclo: la clase, el mes y la sesión del día |
 | `aula-2ciclo-asemblea-{gl,es}.png` | La asamblea matinal de 2.º ciclo, fase 1: el reproductor que abre «Comenzar la asamblea» |
 | `aula-antes-da-orde-{gl,es}.png` | «Antes de la orden», en la asamblea de 5.º un martes de octubre: la primera de las palabras que la orden da por sabidas, con su significado, su gesto y la nota para la docente |
@@ -64,10 +64,8 @@ compara el ancho pintado con el que el texto mide de verdad.
 | `guia-ingles-{gl,es}.png` | El inglés en casa: cuánto dura el juego según la edad |
 | `premios-{gl,es}.png` | Tus premios: nivel, racha e insignias |
 | `creditos-{gl,es}.png` | Créditos |
-| `asamblea-conto-{gl,es}.png` | Asamblea · fase 2: a lámina do conto, o texto e a pregunta |
-| `asamblea-seguridade-{gl,es}.png` | Asamblea · fase 4: o protocolo de seguridade que se le antes de sacar material |
-| `asamblea-ingles-{gl,es}.png` | Asamblea guiada: el inglés de la fase, con su grabación |
-| `nota-casas-{gl,es}.png` | La nota para las casas: lo que se hizo hoy, el juego de tres minutos y la frase en inglés |
+| `nota-casas-{gl,es}.png` | La nota para las casas que cierra la asamblea (4.º de Infantil, octubre): lo que se hizo hoy, las palabras en inglés del mes y la micro-rutina de casa |
+| `cancion-pulso-{gl,es}.png` | Recursos → Canciones con pulso: la canción de octubre, con su letra y el pulso dibujado |
 | `conto-palabras-{gl,es}.png` | El cuento de la semana con las palabras de hoy, la primera vez que se abre: «Cómo funciona el cuento» arriba |
 | `conto-reto-{gl,es}.png` | El reto de un cuento de 4-5 años en diciembre, con la línea de lo que da por sabido abierta: cada palabra con su voz y su gesto |
 | `casa-ponte-ao-dia-{gl,es}.png` | «Ponte al día», 4-5 años en octubre: las palabras de antes que dan por sabidas las asambleas del mes, en días de dos o tres |

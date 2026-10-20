@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.08",
+  "curso": "curso_2_3",
+  "orden": 8,
+  "mesCalendario": 4,
+  "asamblea": "asamblea.primeiro_ciclo.abril.2_3_anos",
+  "centroInteres": {
+    "gl": "O orballo e o espertar biolóxico da primavera",
+    "es": "El orballo y el despertar biológico de la primavera"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "frase.cmd.abril.2_3.01"
+    },
+    {
+      "ref": "frase.cmd.abril.2_3.02"
+    },
+    {
+      "ref": "2_3.abril.s1.blow-seeds"
+    },
+    {
+      "ref": "2_3.abril.s1.fluffy-seeds",
+      "objeto": {
+        "gl": "Unha flor de dente de león",
+        "es": "Una flor de diente de león"
+      }
+    },
+    {
+      "ref": "2_3.decembro.s2.where-s-the-sun"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.abril.2_3.01",
+      "usa": [
+        "frase.cmd.abril.2_3.01"
+      ]
+    },
+    {
+      "ref": "frase.cmd.abril.2_3.02",
+      "usa": [
+        "frase.cmd.abril.2_3.02"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Sen material: o corpo no chan",
+      "es": "Sin material: el cuerpo en el suelo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Encóllese e queda quieto coma unha semente",
+      "es": "Se encoge y se queda quieto como una semilla"
+    },
+    {
+      "gl": "Érguese amodo ata as puntas dos pés",
+      "es": "Se levanta despacio hasta las puntas de los pies"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.marzo.2_3.01"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

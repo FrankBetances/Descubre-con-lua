@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.10",
+  "curso": "curso_2_3",
+  "orden": 10,
+  "mesCalendario": 6,
+  "asamblea": "asamblea.primeiro_ciclo.xuno.2_3_anos",
+  "centroInteres": {
+    "gl": "O Atlántico, as rías de Vigo e a despedida do curso",
+    "es": "El Atlántico, las rías de Vigo y la despedida del curso"
+  },
+  "cancion": {
+    "titulo": "Bye-Bye, Goodbye"
+  },
+  "nucleo": [
+    {
+      "ref": "frase.cmd.xuno.2_3.01",
+      "objeto": {
+        "gl": "O paracaídas azul",
+        "es": "El paracaídas azul"
+      }
+    },
+    {
+      "ref": "frase.cmd.xuno.2_3.02"
+    },
+    {
+      "ref": "frase.cmd.xuno.2_3.03"
+    },
+    {
+      "ref": "2_3.xuno.s1.calm-sea"
+    },
+    {
+      "ref": "2_3.xuno.s4.wave-goodbye"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.xuno.2_3.01",
+      "usa": [
+        "frase.cmd.xuno.2_3.01",
+        "2_3.xuno.s1.calm-sea"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xuno.2_3.02",
+      "usa": [
+        "frase.cmd.xuno.2_3.02"
+      ]
+    },
+    {
+      "ref": "frase.cmd.xuno.2_3.03",
+      "usa": [
+        "frase.cmd.xuno.2_3.03"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Paracaídas azul de asemblea",
+      "es": "Paracaídas azul de asamblea"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Move as mans amodo ou forte segundo a onda",
+      "es": "Mueve las manos despacio o fuerte según la ola"
+    },
+    {
+      "gl": "Despídese coa man ao final",
+      "es": "Se despide con la mano al final"
+    }
+  ],
+  "reactivar": [
+    "2_3.maio.s1.soap-rub-rinse"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

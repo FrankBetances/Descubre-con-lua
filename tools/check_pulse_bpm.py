@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fails when the tempo a unit displays is not the tempo its pulse track plays.
+"""Fails when the tempo a pulse song displays is not the tempo its pulse track plays.
 
 The content declared 80 BPM while the only pulse recording in the repository
 measures 72.3 BPM, so the teacher read one number off the badge and clapped to
@@ -23,7 +23,9 @@ except ImportError:  # pragma: no cover
     raise SystemExit(1)
 
 ROOT = Path(__file__).resolve().parent.parent
-UNITS = ROOT / "assets" / "content" / "unidades"
+# Las canciones con pulso viven aquí desde M4.3 (antes, dentro de las
+# unidades de la asamblea de seis pasos, que se retiró).
+CANCIONS = ROOT / "assets" / "content" / "cancions" / "cancions_con_pulso.json"
 PULSE = ROOT / "assets" / "audio" / "mar_pulso_72bpm.wav"
 
 # A steady pulse for 0-3 is set by ear, not to the decimal: one beat per minute
@@ -76,9 +78,8 @@ def main() -> int:
         return 1
 
     failures: list[str] = []
-    for path in sorted(UNITS.glob("*.json")):
-        data = json.loads(path.read_text(encoding="utf-8"))
-        cancion = data.get("cancionPulso") or data.get("cancion") or {}
+    for cancion in json.loads(CANCIONS.read_text(encoding="utf-8"))["cancions"]:
+        path = Path(cancion["id"])
         declared = cancion.get("bpm")
         if declared is None:
             continue

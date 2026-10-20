@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "id": "unidade.curso_0_2.01",
+  "curso": "curso_0_2",
+  "orden": 1,
+  "mesCalendario": 9,
+  "asamblea": "asamblea.primeiro_ciclo.setembro.0_2_anos",
+  "centroInteres": {
+    "gl": "A acollida e o vínculo afectivo co grupo",
+    "es": "La acogida y el vínculo afectivo con el grupo"
+  },
+  "cancion": {
+    "titulo": "Up and Down, Clap Clap Clap"
+  },
+  "nucleo": [
+    {
+      "ref": "frase.cmd.setembro.0_2.01"
+    },
+    {
+      "ref": "frase.cmd.setembro.0_2.02"
+    },
+    {
+      "ref": "frase.cmd.setembro.0_2.03"
+    },
+    {
+      "ref": "0_2.setembro.s1.hello-little-one",
+      "objeto": {
+        "gl": "O boneco brando de feltro",
+        "es": "El muñeco blando de fieltro"
+      }
+    },
+    {
+      "ref": "0_2.setembro.s1.in-my-arms"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.setembro.0_2.01",
+      "usa": [
+        "frase.cmd.setembro.0_2.01"
+      ]
+    },
+    {
+      "ref": "frase.cmd.setembro.0_2.02",
+      "usa": [
+        "frase.cmd.setembro.0_2.02"
+      ]
+    },
+    {
+      "ref": "frase.cmd.setembro.0_2.03",
+      "usa": [
+        "frase.cmd.setembro.0_2.03"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Monicreque brando de feltro",
+      "es": "Muñeco blando de fieltro"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Mira a túa cara cando lle dis «Hello, little one!»",
+      "es": "Mira tu cara cuando le dices «Hello, little one!»"
+    },
+    {
+      "gl": "Deixa que lle guíes as mans arriba e abaixo",
+      "es": "Deja que le guíes las manos arriba y abajo"
+    },
+    {
+      "gl": "Acóugase no colo mentres cantas",
+      "es": "Se calma en brazos mientras cantas"
+    }
+  ],
+  "reactivar": [],
+  "hogar": null,
+  "microcuento": null
+}

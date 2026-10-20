@@ -139,14 +139,15 @@ class _TarjetaMesCurricularState extends State<TarjetaMesCurricular>
               // Flexible: la tarjeta vive en un carrusel de altura fija y el
               // gallego ocupa más que el castellano. Lo que sobra se recorta
               // con puntos suspensivos, que se ve; un desbordamiento en
-              // release no se ve.
+              // release no se ve. 14 px: el centro de la asamblea ocupa dos
+              // líneas y es lectura (M3.9).
               Flexible(
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(14, 10, 14, 0),
                   child: Text(
                     centroInteres,
                     style: const TextStyle(
-                      fontSize: 13,
+                      fontSize: 14,
                       fontWeight: FontWeight.w600,
                       color: AppTheme.textSecondary,
                       height: 1.3,

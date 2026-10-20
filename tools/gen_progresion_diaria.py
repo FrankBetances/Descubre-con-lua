@@ -299,8 +299,8 @@ TEXTOS["segundo_ciclo.5"] = {
              "Presenta a terceira orde con personaxe. Se o mes só ten dúas, repasa a segunda con outra voz.",
              "Presenta la tercera orden con personaje. Si el mes solo tiene dos, repasa la segunda con otra voz."),
     (2, 2): ("Freeze!", "¡Freeze!",
-             "Segunda e terceira orde e, entre elas, «Freeze!»: todo o mundo queda de estatua. Quen se move, ri e volve.",
-             "Segunda y tercera orden y, entre ellas, «Freeze!»: todo el mundo se queda de estatua. Quien se mueve, ríe y vuelve."),
+             "Segunda e terceira orde e, entre elas, “Freeze!”: todo o mundo queda de estatua. Quen se move, ri e volve.",
+             "Segunda y tercera orden y, entre ellas, “Freeze!”: todo el mundo se queda de estatua. Quien se mueve, ríe y vuelve."),
     (2, 3): ("As tres ordes, coa canción", "Las tres órdenes, con la canción",
              "Canción enteira coas tres ordes dentro. Ti aínda modelas todo; o freeze vai ao final de cada estrofa.",
              "Canción entera con las tres órdenes dentro. Tú aún modelas todo; el freeze va al final de cada estrofa."),
@@ -377,8 +377,8 @@ TEXTOS["segundo_ciclo.6"] = {
              "Une a primeira e a segunda orde nunha serie seguida, en parellas. Primeiro moi amodo, despois ao ritmo normal.",
              "Une la primera y la segunda orden en una serie seguida, en parejas. Primero muy despacio, después al ritmo normal."),
     (3, 2): ("Amodo e lixeiro", "Despacio y rápido",
-             "Segunda e terceira orde: quen dirixe elixe se vai amodo ou lixeiro, e dío en inglés: «slow» ou «fast».",
-             "Segunda y tercera orden: quien dirige elige si va despacio o rápido, y lo dice en inglés: «slow» o «fast»."),
+             "Segunda e terceira orde: quen dirixe elixe se vai amodo ou lixeiro, e dío en inglés: “slow” ou “fast”.",
+             "Segunda y tercera orden: quien dirige elige si va despacio o rápido, y lo dice en inglés: “slow” o “fast”."),
     (3, 3): ("A historia da lámina", "La historia de la lámina",
              "Ensina a lámina do mes e que a clase conte o que pasa. Cada orde é unha acción do protagonista; en parellas, un narra e outro actúa.",
              "Enseña la lámina del mes y que la clase cuente lo que pasa. Cada orden es una acción del protagonista; en parejas, uno narra y otro actúa."),
@@ -418,6 +418,33 @@ NOTA = {
 }
 
 
+# La línea para la adulta en la fase de reto TPR (M4.1): cómo se dice la
+# orden, según el apartado 7 de docs/PLAN_ARQUITECTURA_PEDAGOGIA.md. En el aula
+# la espera es para el grupo y el recast va sobre la respuesta que llegue; en
+# 0-2 la respuesta es del cuerpo. Sin «repite» ni corrección, y sin hablar del
+# gesto: la semana 4 se dan las órdenes sin él.
+LINEA_ADULTA = {
+    "primeiro_ciclo.0_2": (
+        "Despois de cada orde, cala de 3 a 5 segundos e mira: a resposta do "
+        "bebé é do corpo, non da voz.",
+        "Después de cada orden, calla de 3 a 5 segundos y mira: la respuesta "
+        "del bebé es del cuerpo, no de la voz."),
+    "primeiro_ciclo.2_3": (
+        "Despois de cada orde, cala de 3 a 5 segundos para todo o grupo. Se "
+        "alguén di algo, devólvello ben dito, sen corrixir.",
+        "Después de cada orden, calla de 3 a 5 segundos para todo el grupo. "
+        "Si alguien dice algo, devuélveselo bien dicho, sin corregir."),
+}
+for _n in ("4", "5", "6"):
+    LINEA_ADULTA[f"segundo_ciclo.{_n}"] = (
+        "Despois de cada orde, cala de 3 a 5 segundos: a espera é para o "
+        "grupo. Á resposta que chegue, devólvea ben dita ou un pouco máis "
+        "longa, sen corrixir.",
+        "Después de cada orden, calla de 3 a 5 segundos: la espera es para el "
+        "grupo. A la respuesta que llegue, devuélvela bien dicha o un poco más "
+        "larga, sin corregir.")
+
+
 def build(clave: str) -> dict:
     textos = TEXTOS[clave]
     dias = []
@@ -437,6 +464,11 @@ def build(clave: str) -> dict:
         "version": 1,
         "id": f"progresion.{clave}",
         "nota": NOTA,
+        "lineaAdulta": {"gl": LINEA_ADULTA[clave][0],
+                        "es": LINEA_ADULTA[clave][1]},
+        # La espera visible del reto (M4.2): el primer tiempo del apartado 7,
+        # decir y callar de 3 a 5 segundos. Se cuenta el máximo.
+        "esperaSegundos": 5,
         "semanas": [
             {"numero": n, "nome": {"gl": gl, "es": es},
              "meta": {"gl": mgl, "es": mes}}

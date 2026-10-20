@@ -97,6 +97,8 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
           onCambiarCurso: _cambiarCurso,
           audioService: widget.audioService,
           agora: widget.agora,
+          premios: widget.premios,
+          calendario: _store,
         ),
         // Con clave: cambiar el grupo en Hoxe abre el calendario de ese curso.
         CalendarioScreen(

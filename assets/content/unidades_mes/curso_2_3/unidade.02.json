@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "id": "unidade.curso_2_3.02",
+  "curso": "curso_2_3",
+  "orden": 2,
+  "mesCalendario": 10,
+  "asamblea": "asamblea.primeiro_ciclo.outubro.2_3_anos",
+  "centroInteres": {
+    "gl": "A conciencia do propio corpo e a propiocepción",
+    "es": "La conciencia del propio cuerpo y la propiocepción"
+  },
+  "cancion": {
+    "titulo": "Head, Shoulders, Knees and Toes"
+  },
+  "nucleo": [
+    {
+      "ref": "frase.cmd.outubro.2_3.01"
+    },
+    {
+      "ref": "frase.cmd.outubro.2_3.02"
+    },
+    {
+      "ref": "frase.cmd.outubro.2_3.03"
+    },
+    {
+      "ref": "2_3.outubro.s1.touch-your-knees"
+    },
+    {
+      "ref": "2_3.outubro.s4.dance-and-freeze"
+    }
+  ],
+  "descriptivas": [],
+  "formulas": [],
+  "estructura": null,
+  "ordenes": [
+    {
+      "ref": "frase.cmd.outubro.2_3.01",
+      "usa": [
+        "frase.cmd.outubro.2_3.01",
+        "2_3.outubro.s1.touch-your-knees"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.2_3.02",
+      "usa": [
+        "frase.cmd.outubro.2_3.02"
+      ]
+    },
+    {
+      "ref": "frase.cmd.outubro.2_3.03",
+      "usa": [
+        "frase.cmd.outubro.2_3.03",
+        "2_3.outubro.s4.dance-and-freeze"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Sen material: só o corpo",
+      "es": "Sin material: solo el cuerpo"
+    }
+  ],
+  "contraste": null,
+  "queObservar": [
+    {
+      "gl": "Toca a parte que nomeas, aínda que vaia máis amodo",
+      "es": "Toca la parte que nombras, aunque vaya más despacio"
+    },
+    {
+      "gl": "Queda quieto ao oír «Freeze!»",
+      "es": "Se queda quieto al oír «Freeze!»"
+    }
+  ],
+  "reactivar": [
+    "frase.cmd.setembro.2_3.02"
+  ],
+  "hogar": null,
+  "microcuento": null
+}

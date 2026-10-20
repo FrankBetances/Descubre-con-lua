@@ -114,7 +114,7 @@ void main() {
     setUpAll(() async {
       Future<String> ler(String p) => File(p).readAsString();
       repo = ContentRepository(loader: ContentAssetLoader(stringLoader: ler));
-      await repo.initialize(unidadPaths: const [], capsulaPaths: const []);
+      await repo.initialize(capsulaPaths: const []);
       repo.addProgramaTpr(await ProgramaTpr.cargar(stringLoader: ler));
       // Fuera del testWidgets: dentro, el reloj es falso y una lectura de
       // disco no termina.

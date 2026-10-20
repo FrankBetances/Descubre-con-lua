@@ -93,51 +93,6 @@ class ContentValidator {
     return null;
   }
 
-  /// Validates a complete [Unidad] JSON document.
-  ValidationResult validateUnidadJson(Map<String, dynamic> json,
-      {String sourcePath = ''}) {
-    final List<String> errors = [];
-    final List<String> warnings = [];
-
-    final prefix = sourcePath.isNotEmpty ? '[$sourcePath] ' : '';
-
-    // 1. Root structure
-    if (!json.containsKey('id') ||
-        json['id'] is! String ||
-        (json['id'] as String).trim().isEmpty) {
-      errors.add(
-          '${prefix}Missing or empty root "id": must be a non-empty string');
-    }
-
-    final tramo = json['tramoEtario'] ?? json['tramo_etario'];
-    if (tramo != '0-2' && tramo != '2-3' && tramo != '0-3') {
-      errors.add(
-          '${prefix}Invalid "tramoEtario": must be "0-2", "2-3", or "0-3" (got: "$tramo")');
-    }
-
-    // 2. Bilingual parity check across entire tree
-    checkBilingualParity(json, path: 'root', errors: errors, prefix: prefix);
-
-    // 3. Clinical term blacklist check across entire tree
-    checkClinicalTerms(json, path: 'root', errors: errors, prefix: prefix);
-
-    // 4. Curricular alignment (Decreto 150/2022)
-    final curriculo = _asMap(json['curriculo'] ?? json['curricular']);
-    if (curriculo == null) {
-      errors.add('${prefix}Missing required "curriculo" section');
-    } else {
-      checkCurricularAlignment(curriculo, errors: errors, prefix: prefix);
-    }
-
-    // 5. Referential integrity and required sections
-    checkReferentialIntegrityUnidad(json,
-        errors: errors, warnings: warnings, prefix: prefix);
-
-    return errors.isEmpty
-        ? ValidationResult.success(warnings: warnings)
-        : ValidationResult.failure(errors, warnings: warnings);
-  }
-
   /// Validates a complete [Capsula] JSON document.
   ValidationResult validateCapsulaJson(Map<String, dynamic> json,
       {String sourcePath = ''}) {
@@ -349,120 +304,6 @@ class ContentValidator {
     }
   }
 
-  /// Verifies referential integrity and required sections for a unit.
-  void checkReferentialIntegrityUnidad(
-    Map<String, dynamic> json, {
-    required List<String> errors,
-    required List<String> warnings,
-    String prefix = '',
-  }) {
-    // 1. Canción a pulso
-    final cancion = _asMap(json['cancionPulso'] ?? json['cancion']);
-    if (cancion == null) {
-      errors.add('${prefix}Missing required section: "cancionPulso"');
-    } else {
-      if (cancion.containsKey('bpm')) {
-        final bpmVal = cancion['bpm'];
-        if (bpmVal is! num) {
-          errors.add(
-              '${prefix}cancionPulso.bpm must be an integer between 40 and 160 BPM (got: $bpmVal)');
-        } else {
-          final bpm = bpmVal.toInt();
-          if (bpm < 40 || bpm > 160) {
-            errors.add(
-                '${prefix}cancionPulso.bpm must be an integer between 40 and 160 BPM (got: $bpm)');
-          }
-        }
-      }
-      final audioAsset = cancion['audioAsset'] ?? cancion['audio_asset'];
-      _validateAudioAsset(audioAsset,
-          path: 'cancionPulso.audioAsset', errors: errors, prefix: prefix);
-    }
-
-    // 2. Cuento
-    final cuento = _asMap(json['cuento'] ?? json['conto']);
-    if (cuento == null) {
-      errors.add('${prefix}Missing required section: "cuento"');
-    } else {
-      final paginas = cuento['paginas'];
-      if (paginas is! List || paginas.isEmpty) {
-        errors.add('${prefix}cuento.paginas must have at least one story page');
-      }
-    }
-
-    // 3. Vocabulario
-    final vocab = json['vocabulario'];
-    if (vocab is! List || vocab.isEmpty) {
-      errors.add('${prefix}vocabulario must contain at least one item');
-    } else {
-      for (var i = 0; i < vocab.length; i++) {
-        final item = vocab[i];
-        if (item is Map<String, dynamic>) {
-          final a = item['audioAsset'] ?? item['audio_asset'];
-          _validateAudioAsset(a,
-              path: 'vocabulario[$i].audioAsset',
-              errors: errors,
-              prefix: prefix);
-        }
-      }
-    }
-
-    // 4. Preguntas (Must contain levels 1, 2, and 3)
-    final preguntas = json['preguntas'];
-    if (preguntas is! List || preguntas.isEmpty) {
-      errors.add('${prefix}preguntas must contain graduated questions');
-    } else {
-      final Set<int> levelsFound = {};
-      for (final p in preguntas) {
-        if (p is Map) {
-          final n = (p['nivel'] as num?)?.toInt();
-          if (n != null) levelsFound.add(n);
-        }
-      }
-      for (final reqLevel in [1, 2, 3]) {
-        if (!levelsFound.contains(reqLevel)) {
-          errors.add(
-              '${prefix}preguntas is missing graduated scaffolding level $reqLevel');
-        }
-      }
-    }
-
-    // 5. Exploracion & mandatory safety notice
-    final exploracion =
-        _asMap(json['exploracion'] ?? json['exploracionSensorial']);
-    if (exploracion == null) {
-      errors.add('${prefix}Missing required section: "exploracion"');
-    } else {
-      final aviso = _asMap(
-          exploracion['avisoSeguridad'] ?? exploracion['aviso_seguridad']);
-      if (aviso == null) {
-        errors.add(
-            '${prefix}exploracion missing MANDATORY "avisoSeguridad" object');
-      } else {
-        final gl = aviso['gl']?.toString() ?? '';
-        final es = aviso['es']?.toString() ?? '';
-        if (gl.trim().isEmpty || es.trim().isEmpty) {
-          errors.add(
-              '${prefix}exploracion.avisoSeguridad must be populated in both gl and es');
-        }
-      }
-    }
-
-    // 6. Matematicas tempranas
-    final matematicas =
-        _asMap(json['matematicas'] ?? json['matematicasTempras']);
-    if (matematicas == null) {
-      errors.add('${prefix}Missing required section: "matematicas"');
-    }
-
-    // 7. Puente a casa
-    final puenteCasa =
-        _asMap(json['puenteCasa'] ?? json['ponteCasa'] ?? json['puente_casa']);
-    if (puenteCasa == null) {
-      errors.add('${prefix}Missing required section: "puenteCasa"');
-    }
-  }
-
   /// Verifies referential integrity and the 4 canonical sections for a capsule.
   void checkReferentialIntegrityCapsula(
     Map<String, dynamic> json, {
@@ -494,6 +335,49 @@ class ContentValidator {
       errors.add(
           '${prefix}Capsule must contain at least one reflective "afirmaciones" item');
     }
+  }
+
+  /// Valida `cancions/cancions_con_pulso.json` (M4.3): cada canción con
+  /// título y letra en las dos lenguas, el pulso marcado en todos los versos y
+  /// su voz dentro del paquete, nunca una URL. Lo que antes miraba la
+  /// validación de las unidades de seis pasos, de donde vienen.
+  ValidationResult validateCancionsConPulsoJson(Map<String, dynamic> json) {
+    final errors = <String>[];
+    final cancions = json['cancions'];
+    if (cancions is! List || cancions.isEmpty) {
+      return ValidationResult.failure(['cancions: falta la lista']);
+    }
+    for (final (i, c) in cancions.indexed) {
+      final cancion = _asMap(c);
+      final donde = 'cancions[$i]';
+      if (cancion == null) {
+        errors.add('$donde: no es un objeto');
+        continue;
+      }
+      if ((cancion['id']?.toString() ?? '').trim().isEmpty) {
+        errors.add('$donde.id: vacío');
+      }
+      for (final campo in ['titulo', 'letraConPulsos', 'consignaDocente']) {
+        final texto = _asMap(cancion[campo]);
+        for (final lingua in ['gl', 'es']) {
+          final valor = texto?[lingua]?.toString() ?? '';
+          if (valor.trim().isEmpty) {
+            errors.add('$donde.$campo.$lingua: vacío');
+          } else if (campo == 'letraConPulsos' &&
+              valor
+                  .split('\n')
+                  .where((v) => v.trim().isNotEmpty)
+                  .any((v) => !v.contains('*'))) {
+            errors.add('$donde.$campo.$lingua: un verso sin pulso (*)');
+          }
+        }
+      }
+      _validateAudioAsset(cancion['audioAsset'],
+          path: '$donde.audioAsset', errors: errors);
+    }
+    return errors.isEmpty
+        ? ValidationResult.success()
+        : ValidationResult.failure(errors);
   }
 
   void _validateAudioAsset(

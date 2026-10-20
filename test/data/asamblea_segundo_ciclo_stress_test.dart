@@ -4,7 +4,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
-import 'package:descubre_con_lua/data/models/unidad_model.dart' show Revision;
+import 'package:descubre_con_lua/data/models/revision_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 
 void main() {

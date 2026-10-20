@@ -13,7 +13,7 @@
       },
       "palabras": [
         {
-          "id": "water",
+          "id": "3_4.maio.s1.water",
           "en": "Water",
           "gl": "Auga",
           "es": "Agua",
@@ -24,7 +24,7 @@
           }
         },
         {
-          "id": "soap",
+          "id": "3_4.maio.s1.soap",
           "en": "Soap",
           "gl": "Xabón",
           "es": "Jabón",
@@ -35,7 +35,7 @@
           }
         },
         {
-          "id": "towel",
+          "id": "3_4.maio.s1.towel",
           "en": "Towel",
           "gl": "Toalla",
           "es": "Toalla",
@@ -46,7 +46,7 @@
           }
         },
         {
-          "id": "tap",
+          "id": "3_4.maio.s1.tap",
           "en": "Tap",
           "gl": "Billa",
           "es": "Grifo",
@@ -57,7 +57,7 @@
           }
         },
         {
-          "id": "bubbles",
+          "id": "3_4.maio.s1.bubbles",
           "en": "Bubbles",
           "gl": "Burbullas",
           "es": "Burbujas",
@@ -68,7 +68,7 @@
           }
         },
         {
-          "id": "sink",
+          "id": "3_4.maio.s1.sink",
           "en": "Sink",
           "gl": "Lavabo",
           "es": "Lavabo",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "id": "nails",
+          "id": "3_4.maio.s1.nails",
           "en": "Nails",
           "gl": "Unllas",
           "es": "Uñas",
@@ -90,7 +90,7 @@
           }
         },
         {
-          "id": "wash",
+          "id": "3_4.maio.s1.wash",
           "en": "Wash",
           "gl": "Lavar",
           "es": "Lavar",
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": "rub",
+          "id": "3_4.maio.s1.rub",
           "en": "Rub",
           "gl": "Fregar",
           "es": "Frotar",
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": "splash",
+          "id": "3_4.maio.s1.splash",
           "en": "Splash",
           "gl": "Salpicar",
           "es": "Salpicar",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "id": "rinse",
+          "id": "3_4.maio.s1.rinse",
           "en": "Rinse",
           "gl": "Enxaugar",
           "es": "Aclarar",
@@ -134,7 +134,7 @@
           }
         },
         {
-          "id": "scrub",
+          "id": "3_4.maio.s1.scrub",
           "en": "Scrub",
           "gl": "Refregar",
           "es": "Restregar",
@@ -145,7 +145,7 @@
           }
         },
         {
-          "id": "clean",
+          "id": "3_4.maio.s1.clean",
           "en": "Clean",
           "gl": "Limpo, limpa",
           "es": "Limpio, limpia",
@@ -156,7 +156,7 @@
           }
         },
         {
-          "id": "soapy",
+          "id": "3_4.maio.s1.soapy",
           "en": "Soapy",
           "gl": "Con xabón",
           "es": "Enjabonado, enjabonada",
@@ -167,7 +167,7 @@
           }
         },
         {
-          "id": "bubbly",
+          "id": "3_4.maio.s1.bubbly",
           "en": "Bubbly",
           "gl": "Con burbullas",
           "es": "Burbujeante",
@@ -178,7 +178,7 @@
           }
         },
         {
-          "id": "cool",
+          "id": "3_4.maio.s1.cool",
           "en": "Cool",
           "gl": "Fresquiño, fresquiña",
           "es": "Fresquito, fresquita",
@@ -189,7 +189,7 @@
           }
         },
         {
-          "id": "wash-your-hands",
+          "id": "3_4.maio.s1.wash-your-hands",
           "en": "Wash your hands",
           "gl": "Lava as mans",
           "es": "Lávate las manos",
@@ -200,7 +200,7 @@
           }
         },
         {
-          "id": "rub-your-hands",
+          "id": "3_4.maio.s1.rub-your-hands",
           "en": "Rub your hands",
           "gl": "Frega as mans",
           "es": "Frótate las manos",
@@ -211,7 +211,7 @@
           }
         },
         {
-          "id": "wash-then-dry",
+          "id": "3_4.maio.s1.wash-then-dry",
           "en": "Wash, then dry",
           "gl": "Lavar e logo secar",
           "es": "Lavar y luego secar",
@@ -222,7 +222,7 @@
           }
         },
         {
-          "id": "under-the-tap",
+          "id": "3_4.maio.s1.under-the-tap",
           "en": "Under the tap",
           "gl": "Debaixo da billa",
           "es": "Debajo del grifo",
@@ -242,7 +242,7 @@
       },
       "palabras": [
         {
-          "id": "bath",
+          "id": "3_4.maio.s2.bath",
           "en": "Bath",
           "gl": "Baño",
           "es": "Baño",
@@ -253,7 +253,7 @@
           }
         },
         {
-          "id": "sponge",
+          "id": "3_4.maio.s2.sponge",
           "en": "Sponge",
           "gl": "Esponxa",
           "es": "Esponja",
@@ -264,7 +264,7 @@
           }
         },
         {
-          "id": "shampoo",
+          "id": "3_4.maio.s2.shampoo",
           "en": "Shampoo",
           "gl": "Xampú",
           "es": "Champú",
@@ -275,7 +275,7 @@
           }
         },
         {
-          "id": "rubber-duck",
+          "id": "3_4.maio.s2.rubber-duck",
           "en": "Rubber duck",
           "gl": "Patiño de goma",
           "es": "Patito de goma",
@@ -286,7 +286,7 @@
           }
         },
         {
-          "id": "mirror",
+          "id": "3_4.maio.s2.mirror",
           "en": "Mirror",
           "gl": "Espello",
           "es": "Espejo",
@@ -297,7 +297,7 @@
           }
         },
         {
-          "id": "comb",
+          "id": "3_4.maio.s2.comb",
           "en": "Comb",
           "gl": "Peite",
           "es": "Peine",
@@ -308,7 +308,7 @@
           }
         },
         {
-          "id": "toothbrush",
+          "id": "3_4.maio.s2.toothbrush",
           "en": "Toothbrush",
           "gl": "Cepillo de dentes",
           "es": "Cepillo de dientes",
@@ -319,7 +319,7 @@
           }
         },
         {
-          "id": "float",
+          "id": "3_4.maio.s2.float",
           "en": "Float",
           "gl": "Flotar",
           "es": "Flotar",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "id": "pour",
+          "id": "3_4.maio.s2.pour",
           "en": "Pour",
           "gl": "Verter",
           "es": "Echar",
@@ -341,7 +341,7 @@
           }
         },
         {
-          "id": "paddle",
+          "id": "3_4.maio.s2.paddle",
           "en": "Paddle",
           "gl": "Chapotear",
           "es": "Chapotear",
@@ -352,7 +352,7 @@
           }
         },
         {
-          "id": "dress",
+          "id": "3_4.maio.s2.dress",
           "en": "Dress",
           "gl": "Vestirse",
           "es": "Vestirse",
@@ -363,7 +363,7 @@
           }
         },
         {
-          "id": "shower",
+          "id": "3_4.maio.s2.shower",
           "en": "Shower",
           "gl": "Ducharse",
           "es": "Ducharse",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "deep",
+          "id": "3_4.maio.s2.deep",
           "en": "Deep",
           "gl": "Fondo, fonda",
           "es": "Profundo, profunda",
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": "shallow",
+          "id": "3_4.maio.s2.shallow",
           "en": "Shallow",
           "gl": "Pouco fondo, pouco fonda",
           "es": "Poco profundo, poco profunda",
@@ -396,7 +396,7 @@
           }
         },
         {
-          "id": "relaxed",
+          "id": "3_4.maio.s2.relaxed",
           "en": "Relaxed",
           "gl": "Relaxado, relaxada",
           "es": "Relajado, relajada",
@@ -407,7 +407,7 @@
           }
         },
         {
-          "id": "ticklish",
+          "id": "3_4.maio.s2.ticklish",
           "en": "Ticklish",
           "gl": "Con cóxegas",
           "es": "Cosquilloso, cosquillosa",
@@ -418,7 +418,7 @@
           }
         },
         {
-          "id": "brush-your-teeth",
+          "id": "3_4.maio.s2.brush-your-teeth",
           "en": "Brush your teeth",
           "gl": "Lava os dentes",
           "es": "Lávate los dientes",
@@ -429,7 +429,7 @@
           }
         },
         {
-          "id": "wash-your-face",
+          "id": "3_4.maio.s2.wash-your-face",
           "en": "Wash your face",
           "gl": "Lava a cara",
           "es": "Lávate la cara",
@@ -440,7 +440,7 @@
           }
         },
         {
-          "id": "in-the-bath",
+          "id": "3_4.maio.s2.in-the-bath",
           "en": "In the bath",
           "gl": "No baño",
           "es": "En el baño",
@@ -451,7 +451,7 @@
           }
         },
         {
-          "id": "top-to-toe",
+          "id": "3_4.maio.s2.top-to-toe",
           "en": "Top to toe",
           "gl": "Da cabeza aos pés",
           "es": "De la cabeza a los pies",
@@ -471,7 +471,7 @@
       },
       "palabras": [
         {
-          "id": "bread",
+          "id": "3_4.maio.s3.bread",
           "en": "Bread",
           "gl": "Pan",
           "es": "Pan",
@@ -482,7 +482,7 @@
           }
         },
         {
-          "id": "milk",
+          "id": "3_4.maio.s3.milk",
           "en": "Milk",
           "gl": "Leite",
           "es": "Leche",
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "cheese",
+          "id": "3_4.maio.s3.cheese",
           "en": "Cheese",
           "gl": "Queixo",
           "es": "Queso",
@@ -504,7 +504,7 @@
           }
         },
         {
-          "id": "spoon",
+          "id": "3_4.maio.s3.spoon",
           "en": "Spoon",
           "gl": "Culler",
           "es": "Cuchara",
@@ -515,7 +515,7 @@
           }
         },
         {
-          "id": "plate",
+          "id": "3_4.maio.s3.plate",
           "en": "Plate",
           "gl": "Prato",
           "es": "Plato",
@@ -526,7 +526,7 @@
           }
         },
         {
-          "id": "bowl",
+          "id": "3_4.maio.s3.bowl",
           "en": "Bowl",
           "gl": "Cunca",
           "es": "Cuenco",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "id": "rice",
+          "id": "3_4.maio.s3.rice",
           "en": "Rice",
           "gl": "Arroz",
           "es": "Arroz",
@@ -548,7 +548,7 @@
           }
         },
         {
-          "id": "eat",
+          "id": "3_4.maio.s3.eat",
           "en": "Eat",
           "gl": "Comer",
           "es": "Comer",
@@ -559,7 +559,7 @@
           }
         },
         {
-          "id": "drink",
+          "id": "3_4.maio.s3.drink",
           "en": "Drink",
           "gl": "Beber",
           "es": "Beber",
@@ -570,7 +570,7 @@
           }
         },
         {
-          "id": "spread",
+          "id": "3_4.maio.s3.spread",
           "en": "Spread",
           "gl": "Untar",
           "es": "Untar",
@@ -581,7 +581,7 @@
           }
         },
         {
-          "id": "pass",
+          "id": "3_4.maio.s3.pass",
           "en": "Pass",
           "gl": "Pasar",
           "es": "Pasar",
@@ -592,7 +592,7 @@
           }
         },
         {
-          "id": "serve",
+          "id": "3_4.maio.s3.serve",
           "en": "Serve",
           "gl": "Servir",
           "es": "Servir",
@@ -603,7 +603,7 @@
           }
         },
         {
-          "id": "salty",
+          "id": "3_4.maio.s3.salty",
           "en": "Salty",
           "gl": "Salgado, salgada",
           "es": "Salado, salada",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "creamy",
+          "id": "3_4.maio.s3.creamy",
           "en": "Creamy",
           "gl": "Cremoso, cremosa",
           "es": "Cremoso, cremosa",
@@ -625,7 +625,7 @@
           }
         },
         {
-          "id": "thick",
+          "id": "3_4.maio.s3.thick",
           "en": "Thick",
           "gl": "Mesto, mesta",
           "es": "Espeso, espesa",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "id": "favourite",
+          "id": "3_4.maio.s3.favourite",
           "en": "Favourite",
           "gl": "Favorito, favorita",
           "es": "Favorito, favorita",
@@ -647,7 +647,7 @@
           }
         },
         {
-          "id": "i-m-hungry",
+          "id": "3_4.maio.s3.i-m-hungry",
           "en": "I'm hungry",
           "gl": "Teño fame",
           "es": "Tengo hambre",
@@ -658,7 +658,7 @@
           }
         },
         {
-          "id": "enjoy-your-meal",
+          "id": "3_4.maio.s3.enjoy-your-meal",
           "en": "Enjoy your meal!",
           "gl": "Bo proveito!",
           "es": "¡Buen provecho!",
@@ -669,7 +669,7 @@
           }
         },
         {
-          "id": "all-gone",
+          "id": "3_4.maio.s3.all-gone",
           "en": "All gone!",
           "gl": "Rematou!",
           "es": "¡Se acabó!",
@@ -680,7 +680,7 @@
           }
         },
         {
-          "id": "bread-and-cheese",
+          "id": "3_4.maio.s3.bread-and-cheese",
           "en": "Bread and cheese",
           "gl": "Pan e queixo",
           "es": "Pan y queso",
@@ -700,7 +700,7 @@
       },
       "palabras": [
         {
-          "id": "story",
+          "id": "3_4.maio.s4.story",
           "en": "Story",
           "gl": "Conto",
           "es": "Cuento",
@@ -711,7 +711,7 @@
           }
         },
         {
-          "id": "page",
+          "id": "3_4.maio.s4.page",
           "en": "Page",
           "gl": "Páxina",
           "es": "Página",
@@ -722,7 +722,7 @@
           }
         },
         {
-          "id": "word",
+          "id": "3_4.maio.s4.word",
           "en": "Word",
           "gl": "Palabra",
           "es": "Palabra",
@@ -733,7 +733,7 @@
           }
         },
         {
-          "id": "puppet",
+          "id": "3_4.maio.s4.puppet",
           "en": "Puppet",
           "gl": "Monicreque",
           "es": "Títere",
@@ -744,7 +744,7 @@
           }
         },
         {
-          "id": "castle",
+          "id": "3_4.maio.s4.castle",
           "en": "Castle",
           "gl": "Castelo",
           "es": "Castillo",
@@ -755,7 +755,7 @@
           }
         },
         {
-          "id": "giant",
+          "id": "3_4.maio.s4.giant",
           "en": "Giant",
           "gl": "Xigante",
           "es": "Gigante",
@@ -766,7 +766,7 @@
           }
         },
         {
-          "id": "dragon",
+          "id": "3_4.maio.s4.dragon",
           "en": "Dragon",
           "gl": "Dragón",
           "es": "Dragón",
@@ -777,7 +777,7 @@
           }
         },
         {
-          "id": "imagine",
+          "id": "3_4.maio.s4.imagine",
           "en": "Imagine",
           "gl": "Imaxinar",
           "es": "Imaginar",
@@ -788,7 +788,7 @@
           }
         },
         {
-          "id": "whisper",
+          "id": "3_4.maio.s4.whisper",
           "en": "Whisper",
           "gl": "Musitar",
           "es": "Susurrar",
@@ -799,7 +799,7 @@
           }
         },
         {
-          "id": "guess",
+          "id": "3_4.maio.s4.guess",
           "en": "Guess",
           "gl": "Adiviñar",
           "es": "Adivinar",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "id": "rhyme",
+          "id": "3_4.maio.s4.rhyme",
           "en": "Rhyme",
           "gl": "Rimar",
           "es": "Rimar",
@@ -821,7 +821,7 @@
           }
         },
         {
-          "id": "remember",
+          "id": "3_4.maio.s4.remember",
           "en": "Remember",
           "gl": "Lembrar",
           "es": "Recordar",
@@ -832,7 +832,7 @@
           }
         },
         {
-          "id": "old",
+          "id": "3_4.maio.s4.old",
           "en": "Old",
           "gl": "Vello, vella",
           "es": "Viejo, vieja",
@@ -843,7 +843,7 @@
           }
         },
         {
-          "id": "kind",
+          "id": "3_4.maio.s4.kind",
           "en": "Kind",
           "gl": "Amable",
           "es": "Amable",
@@ -854,7 +854,7 @@
           }
         },
         {
-          "id": "great",
+          "id": "3_4.maio.s4.great",
           "en": "Great",
           "gl": "Estupendo, estupenda",
           "es": "Estupendo, estupenda",
@@ -865,7 +865,7 @@
           }
         },
         {
-          "id": "secret",
+          "id": "3_4.maio.s4.secret",
           "en": "Secret",
           "gl": "Secreto, secreta",
           "es": "Secreto, secreta",
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "once-upon-a-time",
+          "id": "3_4.maio.s4.once-upon-a-time",
           "en": "Once upon a time",
           "gl": "Era unha vez",
           "es": "Érase una vez",
@@ -887,7 +887,7 @@
           }
         },
         {
-          "id": "the-end",
+          "id": "3_4.maio.s4.the-end",
           "en": "The end",
           "gl": "Fin",
           "es": "Fin",
@@ -898,7 +898,7 @@
           }
         },
         {
-          "id": "and-then",
+          "id": "3_4.maio.s4.and-then",
           "en": "And then...",
           "gl": "E entón...",
           "es": "Y entonces...",
@@ -909,7 +909,7 @@
           }
         },
         {
-          "id": "big-like-a-giant",
+          "id": "3_4.maio.s4.big-like-a-giant",
           "en": "Big like a giant",
           "gl": "Grande coma un xigante",
           "es": "Grande como un gigante",

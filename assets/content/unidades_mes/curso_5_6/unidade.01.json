@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "id": "unidade.curso_5_6.01",
+  "curso": "curso_5_6",
+  "orden": 1,
+  "mesCalendario": 9,
+  "asamblea": "asamblea.segundo_ciclo.setembro.6_infantil",
+  "centroInteres": {
+    "gl": "A organización das perchas persoais e os mandatos entre iguais con tarxetas icónicas",
+    "es": "La organización de las perchas personales y los mandatos entre iguales con tarjetas icónicas"
+  },
+  "cancion": null,
+  "nucleo": [
+    {
+      "ref": "3_4.xaneiro.s1.coat"
+    },
+    {
+      "ref": "3_4.decembro.s2.hang"
+    },
+    {
+      "ref": "3_4.outubro.s4.turn-around"
+    },
+    {
+      "ref": "3_4.setembro.s1.sit"
+    },
+    {
+      "ref": "4_5.decembro.s4.card"
+    }
+  ],
+  "descriptivas": [
+    {
+      "ref": "3_4.febreiro.s3.green"
+    },
+    {
+      "ref": "4_5.outubro.s1.motionless"
+    },
+    {
+      "ref": "4_5.setembro.s1.responsible"
+    }
+  ],
+  "formulas": [
+    {
+      "ref": "2_3.setembro.s2.here-you-go"
+    },
+    {
+      "ref": "3_4.setembro.s3.thank-you"
+    }
+  ],
+  "estructura": {
+    "ref": "frase.estructura.first-then",
+    "nota": {
+      "gl": "First… then…: dúas ou tres accións en orde; a criatura móvese no orde que oe.",
+      "es": "First… then…: dos o tres acciones en orden; la criatura se mueve en el orden que oye."
+    }
+  },
+  "ordenes": [
+    {
+      "ref": "frase.cmd.setembro.6i.01",
+      "usa": [
+        "3_4.decembro.s2.hang",
+        "3_4.xaneiro.s1.coat"
+      ]
+    },
+    {
+      "ref": "frase.cmd.setembro.6i.02",
+      "usa": [
+        "3_4.outubro.s4.turn-around",
+        "2_3.setembro.s2.here-you-go"
+      ]
+    },
+    {
+      "ref": "frase.cmd.setembro.6i.03",
+      "usa": [
+        "3_4.setembro.s1.sit",
+        "3_4.febreiro.s3.green",
+        "4_5.outubro.s1.motionless"
+      ]
+    }
+  ],
+  "realia": [
+    {
+      "gl": "Tarxetas icónicas de madeira sen texto",
+      "es": "Tarjetas icónicas de madera sin texto"
+    }
+  ],
+  "contraste": {
+    "a": "3_4.setembro.s1.sit",
+    "b": "3_4.xaneiro.s3.seat-belt-on",
+    "nota": {
+      "gl": "A vogal curta de «sit» fronte á longa de «seat»: dilas ti, unha detrás da outra, exagerando a duración.",
+      "es": "La vocal corta de «sit» frente a la larga de «seat»: dilas tú, una detrás de otra, exagerando la duración."
+    }
+  },
+  "queObservar": [
+    {
+      "gl": "Fai as tres accións da orde no orde que as oíu",
+      "es": "Hace las tres acciones de la orden en el orden en que las oyó"
+    },
+    {
+      "gl": "Entrega o babi cun «Here you go» ou cun xesto",
+      "es": "Entrega el babi con un «Here you go» o con un gesto"
+    }
+  ],
+  "reactivar": [],
+  "hogar": null,
+  "microcuento": null
+}

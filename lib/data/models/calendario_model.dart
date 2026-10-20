@@ -1,4 +1,5 @@
 import '../../core/localization/localized_string.dart';
+import 'unidade_do_mes_model.dart';
 
 /// Estado de estimulación para un día del calendario compartido.
 enum EstadoEstimulacion {
@@ -56,19 +57,15 @@ class InglesDelMes {
   List<String> get todo => [...tpr, if (frase.isNotEmpty) frase];
 }
 
-/// Una unidad mensual del calendario escolar (septiembre a junio).
+/// Un mes del calendario escolar (septiembre a junio).
 ///
-/// Sale de `assets/content/calendario/meses.json`. Aquí no hay ni una cadena de
-/// contenido: si algo de esta clase se puede leer en pantalla, viene del JSON.
+/// En el trayecto sale de la unidad del mes ([MesCurricular.daUnidade]); el
+/// catálogo de diez meses de `assets/content/calendario/meses.json` queda para
+/// el nombre, el icono y los minutos, y como reserva si las unidades no se
+/// leen. Aquí no hay ni una cadena de contenido: todo viene del JSON.
 class MesCurricular {
   final int orden;
   final int mesCalendario;
-
-  /// Id de la unidad de aula que se dirige este mes, o `null` si todavía no
-  /// está escrita. **No se deduce del `orden`**: el `orden` de una unidad es su
-  /// sitio en el catálogo, no el mes del curso, y emparejarlos hacía que la
-  /// unidad del mar se abriera en septiembre.
-  final String? unidadId;
 
   /// Token del icono, no un `IconData`: el contenido no conoce Flutter.
   /// Lo traduce `lib/core/brand/iconos_contenido.dart`.
@@ -92,12 +89,18 @@ class MesCurricular {
   /// curso en concreto.
   final String? cursoId;
 
+  /// La unidad del mes, en el trayecto. Cuando está, es la que manda: el centro
+  /// de interés es el suyo (que es el de la asamblea, D4) y el calendario pinta
+  /// su núcleo. Los textos de actividad y el objetivo quedan vacíos, porque
+  /// venían de `curriculo_50_meses.json` y contaban otro tema que la asamblea.
+  final UnidadeDoMes? unidade;
+
   const MesCurricular({
     required this.orden,
     required this.mesCalendario,
     required this.icono,
-    this.unidadId,
     this.cursoId,
+    this.unidade,
     required this.nombreMes,
     required this.centroInteres,
     required this.objetivoPedagogico,
@@ -117,9 +120,6 @@ class MesCurricular {
       orden: (json['orden'] as num).toInt(),
       mesCalendario: (json['mesCalendario'] as num).toInt(),
       icono: json['icono']?.toString() ?? 'mar',
-      unidadId: (json['unidad'] as String?)?.trim().isEmpty ?? true
-          ? null
-          : (json['unidad'] as String).trim(),
       nombreMes: texto('nombreMes'),
       centroInteres: texto('centroInteres'),
       objetivoPedagogico: texto('objetivoPedagogico'),
@@ -150,38 +150,36 @@ class MesCurricular {
     'curso_5_6': LocalizedString(gl: '5-6 anos', es: '5-6 años'),
   };
 
-  /// Un mes del currículo de un curso, vestido de mes del calendario.
+  static const LocalizedString _sinTexto = LocalizedString(gl: '', es: '');
+
+  /// Un mes del trayecto, leído de su unidad.
   ///
-  /// El tema, las actividades, la rutina y el inglés son los de ESE curso; el
-  /// icono y la unidad de aula, los del mes de [base], que sí están en el set
-  /// propio de iconos. [orden] es la posición en el trayecto: 1 es septiembre
-  /// de 0-2 años y 50 es junio de 5-6.
-  factory MesCurricular.doCurriculo(
-    Map<String, dynamic> json, {
+  /// El nombre del mes y el icono son los del mes de [base]
+  /// (`meses.json`), que no cuentan tema. El centro de interés es el de
+  /// [unidade]. [minutos] son los de casa de ese curso, que crecen con la
+  /// edad; sin ellos, los de [base]. [orden] es la posición en el trayecto: 1
+  /// es septiembre de 0-2 años y 50 es junio de 5-6.
+  factory MesCurricular.daUnidade(
+    UnidadeDoMes unidade, {
     required MesCurricular base,
     required int orden,
-  }) {
-    LocalizedString texto(String clave) => LocalizedString.fromJson(
-          Map<String, dynamic>.from(json[clave] as Map),
-        );
-    return MesCurricular(
-      orden: orden,
-      mesCalendario: base.mesCalendario,
-      icono: base.icono,
-      unidadId: base.unidadId,
-      cursoId: json['cursoId'] as String,
-      nombreMes: texto('nombreMes'),
-      centroInteres: texto('centroInteres'),
-      objetivoPedagogico: texto('objetivoPedagogico'),
-      actividadAula: texto('actividadAula'),
-      actividadHogar: texto('actividadHogar'),
-      rutinaRecomendadaHogar: texto('rutinaRecomendadaHogar'),
-      minutosSugeridos: (json['minutosSugeridos'] as num).toInt(),
-      ingles: InglesDelMes.fromJson(
-        Map<String, dynamic>.from(json['ingles'] as Map),
-      ),
-    );
-  }
+    int? minutos,
+  }) =>
+      MesCurricular(
+        orden: orden,
+        mesCalendario: base.mesCalendario,
+        icono: base.icono,
+        cursoId: unidade.curso,
+        unidade: unidade,
+        nombreMes: base.nombreMes,
+        centroInteres: unidade.centroInteres,
+        objetivoPedagogico: _sinTexto,
+        actividadAula: _sinTexto,
+        actividadHogar: _sinTexto,
+        rutinaRecomendadaHogar: _sinTexto,
+        minutosSugeridos: minutos ?? base.minutosSugeridos,
+        ingles: const InglesDelMes(tpr: [], frase: ''),
+      );
 }
 
 /// Una de las reglas de la guía de la familia.

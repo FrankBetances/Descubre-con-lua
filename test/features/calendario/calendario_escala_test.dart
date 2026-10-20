@@ -6,8 +6,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
+import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
+import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/academy/views/guia_atencion_screen.dart';
+import 'package:descubre_con_lua/features/calendario/views/calendario_fogar_screen.dart';
 import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dart';
 
 /// Que el calendario y la guía quepan, en las dos lenguas y con el texto grande
@@ -25,6 +28,7 @@ import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dar
 /// suene. Para eso hace falta un aparato.
 void main() {
   late CalendarioContenido contenido;
+  late ContentRepository repositorio;
   late Directory dir;
   late CalendarioStore store;
 
@@ -32,6 +36,22 @@ void main() {
     contenido = await CalendarioContenido.cargar(
       stringLoader: (path) => File(path).readAsString(),
     );
+    // Con el banco y el registro leídos, el mes pinta su núcleo (M3.9): sin
+    // ellos el bloque sale vacío y aquí no se mediría.
+    repositorio = ContentRepository(
+      loader: ContentAssetLoader(
+        stringLoader: (path) => File(path).readAsString(),
+      ),
+    );
+    await repositorio.loadProgramaTpr();
+    await repositorio.loadRexistroFrases();
+    // El día de casa (DiaNoFogar) lee el banco de días: aquí, con E/S real.
+    await repositorio.loadCalendarioDias(cursoId: '');
+    // El calendario de casa lee su contenido del paquete por su cuenta. Se
+    // lee aquí la primera vez, con reloj de verdad: dentro de `testWidgets`
+    // esa lectura no termina y la pantalla se queda en el indicador de carga.
+    TestWidgetsFlutterBinding.ensureInitialized();
+    await CalendarioContenido.cargar();
   });
 
   // El contenido y el almacén se leen AQUÍ, no dentro de `testWidgets`: ahí
@@ -97,6 +117,65 @@ void main() {
             reason: 'El calendario desborda en modo fogar, '
                 '${lang.code}, escala $escala.');
       });
+
+      // 0-2 trae canción y objeto; 5-6, fórmulas, descritivas e estrutura,
+      // que é o bloque máis longo.
+      for (final curso in ['curso_0_2', 'curso_5_6']) {
+        testWidgets(
+            'o núcleo do mes cabe en ${lang.code} a escala $escala, $curso, '
+            'nos dous calendarios', (tester) async {
+          tester.view.physicalSize = const Size(360, 640);
+          tester.view.devicePixelRatio = 1.0;
+          addTearDown(tester.view.reset);
+
+          Widget envolver(Widget pantalla) => MaterialApp(
+                theme: AppTheme.lightTheme,
+                builder: (context, child) => MediaQuery(
+                  data: MediaQuery.of(context)
+                      .copyWith(textScaler: TextScaler.linear(escala)),
+                  child: child!,
+                ),
+                home: pantalla,
+              );
+
+          await tester.pumpWidget(envolver(CalendarioScreen(
+            store: store,
+            contenido: contenido,
+            repository: repositorio,
+            initialLanguage: lang,
+            esDocenteInicial: true,
+            cursoInicial: curso,
+          )));
+          await tester.pumpAndSettle();
+          expect(find.byKey(const Key('nucleo_do_mes')), findsOneWidget);
+          expect(erroresDe(tester), isEmpty,
+              reason: 'O núcleo desborda no aula, $curso, ${lang.code}, '
+                  'escala $escala.');
+
+          await tester.tap(find.byKey(const Key('tab_rol_familia')));
+          await tester.pumpAndSettle();
+          expect(erroresDe(tester), isEmpty,
+              reason: 'O núcleo desborda no lado da familia, $curso, '
+                  '${lang.code}, escala $escala.');
+
+          await tester.pumpWidget(envolver(CalendarioFogarScreen(
+            repository: repositorio,
+            store: store,
+            initialLanguage: lang,
+            initialCursoId: curso,
+            agora: DateTime(2026, 10, 19),
+          )));
+          // La pantalla pide su contenido al paquete en initState; ese futuro
+          // necesita reloj de verdad para resolverse.
+          await tester.runAsync(
+              () => Future<void>.delayed(const Duration(milliseconds: 200)));
+          await tester.pumpAndSettle();
+          expect(find.byKey(const Key('nucleo_do_mes')), findsOneWidget);
+          expect(erroresDe(tester), isEmpty,
+              reason: 'O núcleo desborda no calendario da casa, $curso, '
+                  '${lang.code}, escala $escala.');
+        });
+      }
 
       testWidgets(
           'a guía de inglés cabe en ${lang.code} a escala $escala, en todos os tramos',
