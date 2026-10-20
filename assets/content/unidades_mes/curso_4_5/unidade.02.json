@@ -98,5 +98,326 @@
     "3_4.outubro.s1.freeze"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_4_5.02",
+    "titulo": {
+      "gl": "Lúa e o vento traveso",
+      "es": "Lúa y el viento travieso"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Bosque de otoño en planos limpios: un roble grande a la derecha y un montón de hojas amarillas abajo. Lúa en el centro, con abrigo azul y un gorro de lana ROJO muy visible. En una rama del roble, una ardilla MARRÓN de cola grande, con los ojos muy abiertos. Las copas de los árboles inclinadas hacia el mismo lado (viento).",
+        "trama": {
+          "gl": "É unha tarde fresca de outono no bosque. O chan está cheo de follas amarelas que renxen baixo os pés. Lúa leva o seu gorro vermello, o que lle abriga as orellas. Nunha póla dun carballo, algo se move: un esquío marrón que o mira todo cos ollos moi abertos!",
+          "es": "Es una tarde fresca de otoño en el bosque. El suelo está lleno de hojas amarillas que crujen bajo los pies. Lúa lleva su gorro rojo, el que le abriga las orejas. En la rama de un roble, algo se mueve: ¡una ardilla marrón que lo mira todo con los ojos muy abiertos!"
+        },
+        "lua": {
+          "onomatopeia": "Crunch, crunch!",
+          "ref": "frase.lua.4_5.02.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is Lúa's red hat? Point to the red hat!",
+            "axuda": {
+              "gl": "Sinala ti o gorro e agarda que o busque.",
+              "es": "Señala tú el gorro y espera a que lo busque."
+            }
+          },
+          "imitar": {
+            "en": "Can you be an alert squirrel? Open your eyes wide!",
+            "axuda": {
+              "gl": "Abre moito os ollos e encolle as mans diante do peito.",
+              "es": "Abre mucho los ojos y encoge las manos delante del pecho."
+            }
+          },
+          "achegar": {
+            "en": "Do you wear a hat when it is cold?",
+            "axuda": {
+              "gl": "Toca a túa cabeza coma se puxeses un gorro e agarda.",
+              "es": "Tócate la cabeza como si te pusieras un gorro y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa points to the squirrel. An alert squirrel!",
+            "axuda": {
+              "gl": "Sinala ti o esquío, amodo, e volve agardar.",
+              "es": "Señala tú la ardilla, despacio, y vuelve a esperar."
+            }
+          },
+          "sinala": {
+            "en": "Yes! That is the squirrel! A little brown squirrel!",
+            "axuda": {
+              "gl": "Asente e pon o teu dedo ao lado do seu.",
+              "es": "Asiente y pon tu dedo al lado del suyo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un esquío!",
+              "es": "¡Una ardilla!"
+            },
+            "acolle": {
+              "gl": "Si, un esquío!",
+              "es": "¡Sí, una ardilla!"
+            },
+            "en": "A squirrel! An alert squirrel in the tree!"
+          },
+          "unhaPalabra": {
+            "di": "Squirrel!",
+            "en": "Yes, an alert squirrel in the tree!"
+          },
+          "formaTorcida": {
+            "di": "Squirrel see me!",
+            "en": "Yes, the squirrel sees you!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What can you see in the forest?",
+          "axuda": {
+            "gl": "Pregunta, agarda e acolle o que diga, na lingua que sexa: «Yes, a squirrel in the tree!».",
+            "es": "Pregunta, espera y acoge lo que diga, en la lengua que sea: «Yes, a squirrel in the tree!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Líneas blancas de viento cruzan el cielo de izquierda a derecha. El gorro ROJO vuela en el aire y se ve medio escondido detrás del tronco del roble. Lúa, sin gorro, con los brazos estirados hacia él. La ardilla MARRÓN mira desde la rama.",
+        "trama": {
+          "gl": "De súpeto sopra un vento forte, fiuuu!, e quítalle o gorro a Lúa. O gorro vermello voa, voa… e desaparece detrás do tronco do carballo. Lúa búscao por todas partes.",
+          "es": "De repente sopla un viento fuerte, ¡fiuuu!, y le quita el gorro a Lúa. El gorro rojo vuela, vuela… y desaparece detrás del tronco del roble. Lúa lo busca por todas partes."
+        },
+        "lua": {
+          "onomatopeia": "Whoosh, whoosh!",
+          "ref": "frase.lua.4_5.02.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the tree? Touch the big tree!",
+            "axuda": {
+              "gl": "Pasa o dedo polo tronco da lámina e agarda.",
+              "es": "Pasa el dedo por el tronco de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "The wind is strong! Can you blow like the wind? Whoosh!",
+            "axuda": {
+              "gl": "Sopra forte e move os brazos dun lado a outro.",
+              "es": "Sopla fuerte y mueve los brazos de un lado a otro."
+            }
+          },
+          "achegar": {
+            "en": "Have you ever lost a toy? Where was it?",
+            "axuda": {
+              "gl": "Pon cara de buscar algo e agarda: pode contestar cun xesto ou na súa lingua.",
+              "es": "Pon cara de buscar algo y espera: puede contestar con un gesto o en su lengua."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, the hat is hiding. Behind the tree!",
+            "axuda": {
+              "gl": "Esconde a man detrás da lámina e sácaa amodo.",
+              "es": "Esconde la mano detrás de la lámina y sácala despacio."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Behind the tree! The red hat is behind the tree!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén detrás do tronco.",
+              "es": "Asiente y señala tú también detrás del tronco."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Detrás!",
+              "es": "¡Detrás!"
+            },
+            "acolle": {
+              "gl": "Si, detrás da árbore!",
+              "es": "¡Sí, detrás del árbol!"
+            },
+            "en": "Behind the tree! The hat is behind the tree!"
+          },
+          "unhaPalabra": {
+            "di": "Hat!",
+            "en": "Yes, the red hat is behind the tree!"
+          },
+          "formaTorcida": {
+            "di": "Hat is behind of tree!",
+            "en": "Yes, the hat is behind the tree!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "Where did the hat go?",
+          "axuda": {
+            "gl": "Se non se lembra, sinala a árbore e agarda: «Behind the tree!».",
+            "es": "Si no se acuerda, señala el árbol y espera: «Behind the tree!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Primer plano del tronco del roble. La ardilla MARRÓN trepa con las cuatro patas estiradas y sujeta el gorro ROJO entre los dientes; en la rama, un montón de castañas. Abajo, Lúa con las manos juntas sobre el pecho. Un charco de barro marrón al pie del árbol.",
+        "trama": {
+          "gl": "O esquío non o pensa: rube polo tronco coas súas patiñas rápidas, salta de póla en póla e atopa o gorro, agochado entre castañas. Suxéitao xusto antes de que caia na lama!",
+          "es": "La ardilla no se lo piensa: trepa por el tronco con sus patitas rápidas, salta de rama en rama y encuentra el gorro, escondido entre castañas. ¡Lo sujeta justo antes de que caiga al barro!"
+        },
+        "lua": {
+          "onomatopeia": "Hop, hop, hop!",
+          "ref": "frase.lua.4_5.02.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the squirrel's tail? Touch the long tail!",
+            "axuda": {
+              "gl": "Sinala a cola do esquío e agarda.",
+              "es": "Señala la cola de la ardilla y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you climb like the squirrel? Climb, climb, and stop!",
+            "axuda": {
+              "gl": "Move brazos e pernas coma se rubises e para de súpeto en «stop».",
+              "es": "Mueve brazos y piernas como si treparas y para de golpe en «stop»."
+            }
+          },
+          "achegar": {
+            "en": "Do you see squirrels in the park?",
+            "axuda": {
+              "gl": "Fai co dedo coma se buscases no parque e agarda.",
+              "es": "Haz con el dedo como si buscaras en el parque y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa climbs like the squirrel. Climb, climb!",
+            "axuda": {
+              "gl": "Fai ti o xesto de rubir, amodo, sen dicir máis.",
+              "es": "Haz tú el gesto de trepar, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes, the squirrel! It is climbing so fast!",
+            "axuda": {
+              "gl": "Asente e sube o dedo polo tronco coma o esquío.",
+              "es": "Asiente y sube el dedo por el tronco como la ardilla."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Sube!",
+              "es": "¡Sube!"
+            },
+            "acolle": {
+              "gl": "Si, sube moi rápido!",
+              "es": "¡Sí, sube muy rápido!"
+            },
+            "en": "It climbs! The squirrel climbs the tree!"
+          },
+          "unhaPalabra": {
+            "di": "Climb!",
+            "en": "Yes, the squirrel climbs the tree!"
+          },
+          "formaTorcida": {
+            "di": "Squirrel climbed fastly!",
+            "en": "Yes, the squirrel climbed so fast!"
+          }
+        },
+        "casa": {
+          "tipo": "abrir",
+          "en": "What is the squirrel doing?",
+          "axuda": {
+            "gl": "Agarda moito. Diga o que diga, devólvello nunha frase: «The squirrel climbs the tree!».",
+            "es": "Espera mucho. Diga lo que diga, devuélveselo en una frase: «The squirrel climbs the tree!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa sentada en un banco de madera con el gorro ROJO puesto. A su lado, la ardilla MARRÓN sujeta con las dos patas una castaña y la come. Las dos sonríen. Fondo de bosque muy simple, sin viento.",
+        "trama": {
+          "gl": "O esquío baixa e deixa o gorro nas mans de Lúa. Que quentiñas as orellas outra vez! Para darlle as grazas, Lúa dálle unha castaña. Séntanse xuntos nun banco e o esquío cómea, ñam, ñam.",
+          "es": "La ardilla baja y deja el gorro en las manos de Lúa. ¡Qué calentitas las orejas otra vez! Para darle las gracias, Lúa le da una castaña. Se sientan juntas en un banco y la ardilla se la come, ñam, ñam."
+        },
+        "lua": {
+          "onomatopeia": "Munch, munch, crunch!",
+          "ref": "frase.lua.4_5.02.4"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "What is the squirrel holding? Touch the chestnut!",
+            "axuda": {
+              "gl": "Sinala a castaña e agarda.",
+              "es": "Señala la castaña y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you eat like the squirrel? Munch, munch, crunch!",
+            "axuda": {
+              "gl": "Leva as mans á boca e move os dentes coma o esquío.",
+              "es": "Llévate las manos a la boca y mueve los dientes como la ardilla."
+            }
+          },
+          "achegar": {
+            "en": "The squirrel helped Lúa. Who helps you at home?",
+            "axuda": {
+              "gl": "Agarda. Se nomea a alguén na súa lingua, acólleo e devólvello: «Your mum helps you!».",
+              "es": "Espera. Si nombra a alguien en su lengua, acógelo y devuélveselo: «Your mum helps you!»."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa gives a chestnut. Here you are!",
+            "axuda": {
+              "gl": "Fai ti o xesto de dar unha castaña coa man aberta.",
+              "es": "Haz tú el gesto de dar una castaña con la mano abierta."
+            }
+          },
+          "sinala": {
+            "en": "Yes, a chestnut! A brown chestnut for the squirrel!",
+            "axuda": {
+              "gl": "Asente e sinala ti tamén a castaña.",
+              "es": "Asiente y señala tú también la castaña."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Castaña!",
+              "es": "¡Castaña!"
+            },
+            "acolle": {
+              "gl": "Si, unha castaña!",
+              "es": "¡Sí, una castaña!"
+            },
+            "en": "A chestnut! The squirrel eats a chestnut!"
+          },
+          "unhaPalabra": {
+            "di": "Chestnut!",
+            "en": "Yes, a yummy brown chestnut!"
+          },
+          "formaTorcida": {
+            "di": "Squirrel eat chestnut!",
+            "en": "Yes, the squirrel eats the chestnut!"
+          }
+        },
+        "casa": {
+          "tipo": "recordar",
+          "en": "What did Lúa give the squirrel?",
+          "axuda": {
+            "gl": "Se non se lembra, fai o xesto da castaña e agarda: «A chestnut!».",
+            "es": "Si no se acuerda, haz el gesto de la castaña y espera: «A chestnut!»."
+          }
+        }
+      }
+    ]
+  }
 }

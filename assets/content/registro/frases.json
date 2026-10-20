@@ -1,5 +1,5 @@
 {
-  "_doc": "Generado por tools/xera_rexistro_frases.py; no se edita a mano. Las frases propias se escriben en registro/frases_propias.json.",
+  "_doc": "Generado por tools/xera_rexistro_frases.py; no se edita a mano. Las frases propias se escriben en registro/frases_propias.json y las de Lúa en registro/frases_lua.json.",
   "frases": [
     {
       "id": "frase.formula.here-you-are",
@@ -118,6 +118,646 @@
         "es": "Across y through: de un lado al otro, y a través. Con una cuerda o un túnel."
       },
       "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:259"
+    },
+    {
+      "id": "frase.lua.2_3.01.1",
+      "tipo": "lua",
+      "en": "Hello! Hello, friend!",
+      "accion": {
+        "gl": "Saudar coa man aberta, amodo, á altura dos ollos",
+        "es": "Saludar con la mano abierta, despacio, a la altura de los ojos"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.01.json"
+    },
+    {
+      "id": "frase.lua.2_3.01.2",
+      "tipo": "lua",
+      "en": "Friends in a circle! Sit down!",
+      "accion": {
+        "gl": "Facer un círculo grande cos brazos e despois dar dúas palmadiñas no chan",
+        "es": "Hacer un círculo grande con los brazos y luego dar dos palmaditas en el suelo"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.01.json"
+    },
+    {
+      "id": "frase.lua.2_3.01.3",
+      "tipo": "lua",
+      "en": "Everybody stand up! Hello!",
+      "accion": {
+        "gl": "Tirar suavemente dunha cinta imaxinaria e poñerse de pé",
+        "es": "Tirar suavemente de una cinta imaginaria y ponerse de pie"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.01.json"
+    },
+    {
+      "id": "frase.lua.2_3.02.1",
+      "tipo": "lua",
+      "en": "Head… and shoulders!",
+      "accion": {
+        "gl": "Tocar a cabeza e logo os ombreiros, amodo",
+        "es": "Tocarse la cabeza y luego los hombros, despacio"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.02.json"
+    },
+    {
+      "id": "frase.lua.2_3.02.2",
+      "tipo": "lua",
+      "en": "Knees and toes! Touch your knees!",
+      "accion": {
+        "gl": "Tocar os xeonllos cos dedos moi suaves, coma quen non quere asustar a xoaniña",
+        "es": "Tocarse las rodillas con los dedos muy suaves, como quien no quiere asustar a la mariquita"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.02.json"
+    },
+    {
+      "id": "frase.lua.2_3.02.3",
+      "tipo": "lua",
+      "en": "Dance, dance… freeze!",
+      "accion": {
+        "gl": "Bailar sacudindo as mans e parar de golpe, coma unha estatua",
+        "es": "Bailar sacudiendo las manos y parar de golpe, como una estatua"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.02.json"
+    },
+    {
+      "id": "frase.lua.2_3.03.1",
+      "tipo": "lua",
+      "en": "Crunchy leaves! Crunch!",
+      "accion": {
+        "gl": "Pechar as mans e esmagar unha folla imaxinaria preto da orella",
+        "es": "Cerrar las manos y aplastar una hoja imaginaria cerca de la oreja"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.03.json"
+    },
+    {
+      "id": "frase.lua.2_3.03.2",
+      "tipo": "lua",
+      "en": "The wind is blowing! Whoosh!",
+      "accion": {
+        "gl": "Soprar forte e bater os brazos camiñando de puntas",
+        "es": "Soplar fuerte y batir los brazos caminando de puntillas"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.03.json"
+    },
+    {
+      "id": "frase.lua.2_3.03.3",
+      "tipo": "lua",
+      "en": "Kick a leaf! Kick, kick!",
+      "accion": {
+        "gl": "Darlle unha patadiña suave a unha folla imaxinaria",
+        "es": "Dar una patadita suave a una hoja imaginaria"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.03.json"
+    },
+    {
+      "id": "frase.lua.2_3.04.1",
+      "tipo": "lua",
+      "en": "Loud bells! Shake fast!",
+      "accion": {
+        "gl": "Correr no sitio sacudindo unha campaíña imaxinaria moi rápido",
+        "es": "Correr en el sitio sacudiendo una campanilla imaginaria muy rápido"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.04.json"
+    },
+    {
+      "id": "frase.lua.2_3.04.2",
+      "tipo": "lua",
+      "en": "Shh… baby's sleeping. Quiet bells.",
+      "accion": {
+        "gl": "Poñer o dedo nos beizos e esconder a campaíña detrás das costas",
+        "es": "Ponerse el dedo en los labios y esconder la campanilla detrás de la espalda"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.04.json"
+    },
+    {
+      "id": "frase.lua.2_3.04.3",
+      "tipo": "lua",
+      "en": "Wake up, baby! Wake up!",
+      "accion": {
+        "gl": "Abrir os brazos de golpe e despois abrazarse forte",
+        "es": "Abrir los brazos de golpe y luego abrazarse fuerte"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.04.json"
+    },
+    {
+      "id": "frase.lua.2_3.05.1",
+      "tipo": "lua",
+      "en": "Put on your coat! Zip it up!",
+      "accion": {
+        "gl": "Meter os brazos por mangas imaxinarias e subir unha cremalleira do embigo ao queixo",
+        "es": "Meter los brazos por mangas imaginarias y subir una cremallera del ombligo a la barbilla"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.05.json"
+    },
+    {
+      "id": "frase.lua.2_3.05.2",
+      "tipo": "lua",
+      "en": "Oh! The Wellington boots!",
+      "accion": {
+        "gl": "Abrir moito os ollos e levar as mans ás meixelas",
+        "es": "Abrir mucho los ojos y llevarse las manos a las mejillas"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.05.json"
+    },
+    {
+      "id": "frase.lua.2_3.05.3",
+      "tipo": "lua",
+      "en": "Stomp your boots in the puddles!",
+      "accion": {
+        "gl": "Pisar forte tres veces no chan, coma nun charco",
+        "es": "Dar tres pisotones fuertes en el suelo, como en un charco"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.05.json"
+    },
+    {
+      "id": "frase.lua.2_3.06.1",
+      "tipo": "lua",
+      "en": "Fly like a bird! Flap, flap!",
+      "accion": {
+        "gl": "Estirar os brazos e movelos amodo coma ás, de puntas",
+        "es": "Estirar los brazos y moverlos despacio como alas, de puntillas"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.06.json"
+    },
+    {
+      "id": "frase.lua.2_3.06.2",
+      "tipo": "lua",
+      "en": "Big heavy bear! Stomp, stomp!",
+      "accion": {
+        "gl": "Poñer as mans no chan e camiñar pesado coma un oso",
+        "es": "Poner las manos en el suelo y caminar pesado como un oso"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.06.json"
+    },
+    {
+      "id": "frase.lua.2_3.06.3",
+      "tipo": "lua",
+      "en": "Carnival freeze, polar bear!",
+      "accion": {
+        "gl": "Bater os brazos coma ás e parar de golpe nunha postura",
+        "es": "Batir los brazos como alas y parar de golpe en una postura"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.06.json"
+    },
+    {
+      "id": "frase.lua.2_3.07.1",
+      "tipo": "lua",
+      "en": "Find the shape! A red circle!",
+      "accion": {
+        "gl": "Poñer a man na fronte e logo debuxar un círculo no aire",
+        "es": "Ponerse la mano en la frente y luego dibujar un círculo en el aire"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.07.json"
+    },
+    {
+      "id": "frase.lua.2_3.07.2",
+      "tipo": "lua",
+      "en": "Red… and flat! Oh, no!",
+      "accion": {
+        "gl": "Tocar o chan coa punta do pé e logo poñer a man plana, coma unha tapa",
+        "es": "Tocar el suelo con la punta del pie y luego poner la mano plana, como una tapa"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.07.json"
+    },
+    {
+      "id": "frase.lua.2_3.07.3",
+      "tipo": "lua",
+      "en": "A red tomato! Round!",
+      "accion": {
+        "gl": "Facer unha bóla redonda coas dúas mans e levala á boca",
+        "es": "Hacer una bola redonda con las dos manos y llevarla a la boca"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.07.json"
+    },
+    {
+      "id": "frase.lua.2_3.08.1",
+      "tipo": "lua",
+      "en": "Tiny seeds… under the ground!",
+      "accion": {
+        "gl": "Encollerse moito, abrazando os xeonllos, sen moverse",
+        "es": "Encogerse mucho, abrazando las rodillas, sin moverse"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.08.json"
+    },
+    {
+      "id": "frase.lua.2_3.08.2",
+      "tipo": "lua",
+      "en": "Where's the sun? Oh, there!",
+      "accion": {
+        "gl": "Poñer a man na fronte, buscar no ceo e sinalar arriba",
+        "es": "Ponerse la mano en la frente, buscar en el cielo y señalar arriba"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.08.json"
+    },
+    {
+      "id": "frase.lua.2_3.08.3",
+      "tipo": "lua",
+      "en": "Bloom! A big bright flower!",
+      "accion": {
+        "gl": "Erguerse amodo ata as puntas dos pés e abrir os brazos en abano",
+        "es": "Levantarse despacio hasta las puntas de los pies y abrir los brazos en abanico"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.08.json"
+    },
+    {
+      "id": "frase.lua.2_3.09.1",
+      "tipo": "lua",
+      "en": "Oh, your face! Wash your face!",
+      "accion": {
+        "gl": "Fregar suavemente as meixelas e a fronte coas mans",
+        "es": "Frotar con suavidad las mejillas y la frente con las manos"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.09.json"
+    },
+    {
+      "id": "frase.lua.2_3.09.2",
+      "tipo": "lua",
+      "en": "Soap, rub, rinse! Wash your belly!",
+      "accion": {
+        "gl": "Facer círculos coa man sobre a barriga, á altura do embigo",
+        "es": "Hacer círculos con la mano sobre la barriga, a la altura del ombligo"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.09.json"
+    },
+    {
+      "id": "frase.lua.2_3.09.3",
+      "tipo": "lua",
+      "en": "Shake dry! Dry your toes!",
+      "accion": {
+        "gl": "Sacudir as mans tres veces e despois secar os pés cunha toalla imaxinaria",
+        "es": "Sacudir las manos tres veces y luego secar los pies con una toalla imaginaria"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.09.json"
+    },
+    {
+      "id": "frase.lua.2_3.10.1",
+      "tipo": "lua",
+      "en": "The sea! Calm sea!",
+      "accion": {
+        "gl": "Pasar a man plana amodo, coma a auga quieta",
+        "es": "Pasar la mano plana despacio, como el agua quieta"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.10.json"
+    },
+    {
+      "id": "frase.lua.2_3.10.2",
+      "tipo": "lua",
+      "en": "Little fish! Swimming under the sea!",
+      "accion": {
+        "gl": "Xuntar as mans e movelas en zigzag, coma un peixe",
+        "es": "Juntar las manos y moverlas en zigzag, como un pez"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.10.json"
+    },
+    {
+      "id": "frase.lua.2_3.10.3",
+      "tipo": "lua",
+      "en": "Giant waves! Wave goodbye, little fish!",
+      "accion": {
+        "gl": "Bater os brazos enteiros e despois dicir adeus coa man",
+        "es": "Batir los brazos enteros y luego decir adiós con la mano"
+      },
+      "fonte": "unidades_mes/curso_2_3/unidade.10.json"
+    },
+    {
+      "id": "frase.lua.3_4.01.1",
+      "tipo": "lua",
+      "en": "Hello! Hello, hello!",
+      "accion": {
+        "gl": "Saudar coa man aberta, unha vez cara a cada lado do círculo",
+        "es": "Saludar con la mano abierta, una vez hacia cada lado del círculo"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.01.json"
+    },
+    {
+      "id": "frase.lua.3_4.01.2",
+      "tipo": "lua",
+      "en": "Hello, you! Sit here, too.",
+      "accion": {
+        "gl": "Sentar amodo no chan e dar dúas palmadiñas suaves no sitio do lado",
+        "es": "Sentarse despacio en el suelo y dar dos palmaditas suaves en el sitio de al lado"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.01.json"
+    },
+    {
+      "id": "frase.lua.3_4.01.3",
+      "tipo": "lua",
+      "en": "Clap, clap… freeze!",
+      "accion": {
+        "gl": "Dar dúas palmadas e parar de súpeto, coma unha estatua",
+        "es": "Dar dos palmadas y pararse de golpe, como una estatua"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.01.json"
+    },
+    {
+      "id": "frase.lua.3_4.02.1",
+      "tipo": "lua",
+      "en": "A leaf! Fall down, leaf!",
+      "accion": {
+        "gl": "Baixar as mans abaneándoas, coma unha folla que cae",
+        "es": "Bajar las manos balanceándolas, como una hoja que cae"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.02.json"
+    },
+    {
+      "id": "frase.lua.3_4.02.2",
+      "tipo": "lua",
+      "en": "Blow, blow! Turn around, leaf!",
+      "accion": {
+        "gl": "Soprar forte e dar unha volta enteira no sitio",
+        "es": "Soplar fuerte y dar una vuelta entera en el sitio"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.02.json"
+    },
+    {
+      "id": "frase.lua.3_4.02.3",
+      "tipo": "lua",
+      "en": "Pick it up! The leaf, here.",
+      "accion": {
+        "gl": "Agacharse amodo, coller algo do chan e pousalo con coidado na outra man",
+        "es": "Agacharse despacio, recoger algo del suelo y dejarlo con cuidado en la otra mano"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.02.json"
+    },
+    {
+      "id": "frase.lua.3_4.03.1",
+      "tipo": "lua",
+      "en": "A chestnut! Jump, jump!",
+      "accion": {
+        "gl": "Facer unha castaña coas mans pechadas e dar un saltiño cos dous pés",
+        "es": "Hacer una castaña con las manos cerradas y dar un saltito con los dos pies"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.03.json"
+    },
+    {
+      "id": "frase.lua.3_4.03.2",
+      "tipo": "lua",
+      "en": "Roll, roll… the pumpkin!",
+      "accion": {
+        "gl": "Facer xirar os brazos un arredor do outro e despois abrilos nun círculo grande, coma unha cabaza",
+        "es": "Hacer girar los brazos uno alrededor del otro y luego abrirlos en un círculo grande, como una calabaza"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.03.json"
+    },
+    {
+      "id": "frase.lua.3_4.03.3",
+      "tipo": "lua",
+      "en": "Warm chestnuts! So warm!",
+      "accion": {
+        "gl": "Soprar nas mans e poñelas nas meixelas, sorrindo",
+        "es": "Soplarse en las manos y ponerlas en las mejillas, sonriendo"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.03.json"
+    },
+    {
+      "id": "frase.lua.3_4.04.1",
+      "tipo": "lua",
+      "en": "Snow! Boots… stomp, stomp!",
+      "accion": {
+        "gl": "Meter os pés en botas imaxinarias e pisar forte no sitio",
+        "es": "Meter los pies en botas imaginarias y pisar fuerte en el sitio"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.04.json"
+    },
+    {
+      "id": "frase.lua.3_4.04.2",
+      "tipo": "lua",
+      "en": "Tiptoe now. Tiptoe, tiptoe…",
+      "accion": {
+        "gl": "Camiñar de puntiñas no sitio, co dedo nos beizos",
+        "es": "Caminar de puntillas en el sitio, con el dedo en los labios"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.04.json"
+    },
+    {
+      "id": "frase.lua.3_4.04.3",
+      "tipo": "lua",
+      "en": "Light! Oh, the light!",
+      "accion": {
+        "gl": "Abrir as mans de golpe, coma unha luz que se acende, e logo xuntalas no peito",
+        "es": "Abrir las manos de golpe, como una luz que se enciende, y luego juntarlas en el pecho"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.04.json"
+    },
+    {
+      "id": "frase.lua.3_4.05.1",
+      "tipo": "lua",
+      "en": "Rain! My raincoat!",
+      "accion": {
+        "gl": "Poñer a carapucha dun chubasqueiro imaxinario e mover os dedos por riba da cabeza, coma choiva",
+        "es": "Ponerse la capucha de un chubasquero imaginario y mover los dedos por encima de la cabeza, como lluvia"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.05.json"
+    },
+    {
+      "id": "frase.lua.3_4.05.2",
+      "tipo": "lua",
+      "en": "An umbrella! Here, here!",
+      "accion": {
+        "gl": "Suxeitar un paraugas imaxinario por riba da cabeza e inclinalo cara a un lado",
+        "es": "Sostener un paraguas imaginario por encima de la cabeza e inclinarlo hacia un lado"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.05.json"
+    },
+    {
+      "id": "frase.lua.3_4.05.3",
+      "tipo": "lua",
+      "en": "A puddle! Jump, jump!",
+      "accion": {
+        "gl": "Debuxar unha poza no chan co pé e saltar dentro cos dous pés",
+        "es": "Dibujar un charco en el suelo con el pie y saltar dentro con los dos pies"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.05.json"
+    },
+    {
+      "id": "frase.lua.3_4.06.1",
+      "tipo": "lua",
+      "en": "Loud! So loud!",
+      "accion": {
+        "gl": "Bater palmas con forza, coma os cascabeis, e parar de súpeto",
+        "es": "Dar palmadas con fuerza, como los cascabeles, y parar de golpe"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.06.json"
+    },
+    {
+      "id": "frase.lua.3_4.06.2",
+      "tipo": "lua",
+      "en": "Quiet… quiet now.",
+      "accion": {
+        "gl": "Levar o dedo aos beizos e baixar a voz",
+        "es": "Llevarse el dedo a los labios y bajar la voz"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.06.json"
+    },
+    {
+      "id": "frase.lua.3_4.06.3",
+      "tipo": "lua",
+      "en": "A mask! Roar… a quiet roar!",
+      "accion": {
+        "gl": "Poñer unha careta imaxinaria diante dos ollos e ruxir suave, coa boca moi aberta",
+        "es": "Ponerse una máscara imaginaria delante de los ojos y rugir suave, con la boca muy abierta"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.06.json"
+    },
+    {
+      "id": "frase.lua.3_4.07.1",
+      "tipo": "lua",
+      "en": "A seed! A small seed!",
+      "accion": {
+        "gl": "Pechar o puño coma unha semente e mostralo na palma da outra man",
+        "es": "Cerrar el puño como una semilla y mostrarlo en la palma de la otra mano"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.07.json"
+    },
+    {
+      "id": "frase.lua.3_4.07.2",
+      "tipo": "lua",
+      "en": "Dig the soil! Dig, dig!",
+      "accion": {
+        "gl": "Cavar no chan coas dúas mans e logo frotalas coma se tivesen terra",
+        "es": "Cavar en el suelo con las dos manos y luego frotarlas como si tuvieran tierra"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.07.json"
+    },
+    {
+      "id": "frase.lua.3_4.07.3",
+      "tipo": "lua",
+      "en": "Oh! Tall, so tall!",
+      "accion": {
+        "gl": "Estirarse todo o posible cos brazos arriba, de puntas",
+        "es": "Estirarse todo lo posible con los brazos arriba, de puntillas"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.07.json"
+    },
+    {
+      "id": "frase.lua.3_4.08.1",
+      "tipo": "lua",
+      "en": "A horse! Gallop, gallop!",
+      "accion": {
+        "gl": "Galopar no sitio cunha perna diante, suxeitando unhas rendas imaxinarias",
+        "es": "Galopar en el sitio con una pierna delante, sujetando unas riendas imaginarias"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.08.json"
+    },
+    {
+      "id": "frase.lua.3_4.08.2",
+      "tipo": "lua",
+      "en": "Walk, cow… walk, walk.",
+      "accion": {
+        "gl": "Camiñar amodo en círculo, mirando a un lado e a outro",
+        "es": "Caminar despacio en círculo, mirando a un lado y a otro"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.08.json"
+    },
+    {
+      "id": "frase.lua.3_4.08.3",
+      "tipo": "lua",
+      "en": "Oh! The sheep is here!",
+      "accion": {
+        "gl": "Facer rizos no aire arredor da cabeza e abrir os brazos de alegría",
+        "es": "Hacer rizos en el aire alrededor de la cabeza y abrir los brazos de alegría"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.08.json"
+    },
+    {
+      "id": "frase.lua.3_4.09.1",
+      "tipo": "lua",
+      "en": "Clap, clap! Clap your hands!",
+      "accion": {
+        "gl": "Bater tres palmadas e despois sinalar con cariño a quen está ao lado",
+        "es": "Dar tres palmadas y luego señalar con cariño a quien está al lado"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.09.json"
+    },
+    {
+      "id": "frase.lua.3_4.09.2",
+      "tipo": "lua",
+      "en": "High, high! Low, low!",
+      "accion": {
+        "gl": "Subir a man cantando unha nota aguda e baixala cantando unha nota grave",
+        "es": "Subir la mano cantando una nota aguda y bajarla cantando una nota grave"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.09.json"
+    },
+    {
+      "id": "frase.lua.3_4.09.3",
+      "tipo": "lua",
+      "en": "Friends! You and me, friends!",
+      "accion": {
+        "gl": "Dar a man a quen está ao lado e despois unha aperta",
+        "es": "Dar la mano a quien está al lado y luego un abrazo"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.09.json"
+    },
+    {
+      "id": "frase.lua.3_4.10.1",
+      "tipo": "lua",
+      "en": "Row, row! Row the boat!",
+      "accion": {
+        "gl": "Remar cun remo imaxinario, adiante e atrás, sen erguerse",
+        "es": "Remar con un remo imaginario, adelante y atrás, sin levantarse"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.10.json"
+    },
+    {
+      "id": "frase.lua.3_4.10.2",
+      "tipo": "lua",
+      "en": "Waves! Oh no, the shell!",
+      "accion": {
+        "gl": "Subir e baixar as mans coma ondas e despois levalas ás meixelas, con cara de sorpresa",
+        "es": "Subir y bajar las manos como olas y luego llevarlas a las mejillas, con cara de sorpresa"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.10.json"
+    },
+    {
+      "id": "frase.lua.3_4.10.3",
+      "tipo": "lua",
+      "en": "Oh, a fish! And my shell!",
+      "accion": {
+        "gl": "Abrir e pechar a boca coma un peixe e despois poñer unha cuncha imaxinaria na orella",
+        "es": "Abrir y cerrar la boca como un pez y luego ponerse una concha imaginaria en la oreja"
+      },
+      "fonte": "unidades_mes/curso_3_4/unidade.10.json"
+    },
+    {
+      "id": "frase.lua.4_5.02.1",
+      "tipo": "lua",
+      "en": "The tree! An alert squirrel!",
+      "accion": {
+        "gl": "Abrir moito os ollos e sinalar arriba, á árbore",
+        "es": "Abrir mucho los ojos y señalar arriba, al árbol"
+      },
+      "fonte": "unidades_mes/curso_4_5/unidade.02.json"
+    },
+    {
+      "id": "frase.lua.4_5.02.2",
+      "tipo": "lua",
+      "en": "Hide? Behind the tree!",
+      "accion": {
+        "gl": "Esconder as mans detrás das costas e sinalar detrás da árbore",
+        "es": "Esconder las manos detrás de la espalda y señalar detrás del árbol"
+      },
+      "fonte": "unidades_mes/curso_4_5/unidade.02.json"
+    },
+    {
+      "id": "frase.lua.4_5.02.3",
+      "tipo": "lua",
+      "en": "Climb, squirrel! Nimble-footed squirrel!",
+      "accion": {
+        "gl": "Mover brazos e pernas coma se rubísemos, moi rápido",
+        "es": "Mover brazos y piernas como si trepáramos, muy rápido"
+      },
+      "fonte": "unidades_mes/curso_4_5/unidade.02.json"
+    },
+    {
+      "id": "frase.lua.4_5.02.4",
+      "tipo": "lua",
+      "en": "A chestnut! Sly squirrel!",
+      "accion": {
+        "gl": "Facer unha castaña coas mans pechadas e poñer cara de pillo",
+        "es": "Hacer una castaña con las manos cerradas y poner cara de pillo"
+      },
+      "fonte": "unidades_mes/curso_4_5/unidade.02.json"
     },
     {
       "id": "frase.cmd.abril.0_2.01",

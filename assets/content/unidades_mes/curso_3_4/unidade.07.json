@@ -80,5 +80,248 @@
     "3_4.setembro.s1.quiet"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.07",
+    "titulo": {
+      "gl": "Lúa e a formiga xardineira",
+      "es": "Lúa y la hormiga jardinera"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Huerto sencillo: tierra marrón en primer plano y cielo claro. Una hormiga NEGRA con pañuelo VERDE sostiene con las dos patas una semilla pequeña y redonda, enseñándola. Lúa, con delantal AZUL, agachada, la mira con los ojos muy abiertos.",
+        "trama": {
+          "gl": "Na horta da escola, a formiga atopa algo no chan: unha semente pequena, pequeniña, coma un gran de area. Lévalla a Lúa moi contenta. Que sairá dunha cousa tan pequena?",
+          "es": "En el huerto de la escuela, la hormiga encuentra algo en el suelo: una semilla pequeña, pequeñita, como un grano de arena. Se la lleva a Lúa muy contenta. ¿Qué saldrá de una cosa tan pequeña?"
+        },
+        "lua": {
+          "onomatopeia": "Oooh!",
+          "ref": "frase.lua.3_4.07.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the seed? Touch the small seed!",
+            "axuda": {
+              "gl": "Sinala a semente entre as patas da formiga e agarda.",
+              "es": "Señala la semilla entre las patas de la hormiga y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you be a small seed? Small, small, small!",
+            "axuda": {
+              "gl": "Encóllete no chan coma unha bóla, coas mans na cabeza.",
+              "es": "Encógete en el suelo como una bola, con las manos en la cabeza."
+            }
+          },
+          "achegar": {
+            "en": "Do you have plants at home?",
+            "axuda": {
+              "gl": "Fai coma se regases unha planta e agarda un xesto ou un si.",
+              "es": "Haz como si regaras una planta y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa has a seed. A small seed!",
+            "axuda": {
+              "gl": "Pecha ti o puño e ábreo amodo diante da criatura.",
+              "es": "Cierra tú el puño y ábrelo despacio delante de la criatura."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The seed! A small, small seed!",
+            "axuda": {
+              "gl": "Asente e fai a semente co puño pechado.",
+              "es": "Asiente y haz la semilla con el puño cerrado."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha semente!",
+              "es": "¡Una semilla!"
+            },
+            "acolle": {
+              "gl": "Si, unha semente pequeniña!",
+              "es": "¡Sí, una semilla pequeñita!"
+            },
+            "en": "A seed! A small seed for Lúa!"
+          },
+          "unhaPalabra": {
+            "di": "Seed!",
+            "en": "Yes, a small little seed!"
+          },
+          "formaTorcida": {
+            "di": "Sid!",
+            "en": "Yes, a seed! A small seed!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "What did the ant find?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se fai o puño ou sinala a semente, dille: «Yes, a seed! A small seed!».",
+            "es": "Pregunta y espera. Si hace el puño o señala la semilla, dile: «Yes, a seed! A small seed!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa con delantal AZUL cava con las manos un hoyo en la tierra MARRÓN; la hormiga NEGRA con pañuelo VERDE deja caer dentro la semilla. Al lado, una regadera pequeña AMARILLA. Fondo claro, sin más.",
+        "trama": {
+          "gl": "Lúa cava un buratiño na terra, coas mans: terra fresca e escura. A formiga deixa a semente dentro e tápana xuntas. Regan cun pouco de auga e agardan… un día, dous días, tres días… Sairá algo?",
+          "es": "Lúa cava un agujerito en la tierra, con las manos: tierra fresca y oscura. La hormiga deja la semilla dentro y la tapan juntas. Riegan con un poco de agua y esperan… un día, dos días, tres días… ¿Saldrá algo?"
+        },
+        "lua": {
+          "onomatopeia": "Scritch, scratch!",
+          "ref": "frase.lua.3_4.07.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the soil? Touch the brown soil!",
+            "axuda": {
+              "gl": "Pasa o dedo pola terra da lámina e agarda.",
+              "es": "Pasa el dedo por la tierra de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you dig like Lúa? Dig, dig, dig!",
+            "axuda": {
+              "gl": "Cava no chan coas dúas mans, amodo e con forza.",
+              "es": "Cava en el suelo con las dos manos, despacio y con fuerza."
+            }
+          },
+          "achegar": {
+            "en": "Do you dig in the park?",
+            "axuda": {
+              "gl": "Frota as mans coma se tivesen terra e agarda un xesto ou un si.",
+              "es": "Frótate las manos como si tuvieran tierra y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa digs. Dig, dig the soil!",
+            "axuda": {
+              "gl": "Cava ti no chan, sen dicir máis, e agarda.",
+              "es": "Cava tú en el suelo, sin decir más, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The soil! And water for the seed? Yes, please!",
+            "axuda": {
+              "gl": "Asente e fai coma se regases coa regadeira.",
+              "es": "Asiente y haz como si regaras con la regadera."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Terra!",
+              "es": "¡Tierra!"
+            },
+            "acolle": {
+              "gl": "Si, terra para a semente!",
+              "es": "¡Sí, tierra para la semilla!"
+            },
+            "en": "Soil! Soil for the little seed!"
+          },
+          "unhaPalabra": {
+            "di": "Dig!",
+            "en": "Yes, dig, dig the soil!"
+          },
+          "formaTorcida": {
+            "di": "Digged soil!",
+            "en": "Yes, Lúa dug the soil!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Dig the soil! Dig…?",
+          "axuda": {
+            "gl": "Di «Dig the soil! Dig…» cavando no aire e agarda. Se cava ou di «dig», devólvelle: «Dig the soil! Dig, dig!».",
+            "es": "Di «Dig the soil! Dig…» cavando en el aire y espera. Si cava o dice «dig», devuélvele: «Dig the soil! Dig, dig!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Un girasol altísimo, más alto que Lúa, con pétalos AMARILLOS. Lúa con delantal AZUL abraza el tallo mirando hacia arriba; la hormiga NEGRA con pañuelo VERDE, sentada en una hoja del girasol, también se abraza al tallo. Tierra MARRÓN abajo, cielo claro.",
+        "trama": {
+          "gl": "Unha mañá, sorpresa! Da terra saíu un talo verde que medrou, medrou… ata ser un xirasol máis alto que Lúa! A formiga rube ata unha folla e as dúas dan unha aperta ao talo. Dunha semente pequena, unha flor alta!",
+          "es": "Una mañana, ¡sorpresa! De la tierra salió un tallo verde que creció, creció… ¡hasta ser un girasol más alto que Lúa! La hormiga sube hasta una hoja y las dos abrazan el tallo. ¡De una semilla pequeña, una flor alta!"
+        },
+        "lua": {
+          "onomatopeia": "Uaaau!",
+          "ref": "frase.lua.3_4.07.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the tall flower? Touch the flower!",
+            "axuda": {
+              "gl": "Sube o dedo polo talo ata a flor e agarda.",
+              "es": "Sube el dedo por el tallo hasta la flor y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you grow tall? Small… small… and tall!",
+            "axuda": {
+              "gl": "Empeza de cócoras no chan e vai estirándote amodo cara arriba.",
+              "es": "Empieza en cuclillas en el suelo y ve estirándote despacio hacia arriba."
+            }
+          },
+          "achegar": {
+            "en": "Do you have flowers near your house?",
+            "axuda": {
+              "gl": "Fai unha flor coas mans abertas e agarda un xesto ou un si.",
+              "es": "Haz una flor con las manos abiertas y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa is tall. Tall, so tall!",
+            "axuda": {
+              "gl": "Estírate ti cos brazos arriba e agarda.",
+              "es": "Estírate tú con los brazos arriba y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The flower! A tall yellow flower!",
+            "axuda": {
+              "gl": "Asente e estira o brazo cara arriba.",
+              "es": "Asiente y estira el brazo hacia arriba."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Unha flor!",
+              "es": "¡Una flor!"
+            },
+            "acolle": {
+              "gl": "Si, unha flor altísima!",
+              "es": "¡Sí, una flor altísima!"
+            },
+            "en": "A flower! A tall, tall flower!"
+          },
+          "unhaPalabra": {
+            "di": "Tall!",
+            "en": "Yes, a tall flower! So tall!"
+          },
+          "formaTorcida": {
+            "di": "Flower more tall!",
+            "en": "Yes, the flower is so tall!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you be tall, like the flower?",
+          "axuda": {
+            "gl": "Estírate ti primeiro e agarda. Se se estira, dille: «Oh! Tall, so tall!».",
+            "es": "Estírate tú primero y espera. Si se estira, dile: «Oh! Tall, so tall!»."
+          }
+        }
+      }
+    ]
+  }
 }

@@ -80,5 +80,248 @@
     "3_4.outubro.s4.tall"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.08",
+    "titulo": {
+      "gl": "Lúa e a ovelliña perdida",
+      "es": "Lúa y la ovejita perdida"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Prado verde de granja con una valla de madera al fondo. Un caballo MARRÓN de crin BLANCA llega galopando hacia Lúa, que lleva un sombrero de paja. Junto a la valla, una vaca BLANCA con manchas NEGRAS mira preocupada un hueco vacío a su lado.",
+        "trama": {
+          "gl": "Na granxa, o cabalo chega ao galope: patacán, patacán! Trae unha noticia para Lúa: a ovelliña dos rizos non está co rabaño! A vaca e o cabalo xa a buscaron por todo o prado.",
+          "es": "En la granja, el caballo llega al galope: ¡patacán, patacán! Trae una noticia para Lúa: ¡la ovejita de los rizos no está con el rebaño! La vaca y el caballo ya la han buscado por todo el prado."
+        },
+        "lua": {
+          "onomatopeia": "Patacán, patacán!",
+          "ref": "frase.lua.3_4.08.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the horse? Touch the brown horse!",
+            "axuda": {
+              "gl": "Sinala o cabalo e agarda.",
+              "es": "Señala el caballo y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you gallop like the horse? Gallop, gallop!",
+            "axuda": {
+              "gl": "Galopa no sitio cunha perna diante e as mans coma se levases as rendas.",
+              "es": "Galopa en el sitio con una pierna delante y las manos como si llevaras las riendas."
+            }
+          },
+          "achegar": {
+            "en": "Do you like horses?",
+            "axuda": {
+              "gl": "Fai coma se acariñases un cabalo e agarda un xesto ou un si.",
+              "es": "Haz como si acariciaras un caballo y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa gallops like the horse. Gallop, gallop!",
+            "axuda": {
+              "gl": "Galopa ti no sitio, amodo, e agarda.",
+              "es": "Galopa tú en el sitio, despacio, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The horse! A big brown horse!",
+            "axuda": {
+              "gl": "Asente e fai coas mans o son dos cascos nas pernas.",
+              "es": "Asiente y haz con las manos el sonido de los cascos en las piernas."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un cabalo!",
+              "es": "¡Un caballo!"
+            },
+            "acolle": {
+              "gl": "Si, un cabalo que corre moito!",
+              "es": "¡Sí, un caballo que corre mucho!"
+            },
+            "en": "A horse! The horse gallops!"
+          },
+          "unhaPalabra": {
+            "di": "Horse!",
+            "en": "Yes, a galloping horse!"
+          },
+          "formaTorcida": {
+            "di": "Hoss gallop!",
+            "en": "Yes, the horse gallops!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "A horse! Gallop…?",
+          "axuda": {
+            "gl": "Di «A horse! Gallop…» galopando no sitio e agarda. Se galopa ou di «gallop», devólvelle: «A horse! Gallop, gallop!».",
+            "es": "Di «A horse! Gallop…» galopando en el sitio y espera. Si galopa o dice «gallop», devuélvele: «A horse! Gallop, gallop!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa con su sombrero de paja y la vaca BLANCA con manchas NEGRAS caminan despacio, una detrás de la otra, por un sendero junto a un pajar. Lúa mira detrás de un fardo de paja con la mano en la frente. Al fondo, el pajar con paja amarilla.",
+        "trama": {
+          "gl": "Lúa e a vaca saen a buscala. A vaca camiña amodo, moi amodo, porque mira ben cada recuncho. Muuu! Ovelliña, onde estás? Miran detrás da valla, detrás do carro… Só queda o palleiro!",
+          "es": "Lúa y la vaca salen a buscarla. La vaca camina despacio, muy despacio, porque mira bien cada rincón. ¡Muuu! Ovejita, ¿dónde estás? Miran detrás de la valla, detrás del carro… ¡Solo queda el pajar!"
+        },
+        "lua": {
+          "onomatopeia": "Muuu!",
+          "ref": "frase.lua.3_4.08.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the cow? Touch the cow!",
+            "axuda": {
+              "gl": "Sinala a vaca e agarda.",
+              "es": "Señala la vaca y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you walk like the cow? Slowly… walk, walk.",
+            "axuda": {
+              "gl": "Fai corniños cos índices e camiña amodo en círculo.",
+              "es": "Haz cuernitos con los índices y camina despacio en círculo."
+            }
+          },
+          "achegar": {
+            "en": "Do you look for your toys at home?",
+            "axuda": {
+              "gl": "Pon a man na fronte coma quen busca e agarda un xesto ou un si.",
+              "es": "Ponte la mano en la frente como quien busca y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa walks like the cow. Walk, walk…",
+            "axuda": {
+              "gl": "Camiña ti amodo arredor da lámina, sen dicir máis.",
+              "es": "Camina tú despacio alrededor de la lámina, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes, the cow! A black and white cow!",
+            "axuda": {
+              "gl": "Asente e fai corniños cos índices.",
+              "es": "Asiente y haz cuernitos con los índices."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Vaca!",
+              "es": "¡Vaca!"
+            },
+            "acolle": {
+              "gl": "Si, a vaca camiña amodo.",
+              "es": "Sí, la vaca camina despacio."
+            },
+            "en": "Yes, the cow! The cow walks slowly."
+          },
+          "unhaPalabra": {
+            "di": "Cow!",
+            "en": "Yes, the cow walks slowly!"
+          },
+          "formaTorcida": {
+            "di": "Cow walk-walk me!",
+            "en": "Yes, the cow walks with Lúa!"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "Where is the little sheep?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala o palleiro ou encolle os ombros, dille: «Where? Maybe in the hay!».",
+            "es": "Pregunta y espera. Si señala el pajar o se encoge de hombros, dile: «Where? Maybe in the hay!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Dentro del pajar, sobre la paja amarilla, la ovejita BLANCA de rizos con lazo ROSA se despierta y estira las patas. Lúa con su sombrero de paja le ofrece con la mano abierta una manzana roja. Asoman la vaca BLANCA con manchas NEGRAS y el caballo MARRÓN de crin BLANCA, sonrientes.",
+        "trama": {
+          "gl": "E alí está! A ovelliña quedou durmida na palla, quentiña e tranquila. Esperta, bocexa… béee! Lúa dálle unha mazá vermella e a ovelliña cómea, crac, crac. A vaca e o cabalo xa están contentos: o rabaño está completo!",
+          "es": "¡Y allí está! La ovejita se quedó dormida en la paja, calentita y tranquila. Se despierta, bosteza… ¡beee! Lúa le da una manzana roja y la ovejita se la come, crac, crac. La vaca y el caballo ya están contentos: ¡el rebaño está completo!"
+        },
+        "lua": {
+          "onomatopeia": "Béee!",
+          "ref": "frase.lua.3_4.08.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little sheep? Touch the sheep!",
+            "axuda": {
+              "gl": "Sinala a ovelliña na palla e agarda.",
+              "es": "Señala la ovejita en la paja y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you give the sheep an apple? Here you are!",
+            "axuda": {
+              "gl": "Ofrece unha mazá imaxinaria coa man aberta e agarda.",
+              "es": "Ofrece una manzana imaginaria con la mano abierta y espera."
+            }
+          },
+          "achegar": {
+            "en": "Do you like apples?",
+            "axuda": {
+              "gl": "Fai coma se mordeses unha mazá e agarda un xesto ou un si.",
+              "es": "Haz como si mordieras una manzana y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa gives an apple. Here you are, little sheep!",
+            "axuda": {
+              "gl": "Ofrece ti a mazá imaxinaria cara á lámina.",
+              "es": "Ofrece tú la manzana imaginaria hacia la lámina."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The sheep! A little white sheep!",
+            "axuda": {
+              "gl": "Asente e fai rizos no aire arredor da cabeza.",
+              "es": "Asiente y haz rizos en el aire alrededor de la cabeza."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Estaba durmindo!",
+              "es": "¡Estaba durmiendo!"
+            },
+            "acolle": {
+              "gl": "Si, durmía na palla!",
+              "es": "¡Sí, dormía en la paja!"
+            },
+            "en": "Yes! The sheep was sleeping in the hay!"
+          },
+          "unhaPalabra": {
+            "di": "Sheep!",
+            "en": "Yes, the little sheep is here!"
+          },
+          "formaTorcida": {
+            "di": "Sheeps eat apple!",
+            "en": "Yes, the sheep eats the apple! Thank you, Lúa!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you give the sheep an apple?",
+          "axuda": {
+            "gl": "Ofrécelle ti primeiro unha mazá imaxinaria e agarda. Se a dá, dille: «Here you are! Thank you!».",
+            "es": "Ofrécele tú primero una manzana imaginaria y espera. Si la da, dile: «Here you are! Thank you!»."
+          }
+        }
+      }
+    ]
+  }
 }

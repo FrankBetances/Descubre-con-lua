@@ -12,8 +12,9 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 ## Plan docente · registro de módulos
 
 El plan está en `docs/PLAN_MEJORA_INTEGRAL.md` y la arquitectura de destino en
-`docs/PLAN_ARQUITECTURA_PEDAGOGIA.md`, los dos en la rama `pedagogia`,
-pendientes de mergear. Los módulos se apilan en esa misma rama hasta que Frank mergee el PR. Cada sesión que trabaje un módulo actualiza su fila:
+`docs/PLAN_ARQUITECTURA_PEDAGOGIA.md`, los dos en `main` desde el merge de la
+PR #23 (con O3 y O4 hasta M4.3). Lo siguiente se apila en la rama `pedagogia`,
+rehecha desde `main`, hasta que Frank mergee su PR. Cada sesión que trabaje un módulo actualiza su fila:
 estado, fecha, evidencia (gate, captura o comando) y siguiente paso. Los
 estados están definidos en el apartado 3 del plan.
 

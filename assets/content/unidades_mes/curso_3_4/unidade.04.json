@@ -80,5 +80,248 @@
     "3_4.novembro.s2.chestnut"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_3_4.04",
+    "titulo": {
+      "gl": "Lúa e o paporrubio da neve",
+      "es": "Lúa y el petirrojo de la nieve"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Paisaje nevado muy sencillo al atardecer: suelo blanco y cielo azul. Lúa con abrigo VERDE, gorro de lana y unas botas ROJAS grandes, pisando fuerte; detrás de ella, huellas en la nieve. Copos blancos grandes cayendo.",
+        "trama": {
+          "gl": "Neva! Lúa pon o abrigo, o gorro… e as súas botas vermellas. Sae á rúa e pisa forte: plof, plof! Que ben soan as botas na neve branda. Detrás dela vai deixando pegadas e máis pegadas.",
+          "es": "¡Nieva! Lúa se pone el abrigo, el gorro… y sus botas rojas. Sale a la calle y pisa fuerte: ¡plof, plof! Qué bien suenan las botas en la nieve blandita. Detrás de ella va dejando huellas y más huellas."
+        },
+        "lua": {
+          "onomatopeia": "Plof, plof!",
+          "ref": "frase.lua.3_4.04.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are Lúa's boots? Touch the red boots!",
+            "axuda": {
+              "gl": "Sinala as botas da lámina e agarda.",
+              "es": "Señala las botas de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you stomp in the snow? Stomp, stomp, stomp!",
+            "axuda": {
+              "gl": "Pisa forte cos dous pés no sitio, ao pulso.",
+              "es": "Pisa fuerte con los dos pies en el sitio, al pulso."
+            }
+          },
+          "achegar": {
+            "en": "Do you have boots at home?",
+            "axuda": {
+              "gl": "Sinala os teus pés e agarda un xesto ou un si.",
+              "es": "Señala tus pies y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa stomps. Stomp, stomp!",
+            "axuda": {
+              "gl": "Pisa ti forte, dúas veces, e agarda.",
+              "es": "Pisa tú fuerte, dos veces, y espera."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The boots! Big red boots!",
+            "axuda": {
+              "gl": "Asente e pisa unha vez, suave.",
+              "es": "Asiente y pisa una vez, suave."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Botas!",
+              "es": "¡Botas!"
+            },
+            "acolle": {
+              "gl": "Si, as botas vermellas!",
+              "es": "¡Sí, las botas rojas!"
+            },
+            "en": "Red boots! Stomp in the snow!"
+          },
+          "unhaPalabra": {
+            "di": "Snow!",
+            "en": "Yes, white snow! Stomp in the snow!"
+          },
+          "formaTorcida": {
+            "di": "Stomp stomped!",
+            "en": "Yes, stomp, stomp! Lúa stomps!"
+          }
+        },
+        "casa": {
+          "tipo": "completar",
+          "en": "Snow! Boots… stomp…?",
+          "axuda": {
+            "gl": "Di «Snow! Boots… stomp…» pisando unha vez e agarda. Se pisa ou di «stomp», devólvelle: «Snow! Boots… stomp, stomp!».",
+            "es": "Di «Snow! Boots… stomp…» pisando una vez y espera. Si pisa o dice «stomp», devuélvele: «Snow! Boots… stomp, stomp!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Junto a un arbusto cubierto de nieve, ya casi de noche. Lúa con su abrigo VERDE y botas ROJAS camina de puntillas, con un dedo en los labios. Bajo el arbusto se ve solo una sombra pequeña y redonda (el petirrojo, aún sin color). Pocos copos.",
+        "trama": {
+          "gl": "Xa vai escurecendo. Debaixo dun arbusto óese un pío moi baixiño: pío, pío… Alguén ten frío e está perdido! Lúa deixa de pisar forte e achégase de puntiñas, amodo, sen facer ruído, para non asustalo.",
+          "es": "Ya va oscureciendo. Debajo de un arbusto se oye un pío muy bajito: pío, pío… ¡Alguien tiene frío y está perdido! Lúa deja de pisar fuerte y se acerca de puntillas, despacio, sin hacer ruido, para no asustarlo."
+        },
+        "lua": {
+          "onomatopeia": "Pío, pío…",
+          "ref": "frase.lua.3_4.04.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little bird? Touch the bush!",
+            "axuda": {
+              "gl": "Sinala o arbusto da lámina e agarda.",
+              "es": "Señala el arbusto de la lámina y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you tiptoe like Lúa? Tiptoe… quiet, quiet.",
+            "axuda": {
+              "gl": "Camiña de puntiñas no sitio, moi amodo, co dedo nos beizos.",
+              "es": "Camina de puntillas en el sitio, muy despacio, con el dedo en los labios."
+            }
+          },
+          "achegar": {
+            "en": "Do you tiptoe at home?",
+            "axuda": {
+              "gl": "Dá dous pasiños de puntiñas e agarda un xesto ou un si.",
+              "es": "Da dos pasitos de puntillas y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa tiptoes. Tiptoe, tiptoe… shh.",
+            "axuda": {
+              "gl": "Fai ti dous pasiños de puntiñas, sen dicir máis.",
+              "es": "Haz tú dos pasitos de puntillas, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes, the bush! A little bird is under the bush!",
+            "axuda": {
+              "gl": "Asente e pon o dedo nos beizos.",
+              "es": "Asiente y ponte el dedo en los labios."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Un paxariño!",
+              "es": "¡Un pajarito!"
+            },
+            "acolle": {
+              "gl": "Si, un paxariño con frío.",
+              "es": "Sí, un pajarito con frío."
+            },
+            "en": "A little bird! A cold little bird!"
+          },
+          "unhaPalabra": {
+            "di": "Bird!",
+            "en": "Yes, a little bird! Tiptoe, tiptoe…"
+          },
+          "formaTorcida": {
+            "di": "Tiptoes me!",
+            "en": "Yes, you tiptoe! Tiptoe, tiptoe…"
+          }
+        },
+        "casa": {
+          "tipo": "queOnde",
+          "en": "Where is the little bird?",
+          "axuda": {
+            "gl": "Pregunta baixiño e agarda. Se sinala o arbusto, dille: «Yes! Under the bush! Tiptoe, tiptoe…».",
+            "es": "Pregunta bajito y espera. Si señala el arbusto, dile: «Yes! Under the bush! Tiptoe, tiptoe…»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Lúa con su abrigo VERDE y botas ROJAS, agachada, sostiene una pequeña vela LED AMARILLA que ilumina un círculo cálido. Con la otra mano sujeta contra el pecho a un petirrojo MARRÓN con el pecho NARANJA, acurrucado. Alrededor, azul oscuro y nieve.",
+        "trama": {
+          "gl": "Lúa acende a súa luciña e… alí está: un paporrubio pequeniño co peito laranxa! Ve a luz, perde o medo e pousa nas mans de Lúa. Ela apértao contra o peito, quentiño, e volven xuntos para a casa.",
+          "es": "Lúa enciende su lucecita y… allí está: ¡un petirrojo pequeñito con el pecho naranja! Ve la luz, pierde el miedo y se posa en las manos de Lúa. Ella lo abraza contra el pecho, calentito, y vuelven juntos a casa."
+        },
+        "lua": {
+          "onomatopeia": "Clic!",
+          "ref": "frase.lua.3_4.04.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the light? Touch the yellow light!",
+            "axuda": {
+              "gl": "Sinala a luciña e agarda.",
+              "es": "Señala la lucecita y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you open your hands like a light? Light!",
+            "axuda": {
+              "gl": "Pecha as mans e ábreas de golpe, coma unha luz que se acende.",
+              "es": "Cierra las manos y ábrelas de golpe, como una luz que se enciende."
+            }
+          },
+          "achegar": {
+            "en": "Do you have a little light in your room?",
+            "axuda": {
+              "gl": "Fai coma se acendeses unha luciña e agarda un xesto ou un si.",
+              "es": "Haz como si encendieras una lucecita y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa has a light. The little bird is warm now.",
+            "axuda": {
+              "gl": "Abre ti as mans de golpe e despois xúntaas no peito.",
+              "es": "Abre tú las manos de golpe y luego júntalas en el pecho."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The light! A little yellow light!",
+            "axuda": {
+              "gl": "Asente e abre as mans amodo, coma unha luz.",
+              "es": "Asiente y abre las manos despacio, como una luz."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Está quentiño!",
+              "es": "¡Está calentito!"
+            },
+            "acolle": {
+              "gl": "Si, xa está quentiño con Lúa.",
+              "es": "Sí, ya está calentito con Lúa."
+            },
+            "en": "Yes! The little bird is warm with Lúa."
+          },
+          "unhaPalabra": {
+            "di": "Light!",
+            "en": "Yes, a little light in the snow!"
+          },
+          "formaTorcida": {
+            "di": "Bird help me pease!",
+            "en": "Help me, please! Lúa helps the little bird."
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you hold the little bird, like Lúa?",
+          "axuda": {
+            "gl": "Fai ti primeiro o xesto de apertar o paxariño contra o peito e agarda. Se o fai, dille: «Thank you! The little bird is warm!».",
+            "es": "Haz tú primero el gesto de abrazar al pajarito contra el pecho y espera. Si lo hace, dile: «Thank you! The little bird is warm!»."
+          }
+        }
+      }
+    ]
+  }
 }

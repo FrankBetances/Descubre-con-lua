@@ -75,5 +75,248 @@
     "frase.cmd.abril.2_3.02"
   ],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.09",
+    "titulo": {
+      "gl": "Lúa e o cadeliño enlamado",
+      "es": "Lúa y el perrito embarrado"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Jardín simple con un charco de barro MARRÓN a la izquierda. Un perrito BLANCO con orejas NEGRAS (el mismo de las láminas 2 y 3), cubierto de manchas de barro, sobre todo en la cara, sonríe con la lengua fuera. Lúa, con camiseta ROSA, lo mira con una toalla AZUL al hombro.",
+        "trama": {
+          "gl": "O cadeliño branco xogou toda a mañá no xardín. Agora ten lama por todas partes: nas orellas, na barriga, nas patas… e sobre todo na cara! Lúa trae a súa toalla azul. Hora de lavarse!",
+          "es": "El perrito blanco ha jugado toda la mañana en el jardín. Ahora tiene barro por todas partes: en las orejas, en la barriga, en las patas… ¡y sobre todo en la cara! Lúa trae su toalla azul. ¡Hora de lavarse!"
+        },
+        "lua": {
+          "onomatopeia": "Woof, woof!",
+          "ref": "frase.lua.2_3.09.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the puppy's face? Touch the muddy face!",
+            "axuda": {
+              "gl": "Sinala a cara chea de lama e agarda.",
+              "es": "Señala la cara llena de barro y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you wash your face like Lúa? Rub, rub!",
+            "axuda": {
+              "gl": "Frega amodo as túas meixelas coas mans.",
+              "es": "Frótate despacio las mejillas con las manos."
+            }
+          },
+          "achegar": {
+            "en": "Do you wash your face in the morning?",
+            "axuda": {
+              "gl": "Fai coma se te lavases a cara e agarda un xesto ou un si.",
+              "es": "Haz como si te lavaras la cara y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa washes her face. Wash your face!",
+            "axuda": {
+              "gl": "Frega ti a cara, amodo, sen dicir máis.",
+              "es": "Frótate tú la cara, despacio, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The face! A muddy face!",
+            "axuda": {
+              "gl": "Asente e limpa co dedo unha mancha do debuxo.",
+              "es": "Asiente y limpia con el dedo una mancha del dibujo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Lama!",
+              "es": "¡Barro!"
+            },
+            "acolle": {
+              "gl": "Si, que cara de lama!",
+              "es": "¡Sí, qué cara de barro!"
+            },
+            "en": "Mud! Wash your face, puppy!"
+          },
+          "unhaPalabra": {
+            "di": "Face!",
+            "en": "Yes, wash your face!"
+          },
+          "formaTorcida": {
+            "di": "Dirty face puppy!",
+            "en": "Yes, the puppy's face is dirty!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the puppy's face?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se a sinala, dille: «Yes, the face! Wash your face!».",
+            "es": "Pregunta y espera. Si la señala, dile: «Yes, the face! Wash your face!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Un barreño AZUL con agua y mucha espuma blanca. Dentro, el perrito BLANCO de orejas NEGRAS, con burbujas en la cabeza. Lúa, con camiseta ROSA, le frota la barriga con una pastilla de jabón AMARILLA. Burbujas redondas flotando alrededor.",
+        "trama": {
+          "gl": "Á tina! Lúa colle o xabón amarelo e fai moita escuma. Primeiro, xabón; despois, fregar en círculos pola barriga; e logo, enxaugar con auga morna. Ao cadeliño fanlle cóxegas e ri: ji, ji, ji!",
+          "es": "¡Al barreño! Lúa coge el jabón amarillo y hace mucha espuma. Primero, jabón; después, frotar en círculos por la barriga; y luego, aclarar con agua templada. Al perrito le hace cosquillas y se ríe: ¡ji, ji, ji!"
+        },
+        "lua": {
+          "onomatopeia": "Blub, blub, pop!",
+          "ref": "frase.lua.2_3.09.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where are the bubbles? Touch a big bubble!",
+            "axuda": {
+              "gl": "Sinala unha burbulla grande e agarda.",
+              "es": "Señala una burbuja grande y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you wash your belly? Rub, rub, rub!",
+            "axuda": {
+              "gl": "Fai círculos coa man sobre a túa barriga, amodo.",
+              "es": "Haz círculos con la mano sobre tu barriga, despacio."
+            }
+          },
+          "achegar": {
+            "en": "Do you like bubbles in your bath?",
+            "axuda": {
+              "gl": "Fai coa man unha burbulla que sobe e agarda un xesto ou un si.",
+              "es": "Haz con la mano una burbuja que sube y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa washes the belly. Rub, rub!",
+            "axuda": {
+              "gl": "Fai ti círculos na túa barriga, sen dicir máis.",
+              "es": "Haz tú círculos en tu barriga, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Bubbles! Big round bubbles!",
+            "axuda": {
+              "gl": "Asente e estoura unha burbulla co dedo: pop!",
+              "es": "Asiente y explota una burbuja con el dedo: ¡pop!"
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Xabón!",
+              "es": "¡Jabón!"
+            },
+            "acolle": {
+              "gl": "Si, xabón e moita escuma!",
+              "es": "¡Sí, jabón y mucha espuma!"
+            },
+            "en": "Soap! Soap, rub, rinse!"
+          },
+          "unhaPalabra": {
+            "di": "Soap!",
+            "en": "Yes, soap on the belly!"
+          },
+          "formaTorcida": {
+            "di": "Wash belly-belly!",
+            "en": "Yes, wash your belly!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where are the bubbles?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se as sinala, dille: «Yes, the bubbles! Pop!».",
+            "es": "Pregunta y espera. Si las señala, dile: «Yes, the bubbles! Pop!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "El perrito BLANCO de orejas NEGRAS, ya limpio, sacude todo el cuerpo con gotas de agua saliendo en todas direcciones. Lúa, con camiseta ROSA y salpicada, se ríe y lo envuelve con la toalla AZUL; con una punta le seca las patitas de delante. Fondo liso.",
+        "trama": {
+          "gl": "O cadeliño sae da tina e… sacódese! Fliss, fliss! Todas as pingas voan cara a Lúa, que ri sen parar. Ela envólveo na toalla azul, sécalle as patiñas unha a unha e dálle unha aperta ben quentiña.",
+          "es": "El perrito sale del barreño y… ¡se sacude! ¡Fliss, fliss! Todas las gotas vuelan hacia Lúa, que se ríe sin parar. Ella lo envuelve en la toalla azul, le seca las patitas una a una y le da un abrazo bien calentito."
+        },
+        "lua": {
+          "onomatopeia": "Brrr, brrr!",
+          "ref": "frase.lua.2_3.09.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the towel? Touch the blue towel!",
+            "axuda": {
+              "gl": "Pasa o dedo pola toalla azul e agarda.",
+              "es": "Pasa el dedo por la toalla azul y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you shake dry like the puppy? Shake, shake, shake!",
+            "axuda": {
+              "gl": "Sacode as mans tres veces, forte e rápido.",
+              "es": "Sacude las manos tres veces, fuerte y rápido."
+            }
+          },
+          "achegar": {
+            "en": "Do you like a big towel after your bath?",
+            "axuda": {
+              "gl": "Abrázate coma se te envolveses nunha toalla e agarda un xesto ou un si.",
+              "es": "Abrázate como si te envolvieras en una toalla y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa dries the puppy's toes. Dry your toes!",
+            "axuda": {
+              "gl": "Fai ti coma se secases os dedos dos pés, sen dicir máis.",
+              "es": "Haz tú como si te secaras los dedos de los pies, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The towel! A big blue towel!",
+            "axuda": {
+              "gl": "Asente e pasa a man, suave, pola toalla do debuxo.",
+              "es": "Asiente y pasa la mano, suave, por la toalla del dibujo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Pingas!",
+              "es": "¡Gotas!"
+            },
+            "acolle": {
+              "gl": "Si, pingas por todas partes!",
+              "es": "¡Sí, gotas por todas partes!"
+            },
+            "en": "Shake dry! Water everywhere!"
+          },
+          "unhaPalabra": {
+            "di": "Towel!",
+            "en": "Yes, a big blue towel!"
+          },
+          "formaTorcida": {
+            "di": "Shake dried!",
+            "en": "Yes, shake dry! Shake, shake!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you shake dry like the puppy?",
+          "axuda": {
+            "gl": "Sacode ti as mans primeiro e agarda. Se o fai, dille: «Shake dry! Shake, shake, shake!».",
+            "es": "Sacude tú las manos primero y espera. Si lo hace, dile: «Shake dry! Shake, shake, shake!»."
+          }
+        }
+      }
+    ]
+  }
 }

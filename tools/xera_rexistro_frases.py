@@ -15,6 +15,8 @@ De dónde sale cada frase:
 - `registro/frases_propias.json`: lo que no está en ningún otro sitio. Son las
   fórmulas de turno que el banco no trae y las estructuras de 4-6 años, y se
   escriben ahí a mano;
+- `registro/frases_lua.json`: las frases de Lúa de los microcuentos (M5), una
+  por lámina, también a mano. El microcuento las cita por id;
 - las órdenes de las asambleas de los dos ciclos, con su gesto;
 - las frases de las dinámicas de aula, de los juegos de casa, de STEAM y de la
   guía de atención por edad.
@@ -43,6 +45,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CONTENIDO = ROOT / "assets" / "content"
 PROPIAS = CONTENIDO / "registro" / "frases_propias.json"
+LUA = CONTENIDO / "registro" / "frases_lua.json"
 SAIDA = CONTENIDO / "registro" / "frases.json"
 INVENTARIO = ROOT / "referencias" / "inventario_frases_ingles.md"
 
@@ -147,7 +150,9 @@ def pendentes() -> list[tuple[str, int, str]]:
 def construir() -> tuple[dict, list[str], str]:
     fallos: list[str] = []
     do_banco = banco()
-    propias = ler(PROPIAS)["frases"]
+    so_propias = ler(PROPIAS)["frases"]
+    de_lua = ler(LUA)["frases"]
+    propias = so_propias + de_lua
     frases: list[dict] = []
     vistos: set[str] = set()
     no_banco = 0
@@ -155,7 +160,7 @@ def construir() -> tuple[dict, list[str], str]:
 
     for frase in propias:
         if norm(frase["en"]) in do_banco:
-            fallos.append(f"frases_propias: «{frase['en']}» ya es "
+            fallos.append(f"{frase['id']}: «{frase['en']}» ya es "
                           f"{do_banco[norm(frase['en'])]} del banco: cítalo")
         frases.append(frase)
 
@@ -178,6 +183,10 @@ def construir() -> tuple[dict, list[str], str]:
         for lingua in ("gl", "es"):
             if not str(accion.get(lingua, "")).strip():
                 fallos.append(f"{frase['id']}: sin acción en {lingua}")
+        if frase.get("tipo") == "lua" and not str(
+                frase.get("fonte", "")).startswith("unidades_mes/"):
+            fallos.append(f"{frase['id']}: una frase de Lúa dice de qué "
+                          "unidad es (fonte: unidades_mes/...)")
         if frase.get("tipo") == "estructura":
             nota = frase.get("nota") or {}
             for lingua in ("gl", "es"):
@@ -186,7 +195,8 @@ def construir() -> tuple[dict, list[str], str]:
 
     rexistro = {
         "_doc": "Generado por tools/xera_rexistro_frases.py; no se edita a mano. "
-                "Las frases propias se escriben en registro/frases_propias.json.",
+                "Las frases propias se escriben en registro/frases_propias.json "
+                "y las de Lúa en registro/frases_lua.json.",
         "frases": frases,
     }
 
@@ -203,14 +213,16 @@ del plan docente.
 ## Lo que entra en el registro de frases
 
 `assets/content/registro/frases.json`: {len(frases)} frases, de ellas
-{len(propias)} propias (`registro/frases_propias.json`). Una orden entra
+{len(so_propias)} propias (`registro/frases_propias.json`) y {len(de_lua)} de Lúa
+(`registro/frases_lua.json`). Una orden entra
 aunque su texto sea también palabra del banco: se lleva el gesto de su fuente,
 y comparte la grabación.
 
 | Fuente | Frases | Mismo texto en el banco | En el registro |
 | --- | --- | --- | --- |
 {filas}
-| `registro/frases_propias.json` | {len(propias)} | 0 | {len(propias)} |
+| `registro/frases_propias.json` | {len(so_propias)} | 0 | {len(so_propias)} |
+| `registro/frases_lua.json` | {len(de_lua)} | 0 | {len(de_lua)} |
 
 ## Lo que todavía no entra, y dónde se resuelve
 

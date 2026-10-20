@@ -80,5 +80,248 @@
   ],
   "reactivar": [],
   "hogar": null,
-  "microcuento": null
+  "microcuento": {
+    "id": "microcuento.curso_2_3.01",
+    "titulo": {
+      "gl": "Lúa e o coelliño tímido",
+      "es": "Lúa y el conejito tímido"
+    },
+    "esperaSegundos": 5,
+    "laminas": [
+      {
+        "lamina": null,
+        "encargo": "Aula infantil luminosa y simple: una alfombra redonda VERDE en el suelo. Lúa, de pie a la izquierda, saluda con la mano. A la derecha, detrás de una maceta grande, asoma la cabeza de un conejito BLANCO con bufanda AMARILLA (el mismo de las láminas 2 y 3), con las orejas muy tiesas. Nada más en la escena.",
+        "trama": {
+          "gl": "É o primeiro día na escola. Lúa chega cedo e agarda na alfombra verde. Detrás dunha planta grande asoman dúas orellas brancas… É un coelliño cunha bufanda amarela, e ten un pouco de vergonza.",
+          "es": "Es el primer día en la escuela. Lúa llega temprano y espera en la alfombra verde. Detrás de una planta grande asoman dos orejas blancas… Es un conejito con una bufanda amarilla, y le da un poco de vergüenza."
+        },
+        "lua": {
+          "onomatopeia": "Peekaboo!",
+          "ref": "frase.lua.2_3.01.1"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the little bunny? Touch the bunny!",
+            "axuda": {
+              "gl": "Sinala as orellas que asoman detrás da planta e agarda.",
+              "es": "Señala las orejas que asoman detrás de la planta y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you wave hello like Lúa? Hello, hello!",
+            "axuda": {
+              "gl": "Saúda ti coa man, amodo, e agarda.",
+              "es": "Saluda tú con la mano, despacio, y espera."
+            }
+          },
+          "achegar": {
+            "en": "Do you wave hello to your friends?",
+            "axuda": {
+              "gl": "Saúda cara a outra criatura do grupo e agarda un xesto ou un si.",
+              "es": "Saluda hacia otra criatura del grupo y espera un gesto o un sí."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa waves hello. Hello, bunny!",
+            "axuda": {
+              "gl": "Colle a súa man con suavidade e facede xuntos o xesto de saudar.",
+              "es": "Coge su mano con suavidad y haced juntos el gesto de saludar."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The bunny! A little white bunny!",
+            "axuda": {
+              "gl": "Asente e acariña co dedo as orellas do debuxo.",
+              "es": "Asiente y acaricia con el dedo las orejas del dibujo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Coello!",
+              "es": "¡Conejo!"
+            },
+            "acolle": {
+              "gl": "Si, un coelliño branco!",
+              "es": "¡Sí, un conejito blanco!"
+            },
+            "en": "A little bunny! Hello, bunny!"
+          },
+          "unhaPalabra": {
+            "di": "Bunny!",
+            "en": "Yes, a little white bunny!"
+          },
+          "formaTorcida": {
+            "di": "Hello bunny hide!",
+            "en": "Yes, the bunny is hiding! Hello, bunny!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the bunny?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se o sinala ou o nomea, dille: «Yes, the little bunny! Hello, bunny!».",
+            "es": "Pregunta y espera. Si lo señala o lo nombra, dile: «Yes, the little bunny! Hello, bunny!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "La alfombra redonda VERDE vista desde arriba: cinco animalitos de colores distintos sentados en círculo y un hueco libre entre ellos. Lúa, sentada en el círculo, señala el hueco con la mano. El conejito BLANCO con bufanda AMARILLA, de pie fuera del círculo, mira con una pata junto a la boca.",
+        "trama": {
+          "gl": "Os amigos sentan na alfombra e fan un círculo grande. Entre eles queda un oco baleiro. O coelliño mira desde lonxe: quere sentar, pero non se atreve. Lúa dá unhas palmadiñas no chan: aquí hai sitio para ti!",
+          "es": "Los amigos se sientan en la alfombra y hacen un círculo grande. Entre ellos queda un hueco vacío. El conejito mira desde lejos: quiere sentarse, pero no se atreve. Lúa da unas palmaditas en el suelo: ¡aquí hay sitio para ti!"
+        },
+        "lua": {
+          "onomatopeia": "Pat, pat!",
+          "ref": "frase.lua.2_3.01.2"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the circle? Touch the friends in the circle!",
+            "axuda": {
+              "gl": "Percorre co dedo o círculo de amigos e agarda.",
+              "es": "Recorre con el dedo el círculo de amigos y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you make a circle with your arms? A big circle!",
+            "axuda": {
+              "gl": "Xunta as mans por riba da cabeza facendo un círculo.",
+              "es": "Junta las manos por encima de la cabeza haciendo un círculo."
+            }
+          },
+          "achegar": {
+            "en": "Do you sit with your friends on the carpet?",
+            "axuda": {
+              "gl": "Dá unhas palmadiñas na alfombra ao teu carón e agarda.",
+              "es": "Da unas palmaditas en la alfombra a tu lado y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa pats the floor. Sit down, bunny!",
+            "axuda": {
+              "gl": "Dá ti dúas palmadiñas suaves no chan, sen dicir máis.",
+              "es": "Da tú dos palmaditas suaves en el suelo, sin decir más."
+            }
+          },
+          "sinala": {
+            "en": "Yes! Friends in a circle! A big circle!",
+            "axuda": {
+              "gl": "Asente e debuxa no aire un círculo co dedo.",
+              "es": "Asiente y dibuja en el aire un círculo con el dedo."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Senta!",
+              "es": "¡Siéntate!"
+            },
+            "acolle": {
+              "gl": "Si, que sente con nós!",
+              "es": "¡Sí, que se siente con nosotros!"
+            },
+            "en": "Sit down, bunny! Sit with your friends!"
+          },
+          "unhaPalabra": {
+            "di": "Circle!",
+            "en": "Yes, friends in a circle!"
+          },
+          "formaTorcida": {
+            "di": "Sit downs!",
+            "en": "Yes, sit down! Sit down, bunny!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Where is the circle?",
+          "axuda": {
+            "gl": "Pregunta e agarda. Se sinala o círculo, devólvelle: «Yes, friends in a circle!».",
+            "es": "Pregunta y espera. Si señala el círculo, devuélvele: «Yes, friends in a circle!»."
+          }
+        }
+      },
+      {
+        "lamina": null,
+        "encargo": "Todos los animalitos del círculo, con el conejito BLANCO de bufanda AMARILLA ya dentro, de pie y agarrados a una cinta ancha MORADA de terciopelo que forma un aro. Lúa, a su lado, sonríe. Todos con un pie un poco levantado, como balanceándose. Fondo liso.",
+        "trama": {
+          "gl": "O coelliño senta no oco, xusto ao carón de Lúa. Ela trae a cinta morada de veludo e todos a collen ben forte. Un, dous… e todos de pé á vez! Os amigos bambéanse dun pé ao outro e cantan: Hello, hello!",
+          "es": "El conejito se sienta en el hueco, justo al lado de Lúa. Ella trae la cinta morada de terciopelo y todos la cogen bien fuerte. Un, dos… ¡y todos de pie a la vez! Los amigos se balancean de un pie al otro y cantan: Hello, hello!"
+        },
+        "lua": {
+          "onomatopeia": "Hop! La, la, la!",
+          "ref": "frase.lua.2_3.01.3"
+        },
+        "triada": {
+          "sinalar": {
+            "en": "Where is the ribbon? Touch the purple ribbon!",
+            "axuda": {
+              "gl": "Pasa o dedo pola cinta morada e agarda.",
+              "es": "Pasa el dedo por la cinta morada y espera."
+            }
+          },
+          "imitar": {
+            "en": "Can you stand up like the friends? Up, up!",
+            "axuda": {
+              "gl": "Ponte de pé amodo, collendo unha cinta imaxinaria.",
+              "es": "Ponte de pie despacio, cogiendo una cinta imaginaria."
+            }
+          },
+          "achegar": {
+            "en": "Do you sing Hello with your friends?",
+            "axuda": {
+              "gl": "Bambéate dun pé ao outro tarareando a canción e agarda.",
+              "es": "Balancéate de un pie al otro tarareando la canción y espera."
+            }
+          }
+        },
+        "recast": {
+          "silencio": {
+            "en": "Look, Lúa stands up. Everybody stand up!",
+            "axuda": {
+              "gl": "Ponte de pé e tende a man para que se erga contigo.",
+              "es": "Ponte de pie y tiéndele la mano para que se levante contigo."
+            }
+          },
+          "sinala": {
+            "en": "Yes! The ribbon! Everybody holds the ribbon!",
+            "axuda": {
+              "gl": "Asente e fai coma se colleses a cinta coas dúas mans.",
+              "es": "Asiente y haz como si cogieras la cinta con las dos manos."
+            }
+          },
+          "linguaCasa": {
+            "di": {
+              "gl": "Arriba!",
+              "es": "¡Arriba!"
+            },
+            "acolle": {
+              "gl": "Si, arriba todos!",
+              "es": "¡Sí, todos arriba!"
+            },
+            "en": "Everybody stand up! Up, up!"
+          },
+          "unhaPalabra": {
+            "di": "Up!",
+            "en": "Yes, everybody stand up!"
+          },
+          "formaTorcida": {
+            "di": "Everybody stand!",
+            "en": "Yes, everybody stand up!"
+          }
+        },
+        "casa": {
+          "tipo": "peer",
+          "en": "Can you wave hello to the bunny?",
+          "axuda": {
+            "gl": "Saúda ti primeiro coa man e agarda. Se o fai, dille: «Hello, friend! Hello, bunny!».",
+            "es": "Saluda tú primero con la mano y espera. Si lo hace, dile: «Hello, friend! Hello, bunny!»."
+          }
+        }
+      }
+    ]
+  }
 }
