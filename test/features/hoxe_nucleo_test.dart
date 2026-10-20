@@ -115,6 +115,70 @@ void main() {
         reason: 'Xullo non é un mes do curso.');
   });
 
+  // Lo que comprobaba la tarjeta suelta del inglés en casa, que no usaba
+  // ninguna pantalla y se retiró: ahora sobre Hoxe de casa de verdad.
+  for (final lang in AppLanguage.deInterfaz) {
+    Widget casa(DateTime agora) => HoxeFamiliasScreen(
+          repository: repo,
+          store: store,
+          language: lang,
+          onLanguageChanged: (_) {},
+          cursoId: 'curso_0_2',
+          onCambiarCurso: (_) {},
+          audioService: MockOfflineAudioService(),
+          agora: agora,
+        );
+
+    Future<void> abrirPalabras(WidgetTester tester) async {
+      final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
+      await tester.dragUntilVisible(tarxeta,
+          find.byKey(const Key('hoxe_familias')), const Offset(0, -150));
+      await tester.pumpAndSettle();
+      final abrir = find.descendant(
+          of: tarxeta,
+          matching: find.byKey(const Key('abrir_palabras_do_dia')));
+      await tester.ensureVisible(abrir);
+      await tester.pumpAndSettle();
+      await tester.tap(abrir);
+      await tester.pumpAndSettle();
+    }
+
+    testWidgets('Hoxe da casa: as do día, coa dinámica da CASA (${lang.code})',
+        (tester) async {
+      await pintar(tester, casa(lunes));
+      await abrirPalabras(tester);
+      final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
+      final curso = repo.cursoTprSync('curso_0_2')!;
+      for (final p in curso.planDoDia(10, 3, 1)!.newWords) {
+        expect(find.descendant(of: tarxeta, matching: find.text(p.en)),
+            findsOneWidget,
+            reason: p.en);
+      }
+      expect(
+          find.descendant(
+              of: tarxeta,
+              matching:
+                  find.text(curso.modelo.dia(1)!.dinamicaFogar.resolve(lang))),
+          findsOneWidget);
+      expect(erroresDe(tester), isEmpty);
+    });
+
+    testWidgets('Hoxe da casa en agosto: as do primeiro día (${lang.code})',
+        (tester) async {
+      await tester.runAsync(() => repo.loadUnidadeDoMes('curso_0_2', 9));
+      await pintar(tester, casa(DateTime(2026, 8, 3)));
+      await abrirPalabras(tester);
+      final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
+      for (final p
+          in repo.cursoTprSync('curso_0_2')!.planDoDia(9, 1, 1)!.newWords) {
+        expect(find.descendant(of: tarxeta, matching: find.text(p.en)),
+            findsOneWidget,
+            reason: p.en);
+      }
+      expect(erroresDe(tester), isEmpty);
+    });
+  }
+
   for (final lang in AppLanguage.deInterfaz) {
     final gl = lang == AppLanguage.gl;
     for (final escala in [1.0, 1.8]) {
