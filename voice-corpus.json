@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-21T04:58:22Z",
- "entries": 23663,
+ "generatedAt": "2026-10-21T10:17:35Z",
+ "entries": 23675,
  "byStyle": {
   "slow": 5915,
-  "tutor": 17748
+  "tutor": 17760
  },
  "byLang": {
-  "en": 14227,
+  "en": 14239,
   "es": 4719,
   "gl": 4717
  },
@@ -53211,6 +53211,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_00c50ea1_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Show me!",
+   "speech": "Show me!",
+   "source": "sesion45/taller",
+   "pack": false
+  },
+  {
    "id": "en_tutor_00c6f0ee_37",
    "lang": "en",
    "style": "tutor",
@@ -59025,6 +59034,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_14139768_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Good morning! Look who came to play!",
+   "speech": "Good morning! Look who came to play!",
+   "source": "sesion45/acollida",
+   "pack": false
+  },
+  {
    "id": "en_tutor_14266228_15",
    "lang": "en",
    "style": "tutor",
@@ -61194,6 +61212,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_1aeaa072_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hello, hello, hello! How are you?",
+   "speech": "Hello, hello, hello! How are you?",
+   "source": "sesion45/acollida",
+   "pack": false
+  },
+  {
    "id": "en_tutor_1af0d3ff_9",
    "lang": "en",
    "style": "tutor",
@@ -61713,6 +61740,15 @@
    "text": "Our team defeated the champions!",
    "speech": "Our team defeated the champions!",
    "source": "corpus/2255/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_1cc9862e_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wave your hands! See you soon!",
+   "speech": "Wave your hands! See you soon!",
+   "source": "sesion45/despedida",
    "pack": false
   },
   {
@@ -62280,6 +62316,15 @@
    "text": "What time is it?",
    "speech": "What time is it?",
    "source": "corpus/884/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_1f7b3daf_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Reach inside! What can you feel?",
+   "speech": "Reach inside! What can you feel?",
+   "source": "sesion45/despedida",
    "pack": false
   },
   {
@@ -76053,6 +76098,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_4fdea691_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bye-bye, goodbye! Bye-bye, friends!",
+   "speech": "Bye bye, goodbye! Bye bye, friends!",
+   "source": "sesion45/despedida",
+   "pack": false
+  },
+  {
    "id": "en_tutor_4fe8e524_53",
    "lang": "en",
    "style": "tutor",
@@ -77463,6 +77517,15 @@
    "text": "Music is my favourite subject.",
    "speech": "Music is my favourite subject.",
    "source": "corpus/825/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_54c0b1b5_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch your nose, soft, soft!",
+   "speech": "Touch your nose, soft, soft!",
+   "source": "sesion45/acollida",
    "pack": false
   },
   {
@@ -92217,6 +92280,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_8555612f_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Let's do it together!",
+   "speech": "Let's do it together!",
+   "source": "sesion45/taller",
+   "pack": false
+  },
+  {
    "id": "en_tutor_855708e9_30",
    "lang": "en",
    "style": "tutor",
@@ -100173,6 +100245,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9fdfb689_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Where is it? Touch it!",
+   "speech": "Where is it? Touch it!",
+   "source": "sesion45/conto",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9fef00d9_34",
    "lang": "en",
    "style": "tutor",
@@ -104544,6 +104625,15 @@
    "text": "My mum is doing an English course.",
    "speech": "My mum is doing an English course.",
    "source": "corpus/193/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b0466b9f_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Put your hands up high!",
+   "speech": "Put your hands up high!",
+   "source": "sesion45/acollida",
    "pack": false
   },
   {
@@ -116283,6 +116373,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_d765ccec_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look! What can you see?",
+   "speech": "Look! What can you see?",
+   "source": "sesion45/conto",
+   "pack": false
+  },
+  {
    "id": "en_tutor_d76fd0f3_52",
    "lang": "en",
    "style": "tutor",
@@ -126207,6 +126306,15 @@
    "text": "Let go",
    "speech": "Let go",
    "source": "tpr.0_2.outubro/s4/0_2.outubro.s4.let-go",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f99cffd9_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Clean up, clean up, everybody clean up!",
+   "speech": "Clean up, clean up, everybody clean up!",
+   "source": "sesion45/despedida",
    "pack": false
   },
   {

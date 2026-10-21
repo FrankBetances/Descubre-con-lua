@@ -732,6 +732,15 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
             _one(texto, "en", estilo_ingles(texto),
                  f"registro/{frase.get('id', '?')}", seen)
 
+    # La sesión de 45 minutos (F3): lo fijo que dice la adulta en cada fase.
+    sesion_json = content_dir / "sesion45" / "sesion45.json"
+    if sesion_json.exists():
+        sesion = json.loads(sesion_json.read_text(encoding="utf-8"))
+        for fase in sesion.get("fases") or []:
+            for texto in fase.get("ingles") or []:
+                _one(str(texto), "en", estilo_ingles(str(texto)),
+                     f"sesion45/{fase.get('clave', '?')}", seen)
+
     # «O modelo» (F2): la frase inglesa de cada ejemplo, de aula y de casa,
     # lleva su botón de voz para que la adulta la oiga antes de decirla.
     modelo_json = content_dir / "modelo" / "o_modelo.json"
