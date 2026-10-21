@@ -22,9 +22,10 @@ La dictó Frank el 21/10/2026: «nunca, escríbelo diez veces, nunca». Claude C
 
 NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA.
 
-- **Antes de cada push, PR, merge, workflow o agente se comprueba en local lo que lo va a tumbar** (`tools/gates.sh`, `check_voice_coverage.py`). Si algo va a fallar, no se lanza.
+- **Antes de cada push, PR, merge o workflow se comprueba en local lo que lo va a tumbar** (`tools/gates.sh`, `check_voice_coverage.py`). Si algo va a fallar, no se lanza.
 - **Si de verdad hay que lanzarlo igual, se le dice a Frank ANTES**, en una línea: qué va a fallar, por qué y qué cuesta. Sin su «sí», no se lanza.
 - **Decirlo después no vale.** Un aviso después del hecho no es transparencia: es un engaño con retraso.
+- **Los agentes no entran en esta lista porque están prohibidos (R00).** Nada lo aprueba un agente: lo aprueba Frank.
 
 ## R1 · NUNCA ENGAÑAR A FRANK. NUNCA UN ATAJO SIN SU CONSENTIMIENTO
 
