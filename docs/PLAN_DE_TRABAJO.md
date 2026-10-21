@@ -125,6 +125,18 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 - Antes de dibujar: definir con Frank la dirección de arte (estilo,
   personajes, paleta, poses) sobre tres láminas de muestra, y después las 140.
 
+**F10 · La estructura y el uso se entienden (orden de Frank, repetida muchas veces)**
+- Orden: «la estructura no se entiende, hay que mejorarla; tampoco se entiende
+  el uso». Ya la dio el 15/9 («la UX del aula está mal», «estructurado por
+  edad») y Claude Code no la puso en este plan: lo hizo él.
+- Método: (1) recorrer la app entera por los caminos de Frank y capturar cada
+  pantalla, en gl y es; (2) dibujar el mapa actual (qué hay, dónde y cuántos
+  toques cuesta llegar); (3) proponer UNA estructura nueva, con la primera
+  pantalla de cada portal y su recorrido de uso; (4) Frank la aprueba o la
+  corrige; (5) se rehace entera (regla 6), no por parches.
+- Hecho cuando: Frank abre la app y entiende dónde está cada cosa y para qué
+  sirve sin que nadie se lo explique.
+
 ## 4. Decisiones de Frank (20/10/2026)
 
 | | Pregunta | Decisión de Frank | Afecta a |
