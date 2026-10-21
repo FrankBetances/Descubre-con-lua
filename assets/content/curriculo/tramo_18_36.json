@@ -1,0 +1,1180 @@
+{
+  "_doc": "Tramo 2 (18-36 meses) do plan curricular de Frank, transcrito das liñas 19-146 de referencias/base/curriculo-vocabulario-infantil-2-6.txt coas correccións de referencias/base/ERRATAS.md; o que non entra vai en naonEntra de cada unidade.",
+  "tramo": "18_36m",
+  "unidades": [
+    {
+      "id": "T2.U1",
+      "titulo": {
+        "gl": "O recuncho da auga e a exploración líquida",
+        "es": "El rincón del agua y la exploración líquida"
+      },
+      "semanas": 6,
+      "mesesDocumento": {
+        "gl": "setembro - outubro",
+        "es": "septiembre - octubre"
+      },
+      "objetivos": [
+        {
+          "gl": "Reaccionar co corpo, cun salto e batendo na auga de forma coordinada, ás ordes splash e stop.",
+          "es": "Reaccionar con el cuerpo, con un salto y chapoteando de forma coordinada, a las órdenes splash y stop."
+        },
+        {
+          "gl": "Identificar e coller coas mans water e boat nas cubetas de auga cando a persoa adulta o pide de palabra.",
+          "es": "Identificar y coger con las manos water y boat en las cubetas de agua cuando la persona adulta lo pide de palabra."
+        },
+        {
+          "gl": "Distinguir polo tacto e co corpo a sensación de wet e de dry, con toallas e esponxas.",
+          "es": "Distinguir por el tacto y con el cuerpo la sensación de wet y de dry, con toallas y esponjas."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Water",
+          "ipa": "/ˈwɑtɚ/",
+          "gl": "auga",
+          "es": "agua"
+        },
+        {
+          "en": "Splash",
+          "ipa": "/splæʃ/",
+          "gl": "salpicar, bater na auga",
+          "es": "chapotear, salpicar"
+        },
+        {
+          "en": "Boat",
+          "ipa": "/boʊt/",
+          "gl": "barco",
+          "es": "barco"
+        },
+        {
+          "en": "Wet",
+          "ipa": "/wɛt/",
+          "gl": "mollado",
+          "es": "mojado"
+        },
+        {
+          "en": "Fish",
+          "ipa": "/fɪʃ/",
+          "gl": "peixe",
+          "es": "pez"
+        }
+      ],
+      "accionsTPR": [
+        {
+          "en": "Splash!",
+          "xesto": {
+            "gl": "Bater na auga coas mans abertas.",
+            "es": "Chapotear en el agua con las manos abiertas."
+          }
+        },
+        {
+          "en": "Stop!",
+          "xesto": {
+            "gl": "Quedar quieto de golpe, coas mans no alto.",
+            "es": "Quedarse quieto de golpe, con las manos en alto."
+          }
+        },
+        {
+          "en": "Fish!",
+          "xesto": {
+            "gl": "Nadar cos brazos estirados, imitando o camiño dun peixe.",
+            "es": "Nadar con los brazos estirados, imitando el recorrido de un pez."
+          }
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Cubetas transparentes de auga morna",
+          "es": "Cubetas transparentes de agua templada"
+        },
+        {
+          "gl": "Barcos de madeira e de cortiza que flotan",
+          "es": "Barcos de madera y de corcho que flotan"
+        },
+        {
+          "gl": "Esponxas vexetais naturais",
+          "es": "Esponjas vegetales naturales"
+        },
+        {
+          "gl": "Peixes de goma branda que se poden mergullar",
+          "es": "Peces de goma blanda que se pueden sumergir"
+        },
+        {
+          "gl": "Toallas de algodón secas e toallas empapadas",
+          "es": "Toallas de algodón secas y toallas empapadas"
+        }
+      ],
+      "fonoloxia": {
+        "gl": "A /ɪ/ inglesa de fish é unha vogal anterior semipechada, breve e relaxada, que non existe no sistema de 5 vogais do castelán nin no de 7 do galego. A persoa adulta di fish /fɪʃ/ con esa vogal breve e frouxa, en parentese.",
+        "es": "La /ɪ/ inglesa de fish es una vocal anterior semicerrada, breve y relajada, que no existe en el sistema de 5 vocales del castellano ni en el de 7 del gallego. La persona adulta dice fish /fɪʃ/ con esa vocal breve y floja, en parentese."
+      },
+      "contraste": null,
+      "dinamica": {
+        "inicio": {
+          "gl": "Asemblea: a caixa sorpresa mollada. A persoa adulta saca unha esponxa mollada, apértaa para que caian unhas pingas e di en parentese: «Mmm, look! Water! Cold water!».",
+          "es": "Asamblea: la caja sorpresa mojada. La persona adulta saca una esponja mojada, la aprieta para que caigan unas gotas y dice en parentese: «Mmm, look! Water! Cold water!»."
+        },
+        "desenvolvemento": {
+          "gl": "Recuncho da auga: as criaturas mexen nas cubetas en grupos de tres. A persoa adulta canta un patrón rítmico: «Splash, splash, splash in the water! And... stop!». As criaturas baten na auga e páranse ao oír a orde. Despois entran os barcos: «Push the boat!».",
+          "es": "Rincón del agua: las criaturas manipulan las cubetas en grupos de tres. La persona adulta canta un patrón rítmico: «Splash, splash, splash in the water! And... stop!». Las criaturas chapotean y se paran al oír la orden. Después entran los barcos: «Push the boat!»."
+        },
+        "peche": {
+          "gl": "Secado, unha criatura por vez. A persoa adulta fregalle as mans coa toalla: «Wet hands... now dry hands! Dry, dry, dry».",
+          "es": "Secado, una criatura cada vez. La persona adulta le frota las manos con la toalla: «Wet hands... now dry hands! Dry, dry, dry»."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Mmm, look! Water! Cold water!",
+          "gl": "Mmm, mira! Auga! Auga fría!",
+          "es": "Mmm, ¡mira! ¡Agua! ¡Agua fría!"
+        },
+        {
+          "en": "Splash, splash, splash in the water! And... stop!",
+          "gl": "Chap, chap, chap na auga! E... para!",
+          "es": "¡Chap, chap, chap en el agua! Y... ¡para!"
+        },
+        {
+          "en": "Push the boat!",
+          "gl": "Empuxa o barco!",
+          "es": "¡Empuja el barco!"
+        },
+        {
+          "en": "Wet hands... now dry hands! Dry, dry, dry",
+          "gl": "Mans molladas... agora mans secas! Secas, secas, secas",
+          "es": "Manos mojadas... ¡ahora manos secas! Secas, secas, secas"
+        },
+        {
+          "en": "All wet!",
+          "gl": "Todo mollado!",
+          "es": "¡Todo mojado!"
+        }
+      ],
+      "familia": {
+        "gl": "No baño de cada día, a familia deixa á parte os xoguetes electrónicos e di a palabra water e o verbo splash mentres bate suavemente na auga, coa exclamación «All wet!».",
+        "es": "En el baño de cada día, la familia deja a un lado los juguetes electrónicos y dice la palabra water y el verbo splash mientras chapotea suavemente, con la exclamación «All wet!»."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:21-41",
+      "erratasAplicadas": [
+        {
+          "gl": "Transcrición americana, a da voz da app, no lugar da británica do documento (ERRATAS, liñas 29, 31, 50-54, 141). Segue o uso do resto do contido: sen marcas de duración, /i/ tensa fronte a /ɪ/ relaxada.",
+          "es": "Transcripción americana, la de la voz de la app, en lugar de la británica del documento (ERRATAS, líneas 29, 31, 50-54, 141). Sigue el uso del resto del contenido: sin marcas de duración, /i/ tensa frente a /ɪ/ relajada."
+        },
+        {
+          "gl": "Quitáronse os números de nota pegados ás palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»).",
+          "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
+        },
+        {
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+        }
+      ],
+      "naonEntra": [
+        {
+          "que": {
+            "gl": "O obxectivo 4: distinguir de oído a vogal relaxada /ɪ/ (fish) da vogal tensa e longa /i/ (sea).",
+            "es": "El objetivo 4: distinguir de oído la vocal relajada /ɪ/ (fish) de la vocal tensa y larga /i/ (sea)."
+          },
+          "porque": {
+            "gl": "Sea non está na unidade (ERRATAS, liña 27: o contraste ten que ser entre palabras que estean) e ningunha palabra nin frase da unidade leva /i/, así que non hai par válido.",
+            "es": "Sea no está en la unidad (ERRATAS, línea 27: el contraste tiene que ser entre palabras que estén) y ninguna palabra ni frase de la unidad lleva /i/, así que no hay par válido."
+          }
+        },
+        {
+          "que": {
+            "gl": "Na focalización fonolóxica, contrastar fish /fɪʃ/ coa vogal longa e tensa de sea /si/, esaxerando a tensión dos beizos.",
+            "es": "En la focalización fonológica, contrastar fish /fɪʃ/ con la vocal larga y tensa de sea /si/, exagerando la tensión de los labios."
+          },
+          "porque": {
+            "gl": "O mesmo motivo: sea non está na unidade (ERRATAS, liña 27).",
+            "es": "El mismo motivo: sea no está en la unidad (ERRATAS, línea 27)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "T2.U2",
+      "titulo": {
+        "gl": "Tesouros da natureza e do chan",
+        "es": "Tesoros de la naturaleza y del suelo"
+      },
+      "semanas": 6,
+      "mesesDocumento": {
+        "gl": "novembro - decembro",
+        "es": "noviembre - diciembre"
+      },
+      "objetivos": [
+        {
+          "gl": "Agacharse a coller (pick up) e soltar deixando caer (drop) ao oír o sinal.",
+          "es": "Agacharse a recoger (pick up) y soltar dejando caer (drop) al oír la señal."
+        },
+        {
+          "gl": "Manipular e clasificar follas secas naturais (leaf) e pedras de río (stone).",
+          "es": "Manipular y clasificar hojas secas naturales (leaf) y piedras de río (stone)."
+        },
+        {
+          "gl": "Vivir co corpo e contrastar os tamaños grande e pequeno (big e small).",
+          "es": "Vivir con el cuerpo y contrastar los tamaños grande y pequeño (big y small)."
+        },
+        {
+          "gl": "Asimilar o contraste de duración entre a vogal longa /i/ (leaf) e a vogal breve /ɪ/ (big).",
+          "es": "Asimilar el contraste de duración entre la vocal larga /i/ (leaf) y la vocal breve /ɪ/ (big)."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Leaf",
+          "ipa": "/lif/",
+          "gl": "folla",
+          "es": "hoja"
+        },
+        {
+          "en": "Stone",
+          "ipa": "/stoʊn/",
+          "gl": "pedra",
+          "es": "piedra"
+        },
+        {
+          "en": "Drop",
+          "ipa": "/drɑp/",
+          "gl": "deixar caer",
+          "es": "dejar caer"
+        },
+        {
+          "en": "Big",
+          "ipa": "/bɪɡ/",
+          "gl": "grande",
+          "es": "grande"
+        },
+        {
+          "en": "Small",
+          "ipa": "/smɔl/",
+          "gl": "pequeno",
+          "es": "pequeño"
+        }
+      ],
+      "accionsTPR": [
+        {
+          "en": "Pick up!",
+          "xesto": {
+            "gl": "Agacharse ata o chan para coller as cousas.",
+            "es": "Agacharse hasta el suelo para recoger las cosas."
+          }
+        },
+        {
+          "en": "Drop!",
+          "xesto": {
+            "gl": "Abrir as mans á altura dos ombros e deixar que a cousa caia con forza ao chan.",
+            "es": "Abrir las manos a la altura de los hombros y dejar que la cosa caiga con fuerza al suelo."
+          }
+        },
+        {
+          "en": "Big!",
+          "xesto": {
+            "gl": "Estirar os brazos facendo un círculo grande co corpo.",
+            "es": "Estirar los brazos haciendo un círculo grande con el cuerpo."
+          }
+        },
+        {
+          "en": "Small!",
+          "xesto": {
+            "gl": "Encollerse no chan coma unha bóla.",
+            "es": "Encogerse en el suelo como una bola."
+          }
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Follas secas e crocantes de castiñeiro e de carballo, recollidas fóra",
+          "es": "Hojas secas y crujientes de castaño y de roble, recogidas fuera"
+        },
+        {
+          "gl": "Pedras redondas de río de distintos pesos e tamaños",
+          "es": "Piedras redondas de río de distintos pesos y tamaños"
+        },
+        {
+          "gl": "Cestas de vimbio natural",
+          "es": "Cestas de mimbre natural"
+        },
+        {
+          "gl": "Piñas de piñeiro",
+          "es": "Piñas de pino"
+        }
+      ],
+      "fonoloxia": {
+        "gl": "Asimilar a vogal tensa e longa /i/ de leaf. A persoa adulta alonga o son estirando as comisuras dos beizos («L-ee-af») e contrapono ao movemento seco das mans cara abaixo cando di drop, coa vogal aberta /ɑ/.",
+        "es": "Asimilar la vocal tensa y larga /i/ de leaf. La persona adulta alarga el sonido estirando las comisuras de los labios («L-ee-af») y lo contrapone al movimiento seco de las manos hacia abajo cuando dice drop, con la vocal abierta /ɑ/."
+      },
+      "contraste": {
+        "a": "leaf",
+        "b": "big",
+        "nota": {
+          "gl": "/i/ longa e tensa de leaf fronte a /ɪ/ breve e relaxada de big: as dúas son da unidade.",
+          "es": "/i/ larga y tensa de leaf frente a /ɪ/ breve y relajada de big: las dos son de la unidad."
+        }
+      },
+      "dinamica": {
+        "inicio": {
+          "gl": "Cesto de tesouros naturais na alfombra do medio. A persoa adulta saca unha pedra grande: «Wow, a stone! A big, heavy stone».",
+          "es": "Cesto de tesoros naturales en la alfombra del centro. La persona adulta saca una piedra grande: «Wow, a stone! A big, heavy stone»."
+        },
+        "desenvolvemento": {
+          "gl": "Circuíto de movemento. As criaturas levan unha folla lixeira ata unha cesta aberta: «Pick up the leaf. Walk, walk... now drop it! Drop!». O son da folla ao caer compárase co golpe xordo da pedra («Drop the stone: Boom!»).",
+          "es": "Circuito de movimiento. Las criaturas llevan una hoja ligera hasta una cesta abierta: «Pick up the leaf. Walk, walk... now drop it! Drop!». El sonido de la hoja al caer se compara con el golpe sordo de la piedra («Drop the stone: Boom!»)."
+        },
+        "peche": {
+          "gl": "Xogo de contrastes de tamaño co corpo: «Make your body big! Big like a tree! Now small, small like a stone».",
+          "es": "Juego de contrastes de tamaño con el cuerpo: «Make your body big! Big like a tree! Now small, small like a stone»."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Wow, a stone! A big, heavy stone",
+          "gl": "Hala, unha pedra! Unha pedra grande e pesada",
+          "es": "¡Hala, una piedra! Una piedra grande y pesada"
+        },
+        {
+          "en": "Pick up the leaf. Walk, walk... now drop it! Drop!",
+          "gl": "Colle a folla. Camiña, camiña... agora déixaa caer! Sóltaa!",
+          "es": "Coge la hoja. Camina, camina... ¡ahora déjala caer! ¡Suéltala!"
+        },
+        {
+          "en": "Drop the stone: Boom!",
+          "gl": "Deixa caer a pedra: bum!",
+          "es": "Deja caer la piedra: ¡bum!"
+        },
+        {
+          "en": "Make your body big! Big like a tree! Now small, small like a stone",
+          "gl": "Fai o corpo grande! Grande coma unha árbore! Agora pequeno, pequeno coma unha pedra",
+          "es": "¡Haz el cuerpo grande! ¡Grande como un árbol! Ahora pequeño, pequeño como una piedra"
+        },
+        {
+          "en": "L-ee-af",
+          "gl": "Leaf (folla), coa vogal estirada",
+          "es": "Leaf (hoja), con la vocal estirada"
+        },
+        {
+          "en": "Pick up the leaf! Drop the leaf!",
+          "gl": "Colle a folla! Deixa caer a folla!",
+          "es": "¡Coge la hoja! ¡Deja caer la hoja!"
+        }
+      ],
+      "familia": {
+        "gl": "Nos paseos ao parque ou ás prazas, a familia invita a criatura a buscar follas no chan e a volver facer o xesto: «Pick up the leaf! Drop the leaf!», mirando xuntas o mesmo.",
+        "es": "En los paseos al parque o a las plazas, la familia invita a la criatura a buscar hojas en el suelo y a volver a hacer el gesto: «Pick up the leaf! Drop the leaf!», mirando juntas lo mismo."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:42-62",
+      "erratasAplicadas": [
+        {
+          "gl": "Transcrición americana, a da voz da app, no lugar da británica do documento (ERRATAS, liñas 29, 31, 50-54, 141). Segue o uso do resto do contido: sen marcas de duración, /i/ tensa fronte a /ɪ/ relaxada.",
+          "es": "Transcripción americana, la de la voz de la app, en lugar de la británica del documento (ERRATAS, líneas 29, 31, 50-54, 141). Sigue el uso del resto del contenido: sin marcas de duración, /i/ tensa frente a /ɪ/ relajada."
+        },
+        {
+          "gl": "Quitáronse os números de nota pegados ás palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»).",
+          "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
+        },
+        {
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+        },
+        {
+          "gl": "Obxectivo 4: o documento contrasta leaf con stick, que non está na unidade; póñese big, que é da unidade e leva a mesma /ɪ/. ERRATAS non sinala esta liña (48); aplícase o seu criterio das liñas 27 e 90/99 (contraste só con palabras que estean).",
+          "es": "Objetivo 4: el documento contrasta leaf con stick, que no está en la unidad; se pone big, que es de la unidad y lleva la misma /ɪ/. ERRATAS no señala esta línea (48); se aplica su criterio de las líneas 27 y 90/99 (contraste solo con palabras que estén)."
+        },
+        {
+          "gl": "Focalización: o documento describe a vogal de drop como /ɒ/ redondeada; en inglés americano é /ɑ/, aberta e sen redondear.",
+          "es": "Focalización: el documento describe la vocal de drop como /ɒ/ redondeada; en inglés americano es /ɑ/, abierta y sin redondear."
+        }
+      ],
+      "naonEntra": [
+        {
+          "que": {
+            "gl": "A palabra stick no contraste do obxectivo 4.",
+            "es": "La palabra stick en el contraste del objetivo 4."
+          },
+          "porque": {
+            "gl": "Non está na unidade; substitúea big.",
+            "es": "No está en la unidad; la sustituye big."
+          }
+        }
+      ]
+    },
+    {
+      "id": "T2.U3",
+      "titulo": {
+        "gl": "Texturas, sabores e alimentación saudable",
+        "es": "Texturas, sabores y alimentación saludable"
+      },
+      "semanas": 6,
+      "mesesDocumento": {
+        "gl": "xaneiro - febreiro",
+        "es": "enero - febrero"
+      },
+      "objetivos": [
+        {
+          "gl": "Facer xestos coordinados de mastigar e de tragar de mentira ao oír as ordes bite e eat.",
+          "es": "Hacer gestos coordinados de masticar y de tragar de mentira al oír las órdenes bite y eat."
+        },
+        {
+          "gl": "Distinguir polo tacto e polo gusto a froita fresca (apple) do alimento cocido no forno (bread).",
+          "es": "Distinguir por el tacto y por el gusto la fruta fresca (apple) del alimento horneado (bread)."
+        },
+        {
+          "gl": "Recoñecer co tacto o morno e o frío, distinguindo warm de cold.",
+          "es": "Reconocer con el tacto lo templado y lo frío, distinguiendo warm de cold."
+        },
+        {
+          "gl": "Distinguir de oído a vogal aberta anterior non redondeada /æ/ (apple) das vogais centrais do castelán.",
+          "es": "Distinguir de oído la vocal abierta anterior no redondeada /æ/ (apple) de las vocales centrales del castellano."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Apple",
+          "ipa": "/ˈæpəl/",
+          "gl": "mazá",
+          "es": "manzana"
+        },
+        {
+          "en": "Bread",
+          "ipa": "/brɛd/",
+          "gl": "pan",
+          "es": "pan"
+        },
+        {
+          "en": "Eat",
+          "ipa": "/it/",
+          "gl": "comer",
+          "es": "comer"
+        },
+        {
+          "en": "Bite",
+          "ipa": "/baɪt/",
+          "gl": "trabar, dar unha trabada",
+          "es": "morder, dar un mordisco"
+        },
+        {
+          "en": "Warm",
+          "ipa": "/wɔrm/",
+          "gl": "morno, quentiño",
+          "es": "templado, calentito"
+        }
+      ],
+      "accionsTPR": [
+        {
+          "en": "Eat!",
+          "xesto": {
+            "gl": "Levar as mans á boca imitando comer con culler.",
+            "es": "Llevarse las manos a la boca imitando comer con cuchara."
+          }
+        },
+        {
+          "en": "Bite!",
+          "xesto": {
+            "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
+            "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
+          }
+        },
+        {
+          "en": "Cold!",
+          "xesto": {
+            "gl": "Fregar os brazos coas mans, coma quen ten frío.",
+            "es": "Frotarse los brazos con las manos, como quien tiene frío."
+          }
+        },
+        {
+          "en": "Warm!",
+          "xesto": {
+            "gl": "Abrazarse o peito, coma quen está quentiño.",
+            "es": "Abrazarse el pecho, como quien está calentito."
+          }
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Rodas de mazá fresca, aceda e doce",
+          "es": "Rodajas de manzana fresca, ácida y dulce"
+        },
+        {
+          "gl": "Anacos de pan artesán crocante, de codia rugosa e miolo elástico",
+          "es": "Trozos de pan artesano crujiente, de corteza rugosa y miga elástica"
+        },
+        {
+          "gl": "Bolsas térmicas de sementes, quentadas sen pasarse (warm)",
+          "es": "Bolsas térmicas de semillas, calentadas sin pasarse (warm)"
+        },
+        {
+          "gl": "Bloques de xeo envoltos en gasas seguras (cold)",
+          "es": "Bloques de hielo envueltos en gasas seguras (cold)"
+        }
+      ],
+      "fonoloxia": {
+        "gl": "A vogal /æ/ de apple pide abrir a boca máis ca para a /e/ media do castelán e do galego, e poñer a lingua noutro sitio ca para a /a/. A persoa adulta deixa ver como baixa a queixada e abre a boca ao dicir «Aa-pple».",
+        "es": "La vocal /æ/ de apple pide abrir la boca más que para la /e/ media del castellano y del gallego, y colocar la lengua en otro sitio que para la /a/. La persona adulta deja ver cómo baja la mandíbula y abre la boca al decir «Aa-pple»."
+      },
+      "contraste": null,
+      "dinamica": {
+        "inicio": {
+          "gl": "Preparar a mesa do lanche da mañá. A persoa adulta corta unha mazá diante das criaturas: «Look, an apple! Red and crunchy apple».",
+          "es": "Preparar la mesa del almuerzo de la mañana. La persona adulta corta una manzana delante de las criaturas: «Look, an apple! Red and crunchy apple»."
+        },
+        "desenvolvemento": {
+          "gl": "Obradoiro de cata. Cada criatura recibe un anaco de pan morno: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!». A persoa adulta responde a cada acción no momento en que pasa.",
+          "es": "Taller de cata. Cada criatura recibe un trozo de pan templado: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!». La persona adulta responde a cada acción en el momento en que pasa."
+        },
+        "peche": {
+          "gl": "Xogo das bolsas térmicas. A persoa adulta pon no colo de cada criatura un saquiño morno e exclama: «Mmm, warm and soft».",
+          "es": "Juego de las bolsas térmicas. La persona adulta pone en el regazo de cada criatura un saquito templado y exclama: «Mmm, warm and soft»."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Look, an apple! Red and crunchy apple",
+          "gl": "Mira, unha mazá! Unha mazá vermella e crocante",
+          "es": "¡Mira, una manzana! Una manzana roja y crujiente"
+        },
+        {
+          "en": "Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!",
+          "gl": "Toca o pan. Está morno. Pan morno! Agora, dálle unha trabada! Traba! Cronch!",
+          "es": "Toca el pan. Está templado. ¡Pan templado! Ahora, ¡dale un mordisco! ¡Muerde! ¡Crunch!"
+        },
+        {
+          "en": "Mmm, warm and soft",
+          "gl": "Mmm, morno e suave",
+          "es": "Mmm, templado y suave"
+        },
+        {
+          "en": "Aa-pple",
+          "gl": "Apple (mazá), coa boca ben aberta",
+          "es": "Apple (manzana), con la boca bien abierta"
+        },
+        {
+          "en": "Bite the apple! Mmm, yummy apple",
+          "gl": "Traba a mazá! Mmm, que mazá tan rica",
+          "es": "¡Muerde la manzana! Mmm, qué manzana tan rica"
+        }
+      ],
+      "familia": {
+        "gl": "Á hora da merenda, ofrecer anacos de froita ou de pan dicindo amodo e cantando: «Bite the apple! Mmm, yummy apple», e agardar con paciencia a resposta ou a mirada atenta da criatura.",
+        "es": "A la hora de la merienda, ofrecer trozos de fruta o de pan diciendo despacio y cantando: «Bite the apple! Mmm, yummy apple», y esperar con paciencia la respuesta o la mirada atenta de la criatura."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:63-83",
+      "erratasAplicadas": [
+        {
+          "gl": "Transcrición americana, a da voz da app, no lugar da británica do documento (ERRATAS, liñas 29, 31, 50-54, 141). Segue o uso do resto do contido: sen marcas de duración, /i/ tensa fronte a /ɪ/ relaxada.",
+          "es": "Transcripción americana, la de la voz de la app, en lugar de la británica del documento (ERRATAS, líneas 29, 31, 50-54, 141). Sigue el uso del resto del contenido: sin marcas de duración, /i/ tensa frente a /ɪ/ relajada."
+        },
+        {
+          "gl": "Quitáronse os números de nota pegados ás palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»).",
+          "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
+        },
+        {
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+        }
+      ],
+      "naonEntra": []
+    },
+    {
+      "id": "T2.U4",
+      "titulo": {
+        "gl": "O corpo, o xabón e o coidado persoal",
+        "es": "El cuerpo, el jabón y el cuidado personal"
+      },
+      "semanas": 6,
+      "mesesDocumento": {
+        "gl": "marzo - abril",
+        "es": "marzo - abril"
+      },
+      "objetivos": [
+        {
+          "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
+          "es": "Seguir las órdenes de frotar y lavar el cuerpo al oír wash y rub."
+        },
+        {
+          "gl": "Manipular o xabón (soap) e asociar el e o tacto da toalla (towel) á rutina de hixiene da aula.",
+          "es": "Manipular el jabón (soap) y asociarlo, junto con el tacto de la toalla (towel), a la rutina de higiene del aula."
+        },
+        {
+          "gl": "Sentir co tacto o que é soft fronte a superficies rugosas.",
+          "es": "Sentir con el tacto lo que es soft frente a superficies rugosas."
+        },
+        {
+          "gl": "Percibir a vogal central breve /ʌ/ (rub) distinguíndoa da /ɑ/ aberta (wash), próxima á /a/ do galego e do castelán.",
+          "es": "Percibir la vocal central breve /ʌ/ (rub) distinguiéndola de la /ɑ/ abierta (wash), cercana a la /a/ del gallego y del castellano."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Wash",
+          "ipa": "/wɑʃ/",
+          "gl": "lavar",
+          "es": "lavar"
+        },
+        {
+          "en": "Soap",
+          "ipa": "/soʊp/",
+          "gl": "xabón",
+          "es": "jabón"
+        },
+        {
+          "en": "Towel",
+          "ipa": "/ˈtaʊəl/",
+          "gl": "toalla",
+          "es": "toalla"
+        },
+        {
+          "en": "Rub",
+          "ipa": "/rʌb/",
+          "gl": "fregar, frotar",
+          "es": "frotar"
+        },
+        {
+          "en": "Soft",
+          "ipa": "/sɔft/",
+          "gl": "suave, brando",
+          "es": "suave, blando"
+        }
+      ],
+      "accionsTPR": [
+        {
+          "en": "Wash!",
+          "xesto": {
+            "gl": "Fregar as palmas das mans facendo círculos sen parar.",
+            "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
+          }
+        },
+        {
+          "en": "Rub!",
+          "xesto": {
+            "gl": "Pasar os dedos polos brazos ou polas pernas fregando.",
+            "es": "Pasar los dedos por los brazos o por las piernas frotando."
+          }
+        },
+        {
+          "en": null,
+          "xesto": {
+            "gl": "Sacudir os brazos e as pernas coma quen se seca a correr.",
+            "es": "Sacudir los brazos y las piernas como quien se seca deprisa."
+          }
+        },
+        {
+          "en": "Soft!",
+          "xesto": {
+            "gl": "Tocar as meixelas suavemente.",
+            "es": "Tocarse las mejillas suavemente."
+          }
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Pastillas de xabón de glicerina neutra, de cheiro suave",
+          "es": "Pastillas de jabón de glicerina neutra, de olor suave"
+        },
+        {
+          "gl": "Auga con escuma",
+          "es": "Agua con espuma"
+        },
+        {
+          "gl": "Toallas de rizo de algodón moi suaves",
+          "es": "Toallas de rizo de algodón muy suaves"
+        },
+        {
+          "gl": "Cepillos de pelo brando",
+          "es": "Cepillos de cerdas blandas"
+        },
+        {
+          "gl": "Bonecos de vinilo lavables",
+          "es": "Muñecos de vinilo lavables"
+        }
+      ],
+      "fonoloxia": {
+        "gl": "A vogal /ʌ/ de rub é unha vogal central, media aberta e breve, que adoita confundirse coa /a/ do castelán. A persoa adulta pronúnciaa coa boca neutra e relaxada, sen abrila tanto coma para a /a/ romance: «Rub, rub, rub your hands».",
+        "es": "La vocal /ʌ/ de rub es una vocal central, media abierta y breve, que suele confundirse con la /a/ del castellano. La persona adulta la dice con la boca neutra y relajada, sin abrirla tanto como para la /a/ romance: «Rub, rub, rub your hands»."
+      },
+      "contraste": {
+        "a": "rub",
+        "b": "wash",
+        "nota": {
+          "gl": "/ʌ/ breve e central de rub fronte a /ɑ/ aberta de wash, que é a máis parecida á /a/ coa que se confunde: as dúas son da unidade.",
+          "es": "/ʌ/ breve y central de rub frente a /ɑ/ abierta de wash, que es la más parecida a la /a/ con la que se confunde: las dos son de la unidad."
+        }
+      },
+      "dinamica": {
+        "inicio": {
+          "gl": "Lavar o boneco da clase nunha palangana. A persoa adulta di: «Baby is dirty! Let's get the soap. Smell the soap!».",
+          "es": "Lavar el muñeco de la clase en una palangana. La persona adulta dice: «Baby is dirty! Let's get the soap. Smell the soap!»."
+        },
+        "desenvolvemento": {
+          "gl": "Cada criatura colle a súa pastilla de xabón coas mans molladas: «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!».",
+          "es": "Cada criatura coge su pastilla de jabón con las manos mojadas: «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!»."
+        },
+        "peche": {
+          "gl": "Cada criatura coa súa toalla: «Dry with the towel. Feel how soft it is. Soft towel on your nose!».",
+          "es": "Cada criatura con su toalla: «Dry with the towel. Feel how soft it is. Soft towel on your nose!»."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Baby is dirty! Let's get the soap. Smell the soap!",
+          "gl": "O bebé está sucio! Imos polo xabón. Cheira o xabón!",
+          "es": "¡El bebé está sucio! Vamos a por el jabón. ¡Huele el jabón!"
+        },
+        {
+          "en": "Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!",
+          "gl": "Frega o xabón! Frega, frega, frega! Agora lava as mans debaixo da auga! Lava!",
+          "es": "¡Frota el jabón! ¡Frota, frota, frota! ¡Ahora lávate las manos bajo el agua! ¡Lava!"
+        },
+        {
+          "en": "Dry with the towel. Feel how soft it is. Soft towel on your nose!",
+          "gl": "Sécate coa toalla. Nota que suave é. Toalla suave no nariz!",
+          "es": "Sécate con la toalla. Nota qué suave es. ¡Toalla suave en la nariz!"
+        },
+        {
+          "en": "Rub, rub, rub your hands",
+          "gl": "Frega, frega, frega as mans",
+          "es": "Frota, frota, frota las manos"
+        },
+        {
+          "en": "Rub the soap, wash, wash, wash!",
+          "gl": "Frega o xabón, lava, lava, lava!",
+          "es": "¡Frota el jabón, lava, lava, lava!"
+        }
+      ],
+      "familia": {
+        "gl": "Ao lavar as mans cando se volve da rúa, cantar a fórmula «Rub the soap, wash, wash, wash!» mentres se fai escuma que se vexa entre as mans da criatura e as da persoa adulta.",
+        "es": "Al lavarse las manos al volver de la calle, cantar la fórmula «Rub the soap, wash, wash, wash!» mientras se hace espuma que se vea entre las manos de la criatura y las de la persona adulta."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:84-104",
+      "erratasAplicadas": [
+        {
+          "gl": "Transcrición americana, a da voz da app, no lugar da británica do documento (ERRATAS, liñas 29, 31, 50-54, 141). Segue o uso do resto do contido: sen marcas de duración, /i/ tensa fronte a /ɪ/ relaxada.",
+          "es": "Transcripción americana, la de la voz de la app, en lugar de la británica del documento (ERRATAS, líneas 29, 31, 50-54, 141). Sigue el uso del resto del contenido: sin marcas de duración, /i/ tensa frente a /ɪ/ relajada."
+        },
+        {
+          "gl": "Quitáronse os números de nota pegados ás palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»).",
+          "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
+        },
+        {
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+        },
+        {
+          "gl": "Obxectivo 4: o documento pide /ʊ/ de foot fronte a /u/ de boot, e a focalización traballa /ʌ/ de rub; ningunha das tres está no vocabulario (ERRATAS, liñas 90/99: un só contraste, con palabras que estean). Quédase o da focalización, rub, e o par faise con wash, da unidade.",
+          "es": "Objetivo 4: el documento pide /ʊ/ de foot frente a /u/ de boot, y la focalización trabaja /ʌ/ de rub; ninguna de las tres está en el vocabulario (ERRATAS, líneas 90/99: un solo contraste, con palabras que estén). Se queda el de la focalización, rub, y el par se hace con wash, de la unidad."
+        }
+      ],
+      "naonEntra": [
+        {
+          "que": {
+            "gl": "O contraste do obxectivo 4 entre /ʊ/ (foot) e /u/ (boot).",
+            "es": "El contraste del objetivo 4 entre /ʊ/ (foot) y /u/ (boot)."
+          },
+          "porque": {
+            "gl": "Foot e boot non están na unidade (ERRATAS, liñas 90/99).",
+            "es": "Foot y boot no están en la unidad (ERRATAS, líneas 90/99)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "T2.U5",
+      "titulo": {
+        "gl": "Animais en movemento, carreira e calma",
+        "es": "Animales en movimiento, carrera y calma"
+      },
+      "semanas": 6,
+      "mesesDocumento": {
+        "gl": "maio - xuño",
+        "es": "mayo - junio"
+      },
+      "objetivos": [
+        {
+          "gl": "Regular o movemento de todo o corpo alternando a carreira rápida (run) e a quietude (sleep / stop).",
+          "es": "Regular el movimiento de todo el cuerpo alternando la carrera rápida (run) y la quietud (sleep / stop)."
+        },
+        {
+          "gl": "Emparellar figuras de animais de todos os días (cat, dog) cos seus sons e cos seus movementos.",
+          "es": "Emparejar figuras de animales de todos los días (cat, dog) con sus sonidos y con sus movimientos."
+        },
+        {
+          "gl": "Interiorizar a velocidade, contrastando fast e slow.",
+          "es": "Interiorizar la velocidad, contrastando fast y slow."
+        },
+        {
+          "gl": "Asimilar o contraste ao final da palabra: a /ɡ/ sonora de dog fronte á /t/ xorda de cat.",
+          "es": "Asimilar el contraste al final de la palabra: la /ɡ/ sonora de dog frente a la /t/ sorda de cat."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Dog",
+          "ipa": "/dɔɡ/",
+          "gl": "can",
+          "es": "perro"
+        },
+        {
+          "en": "Cat",
+          "ipa": "/kæt/",
+          "gl": "gato",
+          "es": "gato"
+        },
+        {
+          "en": "Run",
+          "ipa": "/rʌn/",
+          "gl": "correr",
+          "es": "correr"
+        },
+        {
+          "en": "Sleep",
+          "ipa": "/slip/",
+          "gl": "durmir",
+          "es": "dormir"
+        },
+        {
+          "en": "Stop",
+          "ipa": "/stɑp/",
+          "gl": "parar",
+          "es": "parar"
+        }
+      ],
+      "accionsTPR": [
+        {
+          "en": "Run!",
+          "xesto": {
+            "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
+            "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
+          }
+        },
+        {
+          "en": "Sleep!",
+          "xesto": {
+            "gl": "Apoiar a cabeza nas mans xuntas, pechar os ollos e respirar fondo de mentira.",
+            "es": "Apoyar la cabeza en las manos juntas, cerrar los ojos y respirar hondo de mentira."
+          }
+        },
+        {
+          "en": "Stop!",
+          "xesto": {
+            "gl": "Quedar quieto ao momento.",
+            "es": "Quedarse quieto al momento."
+          }
+        },
+        {
+          "en": "Cat!",
+          "xesto": {
+            "gl": "Poñerse a catro patas e arquear o lombo coma un gato.",
+            "es": "Ponerse a cuatro patas y arquear el lomo como un gato."
+          }
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Figuras grandes e pesadas de animais, de plástico duro e de caucho natural",
+          "es": "Figuras grandes y pesadas de animales, de plástico duro y de caucho natural"
+        },
+        {
+          "gl": "Camas brandas de felpa para animais",
+          "es": "Camas blandas de felpa para animales"
+        },
+        {
+          "gl": "Correas de paseo de tea",
+          "es": "Correas de paseo de tela"
+        },
+        {
+          "gl": "Mantas lixeiras de apego",
+          "es": "Mantas ligeras de apego"
+        }
+      ],
+      "fonoloxia": {
+        "gl": "En castelán e en galego as oclusivas sonoras /b, d, ɡ/ case non existen ao final de sílaba e tenden a ensordecer ou a perderse. A persoa adulta marca a /ɡ/ sonora do final de dog /dɔɡ/, coa vibración da gorxa que se nota ao tocala, fronte ao final xordo de cat /kæt/.",
+        "es": "En castellano y en gallego las oclusivas sonoras /b, d, ɡ/ casi no existen al final de sílaba y tienden a ensordecerse o a perderse. La persona adulta marca la /ɡ/ sonora del final de dog /dɔɡ/, con la vibración de la garganta que se nota al tocarla, frente al final sordo de cat /kæt/."
+      },
+      "contraste": {
+        "a": "dog",
+        "b": "cat",
+        "nota": {
+          "gl": "Final sonoro /ɡ/ de dog fronte a final xordo /t/ de cat: é o par da focalización do documento e as dúas palabras son da unidade.",
+          "es": "Final sonoro /ɡ/ de dog frente a final sordo /t/ de cat: es el par de la focalización del documento y las dos palabras son de la unidad."
+        }
+      },
+      "dinamica": {
+        "inicio": {
+          "gl": "Un animal dorme na súa cesta. A persoa adulta di baixiño en parentese: «Shh... the dog is sleeping! Sleep, little dog...».",
+          "es": "Un animal duerme en su cesta. La persona adulta susurra en parentese: «Shh... the dog is sleeping! Sleep, little dog...»."
+        },
+        "desenvolvemento": {
+          "gl": "Xogo de espertar e correr na sala de psicomotricidade: «Wake up, dog! Run, dog, run! Fast, fast, fast!». As criaturas corren. A persoa adulta di alto pero suave: «Night time! Sleep!», e as criaturas déitanse no chan ao momento, sen moverse.",
+          "es": "Juego de despertar y correr en la sala de psicomotricidad: «Wake up, dog! Run, dog, run! Fast, fast, fast!». Las criaturas corren. La persona adulta dice alto pero suave: «Night time! Sleep!», y las criaturas se tumban en el suelo al momento, sin moverse."
+        },
+        "peche": {
+          "gl": "Acariñar as figuras dos animais amodo: «Soft cat... nice cat».",
+          "es": "Acariciar las figuras de los animales despacio: «Soft cat... nice cat»."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Shh... the dog is sleeping! Sleep, little dog...",
+          "gl": "Chis... o can está durmindo! Durme, canciño...",
+          "es": "Chis... ¡el perro está durmiendo! Duerme, perrito..."
+        },
+        {
+          "en": "Wake up, dog! Run, dog, run! Fast, fast, fast!",
+          "gl": "Esperta, can! Corre, can, corre! Rápido, rápido, rápido!",
+          "es": "¡Despierta, perro! ¡Corre, perro, corre! ¡Rápido, rápido, rápido!"
+        },
+        {
+          "en": "Night time! Sleep!",
+          "gl": "É de noite! A durmir!",
+          "es": "¡Es de noche! ¡A dormir!"
+        },
+        {
+          "en": "Soft cat... nice cat",
+          "gl": "Gato suave... gato bo",
+          "es": "Gato suave... gato bueno"
+        },
+        {
+          "en": "Run, run, run... and stop!",
+          "gl": "Corre, corre, corre... e para!",
+          "es": "Corre, corre, corre... ¡y para!"
+        }
+      ],
+      "familia": {
+        "gl": "No camiño a casa ou no corredor da casa, xogar a «Run, run, run... and stop!», parando en seco e celebrando xuntos que se parou, con sorrisos e cun eloxio natural.",
+        "es": "En el camino a casa o en el pasillo de casa, jugar a «Run, run, run... and stop!», parando en seco y celebrando juntos que se ha parado, con sonrisas y con un elogio natural."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:105-125",
+      "erratasAplicadas": [
+        {
+          "gl": "Transcrición americana, a da voz da app, no lugar da británica do documento (ERRATAS, liñas 29, 31, 50-54, 141). Segue o uso do resto do contido: sen marcas de duración, /i/ tensa fronte a /ɪ/ relaxada.",
+          "es": "Transcripción americana, la de la voz de la app, en lugar de la británica del documento (ERRATAS, líneas 29, 31, 50-54, 141). Sigue el uso del resto del contenido: sin marcas de duración, /i/ tensa frente a /ɪ/ relajada."
+        },
+        {
+          "gl": "Quitáronse os números de nota pegados ás palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»).",
+          "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
+        },
+        {
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+        },
+        {
+          "gl": "«mesesDocumento» copia o que di o documento; non programa nada: manda o calendario de 10 meses da app (ERRATAS, liñas 20-127: a unidade 5, maio-xuño, e a 6, xuño-xullo / inicio de curso, solápanse e saen do curso).",
+          "es": "«mesesDocumento» copia lo que dice el documento; no programa nada: manda el calendario de 10 meses de la app (ERRATAS, líneas 20-127: la unidad 5, mayo-junio, y la 6, junio-julio / inicio de curso, se solapan y se salen del curso)."
+        },
+        {
+          "gl": "Obxectivo 4: o documento contrasta dog con duck, e a focalización dog con cat (ERRATAS, liñas 111/120: un só contraste, con palabras que estean). Quédase dog fronte a cat, que son da unidade; o final xordo de cat é /t/, non /k/.",
+          "es": "Objetivo 4: el documento contrasta dog con duck, y la focalización dog con cat (ERRATAS, líneas 111/120: un solo contraste, con palabras que estén). Se queda dog frente a cat, que son de la unidad; el final sordo de cat es /t/, no /k/."
+        }
+      ],
+      "naonEntra": [
+        {
+          "que": {
+            "gl": "A palabra duck e a súa /k/ final no contraste do obxectivo 4.",
+            "es": "La palabra duck y su /k/ final en el contraste del objetivo 4."
+          },
+          "porque": {
+            "gl": "Duck non está na unidade (ERRATAS, liñas 111/120).",
+            "es": "Duck no está en la unidad (ERRATAS, líneas 111/120)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "T2.U6",
+      "titulo": {
+        "gl": "Espazos, recipientes e movemento rítmico",
+        "es": "Espacios, recipientes y movimiento rítmico"
+      },
+      "semanas": 6,
+      "mesesDocumento": {
+        "gl": "xuño - xullo / inicio de curso",
+        "es": "junio - julio / inicio de curso"
+      },
+      "objetivos": [
+        {
+          "gl": "Seguir as ordes de desprazarse e de marcar o ritmo co corpo ao oír go, stop e clap.",
+          "es": "Seguir las órdenes de desplazarse y de marcar el ritmo con el cuerpo al oír go, stop y clap."
+        },
+        {
+          "gl": "Meter e sacar cousas redondas (ball) en recipientes cúbicos pechados (box).",
+          "es": "Meter y sacar cosas redondas (ball) en recipientes cúbicos cerrados (box)."
+        },
+        {
+          "gl": "Sentir o peso manipulando caixas con cargas distintas (heavy e light).",
+          "es": "Sentir el peso manipulando cajas con cargas distintas (heavy y light)."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Ball",
+          "ipa": "/bɔl/",
+          "gl": "pelota",
+          "es": "pelota"
+        },
+        {
+          "en": "Box",
+          "ipa": "/bɑks/",
+          "gl": "caixa",
+          "es": "caja"
+        },
+        {
+          "en": "Clap",
+          "ipa": "/klæp/",
+          "gl": "aplaudir, dar palmas",
+          "es": "aplaudir, dar palmas"
+        },
+        {
+          "en": "Go",
+          "ipa": "/ɡoʊ/",
+          "gl": "ir, adiante",
+          "es": "ir, adelante"
+        },
+        {
+          "en": "Stop",
+          "ipa": "/stɑp/",
+          "gl": "parar",
+          "es": "parar"
+        }
+      ],
+      "accionsTPR": [
+        {
+          "en": "Clap!",
+          "xesto": {
+            "gl": "Dar palmas co ritmo, coas dúas mans diante do peito.",
+            "es": "Dar palmas con el ritmo, con las dos manos delante del pecho."
+          }
+        },
+        {
+          "en": "Go!",
+          "xesto": {
+            "gl": "Botar a andar con forza, movendo os brazos.",
+            "es": "Echar a andar con fuerza, moviendo los brazos."
+          }
+        },
+        {
+          "en": "Stop!",
+          "xesto": {
+            "gl": "Quedar quieto de todo.",
+            "es": "Quedarse quieto del todo."
+          }
+        },
+        {
+          "en": "Roll! / Ball!",
+          "xesto": {
+            "gl": "Facer rodar unha cousa polo chan coas dúas mans.",
+            "es": "Hacer rodar una cosa por el suelo con las dos manos."
+          }
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Caixas de cartón ondulado de distintos tamaños",
+          "es": "Cajas de cartón corrugado de distintos tamaños"
+        },
+        {
+          "gl": "Pelotas de distinto peso: de feltro, de caucho que bota, de la maciza e de coiro chea de area",
+          "es": "Pelotas de distinto peso: de fieltro, de caucho que bota, de lana maciza y de cuero rellena de arena"
+        },
+        {
+          "gl": "Recipientes de plástico que se poden apilar",
+          "es": "Recipientes de plástico que se pueden apilar"
+        }
+      ],
+      "fonoloxia": {
+        "gl": "Distinguir o ditongo /oʊ/ de go da vogal pura /o/ das linguas romances da península. A persoa adulta marca o desprazamento da boca e o redondeo dos beizos ao final: «G-o-w!».",
+        "es": "Distinguir el diptongo /oʊ/ de go de la vocal pura /o/ de las lenguas romances de la península. La persona adulta marca el deslizamiento de la boca y el redondeo de los labios al final: «G-o-w!»."
+      },
+      "contraste": null,
+      "dinamica": {
+        "inicio": {
+          "gl": "Unha caixa pechada cunha pelota pesada dentro. A persoa adulta abanéaa para que soe xordo: «What is in the box? Listen! A box!».",
+          "es": "Una caja cerrada con una pelota pesada dentro. La persona adulta la sacude para que suene sordo: «What is in the box? Listen! A box!»."
+        },
+        "desenvolvemento": {
+          "gl": "Cada criatura recibe unha pelota. Ao sinal «Go!» camiñan botando a pelota. Ao oír «Clap!» suxeitan a pelota entre os xeonllos ou déixana no chan e dan tres palmadas fortes. Ao oír «In the box!» corren a metela na caixa.",
+          "es": "Cada criatura recibe una pelota. A la señal «Go!» caminan botando la pelota. Al oír «Clap!» sujetan la pelota entre las rodillas o la dejan en el suelo y dan tres palmadas fuertes. Al oír «In the box!» corren a meterla en la caja."
+        },
+        "peche": {
+          "gl": "Levantar caixas: «This box is heavy! Oof! Lift the box».",
+          "es": "Levantar cajas: «This box is heavy! Oof! Lift the box»."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "What is in the box? Listen! A box!",
+          "gl": "Que hai na caixa? Escoita! Unha caixa!",
+          "es": "¿Qué hay en la caja? ¡Escucha! ¡Una caja!"
+        },
+        {
+          "en": "Go!",
+          "gl": "Adiante!",
+          "es": "¡Adelante!"
+        },
+        {
+          "en": "Clap!",
+          "gl": "Palmas!",
+          "es": "¡Palmas!"
+        },
+        {
+          "en": "In the box!",
+          "gl": "Á caixa!",
+          "es": "¡A la caja!"
+        },
+        {
+          "en": "This box is heavy! Oof! Lift the box",
+          "gl": "Esta caixa pesa moito! Uf! Levanta a caixa",
+          "es": "¡Esta caja pesa mucho! ¡Uf! Levanta la caja"
+        },
+        {
+          "en": "G-o-w!",
+          "gl": "Go (adiante), co ditongo ben marcado",
+          "es": "Go (adelante), con el diptongo bien marcado"
+        },
+        {
+          "en": "Put the ball in the box! Go, go, go!",
+          "gl": "Mete a pelota na caixa! Vamos, vamos, vamos!",
+          "es": "¡Mete la pelota en la caja! ¡Vamos, vamos, vamos!"
+        }
+      ],
+      "familia": {
+        "gl": "Ao gardar os xoguetes nas súas caixas ou cestos do cuarto da criatura, cantar «Put the ball in the box! Go, go, go!», para que recoller sexa algo compartido e alegre.",
+        "es": "Al guardar los juguetes en sus cajas o cestos del cuarto de la criatura, cantar «Put the ball in the box! Go, go, go!», para que recoger sea algo compartido y alegre."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:126-146",
+      "erratasAplicadas": [
+        {
+          "gl": "Transcrición americana, a da voz da app, no lugar da británica do documento (ERRATAS, liñas 29, 31, 50-54, 141). Segue o uso do resto do contido: sen marcas de duración, /i/ tensa fronte a /ɪ/ relaxada.",
+          "es": "Transcripción americana, la de la voz de la app, en lugar de la británica del documento (ERRATAS, líneas 29, 31, 50-54, 141). Sigue el uso del resto del contenido: sin marcas de duración, /i/ tensa frente a /ɪ/ relajada."
+        },
+        {
+          "gl": "Quitáronse os números de nota pegados ás palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»).",
+          "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
+        },
+        {
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+        },
+        {
+          "gl": "«mesesDocumento» copia o que di o documento; non programa nada: manda o calendario de 10 meses da app (ERRATAS, liñas 20-127: a unidade 5, maio-xuño, e a 6, xuño-xullo / inicio de curso, solápanse e saen do curso).",
+          "es": "«mesesDocumento» copia lo que dice el documento; no programa nada: manda el calendario de 10 meses de la app (ERRATAS, líneas 20-127: la unidad 5, mayo-junio, y la 6, junio-julio / inicio de curso, se solapan y se salen del curso)."
+        },
+        {
+          "gl": "Focalización: o documento escribe o ditongo de go como /əʊ/ (británico); en americano é /oʊ/.",
+          "es": "Focalización: el documento escribe el diptongo de go como /əʊ/ (británico); en americano es /oʊ/."
+        }
+      ],
+      "naonEntra": [
+        {
+          "que": {
+            "gl": "O obxectivo 4: distinguir de oído a /ɒ/ de box da /ɔː/ longa de ball.",
+            "es": "El objetivo 4: distinguir de oído la /ɒ/ de box de la /ɔː/ larga de ball."
+          },
+          "porque": {
+            "gl": "En inglés americano ese contraste non existe así (ERRATAS, liña 132).",
+            "es": "En inglés americano ese contraste no existe así (ERRATAS, línea 132)."
+          }
+        }
+      ]
+    }
+  ]
+}
