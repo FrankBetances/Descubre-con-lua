@@ -8,6 +8,13 @@ La dictó Frank el 21/10/2026: «hay que agregar aquí la regla cero: prohibido 
 - **Ante un fallo no hay excusas ni explicaciones de por qué pasó: se corrige.** El informe dice qué estaba mal, qué se ha corregido y con qué se ha comprobado, en una línea. Nada de contexto, atenuantes ni disculpas largas.
 - **Lo que Frank pidió se entrega entero y bien hecho.** Un resultado pobre presentado con sus motivos sigue siendo un resultado pobre.
 
+## 💎 REGLA DIAMANTE · MÍNIMO GASTO DE TOKENS, MÁXIMO ESFUERZO. SIEMPRE, SIEMPRE, SIEMPRE
+
+La dictó Frank el 21/10/2026. Manda sobre todo el fichero, regla de oro incluida.
+
+- **Se gasta el mínimo de tokens y se hace el máximo esfuerzo, siempre.**
+- **Si Frank dice que no hay saldo, no se gasta nada.** Se para en ese instante y no se lleva la contraria.
+
 ## 🟨 REGLA DE ORO · NO SE PARA NUNCA HASTA COMPLETAR EL PROYECTO, CON EL MÍNIMO GASTO
 
 La dictó Frank el 21/10/2026, después de habérsela repetido a Claude Code más de cincuenta veces: «no se puede parar nunca, nunca, se debe completar con el mínimo gasto, déjalo escrito en oro». Manda sobre todo el fichero.
