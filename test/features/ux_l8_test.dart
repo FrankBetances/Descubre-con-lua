@@ -356,6 +356,10 @@ void main() {
                     '$cantas palabras de antes que ${gl ? 'as asembleas e os contos de outubro' : 'las asambleas y los cuentos de octubre'}')),
             findsOneWidget);
 
+        // La tarjeta del plan curricular (F11) va encima: la puerta tiene que
+        // quedar entera en pantalla antes de tocarla.
+        await tester.ensureVisible(porta);
+        await tester.pumpAndSettle();
         await tester.tap(porta);
         await Pasarela.asentar(tester);
         expect(find.byType(PonteAoDiaScreen), findsOneWidget);
