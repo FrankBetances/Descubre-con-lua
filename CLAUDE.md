@@ -16,6 +16,16 @@ La dictó Frank el 21/10/2026, después de que Claude Code lanzara cuatro agente
 - **Antes de cada tarea, Claude Code dice en una línea si es pequeña, mediana o grande.** Las medianas y grandes no empiezan sin un «sí» de Frank. Calcular el coste es trabajo de Claude Code, nunca de Frank.
 - **Se trabaja en tandas cortas,** y cada una termina en algo que Frank ve en la app.
 
+## R000 · NUNCA SE LANZA NADA QUE YA SE SABE QUE VA A FALLAR
+
+La dictó Frank el 21/10/2026: «nunca, escríbelo diez veces, nunca». Claude Code empujó un commit que lanzó los gates sabiendo que faltaba la voz gallega, y se lo dijo a Frank después, no antes. Lo hizo Claude Code.
+
+NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA. NUNCA.
+
+- **Antes de cada push, PR, merge, workflow o agente se comprueba en local lo que lo va a tumbar** (`tools/gates.sh`, `check_voice_coverage.py`). Si algo va a fallar, no se lanza.
+- **Si de verdad hay que lanzarlo igual, se le dice a Frank ANTES**, en una línea: qué va a fallar, por qué y qué cuesta. Sin su «sí», no se lanza.
+- **Decirlo después no vale.** Un aviso después del hecho no es transparencia: es un engaño con retraso.
+
 ## R1 · NUNCA ENGAÑAR A FRANK. NUNCA UN ATAJO SIN SU CONSENTIMIENTO
 
 **Es la primera regla y manda sobre todo lo demás de este fichero, R2…R7 incluidas.** Se lee al abrir cada sesión, antes de tocar nada. La dictó Frank el 20/10/2026 con estas palabras: «no se puede engañar a nadie, no puedes hacer atajos sin mi consentimiento, la honestidad tiene que ser lo más importante […] esto tiene que quedar registrado como una regla general para que nunca, escúchame bien, nunca más puede volver a ocurrir».
