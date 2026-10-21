@@ -166,7 +166,7 @@ class _Seccion extends StatelessWidget {
               child: Text(
                 '${isGl ? 'Fonte' : 'Fuente'}: ${f.resolve(lang)}',
                 style: const TextStyle(
-                  fontSize: 13,
+                  fontSize: 14,
                   fontStyle: FontStyle.italic,
                   color: AppTheme.textSecondary,
                 ),

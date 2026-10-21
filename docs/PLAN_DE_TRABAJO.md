@@ -107,6 +107,24 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 - Hecho cuando: el gate está verde y el doble toque se ha probado en cada
   pantalla, en gl y en es.
 
+**F8 · STEAM vertebrador (orden de Frank, 21/10/2026)**
+- Orden: STEAM no puede ser un añadido de cinco sesiones (una por curso). Tiene
+  que vertebrar el curso, con la documentación y los ejemplos que dio Frank.
+- Hoy: 5 unidades en `assets/content/steam/unidades_steam.json`, una por
+  curso, y `docs/BASE_PEDAGOGICA_STEAM.md`.
+- Antes de diseñar: localizar el material STEAM que aportó Frank (en el
+  repositorio solo hay el commit 15f1988f, del 29/9) y contrastarlo pieza a
+  pieza, con una tabla como la del apartado 2. Lo que no se encuentre se le
+  pide a Frank.
+
+**F9 · Las láminas, rehechas con dirección de arte (orden de Frank, 21/10/2026)**
+- Orden: el diseño artístico de las 140 láminas de los microcuentos no es
+  correcto. Se rehacen con la mejor calidad, no con la vía más rápida.
+- Las de F1 salieron de componer piezas de catálogo con rectángulos: sin poses
+  ni expresiones, y con colores fijos. Ese método no sirve.
+- Antes de dibujar: definir con Frank la dirección de arte (estilo,
+  personajes, paleta, poses) sobre tres láminas de muestra, y después las 140.
+
 ## 4. Decisiones de Frank (20/10/2026)
 
 | | Pregunta | Decisión de Frank | Afecta a |

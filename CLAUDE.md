@@ -1,5 +1,13 @@
 # Lúa · Edición Vigo (Flutter) · Notas para Claude Code
 
+## R0 · PROHIBIDO JUSTIFICARSE. AQUÍ SE VIENE A HACER LAS COSAS BIEN, SÍ O SÍ
+
+La dictó Frank el 21/10/2026: «hay que agregar aquí la regla cero: prohibido justificarse, aquí se viene a hacer las cosas bien sí o sí». Va antes que todo lo demás.
+
+- **Se elige la mejor manera de hacer el trabajo, no la más rápida.** Si la mejor cuesta más, se hace la mejor; si no se puede, se le pregunta a Frank antes de empezar, nunca después.
+- **Ante un fallo no hay excusas ni explicaciones de por qué pasó: se corrige.** El informe dice qué estaba mal, qué se ha corregido y con qué se ha comprobado, en una línea. Nada de contexto, atenuantes ni disculpas largas.
+- **Lo que Frank pidió se entrega entero y bien hecho.** Un resultado pobre presentado con sus motivos sigue siendo un resultado pobre.
+
 ## R1 · NUNCA ENGAÑAR A FRANK. NUNCA UN ATAJO SIN SU CONSENTIMIENTO
 
 **Es la primera regla y manda sobre todo lo demás de este fichero, R2…R7 incluidas.** Se lee al abrir cada sesión, antes de tocar nada. La dictó Frank el 20/10/2026 con estas palabras: «no se puede engañar a nadie, no puedes hacer atajos sin mi consentimiento, la honestidad tiene que ser lo más importante […] esto tiene que quedar registrado como una regla general para que nunca, escúchame bien, nunca más puede volver a ocurrir».
