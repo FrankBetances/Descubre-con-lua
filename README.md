@@ -24,8 +24,22 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
 - **Juega con Lúa · Modo Aula** — todas las asambleas, de cualquier grupo, mes y
   día; el grupo, el mes y el día van en una línea que se abre si hace falta.
 - **Yo, en la escuela** — el nivel y la racha de la docente, *Antes de entrar
-  en el aula* —la guía de dos minutos— y **Formación en el aula**: una lectura
-  corta por cada paso de la asamblea.
+  en el aula* —la guía de dos minutos—, **El modelo** y **Formación en el
+  aula**: las cuatro fases de la asamblea, con su lectura corta, y delante
+  El modelo.
+- **El modelo** — cómo habla la persona adulta, en Yo (aula) y en Guías
+  (casa): el parentese, por qué un audio o una pantalla no sustituyen a la
+  persona, el habla paralela, la espera en tres tiempos, la expansión, el
+  recast, qué cabe esperar en cada edad y qué no mide la app. Cada técnica
+  trae un ejemplo con su frase en inglés y su voz.
+- **El microcuento del mes** — de 2-3 a 5-6, un cuento dialógico de tres o
+  cuatro láminas por unidad: en el aula, debajo de «Comenzar la asamblea», con
+  la tríada y el guion de recast; en casa, en Explorar → Cuentos, con una
+  pregunta por lámina. Lúa solo habla en inglés; la historia la cuenta la
+  persona adulta en gallego o en castellano.
+- **Hoy hice** — al final de Hoy, una lista cerrada de lo que la persona
+  adulta hizo ese día (por ejemplo, «esperé hasta cinco»). Es solo para ella:
+  se guarda el día, sin hora, y lo que marcó; nada de ninguna criatura.
 - **Asamblea matinal de segundo ciclo** — para 4.º, 5.º y 6.º de Infantil, con
   el inglés como tercera lengua. Cuatro fases —apertura, foco rítmico, reto TPR
   y calma—; cada una ocupa la pantalla entera, con su consigna en letra grande,

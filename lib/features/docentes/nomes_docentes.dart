@@ -139,8 +139,8 @@ class NomesDocentes {
   static const formacionCabeceira =
       LocalizedString(gl: 'Formación', es: 'Formación');
   static const formacionDi = LocalizedString(
-      gl: 'Os seis pasos da asemblea, unha lectura curta por paso.',
-      es: 'Los seis pasos de la asamblea, una lectura corta por paso.');
+      gl: 'As catro fases da asemblea e como se fala, en lecturas curtas.',
+      es: 'Las cuatro fases de la asamblea y cómo se habla, en lecturas cortas.');
 
   /// El título de los premios de la docente, que abre su nivel en «Eu».
   static const premios =

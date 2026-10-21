@@ -14,6 +14,8 @@ import '../../premios/widgets/lua_game_strip.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../docentes/nomes_docentes.dart';
+import '../../formacion/views/o_modelo_screen.dart';
+import '../../../data/models/capsula_model.dart';
 
 /// «Formación · Aula»: las cápsulas que lee la maestra.
 ///
@@ -23,8 +25,10 @@ import '../../docentes/nomes_docentes.dart';
 /// cambia es de quién es el recorrido y cómo se titulan las secciones dentro
 /// del lector.
 ///
-/// Los seis bloques NO son temas elegidos a gusto: son los seis pasos de la
-/// asamblea, en su orden. La formación va al lado de lo que hay que hacer.
+/// Las seis lecturas se agrupan por las CUATRO fases de la asamblea (saludo,
+/// enfoque, núcleo TPR y calma), y delante van las herramientas de cómo se
+/// habla, que viven en «O modelo» (arquitectura, apartado 9). La formación va
+/// al lado de lo que hay que hacer.
 class CapsulasAulaScreen extends StatefulWidget {
   final ContentRepository repository;
   final AppLanguage initialLanguage;
@@ -58,9 +62,30 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
       LocalizedString(gl: 'XOGA CON LÚA', es: 'JUEGA CON LÚA');
 
   static const _titulo = LocalizedString(
-    gl: 'Os seis pasos da asemblea',
-    es: 'Los seis pasos de la asamblea',
+    gl: 'As catro fases da asemblea',
+    es: 'Las cuatro fases de la asamblea',
   );
+
+  /// Las cuatro fases, con las lecturas de cada una. Una lectura está en la
+  /// fase en la que la maestra la usa.
+  static const fases = <(LocalizedString, List<String>)>[
+    (
+      LocalizedString(gl: '1 · Saúdo e apertura', es: '1 · Saludo y apertura'),
+      [Bloque.aulaPulsoId],
+    ),
+    (
+      LocalizedString(gl: '2 · Enfoque', es: '2 · Enfoque'),
+      [Bloque.aulaContoId, Bloque.aulaPreguntasId],
+    ),
+    (
+      LocalizedString(gl: '3 · Núcleo TPR', es: '3 · Núcleo TPR'),
+      [Bloque.aulaExploracionId, Bloque.aulaMatematicasId],
+    ),
+    (
+      LocalizedString(gl: '4 · Calma e despedida', es: '4 · Calma y despedida'),
+      [Bloque.aulaPonteCasaId],
+    ),
+  ];
 
   static const _subtitulo = LocalizedString(
     gl: 'Unha lectura curta por paso, para ler antes ou despois da asemblea. '
@@ -69,9 +94,9 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
         'No se usa delante de las criaturas.',
   );
 
-  static const _disponibles = LocalizedString(
-    gl: 'UN PASO, UNHA CÁPSULA',
-    es: 'UN PASO, UNA CÁPSULA',
+  static const _ferramentas = LocalizedString(
+    gl: 'COMO SE FALA, EN TODAS AS FASES',
+    es: 'CÓMO SE HABLA, EN TODAS LAS FASES',
   );
 
   static const _unaCapsula = LocalizedString(
@@ -115,6 +140,44 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
       default:
         return Icons.auto_stories_rounded;
     }
+  }
+
+  Widget _tarxeta(BuildContext context, Bloque bloque) {
+    final lang = _language;
+    final capsulas = widget.repository.getCapsulasAulaByBloqueId(bloque.id);
+    final primera = capsulas.isNotEmpty ? capsulas.first : null;
+    final minutos = primera?.tiempoLecturaMinutos;
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
+      child: AcademyCard(
+        icono: _iconForBloque(bloque.icono),
+        kicker: lang == AppLanguage.gl ? 'Lectura curta' : 'Lectura corta',
+        titulo: bloque.titulo.resolve(lang),
+        descripcion: bloque.descripcion.resolve(lang),
+        meta: capsulas.isEmpty
+            ? _sinCapsulas.resolve(lang)
+            : [
+                '${capsulas.length} '
+                    '${capsulas.length == 1 ? _unaCapsula.resolve(lang) : _variasCapsulas.resolve(lang)}',
+                if (minutos != null) '$minutos min',
+              ].join(' · '),
+        onTap: primera == null
+            ? null
+            : () => Navigator.of(context).push(
+                  RutaLua(
+                    de: context,
+                    builder: (context) => CapsulaDetailScreen(
+                      capsula: primera,
+                      initialLanguage: _language,
+                      onLanguageChanged: _onToggleLanguage,
+                      premios: widget.premios,
+                      audioService: widget.audioService,
+                    ),
+                  ),
+                ),
+      ),
+    );
   }
 
   @override
@@ -164,55 +227,36 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
                         ),
                         const SizedBox(height: AppTheme.spaceXl),
                       ],
-                      Text(
-                        _disponibles.resolve(lang),
-                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                              color: AppTheme.textSecondary,
-                              fontWeight: FontWeight.w800,
-                              letterSpacing: 1.4,
+                      _Rotulo(_ferramentas.resolve(lang)),
+                      Padding(
+                        padding:
+                            const EdgeInsets.only(bottom: AppTheme.spaceLg),
+                        child: AcademyCard(
+                          key: const ValueKey('formacion_o_modelo'),
+                          icono: Icons.record_voice_over_rounded,
+                          kicker: lang == AppLanguage.gl
+                              ? 'Ferramentas'
+                              : 'Herramientas',
+                          titulo: OModeloScreen.nome.resolve(lang),
+                          descripcion: OModeloScreen.di.resolve(lang),
+                          onTap: () => Navigator.of(context).push(RutaLua(
+                            de: context,
+                            builder: (_) => OModeloScreen(
+                              paraAula: true,
+                              language: _language,
+                              onLanguageChanged: _onToggleLanguage,
+                              audioService: widget.audioService,
                             ),
+                          )),
+                        ),
                       ),
-                      const SizedBox(height: AppTheme.spaceMd),
-                      ...bloques.map((bloque) {
-                        final capsulas = widget.repository
-                            .getCapsulasAulaByBloqueId(bloque.id);
-                        final primera =
-                            capsulas.isNotEmpty ? capsulas.first : null;
-                        final minutos = primera?.tiempoLecturaMinutos;
-
-                        return Padding(
-                          padding:
-                              const EdgeInsets.only(bottom: AppTheme.spaceMd),
-                          child: AcademyCard(
-                            icono: _iconForBloque(bloque.icono),
-                            kicker: 'Paso ${bloque.orden}',
-                            titulo: bloque.titulo.resolve(lang),
-                            descripcion: bloque.descripcion.resolve(lang),
-                            meta: capsulas.isEmpty
-                                ? _sinCapsulas.resolve(lang)
-                                : [
-                                    '${capsulas.length} '
-                                        '${capsulas.length == 1 ? _unaCapsula.resolve(lang) : _variasCapsulas.resolve(lang)}',
-                                    if (minutos != null) '$minutos min',
-                                  ].join(' · '),
-                            onTap: primera == null
-                                ? null
-                                : () => Navigator.of(context).push(
-                                      RutaLua(
-                                        de: context,
-                                        builder: (context) =>
-                                            CapsulaDetailScreen(
-                                          capsula: primera,
-                                          initialLanguage: _language,
-                                          onLanguageChanged: _onToggleLanguage,
-                                          premios: widget.premios,
-                                          audioService: widget.audioService,
-                                        ),
-                                      ),
-                                    ),
-                          ),
-                        );
-                      }),
+                      for (final (fase, ids) in fases) ...[
+                        _Rotulo(fase.resolve(lang).toUpperCase()),
+                        for (final bloque
+                            in bloques.where((b) => ids.contains(b.id)))
+                          _tarxeta(context, bloque),
+                        const SizedBox(height: AppTheme.spaceSm),
+                      ],
                     ],
                   ),
                 ),
@@ -221,4 +265,22 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
       ),
     );
   }
+}
+
+class _Rotulo extends StatelessWidget {
+  final String texto;
+  const _Rotulo(this.texto);
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.only(bottom: AppTheme.spaceMd),
+        child: Text(
+          texto,
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                color: AppTheme.textSecondary,
+                fontWeight: FontWeight.w800,
+                letterSpacing: 1.4,
+              ),
+        ),
+      );
 }

@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -6,10 +7,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
+import 'package:descubre_con_lua/data/models/formacion_model.dart';
 import 'package:descubre_con_lua/data/models/o_modelo_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/docentes/views/eu_docente_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/guias_familias_screen.dart';
+import 'package:descubre_con_lua/features/formacion/views/formacion_screen.dart';
 
 /// F2: «O modelo» se abre por Eu (aula) y por Guías (casa), en gl y es, con
 /// texto normal y grande, y trae las nueve secciones de los documentos de
@@ -116,5 +119,37 @@ void main() {
         });
       }
     }
+  }
+
+  // F2: la guía de dos minutos, de aula y de casa, acaba enlazando con «El
+  // modelo».
+  for (final perfil in PerfilFormacion.values) {
+    testWidgets('a guía ${perfil.name} remata en O modelo', (tester) async {
+      tester.view.physicalSize = const Size(360, 640);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+      OModelo.sembrar(OModelo.fromRaw(File(ruta).readAsStringSync()));
+      final guia = GuiaFormacion.fromJson(jsonDecode(
+          File('assets/content/formacion/formacion.${perfil.name}.json')
+              .readAsStringSync()) as Map<String, dynamic>);
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.lightTheme,
+        home: FormacionScreen(
+          perfil: perfil,
+          language: AppLanguage.gl,
+          guiaPrecargada: guia,
+        ),
+      ));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('formacion_o_modelo')), findsNothing);
+      for (var i = 1; i < guia.pasos.length; i++) {
+        await tester.tap(find.byKey(const ValueKey('formacion_seguinte')));
+        await tester.pumpAndSettle();
+      }
+      await tester.tap(find.byKey(const ValueKey('formacion_o_modelo')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('o_modelo')), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    });
   }
 }

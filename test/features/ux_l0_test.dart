@@ -406,7 +406,9 @@ void main() {
           .map((e) =>
               EstrategiaPedagogica.fromJson(Map<String, dynamic>.from(e)))
           .toList();
-      expect(lista, hasLength(5));
+      // F2: siete, con el habla paralela y la expansión. Las dos nuevas no
+      // traen fuente porque los textos de base no les dan autor.
+      expect(lista, hasLength(7));
       for (final e in lista) {
         expect(e.porQueFunciona.gl.trim(), isNotEmpty, reason: e.id);
         expect(e.porQueFunciona.es.trim(), isNotEmpty, reason: e.id);

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/navigation/ruta_lua.dart';
+import 'o_modelo_screen.dart';
+
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/cabecera.dart';
@@ -163,6 +166,25 @@ class _FormacionScreenState extends State<FormacionScreen> {
                           ),
                         ),
                       ),
+                      // Al final, el paso siguiente: cómo se habla (F2).
+                      if (_indice >= guia.pasos.length - 1)
+                        TextButton.icon(
+                          key: const ValueKey('formacion_o_modelo'),
+                          onPressed: () =>
+                              Navigator.of(context).pushReplacement(RutaLua(
+                            de: context,
+                            builder: (_) => OModeloScreen(
+                              paraAula:
+                                  widget.perfil == PerfilFormacion.docente,
+                              language: _language,
+                              onLanguageChanged: widget.onLanguageChanged,
+                            ),
+                          )),
+                          icon: const Icon(Icons.record_voice_over_rounded),
+                          label: Text(isGl
+                              ? 'Despois: O modelo, como se fala'
+                              : 'Después: El modelo, cómo se habla'),
+                        ),
                       Padding(
                         padding: const EdgeInsets.all(AppTheme.spaceLg),
                         child: PasosNavegacion(

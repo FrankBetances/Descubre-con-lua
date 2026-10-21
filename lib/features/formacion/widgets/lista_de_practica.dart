@@ -79,61 +79,65 @@ class ListaDePracticaCard extends StatelessWidget {
           listenable: store,
           builder: (context, _) {
             final feitos = store.practicaDoDia(dia, perfil);
-            return Container(
+            // Material y no Container: el CheckboxListTile pinta su toque en
+            // el Material más cercano, y un fondo intermedio lo taparía.
+            return Material(
               key: ValueKey('practica_$perfil'),
-              decoration: BoxDecoration(
-                color: AppTheme.card,
+              color: AppTheme.card,
+              shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(AppTheme.radiusCard),
-                border: Border.all(color: AppTheme.border),
+                side: const BorderSide(color: AppTheme.border),
               ),
-              padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: Text(
-                      c.titulo.resolve(language).toUpperCase(),
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w800,
-                        letterSpacing: 0.6,
-                        color: context.acento,
-                      ),
-                    ),
-                  ),
-                  for (final p in c.items)
-                    if (p.perfis.contains(perfil))
-                      CheckboxListTile(
-                        key: ValueKey('practica_${perfil}_${p.id}'),
-                        value: feitos.contains(p.id),
-                        onChanged: (_) =>
-                            store.alternarPractica(dia, perfil, p.id),
-                        controlAffinity: ListTileControlAffinity.leading,
-                        contentPadding:
-                            const EdgeInsets.symmetric(horizontal: 4),
-                        activeColor: context.acento,
-                        title: Text(
-                          p.texto.resolve(language),
-                          style: const TextStyle(
-                            fontSize: 15,
-                            color: AppTheme.textPrimary,
-                            height: 1.3,
-                          ),
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Text(
+                        c.titulo.resolve(language).toUpperCase(),
+                        style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 0.6,
+                          color: context.acento,
                         ),
                       ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(8, 4, 8, 0),
-                    child: Text(
-                      c.nota.resolve(language),
-                      style: const TextStyle(
-                        fontSize: 13,
-                        color: AppTheme.textSecondary,
-                        height: 1.35,
+                    ),
+                    for (final p in c.items)
+                      if (p.perfis.contains(perfil))
+                        CheckboxListTile(
+                          key: ValueKey('practica_${perfil}_${p.id}'),
+                          value: feitos.contains(p.id),
+                          onChanged: (_) =>
+                              store.alternarPractica(dia, perfil, p.id),
+                          controlAffinity: ListTileControlAffinity.leading,
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 4),
+                          activeColor: context.acento,
+                          title: Text(
+                            p.texto.resolve(language),
+                            style: const TextStyle(
+                              fontSize: 15,
+                              color: AppTheme.textPrimary,
+                              height: 1.3,
+                            ),
+                          ),
+                        ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(8, 4, 8, 0),
+                      child: Text(
+                        c.nota.resolve(language),
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: AppTheme.textSecondary,
+                          height: 1.35,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             );
           },
