@@ -1,0 +1,96 @@
+{
+  "_doc": "La sesión de 45 minutos (F3), en cuatro fases, de referencias/base/rutinas-sparkling-sintesis.txt (líneas 55-132), corregida según ERRATAS.md: una sola adulta (P3), sin nombres de criaturas, sin pedir que repita (el «Repeat» de PEER pasa a retomar) y con la espera antes del elogio. Lo fijo de cada fase vive aquí; lo del mes (núcleo, órdenes, material, microcuento) lo pone la unidad del curso. Lúa solo habla inglés (P4).",
+  "titulo": {"gl": "Sesión de 45 minutos", "es": "Sesión de 45 minutos"},
+  "primeiroCiclo": {
+    "gl": "Sesión proposta para o 1.º ciclo. A asemblea curta segue sendo a opción diaria.",
+    "es": "Sesión propuesta para el 1.º ciclo. La asamblea corta sigue siendo la opción diaria."
+  },
+  "segundoCiclo": {
+    "gl": "O período semanal de inglés do 2.º ciclo. A asemblea curta segue sendo a opción diaria.",
+    "es": "El período semanal de inglés del 2.º ciclo. La asamblea corta sigue siendo la opción diaria."
+  },
+  "fases": [
+    {
+      "clave": "acollida",
+      "nome": {"gl": "Acollida e pulso", "es": "Acogida y pulso"},
+      "minutos": "7-10",
+      "para": {
+        "gl": "Que o grupo se sinta seguro e que o corpo colla o ritmo antes de escoitar.",
+        "es": "Que el grupo se sienta seguro y que el cuerpo coja el ritmo antes de escuchar."
+      },
+      "pasos": [
+        {"gl": "Báixate ao chan, á altura dos seus ollos, e recibe a cada criatura con parentese: voz alegre, vogais longas.", "es": "Bájate al suelo, a la altura de sus ojos, y recibe a cada criatura con parentese: voz alegre, vocales largas."},
+        {"gl": "Lúa aparece e só fala en inglés: un saúdo coa man, sen tocar a quen non quere.", "es": "Lúa aparece y solo habla en inglés: un saludo con la mano, sin tocar a quien no quiere."},
+        {"gl": "Marca o pulso con palmadas lentas nas coxas e canta a canción de benvida.", "es": "Marca el pulso con palmadas lentas en los muslos y canta la canción de bienvenida."},
+        {"gl": "Remata cunha activación co corpo e agarda: cada criatura entra ao seu ritmo.", "es": "Termina con una activación con el cuerpo y espera: cada criatura entra a su ritmo."}
+      ],
+      "ingles": [
+        "Hello, hello, hello! How are you?",
+        "Good morning! Look who came to play!",
+        "Put your hands up high!",
+        "Touch your nose, soft, soft!"
+      ]
+    },
+    {
+      "clave": "conto",
+      "nome": {"gl": "Conto dialogado", "es": "Cuento dialogado"},
+      "minutos": "10-12",
+      "para": {
+        "gl": "Mirar xuntos unha lámina grande e conversar sobre ela, non ler en liña recta.",
+        "es": "Mirar juntos una lámina grande y conversar sobre ella, no leer en línea recta."
+      },
+      "pasos": [
+        {"gl": "Conta a trama na lingua do aula e sinala a lámina: a mirada vai onde vai o teu dedo.", "es": "Cuenta la trama en la lengua del aula y señala la lámina: la mirada va donde va tu dedo."},
+        {"gl": "Incita en inglés (sinalar, completar, recordar, abrir) e agarda de 3 a 5 segundos.", "es": "Incita en inglés (señalar, completar, recordar, abrir) y espera de 3 a 5 segundos."},
+        {"gl": "Acolle calquera resposta —un xesto, un son, a lingua de casa— e amplíaa en inglés.", "es": "Acoge cualquier respuesta —un gesto, un sonido, la lengua de casa— y amplíala en inglés."},
+        {"gl": "Retoma: volve dicir a frase ti e deixa o oco. Non se pide que a repita.", "es": "Retoma: vuelve a decir la frase tú y deja el hueco. No se pide que la repita."},
+        {"gl": "Remata levando a lámina ao corpo ou ao aula: «onde está a túa barriga?».", "es": "Termina llevando la lámina al cuerpo o al aula: «¿dónde está tu barriga?»."}
+      ],
+      "ingles": [
+        "Look! What can you see?",
+        "Where is it? Touch it!"
+      ]
+    },
+    {
+      "clave": "taller",
+      "nome": {"gl": "Obradoiro TPR", "es": "Taller TPR"},
+      "minutos": "15-18",
+      "para": {
+        "gl": "Entender co corpo: a orde en inglés vai sempre cun obxecto de verdade e unha acción.",
+        "es": "Entender con el cuerpo: la orden en inglés va siempre con un objeto de verdad y una acción."
+      },
+      "pasos": [
+        {"gl": "Pon o material no centro do círculo, ao alcance de todas as mans.", "es": "Pon el material en el centro del círculo, al alcance de todas las manos."},
+        {"gl": "1 · Modela: di a orde con énfase e faina ti, exagerando o xesto.", "es": "1 · Modela: di la orden con énfasis y hazla tú, exagerando el gesto."},
+        {"gl": "2 · Fai xunto a elas: «facémolo xuntos», en presente, mentres se move o grupo.", "es": "2 · Haz junto a ellas: «lo hacemos juntos», en presente, mientras se mueve el grupo."},
+        {"gl": "3 · Di a orde sen o xesto, agarda e, cando alguén a fai, devólvea con palabras: «Yes! The leaf is on your head!».", "es": "3 · Di la orden sin el gesto, espera y, cuando alguien la hace, devuélvela con palabras: «Yes! The leaf is on your head!»."},
+        {"gl": "Unha orde de cada vez, varias veces, ata que o grupo a fai sen mirarte.", "es": "Una orden cada vez, varias veces, hasta que el grupo la hace sin mirarte."}
+      ],
+      "ingles": [
+        "Let's do it together!",
+        "Show me!"
+      ]
+    },
+    {
+      "clave": "despedida",
+      "nome": {"gl": "Despedida e bolsa misteriosa", "es": "Despedida y bolsa misteriosa"},
+      "minutos": "5-7",
+      "para": {
+        "gl": "Recordar o que se fixo e baixar a calma antes de volver ao resto do día.",
+        "es": "Recordar lo que se hizo y bajar a la calma antes de volver al resto del día."
+      },
+      "pasos": [
+        {"gl": "Unha sinal tranquila (un sonaxeiro, unhas palmadas que baixan) e a canción de recoller.", "es": "Una señal tranquila (un sonajero, unas palmadas que bajan) y la canción de recoger."},
+        {"gl": "De novo en círculo, a bolsa misteriosa: unha bolsa opaca cos obxectos do mes.", "es": "De nuevo en círculo, la bolsa misteriosa: una bolsa opaca con los objetos del mes."},
+        {"gl": "Unha criatura mete a man e saca un obxecto; ti nomeas e despídelo. Dous ou tres obxectos, non máis.", "es": "Una criatura mete la mano y saca un objeto; tú lo nombras y lo despides. Dos o tres objetos, no más."},
+        {"gl": "Canción de despedida balanceándose amodo, e un adeus coa man a cada criatura.", "es": "Canción de despedida balanceándose despacio, y un adiós con la mano a cada criatura."}
+      ],
+      "ingles": [
+        "Clean up, clean up, everybody clean up!",
+        "Reach inside! What can you feel?",
+        "Bye-bye, goodbye! Bye-bye, friends!",
+        "Wave your hands! See you soon!"
+      ]
+    }
+  ]
+}

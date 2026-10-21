@@ -37,6 +37,11 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   la tríada y el guion de recast; en casa, en Explorar → Cuentos, con una
   pregunta por lámina. Lúa solo habla en inglés; la historia la cuenta la
   persona adulta en gallego o en castellano.
+- **La sesión de 45 minutos** — en el Modo Aula de los dos ciclos, para una
+  sola adulta: acogida y pulso, cuento dialogado con el microcuento del mes,
+  taller TPR con el material y las órdenes de la unidad, y despedida con la
+  bolsa misteriosa. En 2.º ciclo es el período semanal de inglés; en 1.º, una
+  sesión propuesta. La asamblea corta sigue como opción diaria.
 - **Hoy hice** — al final de Hoy, una lista cerrada de lo que la persona
   adulta hizo ese día (por ejemplo, «esperé hasta cinco»). Es solo para ella:
   se guarda el día, sin hora, y lo que marcó; nada de ninguna criatura.

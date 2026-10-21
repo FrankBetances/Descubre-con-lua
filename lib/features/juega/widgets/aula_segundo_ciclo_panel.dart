@@ -57,6 +57,9 @@ class AulaSegundoCicloPanel extends StatefulWidget {
   /// calendario.
   final Widget Function(String cursoId, int mesCalendario)? microcuento;
 
+  /// La puerta a la sesión de 45 minutos del mes (F3).
+  final Widget Function(String cursoId, int mesCalendario)? sesion45;
+
   /// Abre el Modo Asamblea por la clase, el mes y el día que la docente
   /// eligió aquí.
   final void Function(
@@ -74,6 +77,7 @@ class AulaSegundoCicloPanel extends StatefulWidget {
     this.progresionDe,
     this.circuloDoDia,
     this.microcuento,
+    this.sesion45,
   });
 
   /// La clave de progresión de un nivel: «segundo_ciclo.4», «.5», «.6».
@@ -267,6 +271,10 @@ class _AulaSegundoCicloPanelState extends State<AulaSegundoCicloPanel> {
                       _dia,
                     ),
                     microcuento: widget.microcuento?.call(
+                      'curso_${_nivel.tramoEtario.replaceAll('-', '_')}',
+                      _mes,
+                    ),
+                    sesion45: widget.sesion45?.call(
                       'curso_${_nivel.tramoEtario.replaceAll('-', '_')}',
                       _mes,
                     ),
@@ -471,6 +479,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
 
   /// La puerta al microcuento del mes.
   final Widget? microcuento;
+  final Widget? sesion45;
   final VoidCallback onComezar;
 
   const _TarxetaDeFluxo({
@@ -481,6 +490,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
     required this.semana,
     required this.circulo,
     this.microcuento,
+    this.sesion45,
     required this.onComezar,
   });
 
@@ -578,6 +588,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
                     ),
                   ),
                 ),
+                if (sesion45 case final s45?) s45,
                 if (microcuento case final mc?) mc,
                 const SizedBox(height: AppTheme.spaceLg),
                 if (dia != null) ...[

@@ -12,6 +12,7 @@ import '../widgets/aula_primeiro_ciclo_panel.dart';
 import '../widgets/circulo_do_dia.dart';
 import '../../cuentos/views/microcuento_screen.dart';
 import '../../cuentos/widgets/boton_microcuento.dart';
+import 'sesion45_screen.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../widgets/aula_segundo_ciclo_panel.dart';
@@ -301,6 +302,39 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
   ///
   /// Debajo, las palabras en inglés de ese mismo día y de ese curso: la docente
   /// trabaja aquí, y aquí tienen que estar las cinco palabras que tocan hoy.
+  /// F3: la sesión de 45 minutos del mes, en los dos ciclos.
+  Widget _sesion45(String cursoId, int mesCalendario) => Padding(
+        padding: const EdgeInsets.only(top: AppTheme.spaceSm),
+        child: OutlinedButton.icon(
+          key: const ValueKey('abrir_sesion45'),
+          onPressed: () => Navigator.of(context).push(RutaLua(
+            de: context,
+            builder: (_) => Sesion45Screen(
+              repository: widget.repository,
+              cursoId: cursoId,
+              mesCalendario: mesCalendario,
+              segundoCiclo: !cursoId.startsWith('curso_0_2') &&
+                  !cursoId.startsWith('curso_2_3'),
+              language: _language,
+              onLanguageChanged: _onToggleLanguage,
+              audioService: widget.audioService,
+            ),
+          )),
+          style: OutlinedButton.styleFrom(
+            minimumSize: const Size(0, AppTheme.touchMin),
+            alignment: Alignment.centerLeft,
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+          ),
+          icon: const Icon(Icons.schedule_rounded),
+          label: Text(
+            _language == AppLanguage.gl
+                ? 'Sesión de 45 minutos: as catro fases'
+                : 'Sesión de 45 minutos: las cuatro fases',
+            style: const TextStyle(fontWeight: FontWeight.w700),
+          ),
+        ),
+      );
+
   Widget _microcuento(String cursoId, int mesCalendario) => BotonMicrocuento(
         repository: widget.repository,
         cursoId: cursoId,
@@ -358,6 +392,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,
       microcuento: _microcuento,
+      sesion45: _sesion45,
       onComezar: (tramo, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaPrimeiroCicloSync(mes, tramo);
@@ -416,6 +451,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       progresionDe: widget.repository.getProgresionSync,
       circuloDoDia: _circuloDoDia,
       microcuento: _microcuento,
+      sesion45: _sesion45,
       onComezar: (nivel, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaByMesYNivelSync(mes, nivel);

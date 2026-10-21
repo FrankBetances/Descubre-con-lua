@@ -81,6 +81,8 @@ flutter:
     - assets/content/unidades_mes/curso_5_6/
     # «O modelo» (F2) y la lista de práctica de la persona adulta (P7).
     - assets/content/modelo/
+    # La sesión de 45 minutos (F3): lo fijo de sus cuatro fases.
+    - assets/content/sesion45/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una
