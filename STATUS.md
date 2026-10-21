@@ -2352,7 +2352,7 @@ salió al correrlo por primera vez.
 | Desborde real, cazado y rehecho | El selector de ciclo desbordaba **224 px** a escala 1,3 (`filtro_edad_test.dart`). El stepper de fases medía **1387 px** de ancho: las fases 3 y 4 caían fuera de la pantalla y no había manera de pulsarlas. Las dos piezas rehechas, no apretadas |
 | Imágenes, **miradas** | `docs/capturas/aula-backstage-{gl,es}.png` y `academy-micro-rutina-{gl,es}.png`, generadas con el motor real |
 | README y manual | La etapa 3-6 descrita en los dos. El manual suma **CU-12** (conducir la asamblea matinal de 2.º ciclo) y **CU-17** (la micro-rutina en casa), el mapa de la app, dos pares de capturas y los límites reales. PDF y Word regenerados; `check_manual_build.py` en verde. Los rótulos de CU-12 se contrastaron contra el código: el manual llegó a citar un botón —«Comezar a asemblea»— que no existe |
-| Fuga R4 | `grep` sobre el árbol entero → **0 ficheros** con el nombre del otro producto o la ruta personal. `mejora` traía 210 porque es anterior a la limpieza de `5323d79`; sus 124 ficheros nuevos de `.agents/` no se han traído |
+| Fuga R5 (entonces R4) | `grep` sobre el árbol entero → **0 ficheros** con el nombre del otro producto o la ruta personal. `mejora` traía 210 porque es anterior a la limpieza de `5323d79`; sus 124 ficheros nuevos de `.agents/` no se han traído |
 
 ### Lo que se corrigió del contenido, y por qué
 
