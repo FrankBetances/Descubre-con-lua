@@ -95,7 +95,8 @@
             "gl": "Si, auga! Auga azul! Vén un peixiño!",
             "es": "¡Sí, agua! ¡Agua azul! ¡Viene un pececito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his001_1.png"
       },
       {
         "papel": "nó",
@@ -162,7 +163,8 @@
             "gl": "Si, peixe! Un peixiño azul! Chap, chap!",
             "es": "¡Sí, pez! ¡Un pececito azul! ¡Chap, chap!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his001_2.png"
       },
       {
         "papel": "desenlace",
@@ -229,7 +231,8 @@
             "gl": "Si, peixe! Peixe feliz! Chap, chap!",
             "es": "¡Sí, pez! ¡Pez feliz! ¡Chap, chap!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his001_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:354-389"

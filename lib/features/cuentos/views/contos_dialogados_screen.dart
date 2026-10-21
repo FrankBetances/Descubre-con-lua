@@ -169,25 +169,40 @@ class _ContoDialogadoScreenState extends State<ContoDialogadoScreen> {
                         color: context.acento),
                   ),
                   const SizedBox(height: 8),
-                  // La lámina aún no está dibujada (F9): se describe lo que
-                  // tiene que verse, para que la adulta la muestre con un
-                  // dibujo propio o con el objeto real.
-                  Container(
-                    key: const Key('conto_dibujo'),
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(
-                      color: context.acentoTint,
+                  if (l.imaxe case final img?)
+                    ClipRRect(
+                      key: const Key('conto_imaxe'),
                       borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                      child: AspectRatio(
+                        aspectRatio: 192 / 120,
+                        // Pixel art: se escala sin suavizar.
+                        child: Image.asset(img,
+                            fit: BoxFit.cover,
+                            filterQuality: FilterQuality.none,
+                            semanticLabel: l.dibujo.resolve(lang)),
+                      ),
+                    )
+                  else
+                    // La lámina aún no está dibujada (F9): se describe lo que
+                    // tiene que verse, para que la adulta la muestre con un
+                    // dibujo propio o con el objeto real.
+                    Container(
+                      key: const Key('conto_dibujo'),
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: context.acentoTint,
+                        borderRadius:
+                            BorderRadius.circular(AppTheme.radiusCard),
+                      ),
+                      child: Text(
+                        '${isGl ? 'Na lámina' : 'En la lámina'}: ${l.dibujo.resolve(lang)}',
+                        style: const TextStyle(
+                            fontSize: 15,
+                            fontStyle: FontStyle.italic,
+                            color: AppTheme.textPrimary,
+                            height: 1.4),
+                      ),
                     ),
-                    child: Text(
-                      '${isGl ? 'Na lámina' : 'En la lámina'}: ${l.dibujo.resolve(lang)}',
-                      style: const TextStyle(
-                          fontSize: 15,
-                          fontStyle: FontStyle.italic,
-                          color: AppTheme.textPrimary,
-                          height: 1.4),
-                    ),
-                  ),
                   const SizedBox(height: 12),
                   Text(
                     l.narracion.resolve(lang),

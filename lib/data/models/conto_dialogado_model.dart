@@ -37,6 +37,10 @@ class LaminaDoConto {
   final LocalizedString? espera;
   final List<(String, FraseDoConto)> recast;
 
+  /// La lámina dibujada (pixel art, F9), si ya existe. Si no, el visor
+  /// enseña la descripción de [dibujo].
+  final String? imaxe;
+
   const LaminaDoConto({
     required this.papel,
     required this.dibujo,
@@ -46,6 +50,7 @@ class LaminaDoConto {
     required this.crowd,
     required this.espera,
     required this.recast,
+    this.imaxe,
   });
 }
 
@@ -110,6 +115,7 @@ class ContoDialogado {
               crowd: _grupo(l['crowd']),
               espera: _ls(l['espera']),
               recast: _grupo(l['recast']),
+              imaxe: l['imaxe'] as String?,
             ),
         ],
       );
