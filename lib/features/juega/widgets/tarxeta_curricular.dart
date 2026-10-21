@@ -4,7 +4,10 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../../data/models/conto_dialogado_model.dart';
 import '../../../data/models/unidade_curricular_model.dart';
+import '../../cuentos/views/contos_dialogados_screen.dart';
 
 /// La unidad del plan curricular de Frank que toca este mes (F11): su título,
 /// en qué mes de la unidad se está, los objetivos y el vocabulario diana con
@@ -33,6 +36,10 @@ class TarxetaCurricular extends StatefulWidget {
 
 class _TarxetaCurricularState extends State<TarxetaCurricular> {
   late final Future<PlanCurricular> _plan = PlanCurricular.cargar();
+  late final Future<BibliotecaDialogada?> _biblioteca =
+      BibliotecaDialogada.cargar()
+          .then<BibliotecaDialogada?>((b) => b)
+          .catchError((Object _) => null);
 
   @override
   Widget build(BuildContext context) {
@@ -107,6 +114,41 @@ class _TarxetaCurricularState extends State<TarxetaCurricular> {
                         : 'Vocabulario diana (dos toques: el significado)'),
                     chips(u.vocabulario),
                   ],
+                  // F12: los cuentos dialogados de esta unidad del plan.
+                  FutureBuilder<BibliotecaDialogada?>(
+                    future: _biblioteca,
+                    builder: (context, b) {
+                      final contos = b.data?.daUnidade(u.id) ?? const [];
+                      if (contos.isEmpty) return const SizedBox.shrink();
+                      return Padding(
+                        padding: const EdgeInsets.only(top: 12),
+                        child: OutlinedButton.icon(
+                          key: ValueKey('contos_da_unidade_${u.id}'),
+                          onPressed: () => Navigator.of(context).push(RutaLua(
+                            de: context,
+                            builder: (_) => ContosDialogadosScreen(
+                              unidade: u.id,
+                              tituloUnidade: u.titulo.resolve(lang),
+                              contos: contos,
+                              language: lang,
+                              audioService: widget.audioService,
+                            ),
+                          )),
+                          style: OutlinedButton.styleFrom(
+                            minimumSize: const Size(0, AppTheme.touchMin),
+                            alignment: Alignment.centerLeft,
+                          ),
+                          icon: const Icon(Icons.auto_stories_rounded),
+                          label: Text(
+                            isGl
+                                ? 'Contos desta unidade (${contos.length})'
+                                : 'Cuentos de esta unidad (${contos.length})',
+                            style: const TextStyle(fontWeight: FontWeight.w700),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
                   Theme(
                     data: Theme.of(context)
                         .copyWith(dividerColor: Colors.transparent),

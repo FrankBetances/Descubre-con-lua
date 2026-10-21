@@ -85,6 +85,8 @@ flutter:
     - assets/content/sesion45/
     # El plan curricular de Frank (F11): las 12 unidades y su calendario.
     - assets/content/curriculo/
+    # Los 100 cuentos dialogados HIS-001…HIS-100 (F12).
+    - assets/content/biblioteca/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una
