@@ -105,9 +105,10 @@ run_gate "every month unit cites what exists and follows its assembly" \
 # Nace de O5 (M5.1): el microcuento es una conversación sobre el núcleo, no
 # otro vocabulario. Comprueba que lo que dice Lúa sale del núcleo, que hay
 # tríada, guion de recast para cinco respuestas y pregunta de casa por edad, y
-# que nada pide repetir. Sin --estricto hasta que estén las láminas (M5.8).
-run_gate "every microcuento talks about its unit's core words" \
-  python3 tools/check_microcuentos.py
+# que nada pide repetir. Con --estricto desde F1: las 140 láminas están, y un
+# microcuento sin todas sus láminas no se abre en la app.
+run_gate "every microcuento talks about its unit's core words and is drawn" \
+  python3 tools/check_microcuentos.py --estricto
 # Nace del vocabulario inglés, que llegó del proyecto de origen con la
 # categoría gramatical y la frecuencia INVENTADAS y sin una sola frase. Ahora
 # las 3.995 traen categoría, frase entera y frecuencia medida, y esto comprueba

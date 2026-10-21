@@ -89,7 +89,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_01_1",
         "encargo": "Aula infantil luminosa y simple: una alfombra redonda VERDE en el suelo. Lúa, de pie a la izquierda, saluda con la mano. A la derecha, detrás de una maceta grande, asoma la cabeza de un conejito BLANCO con bufanda AMARILLA (el mismo de las láminas 2 y 3), con las orejas muy tiesas. Nada más en la escena.",
         "trama": {
           "gl": "É o primeiro día na escola. Lúa chega cedo e agarda na alfombra verde. Detrás dunha planta grande asoman dúas orellas brancas… É un coelliño cunha bufanda amarela, e ten un pouco de vergonza.",
@@ -167,7 +167,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_01_2",
         "encargo": "La alfombra redonda VERDE vista desde arriba: cinco animalitos de colores distintos sentados en círculo y un hueco libre entre ellos. Lúa, sentada en el círculo, señala el hueco con la mano. El conejito BLANCO con bufanda AMARILLA, de pie fuera del círculo, mira con una pata junto a la boca.",
         "trama": {
           "gl": "Os amigos sentan na alfombra e fan un círculo grande. Entre eles queda un oco baleiro. O coelliño mira desde lonxe: quere sentar, pero non se atreve. Lúa dá unhas palmadiñas no chan: aquí hai sitio para ti!",
@@ -245,7 +245,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_01_3",
         "encargo": "Todos los animalitos del círculo, con el conejito BLANCO de bufanda AMARILLA ya dentro, de pie y agarrados a una cinta ancha MORADA de terciopelo que forma un aro. Lúa, a su lado, sonríe. Todos con un pie un poco levantado, como balanceándose. Fondo liso.",
         "trama": {
           "gl": "O coelliño senta no oco, xusto ao carón de Lúa. Ela trae a cinta morada de veludo e todos a collen ben forte. Un, dous… e todos de pé á vez! Os amigos bambéanse dun pé ao outro e cantan: Hello, hello!",

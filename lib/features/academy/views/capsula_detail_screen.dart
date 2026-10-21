@@ -304,6 +304,7 @@ class _CapsulaDetailScreenState extends State<CapsulaDetailScreen> {
                   return _PaginaLua(
                     cabecera: cabecera,
                     texto: capsula.luaDice!,
+                    luaEn: capsula.luaEn,
                     lang: lang,
                     audioService: widget.audioService,
                   );
@@ -481,12 +482,16 @@ class _PaginaSeccion extends StatelessWidget {
 class _PaginaLua extends StatelessWidget {
   final Widget cabecera;
   final LocalizedString texto;
+
+  /// Lo que dice Lúa, en inglés. La idea para hoy ([texto]) la dice la app.
+  final String? luaEn;
   final AppLanguage lang;
   final OfflineAudioService? audioService;
 
   const _PaginaLua({
     required this.cabecera,
     required this.texto,
+    this.luaEn,
     required this.lang,
     this.audioService,
   });
@@ -516,7 +521,40 @@ class _PaginaLua extends StatelessWidget {
                   // pueda empujarlo, así que no puede desbordar a lo ancho por
                   // mucho que crezca la escala de texto del sistema.
                   const LuaPixel(pose: LuaPose.sit, size: 104),
+                  // Lúa solo habla inglés (P4): su frase va aparte, con su
+                  // voz inglesa; la idea para hoy es de la app, en gl/es.
+                  if (luaEn case final en?) ...[
+                    const SizedBox(height: AppTheme.spaceMd),
+                    Text(
+                      en,
+                      key: const Key('lua_en'),
+                      textAlign: TextAlign.center,
+                      style: text.titleLarge?.copyWith(
+                        color: context.acento,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                    BotonEscuchar(
+                      audioService: audioService,
+                      texto: en,
+                      language: AppLanguage.en,
+                      interfaz: lang,
+                      compacto: true,
+                      descripcion: lang == AppLanguage.gl
+                          ? 'o que di Lúa'
+                          : 'lo que dice Lúa',
+                    ),
+                  ],
                   const SizedBox(height: AppTheme.spaceLg),
+                  Text(
+                    lang == AppLanguage.gl ? 'PARA HOXE' : 'PARA HOY',
+                    style: text.labelLarge?.copyWith(
+                      color: AppTheme.textSecondary,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 0.8,
+                    ),
+                  ),
+                  const SizedBox(height: AppTheme.spaceSm),
                   Text(
                     texto.resolve(lang),
                     textAlign: TextAlign.center,
@@ -531,8 +569,8 @@ class _PaginaLua extends StatelessWidget {
                     texto: texto.resolve(lang),
                     language: lang,
                     descripcion: lang == AppLanguage.gl
-                        ? 'o que di Lúa'
-                        : 'lo que dice Lúa',
+                        ? 'a idea para hoxe'
+                        : 'la idea para hoy',
                   ),
                 ],
               ),

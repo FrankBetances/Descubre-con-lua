@@ -74,9 +74,10 @@
     ]
   },
   "luaDice": {
-    "gl": "Son Lúa. Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
-    "es": "Soy Lúa. Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita."
+    "gl": "Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
+    "es": "Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita."
   },
+  "luaEn": "Coat? Yes, your coat is on!",
   "revision": {
     "autor": "Equipo Pedagóxico Descubre con Lúa",
     "revisorPedagogico": "",

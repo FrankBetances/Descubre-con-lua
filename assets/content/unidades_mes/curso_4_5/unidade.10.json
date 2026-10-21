@@ -115,7 +115,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_10_1",
         "encargo": "Playa con marea baja: arena clara abajo, mar AZUL liso y tranquilo al fondo. Entre unas rocas GRISES, una charca pequeña de agua. Dentro, un pececito PLATEADO con la aleta NARANJA. Lúa, con una toalla AZUL grande sobre los hombros, se asoma a la charca sin tocar el agua.",
         "trama": {
           "gl": "Na praia de Samil, en Vigo, a marea está baixa e o mar, en calma. Entre as rochas quedaron pozas pequenas de auga. Nunha delas, Lúa ve un peixiño prateado de aleta laranxa. Cando o mar marchou, quedou alí soíño!",
@@ -193,7 +193,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_10_2",
         "encargo": "La misma playa, con viento: olas AZULES con espuma BLANCA que avanzan desde el fondo hacia las rocas GRISES. El pececito PLATEADO de aleta NARANJA mira hacia el mar desde la charca. Lúa, sentada en la arena, lejos del agua, con la toalla AZUL sobre los hombros, señala las olas.",
         "trama": {
           "gl": "O peixiño quere volver ao mar fondo e azul, onde está a súa familia. Lúa non o pode levar: hai que agardar pola marea. Sopra o vento e chegan as ondas, cada vez máis preto, máis rápidas, máis fortes: xuáaa!",
@@ -271,7 +271,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_10_3",
         "encargo": "Una ola grande AZUL con espuma BLANCA entra en la charca entre las rocas GRISES; gotas saltando. El pececito PLATEADO de aleta NARANJA salta encima de la cresta de la ola, como en un tobogán. Lúa, en la arena y lejos del agua, con la toalla AZUL, levanta los brazos de alegría.",
         "trama": {
           "gl": "Unha onda grande entra na poza e axita toda a auga: splash! O peixiño dá un brinco… e vai enriba da onda, coma nun tobogán! Xa está de volta no mar.",
@@ -349,7 +349,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_10_4",
         "encargo": "Atardecer: mar AZUL PROFUNDO y tranquilo, cielo rosa suave. Bajo la superficie, el pececito PLATEADO de aleta NARANJA nada junto a dos peces grandes PLATEADOS, su familia, y mueve la aleta. En la arena, Lúa tumbada sobre la toalla AZUL, con los ojos medio cerrados, dice adiós con la mano.",
         "trama": {
           "gl": "Cae a tarde e o mar volve estar en calma. No fondo azul, o peixiño nada coa súa familia e move a aleta: adeus, Lúa! Lúa déitase na súa toalla azul, escoita as ondas pequeniñas… e o mar, amodo, quédase durmido.",

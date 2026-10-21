@@ -28,9 +28,11 @@ import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dar
 /// se cuela donde el contenido no la pide.
 void main() {
   const cierre = LocalizedString(
-    gl: 'Son Lúa. Hoxe quédate cun só xesto.',
-    es: 'Soy Lúa. Hoy quédate con un solo gesto.',
+    gl: 'Hoxe quédate cun só xesto.',
+    es: 'Hoy quédate con un solo gesto.',
   );
+  // P4: Lúa solo habla inglés; la idea para hoy la dice la app.
+  const luaEn = 'Look! A ball!';
 
   Capsula capsula({LocalizedString? luaDice}) => Capsula(
         id: 'test.capsula.01',
@@ -45,6 +47,7 @@ void main() {
         queHacerEnCasa: const LocalizedString(gl: 'Nomea.', es: 'Nombra.'),
         ejemploCotidiano: const LocalizedString(gl: 'Mira.', es: 'Mira.'),
         luaDice: luaDice,
+        luaEn: luaDice == null ? null : luaEn,
         afirmaciones: const [
           Afirmacion(
             id: 'a1',
@@ -102,6 +105,8 @@ void main() {
       expect(find.text('LÚA DI'), findsOneWidget);
       expect(find.byType(LuaPixel), findsOneWidget);
       expect(find.text(cierre.gl), findsOneWidget);
+      expect(find.text(luaEn), findsOneWidget);
+      expect(find.text('PARA HOXE'), findsOneWidget);
       // Es la última: el botón ya no invita a seguir.
       expect(find.text('Rematar'), findsOneWidget);
     });
@@ -121,6 +126,8 @@ void main() {
 
       expect(find.text('LÚA DICE'), findsOneWidget);
       expect(find.text(cierre.es), findsOneWidget);
+      // La frase de Lúa no se traduce: es la misma en las dos lenguas.
+      expect(find.text(luaEn), findsOneWidget);
     });
 
     testWidgets('sin luaDice no se inventa una página', (tester) async {

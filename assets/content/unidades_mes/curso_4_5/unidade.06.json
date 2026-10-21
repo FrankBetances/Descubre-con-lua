@@ -107,7 +107,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_06_1",
         "encargo": "Monte al atardecer, cielo MALVA liso; un río azul cruza la lámina de lado a lado y, al fondo, se ve un puente de madera. Un zorro NARANJA con la punta de la cola BLANCA, de orejas en punta, mira hacia el otro lado del río. Lúa, con una mochilita AZUL, se lleva la mano a la oreja para escuchar.",
         "trama": {
           "gl": "Cae a tarde no monte. Lúa atopa un raposo de cola laranxa coa punta branca, que ten as orellas tesas. Desde o outro lado do río chega un son misterioso: tacatá, tacatá, tacatá… Que será?",
@@ -185,7 +185,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_06_2",
         "encargo": "Primer plano del puente de madera MARRÓN, con barandillas, sobre el río azul. Lúa, con la mochilita AZUL, y el zorro NARANJA de cola con punta BLANCA lo cruzan agachados, uno detrás del otro, con pasos pequeños. Una luna blanca pequeña en el cielo MALVA.",
         "trama": {
           "gl": "Para descubrilo, teñen que pasar á outra beira pola vella ponte de madeira. Van agachados, a paso lento e sen facer ruído, para non espantar a ninguén. Cric… cric… Ata as táboas falan baixiño!",
@@ -263,7 +263,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_06_3",
         "encargo": "La otra orilla, con niebla BLANCA baja. Entre la niebla, tres caballos MARRÓN OSCURO de crin NEGRA, quietos: se ven sus siluetas y los ojos. Lúa, con la mochilita AZUL, y el zorro NARANJA de cola con punta BLANCA, también quietos, los miran con los ojos muy abiertos y cara de curiosidad, no de miedo.",
         "trama": {
           "gl": "Na outra beira hai moita néboa. Entre a néboa vense unhas sombras grandes, quietas, quietiñas… Lúa e o raposo tampouco se moven. E de súpeto, unha das sombras resopra: brrrf! Son cabalos salvaxes do monte!",
@@ -341,7 +341,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_06_4",
         "encargo": "Prado verde abierto, cielo MALVA con la luna. Los tres caballos MARRÓN OSCURO de crin NEGRA galopan, y a su lado un potrillo pequeño del mismo color. Lúa, con la mochilita AZUL, y el zorro NARANJA de cola con punta BLANCA galopan con ellos, felices, con líneas de movimiento detrás.",
         "trama": {
           "gl": "Un poldro pequeniño achégase, cheira o raposo e… dálle un toque co fociño! Entón os cabalos botan a correr polo prado, e Lúa e o raposo galopan con eles. Tacatá, tacatá, tacatá! Que festa no monte!",

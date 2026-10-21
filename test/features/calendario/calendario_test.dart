@@ -950,6 +950,15 @@ void main() {
     test('el fichero solo tiene fechas sin hora y dos casillas', () async {
       await store.registrarAula(DateTime(2026, 10, 15, 9, 30));
       await store.registrarHogar(DateTime(2026, 10, 15, 20, 45));
+      // La lista de práctica de la adulta (P7): ids de la lista cerrada.
+      await store.alternarPractica(
+          DateTime(2026, 10, 15, 11, 5), 'aula', 'espera');
+      await store.alternarPractica(
+          DateTime(2026, 10, 15, 21, 40), 'hogar', 'microconto');
+      // Lo que no está en la lista cerrada no entra.
+      await store.alternarPractica(
+          DateTime(2026, 10, 15), 'aula', 'Martiño dixo water');
+      await store.alternarPractica(DateTime(2026, 10, 15), 'neno', 'espera');
 
       final crudo =
           File('${tempDir.path}/calendario_progreso.json').readAsStringSync();
@@ -958,7 +967,7 @@ void main() {
       // obliga a actualizar docs/privacy.html y el formulario de Seguridad de
       // los datos de Play Console EN EL MISMO CAMBIO. Lo declarado y lo
       // compilado no pueden decir cosas distintas.
-      const permitidas = {'registros', 'aula', 'hogar'};
+      const permitidas = {'registros', 'aula', 'hogar', 'practica'};
       final fecha = RegExp(r'^\d{4}-\d{2}-\d{2}$');
       final claves = RegExp(r'"([^"]+)"\s*:')
           .allMatches(crudo)
@@ -974,6 +983,35 @@ void main() {
       expect(crudo, isNot(contains('09:30')));
       expect(crudo, isNot(contains('T20:45')));
       expect(crudo, contains('2026-10-15'));
+      expect(crudo, isNot(contains('11:05')));
+      expect(crudo, isNot(contains('Martiño')));
+      expect(crudo, isNot(contains('neno')));
+      expect(RegExp(r'\d{13}').hasMatch(crudo), isFalse);
+      // Los valores de la lista son ids de la lista cerrada y nada más.
+      final practica = (jsonDecode(crudo) as Map)['practica'] as Map;
+      for (final dia in practica.values) {
+        for (final ids in (dia as Map).values) {
+          expect(ListaDePractica.ids, containsAll(ids as List));
+        }
+      }
+    });
+
+    test('la lista de práctica: se marca, se cierra, se reabre y se ve igual',
+        () async {
+      final dia = DateTime(2026, 10, 16);
+      await store.alternarPractica(dia, 'aula', 'nucleo_obxecto');
+      await store.alternarPractica(dia, 'aula', 'microconto');
+      await store.alternarPractica(dia, 'aula', 'microconto');
+      final outro = CalendarioStore(overrideDirectory: tempDir.path);
+      await outro.cargar();
+      expect(outro.practicaDoDia(dia, 'aula'), {'nucleo_obxecto'});
+      expect(outro.practicaDoDia(dia, 'hogar'), isEmpty);
+      // Los ids del contenido son exactamente los de la lista cerrada.
+      final contido = jsonDecode(
+              File('assets/content/modelo/practica.json').readAsStringSync())
+          as Map<String, dynamic>;
+      expect({for (final i in contido['items'] as List) i['id']},
+          ListaDePractica.ids);
     });
 
     test('el estado de un mes es lo mejor que se logró en él', () async {

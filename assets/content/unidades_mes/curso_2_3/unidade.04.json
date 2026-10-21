@@ -85,7 +85,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_04_1",
         "encargo": "Calle de invierno muy simple: suelo blanco de nieve y una casa con la ventana iluminada al fondo. Lúa, con gorro AZUL y guantes AZULES, corre en el sitio y agita una campanilla de madera MARRÓN. Copos de nieve grandes y redondos. Nada más.",
         "trama": {
           "gl": "Que frío fai na rúa! Neva, e Lúa leva gorro e luvas azuis. Para quentarse, corre sen moverse do sitio e fai soar a súa campaíña de madeira: tilín, tilín! Forte, moi forte!",
@@ -163,7 +163,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_04_2",
         "encargo": "Interior cálido: una chimenea con fuego NARANJA a la derecha. En un sillón, la abuela de Lúa, una gata BLANCA con gafas redondas, tiene en el regazo a un gatito GRIS envuelto en una manta AMARILLA, dormido. Lúa, con gorro AZUL, entra por la puerta con la campanilla en una mano y el dedo en los labios.",
         "trama": {
           "gl": "Lúa entra na casa, onde se está ben quentiño. Pero… shh! No colo da avoa dorme un gatiño gris, envolto nunha manta amarela. Lúa garda a campaíña e camiña amodo, amodo, sen facer ruído.",
@@ -241,7 +241,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_04_3",
         "encargo": "El mismo sillón junto a la chimenea. El gatito GRIS, con la manta AMARILLA caída, abre los ojos y estira las patitas. Lúa, ya sin gorro, está sentada también en el regazo de la abuela, gata BLANCA con gafas redondas, que abraza a los dos. Las tres cabezas juntas, sonriendo.",
         "trama": {
           "gl": "O gatiño abre un ollo… e logo o outro. Bosteza: aaaah! Esperta e estira as patiñas cara a Lúa. Lúa achégase e a avoa abrázaos aos dous no seu colo, ao carón do lume. Que quentiño se está aquí!",

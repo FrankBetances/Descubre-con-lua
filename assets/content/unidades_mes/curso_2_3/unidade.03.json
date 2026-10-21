@@ -80,7 +80,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_03_1",
         "encargo": "Bosque de otoño en planos limpios: un castaño a la izquierda y el suelo marrón claro. En el centro, un montoncito de hojas OCRES y MARRONES. Al lado, un erizo MARRÓN con nariz NEGRA (el mismo de las láminas 2 y 3) lleva una hoja en la boca. Lúa, con bufanda VERDE, se agacha junto al montón.",
         "trama": {
           "gl": "No bosque xa é outono e o chan está cheo de follas. Un ourizo cacheiro está a facer a súa cama para durmir todo o inverno. Lúa axúdao: colle follas ocres e marróns, que renxen nas mans. Crac, crac!",
@@ -158,7 +158,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_03_2",
         "encargo": "Líneas blancas de viento cruzan la escena de izquierda a derecha. Las hojas OCRES y MARRONES vuelan por el aire. El erizo MARRÓN de nariz NEGRA, sentado donde estaba el montón, mira hacia arriba con la boca abierta. Lúa, con la bufanda VERDE ondeando, estira los brazos hacia las hojas.",
         "trama": {
           "gl": "De súpeto sopra o vento: fiuuu! As follas voan por riba das árbores e o montón desaparece. O ourizo queda sen cama! Lúa corre detrás das follas, de puntas, cos brazos abertos.",
@@ -236,7 +236,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_03_3",
         "encargo": "El erizo MARRÓN de nariz NEGRA, hecho una bolita, duerme sobre un montón nuevo y grande de hojas OCRES y MARRONES. Lúa, con bufanda VERDE, está a su lado con una pierna adelantada, como si acabara de chutar una hoja hacia el montón. Cielo de atardecer liso, sin viento.",
         "trama": {
           "gl": "Cando o vento para, Lúa e o ourizo dan patadiñas ás follas: unha, outra e outra máis… ata facer un montón novo, grande e fofo. O ourizo métese dentro, faise unha bóla e pecha os ollos. Durme, ourizo, durme.",

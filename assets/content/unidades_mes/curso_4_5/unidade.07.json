@@ -107,7 +107,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_07_1",
         "encargo": "Prado de primavera con hierba verde y unas pocas flores sueltas, sin fondo recargado. A la izquierda, una colmena de madera. Una abeja pequeña AMARILLA con rayas NEGRAS y alas BLANCAS sale volando de la colmena (línea de vuelo en espiral). Lúa, con una regadera AZUL en la mano, la sigue con la mirada.",
         "trama": {
           "gl": "Chegou a primavera e o prado énchese de flores. Dunha colmea sae unha abella pequena, de raias amarelas e negras. Bzzz! Hoxe quere atopar a flor máis doce de todas para levar o seu néctar á colmea. Lúa, coa regadeira azul, vai detrás dela.",
@@ -185,7 +185,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_07_2",
         "encargo": "El mismo prado. En primer plano, una flor AMARILLA pequeña y una flor BLANCA cerrada; la abeja AMARILLA de rayas NEGRAS, con las alas caídas, descansa entre las dos. Al fondo, muy lejos, una flor ROJA enorme. Lúa, con su regadera AZUL, señala hacia la flor roja.",
         "trama": {
           "gl": "A abella proba unha flor amarela: hmm, pouquiña cousa. Proba unha flor branca: está pechada! Xa está cansa de tanto voar. Pero Lúa ve algo alá lonxe, ao final do prado: unha flor vermella, enorme!",
@@ -263,7 +263,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_07_3",
         "encargo": "Primer plano de la flor ROJA enorme, abierta, con el centro AMARILLO. La abeja AMARILLA de rayas NEGRAS posada en el centro, con las alas levantadas de alegría. Lúa, al lado, con su regadera AZUL, sonríe con los ojos cerrados como si oliera la flor.",
         "trama": {
           "gl": "Lúa sinálalla e a abella voa ata alá, amodo, amodo… e pousa no medio da flor vermella. Proba o néctar: mmm, este é moito máis doce! A abella move as ás de contenta.",
@@ -341,7 +341,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_07_4",
         "encargo": "Atardecer en tonos NARANJA suaves, fondo liso. La flor ROJA enorme se cierra un poco y, entre sus pétalos, la abeja AMARILLA de rayas NEGRAS duerme con los ojos cerrados. Lúa, sentada en la hierba con su regadera AZUL al lado, apoya la cabeza en las manos, con sueño.",
         "trama": {
           "gl": "O sol vaise poñendo e a abella, coa barriga chea de néctar, ten moito sono. A flor vermella pecha os pétalos amodo, coma unha mantiña. A abella queda durmida dentro, quentiña. Lúa sorrí e dille baixiño: boas noites, abelliña.",

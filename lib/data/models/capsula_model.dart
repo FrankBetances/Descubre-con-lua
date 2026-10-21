@@ -429,6 +429,10 @@ class Capsula {
   /// blanco, y eso se ve peor que no pintar el cierre.
   final LocalizedString? luaDice;
 
+  /// Lo que dice Lúa en ese cierre, SIEMPRE en inglés (P4: Lúa solo habla
+  /// inglés). [luaDice] es la idea para hoy, dicha por la app en gl/es.
+  final String? luaEn;
+
   final List<Afirmacion> afirmaciones;
   final CurricularReference curriculo;
   final Revision revision;
@@ -447,6 +451,7 @@ class Capsula {
     required this.queHacerEnCasa,
     required this.ejemploCotidiano,
     this.luaDice,
+    this.luaEn,
     required this.afirmaciones,
     required this.curriculo,
     required this.revision,
@@ -540,6 +545,11 @@ class Capsula {
       queHacerEnCasa: LocalizedString.fromJson(queHacerEnCasaData),
       ejemploCotidiano: LocalizedString.fromJson(ejemploCotidianoData),
       luaDice: (luaDiceParsed?.hasParity ?? false) ? luaDiceParsed : null,
+      luaEn: switch (
+          (json['luaEn'] ?? contidoMap['luaEn'])?.toString().trim()) {
+        final String t when t.isNotEmpty => t,
+        _ => null,
+      },
       afirmaciones: List.unmodifiable(afirmations),
       curriculo: CurricularReference.fromJson(curriculoData),
       revision: Revision.fromJson(revisionData),
@@ -560,6 +570,7 @@ class Capsula {
         'queHacerEnCasa': queHacerEnCasa.toJson(),
         'ejemploCotidiano': ejemploCotidiano.toJson(),
         if (luaDice != null) 'luaDice': luaDice!.toJson(),
+        if (luaEn != null) 'luaEn': luaEn,
         'afirmaciones': afirmaciones.map((a) => a.toJson()).toList(),
         'curriculo': curriculo.toJson(),
         'revision': revision.toJson(),

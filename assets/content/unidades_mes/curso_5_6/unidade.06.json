@@ -110,7 +110,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_06_1",
         "encargo": "Sala con un baúl abierto lleno de telas de colores. Lúa con boina NEGRA de escultora y una espátula de madera en la mano. Un pingüino NEGRO Y BLANCO con pajarita ROJA, con las alas levantadas, tiene la cabeza metida en un disfraz de dragón VERDE que no le acaba de entrar.",
         "trama": {
           "gl": "Chega o Entroido! No baúl hai disfraces de todas as cores. O pingüín escolle un de dragón verde, pero non hai maneira de metelo: quedou atrapado coa cabeza dentro! Lúa ri e dálle unha pista.",
@@ -188,11 +188,11 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_06_2",
         "encargo": "Lúa, con boina NEGRA, levanta el brazo izquierdo y dobla una pierna en una pose divertida. Enfrente, el pingüino NEGRO Y BLANCO con pajarita ROJA y el disfraz de dragón VERDE ya puesto intenta copiarla, pero levanta el ala derecha y se tambalea.",
         "trama": {
-          "gl": "Lúa é a escultora e o pingüín, a súa estatua. «Copia os meus movementos», dille. Ela ergue o brazo esquerdo… e o pingüín, o dereito! E ademais non para de tremer coma unha vara verde.",
-          "es": "Lúa es la escultora y el pingüino, su estatua. «Copia mis movimientos», le dice. Ella levanta el brazo izquierdo… ¡y el pingüino, el derecho! Y además no para de temblar como un flan."
+          "gl": "Lúa é a escultora e o pingüín, a súa estatua. «Copy me!», dille. Ela ergue o brazo esquerdo… e o pingüín, o dereito! E ademais non para de tremer coma unha vara verde.",
+          "es": "Lúa es la escultora y el pingüino, su estatua. «Copy me!», le dice. Ella levanta el brazo izquierdo… ¡y el pingüino, el derecho! Y además no para de temblar como un flan."
         },
         "lua": {
           "onomatopeia": "Wibble, wobble!",
@@ -266,11 +266,11 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_06_3",
         "encargo": "El pingüino NEGRO Y BLANCO con pajarita ROJA y disfraz de dragón VERDE, completamente quieto sobre una caja de madera que hace de pedestal, con un ala en la frente en pose dramática. Lúa, con boina NEGRA, lo mira con las manos juntas y la boca abierta.",
         "trama": {
-          "gl": "Lúa dá unha palmada: «Estatua!». E esta vez… o pingüín queda quieto, quietiño, cunha á na fronte, coma un actor de teatro. Nin pestanexa! Que estatua tan dramática!",
-          "es": "Lúa da una palmada: «¡Estatua!». Y esta vez… el pingüino se queda quieto, quietecito, con un ala en la frente, como un actor de teatro. ¡Ni parpadea! ¡Qué estatua tan dramática!"
+          "gl": "Lúa dá unha palmada: «Statue!». E esta vez… o pingüín queda quieto, quietiño, cunha á na fronte, coma un actor de teatro. Nin pestanexa! Que estatua tan dramática!",
+          "es": "Lúa da una palmada: «Statue!». Y esta vez… el pingüino se queda quieto, quietecito, con un ala en la frente, como un actor de teatro. ¡Ni parpadea! ¡Qué estatua tan dramática!"
         },
         "lua": {
           "onomatopeia": "Shhh…",
@@ -344,7 +344,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_06_4",
         "encargo": "Lúa, con boina NEGRA, y el pingüino NEGRO Y BLANCO con pajarita ROJA, todavía con el disfraz de dragón VERDE, sentados a una mesa con un plato de filloas dobladas. Los dos sonríen y comen. En la mesa, una claqueta de cine pequeña.",
         "trama": {
           "gl": "Agora tócalle ao pingüín dirixir! Lúa fai de estatua: un, dous, tres… quieta! O pingüín aplaude. E despois de tanto traballo artístico chega o mellor do Entroido: un prato de filloas quentiñas.",

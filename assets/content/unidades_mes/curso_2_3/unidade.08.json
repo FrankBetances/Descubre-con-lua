@@ -78,7 +78,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_08_1",
         "encargo": "Corte del suelo como en un dibujo escolar: arriba, una franja de hierba verde; abajo, tierra marrón. Bajo la tierra, una semilla MARRÓN pequeña y redonda, encogida, y a su lado una lombriz ROSA (la misma de las láminas 2 y 3). Lúa, arriba en la hierba, pega la oreja al suelo.",
         "trama": {
           "gl": "Debaixo da terra está todo escuro e quentiño. Alí dorme unha sementiña pequena, encollida, moi quieta. Ao seu carón vive unha miñoca rosa. Lúa pega a orella ao chan e escoita: estará a espertar a sementiña?",
@@ -156,7 +156,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_08_2",
         "encargo": "Arriba, una nube GRIS grande con gotitas finas de llovizna cayendo; por un borde de la nube asoma un sol AMARILLO. Abajo, de la semilla MARRÓN sale un brote verde que asoma sobre la hierba. Lúa, con la mano en la frente, busca en el cielo; la lombriz ROSA asoma la cabeza junto al brote.",
         "trama": {
           "gl": "Cae o orballo, fino, fino, e a terra bebe a auga. Da sementiña sae un gromo verde que asoma por riba da herba. Pero o gromo quere sol para medrar… e unha nube gris tápao! Lúa busca no ceo, coa man na fronte.",
@@ -234,7 +234,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_08_3",
         "encargo": "Cielo azul limpio con un sol AMARILLO grande. Donde estaba el brote, una flor de diente de león AMARILLA, grande y brillante, abierta. Lúa, de puntillas con los brazos abiertos en abanico, baila al lado de la flor. La lombriz ROSA, enroscada al pie de la flor, sonríe. Nada más.",
         "trama": {
           "gl": "A nube marcha e o sol quenta a terra. O gromo medra, medra, medra… e de súpeto ábrese unha flor amarela, grande e brillante! Lúa e a miñoca bailan arredor dela, de puntas, cos brazos abertos coma pétalos.",

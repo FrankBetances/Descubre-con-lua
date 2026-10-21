@@ -90,7 +90,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_3_4_01_1",
         "encargo": "Alfombra redonda de colores lisos en el suelo de un aula, vista desde arriba en ángulo suave. Lúa, con un jersey AMARILLO, de pie junto a la alfombra, saluda con la mano abierta a un pato, un ratón y una rana que entran sonriendo. A un lado, un cesto de mimbre MARRÓN con la tapa entreabierta y dos orejas GRISES asomando.",
         "trama": {
           "gl": "Bos días! Na escola, a alfombra da asemblea xa está lista. Lúa saúda a cada amigo que chega: o pato, o rato, a ra. Todos se sentan en círculo. Pero… quen se agochou no cesto de vimbio?",
@@ -168,7 +168,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_3_4_01_2",
         "encargo": "Primer plano del cesto de mimbre MARRÓN. De dentro asoma la cabeza de un conejito GRIS de orejas largas, con mirada tímida. Lúa, con su jersey AMARILLO, sentada en el suelo a su lado, con las manos sobre las rodillas, esperando. Fondo liso.",
         "trama": {
           "gl": "No cesto hai un coelliño gris. É novo na escola e dálle vergoña saír. Lúa non tira del: senta amodo ao seu carón, pon as mans nos xeonllos e agarda, tranquila.",
@@ -246,7 +246,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_3_4_01_3",
         "encargo": "Todos en círculo sobre la alfombra: Lúa con su jersey AMARILLO, el conejito GRIS ya fuera del cesto, el pato, el ratón y la rana, con las manos juntas en mitad de una palmada y caras de risa. El cesto de mimbre MARRÓN, vacío, detrás.",
         "trama": {
           "gl": "Lúa propón un xogo: palmas, palmas… e quietos coma estatuas! O coelliño espreita, ri… e sae do cesto dun brinco. Senta no círculo cos demais e todos aplauden xuntos, ao pulso da asemblea.",

@@ -29,9 +29,10 @@
     "es": "La niña dice: «Quiero el leite, mamá, dame más». La tentación es corregir la mezcla. En vez de eso, respóndele entero en tu lengua, dándole el modelo sin señalar el error: «¿Quieres más leche? Aquí tienes la leche.» No le dices que estuvo mal; le das la frase completa."
   },
   "luaDice": {
-    "gl": "Son Lúa. Fala na lingua que che sae soa e non lle corrixas as mesturas. Xuntar as dúas nunha frase non é un erro: é ter dúas.",
-    "es": "Soy Lúa. Habla en la lengua que te sale sola y no le corrijas las mezclas. Juntar las dos en una frase no es un error: es tener dos."
+    "gl": "Fala na lingua que che sae soa e non lle corrixas as mesturas. Xuntar as dúas nunha frase non é un erro: é ter dúas.",
+    "es": "Habla en la lengua que te sale sola y no le corrijas las mezclas. Juntar las dos en una frase no es un error: es tener dos."
   },
+  "luaEn": "Two languages? Lucky you!",
   "afirmaciones": [
     {
       "id": "afirmacion_01",

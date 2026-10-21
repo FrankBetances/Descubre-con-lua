@@ -5,7 +5,9 @@ import 'local_store.dart';
 /// El registro del Calendario Escola·Fogar, en la carpeta privada de la app.
 ///
 /// **Qué guarda, y nada más:** por cada día en que alguien marcó algo, la fecha
-/// en `aaaa-mm-dd` —sin hora— y dos booleanos, `aula` y `hogar`. No hay nombre,
+/// en `aaaa-mm-dd` —sin hora— y dos booleanos, `aula` y `hogar`; y, si la
+/// persona adulta usa su lista de práctica (P7), los ids de lista cerrada que
+/// marcó ese día, por perfil. No hay nombre,
 /// ni edad, ni identificador de aparato, ni nada de ninguna criatura: dice
 /// cuánto se usó la app, nunca quién la usó. Vive en `getFilesDir()`, que
 /// ninguna otra app puede leer, y no puede salir del aparato porque el APK no
@@ -15,11 +17,30 @@ import 'local_store.dart';
 /// de los datos de Play. **Si añades una clave a este fichero, actualiza los dos
 /// en el mismo cambio**, o lo declarado y lo compilado dejan de coincidir. Lo
 /// vigila `test/privacy/privacy_manifest_test.dart`.
+/// La lista CERRADA de la práctica de la persona adulta (P7). Sus textos viven
+/// en `assets/content/modelo/practica.json`; aquí solo los ids, para que el
+/// almacén no pueda guardar nada que no esté declarado en la política de
+/// privacidad. Un test comprueba que los dos coinciden.
+abstract final class ListaDePractica {
+  static const ids = {
+    'nucleo_obxecto',
+    'espera',
+    'microconto',
+    'nota_casas',
+  };
+  static const perfis = {'aula', 'hogar'};
+}
+
 class CalendarioStore extends ChangeNotifier {
   static const String _nombreFichero = 'calendario_progreso.json';
 
   final LocalStore _store;
   final Map<String, Map<String, bool>> _registros = {};
+
+  /// La lista de práctica de la persona adulta (P7): por día sin hora y por
+  /// perfil (`aula`, `hogar`), los ids que marcó. Solo ids de
+  /// [ListaDePractica.ids]: nunca texto libre, nunca nada de una criatura.
+  final Map<String, Map<String, Set<String>>> _practica = {};
   bool _cargado = false;
 
   CalendarioStore({String? overrideDirectory})
@@ -50,6 +71,23 @@ class CalendarioStore extends ChangeNotifier {
           }
         }
       }
+      _practica.clear();
+      final rawPractica = data?['practica'];
+      if (rawPractica is Map) {
+        for (final dia in rawPractica.entries) {
+          if (dia.value is! Map) continue;
+          final porPerfil = <String, Set<String>>{};
+          for (final perfil in (dia.value as Map).entries) {
+            if (!ListaDePractica.perfis.contains(perfil.key)) continue;
+            final ids = {
+              for (final id in (perfil.value as List? ?? const []))
+                if (ListaDePractica.ids.contains(id)) id as String,
+            };
+            if (ids.isNotEmpty) porPerfil[perfil.key as String] = ids;
+          }
+          if (porPerfil.isNotEmpty) _practica[dia.key.toString()] = porPerfil;
+        }
+      }
       _cargado = true;
       notifyListeners();
     } catch (e) {
@@ -61,7 +99,17 @@ class CalendarioStore extends ChangeNotifier {
   /// Guarda el estado actual en disco sin bloquear la interfaz.
   Future<void> _guardar() async {
     try {
-      await _store.write({'registros': _registros});
+      await _store.write({
+        'registros': _registros,
+        if (_practica.isNotEmpty)
+          'practica': {
+            for (final d in _practica.entries)
+              d.key: {
+                for (final p in d.value.entries)
+                  p.key: p.value.toList()..sort(),
+              },
+          },
+      });
     } catch (e) {
       debugPrint('CalendarioStore: error ao gardar ($e)');
     }
@@ -140,6 +188,28 @@ class CalendarioStore extends ChangeNotifier {
     final reg =
         _registros.putIfAbsent(clave, () => {'aula': false, 'hogar': false});
     reg['hogar'] = !(reg['hogar'] == true);
+    notifyListeners();
+    await _guardar();
+  }
+
+  /// Lo que la persona adulta marcó en su lista de práctica ese día.
+  Set<String> practicaDoDia(DateTime fecha, String perfil) =>
+      Set.unmodifiable(_practica[_claveFecha(fecha)]?[perfil] ?? const {});
+
+  /// Marca o desmarca un punto de la lista de práctica. Un id o un perfil que
+  /// no estén en la lista cerrada no se guardan.
+  Future<void> alternarPractica(
+      DateTime fecha, String perfil, String id) async {
+    if (!ListaDePractica.ids.contains(id) ||
+        !ListaDePractica.perfis.contains(perfil)) {
+      return;
+    }
+    final clave = _claveFecha(fecha);
+    final dia = _practica.putIfAbsent(clave, () => {});
+    final ids = dia.putIfAbsent(perfil, () => {});
+    if (!ids.remove(id)) ids.add(id);
+    if (ids.isEmpty) dia.remove(perfil);
+    if (dia.isEmpty) _practica.remove(clave);
     notifyListeners();
     await _guardar();
   }

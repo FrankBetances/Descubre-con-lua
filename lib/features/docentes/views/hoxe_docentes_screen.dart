@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../formacion/widgets/lista_de_practica.dart';
+
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/localization/app_language.dart';
@@ -486,6 +488,15 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                     : 'CIENCIA CON LAS MANOS · STEAM',
                 titulo: _candoToca(steam.diaNoCalendario!, lang),
                 onTap: () => _abrirSteam(steam),
+              ),
+            ],
+            if (widget.calendario case final cal?) ...[
+              const SizedBox(height: 18),
+              ListaDePracticaCard(
+                store: cal,
+                perfil: 'aula',
+                dia: widget.agora ?? DateTime.now(),
+                language: lang,
               ),
             ],
           ],

@@ -81,7 +81,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_07_1",
         "encargo": "Huerta muy simple: tierra marrón y plantas verdes en fila. En el centro, un mantel AMARILLO con círculos ROJOS estampados. Un ratoncito GRIS con orejas ROSAS (el mismo de las láminas 2 y 3) sujeta una cesta vacía. Lúa, con delantal VERDE, mira alrededor con la mano en la frente.",
         "trama": {
           "gl": "É hora de merendar na horta. O ratiño gris estende un mantel amarelo, cheo de círculos vermellos. Para a ensalada só falta unha cousa: un tomate vermello e redondo! Lúa e o ratiño póñense a buscar.",
@@ -159,7 +159,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_07_2",
         "encargo": "Primer plano del suelo de la huerta: bajo una hoja verde grande asoma una tapa ROJA, redonda y plana. Lúa, con delantal VERDE, la toca con la punta del pie. El ratoncito GRIS de orejas ROSAS se ríe con las patitas en la barriga.",
         "trama": {
           "gl": "Debaixo dunha folla grande asoma algo vermello e redondo. Será o tomate? Lúa tócao coa punta do pé: plof! É plano, plano coma un prato. É a tapa vermella dun bote! O ratiño ri: iso non se come!",
@@ -237,7 +237,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_07_3",
         "encargo": "Una tomatera verde con un tomate ROJO grande y redondo colgando. El ratoncito GRIS de orejas ROSAS, de puntillas sobre la cesta, lo coge con las dos patas. Lúa, con delantal VERDE, sentada en el mantel AMARILLO con círculos ROJOS, sujeta un plato con rodajas de tomate. Fondo liso.",
         "trama": {
           "gl": "Alí, no alto da tomateira, hai un tomate vermello, grande e redondo coma unha bóla. Ese si! O ratiño cólleo, Lúa córtao en rodaxas e sentan no mantel a merendar. Ñam, ñam, que rico!",

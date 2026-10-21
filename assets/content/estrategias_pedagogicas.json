@@ -3,8 +3,8 @@
     "id": "est-espera-5s",
     "clave": "espera_5s",
     "nome": {
-      "gl": "Regra de Ouro dos 5 Segundos de Espera Activa",
-      "es": "Regla de Oro de los 5 Segundos de Espera Activa"
+      "gl": "A Espera en Tres Tempos",
+      "es": "La Espera en Tres Tiempos"
     },
     "subtitulo": {
       "gl": "Dar tempo para pensar e responder, sen adiantarse",
@@ -19,12 +19,12 @@
       "es": "Rowe, M. B. (1986). Wait time: Slowing down may be a way of speeding up! Journal of Teacher Education, 37, 43-50."
     },
     "comoAplicarNaAula": {
-      "gl": "Tras facer unha pregunta ou amosar unha páxina do conto, gardar silencio absoluto durante 5 segundos con mirada acolledora e sorriso calmo. Contar mentalmente: \"mil un, mil dous, mil tres, mil catro, mil cinco\".",
-      "es": "Tras formular una pregunta o mostrar una página del cuento, guardar silencio absoluto durante 5 segundos con mirada acogedora y sonrisa serena. Contar mentalmente: \"mil uno, mil dos, mil tres, mil cuatro, mil cinco\"."
+      "gl": "Tras facer unha pregunta ou amosar unha páxina do conto, calar de 3 a 5 segundos con mirada acolledora e sorriso calmo, contando mentalmente («mil un, mil dous, mil tres…»). Se a criatura responde, devolverlle a idea ben dita no turno seguinte. E agardar outra vez un pouco antes do eloxio ou da frase seguinte.",
+      "es": "Tras formular una pregunta o mostrar una página del cuento, callar de 3 a 5 segundos con mirada acogedora y sonrisa serena, contando mentalmente («mil uno, mil dos, mil tres…»). Si la criatura responde, devolverle la idea bien dicha en el turno siguiente. Y esperar otra vez un poco antes del elogio o de la frase siguiente."
     },
     "exemploDialogoAula": {
-      "gl": "Docente: \"Onde pensades que se agochou o polvo pequeno?\" ... [5 segundos de pausa silenciosa e mirada agarimosa] ... Martiño: \"Aló nas algas verdes!\"",
-      "es": "Docente: \"¿Dónde pensáis que se escondió el pulpo pequeño?\" ... [5 segundos de pausa silenciosa y mirada afectuosa] ... Martiño: \"¡Allí en las algas verdes!\""
+      "gl": "Docente: \"Where is the little octopus?\" ... [de 3 a 5 segundos de pausa silenciosa e mirada agarimosa] ... Unha criatura sinala as algas: \"Alí!\". Docente: \"Yes! In the green seaweed!\" ... [outra pausa curta]",
+      "es": "Docente: \"Where is the little octopus?\" ... [de 3 a 5 segundos de pausa silenciosa y mirada afectuosa] ... Una criatura señala las algas: \"¡Allí!\". Docente: \"Yes! In the green seaweed!\" ... [otra pausa corta]"
     },
     "erroComunAEvitar": {
       "gl": "Repetir a pregunta aos 2 segundos ou responder pola crianza cando aínda está procesando a información.",
@@ -173,6 +173,70 @@
     "consignaDocente": {
       "gl": "Baña os seus oídos en poesía e verdade; as palabras sementadas hoxe serán o seu pensamento mañá.",
       "es": "Baña sus oídos en poesía y verdad; las palabras sembradas hoy serán su pensamiento mañana."
+    }
+  },
+  {
+    "id": "est-habla-paralela",
+    "clave": "habla_paralela",
+    "nome": {
+      "gl": "Fala Paralela: Contar o que a Criatura Fai",
+      "es": "Habla Paralela: Contar lo que la Criatura Hace"
+    },
+    "subtitulo": {
+      "gl": "Poñer palabras en inglés ao que mira e toca, sen preguntar",
+      "es": "Poner palabras en inglés a lo que mira y toca, sin preguntar"
+    },
+    "porQueFunciona": {
+      "gl": "A palabra chega no mesmo momento en que a criatura ten a man e a mirada no obxecto, e así únese a palabra coa cousa. Como non hai pregunta, non hai exame: a criatura segue xogando e escoita tranquila. Fálase da súa acción («You…»), non da da persoa adulta.",
+      "es": "La palabra llega en el mismo momento en que la criatura tiene la mano y la mirada en el objeto, y así se une la palabra con la cosa. Como no hay pregunta, no hay examen: la criatura sigue jugando y escucha tranquila. Se habla de su acción («You…»), no de la de la persona adulta."
+    },
+    "comoAplicarNaAula": {
+      "gl": "Mentres a criatura xoga, mirar as súas mans e a súa mirada e dicir en presente, con frases curtas, o que fai nese instante. Deixar unha pausa entre frase e frase. Se cambia de xoguete, cambiar tamén de palabra.",
+      "es": "Mientras la criatura juega, mirar sus manos y su mirada y decir en presente, con frases cortas, lo que hace en ese instante. Dejar una pausa entre frase y frase. Si cambia de juguete, cambiar también de palabra."
+    },
+    "exemploDialogoAula": {
+      "gl": "Unha criatura pon un bloque vermello enriba da torre. Docente: \"You put the red block on top.\" ... [pausa] ... A torre cambalea. Docente: \"Oh! The tower wobbles.\"",
+      "es": "Una criatura pone un bloque rojo encima de la torre. Docente: \"You put the red block on top.\" ... [pausa] ... La torre se tambalea. Docente: \"Oh! The tower wobbles.\""
+    },
+    "erroComunAEvitar": {
+      "gl": "Convertela nun interrogatorio (\"What is this? What color?\") ou falar sen parar dunha cousa que a criatura xa non mira.",
+      "es": "Convertirla en un interrogatorio (\"What is this? What color?\") o hablar sin parar de una cosa que la criatura ya no mira."
+    },
+    "consignaDocente": {
+      "gl": "Mira o que mira e dillo en curto: a palabra vai onde vai a súa man.",
+      "es": "Mira lo que mira y díselo en corto: la palabra va donde va su mano."
+    }
+  },
+  {
+    "id": "est-expansion-sintactica",
+    "clave": "expansion",
+    "nome": {
+      "gl": "Expansión: Unha ou Dúas Palabras Máis",
+      "es": "Expansión: Una o Dos Palabras Más"
+    },
+    "subtitulo": {
+      "gl": "Devolver a palabra soa dentro dunha frase un pouco máis longa",
+      "es": "Devolver la palabra suelta dentro de una frase un poco más larga"
+    },
+    "porQueFunciona": {
+      "gl": "Ao principio as criaturas din as palabras que máis pesan e deixan fóra as pequenas (the, a, is, your). Se a persoa adulta lle devolve a súa palabra xusto despois, dentro dunha frase con só unha ou dúas pezas máis, a criatura escoita a frase enteira mentres aínda pensa no que quixo dicir. Se se engade moito, perde o fío.",
+      "es": "Al principio las criaturas dicen las palabras que más pesan y dejan fuera las pequeñas (the, a, is, your). Si la persona adulta le devuelve su palabra justo después, dentro de una frase con solo una o dos piezas más, la criatura oye la frase entera mientras aún piensa en lo que quiso decir. Si se añade mucho, pierde el hilo."
+    },
+    "comoAplicarNaAula": {
+      "gl": "Cando unha criatura diga unha palabra soa ou dúas, entender que quere (pedir, ensinar, rexeitar) e devolverlla con unha ou dúas pezas máis: \"Water\" → \"Cold water\"; \"Truck go\" → \"The truck goes\"; \"More\" → \"More playdough\". Sen pedir que o repita, e agardando despois.",
+      "es": "Cuando una criatura diga una palabra sola o dos, entender qué quiere (pedir, enseñar, rechazar) y devolvérsela con una o dos piezas más: \"Water\" → \"Cold water\"; \"Truck go\" → \"The truck goes\"; \"More\" → \"More playdough\". Sin pedir que lo repita, y esperando después."
+    },
+    "exemploDialogoAula": {
+      "gl": "Na mesa de plastilina, unha criatura estende a man: \"More!\". Docente, dándolle un anaco: \"More playdough.\" ... [pausa] ... Criatura: \"Ball!\". Docente: \"The red ball.\"",
+      "es": "En la mesa de plastilina, una criatura extiende la mano: \"More!\". Docente, dándole un trozo: \"More playdough.\" ... [pausa] ... Criatura: \"Ball!\". Docente: \"The red ball.\""
+    },
+    "erroComunAEvitar": {
+      "gl": "Contestar cun discurso longo, ou repetir a palabra igual de curta (\"Yes, baby sleep\"), ou pedirlle que diga a frase enteira.",
+      "es": "Contestar con un discurso largo, o repetir la palabra igual de corta (\"Yes, baby sleep\"), o pedirle que diga la frase entera."
+    },
+    "consignaDocente": {
+      "gl": "Colle a súa palabra e dálle un chanzo máis, non unha escaleira.",
+      "es": "Toma su palabra y dale un peldaño más, no una escalera."
     }
   }
 ]
